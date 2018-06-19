@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/www/p5-WWW-Shorten-KUSO/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten-KUSO/Makefile 471718 2018-06-04 18:18:25Z sunpoet $
 
 PORTNAME=	WWW-Shorten-KUSO
 PORTVERSION=	0.3
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	Shorten URL using http://KUSO.CC/
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-WWW-Shorten>=0:www/p5-WWW-Shorten
 RUN_DEPENDS:=	${BUILD_DEPENDS}

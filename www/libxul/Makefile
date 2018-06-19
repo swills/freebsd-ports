@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/libxul/Makefile 468210 2018-04-24 13:58:02Z jbeich $
+# $FreeBSD: head/www/libxul/Makefile 471331 2018-06-02 00:33:29Z jbeich $
 
 PORTNAME=	libxul
 DISTVERSION=	45.9.0
@@ -64,6 +64,9 @@ OPTIONS_SINGLE_TOOLKIT=	GTK2 GTK3
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 OPTIONS_MULTI_AUDIO:=	${OPTIONS_MULTI_AUDIO:NJACK}
+
+# Inconsistent fallback order (libcubeb vs. audio_device)
+SNDIO_PREVENTS=		${OPTIONS_MULTI_AUDIO:NSNDIO}
 
 .if ${USE_MOZILLA:M-nss}
 MOZ_PKGCONFIG_FILES+=	mozilla-nss

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/rubygem-hiera-eyaml/Makefile 445289 2017-07-08 00:24:05Z swills $
+# $FreeBSD: head/sysutils/rubygem-hiera-eyaml/Makefile 472459 2018-06-15 14:23:40Z amdmi3 $
 
 PORTNAME=	hiera-eyaml
 PORTVERSION=	2.1.0
@@ -9,14 +9,19 @@ MAINTAINER=	freebsd@rig.rain.com
 COMMENT=	Backend for Hiera that provides encryption/decryption for properties
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-trollop>=2.0:devel/rubygem-trollop \
 		rubygem-highline>=1.7:devel/rubygem-highline
 
-PLIST_FILES=	bin/eyaml
-
+USES=		gem shebangfix
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem
+SHEBANG_FILES=	tools/regem.sh
+SHEBANG_LANG=	sh
+sh_OLD_CMD=	/bin/bash
+sh_CMD=		/bin/sh
+
+PLIST_FILES=	bin/eyaml
 
 .include <bsd.port.mk>

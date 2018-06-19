@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/py-moviepy/Makefile 468455 2018-04-27 15:56:30Z sunpoet $
+# $FreeBSD: head/multimedia/py-moviepy/Makefile 471307 2018-06-01 22:47:28Z sunpoet $
 
 PORTNAME=	moviepy
-PORTVERSION=	0.2.3.4
+PORTVERSION=	0.2.3.5
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

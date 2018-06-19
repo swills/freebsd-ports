@@ -1,12 +1,12 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/bsd.eric6.mk 468775 2018-05-01 17:52:53Z dbn $
+# $FreeBSD: head/devel/eric6/bsd.eric6.mk 472341 2018-06-13 19:28:54Z dbn $
 #
 # This is a set of Makefile macros that are common between devel/eric6 and
 # localized language packages for devel/eric6:
 # german/eric6, russian/eric6, devel/es-eric6
 
 PORTNAME=	eric6
-PORTVERSION=	18.05
+PORTVERSION=	18.06
 MASTER_SITES=	SF/eric-ide/${PORTNAME}/stable/${PORTVERSION}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

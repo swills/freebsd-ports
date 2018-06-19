@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize-Shell/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Mechanize-Shell/Makefile 471744 2018-06-05 06:10:53Z wen $
 
 PORTNAME=	WWW-Mechanize-Shell
-PORTVERSION=	0.56
+PORTVERSION=	0.57
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CORION

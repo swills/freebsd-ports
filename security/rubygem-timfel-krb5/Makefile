@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-timfel-krb5/Makefile 459807 2018-01-24 00:55:09Z bdrewery $
+# $FreeBSD: head/security/rubygem-timfel-krb5/Makefile 472117 2018-06-10 08:08:26Z antoine $
 
 PORTNAME=	timfel-krb5-auth
 PORTVERSION=	0.8.3
@@ -10,7 +10,6 @@ COMMENT=	KRB5 for Ruby
 
 BUILD_DEPENDS=	krb5>0:security/krb5
 RUN_DEPENDS=	krb5>0:security/krb5
-LIB_DEPENDS=	libunwind.so:devel/libunwind
 
 USE_RUBY=		yes
 USES=			gem

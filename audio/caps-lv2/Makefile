@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/caps-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/caps-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
 
 PORTNAME=	caps-lv2
 PORTVERSION=	g20170626
@@ -10,6 +10,10 @@ COMMENT=	LV2 version of the C* Audio Plugin Suite
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_armv6=		fails to build: dsp/v4f.h:153:12: no matching function for call to v4f_map
+BROKEN_armv7=		fails to build: dsp/v4f.h:153:12: no matching function for call to v4f_map
+BROKEN_powerpc64=	fails to build: cc1plus: unrecognized command line option -std=c++11
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 

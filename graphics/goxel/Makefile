@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/goxel/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/graphics/goxel/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	goxel
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,8 @@ COMMENT=	Free and Open Source 3D Voxel Editor
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: sh: clang++: not found
 
 LIB_DEPENDS=	libargp.so:devel/argp-standalone \
 		libglfw.so:graphics/glfw \

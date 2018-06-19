@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/www/p5-ZConf-RSS-GUI-GTK/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-ZConf-RSS-GUI-GTK/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-RSS-GUI-GTK
 PORTVERSION=	0.0.1
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Provides a GTK backend for ZConf::RSS::GUI
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 RUN_DEPENDS=	p5-ZConf-RSS>=0:www/p5-ZConf-RSS \
 		p5-Gtk2>=0:x11-toolkits/p5-Gtk2

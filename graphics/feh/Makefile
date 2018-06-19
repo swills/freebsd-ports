@@ -1,8 +1,8 @@
 # Created by: Jeremy Norris <ishmael127@home.com>
-# $FreeBSD: head/graphics/feh/Makefile 467859 2018-04-21 08:01:59Z zeising $
+# $FreeBSD: head/graphics/feh/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	feh
-PORTVERSION=	2.26
+PORTVERSION=	2.26.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://feh.finalrewind.org/ \
 		LOCAL/uqs
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libImlib2.so:graphics/imlib2 \
 		libpng.so:graphics/png
 
-USES=		cpe desktop-file-utils gmake localbase:ldflags \
+USES=		compiler:c++11-lang cpe desktop-file-utils gmake localbase:ldflags \
 		perl5 shebangfix tar:bzip2
 SHEBANG_FILES=	cam/feh-cam
 USE_XORG=	x11 xt xinerama

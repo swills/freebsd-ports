@@ -1,5 +1,5 @@
 # Created by: Stefan Esser
-# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 466068 2018-03-31 17:43:55Z se $
+# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	fusefs-libs3
 DISTVERSIONPREFIX=	fuse-
@@ -11,6 +11,8 @@ COMMENT=	FUSE library version 3 for filesystems implemented in userspace
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-unused-result"
 
 USES=		meson
 USE_LDCONFIG=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-tirexs/Makefile 449216 2017-09-03 21:17:59Z olgeni $
+# $FreeBSD: head/devel/elixir-tirexs/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	tirexs
 PORTVERSION=	0.8.15
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	ElasticSearch client library for Elixir
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/alacritty/Makefile 468993 2018-05-03 22:43:22Z jbeich $
+# $FreeBSD: head/x11/alacritty/Makefile 472373 2018-06-14 09:56:02Z tobik $
 
 PORTNAME=	alacritty
 PORTVERSION=	g20180126
@@ -11,9 +11,7 @@ COMMENT=	GPU-accelerated terminal emulator
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE-APACHE
 
-BUILD_DEPENDS=	cmake:devel/cmake
-LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
-		libfreetype.so:print/freetype2
+LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig
 
 USES=		cargo
 USE_GITHUB=	yes

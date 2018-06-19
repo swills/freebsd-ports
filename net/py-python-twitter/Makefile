@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-python-twitter/Makefile 464204 2018-03-11 20:31:15Z sunpoet $
+# $FreeBSD: head/net/py-python-twitter/Makefile 472086 2018-06-09 20:09:05Z miwi $
 
 PORTNAME=	python-twitter
-PORTVERSION=	3.4.1
+PORTVERSION=	3.4.2
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +13,8 @@ COMMENT=	Python wrapper around the Twitter API
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0:www/py-requests-oauthlib@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0:www/py-requests-oauthlib@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

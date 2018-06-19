@@ -1,5 +1,5 @@
 # Created by: darius@dons.net.au
-# $FreeBSD: head/devel/tclreadline/Makefile 463943 2018-03-09 08:34:48Z gahr $
+# $FreeBSD: head/devel/tclreadline/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	tclreadline
 PORTVERSION=	2.3.1
@@ -24,5 +24,8 @@ GH_ACCOUNT=	flightaware
 USE_LDCONFIG=	yes
 TCL_PKG=	${PORTNAME}${PORTVERSION}
 PLIST_SUB+=	PORTVERSION=${PORTVERSION} TCL_PKG=${TCL_PKG}
+
+post-patch:
+	@${RM} ${WRKSRC}/INSTALL
 
 .include <bsd.port.mk>

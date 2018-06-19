@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llbuild/Makefile 456130 2017-12-12 13:16:26Z jonathan $
+# $FreeBSD: head/devel/llbuild/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=		llbuild
 DISTVERSIONPREFIX=	swift-DEVELOPMENT-
@@ -12,6 +12,8 @@ COMMENT=	Low-level build system, used by the Swift Package Manager
 LICENSE=	APACHE20 BSD3CLAUSE NCSA
 LICENSE_COMB=	multi
 LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.txt
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wdocumentation"
 
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3
 

@@ -1,0 +1,21 @@
+# $FreeBSD: head/science/py-SimpleSpectral/Makefile 472666 2018-06-18 02:34:02Z yuri $
+
+PORTNAME=	SimpleSpectral
+DISTVERSION=	1.0.0
+CATEGORIES=	science python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	yuri@FreeBSD.org
+COMMENT=	Simplified scipy.signal.spectral module with only pyFFTW support
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	${PYNUMPY}
+
+USES=		python:3.4+
+USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

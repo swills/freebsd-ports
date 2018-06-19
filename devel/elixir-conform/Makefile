@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-conform/Makefile 448917 2017-08-29 13:34:42Z olgeni $
+# $FreeBSD: head/devel/elixir-conform/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	conform
 DISTVERSION=	2.5.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Easy release configuration for Elixir apps
 
 LICENSE=	APACHE20 MIT

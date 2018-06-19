@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/cantarell-fonts/Makefile 437492 2017-04-01 21:47:30Z bapt $
+# $FreeBSD: head/x11-fonts/cantarell-fonts/Makefile 472680 2018-06-18 09:04:35Z amdmi3 $
 
 PORTNAME=	cantarell-fonts
 PORTVERSION=	0.0.25
@@ -9,6 +9,9 @@ MASTER_SITES=	GNOME
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Cantarell, a Humanist sans-serif font family
 
+LICENSE=	OFL11
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig
 
 USES=		fonts gmake gnome pkgconfig tar:xz
@@ -16,5 +19,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-configdir=${PREFIX}/etc/fonts/conf.avail
 FONTSDIR=	share/fonts/cantarell
 PLIST_SUB=	FONTSDIR=${FONTSDIR}
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

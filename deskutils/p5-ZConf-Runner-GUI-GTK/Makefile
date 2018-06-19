@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/deskutils/p5-ZConf-Runner-GUI-GTK/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/p5-ZConf-Runner-GUI-GTK/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-Runner-GUI-GTK
 PORTVERSION=	0.0.2
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	The GTK GUI backend for ZConf::Runner
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-ZConf>=0:net/p5-ZConf \
 		p5-Gtk2>=1.060:x11-toolkits/p5-Gtk2 \

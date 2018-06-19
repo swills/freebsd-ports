@@ -1,5 +1,5 @@
 # Created by: Mykola Khotyaintsev <ko@irfu.se>
-# $FreeBSD: head/math/vtk5/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/math/vtk5/Makefile 472589 2018-06-17 02:24:24Z linimon $
 
 PORTNAME=	vtk
 PORTVERSION=	5.10.1
@@ -13,6 +13,8 @@ COMMENT=	The Visualization Toolkit
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/Copyright.txt
+
+BROKEN_powerpc64=	fails to build: sibling call optimization to `_ZN14vtkProbeFilter26SetValidPointMaskArrayNameEPKc' does not allow automatic multiple TOCs
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libpng.so:graphics/png \

@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/erlang-webmachine/Makefile 470361 2018-05-19 07:26:17Z olgeni $
+# $FreeBSD: head/www/erlang-webmachine/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	webmachine
 PORTVERSION=	1.10.9
 CATEGORIES=	www devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	HTTP semantic awareness on top mochiweb
 
 LICENSE=	APACHE20

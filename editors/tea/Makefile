@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/editors/tea/Makefile 457341 2017-12-26 23:21:04Z danilo $
+# $FreeBSD: head/editors/tea/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	tea
 PORTVERSION=	44.1.1
@@ -10,6 +10,8 @@ MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Simple and powerful Qt-based text editor
 
 LICENSE=	GPLv3
+
+BROKEN_powerpc64=	fails to link: spellchecker.o:(.text+0xd2c): undefined reference to Hunspell::remove(std::string const&)
 
 OPTIONS_SINGLE=	TOOLKITS
 OPTIONS_SINGLE_TOOLKITS=	QT4 QT5

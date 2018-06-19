@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/cad/zcad/Makefile 470851 2018-05-25 16:31:21Z acm $
+# $FreeBSD: head/cad/zcad/Makefile 471478 2018-06-03 08:15:31Z acm $
 
 PORTNAME=	zcad
 PORTVERSION=	0.9.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	LOCAL/danfe

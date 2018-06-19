@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/erlang-hackney/Makefile 443001 2017-06-09 14:52:33Z olgeni $
+# $FreeBSD: head/www/erlang-hackney/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	hackney
 PORTVERSION=	1.8.6
 CATEGORIES=	www
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Simple HTTP client in Erlang
 
 LICENSE=	APACHE20

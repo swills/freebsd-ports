@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 450470 2017-09-23 20:29:49Z kwm $
+# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	gstreamer1-editing-services
 PORTVERSION=	1.12.3
@@ -9,6 +9,8 @@ DISTNAME=	gstreamer-editing-services-${PORTVERSION}
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	GStreamer editing services
+
+BROKEN_powerpc64=	fails to compile: ges-extractable.h:24: error: redefinition of typedef 'GESExtractable'
 
 PORTSCOUT=	limitw:1,even
 

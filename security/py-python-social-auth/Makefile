@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/security/py-python-social-auth/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-python-social-auth/Makefile 471396 2018-06-02 19:05:51Z miwi $
 
 PORTNAME=	python-social-auth
 PORTVERSION=	0.2.21
@@ -18,6 +18,9 @@ RUN_DEPENDS:=	${PYTHON_PKGNAMEPREFIX}python-openid>=2.2:security/py-python-openi
 		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0.3.1:www/py-requests-oauthlib@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.2.0:devel/py-six@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyjwt>=1.0.0:www/py-pyjwt@${FLAVOR}
+
+DEPRECATED=	Upstream Deprecated
+EXPIRATION_DATE=	2018-08-01
 
 NO_ARCH=	yes
 USES=		python

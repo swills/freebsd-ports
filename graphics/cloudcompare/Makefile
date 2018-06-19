@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/cloudcompare/Makefile 467713 2018-04-18 14:06:09Z jbeich $
+# $FreeBSD: head/graphics/cloudcompare/Makefile 471491 2018-06-03 12:44:04Z antoine $
 
 PORTNAME=	cloudcompare
 DISTVERSIONPREFIX=	v
@@ -65,7 +65,7 @@ PLUGINS_LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 			libflann_cpp_s.so:math/flann \
 			libfreetype.so:print/freetype2 \
 			libpcl_people.so:graphics/pcl-pointclouds \
-			libpng16.so:graphics/png \
+			libpng.so:graphics/png \
 			libtiff.so:graphics/tiff \
 			libvtkDomainsChemistry-6.2.so:math/vtk6
 PLUGINS_IMPLIES=	SHAPELIB

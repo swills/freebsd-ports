@@ -1,8 +1,7 @@
-# $FreeBSD: head/astro/siril/Makefile 469466 2018-05-09 20:27:51Z swills $
+# $FreeBSD: head/astro/siril/Makefile 472023 2018-06-08 22:16:05Z yuri $
 
 PORTNAME=	siril
-DISTVERSION=	0.9.8
-PORTREVISION=	3
+DISTVERSION=	0.9.9
 CATEGORIES=	astro graphics
 MASTER_SITES=	https://free-astro.org/download/
 
@@ -17,6 +16,7 @@ BROKEN_i386=	undefined reference to `__atomic_load' and `__atomic_compare_exchan
 LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg \
 		libcfitsio.so:astro/cfitsio \
 		libconfig.so:devel/libconfig \
+		libcurl.so:ftp/curl \
 		libffms2.so:multimedia/ffms2 \
 		libfftw3.so:math/fftw3 \
 		libgsl.so:math/gsl \

@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-plugins-buzztard/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/gstreamer-plugins-buzztard/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	buzztard
 PORTVERSION=	0.7.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20gstreamer%20extensions/
 PKGNAMEPREFIX=	gstreamer-plugins-

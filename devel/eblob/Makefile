@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/eblob/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/eblob/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	eblob
 PORTVERSION=	0.18.2
@@ -13,11 +13,10 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs
 
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	zloidemon
 GH_TAGNAME=	0a75b89
-
-USES=		cmake
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	ASSERT PYTHON SNAPPY EXAMPLES TESTS

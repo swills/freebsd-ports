@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Simple-DBM/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Authen-Simple-DBM/Makefile 471678 2018-06-04 18:14:14Z sunpoet $
 
 PORTNAME=	Authen-Simple-DBM
 PORTVERSION=	0.2
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple DBM authentication
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple
 RUN_DEPENDS:=	${BUILD_DEPENDS}

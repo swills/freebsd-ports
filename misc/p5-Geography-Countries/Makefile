@@ -1,5 +1,5 @@
 # Created by: dikshie <dikshie@lapi.itb.ac.id>
-# $FreeBSD: head/misc/p5-Geography-Countries/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/misc/p5-Geography-Countries/Makefile 471656 2018-06-04 18:10:16Z sunpoet $
 
 PORTNAME=	Geography-Countries
 PORTVERSION=	2009041301
@@ -11,8 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dikshie@lapi.itb.ac.id
 COMMENT=	Handle ISO-3166 country codes
 
+LICENSE=	MIT
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
-CONFIGURE_ARGS+=	INSTALLDIRS='site'
+CONFIGURE_ARGS=	INSTALLDIRS='site'
 
 .include <bsd.port.mk>

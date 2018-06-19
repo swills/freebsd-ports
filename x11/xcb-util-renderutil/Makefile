@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/xcb-util-renderutil/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xcb-util-renderutil/Makefile 472774 2018-06-19 09:04:36Z amdmi3 $
 
 PORTNAME=	xcb-util-renderutil
 PORTVERSION=	0.3.9
@@ -8,6 +8,9 @@ MASTER_SITES=	http://xcb.freedesktop.org/dist/
 
 MAINTAINER=	garga@FreeBSD.org
 COMMENT=	Convenience functions for the Render extension
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libxcb-util.so:x11/xcb-util
 

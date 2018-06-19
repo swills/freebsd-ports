@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/dnscrypt-proxy2/Makefile 470909 2018-05-26 17:43:21Z dbaio $
+# $FreeBSD: head/dns/dnscrypt-proxy2/Makefile 471943 2018-06-07 18:41:54Z dbaio $
 
 PORTNAME=	dnscrypt-proxy
-PORTVERSION=	2.0.14
+PORTVERSION=	2.0.15
 CATEGORIES=	dns security ipv6
 PKGNAMESUFFIX=	2
 

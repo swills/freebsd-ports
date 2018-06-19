@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-liquid-tag-parser/Makefile 467260 2018-04-13 20:48:22Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-liquid-tag-parser/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	liquid-tag-parser
 PORTVERSION=	1.9.0
@@ -15,8 +15,8 @@ RUN_DEPENDS=	rubygem-extras>=0.3:devel/rubygem-extras \
 		rubygem-liquid>=3.0:textproc/rubygem-liquid
 
 NO_ARCH=	yes
+USES=		compiler:c++11-lang gem
 USE_RUBY=	yes
-USES=		gem
 
 # Disable rdoc
 OPTIONS_EXCLUDE=DOCS

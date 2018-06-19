@@ -1,11 +1,11 @@
-# $FreeBSD: head/misc/elixir-uuid/Makefile 451023 2017-10-01 07:20:33Z olgeni $
+# $FreeBSD: head/misc/elixir-uuid/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	elixir-uuid
 PORTVERSION=	1.1.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	UUID generator and utilities for Elixir
 
 LICENSE=	APACHE20

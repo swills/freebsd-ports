@@ -1,8 +1,8 @@
 # Created by: Mike Meyer
-# $FreeBSD: head/www/py-beautifulsoup/Makefile 420813 2016-08-24 18:42:18Z wg $
+# $FreeBSD: head/www/py-beautifulsoup/Makefile 471386 2018-06-02 17:55:46Z miwi $
 
 PORTNAME=	beautifulsoup
-PORTVERSION=	4.5.1
+PORTVERSION=	4.6.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,21 @@ MAINTAINER=	wg@FreeBSD.org
 COMMENT=	HTML/XML Parser for Python
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
+NO_ARCH=	yes
+PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
+DOCS_VARS=		PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	(cd ${WRKSRC}/build/sphinx/html && \
+		${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR} \
+			"! -name .buildinfo -and ! -name objects.inv")
 
 .include <bsd.port.mk>

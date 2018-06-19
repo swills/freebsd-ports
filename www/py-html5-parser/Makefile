@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-html5-parser/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-html5-parser/Makefile 472678 2018-06-18 08:36:59Z madpilot $
 
 PORTNAME=	html5-parser
-PORTVERSION=	0.4.4
+PORTVERSION=	0.4.5
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,5 +15,9 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.8.0:devel/py-lxml@${FLAVOR}
 
 USES=		pkgconfig python
 USE_PYTHON=	autoplist distutils
+USE_GNOME=	libxml2
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/html5_parser/html_parser.so
 
 .include <bsd.port.mk>

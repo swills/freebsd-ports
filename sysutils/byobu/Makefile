@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/byobu/Makefile 444656 2017-06-29 18:14:07Z ultima $
+# $FreeBSD: head/sysutils/byobu/Makefile 472574 2018-06-16 22:51:22Z swills $
 
 PORTNAME=	byobu
 PORTVERSION=	5.119
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://launchpad.net/${PORTNAME}/trunk/${PORTVERSION}/+download/
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig

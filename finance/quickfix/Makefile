@@ -1,5 +1,5 @@
 # Created by: Mikhail T. <m.tsatsenko@gmail.com>
-# $FreeBSD: head/finance/quickfix/Makefile 462973 2018-02-25 19:33:57Z pi $
+# $FreeBSD: head/finance/quickfix/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	quickfix
 PORTVERSION=	1.14.3
@@ -10,6 +10,8 @@ MAINTAINER=	m.tsatsenko@gmail.com
 COMMENT=	Free FIX Protocol Implementation
 
 LICENSE=	GPLv3+
+
+BROKEN_powerpc64=	fails to configure: unable to find set_terminate in std or global namespace
 
 BUILD_DEPENDS=	bash:shells/bash
 

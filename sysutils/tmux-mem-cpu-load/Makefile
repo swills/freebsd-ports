@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/sysutils/tmux-mem-cpu-load/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/sysutils/tmux-mem-cpu-load/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	tmux-mem-cpu-load
 PORTVERSION=	3.4.0
@@ -13,12 +13,9 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	tmux:sysutils/tmux
 
-BROKEN_powerpc64=	fails to compile: Compiler GNU 4.2.1 has no C++11 support
-
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	thewtex
-
-USES=		cmake
 
 PLIST_FILES=	bin/tmux-mem-cpu-load
 

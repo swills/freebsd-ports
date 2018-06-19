@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/testdisk/Makefile 463721 2018-03-06 12:23:43Z tobik $
+# $FreeBSD: head/sysutils/testdisk/Makefile 472299 2018-06-13 09:34:31Z amdmi3 $
 
 PORTNAME=	testdisk
 DISTVERSION=	7.1-WIP
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.cgsecurity.org/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool to check and undelete partitions
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		jpeg localbase:ldflags ncurses tar:bzip2

@@ -1,8 +1,9 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/math/cloog/Makefile 466827 2018-04-08 19:05:36Z danilo $
+# $FreeBSD: head/math/cloog/Makefile 471550 2018-06-04 14:46:41Z mat $
 
 PORTNAME=	cloog
 PORTVERSION=	0.19.0
+DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	math
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -16,7 +17,6 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 USES=		autoreconf gmake libtool
 
 USE_GITHUB=	yes
-GH_TAGNAME=	${PORTNAME}-${PORTVERSION}
 GH_ACCOUNT=	periscop
 
 USE_LDCONFIG=	yes

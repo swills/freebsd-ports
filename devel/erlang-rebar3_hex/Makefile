@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-rebar3_hex/Makefile 416231 2016-06-01 08:18:36Z olgeni $
+# $FreeBSD: head/devel/erlang-rebar3_hex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	rebar3_hex
 PORTVERSION=	2.5.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Rebar3 Hex library
 
 LICENSE=	BSD3CLAUSE

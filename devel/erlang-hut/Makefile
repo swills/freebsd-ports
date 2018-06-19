@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-hut/Makefile 423341 2016-10-05 12:49:48Z olgeni $
+# $FreeBSD: head/devel/erlang-hut/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	hut
 PORTVERSION=	1.2.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Helper library for logging in Erlang
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: Konstantin Lepa <konstantin.lepa@gmail.com>
-# $FreeBSD: head/devel/vxlog/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/devel/vxlog/Makefile 472438 2018-06-15 09:34:33Z amdmi3 $
 
 PORTNAME=	vxlog
 PORTVERSION=	1.0.3
@@ -12,6 +12,7 @@ MAINTAINER=	konstantin.lepa@gmail.com
 COMMENT=	C++ logging library
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/doc/COPYING.txt
 
 USES=		cmake
 USE_LDCONFIG=	yes

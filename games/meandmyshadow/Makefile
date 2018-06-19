@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/meandmyshadow/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/meandmyshadow/Makefile 472064 2018-06-09 16:12:51Z amdmi3 $
 
 PORTNAME=	meandmyshadow
 PORTVERSION=	0.4.1
@@ -11,7 +11,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Me and My Shadow puzzle/platform game
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
@@ -41,7 +42,9 @@ post-patch:
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/icons/64x64/meandmyshadow.png \
 		${STAGEDIR}${PREFIX}/share/pixmaps/
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for f in AUTHORS ChangeLog docs/*
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}/
 .endfor

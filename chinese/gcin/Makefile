@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing
-# $FreeBSD: head/chinese/gcin/Makefile 470554 2018-05-21 15:36:12Z vanilla $
+# $FreeBSD: head/chinese/gcin/Makefile 471727 2018-06-04 22:58:16Z linimon $
 
 PORTNAME=	gcin
 PORTVERSION=	2.8.6
@@ -11,6 +11,8 @@ MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	Traditional Chinese input utility in X
 
 LICENSE=	LGPL21
+
+BROKEN_powerpc64=	fails to build: gmake[3]: *** [Makefile:30: en-american] Error 255
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

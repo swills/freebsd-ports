@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/maim/Makefile 470862 2018-05-25 20:25:55Z swills $
+# $FreeBSD: head/graphics/maim/Makefile 472405 2018-06-14 22:49:58Z swills $
 
 PORTNAME=	maim
-PORTVERSION=	5.5.1
+PORTVERSION=	5.5.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 
@@ -13,7 +13,7 @@ LICENSE=	GPLv3
 BUILD_DEPENDS=	${LOCALBASE}/include/glm/glm.hpp:math/glm
 LIB_DEPENDS=	libImlib2.so:graphics/imlib2 \
 		libicuuc.so:devel/icu \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libslopy.so:x11/slop
 
 USES=		cmake jpeg

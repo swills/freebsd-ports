@@ -1,11 +1,11 @@
 # Created by: glebius@FreeBSD.org
-# $FreeBSD: head/graphics/libecwj2/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/graphics/libecwj2/Makefile 471942 2018-06-07 18:32:29Z glebius $
 
 PORTNAME=	libecwj2
 PORTVERSION=	3.3
 PORTREVISION=	3
 CATEGORIES=	graphics
-MASTER_SITES=	http://glebius.int.ru/tmp/403/
+MASTER_SITES=	http://glebi.us/tmp/403/
 DISTFILES=	ecw_jpeg_2000_sdk_3_3_source.zip
 
 MAINTAINER=	glebius@FreeBSD.org

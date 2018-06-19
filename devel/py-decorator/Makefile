@@ -1,8 +1,8 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/devel/py-decorator/Makefile 459153 2018-01-16 04:06:13Z ygy $
+# $FreeBSD: head/devel/py-decorator/Makefile 472479 2018-06-15 18:17:07Z ygy $
 
 PORTNAME=	decorator
-PORTVERSION=	4.2.1
+PORTVERSION=	4.3.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

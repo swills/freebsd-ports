@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-mgmt/statsd/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/net-mgmt/statsd/Makefile 472418 2018-06-14 23:48:29Z swills $
 
 PORTNAME=	statsd
 PORTVERSION=	0.7.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 
@@ -11,7 +12,7 @@ COMMENT=	Simple daemon for easy stats aggregation
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	node:www/node
+RUN_DEPENDS=	node6>=0:www/node6
 
 NO_BUILD=	yes
 NO_ARCH=	yes

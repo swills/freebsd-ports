@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/sumo/Makefile 462964 2018-02-25 16:46:51Z antoine $
+# $FreeBSD: head/cad/sumo/Makefile 471726 2018-06-04 22:51:18Z linimon $
 
 PORTNAME=	sumo
 DISTVERSION=	0.31.0
@@ -11,6 +11,8 @@ COMMENT=	Traffic simulation suite for road vehicles, public transportation, etc
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to configure: xerces-lib not found in /usr/local/lib
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libFOX-1.6.so:x11-toolkits/fox16 \

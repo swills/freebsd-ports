@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 471091 2018-05-29 12:29:16Z vanilla $
+# $FreeBSD: head/dns/Makefile 471924 2018-06-07 14:18:54Z dbaio $
 #
 
     COMMENT = Domain Name Service tools
@@ -78,6 +78,7 @@
     SUBDIR += gen6dns
     SUBDIR += getdns
     SUBDIR += ghtool
+    SUBDIR += go-geodns
     SUBDIR += hesiod
     SUBDIR += hostdb
     SUBDIR += hs-dns

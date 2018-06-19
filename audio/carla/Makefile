@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/carla/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/audio/carla/Makefile 472055 2018-06-09 15:28:00Z yuri $
 
 PORTNAME=	Carla
-DISTVERSION=	1.9.8
-PORTREVISION=	1
+DISTVERSION=	1.9.8-135
+DISTVERSIONSUFFIX=	-g2be9e402
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

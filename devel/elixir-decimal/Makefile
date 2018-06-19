@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-decimal/Makefile 452624 2017-10-22 08:08:27Z olgeni $
+# $FreeBSD: head/devel/elixir-decimal/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	decimal
 PORTVERSION=	1.4.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Arbitrary precision decimal arithmetic for Elixir
 
 LICENSE=	APACHE20

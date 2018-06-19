@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/cltune/Makefile 445569 2017-07-12 03:35:38Z jmd $
+# $FreeBSD: head/devel/cltune/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	cltune
 PORTVERSION=	2.7.0
@@ -11,16 +11,17 @@ COMMENT=	Library to tune OpenCL kernels
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_powerpc64=	fails to build: GCC version must be at least 4.7
+
 BUILD_DEPENDS=	opencl>=0:devel/opencl
 LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd
 RUN_DEPENDS=	opencl>=0:devel/opencl
 
+USES=		cmake
+USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	CNugteren
 GH_PROJECT=	CLTune
-
-USE_LDCONFIG=	yes
-USES=		cmake
 
 PLIST_FILES=	include/cltune.h \
 		lib/libcltune.so \

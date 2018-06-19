@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/triceratops-lv2/Makefile 453937 2017-11-10 22:21:18Z yuri $
+# $FreeBSD: head/audio/triceratops-lv2/Makefile 472102 2018-06-09 23:39:08Z yuri $
 
 PORTNAME=	triceratops
 DISTVERSIONPREFIX=	lv2-v
 DISTVERSION=	0.3.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF/triceratops
 PKGNAMESUFFIX=	-lv2
@@ -17,7 +18,7 @@ BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
-USES=		pkgconfig waf
+USES=		compiler:c++11-lang pkgconfig waf
 USE_GNOME=	cairo cairomm gdkpixbuf2 gtk20 gtkmm24
 NO_WRKSUBDIR=	yes
 

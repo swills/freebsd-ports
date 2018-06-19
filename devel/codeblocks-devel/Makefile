@@ -1,9 +1,8 @@
 # Created by: Loïc Bartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/devel/codeblocks-devel/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/codeblocks-devel/Makefile 472259 2018-06-12 15:43:20Z tz $
 
 PORTNAME=	codeblocks
-PORTVERSION=	17.07
-PORTREVISION=	2
+PORTVERSION=	18.04
 CATEGORIES=	devel
 MASTER_SITES=	http://download.tuxfamily.org/bartcoding/FreeBSD/ \
 		${MASTER_SITE_LOCAL}
@@ -29,14 +28,14 @@ USE_GNOME=	gtk20 cairo
 USE_XORG=	x11
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-wx-config=${WX_CONFIG} --with-contrib-plugins=all \
-		--disable-pch
+		--disable-pch --with-boost-system=boost_system
 PKG_CONFIG_LIBDIR=	${LOCALBASE}/libdata/pkgconfig
 INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 
 FETCH_DEPENDS+=	svn:devel/subversion
-SVN_REV=	11112
+SVN_REV=	11386
 SVNROOT_URI=	svn://svn.code.sf.net/p/codeblocks/code/trunk
 
 .include <bsd.port.pre.mk>

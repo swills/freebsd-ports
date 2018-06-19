@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/iso-schematron-xslt/Makefile 347786 2014-03-10 17:25:25Z bapt $
+# $FreeBSD: head/textproc/iso-schematron-xslt/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	iso-schematron-xslt
 PORTVERSION=	20130313
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.schematron.com/tmp/
 DISTFILES=	iso-schematron-xslt1.zip \
 		iso-schematron-xslt2.zip
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The Leading Implementation of ISO Schematron
 
 USES=		zip:infozip

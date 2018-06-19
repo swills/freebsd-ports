@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit2-gtk3/Makefile 470327 2018-05-18 20:45:33Z kwm $
+# $FreeBSD: head/www/webkit2-gtk3/Makefile 472708 2018-06-18 19:38:23Z kwm $
 
 PORTNAME=	webkit
-PORTVERSION=	2.20.2
+PORTVERSION=	2.20.3
 CATEGORIES=	www
 MASTER_SITES=	http://webkitgtk.org/releases/
 PKGNAMESUFFIX=	2-gtk3
@@ -15,6 +15,7 @@ LICENSE=	GPLv2 BSD2CLAUSE
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libenchant-2.so:textproc/enchant2 \
+		libfribidi.so:converters/fribidi \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libwebp.so:graphics/webp \

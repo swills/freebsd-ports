@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/ftp/py-pycurl/Makefile 455962 2017-12-11 10:38:45Z sunpoet $
+# $FreeBSD: head/ftp/py-pycurl/Makefile 471502 2018-06-03 18:16:56Z sunpoet $
 
 PORTNAME=	pycurl
-PORTVERSION=	7.43.0.1
+PORTVERSION=	7.43.0.2
 CATEGORIES=	ftp python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

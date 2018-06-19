@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-hex/Makefile 467811 2018-04-20 06:08:12Z olgeni $
+# $FreeBSD: head/devel/elixir-hex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	hex
 PORTVERSION=	0.17.7
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Package manager for the Erlang VM
 
 LICENSE=	APACHE20

@@ -1,9 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/textproc/UCD/Makefile 442380 2017-06-02 14:53:52Z thierry $
+# $FreeBSD: head/textproc/UCD/Makefile 471937 2018-06-07 17:02:51Z thierry $
 
 PORTNAME=	UCD
-PORTVERSION=	9.0.0
-PORTREVISION=	2
+PORTVERSION=	11.0.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.unicode.org/Public/zipped/${PORTVERSION}/:src\
 		ftp://www.unicode.org/Public/zipped/${PORTVERSION}/:src	\

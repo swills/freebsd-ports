@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/elixir-nats/Makefile 422661 2016-09-23 11:21:28Z olgeni $
+# $FreeBSD: head/devel/elixir-nats/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	elixir-nats
 DISTVERSION=	0.1.4-alpha
 CATEGORIES=	devel
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	NATS client for Elixir
 
 LICENSE=	MIT

@@ -1,9 +1,9 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/www/gitea/Makefile 469092 2018-05-05 08:23:07Z krion $
+# $FreeBSD: head/www/gitea/Makefile 472135 2018-06-10 14:10:37Z flo $
 
 PORTNAME=	gitea
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.4.1
+DISTVERSION=	1.4.2
 CATEGORIES=	www
 
 MAINTAINER=	stb@lassitu.de
@@ -41,7 +41,7 @@ SQLITE_VARS=	GO_TAGS+=sqlite
 .include <bsd.port.options.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100513
-DAEMONARGS=	-S -l \$${gitea_facility} -s \$${gitea_priority} -t \$${name}
+DAEMONARGS=	-S -l \$${gitea_facility} -s \$${gitea_priority} -T \$${name}
 .else
 DAEMONARGS=	-f
 .endif

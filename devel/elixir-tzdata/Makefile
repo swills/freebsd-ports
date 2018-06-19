@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-tzdata/Makefile 459354 2018-01-18 15:31:39Z olgeni $
+# $FreeBSD: head/devel/elixir-tzdata/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	tzdata
 PORTVERSION=	0.5.16
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Time zone data for Elixir
 
 LICENSE=	MIT

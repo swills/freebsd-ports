@@ -1,8 +1,8 @@
 # Created by: Ultima
-# $FreeBSD: head/www/py-django-statici18n/Makefile 461675 2018-02-13 00:46:17Z ultima $
+# $FreeBSD: head/www/py-django-statici18n/Makefile 472347 2018-06-13 22:16:55Z ultima $
 
 PORTNAME=	django-statici18n
-PORTVERSION=	1.7.0
+PORTVERSION=	1.8.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +13,8 @@ COMMENT=	Helper for generating Javascript catalog to static files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}django-appconf>=0.6:www/py-django-appconf@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django-appconf>=0.6:www/py-django-appconf@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

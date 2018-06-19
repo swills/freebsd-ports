@@ -1,5 +1,5 @@
 # Created by: timur@FreeBSD.org
-# $FreeBSD: head/net/samba46/Makefile 470194 2018-05-17 03:37:14Z timur $
+# $FreeBSD: head/net/samba46/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME?=			${SAMBA4_BASENAME}46
 PORTVERSION?=			${SAMBA4_VERSION}
@@ -12,6 +12,8 @@ MAINTAINER?=			timur@FreeBSD.org
 COMMENT?=			Free SMB/CIFS and AD/DC server and client for Unix
 
 LICENSE=			GPLv3
+
+BROKEN_powerpc64=		fails to compile: unrecognized command line option "-Wno-format-truncation"
 
 IGNORE_NONTHREAD_PYTHON=	needs port lang/python${PYTHON_SUFFIX} to be build with THREADS support
 

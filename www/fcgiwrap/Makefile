@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/fcgiwrap/Makefile 464375 2018-03-13 14:05:10Z rodrigo $
+# $FreeBSD: head/www/fcgiwrap/Makefile 471940 2018-06-07 17:57:18Z zi $
 
 PORTNAME=	fcgiwrap
 PORTVERSION=	1.1.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	www
 
 MAINTAINER=	rodrigo@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-esdl/Makefile 455292 2017-12-01 13:44:11Z amdmi3 $
+# $FreeBSD: head/devel/erlang-esdl/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	esdl
 PORTVERSION=	1.0.1
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	erlang-
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 DIST_SUBDIR=	erlang
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Library for accessing SDL and OpenGL through Erlang
 
 LICENSE=	MIT

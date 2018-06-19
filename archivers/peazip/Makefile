@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/peazip/Makefile 470851 2018-05-25 16:31:21Z acm $
+# $FreeBSD: head/archivers/peazip/Makefile 471476 2018-06-03 08:14:02Z acm $
 
 PORTNAME=	peazip
-PORTVERSION=	6.5.1
+PORTVERSION=	6.6.0
 CATEGORIES=	archivers
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	https://github.com/giorgiotani/PeaZip/releases/download/${PORTVERSION}/

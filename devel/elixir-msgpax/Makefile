@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-msgpax/Makefile 460714 2018-02-02 16:36:48Z olgeni $
+# $FreeBSD: head/devel/elixir-msgpax/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	msgpax
 PORTVERSION=	2.1.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	MessagePack implementation for Elixir
 
 LICENSE=	ISCL

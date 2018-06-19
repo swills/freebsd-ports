@@ -1,8 +1,8 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/security/keychain/Makefile 454105 2017-11-13 11:43:31Z garga $
+# $FreeBSD: head/security/keychain/Makefile 472087 2018-06-09 20:53:46Z garga $
 
 PORTNAME=	keychain
-PORTVERSION=	2.8.4
+PORTVERSION=	2.8.5
 CATEGORIES=	security
 MASTER_SITES=	http://www.funtoo.org/archive/keychain/ \
 		GENTOO

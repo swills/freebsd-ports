@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-httpotion/Makefile 447596 2017-08-09 08:03:26Z olgeni $
+# $FreeBSD: head/www/elixir-httpotion/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	httpotion
 PORTVERSION=	3.0.3
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	The HTTP client for Elixir
 
 LICENSE=	MIT

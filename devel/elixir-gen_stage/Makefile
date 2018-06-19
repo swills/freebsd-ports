@@ -1,12 +1,12 @@
-# $FreeBSD: head/devel/elixir-gen_stage/Makefile 460246 2018-01-29 09:12:45Z olgeni $
+# $FreeBSD: head/devel/elixir-gen_stage/Makefile 472494 2018-06-15 21:19:23Z olgeni $
 
 PORTNAME=	gen_stage
-PORTVERSION=	0.13.1
+PORTVERSION=	0.14.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Producer and consumer pipelines with back-pressure for Elixir
 
 LICENSE=	APACHE20

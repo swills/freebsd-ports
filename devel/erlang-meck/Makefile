@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-meck/Makefile 455052 2017-11-28 16:02:12Z olgeni $
+# $FreeBSD: head/devel/erlang-meck/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	meck
 PORTVERSION=	0.8.9
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang library for building mock modules
 
 LICENSE=	APACHE20

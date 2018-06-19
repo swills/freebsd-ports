@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/kallisto/Makefile 455382 2017-12-02 20:44:28Z jwb $
+# $FreeBSD: head/biology/kallisto/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	kallisto
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		libsz.so:science/szip
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	pachterlab
 

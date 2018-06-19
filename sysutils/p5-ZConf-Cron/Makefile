@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/sysutils/p5-ZConf-Cron/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-ZConf-Cron/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-Cron
 PORTVERSION=	1.1.1
@@ -14,6 +14,9 @@ COMMENT=	Handles storing cron tabs in ZConf
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-DateTime-Event-Cron>=0:devel/p5-DateTime-Event-Cron \
 		p5-DateTime-Format-Strptime>=0:devel/p5-DateTime-Format-Strptime \

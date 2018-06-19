@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-calendar/Makefile 447872 2017-08-13 09:22:52Z olgeni $
+# $FreeBSD: head/devel/elixir-calendar/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	calendar
 PORTVERSION=	0.17.4
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Date-time and time zone handling in Elixir
 
 LICENSE=	MIT

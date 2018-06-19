@@ -1,5 +1,5 @@
 # Created by: Devaux Fabien <fab@gcu.info>
-# $FreeBSD: head/devel/directfb/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/directfb/Makefile 471731 2018-06-04 23:18:21Z linimon $
 
 PORTNAME=	directfb
 PORTVERSION=	1.4.17
@@ -11,6 +11,11 @@ MAINTAINER=	anatoly.borodin@gmail.com
 COMMENT=	Graphic development lightweight API
 
 LICENSE=	LGPL21
+
+BROKEN_aarch64=		fails to install: armasm_memcpy.h:No such file or directory
+BROKEN_armv6=		fails to compile: invokes x86 assembler
+BROKEN_armv7=		fails to compile: invokes x86 assembler
+BROKEN_powerpc64=	fails to install: include/directfb/direct/ppc_asm.h:No such file or directory
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
@@ -27,10 +32,6 @@ USES=		cpe gmake jpeg libtool ncurses pathfix perl5 pkgconfig
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 PORTDOCS=	*
-
-BROKEN_aarch64=		fails to install: armasm_memcpy.h:No such file or directory
-BROKEN_armv6=		fails to compile: invokes x86 assembler
-BROKEN_armv7=		fails to compile: invokes x86 assembler
 
 DIRECTFB_SHLIB=	6.0.11	# LT_BINARY.LT_AGE.LT_REVISION
 DIRECTFB_BIN=	${DIRECTFB_SHLIB:R:R}	# LT_BINARY

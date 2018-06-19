@@ -1,8 +1,8 @@
 # Created by: Tomohiro Hosaka <bokutin@bokut.in>
-# $FreeBSD: head/www/p5-MojoX-Log-Dispatch-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-MojoX-Log-Dispatch-Simple/Makefile 472482 2018-06-15 18:46:35Z swills $
 
 PORTNAME=	MojoX-Log-Dispatch-Simple
-PORTVERSION=	1.03
+PORTVERSION=	1.05
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,6 +16,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Log-Dispatch>=0:devel/p5-Log-Dispatch \
 		p5-Mojolicious>=0:www/p5-Mojolicious
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Test-Most>=0:devel/p5-Test-Most
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/erlang-cowboy/Makefile 435133 2017-03-01 11:15:54Z olgeni $
+# $FreeBSD: head/www/erlang-cowboy/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	cowboy
 PORTVERSION=	1.1.2
 CATEGORIES=	www
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Small, fast and modular HTTP server written in Erlang
 
 LICENSE=	ISCL

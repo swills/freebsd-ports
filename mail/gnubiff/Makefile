@@ -1,5 +1,5 @@
 # Created by: Tim Bishop <tim@bishnet.net>
-# $FreeBSD: head/mail/gnubiff/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/mail/gnubiff/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	gnubiff
 PORTVERSION=	2.2.13
@@ -10,12 +10,12 @@ MASTER_SITES=	SF
 MAINTAINER=	tdb@FreeBSD.org
 COMMENT=	Mail notification program for Gnome
 
-OPTIONS_DEFINE=	NLS
-
 LIB_DEPENDS=	libpopt.so:devel/popt
 
+OPTIONS_DEFINE=	NLS
+
+USES=		compiler:c++11-lang cpe fam gmake pathfix pkgconfig
 USE_GNOME=	intlhack libglade2 esound
-USES=		cpe fam gmake pathfix pkgconfig
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib -lX11

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/mail/mailpile/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/mail/mailpile/Makefile 472621 2018-06-17 18:24:35Z yuri $
 
 PORTNAME=	mailpile
 PORTVERSION=	0.5.2
@@ -18,11 +18,11 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dns>=0:dns/py-dns@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}spambayes>=0:mail/py-spambayes@${FLAVOR}
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	mailpile
-GH_PROJECT=	Mailpile
+PORTSCOUT=	limit:^[1-9]
 
 USES=		gettext python:2.7 shebangfix
+USE_GITHUB=	yes
+GH_PROJECT=	Mailpile
 python_OLD_CMD=	/usr/bin/python2
 SHEBANG_FILES=	mailpile/contrib/gui/gui-o-matic.py \
 		mailpile/contrib/gui/gui-test.sh \

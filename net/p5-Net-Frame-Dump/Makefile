@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Frame-Dump/Makefile 470393 2018-05-19 11:07:44Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Frame-Dump/Makefile 472650 2018-06-17 23:09:34Z wen $
 
 PORTNAME=	Net-Frame-Dump
-PORTVERSION=	1.16
+PORTVERSION=	1.17
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

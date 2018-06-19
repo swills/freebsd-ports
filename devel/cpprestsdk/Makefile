@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpprestsdk/Makefile 469346 2018-05-08 00:50:50Z jbeich $
+# $FreeBSD: head/devel/cpprestsdk/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	cpprestsdk
 PORTVERSION=	2.9.1
@@ -14,11 +14,10 @@ LICENSE_FILE=	${WRKSRC}/../license.txt
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	Microsoft
-
 USES=		cmake compiler:c++11-lib ssl
 USE_LDCONFIG=	yes
+USE_GITHUB=	yes
+GH_ACCOUNT=	Microsoft
 WRKSRC_SUBDIR=	Release
 CMAKE_OFF=	BUILD_SAMPLES BUILD_TESTS
 

@@ -1,5 +1,5 @@
 # Created by: Dima Dorfman <dima@unixfreak.org>
-# $FreeBSD: head/editors/mg/Makefile 469861 2018-05-14 08:36:21Z tobik $
+# $FreeBSD: head/editors/mg/Makefile 472310 2018-06-13 12:26:53Z amdmi3 $
 
 PORTNAME=	mg
 PORTVERSION=	20180408
@@ -20,7 +20,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} != FreeBSD || (${OSVERSION} >= 1002506 && ${OSVERSION} < 1100072)
+.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1100072
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-def.h
 
 post-patch:

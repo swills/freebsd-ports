@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/ntop/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/net/ntop/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	ntop
 PORTVERSION=	5.0.1
@@ -12,6 +12,8 @@ COMMENT=	Network monitoring tool with command line and web interfaces
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		Makefiles use hacks that don't work with recent automake.  Try net/ntopng
 
 LIB_DEPENDS=	libgdbm.so:databases/gdbm \
 		libevent.so:devel/libevent

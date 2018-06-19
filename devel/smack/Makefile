@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/smack/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/smack/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	smack
 PORTVERSION=	0.5.0
@@ -10,6 +10,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Low-level I/O storage library which packs data
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to build: libboost_filesystem.so: undefined reference to std::__cxx11::basic_string
 
 LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs \
 		libsnappy.so:archivers/snappy

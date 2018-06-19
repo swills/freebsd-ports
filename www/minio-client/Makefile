@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio-client/Makefile 471141 2018-05-30 17:55:19Z swills $
+# $FreeBSD: head/www/minio-client/Makefile 472314 2018-06-13 13:06:20Z swills $
 
 PORTNAME=	minio-client
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -9,7 +9,7 @@ COMMENT=	Replacement for ls, cp, mkdir, diff and rsync commands for filesystems
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	go>=1.7:lang/go \
+BUILD_DEPENDS=	go>=1.9.4:lang/go \
 		bash:shells/bash
 
 OPTIONS_DEFINE=	MC
@@ -27,10 +27,10 @@ MC=	${PORTNAME}
 USE_GITHUB=	yes
 GH_ACCOUNT=	minio
 GH_PROJECT=	mc
-GH_TAGNAME=	RELEASE.2018-05-25T20-20-15Z
+GH_TAGNAME=	RELEASE.2018-06-09T02-18-09Z
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${GH_PROJECT}
 MAKE_ENV=	GOPATH=${WRKSRC} GOROOT=${LOCALBASE}/go
-COMMIT_ID=	961c4b5daebe0f5f8ac2930f087a14a597e95f5b
+COMMIT_ID=	8cf797da5fc629af4f7850858b611fc980478e2f
 
 PLIST_FILES=	bin/${MC}
 

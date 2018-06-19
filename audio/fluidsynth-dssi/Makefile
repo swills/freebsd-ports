@@ -1,9 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/fluidsynth-dssi/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/fluidsynth-dssi/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	fluidsynth-dssi
 PORTVERSION=	1.0.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	audio
 MASTER_SITES=	SF/dssi/${PORTNAME}/${PORTVERSION}
 

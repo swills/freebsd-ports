@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/animorph/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/animorph/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	animorph
 PORTVERSION=	0.3
@@ -11,6 +11,8 @@ MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Morphing engine for MakeHuman
 
 LICENSE=	LGPL21
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-std=gnu++03"
 
 GNU_CONFIGURE=	yes
 USES=		pkgconfig gmake libtool

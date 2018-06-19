@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-chip/Makefile 447120 2017-08-02 16:17:14Z imp $
+# $FreeBSD: head/sysutils/u-boot-chip/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	imp@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		chip

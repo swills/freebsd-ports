@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 464066 2018-03-10 11:14:01Z dbn $
+# $FreeBSD: head/emulators/Makefile 471283 2018-06-01 18:50:44Z rene $
 #
 
     COMMENT = Emulators for other operating systems
@@ -117,7 +117,6 @@
     SUBDIR += qemu
     SUBDIR += qemu-cheri
     SUBDIR += qemu-devel
-    SUBDIR += qemu-launcher
     SUBDIR += qemu-ppcnv
     SUBDIR += qemu-riscv
     SUBDIR += qemu-sbruno

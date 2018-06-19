@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-jekyll-feed/Makefile 461005 2018-02-05 17:50:34Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-feed/Makefile 471793 2018-06-05 18:56:57Z sunpoet $
 
 PORTNAME=	jekyll-feed
-PORTVERSION=	0.9.3
+PORTVERSION=	0.10.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

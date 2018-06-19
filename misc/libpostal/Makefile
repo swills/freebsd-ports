@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/libpostal/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/misc/libpostal/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	libpostal
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,8 @@ COMMENT=	Library for parsing/normalizing street addresses around the world
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-c++11-narrowing"
 
 RUN_DEPENDS=	curl:ftp/curl
 

@@ -1,5 +1,5 @@
 # Created by: Carlos J Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/net/grive2/Makefile 468141 2018-04-23 21:32:53Z cpm $
+# $FreeBSD: head/net/grive2/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	grive2
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,8 @@ COMMENT=	Open source client for Google Drive
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: JsonValTest.cc.o: undefined reference to boost::unit_test::ut_detail::normalize_test_case_name
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libcurl.so:ftp/curl \

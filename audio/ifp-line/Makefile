@@ -1,5 +1,5 @@
 # Created by: riggs
-# $FreeBSD: head/audio/ifp-line/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/audio/ifp-line/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	ifp-line
 PORTVERSION=	0.3
@@ -13,20 +13,15 @@ COMMENT=	Command line interface to iRiver music players
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		autoreconf iconv
+USES=		iconv
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	LIBUSB_LIBS=-lusb
 MAKE_JOBS_UNSAFE=	yes
-
-LDFLAGS+=	-lusb
 
 PLIST_FILES=	bin/ifp man/man1/ifp.1.gz
 PORTDOCS=	NEWS README TIPS nonroot.sh
 
 OPTIONS_DEFINE=	DOCS
-
-post-patch:
-	@${REINPLACE_CMD} -e \
-		'/LIBUSB/s|ERROR|WARN|' ${WRKSRC}/configure.ac
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ifp ${STAGEDIR}${PREFIX}/bin

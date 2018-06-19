@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-swarm/Makefile 463709 2018-03-06 11:46:33Z olgeni $
+# $FreeBSD: head/devel/elixir-swarm/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	swarm
 DISTVERSION=	3.3.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Clustering, registration, and distribution for Elixir
 
 LICENSE=	MIT

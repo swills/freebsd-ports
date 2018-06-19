@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/gogs/Makefile 469456 2018-05-09 17:45:37Z krion $
+# $FreeBSD: head/devel/gogs/Makefile 471920 2018-06-07 13:33:03Z swills $
 
 PORTNAME=	gogs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.11.43
-PORTREVISION=	1
+DISTVERSION=	0.11.53
 CATEGORIES=	devel www
 
 MAINTAINER=	dg@syrec.org
@@ -17,7 +16,7 @@ RUN_DEPENDS=	git:devel/git \
 		bash:shells/bash
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	gogits
+GH_ACCOUNT=	gogs
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS

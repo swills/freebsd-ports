@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/wireguard/Makefile 470763 2018-05-24 08:44:56Z decke $
+# $FreeBSD: head/net/wireguard/Makefile 472357 2018-06-14 06:12:35Z decke $
 
 PORTNAME=	wireguard
-PORTVERSION=	0.0.20180524
+PORTVERSION=	0.0.20180613
 CATEGORIES=	net
 MASTER_SITES=	https://git.zx2c4.com/WireGuard/snapshot/
 DISTNAME=	WireGuard-${PORTVERSION}
@@ -12,7 +12,6 @@ COMMENT=	Fast, modern and secure VPN Tunnel
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKDIR}/${DISTNAME}/COPYING
 
-BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash \
 		wireguard-go:net/wireguard-go
 

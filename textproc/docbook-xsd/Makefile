@@ -1,12 +1,12 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/docbook-xsd/Makefile 347786 2014-03-10 17:25:25Z bapt $
+# $FreeBSD: head/textproc/docbook-xsd/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	docbook-xsd
 DISTVERSION=	1.0b1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.oasis-open.org/docbook/xmlschema/${DISTVERSION}/
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	DocBook W3C XML Schema
 
 USES=		zip

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-prometheus-client-mmap/Makefile 469937 2018-05-14 17:56:22Z mfechner $
+# $FreeBSD: head/devel/rubygem-prometheus-client-mmap/Makefile 472117 2018-06-10 08:08:26Z antoine $
 
 PORTNAME=	prometheus-client-mmap
 DISTVERSION=	0.9.2
@@ -9,8 +9,6 @@ MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Suite of instrumentation metric primitives
 
 LICENSE=	RUBY
-
-LIB_DEPENDS+=	libunwind.so:devel/libunwind
 
 USES=		gem
 USE_RUBY=	yes

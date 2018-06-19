@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/mail/p5-ZConf-Mail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-ZConf-Mail/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-Mail
 PORTVERSION=	2.0.0
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Misc mail client functions backed by ZConf
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-Config-Tiny>=0:devel/p5-Config-Tiny \
 		p5-Email-Date>=0:mail/p5-Email-Date \

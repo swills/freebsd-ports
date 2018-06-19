@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 470810 2018-05-24 20:49:47Z rodrigo $
+# $FreeBSD: head/GIDs 472578 2018-06-17 00:08:22Z eadler $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -793,7 +793,7 @@ chronyd:*:849:
 # free: 850
 # free: 851
 # free: 852
-# free: 853
+_geodns:*:853:
 # free: 854
 # free: 855
 # free: 856
@@ -825,7 +825,7 @@ chronyd:*:849:
 # free: 882
 # free: 883
 # free: 884
-# free: 885
+tcpdump:*:885:
 miniflux:*:886:
 pdagent:*:887:
 vuls:*:888:

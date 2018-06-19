@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/git-review/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/git-review/Makefile 472342 2018-06-13 20:36:38Z jrm $
 
 PORTNAME=	git-review
-PORTVERSION=	1.25.0
+DISTVERSION=	1.26.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 

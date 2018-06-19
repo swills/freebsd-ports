@@ -1,5 +1,5 @@
 # Created by: gahr@FreeBSD.org
-# $FreeBSD: head/devel/critcl/Makefile 465169 2018-03-21 11:08:23Z gahr $
+# $FreeBSD: head/devel/critcl/Makefile 472766 2018-06-19 07:47:44Z gahr $
 
 PORTNAME=	critcl
 PORTVERSION=	3.1.17
@@ -24,7 +24,7 @@ GH_ACCOUNT=	andreas-kupries
 TEST_TARGET=	test
 
 PLIST_SUB+=	VER=${PORTVERSION} \
-		ARCH=${ARCH:C/arm.*/arm/:S/i386/ix86/:S/aarch64/arm/}
+		ARCH=${ARCH:C/arm.*/arm/:S/i386/ix86/:S/aarch64/arm/:S/powerpc64/powerpc/}
 PORTDOCS=	*
 
 NO_BUILD=	yes

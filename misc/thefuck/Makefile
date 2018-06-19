@@ -1,8 +1,8 @@
 # Created by: Guangyuan Yang <ygy@FreeBSD.org>
-# $FreeBSD: head/misc/thefuck/Makefile 458123 2018-01-05 09:26:49Z ygy $
+# $FreeBSD: head/misc/thefuck/Makefile 472189 2018-06-11 15:33:10Z ygy $
 
 PORTNAME=	thefuck
-DISTVERSION=	3.25
+DISTVERSION=	3.27
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 

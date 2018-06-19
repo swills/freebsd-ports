@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/graphics/swfmill/Makefile 454905 2017-11-26 08:58:47Z vanilla $
+# $FreeBSD: head/graphics/swfmill/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	swfmill
 PORTVERSION=	0.3.6
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error
 
-USES=		dos2unix iconv gmake pkgconfig libtool
+USES=		compiler:c++11-lang dos2unix iconv gmake pkgconfig libtool
 USE_GNOME=	libxml2 libxslt
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

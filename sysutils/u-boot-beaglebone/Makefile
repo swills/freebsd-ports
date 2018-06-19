@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-beaglebone/Makefile 424735 2016-10-26 21:09:18Z imp $
+# $FreeBSD: head/sysutils/u-boot-beaglebone/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	imp@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		beaglebone

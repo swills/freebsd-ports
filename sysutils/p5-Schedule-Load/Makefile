@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/sysutils/p5-Schedule-Load/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-Schedule-Load/Makefile 471691 2018-06-04 18:15:30Z sunpoet $
 
 PORTNAME=	Schedule-Load
 PORTVERSION=	3.064
@@ -11,8 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Load distribution and status across multiple host machines
 
-LICENSE=	ART10 GPLv1+
+LICENSE=	ART20 LGPL3
 LICENSE_COMB=	dual
+LICENSE_FILE_ART20=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	p5-Proc-ProcessTable>=0.40:devel/p5-Proc-ProcessTable \
 		p5-Unix-Processors>=2.02:sysutils/p5-Unix-Processors \
@@ -26,7 +27,7 @@ USE_PERL5=	configure
 
 OPTIONS_DEFINE=	EXAMPLES
 
-post-install:
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/init.d
 	${INSTALL_SCRIPT} ${WRKSRC}/init.d/* ${STAGEDIR}${EXAMPLESDIR}/init.d
 

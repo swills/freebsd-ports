@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/mosesdecoder/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/math/mosesdecoder/Makefile 472395 2018-06-14 19:38:52Z amdmi3 $
 
 PORTNAME=	mosesdecoder
 PORTVERSION=	2.1.1
@@ -26,7 +26,6 @@ SHEBANG_FILES=	scripts/analysis/extract-target-trees.py \
 		scripts/training/flexibility_score.py \
 		scripts/training/filter-rule-table.py \
 		scripts/training/create_count_tables.py
-python_OLD_CMD=	"/usr/bin/env python"
 
 MAKE_ENV+=	BOOST_BUILD_PATH=${WRKSRC}/jam-files/boost-build
 

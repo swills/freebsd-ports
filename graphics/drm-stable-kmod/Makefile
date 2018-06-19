@@ -1,8 +1,8 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-stable-kmod/Makefile 471110 2018-05-29 19:32:35Z zeising $
+# $FreeBSD: head/graphics/drm-stable-kmod/Makefile 471849 2018-06-06 15:13:12Z zeising $
 
 PORTNAME=	drm-stable-kmod
-PORTVERSION=	g20180529
+PORTVERSION=	g20180606
 CATEGORIES=	graphics kld
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -25,7 +25,7 @@ USES=		kmod uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-drm
-GH_TAGNAME=	b6bc307
+GH_TAGNAME=	37ff8a1
 
 .include <bsd.port.options.mk>
 

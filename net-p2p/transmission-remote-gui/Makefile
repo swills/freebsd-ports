@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 470851 2018-05-25 16:31:21Z acm $
+# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 471477 2018-06-03 08:14:32Z acm $
 
 PORTNAME=	transmission-remote-gui
-PORTVERSION=	5.14.0
+PORTVERSION=	5.15.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}

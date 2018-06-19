@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/ipfs-go/Makefile 462454 2018-02-20 21:32:18Z yuri $
+# $FreeBSD: head/sysutils/ipfs-go/Makefile 472406 2018-06-14 22:52:48Z swills $
 
 PORTNAME=	ipfs
-PORTVERSION=	0.4.13
+PORTVERSION=	0.4.15
 DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	sysutils

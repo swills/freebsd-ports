@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/frogatto/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/frogatto/Makefile 472570 2018-06-16 21:41:43Z swills $
 
 PORTNAME=	frogatto
 PORTVERSION=	1.3.1
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	games
 
 MAINTAINER=	fiziologus@gmail.com
@@ -26,6 +26,7 @@ USES=		gmake pkgconfig
 ALL_TARGET=	game server
 USE_GL=		glew glu
 USE_SDL=	sdl image mixer ttf
+USE_CXXSTD=	c++11
 
 PLIST_FILES=	bin/${PORTNAME} bin/${PORTNAME}-server
 

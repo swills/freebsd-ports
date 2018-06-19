@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/science/p5-Chemistry-Reaction/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/p5-Chemistry-Reaction/Makefile 471797 2018-06-05 18:57:18Z sunpoet $
 
 PORTNAME=	Chemistry-Reaction
 PORTVERSION=	0.02
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Represent a ring as a substructure of a molecule
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Chemistry-Mol>=0:science/p5-Chemistry-Mol \
 		p5-Chemistry-File-SMILES>=0:science/p5-Chemistry-File-SMILES \

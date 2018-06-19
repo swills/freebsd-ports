@@ -1,5 +1,5 @@
 # Created by: Zane C. Bowers-Hadley <vvelox@vvelox.net>
-# $FreeBSD: head/deskutils/p5-ZConf-BGSet/Makefile 432940 2017-01-31 18:23:03Z danfe $
+# $FreeBSD: head/deskutils/p5-ZConf-BGSet/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-BGSet
 PORTVERSION=	1.0.0
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Background management utility and Perl module that uses ZConf
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-Image-Size-FillFullSelect>=0.1.0:graphics/p5-Image-Size-FillFullSelect \
 		p5-ZConf>=:net/p5-ZConf \

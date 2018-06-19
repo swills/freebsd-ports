@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-backoff/Makefile 469233 2018-05-06 15:56:25Z olgeni $
+# $FreeBSD: head/devel/erlang-backoff/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	backoff
 PORTVERSION=	1.1.6
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Simple exponential backoffs in Erlang
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/net/liferea/Makefile 470311 2018-05-18 17:21:43Z kwm $
+# $FreeBSD: head/net/liferea/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	liferea
 PORTVERSION=	1.12.3
@@ -10,6 +10,8 @@ MAINTAINER=	kwm@FreeBSD.org
 COMMENT=	Simple RSS/RDF feed reader
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to compile: WebKitWebEditor.h:40: redefinition of typedef 'WebKitWebEditor'
 
 BUILD_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \

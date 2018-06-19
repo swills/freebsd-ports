@@ -1,8 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/py-interface/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-interface/Makefile 472751 2018-06-19 02:26:54Z yuri $
 
 PORTNAME=	interface
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.lysator.liu.se/~tab/erlang/py_interface/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +21,7 @@ DOCSDIR=	${PREFIX}/share/doc/py_${PORTNAME}
 # EXAMPLESDIR=	${PREFIX}/share/examples/py_${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS
+DOCS_USE=	PYTHON=concurrent
 
 PORTDOCS=	README
 

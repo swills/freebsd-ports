@@ -1,14 +1,15 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-plumbum/Makefile 464192 2018-03-11 18:26:53Z dbn $
+# $FreeBSD: head/sysutils/py-plumbum/Makefile 471377 2018-06-02 16:32:37Z dbn $
 
 PORTNAME=	plumbum
 PORTVERSION=	1.6.6
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	dbn@FreeBSD.org
-COMMENT=	Shell combinators and more for python
+COMMENT=	Shell combinators and more for Python
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

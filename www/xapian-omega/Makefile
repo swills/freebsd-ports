@@ -1,8 +1,9 @@
 # Created by: Henrik Brix Andersen <brix@FreeBSD.org>
-# $FreeBSD: head/www/xapian-omega/Makefile 452237 2017-10-16 17:51:38Z sunpoet $
+# $FreeBSD: head/www/xapian-omega/Makefile 471774 2018-06-05 18:55:14Z sunpoet $
 
 PORTNAME=	xapian-omega
 PORTVERSION=	1.4.5
+PORTERVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
@@ -50,5 +51,6 @@ post-install-DOCS-on:
 post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	${INSTALL_DATA} ${WRKSRC}/omega.conf ${STAGEDIR}${EXAMPLESDIR}/
+	cd ${WRKSRC}/ && ${COPYTREE_SHARE} templates ${STAGEDIR}${EXAMPLESDIR}/
 
 .include <bsd.port.mk>

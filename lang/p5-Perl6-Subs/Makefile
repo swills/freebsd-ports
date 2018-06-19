@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Perl6-Subs/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/p5-Perl6-Subs/Makefile 471649 2018-06-04 18:09:35Z sunpoet $
 
 PORTNAME=	Perl6-Subs
 PORTVERSION=	0.05
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Perl6::Subs - Define your subroutines in the Perl 6 style
+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
 RUN_DEPENDS:=	${BUILD_DEPENDS}

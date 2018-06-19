@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/thrift/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/thrift/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION}	# get these from bsd.thrift.mk. any upgrade needs to check ALL dependencies
@@ -11,6 +11,8 @@ MAINTAINER=	komarov@valerka.net
 COMMENT=	Framework for scalable cross-language services development
 
 LICENSE=	APACHE20
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-c++11-long-long"
 
 USES=		autoreconf libtool pkgconfig
 GNU_CONFIGURE=	yes

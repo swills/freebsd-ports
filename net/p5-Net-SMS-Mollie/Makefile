@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-SMS-Mollie/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-SMS-Mollie/Makefile 471665 2018-06-04 18:11:05Z sunpoet $
 
 PORTNAME=	Net-SMS-Mollie
 PORTVERSION=	0.04
@@ -12,6 +12,7 @@ COMMENT=	Send SMS messages via the mollie.nl service
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-XML-Simple>=0:textproc/p5-XML-Simple
 RUN_DEPENDS:=	${BUILD_DEPENDS}

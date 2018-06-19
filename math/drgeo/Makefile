@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/math/drgeo/Makefile 455212 2017-11-30 17:06:14Z amdmi3 $
+# $FreeBSD: head/math/drgeo/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	drgeo
 PORTVERSION=	1.1.0
@@ -12,6 +12,8 @@ COMMENT=	GTK interactive geometry software
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: ./geo/libgeo.a: multiple definition of drgeoDialogData
 
 LIB_DEPENDS=	libguile.so:lang/guile
 

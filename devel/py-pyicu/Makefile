@@ -1,5 +1,5 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/devel/py-pyicu/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/devel/py-pyicu/Makefile 471449 2018-06-03 06:00:42Z antoine $
 
 PORTNAME=	pyicu
 PORTVERSION=	1.9.8
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libicudata.so:devel/icu
 
-USES=		python
+USES=		compiler:c++11-lang python
 USE_CXXSTD=	c++11
 USE_PYTHON=	distutils autoplist
 

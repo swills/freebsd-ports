@@ -1,5 +1,5 @@
 # Created by: reed@pugetsoundtechnology.com
-# $FreeBSD: head/textproc/libwpd010/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/libwpd010/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	libwpd
 PORTVERSION=	0.10.2
@@ -19,7 +19,7 @@ LICENSE_FILE_MPL20=	${WRKSRC}/COPYING.MPL
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/spirit/include/qi.hpp:devel/boost-libs
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge
 
-USES=		libtool pathfix pkgconfig tar:bzip2
+USES=		compiler:c++11-lang libtool pathfix pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes
 USE_GNOME=	libgsf
 USE_LDCONFIG=	yes

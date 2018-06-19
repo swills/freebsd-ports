@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Module-Util/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/devel/p5-Module-Util/Makefile 472122 2018-06-10 09:04:29Z amdmi3 $
 
 PORTNAME=	Module-Util
 PORTVERSION=	1.09
@@ -10,7 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Perl module name tools and transformations
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	modbuild
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

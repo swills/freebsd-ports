@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/ssh-vault/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/security/ssh-vault/Makefile 471955 2018-06-07 20:23:23Z dbaio $
 
 PORTNAME=	ssh-vault
-PORTVERSION=	0.12.3
+PORTVERSION=	0.12.4
 CATEGORIES=	security
 
 MAINTAINER=	nbari@tequila.io

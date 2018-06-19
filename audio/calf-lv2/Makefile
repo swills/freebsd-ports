@@ -1,9 +1,9 @@
 # Created by: <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/calf-lv2/Makefile 471068 2018-05-28 23:40:13Z yuri $
+# $FreeBSD: head/audio/calf-lv2/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	calf
 DISTVERSION=	0.90.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://calf-studio-gear.org/files/
 PKGNAMESUFFIX=	-lv2

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/usql/Makefile 463561 2018-03-04 09:40:46Z yuri $
+# $FreeBSD: head/databases/usql/Makefile 472284 2018-06-13 04:58:31Z yuri $
 
 PORTNAME=	usql
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.0
+DISTVERSION=	0.7.0
 CATEGORIES=	databases
 
 MAINTAINER=	yuri@FreeBSD.org

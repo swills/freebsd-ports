@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-cf/Makefile 469227 2018-05-06 15:27:17Z olgeni $
+# $FreeBSD: head/devel/erlang-cf/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	cf
 PORTVERSION=	0.3.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Colored output for io and io_lib
 
 LICENSE=	BSD3CLAUSE

@@ -1,8 +1,8 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/devel/py-Automat/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-Automat/Makefile 472568 2018-06-16 21:28:47Z swills $
 
 PORTNAME=	Automat
-PORTVERSION=	0.6.0
+PORTVERSION=	0.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

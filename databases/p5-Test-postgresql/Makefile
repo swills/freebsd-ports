@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-Test-postgresql/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Test-postgresql/Makefile 471580 2018-06-04 18:01:57Z sunpoet $
 
 PORTNAME=	Test-postgresql
 PORTVERSION=	0.09
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of postgresql runner for tests
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\
 	p5-Class-Accessor-Lite>0:devel/p5-Class-Accessor-Lite \

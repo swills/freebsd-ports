@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-rblineprof/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-rblineprof/Makefile 472117 2018-06-10 08:08:26Z antoine $
 
 PORTNAME=	rblineprof
 PORTVERSION=	0.3.7
@@ -11,8 +11,7 @@ COMMENT=	Shows you lines of code that are slow
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libunwind.so:devel/libunwind \
-		libgmp.so:math/gmp
+LIB_DEPENDS=	libgmp.so:math/gmp
 RUN_DEPENDS=	rubygem-debugger-ruby_core_source>=1.3:devel/rubygem-debugger-ruby_core_source
 
 USES=		gem

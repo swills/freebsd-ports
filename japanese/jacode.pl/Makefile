@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/jacode.pl/Makefile 463981 2018-03-09 17:39:11Z arved $
+# $FreeBSD: head/japanese/jacode.pl/Makefile 471645 2018-06-04 18:09:08Z sunpoet $
 
 PORTNAME=	jacode.pl
 PORTVERSION=	2.13.4.18
@@ -10,8 +10,9 @@ DISTNAME=	${PORTNAME:S|.pl||}-${PORTVERSION}
 MAINTAINER=	takefu@airport.fm
 COMMENT=	Perl library for Japanese character code conversion
 
-LICENSE=	GPLv1 ART10
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
 USES=		perl5
 USE_PERL5=	run

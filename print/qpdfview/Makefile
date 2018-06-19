@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/print/qpdfview/Makefile 465146 2018-03-21 03:51:44Z mi $
+# $FreeBSD: head/print/qpdfview/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	qpdfview
 DISTVERSION=	0.4.17beta1
@@ -13,7 +13,7 @@ COMMENT=	Tabbed DjVu/PDF/PS document viewer
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		desktop-file-utils pkgconfig qmake
+USES=		compiler:c++11-lang desktop-file-utils pkgconfig qmake
 USE_LDCONFIG=	yes
 QMAKE_SOURCE_PATH=	${PORTNAME}.pro
 

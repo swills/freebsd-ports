@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/alephone-scenarios/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/games/alephone-scenarios/Makefile 472308 2018-06-13 12:25:59Z amdmi3 $
 
 PORTNAME=	scenarios
 PORTVERSION=	1.0
@@ -42,7 +42,7 @@ SUB_FILES=	wrapper
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1000000
+.if ${OPSYS} == FreeBSD
 . if ${PORT_OPTIONS:METERNAL} || ${PORT_OPTIONS:MRUBICON}
 USES=		zip:infozip
 . endif
@@ -51,7 +51,7 @@ USES=		zip:infozip
 DATADIR!=	cd ${PORTSDIR}/games/alephone && ${MAKE} -V DATADIR
 
 .if ${PORT_OPTIONS:MEMR}
-. if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1000000
+. if ${OPSYS} == FreeBSD
 EXTRACT_DEPENDS=gtar:archivers/gtar
 TAR=		${LOCALBASE}/bin/gtar
 . endif

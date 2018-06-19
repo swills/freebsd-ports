@@ -1,5 +1,5 @@
 # Created by: Nikola Lecic <nikola.lecic@anthesphoria.net>
-# $FreeBSD: head/textproc/ibus-m17n/Makefile 460964 2018-02-05 07:46:24Z yuri $
+# $FreeBSD: head/textproc/ibus-m17n/Makefile 472619 2018-06-17 18:15:09Z yuri $
 
 PORTNAME=	ibus-m17n
 DISTVERSION=	1.3.4-16
@@ -17,6 +17,8 @@ LIB_DEPENDS=	libibus-1.0.so:textproc/ibus \
 		libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig
 RUN_DEPENDS=	ibus-daemon:textproc/ibus
+
+PORTSCOUT=	limit:^[0-9]+\.[0-9].*$$
 
 USES=		autoreconf gmake libtool pkgconfig
 GNU_CONFIGURE=	yes

@@ -1,9 +1,9 @@
 # Created by: Qing Feng <qingfeng@douban.com>
-# $FreeBSD: head/www/py-scrapy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-scrapy/Makefile 472739 2018-06-19 01:41:41Z yuri $
 
 PORTNAME=	Scrapy
 PORTVERSION=	1.3.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -24,7 +24,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=15.5.0:devel/py-twisted@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}parsel>=1.1:textproc/py-parsel@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils concurrent autoplist
 
 OPTIONS_DEFINE=	SSL
 OPTIONS_DEFAULT=SSL

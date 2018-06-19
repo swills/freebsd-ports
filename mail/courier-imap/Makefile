@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/courier-imap/Makefile 451318 2017-10-05 15:39:39Z madpilot $
+# $FreeBSD: head/mail/courier-imap/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	courier-imap
 PORTVERSION=	4.18.2
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libcourier-unicode.so:devel/courier-unicode
 
 CONFLICTS=	courier-[0-9]* imap-uw-[0-9]* panda-imap-[0-9]*
 
-USES=		gmake localbase:ldflags perl5 ssl tar:bzip2
+USES=		compiler:c++11-lang gmake localbase:ldflags perl5 ssl tar:bzip2
 GNU_CONFIGURE=	yes
 USE_RC_SUBR=	courier-imap-imapd courier-imap-imapd-ssl \
 		courier-imap-pop3d courier-imap-pop3d-ssl

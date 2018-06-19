@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/multimedia/libvpx/Makefile 466922 2018-04-10 00:13:43Z jbeich $
+# $FreeBSD: head/multimedia/libvpx/Makefile 472311 2018-06-13 12:33:00Z jbeich $
 
 PORTNAME=	libvpx
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	nasm:devel/nasm
 USE_GITHUB=	yes
 GH_ACCOUNT=	webmproject
 
-USES=		cpe gmake perl5 shebangfix
+USES=		compiler:c++11-lib cpe gmake perl5 shebangfix
 CPE_VENDOR=	john_koleszar
 HAS_CONFIGURE=	yes
 USE_PERL5=	build
@@ -38,6 +38,7 @@ ALL_TARGET=	# empty
 OPTIONS_DEFINE=	DEBUG MULTIRES POSTPROC RTCPU SHARED SIZE_LIMIT TEST THREADS
 OPTIONS_DEFAULT=MULTIRES POSTPROC RTCPU SHARED SIZE_LIMIT THREADS
 OPTIONS_EXCLUDE_aarch64=RTCPU
+OPTIONS_EXCLUDE_powerpcspe=RTCPU
 OPTIONS_SUB=		yes
 
 DEBUG_CONFIGURE_ON=	--enable-debug

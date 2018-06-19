@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/flatbuffers/Makefile 466617 2018-04-06 06:21:31Z yuri $
+# $FreeBSD: head/devel/flatbuffers/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	flatbuffers
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,8 @@ COMMENT=	Memory efficient serialization library
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN_powerpc64=	fails to compile: base.h:189:32: use of deleted function flatbuffers::EndianSwap(T)
 
 USES=		cmake:outsource compiler:c++11-lib
 USE_LDCONFIG=	yes

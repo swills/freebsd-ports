@@ -1,9 +1,9 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/net-im/gale/Makefile 464068 2018-03-10 11:22:59Z cpm $
+# $FreeBSD: head/net-im/gale/Makefile 471254 2018-06-01 10:16:41Z cpm $
 
 PORTNAME=	gale
 PORTVERSION=	0.99f
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	net-im
 MASTER_SITES=	http://download.ofb.net/${PORTNAME}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}ruit

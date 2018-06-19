@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 471182 2018-05-30 21:59:36Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 472725 2018-06-19 00:37:20Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.5-420
-DISTVERSIONSUFFIX=	-gb0ee36913
+DISTVERSION=	0.0.5-510
+DISTVERSIONSUFFIX=	-g392a4bdc0
 CATEGORIES=	emulators
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -26,9 +26,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	RPCS3
 GH_TUPLE=	RPCS3:hidapi:hidapi-0.8.0-rc1-25-gca39ce8:hidapi/3rdparty/hidapi \
 		RPCS3:llvm:17ec6d78a73:llvm/llvm \
-		RPCS3:yaml-cpp:release-0.5.3-62-g017626a:yamlcpp/Utilities/yaml-cpp \
 		akrzemi1:Optional:f27e790:Optional/3rdparty/Optional \
 		Cyan4973:xxHash:v0.6.5:xxHash/3rdparty/xxHash \
+		jbeder:yaml-cpp:yaml-cpp-0.6.2-4-g4fb1c4b:yamlcpp/3rdparty/yaml-cpp \
 		kobalicek:asmjit:673dcef:asmjit/asmjit \
 		KhronosGroup:glslang:3.0-1794-ge22e3473:glslang/Vulkan/glslang \
 		Microsoft:GSL:fc5fce4:GSL/3rdparty/GSL \

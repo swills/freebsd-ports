@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	qtruby
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,8 @@ PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Ruby bindings for Qt
+
+BROKEN_powerpc64=	fails to compile: ruby.h:1381: wrong number of arguments specified for '__deprecated__' attribute
 
 LIB_DEPENDS=	libqwt.so:x11-toolkits/qwt5 \
 		libqscintilla2_qt4.so:devel/qscintilla2

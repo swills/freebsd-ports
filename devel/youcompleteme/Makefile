@@ -1,9 +1,11 @@
 # Created by: Richard Gallamore <ultima@freebsd.org>
-# $FreeBSD: head/devel/youcompleteme/Makefile 467748 2018-04-19 06:18:23Z ultima $
+# $FreeBSD: head/devel/youcompleteme/Makefile 472557 2018-06-16 17:35:22Z ultima $
 
 PORTNAME=	YouCompleteMe
 DISTVERSION=	g20180417
+PORTREVISION=	1
 CATEGORIES=	devel
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Code-completion engine for Vim
@@ -24,7 +26,8 @@ RUN_DEPENDS=	vim:editors/vim \
 		${PYTHON_PKGNAMEPREFIX}requests-futures>0:www/py-requests-futures@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}waitress>0:www/py-waitress@${PY_FLAVOR}
 
-USES=		cmake python:2.7
+USES=		cmake python
+USE_PYTHON=	flavors
 USE_GITHUB=	yes
 GH_ACCOUNT=	Valloric
 GH_TAGNAME=	6975efd
@@ -60,6 +63,9 @@ MONO_VARS=		MONOFILESDIR=${VIMFILESDIR}/third_party/ycmd/third_party/OmniSharpSe
 RUST_RUN_DEPENDS=	racerd:devel/racerd
 
 VIMFILESDIR=		${PREFIX}/share/vim/vimfiles
+
+CMAKE_ARGS_PY3=		-DUSE_PYTHON2:BOOL=OFF
+CMAKE_ARGS=		${CMAKE_ARGS_PY${PYTHON_MAJOR_VER}}
 
 do-install:
 		${MKDIR} ${STAGEDIR}${VIMFILESDIR}/third_party/ycmd/third_party

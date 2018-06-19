@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libftdi1/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/libftdi1/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	libftdi1
 PORTVERSION=	1.4
@@ -11,6 +11,8 @@ COMMENT=	Library (using libusb) to talk to FTDI chips
 
 LICENSE=	GPLv2
 
+BROKEN_sparc64=		Does not build: fails to link
+
 LIB_DEPENDS=	libconfuse.so:devel/libconfuse
 
 OPTIONS_DEFINE=		PYTHON BOOST DOCS EXAMPLES
@@ -20,9 +22,7 @@ OPTIONS_SUB=		yes
 BOOST_DESC=	Build with boost
 PYTHON_DESC=	Build Python bindings
 
-BROKEN_sparc64=		Does not build: fails to link
-
-USES=		cmake gettext-runtime pkgconfig tar:bzip2
+USES=		cmake compiler:c++11-lang gettext-runtime pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 
 PORTDOCS=	COPYING.LIB ChangeLog README

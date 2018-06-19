@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/easyloggingpp/Makefile 466283 2018-04-03 07:40:22Z yuri $
+# $FreeBSD: head/devel/easyloggingpp/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	easyloggingpp
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	C++ logging library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	muflihun
 USE_LDCONFIG=	yes

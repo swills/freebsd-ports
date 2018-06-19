@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/find-lib.sh 415573 2016-05-20 19:01:59Z mat $
+# $FreeBSD: head/Mk/Scripts/find-lib.sh 471988 2018-06-08 09:26:20Z mat $
 
 [ -n "${DEBUG_MK_SCRIPTS}" -o -n "${DEBUG_MK_SCRIPTS_FIND_LIB}" ] && set -x
 
@@ -22,12 +22,12 @@ if [ $# -ne 1 ]; then
 fi
 
 lib=$1
-dirs="${LIB_DIRS} `cat ${LOCALBASE}/libdata/ldconfig/* 2>/dev/null || :`"
+dirs="${LIB_DIRS} $(cat ${LOCALBASE}/libdata/ldconfig/* 2>/dev/null || :)"
 
 for libdir in ${dirs} ; do
 	test -f ${libdir}/${lib} || continue
 	libfile=${libdir}/${lib}
-	[ `file -b -L --mime-type ${libfile}` = "application/x-sharedlib" ] || continue
+	[ "$(file -b -L --mime-type ${libfile})" = "application/x-sharedlib" ] || continue
 	echo $libfile
 	break
 done

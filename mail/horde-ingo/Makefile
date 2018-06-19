@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/horde-ingo/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/mail/horde-ingo/Makefile 471484 2018-06-03 09:34:25Z amdmi3 $
 
 PORTNAME=	ingo
 PORTVERSION=	3.2.16
@@ -11,7 +11,7 @@ COMMENT=	Horde email filter rules manager
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	horde cpe
+USES=		horde cpe
 USE_PHP=	gettext
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

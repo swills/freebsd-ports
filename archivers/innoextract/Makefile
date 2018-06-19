@@ -1,9 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/archivers/innoextract/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/archivers/innoextract/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	innoextract
-PORTVERSION=	1.6
-PORTREVISION=	7
+PORTVERSION=	1.7
 CATEGORIES=	archivers
 MASTER_SITES=	http://constexpr.org/innoextract/files/
 
@@ -13,16 +12,16 @@ COMMENT=	Program to extract Inno Setup files
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_sparc64=		Does not build: undefined reference to std::ctype<char>::_M_widen_init()
+
 LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs \
 		libboost_filesystem.so:devel/boost-libs \
 		libboost_system.so:devel/boost-libs \
 		libboost_program_options.so:devel/boost-libs
 
-USES=		cmake iconv
+USES=		cmake compiler:c++11-lang iconv
 
 PLIST_FILES=	bin/innoextract \
 		man/man1/innoextract.1.gz
-
-BROKEN_sparc64=		Does not build: undefined reference to std::ctype<char>::_M_widen_init()
 
 .include <bsd.port.mk>

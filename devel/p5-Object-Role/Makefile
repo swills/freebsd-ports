@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Object-Role/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Object-Role/Makefile 471616 2018-06-04 18:05:01Z sunpoet $
 
 PORTNAME=	Object-Role
 PORTVERSION=	0.001
@@ -10,6 +10,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl base class for non-Moose roles
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Sub-Name>=0:devel/p5-Sub-Name
 RUN_DEPENDS:=	${BUILD_DEPENDS}

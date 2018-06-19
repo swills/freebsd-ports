@@ -1,9 +1,10 @@
-# $FreeBSD: head/misc/pubs/Makefile 464580 2018-03-15 09:29:41Z yuri $
+# $FreeBSD: head/misc/pubs/Makefile 472611 2018-06-17 16:43:58Z yuri $
 
 PORTNAME=	pubs
-DISTVERSION=	0.7.0
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.7.0-104
+DISTVERSIONSUFFIX=	-gc513870
 CATEGORIES=	misc python
-MASTER_SITES=	CHEESESHOP
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Your bibliography on the command line
@@ -18,6 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>0:www/py-beautifulsoup@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
+USE_GITHUB=	yes
 USE_PYTHON=	distutils autoplist noflavors
 
 .include <bsd.port.mk>

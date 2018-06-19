@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/smart/Makefile 465101 2018-03-20 17:41:33Z jrm $
+# $FreeBSD: head/sysutils/smart/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	smart
 DISTVERSION=	0.0.8
@@ -9,6 +9,7 @@ COMMENT=	Output disk SMART values
 
 LICENSE=	ISCL
 
+BROKEN_powerpc64=	fails to compile: libsmart.c:241: storage size of 's' isn't constant
 IGNORE_FreeBSD_10=	Requires FreeBSD 11 or later
 
 USE_GITHUB=	yes

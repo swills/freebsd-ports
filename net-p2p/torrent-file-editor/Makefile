@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	torrent-file-editor
 PORTVERSION=	0.3.10
@@ -11,6 +11,8 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Qt-based GUI tool for creating and editing .torrent files
 
 LICENSE=	GPLv3
+
+BROKEN_powerpc64=	fails to compile: -Werror=cpp: No option -Wcpp
 
 USES=		cmake desktop-file-utils
 

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/vorbisgain/Makefile 428129 2016-12-08 15:38:24Z tijl $
+# $FreeBSD: head/audio/vorbisgain/Makefile 472178 2018-06-11 09:34:32Z amdmi3 $
 
 PORTNAME=	vorbisgain
 PORTVERSION=	0.37
@@ -10,18 +10,21 @@ MASTER_SITES=	http://sjeng.org/ftp/vorbis/
 MAINTAINER=	gamato@users.sf.net
 COMMENT=	Calculates the perceived sound level of an Ogg Vorbis file
 
-OPTIONS_DEFINE=	RECURSIVE
-RECURSIVE_DESC=	recursive processing and pattern matching
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libvorbis.so:audio/libvorbis
+LIB_DEPENDS=	libvorbis.so:audio/libvorbis \
+		libogg.so:audio/libogg
 
+USES=		localbase:ldflags
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 PLIST_FILES=	bin/vorbisgain \
 		man/man1/vorbisgain.1.gz
 
-RECURSIVE_CONFIGURE_ARGS=	--enable-recursive
+OPTIONS_DEFINE=	RECURSIVE
+
+RECURSIVE_DESC=	recursive processing and pattern matching
+RECURSIVE_CONFIGURE_ENABLE=	recursive
 
 .include <bsd.port.mk>

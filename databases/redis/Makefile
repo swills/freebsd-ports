@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis/Makefile 469114 2018-05-05 14:29:00Z danfe $
+# $FreeBSD: head/databases/redis/Makefile 471350 2018-06-02 08:34:22Z amdmi3 $
 
 PORTNAME=	redis
 DISTVERSION=	4.0.9
@@ -104,7 +104,7 @@ do-install:
 		${STAGEDIR}${REDIS_DBDIR} \
 		${STAGEDIR}${REDIS_RUNDIR}
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${TCLSH} tests/test_helper.tcl
 
 .include <bsd.port.mk>

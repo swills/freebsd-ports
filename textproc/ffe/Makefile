@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/ffe/Makefile 449491 2017-09-09 14:05:13Z riggs $
+# $FreeBSD: head/textproc/ffe/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	ffe
 DISTVERSION=	0.3.7-1
@@ -11,6 +11,8 @@ COMMENT=	Flat file extractor
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wmaybe-uninitialized"
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error

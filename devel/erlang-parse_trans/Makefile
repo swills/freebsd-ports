@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-parse_trans/Makefile 463717 2018-03-06 12:02:43Z olgeni $
+# $FreeBSD: head/devel/erlang-parse_trans/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	parse_trans
 PORTVERSION=	3.2.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Parse transform utilities for Erlang
 
 USES=		erlang:rebar

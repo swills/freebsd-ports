@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/harvid/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/harvid/Makefile 471491 2018-06-03 12:44:04Z antoine $
 
 PORTNAME=	harvid
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USES=		gmake jpeg localbase pkgconfig
 USE_GITHUB=	yes

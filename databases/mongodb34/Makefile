@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/mongodb34/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/databases/mongodb34/Makefile 472187 2018-06-11 12:00:59Z mat $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
 DISTVERSION=	3.4.9
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	databases net
 MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 		http://fastdl.mongodb.org/src/ \
@@ -43,8 +43,6 @@ MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} \
 		--runtime-hardening=on \
 		--disable-warnings-as-errors \
 		VERBOSE=on
-
-WITH_DEBUG=	yes
 
 USERS=		mongodb
 GROUPS=		mongodb

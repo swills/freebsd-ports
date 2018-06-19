@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-nimble_csv/Makefile 455570 2017-12-05 09:50:02Z olgeni $
+# $FreeBSD: head/devel/elixir-nimble_csv/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	nimble_csv
 PORTVERSION=	0.4.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	CSV parsing and dumping library for Elixir
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/horde-wicked/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/horde-wicked/Makefile 472123 2018-06-10 09:34:29Z amdmi3 $
 
 PORTNAME=	wicked
 PORTVERSION=	2.0.8
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS+=	${PEARDIR}/Text/Wiki.php:www/pear-Text_Wiki@${PHP_FLAVOR}
 
-USES=	horde cpe php
+USES=		horde cpe php
 USE_PHP=	gettext
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/erlang-xmlrpc/Makefile 391484 2015-07-06 22:34:11Z olgeni $
+# $FreeBSD: head/net/erlang-xmlrpc/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	xmlrpc
 PORTVERSION=	1.13
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.erlang.org/contrib/
 PKGNAMEPREFIX=	erlang-
 DIST_SUBDIR=	erlang
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Library for XMLRPC support in Erlang
 
 USES=		gmake erlang tar:tgz

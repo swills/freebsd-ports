@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/cbsd/Makefile 471039 2018-05-28 11:49:41Z novel $
+# $FreeBSD: head/sysutils/cbsd/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	cbsd
 DISTVERSION=	11.2.0
@@ -9,6 +9,8 @@ COMMENT=	Yet another FreeBSD Jail and Bhyve Management Utility
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to link: cannot find -lc++
 
 RUN_DEPENDS=	rsync:net/rsync \
 		sudo:security/sudo \

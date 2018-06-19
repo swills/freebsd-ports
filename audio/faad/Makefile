@@ -1,5 +1,5 @@
 # Created by: Sean McGovern <sean@sfarc.net>
-# $FreeBSD: head/audio/faad/Makefile 457214 2017-12-25 10:37:50Z riggs $
+# $FreeBSD: head/audio/faad/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	faad2
 PORTVERSION=	2.8.8
@@ -12,6 +12,8 @@ COMMENT=	MPEG-2 and MPEG-4 AAC audio decoder
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: mp4read.o:(.text+0x714): undefined reference to '__builtin_bswap16'
 
 USES=		autoreconf gmake libtool
 INSTALL_TARGET=	install-strip

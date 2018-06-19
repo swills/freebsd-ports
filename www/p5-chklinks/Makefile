@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/www/p5-chklinks/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-chklinks/Makefile 471720 2018-06-04 18:18:39Z sunpoet $
 
 PORTNAME=	chklinks
 PORTVERSION=	3.09
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Non-threaded Perl link checker
+
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-libwww>=0:www/p5-libwww \

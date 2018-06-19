@@ -1,9 +1,10 @@
 # Created by: Alexander Brovikov <alexander@brovikov.ru>
-# $FreeBSD: head/net/libsrtp/Makefile 462136 2018-02-17 12:00:28Z sunpoet $
+# $FreeBSD: head/net/libsrtp/Makefile 472170 2018-06-11 08:18:30Z tijl $
 
 PORTNAME=	libsrtp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	tijl@FreeBSD.org
@@ -13,6 +14,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_SSL=	openssl-devel
+
+PORTSCOUT=	limit:^1\.
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	cisco

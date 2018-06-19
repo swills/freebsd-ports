@@ -1,13 +1,19 @@
 # Created by: Choi Jun Ho <junker@moderato.snu.ac.kr>
-# $FreeBSD: head/audio/splay/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/audio/splay/Makefile 471525 2018-06-03 23:20:14Z truckman $
 
 PORTNAME=	splay
 PORTVERSION=	0.9.5.2
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://splay.sourceforge.net/tgz/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Audio player that decodes MPEG Layer 1/2/3 and WAV files
+
+LICENSE=	GPLv2+ LGPL20+
+LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2+=	COPYING
+LICENSE_FILE_LGPL20+=	COPYING.LIB
 
 GNU_CONFIGURE=	yes
 

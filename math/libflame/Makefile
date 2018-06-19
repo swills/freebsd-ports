@@ -1,5 +1,5 @@
 # Created by: bf@FreeBSD.org
-# $FreeBSD: head/math/libflame/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/libflame/Makefile 472677 2018-06-18 08:34:36Z amdmi3 $
 
 PORTNAME=	libflame
 DISTVERSION=	r7421
@@ -317,7 +317,7 @@ do-install:
 BUILD_DEPENDS +=	${RUN_DEPENDS}
 CONFIGURE_ARGS+=	--enable-verbose-make-output
 
-check regression-test test: build
+do-test:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${_MAKE_JOBS} \
 	${MAKE_ARGS} MK_INCL_DIR_INST_W_ARCH_VERS="${WRKDIR}/include" \
 	install-headers

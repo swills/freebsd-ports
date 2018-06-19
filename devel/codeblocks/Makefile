@@ -1,5 +1,5 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/codeblocks/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/codeblocks/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	codeblocks
 PORTVERSION=	17.12
@@ -13,6 +13,8 @@ COMMENT=	Open source, cross-platform, free C/C++ IDE
 
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
+
+BROKEN_powerpc64=	fails to configure: checking for exit in -lboost_system-boost_system... no
 
 BUILD_DEPENDS=	zip:archivers/zip
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \

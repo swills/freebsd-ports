@@ -1,10 +1,9 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qtum/Makefile 469430 2018-05-09 05:37:54Z dinoex $
+# $FreeBSD: head/net-p2p/qtum/Makefile 471914 2018-06-07 13:00:19Z vd $
 
 PORTNAME=	qtum
-PORTVERSION=	0.14.16
+PORTVERSION=	0.15.1
 DISTVERSIONPREFIX=	mainnet-ignition-v
-PORTREVISION=	1
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	vd@FreeBSD.org
@@ -41,7 +40,7 @@ USES=		autoreconf bdb:5+ compiler:c++11-lib gmake libtool pkgconfig ssl
 USE_QT5=	buildtools core dbus gui linguisttools network testlib widgets
 USE_GITHUB=	yes
 GH_TUPLE=	qtumproject:qtum:${DISTVERSIONPREFIX}${PORTVERSION} \
-		qtumproject:cpp-eth-qtum:6e3173715867f5de56d6aa:cppeth/src/cpp-ethereum
+		qtumproject:cpp-eth-qtum:8db7fc170f7c0a475bc40c:cppeth/src/cpp-ethereum
 
 .include <bsd.port.pre.mk>
 

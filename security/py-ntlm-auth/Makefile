@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-ntlm-auth/Makefile 464052 2018-03-10 08:39:50Z yuri $
+# $FreeBSD: head/security/py-ntlm-auth/Makefile 472038 2018-06-09 06:14:39Z yuri $
 
 PORTNAME=	ntlm-auth
-DISTVERSION=	1.1.0
+DISTVERSION=	1.2.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

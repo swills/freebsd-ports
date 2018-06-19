@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/gimmage/Makefile 457192 2017-12-24 18:55:45Z swills $
+# $FreeBSD: head/graphics/gimmage/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	gimmage
 PORTVERSION=	0.2.3
@@ -12,6 +12,8 @@ COMMENT=	Simple image viewer
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to configure: C++ compiler cannot create executables
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfontconfig.so:x11-fonts/fontconfig \

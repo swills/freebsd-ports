@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/sqlite-ext-pcre/Makefile 456896 2017-12-21 09:00:38Z amdmi3 $
+# $FreeBSD: head/databases/sqlite-ext-pcre/Makefile 472114 2018-06-10 04:46:52Z yuri $
 
 PORTNAME=	sqlite-ext-pcre
 PORTVERSION=	20100208
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 DIST_SUBDIR=	sqlite-ext
 
@@ -13,15 +13,14 @@ LICENSE=	PD
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
+USES=		gmake pkgconfig sqlite
 USE_GITHUB=	yes
 GH_ACCOUNT=	ralight
 GH_PROJECT=	sqlite3-pcre
 GH_TAGNAME=	c98da41
 
-USES=		gmake pkgconfig sqlite
 LIBFILE=	pcre.so
 INST_DIR=	${PREFIX}/libexec/${DIST_SUBDIR}
-USE_LDCONFIG=	${INST_DIR}
 
 SUB_LIST=	LIBFILE=${LIBFILE}
 

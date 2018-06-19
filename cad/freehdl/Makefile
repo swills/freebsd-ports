@@ -1,5 +1,5 @@
 # Created by: lon_kamikaze@gmx.de
-# $FreeBSD: head/cad/freehdl/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/freehdl/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	freehdl
 PORTVERSION=	0.0.7
@@ -9,6 +9,8 @@ MASTER_SITES=	http://freehdl.seul.org/~enaroska/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free VHDL simulator
+
+BROKEN_powerpc64=	fails to build: cc1plus: error: unrecognized command line option "-std=gnu++03"
 
 USES=		gmake pathfix libtool makeinfo perl5 pkgconfig
 USE_LDCONFIG=	yes

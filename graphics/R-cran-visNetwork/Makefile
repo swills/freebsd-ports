@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-visNetwork/Makefile 464579 2018-03-15 09:12:47Z tota $
+# $FreeBSD: head/graphics/R-cran-visNetwork/Makefile 472759 2018-06-19 06:36:13Z tota $
 
 PORTNAME=	visNetwork
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

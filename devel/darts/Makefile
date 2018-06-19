@@ -1,8 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/darts/Makefile 406500 2016-01-17 14:04:02Z amdmi3 $
+# $FreeBSD: head/devel/darts/Makefile 471516 2018-06-03 19:41:28Z cpm $
 
 PORTNAME=	darts
 PORTVERSION=	0.32
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.chasen.org/~taku/software/darts/src/
 
@@ -14,12 +15,17 @@ LICENSE_COMB=	dual
 LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/BSD
 LICENSE_FILE_LGPL21+ =	${WRKSRC}/LGPL
 
+USES=		autoreconf
 GNU_CONFIGURE=	yes
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 PORTEXAMPLES=	darts.cpp mkdarts.cpp
 PORTDOCS=	AUTHORS ChangeLog README doc
+
+PLIST_FILES=	include/darts.h \
+		libexec/darts/darts \
+		libexec/darts/mkdarts
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

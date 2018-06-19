@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-doc/Makefile 466960 2018-04-10 12:20:05Z olgeni $
+# $FreeBSD: head/lang/erlang-doc/Makefile 471907 2018-06-07 11:15:11Z olgeni $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3
@@ -18,7 +18,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${BOOK_DISTFILES}
 DIST_SUBDIR=	erlang
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang documentation
 
 LICENSE=	APACHE20

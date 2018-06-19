@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/git-merge-changelog/Makefile 426195 2016-11-16 00:33:20Z linimon $
+# $FreeBSD: head/devel/git-merge-changelog/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	git-merge-changelog
 PORTVERSION=	${GNULIB_PORTVERSION}
@@ -13,8 +13,8 @@ MAINTAINER=	knu@FreeBSD.org
 COMMENT=	Git "merge" driver for GNU style ChangeLog files
 
 EXTRACT_DEPENDS=	${GNULIB_DIR}/lib/${PORTNAME}.c:${GNULIB_PORTDIR}	\
-			automake-1.15:devel/automake		\
-			autoconf-2.69:devel/autoconf
+			automake>=1.15:devel/automake		\
+			autoconf>=2.69:devel/autoconf
 
 GNU_CONFIGURE=	yes
 

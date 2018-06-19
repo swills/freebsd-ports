@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/spice-protocol/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/devel/spice-protocol/Makefile 472366 2018-06-14 08:03:10Z novel $
 
 PORTNAME=	spice-protocol
-PORTVERSION=	0.12.13
+PORTVERSION=	0.12.14
 CATEGORIES=	devel
 MASTER_SITES=	http://www.spice-space.org/download/releases/
 

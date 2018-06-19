@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/irc/p5-Parse-IRC/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/irc/p5-Parse-IRC/Makefile 471644 2018-06-04 18:09:02Z sunpoet $
 
 PORTNAME=	Parse-IRC
 PORTVERSION=	1.22
@@ -12,6 +12,7 @@ COMMENT=	Parser for the IRC protocol
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		perl5
 USE_PERL5=	configure

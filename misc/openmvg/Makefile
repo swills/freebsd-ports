@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/openmvg/Makefile 467133 2018-04-12 09:05:33Z yuri $
+# $FreeBSD: head/misc/openmvg/Makefile 471491 2018-06-03 12:44:04Z antoine $
 
 PORTNAME=	openmvg
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	need to figure out which TARGET_ARCHITECTURE values correspond to other architectures, plus "generic" is broken
 
 LIB_DEPENDS=	libflann_cpp.so:math/flann \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
 USES=		cmake:outsource eigen:3 jpeg

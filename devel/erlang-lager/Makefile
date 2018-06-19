@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-lager/Makefile 423857 2016-10-12 10:48:21Z olgeni $
+# $FreeBSD: head/devel/erlang-lager/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	lager
 PORTVERSION=	3.2.4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Logging framework for Erlang
 
 LICENSE=	APACHE20

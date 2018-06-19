@@ -1,9 +1,8 @@
 # Created by: Pedro F. Giffuni
-# $FreeBSD: head/science/tfel/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/science/tfel/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	tfel
-PORTVERSION=	3.1.1
-PORTREVISION=	1
+PORTVERSION=	3.1.2
 CATEGORIES=	science
 MASTER_SITES=	SF/${PORTNAME}/
 PKGNAMESUFFIX=	-mfront
@@ -16,7 +15,7 @@ LICENSE=	GPLv3
 BUILD_DEPENDS=	gnuplot:math/gnuplot
 RUN_DEPENDS=	gnuplot:math/gnuplot
 
-USES=		cmake tar:bzip2
+USES=		cmake compiler:c++0x tar:bzip2
 
 OPTIONS_DEFINE=		DOCS PYTHON
 OPTIONS_DEFAULT=	PYTHON

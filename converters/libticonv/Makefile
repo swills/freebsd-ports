@@ -1,22 +1,20 @@
-# $FreeBSD: head/converters/libticonv/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/converters/libticonv/Makefile 472056 2018-06-09 15:31:35Z danfe $
 
 PORTNAME=	libticonv
-PORTVERSION=	1.1.4
-PORTREVISION=	3
+PORTVERSION=	1.1.5
 CATEGORIES=	converters
-MASTER_SITES=	SF/tilp/tilp2-linux/tilp2-1.17
+MASTER_SITES=	SF/tilp/tilp2-linux/tilp2-1.18
 
-MAINTAINER=	tijl@FreeBSD.org
+MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	TI calculator character set library
 
 LICENSE=	GPLv2
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-iconv
+INSTALL_TARGET=	install-strip
+USES=		autoreconf gmake iconv libtool pkgconfig tar:bzip2
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
-USES=		gmake libtool pathfix pkgconfig tar:bzip2
-
-post-patch:
-	@${REINPLACE_CMD} -e 's/Requires/&.private/' ${WRKSRC}/ticonv.pc.in
 
 .include <bsd.port.mk>

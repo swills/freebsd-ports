@@ -1,12 +1,12 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/security/erlang-fast_tls/Makefile 468331 2018-04-26 08:05:18Z farrokhi $
+# $FreeBSD: head/security/erlang-fast_tls/Makefile 472074 2018-06-09 17:54:27Z farrokhi $
 
 PORTNAME=	fast_tls
 PORTVERSION=	1.0.22
 CATEGORIES=	security
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	farrokhi@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	TLS / SSL OpenSSL-based native driver for Erlang / Elixir
 
 LICENSE=	APACHE20

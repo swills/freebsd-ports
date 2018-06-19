@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 470270 2018-05-18 06:11:49Z krion $
+# $FreeBSD: head/games/Makefile 471856 2018-06-06 15:54:57Z tobik $
 #
 
     COMMENT = Games and related software
@@ -674,6 +674,7 @@
     SUBDIR += mt_gtk_client
     SUBDIR += mtaserver
     SUBDIR += mudmagic
+    SUBDIR += multimc
     SUBDIR += mvdsv
     SUBDIR += nInvaders
     SUBDIR += nadar

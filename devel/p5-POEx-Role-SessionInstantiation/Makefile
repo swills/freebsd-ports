@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-POEx-Role-SessionInstantiation/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-POEx-Role-SessionInstantiation/Makefile 471621 2018-06-04 18:05:28Z sunpoet $
 
 PORTNAME=	POEx-Role-SessionInstantiation
 PORTVERSION=	1.102610
@@ -10,6 +10,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of Moose role for turning objects into POE sessions
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	\
 	p5-MooseX-CompileTime-Traits>=0:devel/p5-MooseX-CompileTime-Traits \

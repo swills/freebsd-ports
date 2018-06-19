@@ -1,9 +1,9 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/lang/see/Makefile 464197 2018-03-11 19:46:26Z sunpoet $
+# $FreeBSD: head/lang/see/Makefile 471254 2018-06-01 10:16:41Z cpm $
 
 PORTNAME=	see
 PORTVERSION=	3.1.1424
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang devel
 MASTER_SITES=	http://download.openpkg.org/components/cache/see/ \
 		http://lil.fr.distfiles.macports.org/see/ \

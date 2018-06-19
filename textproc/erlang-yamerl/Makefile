@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/erlang-yamerl/Makefile 465672 2018-03-27 08:57:31Z olgeni $
+# $FreeBSD: head/textproc/erlang-yamerl/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	yamerl
 PORTVERSION=	0.7.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	YAML 1.2 parser in pure Erlang
 
 LICENSE=	BSD2CLAUSE

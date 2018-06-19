@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-junos-eznc/Makefile 466528 2018-04-05 04:14:35Z yuri $
+# $FreeBSD: head/net-mgmt/py-junos-eznc/Makefile 471298 2018-06-01 22:05:31Z swills $
 
 PORTNAME=	junos-eznc
-DISTVERSION=	2.1.7
+DISTVERSION=	2.1.8
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

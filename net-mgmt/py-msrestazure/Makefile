@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <johannes@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-msrestazure/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/py-msrestazure/Makefile 472041 2018-06-09 07:07:30Z joneum $
 
 PORTNAME=	msrestazure
 PORTVERSION=	0.4.8
@@ -7,7 +7,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	xmj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Azure-specific AutoRest swagger generator Python client runtime
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: eivind
-# $FreeBSD: head/mail/isync/Makefile 451068 2017-10-02 06:24:42Z ehaupt $
+# $FreeBSD: head/mail/isync/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	isync
 PORTVERSION=	1.3.0
@@ -10,6 +10,8 @@ MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Maintain local copies of remote IMAP folders w/synchronized flags
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to compile: util.c:523: #pragma GCC diagnostic not allowed inside functions
 
 LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 

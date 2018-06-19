@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/lang/io/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/io/Makefile 471965 2018-06-08 01:56:02Z linimon $
 
 PORTNAME=	io
 PORTVERSION=	2017.09.06
@@ -13,6 +13,7 @@ LICENSE=	BSD3CLAUSE
 
 BROKEN_armv6=		fails to compile: ucontext.h: expected parameter declarator
 BROKEN_armv7=		fails to compile: Coro.c:392:2: no member named 'arm_r0' in 'mcontext_t'
+BROKEN_powerpc64=	fails to build: unrecognized command line option -msse2
 
 USES=		cmake:outsource,noninja compiler:c11 ssl
 

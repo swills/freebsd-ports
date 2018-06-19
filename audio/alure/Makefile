@@ -1,9 +1,9 @@
  # Created by: nemysis <nemysis@gmx.ch2
-# $FreeBSD: head/audio/alure/Makefile 457512 2017-12-29 16:24:15Z emaste $
+# $FreeBSD: head/audio/alure/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	alure
 PORTVERSION=	1.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://kcat.strangesoft.net/alure-releases/
 

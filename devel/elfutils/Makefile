@@ -1,5 +1,5 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/devel/elfutils/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/elfutils/Makefile 472593 2018-06-17 06:38:36Z linimon $
 
 PORTNAME=	elfutils
 PORTVERSION=	0.170
@@ -19,7 +19,6 @@ LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING-LGPLV3
 BROKEN_aarch64=		fails to build: fatal error: linux/uio.h: No such file or directory
 BROKEN_armv6=		fails to build: fails to compile i386_disasm.c
 BROKEN_armv7=		fails to build: fails to compile i386_disasm.c
-BROKEN_powerpc64=	fails to build: error: field 'r' has incomplete type
 
 LIB_DEPENDS=	libargp.so:devel/argp-standalone
 PATCH_DEPENDS=	${NONEXISTENT}:devel/gnulib:extract

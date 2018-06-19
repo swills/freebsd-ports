@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/freebsd-release-manifests/Makefile 470879 2018-05-26 01:15:48Z gjb $
+# $FreeBSD: head/misc/freebsd-release-manifests/Makefile 472556 2018-06-16 16:08:15Z gjb $
 
 PORTNAME=	freebsd-release-manifests
-DISTVERSION=	20180526
+DISTVERSION=	20180616
 PORTREVISION=	0
 CATEGORIES=	misc
 MASTER_SITES=	#

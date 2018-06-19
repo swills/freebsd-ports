@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/pixd/Makefile 457186 2017-12-24 18:19:03Z olgeni $
+# $FreeBSD: head/graphics/pixd/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	pixd
 DISTVERSIONPREFIX=v
@@ -11,7 +11,7 @@ COMMENT=	Visualize binary data in terminal
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	FireyFly
 

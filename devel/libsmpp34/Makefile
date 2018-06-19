@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libsmpp34/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/libsmpp34/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	libsmpp34
 PORTVERSION=	1.10
@@ -19,19 +19,14 @@ USES=		autoreconf libtool pathfix
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
-MAKE_JOBS_UNSAFE=yes
-
 post-patch:
-	${REINPLACE_CMD} -e 's|AC_CONFIG_AUX_DIR.*|AC_CONFIG_AUX_DIR([.])|g' \
-		${WRKSRC}/configure.ac
-	${REINPLACE_CMD} -e 's|AM_CONFIG_HEADER.*|AM_CONFIG_HEADER([./config.h])|g' \
-		${WRKSRC}/configure.ac
-	${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|g' ${WRKSRC}/src/smpp34_dumpBuf.c
-	${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|g' ${WRKSRC}/src/smpp34_dumpPdu.c
-	${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|g' ${WRKSRC}/src/smpp34_pack.c
-	${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|g' ${WRKSRC}/src/smpp34_params.c
-	${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|g' ${WRKSRC}/src/smpp34_structs.c
-	${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|g' ${WRKSRC}/src/smpp34_unpack.c
-	${ECHO_CMD} ${PORTVERSION} > ${WRKSRC}/.tarball-version
+	@${REINPLACE_CMD} 's|malloc.h|stdlib.h|' \
+		${WRKSRC}/src/smpp34_dumpBuf.c \
+		${WRKSRC}/src/smpp34_dumpPdu.c \
+		${WRKSRC}/src/smpp34_pack.c \
+		${WRKSRC}/src/smpp34_params.c \
+		${WRKSRC}/src/smpp34_structs.c \
+		${WRKSRC}/src/smpp34_unpack.c
+	@${ECHO_CMD} ${PORTVERSION} > ${WRKSRC}/.tarball-version
 
 .include <bsd.port.mk>

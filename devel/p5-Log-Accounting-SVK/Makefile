@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.idv.tw>
-# $FreeBSD: head/devel/p5-Log-Accounting-SVK/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Log-Accounting-SVK/Makefile 471605 2018-06-04 18:04:08Z sunpoet $
 
 PORTNAME=	Log-Accounting-SVK
 PORTVERSION=	0.05
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Perl module for accounting SVK repository
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	svk>=0:devel/svk \
 		p5-Spiffy>=0:devel/p5-Spiffy \

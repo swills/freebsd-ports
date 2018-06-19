@@ -1,7 +1,7 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/nvidia-driver-340/Makefile 459638 2018-01-22 09:05:44Z danfe $
+# $FreeBSD: head/x11/nvidia-driver-340/Makefile 471954 2018-06-07 20:22:51Z danfe $
 
-DISTVERSION=	340.106
+DISTVERSION=	340.107
 # Explicitly set PORTREVISION as it can be overridden by the master port
 PORTREVISION=	0
 

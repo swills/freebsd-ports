@@ -1,5 +1,5 @@
 # Created by: kipz <somicide@gmail.com>
-# $FreeBSD: head/devel/gitg0/Makefile 441482 2017-05-22 17:19:19Z amdmi3 $
+# $FreeBSD: head/devel/gitg0/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	gitg
 PORTVERSION=	0.0.8
@@ -13,6 +13,8 @@ COMMENT=	GTK-based git repository viewer (gtk2 version)
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to link: gitg-branch-actions.o(.text+0x46c): unresolvable R_PPC64_REL24 relocation against symbol gitg_revision_get_subject
 
 RUN_DEPENDS=	git:devel/git
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/flint2/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/flint2/Makefile 472032 2018-06-09 00:35:57Z linimon $
 
 PORTNAME=	flint2
 DISTVERSION=	g20180323
@@ -13,6 +13,13 @@ COMMENT=	Fast library for number theory
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: invokes x86 assembler
+BROKEN_armv6=		fails to compile: invokes x86 assembler
+BROKEN_armv7=		fails to compile: invokes x86 assembler
+BROKEN_mips=		fails to compile: invokes x86 assembler
+BROKEN_mips64=		fails to compile: invokes x86 assembler
+BROKEN_powerpc64=	fails to compile: invokes x86 assembler
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr

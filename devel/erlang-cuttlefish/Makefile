@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-cuttlefish/Makefile 469331 2018-05-07 20:02:54Z olgeni $
+# $FreeBSD: head/devel/erlang-cuttlefish/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	cuttlefish
 PORTVERSION=	2.0.11
@@ -6,7 +6,7 @@ PORTREVISION=	2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Configuration library for Erlang
 
 LICENSE=	APACHE20

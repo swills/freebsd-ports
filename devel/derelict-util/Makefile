@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/derelict-util/Makefile 460655 2018-02-02 00:02:09Z acm $
+# $FreeBSD: head/devel/derelict-util/Makefile 471464 2018-06-03 07:01:47Z acm $
 
 PORTNAME=	derelict-util
 PORTVERSION=	2.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

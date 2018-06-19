@@ -1,11 +1,11 @@
-# $FreeBSD: head/misc/erlang-mimetypes/Makefile 445801 2017-07-14 18:05:32Z olgeni $
+# $FreeBSD: head/misc/erlang-mimetypes/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	mimetypes
 PORTVERSION=	1.1.0
 CATEGORIES=	misc
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang MIME types library
 
 LICENSE=	BSD3CLAUSE

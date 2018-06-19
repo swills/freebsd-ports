@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-poppler-qt4/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/graphics/py-poppler-qt4/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	poppler-qt4
 PORTVERSION=	0.18.1
@@ -16,7 +16,7 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
 
-USES=		pkgconfig pyqt:4 python
+USES=		compiler:c++11-lang pkgconfig pyqt:4 python
 USE_PYQT=	gui xml sip_build
 USE_PYTHON=	distutils autoplist
 

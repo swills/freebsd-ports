@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/moony-lv2/Makefile 470793 2018-05-24 17:18:59Z yuri $
+# $FreeBSD: head/audio/moony-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
 
 PORTNAME=	moony
 PORTVERSION=	0.22.0
@@ -12,6 +12,8 @@ COMMENT=	Realtime Lua as programmable glue in LV2
 
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: cc1: unrecognized command line option -std=gnu11
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/andika/Makefile 381702 2015-03-20 01:12:20Z bapt $
+# $FreeBSD: head/x11-fonts/andika/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	Andika
 PORTVERSION=	1.004
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=${MEDIA_ID}&filename=/
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Andika TrueType fonts
 
 LICENSE=	OFL11

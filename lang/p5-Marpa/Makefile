@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Marpa/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/lang/p5-Marpa/Makefile 471646 2018-06-04 18:09:15Z sunpoet $
 
 PORTNAME=	Marpa
 PORTVERSION=	0.208
@@ -15,6 +15,7 @@ COMMENT=	Parse any Language You Can Describe in BNF
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-HTML-Parser>=3.64:www/p5-HTML-Parser \
 		p5-PPI>=1.206:textproc/p5-PPI

@@ -1,8 +1,9 @@
-# $FreeBSD: head/multimedia/py-PySceneDetect/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/multimedia/py-PySceneDetect/Makefile 472736 2018-06-19 01:33:28Z yuri $
 
 PORTNAME=	PySceneDetect
 PORTVERSION=	0.4
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	multimedia python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -19,6 +20,6 @@ RUN_DEPENDS=	${PYNUMPY} \
 USES=		python:2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	Breakthrough
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

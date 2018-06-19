@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/clanlib1/Makefile 446664 2017-07-26 17:02:09Z jbeich $
+# $FreeBSD: head/devel/clanlib1/Makefile 472057 2018-06-09 16:07:10Z amdmi3 $
 
 PORTNAME=	clanlib
 PORTVERSION=	1.0.0
@@ -13,17 +13,19 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross-platform game SDK
 
 LICENSE=	ZLIB
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libmikmod.so:audio/libmikmod \
-		libvorbis.so:audio/libvorbis
+		libvorbis.so:audio/libvorbis \
+		libogg.so:audio/libogg
 
 USES=		alias gmake jpeg libtool localbase:ldflags pathfix \
 		pkgconfig tar:tgz
-USE_XORG=	x11 xi
+USE_XORG=	x11 xi xxf86vm
 USE_LDCONFIG=	yes
 USE_SDL=	gfx
-USE_GL=		yes
+USE_GL=		gl glu
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docs \

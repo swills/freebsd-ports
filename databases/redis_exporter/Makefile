@@ -1,8 +1,8 @@
 # Created by: Jev Björsell <ports@ecadlabs.com>
-# $FreeBSD: head/databases/redis_exporter/Makefile 471125 2018-05-30 07:50:36Z joneum $
+# $FreeBSD: head/databases/redis_exporter/Makefile 472021 2018-06-08 19:31:30Z madpilot $
 
 PORTNAME=	redis_exporter
-PORTVERSION=	0.18.0
+PORTVERSION=	0.19.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	databases
 

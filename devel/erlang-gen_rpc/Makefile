@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-gen_rpc/Makefile 423512 2016-10-08 14:54:14Z olgeni $
+# $FreeBSD: head/devel/erlang-gen_rpc/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	gen_rpc
 PORTVERSION=	2.1.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Scalable RPC library for Erlang
 
 LICENSE=	APACHE20

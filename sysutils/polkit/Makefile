@@ -1,5 +1,5 @@
 # Created by: Koop Mast<kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/polkit/Makefile 470808 2018-05-24 20:46:54Z kwm $
+# $FreeBSD: head/sysutils/polkit/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	polkit
 PORTVERSION=	0.114
@@ -19,8 +19,9 @@ RUN_DEPENDS=	dbus-launch:devel/dbus
 USERS=		polkitd
 GROUPS=		polkitd
 
+USES=		compiler:c++11-lib gettext gmake libtool localbase pathfix \
+		pkgconfig shebangfix
 USE_GNOME=	glib20 intlhack introspection:build
-USES=		gettext gmake libtool localbase pathfix pkgconfig shebangfix
 SHEBANG_FILES=	${WRKSRC}/src/polkitbackend/toarray.pl
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/ots/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/textproc/ots/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	ots
 PORTVERSION=	0.5.0
@@ -12,6 +12,8 @@ COMMENT=	Open Text Summarizer
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		unfetchable
 
 LIB_DEPENDS=	libpopt.so:devel/popt
 

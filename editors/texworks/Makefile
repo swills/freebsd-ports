@@ -1,5 +1,5 @@
 # Created by: Diego Depaoli <trebestie@gmail.com>
-# $FreeBSD: head/editors/texworks/Makefile 464869 2018-03-18 05:09:21Z linimon $
+# $FreeBSD: head/editors/texworks/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	texworks
 PORTVERSION=	0.4.6
@@ -18,7 +18,7 @@ BROKEN_armv7=		fails to install: PDFDocument.cpp:1836:39: cannot initialize a pa
 BUILD_DEPENDS=	hunspell:textproc/hunspell
 LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
 
-USES=		pkgconfig qmake
+USES=		compiler:c++11-lang pkgconfig qmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	TeXworks
 USE_QT4=	gui corelib rcc_build moc_build uic_build \

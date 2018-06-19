@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 468751 2018-05-01 00:51:37Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 472727 2018-06-19 00:37:43Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -109,6 +109,11 @@ USE_XORG+=	xcb
 MESA_LLVM_VER?=	60
 BUILD_DEPENDS+=	llvm${MESA_LLVM_VER}>0:devel/llvm${MESA_LLVM_VER}
 MOZ_EXPORT+=	LLVM_CONFIG=llvm-config${MESA_LLVM_VER}
+.endif
+
+.if ${MOZILLA_VER:R:R} >= 61
+BUILD_DEPENDS+=	${LOCALBASE}/bin/python${PYTHON3_DEFAULT}:lang/python${PYTHON3_DEFAULT:S/.//g}
+MOZ_EXPORT+=	PYTHON3="${LOCALBASE}/bin/python${PYTHON3_DEFAULT}"
 .endif
 
 .if ${OPSYS} == FreeBSD && ${OSREL} == 11.1

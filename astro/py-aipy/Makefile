@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-aipy/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/astro/py-aipy/Makefile 472747 2018-06-19 02:10:49Z yuri $
 
 PORTNAME=	aipy
 PORTVERSION=	2.1.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +20,6 @@ BUILD_DEPENDS=	${PYNUMPY} \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils concurrent autoplist
 
 .include <bsd.port.mk>

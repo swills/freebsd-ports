@@ -1,5 +1,5 @@
 # Created by: Andy Pavlo
-# $FreeBSD: head/sysutils/condor/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/sysutils/condor/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 # Note: Make sure there are no other versions of HTCondor installed during
 #       build.  The build system may pick up incompatible headers and libs.
@@ -17,7 +17,7 @@ COMMENT=	High-throughput computing on distributively owned resources
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE-2.0.txt
 
-BROKEN_powerpc64=	fails to build
+BROKEN_powerpc64=	fails to link: test_unit.hpp:249: undefined reference to boost::unit_test::ut_detail::normalize_test_case_name
 
 LIB_DEPENDS=	libkrb5support.so:security/krb5 \
 		libpcre.so:devel/pcre \

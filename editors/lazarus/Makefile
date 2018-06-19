@@ -1,7 +1,7 @@
-# $FreeBSD: head/editors/lazarus/Makefile 470845 2018-05-25 15:57:05Z acm $
+# $FreeBSD: head/editors/lazarus/Makefile 471474 2018-06-03 08:10:55Z acm $
 
 PORTNAME=	lazarus
-PORTVERSION=	1.8.2
+PORTVERSION=	1.8.4
 PKGNAMESUFFIX?=  -gtk2
 PORTREVISION?=	0
 CATEGORIES=	editors devel

@@ -1,9 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/inifiled/Makefile 460643 2018-02-01 22:17:13Z acm $
+# $FreeBSD: head/devel/inifiled/Makefile 471458 2018-06-03 06:45:36Z acm $
 
 PORTNAME=	inifiled
-PORTVERSION=	1.0.2
-PORTREVISION=	1
+PORTVERSION=	1.3.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

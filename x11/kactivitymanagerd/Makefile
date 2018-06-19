@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kactivitymanagerd/Makefile 462671 2018-02-23 05:47:35Z tcberner $
+# $FreeBSD: head/x11/kactivitymanagerd/Makefile 472471 2018-06-15 17:41:04Z amdmi3 $
 
 PORTNAME=	kactivitymanagerd
 PORTVERSION=	${KDE4_ACTIVITIES_VERSION}
@@ -27,7 +27,7 @@ CMAKE_ARGS+=	-DCMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS=-rdynamic
 
 # Workaround to keep kactivitymanagerd from crashing:
 # http://lists.freebsd.org/pipermail/freebsd-current/2012-May/033972.html
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1000000
+.if ${OPSYS} == FreeBSD
 CXXFLAGS+=	-fno-use-cxa-atexit
 .endif
 

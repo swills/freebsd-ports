@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/py-html2text/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/textproc/py-html2text/Makefile 472504 2018-06-16 00:19:07Z yuri $
 
 PORTNAME=	html2text
 PORTVERSION=	2018.1.9
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 
 CONFLICTS=	html2text

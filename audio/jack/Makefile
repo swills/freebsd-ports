@@ -1,9 +1,9 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/jack/Makefile 451409 2017-10-06 21:04:01Z jbeich $
+# $FreeBSD: head/audio/jack/Makefile 472147 2018-06-10 17:11:05Z riggs $
 
 PORTNAME=	jackit
 PORTVERSION=	0.125.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 
 MAINTAINER=	multimedia@FreeBSD.org
@@ -11,6 +11,8 @@ COMMENT=	Low latency audio server
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+BROKEN_powerpc64=	fails to build: Unrecognized opcode: 'sldi'
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 		libsamplerate.so:audio/libsamplerate \

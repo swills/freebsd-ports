@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libxkbfile/Makefile 399844 2015-10-20 13:49:18Z kwm $
+# $FreeBSD: head/x11/libxkbfile/Makefile 471760 2018-06-05 13:39:15Z amdmi3 $
 
 PORTNAME=	libxkbfile
 PORTVERSION=	1.0.9
@@ -9,6 +9,7 @@ MAINTAINER=	x11@FreeBSD.org
 COMMENT=	XKB file library
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	lib
 USE_XORG=	x11 kbproto:both

@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/multimarkdown/Makefile 465927 2018-03-29 20:19:36Z fernape $
+# $FreeBSD: head/textproc/multimarkdown/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	multimarkdown
 DISTVERSION=	6.3.2
@@ -12,6 +12,8 @@ COMMENT=	Extended Markdown processor with more features, written in C
 LICENSE=	BSD3CLAUSE MIT GPLv2+ ZLIB
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN_powerpc64=	fails to compile: Sources/libMultiMarkdown/file.h:116: redefinition of typedef 'DString'
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

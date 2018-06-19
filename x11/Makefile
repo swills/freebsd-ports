@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 471030 2018-05-28 08:57:44Z madpilot $
+# $FreeBSD: head/x11/Makefile 472456 2018-06-15 14:20:13Z tobik $
 #
 
     COMMENT = Ports to support the X window system
@@ -28,6 +28,7 @@
     SUBDIR += bmpanel2
     SUBDIR += bricons
     SUBDIR += brightside
+    SUBDIR += brisk-menu
     SUBDIR += cinnamon
     SUBDIR += cinnamon-desktop
     SUBDIR += cinnamon-menus
@@ -61,7 +62,6 @@
     SUBDIR += eaglemode
     SUBDIR += editres
     SUBDIR += emprint
-    SUBDIR += enventor
     SUBDIR += erun
     SUBDIR += eterm
     SUBDIR += evieext
@@ -366,6 +366,7 @@
     SUBDIR += wmctrl
     SUBDIR += wmdrawer
     SUBDIR += wmmatrix
+    SUBDIR += wmsystemtray
     SUBDIR += wmutils-core
     SUBDIR += wmutils-opt
     SUBDIR += wmxss

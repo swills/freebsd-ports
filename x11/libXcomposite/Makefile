@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libXcomposite/Makefile 384234 2015-04-18 15:34:36Z kwm $
+# $FreeBSD: head/x11/libXcomposite/Makefile 471904 2018-06-07 09:04:26Z amdmi3 $
 
 PORTNAME=	libXcomposite
 PORTVERSION=	0.4.4
@@ -9,6 +9,9 @@ CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X Composite extension library
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	lib
 USE_XORG=	compositeproto:both x11 xfixes xext fixesproto xproto:both

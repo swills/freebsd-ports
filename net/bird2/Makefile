@@ -1,5 +1,5 @@
 # Created by: Alexander V. Chernikov <melifaro@FreeBSD.org>
-# $FreeBSD: head/net/bird2/Makefile 471108 2018-05-29 19:02:04Z olivier $
+# $FreeBSD: head/net/bird2/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	bird
 DISTVERSION=	2.0.2
@@ -12,6 +12,8 @@ MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	Dynamic IP routing daemon
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to compile: ./lib/ip.h:337: 'for' loop initial declaration used outside C99 mode
 
 LIB_DEPENDS=	libssh.so:security/libssh
 

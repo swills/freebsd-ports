@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/x11-fm/p5-PerlFM/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fm/p5-PerlFM/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	PerlFM
 PORTVERSION=	0.2.0
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Perl based file manager
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-Gtk2>=1.060:x11-toolkits/p5-Gtk2 \
 		p5-Gtk2-Chmod>=0.0.0:x11-toolkits/p5-Gtk2-Chmod \

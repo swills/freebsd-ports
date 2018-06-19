@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/erlang-katana/Makefile 436509 2017-03-19 18:29:19Z olgeni $
+# $FreeBSD: head/devel/erlang-katana/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	erlang-katana
 PORTVERSION=	0.4.0
 CATEGORIES=	devel
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang grab bag of useful functions
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/ibus-anthy/Makefile 456792 2017-12-20 13:24:43Z bapt $
+# $FreeBSD: head/japanese/ibus-anthy/Makefile 471288 2018-06-01 20:21:37Z rene $
 
 PORTNAME=	ibus-anthy
 PORTVERSION=	1.2.7
@@ -8,7 +8,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	https://github.com/ibus/ibus-anthy/releases/download/${PORTVERSION}/
 PKGNAMEPREFIX=	ja-
 
-MAINTAINER=	daichi@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Anthy engine for IBus
 
 BUILD_DEPENDS=	swig3.0:devel/swig30

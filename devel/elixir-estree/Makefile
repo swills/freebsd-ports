@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-estree/Makefile 448916 2017-08-29 13:31:46Z olgeni $
+# $FreeBSD: head/devel/elixir-estree/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	elixir-estree
 PORTVERSION=	2.6.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	JavaScript AST to JavaScript code generator in Elixir
 
 LICENSE=	MIT

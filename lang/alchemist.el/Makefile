@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/alchemist.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/lang/alchemist.el/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	alchemist.el
 PORTVERSION=	1.8.2
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	lang
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Elixir Tooling Integration Into Emacs
 
 LICENSE=	GPLv3

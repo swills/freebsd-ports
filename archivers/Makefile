@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 470813 2018-05-24 22:37:34Z rodrigo $
+# $FreeBSD: head/archivers/Makefile 472473 2018-06-15 17:57:39Z feld $
 #
 
     COMMENT = Archivers
@@ -117,6 +117,7 @@
     SUBDIR += p5-Compress-Raw-Lzma
     SUBDIR += p5-Compress-Raw-Zlib
     SUBDIR += p5-Compress-Snappy
+    SUBDIR += p5-Gzip-Faster
     SUBDIR += p5-IO-Compress
     SUBDIR += p5-IO-Compress-Lzf
     SUBDIR += p5-IO-Compress-Lzma

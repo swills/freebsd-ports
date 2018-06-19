@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-POEx-Role-Streaming/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-POEx-Role-Streaming/Makefile 471622 2018-06-04 18:05:34Z sunpoet $
 
 PORTNAME=	POEx-Role-Streaming
 PORTVERSION=	1.102610
@@ -10,6 +10,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for streaming from one filehandle to another
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	\
 	p5-MooseX-Declare>0:devel/p5-MooseX-Declare \

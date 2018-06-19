@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/infamous-plugins-lv2/Makefile 460841 2018-02-03 19:49:09Z yuri $
+# $FreeBSD: head/audio/infamous-plugins-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
 
 PORTNAME=	infamous-plugins
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,8 @@ COMMENT=	LV2 plugins for various sound effects
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: cc1: invalid option argument '-Og'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/lib/libfftw3.so:math/fftw3

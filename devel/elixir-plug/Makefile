@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-plug/Makefile 461990 2018-02-16 08:46:06Z olgeni $
+# $FreeBSD: head/devel/elixir-plug/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	plug
 PORTVERSION=	1.4.5
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Composable modules for Elixir web applications
 
 LICENSE=	APACHE20

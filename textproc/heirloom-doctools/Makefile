@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/heirloom-doctools/Makefile 437337 2017-03-30 23:54:24Z hrs $
+# $FreeBSD: head/textproc/heirloom-doctools/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	heirloom-doctools
 PORTVERSION=	160308
@@ -9,6 +9,8 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Portable and enhanced troff, nroff, and related utilities
 
 LICENSE=	CDDL
+
+BROKEN_powerpc64=	fails to package: Unable to access file pub/utf-8: No such file or directory
 
 USES=		gmake
 USE_GITHUB=	yes

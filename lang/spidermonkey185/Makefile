@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey185/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/lang/spidermonkey185/Makefile 471828 2018-06-06 08:34:26Z amdmi3 $
 
 PORTNAME=		spidermonkey185
 PORTVERSION=		1.8.5
@@ -110,7 +110,7 @@ PLIST_SUB+=	SPARC="@comment "
 pre-configure:
 	(cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf-2.13)
 
-regression-test: build
+do-test:
 	@${ECHO_MSG} -n "===> Running jstests.py: "
 	@cd ${WRKSRC} && ${SETENV} TZ=PST8PDT ${PYTHON_CMD} tests/jstests.py \
 	--no-progress --worker-count=${MAKE_JOBS_NUMBER} ./js

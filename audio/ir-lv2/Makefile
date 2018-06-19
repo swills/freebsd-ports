@@ -1,10 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/ir-lv2/Makefile 468554 2018-04-28 16:39:21Z yuri $
+# $FreeBSD: head/audio/ir-lv2/Makefile 472073 2018-06-09 17:36:08Z yuri $
 
 PORTNAME=	ir
-DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.2-1
-PORTREVISION=	1
+DISTVERSION=	1.3.3-2
+DISTVERSIONSUFFIX=	-gb94bc67
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -24,7 +23,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 
 USES=		gmake pkgconfig
 USE_GITHUB=	yes
-GH_ACCOUNT=	Anchakor
+GH_ACCOUNT=	tomszilagyi
 GH_PROJECT=	ir.lv2
 USE_GNOME=	glib20 gtk20 gdkpixbuf2 cairo
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/sorcer-lv2/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/audio/sorcer-lv2/Makefile 472077 2018-06-09 18:15:58Z yuri $
 
 PORTNAME=	Sorcer
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	1.1.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -12,12 +12,6 @@ COMMENT=	Wavetable LV2 plugin synth targeted at the electronic/dubstep genre
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
-BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
-BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
-BROKEN_mips64=		fails to compile: unknown FP unit 'sse'
-BROKEN_powerpc64=	fails to compile: unrecognized command line option "-msse2"
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/include/boost/circular_buffer.hpp:devel/boost-libs
@@ -32,5 +26,12 @@ USE_GNOME=	cairo
 PLIST_FILES=	lib/lv2/sorcer.lv2/manifest.ttl \
 		lib/lv2/sorcer.lv2/sorcer.so \
 		lib/lv2/sorcer.lv2/sorcer.ttl
+
+OPTIONS_DEFINE_amd64=	SSE
+OPTIONS_DEFINE_i386=	SSE
+OPTIONS_DEFAULT_amd64=	SSE
+OPTIONS_DEFAULT_i386=	SSE
+
+SSE_CMAKE_ON=	-DPORT_SIMD_FLAGS:STRING="-msse -mfpmath=sse"
 
 .include <bsd.port.mk>

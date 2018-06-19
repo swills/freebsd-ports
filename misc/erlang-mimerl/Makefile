@@ -1,11 +1,11 @@
-# $FreeBSD: head/misc/erlang-mimerl/Makefile 410907 2016-03-12 16:30:05Z olgeni $
+# $FreeBSD: head/misc/erlang-mimerl/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	mimerl
 PORTVERSION=	1.1.1
 CATEGORIES=	misc
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang library to handle mimetypes
 
 LICENSE=	MIT

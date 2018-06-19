@@ -1,9 +1,8 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/textproc/fzf/Makefile 464809 2018-03-17 12:15:31Z dbaio $
+# $FreeBSD: head/textproc/fzf/Makefile 472280 2018-06-13 02:52:23Z knu $
 
 PORTNAME=	fzf
-PORTVERSION=	0.17.3
-PORTREVISION=	1
+PORTVERSION=	0.17.4
 CATEGORIES=	textproc
 
 MAINTAINER=	sascha@root-login.org
@@ -23,7 +22,7 @@ GH_TUPLE=	lucasb-eyer:go-colorful:c900de9:colorful/src/github.com/lucasb-eyer/go
 		mattn:go-shellwords:02e3cf0:shellwords/src/github.com/mattn/go-shellwords \
 		mattn:go-isatty:66b8e73:isatty/src/github.com/mattn/go-isatty \
 		gdamore:encoding:b23993c:encoding/src/github.com/gdamore/encoding \
-		gdamore:tcell:44772c1:tcell/src/github.com/gdamore/tcell \
+		gdamore:tcell:0a0db94:tcell/src/github.com/gdamore/tcell \
 		golang:sys:b90f89a:sys/src/golang.org/x/sys \
 		golang:text:4ee4af5:text/src/golang.org/x/text \
 		golang:crypto:e1a4589:crypto/src/golang.org/x/crypto

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/llvm-cheri/Makefile 469438 2018-05-09 08:34:00Z amdmi3 $
+# $FreeBSD: head/devel/llvm-cheri/Makefile 472718 2018-06-18 21:30:38Z brooks $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.d${SNAPDATE}
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	${LLVM_SUFFIX}
 

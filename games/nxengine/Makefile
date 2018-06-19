@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/nxengine/Makefile 467180 2018-04-12 18:30:31Z lifanov $
+# $FreeBSD: head/games/nxengine/Makefile 471491 2018-06-03 12:44:04Z antoine $
 
 PORTNAME=	nxengine
 PORTVERSION=	2.6.3
@@ -22,7 +22,7 @@ LICENSE_PERMS_FREEWARE=	dist-mirror pkg-mirror auto-accept
 LICENSE_DISTFILES_GPLv3=	${DISTFILES:[3]}
 LICENSE_DISTFILES_FREEWARE=	${DISTFILES:[2]:S/:data//}
 
-LIB_DEPENDS=	libpng16.so:graphics/png
+LIB_DEPENDS=	libpng.so:graphics/png
 
 DESKTOP_ENTRIES="NXEngine" "" "${PORTNAME}" \
 		"${PORTNAME}" "Game;AdventureGame;" ""

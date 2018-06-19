@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/erlang-cowlib/Makefile 402080 2015-11-20 13:34:53Z olgeni $
+# $FreeBSD: head/www/erlang-cowlib/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	cowlib
 PORTVERSION=	1.0.2
@@ -6,7 +6,7 @@ PORTEPOCH=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang support library for manipulating Web protocols
 
 LICENSE=	ISCL

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-FFI-CheckLib/Makefile 462425 2018-02-20 20:24:19Z sunpoet $
+# $FreeBSD: head/devel/p5-FFI-CheckLib/Makefile 471776 2018-06-05 18:55:24Z sunpoet $
 
 PORTNAME=	FFI-CheckLib
-PORTVERSION=	0.18
+PORTVERSION=	0.20
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

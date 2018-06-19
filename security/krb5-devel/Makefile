@@ -1,8 +1,9 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-devel/Makefile 469884 2018-05-14 12:41:04Z cy $
+# $FreeBSD: head/security/krb5-devel/Makefile 472762 2018-06-19 06:56:12Z cy $
 
 PORTNAME=		krb5
 PORTVERSION=		1.17.${MIT_COMMIT_DATE}
+PORTREVISION=		2
 CATEGORIES=		security
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=		-devel

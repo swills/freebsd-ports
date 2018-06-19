@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/clixon/Makefile 468340 2018-04-26 09:47:45Z krion $
+# $FreeBSD: head/devel/clixon/Makefile 472264 2018-06-12 17:02:08Z garga $
 
 PORTNAME=	clixon
-DISTVERSION=	3.6.0.b.20180424
+PORTVERSION=	3.6.1
 CATEGORIES=	devel
 
 MAINTAINER=	dcornejo@netgate.com
@@ -18,7 +18,7 @@ USES=		bison gmake
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	clicon
-GH_TAGNAME=	d57a6cf53cdda4a3e5da122eb34de5ce069676f0
+MAKE_ARGS=	wwwdir=${PREFIX}/sbin
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-cligen=${LOCALBASE} --sysconfdir=${ETCDIR}

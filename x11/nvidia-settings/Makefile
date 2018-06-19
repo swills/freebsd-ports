@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/x11/nvidia-settings/Makefile 471113 2018-05-29 21:25:44Z bland $
+# $FreeBSD: head/x11/nvidia-settings/Makefile 471356 2018-06-02 09:48:15Z bland $
 
 PORTNAME=	nvidia-settings
 PORTVERSION=	396.24
@@ -32,6 +32,7 @@ PLIST_FILES=	bin/nvidia-settings \
 		share/pixmaps/nvidia-settings.png
 
 LDFLAGS+=	-pthread
+LLD_UNSAFE=	yes
 MAKE_ENV=	NV_USE_BUNDLED_LIBJANSSON=0 \
 		NV_VERBOSE= \
 		GTK3_AVAILABLE=0 \

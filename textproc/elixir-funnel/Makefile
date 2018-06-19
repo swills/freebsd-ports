@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elixir-funnel/Makefile 397960 2015-09-26 11:40:27Z olgeni $
+# $FreeBSD: head/textproc/elixir-funnel/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	funnel
 PORTVERSION=	0.4.1
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Streaming Elixir API built upon ElasticSearch's percolation
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/distel/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/devel/distel/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	distel
 PORTVERSION=	4.1.1
@@ -6,7 +6,7 @@ PORTREVISION=	3
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Distel extends Emacs Lisp with Erlang-style message passing
 
 LICENSE=	MIT

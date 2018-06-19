@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/devel/aegis/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/aegis/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	aegis
 PORTVERSION=	4.25
@@ -16,7 +16,7 @@ LICENSE=	GPLv3
 LIB_DEPENDS=	libcurl.so:ftp/curl
 RUN_DEPENDS=	tkdiff:textproc/tkdiff
 
-USES=		gettext ghostscript groff perl5 tk
+USES=		compiler:c++0x gettext ghostscript groff perl5 tk
 USE_GNOME=	libxml2
 USE_GCC=	any
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Max Khon
-# $FreeBSD: head/databases/pgadmin3/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/pgadmin3/Makefile 472236 2018-06-12 08:56:36Z yuri $
 
 PORTNAME=	pgadmin3
 PORTVERSION=	1.22.1
@@ -34,7 +34,7 @@ PORTDATA=	*
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/wx-config,/${WX_CONFIG:T},' ${WRKSRC}/configure
-	@${REINPLACE_CMD} -e 's,wxrc,wxrc-gtk2u-${WX_VERSION},' ${WRKSRC}/pgadmin/ui/embed-xrc
+	@${REINPLACE_CMD} -e 's,wxrc ,${WXRC_CMD:T} ,' ${WRKSRC}/pgadmin/ui/embed-xrc
 	@${REINPLACE_CMD} -e 's,/usr/bin/xterm,${LOCALBASE}/bin/xterm,' ${WRKSRC}/plugins.d/plugins.ini
 	@${REINPLACE_CMD} -e 's,/bin/bash,/bin/sh,' ${WRKSRC}/pgadmin/ver_svn.sh
 	@${REINPLACE_CMD} -e 's,Exec=/usr/bin/pgadmin3,Exec=${LOCALBASE}/bin/pgadmin3,'\

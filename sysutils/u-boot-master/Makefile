@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 465468 2018-03-24 20:40:27Z manu $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 472714 2018-06-18 20:22:13Z linimon $
 #
 # Common infrastructure for u-boot ports
 #
@@ -9,7 +9,7 @@ CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	-${MODEL}
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/
 
-MAINTAINER=	uboot@FreeBSD.org
+MAINTAINER?=	uboot@FreeBSD.org
 COMMENT=	Cross-build das u-boot for model ${MODEL}
 
 LICENSE=	GPLv2

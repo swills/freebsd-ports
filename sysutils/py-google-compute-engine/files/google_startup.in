@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD: head/sysutils/py-google-compute-engine/files/google_startup.in 470611 2018-05-22 13:27:40Z swills $
+# $FreeBSD: head/sysutils/py-google-compute-engine/files/google_startup.in 472394 2018-06-14 19:07:49Z swills $
 #
 # PROVIDE: google_startup
 # BEFORE: LOGIN
-# REQUIRE: NETWORKING syslogd google_instance_setup google_network_setup
+# REQUIRE: NETWORKING syslogd google_instance_setup google_network_daemon
 # KEYWORD: shutdown
 #
 # google_startup_enable (bool): 		Set to NO by default.

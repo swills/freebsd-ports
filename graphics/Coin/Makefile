@@ -1,9 +1,9 @@
 # Created by: roland.jesse@gmx.net
-# $FreeBSD: head/graphics/Coin/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/Coin/Makefile 472637 2018-06-17 21:24:37Z adridg $
 
 PORTNAME=	Coin
 PORTVERSION=	3.1.3
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	graphics
 MASTER_SITES=	https://bitbucket.org/Coin3D/coin/downloads/
 

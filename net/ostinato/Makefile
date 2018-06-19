@@ -1,5 +1,5 @@
 # Created by: Niclas Zeising <zeising@FreeBSD.org>
-# $FreeBSD: head/net/ostinato/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/net/ostinato/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	ostinato
 PORTVERSION=	0.8
@@ -15,7 +15,7 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 
-USES=		qmake
+USES=		compiler:c++11-lang qmake
 USE_QT4=	corelib gui moc_build rcc_build uic_build network script \
 		xml
 

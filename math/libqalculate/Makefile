@@ -1,5 +1,5 @@
 # Created by: Sergey Akifyev <asa@agava.com>
-# $FreeBSD: head/math/libqalculate/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/libqalculate/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	libqalculate
 PORTVERSION=	2.2.1
@@ -12,6 +12,8 @@ COMMENT=	Multi-purpose desktop calculator (backend library)
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: umachine.h:347: 'char16_t' does not name a type
 
 LIB_DEPENDS=	libicuuc.so:devel/icu \
 		libcurl.so:ftp/curl \

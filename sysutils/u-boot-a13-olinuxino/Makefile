@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-a13-olinuxino/Makefile 447119 2017-08-02 16:17:08Z imp $
+# $FreeBSD: head/sysutils/u-boot-a13-olinuxino/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	imp@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		a13-olinuxino

@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/gnome-sudoku/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/games/gnome-sudoku/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	gnome-sudoku
 PORTVERSION=	3.24.0
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake gnome localbase pathfix \
+USES=		compiler:c++11-lang gettext gmake gnome localbase pathfix \
 		pkgconfig python:3.3+ shebangfix tar:xz
 USE_GNOME=	cairo gtk30 intlhack libxml2:build pygobject3
 INSTALLS_ICONS=	yes

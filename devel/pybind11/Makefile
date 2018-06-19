@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pybind11/Makefile 461332 2018-02-09 20:05:26Z yuri $
+# $FreeBSD: head/devel/pybind11/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	pybind11
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Seamless interoperability between C++11 and Python (cmake part)
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	pybind
 NO_ARCH=	yes

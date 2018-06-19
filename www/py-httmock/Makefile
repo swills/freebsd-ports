@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-httmock/Makefile 467557 2018-04-17 04:08:58Z swills $
+# $FreeBSD: head/www/py-httmock/Makefile 472592 2018-06-17 03:25:31Z tobik $
 
 PORTNAME=	httmock
 PORTVERSION=	1.2.6
@@ -22,11 +22,13 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.0.0:www/py-requests@${FLAVOR}
 USES=		python
 USE_PYTHON=	distutils autoplist
 
+NO_ARCH=	yes
+
 # Description: tests.py is missing from the pypi package
 # Issue ID: https://github.com/patrys/httmock/issues/55
 # TODO: Remove extra MASTER_SITES, DISTFILES/SUBDIR, EXTRACT_ONLY, post-extract
 post-extract:
-	@${MV} ${DISTDIR}/${DIST_SUBDIR}/tests.py ${WRKSRC}
+	@${CP} ${DISTDIR}/${DIST_SUBDIR}/tests.py ${WRKSRC}
 
 do-test:
 	cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test

@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-sinovoip-bpi-m3/Makefile 455629 2017-12-05 21:51:11Z kevans $
+# $FreeBSD: head/sysutils/u-boot-sinovoip-bpi-m3/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	uboot@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		sinovoip-bpi-m3

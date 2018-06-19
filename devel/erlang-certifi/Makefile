@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/erlang-certifi/Makefile 441561 2017-05-24 04:26:11Z olgeni $
+# $FreeBSD: head/devel/erlang-certifi/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	erlang-certifi
 PORTVERSION=	1.2.1
 CATEGORIES=	devel
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	CA bundle for Erlang applications
 
 BUILD_DEPENDS=	gmake:devel/gmake

@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/graphics/p5-Image-Size-FillFullSelect/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Image-Size-FillFullSelect/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	Image-Size-FillFullSelect
 PORTVERSION=	0.1.0
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Pick whether an image fill setting for a image should be fill or full
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-Image-Size>=3.230:graphics/p5-Image-Size
 RUN_DEPENDS:=	${BUILD_DEPENDS}

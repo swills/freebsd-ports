@@ -1,12 +1,12 @@
 # Created by: ijliao
-# $FreeBSD: head/archivers/nomarch/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/archivers/nomarch/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	nomarch
 PORTVERSION=	1.4
 CATEGORIES=	archivers
 MASTER_SITES=	SUNSITE/utils/compress
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extracts files from the old '.arc' archive format
 
 PLIST_FILES=	bin/nomarch man/man1/nomarch.1.gz

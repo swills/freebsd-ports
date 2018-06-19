@@ -1,5 +1,5 @@
 # Created by: Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
-# $FreeBSD: head/math/pari/Makefile 470363 2018-05-19 07:37:53Z yuri $
+# $FreeBSD: head/math/pari/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	pari
 DISTVERSION=	2.9.5
@@ -13,6 +13,8 @@ COMMENT=	Mathematics library and advanced calculator package
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to link: intnum.o: relocation truncated to fit: R_PPC64_GOT_TLSGD16 against symbol 'avma' defined in .tbss section in init.o
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 

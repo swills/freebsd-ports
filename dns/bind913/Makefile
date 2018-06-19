@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind913/Makefile 470832 2018-05-25 12:43:32Z mat $
+# $FreeBSD: head/dns/bind913/Makefile 472442 2018-06-15 12:55:06Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -29,17 +29,17 @@ COMMENT=	BIND DNS suite with updated DNSSEC and DNS64
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-# ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.13.0
+LIB_DEPENDS=	libxml2.so:textproc/libxml2
+
 USES=	cpe libedit ssl
+# ISC releases things like 9.8.0-P1, which our versioning doesn't like
+ISCVERSION=	9.13.1
 
 CPE_VENDOR=	isc
 CPE_VERSION=	${ISCVERSION:C/-.*//}
 .if ${ISCVERSION:M*-*}
 CPE_UPDATE=	${ISCVERSION:C/.*-//:tl}
 .endif
-
-LIB_DEPENDS=	libxml2.so:textproc/libxml2
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var --disable-linux-caps \
@@ -152,15 +152,15 @@ GOST_ASN1_CONFIGURE_ON=	--with-gost=asn1
 
 GOST_CONFIGURE_ON=	--with-gost
 
-GSSAPI_BASE_CONFIGURE_ON= \
+GSSAPI_BASE_CONFIGURE_ON=\
 	--with-gssapi=${GSSAPIBASEDIR} KRB5CONFIG="${KRB5CONFIG}"
 GSSAPI_BASE_USES=	gssapi
 
-GSSAPI_HEIMDAL_CONFIGURE_ON= \
+GSSAPI_HEIMDAL_CONFIGURE_ON=\
 	--with-gssapi=${GSSAPIBASEDIR} KRB5CONFIG="${KRB5CONFIG}"
 GSSAPI_HEIMDAL_USES=	gssapi:heimdal
 
-GSSAPI_MIT_CONFIGURE_ON= \
+GSSAPI_MIT_CONFIGURE_ON=\
 	--with-gssapi=${GSSAPIBASEDIR} KRB5CONFIG="${KRB5CONFIG}"
 GSSAPI_MIT_USES=	gssapi:mit
 
@@ -198,7 +198,6 @@ RPZ_NSDNAME_CONFIGURE_ENABLE=	rpz-nsdname
 RPZ_NSIP_CONFIGURE_ENABLE=	rpz-nsip
 
 SIGCHASE_CONFIGURE_ON=	STD_CDEFINES="-DDIG_SIGCHASE=1"
-
 
 START_LATE_SUB_LIST=	NAMED_REQUIRE="SERVERS cleanvar" \
 			NAMED_BEFORE="LOGIN"

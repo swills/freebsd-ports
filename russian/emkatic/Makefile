@@ -1,8 +1,9 @@
 # Created by: Andrey Fesenko <andrey@bsdnir.info>
-# $FreeBSD: head/russian/emkatic/Makefile 470851 2018-05-25 16:31:21Z acm $
+# $FreeBSD: head/russian/emkatic/Makefile 471482 2018-06-03 08:18:04Z acm $
 
 PORTNAME=	emkatic
 PORTVERSION=	0.36
+PORTREVISION=	1
 CATEGORIES=	russian emulators
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	SF/${PORTNAME}/eMKatic%20Source

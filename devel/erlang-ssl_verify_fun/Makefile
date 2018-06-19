@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-ssl_verify_fun/Makefile 453397 2017-11-03 11:20:46Z olgeni $
+# $FreeBSD: head/devel/erlang-ssl_verify_fun/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	ssl_verify_fun
 PORTVERSION=	1.1.3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang library for certificate hostname validation
 
 LICENSE=	MIT

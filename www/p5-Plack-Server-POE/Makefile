@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Server-POE/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Server-POE/Makefile 471708 2018-06-04 18:17:19Z sunpoet $
 
 PORTNAME=	Plack-Server-POE
 PORTVERSION=	0.4
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Plack Server implementation for POE
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\
 	p5-Plack>0:www/p5-Plack \

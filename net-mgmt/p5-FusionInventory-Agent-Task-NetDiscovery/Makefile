@@ -1,5 +1,5 @@
 # Created by: Emil Smolenski <am@raisa.eu.org>
-# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent-Task-NetDiscovery/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent-Task-NetDiscovery/Makefile 471673 2018-06-04 18:11:47Z sunpoet $
 
 PORTNAME=	FusionInventory-Agent-Task-NetDiscovery
 PORTVERSION=	2.1
@@ -13,6 +13,7 @@ MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Network discovery support for FusionInventory Agent
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-FusionInventory-Agent>=2.2.0:net-mgmt/p5-FusionInventory-Agent \
 		p5-Net-IP>=0:net-mgmt/p5-Net-IP \

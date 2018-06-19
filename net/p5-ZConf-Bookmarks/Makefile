@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/net/p5-ZConf-Bookmarks/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-ZConf-Bookmarks/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-Bookmarks
 PORTVERSION=	0.2.4
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	System for bookmarking URIs using ZConf
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 RUN_DEPENDS=	p5-ZConf>=0:net/p5-ZConf
 

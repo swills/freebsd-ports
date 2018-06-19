@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-grpcio-tools/Makefile 470121 2018-05-16 13:27:13Z vanilla $
+# $FreeBSD: head/devel/py-grpcio-tools/Makefile 471750 2018-06-05 09:09:32Z vanilla $
 
 PORTNAME=	grpcio-tools
-PORTVERSION=	1.12.0
+PORTVERSION=	1.12.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

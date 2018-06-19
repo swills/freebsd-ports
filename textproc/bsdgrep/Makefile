@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/textproc/bsdgrep/Makefile 467795 2018-04-19 18:22:47Z kevans $
+# $FreeBSD: head/textproc/bsdgrep/Makefile 472211 2018-06-11 21:03:17Z feld $
 
 PORTNAME=	grep
 DISTVERSION=	2.6.0
@@ -9,7 +9,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	LOCAL/kevans
 PKGNAMEPREFIX=	bsd-
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	BSD-licensed version of grep
 
 LICENSE=	BSD2CLAUSE

@@ -1,8 +1,8 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/x11-fm/worker/Makefile 457966 2018-01-03 14:08:27Z misha $
+# $FreeBSD: head/x11-fm/worker/Makefile 471571 2018-06-04 16:33:22Z misha $
 
 PORTNAME=	worker
-PORTVERSION=	3.14.0
+PORTVERSION=	3.15.1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.boomerangsworld.de/cms/worker/downloads/
 
@@ -13,12 +13,13 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		compiler:c++11-lib pkgconfig shebangfix tar:bzip2
+USES=		compiler:c++11-lib pkgconfig python:2.7 shebangfix tar:bzip2
 GNU_CONFIGURE=	yes
 USE_XORG=	x11 xinerama
 
 SHEBANG_FILES=	${WRKSRC}/scripts/*.sh \
-		${WRKSRC}/scripts/xeditor
+		${WRKSRC}/scripts/xeditor \
+		${WRKSRC}/scripts/find_file_by_chksum.py
 
 OPTIONS_DEFINE=	AVFS HAL INOTIFY LUA XFT
 OPTIONS_DEFAULT=	AVFS INOTIFY

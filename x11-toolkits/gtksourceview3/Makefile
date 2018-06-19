@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 469689 2018-05-11 20:11:49Z pi $
+# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	gtksourceview
 PORTVERSION=	3.24.7
@@ -10,6 +10,8 @@ DIST_SUBDIR=	gnome3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Text widget that adds syntax highlighting to the GtkTextView widget
+
+BROKEN_powerpc64=	fails to compile: gtksourcetag.h:43: redefinition of typedef 'GtkSourceTag'
 
 USES=		tar:xz
 

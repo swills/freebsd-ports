@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 469278 2018-05-07 08:56:24Z mr $
+# $FreeBSD: head/comms/Makefile 471892 2018-06-07 00:34:18Z rene $
 #
 
     COMMENT = Communication utilities
@@ -71,11 +71,8 @@
     SUBDIR += hylafax
     SUBDIR += ibp
     SUBDIR += inspectrum
-    SUBDIR += java-commapi
-    SUBDIR += java-commapi-freebsd
     SUBDIR += java-simple-serial-connector
     SUBDIR += jerm
-    SUBDIR += jsdr
     SUBDIR += kb
     SUBDIR += kermit
     SUBDIR += klog
@@ -168,7 +165,6 @@
     SUBDIR += seyon
     SUBDIR += sms_client
     SUBDIR += smstools3
-    SUBDIR += soundmodem
     SUBDIR += spandsp
     SUBDIR += splat
     SUBDIR += sredird

@@ -1,5 +1,5 @@
 # Created by: Thomas Dreibholz <dreibh@iem.uni-due.de>
-# $FreeBSD: head/benchmarks/netperfmeter/Makefile 464174 2018-03-11 14:10:01Z tobik $
+# $FreeBSD: head/benchmarks/netperfmeter/Makefile 472702 2018-06-18 14:49:46Z linimon $
 
 PORTNAME=	netperfmeter
 PORTVERSION=	1.7.6
@@ -11,6 +11,8 @@ COMMENT=	Network Performance Meter
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-array-bounds"
 
 USES=		cmake shebangfix
 CMAKE_ON=	BUILD_PLOT_PROGRAMS

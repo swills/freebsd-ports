@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/scilab-toolbox-swt/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/scilab-toolbox-swt/Makefile 472035 2018-06-09 04:56:16Z rene $
 
 PORTNAME=	swt
 PORTVERSION=	0.1.20
@@ -24,13 +24,11 @@ TOOLBOXDIR=	${PREFIX}/${TOOLBOXDIR_REL}
 PLIST_SUB=	TOOLBOXDIR=${TOOLBOXDIR_REL}
 TOOLBOX_SUBDIRS=	demos etc macros
 
-OPTIONS_DEFINE=	HELP SIVP
+OPTIONS_DEFINE=	HELP
 OPTIONS_DEFAULT=	HELP
 OPTIONS_SUB=	yes
 
 HELP_DESC=	Build help files (requires scilab with gui support)
-SIVP_DESC=	Enable Image and Video support
-SIVP_RUN_DEPENDS=	${LOCALBASE}/${CONTRIBDIR}/sivp/loader.sce:math/scilab-toolbox-sivp
 
 WRKSRC=		${WRKDIR}/swt
 

@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/devel/xfce4-dev-tools/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/xfce4-dev-tools/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	xfce4-dev-tools
 PORTVERSION=	4.12.0
@@ -14,8 +14,8 @@ COMMENT=	Xfce development tools
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	autoconf-2.69:devel/autoconf \
-		automake-1.15:devel/automake \
+RUN_DEPENDS=	autoconf>=2.69:devel/autoconf \
+		automake>=1.15:devel/automake \
 		libtoolize:devel/libtool \
 		bash:shells/bash
 

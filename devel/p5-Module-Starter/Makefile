@@ -1,8 +1,8 @@
 # Created by: clsung
-# $FreeBSD: head/devel/p5-Module-Starter/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-Starter/Makefile 472651 2018-06-17 23:15:50Z wen $
 
 PORTNAME=	Module-Starter
-PORTVERSION=	1.73
+PORTVERSION=	1.75
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Tar-Wrapper/Makefile 461612 2018-02-12 19:03:13Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Tar-Wrapper/Makefile 471775 2018-06-05 18:55:19Z sunpoet $
 
 PORTNAME=	Archive-Tar-Wrapper
-PORTVERSION=	0.23
+PORTVERSION=	0.25
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

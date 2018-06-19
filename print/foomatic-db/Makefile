@@ -1,8 +1,8 @@
 # Created by: Dima Dorfman <dima@unixfreak.org>
-# $FreeBSD: head/print/foomatic-db/Makefile 465775 2018-03-28 02:40:05Z danilo $
+# $FreeBSD: head/print/foomatic-db/Makefile 472133 2018-06-10 12:44:41Z danilo $
 
 PORTNAME=	foomatic-db
-PORTVERSION=	20180327
+PORTVERSION=	20180604
 CATEGORIES=	print
 MASTER_SITES=	LOCAL/danilo
 DISTNAME=	${PORTNAME}-${FOOMATICVER}-${PORTVERSION}

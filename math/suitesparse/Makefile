@@ -1,5 +1,5 @@
 # Created by: Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: head/math/suitesparse/Makefile 469513 2018-05-10 07:20:08Z yuri $
+# $FreeBSD: head/math/suitesparse/Makefile 471443 2018-06-03 02:50:39Z yuri $
 
 PORTNAME=	suitesparse
 DISTVERSION=	5.2.0
@@ -43,6 +43,7 @@ METIS_PATH=	${LOCALBASE}/include/metis
 CHOLMOD_CONFIG=
 CFLAGS+=	-I${LOCALBASE}/include
 CXXFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-L${WRKSRC}/lib # prevent linking with shared libs from the preinstalled older versions
 MAKE_ARGS+=	MY_METIS_LIB="-L${LOCALBASE}/lib -lmetis $(LDFLAGS)"
 
 post-patch:

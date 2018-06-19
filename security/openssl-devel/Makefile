@@ -1,9 +1,9 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl-devel/Makefile 467499 2018-04-16 17:51:39Z brnrd $
+# $FreeBSD: head/security/openssl-devel/Makefile 472247 2018-06-12 13:45:44Z brnrd $
 
 PORTNAME=	openssl
 PORTVERSION=	1.1.0h
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security devel
 MASTER_SITES=	https://www.openssl.org/source/ \
 		ftp://ftp.cert.dfn.de/pub/tools/net/openssl/source/
@@ -23,7 +23,7 @@ HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	config
 CONFIGURE_ENV=	PERL="${PERL}"
 CONFIGURE_ARGS=	--openssldir=${OPENSSLDIR} \
-		--prefix=${PREFIX}
+		--prefix=${PREFIX} -v
 
 OPTIONS_GROUP=	CIPHERS HASHES OPTIMIZE PROTOCOLS
 OPTIONS_GROUP_CIPHERS=	IDEA JPAKE RC2 RC4 RC5

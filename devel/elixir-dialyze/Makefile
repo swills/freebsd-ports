@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-dialyze/Makefile 410901 2016-03-12 16:14:49Z olgeni $
+# $FreeBSD: head/devel/elixir-dialyze/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	dialyze
 PORTVERSION=	0.2.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Mix dialyzer task
 
 LICENSE=	APACHE20

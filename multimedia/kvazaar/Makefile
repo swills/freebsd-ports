@@ -1,10 +1,13 @@
-# $FreeBSD: head/multimedia/kvazaar/Makefile 454469 2017-11-19 01:06:09Z jbeich $
+# $FreeBSD: head/multimedia/kvazaar/Makefile 472393 2018-06-14 18:46:42Z jbeich $
 
 PORTNAME=	kvazaar
 DISTVERSIONPREFIX=	v
 DISTVERSION?=	1.2.0
 PORTREVISION?=	0
 CATEGORIES=	multimedia
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	4b5d95155526.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	H.265/HEVC encoder implemented in C

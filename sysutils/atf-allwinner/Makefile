@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/atf-allwinner/Makefile 465425 2018-03-24 03:49:04Z linimon $
+# $FreeBSD: head/sysutils/atf-allwinner/Makefile 472719 2018-06-18 21:45:43Z linimon $
 
 PORTNAME=	atf-allwinner
 PORTVERSION=	1.2.20180112
@@ -8,7 +8,9 @@ MASTER_SITES=	GH
 MAINTAINER=	manu@freebsd.org
 COMMENT=	Arm Trusted Framework for Allwinner SoCs
 
-LICENSE=	BSD
+LICENSE=	BSD2CLAUSE BSD3CLAUSE GPLv2+
+LICENSE_COMB=	multi
+LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/license.md
 
 BUILD_DEPENDS=	aarch64-none-elf-gcc:devel/aarch64-none-elf-gcc
 

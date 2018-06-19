@@ -1,10 +1,9 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/editors/neovim/Makefile 470985 2018-05-27 14:41:44Z adamw $
+# $FreeBSD: head/editors/neovim/Makefile 472196 2018-06-11 17:28:46Z adamw $
 
 PORTNAME=	neovim
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.2.2
-PORTREVISION=	2
+DISTVERSION=	0.3.0
 CATEGORIES=	editors
 
 MAINTAINER=	adamw@FreeBSD.org
@@ -33,6 +32,7 @@ CMAKE_ARGS=	-DLUA_PRG:FILEPATH="${LUA_CMD}" \
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
+NLS_CMAKE_BOOL=	ENABLE_LIBINTL
 NLS_USES=	gettext
 
 post-patch:
@@ -43,7 +43,7 @@ post-patch:
 		${WRKSRC_libmpack_lua}/lmpack.c
 
 post-patch-NLS-off:
-	@${REINPLACE_CMD} -e '/find_package(LibIntl)/ d' ${WRKSRC}/CMakeLists.txt
+	@${REINPLACE_CMD} -e '/add_subdirectory(po)/d' ${WRKSRC}/src/nvim/CMakeLists.txt
 
 pre-build:
 	${LN} -s ${WRKSRC_libmpack} ${WRKSRC_libmpack_lua}/mpack-src

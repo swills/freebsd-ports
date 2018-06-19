@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-bear/Makefile 410924 2016-03-12 17:57:17Z olgeni $
+# $FreeBSD: head/devel/erlang-bear/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	bear
 PORTVERSION=	0.8.3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Set of statistics functions for Erlang
 
 LICENSE=	APACHE20

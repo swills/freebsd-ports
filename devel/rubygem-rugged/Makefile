@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rugged/Makefile 471167 2018-05-30 19:48:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rugged/Makefile 472117 2018-06-10 08:08:26Z antoine $
 
 PORTNAME=	rugged
 PORTVERSION=	0.27.1
@@ -12,11 +12,9 @@ COMMENT=	Rugged is a Ruby binding to the libgit2 linkable library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	cmake:devel/cmake \
-		libgit2>=${PORTVERSION:R}:devel/libgit2
+BUILD_DEPENDS=	libgit2>=${PORTVERSION:R}:devel/libgit2
 LIB_DEPENDS=	libgit2.so:devel/libgit2 \
-		libgmp.so:math/gmp \
-		libunwind.so:devel/libunwind
+		libgmp.so:math/gmp
 
 CONFIGURE_ARGS=	--use-system-libraries
 USE_RUBY=	yes

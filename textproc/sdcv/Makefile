@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/sdcv/Makefile 450001 2017-09-17 13:51:04Z dbaio $
+# $FreeBSD: head/textproc/sdcv/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	sdcv
 PORTVERSION=	0.5.2
@@ -12,7 +12,7 @@ COMMENT=	Text-based utility for work with dictionaries in StarDict's format #'
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource pkgconfig readline
+USES=		cmake:outsource compiler:c++11-lang pkgconfig readline
 USE_GNOME=	glib20
 
 SUB_FILES=	pkg-message

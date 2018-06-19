@@ -1,12 +1,12 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtkmm30-reference/Makefile 439206 2017-04-23 08:35:28Z kwm $
+# $FreeBSD: head/x11-toolkits/gtkmm30-reference/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTREVISION=	0
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gtkmm-3.0.pc:x11-toolkits/gtkmm30 \
 		glibmm-reference>=0:devel/glibmm-reference
 
-USES=		gmake pkgconfig
+USES=		compiler:c++11-lang gmake pkgconfig
 GNU_CONFIGURE=	yes
 
 DOCSDIR=	${PREFIX}/share/doc/gtkmm-3.0

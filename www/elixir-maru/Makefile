@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-maru/Makefile 452275 2017-10-17 13:09:18Z olgeni $
+# $FreeBSD: head/www/elixir-maru/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	maru
 PORTVERSION=	0.12.4
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Elixir RESTful framework
 
 LICENSE=	BSD3CLAUSE

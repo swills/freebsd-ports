@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Class-Forward/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Class-Forward/Makefile 471590 2018-06-04 18:02:49Z sunpoet $
 
 PORTNAME=	Class-Forward
 PORTVERSION=	0.100006
@@ -10,7 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for class dispatcher that handles namespaces like paths
 
-USES=	perl5
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES=		perl5
 USE_PERL5=	configure
 
 .include <bsd.port.mk>

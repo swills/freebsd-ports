@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/immortal/Makefile 471134 2018-05-30 14:49:58Z fernape $
+# $FreeBSD: head/sysutils/immortal/Makefile 471956 2018-06-07 20:24:11Z dbaio $
 
 PORTNAME=	immortal
-PORTVERSION=	0.19.0
+PORTVERSION=	0.20.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	nbari@tequila.io

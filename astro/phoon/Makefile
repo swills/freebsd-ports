@@ -1,11 +1,11 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/astro/phoon/Makefile 344020 2014-02-12 21:42:19Z ehaupt $
+# $FreeBSD: head/astro/phoon/Makefile 471445 2018-06-03 03:25:10Z xride $
 
 PORTNAME=	phoon
-PORTVERSION=	2005
+PORTVERSION=	2014
 CATEGORIES=	astro
 MASTER_SITES=	http://www.acme.com/software/phoon/
-PKGNAMESUFFIX=	_29jun
+PKGNAMESUFFIX=	_14Aug
 DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}${PORTVERSION}
 
 MAINTAINER=	xride@FreeBSD.org

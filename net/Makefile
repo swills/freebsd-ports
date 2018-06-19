@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/net/Makefile 472685 2018-06-18 12:59:29Z rene $
 #
 
     COMMENT = Networking tools
@@ -166,7 +166,8 @@
     SUBDIR += freerdp1
     SUBDIR += freeswitch
     SUBDIR += freevrrpd
-    SUBDIR += frr
+    SUBDIR += frr3
+    SUBDIR += frr4
     SUBDIR += fspclient
     SUBDIR += fspd
     SUBDIR += fsplib
@@ -422,6 +423,7 @@
     SUBDIR += libsignal
     SUBDIR += libsocket++
     SUBDIR += libsrtp
+    SUBDIR += libsrtp2
     SUBDIR += libstorj
     SUBDIR += libtnl
     SUBDIR += libtrace
@@ -485,6 +487,7 @@
     SUBDIR += mpich
     SUBDIR += mpich2
     SUBDIR += mping
+    SUBDIR += mptsd
     SUBDIR += mrouted
     SUBDIR += msend
     SUBDIR += mtr
@@ -1090,7 +1093,6 @@
     SUBDIR += py-port-for
     SUBDIR += py-portend
     SUBDIR += py-pygeoip
-    SUBDIR += py-pyldap
     SUBDIR += py-pynmsg
     SUBDIR += py-pynsq
     SUBDIR += py-pypcap
@@ -1266,8 +1268,6 @@
     SUBDIR += rubygem-geoip
     SUBDIR += rubygem-gitaly
     SUBDIR += rubygem-gitaly-proto
-    SUBDIR += rubygem-gitaly-proto083
-    SUBDIR += rubygem-gitaly-proto084
     SUBDIR += rubygem-gitaly-proto088
     SUBDIR += rubygem-gitaly-proto094
     SUBDIR += rubygem-gitaly-proto095
@@ -1348,7 +1348,6 @@
     SUBDIR += rubygem-xmlrpc
     SUBDIR += rude
     SUBDIR += s3ql
-    SUBDIR += samba45
     SUBDIR += samba46
     SUBDIR += samba47
     SUBDIR += samba48
@@ -1422,9 +1421,6 @@
     SUBDIR += sup
     SUBDIR += svnup
     SUBDIR += syncthing
-    SUBDIR += syncthing-cli
-    SUBDIR += syncthing-discosrv
-    SUBDIR += syncthing-inotify
     SUBDIR += syndication
     SUBDIR += tableutil
     SUBDIR += tac_plus4

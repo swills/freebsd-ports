@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/abgate-lv2/Makefile 471119 2018-05-30 06:33:30Z yuri $
+# $FreeBSD: head/audio/abgate-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
 
 PORTNAME=	abGate
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,8 @@ COMMENT=	Noise gate LV2 plugin
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to build: cc1plus: unrecognized command line option -std=c++11
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 

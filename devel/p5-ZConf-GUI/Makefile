@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/devel/p5-ZConf-GUI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-ZConf-GUI/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-GUI
 PORTVERSION=	1.1.0
@@ -14,6 +14,9 @@ COMMENT=	GUI backend chooser
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-ZConf>=6.1.0:net/p5-ZConf \
 		p5-Error-Helper>=1.0.0:devel/p5-Error-Helper \

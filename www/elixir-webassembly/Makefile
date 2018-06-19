@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-webassembly/Makefile 424861 2016-10-28 16:00:45Z danfe $
+# $FreeBSD: head/www/elixir-webassembly/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	webassembly
 PORTVERSION=	0.6.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	DSL for creating HTML structure straight with Elixir blocks
 
 LICENSE=	BSD2CLAUSE

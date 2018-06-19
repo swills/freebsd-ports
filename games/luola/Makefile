@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/luola/Makefile 427946 2016-12-06 11:06:42Z amdmi3 $
+# $FreeBSD: head/games/luola/Makefile 472065 2018-06-09 16:13:21Z amdmi3 $
 
 PORTNAME=	luola
 PORTVERSION=	1.3.2
@@ -13,6 +13,9 @@ DIST_SUBDIR=	luola
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	2D multiplayer cave-flying game
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 USES=		gmake
@@ -47,7 +50,9 @@ post-patch:
 post-install:
 	${INSTALL_DATA} ${WRKDIR}/*.lev ${WRKDIR}/*.png ${STAGEDIR}${DATADIR}/levels/
 	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}.png ${STAGEDIR}${PREFIX}/share/pixmaps
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${WRKSRC}/FAQ ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

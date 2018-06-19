@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/gzdoom/Makefile 469450 2018-05-09 15:28:49Z kevans $
+# $FreeBSD: head/games/gzdoom/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	gzdoom
 PORTVERSION=	3.3.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	g
 CATEGORIES=	games
 

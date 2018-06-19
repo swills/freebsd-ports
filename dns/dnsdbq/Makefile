@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/dnsdbq/Makefile 464746 2018-03-17 01:27:47Z truckman $
+# $FreeBSD: head/dns/dnsdbq/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	dnsdbq
 PORTVERSION=	1.0.0
@@ -12,6 +12,8 @@ LICENSE=		APACHE20 ISCL
 LICENSE_COMB=		multi
 LICENSE_FILE_APACHE20=	${WRKSRC}/Apache-2.0
 LICENSE_FILE_ISCL=	${WRKSRC}/ISC
+
+BROKEN_powerpc64=	fails to compile: dnsdbq.c:817: passing argument 1 of 'curl_global_init' with different width due to prototype
 
 LIB_DEPENDS=	libjansson.so:devel/jansson \
 		libcurl.so:ftp/curl

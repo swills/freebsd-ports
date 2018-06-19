@@ -1,9 +1,9 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
-# $FreeBSD: head/editors/flim/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/editors/flim/Makefile 472140 2018-06-10 14:27:53Z nobutaka $
 
 PORTNAME=	flim
 PORTVERSION=	1.14.9
-PORTREVISION=	18
+PORTREVISION=	19
 PORTEPOCH=	1
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://git.chise.org/elisp/dist/${PORTNAME}/${PORTNAME}-${DISTVERSION:R}/
@@ -26,7 +26,8 @@ NO_ARCH=	yes
 ALL_TARGET=	elc
 
 MAKE_ARGS+=	PREFIX="${STAGEDIR}${PREFIX}" \
-		LISPDIR="${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}"
+		LISPDIR="${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}" \
+		VERSION_SPECIFIC_LISPDIR="${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}"
 
 INFO=		mime-en mime-ja
 

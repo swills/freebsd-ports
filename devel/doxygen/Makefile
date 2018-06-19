@@ -1,5 +1,5 @@
 # Created by: Joep Grooten <joep@di.nl>
-# $FreeBSD: head/devel/doxygen/Makefile 459474 2018-01-19 21:28:34Z antoine $
+# $FreeBSD: head/devel/doxygen/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	doxygen
 PORTVERSION=	1.8.14
@@ -14,6 +14,8 @@ COMMENT=	Documentation system for C, C++, and other languages
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to link: ../lib/lib_doxygen.a(language.cpp.o)(.text+0xb6c): sibling call optimization to `_ZN12ConfigValuesD1Ev' does not allow automatic multiple TOCs
 
 USES=		bison cmake:outsource,noninja iconv python shebangfix
 ALL_TARGET=	all

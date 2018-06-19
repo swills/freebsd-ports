@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/shards/Makefile 464068 2018-03-10 11:22:59Z cpm $
+# $FreeBSD: head/devel/shards/Makefile 471254 2018-06-01 10:16:41Z cpm $
 
 PORTNAME=		shards
 DISTVERSIONPREFIX=	v
 DISTVERSION=		0.7.2
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		devel
 
 MAINTAINER=	greg@unrelenting.technology

@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-dbus/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/devel/qt4-dbus/Makefile 472470 2018-06-15 17:40:02Z amdmi3 $
 
 PORTNAME=	dbus
 DISTVERSION=	${QT4_VERSION}
@@ -45,7 +45,7 @@ INSTALL_WRKSRC=	${BUILD_WRKSRC}
 .include <bsd.port.pre.mk>
 
 # Without this workaround, qdbus crashes.
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1000000
+.if ${OPSYS} == FreeBSD
 CXXFLAGS+=	-fno-use-cxa-atexit
 .endif
 

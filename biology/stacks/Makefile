@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/stacks/Makefile 466048 2018-03-31 13:16:05Z jwb $
+# $FreeBSD: head/biology/stacks/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	stacks
 DISTVERSION=	1.48
@@ -11,7 +11,7 @@ COMMENT=	Software pipeline for building loci from short-read sequences
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake python shebangfix
+USES=		compiler:c++11-lang gmake python shebangfix
 SHEBANG_FILES=	scripts/*.pl scripts/*.py
 GNU_CONFIGURE=	yes
 

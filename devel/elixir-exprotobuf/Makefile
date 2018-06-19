@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-exprotobuf/Makefile 448953 2017-08-30 01:54:21Z olgeni $
+# $FreeBSD: head/devel/elixir-exprotobuf/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	exprotobuf
 DISTVERSION=	1.2.9
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Protocol Buffers in Elixir
 
 LICENSE=	APACHE20

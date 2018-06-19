@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/postgresql-plruby/Makefile 469152 2018-05-05 17:22:47Z sunpoet $
+# $FreeBSD: head/databases/postgresql-plruby/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	postgresql-plruby
 PORTVERSION=	0.5.7
@@ -13,13 +13,15 @@ COMMENT=	PL/Ruby procedural language for the PostgreSQL database system
 LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	devrimgunduz
+BROKEN_powerpc64=	fails to build: ruby.h:628:35: call to 'ruby_safe_level_2_error' declared with attribute error: $SAFE=2 to 4 are obsolete
 
 USES=		uidfix pgsql
 WANT_PGSQL=	server
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	devrimgunduz
 
 POSTGRESQL_PORT?=	databases/postgresql${PGSQL_VER_NODOT}-server
 PGSQL_PORTDIR?=		${PORTSDIR}/${POSTGRESQL_PORT}

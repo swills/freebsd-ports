@@ -1,5 +1,5 @@
 # Created by: Gennady Sorokopud <gena@NetVision.net.il>
-# $FreeBSD: head/audio/xmcd/Makefile 469108 2018-05-05 13:30:42Z danfe $
+# $FreeBSD: head/audio/xmcd/Makefile 471289 2018-06-01 20:23:02Z rene $
 
 PORTNAME=	xmcd
 PORTVERSION=	3.3.2
@@ -7,7 +7,7 @@ PORTREVISION=	19
 CATEGORIES=	audio
 MASTER_SITES=	http://freebsd.nsu.ru/distfiles/
 
-MAINTAINER=	deischen@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Motif CD player
 
 LIB_DEPENDS+=	libvorbis.so:audio/libvorbis \

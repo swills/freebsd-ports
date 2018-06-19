@@ -1,8 +1,9 @@
 # Created by: vanilla@
-# $FreeBSD: head/databases/foundationdb/Makefile 471193 2018-05-31 03:53:34Z vanilla $
+# $FreeBSD: head/databases/foundationdb/Makefile 471923 2018-06-07 14:16:29Z vanilla $
 
 PORTNAME=	foundationdb
-PORTVERSION=	5.2.2
+PORTVERSION=	5.2.3
+DISTVERSIONPREFIX=	release-
 CATEGORIES=	databases
 
 MAINTAINER=	vanilla@FreeBSD.org

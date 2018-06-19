@@ -1,11 +1,14 @@
-# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 467810 2018-04-20 02:31:21Z jbeich $
+# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 472208 2018-06-11 20:59:17Z yuri $
 
 PORTNAME=	pcl
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	1.8.1
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	graphics math
 PKGNAMESUFFIX=	-pointclouds
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	2309bdab20fb2a385d374db6a87349199279db18.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Point Cloud Library
@@ -27,9 +30,6 @@ GH_ACCOUNT=	PointCloudLibrary
 USE_GL=		gl glu
 USE_XORG=	x11 xext xt ice sm
 USE_LDCONFIG=	yes
-
-# https://github.com/PointCloudLibrary/pcl/issues/2284
-CXXFLAGS+=	-DBOOST_UUID_RANDOM_GENERATOR_COMPAT
 
 PLIST_SUB=	SHL3=${DISTVERSION} SHL2=${DISTVERSION:R}
 

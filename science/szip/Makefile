@@ -1,5 +1,5 @@
 # Created by: glewis
-# $FreeBSD: head/science/szip/Makefile 441868 2017-05-27 19:42:13Z sunpoet $
+# $FreeBSD: head/science/szip/Makefile 471837 2018-06-06 12:13:19Z antoine $
 
 PORTNAME=	szip
 PORTVERSION=	2.1
@@ -16,6 +16,11 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Lossless compression library for scientific data
 
+LICENSE=	SZIP
+LICENSE_NAME=	SZIP License
+LICENSE_FILE=	${WRKSRC}/COPYING
+LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
+
 CONFLICTS_INSTALL=	libaec
 
 OPTIONS_DEFINE=	DOCS
@@ -30,7 +35,7 @@ USES=		libtool
 PORTDOCS=	Release_notes_2_0.pdf
 
 post-install-DOCS-on:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}/
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}/
 	${INSTALL_DATA} ${DISTDIR}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/databases/sqlite-ext-miscfuncs/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/databases/sqlite-ext-miscfuncs/Makefile 472113 2018-06-10 04:43:51Z yuri $
 
 PORTNAME=	sqlite-ext-miscfuncs
 PORTVERSION=	1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://www.sourcehosting.net/freebsd/distfiles/ \
 		LOCAL/glarkin
@@ -20,7 +20,6 @@ NO_WRKSUBDIR=	yes
 SRCFILE=	extension-functions-${PORTVERSION}.c
 LIBFILE=	libsqlitemiscfuncs.so
 INST_DIR=	${PREFIX}/libexec/${DIST_SUBDIR}
-USE_LDCONFIG=	${INST_DIR}
 
 SUB_FILES=	${PORTDOCS}
 SUB_LIST+=	LIBFILE=${LIBFILE}

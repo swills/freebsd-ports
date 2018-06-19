@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 469965 2018-05-14 20:43:50Z kwm $
+# $FreeBSD: head/x11-toolkits/Makefile 472175 2018-06-11 09:00:49Z yuri $
 #
 
     COMMENT = X11 toolkits
@@ -160,6 +160,7 @@
     SUBDIR += p5-Gtk2-TrayIcon
     SUBDIR += p5-Gtk2-Unique
     SUBDIR += p5-Gtk3
+    SUBDIR += p5-Gtk3-SimpleList
     SUBDIR += p5-Pango
     SUBDIR += p5-Prima
     SUBDIR += p5-Tk
@@ -198,6 +199,7 @@
     SUBDIR += plib
     SUBDIR += pure-gtk
     SUBDIR += pure-tk
+    SUBDIR += py-AnyQt
     SUBDIR += py-Pmw
     SUBDIR += py-SquareMap
     SUBDIR += py-fltk
@@ -291,6 +293,7 @@
     SUBDIR += wxgtk28-contrib
     SUBDIR += wxgtk28-contrib-common
     SUBDIR += wxgtk30
+    SUBDIR += wxgtk31
     SUBDIR += xbae
     SUBDIR += xforms
     SUBDIR += xmhtml

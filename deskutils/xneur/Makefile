@@ -1,18 +1,20 @@
 # Created by: Alex "lissyara" Keda <admin@lissyara.su>
-# $FreeBSD: head/deskutils/xneur/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/deskutils/xneur/Makefile 472671 2018-06-18 04:16:19Z linimon $
 
 PORTNAME=	xneur
 PORTVERSION=	0.17.0
-PORTREVISION=	4
 DISTVERSIONSUFFIX=.orig
+PORTREVISION=	4
 CATEGORIES=	deskutils
 MASTER_SITES=	https://launchpad.net/~andrew-crew-kuznetsov/+archive/xneur-stable/+files/
 DISTNAME=	${PORTNAME}_${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
 
-MAINTAINER=	admin@lissyara.su
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Auto keyboard switcher
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to compile: text.c:272: nested functions are disabled, use -fnested-functions to re-enable
 
 LIB_DEPENDS=	libnotify.so:devel/libnotify \
 		libpcre.so:devel/pcre

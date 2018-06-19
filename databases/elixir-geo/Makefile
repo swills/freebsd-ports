@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/elixir-geo/Makefile 460247 2018-01-29 09:16:14Z olgeni $
+# $FreeBSD: head/databases/elixir-geo/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	geo
 PORTVERSION=	2.1.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Collection of GIS functions for Elixir
 
 LICENSE=	MIT

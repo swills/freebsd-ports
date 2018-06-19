@@ -1,22 +1,32 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-configurations/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-configurations/Makefile 471382 2018-06-02 17:32:35Z miwi $
 
-PORTNAME=	configurations
-PORTVERSION=	1.0
+PORTNAME=	django-configurations
+PORTVERSION=	2.0
 CATEGORIES=	www python
-MASTER_SITES=	GH
-PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Django project configuration using the composability of Python classes
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
+LICENSE=	BSD3CLAUSE
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
-USE_GITHUB=	yes
-GH_ACCOUNT=	jazzband
-GH_PROJECT=	django-configurations
+PORTDOCS=	*
+
+OPTIONS_DEFINE=		DOCS
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
+DOCS_VARS=		PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	@(cd ${WRKSRC}/build/sphinx/html && \
+		${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR} \
+		"! -name .buildinfo -and ! -name objects.inv")
 
 .include <bsd.port.mk>

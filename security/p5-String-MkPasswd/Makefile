@@ -1,5 +1,5 @@
 # Created by: Frank Wall <fw@moov.de>
-# $FreeBSD: head/security/p5-String-MkPasswd/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/security/p5-String-MkPasswd/Makefile 471690 2018-06-04 18:15:24Z sunpoet $
 
 PORTNAME=	String-MkPasswd
 PORTVERSION=	0.04
@@ -12,6 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	fw@moov.de
 COMMENT=	Random password generator
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

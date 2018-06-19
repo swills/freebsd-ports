@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/archivers/rar/Makefile 453662 2017-11-07 14:26:42Z danfe $
+# $FreeBSD: head/archivers/rar/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	rar
 PORTVERSION=	5.5.0
@@ -8,7 +8,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	http://www.rarlab.com/rar/
 DISTNAME=	rarbsd-${PORTVERSION}
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	File archiver (binary port)
 
 LICENSE=	RAR

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	gnustep-gui
 PORTVERSION=	0.25.1
@@ -23,6 +23,7 @@ LIB_DEPENDS+=	libflite.so:audio/flite
 
 BROKEN_armv6=		fails to package: chmod: GSSpeechServer.desktop: No such file or directory
 BROKEN_armv7=		fails to package: chmod: GSSpeechServer.desktop: No such file or directory
+BROKEN_powerpc64=	fails to build: Illegal instruction (core dumped)
 
 OPTIONS_DEFINE=	DOCS CUPS ASPELL
 OPTIONS_DEFAULT=	CUPS

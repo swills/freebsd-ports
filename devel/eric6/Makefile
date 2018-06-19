@@ -1,9 +1,11 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile 468775 2018-05-01 17:52:53Z dbn $
+# $FreeBSD: head/devel/eric6/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PKGNAMESUFFIX=	-${FLAVOR:U:S/_/-/}
-CATEGORIES=	devel python
 DISTNAME=	${PORTNAME}-nolang-${DISTVERSION}
+CATEGORIES=	devel python
+
+BROKEN_powerpc64=	fails to link: libstdc++.so.6: version GLIBCXX_3.4.14 required by /usr/local/lib/qt4/libqscintilla2_qt4.so.13 not found
 
 BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/PyQt${PYQTVER}/QtGui.so:x11-toolkits/py-qt${PYQTVER}-gui@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/PyQt${PYQTVER}/Qsci.so:devel/py-qt${PYQTVER}-qscintilla2@${PY_FLAVOR}

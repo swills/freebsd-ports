@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/aphpbreakdown/Makefile 470830 2018-05-25 11:20:54Z tz $
+# $FreeBSD: head/devel/aphpbreakdown/Makefile 472368 2018-06-14 08:21:12Z pi $
 
 PORTNAME=	aphpbreakdown
-DISTVERSION=	2.1.0
+DISTVERSION=	2.2.0
 CATEGORIES=	devel www
 MASTER_SITES=	http://phar.code-mesa.com/
 PKGNAMEPREFIX=  ${PHP_PKGNAMEPREFIX}

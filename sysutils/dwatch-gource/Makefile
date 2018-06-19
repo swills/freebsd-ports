@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/dwatch-gource/Makefile 471140 2018-05-30 17:49:07Z dteske $
+# $FreeBSD: head/sysutils/dwatch-gource/Makefile 471295 2018-06-01 21:25:06Z dteske $
 
 PORTNAME=	dwatch-gource
 DISTVERSION=	0.9
@@ -18,6 +18,12 @@ NO_ARCH=	yes
 PORTDOCS=	README.md
 
 OPTIONS_DEFINE=	DOCS
+
+.include <bsd.port.options.mk>
+
+.if ${OSVERSION} < 1101516 || (${OSVERSION} >= 1200000 && ${OSVERSION} < 1200065)
+IGNORE=         requires dwatch available in recent FreeBSD 11 or 12
+.endif
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/gwatch ${STAGEDIR}${PREFIX}/sbin

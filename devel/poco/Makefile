@@ -1,5 +1,5 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/poco/Makefile 455521 2017-12-04 15:35:36Z swills $
+# $FreeBSD: head/devel/poco/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	poco
 PORTVERSION=	1.8.0.1
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 
 CONFLICTS=	poco-ssl-[0-9]*
 
-USES=		cmake localbase pkgconfig
+USES=		cmake compiler:c++11-lang localbase pkgconfig
 CMAKE_ARGS=	-DPOCO_UNBUNDLED:BOOL=ON
 USE_LDCONFIG=	yes
 

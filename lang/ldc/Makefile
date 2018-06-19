@@ -1,9 +1,7 @@
-# Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/ldc/Makefile 465145 2018-03-21 03:45:55Z bdrewery $
+# $FreeBSD: head/lang/ldc/Makefile 471452 2018-06-03 06:31:09Z acm $
 
 PORTNAME=	ldc
-PORTVERSION=	1.7.0
-PORTREVISION=	2
+PORTVERSION=	1.9.0
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/ldc-developers/ldc/releases/download/v${PORTVERSION}/:source \
 		https://github.com/ldc-developers/ldc/releases/download/v${BOOTVER}/:bootstrap

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/ambit/Makefile 454967 2017-11-27 15:56:06Z antoine $
+# $FreeBSD: head/math/ambit/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	ambit
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		libsz.so:science/szip
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
+USE_GCC=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	jturney
 

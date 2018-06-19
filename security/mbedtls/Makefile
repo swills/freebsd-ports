@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/mbedtls/Makefile 468134 2018-04-23 19:26:32Z tijl $
+# $FreeBSD: head/security/mbedtls/Makefile 471909 2018-06-07 12:16:47Z tijl $
 
 PORTNAME=	mbedtls
-PORTVERSION=	2.8.0
+PORTVERSION=	2.9.0
 DISTVERSIONPREFIX=${PORTNAME}-
 CATEGORIES=	security devel
 
@@ -31,7 +31,8 @@ post-patch:
 	@${REINPLACE_CMD} 's/-fpic//' ${WRKSRC}/library/Makefile
 
 post-install:
-	${FIND} ${STAGEDIR}${PREFIX}/bin ${STAGEDIR}${PREFIX}/lib -type f | \
-		${XARGS} ${STRIP_CMD}
+	${FIND} ${STAGEDIR}${PREFIX}/bin -type f -not -name \
+		mbedtls_udp_proxy_wrapper.sh -exec ${STRIP_CMD} {} +
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/*.so
 
 .include <bsd.port.mk>

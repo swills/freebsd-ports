@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/deskutils/multisync/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/deskutils/multisync/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME?=	multisync
 PORTVERSION=	0.82
@@ -16,7 +16,6 @@ USE_GNOME=	gnomeprefix libgnomeui
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
-MAKE_JOBS_UNSAFE=	yes
 INSTALL_TARGET=	install-strip
 
 post-patch:

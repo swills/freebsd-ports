@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-ExtUtils-Command/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-ExtUtils-Command/Makefile 471600 2018-06-04 18:03:42Z sunpoet $
 
 PORTNAME=	ExtUtils-Command
 PORTVERSION=	1.20
@@ -12,6 +12,7 @@ COMMENT=	Utilities to replace common UNIX commands
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFLICTS=	p5-ExtUtils-MakeMaker-[7-9].[1-9]*
 

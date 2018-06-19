@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/sidplay2/Makefile 433025 2017-02-01 12:42:16Z jbeich $
+# $FreeBSD: head/audio/sidplay2/Makefile 472626 2018-06-17 18:52:54Z tobik $
 
 PORTNAME=	sidplay2
 PORTVERSION=	2.0.9
@@ -11,10 +11,14 @@ DISTNAME=	sidplay-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Commodore SID music player using libsidplay2
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libsidplay2.so:audio/libsidplay2
 
 GNU_CONFIGURE=	yes
 USES=		pkgconfig
+USE_CXXSTD=	c++98
 
 PLIST_FILES=	bin/sidplay2 man/man1/sidplay2.1.gz
 

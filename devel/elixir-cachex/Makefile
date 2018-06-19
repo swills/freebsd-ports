@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-cachex/Makefile 469330 2018-05-07 19:50:20Z olgeni $
+# $FreeBSD: head/devel/elixir-cachex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	cachex
 PORTVERSION=	3.0.2
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Caching library for Elixir
 
 LICENSE=	MIT

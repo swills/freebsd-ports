@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/fastdb/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/databases/fastdb/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	fastdb
 PORTVERSION=	3.75
@@ -12,9 +12,7 @@ COMMENT=	Main Memory Relational Database Management System
 
 LICENSE=	MIT
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
-
-OPTIONS_DEFINE=	DOCS
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-std=gnu++03"
 
 USES=		gmake dos2unix
 USE_GCC=	any
@@ -23,6 +21,10 @@ MAKEFILE=	makefile
 USE_LDCONFIG=	yes
 DOS2UNIX_FILES=	${MAKEFILE}
 CXXFLAGS+=	-D_WANT_SEMUN
+
+WRKSRC=		${WRKDIR}/${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 PORTDOCS=	FastDB.htm
 

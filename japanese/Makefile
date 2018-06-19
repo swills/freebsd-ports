@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 466866 2018-04-09 16:36:33Z tcberner $
+# $FreeBSD: head/japanese/Makefile 471892 2018-06-07 00:34:18Z rene $
 #
 
     COMMENT = Japanese support
@@ -293,7 +293,6 @@
     SUBDIR += wordpress
     SUBDIR += wwasw-fpw
     SUBDIR += xdtp
-    SUBDIR += xgate
     SUBDIR += xpdf
     SUBDIR += xshodou
     SUBDIR += xtr

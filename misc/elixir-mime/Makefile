@@ -1,12 +1,12 @@
-# $FreeBSD: head/misc/elixir-mime/Makefile 457210 2017-12-25 08:52:24Z olgeni $
+# $FreeBSD: head/misc/elixir-mime/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	mime
-PORTVERSION=	1.2.0
+PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	MIME type module for Elixir
 
 LICENSE=	APACHE20

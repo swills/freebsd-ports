@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-common_lib/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/erlang-common_lib/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	common_lib
 PORTVERSION=	3.3.4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Library of commonly used Erlang functions
 
 BUILD_DEPENDS=	erlc:lang/erlang \

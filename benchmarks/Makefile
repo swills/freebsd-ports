@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 466231 2018-04-02 15:04:50Z krion $
+# $FreeBSD: head/benchmarks/Makefile 472007 2018-06-08 14:51:46Z philip $
 #
 
     COMMENT = Benchmarking tools
@@ -44,7 +44,6 @@
     SUBDIR += netio
     SUBDIR += netperf
     SUBDIR += netperfmeter
-    SUBDIR += netpipe
     SUBDIR += nosqlbench
     SUBDIR += nqueens
     SUBDIR += nttcp
@@ -56,6 +55,7 @@
     SUBDIR += pathload
     SUBDIR += pathrate
     SUBDIR += pear-Benchmark
+    SUBDIR += perftest
     SUBDIR += phoronix-test-suite
     SUBDIR += pipebench
     SUBDIR += polygraph

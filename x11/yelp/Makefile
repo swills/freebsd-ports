@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11/yelp/Makefile 466598 2018-04-05 20:13:48Z tobik $
+# $FreeBSD: head/x11/yelp/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	yelp
 PORTVERSION=	3.22.0
@@ -24,8 +24,8 @@ RUN_DEPENDS=	yelp-xsl>=0:textproc/yelp-xsl
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake gnome libtool pathfix \
-		pkgconfig sqlite tar:xz
+USES=		compiler:c11 desktop-file-utils gettext gmake gnome \
+		libtool pathfix pkgconfig sqlite tar:xz
 USE_XORG=	x11 ice
 USE_GNOME=	cairo gtk30 intlhack libxml2 libxslt
 GNU_CONFIGURE=	yes

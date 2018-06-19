@@ -1,5 +1,5 @@
 # Created by: Michael Haro <mharo@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Pari/Makefile 457373 2017-12-27 15:23:24Z emaste $
+# $FreeBSD: head/math/p5-Math-Pari/Makefile 472176 2018-06-11 09:04:30Z amdmi3 $
 
 PORTNAME=	Math-Pari
 PORTVERSION=	2.01080900
@@ -13,6 +13,9 @@ DISTFILES=	${DISTNAME}.zip \
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PARI - numerical/scientific/number-theoretic calculations
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 

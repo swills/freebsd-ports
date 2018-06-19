@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/horde-trean/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/horde-trean/Makefile 472776 2018-06-19 09:34:37Z amdmi3 $
 
 PORTNAME=	trean
 PORTVERSION=	1.1.9
@@ -11,7 +11,7 @@ COMMENT=	Horde Bookmark Manager
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	horde cpe php
+USES=		horde cpe php
 USE_PHP=	gettext json
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

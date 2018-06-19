@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/uatraits/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/uatraits/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	uatraits
 PORTVERSION=	20130430
@@ -9,6 +9,8 @@ MASTER_SITES=	http://people.freebsd.org/~demon/
 
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	User-Agent detection library
+
+BROKEN_powerpc64=	fails to link: checking linkage with boost::test... no
 
 LIB_DEPENDS=	${PY_BOOST} \
 		libpcre.so:devel/pcre \

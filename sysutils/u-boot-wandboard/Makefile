@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-wandboard/Makefile 435807 2017-03-09 22:39:52Z ian $
+# $FreeBSD: head/sysutils/u-boot-wandboard/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	imp@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		wandboard

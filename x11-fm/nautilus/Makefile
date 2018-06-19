@@ -1,5 +1,5 @@
 # Created by: ade, archie
-# $FreeBSD: head/x11-fm/nautilus/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fm/nautilus/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	nautilus
 PORTVERSION=	3.18.5
@@ -18,8 +18,8 @@ RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake gnome libtool pathfix \
-		pkgconfig tar:xz
+USES=		compiler:c11 desktop-file-utils gettext gmake gnome \
+		libtool pathfix pkgconfig tar:xz
 USE_GNOME=	intlhack gnomedesktop3 libxml2 gvfs introspection:build
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
