@@ -2,11 +2,11 @@
 # $FreeBSD: head/devel/rubygem-rugged/Makefile 472117 2018-06-10 08:08:26Z antoine $
 
 PORTNAME=	rugged
-PORTVERSION=	0.27.1
+PORTVERSION=	0.27.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Rugged is a Ruby binding to the libgit2 linkable library
 
 LICENSE=	MIT
