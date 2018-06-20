@@ -72,8 +72,8 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-gpgme>=2.0.13:security/rubygem-gpgme \
 	rubygem-gitlab_omniauth-ldap>=2.0.4:net/rubygem-gitlab_omniauth-ldap \
 	rubygem-net-ldap>=0.16.0:net/rubygem-net-ldap \
-	rubygem-gollum-lib-gitlab>=4.2.0:www/rubygem-gollum-lib-gitlab \
-	rubygem-gollum-rugged_adapter>=0.4.4:www/rubygem-gollum-rugged_adapter \
+	rubygem-gitlab-gollum-lib>=4.2.0:www/rubygem-gitlab-gollum-lib \
+	rubygem-gollum-gitlab-rugged_adapter>=0.4.4:www/rubygem-gitlab-gollum-rugged_adapter \
 	rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 	rubygem-grape>=1.0:devel/rubygem-grape \
 	rubygem-grape-entity060>=0.6.0:devel/rubygem-grape-entity060 \
