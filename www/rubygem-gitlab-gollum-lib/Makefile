@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-gemojione32>=3.2:graphics/rubygem-gemojione32 \
-		rubygem-github-markup16>=1.6:textproc/rubygem-github-markup16 \
+		rubygem-gitlab-markup>=1.6:textproc/rubygem-gitlab-markup \
 		rubygem-gollum-grit_adapter10>=1.0:www/rubygem-gollum-grit_adapter10 \
 		rubygem-nokogiri>=1.6.1:textproc/rubygem-nokogiri \
 		rubygem-rouge>=3.1:textproc/rubygem-rouge \
