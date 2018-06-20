@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-mkdocs/Makefile 466628 2018-04-06 08:21:25Z yuri $
+# $FreeBSD: head/textproc/py-mkdocs/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mkdocs
 DISTVERSION=	0.17.2-36
@@ -12,13 +12,13 @@ COMMENT=	Project documentation with Markdown
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=3.3:devel/py-click@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.7.1:devel/py-Jinja2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}livereload>=2.5.1:www/py-livereload@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}markdown>=2.3.1:textproc/py-markdown@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tornado>=5.0:www/py-tornado@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=3.10:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=3.3:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.7.1:devel/py-Jinja2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}livereload>=2.5.1:www/py-livereload@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markdown>=2.3.1:textproc/py-markdown@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tornado>=5.0:www/py-tornado@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.10:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

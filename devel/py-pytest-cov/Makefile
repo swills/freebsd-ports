@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pytest-cov/Makefile 464818 2018-03-17 13:52:04Z dbaio $
+# $FreeBSD: head/devel/py-pytest-cov/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytest-cov
 PORTVERSION=	2.5.1
@@ -12,8 +12,8 @@ COMMENT=	Pytest plugin for measuring coverage
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=3.7.1:devel/py-coverage@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest>=2.6.0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=3.7.1:devel/py-coverage@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=2.6.0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-z3c.autoinclude/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-z3c.autoinclude/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	z3c.autoinclude
 PORTVERSION=	0.3.6
@@ -12,11 +12,11 @@ COMMENT=	Automatically include ZCML
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.dottedname>=0:devel/py-zope.dottedname@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.configuration>=0:devel/py-zope.configuration@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zc.buildout>=0:devel/py-zc.buildout@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.dottedname>=0:devel/py-zope.dottedname@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.configuration>=0:devel/py-zope.configuration@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zc.buildout>=0:devel/py-zc.buildout@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

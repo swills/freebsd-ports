@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/py-theano/Makefile 465391 2018-03-23 17:35:00Z yuri $
+# $FreeBSD: head/math/py-theano/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	theano
 DISTVERSION=	1.0.1
@@ -15,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.8.0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.8.0:science/py-scipy@${PY_FLAVOR}
 
 USES=		compiler:openmp python
 USE_PYTHON=	concurrent distutils autoplist

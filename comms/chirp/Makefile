@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/chirp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/comms/chirp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	chirp
 PORTVERSION=	0.4.1.2017.02.22
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${CHIRP_DEPENDS}
 RUN_DEPENDS=	${CHIRP_DEPENDS}
-CHIRP_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libxml2>0:textproc/py-libxml2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}serial>0:comms/py-serial@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}gtk2>0:x11-toolkits/py-gtk2@${FLAVOR}
+CHIRP_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libxml2>0:textproc/py-libxml2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}serial>0:comms/py-serial@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gtk2>0:x11-toolkits/py-gtk2@${PY_FLAVOR}
 
 USES=		desktop-file-utils gettext python:2.7
 USE_PYTHON=	distutils autoplist

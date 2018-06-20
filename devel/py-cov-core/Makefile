@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-cov-core/Makefile 464627 2018-03-15 19:54:36Z bdrewery $
+# $FreeBSD: head/devel/py-cov-core/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cov-core
 PORTVERSION=	1.15.0
@@ -14,7 +14,7 @@ COMMENT=	Plugin core for use by pytest-cov, nose-cov and nose2-cov
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=3.6:devel/py-coverage@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=3.6:devel/py-coverage@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

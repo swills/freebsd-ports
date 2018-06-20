@@ -1,5 +1,5 @@
 # Created by: Marcus Alves Grando <mnag@FreeBSD.org>
-# $FreeBSD: head/mail/py-pyspf/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/mail/py-pyspf/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyspf
 PORTVERSION=	2.0.12
@@ -14,8 +14,8 @@ COMMENT=	SPF (Sender Policy Framework) implemented in Python
 
 LICENSE=	PSFL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}authres>=0:mail/py-authres@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}authres>=0:mail/py-authres@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
@@ -28,9 +28,9 @@ SHEBANG_FILES=	spf.py
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} >= 3000
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}py3dns>=0:dns/py-py3dns@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}py3dns>=0:dns/py-py3dns@${PY_FLAVOR}
 .else
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dns>=0:dns/py-dns@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dns>=0:dns/py-dns@${PY_FLAVOR}
 .endif
 
 # Make the tests run as a module

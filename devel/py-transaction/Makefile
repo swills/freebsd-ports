@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-transaction/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-transaction/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	transaction
 PORTVERSION=	1.6.0
@@ -12,7 +12,7 @@ COMMENT=	Transaction management for Python
 
 LICENSE=	ZPL21
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=3.5.2:devel/py-zope.interface@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=3.5.2:devel/py-zope.interface@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

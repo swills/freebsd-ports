@@ -1,5 +1,5 @@
 # Created by: Andrei Antoukh <niwi@niwi.be>
-# $FreeBSD: head/databases/py-couchdb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-couchdb/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	CouchDB
 PORTVERSION=	1.1
@@ -13,7 +13,7 @@ COMMENT=	Simple Library to Allow Python Applications to Use CouchDB
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}simplejson>=0:devel/py-simplejson@${FLAVOR}
+RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}simplejson>=0:devel/py-simplejson@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent pythonprefix

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-compress/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-flask-compress/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-Compress
 PORTVERSION=	1.4.0
@@ -12,8 +12,8 @@ COMMENT=	Extension for Flask that compresses responses with gzip
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.11:www/py-flask@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.11:www/py-flask@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

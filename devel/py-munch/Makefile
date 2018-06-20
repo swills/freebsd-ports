@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-munch/Makefile 471888 2018-06-06 23:09:07Z swills $
+# $FreeBSD: head/devel/py-munch/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	munch
 PORTVERSION=	2.3.2
@@ -11,7 +11,7 @@ COMMENT=	Python dict that provides attribute-style access (a la JavaScript)
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

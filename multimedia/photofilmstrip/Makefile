@@ -1,5 +1,5 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/photofilmstrip/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/photofilmstrip/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	photofilmstrip
 PORTVERSION=	3.0.2
@@ -14,7 +14,7 @@ COMMENT=	Creates movies out of your pictures
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 RUN_DEPENDS=	mencoder:multimedia/mencoder \
 		mplayer:multimedia/mplayer
 

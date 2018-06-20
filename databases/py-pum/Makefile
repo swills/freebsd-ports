@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-pum/Makefile 468338 2018-04-26 09:32:55Z krion $
+# $FreeBSD: head/databases/py-pum/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pum
 DISTVERSION=	0.7.1
@@ -11,8 +11,8 @@ COMMENT=	Postgres upgrade manager
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.7.3:databases/py-psycopg2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.7.3:databases/py-psycopg2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python:3.4+
 USE_PYTHON=	distutils concurrent autoplist

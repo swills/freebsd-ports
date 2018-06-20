@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py-fabric/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-fabric/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fabric
 PORTVERSION=	1.13.2
@@ -15,10 +15,10 @@ COMMENT=	Simple, Pythonic remote execution and deployment
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10:security/py-paramiko@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}fudge>0:devel/py-fudge@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>=0.6:devel/py-Jinja2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10:security/py-paramiko@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}fudge>0:devel/py-fudge@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>=0.6:devel/py-Jinja2@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

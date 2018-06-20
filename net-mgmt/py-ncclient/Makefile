@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-ncclient/Makefile 466527 2018-04-05 03:44:55Z yuri $
+# $FreeBSD: head/net-mgmt/py-ncclient/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ncclient
 DISTVERSION=	0.5.3
@@ -12,9 +12,9 @@ COMMENT=	Python library for NETCONF clients
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.3.0:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}paramiko>=1.15.0:security/py-paramiko@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.3.0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}paramiko>=1.15.0:security/py-paramiko@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/databases/py-queries/Makefile 463425 2018-03-02 18:22:09Z gblach $
+# $FreeBSD: head/databases/py-queries/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	queries
 PORTVERSION=	2.0.0
@@ -13,7 +13,7 @@ COMMENT=	Simplified PostgreSQL client built upon Psycopg2
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.5.1:databases/py-psycopg2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.5.1:databases/py-psycopg2@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

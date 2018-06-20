@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/py-gdspy/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/py-gdspy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gdspy
 PORTVERSION=	1.1.2
@@ -12,7 +12,7 @@ COMMENT=	Python module for creating GDSII stream files
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

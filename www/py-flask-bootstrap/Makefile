@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-bootstrap/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-flask-bootstrap/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-Bootstrap
 PORTVERSION=	3.3.2.1
@@ -12,7 +12,7 @@ COMMENT=	Flask extension that adds Bootstrap to your projects
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10.1:www/py-flask@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10.1:www/py-flask@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

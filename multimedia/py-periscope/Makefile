@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/py-periscope/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-periscope/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	periscope
 PORTVERSION=	0.2.4
@@ -17,7 +17,7 @@ COMMENT=	Subtitles searching module
 
 LICENSE=	LGPL3
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/BeautifulSoup.py:www/py-beautifulsoup32@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/BeautifulSoup.py:www/py-beautifulsoup32@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PYTHON=	distutils autoplist

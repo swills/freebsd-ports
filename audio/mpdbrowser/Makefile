@@ -1,5 +1,5 @@
 # Created by: Henrik Friedrichsen <hrkfdn@gmail.com>
-# $FreeBSD: head/audio/mpdbrowser/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/audio/mpdbrowser/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mpdbrowser
 PORTVERSION=	0.9.20
@@ -14,7 +14,7 @@ COMMENT=	GTK+ client for the Music Player Daemon (MPD)
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpd>=0.2.0:audio/py-mpd@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpd>=0.2.0:audio/py-mpd@${PY_FLAVOR}
 
 USES=		gettext iconv python:2.7 tar:tgz
 USE_GNOME=	intltool pygtk2

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/py-tld/Makefile 466778 2018-04-08 08:43:02Z antoine $
+# $FreeBSD: head/dns/py-tld/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tld
 PORTVERSION=	0.7.10
@@ -12,7 +12,7 @@ COMMENT=	Extract the top level domain (TLD) from the URL given
 LICENSE=	MPL11 GPLv2 LGPL21
 LICENSE_COMB=	multi
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python shebangfix

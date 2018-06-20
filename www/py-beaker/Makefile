@@ -1,5 +1,5 @@
 # Created by: Dryice Liu <dryice@FreeBSD.org>
-# $FreeBSD: head/www/py-beaker/Makefile 471789 2018-06-05 18:56:35Z sunpoet $
+# $FreeBSD: head/www/py-beaker/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	beaker
 PORTVERSION=	1.10.0
@@ -20,7 +20,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} <= 3200
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}funcsigs>=1.0.2:devel/py-funcsigs@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}funcsigs>=1.0.2:devel/py-funcsigs@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-pep8-naming/Makefile 472632 2018-06-17 20:33:04Z amdmi3 $
+# $FreeBSD: head/devel/py-pep8-naming/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pep8-naming
 PORTVERSION=	0.7.0
@@ -13,7 +13,7 @@ COMMENT=	Check PEP-8 naming conventions, plugin for flake8
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8-polyfill>=0:devel/py-flake8-polyfill@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8-polyfill>=0:devel/py-flake8-polyfill@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

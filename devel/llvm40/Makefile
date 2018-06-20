@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm40/Makefile 467737 2018-04-18 21:06:33Z brooks $
+# $FreeBSD: head/devel/llvm40/Makefile 472853 2018-06-20 08:37:16Z amdmi3 $
 
 PORTNAME=	llvm
 DISTVERSION=	4.0.1
@@ -449,7 +449,7 @@ post-install-LIT-on:
 	    ${STAGEDIR}${PREFIX}/bin/FileCheck${LLVM_SUFFIX}
 
 TEST_CMD=	'(cd ${WRKSRC}/test; ${SETENV} ${MAKE_ENV} LD_LIBRARY_PATH=${WRKSRC}/Release/lib ${MAKE_CMD} check-local-lit)'
-regression-test: ${BUILD_COOKIE}
+do-test:
 	if [ `${ID} -u` = 0 ]; then \
 		${CHOWN} -R nobody ${WRKSRC}/test; \
 		su -m nobody -c ${TEST_CMD}; \

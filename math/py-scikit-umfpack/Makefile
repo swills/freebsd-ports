@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-scikit-umfpack/Makefile 470515 2018-05-21 07:47:10Z yuri $
+# $FreeBSD: head/math/py-scikit-umfpack/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	scikit-umfpack
 DISTVERSION=	0.3.1
@@ -13,13 +13,13 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
 		swig3.0:devel/swig30
 LIB_DEPENDS=	libblas.so:math/blas \
 		libcblas.so:math/cblas \
 		libumfpack.so:math/suitesparse
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils cython autoplist

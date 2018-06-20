@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/py-sleekxmpp/Makefile 461862 2018-02-15 08:12:08Z yuri $
+# $FreeBSD: head/net-im/py-sleekxmpp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sleekxmpp
 DISTVERSION=	1.3.3
@@ -12,7 +12,7 @@ COMMENT=	XMPP Library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyasn1-modules>=0:devel/py-pyasn1-modules@${PY_FLAVOR}
 

@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/security/py-requests-kerberos/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/security/py-requests-kerberos/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	requests-kerberos
 PORTVERSION=	0.11.0
@@ -14,8 +14,8 @@ COMMENT=	Kerberos authentication handler for python-requests
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>1.1.0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}kerberos>1.1.1:security/py-kerberos@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>1.1.0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}kerberos>1.1.1:security/py-kerberos@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

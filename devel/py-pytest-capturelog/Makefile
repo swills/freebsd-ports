@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-capturelog/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pytest-capturelog/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytest-capturelog
 PORTVERSION=	0.7
@@ -12,7 +12,7 @@ COMMENT=	Py.test plugin to capture log messages
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}py>=1.1.1:devel/py-py@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}py>=1.1.1:devel/py-py@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

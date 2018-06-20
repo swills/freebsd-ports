@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/py-oauth2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-oauth2/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	oauth2
 DISTVERSION=	1.9.0.post1
@@ -12,10 +12,10 @@ COMMENT=	Python library for OAuth version 1.0
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2@${PY_FLAVOR}
 TEST_DEPENDS:=	${RUN_DEPENDS} \
-		${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 
 OPTIONS_DEFINE=		TESTS
 TESTS_DESC=		Install test suite requirements

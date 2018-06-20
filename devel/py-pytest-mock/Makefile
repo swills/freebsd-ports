@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pytest-mock/Makefile 463714 2018-03-06 11:56:44Z olgeni $
+# $FreeBSD: head/devel/py-pytest-mock/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytest-mock
 PORTVERSION=	1.7.1
@@ -12,8 +12,8 @@ COMMENT=	Thin wrapper around the mock package for easier use with py.test
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES+=		python

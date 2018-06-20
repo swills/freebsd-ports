@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-selectors34/Makefile 459516 2018-01-20 12:38:15Z sunpoet $
+# $FreeBSD: head/devel/py-selectors34/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	selectors34
 PORTVERSION=	1.2
@@ -11,7 +11,7 @@ COMMENT=	Backport of the selectors module from Python 3.4
 
 LICENSE=	PSFL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:-3.3

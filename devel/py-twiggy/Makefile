@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-twiggy/Makefile 469782 2018-05-13 08:34:08Z amdmi3 $
+# $FreeBSD: head/devel/py-twiggy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	twiggy
 PORTVERSION=	0.4.7
@@ -14,7 +14,7 @@ COMMENT=	Pythonic logger
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

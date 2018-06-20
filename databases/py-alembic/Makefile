@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-alembic/Makefile 465348 2018-03-23 11:52:48Z lwhsu $
+# $FreeBSD: head/databases/py-alembic/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	alembic
 PORTVERSION=	0.9.9
@@ -11,10 +11,10 @@ COMMENT=	Database migration tool for SQLAlchemy
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mako>=0:textproc/py-mako@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-editor>=0:devel/py-python-editor@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0:databases/py-sqlalchemy10@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mako>=0:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-editor>=0:devel/py-python-editor@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0:databases/py-sqlalchemy10@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

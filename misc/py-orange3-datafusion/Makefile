@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-orange3-datafusion/Makefile 472364 2018-06-14 07:34:46Z yuri $
+# $FreeBSD: head/misc/py-orange3-datafusion/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	orange3-datafusion
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ COMMENT=	Data fusion add-on for Orange3
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	orange3>0:misc/orange3 \
-		${PYTHON_PKGNAMEPREFIX}scikit-fusion>0:misc/py-scikit-fusion@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scikit-fusion>0:misc/py-scikit-fusion@${PY_FLAVOR}
 
 USES=		python:3.4+
 USE_GITHUB=	yes

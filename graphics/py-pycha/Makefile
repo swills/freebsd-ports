@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/py-pycha/Makefile 462208 2018-02-18 09:02:54Z amdmi3 $
+# $FreeBSD: head/graphics/py-pycha/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pycha
 PORTVERSION=	0.7.0
@@ -20,6 +20,6 @@ NO_ARCH=	yes
 OPTIONS_DEFINE=		CAIRO
 OPTIONS_DEFAULT=	CAIRO
 
-CAIRO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${FLAVOR}
+CAIRO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR}
 
 .include <bsd.port.mk>

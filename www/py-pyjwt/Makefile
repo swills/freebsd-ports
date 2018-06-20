@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-pyjwt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-pyjwt/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyjwt
 PORTVERSION=	1.4.0
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 # Some tests are skipped without pycrypto, but its not
 # referenced as a requirement anymore.
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist
@@ -25,7 +25,7 @@ USE_PYTHON=	distutils concurrent autoplist
 OPTIONS_DEFINE=	RSASSA
 
 RSASSA_DESC=		RSASSA-PKCS1 v1.5 signature support
-RSASSA_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR}
+RSASSA_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

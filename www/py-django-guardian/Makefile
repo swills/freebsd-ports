@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-guardian/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/www/py-django-guardian/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-guardian
 PORTVERSION=	1.4.9
@@ -12,8 +12,8 @@ COMMENT=	Implementation of per object permissions for Django
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

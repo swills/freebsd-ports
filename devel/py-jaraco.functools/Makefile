@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-jaraco.functools/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-jaraco.functools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	jaraco.functools
 PORTVERSION=	1.8.1
@@ -12,7 +12,7 @@ COMMENT=	Additional functools for Python
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
@@ -20,7 +20,7 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_VER} == "2.7"
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}functools32>0:devel/py-functools32@${FLAVOR}
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}functools32>0:devel/py-functools32@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

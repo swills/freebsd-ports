@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/converters/py-zfec/Makefile 461460 2018-02-11 07:15:05Z antoine $
+# $FreeBSD: head/converters/py-zfec/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zfec
 DISTVERSION=	1.5.2
@@ -13,8 +13,8 @@ COMMENT=	Fast erasure codec for Python
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING.GPL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argparse>=0:devel/py-argparse@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyutil>=0:devel/py-pyutil@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argparse>=0:devel/py-argparse@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyutil>=0:devel/py-pyutil@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist concurrent

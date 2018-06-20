@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/devel/py-tinyarray/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-tinyarray/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tinyarray
 PORTVERSION=	1.2.0
@@ -12,7 +12,7 @@ COMMENT=	Arrays of numbers for Python, optimized for small sizes
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

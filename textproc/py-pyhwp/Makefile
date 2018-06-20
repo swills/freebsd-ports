@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pyhwp/Makefile 460801 2018-02-03 09:52:35Z antoine $
+# $FreeBSD: head/textproc/py-pyhwp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyhwp
 PORTVERSION=	0.1b8
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	HWP Document Format v5 parser & processor
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}olefile>=0.40:devel/py-olefile@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}hypua2jamo>0:textproc/py-hypua2jamo@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}docopt>0:devel/py-docopt@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}olefile>=0.40:devel/py-olefile@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}hypua2jamo>0:textproc/py-hypua2jamo@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}docopt>0:devel/py-docopt@${PY_FLAVOR}
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		python:2.7 zip

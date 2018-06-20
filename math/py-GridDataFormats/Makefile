@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-GridDataFormats/Makefile 469805 2018-05-13 16:43:37Z yuri $
+# $FreeBSD: head/math/py-GridDataFormats/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	GridDataFormats
 DISTVERSION=	0.4.0
@@ -12,7 +12,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

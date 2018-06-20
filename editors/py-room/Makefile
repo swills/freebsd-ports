@@ -1,5 +1,5 @@
 # Created by: Alexander Best
-# $FreeBSD: head/editors/py-room/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/editors/py-room/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	room
 PORTVERSION=	0.4.1
@@ -12,7 +12,7 @@ DISTNAME=	py${PORTNAME}-${PORTVERSION}
 MAINTAINER=	arundel@FreeBSD.org
 COMMENT=	PyRoom is a clone of WriteRoom and features "distraction-free writing"
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xdg/__init__.py:devel/py-xdg@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xdg/__init__.py:devel/py-xdg@${PY_FLAVOR}
 
 USES=		gettext python:2.7
 USE_PYTHON=	distutils

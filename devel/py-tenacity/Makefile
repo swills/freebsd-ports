@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-tenacity/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-tenacity/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tenacity
 PORTVERSION=	3.4.0
@@ -12,7 +12,7 @@ COMMENT=	Task retrying for python library
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=  ${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${FLAVOR}
+BUILD_DEPENDS=  ${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

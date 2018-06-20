@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-Pmw/Makefile 466327 2018-04-03 09:52:11Z sunpoet $
+# $FreeBSD: head/x11-toolkits/py-Pmw/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Pmw
 PORTVERSION=	2.0.1
@@ -11,7 +11,7 @@ MAINTAINER=	fmysh@iijmio-mail.jp
 COMMENT=	High-level compound graphics widgets for Python
 
 LIB_DEPENDS=	libBLT25.so:x11-toolkits/blt
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 USES=		dos2unix python shebangfix
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil/Makefile 467423 2018-04-15 20:03:16Z sunpoet $
+# $FreeBSD: head/sysutils/py-psutil/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	psutil
 PORTVERSION=	5.4.5
@@ -27,7 +27,7 @@ post-install:
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3000
-TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR}
+TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

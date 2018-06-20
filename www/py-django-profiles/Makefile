@@ -1,5 +1,5 @@
 # Created by: Josh Paetzel <jpaetzel@FreeBSD.org>
-# $FreeBSD: head/www/py-django-profiles/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-profiles/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-profiles
 PORTVERSION=	0.2
@@ -15,7 +15,7 @@ COMMENT=	User-profile application for Django
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${PY_FLAVOR}
 
 WRKSRC=	${WRKDIR}/${PORTNAME}
 USES=		python

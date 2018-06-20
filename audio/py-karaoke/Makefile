@@ -1,5 +1,5 @@
 # Created by: Elias Mandouvalos <ocean@mail.gr>
-# $FreeBSD: head/audio/py-karaoke/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/py-karaoke/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	karaoke
 PORTVERSION=	0.7.5
@@ -39,7 +39,7 @@ PLIST_FILES=	${BIN_SCRIPTS:S,^,bin/,} \
 OPTIONS_DEFINE=		MUTAGEN
 
 MUTAGEN_DESC=		Mutagen support
-MUTAGEN_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${FLAVOR}
+MUTAGEN_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${PY_FLAVOR}
 
 BIN_SCRIPTS=	cdg2mpg pycdg pykar pykaraoke pykaraoke_mini pympg
 DATA_FONTS=	DejaVuSans.ttf DejaVuSansCondensed.ttf \

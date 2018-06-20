@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/taskcoach/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/deskutils/taskcoach/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	taskcoach
 PORTVERSION=	1.4.2
@@ -13,7 +13,7 @@ COMMENT=	Friendly task manager
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 shebangfix

@@ -1,5 +1,5 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/www/py-paste/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-paste/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Paste
 PORTVERSION=	2.0.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Tools for using a Web Server Gateway Interface stack
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

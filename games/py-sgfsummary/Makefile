@@ -1,5 +1,5 @@
 # Created by: Leland Wang <llwang@infor.org>
-# $FreeBSD: head/games/py-sgfsummary/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/py-sgfsummary/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sgfsummary
 PORTVERSION=	1.0
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SGF Summarizer
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sgflib.py:games/py-sgflib@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sgflib.py:games/py-sgflib@${PY_FLAVOR}
 
 USES=		python shebangfix tar:tgz
 USE_PYTHON=	flavors

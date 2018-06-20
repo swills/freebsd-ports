@@ -1,5 +1,5 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/textproc/py-parso/Makefile 470872 2018-05-25 22:46:37Z ultima $
+# $FreeBSD: head/textproc/py-parso/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	parso
 DISTVERSION=	0.2.1
@@ -13,8 +13,8 @@ COMMENT=	Python Parser
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.7:devel/py-pytest@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-cache>=0:devel/py-pytest-cache@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.7:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-cache>=0:devel/py-pytest-cache@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

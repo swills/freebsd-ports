@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/py-zope.component/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zope.component/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.component
 PORTVERSION=	4.2.2
@@ -14,8 +14,8 @@ COMMENT=	Zope Component Architecture
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.event>=0:devel/py-zope.event@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=4.1.0:devel/py-zope.interface@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.event>=0:devel/py-zope.event@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=4.1.0:devel/py-zope.interface@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

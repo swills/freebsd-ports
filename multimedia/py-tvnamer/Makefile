@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/py-tvnamer/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-tvnamer/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tvnamer
 PORTVERSION=	2.4
@@ -12,8 +12,8 @@ COMMENT=	Automatically names downloaded/recorded TV-episode
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tvdb_api>=1.5:www/py-tvdb_api@${FLAVOR}
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tvdb_api>=1.5:www/py-tvdb_api@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tvdb_api>=1.5:www/py-tvdb_api@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tvdb_api>=1.5:www/py-tvdb_api@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

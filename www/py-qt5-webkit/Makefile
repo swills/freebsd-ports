@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-qt5-webkit/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/www/py-qt5-webkit/Makefile 472892 2018-06-20 17:49:22Z antoine $
 
 PORTNAME=	webkit
 PORTREVISION=	5
@@ -7,8 +7,7 @@ CATEGORIES=	www devel python
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtWebKit module
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sip>=${SIP_VERSION}:devel/py-sip@${FLAVOR}
-RUN_DEPENDS=	${PKGNAMEPREFIX}gui>=${PYQT5_VERSION}:x11-toolkits/py-qt5-gui@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sip>=${SIP_VERSION}:devel/py-sip@${PY_FLAVOR}
 
 CONFIGURE_ARGS=	--enable QtWebKit
 PYQT_DIST=	yes

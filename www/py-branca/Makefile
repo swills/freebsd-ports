@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-branca/Makefile 470863 2018-05-25 20:40:01Z sunpoet $
+# $FreeBSD: head/www/py-branca/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	branca
 PORTVERSION=	0.3.0
@@ -13,7 +13,7 @@ COMMENT=	Generate complex HTML+JS pages with Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=0:devel/py-Jinja2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=0:devel/py-Jinja2@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

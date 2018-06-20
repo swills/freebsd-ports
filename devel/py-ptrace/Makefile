@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-ptrace/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-ptrace/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ptrace
 PORTVERSION=	0.9.3
@@ -14,7 +14,7 @@ COMMENT=	Python binding of ptrace
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}distorm>0:devel/py-distorm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}distorm>0:devel/py-distorm@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

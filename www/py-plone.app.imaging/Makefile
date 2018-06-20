@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.app.imaging/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.app.imaging/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.app.imaging
 PORTVERSION=	1.0.13
@@ -12,9 +12,9 @@ COMMENT=	User-configurable, blob-aware image scaling for Plone
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.scale>0:www/py-plone.scale@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}z3c.caching>0:devel/py-z3c.caching@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}five.globalrequest>0:devel/py-five.globalrequest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.scale>0:www/py-plone.scale@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}z3c.caching>0:devel/py-z3c.caching@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}five.globalrequest>0:devel/py-five.globalrequest@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zip

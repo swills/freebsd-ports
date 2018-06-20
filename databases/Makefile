@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 472819 2018-06-19 20:25:10Z pi $
+# $FreeBSD: head/databases/Makefile 472938 2018-06-20 20:13:07Z pi $
 #
 
     COMMENT = Databases and related software
@@ -473,6 +473,7 @@
     SUBDIR += p5-Protocol-CassandraCQL
     SUBDIR += p5-RRD-Simple
     SUBDIR += p5-Redis
+    SUBDIR += p5-Redis-Fast
     SUBDIR += p5-Redis-hiredis
     SUBDIR += p5-RedisDB
     SUBDIR += p5-RedisDB-Parser
@@ -493,6 +494,7 @@
     SUBDIR += p5-SQL-Statement
     SUBDIR += p5-SQL-Translator
     SUBDIR += p5-SQLite-Work
+    SUBDIR += p5-Scope-Container-DBI
     SUBDIR += p5-Search-InvertedIndex
     SUBDIR += p5-Search-Namazu
     SUBDIR += p5-Search-Xapian10

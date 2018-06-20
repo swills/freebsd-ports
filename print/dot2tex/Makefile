@@ -1,5 +1,5 @@
 # Created by: Romain Tartiere <romain@FreeBSD.org>
-# $FreeBSD: head/print/dot2tex/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/print/dot2tex/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	dot2tex
 PORTVERSION=	2.9.0
@@ -11,7 +11,7 @@ COMMENT=	Graphviz to LaTeX converter
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=1.4.8:devel/py-pyparsing@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=1.4.8:devel/py-pyparsing@${PY_FLAVOR} \
 		dot:graphics/graphviz
 
 NO_ARCH=	yes

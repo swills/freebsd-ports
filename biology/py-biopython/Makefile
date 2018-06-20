@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/biology/py-biopython/Makefile 469835 2018-05-13 22:30:00Z yuri $
+# $FreeBSD: head/biology/py-biopython/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	biopython
 PORTVERSION=	1.71
@@ -24,7 +24,7 @@ OPTIONS_DEFINE=	REPORTLAB
 OPTIONS_DEFAULT=	REPORTLAB
 
 REPORTLAB_DESC=	PDF support in Bio.Graphics module
-REPORTLAB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab>0:print/py-reportlab@${FLAVOR}
+REPORTLAB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab>0:print/py-reportlab@${PY_FLAVOR}
 
 pre-configure: # unbreak for python3: README.rst can't be decoded with the ascii codec: https://github.com/biopython/biopython/issues/1649
 	@truncate -s 0 ${WRKSRC}/README.rst

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-widget-tweaks/Makefile 469560 2018-05-10 15:02:43Z miwi $
+# $FreeBSD: head/www/py-django-widget-tweaks/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-widget-tweaks
 PORTVERSION=	1.4.2
@@ -13,7 +13,7 @@ COMMENT=	Tweak form field rendering in templates, not in python-level form defin
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>1.2:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>1.2:www/py-django111@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

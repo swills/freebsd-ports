@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 472845 2018-06-20 05:26:56Z yuri $
+# $FreeBSD: head/graphics/Makefile 472893 2018-06-20 18:08:30Z yuri $
 #
 
     COMMENT = Graphics tools and libraries

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-agate-dbf/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-agate-dbf/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	agate-dbf
 PORTVERSION=	0.2.0
@@ -11,8 +11,8 @@ COMMENT=	Support reading dbf files for agate
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.0:textproc/py-agate@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dbfread>=2.0.5:textproc/py-dbfread@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.0:textproc/py-agate@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbfread>=2.0.5:textproc/py-dbfread@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Michael Gmelin <grembo@FreeBSD.org>
-# $FreeBSD: head/devel/py-jsonref/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-jsonref/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	jsonref
 PORTVERSION=	0.1
@@ -13,7 +13,7 @@ COMMENT=	Implementation of JSON Reference for Python
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.0:www/py-requests@${PY_FLAVOR}
 
 USES?=		python
 USE_PYTHON=	autoplist distutils

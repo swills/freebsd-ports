@@ -1,5 +1,5 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-plumbum/Makefile 471377 2018-06-02 16:32:37Z dbn $
+# $FreeBSD: head/sysutils/py-plumbum/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plumbum
 PORTVERSION=	1.6.6
@@ -14,7 +14,7 @@ COMMENT=	Shell combinators and more for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

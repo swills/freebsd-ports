@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-logan/Makefile 462913 2018-02-25 05:32:40Z sunpoet $
+# $FreeBSD: head/devel/py-logan/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	logan
 PORTVERSION=	0.7.2
@@ -13,10 +13,10 @@ COMMENT=	Toolkit for running standalone Django applications
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.5:www/py-django111@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.5:www/py-django111@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>=0.8.0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}nose>=1.1.2:devel/py-nose@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.5:www/py-django111@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.5:www/py-django111@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>=0.8.0:devel/py-mock@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>=1.1.2:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

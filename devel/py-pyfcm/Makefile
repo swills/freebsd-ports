@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyfcm/Makefile 463715 2018-03-06 11:58:52Z olgeni $
+# $FreeBSD: head/devel/py-pyfcm/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyfcm
 PORTVERSION=	1.4.5
@@ -12,7 +12,7 @@ COMMENT=	Python client for Firebase Cloud Messaging
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/py-bcdoc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-bcdoc/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bcdoc
 PORTVERSION=	0.12.2
@@ -12,8 +12,8 @@ COMMENT=	Tools to help document botocore-based projects
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0.10:textproc/py-docutils@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.1.0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0.10:textproc/py-docutils@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.1.0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

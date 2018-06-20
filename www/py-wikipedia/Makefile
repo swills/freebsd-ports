@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/www/py-wikipedia/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-wikipedia/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	wikipedia
 PORTVERSION=	1.4.0
@@ -12,8 +12,8 @@ COMMENT=	Wikipedia API for Python
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.3.2:www/py-beautifulsoup@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}requests>=2.7:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.3.2:www/py-beautifulsoup@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}requests>=2.7:www/py-requests@${PY_FLAVOR}
 
 USES=	python
 USE_PYTHON=	distutils autoplist

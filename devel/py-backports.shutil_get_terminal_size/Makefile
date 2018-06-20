@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-backports.shutil_get_terminal_size/Makefile 457784 2018-01-01 16:45:37Z jpaetzel $
+# $FreeBSD: head/devel/py-backports.shutil_get_terminal_size/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	backports.shutil_get_terminal_size
 PORTVERSION=	1.0.0
@@ -12,7 +12,7 @@ COMMENT=	Backport of the get_terminal_size function from Python 3.3's shutil
 
 LICENSE=	PSFL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}backports>0:devel/py-backports@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}backports>0:devel/py-backports@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

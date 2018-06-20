@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-fixtures/Makefile 462900 2018-02-25 05:31:34Z sunpoet $
+# $FreeBSD: head/devel/py-fixtures/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fixtures
 PORTVERSION=	3.0.0
@@ -15,9 +15,9 @@ LICENSE_COMB=	dual
 LICENSE_FILE_APACHE20=	${WRKSRC}/Apache-2.0
 LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/BSD
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.11:devel/py-pbr@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}testtools>=0.9.22:devel/py-testtools@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.11:devel/py-pbr@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}testtools>=0.9.22:devel/py-testtools@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

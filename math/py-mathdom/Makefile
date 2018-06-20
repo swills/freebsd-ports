@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-mathdom/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-mathdom/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mathdom
 PORTVERSION=	0.8
@@ -14,7 +14,7 @@ COMMENT=	Content MathML in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

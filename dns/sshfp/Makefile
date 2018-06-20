@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/dns/sshfp/Makefile 468384 2018-04-26 20:41:53Z ehaupt $
+# $FreeBSD: head/dns/sshfp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sshfp
 PORTVERSION=	1.2.2
@@ -11,10 +11,10 @@ COMMENT=	Generate SSHFP DNS records from knownhosts files or ssh-keyscan
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/dns/__init__.py:dns/py-dnspython@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ipcalc>=0.6:net-mgmt/py-ipcalc@${FLAVOR} \
-		${PYTHON_SITELIBDIR}/ldns.py:dns/py-ldns@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/dns/__init__.py:dns/py-dnspython@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ipcalc>=0.6:net-mgmt/py-ipcalc@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/ldns.py:dns/py-ldns@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python shebangfix
 USE_PYTHON=	flavors concurrent optsuffix

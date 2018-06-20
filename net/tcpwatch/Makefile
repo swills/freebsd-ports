@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/net/tcpwatch/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/tcpwatch/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tcpwatch
 PORTVERSION=	1.3
@@ -10,7 +10,7 @@ MASTER_SITES=	http://hathawaymix.org/Software/TCPWatch/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	TCP monitoring and logging tool with support for HTTP 1.1
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

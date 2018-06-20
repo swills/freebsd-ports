@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/py-coherence/Makefile 472744 2018-06-19 01:55:49Z yuri $
+# $FreeBSD: head/net/py-coherence/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Coherence
 PORTVERSION=	0.6.6.2
@@ -13,10 +13,10 @@ COMMENT=	DLNA/UPnP media server and framework for the digital living
 LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configobj>=4.3:devel/py-configobj@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>8.2:devel/py-twisted@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Louie>0:devel/py-louie@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configobj>=4.3:devel/py-configobj@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>8.2:devel/py-twisted@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Louie>0:devel/py-louie@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	coherence-project

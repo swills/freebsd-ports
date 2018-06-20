@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/py-pexpect/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-pexpect/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pexpect
 PORTVERSION=	4.2.1
@@ -12,7 +12,7 @@ COMMENT=	Pure Python Expect-like module
 
 LICENSE=	ISCL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ptyprocess>=0:sysutils/py-ptyprocess@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ptyprocess>=0:sysutils/py-ptyprocess@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

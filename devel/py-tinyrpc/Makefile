@@ -1,5 +1,5 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/devel/py-tinyrpc/Makefile 469740 2018-05-12 16:56:31Z dbaio $
+# $FreeBSD: head/devel/py-tinyrpc/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tinyrpc
 PORTVERSION=	0.9.1
@@ -12,8 +12,8 @@ COMMENT=	Modular RPC Libray
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}gevent>0:devel/py-gevent@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gevent>0:devel/py-gevent@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
@@ -28,9 +28,9 @@ HTTP_DESC=	HTTP support
 WSGI_DESC=	WSGI support
 ZEROMQ_DESC=	ZeroMQ support
 
-HTTP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent-websocket>0:www/py-gevent-websocket@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
-WSGI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}werkzeug>0:www/py-werkzeug@${FLAVOR}
-ZEROMQ_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyzmq>0:net/py-pyzmq@${FLAVOR}
+HTTP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent-websocket>0:www/py-gevent-websocket@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR}
+WSGI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}werkzeug>0:www/py-werkzeug@${PY_FLAVOR}
+ZEROMQ_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyzmq>0:net/py-pyzmq@${PY_FLAVOR}
 
 .include <bsd.port.mk>

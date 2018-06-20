@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-archetypes.referencebrowserwidget/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-archetypes.referencebrowserwidget/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	archetypes.referencebrowserwidget
 PORTVERSION=	2.5.7
@@ -12,11 +12,11 @@ COMMENT=	Implementation of referencebrowser widget for Archetypes
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.formlib>=0:devel/py-zope.formlib@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.app.form>=0:www/py-plone.app.form@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.app.jquerytools>=1.1:www/py-plone.app.jquerytools@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.formlib>=0:devel/py-zope.formlib@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.form>=0:www/py-plone.app.form@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.jquerytools>=1.1:www/py-plone.app.jquerytools@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

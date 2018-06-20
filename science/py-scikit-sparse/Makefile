@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/science/py-scikit-sparse/Makefile 468325 2018-04-26 06:41:30Z yuri $
+# $FreeBSD: head/science/py-scikit-sparse/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	scikit-sparse
 DISTVERSION=	0.4.3
@@ -14,7 +14,7 @@ COMMENT=	Sparse matrix package
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	libumfpack.so:math/suitesparse
 

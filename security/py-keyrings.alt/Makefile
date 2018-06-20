@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/security/py-keyrings.alt/Makefile 466152 2018-04-01 13:35:27Z wen $
+# $FreeBSD: head/security/py-keyrings.alt/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	keyrings.alt
 PORTVERSION=	3.0
@@ -13,8 +13,8 @@ COMMENT=	Alternate Python keyring implementations
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python
@@ -26,9 +26,9 @@ GNOME_KEYRING_DESC=	Install GNOME Keyring to support the Gnome backend
 KEYCZAR_DESC=		Install keyczar to support keyring encryption
 PYFS_DESC=		Install pyfilesystem to support the pyfs backend
 
-ENCRYPTED_FILE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=2.5:security/py-pycrypto@${FLAVOR}
+ENCRYPTED_FILE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=2.5:security/py-pycrypto@${PY_FLAVOR}
 GNOME_KEYRING_USE=		GNOME=pygobject3
-KEYCZAR_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}keyczar>=0.71c:security/py-keyczar@${FLAVOR}
-PYFS_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}fs>=0.5:devel/py-fs@${FLAVOR}
+KEYCZAR_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}keyczar>=0.71c:security/py-keyczar@${PY_FLAVOR}
+PYFS_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}fs>=0.5:devel/py-fs@${PY_FLAVOR}
 
 .include <bsd.port.mk>

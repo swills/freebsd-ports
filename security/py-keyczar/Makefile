@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/security/py-keyczar/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/security/py-keyczar/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	keyczar
 PORTVERSION=	0.716
@@ -14,8 +14,8 @@ COMMENT=	Toolkit for safe and simple cryptography
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=2.0:security/py-pycrypto@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=2.0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

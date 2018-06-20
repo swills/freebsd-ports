@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-backports.ssl_match_hostname/Makefile 455585 2017-12-05 15:00:03Z lifanov $
+# $FreeBSD: head/security/py-backports.ssl_match_hostname/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	backports.ssl_match_hostname
 PORTVERSION=	3.5.0.1
@@ -12,7 +12,7 @@ COMMENT=	Backport of the ssl_match_hostname function from Python 3.5
 
 LICENSE=	PSFL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}backports>0:devel/py-backports@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}backports>0:devel/py-backports@${PY_FLAVOR}
 
 USES=		python:-3.4
 USE_PYTHON=	autoplist distutils

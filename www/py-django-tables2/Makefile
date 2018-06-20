@@ -1,5 +1,5 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-django-tables2/Makefile 467407 2018-04-15 19:30:43Z pi $
+# $FreeBSD: head/www/py-django-tables2/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-tables2
 DISTVERSION=	1.21.2
@@ -13,8 +13,8 @@ COMMENT=	Table/data-grid framework for Django
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tablib>=0:textproc/py-tablib@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tablib>=0:textproc/py-tablib@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

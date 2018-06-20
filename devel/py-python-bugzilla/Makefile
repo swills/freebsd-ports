@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-python-bugzilla/Makefile 470521 2018-05-21 08:34:11Z amdmi3 $
+# $FreeBSD: head/devel/py-python-bugzilla/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	python-bugzilla
 PORTVERSION=	2.1.0
@@ -13,7 +13,7 @@ COMMENT=	Bugzilla XMLRPC access module
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

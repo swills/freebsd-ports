@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/py-cloudflare/Makefile 463065 2018-02-26 22:30:44Z sunpoet $
+# $FreeBSD: head/dns/py-cloudflare/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cloudflare
 PORTVERSION=	2.1.0
@@ -12,10 +12,10 @@ COMMENT=	wrapper for the Cloudflare v4 API
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}jsonlines>=0:devel/py-jsonlines@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jsonlines>=0:devel/py-jsonlines@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

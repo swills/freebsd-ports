@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/hypatia_engine/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/hypatia_engine/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	hypatia_engine
 PORTVERSION=	0.3.1
@@ -13,8 +13,8 @@ COMMENT=	Game engine for 2D top-down, tile-based action RPGs
 LICENSE=	MIT
 
 RUN_DEPENDS=	${PYGAME} \
-		${PYTHON_PKGNAMEPREFIX}pyganim>0:graphics/py-pyganim@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyganim>0:graphics/py-pyganim@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PY_ENUM34}
 
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/devel/py-kaptan/Makefile 463524 2018-03-03 19:16:01Z sunpoet $
+# $FreeBSD: head/devel/py-kaptan/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	kaptan
 PORTVERSION=	0.5.9
@@ -13,7 +13,7 @@ COMMENT=	Python config parser for json, yaml
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.12:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.12:devel/py-yaml@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

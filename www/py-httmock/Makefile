@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-httmock/Makefile 472592 2018-06-17 03:25:31Z tobik $
+# $FreeBSD: head/www/py-httmock/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	httmock
 PORTVERSION=	1.2.6
@@ -17,7 +17,7 @@ COMMENT=	Mocking library for requests
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.0.0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.0.0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/textproc/py-openpyxl/Makefile 467880 2018-04-21 11:35:15Z antoine $
+# $FreeBSD: head/textproc/py-openpyxl/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	openpyxl
 PORTVERSION=	2.5.3
@@ -13,8 +13,8 @@ COMMENT=	Python library to read/write Excel 2007 xlsx/xlsm files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jdcal>=0:devel/py-jdcal@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}et_xmlfile>=0:textproc/py-et_xmlfile@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jdcal>=0:devel/py-jdcal@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}et_xmlfile>=0:textproc/py-et_xmlfile@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

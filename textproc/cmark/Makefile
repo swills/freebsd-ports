@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/textproc/cmark/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/cmark/Makefile 472898 2018-06-20 18:51:27Z yuri $
 
 PORTNAME=	cmark
 PORTVERSION=	0.28.3
@@ -10,6 +10,8 @@ COMMENT=	CommonMark parsing and rendering library and program in C
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+CONFLICTS_INSTALL=	py[2-3][0-9]-CommonMark
 
 USES=		cmake:outsource python:3.4+,test
 USE_GITHUB=	yes

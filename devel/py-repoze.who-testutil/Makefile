@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-repoze.who-testutil/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-repoze.who-testutil/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	repoze.who-testutil
 PORTVERSION=	1.0.1
@@ -14,8 +14,8 @@ COMMENT=	Test utilities for repoze.who-powered applications
 
 LICENSE=	BSD4CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}repoze.who>=1.0.15:devel/py-repoze.who@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=1.3.3:www/py-pastedeploy@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}repoze.who>=1.0.15:devel/py-repoze.who@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=1.3.3:www/py-pastedeploy@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7

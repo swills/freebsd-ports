@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/textproc/xsv/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/xsv/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	xsv
 PORTVERSION=	3.1
@@ -13,7 +13,7 @@ COMMENT=	XML Schema Validator
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ltxml>0:textproc/py-ltxml@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ltxml>0:textproc/py-ltxml@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

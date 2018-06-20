@@ -1,5 +1,5 @@
 # Created by: Vladimir Korkodinov <newbieman@perm.raid.ru>
-# $FreeBSD: head/net-p2p/py-transmissionrpc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-p2p/py-transmissionrpc/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	transmissionrpc
 PORTVERSION=	0.11
@@ -14,7 +14,7 @@ COMMENT=	Python module that communicates with Transmission through JSON-RPC
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

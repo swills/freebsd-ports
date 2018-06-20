@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-PyUtilib/Makefile 466942 2018-04-10 08:01:08Z yuri $
+# $FreeBSD: head/devel/py-PyUtilib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PyUtilib
 DISTVERSION=	5.6.3
@@ -11,8 +11,8 @@ COMMENT=	Collection of Python utilities
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

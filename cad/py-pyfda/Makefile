@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/py-pyfda/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/py-pyfda/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyfda
 PORTVERSION=	0.1
@@ -14,10 +14,10 @@ COMMENT=	GUI tool for designing and analysing discrete time filters
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${PY_FLAVOR} \
 		${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 
 USES=		python:3.4+ pyqt:5
 USE_PYTHON=	distutils autoplist

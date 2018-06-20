@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-testpath/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-testpath/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	testpath
 PORTVERSION=	0.3.1
@@ -11,7 +11,7 @@ COMMENT=	Test utilities for Python code working with files and commands
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jupyter
@@ -23,7 +23,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3400
-TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pathlib>=0:devel/py-pathlib@${FLAVOR}
+TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pathlib>=0:devel/py-pathlib@${PY_FLAVOR}
 .endif
 
 post-extract:

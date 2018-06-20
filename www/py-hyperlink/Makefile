@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-hyperlink/Makefile 463129 2018-02-27 13:24:35Z sunpoet $
+# $FreeBSD: head/www/py-hyperlink/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	hyperlink
 PORTVERSION=	18.0.0
@@ -13,7 +13,7 @@ COMMENT=	Featureful, correct URL for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}idna>=2.5:dns/py-idna@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}idna>=2.5:dns/py-idna@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

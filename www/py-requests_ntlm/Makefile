@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-requests_ntlm/Makefile 464054 2018-03-10 09:04:20Z yuri $
+# $FreeBSD: head/www/py-requests_ntlm/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	requests_ntlm
 DISTVERSION=	1.1.0
@@ -12,9 +12,9 @@ COMMENT=	HTTP NTLM authentication using the requests library
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=1.3:security/py-cryptography@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ntlm-auth>=1.0.2:security/py-ntlm-auth@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=1.3:security/py-cryptography@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ntlm-auth>=1.0.2:security/py-ntlm-auth@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

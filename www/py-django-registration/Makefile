@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-registration/Makefile 464118 2018-03-10 23:01:53Z sunpoet $
+# $FreeBSD: head/www/py-django-registration/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-registration
 PORTVERSION=	2.4.1
@@ -13,8 +13,8 @@ COMMENT=	User-registration application for Django
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}confusable_homoglyphs>=0:devel/py-confusable_homoglyphs@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}confusable_homoglyphs>=0:devel/py-confusable_homoglyphs@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

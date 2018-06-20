@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/dns/py-namebench/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/dns/py-namebench/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	namebench
 PORTVERSION=	1.3.1
@@ -15,18 +15,18 @@ COMMENT=	Open Source DNS benchmark utility
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.5.5:devel/py-Jinja2@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}graphy>=1.0:graphics/py-graphy@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}httplib2>=0.6.0:www/py-httplib2@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}simplejson>=2.1.6:devel/py-simplejson@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.5.5:devel/py-Jinja2@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}graphy>=1.0:graphics/py-graphy@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}httplib2>=0.6.0:www/py-httplib2@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}simplejson>=2.1.6:devel/py-simplejson@${PY_FLAVOR}
 
 USES=	python tar:tgz
 
 .include <bsd.port.options.mk>
 
 .if ! ${PORT_OPTIONS:MX11}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}tkinter>=2.7.1:x11-toolkits/py-tkinter@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}tkinter>=2.7.1:x11-toolkits/py-tkinter@${PY_FLAVOR}
 .endif
 
 MAKE_ENV+=	NO_THIRD_PARTY=yes

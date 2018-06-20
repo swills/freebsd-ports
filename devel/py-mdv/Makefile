@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/py-mdv/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-mdv/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mdv
 PORTVERSION=	1.6.3
@@ -13,9 +13,9 @@ COMMENT=	Terminal markdown viewer
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docopt>0:devel/py-docopt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}markdown>=2.0.3:textproc/py-markdown@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docopt>0:devel/py-docopt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markdown>=2.0.3:textproc/py-markdown@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

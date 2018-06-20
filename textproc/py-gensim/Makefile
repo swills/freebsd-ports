@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-gensim/Makefile 472423 2018-06-15 04:11:27Z yuri $
+# $FreeBSD: head/textproc/py-gensim/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gensim
 DISTVERSION=	3.4.0
@@ -14,9 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.18.1:science/py-scipy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.5.0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}smart_open>=1.2.1:net/py-smart_open@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.18.1:science/py-scipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.5.0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}smart_open>=1.2.1:net/py-smart_open@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

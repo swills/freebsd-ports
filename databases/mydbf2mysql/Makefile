@@ -1,5 +1,5 @@
 # Created by: Andrey Polyakov <andrey.polyakov@unix.net>
-# $FreeBSD: head/databases/mydbf2mysql/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/mydbf2mysql/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mydbf2mysql
 PORTVERSION=	0.8.4.5
@@ -11,8 +11,8 @@ DISTNAME=	MyDBF2MySQL-${PORTVERSION}
 MAINTAINER=	andrey.polyakov@unix.net
 COMMENT=	Flexible tool for DBF import into MySQL
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${FLAVOR}
-RUN_DEPENDS+=	ydbf>=0.0.1:devel/py-ydbf@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${PY_FLAVOR}
+RUN_DEPENDS+=	ydbf>=0.0.1:devel/py-ydbf@${PY_FLAVOR}
 
 USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist

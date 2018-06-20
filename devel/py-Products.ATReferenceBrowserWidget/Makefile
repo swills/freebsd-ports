@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Products.ATReferenceBrowserWidget/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-Products.ATReferenceBrowserWidget/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Products.ATReferenceBrowserWidget
 PORTVERSION=	3.0
@@ -13,8 +13,8 @@ COMMENT=	Reference widget for Archetypes
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}archetypes.referencebrowserwidget>=0:devel/py-archetypes.referencebrowserwidget@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.deprecation>=0:devel/py-zope.deprecation@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}archetypes.referencebrowserwidget>=0:devel/py-archetypes.referencebrowserwidget@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.deprecation>=0:devel/py-zope.deprecation@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

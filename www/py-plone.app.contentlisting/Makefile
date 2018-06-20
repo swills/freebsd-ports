@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.app.contentlisting/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.app.contentlisting/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.app.contentlisting
 PORTVERSION=	1.0.5
@@ -13,7 +13,7 @@ COMMENT=	Listing of content for the Plone CMS
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.uuid>=0:www/py-plone.uuid@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.uuid>=0:www/py-plone.uuid@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zip

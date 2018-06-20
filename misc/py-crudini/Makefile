@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/misc/py-crudini/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-crudini/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	crudini
 PORTVERSION=	0.9
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Utility for manipulating ini files
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}iniparse>=0.3.2:devel/py-iniparse@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}iniparse>=0.3.2:devel/py-iniparse@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

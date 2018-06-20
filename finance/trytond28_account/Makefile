@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_account/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/finance/trytond28_account/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	trytond28_account
 PORTVERSION=	2.8.8
@@ -15,7 +15,7 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	trytond28>=2.8.2:finance/trytond28 \
 		trytond28_company>=2.8.0:finance/trytond28_company \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${PY_FLAVOR}
 
 CONFLICTS=	trytond_account-2.[46].*
 

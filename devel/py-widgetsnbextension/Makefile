@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-widgetsnbextension/Makefile 464718 2018-03-16 17:55:00Z swills $
+# $FreeBSD: head/devel/py-widgetsnbextension/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	widgetsnbextension
 PORTVERSION=	3.1.4
@@ -10,7 +10,7 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	IPython HTML widgets for Jupyter
 
 BUILD_DEPENDS=	npm>=0:www/npm
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}notebook>=0:www/py-notebook@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}notebook>=0:www/py-notebook@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

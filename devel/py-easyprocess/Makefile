@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-easyprocess/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-easyprocess/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	easyprocess
 PORTVERSION=	0.2.3
@@ -13,9 +13,9 @@ COMMENT=	Easy to use python subprocess interface
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paver>0:devel/py-paver@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cog>=2.3:devel/py-cog@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paver>0:devel/py-paver@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cog>=2.3:devel/py-cog@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
 
 NO_ARCH=	YES
 USE_PYTHON=	autoplist distutils

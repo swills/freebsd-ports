@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Products.OFSP/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-Products.OFSP/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Products.OFSP
 PORTVERSION=	2.13.2
@@ -13,8 +13,8 @@ COMMENT=	General Zope 2 help screens
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}AccessControl>=0:security/py-AccessControl@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Persistence>=0:devel/py-Persistence@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}AccessControl>=0:security/py-AccessControl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Persistence>=0:devel/py-Persistence@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

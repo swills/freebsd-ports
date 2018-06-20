@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-dnsdiag/Makefile 466349 2018-04-03 13:37:41Z farrokhi $
+# $FreeBSD: head/net-mgmt/py-dnsdiag/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	dnsdiag
 PORTVERSION=	1.6.4
@@ -12,8 +12,8 @@ COMMENT=	DNS Diagnostics and measurement tools (ping, traceroute)
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.15.0:dns/py-dnspython@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cymruwhois>=1.6:net/py-cymruwhois@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.15.0:dns/py-dnspython@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cymruwhois>=1.6:net/py-cymruwhois@${PY_FLAVOR}
 
 USES=		python:3.3+
 USE_PYTHON=	autoplist distutils

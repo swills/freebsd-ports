@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyvisa/Makefile 463088 2018-02-26 22:32:42Z sunpoet $
+# $FreeBSD: head/devel/py-pyvisa/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyvisa
 PORTVERSION=	1.9.0
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PY_ENUM34} \
-		${PYTHON_PKGNAMEPREFIX}pyvisa-py>=0:devel/py-pyvisa-py@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyvisa-py>=0:devel/py-pyvisa-py@${PY_FLAVOR}
 
 USES=		python
 USE_LOCALE=	en_US.UTF-8

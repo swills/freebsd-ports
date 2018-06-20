@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-soco/Makefile 470503 2018-05-21 02:35:47Z sunpoet $
+# $FreeBSD: head/multimedia/py-soco/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	soco
 PORTVERSION=	0.15
@@ -12,8 +12,8 @@ COMMENT=	Python library to control Sonos speakers
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}xmltodict>0:devel/py-xmltodict@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xmltodict>0:devel/py-xmltodict@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

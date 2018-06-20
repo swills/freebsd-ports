@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/py-sounddevice/Makefile 469380 2018-05-08 16:19:13Z yuri $
+# $FreeBSD: head/audio/py-sounddevice/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sounddevice
 DISTVERSION=	0.3.11
@@ -12,8 +12,8 @@ COMMENT=	Play and record sound through OSS in python programs
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${PY_FLAVOR} \
 		${PYNUMPY} \
 		portaudio>0:audio/portaudio
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-debtcollector/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-debtcollector/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	debtcollector
 PORTVERSION=	1.9.0
@@ -12,10 +12,10 @@ COMMENT=	Collection of Python deprecation patterns and strategies
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wrapt>0:devel/py-wrapt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}funcsigs>0:devel/py-funcsigs@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wrapt>0:devel/py-wrapt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}funcsigs>0:devel/py-funcsigs@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

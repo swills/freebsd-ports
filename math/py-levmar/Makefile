@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-levmar/Makefile 466113 2018-04-01 02:52:34Z yuri $
+# $FreeBSD: head/math/py-levmar/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 # levmar library (math/levmar) is bundled
 
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	${PYNUMPY}
 LIB_DEPENDS=	libblas.so:math/blas \
 		liblapack.so:math/lapack
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \
 		${PYNUMPY}
 
 USES=		python

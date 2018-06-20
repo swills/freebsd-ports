@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-sk1/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/py-sk1/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sk1
 DISTVERSION=	g20171127
@@ -14,11 +14,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 		libMagickCore-6.so:graphics/ImageMagick
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pycups>0:print/py-pycups@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}reportlab>0:print/py-reportlab@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycups>0:print/py-pycups@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}reportlab>0:print/py-reportlab@${PY_FLAVOR}
 
 USES=		desktop-file-utils python:2.7
 USE_GITHUB=	yes

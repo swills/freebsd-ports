@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-aipy/Makefile 472747 2018-06-19 02:10:49Z yuri $
+# $FreeBSD: head/astro/py-aipy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	aipy
 PORTVERSION=	2.1.9
@@ -14,9 +14,9 @@ COMMENT=	Astronomical Interferometry in PYthon
 LICENSE=	GPLv2+
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}pyephem>=0:astro/pyephem@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}astropy>=1.0:astro/py-astropy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}matplotlib>=0.98:math/py-matplotlib@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyephem>=0:astro/pyephem@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}astropy>=1.0:astro/py-astropy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}matplotlib>=0.98:math/py-matplotlib@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7

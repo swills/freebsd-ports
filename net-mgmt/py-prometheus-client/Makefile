@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-prometheus-client/Makefile 467836 2018-04-20 15:44:18Z pizzamig $
+# $FreeBSD: head/net-mgmt/py-prometheus-client/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	prometheus-client
 PORTVERSION=	0.2.0
@@ -12,8 +12,8 @@ COMMENT=	Official Python client for Prometheus
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=17.9.0:devel/py-twisted@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=17.9.0:devel/py-twisted@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=17.9.0:devel/py-twisted@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=17.9.0:devel/py-twisted@${PY_FLAVOR}
 
 USES=	python
 

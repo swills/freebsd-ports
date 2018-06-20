@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.formwidget.namedfile/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.formwidget.namedfile/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.formwidget.namedfile
 PORTVERSION=	1.0.15
@@ -12,9 +12,9 @@ COMMENT=	Image widget for z3c.form and Plone
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.namedfile>0:www/py-plone.namedfile@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}z3c.form>0:devel/py-z3c.form@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.z3cform>0:www/py-plone.z3cform@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.namedfile>0:www/py-plone.namedfile@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}z3c.form>0:devel/py-z3c.form@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.z3cform>0:www/py-plone.z3cform@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

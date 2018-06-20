@@ -1,5 +1,5 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/archivers/py-attic/Makefile 468298 2018-04-25 21:01:16Z sunpoet $
+# $FreeBSD: head/archivers/py-attic/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	attic
 PORTVERSION=	0.16
@@ -15,8 +15,8 @@ COMMENT=	Deduplicating backup program
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.1.10:devel/py-msgpack@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.1.10:devel/py-msgpack@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.1.10:devel/py-msgpack@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.1.10:devel/py-msgpack@${PY_FLAVOR}
 
 USES=		python:3.3+ ssl
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-pysym/Makefile 466022 2018-03-31 06:24:27Z yuri $
+# $FreeBSD: head/math/py-pysym/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pysym
 DISTVERSION=	0.2.3
@@ -12,7 +12,7 @@ COMMENT=	Prototype package for symbolic manipulation
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sympy>0:math/py-sympy@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sympy>0:math/py-sympy@${PY_FLAVOR} \
 		${PYNUMPY}
 
 USES=		python

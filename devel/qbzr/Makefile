@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/qbzr/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/qbzr/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	qbzr
 PORTVERSION=	0.23.0
@@ -14,8 +14,8 @@ COMMENT=	Qt interface for bzr
 LICENSE=	GPLv2
 
 BUILD_DEPENDS=	bzr:devel/bzr \
-		${PYTHON_PKGNAMEPREFIX}pygments>=0:textproc/py-pygments@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}enchant>=0:textproc/py-enchant@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pygments>=0:textproc/py-pygments@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}enchant>=0:textproc/py-enchant@${PY_FLAVOR}
 RUN_DEPENDS=	bzr:devel/bzr
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

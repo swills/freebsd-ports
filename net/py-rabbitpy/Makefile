@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-rabbitpy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-rabbitpy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	rabbitpy
 PORTVERSION=	1.0.0
@@ -11,8 +11,8 @@ COMMENT=	RabbitMQ client library for Python
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pamqp>0:net/py-pamqp@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pamqp>0:net/py-pamqp@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pamqp>0:net/py-pamqp@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pamqp>0:net/py-pamqp@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

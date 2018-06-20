@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-pyquery/Makefile 460241 2018-01-29 06:45:16Z araujo $
+# $FreeBSD: head/www/py-pyquery/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyquery
 PORTVERSION=	1.2.9
@@ -13,12 +13,12 @@ COMMENT=	Jquery-like library for python
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob@${PY_FLAVOR}
 
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 
@@ -28,7 +28,7 @@ USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${FLAVOR}
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
 DOCS_VARS=	PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
 
 post-install-DOCS-on:

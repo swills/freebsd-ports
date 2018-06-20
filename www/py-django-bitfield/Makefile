@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-bitfield/Makefile 469560 2018-05-10 15:02:43Z miwi $
+# $FreeBSD: head/www/py-django-bitfield/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-bitfield
 PORTVERSION=	1.9.3
@@ -13,8 +13,8 @@ COMMENT=	BitField in Django
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-wstools/Makefile 468826 2018-05-02 11:03:51Z rm $
+# $FreeBSD: head/textproc/py-wstools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	wstools
 PORTVERSION=	0.4.8
@@ -12,8 +12,8 @@ COMMENT=	WSDL parsing services for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/py-zope.proxy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-zope.proxy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.proxy
 PORTVERSION=	4.1.3
@@ -14,7 +14,7 @@ COMMENT=	Generic Transparent Proxies
 
 LICENSE=	ZPL21
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=3.3.0:devel/py-zope.interface@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=3.3.0:devel/py-zope.interface@${PY_FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

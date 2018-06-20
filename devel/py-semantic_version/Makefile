@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-semantic_version/Makefile 469560 2018-05-10 15:02:43Z miwi $
+# $FreeBSD: head/devel/py-semantic_version/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	semantic_version
 PORTVERSION=	2.6.0
@@ -14,7 +14,7 @@ COMMENT=	Python library provides a few tools to handle SemVer in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	rbarrois

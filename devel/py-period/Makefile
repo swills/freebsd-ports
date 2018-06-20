@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-period/Makefile 461313 2018-02-09 14:08:57Z sunpoet $
+# $FreeBSD: head/devel/py-period/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	period
 PORTVERSION=	0.6.1
@@ -12,7 +12,7 @@ COMMENT=	Basic time period checking library
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

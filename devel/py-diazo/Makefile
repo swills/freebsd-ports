@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-diazo/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/devel/py-diazo/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	diazo
 PORTVERSION=	1.2.8
@@ -12,12 +12,12 @@ COMMENT=	Deliverance like language using a pure XSLT engine
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cssselect>0:www/py-cssselect@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}repoze.xmliter>=0.3:devel/py-repoze.xmliter@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}webob>=0:www/py-webob@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cssselect>0:www/py-cssselect@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}repoze.xmliter>=0.3:devel/py-repoze.xmliter@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=0:www/py-webob@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

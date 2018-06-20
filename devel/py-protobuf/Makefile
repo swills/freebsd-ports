@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-protobuf/Makefile 466747 2018-04-07 16:34:19Z sunpoet $
+# $FreeBSD: head/devel/py-protobuf/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.5.2
@@ -14,8 +14,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 BUILD_DEPENDS=	protoc:devel/protobuf \
-		${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${PY_FLAVOR}
 
 DO_MAKE_TEST=	${PYTHON_CMD} ${PYDISTUTILS_SETUP}
 NO_ARCH=	yes

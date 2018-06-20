@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/pybrain/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/pybrain/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pybrain
 PORTVERSION=	0.3.3
@@ -11,7 +11,7 @@ COMMENT=	PyBrain is the swiss army knife for neural networking
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scipy>=0.7.1:science/py-scipy@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scipy>=0.7.1:science/py-scipy@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 

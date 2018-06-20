@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-csvkit/Makefile 464566 2018-03-15 07:31:19Z matthew $
+# $FreeBSD: head/textproc/py-csvkit/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	csvkit
 PORTVERSION=	1.0.3
@@ -11,11 +11,11 @@ COMMENT=	Command line tools for working with CSV
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.4:textproc/py-agate@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}agate-excel>=0.2.0:textproc/py-agate-excel@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}agate-dbf>=0.2.0:textproc/py-agate-dbf@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}agate-sql>=0.5.0:databases/py-agate-sql@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.6.1:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.4:textproc/py-agate@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}agate-excel>=0.2.0:textproc/py-agate-excel@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}agate-dbf>=0.2.0:textproc/py-agate-dbf@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}agate-sql>=0.5.0:databases/py-agate-sql@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.6.1:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

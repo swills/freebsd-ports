@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-weblib/Makefile 468818 2018-05-02 10:27:09Z rm $
+# $FreeBSD: head/devel/py-weblib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	weblib
 PORTVERSION=	0.1.29
@@ -11,10 +11,10 @@ COMMENT=	Set of tools for web scraping projects
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytils>0:russian/py-pytils@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}user_agent>0:www/py-user_agent@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytils>0:russian/py-pytils@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}user_agent>0:www/py-user_agent@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

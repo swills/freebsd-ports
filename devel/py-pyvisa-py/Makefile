@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyvisa-py/Makefile 463089 2018-02-26 22:32:48Z sunpoet $
+# $FreeBSD: head/devel/py-pyvisa-py/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyvisa-py
 PORTVERSION=	0.2
@@ -21,7 +21,7 @@ OPTIONS_DEFINE=	SERIAL USB
 SERIAL_DESC=	Access to devices via RS-232
 USB_DESC=	Access to devices via USB
 
-SERIAL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}serial>=0:comms/py-serial@${FLAVOR}
-USB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}usb>=0:devel/py-usb@${FLAVOR}
+SERIAL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}serial>=0:comms/py-serial@${PY_FLAVOR}
+USB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}usb>=0:devel/py-usb@${PY_FLAVOR}
 
 .include <bsd.port.mk>

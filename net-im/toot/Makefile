@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/toot/Makefile 467765 2018-04-19 11:52:01Z amdmi3 $
+# $FreeBSD: head/net-im/toot/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	toot
 DISTVERSION=	0.17.1
@@ -12,11 +12,11 @@ COMMENT=	Interact with the Mastodon social network from the command line
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.5.0:www/py-beautifulsoup@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.11.1:www/py-requests@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.5.0:www/py-beautifulsoup@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-cov>=2.4.0:devel/py-pytest-cov@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest>=3.0.0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.5.0:www/py-beautifulsoup@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.11.1:www/py-requests@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.5.0:www/py-beautifulsoup@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-cov>=2.4.0:devel/py-pytest-cov@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=3.0.0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python:3.3+
 USE_PYTHON=	autoplist distutils

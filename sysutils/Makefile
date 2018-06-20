@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 472720 2018-06-18 22:38:07Z linimon $
+# $FreeBSD: head/sysutils/Makefile 472896 2018-06-20 18:31:47Z dteske $
 #
 
     COMMENT = System utilities
@@ -1202,6 +1202,7 @@
     SUBDIR += spinner
     SUBDIR += spiped
     SUBDIR += squashfs-tools
+    SUBDIR += ssd_report
     SUBDIR += sshsudo
     SUBDIR += ssid
     SUBDIR += ssync

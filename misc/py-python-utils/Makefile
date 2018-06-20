@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-python-utils/Makefile 465721 2018-03-27 16:29:07Z makc $
+# $FreeBSD: head/misc/py-python-utils/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	python-utils
 PORTVERSION=	2.3.0
@@ -12,8 +12,8 @@ COMMENT=	Collection of small functions and classes
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

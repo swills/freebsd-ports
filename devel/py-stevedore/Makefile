@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-stevedore/Makefile 465381 2018-03-23 16:45:50Z sunpoet $
+# $FreeBSD: head/devel/py-stevedore/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	stevedore
 PORTVERSION=	1.28.0
@@ -13,8 +13,8 @@ COMMENT=	Manage dynamic plugins for Python applications
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PKGNAMEPREFIX}pbr>=2.0.0:devel/py-pbr@${FLAVOR}
-RUN_DEPENDS=	${PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=2.0.0:devel/py-pbr@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

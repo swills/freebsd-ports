@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-Products.TinyMCE/Makefile 464621 2018-03-15 18:27:09Z bdrewery $
+# $FreeBSD: head/www/py-Products.TinyMCE/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Products.TinyMCE
 PORTVERSION=	1.3.19
@@ -13,14 +13,14 @@ COMMENT=	Adds support for TinyMCE to Plone
 
 LICENSE=	LGPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.app.imaging>=1.0.2:www/py-plone.app.imaging@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.outputfilters>=0:www/py-plone.outputfilters@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.namedfile>0:www/py-plone.namedfile@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.app.layout>0:www/py-plone.app.layout@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.caching>0:www/py-plone.caching@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.ResourceRegistries>0:devel/py-Products.ResourceRegistries@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.app.content>0:devel/py-zope.app.content@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>0:devel/py-zope.schema@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.app.imaging>=1.0.2:www/py-plone.app.imaging@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.outputfilters>=0:www/py-plone.outputfilters@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.namedfile>0:www/py-plone.namedfile@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.layout>0:www/py-plone.app.layout@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.caching>0:www/py-plone.caching@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.ResourceRegistries>0:devel/py-Products.ResourceRegistries@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.app.content>0:devel/py-zope.app.content@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>0:devel/py-zope.schema@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 shebangfix zip

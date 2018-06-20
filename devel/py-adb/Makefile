@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-adb/Makefile 471260 2018-06-01 14:19:29Z jbeich $
+# $FreeBSD: head/devel/py-adb/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	adb
 DISTVERSION=	1.3.0-1
@@ -11,9 +11,9 @@ COMMENT=	Pure-python implementation of ADB and Fastboot protocols
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libusb1>=1.0.16:devel/py-libusb1@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}m2crypto>=0.21.1:security/py-m2crypto@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libusb1>=1.0.16:devel/py-libusb1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}m2crypto>=0.21.1:security/py-m2crypto@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	google

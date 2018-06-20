@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.app.schema/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zope.app.schema/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.app.schema
 PORTVERSION=	3.5.0
@@ -13,9 +13,9 @@ COMMENT=	Component Architecture based Vocabulary Registry
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

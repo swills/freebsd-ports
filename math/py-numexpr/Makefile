@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <ju.pengfei@gmail.com>
-# $FreeBSD: head/math/py-numexpr/Makefile 468959 2018-05-03 18:40:51Z sunpoet $
+# $FreeBSD: head/math/py-numexpr/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	numexpr
 PORTVERSION=	2.6.5
@@ -13,7 +13,7 @@ COMMENT=	Fast numerical array expression evaluator for Python and NumPy
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.7,1:math/py-numpy@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.7,1:math/py-numpy@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PYTHON=	autoplist concurrent distutils

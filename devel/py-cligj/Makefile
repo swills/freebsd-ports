@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-cligj/Makefile 471439 2018-06-03 01:39:12Z wen $
+# $FreeBSD: head/devel/py-cligj/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cligj
 PORTVERSION=	0.4.0
@@ -11,7 +11,7 @@ COMMENT=	Click-based argument and option decorators for Python GIS cli
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>4.0:devel/py-click@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>4.0:devel/py-click@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

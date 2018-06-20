@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-flask-script/Makefile 463837 2018-03-07 21:39:21Z feld $
+# $FreeBSD: head/www/py-flask-script/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-Script
 PORTVERSION=	2.0.6
@@ -13,7 +13,7 @@ COMMENT=	Scripting support for Flask
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

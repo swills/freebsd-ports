@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/py-httpie/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-httpie/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	httpie
 PORTVERSION=	0.9.8
@@ -12,8 +12,8 @@ COMMENT=	Command line HTTP client
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.11.0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pygments>=2.1.3:textproc/py-pygments@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.11.0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>=2.1.3:textproc/py-pygments@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jakubroztocil

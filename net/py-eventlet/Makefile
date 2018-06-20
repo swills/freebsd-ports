@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/py-eventlet/Makefile 461168 2018-02-07 18:40:54Z mmokhi $
+# $FreeBSD: head/net/py-eventlet/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	eventlet
 PORTVERSION=	0.22.0
@@ -12,10 +12,10 @@ COMMENT=	Concurrent networking library for Python
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.3:devel/py-greenlet@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.3:devel/py-greenlet@${PY_FLAVOR} \
 		${PY_ENUM_COMPAT} \
 		${PY_ENUM34}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

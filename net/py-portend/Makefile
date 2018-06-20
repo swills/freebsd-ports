@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-portend/Makefile 455415 2017-12-03 17:38:09Z yuri $
+# $FreeBSD: head/net/py-portend/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	portend
 PORTVERSION=	2.2
@@ -12,8 +12,8 @@ COMMENT=	Monitors TCP ports for bound or unbound states
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tempora>=1.8:devel/py-tempora@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tempora>=1.8:devel/py-tempora@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

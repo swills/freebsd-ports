@@ -1,5 +1,5 @@
 # Created by: Guixing Bai <khsing.cn@gmail.com>
-# $FreeBSD: head/www/py-tornado4/Makefile 464389 2018-03-13 16:52:53Z gblach $
+# $FreeBSD: head/www/py-tornado4/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tornado
 PORTVERSION=	4.5.3
@@ -21,12 +21,12 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>0:devel/py-singledispatch@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>0:devel/py-singledispatch@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi@${PY_FLAVOR}
 .endif
 
 .if ${PYTHON_REL} < 3500
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports_abc>=0.4:devel/py-backports_abc@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports_abc>=0.4:devel/py-backports_abc@${PY_FLAVOR}
 .endif
 
 post-build:

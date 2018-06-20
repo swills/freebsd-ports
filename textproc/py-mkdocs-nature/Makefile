@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-mkdocs-nature/Makefile 466629 2018-04-06 08:29:09Z yuri $
+# $FreeBSD: head/textproc/py-mkdocs-nature/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mkdocs-nature
 DISTVERSION=	0.2.1
@@ -11,7 +11,7 @@ COMMENT=	MkDocs theme, a clone of the "greenish" Sphinx theme of the same name
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mkdocs>0:textproc/py-mkdocs@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mkdocs>0:textproc/py-mkdocs@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-pkgconfig/Makefile 462915 2018-02-25 05:32:51Z sunpoet $
+# $FreeBSD: head/devel/py-pkgconfig/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pkgconfig
 PORTVERSION=	1.3.1
@@ -13,7 +13,7 @@ COMMENT=	Interface Python with pkg-config
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

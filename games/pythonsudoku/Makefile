@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pythonsudoku/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/pythonsudoku/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pythonsudoku
 PORTVERSION=	0.13
@@ -20,8 +20,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS+=	libcups.so:print/cups
 RUN_DEPENDS=	${PYGAME} \
-		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}reportlab1>=0:print/py-reportlab1@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}reportlab1>=0:print/py-reportlab1@${PY_FLAVOR}
 
 USES=		python:2.7 tar:bzip2
 USE_GNOME=	pygtk2

@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/devel/py-mccabe/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-mccabe/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mccabe
 PORTVERSION=	0.6.1
@@ -13,7 +13,7 @@ COMMENT=	Ned's script to check McCabe complexity
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-volatility/Makefile 459602 2018-01-21 12:40:37Z antoine $
+# $FreeBSD: head/security/py-volatility/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	volatility
 PORTVERSION=	2.6
@@ -14,12 +14,12 @@ COMMENT=	Advanced memory forensics framework
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}distorm>=0:devel/py-distorm@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yara>=0:security/py-yara@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openpyxl>=0:textproc/py-openpyxl@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}distorm>=0:devel/py-distorm@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yara>=0:security/py-yara@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openpyxl>=0:textproc/py-openpyxl@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 shebangfix zip

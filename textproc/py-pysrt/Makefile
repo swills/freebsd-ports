@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pysrt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-pysrt/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pysrt
 PORTVERSION=	1.1.1
@@ -12,7 +12,7 @@ COMMENT=	SubRip (.srt) subtitle parser and writer
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

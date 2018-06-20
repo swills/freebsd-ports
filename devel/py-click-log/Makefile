@@ -1,5 +1,5 @@
 # Created by: Christian Geier <geier@lostpackets.de>
-# $FreeBSD: head/devel/py-click-log/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-click-log/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	click-log
 DISTVERSION=	0.2.1
@@ -12,9 +12,9 @@ COMMENT=	Logging integration for Click
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/frr4/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/net/frr4/Makefile 472873 2018-06-20 15:03:03Z linimon $
 
 PORTNAME=	frr
 PORTVERSION=	4.0
@@ -18,7 +18,8 @@ LIB_DEPENDS=	libjson-c.so:devel/json-c
 
 CONFLICTS=	openbgpd openospfd zebra quagga frr3
 
-USES=		autoreconf bison compiler:c++11-lang gmake pkgconfig libtool makeinfo readline
+USES=		autoreconf bison compiler:c++11-lang gmake pkgconfig libtool \
+		makeinfo python:2.7,build readline
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes

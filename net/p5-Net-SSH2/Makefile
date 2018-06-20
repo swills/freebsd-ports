@@ -1,8 +1,8 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-Net-SSH2/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-SSH2/Makefile 472899 2018-06-20 19:04:54Z jadawin $
 
 PORTNAME=	Net-SSH2
-PORTVERSION=	0.58
+PORTVERSION=	0.69
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,7 +15,17 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libssh2.so:security/libssh2
 
-USES=	perl5
+USES=		perl5
 USE_PERL5=	configure
+
+CFLAGS+=	-I${LOCALBASE}/include
+PORTEXAMPLES=	example/*
+
+OPTIONS_DEFINE=	EXAMPLES
+OPTIONS_SUB=	yes
+
+post-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTEXAMPLES} ${STAGEDIR}${EXAMPLESDIR})
 
 .include <bsd.port.mk>

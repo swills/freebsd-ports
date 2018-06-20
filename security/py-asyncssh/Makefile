@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-asyncssh/Makefile 462692 2018-02-23 13:01:43Z wg $
+# $FreeBSD: head/security/py-asyncssh/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	asyncssh
 PORTVERSION=	1.12.0
@@ -12,8 +12,8 @@ COMMENT=	Python asnycio SSH protocol library
 LICENSE=	EPL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR}
 
 USES=		python:3.4+
 USE_PYTHON=	autoplist concurrent distutils

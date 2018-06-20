@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net/py-pynsq/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-pynsq/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pynsq
 PORTVERSION=	0.6.9
@@ -13,11 +13,11 @@ COMMENT=	Official Python client library for NSQ
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-snappy>0:archivers/py-python-snappy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-snappy>0:archivers/py-python-snappy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR}
 
 USES=		python:-2.7
 USE_GITHUB=	yes

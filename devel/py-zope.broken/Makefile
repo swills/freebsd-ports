@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.broken/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zope.broken/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.broken
 PORTVERSION=	3.6.0
@@ -13,7 +13,7 @@ COMMENT=	Zope Broken Object Interfaces
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

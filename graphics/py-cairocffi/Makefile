@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/graphics/py-cairocffi/Makefile 455285 2017-12-01 13:06:22Z antoine $
+# $FreeBSD: head/graphics/py-cairocffi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cairocffi
 PORTVERSION=	0.8.0
@@ -13,7 +13,7 @@ COMMENT=	Cairo cffi-based cairo bindings for Python
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${PY_FLAVOR}
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
 USES=		python

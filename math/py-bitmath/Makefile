@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-bitmath/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/math/py-bitmath/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bitmath
 PORTVERSION=	1.2.3
@@ -19,6 +19,6 @@ USE_PYTHON=	autoplist distutils
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-4
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}progressbar231>0:misc/py-progressbar231@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}progressbar231>0:misc/py-progressbar231@${PY_FLAVOR}
 
 .include <bsd.port.mk>

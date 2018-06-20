@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-fakeredis/Makefile 469727 2018-05-12 10:38:41Z rene $
+# $FreeBSD: head/databases/py-fakeredis/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fakeredis
 PORTVERSION=	0.10.3
@@ -12,7 +12,7 @@ COMMENT=	Fake version of databases/py-redis for unit testing
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}redis>=0:databases/py-redis@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}redis>=0:databases/py-redis@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

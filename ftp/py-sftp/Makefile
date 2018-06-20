@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/py-sftp/Makefile 469354 2018-05-08 05:07:47Z yuri $
+# $FreeBSD: head/ftp/py-sftp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pysftp
 DISTVERSION=	0.2.9
@@ -12,7 +12,7 @@ COMMENT=	Simple interface to SFTP
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.17:security/py-paramiko@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.17:security/py-paramiko@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

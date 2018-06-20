@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.testing/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.testing/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.testing
 PORTVERSION=	4.1.1
@@ -12,7 +12,7 @@ COMMENT=	Testing infrastructure for Zope and Plone projects
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.testing>=0:devel/py-zope.testing@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.testing>=0:devel/py-zope.testing@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-citeproc-py-styles/Makefile 469839 2018-05-13 23:56:30Z yuri $
+# $FreeBSD: head/textproc/py-citeproc-py-styles/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	citeproc-py-styles
 DISTVERSION=	0.1.1
@@ -12,9 +12,9 @@ COMMENT=	Static resources package for citeproc-py
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=2.6.2:devel/py-pytest-runner@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.6.0:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=2.6.2:devel/py-pytest-runner@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.6.0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

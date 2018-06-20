@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-appconf/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/www/py-django-appconf/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-appconf
 PORTVERSION=	1.0.2
@@ -12,7 +12,7 @@ COMMENT=	Helper class for handling configuration defaults gracefully
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

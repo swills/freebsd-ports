@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-grpcio-tools/Makefile 471750 2018-06-05 09:09:32Z vanilla $
+# $FreeBSD: head/devel/py-grpcio-tools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	grpcio-tools
 PORTVERSION=	1.12.1
@@ -12,7 +12,7 @@ COMMENT=	Protobuf code generator for gRPC
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}grpcio>1:devel/py-grpcio@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}grpcio>1:devel/py-grpcio@${PY_FLAVOR}
 LIB_DEPENDS=	libcares.so:dns/c-ares
 
 USES=		localbase:ldflags python

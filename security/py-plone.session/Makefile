@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-plone.session/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-plone.session/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.session
 PORTVERSION=	3.5.6
@@ -12,10 +12,10 @@ COMMENT=	Session based authentication for Zope
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.protect>=0:security/py-plone.protect@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.PluggableAuthService>=0:security/py-Products.PluggableAuthService@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.protect>=0:security/py-plone.protect@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.PluggableAuthService>=0:security/py-Products.PluggableAuthService@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

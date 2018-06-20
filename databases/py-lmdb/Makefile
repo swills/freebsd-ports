@@ -1,5 +1,5 @@
 # Created by: Keith Gaughan <k@sterechro.me>
-# $FreeBSD: head/databases/py-lmdb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-lmdb/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	lmdb
 PORTVERSION=	0.93
@@ -15,7 +15,7 @@ LICENSE_NAME=	OpenLDAP Public LIcense
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0.8:devel/py-cffi@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0.8:devel/py-cffi@${PY_FLAVOR}
 LIB_DEPENDS=	liblmdb.so:databases/lmdb
 
 USES=		localbase python

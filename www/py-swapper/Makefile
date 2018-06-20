@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-swapper/Makefile 464099 2018-03-10 23:00:09Z sunpoet $
+# $FreeBSD: head/www/py-swapper/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	swapper
 PORTVERSION=	1.1.0
@@ -12,7 +12,7 @@ COMMENT=	Unofficial Django swappable models API
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.6:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.6:www/py-django111@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

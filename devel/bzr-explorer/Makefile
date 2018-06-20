@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/bzr-explorer/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/bzr-explorer/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bzr-explorer
 PORTVERSION=	1.3.0
@@ -13,7 +13,7 @@ COMMENT=	Desktop application for using bzr
 LICENSE=	GPLv2
 
 BUILD_DEPENDS=	bzr:devel/bzr
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/bzrlib/plugins/qbzr/__init__.py:devel/qbzr@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/bzrlib/plugins/qbzr/__init__.py:devel/qbzr@${PY_FLAVOR} \
 		bzr:devel/bzr
 
 USES=		gettext python:2.7

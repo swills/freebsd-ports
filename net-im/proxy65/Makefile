@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/proxy65/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-im/proxy65/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	proxy65
 PORTVERSION=	1.2.0.20150210
@@ -10,9 +10,9 @@ COMMENT=	XEP-0065 SOCKS5 Bytestreams external component for Jabber
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/OpenSSL/__init__.py:security/py-openssl@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/OpenSSL/__init__.py:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mmatuska

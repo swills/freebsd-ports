@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-repoze.xmliter/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-repoze.xmliter/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	repoze.xmliter
 PORTVERSION=	0.6
@@ -14,8 +14,8 @@ LICENSE_NAME=	Repoze License
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.1.1:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.1.1:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${PY_FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	autoplist distutils

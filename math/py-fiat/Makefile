@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-fiat/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-fiat/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fiat
 PORTVERSION=	${MMVERSION}.0
@@ -13,7 +13,7 @@ COMMENT=	FInite element Automatic Tabulator
 
 LICENSE=	LGPL3
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scientific>=0:math/py-scientific@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scientific>=0:math/py-scientific@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7

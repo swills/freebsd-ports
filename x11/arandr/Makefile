@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbz@FreeBSD.org>
-# $FreeBSD: head/x11/arandr/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11/arandr/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	arandr
 PORTVERSION=	0.1.9
@@ -12,9 +12,9 @@ COMMENT=	Another XRandR GUI
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0.6:textproc/py-docutils@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0.6:textproc/py-docutils@${PY_FLAVOR}
 RUN_DEPENDS=	xrandr>0:x11/xrandr \
-		${PYTHON_PKGNAMEPREFIX}gtk2>0:x11-toolkits/py-gtk2@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}gtk2>0:x11-toolkits/py-gtk2@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

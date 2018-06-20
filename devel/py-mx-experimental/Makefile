@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-mx-experimental/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-mx-experimental/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mx-experimental
 PORTVERSION=	3.0.0
@@ -13,7 +13,7 @@ MAINTAINER=	sergio@softshark.org
 COMMENT=	The eGenix mx Extensions - EXPERIMENTAL Package
 
 BUILD_DEPENDS=	${LOCALBASE}/include/gmp.h:math/gmp
-#RUN_DEPENDS=	${PYTHON_SITELIBDIR}/mx/BeeBase/BeeBase.py:lang/py-mx-base@${FLAVOR}
+#RUN_DEPENDS=	${PYTHON_SITELIBDIR}/mx/BeeBase/BeeBase.py:lang/py-mx-base@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils

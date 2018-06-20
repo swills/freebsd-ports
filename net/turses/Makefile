@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net/turses/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/turses/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	turses
 PORTVERSION=	0.3.1
@@ -12,11 +12,11 @@ COMMENT=	Python Twitter client for the console
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urwid>=1.3.0:devel/py-urwid@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tweepy>=3.1.0:net/py-tweepy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}future>=0.14.3:devel/py-future@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urwid>=1.3.0:devel/py-urwid@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tweepy>=3.1.0:net/py-tweepy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}future>=0.14.3:devel/py-future@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
@@ -26,7 +26,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3000
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}configparser>0:devel/py-configparser@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}configparser>0:devel/py-configparser@${PY_FLAVOR}
 .endif
 
 do-test:

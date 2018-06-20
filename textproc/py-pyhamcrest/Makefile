@@ -1,5 +1,5 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pyhamcrest/Makefile 463464 2018-03-03 07:16:13Z ultima $
+# $FreeBSD: head/textproc/py-pyhamcrest/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PyHamcrest
 DISTVERSION=	1.9.0
@@ -13,7 +13,7 @@ COMMENT=	Hamcrest matchers for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4:devel/py-six@${PY_FLAVOR}
 
 USES=		python:2.7-3.4
 USE_PYTHON=	autoplist distutils

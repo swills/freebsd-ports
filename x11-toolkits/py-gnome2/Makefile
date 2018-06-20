@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-gnome2/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/x11-toolkits/py-gnome2/Makefile 472884 2018-06-20 17:05:41Z mat $
 #   $MCom: ports/x11-toolkits/py-gnome2/Makefile,v 1.60 2010/04/02 20:22:15 kwm Exp $
 
 PORTNAME=	gnome
@@ -18,8 +18,8 @@ OPTIONS_DEFINE=	EXAMPLES
 
 OPTIONS_SUB=	yes
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/ORBit.so:devel/py-orbit@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/ORBit.so:devel/py-orbit@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/ORBit.so:devel/py-orbit@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/ORBit.so:devel/py-orbit@${PY_FLAVOR}
 
 USES=		gettext gmake libtool:keepla pathfix pkgconfig python:2.7 tar:bzip2
 USE_LDCONFIG=	yes

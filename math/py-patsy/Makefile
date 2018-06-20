@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-patsy/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-patsy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	patsy
 PORTVERSION=	0.5.0
@@ -16,7 +16,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

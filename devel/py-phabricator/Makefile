@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbz@FreeBSD.org>
-# $FreeBSD: head/devel/py-phabricator/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-phabricator/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	phabricator
 PORTVERSION=	0.7.0
@@ -12,8 +12,8 @@ COMMENT=	Phabricator API Bindings
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Bartek Rutkowski robak@FreeBSD.org
-# $FreeBSD: head/net/py-pyvmomi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-pyvmomi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyvmomi
 DISTVERSION=	6.5
@@ -11,8 +11,8 @@ COMMENT=	Python SDK for the VMware vSphere API of ESX, ESXi, and vCenter
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.5.2:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.5.2:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils concurrent optsuffix

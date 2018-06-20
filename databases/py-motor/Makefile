@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/databases/py-motor/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-motor/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	motor
 PORTVERSION=	1.0
@@ -12,7 +12,7 @@ COMMENT=	Non-blocking MongoDB driver for Tornado or asyncio
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}pymongo>=3.3:databases/pymongo@${FLAVOR}
+RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}pymongo>=3.3:databases/pymongo@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

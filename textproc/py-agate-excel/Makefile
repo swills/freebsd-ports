@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-agate-excel/Makefile 460243 2018-01-29 07:43:47Z matthew $
+# $FreeBSD: head/textproc/py-agate-excel/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	agate-excel
 PORTVERSION=	0.2.2
@@ -11,9 +11,9 @@ COMMENT=	Support reading Excel files for agate
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.0:textproc/py-agate@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}xlrd>=0.9.4:textproc/py-xlrd@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openpyxl>=2.3.0:textproc/py-openpyxl@${FLAVOR} 
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.0:textproc/py-agate@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xlrd>=0.9.4:textproc/py-xlrd@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openpyxl>=2.3.0:textproc/py-openpyxl@${PY_FLAVOR} 
 
 USES=		python
 USE_PYTHON=	autoplist distutils

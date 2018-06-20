@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-cffi/Makefile 466405 2018-04-04 08:46:18Z koobs $
+# $FreeBSD: head/devel/py-cffi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cffi
 PORTVERSION=	1.11.5
@@ -14,8 +14,8 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libffi.so:devel/libffi
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycparser>=2.10:devel/py-pycparser@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycparser>=2.10:devel/py-pycparser@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 # Actually 2.6-2.7,3.2-3.5
 USES=		localbase python compiler

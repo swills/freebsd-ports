@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Curses/Makefile 420666 2016-08-23 12:04:09Z jadawin $
+# $FreeBSD: head/devel/p5-Curses/Makefile 472858 2018-06-20 09:07:12Z amdmi3 $
 
 PORTNAME=	Curses
 PORTVERSION=	1.36
@@ -9,6 +9,11 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module for terminal screen handling and optimization
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/Artistic
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/Copying
 
 USES=		perl5
 USE_PERL5=	configure

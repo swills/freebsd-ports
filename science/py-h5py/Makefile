@@ -1,5 +1,5 @@
 # Created by: TAOKA Fumiyoshi
-# $FreeBSD: head/science/py-h5py/Makefile 471778 2018-06-05 18:55:35Z sunpoet $
+# $FreeBSD: head/science/py-h5py/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	h5py
 PORTVERSION=	2.8.0
@@ -14,11 +14,11 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/licenses/license.txt
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}pkgconfig>=0:devel/py-pkgconfig@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pkgconfig>=0:devel/py-pkgconfig@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 LIB_DEPENDS=	libhdf5.so:science/hdf5
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent cython distutils

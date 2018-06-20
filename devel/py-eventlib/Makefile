@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-eventlib/Makefile 458901 2018-01-13 08:13:08Z sunpoet $
+# $FreeBSD: head/devel/py-eventlib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	eventlib
 PORTVERSION=	0.1.5
@@ -13,11 +13,11 @@ COMMENT=	Library to make it easy to track events in python/django apps
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}celery>=3.0.0:devel/py-celery@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ejson>=0:devel/py-ejson@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}logan>=0.5.0:devel/py-logan@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}redis>=2.7.1:databases/py-redis@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}celery>=3.0.0:devel/py-celery@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ejson>=0:devel/py-ejson@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}logan>=0.5.0:devel/py-logan@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}redis>=2.7.1:databases/py-redis@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

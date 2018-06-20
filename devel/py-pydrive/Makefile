@@ -1,5 +1,5 @@
 # Created by: Paul Mather <paul@gromit.dlib.vt.edu>
-# $FreeBSD: head/devel/py-pydrive/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pydrive/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pydrive
 PORTVERSION=	1.3.1
@@ -13,8 +13,8 @@ COMMENT=	Google drive api made easy
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}google-api-python-client>=1.5.2:www/py-google-api-python-client@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}google-api-python-client>=1.5.2:www/py-google-api-python-client@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

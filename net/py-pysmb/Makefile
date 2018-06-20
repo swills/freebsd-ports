@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-pysmb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-pysmb/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pysmb
 PORTVERSION=	1.1.22
@@ -14,7 +14,7 @@ COMMENT=	SMB/CIFS library written in Python
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

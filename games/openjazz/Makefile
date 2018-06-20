@@ -1,8 +1,8 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/openjazz/Makefile 470214 2018-05-17 10:11:20Z martymac $
+# $FreeBSD: head/games/openjazz/Makefile 472863 2018-06-20 10:08:09Z martymac $
 
 PORTNAME=	openjazz
-PORTVERSION=	20180329
+PORTVERSION=	20180522
 CATEGORIES=	games
 
 MAINTAINER=	martymac@FreeBSD.org
@@ -14,7 +14,6 @@ USES=	dos2unix gmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	AlisterT
-GH_TAGNAME=	2c4d351
 
 DOS2UNIX_REGEX=	.*\.(h|cpp)
 ALL_TARGET=	OpenJazz

@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/japanese/py-tegaki/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/japanese/py-tegaki/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tegaki
 PORTVERSION=	0.3.1
@@ -14,7 +14,7 @@ COMMENT=	Open-source Chinese and Japanese handwriting recognition
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libzinnia.so:japanese/zinnia
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/zinnia.py:japanese/py-zinnia@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/zinnia.py:japanese/py-zinnia@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils

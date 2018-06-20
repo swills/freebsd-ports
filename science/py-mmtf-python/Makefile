@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-mmtf-python/Makefile 470628 2018-05-22 16:51:49Z yuri $
+# $FreeBSD: head/science/py-mmtf-python/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mmtf-python
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	MMTF (Macromolecular Transmission Format) Python API
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

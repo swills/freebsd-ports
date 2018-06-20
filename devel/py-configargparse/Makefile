@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-configargparse/Makefile 460993 2018-02-05 17:49:32Z sunpoet $
+# $FreeBSD: head/devel/py-configargparse/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	configargparse
 PORTVERSION=	0.13.0
@@ -14,7 +14,7 @@ COMMENT=	Drop-in replacement for argparse
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

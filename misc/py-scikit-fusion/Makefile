@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-scikit-fusion/Makefile 472363 2018-06-14 07:28:03Z yuri $
+# $FreeBSD: head/misc/py-scikit-fusion/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	scikit-fusion
 DISTVERSION=	0.2.1
@@ -13,8 +13,8 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}joblib>=0.8.4:devel/py-joblib@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.12.0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}joblib>=0.8.4:devel/py-joblib@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.12.0:science/py-scipy@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

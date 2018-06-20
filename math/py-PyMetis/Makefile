@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-PyMetis/Makefile 470811 2018-05-24 21:30:51Z yuri $
+# $FreeBSD: head/math/py-PyMetis/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PyMetis
 DISTVERSION=	2016.2
@@ -12,8 +12,8 @@ COMMENT=	Python wrapper for the Metis graph partititioning software
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		localbase python
 USE_PYTHON=	distutils autoplist

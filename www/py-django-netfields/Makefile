@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-netfields/Makefile 469560 2018-05-10 15:02:43Z miwi $
+# $FreeBSD: head/www/py-django-netfields/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-netfields
 DISTVERSION=	0.8
@@ -13,8 +13,8 @@ COMMENT=	Django PostgreSQL netfields implementation
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}netaddr>=0:net/py-netaddr@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}netaddr>=0:net/py-netaddr@${PY_FLAVOR} \
 		${PY_IPADDRESS}
 
 USES=		python

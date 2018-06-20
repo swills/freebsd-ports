@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/syncthing-gtk/Makefile 472818 2018-06-19 19:47:03Z swills $
+# $FreeBSD: head/deskutils/syncthing-gtk/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	syncthing-gtk
 DISTVERSIONPREFIX=	v
@@ -10,9 +10,9 @@ COMMENT=	Python based GUI for Syncthing
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyinotify>0:devel/py-pyinotify@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyinotify>0:devel/py-pyinotify@${PY_FLAVOR} \
 		libappindicator>=0:devel/libappindicator \
 		syncthing>=0.13:net/syncthing
 

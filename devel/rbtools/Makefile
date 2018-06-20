@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rbtools/Makefile 459525 2018-01-20 14:52:15Z rakuco $
+# $FreeBSD: head/devel/rbtools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	${ORIGNAME:tl}
 DISTVERSION=	0.7.11
@@ -12,9 +12,9 @@ COMMENT=	Set of client tools to use with Review Board
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tqdm>0:misc/py-tqdm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tqdm>0:misc/py-tqdm@${PY_FLAVOR}
 
 ORIGNAME=	RBTools
 

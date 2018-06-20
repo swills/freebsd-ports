@@ -1,5 +1,5 @@
 # Created by: Giel van Schijndel <me@mortis.eu>
-# $FreeBSD: head/mail/postfix-policyd-spf-python/Makefile 459884 2018-01-24 19:09:50Z bdrewery $
+# $FreeBSD: head/mail/postfix-policyd-spf-python/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	postfix-policyd-spf-python
 PORTVERSION=	2.0.2
@@ -14,8 +14,8 @@ COMMENT=	Pure Python Postfix policy daemon for SPF checking
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyspf>0:mail/py-pyspf@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}authres>0:mail/py-authres@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyspf>0:mail/py-pyspf@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}authres>0:mail/py-authres@${PY_FLAVOR}
 
 USES=		python:3.3+
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/net/py-netif/Makefile 463081 2018-02-26 22:32:07Z sunpoet $
+# $FreeBSD: head/net/py-netif/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	netif
 PORTVERSION=	1.0.20171226
@@ -11,7 +11,7 @@ COMMENT=	Python network configuration library for FreeBSD
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bsd>0:devel/py-bsd@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bsd>0:devel/py-bsd@${PY_FLAVOR} \
 		${PY_ENUM34}
 
 USE_GITHUB=     yes

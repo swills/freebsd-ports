@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-js-asset/Makefile 470563 2018-05-21 17:05:19Z miwi $
+# $FreeBSD: head/www/py-django-js-asset/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-js-asset
 DISTVERSION=	1.1.0
@@ -12,7 +12,7 @@ COMMENT=	Insert script tags with additional attributes for django.forms.Media
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

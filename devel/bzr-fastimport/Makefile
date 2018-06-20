@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/bzr-fastimport/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/bzr-fastimport/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bzr-fastimport
 PORTVERSION=	0.13.0
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	bzr:devel/bzr
 RUN_DEPENDS=	bzr:devel/bzr \
-		${PYTHON_SITELIBDIR}/fastimport/__init__.py:devel/py-fastimport@${FLAVOR}
+		${PYTHON_SITELIBDIR}/fastimport/__init__.py:devel/py-fastimport@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

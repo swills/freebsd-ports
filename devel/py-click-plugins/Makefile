@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/py-click-plugins/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-click-plugins/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	click-plugins
 PORTVERSION=	1.0.3
@@ -13,7 +13,7 @@ COMMENT=	Click extension to register CLI commands via setuptools
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=3.2:devel/py-click@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=3.2:devel/py-click@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

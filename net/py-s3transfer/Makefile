@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-s3transfer/Makefile 462059 2018-02-16 20:31:42Z bhughes $
+# $FreeBSD: head/net/py-s3transfer/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	s3transfer
 PORTVERSION=	0.1.13
@@ -12,10 +12,10 @@ COMMENT=	Amazon S3 Transfer Manager for Python
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}botocore>=1.3.0:devel/py-botocore@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}botocore>=1.3.0:devel/py-botocore@${PY_FLAVOR} \
 		${PY_FUTURES}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.3.3:devel/py-nose@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>=1.3.0:devel/py-mock@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.3.3:devel/py-nose@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>=1.3.0:devel/py-mock@${PY_FLAVOR}
 
 #Actually -2.7,3.3-3.5
 USES=		python

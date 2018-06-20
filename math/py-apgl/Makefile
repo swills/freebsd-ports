@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-apgl/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-apgl/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	apgl
 PORTVERSION=	0.8.1
@@ -14,7 +14,7 @@ COMMENT=	Fast python graph library with some machine learning features
 LICENSE=	GPLv3
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0.7.0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>0.7.0:science/py-scipy@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

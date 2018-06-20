@@ -1,9 +1,9 @@
 # Created by: Boris Popov <bp@FreeBSD.org>
-# $FreeBSD: head/sysutils/nut/Makefile 458738 2018-01-11 13:54:03Z tijl $
+# $FreeBSD: head/sysutils/nut/Makefile 472902 2018-06-20 19:26:01Z cy $
 
 PORTNAME=	nut
 PORTVERSION=	2.7.4
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.networkupstools.org/source/${PORTVERSION:R}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}${EXTRACT_SUFX}.sig
@@ -105,11 +105,11 @@ PLIST_SUB+=	NUT_SNMP="@comment "
 
 .if ${PORT_OPTIONS:MNEON}
 LIB_DEPENDS+=	libneon.so:www/neon
-CONFIGURE_ARGS+=	--with-neonxml
+CONFIGURE_ARGS+=	--with-neon
 PLIST_SUB+=	NUT_NEON=""
 .else
-CONFIGURE_ARGS+=	--without-neonxml
-CONFIGURE_ARGS+=	--disable-neonxml
+CONFIGURE_ARGS+=	--without-neon
+CONFIGURE_ARGS+=	--disable-neon
 PLIST_SUB+=	NUT_NEON="@comment "
 .endif
 

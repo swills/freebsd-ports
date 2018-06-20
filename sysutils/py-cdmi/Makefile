@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-cdmi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/py-cdmi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cdmi
 PORTVERSION=	1.0
@@ -12,8 +12,8 @@ COMMENT=	CDMI on OpenStack Swift implementation
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}swift>0:databases/py-swift@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}webob>0:www/py-webob@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}swift>0:databases/py-swift@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>0:www/py-webob@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	osaddon

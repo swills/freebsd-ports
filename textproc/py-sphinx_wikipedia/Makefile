@@ -1,5 +1,5 @@
 # Created by: Dru Lavigne <dru@FreeBSD.org>
-# $FreeBSD: head/textproc/py-sphinx_wikipedia/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-sphinx_wikipedia/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sphinx_wikipedia
 PORTVERSION=	20150903
@@ -11,7 +11,7 @@ COMMENT=	Sphinx extension which adds role to create links to Wikipedia articles
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.3.1:textproc/py-sphinx@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.3.1:textproc/py-sphinx@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	flavors

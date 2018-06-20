@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/butterfly/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/www/butterfly/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	butterfly
 PORTVERSION=	2.0.1
@@ -11,9 +11,9 @@ COMMENT=	Web terminal based on websocket and tornado
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}libsass>0:www/py-libsass@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}libsass>0:www/py-libsass@${PY_FLAVOR}
 
 USES=		python
 # Can't use concurrent here, it changes ETCDIR, and breaks post-install.

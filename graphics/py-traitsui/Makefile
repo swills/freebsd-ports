@@ -1,5 +1,5 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/graphics/py-traitsui/Makefile 469459 2018-05-09 17:57:12Z antoine $
+# $FreeBSD: head/graphics/py-traitsui/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	traitsui
 PORTVERSION=	6.0.0
@@ -17,7 +17,7 @@ LICENSE_FILE_LGPL21=	${WRKSRC}/image_LICENSE_Nuvola.txt
 LICENSE_FILE_EPL=	${WRKSRC}/image_LICENSE_Eclipse.txt
 # See ${WRKSRC}/image_LICENSE.txt for per file license information
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}apptools>=4.3.0:devel/py-apptools@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}apptools>=4.3.0:devel/py-apptools@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

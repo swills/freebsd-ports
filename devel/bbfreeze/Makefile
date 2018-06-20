@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/bbfreeze/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/devel/bbfreeze/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bbfreeze
 PORTVERSION=	1.1.3
@@ -13,7 +13,7 @@ COMMENT=	Module to create standalone executables from Python scripts
 
 LICENSE=	ZLIB
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}altgraph>=0.9:math/py-altgraph@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}altgraph>=0.9:math/py-altgraph@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}bbfreeze-loader>=1.1.0:devel/bbfreeze-loader@${PY_FLAVOR}
 
 USES=		python:2.7 zip

@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-bottleneck/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-bottleneck/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bottleneck
 PORTVERSION=	1.2.1
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/bottleneck/LICENSE
 
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent cython distutils

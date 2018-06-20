@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-user_agent/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/www/py-user_agent/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	user_agent
 PORTVERSION=	0.1.9
@@ -11,7 +11,7 @@ COMMENT=	Generates random, valid User-Agent values
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

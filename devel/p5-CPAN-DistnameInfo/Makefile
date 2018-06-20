@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/devel/p5-CPAN-DistnameInfo/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-CPAN-DistnameInfo/Makefile 472926 2018-06-20 19:37:09Z sunpoet $
 
 PORTNAME=	CPAN-DistnameInfo
 PORTVERSION=	0.12
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extract distribution name and version from a CPAN filename
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

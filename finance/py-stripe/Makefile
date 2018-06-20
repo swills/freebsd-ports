@@ -1,5 +1,5 @@
 # Created by: Trevor Caira <trevor@bitba.se>
-# $FreeBSD: head/finance/py-stripe/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/finance/py-stripe/Makefile 472884 2018-06-20 17:05:41Z mat $
 #
 
 PORTNAME=	stripe
@@ -14,10 +14,10 @@ COMMENT=	Stripe Python bindings
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0.8.8:www/py-requests@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycurl>=7.19:ftp/py-pycurl@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}unittest2>0:devel/py-unittest2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0.8.8:www/py-requests@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycurl>=7.19:ftp/py-pycurl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}unittest2>0:devel/py-unittest2@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

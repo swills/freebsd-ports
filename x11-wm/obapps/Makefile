@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/x11-wm/obapps/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-wm/obapps/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	obapps
 PORTVERSION=	0.1.7
@@ -16,7 +16,7 @@ COMMENT=	Graphical editor for Openbox application settings
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>=0:x11-toolkits/py-xlib@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>=0:x11-toolkits/py-xlib@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils

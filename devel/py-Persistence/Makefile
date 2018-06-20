@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Persistence/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-Persistence/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Persistence
 PORTVERSION=	2.13.2
@@ -13,8 +13,8 @@ COMMENT=	Persistent ExtensionClass
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ExtensionClass>=0:devel/py-ExtensionClass@${FLAVOR} \
-		zodb${PYTHON_PKGNAMESUFFIX}>=0:databases/zodb3@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ExtensionClass>=0:devel/py-ExtensionClass@${PY_FLAVOR} \
+		zodb${PYTHON_PKGNAMESUFFIX}>=0:databases/zodb3@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

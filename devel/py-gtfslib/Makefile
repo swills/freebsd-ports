@@ -1,5 +1,5 @@
 # Created by: Loïc BARTOLETTI <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/devel/py-gtfslib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-gtfslib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gtfslib
 PORTVERSION=	1.0.0
@@ -12,12 +12,12 @@ COMMENT=	Library for reading GTFS-based transit data in Python
 
 LICENSE=	GPLv3+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy11>=0.6.1:databases/py-sqlalchemy11@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}docopt>=0.6:devel/py-docopt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.18:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyqtree>=0.24:devel/py-pyqtree@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyshp>=1.2.12:devel/py-pyshp@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy11>=0.6.1:databases/py-sqlalchemy11@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}docopt>=0.6:devel/py-docopt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.18:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyqtree>=0.24:devel/py-pyqtree@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyshp>=1.2.12:devel/py-pyshp@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

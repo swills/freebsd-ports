@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net/py-twitter-tools/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-twitter-tools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	twitter
 PORTVERSION=	1.17.1
@@ -11,7 +11,7 @@ PKGNAMESUFFIX=	-tools
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Python API and command-line toolset for Twitter
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

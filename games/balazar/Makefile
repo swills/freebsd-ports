@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/balazar/Makefile 459349 2018-01-18 14:44:07Z sunpoet $
+# $FreeBSD: head/games/balazar/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	balazar
 PORTVERSION=	0.3.4
@@ -15,12 +15,12 @@ LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libcal3d.so:graphics/cal3d \
 		libfreetype.so:print/freetype2
-RUN_DEPENDS=	soya_editor:graphics/py-soya3d@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openal>0:audio/py-openal@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}vorbis>0:audio/py-vorbis@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tofu>0:net/py-tofu@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cerealizer>0:security/py-cerealizer@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}soya3d>0:graphics/py-soya3d@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openal>0:audio/py-openal@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}vorbis>0:audio/py-vorbis@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tofu>0:net/py-tofu@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cerealizer>0:security/py-cerealizer@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

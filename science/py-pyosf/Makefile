@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-pyosf/Makefile 465630 2018-03-26 19:34:27Z antoine $
+# $FreeBSD: head/science/py-pyosf/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyosf
 DISTVERSIONPREFIX=	v
@@ -11,8 +11,8 @@ COMMENT=	Python lib for synching with OpenScienceFramework projects
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

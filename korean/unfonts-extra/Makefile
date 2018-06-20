@@ -1,19 +1,22 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/korean/unfonts-extra/Makefile 381982 2015-03-23 05:47:53Z jkim $
+# $FreeBSD: head/korean/unfonts-extra/Makefile 472897 2018-06-20 18:49:52Z jkim $
 
-PORTVERSION=	1.0.1
-PORTREVISION=	3
-MASTER_SITES=	http://kldp.net/frs/download.php/1435/
+PORTREVISION=	0
+
+FILEID=		2608
 
 FONTCAT=	extra
-FONTLIST=	UnJamoBatang \
+FONTLIST=	UnBom \
+		UnJamoBatang \
 		UnJamoDotum \
 		UnJamoNovel \
 		UnJamoSora \
 		UnPen \
 		UnPenheulim \
+		UnPilgia \
 		UnShinmun \
 		UnTaza \
+		UnVada \
 		UnYetgul
 
 MASTERDIR=	${.CURDIR}/../unfonts-core

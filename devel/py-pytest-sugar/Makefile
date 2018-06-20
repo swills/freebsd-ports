@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-sugar/Makefile 464514 2018-03-14 18:10:50Z sunpoet $
+# $FreeBSD: head/devel/py-pytest-sugar/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytest-sugar
 PORTVERSION=	0.9.1
@@ -13,8 +13,8 @@ COMMENT=	Changes the look and feel of pytest
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.9:devel/py-pytest@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}termcolor>=1.1.0:devel/py-termcolor@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.9:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}termcolor>=1.1.0:devel/py-termcolor@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-atomiclong/Makefile 458167 2018-01-05 20:02:03Z yuri $
+# $FreeBSD: head/devel/py-atomiclong/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	atomiclong
 PORTVERSION=	0.1.1
@@ -13,8 +13,8 @@ COMMENT=	AtomicLong type using CFFI
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

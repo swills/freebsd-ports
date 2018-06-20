@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/py-avahi/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net/py-avahi/Makefile 472884 2018-06-20 17:05:41Z mat $
 #   $MCom: ports/net/py-avahi/Makefile,v 1.4 2007/07/31 18:24:13 ahze Exp $
 
 PORTREVISION=	8
@@ -10,11 +10,11 @@ PKGNAMESUFFIX=	# empty
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Python interface to the Avahi mDNS system
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${FLAVOR} \
-		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/py-dbus@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/py-dbus@${PY_FLAVOR}
 LIB_DEPENDS=	libavahi-client.so:net/avahi-app
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${FLAVOR} \
-		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/py-dbus@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/py-dbus@${PY_FLAVOR}
 
 MASTERDIR=	${.CURDIR}/../avahi-app
 BUILD_WRKSRC=	${WRKSRC}/avahi-python

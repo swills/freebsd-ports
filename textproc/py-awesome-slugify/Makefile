@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-awesome-slugify/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-awesome-slugify/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	awesome-slugify
 PORTVERSION=	1.6.5
@@ -11,9 +11,9 @@ COMMENT=	Flexible slugify function
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}regex>=0:textproc/py-regex@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}unidecode>=0.04.14:converters/py-unidecode@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}regex>=0:textproc/py-regex@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}unidecode>=0.04.14:converters/py-unidecode@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

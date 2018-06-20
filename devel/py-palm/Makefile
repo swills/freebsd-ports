@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/py-palm/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/py-palm/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	palm
 PORTVERSION=	0.1.7
@@ -13,8 +13,8 @@ COMMENT=	Fast Protocol Buffer library for Python
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}protobuf>0:devel/py-protobuf@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simpleparse>0:devel/py-simpleparse@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}protobuf>0:devel/py-protobuf@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simpleparse>0:devel/py-simpleparse@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

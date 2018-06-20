@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/www/py-django-babel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-babel/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-babel
 PORTVERSION=	0.5.1
@@ -13,8 +13,8 @@ COMMENT=	Utilities for using Babel in django
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Babel>=0:devel/py-babel@${FLAVOR}
+RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Babel>=0:devel/py-babel@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

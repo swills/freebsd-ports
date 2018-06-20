@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/py-btchip-python/Makefile 467769 2018-04-19 14:59:29Z ehaupt $
+# $FreeBSD: head/security/py-btchip-python/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	btchip-python
 PORTVERSION=	0.1.27
@@ -13,10 +13,10 @@ COMMENT=	Python communication library for Ledger Hardware Wallet
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mnemonic>=0:security/py-mnemonic@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyscard>0:security/py-pyscard@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}hidapi>=0:comms/py-hidapi@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mnemonic>=0:security/py-mnemonic@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyscard>0:security/py-pyscard@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}hidapi>=0:comms/py-hidapi@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

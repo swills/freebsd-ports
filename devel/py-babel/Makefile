@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/devel/py-babel/Makefile 468241 2018-04-24 20:27:06Z bofh $
+# $FreeBSD: head/devel/py-babel/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Babel
 PORTVERSION=	2.5.3
@@ -13,7 +13,7 @@ COMMENT=	Collection of tools for internationalizing Python applications
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

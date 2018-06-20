@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/x11-toolkits/py-gui/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/py-gui/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gui
 PORTVERSION=	1.7.2
@@ -12,7 +12,7 @@ DISTNAME=	PyGUI-${PORTVERSION}-1
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	Cross-platform pythonic GUI API
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES OPENGL
 
@@ -24,7 +24,7 @@ DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 EXAMPLESDIR=	${PREFIX}/share/examples/${PKGNAMEPREFIX}${PORTNAME}
 WRKSRC=		${WRKDIR}/PyGUI-${PORTVERSION}
 
-OPENGL_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/gdkgl/__init__.py:x11-toolkits/py-gtkglext@${FLAVOR}
+OPENGL_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/gdkgl/__init__.py:x11-toolkits/py-gtkglext@${PY_FLAVOR}
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|"GUI.Cocoa",||g' ${WRKSRC}/setup.py

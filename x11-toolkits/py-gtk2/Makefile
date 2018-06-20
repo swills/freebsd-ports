@@ -1,5 +1,5 @@
 # Created by: marc@informatik.uni-bremen.de
-# $FreeBSD: head/x11-toolkits/py-gtk2/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/x11-toolkits/py-gtk2/Makefile 472884 2018-06-20 17:05:41Z mat $
 #   $MCom: ports/x11-toolkits/py-gtk2/Makefile,v 1.78 2011/04/01 12:35:27 kwm Exp $
 
 PORTNAME=	gtk
@@ -15,8 +15,8 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Set of Python bindings for GTK+
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/cairo/__init__.py:graphics/py-cairo@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cairo/__init__.py:graphics/py-cairo@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/cairo/__init__.py:graphics/py-cairo@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cairo/__init__.py:graphics/py-cairo@${PY_FLAVOR}
 
 USES=		gettext gmake libtool pathfix pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	libglade2 pygobject

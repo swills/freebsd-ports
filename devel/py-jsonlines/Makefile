@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-jsonlines/Makefile 463054 2018-02-26 22:29:50Z sunpoet $
+# $FreeBSD: head/devel/py-jsonlines/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	jsonlines
 PORTVERSION=	1.2.0
@@ -13,7 +13,7 @@ COMMENT=	Library with helpers for the jsonlines file format
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

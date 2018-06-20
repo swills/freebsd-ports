@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-biplist/Makefile 469302 2018-05-07 17:28:09Z antoine $
+# $FreeBSD: head/devel/py-biplist/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	biplist
 PORTVERSION=	1.0.3
@@ -13,8 +13,8 @@ COMMENT=	Library for reading/writing binary plists
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

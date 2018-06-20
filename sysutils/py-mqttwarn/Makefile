@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-mqttwarn/Makefile 465638 2018-03-26 21:23:45Z dvl $
+# $FreeBSD: head/sysutils/py-mqttwarn/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mqttwarn
 DISTVERSIONPREFIX=	v
@@ -13,8 +13,8 @@ COMMENT=	Subscribe to MQTT topics and notify pluggable services
 LICENSE=	EPL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paho-mqtt>=0:net/py-paho-mqtt@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}supervisor>=0:sysutils/py-supervisor@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paho-mqtt>=0:net/py-paho-mqtt@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}supervisor>=0:sysutils/py-supervisor@${PY_FLAVOR}
 
 USES=		python:2.7 shebangfix
 USE_PYTHON=	flavors

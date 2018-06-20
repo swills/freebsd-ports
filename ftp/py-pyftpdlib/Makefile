@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/py-pyftpdlib/Makefile 469215 2018-05-06 13:00:24Z lwhsu $
+# $FreeBSD: head/ftp/py-pyftpdlib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyftpdlib
 PORTVERSION=	1.5.4
@@ -21,8 +21,8 @@ OPTIONS_DEFAULT=	SENDFILE OPENSSL
 SENDFILE_DESC=		Enable sendfile(2) support
 OPENSSL_DESC=		Enable FTP over SSL/TLS (RFC4217)
 
-SENDFILE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysendfile>0:net/py-pysendfile@${FLAVOR}
-OPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${FLAVOR}
+SENDFILE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysendfile>0:net/py-pysendfile@${PY_FLAVOR}
+OPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR}
 
 EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}
 PORTEXAMPLES=	*

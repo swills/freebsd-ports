@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 472394 2018-06-14 19:07:49Z swills $
+# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	google-compute-engine
 DISTVERSION=	2.8.3
@@ -12,9 +12,9 @@ COMMENT=	Guest Environment for Google Compute Engine
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}boto>0:devel/py-boto@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}netaddr>0:net/py-netaddr@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}netifaces>0:net/py-netifaces@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}boto>0:devel/py-boto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}netaddr>0:net/py-netaddr@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}netifaces>0:net/py-netifaces@${PY_FLAVOR} \
 		google_oslogin_control:sysutils/google-compute-engine-oslogin \
 		sudo:security/sudo
 

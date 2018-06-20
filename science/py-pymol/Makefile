@@ -1,5 +1,5 @@
 # Created by: Nakata Maho <chat95@mbox.kyoto-inet.or.jp>
-# $FreeBSD: head/science/py-pymol/Makefile 468048 2018-04-22 18:29:51Z sunpoet $
+# $FreeBSD: head/science/py-pymol/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pymol
 DISTVERSIONPREFIX=	v
@@ -21,8 +21,8 @@ BUILD_DEPENDS=	${PYNUMPY}
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libpng.so:graphics/png \
 		libmsgpackc.so:devel/msgpack
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pmw>0:x11-toolkits/py-Pmw@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Pmw>0:x11-toolkits/py-Pmw@${PY_FLAVOR} \
 		${PYNUMPY}
 
 USES=		compiler:c++11-lang python:2.7 shebangfix tar:bz2

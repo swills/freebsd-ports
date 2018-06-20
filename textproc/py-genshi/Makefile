@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/textproc/py-genshi/Makefile 457144 2017-12-24 11:15:01Z sunpoet $
+# $FreeBSD: head/textproc/py-genshi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Genshi
 PORTVERSION=	0.7
@@ -20,6 +20,6 @@ BABEL_DESC=	I18n support through the Babel plugin
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-BABEL_RUN_DEPENDS=	${PKGNAMEPREFIX}Babel>=0.9.6:devel/py-babel@${FLAVOR}
+BABEL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=0.9.6:devel/py-babel@${PY_FLAVOR}
 
 .include <bsd.port.mk>

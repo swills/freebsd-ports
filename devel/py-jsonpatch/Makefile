@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-jsonpatch/Makefile 465551 2018-03-26 00:03:43Z yuri $
+# $FreeBSD: head/devel/py-jsonpatch/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	jsonpatch
 DISTVERSION=	1.21
@@ -11,7 +11,7 @@ COMMENT=	Apply JSON-Patches (RFC 6902)
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonpointer>0:devel/py-jsonpointer@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonpointer>0:devel/py-jsonpointer@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

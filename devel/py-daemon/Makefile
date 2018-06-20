@@ -1,5 +1,5 @@
 # Created by: jessekempf@gmail.com
-# $FreeBSD: head/devel/py-daemon/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-daemon/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	daemon
 PORTVERSION=	2.0.6
@@ -13,8 +13,8 @@ COMMENT=	Well-behaved daemon framework for Python
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0:textproc/py-docutils@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lockfile>=0.10:devel/py-lockfile@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0:textproc/py-docutils@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lockfile>=0.10:devel/py-lockfile@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

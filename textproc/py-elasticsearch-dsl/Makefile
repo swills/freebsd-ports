@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch-dsl/Makefile 470098 2018-05-16 00:01:32Z sunpoet $
+# $FreeBSD: head/textproc/py-elasticsearch-dsl/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	elasticsearch-dsl
 PORTVERSION=	6.1.0
@@ -13,10 +13,10 @@ COMMENT=	High level Python client for Elasticsearch
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}elasticsearch>=6.1.0:textproc/py-elasticsearch@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}elasticsearch>=6.1.0:textproc/py-elasticsearch@${PY_FLAVOR} \
 		${PY_IPADDRESS} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

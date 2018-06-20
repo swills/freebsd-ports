@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-XStatic-jQuery/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-XStatic-jQuery/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	XStatic-jQuery
 PORTVERSION=	1.10.2.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	JavaScript library for DOM operations (jquery)
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

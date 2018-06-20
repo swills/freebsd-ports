@@ -1,5 +1,5 @@
 # Created by: Robert Noland <rnoland@FreeBSD.org>
-# $FreeBSD: head/x11-wm/compizconfig-python/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/x11-wm/compizconfig-python/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	compizconfig-python
 PORTVERSION=	0.8.4
@@ -13,7 +13,7 @@ COMMENT=	Python bindings for the compizconfig library
 BUILD_DEPENDS=	\
 	${LOCALBASE}/libdata/pkgconfig/compiz.pc:x11-wm/compiz \
 	${LOCALBASE}/libdata/pkgconfig/libcompizconfig.pc:x11-wm/libcompizconfig \
-	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${FLAVOR}
+	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 GNU_CONFIGURE=	yes

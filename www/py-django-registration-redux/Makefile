@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-registration-redux/Makefile 470414 2018-05-19 15:36:01Z joneum $
+# $FreeBSD: head/www/py-django-registration-redux/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-registration-redux
 PORTVERSION=	2.4
@@ -13,7 +13,7 @@ COMMENT=	User-registration application for Django
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.11:www/py-django@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.11:www/py-django@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

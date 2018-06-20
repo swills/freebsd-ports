@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-geoalchemy/Makefile 459859 2018-01-24 18:45:16Z sunpoet $
+# $FreeBSD: head/databases/py-geoalchemy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	geoalchemy
 PORTVERSION=	0.7.2
@@ -14,7 +14,7 @@ COMMENT=	Using SQLAlchemy with Spatial Databases
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy12>=0.6.1:databases/py-sqlalchemy12@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy12>=0.6.1:databases/py-sqlalchemy12@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

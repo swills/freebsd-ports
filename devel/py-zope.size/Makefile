@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.size/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zope.size/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.size
 PORTVERSION=	3.5.0
@@ -13,8 +13,8 @@ COMMENT=	Interfaces and simple adapter that give the size of an object
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>=0:textproc/py-zope.i18nmessageid@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>=0:textproc/py-zope.i18nmessageid@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

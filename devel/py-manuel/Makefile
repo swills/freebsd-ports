@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-manuel/Makefile 459698 2018-01-22 20:31:56Z rm $
+# $FreeBSD: head/devel/py-manuel/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	manuel
 PORTVERSION=	1.9.0
@@ -13,7 +13,7 @@ COMMENT=	Lets you build tested documentation
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

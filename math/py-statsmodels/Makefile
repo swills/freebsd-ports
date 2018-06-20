@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-statsmodels/Makefile 470385 2018-05-19 11:07:02Z sunpoet $
+# $FreeBSD: head/math/py-statsmodels/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	statsmodels
 PORTVERSION=	0.9.0
@@ -13,9 +13,9 @@ COMMENT=	Complement to SciPy for statistical computations
 LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}pandas>=0.14:math/py-pandas@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}patsy>=0.4.0:math/py-patsy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.14:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pandas>=0.14:math/py-pandas@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}patsy>=0.4.0:math/py-patsy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.14:science/py-scipy@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES

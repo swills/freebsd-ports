@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/devel/py-hgsubversion/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-hgsubversion/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	hgsubversion
 PORTVERSION=	1.8.6
@@ -23,9 +23,9 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MSUBVERTPY}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subvertpy>=0:devel/py-subvertpy@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subvertpy>=0:devel/py-subvertpy@${PY_FLAVOR}
 .else
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subversion>=0:devel/py-subversion@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subversion>=0:devel/py-subversion@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.mk>

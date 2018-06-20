@@ -1,5 +1,5 @@
 # Created by: Ulf Lilleengen
-# $FreeBSD: head/security/py-paramiko/Makefile 459547 2018-01-20 20:11:21Z sbz $
+# $FreeBSD: head/security/py-paramiko/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	paramiko
 PORTVERSION=	2.4.0
@@ -13,11 +13,11 @@ COMMENT=	Python SSH2 protocol library
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pynacl>0:security/py-pynacl@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pynacl>0:security/py-pynacl@${PY_FLAVOR}
 
 USES?=		python
 USE_PYTHON=	autoplist concurrent distutils

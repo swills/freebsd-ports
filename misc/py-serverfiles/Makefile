@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-serverfiles/Makefile 472171 2018-06-11 08:28:13Z yuri $
+# $FreeBSD: head/misc/py-serverfiles/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	serverfiles
 DISTVERSION=	0.2.1
@@ -11,7 +11,7 @@ COMMENT=	Access files on a HTTP server and store them locally for reuse
 
 LICENSE=	GPLv3+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.11.1:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.11.1:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

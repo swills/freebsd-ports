@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/archivers/py-libarchive-c/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/archivers/py-libarchive-c/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	libarchive-c
 PORTVERSION=	2.2
@@ -11,7 +11,7 @@ COMMENT=	Python interface to libarchive
 
 LICENSE=	LGPL20+
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

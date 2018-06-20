@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-solo/Makefile 469710 2018-05-12 07:14:52Z miwi $
+# $FreeBSD: head/www/py-django-solo/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-solo
 PORTVERSION=	1.1.3
@@ -12,7 +12,7 @@ COMMENT=	Helps working with singletons
 LICENSE=	CC-BY-3.0
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>1.6:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>1.6:www/py-django111@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

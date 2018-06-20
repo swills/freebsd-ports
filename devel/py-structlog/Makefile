@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/devel/py-structlog/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-structlog/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	structlog
 PORTVERSION=	17.2.0
@@ -15,8 +15,8 @@ LICENSE_COMB=	dual
 LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.apache2
 LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.mit
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>=0.3.3:devel/py-colorama@${FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>=0.3.3:devel/py-colorama@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

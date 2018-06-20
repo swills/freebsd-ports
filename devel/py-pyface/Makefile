@@ -1,5 +1,5 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-pyface/Makefile 471493 2018-06-03 12:57:46Z miwi $
+# $FreeBSD: head/devel/py-pyface/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyface
 PORTVERSION=	6.0.0
@@ -17,7 +17,7 @@ LICENSE_FILE_EPL=	${WRKSRC}/image_LICENSE_Eclipse.txt
 LICENSE_FILE_LGPL3=	${WRKSRC}/image_LICENSE_OOo.txt
 #See file ${WRKSRC}/image_LICENSE.txt for files with non BSD3CLAUSE licenses
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=4.5.0:devel/py-traits@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=4.5.0:devel/py-traits@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-plastex/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-plastex/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plastex
 PORTVERSION=	1.0.0
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	LaTeX Document Processing Framework
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tiarno

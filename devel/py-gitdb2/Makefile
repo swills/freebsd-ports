@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-gitdb2/Makefile 456448 2017-12-15 23:53:49Z sunpoet $
+# $FreeBSD: head/devel/py-gitdb2/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gitdb2
 PORTVERSION=	2.0.3
@@ -13,7 +13,7 @@ COMMENT=	Git Object Database
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}smmap2>=2.0.0:devel/py-smmap2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}smmap2>=2.0.0:devel/py-smmap2@${PY_FLAVOR}
 
 CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}gitdb
 

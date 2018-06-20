@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-openpiv/Makefile 466210 2018-04-02 08:43:54Z makc $
+# $FreeBSD: head/science/py-openpiv/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	openpiv
 PORTVERSION=	0.20.9
@@ -14,11 +14,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY} \
 		${PY_FUTURE} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0:science/py-scipy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scikit-image>=0.12.0:graphics/py-scikit-image@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}progressbar2>=3.8.1:misc/py-progressbar2@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>=0:science/py-scipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scikit-image>=0.12.0:graphics/py-scikit-image@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}progressbar2>=3.8.1:misc/py-progressbar2@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils cython cython_run
@@ -33,7 +33,7 @@ post-patch:
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3000
-PY_FUTURE=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${FLAVOR}
+PY_FUTURE=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${PY_FLAVOR}
 .else
 PY_FUTURE=
 .endif

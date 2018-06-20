@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-ddgr/Makefile 472639 2018-06-17 21:39:21Z yuri $
+# $FreeBSD: head/www/py-ddgr/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ddgr
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Command line tool for performing DuckDuckGo web searches
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.4.3:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.4.3:www/py-requests@${PY_FLAVOR}
 
 USES=		python:3.3+ shebangfix
 USE_GITHUB=	yes

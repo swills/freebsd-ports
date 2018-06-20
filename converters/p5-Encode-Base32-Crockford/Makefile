@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/p5-Encode-Base32-Crockford/Makefile 472562 2018-06-16 18:54:06Z krion $
+# $FreeBSD: head/converters/p5-Encode-Base32-Crockford/Makefile 472931 2018-06-20 19:37:35Z sunpoet $
 
 PORTNAME=	Encode-Base32-Crockford
 PORTVERSION=	2.112991
@@ -7,7 +7,7 @@ MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bokutin@bokut.in
-COMMENT=	Encode/Decode numbers using Douglas Crockford's Base32 Encoding
+COMMENT=	Encode/Decode numbers using Douglas Crockford's Base32 Encoding #'
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	p5-Test-Warn>=0:devel/p5-Test-Warn
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

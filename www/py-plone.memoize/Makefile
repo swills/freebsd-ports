@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.memoize/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.memoize/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.memoize
 PORTVERSION=	1.1.2
@@ -12,10 +12,10 @@ COMMENT=	Decorators for caching the values of functions and methods
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.annotation>=0:devel/py-zope.annotation@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.ramcache>=0:devel/py-zope.ramcache@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.annotation>=0:devel/py-zope.annotation@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.ramcache>=0:devel/py-zope.ramcache@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

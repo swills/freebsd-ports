@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zLOG/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-zLOG/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zLOG
 PORTVERSION=	2.11.2
@@ -14,7 +14,7 @@ COMMENT=	General logging facility
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>=0:devel/py-zconfig@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>=0:devel/py-zconfig@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

@@ -1,8 +1,8 @@
 # Created by: Bartek Rutkowski <robak@FreeBSD.org>
-# $FreeBSD: head/sysutils/iocell/Makefile 442181 2017-05-31 14:13:52Z robak $
+# $FreeBSD: head/sysutils/iocell/Makefile 472864 2018-06-20 10:35:47Z robak $
 
 PORTNAME=	iocell
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 

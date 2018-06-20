@@ -1,5 +1,5 @@
 # Created by: Jose Jachuf <jjachuf@gmail.com>
-# $FreeBSD: head/print/py-pollyreports/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/print/py-pollyreports/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PollyReports
 PORTVERSION=	1.7.7
@@ -19,6 +19,6 @@ USE_PYTHON=	autoplist distutils
 OPTIONS_DEFINE=	REPORTLAB
 
 REPORTLAB_DESC=	Install Reportlab
-REPORTLAB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab>=3.0:print/py-reportlab@${FLAVOR}
+REPORTLAB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab>=3.0:print/py-reportlab@${PY_FLAVOR}
 
 .include <bsd.port.mk>

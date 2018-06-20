@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-moment/Makefile 469911 2018-05-14 15:54:31Z miwi $
+# $FreeBSD: head/www/py-flask-moment/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-Moment
 PORTVERSION=	0.6.0
@@ -12,7 +12,7 @@ COMMENT=	Format dates and times in Flask templates using moment.js
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.9:www/py-flask@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.9:www/py-flask@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

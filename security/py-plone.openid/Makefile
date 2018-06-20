@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-plone.openid/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-plone.openid/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.openid
 PORTVERSION=	2.0.4
@@ -13,11 +13,11 @@ COMMENT=	OpenID authentication support for PAS
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-openid>=0:security/py-python-openid@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}transaction>=0:devel/py-transaction@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Acquisition>=0:devel/py-Acquisition@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.PluggableAuthService>=0:security/py-Products.PluggableAuthService@${FLAVOR} \
-		zodb${PYTHON_PKGNAMESUFFIX}>=0:databases/zodb3@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-openid>=0:security/py-python-openid@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}transaction>=0:devel/py-transaction@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Acquisition>=0:devel/py-Acquisition@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.PluggableAuthService>=0:security/py-Products.PluggableAuthService@${PY_FLAVOR} \
+		zodb${PYTHON_PKGNAMESUFFIX}>=0:databases/zodb3@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zip

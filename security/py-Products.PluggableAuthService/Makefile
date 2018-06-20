@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-Products.PluggableAuthService/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-Products.PluggableAuthService/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Products.PluggableAuthService
 PORTVERSION=	1.11.0
@@ -13,8 +13,8 @@ COMMENT=	Pluggable Zope2 authentication / authorization framework
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.PluginRegistry>=0:devel/py-Products.PluginRegistry@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.PluginRegistry>=0:devel/py-Products.PluginRegistry@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zope

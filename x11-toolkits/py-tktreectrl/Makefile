@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-tktreectrl/Makefile 466428 2018-04-04 10:57:28Z sunpoet $
+# $FreeBSD: head/x11-toolkits/py-tktreectrl/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tktreectrl
 DISTVERSION=	2.0.2
@@ -15,8 +15,8 @@ LICENSE=	PD
 
 # x11-toolkits/tktreectrl does not provide libtreectrl.so
 LIB_DEPENDS=	libtreectrl.so.1:x11-toolkits/tktreectrl
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pmw>=0:x11-toolkits/py-Pmw@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pmw>=0:x11-toolkits/py-Pmw@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 USES=		python tk:run zip
 USE_PYTHON=	autoplist distutils

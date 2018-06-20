@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-raven/Makefile 470681 2018-05-23 07:39:21Z pi $
+# $FreeBSD: head/devel/py-raven/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	raven
 PORTVERSION=	6.8.0
@@ -21,7 +21,7 @@ USE_PYTHON=	autoplist concurrent distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3200
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}contextlib2>0:devel/py-contextlib2@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}contextlib2>0:devel/py-contextlib2@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

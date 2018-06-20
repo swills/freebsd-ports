@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-RPyC/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-RPyC/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	rpyc
 PORTVERSION=	3.3.0
@@ -16,7 +16,7 @@ LICENSE=	MIT
 OPTIONS_DEFINE=	PLUMBUM
 OPTIONS_DEFAULT=PLUMBUM
 
-PLUMBUM_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plumbum>0:sysutils/py-plumbum@${FLAVOR}
+PLUMBUM_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plumbum>0:sysutils/py-plumbum@${PY_FLAVOR}
 PLUMBUM_DESC=	 Required for features like rpyc_classic.py and zero deploy
 
 USES=		python

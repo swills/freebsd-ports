@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/py-s3cmd/Makefile 468162 2018-04-24 00:19:52Z bofh $
+# $FreeBSD: head/net/py-s3cmd/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	s3cmd
 DISTVERSION=	2.0.1
@@ -12,7 +12,7 @@ COMMENT=	Unix-like tools to manipulate stored files from the command line
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

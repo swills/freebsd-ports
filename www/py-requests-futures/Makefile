@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-requests-futures/Makefile 461429 2018-02-10 19:59:31Z sunpoet $
+# $FreeBSD: head/www/py-requests-futures/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	requests-futures
 PORTVERSION=	0.9.7
@@ -16,7 +16,7 @@ USES=		python
 USE_PYTHON=	autoplist distutils
 
 RUN_DEPENDS=	${PY_FUTURES} \
-		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

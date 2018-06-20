@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-invoke/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-invoke/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	invoke
 PORTVERSION=	0.17.0
@@ -16,10 +16,10 @@ LICENSE=	BSD2CLAUSE
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}semantic_version>0:devel/py-semantic_version@${FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}twine>0:devel/py-twine@${FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}semantic_version>0:devel/py-semantic_version@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}twine>0:devel/py-twine@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${PY_FLAVOR}
 
 NO_ARCH=	YES
 

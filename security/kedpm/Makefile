@@ -1,5 +1,5 @@
 # Created by: Tim Welch <ports@thepentagon.org>
-# $FreeBSD: head/security/kedpm/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/kedpm/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	kedpm
 PORTVERSION=	0.4.0
@@ -12,7 +12,7 @@ COMMENT=	Simple application for managing personal data
 
 LICENSE=	GPLv2+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

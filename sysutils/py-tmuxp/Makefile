@@ -1,5 +1,5 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/sysutils/py-tmuxp/Makefile 465843 2018-03-28 19:59:15Z sunpoet $
+# $FreeBSD: head/sysutils/py-tmuxp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tmuxp
 DISTVERSION=	1.4.0
@@ -13,10 +13,10 @@ COMMENT=	Session manager for tmux
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=6.7:devel/py-click@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}colorama>=0.3.9:devel/py-colorama@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}kaptan>=0.5.7:devel/py-kaptan@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}libtmux>=0.7.7:devel/py-libtmux@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=6.7:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}colorama>=0.3.9:devel/py-colorama@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}kaptan>=0.5.7:devel/py-kaptan@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}libtmux>=0.7.7:devel/py-libtmux@${PY_FLAVOR} \
 		tmux:sysutils/tmux
 
 USES=		python
