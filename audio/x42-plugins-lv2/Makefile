@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 472099 2018-06-09 23:10:49Z yuri $
+# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 472826 2018-06-19 21:48:16Z yuri $
 
 PORTNAME=	x42-plugins
 DISTVERSION=	20180320 # the version is published here: http://gareus.org/misc/x42-plugins.php
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://gareus.org/misc/x42-plugins/
 PKGNAMESUFFIX=	-lv2
@@ -42,6 +42,13 @@ OPTIONS_DEFAULT_amd64=	SSE
 OPTIONS_DEFAULT_i386=	SSE
 
 SSE_MAKE_ARGS=	PORT_SIMD_FLAGS="-msse -msse2 -mfpmath=sse"
+
+# It suffers from the regression in clang-6: https://bugs.llvm.org/show_bug.cgi?id=36915
+LLVM_VER=	50
+BUILD_DEPENDS+=	clang${LLVM_VER}:devel/llvm${LLVM_VER}
+CPP=		clang-cpp${LLVM_VER}
+CC=		clang${LLVM_VER}
+CXX=		clang++${LLVM_VER}
 
 post-patch:
 	@${REINPLACE_CMD} 's| -O3||' \

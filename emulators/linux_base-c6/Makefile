@@ -1,9 +1,9 @@
 # Created by: Svyatoslav Lempert <svyatoslav.lempert@gmail dot com>
-# $FreeBSD: head/emulators/linux_base-c6/Makefile 467593 2018-04-17 10:14:25Z tijl $
+# $FreeBSD: head/emulators/linux_base-c6/Makefile 472820 2018-06-19 20:30:59Z amdmi3 $
 
 PORTNAME=	c6
 PORTVERSION=	${LINUX_DIST_VER}
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	emulators linux
 PKGNAMEPREFIX=	linux_base-
 BIN_DISTNAMES=	bash-4.1.2-48.el6 \
@@ -121,7 +121,7 @@ REMOVE_FILES=	bin/df bin/su etc/exports etc/group etc/gshadow etc/motd \
 
 .include <bsd.port.pre.mk>
 
-.if ${LINUX_ARCH} == x86_64 && ${OPSYS} == FreeBSD && ${OSVERSION} >= 11000105
+.if ${LINUX_ARCH} == x86_64 && ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100105
 SYSCTLMIB=	kern.features.linux64
 .else
 SYSCTLMIB=	compat.linux.osrelease

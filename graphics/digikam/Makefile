@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/digikam/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/graphics/digikam/Makefile 472789 2018-06-19 14:00:07Z tcberner $
 
 PORTNAME=	digikam
 DISTVERSION=	5.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DIST_SUBDIR=	KDE/digikam/${PORTVERSION}

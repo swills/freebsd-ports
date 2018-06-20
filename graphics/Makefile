@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 472174 2018-06-11 08:49:18Z yuri $
+# $FreeBSD: head/graphics/Makefile 472845 2018-06-20 05:26:56Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -161,6 +161,7 @@
     SUBDIR += electrix
     SUBDIR += embree
     SUBDIR += enblend
+    SUBDIR += engauge-digitizer
     SUBDIR += entangle
     SUBDIR += eog
     SUBDIR += eog-plugins

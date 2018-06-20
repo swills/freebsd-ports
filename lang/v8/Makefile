@@ -1,5 +1,5 @@
 # Created by: siasia
-# $FreeBSD: head/lang/v8/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/lang/v8/Makefile 472824 2018-06-19 21:46:26Z sunpoet $
 
 PORTNAME=	v8
 PORTVERSION=	3.18.5
@@ -39,6 +39,10 @@ CXXFLAGS+=	-Wno-unused-const-variable
 CXXFLAGS+=	-Wno-tautological-undefined-compare
 .if ${COMPILER_VERSION} >= 36
 CXXFLAGS+=	-Wno-unused-local-typedef
+.if ${COMPILER_VERSION} >= 60
+CXXFLAGS+=	-Wno-null-pointer-arithmetic -Wno-vexing-parse
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-src-stub-cache.cc
+.endif
 .endif
 .endif
 .endif

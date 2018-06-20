@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 472572 2018-06-16 22:08:52Z yuri $
+# $FreeBSD: head/devel/Makefile 472846 2018-06-20 06:08:08Z yuri $
 #
 
     COMMENT = Development utilities
@@ -3338,6 +3338,7 @@
     SUBDIR += p5-Scalar-String
     SUBDIR += p5-Scalar-Util-LooksLikeNumber
     SUBDIR += p5-Scalar-Util-Numeric
+    SUBDIR += p5-Scope-Container
     SUBDIR += p5-Scope-Guard
     SUBDIR += p5-Scope-Upper
     SUBDIR += p5-Script-isAperlScript
@@ -3611,6 +3612,7 @@
     SUBDIR += p5-Test-Timer
     SUBDIR += p5-Test-TinyMocker
     SUBDIR += p5-Test-Trap
+    SUBDIR += p5-Test-UNIXSock
     SUBDIR += p5-Test-Unit
     SUBDIR += p5-Test-UseAllModules
     SUBDIR += p5-Test-Version
@@ -4635,6 +4637,7 @@
     SUBDIR += py-jupyter_client
     SUBDIR += py-jupyter_console
     SUBDIR += py-jupyter_core
+    SUBDIR += py-jupyterlab_launcher
     SUBDIR += py-kaitaistruct
     SUBDIR += py-kaptan
     SUBDIR += py-kayako
@@ -5052,6 +5055,7 @@
     SUBDIR += py-testinfra
     SUBDIR += py-testoob
     SUBDIR += py-testpath
+    SUBDIR += py-testrepository
     SUBDIR += py-testresources
     SUBDIR += py-testscenarios
     SUBDIR += py-testtools

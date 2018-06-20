@@ -1,8 +1,8 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/knot-resolver/Makefile 468167 2018-04-24 00:49:55Z dbaio $
+# $FreeBSD: head/dns/knot-resolver/Makefile 472842 2018-06-20 03:49:20Z pi $
 
 PORTNAME=	knot-resolver
-DISTVERSION=	2.1.1
+DISTVERSION=	2.3.0
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://secure.nic.cz/files/knot-resolver/ \
 		https://dns.company/downloads/knot-resolver/
@@ -86,7 +86,7 @@ PORTDOCS=	AUTHORS COPYING CodingStyle README.md
 
 STRIP_TARGETS=	sbin/kresd			\
 		sbin/kresc			\
-		lib/libkres.so.6		\
+		lib/libkres.so.7		\
 		lib/kdns_modules/ahocorasick.so	\
 		lib/kdns_modules/cookies.so	\
 		lib/kdns_modules/dnstap.so	\

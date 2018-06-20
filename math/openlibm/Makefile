@@ -1,9 +1,9 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/math/openlibm/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/math/openlibm/Makefile 472808 2018-06-19 17:56:19Z swills $
 
 PORTNAME=	openlibm
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.5.5
+DISTVERSION=	0.6.0
 CATEGORIES=	math
 MASTER_SITES=	GH
 
@@ -23,7 +23,7 @@ BROKEN_powerpc64=	fails to build: gmake: clang: Command not found
 
 USES=	gmake
 USE_GITHUB=	yes
-GH_ACCOUNT=	JuliaLang
+GH_ACCOUNT=	JuliaMath
 GH_PROJECT=	openlibm
 
 USE_LDCONFIG=	yes

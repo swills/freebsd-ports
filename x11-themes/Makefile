@@ -1,14 +1,12 @@
-# $FreeBSD: head/x11-themes/Makefile 470398 2018-05-19 11:08:09Z tcberner $
+# $FreeBSD: head/x11-themes/Makefile 472790 2018-06-19 14:07:01Z tcberner $
 #
 
     COMMENT = X11 themes
 
     SUBDIR += adapta-backgrounds
     SUBDIR += adapta-gtk-theme
-    SUBDIR += adwaita-common
     SUBDIR += adwaita-icon-theme
-    SUBDIR += adwaita-qt4
-    SUBDIR += adwaita-qt5
+    SUBDIR += adwaita-qt
     SUBDIR += arc-gruvbox-theme
     SUBDIR += audacious-skins
     SUBDIR += beastie

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 472582 2018-06-17 01:33:49Z yuri $
+# $FreeBSD: head/security/Makefile 472837 2018-06-20 01:38:58Z miwi $
 #
 
     COMMENT = Security tools
@@ -945,6 +945,7 @@
     SUBDIR += py-google-auth
     SUBDIR += py-gpgme
     SUBDIR += py-gpsoauth
+    SUBDIR += py-gssapi
     SUBDIR += py-halberd
     SUBDIR += py-hkdf
     SUBDIR += py-htpasswd
