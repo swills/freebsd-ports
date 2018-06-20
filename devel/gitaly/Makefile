@@ -16,10 +16,10 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 		rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
 		rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
-		rubygem-gitaly-proto>=0.99.0:net/rubygem-gitaly-proto \
+		rubygem-gitaly-proto099>=0.99.0:net/rubygem-gitaly-proto099 \
 		rubygem-activesupport50>=5.0.2:devel/rubygem-activesupport50 \
 		rubygem-rdoc>=4.2:devel/rubygem-rdoc \
-		rubygem-gitlab-gollum-lib>=4.2:www/rubygem-gitlab-gollum-lib-gitlab \
+		rubygem-gitlab-gollum-lib>=4.2:www/rubygem-gitlab-gollum-lib \
 		rubygem-gitlab-gollum-rugged_adapter>=0.4.4:www/rubygem-gitlab-gollum-rugged_adapter \
 		rubygem-grpc>=1.11.0:net/rubygem-grpc \
 		rubygem-sentry-raven>=2.7.2:devel/rubygem-sentry-raven \
@@ -39,7 +39,7 @@ USE_RUBY=	yes
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find this here: https://gitlab.com/gitlab-org/gitaly/tags
-GL_COMMIT=	d779c028099f79360209b92473c201e07721b885
+GL_COMMIT=	15606d3061414479453534814d32132bd9411617
 
 post-patch:
 	${MV} ${WRKSRC}/config.toml.example ${WRKSRC}/config.toml.sample
