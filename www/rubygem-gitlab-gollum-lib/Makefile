@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	gitlab-gollum-lib
-PORTVERSION=	4.2.7.2
+PORTVERSION=	4.2.7.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -16,7 +16,7 @@ RUN_DEPENDS=	rubygem-gemojione32>=3.2:graphics/rubygem-gemojione32 \
 		rubygem-gollum-grit_adapter10>=1.0:www/rubygem-gollum-grit_adapter10 \
 		rubygem-nokogiri>=1.6.1:textproc/rubygem-nokogiri \
 		rubygem-rouge>=3.1:textproc/rubygem-rouge \
-		rubygem-sanitize>=2.1:textproc/rubygem-sanitize \
+		rubygem-sanitize>=4.6.4:textproc/rubygem-sanitize \
 		rubygem-stringex>=2.6:devel/rubygem-stringex
 
 NO_ARCH=	yes
