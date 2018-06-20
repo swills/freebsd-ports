@@ -1,8 +1,8 @@
 # Created by: Lewis Thompson <lewiz@compsoc.man.ac.uk>
-# $FreeBSD: head/misc/esniper/Makefile 440901 2017-05-14 20:31:09Z riggs $
+# $FreeBSD: head/misc/esniper/Makefile 472791 2018-06-19 14:18:59Z swills $
 
 PORTNAME=	esniper
-DISTVERSION=	2-33-0
+DISTVERSION=	2-35-0
 CATEGORIES=	misc net
 MASTER_SITES=	SF
 

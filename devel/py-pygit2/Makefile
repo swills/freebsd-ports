@@ -1,5 +1,7 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-pygit2/Makefile 471741 2018-06-05 05:21:48Z mfechner $
+# $FreeBSD: head/devel/py-pygit2/Makefile 472849 2018-06-20 06:53:29Z mfechner $
+
+# Also update devel/libgit2, devel/libgit2-glib, devel/rubygem-rugged
 
 PORTNAME=	pygit2
 PORTVERSION=	0.27.1

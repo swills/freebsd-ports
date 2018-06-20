@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/xmlcharent/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/textproc/xmlcharent/Makefile 472786 2018-06-19 13:46:47Z amdmi3 $
 
 PORTNAME=	xmlcharent
 PORTVERSION=	0.3
@@ -11,16 +11,22 @@ MASTER_SITES=	https://www.oasis-open.org/docbook/${PORTNAME}/${PORTVERSION}/ \
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	XML character entities
 
+LICENSE=	OASIS
+LICENSE_NAME=	OASIS License
+LICENSE_TEXT=	License text is available in all .ent files installed by this port
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
 RUN_DEPENDS=	xmlcatmgr:textproc/xmlcatmgr
 
 USES=		zip
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 XMLDIR=		${PREFIX}/share/xml/${PORTNAME}
 
 do-install:
-	${MKDIR} ${STAGEDIR}${XMLDIR}
+	@${MKDIR} ${STAGEDIR}${XMLDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.ent \
 		${FILESDIR}/catalog ${FILESDIR}/catalog.xml ${STAGEDIR}${XMLDIR}
 

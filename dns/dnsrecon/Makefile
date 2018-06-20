@@ -1,9 +1,7 @@
-# $FreeBSD: head/dns/dnsrecon/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/dns/dnsrecon/Makefile 472816 2018-06-19 19:11:01Z arrowd $
 
 PORTNAME=	dnsrecon
-PORTVERSION=	0.8.9
-DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+DISTVERSION=	0.8.13
 CATEGORIES=	dns
 
 MAINTAINER=	rihaz.jerrin@gmail.com

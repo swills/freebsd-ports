@@ -1,17 +1,15 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-etm/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/R-cran-etm/Makefile 472841 2018-06-20 03:34:55Z tota $
 
 PORTNAME=	etm
-PORTREVISION=	2
-DISTVERSION=	0.6-2
+DISTVERSION=	0.6-2.1
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Empirical Transition Matrix
 
-LICENSE=	GPLv2 GPLv3
-LICENSE_COMB=	dual
+LICENSE=	GPLv2+
 
 USES=		cran:auto-plist,compiles
 

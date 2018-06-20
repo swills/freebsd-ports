@@ -1,18 +1,20 @@
-# $FreeBSD: head/mail/py-notmuch/Makefile 463108 2018-02-27 05:01:28Z fluffy $
+# $FreeBSD: head/mail/py-notmuch/Makefile 472817 2018-06-19 19:29:32Z pi $
 
 CATEGORIES=	mail python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 COMMENT=	Python interface for the Notmuch email search and tagging library
 
+LICENSE=	GPLv3
+
 LIB_DEPENDS=	libnotmuch.so:mail/notmuch
 
-USES=		python
+USES=		python uniquefiles:dirs
 USE_PYTHON=	autoplist distutils
 
 MASTERDIR=	${.CURDIR}/../notmuch
 NO_ARCH=	yes
-PORTDOCS=	python/
+PORTDOCS=	*
 WRKSRC_SUBDIR=	bindings/python
 
 OPTIONS_DEFINE=	DOCS
@@ -23,7 +25,7 @@ do-build-DOCS-on:
 	@${MAKE_CMD} -C ${WRKSRC}/docs html
 
 do-install-DOCS-on:
-	cd ${WRKSRC}/docs/html && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}/python
-	@${RM} ${STAGEDIR}${DOCSDIR}/python/.buildinfo
+	cd ${WRKSRC}/docs/html && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}
+	@${RM} ${STAGEDIR}${DOCSDIR}/.buildinfo
 
 .include "${MASTERDIR}/Makefile"

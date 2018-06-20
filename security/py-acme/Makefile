@@ -1,9 +1,8 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/security/py-acme/Makefile 472093 2018-06-09 21:20:00Z miwi $
+# $FreeBSD: head/security/py-acme/Makefile 472836 2018-06-20 00:52:59Z miwi $
 
 PORTNAME=	acme
 PORTVERSION=	${ACME_VERSION}
-PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
