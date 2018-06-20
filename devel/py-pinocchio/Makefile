@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pinocchio/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pinocchio/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pinocchio
 PORTVERSION=	0.4.2
@@ -11,7 +11,7 @@ COMMENT=	Pinocchio plugins for the nose testing framework
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>0:devel/py-colorama@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>0:devel/py-colorama@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

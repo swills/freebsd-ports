@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-ldap3/Makefile 468820 2018-05-02 10:41:02Z rm $
+# $FreeBSD: head/net/py-ldap3/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ldap3
 PORTVERSION=	2.5
@@ -12,7 +12,7 @@ COMMENT=	Strictly RFC 4511 conforming LDAP V3 pure Python client
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

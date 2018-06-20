@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-ldap/Makefile 468837 2018-05-02 13:36:21Z rm $
+# $FreeBSD: head/net/py-ldap/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ldap
 PORTVERSION=	3.0.0
@@ -13,8 +13,8 @@ COMMENT=	LDAP module for python, for OpenLDAP2
 LICENSE=	PSFL
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyasn1-modules>0:devel/py-pyasn1-modules@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyasn1-modules>0:devel/py-pyasn1-modules@${PY_FLAVOR}
 
 CONFLICTS_INSTALL=	py27-pyldap
 USES=		python

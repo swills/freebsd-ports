@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-caldav/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-caldav/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	caldav
 PORTVERSION=	0.5.0
@@ -16,9 +16,9 @@ LICENSE_COMB=	dual
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>=3.6.0:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}vobject>=0.8.1:deskutils/py-vobject@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=3.6.0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}vobject>=0.8.1:deskutils/py-vobject@${PY_FLAVOR}
 
 .include <bsd.port.mk>

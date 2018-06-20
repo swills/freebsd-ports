@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.app.uuid/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.app.uuid/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.app.uuid
 PORTVERSION=	1.1
@@ -12,10 +12,10 @@ COMMENT=	Plone integration for the basic plone.uuid package
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.uuid>=0:www/py-plone.uuid@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.indexer>=0:www/py-plone.indexer@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.uuid>=0:www/py-plone.uuid@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.indexer>=0:www/py-plone.indexer@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zip

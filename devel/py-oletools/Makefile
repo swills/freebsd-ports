@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/py-oletools/Makefile 466974 2018-04-10 17:39:06Z sunpoet $
+# $FreeBSD: head/devel/py-oletools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	oletools
 PORTVERSION=	0.52.5
@@ -14,7 +14,7 @@ LICENSE=	BSD2CLAUSE MIT
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/oletools/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=0:devel/py-pyparsing@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=0:devel/py-pyparsing@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		dos2unix python zip

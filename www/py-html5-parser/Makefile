@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-html5-parser/Makefile 472678 2018-06-18 08:36:59Z madpilot $
+# $FreeBSD: head/www/py-html5-parser/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	html5-parser
 PORTVERSION=	0.4.5
@@ -11,7 +11,7 @@ COMMENT=	Fast implementation of the HTML 5 parsing spec for Python
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.8.0:devel/py-lxml@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.8.0:devel/py-lxml@${PY_FLAVOR}
 
 USES=		pkgconfig python
 USE_PYTHON=	autoplist distutils

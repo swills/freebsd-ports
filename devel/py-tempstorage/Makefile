@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-tempstorage/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-tempstorage/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tempstorage
 PORTVERSION=	2.12.2
@@ -13,8 +13,8 @@ COMMENT=	RAM-based storage for ZODB
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	zodb${PYTHON_PKGNAMESUFFIX}>=3.9.0:databases/zodb3@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.testing>0:devel/py-zope.testing@${FLAVOR}
+RUN_DEPENDS=	zodb${PYTHON_PKGNAMESUFFIX}>=3.9.0:databases/zodb3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.testing>0:devel/py-zope.testing@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

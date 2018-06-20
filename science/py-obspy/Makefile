@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-obspy/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/py-obspy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	obspy
 PORTVERSION=	1.1.0
@@ -14,14 +14,14 @@ COMMENT=	Python framework for seismological observatories
 LICENSE=	LGPL3
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.9.0:science/py-scipy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}future>=0.12.4:devel/py-future@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}matplotlib>=1.1.0:math/py-matplotlib@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.2:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}suds>=0.4.0:net/py-suds@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}decorator>=0:devel/py-decorator@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0:databases/py-sqlalchemy10@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.9.0:science/py-scipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}future>=0.12.4:devel/py-future@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}matplotlib>=1.1.0:math/py-matplotlib@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.2:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}suds>=0.4.0:net/py-suds@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}decorator>=0:devel/py-decorator@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0:databases/py-sqlalchemy10@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		fortran python:2.7 shebangfix zip

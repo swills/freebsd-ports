@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.app.debug/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zope.app.debug/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.app.debug
 PORTVERSION=	3.4.1
@@ -13,9 +13,9 @@ COMMENT=	Zope Debug Mode
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.app.appsetup>=0:devel/py-zope.app.appsetup@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.app.publication>=0:devel/py-zope.app.publication@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.app.appsetup>=0:devel/py-zope.app.appsetup@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.app.publication>=0:devel/py-zope.app.publication@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

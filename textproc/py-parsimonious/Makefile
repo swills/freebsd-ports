@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-parsimonious/Makefile 464822 2018-03-17 14:43:34Z dbaio $
+# $FreeBSD: head/textproc/py-parsimonious/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	parsimonious
 PORTVERSION=	0.8.0
@@ -12,7 +12,7 @@ COMMENT=	PEGs based parser in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-passlib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-passlib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	passlib
 PORTVERSION=	1.7.1
@@ -13,7 +13,7 @@ COMMENT=	Python password hashing framework supporting over 30 schemes
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.1:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.1:devel/py-nose@${PY_FLAVOR}
 
 # Python 2.6,3.3-3.6
 USES=		python

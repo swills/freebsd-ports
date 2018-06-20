@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-lazr.config/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-lazr.config/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	lazr.config
 PORTVERSION=	2.2
@@ -13,8 +13,8 @@ COMMENT=	Create configuration schemas, and process and validate configurations
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lazr.delegates>=2.0.3:devel/py-lazr.delegates@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lazr.delegates>=2.0.3:devel/py-lazr.delegates@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

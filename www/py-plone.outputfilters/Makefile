@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.outputfilters/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.outputfilters/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.outputfilters
 PORTVERSION=	1.15.1
@@ -12,10 +12,10 @@ COMMENT=	Transformations applied to HTML in Plone text fields
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.MimetypesRegistry>=0:devel/py-Products.MimetypesRegistry@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.PortalTransforms>=0:devel/py-Products.PortalTransforms@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.MimetypesRegistry>=0:devel/py-Products.MimetypesRegistry@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.PortalTransforms>=0:devel/py-Products.PortalTransforms@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

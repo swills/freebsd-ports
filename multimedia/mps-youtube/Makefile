@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/multimedia/mps-youtube/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/mps-youtube/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mps-youtube
 PORTVERSION=	0.2.7.1
@@ -13,7 +13,7 @@ COMMENT=	Terminal based YouTube jukebox with playlist management
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	ca_root_nss>=3.17.3:security/ca_root_nss \
-		${PYTHON_PKGNAMEPREFIX}pafy>=0.5.0:www/py-pafy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pafy>=0.5.0:www/py-pafy@${PY_FLAVOR}
 
 CONVERTER_DESC=	Converter to MP3 and other formats
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-columnize/Makefile 455588 2017-12-05 16:20:56Z antoine $
+# $FreeBSD: head/devel/py-columnize/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	columnize
 PORTVERSION=	0.3.9
@@ -11,7 +11,7 @@ COMMENT=	Format a simple (i.e. not nested) list into aligned columns
 
 LICENSE=	MIT
 
-MY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.0:devel/py-nose@${FLAVOR}
+MY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.0:devel/py-nose@${PY_FLAVOR}
 
 BUILD_DEPENDS=	${MY_DEPENDS}
 RUN_DEPENDS=	${MY_DEPENDS}
@@ -24,7 +24,7 @@ USE_PYTHON=	autoplist distutils
 .if ${PYTHON_MAJOR_VER} == "3"
 EXTRA_PATCHES=      ${FILESDIR}/extra-patch-____pkginfo____.py
 .else
-MY_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports.shutil_get_terminal_size>=1.0:devel/py-backports.shutil_get_terminal_size@${FLAVOR}
+MY_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports.shutil_get_terminal_size>=1.0:devel/py-backports.shutil_get_terminal_size@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

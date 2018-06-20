@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-zope.password/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-zope.password/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.password
 PORTVERSION=	3.6.1
@@ -13,9 +13,9 @@ COMMENT=	Password encoding and checking utilities
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.configuration>=0:devel/py-zope.configuration@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.configuration>=0:devel/py-zope.configuration@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

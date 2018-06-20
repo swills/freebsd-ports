@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/puddletag/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/audio/puddletag/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	puddletag
 PORTVERSION=	1.2.0
@@ -13,10 +13,10 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	chromaprint>=0.4:audio/chromaprint \
-		${PYTHON_PKGNAMEPREFIX}musicbrainz2>=0:audio/py-musicbrainz2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mutagen>=1.14:audio/py-mutagen@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}configobj>=4.5.0:devel/py-configobj@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyparsing>=1.5.1:devel/py-pyparsing@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}musicbrainz2>=0:audio/py-musicbrainz2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mutagen>=1.14:audio/py-mutagen@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}configobj>=4.5.0:devel/py-configobj@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyparsing>=1.5.1:devel/py-pyparsing@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	keithgg

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/security/py-itsdangerous/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-itsdangerous/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	itsdangerous
 PORTVERSION=	0.24
@@ -17,6 +17,6 @@ USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	JSON
 
-JSON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=3.0:devel/py-simplejson@${FLAVOR}
+JSON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=3.0:devel/py-simplejson@${PY_FLAVOR}
 
 .include <bsd.port.mk>

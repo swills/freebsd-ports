@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/science/py-paida/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/py-paida/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	paida
 PORTVERSION=	3.2.1.2.10
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-3.2.1_2.10.1
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-3.2.1_2.10.1
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pure Python scientific analysis package

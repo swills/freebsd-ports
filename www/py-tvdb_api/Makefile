@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/www/py-tvdb_api/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-tvdb_api/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tvdb_api
 PORTVERSION=	2.0
@@ -14,9 +14,9 @@ COMMENT=	API interface to TheTVDB.com
 LICENSE=	UNLICENSE
 LICENSE_FILE=	${WRKSRC}/UNLICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests-cache>0:www/py-requests-cache@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-cache>0:www/py-requests-cache@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

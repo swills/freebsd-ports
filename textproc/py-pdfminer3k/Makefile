@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-pdfminer3k/Makefile 472425 2018-06-15 04:50:30Z yuri $
+# $FreeBSD: head/textproc/py-pdfminer3k/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pdfminer3k
 PORTVERSION=	1.2.4
@@ -10,7 +10,7 @@ COMMENT=	PDF parser and analyzer
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=3.4:devel/py-ply@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=3.4:devel/py-ply@${PY_FLAVOR}
 
 USES=		python:3.4+
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-django-model-utils/Makefile 469659 2018-05-11 16:53:33Z sunpoet $
+# $FreeBSD: head/www/py-django-model-utils/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-model-utils
 PORTVERSION=	3.1.2
@@ -13,7 +13,7 @@ COMMENT=	Django model mixins and utilities
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.8:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.8:www/py-django111@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

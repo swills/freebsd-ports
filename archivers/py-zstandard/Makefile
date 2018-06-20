@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/py-zstandard/Makefile 471746 2018-06-05 07:50:45Z yuri $
+# $FreeBSD: head/archivers/py-zstandard/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zstandard
 DISTVERSION=	0.9.1
@@ -11,7 +11,7 @@ COMMENT=	Zstandard bindings for Python, a full-featured version
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.8.0:devel/py-cffi@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.8.0:devel/py-cffi@${PY_FLAVOR}
 LIB_DEPENDS=	libzstd.so:archivers/zstd
 
 USES=		localbase python

@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/py-zopkio/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/benchmarks/py-zopkio/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Zopkio
 PORTVERSION=	0.2.5
@@ -12,11 +12,11 @@ COMMENT=	Functional and Performance Test Framework
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}naarad>=1.0.15:benchmarks/py-naarad@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}kazoo>=1.1:devel/py-kazoo@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10.1:security/py-paramiko@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}junit-xml>0:textproc/py-junit-xml@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}naarad>=1.0.15:benchmarks/py-naarad@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}kazoo>=1.1:devel/py-kazoo@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10.1:security/py-paramiko@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}junit-xml>0:textproc/py-junit-xml@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

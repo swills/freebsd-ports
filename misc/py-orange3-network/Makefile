@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-orange3-network/Makefile 472420 2018-06-15 03:08:15Z yuri $
+# $FreeBSD: head/misc/py-orange3-network/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	orange3-network
 DISTVERSION=	1.3.2
@@ -14,8 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	orange3>0:misc/orange3 \
 		${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}networkx>0:math/py-networkx@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyqtgraph>0:graphics/py-pyqtgraph@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}networkx>0:math/py-networkx@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyqtgraph>0:graphics/py-pyqtgraph@${PY_FLAVOR}
 
 USES=		python:3.4+
 USE_GITHUB=	yes

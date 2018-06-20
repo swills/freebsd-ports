@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/math/py-pybloom/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-pybloom/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pybloom
 PORTVERSION=	2.0
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Probabilistic data structure
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bitarray>0:devel/py-bitarray@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bitarray>0:devel/py-bitarray@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

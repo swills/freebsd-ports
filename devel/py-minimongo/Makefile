@@ -1,5 +1,5 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/devel/py-minimongo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-minimongo/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	minimongo
 PORTVERSION=	0.2.7
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	mail@derzinn.de
 COMMENT=	Minimal database Model management for MongoDB
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=1.9:databases/pymongo@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=1.9:databases/pymongo@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

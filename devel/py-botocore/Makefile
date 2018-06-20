@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/py-botocore/Makefile 472821 2018-06-19 20:45:28Z bhughes $
+# $FreeBSD: head/devel/py-botocore/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	botocore
 PORTVERSION=	1.10.40
@@ -13,9 +13,9 @@ COMMENT=	Low-level, core functionality of boto 3
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}jmespath>=0.7.1:devel/py-jmespath@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}docutils>=0.10:textproc/py-docutils@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jmespath>=0.7.1:devel/py-jmespath@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}docutils>=0.10:textproc/py-docutils@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

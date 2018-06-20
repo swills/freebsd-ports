@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-google-cloud-core/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-google-cloud-core/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	google-cloud-core
 PORTVERSION=	0.27.1
@@ -11,11 +11,11 @@ COMMENT=	API Client library for Google Cloud: Core Helpers
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}googleapis-common-protos>0:devel/py-googleapis-common-protos@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}google-auth>0:security/py-google-auth@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}protobuf>0:devel/py-protobuf@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}googleapis-common-protos>0:devel/py-googleapis-common-protos@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}google-auth>0:security/py-google-auth@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}protobuf>0:devel/py-protobuf@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

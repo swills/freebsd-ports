@@ -1,5 +1,5 @@
 # Created by: nbm
-# $FreeBSD: head/www/roundup/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/roundup/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	roundup
 PORTVERSION=	1.5.1
@@ -21,9 +21,9 @@ OPTIONS_DEFINE=	SQLITE PGSQL MYSQL NLS
 OPTIONS_DEFAULT=SQLITE
 OPTIONS_SUB=	yes
 
-SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
-PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2@${FLAVOR}
-MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>0:databases/py-MySQLdb@${FLAVOR}
+SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
+PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2@${PY_FLAVOR}
+MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>0:databases/py-MySQLdb@${PY_FLAVOR}
 
 SCRIPTS=	roundup-admin roundup-demo roundup-gettext roundup-mailgw \
 		roundup-server roundup-xmlrpc-server

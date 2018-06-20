@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/net/pythondirector/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/pythondirector/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pydirector
 PORTVERSION=	1.0.0
@@ -13,7 +13,7 @@ COMMENT=	TCP load balancer written in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/doc/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

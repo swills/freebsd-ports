@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-dockerpty/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-dockerpty/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	dockerpty
 PORTVERSION=	0.4.1
@@ -12,7 +12,7 @@ COMMENT=	Python library to use the pseudo-tty of a docker container
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docker>0:sysutils/py-docker@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docker>0:sysutils/py-docker@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: James Elstone <james@elstone.net>
-# $FreeBSD: head/net/py-stomp.py/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-stomp.py/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	stomp.py
 PORTVERSION=	4.1.17
@@ -13,7 +13,7 @@ COMMENT=	Python STOMP client, supporting >=1.0 and <=1.2 of the protocol
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.1:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.1:devel/py-pytest@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOXYGEN
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen

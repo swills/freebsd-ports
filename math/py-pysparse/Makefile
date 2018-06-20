@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-pysparse/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-pysparse/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pysparse
 PORTVERSION=	1.3
@@ -13,8 +13,8 @@ COMMENT=	Fast sparse matrix library for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2,1:math/py-numpy@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2,1:math/py-numpy@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2,1:math/py-numpy@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2,1:math/py-numpy@${PY_FLAVOR}
 LIB_DEPENDS=	liblapack.so:math/lapack \
 		libblas.so:math/blas \
 		libopenblas.so:math/openblas \

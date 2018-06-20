@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/irc/py-fishcrypt/Makefile 467655 2018-04-17 20:35:43Z rene $
+# $FreeBSD: head/irc/py-fishcrypt/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fishcrypt
 DISTVERSION=	5.31
@@ -11,8 +11,8 @@ DIST_SUBDIR=	python
 MAINTAINER=	nemysis@FreeBSD.org
 COMMENT=	FiSH/Mircryption-compatible encryption for HexChat
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pysocks>=0:net/py-pysocks@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pysocks>=0:net/py-pysocks@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	fladd

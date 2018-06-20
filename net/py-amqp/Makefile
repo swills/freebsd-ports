@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net/py-amqp/Makefile 457823 2018-01-02 00:50:27Z olgeni $
+# $FreeBSD: head/net/py-amqp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	amqp
 PORTVERSION=	2.2.2
@@ -12,10 +12,10 @@ COMMENT=	Low-level AMQP client for Python (fork of amqplib)
 
 LICENSE=	LGPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}vine>0:devel/py-vine@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}vine>0:devel/py-vine@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

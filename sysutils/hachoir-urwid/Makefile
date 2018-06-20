@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/hachoir-urwid/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/hachoir-urwid/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	hachoir-urwid
 PORTVERSION=	1.1
@@ -10,7 +10,7 @@ MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Binary file explorer
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/hachoir_parser/__init__.py:devel/hachoir-parser \
-		${PYTHON_SITELIBDIR}/urwid/__init__.py:devel/py-urwid@${FLAVOR}
+		${PYTHON_SITELIBDIR}/urwid/__init__.py:devel/py-urwid@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils

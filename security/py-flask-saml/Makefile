@@ -1,5 +1,5 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/security/py-flask-saml/Makefile 470467 2018-05-20 18:06:16Z miwi $
+# $FreeBSD: head/security/py-flask-saml/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-SAML
 PORTVERSION=	0.4.3
@@ -12,9 +12,9 @@ COMMENT=	SAML authentication for Flask web apps
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0.8.0:www/py-flask@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}blinker>=1.1:devel/py-blinker@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pysaml2>4.0.0:security/py-pysaml2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0.8.0:www/py-flask@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}blinker>=1.1:devel/py-blinker@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pysaml2>4.0.0:security/py-pysaml2@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-potr/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-potr/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	potr
 PORTVERSION=	1.0.1
@@ -13,7 +13,7 @@ COMMENT=	Pure Python Off-The-Record encryption
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	autoplist distutils

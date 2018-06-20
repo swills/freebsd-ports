@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/py-SoundFile/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/py-SoundFile/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	SoundFile
 DISTVERSION=	0.9.0
@@ -14,7 +14,7 @@ COMMENT=	Audio library based on libsndfile, CFFI and NumPy
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=0.6:devel/py-cffi@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=0.6:devel/py-cffi@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PREFIX}/lib/libsndfile.so:audio/libsndfile
 

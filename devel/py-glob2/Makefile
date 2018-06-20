@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-glob2/Makefile 468083 2018-04-23 08:21:25Z loader $
+# $FreeBSD: head/devel/py-glob2/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	glob2
 PORTVERSION=	0.6
@@ -13,7 +13,7 @@ COMMENT=	Glob that captures patterns and supports recursive wildcards
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-pyocclient/Makefile 456914 2017-12-21 16:07:07Z tobik $
+# $FreeBSD: head/www/py-pyocclient/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyocclient
 PORTVERSION=	0.4
@@ -12,8 +12,8 @@ COMMENT=	Python Owncloud client library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.0.1:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.0.1:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

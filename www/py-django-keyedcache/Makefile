@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-keyedcache/Makefile 470341 2018-05-18 23:32:05Z sunpoet $
+# $FreeBSD: head/www/py-django-keyedcache/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-keyedcache
 PORTVERSION=	1.5.1
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE
 DEPRECATED=	Project development abandoned
 EXPIRATION_DATE=2018-08-01
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

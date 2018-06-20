@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/openark-kit/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/openark-kit/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	openark-kit
 PORTVERSION=	196
@@ -11,7 +11,7 @@ COMMENT=	Common utilities for MySQL
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

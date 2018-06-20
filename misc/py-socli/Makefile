@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/misc/py-socli/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-socli/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	socli
 PORTVERSION=	3.6
@@ -12,11 +12,11 @@ COMMENT=	Stack overflow command line interface
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>=0:devel/py-colorama@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}stackexchange>=0:devel/py-stackexchange@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}urwid>=0:devel/py-urwid@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:www/py-beautifulsoup@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>=0:devel/py-colorama@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}stackexchange>=0:devel/py-stackexchange@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}urwid>=0:devel/py-urwid@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:www/py-beautifulsoup@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist concurrent distutils

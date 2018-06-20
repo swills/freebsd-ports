@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Products.statusmessages/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-Products.statusmessages/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Products.statusmessages
 PORTVERSION=	4.0
@@ -13,9 +13,9 @@ COMMENT=	Handling of internationalized status messages for Zope
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.annotation>=0:devel/py-zope.annotation@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.i18n>=0:devel/py-zope.i18n@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.annotation>=0:devel/py-zope.annotation@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.i18n>=0:devel/py-zope.i18n@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

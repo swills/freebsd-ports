@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-tzlocal/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-tzlocal/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tzlocal
 PORTVERSION=	1.4
@@ -12,7 +12,7 @@ COMMENT=	Returns the tzinfo object for the local timezone
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

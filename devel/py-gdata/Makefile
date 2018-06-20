@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-gdata/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-gdata/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gdata
 PORTVERSION=	2.0.18
@@ -25,9 +25,9 @@ PYCRYPTO_DESC=	Cryptography toolkit
 
 EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}
 
-M2CRYPTO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}m2crypto>=0.20:security/py-m2crypto@${FLAVOR}
-PYCRYPTO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${FLAVOR}
-GMPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gmpy>0:math/py-gmpy@${FLAVOR}
+M2CRYPTO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}m2crypto>=0.20:security/py-m2crypto@${PY_FLAVOR}
+PYCRYPTO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR}
+GMPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gmpy>0:math/py-gmpy@${PY_FLAVOR}
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/

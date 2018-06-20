@@ -1,5 +1,5 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/devel/git-cvs/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/git-cvs/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	git-cvs
 PORTVERSION=	0.1.0
@@ -9,9 +9,9 @@ CATEGORIES=	devel python
 MAINTAINER=	mp39590@gmail.com
 COMMENT=	Tool to incrementally import changesets from CVS into Git
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.0:devel/py-nose@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rcsparse>0:devel/py-rcsparse@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.0:devel/py-nose@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rcsparse>0:devel/py-rcsparse@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

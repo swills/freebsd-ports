@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zExceptions/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zExceptions/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zExceptions
 PORTVERSION=	2.13.0
@@ -13,9 +13,9 @@ COMMENT=	Contains common exceptions used in Zope2
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.security>=0:security/py-zope.security@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.security>=0:security/py-zope.security@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

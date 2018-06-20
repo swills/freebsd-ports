@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.indexer/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.indexer/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.indexer
 PORTVERSION=	1.0.4
@@ -12,10 +12,10 @@ COMMENT=	Hooks to facilitate managing custom index values
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.ZCatalog>0:devel/py-Products.ZCatalog@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.ZCatalog>0:devel/py-Products.ZCatalog@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-yandex-money-sdk/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-yandex-money-sdk/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	yandex-money-sdk
 PORTVERSION=	0.1.3
@@ -11,9 +11,9 @@ COMMENT=	SDK yandex money API
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>2.4.0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>2.4.0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

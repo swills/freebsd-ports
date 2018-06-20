@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-archetypes.querywidget/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-archetypes.querywidget/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	archetypes.querywidget
 PORTVERSION=	1.0.9
@@ -13,8 +13,8 @@ COMMENT=	Widget for creating catalog queries
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.app.querystring>=1.0.3:www/py-plone.app.querystring@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.app.jquerytools>=0:www/py-plone.app.jquerytools@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.app.querystring>=1.0.3:www/py-plone.app.querystring@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.jquerytools>=0:www/py-plone.app.jquerytools@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

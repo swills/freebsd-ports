@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/py-trezor/Makefile 472257 2018-06-12 14:19:48Z ehaupt $
+# $FreeBSD: head/security/py-trezor/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	trezor
 PORTVERSION=	0.10.1
@@ -13,10 +13,10 @@ COMMENT=	Client side implementation for TREZOR Bitcoin hardware wallets
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mnemonic>=0:security/py-mnemonic@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}hidapi>=0:comms/py-hidapi@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}protobuf>=2.5.0:devel/py-protobuf@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mnemonic>=0:security/py-mnemonic@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}hidapi>=0:comms/py-hidapi@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}protobuf>=2.5.0:devel/py-protobuf@${PY_FLAVOR}
 
 USES=		python:3.3+ shebangfix
 USE_PYTHON=	autoplist concurrent distutils

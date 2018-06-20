@@ -1,5 +1,5 @@
 # Created by: Edward Chuang <edwardchuang@gmail.com>
-# $FreeBSD: head/devel/py-fluent-logger/Makefile 468048 2018-04-22 18:29:51Z sunpoet $
+# $FreeBSD: head/devel/py-fluent-logger/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fluent-logger
 PORTVERSION=	0.9.2
@@ -13,7 +13,7 @@ COMMENT=	Structured logger for Fluentd (Python)
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

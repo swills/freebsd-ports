@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-slimit/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/py-slimit/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	slimit
 PORTVERSION=	0.8.1
@@ -12,8 +12,8 @@ COMMENT=	JavaScript minifier written in Python
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=3.4:devel/py-ply@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=3.4:devel/py-ply@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=3.4:devel/py-ply@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=3.4:devel/py-ply@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
@@ -23,7 +23,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} >= 3000
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 pre-build:
 	@cd ${WRKSRC} && 2to3-${PYTHON_VER} -w src
 .endif

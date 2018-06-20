@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/science/py-scikit-learn/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/py-scikit-learn/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	scikit-learn
 PORTVERSION=	0.19.1
@@ -12,7 +12,7 @@ MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Machine learning algorithms for python
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_SITELIBDIR}/scipy/version.py:science/py-scipy@${FLAVOR}
+		${PYTHON_SITELIBDIR}/scipy/version.py:science/py-scipy@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		fortran python

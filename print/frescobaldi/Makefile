@@ -1,5 +1,5 @@
 # Created by: martin.dieringer@gmx.de
-# $FreeBSD: head/print/frescobaldi/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/print/frescobaldi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	frescobaldi
 DISTVERSIONPREFIX=	v
@@ -13,8 +13,8 @@ COMMENT=	Music score editor for lilypond
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}poppler-qt4>=0:graphics/py-poppler-qt4@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-ly>=0:print/py-python-ly@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}poppler-qt4>=0:graphics/py-poppler-qt4@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-ly>=0:print/py-python-ly@${PY_FLAVOR}
 
 USES=		gettext kde:4 python:2.7 desktop-file-utils
 USE_GITHUB=	yes

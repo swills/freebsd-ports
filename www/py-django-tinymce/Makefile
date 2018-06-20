@@ -1,5 +1,5 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-django-tinymce/Makefile 469603 2018-05-10 23:15:02Z sunpoet $
+# $FreeBSD: head/www/py-django-tinymce/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-tinymce
 PORTVERSION=	2.7.0
@@ -13,7 +13,7 @@ COMMENT=	Django application to use TinyMCE editor
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

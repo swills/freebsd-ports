@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-DateTime/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-DateTime/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	DateTime
 PORTVERSION=	3.0.3
@@ -14,8 +14,8 @@ COMMENT=	Zope 2 DateTime data type
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

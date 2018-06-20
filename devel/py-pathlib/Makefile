@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pathlib/Makefile 459515 2018-01-20 12:38:10Z sunpoet $
+# $FreeBSD: head/devel/py-pathlib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pathlib
 PORTVERSION=	1.0.1
@@ -17,7 +17,7 @@ USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	DOCS
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${FLAVOR}
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 PORTDOCS=	*
 DOCS_VARS=	PYDISTUTILS_BUILD_TARGET+=build_sphinx

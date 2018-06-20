@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-setuptools/Makefile 470892 2018-05-26 15:04:32Z miwi $
+# $FreeBSD: head/devel/py-setuptools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	setuptools
 PORTVERSION=	39.2.0
@@ -33,9 +33,9 @@ SUB_LIST+=	PYTHON_VER=${PYTHON_VER}
 
 # These create dependency loops in redports/poudriere, because setuptools
 # is currently an explicit BUILD & RUN dependency in Uses/python.mk.
-#TEST_DEPENDS=  ${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+#TEST_DEPENDS=  ${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 #.if ${PYTHON_REL} < 3300
-#TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+#TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 #.endif
 
 post-install:

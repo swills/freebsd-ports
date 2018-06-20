@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/devel/py-fuzzywuzzy/Makefile 456115 2017-12-12 10:28:29Z antoine $
+# $FreeBSD: head/devel/py-fuzzywuzzy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fuzzywuzzy
 PORTVERSION=	0.15.1
@@ -14,7 +14,7 @@ COMMENT=	Fuzzy string matching using Levenshtein Distance
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-Levenshtein>0:devel/py-python-Levenshtein@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-Levenshtein>0:devel/py-python-Levenshtein@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

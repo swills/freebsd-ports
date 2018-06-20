@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbé <olivier@FreeBSD.org>
-# $FreeBSD: head/net/py-maxminddb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-maxminddb/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	maxminddb
 PORTVERSION=	1.3.0
@@ -25,7 +25,7 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3300
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ipaddr>=0:devel/py-ipaddr@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ipaddr>=0:devel/py-ipaddr@${PY_FLAVOR}
 .endif
 
 post-install:

@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/math/py-colormath/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-colormath/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	colormath
 PORTVERSION=	2.1.1
@@ -13,8 +13,8 @@ COMMENT=	Module that spares the user from directly dealing with color math
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.9.2,1:math/py-numpy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}networkx>=1.9.1:math/py-networkx@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.9.2,1:math/py-numpy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}networkx>=1.9.1:math/py-networkx@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

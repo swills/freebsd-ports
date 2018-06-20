@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-threaded-multihost/Makefile 470340 2018-05-18 23:32:00Z sunpoet $
+# $FreeBSD: head/www/py-django-threaded-multihost/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-threaded-multihost
 PORTVERSION=	1.4.1
@@ -16,8 +16,8 @@ LICENSE=	BSD3CLAUSE
 DEPRECATED=	Project development unmaintained
 EXPIRATION_DATE=2018-08-01
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_hg>=0.4:devel/py-setuptools_hg@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_hg>=0.4:devel/py-setuptools_hg@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USES=		python:2.7

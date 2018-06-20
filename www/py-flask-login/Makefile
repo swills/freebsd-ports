@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-login/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-flask-login/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-Login
 PORTVERSION=	0.4.0
@@ -12,7 +12,7 @@ COMMENT=	User session management for Flask
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.9:www/py-flask@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.9:www/py-flask@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/multimedia/py-kaa-metadata/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/multimedia/py-kaa-metadata/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	kaa-metadata
 PORTVERSION=	0.7.7
@@ -12,8 +12,8 @@ MAINTAINER=	fbsd@opal.com
 COMMENT=	Kaa Media Repository - media file metadata parser
 
 LIB_DEPENDS=	libdvdread.so:multimedia/libdvdread
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kaa-base>0:multimedia/py-kaa-base@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}exiv2>0:graphics/py-exiv2@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kaa-base>0:multimedia/py-kaa-base@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}exiv2>0:graphics/py-exiv2@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7

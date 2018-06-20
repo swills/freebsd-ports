@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-libfte/Makefile 467826 2018-04-20 14:29:11Z garga $
+# $FreeBSD: head/net/py-libfte/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	libfte
 DISTVERSION=	0.1.0
@@ -12,7 +12,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	regex2dfa:textproc/regex2dfa \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.6.1:security/py-pycrypto@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.6.1:security/py-pycrypto@${PY_FLAVOR}
 LIB_DEPENDS=	libgmp.so:math/gmp
 
 USES=		localbase python:2.7

@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/py-actdiag/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-actdiag/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	actdiag
 PORTVERSION=	0.5.4
@@ -13,9 +13,9 @@ COMMENT=	Simple activity-diagram image generator
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}pillow>=2.2.1:graphics/py-pillow@${FLAVOR} \
-		${PKGNAMEPREFIX}blockdiag>=1.5.0:graphics/py-blockdiag@${FLAVOR} \
-		${PKGNAMEPREFIX}funcparserlib>=0.3.6:devel/py-funcparserlib@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=2.2.1:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}blockdiag>=1.5.0:graphics/py-blockdiag@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}funcparserlib>=0.3.6:devel/py-funcparserlib@${PY_FLAVOR}
 
 USES=	python:-3.4
 USE_PYTHON=	autoplist distutils

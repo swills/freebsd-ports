@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/py-tarantool-queue/Makefile 468234 2018-04-24 19:47:21Z sunpoet $
+# $FreeBSD: head/devel/py-tarantool-queue/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tarantool-queue
 PORTVERSION=	0.1.4
@@ -13,8 +13,8 @@ COMMENT=	Python bindings for Tarantool queue
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0:devel/py-msgpack@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tarantool>=0:databases/py-tarantool@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0:devel/py-msgpack@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tarantool>=0:databases/py-tarantool@${PY_FLAVOR}
 
 NO_ARCH=	yes
 REINPLACE_ARGS=	-i ''

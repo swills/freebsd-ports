@@ -1,5 +1,5 @@
 # Created by: Alexandros Kosiaris <akosiaris+ports@gmail.com>
-# $FreeBSD: head/devel/py-celery/Makefile 457826 2018-01-02 00:52:59Z olgeni $
+# $FreeBSD: head/devel/py-celery/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	celery
 PORTVERSION=	4.1.0
@@ -13,10 +13,10 @@ COMMENT=	Asynchronous task queue/job queue
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}billiard>=3.3.0.21:devel/py-billiard@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytz>=1.5:devel/py-pytz@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}kombu>=3.0.36:net/py-kombu@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-memcached>=0:databases/py-python-memcached@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}billiard>=3.3.0.21:devel/py-billiard@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>=1.5:devel/py-pytz@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}kombu>=3.0.36:net/py-kombu@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-memcached>=0:databases/py-python-memcached@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

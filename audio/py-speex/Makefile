@@ -1,5 +1,5 @@
 # Created by: Carl Johan Gustavsson <cjg@bsdmail.org>
-# $FreeBSD: head/audio/py-speex/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/py-speex/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	speex
 PORTVERSION=	0.2
@@ -13,7 +13,7 @@ DIST_SUBDIR=	python
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python bindings for the Speex compressor/decompressor audio codec
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>=0.9.6.2:devel/pyrex@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>=0.9.6.2:devel/pyrex@${PY_FLAVOR}
 LIB_DEPENDS=	libspeex.so:audio/speex
 
 USES=		python:2.7

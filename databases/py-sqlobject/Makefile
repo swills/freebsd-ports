@@ -1,5 +1,5 @@
 # Created by: "Choe, Cheng-Dae" whitekid
-# $FreeBSD: head/databases/py-sqlobject/Makefile 458646 2018-01-10 15:08:51Z danfe $
+# $FreeBSD: head/databases/py-sqlobject/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sqlobject
 PORTVERSION=	1.6.0
@@ -13,7 +13,7 @@ COMMENT=	Python object for manipulation with SQL table row
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}formencode>=1.2.2:www/py-formencode@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}formencode>=1.2.2:www/py-formencode@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
@@ -26,12 +26,12 @@ SYBASE_DESC=	sybase support
 
 PORTDOCS=	*
 
-MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:databases/py-MySQLdb@${FLAVOR}
+MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:databases/py-MySQLdb@${PY_FLAVOR}
 MYSQL_VARS=	PY_MYSQL=:2.7
-PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2@${FLAVOR}
-SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${FLAVOR}
-MSSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymssql>=0:databases/py-pymssql@${FLAVOR}
-SYBASE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sybase>=0.37:databases/py-sybase@${FLAVOR}
+PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2@${PY_FLAVOR}
+SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
+MSSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymssql>=0:databases/py-pymssql@${PY_FLAVOR}
+SYBASE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sybase>=0.37:databases/py-sybase@${PY_FLAVOR}
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

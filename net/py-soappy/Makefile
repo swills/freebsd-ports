@@ -1,5 +1,5 @@
 # Created by: Alexander Leidinger
-# $FreeBSD: head/net/py-soappy/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net/py-soappy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	soappy
 PORTVERSION=	0.12.22
@@ -14,8 +14,8 @@ COMMENT=	SOAP Services for Python
 # Actual LICENSE is in GH Repo but not in pypi release
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}defusedxml>0:devel/py-defusedxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wstools>0:textproc/py-wstools@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}defusedxml>0:devel/py-defusedxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wstools>0:textproc/py-wstools@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-admin/Makefile 472644 2018-06-17 22:11:26Z robak $
+# $FreeBSD: head/www/py-flask-admin/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-Admin
 PORTVERSION=	1.5.1
@@ -12,8 +12,8 @@ COMMENT=	Flask extension for adding admin interfaces to Flask applications
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10:www/py-flask@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wtforms>0:textproc/py-wtforms@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10:www/py-flask@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wtforms>0:textproc/py-wtforms@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

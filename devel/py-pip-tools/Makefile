@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pip-tools/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/devel/py-pip-tools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pip-tools
 PORTVERSION=	1.11.0
@@ -15,10 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to compile: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 6865: ordinal not in range(128)
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=6:devel/py-click@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}first>=0:devel/py-first@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=6:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}first>=0:devel/py-first@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

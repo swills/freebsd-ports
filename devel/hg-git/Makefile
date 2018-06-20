@@ -1,5 +1,5 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/devel/hg-git/Makefile 462649 2018-02-22 22:59:37Z jbeich $
+# $FreeBSD: head/devel/hg-git/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	hg-git
 DISTVERSION=	0.8.10
@@ -15,7 +15,7 @@ COMMENT=	Mercurial extension to pull from or push to a Git repository
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dulwich>=*:devel/dulwich@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dulwich>=*:devel/dulwich@${PY_FLAVOR} \
 		mercurial>=*:devel/mercurial
 
 PORTDOCS=	README.md

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net-im/py-xmpppy-irc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/py-xmpppy-irc/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	xmpppy-irc
 PORTVERSION=	0.3
@@ -14,8 +14,8 @@ COMMENT=	Xmpp to irc transport
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xmpp/__init__.py:net-im/py-xmpppy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}irc>0:irc/py-irc@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xmpp/__init__.py:net-im/py-xmpppy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}irc>0:irc/py-irc@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	flavors

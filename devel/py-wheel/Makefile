@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-wheel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-wheel/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	wheel
 PORTVERSION=	0.30.0
@@ -19,10 +19,10 @@ PIP_DESC=	Use pip to install wheels
 PIP_RUN_DEPENDS=	pip:devel/py-pip
 
 SIGNATURE_DESC=	Enable digital signature of wheels
-SIGNATURE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dirspec>=13.05:devel/py-dirspec@${FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}ed25519ll>=0.6_1:security/py-ed25519ll@${FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}keyring>=1.3:security/py-keyring@${FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}xdg>=0.25:devel/py-xdg@${FLAVOR}
+SIGNATURE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dirspec>=13.05:devel/py-dirspec@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}ed25519ll>=0.6_1:security/py-ed25519ll@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}keyring>=1.3:security/py-keyring@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}xdg>=0.25:devel/py-xdg@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

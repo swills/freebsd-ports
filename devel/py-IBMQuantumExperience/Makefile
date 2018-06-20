@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-IBMQuantumExperience/Makefile 472614 2018-06-17 17:35:52Z yuri $
+# $FreeBSD: head/devel/py-IBMQuantumExperience/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	IBMQuantumExperience
 DISTVERSION=	1.9.4
@@ -11,8 +11,8 @@ COMMENT=	Python library for the Quantum Experience API
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests_ntlm>=0:www/py-requests_ntlm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests_ntlm>=0:www/py-requests_ntlm@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

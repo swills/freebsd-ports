@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/jtoolkit/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/jtoolkit/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	jToolkit
 PORTVERSION=	0.7.8
@@ -10,7 +10,7 @@ MASTER_SITES=	SF
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Webapp framework with modpython-based and stand-alone modes
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kid>=0.9.5:devel/py-kid@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kid>=0.9.5:devel/py-kid@${PY_FLAVOR}
 # Has optional dependencies on database engines
 # Can optionally use py-lucene (on i386)
 

@@ -1,5 +1,5 @@
 # Created by: Lawrence Stewart <lstewart@FreeBSD.org>
-# $FreeBSD: head/www/py-Products.PloneLDAP/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-Products.PloneLDAP/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Products.PloneLDAP
 PORTVERSION=	1.2
@@ -13,9 +13,9 @@ COMMENT=	LDAP/Active Directory support for Plone
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.PlonePAS>0:security/py-Products.PlonePAS@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.LDAPMultiPlugins>=1.10:devel/py-Products.LDAPMultiPlugins@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Products.LDAPUserFolder>=2.9:devel/py-Products.LDAPUserFolder@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.PlonePAS>0:security/py-Products.PlonePAS@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.LDAPMultiPlugins>=1.10:devel/py-Products.LDAPMultiPlugins@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.LDAPUserFolder>=2.9:devel/py-Products.LDAPUserFolder@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zip

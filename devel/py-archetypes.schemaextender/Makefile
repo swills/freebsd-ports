@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-archetypes.schemaextender/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-archetypes.schemaextender/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	archetypes.schemaextender
 PORTVERSION=	2.1.2
@@ -13,7 +13,7 @@ COMMENT=	Dynamically extend Archetypes schemas with named adapters
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.uuid>=0:www/py-plone.uuid@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.uuid>=0:www/py-plone.uuid@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist

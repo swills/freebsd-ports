@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.app.redirector/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.app.redirector/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.app.redirector
 PORTVERSION=	1.2.2
@@ -12,7 +12,7 @@ COMMENT=	Redirection tool
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.memoize>=0:www/py-plone.memoize@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.memoize>=0:www/py-plone.memoize@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

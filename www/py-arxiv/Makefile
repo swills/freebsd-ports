@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-arxiv/Makefile 470501 2018-05-21 02:35:33Z sunpoet $
+# $FreeBSD: head/www/py-arxiv/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	arxiv
 PORTVERSION=	0.2.2
@@ -12,8 +12,8 @@ COMMENT=	Python wrapper for the arXiv API
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}feedparser>=0:textproc/py-feedparser@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}feedparser>=0:textproc/py-feedparser@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

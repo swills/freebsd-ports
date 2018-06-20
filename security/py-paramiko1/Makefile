@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-paramiko1/Makefile 465163 2018-03-21 09:17:02Z lwhsu $
+# $FreeBSD: head/security/py-paramiko1/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	paramiko
 PORTVERSION=	1.18.5
@@ -12,8 +12,8 @@ COMMENT=	Python SSH2 protocol library
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

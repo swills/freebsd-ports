@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-louie/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/devel/py-louie/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Louie
 PORTVERSION=	1.1
@@ -12,7 +12,7 @@ COMMENT=	Signal dispatching mechanism
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0.8.3:devel/py-nose@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0.8.3:devel/py-nose@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/websocketpp/Makefile 423868 2016-10-12 15:35:41Z arved $
+# $FreeBSD: head/devel/websocketpp/Makefile 472861 2018-06-20 09:37:11Z amdmi3 $
 
 PORTNAME=	websocketpp
 PORTVERSION=	0.7.0
@@ -7,7 +7,8 @@ CATEGORIES=	devel
 MAINTAINER=	arved@FreeBSD.org
 COMMENT=	Header only implementation of the WebSocket protocol
 
-LICENSE=	MIT
+LICENSE=	MIT BSD3CLAUSE ZLIB
+LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_GITHUB=	yes

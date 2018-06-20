@@ -1,5 +1,5 @@
 # Created by: John Hixson <jhixson@gmail.com>
-# $FreeBSD: head/net/py-zeroconf/Makefile 470815 2018-05-25 00:13:57Z swills $
+# $FreeBSD: head/net/py-zeroconf/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zeroconf
 PORTVERSION=	0.20.0
@@ -11,8 +11,8 @@ COMMENT=	Pure python implementation of multicast DNS service discovery
 
 LICENSE=	LGPL21+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.6:net/py-netifaces@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.6:net/py-netifaces@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

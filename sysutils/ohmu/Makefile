@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ohmu/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/ohmu/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ohmu
 PORTVERSION=	1.1.0
@@ -11,8 +11,8 @@ COMMENT=	Tool to view space usage in your terminal
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scandir>=1.3:sysutils/py-scandir@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}future>=0.15.2:devel/py-future@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scandir>=1.3:sysutils/py-scandir@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}future>=0.15.2:devel/py-future@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	paul-nechifor

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-SCRAM/Makefile 466474 2018-04-04 18:52:21Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-SCRAM/Makefile 472915 2018-06-20 19:36:12Z sunpoet $
 
 PORTNAME=	Authen-SCRAM
-PORTVERSION=	0.009
+PORTVERSION=	0.010
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

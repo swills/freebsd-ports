@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/py-telepot/Makefile 461555 2018-02-12 06:09:32Z yuri $
+# $FreeBSD: head/net-im/py-telepot/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	telepot
 DISTVERSION=	12.0
@@ -11,7 +11,7 @@ COMMENT=	Python framework for Telegram Bot API
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3@${PY_FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist
@@ -20,7 +20,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} >= 3500
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}aiohttp>0:www/py-aiohttp@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}aiohttp>0:www/py-aiohttp@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

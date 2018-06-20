@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-phply/Makefile 464816 2018-03-17 13:47:14Z dbaio $
+# $FreeBSD: head/devel/py-phply/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	phply
 PORTVERSION=	1.2.4
@@ -11,8 +11,8 @@ COMMENT=	PHP lexer and parser in Python
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

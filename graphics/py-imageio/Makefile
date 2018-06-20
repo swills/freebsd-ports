@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-imageio/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/graphics/py-imageio/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	imageio
 DISTVERSION=	2.3.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libfreeimage.so:graphics/freeimage
 RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYNUMPY}
 
 USES=		python

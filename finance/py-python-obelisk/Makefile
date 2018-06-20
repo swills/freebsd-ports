@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/finance/py-python-obelisk/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/finance/py-python-obelisk/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	python-obelisk
 PORTVERSION=	0.1.3
@@ -14,9 +14,9 @@ COMMENT=	Python native client for the obelisk blockchain server
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>0:devel/py-twisted@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyzmq>=14.5.0:net/py-pyzmq@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>0:devel/py-twisted@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyzmq>=14.5.0:net/py-pyzmq@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

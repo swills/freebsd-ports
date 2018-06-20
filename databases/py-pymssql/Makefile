@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-pymssql/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-pymssql/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pymssql
 PORTVERSION=	2.1.3
@@ -12,7 +12,7 @@ COMMENT=	Python database interface for MS-SQL. Version 2
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-git>0:devel/py-setuptools-git@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-git>0:devel/py-setuptools-git@${PY_FLAVOR}
 LIB_DEPENDS=	libsybdb.so:databases/freetds
 
 USES=		python

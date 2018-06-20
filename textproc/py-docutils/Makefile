@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/py-docutils/Makefile 470597 2018-05-22 06:24:09Z koobs $
+# $FreeBSD: head/textproc/py-docutils/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	docutils
 PORTVERSION=	0.14
@@ -22,7 +22,7 @@ USES=		python
 
 OPTIONS_DEFINE=	PYGMENTS
 PYGMENTS_DESC=	Syntax highlighting
-PYGMENTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments@${FLAVOR}
+PYGMENTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments@${PY_FLAVOR}
 
 SCRIPTS=	rst2html rst2latex rst2man rst2odt rst2odt_prepstyles \
 		rst2pseudoxml rst2s5 rst2xetex rst2xml rstpep2html

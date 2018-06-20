@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pytools/Makefile 467996 2018-04-22 08:56:32Z sunpoet $
+# $FreeBSD: head/devel/py-pytools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytools
 PORTVERSION=	2018.4
@@ -12,10 +12,10 @@ COMMENT=	Collection of tools for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>=1.4.0:devel/py-appdirs@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}decorator>=3.2.0:devel/py-decorator@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}numpy>=1.6.0,1:math/py-numpy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>=1.4.0:devel/py-appdirs@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}decorator>=3.2.0:devel/py-decorator@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.6.0,1:math/py-numpy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

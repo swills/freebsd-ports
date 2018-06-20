@@ -1,5 +1,5 @@
 # Created by: Milan Obuch
-# $FreeBSD: head/mail/courier-pythonfilter/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/mail/courier-pythonfilter/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	courier-pythonfilter
 PORTVERSION=	1.6
@@ -60,7 +60,7 @@ OPTIONS_DEFAULT=	DEBUG WHITELIST_RELAY WHITELIST_AUTH
 
 PYDISTUTILS_INSTALLARGS:=${PYDISTUTILS_INSTALLARGS} --install-scripts=${PYSCRIPTSDIR}
 
-CLAMAV_CLAMD_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyclamd.py:security/py-pyclamd@${FLAVOR}
+CLAMAV_CLAMD_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyclamd.py:security/py-pyclamd@${PY_FLAVOR}
 
 post-extract:
 	${MV} ${WRKSRC}/pythonfilter.conf ${WRKSRC}/pythonfilter.conf.sample

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/py-tarantool/Makefile 470074 2018-05-15 23:59:23Z sunpoet $
+# $FreeBSD: head/databases/py-tarantool/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	tarantool
 PORTVERSION=	0.6.4
@@ -12,7 +12,7 @@ COMMENT=	Client library for Tarantool Database
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.4:devel/py-msgpack@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.4:devel/py-msgpack@${PY_FLAVOR}
 
 NO_ARCH=	yes
 REINPLACE_ARGS=	-i ''

@@ -1,5 +1,5 @@
 # Created by: Jose Jachuf <jjachuf@gmail.com>
-# $FreeBSD: head/graphics/py-pygal/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-pygal/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pygal
 PORTVERSION=	2.3.1
@@ -12,7 +12,7 @@ COMMENT=	Python svg graph plotting library
 
 LICENSE=	LGPL3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.3.4:devel/py-lxml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.3.4:devel/py-lxml@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

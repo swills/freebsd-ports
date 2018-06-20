@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@sendmail.cz>
-# $FreeBSD: head/databases/py-cql/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-cql/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cql
 PORTVERSION=	1.4.0
@@ -13,7 +13,7 @@ COMMENT=	Python DB-API 2.0 client interface for Cassandra
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/thrift/Thrift.py:devel/py-thrift@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/thrift/Thrift.py:devel/py-thrift@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch5/Makefile 466858 2018-04-09 14:42:53Z feld $
+# $FreeBSD: head/textproc/py-elasticsearch5/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	5.5.2
@@ -13,7 +13,7 @@ COMMENT=	Official Python low-level client for Elasticsearch
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>=1.8.2:net/py-urllib3@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>=1.8.2:net/py-urllib3@${PY_FLAVOR}
 
 CONFLICTS=	${PYTHON_PKGNAMEPREFIX}elasticsearch-[0-9]*
 

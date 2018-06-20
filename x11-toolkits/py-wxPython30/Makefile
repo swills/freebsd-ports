@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/py-wxPython30/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/py-wxPython30/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	wxPython
 PORTVERSION=	3.0.2.0
@@ -39,7 +39,7 @@ do-install:
 WXPORT=		gtk2
 WX_PYTHON_DIR=	wx-${WX_VERSION}-${WXPORT}
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wxPython-common>0:x11-toolkits/py-wxPython-common@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wxPython-common>0:x11-toolkits/py-wxPython-common@${PY_FLAVOR}
 
 USES+=		gettext pkgconfig
 USE_WX=		3.0

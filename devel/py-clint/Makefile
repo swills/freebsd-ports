@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-clint/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-clint/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	clint
 PORTVERSION=	0.5.1
@@ -13,7 +13,7 @@ COMMENT=	Python command-line application tools
 
 LICENSE=	ISCL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}args>=0.1.0:devel/py-args@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}args>=0.1.0:devel/py-args@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

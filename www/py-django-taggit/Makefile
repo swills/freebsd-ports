@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-taggit/Makefile 469567 2018-05-10 17:32:37Z wg $
+# $FreeBSD: head/www/py-django-taggit/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-taggit
 PORTVERSION=	0.22.2
@@ -11,8 +11,8 @@ COMMENT=	Reusable Django application for simple tagging
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}isort>0:devel/py-isort@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}isort>0:devel/py-isort@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

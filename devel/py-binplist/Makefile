@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-binplist/Makefile 470785 2018-05-24 14:55:55Z antoine $
+# $FreeBSD: head/devel/py-binplist/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	binplist
 PORTVERSION=	0.1.4
@@ -15,7 +15,7 @@ LICENSE=	APACHE20
 DEPRECATED=	Not depended upon anymore, no longer maintained upstream
 EXPIRATION_DATE=	2018-06-25
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

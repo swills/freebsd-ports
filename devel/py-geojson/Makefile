@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-geojson/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-geojson/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	geojson
 PORTVERSION=	2.3.0
@@ -13,8 +13,8 @@ COMMENT=	Python's Encoder/decoder for simple GIS features
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.3.0:devel/py-nose@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>1.9:devel/py-simplejson@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.3.0:devel/py-nose@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>1.9:devel/py-simplejson@${PY_FLAVOR}
 
 PORTDOCS=	LICENSE.rst CHANGELOG.rst README.rst
 

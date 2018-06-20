@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/print/py-relatorio/Makefile 457145 2017-12-24 11:15:06Z sunpoet $
+# $FreeBSD: head/print/py-relatorio/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	relatorio
 PORTVERSION=	0.8.0
@@ -13,11 +13,11 @@ COMMENT=	Templating library able to output odt and pdf files
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Genshi>=0.5:textproc/py-genshi@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.0:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}magic>=0:devel/py-magic@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pycha>=0.4.0:graphics/py-pycha@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Genshi>=0.5:textproc/py-genshi@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}magic>=0:devel/py-magic@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycha>=0.4.0:graphics/py-pycha@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

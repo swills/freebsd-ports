@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-photocollage/Makefile 455411 2017-12-03 16:53:46Z yuri $
+# $FreeBSD: head/graphics/py-photocollage/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	photocollage
 DISTVERSION=	1.4.4
@@ -12,9 +12,9 @@ COMMENT=	Graphical tool to make photo collage posters
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>:devel/py-six@${PY_FLAVOR}
 
 USES=		gettext-tools python
 USE_PYTHON=	autoplist concurrent distutils

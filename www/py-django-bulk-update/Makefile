@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-bulk-update/Makefile 463771 2018-03-06 22:45:36Z rene $
+# $FreeBSD: head/www/py-django-bulk-update/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-bulk-update
 PORTVERSION=	2.2.0
@@ -12,7 +12,7 @@ COMMENT=	Bulk update using a single query over Django ORM
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.11:www/py-django@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.11:www/py-django@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:-3.4

@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/aria2/Makefile 471562 2018-06-04 16:22:24Z sunpoet $
+# $FreeBSD: head/www/aria2/Makefile 472908 2018-06-20 19:35:35Z sunpoet $
 
 PORTNAME=	aria2
 PORTVERSION=	1.33.1
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/release-${PORTVERSION}/ \
 		LOCAL/sunpoet
@@ -14,7 +15,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 OPTIONS_DEFINE=	CA_BUNDLE CARES DOCS NLS SQLITE SSH2
-OPTIONS_DEFAULT=SQLITE
+OPTIONS_DEFAULT=CA_BUNDLE SQLITE
 OPTIONS_SUB=	yes
 CA_BUNDLE_DESC=	Use CA bundle from Mozilla Project
 SSH2_DESC=	SSH2 protocol support

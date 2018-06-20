@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net/py-gspreadsheet/Makefile 462926 2018-02-25 05:33:48Z sunpoet $
+# $FreeBSD: head/net/py-gspreadsheet/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gspreadsheet
 PORTVERSION=	0.4.0
@@ -13,8 +13,8 @@ COMMENT=	Wrapper around Google Spreadsheets to look like csv.DictReader
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdata>=2.0.14:devel/py-gdata@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdata>=2.0.14:devel/py-gdata@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

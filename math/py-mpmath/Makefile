@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-mpmath/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-mpmath/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mpmath
 PORTVERSION=	1.0.0
@@ -12,7 +12,7 @@ COMMENT=	Python Library for Arbitrary-precision Floating-point Arithmetic
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/gmpy.so:math/py-gmpy@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/gmpy.so:math/py-gmpy@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

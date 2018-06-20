@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/gracetmpl/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/gracetmpl/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gracetmpl
 PORTVERSION=	0.3.2
@@ -10,8 +10,8 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Provide an easy way to use existing grace-files as a template
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/numarray/__init__.py:math/py-numarray@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/numarray/__init__.py:math/py-numarray@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/numarray/__init__.py:math/py-numarray@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/numarray/__init__.py:math/py-numarray@${PY_FLAVOR}
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

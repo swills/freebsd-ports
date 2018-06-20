@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-fail2ban/Makefile 467124 2018-04-12 04:48:44Z joneum $
+# $FreeBSD: head/security/py-fail2ban/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fail2ban
 PORTVERSION=	0.10.3.1
@@ -11,7 +11,7 @@ COMMENT=	Scans log files and bans IP that makes too many password failures
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

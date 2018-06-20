@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-ordered-set/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-ordered-set/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ordered-set
 PORTVERSION=	2.0.2
@@ -13,7 +13,7 @@ COMMENT=	MutableSet that remembers its order, so that every entry has an index
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

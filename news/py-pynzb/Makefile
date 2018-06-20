@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/news/py-pynzb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/news/py-pynzb/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pynzb
 PORTVERSION=	0.1.0
@@ -18,6 +18,6 @@ USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	LXML
 LXML_DESC=	Add support for py-lxml
-LXML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.1:devel/py-lxml@${FLAVOR}
+LXML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.1:devel/py-lxml@${PY_FLAVOR}
 
 .include <bsd.port.mk>

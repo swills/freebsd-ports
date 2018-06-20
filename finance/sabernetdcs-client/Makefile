@@ -1,5 +1,5 @@
 # Created by: Matthew Ranostay <mranostay@saberlogic.com>
-# $FreeBSD: head/finance/sabernetdcs-client/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/finance/sabernetdcs-client/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sabernetdcs
 PORTVERSION=	2.0.3
@@ -15,7 +15,7 @@ COMMENT=	SaberNet DCS - A labor data collection system
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyro>=0:devel/py-pyro@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyro>=0:devel/py-pyro@${PY_FLAVOR}
 
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils

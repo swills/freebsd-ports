@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-tagging/Makefile 464121 2018-03-10 23:02:04Z sunpoet $
+# $FreeBSD: head/www/py-django-tagging/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-tagging
 PORTVERSION=	0.4.6
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE MIT
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/py-speechrecognition/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/audio/py-speechrecognition/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	SpeechRecognition
 PORTVERSION=	3.8.1
@@ -16,7 +16,7 @@ GH_ACCOUNT=	Uberi
 GH_PROJECT=	speech_recognition
 
 RUN_DEPENDS=	flac:audio/flac \
-		${PYTHON_PKGNAMEPREFIX}pyaudio>0:audio/py-pyaudio@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyaudio>0:audio/py-pyaudio@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python
@@ -28,7 +28,7 @@ post-extract:
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3000
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}monotonic>=0.3:devel/py-monotonic@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}monotonic>=0.3:devel/py-monotonic@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-pystorm/Makefile 468300 2018-04-25 21:01:26Z sunpoet $
+# $FreeBSD: head/devel/py-pystorm/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pystorm
 PORTVERSION=	3.1.0
@@ -16,9 +16,9 @@ LICENSE=	APACHE20
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR}
 
 NO_ARCH=	yes
 REINPLACE_ARGS=	-i ''

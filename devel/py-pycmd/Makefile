@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-pycmd/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pycmd/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pycmd
 PORTVERSION=	1.2
@@ -13,8 +13,8 @@ COMMENT=	Tools for managing/searching Python related files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}py>=1.4.9:devel/py-py@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}py>=1.4.9:devel/py-py@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-PEAK-Rules/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-PEAK-Rules/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PEAK-Rules
 PORTVERSION=	0.5a1
@@ -12,9 +12,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}.dev-r2686
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Generic functions and business rules support systems
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Extremes>=1.1.1:devel/py-extremes@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}AddOns>=0.6:devel/py-AddOns@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}BytecodeAssembler>0:devel/py-BytecodeAssembler@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Extremes>=1.1.1:devel/py-extremes@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}AddOns>=0.6:devel/py-AddOns@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}BytecodeAssembler>0:devel/py-BytecodeAssembler@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7

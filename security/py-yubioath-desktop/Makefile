@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-yubioath-desktop/Makefile 464370 2018-03-13 13:14:05Z bapt $
+# $FreeBSD: head/security/py-yubioath-desktop/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	yubioath-desktop
 PORTVERSION=	3.1.0
@@ -11,10 +11,10 @@ COMMENT=	GUI for displaying OATH codes with a Yubikey
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyscard>0:security/py-pyscard@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${FLAVOR} \
-		pyside${PYTHON_PKGNAMESUFFIX}>0:devel/pyside@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyscard>0:security/py-pyscard@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
+		pyside${PYTHON_PKGNAMESUFFIX}>0:devel/pyside@${PY_FLAVOR} \
 		pcsc-spy:devel/pcsc-lite \
 		${LOCALBASE}/lib/pcsc/drivers/ifd-ccid.bundle/Contents/${OPSYS}/libccid.so:devel/libccid
 

@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-memory_profiler/Makefile 462914 2018-02-25 05:32:46Z sunpoet $
+# $FreeBSD: head/devel/py-memory_profiler/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	memory_profiler
 PORTVERSION=	0.52.0
@@ -13,7 +13,7 @@ COMMENT=	Module for monitoring memory usage of a python program
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=0:sysutils/py-psutil@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=0:sysutils/py-psutil@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

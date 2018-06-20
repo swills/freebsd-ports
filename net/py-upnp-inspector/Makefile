@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/py-upnp-inspector/Makefile 472740 2018-06-19 01:43:46Z yuri $
+# $FreeBSD: head/net/py-upnp-inspector/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	UPnP-Inspector
 PORTVERSION=	0.2.2
@@ -14,7 +14,7 @@ COMMENT=	UPnP Device and Service analyzer
 LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Coherence>=0.6.4:net/py-coherence@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Coherence>=0.6.4:net/py-coherence@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils concurrent autoplist

@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/devel/py-epsilon/Makefile 456497 2017-12-16 20:55:31Z sunpoet $
+# $FreeBSD: head/devel/py-epsilon/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	epsilon
 PORTVERSION=	0.7.1
@@ -15,8 +15,8 @@ COMMENT=	Set of Python utility modules used by DivMod projects
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 # bin/benchmark
 CONFLICTS_INSTALL=	brlcad

@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/devel/pygobject3-common/Makefile 455912 2017-12-10 20:45:32Z antoine $
+# $FreeBSD: head/devel/pygobject3-common/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gobject
 PORTVERSION=	3.18.2
@@ -58,8 +58,8 @@ RUN_DEPENDS+=	pygobject3-common>=0:devel/pygobject3-common
 .if ${SLAVE_PORT} == python
 USES+=		python
 USE_PYTHON=	flavors
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${FLAVOR}
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${PY_FLAVOR}
 .endif
 
 post-install:

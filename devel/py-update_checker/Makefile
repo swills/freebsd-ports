@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-update_checker/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-update_checker/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	update_checker
 PORTVERSION=	0.16
@@ -13,7 +13,7 @@ COMMENT=	Python module that will check for package updates
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

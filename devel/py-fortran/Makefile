@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-fortran/Makefile 463221 2018-02-28 15:12:53Z sunpoet $
+# $FreeBSD: head/devel/py-fortran/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fortran
 PORTVERSION=	8.5.3
@@ -14,7 +14,7 @@ COMMENT=	Creating extensions to the Python language with Fortran routines
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numeric>0:math/py-numeric@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numeric>0:math/py-numeric@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-PyUserInput/Makefile 471339 2018-06-02 01:56:58Z yuri $
+# $FreeBSD: head/misc/py-PyUserInput/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PyUserInput
 DISTVERSION=	0.1.11
@@ -11,7 +11,7 @@ COMMENT=	Module for mouse and keyboard control
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>0:x11-toolkits/py-xlib@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>0:x11-toolkits/py-xlib@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

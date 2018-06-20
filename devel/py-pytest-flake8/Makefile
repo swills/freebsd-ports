@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-flake8/Makefile 467079 2018-04-11 19:37:22Z sunpoet $
+# $FreeBSD: head/devel/py-pytest-flake8/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytest-flake8
 PORTVERSION=	1.0.0
@@ -13,8 +13,8 @@ COMMENT=	pytest plugin to check FLAKE8 requirement
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8>=3.5:devel/py-flake8@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest>=3.2:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8>=3.5:devel/py-flake8@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=3.2:devel/py-pytest@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

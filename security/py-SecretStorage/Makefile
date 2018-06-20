@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/security/py-SecretStorage/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-SecretStorage/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	SecretStorage
 PORTVERSION=	2.3.1
@@ -13,7 +13,7 @@ COMMENT=	Store passwords using the SecretService DBus API
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python
@@ -24,7 +24,7 @@ USE_PYTHON=	autoplist distutils
 .if ${PYTHON_REL} > 3000
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dbus>=0.84.0:devel/py-dbus@${PY_FLAVOR}
 .else
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dbus>=0.84.0:devel/py-dbus@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dbus>=0.84.0:devel/py-dbus@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

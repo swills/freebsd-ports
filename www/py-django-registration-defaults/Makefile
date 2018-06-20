@@ -1,5 +1,5 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-django-registration-defaults/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-registration-defaults/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-registration-defaults
 PORTVERSION=	0.4.4
@@ -13,7 +13,7 @@ COMMENT=	Default templates and settings for django-registration
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-registration>=0:www/py-django-registration@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-registration>=0:www/py-django-registration@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

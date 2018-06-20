@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbz@FreeBSD.org>
-# $FreeBSD: head/devel/runsnakerun/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/runsnakerun/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	runsnakerun
 DISTVERSION=	2.0.4
@@ -13,8 +13,8 @@ COMMENT=	GUI Viewer for Python profiling runs
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}SquareMap>0:x11-toolkits/py-SquareMap@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}meliae>0:devel/py-meliae@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}SquareMap>0:x11-toolkits/py-SquareMap@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}meliae>0:devel/py-meliae@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

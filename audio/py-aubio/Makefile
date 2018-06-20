@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/py-aubio/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/py-aubio/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTREVISION=	1
 CATEGORIES=	audio python
@@ -11,7 +11,7 @@ LIB_DEPENDS=	libaubio.so:audio/aubio
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
 TEST_DEPENDS=	sox:audio/sox \
-		${PYTHON_PKGNAMEPREFIX}nose2>=0.6.5:devel/py-nose2@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}nose2>=0.6.5:devel/py-nose2@${PY_FLAVOR}
 
 USES+=		python
 USE_PYTHON=	autoplist distutils

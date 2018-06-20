@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-superlance/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/sysutils/py-superlance/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	superlance
 PORTVERSION=	1.0.0
@@ -13,7 +13,7 @@ COMMENT=	Superlance plugins for supervisord
 LICENSE=	BSD4CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}supervisor>0:sysutils/py-supervisor@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}supervisor>0:sysutils/py-supervisor@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-restful/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-flask-restful/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-RESTful
 PORTVERSION=	0.3.6
@@ -12,10 +12,10 @@ COMMENT=	Simple framework for creating REST APIs with Flask
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aniso8601>0:devel/py-aniso8601@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aniso8601>0:devel/py-aniso8601@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

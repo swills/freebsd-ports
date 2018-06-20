@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/databases/py-htsql-mysql/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/databases/py-htsql-mysql/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	htsql-mysql
 PORTVERSION=	2.3.3
@@ -14,8 +14,8 @@ COMMENT=	Database Query Language (MySQL Backend for HTSQL)
 
 LICENSE=	AGPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}htsql>2.3:databases/py-htsql@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}MySQLdb>0:databases/py-MySQLdb@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}htsql>2.3:databases/py-htsql@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}MySQLdb>0:databases/py-MySQLdb@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

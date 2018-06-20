@@ -1,5 +1,5 @@
 # Created by: Michelle Sullivan <michelle@sorbs.net>
-# $FreeBSD: head/www/py-collective.easytemplate/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/py-collective.easytemplate/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	collective.easytemplate
 PORTVERSION=	0.8.0
@@ -14,11 +14,11 @@ COMMENT=	Dynamic HTML generation and scripting for Plone
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=2.1.0:devel/py-Products.CMFCore@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.7.3:devel/py-Jinja2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}plone.portlet.static>=0:www/py-plone.portlet.static@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}feedparser>=0:textproc/py-feedparser@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}collective.templateengines>=0.3:www/py-collective.templateengines@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=2.1.0:devel/py-Products.CMFCore@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.7.3:devel/py-Jinja2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.portlet.static>=0:www/py-plone.portlet.static@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}feedparser>=0:textproc/py-feedparser@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}collective.templateengines>=0.3:www/py-collective.templateengines@${PY_FLAVOR}
 
 USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Timothy Bourke <timbob@bigpond.com>
-# $FreeBSD: head/graphics/imgtops/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/imgtops/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	imgtops
 PORTVERSION=	1.0
@@ -13,7 +13,7 @@ COMMENT=	Create efficient Encapsulated Postscript files from images
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 
 USES=			ghostscript:run python:2.7
 USE_PYTHON=		distutils

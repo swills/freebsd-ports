@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-strategies/Makefile 465930 2018-03-29 21:16:56Z yuri $
+# $FreeBSD: head/devel/py-strategies/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	strategies
 DISTVERSION=	0.2.3
@@ -12,8 +12,8 @@ COMMENT=	Programmatic control flow
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}multipledispatch>0:devel/py-multipledispatch@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}toolz>0:devel/py-toolz@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}multipledispatch>0:devel/py-multipledispatch@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}toolz>0:devel/py-toolz@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

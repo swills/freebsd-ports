@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/security/py-pycryptopp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-pycryptopp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pycryptopp
 PORTVERSION=	0.7.1.869544967005693312591928092448767568728501330214
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python Wrappers for the Crypto++ Library
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}darcsver>0:devel/py-darcsver@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}setuptools_darcs>0:devel/py-setuptools_darcs@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}darcsver>0:devel/py-darcsver@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setuptools_darcs>0:devel/py-setuptools_darcs@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7

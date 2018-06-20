@@ -1,5 +1,5 @@
 # Created by: teramoto@comm.eng.osaka-u.ac.jp
-# $FreeBSD: head/security/gpgme/Makefile 461063 2018-02-06 15:18:23Z jhale $
+# $FreeBSD: head/security/gpgme/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gpgme
 PORTVERSION=	1.10.0
@@ -84,8 +84,8 @@ TEST_USE=		QT5=testlib_build
 
 .  if ${SLAVEPORT} == "python"
 BUILD_DEPENDS+=	swig3.0:devel/swig30 \
-		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${PY_FLAVOR}
 USES+=		python
 USE_PYTHON=	py3kplist flavors
 CONFIGURE_ENV+=	SWIG=${LOCALBASE}/bin/swig3.0

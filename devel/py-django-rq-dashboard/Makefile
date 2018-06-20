@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-django-rq-dashboard/Makefile 470769 2018-05-24 11:27:22Z swills $
+# $FreeBSD: head/devel/py-django-rq-dashboard/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-rq-dashboard
 PORTVERSION=	0.3.3
@@ -12,7 +12,7 @@ COMMENT=	Monitor your RQ queues, jobs and workers from the Django admin
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-rq>0:devel/py-django-rq@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-rq>0:devel/py-django-rq@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

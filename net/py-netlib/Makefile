@@ -1,5 +1,5 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/net/py-netlib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-netlib/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	netlib
 PORTVERSION=	0.10
@@ -13,8 +13,8 @@ COMMENT=	Collection of network utilities
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

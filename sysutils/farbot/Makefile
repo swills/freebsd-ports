@@ -1,5 +1,5 @@
 # Created by: Nick Barkas <snb@threerings.net>
-# $FreeBSD: head/sysutils/farbot/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/sysutils/farbot/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	farbot
 PORTVERSION=	1.0
@@ -11,8 +11,8 @@ COMMENT=	FreeBSD Automated Release Bot
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>=0:devel/py-zconfig@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>=0:devel/py-zconfig@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>=0:devel/py-zconfig@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>=0:devel/py-zconfig@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	threerings

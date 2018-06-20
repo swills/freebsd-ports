@@ -1,5 +1,5 @@
 # Created by: Yarodin <yarodin@gmail.com>
-# $FreeBSD: head/security/pwman3/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/pwman3/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pwman3
 PORTVERSION=	0.0.6
@@ -12,8 +12,8 @@ DISTNAME=	Pwman3-${PORTVERSION}
 MAINTAINER=	yarodin@gmail.com
 COMMENT=	Console password management application with sql storage
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=2.0:security/py-pycrypto@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=2.0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent optsuffix

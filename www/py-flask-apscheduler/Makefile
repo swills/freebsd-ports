@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-flask-apscheduler/Makefile 463835 2018-03-07 21:38:53Z feld $
+# $FreeBSD: head/www/py-flask-apscheduler/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-APScheduler
 PORTVERSION=	1.7.1
@@ -13,9 +13,9 @@ COMMENT=	APScheduler support for Flask
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10.1:www/py-flask@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}apscheduler>=3.2.0:devel/py-apscheduler@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=2.4.2:devel/py-dateutil@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10.1:www/py-flask@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}apscheduler>=3.2.0:devel/py-apscheduler@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=2.4.2:devel/py-dateutil@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

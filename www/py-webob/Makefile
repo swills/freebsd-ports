@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-webob/Makefile 465383 2018-03-23 16:46:00Z sunpoet $
+# $FreeBSD: head/www/py-webob/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	webob
 PORTVERSION=	1.7.4
@@ -12,12 +12,12 @@ COMMENT=	WSGI request and response Python object
 
 LICENSE=	MIT
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR}
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pylons-sphinx-themes>=0:textproc/py-pylons-sphinx-themes@${FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}sphinx>=1.3.1:textproc/py-sphinx@${FLAVOR}
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pylons-sphinx-themes>=0:textproc/py-pylons-sphinx-themes@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}sphinx>=1.3.1:textproc/py-sphinx@${PY_FLAVOR}
 DOCS_VARS=	PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
 

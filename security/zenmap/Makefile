@@ -1,5 +1,5 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/security/zenmap/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/zenmap/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PKGNAMEPREFIX=	ze
 
@@ -7,7 +7,7 @@ MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	GUI frontend for the Nmap scanning utility
 
 RUN_DEPENDS=	nmap:security/nmap \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 MASTERDIR=	${.CURDIR}/../nmap
 PATCHDIR=	${.CURDIR}/files

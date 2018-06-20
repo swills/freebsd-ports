@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/py-six/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-six/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	six
 PORTVERSION=	1.11.0
@@ -13,7 +13,7 @@ COMMENT=	Python 2 and 3 compatibility utilities
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

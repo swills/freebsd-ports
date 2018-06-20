@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-jdcal/Makefile 467870 2018-04-21 10:30:18Z antoine $
+# $FreeBSD: head/devel/py-jdcal/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	jdcal
 PORTVERSION=	1.4
@@ -12,7 +12,7 @@ COMMENT=	Module converting between Julian dates and calendar dates
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

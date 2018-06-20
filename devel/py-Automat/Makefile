@@ -1,5 +1,5 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/devel/py-Automat/Makefile 472568 2018-06-16 21:28:47Z swills $
+# $FreeBSD: head/devel/py-Automat/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Automat
 PORTVERSION=	0.7.0
@@ -13,10 +13,10 @@ COMMENT=	Finite-state machines in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}m2r>0:textproc/py-m2r@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}attrs>=16.1.0:devel/py-attrs@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}m2r>0:textproc/py-m2r@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}attrs>=16.1.0:devel/py-attrs@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

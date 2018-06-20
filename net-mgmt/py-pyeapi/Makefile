@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-pyeapi/Makefile 466530 2018-04-05 04:36:58Z yuri $
+# $FreeBSD: head/net-mgmt/py-pyeapi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyeapi
 DISTVERSION=	0.8.2
@@ -12,7 +12,7 @@ COMMENT=	Python client for Arista eAPI
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}netaddr>0:net/py-netaddr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}netaddr>0:net/py-netaddr@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

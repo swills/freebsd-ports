@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/www/py-trello/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-trello/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	trello
 PORTVERSION=	0.9.1
@@ -16,7 +16,7 @@ LICENSE_NAME=	Fog Creek Software
 LICENSE_FILE=	${WRKSRC}/PKG-INFO
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0.9.1:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0.9.1:www/py-requests@${PY_FLAVOR}
 
 USES=	python:-2.7 zip
 USE_PYTHON=	autoplist distutils

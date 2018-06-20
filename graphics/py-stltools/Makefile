@@ -1,5 +1,5 @@
 # Created by: R.F. Smith <rsmith@xs4all.nl>
-# $FreeBSD: head/graphics/py-stltools/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/py-stltools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=		stltools
 PORTVERSION=		3.2
@@ -24,7 +24,7 @@ EXAMPLES=		test/cube.stl test/cube_bin.stl
 
 OPTIONS_DEFINE=		PYCAIRO DOCS EXAMPLES
 PYCAIRO_DESC=		Use (py)Cairo to enable stl2pdf to function.
-PYCAIRO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>1.8:graphics/py-cairo@${FLAVOR}
+PYCAIRO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>1.8:graphics/py-cairo@${PY_FLAVOR}
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

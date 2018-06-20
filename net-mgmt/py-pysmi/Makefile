@@ -1,5 +1,5 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 470482 2018-05-20 19:19:28Z sunpoet $
+# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pysmi
 PORTVERSION=	0.3.0
@@ -13,9 +13,9 @@ COMMENT=	SNMP/SMI MIB parsing in Python
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}snmp4>=0:net-mgmt/py-snmp4@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}snmp4>=0:net-mgmt/py-snmp4@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

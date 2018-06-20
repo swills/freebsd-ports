@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-buildbot-grid-view/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-buildbot-grid-view/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	buildbot-grid-view
 PORTVERSION=	0.9.11
@@ -12,8 +12,8 @@ COMMENT=	Continuous Integration Framework (Grid View)
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

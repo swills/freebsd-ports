@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django_polymorphic/Makefile 469670 2018-05-11 16:54:33Z sunpoet $
+# $FreeBSD: head/www/py-django_polymorphic/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django_polymorphic
 PORTVERSION=	2.0.2
@@ -14,7 +14,7 @@ COMMENT=	Seamless Polymorphic Inheritance for Django Models
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

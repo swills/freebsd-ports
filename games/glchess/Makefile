@@ -1,5 +1,5 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/games/glchess/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/glchess/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	glchess
 PORTVERSION=	1.0.6
@@ -10,7 +10,7 @@ MASTER_SITES=	SF
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	3D OpenGL based chess game
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/gdkgl/__init__.py:x11-toolkits/py-gtkglext@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/gdkgl/__init__.py:x11-toolkits/py-gtkglext@${PY_FLAVOR}
 
 USES=		desktop-file-utils python:2.7 shared-mime-info
 USE_GNOME=	gconf2

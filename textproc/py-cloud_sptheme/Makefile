@@ -1,5 +1,5 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/textproc/py-cloud_sptheme/Makefile 460264 2018-01-29 11:27:34Z sunpoet $
+# $FreeBSD: head/textproc/py-cloud_sptheme/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cloud_sptheme
 PORTVERSION=	1.9.4
@@ -14,8 +14,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 # sphinx.util.fileutil was added in sphinx 1.5
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.5:textproc/py-sphinx@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sphinxcontrib-fulltoc>=1.1:textproc/py-sphinxcontrib-fulltoc@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.5:textproc/py-sphinx@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sphinxcontrib-fulltoc>=1.1:textproc/py-sphinxcontrib-fulltoc@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-simpy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-simpy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	simpy
 PORTVERSION=	3.0.10
@@ -21,7 +21,7 @@ TKINTER_DESC=	py-tkinter for plot
 
 PORTDOCS=	*
 
-TKINTER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
+TKINTER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-oslo.i18n/Makefile 464752 2018-03-17 04:23:55Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.i18n/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	oslo.i18n
 PORTVERSION=	3.20.0
@@ -12,9 +12,9 @@ COMMENT=	Oslo i18n library
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PKGNAMEPREFIX}pbr>=2.0.0:devel/py-pbr@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=2.0.0:devel/py-pbr@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

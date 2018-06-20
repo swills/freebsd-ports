@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/graphics/py-mcomix/Makefile 459143 2018-01-16 00:47:51Z cpm $
+# $FreeBSD: head/graphics/py-mcomix/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	mcomix
 PORTVERSION=	1.2.1
@@ -14,7 +14,7 @@ COMMENT=	GTK2 comic book viewer
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7 tar:bzip2

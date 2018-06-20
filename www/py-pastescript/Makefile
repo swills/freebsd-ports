@@ -1,5 +1,5 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/www/py-pastescript/Makefile 457301 2017-12-26 18:36:47Z lwhsu $
+# $FreeBSD: head/www/py-pastescript/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PasteScript
 PORTVERSION=	2.0.2
@@ -14,12 +14,12 @@ COMMENT=	Pluggable command-line frontend
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/docs/license.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>=0:devel/py-cheetah@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}flup6>=0:www/py-flup6@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Paste>=1.3:www/py-paste@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=0:www/py-pastedeploy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wsgiutils>=0:devel/py-wsgiutils@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>=0:devel/py-cheetah@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}flup6>=0:www/py-flup6@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Paste>=1.3:www/py-paste@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=0:www/py-pastedeploy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wsgiutils>=0:devel/py-wsgiutils@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/devel/py-xattr/Makefile 458167 2018-01-05 20:02:03Z yuri $
+# $FreeBSD: head/devel/py-xattr/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	xattr
 PORTVERSION=	0.9.2
@@ -14,8 +14,8 @@ COMMENT=	Python wrapper for extended filesystem attributes
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

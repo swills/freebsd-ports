@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/databases/py-Elixir/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-Elixir/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Elixir
 PORTVERSION=	0.7.1
@@ -14,7 +14,7 @@ COMMENT=	Declarative Mapper for SQLAlchemy
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0.4.0:databases/py-sqlalchemy10@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0.4.0:databases/py-sqlalchemy10@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

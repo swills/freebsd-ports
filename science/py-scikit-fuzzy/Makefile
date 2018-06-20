@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/science/py-scikit-fuzzy/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/py-scikit-fuzzy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	scikit-fuzzy
 PORTVERSION=	0.3.1
@@ -15,8 +15,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}networkx>=1.9.0:math/py-networkx@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.9.0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}networkx>=1.9.0:math/py-networkx@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.9.0:science/py-scipy@${PY_FLAVOR}
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
 USES=		python:2.7

@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net-mgmt/py-msrest/Makefile 468787 2018-05-01 19:50:08Z sunpoet $
+# $FreeBSD: head/net-mgmt/py-msrest/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	msrest
 PORTVERSION=	0.4.29
@@ -12,11 +12,11 @@ COMMENT=	AutoRest swagger generator Python client runtime
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>=2017.4.17:security/py-certifi@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>=2017.4.17:security/py-certifi@${PY_FLAVOR} \
 		${PY_ENUM34} \
-		${PYTHON_PKGNAMEPREFIX}isodate>=0.6.0:devel/py-isodate@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0.5.0:www/py-requests-oauthlib@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.14:www/py-requests@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}isodate>=0.6.0:devel/py-isodate@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0.5.0:www/py-requests-oauthlib@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.14:www/py-requests@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

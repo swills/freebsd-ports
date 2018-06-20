@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-bidict/Makefile 466511 2018-04-04 21:54:02Z wg $
+# $FreeBSD: head/devel/py-bidict/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bidict
 PORTVERSION=	0.15.0
@@ -12,8 +12,8 @@ COMMENT=	Bidirectional map implementation and related functionality
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-jedi/Makefile 468928 2018-05-03 13:42:33Z skreuzer $
+# $FreeBSD: head/devel/py-jedi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	jedi
 PORTVERSION=	0.12.0
@@ -13,7 +13,7 @@ COMMENT=	Autocompletion tool for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}parso>=0.2.0:textproc/py-parso@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}parso>=0.2.0:textproc/py-parso@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/py-QtAwesome/Makefile 461453 2018-02-11 00:09:42Z yuri $
+# $FreeBSD: head/x11-fonts/py-QtAwesome/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	QtAwesome
 DISTVERSION=	0.4.4
@@ -12,8 +12,8 @@ COMMENT=	Iconic fonts in PyQt and PySide applications
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}QtPy>0:devel/py-QtPy@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}QtPy>0:devel/py-QtPy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

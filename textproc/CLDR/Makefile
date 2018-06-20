@@ -1,10 +1,10 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/textproc/CLDR/Makefile 471939 2018-06-07 17:18:43Z thierry $
+# $FreeBSD: head/textproc/CLDR/Makefile 472937 2018-06-20 20:05:42Z thierry $
 
 PORTNAME=	CLDR
-PORTVERSION=	33.0
+PORTVERSION=	33.1
 CATEGORIES=	textproc
-MASTER_SITES=	http://unicode.org/Public/cldr/${PORTVERSION:R}/:src	\
+MASTER_SITES=	http://unicode.org/Public/cldr/${PORTVERSION}/:src	\
 		http://www.unicode.org/:lic
 DISTFILES=	${SRCFILE}:src	\
 		copyright.html:lic

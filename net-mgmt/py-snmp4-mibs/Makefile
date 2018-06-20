@@ -1,5 +1,5 @@
 # Created by: Martin Jackson <mhjacks@swbell.net>
-# $FreeBSD: head/net-mgmt/py-snmp4-mibs/Makefile 467272 2018-04-13 21:51:27Z leres $
+# $FreeBSD: head/net-mgmt/py-snmp4-mibs/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	snmp4-mibs
 PORTVERSION=	0.1.6
@@ -14,7 +14,7 @@ COMMENT=	Additional python MIB files for pysnmp4 and friends
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}snmp4>=4.3.2:net-mgmt/py-snmp4@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}snmp4>=4.3.2:net-mgmt/py-snmp4@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

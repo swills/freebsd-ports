@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-boto3/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-boto3/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	boto3
 PORTVERSION=	1.4.0
@@ -12,11 +12,11 @@ COMMENT=	AWS SDK for Python
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}botocore>=1.4.1:devel/py-botocore@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}jmespath>=0.7.1:devel/py-jmespath@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}s3transfer>=0.1.0:net/py-s3transfer@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}botocore>=1.4.1:devel/py-botocore@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jmespath>=0.7.1:devel/py-jmespath@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}s3transfer>=0.1.0:net/py-s3transfer@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 
 # Actually -2.7,3.3-3.5
 USES=		python

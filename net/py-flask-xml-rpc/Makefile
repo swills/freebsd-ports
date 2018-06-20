@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-flask-xml-rpc/Makefile 463370 2018-03-02 05:15:06Z koobs $
+# $FreeBSD: head/net/py-flask-xml-rpc/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-XML-RPC
 PORTVERSION=	0.1.2
@@ -11,8 +11,8 @@ COMMENT=	Adds support for creating XML-RPC APIs to Flask
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

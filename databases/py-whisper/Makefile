@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/databases/py-whisper/Makefile 466556 2018-04-05 12:49:20Z skreuzer $
+# $FreeBSD: head/databases/py-whisper/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	whisper
 PORTVERSION=	1.1.3
@@ -12,7 +12,7 @@ COMMENT=	Fixed-size database, similar in design to RRD
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

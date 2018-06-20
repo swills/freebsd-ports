@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-cyipopt/Makefile 466117 2018-04-01 05:44:32Z yuri $
+# $FreeBSD: head/math/py-cyipopt/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cyipopt
 DISTVERSIONPREFIX=	v
@@ -12,12 +12,12 @@ COMMENT=	Cython interface for the interior point optimizer IPOPT
 LICENSE=	EPL
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 LIB_DEPENDS=	libblas.so:math/blas \
 		libcoinmetis.so:math/ipopt \
 		liblapack.so:math/lapack
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 
 USES=		fortran python pkgconfig # fortran because ipopt's pkg-config returns gcc libs
 USE_GITHUB=	yes

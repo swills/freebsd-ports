@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/py-naarad/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/benchmarks/py-naarad/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	naarad
 PORTVERSION=	1.0.15
@@ -13,9 +13,9 @@ COMMENT=	Framework for performance analysis
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=2013.8,1:devel/py-pytz@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}luminol>0:math/py-luminol@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=2013.8,1:devel/py-pytz@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}luminol>0:math/py-luminol@${PY_FLAVOR} \
 	bash:shells/bash \
 	gawk:lang/gawk
 

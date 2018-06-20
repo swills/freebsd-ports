@@ -1,5 +1,5 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/security/py-flask-kerberos/Makefile 469912 2018-05-14 15:59:03Z miwi $
+# $FreeBSD: head/security/py-flask-kerberos/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Flask-Kerberos
 PORTVERSION=	1.0.4
@@ -12,8 +12,8 @@ COMMENT=	GSSAPI Negotiate HTTP authentication for Flask routes
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}kerberos>1.1.1:security/py-kerberos@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}kerberos>1.1.1:security/py-kerberos@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

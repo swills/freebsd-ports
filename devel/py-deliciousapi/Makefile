@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/py-deliciousapi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-deliciousapi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	deliciousapi
 PORTVERSION=	1.6.7
@@ -12,8 +12,8 @@ DISTNAME=	DeliciousAPI-${PORTVERSION}
 MAINTAINER=	sbz@FreeBSD.org
 COMMENT=	Unofficial Python API for retrieving data from Delicious.com
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/BeautifulSoup.py:www/py-beautifulsoup32@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}simplejson>=1.7:devel/py-simplejson@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/BeautifulSoup.py:www/py-beautifulsoup32@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}simplejson>=1.7:devel/py-simplejson@${PY_FLAVOR}
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE

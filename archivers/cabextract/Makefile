@@ -1,12 +1,12 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/archivers/cabextract/Makefile 472207 2018-06-11 20:56:24Z feld $
+# $FreeBSD: head/archivers/cabextract/Makefile 472904 2018-06-20 19:35:14Z sunpoet $
 
 PORTNAME=	cabextract
 PORTVERSION=	1.6
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.cabextract.org.uk/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Program to extract Microsoft cabinet (.CAB) files
 
 LICENSE=	GPLv3

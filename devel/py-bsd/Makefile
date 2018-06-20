@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-bsd/Makefile 463075 2018-02-26 22:31:36Z sunpoet $
+# $FreeBSD: head/devel/py-bsd/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bsd
 PORTVERSION=	1.0.20170329
@@ -10,9 +10,9 @@ COMMENT=	Python wrappers for various BSD libc and system calls
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 RUN_DEPENDS=	${PY_ENUM34} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils cython

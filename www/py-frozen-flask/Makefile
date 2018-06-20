@@ -1,5 +1,5 @@
 # Created by: Oleg Pudeyev <oleg@bsdpower.com>
-# $FreeBSD: head/www/py-frozen-flask/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-frozen-flask/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	Frozen-Flask
 PORTVERSION=	0.11
@@ -12,7 +12,7 @@ COMMENT=	Freezes a Flask application into a set of static files
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,14 +1,16 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/sysutils/osinfo-db-tools/Makefile 436886 2017-03-25 04:52:02Z novel $
+# $FreeBSD: head/sysutils/osinfo-db-tools/Makefile 472878 2018-06-20 16:28:32Z novel $
 
 PORTNAME=	osinfo-db-tools
-PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTVERSION=	1.2.0
 CATEGORIES=	sysutils
 MASTER_SITES=	https://releases.pagure.org/libosinfo/
 
 MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Tools for managing the osinfo database
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gettext gmake libarchive pkgconfig
 USE_GNOME=	glib20 intltool libxml2 libxslt

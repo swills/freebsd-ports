@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net-mgmt/py-adal/Makefile 471157 2018-05-30 19:47:52Z sunpoet $
+# $FreeBSD: head/net-mgmt/py-adal/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	adal
 DISTVERSION=	1.0.0
@@ -12,10 +12,10 @@ COMMENT=	Authentication ot Azure Active Directory for python apps
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=1.1.0:security/py-cryptography@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=2.1.0:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyjwt>=1.0.0:www/py-pyjwt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=1.1.0:security/py-cryptography@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=2.1.0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyjwt>=1.0.0:www/py-pyjwt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

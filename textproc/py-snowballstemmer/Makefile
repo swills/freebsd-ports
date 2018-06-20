@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-snowballstemmer/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-snowballstemmer/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	snowballstemmer
 PORTVERSION=	1.2.0
@@ -19,6 +19,6 @@ OPTIONS_DEFINE=	PYSTEMMER
 OPTIONS_DEFAULT=PYSTEMMER
 PYSTEMMER_DESC=	Use PyStemmer to accelerate
 
-PYSTEMMER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pystemmer>0:textproc/py-pystemmer@${FLAVOR}
+PYSTEMMER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pystemmer>0:textproc/py-pystemmer@${PY_FLAVOR}
 
 .include <bsd.port.mk>

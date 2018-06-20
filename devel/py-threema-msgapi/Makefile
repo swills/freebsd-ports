@@ -1,5 +1,5 @@
 # Created by: philip@FreeBSD.org
-# $FreeBSD: head/devel/py-threema-msgapi/Makefile 455248 2017-12-01 06:57:51Z philip $
+# $FreeBSD: head/devel/py-threema-msgapi/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	threema-msgapi
 PORTVERSION=	3.0.6
@@ -19,11 +19,11 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	lgrahl
 GH_PROJECT=	threema-msgapi-sdk-python
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pylru-cache>0:devel/py-pylru-cache@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}logbook>0:devel/py-logbook@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wrapt>0:devel/py-wrapt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}libnacl>0:security/py-libnacl@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}aiohttp>0:www/py-aiohttp@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pylru-cache>0:devel/py-pylru-cache@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}logbook>0:devel/py-logbook@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wrapt>0:devel/py-wrapt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}libnacl>0:security/py-libnacl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}aiohttp>0:www/py-aiohttp@${PY_FLAVOR}
 
 .include <bsd.port.mk>

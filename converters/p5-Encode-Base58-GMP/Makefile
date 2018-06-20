@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/p5-Encode-Base58-GMP/Makefile 472565 2018-06-16 19:12:02Z krion $
+# $FreeBSD: head/converters/p5-Encode-Base58-GMP/Makefile 472934 2018-06-20 19:38:02Z sunpoet $
 
 PORTNAME=	Encode-Base58-GMP
 PORTVERSION=	1.00
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	p5-Math-GMPz>=0:math/p5-Math-GMPz
 TEST_DEPENDS=	p5-Test-Base>=0:devel/p5-Test-Base
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

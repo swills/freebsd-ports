@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net/py-ndg_httpsclient/Makefile 468456 2018-04-27 15:56:35Z sunpoet $
+# $FreeBSD: head/net/py-ndg_httpsclient/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ndg_httpsclient
 PORTVERSION=	0.5.0
@@ -13,8 +13,8 @@ COMMENT=	Enhance HTTPS support for httplib and urllib2
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/ndg/httpsclient/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.4:devel/py-pyasn1@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openssl>=0.13:security/py-openssl@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.4:devel/py-pyasn1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openssl>=0.13:security/py-openssl@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

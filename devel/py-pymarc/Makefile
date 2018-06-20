@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-pymarc/Makefile 470473 2018-05-20 18:56:09Z sunpoet $
+# $FreeBSD: head/devel/py-pymarc/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pymarc
 PORTVERSION=	3.1.10
@@ -13,7 +13,7 @@ COMMENT=	Read Write And Modify MARC Bibliographic Data
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

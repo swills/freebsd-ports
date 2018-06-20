@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-bibtexparser/Makefile 464557 2018-03-15 04:43:46Z yuri $
+# $FreeBSD: head/textproc/py-bibtexparser/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bibtexparser
 DISTVERSION=	1.0.1
@@ -12,8 +12,8 @@ COMMENT=	Bibtex parser
 LICENSE=	BSD3CLAUSE LGPL3
 LICENSE_COMB=	dual
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0.16.0:devel/py-future@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.0.3:devel/py-pyparsing@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0.16.0:devel/py-future@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.0.3:devel/py-pyparsing@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

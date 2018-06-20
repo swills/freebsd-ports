@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-ipdb/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/py-ipdb/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ipdb
 PORTVERSION=	0.11
@@ -13,7 +13,7 @@ COMMENT=	IPython-enabled pdb
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0.10.2:devel/ipython@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0.10.2:devel/ipython@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

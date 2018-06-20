@@ -1,5 +1,5 @@
 # Created by: Andreas Sommer <andreas.sommer87@googlemail.com>
-# $FreeBSD: head/textproc/py-sphinx-hieroglyph/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-sphinx-hieroglyph/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sphinx-hieroglyph
 PORTVERSION=	1.0.0
@@ -13,7 +13,7 @@ COMMENT=	Sphinx extension which builds HTML presentations
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.4:textproc/py-sphinx@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.4:textproc/py-sphinx@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nyergler

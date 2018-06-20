@@ -1,5 +1,5 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-7/Makefile 471117 2018-05-30 06:11:06Z joneum $
+# $FreeBSD: head/www/typo3-7/Makefile 472894 2018-06-20 18:22:56Z joneum $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
@@ -24,7 +24,7 @@ WRKSRC=		${WRKDIR}/${TYPO3SRC}
 
 PORT_V_MAJOR=	7
 PORT_V_MINOR=	6
-PORT_V_PATCH=	28
+PORT_V_PATCH=	29
 
 TYPO3WWW=	www
 TYPO3SRC=	${PORTNAME}_src-${PORTVERSION}

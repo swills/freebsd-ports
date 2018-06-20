@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-moviepy/Makefile 471307 2018-06-01 22:47:28Z sunpoet $
+# $FreeBSD: head/multimedia/py-moviepy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	moviepy
 PORTVERSION=	0.2.3.5
@@ -12,10 +12,10 @@ COMMENT=	Video editing with Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}decorator>=4.0.2:devel/py-decorator@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}imageio>=2.1.2:graphics/py-imageio@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}decorator>=4.0.2:devel/py-decorator@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}imageio>=2.1.2:graphics/py-imageio@${PY_FLAVOR} \
 		${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}tqdm>=4.11.2:misc/py-tqdm@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}tqdm>=4.11.2:misc/py-tqdm@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/py-vobject/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/py-vobject/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	vobject
 PORTVERSION=	0.9.5
@@ -12,8 +12,8 @@ COMMENT=	ICalendar library
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE-2.0.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.4.0:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.4.0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

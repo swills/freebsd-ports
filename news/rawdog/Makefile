@@ -1,5 +1,5 @@
 # Created by: Tim Bishop <tim@bishnet.net>
-# $FreeBSD: head/news/rawdog/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/news/rawdog/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	rawdog
 PORTVERSION=	2.22
@@ -12,7 +12,7 @@ COMMENT=	Simple RSS aggregator
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/feedparser.py:textproc/py-feedparser@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/feedparser.py:textproc/py-feedparser@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils

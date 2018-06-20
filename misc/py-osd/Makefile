@@ -1,5 +1,5 @@
 # Created by: larse@isi.edu
-# $FreeBSD: head/misc/py-osd/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-osd/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	osd
 PORTVERSION=	0.2.14
@@ -13,7 +13,7 @@ MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Python wrapper for osd, for displaying text on your X display
 
 LIB_DEPENDS=	libxosd.so:misc/xosd
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-monty/Makefile 472502 2018-06-15 23:25:56Z yuri $
+# $FreeBSD: head/devel/py-monty/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	monty
 DISTVERSION=	1.0.3
@@ -12,7 +12,7 @@ COMMENT=	Supplementary useful functions for Python not in the standard library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-certbot-nginx/Makefile 472084 2018-06-09 19:59:15Z miwi $
+# $FreeBSD: head/security/py-certbot-nginx/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	certbot-nginx
 PORTVERSION=	${ACME_VERSION}
@@ -27,8 +27,8 @@ NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme@${FLAVOR}
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme@${PY_FLAVOR}
 
 post-patch:
 	@${REINPLACE_CMD} -e '/server_root=/ s|/etc/nginx|${LOCALBASE}&|' ${WRKSRC}/certbot_nginx/constants.py

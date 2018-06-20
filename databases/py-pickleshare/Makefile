@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/py-pickleshare/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/databases/py-pickleshare/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pickleshare
 PORTVERSION=	0.7.4
@@ -20,7 +20,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pathlib2>=0:devel/py-pathlib2@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pathlib2>=0:devel/py-pathlib2@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

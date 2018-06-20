@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-PyWavelets/Makefile 465335 2018-03-23 08:28:05Z makc $
+# $FreeBSD: head/math/py-PyWavelets/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	PyWavelets
 PORTVERSION=	0.5.2
@@ -14,9 +14,9 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}pillow>=1.7:graphics/py-pillow@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pillow>=1.7:graphics/py-pillow@${PY_FLAVOR}
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}pillow>=1.7:graphics/py-pillow@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pillow>=1.7:graphics/py-pillow@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_PROJECT=	pywt

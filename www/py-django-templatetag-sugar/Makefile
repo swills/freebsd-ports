@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-templatetag-sugar/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-templatetag-sugar/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	templatetag-sugar
 PORTVERSION=	1.0
@@ -11,7 +11,7 @@ DISTNAME=	django-${PORTNAME}-${PORTVERSION}
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Library to make writing templatetags in Django sweet
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

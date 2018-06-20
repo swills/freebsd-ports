@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytest-asyncio
 PORTVERSION=	0.8.0
@@ -11,7 +11,7 @@ COMMENT=	Py.test plugin providing fixtures and markers for asyncio
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.6:devel/py-pytest@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.6:devel/py-pytest@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:3.5+

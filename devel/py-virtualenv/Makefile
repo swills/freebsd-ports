@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-virtualenv/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-virtualenv/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	virtualenv
 PORTVERSION=	15.1.0
@@ -10,12 +10,12 @@ COMMENT=	Tool for creating isolated Python environments
 
 LICENSE=	MIT
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx@${FLAVOR}
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

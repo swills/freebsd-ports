@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-xapian/Makefile 459929 2018-01-25 13:06:23Z sunpoet $
+# $FreeBSD: head/databases/py-xapian/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	xapian
 PORTVERSION=	1.4.5
@@ -37,7 +37,7 @@ USE_PYTHON=	flavors
 
 PORTDOCS=	*
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.4.8:textproc/py-sphinx@${FLAVOR}
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.4.8:textproc/py-sphinx@${PY_FLAVOR}
 
 .include <bsd.port.pre.mk>
 

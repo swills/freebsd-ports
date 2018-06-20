@@ -1,5 +1,5 @@
 # Created by: Waitman Gobble <waitman@waitman.net>
-# $FreeBSD: head/devel/py-pyformance/Makefile 471082 2018-05-29 07:23:32Z krion $
+# $FreeBSD: head/devel/py-pyformance/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pyformance
 PORTVERSION=	0.4
@@ -13,7 +13,7 @@ COMMENT=	Toolset for performance measurement and statistics
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.11.0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.11.0:devel/py-six@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

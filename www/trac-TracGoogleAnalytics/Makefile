@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift
-# $FreeBSD: head/www/trac-TracGoogleAnalytics/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/trac-TracGoogleAnalytics/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	TracGoogleAnalytics
 PORTVERSION=	0.2.4
@@ -15,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	tracd:www/trac \
-		${PYTHON_PKGNAMEPREFIX}Genshi>=0.5:textproc/py-genshi@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}Genshi>=0.5:textproc/py-genshi@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2.7

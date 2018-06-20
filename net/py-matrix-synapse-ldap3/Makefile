@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net/py-matrix-synapse-ldap3/Makefile 467621 2018-04-17 18:30:53Z feld $
+# $FreeBSD: head/net/py-matrix-synapse-ldap3/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	matrix-synapse-ldap3
 PORTVERSION=	0.1.3
@@ -13,7 +13,7 @@ COMMENT=	LDAP3 auth provider for Matrix Synapse
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap3>=0.9.5:net/py-ldap3@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap3>=0.9.5:net/py-ldap3@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

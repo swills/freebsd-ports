@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.app.basicskin/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zope.app.basicskin/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	zope.app.basicskin
 PORTVERSION=	3.5.1
@@ -13,9 +13,9 @@ COMMENT=	Zope ZMI Basic Skin
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Ilya A. Arkhipov <rum1cro@yandex.ru>
-# $FreeBSD: head/www/py-django-subdomains/Makefile 469560 2018-05-10 15:02:43Z miwi $
+# $FreeBSD: head/www/py-django-subdomains/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	django-subdomains
 PORTVERSION=	2.1.0
@@ -13,7 +13,7 @@ COMMENT=	Subdomains helpers for the Django framework
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

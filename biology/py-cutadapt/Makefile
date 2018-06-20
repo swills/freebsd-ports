@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/py-cutadapt/Makefile 455247 2017-12-01 06:18:17Z antoine $
+# $FreeBSD: head/biology/py-cutadapt/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cutadapt
 PORTVERSION=	1.14
@@ -11,7 +11,7 @@ COMMENT=	Finds and removes adapter sequences, primers, poly-A tails, etc
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xopen>0:archivers/py-xopen@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xopen>0:archivers/py-xopen@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils py3kplist

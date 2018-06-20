@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-pefile/Makefile 455372 2017-12-02 13:42:12Z antoine $
+# $FreeBSD: head/devel/py-pefile/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pefile
 PORTVERSION=	2017.11.5
@@ -13,8 +13,8 @@ COMMENT=	Python module to read and work with PE files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

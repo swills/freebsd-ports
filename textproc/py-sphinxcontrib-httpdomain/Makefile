@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/textproc/py-sphinxcontrib-httpdomain/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-sphinxcontrib-httpdomain/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sphinxcontrib-httpdomain
 PORTVERSION=	1.2.1
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Sphinx domain for HTTP APIs
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

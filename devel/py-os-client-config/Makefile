@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-os-client-config/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-os-client-config/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	os-client-config
 PORTVERSION=	1.26.0
@@ -12,11 +12,11 @@ COMMENT=	OpenStack Client Configuation Library
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.1.0:devel/py-yaml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}appdirs>=1.3.0:devel/py-appdirs@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}keystoneauth1>=2.1.0:devel/py-keystoneauth1@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requestsexceptions>=1.1.1:devel/py-requestsexceptions@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.1.0:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}appdirs>=1.3.0:devel/py-appdirs@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}keystoneauth1>=2.1.0:devel/py-keystoneauth1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requestsexceptions>=1.1.1:devel/py-requestsexceptions@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist noegginfo

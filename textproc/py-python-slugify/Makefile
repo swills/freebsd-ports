@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-python-slugify/Makefile 465968 2018-03-30 13:16:26Z matthew $
+# $FreeBSD: head/textproc/py-python-slugify/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	python-slugify
 PORTVERSION=	1.2.5
@@ -11,7 +11,7 @@ COMMENT=	Slugify application that handles unicode
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}unidecode>=0.04.16:converters/py-unidecode@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}unidecode>=0.04.16:converters/py-unidecode@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

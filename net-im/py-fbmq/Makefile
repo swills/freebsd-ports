@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/py-fbmq/Makefile 460942 2018-02-04 17:20:35Z olgeni $
+# $FreeBSD: head/net-im/py-fbmq/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	fbmq
 PORTVERSION=	2.4.4
@@ -11,8 +11,8 @@ COMMENT=	Python library for using the Facebook Messenger API
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

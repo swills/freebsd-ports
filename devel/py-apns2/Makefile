@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-apns2/Makefile 456978 2017-12-22 13:51:41Z olgeni $
+# $FreeBSD: head/devel/py-apns2/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	apns2
 PORTVERSION=	0.3.0
@@ -12,9 +12,9 @@ COMMENT=	Python client for Apple Push Notification service
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}hyper>0:www/py-hyper@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyjwt>0:www/py-pyjwt@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}hyper>0:www/py-hyper@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyjwt>0:www/py-pyjwt@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

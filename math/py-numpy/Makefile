@@ -1,5 +1,5 @@
 # Created by: Tony Maher
-# $FreeBSD: head/math/py-numpy/Makefile 470772 2018-05-24 12:13:21Z wen $
+# $FreeBSD: head/math/py-numpy/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	numpy
 PORTVERSION=	1.14.3
@@ -42,7 +42,7 @@ NETLIB_USES=		blaslapack:netlib
 NETLIB_LIB_DEPENDS=	libcblas.so:math/cblas
 OPENBLAS_USES=		blaslapack:openblas
 SUITESPARSE_LIB_DEPENDS=libumfpack.so:math/suitesparse
-TESTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+TESTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 .include <bsd.port.pre.mk>
 

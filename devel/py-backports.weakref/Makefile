@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/py-backports.weakref/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-backports.weakref/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	backports.weakref
 DISTVERSION=	1.0rc1
@@ -12,7 +12,7 @@ COMMENT=	Backport of the weakref module from Python 3.4
 
 LICENSE=	PSFL
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

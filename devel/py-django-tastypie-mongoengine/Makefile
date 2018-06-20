@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/devel/py-django-tastypie-mongoengine/Makefile 469921 2018-05-14 16:36:06Z dvl $
+# $FreeBSD: head/devel/py-django-tastypie-mongoengine/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=		django-tastypie-mongoengine
 PORTVERSION=		0.4.6
@@ -14,9 +14,9 @@ COMMENT=		MongoEngine support for django-tastypie
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}django-tastypie>=0.9.12:www/py-django-tastypie@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mongoengine>=0.8.7:devel/py-mongoengine@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR}
+RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}django-tastypie>=0.9.12:www/py-django-tastypie@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mongoengine>=0.8.7:devel/py-mongoengine@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 USE_GITHUB=		yes
 GH_ACCOUNT=		wlanslovenija

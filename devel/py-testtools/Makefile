@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/py-testtools/Makefile 462917 2018-02-25 05:33:02Z sunpoet $
+# $FreeBSD: head/devel/py-testtools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	testtools
 PORTVERSION=	2.3.0
@@ -13,9 +13,9 @@ COMMENT=	Extensions to the Python standard library unit testing framework
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.11:devel/py-pbr@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}extras>=1.0.0:devel/py-extras@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}traceback2>=0:devel/py-traceback2@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.11:devel/py-pbr@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}extras>=1.0.0:devel/py-extras@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}traceback2>=0:devel/py-traceback2@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

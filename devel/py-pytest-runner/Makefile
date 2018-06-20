@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/devel/py-pytest-runner/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pytest-runner/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pytest-runner
 PORTVERSION=	2.11.1
@@ -12,7 +12,7 @@ COMMENT=	Test support for pytest runner in setup.py
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Stefan Walter <sw@gegenunendlich.de>
-# $FreeBSD: head/graphics/py-pydot/Makefile 457332 2017-12-26 23:20:23Z sunpoet $
+# $FreeBSD: head/graphics/py-pydot/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pydot
 PORTVERSION=	1.2.4
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	dot:graphics/graphviz \
-		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.1.4:devel/py-pyparsing@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.1.4:devel/py-pyparsing@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

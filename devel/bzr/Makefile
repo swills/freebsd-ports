@@ -1,5 +1,5 @@
 # Created by: Ulf Lilleengen
-# $FreeBSD: head/devel/bzr/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/bzr/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bzr
 PORTVERSION=	2.7.0
@@ -15,7 +15,7 @@ SFTP_DESC=	Paramiko for SFTP support
 CA_BUNDLE_DESC=	Include CA bundle for SSL cert validation
 OPTIONS_DEFAULT=	SFTP CA_BUNDLE
 
-SFTP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=0:security/py-paramiko@${FLAVOR}
+SFTP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=0:security/py-paramiko@${PY_FLAVOR}
 CA_BUNDLE_RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
 USE_PYTHON=	distutils cython

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/mdb/Makefile 459387 2018-01-19 01:38:49Z jhb $
+# $FreeBSD: head/devel/mdb/Makefile 472886 2018-06-20 17:23:36Z jhb $
 
 PORTNAME=	mdb
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES=	devel
 
 MAINTAINER=	jhb@FreeBSD.org
@@ -14,7 +14,7 @@ USES=		uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdjhb
 GH_PROJECT=	illumos-gate
-GH_TAGNAME=	291c37a43d
+GH_TAGNAME=	fc55b6de75
 
 ONLY_FOR_ARCHS=	amd64
 

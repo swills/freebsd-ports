@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-libsass/Makefile 469714 2018-05-12 07:35:00Z yuri $
+# $FreeBSD: head/www/py-libsass/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	libsass
 DISTVERSION=	0.14.5
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option -std=c++0x
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 LIB_DEPENDS=	libsass.so:textproc/libsass
 
 USES=		localbase python

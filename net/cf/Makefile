@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/cf/Makefile 460776 2018-02-03 05:04:24Z swills $
+# $FreeBSD: head/net/cf/Makefile 472877 2018-06-20 15:41:09Z dumbbell $
 
 PORTNAME=	cf
-PORTVERSION=	6.34.1
+PORTVERSION=	6.37.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	dumbbell@FreeBSD.org
 COMMENT=	CLI for Cloud Foundry written in Go
 
 LICENSE=	APACHE20

@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/py-python3-openid/Makefile 461418 2018-02-10 19:58:36Z sunpoet $
+# $FreeBSD: head/security/py-python3-openid/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	python3-openid
 PORTVERSION=	3.1.0
@@ -13,7 +13,7 @@ COMMENT=	Python 3 port of the python-openid library
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}defusedxml>=0:devel/py-defusedxml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}defusedxml>=0:devel/py-defusedxml@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

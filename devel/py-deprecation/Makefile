@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-deprecation/Makefile 467258 2018-04-13 20:48:12Z sunpoet $
+# $FreeBSD: head/devel/py-deprecation/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	deprecation
 PORTVERSION=	2.0.2
@@ -13,7 +13,7 @@ COMMENT=	Library to handle automated deprecations
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}packaging>=0:devel/py-packaging@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}packaging>=0:devel/py-packaging@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

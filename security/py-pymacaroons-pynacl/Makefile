@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/security/py-pymacaroons-pynacl/Makefile 467537 2018-04-16 21:33:18Z feld $
+# $FreeBSD: head/security/py-pymacaroons-pynacl/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	pymacaroons-pynacl
 PORTVERSION=	0.9.3
@@ -14,11 +14,11 @@ COMMENT=	Macaroon library for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pynacl>=0.3.0:security/py-pynacl@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hypothesis>0:devel/py-hypothesis@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pynacl>=0.3.0:security/py-pynacl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hypothesis>0:devel/py-hypothesis@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

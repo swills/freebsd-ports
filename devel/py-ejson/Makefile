@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-ejson/Makefile 457519 2017-12-29 18:46:49Z sunpoet $
+# $FreeBSD: head/devel/py-ejson/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ejson
 PORTVERSION=	0.1.6
@@ -13,7 +13,7 @@ COMMENT=	Extensible JSON serializers and deserializers
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

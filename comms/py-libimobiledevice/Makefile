@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/py-libimobiledevice/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/comms/py-libimobiledevice/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTREVISION=	0
 CATEGORIES=	comms python
@@ -8,8 +8,8 @@ MAINTAINER=	avilla@FreeBSD.org
 COMMENT=	Python bindings for libimobiledevice
 
 LIB_DEPENDS=	libimobiledevice.so:${MASTER_PORT}
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libplist>0:devel/py-libplist@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libplist>0:devel/py-libplist@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libplist>0:devel/py-libplist@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libplist>0:devel/py-libplist@${PY_FLAVOR}
 
 PORTSCOUT=	ignore:1
 

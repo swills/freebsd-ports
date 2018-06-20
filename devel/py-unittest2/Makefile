@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-unittest2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-unittest2/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	unittest2
 PORTVERSION=	1.1.0
@@ -11,12 +11,12 @@ COMMENT=	New features in unittest backported to Python 2
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}linecache2>0:devel/py-linecache2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}traceback2>0:devel/py-traceback2@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}linecache2>0:devel/py-linecache2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}traceback2>0:devel/py-traceback2@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}linecache2>0:devel/py-linecache2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}traceback2>0:devel/py-traceback2@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}linecache2>0:devel/py-linecache2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}traceback2>0:devel/py-traceback2@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

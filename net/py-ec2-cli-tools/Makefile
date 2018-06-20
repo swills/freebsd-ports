@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/py-ec2-cli-tools/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-ec2-cli-tools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ec2-cli-tools
 PORTVERSION=	1.5
@@ -13,7 +13,7 @@ COMMENT=	Helpful CLI utilities for querying and connecting to EC2 instances
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}boto>=1.0:devel/py-boto@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}boto>=1.0:devel/py-boto@${PY_FLAVOR} \
 		bash:shells/bash
 
 USE_PYTHON=	distutils autoplist

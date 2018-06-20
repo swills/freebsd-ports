@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-progressbar2/Makefile 465722 2018-03-27 16:38:38Z makc $
+# $FreeBSD: head/misc/py-progressbar2/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	progressbar2
 PORTVERSION=	3.36.0
@@ -12,9 +12,9 @@ COMMENT=	Text mode progressbar library for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-utils>=2.3.0:misc/py-python-utils@${FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-utils>=2.3.0:misc/py-python-utils@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

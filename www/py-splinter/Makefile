@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/www/py-splinter/Makefile 455224 2017-11-30 20:28:15Z antoine $
+# $FreeBSD: head/www/py-splinter/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	splinter
 PORTVERSION=	0.7.4
@@ -12,11 +12,11 @@ COMMENT=	Browser abstraction for web acceptance testing
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}selenium>=2.47:www/py-selenium@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.testbrowser>=4.0.4:devel/py-zope.testbrowser@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cssselect>0:www/py-cssselect@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}selenium>=2.47:www/py-selenium@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.testbrowser>=4.0.4:devel/py-zope.testbrowser@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cssselect>0:www/py-cssselect@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

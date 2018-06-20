@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.stringinterp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-plone.stringinterp/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	plone.stringinterp
 PORTVERSION=	1.0.13
@@ -12,8 +12,8 @@ COMMENT=	Adaptable string interpolation
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.i18n>=0:devel/py-zope.i18n@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.i18n>=0:devel/py-zope.i18n@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zip

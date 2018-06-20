@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/poezio/Makefile 461667 2018-02-12 22:29:33Z arved $
+# $FreeBSD: head/net-im/poezio/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	poezio
 PORTVERSION=	0.8.1
@@ -12,8 +12,8 @@ COMMENT=	Console XMPP client
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/dns/__init__.py:dns/py-dnspython@${FLAVOR} \
-		${PYTHON_SITELIBDIR}/sleekxmpp/__init__.py:net-im/py-sleekxmpp@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/dns/__init__.py:dns/py-dnspython@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/sleekxmpp/__init__.py:net-im/py-sleekxmpp@${PY_FLAVOR}
 
 USES=		tar:xz python:3.3+
 USE_PYTHON=	distutils autoplist optsuffix

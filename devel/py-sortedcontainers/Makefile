@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-sortedcontainers/Makefile 468421 2018-04-27 11:15:42Z antoine $
+# $FreeBSD: head/devel/py-sortedcontainers/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sortedcontainers
 PORTVERSION=	1.5.10
@@ -13,7 +13,7 @@ COMMENT=	Python Sorted Container Types: SortedList, SortedDict, and SortedSet
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

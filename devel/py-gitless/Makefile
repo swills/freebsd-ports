@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-gitless/Makefile 461359 2018-02-10 01:14:19Z cpm $
+# $FreeBSD: head/devel/py-gitless/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	gitless
 PORTVERSION=	0.8.6
@@ -13,11 +13,11 @@ COMMENT=	Version control system built on top of Git
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}clint>=0.5.1:devel/py-clint@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pygit2>=0.26.0:devel/py-pygit2@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sh>=1.12.14:devel/py-sh@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}clint>=0.5.1:devel/py-clint@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygit2>=0.26.0:devel/py-pygit2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sh>=1.12.14:devel/py-sh@${PY_FLAVOR} \
 		git:devel/git
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

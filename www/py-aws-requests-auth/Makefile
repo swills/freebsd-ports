@@ -1,5 +1,5 @@
 # Created by: James Elstone <james@elstone.net>
-# $FreeBSD: head/www/py-aws-requests-auth/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-aws-requests-auth/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	aws-requests-auth
 PORTVERSION=	0.4.0
@@ -13,8 +13,8 @@ COMMENT=	Authenticate to AWS with Amazon's signature v4 signing process
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.1:devel/py-pytest@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0.14.0:www/py-requests@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.1:devel/py-pytest@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0.14.0:www/py-requests@${PY_FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

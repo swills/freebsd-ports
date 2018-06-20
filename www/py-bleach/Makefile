@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-bleach/Makefile 469993 2018-05-15 06:48:19Z koobs $
+# $FreeBSD: head/www/py-bleach/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	bleach
 PORTVERSION=	2.1.3
@@ -13,10 +13,10 @@ COMMENT=	Easy whitelist-based HTML-sanitizing tool
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}html5lib>=0.99999999:www/py-html5lib@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.0:devel/py-pytest@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-runner>=2.0:devel/py-pytest-runner@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}html5lib>=0.99999999:www/py-html5lib@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.0:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-runner>=2.0:devel/py-pytest-runner@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

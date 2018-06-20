@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-sseclient/Makefile 463625 2018-03-05 08:12:36Z yuri $
+# $FreeBSD: head/www/py-sseclient/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	sseclient
 DISTVERSION=	0.0.19
@@ -11,8 +11,8 @@ COMMENT=	Python client library for reading Server Sent Event streams
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

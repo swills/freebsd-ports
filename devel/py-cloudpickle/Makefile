@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-cloudpickle/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-cloudpickle/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	cloudpickle
 PORTVERSION=	0.3.1
@@ -13,7 +13,7 @@ COMMENT=	Extended pickling support for Python objects
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/py-horoscopegenerator/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/astro/py-horoscopegenerator/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	HoroscopeGenerator
 PORTVERSION=	0.1.8
@@ -16,6 +16,6 @@ NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nltk>0:textproc/py-nltk@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nltk>0:textproc/py-nltk@${PY_FLAVOR}
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-haproxyctl/Makefile 470262 2018-05-18 04:30:24Z koobs $
+# $FreeBSD: head/net/py-haproxyctl/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	haproxyctl
 PORTVERSION=	0.5
@@ -11,7 +11,7 @@ COMMENT=	HAProxy control tool
 
 LICENSE=	GPLv3
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

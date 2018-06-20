@@ -1,5 +1,5 @@
 # Created by: Massimiliano Stucchi <mstucchi@ripe.net>
-# $FreeBSD: head/net/py-ripe.atlas.tools/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-ripe.atlas.tools/Makefile 472884 2018-06-20 17:05:41Z mat $
 
 PORTNAME=	ripe.atlas.tools
 PORTVERSION=	1.1.0
@@ -13,13 +13,13 @@ COMMENT=	Official command-line client for RIPE Atlas
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.7.0:www/py-requests@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ripe.atlas.cousteau>=1.0.4:net/py-ripe.atlas.cousteau@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ripe.atlas.sagan>=1.1.4:net/py-ripe.atlas.sagan@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tzlocal>0:devel/py-tzlocal@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openssl>=0.13:security/py-openssl@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.7.0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ripe.atlas.cousteau>=1.0.4:net/py-ripe.atlas.cousteau@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ripe.atlas.sagan>=1.1.4:net/py-ripe.atlas.sagan@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tzlocal>0:devel/py-tzlocal@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openssl>=0.13:security/py-openssl@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
