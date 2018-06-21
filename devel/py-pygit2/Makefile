@@ -3,8 +3,6 @@
 
 # Also update devel/libgit2, devel/libgit2-glib, devel/rubygem-rugged
 
-# Also update devel/libgit2, devel/libgit2-glib, devel/rubygem-rugged
-
 PORTNAME=	pygit2
 PORTVERSION=	0.27.1
 CATEGORIES=	devel python
