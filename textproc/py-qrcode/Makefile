@@ -1,9 +1,8 @@
 # Created by: Neil Booth
-# $FreeBSD: head/textproc/py-qrcode/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-qrcode/Makefile 472941 2018-06-20 22:36:45Z leres $
 
 PORTNAME=	qrcode
-PORTVERSION=	5.3
-PORTREVISION=	3
+PORTVERSION=	6.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

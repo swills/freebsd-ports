@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/triqs/Makefile 472617 2018-06-17 17:57:45Z yuri $
+# $FreeBSD: head/science/triqs/Makefile 472954 2018-06-21 05:57:43Z yuri $
 
 PORTNAME=	triqs
 DISTVERSION=	2.0
@@ -11,6 +11,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 BROKEN_FreeBSD_10=	fatal error: 'optional' file not found
+BROKEN_i386=		error: no matching function for call to 'max': https://github.com/TRIQS/triqs/issues/596
 
 BUILD_DEPENDS=	boost-libs>=1.53:devel/boost-libs \
 		${PYNUMPY}

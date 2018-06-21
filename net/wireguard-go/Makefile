@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/wireguard-go/Makefile 472356 2018-06-14 06:11:32Z decke $
+# $FreeBSD: head/net/wireguard-go/Makefile 472964 2018-06-21 08:00:24Z decke $
 
 PORTNAME=	wireguard-go
 PORTVERSION=	0.0.20180613
@@ -21,8 +21,7 @@ USES=		gmake tar:xz
 
 PLIST_FILES=	bin/${PORTNAME}
 
-# To generate the vendor source tarball with all dependencies
-genvendor:
-	(cd ${WRKDIR} ; ${TAR} cvfJ ${PORTNAME}-${PORTVERSION}-vendor.tar.xz ${PORTNAME}-${PORTVERSION}/vendor)
+# The vendor tar file is generated with the script from
+# https://people.freebsd.org/~decke/wireguard-go-genvendor.sh
 
 .include <bsd.port.mk>

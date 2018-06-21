@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/zathura-cb/Makefile 457257 2017-12-25 20:52:52Z madpilot $
+# $FreeBSD: head/graphics/zathura-cb/Makefile 472969 2018-06-21 09:37:13Z amdmi3 $
 
 PORTNAME=	zathura-cb
 PORTVERSION=	0.1.6
@@ -22,6 +22,6 @@ USES=		compiler:c11 desktop-file-utils gmake pkgconfig libarchive ssl
 USE_GNOME=	glib20 gtk30
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/lib/zathura/cb.so
+	@${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/lib/zathura/cb.so
 
 .include <bsd.port.mk>

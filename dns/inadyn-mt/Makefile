@@ -1,13 +1,13 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/dns/inadyn-mt/Makefile 397868 2015-09-25 20:55:24Z wg $
+# $FreeBSD: head/dns/inadyn-mt/Makefile 472974 2018-06-21 13:49:35Z wg $
 
 PORTNAME=	inadyn-mt
-PORTVERSION=	02.24.47
+PORTVERSION=	02.28.10
 CATEGORIES=	dns
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}.v.${PORTVERSION}/
 DISTNAME=	${PORTNAME}.v.${PORTVERSION}
 
-MAINTAINER=	wg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple dynamic dns client
 
 LICENSE=	GPLv3

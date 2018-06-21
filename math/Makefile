@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 472769 2018-06-19 08:03:45Z tota $
+# $FreeBSD: head/math/Makefile 472970 2018-06-21 11:06:10Z pi $
 #
 
     COMMENT = Mathematics
@@ -166,6 +166,7 @@
     SUBDIR += crlibm
     SUBDIR += cryptominisat
     SUBDIR += cvc3
+    SUBDIR += cvc4
     SUBDIR += diehard
     SUBDIR += dieharder
     SUBDIR += djbfft
@@ -719,6 +720,7 @@
     SUBDIR += py-seaborn
     SUBDIR += py-secp256k1
     SUBDIR += py-simhash
+    SUBDIR += py-spectral
     SUBDIR += py-statsmodels
     SUBDIR += py-svgmath
     SUBDIR += py-sym

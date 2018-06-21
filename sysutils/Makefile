@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 472896 2018-06-20 18:31:47Z dteske $
+# $FreeBSD: head/sysutils/Makefile 472958 2018-06-21 07:29:20Z pi $
 #
 
     COMMENT = System utilities
@@ -764,6 +764,7 @@
     SUBDIR += ori
     SUBDIR += osinfo-db-tools
     SUBDIR += osquery
+    SUBDIR += p5-App-RunCron
     SUBDIR += p5-BSD-Jail-Object
     SUBDIR += p5-BSD-Process
     SUBDIR += p5-BSD-Sysctl

@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/ir-lv2/Makefile 472073 2018-06-09 17:36:08Z yuri $
+# $FreeBSD: head/audio/ir-lv2/Makefile 472965 2018-06-21 08:23:15Z yuri $
 
 PORTNAME=	ir
-DISTVERSION=	1.3.3-2
-DISTVERSIONSUFFIX=	-gb94bc67
+DISTVERSION=	1.3.3-8
+DISTVERSIONSUFFIX=	-g0a36907
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -27,10 +27,9 @@ GH_ACCOUNT=	tomszilagyi
 GH_PROJECT=	ir.lv2
 USE_GNOME=	glib20 gtk20 gdkpixbuf2 cairo
 
+MAKE_ENV=	INSTDIR=${STAGEDIR}${PREFIX}/lib/lv2
+
 PLIST_FILES=	lib/lv2/ir.lv2/ir.so lib/lv2/ir.lv2/ir.ttl \
 		lib/lv2/ir.lv2/ir_gui.so lib/lv2/ir.lv2/manifest.ttl
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lv2/ir.lv2/*.so
 
 .include <bsd.port.mk>
