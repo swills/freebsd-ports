@@ -19,8 +19,9 @@ RUN_DEPENDS=	rubygem-gemojione32>=3.2:graphics/rubygem-gemojione32 \
 		rubygem-sanitize>=4.6.4:textproc/rubygem-sanitize \
 		rubygem-stringex>=2.6:devel/rubygem-stringex
 
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>
