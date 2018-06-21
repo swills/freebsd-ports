@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 472497 2018-06-15 21:31:12Z rene $
+# $FreeBSD: head/textproc/Makefile 472976 2018-06-21 15:28:59Z mfechner $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1522,6 +1522,7 @@
     SUBDIR += rubygem-github-linguist
     SUBDIR += rubygem-github-linguist53
     SUBDIR += rubygem-github-markup
+    SUBDIR += rubygem-github-markup16
     SUBDIR += rubygem-gitlab-grit
     SUBDIR += rubygem-gitlab-linguist
     SUBDIR += rubygem-gitlab-markup

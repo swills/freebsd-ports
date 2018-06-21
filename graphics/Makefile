@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 472893 2018-06-20 18:08:30Z yuri $
+# $FreeBSD: head/graphics/Makefile 472976 2018-06-21 15:28:59Z mfechner $
 #
 
     COMMENT = Graphics tools and libraries
@@ -1004,6 +1004,7 @@
     SUBDIR += rubygem-gd2
     SUBDIR += rubygem-gdk_pixbuf2
     SUBDIR += rubygem-gemojione
+    SUBDIR += rubygem-gemojione32
     SUBDIR += rubygem-geokit
     SUBDIR += rubygem-gitlab_emoji
     SUBDIR += rubygem-goocanvas

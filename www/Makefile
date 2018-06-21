@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 472526 2018-06-16 08:05:23Z yuri $
+# $FreeBSD: head/www/Makefile 472976 2018-06-21 15:28:59Z mfechner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -2013,11 +2013,13 @@
     SUBDIR += rubygem-geminabox
     SUBDIR += rubygem-gitlab-flowdock-git-hook
     SUBDIR += rubygem-gitlab-gollum-lib
+    SUBDIR += rubygem-gitlab-gollum-rugged_adapter
     SUBDIR += rubygem-gitlab-grack
     SUBDIR += rubygem-gitlab-turbolinks-classic
     SUBDIR += rubygem-goldfinger
     SUBDIR += rubygem-gollum
     SUBDIR += rubygem-gollum-grit_adapter
+    SUBDIR += rubygem-gollum-grit_adapter10
     SUBDIR += rubygem-gollum-lib
     SUBDIR += rubygem-gollum-lib-gitlab
     SUBDIR += rubygem-gollum-rugged_adapter
