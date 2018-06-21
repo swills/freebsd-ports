@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ssd_report/Makefile 472900 2018-06-20 19:14:11Z mat $
+# $FreeBSD: head/sysutils/ssd_report/Makefile 472940 2018-06-20 22:29:22Z dteske $
 
 PORTNAME=	ssd_report
 DISTVERSION=	0.2
@@ -11,7 +11,6 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 FLAVORS=	smart smartmontools
-FLAVOR?=	${FLAVORS:[1]}
 
 smart_RUN_DEPENDS=		smart:sysutils/smart
 smartmontools_RUN_DEPENDS=	smartctl:sysutils/smartmontools

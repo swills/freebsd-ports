@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/libXmu/Makefile 384234 2015-04-18 15:34:36Z kwm $
+# $FreeBSD: head/x11-toolkits/libXmu/Makefile 472967 2018-06-21 09:07:12Z amdmi3 $
 
 PORTNAME=	libXmu
 PORTVERSION=	1.1.2
@@ -9,6 +9,9 @@ CATEGORIES=	x11-toolkits
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X Miscellaneous Utilities libraries
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	lib
 USE_XORG=	xproto:both x11 xt xext

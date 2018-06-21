@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 472938 2018-06-20 20:13:07Z pi $
+# $FreeBSD: head/databases/Makefile 472961 2018-06-21 07:55:33Z pi $
 #
 
     COMMENT = Databases and related software
@@ -274,6 +274,7 @@
     SUBDIR += p5-CDB_File-Generator
     SUBDIR += p5-CGI-Session-Driver-memcached
     SUBDIR += p5-CHI-Driver-Memcached
+    SUBDIR += p5-CHI-Driver-Redis
     SUBDIR += p5-Cache-BDB
     SUBDIR += p5-Cache-Memcached
     SUBDIR += p5-Cache-Memcached-Fast
