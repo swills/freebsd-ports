@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-gitlab-gollum-rugged_adapter/Makefile 472976 2018-06-21 15:28:59Z mfechner $
 
 PORTNAME=	gitlab-gollum-rugged_adapter
 PORTVERSION=	0.4.4.1
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-mime-types>=1.15:misc/rubygem-mime-types \
 		rubygem-rugged>=0.25:devel/rubygem-rugged
 
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

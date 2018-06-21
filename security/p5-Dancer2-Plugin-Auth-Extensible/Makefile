@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible/Makefile 452292 2017-10-17 20:06:58Z sunpoet $
+# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible/Makefile 472975 2018-06-21 14:57:00Z mat $
 
 PORTNAME=	Dancer2-Plugin-Auth-Extensible
 PORTVERSION=	0.705
@@ -15,6 +15,7 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-SaltedHash>0:security/p5-Crypt-SaltedHash \
 		p5-Session-Token>0:security/p5-Session-Token \
+		p5-File-ShareDir-Install>0:devel/p5-File-ShareDir-Install \
 		p5-Dancer2>=0.204001:www/p5-Dancer2
 RUN_DEPENDS:=	${BUILD_DEPENDS} \
 		p5-File-Share>0:devel/p5-File-Share

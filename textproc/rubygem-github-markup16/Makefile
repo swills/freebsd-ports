@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/textproc/rubygem-github-markup16/Makefile 472976 2018-06-21 15:28:59Z mfechner $
 
 PORTNAME=	github-markup
 PORTVERSION=	1.6.2
@@ -14,9 +14,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFLICTS_INSTALL=	textproc/rubygem-github-markup
 
-NO_ARCH=	yes
 USES=		gem shebangfix
 USE_RUBY=	yes
+
+NO_ARCH=	yes
+
 REINPLACE_ARGS=	-i ''
 
 PLIST_FILES=	bin/github-markup

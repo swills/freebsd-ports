@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-gitlab-gollum-lib/Makefile 472980 2018-06-21 15:40:23Z mfechner $
 
 PORTNAME=	gitlab-gollum-lib
 PORTVERSION=	4.2.7.5
