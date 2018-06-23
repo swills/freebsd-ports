@@ -1,23 +1,23 @@
 # Created by: Olivier Duchateau
 # $FreeBSD$
 
-PORTNAME=	qtermwidget-l10n
+PORTNAME=	lxqt-sudo-l10n
 PORTVERSION=	0.13.0
-CATEGORIES=	x11-toolkits
+CATEGORIES=	security
 MASTER_SITES=	LXQT/lxqt-l10n
-DISTNAME=	lxqt-l10n-${DISTVERSION}
+DISTNAME=	${PORTNAME:S/-sudo//}-${DISTVERSION}
 
 MAINTAINER=	jesper@schmitz.computer
-COMMENT=	Translations of Qtermwidget
+COMMENT=	Translations of lxqt-sudo
 
 LICENSE=	LGPL21+
 
 MASTERDIR=	${.CURDIR}/../../x11/lxqt-l10n
 DISTINFO_FILE=	${MASTERDIR}/distinfo
-DESCR=		${MASTERDIR}/pkg-descr
-PLIST=		${.CURDIR}/pkg-plist
+DESCR=	${MASTERDIR}/pkg-descr
+PLIST=	${.CURDIR}/pkg-plist
 
-USES=		cmake:outsource lxqt pkgconfig tar:xz
+USES=	cmake:outsource lxqt pkgconfig tar:xz
 USE_QT5=	buildtools_build qmake_build linguisttools
 USE_LXQT=	buildtools
 
@@ -36,11 +36,11 @@ CMAKE_ARGS+=	-DWITH_COMPTON_CONF:BOOL=OFF \
 	-DWITH_LXQT_POWERMANAGEMENT:BOOL=OFF \
 	-DWITH_LXQT_RUNNER:BOOL=OFF \
 	-DWITH_LXQT_SESSION:BOOL=OFF \
-	-DWITH_LXQT_SUDO:BOOL=OFF \
+	-DWITH_LXQT_SUDO:BOOL=ON \
 	-DWITH_OBCONF_QT:BOOL=OFF \
 	-DWITH_PCMANFM_QT:BOOL=OFF \
 	-DWITH_QTERMINAL:BOOL=OFF \
-	-DWITH_QTERMWIDGET:BOOL=ON \
+	-DWITH_QTERMWIDGET:BOOL=OFF \
 	-DWITH_PAVUCONTROL_QT:BOOL=OFF
 
 .include <bsd.port.mk>
