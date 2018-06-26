@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab/Makefile 472981 2018-06-21 15:45:20Z mfechner $
 
 PORTNAME=	gitlab
-PORTVERSION=	10.8.4
+PORTVERSION=	10.8.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
@@ -136,7 +136,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-ruby-fogbugz>=0.2.1:devel/rubygem-ruby-fogbugz \
 	rubygem-kubeclient>=3.0.0:www/rubygem-kubeclient \
 	rubygem-d3_rails-rails4>=3.5.0:www/rubygem-d3_rails-rails4 \
-	rubygem-sanitize>=2.0:textproc/rubygem-sanitize \
+	rubygem-sanitize>=4.6.5:textproc/rubygem-sanitize \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \
 	rubygem-loofah>=2.2:textproc/rubygem-loofah \
 	rubygem-licensee8>=8.9:devel/rubygem-licensee8 \
