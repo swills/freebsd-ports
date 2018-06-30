@@ -27,7 +27,7 @@ BUILD_DEPENDS=	gem:devel/ruby-gems
 RUN_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=7.1.2:devel/gitlab-shell \
 	gitlab-workhorse>=4.1.0:www/gitlab-workhorse \
-	gitaly>=0.100.0:devel/gitaly \
+	gitaly>=0.105.0:devel/gitaly \
 	gitlab-pages>=0.9.1:www/gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
