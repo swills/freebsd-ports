@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab/Makefile 473553 2018-06-29 15:01:30Z mfechner $
 
 PORTNAME=	gitlab
-PORTVERSION=	10.8.5
+PORTVERSION=	11.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
@@ -144,7 +144,6 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-ace-rails-ap>=4.1.0:www/rubygem-ace-rails-ap \
 	rubygem-mousetrap-rails>=1.4.6:www/rubygem-mousetrap-rails \
 	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
-	rubygem-oj2>=2.17.4:devel/rubygem-oj2 \
 	rubygem-fast_blank>=0:devel/rubygem-fast_blank \
 	rubygem-chronic>=0.10.2:devel/rubygem-chronic \
 	rubygem-chronic_duration>=0.10.6:devel/rubygem-chronic_duration \
