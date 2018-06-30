@@ -156,7 +156,6 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-sass-rails-rails4>=5.0.6:textproc/rubygem-sass-rails-rails4 \
 	rubygem-uglifier27>=2.7.2:www/rubygem-uglifier27 \
 	rubygem-addressable>=2.5.2:www/rubygem-addressable \
-	rubygem-bootstrap-sass>=3.3.0:www/rubygem-bootstrap-sass \
 	rubygem-font-awesome-rails-rails4>=4.7:devel/rubygem-font-awesome-rails-rails4 \
 	rubygem-gemojione>=3.3:graphics/rubygem-gemojione \
 	rubygem-gon61>=6.1.0:www/rubygem-gon61 \
