@@ -57,7 +57,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-omniauth-shibboleth12>=1.2.0:security/rubygem-omniauth-shibboleth12 \
 	rubygem-omniauth-twitter>=1.4:net/rubygem-omniauth-twitter \
 	rubygem-omniauth_crowd22>=2.2.0:devel/rubygem-omniauth_crowd22 \
-	rubygem-omniauth-authentiq>=0.3.1:net/rubygem-omniauth-authentiq \
+	rubygem-omniauth-authentiq>=0.3.3:net/rubygem-omniauth-authentiq \
 	rubygem-rack-oauth212>=1.2.1:security/rubygem-rack-oauth212 \
 	rubygem-jwt1>=1.5.6:www/rubygem-jwt1 \
 	rubygem-recaptcha3>=3.0:devel/rubygem-recaptcha3 \
