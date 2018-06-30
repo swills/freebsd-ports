@@ -77,6 +77,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-grape>=1.0:devel/rubygem-grape \
 	rubygem-grape-entity>=0.7.1:devel/rubygem-grape-entity \
 	rubygem-rack-cors>=1.0.0:www/rubygem-rack-cors \
+	rubygem-graphql>=1.8.0:devel/rubygem-graphql \
 	rubygem-hashie-forbidden_attributes>=0:devel/rubygem-hashie-forbidden_attributes \
 	rubygem-kaminari-rails4>=1.0:www/rubygem-kaminari-rails4 \
 	rubygem-hamlit26>=2.6.1:www/rubygem-hamlit26 \
