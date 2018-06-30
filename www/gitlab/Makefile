@@ -187,7 +187,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-health_check26>=2.6.0:devel/rubygem-health_check26 \
 	rubygem-vmstat>=2.3.0:sysutils/rubygem-vmstat \
 	rubygem-sys-filesystem>=1.1.6:sysutils/rubygem-sys-filesystem \
-	rubygem-net-ssh4>=4.2.0:security/rubygem-net-ssh4 \
+	rubygem-net-ssh>=5.0:security/rubygem-net-ssh \
 	rubygem-sshkey>=1.9.0:security/rubygem-sshkey \
 	rubygem-rbnacl4<=4.0.2:security/rubygem-rbnacl4 \
 	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
