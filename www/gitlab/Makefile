@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab/Makefile 473553 2018-06-29 15:01:30Z mfechner $
 
 PORTNAME=	gitlab
-PORTVERSION=	11.0.2
+PORTVERSION=	11.0.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
@@ -38,6 +38,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-sprockets3>=3.7:devel/rubygem-sprockets3 \
 	rubygem-default_value_for30>=3.0.5:devel/rubygem-default_value_for30 \
 	rubygem-rugged>=0.27.0:devel/rubygem-rugged \
+	rubygem-grape-path-helpers>=1.0:devel/rubygem-grape-path-helpers \
 	rubygem-grape-route-helpers>=2.1.0:devel/rubygem-grape-route-helpers \
 	rubygem-faraday>=0.12.0:www/rubygem-faraday \
 	rubygem-devise>=4.4:devel/rubygem-devise \
