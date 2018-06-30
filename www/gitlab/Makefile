@@ -158,7 +158,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-addressable>=2.5.2:www/rubygem-addressable \
 	rubygem-font-awesome-rails-rails4>=4.7:devel/rubygem-font-awesome-rails-rails4 \
 	rubygem-gemojione>=3.3:graphics/rubygem-gemojione \
-	rubygem-gon61>=6.1.0:www/rubygem-gon61 \
+	rubygem-gon>=6.2.0:www/rubygem-gon \
 	rubygem-jquery-atwho-rails13>=1.3.2:www/rubygem-jquery-atwho-rails13 \
 	rubygem-request_store>=1.3:devel/rubygem-request_store \
 	rubygem-select2-rails3>=3.5.9:www/rubygem-select2-rails3 \
