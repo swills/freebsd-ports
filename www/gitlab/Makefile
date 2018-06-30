@@ -39,7 +39,6 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-default_value_for30>=3.0.5:devel/rubygem-default_value_for30 \
 	rubygem-rugged>=0.27.0:devel/rubygem-rugged \
 	rubygem-grape-path-helpers>=1.0:devel/rubygem-grape-path-helpers \
-	rubygem-grape-route-helpers>=2.1.0:devel/rubygem-grape-route-helpers \
 	rubygem-faraday>=0.12.0:www/rubygem-faraday \
 	rubygem-devise>=4.4:devel/rubygem-devise \
 	rubygem-doorkeeper>=4.3:security/rubygem-doorkeeper \
