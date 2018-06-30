@@ -15,7 +15,7 @@ BUILD_DEPENDS=	go:lang/go \
 		bash:shells/bash \
 		ronn:textproc/rubygem-ronn
 
-RUN_DEPENDS=	git:devel/git
+RUN_DEPENDS=	git:devel/git-subversion
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	github
