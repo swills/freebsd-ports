@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/games/solarus-quest-editor/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/solarus-quest-editor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	solarus-quest-editor
 PORTVERSION=	1.5.3
@@ -25,8 +25,8 @@ GH_ACCOUNT=	christopho
 
 CMAKE_ARGS+=	-DSOLARUS_USE_LUAJIT=OFF
 USE_SDL=	sdl2 ttf2 image2
-USE_QT5=	buildtools core gui linguist qmake widgets
-USES=		cmake compiler:c++11-lib openal
+USE_QT=		buildtools core gui linguist qmake widgets
+USES=		cmake compiler:c++11-lib openal qt:5
 
 DESKTOP_ENTRIES=	"Solarus Quest Editor" "${COMMENT}" "${PORTNAME}" "${PORTNAME}"  \
 			"Game;" false

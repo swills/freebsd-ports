@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/deskutils/vym/Makefile 404957 2015-12-31 18:31:48Z rakuco $
+# $FreeBSD: head/deskutils/vym/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	vym
 PORTVERSION=	2.2.4
@@ -10,9 +10,9 @@ MASTER_SITES=	SF/vym/Archive/${PORTVERSION}
 MAINTAINER=	lichray@gmail.com
 COMMENT=	VYM is a tool to generate and manipulate mind maps
 
-USES=		qmake shebangfix tar:bzip2
+USES=		qmake qt:4 shebangfix tar:bzip2
 SHEBANG_FILES=	scripts/makedist-vym scripts/vivym
-USE_QT4=	uic_build moc_build qt3support_build \
+USE_QT=		uic_build moc_build qt3support_build \
 		network xml dbus svg
 QMAKE_ARGS=	DATADIR=${DATADIR:C,/vym$,,} \
 		DOCDIR=${DOCSDIR}
@@ -28,7 +28,8 @@ DESKTOP_ENTRIES=	"VYM" \
 
 OPTIONS_DEFINE=	NLS DOCS
 OPTIONS_SUB=	yes
-NLS_USE=	QT4=linguist_build
+NLS_USES=	qt:4
+NLS_USE=	QT=linguist_build
 
 .include <bsd.port.options.mk>
 

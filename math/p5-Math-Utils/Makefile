@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Utils/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-Utils/Makefile 473471 2018-06-27 23:34:05Z sunpoet $
 
 PORTNAME=	Math-Utils
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

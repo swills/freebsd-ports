@@ -1,17 +1,18 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_dirtyread/Makefile 447492 2017-08-07 13:42:44Z krion $
+# $FreeBSD: head/databases/pg_dirtyread/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pg_dirtyread
 PORTVERSION=	1.2
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Read dead but unvacuumed tuples from a PostgreSQL relation
 
 LICENSE=	BSD3CLAUSE
 
 USES=		gmake pgsql:9.2+
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	ChristophBerg
 

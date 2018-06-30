@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fm/qtfm/Makefile 344202 2014-02-14 13:20:26Z amdmi3 $
+# $FreeBSD: head/x11-fm/qtfm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtfm
 DISTVERSION=	5.5
@@ -12,9 +12,9 @@ COMMENT=	Small, lightweight file manager based on pure Qt
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		dos2unix qmake
+USES=		dos2unix qmake qt:4
 DOS2UNIX_REGEX=	.*\.(h|cpp)
-USE_QT4=	gui network moc_build rcc_build \
+USE_QT=		gui network moc_build rcc_build \
 		imageformats_run
 
 post-patch:

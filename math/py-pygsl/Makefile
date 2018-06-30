@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/math/py-pygsl/Makefile 464428 2018-03-13 20:32:15Z sunpoet $
+# $FreeBSD: head/math/py-pygsl/Makefile 473116 2018-06-23 08:27:13Z tcberner $
 
 PORTNAME=	pygsl
 PORTVERSION=	2.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

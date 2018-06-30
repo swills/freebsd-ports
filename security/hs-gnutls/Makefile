@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-gnutls/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-gnutls/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	gnutls
 PORTVERSION=	0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

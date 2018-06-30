@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/homerun/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/homerun/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	homerun
 PORTVERSION=	0.2.3
@@ -9,9 +9,9 @@ MASTER_SITES=	KDE/unstable/${PORTNAME}/src/
 MAINTAINER=	yurkis@gmail.com
 COMMENT=	Fullscreen launcher with content organized in tabs
 
-USES=		cmake:outsource compiler:c++0x gettext kde:4 tar:bzip2
+USES=		cmake:outsource compiler:c++0x gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4 workspace
-USE_QT4=	moc_build qmake_build rcc_build uic_build corelib gui
+USE_QT=		moc_build qmake_build rcc_build uic_build corelib gui
 USE_XORG=	x11
 USE_LDCONFIG=	yes
 

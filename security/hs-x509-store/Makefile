@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/hs-x509-store/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-x509-store/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	x509-store
 PORTVERSION=	1.6.6
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

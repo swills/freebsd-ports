@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ricochet/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/net-im/ricochet/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ricochet
 PORTVERSION=	1.1.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	10
+PORTREVISION=	12
 CATEGORIES=	net-im net-p2p
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -17,10 +17,10 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 
-USES=		compiler:c++11-lib gmake pkgconfig qmake ssl
+USES=		compiler:c++11-lib gmake pkgconfig qmake qt:5 ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	ricochet-im
-USE_QT5=	core gui multimedia network qml quick quickcontrols widgets \
+USE_QT=		core gui multimedia network qml quick quickcontrols widgets \
 		buildtools_build linguisttools_build
 USE_GL=		gl
 QMAKE_ARGS+=	DEFINES+=RICOCHET_NO_PORTABLE OPENSSLDIR=${OPENSSLBASE}

@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-moc/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/devel/qt4-moc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	moc
 DISTVERSION=	${QT4_VERSION}
@@ -10,8 +10,7 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt Meta-Object Compiler
 
-USE_QT4=	qmake_build
-QT_DIST=	yes
+USES=		qt-dist:4 qmake:no_env
 
 HAS_CONFIGURE=	yes
 

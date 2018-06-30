@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish5/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/www/varnish5/Makefile 473376 2018-06-26 08:37:18Z amdmi3 $
 
 PORTNAME=	varnish
 PORTVERSION=	5.2.1
@@ -11,6 +11,7 @@ MAINTAINER=	feld@FreeBSD.org
 COMMENT=	High-performance HTTP accelerator
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	rst2man:textproc/py-docutils
 LIB_DEPENDS=	libpcre.so:devel/pcre
@@ -26,6 +27,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX} --without-dot
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
+TEST_ARGS=	TESTS_PARALLELISM=1
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	varnishcache
@@ -44,8 +47,5 @@ post-patch:
 .if defined(BAD_TESTS)
 	${RM} ${BAD_TESTS:C|.+|${WRKSRC}/bin/varnishtest/tests/\0.vtc|}
 .endif
-
-regression-test check test: build
-	${MAKE_CMD} TESTS_PARALLELISM=1 -C ${WRKSRC} check
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/tiled/Makefile 468654 2018-04-29 21:14:26Z amdmi3 $
+# $FreeBSD: head/graphics/tiled/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tiled
 PORTVERSION=	1.1.5
@@ -15,8 +15,8 @@ LICENSE_COMB=	multi
 USE_GITHUB=	yes
 GH_ACCOUNT=	bjorn
 
-USES=		compiler:c++11-lib desktop-file-utils qmake shared-mime-info
-USE_QT5=	core gui widgets opengl network \
+USES=		compiler:c++11-lib desktop-file-utils qmake qt:5 shared-mime-info
+USE_QT=		core gui widgets opengl network \
 		buildtools_build linguisttools_build
 USE_GL=		gl
 USE_LDCONFIG=	yes

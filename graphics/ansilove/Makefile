@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/ansilove/Makefile 457108 2017-12-23 21:21:59Z amdmi3 $
+# $FreeBSD: head/graphics/ansilove/Makefile 473385 2018-06-26 13:16:07Z amdmi3 $
 
 PORTNAME=	ansilove
-PORTVERSION=	3.0.8
+PORTVERSION=	3.0.9
 CATEGORIES=	graphics textproc
 
 MAINTAINER=	amdmi3@FreeBSD.org

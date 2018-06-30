@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libkexiv2-kde4/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/libkexiv2-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkexiv2
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ COMMENT=	Exiv2 library interface for KDE
 
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	corelib gui xml \
+USE_QT=		corelib gui xml \
 		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 

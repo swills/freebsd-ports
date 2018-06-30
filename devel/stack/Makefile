@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/stack/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/devel/stack/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 # To update this port first go to
 # https://github.com/arrowd/stack-dependencies, change the
@@ -11,6 +11,7 @@
 PORTNAME=	stack
 PORTVERSION=	1.7.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 MASTER_SITES=	GH \
 		https://github.com/arrowd/stack-dependencies/releases/download/v${PORTVERSION}/:deps

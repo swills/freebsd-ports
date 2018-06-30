@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kdbusaddons/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/devel/kf5-kdbusaddons/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdbusaddons
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,9 +10,9 @@ COMMENT=	KF5 addons to QtDBus
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT5=	buildtools_build core dbus gui linguisttools \
+USE_QT=		buildtools_build core dbus gui linguisttools \
 		qmake_build testlib x11extras
 
 .include <bsd.port.mk>

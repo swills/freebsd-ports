@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/editors/morla/Makefile 428130 2016-12-08 15:46:46Z tijl $
+# $FreeBSD: head/editors/morla/Makefile 473122 2018-06-23 10:36:36Z rene $
 
 PORTNAME=	morla
 PORTVERSION=	0.16.1
@@ -36,6 +36,7 @@ DESKTOP_ENTRIES="morla" \
 		"WebDevelopment;" \
 		true
 
+XULRUNNER_BROKEN=No gecko type specified (firefox, seamonkey, thunderbird)
 XULRUNNER_USES=	gecko
 XULRUNNER_CONFIGURE_ON=	--with-javascript=xulrunner
 XULRUNNER_CONFIGURE_OFF=	--with-javascript=none

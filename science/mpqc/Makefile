@@ -1,5 +1,5 @@
 # Created by: batman <batman@udel.edu>
-# $FreeBSD: head/science/mpqc/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/mpqc/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	mpqc
 PORTVERSION=	2.3.1
@@ -9,6 +9,8 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Massively Parallel Quantum Chemistry Program
+
+BROKEN_aarch64=		fails to compile: lapack.h:2:10: 'chemistry/qc/mbptr12/f77sym.h' file not found
 
 LIB_DEPENDS=	libint.so:science/libint
 

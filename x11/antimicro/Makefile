@@ -1,5 +1,5 @@
 # Created by: Anton Toernqvist <antont@inbox.lv>
-# $FreeBSD: head/x11/antimicro/Makefile 460233 2018-01-28 23:16:12Z rakuco $
+# $FreeBSD: head/x11/antimicro/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	antimicro
 PORTVERSION=	2.23
@@ -20,8 +20,8 @@ GH_ACCOUNT=	antimicro #Ryochan7
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 USE_XORG=	x11 xi xtst
-USE_QT5=	core gui linguisttools_build qmake_build buildtools_build widgets network
+USE_QT=		core gui linguisttools_build qmake_build buildtools_build widgets network
 USE_SDL=	sdl2
-USES=		cmake:outsource pkgconfig desktop-file-utils shared-mime-info
+USES=		cmake:outsource pkgconfig desktop-file-utils qt:5 shared-mime-info
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/klatexformula/Makefile 430234 2017-01-01 03:41:53Z hrs $
+# $FreeBSD: head/graphics/klatexformula/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	klatexformula
 PORTVERSION=	3.2.11
@@ -14,8 +14,8 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	help2man:misc/help2man
 
 USES=		cmake:outsource desktop-file-utils ghostscript:run \
-		shared-mime-info localbase
-USE_QT4=	gui xml dbus designer_build linguisttools_build \
+		qt:4 shared-mime-info localbase
+USE_QT=		gui xml dbus designer_build linguisttools_build \
 		qmake_build moc_build rcc_build uic_build
 USE_TEX=	latex dvipsk
 CMAKE_ARGS=	-DQT_QMAKE_EXECUTABLE_FINDQT=${QMAKE} \

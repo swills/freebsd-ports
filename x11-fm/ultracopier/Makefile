@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/x11-fm/ultracopier/Makefile 413427 2016-04-16 10:35:02Z danfe $
+# $FreeBSD: head/x11-fm/ultracopier/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ultracopier
 PORTVERSION=	1.2.1.0
@@ -13,8 +13,8 @@ COMMENT=	Advanced file copier
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake tar:xz
-USE_QT5=	buildtools_build linguisttools_build \
+USES=		qmake qt:5 tar:xz
+USE_QT=		buildtools_build linguisttools_build \
 		core gui network widgets xml
 QMAKE_ARGS=	LRELEASE="${LRELEASE}" ultracopier-core.pro
 

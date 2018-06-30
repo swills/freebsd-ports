@@ -1,5 +1,5 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/deskutils/silence/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/deskutils/silence/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	silence
 PORTVERSION=	0.2
@@ -16,9 +16,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/katepart.so:editors/kate-kde4
 
-USES=		cmake kde:4
+USES=		cmake kde:4 qt:4
 USE_KDE=	kdelibs automoc4
-USE_QT4=	qmake_build moc_build rcc_build uic_build linguisttools_build
+USE_QT=		qmake_build moc_build rcc_build uic_build linguisttools_build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

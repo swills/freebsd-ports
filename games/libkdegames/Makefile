@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/libkdegames/Makefile 466814 2018-04-08 18:09:23Z tcberner $
+# $FreeBSD: head/games/libkdegames/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkdegames
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,13 +9,13 @@ COMMENT=	Libraries used by KDE games
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile
 
-USES=		cmake:outsource gettext kde:5 openal tar:xz
+USES=		cmake:outsource gettext kde:5 openal qt:5 tar:xz
 USE_KDE=	archive attica auth bookmarks codecs completion config \
 		configwidgets coreaddons crash dbusaddons dnssd ecm emoticons \
 		globalaccel guiaddons i18n iconthemes init itemmodels \
 		itemviews jobwidgets kdeclarative kdelibs4support kio newstuff \
 		package service textwidgets widgetsaddons xmlgui
-USE_QT5=	core dbus gui network qml quick svg testlib widgets xml \
+USE_QT=		core dbus gui network qml quick svg testlib widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

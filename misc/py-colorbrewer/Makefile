@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/py-colorbrewer/Makefile 455016 2017-11-28 03:06:58Z yuri $
+# $FreeBSD: head/misc/py-colorbrewer/Makefile 473580 2018-06-29 21:28:57Z yuri $
 
 PORTNAME=	colorbrewer
-DISTVERSION=	0.1.1
+DISTVERSION=	0.2.0
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,9 +10,10 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Constants from Cynthia Brewer's ColorBrewer
 
 LICENSE=	APACHE20
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:2.7
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
+
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

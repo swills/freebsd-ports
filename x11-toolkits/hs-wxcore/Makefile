@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/hs-wxcore/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-wxcore/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	wxcore
 PORTVERSION=	0.92.3.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org

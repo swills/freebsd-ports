@@ -1,5 +1,5 @@
 # Created by: Mykola Dzham <i@levsha.me>
-# $FreeBSD: head/multimedia/bino/Makefile 469015 2018-05-04 11:39:58Z jbeich $
+# $FreeBSD: head/multimedia/bino/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	bino
 PORTVERSION=	1.6.5
@@ -17,11 +17,11 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 		libavformat.so:multimedia/ffmpeg \
 		libopenal.so:audio/openal-soft
 
-USES=		autoreconf desktop-file-utils gmake iconv pkgconfig tar:xz
+USES=		autoreconf desktop-file-utils gmake iconv pkgconfig qt:5 tar:xz
 USE_GL=		gl glu glew
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
-USE_QT5=	buildtools_build core gui opengl widgets
+USE_QT=		buildtools_build core gui opengl widgets
 USE_CXXSTD=	c++11
 
 # no port fow equalizer now, lirc detecting not working

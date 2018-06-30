@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/net-mgmt/riemann-c-client/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/net-mgmt/riemann-c-client/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	riemann-c-client
 PORTVERSION=	1.10.1
@@ -12,6 +12,8 @@ COMMENT=	C library and command-line tool for Riemann
 
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to build: FAIL: tests/check_symver
 
 BUILD_DEPENDS=	check>0:devel/check
 LIB_DEPENDS=	libprotobuf-c.so:devel/protobuf-c \

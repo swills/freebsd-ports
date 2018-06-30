@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cryptohash-md5/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-cryptohash-md5/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	cryptohash-md5
 PORTVERSION=	0.11.100.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

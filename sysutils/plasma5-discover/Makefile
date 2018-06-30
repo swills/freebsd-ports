@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/plasma5-discover/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-discover/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	discover
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -11,13 +11,13 @@ COMMENT=	Plasma5 package management tools
 #LIB_DEPENDS=	libpackagekit-qt.so:ports-mgmt/packagekit-qt5
 
 USES=		cmake:outsource compiler:c++11-lib cpe desktop-file-utils \
-		gettext kde:5 pkgconfig tar:xz
+		gettext kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	archive attica auth codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm i18n iconthemes itemmodels \
 		itemviews jobwidgets kdeclarative kio kirigami2 newstuff \
 		notifications package plasma-framework service solid \
 		textwidgets wallet widgetsaddons xmlgui
-USE_QT5=	concurrent core dbus gui network qml quick svg testlib widgets xml \
+USE_QT=		concurrent core dbus gui network qml quick svg testlib widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

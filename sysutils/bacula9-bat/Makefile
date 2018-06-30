@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/sysutils/bacula9-bat/Makefile 449035 2017-08-31 14:10:27Z dvl $
+# $FreeBSD: head/sysutils/bacula9-bat/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	bacula
 PKGNAMESUFFIX=	9-bat
@@ -9,8 +9,8 @@ COMMENT=	Network backup solution (GUI)
 LIB_DEPENDS+=	libqwt.so:x11-toolkits/qwt5 \
 		libbac.so:sysutils/bacula9-client
 
-USES=		pkgconfig
-USE_QT4=	qmake_build uic_build moc_build rcc_build
+USES=		pkgconfig qt:4
+USE_QT=		qmake_build uic_build moc_build rcc_build
 WITH_BAT=	yes
 
 PLIST=		${.CURDIR}/pkg-plist

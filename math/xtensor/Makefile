@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/xtensor/Makefile 472037 2018-06-09 05:19:46Z yuri $
+# $FreeBSD: head/math/xtensor/Makefile 473140 2018-06-23 16:40:32Z yuri $
 
 PORTNAME=	xtensor
-DISTVERSION=	0.16.3
+DISTVERSION=	0.16.4
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

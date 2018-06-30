@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/py-backports.weakref/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-backports.weakref/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	backports.weakref
 DISTVERSION=	1.0rc1
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Backport of the weakref module from Python 3.4
 
 LICENSE=	PSFL

@@ -1,12 +1,12 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/asteroid/Makefile 445790 2017-07-14 17:20:11Z amdmi3 $
+# $FreeBSD: head/games/asteroid/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	asteroid
 PORTVERSION=	1.2.1
 PORTREVISION=	4
 CATEGORIES=	games
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Modern version of the arcade classic Asteroid
 
 LICENSE=	GPLv3

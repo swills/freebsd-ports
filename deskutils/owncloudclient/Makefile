@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/owncloudclient/Makefile 466830 2018-04-08 20:47:57Z yuri $
+# $FreeBSD: head/deskutils/owncloudclient/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	owncloudclient
 DISTVERSIONPREFIX=	v
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libinotify.so:devel/libinotify \
 		libqt5keychain.so:security/qtkeychain@qt5
 
 USES=		cmake:outsource,noninja compiler:c++11-lib gmake iconv kde:5 \
-		localbase:ldflags pkgconfig sqlite
-USE_QT5=	buildtools_build concurrent core dbus gui linguist_build network \
+		localbase:ldflags pkgconfig qt:5 sqlite
+USE_QT=		buildtools_build concurrent core dbus gui linguist_build network \
 		qmake_build sql webkit widgets xml
 USE_KDE=	completion config coreaddons jobwidgets kio service widgetsaddons
 CMAKE_ARGS=	-DBUILD_WITH_QT4:BOOL=OFF \

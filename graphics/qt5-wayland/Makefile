@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/qt5-wayland/Makefile 471539 2018-06-04 11:39:27Z tcberner $
+# $FreeBSD: head/graphics/qt5-wayland/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	wayland
 DISTVERSION=	${QT5_VERSION}
@@ -14,13 +14,12 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libwayland-client.so:graphics/wayland \
 		libxkbcommon.so:x11/libxkbcommon
 
-USES=		pkgconfig qmake:norecursive
+USES=		pkgconfig qmake:norecursive qt-dist:5,wayland
 USE_GL=		egl gl
 USE_GNOME=	glib20
-USE_QT5=	core dbus gui qml quick \
+USE_QT=		core dbus gui qml quick \
 		buildtools_build qmake_build
 USE_XORG=       x11 xcomposite
-QT_DIST=	${PORTNAME}
 
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/lxqt.mk 452988 2017-10-27 15:30:18Z swills $
+# $FreeBSD: head/Mk/Uses/lxqt.mk 473287 2018-06-25 00:49:41Z swills $
 #
 # This file contains some variable definitions that are supposed to make your
 # life easier, when dealing with ports related to the LXQt Desktop Environment.
@@ -10,6 +10,7 @@
 # Available LXQt components are:
 #
 # buildtools	- Helpers CMake modules
+# globalkeys	- Keyboard shortcuts daemon
 # libfmqt	- Libfm Qt bindings
 # lxqt		- LXQt core library
 # qtxdg		- Qt implementation of freedesktop.org xdg specs
@@ -26,7 +27,7 @@ IGNORE=	Incorrect 'USES+=lxqt:${lxqt_ARGS} takes no arguments
 _LXQT_PROJECT=	${DISTNAME:S/-${DISTVERSION}//:tl}
 
 MASTER_SITE_LXQT+= \
-	https://github.com/lxde/%SUBDIR%/releases/download/${PORTVERSION}/ \
+	https://github.com/lxqt/%SUBDIR%/releases/download/${PORTVERSION}/ \
 	https://downloads.lxqt.org/downloads/%SUBDIR%/${PORTVERSION}/
 MASTER_SITE_LXQT_SUBDIR=	${_LXQT_PROJECT}
 
@@ -44,11 +45,15 @@ CMAKE_ARGS+=	-DCMAKE_INSTALL_MANDIR=${MANDIRS} \
 	-DPULL_TRANSLATIONS:BOOL=OFF
 
 # Available LXQt components are:
-_USE_LXQT_ALL=	buildtools libfmqt lxqt qtxdg
+_USE_LXQT_ALL=	buildtools globalkeys libfmqt lxqt qtxdg
 
 _DATAROOTDIR=	${LOCALBASE}/share
 
 buildtools_BUILD_DEPENDS=	${_DATAROOTDIR}/cmake/lxqt-build-tools/lxqt-build-tools-config.cmake:devel/lxqt-build-tools
+
+globalkeys_LIB_DEPENDS=	liblxqt-globalkeys.so:x11/lxqt-globalkeys
+
+globalkeys_USE_LXQT_REQ=	lxqt
 
 libfmqt_LIB_DEPENDS=	libfm-qt.so:x11/libfm-qt
 

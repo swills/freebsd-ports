@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-Pyrseas/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-Pyrseas/Makefile 473604 2018-06-30 08:37:22Z amdmi3 $
 
 PORTNAME=	Pyrseas
 PORTVERSION=	0.8.0
@@ -24,7 +24,7 @@ GH_ACCOUNT=	perseas
 
 # Requires a running PostgreSQL instance
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYSETUP} test
 
 .include <bsd.port.mk>

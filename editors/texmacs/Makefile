@@ -1,5 +1,5 @@
 # Created by: Geoffrey Mainland <mainland@apeiron.net>
-# $FreeBSD: head/editors/texmacs/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/editors/texmacs/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	texmacs
 PORTVERSION=	1.99.4
@@ -56,8 +56,9 @@ IMLIB2_CONFIGURE_WITH=	imlib2
 PDF_CONFIGURE_ENABLE=	pdf-renderer
 PDF_LDFLAGS=		-lz
 PDF_IMPLIES=		FREETYPE GHOSTSCRIPT
-QT4_USE=		qt4=accessible,corelib,gui,imageformats \
-			qt4=moc_build,qmake_build,rcc_build,uic_build
+QT4_USES=		qt:4
+QT4_USE=		qt=accessible,corelib,gui,imageformats \
+			qt=moc_build,qmake_build,rcc_build,uic_build
 QT4_USE_OFF=		xorg=xext
 QT4_CONFIGURE_ON=	--with-qt=${PREFIX} --enable-qtpipes
 QT4_CONFIGURE_OFF=	--disable-qt

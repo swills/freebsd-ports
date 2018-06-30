@@ -1,5 +1,5 @@
 # Created by: danny@ricin.com
-# $FreeBSD: head/textproc/qt4-xmlpatterns/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/textproc/qt4-xmlpatterns/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xmlpatterns
 DISTVERSION=	${QT4_VERSION}
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt support for XPath, XQuery, XSLT and XML Schema
 
-USE_QT4=	qmake_build moc_build rcc_build corelib network
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		moc_build rcc_build corelib network
 
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

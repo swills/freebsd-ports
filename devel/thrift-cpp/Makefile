@@ -1,5 +1,5 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/thrift-cpp/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/thrift-cpp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION} # to keep in sync with thrift
@@ -31,7 +31,8 @@ PLIST_SUB=		PORTVERSION="${THRIFT_PORTVERSION}"
 
 OPTIONS_DEFINE=		QT4
 QT4_CONFIGURE_WITH=	qt4
-QT4_USE=		QT4=network,moc_build,qmake_build,rcc_build,uic_build
+QT4_USES=		qt:4
+QT4_USE=		QT=network,moc_build,qmake_build,rcc_build,uic_build
 
 OPTIONS_SUB=		yes
 

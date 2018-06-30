@@ -1,5 +1,5 @@
 # Created by: Hannes Hauswedell <h2+fbsdports@fsfe.org>
-# $FreeBSD: head/biology/ugene/Makefile 470045 2018-05-15 18:51:51Z rakuco $
+# $FreeBSD: head/biology/ugene/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ugene
 DISTVERSION=	1.22.0
@@ -20,9 +20,9 @@ RUN_DEPENDS=	bash:shells/bash
 
 BROKEN_aarch64=	Fails to build: invokes x86 asm
 
-USES=		desktop-file-utils qmake
+USES=		desktop-file-utils qmake qt:5
 USE_GL=		glu
-USE_QT5=	buildtools_build linguisttools_build scripttools_build \
+USE_QT=		buildtools_build linguisttools_build scripttools_build \
 		gui network printsupport script sql svg webkit widgets xml \
 		imageformats_run
 

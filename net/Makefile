@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 472685 2018-06-18 12:59:29Z rene $
+# $FreeBSD: head/net/Makefile 473062 2018-06-22 19:59:41Z tcberner $
 #
 
     COMMENT = Networking tools
@@ -410,13 +410,14 @@
     SUBDIR += libpcap
     SUBDIR += libpcapnav
     SUBDIR += libproxy
-    SUBDIR += libproxy-gnome
+    SUBDIR += libproxy-gnome2
     SUBDIR += libproxy-gnome3
     SUBDIR += libproxy-kde
     SUBDIR += libproxy-mozjs
     SUBDIR += libproxy-perl
     SUBDIR += libproxy-python
     SUBDIR += libproxy-webkit
+    SUBDIR += libproxy-webkit3
     SUBDIR += librdkafka
     SUBDIR += librouteros
     SUBDIR += librsync2

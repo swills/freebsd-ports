@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/tong/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/tong/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	tong
 PORTVERSION=	1.3
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://www.nongnu.org/tong/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tetris and Pong in the same place at the same time
 
 LICENSE=	GPLv3+

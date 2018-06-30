@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/cjdns/Makefile 468988 2018-05-03 20:57:15Z yuri $
+# $FreeBSD: head/net/cjdns/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	cjdns
 DISTVERSIONPREFIX=	cjdns-v
@@ -13,6 +13,9 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_FreeBSD_10_i386=	fails CC_OUTPUT_921dbbb2_65ad290d=error: invalid value 'c++14' in '-std=c++14' yes
+BROKEN_aarch64=		fails to compile: Link time optimization not supported: the clang compiler does not support '-march=native'
+BROKEN_armv6=		fails to build: Killing runaway build after 21600 seconds with no output
+BROKEN_armv7=		fails to build: Killing runaway build after 21600 seconds with no output
 
 BUILD_DEPENDS=	node:www/node \
 		bash:shells/bash

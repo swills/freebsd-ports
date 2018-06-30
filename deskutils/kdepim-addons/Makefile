@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kdepim-addons/Makefile 467009 2018-04-10 19:31:53Z tcberner $
+# $FreeBSD: head/deskutils/kdepim-addons/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdepim-addons
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libqgpgme.so:security/gpgme-qt5
 
 USES=		cmake:outsource compiler:c++11-lib gettext grantlee:5 kde:5 \
-		pkgconfig tar:xz
+		pkgconfig qt:5 tar:xz
 USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 		dbusaddons ecm i18n iconthemes itemmodels itemviews jobwidgets \
 		kdeclarative khtml kio prison service sonnet syntaxhighlighting \
@@ -29,7 +29,7 @@ USE_KDE+=	akonadi akonadicalendar akonadicontacts akonadiimportwizard \
 		kdepim-apps-libs libkdepim libkleo libksieve mailcommon \
 		mailimporter mailtransport messagelib mime pimcommon \
 		pimtextedit tnef
-USE_QT5=	core dbus gui location network printsupport qml quick testlib \
+USE_QT=		core dbus gui location network printsupport qml quick testlib \
 		webchannel webengine widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

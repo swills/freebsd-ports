@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 461703 2018-02-13 13:00:34Z romain $
+# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	yubikey-personalization-gui
 PORTVERSION=	3.1.25
@@ -17,8 +17,8 @@ LIB_DEPENDS=	libykpers-1.so:security/ykpers \
 USE_GITHUB=	yes
 GH_ACCOUNT=	Yubico
 
-USES=		pkgconfig qmake
-USE_QT4=	corelib gui moc_build rcc_build testlib_build uic_build
+USES=		pkgconfig qmake qt:4
+USE_QT=		corelib gui moc_build rcc_build testlib_build uic_build
 
 PLIST_FILES=	bin/yubikey-personalization-gui \
 		man/man1/yubikey-personalization-gui.1.gz \

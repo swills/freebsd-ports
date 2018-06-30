@@ -1,5 +1,5 @@
 # Created by: Mykola Dzham <freebsd@levsha.org.ua>
-# $FreeBSD: head/astro/qlandkartegt/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/astro/qlandkartegt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qlandkartegt
 PORTVERSION=	1.8.1
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libproj.so:graphics/proj \
 		libgps.so:astro/gpsd
 
-USES=		cmake desktop-file-utils
-USE_QT4=	dbus gui opengl network sql xml linguist_build \
+USES=		cmake desktop-file-utils qt:4
+USE_QT=		dbus gui opengl network sql xml linguist_build \
 		moc_build uic_build rcc_build qmake_build
 USE_GL=		glu
 

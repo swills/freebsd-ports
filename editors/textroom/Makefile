@@ -1,5 +1,5 @@
 # Created by: admin@mjbrune.org
-# $FreeBSD: head/editors/textroom/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/editors/textroom/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	textroom
 PORTVERSION=	0.8.2
@@ -16,11 +16,11 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libhunspell-1.6.so:textproc/hunspell \
 		libxml++-2.6.so:textproc/libxml++26
 
-USES=		compiler:c++11-lang desktop-file-utils pkgconfig qmake
+USES=		compiler:c++11-lang desktop-file-utils pkgconfig qmake qt:4
 USE_CXXSTD=	c++11
 USE_GL=		gl
 USE_SDL=	mixer
-USE_QT4=	moc_build rcc_build uic_build \
+USE_QT=		moc_build rcc_build uic_build \
 		corelib gui opengl qt3support svg xml
 
 post-patch:

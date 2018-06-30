@@ -1,12 +1,12 @@
 # Created by: luigi@FreeBSD.org
-# $FreeBSD: head/sysutils/busybox/Makefile 472292 2018-06-13 08:11:14Z krion $
+# $FreeBSD: head/sysutils/busybox/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	busybox
 PORTVERSION=	1.26.2
 CATEGORIES=	sysutils misc shells
 MASTER_SITES=	https://busybox.net/downloads/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Set of common utilities built as single binary
 
 LICENSE=	GPLv2

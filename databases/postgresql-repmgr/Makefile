@@ -1,5 +1,5 @@
 # Created by: alp@sfedu.ru
-# $FreeBSD: head/databases/postgresql-repmgr/Makefile 468250 2018-04-24 23:28:44Z bofh $
+# $FreeBSD: head/databases/postgresql-repmgr/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	postgresql-repmgr
 PORTVERSION=	4.0.4
@@ -16,6 +16,7 @@ RUN_DEPENDS=	rsync:net/rsync
 
 GNU_CONFIGURE=	yes
 USES+=		gettext gmake pgsql:9.3+
+LLD_UNSAFE=	yes
 USE_RC_SUBR=	repmgrd
 WANT_PGSQL=	server
 MAKE_ENV=	USE_PGXS=1

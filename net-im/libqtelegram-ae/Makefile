@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/net-im/libqtelegram-ae/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net-im/libqtelegram-ae/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libqtelegram-ae
 PORTVERSION=	6.1
@@ -18,8 +18,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Aseman-Land
 GH_PROJECT=	libqtelegram-aseman-edition
 
-USES=		qmake:outsource ssl
-USE_QT5=	qmake_build buildtools_build core gui network multimedia
+USES=		qmake:outsource qt:5 ssl
+USE_QT=		qmake_build buildtools_build core gui network multimedia
 USE_LDCONFIG=	yes
 
 post-patch:

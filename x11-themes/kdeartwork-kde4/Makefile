@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/x11-themes/kdeartwork-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-themes/kdeartwork-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdeartwork
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ PKGNAMESUFFIX=	-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Artworks Themes
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs libkexiv2 workspace automoc4
-USE_QT4=	corelib gui opengl \
+USE_QT=		corelib gui opengl \
 		moc_build qmake_build rcc_build uic_build
 USE_XORG=	x11 xt
 

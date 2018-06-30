@@ -1,8 +1,8 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql96-server/Makefile 469638 2018-05-11 13:10:52Z girgen $
+# $FreeBSD: head/databases/postgresql96-server/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 DISTVERSION?=	9.6.9
-PORTREVISION?=	0
+PORTREVISION?=	1
 PKGNAMESUFFIX?=	${PORTVERSION:R:S/.//}${COMPONENT}
 
 MAINTAINER?=	pgsql@FreeBSD.org

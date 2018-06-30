@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/eos-movrec/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
+# $FreeBSD: head/graphics/eos-movrec/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	eos-movrec
 DISTVERSION=	0.3.2_beta
@@ -14,9 +14,9 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libgphoto2.so:graphics/libgphoto2
 
-USES=		cmake dos2unix pkgconfig tar:bzip2
+USES=		cmake dos2unix pkgconfig qt:4 tar:bzip2
 DOS2UNIX_GLOB=	*.pro *.cpp *.h
-USE_QT4=	qmake_build moc_build rcc_build uic_build gui
+USE_QT=		qmake_build moc_build rcc_build uic_build gui
 
 INSTALLS_ICONS=	yes
 ICON_SIZES=	16x16 32x32 128x128 256x256 512x512

@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk6/Makefile 465054 2018-03-20 02:19:21Z stephen $
+# $FreeBSD: head/math/vtk6/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	vtk
 PORTVERSION=	6.2.0
@@ -126,7 +126,8 @@ PLIST_SUB+=	MPI="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MQT4}
-USE_QT4=	gui_build gui_run network_build network_run sql_build sql_run \
+USES+=		qt:4
+USE_QT=		gui_build gui_run network_build network_run sql_build sql_run \
 		moc_build uic_build qmake_build rcc_build opengl webkit_build \
 		webkit_run
 CMAKE_ARGS+=	-DVTK_QT_VERSION:STRING="4"
@@ -134,7 +135,8 @@ PLIST_SUB+=	QTV="qt4"
 .endif
 
 .if ${PORT_OPTIONS:MQT5}
-USE_QT5=	gui_build gui_run network_build network_run sql_build sql_run \
+USES+=		qt:5
+USE_QT=		gui_build gui_run network_build network_run sql_build sql_run \
 		qmake_build opengl webkit_build buildtools webkit_run
 CMAKE_ARGS+=	-DVTK_QT_VERSION:STRING="5" \
 		-DCMAKE_PREFIX_PATH:STRING=${LOCALBASE}/lib/qt5
@@ -151,9 +153,9 @@ CMAKE_ARGS+=	-DVTK_Group_Qt:BOOL=OFF
 
 .if ${PORT_OPTIONS:MDESIGNER}
 .if ${PORT_OPTIONS:MQT5}
-USE_QT5+=	designer
+USE_QT+=	designer
 .elif ${PORT_OPTIONS:MQT4}
-USE_QT4+=	designer
+USE_QT+=	designer
 .else
 IGNORE=	designer requires either QT4 or QT5
 .endif

@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/step/Makefile 466877 2018-04-09 18:32:24Z tcberner $
+# $FreeBSD: head/science/step/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	step
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	science kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,14 +12,14 @@ LIB_DEPENDS=	libcln.so:math/cln \
 		libgsl.so:math/gsl \
 		libqalculate.so:math/libqalculate
 
-USES=		cmake:outsource eigen:3 gettext kde:5 pkgconfig tar:xz
+USES=		cmake:outsource eigen:3 gettext kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
 		coreaddons crash doctools ecm emoticons guiaddons i18n \
 		iconthemes init itemmodels itemviews jobwidgets js \
 		kdelibs4support khtml kio newstuff notifications parts \
 		plotting service solid sonnet textwidgets unitconversion \
 		widgetsaddons windowsystem xmlgui
-USE_QT5=	core dbus gui network opengl printsupport qml quick svg \
+USE_QT=		core dbus gui network opengl printsupport qml quick svg \
 		widgets xml \
 		buildtools_build qmake_build
 

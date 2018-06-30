@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/lang/elixir/Makefile 471983 2018-06-08 05:28:38Z olgeni $
+# $FreeBSD: head/lang/elixir/Makefile 473438 2018-06-27 12:35:35Z olgeni $
 
 PORTNAME=	elixir
 PORTVERSION=	1.6.5
@@ -48,5 +48,8 @@ post-install-SRC-on:
 		cd ${WRKSRC}/lib/$${lib}/lib && \
 			${COPYTREE_SHARE} \* ${STAGEDIR}${PREFIX}/lib/elixir/lib/$${lib}/lib; \
 	done
+
+do-test:
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} test
 
 .include <bsd.port.mk>

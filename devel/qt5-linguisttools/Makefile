@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-linguisttools/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/devel/qt5-linguisttools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	linguisttools
 DISTVERSION=	${QT5_VERSION}
@@ -8,9 +8,8 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt localization tools
 
-USE_QT5=	core xml buildtools_build qml_build
-QT_DIST=	tools
-USES=		qmake
+USE_QT=		core xml buildtools_build qml_build
+USES=		qmake qt-dist:5,tools
 
 BUILD_WRKSRC=	${WRKSRC}/src/linguist
 INSTALL_WRKSRC=	${WRKSRC}/src/linguist

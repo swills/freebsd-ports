@@ -1,5 +1,5 @@
 # Created by: Ilya Bakulin <webmaster@kibab.com>
-# $FreeBSD: head/net/wpa_gui/Makefile 472340 2018-06-13 19:25:37Z jrm $
+# $FreeBSD: head/net/wpa_gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	wpa_gui
 PORTVERSION=	2.6
@@ -18,8 +18,8 @@ COMMENT=	Qt-based frontend for wpa_supplicant
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/../COPYING
 
-USES=		gmake
-USE_QT5=	qmake_build buildtools_build linguisttools_build core gui \
+USES=		gmake qt:5
+USE_QT=		qmake_build buildtools_build linguisttools_build core gui \
 		widgets svg_run
 
 ALL_TARGET=	wpa_gui-qt4

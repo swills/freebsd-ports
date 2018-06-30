@@ -1,5 +1,5 @@
 # Created by: Serge Gagnon <serge.gagnon@b2b2c.ca>
-# $FreeBSD: head/devel/plan9port/Makefile 463959 2018-03-09 13:39:33Z tobik $
+# $FreeBSD: head/devel/plan9port/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=	plan9port
 PORTVERSION=	20180205
@@ -14,6 +14,10 @@ LICENSE=	LUCENT
 LICENSE_NAME=	Lucent Public License Version 1.02
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_aarch64=		fails to compile: no such file or directory: 'getcallerpc-arm64'
+BROKEN_armv6=		fails to compile: thread.c:130:5: no member named 'arm_r0' in 'mcontext_t'
+BROKEN_armv7=		fails to compile: thread.c:130:5: no member named 'arm_r0' in 'mcontext_t'
 
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig

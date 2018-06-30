@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/capicity/Makefile 437182 2017-03-29 06:50:28Z ashish $
+# $FreeBSD: head/games/capicity/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	capicity
 PORTVERSION=	1.0
@@ -23,9 +23,9 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 
 WRKSRC=		${WRKDIR}/CapiCity_${PORTVERSION}
 
-USES=		iconv qmake
+USES=		iconv qmake qt:4
 USE_XORG=	ice sm x11 xau xcb xdmcp xext xrender
-USE_QT4=	moc_build rcc_build uic_build iconengines_run imageformats_run \
+USE_QT=		moc_build rcc_build uic_build iconengines_run imageformats_run \
 		corelib gui network script xml
 
 PORTDOCS=	README changelog

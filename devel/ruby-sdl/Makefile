@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/ruby-sdl/Makefile 444275 2017-06-25 15:02:34Z sunpoet $
+# $FreeBSD: head/devel/ruby-sdl/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	sdl
 PORTVERSION=	2.1.3.1
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ruby extension library to use SDL library
 
 LICENSE=	LGPL21

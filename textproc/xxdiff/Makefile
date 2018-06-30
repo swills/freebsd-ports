@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/textproc/xxdiff/Makefile 431169 2017-01-11 10:08:38Z amdmi3 $
+# $FreeBSD: head/textproc/xxdiff/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xxdiff
 PORTVERSION=	4.0.1
@@ -12,8 +12,8 @@ COMMENT=	Graphical file and directories comparator and merge tool
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		bison gmake tar:bz2
-USE_QT4=	gui moc_build qmake_build uic_build
+USES=		bison gmake qt:4 tar:bz2
+USE_QT=		gui moc_build qmake_build uic_build
 
 BUILD_WRKSRC=	${WRKSRC}/src
 

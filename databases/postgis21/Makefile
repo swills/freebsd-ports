@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/postgis21/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/databases/postgis21/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	postgis
 PORTVERSION=	2.1.8
@@ -22,6 +22,7 @@ CONFLICTS_INSTALL=	postgis20 postgis22 postgis23 postgis24 postgis
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}
 USES=		gmake iconv:wchar_t libtool:keepla perl5 pgsql pkgconfig shebangfix
+LLD_UNSAFE=	yes
 SHEBANG_FILES=	utils/postgis_restore.pl.in
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes

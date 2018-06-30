@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/wizznic/Makefile 433344 2017-02-05 03:30:25Z jbeich $
+# $FreeBSD: head/games/wizznic/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	wizznic
 PORTVERSION=	0.9.9
@@ -8,7 +8,7 @@ PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Source%20Releases/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Implementation of the arcade classic Puzznic
 
 LICENSE=	GPLv3+

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/brainparty/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/brainparty/Makefile 473500 2018-06-28 16:26:34Z amdmi3 $
 
 PORTNAME=	brainparty
 PORTVERSION=	0.61
@@ -18,6 +18,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		gmake
 USE_SDL=	sdl mixer ttf gfx image
 USE_GL=		gl glu
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

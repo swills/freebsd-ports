@@ -1,7 +1,8 @@
-# $FreeBSD: head/print/ghostscript9-agpl-base/Makefile 472239 2018-06-12 09:45:14Z tijl $
+# $FreeBSD: head/print/ghostscript9-agpl-base/Makefile 473400 2018-06-26 17:15:37Z tijl $
 
 PORTNAME=	ghostscript
 PORTVERSION=	9.23
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${PORTVERSION:S/.//}/
 PKGNAMESUFFIX=	9-agpl-base
@@ -40,7 +41,6 @@ CONFIGURE_ARGS=	--disable-compile-inits \
 		--enable-fontconfig \
 		--enable-freetype \
 		--enable-openjpeg \
-		--enable-threadsafe \
 		--with-drivers=ALL \
 		--with-fontpath=${LOCALBASE}/share/fonts \
 		--with-jbig2dec \
@@ -52,8 +52,6 @@ CONFIGURE_ARGS=	--disable-compile-inits \
 ALL_TARGET=	so
 INSTALL_TARGET=	soinstall
 PLIST_SUB=	GS_VERSION="${PORTVERSION}"
-SUB_FILES=	pkg-message
-SUB_LIST=	DATADIR="${DATADIR}"
 
 OPTIONS_DEFINE=	DOCS CUPS IJS
 OPTIONS_DEFAULT=CUPS IJS

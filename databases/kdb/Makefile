@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/kdb/Makefile 468526 2018-04-28 09:28:46Z tcberner $
+# $FreeBSD: head/databases/kdb/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=		kdb
 DISTVERSION=		3.1.0
+PORTREVISION=	1
 CATEGORIES=		databases kde
 MASTER_SITES=		KDE/stable/${PORTNAME}/src
 DIST_SUBDIR=		KDE/${PORTNAME}
@@ -11,9 +12,9 @@ COMMENT=		Database connectivity and creation framework
 
 LIB_DEPENDS=		libicuuc.so:devel/icu
 
-USES=			cmake:outsource gettext kde:5 python:2.7 tar:xz
+USES=			cmake:outsource gettext kde:5 python:2.7 qt:5 tar:xz
 USE_KDE=		coreaddons ecm i18n
-USE_QT5=		core gui network widgets xml \
+USE_QT=			core gui network widgets xml \
 			buildtools_build qmake_build
 
 # In the future, these options will be moved into slave ports

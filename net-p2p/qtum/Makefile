@@ -1,8 +1,8 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qtum/Makefile 471914 2018-06-07 13:00:19Z vd $
+# $FreeBSD: head/net-p2p/qtum/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtum
-PORTVERSION=	0.15.1
+PORTVERSION=	0.15.2
 DISTVERSIONPREFIX=	mainnet-ignition-v
 CATEGORIES=	net-p2p finance
 
@@ -36,8 +36,8 @@ CONFIGURE_ARGS=	--disable-man \
 		--with-qrencode \
 		--without-libs
 
-USES=		autoreconf bdb:5+ compiler:c++11-lib gmake libtool pkgconfig ssl
-USE_QT5=	buildtools core dbus gui linguisttools network testlib widgets
+USES=		autoreconf bdb:5+ compiler:c++11-lib gmake libtool pkgconfig qt:5 ssl
+USE_QT=		buildtools core dbus gui linguisttools network testlib widgets
 USE_GITHUB=	yes
 GH_TUPLE=	qtumproject:qtum:${DISTVERSIONPREFIX}${PORTVERSION} \
 		qtumproject:cpp-eth-qtum:8db7fc170f7c0a475bc40c:cppeth/src/cpp-ethereum

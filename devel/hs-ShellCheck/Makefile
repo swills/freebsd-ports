@@ -1,9 +1,10 @@
-# $FreeBSD: head/devel/hs-ShellCheck/Makefile 471052 2018-05-28 15:43:36Z mat $
+# $FreeBSD: head/devel/hs-ShellCheck/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	ShellCheck
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4.7-129
 DISTVERSIONSUFFIX=	-gb5e5d24
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	pizzamig@FreeBSD.org

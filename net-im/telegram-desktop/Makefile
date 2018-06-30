@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/telegram-desktop/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/net-im/telegram-desktop/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	telegram-desktop
 DISTVERSIONPREFIX=	v
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg \
 		libopenal.so:audio/openal-soft \
 		libopus.so:audio/opus
 
-USES=		cmake:noninja,outsource desktop-file-utils gmake pkgconfig python:2.7,build ssl
+USES=		cmake:noninja,outsource desktop-file-utils gmake pkgconfig python:2.7,build qt:5 ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	telegramdesktop
 GH_PROJECT=	tdesktop
@@ -33,7 +33,7 @@ GH_TUPLE=	catchorg:Catch2:5ca44b68:catch/Telegram/ThirdParty/Catch \
 		telegramdesktop:libtgvoip:6e0e102:libtgvoip/Telegram/ThirdParty/libtgvoip \
 		telegramdesktop:crl:344cbde9:crl/Telegram/ThirdParty/crl
 USE_GNOME=	glib20 gtk30
-USE_QT5=	core gui imageformats network widgets buildtools_build qmake_build dbus
+USE_QT=		core gui imageformats network widgets buildtools_build qmake_build dbus
 USE_XORG=	x11 xcb
 
 CMAKE_SOURCE_PATH=	${WRKSRC}/out/Release

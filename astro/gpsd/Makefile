@@ -1,5 +1,5 @@
 # Created by: Anton Karpov <toxa@toxahost.ru>
-# $FreeBSD: head/astro/gpsd/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/astro/gpsd/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gpsd
 PORTVERSION=	3.17
@@ -131,7 +131,8 @@ TIMING_MAKE_ARGS_OFF=	timing=no
 # Client-side options
 NCURSES_MAKE_ARGS_OFF=	ncurses=no
 NCURSES_USES=		ncurses
-QTBIND_USE=		QT4=network,corelib
+QTBIND_USES=		qt:4
+QTBIND_USE=		QT=network,corelib
 QTBIND_MAKE_ARGS=	qt=yes
 QTBIND_MAKE_ARGS_OFF=	qt=no
 QTBIND_PLIST_SUB=	QTBIND=""

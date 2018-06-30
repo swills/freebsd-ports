@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/plasma-applet-adjustableclock/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-clocks/plasma-applet-adjustableclock/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	adjustableclock
 PORTVERSION=	4.1.4
@@ -13,9 +13,9 @@ COMMENT=	KDE4 highly configurable clock plasma applet
 
 LICENSE=	GPLv2
 
-USES=		cmake gettext kde:4 tar:bzip2
+USES=		cmake gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 workspace
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USE_QT=		qmake_build moc_build rcc_build uic_build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/deskutils/kchmviewer/Makefile 450775 2017-09-27 18:08:14Z rakuco $
+# $FreeBSD: head/deskutils/kchmviewer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kchmviewer
 PORTVERSION=	7.7
@@ -13,8 +13,8 @@ COMMENT=	KDE viewer for CHM files
 LIB_DEPENDS=	libchm.so:misc/chmlib \
 		libzip.so:archivers/libzip
 
-USES=		dos2unix qmake:outsource 
-USE_QT5=	core dbus gui network printsupport webkit widgets xml \
+USES=		dos2unix qmake:outsource qt:5 
+USE_QT=		core dbus gui network printsupport webkit widgets xml \
 		buildtools_build qmake_build
 USE_XORG=	x11
 

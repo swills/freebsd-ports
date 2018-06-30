@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/fcitx-qt5/Makefile 471011 2018-05-27 22:23:01Z yuri $
+# $FreeBSD: head/textproc/fcitx-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fcitx-qt5
 DISTVERSION=	1.2.3
@@ -13,11 +13,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libfcitx-config.so:chinese/fcitx \
 		libxkbcommon.so:x11/libxkbcommon
 
-USES=		compiler:c++11-lib cmake:outsource gettext kde:5 pkgconfig
+USES=		compiler:c++11-lib cmake:outsource gettext kde:5 pkgconfig qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	fcitx
 USE_KDE=	ecm
-USE_QT5=	concurrent core dbus gui widgets buildtools_build qmake_build
+USE_QT=		concurrent core dbus gui widgets buildtools_build qmake_build
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/openconnect-gui/Makefile 446534 2017-07-24 16:02:15Z swills $
+# $FreeBSD: head/security/openconnect-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	openconnect-gui
 PORTVERSION=	1.4.1
@@ -21,8 +21,8 @@ RUN_DEPENDS=	openconnect:security/openconnect \
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:C/-gui//}
 
-USES=		cmake pkgconfig
-USE_QT5=	buildtools_build concurrent core gui network qmake_build widgets
+USES=		cmake pkgconfig qt:5
+USE_QT=		buildtools_build concurrent core gui network qmake_build widgets
 CMAKE_ARGS+=	-DCMAKE_BUILD_TYPE=Release
 PLIST_FILES=	bin/openconnect-gui
 

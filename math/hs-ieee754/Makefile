@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/hs-ieee754/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/math/hs-ieee754/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	ieee754
 PORTVERSION=	0.8.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

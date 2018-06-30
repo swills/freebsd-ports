@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/graphics/easypaint/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/graphics/easypaint/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	easypaint
 PORTVERSION=	0.6.0
@@ -13,8 +13,8 @@ COMMENT=	Easy graphic editing program
 
 LICENSE=	GPLv3
 
-USES=		qmake
-USE_QT4=	gui xml uic_build moc_build rcc_build
+USES=		qmake qt:4
+USE_QT=		gui xml uic_build moc_build rcc_build
 QPROFILE=	easyPaint
 WRKSRC=		${WRKDIR}/${QPROFILE}
 

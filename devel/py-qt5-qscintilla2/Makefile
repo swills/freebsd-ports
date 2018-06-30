@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
@@ -16,13 +16,12 @@ DISTINFO_FILE=	${.CURDIR:H}/qscintilla2-qt5/distinfo
 DESTDIRNAME=	INSTALL_ROOT
 
 HAS_CONFIGURE=	yes
-QT_NONSTANDARD=	yes  # Do not add unknown arguments to CONFIGURE_ARGS.
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qmake:no_env qt:5
 USE_GL=		gl
 USE_PYQT=	sip core gui printsupport widgets
 USE_PYTHON=	flavors
-USE_QT5=	core gui printsupport widgets buildtools_build qmake_build
+USE_QT=		core gui printsupport widgets buildtools_build qmake_build
 
 OPTIONS_DEFINE=		DEBUG
 DEBUG_CONFIGURE_ON=	--debug --trace

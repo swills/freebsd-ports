@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/deskutils/plasma-applet-simpleweatherforecast/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/deskutils/plasma-applet-simpleweatherforecast/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	simpleweatherforecast
 PORTVERSION=	1.3
@@ -14,9 +14,9 @@ COMMENT=	Weather plasma applet for KDE4
 
 RUN_DEPENDS=	wget:ftp/wget
 
-USES=		cmake kde:4
+USES=		cmake kde:4 qt:4
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	gui dbus network opengl svg webkit xml \
+USE_QT=		gui dbus network opengl svg webkit xml \
 		qmake_build moc_build rcc_build uic_build
 
 WRKSRC=		${WRKDIR}/plasma-${PORTNAME}-${PORTVERSION}-kde-4.3.80

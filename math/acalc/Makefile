@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/acalc/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/math/acalc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	acalc
 PORTVERSION=	0.21
@@ -15,8 +15,8 @@ BROKEN_powerpc64=	fails to compile: cc1plus: unrecognized command line option "-
 USE_GITHUB=	yes
 GH_ACCOUNT=	anpp
 
-USES=		qmake
-USE_QT4=	corelib gui moc_build rcc_build uic_build
+USES=		qmake qt:4
+USE_QT=		corelib gui moc_build rcc_build uic_build
 WRKSRC_SUBDIR=	aCalc/aCalc
 
 PLIST_FILES=	bin/acalc share/pixmaps/Calculator-50.png

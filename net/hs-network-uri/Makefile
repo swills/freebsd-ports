@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-network-uri/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/net/hs-network-uri/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	network-uri
 PORTVERSION=	2.6.1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

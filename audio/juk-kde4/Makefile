@@ -1,5 +1,5 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/audio/juk-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/audio/juk-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	juk
 PORTVERSION=	${KDE4_VERSION}
@@ -13,9 +13,9 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libtag.so:audio/taglib
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 
 CMAKE_ARGS=	-DWITH_TunePimp:BOOL=OFF
 

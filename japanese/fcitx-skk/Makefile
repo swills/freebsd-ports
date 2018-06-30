@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/fcitx-skk/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/japanese/fcitx-skk/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fcitx-skk
 PORTVERSION=	0.1.2
@@ -27,7 +27,8 @@ QT4_DESC=	Enable Qt for GUI configuration
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MQT4}
-USE_QT4=	qmake_build moc_build rcc_build uic_build gui
+USES+=		qt:4
+USE_QT=		qmake_build moc_build rcc_build uic_build gui
 USE_LDCONFIG=	${PREFIX}/lib/fcitx/qt
 PLIST_SUB+=	QT4=""
 .else

@@ -1,5 +1,5 @@
 # Created by: Alberto Villa <avilla@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-qt4/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-im/telepathy-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	telepathy-qt
 PORTVERSION=	0.9.7
@@ -30,11 +30,13 @@ CMAKE_ARGS=	-DENABLE_EXAMPLES:BOOL=False \
 		-DDESIRED_QT_VERSION:STRING=${PKGNAMESUFFIX} \
 		-DQT_QMAKE_EXECUTABLE:FILEPATH=${QMAKE}
 . if ${PKGNAMESUFFIX:M4}
-USE_QT4=	corelib dbus gui network qtestlib_build xml \
+USES+=		qt:4
+USE_QT=		corelib dbus gui network qtestlib_build xml \
 		moc_build qmake_build rcc_build uic_build
 SHLIB_SUFFIX=	2
 . else
-USE_QT5=	core dbus gui network xml \
+USES+=		qt:5
+USE_QT=		core dbus gui network xml \
 		buildtools_build qmake_build testlib_build widgets_build
 SHLIB_SUFFIX=	0
 . endif

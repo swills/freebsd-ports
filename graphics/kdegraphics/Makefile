@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdegraphics/Makefile 471406 2018-06-02 22:03:00Z adridg $
+# $FreeBSD: head/graphics/kdegraphics/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdegraphics
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -8,8 +8,8 @@ CATEGORIES=	graphics kde
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Graphics utilities for KDE (meta port)
 
-USES=		kde:5 metaport
-USE_QT5=	#
+USES=		kde:5 metaport qt:5
+USE_QT=		#
 
 OPTIONS_DEFINE=	GPHOTO \
 		GWENVIEW \

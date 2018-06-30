@@ -1,5 +1,5 @@
 # Created by: Loïc BARTOLETTI <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/postgis23/Makefile 467882 2018-04-21 12:10:00Z riggs $
+# $FreeBSD: head/databases/postgis23/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	postgis
 PORTVERSION=	2.3.7
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libproj.so:graphics/proj \
 CONFLICTS=	postgis20  postgis21 postgis22 postgis24 postgis
 
 USES=		gettext gmake iconv:wchar_t libtool:keepla perl5 pgsql pkgconfig shebangfix
+LLD_UNSAFE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}
 SHEBANG_FILES=	extensions/address_standardizer/*.pl raster/test/regress/*.pl \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/plasma5-kwallet-pam/Makefile 469032 2018-05-04 14:34:41Z adridg $
+# $FreeBSD: head/security/plasma5-kwallet-pam/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kwallet-pam
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -11,9 +11,9 @@ COMMENT=	Plasma5 KWallet PAM Integration
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error
 
-USES=		cmake:outsource cpe gettext kde:5 tar:xz
+USES=		cmake:outsource cpe gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT5=	buildtools_build qmake_build
+USE_QT=		buildtools_build qmake_build
 
 # The qmake dependency is only needed so that kf5-e-c-m can query qmake for
 # some installation directories.

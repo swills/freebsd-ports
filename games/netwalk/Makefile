@@ -1,12 +1,12 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/netwalk/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/games/netwalk/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	netwalk
 PORTVERSION=	0.4.11
 PORTREVISION=	2
 CATEGORIES=	games
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Game where the object is to connect every terminal to the main server
 
 LICENSE=	GPLv3+

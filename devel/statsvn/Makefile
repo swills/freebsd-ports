@@ -1,9 +1,9 @@
 # Created by: glarkin
-# $FreeBSD: head/devel/statsvn/Makefile 458017 2018-01-04 08:42:55Z tobik $
+# $FreeBSD: head/devel/statsvn/Makefile 473374 2018-06-26 05:54:15Z tobik $
 
 PORTNAME=	statsvn
 PORTVERSION=	0.7.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel java
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source

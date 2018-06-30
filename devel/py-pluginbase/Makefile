@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pluginbase/Makefile 471384 2018-06-02 17:35:26Z miwi $
+# $FreeBSD: head/devel/py-pluginbase/Makefile 473614 2018-06-30 12:30:30Z joneum $
 
 PORTNAME=	pluginbase
-PORTVERSION=	0.5
+PORTVERSION=	0.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

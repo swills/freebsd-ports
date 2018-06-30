@@ -1,9 +1,9 @@
 # Created by: Yarema <yds@CoolRat.org>
-# $FreeBSD: head/mail/courier/Makefile 464980 2018-03-19 05:40:52Z yuri $
+# $FreeBSD: head/mail/courier/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	courier
 PORTVERSION=	0.65.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF
 

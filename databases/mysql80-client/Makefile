@@ -1,8 +1,8 @@
 # Created by: "Mahdi Mokhtari <mokhi64@gmail.com>"
-# $FreeBSD: head/databases/mysql80-client/Makefile 469734 2018-05-12 15:35:25Z mmokhi $
+# $FreeBSD: head/databases/mysql80-client/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	mysql
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	80-client
 
 COMMENT=	Multithreaded SQL database (client)

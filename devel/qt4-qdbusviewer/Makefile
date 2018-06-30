@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-qdbusviewer/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-qdbusviewer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qdbusviewer
 DISTVERSION=	${QT4_VERSION}
@@ -12,10 +12,9 @@ COMMENT=	Qt 4 graphical interface to D-Bus
 
 LIB_DEPENDS=	libdbus-1.so:devel/dbus
 
-USES=		pkgconfig
-USE_QT4=	qmake_build moc_build rcc_build corelib dbus gui xml \
+USES=		pkgconfig qmake:no_env qt-dist:4
+USE_QT=		moc_build rcc_build corelib dbus gui xml \
 		clucene
-QT_DIST=	yes
 
 HAS_CONFIGURE=	yes
 

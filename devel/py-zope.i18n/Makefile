@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/py-zope.i18n/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-zope.i18n/Makefile 473609 2018-06-30 09:07:18Z amdmi3 $
 
 PORTNAME=	zope.i18n
 PORTVERSION=	3.8.0
@@ -12,6 +12,9 @@ DIST_SUBDIR=	zope
 MAINTAINER=	zope@FreeBSD.org
 COMMENT=	Zope Internationalization Support
 
+LICENSE=	ZPL21
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.event>=0:devel/py-zope.event@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>=0:textproc/py-zope.i18nmessageid@${PY_FLAVOR} \
@@ -21,5 +24,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.event>=0:devel/py-zope.event@${PY_FLAVO
 
 USES=		gettext python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/ktnef/Makefile 467007 2018-04-10 19:09:05Z tcberner $
+# $FreeBSD: head/net/ktnef/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ktnef
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,11 +9,11 @@ COMMENT=	KDE API for the handling of TNEF data
 
 LICENSE=	LGPL21
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons ecm i18n kdelibs4support
 # pim components
 USE_KDE+=	calendarcore calendarutils contacts
-USE_QT5=	core gui widgets xml \
+USE_QT=		core gui widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

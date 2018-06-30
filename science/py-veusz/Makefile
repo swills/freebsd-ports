@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/py-veusz/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/py-veusz/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	veusz
 PORTVERSION=	1.19.1
@@ -17,10 +17,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	${PYNUMPY}
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 
-USES=		python pyqt:4 shebangfix
+USES=		python pyqt:4 qt:4 shebangfix
 USE_PYQT=	gui svg
 USE_PYTHON=	distutils concurrent autoplist
-USE_QT4=	corelib gui xml
+USE_QT=		corelib gui xml
 SHEBANG_FILES=	examples/embedexample.py
 
 post-patch:

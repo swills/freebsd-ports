@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/isc-dhcp44-server/Makefile 463517 2018-03-03 17:01:13Z zi $
+# $FreeBSD: head/net/isc-dhcp44-server/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	dhcp
 ISCVERSION=	4.4.1
@@ -19,7 +19,7 @@ LICENSE=	MPL20
 
 USES=		gmake
 
-PORTREVISION_SERVER=	2
+PORTREVISION_SERVER=	3
 PORTREVISION_CLIENT=	0
 PORTREVISION_RELAY=	0
 

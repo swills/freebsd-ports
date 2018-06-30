@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 471383 2018-06-02 17:35:00Z miwi $
+# $FreeBSD: head/print/Makefile 473025 2018-06-22 08:37:44Z tota $
 #
 
     COMMENT = Desktop publishing
@@ -211,6 +211,7 @@
     SUBDIR += qpdf
     SUBDIR += qpdfview
     SUBDIR += qt5-printsupport
+    SUBDIR += R-cran-tinytex
     SUBDIR += rlpr
     SUBDIR += rprint
     SUBDIR += rtf2latex2e

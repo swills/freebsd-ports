@@ -1,5 +1,5 @@
 # Created by: Jeffrey Baitis <jeff@baitis.net>
-# $FreeBSD: head/comms/libsdr-gui/Makefile 430947 2017-01-09 13:16:49Z amdmi3 $
+# $FreeBSD: head/comms/libsdr-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libsdr-gui
 PORTVERSION=	0.1.0
@@ -19,8 +19,8 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 USE_GITHUB=	yes
 GH_ACCOUNT=	hmatuschek
 
-USE_QT5=	core buildtools_build qmake widgets
-USES=		cmake pkgconfig
+USE_QT=		core buildtools_build qmake widgets
+USES=		cmake pkgconfig qt:5
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

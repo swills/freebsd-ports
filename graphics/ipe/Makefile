@@ -1,5 +1,5 @@
 # Created by: David Bremner <bremner@unb.ca>
-# $FreeBSD: head/graphics/ipe/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/graphics/ipe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ipe
 PORTVERSION=	7.2.7
@@ -19,9 +19,9 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 
-USES=		compiler:c++11-lib gmake jpeg lua:52 pkgconfig
+USES=		compiler:c++11-lib gmake jpeg lua:52 pkgconfig qt:5
 USE_GNOME=	cairo
-USE_QT5=	buildtools_build core gui qmake_build widgets
+USE_QT=		buildtools_build core gui qmake_build widgets
 USE_TEX=	pdftex
 MAKE_ENV=	DL_LIBS="" \
 		INSTALL_DIR="${MKDIR}" \

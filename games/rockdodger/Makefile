@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner <nbm@FreeBSD.org>
-# $FreeBSD: head/games/rockdodger/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/rockdodger/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	rockdodger
 PORTVERSION=	1.0.2
@@ -11,7 +11,7 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \
 		${PORTNAME}.png:addons
 EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Addictive rock-dodging greeblie-killing platform game
 
 LICENSE=	GPLv2

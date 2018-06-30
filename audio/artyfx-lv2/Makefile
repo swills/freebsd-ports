@@ -1,9 +1,10 @@
-# $FreeBSD: head/audio/artyfx-lv2/Makefile 471079 2018-05-29 06:20:22Z yuri $
+# $FreeBSD: head/audio/artyfx-lv2/Makefile 473179 2018-06-24 04:44:56Z yuri $
 
 PORTNAME=	artyfx
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	1.3-14
 DISTVERSIONSUFFIX=	-gb247969
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -22,5 +23,18 @@ GH_ACCOUNT=	openAVproductions
 GH_PROJECT=	openAV-ArtyFX
 USE_GNOME=	cairo
 USE_XORG=	x11
+
+OPTIONS_DEFINE_amd64=	SSE
+OPTIONS_DEFINE_i386=	SSE
+OPTIONS_DEFAULT_amd64=	SSE
+OPTIONS_DEFAULT_i386=	SSE
+
+SSE_CMAKE_ON=	-DPORT_SIMD_FLAGS:STRING="-msse -msse2 -mfpmath=sse"
+
+post-patch:
+	@${REINPLACE_CMD} -e 's| -g | |; s| -O1 | |; s/-msse2 -mfpmath=sse/$${PORT_SIMD_FLAGS}/g' \
+		${WRKSRC}/CMakeLists.txt
+	@${REINPLACE_CMD} -e 's/-msse -msse2 -mfpmath=sse -g/$${PORT_SIMD_FLAGS}/g' \
+		${WRKSRC}/src/avtk/CMakeLists.txt
 
 .include <bsd.port.mk>

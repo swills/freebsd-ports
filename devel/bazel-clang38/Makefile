@@ -1,10 +1,10 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/bazel-clang38/Makefile 446943 2017-07-30 21:46:10Z lwhsu $
+# $FreeBSD: head/devel/bazel-clang38/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 MASTERDIR=	${.CURDIR}/../bazel
 PKGNAMESUFFIX=	-clang38
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 
 OPTIONS_SLAVE=	CLANG38
 

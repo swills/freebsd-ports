@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-script/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/devel/qt5-script/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	script
 DISTVERSION=	${QT5_VERSION}
@@ -10,9 +10,8 @@ COMMENT=	Qt 4-compatible scripting module
 
 BROKEN_powerpc64=	Does not build
 
-USE_QT5=	core buildtools_build
-QT_DIST=	${PORTNAME}
-USES=		qmake
+USE_QT=		core buildtools_build
+USES=		qmake qt-dist:5,script
 # Keep make(1) from descending into src/script/obj/ (qmake:outsource
 # doesn't work).
 MAKE_ENV=	MAKEOBJDIR=.

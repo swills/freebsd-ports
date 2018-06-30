@@ -1,8 +1,8 @@
-# $FreeBSD: head/archivers/hs-zlib-enum/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/archivers/hs-zlib-enum/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	zlib-enum
 PORTVERSION=	0.2.3.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	archivers haskell
 
 MAINTAINER=	haskell@FreeBSD.org

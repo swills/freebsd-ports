@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/ultimatestunts/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/ultimatestunts/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	ultimatestunts
 PORTVERSION=	0.7.7.1
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-srcdata-${PORTVERSION:S/.//g}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PORTNAME}_icons${EXTRACT_SUFX}:icons
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Racing game with elaborate stunts
 
 LICENSE=	GPLv2+

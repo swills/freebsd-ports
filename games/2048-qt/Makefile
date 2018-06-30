@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/2048-qt/Makefile 422472 2016-09-20 00:29:28Z amdmi3 $
+# $FreeBSD: head/games/2048-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	2048-qt
 PORTVERSION=	0.1.6
@@ -15,8 +15,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	xiaoyong
 GH_PROJECT=	2048-Qt
 
-USES=		gmake pkgconfig qmake
-USE_QT5=	core gui network widgets qml quick buildtools_build quickcontrols
+USES=		gmake pkgconfig qmake qt:5
+USE_QT=		core gui network widgets qml quick buildtools_build quickcontrols
 
 PLIST_FILES=	bin/2048-qt ${DESKTOPDIR}/${PORTNAME}.desktop \
 		share/pixmaps/${PORTNAME}.png

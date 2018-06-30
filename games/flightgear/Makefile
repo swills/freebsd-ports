@@ -1,5 +1,5 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear/Makefile 471256 2018-06-01 11:48:58Z martymac $
+# $FreeBSD: head/games/flightgear/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	flightgear
 PORTVERSION=	2018.2.1
@@ -47,7 +47,8 @@ DBUS_CMAKE_ON=	-DUSE_DBUS:BOOL=ON
 DBUS_CMAKE_OFF=	-DUSE_DBUS:BOOL=OFF
 QT5_CMAKE_ON=	-DENABLE_QT:BOOL=ON
 QT5_CMAKE_OFF=	-DENABLE_QT:BOOL=OFF
-QT5_USE=	QT5=core,buildtools,gui,network,qmake,qml,quick,widgets
+QT5_USES=	qt:5
+QT5_USE=	QT=core,buildtools,gui,network,qmake,qml,quick,widgets
 
 .include <bsd.port.pre.mk>
 

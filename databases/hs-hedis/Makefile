@@ -1,9 +1,9 @@
 # Created by:	martin@sugioarto.com
-# $FreeBSD: head/databases/hs-hedis/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/databases/hs-hedis/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	hedis
 PORTVERSION=	0.10.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases haskell
 
 MAINTAINER=	haskell@FreeBSD.org

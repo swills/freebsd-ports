@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/hs-JuicyPixels/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/graphics/hs-JuicyPixels/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	JuicyPixels
 PORTVERSION=	3.2.9.5
+PORTREVISION=	1
 CATEGORIES=	graphics haskell
 
 MAINTAINER=	haskell@FreeBSD.org

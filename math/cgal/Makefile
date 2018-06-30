@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/math/cgal/Makefile 468597 2018-04-29 00:49:58Z wen $
+# $FreeBSD: head/math/cgal/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cgal
 PORTVERSION=	4.11.1
@@ -38,8 +38,9 @@ VISUALIZATION_LIB_DEPENDS=	libgeomview.so:graphics/geomview
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MQT5}
+USES+=		qt:5
 CMAKE_ARGS+=	-DWITH_CGAL_Qt5=ON
-USE_QT5+=	core gui opengl widgets svg buildtools_build qmake_build
+USE_QT+=	core gui opengl widgets svg buildtools_build qmake_build
 USE_GL+=	gl glu
 .else
 CMAKE_ARGS+=	-DWITH_CGAL_Qt5=OFF

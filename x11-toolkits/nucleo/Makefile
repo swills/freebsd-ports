@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/nucleo/Makefile 468975 2018-05-03 19:02:29Z jbeich $
+# $FreeBSD: head/x11-toolkits/nucleo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	nucleo
 PORTVERSION=	0.7.6
@@ -50,7 +50,8 @@ GNUTLS_CONFIGURE_OFF=	--without-gnutls
 
 MDNSRESPONDER_LIB_DEPENDS=	libdns_sd.so:net/mDNSResponder
 
-QT4_USE=		QT4=moc_build,corelib
+QT4_USE=		QT=moc_build,corelib
+QT4_USES=		qmake:no_env qt:4
 QT4_CONFIGURE_OFF=	--without-qt
 QT4_MAKE_ARGS=		QT4MOC="${MOC}"
 
@@ -58,10 +59,6 @@ QT4_MAKE_ARGS=		QT4MOC="${MOC}"
 
 .if ! ${PORT_OPTIONS:MAVAHI} && ! ${PORT_OPTIONS:MMDNSRESPONDER}
 CONFIGURE_ARGS+=	--without-dns-sd
-.endif
-
-.if ${PORT_OPTIONS:MQT4}
-QT_NONSTANDARD=		yes
 .endif
 
 post-install:

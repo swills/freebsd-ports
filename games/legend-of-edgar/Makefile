@@ -1,12 +1,12 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/legend-of-edgar/Makefile 430398 2017-01-02 19:40:58Z nemysis $
+# $FreeBSD: head/games/legend-of-edgar/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	edgar
 DISTVERSION=	1.26
 CATEGORIES=	games
 PKGNAMEPREFIX=	legend-of-
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	2D platform game with a persistent world
 
 LICENSE=	GPLv2

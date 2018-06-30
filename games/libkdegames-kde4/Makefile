@@ -1,16 +1,16 @@
-# $FreeBSD: head/games/libkdegames-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/games/libkdegames-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkdegames
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Libraries used by KDE 4 games
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	network phonon xml moc_build qmake_build rcc_build uic_build
+USE_QT=		network phonon xml moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=		LOWLATENCY

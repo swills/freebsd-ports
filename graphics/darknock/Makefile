@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/darknock/Makefile 456409 2017-12-15 17:08:56Z amdmi3 $
+# $FreeBSD: head/graphics/darknock/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	darknock
 PORTVERSION=	0.3.0
@@ -14,8 +14,8 @@ LICENSE=	GPLv2+
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		qmake
-USE_QT4=	gui linguisttools_build moc_build rcc_build uic_build
+USES=		qmake qt:4
+USE_QT=		gui linguisttools_build moc_build rcc_build uic_build
 
 PORTDOCS=	changelog
 PLIST_FILES=	bin/darknock share/pixmaps/darknock.png

@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/multimedia/py-qt4-multimedia/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/multimedia/py-qt4-multimedia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	multimedia
 PORTREVISION=	3
@@ -11,10 +11,10 @@ COMMENT=	Python bindings for the Qt4 toolkit, Multimedia module
 CONFIGURE_ARGS=	--enable QtMultimedia
 PYQT_DIST=	yes
 
-USES=		python pyqt:4
+USES=		python pyqt:4 qt:4
 USE_PYQT=	sip_build core_run gui_run
 USE_PYTHON=	flavors
-USE_QT4=	corelib gui multimedia moc_build qmake_build
+USE_QT=		corelib gui multimedia moc_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

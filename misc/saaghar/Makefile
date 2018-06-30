@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/saaghar/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/saaghar/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	saaghar
 PORTVERSION=	2.5.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	SF/saaghar/Source%20Code/:saaghar \
 		SF/ganjoor/s3db:ganjoor
@@ -18,8 +19,8 @@ EXTRACT_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
 
 OPTIONS_DEFINE=	DEBUG
 
-USES=		qmake dos2unix
-USE_QT4=	gui network sql xml sql-sqlite3_run \
+USES=		qmake dos2unix qt:4
+USE_QT=		gui network sql xml sql-sqlite3_run \
 		moc_build rcc_build uic_build phonon \
 		dbus declarative xmlpatterns svg script
 WRKSRC=		${WRKDIR}/Saaghar

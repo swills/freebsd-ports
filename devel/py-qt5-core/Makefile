@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-core/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/py-qt5-core/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	core
 PORTREVISION=	6
@@ -13,10 +13,10 @@ CONFIGURE_ARGS=	${PYQT5_MODULES_ALL:N${PYQT_MODULE}:C/.*/--disable=&/} \
 
 PYQT_DIST=	yes
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_PYTHON=	py3kplist flavors
 USE_PYQT=	sip_build
-USE_QT5=	core buildtools_build qmake_build
+USE_QT=		core buildtools_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

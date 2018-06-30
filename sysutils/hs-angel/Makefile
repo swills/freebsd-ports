@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/hs-angel/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/sysutils/hs-angel/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	angel
 PORTVERSION=	0.6.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils haskell
 
 MAINTAINER=	haskell@FreeBSD.org

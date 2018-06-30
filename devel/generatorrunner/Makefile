@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/generatorrunner/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/generatorrunner/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	generatorrunner
 PORTVERSION=	0.6.16
@@ -16,9 +16,9 @@ LIB_DEPENDS=	libapiextractor.so:devel/apiextractor
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
-USE_QT4=	gui qmake_build qtestlib moc_build rcc_build uic_build xml
+USE_QT=		gui qmake_build qtestlib moc_build rcc_build uic_build xml
 
-USES=		cmake
+USES=		cmake qt:4
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 

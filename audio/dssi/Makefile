@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/dssi/Makefile 447920 2017-08-13 22:31:58Z ultima $
+# $FreeBSD: head/audio/dssi/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dssi
 PORTVERSION=	1.1.1
@@ -37,8 +37,8 @@ OPTIONS_DEFINE=	DOCS EXAMPLES QT4
 OPTIONS_DEFAULT=QT4
 OPTIONS_SUB=	yes
 
-QT4_USE=	QT4=corelib,gui,moc_build
-QT_NONSTANDARD=	yes
+QT4_USES=	qmake:no_env qt:4
+QT4_USE=	QT=corelib,gui,moc_build
 
 post-patch:
 	@${REINPLACE_CMD} -e \

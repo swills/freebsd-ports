@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/textproc/py-qt4-xmlpatterns/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/textproc/py-qt4-xmlpatterns/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xmlpatterns
 PORTREVISION=	3
@@ -11,10 +11,10 @@ COMMENT=	Python bindings for the Qt4 toolkit, QtXmlPatterns module
 CONFIGURE_ARGS=	--enable QtXmlPatterns
 PYQT_DIST=	yes
 
-USES=		python pyqt:4
+USES=		python pyqt:4 qt:4
 USE_PYQT=	sip_build core_run network_run
 USE_PYTHON=	flavors
-USE_QT4=	corelib network xmlpatterns moc_build qmake_build
+USE_QT=		corelib network xmlpatterns moc_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

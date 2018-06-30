@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/kf5-khtml/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/www/kf5-khtml/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	khtml
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,12 +12,12 @@ LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libpng.so:graphics/png
 
 USES=		cmake:outsource compiler:c++11-lib gettext gperf jpeg kde:5 \
-		tar:xz
+		qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config \
 		configwidgets coreaddons ecm globalaccel i18n iconthemes \
 		jobwidgets js kio notifications parts service sonnet \
 		textwidgets wallet widgetsaddons windowsystem xmlgui
-USE_QT5=	buildtools_build core dbus gui network phonon4 \
+USE_QT=		buildtools_build core dbus gui network phonon4 \
 		printsupport qmake_build widgets x11extras xml
 USE_XORG=	ice sm x11 xext
 

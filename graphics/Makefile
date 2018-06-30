@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 472976 2018-06-21 15:28:59Z mfechner $
+# $FreeBSD: head/graphics/Makefile 473441 2018-06-27 14:02:09Z wen $
 #
 
     COMMENT = Graphics tools and libraries
@@ -892,9 +892,11 @@
     SUBDIR += py-exif
     SUBDIR += py-exifread
     SUBDIR += py-exiv2
+    SUBDIR += py-fiona
     SUBDIR += py-freeimagepy
     SUBDIR += py-gd
     SUBDIR += py-gdal
+    SUBDIR += py-geopandas
     SUBDIR += py-gimp
     SUBDIR += py-gizeh
     SUBDIR += py-glewpy

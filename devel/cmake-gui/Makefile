@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cmake-gui/Makefile 472788 2018-06-19 13:55:54Z tcberner $
+# $FreeBSD: head/devel/cmake-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cmake
 DISTVERSION=	3.11.4
@@ -19,9 +19,9 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libuv.so:devel/libuv \
 		librhash.so:security/rhash
 
-USE_QT5=	core gui widgets buildtools_build qmake_build
+USE_QT=		core gui widgets buildtools_build qmake_build
 USES=		cmake:run desktop-file-utils libarchive \
-		shared-mime-info
+		qt:5 shared-mime-info
 CMAKE_OFF=	BUILD_CursesDialog \
 		CMake_SPHINX_DEPEND_ON_EXECUTABLES
 CMAKE_ON=	BUILD_QtDialog \

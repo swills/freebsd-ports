@@ -1,9 +1,10 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/net/remmina/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
+# $FreeBSD: head/net/remmina/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	remmina
 DISTVERSIONPREFIX=v
 DISTVERSION=	1.2.0-rcgit.27
+PORTREVISION=	1
 CATEGORIES=	net gnome
 
 MAINTAINER=	woodsb02@FreeBSD.org

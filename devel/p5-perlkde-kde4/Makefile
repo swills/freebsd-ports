@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-perlkde-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/p5-perlkde-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	perlkde
 PORTVERSION=	${KDE4_VERSION}
@@ -9,9 +9,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Perl bindings for KDE
 
-USES=		cmake:outsource compiler:c++11-lib kde:4 perl5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:4 perl5 qt:4 tar:xz
 USE_KDE=	perlqt smokekde automoc4
-USE_QT4=	network opengl sql svg xml \
+USE_QT=		network opengl sql svg xml \
 		qmake_build moc_build uic_build rcc_build
 
 # Respect PREFIX

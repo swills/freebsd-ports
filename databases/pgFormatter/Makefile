@@ -1,12 +1,12 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/pgFormatter/Makefile 445078 2017-07-05 13:08:12Z tz $
+# $FreeBSD: head/databases/pgFormatter/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	pgFormatter
 PORTVERSION=	2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PostgreSQL SQL syntax beautifier
 
 LICENSE=	PostgreSQL

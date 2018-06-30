@@ -1,8 +1,9 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/x11/roxterm/Makefile 458782 2018-01-11 20:01:45Z amdmi3 $
+# $FreeBSD: head/x11/roxterm/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	roxterm
 PORTVERSION=	3.3.2
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	SF
 

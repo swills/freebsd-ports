@@ -1,5 +1,5 @@
 # Created by: Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/lyx/Makefile 470148 2018-05-16 20:12:25Z rakuco $
+# $FreeBSD: head/print/lyx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	lyx
 PORTVERSION=	${MAJOR_VERSION}.${MINOR_VERSION}
@@ -21,8 +21,8 @@ MAJOR_VERSION=	2.3
 MINOR_VERSION=	0
 
 USES=		desktop-file-utils gmake iconv pkgconfig perl5 \
-		python:2.7 shebangfix tar:xz
-USE_QT5=	core concurrent gui svg widgets buildtools_build qmake_build
+		python:2.7 qt:5 shebangfix tar:xz
+USE_QT=		core concurrent gui svg widgets buildtools_build qmake_build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-included-boost \
 		--without-included-mythes \

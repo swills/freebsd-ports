@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	subtitlecomposer
 PORTVERSION=	0.5.7
 DISTVERSIONPREFIX=	v
-PORTREVISION=	10
+PORTREVISION=	12
 CATEGORIES=	multimedia kde
 
 MAINTAINER=	ports@FreeBSD.org
@@ -11,9 +11,9 @@ COMMENT=	Subtitle editor for KDE
 
 LIB_DEPENDS=	libicui18n.so:devel/icu
 
-USES=		cmake:outsource gettext kde:4 shared-mime-info
+USES=		cmake:outsource gettext kde:4 qt:4 shared-mime-info
 USE_KDE=	kdelibs automoc4
-USE_QT4=	qmake_build moc_build rcc_build uic_build phonon
+USE_QT=		qmake_build moc_build rcc_build uic_build phonon
 USE_CXXSTD=	gnu++98
 
 USE_GITHUB=	yes

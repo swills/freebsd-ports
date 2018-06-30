@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/qrfcview/Makefile 440678 2017-05-12 09:00:29Z amdmi3 $
+# $FreeBSD: head/deskutils/qrfcview/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qrfcview
 PORTVERSION=	0.62
@@ -13,8 +13,8 @@ COMMENT=	Graphical RFC viewer
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		qmake tar:tgz
-USE_QT4=	gui network corelib uic_build moc_build rcc_build
+USES=		qmake qt:4 tar:tgz
+USE_QT=		gui network corelib uic_build moc_build rcc_build
 
 SUB_FILES=	qRFCView
 

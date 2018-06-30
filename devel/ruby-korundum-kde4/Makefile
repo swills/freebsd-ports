@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ruby-korundum-kde4/Makefile 465102 2018-03-20 18:03:48Z tcberner $
+# $FreeBSD: head/devel/ruby-korundum-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	korundum
 PORTVERSION=	${KDE4_VERSION}
@@ -9,11 +9,11 @@ PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Ruby bindings for KDE
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kate kdelibs okular pimlibs \
 		qtruby smokegen smokekde smokeqt \
 		akonadi automoc4 soprano
-USE_QT4=	corelib network opengl sql svg xml \
+USE_QT=		corelib network opengl sql svg xml \
 		qmake_build moc_build uic_build rcc_build
 USE_RUBY=	yes
 

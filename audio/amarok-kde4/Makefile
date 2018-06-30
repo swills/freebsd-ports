@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/audio/amarok-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/audio/amarok-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	amarok
 PORTVERSION=	2.8.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	audio kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 
@@ -24,11 +24,11 @@ RUN_DEPENDS=	${LOCALBASE}/lib/qt4/plugins/script/libqtscript_core.so.1.0.0:devel
 		${KDE_PREFIX}/lib/kde4/kio_upnp_ms.so:net/kio-upnp-ms
 
 USES=		cmake:outsource kde:4 mysql:client,embedded pkgconfig \
-		shared-mime-info shebangfix ssl tar:bzip2
+		qt:4 shared-mime-info shebangfix ssl tar:bzip2
 USE_GL=		gl
 USE_KDE=	automoc4 kdelibs libkcddb libkcompactdisc \
 		nepomuk-core runtime soprano strigi
-USE_QT4=	corelib dbus designer gui network opengl \
+USE_QT=		corelib dbus designer gui network opengl \
 		phonon script sql svg webkit xml \
 		qmake_build moc_build rcc_build uic_build
 USE_XORG=	ice sm x11 xau xdmcp xext xft xpm

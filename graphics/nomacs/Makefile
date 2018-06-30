@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/nomacs/Makefile 469466 2018-05-09 20:27:51Z swills $
+# $FreeBSD: head/graphics/nomacs/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	nomacs
 PORTVERSION=	3.6.1
@@ -17,8 +17,8 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 		liblcms2.so:graphics/lcms2 \
 		libtbb.so:devel/tbb
 
-USES=		cmake desktop-file-utils dos2unix pkgconfig tar:bzip2
-USE_QT5=        concurrent core gui network printsupport svg widgets \
+USES=		cmake desktop-file-utils dos2unix pkgconfig qt:5 tar:bzip2
+USE_QT=	        concurrent core gui network printsupport svg widgets \
 		buildtools_build linguisttools_build qmake_build
 
 DOS2UNIX_REGEX=	.*\.(cpp|h|txt)

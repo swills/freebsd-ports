@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/multimedia/umplayer/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/umplayer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	umplayer
 DISTVERSION=	0.97
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/Copying.txt
 
 RUN_DEPENDS=	mplayer:multimedia/mplayer
 
-USES=		desktop-file-utils gmake qmake tar:xz
-USE_QT4=	gui network xml moc_build rcc_build uic_build \
+USES=		desktop-file-utils gmake qmake qt:4 tar:xz
+USE_QT=		gui network xml moc_build rcc_build uic_build \
 		linguisttools_build
 INSTALLS_ICONS=	yes
 MAKE_ARGS+=	PREFIX=${PREFIX} DESTDIR=${STAGEDIR}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/flex/Makefile 467814 2018-04-20 09:03:44Z amdmi3 $
+# $FreeBSD: head/textproc/flex/Makefile 473146 2018-06-23 17:48:52Z yuri $
 
 PORTNAME=	flex
-PORTVERSION=	2.6.1
+PORTVERSION=	2.6.4
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/westes/flex/releases/download/v${PORTVERSION}/
 
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	help2man:misc/help2man \
 		gm4:devel/m4
 RUN_DEPENDS=	gm4:devel/m4
 
-USES=		bison gmake libtool makeinfo tar:xz
+USES=		bison gmake libtool makeinfo
 GNU_CONFIGURE=	yes
 # install flex header to its own dir to avoid conflict with system flex.
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/flex --disable-shared

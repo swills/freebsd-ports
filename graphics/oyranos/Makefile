@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/oyranos/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/oyranos/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	oyranos
 PORTVERSION=	0.9.6
@@ -30,11 +30,11 @@ LIB_DEPENDS=	libraw.so:graphics/libraw \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	oyranos-cms
-USES=		cmake compiler:c++11-lib desktop-file-utils gettext iconv jpeg pkgconfig
+USES=		cmake compiler:c++11-lib desktop-file-utils gettext iconv jpeg pkgconfig qt:4
 USE_GL=		gl
 USE_LDCONFIG=	yes
 USE_GNOME=	libxml2
-USE_QT4=	corelib gui moc_build qmake_build rcc_build uic_build
+USE_QT=		corelib gui moc_build qmake_build rcc_build uic_build
 USE_XORG=	ice sm x11 xcursor xext xfixes xinerama xrandr xft xxf86vm
 CMAKE_ARGS+=	-DXDG_CONFIG_DIR=${PREFIX}/etc/xdg
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}

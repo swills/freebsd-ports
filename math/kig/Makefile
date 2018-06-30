@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kig/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/math/kig/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kig
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,12 +10,12 @@ COMMENT=	KDE interactive geometry application
 LIB_DEPENDS=	${PY_BOOST}
 
 USES=		cmake:outsource gettext compiler:c++11-lib kde:5 \
-		python:2.7,run shebangfix tar:xz
+		python:2.7,run qt:5 shebangfix tar:xz
 USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 		crash doctools ecm emoticons i18n iconthemes init itemmodels \
 		jobwidgets kdelibs4support kio parts service sonnet texteditor \
 		textwidgets widgetsaddons xmlgui
-USE_QT5=	core dbus gui network printsupport svg widgets xml xmlpatterns \
+USE_QT=		core dbus gui network printsupport svg widgets xml xmlpatterns \
 		buildtools_build qmake_build
 SHEBANG_FILES=	pykig/pykig.py
 

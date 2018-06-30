@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 472956 2018-06-21 06:32:16Z tobik $
+# $FreeBSD: head/audio/openal-soft/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	openal-soft
 PORTVERSION=	1.18.2
@@ -35,7 +35,8 @@ CONFIG_DESC=		Install configuration utility (needs Qt 4.x)
 
 CONFIG_CMAKE_BOOL_OFF=	ALSOFT_NO_CONFIG_UTIL
 CONFIG_CMAKE_ON=	-DALSOFT_NO_QT5:BOOL=ON
-CONFIG_USE=		QT4=corelib,gui,qmake_build,moc_build,rcc_build,uic_build
+CONFIG_USES=		qt:4
+CONFIG_USE=		QT=corelib,gui,qmake_build,moc_build,rcc_build,uic_build
 
 JACK_CMAKE_BOOL=	ALSOFT_REQUIRE_JACK ALSOFT_BACKEND_JACK
 JACK_LIB_DEPENDS=	libjack.so:audio/jack

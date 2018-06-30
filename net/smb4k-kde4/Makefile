@@ -1,9 +1,9 @@
 # Created by: Josh Paetzel <jpaetzel@FreeBSD.org>
-# $FreeBSD: head/net/smb4k-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/net/smb4k-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smb4k-kde4
 PORTVERSION=	0.10.9
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	net kde
 MASTER_SITES=	SF/smb4k
 DISTNAME=	smb4k-${PORTVERSION}
@@ -13,10 +13,10 @@ COMMENT=	KDE 4.x SMB Network browser and SMB shares mounting center
 
 RUN_DEPENDS=	sudo:security/sudo
 
-USES=		cmake gettext kde:4 samba:run tar:bzip2
+USES=		cmake gettext kde:4 qt:4 samba:run tar:bzip2
 USE_LDCONFIG=	${PREFIX}/lib ${PREFIX}/lib/kde4
 USE_KDE=	kdelibs automoc4 runtime
-USE_QT4=	corelib gui network opengl script svg webkit \
+USE_QT=		corelib gui network opengl script svg webkit \
 		qmake_build moc_build rcc_build uic_build phonon
 DOCSDIR=	${PREFIX}/share/doc/HTML/en/smb4k
 SUB_FILES=	pkg-message

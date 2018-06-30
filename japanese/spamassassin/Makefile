@@ -1,7 +1,7 @@
 # Created by: TAOKA Fumiyoshi
-# $FreeBSD: head/japanese/spamassassin/Makefile 447641 2017-08-09 19:30:58Z zeising $
+# $FreeBSD: head/japanese/spamassassin/Makefile 473439 2018-06-27 13:55:56Z mat $
 
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	japanese mail perl5
 PKGNAMEPREFIX=	ja-
 

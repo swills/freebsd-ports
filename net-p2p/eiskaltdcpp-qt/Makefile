@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	eiskaltdcpp
 PORTREVISION=	7
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libeiskaltdcpp.so:net-p2p/eiskaltdcpp-lib
 
 MASTERDIR=	${.CURDIR}/../eiskaltdcpp-lib
 
-USES=		cmake gettext compiler:c++11-lib desktop-file-utils ssl
-USE_QT4=	gui xml network qmake_build uic_build \
+USES=		cmake gettext compiler:c++11-lib desktop-file-utils qt:4 ssl
+USE_QT=		gui xml network qmake_build uic_build \
 		moc_build rcc_build linguisttools_build
 
 OPTIONS_DEFINE=	ASPELL FREE_SPACE DBUS_NOTIFY QTSCRIPT QML SQLITE
@@ -41,17 +41,17 @@ ASPELL_CMAKE_BOOL=	USE_ASPELL
 
 FREE_SPACE_CMAKE_BOOL=	FREE_SPACE_BAR_C
 
-DBUS_NOTIFY_USE=	QT4=dbus
+DBUS_NOTIFY_USE=	QT=dbus
 DBUS_NOTIFY_CMAKE_BOOL=	DBUS_NOTIFY
 
-QTSCRIPT_USE=		QT4=script
+QTSCRIPT_USE=		QT=script
 QTSCRIPT_RUN_DEPENDS=	${LOCALBASE}/lib/qt4/plugins/script/libqtscript_core.so:devel/qtscriptgenerator
 QTSCRIPT_CMAKE_BOOL=	USE_JS
 
-QML_USE=		QT4=declarative
+QML_USE=		QT=declarative
 QML_CMAKE_BOOL=		USE_QT_QML
 
-SQLITE_USE=		QT4=sql-sqlite3
+SQLITE_USE=		QT=sql-sqlite3
 SQLITE_CMAKE_BOOL=	USE_QT_SQLITE
 
 .include "${MASTERDIR}/Makefile"

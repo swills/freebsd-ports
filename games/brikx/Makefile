@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/brikx/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/games/brikx/Makefile 473058 2018-06-22 18:55:14Z amdmi3 $
 
 PORTNAME=	brikx
 PORTVERSION=	0.4.5
@@ -17,6 +17,8 @@ GNU_CONFIGURE=	yes
 USE_SDL=	sdl mixer image ttf
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+CXXFLAGS+=	-Wno-reserved-user-defined-literal
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDATA=	*

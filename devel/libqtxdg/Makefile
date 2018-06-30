@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/libqtxdg/Makefile 471008 2018-05-27 21:45:33Z swills $
+# $FreeBSD: head/devel/libqtxdg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libqtxdg
 PORTVERSION=	3.2.0
@@ -11,9 +11,9 @@ COMMENT=	Qt implementation of freedesktop.org xdg specs
 
 LICENSE=	LGPL21+
 
-USES=	cmake:outsource compiler:c++11-lib lxqt pkgconfig tar:xz
+USES=		cmake:outsource compiler:c++11-lib lxqt pkgconfig qt:5 tar:xz
 USE_LDCONFIG=	yes
-USE_QT5=	buildtools_build qmake_build core dbus gui svg widgets \
-	xml
+USE_QT=		buildtools_build qmake_build core dbus gui svg widgets \
+		xml
 
 .include <bsd.port.mk>

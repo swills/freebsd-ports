@@ -1,17 +1,18 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/x11-themes/cursor-ardoise-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
+# $FreeBSD: head/x11-themes/cursor-ardoise-theme/Makefile 473514 2018-06-28 21:06:00Z swills $
 
 PORTNAME=	ardoise
 PORTVERSION=	3.5
 PORTREVISION=	1
 CATEGORIES=	x11-themes
-MASTER_SITES=	https://github.com/obnosim/ardoise/releases/download/v${PORTVERSION}/
+MASTER_SITES=	http://ftp.internat.freebsd.org/pub/FreeBSD/distfiles/${DIST_SUBDIR}/ \
+		https://ftp.tw.freebsd.org/distfiles/${DIST_SUBDIR}/
 PKGNAMEPREFIX=	cursor-
 PKGNAMESUFFIX=	-theme
 DISTFILES=	Ardoise_no_shadow_100.tar.gz Ardoise_no_shadow_75.tar.gz \
 		Ardoise_no_shadow_87.tar.gz Ardoise_shadow_100.tar.gz \
 		Ardoise_shadow_75.tar.gz Ardoise_shadow_87.tar.gz
-DIST_SUBDIR=	${PKGBASE}/${PORTVERSION}
+DIST_SUBDIR=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}/${PORTVERSION}
 
 MAINTAINER=	lightside@gmx.com
 COMMENT=	Ardoise X cursor theme

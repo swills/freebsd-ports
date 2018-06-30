@@ -1,5 +1,5 @@
 # Created by: Rusty Nejdl <rnejdl@ringofsaturn.com>
-# $FreeBSD: head/sysutils/filelight-kde4/Makefile 465345 2018-03-23 11:00:37Z adridg $
+# $FreeBSD: head/sysutils/filelight-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	filelight
 PORTVERSION=	${KDE4_VERSION}
@@ -12,8 +12,8 @@ COMMENT=	Map of concentric segmented-rings representing file system
 
 CONFLICTS_INSTALL=      ${PORTNAME}
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USE_QT=		qmake_build moc_build rcc_build uic_build
 
 .include <bsd.port.mk>

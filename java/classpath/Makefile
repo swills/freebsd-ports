@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/java/classpath/Makefile 455370 2017-12-02 13:34:20Z rene $
+# $FreeBSD: head/java/classpath/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	classpath
 PORTVERSION=	0.99
@@ -115,7 +115,8 @@ CONFIGURE_ARGS+=	--enable-qt-peer
 CONFIGURE_ARGS+=	--enable-default-toolkit=gnu.java.awt.peer.qt.QtToolkit
 .endif
 CONFIGURE_ENV+=		MOC="${LOCALBASE}/bin/moc-qt4"
-USE_QT4=		moc_build corelib gui
+USES+=			qt:4
+USE_QT=			moc_build corelib gui
 PLIST_SUB+=		QT4=""
 .else
 PLIST_SUB+=		QT4="@comment "

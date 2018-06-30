@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/kstars-kde4/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/astro/kstars-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kstars
 PORTVERSION=	${KDE4_VERSION}
@@ -13,9 +13,9 @@ LIB_DEPENDS=	libcfitsio.so:astro/cfitsio \
 BUILD_DEPENDS=	xplanet:astro/xplanet
 RUN_DEPENDS=	xplanet:astro/xplanet
 
-USES=		cmake:outsource compiler:c++11-lib eigen:3 kde:4 tar:xz
+USES=		cmake:outsource compiler:c++11-lib eigen:3 kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	opengl qmake_build moc_build rcc_build uic_build
+USE_QT=		opengl qmake_build moc_build rcc_build uic_build
 
 OPTIONS_DEFINE=	PYKDE
 

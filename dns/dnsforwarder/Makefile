@@ -1,11 +1,11 @@
-# Created by: Jov <amutu@amutu.com`>
-# $FreeBSD: head/dns/dnsforwarder/Makefile 441830 2017-05-27 08:57:39Z bapt $
+# Created by: Jov <amutu@amutu.com>
+# $FreeBSD: head/dns/dnsforwarder/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	dnsforwarder
 PORTVERSION=	20170319
 CATEGORIES=	dns
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dnsforwarder is A simple DNS forwarder
 
 LICENSE=	GPLv3

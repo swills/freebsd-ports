@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/cppcms/Makefile 470378 2018-05-19 11:06:25Z sunpoet $
+# $FreeBSD: head/www/cppcms/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	cppcms
 PORTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	SF
 

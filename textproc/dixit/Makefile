@@ -1,5 +1,5 @@
 # Created by: Ion-Mihai "IOnut" Tetcu <itetcu@people.tecnik93.com>
-# $FreeBSD: head/textproc/dixit/Makefile 415452 2016-05-18 14:11:33Z amdmi3 $
+# $FreeBSD: head/textproc/dixit/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dixit
 PORTVERSION=	11.11
@@ -19,8 +19,8 @@ COMMENT=	Romanian dictionaries databases and query application
 
 LICENSE=	GPLv3+
 
-USES=		qmake
-USE_QT4=	corelib gui network moc_build rcc_build
+USES=		qmake qt:4
+USE_QT=		corelib gui network moc_build rcc_build
 LDFLAGS+=	-lz
 
 PLIST_SUB=	_DB=${_DB} DB_DIR=${DB_DIR} _DB_F=${_DB_F} \

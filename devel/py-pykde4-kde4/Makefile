@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 465102 2018-03-20 18:03:48Z tcberner $
+# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pykde4
 PORTVERSION=	${KDE4_VERSION}
@@ -11,14 +11,14 @@ COMMENT=	Python bindings for KDE
 
 LIB_DEPENDS=	libqwt.so:x11-toolkits/qwt5
 
-USES=		cmake:outsource kde:4 python:2.7 pyqt:4 tar:xz
+USES=		cmake:outsource kde:4 python:2.7 pyqt:4 qt:4 tar:xz
 USE_KDE=	kdelibs nepomuk-core okular pimlibs \
 		akonadi automoc4 soprano
 USE_PYQT=	declarative designer gui network opengl phonon script sip \
 		sql svg webkit xml \
 		dbussupport_run
 USE_PYTHON=	flavors
-USE_QT4=	corelib dbus designer_build gui network xml \
+USE_QT=		corelib dbus designer_build gui network xml \
 		qmake_build moc_build uic_build rcc_build
 USE_CXXSTD=	gnu++98
 

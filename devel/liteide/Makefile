@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/liteide/Makefile 468561 2018-04-28 18:51:28Z yuri $
+# $FreeBSD: head/devel/liteide/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	liteide
 DISTVERSIONPREFIX=	x
@@ -31,8 +31,10 @@ OPTIONS_SUB=		yes
 
 DEBUG_CONFIGURE_ENABLE=	debug
 
-QT4_USE=	QT4=corelib,gui,network,webkit,xml,moc_build,rcc_build,uic_build
-QT5_USE=	QT5=core,gui,network,printsupport,widgets,xml,buildtools_build
+QT4_USES=	qt:4
+QT4_USE=	QT=corelib,gui,network,webkit,xml,moc_build,rcc_build,uic_build
+QT5_USES=	qt:5
+QT5_USE=	QT=core,gui,network,printsupport,widgets,xml,buildtools_build
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/applications

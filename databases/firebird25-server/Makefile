@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/firebird25-server/Makefile 468287 2018-04-25 18:39:19Z acm $
+# $FreeBSD: head/databases/firebird25-server/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	firebird
 PORTVERSION=	2.5.8
+PORTREVISION=	1
 CATEGORIES?=	databases
 MASTER_SITES=	https://github.com/FirebirdSQL/${PORTNAME}/releases/download/R2_5_8/
 PKGNAMESUFFIX?=	${PORTVERSION:R:S/.//}-server

@@ -1,5 +1,5 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/audio/kstreamripper/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/audio/kstreamripper/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kstreamripper
 PORTVERSION=	0.7.100
@@ -12,9 +12,9 @@ COMMENT=	Program for recording streams for KDE4
 
 RUN_DEPENDS=	${LOCALBASE}/bin/streamripper:audio/streamripper
 
-USES=		cmake gettext-tools kde:4 tar:bzip2
+USES=		cmake gettext-tools kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USE_QT=		qmake_build moc_build rcc_build uic_build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

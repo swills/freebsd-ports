@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/smokekde-kde4/Makefile 465102 2018-03-20 18:03:48Z tcberner $
+# $FreeBSD: head/devel/smokekde-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smokekde
 PORTVERSION=	${KDE4_VERSION}
@@ -8,10 +8,10 @@ CATEGORIES=	devel kde kde-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	SMOKE bindings for KDE
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kate kdelibs okular pimlibs \
 		smokegen smokeqt akonadi automoc4 soprano
-USE_QT4=	corelib dbus designer_build gui network opengl sql svg xml \
+USE_QT=		corelib dbus designer_build gui network opengl sql svg xml \
 		qmake_build moc_build uic_build rcc_build
 USE_LDCONFIG=	yes
 USE_CXXSTD=	gnu++98

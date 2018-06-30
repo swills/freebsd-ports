@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/freecad/Makefile 467912 2018-04-22 06:24:25Z wen $
+# $FreeBSD: head/cad/freecad/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17.13509
@@ -31,10 +31,10 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 RUN_DEPENDS=	pivy>0:graphics/py-pivy@${PY_FLAVOR}
 
 USES=		dos2unix compiler:c++11-lib cmake:outsource eigen:3 fortran jpeg \
-		python:2.7 localbase
+		python:2.7 localbase qt:4
 USE_XORG=	ice sm x11 xext xt
 USE_GL=		gl glu
-USE_QT4=	qmake_build corelib gui moc_build network opengl rcc_build \
+USE_QT=		qmake_build corelib gui moc_build network opengl rcc_build \
 		uic_build svg xml webkit
 USE_LDCONFIG=	yes
 DOS2UNIX_GLOB=	*.txt *.h *.cpp *.py *.qss *.csv *.pov *.stp *.ui *.wrl *.WRL

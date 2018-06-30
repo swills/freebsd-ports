@@ -1,5 +1,5 @@
 # Created by: Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
-# $FreeBSD: head/science/avogadro/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/science/avogadro/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	avogadro
 PORTVERSION=	1.1.1
@@ -20,9 +20,9 @@ LIB_DEPENDS=	libopenbabel.so:science/openbabel
 
 # We need to add a RUN_DEPENDS on eigen2, as the cmake file shiped with
 # avogadro to use it, contains 'find_package(Eigen2 REQUIRED)'.
-USES=		cmake desktop-file-utils eigen:2,build,run pkgconfig tar:bzip2
+USES=		cmake desktop-file-utils eigen:2,build,run pkgconfig qt:4 tar:bzip2
 USE_GL=		glu gl
-USE_QT4=	gui network opengl \
+USE_QT=		gui network opengl \
 		linguisttools_build moc_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DENABLE_GLSL=OFF \
 		-DQT_MKSPECS_RELATIVE=share/qt4/mkspecs

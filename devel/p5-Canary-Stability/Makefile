@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/p5-Canary-Stability/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Canary-Stability/Makefile 473172 2018-06-24 01:06:40Z adamw $
 
 PORTNAME=	Canary-Stability
 PORTVERSION=	2012
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MLEHMANN
@@ -19,9 +20,8 @@ USE_PERL5=	configure
 OPTIONS_DEFINE=	ACTIVATE
 ACTIVATE_DESC=	Enable Canary::Stability functionality
 
-# Just skip everything in this module unless activated
+# Install an empty stub
 post-patch-ACTIVATE-off:
-	@${REINPLACE_CMD} -e '/^sub import {/s/$$/ return 1; /' \
-		${WRKSRC}/Stability.pm
+	${CP} ${FILESDIR}/Stability.pm ${WRKSRC}
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/container-diff/Makefile 467083 2018-04-11 19:38:11Z sunpoet $
+# $FreeBSD: head/sysutils/container-diff/Makefile 473519 2018-06-28 21:20:12Z sunpoet $
 
 PORTNAME=	container-diff
-PORTVERSION=	0.9.0
+PORTVERSION=	0.11.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -17,7 +17,7 @@ USES=		go
 
 PLIST_FILES=	bin/container-diff
 
-GH_ACCOUNT=	GoogleCloudPlatform
+GH_ACCOUNT=	GoogleContainerTools
 USE_GITHUB=	yes
 
 do-install:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/klayout/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/cad/klayout/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	klayout
 PORTVERSION=	0.24.9
@@ -11,9 +11,9 @@ COMMENT=	Qt-based GDS2 Viewer
 
 LICENSE=	GPLv2
 
-USES=		compiler:c++0x gmake python
+USES=		compiler:c++0x gmake python qt:4
 USE_RUBY=	yes
-USE_QT4=	corelib designer gui network moc_build sql uic_build \
+USE_QT=		corelib designer gui network moc_build sql uic_build \
 		rcc_build qt3support xml
 USE_LDCONFIG=	yes
 PLIST_FILES=	bin/klayout \

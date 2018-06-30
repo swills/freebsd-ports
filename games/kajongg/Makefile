@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kajongg/Makefile 466814 2018-04-08 18:09:23Z tcberner $
+# $FreeBSD: head/games/kajongg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 BROKEN=		Requires PyQt5 for python3 which is broken at the moment.
 
@@ -11,11 +11,11 @@ COMMENT=	${${PORTNAME}_DESC}
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
-USES=		cmake:outsource pkgconfig python:3 pyqt:5 kde:5 tar:xz \
+USES=		cmake:outsource pkgconfig python:3 pyqt:5 kde:5 qt:5 tar:xz \
 		sqlite
 USE_KDE=	config doctools ecm
 USE_PYQT=	core gui svg widgets
-USE_QT5=	core gui svg widgets \
+USE_QT=		core gui svg widgets \
 		buildtools_build qmake_build
 
 .include <${.CURDIR}/../kdegames/Makefile.common>

@@ -1,5 +1,5 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/mail/trojita/Makefile 464268 2018-03-12 18:21:09Z tcberner $
+# $FreeBSD: head/mail/trojita/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	trojita
 PORTVERSION=	0.7
@@ -26,8 +26,8 @@ CMAKE_ARGS+=	-DWITH_CLEARTEXT_PLUGIN:STRING=ON -DWITH_DBUS:STRING=ON \
 		-DWITH_SHARED_PLUGINS:STRING=ON -DWITH_TESTS:STRING=OFF \
 		-DWITH_ZLIB:STRING=ON \
 		-DWITH_QT5:STRING=ON
-USES=		cmake compiler:c++11-lib cpe desktop-file-utils tar:xz
-USE_QT5=	buildtools_build linguisttools_build qmake_build \
+USES=		cmake compiler:c++11-lib cpe desktop-file-utils qt:5 tar:xz
+USE_QT=		buildtools_build linguisttools_build qmake_build \
 		core dbus gui network sql sql-sqlite3 svg webkit widgets
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 465061 2018-03-20 02:54:23Z truckman $
+# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cairo-dock-plugins
 PORTVERSION=	3.4.1
@@ -87,8 +87,8 @@ IMPULSE_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 IMPULSE_CMAKE_BOOL=	enable-impulse
 
 #KDE_INTEGRATION_LIB_DEPENDS=
-KDE_INTEGRATION_USE_QT4=	corelib
-KDE_INTEGRATION_USES=		kde:4
+KDE_INTEGRATION_USE_QT=		corelib
+KDE_INTEGRATION_USES=		kde:4 qt:4
 KDE_INTEGRATION_USE=		KDE=kdelibs
 KDE_INTEGRATION_CMAKE_BOOL=	enable-kde-integration
 

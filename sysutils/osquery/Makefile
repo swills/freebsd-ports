@@ -1,8 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 471247 2018-05-31 22:49:40Z lx $
+# $FreeBSD: head/sysutils/osquery/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	osquery
 PORTVERSION=	3.2.6
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	zi@FreeBSD.org
@@ -10,6 +11,8 @@ COMMENT=	SQL powered OS instrumentation, monitoring, and analytics
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: the clang compiler does not support '-march=x86-64'
 
 BUILD_DEPENDS=	thrift>=0.11.0:devel/thrift \
 		bash>0:shells/bash \

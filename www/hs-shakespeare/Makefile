@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/hs-shakespeare/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/www/hs-shakespeare/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	shakespeare
 PORTVERSION=	2.0.15
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

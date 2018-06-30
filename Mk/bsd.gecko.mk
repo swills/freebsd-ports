@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 472727 2018-06-19 00:37:43Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 473091 2018-06-22 22:21:29Z rene $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -89,9 +89,7 @@ USE_XORG=	x11 xcomposite xdamage xext xfixes xrender xt
 HAS_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes
 
-.if ${MOZILLA} != "libxul"
 BUNDLE_LIBS=	yes
-.endif
 
 .if ${MOZILLA_VER:R:R} >= 49
 USES+=		compiler:c++14-lang

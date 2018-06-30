@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/dsbbatmon/Makefile 466173 2018-04-01 17:32:15Z tobik $
+# $FreeBSD: head/sysutils/dsbbatmon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dsbbatmon
 DISTVERSION=	1.0.2
@@ -11,9 +11,9 @@ COMMENT=	Qt battery monitor
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		tar:tgz qmake
+USES=		qt:5 tar:tgz qmake
 
 USE_GL=		gl
-USE_QT5=	buildtools_build core gui linguisttools_build widgets
+USE_QT=		buildtools_build core gui linguisttools_build widgets
 
 .include <bsd.port.mk>

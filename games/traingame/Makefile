@@ -1,12 +1,12 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/traingame/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/traingame/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	traingame
 PORTVERSION=	0.3
 PORTREVISION=	14
 CATEGORIES=	games
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Game about Trains
 
 LICENSE=	GPLv3+

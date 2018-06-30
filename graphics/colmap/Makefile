@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/colmap/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/colmap/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	colmap
 DISTVERSION=	3.4
@@ -24,10 +24,10 @@ LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libfreeimage.so:graphics/freeimage \
 		libceres.so:math/ceres-solver
 
-USES=		cmake compiler:${OPENMP}c++11-lib eigen:3 fortran localbase sqlite
+USES=		cmake compiler:${OPENMP}c++11-lib eigen:3 fortran localbase qt:5 sqlite
 USE_GITHUB=	yes
 USE_GL=		gl glew
-USE_QT5=	qmake_build buildtools_build core gui opengl_build widgets
+USE_QT=		qmake_build buildtools_build core gui opengl_build widgets
 EXCLUDE=	SQLite
 EXTRACT_AFTER_ARGS=	${EXCLUDE:S,^,--exclude src/ext/,}
 CMAKE_OFF=	BOOST_STATIC CUDA_ENABLED

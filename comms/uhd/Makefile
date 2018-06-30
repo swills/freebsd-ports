@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/uhd/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/comms/uhd/Makefile 473294 2018-06-25 06:27:01Z linimon $
 
 PORTNAME=	uhd
 PORTVERSION=	3.10.3.0
@@ -25,7 +25,10 @@ GH_TAGNAME=     ef1576780bc927b8611640091b15f3d051cb97ad
 
 CONFLICTS=	usrp-[0-9]*
 
-BROKEN_powerpc64=	fails to link: undefined reference to boost function
+BROKEN_FreeBSD_12_aarch64=	fails to configure: Could not find standard set_new_handler function
+BROKEN_FreeBSD_12_armv6=	fails to configure: Could not find standard set_new_handler function
+BROKEN_FreeBSD_12_armv7=	fails to configure: Could not find standard set_new_handler function
+BROKEN_powerpc64=		fails to link: undefined reference to boost function
 
 USES=		compiler:c++11-lib cmake:outsource ncurses pkgconfig \
 		dos2unix python:2.7 shebangfix

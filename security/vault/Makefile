@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/vault/Makefile 472015 2018-06-08 16:47:24Z swills $
+# $FreeBSD: head/security/vault/Makefile 473111 2018-06-23 01:27:32Z swills $
 
 PORTNAME=	vault
-PORTVERSION=	0.10.2
+PORTVERSION=	0.10.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

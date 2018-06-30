@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-happstack/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/www/hs-happstack/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	happstack
 PORTVERSION=	7.0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

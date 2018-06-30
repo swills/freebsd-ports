@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/sudoku-sensei/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/sudoku-sensei/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sudoku-sensei
 PORTVERSION=	02.00
@@ -17,8 +17,8 @@ LICENSE=	GPLv2+
 
 WRKSRC=		${WRKDIR}/SudokuSenseiSources
 
-USES=		qmake
-USE_QT4=	moc_build uic_build corelib gui iconengines_run imageformats_run
+USES=		qmake qt:4
+USE_QT=		moc_build uic_build corelib gui iconengines_run imageformats_run
 
 SUB_FILES=	${PORTNAME} pkg-deinstall pkg-message
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/kompare-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/textproc/kompare-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kompare
 PORTVERSION=	${KDE4_VERSION}
@@ -10,8 +10,8 @@ COMMENT=	Diff/Patch Frontend
 
 LIB_DEPENDS=	libkomparediff2.so:textproc/libkomparediff2-kde4
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 
 .include <bsd.port.mk>

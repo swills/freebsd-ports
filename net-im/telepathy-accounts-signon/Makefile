@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/telepathy-accounts-signon/Makefile 468640 2018-04-29 18:17:36Z tcberner $
+# $FreeBSD: head/net-im/telepathy-accounts-signon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	telepathy-accounts-signon
 PORTVERSION=	1.0
@@ -15,8 +15,8 @@ LIB_DEPENDS=	libaccounts-glib.so:net-im/libaccounts-glib \
 		libmission-control-plugins.so:net-im/telepathy-mission-control \
 		libsignon-glib.so:net-im/libsignon-glib
 
-USES=		gettext pkgconfig qmake tar:bz2
-USE_QT5=	buildtools_build core qmake_build
+USES=		gettext pkgconfig qmake qt:5 tar:bz2
+USE_QT=		buildtools_build core qmake_build
 
 USE_LDCONFIG=	YES
 

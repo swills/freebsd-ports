@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/plasma5-user-manager/Makefile 470720 2018-05-23 21:13:13Z jhale $
+# $FreeBSD: head/sysutils/plasma5-user-manager/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	user-manager
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -12,13 +12,13 @@ LIB_DEPENDS=	libpwquality.so:security/libpwquality
 RUN_DEPENDS=	accountsservice>=0:sysutils/accountsservice
 
 USES=		cmake:outsource compiler:c++11-lib cpe gettext \
-		kde:5 pkgconfig tar:xz
+		kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash ecm emoticons guiaddons i18n iconthemes \
 		init itemmodels itemviews jobwidgets kcmutils kdelibs4support \
 		kio notifications parts service solid sonnet textwidgets \
 		unitconversion widgetsaddons windowsystem xmlgui
-USE_QT5=	concurrent core dbus gui network printsupport widgets xml \
+USE_QT=		concurrent core dbus gui network printsupport widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	${QT_PLUGINDIR}
 

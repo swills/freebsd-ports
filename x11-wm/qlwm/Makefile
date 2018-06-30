@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/x11-wm/qlwm/Makefile 408895 2016-02-14 21:46:16Z amdmi3 $
+# $FreeBSD: head/x11-wm/qlwm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qlwm
 PORTVERSION=	4.3
@@ -15,7 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 MAKE_JOBS_UNSAFE= yes
 
-USE_QT4=	corelib gui moc_build qmake_build
+USES=	qt:4
+USE_QT=		corelib gui moc_build qmake_build
 
 PORTDOCS=	CHANGES README
 

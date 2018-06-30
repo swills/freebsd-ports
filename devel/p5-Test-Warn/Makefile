@@ -1,8 +1,8 @@
 # Created by: Brian Minard <bminard@flatfoot.ca>
-# $FreeBSD: head/devel/p5-Test-Warn/Makefile 472652 2018-06-17 23:19:22Z wen $
+# $FreeBSD: head/devel/p5-Test-Warn/Makefile 473135 2018-06-23 14:54:44Z wen $
 
 PORTNAME=	Test-Warn
-PORTVERSION=	0.35
+PORTVERSION=	0.36
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

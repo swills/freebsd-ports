@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <stas@FreeBSD.org>
-# $FreeBSD: head/net/enet/Makefile 386817 2015-05-19 21:59:28Z nemysis $
+# $FreeBSD: head/net/enet/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	enet
 PORTVERSION=	1.3.13
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	net
 MASTER_SITES=	http://enet.bespin.org/download/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple and robust communication library based on UDP
 
 LICENSE=	MIT

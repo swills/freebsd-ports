@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/opengrok/Makefile 444533 2017-06-28 01:43:43Z ultima $
+# $FreeBSD: head/devel/opengrok/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	opengrok
 PORTVERSION=	1.0
 CATEGORIES=	devel java
 MASTER_SITES=	https://github.com/OpenGrok/OpenGrok/releases/download/${PORTVERSION}/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast and powerful code search and cross-reference engine
 
 LICENSE=	CDDL APACHE20

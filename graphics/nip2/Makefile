@@ -1,9 +1,9 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/graphics/nip2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/nip2/Makefile 473116 2018-06-23 08:27:13Z tcberner $
 
 PORTNAME=	nip2
 PORTVERSION=	8.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/releases/download/v${PORTVERSION}/
 

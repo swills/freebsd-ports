@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-qt5-xmlpatterns/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/textproc/py-qt5-xmlpatterns/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xmlpatterns
 PORTREVISION=	5
@@ -10,10 +10,10 @@ COMMENT=	Python bindings for the Qt5 toolkit, QtXmlPatterns module
 CONFIGURE_ARGS=	--enable QtXmlPatterns
 PYQT_DIST=	yes
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_PYQT=	sip_build core_run network_run
 USE_PYTHON=	flavors
-USE_QT5=	core network xmlpatterns qmake_build
+USE_QT=		core network xmlpatterns qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

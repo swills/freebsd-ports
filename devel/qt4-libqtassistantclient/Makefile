@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-libqtassistantclient/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-libqtassistantclient/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libQtAssistantClient
 PORTVERSION=	4.6.3
@@ -13,8 +13,8 @@ DIST_SUBDIR=	KDE
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt documentation browser integration module
 
-USE_QT4=	moc_build rcc_build corelib gui network
-USES=		qmake
+USE_QT=		moc_build rcc_build corelib gui network
+USES=		qmake qt:4
 QMAKE_ARGS=	CONFIG+="create_prl link_prl" VERSION="${PORTVERSION}"
 
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

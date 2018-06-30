@@ -1,5 +1,5 @@
 # Created by: Alexander Pyhalov <alp@sfedu.ru>
-# $FreeBSD: head/databases/pg_reorg/Makefile 383980 2015-04-14 06:56:15Z danfe $
+# $FreeBSD: head/databases/pg_reorg/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pg_reorg
 PORTVERSION=	1.1.11
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 MAKE_ENV=	USE_PGXS=0
 USES=		gmake pgsql uidfix
+LLD_UNSAFE=	yes
 WANT_PGSQL_VER=	91+
 WANT_PGSQL=	server
 INSTALL_TARGET=	install-strip

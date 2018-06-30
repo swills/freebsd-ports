@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/phototonic/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/phototonic/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	phototonic
 DISTVERSIONPREFIX=	v
@@ -15,11 +15,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2
 
-USES=		desktop-file-utils gettext qmake
+USES=		desktop-file-utils gettext qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	oferkv
 USE_GL=		gl
-USE_QT5=	core gui imageformats svg widgets buildtools_build
+USE_QT=		core gui imageformats svg widgets buildtools_build
 
 post-patch:
 	${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \

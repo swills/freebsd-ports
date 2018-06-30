@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/audio/cueplayer/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/audio/cueplayer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cueplayer
 PORTVERSION=	0.28
@@ -14,8 +14,8 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	libnotify.so:devel/libnotify
 
-USES=		pkgconfig qmake
-USE_QT4=	gui xml uic_build moc_build rcc_build network
+USES=		pkgconfig qmake qt:4
+USE_QT=		gui xml uic_build moc_build rcc_build network
 USE_GSTREAMER=	flac good dvd lame ugly ffmpeg taglib ogg vorbis soup libmms wavpack
 USE_XORG=	x11
 

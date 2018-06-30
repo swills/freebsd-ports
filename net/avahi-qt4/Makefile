@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org
-# $FreeBSD: head/net/avahi-qt4/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/avahi-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTREVISION=	2
 CATEGORIES=	net
@@ -17,7 +17,8 @@ DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
 
 AVAHI_SLAVE=	qt4
-USE_QT4=	corelib moc_build
+USES=	qt:4
+USE_QT=		corelib moc_build
 AVAHI_PKGCONFIG=	avahi-qt4.pc
 
 .include "${MASTERDIR}/Makefile"

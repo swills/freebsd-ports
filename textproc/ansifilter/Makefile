@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/textproc/ansifilter/Makefile 468065 2018-04-22 23:06:27Z bofh $
+# $FreeBSD: head/textproc/ansifilter/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ansifilter
 PORTVERSION=	2.10
@@ -20,8 +20,8 @@ PLIST_FILES=	bin/${PORTNAME} man/man1/${PORTNAME}.1.gz
 
 OPTIONS_DEFINE=		DOCS QT4
 
-QT4_USES=		qmake:norecursive
-QT4_USE=		QT4=gui,moc_build
+QT4_USES=		qmake:norecursive qt:4
+QT4_USE=		QT=gui,moc_build
 QT4_ALL_TARGET=		all all-gui
 QT4_PLIST_FILES=	bin/${PORTNAME}-gui
 QT4_DESKTOP_ENTRIES=	"ANSIFilter" "" "" "${PORTNAME}-gui" \

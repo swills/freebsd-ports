@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdesdk-kioslaves-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/devel/kdesdk-kioslaves-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdesdk-kioslaves
 PORTVERSION=	${KDE4_VERSION}
@@ -11,9 +11,9 @@ COMMENT=	SDK related KIO slaves
 
 LIB_DEPENDS=	libsvn_client-1.so:devel/subversion
 
-USES=		cmake:outsource kde:4 perl5 shebangfix tar:xz
+USES=		cmake:outsource kde:4 perl5 qt:4 shebangfix tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 
 SHEBANG_FILES=	perldoc/pod2html.pl
 

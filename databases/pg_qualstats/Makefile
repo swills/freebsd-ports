@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pg_qualstats/Makefile 424205 2016-10-18 18:58:16Z girgen $
+# $FreeBSD: head/databases/pg_qualstats/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pg_qualstats
 PORTVERSION=	1.0.2
@@ -14,6 +14,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	dalibo
 
 USES=		gmake pgsql:9.4+
+LLD_UNSAFE=	yes
 WANT_PGSQL=	server
 
 pre-patch:

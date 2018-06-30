@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/aqsis/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/aqsis/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	aqsis
 PORTVERSION=	1.8.2
@@ -27,12 +27,12 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 USE_LDCONFIG=	yes
 USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
-		shared-mime-info shebangfix
+		qt:4 shared-mime-info shebangfix
 USE_CXXSTD=	gnu++11
 SHEBANG_FILES=	examples/*/*/*.sh \
 		tools/neqsus/houdini/post.sh \
 		distribution/linux/*.sh
-USE_QT4=	opengl qmake_build moc_build rcc_build uic_build
+USE_QT=		opengl qmake_build moc_build rcc_build uic_build
 PLIST_SUB+=	LIBVERS=${PORTVERSION:R}
 
 INSTALLS_ICONS=	yes

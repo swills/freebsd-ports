@@ -1,9 +1,10 @@
 # Created by: gahr
-# $FreeBSD: head/devel/qt4-qtsolutions-soap/Makefile 374492 2014-12-10 22:29:14Z gahr $
+# $FreeBSD: head/devel/qt4-qtsolutions-soap/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 MASTERDIR=	${.CURDIR}/../qt4-qtsolutions-singleapplication
 
-USE_QT4=	qmake_build moc_build rcc_build uic_build network xml gui
+USES=	qt:4
+USE_QT=		qmake_build moc_build rcc_build uic_build network xml gui
 
 .include	"${MASTERDIR}/Makefile"
 

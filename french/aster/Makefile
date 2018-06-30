@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/aster/Makefile 469182 2018-05-06 08:16:17Z thierry $
+# $FreeBSD: head/french/aster/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	aster
 DISTVERSION=	${ASTER_DISTVERSION}
@@ -51,9 +51,9 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}gnuplot>0:math/py-gnuplot@${PY_FLAVOR} \
 		${SHELL_INSTALL_ASTER}:shells/${SHIADEP}	\
 		astk-serveur>0:cad/astk-serveur
 
-USES=		bison fortran gettext python:2.7 tk
+USES=		bison fortran gettext python:2.7 qt:4 tk
 USE_BINUTILS=	yes
-USE_QT4=	linguisttools_build
+USE_QT=		linguisttools_build
 
 .if defined(WITH_ATLAS)
 USES+=		blaslapack:atlas

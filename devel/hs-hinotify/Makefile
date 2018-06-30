@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-hinotify/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/devel/hs-hinotify/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	hinotify
 PORTVERSION=	0.3.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

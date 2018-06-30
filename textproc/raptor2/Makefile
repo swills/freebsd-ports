@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/raptor2/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/textproc/raptor2/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	raptor2
 PORTVERSION=	2.0.15
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.librdf.org/source/ \
 		SF/librdf/${PORTNAME}/${PORTVERSION}

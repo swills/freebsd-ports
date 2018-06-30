@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libktorrent
 DISTVERSION=	1.3.1
@@ -15,9 +15,9 @@ LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgmp.so:math/gmp \
 		libqca.so:devel/qca
 
-USES=		cmake:outsource gettext kde:4 tar:bzip2
+USES=		cmake:outsource gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4
-USE_QT4=	qtestlib_build qmake_build moc_build rcc_build uic_build
+USE_QT=		qtestlib_build qmake_build moc_build rcc_build uic_build
 USE_LDCONFIG=	yes
 
 SHLIB_VER=	5.0.1

@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libquvi09/Makefile 462906 2018-02-25 05:32:04Z sunpoet $
+# $FreeBSD: head/multimedia/libquvi09/Makefile 473062 2018-06-22 19:59:41Z tcberner $
 
 PORTNAME=	libquvi
 PORTVERSION=	0.9.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia devel
 MASTER_SITES=	SF/quvi/${PORTVERSION:R}/${PORTNAME}/ \
 		LOCAL/sunpoet

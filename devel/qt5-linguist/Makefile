@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-linguist/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/devel/qt5-linguist/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	linguist
 DISTVERSION=	${QT5_VERSION}
@@ -8,11 +8,10 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 5 translation tool
 
-USE_QT5=	core gui printsupport widgets xml \
+USE_QT=		core gui printsupport widgets xml \
 		assistant_run linguisttools_run \
 		buildtools_build designer_build uitools_build
-QT_DIST=	tools
-USES=		qmake
+USES=		qmake qt-dist:5,tools
 
 DESKTOP_ENTRIES="Qt 5 Linguist" "" \
 		"${PREFIX}/share/pixmaps/linguist-qt5.png" \

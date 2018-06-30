@@ -1,5 +1,5 @@
 # Created by: Romain Tartiere <romain@FreeBSD.org>
-# $FreeBSD: head/devel/google-gdata/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/devel/google-gdata/Makefile 473599 2018-06-30 07:13:40Z dbn $
 
 PORTNAME=	google-gdata
 PORTVERSION=	2.2.0.0
@@ -19,6 +19,7 @@ GH_ACCOUNT=	google
 GH_TAGNAME=	edcd096379
 
 USES=		dos2unix gmake mono:nuget pathfix
+NUGET_LAYOUT=	flat
 PATHFIX_MAKEFILEIN=	Makefile
 WRKSRC_SUBDIR=	clients/cs
 DOS2UNIX_FILES=	${WRKSRC}/Makefile ${WRKSRC}/misc/gdata-sharp-core.pc.in

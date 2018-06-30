@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-im/vacuum-im/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/net-im/vacuum-im/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	vacuum
 PORTVERSION=	1.2.5
@@ -16,10 +16,10 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Vacuum-IM
 GH_PROJECT=	${PORTNAME}${PKGNAMESUFFIX}
 
-USES=		cmake
+USES=		cmake qt:4
 USE_XORG=	xscrnsaver
 USE_LDCONFIG=	yes
-USE_QT4=	gui xml qmake_build uic_build moc_build rcc_build \
+USE_QT=		gui xml qmake_build uic_build moc_build rcc_build \
 		network linguist_build webkit
 
 PORTDOCS=	AUTHORS CHANGELOG COPYING README TRANSLATORS

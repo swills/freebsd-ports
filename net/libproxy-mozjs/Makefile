@@ -1,29 +1,18 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/libproxy-mozjs/Makefile 412348 2016-04-01 14:16:16Z mat $
-#    $MCom: ports/net/libproxy-mozjs/Makefile,v 1.5 2011/01/12 13:10:53 kwm Exp $
+# $FreeBSD: head/net/libproxy-mozjs/Makefile 473062 2018-06-22 19:59:41Z tcberner $
 
 PORTREVISION=	0
 CATEGORIES=	net www
-PKGNAMESUFFIX=	-mozjs
+PKGNAMESUFFIX=	-${LIBPROXY_SLAVE}
 
-MAINTAINER=	gnome@FreeBSD.org
+
 COMMENT=	Mozilla JavaScript plug-in for libproxy
 
-LIB_DEPENDS=	libmozjs185.so:lang/spidermonkey185 \
-		libproxy.so:net/libproxy
-
-MASTERDIR=	${.CURDIR}/../libproxy
-DESCR=		${.CURDIR}/pkg-descr
-PLIST=		${.CURDIR}/pkg-plist
-
-ALL_TARGET=	pacrunner_mozjs
-USES=		pkgconfig
+USES=		compiler:c++11-lib
+USE_CXXSTD=	gnu++11
+LIB_DEPENDS=	libmozjs-38.so:lang/spidermonkey38
 
 LIBPROXY_SLAVE=	mozjs
-
-do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/lib/${PORTNAME}/${PORTVERSION}/modules/
-	${INSTALL_LIB} ${BUILD_WRKSRC}/libproxy/pacrunner_mozjs.so \
-		${STAGEDIR}${PREFIX}/lib/libproxy/${PORTVERSION}/modules/
+MASTERDIR=	${.CURDIR}/../libproxy
 
 .include "${MASTERDIR}/Makefile"

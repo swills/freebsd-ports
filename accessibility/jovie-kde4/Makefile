@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/jovie-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/accessibility/jovie-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	jovie
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ COMMENT=	KDE text-to-speech system
 
 LIB_DEPENDS=	libspeechd.so:accessibility/speech-dispatcher
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	xml qmake_build moc_build uic_build rcc_build
+USE_QT=		xml qmake_build moc_build uic_build rcc_build
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

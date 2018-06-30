@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/qt4-l10n/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/misc/qt4-l10n/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	l10n
 DISTVERSION=	${QT4_VERSION}
@@ -9,8 +9,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt localized messages
 
-USE_QT4=	linguisttools_build
-QT_DIST=	yes
+USES=		qmake:no_configure qt-dist:4
+USE_QT=		linguisttools_build
 
 NO_ARCH=	yes
 

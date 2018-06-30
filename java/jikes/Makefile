@@ -1,5 +1,5 @@
 # Created by: Matthew Dillon <dillon@backplane.com>
-# $FreeBSD: head/java/jikes/Makefile 398996 2015-10-10 14:03:00Z tijl $
+# $FreeBSD: head/java/jikes/Makefile 473337 2018-06-25 20:39:31Z linimon $
 
 PORTNAME=	jikes
 PORTVERSION=	1.22
@@ -9,6 +9,8 @@ MASTER_SITES=	SF/${PORTNAME}/Jikes/${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Java source to byte-code compiler made available by IBM
+
+BROKEN_FreeBSD_12=	fails to configure: Could not find standard set_new_handler function
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 GNU_CONFIGURE=	yes

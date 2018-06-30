@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/science/py-tensorflow/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-tensorflow/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	tensorflow
 PORTVERSION=	1.2.1
@@ -8,7 +8,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Computation using data flow graphs for scalable machine learning
 
 LICENSE=	APACHE20

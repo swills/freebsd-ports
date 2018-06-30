@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/musescore/Makefile 461017 2018-02-05 20:11:24Z adridg $
+# $FreeBSD: head/audio/musescore/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	musescore
 PORTVERSION=	2.1
@@ -23,8 +23,8 @@ LIB_DEPENDS=	libmp3lame.so:audio/lame \
 		libfreetype.so:print/freetype2
 
 USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
-		pkgconfig shared-mime-info zip
-USE_QT5=	core gui widgets opengl concurrent designer help network \
+		pkgconfig qt:5 shared-mime-info zip
+USE_QT=		core gui widgets opengl concurrent designer help network \
 		scripttools qml quick svg sql printsupport testlib webkit \
 		xml xmlpatterns \
 		buildtools_build linguisttools_build qmake_build uitools_build

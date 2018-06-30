@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim-kde4/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/textproc/uim-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTREVISION=	6
 PKGNAMESUFFIX=	-kde4
@@ -12,8 +12,8 @@ RUN_DEPENDS=	uim-pref-qt4:textproc/uim-qt4
 
 USE_GCC=	any
 USE_KDE=	kdelibs automoc4
-USE_QT4=	qmake_build moc_build qt3support uic rcc
-USES+=		kde:4
+USE_QT=		qmake_build moc_build qt3support uic rcc
+USES+=		kde:4 qt:4
 
 MASTERDIR=	${.CURDIR}/../../textproc/uim
 PKGDIR=		${.CURDIR}

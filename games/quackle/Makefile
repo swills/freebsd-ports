@@ -1,5 +1,5 @@
 # Created by: shoemaker@bluebottle.com (Jonathan Shoemaker)
-# $FreeBSD: head/games/quackle/Makefile 467554 2018-04-17 03:15:45Z jbeich $
+# $FreeBSD: head/games/quackle/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	quackle
 PORTVERSION=	1.0.3
@@ -14,8 +14,8 @@ LICENSE=	GPLv3
 
 USE_GITHUB=	yes
 
-USES=		compiler:c++11-lib gmake qmake
-USE_QT4=	corelib gui moc_build
+USES=		compiler:c++11-lib gmake qmake qt:4
+USE_QT=		corelib gui moc_build
 
 BUILD_WRKSRC=	${WRKSRC}/quacker
 

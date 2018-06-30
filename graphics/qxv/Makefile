@@ -1,5 +1,5 @@
 # Created by: cy
-# $FreeBSD: head/graphics/qxv/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/graphics/qxv/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qxv
 PORTVERSION=	0.2
@@ -13,8 +13,8 @@ COMMENT=	Qt 4 program that displays images of various formats
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake tar:bzip2
-USE_QT4=	corelib gui moc_build uic_build rcc_build
+USES=		qmake qt:4 tar:bzip2
+USE_QT=		corelib gui moc_build uic_build rcc_build
 MAKE_JOBS_UNSAFE=	yes
 
 PLIST_FILES=	bin/${PORTNAME}

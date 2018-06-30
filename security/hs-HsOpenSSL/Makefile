@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/hs-HsOpenSSL/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-HsOpenSSL/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	HsOpenSSL
 PORTVERSION=	0.11.4.13
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

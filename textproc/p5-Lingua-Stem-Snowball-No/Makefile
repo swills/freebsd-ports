@@ -1,24 +1,24 @@
-# $FreeBSD: head/textproc/p5-Lingua-Stem-Snowball-No/Makefile 470007 2018-05-15 09:04:06Z amdmi3 $
+# $FreeBSD: head/textproc/p5-Lingua-Stem-Snowball-No/Makefile 473226 2018-06-24 20:16:36Z sunpoet $
 
 PORTNAME=	Lingua-Stem-Snowball-No
 PORTVERSION=	1.2
 PORTREVISION=	2
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:ASKSH
 PKGNAMEPREFIX=	p5-
 DISTNAME=	Snowball-Norwegian-${PORTVERSION}
+
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	Stemmer for Norwegian
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-MAINTAINER=	perl@FreeBSD.org
-COMMENT=	Stemmer for Norwegian
-
+NO_ARCH=	yes
 USES=		perl5 shebangfix
 USE_PERL5=	configure
+
 SHEBANG_FILES=	bin/stemmer-no.pl
-NO_ARCH=	yes
 
 .include <bsd.port.mk>

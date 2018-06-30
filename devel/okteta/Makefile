@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/okteta/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/devel/okteta/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	okteta
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,13 +9,13 @@ COMMENT=	KDE hex editor
 
 LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
 
-USES=		cmake:outsource gettext kde:5 shared-mime-info tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 shared-mime-info tar:xz
 USE_KDE=	attica auth bookmarks codecs completion crash \
 		config configwidgets coreaddons dbusaddons doctools \
 		ecm i18n iconthemes itemviews jobwidgets kcmutils kio \
 		newstuff parts service solid sonnet textwidgets \
 		widgetsaddons xmlgui
-USE_QT5=	core dbus designer gui network printsupport script scripttools \
+USE_QT=		core dbus designer gui network printsupport script scripttools \
 		widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

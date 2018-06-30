@@ -1,5 +1,5 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/deskutils/tuxcards/Makefile 428596 2016-12-14 21:48:10Z johans $
+# $FreeBSD: head/deskutils/tuxcards/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tuxcards
 PORTVERSION=	2.2.1
@@ -11,8 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool for managing notes within a hierarchical tree
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-USES=		qmake
-USE_QT4=	gui xml moc_build uic_build rcc_build
+USES=		qmake qt:4
+USE_QT=		gui xml moc_build uic_build rcc_build
 
 PLIST_FILES=	bin/tuxcards
 

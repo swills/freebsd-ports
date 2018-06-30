@@ -1,8 +1,8 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/devel/p5-Algorithm-Networksort/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Algorithm-Networksort/Makefile 473261 2018-06-24 20:20:17Z sunpoet $
 
 PORTNAME=	Algorithm-Networksort
-PORTVERSION=	2.01
+PORTVERSION=	2.02
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

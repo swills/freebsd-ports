@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/ibus-table-chinese/Makefile 472283 2018-06-13 04:57:55Z delphij $
+# $FreeBSD: head/chinese/ibus-table-chinese/Makefile 473298 2018-06-25 06:59:17Z delphij $
 
 PORTNAME=	ibus-table-chinese
 PORTVERSION=	1.8.2

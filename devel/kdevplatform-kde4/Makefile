@@ -1,5 +1,5 @@
 # Created by: Golyashov Sergei <svvord@mail.ru>
-# $FreeBSD: head/devel/kdevplatform-kde4/Makefile 468568 2018-04-28 19:19:58Z tcberner $
+# $FreeBSD: head/devel/kdevplatform-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdevplatform
 PORTVERSION=	${KDEVELOP_VERSION:S/4./1./}
@@ -16,10 +16,10 @@ LIB_DEPENDS=	libsvn_client-1.so:devel/subversion \
 		libboost_thread.so:devel/boost-libs \
 		libqjson.so:devel/qjson@qt4
 
-USES=		cmake:outsource compiler:c++11-lib grantlee:4 kde:4 shebangfix \
+USES=		cmake:outsource compiler:c++11-lib grantlee:4 kde:4 qt:4 shebangfix \
 		tar:xz
 USE_KDE=	kate_run kdelibs automoc4
-USE_QT4=	qmake_build moc_build uic_build rcc_build \
+USE_QT=		qmake_build moc_build uic_build rcc_build \
 		corelib designer_build gui webkit
 USE_LDCONFIG=	yes
 

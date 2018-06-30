@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/twmn/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/sysutils/twmn/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	twmn
 PORTVERSION=	g20171216
@@ -13,11 +13,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		qmake
+USES=		qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	sboli
 GH_TAGNAME=	5b92ac5
-USE_QT5=	core dbus gui network widgets x11extras buildtools_build
+USE_QT=		core dbus gui network widgets x11extras buildtools_build
 LDFLAGS+=	-Wl,--as-needed  # see bug#224488
 
 PORTDOCS=	README.md

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdegraphics-thumbnailers-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kdegraphics-thumbnailers-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdegraphics-thumbnailers
 PORTVERSION=	${KDE4_VERSION}
@@ -9,8 +9,8 @@ PKGNAMESUFFIX=	-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Thumbnailers for various graphics file formats
 
-USES=		cmake:outsource kde:4 pkgconfig tar:xz
+USES=		cmake:outsource kde:4 pkgconfig qt:4 tar:xz
 USE_KDE=	kdelibs libkdcraw libkexiv2 automoc4
-USE_QT4=	gui qmake_build moc_build uic_build rcc_build
+USE_QT=		gui qmake_build moc_build uic_build rcc_build
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kshutdown-kde4/Makefile 464071 2018-03-10 12:12:10Z tcberner $
+# $FreeBSD: head/sysutils/kshutdown-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kshutdown
 DISTVERSION=	4.2
@@ -12,8 +12,8 @@ COMMENT=	Advanced shutdown utility for KDE
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		alias cmake:outsource compiler:c++0x gettext kde:4 zip
-USE_QT4=	corelib dbus gui moc_build qmake_build rcc_build svg uic_build
+USES=		alias cmake:outsource compiler:c++0x gettext kde:4 qt:4 zip
+USE_QT=		corelib dbus gui moc_build qmake_build rcc_build svg uic_build
 USE_KDE=	automoc4 kdelibs workspace
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}

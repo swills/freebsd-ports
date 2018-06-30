@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/graphics/yagf/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/yagf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	yagf
 PORTVERSION=	0.9.5
@@ -25,10 +25,10 @@ TESSERACT_RUN_DEPENDS=	tesseract:graphics/tesseract
 
 OPTIONS_DEFAULT=	CUNEIFORM
 
-USES=		cmake desktop-file-utils pkgconfig
+USES=		cmake desktop-file-utils pkgconfig qt:4
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
-USE_QT4=	corelib gui imageformats linguist_build \
+USE_QT=		corelib gui imageformats linguist_build \
 		moc_build qmake_build rcc_build uic_build
 
 PLIST_FILES=	bin/yagf lib/yagf/libxspreload.so share/applications/YAGF.desktop\

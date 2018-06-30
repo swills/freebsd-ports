@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/k3b/Makefile 470595 2018-05-22 05:24:38Z tcberner $
+# $FreeBSD: head/sysutils/k3b/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	k3b
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -23,13 +23,13 @@ RUN_DEPENDS=	cdrecord:sysutils/cdrtools
 BUILD_DEPENDS=	cdrecord:sysutils/cdrtools
 
 USES=		cmake:outsource desktop-file-utils gettext iconv kde:5 pkgconfig \
-		shared-mime-info tar:xz
+		qt:5 shared-mime-info tar:xz
 
 USE_KDE=	archive attica auth bookmarks codecs completion config \
 		configwidgets coreaddons ecm filemetadata i18n iconthemes \
 		itemviews jobwidgets kcmutils kio newstuff notifications \
 		notifyconfig service solid widgetsaddons xmlgui
-USE_QT5=	core dbus gui network webkit widgets xml \
+USE_QT=		core dbus gui network webkit widgets xml \
 		buildtools_build qmake_build
 
 # The ffmpeg-plugin needs patching

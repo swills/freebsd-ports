@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-publicsuffixlist/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/net/hs-publicsuffixlist/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	publicsuffixlist
 PORTVERSION=	0.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

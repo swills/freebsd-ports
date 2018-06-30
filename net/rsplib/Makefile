@@ -1,5 +1,5 @@
 # Created by: Thomas Dreibholz <dreibh@iem.uni-due.de>
-# $FreeBSD: head/net/rsplib/Makefile 456719 2017-12-19 14:41:29Z linimon $
+# $FreeBSD: head/net/rsplib/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	rsplib
 PORTVERSION=	3.0.2
@@ -21,9 +21,9 @@ CONFIGURE_ARGS=	--disable-maintainer-mode \
 		--enable-qt --with-qt-lib=${QT_LIBDIR} \
 		--with-qt-include=${QT_INCDIR}
 INSTALL_TARGET=	install-strip
-USES=		gmake libtool shebangfix
+USES=		gmake libtool qt:4 shebangfix
 SHEBANG_FILES=	rsplib/scriptingserviceexample
 USE_LDCONFIG=	yes
-USE_QT4=	gui xml moc_build
+USE_QT=		gui xml moc_build
 
 .include <bsd.port.mk>

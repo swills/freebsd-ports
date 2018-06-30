@@ -1,5 +1,5 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/devel/grantlee5/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/grantlee5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	grantlee
 PORTVERSION=	${GRANTLEE_VERSION}
@@ -15,8 +15,8 @@ LICENSE=	LGPL21
 
 PORTSCOUT=	limit:^5\.
 
-USE_QT5=	buildtools_build core gui qmake_build script
-USES=		cmake:outsource compiler:c++11-lib grantlee:5,selfbuild
+USE_QT=		buildtools_build core gui qmake_build script
+USES=		cmake:outsource compiler:c++11-lib grantlee:5,selfbuild qt:5
 CMAKE_ARGS+=	-DBUILD_TESTS:BOOL=FALSE
 USE_LDCONFIG=	yes
 

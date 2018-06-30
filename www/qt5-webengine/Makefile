@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webengine/Makefile 471556 2018-06-04 15:20:29Z adridg $
+# $FreeBSD: head/www/qt5-webengine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 # QtWebEngine itself is a very thin layer of Qt code on top of a large part of
 # Chromium (everything up to the content/ layer). As such, most of the work in
@@ -20,7 +20,7 @@
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -66,16 +66,15 @@ PULSEAUDIO_QMAKE_ON=	QT_CONFIG+=pulseaudio
 # whether webenginewidgets is available, which fails when qmake processes all
 # .pro files at once.
 USES=		gperf jpeg python:2.7,build pkgconfig \
-		qmake:norecursive,outsource shebangfix
+		qmake:norecursive,outsource qt-dist:5,webengine shebangfix
 USE_GNOME=	glib20 libxml2 libxslt
-USE_QT5=	core designer gui location network qml quick webchannel \
+USE_QT=		core designer gui location network qml quick webchannel \
 		widgets buildtools_build qmake_build
 USE_XORG=	scrnsaverproto x11 xcb xcomposite xcursor xext xi xproto \
 		xrandr xrender xscrnsaver xtst
 
 USE_LDCONFIG=	${QT_LIBDIR}
 
-QT_DIST=	${PORTNAME}
 
 QMAKE_CONFIGURE_ARGS=	-no-printing-and-pdf -proprietary-codecs -system-ffmpeg
 

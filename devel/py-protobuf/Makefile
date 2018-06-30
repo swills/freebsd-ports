@@ -1,9 +1,10 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-protobuf/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-protobuf/Makefile 473276 2018-06-24 21:11:14Z sunpoet $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.5.2
 DISTVERSIONPREFIX=	v
+PORTEPOCH=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

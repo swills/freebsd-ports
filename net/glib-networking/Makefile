@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net/glib-networking/Makefile 437509 2017-04-01 23:10:47Z bapt $
+# $FreeBSD: head/net/glib-networking/Makefile 473062 2018-06-22 19:59:41Z tcberner $
 
 PORTNAME=	glib-networking
 PORTVERSION=	2.50.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

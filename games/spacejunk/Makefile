@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/spacejunk/Makefile 426084 2016-11-14 06:19:30Z linimon $
+# $FreeBSD: head/games/spacejunk/Makefile 473561 2018-06-29 17:13:09Z amdmi3 $
 
 PORTNAME=	spacejunk
 PORTVERSION=	1.0.5
@@ -13,11 +13,15 @@ COMMENT=	Video game about traveling in 2D planetary systems
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN_aarch64=	Fails to compile: error: _compile_time_assert__ declared as an array with a negative size
+BROKEN_sparc64=	Doesn't compile on sparc64
+
+USES=		localbase
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl mixer image
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
+CXXFLAGS+=	-Wno-c++11-narrowing
+CXXFLAGS+=	-O0  # XXX: segfaults with optimization, need to investigate
 
 SUB_FILES=	spacejunk
 
@@ -34,9 +38,6 @@ DESKTOP_ENTRIES="Spacejunk" \
 
 OPTIONS_DEFINE=	DOCS
 
-BROKEN_aarch64=	Fails to compile: error: _compile_time_assert__ declared as an array with a negative size
-BROKEN_sparc64=	Doesn't compile on sparc64
-
 post-patch:
 	@${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|' ${WRKSRC}/src/gem-uta.c \
 		${WRKSRC}/libinfo/gem-uta.c
@@ -44,9 +45,11 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/spacejunk ${STAGEDIR}${PREFIX}/libexec/
-	cd ${WRKSRC} && ${COPYTREE_SHARE} 'data config.txt' ${STAGEDIR}${DATADIR}/
+	@cd ${WRKSRC} && ${COPYTREE_SHARE} 'data config.txt' ${STAGEDIR}${DATADIR}/
 	${INSTALL_SCRIPT} ${WRKDIR}/spacejunk ${STAGEDIR}${PREFIX}/bin/
-	cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}/
+
+do-install-DOCS-on:
+	@cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}/
 	${RMDIR} ${STAGEDIR}${DOCSDIR}/web/templates ${STAGEDIR}${DOCSDIR}/web/toolbars
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/analitza-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/math/analitza-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	analitza
 PORTVERSION=	${KDE4_VERSION}
@@ -13,9 +13,9 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GFDL=	${WRKSRC}/COPYING.DOC
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource ncurses kde:4 readline tar:xz
+USES=		cmake:outsource ncurses kde:4 qt:4 readline tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	corelib dbus gui opengl svg xml \
+USE_QT=		corelib dbus gui opengl svg xml \
 		moc_build qmake_build rcc_build uic_build
 USE_GL=		glu
 USE_LDCONFIG=	yes

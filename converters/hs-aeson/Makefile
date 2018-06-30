@@ -1,7 +1,8 @@
-# $FreeBSD: head/converters/hs-aeson/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/converters/hs-aeson/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	aeson
 PORTVERSION=	1.3.1.0
+PORTREVISION=	1
 CATEGORIES=	converters haskell
 
 MAINTAINER=	haskell@FreeBSD.org

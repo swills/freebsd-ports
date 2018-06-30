@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/telepathy-logger-qt4/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-im/telepathy-logger-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	telepathy-logger-qt4
 PORTVERSION=	0.8.0
@@ -17,11 +17,11 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libtelepathy-logger.so:net-im/telepathy-logger \
 		libtelepathy-qt4.so:net-im/telepathy-qt4
 
-USES=		bison:build cmake kde:4 pkgconfig python:2.7,build tar:bzip2
+USES=		bison:build cmake kde:4 pkgconfig python:2.7,build qt:4 tar:bzip2
 USE_GNOME=	glib20 libxml2
 USE_GSTREAMER=	qt4
 USE_KDE=	# empty
-USE_QT4=	corelib dbus moc_build qmake_build rcc_build uic_build
+USE_QT=		corelib dbus moc_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DUSE_COMMON_CMAKE_PACKAGE_CONFIG_DIR:BOOL=True
 USE_LDCONFIG=	yes
 

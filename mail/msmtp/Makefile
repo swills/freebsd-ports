@@ -1,11 +1,10 @@
 # Created by: R.I.Pienaar <rip@devco.net>
-# $FreeBSD: head/mail/msmtp/Makefile 445367 2017-07-09 04:47:17Z novel $
+# $FreeBSD: head/mail/msmtp/Makefile 473177 2018-06-24 04:19:50Z novel $
 
 PORTNAME=	msmtp
-PORTVERSION=	1.6.6
-PORTREVISION=	1
+PORTVERSION=	1.6.7
 CATEGORIES=	mail ipv6
-MASTER_SITES=	SF
+MASTER_SITES=	https://marlam.de/msmtp/releases/
 
 MAINTAINER=	novel@FreeBSD.org
 COMMENT=	SMTP plugin for MUAs

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kgpg/Makefile 467011 2018-04-10 19:39:14Z tcberner $
+# $FreeBSD: head/security/kgpg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kgpg
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,13 +9,13 @@ COMMENT=	Encryption tool for KDE
 
 RUN_DEPENDS=	gpg2:security/gnupg
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	akonadi akonadicontacts archive auth bookmarks codecs \
 		completion config configwidgets contacts coreaddons crash \
 		dbusaddons doctools ecm i18n iconthemes itemmodels itemviews \
 		jobwidgets kio notifications service solid sonnet textwidgets \
 		widgetsaddons windowsystem xmlgui
-USE_QT5=	core dbus gui network printsupport widgets xml \
+USE_QT=		core dbus gui network printsupport widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/signon-plugin-oauth2/Makefile 468640 2018-04-29 18:17:36Z tcberner $
+# $FreeBSD: head/sysutils/signon-plugin-oauth2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	signon-plugin-oauth2
 DISTVERSION=	0.24
@@ -11,8 +11,8 @@ COMMENT=	Signon OAuth 1.0 and 2.0 plugin for accounts-sso
 
 LIB_DEPENDS=	libsignon-qt5.so:sysutils/signon-qt5
 
-USES=		pkgconfig python qmake
-USE_QT5=	core network testlib \
+USES=		pkgconfig python qmake qt:5
+USE_QT=		core network testlib \
 		buildtools_build qmake_build
 USE_LDCONFIG=	${PREFIX}/lib/signon
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/openmp/Makefile 463952 2018-03-09 11:15:05Z jbeich $
+# $FreeBSD: head/devel/openmp/Makefile 473460 2018-06-27 21:17:28Z jbeich $
 
 PORTNAME=	openmp
-DISTVERSION=	6.0.0
+DISTVERSION=	6.0.1
 DISTVERSIONSUFFIX=	.src
 CATEGORIES=	devel
 MASTER_SITES=	http://llvm.org/releases/${DISTVERSION}/

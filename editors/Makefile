@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 470882 2018-05-26 06:38:15Z tobik $
+# $FreeBSD: head/editors/Makefile 473396 2018-06-26 16:30:49Z lwhsu $
 #
 
     COMMENT = Editors
@@ -114,6 +114,7 @@
     SUBDIR += libreoffice-eu
     SUBDIR += libreoffice-fa
     SUBDIR += libreoffice-fi
+    SUBDIR += libreoffice-fy
     SUBDIR += libreoffice-ga
     SUBDIR += libreoffice-gd
     SUBDIR += libreoffice-gl

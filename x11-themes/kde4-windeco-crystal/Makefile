@@ -1,5 +1,5 @@
 # Created by: decept
-# $FreeBSD: head/x11-themes/kde4-windeco-crystal/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/x11-themes/kde4-windeco-crystal/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	crystal
 PORTVERSION=	2.2.1
@@ -14,9 +14,9 @@ COMMENT=	Transparent KDE window decoration
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource,noninja kde:4 tar:bzip2
+USES=		cmake:outsource,noninja kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4 workspace
-USE_QT4=	qmake_build moc_build rcc_build uic_build \
+USE_QT=		qmake_build moc_build rcc_build uic_build \
 		corelib gui qt3support
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

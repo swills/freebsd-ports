@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/khelpcenter/Makefile 466902 2018-04-09 19:58:12Z tcberner $
+# $FreeBSD: head/sysutils/khelpcenter/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	khelpcenter
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,14 +10,14 @@ COMMENT=	Plasma5 application to show KDE application documentation
 LIB_DEPENDS=	libxapian.so:databases/xapian-core
 
 USES=		cmake:outsource compiler:c++11-lib cpe gettext grantlee:5 \
-		kde:5 shebangfix tar:xz
+		kde:5 qt:5 shebangfix tar:xz
 USE_GNOME=	libxml2
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons dbusaddons doctools ecm emoticons i18n init \
 		itemmodels itemviews jobwidgets js kcmutils kdelibs4support \
 		kio khtml parts service sonnet textwidgets widgetsaddons \
 		windowsystem xmlgui
-USE_QT5=	core dbus gui network widgets xml \
+USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
 SHEBANG_FILES=	searchhandlers/khc_mansearch.pl
 

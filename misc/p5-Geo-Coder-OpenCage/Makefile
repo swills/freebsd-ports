@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-Coder-OpenCage/Makefile 458898 2018-01-13 08:12:51Z sunpoet $
+# $FreeBSD: head/misc/p5-Geo-Coder-OpenCage/Makefile 473100 2018-06-22 23:54:32Z sunpoet $
 
 PORTNAME=	Geo-Coder-OpenCage
-PORTVERSION=	0.14
+PORTVERSION=	0.15
 CATEGORIES=	misc geography perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

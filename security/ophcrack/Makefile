@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/security/ophcrack/Makefile 443827 2017-06-18 13:16:52Z danfe $
+# $FreeBSD: head/security/ophcrack/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ophcrack
 PORTVERSION=	3.7.0
@@ -27,7 +27,8 @@ GRAPH_IMPLIES=	X11
 X11_DESC=	Build Qt 4 GUI frontend
 GRAPH_DESC=	Enable graph rendering via Qwt
 
-X11_USE=	QT4=moc_build,qmake_build,rcc_build,uic_build,corelib,gui
+X11_USES=	qt:4
+X11_USE=	QT=moc_build,qmake_build,rcc_build,uic_build,corelib,gui
 X11_CONFIGURE_OFF=	--disable-gui
 
 GRAPH_LIB_DEPENDS=	libqwt.so:x11-toolkits/qwt5

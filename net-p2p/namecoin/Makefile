@@ -1,10 +1,10 @@
 # Created by: Chad J. Milios <milios@ccsys.com>
-# $FreeBSD: head/net-p2p/namecoin/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-p2p/namecoin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	namecoin
 PORTVERSION=	0.3.80
 DISTVERSIONPREFIX=	nc
-PORTREVISION=	16
+PORTREVISION=	18
 PORTEPOCH=	1
 CATEGORIES=	net-p2p dns
 
@@ -26,7 +26,7 @@ QRCODES_DESC=	QR code display support
 
 USE_GITHUB=	yes
 
-USES=		bdb:48 gmake compiler:c++11-lib ssl
+USES=		bdb:48 gmake compiler:c++11-lib qt:4 ssl
 MAKE_JOBS_UNSAFE=yes
 
 CXXFLAGS+=	-I${LOCALBASE}/include -I${BDB_INCLUDE_DIR}
@@ -36,7 +36,7 @@ CXXFLAGS+=	-DCRYPTOPP_DISABLE_ASM
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MX11}
-USE_QT4=	corelib network gui qmake_build linguist_build uic_build moc_build rcc_build
+USE_QT=		corelib network gui qmake_build linguist_build uic_build moc_build rcc_build
 
 BINARY=		namecoin-qt
 LIB_DEPENDS+=	libprotobuf.so:devel/protobuf
@@ -54,7 +54,7 @@ QMAKE_USE_QRCODE=0
 .endif
 
 .if ${PORT_OPTIONS:MDBUS}
-USE_QT4+=	dbus
+USE_QT+=	dbus
 QMAKE_USE_DBUS=	1
 .else
 QMAKE_USE_DBUS=	0

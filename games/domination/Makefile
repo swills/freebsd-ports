@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/domination/Makefile 397596 2015-09-22 22:36:17Z nemysis $
+# $FreeBSD: head/games/domination/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	domination
 PORTVERSION=	1.1.1.6
@@ -12,7 +12,7 @@ DISTFILES=	${PORTNAME:S/d/D/}_${DISTVERSION}${EXTRACT_SUFX}:game \
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	${PORTNAME:S/d/D/}_${DISTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Board game that is a bit like the well known game Risk
 
 LICENSE=	GPLv3

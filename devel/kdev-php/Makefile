@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdev-php/Makefile 471124 2018-05-30 07:46:36Z arrowd $
+# $FreeBSD: head/devel/kdev-php/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdev-php
 DISTVERSION=	5.2.3
@@ -12,11 +12,11 @@ COMMENT=	PHP support for KDevelop
 BUILD_DEPENDS=	kdev-pg-qt:devel/kdevelop-pg-qt
 LIB_DEPENDS=	libkdevcmakecommon.so:devel/kdevelop
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons ecm \
 		i18n itemmodels jobwidgets kcmutils kio parts service sonnet \
 		texteditor textwidgets threadweaver widgetsaddons xmlgui
-USE_QT5=	concurrent core dbus gui network webkit widgets xml \
+USE_QT=		concurrent core dbus gui network webkit widgets xml \
 		buildtools_build qmake_build
 
 # Does not build with jobs.

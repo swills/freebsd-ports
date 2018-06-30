@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/kf5-kdesignerplugin/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/x11-toolkits/kf5-kdesignerplugin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdesignerplugin
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,12 +7,12 @@ CATEGORIES=	x11-toolkits kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 integration of Frameworks widgets in Qt Designer/Creator
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons doctools ecm i18n iconthemes itemviews \
 		jobwidgets kdewebkit kio plotting service solid sonnet \
 		textwidgets widgetsaddons xmlgui
-USE_QT5=	buildtools_build core dbus designer gui linguisttools \
+USE_QT=		buildtools_build core dbus designer gui linguisttools \
 		network qmake_build webkit widgets xml
 
 .include <bsd.port.mk>

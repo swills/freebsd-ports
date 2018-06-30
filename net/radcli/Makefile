@@ -1,11 +1,11 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/net/radcli/Makefile 444818 2017-07-01 12:05:47Z cpm $
+# $FreeBSD: head/net/radcli/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	radcli
 PORTVERSION=	1.2.8
 CATEGORIES=	net
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple RADIUS client library
 
 LICENSE=	BSD2CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-qt5-webengine/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/www/py-qt5-webengine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	webengine
 PORTREVISION=	4
@@ -9,11 +9,11 @@ COMMENT=	Python bindings for the Qt5 toolkit, QtWebEngine module
 
 # LICENSE set in Mk/Uses/pyqt.mk
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run gui_run network_run webchannel_run
 USE_PYTHON=	flavors
-USE_QT5=	core gui location network printsupport qml quick webchannel \
+USE_QT=		core gui location network printsupport qml quick webchannel \
 		webengine widgets qmake_build
 
 CONFIGURE_ARGS=	--enable QtWebEngine \

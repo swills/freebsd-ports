@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/wireguard/Makefile 472963 2018-06-21 07:59:24Z decke $
+# $FreeBSD: head/net/wireguard/Makefile 473382 2018-06-26 10:14:47Z decke $
 
 PORTNAME=	wireguard
-PORTVERSION=	0.0.20180620
+PORTVERSION=	0.0.20180625
 CATEGORIES=	net
 MASTER_SITES=	https://git.zx2c4.com/WireGuard/snapshot/
 DISTNAME=	WireGuard-${PORTVERSION}

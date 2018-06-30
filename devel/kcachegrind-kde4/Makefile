@@ -1,5 +1,5 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/devel/kcachegrind-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/kcachegrind-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kcachegrind
 PORTVERSION=	${KDE4_VERSION}
@@ -9,9 +9,9 @@ CATEGORIES=	devel kde kde-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Profiler frontend for KDE
 
-USES=		cmake:outsource kde:4 python:run tar:xz shebangfix
+USES=		cmake:outsource kde:4 python:run qt:4 tar:xz shebangfix
 USE_KDE=	kdelibs automoc4
-USE_QT4=	moc_build qmake_build rcc_build uic_build \
+USE_QT=		moc_build qmake_build rcc_build uic_build \
 		corelib dbus gui
 SHEBANG_FILES=	converters/op2calltree converters/dprof2calltree \
 		converters/memprof2calltree \

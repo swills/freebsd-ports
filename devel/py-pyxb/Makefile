@@ -1,14 +1,14 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/py-pyxb/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pyxb/Makefile 473243 2018-06-24 20:18:08Z sunpoet $
 
 PORTNAME=	pyxb
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	PyXB-${DISTVERSION}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Python XML schema bindings
 
 LICENSE=	APACHE20

@@ -1,9 +1,8 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/w3m/Makefile 471254 2018-06-01 10:16:41Z cpm $
+# $FreeBSD: head/www/w3m/Makefile 473199 2018-06-24 13:41:06Z nobutaka $
 
 PORTNAME=	w3m
-PORTVERSION=	0.5.3.20180125
-PORTREVISION=	3
+PORTVERSION=	0.5.3.20180520
 CATEGORIES+=	www ipv6
 
 MAINTAINER?=	nobutaka@FreeBSD.org
@@ -21,7 +20,7 @@ USE_GITHUB=	yes
 
 GH_ACCOUNT=	tats
 GH_PROJECT=	w3m
-GH_TAGNAME=	a58f37c
+GH_TAGNAME=	169789b
 
 MAKE_JOBS_UNSAFE=	yes
 

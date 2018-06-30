@@ -1,29 +1,16 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/libproxy-kde/Makefile 461375 2018-02-10 10:29:51Z tcberner $
-#    $MCom: ports/net/libproxy-kde/Makefile,v 1.1 2011/01/12 13:10:53 kwm Exp $
+# $FreeBSD: head/net/libproxy-kde/Makefile 473062 2018-06-22 19:59:41Z tcberner $
 
-PORTREVISION=	2
+PORTREVISION=	0
 CATEGORIES=	net devel
-PKGNAMESUFFIX=	-kde
+PKGNAMESUFFIX=	-${LIBPROXY_SLAVE}
 
-MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	KDE plug-in for libproxy
 
-LIB_DEPENDS=	libproxy.so:net/libproxy
-
-MASTERDIR=	${.CURDIR}/../libproxy
-DESCR=		${.CURDIR}/pkg-descr
-PLIST=		${.CURDIR}/pkg-plist
-
-ALL_TARGET=	config_kde
+USES=		kde:4
 USE_KDE=	runtime
-USES+=		kde:4
 
 LIBPROXY_SLAVE=	kde
-
-do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/lib/${PORTNAME}/${PORTVERSION}/modules/
-	${INSTALL_LIB} ${BUILD_WRKSRC}/libproxy/config_kde.so \
-		${STAGEDIR}${PREFIX}/lib/${PORTNAME}/${PORTVERSION}/modules/
+MASTERDIR=	${.CURDIR}/../libproxy
 
 .include "${MASTERDIR}/Makefile"

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/stuntrally/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/stuntrally/Makefile 473541 2018-06-29 11:45:23Z amdmi3 $
 
 PORTNAME=	stuntrally
 PORTVERSION=	2.6
@@ -25,6 +25,7 @@ USE_CXXSTD=	gnu++11
 DOS2UNIX_FILES=	source/ogre/BaseApp_Create.cpp
 CMAKE_ARGS=	-DSHARE_INSTALL="${DATADIR_REL}" \
 		-DBULLET_ROOT="${LOCALBASE}"
+LLD_UNSAFE=	yes
 
 PORTDOCS=	Readme.txt
 PORTDATA=	*

@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/deskutils/basket/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/basket/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	basket
 PORTVERSION=	1.81
@@ -14,10 +14,10 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libgpgme.so:security/gpgme
 
-USES=		cmake gettext-tools kde:4 tar:bzip2
+USES=		cmake gettext-tools kde:4 qt:4 tar:bzip2
 USE_XORG=	xft xpm
 USE_KDE=	automoc4 kdelibs qimageblitz
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 USE_CXXSTD=	gnu++98
 

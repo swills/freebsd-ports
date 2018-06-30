@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qsudo/Makefile 460460 2018-01-31 06:20:31Z yuri $
+# $FreeBSD: head/sysutils/qsudo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qsudo
 DISTVERSION=	201711240000
@@ -12,11 +12,11 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 RUN_DEPENDS=	sudo:security/sudo
 
-USES=		qmake
+USES=		qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	trueos
 GH_TAGNAME=	815e31c
-USE_QT5=	core gui widgets buildtools_build
+USE_QT=		core gui widgets buildtools_build
 
 WRKSRC_SUBDIR=	src-qt5
 LDFLAGS+=	-Wl,--as-needed  # prevents unnecessary USE_GL=gl, see bug#224488

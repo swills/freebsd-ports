@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/science/iboview/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/science/iboview/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	iboview
 PORTVERSION=	20150427
@@ -20,9 +20,9 @@ RUN_DEPENDS=	boost-libs>=0:devel/boost-libs
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON_amd64=	only builds and is supported on amd64
 
-USES=		fortran blaslapack:openblas qmake:outsource tar:bz2
+USES=		fortran blaslapack:openblas qmake:outsource qt:5 tar:bz2
 USE_GL=		gl glu
-USE_QT5=	buildtools_build core gui widgets opengl script svg
+USE_QT=		buildtools_build core gui widgets opengl script svg
 
 PLIST_FILES=	bin/iboview
 

@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <lofi@kiste>
-# $FreeBSD: head/devel/piklab/Makefile 461942 2018-02-15 18:37:09Z tcberner $
+# $FreeBSD: head/devel/piklab/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	piklab
 PORTVERSION=	0.16.2
@@ -13,9 +13,9 @@ COMMENT=	KDE/Qt IDE for microcontroller development
 LICENSE=	GPLv2+
 
 DOS2UNIX_FILES=	cmake/Piklab.cmake
-USE_QT4=	corelib gui qt3support qtestlib xml \
+USE_QT=		corelib gui qt3support qtestlib xml \
 		moc_build qmake_build rcc_build uic_build
-USES=		cmake gettext readline dos2unix tar:bzip2
+USES=		cmake gettext qt:4 readline dos2unix tar:bzip2
 USE_CXXSTD=	gnu++98
 
 OPTIONS_DEFINE=	KDE4

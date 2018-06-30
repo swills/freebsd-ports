@@ -1,5 +1,5 @@
 # Created by: mgrooms@shrew.net
-# $FreeBSD: head/security/ike/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/ike/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ike
 PORTVERSION=	2.2.1
@@ -37,7 +37,8 @@ LDAP_USE=	OPENLDAP=yes
 LDAP_CMAKE_ON=	-DLDAP=YES
 NATT_CMAKE_ON=	-DNATT=YES
 QTGUI_CMAKE_ON=	-DQTGUI=YES
-QTGUI_USE=	QT4=gui,moc_build,qmake_build,rcc_build,uic_build
+QTGUI_USES=	qt:4
+QTGUI_USE=	QT=gui,moc_build,qmake_build,rcc_build,uic_build
 
 post-install:
 	@if ! ${SYSCTL} -a | ${GREP} -q ipsec; then \

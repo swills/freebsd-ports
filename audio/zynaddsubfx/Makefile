@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/zynaddsubfx/Makefile 462964 2018-02-25 16:46:51Z antoine $
+# $FreeBSD: head/audio/zynaddsubfx/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=	zynaddsubfx
 PORTVERSION=	3.0.3
@@ -10,6 +10,10 @@ MAINTAINER=	hselasky@FreeBSD.org
 COMMENT=	Realtime software synthesizer
 
 LICENSE=	GPLv2
+
+BROKEN_aarch64=		fails to compile: argument unused during compilation: '-msse'
+BROKEN_armv6=		fails to compile: unknown argument: '-mvectorize-with-neon-quad'
+BROKEN_armv7=		fails to compile: unknown argument: '-mvectorize-with-neon-quad'
 
 LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libmxml.so:textproc/mxml \

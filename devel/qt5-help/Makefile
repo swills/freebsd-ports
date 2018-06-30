@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-help/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/devel/qt5-help/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	help
 DISTVERSION=	${QT5_VERSION}
@@ -8,10 +8,9 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt online help integration module
 
-USE_QT5=	core gui network sql widgets \
+USE_QT=		core gui network sql widgets \
 		buildtools_build sql-sqlite3_run
-QT_DIST=	tools
-USES=		qmake
+USES=		qmake qt-dist:5,tools
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 BUILD_WRKSRC=	${WRKSRC}/src/assistant

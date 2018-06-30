@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/psimedia/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/net-im/psimedia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	psimedia
 PORTVERSION=	1.0.3
@@ -12,12 +12,11 @@ COMMENT=	Voice and video API for Psi-like IM clients
 LIB_DEPENDS=	liboil-0.3.so:devel/liboil \
 		libspeexdsp.so:audio/speexdsp
 
-USES=		pkgconfig tar:bzip2
+USES=		pkgconfig qmake:no_env qt:4 tar:bzip2
 HAS_CONFIGURE=	yes
-USE_QT4=	gui qmake_build moc_build uic_build
+USE_QT=		gui qmake_build moc_build uic_build
 USE_GSTREAMER=	jpeg speex theora vorbis
 
-QT_NONSTANDARD=	yes
 CONFIGURE_ARGS=	--qtdir=${LOCALBASE} \
 		--verbose
 DESTDIRNAME=	INSTALL_ROOT

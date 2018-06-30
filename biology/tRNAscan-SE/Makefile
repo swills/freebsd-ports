@@ -1,8 +1,9 @@
 # Created by: chuynh@biolateral.com.au
-# $FreeBSD: head/biology/tRNAscan-SE/Makefile 471852 2018-06-06 15:20:57Z krion $
+# $FreeBSD: head/biology/tRNAscan-SE/Makefile 473544 2018-06-29 12:43:19Z antoine $
 
 PORTNAME=	tRNAscan-SE
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	biology
 MASTER_SITES=	http://lowelab.ucsc.edu/software/
 DISTFILES=	${DISTNAME:tl}${EXTRACT_SUFX}
@@ -12,6 +13,8 @@ COMMENT=	Searching for tRNA genes in genomic sequence
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		missing plist
 
 RUN_DEPENDS=	cmsearch:biology/infernal
 

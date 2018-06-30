@@ -1,8 +1,8 @@
 # Created by: Timothy Bourke <timbob@bigpond.com>
-# $FreeBSD: head/lang/polyml/Makefile 427136 2016-11-26 10:09:54Z mat $
+# $FreeBSD: head/lang/polyml/Makefile 473559 2018-06-29 16:48:10Z fernape $
 
 PORTNAME=	polyml
-PORTVERSION=	5.6
+PORTVERSION=	5.7.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 DIST_SUBDIR=	${PORTNAME}
@@ -12,13 +12,14 @@ COMMENT=	Fast open-source implementation of Standard ML
 
 LICENSE=	LGPL21
 
+ONLY_FOR_ARCHS=	amd64 i386
+
 LIB_DEPENDS=	libffi.so:devel/libffi
 
-ONLY_FOR_ARCHS=	i386 amd64
+USES=		libtool pathfix pkgconfig
 
 USE_GITHUB=	yes
 
-USES=		libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-system-libffi --enable-shared
 USE_LDCONFIG=	yes
@@ -32,6 +33,6 @@ MOTIF_USE=		motif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-lstdc++ ||' ${WRKSRC}/configure
-	@${REINPLACE_CMD} "s|ELFXX_R_INFO(_y, _z)    ELF64_R_INFO(_y, _z)|ELFXX_R_INFO(_y, _z)    ELF64_R_INFO((Elf64_Xword)(_y), _z)|g" ${WRKSRC}/libpolyml/elfexport.h
+	@${REINPLACE_CMD} -e 's| modules||' ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>

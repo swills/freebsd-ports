@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/science/liblinear/Makefile 444303 2017-06-25 16:21:46Z ultima $
+# $FreeBSD: head/science/liblinear/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	liblinear
 PORTVERSION=	2.11
@@ -7,7 +7,7 @@ CATEGORIES=	science math
 MASTER_SITES=	http://www.csie.ntu.edu.tw/~cjlin/liblinear/ \
 		http://www.csie.ntu.edu.tw/~cjlin/liblinear/oldfiles/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for Large Linear Classification
 
 LICENSE=	BSD3CLAUSE

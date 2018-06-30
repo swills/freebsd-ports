@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/lumina-themes/Makefile 457652 2017-12-30 23:24:11Z tcberner $
+# $FreeBSD: head/x11-themes/lumina-themes/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	lumina-themes
 PORTVERSION=	201710311100
@@ -11,8 +11,8 @@ COMMENT=	Lumina desktop wallpapers/colors
 LICENSE=	BSD2CLAUSE CC0-1.0
 LICENSE_COMB=	multi
 
-USES=	qmake
-USE_QT5=	qmake_build
+USES=	qmake qt:5
+USE_QT=		qmake_build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	trueos

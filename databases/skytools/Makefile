@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/skytools/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/databases/skytools/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	skytools
 PORTVERSION=	3.2
@@ -12,6 +12,7 @@ COMMENT=	PostgreSQL tools from Skype: walshipping, queueing, replication
 
 GNU_CONFIGURE=	yes
 USES=		gmake python:2.7 shebangfix pgsql
+LLD_UNSAFE=	yes
 
 SHEBANG_FILES=	setup_pkgloader.py setup_skytools.py \
 		scripts/catsql.py scripts/data_maintainer.py \

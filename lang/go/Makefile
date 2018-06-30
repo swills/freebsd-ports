@@ -1,8 +1,8 @@
 # Created by: Devon H. O'Dell <devon.odell@gmail.com>
-# $FreeBSD: head/lang/go/Makefile 470619 2018-05-22 14:32:09Z jlaffaye $
+# $FreeBSD: head/lang/go/Makefile 473326 2018-06-25 15:59:49Z adamw $
 
 PORTNAME=	go
-PORTVERSION=	1.10.2
+PORTVERSION=	1.10.3
 PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	https://golang.org/dl/
@@ -62,7 +62,7 @@ do-build:
 		GOROOT_BOOTSTRAP=${LOCALBASE}/go14 \
 		GOBIN= GOARCH=${GOARCH} GOOS=${OPSYS:tl} \
 		GO386=${GO386} \
-		${SH} make.bash
+		${SH} make.bash -v
 	${RM} -r ${WRKSRC}/pkg/obj
 
 do-install:
@@ -71,7 +71,7 @@ do-install:
 	@${LN} -sf ../go/bin/${f} ${STAGEDIR}${PREFIX}/bin/${f}
 .endfor
 
-regression-test: build
+do-test:
 	cd ${WRKSRC}/src && GOROOT=${WRKSRC} PATH=${WRKSRC}/bin:${PATH} ${SH} run.bash --no-rebuild --banner
 
 pkg-plist: stage

@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/hs-dia-base/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/graphics/hs-dia-base/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	dia-base
 PORTVERSION=	0.1.1.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics haskell
 
 MAINTAINER=	haskell@FreeBSD.org

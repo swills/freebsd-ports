@@ -1,5 +1,5 @@
 # Created by: John Merryweather Cooper et al
-# $FreeBSD: head/lang/fpc/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/lang/fpc/Makefile 473484 2018-06-28 03:11:45Z yuri $
 
 PORTNAME=	fpc
 PORTVERSION=	3.0.4
@@ -21,8 +21,9 @@ DIST_SUBDIR=	freepascal
 MAINTAINER?=	acm@FreeBSD.org
 COMMENT?=	Free Pascal compiler with Turbo and Delphi
 
+ONLY_FOR_ARCHS=	amd64 i386
+
 USES+=		gmake iconv
-ONLY_FOR_ARCHS=	i386 amd64
 LLD_UNSAFE=	yes	# Links object with invalid section header alignment
 BOOTVER=	3.0.4
 MANVER=		3.0.4

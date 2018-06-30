@@ -1,5 +1,5 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/editors/kile-kde4/Makefile 468624 2018-04-29 12:29:40Z tcberner $
+# $FreeBSD: head/editors/kile-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kile
 PORTVERSION=	2.1.3
@@ -16,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	identify:graphics/ImageMagick
 
-USES=		cmake gettext-tools kde:4 shared-mime-info tar:bzip2
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USES=		cmake gettext-tools kde:4 qt:4 shared-mime-info tar:bzip2
+USE_QT=		qmake_build moc_build rcc_build uic_build
 USE_KDE=	kdelibs automoc4 kate_run
 USE_TEX=	latex
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/linpsk/Makefile 433443 2017-02-05 18:57:59Z jbeich $
+# $FreeBSD: head/comms/linpsk/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	linpsk
 PORTVERSION=	1.2
@@ -12,8 +12,8 @@ COMMENT=	Simple Qt PSK31, RTTY, and MSK31 client
 LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libasound.so:audio/alsa-lib
 
-USES=		qmake tar:tgz
-USE_QT4=	gui network corelib moc_build uic_build rcc_build qmake_build
+USES=		qmake qt:4 tar:tgz
+USE_QT=		gui network corelib moc_build uic_build rcc_build qmake_build
 DESKTOP_ENTRIES="LinPsk" "${COMMENT}" \
 		"${DATADIR}/linpsk.png" "linpsk" "Audio;HamRadio;" \
 		false

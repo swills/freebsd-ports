@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/ports-mgmt/octopkg/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/ports-mgmt/octopkg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	octopkg
 PORTVERSION=	0.2.0
@@ -16,9 +16,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	aarnt
 
-USE_QT5=	core concurrent gui network xml widgets quick concurrent \
+USE_QT=		core concurrent gui network xml widgets quick concurrent \
 		buildtools_build
-USES=		qmake compiler:c++11-lib
+USES=		qmake compiler:c++11-lib qt:5
 
 PLIST_FILES=	bin/${PORTNAME} share/pixmaps/octopi_green.png
 

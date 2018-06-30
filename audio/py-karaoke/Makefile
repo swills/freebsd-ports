@@ -1,5 +1,5 @@
 # Created by: Elias Mandouvalos <ocean@mail.gr>
-# $FreeBSD: head/audio/py-karaoke/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-karaoke/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=	karaoke
 PORTVERSION=	0.7.5
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python karaoke application (Plays CD+G, MP3+G, OGG+G files)
 
 LICENSE=	LGPL21+
+
+BROKEN_aarch64=		fails to build: Signal 11
 
 BUILD_DEPENDS=	${PYGAME} \
 		${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs

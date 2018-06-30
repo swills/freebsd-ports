@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rsyslog8/Makefile 470968 2018-05-27 08:37:10Z matthew $
+# $FreeBSD: head/sysutils/rsyslog8/Makefile 473602 2018-06-30 08:30:51Z matthew $
 
 PORTNAME=	rsyslog
-PORTVERSION=	8.35.0
+PORTVERSION=	8.36.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.rsyslog.com/files/download/rsyslog/
 
@@ -14,7 +14,7 @@ LICENSE_COMB=	multi
 LIB_DEPENDS=	libee.so:devel/libee \
 		libestr.so:devel/libestr \
 		libfastjson.so:devel/libfastjson \
-		liblogging-stdlog.so:devel/liblogging \
+		liblogging-rfc3195.so:devel/liblogging \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libcurl.so:ftp/curl
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${PY_FLAVOR}

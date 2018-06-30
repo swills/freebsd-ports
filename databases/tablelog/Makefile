@@ -1,5 +1,5 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/databases/tablelog/Makefile 457498 2017-12-29 09:00:45Z amdmi3 $
+# $FreeBSD: head/databases/tablelog/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	tablelog
 PORTVERSION=	0.4.4
@@ -15,6 +15,7 @@ LICENSE=	PostgreSQL
 WRKSRC=		${WRKDIR}/table_log-${DISTVERSION}
 
 USES=		gmake pgsql
+LLD_UNSAFE=	yes
 MAKE_ARGS=	USE_PGXS=1
 
 OPTIONS_DEFINE=	DOCS

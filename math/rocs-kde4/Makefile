@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/rocs-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/math/rocs-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	rocs
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ COMMENT=	KDE Graph theory IDE
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		cmake:outsource grantlee:4 kde:4 tar:xz
+USES=		cmake:outsource grantlee:4 kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	gui qtestlib script scripttools webkit xml \
+USE_QT=		gui qtestlib script scripttools webkit xml \
 		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 

@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/www/newsboat/Makefile 466413 2018-04-04 10:09:21Z joneum $
+# $FreeBSD: head/www/newsboat/Makefile 473554 2018-06-29 15:03:21Z joneum $
 
 PORTNAME=	newsboat
-PORTVERSION=	2.11.1
+PORTVERSION=	2.12
 DISTVERSIONPREFIX=	r
 CATEGORIES=	www
 

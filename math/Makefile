@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 472970 2018-06-21 11:06:10Z pi $
+# $FreeBSD: head/math/Makefile 473488 2018-06-28 08:33:10Z yuri $
 #
 
     COMMENT = Mathematics
@@ -202,6 +202,7 @@
     SUBDIR += fpc-gmp
     SUBDIR += fpc-numlib
     SUBDIR += freemat
+    SUBDIR += fricas
     SUBDIR += fxt
     SUBDIR += g2o
     SUBDIR += galculator
@@ -720,6 +721,7 @@
     SUBDIR += py-seaborn
     SUBDIR += py-secp256k1
     SUBDIR += py-simhash
+    SUBDIR += py-slepc4py
     SUBDIR += py-spectral
     SUBDIR += py-statsmodels
     SUBDIR += py-svgmath
@@ -777,6 +779,7 @@
     SUBDIR += sfst
     SUBDIR += simd-viterbi
     SUBDIR += slatec
+    SUBDIR += slepc
     SUBDIR += slgrace
     SUBDIR += snns
     SUBDIR += solitaire

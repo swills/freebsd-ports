@@ -1,5 +1,5 @@
- # Created by: nemysis <nemysis@gmx.ch2
-# $FreeBSD: head/audio/alure/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# Created by: nemysis <nemysis@gmx.ch>
+# $FreeBSD: head/audio/alure/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	alure
 PORTVERSION=	1.2
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://kcat.strangesoft.net/alure-releases/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Utility library to help manage common tasks with OpenAL
 
 LICENSE=	MIT

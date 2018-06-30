@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/textproc/zorba/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/textproc/zorba/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	zorba
 PORTVERSION=	2.7.0
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	textproc java
 MASTER_SITES=	https://launchpadlibrarian.net/119058962/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}

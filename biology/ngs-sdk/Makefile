@@ -1,7 +1,7 @@
-# $FreeBSD: head/biology/ngs-sdk/Makefile 472158 2018-06-10 23:58:07Z yuri $
+# $FreeBSD: head/biology/ngs-sdk/Makefile 473291 2018-06-25 05:04:46Z linimon $
 
 PORTNAME=	ngs
-DISTVERSION=	2.9.0
+DISTVERSION=	2.9.1
 CATEGORIES=	biology
 PKGNAMESUFFIX=	-sdk
 
@@ -10,6 +10,8 @@ COMMENT=	Tools and libraries for using data in the INSDC Sequence Read Archives
 
 LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to configure: unsupported architecture 'FreeBSD'
 
 USES=		gmake perl5
 GNU_CONFIGURE=	yes

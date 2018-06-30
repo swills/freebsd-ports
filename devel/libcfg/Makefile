@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/libcfg/Makefile 455529 2017-12-04 17:43:55Z rodrigo $
+# $FreeBSD: head/devel/libcfg/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=	libcfg
 PORTVERSION=	0.6.2
@@ -13,6 +13,8 @@ COMMENT=	Library for command line and configuration file parsing
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to link: relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol cfg_default_properties can not be used when making a shared object
 
 CONFLICTS_INSTALL=	ossp-cfg
 

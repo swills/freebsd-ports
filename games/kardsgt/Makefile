@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/kardsgt/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/kardsgt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kardsgt
 PORTVERSION=	0.7.1
@@ -13,8 +13,8 @@ COMMENT=	Card game suite
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake
-USE_QT4=	assistantclient corelib gui network \
+USES=		qmake qt:4
+USE_QT=		assistantclient corelib gui network \
 		moc_build rcc_build uic_build
 ALL_TARGET=	qmake release
 MAKE_JOBS_UNSAFE=	yes

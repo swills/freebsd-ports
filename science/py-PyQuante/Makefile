@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-PyQuante/Makefile 472748 2018-06-19 02:14:17Z yuri $
+# $FreeBSD: head/science/py-PyQuante/Makefile 473290 2018-06-25 04:54:53Z linimon $
 
 PORTNAME=	PyQuante
 DISTVERSION=	1.6.5
@@ -11,6 +11,8 @@ COMMENT=	Quantum chemistry in Python
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: Src/PyQuante/contracted_gto.c:2063:46: error: no member named 'd_type' in 'PyMethodDescrObject'
 
 RUN_DEPENDS=	${PYNUMPY}
 

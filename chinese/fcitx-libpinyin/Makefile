@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-libpinyin/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/chinese/fcitx-libpinyin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fcitx-libpinyin
 PORTVERSION=	0.3.2
@@ -31,7 +31,8 @@ QT4_DESC=	Enable Qt4 for dictmanager
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MQT4}
-USE_QT4=	qmake_build moc_build rcc_build uic_build gui webkit
+USES+=		qt:4
+USE_QT=		qmake_build moc_build rcc_build uic_build gui webkit
 USE_LDCONFIG=	${PREFIX}/lib/fcitx/qt
 PLIST_SUB+=	QT4=""
 .else

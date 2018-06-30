@@ -1,5 +1,5 @@
 # Created by: RaRa Rasputin <rasputin@submonkey.net>
-# $FreeBSD: head/security/steghide/Makefile 461662 2018-02-12 22:11:18Z arved $
+# $FreeBSD: head/security/steghide/Makefile 473558 2018-06-29 16:38:07Z amdmi3 $
 
 PORTNAME=	steghide
 PORTVERSION=	0.5.1
@@ -20,18 +20,15 @@ USES=		gmake jpeg libtool:build perl5
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include -fpermissive
 LIBS+=		-L${LOCALBASE}/lib -lmcrypt
+CXXFLAGS+=	-Wno-static-float-init
 MAKE_ARGS=	LIBTOOL="${LOCALBASE}/bin/libtool"
 
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes
+
 NLS_USES=	gettext
 NLS_CONFIGURE_ENABLE=	nls
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MNLS}
-LIBS+=		-lintl
-.endif
+NLS_LIBS=	-lintl
 
 post-patch:
 	@${REINPLACE_CMD} '/CXXFLAGS=/s|-O2|${CXXFLAGS}|' ${WRKSRC}/configure

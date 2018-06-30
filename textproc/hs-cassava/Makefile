@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/hs-cassava/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-cassava/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	cassava
 PORTVERSION=	0.5.1.0
+PORTREVISION=	1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

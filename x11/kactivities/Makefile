@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kactivities/Makefile 462671 2018-02-23 05:47:35Z tcberner $
+# $FreeBSD: head/x11/kactivities/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kactivities
 PORTVERSION=	${KDE4_ACTIVITIES_VERSION}
@@ -10,9 +10,9 @@ DIST_SUBDIR=	KDE/${PORTVERSION}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Kactivities library
 
-USES=		cmake:outsource compiler:c++11-lib kde:4 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs soprano nepomuk-core
-USE_QT4=	declarative moc_build qmake_build rcc_build uic_build
+USE_QT=		declarative moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 
 post-patch:

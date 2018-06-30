@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/devel/kaptain/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/kaptain/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kaptain
 PORTVERSION=	0.73
@@ -12,8 +12,8 @@ COMMENT=	Tool for building/running Qt GUIs for command line programs
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake tar:tgz
-USE_QT4=	qt3support moc_build
+USES=		qmake qt:4 tar:tgz
+USE_QT=		qt3support moc_build
 
 INFO=		kaptain
 PORTDOCS=	*

@@ -1,5 +1,5 @@
 # Created by: se@FreeBSD.org
-# $FreeBSD: head/multimedia/dvbcut/Makefile 469010 2018-05-04 07:55:33Z se $
+# $FreeBSD: head/multimedia/dvbcut/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dvbcut
 PORTVERSION=	0.7.2
@@ -39,8 +39,10 @@ OPTIONS_RADIO=	QT
 OPTIONS_RADIO_QT=	QT4 QT5
 OPTIONS_DEFAULT=	QT5
 
-QT4_USE=	QT4=corelib,gui,xml,qt3support,linguisttools_build,moc_build,rcc_build,uic_build
-QT5_USE=	QT5=core,gui,widgets,xml,buildtools_build,linguisttools_build GL=gl
+QT4_USES=	qt:4
+QT4_USE=	QT=corelib,gui,xml,qt3support,linguisttools_build,moc_build,rcc_build,uic_build
+QT5_USES=	qt:5
+QT5_USE=	QT=core,gui,widgets,xml,buildtools_build,linguisttools_build GL=gl
 
 post-build:
 		@${SED} -e 's;@prefix@;${PREFIX};' \

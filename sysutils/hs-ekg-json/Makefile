@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/hs-ekg-json/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/sysutils/hs-ekg-json/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	ekg-json
 PORTVERSION=	0.1.0.6
+PORTREVISION=	1
 CATEGORIES=	sysutils haskell
 
 MAINTAINER=	haskell@FreeBSD.org

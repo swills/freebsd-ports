@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/security/secpanel/Makefile 438057 2017-04-08 18:00:04Z pi $
+# $FreeBSD: head/security/secpanel/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	secpanel
 PORTVERSION=	0.6.1
@@ -13,7 +13,7 @@ DISTFILES=	${DISTNAME}.tgz \
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	${DISTNAME}.tgz
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GUI for managing and running ssh and related utilities
 
 LICENSE=	GPLv2

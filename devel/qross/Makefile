@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/qross/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/qross/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qross
 PORTVERSION=	0.3.1
@@ -11,9 +11,9 @@ COMMENT=	Qt-only fork of Kross, the KDE scripting framework
 
 LICENSE=	LGPL20+
 
-USES=		cmake
+USES=		cmake qt:4
 USE_LDCONFIG=	yes
-USE_QT4=	corelib designer gui network xml qmake_build uic_build moc_build \
+USE_QT=		corelib designer gui network xml qmake_build uic_build moc_build \
 		rcc_build script testlib
 USE_GITHUB=	yes
 GH_ACCOUNT=	0xd34df00d

@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/ark/Makefile 466687 2018-04-06 20:11:44Z tcberner $
+# $FreeBSD: head/archivers/ark/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ark
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,12 +10,12 @@ COMMENT=	Archiving tool for KDE
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource gettext libarchive kde:5 tar:xz
+USES=		cmake:outsource gettext libarchive kde:5 qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons doctools ecm i18n iconthemes \
 		itemmodels itemviews jobwidgets khtml kio parts pty service \
 		solid sonnet textwidgets widgetsaddons xmlgui
-USE_QT5=	concurrent core dbus gui network widgets xml \
+USE_QT=		concurrent core dbus gui network widgets xml \
 		buildtools_build qmake_build
 
 USE_LDCONFIG=	yes

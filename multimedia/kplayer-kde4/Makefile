@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/multimedia/kplayer-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/kplayer-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kplayer
 PORTVERSION=	0.7
@@ -12,8 +12,8 @@ COMMENT=	Movie player based on mplayer
 
 RUN_DEPENDS=	mplayer:multimedia/mplayer
 
-USES=		cmake gettext kde:4 tar:bzip2
-USE_QT4=	corelib qmake_build moc_build rcc_build uic_build
+USES=		cmake gettext kde:4 qt:4 tar:bzip2
+USE_QT=		corelib qmake_build moc_build rcc_build uic_build
 USE_KDE=	kdelibs automoc4
 LDFLAGS+=	-L${LOCALBASE}/lib -lX11 -L${LOCALBASE}/kde4/lib -lsolid
 

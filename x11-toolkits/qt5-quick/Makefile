@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5-quick/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/x11-toolkits/qt5-quick/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	quick
 DISTVERSION=	${QT5_VERSION}
@@ -9,10 +9,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt declarative framework for dynamic user interfaces
 
 USE_GL=		gl
-USE_QT5=	core gui network qml sql testlib \
+USE_QT=		core gui network qml sql testlib \
 		widgets xmlpatterns buildtools_build
-QT_DIST=	declarative
-USES=		python:build qmake:norecursive
+USES=		python:build qmake:norecursive qt-dist:5,declarative
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 CONFLICTS=	qt5-declarative-render2d-*

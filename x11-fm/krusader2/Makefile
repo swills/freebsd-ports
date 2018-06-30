@@ -1,5 +1,5 @@
 # Created by: Heiner <h.eichmann@gmx.de>
-# $FreeBSD: head/x11-fm/krusader2/Makefile 470108 2018-05-16 09:11:09Z rakuco $
+# $FreeBSD: head/x11-fm/krusader2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	krusader
 DISTVERSION=	2.7.0
@@ -14,13 +14,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS_INSTALL=	krusader2-kde4
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive auth auth bookmarks codecs completion config \
 		configwidgets coreaddons doctools ecm guiaddons i18n \
 		iconthemes itemviews jobwidgets kio notifications parts \
 		service solid sonnet textwidgets wallet widgetsaddons \
 		windowsystem xmlgui
-USE_QT5=	concurrent core dbus gui network printsupport xml widgets \
+USE_QT=		concurrent core dbus gui network printsupport xml widgets \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

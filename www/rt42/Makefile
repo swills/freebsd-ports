@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rt42/Makefile 469119 2018-05-05 14:58:18Z danfe $
+# $FreeBSD: head/www/rt42/Makefile 473147 2018-06-23 18:09:54Z matthew $
 
 PORTNAME=	rt
-DISTVERSION=	4.2.14
+DISTVERSION=	4.2.15
 CATEGORIES=	www
 MASTER_SITES=	http://download.bestpractical.com/pub/rt/release/
 PKGNAMESUFFIX=	42

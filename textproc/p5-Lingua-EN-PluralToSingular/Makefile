@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Lingua-EN-PluralToSingular/Makefile 472918 2018-06-20 19:36:28Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-EN-PluralToSingular/Makefile 473224 2018-06-24 20:16:25Z sunpoet $
 
 PORTNAME=	Lingua-EN-PluralToSingular
-PORTVERSION=	0.20
+PORTVERSION=	0.21
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

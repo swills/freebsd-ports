@@ -1,5 +1,5 @@
 # Created by: Axel Gonzalez <loox@e-shell.net>
-# $FreeBSD: head/www/cutycapt/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/www/cutycapt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cutycapt
 PORTVERSION=	20100608
@@ -14,8 +14,8 @@ LICENSE=	GPLv2
 
 WRKSRC=		${WRKDIR}/CutyCapt
 
-USES=		qmake
-USE_QT4=	moc_build imageformats_run webkit
+USES=		qmake qt:4
+USE_QT=		moc_build imageformats_run webkit
 
 PLIST_FILES=	bin/CutyCapt
 

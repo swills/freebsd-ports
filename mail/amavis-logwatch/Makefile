@@ -1,8 +1,9 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/mail/amavis-logwatch/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/mail/amavis-logwatch/Makefile 473006 2018-06-21 21:52:59Z danilo $
 
 PORTNAME=	amavis-logwatch
 PORTVERSION=	1.51.03
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	SF/logreporters/${PORTNAME}/release/${PORTVERSION}
 

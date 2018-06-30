@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/audio/libechonest/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/audio/libechonest/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libechonest
 PORTVERSION=	2.3.1
@@ -21,11 +21,11 @@ OPTIONS_DEFINE=	TEST
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 TEST_CMAKE_BOOL=ECHONEST_BUILD_TESTS
-TEST_USE=	qt4=qtestlib_build,xml_build
+TEST_USE=	qt=qtestlib_build,xml_build
 
-USES=		cmake pkgconfig
+USES=		cmake pkgconfig qt:4
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
-USE_QT4=	corelib qmake_build moc_build network rcc_build
+USE_QT=		corelib qmake_build moc_build network rcc_build
 
 .include <bsd.port.mk>

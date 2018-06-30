@@ -1,17 +1,18 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-orafce/Makefile 446189 2017-07-19 09:09:18Z tz $
+# $FreeBSD: head/databases/postgresql-orafce/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	orafce
 PORTVERSION=	3.4.0
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Oracle's compatibility functions and packages for PostgreSQL
 
 LICENSE=	PostgreSQL
 
 USES=		gmake bison pgsql:9.2+
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 GH_TAGNAME=	ffea9cc
 

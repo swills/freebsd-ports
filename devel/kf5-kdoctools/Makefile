@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kdoctools/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/devel/kf5-kdoctools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdoctools
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -13,9 +13,9 @@ BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-
 RUN_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	archive ecm i18n
-USE_QT5=	buildtools_build core qmake_build
+USE_QT=		buildtools_build core qmake_build
 
 .include <bsd.port.mk>

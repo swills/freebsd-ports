@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kf5-kxmlrpcclient/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/net/kf5-kxmlrpcclient/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kxmlrpcclient
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,8 +7,8 @@ CATEGORIES=	net kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 interaction with XMLRPC services
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons ecm doctools i18n kio service
-USE_QT5=	buildtools_build core gui qmake_build xml
+USE_QT=		buildtools_build core gui qmake_build xml
 
 .include <bsd.port.mk>

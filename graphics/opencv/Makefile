@@ -1,5 +1,5 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 469686 2018-05-11 20:00:42Z swills $
+# $FreeBSD: head/graphics/opencv/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	opencv
 PORTVERSION=	3.4.1
@@ -276,7 +276,8 @@ GTK2_LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 			libfontconfig.so:x11-fonts/fontconfig \
 			liblept.so:graphics/leptonica
 
-QT4_USE=		QT4=corelib,gui,moc_build,qmake_build,rcc_build,uic_build,qtestlib
+QT4_USES=		qt:4
+QT4_USE=		QT=corelib,gui,moc_build,qmake_build,rcc_build,uic_build,qtestlib
 QT4_CMAKE_ON=		-DWITH_QT:STRING="4"
 QT4_CMAKE_OFF=		-DWITH_QT:BOOL=OFF
 QT4_LIB_DEPENDS=	libfreetype.so:print/freetype2 \

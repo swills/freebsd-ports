@@ -1,8 +1,8 @@
 # Created by: Felippe de Meirelles Motta <lippemail@gmail.com>
-# $FreeBSD: head/textproc/p5-Getopt-Lucid/Makefile 438843 2017-04-19 14:04:23Z culot $
+# $FreeBSD: head/textproc/p5-Getopt-Lucid/Makefile 473325 2018-06-25 15:46:48Z culot $
 
 PORTNAME=	Getopt-Lucid
-PORTVERSION=	1.08
+PORTVERSION=	1.09
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

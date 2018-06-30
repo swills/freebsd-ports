@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@Fluffy.Khv.RU>
-# $FreeBSD: head/sysutils/polkit-kde/Makefile 467318 2018-04-14 13:30:12Z tcberner $
+# $FreeBSD: head/sysutils/polkit-kde/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	polkit-kde
 PORTVERSION=	0.99.1
@@ -15,9 +15,9 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpolkit-qt-agent-1.so:sysutils/polkit-qt@qt4
 
-USES=		cmake kde:4 tar:bzip2
+USES=		cmake kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes

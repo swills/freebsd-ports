@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/cad/qelectrotech/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/cad/qelectrotech/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qelectrotech
 PORTVERSION=	0.5
@@ -15,8 +15,8 @@ COMMENT=	QElectroTech is application to design electric diagrams
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		compiler:c++11-lib desktop-file-utils qmake shared-mime-info
-USE_QT5=	buildtools_build gui network printsupport \
+USES=		compiler:c++11-lib desktop-file-utils qmake qt:5 shared-mime-info
+USE_QT=		buildtools_build gui network printsupport \
 		sql-sqlite3 svg xml
 
 OPTIONS_DEFINE=       DEBUG

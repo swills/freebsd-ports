@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch-async/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-elasticsearch-async/Makefile 473252 2018-06-24 20:18:50Z sunpoet $
 
 PORTNAME=	elasticsearch-async
-PORTVERSION=	6.0.0
+PORTVERSION=	6.1.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-approver/Makefile 466968 2018-04-10 16:18:29Z tcberner $
+# $FreeBSD: head/net-im/ktp-approver/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ktp-approver
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,9 +11,9 @@ LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 RUN_DEPENDS=	${KDE_PREFIX}/bin/ktp-contactlist:net-im/ktp-contact-list
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons ecm dbusaddons service i18n notifications
-USE_QT5=	core  dbus gui network widgets xml \
+USE_QT=		core  dbus gui network widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

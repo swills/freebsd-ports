@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/archivers/dpkg/Makefile 443689 2017-06-16 12:19:29Z bhughes $
+# $FreeBSD: head/archivers/dpkg/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	dpkg
 PORTVERSION=	1.18.24
@@ -7,7 +7,7 @@ CATEGORIES=	archivers sysutils
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	dpkg_${PORTVERSION}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Debian package maintenance system
 
 LICENSE=	GPLv2+

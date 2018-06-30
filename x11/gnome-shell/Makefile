@@ -1,9 +1,9 @@
 # Created by: Pawel Worach <pawel.worach@gmail.com>
-# $FreeBSD: head/x11/gnome-shell/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/x11/gnome-shell/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	gnome-shell
 PORTVERSION=	3.18.5
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-testlib/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-testlib/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	testlib
 DISTVERSION=	${QT4_VERSION}
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt unit testing module
 
-USE_QT4=	qmake_build moc_build corelib
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		moc_build corelib
 
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

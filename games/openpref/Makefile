@@ -1,5 +1,5 @@
 # Created by: Konstantin Tokarev <annulen@yandex.ru>
-# $FreeBSD: head/games/openpref/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/openpref/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	openpref
 PORTVERSION=	0.1.3
@@ -13,8 +13,8 @@ COMMENT=	Preferans game
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake
-USE_QT4=	corelib gui moc_build rcc_build uic_build
+USES=		qmake qt:4
+USE_QT=		corelib gui moc_build rcc_build uic_build
 MAKE_JOBS_UNSAFE=	yes
 
 PLIST_FILES=	bin/${PORTNAME} \

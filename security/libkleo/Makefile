@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/libkleo/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/security/libkleo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkleo
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,11 +15,11 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 RUN_DEPENDS=	${LOCALBASE}/bin/gmd5sum:sysutils/coreutils
 
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	codecs completion config coreaddons i18n itemmodels \
 		widgetsaddons windowsystem \
 		pimtextedit
-USE_QT5=	core gui widgets \
+USE_QT=		core gui widgets \
 		buildtools_build qmake_build
 
 _CORETOOLS=	md5sum sha1sum sha256sum sha512sum

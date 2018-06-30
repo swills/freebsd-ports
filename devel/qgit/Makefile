@@ -1,5 +1,5 @@
 # Created by: Ion-Mihai "IOnut" Tetcu <itetcu@FreeBSD.org>
-# $FreeBSD: head/devel/qgit/Makefile 470831 2018-05-25 11:51:39Z adridg $
+# $FreeBSD: head/devel/qgit/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qgit
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -11,8 +11,8 @@ COMMENT=	Graphical interface to git repositories
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource
-USE_QT5=	core gui widgets \
+USES=		cmake:outsource qt:5
+USE_QT=		core gui widgets \
 		buildtools_build qmake_build
 
 USE_GITHUB=	yes

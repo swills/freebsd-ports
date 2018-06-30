@@ -1,5 +1,5 @@
 # Created by: Oliver Heesakkers <dev2@heesakkers.info>
-# $FreeBSD: head/graphics/zbar/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/zbar/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	zbar
 PORTVERSION=	0.10
@@ -45,7 +45,8 @@ GTK2_USE=	GNOME=gtk20
 GTK2_CONFIGURE_ON=	--with-gtk=yes
 GTK2_CONFIGURE_OFF=	--with-gtk=no
 
-QT4_USE=	QT4=gui,moc_build
+QT4_USES=	qt:4
+QT4_USE=	QT=gui,moc_build
 QT4_CONFIGURE_ON=	--with-qt=yes
 QT4_CONFIGURE_OFF=	--with-qt=no
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt4-scripttools/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/devel/qt4-scripttools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	scripttools
 DISTVERSION=	${QT4_VERSION}
@@ -9,8 +9,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt Script additional components
 
-USE_QT4=	qmake_build moc_build rcc_build gui script
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		moc_build rcc_build gui script
 
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

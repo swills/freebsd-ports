@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/textproc/ibus-qt/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/textproc/ibus-qt/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	ibus-qt
 PORTVERSION=	1.3.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/releases/download/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-Source
@@ -21,8 +21,8 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 
 GH_ACCOUNT=	ibus
 
-USE_QT4=	gui dbus moc_build qmake_build moc_build uic_build rcc_build
-USES=		cmake compiler:c++11-lib pkgconfig
+USE_QT=		gui dbus moc_build qmake_build moc_build uic_build rcc_build
+USES=		cmake compiler:c++11-lib pkgconfig qt:4
 CMAKE_ARGS=	-DDOCDIR=${PREFIX}/share/doc/ibus-qt -DLIBDIR=lib
 USE_LDCONFIG=	yes
 CFLAGS+=	-I${LOCALBASE}/include

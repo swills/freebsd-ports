@@ -1,5 +1,5 @@
 # Created by: Martin Matuska (mm@FreeBSD.org)
-# $FreeBSD: head/ftp/horde-gollem/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/ftp/horde-gollem/Makefile 473121 2018-06-23 09:37:13Z amdmi3 $
 
 PORTNAME=	gollem
 PORTVERSION=	3.0.12
@@ -12,7 +12,7 @@ COMMENT=	Horde Web-based File Manager
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=	horde cpe
+USES=		horde cpe
 USE_PHP=	gettext json
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

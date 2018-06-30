@@ -1,12 +1,12 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/bs/Makefile 408084 2016-02-04 19:34:36Z marino $
+# $FreeBSD: head/games/bs/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	bs
 PORTVERSION=	2.10
 CATEGORIES=	games
 MASTER_SITES=	http://www.catb.org/~esr/bs/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Battleships solitaire game with a color interface
 
 LICENSE=	BSD3CLAUSE

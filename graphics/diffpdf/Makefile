@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/diffpdf/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/graphics/diffpdf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	diffpdf
 PORTVERSION=	2.1.3
@@ -13,8 +13,8 @@ LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
 
-USES=		compiler:c++11-lang qmake
-USE_QT4=	qmake_build moc_build rcc_build uic_build linguist_build
+USES=		compiler:c++11-lang qmake qt:4
+USE_QT=		qmake_build moc_build rcc_build uic_build linguist_build
 
 PLIST_FILES=	bin/diffpdf
 

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/3omns/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/3omns/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	3omns
 PORTVERSION=	0.1
@@ -10,7 +10,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PORTNAME}.png:icons
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Old-school bomb-dropping Deathmatch
 
 LICENSE=	GPLv3

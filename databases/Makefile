@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 472961 2018-06-21 07:55:33Z pi $
+# $FreeBSD: head/databases/Makefile 473546 2018-06-29 12:50:41Z antoine $
 #
 
     COMMENT = Databases and related software
@@ -776,6 +776,7 @@
     SUBDIR += py-agate-sql
     SUBDIR += py-alembic
     SUBDIR += py-apsw
+    SUBDIR += py-asyncpg
     SUBDIR += py-bsddb
     SUBDIR += py-bsddb3
     SUBDIR += py-carbon

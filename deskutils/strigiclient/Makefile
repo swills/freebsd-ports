@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/strigiclient/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/strigiclient/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	strigiclient
 PORTVERSION=	${STRIGI_VERSION}
@@ -13,7 +13,8 @@ LIB_DEPENDS=	libstreams.so:deskutils/libstreams \
 		libstreamanalyzer.so:deskutils/libstreamanalyzer \
 		libsearchclient.so:deskutils/strigidaemon
 
-USE_QT4=	corelib gui dbus moc_build uic_build qmake_build rcc_build
+USES=	qt:4
+USE_QT=		corelib gui dbus moc_build uic_build qmake_build rcc_build
 USE_LDCONFIG=	yes
 
 .include <${.CURDIR}/../strigi/Makefile.common>

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/smillaenlarger/Makefile 396174 2015-09-05 14:21:01Z danfe $
+# $FreeBSD: head/graphics/smillaenlarger/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smillaenlarger
 DISTVERSION=	0.9.0
@@ -12,8 +12,8 @@ COMMENT=	Qt-based tool for high-quality image magnification/resizing
 
 LICENSE=	GPLv3
 
-USES=		qmake zip
-USE_QT4=	qmake_build moc_build rcc_build uic_build gui
+USES=		qmake qt:4 zip
+USE_QT=		qmake_build moc_build rcc_build uic_build gui
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/SmillaEnlargerSrc
 

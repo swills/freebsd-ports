@@ -1,6 +1,7 @@
-# $FreeBSD: head/databases/firebird25-client/Makefile 468287 2018-04-25 18:39:19Z acm $
+# $FreeBSD: head/databases/firebird25-client/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	firebird
+PORTREVISION=	1
 PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}-client
 
 COMMENT=	Firebird-2 database client

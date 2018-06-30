@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/sysutils/pacman/Makefile 469384 2018-05-08 17:05:39Z amdmi3 $
+# $FreeBSD: head/sysutils/pacman/Makefile 473387 2018-06-26 14:44:16Z amdmi3 $
 
 PORTNAME=	pacman
-PORTVERSION=	5.0.2
+PORTVERSION=	5.1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	https://sources.archlinux.org/other/${PORTNAME}/ \
 		https://mirror.amdmi3.ru/distfiles/
@@ -19,11 +19,13 @@ BUILD_DEPENDS=	asciidoc:textproc/asciidoc \
 RUN_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libarchive.so.13:archivers/libarchive
 
-USES=		gmake libtool localbase:ldflags pathfix perl5 pkgconfig shebangfix
-SHEBANG_FILES=	${WRKSRC}/scripts/makepkg-template.pl.in
+USES=		gmake libtool localbase:ldflags pathfix perl5 pkgconfig shebangfix ssl
+SHEBANG_FILES=	${WRKSRC}/scripts/makepkg-template.pl.in \
+		${WRKSRC}/scripts/libmakepkg/lint_config.sh.in
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-root-dir="${PACMAN_ROOT}" \
 		--localstatedir=/var
+CONFIGURE_ENV=	LIBSSL_CFLAGS="-I${OPENSSLINC}" LIBSSL_LIBS="-L${OPENSSLLIB}"
 USE_LDCONFIG=	yes
 
 SUB_FILES=	pkg-message pkg-deinstall

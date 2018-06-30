@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/irc/py-fishcrypt/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/irc/py-fishcrypt/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	fishcrypt
 DISTVERSION=	5.31
@@ -8,7 +8,7 @@ CATEGORIES=	irc security
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DIST_SUBDIR=	python
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FiSH/Mircryption-compatible encryption for HexChat
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${PY_FLAVOR} \

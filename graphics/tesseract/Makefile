@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/tesseract/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/graphics/tesseract/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	tesseract
-PORTVERSION=	3.05.01
-PORTREVISION=	4
+PORTVERSION=	3.05.02
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	pkubaj@anongoth.pl
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	liblept.so:graphics/leptonica
 RUN_DEPENDS=	tesseract-data>=0:graphics/tesseract-data
 
-USES=		autoreconf localbase libtool pathfix pkgconfig
+USES=		autoreconf compiler:c++11-lang localbase libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

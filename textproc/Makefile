@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 472976 2018-06-21 15:28:59Z mfechner $
+# $FreeBSD: head/textproc/Makefile 473216 2018-06-24 20:06:33Z sunpoet $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1328,6 +1328,7 @@
     SUBDIR += py-nltk
     SUBDIR += py-numpydoc
     SUBDIR += py-openpyxl
+    SUBDIR += py-openstackdocstheme
     SUBDIR += py-orange3-text
     SUBDIR += py-pager
     SUBDIR += py-pandocfilters
@@ -1337,8 +1338,10 @@
     SUBDIR += py-parso
     SUBDIR += py-pdfminer
     SUBDIR += py-pdfminer3k
+    SUBDIR += py-pdfrw
     SUBDIR += py-pss
     SUBDIR += py-pyPEG2
+    SUBDIR += py-pyaml
     SUBDIR += py-pyctpp2
     SUBDIR += py-pyes
     SUBDIR += py-pygments
@@ -1388,6 +1391,7 @@
     SUBDIR += py-sphinxcontrib-bitbucket
     SUBDIR += py-sphinxcontrib-fulltoc
     SUBDIR += py-sphinxcontrib-httpdomain
+    SUBDIR += py-sphinxcontrib-newsfeed
     SUBDIR += py-sphinxcontrib-programoutput
     SUBDIR += py-sphinxcontrib-websupport
     SUBDIR += py-stemming
@@ -1410,6 +1414,7 @@
     SUBDIR += py-wordnet
     SUBDIR += py-wstools
     SUBDIR += py-wtforms
+    SUBDIR += py-xhtml2pdf
     SUBDIR += py-xlrd
     SUBDIR += py-xlsxwriter
     SUBDIR += py-xlutils

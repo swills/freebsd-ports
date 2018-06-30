@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/mixxx20/Makefile 468174 2018-04-24 03:53:29Z acm $
+# $FreeBSD: head/audio/mixxx20/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mixxx
 PORTVERSION=	2.0.0
@@ -31,8 +31,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 BROKEN_aarch64=		fails to compile: Exception("invalid machine type")
 BROKEN_powerpc64=	fails to configure: unmet dependencies: Could not find libprotobuf, libchromaprint, libmp4, and libwavpack
 
-USES=		scons iconv pkgconfig
-USE_QT4=	corelib gui network opengl script scripttools sql sql-sqlite3 \
+USES=		qt:4 scons iconv pkgconfig
+USE_QT=		corelib gui network opengl script scripttools sql sql-sqlite3 \
 		svg testlib xml xmlpatterns linguisttools_build moc_build \
 		qmake_build rcc_build uic_build
 USE_GL=		gl glu

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-pydicom/Makefile 464137 2018-03-11 01:22:55Z wen $
+# $FreeBSD: head/science/py-pydicom/Makefile 473013 2018-06-22 03:06:51Z wen $
 
 PORTNAME=	pydicom
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

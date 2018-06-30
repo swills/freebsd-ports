@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Tar-Wrapper/Makefile 472909 2018-06-20 19:35:39Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Tar-Wrapper/Makefile 473466 2018-06-27 23:33:38Z sunpoet $
 
 PORTNAME=	Archive-Tar-Wrapper
-PORTVERSION=	0.27
+PORTVERSION=	0.29
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	API wrapper around the 'tar' utility
 
-LICENSE=	ART10 GPLv1+
-LICENSE_COMB=	dual
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which \
 		p5-IPC-Run>=0:devel/p5-IPC-Run \

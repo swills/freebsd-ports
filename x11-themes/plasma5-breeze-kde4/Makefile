@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/plasma5-breeze-kde4/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-breeze-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	breeze
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -14,9 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 CMAKE_ON=	USE_KDE4
 
 USES=		cmake:outsource compiler:c++11-lang cpe gettext \
-		kde:4 pkgconfig tar:xz
+		kde:4 pkgconfig qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	corelib dbus gui svg \
+USE_QT=		corelib dbus gui svg \
 		moc_build qmake_build rcc_build uic_build
 USE_XORG=	x11 xcb
 

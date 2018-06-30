@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/allacrost/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/allacrost/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	allacrost
 PORTVERSION=	1.0.2
@@ -22,12 +22,13 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 GNU_CONFIGURE=	yes
 USES=		gettext gmake iconv jpeg lua:51 openal:al
 USE_SDL=	sdl ttf net
-USE_GL=		yes
-QT_NONSTANDARD=	yes # used when EDITOR enabled
+USE_GL=		gl glu
+USE_XORG=	x11
 
 CONFIGURE_ARGS=	--datadir=${DATADIR}
 CPPFLAGS+=	-I${LOCALBASE}/include -I${LUA_INCDIR}
 LDFLAGS+=	-L${LOCALBASE}/lib -L${LUA_LIBDIR}
+CXXFLAGS+=	-Wno-c++11-narrowing
 LLD_UNSAFE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
@@ -40,7 +41,8 @@ OPTIONS_SUB=	yes
 
 EDITOR_DESC=		Enable editor
 
-EDITOR_USE=		QT4=corelib,gui,moc_build,opengl,qt3support
+EDITOR_USES=		qmake:no_env qt:4
+EDITOR_USE=		QT=corelib,gui,moc_build,opengl,qt3support
 EDITOR_CONFIGURE_ON=	--enable-editor=yes
 EDITOR_CONFIGURE_OFF=	--enable-editor=no
 

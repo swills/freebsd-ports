@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-script/Makefile 458297 2018-01-06 22:11:58Z tcberner $
+# $FreeBSD: head/devel/qt4-script/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	script
 DISTVERSION=	${QT4_VERSION}
@@ -10,9 +10,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt scripting module
 
-USES=		pkgconfig
-USE_QT4=	qmake_build moc_build corelib
-QT_DIST=	yes
+USES=		pkgconfig qmake:no_env qt-dist:4
+USE_QT=		moc_build corelib
 
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

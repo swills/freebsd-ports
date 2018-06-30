@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/php72/Makefile 471095 2018-05-29 14:33:31Z tz $
+# $FreeBSD: head/lang/php72/Makefile 473305 2018-06-25 11:41:48Z tz $
 
 PORTNAME=	php72
-DISTVERSION=	7.2.6
+DISTVERSION=	7.2.7
 PORTREVISION?=	0
 CATEGORIES?=	lang devel www
 MASTER_SITES=	PHP/distributions

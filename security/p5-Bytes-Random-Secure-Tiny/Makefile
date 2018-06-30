@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Bytes-Random-Secure-Tiny/Makefile 469625 2018-05-11 10:57:38Z pi $
+# $FreeBSD: head/security/p5-Bytes-Random-Secure-Tiny/Makefile 473539 2018-06-29 10:10:35Z mat $
 
 PORTNAME=	Bytes-Random-Secure-Tiny
 PORTVERSION=	1.008
@@ -17,8 +17,5 @@ USE_PERL5=	configure
 PLIST_FILES=	${SITE_PERL_REL}/Bytes/Random/Secure/Tiny.pm \
 		${SITE_PERL_REL}/Bytes/Random/Secure/Tiny.pod \
 		${SITE_MAN3_REL}/Bytes::Random::Secure::Tiny.3.gz
-
-pre-install:
-		${RM} ${WRKSRC}/blib/lib/Bytes/Random/Secure/README.pod
 
 .include <bsd.port.mk>

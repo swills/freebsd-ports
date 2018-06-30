@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/audio/quimup/Makefile 460771 2018-02-03 04:29:04Z swills $
+# $FreeBSD: head/audio/quimup/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	quimup
 PORTVERSION=	1.4.3
@@ -18,8 +18,8 @@ LIB_DEPENDS=	libmpdclient.so:audio/libmpdclient \
 
 WRKSRC=		${WRKDIR}/Quimup_${PORTVERSION}
 
-USES=		pkgconfig qmake compiler:c++11-lang
-USE_QT5=	core gui network widgets buildtools_build
+USES=		pkgconfig qmake compiler:c++11-lang qt:5
+USE_QT=		core gui network widgets buildtools_build
 USE_GL=		gl
 
 CXXFLAGS+=	-std=c++11

@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-crypto-cipher-types/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-crypto-cipher-types/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	crypto-cipher-types
 PORTVERSION=	0.0.9
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,10 +1,11 @@
-# $FreeBSD: head/multimedia/mlt-qt4/Makefile 470373 2018-05-19 10:32:30Z tcberner $
+# $FreeBSD: head/multimedia/mlt-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTREVISION=	0
 
 CONFLICTS_INSTALL=	${PORTNAME}-qt5-*
 
-USE_QT4=	corelib gui opengl svg xml
+USES=	qt:4
+USE_QT=		corelib gui opengl svg xml
 MASTERDIR=	${.CURDIR:H}/mlt
 SLAVEPORT=	qt4
 

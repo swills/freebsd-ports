@@ -1,5 +1,5 @@
 # Created by: Sverrir Valgeirsson <e96sv@yahoo.se>
-# $FreeBSD: head/net-p2p/valknut/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-p2p/valknut/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	valknut
 PORTVERSION=	0.4.9
@@ -17,9 +17,9 @@ LIB_DEPENDS=	libdc.so:net-p2p/dclib \
 
 WRKSRC=	${WRKDIR}/${DISTNAME}
 
-USE_QT4=	corelib gui network qt3support \
+USE_QT=		corelib gui network qt3support \
 		moc_build uic_build rcc_build linguisttools_build
-USES=		gmake perl5 pkgconfig tar:bzip2
+USES=		gmake perl5 pkgconfig qt:4 tar:bzip2
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

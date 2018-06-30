@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pyspacewar/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/pyspacewar/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	pyspacewar
 PORTVERSION=	1.1.0
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	games python
 DIST_SUBDIR=	python
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Game loosely based on the original Spacewar!
 
 LICENSE=	GPLv2

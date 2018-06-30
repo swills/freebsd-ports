@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qwt5-designerplugin/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/x11-toolkits/qwt5-designerplugin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qwt
 PORTVERSION=	5.2.3
@@ -12,8 +12,8 @@ COMMENT=	Qt Designer plugin for Qwt
 
 LIB_DEPENDS=	libqwt.so:x11-toolkits/qwt5
 
-USES=		gmake qmake tar:bzip2
-USE_QT4=	designer moc_build rcc_build
+USES=		gmake qmake qt:4 tar:bzip2
+USE_QT=		designer moc_build rcc_build
 QMAKE_ARGS+=	CONFIG+=QwtDesigner \
 		PLUGINDIR=${PREFIX}/${QT_PLUGINDIR_REL}
 PORTSCOUT=	limit:^5\.

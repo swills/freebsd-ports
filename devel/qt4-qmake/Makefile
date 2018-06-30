@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org, mi@aldan.algebra.com
-# $FreeBSD: head/devel/qt4-qmake/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-qmake/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qmake
 DISTVERSION=	${QT4_VERSION}
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt Makefile generator
 
-USE_QT4=	# empty
-QT_DIST=	yes
+USES=	qt-dist:4
+USE_QT=		# empty
 REINPLACE_ARGS=	-i ""
 WRKSRC_SUBDIR=	${PORTNAME}
 MAKEFILE=	${FILESDIR}/Makefile.bsd

@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/qscintilla2/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/devel/qscintilla2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
@@ -11,9 +11,9 @@ DISTNAME=	${QSCI2_DISTNAME}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4 port of the Scintilla C++ editor class
 
-USES=		compiler:c++11-lib qmake pyqt:4
+USES=		compiler:c++11-lib qmake pyqt:4 qt:4
 USE_PYQT=	#
-USE_QT4=	moc_build corelib gui xml designer
+USE_QT=		moc_build corelib gui xml designer
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 BUILD_WRKSRC=		${WRKSRC}/Qt4Qt5

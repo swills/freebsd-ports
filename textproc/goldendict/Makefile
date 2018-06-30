@@ -1,9 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/textproc/goldendict/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/textproc/goldendict/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	goldendict
 PORTVERSION=	1.0.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:C|(.*)\.[0-9]*$|\1|}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -17,10 +17,10 @@ LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
 		libvorbis.so:audio/libvorbis
 
 NO_WRKSUBDIR=	yes
-USES=		compiler:c++11-lang dos2unix iconv:wchar_t pkgconfig qmake tar:bzip2
+USES=		compiler:c++11-lang dos2unix iconv:wchar_t pkgconfig qmake qt:4 tar:bzip2
 DOS2UNIX_FILES=	processwrapper.cc
 USE_XORG=	xtst
-USE_QT4=	corelib gui webkit phonon \
+USE_QT=		corelib gui webkit phonon \
 		linguist_build moc_build rcc_build script_build uic_build
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
 INSTALLS_ICONS=	yes

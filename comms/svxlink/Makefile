@@ -1,5 +1,5 @@
 # Created by: shurd
-# $FreeBSD: head/comms/svxlink/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/comms/svxlink/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME?=	svxlink
 PORTVERSION=	15.11
@@ -22,7 +22,7 @@ LIB_DEPENDS?=	libgsm.so:audio/gsm \
 BUILD_DEPENDS=	pkg-config:devel/pkgconf \
 		${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat
 
-USES=		cmake compiler:c++11-lang tcl groff
+USES+=		cmake compiler:c++11-lang tcl groff
 USE_GITHUB=	yes
 GH_ACCOUNT=	sm0svx
 GH_PROJECT=	svxlink

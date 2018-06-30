@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/converseen/Makefile 464438 2018-03-13 22:24:58Z fernape $
+# $FreeBSD: head/graphics/converseen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	converseen
 PORTVERSION=	0.9.6.2
@@ -14,8 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
 
-USES=		cmake tar:bzip2 compiler:c++11-lang
-USE_QT5=	core network gui linguisttools_build qmake_build \
+USES=		cmake qt:5 tar:bzip2 compiler:c++11-lang
+USE_QT=		core network gui linguisttools_build qmake_build \
 		buildtools_build widgets
 post-patch:
 	@${REINPLACE_CMD} -e '/^ appdata.path =/s|/usr/share|$$$${SHARE_DIR}|' \

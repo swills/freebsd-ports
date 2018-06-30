@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kf5-purpose/Makefile 472427 2018-06-15 05:14:35Z tcberner $
+# $FreeBSD: head/misc/kf5-purpose/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	purpose
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -11,10 +11,10 @@ LIB_DEPENDS=	libaccounts-qt5.so:net-im/libaccounts-qt5 \
 		libkaccounts.so:net-im/kaccounts-integration
 
 USES=		cmake:outsource compiler:c++11-lang gettext \
-		kde:5 pkgconfig tar:xz
+		kde:5 pkgconfig qt:5 tar:xz
 USE_GNOME=	intltool
 USE_KDE=	config coreaddons ecm i18n kdeclarative kio service widgetsaddons
-USE_QT5=	concurrent core dbus gui network qml widgets xml \
+USE_QT=		concurrent core dbus gui network qml widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

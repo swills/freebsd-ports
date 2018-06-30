@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/hs-xml-conduit/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-xml-conduit/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	xml-conduit
 PORTVERSION=	1.8.0
+PORTREVISION=	1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

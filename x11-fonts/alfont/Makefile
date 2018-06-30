@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/alfont/Makefile 454035 2017-11-12 12:35:22Z rene $
+# $FreeBSD: head/x11-fonts/alfont/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	alfont
 PORTVERSION=	209
@@ -10,7 +10,7 @@ DISTNAME=	AlFont${DISTVERSION}
 EXTRACT_SUFX=	.rar
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Wrapper around the freetype2 library
 
 LICENSE=	FTL

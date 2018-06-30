@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/editors/lfhex/Makefile 412086 2016-03-29 00:53:48Z amdmi3 $
+# $FreeBSD: head/editors/lfhex/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	lfhex
 PORTVERSION=	0.42
@@ -13,8 +13,8 @@ COMMENT=	Large file hex editor
 LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/../COPYING
 
-USES=		bison qmake
-USE_QT4=	corelib gui moc_build rcc_build
+USES=		bison qmake qt:4
+USE_QT=		corelib gui moc_build rcc_build
 
 WRKSRC_SUBDIR=	src
 

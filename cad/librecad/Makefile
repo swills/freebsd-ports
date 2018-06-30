@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/librecad/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/cad/librecad/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	librecad
 DISTVERSION=	2.2.0-rc1
@@ -15,12 +15,12 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/version.hpp:devel/boost-libs
 LIB_DEPENDS=	libmuparser.so:math/muparser \
 		libfreetype.so:print/freetype2
 
-USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake
+USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	LibreCAD
 GH_PROJECT=	LibreCAD
 USE_GL=		gl
-USE_QT5=	core gui printsupport svg widgets \
+USE_QT=		core gui printsupport svg widgets \
 		buildtools_build linguisttools_build
 
 QMAKE_ARGS+=	BOOST_DIR="${LOCALBASE}"

@@ -1,5 +1,5 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/bazel/Makefile 472586 2018-06-17 02:04:53Z linimon $
+# $FreeBSD: head/devel/bazel/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=		bazel
 DISTVERSION=		0.14.0
@@ -13,6 +13,7 @@ COMMENT=		Fast and correct build system
 LICENSE=		APACHE20
 LICENSE_FILE=		${WRKSRC}/LICENSE
 
+BROKEN_aarch64=		fails to build: java.lang.OutOfMemoryError: Java heap space
 BROKEN_armv6=		fails to package: cp: bazel: No such file or directory
 BROKEN_armv7=		fails to package: cp: bazel: No such file or directory
 BROKEN_powerpc64=	fails to compile: Action failed to execute: java.io.IOException: Cannot run program /usr/bin/clang

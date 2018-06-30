@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/quagga/Makefile 462370 2018-02-20 04:30:35Z pi $
+# $FreeBSD: head/net/quagga/Makefile 473506 2018-06-28 20:18:07Z pi $
 
 PORTNAME=	quagga
 PORTVERSION=	1.2.4
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	gawk:lang/gawk
 
-CONFLICTS=	openbgpd openospfd zebra quagga-esr frr pimd
+CONFLICTS=	frr3 frr4 openbgpd pimd zebra
 
 USES=		compiler:c11 cpe gmake libtool makeinfo \
 		perl5 readline ssl

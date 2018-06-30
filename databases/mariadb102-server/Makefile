@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/mariadb102-server/Makefile 470246 2018-05-17 18:57:17Z brnrd $
+# $FreeBSD: head/databases/mariadb102-server/Makefile 473405 2018-06-26 19:06:47Z brnrd $
 
 PORTNAME?=	mariadb
-PORTVERSION=	10.2.15
+PORTVERSION=	10.2.16
 PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://mirrors.supportex.net/${SITESDIR}/ \

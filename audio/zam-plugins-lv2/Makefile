@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/zam-plugins-lv2/Makefile 471088 2018-05-29 09:17:39Z yuri $
+# $FreeBSD: head/audio/zam-plugins-lv2/Makefile 473173 2018-06-24 01:36:11Z linimon $
 
 PORTNAME=	zam-plugins
 DISTVERSION=	3.10
@@ -10,6 +10,11 @@ COMMENT=	Collection of LADSPA/LV2/VST/JACK audio plugins
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
+BROKEN_powerpc64=	fails to compile: unknown FP unit 'sse'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/include/fftw3.h:math/fftw3

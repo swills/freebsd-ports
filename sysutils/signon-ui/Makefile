@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/signon-ui/Makefile 468640 2018-04-29 18:17:36Z tcberner $
+# $FreeBSD: head/sysutils/signon-ui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	signon-ui
 PORTVERSION=	0.17
+PORTREVISION=	1
 CATEGORIES=	sysutils kde
 DIST_SUBDIR=	KDE/${GL_ACCOUNT}
 
@@ -16,8 +17,8 @@ LIB_DEPENDS=	libaccounts-qt5.so:net-im/libaccounts-qt5 \
 		libsignon-qt5.so:sysutils/signon-qt5 \
 		libproxy.so:net/libproxy
 
-USES=		pkgconfig python qmake tar:bz2
-USE_QT5=	buildtools_build qmake_build webkit widgets
+USES=		pkgconfig python qmake qt:5 tar:bz2
+USE_QT=		buildtools_build qmake_build webkit widgets
 
 # gitlab variables
 USE_GITLAB=	yes

@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/py-psycopg2/Makefile 461298 2018-02-09 14:07:41Z sunpoet $
+# $FreeBSD: head/databases/py-psycopg2/Makefile 473229 2018-06-24 20:16:52Z sunpoet $
 
 PORTNAME=	psycopg2
-PORTVERSION=	2.7.4
+PORTVERSION=	2.7.5
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP \
 		http://initd.org/psycopg/tarballs/PSYCOPG-${PORTVERSION:R:S|.|-|}/

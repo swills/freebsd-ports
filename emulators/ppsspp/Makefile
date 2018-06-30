@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/ppsspp/Makefile 472312 2018-06-13 12:33:13Z jbeich $
+# $FreeBSD: head/emulators/ppsspp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ppsspp
 DISTVERSIONPREFIX=	v
@@ -64,7 +64,8 @@ LIBRETRO_PLIST_FILES=	lib/libretro/${PORTNAME}_libretro.so
 LIBRETRO_IMPLIES=	SDL
 OLDJOY_DESC=	Old joystick support with fixed button mappings (deprecated)
 OLDJOY_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-old-joy
-QT5_USE=	QT5=qmake_build,buildtools_build,linguisttools_build,gui,opengl,widgets
+QT5_USES=	qt:5
+QT5_USE=	QT=qmake_build,buildtools_build,linguisttools_build,gui,opengl,widgets
 QT5_CMAKE_BOOL=	USING_QT_UI
 QT5_VARS=	EXENAME=PPSSPPQt
 SDL_BUILD_DEPENDS=	png>=1.6:graphics/png

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/legesmotus/Makefile 455888 2017-12-10 11:22:29Z amdmi3 $
+# $FreeBSD: head/games/legesmotus/Makefile 473066 2018-06-22 20:31:45Z amdmi3 $
 
 PORTNAME=	legesmotus
 PORTVERSION=	0.4.0
@@ -20,6 +20,8 @@ CONFIGURE_ARGS=	--prefix="${PREFIX}" \
 		--datadir="${DATADIR}"
 USES=		gmake
 MAKE_ENV=	XDIR=${LOCALBASE}
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 PORTDATA=	*
 

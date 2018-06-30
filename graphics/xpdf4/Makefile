@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/xpdf4/Makefile 467809 2018-04-20 01:54:02Z cy $
+# $FreeBSD: head/graphics/xpdf4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xpdf
 PORTVERSION=	4.00
@@ -45,9 +45,9 @@ GUI_CMAKE_ON=		-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Widgets:BOOL=FALSE
 GUI_CMAKE_OFF=		-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Widgets:BOOL=TRUE
 GUI_DESC=		QT5 interface
 GUI_CMAKE_ARGS+=	-DNO_TEXT_SELECT:BOOL=OFF
-GUI_USE=		QT5=buildtools_build,qmake_build,concurrent,core,gui,widgets,printsupport,svg
+GUI_USE=		QT=buildtools_build,qmake_build,concurrent,core,gui,widgets,printsupport,svg
 GUI_PLIST_SUB=		DESKTOPDIR="${DESKTOPDIR}"
-GUI_USES=		desktop-file-utils
+GUI_USES=		desktop-file-utils qt:5
 
 PRINT_CMAKE_ON=		-DXPDFWIDGET_PRINTING:BOOL=ON -DCUPS:BOOL=ON
 PRINT_CMAKE_OFF=	-DXPDFWIDGET_PRINTING:BOOL=OFF -DCUPS:BOOL=OFF

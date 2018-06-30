@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/qt4-style-Kvantum/Makefile 457222 2017-12-25 12:28:37Z rezny $
+# $FreeBSD: head/x11-themes/qt4-style-Kvantum/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	Kvantum
 PORTVERSION=	0.10.5
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USE_GITHUB=	yes
 GH_ACCOUNT=	tsujan
 
-USES=		compiler:c++11-lang qmake
-USE_QT4=	corelib gui svg rcc_build uic_build moc_build
+USES=		compiler:c++11-lang qmake qt:4
+USE_QT=		corelib gui svg rcc_build uic_build moc_build
 USE_XORG=	x11 xext
 
 WRKSRC_SUBDIR=	${PORTNAME}

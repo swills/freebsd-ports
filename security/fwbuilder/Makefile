@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/security/fwbuilder/Makefile 471976 2018-06-08 03:53:35Z linimon $
+# $FreeBSD: head/security/fwbuilder/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fwbuilder
 PORTVERSION=	5.1.0
@@ -28,9 +28,9 @@ CONFLICTS=	fwbuilder-[234].* fwbuilder-devel-* \
 		libfwbuilder-[234].* libfwbuilder-devel-*
 .endif
 
-USES=		autoreconf:build gmake libtool ssl
+USES=		autoreconf:build gmake libtool qmake:no_configure qt:4 ssl
 PLIST_SUB=	BUILD_VERSION=${PORTVERSION}.${BUILD}
-USE_QT4=	corelib \
+USE_QT=		corelib \
 		gui \
 		iconengines \
 		inputmethods \

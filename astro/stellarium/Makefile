@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium/Makefile 465830 2018-03-28 17:20:48Z danfe $
+# $FreeBSD: head/astro/stellarium/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	stellarium
 PORTVERSION=	0.18.0
@@ -17,8 +17,8 @@ CONFLICTS_INSTALL=	${PORTNAME}-qt4-0.12.*
 USE_GITHUB=	yes
 GH_ACCOUNT=	Stellarium
 
-USES=		cmake gettext
-USE_QT5=	qmake_build buildtools_build linguisttools_build \
+USES=		cmake gettext qt:5
+USE_QT=		qmake_build buildtools_build linguisttools_build \
 		concurrent core gui network opengl printsupport widgets
 
 CMAKE_ARGS=	-DENABLE_GPS:BOOL=OFF	# XXX: requires Qt5Positioning
@@ -44,10 +44,12 @@ DOCS_DISTFILES=		stellarium_user_guide-${GUIDE_VERSION}-1.pdf:ug
 TEXTURES_MASTER_SITES=	SF/${PORTNAME}/Extra-data-files/textures:gfx
 TEXTURES_DISTFILES=	textures-1K.zip:gfx
 
-MULTIMEDIA_USE=		QT5=multimedia
+MULTIMEDIA_USES=	qt:5
+MULTIMEDIA_USE=		QT=multimedia
 MULTIMEDIA_CMAKE_OFF=	-DENABLE_MEDIA:BOOL=OFF
 
-TELESCOPE_USE=		QT5=serialport
+TELESCOPE_USES=	qt:5
+TELESCOPE_USE=		QT=serialport
 TELESCOPE_CMAKE_OFF=	-DUSE_PLUGIN_TELESCOPECONTROL:BOOL=OFF
 
 .include <bsd.port.options.mk>
@@ -65,7 +67,7 @@ PLIST_SUB+=	MORE_STARS="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MSCRIPTING}
-USE_QT5+=	script
+USE_QT+=	script
 PLIST_SUB+=	SCRIPTS=""
 .else
 CMAKE_ARGS+=	-DENABLE_SCRIPTING:BOOL=OFF

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-keys/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/devel/hs-keys/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	keys
 PORTVERSION=	3.12
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

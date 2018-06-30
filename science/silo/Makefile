@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni <giffunip@tutopia.com>
-# $FreeBSD: head/science/silo/Makefile 464822 2018-03-17 14:43:34Z dbaio $
+# $FreeBSD: head/science/silo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	silo
 PORTVERSION=	4.10.2
@@ -36,12 +36,12 @@ HDF5_PLIST_SUB_OFF=		SUFX_HDF5=""
 PYTHON_CONFIGURE_ENABLE=	pythonmodule
 PYTHON_USES=			python:2.7
 
+QT4_USES=			qmake:no_env qt:4
 QT4_USE=			XORG=ice,sm,x11,xext,xi,xmu,xt \
-				QT4=corelib,gui,linguisttools_build,moc_build,uic_build
+				QT=corelib,gui,linguisttools_build,moc_build,uic_build
 QT4_CONFIGURE_ON=		--with-Qt-dir=${PREFIX} \
 				--with-Qt-lib="QtGui -lQtCore"
 QT4_CONFIGURE_ENABLE=		silex
-QT4_VARS=			QT_NONSTANDARD=yes
 QT4_DESKTOP_ENTRIES=		"Silex" "Silex browser for Silo files" \
 				"" "silex" "" true
 

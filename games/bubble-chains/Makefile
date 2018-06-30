@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bubble-chains/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/bubble-chains/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	bubble-chains
 PORTVERSION=	0.1.1
@@ -16,12 +16,12 @@ BUILD_DEPENDS=	icotool:graphics/icoutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	SanskritFritz
 
-USES=		dos2unix qmake
+USES=		dos2unix qmake qt:4
 DOS2UNIX_GLOB=	*.pro *.cpp  *.h *.ui *.rc *.htm *.dat *.css
 USE_SDL=	mixer sdl
 USE_GL=		gl
 USE_XORG=	xrandr
-USE_QT4=	moc_build rcc_build uic_build iconengines_run imageformats_run \
+USE_QT=		moc_build rcc_build uic_build iconengines_run imageformats_run \
 		corelib svg xml opengl network
 QMAKE_SOURCE_PATH=	${WRKSRC}/Game.pro
 

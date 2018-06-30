@@ -1,5 +1,5 @@
 # Created by: jamie
-# $FreeBSD: head/games/hex-a-hop/Makefile 425319 2016-11-04 13:23:51Z amdmi3 $
+# $FreeBSD: head/games/hex-a-hop/Makefile 473072 2018-06-22 20:55:12Z amdmi3 $
 
 PORTNAME=	hex-a-hop
 PORTVERSION=	1.1.0
@@ -10,13 +10,14 @@ MASTER_SITES=	SF/${PORTNAME:S/-//g}/${PORTVERSION}
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Puzzle game based on hexagonal tiles
 
-USES=		iconv
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		iconv localbase
 USE_SDL=	sdl
 GNU_CONFIGURE=	yes
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 OPTIONS_DEFINE=	PANGO SOUND NLS DEBUG
 OPTIONS_DEFAULT=	SOUND
@@ -42,6 +43,6 @@ DESKTOP_ENTRIES="Hex-a-Hop" "${COMMENT}" \
 		"hex-a-hop" "LogicGame;Game;" false
 
 post-patch:
-	${REINPLACE_CMD} -E '/CFLAGS|CXXFLAGS/s/-g//' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -E '/CFLAGS|CXXFLAGS/s/-g//' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

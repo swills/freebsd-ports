@@ -1,5 +1,5 @@
 # Created by: Carl Makin <carl@stagecraft.cx>
-# $FreeBSD: head/comms/hamfax/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/hamfax/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	hamfax
 PORTVERSION=	0.8.1
@@ -12,10 +12,10 @@ COMMENT=	QT application for sending and receiving facsimiles over radio
 
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile
 
-USE_QT4=	gui moc_build
+USE_QT=		gui moc_build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
-USES=		gmake pkgconfig tar:bzip2
+USES=		gmake pkgconfig qt:4 tar:bzip2
 
 .include <bsd.port.mk>

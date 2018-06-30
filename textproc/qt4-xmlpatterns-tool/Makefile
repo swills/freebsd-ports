@@ -1,5 +1,5 @@
 # Created by: danny@ricin.com
-# $FreeBSD: head/textproc/qt4-xmlpatterns-tool/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/textproc/qt4-xmlpatterns-tool/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xmlpatterns-tool
 DISTVERSION=	${QT4_VERSION}
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt command-line utility for running XQueries
 
-USE_QT4=	qmake_build xmlpatterns
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		xmlpatterns
 
 HAS_CONFIGURE=	yes
 

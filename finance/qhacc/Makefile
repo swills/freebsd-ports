@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/finance/qhacc/Makefile 468283 2018-04-25 17:11:22Z tcberner $
+# $FreeBSD: head/finance/qhacc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qhacc
 PORTVERSION=	4.3
@@ -16,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libgpgme.so:security/gpgme \
 		libqwt6.so:x11-toolkits/qwt6@qt4
 
-USES=		compiler:c++11-lib qmake:norecursive tar:tgz
-USE_QT4=	corelib gui sql moc_build rcc_build uic_build
+USES=		compiler:c++11-lib qmake:norecursive qt:4 tar:tgz
+USE_QT=		corelib gui sql moc_build rcc_build uic_build
 USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 

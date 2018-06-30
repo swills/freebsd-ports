@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/kf5-kjs/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/www/kf5-kjs/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kjs
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -9,8 +9,8 @@ COMMENT=	KF5 library providing an ECMAScript interpreter
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 pkgconfig tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	ecm doctools
-USE_QT5=	buildtools_build core qmake_build
+USE_QT=		buildtools_build core qmake_build
 
 .include <bsd.port.mk>

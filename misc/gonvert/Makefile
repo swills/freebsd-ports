@@ -1,12 +1,12 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/misc/gonvert/Makefile 463285 2018-03-01 07:11:11Z yuri $
+# $FreeBSD: head/misc/gonvert/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	gonvert
 PORTVERSION=	0.2.38
 CATEGORIES=	misc python gnome
 MASTER_SITES=	http://www.unihedron.com/projects/gonvert/downloads/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Conversion utility that allows conversion between many units
 
 LICENSE=	GPLv2

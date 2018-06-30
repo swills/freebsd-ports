@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/mail/kshowmail/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/mail/kshowmail/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kshowmail
 PORTVERSION=	4.1
@@ -12,9 +12,9 @@ COMMENT=	POP3 mail checker for KDE
 
 LICENSE=	GPLv2
 
-USES=		cmake gettext kde:4 perl5
+USES=		cmake gettext kde:4 perl5 qt:4
 USE_KDE=	automoc4 kdelibs pimlibs
-USE_QT4=	corelib dbus gui network svg xml \
+USE_QT=		corelib dbus gui network svg xml \
 		qmake_build uic_build rcc_build
 USE_PERL5=	build
 

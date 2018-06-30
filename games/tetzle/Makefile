@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/tetzle/Makefile 471935 2018-06-07 17:02:12Z amdmi3 $
+# $FreeBSD: head/games/tetzle/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tetzle
 PORTVERSION=	2.1.3
@@ -14,8 +14,8 @@ COMMENT=	Jigsaw puzzle with tetrominoes
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		compiler:c++11-lib desktop-file-utils qmake tar:bzip2
-USE_QT5=	core gui widgets buildtools_build linguisttools_build
+USES=		compiler:c++11-lib desktop-file-utils qmake qt:5 tar:bzip2
+USE_QT=		core gui widgets buildtools_build linguisttools_build
 USE_GL=		gl
 INSTALLS_ICONS=	yes
 

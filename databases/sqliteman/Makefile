@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/sqliteman/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/databases/sqliteman/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sqliteman
 PORTVERSION=	1.2.2
@@ -12,8 +12,8 @@ COMMENT=	Admin's GUI tool for Sqlite3
 
 LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 
-USES=		cmake sqlite
-USE_QT4=	qmake_build gui moc_build rcc_build uic_build xml sql
+USES=		cmake qt:4 sqlite
+USE_QT=		qmake_build gui moc_build rcc_build uic_build xml sql
 
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

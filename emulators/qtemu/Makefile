@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qtemu/Makefile 425731 2016-11-08 11:23:32Z amdmi3 $
+# $FreeBSD: head/emulators/qtemu/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtemu
 PORTVERSION=	1.0.5
@@ -12,8 +12,8 @@ COMMENT=	Qt 4 based frontend for QEMU
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake tar:bzip2
-USE_QT4=	gui xml uic_build moc_build rcc_build
+USES=		qmake qt:4 tar:bzip2
+USE_QT=		gui xml uic_build moc_build rcc_build
 CONFIGURE_ENV=	LOCALBASE=${LOCALBASE}
 
 DESKTOP_ENTRIES="QtEmu" "QEMU frontend" "" \
@@ -22,7 +22,8 @@ DESKTOP_ENTRIES="QtEmu" "QEMU frontend" "" \
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes
 
-NLS_USE=	QT4=linguisttools_build
+NLS_USES=	qt:4
+NLS_USE=	QT=linguisttools_build
 
 post-configure-NLS-on:
 	(cd ${WRKSRC} && ${LRELEASE} qtemu.pro)

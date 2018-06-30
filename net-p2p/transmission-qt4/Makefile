@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/transmission-qt4/Makefile 463262 2018-02-28 21:09:36Z crees $
+# $FreeBSD: head/net-p2p/transmission-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PKGNAMESUFFIX=	-qt4
 
@@ -17,10 +17,9 @@ MASTERDIR=	${.CURDIR}/../transmission-cli
 PLIST=		${.CURDIR}/pkg-plist
 SLAVEPORT=	qt4
 
-QT_NONSTANDARD=	yes
-USE_QT4=	moc_build qmake_build uic_build rcc_build \
+USE_QT=		moc_build qmake_build uic_build rcc_build \
 		corelib gui dbus network xml
-USES=		compiler:c++11-lib desktop-file-utils
+USES=		compiler:c++11-lib desktop-file-utils qmake:no_env qt:4
 
 EXTRA_CONF_ARGS=--disable-cli \
 		--disable-daemon \

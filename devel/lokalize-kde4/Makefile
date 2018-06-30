@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/lokalize-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/lokalize-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	lokalize
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ COMMENT=	Computer-aided translation system
 
 LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
-USE_QT4=	moc_build qmake_build rcc_build uic_build \
+USE_QT=		moc_build qmake_build rcc_build uic_build \
 		sql
 
 .include <bsd.port.mk>

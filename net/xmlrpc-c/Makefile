@@ -1,8 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/net/xmlrpc-c/Makefile 430986 2017-01-09 17:29:55Z garga $
+# $FreeBSD: head/net/xmlrpc-c/Makefile 473383 2018-06-26 12:47:50Z garga $
 
 PORTNAME=	xmlrpc-c
-PORTVERSION=	1.39.12
+PORTVERSION=	1.39.13
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/Xmlrpc-c%20Super%20Stable/${PORTVERSION}
 

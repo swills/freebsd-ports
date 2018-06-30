@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/krecipes-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/misc/krecipes-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	krecipes
 DISTVERSION=	2.0-beta2
@@ -12,9 +12,9 @@ COMMENT=	KDE4 recipe database
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake gettext kde:4 shared-mime-info
+USES=		cmake gettext kde:4 qt:4 shared-mime-info
 USE_GNOME=	libxml2 libxslt
-USE_QT4=	corelib dbus gui qt3support sql webkit xml \
+USE_QT=		corelib dbus gui qt3support sql webkit xml \
 		moc_build qmake_build rcc_build uic_build
 USE_KDE=	automoc4 kdelibs qimageblitz
 
@@ -24,14 +24,14 @@ OPTIONS_MULTI=		DB
 OPTIONS_MULTI_DB=	SQLITE MYSQL PGSQL
 OPTIONS_DEFAULT=	SQLITE
 
-SQLITE_USES=		sqlite
-SQLITE_USE=		QT4=sql-sqlite3_run
+SQLITE_USES=		qt:4 sqlite
+SQLITE_USE=		QT=sql-sqlite3_run
 SQLITE_CMAKE_BOOL=	WITH_Sqlite
 
-MYSQL_USES=		mysql
-MYSQL_USE=		QT4=sql-mysql_run
+MYSQL_USES=		mysql qt:4
+MYSQL_USE=		QT=sql-mysql_run
 
-PGSQL_USES=		pgsql
-PGSQL_USE=		QT4=sql-pgsql_run
+PGSQL_USES=		pgsql qt:4
+PGSQL_USE=		QT=sql-pgsql_run
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/qt5-style-Kvantum/Makefile 457222 2017-12-25 12:28:37Z rezny $
+# $FreeBSD: head/x11-themes/qt5-style-Kvantum/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	Kvantum
 PORTVERSION=	0.10.5
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USE_GITHUB=	yes
 GH_ACCOUNT=	tsujan
 
-USES=		compiler:c++11-lang qmake
-USE_QT5=	core gui svg widgets x11extras buildtools_build linguisttools_build
+USES=		compiler:c++11-lang qmake qt:5
+USE_QT=		core gui svg widgets x11extras buildtools_build linguisttools_build
 USE_XORG=	x11 xext
 USE_GL=		gl
 

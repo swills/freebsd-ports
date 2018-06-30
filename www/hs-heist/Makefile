@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/hs-heist/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/www/hs-heist/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	heist
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

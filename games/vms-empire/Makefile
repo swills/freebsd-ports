@@ -1,12 +1,12 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/vms-empire/Makefile 408114 2016-02-04 22:33:18Z marino $
+# $FreeBSD: head/games/vms-empire/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	vms-empire
 PORTVERSION=	1.14
 CATEGORIES=	games
 MASTER_SITES=	http://www.catb.org/~esr/vms-empire/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simulation of a full-scale war between two emperors
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/ntop/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/net/ntop/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	ntop
 PORTVERSION=	5.0.1
@@ -7,7 +7,7 @@ PORTREVISION=	13
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Stable
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network monitoring tool with command line and web interfaces
 
 LICENSE=	GPLv3

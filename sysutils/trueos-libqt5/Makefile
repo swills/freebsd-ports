@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/trueos-libqt5/Makefile 453599 2017-11-06 07:51:57Z araujo $
+# $FreeBSD: head/sysutils/trueos-libqt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	trueos-libqt5
 PORTVERSION=	20171003
@@ -16,9 +16,9 @@ MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 MAKE_JOBS_UNSAFE=	yes
 
-USES=		qmake shebangfix tar:xz
+USES=		qmake qt:5 shebangfix tar:xz
 USE_LDCONFIG=	yes
-USE_QT5=	core gui network svg linguist \
+USE_QT=		core gui network svg linguist \
 		buildtools x11extras widgets
 USE_GL+=	gl
 

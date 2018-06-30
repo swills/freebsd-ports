@@ -1,9 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-shell-extension-audio-output-switcher/Makefile 429612 2016-12-27 12:20:41Z amdmi3 $
+# $FreeBSD: head/deskutils/gnome-shell-extension-audio-output-switcher/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	gnome-shell-extension-audio-output-switcher
 PORTVERSION=	0.0.0.20140520
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	deskutils gnome
 DIST_SUBDIR=	gnome3
 

@@ -1,5 +1,5 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/editors/focuswriter/Makefile 471211 2018-05-31 14:22:47Z swills $
+# $FreeBSD: head/editors/focuswriter/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	focuswriter
 DISTVERSIONPREFIX=	v
@@ -16,11 +16,11 @@ LICENSE_FILE_LGPL3+ =	${WRKSRC}/resources/images/icons/oxygen/COPYING
 
 LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 
-USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake
+USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	gottcode
 USE_GL=		gl
-USE_QT5=	concurrent core gui multimedia network printsupport widgets \
+USE_QT=		concurrent core gui multimedia network printsupport widgets \
 		buildtools_build linguisttools_build
 
 PORTDATA=	*

@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/cad/leocad/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/cad/leocad/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	leocad
 PORTVERSION=	0.80.3
@@ -19,8 +19,8 @@ LIB_DEPENDS=	libpng.so:graphics/png
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		desktop-file-utils gmake jpeg pkgconfig qmake shared-mime-info
-USE_QT4=	moc_build rcc_build uic_build iconengines_run imageformats_run \
+USES=		desktop-file-utils gmake jpeg pkgconfig qmake qt:4 shared-mime-info
+USE_QT=		moc_build rcc_build uic_build iconengines_run imageformats_run \
 		corelib gui network opengl
 USE_GL=		glut
 USE_GNOME=	gtk20

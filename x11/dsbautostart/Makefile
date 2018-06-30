@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/dsbautostart/Makefile 449498 2017-09-09 16:48:31Z tobik $
+# $FreeBSD: head/x11/dsbautostart/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dsbautostart
 PORTVERSION=	1.1
@@ -11,9 +11,9 @@ COMMENT=	Manage commands to be executed at X session start
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		tar:tgz qmake
+USES=		qt:5 tar:tgz qmake
 
 USE_GL=		gl
-USE_QT5=	buildtools_build core gui linguisttools_build widgets
+USE_QT=		buildtools_build core gui linguisttools_build widgets
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/fbreader/Makefile 460683 2018-02-02 09:49:17Z amdmi3 $
+# $FreeBSD: head/deskutils/fbreader/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fbreader
 PORTVERSION=	0.99.6
@@ -45,7 +45,8 @@ OPTIONS_SUB=		yes
 GTK2_USE=	gnome=gtk20
 GTK2_MAKE_ENV=	UI_TYPE=gtk
 
-QT4_USE=	qt4=gui,corelib,imageformats,network,moc_build
+QT4_USES=	qt:4
+QT4_USE=	qt=gui,corelib,imageformats,network,moc_build
 QT4_LIBS=	-L${QT_LIBDIR}
 QT4_MAKE_ENV=	UI_TYPE=qt4
 

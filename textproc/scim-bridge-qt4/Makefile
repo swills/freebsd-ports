@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/textproc/scim-bridge-qt4/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/scim-bridge-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	scim-bridge
 PORTVERSION=	0.4.16
@@ -18,9 +18,8 @@ LICENSE_FILE_LGPL21=	${WRKSRC}/doc/LICENSE.LGPL
 
 RUN_DEPENDS=	scim-bridge:textproc/scim-bridge
 
-USE_QT4=	corelib gui moc_build
-QT_NONSTANDARD=	yes
-USES=		gettext gmake libtool pkgconfig
+USE_QT=		corelib gui moc_build
+USES=		gettext gmake libtool pkgconfig qmake:no_env qt:4
 GNU_CONFIGURE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include -D__STDC_ISO_10646__

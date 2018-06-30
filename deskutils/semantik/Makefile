@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/semantik/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/deskutils/semantik/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	semantik
 DISTVERSION=	0.9.5
@@ -12,14 +12,13 @@ COMMENT=	KDE mind mapping tool
 
 LICENSE=	GPLv3
 
-USES=		kde:4 pkgconfig python:2.7 shebangfix tar:bzip2 waf \
+USES=		kde:4 pkgconfig python:2.7 qmake:no_env,no_configure qt:4 shebangfix tar:bzip2 waf \
 		gettext shared-mime-info
 USE_KDE=	kdelibs
 USE_OCAML=	yes
 NO_OCAML_RUNDEPENDS=	yes
-USE_QT4=	corelib gui linguist_build svg webkit xml \
+USE_QT=		corelib gui linguist_build svg webkit xml \
 		moc_build qmake_build uic_build
-QT_NONSTANDARD=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CXXFLAGS}" \
 		PATH="${KDE_PREFIX}/bin:$$PATH" \
 		WAF_HOME="${WRKSRC}"

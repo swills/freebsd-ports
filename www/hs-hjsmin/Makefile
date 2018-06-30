@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-hjsmin/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/www/hs-hjsmin/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	hjsmin
 PORTVERSION=	0.2.0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/clustalx/Makefile 470575 2018-05-21 20:56:17Z jwb $
+# $FreeBSD: head/biology/clustalx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	clustalx
 DISTVERSION=	2.1
@@ -12,8 +12,8 @@ COMMENT=	Multiple alignment of nucleic acid and protein sequences with GUI
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake
-USE_QT4=	corelib gui moc qmake_build xml
+USES=		qmake qt:4
+USE_QT=		corelib gui moc qmake_build xml
 
 PLIST_FILES=	bin/clustalx \
 		${DATADIR}/colprot.xml \

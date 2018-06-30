@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/devel/svn2git/Makefile 471366 2018-06-02 11:46:33Z dbn $
+# $FreeBSD: head/devel/svn2git/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	svn2git
 PORTVERSION=	1.0.12
@@ -17,9 +17,9 @@ RUN_DEPENDS=	git:devel/git \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-subversion>=0:devel/p5-subversion
 
-USES=		qmake
+USES=		qmake qt:5
 USE_GITHUB=	yes
-USE_QT5=	core
+USE_QT=		core
 GH_ACCOUNT=	svn-all-fast-export
 
 OPTIONS_DEFINE=	FREEBSD_REPO

@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hyperrogue/Makefile 444575 2017-06-28 12:46:46Z amdmi3 $
+# $FreeBSD: head/games/hyperrogue/Makefile 473336 2018-06-25 20:32:30Z amdmi3 $
 
 PORTNAME=	hyperrogue
-PORTVERSION=	9.4g
+PORTVERSION=	10.4f
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 
@@ -12,9 +12,9 @@ COMMENT=	Roguelike in a non-euclidean world
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libpng.so:graphics/png
-
 BROKEN_powerpc64=	fails to link: langen-langen.o: relocation truncated to fit: R_PPC64_TOC16_DS
+
+LIB_DEPENDS=	libpng.so:graphics/png
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	zenorogue
@@ -22,7 +22,7 @@ GH_ACCOUNT=	zenorogue
 USES=		autoreconf localbase
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl mixer gfx ttf
-USE_GL=		gl
+USE_GL=		gl glew
 
 # remove -O2, otherwise clang takes gigabytes of memory
 CFLAGS:=	${CFLAGS:C/-O[0-9]//} -DFHS

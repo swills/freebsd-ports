@@ -1,4 +1,4 @@
- #$FreeBSD: head/net/libmediawiki/Makefile 468520 2018-04-28 07:39:40Z tcberner $
+ #$FreeBSD: head/net/libmediawiki/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libmediawiki
 DISTVERSION=	5.37.0
@@ -12,9 +12,9 @@ COMMENT=	KDE library for accessing MediaWiki sites
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
-USES=		cmake:outsource kde:5 tar:xz
+USES=		cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	coreaddons ecm
-USE_QT5=	core network testlib \
+USE_QT=		core network testlib \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

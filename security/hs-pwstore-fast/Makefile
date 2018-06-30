@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-pwstore-fast/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-pwstore-fast/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	pwstore-fast
 PORTVERSION=	2.4.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

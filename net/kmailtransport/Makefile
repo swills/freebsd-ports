@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kmailtransport/Makefile 467007 2018-04-10 19:09:05Z tcberner $
+# $FreeBSD: head/net/kmailtransport/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kmailtransport
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,12 +11,12 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons i18n \
 		itemmodels jobwidgets kcmutils kio service wallet widgetsaddons
 # pim components
 USE_KDE+=	akonadi akonadimime ksmtp mime
-USE_QT5=	core dbus gui network widgets xml \
+USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qt5-qtdiag/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/sysutils/qt5-qtdiag/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtdiag
 DISTVERSION=	${QT5_VERSION}
@@ -8,9 +8,8 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Tool for reporting diagnostic information about Qt and its environment
 
-USES=		qmake:outsource
-USE_QT5=	core gui
-QT_DIST=	tools
+USES=		qmake:outsource qt-dist:5,tools
+USE_QT=		core gui
 
 PLIST_FILES=	${QT_BINDIR}/qtdiag
 

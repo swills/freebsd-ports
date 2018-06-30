@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-desktop-applets/Makefile 466968 2018-04-10 16:18:29Z tcberner $
+# $FreeBSD: head/net-im/ktp-desktop-applets/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ktp-desktop-applets
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,9 +9,9 @@ COMMENT=	KDE instant messaging plasma widgets
 
 LIB_DEPENDS=	libKTpCommonInternals.so:net-im/ktp-common-internals
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm plasma-framework windowsystem
-USE_QT5=	core dbus gui network qml widgets \
+USE_QT=		core dbus gui network qml widgets \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

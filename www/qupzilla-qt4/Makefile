@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qupzilla-qt4/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/www/qupzilla-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qupzilla
 PORTVERSION=	1.8.9
@@ -17,8 +17,8 @@ LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 
 CONFLICTS_INSTALL=	${PORTNAME}-qt5*
 
-USES=		desktop-file-utils pkgconfig qmake ssl tar:xz
-USE_QT4=	corelib gui network script sql webkit xml \
+USES=		desktop-file-utils pkgconfig qmake qt:4 ssl tar:xz
+USE_QT=		corelib gui network script sql webkit xml \
 		linguisttools_build moc_build rcc_build uic_build \
 		imageformats_run sql-sqlite3_run
 USE_XORG=	x11
@@ -31,7 +31,8 @@ OPTIONS_DEFINE=	DBUS DEBUG GNOMEKEYRING KWALLET
 OPTIONS_DEFAULT=DBUS
 OPTIONS_SUB=	yes
 
-DBUS_USE=		QT4=dbus
+DBUS_USES=	qt:4
+DBUS_USE=		QT=dbus
 DBUS_CONFIGURE_ENV_OFF=	DISABLE_DBUS="true"
 
 GNOMEKEYRING_LIB_DEPENDS=	libgnome-keyring.so:security/libgnome-keyring

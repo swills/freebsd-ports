@@ -1,16 +1,17 @@
-# $FreeBSD: head/audio/libkcompactdisc/Makefile 466811 2018-04-08 17:35:41Z tcberner $
+# $FreeBSD: head/audio/libkcompactdisc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkcompactdisc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	audio kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE library for interfacing with audio CDs
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	coreaddons ecm emoticons i18n itemmodels itemviews \
 		kdelibs4support solid
-USE_QT5=	core dbus phonon4\
+USE_QT=		core dbus phonon4\
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

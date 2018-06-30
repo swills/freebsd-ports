@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/awless/Makefile 467390 2018-04-15 13:01:18Z dbaio $
+# $FreeBSD: head/devel/awless/Makefile 473148 2018-06-23 18:21:42Z joneum $
 
 PORTNAME=	awless
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.1.10
+DISTVERSION=	0.1.11
 CATEGORIES=	devel
 
 MAINTAINER=	dg@syrec.org

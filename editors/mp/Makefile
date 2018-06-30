@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/editors/mp/Makefile 464480 2018-03-14 10:01:31Z gahr $
+# $FreeBSD: head/editors/mp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mp
 DISTVERSION=	5.2.13
@@ -52,14 +52,15 @@ NCURSES_USES=		ncurses
 NCURSES_CONFIGURE_WITH=	curses
 NCURSES_CFLAGS=		-I${NCURSESBASE}/include
 
-QT4_USE=		qt4=corelib,gui,moc_build \
+QT4_USES=		qmake:no_env qt:4
+QT4_USE=		qt=corelib,gui,moc_build \
 			xorg=x11
 QT4_CONFIGURE_WITH=	qt4
 
-QT5_USES=		compiler:c++11-lang
+QT5_USES=		compiler:c++11-lang qmake:no_env qt:5
 QT5_USE=		cxxstd=-std=c++11 \
 			gl=gl \
-			qt5=buildtools_build,core,gui,widgets
+			qt=buildtools_build,core,gui,widgets
 QT5_CONFIGURE_WITH=	qt5
 
 .include <bsd.port.options.mk>
@@ -81,7 +82,6 @@ CONFIGURE_ARGS+=	--without-gtk
 DESKTOP_ENTRIES="Minimum Profit" "" "mp" "mp-5" "Utility;TextEditor;Qt;" ""
 CONFIGURE_ARGS+=--with-moc=${MOC}
 CONFIGURE_ENV+=	CCLINK="${CXX}"
-QT_NONSTANDARD=	yes
 .endif
 
 post-patch:

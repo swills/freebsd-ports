@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/plasma5-ksysguard/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-ksysguard/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ksysguard
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -8,13 +8,13 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 utility to track and control the running processes
 
 USES=		cmake:outsource compiler:c++11-lib cpe desktop-file-utils \
-		gettext kde:5 tar:xz
+		gettext kde:5 qt:5 tar:xz
 USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		dbusaddons emoticons i18n iconthemes init itemmodels \
 		itemviews jobwidgets kdelibs4support kio libksysguard \
 		newstuff notifications service widgetsaddons windowsystem \
 		xmlgui
-USE_QT5=	concurrent core dbus gui network widgets xml \
+USE_QT=		concurrent core dbus gui network widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	INOTIFY

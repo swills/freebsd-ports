@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hwloc/Makefile 462617 2018-02-22 18:02:01Z tijl $
+# $FreeBSD: head/devel/hwloc/Makefile 473369 2018-06-26 03:18:29Z danilo $
 
 PORTNAME=	hwloc
 PORTVERSION=	1.11.7
@@ -28,7 +28,7 @@ USE_GNOME=	libxml2
 
 PORTDOCS=	*
 
-ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386
+ONLY_FOR_ARCHS=		amd64 aarch64 armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	has not been ported to this architecture
 
 OPTIONS_DEFINE=	CAIRO DOCS

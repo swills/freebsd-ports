@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/graphics/kphotoalbum-kde4/Makefile 468639 2018-04-29 17:56:08Z tcberner $
+# $FreeBSD: head/graphics/kphotoalbum-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kphotoalbum
 PORTVERSION=	4.4
@@ -16,9 +16,9 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2
 
 SHEBANG_FILES=	script/open-raw.pl script/kpa-backup.sh
 
-USES=		cmake:outsource jpeg kde:4 pkgconfig shebangfix tar:bzip2
+USES=		cmake:outsource jpeg kde:4 pkgconfig qt:4 shebangfix tar:bzip2
 USE_KDE=	kdelibs libkdcraw libkipi automoc4
-USE_QT4=	phonon sql \
+USE_QT=		phonon sql \
 		qmake_build moc_build rcc_build uic_build
 
 OPTIONS_DEFINE=	MARBLE NLS

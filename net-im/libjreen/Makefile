@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/libjreen/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/net-im/libjreen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libjreen
 PORTVERSION=	1.1.1
@@ -21,9 +21,9 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
-USE_QT4=	moc_build qmake_build rcc_build network
+USE_QT=		moc_build qmake_build rcc_build network
 
-USES=		cmake pkgconfig:build
+USES=		cmake pkgconfig:build qt:4
 
 pre-configure:
 	${REINPLACE_CMD} -e 's,lib.*/pkgconfig,libdata/pkgconfig,' \

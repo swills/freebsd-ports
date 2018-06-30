@@ -1,5 +1,5 @@
 # Created by: teramoto@comm.eng.osaka-u.ac.jp
-# $FreeBSD: head/security/gpgme/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/gpgme/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gpgme
 PORTVERSION=	1.10.0
@@ -71,15 +71,15 @@ NO_TEST=	yes
 
 .  if ${SLAVEPORT} == "qt5"
 LIB_DEPENDS+=	libgpgmepp.so:security/gpgme-cpp
-USES+=		compiler:c++11-lib pkgconfig
-USE_QT5=	buildtools_build core
+USES+=		compiler:c++11-lib pkgconfig qt:5
+USE_QT=	buildtools_build core
 CONFIGURE_ARGS+=--enable-languages="cpp qt"
 DOCSDIR=	${PORTNAME}${PKGNAMESUFFIX}
 
 OPTIONS_DEFINE+=	DOXYGEN
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
 			dot:graphics/graphviz
-TEST_USE=		QT5=testlib_build
+TEST_USE=		QT=testlib_build
 .  endif
 
 .  if ${SLAVEPORT} == "python"

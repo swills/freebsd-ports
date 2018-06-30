@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/guitarix-lv2/Makefile 471447 2018-06-03 05:22:58Z yuri $
+# $FreeBSD: head/audio/guitarix-lv2/Makefile 473173 2018-06-24 01:36:11Z linimon $
 
 PORTNAME=	guitarix
 DISTVERSION=	0.37.1
@@ -13,6 +13,11 @@ COMMENT=	Virtual versatile amplification for Jack and set of LV2 plugins
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
+BROKEN_powerpc64=	fails to compile: unknown FP unit 'sse'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/include/fftw3.h:math/fftw3 \

@@ -1,5 +1,5 @@
 # Created by: Norikatsu Shigemura <nork@FreeBSD.org>
-# $FreeBSD: head/security/tpmmanager/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/tpmmanager/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tpmmanager
 PORTVERSION=	0.8.1
@@ -14,8 +14,8 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libtspi.so:security/trousers
 
-USES=		qmake
-USE_QT4=	gui moc_build rcc_build uic_build
+USES=		qmake qt:4
+USE_QT=		gui moc_build rcc_build uic_build
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	*

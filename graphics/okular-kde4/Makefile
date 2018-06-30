@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/okular-kde4/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/graphics/okular-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	okular
 PORTVERSION=	${KDE4_VERSION}
@@ -19,10 +19,10 @@ LIB_DEPENDS=	libdjvulibre.so:graphics/djvulibre \
 		libepub.so:textproc/ebook-tools \
 		libqmobipocket.so:graphics/kdegraphics-mobipocket-kde4
 
-USES=		cmake:outsource jpeg kde:4 pkgconfig tar:xz
+USES=		cmake:outsource jpeg kde:4 pkgconfig qt:4 tar:xz
 USE_KDE=	kdelibs automoc4 qimageblitz kactivities \
 		libkexiv2
-USE_QT4=	corelib declarative gui opengl xml \
+USE_QT=		corelib declarative gui opengl xml \
 		qmake_build moc_build uic_build rcc_build
 USE_LDCONFIG=	yes
 

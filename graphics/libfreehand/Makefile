@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libfreehand/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/graphics/libfreehand/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	libfreehand
 PORTVERSION=	0.1.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	LODEV
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kphotoalbum/Makefile 468639 2018-04-29 17:56:08Z tcberner $
+# $FreeBSD: head/graphics/kphotoalbum/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kphotoalbum
 DISTVERSION=	5.3
@@ -14,12 +14,12 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 		libKF5KGeoMap.so:astro/libkgeomap \
 		libKF5Kipi.so:graphics/libkipi
 
-USES=		cmake:outsource jpeg kde:5 pkgconfig shebangfix tar:xz
+USES=		cmake:outsource jpeg kde:5 pkgconfig qt:5 shebangfix tar:xz
 USE_KDE=	archive auth codecs completion config \
 		configwidgets coreaddons ecm i18n \
 		iconthemes jobwidgets kio marble service \
 		sonnet textwidgets widgetsaddons xmlgui
-USE_QT5=	core dbus gui network phonon4 sql webkit \
+USE_QT=		core dbus gui network phonon4 sql webkit \
 		widgets xml \
 		buildtools_build qmake_build
 SHEBANG_FILES=	scripts/open-raw.pl scripts/kpa-backup.sh

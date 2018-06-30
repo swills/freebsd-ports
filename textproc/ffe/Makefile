@@ -1,12 +1,12 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/ffe/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/textproc/ffe/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	ffe
 DISTVERSION=	0.3.7-1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/ff-extractor/ff-extractor/${DISTVERSION}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Flat file extractor
 
 LICENSE=	GPLv2+

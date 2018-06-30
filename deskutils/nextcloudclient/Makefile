@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/nextcloudclient/Makefile 465581 2018-03-26 11:36:08Z mr $
+# $FreeBSD: head/deskutils/nextcloudclient/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	nextcloudclient
 PORTVERSION=	0.0.0.20180323
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libinotify.so:devel/libinotify \
 		libqt5keychain.so:security/qtkeychain@qt5
 
 USES=		cmake:outsource,noninja compiler:c++11-lib gmake iconv \
-		localbase:ldflags pkgconfig sqlite ssl
-USE_QT5=	buildtools_build concurrent core dbus gui linguist_build network \
+		localbase:ldflags pkgconfig qt:5 sqlite ssl
+USE_QT=		buildtools_build concurrent core dbus gui linguist_build network \
 		qmake_build sql webkit widgets xml
 CMAKE_ARGS=	-DBUILD_WITH_QT4:BOOL=OFF \
 		-DCMAKE_INSTALL_MANDIR:STRING=man \

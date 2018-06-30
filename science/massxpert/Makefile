@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/science/massxpert/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/massxpert/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	massxpert
 PORTVERSION=	3.4.0
@@ -20,10 +20,10 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libfontconfig.so:x11-fonts/fontconfig
 
 USE_GCC=	any
-USES=		cmake gettext tar:bzip2
+USES=		cmake gettext qt:4 tar:bzip2
 USE_XORG=	ice sm x11 xau xcb xdmcp xext xrender
 USE_GNOME=	glib20
-USE_QT4=	corelib gui xml rcc_build qmake_build uic_build moc_build \
+USE_QT=		corelib gui xml rcc_build qmake_build uic_build moc_build \
 		svg
 USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=	yes

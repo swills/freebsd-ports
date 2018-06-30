@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Call-Context/Makefile 469622 2018-05-11 10:22:25Z pi $
+# $FreeBSD: head/devel/p5-Call-Context/Makefile 473539 2018-06-29 10:10:35Z mat $
 
 PORTNAME=	Call-Context
 PORTVERSION=	0.02
@@ -19,8 +19,5 @@ USES=	perl5
 USE_PERL5=	configure
 PLIST_FILES=	${SITE_PERL_REL}/Call/Context.pm \
 		${SITE_MAN3_REL}/Call::Context.3.gz
-
-pre-install:
-		${RM} ${WRKSRC}/blib/lib/Call/README.pod
 
 .include <bsd.port.mk>

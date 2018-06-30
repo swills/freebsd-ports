@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/deskutils/plasma-applet-fancytasks/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/deskutils/plasma-applet-fancytasks/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fancytasks
 PORTVERSION=	1.1.0
@@ -14,9 +14,9 @@ COMMENT=	Plasmoid fancy representation of your tasks and launchers
 
 LICENSE=	GPLv2
 
-USES=		cmake kde:4 tar:bzip2
+USES=		cmake kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs workspace qimageblitz
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USE_QT=		qmake_build moc_build rcc_build uic_build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

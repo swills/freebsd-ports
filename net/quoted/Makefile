@@ -1,9 +1,9 @@
 # Created by: Bob Frazier
-# $FreeBSD: head/net/quoted/Makefile 359793 2014-06-29 21:17:54Z swills $
+# $FreeBSD: head/net/quoted/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	quoted
 PORTVERSION=	1.01
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://www.mrp3.com/webutil/
 

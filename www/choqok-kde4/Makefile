@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/www/choqok-kde4/Makefile 468595 2018-04-28 21:56:24Z tcberner $
+# $FreeBSD: head/www/choqok-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	choqok
 PORTVERSION=	1.5
@@ -18,9 +18,9 @@ LIB_DEPENDS=	libqjson.so:devel/qjson@qt4 \
 		libqoauth.so:net/qoauth \
 		libtelepathy-qt4.so:net-im/telepathy-qt4
 
-USES=		cmake gettext kde:4 tar:xz
+USES=		cmake gettext kde:4 qt:4 tar:xz
 USE_KDE=	attica automoc4 kdelibs
-USE_QT4=	gui imageformats_run network \
+USE_QT=		gui imageformats_run network \
 		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 

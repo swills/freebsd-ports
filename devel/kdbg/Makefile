@@ -1,5 +1,5 @@
 # Created by: Chris D. Faulhaber <jedgar@fxp.org>
-# $FreeBSD: head/devel/kdbg/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/devel/kdbg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdbg
 PORTVERSION=	2.5.6
@@ -12,9 +12,9 @@ COMMENT=	Graphical user interface around gdb using KDE
 
 LICENSE=	GPLv2
 
-USES=		cmake kde:4
+USES=		cmake kde:4 qt:4
 USE_KDE=	kdelibs automoc4
-USE_QT4=	moc_build qmake_build rcc_build uic_build network xml dbus corelib gui svg
+USE_QT=		moc_build qmake_build rcc_build uic_build network xml dbus corelib gui svg
 INSTALLS_ICONS=	yes
 
 OPTIONS_DEFINE=	NLS

@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/libmspub01/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/print/libmspub01/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	libmspub
 PORTVERSION=	0.1.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	print graphics devel
 MASTER_SITES=	LODEV/${PORTNAME}
 PKGNAMESUFFIX=	01

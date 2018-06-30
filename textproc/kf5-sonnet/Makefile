@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/kf5-sonnet/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/textproc/kf5-sonnet/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sonnet
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,9 +10,9 @@ COMMENT=	KF5 plugin-based spell checking library
 LIB_DEPENDS=	libaspell.so:textproc/aspell \
 		libhunspell-1.6.so:textproc/hunspell
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT5=	buildtools_build core gui linguisttools qmake_build \
+USE_QT=		buildtools_build core gui linguisttools qmake_build \
 		testlib widgets
 
 .include <bsd.port.mk>

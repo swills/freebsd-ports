@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/sysadm/Makefile 445169 2017-07-06 20:40:51Z tcberner $
+# $FreeBSD: head/sysutils/sysadm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sysadm
 PORTVERSION=	1.0
@@ -13,8 +13,8 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 WRKSRC_SUBDIR=	src
-USE_QT5=	concurrent core network buildtools qmake gui websockets sql
-USES=		pkgconfig tar:xz qmake ssl
+USE_QT=		concurrent core network buildtools qmake gui websockets sql
+USES=		pkgconfig qt:5 tar:xz qmake ssl
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 USE_GITHUB=	yes

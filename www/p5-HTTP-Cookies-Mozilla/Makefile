@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-HTTP-Cookies-Mozilla/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTTP-Cookies-Mozilla/Makefile 473433 2018-06-27 12:09:53Z wen $
 
 PORTNAME=	HTTP-Cookies-Mozilla
-PORTVERSION=	2.033
+PORTVERSION=	2.034
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

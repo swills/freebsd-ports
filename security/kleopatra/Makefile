@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kleopatra/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/security/kleopatra/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kleopatra
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -14,12 +14,12 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpgmepp.so:security/gpgme-cpp \
 		libqgpgme.so:security/gpgme-qt5
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons \
 		doctools ecm i18n iconthemes itemmodels kcmutils notifications \
 		service sonnet textwidgets widgetsaddons windowsystem xmlgui \
 		libkleo mime
-USE_QT5=	core dbus gui network printsupport testlib widgets xml \
+USE_QT=		core dbus gui network printsupport testlib widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

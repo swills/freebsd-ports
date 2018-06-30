@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/sysutils/knutclient-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/sysutils/knutclient-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	knutclient
 PORTVERSION=	1.0.4
@@ -19,8 +19,8 @@ LIB_DEPENDS=	libqimageblitz.so:x11/qimageblitz
 
 CONFLICTS=	knutclient-0.*
 
-USES=		cmake gettext kde:4
+USES=		cmake gettext kde:4 qt:4
 USE_KDE=	kdelibs automoc4
-USE_QT4=	corelib gui qmake_build moc_build rcc_build uic_build
+USE_QT=		corelib gui qmake_build moc_build rcc_build uic_build
 
 .include <bsd.port.mk>

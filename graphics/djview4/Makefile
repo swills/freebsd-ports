@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <stas@FreeBSD.org>
-# $FreeBSD: head/graphics/djview4/Makefile 416903 2016-06-14 18:03:21Z pi $
+# $FreeBSD: head/graphics/djview4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	djview
 PORTVERSION=	4.10.6
@@ -33,9 +33,11 @@ OPTIONS_SINGLE_QT=	QT4 QT5
 OPTIONS_DEFAULT=	QT5
 QT_DESC=		Qt toolkit
 
-QT4_USE=	QT4=corelib,gui,network,opengl,linguisttools_build,moc_build,qmake_build,rcc_build,uic_build
+QT4_USES=	qt:4
+QT4_USE=	QT=corelib,gui,network,opengl,linguisttools_build,moc_build,qmake_build,rcc_build,uic_build
 QT4_USE+=	XORG=x11
-QT5_USE=	QT5=core,gui,network,opengl,printsupport,widgets,buildtools_build,linguisttools_build,qmake_build
+QT5_USES=	qt:5
+QT5_USE=	QT=core,gui,network,opengl,printsupport,widgets,buildtools_build,linguisttools_build,qmake_build
 
 post-patch:
 # Use prebuilt icons, without using conversion tool

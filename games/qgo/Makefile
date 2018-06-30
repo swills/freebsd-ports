@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/games/qgo/Makefile 413438 2016-04-16 12:29:27Z danfe $
+# $FreeBSD: head/games/qgo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qgo
 PORTVERSION=	2.s764
@@ -12,8 +12,8 @@ COMMENT=	Go board and SGF editor written with the Qt library
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		desktop-file-utils qmake tar:bzip2
-USE_QT4=	gui network qtestlib moc_build rcc_build uic_build
+USES=		desktop-file-utils qmake qt:4 tar:bzip2
+USE_QT=		gui network qtestlib moc_build rcc_build uic_build
 
 PLIST_FILES=	bin/qgo share/applications/qgo.desktop share/pixmaps/qgo.png
 

@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/misc/qt4-doc/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/misc/qt4-doc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	doc
 DISTVERSION=	${QT4_VERSION}
@@ -10,8 +10,7 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt documentation
 
-USE_QT4=	# empty
-QT_DIST=	yes
+USES=		qmake:no_configure qt-dist:4
 NO_BUILD=	yes
 
 EXTRACT_AFTER_ARGS=	'${DISTNAME}/doc'

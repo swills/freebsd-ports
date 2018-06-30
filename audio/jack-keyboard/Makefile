@@ -1,9 +1,8 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/jack-keyboard/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/jack-keyboard/Makefile 473378 2018-06-26 09:09:51Z hselasky $
 
 PORTNAME=	jack-keyboard
-DISTVERSION=	2.7.1
-PORTREVISION=	2
+DISTVERSION=	2.7.2
 CATEGORIES=	audio
 MASTER_SITES=	SF \
 		http://home.selasky.org:8192/distfiles/

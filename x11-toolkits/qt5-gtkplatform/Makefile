@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5-gtkplatform/Makefile 458486 2018-01-08 21:59:15Z rakuco $
+# $FreeBSD: head/x11-toolkits/qt5-gtkplatform/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gtkplatform
 DISTVERSION=	0.2.2
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 
@@ -19,9 +20,9 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libudev.so:devel/libudev-devd \
 		libxkbcommon.so:x11/libxkbcommon
 
-USES=		qmake:outsource pkgconfig
+USES=		qmake:outsource pkgconfig qt:5
 USE_GNOME=	gtk30 cairo gdkpixbuf2
-USE_QT5=	buildtools_build core gui widgets dbus
+USE_QT=		buildtools_build core gui widgets dbus
 USE_XORG=	x11 xext xrender
 USE_GL=		gl egl
 

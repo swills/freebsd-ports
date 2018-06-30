@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/beediff/Makefile 425747 2016-11-08 15:15:42Z amdmi3 $
+# $FreeBSD: head/textproc/beediff/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	beediff
 PORTVERSION=	1.9
@@ -13,8 +13,8 @@ COMMENT=	Qt 4 based diff frontend
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/licence.txt
 
-USES=		qmake
-USE_QT4=	corelib gui moc_build rcc_build
+USES=		qmake qt:4
+USE_QT=		corelib gui moc_build rcc_build
 USE_XORG=	x11 xext
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

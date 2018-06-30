@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/vcflib/Makefile 467553 2018-04-17 03:11:39Z jwb $
+# $FreeBSD: head/biology/vcflib/Makefile 473010 2018-06-22 00:03:08Z linimon $
 
 PORTNAME=		vcflib
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,8 @@ MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	C++ library and CLI tools for parsing and manipulating VCF files
 
 LICENSE=	MIT
+
+BROKEN_aarch64=		fails to compile: mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
 LIB_DEPENDS=	libhts.so:biology/htslib \
 		libtabix.so:biology/tabixpp \

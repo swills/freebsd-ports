@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/burplex/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/burplex/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	burplex
 PORTVERSION=	1.0.0
@@ -14,8 +14,8 @@ LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	${LOCALBASE}/bin/dcraw:graphics/dcraw
 
-USES=		qmake
-USE_QT4=	gui uic_build moc_build rcc_build \
+USES=		qmake qt:4
+USE_QT=		gui uic_build moc_build rcc_build \
 		imageformats_run
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

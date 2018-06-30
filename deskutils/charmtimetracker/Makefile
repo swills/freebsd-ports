@@ -1,5 +1,5 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/deskutils/charmtimetracker/Makefile 450759 2017-09-27 15:46:39Z adridg $
+# $FreeBSD: head/deskutils/charmtimetracker/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	charmtimetracker
 DISTVERSION=	1.11.4
@@ -14,7 +14,7 @@ COMMENT=	Time tracker
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake:outsource compiler:c++11-lib qt:5
 # Use bundled keychain; the keychain is only used for KDAB-internal
 # features not available or configurable in the port.
 CMAKE_ARGS=	-DCharm_VERSION:STRING=${PORTVERSION} \
@@ -24,7 +24,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	KDAB
 GH_PROJECT=	Charm
 
-USE_QT5=	core dbus gui \
+USE_QT=		core dbus gui \
 		network printsupport script sql sql-sqlite3 \
 		testlib widgets xml \
 		buildtools_build qmake_build

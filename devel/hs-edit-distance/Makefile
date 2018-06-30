@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-edit-distance/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/devel/hs-edit-distance/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	edit-distance
 PORTVERSION=	0.2.2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/aria2fe/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/aria2fe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	aria2fe
 DISTVERSION=	0.0.5
@@ -15,8 +15,8 @@ LICENSE=	GPLv3+
 RUN_DEPENDS=	aria2c:www/aria2 \
 		xterm:x11/xterm
 
-USES=		tar:bzip2 qmake
-USE_QT4=	gui moc_build rcc_build uic_build
+USES=		qt:4 tar:bzip2 qmake
+USE_QT=		gui moc_build rcc_build uic_build
 
 PLIST_FILES=	bin/${PORTNAME}
 

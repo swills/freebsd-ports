@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pg_stat_kcache/Makefile 423248 2016-10-04 09:55:54Z girgen $
+# $FreeBSD: head/databases/pg_stat_kcache/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pg_stat_kcache
 DISTVERSIONPREFIX=	REL
@@ -11,11 +11,12 @@ COMMENT=	Gather statistics about PostgreSQL I/O and CPU usage
 
 LICENSE=	PostgreSQL
 
+USES=		gmake pgsql:9.4+
+LLD_UNSAFE=	yes
+WANT_PGSQL=	server contrib
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	dalibo
-
-USES=		gmake pgsql:9.4+
-WANT_PGSQL=	server contrib
 
 pre-patch:
 	@${MV} ${BUILD_WRKSRC}/README.rst ${BUILD_WRKSRC}/${PORTNAME}-README.rst

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt4/Makefile.sqldrivers 410751 2016-03-10 14:11:16Z rakuco $
+# $FreeBSD: head/devel/qt4/Makefile.sqldrivers 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	${DB:tl}
 DISTVERSION=	${QT4_VERSION}
@@ -10,9 +10,8 @@ MAINTAINER=	kde@FreeBSD.org
 
 EXTRA_PATCHES=	# empty
 
-USE_QT4=	corelib sql moc_build qmake_build
-QT_DIST=	yes
-USES+=		qmake:outsource
+USE_QT=		corelib sql moc_build qmake_build
+USES+=		qmake:outsource qt-dist:4
 
 CXXFLAGS+=	-I${WRKSRC}/include  # For private QtSql headers.
 

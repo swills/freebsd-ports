@@ -1,5 +1,5 @@
 # Created by: Weongyo Jeong <weongyo@FreeBSD.org>
-# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 470977 2018-05-27 09:53:45Z linimon $
+# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 473307 2018-06-25 12:33:25Z tobik $
 
 PORTNAME=	bwn-firmware
 PORTVERSION=	0.1.2
@@ -13,7 +13,7 @@ EXTRACT_ONLY=
 MAINTAINER=	swhetzel@gmail.com
 COMMENT=	Broadcom AirForce IEEE 802.11 Firmware Kernel Module
 
-ONLY_FOR_ARCHS=		amd64 i386
+ONLY_FOR_ARCHS=		amd64 i386 powerpc
 ONLY_FOR_ARCHS_REASON=	hardware particular to PCI/CardBus
 
 BUILD_DEPENDS=	b43-fwcutter:sysutils/b43-fwcutter

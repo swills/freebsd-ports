@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/qjackctl/Makefile 471061 2018-05-28 18:45:08Z yuri $
+# $FreeBSD: head/audio/qjackctl/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qjackctl
 DISTVERSIONPREFIX=	qjackctl_
@@ -14,11 +14,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libjack.so:audio/jack
 
-USES=		autoreconf compiler:c++11-lib gmake localbase pkgconfig
+USES=		autoreconf compiler:c++11-lib gmake localbase pkgconfig qt:5
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	rncbc
-USE_QT5=	core gui widgets x11extras xml buildtools_build linguisttools_build qmake_build
+USE_QT=		core gui widgets x11extras xml buildtools_build linguisttools_build qmake_build
 USE_GL=		gl
 USE_CXXSTD=	c++11
 
@@ -36,7 +36,7 @@ ALSA_CONFIGURE_ENABLE=	alsa_seq
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 
 DBUS_CONFIGURE_ENABLE=	dbus
-DBUS_USE=		QT5=dbus
+DBUS_USE=		QT=dbus
 
 PORTAUDIO_CONFIGURE_ENABLE=	portaudio
 PORTAUDIO_LIB_DEPENDS=	libportaudio.so:audio/portaudio

@@ -1,9 +1,9 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/japanese/qt4-codecs-jp/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/japanese/qt4-codecs-jp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	codecs
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese
 PKGNAMEPREFIX=	qt4-
 PKGNAMESUFFIX=	-jp
@@ -11,8 +11,8 @@ PKGNAMESUFFIX=	-jp
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt EUC-JP/JIS codec plugins
 
-USE_QT4=	qmake_build corelib
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		corelib
 
 HAS_CONFIGURE=	yes
 

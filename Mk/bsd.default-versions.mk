@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.default-versions.mk 472389 2018-06-14 17:50:33Z rene $
+# $FreeBSD: head/Mk/bsd.default-versions.mk 473447 2018-06-27 15:48:17Z feld $
 #
 # MAINTAINER:	ports@FreeBSD.org
 #
@@ -127,7 +127,7 @@ SSL_DEFAULT?=	base
 # Possible values: 8.5, 8.6, 8.7
 TCLTK_DEFAULT?=		8.6
 
-# Possible values: 4, 5
+# Possible values: 4, 5, 6
 VARNISH_DEFAULT?=	4
 
 .endif

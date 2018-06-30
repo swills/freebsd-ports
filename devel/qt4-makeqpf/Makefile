@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-makeqpf/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-makeqpf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	makeqpf
 DISTVERSION=	${QT4_VERSION}
@@ -12,8 +12,8 @@ COMMENT=	Qt QPF2 font generator
 
 BROKEN_sparc64=	does not compile
 
-USE_QT4=	qmake_build moc_build rcc_build uic_build corelib gui
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		moc_build rcc_build uic_build corelib gui
 
 HAS_CONFIGURE=	yes
 

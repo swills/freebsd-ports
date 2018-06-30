@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/fcitx/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/chinese/fcitx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fcitx
 PORTVERSION=	4.2.9.1
@@ -39,7 +39,7 @@ USE_GNOME=	pango intltool libxml2 introspection
 USE_KDE=	ecm
 USE_XORG=	x11 xext xkbfile sm ice
 USE_LDCONFIG=	yes
-USES=		tar:xz cmake:noninja desktop-file-utils \
+USES=		qt:4 tar:xz cmake:noninja desktop-file-utils \
 		gettext-tools:build,run gettext-runtime iconv:wchar_t \
 		kde:5 pkgconfig shared-mime-info
 INSTALLS_ICONS=	yes
@@ -87,7 +87,8 @@ SUB_LIST+=	GTK3_IM=xim
 .endif
 
 .if ${PORT_OPTIONS:MQT4}
-USE_QT4+=	qmake_build moc_build rcc_build uic_build dbus gui inputmethods corelib
+USES+=		qt:4
+USE_QT+=		qmake_build moc_build rcc_build uic_build dbus gui inputmethods corelib
 USE_LDCONFIG+=	${PREFIX}/lib/fcitx/qt
 PLIST_SUB+=	QT4=""
 .else

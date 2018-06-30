@@ -1,8 +1,9 @@
 # Created by: Daniel O'Connor <darius@dons.net.au>
-# $FreeBSD: head/graphics/pfstools/Makefile 465069 2018-03-20 06:33:01Z yuri $
+# $FreeBSD: head/graphics/pfstools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pfstools
 DISTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
@@ -85,8 +86,9 @@ GLVIEW_CMAKE_ON=	-DGLUT_INCLUDE_DIRS=${LOCALBASE}/include
 GLVIEW_USE=		GL=glut GL=gl,glu
 
 VIEW_CMAKE_BOOL=	WITH_QT
-VIEW_USE=		QT5=buildtools_build,qmake_build,widgets
-VIEW_USE=		GL=glut GL=gl,glu QT5=core,gui,widgets
+VIEW_USES=		qt:5
+VIEW_USE=		QT=buildtools_build,qmake_build,widgets
+VIEW_USE=		GL=glut GL=gl,glu QT=core,gui,widgets
 
 OPENMP_USES=		compiler:openmp
 

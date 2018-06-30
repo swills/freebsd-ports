@@ -1,5 +1,5 @@
 # Created by: andreas
-# $FreeBSD: head/mail/kbiff/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/mail/kbiff/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kbiff
 PORTVERSION=	4.0
@@ -12,9 +12,9 @@ COMMENT=	Mail notification utility for KDE with nice features
 
 LICENSE=	GPLv2
 
-USES=		cmake gettext kde:4 perl5 tar:bzip2
+USES=		cmake gettext kde:4 perl5 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	corelib dbus gui network svg xml \
+USE_QT=		corelib dbus gui network svg xml \
 		qmake_build uic_build rcc_build
 USE_PERL5=	build
 

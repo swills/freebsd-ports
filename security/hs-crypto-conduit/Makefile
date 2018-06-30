@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-crypto-conduit/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-crypto-conduit/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	crypto-conduit
 PORTVERSION=	0.5.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

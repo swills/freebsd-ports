@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/bloodfrontier/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/games/bloodfrontier/Makefile 473448 2018-06-27 16:15:23Z amdmi3 $
 
 PORTNAME=	bloodfrontier
 DISTVERSION=	B2
@@ -24,6 +24,8 @@ BUILD_WRKSRC=	${WRKSRC}/src
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 ALL_TARGET=	libenet
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 SUB_FILES=	${PLIST_FILES:Mbin/*:T}
 

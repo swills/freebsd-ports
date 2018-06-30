@@ -1,12 +1,12 @@
 # Created by: Nemo Liu <nemoliu@FreeBSD.org>
-# $FreeBSD: head/devel/flexjson/Makefile 461358 2018-02-10 01:11:56Z yuri $
+# $FreeBSD: head/devel/flexjson/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	flexjson
 DISTVERSION=	2.1
 CATEGORIES=	devel java
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/flexjson%20${PORTVERSION}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight Java library to write JSON
 
 LICENSE=	APACHE20

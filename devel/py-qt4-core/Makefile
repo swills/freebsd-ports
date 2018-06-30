@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-core/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/py-qt4-core/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	core
 PORTREVISION=	7
@@ -12,10 +12,10 @@ COMMENT=	Python bindings for the Qt4 toolkit, QtCore module
 CONFIGURE_ARGS=		--enable QtCore
 PYQT_DIST=		yes
 
-USES=			python pyqt:4
+USES=			python pyqt:4 qt:4
 USE_PYTHON=		py3kplist flavors
 USE_PYQT=		sip
-USE_QT4=		corelib qmake_build moc_build
+USE_QT=			corelib qmake_build moc_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

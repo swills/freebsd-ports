@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llbuild/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/devel/llbuild/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=		llbuild
 DISTVERSIONPREFIX=	swift-DEVELOPMENT-
@@ -13,6 +13,7 @@ LICENSE=	APACHE20 BSD3CLAUSE NCSA
 LICENSE_COMB=	multi
 LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.txt
 
+BROKEN_aarch64=		fails to link: undefined symbol: sbrk
 BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wdocumentation"
 
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3

@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/x11-toolkits/py-qt4-gui/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/x11-toolkits/py-qt4-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gui
 PORTREVISION=	3
@@ -12,10 +12,10 @@ COMMENT=	Python bindings for the Qt4 toolkit, QtGui module
 CONFIGURE_ARGS=	--enable QtGui
 PYQT_DIST=	yes
 
-USES=		python pyqt:4
+USES=		python pyqt:4 qt:4
 USE_PYQT=	sip_build core_run
 USE_PYTHON=	flavors
-USE_QT4=	corelib gui imageformats_run inputmethods_run iconengines_run \
+USE_QT=		corelib gui imageformats_run inputmethods_run iconengines_run \
 		moc_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 468646 2018-04-29 19:46:07Z sunpoet $
+# $FreeBSD: head/astro/Makefile 473275 2018-06-24 20:50:47Z antoine $
 #
 
     COMMENT = Astronomical ports
@@ -91,6 +91,7 @@
     SUBDIR += py-metpy
     SUBDIR += py-pymetar
     SUBDIR += py-pywapi
+    SUBDIR += py-spacetrack
     SUBDIR += pyephem
     SUBDIR += pyweather
     SUBDIR += qlandkartegt

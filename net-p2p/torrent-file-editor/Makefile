@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	torrent-file-editor
 PORTVERSION=	0.3.10
@@ -29,8 +29,10 @@ QT5_DESC=	Build against Qt 5 instead of Qt 4
 
 DONATION_CMAKE_OFF=	-DDISABLE_DONATION:BOOL=ON
 
-QT5_USE=	QT5=${_QT5_DEPS:ts,}
-QT5_USE_OFF=	QT4=${_QT4_DEPS:ts,}
+QT5_USES=	qt:5
+QT5_USES_OFF=	qt:4
+QT5_USE=	QT=${_QT5_DEPS:ts,}
+QT5_USE_OFF=	QT=${_QT4_DEPS:ts,}
 QT5_LIB_DEPENDS_OFF=	libqjson.so:devel/qjson@qt4
 QT5_CMAKE_ON=	-DQT5_BUILD:BOOL=ON
 

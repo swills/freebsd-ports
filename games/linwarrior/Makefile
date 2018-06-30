@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/linwarrior/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/linwarrior/Makefile 473081 2018-06-22 21:29:21Z amdmi3 $
 
 PORTNAME=	linwarrior
 PORTVERSION=	20100320
@@ -16,6 +16,8 @@ USES=		gmake openal:al,alut
 USE_GL=		gl glu
 USE_SDL=	sdl
 
+CFLAGS+=	-Wno-c++11-narrowing
+
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 PLIST_FILES=	bin/${PORTNAME}
@@ -29,8 +31,8 @@ DESKTOP_ENTRIES="LinWarrior 3D" \
 		false
 
 post-extract:
-	@${FIND} ${WRKSRC} -type d -exec chmod a+rx {} \;
-	@${FIND} ${WRKSRC} -type f -exec chmod a+r {} \;
+	@${FIND} ${WRKSRC} -type d -exec ${CHMOD} a+rx {} \;
+	@${FIND} ${WRKSRC} -type f -exec ${CHMOD} a+r {} \;
 
 post-patch:
 	@${REINPLACE_CMD} -e '/hash_set/ d' ${WRKSRC}/source/cAlert.h

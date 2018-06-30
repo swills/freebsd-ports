@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/deskutils/launchy/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/deskutils/launchy/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	launchy
 PORTVERSION=	2.5
@@ -16,9 +16,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 RUN_DEPENDS=	${LOCALBASE}/bin/xdg-open:devel/xdg-utils
 
-USES=		dos2unix qmake
+USES=		dos2unix qmake qt:4
 DOS2UNIX_FILES=	readme.lyx readme.txt
-USE_QT4=	moc_build rcc_build uic_build gui network
+USE_QT=		moc_build rcc_build uic_build gui network
 LDFLAGS+=	-lX11
 PORTDOCS=	*
 

@@ -1,5 +1,5 @@
 # Created by: Serguei Okladnikov <oklaspec@gmail.com>
-# $FreeBSD: head/net/qjsonrpc/Makefile 378555 2015-02-06 21:35:14Z pawel $
+# $FreeBSD: head/net/qjsonrpc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qjsonrpc
 PORTVERSION=	1.0.2
@@ -13,8 +13,8 @@ COMMENT=	C++ Qt based JSON RPC2 library
 
 LICENSE=	LGPL21
 
-USES=		qmake
-USE_QT4=	moc_build network qtestlib_build rcc_build
+USES=		qmake qt:4
+USE_QT=		moc_build network qtestlib_build rcc_build
 USE_LDCONFIG=	yes
 
 WRKSRC=		${WRKDIR}/devonit-qjsonrpc-adefe89b0c6f

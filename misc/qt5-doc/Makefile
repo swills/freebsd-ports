@@ -1,5 +1,5 @@
 # Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/misc/qt5-doc/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/misc/qt5-doc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	doc
 DISTVERSION=	${QT5_VERSION}
@@ -18,8 +18,8 @@ WRKSRC=		${WRKDIR}/Docs/Qt-${QT5_VERSION}
 #   tar: Damaged 7-Zip archive
 # Depend on p7zip across all versions because Uses/7z.mk does not work if
 # included after bsd.port.pre.mk.
-USES=		7z:p7zip
-USE_QT5=	# we just need access to QT5_VERSION and other variables.
+USES=		7z:p7zip qt:5
+USE_QT=		# we just need access to QT5_VERSION and other variables.
 
 DESCR=		${.CURDIR:H:H}/devel/qt5/pkg-descr
 NO_ARCH=	yes

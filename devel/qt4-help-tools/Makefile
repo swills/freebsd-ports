@@ -1,5 +1,5 @@
 # Created by: danny@ricin.com
-# $FreeBSD: head/devel/qt4-help-tools/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-help-tools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	help
 DISTVERSION=	${QT4_VERSION}
@@ -11,9 +11,9 @@ PKGNAMESUFFIX=	-tools
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt utilities for generating documentation
 
-USE_QT4=	qmake_build moc_build rcc_build uic_build corelib \
+USES=		qmake:no_env qt-dist:4
+USE_QT=		moc_build rcc_build uic_build corelib \
 		gui sql xml doc help
-QT_DIST=	yes
 
 HAS_CONFIGURE=	yes
 

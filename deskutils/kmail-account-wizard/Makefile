@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kmail-account-wizard/Makefile 467009 2018-04-10 19:31:53Z tcberner $
+# $FreeBSD: head/deskutils/kmail-account-wizard/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kmail-account-wizard
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,7 +13,7 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpgmepp.so:security/gpgme-cpp \
 		libqgpgme.so:security/gpgme-qt5
 
-USES=		cmake:outsource compiler:c++11-lib gettext  kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext  kde:5 qt:5 tar:xz
 USE_KDE=	attica auth codecs config configwidgets coreaddons crash \
 		dbusaddons ecm i18n itemmodels itemviews kcmutils kio kross \
 		newstuff notifications notifyconfig service texteditor wallet \
@@ -21,7 +21,7 @@ USE_KDE=	attica auth codecs config configwidgets coreaddons crash \
 # pim components
 USE_KDE+=	akonadi akonadimime identitymanagement ldap libkdepim libkleo \
 		mailtransport mime pimcommon pimtextedit
-USE_QT5=	core dbus gui network script widgets xml \
+USE_QT=		core dbus gui network script widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

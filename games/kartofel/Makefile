@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/kartofel/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/kartofel/Makefile 473073 2018-06-22 21:00:29Z amdmi3 $
 
 PORTNAME=	kartofel
 PORTVERSION=	1.2
@@ -17,6 +17,8 @@ USES=		gmake
 USE_SDL=	sdl gfx mixer image ttf
 
 ALL_TARGET=	default
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 DATA_DIRS=	sounds fonts music images levels
 
@@ -39,7 +41,7 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/kartofel ${STAGEDIR}${PREFIX}/bin
-	${MKDIR} ${STAGEDIR}${DATADIR}
-	cd ${WRKSRC} && ${COPYTREE_SHARE} "${DATA_DIRS}" ${STAGEDIR}${DATADIR}
+	@${MKDIR} ${STAGEDIR}${DATADIR}
+	@cd ${WRKSRC} && ${COPYTREE_SHARE} "${DATA_DIRS}" ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

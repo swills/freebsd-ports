@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-sparsersb/Makefile 470490 2018-05-20 22:05:23Z stephen $
+# $FreeBSD: head/math/octave-forge-sparsersb/Makefile 473153 2018-06-23 19:15:33Z stephen $
 
 PORTNAME=	octave-forge-sparsersb
-PORTVERSION=	1.0.5
-PORTREVISION=	4
+PORTVERSION=	1.0.6
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -11,8 +10,6 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
-
-BROKEN=		does not build with octave version >= 4.4.0
 
 LIB_DEPENDS=	librsb.so:math/librsb
 

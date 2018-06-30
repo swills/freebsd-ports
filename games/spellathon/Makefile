@@ -1,5 +1,5 @@
 # Created by: Girish <girish.rao.dev@gmail.com>
-# $FreeBSD: head/games/spellathon/Makefile 437182 2017-03-29 06:50:28Z ashish $
+# $FreeBSD: head/games/spellathon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	spellathon
 PORTVERSION=	6.0
@@ -20,9 +20,9 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libfontconfig.so:x11-fonts/fontconfig
 
 CXXFLAGS+=	-fPIC
-USES=		gettext iconv qmake
+USES=		gettext iconv qmake qt:4
 USE_GNOME=	glib20
-USE_QT4=	corelib gui moc_build rcc_build uic_build
+USE_QT=		corelib gui moc_build rcc_build uic_build
 USE_XORG=	ice sm x11 xau xcb xdmcp xext xrender
 USE_LDCONFIG=	yes
 

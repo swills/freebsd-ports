@@ -1,5 +1,5 @@
 # Created by: Brandon Fosdick <bfoz@bfoz.net>
-# $FreeBSD: head/devel/qprog/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/devel/qprog/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qprog
 PORTVERSION=	0.4
@@ -11,8 +11,8 @@ DISTNAME=	QProg_${PORTVERSION}
 MAINTAINER=	bfoz@bfoz.net
 COMMENT=	Cross-platform software for the DIY line of PIC programmers
 
-USES=		qmake tar:tgz
-USE_QT4=	moc_build gui network
+USES=		qmake qt:4 tar:tgz
+USE_QT=		moc_build gui network
 
 WRKSRC=		${WRKDIR}/QProg
 

@@ -1,17 +1,18 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-mysql_fdw/Makefile 444170 2017-06-23 09:02:17Z tz $
+# $FreeBSD: head/databases/postgresql-mysql_fdw/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	mysql_fdw
 PORTVERSION=	2.2.0
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PostgreSQL foreign data wrapper for MySQL
 
 LICENSE=	PostgreSQL
 
 USES=		gmake pgsql:9.3+ mysql
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	EnterpriseDB
 GH_TAGNAME=	c14ee1d

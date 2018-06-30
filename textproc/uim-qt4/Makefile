@@ -1,5 +1,5 @@
 # Created by: Yamashiro Jun <yamajun@ofug.net>
-# $FreeBSD: head/textproc/uim-qt4/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/uim-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PKGNAMESUFFIX=	-qt4
 
@@ -7,8 +7,8 @@ COMMENT=	Qt4 modules of uim input method
 
 LIB_DEPENDS=	libuim.so:textproc/uim
 
-USE_QT4=	qmake_build moc_build qt3support uic
-USES=		iconv libtool
+USE_QT=		qmake_build moc_build qt3support uic
+USES=		iconv libtool qt:4
 
 MASTERDIR=	${.CURDIR}/../../textproc/uim
 PKGDIR=		${.CURDIR}

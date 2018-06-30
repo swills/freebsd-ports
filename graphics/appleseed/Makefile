@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/appleseed/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/appleseed/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	appleseed
 DISTVERSION=	1.7.1-beta
@@ -57,7 +57,8 @@ EXAMPLES_CMAKE_OFF=	-DWITH_SAMPLES:BOOL=OFF
 DISNEY_LIB_DEPENDS=	libSeExpr.so:graphics/seexpr
 DISNEY_CMAKE_ON=	-DWITH_DISNEY_MATERIAL:BOOL=ON
 
-STUDIO_USE=	QT4=moc_build,qmake_build,rcc_build,uic_build,opengl
+STUDIO_USES=	qt:4
+STUDIO_USE=	QT=moc_build,qmake_build,rcc_build,uic_build,opengl
 STUDIO_CMAKE_OFF=	-DWITH_STUDIO:BOOL=OFF
 
 .include <bsd.port.pre.mk>

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/smokeqt-kde4/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/smokeqt-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smokeqt
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,9 +11,9 @@ COMMENT=	SMOKE bindings for Qt
 LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2 \
 		libqwt.so:x11-toolkits/qwt5
 
-USES=		cmake:outsource kde:4 pkgconfig tar:xz
+USES=		cmake:outsource kde:4 pkgconfig qt:4 tar:xz
 USE_KDE=	smokegen qimageblitz
-USE_QT4=	corelib dbus declarative designer_build gui help \
+USE_QT=		corelib dbus declarative designer_build gui help \
 		multimedia network opengl phonon qtestlib script \
 		sql svg webkit xml xmlpatterns \
 		qmake_build moc_build uic_build rcc_build

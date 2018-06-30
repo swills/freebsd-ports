@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/plasma5-plasma-integration/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/x11/plasma5-plasma-integration/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	plasma-integration
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -10,12 +10,12 @@ COMMENT=	Qt Platform Theme integration plugins for the Plasma workspaces
 RUN_DEPENDS=	hack-font>=0:x11-fonts/hack-font
 
 USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 pkgconfig \
-		shebangfix tar:xz
+		qt:5 shebangfix tar:xz
 USE_KDE=	auth bookmarks breeze codecs completion config configwidgets \
 		coreaddons ecm i18n iconthemes itemviews jobwidgets kio \
 		notifications service solid wayland \
 		widgetsaddons windowsystem xmlgui
-USE_QT5=	concurrent core dbus gui network qml quick quickcontrols2 widgets \
+USE_QT=		concurrent core dbus gui network qml quick quickcontrols2 widgets \
 		x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	xcb xcursor

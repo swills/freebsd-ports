@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-nitrogen/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-themes/kde4-style-nitrogen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	nitrogen
 PORTVERSION=	1.0.5
@@ -16,8 +16,8 @@ LICENSE=	GPLv2
 
 WRKSRC=		${WRKDIR}/kde4-kstyle-nitrogen-${PORTVERSION}-Source
 
-USES=		cmake kde:4
+USES=		cmake kde:4 qt:4
 USE_KDE=	kdelibs automoc4
-USE_QT4=	corelib qmake_build moc_build rcc_build uic_build
+USE_QT=		corelib qmake_build moc_build rcc_build uic_build
 
 .include <bsd.port.mk>

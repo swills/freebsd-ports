@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libkgapi-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/devel/libkgapi-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkgapi
 PORTVERSION=	2.2.0
@@ -15,10 +15,10 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 
-USES=		cmake:outsource kde:4 tar:bzip2
+USES=		cmake:outsource kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs pimlibs
 USE_LDCONFIG=	yes
-USE_QT4=	corelib network webkit xml \
+USE_QT=		corelib network webkit xml \
 		qmake_build moc_build rcc_build uic_build
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}

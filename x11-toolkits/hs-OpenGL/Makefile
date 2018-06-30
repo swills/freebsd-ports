@@ -1,8 +1,9 @@
 # Created by: Volker Stolz <vs@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/hs-OpenGL/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-OpenGL/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	OpenGL
 PORTVERSION=	3.0.2.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	x11-toolkits haskell
 

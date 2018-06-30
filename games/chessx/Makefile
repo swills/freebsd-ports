@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/chessx/Makefile 440110 2017-05-04 14:58:54Z mat $
+# $FreeBSD: head/games/chessx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	chessx
 PORTVERSION=	1.3.2
@@ -12,8 +12,8 @@ COMMENT=	Qt 4 chess database application
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		desktop-file-utils qmake shared-mime-info tar:tgz
-USE_QT4=	corelib gui svg network linguisttools_build \
+USES=		desktop-file-utils qmake qt:4 shared-mime-info tar:tgz
+USE_QT=		corelib gui svg network linguisttools_build \
 		moc_build qmake_build rcc_build uic_build
 QMAKE_ARGS+=	QMAKE_LRELEASE=${LRELEASE}
 

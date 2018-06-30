@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Size/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTTP-Size/Makefile 473271 2018-06-24 20:21:11Z sunpoet $
 
 PORTNAME=	HTTP-Size
-PORTVERSION=	1.15
+PORTVERSION=	1.151
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Get the byte size of an internet resource
 
-LICENSE=	ART10 GPLv1+
-LICENSE_COMB=	dual
+LICENSE=	ART20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-HTML-SimpleLinkExtor>=0:www/p5-HTML-SimpleLinkExtor \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \

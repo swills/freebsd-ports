@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pykdeuic4-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/py-pykdeuic4-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pykdeuic4
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ DISTNAME=	pykde4-${PORTVERSION}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Enhanced version of pyuic4
 
-USES=		cmake:outsource python:2.7 kde:4 shebangfix tar:xz
+USES=		cmake:outsource python:2.7 kde:4 qt:4 shebangfix tar:xz
 USE_KDE=	kdelibs automoc4 pykde4
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 DISTINFO_FILE=	${.CURDIR:H:H}/devel/py-pykde4-kde4/distinfo
 
 NO_ARCH=	yes

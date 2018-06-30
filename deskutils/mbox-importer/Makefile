@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/mbox-importer/Makefile 467009 2018-04-10 19:31:53Z tcberner $
+# $FreeBSD: head/deskutils/mbox-importer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mbox-importer
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,14 +13,14 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpgmepp.so:security/gpgme-cpp \
 		libqgpgme.so:security/gpgme-qt5
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 		crash ecm i18n itemmodels kio service widgetsaddons
 # pim components
 USE_KDE+=	akonadi akonadicontacts akonadimime contacts \
 		identitymanagement libkleo mailcommon mailimporter messagelib \
 		mime pimcommon pimtextedit
-USE_QT5=	core gui network widgets xml \
+USE_QT=		core gui network widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

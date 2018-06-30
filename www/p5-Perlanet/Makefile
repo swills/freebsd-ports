@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Perlanet/Makefile 463661 2018-03-05 17:15:05Z sunpoet $
+# $FreeBSD: head/www/p5-Perlanet/Makefile 473269 2018-06-24 20:21:00Z sunpoet $
 
 PORTNAME=	Perlanet
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
@@ -17,8 +17,8 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CHI>=0:devel/p5-CHI \
 		p5-DateTime>=0:devel/p5-DateTime \
-		p5-HTML-Tidy>=0:textproc/p5-HTML-Tidy \
 		p5-HTML-Scrubber>=0:www/p5-HTML-Scrubber \
+		p5-HTML-Tidy>=0:textproc/p5-HTML-Tidy \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-ConfigFromFile>=0:devel/p5-MooseX-ConfigFromFile \
 		p5-MooseX-Traits>=0:devel/p5-MooseX-Traits \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-call-ui/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/net-im/ktp-call-ui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ktp-call-ui
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,12 +16,12 @@ LIB_DEPENDS=	libKTpCommonInternals.so:net-im/ktp-common-internals \
 		libtelepathy-qt5-farstream.so:net-im/telepathy-qt5
 
 USES=		cmake:outsource compiler:c++11-lang gettext kde:5 pkgconfig \
-		python:2.7 tar:xz
+		python:2.7 qt:5 tar:xz
 USE_GNOME=	glib20
 USE_KDE=	auth codecs config configwidgets coreaddons ecm iconthemes \
 		i18n kcmutils kdeclarative notifications package service \
 		wallet widgetsaddons xmlgui
-USE_QT5=	core dbus gui network qml quick widgets xml \
+USE_QT=		core dbus gui network qml quick widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

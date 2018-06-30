@@ -1,5 +1,5 @@
 # Created by: alonso@
-# $FreeBSD: head/audio/simon/Makefile 468283 2018-04-25 17:11:22Z tcberner $
+# $FreeBSD: head/audio/simon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	simon
 PORTVERSION=	0.4.1
@@ -17,9 +17,9 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libsphinxad.so:audio/sphinxbase \
 		libqwt6.so:x11-toolkits/qwt6@qt4
 
-USES=		cmake:outsource gettext kde:4 tar:bz2
+USES=		cmake:outsource gettext kde:4 qt:4 tar:bz2
 USE_KDE=	kdelibs automoc4 pimlibs
-USE_QT4=	accessible corelib dbus gui network script sql svg testlib xml \
+USE_QT=		accessible corelib dbus gui network script sql svg testlib xml \
 		moc_build qmake_build rcc_build uic_build
 USE_XORG=	x11 xtst
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/nimuh/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/nimuh/Makefile 473071 2018-06-22 20:50:27Z amdmi3 $
 
 PORTNAME=	nimuh
 PORTVERSION=	1.02
@@ -11,15 +11,16 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${PORTNAME}-data-${PORTVERSION}${EXTRACT_S
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Puzzle game destined to improve the knowledge of Andalusia
 
+LICENSE=	CC-BY-NC-SA-2.0
+
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 GNU_CONFIGURE=	yes
-USES=		gmake
+USES=		gmake localbase
 USE_SDL=	sdl image mixer
-USE_GL=		gl
+USE_GL=		gl glu
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 DATA_WRKSRC=	${WRKDIR}/${PORTNAME}-data-${PORTVERSION}
 

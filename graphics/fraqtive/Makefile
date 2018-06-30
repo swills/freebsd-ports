@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/graphics/fraqtive/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/fraqtive/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fraqtive
 PORTVERSION=	0.4.8
@@ -13,8 +13,8 @@ COMMENT=	Draws Mandelbrot and Julia fractals
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake tar:bzip2
-USE_QT4=	corelib gui opengl xml uic_build moc_build rcc_build
+USES=		qmake qt:4 tar:bzip2
+USE_QT=		corelib gui opengl xml uic_build moc_build rcc_build
 USE_GL=		gl glu
 
 OPTIONS_DEFINE=	SSE2

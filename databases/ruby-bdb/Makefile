@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-bdb/Makefile 458847 2018-01-12 14:28:36Z swills $
+# $FreeBSD: head/databases/ruby-bdb/Makefile 473534 2018-06-29 08:37:21Z amdmi3 $
 
 PORTNAME=	bdb
 PORTVERSION=	0.6.6
@@ -71,9 +71,9 @@ post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	(cd ${WRKSRC}/examples/ && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR} "! -empty")
 
-regression-test: build
+do-test:
 	@${MKDIR} ${BUILD_WRKSRC}/tmp
 	(cd ${BUILD_WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} \
-	${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} test)
+		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} test)
 
 .include <bsd.port.mk>

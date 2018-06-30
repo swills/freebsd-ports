@@ -1,22 +1,21 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/misc/qt4-qtdemo/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/misc/qt4-qtdemo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtdemo
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4 demonstration and example applications
 
-USES=		pkgconfig
+USES=		pkgconfig qmake:no_env qt-dist:4
 USE_GSTREAMER=	yes
-USE_QT4=	qmake_build moc_build rcc_build uic_build corelib designer \
+USE_QT=		moc_build rcc_build uic_build corelib designer \
 		gui network opengl sql svg qtestlib xml imageformats_run dbus \
 		script webkit phonon help assistant_run phonon-gst_run scripttools \
 		xmlpatterns multimedia
-QT_DIST=	yes
 
 HAS_CONFIGURE=	yes
 

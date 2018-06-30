@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/plasma5-kmenuedit/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-kmenuedit/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kmenuedit
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -7,13 +7,13 @@ CATEGORIES=	sysutils kde kde-plasma
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 menu editor
 
-USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons guiaddons ecm emoticons hotkeys \
 		i18n iconthemes init itemmodels itemviews jobwidgets \
 		kdelibs4support kio notifications parts service solid sonnet \
 		textwidgets unitconversion widgetsaddons windowsystem xmlgui
-USE_QT5=	core dbus gui network printsupport widgets xml\
+USE_QT=		core dbus gui network printsupport widgets xml\
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

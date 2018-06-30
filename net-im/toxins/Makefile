@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/toxins/Makefile 472663 2018-06-18 01:13:06Z yuri $
+# $FreeBSD: head/net-im/toxins/Makefile 473381 2018-06-26 10:10:03Z thierry $
 
 PORTNAME=	toxins
 DISTVERSION=	g20180217
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	yuri@FreeBSD.org

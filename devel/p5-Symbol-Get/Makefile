@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Symbol-Get/Makefile 469623 2018-05-11 10:40:41Z pi $
+# $FreeBSD: head/devel/p5-Symbol-Get/Makefile 473539 2018-06-29 10:10:35Z mat $
 
 PORTNAME=	Symbol-Get
 PORTVERSION=	0.08
@@ -17,8 +17,5 @@ USE_PERL5=	configure
 
 PLIST_FILES=	${SITE_PERL_REL}/Symbol/Get.pm \
 		${SITE_MAN3_REL}/Symbol::Get.3.gz
-
-pre-install:
-		${RM} ${WRKSRC}/blib/lib/Symbol/README.pod
 
 .include <bsd.port.mk>

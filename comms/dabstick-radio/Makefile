@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/comms/dabstick-radio/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/comms/dabstick-radio/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dabstick-radio
 PORTVERSION=	0.96
@@ -21,8 +21,8 @@ LIB_DEPENDS+=	librtlsdr.so:comms/rtl-sdr \
 		libfftw3.so:math/fftw3 \
 		libfaad.so:audio/faad
 
-USES=		tar:tgz
-USE_QT4=	gui qt3support qmake_build moc_build rcc_build uic_build
+USES=		qt:4 tar:tgz
+USE_QT=		gui qt3support qmake_build moc_build rcc_build uic_build
 
 PORTDOCS=	*
 PLIST_FILES+=	bin/dabreceiver bin/fmreceiver bin/spectrum-viewer

@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-DRBG/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-DRBG/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	DRBG
 PORTVERSION=	0.5.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/math/drgeo/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/math/drgeo/Makefile 473556 2018-06-29 16:34:26Z amdmi3 $
 
 PORTNAME=	drgeo
 PORTVERSION=	1.1.0
@@ -17,9 +17,11 @@ BROKEN_powerpc64=	fails to compile: ./geo/libgeo.a: multiple definition of drgeo
 
 LIB_DEPENDS=	libguile.so:lang/guile
 
-GNU_CONFIGURE=	yes
 USES=		gettext gmake localbase:ldflags pkgconfig pathfix
+GNU_CONFIGURE=	yes
 USE_GNOME=	gnomeprefix intlhack libglade2
+
+CXXFLAGS+=	-Wno-reserved-user-defined-literal
 
 PORTDATA=	*
 

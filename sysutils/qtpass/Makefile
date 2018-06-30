@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qtpass/Makefile 471826 2018-06-05 23:41:48Z krion $
+# $FreeBSD: head/sysutils/qtpass/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtpass
 DISTVERSIONPREFIX=	v
@@ -13,11 +13,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	pass:sysutils/password-store
 
-USES=		qmake:outsource
+USES=		qmake:outsource qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	IJhack
 GH_PROJECT=	QtPass
-USE_QT5=	core gui network testlib widgets buildtools_build linguisttools_build
+USE_QT=		core gui network testlib widgets buildtools_build linguisttools_build
 USE_GL=		gl
 
 PLIST_FILES=	bin/qtpass \

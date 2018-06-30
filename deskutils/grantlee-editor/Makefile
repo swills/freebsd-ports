@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/grantlee-editor/Makefile 467009 2018-04-10 19:31:53Z tcberner $
+# $FreeBSD: head/deskutils/grantlee-editor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	grantlee-editor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libqgpgme.so:security/gpgme-qt5
 
 USES=		cmake:outsource compiler:c++11-lib gettext grantlee:5 \
-		kde:5 tar:xz
+		kde:5 qt:5 tar:xz
 USE_KDE=	archive attica auth codecs completion config configwidgets \
 		coreaddons crash dbusaddons  ecm i18n itemmodels jobwidgets \
 		kio newstuff service syntaxhighlighting texteditor \
@@ -24,7 +24,7 @@ USE_KDE=	archive attica auth codecs completion config configwidgets \
 # pim components
 USE_KDE+=	akonadi akonadicontacts akonadimime contacts grantleetheme \
 		kdepim-apps-libs libkleo messagelib mime pimcommon pimtextedit
-USE_QT5=	core dbus gui location network qml quick webchannel webengine \
+USE_QT=		core dbus gui location network qml quick webchannel webengine \
 		widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

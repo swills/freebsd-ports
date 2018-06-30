@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kamoso/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/multimedia/kamoso/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kamoso
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,13 +9,13 @@ COMMENT=	Application to take pictures and videos out of your webcam
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource gettext kde:5 pkgconfig tar:xz
+USES=		cmake:outsource gettext kde:5 pkgconfig qt:5 tar:xz
 USE_GNOME=	glib20
 USE_GSTREAMER1=	yes
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n itemviews jobwidgets kio purpose \
 		service solid widgetsaddons xmlgui
-USE_QT5=	core dbus gui network qml quick widgets xml \
+USE_QT=		core dbus gui network qml quick widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

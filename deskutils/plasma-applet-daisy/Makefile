@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-daisy/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-daisy/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	daisy
 PORTVERSION=	0.0.4.26
@@ -14,9 +14,9 @@ COMMENT=	Simple launcher plasma applet for KDE4
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake gettext kde:4
+USES=		cmake gettext kde:4 qt:4
 USE_KDE=	automoc4 kdelibs workspace
-USE_QT4=	corelib dbus gui network svg xml \
+USE_QT=		corelib dbus gui network svg xml \
 		qmake_build moc_build rcc_build uic_build
 
 .include <bsd.port.mk>

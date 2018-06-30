@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/pear-merger/Makefile 466449 2018-04-04 17:21:39Z jwb $
+# $FreeBSD: head/biology/pear-merger/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 # Newer versions require registration to download and the site is unreliable.
 
@@ -13,6 +13,10 @@ MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Memory-efficient and highly accurate paired-end read merger
 
 LICENSE=	CC-BY-NC-SA-3.0
+
+BROKEN_aarch64=		fails to compile: invokes x86 assembler
+BROKEN_armv6=		fails to compile: invokes x86 assembler
+BROKEN_armv7=		fails to compile: invokes x86 assembler
 
 GNU_CONFIGURE=	yes
 

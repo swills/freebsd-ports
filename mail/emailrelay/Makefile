@@ -1,5 +1,5 @@
 # Created by: Robert Nelson <robertn@the-nelsons.org>
-# $FreeBSD: head/mail/emailrelay/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/mail/emailrelay/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	emailrelay
 PORTVERSION=	1.9
@@ -29,7 +29,8 @@ DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 GUI_CONFIGURE_ENABLE=	gui
 GUI_CONFIGURE_ENV=	e_qtmoc="${MOC}"
-GUI_USE=		QT4=gui,moc
+GUI_USES=		qt:4
+GUI_USE=		QT=gui,moc
 
 OPENSSL_CONFIGURE_WITH=	openssl
 OPENSSL_USES=		ssl

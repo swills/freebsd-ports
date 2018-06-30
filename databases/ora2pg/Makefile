@@ -1,12 +1,12 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/ora2pg/Makefile 443484 2017-06-13 03:30:51Z wen $
+# $FreeBSD: head/databases/ora2pg/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	ora2pg
 PORTVERSION=	18.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Oracle to PostgreSQL database schema converter
 
 LICENSE=	GPLv3

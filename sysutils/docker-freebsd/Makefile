@@ -1,12 +1,12 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/docker-freebsd/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/sysutils/docker-freebsd/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	docker-freebsd
 PORTVERSION=	20150625
 PORTREVISION=	1
 CATEGORIES=	sysutils
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Docker containment system
 
 LICENSE=	APACHE20

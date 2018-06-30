@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/incidenceeditor/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/net/incidenceeditor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	incidenceeditor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,7 @@ LICENSE=	LGPL21
 LIB_DEPENDS=	libKGantt.so:graphics/kdiagram \
 		libboost_system.so:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons ecm \
 		i18n iconthemes itemmodels jobwidgets kio service sonnet \
 		textwidgets wallet widgetsaddons xmlgui
@@ -20,7 +20,7 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons ecm \
 USE_KDE+=	akonadi akonadicalendar akonadicontacts akonadimime calendarcore calendarsupport calendarutils \
 		contacts eventviews identitymanagement kdepim-apps-libs ldap \
 		libkdepim mailtransport mime pimtextedit
-USE_QT5=	core dbus gui network printsupport testlib uitools webkit \
+USE_QT=		core dbus gui network printsupport testlib uitools webkit \
 		widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

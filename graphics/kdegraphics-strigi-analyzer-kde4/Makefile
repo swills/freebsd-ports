@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdegraphics-strigi-analyzer-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kdegraphics-strigi-analyzer-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdegraphics-strigi-analyzer
 PORTVERSION=	${KDE4_VERSION}
@@ -11,8 +11,8 @@ COMMENT=	Strigi analyzers for various graphics file formats
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4 strigi
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 
 .include <bsd.port.mk>

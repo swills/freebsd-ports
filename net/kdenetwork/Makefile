@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kdenetwork/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/net/kdenetwork/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdenetwork
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,8 +7,8 @@ CATEGORIES=	net kde
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Network applications (meta port)
 
-USES=		kde:5 metaport
-USE_QT5=	#
+USES=		kde:5 metaport qt:5
+USE_QT=		#
 
 OPTIONS_DEFINE=	FILESHARING KRDC KRFB
 OPTIONS_DEFAULT=	${OPTIONS_DEFINE:NKOPETE}

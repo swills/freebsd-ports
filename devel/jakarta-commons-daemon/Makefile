@@ -1,5 +1,5 @@
 # Created by: Ronald Klop <ronald@echteman.nl>
-# $FreeBSD: head/devel/jakarta-commons-daemon/Makefile 464922 2018-03-18 15:11:36Z linimon $
+# $FreeBSD: head/devel/jakarta-commons-daemon/Makefile 473549 2018-06-29 13:37:54Z ale $
 
 PORTNAME=	commons-daemon
 PORTVERSION=	1.1.0
@@ -14,10 +14,6 @@ MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Wrapper code to start/stop a Java application as a daemon
 
 LICENSE=	APACHE20
-
-BROKEN_aarch64=		fails to compile: 'jni_md.h' file not found
-BROKEN_armv6=		fails to compile: 'jni_md.h' file not found
-BROKEN_armv7=		fails to compile: 'jni_md.h' file not found
 
 OPTIONS_DEFINE=	DOCS
 

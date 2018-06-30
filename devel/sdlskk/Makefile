@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/devel/sdlskk/Makefile 376938 2015-01-13 14:25:18Z amdmi3 $
+# $FreeBSD: head/devel/sdlskk/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	sdlskk
 PORTVERSION=	0.5
@@ -8,7 +8,7 @@ CATEGORIES=	devel graphics ruby
 MASTER_SITES=	http://www.kmc.gr.jp/~ohai/sdlskk/
 DIST_SUBDIR=	ruby
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SKK like library for input Japanese, based on SDL
 
 LICENSE=	LGPL21

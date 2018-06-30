@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-im/hotot/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/hotot/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	hotot
 PORTVERSION=	0.9.8.14
@@ -15,7 +15,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	lyricat
 GH_PROJECT=	Hotot
 
-USES=		cmake gettext kde:4 python:2.7
+USES=		cmake gettext kde:4 python:2.7 qt:4
 USE_GNOME=	intltool
 INSTALLS_ICONS=	yes
 
@@ -38,7 +38,7 @@ PLIST_SUB+=	GTK2="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MQT4} || ${PORT_OPTIONS:MKDE4}
-USE_QT4=	moc_build qmake_build rcc_build uic_build \
+USE_QT=		moc_build qmake_build rcc_build uic_build \
 		corelib gui sql webkit
 PLIST_SUB+=	QT4=""
 .else

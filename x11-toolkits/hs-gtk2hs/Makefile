@@ -1,9 +1,9 @@
 # Created by: Oliver Braun <obraun@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/hs-gtk2hs/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-gtk2hs/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	gtk2hs
 PORTVERSION=	0.13.2.2
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	x11-toolkits haskell
 

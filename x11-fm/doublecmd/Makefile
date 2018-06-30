@@ -1,9 +1,8 @@
 # Created by: Beñat Gonzalez Etxepare <bbtruk@users.sourceforge.net>
-# $FreeBSD: head/x11-fm/doublecmd/Makefile 471479 2018-06-03 08:16:10Z acm $
+# $FreeBSD: head/x11-fm/doublecmd/Makefile 473203 2018-06-24 15:32:41Z rakuco $
 
 PORTNAME=	doublecmd
-PORTVERSION=	0.8.2
-PORTREVISION=	1
+PORTVERSION=	0.8.3
 CATEGORIES=	x11-fm
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	SF/${PORTNAME}/Double%20Commander%20Source
@@ -22,6 +21,7 @@ PORTDOCS=	*
 USES=		dos2unix desktop-file-utils fpc lazarus:flavors
 USE_FPC=	cairo chm fcl-base fcl-db fcl-image fcl-json fcl-registry \
 		fcl-xml iconvenc pasjpeg rtl-extra x11 regexpr
+USE_GNOME=	cairo glib20
 USE_XORG=	x11
 DOS2UNIX_FILES=	src/dmhelpmanager.pas
 

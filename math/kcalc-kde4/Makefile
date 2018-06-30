@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kcalc-kde4/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/kcalc-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kcalc
 PORTVERSION=	${KDE4_VERSION}
@@ -11,8 +11,8 @@ COMMENT=	Scientific calculator for KDE
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	xml qmake_build moc_build rcc_build uic_build
+USE_QT=		xml qmake_build moc_build rcc_build uic_build
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/net-mgmt/netdisco/Makefile 468549 2018-04-28 15:09:54Z yuri $
+# $FreeBSD: head/net-mgmt/netdisco/Makefile 473141 2018-06-23 16:41:59Z krion $
 
 PORTNAME=	netdisco
-DISTVERSION=	2.039024
+DISTVERSION=	2.039031
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:OLIVER

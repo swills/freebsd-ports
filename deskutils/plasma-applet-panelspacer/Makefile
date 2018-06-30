@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-panelspacer/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-panelspacer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	panelspacer
 PORTVERSION=	0.2
@@ -13,9 +13,9 @@ COMMENT=	Panel spacer plasma applet for KDE4
 
 LICENSE=	GPLv2
 
-USES=		cmake kde:4
+USES=		cmake kde:4 qt:4
 USE_KDE=	automoc4 workspace
-USE_QT4=	gui dbus network opengl svg webkit xml \
+USE_QT=		gui dbus network opengl svg webkit xml \
 		qmake_build moc_build rcc_build uic_build
 
 WRKSRC=		${WRKDIR}/Panelspacer_from_svn_pour_kdelook-tmp

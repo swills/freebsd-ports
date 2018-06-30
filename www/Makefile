@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 472976 2018-06-21 15:28:59Z mfechner $
+# $FreeBSD: head/www/Makefile 473465 2018-06-27 23:33:32Z sunpoet $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -360,7 +360,6 @@
     SUBDIR += libresonic-standalone
     SUBDIR += libsocialweb
     SUBDIR += libwww
-    SUBDIR += libxul
     SUBDIR += lightsquid
     SUBDIR += lighttpd
     SUBDIR += lighttpd-mod_h264_streaming
@@ -530,7 +529,6 @@
     SUBDIR += nostromo
     SUBDIR += novnc
     SUBDIR += novnc-websockify
-    SUBDIR += npapi-vlc
     SUBDIR += npapi-xine
     SUBDIR += npc
     SUBDIR += npm
@@ -1499,6 +1497,7 @@
     SUBDIR += py-WebError
     SUBDIR += py-WebFlash
     SUBDIR += py-WebTest
+    SUBDIR += py-aioh2
     SUBDIR += py-aiohttp
     SUBDIR += py-aiohttp-wsgi
     SUBDIR += py-albatross
@@ -1807,6 +1806,7 @@
     SUBDIR += py-poster
     SUBDIR += py-praw
     SUBDIR += py-prewikka
+    SUBDIR += py-priority
     SUBDIR += py-puppetboard
     SUBDIR += py-puppetboard02
     SUBDIR += py-puppetboard03

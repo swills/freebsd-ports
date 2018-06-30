@@ -1,5 +1,5 @@
 # Created by: Jonathan Chen <jonc@chen.org.nz>
-# $FreeBSD: head/textproc/sigil/Makefile 457778 2018-01-01 14:01:16Z vanilla $
+# $FreeBSD: head/textproc/sigil/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sigil
 PORTVERSION=	0.9.9
@@ -20,10 +20,10 @@ GH_ACCOUNT=	Sigil-Ebook
 GH_PROJECT=	Sigil
 
 USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
-		pkgconfig python:3.4+ shebangfix
+		pkgconfig python:3.4+ qt:5 shebangfix
 SHEBANG_FILES=	src/Resource_Files/plugin_launchers/python/*.py \
 		src/Resource_Files/python3lib/*.py
-USE_QT5=	concurrent core gui network printsupport svg webkit \
+USE_QT=		concurrent core gui network printsupport svg webkit \
 		widgets xml xmlpatterns \
 		buildtools_build linguisttools_build qmake_build \
 		imageformats_run

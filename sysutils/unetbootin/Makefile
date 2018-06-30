@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/unetbootin/Makefile 471558 2018-06-04 15:31:52Z danfe $
+# $FreeBSD: head/sysutils/unetbootin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	unetbootin
 PORTVERSION=	661
@@ -16,7 +16,8 @@ RUN_DEPENDS=	7z:archivers/p7zip \
 		syslinux:sysutils/syslinux \
 		mke2fs:sysutils/e2fsprogs
 
-USE_QT4=	linguisttools_build moc_build qmake_build uic_build \
+USES=	qt:4
+USE_QT=		linguisttools_build moc_build qmake_build uic_build \
 		corelib gui network
 QMAKE_ARGS=	DEFINES+=LOCALBASE=\\\\\\\"${LOCALBASE}\\\\\\\"
 

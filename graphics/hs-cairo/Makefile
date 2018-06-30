@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/hs-cairo/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/graphics/hs-cairo/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	cairo
 PORTVERSION=	0.13.5.0
+PORTREVISION=	1
 CATEGORIES=	graphics haskell
 
 MAINTAINER=	haskell@FreeBSD.org

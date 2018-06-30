@@ -1,5 +1,5 @@
 # Created by: mi
-# $FreeBSD: head/graphics/qtawesome/Makefile 430490 2017-01-03 18:12:13Z mat $
+# $FreeBSD: head/graphics/qtawesome/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtawesome
 PORTVERSION=	20150319
@@ -21,8 +21,10 @@ OPTIONS_SINGLE=		GUI
 OPTIONS_SINGLE_GUI=	QT4 QT5
 OPTIONS_DEFAULT=	QT4
 
-QT4_USE=	qt4=corelib,gui,qmake_build,moc_build
-QT5_USE=	qt5=core,gui,qmake_build,buildtools_build
+QT4_USES=	qt:4
+QT4_USE=	qt=corelib,gui,qmake_build,moc_build
+QT5_USES=	qt:5
+QT5_USE=	qt=core,gui,qmake_build,buildtools_build
 MAKE_ARGS+=	${PORT_OPTIONS:MQT*:S/QT/QT=/}
 
 WRKSRC_SUBDIR=	QtAwesome

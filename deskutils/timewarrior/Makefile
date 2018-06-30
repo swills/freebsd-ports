@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/timewarrior/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/deskutils/timewarrior/Makefile 473042 2018-06-22 14:39:31Z swills $
 
 PORTNAME=	timewarrior
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.1
 CATEGORIES=	deskutils
 MASTER_SITES=	https://taskwarrior.org/download/
 DISTNAME=	timew-${PORTVERSION}
@@ -9,6 +9,11 @@ DISTNAME=	timew-${PORTVERSION}
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Track time from the command line
 
+LICENSE=	MIT
+
 USES=		cmake compiler:c++11-lang
+CMAKE_ARGS+=	-DTIMEW_DOCDIR=${DOCSDIR}
+
+OPTIONS_SUB=	yes
 
 .include <bsd.port.mk>

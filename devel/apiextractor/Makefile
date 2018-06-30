@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/apiextractor/Makefile 428130 2016-12-08 15:46:46Z tijl $
+# $FreeBSD: head/devel/apiextractor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	apiextractor
 PORTVERSION=	0.10.10
@@ -17,9 +17,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	PySide
 GH_PROJECT=	Apiextractor
 
-USES=		cmake
+USES=		cmake qt:4
 USE_GNOME=	libxml2 libxslt
-USE_QT4=	gui moc_build qmake_build qtestlib_build \
+USE_QT=		gui moc_build qmake_build qtestlib_build \
 		rcc_build uic_build xml xmlpatterns
 USE_LDCONFIG=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/simsu/Makefile 471936 2018-06-07 17:02:16Z amdmi3 $
+# $FreeBSD: head/games/simsu/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	simsu
 PORTVERSION=	1.3.6
@@ -14,8 +14,8 @@ COMMENT=	Basic Sudoku game
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		compiler:c++11-lib qmake tar:bzip2
-USE_QT5=	core gui widgets buildtools_build linguisttools_build
+USES=		compiler:c++11-lib qmake qt:5 tar:bzip2
+USE_QT=		core gui widgets buildtools_build linguisttools_build
 USE_GL=		gl
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

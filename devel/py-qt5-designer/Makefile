@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-designer/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/py-qt5-designer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	designer
 PORTREVISION=	5
@@ -10,11 +10,11 @@ COMMENT=	Python bindings for the Qt5 toolkit, QtDesigner module
 CONFIGURE_ARGS=	--enable QtDesigner --no-designer-plugin
 PYQT_DIST=	yes
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_GL=		yes
 USE_PYQT=	sip_build core_run widgets_run
 USE_PYTHON=	flavors
-USE_QT5=	core gui designer widgets xml \
+USE_QT=		core gui designer widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

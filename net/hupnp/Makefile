@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/hupnp/Makefile 459235 2018-01-17 10:44:28Z tcberner $
+# $FreeBSD: head/net/hupnp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	hupnp
 PORTVERSION=	1.0.0
@@ -14,8 +14,8 @@ COMMENT=	Library for building UPnP devices and control points
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/hupnp/LICENSE_LGPLv3.txt
 
-USES=		gmake qmake zip
-USE_QT4=	corelib network xml dbus gui \
+USES=		gmake qmake qt:4 zip
+USE_QT=		corelib network xml dbus gui \
 		moc_build rcc_build uic_build
 USE_CXXSTD=	gnu++98
 

@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/autoq3d/Makefile 456609 2017-12-18 10:51:30Z amdmi3 $
+# $FreeBSD: head/graphics/autoq3d/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	autoq3d
 PORTVERSION=	1.40
@@ -14,11 +14,11 @@ COMMENT=	Qt 4 quick 3D model editor
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/docs/license.txt
 
-USES=		dos2unix qmake zip
+USES=		dos2unix qmake qt:4 zip
 DOS2UNIX_FILES=	*.pro src/cmds/*.cpp src/fgui/*.cpp docs/*.txt
 DOS2UNIX_REGEX=	.*.[^p][^n][^g]$
 USE_GL=		glu
-USE_QT4=	corelib gui opengl moc_build
+USE_QT=		corelib gui opengl moc_build
 
 PORTDOCS=	3DQformat.txt ChangeLog.txt
 

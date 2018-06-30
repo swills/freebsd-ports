@@ -1,12 +1,12 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/net/proxychains-ng/Makefile 438133 2017-04-10 08:23:41Z ehaupt $
+# $FreeBSD: head/net/proxychains-ng/Makefile 473399 2018-06-26 17:13:21Z ehaupt $
 
 PORTNAME=	proxychains-ng
-PORTVERSION=	4.12
+PORTVERSION=	4.13
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net security
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Redirect connection through proxy servers
 
 LICENSE=	GPLv2

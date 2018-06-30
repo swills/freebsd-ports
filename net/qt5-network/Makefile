@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/qt5-network/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/net/qt5-network/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	network
 DISTVERSION=	${QT5_VERSION}
@@ -13,9 +13,8 @@ BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'X509
 
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
-USES=		ssl
-USE_QT5=	core qmake_build buildtools_build
-QT_DIST=	base
+USES=		qmake:no_env qt-dist:5,base ssl
+USE_QT=		core buildtools_build
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-no-gui -no-xcb
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

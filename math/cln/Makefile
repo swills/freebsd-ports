@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/cln/Makefile 455177 2017-11-30 08:22:47Z linimon $
+# $FreeBSD: head/math/cln/Makefile 473530 2018-06-29 07:36:14Z linimon $
 
 PORTNAME=	cln
 PORTVERSION=	1.3.4
@@ -20,8 +20,6 @@ USES=		gmake libtool pathfix pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 
 INFO=		cln
-
-BROKEN_aarch64=	Fails to compile: error: declaration of divu_64_rest in global scope conflicts with declaration with C language linkage
 
 .include <bsd.port.pre.mk>
 

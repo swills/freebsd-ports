@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-RO/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/astro/py-RO/Makefile 473228 2018-06-24 20:16:47Z sunpoet $
 
 PORTNAME=	RO
 PORTVERSION=	3.6.9
@@ -8,20 +8,19 @@ CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Package of Python astronomical utilities
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/docs/License.txt
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/numpy/core/numeric.py:math/py-numpy@${PY_FLAVOR}
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+RUN_DEPENDS=	${PYNUMPY}
 
-OPTIONS_DEFINE=		ASTROPY MATPLOTLIB PYGAME
-OPTIONS_DEFAULT=	ASTROPY
-
-ASTROPY_DESC=		Add Support for Astropy
-MATPLOTLIB_DESC=	Add support for Matplotlib
-PYGAME_DESC=		Add Support for PyGame
+OPTIONS_DEFINE=	ASTROPY MATPLOTLIB PYGAME
+OPTIONS_DEFAULT=ASTROPY
+ASTROPY_DESC=	Add Support for Astropy
+MATPLOTLIB_DESC=Add support for Matplotlib
+PYGAME_DESC=	Add Support for PyGame
 
 NO_ARCH=	yes
 USES=		python

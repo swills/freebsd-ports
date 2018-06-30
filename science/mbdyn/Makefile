@@ -1,5 +1,5 @@
 # Created by: Kay Lehmann <kay_lehmann@web.de>
-# $FreeBSD: head/science/mbdyn/Makefile 468325 2018-04-26 06:41:30Z yuri $
+# $FreeBSD: head/science/mbdyn/Makefile 473021 2018-06-22 08:08:30Z yuri $
 
 PORTNAME=	mbdyn
 PORTVERSION=	1.7.2
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	science
 MASTER_SITES=	https://www.mbdyn.org/userfiles/downloads/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	MultiBody Dynamics analysis system
 
 LICENSE=	GPLv2

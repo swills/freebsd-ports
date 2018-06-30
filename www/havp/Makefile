@@ -1,9 +1,9 @@
 # Created by: Elisey Savateev <b3k@mail.ru>
-# $FreeBSD: head/www/havp/Makefile 439930 2017-05-02 06:30:46Z miwi $
+# $FreeBSD: head/www/havp/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	havp
 PORTVERSION=	0.91
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	http://www.server-side.de/download/ \
 		http://bio3k.softboard.ru/uploads/arch/ \

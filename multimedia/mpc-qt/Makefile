@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/mpc-qt/Makefile 469606 2018-05-11 01:50:28Z jbeich $
+# $FreeBSD: head/multimedia/mpc-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mpc-qt
 DISTVERSIONPREFIX=	v
@@ -17,8 +17,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	cmdrkotori
 GH_TUPLE=	Argon-:mpv-stats:1.1-28-gf42aa68:mpv_stats/external/mpv-stats
 
-USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake
-USE_QT5=	qmake_build buildtools_build linguisttools_build \
+USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake qt:5
+USE_QT=		qmake_build buildtools_build linguisttools_build \
 		core dbus gui network svg_run widgets x11extras
 USE_GL=		gl
 CXXFLAGS+=	-D_GLIBCXX_USE_C99 -D_GLIBCXX_USE_C99_MATH_TR1 \

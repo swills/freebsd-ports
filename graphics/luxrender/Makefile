@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/luxrender/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/luxrender/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	luxrender
 DISTVERSION?=	1.6
@@ -53,7 +53,8 @@ FREEIMAGE_CMAKE_ON=	-DLUX_USE_FREEIMAGE:BOOL=ON
 FREEIMAGE_LIB_DEPENDS=	libfreeimage.so:graphics/freeimage
 
 X11_DESC=	Build GUI executable (requires Qt 4)
-X11_USE=	QT4=moc_build,qmake_build,rcc_build,uic_build,corelib,gui
+X11_USES=	qt:4
+X11_USE=	QT=moc_build,qmake_build,rcc_build,uic_build,corelib,gui
 X11_PLIST_FILES=	bin/luxrender
 
 post-extract:

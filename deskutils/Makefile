@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 468518 2018-04-28 06:13:39Z tcberner $
+# $FreeBSD: head/deskutils/Makefile 473277 2018-06-24 21:22:10Z danilo $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -171,6 +171,7 @@
     SUBDIR += lumina-screenshot
     SUBDIR += lumina-textedit
     SUBDIR += lumina-xdg-entry
+    SUBDIR += mat
     SUBDIR += mate-notification-daemon
     SUBDIR += mate-utils
     SUBDIR += mbox-importer
@@ -262,6 +263,7 @@
     SUBDIR += sugarcrm
     SUBDIR += superkaramba-kde4
     SUBDIR += surrealtodo
+    SUBDIR += synapse
     SUBDIR += syncthing-gtk
     SUBDIR += systempreferences
     SUBDIR += tagutils

@@ -1,9 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/qTox/Makefile 469179 2018-05-06 06:44:24Z yuri $
+# $FreeBSD: head/net-im/qTox/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qTox
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.15.0
+PORTREVISION=	1
 CATEGORIES=	net-im net-p2p
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
@@ -27,10 +28,10 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libtoxcore.so:net-im/tox \
 		libvpx.so:multimedia/libvpx
 
-USES=		cmake compiler:c++11-lib desktop-file-utils gettext openal:soft pkgconfig
+USES=		cmake compiler:c++11-lib desktop-file-utils gettext openal:soft pkgconfig qt:5
 USE_GITHUB=	yes
 USE_GNOME=	gtk20 gdkpixbuf2 cairo
-USE_QT5=	core gui network xml opengl sql sql-sqlite3_run widgets svg \
+USE_QT=		core gui network xml opengl sql sql-sqlite3_run widgets svg \
 		concurrent_build buildtools_build linguisttools_build qmake_build testlib_build
 CMAKE_ARGS=	-DGIT_DESCRIBE:STRING=${FULLVERSION}
 CMAKE_OFF=	USE_CCACHE

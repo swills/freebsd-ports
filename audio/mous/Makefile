@@ -1,5 +1,5 @@
 # Created by: Yanhui Shen <shen.elf@gmail.com>
-# $FreeBSD: head/audio/mous/Makefile 468613 2018-04-29 09:17:17Z tobik $
+# $FreeBSD: head/audio/mous/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mous
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,8 @@ COMMENT=	Simple yet powerful audio player
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
 USES=		cmake:outsource compiler:c++14-lang
 USE_LDCONFIG=	yes
@@ -70,7 +72,8 @@ NCURSES_USE=		ncurses
 OSS_CMAKE_BOOL=		WITH_PLUGIN_OSS
 
 QT5_CMAKE_BOOL=		WITH_APP_QT5
-QT5_USE=		qt5=buildtools,core,gui,widgets,qmake_build
+QT5_USES=		qt:5
+QT5_USE=		qt=buildtools,core,gui,widgets,qmake_build
 
 SNDIO_CMAKE_BOOL=	WITH_PLUGIN_SNDIO
 SNDIO_LIB_DEPENDS=	libsndio.so:audio/sndio

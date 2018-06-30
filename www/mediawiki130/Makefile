@@ -1,8 +1,9 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/www/mediawiki130/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/mediawiki130/Makefile 473191 2018-06-24 09:14:36Z wen $
 
 PORTNAME=	mediawiki
 PORTVERSION=	1.30.0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://releases.wikimedia.org/mediawiki/${PORTVERSION:R}/
 PKGNAMESUFFIX=	130
@@ -22,7 +23,7 @@ SHEBANG_FILES=	maintenance/dev/*.sh \
 SHEBANG_LANG=	hhvm
 hhvm_OLD_CMD=	/usr/bin/hhvm
 hhvm_CMD=	${LOCALBASE}/bin/hhvm # not installed by anything yet
-USE_PHP=	ctype dom fileinfo hash iconv intl json mbstring pcre \
+USE_PHP=	ctype dom fileinfo hash iconv intl json mbstring openssl pcre \
 		readline session xml xmlreader zlib
 MEDIAWIKIDIR?=	www/mediawiki
 

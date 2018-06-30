@@ -1,5 +1,5 @@
 # Created by: Kurt Kanzenbach <kurt@kmk-computers.de>
-# $FreeBSD: head/science/libgeodecomp/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/science/libgeodecomp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=		libgeodecomp
 PORTVERSION=		0.4.0
@@ -30,7 +30,8 @@ OPTIONS_DEFAULT=	MPI QT4 SILO SCOTCH
 MPI_LIB_DEPENDS=	libmpich.so:net/mpich2
 MPI_CMAKE_BOOL=		WITH_MPI
 
-QT4_USE=		QT4=corelib,gui,opengl,qmake_build,moc_build,rcc_build,uic_build
+QT4_USES=	qt:4
+QT4_USE=		QT=corelib,gui,opengl,qmake_build,moc_build,rcc_build,uic_build
 QT4_CMAKE_BOOL=		WITH_QT
 
 SILO_DESC=		Enable Silo dependend output

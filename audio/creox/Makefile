@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/creox/Makefile 462574 2018-02-22 09:02:58Z amdmi3 $
+# $FreeBSD: head/audio/creox/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	creox
 PORTVERSION=	0.3
@@ -18,9 +18,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	laudrup
 GH_PROJECT=	Creox4
 
-USES=		cmake:outsource kde:4
+USES=		cmake:outsource kde:4 qt:4
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 USE_XORG=	xft xpm
 USE_CXXSTD=	gnu++98
 

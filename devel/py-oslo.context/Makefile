@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.context/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-oslo.context/Makefile 473234 2018-06-24 20:17:19Z sunpoet $
 
 PORTNAME=	oslo.context
-PORTVERSION=	2.20.0
+PORTVERSION=	2.21.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

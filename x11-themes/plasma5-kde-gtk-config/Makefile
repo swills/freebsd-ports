@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/plasma5-kde-gtk-config/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-kde-gtk-config/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kde-gtk-config
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -16,12 +16,12 @@ BUILD_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 
 USES=		cmake:outsource compiler:c++11-lib cpe gettext \
-		kde:5 pkgconfig tar:xz
+		kde:5 pkgconfig qt:5 tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gtk20 gtk30 glib20
 USE_KDE=	archive attica auth codecs completion config configwidgets \
 		coreaddons ecm i18n iconthemes jobwidgets kcmutils kio \
 		newstuff service widgetsaddons xmlgui
-USE_QT5=	concurrent core dbus gui network testlib widgets xml \
+USE_QT=		concurrent core dbus gui network testlib widgets xml \
 		buildtools_build qmake_build
 USE_XORG=	xcursor
 

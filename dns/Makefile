@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 471924 2018-06-07 14:18:54Z dbaio $
+# $FreeBSD: head/dns/Makefile 473328 2018-06-25 17:14:41Z truckman $
 #
 
     COMMENT = Domain Name Service tools
@@ -56,6 +56,7 @@
     SUBDIR += dnsrecon
     SUBDIR += dnsreflector
     SUBDIR += dnstable
+    SUBDIR += dnstable-convert
     SUBDIR += dnstop
     SUBDIR += dnstracer
     SUBDIR += dnsutl

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/gitterdone/Makefile 453595 2017-11-06 07:40:23Z araujo $
+# $FreeBSD: head/net-im/gitterdone/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gitterdone
 PORTVERSION=	201710031257
@@ -14,8 +14,8 @@ MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
 
-USES=		qmake shebangfix tar:xz
-USE_QT5=	core gui network linguist_build \
+USES=		qmake qt:5 shebangfix tar:xz
+USE_QT=		core gui network linguist_build \
 		buildtools_build widgets webkit svg
 USE_GL+=	gl
 

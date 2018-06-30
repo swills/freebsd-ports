@@ -1,5 +1,5 @@
 # Created by: Jacek Pelka <jacek@combit.com.pl>
-# $FreeBSD: head/polish/kadu/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/polish/kadu/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kadu
 PORTVERSION=	4.3
@@ -37,10 +37,10 @@ GG6_EMOTS_DISTFILE=	kompatybilne_z_GG6.tar.gz
 GG7_EMOTS_DISTFILE=	dodatkowe_emoty_GG7.tar.gz
 
 USES=		cmake compiler:c++11-lib gettext-runtime \
-		libarchive pkgconfig readline tar:bzip2
+		libarchive pkgconfig qt:5 readline tar:bzip2
 USE_XORG=	x11 xext xfixes xscrnsaver
 USE_GNOME=	glib20
-USE_QT5=	concurrent core dbus gui multimedia network \
+USE_QT=		concurrent core dbus gui multimedia network \
 		qml quick script scripttools sql webkit widgets x11extras \
 		xml xmlpatterns buildtools_build linguisttools_build \
 		qmake_build imageformats_run sql-sqlite3_run

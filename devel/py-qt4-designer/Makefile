@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-designer/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/py-qt4-designer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	designer
 PORTREVISION=	3
@@ -12,10 +12,10 @@ COMMENT=	Python bindings for the Qt4 toolkit, QtDesigner module
 CONFIGURE_ARGS=	--enable QtDesigner --no-designer-plugin
 PYQT_DIST=	yes
 
-USES=		python pyqt:4
+USES=		python pyqt:4 qt:4
 USE_PYQT=	sip_build core_run gui_run
 USE_PYTHON=	flavors
-USE_QT4=	corelib designer gui moc_build qmake_build
+USE_QT=		corelib designer gui moc_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

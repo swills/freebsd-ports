@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/devel/qca/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/devel/qca/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qca
 PORTVERSION=	2.1.3
@@ -27,10 +27,12 @@ USE_LDCONFIG=	yes
 
 .  if ${FLAVOR} == qt4
 CMAKE_ON=	QT4_BUILD
-USE_QT4=	corelib moc_build qmake_build rcc_build
+USES+=		qt:4
+USE_QT=		corelib moc_build qmake_build rcc_build
 .  else
 CMAKE_ARGS+=	-DQCA_SUFFIX=qt5
-USE_QT5=	core buildtools_build qmake_build
+USES+=		qt:5
+USE_QT=	core buildtools_build qmake_build
 .  endif
 qt4_PLIST=	${.CURDIR}/pkg-plist.qt4
 qt5_PLIST=	${.CURDIR}/pkg-plist.qt5

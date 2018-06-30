@@ -1,10 +1,10 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/dogecoin/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-p2p/dogecoin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dogecoin
 PORTVERSION=	1.10.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -39,8 +39,8 @@ CONFIGURE_ARGS+=	--with-incompatible-bdb --disable-tests
 
 GUI_CONFIGURE_ARGS=	--with-gui=qt5
 GUI_CONFIGURE_OFF=	--with-gui=no
-GUI_USE=		QT5=buildtools,core,dbus,gui,linguist_build,network,printsupport,testlib,widgets
-GUI_USES=		desktop-file-utils
+GUI_USE=		QT=buildtools,core,dbus,gui,linguist_build,network,printsupport,testlib,widgets
+GUI_USES=		desktop-file-utils qt:5
 
 QRCODES_CONFIGURE_WITH=	qrencode
 QRCODES_LIB_DEPENDS=	libqrencode.so:graphics/libqrencode

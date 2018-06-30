@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/pcbsd-utils-qt5/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/sysutils/pcbsd-utils-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pcbsd-utils-qt5
 PORTVERSION=	1444236547
@@ -29,9 +29,9 @@ CONFLICTS?=	pcbsd-utils-qt4-[0-9]*
 MAKE_JOBS_UNSAFE=yes
 ONLY_FOR_ARCHS=	amd64
 USE_LDCONFIG=	yes
-USE_QT5=	core gui network svg linguist \
+USE_QT=		core gui network svg linguist \
 		webkit buildtools x11extras
-USES=		desktop-file-utils python qmake shebangfix
+USES=		desktop-file-utils python qmake qt:5 shebangfix
 SHEBANG_FILES=	pc-netmanager/src/NetworkManager/resources/umts_stick \
 		pc-sysmanager/scripts/fastest_cvsup
 

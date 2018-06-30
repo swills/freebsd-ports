@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-zhparser/Makefile 446061 2017-07-17 10:20:42Z tz $
+# $FreeBSD: head/databases/postgresql-zhparser/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	zhparser
 PORTVERSION=	0.2.0
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PostgreSQL extension for full-text search of Chinese
 
 LICENSE=	PostgreSQL
@@ -15,6 +15,7 @@ LICENSE=	PostgreSQL
 LIB_DEPENDS=	libscws.so:textproc/scws
 
 USES=		gmake pgsql:9.2+
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	amutu
 

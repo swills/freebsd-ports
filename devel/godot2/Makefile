@@ -1,10 +1,10 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/devel/godot2/Makefile 464714 2018-03-16 17:27:57Z amdmi3 $
+# $FreeBSD: head/devel/godot2/Makefile 473166 2018-06-23 21:18:26Z amdmi3 $
 
 PORTNAME=	godot
 PORTVERSION=	2.1.4
 DISTVERSIONSUFFIX=	-stable
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	devel games
 PKGNAMESUFFIX?=	2
 
@@ -24,12 +24,12 @@ RUN_DEPENDS=	xdg-user-dir:devel/xdg-user-dirs \
 		xdg-open:devel/xdg-utils \
 		xmessage:x11/xmessage
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	godotengine
-
 USES=		compiler:c++11-lib pkgconfig scons ssl
 USE_XORG=	x11 xcursor xinerama xrandr
 USE_GL=		gl glu
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	godotengine
 
 MAKE_ARGS+=		platform=x11 builtin_speex=no builtin_libmpcdec=no
 MAKE_ARGS+=		${MAKE_ARGS_${CHOSEN_COMPILER_TYPE}}

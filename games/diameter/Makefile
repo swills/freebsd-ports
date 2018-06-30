@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/diameter/Makefile 464914 2018-03-18 14:20:32Z linimon $
+# $FreeBSD: head/games/diameter/Makefile 473067 2018-06-22 20:32:35Z amdmi3 $
 
 PORTNAME=	diameter
 PORTVERSION=	0.4.0.3
@@ -16,15 +16,18 @@ BROKEN_armv7=		fails to compile: res/3dsloader.cpp:77:15: comparison between poi
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libguichan.so:devel/guichan
 
-USES=		tar:bzip2 gmake pkgconfig python:2.7
+USES=		dos2unix tar:bzip2 gmake pkgconfig python:2.7
+DOS2UNIX_FILES=	src/res/3dsloader.cpp
 GNU_CONFIGURE=	yes
-USE_GL=		gl
+USE_GL=		gl glu
 USE_SDL=	sdl mixer image
 
 WRKSRC=		${WRKDIR}/gamediameter
 
 CPPFLAGS+=	`${SDL_CONFIG} --cflags` -I${LOCALBASE}/include
 LDFLAGS+=	`${SDL_CONFIG} --libs` -L${LOCALBASE}/lib
+
+CXXFLAGS+=	-Wno-static-float-init
 
 DATADIR=	${PREFIX}/share/gamediameter
 

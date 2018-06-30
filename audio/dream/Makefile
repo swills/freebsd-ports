@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/dream/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/audio/dream/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dream
 PORTVERSION=	2.1.1
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libhamlib.so:comms/hamlib\
 		libqwt.so:x11-toolkits/qwt5\
 		libfftw3.so:math/fftw3
 
-USES=		gmake pkgconfig qmake
-USE_QT4=	qmake_build moc_build uic_build corelib gui network rcc webkit
+USES=		gmake pkgconfig qmake qt:4
+USE_QT=		qmake_build moc_build uic_build corelib gui network rcc webkit
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 OPTIONS_DEFINE=		SNDFILE OGG VORBIS FLAC OPUS SPEEX FAAD FAAC

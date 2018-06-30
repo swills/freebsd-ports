@@ -1,5 +1,5 @@
 # Created by: Gabor Pali <pgj@FreeBSD.org>
-# $FreeBSD: head/devel/cppcheck/Makefile 472270 2018-06-12 19:02:41Z amdmi3 $
+# $FreeBSD: head/devel/cppcheck/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cppcheck
 PORTVERSION=	1.84
@@ -21,7 +21,8 @@ COMMENT=		Static analysis of C/C++ code (GUI)
 RUN_DEPENDS=		cppcheck:devel/cppcheck
 
 CMAKE_ARGS=		-DBUILD_GUI=TRUE
-USE_QT5=		core gui widgets printsupport qmake_build buildtools_build linguisttools_build
+USES+=			qt:5
+USE_QT=			core gui widgets printsupport qmake_build buildtools_build linguisttools_build
 
 BUILD_WRKSRC=		${WRKSRC}/gui
 INSTALL_WRKSRC=		${WRKSRC}/gui

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kde-baseapps-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11/kde-baseapps-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kde-baseapps
 PORTVERSION=	${KDE4_VERSION}
@@ -11,11 +11,11 @@ COMMENT=	Basic applications for KDE
 
 LIB_DEPENDS=	libtidy.so:www/tidy-lib
 
-USES=		cmake:outsource gettext kde:4 tar:xz
+USES=		cmake:outsource gettext kde:4 qt:4 tar:xz
 USE_GNOME=	glib20
 USE_KDE=	kdelibs baloo baloo-widgets libkonq \
 		automoc4 kactivities
-USE_QT4=	corelib dbus gui script xml \
+USE_QT=		corelib dbus gui script xml \
 		moc_build qmake_build rcc_build uic_build
 USE_XORG=	x11 xt
 USE_LDCONFIG=	yes

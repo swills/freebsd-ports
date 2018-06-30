@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-polyparse/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-polyparse/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	polyparse
 PORTVERSION=	1.12
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

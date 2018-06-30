@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-X-Tiny/Makefile 469633 2018-05-11 12:37:20Z pi $
+# $FreeBSD: head/devel/p5-X-Tiny/Makefile 473539 2018-06-29 10:10:35Z mat $
 
 PORTNAME=	X-Tiny
 PORTVERSION=	0.13
@@ -20,7 +20,4 @@ PLIST_FILES=	${SITE_PERL_REL}/X/Tiny.pm \
 		${SITE_MAN3_REL}/X::Tiny.3.gz \
 		${SITE_MAN3_REL}/X::Tiny::Base.3.gz
 
-pre-install:
-		${RM} ${WRKSRC}/blib/lib/X/README.pod
- 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdiagram/Makefile 443821 2017-06-18 07:41:03Z rakuco $
+# $FreeBSD: head/graphics/kdiagram/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdiagram
 PORTVERSION=	2.6.0
@@ -12,9 +12,9 @@ COMMENT=	Library to create business diagrams
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.GPL.txt
 
-USES=		cmake:outsource kde:5 tar:xz
+USES=		cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT5=	core gui linguisttools printsupport sql svg widgets \
+USE_QT=		core gui linguisttools printsupport sql svg widgets \
 		buildtools_build qmake_build
 
 PLIST_SUB=	SHLIB_VER="${PORTVERSION}" \

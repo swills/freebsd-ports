@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/rubygem-vte3/Makefile 469068 2018-05-04 18:08:48Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-vte3/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	vte3
 PORTVERSION=	3.2.5
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 

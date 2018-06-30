@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ruby-krossruby-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/ruby-krossruby-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	krossruby
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ DISTNAME=	kross-interpreters-${PORTVERSION}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Ruby bindings for Qt/KDE
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs pimlibs automoc4
-USE_QT4=	corelib gui qmake_build moc_build uic_build rcc_build
+USE_QT=		corelib gui qmake_build moc_build uic_build rcc_build
 USE_RUBY=	yes
 CMAKE_ARGS+=	-DBUILD_python:BOOL=FALSE \
 		-DBUILD_falcon:BOOL=FALSE \

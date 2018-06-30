@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome-terminal/Makefile 452508 2017-10-20 09:04:23Z amdmi3 $
+# $FreeBSD: head/x11/gnome-terminal/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	gnome-terminal
 PORTVERSION=	3.24.2
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/shotcut/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/shotcut/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	shotcut
 PORTVERSION=	${FULLVERSION:R}
@@ -21,8 +21,8 @@ GH_ACCOUNT=	mltframework
 # Needed to be able to correctly check for updates in-app.
 FULLVERSION=	17.02.01
 
-USES=		pkgconfig qmake
-USE_QT5=	buildtools_build concurrent_build core \
+USES=		pkgconfig qmake qt:5
+USE_QT=		buildtools_build concurrent_build core \
 		graphicaleffects_run gui multimedia network opengl \
 		printsupport qml quick quickcontrols_run sql \
 		sql-sqlite3_run webkit websockets widgets x11extras xml
@@ -45,7 +45,8 @@ FREI0R_RUN_DEPENDS=	frei0r-plugins>=0:graphics/frei0r-plugins
 
 LADSPA_RUN_DEPENDS=	swhplugins>=0:audio/swhplugins
 
-NLS_USE=		QT5=linguisttools_build
+NLS_USES=	qt:5
+NLS_USE=		QT=linguisttools_build
 
 WEBVFX_RUN_DEPENDS=	${LOCALBASE}/lib/mlt/libmltwebvfx.so:multimedia/webvfx-qt5
 

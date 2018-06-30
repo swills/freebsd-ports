@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/radare-cutter/Makefile 470768 2018-05-24 11:26:57Z swills $
+# $FreeBSD: head/x11/radare-cutter/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	radare-cutter
 PORTVERSION=	1.4
@@ -16,12 +16,12 @@ RUN_DEPENDS=	python3:lang/python3
 
 LIB_DEPENDS=	libr2.so:devel/radare2
 
-USES=		pkgconfig python:3.4+ qmake
+USES=		pkgconfig python:3.4+ qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	radareorg
 GH_PROJECT=	cutter
 
-USE_QT5=	buildtools_build core gui svg webengine widgets
+USE_QT=		buildtools_build core gui svg webengine widgets
 
 WRKSRC_SUBDIR=	src
 

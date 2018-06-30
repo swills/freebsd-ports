@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/x11/xautomation/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xautomation/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	xautomation
 PORTVERSION=	1.09
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://hoopajoo.net/static/projects/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Control X from the command line for scripts
 
 LICENSE=	GPLv2

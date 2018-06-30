@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kwave/Makefile 467245 2018-04-13 15:44:23Z tcberner $
+# $FreeBSD: head/audio/kwave/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kwave
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -19,12 +19,12 @@ LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libvorbisenc.so:audio/libvorbis
 
 USES=		cmake:outsource desktop-file-utils gettext kde:5 \
-		localbase:ldflags pkgconfig tar:xz
+		localbase:ldflags pkgconfig qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm i18n iconthemes itemviews \
 		jobwidgets kio service solid sonnet textwidgets widgetsaddons \
 		xmlgui
-USE_QT5=	concurrent core dbus gui multimedia network widgets xml \
+USE_QT=		concurrent core dbus gui multimedia network widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_GROUP=			AUDIOPLUGIN

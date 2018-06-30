@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/qcomicbook/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/graphics/qcomicbook/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qcomicbook
 PORTVERSION=	0.9.0
@@ -14,8 +14,8 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
 
-USES=		cmake:outsource compiler:c++11-lang pkgconfig
-USE_QT4=	corelib gui linguisttools_build moc_build qmake_build rcc_build \
+USES=		cmake:outsource compiler:c++11-lang pkgconfig qt:4
+USE_QT=		corelib gui linguisttools_build moc_build qmake_build rcc_build \
 		uic_build xml
 
 OPTIONS_DEFINE=	7ZIP ACE RAR

@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/net/qt4-network/Makefile 465899 2018-03-29 14:53:23Z mat $
+# $FreeBSD: head/net/qt4-network/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	network
 DISTVERSION=	${QT4_VERSION}
@@ -18,9 +18,8 @@ BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'RSA'
 
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
-USES=		ssl
-USE_QT4=	qmake_build moc_build rcc_build corelib
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4 ssl
+USE_QT=		moc_build rcc_build corelib
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 

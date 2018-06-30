@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/devel/libuv/Makefile 469375 2018-05-08 13:23:26Z thierry $
+# $FreeBSD: head/devel/libuv/Makefile 473142 2018-06-23 16:48:34Z thierry $
 
 PORTNAME=	libuv
-PORTVERSION=	1.20.3
+PORTVERSION=	1.21.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 #MASTER_SITES=	http://dist.libuv.org/dist/v${PORTVERSION}/
@@ -15,7 +15,7 @@ LICENSE_NAME=	NODE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-TEST_DEPENDS=	gyp:devel/py-gyp \
+TEST_DEPENDS=	gyp:devel/py-gyp	\
 		gmake:devel/gmake
 
 USE_GITHUB=	yes

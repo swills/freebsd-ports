@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kmix/Makefile 466811 2018-04-08 17:35:41Z tcberner $
+# $FreeBSD: head/audio/kmix/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kmix
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,12 +11,12 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libasound.so:audio/alsa-lib
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons ecm \
 		emoticons globalaccel i18n iconthemes init itemmodels \
 		itemviews kcmutils kdelibs4support notifications package \
 		plasma-framework service solid widgetsaddons windowsystem xmlgui
-USE_QT5=	core dbus gui widgets xml \
+USE_QT=		core dbus gui widgets xml \
 		buildtools_build qmake_build
 
 # we want the KF5 version of kmix

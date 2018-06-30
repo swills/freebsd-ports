@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/ponyc/Makefile 472413 2018-06-14 23:25:25Z swills $
+# $FreeBSD: head/lang/ponyc/Makefile 473529 2018-06-29 07:31:24Z linimon $
 
 PORTNAME=	ponyc
 DISTVERSION=	0.23.0
@@ -10,7 +10,7 @@ COMMENT=	Pony language compiler
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=		amd64
+ONLY_FOR_ARCHS=		aarch64 amd64
 ONLY_FOR_ARCHS_REASON=	Undefined reference to __atomic_compare_exchange_8
 BROKEN_FreeBSD_10=	Undefined reference to __atomic_compare_exchange
 
@@ -32,7 +32,7 @@ GH_ACCOUNT=	ponylang
 
 PORTDOCS=	*.md
 
-MAKE_ENV=	prefix=${PREFIX} verbose=true
+MAKE_ENV=	prefix=${PREFIX} verbose=true ${"${ARCH}" == aarch64:?arch=armv8-a:}
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/pony/${DISTVERSION}/bin/ponyc

@@ -1,5 +1,5 @@
 # Created by: Shane Bell <decept0@gmail.com>
-# $FreeBSD: head/x11/yakuake-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11/yakuake-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	yakuake
 PORTVERSION=	2.9.9
@@ -16,10 +16,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	konsole:x11/konsole-kde4
 
-USES=		cmake gettext kde:4 shebangfix tar:xz
+USES=		cmake gettext kde:4 qt:4 shebangfix tar:xz
 SHEBANG_FILES=	data/updaters/yakuake-${PORTVERSION}-startupnotification.pl
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USE_QT=		qmake_build moc_build rcc_build uic_build
 
 PLIST_SUB=	VERSION="${PORTVERSION}"
 

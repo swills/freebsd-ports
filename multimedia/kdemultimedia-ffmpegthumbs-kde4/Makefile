@@ -1,5 +1,5 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs-kde4/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ffmpegthumbs
 PORTVERSION=	${KDE4_VERSION}
@@ -15,9 +15,9 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libswscale.so:multimedia/ffmpeg
 
-USES=		cmake:outsource kde:4 pkgconfig tar:xz
+USES=		cmake:outsource kde:4 pkgconfig qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	moc_build qmake_build rcc_build uic_build \
+USE_QT=		moc_build qmake_build rcc_build uic_build \
 		corelib dbus gui network svg xml
 
 .include <bsd.port.mk>

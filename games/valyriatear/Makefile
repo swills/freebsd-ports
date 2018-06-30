@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/valyriatear/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/valyriatear/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	valyriatear
 PORTVERSION=	1.0.0
@@ -31,6 +31,8 @@ USE_XORG=	x11 xext sm ice
 INSTALLS_ICONS=	yes
 LLD_UNSAFE=	yes
 
+CXXFLAGS+=	-Wno-reserved-user-defined-literal
+
 PORTDOCS=	*
 PORTDATA=	*
 
@@ -39,7 +41,8 @@ OPTIONS_SUB=	yes
 
 EDITOR_DESC=	Compile the Qt editor along with the game
 EDITOR_CMAKE_BOOL=	EDITOR_SUPPORT
-EDITOR_USE=	QT4=corelib,gui,opengl,qmake_build,moc_build,uic_build,rcc_build
+EDITOR_USES=	qt:4
+EDITOR_USE=	QT=corelib,gui,opengl,qmake_build,moc_build,uic_build,rcc_build
 EDITOR_DESKTOP_ENTRIES=	\
 		"Valyria Tear Editor" \
 		"Map editor for Valyria Tear game" \

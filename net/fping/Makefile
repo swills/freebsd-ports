@@ -1,8 +1,9 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/net/fping/Makefile 439009 2017-04-21 07:22:38Z miwi $
+# $FreeBSD: head/net/fping/Makefile 473606 2018-06-30 08:49:13Z fernape $
 
 PORTNAME=	fping
-PORTVERSION=	3.16
+PORTVERSION=	4.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	net ipv6
 
 MAINTAINER=	jharris@widomaker.com
@@ -14,20 +15,18 @@ LICENSE_NAME=	Previous BSD License
 LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
+USES=		autoreconf gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	schweikert
 
-OPTIONS_MULTI=		NET
-OPTIONS_MULTI_NET=	IPV4 IPV6
-OPTIONS_DEFAULT=	IPV4
-OPTIONS_SUB=	yes
-
-USES=		autoreconf gmake
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--bindir="${PREFIX}/sbin"
+CONFIGURE_ARGS=	--bindir="${PREFIX}/sbin" \
+		--enable-ipv6 \
+		--enable-ipv4
 INSTALL_TARGET=	install-strip
 
-IPV4_CONFIGURE_ENABLE=	ipv4
-IPV6_CONFIGURE_ENABLE=	ipv6
+post-install:
+	${RLN} ${STAGEDIR}${PREFIX}/sbin/fping  ${STAGEDIR}${PREFIX}/sbin/fping6
+	${RLN} ${STAGEDIR}${PREFIX}/man/man8/fping.8 ${STAGEDIR}${PREFIX}/man/man8/fping6.8
 
 .include <bsd.port.mk>

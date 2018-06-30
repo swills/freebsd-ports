@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cmake-doc/Makefile 472788 2018-06-19 13:55:54Z tcberner $
+# $FreeBSD: head/devel/cmake-doc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cmake
 DISTVERSION=	3.11.4
@@ -17,8 +17,8 @@ BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
 DISTINFO_FILE=	${.CURDIR}/../cmake/distinfo
 
 NO_ARCH=	yes
-USES=		cmake:outsource
-USE_QT5=	help_build
+USES=		cmake:outsource qt:5
+USE_QT=		help_build
 
 CMAKE_OFF=	SPHINX_MAN
 CMAKE_ON=	SPHINX_HTML SPHINX_QTHELP

@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/pear-File_Iterator/Makefile 471222 2018-05-31 17:53:07Z joneum $
+# $FreeBSD: head/devel/pear-File_Iterator/Makefile 473115 2018-06-23 08:23:15Z joneum $
 
 PORTNAME=	File_Iterator
-DISTVERSION=	2.0.0
+DISTVERSION=	2.0.1
 CATEGORIES=	devel www pear
 PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 

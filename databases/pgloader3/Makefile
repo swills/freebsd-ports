@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pgloader3/Makefile 447494 2017-08-07 13:46:50Z tz $
+# $FreeBSD: head/databases/pgloader3/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	pgloader
 PORTVERSION=	3.4.1
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMESUFFIX=	3
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Data loading tool for PostgreSQL,using the COPY command
 
 LICENSE=	PostgreSQL

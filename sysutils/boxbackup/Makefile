@@ -1,9 +1,9 @@
 # Created by: James O'Gorman <james@netinertia.co.uk>
-# $FreeBSD: head/sysutils/boxbackup/Makefile 470559 2018-05-21 16:02:27Z asomers $
+# $FreeBSD: head/sysutils/boxbackup/Makefile 473497 2018-06-28 14:15:00Z tz $
 
 PORTNAME=	boxbackup
 PORTVERSION=	0.11.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	${CLIENT_OR_SERVER}
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE-DUAL.txt
 
 USES=		autoreconf perl5 ssl tar:tgz
 GNU_CONFIGURE=	yes
-CFLAGS+=	-I${OPENSSLINC}
+CFLAGS+=	-I${OPENSSLINC} -std=c++98
 LDFLAGS+=	-L${OPENSSLLIB} -lexecinfo
 
 MAKE_JOBS_UNSAFE=yes

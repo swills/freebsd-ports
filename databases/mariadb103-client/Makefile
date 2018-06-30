@@ -1,11 +1,13 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/databases/mariadb103-client/Makefile 472070 2018-06-09 16:40:54Z brnrd $
+# $FreeBSD: head/databases/mariadb103-client/Makefile 473292 2018-06-25 05:07:26Z linimon $
 
 PORTNAME=	mariadb
 PORTREVISION=	0
 PKGNAMESUFFIX=	103-client
 
 COMMENT=	Multithreaded SQL database (client)
+
+BROKEN_aarch64=		fails to link: missing sbrk
 
 MASTERDIR=	${.CURDIR}/../mariadb103-server
 

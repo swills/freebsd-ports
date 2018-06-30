@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtruby
 PORTVERSION=	${KDE4_VERSION}
@@ -14,9 +14,9 @@ BROKEN_powerpc64=	fails to compile: ruby.h:1381: wrong number of arguments speci
 LIB_DEPENDS=	libqwt.so:x11-toolkits/qwt5 \
 		libqscintilla2_qt4.so:devel/qscintilla2
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	smokeqt
-USE_QT4=	corelib dbus declarative gui network phonon script webkit xml \
+USE_QT=		corelib dbus declarative gui network phonon script webkit xml \
 		qmake_build moc_build uic_build rcc_build
 USE_RUBY=	yes
 USE_LDCONFIG=	yes

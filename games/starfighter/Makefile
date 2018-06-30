@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/starfighter/Makefile 431094 2017-01-10 15:25:23Z nemysis $
+# $FreeBSD: head/games/starfighter/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	starfighter
 PORTVERSION=	1.6
@@ -10,7 +10,7 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}-src${EXTRACT_SUFX} \
 		${PORTNAME}-icons${EXTRACT_SUFX}:icons
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Liberate the universe from the evil company WEAPCO
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}-src

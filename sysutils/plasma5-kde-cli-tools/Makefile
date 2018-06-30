@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/plasma5-kde-cli-tools/Makefile 470866 2018-05-25 21:12:10Z adridg $
+# $FreeBSD: head/sysutils/plasma5-kde-cli-tools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kde-cli-tools
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -9,13 +9,13 @@ COMMENT=	Plasma5 non-interactive system tools
 
 CONFLICTS_INSTALL=	kde-runtime-kde4
 
-USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 qt:5 tar:xz
 USE_KDE=	activities auth bookmarks codecs completion config configwidgets \
 		coreaddons crash ecm emoticons guiaddons i18n iconthemes init \
 		itemmodels itemviews jobwidgets kcmutils kdelibs4support kdesu \
 		kio notifications parts pty service solid sonnet textwidgets \
 		unitconversion widgetsaddons windowsystem xmlgui
-USE_QT5=	concurrent core dbus gui network printsupport svg testlib  widgets x11extras xml \
+USE_QT=		concurrent core dbus gui network printsupport svg testlib  widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	x11
 

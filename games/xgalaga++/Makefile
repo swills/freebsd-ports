@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/xgalaga++/Makefile 352524 2014-04-28 16:31:54Z nemysis $
+# $FreeBSD: head/games/xgalaga++/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	xgalaga++
 PORTVERSION=	0.8.4
@@ -11,7 +11,7 @@ DISTFILES=	${PORTNAME}_${DISTVERSION}${EXTRACT_SUFX} \
 		${PORTNAME}.png:icons
 EXTRACT_ONLY=	${PORTNAME}_${DISTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Classic single screen vertical shoot em up
 
 LICENSE=	GPLv2

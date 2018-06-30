@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kpovmodeler/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kpovmodeler/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kpovmodeler
 PORTVERSION=	${APP_VER}.${EXTRA_VER}
@@ -13,10 +13,10 @@ COMMENT=	KDE editor/frontend for Povray
 
 RUN_DEPENDS=	povray:graphics/povray-meta
 
-USES=		cmake gettext kde:4 tar:bzip2
+USES=		cmake gettext kde:4 qt:4 tar:bzip2
 USE_GL=		glu
 USE_KDE=	kdelibs automoc4
-USE_QT4=	corelib opengl qmake_build moc_build rcc_build uic_build
+USE_QT=		corelib opengl qmake_build moc_build rcc_build uic_build
 
 APP_VER=	1.1.3
 EXTRA_VER=	4.3.1

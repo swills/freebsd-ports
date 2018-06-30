@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/science/gchemutils/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/science/gchemutils/Makefile 473123 2018-06-23 10:41:05Z rene $
 
 PORTNAME=	gchemutils
 PORTVERSION=	0.14.16
@@ -47,6 +47,7 @@ OPTIONS_SUB=	yes
 GNUMERIC_DESC=	Build gnumeric plugin
 XUL_DESC=	Build browser plugin (requires libxul)
 
+XUL_BROKEN=	No gecko type specified (firefox, seamonkey, thunderbird)	
 XUL_USES=	gecko
 XUL_CONFIGURE_ON=--enable-mozilla-plugin \
 		--with-mozilla-libdir=${PREFIX}/lib/xulrunner

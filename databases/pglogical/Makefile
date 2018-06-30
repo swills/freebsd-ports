@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pglogical/Makefile 466040 2018-03-31 11:26:32Z matthew $
+# $FreeBSD: head/databases/pglogical/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pglogical
 PORTVERSION=	2.2.0
@@ -11,6 +11,7 @@ COMMENT=	Logical replication system as a PostgreSQL extension
 LICENSE=	PostgreSQL
 
 USES=		gmake pgsql:9.4+
+LLD_UNSAFE=	yes
 WANT_PGSQL=	client server
 
 USE_GITHUB=	yes

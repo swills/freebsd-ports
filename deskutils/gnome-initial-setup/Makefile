@@ -1,9 +1,9 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-initial-setup/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/deskutils/gnome-initial-setup/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	gnome-initial-setup
 PORTVERSION=	3.18.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

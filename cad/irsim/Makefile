@@ -1,8 +1,9 @@
 # Created by: swallace
-# $FreeBSD: head/cad/irsim/Makefile 462268 2018-02-18 22:19:11Z danilo $
+# $FreeBSD: head/cad/irsim/Makefile 473367 2018-06-26 02:28:18Z danilo $
 
 PORTNAME=	irsim
 PORTVERSION=	9.7.100
+PORTREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	http://opencircuitdesign.com/irsim/archive/
 
@@ -30,8 +31,6 @@ GNU_CONFIGURE=	yes
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-
-BROKEN_aarch64=		Fails to link: missing sbrk
 
 .include <bsd.port.options.mk>
 

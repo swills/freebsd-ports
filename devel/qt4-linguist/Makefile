@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-linguist/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/devel/qt4-linguist/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	linguist
 DISTVERSION=	${QT4_VERSION}
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4 localization tools
 
-USE_QT4=	qmake_build designer_build moc_build rcc_build uic_build \
+USES=		qmake:no_env qt-dist:4
+USE_QT=		designer_build moc_build rcc_build uic_build \
 		assistant_run gui linguisttools_run network xml
-QT_DIST=	yes
 
 HAS_CONFIGURE=	yes
 

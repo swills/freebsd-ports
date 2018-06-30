@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-frameworkintegration/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/x11/kf5-frameworkintegration/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	frameworkintegration
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -8,10 +8,10 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 workspace and cross-framework integration plugins
 
 USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig \
-		tar:xz
+		qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons ecm i18n \
 		iconthemes kio newstuff notifications package widgetsaddons
-USE_QT5=	buildtools_build core dbus gui qmake_build widgets \
+USE_QT=		buildtools_build core dbus gui qmake_build widgets \
 		x11extras xml
 USE_XORG=	xcb xcursor
 

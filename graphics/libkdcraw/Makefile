@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libkdcraw/Makefile 466806 2018-04-08 17:01:54Z tcberner $
+# $FreeBSD: head/graphics/libkdcraw/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkdcraw
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,9 +15,9 @@ LIB_DEPENDS=	libjasper.so:graphics/jasper \
 CMAKE_ARGS+=	-DWITH_OpenMP:BOOL=False \
 		-DENABLE_RAWSPEED=True
 
-USES=		cmake:outsource compiler:c++11-lang jpeg kde:5 pkgconfig tar:xz
+USES=		cmake:outsource compiler:c++11-lang jpeg kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT5=	core gui \
+USE_QT=		core gui \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

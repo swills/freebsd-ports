@@ -1,9 +1,8 @@
-# $FreeBSD: head/www/py-internetarchive/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-internetarchive/Makefile 473579 2018-06-29 21:27:15Z yuri $
 
 PORTNAME=	internetarchive
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.7.7-3
-DISTVERSIONSUFFIX=	-g571765c
+DISTVERSION=	1.8.1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

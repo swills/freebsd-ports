@@ -1,8 +1,8 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Devel-Size/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-Size/Makefile 473284 2018-06-24 23:50:39Z wen $
 
 PORTNAME=	Devel-Size
-PORTVERSION=	0.81
+PORTVERSION=	0.82
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

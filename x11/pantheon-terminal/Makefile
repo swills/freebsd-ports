@@ -1,12 +1,12 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11/pantheon-terminal/Makefile 465149 2018-03-21 05:52:33Z yuri $
+# $FreeBSD: head/x11/pantheon-terminal/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	pantheon-terminal
 PORTVERSION=	0.4.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
-MAINTAINER=	amdmi3@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight, beautiful, and simple terminal from Elementary OS
 
 LICENSE=	GPLv3

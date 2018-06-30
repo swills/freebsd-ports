@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-qdoc/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/devel/qt5-qdoc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qdoc
 DISTVERSION=	${QT5_VERSION}
@@ -8,9 +8,8 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt documentation generator
 
-USE_QT5=	core qml buildtools_build qdoc-data_run
-QT_DIST=	tools
-USES=		qmake
+USE_QT=		core qml buildtools_build qdoc-data_run
+USES=		qmake qt-dist:5,tools
 
 BUILD_WRKSRC=	${WRKSRC}/src/${PORTNAME}
 INSTALL_WRKSRC=	${BUILD_WRKSRC}

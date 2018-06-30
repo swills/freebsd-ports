@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/multimc/Makefile 471985 2018-06-08 08:04:44Z tobik $
+# $FreeBSD: head/games/multimc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	multimc
 DISTVERSION=	0.6.2
@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.md
 
 RUN_DEPENDS=	lwjgl>=2.9.3:games/lwjgl
 
-USES=		cmake:outsource compiler:c++14-lang
+USES=		cmake:outsource compiler:c++14-lang qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	MultiMC
 GH_PROJECT=	MultiMC5
@@ -20,7 +20,7 @@ GH_TUPLE=	MultiMC:libnbtplusplus:508eda8:libnbtplusplus/libraries/libnbtplusplus
 		MultiMC:quazip:3691d57:quazip/libraries/quazip
 USE_LDCONFIG=	yes
 USE_JAVA=	1.8+
-USE_QT5=	buildtools core concurrent gui network qmake testlib_build widgets xml
+USE_QT=		buildtools core concurrent gui network qmake testlib_build widgets xml
 
 CMAKE_ARGS=	-DMultiMC_LAYOUT="lin-system"
 CMAKE_OFF=	MultiMC_UPDATER

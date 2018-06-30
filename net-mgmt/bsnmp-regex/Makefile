@@ -1,9 +1,9 @@
 # Created by: brock@cotcomsol.com
-# $FreeBSD: head/net-mgmt/bsnmp-regex/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/bsnmp-regex/Makefile 473593 2018-06-30 01:15:44Z eugen $
 
 PORTNAME=	bsnmp-regex
 PORTVERSION=	0.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://thewalter.net/stef/software/bsnmp-regex/
 

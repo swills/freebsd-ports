@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@netmag.cz>
-# $FreeBSD: head/archivers/lzma/Makefile 441734 2017-05-25 21:02:56Z sunpoet $
+# $FreeBSD: head/archivers/lzma/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	lzma
 PORTVERSION=	16.04
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	SF/sevenzip/LZMA%20SDK/
 DISTNAME=	lzma${PORTVERSION:S/.//g}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-ratio LZMA compressor
 
 CONFLICTS=	lzmautils-[0-9]* xz-[0-9]*

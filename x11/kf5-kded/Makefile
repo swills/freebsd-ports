@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-kded/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/x11/kf5-kded/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kded
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,9 +7,9 @@ CATEGORIES=	x11 kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 extensible deamon for providing system level services
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons crash dbusaddons doctools ecm \
 		init service
-USE_QT5=	buildtools_build core dbus gui qmake_build widgets
+USE_QT=		buildtools_build core dbus gui qmake_build widgets
 
 .include <bsd.port.mk>

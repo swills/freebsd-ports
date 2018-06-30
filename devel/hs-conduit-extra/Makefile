@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-conduit-extra/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/devel/hs-conduit-extra/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	conduit-extra
 PORTVERSION=	1.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

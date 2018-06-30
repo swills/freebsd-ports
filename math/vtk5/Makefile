@@ -1,5 +1,5 @@
 # Created by: Mykola Khotyaintsev <ko@irfu.se>
-# $FreeBSD: head/math/vtk5/Makefile 472589 2018-06-17 02:24:24Z linimon $
+# $FreeBSD: head/math/vtk5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	vtk
 PORTVERSION=	5.10.1
@@ -26,7 +26,7 @@ CONFLICTS=	vtk-4*
 
 SUB_FILES=	vtk.3
 
-USES=		alias cmake:outsource jpeg
+USES=		alias cmake:outsource jpeg qt:4
 USE_XORG=	xt
 USE_LDCONFIG=	${PREFIX}/lib/vtk-${PORTVERSION:R}
 CXXFLAGS+=	-DUSE_INTERP_ERRORLINE
@@ -120,7 +120,7 @@ PLIST_SUB+=	X11=""
 .endif
 
 .if ${PORT_OPTIONS:MQT4}
-USE_QT4=	corelib designer gui opengl qmake_build uic_build \
+USE_QT=		corelib designer gui opengl qmake_build uic_build \
 		moc_build rcc_build
 CMAKE_ARGS+=	-DVTK_USE_QVTK:BOOL=ON \
 		-DVTK_USE_QT:BOOL=ON \

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/qmidiarp/Makefile 472622 2018-06-17 18:32:14Z yuri $
+# $FreeBSD: head/audio/qmidiarp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qmidiarp
 DISTVERSIONPREFIX=	qmidiarp-
@@ -22,10 +22,10 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 PORTSCOUT=	limit:^qmidiarp
 
 USES=		autoreconf compiler:c++11-lib desktop-file-utils \
-		gmake localbase libtool pkgconfig
+		gmake localbase libtool pkgconfig qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	emuse
-USE_QT5=	core gui network widgets buildtools_build \
+USE_QT=		core gui network widgets buildtools_build \
 		linguisttools_build
 USE_CXXSTD=	c++11
 GNU_CONFIGURE=	yes

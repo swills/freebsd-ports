@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/injeqt/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/devel/injeqt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	injeqt
 PORTVERSION=	1.2.0
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	vogel
 
-USES=		cmake compiler:c++11-lib pathfix
-USE_QT5=	core buildtools_build qmake_build testlib_build
+USES=		cmake compiler:c++11-lib pathfix qt:5
+USE_QT=		core buildtools_build qmake_build testlib_build
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DDISABLE_EXAMPLES:BOOL=ON \

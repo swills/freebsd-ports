@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qt5-qtplugininfo/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/sysutils/qt5-qtplugininfo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtplugininfo
 DISTVERSION=	${QT5_VERSION}
@@ -8,9 +8,8 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt5 plugin metadata dumper
 
-USES=		qmake:outsource
-USE_QT5=	core
-QT_DIST=	tools
+USES=		qmake:outsource qt-dist:5,tools
+USE_QT=		core
 
 PLIST_FILES=	${QT_BINDIR}/qtplugininfo
 

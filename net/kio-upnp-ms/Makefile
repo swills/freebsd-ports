@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/kio-upnp-ms/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/net/kio-upnp-ms/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kio-upnp-ms
 DISTVERSION=	1.0.0.git20110808
@@ -13,9 +13,9 @@ COMMENT=	KIO slave to access UPnP MediaServers
 
 LIB_DEPENDS=	libHUpnp.so:net/hupnp
 
-USES=		cmake kde:4 tar:bzip2
+USES=		cmake kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	corelib network xml dbus gui \
+USE_QT=		corelib network xml dbus gui \
 		qmake_build moc_build rcc_build uic_build
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/.[^.]*$//}

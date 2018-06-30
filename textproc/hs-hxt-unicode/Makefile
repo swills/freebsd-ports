@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-hxt-unicode/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-hxt-unicode/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	hxt-unicode
 PORTVERSION=	9.0.2.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

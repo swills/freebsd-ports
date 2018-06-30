@@ -1,5 +1,5 @@
 # Created by: Zsolt Udvari <udvzsolt@gmail.com>
-# $FreeBSD: head/graphics/zathura-pdf-mupdf/Makefile 458742 2018-01-11 14:20:38Z tobik $
+# $FreeBSD: head/graphics/zathura-pdf-mupdf/Makefile 473302 2018-06-25 09:37:15Z amdmi3 $
 
 PORTNAME=	zathura-pdf-mupdf
 PORTVERSION=	0.3.2
@@ -31,6 +31,6 @@ USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30
 CONFLICTS_INSTALL=	zathura-pdf-poppler-[0-9]*
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/zathura/pdf.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/zathura/pdf.so
 
 .include <bsd.port.mk>

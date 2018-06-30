@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mjpegtools/Makefile 472059 2018-06-09 16:08:35Z amdmi3 $
+# $FreeBSD: head/multimedia/mjpegtools/Makefile 473188 2018-06-24 08:37:14Z amdmi3 $
 
 PORTNAME=	mjpegtools
 PORTVERSION=	2.1.0
@@ -52,7 +52,7 @@ post-patch:
 		-e 's| \*-\*-linux\*)| *-*-*)|' \
 		-e '/ARCHFLAGS=/d' ${WRKSRC}/configure
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for i in AUTHORS BUGS CHANGES ChangeLog HINTS NEWS PLANS README README.DV \
 	README.avilib README.glav README.AltiVec README.lavpipe \

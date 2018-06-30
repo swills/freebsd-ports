@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/editors/texmaker/Makefile 455026 2017-11-28 09:03:58Z amdmi3 $
+# $FreeBSD: head/editors/texmaker/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	texmaker
 PORTVERSION=	4.5
@@ -31,9 +31,11 @@ OPTIONS_SINGLE_TOOLKIT=	QT4 QT5
 OPTIONS_DEFAULT=	QT5
 
 TOOLKIT_DESC=	Qt toolkit
-QT4_USE=	${_USE_QT4:S/^/QT4=/}
+QT4_USES=	qt:4
+QT4_USE=	${_USE_QT4:S/^/QT=/}
 QT4_LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
-QT5_USE=	${_USE_QT5:S/^/QT5=/}
+QT5_USES=	qt:5
+QT5_USE=	${_USE_QT5:S/^/QT=/}
 QT5_LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5
 
 .include <bsd.port.mk>

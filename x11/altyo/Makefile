@@ -1,11 +1,11 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/x11/altyo/Makefile 449896 2017-09-15 09:38:58Z cpm $
+# $FreeBSD: head/x11/altyo/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	altyo
 DISTVERSIONPREFIX=	debian/
 DISTVERSION=	0.4_rc19
 DISTVERSIONSUFFIX=	-${GH_ACCOUNT}1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	nivit@FreeBSD.org

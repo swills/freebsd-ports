@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/afni/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/afni/Makefile 473116 2018-06-23 08:27:13Z tcberner $
 
 ############################################################################
 # http://www.neuro.mcw.edu/Ports has the latest source distribution from
@@ -10,7 +10,7 @@
 
 PORTNAME=	afni
 PORTVERSION=	2015.11.13
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science biology graphics
 MASTER_SITES=	http://www.acadix.biz/Ports/distfiles/
 

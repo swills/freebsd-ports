@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/structuresynth/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/structuresynth/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	structuresynth
 PORTVERSION=	1.5.0
@@ -11,9 +11,9 @@ DISTNAME=	StructureSynth-Source-v${PORTVERSION}
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Rule-based 3D structure generator
 
-USES=		qmake zip dos2unix
+USES=		qmake qt:4 zip dos2unix
 USE_GL=		glu
-USE_QT4=	corelib gui opengl moc_build rcc_build xml script
+USE_QT=		corelib gui opengl moc_build rcc_build xml script
 WRKSRC=		${WRKDIR}/structure-synth
 DOS2UNIX_GLOB=	*.cpp *.h
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pg_partman/Makefile 469424 2018-05-09 02:35:36Z swills $
+# $FreeBSD: head/databases/pg_partman/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pg_partman
 DISTVERSIONPREFIX=	v
@@ -14,6 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/psycopg2/__init__.py:databases/py-psycopg2
 
 USES=		gmake pgsql:9.4+ python uidfix shebangfix
+LLD_UNSAFE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	keithf4

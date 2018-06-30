@@ -1,7 +1,8 @@
-# $FreeBSD: head/editors/calligra/Makefile 468526 2018-04-28 09:28:46Z tcberner $
+# $FreeBSD: head/editors/calligra/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	calligra
 DISTVERSION=	3.1.0
+PORTREVISION=	1
 CATEGORIES=	editors kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}
@@ -37,7 +38,7 @@ RUN_DEPENDS=	pstoedit:graphics/pstoedit
 
 USES=		cmake:outsource cpe compiler:c++11-lib desktop-file-utils eigen:3 \
 		gettext iconv:translit jpeg kde:5 localbase:ldflags perl5 pkgconfig \
-		shared-mime-info sqlite tar:xz
+		qt:5 shared-mime-info sqlite tar:xz
 USE_KDE=	activities archive auth bookmarks codecs completion config \
 		configwidgets coreaddons crash dbusaddons doctools ecm \
 		emoticons guiaddons i18n iconthemes init itemmodels itemviews \
@@ -46,7 +47,7 @@ USE_KDE=	activities archive auth bookmarks codecs completion config \
 		texteditor textwidgets threadweaver unitconversion wallet \
 		widgetsaddons windowsystem xmlgui \
 		calendarcore okular
-USE_QT5=	buildtools_build core dbus gui network opengl \
+USE_QT=		buildtools_build core dbus gui network opengl \
 		phonon4 printsupport qmake_build qml \
 		quick script sql svg testlib webkit widgets x11extras xml
 USE_XORG=	ice sm x11 xext

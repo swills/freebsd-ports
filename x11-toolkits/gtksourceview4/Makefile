@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceview4/Makefile 469965 2018-05-14 20:43:50Z kwm $
+# $FreeBSD: head/x11-toolkits/gtksourceview4/Makefile 473000 2018-06-21 20:28:17Z kwm $
 
 PORTNAME=	gtksourceview
-PORTVERSION=	4.0.1
+PORTVERSION=	4.0.2
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	4
@@ -14,9 +14,10 @@ COMMENT=	Text widget that adds syntax highlighting to the GtkTextView widget
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-PORTSCOUT=	limitw:1,even
-
 BUILD_DEPENDS=	vala:lang/vala
+LIB_DEPENDS=	libfribidi.so:converters/fribidi
+
+PORTSCOUT=	limitw:1,even
 
 USES=		compiler:c11 gettext gmake gnome libtool pkgconfig tar:xz
 USE_CSTD=	c11

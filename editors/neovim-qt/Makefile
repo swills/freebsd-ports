@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/neovim-qt/Makefile 464660 2018-03-16 08:06:21Z yuri $
+# $FreeBSD: head/editors/neovim-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	neovim-qt
 DISTVERSIONPREFIX=	v
@@ -15,10 +15,10 @@ BUILD_DEPENDS=	neovim>=0:editors/neovim
 LIB_DEPENDS=	libmsgpackc.so:devel/msgpack
 RUN_DEPENDS=	neovim>=0:editors/neovim
 
-USES=		cmake:outsource desktop-file-utils
+USES=		cmake:outsource desktop-file-utils qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	equalsraf
-USE_QT5=	core gui testlib network widgets buildtools_build qmake_build
+USE_QT=		core gui testlib network widgets buildtools_build qmake_build
 
 CMAKE_ON=	USE_SYSTEM_MSGPACK
 CMAKE_OFF=	ENABLE_TESTS

@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/editors/gedit-plugins/Makefile 465547 2018-03-25 21:48:32Z brd $
+# $FreeBSD: head/editors/gedit-plugins/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	gedit-plugins
 PORTVERSION=	3.18.0
+PORTREVISION=	1
 CATEGORIES=	editors gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

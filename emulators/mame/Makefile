@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/mame/Makefile 472152 2018-06-10 19:11:31Z danilo $
+# $FreeBSD: head/emulators/mame/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME?=	mame
 PORTVERSION=	0.198
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libfreetype.so:print/freetype2
 RUN_DEPENDS=	liberation-fonts-ttf>=0:x11-fonts/liberation-fonts-ttf
 
-USES=		compiler:c++14-lang gmake jpeg pkgconfig python:2.7,build shebangfix
+USES=		compiler:c++14-lang gmake jpeg pkgconfig python:2.7,build qt:5 shebangfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mamedev
@@ -35,7 +35,7 @@ SHEBANG_FILES=	src/devices/cpu/m6502/m6502make.py \
 USE_XORG=	x11 xext xi xinerama xrender
 USE_GL=		gl
 USE_SDL=	sdl2 ttf2
-USE_QT5=	buildtools core gui qmake_build widgets
+USE_QT=		buildtools core gui qmake_build widgets
 MTARGET?=	mame
 MSUBTARGET?=	mame
 CFLAGS+=	-I${LOCALBASE}/include

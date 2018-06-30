@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/qt4pas/Makefile 447305 2017-08-03 23:46:07Z acm $
+# $FreeBSD: head/x11-toolkits/qt4pas/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qt4pas
 PORTVERSION=	2.5
@@ -12,9 +12,9 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Qt4 binding for FreePascal
 
 USE_LDCONFIG=	yes
-USE_QT4=	corelib gui network script webkit \
+USE_QT=		corelib gui network script webkit \
 		moc_build
-USES=		qmake
+USES=		qmake qt:4
 
 QT4_VER_MIN=	4.5.3
 

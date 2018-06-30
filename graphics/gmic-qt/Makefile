@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gmic-qt/Makefile 454897 2017-11-25 20:57:07Z tcberner $
+# $FreeBSD: head/graphics/gmic-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gmic-qt
 DISTVERSIONPREFIX=	v.
@@ -20,8 +20,8 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfftw3.so:math/fftw3 \
 		libpng.so:graphics/png
 
-USES=		cmake:outsource compiler:c++14-lang pkgconfig
-USE_QT5=	core gui network widgets \
+USES=		cmake:outsource compiler:c++14-lang pkgconfig qt:5
+USE_QT=		core gui network widgets \
 		buildtools_build linguisttools_build qmake_build
 USE_XORG=	ice sm x11 xext
 

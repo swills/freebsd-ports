@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/mail/evolution-ews/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/mail/evolution-ews/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	evolution-ews
 PORTVERSION=	3.24.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

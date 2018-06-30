@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-filetransfer-handler-kde4/Makefile 465343 2018-03-23 09:50:04Z adridg $
+# $FreeBSD: head/net-im/ktp-filetransfer-handler-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ktp-filetransfer-handler
 PORTVERSION=	${KTP_VERSION}
@@ -13,8 +13,8 @@ COMMENT=	KDE instant messaging file transfer handler
 LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt4 \
 		libktpcommoninternalsprivate.so:net-im/ktp-common-internals-kde4
 
-USES=		cmake gettext kde:4 tar:bzip2
+USES=		cmake gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4
-USE_QT4=	corelib moc_build qmake_build rcc_build uic_build
+USE_QT=		corelib moc_build qmake_build rcc_build uic_build
 
 .include <bsd.port.mk>

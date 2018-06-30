@@ -1,5 +1,5 @@
 # Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/misc/qt5-examples/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/misc/qt5-examples/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	examples
 DISTVERSION=	${QT5_VERSION}
@@ -15,8 +15,8 @@ COMMENT=	Qt 5 examples sourcecode
 NO_ARCH=	yes
 NO_BUILD=	yes
 
-USES=		tar:xz
-USE_QT5=	#
+USES=		qt:5 tar:xz
+USE_QT=		#
 
 DESCR=		${.CURDIR:H:H}/devel/qt5/pkg-descr
 DISTINFO_FILE=	${.CURDIR}/distinfo

@@ -1,8 +1,8 @@
 # Created by: Andrew L. Neporada <andrew@chg.ru>
-# $FreeBSD: head/math/gsl/Makefile 444988 2017-07-03 20:38:11Z tcberner $
+# $FreeBSD: head/math/gsl/Makefile 473116 2018-06-23 08:27:13Z tcberner $
 
 PORTNAME=	gsl
-PORTVERSION=	2.4
+PORTVERSION=	2.5
 CATEGORIES=	math
 MASTER_SITES=	GNU
 

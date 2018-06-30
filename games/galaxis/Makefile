@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/galaxis/Makefile 408098 2016-02-04 21:26:16Z marino $
+# $FreeBSD: head/games/galaxis/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	galaxis
 PORTVERSION=	1.9
@@ -10,7 +10,7 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \
 		${PORTNAME}.png:icons
 EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Clone of the nifty little Macintosh game
 
 LICENSE=	BSD3CLAUSE

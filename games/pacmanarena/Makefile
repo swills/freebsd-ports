@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pacmanarena/Makefile 419589 2016-08-04 03:55:47Z marino $
+# $FreeBSD: head/games/pacmanarena/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	pacmanarena
 PORTVERSION=	0.15
@@ -11,7 +11,7 @@ DISTFILES=	${DISTNAME:S/na/n-a/}.tar.bz2 \
 		${PORTNAME:S/arena/-data/}-0.0.zip \
 		${PORTNAME}_icons_1.tar.gz:icons
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pacman clone in full 3D with a few surprises
 
 LICENSE=	GPLv2+

@@ -1,8 +1,8 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/codesearch-py/Makefile 472392 2018-06-14 18:41:44Z cpm $
+# $FreeBSD: head/devel/codesearch-py/Makefile 473159 2018-06-23 20:03:41Z cpm $
 
 PORTNAME=	codesearch-py
-DISTVERSION=	g20180614
+DISTVERSION=	g20180623
 PORTEPOCH=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ USE_PYTHON=	autoplist concurrent distutils
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	chromium
-GH_TAGNAME=	fbd64d8
+GH_TAGNAME=	49bcab5
 
 NO_ARCH=	yes
 

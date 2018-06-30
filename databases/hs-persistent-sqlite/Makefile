@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/hs-persistent-sqlite/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/databases/hs-persistent-sqlite/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	persistent-sqlite
 PORTVERSION=	2.8.1.2
+PORTREVISION=	1
 CATEGORIES=	databases haskell
 
 MAINTAINER=	haskell@FreeBSD.org

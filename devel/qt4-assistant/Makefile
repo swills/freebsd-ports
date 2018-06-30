@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-assistant/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/devel/qt4-assistant/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	assistant
 DISTVERSION=	${QT4_VERSION}
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4 documentation browser
 
-USE_QT4=	qmake_build moc_build rcc_build uic_build \
+USES=		qmake:no_env qt-dist:4
+USE_QT=		moc_build rcc_build uic_build \
 		corelib gui help network sql webkit xml \
 		doc_run sql-sqlite3_run
-QT_DIST=	yes
 
 HAS_CONFIGURE=	yes
 

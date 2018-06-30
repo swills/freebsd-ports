@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/jag/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/games/jag/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	jag
 PORTVERSION=	0.3.2
@@ -14,11 +14,11 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	2D arcade-puzzle game like KDiamonds
 
-USES=		dos2unix qmake zip
+USES=		dos2unix qmake qt:4 zip
 USE_SDL=	sdl mixer
 DOS2UNIX_FILES=	Game.pro
 USE_XORG=	x11
-USE_QT4=	uic_build moc_build rcc_build \
+USE_QT=		uic_build moc_build rcc_build \
 		corelib svg xml opengl network
 
 PLIST_FILES=	bin/${PORTNAME}

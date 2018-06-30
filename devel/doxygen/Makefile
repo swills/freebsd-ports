@@ -1,5 +1,5 @@
 # Created by: Joep Grooten <joep@di.nl>
-# $FreeBSD: head/devel/doxygen/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/devel/doxygen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	doxygen
 PORTVERSION=	1.8.14
@@ -50,11 +50,13 @@ GRAPHVIZ_RUN_DEPENDS=	dot:graphics/graphviz
 
 LATEX_USE=	TEX=base,dvipsk,pdftex
 
-QT4_USE=	QT4=corelib,gui,xml,qmake_build,moc_build,rcc_build,uic_build
+QT4_USES=	qt:4
+QT4_USE=	QT=corelib,gui,xml,qmake_build,moc_build,rcc_build,uic_build
 QT4_CMAKE_ON=	-Dbuild_wizard:BOOLEAN=true -Dforce_qt4:BOOLEAN=true
 QT4_PLIST_FILES=	bin/doxywizard
 
-QT5_USE=	QT5=core,widgets,gui,xml,qmake_build,buildtools_build
+QT5_USES=	qt:5
+QT5_USE=	QT=core,widgets,gui,xml,qmake_build,buildtools_build
 QT5_CMAKE_ON=	-Dbuild_wizard:BOOLEAN=true
 QT5_PLIST_FILES=	bin/doxywizard
 

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/net/x2goclient/Makefile 444768 2017-06-30 15:26:03Z madpilot $
+# $FreeBSD: head/net/x2goclient/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	x2goclient
 PORTVERSION=	4.1.0.0
@@ -19,9 +19,9 @@ LIB_DEPENDS=	libcups.so:print/cups \
 RUN_DEPENDS=	nxproxy:net/nxproxy \
 		x2goclient-cli:net/x2goclient-cli
 
-USES=		qmake
+USES=		qmake qt:4
 USE_XORG=	xpm
-USE_QT4=	gui network svg \
+USE_QT=		gui network svg \
 		linguisttools_build moc_build rcc_build uic_build
 QMAKE_ARGS=	QMAKE_LRELEASE="${LRELEASE}"
 

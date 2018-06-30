@@ -1,10 +1,10 @@
 # Created by: chinsan
-# $FreeBSD: head/x11/sakura/Makefile 457780 2018-01-01 15:39:41Z danilo $
+# $FreeBSD: head/x11/sakura/Makefile 473051 2018-06-22 18:01:59Z danilo $
 
 PORTNAME=	sakura
-PORTVERSION=	3.5.0
+PORTVERSION=	3.6.0
 CATEGORIES=	x11 gnome
-MASTER_SITES=	http://launchpadlibrarian.net/336915548/
+MASTER_SITES=	http://launchpadlibrarian.net/368320954/
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Terminal emulator based on GTK and VTE

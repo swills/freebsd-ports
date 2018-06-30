@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/plume-creator-devel/Makefile 440110 2017-05-04 14:58:54Z mat $
+# $FreeBSD: head/editors/plume-creator-devel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	plume-creator-devel
 PORTVERSION=	${DATE}
@@ -12,8 +12,8 @@ LICENSE=	GPLv3+
 
 DATE=		20150510
 
-USES=		desktop-file-utils qmake shared-mime-info tar:xz
-USE_QT4=	corelib gui moc_build qmake_build rcc_build uic_build webkit
+USES=		desktop-file-utils qmake qt:4 shared-mime-info tar:xz
+USE_QT=		corelib gui moc_build qmake_build rcc_build uic_build webkit
 QMAKE_ARGS=	${WRKSRC}/plume-creator.pro
 
 .include <bsd.port.mk>

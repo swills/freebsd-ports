@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/dilay/Makefile 472511 2018-06-16 01:13:47Z yuri $
+# $FreeBSD: head/graphics/dilay/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dilay
 DISTVERSION=	1.8.0
@@ -16,12 +16,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	${LOCALBASE}/include/glm/glm.hpp:math/glm
 
-USES=		compiler:c++14-lang gmake qmake
+USES=		compiler:c++14-lang gmake qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	abau
 USE_CXXSTD=	c++14
 USE_GL=		gl
-USE_QT5=	core gui opengl widgets xml buildtools_build
+USE_QT=		core gui opengl widgets xml buildtools_build
 
 MAKE_JOBS_UNSAFE=	yes  # Workaround for: https://github.com/abau/dilay/issues/19 parallel build fails (still a problem despite having been closed)
 

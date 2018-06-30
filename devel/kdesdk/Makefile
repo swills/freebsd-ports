@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdesdk/Makefile 468499 2018-04-27 21:47:35Z tcberner $
+# $FreeBSD: head/devel/kdesdk/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdesdk
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}$
@@ -7,8 +7,8 @@ CATEGORIES=	devel kde
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Software Development Kit
 
-USES=		kde:5 metaport
-USE_QT5=	#
+USES=		kde:5 metaport qt:5
+USE_QT=		#
 
 OPTIONS_DEFINE=	CERVISIA \
 		DEVUTILS \
@@ -24,7 +24,7 @@ OPTIONS_DEFINE=	CERVISIA \
 		THUMBNAILER \
 		UMBRELLO
 
-# Remove dolphin from the default list, as it conflicts with the metaport x11/kde4
+# Remove dolphin from the default list, as it conflicts with the metaport qt:5 x11/kde4
 OPTIONS_DEFAULT=	${OPTIONS_DEFINE:NDOLPHIN}
 
 CERVISIA_DESC=		CVS frontend

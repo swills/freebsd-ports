@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/devel/libdbusmenu-qt/Makefile 464272 2018-03-12 18:52:53Z tcberner $
+# $FreeBSD: head/devel/libdbusmenu-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libdbusmenu-qt
 PORTVERSION=	${MAJOR_VER}.${SNAPSHOT_VER:S/.//g}
@@ -22,13 +22,15 @@ USES=		compiler:c++11-lib cmake:outsource
 USE_LDCONFIG=	yes
 
 .  if ${FLAVOR} == qt4
-USE_QT4=	corelib dbus gui \
+USES+=		qt:4
+USE_QT=		corelib dbus gui \
 		moc_build qmake_build rcc_build uic_build
 CMAKE_ON=	USE_QT4
 CMAKE_OFF=	USE_QT5
 QTVER_SUFFIX=	# empty
 .  else
-USE_QT5=	core dbus gui widgets \
+USES+=		qt:5
+USE_QT=		core dbus gui widgets \
 		buildtools_build qmake_build
 CMAKE_ON=	USE_QT5
 CMAKE_OFF=	USE_QT4

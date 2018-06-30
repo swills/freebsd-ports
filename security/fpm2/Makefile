@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/security/fpm2/Makefile 463003 2018-02-26 09:03:01Z amdmi3 $
+# $FreeBSD: head/security/fpm2/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	fpm2
 PORTVERSION=	0.79
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://als.regnet.cz/fpm2/download
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program that allows you to securely store the passwords
 
 LICENSE=	GPLv2+

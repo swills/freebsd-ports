@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-MessagePack/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-MessagePack/Makefile 473426 2018-06-27 09:07:18Z amdmi3 $
 
 PORTNAME=	Data-MessagePack
 PORTVERSION=	0.48
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for MessagePack
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires \
 		p5-Test-LeakTrace>0:devel/p5-Test-LeakTrace

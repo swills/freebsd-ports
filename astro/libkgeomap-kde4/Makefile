@@ -1,8 +1,8 @@
-# $FreeBSD: head/astro/libkgeomap-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/astro/libkgeomap-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libkgeomap
 PORTVERSION=	${KDE4_APPLICATIONS_VERSION}
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	astro kde
 MASTER_SITES=	KDE/${KDE4_APPLICATIONS_BRANCH}/applications/${PORTVERSION}/src
 PKGNAMESUFFIX=	-kde4
@@ -16,9 +16,9 @@ LICENSE_COMB=	multi
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/graph/buffer_concepts.hpp:devel/boost-libs
 
-USES=		cmake:outsource kde:4 pathfix tar:xz
+USES=		cmake:outsource kde:4 pathfix qt:4 tar:xz
 USE_KDE=	kdelibs automoc4 marble
 USE_LDCONFIG=	yes
-USE_QT4=	network phonon xml moc_build qmake_build rcc_build uic_build
+USE_QT=		network phonon xml moc_build qmake_build rcc_build uic_build
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/net/kwooty/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/net/kwooty/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kwooty
 PORTVERSION=	0.8.3
@@ -14,9 +14,9 @@ RUN_DEPENDS=	${LOCALBASE}/bin/unrar:archivers/unrar \
 		${LOCALBASE}/bin/par2:archivers/par2cmdline \
 		${LOCALBASE}/bin/7z:archivers/p7zip
 
-USES=		cmake gettext kde:4
+USES=		cmake gettext kde:4 qt:4
 USE_KDE=	kdelibs automoc4 workspace
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USE_QT=		qmake_build moc_build rcc_build uic_build
 USE_LDCONFIG=	yes
 
 post-patch:

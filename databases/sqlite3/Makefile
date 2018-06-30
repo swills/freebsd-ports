@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/sqlite3/Makefile 472410 2018-06-14 23:18:08Z swills $
+# $FreeBSD: head/databases/sqlite3/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	sqlite3
 DISTVERSION=	3.24.0
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	https://www.sqlite.org/2018/ http://www2.sqlite.org/2018/ http://www3.sqlite.org/2018/
 DISTNAME=	sqlite-autoconf-${PORTVERSION:C/\.([[:digit:]])[[:>:]]/0\1/g:S/.//g}00

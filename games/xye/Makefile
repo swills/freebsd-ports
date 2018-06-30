@@ -1,5 +1,5 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/games/xye/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/xye/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	xye
 PORTVERSION=	0.12.2
@@ -20,7 +20,7 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}:game \
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Puzzle games like sokoban or boulderdash
 
 LICENSE=	ZLIB

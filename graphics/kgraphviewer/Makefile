@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kgraphviewer/Makefile 451051 2017-10-01 16:34:22Z adridg $
+# $FreeBSD: head/graphics/kgraphviewer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kgraphviewer
 DISTVERSION=	2.4.2
@@ -14,12 +14,12 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgvc.so:graphics/graphviz
 
-USES=		cmake:outsource desktop-file-utils kde:5 tar:xz pkgconfig
+USES=		cmake:outsource desktop-file-utils kde:5 qt:5 tar:xz pkgconfig
 USE_KDE=	auth codecs completion config configwidgets \
 		coreaddons i18n iconthemes jobwidgets kio parts service \
 		sonnet textwidgets widgetsaddons xmlgui \
 		ecm_build
-USE_QT5=	core dbus gui network printsupport svg widgets xml \
+USE_QT=		core dbus gui network printsupport svg widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

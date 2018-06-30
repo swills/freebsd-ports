@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/evolvotron/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/graphics/evolvotron/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	evolvotron
 PORTVERSION=	0.6.3
@@ -21,8 +21,8 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		python qmake
-USE_QT4=	corelib gui xml moc_build
+USES=		python qmake qt:4
+USE_QT=		corelib gui xml moc_build
 QMAKE_ARGS=	VERSION_NUMBER="${PORTVERSION}"
 QMAKE_SOURCE_PATH=	${WRKSRC}/main.pro
 MAKE_JOBS_UNSAFE=	yes

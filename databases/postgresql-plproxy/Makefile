@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/postgresql-plproxy/Makefile 470229 2018-05-17 18:29:40Z sunpoet $
+# $FreeBSD: head/databases/postgresql-plproxy/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	plproxy
 DISTVERSIONPREFIX=	${PORTNAME}_
@@ -14,6 +14,7 @@ LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 USES=		bison gmake pgsql
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 
 post-patch:

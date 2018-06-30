@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/signon-qt5/Makefile 468640 2018-04-29 18:17:36Z tcberner $
+# $FreeBSD: head/sysutils/signon-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	signon
 PORTVERSION=	8.58
@@ -12,8 +12,8 @@ COMMENT=	D-Bus service performing user authentication
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext pathfix pkgconfig python qmake tar:bz2
-USE_QT5=	core dbus gui network sql testlib xml \
+USES=		gettext pathfix pkgconfig python qmake qt:5 tar:bz2
+USE_QT=		core dbus gui network sql testlib xml \
 		buildtools_build qmake_build
 
 # gitlab variables

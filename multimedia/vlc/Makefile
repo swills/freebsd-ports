@@ -1,5 +1,5 @@
 # Created by: Brian Somers <brian@FreeBSD.org>
-# $FreeBSD: head/multimedia/vlc/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/multimedia/vlc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	vlc
 DISTVERSION=	2.2.8
@@ -237,13 +237,15 @@ PNG_CONFIGURE_ENABLE=	png
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 PULSEAUDIO_CONFIGURE_ENABLE=	pulse
 
-QT4_USE=		QT4=gui,corelib,moc_build,rcc_build,uic_build
+QT4_USES=	qt:4
+QT4_USE=		QT=gui,corelib,moc_build,rcc_build,uic_build
 # QT_CFLAGS:	pkg-config --cflags "QtCore QtGui >= 4.6.0"
 # QT_LIBS:	pkg-config --libs "QtCore QtGui >= 4.6.0"
 QT4_CONFIGURE_ENV=	QT_CFLAGS="-I${QT_INCDIR}/QtGui -DQT_SHARED -I${QT_INCDIR} -I${QT_INCDIR}/QtCore" \
 			QT_LIBS="-lQtGui -L${QT_LIBDIR} -lQtCore"
 
-QT5_USE=		QT5=gui,core,widgets,x11extras,buildtools_build
+QT5_USES=	qt:5
+QT5_USE=		QT=gui,core,widgets,x11extras,buildtools_build
 
 REALRTSP_CONFIGURE_ENABLE=	realrtsp
 

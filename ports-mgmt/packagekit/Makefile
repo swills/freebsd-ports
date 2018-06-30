@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@users.sourceforge.net>
-# $FreeBSD: head/ports-mgmt/packagekit/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/ports-mgmt/packagekit/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 #   $MCom: ports/ports-mgmt/packagekit/Makefile,v 1.26 2010/10/10 15:49:51 marcus Exp $
 
 PORTNAME=	PackageKit
@@ -79,7 +79,8 @@ LIB_DEPENDS+=	libpackagekit-glib2.so:ports-mgmt/packagekit
 
 CONFIGURE_ARGS+=--enable-qt
 LIB_DEPENDS+=	libcppunit.so:devel/cppunit
-USE_QT4+=	dbus gui xml sql moc_build
+USES=		qt:4
+USE_QT+=	dbus gui xml sql moc_build
 #.include "${PORTSDIR}/Mk/bsd.qt.mk"
 .endif
 

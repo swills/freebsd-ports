@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/polish/qnapi/Makefile 463989 2018-03-09 18:30:48Z tcberner $
+# $FreeBSD: head/polish/qnapi/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qnapi
 PORTVERSION=	0.2.3
@@ -20,9 +20,9 @@ RUN_DEPENDS=	7z:archivers/p7zip
 
 USE_GITHUB=	yes
 
-USES=		compiler:c++11-lib pkgconfig qmake
+USES=		compiler:c++11-lib pkgconfig qmake qt:5
 USE_GL=		gl
-USE_QT5=	buildtools_build core gui network widgets xml
+USE_QT=		buildtools_build core gui network widgets xml
 
 CXXFLAGS+=	-I${LOCALBASE}/include/maia
 

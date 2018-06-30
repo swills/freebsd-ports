@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/p5-Math-ProvablePrime/Makefile 469626 2018-05-11 11:05:10Z pi $
+# $FreeBSD: head/math/p5-Math-ProvablePrime/Makefile 473539 2018-06-29 10:10:35Z mat $
 
 PORTNAME=	Math-ProvablePrime
 PORTVERSION=	0.043
@@ -18,8 +18,5 @@ USE_PERL5=	configure
 PLIST_FILES=	${SITE_PERL_REL}/Math/ProvablePrime.pm \
 		${SITE_PERL_REL}/Math/ProvablePrime/Rand.pm \
 		${SITE_MAN3_REL}/Math::ProvablePrime.3.gz
-
-pre-install:
-		${RM} ${WRKSRC}/blib/lib/Math/README.pod
 
 .include <bsd.port.mk>

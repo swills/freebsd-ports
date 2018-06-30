@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/meandmyshadow/Makefile 472064 2018-06-09 16:12:51Z amdmi3 $
+# $FreeBSD: head/games/meandmyshadow/Makefile 473052 2018-06-22 18:13:14Z amdmi3 $
 
 PORTNAME=	meandmyshadow
 PORTVERSION=	0.4.1
@@ -16,10 +16,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		cmake libarchive
+USES=		cmake libarchive ssl
 USE_SDL=	sdl ttf image mixer image gfx
+USE_GL=		gl glu
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/${PORTNAME} \
 		share/pixmaps/${PORTNAME}.png

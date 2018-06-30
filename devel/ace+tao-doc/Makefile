@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/devel/ace+tao-doc/Makefile 443997 2017-06-20 20:17:15Z joneum $
+# $FreeBSD: head/devel/ace+tao-doc/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	ace+tao-doc
 PORTVERSION=	6.4.3
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://download.dre.vanderbilt.edu/previous_versions/ \
 		http://download.dre.vanderbilt.edu/previous_versions/
 DISTNAME=	ACE-html-${PORTVERSION:C/\.0$//}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	ACE+TAO HTML documentation
 
 USES=		tar:bzip2

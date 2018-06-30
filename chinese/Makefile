@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 472283 2018-06-13 04:57:55Z delphij $
+# $FreeBSD: head/chinese/Makefile 473298 2018-06-25 06:59:17Z delphij $
 #
 
     COMMENT = Chinese support

@@ -1,7 +1,6 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/japanese/w3m-img/Makefile 458427 2018-01-08 15:20:57Z cpm $
+# $FreeBSD: head/japanese/w3m-img/Makefile 473199 2018-06-24 13:41:06Z nobutaka $
 
-PORTREVISION=	1
 CATEGORIES=	japanese
 PKGNAMESUFFIX=	-img
 

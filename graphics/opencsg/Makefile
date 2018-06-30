@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/graphics/opencsg/Makefile 461151 2018-02-07 15:58:41Z amdmi3 $
+# $FreeBSD: head/graphics/opencsg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	opencsg
 PORTVERSION=	1.4.2
@@ -14,9 +14,9 @@ COMMENT=	Constructive Solid Geometry rendering library
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../license.txt
 
-USES=		compiler:c++11-lang qmake
+USES=		compiler:c++11-lang qmake qt:4
 USE_GL=		gl glew
-USE_QT4=	qmake_build
+USE_QT=		qmake_build
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 PLIST_SUB=      PORTVERSION=${PORTVERSION}
 

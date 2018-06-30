@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/hstr/Makefile 458979 2018-01-14 15:01:37Z tobik $
+# $FreeBSD: head/sysutils/hstr/Makefile 473181 2018-06-24 05:04:48Z tobik $
 
 PORTNAME=	hstr
-DISTVERSION=	1.24
+DISTVERSION=	1.25
 CATEGORIES=	sysutils
 
 MAINTAINER=	monsieurp@gentoo.org

@@ -1,5 +1,5 @@
 # Created by: Jeremy Norris <ishmael272home.com>
-# $FreeBSD: head/net-im/licq-qt-gui/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-im/licq-qt-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qt4-gui
 PORTVERSION=	1.8.2
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 RUN_DEPENDS=	${LOCALBASE}/lib/licq/protocol_icq.so:${LICQ_PORT}-icq
 
 USE_XORG=	x11 xext ice xscrnsaver sm
-USES=		cmake
-USE_QT4=	qmake_build moc_build rcc_build uic_build linguisttools_build \
+USES=		cmake qt:4
+USE_QT=		qmake_build moc_build rcc_build uic_build linguisttools_build \
 		corelib xml gui network dbus svg
 
 OPTIONS_DEFINE=	HUNSPELL KDE4

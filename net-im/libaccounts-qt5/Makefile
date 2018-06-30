@@ -1,5 +1,5 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/net-im/libaccounts-qt5/Makefile 459474 2018-01-19 21:28:34Z antoine $
+# $FreeBSD: head/net-im/libaccounts-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libaccounts-qt5
 PORTVERSION=	1.13
@@ -20,8 +20,8 @@ BUILD_DEPENDS=	doxygen:devel/doxygen
 
 FETCH_BEFORE_ARGS=	-o ${DISTFILES}
 
-USES=		compiler:c++11-lib qmake pathfix pkgconfig python tar:bz2
-USE_QT5=	buildtools_build core qmake_build testlib xml
+USES=		compiler:c++11-lib qmake pathfix pkgconfig python qt:5 tar:bz2
+USE_QT=		buildtools_build core qmake_build testlib xml
 
 pre-configure:
 	${REINPLACE_CMD} -e 's,$$$${INSTALL_LIBDIR},${LOCALBASE}/libdata,' \

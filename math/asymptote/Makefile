@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/asymptote/Makefile 472440 2018-06-15 11:03:29Z cpm $
+# $FreeBSD: head/math/asymptote/Makefile 473569 2018-06-29 18:09:14Z cpm $
 
 PORTNAME=	asymptote
 PORTVERSION=	2.44
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
@@ -37,6 +38,7 @@ MAKE_JOBS_UNSAFE=	yes
 ALL_TARGET=	asy asy-keywords.el
 INSTALL_TARGET=	install-asy
 
+SUB_FILES=	pkg-message
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 OPTIONS_DEFAULT=	FFTW GSL MANPAGES READLINE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qdirstat/Makefile 458482 2018-01-08 21:31:02Z rakuco $
+# $FreeBSD: head/sysutils/qdirstat/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qdirstat
 PORTVERSION=	1.4
@@ -13,9 +13,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	shundhammer
 
-USES=		desktop-file-utils qmake shebangfix
+USES=		desktop-file-utils qmake qt:5 shebangfix
 USE_GL=		gl
-USE_QT5=	buildtools_build core gui widgets
+USE_QT=		buildtools_build core gui widgets
 SHEBANG_FILES=	scripts/qdirstat-cache-writer
 
 pre-configure:

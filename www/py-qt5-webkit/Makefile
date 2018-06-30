@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-qt5-webkit/Makefile 472892 2018-06-20 17:49:22Z antoine $
+# $FreeBSD: head/www/py-qt5-webkit/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	webkit
 PORTREVISION=	5
@@ -12,11 +12,11 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sip>=${SIP_VERSION}:devel/py-sip@${PY_FLAV
 CONFIGURE_ARGS=	--enable QtWebKit
 PYQT_DIST=	yes
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run gui_run network_run
 USE_PYTHON=	flavors
-USE_QT5=	core gui network webkit qmake_build
+USE_QT=		core gui network webkit qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

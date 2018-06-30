@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-ruby-macho/Makefile 463233 2018-02-28 15:37:10Z antoine $
+# $FreeBSD: head/devel/rubygem-ruby-macho/Makefile 473309 2018-06-25 13:12:49Z antoine $
 
 PORTNAME=	ruby-macho
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

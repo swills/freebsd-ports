@@ -1,5 +1,5 @@
 # Created by: Bert Burgemeister <trebbu@googlemail.com>
-# $FreeBSD: head/games/goldencheetah/Makefile 465061 2018-03-20 02:54:23Z truckman $
+# $FreeBSD: head/games/goldencheetah/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	GoldenCheetah
 PORTVERSION=	3.2
@@ -27,9 +27,9 @@ DESKTOP_ENTRIES=	"${PORTNAME}" \
 			"Education;Sports;" \
 			false
 
-USES=		bison gmake qmake
+USES=		bison gmake qmake qt:4
 USE_GL=		gl glu
-USE_QT4=	corelib gui linguist moc_build network opengl \
+USE_QT=		corelib gui linguist moc_build network opengl \
 		qmake rcc script sql svg uic webkit xml
 INFO=		GC3-FAQ GC3-Release GC31-Release
 

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/sayonara/Makefile 458004 2018-01-03 22:46:29Z adridg $
+# $FreeBSD: head/audio/sayonara/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sayonara
 DISTVERSIONPREFIX=	player-
@@ -18,10 +18,10 @@ LIB_DEPENDS=	libtag.so:audio/taglib \
 		libmtp.so:multimedia/libmtp
 
 USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
-		pkgconfig
+		pkgconfig qt:5
 USE_GNOME=	glib20
 USE_GSTREAMER1=	flac libav mpg123 ogg opus vorbis
-USE_QT5=	dbus core gui network sql sql-sqlite3_run widgets xml \
+USE_QT=		dbus core gui network sql sql-sqlite3_run widgets xml \
 		buildtools_build qmake_build linguisttools_build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-player

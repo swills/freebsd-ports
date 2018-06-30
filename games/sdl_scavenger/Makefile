@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/sdl_scavenger/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/sdl_scavenger/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	sdl_scavenger
 PORTVERSION=	145.2015.01.05
@@ -9,7 +9,7 @@ CATEGORIES=	games
 MASTER_SITES=	SF/sdlscavenger/
 DISTNAME=	sdlscav-145.4_2015_01_05
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lode Runner like game
 
 LICENSE=	GPLv1

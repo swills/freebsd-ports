@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-fakeredis/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-fakeredis/Makefile 473126 2018-06-23 11:40:40Z rene $
 
 PORTNAME=	fakeredis
-PORTVERSION=	0.10.3
+PORTVERSION=	0.11.0
 CATEGORIES=	databases
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

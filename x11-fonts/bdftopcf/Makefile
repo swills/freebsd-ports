@@ -1,5 +1,5 @@
 # Created by: Pawel Worach
-# $FreeBSD: head/x11-fonts/bdftopcf/Makefile 457132 2017-12-24 08:54:09Z zeising $
+# $FreeBSD: head/x11-fonts/bdftopcf/Makefile 473301 2018-06-25 09:07:15Z amdmi3 $
 
 PORTNAME=	bdftopcf
 PORTVERSION=	1.1
@@ -7,6 +7,9 @@ CATEGORIES=	x11-fonts
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Convert X font from BDF to PCF
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		localbase
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/llvm60/Makefile 472120 2018-06-10 08:34:29Z amdmi3 $
+# $FreeBSD: head/devel/llvm60/Makefile 473455 2018-06-27 20:18:04Z brooks $
 
 PORTNAME=	llvm
-DISTVERSION=	6.0.0
-PORTREVISION=	4
+DISTVERSION=	6.0.1
+PORTREVISION=	0
 CATEGORIES=	devel lang
 MASTER_SITES=	http://${PRE_}releases.llvm.org/${LLVM_RELEASE}/${RCDIR}
 PKGNAMESUFFIX=	${LLVM_SUFFIX}
@@ -423,7 +423,6 @@ post-install-LLD-on:
 	${RMDIR} ${STAGEDIR}${LLVM_PREFIX}/include/llvm/BinaryFormat/WasmRelocs
 
 post-install-LLDB-on:
-	${RMDIR} ${STAGEDIR}${LLVM_PREFIX}/include/lldb/API
 	${RMDIR} ${STAGEDIR}${LLVM_PREFIX}/include/lldb/Host/windows/getopt
 	${RMDIR} ${STAGEDIR}${LLVM_PREFIX}/include/lldb/Host/mingw
 	${RMDIR} ${STAGEDIR}${LLVM_PREFIX}/include/lldb/Host/msvc

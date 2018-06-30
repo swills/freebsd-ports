@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/belle-sip/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/belle-sip/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	belle-sip
 PORTVERSION=	1.5.0
@@ -15,6 +15,8 @@ COMMENT=	Belle-sip is a SIP (RFC3261) implementation written in C
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to build: Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 LIB_DEPENDS=	libantlr3c.so:devel/libantlr3c \
 		libbctoolbox.so:net/bctoolbox

@@ -1,5 +1,5 @@
 # Created by: Sergey V. Dyatko <sergey.dyatko@gmail.com>
-# $FreeBSD: head/emulators/q4wine/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/q4wine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	q4wine
 DISTVERSION=	1.1-r2
@@ -19,11 +19,11 @@ RUN_DEPENDS=	sudo:security/sudo \
 		cabextract:archivers/cabextract \
 		icotool:graphics/icoutils
 
-USES=		cmake desktop-file-utils
+USES=		cmake desktop-file-utils qt:4
 CMAKE_ARGS+=	-DMANPAGE_ENTRY_PATH=${MANPREFIX}/man
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
-USE_QT4=	qmake_build rcc_build moc_build uic_build \
+USE_QT=		qmake_build rcc_build moc_build uic_build \
 		linguisttools_build corelib gui sql sql-sqlite3_run network
 ONLY_FOR_ARCHS=	i386 amd64
 
@@ -36,7 +36,8 @@ OPTIONS_SUB=	yes
 
 DBUS_CMAKE_ON=		-DWITH_DBUS:BOOL=ON
 DBUS_CMAKE_OFF=		-DWITH_DBUS:BOOL=OFF
-DBUS_USE=		QT4=dbus
+DBUS_USES=	qt:4
+DBUS_USE=		QT=dbus
 
 .include <bsd.port.options.mk>
 

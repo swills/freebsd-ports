@@ -1,9 +1,9 @@
 # Created by: Slaven Rezic <slaven@rezic.de>
-# $FreeBSD: head/astro/merkaartor/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/astro/merkaartor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	merkaartor
 PORTVERSION=	0.18.2
-PORTREVISION=	9
+PORTREVISION=	11
 CATEGORIES=	astro
 
 MAINTAINER=	dev2@heesakkers.info
@@ -18,11 +18,11 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	openstreetmap
-USES=		pkgconfig sqlite:3 qmake
+USES=		pkgconfig qt:5 sqlite:3 qmake
 USE_LDCONFIG=	yes
 
 QMAKE_ARGS=	SYSTEM_QUAZIP=1
-USE_QT5=	buildtools_build \
+USE_QT=		buildtools_build \
 		concurrent core gui imageformats network printsupport svg \
 		webkit widgets xml
 
@@ -45,7 +45,8 @@ ZBAR_BROKEN=	Does not build with option ZBAR selected
 
 DEBUG_QMAKE_OFF=	NODEBUG=1 RELEASE=1
 
-NLS_USE=	QT5=linguisttools_build
+NLS_USES=	qt:5
+NLS_USE=	QT=linguisttools_build
 
 INSTALLS_ICONS= yes
 

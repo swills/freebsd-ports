@@ -1,12 +1,12 @@
 # Created by: Loren M. Lang <lorenl@alzatex.com>
-# $FreeBSD: head/games/blobwars/Makefile 464383 2018-03-13 14:40:09Z amdmi3 $
+# $FreeBSD: head/games/blobwars/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	blobwars
 PORTVERSION=	2.00
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mission and Objective based 2D Platform Game
 
 LICENSE=	GPLv2+ CC-BY-3.0 CC-BY-SA-3.0

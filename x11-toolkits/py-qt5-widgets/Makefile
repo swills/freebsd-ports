@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/py-qt5-widgets/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/x11-toolkits/py-qt5-widgets/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	widgets
 PORTREVISION=	5
@@ -10,11 +10,11 @@ COMMENT=	Python bindings for the Qt5 toolkit, QtWidgets module
 CONFIGURE_ARGS=	--enable QtWidgets
 PYQT_DIST=	yes
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run gui_run
 USE_PYTHON=	flavors
-USE_QT5=	core gui widgets qmake_build
+USE_QT=		core gui widgets qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

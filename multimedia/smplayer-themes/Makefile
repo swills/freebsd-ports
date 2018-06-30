@@ -1,5 +1,5 @@
 # Created by: Diego Depaoli <trebestie@gmail.com> and Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/multimedia/smplayer-themes/Makefile 421692 2016-09-10 14:08:31Z nemysis $
+# $FreeBSD: head/multimedia/smplayer-themes/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smplayer-themes
 PORTVERSION=	16.8.0
@@ -7,11 +7,11 @@ PORTEPOCH=	1
 CATEGORIES=	multimedia audio kde
 MASTER_SITES=	SF/smplayer/SMPlayer-themes/${PORTVERSION}/
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Themes for SMPlayer
 
-USES=		tar:bzip2
-USE_QT4=	rcc_build
+USES=		qt:4 tar:bzip2
+USE_QT=		rcc_build
 NO_ARCH=	yes
 
 DATADIR=	${PREFIX}/share/smplayer

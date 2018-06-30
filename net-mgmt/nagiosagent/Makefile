@@ -1,5 +1,5 @@
 # Created by: Eugene Mychlo <myc@barev.net>
-# $FreeBSD: head/net-mgmt/nagiosagent/Makefile 347778 2014-03-10 16:38:00Z bapt $
+# $FreeBSD: head/net-mgmt/nagiosagent/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	NagiosAgent
 PORTVERSION=	1.2.0.1
@@ -15,8 +15,8 @@ COMMENT=	Qt-based frontend to Nagios
 PLIST_FILES=	bin/NagiosAgent \
 		share/pixmaps/NagiosAgent.png
 
-USES=		qmake zip
-USE_QT4=	gui network corelib uic_build rcc_build moc_build
+USES=		qmake qt:4 zip
+USE_QT=		gui network corelib uic_build rcc_build moc_build
 
 DESKTOP_ENTRIES=	"NagiosAgent" "GUI client for Nagios" \
 			"${PREFIX}/share/pixmaps/NagiosAgent.png" \

@@ -1,5 +1,5 @@
 # Created by: Piotr Rybicki (meritus@innervision.pl)
-# $FreeBSD: head/polish/qfaktury/Makefile 334586 2013-11-22 12:55:00Z makc $
+# $FreeBSD: head/polish/qfaktury/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qfaktury
 PORTVERSION=	0.6.2
@@ -10,8 +10,8 @@ MASTER_SITES=	SF
 MAINTAINER=	meritus@innervision.pl
 COMMENT=	Polish invoicing desktop program
 
-USES=		qmake
-USE_QT4=	uic_build moc_build rcc_build corelib gui xml qt3support
+USES=		qmake qt:4
+USE_QT=		uic_build moc_build rcc_build corelib gui xml qt3support
 
 PORTDOCS=	ChangeLog.txt ReadMe.txt ReleaseNotes.txt TODO.txt
 

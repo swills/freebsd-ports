@@ -1,9 +1,9 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/korean/qt4-codecs-kr/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/korean/qt4-codecs-kr/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	codecs
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	korean
 PKGNAMEPREFIX=	qt4-
 PKGNAMESUFFIX=	-kr
@@ -11,8 +11,8 @@ PKGNAMESUFFIX=	-kr
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt EUC-KR codec plugin
 
-USE_QT4=	qmake_build corelib
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		corelib
 
 HAS_CONFIGURE=	yes
 

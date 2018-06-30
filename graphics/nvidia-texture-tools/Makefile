@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	nvidia-texture-tools
 PORTVERSION=	2.0.8.1 # needed to not bump PORTEPOCH; remove on next update
@@ -38,7 +38,8 @@ OPTIONS_DEFINE=	COMPRESSUI DOCS
 OPTIONS_SUB=	yes
 
 COMPRESSUI_DESC=Build compressor UI (requires Qt4)
-COMPRESSUI_USE=	QT4=qmake_build,moc_build,uic_build,rcc_build,corelib,gui,opengl
+COMPRESSUI_USES=	qt:4
+COMPRESSUI_USE=	QT=qmake_build,moc_build,uic_build,rcc_build,corelib,gui,opengl
 
 post-patch-COMPRESSUI-on:
 	@${REINPLACE_CMD} -e '/FIND_PACKAGE.*Qt4/ s|)$$| REQUIRED&|' \

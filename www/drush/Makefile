@@ -1,10 +1,12 @@
 # Created by: Thomas Sandford <freebsduser@paradisegreen.co.uk>
-# $FreeBSD: head/www/drush/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/www/drush/Makefile 473390 2018-06-26 15:33:26Z mfechner $
 
 PORTNAME=	drush
 DISTVERSION=	8.1.16
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/drush-ops/drush/releases/download/${DISTVERSION}/
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	drush
 EXTRACT_SUFX=	.phar
 
@@ -17,7 +19,7 @@ NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 NO_ARCH=	yes
 
-USES=		php:cli
+USES=		php:cli,flavors
 # set php requirements same as drupal itself
 USE_PHP=	gd pcre session mbstring ctype json hash simplexml dom pdo filter phar
 

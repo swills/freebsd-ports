@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/bareos16-traymonitor/Makefile 470319 2018-05-18 19:00:37Z acm $
+# $FreeBSD: head/sysutils/bareos16-traymonitor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	bareos16
 
@@ -12,8 +12,8 @@ LIB_DEPENDS+=	libqwt.so:x11-toolkits/qwt5 \
 
 CONFLICTS=	bacula*-bat-* bareos-traymonitor-*
 
-USES=		pkgconfig gettext-runtime desktop-file-utils
-USE_QT4=	qmake_build uic_build moc_build rcc_build gui corelib
+USES=		pkgconfig gettext-runtime desktop-file-utils qt:4
+USE_QT=		qmake_build uic_build moc_build rcc_build gui corelib
 WITH_BAT=	yes
 
 PLIST=		${.CURDIR}/pkg-plist

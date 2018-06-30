@@ -1,12 +1,12 @@
 # Created by: Jaap Boender <jaapb@kerguelen.org>
-# $FreeBSD: head/devel/menhir/Makefile 446987 2017-07-31 16:43:44Z ultima $
+# $FreeBSD: head/devel/menhir/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	menhir
 PORTVERSION=	20170712
 CATEGORIES=	devel
 MASTER_SITES=	http://cristal.inria.fr/~fpottier/menhir/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	LR(1) parser generator for OCaml
 
 LICENSE=	GPLv2

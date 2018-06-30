@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPANPLUS-Dist-Build/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-CPANPLUS-Dist-Build/Makefile 473263 2018-06-24 20:20:28Z sunpoet $
 
 PORTNAME=	CPANPLUS-Dist-Build
-PORTVERSION=	0.88
+PORTVERSION=	0.90
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

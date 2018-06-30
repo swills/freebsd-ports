@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/rocksndiamonds-data/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/games/rocksndiamonds-data/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	rocksndiamonds-data
 PORTVERSION=	20131106
@@ -25,7 +25,7 @@ DIST_SUBDIR=	rocksndiamonds
 EXTRACT_ONLY=	#empty
 EXTRACT_ONLY_7z=Emerald_Mine_Club-2.1.1.7z
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Additional Player Levels for Rocks'n'Diamonds and R'n'D jue
 
 EXTRACT_DEPENDS+=${UNZIP_CMD}:archivers/unzip

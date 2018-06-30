@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/kdewebdev-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/www/kdewebdev-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdewebdev
 PORTVERSION=	${KDE4_VERSION}
@@ -13,10 +13,10 @@ COMMENT=	Comprehensive html/website development environment
 LIB_DEPENDS=	libtidy.so:www/tidy-lib \
 		libboost_thread.so:devel/boost-libs
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	kdelibs pimlibs automoc4
-USE_QT4=	dbus porting_build \
+USE_QT=		dbus porting_build \
 		qmake_build moc_build rcc_build uic_build uic3_build
 USE_LDCONFIG=	yes
 

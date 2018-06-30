@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/hs-wai-extra/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/www/hs-wai-extra/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	wai-extra
 PORTVERSION=	3.0.22.1
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

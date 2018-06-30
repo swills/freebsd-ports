@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/plasma-applet-geekclock/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-clocks/plasma-applet-geekclock/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	geekclock
 PORTVERSION=	1.0
@@ -11,9 +11,9 @@ DISTNAME=	geek-clock-plasmoid-${PORTVERSION}-src
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	KDE4 geeky analog clock plasma applet
 
-USES=		cmake kde:4
+USES=		cmake kde:4 qt:4
 USE_KDE=	automoc4 kdelibs workspace
-USE_QT4=	gui dbus network opengl svg webkit xml \
+USE_QT=		gui dbus network opengl svg webkit xml \
 		qmake_build moc_build rcc_build uic_build
 
 PLIST_FILES=	lib/kde4/plasma_applet_geekclock.so \

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net/qtweetlib/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/net/qtweetlib/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtweetlib
 PORTVERSION=	0.5
@@ -16,9 +16,9 @@ LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 GH_ACCOUNT=	minimoog
 GH_PROJECT=	QTweetLib
 
-USES=		cmake
+USES=		cmake qt:4
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
-USE_QT4=	gui moc_build network qmake_build rcc_build uic_build
+USE_QT=		gui moc_build network qmake_build rcc_build uic_build
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/java/java3d/Makefile 465900 2018-03-29 15:02:05Z emaste $
+# $FreeBSD: head/java/java3d/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	java3d
 PORTVERSION=	1.5.2
@@ -13,6 +13,7 @@ COMMENT=	Provides API for creating and manipulation of 3D geometry
 LICENSE=	BSD2CLAUSE GPLv2
 LICENSE_COMB=	multi
 
+BROKEN_aarch64=		fails to compile: GVector.java:168: bad use of '>'
 BROKEN_armv6=		fails to compile: build.xml: Compile failed; see the compiler error output for details
 BROKEN_armv7=		fails to compile: build.xml: Compile failed; see the compiler error output for details
 

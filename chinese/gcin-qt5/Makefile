@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/chinese/gcin-qt5/Makefile 470686 2018-05-23 07:52:52Z vanilla $
+# $FreeBSD: head/chinese/gcin-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gcin
 PORTVERSION=	2.8.6
@@ -17,8 +17,8 @@ LICENSE=	LGPL21
 LIB_DEPENDS=	libgcin-im-client.so:chinese/gcin
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/qt5-im
-USES=		compiler:c++11-lang gmake pkgconfig tar:xz
-USE_QT5=	qdbus qmake_build buildtools_build core gui
+USES=		compiler:c++11-lang gmake pkgconfig qt:5 tar:xz
+USE_QT=		qdbus qmake_build buildtools_build core gui
 USE_CXXSTD=	c++11
 MAKE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		MKDIR="${MKDIR}"

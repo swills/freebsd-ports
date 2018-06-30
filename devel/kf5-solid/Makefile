@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-solid/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/devel/kf5-solid/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	solid
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,9 +7,9 @@ CATEGORIES=	devel kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 hardware integration and detection
 
-USES=		bison cmake:outsource compiler:c++11-lib kde:5 tar:xz
+USES=		bison cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT5=	buildtools_build concurrent core dbus gui linguisttools \
+USE_QT=		buildtools_build concurrent core dbus gui linguisttools \
 		network qmake_build qml testlib widgets xml
 
 OPTIONS_DEFINE=		BSDISKS

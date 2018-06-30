@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-cstore_fdw/Makefile 446487 2017-07-23 14:47:33Z dbaio $
+# $FreeBSD: head/databases/postgresql-cstore_fdw/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	cstore_fdw
 PORTVERSION=	1.6.0
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Columnar store for analytics with PostgreSQL
 
 LICENSE=	APACHE20
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libprotobuf-c.so:devel/protobuf-c
 SUB_FILES=	pkg-message
 
 USES=		gmake pgsql:9.3+
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	citusdata
 

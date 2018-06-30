@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/artikulate-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/misc/artikulate-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	artikulate
 PORTVERSION=	${KDE4_VERSION}
@@ -14,9 +14,9 @@ RUN_DEPENDS=	${LOCALBASE}/lib/kde4/imports/org/kde/charts/qmldir:graphics/kqtqui
 
 IGNORE=		not usable, links to both GStreamer 0.10.x and 1.x
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs libkeduvocdocument runtime_run
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

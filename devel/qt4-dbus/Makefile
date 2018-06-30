@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-dbus/Makefile 472470 2018-06-15 17:40:02Z amdmi3 $
+# $FreeBSD: head/devel/qt4-dbus/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dbus
 DISTVERSION=	${QT4_VERSION}
@@ -14,9 +14,8 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus
 
 BROKEN_sparc64=	fails to compile: invalid conversion
 
-USES=		pkgconfig
-USE_QT4=	qmake_build moc_build rcc_build corelib xml
-QT_DIST=	yes
+USES=		pkgconfig qmake:no_env qt-dist:4
+USE_QT=		moc_build rcc_build corelib xml
 MAKE_JOBS_UNSAFE=	yes
 
 HAS_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/games/qnetwalk/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/games/qnetwalk/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qnetwalk
 PORTVERSION=	1.4
@@ -13,8 +13,8 @@ COMMENT=	Qt-version of the NetWalk game
 
 LICENSE=	GPLv2
 
-USES=		qmake
-USE_QT4=	corelib gui moc_build rcc_build
+USES=		qmake qt:4
+USE_QT=		corelib gui moc_build rcc_build
 USE_SDL=	mixer
 
 PLIST_FILES=	bin/qnetwalk \

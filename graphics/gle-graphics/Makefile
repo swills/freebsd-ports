@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/graphics/gle-graphics/Makefile 447478 2017-08-06 17:53:22Z rakuco $
+# $FreeBSD: head/graphics/gle-graphics/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gle-graphics
 DISTVERSION=	4.2.4cf
@@ -44,8 +44,8 @@ REINPLACE_FILES=	configure
 
 USE_GL=	yes
 USE_LDCONFIG=	yes
-USE_QT4=	corelib gui moc network opengl rcc qmake_build
-USES=		gmake ncurses pathfix
+USE_QT=		corelib gui moc network opengl rcc qmake_build
+USES=		gmake ncurses pathfix qt:4
 CPPFLAGS+=	-I${NCURSESINC}
 
 WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}

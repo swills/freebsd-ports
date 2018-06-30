@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/klog/Makefile 466692 2018-04-06 23:08:50Z db $
+# $FreeBSD: head/comms/klog/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	klog
 PORTVERSION=	0.9.3
@@ -11,8 +11,8 @@ COMMENT=	Simple Qt-based amateur radio logger
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake
-USE_QT5=	buildtools_build core gui linguisttools_build multimedia network \
+USES=		qmake qt:5
+USE_QT=		buildtools_build core gui linguisttools_build multimedia network \
 		printsupport sql sql-sqlite3_run widgets
 DESKTOP_ENTRIES=	"KLog" "Simple Amateur Radio Logging Program" \
 		"" "klog" "Network;HamRadio;" \

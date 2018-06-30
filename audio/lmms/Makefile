@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/audio/lmms/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/audio/lmms/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	lmms
 PORTVERSION=	1.1.3
@@ -34,11 +34,11 @@ OPTIONS_DEFAULT=OSS
 
 USE_LDCONFIG=	yes
 USE_XORG=	x11 xext xft ice sm
-USE_QT4=	corelib gui xml moc_build uic_build rcc_build \
+USE_QT=		corelib gui xml moc_build uic_build rcc_build \
 		qmake_build
 USE_GITHUB=	yes
 GH_ACCOUNT=	LMMS
-USES=		cmake desktop-file-utils dos2unix pkgconfig shared-mime-info
+USES=		cmake desktop-file-utils dos2unix pkgconfig qt:4 shared-mime-info
 CMAKE_ARGS=	-DWANT_ALSA:BOOL=OFF \
 		-DWANT_CALF:BOOL=OFF \
 		-DWANT_CAPS:BOOL=OFF \

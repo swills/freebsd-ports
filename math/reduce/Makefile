@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/reduce/Makefile 462703 2018-02-23 15:21:20Z pfg $
+# $FreeBSD: head/math/reduce/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	reduce
 PORTVERSION=	20180117
@@ -12,6 +12,8 @@ COMMENT=	REDUCE Codemist Standard Lisp general-purpose computer system
 
 LICENSE=	BSD2CLAUSE
 
+BROKEN_aarch64=		fails to install: Reduce-svn4372-src/cslbuild/aarch64-unknown-freebsd11.1/csl/reduce.img: No such file or directory
+BROKEN_armv6=		fails to compile: redfront.h:118:12: conflicting types for '__wcwidth'
 BROKEN_powerpc64=	fails to compile: arith01.cpp: 'statuc' does not name a type
 
 RUN_DEPENDS=	gnuplot:math/gnuplot

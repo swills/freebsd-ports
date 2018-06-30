@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/math/ccmath/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/math/ccmath/Makefile 473296 2018-06-25 06:44:09Z linimon $
 
 PORTNAME=	ccmath
 PORTVERSION=	2.2.1
@@ -11,6 +11,8 @@ MAINTAINER=	db@FreeBSD.org
 COMMENT=	Mathematics library with many different functions
 
 LICENSE=	LGPL20
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol: bias in readonly segment; recompile object files with -fPIC
 
 USE_LDCONFIG=	yes
 

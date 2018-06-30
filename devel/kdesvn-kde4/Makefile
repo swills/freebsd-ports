@@ -1,5 +1,5 @@
 # Created by: Yuan Jue <yuanjue@yuanjue.net>
-# $FreeBSD: head/devel/kdesvn-kde4/Makefile 468756 2018-05-01 07:53:08Z tcberner $
+# $FreeBSD: head/devel/kdesvn-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdesvn
 DISTVERSION=	1.7.0
@@ -25,10 +25,10 @@ CONFLICTS=	kdesvn-2.* \
 CMAKE_ARGS+=	-DSUBVERSION_INCLUDE_DIR=${LOCALBASE}/include/subversion-1 \
 		-DMAN_INSTALL_DIR=${MANPREFIX}/man
 
-USES=		cmake:outsource compiler:c11 bdb kde:4 tar:xz
+USES=		cmake:outsource compiler:c11 bdb kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs soprano baseapps_run
 USE_LDCONFIG=	yes
-USE_QT4=	corelib gui xml network dbus svg sql \
+USE_QT=		corelib gui xml network dbus svg sql \
 		qmake_build moc_build rcc_build uic_build linguist_build
 
 OPTIONS_DEFINE=	DOCS NLS

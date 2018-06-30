@@ -1,5 +1,5 @@
 # Created by: vsevolod
-# $FreeBSD: head/devel/drpython/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/drpython/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=	drpython
 PORTVERSION=	3.11.4
@@ -14,11 +14,13 @@ COMMENT=	Highly customizable cross-platform ide to aid programming in Python
 
 LICENSE=	GPLv2
 
-# fails to build in presence if installed self
-CONFLICTS_BUILD=	${PORTNAME}${PYTHON_PKGNAMESUFFIX}-[0-9]*
+BROKEN_aarch64=		fails to build: Signal 11
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
 RUN_DEPENDS=	xdg-open:devel/xdg-utils
+
+# fails to build in presence if installed self
+CONFLICTS_BUILD=	${PORTNAME}${PYTHON_PKGNAMESUFFIX}-[0-9]*
 
 NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}

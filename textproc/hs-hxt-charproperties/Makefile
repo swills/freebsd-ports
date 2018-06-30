@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-hxt-charproperties/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-hxt-charproperties/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	hxt-charproperties
 PORTVERSION=	9.2.0.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

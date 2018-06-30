@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/security/hardening-check/Makefile 445734 2017-07-14 08:17:54Z ultima $
+# $FreeBSD: head/security/hardening-check/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	hardening-check
 PORTVERSION=	2.6
@@ -7,7 +7,7 @@ CATEGORIES=	security
 MASTER_SITES=	DEBIAN/pool/main/h/hardening-wrapper
 DISTNAME=	hardening-wrapper_${PORTVERSION}
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Check binaries for security hardening features
 
 LICENSE=	GPLv2+

@@ -1,5 +1,5 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/sysutils/kdirstat/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/sysutils/kdirstat/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdirstat
 PORTVERSION=	2.7.8
@@ -16,10 +16,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 WRKSRC=		${WRKDIR}/jeromerobert-k4dirstat-3a4663ee20e7
 
-USES=		cmake cpe gettext-tools kde:4 tar:bzip2
+USES=		cmake cpe gettext-tools kde:4 qt:4 tar:bzip2
 CPE_VENDOR=	kdirstat_project
 USE_KDE=	automoc4 kdelibs libkonq
-USE_QT4=	corelib dbus gui network qt3support svg xml \
+USE_QT=		corelib dbus gui network qt3support svg xml \
 		moc_build qmake_build rcc_build uic_build
 
 post-patch:

@@ -1,12 +1,12 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgres-xl/Makefile 458377 2018-01-07 19:43:13Z krion $
+# $FreeBSD: head/databases/postgres-xl/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	postgres-xl
 DISTVERSION=	9.5r1.5
 CATEGORIES=	databases
 MASTER_SITES=	http://files.postgres-xl.org/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scalable open source PostgreSQL-based database cluster
 
 LICENSE=	PostgreSQL

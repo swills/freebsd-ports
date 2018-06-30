@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/kremotecontrol-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/comms/kremotecontrol-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kremotecontrol
 PORTVERSION=	${KDE4_VERSION}
@@ -10,9 +10,9 @@ COMMENT=	KDE frontend for your remote controls
 
 RUN_DEPENDS=	lircd:comms/lirc
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	corelib script xmlpatterns \
+USE_QT=		corelib script xmlpatterns \
 		qmake_build moc_build rcc_build uic_build
 USE_LDCONFIG=	yes
 

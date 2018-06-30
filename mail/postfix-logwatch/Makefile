@@ -1,8 +1,9 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/mail/postfix-logwatch/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/mail/postfix-logwatch/Makefile 473005 2018-06-21 21:50:43Z danilo $
 
 PORTNAME=	postfix-logwatch
 PORTVERSION=	1.40.03
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	SF/logreporters/${PORTNAME}/release/${PORTVERSION}
 

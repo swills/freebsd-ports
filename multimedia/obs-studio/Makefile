@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/obs-studio/Makefile 469850 2018-05-14 05:27:09Z yuri $
+# $FreeBSD: head/multimedia/obs-studio/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	obs-studio
 DISTVERSION=	21.1.2
@@ -28,10 +28,10 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libv4l2.so:multimedia/libv4l \
 		libx264.so:multimedia/libx264
 
-USES=		cmake:outsource compiler:c++11-lib lua pkgconfig python:3.4+
+USES=		cmake:outsource compiler:c++11-lib lua pkgconfig python:3.4+ qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	obsproject
-USE_QT5=	core gui widgets x11extras buildtools_build imageformats_run qmake_build
+USE_QT=		core gui widgets x11extras buildtools_build imageformats_run qmake_build
 USE_GL=		gl
 USE_XORG=	ice sm x11 xcb xcomposite xext xfixes xinerama xrandr
 USE_LDCONFIG=	yes

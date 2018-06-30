@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/databases/ip4r/Makefile 447193 2017-08-03 02:29:04Z pi $
+# $FreeBSD: head/databases/ip4r/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	ip4r
 PORTVERSION=	2.2
@@ -15,6 +15,7 @@ OPTIONS_DEFINE=	IDXPATCH
 IDXPATCH_DESC=	Prefer ip4r indexes over seq_scan on large datasets
 
 USES=		gmake pgsql
+LLD_UNSAFE=	yes
 
 MAKE_ARGS=	USE_PGXS=1
 

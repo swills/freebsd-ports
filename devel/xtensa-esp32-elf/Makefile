@@ -1,5 +1,5 @@
 # Created by: Craig Leres <leres@freebsd.org>
-# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 469294 2018-05-07 15:34:42Z leres $
+# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=	xtensa-esp32-elf
 DISTVERSION=	1.22.0.g20171219
@@ -36,6 +36,10 @@ COMMENT=	Espressif ESP32 toolchain
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+BROKEN_aarch64=		fails to configure: cannot compute suffix of object files: cannot compile
+BROKEN_armv6=		fails to build: failed in step 'Installing pass-2 core C gcc compiler'
+BROKEN_armv7=		fails to build: failed in step 'Installing pass-2 core C gcc compiler'
 
 BUILD_DEPENDS=	bash:shells/bash \
 		gawk:lang/gawk \

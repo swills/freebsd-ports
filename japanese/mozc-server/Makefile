@@ -1,10 +1,10 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/mozc-server/Makefile 471279 2018-06-01 18:13:24Z jrm $
+# $FreeBSD: head/japanese/mozc-server/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mozc
 PORTVERSION=	2.20.2677.102.02
 DISTVERSIONPREFIX=	v
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	japanese
 
 MAINTAINER=	hrs@FreeBSD.org
@@ -48,8 +48,9 @@ LICENSE_PERMS_NAISTL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_FILE_NAISTL=	${WRKSRC}/src/data/dictionary_oss/README.txt
 LICENSE_DISTFILES_NAISTL=${DISTNAME}${EXTRACT_SUFX}
 .elif ${BUILD_MOZC_LIST:Mmozc_tool} == "mozc_tool"
+USES+=		qt:5
 USE_GNOME=	glib20 gtk20
-USE_QT5=	buildtools core gui widgets
+USE_QT=		buildtools core gui widgets
 .elif ${BUILD_MOZC_LIST:Mibus_mozc} == "ibus_mozc"
 USES+=		gettext-runtime
 USE_XORG=	xcb

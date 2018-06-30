@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/xgalaga-sdl/Makefile 472060 2018-06-09 16:08:56Z amdmi3 $
+# $FreeBSD: head/games/xgalaga-sdl/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	xgalaga-sdl
 PORTVERSION=	2.1.1.0
@@ -11,7 +11,7 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}-sdl${EXTRACT_SUFX} \
 		${PORTNAME}.png:icons
 EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}-sdl${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Classic single screen vertical shoot em up SDL
 
 LICENSE=	GPLv2+

@@ -1,5 +1,5 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/deskutils/qorganizer/Makefile 421990 2016-09-13 09:01:33Z amdmi3 $
+# $FreeBSD: head/deskutils/qorganizer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qorganizer
 PORTVERSION=	3.1
@@ -14,8 +14,8 @@ COMMENT=	General organizer that includes calendar with jurnal and schedule
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../COPYING
 
-USES=		qmake
-USE_QT4=	corelib gui network moc_build rcc_build sql
+USES=		qmake qt:4
+USE_QT=		corelib gui network moc_build rcc_build sql
 WRKSRC=		${WRKDIR}/qOrganizer/src
 
 PLIST_FILES=	bin/qOrganizer share/pixmaps/qOrganizer.png

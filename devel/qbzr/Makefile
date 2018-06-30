@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/qbzr/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/qbzr/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qbzr
 PORTVERSION=	0.23.0
@@ -20,10 +20,10 @@ RUN_DEPENDS=	bzr:devel/bzr
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		gettext pyqt:4 python:2.7
+USES=		gettext pyqt:4 python:2.7 qt:4
 USE_PYQT=	core
 USE_PYTHON=	distutils autoplist
-USE_QT4=	# empty
+USE_QT=		# empty
 INSTALLS_ICONS=	yes
 
 .include <bsd.port.mk>

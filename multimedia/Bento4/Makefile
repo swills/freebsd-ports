@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Bento4/Makefile 466956 2018-04-10 11:30:50Z mmokhi $
+# $FreeBSD: head/multimedia/Bento4/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	Bento4
 PORTVERSION=	1.5.1
@@ -10,6 +10,8 @@ MAINTAINER=	mmokhi@FreeBSD.org
 COMMENT=	Full-featured MP4 format and MPEG DASH library and tools
 
 LICENSE=	GPLv2
+
+BROKEN_aarch64=		fails to compile: Ap4AesBlockCipher.cpp:93:4: AP4_PLATFORM_BYTE_ORDER is not set
 
 USES=		cmake:outsource,noninja
 

@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/fmit/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/audio/fmit/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	fmit
 PORTVERSION=	0.99.5
@@ -16,10 +16,10 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libfftw3.so:math/fftw3
 
 USE_XORG=	xmu
-USE_QT4=	corelib gui opengl \
+USE_QT=		corelib gui opengl \
 		linguist_build moc_build qmake_build rcc_build uic_build
 USE_GL=		glut
-USES=		cmake pkgconfig tar:bzip2
+USES=		cmake pkgconfig qt:4 tar:bzip2
 INSTALLS_ICONS=	yes
 
 OPTIONS_DEFINE=	ALSA JACK OSS PORTAUDIO

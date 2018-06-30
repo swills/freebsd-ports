@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/bsdec2-image-upload/Makefile 445574 2017-07-12 06:13:12Z cperciva $
+# $FreeBSD: head/net/bsdec2-image-upload/Makefile 473189 2018-06-24 08:46:09Z cperciva $
 
 PORTNAME=	bsdec2-image-upload
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	net
 MASTER_SITES=	http://freebsd-ec2-dist.s3.amazonaws.com/
 

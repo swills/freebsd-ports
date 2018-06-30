@@ -1,9 +1,9 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/misc/tellico-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/misc/tellico-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tellico
 PORTVERSION=	2.3.12
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	misc kde
 MASTER_SITES=	http://tellico-project.org/files/
 
@@ -21,11 +21,11 @@ LIB_DEPENDS=	libexempi.so:textproc/exempi \
 		libyaz.so:net/yaz
 
 USES=		cmake gettext kde:4 pkgconfig python:run \
-		shared-mime-info shebangfix tar:bzip2
+		qt:4 shared-mime-info shebangfix tar:bzip2
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	kdelibs libksane pimlibs soprano \
 		automoc4 qimageblitz libkcddb libkcompactdisc
-USE_QT4=	corelib dbus gui network phonon svg xml \
+USE_QT=		corelib dbus gui network phonon svg xml \
 		qmake_build moc_build uic_build rcc_build
 
 SHEBANG_FILES=	src/fetch/scripts/bedetheque.py \

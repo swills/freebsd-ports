@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/hs-css-text/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/www/hs-css-text/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	css-text
 PORTVERSION=	0.1.3.0
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

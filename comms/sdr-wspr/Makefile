@@ -1,5 +1,5 @@
 # Created by: Jeffrey Baitis <jeff@baitis.net>
-# $FreeBSD: head/comms/sdr-wspr/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/comms/sdr-wspr/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sdr-wspr
 PORTVERSION=	0.1.0
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libsdr-gui.so:comms/libsdr-gui
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	hmatuschek
-USE_QT5=	core buildtools_build qmake webkit widgets
-USES=		cmake:outsource compiler:gcc-c++11-lib fortran pkgconfig
+USE_QT=		core buildtools_build qmake webkit widgets
+USES=		cmake:outsource compiler:gcc-c++11-lib fortran pkgconfig qt:5
 
 PLIST_FILES=	bin/sdr-wspr share/applications/sdr-wspr.desktop \
 		share/icons/sdr-wspr.svg

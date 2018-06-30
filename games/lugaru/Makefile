@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/lugaru/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/lugaru/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	lugaru
 PORTVERSION=	269
@@ -8,7 +8,7 @@ CATEGORIES=	games
 MASTER_SITES=	https://bitbucket.org/oss${PORTNAME}/${PORTNAME}/downloads/
 DISTNAME=	${PORTNAME}-rev${DISTVERSION}-src
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	3D arcade with unique fighting system and anthropomorphic characters
 
 LICENSE=	GPLv2+

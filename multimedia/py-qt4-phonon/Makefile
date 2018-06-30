@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/py-qt4-phonon/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/multimedia/py-qt4-phonon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	phonon
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org
@@ -10,10 +10,10 @@ COMMENT=	Python bindings for the Qt4 toolkit, Phonon module
 CONFIGURE_ARGS=	--enable phonon
 PYQT_DIST=	yes
 
-USES=		python pyqt:4
+USES=		python pyqt:4 qt:4
 USE_PYQT=	sip_build core_run gui_run
 USE_PYTHON=	flavors
-USE_QT4=	corelib gui phonon moc_build qmake_build
+USE_QT=		corelib gui phonon moc_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

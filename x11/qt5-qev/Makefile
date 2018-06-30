@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/qt5-qev/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/x11/qt5-qev/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qev
 DISTVERSION=	${QT5_VERSION}
@@ -8,15 +8,14 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt QWidget events introspection tool
 
-USE_QT5=	core widgets
-QT_DIST=	tools
-USES=		qmake
+USE_QT=		core widgets
+USES=		qmake qt-dist:5,tools
 
 WRKSRC_SUBDIR=	src/${PORTNAME}
 
-# qev is not connected to qttool's build system, so we cannot just run qmake
+# qev is not connected to qttool's build system, so we cannot just run qmake qt-dist:5,tools
 # and set {BUILD,INSTALL}_WRKSRC.
-# Instead, we run qmake from src/${PORTNAME} but need to copy .qmake.conf to
+# Instead, we run qmake qt-dist:5,tools from src/${PORTNAME} but need to copy .qmake qt-dist:5,tools.conf to
 # it for all required variables to be set (MODULE_VERSION etc).
 post-patch:
 	${CP} ${WRKSRC}/../../.qmake.conf ${WRKSRC}

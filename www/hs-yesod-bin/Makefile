@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-yesod-bin/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/www/hs-yesod-bin/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	yesod-bin
 PORTVERSION=	1.5.2.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng314/Makefile 463451 2018-03-02 22:31:38Z cy $
+# $FreeBSD: head/sysutils/syslog-ng314/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.14.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 DISTFILES=	syslog-ng-${DISTVERSION}.tar.gz
 MASTER_SITES=	https://github.com/balabit/syslog-ng/releases/download/syslog-ng-${DISTVERSION}/

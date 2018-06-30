@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/hydrogen/Makefile 459301 2018-01-18 00:22:33Z jbeich $
+# $FreeBSD: head/audio/hydrogen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	hydrogen
 PORTVERSION=	0.9.7
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 USE_GITHUB=	yes
 GH_ACCOUNT=	hydrogen-music
 
-USES=		cmake compiler:c++11-lang desktop-file-utils pkgconfig
-USE_QT4=	qmake_build moc_build rcc_build uic_build corelib \
+USES=		cmake compiler:c++11-lang desktop-file-utils pkgconfig qt:4
+USE_QT=		qmake_build moc_build rcc_build uic_build corelib \
 		gui network xml xmlpatterns
 
 OPTIONS_SINGLE=		EXPORT

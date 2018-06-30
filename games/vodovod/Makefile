@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/vodovod/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/games/vodovod/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	vodovod
 PORTVERSION=	1.10
@@ -11,7 +11,7 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}-src${EXTRACT_SUFX} \
 		${PORTNAME}.png:icons
 EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}-src${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross-platform pipe connecting action puzzle game
 
 LICENSE=	GPLv2+

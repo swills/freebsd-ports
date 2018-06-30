@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5-uiplugin/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/x11-toolkits/qt5-uiplugin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	uiplugin
 DISTVERSION=	${QT5_VERSION}
@@ -8,9 +8,8 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Custom Qt widget plugin interface for Qt Designer
 
-USE_QT5=	core gui widgets
-QT_DIST=	tools
-USES=		qmake
+USE_QT=		core gui widgets
+USES=		qmake qt-dist:5,tools
 
 BUILD_WRKSRC=   ${WRKSRC}/src/designer/src/${PORTNAME}
 INSTALL_WRKSRC= ${WRKSRC}/src/designer/src/${PORTNAME}

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/blackshadeselite/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/blackshadeselite/Makefile 473037 2018-06-22 13:00:04Z amdmi3 $
 
 PORTNAME=	blackshadeselite
 PORTVERSION=	0.0.1
@@ -18,9 +18,11 @@ LIB_DEPENDS=	libvorbis.so:audio/libvorbis
 
 USES=		tar:bzip2 gmake openal:al,alut
 USE_SDL=	sdl
-USE_GL=		yes
+USE_GL=		gl glu
 
 MAKE_ARGS=	CC="${CC}" CXX="${CXX}"
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
@@ -40,8 +42,10 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/objs/blackshades ${STAGEDIR}${PREFIX}/bin/
-	cd ${WRKSRC} && ${COPYTREE_SHARE} Data ${STAGEDIR}${DATADIR}/
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+	@cd ${WRKSRC} && ${COPYTREE_SHARE} Data ${STAGEDIR}${DATADIR}/
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for f in ${PORTDOCS}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}
 .endfor

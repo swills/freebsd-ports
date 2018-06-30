@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-regex-pcre/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-regex-pcre/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	regex-pcre
 PORTVERSION=	0.94.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

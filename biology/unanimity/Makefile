@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/unanimity/Makefile 468214 2018-04-24 14:16:46Z jwb $
+# $FreeBSD: head/biology/unanimity/Makefile 473010 2018-06-22 00:03:08Z linimon $
 
 PORTNAME=	unanimity
 DISTVERSION=	g20180307
@@ -9,6 +9,8 @@ COMMENT=	Pacific Biosciences consensus library and applications
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
 # Sensitive to dependency versions, use latest commit for everything
 BUILD_DEPENDS=	pbseqan==g20171002:biology/pbseqan \

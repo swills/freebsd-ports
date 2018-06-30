@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/peg-e/Makefile 471933 2018-06-07 16:39:29Z amdmi3 $
+# $FreeBSD: head/games/peg-e/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	peg-e
 PORTVERSION=	1.2.5
@@ -14,8 +14,8 @@ COMMENT=	Peg elimination game
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		compiler:c++11-lib qmake tar:bzip2
-USE_QT5=	core gui widgets qmake_build buildtools_build linguisttools_build
+USES=		compiler:c++11-lib qmake qt:5 tar:bzip2
+USE_QT=		core gui widgets qmake_build buildtools_build linguisttools_build
 USE_GL=		gl
 INSTALLS_ICONS=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-kinit/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/x11/kf5-kinit/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kinit
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,10 +7,10 @@ CATEGORIES=	x11 kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 process launcher to speed up launching KDE applications
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	completion config coreaddons crash doctools ecm i18n \
 		jobwidgets kio service widgetsaddons windowsystem
-USE_QT5=	buildtools_build core dbus gui network qmake_build widgets
+USE_QT=		buildtools_build core dbus gui network qmake_build widgets
 USE_XORG=	x11 xcb
 
 .include <bsd.port.mk>

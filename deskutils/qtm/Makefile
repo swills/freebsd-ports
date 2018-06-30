@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/deskutils/qtm/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/deskutils/qtm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtm
 PORTVERSION=	1.3.17
@@ -12,8 +12,8 @@ COMMENT=	Blog management application based on Qt 4
 LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake tar:bzip2 ssl
-USE_QT4=	corelib dbus gui network xml \
+USES=		cmake qt:4 tar:bzip2 ssl
+USE_QT=		corelib dbus gui network xml \
 		moc_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DCMAKE_CXX_FLAGS_RELEASE:STRING="-DNDEBUG" \
 		-DMANPAGE_DIRECTORY:STRING="${MANPREFIX}/man/man1" \

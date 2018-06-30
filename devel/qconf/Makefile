@@ -1,5 +1,5 @@
 # Created by: Andreev Maxim <andreevmaxim@gmail.com>
-# $FreeBSD: head/devel/qconf/Makefile 458875 2018-01-12 21:44:43Z swills $
+# $FreeBSD: head/devel/qconf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qconf
 DISTVERSIONPREFIX=	v
@@ -12,10 +12,9 @@ COMMENT=	Tool to create configure script for qmake-based project
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		tar:bzip2
-USE_QT4=	corelib xml moc_build qmake_build rcc_build
+USES=		qmake:no_env qt:4 tar:bzip2
+USE_QT=		corelib xml moc_build qmake_build rcc_build
 HAS_CONFIGURE=	yes
-QT_NONSTANDARD=	yes
 MAKE_ARGS=	INSTALL_ROOT="${STAGEDIR}"
 
 CONFIGURE_ARGS=	--prefix=${PREFIX} \

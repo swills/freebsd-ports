@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-qt3support/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-qt3support/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qt3support
 DISTVERSION=	${QT4_VERSION}
@@ -10,9 +10,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 3 compatibility module
 
-USE_QT4=	qmake_build moc_build corelib gui network sql xml
-QT_DIST=	yes
-USES=		pkgconfig
+USE_QT=		moc_build corelib gui network sql xml
+USES=		pkgconfig qmake:no_env qt-dist:4
 
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

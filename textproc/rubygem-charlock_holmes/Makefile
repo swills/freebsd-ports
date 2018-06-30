@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/rubygem-charlock_holmes/Makefile 472117 2018-06-10 08:08:26Z antoine $
+# $FreeBSD: head/textproc/rubygem-charlock_holmes/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	charlock_holmes
 DISTVERSION=	0.7.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

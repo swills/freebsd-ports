@@ -1,9 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/ports-mgmt/porttree/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/ports-mgmt/porttree/Makefile 473212 2018-06-24 19:26:15Z riggs $
 
 PORTNAME=	porttree
-PORTVERSION=	0.3.r${SVN_REV}
-PORTREVISION=	2
+PORTVERSION=	0.4.r${SVN_REV}
 CATEGORIES=	ports-mgmt python
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -12,7 +11,7 @@ COMMENT=	Show dependences of FreeBSD port as pseudo graphical tree
 
 LICENSE=	MIT
 
-USES=		python:2.7 tar:bzip2 shebangfix
+USES=		python tar:bzip2 shebangfix
 
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}networkx>=1.5:math/py-networkx@${PY_FLAVOR}
 
@@ -20,8 +19,8 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}networkx>=1.5:math/py-networkx@${PY_FLAVOR}
 FETCH_DEPENDS+=	svn:devel/subversion
 .endif
 
-SVNROOT?=	http://porttree.googlecode.com/svn/trunk/
-SVN_REV=	52
+SVNROOT?=	https://svn.code.sf.net/p/porttree/code/trunk
+SVN_REV=	65
 NO_BUILD=	yes
 PLIST_FILES=	bin/porttree man/man1/porttree.1.gz
 NO_ARCH=	yes

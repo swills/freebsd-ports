@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-ReverseProxy/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-ReverseProxy/Makefile 473118 2018-06-23 09:07:19Z amdmi3 $
 
 PORTNAME=	Plack-Middleware-ReverseProxy
 PORTVERSION=	0.15
@@ -10,11 +10,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to support app to run as a reverse proxy backend
 
-RUN_DEPENDS=	\
-	p5-Plack>=0.9988:www/p5-Plack
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
+RUN_DEPENDS=	p5-Plack>=0.9988:www/p5-Plack
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

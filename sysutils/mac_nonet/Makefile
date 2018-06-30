@@ -1,12 +1,12 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/sysutils/mac_nonet/Makefile 471981 2018-06-08 04:32:38Z linimon $
+# $FreeBSD: head/sysutils/mac_nonet/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	mac_nonet
 DISTVERSION=	g20150821
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-kmod
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	MAC policy to disable access to networking for certain group
 
 LICENSE=	BSD2CLAUSE

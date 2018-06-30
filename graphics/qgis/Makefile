@@ -1,10 +1,10 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/graphics/qgis/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/graphics/qgis/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
 DISTVERSION=	2_18_17
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics geography
 
 MAINTAINER=	rhurlin@gwdg.de
@@ -27,11 +27,11 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libxerces-c.so:textproc/xerces-c3
 
 USES=		bison cmake compiler:features cpe desktop-file-utils \
-		fortran gmake pyqt:4 python:2.7 sqlite:3
+		fortran gmake pyqt:4 python:2.7 qt:4 sqlite:3
 USE_GITHUB=	yes
 GH_PROJECT=	${PORTNAME:tu}
 USE_PYQT=	core gui network qscintilla2 sip sql svg xml webkit_run
-USE_QT4=	corelib designer doc gui linguist_build moc_build \
+USE_QT=		corelib designer doc gui linguist_build moc_build \
 		network qmake_build rcc_build script sql sql-pgsql \
 		sql-sqlite3 svg testlib uic_build webkit xml
 USE_LDCONFIG=	yes

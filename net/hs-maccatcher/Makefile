@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-maccatcher/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/net/hs-maccatcher/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	maccatcher
 PORTVERSION=	2.1.5
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

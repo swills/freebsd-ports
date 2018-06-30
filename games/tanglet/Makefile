@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/tanglet/Makefile 463678 2018-03-06 00:58:23Z jhale $
+# $FreeBSD: head/games/tanglet/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tanglet
 PORTVERSION=	1.5.1
@@ -14,9 +14,9 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake \
-		shared-mime-info tar:bzip2
+		qt:5 shared-mime-info tar:bzip2
 USE_GL=		gl
-USE_QT5=	buildtools_build linguisttools_build core gui widgets
+USE_QT=		buildtools_build linguisttools_build core gui widgets
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-oslo.utils/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-oslo.utils/Makefile 473238 2018-06-24 20:17:40Z sunpoet $
 
 PORTNAME=	oslo.utils
-PORTVERSION=	3.36.2
+PORTVERSION=	3.36.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

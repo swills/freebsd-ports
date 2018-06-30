@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kmbox/Makefile 467007 2018-04-10 19:09:05Z tcberner $
+# $FreeBSD: head/net/kmbox/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kmbox
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,11 +9,11 @@ COMMENT=	KDE library for accessing mail storages in MBox format
 
 LICENSE=	LGPL21
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm
 # pim components
 USE_KDE+=	mime
-USE_QT5=	core gui \
+USE_QT=		core gui \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

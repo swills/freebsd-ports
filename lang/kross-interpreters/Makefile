@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/kross-interpreters/Makefile 466868 2018-04-09 16:54:36Z tcberner $
+# $FreeBSD: head/lang/kross-interpreters/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kross-interpreters
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,9 +7,9 @@ CATEGORIES=	lang kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Language interpreters to enable in-process scripting with Kross
 
-USES=		cmake:outsource gettext kde:5 python:2.7 tar:xz
+USES=		cmake:outsource gettext kde:5 python:2.7 qt:5 tar:xz
 USE_KDE=	ecm kross
-USE_QT5=	core gui script widgets xml \
+USE_QT=		core gui script widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=		RUBY

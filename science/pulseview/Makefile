@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/pulseview/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/science/pulseview/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pulseview
 PORTVERSION=	0.4.0
@@ -17,9 +17,9 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libsigrok.so:devel/libsigrok \
 		libsigrokdecode.so:devel/libsigrokdecode
 
-USES=		cmake desktop-file-utils pkgconfig
+USES=		cmake desktop-file-utils pkgconfig qt:5
 USE_GNOME=	glibmm glib20 libsigc++20
-USE_QT5=	buildtools core gui qmake_build svg widgets
+USE_QT=		buildtools core gui qmake_build svg widgets
 CMAKE_ARGS+=	-DCMAKE_INSTALL_MANDIR:PATH=${MANPREFIX}/man \
 		-DDISABLE_WERROR:BOOL=TRUE
 INSTALLS_ICONS=	yes

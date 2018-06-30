@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/vmpk/Makefile 455021 2017-11-28 06:30:27Z yuri $
+# $FreeBSD: head/audio/vmpk/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	vmpk
 DISTVERSION=	0.6.2
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libdrumstick-rt.so:audio/drumstick
 
-USES=		cmake:outsource pkgconfig tar:bz2
-USE_QT5=	core gui network svg widgets x11extras \
+USES=		cmake:outsource pkgconfig qt:5 tar:bz2
+USE_QT=		core gui network svg widgets x11extras \
 		buildtools_build linguisttools_build qmake_build
 USE_XORG=	xcb
 
@@ -26,6 +26,6 @@ OPTIONS_DEFINE=	DBUS
 OPTIONS_SUB=		yes
 
 DBUS_CMAKE_BOOL=	ENABLE_DBUS
-DBUS_USE=	qt5=dbus
+DBUS_USE=	qt=dbus
 
 .include <bsd.port.mk>

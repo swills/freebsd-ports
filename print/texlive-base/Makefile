@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/texlive-base/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/print/texlive-base/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	texlive
 PORTVERSION=	20150521
-PORTREVISION=	26
+PORTREVISION=	27
 CATEGORIES=	print
 MASTER_SITES=	TEX_CTAN/systems/texlive/Source/
 PKGNAMESUFFIX=	-base

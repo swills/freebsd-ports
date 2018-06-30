@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/pcbsd-syscache/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/sysutils/pcbsd-syscache/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pcbsd-syscache
 PORTVERSION=	1439494375
@@ -11,8 +11,8 @@ COMMENT=	PC-BSD SysCache Utility
 LICENSE=	BSD3CLAUSE
 
 WRKSRC_SUBDIR=	src-sh/syscache
-USE_QT5=	core network buildtools qmake
-USES=		pkgconfig
+USE_QT=		core network buildtools qmake
+USES=		pkgconfig qt:5
 NO_BUILD=	yes
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 

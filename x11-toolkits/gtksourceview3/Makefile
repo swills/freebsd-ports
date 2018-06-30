@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 473001 2018-06-21 20:29:22Z kwm $
 
 PORTNAME=	gtksourceview
-PORTVERSION=	3.24.7
+PORTVERSION=	3.24.8
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	3
@@ -20,6 +20,7 @@ PORTSCOUT=	limitw:1,even
 .if !defined(REFERENCE_PORT)
 
 BUILD_DEPENDS=	vala:lang/vala
+LIB_DEPENDS=	libfribidi.so:converters/fribidi
 
 USES+=		compiler:c11 gettext gmake gnome libtool pathfix pkgconfig
 USE_CSTD=	c11

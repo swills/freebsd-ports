@@ -1,9 +1,9 @@
 # Created by: Torsten Blum <torstenb@FreeBSD.org>
-# $FreeBSD: head/mail/postfix-current/Makefile 471365 2018-06-02 11:39:24Z ohauer $
+# $FreeBSD: head/mail/postfix-current/Makefile 473551 2018-06-29 14:22:11Z jbeich $
 
 PORTNAME=	postfix
-DISTVERSION=	3.4-20180520
-PORTREVISION?=	0
+DISTVERSION=	3.4-20180624
+PORTREVISION?=	1
 PORTEPOCH=	5
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/ \
@@ -106,7 +106,7 @@ PLIST_SUB+=	BMAN=""
 PLIST_SUB+=	PFETC=${ETCDIR}
 
 # check if mailwrapper supports $LOCALBASE
-.if ${OPSYS} == FreeBSD && (${OSVERSION} >= 1002506 || ${OSVERSION} >= 1100094)
+.if ${OPSYS} == FreeBSD
 SUB_LIST+=	USE_LOCALBASE_MAILER_CONF="yes" MC_PREFIX="${LOCALBASE}"
 .else
 SUB_LIST+=	USE_LOCALBASE_MAILER_CONF="no" MC_PREFIX=""

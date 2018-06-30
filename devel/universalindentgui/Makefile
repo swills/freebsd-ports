@@ -1,5 +1,5 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/devel/universalindentgui/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/universalindentgui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	universalindentgui
 PORTVERSION=	1.2.0
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.GPL
 
 LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 
-USES=		dos2unix qmake python:run shebangfix
+USES=		dos2unix qmake python:run qt:4 shebangfix
 SHEBANG_FILES=	indenters/*.py indenters/*.rb
-USE_QT4=	corelib moc_build uic_build rcc_build \
+USE_QT=		corelib moc_build uic_build rcc_build \
 		linguist_build network script gui
 
 DESKTOP_ENTRIES="UniversalIndentGUI" "${COMMENT}" "" "${PORTNAME}" "" true

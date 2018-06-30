@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/tarsnap-gui/Makefile 472053 2018-06-09 14:01:51Z swills $
+# $FreeBSD: head/sysutils/tarsnap-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tarsnap-gui
 PORTVERSION=	1.0.1
@@ -11,8 +11,8 @@ COMMENT=	Cross platform GUI for the Tarsnap command line client
 USE_GITHUB=	yes
 GH_ACCOUNT=	Tarsnap
 
-USES=		compiler:c++11-lib qmake
-USE_QT5=	buildtools_build core gui network qmake_build sql sql-sqlite3 widgets
+USES=		compiler:c++11-lib qmake qt:5
+USE_QT=		buildtools_build core gui network qmake_build sql sql-sqlite3 widgets
 USE_GL=		gl
 
 PLIST_FILES=	bin/tarsnap-gui

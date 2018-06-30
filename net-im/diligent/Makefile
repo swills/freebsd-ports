@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/net-im/diligent/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-im/diligent/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	diligent
 PORTVERSION=	0.2.7
@@ -13,10 +13,10 @@ COMMENT=	Unofficial Qt Slack client
 LICENSE=	LGPL3
 
 USE_LDCONFIG=	yes
-USE_QT5=	core gui linguist network svg \
+USE_QT=		core gui linguist network svg \
 		webkit widgets x11extras buildtools_build
 USE_GL=		gl
-USES=		compiler:c++11-lang qmake
+USES=		compiler:c++11-lang qmake qt:5
 
 QMAKE_ARGS=	CONFIG+="configure"
 

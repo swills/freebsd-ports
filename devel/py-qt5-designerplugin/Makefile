@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-designerplugin/Makefile 460949 2018-02-04 20:56:45Z rakuco $
+# $FreeBSD: head/devel/py-qt5-designerplugin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	designerplugin
 PORTREVISION=	1
@@ -14,11 +14,11 @@ DESTDIRNAME=	INSTALL_ROOT
 CONFIGURE_ARGS=	--enable QtDesigner
 PYQT_DIST=	yes
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	sip_build
 USE_PYTHON=	flavors
-USE_QT5=	core designer gui xml widgets \
+USE_QT=		core designer gui xml widgets \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=		DEBUG

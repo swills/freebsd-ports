@@ -1,9 +1,9 @@
 # Created by: Dario Freni <saturnero@gufi.org>
-# $FreeBSD: head/mail/proxsmtp/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/mail/proxsmtp/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	proxsmtp
 PORTVERSION=	1.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail security
 MASTER_SITES=	http://thewalter.net/stef/software/proxsmtp/ \
 		ZI

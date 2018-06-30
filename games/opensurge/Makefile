@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/opensurge/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/opensurge/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	opensurge
 PORTVERSION=	0.1.r${SVN_REV}
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.ime.usp.br/~alemart/opensurge_nightly/ \
 DISTFILES=	${PORTNAME}-src-build${SVN_REV}${EXTRACT_SUFX} \
 		${PORTNAME}-mods-${MODS_VER}${EXTRACT_SUFX}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Game based on the Sonic the Hedgehog universe
 
 LICENSE=	GPLv2+ CC-BY-SA-3.0

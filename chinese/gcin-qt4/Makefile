@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/chinese/gcin-qt4/Makefile 470554 2018-05-21 15:36:12Z vanilla $
+# $FreeBSD: head/chinese/gcin-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gcin
 PORTVERSION=	2.8.6
@@ -16,8 +16,8 @@ LICENSE=	LGPL21
 LIB_DEPENDS=	libgcin-im-client.so:chinese/gcin
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/qt4-im
-USES=		gmake pkgconfig tar:xz
-USE_QT4=	inputmethods qmake_build moc_build corelib gui
+USES=		gmake pkgconfig qt:4 tar:xz
+USE_QT=		inputmethods qmake_build moc_build corelib gui
 MAKE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		MKDIR="${MKDIR}"
 

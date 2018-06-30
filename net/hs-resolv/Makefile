@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/hs-resolv/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/net/hs-resolv/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	resolv
 PORTVERSION=	0.1.1.1
+PORTREVISION=	1
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

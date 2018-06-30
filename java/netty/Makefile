@@ -1,5 +1,5 @@
 # Created by: Mikhail T. <michael@fun-box.ru>
-# $FreeBSD: head/java/netty/Makefile 440542 2017-05-10 07:06:58Z sunpoet $
+# $FreeBSD: head/java/netty/Makefile 473019 2018-06-22 08:04:38Z yuri $
 
 PORTNAME=	netty
 PORTVERSION=	3.10.6
@@ -7,7 +7,7 @@ DISTVERSIONSUFFIX=	.Final-dist
 CATEGORIES=	java devel
 MASTER_SITES=	http://dl.bintray.com/netty/downloads/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Java NIO client server framework
 
 LICENSE=	APACHE20

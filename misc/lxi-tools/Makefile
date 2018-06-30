@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/lxi-tools/Makefile 469257 2018-05-06 23:19:52Z yuri $
+# $FreeBSD: head/misc/lxi-tools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	lxi-tools
 DISTVERSIONPREFIX=	v
@@ -31,10 +31,10 @@ PLIST_FILES=	bin/lxi \
 
 OPTIONS_DEFINE=	DOCS GUI
 
-GUI_USE=		qt5=core,gui,charts,widgets,buildtools_build,qmake_build gl=gl
+GUI_USES=		qmake:no_env qt:5
+GUI_USE=		qt=core,gui,charts,widgets,buildtools_build,qmake_build gl=gl
 GUI_CONFIGURE_ENABLE=	lxi-gui
 GUI_CONFIGURE_ENV+=	LDFLAGS="${LDFLAGS} -L${QT_LIBDIR}"
-GUI_VARS=		QT_NONSTANDARD=yes
 GUI_PLIST_FILES=	bin/lxi-gui
 
 post-patch:

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/stormbaancoureur/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/stormbaancoureur/Makefile 473074 2018-06-22 21:04:21Z amdmi3 $
 
 PORTNAME=	stormbaancoureur
 PORTVERSION=	2.1.6
@@ -11,12 +11,16 @@ MASTER_SITES=	http://www.stolk.org/stormbaancoureur/download/ \
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Simulated obstacle course for automobiles
 
+LICENSE=	GPLv3
+
 BUILD_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \
 		${LOCALBASE}/lib/libode.a:devel/ode
 
-USE_GL=		glut
+USE_GL=		gl glu glut
 
 MAKE_ENV=	DATADIR="${DATADIR}"
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 BUILD_WRKSRC=	${WRKSRC}/src-stormbaancoureur
 INSTALL_WRKSRC=	${WRKSRC}/src-stormbaancoureur

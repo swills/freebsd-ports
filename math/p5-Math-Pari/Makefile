@@ -1,5 +1,5 @@
 # Created by: Michael Haro <mharo@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Pari/Makefile 472176 2018-06-11 09:04:30Z amdmi3 $
+# $FreeBSD: head/math/p5-Math-Pari/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	Math-Pari
 PORTVERSION=	2.01080900
@@ -16,6 +16,8 @@ COMMENT=	PARI - numerical/scientific/number-theoretic calculations
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+
+BROKEN_aarch64=		fails to link: mp.c:(function pari_kernel_init): can't create dynamic relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol 'gpmalloc' defined in init.o
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 

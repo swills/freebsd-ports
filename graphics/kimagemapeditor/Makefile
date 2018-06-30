@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kimagemapeditor/Makefile 466806 2018-04-08 17:01:54Z tcberner $
+# $FreeBSD: head/graphics/kimagemapeditor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kimagemapeditor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -8,13 +8,13 @@ PKGNAMESUFFIX=	# hack: uses kde:4 but we don't want the pkgname suffix
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE generator of HTML image maps
 
-USES=		cmake:outsource kde:5 tar:xz
+USES=		cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash guiaddons i18n iconthemes itemviews \
 		jobwidgets js kdelibs4support khtml kio notifications \
 		parts service solid sonnet textwidgets unitconversion \
 		widgetsaddons windowsystem xmlgui
-USE_QT5=	core dbus gui network printsupport widgets xml \
+USE_QT=		core dbus gui network printsupport widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

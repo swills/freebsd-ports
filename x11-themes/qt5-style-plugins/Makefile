@@ -1,9 +1,9 @@
 # Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/x11-themes/qt5-style-plugins/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-themes/qt5-style-plugins/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qt5-style-plugins
 PORTVERSION=	5.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-themes
 MASTER_SITES=	QT/community_releases/additional_qt_src_pkgs/
 DISTNAME=	qtstyleplugins-src-${PORTVERSION}
@@ -14,8 +14,8 @@ COMMENT=	Additional Styles for Qt 5 and KDE
 
 LICENSE=	LGPL21
 
-USES=		qmake
-USE_QT5=	buildtools_build core gui widgets
+USES=		qmake qt:5
+USE_QT=		buildtools_build core gui widgets
 USE_GL+=	gl
 
 WRKSRC=		${WRKDIR}/qtstyleplugins-src-${PORTVERSION}

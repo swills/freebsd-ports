@@ -1,30 +1,28 @@
 # Created by: Hiroto Kagotani <hiroto.kagotani@gmail.com>
-# $FreeBSD: head/japanese/libskk/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/libskk/Makefile 473143 2018-06-23 17:11:11Z yuri $
 
 PORTNAME=	libskk
-PORTVERSION=	1.0.1
-PORTREVISION=	2
+DISTVERSION=	1.0.3
 CATEGORIES=	japanese
-MASTER_SITES=	https://bitbucket.org/libskk/libskk/downloads/
 
 MAINTAINER=	hiroto.kagotani@gmail.com
 COMMENT=	Library to deal with Japanese Kana-to-Kanji conversion method
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	valac:lang/vala \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser
-LIB_DEPENDS=	libgee.so:devel/libgee06 \
+LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 		libjson-glib-1.0.so:devel/json-glib
 
+USES=		autoreconf gmake libtool pathfix pkgconfig
+USE_GITHUB=	yes
+GH_ACCOUNT=	ueno
 GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
-USES=		gmake libtool pathfix pkgconfig
 USE_GNOME=	intlhack introspection:build
 USE_LDCONFIG=	yes
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 PORTDOCS=	ChangeLog NEWS README
 
@@ -35,7 +33,7 @@ NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=	gettext
 NLS_USES_OFF=	gettext-tools
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

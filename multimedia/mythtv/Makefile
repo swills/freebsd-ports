@@ -1,5 +1,5 @@
 # Created by: Stacey Son <mythdev@son.org>, Ari Maniatis <ari@ish.com.au>
-# $FreeBSD: head/multimedia/mythtv/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/multimedia/mythtv/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mythtv
 DISTVERSIONPREFIX=	v
@@ -27,15 +27,14 @@ LIB_DEPENDS=	libmp3lame.so:audio/lame \
 		libxml2.so:textproc/libxml2
 BUILD_DEPENDS=	yasm:devel/yasm
 
-USES=		gmake iconv libtool pkgconfig pathfix ssl
+USES=		gmake iconv libtool pkgconfig pathfix qmake:no_env qt:5 ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	MythTV
 USE_GL=		gl
 USE_LDCONFIG=	yes
-USE_QT5=	buildtools_build core dbus gui imageformats_run \
+USE_QT=		buildtools_build core dbus gui imageformats_run \
 		linguist_build network opengl qmake_build script sql \
 		sql-mysql_run webkit widgets xml
-QT_NONSTANDARD=	yes
 USE_XORG=	x11 xv xrandr xxf86vm xinerama xext xcb
 
 HAS_CONFIGURE=	yes

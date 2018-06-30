@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-help/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/py-qt5-help/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	help
 PORTREVISION=	6
@@ -10,11 +10,11 @@ COMMENT=	Python bindings for the Qt5 toolkit, QtHelp module
 CONFIGURE_ARGS=	--enable QtHelp
 PYQT_DIST=	yes
 
-USES=		python pyqt:5
+USES=		python pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run widgets_run
 USE_PYTHON=	flavors
-USE_QT5=	core gui widgets help network sql buildtools_build qmake_build xml 
+USE_QT=		core gui widgets help network sql buildtools_build qmake_build xml 
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

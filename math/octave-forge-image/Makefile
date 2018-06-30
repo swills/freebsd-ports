@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-image/Makefile 468999 2018-05-03 23:42:35Z stephen $
+# $FreeBSD: head/math/octave-forge-image/Makefile 473150 2018-06-23 19:01:49Z stephen $
 
 PORTNAME=	octave-forge-image
-PORTVERSION=	2.6.2
-PORTREVISION=	2
+PORTVERSION=	2.8.0
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -14,16 +13,15 @@ LICENSE_NAME=	Many different licenses
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BROKEN=		does not build with octave 4.4.0
-
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
 OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
 
-USES=		compiler:c++0x
+USES=		compiler:c++14-lang
 GNU_CONFIGURE=	yes
+CXXFLAGS+=	-fPIC
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11/tilda/Makefile 455702 2017-12-07 09:46:41Z rodrigo $
+# $FreeBSD: head/x11/tilda/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	tilda
 PORTVERSION=	1.3.3
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	rodrigo@FreeBSD.org

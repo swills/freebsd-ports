@@ -1,5 +1,5 @@
 # Created by: Toni Gundogdu <legatvs@gmail.com>
-# $FreeBSD: head/multimedia/abby/Makefile 436542 2017-03-20 13:23:17Z amdmi3 $
+# $FreeBSD: head/multimedia/abby/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	abby
 PORTVERSION=	0.4.8
@@ -13,8 +13,8 @@ COMMENT=	Front-end for c/clive
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake tar:bzip2
-USE_QT4=	gui network xml moc_build rcc_build uic_build
+USES=		qmake qt:4 tar:bzip2
+USE_QT=		gui network xml moc_build rcc_build uic_build
 
 PLIST_FILES=	bin/abby
 

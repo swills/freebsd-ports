@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kdeedu-data/Makefile 466828 2018-04-08 19:06:31Z tcberner $
+# $FreeBSD: head/misc/kdeedu-data/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdeedu-data
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,9 +7,9 @@ CATEGORIES=	misc kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE edu data files
 
-USES=		cmake:outsource kde:5 tar:xz
+USES=		cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT5=	buildtools_build qmake_build
+USE_QT=		buildtools_build qmake_build
 
 # The qmake dependency is only needed so that kf5-e-c-m can query qmake for
 # some installation directories.

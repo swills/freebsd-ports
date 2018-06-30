@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kdeplasma-addons-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/deskutils/kdeplasma-addons-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdeplasma-addons
 PORTVERSION=	${KDE4_VERSION}
@@ -15,10 +15,10 @@ LIB_DEPENDS=	libqalculate.so:math/libqalculate \
 		libqjson.so:devel/qjson@qt4
 CONFLICTS_INSTALL=	plasma-applet-icontasks-0.[89].*
 
-USES=		cmake:outsource eigen:2 kde:4 pkgconfig shared-mime-info tar:xz
+USES=		cmake:outsource eigen:2 kde:4 pkgconfig qt:4 shared-mime-info tar:xz
 USE_KDE=	kdelibs libkexiv2 pimlibs workspace \
 		akonadi attica automoc4 qimageblitz soprano
-USE_QT4=	corelib dbus declarative gui network script sql webkit \
+USE_QT=		corelib dbus declarative gui network script sql webkit \
 		qmake_build moc_build rcc_build uic_build
 USE_XORG=	x11 xrender xtst
 USE_LDCONFIG=	yes

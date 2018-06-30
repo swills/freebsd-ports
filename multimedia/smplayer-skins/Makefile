@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/multimedia/smplayer-skins/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/multimedia/smplayer-skins/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smplayer-skins
 PORTVERSION=	15.2.0
@@ -10,8 +10,8 @@ MASTER_SITES=	SF/smplayer/SMPlayer-skins/${PORTVERSION}
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Skins for SMPlayer (Skinnable GUI)
 
-USES=		tar:bzip2
-USE_QT4=	rcc_build
+USES=		qt:4 tar:bzip2
+USE_QT=		rcc_build
 NO_ARCH=	yes
 
 DATADIR=	${PREFIX}/share/smplayer

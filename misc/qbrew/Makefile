@@ -1,5 +1,5 @@
 # Created by: David Johnson <david@usermode.org>
-# $FreeBSD: head/misc/qbrew/Makefile 334931 2013-11-26 13:27:45Z makc $
+# $FreeBSD: head/misc/qbrew/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qbrew
 PORTVERSION=	0.4.1
@@ -10,8 +10,8 @@ MASTER_SITES=	http://www.usermode.org/code/
 MAINTAINER=	david@usermode.org
 COMMENT=	Homebrewer's recipe calculator
 
-USES=		qmake
-USE_QT4=	moc_build uic_build rcc_build xml gui
+USES=		qmake qt:4
+USE_QT=		moc_build uic_build rcc_build xml gui
 PORTDOCS=	*
 
 QMAKE_ARGS=	CONFIG+="configure"

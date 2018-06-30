@@ -1,9 +1,8 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/japanese/migemo.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/japanese/migemo.el/Makefile 473144 2018-06-23 17:25:30Z nobutaka $
 
 PORTNAME=	migemo.el
-PORTVERSION=	1.9.1
-PORTREVISION=	3
+PORTVERSION=	1.9.1.20160924
 CATEGORIES=	japanese elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
@@ -18,6 +17,7 @@ USES=		emacs
 USE_GITHUB=	yes
 GH_ACCOUNT=	emacs-jp
 GH_PROJECT=	migemo
+GH_TAGNAME=	e4744ef
 
 CONFLICTS=	ja-migemo-emacs
 NO_ARCH=	yes

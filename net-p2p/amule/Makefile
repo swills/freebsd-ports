@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net-p2p/amule/Makefile 467609 2018-04-17 14:21:58Z amdmi3 $
+# $FreeBSD: head/net-p2p/amule/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	amule
 PORTVERSION=	2.3.2
@@ -87,8 +87,8 @@ MMAP_CONFIGURE_ON=	--enable-mmap
 MONOLITHIC_CONFIGURE_OFF=	--disable-monolithic
 
 PLASMAMULE_CONFIGURE_ON=	--enable-plasmamule
-PLASMAMULE_USES=	kde:4
-PLASMAMULE_USE=	KDE=kdelibs QT4=dbus,gui,moc_build
+PLASMAMULE_USES=	kde:4 qt:4
+PLASMAMULE_USE=	KDE=kdelibs QT=dbus,gui,moc_build
 PLASMAMULE_CONFIGURE_ENV= \
 			ac_cv_path_KDE4_CONFIG=${KDE_PREFIX}/bin/kde4-config \
 			KBUILDSYCOCA=${KDE_PREFIX}/bin/kbuildsycoca4 \

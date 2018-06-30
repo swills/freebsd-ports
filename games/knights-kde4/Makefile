@@ -1,5 +1,5 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/games/knights-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/games/knights-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	knights
 PORTVERSION=	2.5.0
@@ -14,9 +14,9 @@ RUN_DEPENDS=	${LOCALBASE}/bin/gnuchess:games/gnuchess
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource kde:4 tar:bzip2
+USES=		cmake:outsource kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4 workspace libkdegames
-USE_QT4=	qmake_build moc_build rcc_build uic_build
+USE_QT=		qmake_build moc_build rcc_build uic_build
 
 OPTIONS_DEFINE=	DOCS NLS
 

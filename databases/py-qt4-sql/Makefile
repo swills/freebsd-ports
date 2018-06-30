@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/databases/py-qt4-sql/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/databases/py-qt4-sql/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	sql
 PORTREVISION=	3
@@ -12,10 +12,10 @@ COMMENT=	Python bindings for the Qt4 toolkit, QtSql module
 CONFIGURE_ARGS=	--enable QtSql
 PYQT_DIST=	yes
 
-USES=		python pyqt:4
+USES=		python pyqt:4 qt:4
 USE_PYQT=	sip_build core_run gui_run
 USE_PYTHON=	flavors
-USE_QT4=	corelib gui sql \
+USE_QT=		corelib gui sql \
 		moc_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

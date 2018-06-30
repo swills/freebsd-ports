@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-assistant-adp/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-assistant-adp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	assistant
 PORTVERSION=	4.6.3
@@ -14,9 +14,9 @@ DIST_SUBDIR=	KDE
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt *.adp-compatible documentation browser
 
-USE_QT4=	moc_build rcc_build uic_build corelib \
+USE_QT=		moc_build rcc_build uic_build corelib \
 		gui network xml doc dbus
-USES=		qmake
+USES=		qmake qt:4
 QMAKE_ARGS=	QT_CONFIG+="dbus" QT_PRODUCT="OpenSource"
 
 ALL_TARGET=	first

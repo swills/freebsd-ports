@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/tsearch_extras/Makefile 468823 2018-05-02 10:50:20Z rm $
+# $FreeBSD: head/databases/tsearch_extras/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	tsearch_extras
 PORTVERSION=	0.3
@@ -10,9 +10,10 @@ COMMENT=	Functions for getting lower-level data about full text search
 LICENSE=	PostgreSQL
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
+USES=		gmake pgsql
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	zulip
-USES=		gmake pgsql
 
 PLIST_FILES=	lib/postgresql/tsearch_extras.so \
 		share/postgresql/extension/tsearch_extras--1.0.sql \

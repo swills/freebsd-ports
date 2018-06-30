@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-im/ramblercontacts/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/net-im/ramblercontacts/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	ramblercontacts
 PORTVERSION=	0.3.2.1030
@@ -13,10 +13,10 @@ COMMENT=	Free, multi-service communication client from Rambler
 
 LICENSE=	GPLv3
 
-USES=		qmake dos2unix
+USES=		qmake dos2unix qt:4
 DOS2UNIX_FILES=	src/config.inc
 USE_XORG=	xscrnsaver
-USE_QT4=	moc_build rcc_build uic_build designer_build \
+USE_QT=		moc_build rcc_build uic_build designer_build \
 		webkit
 USE_LDCONFIG=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kactivitymanagerd/Makefile 472471 2018-06-15 17:41:04Z amdmi3 $
+# $FreeBSD: head/x11/kactivitymanagerd/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kactivitymanagerd
 PORTVERSION=	${KDE4_ACTIVITIES_VERSION}
@@ -11,10 +11,10 @@ DIST_SUBDIR=	KDE/${PORTVERSION}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Activity Manager daemon
 
-USES=		cmake:outsource compiler:c++11-lib kde:4 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs soprano nepomuk-core \
 		kactivities
-USE_QT4=	declarative opengl script sql \
+USE_QT=		declarative opengl script sql \
 		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
 DISTINFO_FILE=	${.CURDIR}/../kactivities/distinfo

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kmime/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/net/kmime/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kmime
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,9 +11,9 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	codecs ecm emoticons i18n init itemmodels itemviews kdelibs4support
-USE_QT5=	core \
+USE_QT=		core \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

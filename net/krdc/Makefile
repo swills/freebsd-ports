@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/krdc/Makefile 467007 2018-04-10 19:09:05Z tcberner $
+# $FreeBSD: head/net/krdc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	krdc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,12 +9,12 @@ COMMENT=	RDP and VNC client for KDE
 
 LIB_DEPENDS=	libvncserver.so:net/libvncserver
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons dnssd doctools ecm i18n iconthemes kcmutils \
 		notifications notifyconfig service wallet widgetsaddons \
 		xmlgui
-USE_QT5=	core dbus gui network widgets xml \
+USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

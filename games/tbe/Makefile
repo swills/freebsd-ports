@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/tbe/Makefile 460706 2018-02-02 15:27:41Z amdmi3 $
+# $FreeBSD: head/games/tbe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	tbe
 PORTVERSION=	0.9.2.1
@@ -18,8 +18,8 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
 USE_GITHUB=	yes
 GH_ACCOUNT=	kaa-ching
 
-USES=		cmake compiler:c++11-lib
-USE_QT4=	corelib gui linguisttools_build moc_build qmake_build rcc_build \
+USES=		cmake compiler:c++11-lib qt:4
+USE_QT=		corelib gui linguisttools_build moc_build qmake_build rcc_build \
 		svg uic_build xml
 
 PORTDOCS=	*

@@ -1,9 +1,9 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/games/pokerth/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/pokerth/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pokerth
 PORTVERSION=	1.1.2
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	SF
 
@@ -23,8 +23,8 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 BUILD_DEPENDS=	${LOCALBASE}/include/libircclient.h:irc/libircclient \
 		protoc:devel/protobuf
 
-USES=		iconv gmake qmake sqlite ssl
-USE_QT4=	gui corelib network sql sql-sqlite3 \
+USES=		iconv gmake qmake qt:4 sqlite ssl
+USE_QT=		gui corelib network sql sql-sqlite3 \
 		moc_build rcc_build uic_build
 USE_SDL=	mixer
 QMAKE_SOURCE_PATH=	pokerth.pro

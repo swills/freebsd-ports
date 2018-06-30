@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 471833 2018-06-06 10:57:19Z tijl $
+# $FreeBSD: head/lang/Makefile 473600 2018-06-30 07:40:20Z dbn $
 #
 
     COMMENT = Programming languages
@@ -74,6 +74,7 @@
     SUBDIR += erlang-runtime18
     SUBDIR += erlang-runtime19
     SUBDIR += erlang-runtime20
+    SUBDIR += erlang-runtime21
     SUBDIR += erlang-wx
     SUBDIR += execline
     SUBDIR += expect
@@ -166,6 +167,12 @@
     SUBDIR += libobjc2
     SUBDIR += librep
     SUBDIR += libstdc++_stldoc_4.2.2
+    SUBDIR += linux-dotnet-cli
+    SUBDIR += linux-dotnet-runtime
+    SUBDIR += linux-dotnet-sdk
+    SUBDIR += linux-dotnet10-runtime
+    SUBDIR += linux-dotnet11-runtime
+    SUBDIR += linux-dotnet11-sdk
     SUBDIR += linux-c6-tcl85
     SUBDIR += linux-c7-tcl85
     SUBDIR += linux-j

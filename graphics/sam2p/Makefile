@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/sam2p/Makefile 456591 2017-12-18 05:03:39Z linimon $
+# $FreeBSD: head/graphics/sam2p/Makefile 473347 2018-06-25 21:09:15Z linimon $
 
 PORTNAME=	sam2p
 PORTVERSION=	0.49.3
@@ -16,9 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	zip:archivers/zip \
 		tif22pnm:graphics/tif22pnm
 
-BROKEN_aarch64=		running make Makedep... error; configure: error: cannot compute depends
-BROKEN_armv6=		running make Makedep... error; configure: error: cannot compute depends
-BROKEN_armv7=		running make Makedep... error; configure: error: cannot compute depends
+BROKEN_FreeBSD_12=	running make Makedep... error; configure: error: cannot compute depends
 
 #USE_GITHUB=	yes
 GH_ACCOUNT=	pts

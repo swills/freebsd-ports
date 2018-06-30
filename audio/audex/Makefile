@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/audex/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/audio/audex/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	audex
 PORTVERSION=	0.79
@@ -13,9 +13,9 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	libcdda_paranoia.so:audio/cdparanoia
 
-USES=		tar:xz cmake kde:4
+USES=		qt:4 tar:xz cmake kde:4
 USE_KDE=	automoc4 kdelibs libkcddb libkcompactdisc
-USE_QT4=	gui dbus network svg xml \
+USE_QT=		gui dbus network svg xml \
 		qmake_build moc_build rcc_build uic_build
 # Too many changes for suffix on literals without a space.
 USE_CXXSTD=	gnu++98

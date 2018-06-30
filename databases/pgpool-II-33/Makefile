@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pgpool-II-33/Makefile 470211 2018-05-17 09:32:04Z tz $
+# $FreeBSD: head/databases/pgpool-II-33/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pgpool-II
 PORTVERSION=	3.3.20
@@ -19,6 +19,7 @@ EXPIRATION_DATE=	2018-07-31
 RUN_DEPENDS=	rsync:net/rsync
 
 USES=		gmake libtool perl5 pgsql
+LLD_UNSAFE=	yes
 WANT_PGSQL=	client
 USE_PERL5=	run
 GNU_CONFIGURE=	yes

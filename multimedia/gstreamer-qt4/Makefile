@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-qt4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gstreamer
 PORTVERSION=	0.10.3
@@ -17,12 +17,12 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		bison cmake:noninja gmake kde:4 pathfix pkgconfig tar:bzip2
+USES=		bison cmake:noninja gmake kde:4 pathfix pkgconfig qt:4 tar:bzip2
 USE_LDCONFIG=	yes
 USE_GSTREAMER=	yes
 USE_GNOME=	glib20
 USE_KDE=	automoc4
-USE_QT4=	corelib gui opengl declarative \
+USE_QT=		corelib gui opengl declarative \
 		qmake_build moc_build rcc_build uic_build qtestlib_build
 
 PLIST_SUB=	VERSION="${PORTVERSION}" GST_VERSION="${GST_VERSION}"

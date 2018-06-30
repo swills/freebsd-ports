@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/polyphone/Makefile 458713 2018-01-11 07:16:42Z yuri $
+# $FreeBSD: head/audio/polyphone/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	polyphone
 DISTVERSION=	1.8
@@ -19,9 +19,9 @@ LIB_DEPENDS=	libjack.so:audio/jack \
 		libstk-4.6.0.so:audio/stk \
 		libvorbisfile.so:audio/libvorbis
 
-USES=		compiler:c++11-lang desktop-file-utils pkgconfig qmake:outsource shared-mime-info zip
+USES=		compiler:c++11-lang desktop-file-utils pkgconfig qmake:outsource qt:5 shared-mime-info zip
 USE_GL=		gl
-USE_QT5=	core concurrent gui network printsupport svg widgets buildtools_build qmake_build
+USE_QT=		core concurrent gui network printsupport svg widgets buildtools_build qmake_build
 USE_CXXSTD=	c++11
 QMAKE_ARGS=	DEFINES=USE_LOCAL_QCUSTOMPLOT
 CXXFLAGS+=	-D__UNIX_JACK__

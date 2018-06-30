@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdesvn/Makefile 470571 2018-05-21 19:02:23Z arrowd $
+# $FreeBSD: head/devel/kdesvn/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdesvn
 DISTVERSION=	2.0.0
@@ -20,12 +20,12 @@ LIB_DEPENDS=	libapr-1.so:devel/apr1 \
 CONFLICTS_INSTALL=	kdesvn-kde4 \
 			qsvn-[0-9]*
 
-USES=		bdb cmake:outsource kde:5 tar:xz
+USES=		bdb cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons dbusaddons ecm i18n iconthemes itemviews jobwidgets \
 		kio notifications parts service sonnet texteditor textwidgets \
 		wallet widgetsaddons xmlgui
-USE_QT5=	concurrent core dbus gui network sql widgets xml \
+USE_QT=		concurrent core dbus gui network sql widgets xml \
 		buildtools_build qmake_build
 
 post-patch:

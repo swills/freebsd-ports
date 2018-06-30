@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/games/chromium-bsu/Makefile 466340 2018-04-03 12:09:36Z amdmi3 $
+# $FreeBSD: head/games/chromium-bsu/Makefile 473443 2018-06-27 14:40:51Z amdmi3 $
 
 PORTNAME=	chromium-bsu
 PORTVERSION=	0.9.16.1
@@ -25,6 +25,7 @@ CONFIGURE_ARGS=	--disable-sdl \
 		--disable-ftgl \
 		--disable-glut \
 		--disable-glpng
+LLD_UNSAFE=	yes
 
 INSTALLS_ICONS=	yes
 

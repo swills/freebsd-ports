@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/tblis/Makefile 459245 2018-01-17 13:15:36Z jmd $
+# $FreeBSD: head/math/tblis/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	tblis
 PORTVERSION=	1.1.2
@@ -12,6 +12,8 @@ COMMENT=	Framework for performing tensor operations
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_aarch64=		fails to compile: include_configs.hpp:2:10: fatal error: 'configs/armv7a/config.hpp' file not found
+BROKEN_armv6=		fails to compile: include_configs.hpp:2:10: fatal error: 'configs/armv7a/config.hpp' file not found
 NOT_FOR_ARCHS=	i386
 NOT_FOR_ARCHS_REASON=	i386 requires SSE
 
@@ -19,11 +21,11 @@ OPTIONS_DEFINE=	PARA
 PARA_DESC=	use pthread parallelization
 OPTIONS_DEFAULT=	PARA
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	devinamatthews
-
 USES=		gmake libtool
 USE_LDCONFIG=	yes
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	devinamatthews
 
 HAS_CONFIGURE=	yes
 

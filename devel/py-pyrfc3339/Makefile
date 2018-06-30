@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pyrfc3339/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pyrfc3339/Makefile 473242 2018-06-24 20:18:03Z sunpoet $
 
 PORTNAME=	pyrfc3339
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

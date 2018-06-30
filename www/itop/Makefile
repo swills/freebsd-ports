@@ -1,10 +1,10 @@
-# $FreeBSD: head/www/itop/Makefile 462662 2018-02-23 02:48:44Z yuri $
+# $FreeBSD: head/www/itop/Makefile 473507 2018-06-28 20:22:02Z swills $
 
 PORTNAME=	itop
-PORTVERSION=	2.3.1
+PORTVERSION=	2.4.1
 CATEGORIES=	www
 MASTER_SITES=	SF
-DISTNAME=	iTop-${PORTVERSION}-2832
+DISTNAME=	iTop-${PORTVERSION}-3714
 
 MAINTAINER=	neel@neelc.org
 COMMENT=	Simple, web based IT Service Management tool

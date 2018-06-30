@@ -1,8 +1,8 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/net/openvswitch/Makefile 467222 2018-04-13 09:25:42Z pizzamig $
+# $FreeBSD: head/net/openvswitch/Makefile 472988 2018-06-21 17:38:29Z swills $
 
 PORTNAME=	openvswitch
-PORTVERSION=	2.9.0
+PORTVERSION=	2.9.2
 CATEGORIES=	net
 MASTER_SITES=	http://openvswitch.org/releases/
 

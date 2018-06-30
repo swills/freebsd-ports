@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/games/kcheckers/Makefile 334603 2013-11-22 18:48:41Z makc $
+# $FreeBSD: head/games/kcheckers/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kcheckers
 PORTVERSION=	0.8.1
@@ -10,8 +10,8 @@ MASTER_SITES=	SF/qcheckers/${PORTNAME}/${PORTVERSION}
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Qt version of the classic boardgame checkers
 
-USES=		qmake
-USE_QT4=	corelib gui moc_build rcc_build
+USES=		qmake qt:4
+USE_QT=		corelib gui moc_build rcc_build
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|' ${WRKSRC}/common.h

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/xlife++/Makefile 469772 2018-05-13 05:46:53Z yuri $
+# $FreeBSD: head/math/xlife++/Makefile 473012 2018-06-22 01:15:19Z linimon $
 
 PORTNAME=	xlife++
 DISTVERSION=	2.0.1
@@ -11,6 +11,8 @@ COMMENT=	XLiFE++: eXtended Library of Finite Elements in C++
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN_aarch64=		fails to compile: BlasUtil.h:63:63: no type named 'ReturnType' in 'Eigen::ScalarBinaryOpTraits<__attribute__
 
 USES=		cmake:outsource eigen:3 fortran tar:tbz
 USE_LDCONFIG=	yes

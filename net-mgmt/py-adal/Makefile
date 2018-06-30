@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net-mgmt/py-adal/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-mgmt/py-adal/Makefile 473476 2018-06-27 23:34:31Z sunpoet $
 
 PORTNAME=	adal
-DISTVERSION=	1.0.0
+DISTVERSION=	1.0.2
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,8 +17,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=1.1.0:security/py-cryptography
 		${PYTHON_PKGNAMEPREFIX}pyjwt>=1.0.0:www/py-pyjwt@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR}
 
+NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
-NO_ARCH=	yes
 
 .include <bsd.port.mk>

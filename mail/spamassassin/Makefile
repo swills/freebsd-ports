@@ -1,9 +1,9 @@
 # Created by: Anthony Kim
-# $FreeBSD: head/mail/spamassassin/Makefile 459451 2018-01-19 17:04:52Z mat $
+# $FreeBSD: head/mail/spamassassin/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	spamassassin
 PORTVERSION=	3.4.1
-PORTREVISION?=	11	# also bump japanese/spamassassin
+PORTREVISION?=	12	# also bump japanese/spamassassin
 CATEGORIES?=	mail perl5
 MASTER_SITES=	APACHE/spamassassin/source CPAN/Mail
 DISTNAME=	Mail-SpamAssassin-${PORTVERSION}

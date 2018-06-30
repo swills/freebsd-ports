@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad-devel/Makefile 469678 2018-05-11 17:44:02Z amdmi3 $
+# $FreeBSD: head/cad/openscad-devel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	openscad
 PORTVERSION=	2018.04.19
@@ -27,7 +27,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 CONFLICTS=	openscad
 
 USES=		bison compiler:c++11-lang desktop-file-utils eigen:3 gettext-tools \
-		pkgconfig python:run qmake shebangfix
+		pkgconfig python:run qmake qt:4 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	openscad
 GH_PROJECT=	openscad
@@ -35,7 +35,7 @@ GH_TAGNAME=	179074dff8c23cbc0e651ce8463737df0006f4ca
 
 #SHEBANG_FILES=	libraries/MCAD/get_submodules.py
 USE_GL=		glu glew
-USE_QT4=	corelib gui opengl moc_build uic_build rcc_build
+USE_QT=		corelib gui opengl moc_build uic_build rcc_build
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 QMAKE_ENV=	EIGENDIR=${LOCALBASE}/include/eigen3
 QMAKE_ARGS+=	VERSION=${PORTVERSION} \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-magic/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-magic/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	magic
 PORTVERSION=	1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/twind/Makefile 415452 2016-05-18 14:11:33Z amdmi3 $
+# $FreeBSD: head/games/twind/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	twind
 PORTVERSION=	1.1.0
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	SF
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Match and remove all of the blocks before time runs out
 
 LICENSE=	GPLv2+

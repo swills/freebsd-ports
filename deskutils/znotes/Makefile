@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/deskutils/znotes/Makefile 468608 2018-04-29 07:44:41Z tcberner $
+# $FreeBSD: head/deskutils/znotes/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	znotes
 PORTVERSION=	0.4.5.20150825
@@ -24,9 +24,11 @@ GH_PROJECT=	zNotes
 GH_TAGNAME=	6423c5e
 
 . if ${FLAVOR} == qt4
-USE_QT4=	uic_build moc_build rcc_build linguisttools_build corelib gui network xml
+USES+=		qt:4
+USE_QT=		uic_build moc_build rcc_build linguisttools_build corelib gui network xml
 . else
-USE_QT5=	buildtools_build linguisttools_build core gui network printsupport widgets xml
+USES+=		qt:5
+USE_QT=		buildtools_build linguisttools_build core gui network printsupport widgets xml
 . endif
 
 DESKTOP_ENTRIES="zNotes" "Notes managment" \

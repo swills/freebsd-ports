@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11-themes/kde4-windeco-dekorator/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/x11-themes/kde4-windeco-dekorator/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dekorator
 PORTVERSION=	0.5.1
@@ -16,9 +16,9 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libqimageblitz.so:x11/qimageblitz
 
-USES=		cmake kde:4 tar:bzip2
+USES=		cmake kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4 workspace
-USE_QT4=	corelib qmake_build moc_build rcc_build uic_build
+USE_QT=		corelib qmake_build moc_build rcc_build uic_build
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 .include <bsd.port.mk>

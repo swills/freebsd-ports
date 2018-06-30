@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/plasma5-kinfocenter/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-kinfocenter/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kinfocenter
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Plasma5 utility providing system information
 LIB_DEPENDS=	libpci.so:devel/libpci
 
 USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 pkgconfig \
-		tar:xz
+		qt:5 tar:xz
 USE_GL=		egl gl glu
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons doctools ecm emoticons guiaddons \
@@ -18,7 +18,7 @@ USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		kdelibs4support kio notifications package parts init \
 		itemmodels itemviews service solid sonnet textwidgets \
 		unitconversion wayland wayland widgetsaddons windowsystem xmlgui
-USE_QT5=	concurrent core dbus gui network printsupport widgets xml \
+USE_QT=		concurrent core dbus gui network printsupport widgets xml \
 		buildtools_build qmake_build
 USE_XORG=	ice sm x11 xext
 

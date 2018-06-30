@@ -1,5 +1,5 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/www/wt/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/www/wt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	wt
 PORTVERSION=	3.3.7
@@ -178,7 +178,8 @@ USE_GNOME+=	pango
 .endif
 
 .if ${PORT_OPTIONS:MQT4}
-USE_QT4=	corelib moc_build
+USES+=		qt:4
+USE_QT=		corelib moc_build
 .endif
 
 .if ${PORT_OPTIONS:MOPENGL}

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/security/kqoauth/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/security/kqoauth/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kqoauth
 PORTVERSION=	0.98
@@ -10,8 +10,8 @@ COMMENT=	Implementation of OAuth 1.0 in C++ for Qt
 
 LICENSE=	LGPL21
 
-USES=		pkgconfig qmake
-USE_QT4=	corelib network gui moc_build qtestlib_build
+USES=		pkgconfig qmake qt:4
+USE_QT=		corelib network gui moc_build qtestlib_build
 USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=yes
 QMAKE_SOURCE_PATH=	${PORTNAME}.pro

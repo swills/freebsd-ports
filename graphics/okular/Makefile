@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/okular/Makefile 469738 2018-05-12 16:35:56Z tijl $
+# $FreeBSD: head/graphics/okular/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	okular
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -24,14 +24,14 @@ LIB_DEPENDS=	libchm.so:misc/chmlib \
 		libzip.so:archivers/libzip
 
 USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
-		gettext jpeg kde:5 pkgconfig tar:xz
+		gettext jpeg kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	activities archive auth bookmarks codecs completion config \
 		configwidgets coreaddons dbusaddons ecm emoticons i18n \
 		iconthemes init itemmodels itemviews jobwidgets js \
 		kdelibs4support khtml kio libkexiv2 parts pty \
 		service solid sonnet textwidgets threadweaver wallet \
 		widgetsaddons windowsystem xmlgui
-USE_QT5=	core dbus gui network phonon4 printsupport qml quick speech \
+USE_QT=		core dbus gui network phonon4 printsupport qml quick speech \
 		svg widgets xml \
 		buildtools_build qmake_build
 

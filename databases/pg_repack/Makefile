@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_repack/Makefile 453076 2017-10-28 17:41:34Z olgeni $
+# $FreeBSD: head/databases/pg_repack/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pg_repack
 PORTVERSION=	1.4.2
@@ -7,12 +7,13 @@ DISTVERSIONPREFIX=	ver_
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Reorganize tables in PostgreSQL databases with minimal locks
 
 LICENSE=	BSD3CLAUSE
 
 USES=		gmake pgsql:9.2+
+LLD_UNSAFE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	reorg
 

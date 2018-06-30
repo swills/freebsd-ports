@@ -1,6 +1,7 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/net/remmina-plugin-secret/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
+# $FreeBSD: head/net/remmina-plugin-secret/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-secret
 
 COMMENT=	Remmina plugin for GNOME Keyring

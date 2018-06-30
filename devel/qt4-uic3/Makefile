@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-uic3/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/devel/qt4-uic3/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	uic3
 DISTVERSION=	${QT4_VERSION}
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	qt4-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 3-compatible User Interface Compiler
 
-USE_QT4=	qmake_build qt3support corelib gui network sql xml porting
-QT_DIST=	yes
+USES=		qmake:no_env qt-dist:4
+USE_QT=		qt3support corelib gui network sql xml porting
 
 HAS_CONFIGURE=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/wsjtx/Makefile 472465 2018-06-15 17:26:05Z db $
+# $FreeBSD: head/comms/wsjtx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	wsjtx
 PORTVERSION=	1.9.1
@@ -21,10 +21,10 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 
 MAKE_JOBS_UNSAFE=	yes
 USES=		cmake compiler:c++11-lib dos2unix fortran pkgconfig \
-			readline tar:tgz
+		qt:5 readline tar:tgz
 USE_GL=		yes
-USE_QT5=	core gui buildtools network qmake_build widgets \
-			multimedia concurrent printsupport serialport
+USE_QT=		core gui buildtools network qmake_build widgets \
+		multimedia concurrent printsupport serialport
 CMAKE_ARGS+=	-DPORT_BUILDING::STRING="ON" \
 		-DCMAKE_PREFIX_PATH+=${LOCALBASE}/wsjtx/lib \
 		-DLOCALBASE::STRING="${LOCALBASE}"

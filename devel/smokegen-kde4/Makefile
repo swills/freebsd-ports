@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/smokegen-kde4/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/devel/smokegen-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smokegen
 PORTVERSION=	${KDE4_VERSION}
@@ -7,8 +7,8 @@ CATEGORIES=	devel kde kde-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	SMOKE bindings for KDE
 
-USES=		cmake:outsource kde:4 tar:xz
-USE_QT4=	corelib xml qmake_build moc_build uic_build rcc_build
+USES=		cmake:outsource kde:4 qt:4 tar:xz
+USE_QT=		corelib xml qmake_build moc_build uic_build rcc_build
 CMAKE_ARGS+=	-DSMOKE_CMAKE_MODULE_DIR:PATH=${PREFIX}/lib/cmake/smoke
 USE_LDCONFIG=	yes
 

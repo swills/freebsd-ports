@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mojolicious-Plugin-NYTProf/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Mojolicious-Plugin-NYTProf/Makefile 473539 2018-06-29 10:10:35Z mat $
 
 PORTNAME=	Mojolicious-Plugin-NYTProf
 PORTVERSION=	0.20
@@ -23,8 +23,5 @@ TEST_DEPENDS=	p5-Algorithm-Combinatorics>=0:math/p5-Algorithm-Combinatorics \
 USES=		perl5
 USE_PERL5=	configure
 NO_ARCH=	yes
-
-post-patch:
-	@${RM} ${WRKSRC}/README.pod
 
 .include <bsd.port.mk>

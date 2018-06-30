@@ -1,5 +1,5 @@
- # Created by: Julian H. Stacey <jhs@FreeBSD.org>
-# $FreeBSD: head/lang/pbasic/Makefile 472777 2018-06-19 09:46:11Z pi $
+# Created by: Julian H. Stacey <jhs@FreeBSD.org>
+# $FreeBSD: head/lang/pbasic/Makefile 473183 2018-06-24 06:34:38Z danfe $
 
 PORTNAME=	pbasic
 PORTVERSION=	2.1
@@ -33,4 +33,3 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/docs/basic.1 ${STAGEDIR}${PREFIX}/man/man1/pbasic.1
 
 .include <bsd.port.mk>
-

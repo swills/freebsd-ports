@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/rnd_jue/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/rnd_jue/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
 
 PORTNAME=	rnd_jue
 PORTVERSION=	3.3.0.0
@@ -17,7 +17,7 @@ EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \
 		rocksndiamonds-3.3.1.0${EXTRACT_SUFX} \
 		${PORTNAME}_icons.tar.gz
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Colorful Boulderdash'n'Emerald Mine'n'Sokoban'n'Stuff jue
 
 LICENSE=	GPLv2

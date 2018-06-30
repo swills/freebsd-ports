@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/abgate-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
+# $FreeBSD: head/audio/abgate-lv2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	abGate
 DISTVERSIONPREFIX=	v
@@ -17,11 +17,11 @@ BROKEN_powerpc64=	fails to build: cc1plus: unrecognized command line option -std
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 
-USES=		gmake pkgconfig
+USES=		gmake pkgconfig qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	antanasbruzas
 USE_CXXSTD=	c++11
-USE_QT5=	core gui widgets buildtools_build qmake_build
+USE_QT=		core gui widgets buildtools_build qmake_build
 USE_GL=		gl
 USE_GNOME=	atkmm gtk20 gtkmm24 libsigc++20
 USE_LDCONFIG=	yes

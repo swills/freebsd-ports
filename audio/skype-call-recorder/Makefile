@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/skype-call-recorder/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/skype-call-recorder/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	skype-call-recorder
 PORTVERSION=	0.11
@@ -15,8 +15,8 @@ LIB_DEPENDS=	libmp3lame.so:audio/lame \
 		libid3.so:audio/id3lib \
 		libvorbisenc.so:audio/libvorbis
 
-USES=		cmake
-USE_QT4=	corelib dbus gui network \
+USES=		cmake qt:4
+USE_QT=		corelib dbus gui network \
 		qmake_build moc_build rcc_build uic_build
 
 PLIST_FILES=	bin/skype-call-recorder \

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/databases/pgsphere/Makefile 467082 2018-04-11 19:38:05Z sunpoet $
+# $FreeBSD: head/databases/pgsphere/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pgsphere
 PORTVERSION=	1.1.5
@@ -13,12 +13,13 @@ LICENSE_FILE=	${WRKSRC}/COPYRIGHT.pg_sphere
 
 OPTIONS_DEFINE=	DOCS
 
+USES=		gmake pgsql
+LLD_UNSAFE=	yes
+USE_LDCONFIG=	yes
 MAKE_ARGS=	PG_CONFIG=${LOCALBASE}/bin/pg_config USE_PGXS=1 \
 		docdir=${DOCSDIR} \
 		install_bin=/usr/bin/install
 TEST_TARGET=	installcheck
-USE_LDCONFIG=	yes
-USES=		gmake pgsql
 
 DATADIR=	${PREFIX}/share/postgresql
 DOCSDIR?=	${PREFIX}/share/doc/postgresql

@@ -1,9 +1,9 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/devel/qtscriptgenerator/Makefile 464868 2018-03-18 05:05:37Z linimon $
+# $FreeBSD: head/devel/qtscriptgenerator/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qtscriptgenerator
 PORTVERSION=	0.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	syncer@gmail.com
@@ -20,8 +20,8 @@ OPTIONS_DEFINE=	PHONON
 PHONON_DESC=	Build Phonon support
 OPTIONS_DEFAULT=	PHONON
 
-USES=		gmake qmake
-USE_QT4=	corelib declarative designer doc help help-tools gui \
+USES=		gmake qmake qt:4
+USE_QT=		corelib declarative designer doc help help-tools gui \
 		iconengines imageformats inputmethods linguist network \
 		opengl pixeltool porting qdbusviewer \
 		qt3support qtestlib qvfb script scripttools \
@@ -32,7 +32,7 @@ USE_LDCONFIG=	yes
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPHONON}
-USE_QT4+=	phonon
+USE_QT+=	phonon
 PLIST_SUB+=	PHONON=""
 .else
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-no_phonon

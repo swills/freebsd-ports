@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11-toolkits/termit/Makefile 445874 2017-07-15 13:54:33Z riggs $
+# $FreeBSD: head/x11-toolkits/termit/Makefile 473049 2018-06-22 17:18:45Z danilo $
 
 PORTNAME=	termit
 PORTVERSION=	3.0
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits gnome
 
 MAINTAINER=	bob@eager.cx

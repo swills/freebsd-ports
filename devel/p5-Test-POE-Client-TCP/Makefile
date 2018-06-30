@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-POE-Client-TCP/Makefile 471165 2018-05-30 19:48:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-POE-Client-TCP/Makefile 473265 2018-06-24 20:20:38Z sunpoet $
 
 PORTNAME=	Test-POE-Client-TCP
-PORTVERSION=	1.14
+PORTVERSION=	1.16
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

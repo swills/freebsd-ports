@@ -1,5 +1,5 @@
 # Created by: Amar Takhar <verm@drunkmonk.net>
-# $FreeBSD: head/games/kobodeluxe/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/kobodeluxe/Makefile 473213 2018-06-24 19:30:54Z amdmi3 $
 
 PORTNAME=	kobodeluxe
 PORTVERSION=	0.5.1
@@ -16,6 +16,8 @@ USES=		tar:bzip2
 USE_SDL=	image sdl
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--sharedstatedir=${SCOREDIR} --enable-oss
+
+CXXFLAGS+=	-Wno-reserved-user-defined-literal
 
 SCOREDIR=	/var/games/${PORTNAME}
 
@@ -50,7 +52,9 @@ post-install:
 		${STAGEDIR}${PREFIX}/share/applications/
 	${INSTALL_DATA} ${WRKSRC}/icons/Ubuntu/kobo-icon.xpm \
 		${STAGEDIR}${PREFIX}/share/pixmaps/
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

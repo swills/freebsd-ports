@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/astro/xglobe/Makefile 452628 2017-10-22 09:04:25Z amdmi3 $
+# $FreeBSD: head/astro/xglobe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xglobe
 PORTVERSION=	0.5
@@ -13,8 +13,8 @@ COMMENT=	Displays a view of the Earth (like xearth) with a rendered photo map
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake
-USE_QT4=	corelib gui qt3support moc_build
+USES=		gmake qt:4
+USE_QT=		corelib gui qt3support moc_build
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/mail/rubygem-actionmailer50/Makefile 467000 2018-04-10 18:28:38Z sunpoet $
+# $FreeBSD: head/mail/rubygem-actionmailer50/Makefile 473493 2018-06-28 09:37:17Z amdmi3 $
 
 PORTNAME=	actionmailer
 PORTVERSION=	5.0.7
@@ -21,8 +21,8 @@ RUN_DEPENDS=	rubygem-actionpack50>=${PORTVERSION}:www/rubygem-actionpack50 \
 
 PORTSCOUT=	limit:^5\.0\.
 
+USES=		gem
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pgespresso/Makefile 418911 2016-07-22 07:05:12Z matthew $
+# $FreeBSD: head/databases/pgespresso/Makefile 473169 2018-06-24 00:54:27Z linimon $
 
 PORTNAME=	pgespresso
 PORTVERSION=	1.2
@@ -14,6 +14,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	2ndquadrant-it
 
 USES=		gmake pgsql:9.2+
+LLD_UNSAFE=	yes
 WANT_PGSQL=	server
 
 PLIST_FILES=	lib/postgresql/pgespresso.so				\

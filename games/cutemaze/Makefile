@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/cutemaze/Makefile 462885 2018-02-25 00:10:49Z jhale $
+# $FreeBSD: head/games/cutemaze/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	cutemaze
 PORTVERSION=	1.2.2
@@ -13,9 +13,9 @@ COMMENT=	Simple, top-down game in which mazes are randomly generated
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake tar:bzip2
+USES=		qmake qt:5 tar:bzip2
 USE_GL=		gl
-USE_QT5=	core gui svg imageformats_run widgets \
+USE_QT=		core gui svg imageformats_run widgets \
 		linguisttools_build buildtools_build
 
 PORTDOCS=	ChangeLog NEWS README

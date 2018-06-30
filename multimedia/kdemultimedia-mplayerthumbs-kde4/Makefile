@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/multimedia/kdemultimedia-mplayerthumbs-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/kdemultimedia-mplayerthumbs-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	mplayerthumbs
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia kde kde-kde4
 PKGNAMEPREFIX=	kdemultimedia-
 PKGNAMESUFIFX=	-kde4
@@ -15,8 +15,8 @@ LICENSE=	LGPL21
 
 RUN_DEPENDS=	mplayer:multimedia/mplayer
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	phonon moc_build qmake_build rcc_build uic_build
+USE_QT=		phonon moc_build qmake_build rcc_build uic_build
 
 .include <bsd.port.mk>

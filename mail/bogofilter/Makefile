@@ -1,9 +1,9 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/mail/bogofilter/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/mail/bogofilter/Makefile 473116 2018-06-23 08:27:13Z tcberner $
 
 PORTNAME=	bogofilter
 PORTVERSION=	1.2.4
-PORTREVISION?=	7
+PORTREVISION?=	8
 CATEGORIES?=	mail
 MASTER_SITES=	SF/bogofilter/bogofilter-current/bogofilter-${PORTVERSION}
 

@@ -1,9 +1,10 @@
-# $FreeBSD: head/comms/Makefile 471892 2018-06-07 00:34:18Z rene $
+# $FreeBSD: head/comms/Makefile 473274 2018-06-24 20:28:18Z yuri $
 #
 
     COMMENT = Communication utilities
 
     SUBDIR += acfax
+    SUBDIR += airspy
     SUBDIR += aldo
     SUBDIR += amtterm
     SUBDIR += anyremote

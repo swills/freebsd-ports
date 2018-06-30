@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-qstardict/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-qstardict/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qstardict
 PORTVERSION=	1.0.1
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${QSTARDICT_PLUGIN_PATH}/libstardict.so:textproc/qstardict
 
-USES=		cmake kde:4 tar:bzip2
-USE_QT4=	qmake_build uic_build moc_build rcc_build
+USES=		cmake kde:4 qt:4 tar:bzip2
+USE_QT=		qmake_build uic_build moc_build rcc_build
 USE_KDE=	automoc4 kdelibs
 CMAKE_SOURCE_PATH=	${WRKSRC}/kdeplasma
 

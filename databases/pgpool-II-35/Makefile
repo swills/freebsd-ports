@@ -1,8 +1,8 @@
 # Created by: Choe, Cheng-Dae <whitekid@gmail.com>
-# $FreeBSD: head/databases/pgpool-II-35/Makefile 467707 2018-04-18 12:25:47Z tz $
+# $FreeBSD: head/databases/pgpool-II-35/Makefile 473430 2018-06-27 11:02:14Z tz $
 
 PORTNAME=	pgpool-II
-PORTVERSION=	3.5.14
+PORTVERSION=	3.5.15
 CATEGORIES=	databases
 MASTER_SITES=	http://www.pgpool.net/mediawiki/images/
 PKGNAMESUFFIX=	35

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kdemultimedia/Makefile 468499 2018-04-27 21:47:35Z tcberner $
+# $FreeBSD: head/multimedia/kdemultimedia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdemultimedia
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,8 +7,8 @@ CATEGORIES=	multimedia kde
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Multimedia applications (meta port)
 
-USES=		kde:5 metaport
-USE_QT5=	#
+USES=		kde:5 metaport qt:5
+USE_QT=		#
 
 OPTIONS_DEFINE=		DRAGON FFMPEG AUDIOCD_KIO KMIX
 OPTIONS_DEFAULT=	${OPTIONS_DEFINE}

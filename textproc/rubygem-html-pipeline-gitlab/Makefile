@@ -1,24 +1,25 @@
-# $FreeBSD: head/textproc/rubygem-html-pipeline-gitlab/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-html-pipeline-gitlab/Makefile 473552 2018-06-29 14:56:15Z mfechner $
 
-PORTNAME=	html-pipeline-gitlab
-PORTVERSION=	0.2.0
+PORTNAME=	html-pipeline
+PORTVERSION=	2.7.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
+PKGNAMESUFFIX=	-gitlab
 
-MAINTAINER=	ruby@FreeBSD.org
-COMMENT=	Extension filters for html-pipeline used by GitLab
+MAINTAINER=	mfechner@FreeBSD.org
+COMMENT=	GitHub HTML processing filters and utilities used by GitLab
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-actionpack4>=4:www/rubygem-actionpack4 \
-		rubygem-gitlab_emoji>=0.1:graphics/rubygem-gitlab_emoji \
-		rubygem-html-pipeline>=1.11.0:textproc/rubygem-html-pipeline \
-		rubygem-mime-types>=0:misc/rubygem-mime-types \
-		rubygem-sanitize>=2.1:textproc/rubygem-sanitize
+RUN_DEPENDS=	rubygem-activesupport4>=2:devel/rubygem-activesupport4 \
+		rubygem-nokogiri>=1.4:textproc/rubygem-nokogiri
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
+
+PORTSCOUT=	limit:^2\.7\.1
 
 .include <bsd.port.mk>

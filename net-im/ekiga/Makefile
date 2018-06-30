@@ -1,5 +1,5 @@
 # Created by: Charlie & <root@ws.ipfw.ru>
-# $FreeBSD: head/net-im/ekiga/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/net-im/ekiga/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 #    $MCom: ports/trunk/net-im/ekiga/Makefile 19954 2014-10-15 10:03:57Z kwm $
 
 PORTNAME=	ekiga
@@ -56,8 +56,9 @@ KAB_IMPLIES=	KDE
 PLIST_SUB+=	VERSION=${PORTVERSION}
 
 .if ${PORT_OPTIONS:MKDE} || ${PORT_OPTIONS:MKAB}
+USES+=		qt:4
 USE_KDE=	kdelibs
-USE_QT4=	corelib
+USE_QT=		corelib
 CONFIGURE_ARGS+=--enable-kde
 #CONFIGURE_ENV+=KDE_CFLAGS="-I${KDE_PREFIX}/include -I${QT_INCDIR} \
 #	-I${LOCALBASE}/include" KDE_LIBS="-L${KDE_PREFIX}/lib"

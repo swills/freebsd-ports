@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/apitrace/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/devel/apitrace/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	apitrace
 DISTVERSION=	7.1-455
@@ -24,7 +24,8 @@ OPTIONS_DEFAULT=	QT5
 OPTIONS_SUB=	yes
 
 QT5_CMAKE_BOOL=	ENABLE_GUI
-QT5_USE=	qt5=core,gui,network,widgets,buildtools_build,qmake_build
+QT5_USES=	qt:5
+QT5_USE=	qt=core,gui,network,widgets,buildtools_build,qmake_build
 
 post-install:
 	${RM} ${STAGEDIR}${DOCSDIR}/LICENSE.txt

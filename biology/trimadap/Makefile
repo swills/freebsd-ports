@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/trimadap/Makefile 466367 2018-04-03 18:23:54Z jwb $
+# $FreeBSD: head/biology/trimadap/Makefile 473009 2018-06-21 23:52:37Z linimon $
 
 PORTNAME=	trimadap
 DISTVERSION=	0.1-3
@@ -9,6 +9,10 @@ MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Trim adapter sequences from Illumina data using heuristic rules
 
 LICENSE=	GPLv2
+
+BROKEN_aarch64=		fails to compile: invalid conversion between vector type and integer type
+BROKEN_armv6=		fails to compile: invalid conversion between vector type and integer type
+BROKEN_armv7=		fails to compile: invalid conversion between vector type and integer type
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	lh3

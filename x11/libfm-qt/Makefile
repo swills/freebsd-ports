@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/libfm-qt/Makefile 463477 2018-03-03 09:53:42Z yuri $
+# $FreeBSD: head/x11/libfm-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	libfm-qt
-PORTVERSION=	0.12.0
+PORTVERSION=	0.13.0
 CATEGORIES=	x11
 MASTER_SITES=	LXQT
 
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libfm.so:x11/libfm \
 	libexif.so:graphics/libexif
 
 USES=	cmake:outsource compiler:c++11-lib gettext-runtime lxqt pkgconfig \
-	shared-mime-info tar:xz
-USE_QT5=	buildtools_build qmake_build core gui linguisttools widgets \
+	qt:5 shared-mime-info tar:xz
+USE_QT=		buildtools_build qmake_build core gui linguisttools widgets \
 	x11extras
 USE_GNOME=	glib20
 USE_XORG=	xcb

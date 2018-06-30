@@ -1,9 +1,10 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/comms/gqrx/Makefile 470283 2018-05-18 10:10:44Z martymac $
+# $FreeBSD: head/comms/gqrx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gqrx
 PORTVERSION=	2.11.5
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	comms hamradio
 
@@ -22,15 +23,15 @@ LIB_DEPENDS=	libgnuradio-runtime.so:comms/gnuradio \
 		libgnuradio-pmt.so:comms/gnuradio \
 		libgnuradio-osmosdr.so:comms/gr-osmosdr \
 		libboost_system.so:devel/boost-libs \
-		libboost_program_options.so:devel/boost-libs
+		libboost_program_options.so:devel/boost-libs \
+		liblog4cpp.so:devel/log4cpp
 
-USES=		pkgconfig qmake
+USES=		pkgconfig qmake qt:5
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	csete
-
 USE_GL=		gl
-USE_QT5=	buildtools_build core gui svg network widgets
+USE_QT=		buildtools_build core gui svg network widgets
 
 OPTIONS_RADIO=	AUDIO
 AUDIO_DESC=	Audio backend

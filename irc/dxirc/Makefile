@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/dxirc/Makefile 456111 2017-12-12 09:00:28Z amdmi3 $
+# $FreeBSD: head/irc/dxirc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	dxirc
 PORTVERSION=	1.30.0
@@ -40,12 +40,14 @@ NLS_CMAKE_BOOL=		WITH_NLS
 
 NOTIFY_RUN_DEPENDS=	notify-send:devel/libnotify
 
-QT4_USE=		QT4=corelib,gui,network \
-			QT4=moc_build,rcc_build,uic_build,qmake_build
+QT4_USES=	qt:4
+QT4_USE=		QT=corelib,gui,network \
+			QT=moc_build,rcc_build,uic_build,qmake_build
 QT4_CMAKE_ON=		-DQT5:BOOL=OFF
 
-QT5_USE=		QT5=core,gui,multimedia,network,widgets \
-			QT5=buildtools_build,qmake_build
+QT5_USES=	qt:5
+QT5_USE=		QT=core,gui,multimedia,network,widgets \
+			QT=buildtools_build,qmake_build
 QT5_CMAKE_ON=		-DQT5:BOOL=ON
 
 .include <bsd.port.mk>

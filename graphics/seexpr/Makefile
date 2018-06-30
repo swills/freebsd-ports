@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/seexpr/Makefile 470871 2018-05-25 21:46:30Z antoine $
+# $FreeBSD: head/graphics/seexpr/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	seexpr
 DISTVERSIONPREFIX=	v
@@ -16,9 +16,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	wdas
 GH_PROJECT=	SeExpr
 
-USES=		bison cmake compiler:c++0x pyqt:4 python:2.7
+USES=		bison cmake compiler:c++0x pyqt:4 python qt:4
 USE_PYQT=	gui_build sip_build
-USE_QT4=	moc_build qmake_build rcc_build uic_build gui opengl
+USE_QT=		moc_build qmake_build rcc_build uic_build gui opengl
 BINARY_ALIAS=	sip=sip-${PYTHON_VER}
 
 MAKE_JOBS_UNSAFE=	yes	# https://github.com/wdas/seexpr/issues/40

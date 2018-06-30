@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/multimedia/smtube/Makefile 466255 2018-04-02 19:44:22Z bapt $
+# $FreeBSD: head/multimedia/smtube/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smtube
 PORTVERSION=	18.3.0
@@ -34,11 +34,13 @@ MPV_DESC=	mpv dependency for video playback
 SMPLAYER_DESC=	SMPlayer dependency for video playback
 VLC_DESC=	VLC dependency for video playback
 
-QT4_USE=	qt4=qmake_build,moc_build,rcc_build,uic_build
-QT4_USE+=	qt4=corelib,network,script,gui,webkit,linguisttools_build
+QT4_USES=	qt:4
+QT4_USE=	qt=qmake_build,moc_build,rcc_build,uic_build
+QT4_USE+=	qt=corelib,network,script,gui,webkit,linguisttools_build
 
-QT5_USE=	qt5=qmake_build,buildtools_build,linguisttools_build
-QT5_USE+=	qt5=core,network,script,gui,webkit,widgets gl=gl
+QT5_USES=	qt:5
+QT5_USE=	qt=qmake_build,buildtools_build,linguisttools_build
+QT5_USE+=	qt=core,network,script,gui,webkit,widgets gl=gl
 
 MPLAYER_RUN_DEPENDS=		mplayer:multimedia/mplayer
 MPV_RUN_DEPENDS=		mpv:multimedia/mpv

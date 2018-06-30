@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/edb/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/edb/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	edb
 PORTVERSION=	0.9.18
@@ -14,8 +14,8 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		qmake tar:tgz
-USE_QT4=	gui network xml moc_build rcc_build uic_build
+USES=		qmake qt:4 tar:tgz
+USE_QT=		gui network xml moc_build rcc_build uic_build
 QMAKE_ARGS=	DEFAULT_PLUGIN_PATH="${PREFIX}/libexec/${PORTNAME}"
 
 WRKSRC=		${WRKDIR}/debugger

@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/hs-cmark-gfm/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-cmark-gfm/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	cmark-gfm
 PORTVERSION=	0.1.3
+PORTREVISION=	1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

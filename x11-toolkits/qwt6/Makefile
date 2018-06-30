@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qwt6/Makefile 468381 2018-04-26 20:12:25Z tcberner $
+# $FreeBSD: head/x11-toolkits/qwt6/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qwt
 PORTVERSION=	6.1.3
@@ -25,9 +25,11 @@ PLIST_SUB=	SHLIB_VER=${PORTVERSION} \
 QMAKE_ARGS+=	PLUGINDIR=${PREFIX}/${QT_PLUGINDIR_REL}
 
 .if ${FLAVOR} == qt4
-USE_QT4=	corelib designer gui opengl svg xml moc_build rcc_build script
+USES+=		qt:4
+USE_QT=		corelib designer gui opengl svg xml moc_build rcc_build script
 .else
-USE_QT5=	buildtools_build widgets gui core designer gui opengl svg xml printsupport concurrent
+USES+=		qt:5
+USE_QT=		buildtools_build widgets gui core designer gui opengl svg xml printsupport concurrent
 .endif
 
 OPTIONS_DEFINE=	DOCS

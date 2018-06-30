@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 471210 2018-05-31 14:05:05Z joneum $
+# $FreeBSD: head/mail/Makefile 473186 2018-06-24 07:30:29Z ohauer $
 #
 
     COMMENT = Electronic mail utilities
@@ -522,8 +522,6 @@
     SUBDIR += postfix-policyd-weight
     SUBDIR += postfix-postfwd
     SUBDIR += postfix-sasl
-    SUBDIR += postfix211
-    SUBDIR += postfix211-sasl
     SUBDIR += postfixadmin
     SUBDIR += postgrey
     SUBDIR += postsrsd

@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/toxbot/Makefile 465556 2018-03-26 01:08:25Z yuri $
+# $FreeBSD: head/net-im/toxbot/Makefile 473381 2018-06-26 10:10:03Z thierry $
 
 PORTNAME=	toxbot
 DISTVERSION=	g20180325
+PORTREVISION=	1
 CATEGORIES=	net-im net-p2p
 
 MAINTAINER=	yuri@FreeBSD.org

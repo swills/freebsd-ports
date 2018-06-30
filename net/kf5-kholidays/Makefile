@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kf5-kholidays/Makefile 468380 2018-04-26 19:54:43Z tcberner $
+# $FreeBSD: head/net/kf5-kholidays/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kholidays
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -9,9 +9,9 @@ COMMENT=	KDE library for calendar holidays
 
 LICENSE=	LGPL21
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm emoticons kdelibs4support init itemmodels itemviews
-USE_QT5=	core gui qml buildtools_build qmake_build
+USE_QT=		core gui qml buildtools_build qmake_build
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

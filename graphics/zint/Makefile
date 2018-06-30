@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/graphics/zint/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/graphics/zint/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	zint
 PORTVERSION=	2.4.3
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake
+USES=		cmake qt:4
 USE_LDCONFIG=	yes
-USE_QT4=	gui xml qmake_build uic_build moc_build rcc_build designer
+USE_QT=		gui xml qmake_build uic_build moc_build rcc_build designer
 
 DESKTOP_ENTRIES="Zint" "Barcode generator" "" "zint-qt" "" false
 

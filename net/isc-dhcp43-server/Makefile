@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <rpsfa@rit.edu>
-# $FreeBSD: head/net/isc-dhcp43-server/Makefile 471950 2018-06-07 19:43:39Z zi $
+# $FreeBSD: head/net/isc-dhcp43-server/Makefile 473439 2018-06-27 13:55:56Z mat $
 
 PORTNAME=	dhcp
 ISCVERSION=	4.3.6-P1
@@ -19,9 +19,9 @@ LICENSE=	ISCL
 
 USES=		gmake
 
-PORTREVISION_SERVER=	0
+PORTREVISION_SERVER=	1
 PORTREVISION_CLIENT=	0
-PORTREVISION_RELAY=	0
+PORTREVISION_RELAY=	1
 
 DEPRECATED=	Please upgrade to isc-dhcp44
 EXPIRATION_DATE=2018-07-30

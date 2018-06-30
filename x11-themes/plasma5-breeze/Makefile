@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/plasma5-breeze/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-breeze/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	breeze
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -11,11 +11,11 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cmake:outsource compiler:c++11-lib cpe \
-		gettext kde:5 pkgconfig tar:xz
+		gettext kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	auth breeze-icons codecs config configwidgets coreaddons \
 		decoration ecm frameworkintegration guiaddons i18n kcmutils \
 		plasma-framework service wayland widgetsaddons windowsystem
-USE_QT5=	core dbus gui network qml quick widgets x11extras xml \
+USE_QT=		core dbus gui network qml quick widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	xcb
 

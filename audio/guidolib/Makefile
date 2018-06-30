@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/guidolib/Makefile 460075 2018-01-27 06:19:51Z yuri $
+# $FreeBSD: head/audio/guidolib/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	guidolib
 DISTVERSIONPREFIX=	v
@@ -13,10 +13,10 @@ LICENSE=	MPL20
 
 BUILD_DEPENDS=	cmake:devel/cmake
 
-USES=		gmake pkgconfig
+USES=		gmake pkgconfig qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	grame-cncm
-USE_QT5=	core gui widgets printsupport xml buildtools_build qmake_build
+USE_QT=		core gui widgets printsupport xml buildtools_build qmake_build
 USE_GL=		gl
 USE_GNOME=	cairo
 USE_LDCONFIG=	yes

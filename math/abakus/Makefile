@@ -1,5 +1,5 @@
 # Created by: Andy Fawcett <andy@athame.co.uk>
-# $FreeBSD: head/math/abakus/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/abakus/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	abakus
 PORTVERSION=	0.92
@@ -15,9 +15,9 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex
 LIB_DEPENDS=	libmpfr.so:math/mpfr
 
-USES=		bison cmake kde:4 tar:bzip2
+USES=		bison cmake kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DCMAKE_REQUIRED_INCLUDES:STRING="${LOCALBASE}/include" \
 		-DCMAKE_REQUIRED_FLAGS:STRING="${LDFLAGS}" \
 		-DFLEX_EXECUTABLE:FILEPATH=${LOCALBASE}/bin/flex

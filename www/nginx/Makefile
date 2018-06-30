@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 471218 2018-05-31 17:04:45Z joneum $
+# $FreeBSD: head/www/nginx/Makefile 473502 2018-06-28 17:27:28Z joneum $
 
 PORTNAME=	nginx
 PORTVERSION=	1.14.0
-PORTREVISION?=	4
+PORTREVISION?=	6
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/ \
@@ -179,7 +179,7 @@ MAIL_SSL_CONFIGURE_ON=		--with-mail_ssl_module
 STREAM_VARS=			DSO_BASEMODS+=stream
 STREAM_SSL_IMPLIES=		HTTP_SSL
 STREAM_SSL_CONFIGURE_ON=	--with-stream_ssl_module
-STREAM_SSL_PREREAD_OFF=		--without-stream_ssl_preread_module
+STREAM_SSL_PREREAD_CONFIGURE_ON=	--with-stream_ssl_preread_module
 
 ### External modules
 .include "Makefile.extmod"

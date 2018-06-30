@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/xcwcp/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/comms/xcwcp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	xcwcp
 
@@ -12,8 +12,8 @@ LIB_DEPENDS=	libcw.so:comms/unixcw
 MASTERDIR=	${.CURDIR}/../unixcw
 
 PLIST=		${.CURDIR}/pkg-plist
-USE_QT5=	buildtools gui widgets qmake_build
-USES=		gettext
+USE_QT=		buildtools gui widgets qmake_build
+USES=		gettext qt:5
 # Qt from 5.7.0 on requires c++11.
 USE_CXXSTD=	c++11
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-hxt-regex-xmlschema/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/textproc/hs-hxt-regex-xmlschema/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	hxt-regex-xmlschema
 PORTVERSION=	9.2.0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

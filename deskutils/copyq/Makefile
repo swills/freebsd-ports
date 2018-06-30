@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/copyq/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/deskutils/copyq/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	copyq
 PORTVERSION=	2.7.1
@@ -11,9 +11,9 @@ COMMENT=	Qt5 based clipboard manager
 
 LICENSE=	GPLv3
 
-USES=		qmake
+USES=		qmake qt:5
 USE_XORG=	x11 xfixes xtst
-USE_QT5=	core gui network svg multimedia imageformats \
+USE_QT=		core gui network svg multimedia imageformats \
 		buildtools_build x11extras concurrent widgets xml \
 		script
 USE_GL=		gl

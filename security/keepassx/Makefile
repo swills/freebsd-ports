@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/keepassx/Makefile 404271 2015-12-23 00:22:31Z junovitch $
+# $FreeBSD: head/security/keepassx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	KeePassX
 PORTVERSION=	0.4.4
@@ -14,8 +14,8 @@ COMMENT=	Cross Platform Password Manager
 DATADIR=	${PREFIX}/share/${PORTNAME:tl}
 WRKSRC=		${WRKDIR}/${PORTNAME:tl}-${PORTVERSION}
 
-USES=		desktop-file-utils qmake shared-mime-info
-USE_QT4=	moc_build uic_build qt3support_build rcc_build \
+USES=		desktop-file-utils qmake qt:4 shared-mime-info
+USE_QT=		moc_build uic_build qt3support_build rcc_build \
 		corelib gui xml
 USE_XORG=	xt inputproto xtst xrender xrandr xfixes xcursor\
 		xext x11 sm ice xi

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/opendx/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/opendx/Makefile 473348 2018-06-25 21:17:15Z linimon $
 
 PORTNAME=	opendx
 PORTVERSION=	4.4.4
@@ -15,6 +15,8 @@ LICENSE=	IBM-OVDX-v1
 LICENSE_NAME=	IBM PUBLIC LICENSE - Open Visualization Data Explorer VERSION 1.0
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_FreeBSD_12_amd64=	fails to build: gmake[1]: *** No rule to make target 'Makefile'.  Stop.
 
 LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick	\
 		libtiff.so:graphics/tiff		\

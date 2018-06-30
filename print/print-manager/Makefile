@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/print-manager/Makefile 466875 2018-04-09 18:23:16Z tcberner $
+# $FreeBSD: head/print/print-manager/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	print-manager
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,12 +9,12 @@ COMMENT=	Printer manager for KDE
 
 LIB_DEPENDS=	libcups.so:print/cups
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		dbusaddons ecm i18n iconthemes itemviews jobwidgets kcmutils \
 		kio notifications plasma-framework service widgetsaddons \
 		windowsystem
-USE_QT5=	core dbus gui network qml quick widgets xml \
+USE_QT=		core dbus gui network qml quick widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/security/py-pyscard/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/security/py-pyscard/Makefile 473446 2018-06-27 14:59:27Z misha $
 
 PORTNAME=	pyscard
-PORTVERSION=	1.9.6
+PORTVERSION=	1.9.7
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

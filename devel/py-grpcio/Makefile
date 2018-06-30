@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-grpcio/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-grpcio/Makefile 473596 2018-06-30 04:50:24Z vanilla $
 
 PORTNAME=	grpcio
-PORTVERSION=	1.12.1
+PORTVERSION=	1.13.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,6 +22,8 @@ BROKEN_powerpc64=	fails to compile: cpu-ppc64le.c: 'AT_HWCAP2' undeclared
 
 USES=		compiler:gcc-c++11-lib localbase:ldflags python
 USE_PYTHON=	autoplist distutils
+MAKE_ENV+=	GRPC_PYTHON_BUILD_SYSTEM_ZLIB=true \
+		GRPC_PYTHON_BUILD_SYSTEM_CARES=true
 CFLAGS+=	-Ithird_party/boringssl/include
 LDFLAGS+=	-lcares
 

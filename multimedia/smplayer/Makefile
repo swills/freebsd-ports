@@ -1,12 +1,12 @@
 # Created by: Diego Depaoli <trebestie@gmail.com> and Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/multimedia/smplayer/Makefile 460832 2018-02-03 18:22:31Z pawel $
+# $FreeBSD: head/multimedia/smplayer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	smplayer
 DISTVERSION=	18.1.0
 CATEGORIES=	multimedia audio kde
 MASTER_SITES=	SF/${PORTNAME}/SMPlayer/${PORTVERSION}
 
-MAINTAINER=	nemysis@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Complete front-end based on Qt for mplayer
 
 LICENSE=	GPLv2+
@@ -40,11 +40,13 @@ MPV_DESC=	Allow to use mpv as multimedia engine
 SKINS_DESC=	Install additional skins
 THEMES_DESC=	Install additional themes
 
-QT4_USE=	qt4=moc_build,linguisttools_build,rcc_build,uic_build
-QT4_USE+=	qt4=corelib,dbus,gui,network,script,xml
+QT4_USES=	qt:4
+QT4_USE=	qt=moc_build,linguisttools_build,rcc_build,uic_build
+QT4_USE+=	qt=corelib,dbus,gui,network,script,xml
 
-QT5_USE=	qt5=buildtools_build,linguisttools_build
-QT5_USE+=	qt5=core,dbus,gui,network,script,widgets,xml
+QT5_USES=	qt:5
+QT5_USE=	qt=buildtools_build,linguisttools_build
+QT5_USE+=	qt=core,dbus,gui,network,script,widgets,xml
 
 MPLAYER_RUN_DEPENDS=	mplayer:multimedia/mplayer
 MPLAYER_QMAKE_OFF=	"DEFINES_DISABLED+=MPLAYER_SUPPORT"

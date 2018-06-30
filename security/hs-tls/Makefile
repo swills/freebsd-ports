@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/hs-tls/Makefile 470870 2018-05-25 21:44:12Z tcberner $
+# $FreeBSD: head/security/hs-tls/Makefile 473611 2018-06-30 09:57:59Z arrowd $
 
 PORTNAME=	tls
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

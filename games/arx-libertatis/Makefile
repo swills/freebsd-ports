@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/arx-libertatis/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/arx-libertatis/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	arx-libertatis
 PORTVERSION=	1.1.2
@@ -32,8 +32,9 @@ OPTIONS_DEFINE=	CRASHREPORTER DOCS
 OPTIONS_SUB=	yes
 
 CRASHREPORTER_DESC=	Build crash reporter (requires Qt4)
-CRASHREPORTER_USE=	QT4=corelib,gui,network \
-			QT4=rcc_build,moc_build,uic_build,qmake_build
+CRASHREPORTER_USES=	qt:4
+CRASHREPORTER_USE=	QT=corelib,gui,network \
+			QT=rcc_build,moc_build,uic_build,qmake_build
 CRASHREPORTER_CMAKE_ON=	-DBUILD_CRASHREPORTER=ON -DUSE_QT5=OFF
 CRASHREPORTER_CMAKE_OFF=-DBUILD_CRASHREPORTER=OFF
 

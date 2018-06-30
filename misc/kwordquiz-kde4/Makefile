@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kwordquiz-kde4/Makefile 465444 2018-03-24 10:13:33Z tcberner $
+# $FreeBSD: head/misc/kwordquiz-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kwordquiz
 PORTVERSION=	${KDE4_VERSION}
@@ -8,8 +8,8 @@ CATEGORIES=	misc kde kde-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Flash card trainer for KDE 4
 
-USES=		cmake:outsource kde:4 tar:xz
+USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs libkeduvocdocument automoc4
-USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_QT=		moc_build qmake_build rcc_build uic_build
 
 .include <bsd.port.mk>

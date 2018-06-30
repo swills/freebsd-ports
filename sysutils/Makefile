@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 472958 2018-06-21 07:29:20Z pi $
+# $FreeBSD: head/sysutils/Makefile 473453 2018-06-27 18:34:43Z dteske $
 #
 
     COMMENT = System utilities
@@ -716,6 +716,7 @@
     SUBDIR += mount.app
     SUBDIR += mountsmb2
     SUBDIR += mpiexec
+    SUBDIR += mping
     SUBDIR += mptd
     SUBDIR += msiklm
     SUBDIR += msktutil

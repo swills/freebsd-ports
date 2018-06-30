@@ -1,12 +1,12 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/textproc/scws/Makefile 446058 2017-07-17 10:16:04Z tz $
+# $FreeBSD: head/textproc/scws/Makefile 473023 2018-06-22 08:28:00Z yuri $
 
 PORTNAME=	scws
 PORTVERSION=	1.2.3
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.xunsearch.com/scws/down/
 
-MAINTAINER=	amutu@amutu.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple Chinese word segmentation program and lib
 
 LICENSE=	BSD2CLAUSE

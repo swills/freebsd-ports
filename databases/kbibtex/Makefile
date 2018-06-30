@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/databases/kbibtex/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/databases/kbibtex/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kbibtex
 DISTVERSION=	0.6.2
@@ -14,10 +14,10 @@ LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4 \
 		libqca.so:devel/qca@qt4 \
 		libqoauth.so:net/qoauth
 
-USES=		cmake gettext iconv kde:4 shared-mime-info tar:xz
+USES=		cmake gettext iconv kde:4 qt:4 shared-mime-info tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	kdelibs automoc4
-USE_QT4=	qmake_build moc_build uic_build rcc_build \
+USE_QT=		qmake_build moc_build uic_build rcc_build \
 		webkit
 USE_LDCONFIG=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/net-mgmt/qkismet/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/net-mgmt/qkismet/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qkismet
 PORTVERSION=	0.3.1
@@ -12,8 +12,8 @@ COMMENT=	Qt 4 GUI client for Kismet
 
 RUN_DEPENDS=	kismet:net-mgmt/kismet
 
-USES=		qmake tar:bzip2
-USE_QT4=	gui xml uic_build moc_build rcc_build network
+USES=		qmake qt:4 tar:bzip2
+USE_QT=		gui xml uic_build moc_build rcc_build network
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 

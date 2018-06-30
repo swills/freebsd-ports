@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qwt5/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/x11-toolkits/qwt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	qwt
 PORTVERSION=	5.2.3
@@ -9,8 +9,8 @@ PKGNAMESUFFIX=	5
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt Widgets for Technical Applications
 
-USES=		gmake qmake tar:bzip2
-USE_QT4=	gui svg moc_build
+USES=		gmake qmake qt:4 tar:bzip2
+USE_QT=		gui svg moc_build
 USE_LDCONFIG=	yes
 PORTSCOUT=	limit:^5\.
 

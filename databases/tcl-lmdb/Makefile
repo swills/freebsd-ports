@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/databases/tcl-lmdb/Makefile 454816 2017-11-24 09:10:34Z gahr $
+# $FreeBSD: head/databases/tcl-lmdb/Makefile 473047 2018-06-22 15:59:09Z gahr $
 
 PORTNAME=	tcl-lmdb
-PORTVERSION=	0.3.6
+PORTVERSION=	0.4.0
 CATEGORIES=	databases
 
 MAINTAINER=	gahr@FreeBSD.org
@@ -12,10 +12,11 @@ LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	liblmdb.so:databases/lmdb
 
+USES=		gmake tcl:tea
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	ray2501
 
-USES=		gmake tcl:tea
 CONFIGURE_ARGS=	--with-system-lmdb
 CFLAGS+=	-I${LOCALBASE}/include
 CPPFLAGS+=	-I${LOCALBASE}/include

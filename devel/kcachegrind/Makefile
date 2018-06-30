@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kcachegrind/Makefile 466899 2018-04-09 19:19:41Z tcberner $
+# $FreeBSD: head/devel/kcachegrind/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kcachegrind
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,11 +7,11 @@ CATEGORIES=	devel kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Profiler frontend for KDE
 
-USES=		cmake:outsource kde:5 python:run shebangfix tar:xz
+USES=		cmake:outsource kde:5 python:run qt:5 shebangfix tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n itemviews jobwidgets kio service solid \
 		widgetsaddons xmlgui
-USE_QT5=	core dbus gui network widgets xml \
+USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
 
 SHEBANG_FILES=	converters/hotshot2calltree.cmake \

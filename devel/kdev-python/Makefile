@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdev-python/Makefile 471124 2018-05-30 07:46:36Z arrowd $
+# $FreeBSD: head/devel/kdev-python/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kdev-python
 DISTVERSION=	5.2.3
@@ -12,11 +12,11 @@ COMMENT=	Python support for KDevelop
 BUILD_DEPENDS=	kdev-pg-qt:devel/kdevelop-pg-qt
 LIB_DEPENDS=	libkdevcmakecommon.so:devel/kdevelop
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 python:3.4+ tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:5 python:3.4+ qt:5 tar:xz
 USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		ecm i18n itemmodels jobwidgets kio newstuff parts service \
 		sonnet texteditor textwidgets threadweaver widgetsaddons xmlgui
-USE_QT5=	concurrent core dbus gui network widgets xml \
+USE_QT=		concurrent core dbus gui network widgets xml \
 		buildtools_build qmake_build
 
 # Does not build with jobs.

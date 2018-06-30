@@ -1,5 +1,5 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/devel/gecode/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/devel/gecode/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	gecode
 PORTVERSION=	5.1.0
@@ -46,7 +46,8 @@ OPTIONS_DEFINE=	GIST
 OPTIONS_SUB=	yes
 
 GIST_DESC=	Interactive Search Tool (requires Qt)
-GIST_USE=	QT4=corelib,gui,moc_build,qmake_build
+GIST_USES=	qt:4
+GIST_USE=	QT=corelib,gui,moc_build,qmake_build
 GIST_CONFIGURE_ON=	--enable-gist --enable-qt
 GIST_CONFIGURE_OFF=	--disable-gist --disable-qt
 

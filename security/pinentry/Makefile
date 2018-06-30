@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/security/pinentry/Makefile 459560 2018-01-21 00:38:29Z jhale $
+# $FreeBSD: head/security/pinentry/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	pinentry
 PORTVERSION=	1.1.0
@@ -94,14 +94,14 @@ CONFIGURE_ARGS+=--disable-pinentry-gnome3
 .endif
 
 .if ${PINENTRY_GUI} == "qt4"
-USES+=		compiler:c++11-lib
-USE_QT4=	corelib gui moc_build
+USES+=		compiler:c++11-lib qt:4
+USE_QT=		corelib gui moc_build
 PLIST_FILES=	bin/pinentry-qt4
 CONFIGURE_ARGS+=--disable-pinentry-qt5 \
 		--program-suffix=4
 .elif ${PINENTRY_GUI} == "qt5"
-USES+=		compiler:c++11-lib
-USE_QT5=	core gui widgets buildtools_build
+USES+=		compiler:c++11-lib qt:5
+USE_QT=		core gui widgets buildtools_build
 PLIST_FILES=	bin/pinentry-qt5
 CONFIGURE_ARGS+=--enable-pinentry-qt5 \
 		--program-suffix=5

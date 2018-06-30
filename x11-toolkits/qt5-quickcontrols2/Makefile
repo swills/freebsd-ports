@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5-quickcontrols2/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/x11-toolkits/qt5-quickcontrols2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	quickcontrols2
 DISTVERSION=	${QT5_VERSION}
@@ -8,10 +8,10 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Set of controls for building complete interfaces in Qt Quick
 
-USE_QT5=	core gui qml quick widgets \
+USES=		qmake:norecursive qt-dist:5
+USE_QT=		core gui qml quick widgets \
 		buildtools_build
 QT_DIST=	${PORTNAME}
-USES=		qmake:norecursive
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 .include <bsd.port.mk>

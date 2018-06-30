@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kcolorchooser/Makefile 466806 2018-04-08 17:01:54Z tcberner $
+# $FreeBSD: head/graphics/kcolorchooser/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	kcolorchooser
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,10 +7,10 @@ CATEGORIES=	graphics kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE application to select colors from the screen or from a palette
 
-USES=		cmake:outsource gettext kde:5 tar:xz
+USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons ecm i18n \
 		widgetsaddons xmlgui
-USE_QT5=	core dbus gui widgets xml \
+USE_QT=		core dbus gui widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

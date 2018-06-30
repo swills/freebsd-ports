@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/rocs/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/math/rocs/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	rocs
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,12 +9,12 @@ COMMENT=	KDE Graph theory IDE
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		cmake:outsource gettext grantlee:5 kde:5 tar:xz
+USES=		cmake:outsource gettext grantlee:5 kde:5 qt:5 tar:xz
 USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 		crash doctools ecm i18n itemviews jobwidgets kdeclarative \
 		kio package parts service sonnet texteditor textwidgets \
 		widgetsaddons xmlgui
-USE_QT5=	core dbus gui network qml script quick scripttools svg webkit \
+USE_QT=		core dbus gui network qml script quick scripttools svg webkit \
 		widgets xml xmlpatterns \
 		buildtools_build qmake_build
 

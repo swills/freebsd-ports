@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-teacooker/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-teacooker/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	teacooker
 PORTVERSION=	0.3.0
@@ -13,9 +13,9 @@ COMMENT=	KDE4 tea cooker plasma applet
 
 LICENSE=	GPLv3
 
-USES=		cmake kde:4
+USES=		cmake kde:4 qt:4
 USE_KDE=	automoc4 kdelibs
-USE_QT4=	gui dbus network opengl svg webkit xml \
+USE_QT=		gui dbus network opengl svg webkit xml \
 		qmake_build moc_build rcc_build uic_build
 
 WRKSRC=		${WRKDIR}/TeaCooker

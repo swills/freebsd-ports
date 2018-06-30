@@ -1,9 +1,8 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/devel/p5-File-Temp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Temp/Makefile 473421 2018-06-27 07:55:43Z wen $
 
 PORTNAME=	File-Temp
-PORTVERSION=	0.2304
-PORTREVISION=	1
+PORTVERSION=	0.2306
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

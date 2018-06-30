@@ -1,9 +1,9 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/luminance-qt5/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/luminance-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	luminance-hdr
 DISTVERSION=	2.4.0
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	graphics
 MASTER_SITES=	SF/qtpfsgui/luminance/${DISTVERSION}
 PKGNAMESUFFIX=	-qt5
@@ -22,8 +22,8 @@ LIB_DEPENDS=	libfftw3f.so:math/fftw3-float \
 		libraw_r.so:graphics/libraw \
 		libboost_system.so:devel/boost-libs
 
-USES=		cmake:outsource jpeg pkgconfig tar:bzip2
-USE_QT5=	concurrent gui printsupport sql webkit xml \
+USES=		cmake:outsource jpeg pkgconfig qt:5 tar:bzip2
+USE_QT=		concurrent gui printsupport sql webkit xml \
 		buildtools_build linguist_build qmake_build \
 		imageformats_run
 INSTALLS_ICONS=	yes

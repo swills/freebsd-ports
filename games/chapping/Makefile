@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/chapping/Makefile 472066 2018-06-09 16:14:58Z amdmi3 $
+# $FreeBSD: head/games/chapping/Makefile 473069 2018-06-22 20:34:06Z amdmi3 $
 
 PORTNAME=	chapping
 PORTVERSION=	0.43
@@ -17,6 +17,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		gmake tar:bzip2
 USE_SDL=	sdl image gfx ttf
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-source
 ALL_TARGET=	linux
