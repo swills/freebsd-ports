@@ -117,7 +117,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
 	rubygem-state_machines-activerecord>=0.5.1:databases/rubygem-state_machines-activerecord \
 	rubygem-acts-as-taggable-on>=5.0:www/rubygem-acts-as-taggable-on \
-	rubygem-sidekiq>=5.0.0:devel/rubygem-sidekiq \
+	rubygem-sidekiq>=5.1.0:devel/rubygem-sidekiq \
 	rubygem-sidekiq-cron>=0.6.0:devel/rubygem-sidekiq-cron \
 	rubygem-redis-namespace15>=1.5.2:databases/rubygem-redis-namespace15 \
 	rubygem-sidekiq-limit_fetch>=3.4:devel/rubygem-sidekiq-limit_fetch \
