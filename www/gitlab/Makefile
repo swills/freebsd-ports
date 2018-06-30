@@ -190,7 +190,6 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-net-ssh>=5.0:security/rubygem-net-ssh \
 	rubygem-sshkey>=1.9.0:security/rubygem-sshkey \
 	rubygem-rbnacl4<=4.0.2:security/rubygem-rbnacl4 \
-	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
 	rubygem-gitaly-proto099>=0.99.0:net/rubygem-gitaly-proto099 \
 	rubygem-grpc>=1.11.0:net/rubygem-grpc \
