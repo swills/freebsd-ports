@@ -101,7 +101,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-redcarpet>=3.4:textproc/rubygem-redcarpet \
 	rubygem-commonmarker>=0.17:textproc/rubygem-commonmarker \
 	rubygem-redcloth>=4.3.2:www/rubygem-redcloth \
-	rubygem-rdoc>=4.2:devel/rubygem-rdoc \
+	rubygem-rdoc>=6.0:devel/rubygem-rdoc \
 	rubygem-org-ruby>=0.9.12:textproc/rubygem-org-ruby \
 	rubygem-creole>=0.5.0:textproc/rubygem-creole \
 	rubygem-wikicloth081>=0.8.1:textproc/rubygem-wikicloth081 \
