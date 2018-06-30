@@ -119,7 +119,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-acts-as-taggable-on>=5.0:www/rubygem-acts-as-taggable-on \
 	rubygem-sidekiq>=5.1.0:devel/rubygem-sidekiq \
 	rubygem-sidekiq-cron>=0.6.0:devel/rubygem-sidekiq-cron \
-	rubygem-redis-namespace15>=1.5.2:databases/rubygem-redis-namespace15 \
+	rubygem-redis-namespace>=1.6.0:databases/rubygem-redis-namespace \
 	rubygem-sidekiq-limit_fetch>=3.4:devel/rubygem-sidekiq-limit_fetch \
 	rubygem-rufus-scheduler>=3.4.0:devel/rubygem-rufus-scheduler \
 	rubygem-httparty>=0.13.3:www/rubygem-httparty \
