@@ -12,13 +12,14 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 # define dependencies that are required for build and run under MY_DEPENDS
 MY_DEPENDS=	git>=2.16.2:devel/git \
+		rubygem-i18n>=0:devel/rubygem-i18n \
 		rubygem-rugged>=0.27.1:devel/rubygem-rugged \
 		rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
 		rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
 		rubygem-gitaly-proto>=0.101.0:net/rubygem-gitaly-proto \
 		rubygem-activesupport50>=5.0.2:devel/rubygem-activesupport50 \
-		rubygem-rdoc>=4.2:devel/rubygem-rdoc \
+		rubygem-rdoc>=6.0:devel/rubygem-rdoc \
 		rubygem-gitlab-gollum-lib>=4.2:www/rubygem-gitlab-gollum-lib \
 		rubygem-gitlab-gollum-rugged_adapter>=0.4.4:www/rubygem-gitlab-gollum-rugged_adapter \
 		rubygem-grpc>=1.11.0:net/rubygem-grpc \
