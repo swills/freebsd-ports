@@ -1,9 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
 # $FreeBSD: head/www/gitlab/Makefile 473553 2018-06-29 15:01:30Z mfechner $
 
-PORTNAME=	gitlab
-PORTVERSION=	11.0.1
-DISTVERSIONPREFIX=	v
+PORTNAME=	gitlab-ce
+PORTVERSION=	11.0.2
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -211,9 +210,10 @@ MYSQL_RUN_DEPENDS=	rubygem-mysql2>=0.4.5:databases/rubygem-mysql2 \
 USE_RUBY=	yes
 
 USE_RC_SUBR=	gitlab
-USE_GITHUB=	yes
-GH_ACCOUNT=	gitlabhq
-GH_PROJECT=	gitlabhq
+USE_GITLAB=	yes
+GL_ACCOUNT=	gitlab-org
+# Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
+GL_COMMIT=	d9540ee0464796746ec0906c0c2762ca099be3e5
 
 USERS=	git
 GROUPS=	git
