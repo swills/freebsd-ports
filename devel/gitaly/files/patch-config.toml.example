@@ -4,7 +4,7 @@
  # Example Gitaly configuration file
  
 -socket_path = "/home/git/gitlab/tmp/sockets/private/gitaly.socket"
-+socket_path = "/usr/local/www/gitlab/tmp/sockets/private/gitaly.socket"
++socket_path = "/usr/local/www/gitlab-ce/tmp/sockets/private/gitaly.socket"
  
  # The directory where Gitaly's executables are stored
 -bin_dir = "/home/git/gitaly"

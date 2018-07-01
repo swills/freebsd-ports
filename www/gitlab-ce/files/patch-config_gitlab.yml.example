@@ -5,7 +5,7 @@
      # external_https: ["1.1.1.1:443", "[2001::1]:443"] # If defined, enables custom domain and certificate support in GitLab Pages
      admin:
 -      address: unix:/home/git/gitlab/tmp/sockets/private/pages-admin.socket # TCP connections are supported too (e.g. tcp://host:port)
-+      address: unix:/usr/local/www/gitlab/tmp/sockets/private/pages-admin.socket # TCP connections are supported too (e.g. tcp://host:port)
++      address: unix:/usr/local/www/gitlab-ce/tmp/sockets/private/pages-admin.socket # TCP connections are supported too (e.g. tcp://host:port)
  
    ## Mattermost
    ## For enabling Add to Mattermost button
@@ -25,7 +25,7 @@
 -        path: /home/git/repositories/
 -        gitaly_address: unix:/home/git/gitlab/tmp/sockets/private/gitaly.socket # TCP connections are supported too (e.g. tcp://host:port)
 +        path: /usr/home/git/repositories/
-+        gitaly_address: unix:/usr/local/www/gitlab/tmp/sockets/private/gitaly.socket # TCP connections are supported too (e.g. tcp://host:port)
++        gitaly_address: unix:/usr/local/www/gitlab-ce/tmp/sockets/private/gitaly.socket # TCP connections are supported too (e.g. tcp://host:port)
          # gitaly_token: 'special token' # Optional: override global gitaly.token for this storage.
  
    ## Backup settings
