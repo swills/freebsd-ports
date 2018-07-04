@@ -17,6 +17,11 @@ you update your ports collection, before attempting any port upgrades.
   You can find the current instruction here:
   https://gitlab.fechner.net/mfechner/Gitlab-docu/blob/master/update/10.8-11.0-freebsd.md
 
+  Please note the update was only tested for an update from 10.8.5 to 11.0.2.
+  If your version of gitlab was released before 2014-03-13 you cannot update
+  to this version. You need to make an intermediate update to an earlier
+  version before.
+
 20180701:
   AFFECTS: users of devel/bats
   AUTHOR: lifanov@FreeBSD.org
