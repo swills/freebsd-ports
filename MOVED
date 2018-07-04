@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 473882 2018-07-04 12:57:28Z rene $
+# $FreeBSD: head/MOVED 473910 2018-07-04 17:38:29Z mfechner $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:

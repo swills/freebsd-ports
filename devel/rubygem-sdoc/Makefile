@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sdoc/Makefile 447375 2017-08-04 20:09:12Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sdoc/Makefile 473902 2018-07-04 17:23:55Z mfechner $
 
 PORTNAME=	sdoc
 PORTVERSION=	1.0.0

@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/wsjt/Makefile 473682 2018-07-01 21:02:09Z db $
+# $FreeBSD: head/comms/wsjt/Makefile 473901 2018-07-04 17:22:29Z db $
 
 PORTNAME=	wsjt
 DISTVERSION=	${VERSION}.r${SVN_REV}
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	comms hamradio
 MASTER_SITES=	LOCAL/db
 DISTNAME=	wsjt-r${SVN_REV}

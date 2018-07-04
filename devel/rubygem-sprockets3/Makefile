@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sprockets3/Makefile 430587 2017-01-04 19:09:59Z swills $
+# $FreeBSD: head/devel/rubygem-sprockets3/Makefile 473903 2018-07-04 17:25:55Z mfechner $
 
 PORTNAME=	sprockets
 PORTVERSION=	3.7.2

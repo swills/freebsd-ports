@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 473553 2018-06-29 15:01:30Z mfechner $
+# $FreeBSD: head/www/gitlab-ce/Makefile 473910 2018-07-04 17:38:29Z mfechner $
 
 PORTNAME=	gitlab-ce
 PORTVERSION=	11.0.2

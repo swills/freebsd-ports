@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-rdoc/Makefile 430393 2017-01-02 19:10:58Z swills $
+# $FreeBSD: head/devel/rubygem-rdoc/Makefile 473900 2018-07-04 17:22:21Z mfechner $
 
 PORTNAME=	rdoc
 PORTVERSION=	6.0.4
