@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	mfechner@FreeBSD.org
-COMMENT=	A plain-Ruby implementation of GraphQL
+COMMENT=	Plain-Ruby implementation of GraphQL
 
 LICENSE=	MIT
 
