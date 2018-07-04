@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: head/www/gitlab/files/gitlab.in 469941 2018-05-14 18:05:05Z mfechner $
+# $FreeBSD: head/www/gitlab-ce/files/gitlab.in 473910 2018-07-04 17:38:29Z mfechner $
 
 ### BEGIN INIT INFO
 # Provides:          gitlab
@@ -51,7 +51,7 @@ RAILS_ENV="production"
 # Script variable names should be lower-case not to conflict with
 # internal /bin/sh variables such as PATH, EDITOR or SHELL.
 app_user="git"
-app_root="/usr/local/www/gitlab"
+app_root="/usr/local/www/gitlab-ce"
 pid_path="$app_root/tmp/pids"
 socket_path="$app_root/tmp/sockets"
 rails_socket="$socket_path/gitlab.socket"

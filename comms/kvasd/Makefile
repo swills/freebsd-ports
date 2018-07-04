@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/kvasd/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/comms/kvasd/Makefile 473899 2018-07-04 16:54:08Z db $
 
 PORTNAME=	kvasd
 PORTVERSION=	1.0
@@ -15,6 +15,9 @@ LICENSE=	K1JT
 LICENSE_NAME=	Joseph H Taylor, Jr, K1JT.
 LICENSE_FILE=	${FILESDIR}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
+
+DEPRECATED=	use wsjtx- kvasd is not needed by wsjtx and no longer maintained
+EXPIRATION_DATE=2018-10-01
 
 BUILD_DEPENDS=	${KVASD_DEPENDS}
 RUN_DEPENDS=	${KVASD_DEPENDS}
