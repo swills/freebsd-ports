@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	arcconf
-DISTVERSION=	1_8_21375
+DISTVERSION=	2_03_22476
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.adaptec.com/raid/storage_manager/
@@ -11,7 +11,9 @@ DISTNAME=	arcconf_v${DISTVERSION}
 MAINTAINER=	michael@fuckner.net
 COMMENT=	Adaptec SCSI/SAS RAID administration tool
 
-ONLY_FOR_ARCHS=	i386 amd64
+RUN_DEPENDS=	${LOCALBASE}/lib/compat/libstdc++.so.6:misc/compat9x
+
+ONLY_FOR_ARCHS=	amd64
 
 USES=		zip
 
@@ -22,26 +24,19 @@ SUB_FILES+=	${PERIODICSCRIPT}
 RESTRICTED=	May not be redistributed in binary form
 NO_CDROM=	May not be redistributed in binary form
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} != FreeBSD
-IGNORE=		installs incompatible binaries for FreeBSD
-.else
-DIST_OSVER=	10
-.endif
-
-.if ${ARCH} == amd64
-DIST_EXT=	_x64
-.elif ${ARCH} == i386
-.if ${OPSYS} == FreeBSD
-# use the 9 i386 version for 10 i386
-DIST_OSVER=	9
-RUN_DEPENDS+=	${LOCALBASE}/lib/compat/libstdc++.so.6:misc/compat9x
-.endif
-.endif
-
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
+PLIST_FILES=	etc/periodic/daily/410.status-aac-raid \
+		sbin/arcconf
+
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} != FreeBSD || ${OSVERSION} >= 1100000
+IGNORE=		installs incompatible binaries for FreeBSD
+.else
+DIST_EXT=	_x64
+DIST_OSVER=	10
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/freebsd${DIST_OSVER}${DIST_EXT}/cmdline/arcconf ${STAGEDIR}${PREFIX}/sbin
