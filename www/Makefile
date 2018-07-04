@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 473465 2018-06-27 23:33:32Z sunpoet $
+# $FreeBSD: head/www/Makefile 473842 2018-07-03 15:20:13Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -2082,7 +2082,6 @@
     SUBDIR += rubygem-kaminari-rails50
     SUBDIR += rubygem-kensa
     SUBDIR += rubygem-kubeclient
-    SUBDIR += rubygem-kubeclient22
     SUBDIR += rubygem-layout_yullio_generator
     SUBDIR += rubygem-less
     SUBDIR += rubygem-lighthouse-api

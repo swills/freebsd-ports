@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net/py-speedtest-cli/Makefile 452401 2017-10-19 08:25:55Z nivit $
+# $FreeBSD: head/net/py-speedtest-cli/Makefile 473664 2018-07-01 11:00:32Z cpm $
 
 PORTNAME=	speedtest-cli
-PORTVERSION=	1.0.7
+PORTVERSION=	2.0.2
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,5 +15,15 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS
+
+PORTDOCS=	README.rst
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/net-p2p/libswift/Makefile 440859 2017-05-13 23:36:16Z linimon $
+# $FreeBSD: head/net-p2p/libswift/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=		libswift
 PORTVERSION=	20160817
@@ -11,9 +11,11 @@ COMMENT=	IETF Peer-to-Peer Streaming Peer Protocol implementation
 
 LICENSE=	LGPL21
 
-LIB_DEPENDS=		libevent.so:devel/libevent
-
+BROKEN_mips=		fails to build: gmake: clang++: Command not found
+BROKEN_mips64=		fails to build: gmake: clang++: Command not found
 BROKEN_powerpc64=	fails to build: gmake: clang++: Command not found
+
+LIB_DEPENDS=		libevent.so:devel/libevent
 
 USE_GITHUB=		yes
 GH_TAGNAME=		dda307f

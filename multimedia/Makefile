@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 472983 2018-06-21 16:52:09Z tcberner $
+# $FreeBSD: head/multimedia/Makefile 473638 2018-06-30 19:59:57Z decke $
 #
 
     COMMENT = Multimedia software
@@ -178,6 +178,8 @@
     SUBDIR += kissdx
     SUBDIR += kmplayer-kde4
     SUBDIR += kodi
+    SUBDIR += kodi-addon-pvr-hts
+    SUBDIR += kodi-addon-pvr-iptvsimple
     SUBDIR += kodi-devel
     SUBDIR += kplayer-kde4
     SUBDIR += kvazaar

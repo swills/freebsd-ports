@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gnatdroid-sysroot/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/lang/gnatdroid-sysroot/Makefile 473865 2018-07-04 04:31:41Z linimon $
 
 PORTNAME=	sysroot
 PORTVERSION=	23
@@ -9,10 +9,10 @@ PKGNAMEPREFIX=	gnatdroid-
 DISTNAME=	android-${API}-arm
 DIST_SUBDIR=	gnatdroid-ndk11
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jamie@catflap.org
 COMMENT=	Android sysroots for C/Ada Android cross-compiler
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 USES=		tar:bzip2
 NO_BUILD=	yes

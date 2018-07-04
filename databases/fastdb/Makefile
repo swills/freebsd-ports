@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/fastdb/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/databases/fastdb/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	fastdb
 PORTVERSION=	3.75
@@ -12,6 +12,8 @@ COMMENT=	Main Memory Relational Database Management System
 
 LICENSE=	MIT
 
+BROKEN_mips=		fails to compile: unrecognized command line option "-std=gnu++03"
+BROKEN_mips64=		fails to compile: unrecognized command line option "-std=gnu++03"
 BROKEN_powerpc64=	fails to compile: unrecognized command line option "-std=gnu++03"
 
 USES=		gmake dos2unix

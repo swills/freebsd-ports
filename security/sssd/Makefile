@@ -1,9 +1,9 @@
 # Created by: Lukas Slebodnik <lukas.slebodnik@intrak.sk>
-# $FreeBSD: head/security/sssd/Makefile 472753 2018-06-19 02:46:53Z yuri $
+# $FreeBSD: head/security/sssd/Makefile 473879 2018-07-04 11:52:25Z rene $
 
 PORTNAME=	sssd
 PORTVERSION=	1.11.7
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	security
 MASTER_SITES=	https://releases.pagure.org/SSSD/${PORTNAME}/
 
@@ -32,7 +32,7 @@ BUILD_DEPENDS=	xmlcatalog:textproc/libxml2 \
 		xsltproc:textproc/libxslt \
 		xmlcatmgr:textproc/xmlcatmgr \
 		krb5>=1.10:security/krb5 \
-		nsupdate:dns/bind99
+		nsupdate:dns/bind911
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-selinux=no --with-semanage=no \

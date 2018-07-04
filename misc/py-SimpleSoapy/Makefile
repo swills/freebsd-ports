@@ -1,9 +1,9 @@
-# $FreeBSD: head/misc/py-SimpleSoapy/Makefile 472764 2018-06-19 07:36:00Z yuri $
+# $FreeBSD: head/misc/py-SimpleSoapy/Makefile 473693 2018-07-02 01:09:27Z yuri $
 
 PORTNAME=	SimpleSoapy
 DISTVERSION=	1.5.1
 PORTREVISION=	1
-CATEGORIES=	misc python
+CATEGORIES=	misc hamradio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

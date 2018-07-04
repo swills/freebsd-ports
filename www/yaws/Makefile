@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/yaws/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/yaws/Makefile 473825 2018-07-03 13:00:57Z olgeni $
 
 PORTNAME=	yaws
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.6
 CATEGORIES=	www devel
 MASTER_SITES=	http://yaws.hyber.org/download/
 

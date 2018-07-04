@@ -1,5 +1,5 @@
 # Created by: Yonatan <Yonatan@Xpert.com>
-# $FreeBSD: head/security/libtomcrypt/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/security/libtomcrypt/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	libtomcrypt
 PORTVERSION=	1.18.1
@@ -14,6 +14,8 @@ COMMENT=	Comprehensive, modular, and portable cryptographic toolkit
 LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_mips=		fails to compile: unrecognized command line option "-Wno-type-limits"
+BROKEN_mips64=		fails to compile: unrecognized command line option "-Wno-type-limits"
 BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-type-limits"
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

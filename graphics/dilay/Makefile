@@ -1,12 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/dilay/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/dilay/Makefile 473651 2018-07-01 03:25:51Z yuri $
 
 PORTNAME=	dilay
-DISTVERSION=	1.8.0
+DISTVERSION=	1.9.0
 CATEGORIES=	graphics
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	d4489e40bab1193a78d354bb6335da4224ff5253.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	3D sculpting application

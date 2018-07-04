@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/sid-milter/Makefile 460448 2018-01-30 23:14:32Z dinoex $
+# $FreeBSD: head/mail/sid-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	sid-milter
 PORTVERSION=	1.0.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/SenderID%20Milter/${PORTVERSION}
 
@@ -41,7 +41,7 @@ LIBAR_PLIST_FILES=	include/libar.h lib/libar.a man/man3/ar.3.gz
 
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"
 
-.if defined(WITH_SENDMAIL_PORT)
+.if defined(WITH_MILTER_PORT)
 SITE+=		${FILESDIR}/site.config.m4.milter
 .endif
 

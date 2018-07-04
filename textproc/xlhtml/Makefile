@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/textproc/xlhtml/Makefile 472723 2018-06-19 00:29:16Z swills $
+# $FreeBSD: head/textproc/xlhtml/Makefile 473767 2018-07-02 19:30:50Z swills $
 
 PORTNAME=	xlhtml
 PORTVERSION=	0.5
@@ -15,12 +15,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
-USES=		gmake tar:tgz
-
-# If autotools are installed in the build environment a regeneration
-# of it's build files is triggered for unknown reasons.  Pretend they
-# are not there.
-BINARY_ALIAS=	aclocal=false autoheader=false automake=false makeinfo=false
+USES=		autoreconf gmake tar:tgz
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/scourge/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/scourge/Makefile 473676 2018-07-01 17:16:58Z amdmi3 $
 
 PORTNAME=	scourge
 PORTVERSION=	0.21.1
@@ -15,12 +15,12 @@ COMMENT=	Rogue-like game
 LIB_DEPENDS=	libfreetype.so:print/freetype2
 RUN_DEPENDS=	${LOCALBASE}/${DATADIR_REL}/config/scourge.cfg:games/scourge-data
 
-USES=		autoreconf gettext gmake
+USES=		autoreconf gettext gmake localbase
+GNU_CONFIGURE=	yes
 USE_GL=		gl
 USE_SDL=	sdl image mixer net ttf
-GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 CONFIGURE_ARGS=	--with-data-dir=${DATADIR}
 
@@ -33,8 +33,9 @@ DEBUG_CONFIGURE_ENABLE=	debug
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|GLvoid|void|g' ${WRKSRC}/src/sdlhandler.cpp ${WRKSRC}/src/sdlhandler.h
+	@${REINPLACE_CMD} -e 's|\([^a-z_]\)type(|\1squirrel_type(|g' ${WRKSRC}/src/squirrel/*.cpp ${WRKSRC}/src/squirrel/*.h
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/src/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/src/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/
 
 .include <bsd.port.mk>

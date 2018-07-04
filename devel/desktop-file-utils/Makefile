@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/devel/desktop-file-utils/Makefile 437571 2017-04-02 17:20:03Z bapt $
+# $FreeBSD: head/devel/desktop-file-utils/Makefile 473716 2018-07-02 09:07:35Z amdmi3 $
 #   $MCom: ports/trunk/devel/desktop-file-utils/Makefile 17268 2013-04-01 05:13:11Z marcus $
 
 PORTNAME=	desktop-file-utils
@@ -10,13 +10,14 @@ MASTER_SITES=	http://freedesktop.org/software/${PORTNAME}/releases/
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Couple of command line utilities for working with desktop entries
 
-USES=		gettext gmake pkgconfig tar:xz
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		gettext gmake localbase:ldflags pkgconfig tar:xz
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-lispdir
 CONFIGURE_ENV=	EMACS="no"
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 PKGINSTALL=	${WRKDIR}/pkg-install
 PKGDEINSTALL=	${WRKDIR}/pkg-deinstall

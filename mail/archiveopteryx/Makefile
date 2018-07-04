@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/archiveopteryx/Makefile 467334 2018-04-14 17:14:12Z feld $
+# $FreeBSD: head/mail/archiveopteryx/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	archiveopteryx
 PORTVERSION=	3.2.0
@@ -12,6 +12,8 @@ COMMENT=	Advanced PostgreSQL-based IMAP/POP server
 
 LICENSE=	MIT
 
+BROKEN_mips=		fails to build: /bin/sh: clang: not found
+BROKEN_mips64=		fails to build: /bin/sh: clang: not found
 BROKEN_powerpc64=	fails to build: /bin/sh: clang: not found
 
 BUILD_DEPENDS=	jam:devel/jam

@@ -1,9 +1,9 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/mail/enma/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/enma/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	enma
 PORTVERSION=	1.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/ENMA/${PORTVERSION}
 

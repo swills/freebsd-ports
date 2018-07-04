@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/animorph/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/graphics/animorph/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	animorph
 PORTVERSION=	0.3
@@ -12,6 +12,8 @@ COMMENT=	Morphing engine for MakeHuman
 
 LICENSE=	LGPL21
 
+BROKEN_mips=		fails to compile: unrecognized command line option "-std=gnu++03"
+BROKEN_mips64=		fails to compile: unrecognized command line option "-std=gnu++03"
 BROKEN_powerpc64=	fails to compile: unrecognized command line option "-std=gnu++03"
 
 GNU_CONFIGURE=	yes

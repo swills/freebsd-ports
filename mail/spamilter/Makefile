@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/spamilter/Makefile 459031 2018-01-15 10:55:01Z dinoex $
+# $FreeBSD: head/mail/spamilter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	spamilter
 PORTVERSION=	0.60
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://www.wanlink.com/spamilter/download/
 
@@ -47,11 +47,7 @@ LIBSPF_LDFLAGS=		-L${LOCALBASE}/lib
 
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"
 
-.if defined(WITH_SENDMAIL_PORT)
-CONFIGURE_ARGS+=	--sendmail-dir "${LOCALBASE}"
-.else
-CONFIGURE_ARGS+=	--sendmail-dir "/usr"
-.endif
+CONFIGURE_ARGS+=	--sendmail-dir "${MILTERBASE}"
 
 post-extract:
 	${MV} ${WRKDIR}/${PORTNAME} ${WRKSRC}

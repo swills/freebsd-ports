@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/raysfilter/Makefile 408774 2016-02-13 09:03:15Z dinoex $
+# $FreeBSD: head/mail/raysfilter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	raysfilter
 PORTVERSION=	1.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	LOCAL/dinoex
 DISTNAME=	rays-filter-${PORTVERSION}

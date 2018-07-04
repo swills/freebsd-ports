@@ -1,5 +1,5 @@
 # Created by: buratello@easy.com
-# $FreeBSD: head/games/redorblack/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/games/redorblack/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	redorblack
 PORTVERSION=	1.0
@@ -11,6 +11,8 @@ COMMENT=	Simple card game to test fortune and probability theory
 
 LICENSE=	BSD2CLAUSE
 
+BROKEN_mips=		fails to compile: deckClass.h: error: random: No such file or directory
+BROKEN_mips64=		fails to compile: deckClass.h: error: random: No such file or directory
 BROKEN_powerpc64=	fails to compile: deckClass.h: error: random: No such file or directory
 
 PLIST_FILES=	bin/redorblack

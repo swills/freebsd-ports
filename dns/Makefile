@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 473328 2018-06-25 17:14:41Z truckman $
+# $FreeBSD: head/dns/Makefile 473882 2018-07-04 12:57:28Z rene $
 #
 
     COMMENT = Domain Name Service tools
@@ -10,11 +10,9 @@
     SUBDIR += axfr2acl
     SUBDIR += bind-tools
     SUBDIR += bind9-devel
-    SUBDIR += bind910
     SUBDIR += bind911
     SUBDIR += bind912
     SUBDIR += bind913
-    SUBDIR += bind99
     SUBDIR += bindgraph
     SUBDIR += bundy
     SUBDIR += c-ares

@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-graphiql-rails/Makefile 473897 2018-07-04 16:04:02Z mfechner $
 
 PORTNAME=	graphiql-rails
 PORTVERSION=	1.4.10

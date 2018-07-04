@@ -1,5 +1,5 @@
 # Created by: Steven G. Kargl
-# $FreeBSD: head/lang/f2c/Makefile 464164 2018-03-11 11:20:43Z rene $
+# $FreeBSD: head/lang/f2c/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	f2c
 PORTVERSION=	20060810
@@ -12,6 +12,9 @@ DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	fortran@FreeBSD.org
 COMMENT=	Fortran-to-C converter and its run-time libraries
+
+BROKEN_mips=		fails to compile: /usr/include/sigfpe.h: No such file or directory
+BROKEN_mips64=		fails to compile: /usr/include/sigfpe.h: No such file or directory
 
 EXTRACT_DEPENDS=	${UNZIP_CMD}:archivers/unzip
 

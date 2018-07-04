@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/mail/roundcube-groupvice/Makefile 468851 2018-05-02 16:15:59Z mat $
+# $FreeBSD: head/mail/roundcube-groupvice/Makefile 473875 2018-07-04 09:37:36Z amdmi3 $
 
 PORTNAME=	groupvice
 PORTVERSION=	0.1.2
@@ -11,9 +11,12 @@ PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Theme for RoundCube Web Mail
 
+LICENSE=	NONE APACHE20
+LICENSE_COMB=	multi
+
 RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.2:mail/roundcube@${PHP_FLAVOR}
 
-USES=	php:flavors
+USES=		php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 
@@ -22,7 +25,7 @@ WWWDIR?=	${PREFIX}/www/roundcube/skins/groupvice
 SUB_FILES=	pkg-message
 
 do-install:
-	${MKDIR} ${STAGEDIR}${WWWDIR}
+	@${MKDIR} ${STAGEDIR}${WWWDIR}
 	cd ${WRKSRC} && ${PAX} -r -w . ${STAGEDIR}${WWWDIR}
 
 .include <bsd.port.mk>

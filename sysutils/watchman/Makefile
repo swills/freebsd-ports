@@ -1,5 +1,5 @@
 # Created by: Jin-Sih, Lin <linpct@gmail.com>
-# $FreeBSD: head/sysutils/watchman/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/sysutils/watchman/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	watchman
 PORTVERSION=	4.5.0
@@ -10,6 +10,9 @@ MAINTAINER=	linpct@gmail.com
 COMMENT=	File alteration monitoring service
 
 LICENSE=	APACHE20
+
+BROKEN_mips=		fails to build: watchman.h:169: undefined reference to '__sync_add_and_fetch_8'
+BROKEN_mips64=		fails to build: watchman.h:169: undefined reference to '__sync_add_and_fetch_8'
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	facebook

@@ -1,8 +1,9 @@
-# $FreeBSD: head/databases/py-Pyrseas/Makefile 473604 2018-06-30 08:37:22Z amdmi3 $
+# $FreeBSD: head/databases/py-Pyrseas/Makefile 473744 2018-07-02 14:28:58Z mat $
 
 PORTNAME=	Pyrseas
 PORTVERSION=	0.8.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -13,6 +14,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.5:databases/py-psycopg2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pgdbconn>=0.8:databases/py-pgdbconn@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>=3.10:devel/py-yaml@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 

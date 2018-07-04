@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-dygraphs/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/R-cran-dygraphs/Makefile 473714 2018-07-02 09:00:12Z tota $
 
 PORTNAME=	dygraphs
-DISTVERSION=	1.1.1.4
-PORTREVISION=	1
+DISTVERSION=	1.1.1.5
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6/Makefile 470460 2018-05-20 14:19:42Z gerald $
+# $FreeBSD: head/lang/gcc6/Makefile 473895 2018-07-04 15:49:35Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
@@ -80,7 +80,9 @@ MAKE_ARGS+=STAGE1_CXXFLAGS=-fbracket-depth=512
 
 .elif ${ARCH} == powerpc64
 CONFIGURE_ENV+=	UNAME_m="powerpc64"
-USE_GCC=	5	# Cannot require ourselves, needs to be at least 4.9.
+USE_GCC=	5	# This port requires at least GCC 4.9, and we need
+			# to ensure not to cause a dependency on itself (so
+			# USE_GCC=yes or USE_GCC=X+ are not an option).
 
 .elif ${ARCH} == powerpcspe
 CONFIGURE_ARGS+=	--with-cpu=8540 --enable-e500_double --without-fp

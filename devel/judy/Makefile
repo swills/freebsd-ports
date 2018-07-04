@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/judy/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/devel/judy/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	Judy
 PORTVERSION=	1.0.5
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	General purpose dynamic array
 
 LICENSE=	LGPL21
+
+BROKEN_mips=		fails to compile: unrecognized command line option "-m32"
+BROKEN_mips64=		fails to compile: unrecognized command line option "-m64"
 
 USES=		gmake libtool
 GNU_CONFIGURE=	yes

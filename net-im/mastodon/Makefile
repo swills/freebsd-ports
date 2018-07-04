@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/mastodon/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/net-im/mastodon/Makefile 473791 2018-07-03 01:15:32Z jrm $
 
 PORTNAME=	mastodon
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN=		Fails to build
 DEPRECATED=	Breaks too frequently
-EXPIRATION_DATE=	2018-07-01
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	yarn>:www/yarn\
 		${BR_DEPENDS}

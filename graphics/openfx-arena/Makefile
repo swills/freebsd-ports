@@ -1,9 +1,8 @@
-# $FreeBSD: head/graphics/openfx-arena/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/graphics/openfx-arena/Makefile 473667 2018-07-01 12:07:08Z olivier $
 
 PORTNAME=	openfx-arena
-PORTVERSION=	2.3.12
+PORTVERSION=	2.3.13
 DISTVERSIONPREFIX=	Natron-
-PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -39,7 +38,7 @@ USES=		gmake iconv
 USE_GITHUB=	yes
 GH_ACCOUNT=	NatronGitHub
 GH_PROJECT=	openfx-arena
-GH_TUPLE=	NatronGitHub:openfx-supportext:1db2bfa:openfx_supportext/SupportExt \
+GH_TUPLE=	NatronGitHub:openfx-supportext:e600cae:openfx_supportext/SupportExt \
 		NatronGitHub:openfx:a85dc34:openfx/OpenFX \
 		NatronGitHub:openfx-io:Natron-2.3.12:OpenFX_IO/OpenFX-IO \
 		NatronGitHub:SequenceParsing:9e8b77a:SequenceParsing/OpenFX-IO/IOSupport/SequenceParsing \

@@ -1,8 +1,9 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/mail/opendmarc/Makefile 449797 2017-09-13 14:45:29Z pi $
+# $FreeBSD: head/mail/opendmarc/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	opendmarc
 PORTVERSION=	1.3.2
+PORTREVISION=	1
 CATEGORIES=	mail security
 MASTER_SITES=	SF/${PORTNAME} \
 		SF/${PORTNAME}/Previous%20Releases

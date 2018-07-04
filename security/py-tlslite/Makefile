@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/security/py-tlslite/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/security/py-tlslite/Makefile 473729 2018-07-02 12:54:56Z swills $
 
 PORTNAME=	tlslite
 PORTVERSION=	0.4.9
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python module implementing SSL 3.0, TLS 1.0, and TLS 1.1
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

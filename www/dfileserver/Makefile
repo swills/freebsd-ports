@@ -1,8 +1,9 @@
 # Created by: Dash|RD
-# $FreeBSD: head/www/dfileserver/Makefile 375166 2014-12-21 16:09:04Z feld $
+# $FreeBSD: head/www/dfileserver/Makefile 473814 2018-07-03 09:55:25Z rodrigo $
 
 PORTNAME=	DFileServer
 PORTVERSION=	1.1.3
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://rodrigo.osorio.free.fr/freebsd/distfiles/ \
 		http://harpy.soarwitheagles.net/~dashy/
@@ -11,6 +12,8 @@ MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	Compact webserver designed to make sharing files easy
 
 LICENSE=	BSD3CLAUSE
+
+USES=	dos2unix
 
 PLIST_FILES=	bin/dfileserver
 

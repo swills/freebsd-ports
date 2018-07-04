@@ -1,9 +1,9 @@
 # Created by: Peter Hollaubek <fifteen@inext.hu>
-# $FreeBSD: head/mail/sentinel/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/sentinel/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	sentinel
 PORTVERSION=	1.7b
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	SF/smfilter/${PORTNAME}/Sentinel%20${PORTVERSION}
 

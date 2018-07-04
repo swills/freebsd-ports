@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/flyhard/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/flyhard/Makefile 473844 2018-07-03 16:35:06Z amdmi3 $
 
 PORTNAME=	flyhard
 PORTVERSION=	0.42
@@ -14,27 +14,36 @@ COMMENT=	Game resembling Thrust, but with lots of shooting and puzzles
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN_armv6=	dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
+BROKEN_armv7=	dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
+
 LIB_DEPENDS=	libpng.so:graphics/png
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 
-BROKEN_armv6=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
-BROKEN_armv7=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
-
+USES=		gmake localbase
 GNU_CONFIGURE=	yes
-USES=		gmake
 USE_SDL=	sdl mixer
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	AUTHORS ChangeLog README
 PORTDATA=	*
 
+DESKTOP_ENTRIES="Fly Hard" \
+		"" \
+		"${DATADIR}/images/ship.png" \
+		"${PORTNAME}" \
+		"Game;ArcadeGame;" \
+		false
+
 OPTIONS_DEFINE=	DOCS
 
 post-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+	@${FIND} ${STAGEDIR}${DATADIR} -type f -exec ${CHMOD} 644 {} +
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

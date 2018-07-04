@@ -1,8 +1,9 @@
 # Created by: Kenneth Vestergaard Schmidt <kvs@pil.dk>
-# $FreeBSD: head/editors/emacs-devel/Makefile 472261 2018-06-12 16:03:56Z jrm $
+# $FreeBSD: head/editors/emacs-devel/Makefile 473708 2018-07-02 06:27:48Z yuri $
 
 PORTNAME=	emacs
 DISTVERSION=	${EMACS_VER}.${EMACS_REV}
+PORTREVISON=	1
 PORTEPOCH=	2
 CATEGORIES=	editors ipv6
 PKGNAMESUFFIX=	-devel

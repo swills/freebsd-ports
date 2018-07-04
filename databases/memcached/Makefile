@@ -1,5 +1,5 @@
 # Created by: Sean Chittenden <seanc@FreeBSD.org>
-# $FreeBSD: head/databases/memcached/Makefile 470838 2018-05-25 13:55:47Z swills $
+# $FreeBSD: head/databases/memcached/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	memcached
 PORTVERSION=	1.5.8
@@ -12,6 +12,9 @@ COMMENT=	High-performance distributed memory object cache system
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_mips=		fails to link: failed to merge target specific data of file /usr/lib/dtrace/drti.o
+BROKEN_mips64=		fails to link: failed to merge target specific data of file /usr/lib/dtrace/drti.o
 
 LIB_DEPENDS=	libevent.so:devel/libevent
 

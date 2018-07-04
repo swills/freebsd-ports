@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/mail/p5-Mail-Mbox-MessageParser/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Mbox-MessageParser/Makefile 473834 2018-07-03 13:52:01Z wen $
 
 PORTNAME=	Mail-Mbox-MessageParser
-PORTVERSION=	1.5105
+PORTVERSION=	1.5106
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

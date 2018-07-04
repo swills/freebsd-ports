@@ -1,9 +1,9 @@
 # Created by: Cyril Guibourg
-# $FreeBSD: head/mail/milter-greylist/Makefile 469111 2018-05-05 14:11:14Z danfe $
+# $FreeBSD: head/mail/milter-greylist/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	milter-greylist
 PORTVERSION=	4.6.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.espci.fr/pub/milter-greylist/ \
 		http://fossies.org/unix/privat/
@@ -20,9 +20,9 @@ USES=		tar:tgz
 ##
 # Use the following quirks to choose which sendmail to use (ports or system):
 #
-#   WITH_SENDMAIL_BASE=yes
+#   WITH_MILTER_BASE=yes
 # or
-#   WITH_SENDMAIL_PORT=yes
+#   WITH_MILTER_PORT=yes
 #
 # If unspecified, check for an up-to-date system version but give an
 # installed port preference over it.

@@ -1,9 +1,9 @@
 # Created by: Anton Lysenok <bart@tapolsky.net.ua>
-# $FreeBSD: head/mail/smfsav-devel/Makefile 448767 2017-08-26 12:46:00Z dbaio $
+# $FreeBSD: head/mail/smfsav-devel/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	smfsav
 PORTVERSION=	2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://smf-sav.anw.at/
 PKGNAMESUFFIX=	-devel

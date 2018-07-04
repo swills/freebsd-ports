@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 473062 2018-06-22 19:59:41Z tcberner $
+# $FreeBSD: head/net/Makefile 473842 2018-07-03 15:20:13Z rene $
 #
 
     COMMENT = Networking tools
@@ -1236,7 +1236,6 @@
     SUBDIR += rubygem-fog-aliyun
     SUBDIR += rubygem-fog-atmos
     SUBDIR += rubygem-fog-aws
-    SUBDIR += rubygem-fog-aws1
     SUBDIR += rubygem-fog-aws2
     SUBDIR += rubygem-fog-azure
     SUBDIR += rubygem-fog-brightbox
@@ -1246,7 +1245,6 @@
     SUBDIR += rubygem-fog-dynect
     SUBDIR += rubygem-fog-ecloud
     SUBDIR += rubygem-fog-google
-    SUBDIR += rubygem-fog-google0
     SUBDIR += rubygem-fog-internet-archive
     SUBDIR += rubygem-fog-joyent
     SUBDIR += rubygem-fog-local
@@ -1269,7 +1267,6 @@
     SUBDIR += rubygem-geoip
     SUBDIR += rubygem-gitaly
     SUBDIR += rubygem-gitaly-proto
-    SUBDIR += rubygem-gitaly-proto088
     SUBDIR += rubygem-gitaly-proto094
     SUBDIR += rubygem-gitaly-proto095
     SUBDIR += rubygem-gitaly-proto096
@@ -1292,7 +1289,6 @@
     SUBDIR += rubygem-oauth
     SUBDIR += rubygem-oauth2
     SUBDIR += rubygem-octokit
-    SUBDIR += rubygem-octokit46
     SUBDIR += rubygem-octopress-deploy
     SUBDIR += rubygem-omniauth-auth0
     SUBDIR += rubygem-omniauth-auth014
@@ -1309,7 +1305,6 @@
     SUBDIR += rubygem-omniauth-oauth2
     SUBDIR += rubygem-omniauth-openid
     SUBDIR += rubygem-omniauth-twitter
-    SUBDIR += rubygem-omniauth-twitter12
     SUBDIR += rubygem-open-uri-cached
     SUBDIR += rubygem-opennebula
     SUBDIR += rubygem-ovirt-engine-sdk

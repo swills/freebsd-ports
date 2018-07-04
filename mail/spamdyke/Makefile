@@ -1,5 +1,5 @@
 # Created by: Peter Kieser <peter@kieser.ca>
-# $FreeBSD: head/mail/spamdyke/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/mail/spamdyke/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	spamdyke
 PORTVERSION=	5.0.1
@@ -12,9 +12,11 @@ COMMENT=	Qmail filter for monitoring and intercepting SMTP connections
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${LOCALBASE}/bin/tcprules:sysutils/ucspi-tcp
+BROKEN_mips=		fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_mips64=		fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_powerpc64=	fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
 
-BROKEN_powerpc64=	Does not build: error: nested functions are disabled, use -fnested-functions to re-enable
+RUN_DEPENDS=	${LOCALBASE}/bin/tcprules:sysutils/ucspi-tcp
 
 USES=		cpe qmail tar:tgz
 WRKSRC=		${WRKDIR}/${DISTNAME}/spamdyke

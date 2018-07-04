@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/mail/milter-regex/Makefile 408774 2016-02-13 09:03:15Z dinoex $
+# $FreeBSD: head/mail/milter-regex/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	milter-regex
 PORTVERSION=	2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://www.benzedrine.cx/
 

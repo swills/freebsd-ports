@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 473535 2018-06-29 09:04:22Z yuri $
+# $FreeBSD: head/science/Makefile 473652 2018-07-01 05:22:27Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -196,6 +196,7 @@
     SUBDIR += py-pyteomics.biolccc
     SUBDIR += py-qspin
     SUBDIR += py-quantities
+    SUBDIR += py-rmf
     SUBDIR += py-scikit-fuzzy
     SUBDIR += py-scikit-learn
     SUBDIR += py-scikit-sparse

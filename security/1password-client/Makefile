@@ -1,10 +1,11 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/1password-client/Makefile 470300 2018-05-18 15:39:43Z ler $
+# $FreeBSD: head/security/1password-client/Makefile 473878 2018-07-04 11:48:45Z ler $
 
 PORTNAME=	1password-client
 PORTVERSION=	0.4.1
 CATEGORIES=	security
-MASTER_SITES=	https://cache.agilebits.com/dist/1P/op/pkg/v${PORTVERSION}/
+MASTER_SITES=	https://cache.agilebits.com/dist/1P/op/pkg/v${PORTVERSION}/ \
+		LOCAL/ler/op
 
 MAINTAINER=	ler@FreeBSD.org
 COMMENT=	1Password CLI client

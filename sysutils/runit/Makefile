@@ -1,5 +1,5 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/sysutils/runit/Makefile 435595 2017-03-07 11:45:34Z danfe $
+# $FreeBSD: head/sysutils/runit/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	runit
 PORTVERSION=	2.1.2
@@ -13,6 +13,9 @@ COMMENT=	Service supervision tools compatible with DJB daemontools
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/package/COPYING
+
+BROKEN_mips=		fails to install: runit-init failed
+BROKEN_mips64=		fails to install: runit-init failed
 
 USE_RC_SUBR=	runsvdir
 WRKSRC=		${WRKDIR}/admin/${DISTNAME}

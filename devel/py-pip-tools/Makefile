@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pip-tools/Makefile 473241 2018-06-24 20:17:57Z sunpoet $
+# $FreeBSD: head/devel/py-pip-tools/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	pip-tools
 PORTVERSION=	2.0.2
@@ -13,6 +13,7 @@ COMMENT=	Keep your pinned dependencies fresh
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_mips64=		fails to compile: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 6865: ordinal not in range(128)
 BROKEN_powerpc64=	fails to compile: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 6865: ordinal not in range(128)
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@${PY_FLAVOR}

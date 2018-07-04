@@ -1,5 +1,5 @@
 # Created by: Dima Sivachenko <dima@chg.ru>
-# $FreeBSD: head/net/pvm/Makefile 434163 2017-02-15 14:02:45Z tijl $
+# $FreeBSD: head/net/pvm/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	pvm
 PORTVERSION=	3.4.6
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Parallel Virtual Machine libraries and environment
 
 LICENSE=	MIT
+
+BROKEN_mips=		fails to compile: 'SIGCLD' undeclared (first use in this function)
+BROKEN_mips64=		fails to compile: 'SIGCLD' undeclared (first use in this function)
 
 USES=		tar:tgz
 USE_LDCONFIG=	yes

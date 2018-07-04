@@ -1,15 +1,15 @@
 # Created by: Alistair King <alistair@caida.org>
-# $FreeBSD: head/devel/wandio/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/devel/wandio/Makefile 473750 2018-07-02 15:18:19Z swills $
 
 PORTNAME=	wandio
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.5
 CATEGORIES=	devel
 MASTER_SITES=	http://research.wand.net.nz/software/wandio/
 
 MAINTAINER=	alistair@caida.org
 COMMENT=	C library for compressed file I/O
 
-LICENSE=	GPLv2
+LICENSE=	LGPL3+
 
 USES=		libtool
 GNU_CONFIGURE=	yes

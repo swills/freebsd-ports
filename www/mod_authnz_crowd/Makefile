@@ -1,5 +1,5 @@
 # Created by: Vick Khera <vivek@khera.org>
-# $FreeBSD: head/www/mod_authnz_crowd/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_authnz_crowd/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	mod_authnz_crowd
 PORTVERSION=	2.2.2
@@ -13,11 +13,13 @@ COMMENT=	Apache 2.2+ module to use Atlassian Crowd for authentication
 
 LICENSE=	APACHE20
 
+BROKEN_mips=		fails to build: error: curl/curl.h: No such file or directory
+BROKEN_mips64=		fails to build: error: curl/curl.h: No such file or directory
+BROKEN_powerpc64=	fails to build: error: curl/curl.h: No such file or directory
+
 LIB_DEPENDS=	libsvn_client-1.so:devel/subversion \
 		libcurl.so:ftp/curl
 RUN_DEPENDS=	${LOCALBASE}/${APACHEMODDIR}/mod_dav_svn.so:www/mod_dav_svn
-
-BROKEN_powerpc64=	Does not build: error: curl/curl.h: No such file or directory
 
 GNU_CONFIGURE=	yes
 LIBS+=		-L${LOCALBASE}/lib

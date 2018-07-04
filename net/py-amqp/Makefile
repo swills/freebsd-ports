@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net/py-amqp/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-amqp/Makefile 473713 2018-07-02 08:37:35Z amdmi3 $
 
 PORTNAME=	amqp
 PORTVERSION=	2.2.2
@@ -20,7 +20,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR} \
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC}/funtests && ${SETENV} PYTHONPATH=../ ${PYTHON_CMD} run_all.py
 
 .include <bsd.port.mk>

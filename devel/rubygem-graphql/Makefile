@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-graphql/Makefile 473897 2018-07-04 16:04:02Z mfechner $
 
 PORTNAME=	graphql
 PORTVERSION=	1.8.4

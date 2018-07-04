@@ -1,8 +1,8 @@
 # Created by: Gleb Smirnoff <glebius@FreeBSD.org>
-# $FreeBSD: head/astro/josm/Makefile 471573 2018-06-04 17:25:31Z amdmi3 $
+# $FreeBSD: head/astro/josm/Makefile 473765 2018-07-02 19:03:14Z amdmi3 $
 
 PORTNAME=	josm
-PORTVERSION=	13878
+PORTVERSION=	13996
 CATEGORIES=	astro java
 MASTER_SITES=	http://josm.openstreetmap.de/download/ \
 		http://mirror.amdmi3.ru/distfiles/

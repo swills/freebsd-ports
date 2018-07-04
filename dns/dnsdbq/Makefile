@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/dnsdbq/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/dns/dnsdbq/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	dnsdbq
 PORTVERSION=	1.0.0
@@ -13,6 +13,8 @@ LICENSE_COMB=		multi
 LICENSE_FILE_APACHE20=	${WRKSRC}/Apache-2.0
 LICENSE_FILE_ISCL=	${WRKSRC}/ISC
 
+BROKEN_mips=		fails to compile: dnsdbq.c:817: passing argument 1 of 'curl_global_init' with different width due to prototype
+BROKEN_mips64=		fails to compile: dnsdbq.c:817: passing argument 1 of 'curl_global_init' with different width due to prototype
 BROKEN_powerpc64=	fails to compile: dnsdbq.c:817: passing argument 1 of 'curl_global_init' with different width due to prototype
 
 LIB_DEPENDS=	libjansson.so:devel/jansson \

@@ -1,9 +1,9 @@
 # Created by: Frank Behrens
-# $FreeBSD: head/dns/zkt/Makefile 430631 2017-01-05 11:00:49Z amdmi3 $
+# $FreeBSD: head/dns/zkt/Makefile 473879 2018-07-04 11:52:25Z rene $
 
 PORTNAME=		zkt
 DISTVERSION=		1.1.2
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		dns
 MASTER_SITES=		http://www.hznet.de/dns/zkt/
 
@@ -13,7 +13,7 @@ COMMENT=		Tool to manage keys and signatures for DNSSEC-zones
 LICENSE=		BSD3CLAUSE
 LICENSE_FILE=		${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=		dnssec-signzone:dns/bind99
+BUILD_DEPENDS=		dnssec-signzone:dns/bind911
 RUN_DEPENDS:=		${BUILD_DEPENDS}
 
 DIR_NAMED_CONF?=	/etc/namedb

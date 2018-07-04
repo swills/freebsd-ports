@@ -1,9 +1,9 @@
 # Created by: Netherby <netherby@dancingfortune.com>
-# $FreeBSD: head/mail/archivesmtp/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/mail/archivesmtp/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	archivesmtp
 PORTVERSION=	1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.dancingfortune.com/projects/archivesmtp/files/
 

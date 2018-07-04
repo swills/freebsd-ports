@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/erlang-p1_utils/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/textproc/erlang-p1_utils/Makefile 473622 2018-06-30 14:53:17Z farrokhi $
 
 PORTNAME=	p1_utils
-PORTVERSION=	1.0.11
+PORTVERSION=	1.0.12
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	erlang-
 

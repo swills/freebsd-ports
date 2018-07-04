@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/net-mgmt/ipv6calc/Makefile 444994 2017-07-03 23:37:11Z dbaio $
+# $FreeBSD: head/net-mgmt/ipv6calc/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	ipv6calc
 PORTVERSION=	1.0.0
@@ -12,6 +12,8 @@ COMMENT=	Convert, change, and calculate with IPv6 addresses
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN_mips=		fails to build: libipv6addr.c: addr_test_method may be used uninitialized in this function
+BROKEN_mips64=		fails to build: libipv6addr.c: addr_test_method may be used uninitialized in this function
 BROKEN_powerpc64=	fails to build: libipv6addr.c: addr_test_method may be used uninitialized in this function
 
 USES=		gmake perl5 shebangfix ssl

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/orangehrm/Makefile 468670 2018-04-30 04:02:30Z wen $
+# $FreeBSD: head/www/orangehrm/Makefile 473833 2018-07-03 13:44:13Z wen $
 
 PORTNAME=	orangehrm
-PORTVERSION=	4.1
+PORTVERSION=	4.1.1
 CATEGORIES=	www misc
 MASTER_SITES=	SF/${PORTNAME}/stable/${PORTVERSION}
 
@@ -18,6 +18,7 @@ NO_BUILD=	yes
 PLIST=		${WRKDIR}/plist
 SUB_FILES=	pkg-message
 HRMDIR=		www/orangehrm
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/${PORTNAME}-${PORTVERSION}
 
 pre-install:
 	@${ECHO_CMD} -e '@owner ${WWWOWN}\n@group ${WWWGRP}' > ${PLIST}

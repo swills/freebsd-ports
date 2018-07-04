@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/security/honggfuzz/Makefile 440859 2017-05-13 23:36:16Z linimon $
+# $FreeBSD: head/security/honggfuzz/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	honggfuzz
 PORTVERSION=	0.7
@@ -11,6 +11,8 @@ COMMENT=	General-purpose fuzzer with simple, command-line interface
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN_mips=		fails to compile: cc1: error: unrecognized command line option -Wframe-larger-than=131072
+BROKEN_mips64=		fails to compile: cc1: error: unrecognized command line option -Wframe-larger-than=131072
 BROKEN_powerpc64=	fails to compile: cc1: error: unrecognized command line option -Wframe-larger-than=131072
 
 USES=		gmake

@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/SoPlex/Makefile 469338 2018-05-07 22:29:46Z jbeich $
+# $FreeBSD: head/math/SoPlex/Makefile 473815 2018-07-03 09:57:52Z yuri $
 
 PORTNAME=	SoPlex
-DISTVERSION=	3.1.1
+DISTVERSION=	4.0.0
 CATEGORIES=	math science
 MASTER_SITES=	http://soplex.zib.de/download/release/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}

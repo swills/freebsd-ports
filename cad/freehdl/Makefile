@@ -1,5 +1,5 @@
 # Created by: lon_kamikaze@gmx.de
-# $FreeBSD: head/cad/freehdl/Makefile 472665 2018-06-18 01:48:46Z linimon $
+# $FreeBSD: head/cad/freehdl/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	freehdl
 PORTVERSION=	0.0.7
@@ -10,6 +10,8 @@ MASTER_SITES=	http://freehdl.seul.org/~enaroska/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free VHDL simulator
 
+BROKEN_mips=		fails to build: cc1plus: error: unrecognized command line option "-std=gnu++03"
+BROKEN_mips64=		fails to build: cc1plus: error: unrecognized command line option "-std=gnu++03"
 BROKEN_powerpc64=	fails to build: cc1plus: error: unrecognized command line option "-std=gnu++03"
 
 USES=		gmake pathfix libtool makeinfo perl5 pkgconfig

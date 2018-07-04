@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 473186 2018-06-24 07:30:29Z ohauer $
+# $FreeBSD: head/mail/Makefile 473842 2018-07-03 15:20:13Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -434,7 +434,6 @@
     SUBDIR += p5-Net-ManageSieve
     SUBDIR += p5-Net-POP3-SSLWrapper
     SUBDIR += p5-Net-QMTP
-    SUBDIR += p5-Net-SMTP-SSL
     SUBDIR += p5-Net-SMTP-Server
     SUBDIR += p5-Net-SMTP-TLS
     SUBDIR += p5-Net-SMTP-TLS-ButMaintained
@@ -604,6 +603,7 @@
     SUBDIR += roundcube-contextmenu
     SUBDIR += roundcube-groupvice
     SUBDIR += roundcube-html5_notifier
+    SUBDIR += roundcube-identity_smtp
     SUBDIR += roundcube-login_info
     SUBDIR += roundcube-markasjunk2
     SUBDIR += roundcube-mobilecube

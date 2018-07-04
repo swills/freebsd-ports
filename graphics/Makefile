@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 473441 2018-06-27 14:02:09Z wen $
+# $FreeBSD: head/graphics/Makefile 473842 2018-07-03 15:20:13Z rene $
 #
 
     COMMENT = Graphics tools and libraries
@@ -627,7 +627,6 @@
     SUBDIR += mhgui
     SUBDIR += ming
     SUBDIR += mirage
-    SUBDIR += mitsuba
     SUBDIR += mmrecover
     SUBDIR += movit
     SUBDIR += mozjpeg

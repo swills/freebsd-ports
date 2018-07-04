@@ -1,5 +1,5 @@
 # Created by: Ben Lavery <ben.lavery@hashbang0.com>
-# $FreeBSD: head/games/bunnysay/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/games/bunnysay/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	bunnysay
 PORTVERSION=	1.1
@@ -12,9 +12,7 @@ COMMENT=	Bunny Sign for terminals with UTF-8 support
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option -std=c++11
-
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 
 ALL_TARGET=	bunnysay
 
