@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/vbsfilter/Makefile 408774 2016-02-13 09:03:15Z dinoex $
+# $FreeBSD: head/mail/vbsfilter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	vbsfilter
 PORTVERSION=	1.15
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.dinoex.de/pub/approved/
 EXTRACT_SUFX=	.c

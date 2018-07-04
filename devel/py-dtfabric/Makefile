@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-dtfabric/Makefile 470775 2018-05-24 12:28:04Z antoine $
+# $FreeBSD: head/devel/py-dtfabric/Makefile 473759 2018-07-02 17:38:10Z antoine $
 
 PORTNAME=	dtfabric
-PORTVERSION=	20180522
+PORTVERSION=	20180604
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/libyal/dtfabric/releases/download/${PORTVERSION}/
@@ -19,7 +19,10 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent
+
+post-patch:
+	${REINPLACE_CMD} "s,share/doc/dtfabric,${DOCSDIR_REL}," ${WRKSRC}/setup.py
 
 do-test:
 	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} ${PYTHON_CMD} run_tests.py)

@@ -1,9 +1,9 @@
 # Created by: wolpert
-# $FreeBSD: head/mail/rbl-milter/Makefile 408774 2016-02-13 09:03:15Z dinoex $
+# $FreeBSD: head/mail/rbl-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	rbl-milter
 PORTVERSION=	0.30
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	http://opensource.confusticate.com/rbl-milter/
 

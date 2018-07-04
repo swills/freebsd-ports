@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/pecl-stomp2/Makefile 465055 2018-03-20 02:20:07Z dbaio $
+# $FreeBSD: head/net-im/pecl-stomp2/Makefile 473788 2018-07-03 00:49:20Z dbaio $
 
 PORTNAME=	stomp
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	net-im pear
 
 MAINTAINER=	dbaio@FreeBSD.org

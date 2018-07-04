@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/erlang-riak/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/lang/erlang-riak/Makefile 473894 2018-07-04 14:48:29Z rm $
 
 PORTNAME=	erlang-riak
 PORTVERSION=	16.b.02
@@ -8,7 +8,7 @@ DISTNAME=	otp_src_${ERL_RELEASE}
 DIST_SUBDIR=	erlang
 
 MAINTAINER=	wg@FreeBSD.org
-COMMENT=	Custom erlang from bashio to be used with riak2
+COMMENT=	Custom erlang from Basho to be used with riak2
 
 WRKSRC=		${WRKDIR}/otp_src_${ERL_RELEASE}
 

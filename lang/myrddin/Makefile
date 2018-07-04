@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/myrddin/Makefile 473595 2018-06-30 03:26:02Z tobik $
+# $FreeBSD: head/lang/myrddin/Makefile 473665 2018-07-01 11:13:18Z tobik $
 
 PORTNAME=	myrddin
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	lang
 MASTER_SITES=	http://myrlang.org/releases/
 
@@ -17,7 +17,7 @@ USES=	gmake
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix "${PREFIX}"
-ALL_TARGET=	bootstrap all
+ALL_TARGET=	bootstrap
 TEST_TARGET=	check
 WRKSRC=	${WRKDIR}/mc
 

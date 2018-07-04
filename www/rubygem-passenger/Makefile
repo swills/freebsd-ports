@@ -1,8 +1,8 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/www/rubygem-passenger/Makefile 473206 2018-06-24 16:03:41Z osa $
+# $FreeBSD: head/www/rubygem-passenger/Makefile 473856 2018-07-03 23:15:03Z osa $
 
 PORTNAME=	passenger
-PORTVERSION=	5.3.2
+PORTVERSION=	5.3.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMEPREFIX=	rubygem-
@@ -56,7 +56,7 @@ LIB_DEPENDS+=	libuv.so:devel/libuv \
 		libunwind.so:devel/libunwind \
 		libapr-1.so:devel/apr1
 
-BUILD_DEPENDS+=	rubygem-rack16>=0:www/rubygem-rack16
+BUILD_DEPENDS+=	rubygem-rack>=0:www/rubygem-rack
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 SUB_LIST+=	GEM_LIB_DIR=${GEM_LIB_DIR} RUBY=${RUBY}

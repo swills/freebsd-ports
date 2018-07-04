@@ -1,5 +1,5 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/devel/skalibs/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/devel/skalibs/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	skalibs
 PORTVERSION=	2.6.3.0
@@ -11,6 +11,8 @@ COMMENT=	General purpose C libraries used by skarnet.org software
 
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_mips64=		fails to build: Checking whether system has auto-close after fd-passing... test crashed, aborting
 
 USES=		gmake
 USE_LDCONFIG=	yes

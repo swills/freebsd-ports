@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/lang/newlisp-devel/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/newlisp-devel/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	newlisp
 PORTVERSION=	10.6.1
@@ -13,9 +13,11 @@ COMMENT=	LISP like scripting language
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS=	libffi.so:devel/libffi
+BROKEN_mips=		fails to compile: unrecognized command line option "-m64"
+BROKEN_mips64=		fails to compile: unrecognized command line option "-m64"
+BROKEN_powerpc64=	fails to build: error: redefinition of typedef CPPFunction
 
-BROKEN_powerpc64=	does not build: error: redefinition of typedef CPPFunction
+LIB_DEPENDS=	libffi.so:devel/libffi
 
 CONFLICTS=	newlisp-[0-9]*
 

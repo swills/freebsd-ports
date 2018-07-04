@@ -1,5 +1,5 @@
 # Created by: Thaddeus Covert <tcovert@grimmy.sahuagin.net>
-# $FreeBSD: head/devel/log4cxx/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/log4cxx/Makefile 473831 2018-07-03 13:19:28Z amdmi3 $
 
 PORTNAME=	log4cxx
 PORTVERSION=	0.10.0
@@ -21,6 +21,8 @@ USES=		pathfix libtool
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 MAKE_JOBS_UNSAFE=	yes
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 OPTIONS_DEFINE=	BOOST DOXYGEN
 

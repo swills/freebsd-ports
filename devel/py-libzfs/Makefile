@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-libzfs/Makefile 463077 2018-02-26 22:31:46Z sunpoet $
+# $FreeBSD: head/devel/py-libzfs/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	libzfs
 PORTVERSION=	1.0.20171215
@@ -11,6 +11,8 @@ COMMENT=	Python libzfs bindings
 
 LICENSE=	BSD2CLAUSE
 
+BROKEN_mips=		fails to build: libzfs.c: error: convert_for_assignment: incompatible type for argument 3 of zfs_path_to_zhandle
+BROKEN_mips64=		fails to build: libzfs.c: error: convert_for_assignment: incompatible type for argument 3 of zfs_path_to_zhandle
 BROKEN_powerpc64=	fails to build: libzfs.c: error: convert_for_assignment: incompatible type for argument 3 of zfs_path_to_zhandle
 
 RUN_DEPENDS=	${PY_ENUM34}

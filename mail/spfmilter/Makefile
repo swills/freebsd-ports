@@ -1,8 +1,9 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/mail/spfmilter/Makefile 452619 2017-10-22 01:34:21Z leres $
+# $FreeBSD: head/mail/spfmilter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	spfmilter
 PORTVERSION=	2.001
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	https://acme.com/software/spfmilter/
 

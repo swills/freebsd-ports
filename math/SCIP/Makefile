@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/SCIP/Makefile 467371 2018-04-15 07:54:28Z yuri $
+# $FreeBSD: head/math/SCIP/Makefile 473815 2018-07-03 09:57:52Z yuri $
 
 PORTNAME=	SCIP
 DISTVERSION=	5.0.1
+PORTREVISION=	1
 CATEGORIES=	math science
 MASTER_SITES=	http://scip.zib.de/download/release/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}
@@ -25,5 +26,7 @@ USES=		cmake:outsource readline tar:tgz
 EXTRACT_CMD=	gtar
 USE_LDCONFIG=	yes
 PLIST_SUB=	SHL4=${DISTVERSION}.0 SHL2=${DISTVERSION:R}
+
+CXXFLAGS+=	-I${LOCALBASE}/include/soplex
 
 .include <bsd.port.mk>

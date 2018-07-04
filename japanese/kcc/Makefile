@@ -1,12 +1,12 @@
 # Created by: Satoshi TAOKA <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/kcc/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/japanese/kcc/Makefile 473835 2018-07-03 14:10:22Z wen $
 
 PORTNAME=	kcc
-PORTVERSION=	1.0
-PORTREVISION=	1
+PORTVERSION=	1.1
 CATEGORIES=	japanese
-MASTER_SITES=	PORTS_JP
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/os/linux/JE/sources/base/
 DISTNAME=	${PORTNAME}
+DIST_SUBDIR=	${DISTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Kanji code conversion Filter

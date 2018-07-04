@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 471856 2018-06-06 15:54:57Z tobik $
+# $FreeBSD: head/games/Makefile 473675 2018-07-01 17:00:10Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -310,6 +310,7 @@
     SUBDIR += freedroidrpg
     SUBDIR += freeminer
     SUBDIR += freeminer-default
+    SUBDIR += freeorion
     SUBDIR += freera
     SUBDIR += freesweep
     SUBDIR += freesynd

@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/charybdis/Makefile 439778 2017-04-30 00:44:32Z linimon $
+# $FreeBSD: head/irc/charybdis/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	charybdis
 PORTVERSION=	3.5.3
@@ -11,6 +11,8 @@ COMMENT=	Powerful IRC daemon, based on ircd-ratbox
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_mips=		Does not build: undefined reference to le32toh
+BROKEN_mips64=		Does not build: undefined reference to le32toh
 BROKEN_powerpc64=	Does not build: undefined reference to le32toh
 
 CONFLICTS=	ircd-ratbox-[0-9]* ircd-ratbox-devel-[0-9]* \

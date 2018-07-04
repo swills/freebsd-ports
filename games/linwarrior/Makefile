@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/linwarrior/Makefile 473081 2018-06-22 21:29:21Z amdmi3 $
+# $FreeBSD: head/games/linwarrior/Makefile 473735 2018-07-02 13:28:46Z amdmi3 $
 
 PORTNAME=	linwarrior
 PORTVERSION=	20100320
@@ -17,6 +17,7 @@ USE_GL=		gl glu
 USE_SDL=	sdl
 
 CFLAGS+=	-Wno-c++11-narrowing
+LLD_UNSAFE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

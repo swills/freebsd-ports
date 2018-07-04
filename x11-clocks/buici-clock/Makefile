@@ -1,8 +1,9 @@
 # Created by: Hendrik Scholz <hscholz@raisdorf.net>
-# $FreeBSD: head/x11-clocks/buici-clock/Makefile 437547 2017-04-02 10:32:22Z rodrigo $
+# $FreeBSD: head/x11-clocks/buici-clock/Makefile 473812 2018-07-03 09:33:24Z rodrigo $
 
 PORTNAME=	buici-clock
 PORTVERSION=	0.4.9.4
+PORTREVISION=	1
 CATEGORIES=	x11-clocks
 MASTER_SITES=	DEBIAN
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -18,7 +19,7 @@ LIB_DEPENDS=	libcairo.so:graphics/cairo
 WRKSRC=		${WRKDIR}/buici
 
 USE_XORG=	x11 xext
-USES=		tar:xz bison gmake pkgconfig
+USES=		tar:xz bison gmake pkgconfig autoreconf
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=yes
 

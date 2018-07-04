@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gcc-arm-embedded/files/Makefile 459944 2018-01-25 14:01:37Z lev $
+# $FreeBSD: head/devel/gcc-arm-embedded/files/Makefile 473850 2018-07-03 17:53:51Z lev $
 
 .include "Makefile.inc"
 
@@ -169,6 +169,7 @@ build-newlib:
 	 --htmldir=${DOC_PREFIX}/html \
 	 --pdfdir=${DOC_PREFIX}/pdf \
 	 --enable-newlib-io-long-long \
+	 --enable-newlib-io-c99-formats \
 	 --enable-newlib-register-fini \
 	 --disable-newlib-supplied-syscalls \
 	 --disable-nls

@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gnatdroid-binutils/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/lang/gnatdroid-binutils/Makefile 473865 2018-07-04 04:31:41Z linimon $
 
 PORTNAME=	binutils
 PORTVERSION=	2.27
@@ -8,7 +8,7 @@ CATEGORIES=	lang
 MASTER_SITES=	SOURCEWARE/binutils/releases
 PKGNAMEPREFIX?=	gnatdroid-
 
-MAINTAINER?=	ports@FreeBSD.org
+MAINTAINER?=	jamie@catflap.org
 COMMENT?=	Infrastructure for C/Ada Android cross-compiler (ARMv7)
 
 LICENSE=	GPLv3 LGPL3

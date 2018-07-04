@@ -1,5 +1,5 @@
 # Created by: Chuck Robey <chuckr@FreeBSD.org>
-# $FreeBSD: head/lang/mosml/Makefile 439717 2017-04-29 05:44:25Z linimon $
+# $FreeBSD: head/lang/mosml/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	mosml
 PORTVERSION=	2.10.1
@@ -9,13 +9,15 @@ CATEGORIES=	lang
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Lightweight implementation of Standard ML
 
+BROKEN_mips=		does not configure: this architecture seems to be neither big endian nor little endian
+BROKEN_mips64=		does not configure: this architecture seems to be neither big endian nor little endian
+BROKEN_powerpc64=	does not configure: this architecture seems to be neither big endian nor little endian
+
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libgdbm.so:databases/gdbm
 
 GH_ACCOUNT=	kfl
 USE_GITHUB=	yes
-
-BROKEN_powerpc64=	does not configure: this architecture seems to be neither big endian nor little endian
 
 RESTRICTED=	Restrictions on for-profit distribution
 

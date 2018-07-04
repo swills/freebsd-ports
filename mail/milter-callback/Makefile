@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/mail/milter-callback/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/mail/milter-callback/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	milter-callback
 PORTVERSION=	1.6.0
@@ -12,9 +12,11 @@ COMMENT=	Milter to perform a envelope-from sender verification on target MX
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS=	libspf2.so:mail/libspf2
+BROKEN_mips=		fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_mips64=		fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_powerpc64=	fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
 
-BROKEN_powerpc64=	Does not build: error: nested functions are disabled, use -fnested-functions to re-enable
+LIB_DEPENDS=	libspf2.so:mail/libspf2
 
 USES=		tar:xz
 USE_RC_SUBR=	milter-callback

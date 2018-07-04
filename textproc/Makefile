@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 473216 2018-06-24 20:06:33Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 473842 2018-07-03 15:20:13Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1303,6 +1303,7 @@
     SUBDIR += py-genshi
     SUBDIR += py-gensim
     SUBDIR += py-gfm
+    SUBDIR += py-grako
     SUBDIR += py-guess-language
     SUBDIR += py-hexdump
     SUBDIR += py-html2text
@@ -1487,7 +1488,6 @@
     SUBDIR += rubygem-amatch
     SUBDIR += rubygem-asciidoctor
     SUBDIR += rubygem-asciidoctor-plantuml
-    SUBDIR += rubygem-asciidoctor-plantuml007
     SUBDIR += rubygem-autoprefixer-rails
     SUBDIR += rubygem-babel-source
     SUBDIR += rubygem-babel-transpiler

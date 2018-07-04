@@ -1,8 +1,9 @@
 # Created by: Vsevolod Lobko <seva@sevasoft.kiev.ua>
-# $FreeBSD: head/mail/py-milter/Makefile 471550 2018-06-04 14:46:41Z mat $
+# $FreeBSD: head/mail/py-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	milter
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${GH_PROJECT}-
 CATEGORIES=	mail python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

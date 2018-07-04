@@ -1,5 +1,5 @@
 # Created by: Clement Laforet
-# $FreeBSD: head/net/haproxy/Makefile 468729 2018-04-30 17:18:35Z demon $
+# $FreeBSD: head/net/haproxy/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	haproxy
 PORTVERSION=	1.7.11
@@ -12,6 +12,9 @@ COMMENT=	Reliable, high performance TCP/HTTP load balancer
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+BROKEN_mips=		fails to build: undefined reference to '__sync_sub_and_fetch_4'
+BROKEN_mips64=		fails to build: undefined reference to '__sync_sub_and_fetch_4'
 
 CONFLICTS_INSTALL=	haproxy-devel-[0-9]*
 

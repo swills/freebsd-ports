@@ -1,5 +1,5 @@
 # Created by: jesper@jdn.dk
-# $FreeBSD: head/benchmarks/sipp/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/benchmarks/sipp/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	sipp
 PORTVERSION=	3.5.1
@@ -12,11 +12,13 @@ COMMENT=	SIP benchmarking and testing tool
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	help2man:misc/help2man
-
+BROKEN_mips=		fails to compile: stat.hpp:307: error: ISO C++ does not support long long
+BROKEN_mips64=		fails to compile: stat.hpp:307: error: ISO C++ does not support long long
 BROKEN_powerpc64=	fails to compile: stat.hpp:307: error: ISO C++ does not support long long
 BROKEN_SSL=		openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	configure: error: ssl library missing
+
+BUILD_DEPENDS=	help2man:misc/help2man
 
 PLIST_FILES=	bin/sipp man/man1/sipp.1.gz
 

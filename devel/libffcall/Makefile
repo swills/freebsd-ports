@@ -1,5 +1,5 @@
 # Created by: jagapen@home.com
-# $FreeBSD: head/devel/libffcall/Makefile 473019 2018-06-22 08:04:38Z yuri $
+# $FreeBSD: head/devel/libffcall/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	libffcall
 PORTVERSION=	1.13
@@ -14,6 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=		fails to build: avcall-armhf.s:46:2: error: '.syntax divided' arm assembly not supported
 BROKEN_armv7=		fails to build: avcall-armhf.s:46:2: error: '.syntax divided' arm assembly not supported
+BROKEN_mips=		fails to build: gmake[2]: No rule to make target 'avcall-mipsn32-macro.S', needed by 'avcall-mipsn32.s'
+BROKEN_mips64=		fails to build: gmake[2]: No rule to make target 'avcall-mips64-macro.S', needed by 'avcall-mips64.s'
 
 GNU_CONFIGURE=	yes
 USES=		gmake libtool

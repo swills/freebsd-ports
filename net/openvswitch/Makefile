@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/net/openvswitch/Makefile 472988 2018-06-21 17:38:29Z swills $
+# $FreeBSD: head/net/openvswitch/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	openvswitch
 PORTVERSION=	2.9.2
@@ -11,6 +11,7 @@ COMMENT=	Production quality, multilayer virtual switch
 
 LICENSE=	APACHE20
 
+BROKEN_mips64=		fails to compile: ofp-actions.h:486: flexible array member in otherwise empty struct
 BROKEN_powerpc64=	fails to compile: bfd.c: internal compiler error: in extract_insn, at recog.c
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}

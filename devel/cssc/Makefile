@@ -1,5 +1,5 @@
 # Created by: Oliver Fromme
-# $FreeBSD: head/devel/cssc/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/cssc/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	cssc
 PORTVERSION=	1.4.0
@@ -13,6 +13,8 @@ COMMENT=	Workalike for the source code control system SCCS
 
 LICENSE=	GPLv3
 
+BROKEN_mips=		fails to compile: ../gl/lib/unistd.h:135:3: "Please include config.h first."
+BROKEN_mips64=		fails to compile: ../gl/lib/unistd.h:135:3: "Please include config.h first."
 BROKEN_powerpc64=	does not build: undefined reference to fmax
 
 GNU_CONFIGURE=	yes

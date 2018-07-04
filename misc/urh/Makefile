@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/urh/Makefile 472661 2018-06-18 00:37:52Z yuri $
+# $FreeBSD: head/misc/urh/Makefile 473810 2018-07-03 09:28:41Z yuri $
 
 PORTNAME=	urh
-DISTVERSION=	2.1.1
-CATEGORIES=	misc python
+DISTVERSION=	2.2.2
+CATEGORIES=	misc hamradio python
 MASTER_SITES=	CHEESESHOP
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 
 USES=		fortran python:3.4+ localbase pyqt:5
 USE_PYQT=	core gui test widgets
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils cython autoplist
 
 PLIST_FILES=	bin/urh.shadow
 

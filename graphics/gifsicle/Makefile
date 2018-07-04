@@ -1,5 +1,5 @@
 # Created by: Brad Hendrickse <bradh@iafrica.com>
-# $FreeBSD: head/graphics/gifsicle/Makefile 459846 2018-01-24 17:25:14Z pi $
+# $FreeBSD: head/graphics/gifsicle/Makefile 473692 2018-07-02 00:47:14Z linimon $
 
 PORTNAME=	gifsicle
 PORTVERSION=	1.91
@@ -11,6 +11,9 @@ COMMENT=	Manipulates GIF images and animations
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_mips=		fails to build: undefined reference to '__sync_add_and_fetch_4'
+BROKEN_mips64=		fails to build: undefined reference to '__sync_add_and_fetch_4'
 
 GNU_CONFIGURE=	yes
 

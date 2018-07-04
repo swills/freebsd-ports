@@ -1,5 +1,5 @@
 # Created by: Sevan Janiyan <venture37@geeklan.co.uk>
-# $FreeBSD: head/net-mgmt/chillispot/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/net-mgmt/chillispot/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	chillispot
 PORTVERSION=	1.0
@@ -12,7 +12,9 @@ MASTER_SITES=	http://www.chillispot.info/download/ \
 MAINTAINER=	venture37@geeklan.co.uk
 COMMENT=	Wireless LAN Access Point Controller
 
-BROKEN_powerpc64=	Does not build: error: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_mips=		fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_mips64=		fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_powerpc64=	fails to build: error: nested functions are disabled, use -fnested-functions to re-enable
 
 CONFLICTS=	coovachilli-[0-9]*
 

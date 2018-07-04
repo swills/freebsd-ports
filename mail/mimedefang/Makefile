@@ -1,8 +1,9 @@
 # Created by: Andrey V. Pevnev <andrey@mgul.ac.ru>
-# $FreeBSD: head/mail/mimedefang/Makefile 456304 2017-12-14 15:57:15Z swills $
+# $FreeBSD: head/mail/mimedefang/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	mimedefang
 PORTVERSION=	2.83
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.mimedefang.org/static/ \
 		http://fossies.org/linux/misc/
@@ -55,9 +56,7 @@ CONFIG_FILES=	mimedefang-filter sa-mimedefang.cf mimedefang-ip-key
 
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"
 
-.if defined(WITH_SENDMAIL_PORT)
-CONFIGURE_ARGS+=	--with-milterinc=${LOCALBASE}/include --with-milterlib=${LOCALBASE}/lib
-.endif
+CONFIGURE_ARGS+=	--with-milterinc=${MILTERBASE}/include --with-milterlib=${MILTERBASE}/lib
 
 CLAMAV_BUILD_DEPENDS+=		clamscan:security/clamav
 CLAMAV_RUN_DEPENDS+=		clamscan:security/clamav

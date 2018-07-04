@@ -1,8 +1,9 @@
 # Created by: Petr Holub <hopet@ics.muni.cz>
-# $FreeBSD: head/devel/jrtplib/Makefile 437193 2017-03-29 12:00:28Z rodrigo $
+# $FreeBSD: head/devel/jrtplib/Makefile 473824 2018-07-03 13:00:33Z rodrigo $
 
 PORTNAME=	jrtplib
 PORTVERSION=	3.11.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://research.edm.uhasselt.be/jori/jrtplib/
 

@@ -1,8 +1,8 @@
 # Created by: Khairil Yusof <kaeru@inigo-tech.com>
-# $FreeBSD: head/devel/py-pytz/Makefile 467050 2018-04-11 14:38:20Z lwhsu $
+# $FreeBSD: head/devel/py-pytz/Makefile 473646 2018-07-01 01:16:39Z lwhsu $
 
 PORTNAME=	pytz
-PORTVERSION=	2018.4
+PORTVERSION=	2018.5
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP

@@ -1,9 +1,9 @@
 # Created by: Nik Clayton <nik@FreeBSD.org>
-# $FreeBSD: head/textproc/docproj/Makefile 459451 2018-01-19 17:04:52Z mat $
+# $FreeBSD: head/textproc/docproj/Makefile 473867 2018-07-04 04:38:35Z swills $
 
 PORTNAME=	docproj
 PORTVERSION=	2.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	textproc
 
 MAINTAINER=	doceng@FreeBSD.org
@@ -21,7 +21,8 @@ RUN_DEPENDS=	links:www/links1 \
 		docbook>0:textproc/docbook \
 		${LOCALBASE}/share/xml/xmlcharent/catalog:textproc/xmlcharent \
 		p5-XML-Parser>=2.41:textproc/p5-XML-Parser \
-		zip:archivers/zip
+		zip:archivers/zip \
+		groff:textproc/groff
 
 USES=		ghostscript:run metaport perl5
 USE_PERL5=	run

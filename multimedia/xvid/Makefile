@@ -1,12 +1,11 @@
 # Created by: Michael Nottebrock <michaelnottebrock@gmx.net> et al
-# $FreeBSD: head/multimedia/xvid/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/multimedia/xvid/Makefile 473884 2018-07-04 13:37:13Z riggs $
 
 PORTNAME=	xvid
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.5
 PORTEPOCH=	1
 CATEGORIES=	multimedia
-MASTER_SITES=	https://downloads.xvid.com/downloads/ \
-		https://source.ipfire.org/source-2.x/
+MASTER_SITES=	https://downloads.xvid.com/downloads/
 DISTNAME=	${PORTNAME}core-${PORTVERSION}
 
 MAINTAINER=	riggs@FreeBSD.org
@@ -15,7 +14,7 @@ COMMENT=	Opensource MPEG-4 codec, based on OpenDivx
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKDIR}/xvidcore/LICENSE
 
-USES=		gmake
+USES=		gmake tar:bz2
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes

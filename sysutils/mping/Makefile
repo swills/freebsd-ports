@@ -1,8 +1,9 @@
-# $FreeBSD: head/sysutils/mping/Makefile 473453 2018-06-27 18:34:43Z dteske $
+# $FreeBSD: head/sysutils/mping/Makefile 473855 2018-07-03 21:46:57Z dteske $
 
 PORTNAME=	mping
-DISTVERSION=	0.1.3
+DISTVERSION=	0.1.4
 CATEGORIES=	sysutils
+PKGNAMESUFFIX=	-fraubsd
 
 MAINTAINER=	dteske@FreeBSD.org
 COMMENT=	Ping multiple hosts

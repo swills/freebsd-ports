@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/erlang-fast_xml/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/textproc/erlang-fast_xml/Makefile 473621 2018-06-30 14:50:34Z farrokhi $
 
 PORTNAME=	fast_xml
-PORTVERSION=	1.1.30
+PORTVERSION=	1.1.32
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	erlang-
 

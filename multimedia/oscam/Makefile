@@ -1,5 +1,5 @@
 # Created by: Franz Bettag <franz@bett.ag>
-# $FreeBSD: head/multimedia/oscam/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/multimedia/oscam/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	oscam
 PORTVERSION=	1.20
@@ -12,6 +12,8 @@ COMMENT=	Softcam software to decrypt digital tv channels
 
 LICENSE=	GPLv3
 
+BROKEN_mips=		does not build: gmake: clang: Command not found
+BROKEN_mips64=		does not build: gmake: clang: Command not found
 BROKEN_powerpc64=	does not build: gmake: clang: Command not found
 
 USES=		gmake ssl tar:bzip2

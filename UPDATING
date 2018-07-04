@@ -5,6 +5,19 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20180701:
+  AFFECTS: users of devel/bats
+  AUTHOR: lifanov@FreeBSD.org
+
+  The devel/bats port has been renamed to devel/bats-core to match the
+  new upstream project.
+
+20180630:
+  AFFECTS: users of net-im/ejabberd
+  AUTHOR: ashish@FreeBSD.org
+
+  In version 18.06, upstream has removed support for IRC transport.
+
 20180625:
   AFFECTS: users of PHP based applications like drush
   AUTHOR: mfechner@FreeBSD.org
@@ -15950,4 +15963,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: head/UPDATING 473487 2018-06-28 07:19:53Z madpilot $
+$FreeBSD: head/UPDATING 473688 2018-07-01 23:28:16Z lifanov $

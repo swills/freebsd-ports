@@ -25,7 +25,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: head/Tools/scripts/MOVEDlint.awk 459958 2018-01-25 20:56:18Z bdrewery $
+# $FreeBSD: head/Tools/scripts/MOVEDlint.awk 473752 2018-07-02 16:19:50Z mat $
 #
 # MOVEDlint - check MOVED for consistency
 #
@@ -82,7 +82,9 @@ $3 !~ /^20[0-3][0-9]-[01][0-9]-[0-3][0-9]$/ {
     srcs[$1] = 1
 
     if (lastdate > $3) {
-        printf "%5d: date going backwards from %s to %s\n", NR, lastdate, $3 | sort
+        printf "%5d: date going backwards from %s to %s from this line\n", NR-1, lastdate, $3 | sort
+        error[NR-1] = 1
+        printf "%5d: date going backwards from %s to %s to this line\n", NR, lastdate, $3 | sort
         error[NR] = 1
     }
     lastdate = $3

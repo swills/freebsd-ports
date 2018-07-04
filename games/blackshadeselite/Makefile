@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/blackshadeselite/Makefile 473037 2018-06-22 13:00:04Z amdmi3 $
+# $FreeBSD: head/games/blackshadeselite/Makefile 473755 2018-07-02 16:45:53Z amdmi3 $
 
 PORTNAME=	blackshadeselite
 PORTVERSION=	0.0.1
@@ -19,6 +19,8 @@ LIB_DEPENDS=	libvorbis.so:audio/libvorbis
 USES=		tar:bzip2 gmake openal:al,alut
 USE_SDL=	sdl
 USE_GL=		gl glu
+
+LLD_UNSAFE=	yes
 
 MAKE_ARGS=	CC="${CC}" CXX="${CXX}"
 

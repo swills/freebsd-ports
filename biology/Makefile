@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 473356 2018-06-25 23:56:00Z yuri $
+# $FreeBSD: head/biology/Makefile 473806 2018-07-03 08:42:54Z yuri $
 #
 
     COMMENT = Biology
@@ -22,6 +22,7 @@
     SUBDIR += clustalw
     SUBDIR += clustalx
     SUBDIR += consed
+    SUBDIR += cytoscape
     SUBDIR += ddocent
     SUBDIR += diamond
     SUBDIR += emboss

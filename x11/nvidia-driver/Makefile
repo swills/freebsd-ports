@@ -1,5 +1,5 @@
 # Created by: Stijn Hoop <stijn@win.tue.nl>
-# $FreeBSD: head/x11/nvidia-driver/Makefile 471930 2018-06-07 16:04:42Z danfe $
+# $FreeBSD: head/x11/nvidia-driver/Makefile 473697 2018-07-02 03:08:02Z danfe $
 #
 # For those wondering why this port is not under `x11-drivers' category,
 # have a look at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=121930.
@@ -10,7 +10,7 @@
 # slave ports instead (`x11/nvidia-driver-340' or `x11/nvidia-driver-304').
 
 PORTNAME=	nvidia-driver
-DISTVERSION?=	390.59
+DISTVERSION?=	390.67
 # Always try to set PORTREVISION as it can be overridden by the slave ports
 PORTREVISION?=	0
 CATEGORIES=	x11
@@ -74,6 +74,7 @@ EXTRA_PATCHES=	${FILESDIR}/extra-patch-src_nvidia_Makefile \
 		${FILESDIR}/extra-patch-src_nvidia_nv-misc.h
 NVSRC=		nvidia
 .endif
+
 .if ${NVVERSION} >= 358.009
 # Initialize memory allocations to avoid spurious "lock re-initialization"
 # errors.  A little more detail can be found in bug 201340 starting around

@@ -1,9 +1,9 @@
 # Created by: Janne Snabb <snabb@epipe.com>
-# $FreeBSD: head/mail/scam-backscatter/Makefile 408774 2016-02-13 09:03:15Z dinoex $
+# $FreeBSD: head/mail/scam-backscatter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	scam-backscatter
 PORTVERSION=	1.5.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.elandsys.com/scam/scam-backscatter/ \
 		http://dist.epipe.com/mirrors/scam-backscatter/

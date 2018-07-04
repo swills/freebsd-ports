@@ -1,9 +1,9 @@
 # Created by: Eugene M. Kim <ab@astralblue.net>
-# $FreeBSD: head/mail/spamass-milter/Makefile 458557 2018-01-09 18:22:10Z danfe $
+# $FreeBSD: head/mail/spamass-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	spamass-milter
 PORTVERSION=	0.4.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	SAVANNAH/spamass-milt
 
@@ -15,8 +15,8 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 LICENSE=	GPLv2
 
-OPTIONS_DEFINE=	LDAP SENDMAIL_PORT DOCS
-SENDMAIL_PORT_DESC=	Build against sendmail port
+OPTIONS_DEFINE=	LDAP MILTER_PORT DOCS
+MILTER_PORT_DESC=	Build against libmiter port
 
 .include <bsd.port.pre.mk>
 

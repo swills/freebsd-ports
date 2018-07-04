@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/w3m/Makefile 473199 2018-06-24 13:41:06Z nobutaka $
+# $FreeBSD: head/www/w3m/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	w3m
 PORTVERSION=	0.5.3.20180520
@@ -12,6 +12,8 @@ LICENSE=	w3m
 LICENSE_NAME=	w3m
 LICENSE_FILE=	${WRKSRC}/doc/README
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_mips64=		fails to build: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
 
 LIB_DEPENDS=	libgc.so:devel/boehm-gc
 

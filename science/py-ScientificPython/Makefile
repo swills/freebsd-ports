@@ -1,9 +1,10 @@
-# $FreeBSD: head/science/py-ScientificPython/Makefile 473533 2018-06-29 08:34:18Z yuri $
+# $FreeBSD: head/science/py-ScientificPython/Makefile 473624 2018-06-30 16:49:08Z yuri $
 
 PORTNAME=	ScientificPython
 DISTVERSION=	2.9.4
+PORTREVISION=	1
 CATEGORIES=	science python
-MASTER_SITES=	https://sourcesup.renater.fr/frs/download.php/file/4570/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	yuri@FreeBSD.org

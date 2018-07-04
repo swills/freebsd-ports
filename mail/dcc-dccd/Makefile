@@ -1,9 +1,9 @@
 # Created by: Dean Hollister <dean@odyssey.apana.org.au>
-# $FreeBSD: head/mail/dcc-dccd/Makefile 444972 2017-07-03 17:37:55Z ultima $
+# $FreeBSD: head/mail/dcc-dccd/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	dcc-dccd
 PORTVERSION=	1.3.159
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://www.dcc-servers.net/dcc/source/old/ \
 		ftp://ftp.dcc-servers.net/src/dcc/old/ \

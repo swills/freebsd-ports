@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-pysha3/Makefile 440859 2017-05-13 23:36:16Z linimon $
+# $FreeBSD: head/security/py-pysha3/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	pysha3
 DISTVERSION=	1.0b1
@@ -13,6 +13,7 @@ COMMENT=	SHA-3 (Keccak) for Python
 LICENSE=	PSFL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_mips64=		fails to compile: KeccakP-1600-opt64.c: error: Not yet implemented
 BROKEN_powerpc64=	fails to compile: KeccakP-1600-opt64.c: error: Not yet implemented
 
 # Actually Python 2.7,3.4+

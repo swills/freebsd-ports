@@ -1,5 +1,5 @@
 # Created by: yoshiaki Uchikawa
-# $FreeBSD: head/audio/lame/Makefile 452032 2017-10-13 21:10:10Z netchild $
+# $FreeBSD: head/audio/lame/Makefile 473871 2018-07-04 09:07:36Z amdmi3 $
 
 PORTNAME=	lame
 PORTVERSION=	3.100
@@ -8,6 +8,9 @@ MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/3.100
 
 MAINTAINER=	netchild@FreeBSD.org
 COMMENT=	Fast MP3 encoder kit
+
+LICENSE=	LGPL20+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gmake iconv libtool
 USE_LDCONFIG=	yes

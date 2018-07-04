@@ -1,5 +1,5 @@
 # Created by: Mina Naguib <webmaster@topfx.com>
-# $FreeBSD: head/irc/psybnc/Makefile 472469 2018-06-15 17:38:51Z amdmi3 $
+# $FreeBSD: head/irc/psybnc/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	psybnc
 DISTVERSION=	2.3.2-9
@@ -13,6 +13,8 @@ COMMENT=	Powerful IRC bouncer
 
 LICENSE=	GPLv1+ # though COPYING is GPLv2
 
+BROKEN_mips=		Does not build: exec(clang) failed (No such file or directory)
+BROKEN_mips64=		Does not build: exec(clang) failed (No such file or directory)
 BROKEN_powerpc64=	Does not build: exec(clang) failed (No such file or directory)
 
 USES=		dos2unix ssl

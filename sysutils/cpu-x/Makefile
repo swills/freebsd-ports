@@ -1,9 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/cpu-x/Makefile 469022 2018-05-04 12:00:26Z danfe $
+# $FreeBSD: head/sysutils/cpu-x/Makefile 473818 2018-07-03 11:41:54Z danfe $
 
 PORTNAME=	cpu-x
-PORTVERSION=	3.2.1
-PORTREVISION=	1
+PORTVERSION=	3.2.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -11,8 +10,6 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Gathers information about CPU, motherboard, and more
 
 LICENSE=	GPLv3
-
-PORTSCOUT=	skipv:3.2.2	# useful parts of 3.2.2 were cherry-picked
 
 BUILD_DEPENDS=	nasm:devel/nasm
 LIB_DEPENDS=	libcpuid.so:sysutils/libcpuid \

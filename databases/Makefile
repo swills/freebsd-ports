@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 473546 2018-06-29 12:50:41Z antoine $
+# $FreeBSD: head/databases/Makefile 473842 2018-07-03 15:20:13Z rene $
 #
 
     COMMENT = Databases and related software
@@ -202,7 +202,6 @@
     SUBDIR += mongodb32
     SUBDIR += mongodb32-tools
     SUBDIR += mongodb34
-    SUBDIR += mongodb34-rocks
     SUBDIR += mongodb34-tools
     SUBDIR += mongodb36
     SUBDIR += mroonga
@@ -815,6 +814,7 @@
     SUBDIR += py-pg8000
     SUBDIR += py-pg_pqueue
     SUBDIR += py-pgcli
+    SUBDIR += py-pgdbconn
     SUBDIR += py-pglite
     SUBDIR += py-pgspecial
     SUBDIR += py-pgxnclient
@@ -965,7 +965,6 @@
     SUBDIR += rubygem-em-redis-unified
     SUBDIR += rubygem-familia
     SUBDIR += rubygem-flipper-active_record
-    SUBDIR += rubygem-flipper-active_record011
     SUBDIR += rubygem-flipper-active_record013
     SUBDIR += rubygem-globalid
     SUBDIR += rubygem-globalid-rails5

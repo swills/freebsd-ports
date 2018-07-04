@@ -1,11 +1,11 @@
-# $FreeBSD: head/comms/gr-osmosdr/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/comms/gr-osmosdr/Makefile 473764 2018-07-02 18:56:20Z martymac $
 
 PORTNAME=	gr-osmosdr
-PORTVERSION=	20170612
-PORTREVISION=	2
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.1.4-99
+DISTVERSIONSUFFIX=	-gc98be5d
+PORTEPOCH=	1
 CATEGORIES=	comms hamradio
-MASTER_SITES=	http://contribs.martymac.org/FreeBSD-ports/distfiles/ \
-		LOCAL/martymac
 
 MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	GNU Radio OsmoSDR module
@@ -21,6 +21,10 @@ LIB_DEPENDS=	libgnuradio-runtime.so:comms/gnuradio \
 		libboost_thread.so:devel/boost-libs
 
 USES=	cmake compiler:c++11-lang fortran pkgconfig python:2.7 tar:tgz
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	osmocom
+
 USE_LDCONFIG=	yes
 BINARY_ALIAS=	swig=swig3.0
 

@@ -1,8 +1,8 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/net/zerotier/Makefile 470435 2018-05-19 22:19:54Z dch $
+# $FreeBSD: head/net/zerotier/Makefile 473828 2018-07-03 13:08:59Z dch $
 
 PORTNAME=	zerotier
-DISTVERSION=	1.2.8
+DISTVERSION=	1.2.10
 CATEGORIES=	net
 
 MAINTAINER=	dch@FreeBSD.org
@@ -29,10 +29,21 @@ DBG_ALL_TARGET=	debug
 
 PLIST_FILES=	bin/zerotier-cli bin/zerotier-idtool sbin/zerotier-one
 
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == "FreeBSD"
+# log output via syslog when daemon(8) supports it
+.if ((${OSVERSION} >= 1100513 && ${OSVERSION} < 1200000) || ${OSVERSION} >= 1200015)
+SUB_LIST+=	ZEROTIER_SYSLOG="-s debug -T zerotier"
+.else
+SUB_LIST+=	ZEROTIER_SYSLOG=""
+.endif
+.endif
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/zerotier-one ${STAGEDIR}${PREFIX}/sbin/
 .for l in zerotier-cli zerotier-idtool
-	${LN} -sf ../sbin/zerotier-one ${STAGEDIR}${PREFIX}/bin/${l}
+	${RLN} ${STAGEDIR}${PREFIX}/sbin/zerotier-one ${STAGEDIR}${PREFIX}/bin/${l}
 .endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

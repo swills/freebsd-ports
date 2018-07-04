@@ -1,5 +1,5 @@
 # Created by: Oliver Eikemeier <eikemeier@fillmore-labs.com>
-# $FreeBSD: head/databases/gnats4/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/databases/gnats4/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	gnats
 PORTVERSION=	4.1.0
@@ -11,6 +11,8 @@ PKGNAMESUFFIX=	4
 MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	GNATS, the GNU Problem Report Management System
 
+BROKEN_mips=		Does not build: error: conflicting types for yy_scan_string
+BROKEN_mips64=		Does not build: error: conflicting types for yy_scan_string
 BROKEN_powerpc64=	Does not build: error: conflicting types for yy_scan_string
 
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/freeradius3/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/net/freeradius3/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	freeradius
 DISTVERSION=	3.0.17
@@ -17,6 +17,8 @@ COMMENT=	Free RADIUS server implementation
 
 LICENSE=	GPLv2
 
+BROKEN_mips=		fails to compile: unrecognized command line option "-Wno-date-time"
+BROKEN_mips64=		fails to compile: unrecognized command line option "-Wno-date-time"
 BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-date-time"
 
 LIB_DEPENDS=	libgdbm.so:databases/gdbm \

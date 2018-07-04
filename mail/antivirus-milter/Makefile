@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/antivirus-milter/Makefile 408774 2016-02-13 09:03:15Z dinoex $
+# $FreeBSD: head/mail/antivirus-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	antivirus
 PORTVERSION=	3.30
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	mail
 MASTER_SITES=	LOCAL/dinoex
 
@@ -25,9 +25,7 @@ ANTIVIRUS_DIR?=	/var/spool/antivirus
 
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"
 
-.if defined(WITH_SENDMAIL_PORT)
 LIBS+=		${LDFLAGS}
-.endif
 
 MAKE_ENV+=	SENDMAILBASE="${MILTERBASE}" \
 		SENDMAILOBJ="${MILTERBASE}" \

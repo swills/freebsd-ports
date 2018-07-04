@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/pecl-http/Makefile 471375 2018-06-02 16:05:50Z linimon $
+# $FreeBSD: head/www/pecl-http/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	http
 PORTVERSION=	3.1.0
@@ -12,6 +12,8 @@ COMMENT=	Extended HTTP Support
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_mips=		fails to compile: pecl_http-3.1.0/src/php_http_etag.c:63:20: \#if with no expression
+BROKEN_mips64=		fails to compile: pecl_http-3.1.0/src/php_http_etag.c:63:20: \#if with no expression
 BROKEN_powerpc64=	fails to compile: pecl_http-3.1.0/src/php_http_etag.c:63:20: \#if with no expression
 IGNORE_WITH_PHP=	56
 

@@ -1,5 +1,5 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/jack/Makefile 472147 2018-06-10 17:11:05Z riggs $
+# $FreeBSD: head/audio/jack/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	jackit
 PORTVERSION=	0.125.0
@@ -12,6 +12,8 @@ COMMENT=	Low latency audio server
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
 
+BROKEN_mips=		fails to link: undefined reference to '__sync_add_and_fetch_4'
+BROKEN_mips64=		fails to link: undefined reference to '__sync_add_and_fetch_4'
 BROKEN_powerpc64=	fails to build: Unrecognized opcode: 'sldi'
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile \

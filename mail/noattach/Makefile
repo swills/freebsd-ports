@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/noattach/Makefile 423431 2016-10-06 18:18:52Z dinoex $
+# $FreeBSD: head/mail/noattach/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	noattach
 PORTVERSION=	1.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.dinoex.de/pub/FreeBSD/distfiles/
 
@@ -20,10 +20,8 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"
 
-.if defined(WITH_SENDMAIL_PORT)
 CONFIGURE_ENV+=	MILTER_INCLUDES="${MILTERINC}"
 MAKE_ENV+=	MILTER_INCLUDES="${MILTERINC}"
-.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/noattach ${STAGEDIR}${PREFIX}/libexec/noattach

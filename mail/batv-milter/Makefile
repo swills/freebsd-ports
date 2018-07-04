@@ -1,9 +1,9 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/mail/batv-milter/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/mail/batv-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	batv-milter
 PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	SF
 

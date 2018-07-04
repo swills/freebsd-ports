@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/cde/Makefile 471971 2018-06-08 02:50:56Z linimon $
+# $FreeBSD: head/x11-wm/cde/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	cde
 DISTVERSION=	2.2.3
@@ -10,6 +10,7 @@ DISTNAME=	${PORTNAME}-src-${DISTVERSION}
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Common Desktop Environment
 
+BROKEN_mips64=		fails to build: ./config/imake/imake: No such file or directory
 BROKEN_powerpc64=	fails to build: ./config/imake/imake: No such file or directory
 
 BUILD_DEPENDS=	ksh93:shells/ksh93			\

@@ -1,5 +1,5 @@
 # Created by: Alexandros Kosiaris <akosiaris+ports@gmail.com>
-# $FreeBSD: head/devel/py-jira/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-jira/Makefile 473730 2018-07-02 12:55:23Z swills $
 
 PORTNAME=	jira
 PORTVERSION=	1.0.15
@@ -41,7 +41,7 @@ TESTS_BUILD_DEPENDS=	${TEST_DEPENDS}
 TEST_DEPENDS:=	${RUN_DEPENDS} \
 		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

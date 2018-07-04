@@ -1,5 +1,5 @@
 # Created by: Khairil Yusof <kaeru@inigo-tech.com>
-# $FreeBSD: head/devel/libleaftag/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/libleaftag/Makefile 473661 2018-07-01 09:32:03Z linimon $
 
 PORTNAME=	libleaftag
 PORTVERSION=	0.3.1
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	devel deskutils
 MASTER_SITES=	http://releases.chipx86.com/leaftag/libleaftag/
 
-MAINTAINER=	kaeru@inigo-tech.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Leaftag is a library for tagging files on the desktop
 
 USES=		pathfix pkgconfig libtool sqlite:2

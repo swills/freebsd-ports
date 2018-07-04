@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 472949 2018-06-21 04:44:03Z yuri $
+# $FreeBSD: head/misc/Makefile 473886 2018-07-04 14:01:00Z zi $
 #
 
     COMMENT = Miscellaneous utilities
@@ -499,6 +499,7 @@
     SUBDIR += table.el
     SUBDIR += talkfilters
     SUBDIR += tcb
+    SUBDIR += tdfiglet
     SUBDIR += team
     SUBDIR += telbook
     SUBDIR += tellico-kde4

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-actioncable50/Makefile 466999 2018-04-10 18:28:33Z sunpoet $
+# $FreeBSD: head/www/rubygem-actioncable50/Makefile 473662 2018-07-01 09:37:18Z amdmi3 $
 
 PORTNAME=	actioncable
 PORTVERSION=	5.0.7
@@ -19,8 +19,8 @@ RUN_DEPENDS=	rubygem-actionpack50>=${PORTVERSION}:www/rubygem-actionpack50 \
 
 PORTSCOUT=	limit:^5\.0\.
 
+USES=		gem
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

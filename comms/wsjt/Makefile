@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/wsjt/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/comms/wsjt/Makefile 473682 2018-07-01 21:02:09Z db $
 
 PORTNAME=	wsjt
 DISTVERSION=	${VERSION}.r${SVN_REV}
@@ -11,6 +11,9 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Weak signal ham radio communication package
 
 LICENSE=	GPLv3
+
+DEPRECATED=	replace with wsjtx upstream no longer maintained
+EXPIRATION_DATE=2018-10-01
 
 RUN_DEPENDS=	${LOCALBASE}/bin/kvasd:comms/kvasd \
 		${WSJT_DEPENDS}

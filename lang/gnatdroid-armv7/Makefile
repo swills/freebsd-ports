@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gnatdroid-armv7/Makefile 471821 2018-06-05 21:04:45Z antoine $
+# $FreeBSD: head/lang/gnatdroid-armv7/Makefile 473865 2018-07-04 04:31:41Z linimon $
 
 PORTNAME?=	armv7
 PORTVERSION=	${SNAPSHOT}
@@ -9,7 +9,7 @@ MASTER_SITES=	GCC/releases/gcc-${GCC_VERSION}
 PKGNAMEPREFIX?=	gnatdroid-
 DISTFILES=	${IDENTIFICATION}.tar.xz
 
-MAINTAINER?=	ports@FreeBSD.org
+MAINTAINER?=	jamie@catflap.org
 COMMENT?=	C/Ada cross-compiler, target: Android ARMv7
 
 LICENSE=	GPLv3 GPLv3RLE

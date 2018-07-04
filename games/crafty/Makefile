@@ -1,5 +1,5 @@
 # Created by: Stefan Eggers <seggers@semyam.dinoco.de>
-# $FreeBSD: head/games/crafty/Makefile 464919 2018-03-18 14:58:22Z linimon $
+# $FreeBSD: head/games/crafty/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	crafty
 PORTVERSION=	25.2
@@ -19,6 +19,8 @@ COMMENT=	Chess program for playing and analyzing games
 BROKEN_aarch64=		fails to compile: invokes x86 assembler
 BROKEN_armv6=		fails to compile: invokes x86 assembler
 BROKEN_armv7=		fails to compile: invokes x86 assembler
+BROKEN_mips=		fails to compile: unrecognized command line option "-mpopcnt"
+BROKEN_mips64=		fails to compile: unrecognized command line option "-mpopcnt"
 
 WRKSRC=		${WRKDIR}
 

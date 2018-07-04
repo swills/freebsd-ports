@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/ndproxy/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/net/ndproxy/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	ndproxy
 PORTVERSION=	2.0
@@ -11,6 +11,8 @@ COMMENT=	Implementation of IPv6 Neighbor Discovery proxy
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_mips=		fails to build: ndproxy.c:51: function declaration isn't a prototype
+BROKEN_mips64=		fails to build: ndproxy.c:51: function declaration isn't a prototype
 BROKEN_powerpc64=	fails to build: ndproxy.c:51: function declaration isn't a prototype
 
 SUB_FILES=	pkg-message

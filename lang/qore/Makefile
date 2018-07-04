@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/qore/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/lang/qore/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	qore
 PORTVERSION=	0.8.12
@@ -10,16 +10,18 @@ COMMENT=	Qore Programming Language
 
 LICENSE=	MIT
 
+BROKEN_armv6=		fails to compile: calling a private constructor of class 'ReferenceNode'
+BROKEN_armv7=		fails to compile: calling a private constructor of class 'ReferenceNode'
+BROKEN_mips=		fails to link: single-compilation-unit.cpp:(.text+0xdfc): relocation truncated to fit: R_MIPS_CALL16 against '__ltdf2@@FBSDprivate_1.0'
+BROKEN_mips64=		fails to link: single-compilation-unit.cpp:(.text+0xdfc): relocation truncated to fit: R_MIPS_CALL16 against '__ltdf2@@FBSDprivate_1.0'
+BROKEN_powerpc=		fails to build
+BROKEN_powerpc64=	fails to compile: unsupported relocation against r1
+
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libmpfr.so:math/mpfr
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		${LOCALBASE}/bin/bison:devel/bison \
 		${LOCALBASE}/bin/bash:shells/bash
-
-BROKEN_armv6=		fails to compile: calling a private constructor of class 'ReferenceNode'
-BROKEN_armv7=		fails to compile: calling a private constructor of class 'ReferenceNode'
-BROKEN_powerpc=		fails to build
-BROKEN_powerpc64=	fails to compile: unsupported relocation against r1
 
 USES=	gmake iconv libtool:build pathfix autoreconf ssl
 USE_LDCONFIG=	yes

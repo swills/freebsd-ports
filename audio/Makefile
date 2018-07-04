@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 471892 2018-06-07 00:34:18Z rene $
+# $FreeBSD: head/audio/Makefile 473863 2018-07-04 02:41:30Z yuri $
 #
 
     COMMENT = Audio tools
@@ -441,6 +441,7 @@
     SUBDIR += libsidplayfp
     SUBDIR += libsmf
     SUBDIR += libsndfile
+    SUBDIR += libsonic
     SUBDIR += libsoxr
     SUBDIR += libtremor
     SUBDIR += libumidi

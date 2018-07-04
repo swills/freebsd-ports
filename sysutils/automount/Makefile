@@ -1,8 +1,8 @@
 # Created by: Slawomir Wojciech Wojtczak <vermaden@interia.pl>
-# $FreeBSD: head/sysutils/automount/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/automount/Makefile 473644 2018-06-30 21:42:23Z bdrewery $
 
 PORTNAME=	automount
-PORTVERSION=	1.5.7
+PORTVERSION=	1.5.8
 CATEGORIES=	sysutils
 MASTER_SITES=	https://raw.github.com/vermaden/automount/master/ \
 		LOCAL/madpilot/${PORTNAME}/

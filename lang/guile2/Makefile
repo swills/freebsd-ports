@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/lang/guile2/Makefile 471254 2018-06-01 10:16:41Z cpm $
+# $FreeBSD: head/lang/guile2/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	guile
 PORTVERSION=	2.0.14
@@ -12,6 +12,8 @@ MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	GNU Ubiquitous Intelligent Language for Extension
 
 LICENSE=	LGPL21
+
+BROKEN_mips64=		fails to build: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libltdl.so:devel/libltdl \

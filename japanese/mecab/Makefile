@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/japanese/mecab/Makefile 444226 2017-06-24 16:31:50Z sunpoet $
+# $FreeBSD: head/japanese/mecab/Makefile 473660 2018-07-01 09:17:45Z linimon $
 
 PORTNAME=	mecab
 PORTVERSION=	0.996
@@ -12,6 +12,9 @@ COMMENT=	Yet Another Part-of-Speech and Morphological Analyzer
 
 LICENSE=	BSD3CLAUSE GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+BROKEN_mips=		fails to link: Nonrepresentable section on output
+BROKEN_mips64=		fails to link: Nonrepresentable section on output
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	ac_cv_lib_stdcpp_main=no

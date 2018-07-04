@@ -1,9 +1,9 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/mail/milter-skem/Makefile 432471 2017-01-26 07:07:08Z mi $
+# $FreeBSD: head/mail/milter-skem/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	skem
 PORTVERSION=	1.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://virtual-estates.net/skem/
 

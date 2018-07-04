@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/multimedia/bitstream/Makefile 461777 2018-02-14 11:52:10Z amdmi3 $
+# $FreeBSD: head/multimedia/bitstream/Makefile 473819 2018-07-03 12:10:24Z amdmi3 $
 
 PORTNAME=	bitstream
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	multimedia
 MASTER_SITES=	https://get.videolan.org/bitstream/${PORTVERSION}/ \
 		http://get.videolan.org/bitstream/${PORTVERSION}/
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		gmake tar:bzip2
 NO_BUILD=	yes
 NO_ARCH=	yes
+MAKE_ARGS=	PKGCONFIG="${STAGEDIR}${PREFIX}/libdata/pkgconfig"
 TEST_TARGET=	check
 
 PORTDOCS=	AUTHORS README NEWS TODO

@@ -1,9 +1,9 @@
 # Created by: Victor Balada Diaz <victor@bsdes.net>
-# $FreeBSD: head/mail/milter-bogom/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/milter-bogom/Makefile 473663 2018-07-01 10:17:18Z dinoex $
 
 PORTNAME=	bogom
 PORTVERSION=	1.9.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://www.usebox.net/jjm/bogom/ \
 		http://blackshell.usebox.net/bogom/

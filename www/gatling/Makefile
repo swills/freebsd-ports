@@ -1,5 +1,5 @@
 # Created by: Thomas-Martin Seck <tmseck@netcologne.de>
-# $FreeBSD: head/www/gatling/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/www/gatling/Makefile 473699 2018-07-02 04:00:29Z linimon $
 
 PORTNAME=	gatling
 PORTVERSION=	0.15
@@ -11,9 +11,11 @@ COMMENT=	High performance webserver with scalability benchmark tools
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	libowfat>=0.31:devel/libowfat
-
+BROKEN_mips=		fails to compile: dirfd.c: error: expected ';', ',' or ')' before 'key'
+BROKEN_mips64=		fails to compile: dirfd.c: error: expected ';', ',' or ')' before 'key'
 BROKEN_powerpc64=	fails to compile: dirfd.c: error: expected ';', ',' or ')' before 'key'
+
+BUILD_DEPENDS=	libowfat>=0.31:devel/libowfat
 
 USES=		gmake ssl tar:xz
 USE_RC_SUBR=	gatling

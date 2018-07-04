@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/openfx-misc/Makefile 471872 2018-06-06 18:37:21Z olivier $
+# $FreeBSD: head/graphics/openfx-misc/Makefile 473668 2018-07-01 12:07:55Z olivier $
 
 PORTNAME=	openfx-misc
-PORTVERSION=	2.3.12
+PORTVERSION=	2.3.13
 CATEGORIES=	graphics
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -16,7 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	NatronGitHub
 GH_PROJECT=	openfx-misc
 GH_TAGNAME=	3ab0531
-GH_TUPLE=	NatronGitHub:openfx-supportext:1db2bfa:openfx_supportext/SupportExt \
+GH_TUPLE=	NatronGitHub:openfx-supportext:e600cae:openfx_supportext/SupportExt \
 			NatronGitHub:openfx:a85dc34:openfx/openfx
 
 MAKE_ENV+=	CONFIG=release
