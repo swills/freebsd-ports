@@ -1,6 +1,6 @@
---- ocl_icd_loader.c.orig	2017-01-19 13:55:12 UTC
-+++ ocl_icd_loader.c
-@@ -53,7 +53,7 @@ int debug_ocl_icd_mask=0;
+--- ocl_icd_loader.c.orig	2017-01-19 14:55:12.355263750 +0100
++++ ocl_icd_loader.c	2017-02-02 21:36:14.579958000 +0100
+@@ -53,7 +53,7 @@
  
  typedef __typeof__(clGetPlatformInfo) *clGetPlatformInfo_fn;
  

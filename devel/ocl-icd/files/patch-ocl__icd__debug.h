@@ -1,6 +1,6 @@
---- ocl_icd_debug.h.orig	2016-04-24 12:11:57 UTC
-+++ ocl_icd_debug.h
-@@ -61,9 +61,9 @@ extern int debug_ocl_icd_mask;
+--- ocl_icd_debug.h.orig	2016-04-24 14:11:57.281333306 +0200
++++ ocl_icd_debug.h	2017-02-02 21:31:54.312526000 +0100
+@@ -61,9 +61,9 @@
  	return ret; \
     } while(0)
  #  define RETURN_STR(val) do { \
