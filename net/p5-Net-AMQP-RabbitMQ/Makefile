@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-AMQP-RabbitMQ/Makefile 473692 2018-07-02 00:47:14Z linimon $
+# $FreeBSD: head/net/p5-Net-AMQP-RabbitMQ/Makefile 473946 2018-07-05 02:08:58Z swills $
 
 PORTNAME=	Net-AMQP-RabbitMQ
 PORTVERSION=	2.30000
@@ -17,5 +17,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+
+PORTSCOUT=	ignore:2.200002
 
 .include <bsd.port.mk>

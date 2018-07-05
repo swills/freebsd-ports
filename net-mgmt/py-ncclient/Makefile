@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-ncclient/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-mgmt/py-ncclient/Makefile 473941 2018-07-05 00:27:46Z zi $
 
 PORTNAME=	ncclient
 DISTVERSION=	0.5.3
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	sergey@akhmatov.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python library for NETCONF clients
 
 LICENSE=	APACHE20

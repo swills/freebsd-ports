@@ -1,11 +1,11 @@
 # Created by: Victor Yagofarov <xnasx@yandex.ru>
-# $FreeBSD: head/net/kafkacat/Makefile 451875 2017-10-12 13:17:48Z dbaio $
+# $FreeBSD: head/net/kafkacat/Makefile 473941 2018-07-05 00:27:46Z zi $
 
 PORTNAME=	kafkacat
 PORTVERSION=	1.3.1
 CATEGORIES=	net
 
-MAINTAINER=	sergey@akhmatov.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generic command line non-JVM Apache Kafka producer and consumer
 
 LICENSE=	BSD2CLAUSE

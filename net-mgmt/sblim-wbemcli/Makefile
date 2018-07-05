@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/sblim-wbemcli/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/net-mgmt/sblim-wbemcli/Makefile 473964 2018-07-05 11:32:32Z dbaio $
 
 PORTNAME=	sblim-wbemcli
 PORTVERSION=	1.6.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/sblim/${PORTNAME}/${PORTVERSION}
 

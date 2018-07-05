@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 473842 2018-07-03 15:20:13Z rene $
+# $FreeBSD: head/www/Makefile 473925 2018-07-04 21:26:33Z mfechner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -200,7 +200,7 @@
     SUBDIR += getleft
     SUBDIR += gist
     SUBDIR += gitea
-    SUBDIR += gitlab
+    SUBDIR += gitlab-ce
     SUBDIR += gitlab-pages
     SUBDIR += gitlab-workhorse
     SUBDIR += glassfish

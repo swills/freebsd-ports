@@ -1,11 +1,11 @@
 # Created by: torstenb
-# $FreeBSD: head/www/libwww/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/www/libwww/Makefile 473964 2018-07-05 11:32:32Z dbaio $
 
 PORTNAME=	libwww
-PORTVERSION=	5.4.0
-PORTREVISION=	6
+PORTVERSION=	5.4.2
 CATEGORIES=	www devel
-MASTER_SITES=	http://www.w3.org/Library/Distribution/old/
+MASTER_SITES=	https://www.w3.org/Library/Distribution/ \
+		https://www.w3.org/Library/Distribution/old/
 DISTNAME=	w3c-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	dbaio@FreeBSD.org
@@ -16,17 +16,17 @@ LICENSE_NAME=	W3C IPR SOFTWARE NOTICE
 LICENSE_FILE=	${WRKSRC}/LICENSE.html
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-zlib --with-ssl=${OPENSSLBASE}
-USES=		gmake libtool perl5 ssl tar:tgz
-USE_PERL5=	build
-USE_LDCONFIG=	yes
-
 BROKEN_SSL=		openssl-devel
 
+LIB_DEPENDS=	libexpat.so:textproc/expat2
+
+USES=		gmake libtool localbase perl5 ssl tar:tgz
+USE_PERL5=	build
+USE_LDCONFIG=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-shared --with-zlib --with-ssl=${OPENSSLBASE}
+
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/modules/expat/xmlparse/xmlparse.h \
-		${STAGEDIR}${PREFIX}/include/w3c-libwww/
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/*.so
 
 .include <bsd.port.mk>

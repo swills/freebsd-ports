@@ -1,5 +1,5 @@
 # Created by: Eugene M. Kim <ab@astralblue.net>
-# $FreeBSD: head/mail/spamass-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
+# $FreeBSD: head/mail/spamass-milter/Makefile 473962 2018-07-05 11:13:18Z dinoex $
 
 PORTNAME=	spamass-milter
 PORTVERSION=	0.4.0
@@ -16,7 +16,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 LICENSE=	GPLv2
 
 OPTIONS_DEFINE=	LDAP MILTER_PORT DOCS
-MILTER_PORT_DESC=	Build against libmiter port
+MILTER_PORT_DESC=	Build against libmilter port
 
 .include <bsd.port.pre.mk>
 

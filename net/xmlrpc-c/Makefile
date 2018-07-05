@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/net/xmlrpc-c/Makefile 473383 2018-06-26 12:47:50Z garga $
+# $FreeBSD: head/net/xmlrpc-c/Makefile 473965 2018-07-05 12:03:57Z dbaio $
 
 PORTNAME=	xmlrpc-c
 PORTVERSION=	1.39.13
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/Xmlrpc-c%20Super%20Stable/${PORTVERSION}
 
@@ -30,7 +31,9 @@ USE_LDCONFIG=	yes
 
 CURL_LIB_DEPENDS=	libcurl.so:ftp/curl
 CURL_CONFIGURE_ENABLE=	curl-client
-LIBWWW_LIB_DEPENDS=	libwwwcore.so:www/libwww
+LIBWWW_USES=	ssl
+LIBWWW_LIB_DEPENDS=	libwwwcore.so:www/libwww \
+		libexpat.so:textproc/expat2
 LIBWWW_CONFIGURE_ENABLE=libwww-client
 LIBWWW_CONFIGURE_WITH=	libwww-ssl
 CPLUSPLUS_CONFIGURE_ENABLE=	cplusplus

@@ -1,5 +1,5 @@
 # Created by: yoshiaki Uchikawa
-# $FreeBSD: head/audio/lame/Makefile 473871 2018-07-04 09:07:36Z amdmi3 $
+# $FreeBSD: head/audio/lame/Makefile 473966 2018-07-05 12:44:02Z amdmi3 $
 
 PORTNAME=	lame
 PORTVERSION=	3.100
@@ -46,6 +46,8 @@ post-patch:
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmp3lame.so.0
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for file in ${DOC_FILES}
 	${INSTALL_DATA} ${WRKSRC}/${file} ${STAGEDIR}${DOCSDIR}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Config-Perl-V/Makefile 452202 2017-10-16 16:37:24Z swills $
+# $FreeBSD: head/devel/p5-Config-Perl-V/Makefile 473968 2018-07-05 13:07:54Z swills $
 
 PORTNAME=	Config-Perl-V
-PORTVERSION=	0.29
+PORTVERSION=	0.30
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:HMBRAND

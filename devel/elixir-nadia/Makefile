@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/elixir-nadia/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/elixir-nadia/Makefile 473948 2018-07-05 05:12:54Z olgeni $
 
 PORTNAME=	nadia
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.3
+DISTVERSION=	0.4.4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
