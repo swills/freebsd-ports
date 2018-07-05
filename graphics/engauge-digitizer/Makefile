@@ -1,10 +1,8 @@
-# $FreeBSD: head/graphics/engauge-digitizer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/engauge-digitizer/Makefile 473953 2018-07-05 08:37:09Z yuri $
 
 PORTNAME=	engauge-digitizer
 DISTVERSIONPREFIX=	v
-DISTVERSION=	10.7.6-2
-DISTVERSIONSUFFIX=	-g7ce911c2
-PORTREVISION=	1
+DISTVERSION=	10.8
 CATEGORIES=	graphics math science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -39,7 +37,7 @@ post-build-NLS-on:
 	@cd ${WRKSRC} && lrelease engauge.pro
 
 post-build-DOCS-on:
-	@cd ${WRKSRC}/help && ./build
+	@cd ${WRKSRC}/help && ./build.bash
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/engauge ${STAGEDIR}${PREFIX}/bin

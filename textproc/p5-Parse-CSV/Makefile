@@ -1,8 +1,8 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/textproc/p5-Parse-CSV/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Parse-CSV/Makefile 473944 2018-07-05 01:45:36Z wen $
 
 PORTNAME=	Parse-CSV
-PORTVERSION=	2.04
+PORTVERSION=	2.05
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

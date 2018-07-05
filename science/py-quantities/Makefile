@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-quantities/Makefile 465928 2018-03-29 20:37:39Z yuri $
+# $FreeBSD: head/science/py-quantities/Makefile 473915 2018-07-04 19:21:46Z yuri $
 
 PORTNAME=	quantities
-DISTVERSION=	0.12.1
+DISTVERSION=	0.12.2
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

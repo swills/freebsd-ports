@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-scp/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-scp/Makefile 473941 2018-07-05 00:27:46Z zi $
 
 PORTNAME=	scp
 DISTVERSION=	0.11.0
@@ -6,7 +6,7 @@ CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	sergey@akhmatov.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scp module for paramiko
 
 LICENSE=	LGPL21+

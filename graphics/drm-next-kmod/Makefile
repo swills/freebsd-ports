@@ -1,8 +1,9 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-next-kmod/Makefile 472811 2018-06-19 18:07:41Z zeising $
+# $FreeBSD: head/graphics/drm-next-kmod/Makefile 473933 2018-07-04 23:04:48Z jmd $
 
 PORTNAME=	drm-next-kmod
 PORTVERSION=	4.11.g20180619
+PORTREVISION=	1
 CATEGORIES=	graphics kld
 
 MAINTAINER=	jmd@FreeBSD.org

@@ -1,10 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/editors/tea/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/tea/Makefile 473976 2018-07-05 16:28:34Z danilo $
 
 PORTNAME=	tea
-PORTVERSION=	44.1.1
+PORTVERSION=	45.0.2
 CATEGORIES=	editors
-MASTER_SITES=	http://semiletov.org/tea/dloads/
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Simple and powerful Qt-based text editor
@@ -20,9 +19,13 @@ OPTIONS_GROUP=		SPELL
 OPTIONS_GROUP_SPELL=	ASPELL HUNSPELL
 OPTIONS_DEFAULT=	QT4 ASPELL HUNSPELL
 
-USES=		pkgconfig:build qmake tar:bzip2
+USES=		pkgconfig:build qmake
 USE_GL=		gl
 USE_LOCALE=	en_US.UTF-8
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	psemiletov
+GH_PROJECT=	${PORTNAME}-qt
 
 QT4_USES=	qt:4
 QT4_USE=	qt=corelib,gui,moc_build,network,rcc_build
@@ -43,8 +46,6 @@ HUNSPELL_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 HUNSPELL_QMAKE_OFF=	CONFIG+=nohunspell
 
 post-patch:
-	@${REINPLACE_CMD} -e \
-		's|Q_OS_LINUX|Q_OS_UNIX|' ${WRKSRC}/document.cpp
 	@${REINPLACE_CMD} -e \
 		's|/usr/include|${LOCALBASE}/include|' ${WRKSRC}/src.pro
 

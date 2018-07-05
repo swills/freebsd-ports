@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/superlu_mt/Makefile 470000 2018-05-15 08:34:08Z amdmi3 $
+# $FreeBSD: head/math/superlu_mt/Makefile 473949 2018-07-05 06:22:51Z linimon $
 
 PORTNAME=	superlu_mt
 PORTVERSION=	3.1.20160319
@@ -19,7 +19,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/License.txt
 
 BROKEN_aarch64=		fails to build: undefined reference to sbrk
-BROKEN_sparc64=		Does not link on sparc64
+BROKEN_powerpc64=	fails to build: pstest runs away and consumes all memory
+BROKEN_sparc64=		fails to link
 
 USES=		fortran gmake
 

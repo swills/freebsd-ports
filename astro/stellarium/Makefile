@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/stellarium/Makefile 473960 2018-07-05 10:12:41Z danfe $
 
 PORTNAME=	stellarium
-PORTVERSION=	0.18.0
+PORTVERSION=	0.18.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	astro
 EXTRACT_ONLY=	${_DISTFILES:Nstars_*.cat:N*.pdf}
@@ -44,11 +44,9 @@ DOCS_DISTFILES=		stellarium_user_guide-${GUIDE_VERSION}-1.pdf:ug
 TEXTURES_MASTER_SITES=	SF/${PORTNAME}/Extra-data-files/textures:gfx
 TEXTURES_DISTFILES=	textures-1K.zip:gfx
 
-MULTIMEDIA_USES=	qt:5
 MULTIMEDIA_USE=		QT=multimedia
 MULTIMEDIA_CMAKE_OFF=	-DENABLE_MEDIA:BOOL=OFF
 
-TELESCOPE_USES=	qt:5
 TELESCOPE_USE=		QT=serialport
 TELESCOPE_CMAKE_OFF=	-DUSE_PLUGIN_TELESCOPECONTROL:BOOL=OFF
 

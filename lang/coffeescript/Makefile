@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/coffeescript/Makefile 467243 2018-04-13 14:41:21Z garga $
+# $FreeBSD: head/lang/coffeescript/Makefile 473928 2018-07-04 22:00:27Z swills $
 
 PORTNAME=	coffeescript
-DISTVERSION=	2.2.4
+DISTVERSION=	2.3.1
 CATEGORIES=	lang
 
 MAINTAINER=	egypcio@googlemail.com

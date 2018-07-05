@@ -1,8 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/textproc/hevea/Makefile 457747 2018-01-01 00:13:11Z danilo $
+# $FreeBSD: head/textproc/hevea/Makefile 473978 2018-07-05 17:31:36Z danilo $
 
 PORTNAME=	hevea
-PORTVERSION=	2.31
+PORTVERSION=	2.32
 CATEGORIES=	textproc
 MASTER_SITES=	http://para.inria.fr/~maranget/hevea/distri/ \
 		ftp://ftp.inria.fr/INRIA/moscova/hevea/

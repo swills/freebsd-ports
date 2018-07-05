@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net-mgmt/p5-Net-Abuse-Utils/Makefile 473266 2018-06-24 20:20:44Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-Net-Abuse-Utils/Makefile 473943 2018-07-05 01:40:23Z wen $
 
 PORTNAME=	Net-Abuse-Utils
-PORTVERSION=	0.26
+PORTVERSION=	0.27
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,7 +14,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Email-Address>=0:mail/p5-Email-Address \
+BUILD_DEPENDS=	p5-Email-Address-XS>=0:mail/p5-Email-Address-XS \
 		p5-Net-DNS>=0:dns/p5-Net-DNS \
 		p5-Net-IP>=0:net-mgmt/p5-Net-IP \
 		p5-Net-Whois-IP>=1.11:net/p5-Net-Whois-IP
