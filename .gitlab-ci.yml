@@ -1,5 +1,5 @@
 before_script:
-  - PORT_LIST=$(mktemp) ; git diff --no-prefix --name-only branches/2018Q3...MFH/r473979/2018Q3 | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+  - PORT_LIST=$(mktemp) ; git diff --no-prefix --name-only origin/branches/2018Q3...origin/MFH/r473979/2018Q3 | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
 
 head-amd64:
   stage: build
