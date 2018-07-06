@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 473600 2018-06-30 07:40:20Z dbn $
+# $FreeBSD: head/lang/Makefile 473992 2018-07-06 04:16:55Z wen $
 #
 
     COMMENT = Programming languages
@@ -301,6 +301,7 @@
     SUBDIR += python34
     SUBDIR += python35
     SUBDIR += python36
+    SUBDIR += python37
     SUBDIR += qore
     SUBDIR += qscheme
     SUBDIR += qt5-qml

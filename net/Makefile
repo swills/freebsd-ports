@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 473842 2018-07-03 15:20:13Z rene $
+# $FreeBSD: head/net/Makefile 473998 2018-07-06 07:36:07Z olivier $
 #
 
     COMMENT = Networking tools
@@ -168,6 +168,7 @@
     SUBDIR += freevrrpd
     SUBDIR += frr3
     SUBDIR += frr4
+    SUBDIR += frr5
     SUBDIR += fspclient
     SUBDIR += fspd
     SUBDIR += fsplib

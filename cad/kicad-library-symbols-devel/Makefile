@@ -1,13 +1,13 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library-devel/Makefile 458922 2018-01-13 09:47:41Z antoine $
+# $FreeBSD: head/cad/kicad-library-symbols-devel/Makefile 474000 2018-07-06 08:24:33Z mr $
 
 PORTNAME=	kicad
-DISTVERSION=	r${GIT_SRC_DATE}
+DISTVERSION=	r${GIT_SYM_DATE}
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-library-devel
 
 MAINTAINER=	mr@FreeBSD.org
-COMMENT=	Schematic and 3D libraries supported by KiCad team
+COMMENT=	Official KiCad schematic symbol libraries for the future Kicad 5 release
 
 LICENSE=	GPLv2
 
@@ -17,10 +17,16 @@ CONFLICTS=	kicad-4.*
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	KiCad
-GH_PROJECT=	kicad-library
-GH_TAGNAME=	758be27c7697b7ce3d4e0d6c9bb32fb6ff962a32
+GH_PROJECT=	kicad-symbols
+GH_TAGNAME=	${GIT_SYM_HASH}
 
 USES=		cmake
+
+CMAKE_ARGS=     -DLOCALBASE="${LOCALBASE}" \
+		-DCMAKE_BUILD_TYPE="Release" \
+		-DKICAD_TESTING_VERSION=ON \
+		-DKICAD_BUILD_VERSION=${DISTVERSION}
+INSTALL_TARGET=	install
 
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Greg Lewis <glewis@FreeBSD.org>
-# $FreeBSD: head/archivers/rpm4/Makefile 472466 2018-06-15 17:30:11Z amdmi3 $
+# $FreeBSD: head/archivers/rpm4/Makefile 473982 2018-07-05 20:11:03Z amdmi3 $
 
 PORTNAME=	rpm
 PORTVERSION=	4.13.1
@@ -34,7 +34,8 @@ CONFIGURE_ARGS=	--with-external-db \
 		--sysconfdir=${PREFIX}/etc \
 		--localstatedir=/var \
 		--without-javaglue \
-		am_cv_python_version=${PYTHON_VER}${PYTHON_ABIVER}
+		am_cv_python_version=${PYTHON_VER}${PYTHON_ABIVER} \
+		ac_cv_lib_elf_gelf_getvernaux=no  # otherwise fails to build in presence of devel/elfutils
 CONFIGURE_ENV=	LUA_CFLAGS=-I${LUA_INCDIR} \
 		LUA_LIBS="-L${LUA_LIBDIR} -llua-${LUA_VER} -lm"
 INSTALL_TARGET=	install-strip

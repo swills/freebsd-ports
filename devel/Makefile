@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 473947 2018-07-05 03:33:54Z wen $
+# $FreeBSD: head/devel/Makefile 473990 2018-07-06 02:49:24Z swills $
 #
 
     COMMENT = Development utilities
@@ -5891,6 +5891,7 @@
     SUBDIR += rubygem-rubyinlineaccel
     SUBDIR += rubygem-rubytree
     SUBDIR += rubygem-rufus-scheduler
+    SUBDIR += rubygem-rufus-scheduler342
     SUBDIR += rubygem-rugged
     SUBDIR += rubygem-runt
     SUBDIR += rubygem-ruport

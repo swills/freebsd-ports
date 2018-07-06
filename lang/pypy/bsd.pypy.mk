@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/pypy/bsd.pypy.mk 459150 2018-01-16 03:56:11Z dbn $
+# $FreeBSD: head/lang/pypy/bsd.pypy.mk 473994 2018-07-06 07:15:50Z farrokhi $
 
 .if !defined(LICENSE)
 LICENSE=	MIT PSFL
@@ -12,9 +12,9 @@ PYPY_DIR=	${PYTHON_IMPL}-${DISTVERSION:C|([0-9])\.([0-9]+).*|\1.\2|}
 PLIST_SUB+=	PYPY_DIR=${PYPY_DIR} PYPY_CFFI_VER=${PYPY_CFFI_VER}
 
 .if ${PYTHON_IMPL} == pypy
-DISTVERSION=	5.10.0
+DISTVERSION=	6.0.0
 PYPY_CFFI_VER=	${PYTHON_IMPL}-41
 .else # ${PYTHON_IMPL} == pypy3
-DISTVERSION=	5.10.1
+DISTVERSION=	6.0.0
 PYPY_CFFI_VER=	${PYTHON_IMPL}-${DISTVERSION:S|.||:C|\..*||}-${OPSYS:tl}${OSREL:C|\..*||}
 .endif

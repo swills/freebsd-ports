@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/frr4/Makefile 472873 2018-06-20 15:03:03Z linimon $
+# $FreeBSD: head/net/frr4/Makefile 473998 2018-07-06 07:36:07Z olivier $
 
 PORTNAME=	frr
 PORTVERSION=	4.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	gawk:lang/gawk
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
-CONFLICTS=	openbgpd openospfd zebra quagga frr3
+CONFLICTS=	openbgpd openospfd zebra quagga frr3 frr4
 
 USES=		autoreconf bison compiler:c++11-lang gmake pkgconfig libtool \
 		makeinfo python:2.7,build readline
