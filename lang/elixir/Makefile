@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/lang/elixir/Makefile 473438 2018-06-27 12:35:35Z olgeni $
+# $FreeBSD: head/lang/elixir/Makefile 473985 2018-07-05 22:36:13Z dumbbell $
 
 PORTNAME=	elixir
-PORTVERSION=	1.6.5
+PORTVERSION=	1.6.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 MASTER_SITES+=	https://github.com/elixir-lang/elixir/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/:doc
@@ -17,10 +17,11 @@ LICENSE=	APACHE20
 BUILD_DEPENDS=	erlang>=19:lang/erlang
 RUN_DEPENDS=	erlang>=19:lang/erlang
 
+USES=		gmake
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	elixir-lang
 
-USES=		gmake
 USE_LOCALE=	en_US.UTF-8
 ALL_TARGET=	# empty
 REINPLACE_ARGS=	-i ""

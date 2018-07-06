@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Assets/Makefile 473945 2018-07-05 02:05:59Z swills $
+# $FreeBSD: head/devel/p5-File-Assets/Makefile 473993 2018-07-06 06:27:47Z swills $
 
 PORTNAME=	File-Assets
 PORTVERSION=	0.064
@@ -40,6 +40,6 @@ RUN_DEPENDS=	p5-Test-Memory-Cycle>0:devel/p5-Test-Memory-Cycle \
 USES=		perl5
 USE_PERL5=	configure
 
-PORTSCOUT=	ignore:0.064_1
+PORTSCOUT=	skipv:0.064_1
 
 .include <bsd.port.mk>
