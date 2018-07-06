@@ -120,7 +120,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-sidekiq-cron>=0.6.0:devel/rubygem-sidekiq-cron \
 	rubygem-redis-namespace>=1.6.0:databases/rubygem-redis-namespace \
 	rubygem-sidekiq-limit_fetch>=3.4:devel/rubygem-sidekiq-limit_fetch \
-	rubygem-rufus-scheduler>=3.4.0:devel/rubygem-rufus-scheduler \
+	rubygem-rufus-scheduler342>=3.4.0:devel/rubygem-rufus-scheduler342 \
 	rubygem-httparty>=0.13.3:www/rubygem-httparty \
 	rubygem-rainbow2>=2.2:devel/rubygem-rainbow2 \
 	rubygem-ruby-progressbar>=0:devel/rubygem-ruby-progressbar \
