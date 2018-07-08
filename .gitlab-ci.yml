@@ -1,0 +1,35 @@
+before_script:
+  - PORT_LIST=$(mktemp) ; git diff --no-prefix --name-only origin/master...${GIT_BRANCH} | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+
+head-amd64:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -j head-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+head-i386:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -j head-i386 -p swills-freebsd-ports -f ${PORT_LIST}
+
+111-amd64:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -j 111-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+111-i386:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -j 111-i386 -p swills-freebsd-ports -f ${PORT_LIST}
+
+104-amd64:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -j 104-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+104-i386:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -j 104-i386 -p swills-freebsd-ports -f ${PORT_LIST}
+
+after_script:
+  - /usr/home/jenkins-builder/workspace/test-build-pr-patch/take_bug 229586
