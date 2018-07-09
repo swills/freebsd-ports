@@ -2,8 +2,7 @@
 
 PORTNAME=	osm2pgrouting
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.3.3
-PORTREVISION=	2
+DISTVERSION=	2.3.5
 CATEGORIES=	converters databases geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org
