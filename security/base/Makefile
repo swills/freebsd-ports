@@ -1,8 +1,9 @@
 # Created by: Linh Pham <question+fbsdports@closedsrc.org>
-# $FreeBSD: head/security/base/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/security/base/Makefile 474378 2018-07-10 16:03:13Z swills $
 
 PORTNAME=	base
 PORTVERSION=	1.4.5
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF/secureideas/BASE/${PORTNAME}-${PORTVERSION}
 

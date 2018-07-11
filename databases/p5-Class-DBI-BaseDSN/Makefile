@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/databases/p5-Class-DBI-BaseDSN/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-BaseDSN/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Class-DBI-BaseDSN
 PORTVERSION=	1.22
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DSN sensitive base class
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
 
 USES=		perl5

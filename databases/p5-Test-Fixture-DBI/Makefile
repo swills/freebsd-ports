@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-Test-Fixture-DBI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Test-Fixture-DBI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Test-Fixture-DBI
 PORTVERSION=	0.09
@@ -13,13 +13,13 @@ COMMENT=	Perl extension to load fixture data into database
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-DBI>0:databases/p5-DBI \
 	p5-SQL-Abstract>0:databases/p5-SQL-Abstract \
 	p5-SQL-Abstract-Plugin-InsertMulti>0:databases/p5-SQL-Abstract-Plugin-InsertMulti \
 	p5-UNIVERSAL-require>0:devel/p5-UNIVERSAL-require \
 	p5-YAML-Syck>0:textproc/p5-YAML-Syck
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Sub-Uplevel>=0:devel/p5-Sub-Uplevel
 

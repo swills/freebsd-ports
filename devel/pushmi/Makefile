@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/pushmi/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/devel/pushmi/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	pushmi
 PORTVERSION=	1.0.0
@@ -14,17 +14,17 @@ COMMENT=	Subversion repository replication tool
 
 LICENSE=	APACHE20
 
+BUILD_DEPENDS=	${RUN_DEPENDS} \
+		p5-IPC-Run3>=0:devel/p5-IPC-Run3 \
+		p5-RunApp>=0.13:devel/p5-RunApp \
+		p5-Test-Output>=0:devel/p5-Test-Output \
+		${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2
 RUN_DEPENDS=	p5-subversion>=0:devel/p5-subversion \
 		p5-App-CLI>=0.06:devel/p5-App-CLI \
 		p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
 		p5-Log-Log4perl>=0:devel/p5-Log-Log4perl \
 		p5-YAML-Syck>=0:textproc/p5-YAML-Syck \
 		svk>=2.0.0:devel/svk
-BUILD_DEPENDS:=	${RUN_DEPENDS} \
-		p5-IPC-Run3>=0:devel/p5-IPC-Run3 \
-		p5-RunApp>=0.13:devel/p5-RunApp \
-		p5-Test-Output>=0:devel/p5-Test-Output \
-		${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2
 
 USES=		apache:2.2+ perl5
 USE_PERL5=	configure

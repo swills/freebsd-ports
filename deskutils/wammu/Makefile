@@ -1,5 +1,5 @@
 # Created by: bsam
-# $FreeBSD: head/deskutils/wammu/Makefile 460249 2018-01-29 09:25:22Z vanilla $
+# $FreeBSD: head/deskutils/wammu/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	wammu
 PORTVERSION=	0.44
@@ -12,6 +12,8 @@ COMMENT=	GUI manager of contacts, todos, calendar, and messages in your phone
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to build: Signal 11
 
 LIB_DEPENDS=	libGammu.so:comms/gammu
 

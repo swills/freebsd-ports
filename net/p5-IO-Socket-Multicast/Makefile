@@ -1,5 +1,5 @@
 # Created by: Janos.Mohacsi@dante.org.uk
-# $FreeBSD: head/net/p5-IO-Socket-Multicast/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-IO-Socket-Multicast/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	IO-Socket-Multicast
 PORTVERSION=	1.12
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jmohacsi@bsd.hu
 COMMENT=	Perl module to send and receive multicast messages
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-IO-Interface>=0:net/p5-IO-Interface
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	examples/client.pl examples/server.pl

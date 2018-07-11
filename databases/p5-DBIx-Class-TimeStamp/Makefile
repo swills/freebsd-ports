@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Class-TimeStamp/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/databases/p5-DBIx-Class-TimeStamp/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Class-TimeStamp
 PORTVERSION=	0.14
@@ -11,13 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DBIx::Class extension to handle date and time based fields
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBIx-Class-DynamicDefault>=0.03:databases/p5-DBIx-Class-DynamicDefault \
 		p5-DBIx-Class>=0.08009:databases/p5-DBIx-Class \
 		p5-DateTime>=0.55:devel/p5-DateTime \
 		p5-Time-Warp>=0:devel/p5-Time-Warp \
 		p5-DateTime-Format-MySQL>=0:devel/p5-DateTime-Format-MySQL \
 		p5-DateTime-Format-SQLite>=0:devel/p5-DateTime-Format-SQLite
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 USES=		perl5

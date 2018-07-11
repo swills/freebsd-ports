@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Event-NameDay/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Event-NameDay/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DateTime-Event-NameDay
 PORTVERSION=	0.02
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl DateTime extension to work with namedays from various countries
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Set>=0:devel/p5-DateTime-Set \
 		p5-DateTime-Calendar-Christian>=0:devel/p5-DateTime-Calendar-Christian \
 		p5-Params-Validate>=0:devel/p5-Params-Validate
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

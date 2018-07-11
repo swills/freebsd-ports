@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/py-veusz/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/science/py-veusz/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	veusz
 PORTVERSION=	1.19.1
@@ -14,8 +14,8 @@ COMMENT=	Scientific plotting package
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	${PYNUMPY}
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		python pyqt:4 qt:4 shebangfix
 USE_PYQT=	gui svg

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-WebService-CIA/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/www/p5-WebService-CIA/Makefile 474244 2018-07-09 08:55:17Z mat $
 
 PORTNAME=	WebService-CIA
 PORTVERSION=	1.4
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Information from the CIA World Factbook
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-libwww>=0:www/p5-libwww \
 		p5-MLDBM>=0:databases/p5-MLDBM
-BUILD_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

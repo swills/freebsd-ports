@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/rkr-lv2/Makefile 471444 2018-06-03 03:06:24Z yuri $
+# $FreeBSD: head/audio/rkr-lv2/Makefile 474061 2018-07-07 07:20:08Z yuri $
 
 PORTNAME=	rkr
 DISTVERSIONPREFIX=	beta_
@@ -23,5 +23,12 @@ GH_ACCOUNT=	ssj71
 GH_PROJECT=	${PORTNAME}lv2
 
 DATADIR=	${PREFIX}/share/${PORTNAME}.lv2
+
+OPTIONS_DEFINE_amd64=	SIMD
+OPTIONS_DEFINE_i386=	SIMD
+OPTIONS_DEFAULT_amd64=	SIMD
+OPTIONS_DEFAULT_i386=	SIMD
+
+SIMD_CMAKE_ON=	-DPORT_SIMD_FLAGS:STRING="-msse -msse2 -mfpmath=sse"
 
 .include <bsd.port.mk>

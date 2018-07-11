@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-hieracles/Makefile 418391 2016-07-11 18:41:12Z pawel $
+# $FreeBSD: head/sysutils/rubygem-hieracles/Makefile 474367 2018-07-10 13:15:50Z swills $
 
 PORTNAME=	hieracles
-PORTVERSION=	0.3.6
+PORTVERSION=	0.4.2
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -19,7 +19,8 @@ NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 PLIST_FILES=	bin/hc man/man1/hc.1.gz \
-		bin/ppdb man/man1/ppdb.1.gz
+		bin/ppdb man/man1/ppdb.1.gz \
+		bin/hieracles
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/hc.1 ${STAGEDIR}${PREFIX}/man/man1/

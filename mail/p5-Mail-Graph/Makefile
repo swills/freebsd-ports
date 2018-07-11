@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/mail/p5-Mail-Graph/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Graph/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Mail-Graph
 PORTVERSION=	0.14
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for drawing graphical stats for mails/spams
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-GD>=0:graphics/p5-GD \
 		p5-GD-Graph>=0:graphics/p5-GD-Graph \
 		p5-GD-TextUtil>=0:graphics/p5-GD-TextUtil \
 		p5-Date-Calc>=0:devel/p5-Date-Calc
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5 shebangfix
 USE_PERL5=	configure

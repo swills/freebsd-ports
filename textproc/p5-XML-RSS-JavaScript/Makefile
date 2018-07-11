@@ -1,5 +1,5 @@
 # Created by: Foxfair Hu <foxfair@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-RSS-JavaScript/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-RSS-JavaScript/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	XML-RSS-JavaScript
 PORTVERSION=	0.65
@@ -14,8 +14,8 @@ COMMENT=	Perl extension to serialize your RSS as JavaScript
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-XML-RSS>=1.31:textproc/p5-XML-RSS
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

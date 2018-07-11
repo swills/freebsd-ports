@@ -1,8 +1,8 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/security/sqlmap/Makefile 468824 2018-05-02 10:53:47Z rm $
+# $FreeBSD: head/security/sqlmap/Makefile 474390 2018-07-10 17:03:38Z rm $
 
 PORTNAME=	sqlmap
-PORTVERSION=	1.2.4
+PORTVERSION=	1.2.7
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 
@@ -11,6 +11,8 @@ COMMENT=	Automatic SQL injection tool
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/sqlmap/LICENSE
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:-2.7 shebangfix

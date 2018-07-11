@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Pod-Tree
 PORTVERSION=	1.25
@@ -13,11 +13,11 @@ COMMENT=	Create a static syntax tree for a POD
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTML-Stream>=1.49:www/p5-HTML-Stream \
 		p5-IO-String>=1:devel/p5-IO-String \
 		p5-Path-Tiny>=0.068:devel/p5-Path-Tiny \
 		p5-Text-Template>=1:textproc/p5-Text-Template
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Path-Tiny>=0.068:devel/p5-Path-Tiny \
 		p5-Test-Compile>1.2.1:devel/p5-Test-Compile
 

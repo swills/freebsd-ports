@@ -1,11 +1,10 @@
-# $FreeBSD: head/editors/nano-devel/Makefile 441693 2017-05-25 14:25:12Z bapt $
+# $FreeBSD: head/editors/nano-devel/Makefile 474132 2018-07-07 19:57:40Z danilo $
 
 PORTNAME=	nano
 PORTVERSION=	2.5.3
 CATEGORIES=	editors
 MASTER_SITES=	http://www.nano-editor.org/dist/v${PORTVERSION:R}/ \
 		GNU
-
 PKGNAMESUFFIX=	-devel
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -33,7 +32,7 @@ NLS_CONFIGURE_ENABLE=	nls
 
 INFO=		nano
 
-PORTSCOUT=	limitw:1,odd
+PORTSCOUT=	ignore:1
 
 post-build:
 	cd ${WRKSRC}/doc/man; ${REINPLACE_CMD} \

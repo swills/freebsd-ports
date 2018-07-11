@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/lang/p5-Pugs-Compiler-Rule/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/p5-Pugs-Compiler-Rule/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Pugs-Compiler-Rule
 PORTVERSION=	0.37
@@ -12,11 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Compiler for Perl 6 Rules
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Cache-Cache>=1.05:devel/p5-Cache-Cache \
 		p5-PadWalker>=1.0:devel/p5-PadWalker \
 		p5-Parse-Yapp>=0:devel/p5-Parse-Yapp \
 		p5-YAML-Syck>=0.60:textproc/p5-YAML-Syck
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-File-Slurp>0:devel/p5-File-Slurp
 
 USES=		perl5

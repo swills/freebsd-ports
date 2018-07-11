@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-Sass/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-Sass/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Text-Sass
 PORTVERSION=	0.97
@@ -14,10 +14,10 @@ COMMENT=	Perl implementation of http://sass-lang.com/
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Readonly>=1.03:devel/p5-Readonly \
 	p5-Convert-Color>0:graphics/p5-Convert-Color
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Try-Tiny>0:lang/p5-Try-Tiny
 
 USES=		perl5

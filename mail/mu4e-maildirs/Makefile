@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/mu4e-maildirs/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/mail/mu4e-maildirs/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	mu4e-maildirs
 PORTVERSION=	0.8.20160126
@@ -11,7 +11,7 @@ COMMENT=	Maildirs extension for Mu4e
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	dash.el${EMACS_PKGNAMESUFFIX}>0:devel/dash.el@${EMACS_FLAVOR} \
 		mu4e${EMACS_PKGNAMESUFFIX}>0:mail/mu4e@${EMACS_FLAVOR}
 

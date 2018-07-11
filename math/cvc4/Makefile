@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cvc4/Makefile 472970 2018-06-21 11:06:10Z pi $
+# $FreeBSD: head/math/cvc4/Makefile 474182 2018-07-08 15:29:18Z swills $
 
 PORTNAME=	cvc4
 PORTVERSION=	1.5
@@ -32,7 +32,7 @@ SHEBANG_FILES=		src/mk* src/theory/mk* src/base/mk* src/expr/mk* src/options/mk*
 OPTIONS_DEFINE=		JAVA READLINE DEBUG
 OPTIONS_RADIO=		NUMLIB
 OPTIONS_RADIO_NUMLIB=	GMP CLN
-OPTIONS_DEFAULT=	READLINE CLN
+OPTIONS_DEFAULT=	READLINE GMP
 OPTIONS_SUB=		yes
 
 GMP_DESC=		Use GMP numeric library

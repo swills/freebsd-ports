@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-MobileAgent-Plugin-Charset/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-MobileAgent-Plugin-Charset/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTTP-MobileAgent-Plugin-Charset
 PORTVERSION=	0.04
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to plugin Encode::JP::Mobile for HTTP::MobileAgent
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-HTTP-MobileAgent>=0.26:www/p5-HTTP-MobileAgent
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

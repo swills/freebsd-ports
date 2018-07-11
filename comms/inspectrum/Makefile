@@ -1,8 +1,8 @@
 # Created by: <mr@freebsd.org>
-# $FreeBSD: head/comms/inspectrum/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/inspectrum/Makefile 474281 2018-07-09 19:02:43Z mr $
 
 PORTNAME=	inspectrum
-PORTVERSION=	g20180321
+PORTVERSION=	g20180708
 #PORTREVISION=	1
 #DISTVERSIONPREFIX=	v
 CATEGORIES=	comms hamradio
@@ -20,7 +20,7 @@ CMAKE_INSTALL_PREFIX=   ${STAGEDIR}${PREFIX}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	miek
-GH_TAGNAME=	11853b64062bda4f81926613f15d1d9654c227c8
+GH_TAGNAME=	d844c921e51e6d3e4aaea46b622cfa1a38feadfe
 
 USE_QT=		core buildtools_build concurrent widgets
 USES=		cmake pkgconfig qmake qt:5

@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/www/p5-HTML-FillInForm-ForceUTF8/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-FillInForm-ForceUTF8/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTML-FillInForm-ForceUTF8
 PORTVERSION=	0.03
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	FillInForm with UTF-8 encoding
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTML-FillInForm>0:www/p5-HTML-FillInForm
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-ExtensionClass/Makefile 432381 2017-01-24 20:02:44Z rm $
+# $FreeBSD: head/devel/py-ExtensionClass/Makefile 474397 2018-07-10 18:27:21Z swills $
 
 PORTNAME=	ExtensionClass
-PORTVERSION=	4.2.0
+PORTVERSION=	4.3.0
 CATEGORIES=	devel python zope
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

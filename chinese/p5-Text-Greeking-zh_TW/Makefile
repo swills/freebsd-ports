@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/chinese/p5-Text-Greeking-zh_TW/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/p5-Text-Greeking-zh_TW/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Text-Greeking-zh_TW
 PORTVERSION=	1.0
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate meaningless Chinese text that creates the illusion of the document
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-common-sense>=2.02:devel/p5-common-sense
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

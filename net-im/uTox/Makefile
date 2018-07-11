@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/uTox/Makefile 473381 2018-06-26 10:10:03Z thierry $
+# $FreeBSD: head/net-im/uTox/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	uTox
 DISTVERSION=	0.17.0
@@ -12,6 +12,10 @@ COMMENT=	Lightweight Tox client
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: endian.h:68:20: too many arguments provided to function-like macro invocation
+BROKEN_armv6=		fails to compile: endian.h:68:20: too many arguments provided to function-like macro invocation
+BROKEN_armv7=		fails to compile: endian.h:68:20: too many arguments provided to function-like macro invocation
 
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \

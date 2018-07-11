@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/finance/prestashop/Makefile 473827 2018-07-03 13:05:51Z wen $
+# $FreeBSD: head/finance/prestashop/Makefile 474053 2018-07-07 01:05:52Z wen $
 
 PORTNAME=	prestashop
-PORTVERSION=	1.7.3.4
+PORTVERSION=	1.7.4.0
 CATEGORIES=	finance www
 MASTER_SITES=	http://www.prestashop.com/download/old/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -23,8 +23,6 @@ SUB_FILES=	pkg-message
 SHEBANG_FILES=	vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php \
 		vendor/doctrine/orm/docs/bin/generate-docs.sh \
 		vendor/doctrine/orm/docs/bin/install-dependencies.sh \
-		vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/bin/build.sh \
-		vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/bin/build_demo.sh \
 		vendor/symfony/symfony/src/Symfony/Component/Intl/Tests/Data/Bundle/Reader/Fixtures/build.sh \
 		vendor/tecnickcom/tcpdf/tools/tcpdf_addfont.php
 

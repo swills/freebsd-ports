@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/devel/p5-Test-Pod-Coverage-Permissive/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-Pod-Coverage-Permissive/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Test-Pod-Coverage-Permissive
 PORTVERSION=	0.05
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Checks for pod coverage regression
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-PathTools>=0:devel/p5-PathTools \
 		p5-Pod-Coverage>=0:devel/p5-Pod-Coverage \
 		p5-YAML-Syck>=0:textproc/p5-YAML-Syck
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

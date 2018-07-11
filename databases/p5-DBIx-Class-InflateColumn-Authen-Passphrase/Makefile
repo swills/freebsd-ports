@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-InflateColumn-Authen-Passphrase/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-InflateColumn-Authen-Passphrase/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Class-InflateColumn-Authen-Passphrase
 PORTVERSION=	0.01
@@ -10,10 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	fw@moov.de
 COMMENT=	Inflate/deflate columns to Authen::Passphrase instances
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBIx-Class-DynamicDefault>=0.03:databases/p5-DBIx-Class-DynamicDefault \
-		p5-DBIx-Class>=0.08009:databases/p5-DBIx-Class \
-		p5-Authen-Passphrase>=0:security/p5-Authen-Passphrase
-BUILD_DEPENDS:=	p5-DBIx-Class-DynamicDefault>=0.03:databases/p5-DBIx-Class-DynamicDefault \
 		p5-DBIx-Class>=0.08009:databases/p5-DBIx-Class \
 		p5-Authen-Passphrase>=0:security/p5-Authen-Passphrase
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-AddDefaultCharset/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-AddDefaultCharset/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Plack-Middleware-AddDefaultCharset
 PORTVERSION=	0.02
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to port Apache2 AddDefaultCharset for Plack
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Plack>=0.9925:www/p5-Plack
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

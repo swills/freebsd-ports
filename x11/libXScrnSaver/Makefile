@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/libXScrnSaver/Makefile 469783 2018-05-13 09:04:04Z amdmi3 $
+# $FreeBSD: head/x11/libXScrnSaver/Makefile 474038 2018-07-06 20:00:30Z zeising $
 
 PORTNAME=	libXScrnSaver
-PORTVERSION=	1.2.2
-PORTREVISION=	3
+PORTVERSION=	1.2.3
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

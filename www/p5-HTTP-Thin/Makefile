@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Thin/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTTP-Thin/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTTP-Thin
 PORTVERSION=	0.006
@@ -12,12 +12,12 @@ COMMENT=	Thin Wrapper around HTTP::Tiny to play nice with HTTP::Message
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Class-Method-Modifiers>0:devel/p5-Class-Method-Modifiers \
 		p5-HTTP-Tiny>=0.056:www/p5-HTTP-Tiny \
 		p5-HTTP-Message>0:www/p5-HTTP-Message \
 		p5-Hash-MultiValue>0:devel/p5-Hash-MultiValue \
 		p5-Safe-Isa>0:devel/p5-Safe-Isa
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

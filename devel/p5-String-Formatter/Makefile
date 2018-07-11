@@ -1,5 +1,5 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-String-Formatter/Makefile 416276 2016-06-02 11:19:33Z mat $
+# $FreeBSD: head/devel/p5-String-Formatter/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	String-Formatter
 PORTVERSION=	0.102084
@@ -14,9 +14,9 @@ COMMENT=	Build sprintf-like functions of your own
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Params-Util>=0:devel/p5-Params-Util \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

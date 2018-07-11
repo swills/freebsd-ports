@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 473842 2018-07-03 15:20:13Z rene $
+# $FreeBSD: head/databases/Makefile 474358 2018-07-10 12:46:35Z rm $
 #
 
     COMMENT = Databases and related software
@@ -773,6 +773,8 @@
     SUBDIR += py-PyGreSQL
     SUBDIR += py-Pyrseas
     SUBDIR += py-agate-sql
+    SUBDIR += py-aiopg
+    SUBDIR += py-aioredis
     SUBDIR += py-alembic
     SUBDIR += py-apsw
     SUBDIR += py-asyncpg
@@ -899,6 +901,7 @@
     SUBDIR += redis_exporter
     SUBDIR += redisdesktopmanager
     SUBDIR += retcl
+    SUBDIR += riak
     SUBDIR += rocksdb
     SUBDIR += rocksdb-lite
     SUBDIR += rrdman

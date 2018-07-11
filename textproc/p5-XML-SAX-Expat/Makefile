@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX-Expat/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-SAX-Expat/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	XML-SAX-Expat
 PORTVERSION=	0.51
@@ -14,10 +14,10 @@ COMMENT=	Simple API for XML
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX \
 		p5-XML-NamespaceSupport>=0:textproc/p5-XML-NamespaceSupport
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5 dos2unix
 USE_PERL5=	configure

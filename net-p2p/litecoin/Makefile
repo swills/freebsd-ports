@@ -1,10 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net-p2p/litecoin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/litecoin/Makefile 474317 2018-07-10 03:22:00Z swills $
 
 PORTNAME=	litecoin
-PORTVERSION=	0.15.1
+PORTVERSION=	0.16.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	swills@FreeBSD.org
@@ -101,6 +100,7 @@ PLIST_FILES?=	bin/litecoin-qt man/man1/litecoin-qt.1.gz \
 .if ${OSVERSION} < 1100000
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-src_crypto_scrypt.cpp \
 		${FILESDIR}/extra-patch-src_crypto_scrypt.h
+CONFIGURE_ARGS+=--disable-asm
 .endif
 
 .if defined(SLAVE_PORT) && ${SLAVE_PORT} == "no"

@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/www/p5-HTML-ContentExtractor/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-ContentExtractor/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTML-ContentExtractor
 PORTVERSION=	0.03
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	oleg@mamontov.net
 COMMENT=	Extract text contained within an HTML document
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTML-Tree>=3.13:www/p5-HTML-Tree			\
 		p5-HTML-TableExtract>=2.10:www/p5-HTML-TableExtract
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

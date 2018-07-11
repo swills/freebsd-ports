@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Finance-Currency-Convert-XE/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Finance-Currency-Convert-XE/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Finance-Currency-Convert-XE
 PORTVERSION=	0.25
@@ -13,9 +13,9 @@ COMMENT=	Currency conversion module
 
 LICENSE=	ART20
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-WWW-Mechanize>=1.60:www/p5-WWW-Mechanize
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Path-Class-URI/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Path-Class-URI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Path-Class-URI
 PORTVERSION=	0.04
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for serialize Path::Class objects as file:// URI
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Path-Class>0:devel/p5-Path-Class \
 	p5-URI>0:net/p5-URI \
 	p5-Exporter-Lite>0:devel/p5-Exporter-Lite
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

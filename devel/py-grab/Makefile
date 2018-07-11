@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-grab/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-grab/Makefile 474388 2018-07-10 17:00:25Z rm $
 
 PORTNAME=	grab
-PORTVERSION=	0.6.38
+PORTVERSION=	0.6.41
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,7 @@ MAINTAINER=	rm@FreeBSD.org
 COMMENT=	Site scraping framework
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycurl>0:ftp/py-pycurl@${PY_FLAVOR} \

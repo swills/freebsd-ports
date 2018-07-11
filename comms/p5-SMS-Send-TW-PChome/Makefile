@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/comms/p5-SMS-Send-TW-PChome/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/p5-SMS-Send-TW-PChome/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	SMS-Send-TW-PChome
 PORTVERSION=	0.03
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	 p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	SMS::Send driver for sms.pchome.com.tw
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-SMS-Send>=0:comms/p5-SMS-Send \
 		p5-Text-Iconv>=0:converters/p5-Text-Iconv \
 		p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
 		p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

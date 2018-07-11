@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-Cache/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Geo-Cache/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Geo-Cache
 PORTVERSION=	0.11
@@ -14,9 +14,9 @@ COMMENT=	Object interface for GPS waypoints
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Time-modules>=0:devel/p5-Time-modules \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

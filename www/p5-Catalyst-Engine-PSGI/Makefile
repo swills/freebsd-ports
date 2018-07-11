@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-Engine-PSGI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Engine-PSGI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Catalyst-Engine-PSGI
 PORTVERSION=	0.14
@@ -13,10 +13,10 @@ COMMENT=	Perl extension of PSGI engine for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Catalyst-Runtime>=5.80007:www/p5-Catalyst-Runtime \
 	p5-Catalyst-Action-RenderView>0:www/p5-Catalyst-Action-RenderView
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuildtiny

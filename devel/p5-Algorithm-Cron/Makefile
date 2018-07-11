@@ -1,5 +1,5 @@
 # Created by: Geoffroy Desvernay <dgeo@centrale-marseille.fr>
-# $FreeBSD: head/devel/p5-Algorithm-Cron/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Algorithm-Cron/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Algorithm-Cron
 PORTVERSION=	0.09
@@ -13,8 +13,8 @@ COMMENT=	Abstract implementation of the cron(8) scheduling algorithm
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS:=	p5-Time-timegm>=0:devel/p5-Time-timegm
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Time-timegm>=0:devel/p5-Time-timegm
 
 USES=		perl5
 USE_PERL5=	configure

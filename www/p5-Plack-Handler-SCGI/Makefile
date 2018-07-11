@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Handler-SCGI/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Handler-SCGI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Plack-Handler-SCGI
 PORTVERSION=	0.02
@@ -10,11 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for PSGI handler on SCGI daemon
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Plack>=0.9901:www/p5-Plack \
 	p5-SCGI>0:www/p5-SCGI \
 	p5-Try-Tiny>=0.04:lang/p5-Try-Tiny
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

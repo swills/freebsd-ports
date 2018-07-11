@@ -1,10 +1,10 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library-footprints-devel/Makefile 474000 2018-07-06 08:24:33Z mr $
+# $FreeBSD: head/cad/kicad-library-footprints-devel/Makefile 474023 2018-07-06 17:43:22Z antoine $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_FP_DATE}
 CATEGORIES=	cad
-PKGNAMESUFFIX=	-library-devel
+PKGNAMESUFFIX=	-library-footprints-devel
 
 MAINTAINER=	mr@FreeBSD.org
 COMMENT=	Official KiCad Footprint Libraries for the future Kicad version 5

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Mini/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-CPAN-Mini/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	CPAN-Mini
 PORTVERSION=	1.111013
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	CPAN::Mini - create a minimal mirror of CPAN
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-File-HomeDir>=0.57:devel/p5-File-HomeDir \
 		p5-libwww>=5:www/p5-libwww \
 		p5-URI>=1:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Simple>=0.96:devel/p5-Test-Simple
 
 USES=		perl5

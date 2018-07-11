@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-rufus-scheduler342/Makefile 473990 2018-07-06 02:49:24Z swills $
+# $FreeBSD: head/devel/rubygem-rufus-scheduler342/Makefile 474100 2018-07-07 15:34:47Z swills $
 
 PORTNAME=	rufus-scheduler
 PORTVERSION=	3.4.2
@@ -17,5 +17,7 @@ RUN_DEPENDS=	rubygem-et-orbi>=1.0:devel/rubygem-et-orbi
 NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
+
+PORTSCOUT=	limit:^3\.4\.2
 
 .include <bsd.port.mk>

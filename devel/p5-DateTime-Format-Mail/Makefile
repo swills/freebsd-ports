@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-Mail/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-Mail/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DateTime-Format-Mail
 PORTVERSION=	0.403
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-DateTime>=0:devel/p5-DateTime
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 PORTSCOUT=	skipv:0.2901,0.3001
 

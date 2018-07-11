@@ -1,5 +1,5 @@
 # Created by: J.F. Dockes
-# $FreeBSD: head/databases/xapian-core10/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/databases/xapian-core10/Makefile 474136 2018-07-07 20:43:06Z tobik $
 
 PORTNAME=	xapian-core
 PORTVERSION=	1.0.23
@@ -21,6 +21,7 @@ BROKEN_mips64=		fails to install: quartz_log.cc:: error: call to 'om_tostring' i
 CONFLICTS_INSTALL=	xapian-core xapian-core12
 
 USES=		libtool
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 MAKE_ENV=	INSTALL_STRIP_FLAG=${STRIP}

@@ -1,5 +1,5 @@
 # Created by: Alexandre Biancalana <ale@biancalanas.net>
-# $FreeBSD: head/mail/p5-Email-Sender-Transport-SMTP-TLS/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Email-Sender-Transport-SMTP-TLS/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Email-Sender-Transport-SMTP-TLS
 PORTVERSION=	0.15
@@ -13,9 +13,9 @@ COMMENT=	Email::Sender with Net::SMTP::TLS (Eg. Gmail)
 LICENSE=	GPLv1
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Email-Sender>=0.091660:mail/p5-Email-Sender \
 		p5-Net-SMTP-TLS-ButMaintained>=0.2:mail/p5-Net-SMTP-TLS-ButMaintained
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

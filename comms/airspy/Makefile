@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/airspy/Makefile 473419 2018-06-27 05:15:24Z yuri $
+# $FreeBSD: head/comms/airspy/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	airspy
 DISTVERSIONPREFIX=	v
@@ -14,6 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/airspy-tools/LICENSE.md
 
 BROKEN_FreeBSD_10=	error: use of undeclared identifier '__m128'
+BROKEN_aarch64=		fails to compile: invalid conversion between vector type '__m64' and integer type 'int'
 
 USES=		cmake:outsource pkgconfig
 USE_GITHUB=	yes

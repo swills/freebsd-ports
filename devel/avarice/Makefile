@@ -1,9 +1,9 @@
 # Created by: Brian Dean <bsd@FreeBSD.org>
-# $FreeBSD: head/devel/avarice/Makefile 375187 2014-12-21 21:05:51Z antoine $
+# $FreeBSD: head/devel/avarice/Makefile 474207 2018-07-08 22:34:53Z leres $
 
 PORTNAME=	avarice
 PORTVERSION=	2.13
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/devel/p5-Data-DumpXML/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-DumpXML/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Data-DumpXML
 PORTVERSION=	1.06
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dump arbitrary data structures as XML
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Array-RefElem>=0.01:misc/p5-Array-RefElem \
 		p5-XML-Parser>=2:textproc/p5-XML-Parser
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

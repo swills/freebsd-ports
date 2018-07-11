@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/sysutils/p5-Schedule-Cron/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-Schedule-Cron/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Schedule-Cron
 PORTVERSION=	1.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Schedule::Cron - cron-like scheduler for Perl subroutines
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Time-modules>=0:devel/p5-Time-modules
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

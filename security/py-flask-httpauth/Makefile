@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-flask-httpauth/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-flask-httpauth/Makefile 474382 2018-07-10 16:56:15Z rm $
 
 PORTNAME=	Flask-HTTPAuth
-PORTVERSION=	3.2.3
+PORTVERSION=	3.2.4
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

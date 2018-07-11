@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-View-Jemplate/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-Catalyst-View-Jemplate/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Catalyst-View-Jemplate
 PORTVERSION=	0.06
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Jemplate files server
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-File-Find-Rule>0:devel/p5-File-Find-Rule \
 		p5-Catalyst-Runtime>=5.50:www/p5-Catalyst-Runtime \
 		p5-Jemplate>=0.19:www/p5-Jemplate
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

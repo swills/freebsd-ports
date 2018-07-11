@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Template-Plugin-VMethods/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Template-Plugin-VMethods/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Template-Plugin-VMethods
 PORTVERSION=	0.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Install vmethods for Template-Toolkit
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Template-Toolkit>0:www/p5-Template-Toolkit
 
 USES=		perl5

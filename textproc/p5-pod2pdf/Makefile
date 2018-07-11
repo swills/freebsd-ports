@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-pod2pdf/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/textproc/p5-pod2pdf/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	pod2pdf
 PORTVERSION=	0.42
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Converts POD to PDF format
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-PDF-API2>=0.60:textproc/p5-PDF-API2 \
 		p5-Pod-Escapes>0:textproc/p5-Pod-Escapes \
 		p5-Getopt-ArgvFile>0:devel/p5-Getopt-ArgvFile
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

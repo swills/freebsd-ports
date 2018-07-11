@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/qutebrowser/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/qutebrowser/Makefile 474055 2018-07-07 04:19:45Z novel $
 
 PORTNAME=	qutebrowser
-DISTVERSION=	1.3.3
+DISTVERSION=	1.4.0
 CATEGORIES=	www
 MASTER_SITES=	CHEESESHOP
 

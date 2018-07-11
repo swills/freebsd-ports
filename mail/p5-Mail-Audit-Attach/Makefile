@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-Audit-Attach/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Audit-Attach/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Mail-Audit-Attach
 PORTVERSION=	0.96
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mail::Audit plugin for attachment handling
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Mail-Audit>=2:mail/p5-Mail-Audit \
 		p5-Mail-Tools>=1:mail/p5-Mail-Tools
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

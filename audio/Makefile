@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 473863 2018-07-04 02:41:30Z yuri $
+# $FreeBSD: head/audio/Makefile 474420 2018-07-11 04:13:45Z yuri $
 #
 
     COMMENT = Audio tools
@@ -203,6 +203,7 @@
     SUBDIR += gbsplay
     SUBDIR += gervill
     SUBDIR += ghostess
+    SUBDIR += giada
     SUBDIR += gimmix
     SUBDIR += gkrellmms2
     SUBDIR += gkrellmvolume2

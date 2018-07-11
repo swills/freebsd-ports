@@ -1,5 +1,5 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 465154 2018-03-21 07:06:11Z yuri $
+# $FreeBSD: head/lang/opencoarrays/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	opencoarrays
 DISTVERSION=	2.0.0
@@ -10,6 +10,8 @@ COMMENT=	Transport layer for coarray Fortran compilers
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to build: Can't open module file 'ieee_arithmetic.mod' for reading at (1): No such file or directory
 
 BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash

@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-fasteners/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-fasteners/Makefile 474003 2018-07-06 09:07:37Z amdmi3 $
 
 PORTNAME=	fasteners
 PORTVERSION=	0.14.1
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Python package that provides useful locks
+
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}monotonic>=0.1:devel/py-monotonic@${PY_FLAVOR}

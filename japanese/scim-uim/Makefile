@@ -1,9 +1,9 @@
 # Created by: Seiya Yanagita <s_yanagita@ybb.ne.jp>
-# $FreeBSD: head/japanese/scim-uim/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/japanese/scim-uim/Makefile 474103 2018-07-07 15:57:34Z nobutaka $
 
 PORTNAME=	scim-uim
 PORTVERSION=	0.2.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	japanese
 MASTER_SITES=	SF/scim/${PORTNAME}/${PORTVERSION} \
 		http://freedesktop.org/~suzhe/sources/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 473638 2018-06-30 19:59:57Z decke $
+# $FreeBSD: head/multimedia/Makefile 474034 2018-07-06 19:06:26Z yuri $
 #
 
     COMMENT = Multimedia software
@@ -34,6 +34,7 @@
     SUBDIR += cclive
     SUBDIR += cheese
     SUBDIR += chilitags
+    SUBDIR += cinelerra-gg
     SUBDIR += clipgrab
     SUBDIR += clive
     SUBDIR += clutter-gst

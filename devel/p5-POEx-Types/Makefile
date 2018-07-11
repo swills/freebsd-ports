@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-POEx-Types/Makefile 471623 2018-06-04 18:05:40Z sunpoet $
+# $FreeBSD: head/devel/p5-POEx-Types/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	POEx-Types
 PORTVERSION=	1.100910
@@ -15,11 +15,11 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-MooseX-Types>0:devel/p5-MooseX-Types \
 	p5-MooseX-Types-Structured>0:devel/p5-MooseX-Types-Structured \
 	p5-POE>0:devel/p5-POE
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

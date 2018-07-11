@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-Session/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-Session/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Plack-Middleware-Session
 PORTVERSION=	0.30
@@ -12,12 +12,12 @@ COMMENT=	Perl extension for session management middleware for Plack
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Cookie-Baker>0:www/p5-Cookie-Baker \
 	p5-Digest-HMAC>=1.03:security/p5-Digest-HMAC \
 	p5-Digest-SHA1>0:security/p5-Digest-SHA1 \
 	p5-Plack>=0.9910:www/p5-Plack
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-Test-Fatal>=0.006:devel/p5-Test-Fatal \
 	p5-Test-Requires>0:devel/p5-Test-Requires \

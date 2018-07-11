@@ -1,8 +1,7 @@
-# $FreeBSD: head/misc/orange3/Makefile 472234 2018-06-12 08:11:31Z yuri $
+# $FreeBSD: head/misc/orange3/Makefile 474030 2018-07-06 18:53:15Z yuri $
 
 PORTNAME=	orange3
-DISTVERSION=	3.13.0-120
-DISTVERSIONSUFFIX=	-g459044ba
+DISTVERSION=	3.14.0
 CATEGORIES=	misc python
 
 MAINTAINER=	yuri@FreeBSD.org

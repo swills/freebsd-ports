@@ -1,5 +1,5 @@
 # Created by: Dave Chapeskie <dchapes@ddm.on.ca>
-# $FreeBSD: head/games/xmemory/Makefile 433009 2017-02-01 12:25:46Z jbeich $
+# $FreeBSD: head/games/xmemory/Makefile 474140 2018-07-07 21:23:07Z tobik $
 
 PORTNAME=	xmemory
 PORTVERSION=	3.7
@@ -11,6 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multi-player memory game
 
 USES=		imake tar:tgz
+USE_CXXSTD=	c++98
 USE_XORG=	x11 xext
 MAKE_ENV=	DATADIR="${DATADIR}"
 

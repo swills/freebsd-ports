@@ -1,9 +1,7 @@
-# $FreeBSD: head/audio/py-SoundFile/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-SoundFile/Makefile 474323 2018-07-10 04:31:35Z yuri $
 
 PORTNAME=	SoundFile
-DISTVERSION=	0.9.0
-PORTREVISION=	1
-DISTVERSIONSUFFIX=	.post1
+DISTVERSION=	0.10.2
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +12,8 @@ COMMENT=	Audio library based on libsndfile, CFFI and NumPy
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=0.6:devel/py-cffi@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0:devel/py-cffi@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0:devel/py-cffi@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PREFIX}/lib/libsndfile.so:audio/libsndfile
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-AnyEvent-Task/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-AnyEvent-Task/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	AnyEvent-Task
 PORTVERSION=	0.801
@@ -13,13 +13,13 @@ COMMENT=	Client/server-based asynchronous worker pool
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
 		p5-Callback-Frame>=0:devel/p5-Callback-Frame \
 		p5-Guard>=0:devel/p5-Guard \
 		p5-JSON-XS>=0:converters/p5-JSON-XS \
 		p5-Log-Defer>=0.300:devel/p5-Log-Defer \
 		p5-common-sense>=0:devel/p5-common-sense
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 NO_ARCH=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Visitor-Encode/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Visitor-Encode/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Data-Visitor-Encode
 PORTVERSION=	0.10007
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to encode/decode values in a structure
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Data-Visitor>=0.18:devel/p5-Data-Visitor
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>0:devel/p5-Test-Exception
 
 USES=		perl5

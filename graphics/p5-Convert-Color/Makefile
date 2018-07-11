@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/p5-Convert-Color/Makefile 451662 2017-10-10 11:16:02Z sunpoet $
+# $FreeBSD: head/graphics/p5-Convert-Color/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Convert-Color
 PORTVERSION=	0.11
@@ -13,10 +13,10 @@ COMMENT=	Perl extension for color space conversions and named lookups
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-List-UtilsBy>0:devel/p5-List-UtilsBy \
 	p5-Module-Pluggable>=0:devel/p5-Module-Pluggable
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

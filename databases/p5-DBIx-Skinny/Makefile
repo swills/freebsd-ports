@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Skinny/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Skinny/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Skinny
 PORTVERSION=	0.0742
@@ -11,6 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for simple DBI wrapper/ORMapper
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-DBI>0:databases/p5-DBI \
 	p5-UNIVERSAL-require>0:devel/p5-UNIVERSAL-require \
@@ -18,7 +19,6 @@ RUN_DEPENDS=	\
 	p5-Try-Tiny>0:lang/p5-Try-Tiny \
 	p5-DBIx-TransactionManager>=1.07:databases/p5-DBIx-TransactionManager \
 	p5-Class-Load>0:devel/p5-Class-Load
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

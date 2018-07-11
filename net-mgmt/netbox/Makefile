@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/netbox/Makefile 470937 2018-05-26 18:06:29Z miwi $
+# $FreeBSD: head/net-mgmt/netbox/Makefile 474284 2018-07-09 19:16:23Z miwi $
 
 PORTNAME=	netbox
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.3.3
+DISTVERSION=	2.3.5
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	freebsd_ports@k-worx.org
@@ -43,6 +43,9 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|==|>=|' ${WRKSRC}/requirements.txt
 
 do-install:
 	cd ${WRKSRC}/netbox ; \

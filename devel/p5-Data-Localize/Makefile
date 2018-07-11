@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Localize/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Localize/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Data-Localize
 PORTVERSION=	0.00027
@@ -13,11 +13,11 @@ COMMENT=	Perl extension for alternate data localization API
 
 LICENSE=	MIT
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Moo>=1.000008:devel/p5-Moo \
 	p5-MooX-Types-MooseLike>0:devel/p5-MooX-Types-MooseLike \
 	p5-Log-Minimal>=0.14:devel/p5-Log-Minimal
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=	perl5
 USE_PERL5=	modbuild

@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/net/scnc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/scnc/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	scnc
 PORTVERSION=	1.05
@@ -11,9 +11,9 @@ COMMENT=	SSL Capable Netcat
 
 LICENSE=	BSD3CLAUSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
 		p5-IO-Socket-INET6>=0:net/p5-IO-Socket-INET6
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		shebangfix
 NO_BUILD=	yes

@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Dancer-Plugin-Lexicon/Makefile 452126 2017-10-15 02:47:49Z pi $
+# $FreeBSD: head/www/p5-Dancer-Plugin-Lexicon/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Dancer-Plugin-Lexicon
 PORTVERSION=	0.06
@@ -15,11 +15,11 @@ COMMENT=	Flexible I18N using Locale::Maketext::Lexicon for Dancer apps
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Dancer>=1.3118:www/p5-Dancer \
 		p5-Locale-Maketext-Lexicon>0:devel/p5-Locale-Maketext-Lexicon \
 		p5-Package-Stash>0:devel/p5-Package-Stash \
 		p5-PathTools>0:devel/p5-PathTools
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

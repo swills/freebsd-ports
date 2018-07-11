@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/sablotron/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/textproc/sablotron/Makefile 474112 2018-07-07 17:22:13Z tobik $
 
 PORTNAME=	Sablot
 PORTVERSION=	1.0.3
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 GNU_CONFIGURE=	yes
 USES=		gmake iconv libtool localbase:ldflags
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 LDFLAGS+=	${ICONV_LIB}
 

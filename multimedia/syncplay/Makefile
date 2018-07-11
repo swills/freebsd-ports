@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/syncplay/Makefile 466843 2018-04-09 09:25:44Z yuri $
+# $FreeBSD: head/multimedia/syncplay/Makefile 474225 2018-07-09 05:58:20Z swills $
 
 PORTNAME=	syncplay
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.5.3
+DISTVERSION=	1.5.5
 CATEGORIES=	multimedia
 
 MAINTAINER=	heckendorfc@gmail.com

@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/lximage-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/lximage-qt/Makefile 474277 2018-07-09 18:03:14Z jsm $
 
 PORTNAME=	lximage-qt
 PORTVERSION=	0.7.0
 CATEGORIES=	graphics
 MASTER_SITES=	LXQT
 
-MAINTAINER=	jesper@schmitz.computer
+MAINTAINER=	jsm@FreeBSD.org
 COMMENT=	Image viewer and screenshot tool
 
 LICENSE=	GPLv2

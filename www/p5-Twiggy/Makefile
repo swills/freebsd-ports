@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Twiggy/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Twiggy/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Twiggy
 PORTVERSION=	0.1025
@@ -13,12 +13,12 @@ COMMENT=	Perl extension of AnyEvent HTTP server for PSGI (like Thin)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-AnyEvent>0:devel/p5-AnyEvent \
 	p5-libwww>0:www/p5-libwww \
 	p5-Plack>=0.99:www/p5-Plack \
 	p5-Try-Tiny>0:lang/p5-Try-Tiny
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-Test-Requires>0:devel/p5-Test-Requires \
 	p5-Test-TCP>0:devel/p5-Test-TCP

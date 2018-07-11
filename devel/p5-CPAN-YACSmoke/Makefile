@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-YACSmoke/Makefile 471588 2018-06-04 18:02:38Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-YACSmoke/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	CPAN-YACSmoke
 PORTVERSION=	0.03
@@ -14,6 +14,7 @@ COMMENT=	Yet Another CPAN Smoke Tester
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Config-IniFiles>=0:devel/p5-Config-IniFiles \
 		p5-File-HomeDir>=0.06:devel/p5-File-HomeDir \
 		p5-Regexp-Assemble>=0.06:devel/p5-Regexp-Assemble \
@@ -21,7 +22,6 @@ RUN_DEPENDS=	p5-Config-IniFiles>=0:devel/p5-Config-IniFiles \
 		p5-Test-Reporter>=1.25:devel/p5-Test-Reporter \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-IO-Callback/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-IO-Callback/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	IO-Callback
 PORTVERSION=	1.12
@@ -13,10 +13,10 @@ COMMENT=	Perl extension to emulate file interface for a code reference
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	\
+	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-IO-String>0:devel/p5-IO-String
-BUILD_DEPENDS:=	\
-	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-File-Slurp>0:devel/p5-File-Slurp \
 	p5-Test-Exception>0:devel/p5-Test-Exception \

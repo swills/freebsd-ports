@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/converters/lua51-iconv/Makefile 465241 2018-03-21 21:36:14Z feld $
+# $FreeBSD: head/converters/lua51-iconv/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	iconv
 PORTVERSION=	7
@@ -11,6 +11,8 @@ DISTNAME=	lua-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Iconv binding for Lua 5
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ABS64 against local symbol in readonly segment defined in iconv.lo
 
 USES=		pkgconfig iconv lua:51
 

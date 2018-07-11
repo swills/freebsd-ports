@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-Google-Search/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Google-Search/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Google-Search
 PORTVERSION=	0.028
@@ -14,6 +14,7 @@ COMMENT=	Interface to the Google AJAX Search API and suggestion API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \
 		p5-JSON>=2.16:converters/p5-JSON \
 		p5-Carp-Clan-Share>=0:devel/p5-Carp-Clan-Share \
@@ -21,7 +22,6 @@ RUN_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>0:www/p5-libwww \
 		p5-Try-Tiny>=0.07:lang/p5-Try-Tiny
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

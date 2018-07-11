@@ -1,5 +1,5 @@
 # Created by: ismail@enderunix.org
-# $FreeBSD: head/mail/eps/Makefile 444252 2017-06-25 00:44:11Z linimon $
+# $FreeBSD: head/mail/eps/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	eps
 PORTVERSION=	1.7
@@ -9,6 +9,8 @@ MASTER_SITES=	SF/${PORTNAME}inter7/${PORTNAME}inter7/${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	EPS is a Email Parsing System
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ABS64 against symbol: content_prefs in readonly segment
 
 OPTIONS_DEFINE=	DOCS
 

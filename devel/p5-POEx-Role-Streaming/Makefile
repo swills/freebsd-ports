@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-POEx-Role-Streaming/Makefile 471622 2018-06-04 18:05:34Z sunpoet $
+# $FreeBSD: head/devel/p5-POEx-Role-Streaming/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	POEx-Role-Streaming
 PORTVERSION=	1.102610
@@ -15,6 +15,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-MooseX-Declare>0:devel/p5-MooseX-Declare \
 	p5-MooseX-Types>0:devel/p5-MooseX-Types \
@@ -22,7 +23,6 @@ RUN_DEPENDS=	\
 	p5-POEx-Role-SessionInstantiation>=0:devel/p5-POEx-Role-SessionInstantiation \
 	p5-POEx-Types>0:devel/p5-POEx-Types \
 	p5-aliased>0:devel/p5-aliased
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

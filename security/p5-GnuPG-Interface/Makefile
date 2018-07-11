@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/security/p5-GnuPG-Interface/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-GnuPG-Interface/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	GnuPG-Interface
 PORTVERSION=	0.52
@@ -14,11 +14,11 @@ COMMENT=	Perl module for interfacing with GnuPG
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	gpg2:security/gnupg \
 		p5-MooX-HandlesVia>=0.04:devel/p5-MooX-HandlesVia \
 		p5-MooX-late>=0.14:devel/p5-MooX-late \
 		p5-Moo>=0.091011:devel/p5-Moo
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

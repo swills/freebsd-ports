@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/math/clblas/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/math/clblas/Makefile 474320 2018-07-10 03:40:00Z linimon $
 
 PORTNAME=	clblas
 PORTVERSION=	2.10
@@ -17,8 +17,6 @@ BUILD_DEPENDS=	opencl>=0:devel/opencl
 LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd \
 		libboost_program_options.so:devel/boost-libs
 RUN_DEPENDS=	opencl>=0:devel/opencl
-
-BROKEN_powerpc64=	fails to compile: xgemm.cc: error: extra ';'
 
 USES=		cmake python
 USE_LDCONFIG=	yes

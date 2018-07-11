@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-ExtractContent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-ExtractContent/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTML-ExtractContent
 PORTVERSION=	0.11
@@ -13,11 +13,11 @@ COMMENT=	Perl extension for HTML content extractor with scoring heuristics
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Accessor-Lvalue>0:devel/p5-Class-Accessor-Lvalue \
 	p5-Exporter-Lite>0:devel/p5-Exporter-Lite \
 	p5-HTML-Parser>0:www/p5-HTML-Parser
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuildtiny

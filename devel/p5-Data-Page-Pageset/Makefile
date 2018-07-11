@@ -1,5 +1,5 @@
 # Created by: Mike Fisher <Michael_Fisher@URMC.Rochester.edu>
-# $FreeBSD: head/devel/p5-Data-Page-Pageset/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-Page-Pageset/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Data-Page-Pageset
 PORTVERSION=	1.02
@@ -15,10 +15,10 @@ COMMENT=	Perl extension to simplify page number lists
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Data-Page>=2:databases/p5-Data-Page \
 	p5-Class-Accessor>0:devel/p5-Class-Accessor
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

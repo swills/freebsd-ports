@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer
-# $FreeBSD: head/www/p5-Business-PayPal/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Business-PayPal/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Business-PayPal
 PORTVERSION=	0.18
@@ -14,9 +14,9 @@ COMMENT=	Perl extension for automating PayPal transactions
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Net-SSLeay>=1.35:security/p5-Net-SSLeay \
 		p5-CGI>=3.49:www/p5-CGI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

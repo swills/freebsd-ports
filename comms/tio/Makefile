@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/tio/Makefile 467827 2018-04-20 14:32:27Z krion $
+# $FreeBSD: head/comms/tio/Makefile 474327 2018-07-10 04:53:09Z swills $
 
 PORTNAME=	tio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.30
+DISTVERSION=	1.31
 CATEGORIES=	comms
 
 MAINTAINER=	dg@syrec.org

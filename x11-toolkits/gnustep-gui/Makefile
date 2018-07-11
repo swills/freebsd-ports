@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 474151 2018-07-08 01:30:03Z linimon $
 
 PORTNAME=	gnustep-gui
 PORTVERSION=	0.25.1
@@ -13,6 +13,8 @@ COMMENT=	GNUstep GUI library
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
 
+BROKEN_powerpc64=	fails to build: Illegal instruction (core dumped)
+
 LIB_DEPENDS+=	libtiff.so:graphics/tiff
 LIB_DEPENDS+=	libpng.so:graphics/png
 LIB_DEPENDS+=	libgif.so:graphics/giflib
@@ -20,10 +22,6 @@ LIB_DEPENDS+=	libicui18n.so:devel/icu
 LIB_DEPENDS+=	libsndfile.so:audio/libsndfile
 LIB_DEPENDS+=	libao.so:audio/libao
 LIB_DEPENDS+=	libflite.so:audio/flite
-
-BROKEN_armv6=		fails to package: chmod: GSSpeechServer.desktop: No such file or directory
-BROKEN_armv7=		fails to package: chmod: GSSpeechServer.desktop: No such file or directory
-BROKEN_powerpc64=	fails to build: Illegal instruction (core dumped)
 
 OPTIONS_DEFINE=	DOCS CUPS ASPELL
 OPTIONS_DEFAULT=	CUPS

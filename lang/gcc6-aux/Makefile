@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6-aux/Makefile 471043 2018-05-28 14:20:22Z ericbsd $
+# $FreeBSD: head/lang/gcc6-aux/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	gcc6-aux
 PORTVERSION=	${SNAPSHOT}
@@ -16,6 +16,7 @@ LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
 BROKEN_FreeBSD_12_aarch64=	fails to configure: cannot compute sizeof (long long)
+BROKEN_aarch64=			fails to configure: ./config.h:556:15: two or more data types in declaration specifiers
 
 .include "${.CURDIR}/Makefile.common"
 

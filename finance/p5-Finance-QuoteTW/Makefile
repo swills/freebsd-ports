@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/finance/p5-Finance-QuoteTW/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Finance-QuoteTW/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Finance-QuoteTW
 PORTVERSION=	0.09
@@ -12,12 +12,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fetch quotes of mutual funds in Taiwan
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Data-TreeDumper>=0:devel/p5-Data-TreeDumper \
 		p5-HTML-Encoding>=0.6:www/p5-HTML-Encoding \
 		p5-HTML-TableExtract>=2.1:www/p5-HTML-TableExtract \
 		p5-Spiffy>=0.3:devel/p5-Spiffy \
 		p5-WWW-Mechanize>=1.34:www/p5-WWW-Mechanize
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

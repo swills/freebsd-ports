@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Proc-Guard/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Proc-Guard/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Proc-Guard
 PORTVERSION=	0.07
@@ -12,9 +12,9 @@ COMMENT=	Perl extension for process runner with RAII pattern
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Accessor-Lite>=0.05:devel/p5-Class-Accessor-Lite
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires
 
 USES=		perl5

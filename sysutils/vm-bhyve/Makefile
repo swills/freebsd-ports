@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/vm-bhyve/Makefile 460415 2018-01-30 16:58:14Z asomers $
+# $FreeBSD: head/sysutils/vm-bhyve/Makefile 474004 2018-07-06 09:17:14Z miwi $
 
 PORTNAME=	vm-bhyve
-PORTVERSION=	1.1.8
-PORTREVISION=	2
+PORTVERSION=	1.2.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 

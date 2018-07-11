@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/android-file-transfer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/android-file-transfer/Makefile 474044 2018-07-07 00:39:16Z jbeich $
 
 PORTNAME=	android-file-transfer
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.3
+DISTVERSION=	3.4
 PORTREVISION?=	0
 CATEGORIES=	sysutils
 

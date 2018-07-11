@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-Patch/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Patch/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Text-Patch
 PORTVERSION=	1.8
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to patch text with given patch
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Text-Diff>0:textproc/p5-Text-Diff
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Tree-Binary-Dictionary/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Tree-Binary-Dictionary/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Tree-Binary-Dictionary
 PORTVERSION=	1.01
@@ -14,8 +14,8 @@ COMMENT=	Dictionary API to a binary tree
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Tree-Binary>=0:devel/p5-Tree-Binary
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/horde-nag/Makefile 470282 2018-05-18 09:34:08Z amdmi3 $
+# $FreeBSD: head/deskutils/horde-nag/Makefile 474157 2018-07-08 07:50:58Z joneum $
 
 PORTNAME=	nag
-PORTVERSION=	4.2.17
+PORTVERSION=	4.2.18
 CATEGORIES=	deskutils www pear
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 

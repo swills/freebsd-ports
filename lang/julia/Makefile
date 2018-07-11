@@ -1,5 +1,5 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/lang/julia/Makefile 472417 2018-06-14 23:40:46Z swills $
+# $FreeBSD: head/lang/julia/Makefile 474381 2018-07-10 16:37:52Z lwhsu $
 
 PORTNAME=	julia
 PORTVERSION=	0.6.3
@@ -84,6 +84,7 @@ LLVM_MAKE_ARGS=	USE_SYSTEM_LLVM=0
 LLVM_MAKE_ARGS_OFF=	USE_SYSTEM_LLVM=1 LLVM_CONFIG=llvm-config40
 LLVM_BUILD_DEPENDS=	cmake:devel/cmake
 LLVM_BUILD_DEPENDS_OFF=	llvm-config40:devel/llvm40
+LLVM_LIB_DEPENDS_OFF=	libLLVM-4.0.so:devel/llvm40
 LLVM_USES=	python:build perl5
 
 SYSLIBM_DESC=	Build with system libm

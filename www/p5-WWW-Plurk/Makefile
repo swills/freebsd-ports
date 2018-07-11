@@ -1,5 +1,5 @@
 # Created by: Yi-Hsuan Hsin <mhsin@mhsin.org>
-# $FreeBSD: head/www/p5-WWW-Plurk/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Plurk/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	WWW-Plurk
 PORTVERSION=	0.02
@@ -11,13 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mhsin@mhsin.org
 COMMENT=	Unofficial plurk.com API
 
+BUILD_DEPENDS=	${RUN_DEPENDS} \
+		p5-Test-Deep>=0:devel/p5-Test-Deep
 RUN_DEPENDS=	p5-DateTime-Format-Mail>=0:devel/p5-DateTime-Format-Mail \
 		p5-HTML-Tiny>=0:textproc/p5-HTML-Tiny \
 		p5-JSON>=2.00:converters/p5-JSON \
 		p5-Math-Base36>=0:math/p5-Math-Base36 \
 		p5-libwww>=0:www/p5-libwww
-BUILD_DEPENDS:=	${RUN_DEPENDS}
-BUILD_DEPENDS+=	p5-Test-Deep>=0:devel/p5-Test-Deep
 
 USES=		perl5
 USE_PERL5=	configure

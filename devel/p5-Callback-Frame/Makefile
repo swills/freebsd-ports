@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Callback-Frame/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Callback-Frame/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Callback-Frame
 PORTVERSION=	1.100
@@ -13,8 +13,8 @@ COMMENT=	Preserve error handlers and "local" variables across callbacks
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Guard>=0:devel/p5-Guard
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 NO_ARCH=	yes
 

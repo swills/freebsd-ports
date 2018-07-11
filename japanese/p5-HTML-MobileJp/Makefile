@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/japanese/p5-HTML-MobileJp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/japanese/p5-HTML-MobileJp/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTML-MobileJp
 PORTVERSION=	0.08
@@ -13,10 +13,10 @@ COMMENT=	Generate mobile-jp html tags
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-URI>=0:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Base>0:devel/p5-Test-Base \
 		p5-YAML>=0:textproc/p5-YAML
 

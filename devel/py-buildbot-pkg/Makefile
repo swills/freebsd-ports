@@ -1,9 +1,8 @@
 # Created by: Michael Gmelin <grembo@FreeBSD.org>
-# $FreeBSD: head/devel/py-buildbot-pkg/Makefile 455028 2017-11-28 10:15:46Z rodrigc $
+# $FreeBSD: head/devel/py-buildbot-pkg/Makefile 474280 2018-07-09 18:50:28Z miwi $
 
 PORTNAME=	buildbot-pkg
-PORTVERSION=	0.9.11
-PORTREVISION=	1
+PORTVERSION=	0.9.15
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

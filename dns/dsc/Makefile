@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/dsc/Makefile 465237 2018-03-21 20:14:11Z pi $
+# $FreeBSD: head/dns/dsc/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	dsc
 PORTVERSION=	2.6.1
@@ -12,13 +12,13 @@ COMMENT=	Tool used for collecting and exploring statistics from DNS servers
 
 LICENSE=	BSD3CLAUSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	libpcap>=1.8.1:net/libpcap			\
 		GeoIP>=1.6.12:net/GeoIP				\
 		p5-Proc-PID-File>=1.28:devel/p5-Proc-PID-File	\
 		p5-XML-Simple>=2.24:textproc/p5-XML-Simple	\
 		dsp>=2.0.0:dns/dsp
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 GNU_CONFIGURE=	yes
 USES=		gmake perl5 shebangfix

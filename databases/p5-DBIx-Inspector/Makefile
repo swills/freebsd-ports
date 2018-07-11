@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Inspector/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Inspector/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Inspector
 PORTVERSION=	0.12
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to get information from $dbh
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Accessor-Lite>0:devel/p5-Class-Accessor-Lite \
 	p5-DBI>0:databases/p5-DBI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-DBD-SQLite>0:databases/p5-DBD-SQLite \
 	p5-Test-Requires>0:devel/p5-Test-Requires \

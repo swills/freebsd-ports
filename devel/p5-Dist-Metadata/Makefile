@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Dist-Metadata/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Dist-Metadata/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Dist-Metadata
 PORTVERSION=	0.926
@@ -14,13 +14,13 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Archive-Zip>=1.30:archivers/p5-Archive-Zip \
 	p5-CPAN-DistnameInfo>=0.12:devel/p5-CPAN-DistnameInfo \
 	p5-File-Spec-Native>=1.002:devel/p5-File-Spec-Native \
 	p5-Path-Class>=0.24:devel/p5-Path-Class \
 	p5-Try-Tiny>=0.09:lang/p5-Try-Tiny
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-Test-Fatal>0:devel/p5-Test-Fatal \
 	p5-Test-MockObject>0:devel/p5-Test-MockObject

@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/erlang-epgsql/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/databases/erlang-epgsql/Makefile 474121 2018-07-07 19:15:16Z olgeni $
 
 PORTNAME=	epgsql
-PORTVERSION=	3.4.0
+PORTVERSION=	4.1.0
 CATEGORIES=	databases
 PKGNAMEPREFIX=	erlang-
 

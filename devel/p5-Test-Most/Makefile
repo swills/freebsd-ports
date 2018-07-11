@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-Most/Makefile 470407 2018-05-19 13:45:25Z joneum $
+# $FreeBSD: head/devel/p5-Test-Most/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Test-Most
 PORTVERSION=	0.35
@@ -13,12 +13,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/README
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Exception-Class>=1.14:devel/p5-Exception-Class \
 				p5-Test-Deep>=0.106:devel/p5-Test-Deep \
 				p5-Test-Differences>=0.61:devel/p5-Test-Differences \
 				p5-Test-Exception>=0.31:devel/p5-Test-Exception \
 				p5-Test-Warn>=0.23:devel/p5-Test-Warn
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

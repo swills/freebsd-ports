@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-SQL-Abstract-Plugin-InsertMulti/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-SQL-Abstract-Plugin-InsertMulti/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	SQL-Abstract-Plugin-InsertMulti
 PORTVERSION=	0.04
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to add bulk insert for SQL::Abstract
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-SQL-Abstract>=1.6:databases/p5-SQL-Abstract \
 	p5-Sub-Exporter>0:devel/p5-Sub-Exporter
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

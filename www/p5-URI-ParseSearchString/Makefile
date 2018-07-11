@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-URI-ParseSearchString/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-URI-ParseSearchString/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	URI-ParseSearchString
 PORTVERSION=	3.51
@@ -14,8 +14,8 @@ COMMENT=	Parse Apache referer logs and extract search engine query strings
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-URI>=0:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
 
 PORTSCOUT=	skipv:3.441,3.442

@@ -1,8 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/deskutils/projectlibre/Makefile 438895 2017-04-19 17:16:18Z cpm $
+# $FreeBSD: head/deskutils/projectlibre/Makefile 474226 2018-07-09 06:17:28Z swills $
 
 PORTNAME=	projectlibre
-PORTVERSION=	1.7.0
+PORTVERSION=	1.8.0
 CATEGORIES=	deskutils editors java
 MASTER_SITES=	SF/${PORTNAME}/ProjectLibre/${PORTVERSION:S/.0$//} \
 		LOCAL/cpm/projectlibre/:icons

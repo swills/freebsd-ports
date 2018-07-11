@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-junos-eznc/Makefile 473941 2018-07-05 00:27:46Z zi $
+# $FreeBSD: head/net-mgmt/py-junos-eznc/Makefile 474357 2018-07-10 12:37:47Z joneum $
 
 PORTNAME=	junos-eznc
 DISTVERSION=	2.1.8
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sergey@akhmatov.ru
 COMMENT=	Junos easy automation for non-programmers
 
 LICENSE=	APACHE20

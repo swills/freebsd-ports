@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/www/p5-HTML-ExtractMain/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-ExtractMain/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTML-ExtractMain
 PORTVERSION=	0.62
@@ -14,9 +14,9 @@ COMMENT=	Perl extension to extract main content of a web page
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTML-Tree>=3.23:www/p5-HTML-Tree \
 		p5-Object-Destroyer>=2:devel/p5-Object-Destroyer
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 TEST_DEPENDS=	p5-File-Slurp>=9999.12:devel/p5-File-Slurp \
 		p5-HTML-Format>=2.04:textproc/p5-HTML-Format

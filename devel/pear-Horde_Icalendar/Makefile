@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/pear-Horde_Icalendar/Makefile 447173 2017-08-02 19:23:51Z mm $
+# $FreeBSD: head/devel/pear-Horde_Icalendar/Makefile 474163 2018-07-08 08:01:16Z joneum $
 
 PORTNAME=	Horde_Icalendar
-PORTVERSION=	2.1.7
+PORTVERSION=	2.1.8
 CATEGORIES=	devel www pear
 
 MAINTAINER=	horde@FreeBSD.org

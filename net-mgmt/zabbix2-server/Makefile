@@ -1,9 +1,9 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 462615 2018-02-22 17:08:46Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 474259 2018-07-09 14:06:32Z dbaio $
 
 PORTNAME=	zabbix2
-PORTVERSION=	2.0.20
-PORTREVISION?=	1
+PORTVERSION=	2.0.21
+PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}
 PKGNAMESUFFIX?=	-server
@@ -13,6 +13,9 @@ MAINTAINER=	pg@pakhom.spb.ru
 COMMENT=	Enterprise-class open source distributed monitoring (${PKGNAMESUFFIX:S/^-//})
 
 LICENSE=	GPLv2
+
+DEPRECATED=	End of Life was August, 2017
+EXPIRATION_DATE=	2018-10-09
 
 LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp \
 		libpkg.so:ports-mgmt/pkg

@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-vte/Makefile 469064 2018-05-04 18:08:28Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-vte/Makefile 474173 2018-07-08 10:34:36Z miwi $
 
 PORTNAME=	vte
-PORTVERSION=	3.2.5
+PORTVERSION=	3.2.7
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 

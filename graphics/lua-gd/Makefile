@@ -1,5 +1,5 @@
 # Created by: Sergey V. Dyatko <sergey.dyatko@gmail.com>
-# $FreeBSD: head/graphics/lua-gd/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/graphics/lua-gd/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	lua-gd
 PORTVERSION=	2.0.33r2
@@ -11,6 +11,8 @@ MAINTAINER=	sergey.dyatko@gmail.com
 COMMENT=	GD bindings for the Lua programming language
 
 LICENSE=	MIT
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ABS64 against local symbol in readonly segment
 
 LIB_DEPENDS=	libgd.so:graphics/gd
 

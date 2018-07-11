@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Parallel-Scoreboard/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Parallel-Scoreboard/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Parallel-Scoreboard
 PORTVERSION=	0.07
@@ -12,11 +12,11 @@ COMMENT=	Perl extension of scoreboard for monitoring status of many workers
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Accessor-Lite>=0.05:devel/p5-Class-Accessor-Lite \
 	p5-HTML-Parser>0:www/p5-HTML-Parser \
 	p5-JSON>0:converters/p5-JSON
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

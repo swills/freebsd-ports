@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Session-State-MobileAgentID/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Session-State-MobileAgentID/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTTP-Session-State-MobileAgentID
 PORTVERSION=	0.46
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to maintain session IDs using mobile phone unique id
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-HTTP-MobileAgent>=0.28:www/p5-HTTP-MobileAgent \
 	p5-HTTP-Session>=0.38:www/p5-HTTP-Session \
 	p5-Net-CIDR-MobileJP>=0.20:net/p5-Net-CIDR-MobileJP
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

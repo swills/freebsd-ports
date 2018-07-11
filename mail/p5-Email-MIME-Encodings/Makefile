@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-MIME-Encodings/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/mail/p5-Email-MIME-Encodings/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Email-MIME-Encodings
 PORTVERSION=	1.315
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Unified interface to MIME encoding and decoding
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-MIME-Base64>3.05:converters/p5-MIME-Base64
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

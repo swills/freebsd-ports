@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/devel/p5-Getargs-Long/Makefile 473951 2018-07-05 07:22:08Z wen $
+# $FreeBSD: head/devel/p5-Getargs-Long/Makefile 474228 2018-07-09 07:29:18Z wen $
 
 PORTNAME=	Getargs-Long
-PORTVERSION=	1.1008
+PORTVERSION=	1.1011
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

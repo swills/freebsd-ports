@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Types-VariantTable/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Types-VariantTable/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	MooseX-Types-VariantTable
 PORTVERSION=	0.04
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Type constraint based variant table
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-MooseX-Types-Structured>=0.12:devel/p5-MooseX-Types-Structured \
 		p5-MooseX-Clone>=0.03:devel/p5-MooseX-Clone
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

@@ -1,14 +1,11 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/fusefs-s3fs/Makefile 463514 2018-03-03 16:34:13Z yuri $
+# $FreeBSD: head/sysutils/fusefs-s3fs/Makefile 474325 2018-07-10 04:47:50Z swills $
 
 PORTNAME=	s3fs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.83
+DISTVERSION=	1.84
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/ # https://github.com/s3fs-fuse/s3fs-fuse/pull/729
-PATCHFILES=	c9f431258886bdcb9941a16c27c6e231414687c1.patch:-p1
 
 MAINTAINER=	dg@syrec.org
 COMMENT=	FUSE-based file system backed by Amazon S3

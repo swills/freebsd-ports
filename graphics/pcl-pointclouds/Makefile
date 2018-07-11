@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 472208 2018-06-11 20:59:17Z yuri $
+# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 474253 2018-07-09 13:24:16Z jbeich $
 
 PORTNAME=	pcl
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -9,6 +9,7 @@ PKGNAMESUFFIX=	-pointclouds
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
 PATCHFILES=	2309bdab20fb2a385d374db6a87349199279db18.patch:-p1
+PATCHFILES+=	491b7c7e12ce39c59fb1f22718812a02e7f58065.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Point Cloud Library
