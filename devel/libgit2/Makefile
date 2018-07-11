@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libgit2/Makefile 472849 2018-06-20 06:53:29Z mfechner $
+# $FreeBSD: head/devel/libgit2/Makefile 474463 2018-07-11 16:30:04Z mfechner $
 
 # Also update devel/libgit2-glib, devel/rubygem-rugged, devel/py-pygit2
 

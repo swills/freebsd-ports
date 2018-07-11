@@ -1,8 +1,8 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/www/linux-flashplayer/Makefile 471957 2018-06-08 00:10:04Z jkim $
+# $FreeBSD: head/www/linux-flashplayer/Makefile 474465 2018-07-11 16:36:03Z jkim $
 
 PORTNAME=	flashplayer
-PORTVERSION=	30.0.0.113
+PORTVERSION=	30.0.0.134
 CATEGORIES=	www multimedia linux
 MASTER_SITES=	https://fpdownload.macromedia.com/get/flashplayer/pdc/${PORTVERSION}/
 PKGNAMEPREFIX=	linux-

@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/exabgp/Makefile 470743 2018-05-23 23:25:51Z sunpoet $
+# $FreeBSD: head/net/exabgp/Makefile 474448 2018-07-11 14:03:27Z zi $
 
 PORTNAME=	exabgp
-PORTVERSION=	3.4.21
+PORTVERSION=	3.4.25
 CATEGORIES=	net
 MASTER_SITES=	GH \
 		ZI
