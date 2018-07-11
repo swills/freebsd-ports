@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize-CGI/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-WWW-Mechanize-CGI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	WWW-Mechanize-CGI
 PORTVERSION=	0.3
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use WWW::Mechanize with CGI applications
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTTP-Request-AsCGI>=0.2:www/p5-HTTP-Request-AsCGI \
 		p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

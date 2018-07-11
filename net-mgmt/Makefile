@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 470937 2018-05-26 18:06:29Z miwi $
+# $FreeBSD: head/net-mgmt/Makefile 474169 2018-07-08 09:29:43Z rene $
 #
 
     COMMENT = Network management tools
@@ -375,7 +375,6 @@
     SUBDIR += statsite
     SUBDIR += subcalc
     SUBDIR += super_mediator
-    SUBDIR += sx
     SUBDIR += sysmon
     SUBDIR += tcpreplay
     SUBDIR += tcptrack

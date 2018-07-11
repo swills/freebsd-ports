@@ -1,5 +1,5 @@
 # Created by: Jim Geovedi <jim@corebsd.or.id>
-# $FreeBSD: head/security/p5-SHA/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-SHA/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	SHA
 PORTVERSION=	2.01
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to the SHA1 algorithm
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

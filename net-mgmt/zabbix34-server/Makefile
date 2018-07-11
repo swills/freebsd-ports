@@ -1,8 +1,8 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix34-server/Makefile 468780 2018-05-01 19:03:18Z rene $
+# $FreeBSD: head/net-mgmt/zabbix34-server/Makefile 474262 2018-07-09 14:10:57Z dbaio $
 
 PORTNAME=	zabbix34
-PORTVERSION=	3.4.8
+PORTVERSION=	3.4.11
 PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}
@@ -20,8 +20,6 @@ LIB_DEPENDS=	libpcre.so:devel/pcre
 CONFLICTS=	zabbix[0-24-9][0-9]${PKGNAMESUFFIX} \
 		zabbix3[0-35-9]${PKGNAMESUFFIX} \
 		zabbix[0-9]${PKGNAMESUFFIX}
-
-IGNORE_WITH_MYSQL=	41
 
 ZABBIX_BUILD=	${PKGNAMESUFFIX:S/^-//}
 

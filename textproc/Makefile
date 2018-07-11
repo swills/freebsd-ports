@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 473842 2018-07-03 15:20:13Z rene $
+# $FreeBSD: head/textproc/Makefile 474402 2018-07-10 20:06:48Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -376,7 +376,6 @@
     SUBDIR += kf5-kcodecs
     SUBDIR += kf5-sonnet
     SUBDIR += kf5-syntax-highlighting
-    SUBDIR += kibana46
     SUBDIR += kibana5
     SUBDIR += kibana5-search-guard
     SUBDIR += kibana6
@@ -1331,6 +1330,7 @@
     SUBDIR += py-openpyxl
     SUBDIR += py-openstackdocstheme
     SUBDIR += py-orange3-text
+    SUBDIR += py-os-api-ref
     SUBDIR += py-pager
     SUBDIR += py-pandocfilters
     SUBDIR += py-paragrep

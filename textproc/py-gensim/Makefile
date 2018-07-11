@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-gensim/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-gensim/Makefile 474096 2018-07-07 14:40:10Z yuri $
 
 PORTNAME=	gensim
-DISTVERSION=	3.4.0
+DISTVERSION=	3.5.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

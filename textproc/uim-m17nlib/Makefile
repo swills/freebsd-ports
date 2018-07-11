@@ -1,7 +1,6 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim-m17nlib/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/uim-m17nlib/Makefile 474102 2018-07-07 15:56:01Z nobutaka $
 
-PORTREVISION=	2
 .if defined(WITHOUT_X11)
 PKGNAMESUFFIX=	-m17nlib-nox11
 .else

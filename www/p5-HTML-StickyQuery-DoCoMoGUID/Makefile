@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-StickyQuery-DoCoMoGUID/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-StickyQuery-DoCoMoGUID/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTML-StickyQuery-DoCoMoGUID
 PORTVERSION=	0.03
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to add guid in query for DoCoMo imode
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-HTML-StickyQuery>0:www/p5-HTML-StickyQuery
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

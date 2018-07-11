@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/net-mgmt/zabbix22-frontend/Makefile 438118 2017-04-09 20:10:26Z danilo $
+# $FreeBSD: head/net-mgmt/zabbix22-frontend/Makefile 474260 2018-07-09 14:08:20Z dbaio $
 
 PORTNAME=	zabbix22
 CATEGORIES=	net-mgmt
@@ -20,7 +20,7 @@ OPTIONS_DEFINE=	MYSQL MYSQLI PGSQL SQLITE ORACLE
 OPTIONS_DEFAULT=	MYSQL MYSQLI
 MYSQLI_DESC=	MySQLI backend
 
-MYSQL_VARS=	IGNORE_WITH_PHP+=70
+MYSQL_VARS=	IGNORE_WITH_PHP+="70 71 72"
 
 .include <bsd.port.options.mk>
 

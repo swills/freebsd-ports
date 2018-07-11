@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/foswiki/Makefile 468382 2018-04-26 20:29:05Z pi $
+# $FreeBSD: head/www/foswiki/Makefile 474094 2018-07-07 14:30:07Z amdmi3 $
 
 PORTNAME=	foswiki
 PORTVERSION=	2.1.6
@@ -74,17 +74,8 @@ post-patch:
 
 post-install-APACHE-on:
 	@${MKDIR} ${STAGEDIR}${CONFDIR}
-	@if [ -d "${STAGEDIR}${CONFDIR}" ]; then \
-	  ${INSTALL_DATA} ${WRKSRC}/foswiki_httpd_conf.txt \
-		${STAGEDIR}${CONFDIR}/foswiki.conf.sample; \
-	else \
-	  ${ECHO_MSG} "" ; \
-	  ${ECHO_MSG} "Please check your Apache installation -" ; \
-	  ${ECHO_MSG} "${CONFDIR} doesn't exist," ; \
-	  ${ECHO_MSG} "so I cannot install foswiki.conf.sample there!" ; \
-	  ${ECHO_MSG} "" ; \
-	  ${FALSE} ; \
-	fi
+	${INSTALL_DATA} ${WRKSRC}/foswiki_httpd_conf.txt \
+		${STAGEDIR}${CONFDIR}/foswiki.conf.sample
 
 .include "${.CURDIR}/bsd.foswiki.mk"
 .include <bsd.port.mk>

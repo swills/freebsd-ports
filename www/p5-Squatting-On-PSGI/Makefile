@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Squatting-On-PSGI/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Squatting-On-PSGI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Squatting-On-PSGI
 PORTVERSION=	0.06
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to run Squatting app on PSGI
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Plack>0:www/p5-Plack \
 	p5-Squatting>=0.81:www/p5-Squatting
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-Test-Requires>0:devel/p5-Test-Requires \
 	p5-Test-TCP>0:devel/p5-Test-TCP

@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Depends/Makefile 430405 2017-01-02 20:13:16Z adamw $
+# $FreeBSD: head/devel/p5-Module-Depends/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Module-Depends
 PORTVERSION=	0.16
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Identify the dependencies of a distribution
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Class-Accessor-Chained>=0:devel/p5-Class-Accessor-Chained \
 		p5-YAML>=0:textproc/p5-YAML
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

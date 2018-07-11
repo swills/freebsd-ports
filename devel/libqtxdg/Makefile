@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/libqtxdg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/libqtxdg/Makefile 474277 2018-07-09 18:03:14Z jsm $
 
 PORTNAME=	libqtxdg
 PORTVERSION=	3.2.0
 CATEGORIES=	devel
 MASTER_SITES=	LXQT/${PORTNAME}
 
-MAINTAINER=	jesper@schmitz.computer
+MAINTAINER=	jsm@FreeBSD.org
 COMMENT=	Qt implementation of freedesktop.org xdg specs
 
 LICENSE=	LGPL21+

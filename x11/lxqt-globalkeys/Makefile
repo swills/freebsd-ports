@@ -1,11 +1,11 @@
-# $FreeBSD: head/x11/lxqt-globalkeys/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/lxqt-globalkeys/Makefile 474277 2018-07-09 18:03:14Z jsm $
 
 PORTNAME=	lxqt-globalkeys
 PORTVERSION=	0.13.0
 CATEGORIES=	x11
 MASTER_SITES=	LXQT
 
-MAINTAINER=	jesper@schmitz.computer
+MAINTAINER=	jsm@FreeBSD.org
 COMMENT=	Global keyboard shortcuts registration
 
 LICENSE=	LGPL21+

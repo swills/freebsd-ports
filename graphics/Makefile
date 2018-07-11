@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 473842 2018-07-03 15:20:13Z rene $
+# $FreeBSD: head/graphics/Makefile 474146 2018-07-08 00:10:08Z lwhsu $
 #
 
     COMMENT = Graphics tools and libraries
@@ -946,6 +946,8 @@
     SUBDIR += py-sorl-thumbnail
     SUBDIR += py-soya3d
     SUBDIR += py-stltools
+    SUBDIR += py-svgwrite
+    SUBDIR += py-termtosvg
     SUBDIR += py-toyplot
     SUBDIR += py-traitsui
     SUBDIR += py-wand

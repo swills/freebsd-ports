@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-Throttle/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-Throttle/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Plack-Middleware-Throttle
 PORTVERSION=	0.01
@@ -10,12 +10,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of rate-limiting incoming HTTP requests for Plack
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-DateTime>0:devel/p5-DateTime \
 	p5-libwww>0:www/p5-libwww \
 	p5-Moose>0:devel/p5-Moose \
 	p5-Plack>0:www/p5-Plack
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-AnyEvent-SCGI/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-AnyEvent-SCGI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	AnyEvent-SCGI
 PORTVERSION=	1.1
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Event based SCGI server
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-AnyEvent>=5.2:devel/p5-AnyEvent
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

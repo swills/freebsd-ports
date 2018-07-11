@@ -1,9 +1,8 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libXinerama/Makefile 384234 2015-04-18 15:34:36Z kwm $
+# $FreeBSD: head/x11/libXinerama/Makefile 474036 2018-07-06 19:57:19Z zeising $
 
 PORTNAME=	libXinerama
-PORTVERSION=	1.1.3
-PORTREVISION=	3
+PORTVERSION=	1.1.4
 PORTEPOCH=	1
 CATEGORIES=	x11
 

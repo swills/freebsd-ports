@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/hare/Makefile 465743 2018-03-27 19:13:11Z dvl $
+# $FreeBSD: head/sysutils/hare/Makefile 474092 2018-07-07 14:27:11Z amdmi3 $
 
 PORTNAME=	hare
 DISTVERSION=	1.0
@@ -8,7 +8,7 @@ MAINTAINER=	dvl@FreeBSD.org
 COMMENT=	Small C client for sending ssh login notications to a hared server
 
 LICENSE=	MIT
-LICENSE=	LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jpmens

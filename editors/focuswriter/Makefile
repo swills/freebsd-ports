@@ -1,9 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/editors/focuswriter/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/focuswriter/Makefile 474178 2018-07-08 15:15:24Z swills $
 
 PORTNAME=	focuswriter
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.6.13
+DISTVERSION=	1.6.14
 CATEGORIES=	editors
 
 MAINTAINER=	lightside@gmx.com
@@ -24,7 +24,7 @@ USE_QT=		concurrent core gui multimedia network printsupport widgets \
 		buildtools_build linguisttools_build
 
 PORTDATA=	*
-PORTDOCS=	CREDITS NEWS README
+PORTDOCS=	ChangeLog CREDITS README
 
 OPTIONS_DEFINE=	DOCS
 

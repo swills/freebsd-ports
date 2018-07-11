@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/atompaw/Makefile 472355 2018-06-14 05:52:57Z yuri $
+# $FreeBSD: head/science/atompaw/Makefile 474213 2018-07-09 00:31:17Z yuri $
 
 PORTNAME=	atompaw
-PORTVERSION=	4.0.0.14
+DISTVERSION=	4.1.0.3
 CATEGORIES=	science
 MASTER_SITES=	http://www.wfu.edu/~natalie/papers/pwpaw/
 

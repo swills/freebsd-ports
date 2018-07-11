@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-Tools/Makefile 456903 2017-12-21 12:09:48Z wen $
+# $FreeBSD: head/mail/p5-Mail-Tools/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Mail-Tools
 PORTVERSION=	2.19
@@ -14,8 +14,8 @@ COMMENT=	Perl5 modules for dealing with Internet e-mail messages
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-TimeDate>=0:devel/p5-TimeDate
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

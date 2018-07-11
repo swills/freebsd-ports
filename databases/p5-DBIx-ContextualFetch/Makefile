@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-DBIx-ContextualFetch/Makefile 469279 2018-05-07 09:03:59Z amdmi3 $
+# $FreeBSD: head/databases/p5-DBIx-ContextualFetch/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-ContextualFetch
 PORTVERSION=	1.03
@@ -14,8 +14,8 @@ COMMENT=	Add contextual fetches to DBI
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Connector/Makefile 426814 2016-11-22 10:31:23Z kuriyama $
+# $FreeBSD: head/databases/p5-DBIx-Connector/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Connector
 PORTVERSION=	0.56
@@ -9,8 +9,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for fast, safe DBI connection management
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBI>=1.605:databases/p5-DBI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-MockModule>=0:devel/p5-Test-MockModule
 
 USES=		perl5

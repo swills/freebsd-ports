@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/mongrel2/Makefile 463468 2018-03-03 08:40:45Z yuri $
+# $FreeBSD: head/www/mongrel2/Makefile 474324 2018-07-10 04:46:05Z swills $
 
 PORTNAME=	mongrel2
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.11.0
+DISTVERSION=	1.12.0
 CATEGORIES=	www
 
 MAINTAINER=	neel@neelc.org
@@ -35,6 +35,7 @@ EXAMPLES_LIST=	bbs \
 		tornado \
 		zcov
 MAKE_JOBS_UNSAFE=	yes
+MAKE_ARGS+=	-f localmbedtls.mak
 
 TEST_TARGET=	tests # tests fail on 12: Invalid system call
 TEST_ENV=	${MAKE_ENV} OPTFLAGS=-I${LOCALBASE}/include

@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/comms/p5-SMS-Send-TW-Socket2Air/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/p5-SMS-Send-TW-Socket2Air/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	SMS-Send-TW-Socket2Air
 PORTVERSION=	0.01
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw
 COMMENT=	SMS::Send driver for Socket2Air
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-SMS-Send>=0:comms/p5-SMS-Send \
 		p5-Switch>=0:lang/p5-Switch \
 		p5-libwww>=0:www/p5-libwww \
 		p5-Text-Iconv>=0:converters/p5-Text-Iconv
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

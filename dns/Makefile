@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 473882 2018-07-04 12:57:28Z rene $
+# $FreeBSD: head/dns/Makefile 474355 2018-07-10 11:49:01Z ehaupt $
 #
 
     COMMENT = Domain Name Service tools
@@ -223,6 +223,7 @@
     SUBDIR += udns
     SUBDIR += unbound
     SUBDIR += updatedd
+    SUBDIR += utdns
     SUBDIR += validns
     SUBDIR += vhostcname
     SUBDIR += vizone

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-App-TLSMe/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-App-TLSMe/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	App-TLSMe
 PORTVERSION=	0.110000
@@ -11,11 +11,11 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/0000$//}
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for TLS/SSL tunnel
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-AnyEvent>=5.34:devel/p5-AnyEvent \
 	p5-Net-SSLeay>0:security/p5-Net-SSLeay \
 	p5-Proc-Pidfile>0:devel/p5-Proc-Pidfile
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-TCP>0:devel/p5-Test-TCP
 
 USES=		perl5

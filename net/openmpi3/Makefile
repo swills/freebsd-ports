@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openmpi3/Makefile 473738 2018-07-02 13:40:14Z danilo $
+# $FreeBSD: head/net/openmpi3/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	openmpi
 PORTVERSION=	3.1.1
@@ -12,6 +12,7 @@ COMMENT=	High Performance Message Passing Library
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_aarch64=		fails to package: pkg-static: mca_patcher_overwrite.la: No such file or directory
 BROKEN_armv6=		fails to package: pkg-static: mca_patcher_overwrite.la: No such file or directory
 BROKEN_armv7=		fails to package: pkg-static: mca_patcher_overwrite.la: No such file or directory
 BROKEN_sparc64=		fails to compile on sparc64

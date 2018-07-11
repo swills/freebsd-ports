@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/www/gecko-mediaplayer/Makefile 473182 2018-06-24 05:10:41Z tobik $
+# $FreeBSD: head/www/gecko-mediaplayer/Makefile 474076 2018-07-07 12:35:32Z tobik $
 
 PORTNAME=	gecko-mediaplayer
 PORTVERSION=	1.0.9
@@ -8,7 +8,7 @@ CATEGORIES=	www multimedia gnome
 MASTER_SITES=	https://pkgs.rpmfusion.org/repo/pkgs/free/gecko-mediaplayer/gecko-mediaplayer-1.0.9.tar.gz/69b50ecbbbf34ca6d980a477345dbd40/ \
 		LOCAL/tobik:npapi
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		npapi-headers${EXTRACT_SUFX}:npapi
+		libxul-npapi-headers-45.9.0${EXTRACT_SUFX}:npapi
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multimedia browser plugin for Gecko based browsers

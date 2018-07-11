@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/cldr-emoji-annotation/Makefile 472939 2018-06-20 21:15:21Z yuri $
+# $FreeBSD: head/misc/cldr-emoji-annotation/Makefile 474138 2018-07-07 21:06:14Z yuri $
 
 PORTNAME=	cldr-emoji-annotation
-DISTVERSION=	33.0.0_2
+DISTVERSION=	33.1.0_0
 CATEGORIES=	misc
 
 MAINTAINER=	yuri@FreeBSD.org

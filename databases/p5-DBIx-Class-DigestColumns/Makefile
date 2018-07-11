@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Class-DigestColumns/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-DigestColumns/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Class-DigestColumns
 PORTVERSION=	0.06000
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Automatic digest columns
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBIx-Class>=0.06002:databases/p5-DBIx-Class
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild extract

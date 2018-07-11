@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Truncate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-String-Truncate/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	String-Truncate
 PORTVERSION=	1.100602
@@ -14,9 +14,9 @@ COMMENT=	Module for when strings are too long to be displayed
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Sub-Exporter>=0.953:devel/p5-Sub-Exporter \
 		p5-Sub-Install>=0.03:devel/p5-Sub-Install
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

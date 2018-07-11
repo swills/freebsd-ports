@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/russian/p5-XML-Parser-encodings/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/russian/p5-XML-Parser-encodings/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	XML-Parser-encodings
 PORTVERSION=	1.03
@@ -10,11 +10,11 @@ DISTFILES=
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Additional Russian encodings for XML::Parser
 
-RUN_DEPENDS=	p5-XML-Parser>=2.40:textproc/p5-XML-Parser
-BUILD_DEPENDS:=	${RUN_DEPENDS} \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
 		p5-XML-Encoding>=0:textproc/p5-XML-Encoding \
 		${NONEXISTENT}:converters/iconv:extract \
 		${NONEXISTENT}:converters/iconv-extra:extract
+RUN_DEPENDS=	p5-XML-Parser>=2.40:textproc/p5-XML-Parser
 
 USES=		perl5
 NO_WRKSUBDIR=	YES

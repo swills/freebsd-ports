@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/ftp/p5-Net-FTPServer/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/ftp/p5-Net-FTPServer/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Net-FTPServer
 PORTVERSION=	1.125
@@ -11,13 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Full-featured, secure, extensible, and configurable Perl FTP server
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \
 		p5-Authen-PAM>=0:security/p5-Authen-PAM \
 		p5-BSD-Resource>=0:devel/p5-BSD-Resource \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-File-Sync>=0:devel/p5-File-Sync \
 		p5-IO-stringy>=1.126:devel/p5-IO-stringy
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 MAKE_ENV+=	NOCONF=1
 USES=		perl5

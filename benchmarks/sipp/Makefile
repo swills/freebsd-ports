@@ -1,9 +1,9 @@
 # Created by: jesper@jdn.dk
-# $FreeBSD: head/benchmarks/sipp/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/benchmarks/sipp/Makefile 474174 2018-07-08 11:15:51Z farrokhi $
 
 PORTNAME=	sipp
 PORTVERSION=	3.5.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	benchmarks net
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/v${PORTVERSION}/
 

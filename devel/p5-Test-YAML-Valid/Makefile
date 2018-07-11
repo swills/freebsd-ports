@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-YAML-Valid/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Test-YAML-Valid/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Test-YAML-Valid
 PORTVERSION=	0.04
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Test for valid YAML
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-YAML>=0.60:textproc/p5-YAML
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

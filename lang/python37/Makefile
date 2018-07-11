@@ -1,7 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python37/Makefile 473992 2018-07-06 04:16:55Z wen $
+# $FreeBSD: head/lang/python37/Makefile 474270 2018-07-09 16:44:34Z miwi $
 
 PORTNAME=	python
+PORTREVISION=	1
 PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	lang python ipv6
 MASTER_SITES=	PYTHON/ftp/python/${PORTVERSION}
@@ -118,9 +119,10 @@ DISABLED_EXTENSIONS+=	nis
 PLIST_SUB+=	NO_NIS=""
 .endif
 
-# python37 fail build ssl module on FreeBSD10, because X509_VERIFY_PARAM_set1_host check fails.
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
+# python37 fails to build ssl module on FreeBSD10 with base SSL because X509_VERIFY_PARAM_set1_host check fails.
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000 && ${SSL_DEFAULT} == base
 PLIST_SUB+=	NO_SSL="@comment "
+WARNING+=	"No SSL support for FreeBSD ${OSREL} with base SSL! OpenSSL must be greater than/equal to 1.0.2"
 .else
 PLIST_SUB+=	NO_SSL=""
 .endif

@@ -1,5 +1,5 @@
 # Created by: Dan Rench <citric@cubicone.tmetic.com>
-# $FreeBSD: head/converters/p5-MIME-Base64-URLSafe/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-MIME-Base64-URLSafe/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	MIME-Base64-URLSafe
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	citric@cubicone.tmetic.com
 COMMENT=	Perl version of Python's URL-safe base64 codec
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-MIME-Base64>=0:converters/p5-MIME-Base64
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/00//}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Devel-Cover-Report-Clover/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-Cover-Report-Clover/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Devel-Cover-Report-Clover
 PORTVERSION=	0.35
@@ -13,12 +13,12 @@ COMMENT=	Perl extension for Clover reporting of coverage statistics
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Accessor>0:devel/p5-Class-Accessor \
 	p5-Devel-Cover>0:devel/p5-Devel-Cover \
 	p5-HTML-Parser>0:www/p5-HTML-Parser \
 	p5-Template-Toolkit>0:www/p5-Template-Toolkit
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS= \
 	p5-File-Which>=1.08:sysutils/p5-File-Which \
 	p5-Test-Exception>0:devel/p5-Test-Exception \

@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-django-mezzanine-filebrowser/Makefile 427770 2016-12-04 10:48:33Z koobs $
+# $FreeBSD: head/www/py-django-mezzanine-filebrowser/Makefile 474283 2018-07-09 19:13:41Z miwi $
 
 PORTNAME=	django-mezzanine-filebrowser
-PORTVERSION=	0.4.6
+PORTVERSION=	0.4.7
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

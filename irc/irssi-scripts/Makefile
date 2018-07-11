@@ -1,8 +1,8 @@
 # Created by: Alexey Mikhailov <karma@ez.pereslavl.ru>
-# $FreeBSD: head/irc/irssi-scripts/Makefile 464469 2018-03-14 08:17:57Z tobik $
+# $FreeBSD: head/irc/irssi-scripts/Makefile 474035 2018-07-06 19:11:28Z jadawin $
 
 PORTNAME=	irssi-scripts
-PORTVERSION=	20160301
+PORTVERSION=	20170711
 CATEGORIES=	irc
 MASTER_SITES=	DEBIAN
 DISTNAME=	${PORTNAME}_${PORTVERSION}

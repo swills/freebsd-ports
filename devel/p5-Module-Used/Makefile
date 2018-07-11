@@ -1,5 +1,5 @@
 # Created by: Takuya Tsuchida <tsucchi@cpan.org>
-# $FreeBSD: head/devel/p5-Module-Used/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-Used/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Module-Used
 PORTVERSION=	v1.2.0
@@ -14,11 +14,11 @@ COMMENT=	Find modules loaded by Perl code without running it
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-File-Next>=1.02:sysutils/p5-File-Next \
 		p5-PPI>=1.203:textproc/p5-PPI \
 		p5-Test-Deep>=0.098:devel/p5-Test-Deep \
 		p5-Readonly>=1.03:devel/p5-Readonly
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

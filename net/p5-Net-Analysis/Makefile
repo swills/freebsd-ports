@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-Net-Analysis/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Analysis/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Net-Analysis
 PORTVERSION=	0.41
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Modules for analysing network traffic
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Net-Pcap>=0:net/p5-Net-Pcap \
 		p5-NetPacket>=0:net/p5-NetPacket \
 		p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-libwww>=0:www/p5-libwww
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-MockObject>=0:devel/p5-Test-MockObject
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/p5-Task-Math-Symbolic/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Task-Math-Symbolic/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Task-Math-Symbolic
 PORTVERSION=	1.01
@@ -12,6 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Math::Symbolic with lots of plugins
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Math-Symbolic>=0.163:math/p5-Math-Symbolic \
 		p5-Math-Symbolic-Custom-CCompiler>=0:math/p5-Math-Symbolic-Custom-CCompiler \
 		p5-Math-Symbolic-Custom-Contains>=0:math/p5-Math-Symbolic-Custom-Contains \
@@ -25,7 +26,6 @@ RUN_DEPENDS=	p5-Math-Symbolic>=0.163:math/p5-Math-Symbolic \
 		p5-Math-SymbolicX-NoSimplification>=0:math/p5-Math-SymbolicX-NoSimplification \
 		p5-Math-SymbolicX-ParserExtensionFactory>=0:math/p5-Math-SymbolicX-ParserExtensionFactory \
 		p5-Math-SymbolicX-Statistics-Distributions>=0:math/p5-Math-SymbolicX-Statistics-Distributions
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

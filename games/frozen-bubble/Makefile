@@ -1,5 +1,5 @@
 # Created by: Klaus Goger <klaus.goger@reflex.at>
-# $FreeBSD: head/games/frozen-bubble/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/games/frozen-bubble/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	frozen-bubble
 DISTVERSION=	2.2.1-beta1
@@ -12,7 +12,7 @@ COMMENT=	Throw colourful bubbles to build groups and destroy the groups
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS:=	${RUN_DEPENDS} \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
 		p5-File-Slurp>=0:devel/p5-File-Slurp
 RUN_DEPENDS=	p5-SDL>=2.511:devel/p5-SDL \
 		p5-Locale-gettext>=0:devel/p5-Locale-gettext \

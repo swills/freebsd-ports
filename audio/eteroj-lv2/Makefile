@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/eteroj-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
+# $FreeBSD: head/audio/eteroj-lv2/Makefile 474218 2018-07-09 02:21:45Z yuri $
 
 PORTNAME=	eteroj
-DISTVERSION=	0.2.0
+DISTVERSION=	0.4.0
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

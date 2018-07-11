@@ -1,5 +1,5 @@
 # Created by: Mikhail T. <michael@fun-box.ru>
-# $FreeBSD: head/devel/p5-DateTime-Event-Zodiac/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Event-Zodiac/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DateTime-Event-Zodiac
 PORTVERSION=	1.03
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Return zodiac for a given date
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Astro>=0:devel/p5-DateTime-Astro
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage
 

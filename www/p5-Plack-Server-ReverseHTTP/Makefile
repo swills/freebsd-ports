@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Server-ReverseHTTP/Makefile 471709 2018-06-04 18:17:26Z sunpoet $
+# $FreeBSD: head/www/p5-Plack-Server-ReverseHTTP/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Plack-Server-ReverseHTTP
 PORTVERSION=	0.02
@@ -14,11 +14,11 @@ COMMENT=	Perl extension of reversehttp gateway for PSGI application
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-AnyEvent>0:devel/p5-AnyEvent \
 	p5-AnyEvent-ReverseHTTP>0:www/p5-AnyEvent-ReverseHTTP \
 	p5-Plack>0:www/p5-Plack
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

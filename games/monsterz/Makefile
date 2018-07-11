@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/games/monsterz/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/monsterz/Makefile 474276 2018-07-09 17:40:13Z amdmi3 $
 
 PORTNAME=	monsterz
 PORTVERSION=	0.7.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	http://sam.zoy.org/monsterz/ \
 		SF/nemysisfreebsdp/:icons
@@ -19,7 +19,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python:2.7
+USES=		python:2.7 shebangfix
+SHEBANG_FILES=	monsterz.py
 MAKE_ENV=	prefix=${PREFIX}
 
 PORTDOCS=	AUTHORS README TODO

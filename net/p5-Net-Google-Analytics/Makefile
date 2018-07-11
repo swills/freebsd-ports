@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-Google-Analytics/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Google-Analytics/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Net-Google-Analytics
 PORTVERSION=	3.03
@@ -12,12 +12,12 @@ COMMENT=	Perl extension for Google Analytics Data Export API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-XSAccessor>=1.05:devel/p5-Class-XSAccessor \
 	p5-JSON>0:converters/p5-JSON \
 	p5-libwww>0:www/p5-libwww \
 	p5-URI>0:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

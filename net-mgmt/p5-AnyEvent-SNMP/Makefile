@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/p5-AnyEvent-SNMP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-AnyEvent-SNMP/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	AnyEvent-SNMP
 PORTVERSION=	6.0
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Adaptor to integrate Net::SNMP into AnyEvent
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-AnyEvent>=5.23:devel/p5-AnyEvent \
 		p5-Net-SNMP>=6.0.1:net-mgmt/p5-Net-SNMP \
 		p5-common-sense>=3.4:devel/p5-common-sense
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

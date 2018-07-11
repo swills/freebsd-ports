@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-django-mezzanine-grappelli/Makefile 427772 2016-12-04 10:51:59Z koobs $
+# $FreeBSD: head/www/py-django-mezzanine-grappelli/Makefile 474283 2018-07-09 19:13:41Z miwi $
 
 PORTNAME=	django-mezzanine-grappelli
-PORTVERSION=	0.4.5
+PORTVERSION=	0.4.7
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

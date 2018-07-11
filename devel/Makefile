@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 473990 2018-07-06 02:49:24Z swills $
+# $FreeBSD: head/devel/Makefile 474439 2018-07-11 12:00:36Z swills $
 #
 
     COMMENT = Development utilities
@@ -4781,6 +4781,7 @@
     SUBDIR += py-oslo.utils
     SUBDIR += py-oslo.versionedobjects
     SUBDIR += py-oslo.vmware
+    SUBDIR += py-oslotest
     SUBDIR += py-osprofiler
     SUBDIR += py-p4python
     SUBDIR += py-packaging
@@ -4959,6 +4960,7 @@
     SUBDIR += py-qt5-qscintilla2
     SUBDIR += py-qt5-test
     SUBDIR += py-qtconsole
+    SUBDIR += py-qutip
     SUBDIR += py-ramlfications
     SUBDIR += py-ratelimiter
     SUBDIR += py-rauth
@@ -5874,6 +5876,7 @@
     SUBDIR += rubygem-ruby-enum
     SUBDIR += rubygem-ruby-filemagic
     SUBDIR += rubygem-ruby-fogbugz
+    SUBDIR += rubygem-ruby-fogbugz021
     SUBDIR += rubygem-ruby-libvirt
     SUBDIR += rubygem-ruby-macho
     SUBDIR += rubygem-ruby-ole

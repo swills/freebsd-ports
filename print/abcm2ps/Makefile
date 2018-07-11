@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/print/abcm2ps/Makefile 460306 2018-01-29 14:16:00Z araujo $
+# $FreeBSD: head/print/abcm2ps/Makefile 474231 2018-07-09 07:44:40Z araujo $
 
 PORTNAME=	abcm2ps
-PORTVERSION=	8.13.19
+PORTVERSION=	8.13.23
 DISTVERSIONPREFIX=	v
 CATEGORIES=	print audio
 

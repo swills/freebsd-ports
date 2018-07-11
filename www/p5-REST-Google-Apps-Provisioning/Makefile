@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-REST-Google-Apps-Provisioning/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-REST-Google-Apps-Provisioning/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	REST-Google-Apps-Provisioning
 PORTVERSION=	1.1.10
@@ -15,9 +15,9 @@ COMMENT=	Perl library to Google's RESTful Apps API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-libwww>=0:www/p5-libwww
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

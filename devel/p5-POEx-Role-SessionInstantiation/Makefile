@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-POEx-Role-SessionInstantiation/Makefile 471621 2018-06-04 18:05:28Z sunpoet $
+# $FreeBSD: head/devel/p5-POEx-Role-SessionInstantiation/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	POEx-Role-SessionInstantiation
 PORTVERSION=	1.102610
@@ -15,6 +15,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-MooseX-CompileTime-Traits>=0:devel/p5-MooseX-CompileTime-Traits \
 	p5-MooseX-Declare>0:devel/p5-MooseX-Declare \
@@ -23,7 +24,6 @@ RUN_DEPENDS=	\
 	p5-POE>0:devel/p5-POE \
 	p5-POEx-Types>=0:devel/p5-POEx-Types \
 	p5-aliased>0:devel/p5-aliased
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

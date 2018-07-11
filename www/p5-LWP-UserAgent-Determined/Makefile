@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/www/p5-LWP-UserAgent-Determined/Makefile 430405 2017-01-02 20:13:16Z adamw $
+# $FreeBSD: head/www/p5-LWP-UserAgent-Determined/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	LWP-UserAgent-Determined
 PORTVERSION=	1.07
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Virtual browser that retries errors
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

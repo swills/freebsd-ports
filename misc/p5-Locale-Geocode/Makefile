@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/misc/p5-Locale-Geocode/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/p5-Locale-Geocode/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Locale-Geocode
 PORTVERSION=	1.20
@@ -12,9 +12,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Find codes and information on geographical location
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-XML-SAX-Expat>=0.39:textproc/p5-XML-SAX-Expat \
 		p5-XML-Simple>=2.16:textproc/p5-XML-Simple
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

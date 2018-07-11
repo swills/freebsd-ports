@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/textproc/p5-YAPE-Regex-Explain/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-YAPE-Regex-Explain/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	YAPE-Regex-Explain
 PORTVERSION=	4.01
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Explanation of a Regular Expression
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-YAPE-Regex>=0:textproc/p5-YAPE-Regex
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

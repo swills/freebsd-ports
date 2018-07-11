@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-flask-oauthlib/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-oauthlib/Makefile 474383 2018-07-10 16:56:52Z rm $
 
 PORTNAME=	Flask-OAuthlib
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.5
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

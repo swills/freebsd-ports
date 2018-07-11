@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Devel-StackTrace-AsHTML/Makefile 470371 2018-05-19 09:04:10Z amdmi3 $
+# $FreeBSD: head/devel/p5-Devel-StackTrace-AsHTML/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Devel-StackTrace-AsHTML
 PORTVERSION=	0.15
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Devel-StackTrace>0:devel/p5-Devel-StackTrace
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

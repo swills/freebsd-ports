@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/x11-wm/golem/Makefile 399689 2015-10-19 15:05:16Z danfe $
+# $FreeBSD: head/x11-wm/golem/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	golem
 PORTVERSION=	0.0.6
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small window manager with themes and plugins
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol: display in readonly segment
 
 USES=		gmake perl5 tar:bzip2
 USE_PERL5=	build

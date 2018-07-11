@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/net-mgmt/zabbix2-frontend/Makefile 466796 2018-04-08 12:19:58Z brnrd $
+# $FreeBSD: head/net-mgmt/zabbix2-frontend/Makefile 474259 2018-07-09 14:06:32Z dbaio $
 
 PORTNAME=	zabbix2
 PKGNAMESUFFIX=	-frontend
@@ -20,7 +20,7 @@ OPTIONS_DEFINE=	MYSQL MYSQLI PGSQL SQLITE ORACLE
 OPTIONS_DEFAULT=	MYSQL MYSQLI
 MYSQLI_DESC=	MySQLI backend
 
-MYSQL_VARS=	IGNORE_WITH_PHP+=70
+MYSQL_VARS=	IGNORE_WITH_PHP+="70 71 72"
 
 MYSQL_USE=	PHP=mysql
 MYSQLI_USE=	PHP=mysqli

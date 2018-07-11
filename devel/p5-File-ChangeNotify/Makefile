@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/devel/p5-File-ChangeNotify/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-File-ChangeNotify/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	File-ChangeNotify
 PORTVERSION=	0.24
@@ -13,12 +13,12 @@ COMMENT=	Watch for changes to files
 
 LICENSE=	ART20
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
 		p5-IO-KQueue>=0:devel/p5-IO-KQueue \
 		p5-MooseX-Params-Validate>=0:devel/p5-MooseX-Params-Validate \
 		p5-MooseX-SemiAffordanceAccessor>=0:devel/p5-MooseX-SemiAffordanceAccessor \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>0:devel/p5-Test-Exception
 
 USES=		perl5

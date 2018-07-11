@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/benchmarks/bombardier/Makefile 468909 2018-05-03 01:49:57Z danilo $
+# $FreeBSD: head/benchmarks/bombardier/Makefile 474111 2018-07-07 17:17:52Z danilo $
 
 PORTNAME=	bombardier
-PORTVERSION=	1.1.2
+PORTVERSION=	1.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	benchmarks
 
@@ -11,18 +11,24 @@ COMMENT=	Fast cross-platform HTTP benchmarking tool written in Go
 
 LICENSE=	MIT
 
+USES=		go
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	codesenberg
-USES=		go
 
 PLIST_FILES=	bin/${PORTNAME}
 
+post-patch:
+	${MKDIR} ${WRKDIR}/src/github.com/${GH_ACCOUNT}
+	${LN} -s ${WRKSRC} ${WRKDIR}/src/github.com/${GH_ACCOUNT}/${PORTNAME}
+
 do-build:
-	cd ${WRKSRC}; \
-		${LN} -s vendor src; \
-		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags "-X main.version=${PORTVERSION}" .
+	cd ${WRKDIR}/src/github.com/${GH_ACCOUNT}/${PORTNAME} && \
+		GOPATH=${WRKDIR} go build -ldflags "-X main.version=${PORTVERSION}" .
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME}-${PORTVERSION} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	${INSTALL_PROGRAM} \
+		${WRKDIR}/src/github.com/${GH_ACCOUNT}/${PORTNAME}/${PORTNAME} \
+		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

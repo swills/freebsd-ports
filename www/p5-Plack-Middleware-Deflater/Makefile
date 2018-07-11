@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-Deflater/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-Deflater/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Plack-Middleware-Deflater
 PORTVERSION=	0.12
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to compress response body with Gzip or Deflate
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Plack>0:www/p5-Plack
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-IO-Handle-Util>0:devel/p5-IO-Handle-Util \
 	p5-Test-TCP>0:devel/p5-Test-TCP

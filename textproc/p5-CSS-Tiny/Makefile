@@ -1,5 +1,5 @@
 # Created by: Hansjoerg Pehofer <hansjoerg.pehofer@uibk.ac.at>
-# $FreeBSD: head/textproc/p5-CSS-Tiny/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-CSS-Tiny/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	CSS-Tiny
 PORTVERSION=	1.20
@@ -12,8 +12,8 @@ COMMENT=	Read/Write .css files with as little code as possible
 
 LICENSE=	ARTPERL10
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Clone>=0:devel/p5-Clone
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Engine-Middleware/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Engine-Middleware/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	HTTP-Engine-Middleware
 PORTVERSION=	0.22
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for official distribution of HTTP::Engine
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Any-Moose>=0.09:devel/p5-Any-Moose \
 	p5-Mouse>=0.23:devel/p5-Mouse \

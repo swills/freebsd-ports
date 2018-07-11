@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Perl-Metrics-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Perl-Metrics-Simple/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Perl-Metrics-Simple
 PORTVERSION=	0.18
@@ -12,11 +12,11 @@ COMMENT=	Perl extension to count packages, subs, lines, etc. of many files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-PPI>=1.113:textproc/p5-PPI \
 	p5-Readonly>=1.03:devel/p5-Readonly \
 	p5-Statistics-Basic>0:math/p5-Statistics-Basic
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-Test-Pod>0:devel/p5-Test-Pod \
 	p5-Test-Pod-Coverage>0:devel/p5-Test-Pod-Coverage

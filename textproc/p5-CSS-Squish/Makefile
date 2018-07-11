@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-CSS-Squish/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-CSS-Squish/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	CSS-Squish
 PORTVERSION=	0.10
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Compact many CSS files into one big file
 
-RUN_DEPENDS=	p5-URI>=0:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS} \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
 		p5-Test-LongString>=0:devel/p5-Test-LongString
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI
 
 USES=		perl5
 USE_PERL5=	configure

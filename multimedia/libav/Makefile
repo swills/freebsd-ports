@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libav/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/multimedia/libav/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	libav
 PORTVERSION=	12.1
@@ -11,6 +11,7 @@ COMMENT=	Realtime audio/video conversion library
 
 LICENSE=	GPLv2+
 
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ABS64 against local symbol in readonly segment
 BROKEN_armv6=		fails to compile: cc: warning: joined argument expects additional value: -mcpu=
 
 BUILD_DEPENDS=	yasm:devel/yasm

@@ -1,8 +1,8 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 468780 2018-05-01 19:03:18Z rene $
+# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 474261 2018-07-09 14:09:40Z dbaio $
 
 PORTNAME=	zabbix3
-PORTVERSION=	3.0.16
+PORTVERSION=	3.0.19
 PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}
@@ -16,8 +16,6 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS=	zabbix[0-9][0-9]${PKGNAMESUFFIX} zabbix[0-24-9]${PKGNAMESUFFIX}
-
-IGNORE_WITH_MYSQL=	41
 
 ZABBIX_BUILD=	${PKGNAMESUFFIX:S/^-//}
 

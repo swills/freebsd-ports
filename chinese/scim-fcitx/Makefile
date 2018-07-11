@@ -1,5 +1,5 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/chinese/scim-fcitx/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/scim-fcitx/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	scim
 PORTVERSION=	3.1.1
@@ -15,8 +15,8 @@ COMMENT=	SCIM IMEngine module for fcitx
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	scim:textproc/scim
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		tar:bzip2 gmake libtool:keepla pkgconfig
 GNU_CONFIGURE=	yes

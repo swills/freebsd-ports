@@ -1,24 +1,26 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/dns/ddclient/Makefile 441283 2017-05-20 02:27:54Z asomers $
+# $FreeBSD: head/dns/ddclient/Makefile 474118 2018-07-07 18:54:31Z tobik $
 
 PORTNAME=	ddclient
-PORTVERSION=	3.8.3
-PORTREVISION=	3
+DISTVERSIONPREFIX=	v
+DISTVERSION=	3.8.3-104
+DISTVERSIONSUFFIX=	-gec2acfb
 CATEGORIES=	dns
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	mjl@luckie.org.nz
 COMMENT=	Update dynamic DNS entries
 
 LICENSE=	GPLv2
 
-NO_BUILD=	yes
+RUN_DEPENDS=	p5-Data-Validate-IP>0:net-mgmt/p5-Data-Validate-IP
 
 USES=		perl5 tar:bzip2
+USE_GITHUB=	yes
 USE_PERL5=	run
-
 USE_RC_SUBR=	${PORTNAME}
 
+NO_ARCH=	yes
+NO_BUILD=	yes
 SUB_FILES=	pkg-message ddclient_force
 
 OPTIONS_DEFINE=	SSL

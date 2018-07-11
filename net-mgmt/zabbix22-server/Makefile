@@ -1,9 +1,9 @@
 # Created by: Pakhom Golynga <pakhom@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix22-server/Makefile 462615 2018-02-22 17:08:46Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix22-server/Makefile 474260 2018-07-09 14:08:20Z dbaio $
 
 PORTNAME=	zabbix22
-PORTVERSION=	2.2.21
-PORTREVISION?=	1
+PORTVERSION=	2.2.22
+PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}
 PKGNAMESUFFIX?=	-server

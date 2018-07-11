@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Class-DBI-DATA-Schema/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/databases/p5-Class-DBI-DATA-Schema/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Class-DBI-DATA-Schema
 PORTVERSION=	1.00
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Execute Class::DBI SQL from DATA sections
 
+BUILD_DEPENDS=	${RUN_DEPENDS} \
+		p5-Test-Simple>=0:devel/p5-Test-Simple
 RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
-BUILD_DEPENDS+=	p5-Test-Simple>=0:devel/p5-Test-Simple
 
 USES=		perl5
 USE_PERL5=	configure

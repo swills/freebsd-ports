@@ -1,8 +1,8 @@
 # Created by: alepulver
-# $FreeBSD: head/net/xrdp/Makefile 469777 2018-05-13 07:25:24Z meta $
+# $FreeBSD: head/net/xrdp/Makefile 474234 2018-07-09 07:55:51Z meta $
 
 PORTNAME=	xrdp
-PORTVERSION=	0.9.6
+PORTVERSION=	0.9.7
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	net

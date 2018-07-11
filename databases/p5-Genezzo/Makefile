@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/p5-Genezzo/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Genezzo/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Genezzo
 PORTVERSION=	0.72
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensible database with SQL and DBI
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	lib/Genezzo/*.pl

@@ -1,5 +1,5 @@
 # Created by: ccowart@timesinks.net
-# $FreeBSD: head/sysutils/confman/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/confman/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	confman
 PORTVERSION=	1.9.4b
@@ -10,12 +10,12 @@ MASTER_SITES=	http://www.timesinks.net/distfiles/
 MAINTAINER=	ccowart@timesinks.net
 COMMENT=	Revision controlled configuration manager
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	bash:shells/bash \
 		svn:devel/subversion \
 		sudo:security/sudo \
 		greadlink:sysutils/coreutils \
 		wget:ftp/wget
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 GNU_CONFIGURE=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Pod-Coverage/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Test-Pod-Coverage/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Test-Pod-Coverage
 PORTVERSION=	1.10
@@ -13,9 +13,9 @@ COMMENT=	Check for pod coverage in your distribution
 
 LICENSE=	ART20
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Pod-Coverage>0:devel/p5-Pod-Coverage \
 		p5-Test-Simple>0:devel/p5-Test-Simple
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

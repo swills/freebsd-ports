@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Template-Plugin-Number-Format/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-Template-Plugin-Number-Format/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Template-Plugin-Number-Format
 PORTVERSION=	1.06
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Plugin/filter interface to Number::Format
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Number-Format>0:textproc/p5-Number-Format \
 		p5-Template-Toolkit>=2.07:www/p5-Template-Toolkit
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

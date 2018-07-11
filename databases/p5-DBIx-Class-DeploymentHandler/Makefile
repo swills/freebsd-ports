@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-DeploymentHandler/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-DeploymentHandler/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Class-DeploymentHandler
 PORTVERSION=	0.002218
@@ -12,6 +12,7 @@ COMMENT=	Perl extension for extensible DBIx::Class deployment
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Carp-Clan>0:devel/p5-Carp-Clan \
 	p5-Context-Preserve>0:devel/p5-Context-Preserve \
@@ -26,7 +27,6 @@ RUN_DEPENDS=	\
 	p5-Text-Brew>=0.02:textproc/p5-Text-Brew \
 	p5-Try-Tiny>0:lang/p5-Try-Tiny \
 	p5-namespace-autoclean>0:devel/p5-namespace-autoclean
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

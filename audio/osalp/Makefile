@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/osalp/Makefile 428129 2016-12-08 15:38:24Z tijl $
+# $FreeBSD: head/audio/osalp/Makefile 474087 2018-07-07 14:14:06Z amdmi3 $
 
 PORTNAME=	osalp
 PORTVERSION=	0.7.5
@@ -14,12 +14,12 @@ RUN_DEPENDS=	mpg123:audio/mpg123
 LIB_DEPENDS=	libmp3lame.so:audio/lame \
 		libvorbis.so:audio/libvorbis
 
-USES=		libtool
+USES=		libtool localbase:ldflags
 GNU_CONFIGURE=	yes
-CFLAGS+=	-fPIC -DPIC
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS=	--enable-all
+
+CFLAGS+=	-fPIC -DPIC
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 USE_LDCONFIG=	yes
 
@@ -28,14 +28,14 @@ PLIST_SUB=	VERSION=${PORTVERSION}
 CONFLICTS=	libaudiofile-[0-9]*
 
 post-patch:
-	${FIND} ${WRKSRC} -name "*.cc" | ${XARGS} ${REINPLACE_CMD} -E \
+	@${FIND} ${WRKSRC} -name "*.cc" | ${XARGS} ${REINPLACE_CMD} -E \
 	    's|iostream.h|iostream|; \
 	     s|[[:space:]]cout| std::cout|g; \
 	     s|[[:space:]]endl| std::endl|g; \
 	     s|[[:space:]]cerr| std::cerr|g;'
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libaflib-${PORTVERSION}.so \
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libaflib-${PORTVERSION}.so \
 	    ${STAGEDIR}${PREFIX}/lib/aflib/lib*-${PORTVERSION}.so
 
 .include <bsd.port.mk>

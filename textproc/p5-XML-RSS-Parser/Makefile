@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-RSS-Parser/Makefile 430405 2017-01-02 20:13:16Z adamw $
+# $FreeBSD: head/textproc/p5-XML-RSS-Parser/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	XML-RSS-Parser
 PORTVERSION=	4.0
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Liberal object-oriented parser for RSS feeds
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-XML-Elemental>=0:textproc/p5-XML-Elemental \
 		p5-Class-XPath>=0:devel/p5-Class-XPath \
 		p5-Class-ErrorHandler>=0:devel/p5-Class-ErrorHandler
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

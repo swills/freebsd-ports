@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-POE-Component-Client-Traceroute/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-POE-Component-Client-Traceroute/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	POE-Component-Client-Traceroute
 PORTVERSION=	0.21
@@ -14,8 +14,8 @@ COMMENT=	Non-blocking traceroute client
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-POE>=0.11:devel/p5-POE
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5 shebangfix
 USE_PERL5=	configure

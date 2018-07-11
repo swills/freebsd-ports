@@ -1,10 +1,10 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library-packages3d-devel/Makefile 474000 2018-07-06 08:24:33Z mr $
+# $FreeBSD: head/cad/kicad-library-packages3d-devel/Makefile 474023 2018-07-06 17:43:22Z antoine $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_P3D_DATE}
 CATEGORIES=	cad
-PKGNAMESUFFIX=	-library-devel
+PKGNAMESUFFIX=	-library-packages3d-devel
 
 MAINTAINER=	mr@FreeBSD.org
 COMMENT=	Official KiCad 3D model libraries for rendering and MCAD integration

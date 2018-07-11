@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/IPA/Makefile 465826 2018-03-28 17:14:27Z mat $
+# $FreeBSD: head/graphics/IPA/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	IPA
 PORTVERSION=	1.08
@@ -10,8 +10,8 @@ MASTER_SITES=	http://www.prima.eu.org/IPA/ CPAN/Prima/KARASIK
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Image Processing Algorithms
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Prima>1.24:x11-toolkits/p5-Prima
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

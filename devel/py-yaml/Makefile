@@ -1,8 +1,8 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/py-yaml/Makefile 462356 2018-02-19 23:43:33Z jpaetzel $
+# $FreeBSD: head/devel/py-yaml/Makefile 474268 2018-07-09 15:21:31Z jpaetzel $
 
 PORTNAME=	yaml
-PORTVERSION=	3.12
+PORTVERSION=	3.13
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

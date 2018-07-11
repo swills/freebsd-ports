@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Exporter-ForMethods/Makefile 464238 2018-03-12 09:03:12Z amdmi3 $
+# $FreeBSD: head/devel/p5-Sub-Exporter-ForMethods/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Sub-Exporter-ForMethods
 PORTVERSION=	0.100052
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Sub-Name>=0:devel/p5-Sub-Name \
 		p5-Sub-Exporter>=0.978:devel/p5-Sub-Exporter
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

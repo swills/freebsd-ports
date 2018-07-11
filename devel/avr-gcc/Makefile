@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/avr-gcc/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/avr-gcc/Makefile 474039 2018-07-06 21:54:44Z cmt $
 
 PORTNAME=	gcc
 PORTVERSION=	5.4.0
@@ -56,6 +56,11 @@ BROKEN_mips64=		Fails to configure: cannot compute suffix of object files
 .if (${ARCH} == "amd64")
 ARCH=		x86_64
 .endif
+
+post-patch:
+	@${FIND} ${WRKSRC} -type f \( -name '*.[ch]' -o -name '*.cc' \) | \
+		${XARGS} ${EGREP} -l '"(HOST_WIDE|PLUGIN_COND|PRId64)' | \
+		${XARGS} ${REINPLACE_CMD} -E -e 's/"(HOST_WIDE|PLUGIN_COND|PRId64)/" \1/g'
 
 post-configure:
 	${MKDIR} ${WRKSRC}/gcc/include

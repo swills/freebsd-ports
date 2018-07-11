@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Corona/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Corona/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Corona
 PORTVERSION=	0.1004
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Coro based PSGI web server
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Coro>0:devel/p5-Coro \
 	p5-Net-Server-Coro>=0.5:net/p5-Net-Server-Coro \
 	p5-Plack>=0.99:www/p5-Plack
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-TCP>0:devel/p5-Test-TCP
 
 USES=		perl5

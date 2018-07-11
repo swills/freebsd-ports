@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-MooseX-Clone/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Clone/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	MooseX-Clone
 PORTVERSION=	0.06
@@ -13,11 +13,11 @@ COMMENT=	Fine grained cloning support for Moose objects
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Data-Visitor>=0.24:devel/p5-Data-Visitor \
 		p5-Hash-Util-FieldHash-Compat>=0:devel/p5-Hash-Util-FieldHash-Compat \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuildtiny

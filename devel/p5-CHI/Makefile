@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-CHI/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-CHI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	CHI
 PORTVERSION=	0.580
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-0.58
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for unified cache interface
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Carp-Assert>=0.20:devel/p5-Carp-Assert \
 	p5-Data-UUID>0:devel/p5-Data-UUID \

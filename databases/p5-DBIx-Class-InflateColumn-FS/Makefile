@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-InflateColumn-FS/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-InflateColumn-FS/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Class-InflateColumn-FS
 PORTVERSION=	0.01007
@@ -10,11 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to {in,de}flate columns to Path::Class::File objects
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-DBIx-Class>=0.08:databases/p5-DBIx-Class \
 	p5-DBIx-Class-UUIDColumns>=0.02005:databases/p5-DBIx-Class-UUIDColumns \
 	p5-Path-Class>0:devel/p5-Path-Class
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-DBICx-TestDatabase>=0:databases/p5-DBICx-TestDatabase
 
 USES=		perl5

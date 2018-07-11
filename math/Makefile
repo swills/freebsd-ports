@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 473842 2018-07-03 15:20:13Z rene $
+# $FreeBSD: head/math/Makefile 474374 2018-07-10 15:03:53Z pi $
 #
 
     COMMENT = Mathematics
@@ -777,6 +777,7 @@
     SUBDIR += sfft
     SUBDIR += sfst
     SUBDIR += simd-viterbi
+    SUBDIR += singular
     SUBDIR += slatec
     SUBDIR += slepc
     SUBDIR += slgrace

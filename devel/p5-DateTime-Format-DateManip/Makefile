@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-DateManip/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-DateManip/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DateTime-Format-DateManip
 PORTVERSION=	0.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert Date::Manip dates and durations to DateTimes and vice versa
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-Date-Manip>=0:devel/p5-Date-Manip
 

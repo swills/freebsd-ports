@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/p5-Dancer-Plugin-Memcached/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Dancer-Plugin-Memcached/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Dancer-Plugin-Memcached
 PORTVERSION=	0.02
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Cache response content to memcached
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Dancer>0:www/p5-Dancer
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

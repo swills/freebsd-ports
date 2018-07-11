@@ -1,9 +1,9 @@
 # Created by: anhot
-# $FreeBSD: head/graphics/sswf/Makefile 468013 2018-04-22 09:33:46Z amdmi3 $
+# $FreeBSD: head/graphics/sswf/Makefile 474115 2018-07-07 18:15:30Z tobik $
 
 PORTNAME=	sswf
 PORTVERSION=	1.8.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

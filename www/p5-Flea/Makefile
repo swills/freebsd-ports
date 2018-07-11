@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Flea/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Flea/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Flea
 PORTVERSION=	0.04
@@ -11,6 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for minimalistic sugar for your Plack
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Devel-Declare-Parser>0:devel/p5-Devel-Declare-Parser \
 	p5-Exception-Class>0:devel/p5-Exception-Class \
@@ -20,7 +21,6 @@ RUN_DEPENDS=	\
 	p5-Plack>0:www/p5-Plack \
 	p5-Try-Tiny>0:lang/p5-Try-Tiny \
 	p5-URI>0:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

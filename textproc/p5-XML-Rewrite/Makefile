@@ -1,5 +1,5 @@
 # Created by: Patrick Powell <papowell@astart.com>
-# $FreeBSD: head/textproc/p5-XML-Rewrite/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Rewrite/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	XML-Rewrite
 PORTVERSION=	0.10
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	papowell@astart.com
 COMMENT=	XML processing and rewriting
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Log-Report>=0.21:devel/p5-Log-Report \
 		p5-XML-Compile-Cache>=0:textproc/p5-XML-Compile-Cache \
 		p5-XML-LibXML>=1.70:textproc/p5-XML-LibXML
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

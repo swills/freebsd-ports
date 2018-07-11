@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-LocalDelivery/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Email-LocalDelivery/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Email-LocalDelivery
 PORTVERSION=	1.200
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Deliver a piece of email - simply
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Email-Simple>=0:mail/p5-Email-Simple \
 		p5-Email-FolderType>=0:mail/p5-Email-FolderType \
 		p5-File-Path-Expand>=0:devel/p5-File-Path-Expand
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

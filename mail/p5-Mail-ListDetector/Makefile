@@ -1,5 +1,5 @@
 # Created by: petef
-# $FreeBSD: head/mail/p5-Mail-ListDetector/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-ListDetector/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Mail-ListDetector
 PORTVERSION=	1.04
@@ -12,11 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for detecting mailing list messages
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Email-Abstract>=3.001:mail/p5-Email-Abstract \
 		p5-Email-Valid>=0.182:mail/p5-Email-Valid \
 		p5-Mail-Tools>=2.04:mail/p5-Mail-Tools \
 		p5-URI>=1.1:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	examples/sample.pl

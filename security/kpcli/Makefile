@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kpcli/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/kpcli/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	kpcli
 PORTVERSION=	3.1
@@ -13,6 +13,7 @@ COMMENT=	Command line interface to KeePassX and KeePass database files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Crypt-Rijndael>=1.08:security/p5-Crypt-Rijndael \
 		p5-Term-ReadKey>=2.30:devel/p5-Term-ReadKey \
 		p5-Sort-Naturally>=1.02:textproc/p5-Sort-Naturally \
@@ -24,7 +25,6 @@ RUN_DEPENDS=	p5-Crypt-Rijndael>=1.08:security/p5-Crypt-Rijndael \
 		p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-Clipboard>=0:x11/p5-Clipboard \
 		p5-Math-Random-ISAAC>=1.0.1:math/p5-Math-Random-ISAAC
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	kpcli

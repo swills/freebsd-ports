@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/p5-AnyEvent-Graphite/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-AnyEvent-Graphite/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	AnyEvent-Graphite
 PORTVERSION=	0.08
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Non-blocking Graphite client
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-AnyEvent>=4.15:devel/p5-AnyEvent \
 		p5-AnyEvent-SNMP>=1.0:net-mgmt/p5-AnyEvent-SNMP
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

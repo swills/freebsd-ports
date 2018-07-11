@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/devel/p5-Gearman-Client-Async/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Gearman-Client-Async/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Gearman-Client-Async
 PORTVERSION=	0.94
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Asynchronous client module for Gearman for Danga::Socket applications
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Danga-Socket>=0:devel/p5-Danga-Socket \
 		p5-Gearman>=0:devel/p5-Gearman
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Gearman-Server>=0:devel/p5-Gearman-Server
 
 USES=		perl5

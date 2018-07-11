@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 473992 2018-07-06 04:16:55Z wen $
+# $FreeBSD: head/lang/Makefile 474290 2018-07-09 19:35:33Z trasz $
 #
 
     COMMENT = Programming languages
@@ -23,6 +23,7 @@
     SUBDIR += bsh
     SUBDIR += bwbasic
     SUBDIR += c
+    SUBDIR += cbmbasic
     SUBDIR += ccl
     SUBDIR += cdent
     SUBDIR += ceylon

@@ -1,8 +1,8 @@
 # Created by: renchap@cocoa-x.com
-# $FreeBSD: head/net/rubygem-bunny/Makefile 446798 2017-07-28 02:41:09Z sunpoet $
+# $FreeBSD: head/net/rubygem-bunny/Makefile 474377 2018-07-10 15:39:47Z swills $
 
 PORTNAME=	bunny
-PORTVERSION=	2.7.0
+PORTVERSION=	2.9.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

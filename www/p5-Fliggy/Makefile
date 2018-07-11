@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Fliggy/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Fliggy/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Fliggy
 PORTVERSION=	0.009003
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Fliggy: Twiggy with inlined flash policy server
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Twiggy>0:www/p5-Twiggy
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-TCP>0:devel/p5-Test-TCP
 
 USES=		perl5

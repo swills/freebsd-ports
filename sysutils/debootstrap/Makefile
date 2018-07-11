@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/sysutils/debootstrap/Makefile 473689 2018-07-01 23:29:48Z lifanov $
+# $FreeBSD: head/sysutils/debootstrap/Makefile 474204 2018-07-08 22:25:04Z lifanov $
 
 PORTNAME=	debootstrap
-PORTVERSION=	1.0.104
+PORTVERSION=	1.0.106
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN/pool/main/d/${PORTNAME}
 DISTNAME=	${PORTNAME}_${PORTVERSION}

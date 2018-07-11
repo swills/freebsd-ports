@@ -1,8 +1,8 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/editors/joe/Makefile 451518 2017-10-08 10:17:59Z tobik $
+# $FreeBSD: head/editors/joe/Makefile 474095 2018-07-07 14:35:51Z tobik $
 
 PORTNAME=	joe
-PORTVERSION=	4.5
+PORTVERSION=	4.6
 PORTEPOCH=	1
 CATEGORIES?=	editors
 MASTER_SITES=	SF/joe-editor/JOE%20sources/joe-${PORTVERSION}

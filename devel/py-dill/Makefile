@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-dill/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/devel/py-dill/Makefile 474333 2018-07-10 05:22:58Z yuri $
 
 PORTNAME=	dill
-PORTVERSION=	0.2.5
+DISTVERSION=	0.2.8.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,9 +13,8 @@ COMMENT=	Serialize all of python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python tar:tgz
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
-
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

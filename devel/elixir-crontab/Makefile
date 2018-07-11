@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-crontab/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/elixir-crontab/Makefile 474129 2018-07-07 19:27:06Z olgeni $
 
 PORTNAME=	crontab
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/powder/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/games/powder/Makefile 474089 2018-07-07 14:14:54Z amdmi3 $
 
 PORTNAME=	powder
 PORTVERSION=	115
@@ -18,6 +18,8 @@ MAKE_JOBS_UNSAFE=yes
 
 BUILD_WRKSRC=	${WRKSRC}/port/linux
 
+CXXFLAGS+=	-Wno-c++11-narrowing
+
 PLIST_FILES=	bin/powder
 PORTDOCS=	README.TXT LICENSE.TXT CREDITS.TXT
 
@@ -32,7 +34,9 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${BUILD_WRKSRC}/powder ${STAGEDIR}${PREFIX}/bin/
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for f in ${PORTDOCS}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}/
 .endfor

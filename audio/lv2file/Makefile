@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/lv2file/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/lv2file/Makefile 474332 2018-07-10 05:19:22Z yuri $
 
 PORTNAME=	lv2file
-DISTVERSION=	0.82-1-19
+DISTVERSION=	0.84-31
 DISTVERSIONSUFFIX=	-gaed7c77
 CATEGORIES=	audio
 

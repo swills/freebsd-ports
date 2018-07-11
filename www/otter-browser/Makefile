@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/otter-browser/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/otter-browser/Makefile 474110 2018-07-07 17:14:46Z tcberner $
 
 PORTNAME=	otter-browser
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.99
+DISTVERSION=	0.9.99.1
 CATEGORIES=	www
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,18 +1,17 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/liblxqt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/liblxqt/Makefile 474277 2018-07-09 18:03:14Z jsm $
 
 PORTNAME=	liblxqt
 PORTVERSION=	0.13.0
 CATEGORIES=	devel
 MASTER_SITES=	LXQT
 
-MAINTAINER=	jesper@schmitz.computer
+MAINTAINER=	jsm@FreeBSD.org
 COMMENT=	Shared library for LXQt applications
 
 LICENSE=	LGPL21+
-LIB_DEPENDS=	libpolkit-qt5-core-1.so:sysutils/polkit-qt@qt5
 
-BROKEN_aarch64=		fails to compile: lxqtplugininfo.cpp:107:14: expected expression
+LIB_DEPENDS=	libpolkit-qt5-core-1.so:sysutils/polkit-qt@qt5
 
 USES=	cmake:outsource compiler:c++11-lib gettext kde:5 lxqt \
 	pkgconfig qt:5 tar:xz

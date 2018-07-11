@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 473998 2018-07-06 07:36:07Z olivier $
+# $FreeBSD: head/net/Makefile 474026 2018-07-06 17:50:13Z miwi $
 #
 
     COMMENT = Networking tools
@@ -1065,6 +1065,7 @@
     SUBDIR += py-ldap
     SUBDIR += py-ldap0
     SUBDIR += py-ldap3
+    SUBDIR += py-ldappool
     SUBDIR += py-ldaptor
     SUBDIR += py-libcloud
     SUBDIR += py-libdnet

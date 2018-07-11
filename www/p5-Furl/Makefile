@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Furl/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Furl/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Furl
 PORTVERSION=	3.07
@@ -13,11 +13,11 @@ COMMENT=	Perl extension of lightning-fast URL fetcher
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Accessor-Lite>0:devel/p5-Class-Accessor-Lite \
 	p5-HTTP-Parser-XS>=0.11:www/p5-HTTP-Parser-XS \
 	p5-Mozilla-CA>0:www/p5-Mozilla-CA
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires \
 		p5-Test-TCP>=2.11:devel/p5-Test-TCP \
 		p5-Plack>0:www/p5-Plack \

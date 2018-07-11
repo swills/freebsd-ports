@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/py-xopen/Makefile 455116 2017-11-29 16:00:39Z jwb $
+# $FreeBSD: head/archivers/py-xopen/Makefile 474083 2018-07-07 13:41:18Z jwb $
 
 PORTNAME=	xopen
-PORTVERSION=	0.2.1
+DISTVERSION=	0.3.5
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

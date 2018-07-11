@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-Bork/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-Bork/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DateTime-Format-Bork
 PORTVERSION=	0.02
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Formats datetimes for that guy from The Muppet Show
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Format-Builder>=0:devel/p5-DateTime-Format-Builder
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

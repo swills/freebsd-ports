@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Skinny-InflateColumn-DateTime/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Skinny-InflateColumn-DateTime/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Skinny-InflateColumn-DateTime
 PORTVERSION=	0.06
@@ -13,6 +13,7 @@ COMMENT=	Perl extension to inflate/deflate DateTime for DBIx::Skinny
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-DBD-SQLite>0:databases/p5-DBD-SQLite \
 	p5-DBIx-Skinny>=0.05:databases/p5-DBIx-Skinny \
@@ -20,7 +21,6 @@ RUN_DEPENDS=	\
 	p5-DateTime-Format-MySQL>0:devel/p5-DateTime-Format-MySQL \
 	p5-DateTime-Format-Strptime>0:devel/p5-DateTime-Format-Strptime \
 	p5-DateTime-TimeZone>0:devel/p5-DateTime-TimeZone
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-DBD-Mock>=0:databases/p5-DBD-Mock
 
 NO_ARCH=	yes

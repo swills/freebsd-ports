@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/converters/lua-iconv/Makefile 465705 2018-03-27 13:37:43Z vanilla $
+# $FreeBSD: head/converters/lua-iconv/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	iconv
 PORTVERSION=	7
@@ -14,6 +14,8 @@ COMMENT=	Iconv binding for Lua 5
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ABS64 against local symbol in readonly segment
 
 USES=		pkgconfig iconv lua
 

@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/comms/p5-SMS-Send-TW-emome/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/p5-SMS-Send-TW-emome/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	SMS-Send-TW-emome
 PORTVERSION=	0.04
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	SMS::Send driver for www.emome.net
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-SMS-Send>=0.03:comms/p5-SMS-Send \
 		p5-Crypt-SSLeay>=0.57:security/p5-Crypt-SSLeay \
 		p5-WWW-Mechanize>=1.20:www/p5-WWW-Mechanize \
 		p5-Text-Iconv>=:converters/p5-Text-Iconv
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

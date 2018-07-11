@@ -1,11 +1,11 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/mod_realdoc/Makefile 473019 2018-06-22 08:04:38Z yuri $
+# $FreeBSD: head/www/mod_realdoc/Makefile 474068 2018-07-07 10:12:15Z joneum $
 
 PORTNAME=	mod_realdoc
 PORTVERSION=	20170405
 CATEGORIES=	www
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Apache module to support atomic deploys
 
 LICENSE=	MIT

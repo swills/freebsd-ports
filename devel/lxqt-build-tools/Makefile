@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/lxqt-build-tools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/lxqt-build-tools/Makefile 474277 2018-07-09 18:03:14Z jsm $
 
 PORTNAME=	lxqt-build-tools
 PORTVERSION=	0.5.0
 CATEGORIES=	devel
 MASTER_SITES=	LXQT/${PORTNAME}
 
-MAINTAINER=	jesper@schmitz.computer
+MAINTAINER=	jsm@FreeBSD.org
 COMMENT=	Helpers CMake modules for LXQt
 
 LICENSE=	BSD3CLAUSE

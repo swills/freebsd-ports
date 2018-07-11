@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/p5-Geo-Coder-Multiple/Makefile 471654 2018-06-04 18:10:06Z sunpoet $
+# $FreeBSD: head/misc/p5-Geo-Coder-Multiple/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Geo-Coder-Multiple
 PORTVERSION=	0.60
@@ -14,8 +14,8 @@ COMMENT=	Perl module to tie together multiple Geo::Coder modules
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-List-Util-WeightedRoundRobin>=0:misc/p5-List-Util-WeightedRoundRobin
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

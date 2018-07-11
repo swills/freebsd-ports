@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-PassphraseColumn/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-PassphraseColumn/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DBIx-Class-PassphraseColumn
 PORTVERSION=	0.02
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	fw@moov.de
 COMMENT=	Automatically hash password/passphrase columns
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBIx-Class-DynamicDefault>=0.03:databases/p5-DBIx-Class-DynamicDefault \
 		p5-DBIx-Class>=0.08009:databases/p5-DBIx-Class
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

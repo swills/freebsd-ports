@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-pysmb/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-pysmb/Makefile 474385 2018-07-10 16:58:02Z rm $
 
 PORTNAME=	pysmb
-PORTVERSION=	1.1.22
+PORTVERSION=	1.1.23
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP \
 		http://miketeo.net/files/Projects/${PORTNAME}/
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${PY_FLAVOR}
 OPTIONS_DEFINE=	DOCS
 
 NO_ARCH=	yes
-USES=		python
+USES=		python zip
 USE_PYTHON=	autoplist concurrent distutils
 PORTDOCS=	*
 

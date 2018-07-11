@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/highwayhash/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/security/highwayhash/Makefile 474222 2018-07-09 03:33:35Z yuri $
 
 PORTNAME=	highwayhash
-PORTVERSION=	g20170512
+PORTVERSION=	g20180626
 CATEGORIES=	security
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -19,8 +19,11 @@ ONLY_FOR_ARCHS_REASON=	Assembly is implemented only for specific architectures i
 USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
-GH_TAGNAME=	2b666ae
+GH_TAGNAME=	9099074
 USE_LDCONFIG=	yes
+
+# workaround for https://github.com/google/highwayhash/issues/69
+MAKE_ARGS=	INCDIR=${PREFIX}/include XLIBDIR=${PREFIX}/lib
 
 post-patch:
 	# Install flags upstream issue: https://github.com/google/highwayhash/issues/58

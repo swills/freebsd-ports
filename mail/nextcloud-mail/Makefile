@@ -1,9 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/mail/nextcloud-mail/Makefile 468708 2018-04-30 15:43:16Z brnrd $
+# $FreeBSD: head/mail/nextcloud-mail/Makefile 474084 2018-07-07 13:50:39Z brnrd $
 
 PORTNAME=	mail
-PORTVERSION=	0.7.10
-PORTREVISION=	1
+PORTVERSION=	0.8.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/

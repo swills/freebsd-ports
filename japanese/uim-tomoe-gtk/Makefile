@@ -1,9 +1,9 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/japanese/uim-tomoe-gtk/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/japanese/uim-tomoe-gtk/Makefile 474103 2018-07-07 15:57:34Z nobutaka $
 
 PORTNAME=	uim-tomoe-gtk
 PORTVERSION=	0.6.0
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	japanese
 MASTER_SITES=	SF/tomoe/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

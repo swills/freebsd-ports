@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/databases/p5-Class-DBI-Loader/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-Loader/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Class-DBI-Loader
 PORTVERSION=	0.34
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dynamic definition of Class::DBI sub classes
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Class-DBI>=0.89:databases/p5-Class-DBI \
 		p5-DBI>=1.3:databases/p5-DBI \
 		p5-Lingua-EN-Inflect>=0:textproc/p5-Lingua-EN-Inflect
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

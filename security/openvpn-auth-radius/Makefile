@@ -1,9 +1,9 @@
 # Created by: Mikhail T. <m.tsatsenko@gmail.com>
-# $FreeBSD: head/security/openvpn-auth-radius/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/security/openvpn-auth-radius/Makefile 474240 2018-07-09 08:36:02Z meta $
 
 PORTNAME=	openvpn-auth-radius
 PORTVERSION=	2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	http://www.nongnu.org/radiusplugin/ \
 		http://svn-cache.ipcopaddons.org/

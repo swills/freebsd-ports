@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/textproc/ibus/Makefile 464623 2018-03-15 18:54:58Z bdrewery $
+# $FreeBSD: head/textproc/ibus/Makefile 474138 2018-07-07 21:06:14Z yuri $
 
 PORTNAME=	ibus
 DISTVERSION=	1.5.17
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/${PORTVERSION}/:DEFAULT
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}:DEFAULT

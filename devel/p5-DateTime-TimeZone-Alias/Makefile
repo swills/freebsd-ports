@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-TimeZone-Alias/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-TimeZone-Alias/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	DateTime-TimeZone-Alias
 PORTVERSION=	0.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create aliases for DateTime timezones
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DateTime-TimeZone>=0:devel/p5-DateTime-TimeZone \
 		p5-DateTime>=0:devel/p5-DateTime
 

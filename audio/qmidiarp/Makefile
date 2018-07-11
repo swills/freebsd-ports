@@ -1,11 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/qmidiarp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/qmidiarp/Makefile 474334 2018-07-10 06:02:57Z yuri $
 
 PORTNAME=	qmidiarp
 DISTVERSIONPREFIX=	qmidiarp-
-DISTVERSION=	0.6.4-26
-PORTREVISION=	1
-DISTVERSIONSUFFIX=	-g1a15c13
+DISTVERSION=	0.6.5
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -32,14 +30,18 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-qt5 --enable-translations=yes
 INSTALLS_ICONS=	yes
 
+CXXFLAGS+=	-Duint=uint32_t # workaround for https://sourceforge.net/p/qmidiarp/bugs/27/
+
 OPTIONS_DEFINE=	NLS LV2
 OPTIONS_DEFAULT=LV2
 OPTIONS_SUB=	yes
+
 LV2_DESC=	Build and install LV2 plugins
 LV2_CONFIGURE_OFF=	--disable-lv2plugins
+
 NLS_CONFIGURE_ON=	--enable-translations
 
 post-install-LV2-on:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lv2/qmidiarp_[lsa][fer][oqp].lv2/*.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lv2/qmidiarp_[lsa][fer][oqp].lv2/*.so
 
 .include <bsd.port.mk>

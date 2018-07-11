@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Business-OnlinePayment-Beanstream/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Business-OnlinePayment-Beanstream/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Business-OnlinePayment-Beanstream
 PORTVERSION=	0.02
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Business::OnlinePayment backend module for Beanstream
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Business-OnlinePayment>=0:finance/p5-Business-OnlinePayment \
 		p5-URI>=0:net/p5-URI
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

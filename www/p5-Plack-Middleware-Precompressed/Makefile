@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-Precompressed/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-Precompressed/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Plack-Middleware-Precompressed
 PORTVERSION=	1.103
@@ -13,10 +13,10 @@ COMMENT=	Perl extension to serve pre-gzipped content to capable clients
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Plack>0:www/p5-Plack \
 	p5-Array-RefElem>0:misc/p5-Array-RefElem
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

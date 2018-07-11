@@ -1,5 +1,5 @@
 # Created by: Timur Bakeyev <bat@cpan.org>
-# $FreeBSD: head/converters/p5-Net-IDN-Nameprep/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-Net-IDN-Nameprep/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Net-IDN-Nameprep
 PORTVERSION=	1.102
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Normalization of domain names (Nameprep, RFC 3491)
 
-RUN_DEPENDS=	p5-Unicode-Stringprep>=0:converters/p5-Unicode-Stringprep
-BUILD_DEPENDS:=	${RUN_DEPENDS} \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
 		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
+RUN_DEPENDS=	p5-Unicode-Stringprep>=0:converters/p5-Unicode-Stringprep
 
 USES=		perl5
 USE_PERL5=	modbuild

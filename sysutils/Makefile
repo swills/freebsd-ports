@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 473804 2018-07-03 08:09:25Z linimon $
+# $FreeBSD: head/sysutils/Makefile 474415 2018-07-10 22:20:36Z rm $
 #
 
     COMMENT = System utilities
@@ -618,7 +618,6 @@
     SUBDIR += log_analysis
     SUBDIR += logrotate
     SUBDIR += logstalgia
-    SUBDIR += logstash
     SUBDIR += logstash-forwarder
     SUBDIR += logstash5
     SUBDIR += logstash6
@@ -1035,6 +1034,7 @@
     SUBDIR += realsync
     SUBDIR += recoverdm
     SUBDIR += reed
+    SUBDIR += reggae
     SUBDIR += rej
     SUBDIR += relaxconf
     SUBDIR += rename

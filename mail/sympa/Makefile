@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/mail/sympa/Makefile 470654 2018-05-22 19:30:50Z krion $
+# $FreeBSD: head/mail/sympa/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	sympa
 DISTVERSION=	6.2.32
@@ -10,7 +10,7 @@ COMMENT=	Sympa is an electronic mailing list manager
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \
 	p5-DBI>=0:databases/p5-DBI	\

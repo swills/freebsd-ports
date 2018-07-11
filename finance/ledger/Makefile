@@ -1,11 +1,14 @@
 # Created by: wcarey
-# $FreeBSD: head/finance/ledger/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/finance/ledger/Makefile 474254 2018-07-09 13:26:13Z jbeich $
 
 PORTNAME=	ledger
 PORTVERSION=	3.1.1
 DISTVERSIONPREFIX=	v
 PORTREVISION=	10
 CATEGORIES=	finance
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	c18a55f9ef99.patch:-p1
 
 MAINTAINER=	woodycarey@hotmail.com
 COMMENT=	John Wiegley's command line accounting program

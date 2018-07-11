@@ -1,8 +1,7 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/net-mgmt/zabbix2-agent/Makefile 415742 2016-05-23 20:35:01Z amdmi3 $
+# $FreeBSD: head/net-mgmt/zabbix2-agent/Makefile 474259 2018-07-09 14:06:32Z dbaio $
 
 PORTNAME=	zabbix2
-PORTREVISION=	1
 PKGNAMESUFFIX=	-agent
 CATEGORIES=	net-mgmt
 

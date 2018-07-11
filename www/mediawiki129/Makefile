@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/www/mediawiki129/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/mediawiki129/Makefile 474051 2018-07-07 00:48:29Z wen $
 
 PORTNAME=	mediawiki
 PORTVERSION=	1.29.2
@@ -12,7 +12,10 @@ COMMENT=	Wiki engine used by Wikipedia
 
 LICENSE=	GPLv2
 
-CONFLICTS=	mediawiki12[378]-[0-9]* mediawiki130-[0-9]*
+CONFLICTS=	mediawiki127-[0-9]* mediawiki13[01]-[0-9]*
+
+DEPRECATED=			Deprecated by upstream
+EXPIRATION_DATE=	2018-10-07
 
 USES=		php:web shebangfix
 SHEBANG_FILES=	maintenance/dev/*.sh \

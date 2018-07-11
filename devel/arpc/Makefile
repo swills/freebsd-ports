@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/devel/arpc/Makefile 460689 2018-02-02 10:04:53Z amdmi3 $
+# $FreeBSD: head/devel/arpc/Makefile 474151 2018-07-08 01:30:03Z linimon $
 
 PORTNAME=	arpc
 DISTVERSIONPREFIX=	v
@@ -12,16 +12,13 @@ COMMENT=	GRPC-like RPC library that supports file descriptor passing
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+IGNORE_FreeBSD_10=	requires various C++17 features
+
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyPEG2>=2.15.2:textproc/py-pyPEG2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}toposort>=1.5:devel/py-toposort@${PY_FLAVOR}
 LIB_DEPENDS=	libargdata.so:devel/argdata
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyPEG2>=2.15.2:textproc/py-pyPEG2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}toposort>=1.5:devel/py-toposort@${PY_FLAVOR}
-
-BROKEN_armv6=		fails to build: *** Signal 11
-BROKEN_armv7=		fails to build: *** Signal 11
-
-IGNORE_FreeBSD_10=	requires various C++17 features
 
 USES=		cmake localbase:ldflags python:3.4+ shebangfix
 SHEBANG_FILES=	scripts/aprotoc.py

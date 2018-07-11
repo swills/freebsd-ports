@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Ark/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Ark/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Ark
 PORTVERSION=	0.1.r1
@@ -11,7 +11,7 @@ DISTNAME=	Ark-0.001000_001
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl web application framework
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Data-Inheritable>0:devel/p5-Class-Data-Inheritable \
 	p5-Class-Method-Modifiers-Fast>0:devel/p5-Class-Method-Modifiers-Fast \

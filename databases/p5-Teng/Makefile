@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-Teng/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Teng/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Teng
 PORTVERSION=	0.28
@@ -13,6 +13,7 @@ COMMENT=	Perl extension for simple DBI wrapper/ORMapper
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Accessor-Lite>=0.05:devel/p5-Class-Accessor-Lite \
 	p5-Class-Load>=0.06:devel/p5-Class-Load \
@@ -22,7 +23,6 @@ RUN_DEPENDS=	\
 	p5-Data-Page>0:databases/p5-Data-Page \
 	p5-Data-Page-NoTotalEntries>=0.02:devel/p5-Data-Page-NoTotalEntries \
 	p5-SQL-Maker>=0.14:databases/p5-SQL-Maker
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	\
 	p5-DBD-SQLite>=1.12:databases/p5-DBD-SQLite \
 	p5-Test-Mock-Guard>=0.10:devel/p5-Test-Mock-Guard \

@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl/Makefile 472245 2018-06-12 13:43:28Z brnrd $
+# $FreeBSD: head/security/openssl/Makefile 474428 2018-07-11 08:37:43Z amdmi3 $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.2o
@@ -62,6 +62,7 @@ USE_PERL5=	build
 MAKE_ARGS+=	WHOLE_ARCHIVE_FLAG=--whole-archive
 MAKE_ENV+=	LIBRPATH="${PREFIX}/lib" GREP_OPTIONS=
 SUB_FILES=	pkg-message
+TEST_TARGET=	test
 
 MAKE_JOBS_UNSAFE=	yes
 
@@ -154,10 +155,5 @@ post-install-SHARED-on:
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/openssl.txt ${STAGEDIR}${DOCSDIR}/
-
-test: build
-	cd ${WRKSRC} && ${MAKE} test
-
-regression-test:	test
 
 .include <bsd.port.post.mk>

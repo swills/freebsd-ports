@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-rnc2rng/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-rnc2rng/Makefile 474331 2018-07-10 05:13:50Z yuri $
 
 PORTNAME=	rnc2rng
-DISTVERSION=	2.6
+DISTVERSION=	2.6.1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

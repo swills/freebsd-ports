@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-REST-Google/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-REST-Google/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	REST-Google
 PORTVERSION=	1.0.8
@@ -12,12 +12,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Access Google REST (aka AJAX) API from Perl
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-Class-Accessor>0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>0:devel/p5-Class-Data-Inheritable \
 		p5-URI>=1.35:net/p5-URI \
 		p5-JSON-Any>=1.16:converters/p5-JSON-Any
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

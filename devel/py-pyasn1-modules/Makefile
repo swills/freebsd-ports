@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pyasn1-modules/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pyasn1-modules/Makefile 474384 2018-07-10 16:57:29Z rm $
 
 PORTNAME=	pyasn1-modules
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/calculix-ccx/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/calculix-ccx/Makefile 474304 2018-07-09 21:05:27Z riggs $
 
 PORTNAME=	ccx
-PORTVERSION=	2.13
-PORTREVISION=	1
+PORTVERSION=	2.14
 CATEGORIES=	cad
 MASTER_SITES=	http://www.dhondt.de/
 PKGNAMEPREFIX=	CalculiX-
@@ -17,6 +16,7 @@ COMMENT=	Three-Dimensional Structural Finite Element Program
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libarpack.so:math/arpack	\
+		libmetis.so:math/metis4 	\
 		libspooles.so:math/spooles	\
 		libtaucs.so:math/taucs
 
@@ -35,16 +35,6 @@ CCX_VER=	ccx_${PORTVERSION}
 WRKSRC=		${WRKDIR}/CalculiX/${CCX_VER}/src
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
-
-OPTIONS_SINGLE=	METIS
-OPTIONS_SINGLE_METIS=	METIS4 METISEDF
-OPTIONS_DEFAULT=	METISEDF
-
-METIS4_DESC=	Reference Metis4 Implementation
-METIS4_DEPENDS=	libmetis.so:math/metis4
-
-METISEDF_DESC=	EDF Metis Variant
-METISEDF_DEPENDS=	libmetis.so:math/metis-edf
 
 .include <bsd.port.options.mk>
 

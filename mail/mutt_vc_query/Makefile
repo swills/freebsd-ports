@@ -1,5 +1,5 @@
 # Created by: Oliver Braun
-# $FreeBSD: head/mail/mutt_vc_query/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/mutt_vc_query/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	mutt_vc_query
 PORTVERSION=	002
@@ -9,8 +9,8 @@ MASTER_SITES=	SF/rolo/${PORTNAME}/${PORTVERSION}
 MAINTAINER=	jgh@FreeBSD.org
 COMMENT=	vCard query utility for mutt
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	libvc>=003:devel/libvc
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		tar:bzip2
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/databases/p5-Class-DBI-SAK/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-SAK/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Class-DBI-SAK
 PORTVERSION=	1.4
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Class::DBI Swiss Army Knife (SAK)
 
-BUILD_DEPENDS:=	${RUN_DEPENDS} \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
 		p5-mixin>=0:devel/p5-mixin
 RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
 		p5-Class-DBI-AbstractSearch>=0:databases/p5-Class-DBI-AbstractSearch \

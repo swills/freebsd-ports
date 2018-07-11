@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/databases/p5-Class-DBI-FromCGI/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-FromCGI/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Class-DBI-FromCGI
 PORTVERSION=	1.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Update Class::DBI data using CGI::Untaint
 
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
 		p5-CGI-Untaint>=0:www/p5-CGI-Untaint
 

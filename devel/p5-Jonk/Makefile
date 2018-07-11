@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Jonk/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Jonk/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Jonk
 PORTVERSION=	0.05
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for simple job tank manager
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-DBI>0:databases/p5-DBI \
 	p5-Try-Tiny>0:lang/p5-Try-Tiny
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

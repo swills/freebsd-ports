@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Model/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Model/Makefile 474242 2018-07-09 08:40:17Z mat $
 
 PORTNAME=	Data-Model
 PORTVERSION=	0.00008
@@ -10,12 +10,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for model interface which had more data sources unified
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Class-Trigger>0:devel/p5-Class-Trigger \
 	p5-DBD-SQLite>0:databases/p5-DBD-SQLite \
 	p5-DBI>0:databases/p5-DBI \
 	p5-Params-Validate>0:devel/p5-Params-Validate
-BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-Sub-Uplevel>0:devel/p5-Sub-Uplevel \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \

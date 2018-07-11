@@ -1,5 +1,5 @@
 # Created by: Dan Pelleg <daniel+boodler@pelleg.org>
-# $FreeBSD: head/audio/boodler/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/audio/boodler/Makefile 474058 2018-07-07 06:44:07Z linimon $
 
 PORTNAME=	boodler
 PORTVERSION=	1.5.3
@@ -13,6 +13,8 @@ COMMENT=	Programmable soundscape tool
 
 LICENSE=	LGPL20 # Main program only, sounds have various copyrights
 LICENSE_FILE=	${WRKSRC}/LGPL
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol: _Py_NoneStruct in readonly segment
 
 RESTRICTED=	Not for commercial use
 RESTRICTED_FILES=	boodler-snd-021902.tar.gz
