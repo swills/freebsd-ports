@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/amd64-binutils/Makefile 466933 2018-04-10 01:00:30Z kan $
+# $FreeBSD: head/devel/amd64-binutils/Makefile 474460 2018-07-11 16:22:54Z jhb $
 
 COMMENT=	GNU binutils for amd64 cross-development
 PKGNAMEPREFIX=	amd64-
@@ -7,6 +7,5 @@ PLIST=	${.CURDIR}/pkg-plist
 MASTERDIR=	${.CURDIR}/../binutils
 
 BUTARGET=	x86_64-unknown-${OPSYS:tl}${OSREL}
-NAMEDTARGET=	amd64-${OPSYS:tl}
 
 .include "${MASTERDIR}/Makefile"
