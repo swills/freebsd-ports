@@ -1,0 +1,7 @@
+This is a port of the ix.io reference client. It is a simple bash function which
+could just as easily be put in a .bashrc.
+
+ix.io is a pastebin-like service which isn't yet open source but provides a clean
+interface from curl.
+
+WWW: http://ix.io
