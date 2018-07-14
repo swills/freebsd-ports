@@ -44,6 +44,7 @@ GL_ACCOUNT=	gitlab-org
 GL_COMMIT=	90ec422b0e76840075010476898637a92f287245
 
 post-patch:
+	${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|" ${WRKSRC}/config.toml.example
 	${MV} ${WRKSRC}/config.toml.example ${WRKSRC}/config.toml.sample
 
 do-install:
