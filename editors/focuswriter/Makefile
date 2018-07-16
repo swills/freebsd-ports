@@ -26,7 +26,9 @@ USE_QT=		concurrent core gui multimedia network printsupport widgets \
 PORTDATA=	*
 PORTDOCS=	ChangeLog CREDITS README
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	CACHE_ICONS DOCS
+CACHE_ICONS_DESC=	Update icon cache after installation (GTK+)
+CACHE_ICONS_RUN_DEPENDS=	${LOCALBASE}/bin/gtk-update-icon-cache:graphics/gtk-update-icon-cache
 
 post-patch:
 	@${REINPLACE_CMD} -e '/INSTALLS/s/man //' \
@@ -35,6 +37,13 @@ post-patch:
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/resources/unix/focuswriter.1 \
 		${STAGEDIR}${MANPREFIX}/man/man1
+
+post-install-CACHE_ICONS-on:
+.for subdir in hicolor
+	@${ECHO_CMD} "@rmtry share/icons/${subdir}/icon-theme.cache" >> ${TMPPLIST}
+	@${ECHO_CMD} "@postexec ${LOCALBASE}/bin/gtk-update-icon-cache -q -f %D/share/icons/${subdir} 2>/dev/null || ${TRUE}" >> ${TMPPLIST}
+	@${ECHO_CMD} "@postunexec ${LOCALBASE}/bin/gtk-update-icon-cache -q -f %D/share/icons/${subdir} 2>/dev/null || ${TRUE}" >> ${TMPPLIST}
+.endfor
 
 post-install-DOCS-on:
 	cd ${WRKSRC} && ${COPYTREE_SHARE} "${PORTDOCS}" ${STAGEDIR}${DOCSDIR}
