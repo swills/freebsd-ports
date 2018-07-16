@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	goffice
-PORTVERSION=	0.10.34
+PORTVERSION=	0.10.39
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	010
@@ -13,7 +13,7 @@ COMMENT=	GLib/GTK+ set of document centric objects and utilities
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USE_GNOME=	gtk30 intlhack introspection:build libgsf librsvg2 libxslt
+USE_GNOME=	cairo gtk30 intlhack introspection:build libgsf librsvg2 libxslt
 USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_XORG=	xrender xext
 GNU_CONFIGURE=	yes
