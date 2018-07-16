@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gnumeric
-PORTVERSION=	1.12.28
-PORTREVISION=	1
+PORTVERSION=	1.12.39
 CATEGORIES=	math gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -14,15 +13,15 @@ COMMENT=	GNOME spreadsheet program
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	rarian-sk-config:textproc/rarian
+BUILD_DEPENDS=	itstool:textproc/itstool \
+		rarian-sk-config:textproc/rarian
 LIB_DEPENDS=	libgoffice-0.10.so:devel/goffice010 \
 		libpsiconv.so:converters/psiconv
 RUN_DEPENDS=	rarian-sk-config:textproc/rarian
 
 USES=		cpe desktop-file-utils gettext gmake libtool pathfix pkgconfig \
 		python:2.7 shebangfix tar:xz
-USE_GNOME=	intlhack libgsf pygobject3
-INSTALLS_OMF=	yes
+USE_GNOME=	cairo gtk30 intlhack libgsf pygobject3
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
