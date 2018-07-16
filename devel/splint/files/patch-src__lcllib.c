@@ -1,6 +1,6 @@
---- src/lcllib.c.orig	Wed Oct 30 17:51:13 2002
-+++ src/lcllib.c	Wed Oct 30 22:37:48 2002
-@@ -49,13 +49,7 @@
+--- src/lcllib.c.orig	2007-07-13 22:42:49 UTC
++++ src/lcllib.c
+@@ -51,13 +51,7 @@
  extern /*:open:*/ /*@dependent@*/ FILE *yyin;
  /*@=incondefs@*/ /*@=redecl@*/
  
@@ -15,7 +15,7 @@
  {
    "dirent",
    "fcntl",
-@@ -77,7 +71,10 @@
+@@ -79,7 +73,10 @@ static ob_mstring posixlibs[NUMPOSIXLIBS
    "utime"
  } ;
  
@@ -27,7 +27,7 @@
  {
    "assert", 
    "complex"
-@@ -85,7 +82,10 @@
+@@ -87,7 +84,10 @@ static ob_mstring stdlibs[NUMLIBS] =
    "errno",
    "fenv",
    "float",
@@ -38,13 +38,13 @@
    "iso646",
    "limits",
    "locale",
-@@ -105,6 +105,9 @@
-   "wchar",
+@@ -108,6 +108,9 @@ static ob_mstring stdlibs[NUMLIBS] =
    "wctype"
  } ;
-+
+ 
 +/*@constant int NUMLIBS; @*/
 +# define NUMLIBS (sizeof(stdlibs) / sizeof(stdlibs[0]))
- 
++
  static bool loadLCDFile (FILE * p_f, cstring p_name);
  
+ bool

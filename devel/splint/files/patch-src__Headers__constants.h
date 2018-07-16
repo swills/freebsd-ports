@@ -1,5 +1,5 @@
---- src/Headers/constants.h.orig	2004-08-01 03:04:28.000000000 +0800
-+++ src/Headers/constants.h	2007-07-25 21:58:56.000000000 +0800
+--- src/Headers/constants.h.orig	2007-07-13 22:42:49 UTC
++++ src/Headers/constants.h
 @@ -101,7 +101,7 @@
  # define DEFAULT_SYSTEMDIR "/os2/"
  # else                            
