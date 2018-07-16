@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	nzbget
-PORTVERSION=	19.1
-PORTREVISION=	2
+PORTVERSION=	20.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	news
 
@@ -14,10 +13,11 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libxml2.so:textproc/libxml2
 
-USES=		compiler:c++14-lang ncurses pkgconfig shebangfix ssl
+USES=		compiler:c++14-lang gmake ncurses pkgconfig shebangfix ssl
 USE_RC_SUBR=	nzbget
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-libcurses-includes=${NCURSESINC} \
+CONFIGURE_ARGS=	MAKE=${LOCALBASE}/bin/gmake \
+		--with-libcurses-includes=${NCURSESINC} \
 		--with-libcurses-libraries=${NCURSESLIB} \
 		--with-tlslib=OpenSSL \
 		--with-openssl-includes=${OPENSSLINC} \
