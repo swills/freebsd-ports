@@ -3,8 +3,7 @@
 #   $MCom: ports/trunk/accessibility/accerciser/Makefile 19980 2014-10-17 06:01:57Z gusi $
 
 PORTNAME=	accerciser
-PORTVERSION=	3.14.0
-PORTREVISION=	1
+PORTVERSION=	3.22.0
 CATEGORIES=	accessibility gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
