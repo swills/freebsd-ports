@@ -1,12 +1,10 @@
 # $FreeBSD$
 
 PORTNAME=	poppler-qt4
-PORTVERSION=	0.18.1
-PORTREVISION=	9
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.24.0
 CATEGORIES=	graphics python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	python-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	martin.dieringer@gmx.de
 COMMENT=	Python bindings for the Poppler-Qt4 PDF rendering library
@@ -19,5 +17,12 @@ LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
 USES=		compiler:c++11-lang pkgconfig pyqt:4 python
 USE_PYQT=	gui xml sip_build
 USE_PYTHON=	distutils autoplist
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	wbsoft
+GH_PROJECT=	python-${PORTNAME}
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}/${PYTHON_SITELIBDIR}/popplerqt4.so
 
 .include <bsd.port.mk>
