@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pitivi
-PORTVERSION=	0.13.4.2
-PORTREVISION=	4
+PORTVERSION=	0.99
 CATEGORIES=	multimedia
 MASTER_SITES=	GNOME
 
@@ -12,17 +11,16 @@ COMMENT=	Gstreamer based non-linear audio/video editor
 
 LICENSE=	LGPL21+
 
+LIB_DEPENDS+=	libpython3.5m.so:lang/python35
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}goocanvas>=0:graphics/py-goocanvas@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}goocanvas>=0:graphics/py-goocanvas@${PY_FLAVOR} \
+		${LOCALBASE}/bin/gst-validate-1.0:multimedia/gstreamer1-validate
 
-USES=		gettext gmake localbase pkgconfig python:2.7 shebangfix tar:bzip2
+USES=		desktop-file-utils gettext localbase meson ninja pkgconfig python shebangfix tar:xz
 SHEBANG_FILES=	bin/pitivi.in
-USE_GNOME=	intltool pygtk2
-USE_GSTREAMER=	gnonlin python good
+USE_GNOME=	cairo intltool pygtk2
+USE_GSTREAMER1=	yes
 INSTALLS_ICONS=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--localstatedir=/var
 USE_LDCONFIG=	yes
-NO_ARCH=	yes
 
 .include <bsd.port.mk>
