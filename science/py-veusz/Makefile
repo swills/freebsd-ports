@@ -8,7 +8,7 @@ CATEGORIES=	science kde
 MASTER_SITES=	http://download.gna.org/veusz/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	devel@stasyan.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Scientific plotting package
 
 LICENSE=	GPLv2
