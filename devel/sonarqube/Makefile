@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	sonarqube
-PORTVERSION=	6.2
+PORTVERSION=	6.7.1
 CATEGORIES=	devel www java
 MASTER_SITES=	http://sonarsource.bintray.com/Distribution/sonarqube/
 
@@ -14,6 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libbiconv.so:converters/iconv
 RUN_DEPENDS=	javaservicewrapper:sysutils/javaservicewrapper
+IGNORE_FILES=	! -name
 
 NO_ARCH=	yes
 NO_BUILD=	yes
@@ -74,16 +75,26 @@ do-install:
 		-e 's|-p $$pid -o args|ww $$pid|' \
 		-e 's|=\"./wrapper\"|=\"${SQ_JSW}/bin/wrapper\"|' \
 		${STAGEDIR}${SQ_HOME}/bin/freebsd/${SQ_FILE}
-	@${MV} -f ${STAGEDIR}${SQ_HOME}/bin/freebsd/${SQ_FILE} \
-		${STAGEDIR}${SQ_HOME}/bin/freebsd/${SQ_FILE}.sample
-	@${MV} -f ${STAGEDIR}${SQ_HOME}/conf/sonar.properties \
-		${STAGEDIR}${SQ_HOME}/conf/sonar.properties.sample
-	@${MV} -f ${STAGEDIR}${SQ_HOME}/conf/wrapper.conf \
-	${STAGEDIR}${SQ_HOME}/conf/wrapper.conf.sample
 	@${RM} -drf ${STAGEDIR}${SQ_HOME}/bin/linux-x86-32
 	@${RM} -drf ${STAGEDIR}${SQ_HOME}/bin/linux-x86-64
 	@${RM} -drf ${STAGEDIR}${SQ_HOME}/bin/macosx-universal-64
 	@${RM} -drf ${STAGEDIR}${SQ_HOME}/bin/windows-x86-32
 	@${RM} -drf ${STAGEDIR}${SQ_HOME}/bin/windows-x86-64
+	@${RM} -drf ${STAGEDIR}${SQ_HOME}/conf/wrapper.conf.orig
+	@${RM} -drf ${STAGEDIR}${SQ_HOME}/conf/sonar.properties.orig
+	@${RM} -drf ${STAGEDIR}${SQ_HOME}/conf/sonar.properties.bak
+	@${RM} -drf ${STAGEDIR}${SQ_HOME}/conf/wrapper.conf.bak
+	@${RM} -drf ${STAGEDIR}${SQ_HOME}/elasticsearch/bin/elasticsearch.orig
+	@${CHMOD} 755 ${STAGEDIR}${SQ_HOME}/bin/freebsd/sonar.sh
+	@${CHMOD} 755 ${STAGEDIR}${SQ_HOME}/elasticsearch/bin/elasticsearch
+
+
+post-install:
+	@-${MKDIR} -p /var/run/sonarqube ${SQ_HOME}/extensions/downloads \
+		${SQ_HOME}/extensions/plugins ${SQ_HOME}/logs
+	@-${CHOWN} www:www /var/run/sonarqube
+	@-${CHOWN} -R www:www ${SQ_HOME}/extensions/downloads
+	@-${CHOWN} -R www:www ${SQ_HOME}/extensions/plugins
+	@-${CHOWN} -R www:www ${SQ_HOME}/logs
 
 .include <bsd.port.mk>
