@@ -54,6 +54,7 @@ CONFIGURE_ARGS+=	--with-openssl=${OPENSSLBASE}
 # Try to find appropriate GSSAPI libs
 .if defined(KRB5_HOME) && exists(${KRB5_HOME}/lib/libgssapi_krb5.so)
 CONFIGURE_ARGS+=	--with-gssapi="${KRB5_HOME}"
+CPPFLAGS+=		-Dgsskrb5_register_acceptor_identity=krb5_gss_register_acceptor_identity
 .elif defined(HEIMDAL_HOME) && exists(${HEIMDAL_HOME}/lib/libgssapi.so)
 CONFIGURE_ARGS+=	--with-gssapi="${HEIMDAL_HOME}"
 .elif exists(/usr/lib/libkrb5.so) && exists(/usr/bin/krb5-config)
