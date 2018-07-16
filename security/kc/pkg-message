@@ -1,0 +1,4 @@
+IMPORTANT:
+kc v2.4 has introduced a new database file format that is incompatible
+with the older one (<2.4).
+Make sure to dump all your data to files before upgrading to v2.4.
