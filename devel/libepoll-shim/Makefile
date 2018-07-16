@@ -1,8 +1,30 @@
+# $FreeBSD$
+
+PORTNAME=	pyudev
+PORTVERSION=	0.21.0
+CATEGORIES=	devel python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	python@FreeBSD.org
+COMMENT=	Pure Python libudev binding
+
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS=	libudev.so:devel/libudev-devd
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+
+USES=		python
+USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
+
+.include <bsd.port.mk>
 # Created by: Johannes Lundberg <johalun0@gmail.com>
 # $FreeBSD$
 
 PORTNAME=	libepoll-shim
-PORTVERSION=	0.0.20161220
+PORTVERSION=	0.0.20171213
 CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org
@@ -11,9 +33,9 @@ COMMENT=	epoll shim implemented using kevent
 LICENSE=	MIT
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	FreeBSDDesktop
+GH_ACCOUNT=	jiixyj
 GH_PROJECT=	epoll-shim
-GH_TAGNAME=	c04b26b
+GH_TAGNAME=	d7abd75
 
 USE_LDCONFIG=	yes
 
