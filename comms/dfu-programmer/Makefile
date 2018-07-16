@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	dfu-programmer
-PORTVERSION=	0.5.5
+PORTVERSION=	0.7.2
 CATEGORIES=	comms
 MASTER_SITES=	SF
 
