@@ -3,6 +3,7 @@
 
 PORTNAME=	tox
 PORTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -27,6 +28,17 @@ USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
+PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
+DOCS_VARS=		PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	@(cd ${WRKSRC}/doc/build/html && \
+		${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR} \
+			"! -name .buildinfo -and ! -name objects.inv")
 
 do-test:
 	@cd ${WRKSRC} && ${LOCALBASE}/bin/pytest-${PYTHON_VER} -v -n ${MAKE_JOBS_NUMBER}
