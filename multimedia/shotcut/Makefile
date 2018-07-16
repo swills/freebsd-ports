@@ -3,7 +3,6 @@
 PORTNAME=	shotcut
 PORTVERSION=	${FULLVERSION:R}
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
 CATEGORIES=	multimedia
 
 MAINTAINER=	avilla@FreeBSD.org
@@ -19,7 +18,7 @@ RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
 USE_GITHUB=	yes
 GH_ACCOUNT=	mltframework
 # Needed to be able to correctly check for updates in-app.
-FULLVERSION=	17.02.01
+FULLVERSION=	18.06.02
 
 USES=		pkgconfig qmake qt:5
 USE_QT=		buildtools_build concurrent_build core \
@@ -64,10 +63,5 @@ post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/64x64/apps
 	${INSTALL_DATA} ${WRKSRC}/icons/${PORTNAME}-logo-64.png \
 		${STAGEDIR}${PREFIX}/share/icons/hicolor/64x64/apps/${PORTNAME}.png
-
-post-install-NLS-on:
-	${MKDIR} ${STAGEDIR}${DATADIR}/translations
-	${INSTALL_DATA} ${WRKSRC}/translations/*.qm \
-		${STAGEDIR}${DATADIR}/translations
 
 .include <bsd.port.mk>
