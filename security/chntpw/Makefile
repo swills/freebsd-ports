@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	chntpw
-PORTVERSION=	110511
-PORTREVISION=	2
+PORTVERSION=	140201
 CATEGORIES=	security sysutils
 MASTER_SITES=	http://pogostick.net/~pnh/ntpasswd/
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}
