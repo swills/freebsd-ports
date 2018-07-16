@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	dmd
-PORTVERSION=	2.073.2
+PORTVERSION=	2.076.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 PKGNAMESUFFIX=	2
@@ -10,11 +10,7 @@ PKGNAMESUFFIX=	2
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	D 2.0 compiler, not officially validated for FreeBSD
 
-LICENSE=	ART10 DMD BSL
-LICENSE_COMB=	multi
-LICENSE_NAME_DMD=	Digital Mars license
-LICENSE_FILE_DMD=	${WRKSRC}/dmd/src/backendlicense.txt
-LICENSE_PERMS_DMD=	no-dist-mirror no-dist-sell no-pkg-mirror no-pkg-sell auto-accept
+LICENSE=	BSL
 
 BROKEN_armv6=		dumps core: Assertion failed: (!signbit(Port::ldbl_nan)), function PortInitializer, file port.c
 BROKEN_armv7=		dumps core: Assertion failed: (!signbit(Port::ldbl_nan)), function PortInitializer, file port.c
@@ -63,7 +59,7 @@ post-patch:
 	@${REINPLACE_CMD} -e "s|g++|${CXX}|" \
 			  -e "s|/etc|${PREFIX}/etc|" \
 		${WRKSRC}/dmd/src/posix.mak
-	@${REINPLACE_CMD} -e "s|gcc|${CC}|" ${WRKSRC}/dmd/src/link.d
+	@${REINPLACE_CMD} -e "s|gcc|${CC}|" ${WRKSRC}/dmd/src/ddmd/link.d
 	@${REINPLACE_CMD} -e "s|cc|${CC}|" ${WRKSRC}/phobos/posix.mak
 	@${REINPLACE_CMD} -e "s|/etc|${PREFIX}/etc|"	\
 			  -e "s|\(dmd\)|\12|gI"		\
