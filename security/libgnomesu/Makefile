@@ -3,10 +3,8 @@
 #    $MCom: ports/security/libgnomesu/Makefile,v 1.2 2007/05/19 21:36:21 marcus Exp $
 
 PORTNAME=	libgnomesu
-PORTVERSION=	1.0.0
-PORTREVISION=	13
+PORTVERSION=	2.0.2
 CATEGORIES=	security gnome
-MASTER_SITES=	http://members.chello.nl/~h.lai/libgnomesu/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library and frontend for running commands as root
@@ -15,9 +13,16 @@ LICENSE=	LGPL20+ PD
 LICENSE_COMB=	multi
 LICENSE_FILE_LGPL20+ =	${WRKSRC}/COPYING
 
-USES=		gmake gettext-tools libtool localbase pathfix pkgconfig
+USES=		autoreconf gmake gettext-tools libtool localbase pathfix pkgconfig
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	openSUSE
+GH_PROJECT=	libgnomesu
+GH_TAGNAME=	v${PORTVERSION}
+
+USE_GNOME=	cairo gdkpixbuf2 gnomeprefix gtk30 intltool libgnomeui
+USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-USE_GNOME=	gnomeprefix libgnomeui
 CONFIGURE_ARGS=	--disable-install-pam \
 		--disable-setuid-error
 INSTALL_TARGET=	install-strip
@@ -25,10 +30,6 @@ INSTALL_TARGET=	install-strip
 SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|-DGTK_DISABLE_DEPRECATED||g' \
-		${WRKSRC}/src/Makefile.in
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
