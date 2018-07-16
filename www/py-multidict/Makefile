@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	multidict
-PORTVERSION=	3.2.0
+PORTVERSION=	4.3.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ COMMENT=	Multidict implementation
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:3.4+
+USES=		python:3.6+
 USE_PYTHON=	autoplist distutils cython
 
 .include <bsd.port.mk>
