@@ -12,31 +12,28 @@
 
 PORTNAME=	ksh93
 PORTVERSION=	${KSHVERSION:S/-//g}
-PORTREVISION=	2
 CATEGORIES=	shells
-MASTER_SITES=	http://www2.research.att.com/~astopen/download/tgz/ \
-		LOCAL/sunpoet/${PORTNAME}
+MASTER_SITES=	https://distfile.net/local-ports-distfiles/
 DISTFILES=	INIT.${INITVERSION}.tgz ast-ksh.${KSHVERSION}.tgz
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	saper@saper.info
-COMMENT=	Official AT&T release of KornShell 93
+COMMENT=	KornShell 93
 
 LICENSE=	EPL
 
+BROKEN_aarch64=	Fails to link: missing sbrk
+
 OPTIONS_DEFINE=	EXAMPLES STATIC
 
-FETCH_ENV=	HTTP_AUTH=basic:*:I\ accept\ www.opensource.org/licenses/cpl:.
 LDFLAGS+=	-lm
-MAKE_ENV=	CCFLAGS="${CFLAGS}"
+MAKE_ENV=	CCFLAGS="-Wno-unused-value -Wno-parentheses -Wno-logical-op-parentheses ${CFLAGS}"
 NO_WRKSUBDIR=	yes
 
-INITVERSION=	2013-05-24
-KSHVERSION=	2012-08-01
+INITVERSION=	2014-12-24
+KSHVERSION=	2018-05-20
 
 STATIC_MAKE_ENV=	LDFLAGS+=-static
-
-BROKEN_aarch64=		Fails to compile: error: unknown type name Dllscan_t
 
 .include <bsd.port.pre.mk>
 
