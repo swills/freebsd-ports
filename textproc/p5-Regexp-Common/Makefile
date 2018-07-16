@@ -2,16 +2,22 @@
 # $FreeBSD$
 
 PORTNAME=	Regexp-Common
-PORTVERSION=	2016060801
+PORTVERSION=	2017060201
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
-COMMENT=	Regexp::Common - Provide commonly requested regular expressions
+MAINTAINER=	svysh.fbsd@gmail.com
+COMMENT=	Provide commonly requested regular expressions
 
 LICENSE=	ART10 ART20 BSD3CLAUSE MIT
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/COPYRIGHT.AL
+LICENSE_FILE_ART20=	${WRKSRC}/COPYRIGHT.AL2
+LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/COPYRIGHT.BSD
+LICENSE_FILE_MIT=	${WRKSRC}/COPYRIGHT.MIT
+
+TEST_DEPENDS=	p5-Test-Regexp>=0:textproc/p5-Test-Regexp
 
 USES=		perl5
 USE_PERL5=	configure
