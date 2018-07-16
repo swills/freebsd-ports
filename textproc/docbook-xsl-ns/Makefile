@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	docbook-xsl-ns
-PORTVERSION=	1.78.1
-PORTREVISION=	4
+PORTVERSION=	1.79.1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/docbook/${PORTNAME}/${PORTVERSION}:src \
 		SF/docbook/docbook-xsl-doc/${PORTVERSION}:doc
