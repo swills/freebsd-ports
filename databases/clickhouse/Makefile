@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	clickhouse
-PORTVERSION=	1.1.54381
+PORTVERSION=	1.1.54383
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
 PORTREVISION=	1
@@ -36,7 +36,7 @@ LIB_DEPENDS=	libtcmalloc.so:devel/google-perftools \
 		librdkafka.so:net/librdkafka \
 		libgtest.so:devel/googletest
 
-USES=		compiler:c++14-lang cmake iconv mysql python ssl readline shebangfix
+USES=		compiler:c++14-lang cmake iconv mysql ssl readline shebangfix
 USE_LDCONFIG=	yes
 CMAKE_ARGS=	-DUNBUNDLED=1 \
 		-DUSE_STATIC_LIBRARIES=0 \
@@ -60,6 +60,19 @@ GROUPS=		clickhouse
 SOVERSION=	${PORTVERSION}
 PLIST_SUB=	SOVERSION=${SOVERSION}
 
+OPTIONS_DEFINE=		TEST
+OPTIONS_DEFAULT=	TEST
+OPTIONS_SUB=	yes
+TEST_DESC=	Install script clickhouse-test and test queries data
+TEST_USES=	python perl5
+TEST_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}termcolor>=0:devel/py-termcolor@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR} \
+		curl:ftp/curl \
+		bash:shells/bash \
+		expect:lang/expect \
+		sudo:security/sudo
+
 .include <bsd.port.options.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200057
@@ -70,7 +83,7 @@ SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
 
 .include <bsd.port.pre.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1200000
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101513
 BUILD_DEPENDS+=	clang50:devel/llvm50
 CC=		clang50
 CXX=		clang++50

@@ -10,7 +10,7 @@ bin/clickhouse-local
 bin/clickhouse-performance-test
 bin/clickhouse-report
 bin/clickhouse-server
-bin/clickhouse-test
+%%TEST%%bin/clickhouse-test
 bin/clickhouse-test-server
 bin/clickhouse-zookeeper-cli
 @dir(clickhouse,,) etc/clickhouse-server
@@ -1506,6 +1506,6 @@ lib/libclickhouse.so.%%SOVERSION%%
 @dir %%DATADIR%%-test/external_dictionaries/CMakeFiles
 @dir %%DATADIR%%-test/external_dictionaries/clickhouse
 @dir %%DATADIR%%-test/external_dictionaries/generated
-@dir /var/db/clickhouse
-@dir /var/log/clickhouse
-@dir /var/run/clickhouse
+@dir(clickhouse,,) /var/db/clickhouse
+@dir(clickhouse,,) /var/log/clickhouse
+@dir(clickhouse,,) /var/run/clickhouse
