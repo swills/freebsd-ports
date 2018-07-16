@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	netty
-PORTVERSION=	3.10.6
-DISTVERSIONSUFFIX=	.Final-dist
+PORTVERSION=	4.1.10
+DISTVERSIONSUFFIX=	.Final
 CATEGORIES=	java devel
 MASTER_SITES=	http://dl.bintray.com/netty/downloads/
 
@@ -21,9 +21,6 @@ DATADIR=	${PREFIX}/share/${PKGBASE}
 DOCSDIR=	${PREFIX}/share/doc/${PKGBASE}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}.Final
 
-PLIST_FILES=	%%JAVAJARDIR%%/netty-${PORTVERSION}.jar \
-		%%JAVAJARDIR%%/netty.jar
-
 PORTDATA=	*
 PORTDOCS=	*
 
@@ -31,9 +28,13 @@ OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${JAVAJARDIR}
-	${INSTALL_DATA} ${WRKSRC}/jar/netty-${PORTVERSION}.Final.jar ${STAGEDIR}${JAVAJARDIR}/netty-${PORTVERSION}.jar
-	cd ${WRKSRC} && ${COPYTREE_SHARE} src ${STAGEDIR}${DATADIR}
-	cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/jar/all-in-one/${PORTNAME}-all-${PORTVERSION}.Final.jar \
+		${STAGEDIR}${JAVAJARDIR}/${PORTNAME}-${PORTVERSION}.jar
+	@${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/jar/all-in-one/${PORTNAME}-all-${PORTVERSION}.Final-sources.jar \
+		${STAGEDIR}${DATADIR}
+	unzip -d ${STAGEDIR}${DOCSDIR} \
+		${WRKSRC}/javadoc/${PORTNAME}-all-${PORTVERSION}.Final-javadoc.jar
 	${LN} -nfs netty-${PORTVERSION}.jar ${STAGEDIR}${JAVAJARDIR}/netty.jar
 
 .include <bsd.port.mk>
