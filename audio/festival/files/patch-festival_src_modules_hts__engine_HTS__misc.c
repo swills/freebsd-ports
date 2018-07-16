@@ -1,6 +1,6 @@
---- festival/src/modules/hts_engine/HTS_misc.c.orig	2013-07-03 19:43:35.000000000 +0600
-+++ festival/src/modules/hts_engine/HTS_misc.c	2015-11-22 20:43:30.055818000 +0500
-@@ -245,11 +245,7 @@
+--- festival/src/modules/hts_engine/HTS_misc.c.orig	2017-09-04 15:54:08 UTC
++++ festival/src/modules/hts_engine/HTS_misc.c
+@@ -245,11 +245,7 @@ size_t HTS_ftell(HTS_File * fp)
     } else if (fp->type == HTS_FILE) {
        fpos_t pos;
        fgetpos((FILE *) fp->pointer, &pos);

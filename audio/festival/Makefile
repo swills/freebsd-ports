@@ -2,11 +2,11 @@
 # $FreeBSD$
 
 PORTNAME=	festival
-PORTVERSION=	2.4
+DISTVERSION=	2.5.0
 CATEGORIES=	audio accessibility
-MASTER_SITES=	FESTIVAL
+MASTER_SITES=	FESTIVAL/2.5
 DISTFILES=	${DISTNAME}-release.tar.gz	\
-		speech_tools-${PORTVERSION}-release.tar.gz
+		speech_tools-${DISTVERSION}-release.tar.gz
 DIST_SUBDIR=	festival
 
 PATCHFILES=	src_modules_diphone_diphone.h.diff?id=b58a836:debian	\
@@ -20,10 +20,12 @@ PATCHFILES=	src_modules_diphone_diphone.h.diff?id=b58a836:debian	\
 		languagespatch.diff?id=b58a836:debian	\
 		${SPT_PATCHES:C/.*/patch-speech__tools_\0:netbsd/}
 PATCH_SITES=	ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/audio/festival/patches/:netbsd	\
-		http://anonscm.debian.org/cgit/tts/festival.git/plain/debian/patches/:debian
+		http://salsa.debian.org/tts-team/festival.git/plain/debian/patches/:debian
 
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Multi-lingual speech synthesis system
+
+LICENSE_FILE=	COPYING
 
 OPTIONS_DEFINE=	NAS ESD
 OPTIONS_DEFAULT=NAS ESD

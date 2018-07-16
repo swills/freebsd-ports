@@ -1,7 +1,7 @@
 author:  Tod McQuillin
 
---- speech_tools/config/rules/install.mak~	Sun May 30 22:51:10 1999
-+++ speech_tools/config/rules/install.mak	Wed Mar  9 03:11:35 2005
+--- speech_tools/config/rules/install.mak.orig	2017-09-04 15:54:03 UTC
++++ speech_tools/config/rules/install.mak
 @@ -39,7 +39,7 @@
  
  
