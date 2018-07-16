@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	nestopia
-PORTVERSION=	1.48
+PORTVERSION=	1.49
 CATEGORIES=	emulators
 
 MAINTAINER=	neel@neelc.org
