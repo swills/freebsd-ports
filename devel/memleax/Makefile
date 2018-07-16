@@ -1,25 +1,25 @@
 # $FreeBSD$
 
 PORTNAME=	memleax
-PORTVERSION=	1.0.3
 DISTVERSIONPREFIX=	v
+DISTVERSION=	1.1.1
 CATEGORIES=	devel
 
-MAINTAINER=	guy.tabrar@me.com
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Debug memory leaks of running processes
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+ONLY_FOR_ARCHS=	amd64
+
 LIB_DEPENDS=	libunwind.so:devel/libunwind
 BUILD_DEPENDS=	${LOCALBASE}/lib/libdwarf.a:devel/libdwarf
 
-ONLY_FOR_ARCHS=	amd64
-
+USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	WuBingzheng
 
-USES=		gmake
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX}
 ALL_TARGET=	memleax
