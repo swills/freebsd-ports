@@ -7,4 +7,12 @@ share/dbus-1/interfaces/org.dharkael.Flameshot.xml
 share/dbus-1/services/org.dharkael.Flameshot.service
 %%DATADIR%%/translations/Internationalization_ca.qm
 %%DATADIR%%/translations/Internationalization_es.qm
+%%DATADIR%%/translations/Internationalization_fr.qm
+%%DATADIR%%/translations/Internationalization_ka.qm
+%%DATADIR%%/translations/Internationalization_pl.qm
+%%DATADIR%%/translations/Internationalization_ru.qm
+%%DATADIR%%/translations/Internationalization_tr.qm
+%%DATADIR%%/translations/Internationalization_zh_CN.qm
+%%DATADIR%%/translations/Internationalization_zh_TW.qm
 share/icons/flameshot.png
+share/metainfo/flameshot.appdata.xml
