@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	phpfpm_exporter
-PORTVERSION=	0.3.3
+PORTVERSION=	0.4.1
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 
@@ -19,6 +19,8 @@ GH_PROJECT=	php-fpm-exporter
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 PLIST_FILES=	bin/${PORTNAME}
 USE_RC_SUBR=	phpfpm_exporter
+USERS=		prometheus
+GROUPS=		prometheus
 
 do-build:
 	@(cd ${GO_WRKSRC}; ${SETENV} ${MAKE_ENV} ${GO_ENV} CGO_ENABLED=0 ${GO_CMD} build -o ${PORTNAME} ./cmd/${GH_PROJECT})
