@@ -1,9 +1,18 @@
+# $FreeBSD$
+
+PKGNAMESUFFIX=	-shlib
+
+CONFLICTS_INSTALL=	ngspice_rework
+
+SHLIB=	yes
+MASTERDIR=	${.CURDIR}/../ngspice_rework
+
+.include "${MASTERDIR}/Makefile"
 # Created by: AMAKAWA Shuhei <amakawa@jp.FreeBSD.org>
 # $FreeBSD$
 
 PORTNAME=	ngspice_rework
-PORTVERSION=	26
-PORTREVISION=	3
+PORTVERSION=	27
 CATEGORIES=	cad
 MASTER_SITES=	SF/ngspice/ng-spice-rework/${PORTVERSION}
 DISTNAME=	ngspice-${PORTVERSION}
@@ -17,6 +26,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=	Fails to link: missing sbrk
 
+LIB_DEPENDS=	libfftw3.so:math/fftw3
+
 USES=		gmake libtool readline
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
@@ -28,6 +39,11 @@ OPTIONS_DEFAULT=		X11
 OPTIONS_SINGLE=			INTERFACE
 OPTIONS_SINGLE_INTERFACE=	SHLIB X11
 OPTIONS_SUB=			yes
+
+.if defined(SHLIB)
+OPTIONS_EXCLUDE=	X11
+OPTIONS_SLAVE=		SHLIB
+.endif
 
 SHLIB_DESC=		Build as a shared library
 
