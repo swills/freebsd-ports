@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	opencoarrays
-DISTVERSION=	2.0.0
+DISTVERSION=	2.1.0
 CATEGORIES=	lang parallel
 
 MAINTAINER=	as@cmplx.uk
@@ -21,6 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	sourceryinstitute
 GH_PROJECT=	OpenCoarrays
 USE_LDCONFIG=	yes
+USE_GCC=	yes
 
 PLIST_SUB=	GCC_VER=${_GCC_VER} PORTVERSION=${PORTVERSION}
 
