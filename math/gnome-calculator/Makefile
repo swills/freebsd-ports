@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gnome-calculator
-PORTVERSION=	3.26.0
+PORTVERSION=	3.28.1
 CATEGORIES=	math gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -14,6 +14,8 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	itstool:textproc/itstool \
+		appstream-builder:devel/appstream-glib \
+		yelp-build:textproc/yelp-tools \
 		vala:lang/vala
 LIB_DEPENDS=	libmpfr.so:math/mpfr \
 		libgmp.so:math/gmp \
@@ -22,7 +24,7 @@ LIB_DEPENDS=	libmpfr.so:math/mpfr \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		compiler:c11 gettext gmake gnome libtool \
+USES=		autoreconf compiler:c11 gettext gmake gnome libtool \
 		localbase pkgconfig tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gtk30 gtksourceview3 intltool
 GNU_CONFIGURE=	yes
