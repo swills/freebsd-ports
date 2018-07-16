@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	grep
-PORTVERSION=	2.27
+PORTVERSION=	3.1
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu
@@ -14,7 +14,7 @@ LICENSE=	GPLv3+
 
 CONFLICTS=	bsd-grep-[0-9]*
 
-USES=		charsetfix cpe tar:xz
+USES=		charsetfix cpe pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 
 INFO=		grep
@@ -35,14 +35,12 @@ NLS_CONFIGURE_OFF=	--without-libintl-prefix
 
 PCRE_LIB_DEPENDS=	libpcre.so:devel/pcre
 PCRE_CONFIGURE_ENABLE=	perl-regexp
-PCRE_CPPFLAGS=		-I${LOCALBASE}/include
-PCRE_LDFLAGS=		-L${LOCALBASE}/lib
 PCRE_CONFIGURE_OFF=	--disable-perl-regexp
 
 .include <bsd.port.options.mk>
 
 post-patch:
-	@${REINPLACE_CMD} 's:@grep@:${LOCALBASE}/bin/&:' ${WRKSRC}/src/egrep.sh
+	@${REINPLACE_CMD} 's:@grep@:${PREFIX}/bin/&:' ${WRKSRC}/src/egrep.sh
 .if empty(PORT_OPTIONS:MNLS)
 	@${REINPLACE_CMD} '/install-exec-local:/s/install-exec-localcharset//' \
 		${WRKSRC}/lib/Makefile.in
