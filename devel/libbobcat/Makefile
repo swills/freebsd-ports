@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libbobcat/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/libbobcat/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	libbobcat
 PORTVERSION=	3.25.01
@@ -14,6 +14,8 @@ COMMENT=	Brokken's Own Base Classes And Templates
 LICENSE=	GPLv3
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 BUILD_DEPENDS=	icmake:devel/icmake \
 		yodl>=3.0:textproc/yodl

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-redis-namespace15/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/databases/rubygem-redis-namespace15/Makefile 474739 2018-07-16 14:36:51Z mfechner $
 
 PORTNAME=	redis-namespace
 PORTVERSION=	1.5.3
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	15
 
 MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Ruby client class for Redis with namespace support
+
+DEPRECATED=	Obsoleted by update of www/gitlab-ce. Please use databases/rubygem-redis-namespace instead.
+EXPIRATION_DATE=	2018-07-31
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

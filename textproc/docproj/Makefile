@@ -1,5 +1,5 @@
 # Created by: Nik Clayton <nik@FreeBSD.org>
-# $FreeBSD: head/textproc/docproj/Makefile 474031 2018-07-06 18:53:21Z swills $
+# $FreeBSD: head/textproc/docproj/Makefile 474685 2018-07-15 11:21:37Z swills $
 
 PORTNAME=	docproj
 PORTVERSION=	2.0
@@ -38,7 +38,7 @@ OPTIONS_DEFAULT+=	SVN
 CJK_DESC=		CJK support
 CJK_RUN_DEPENDS=	html2text:textproc/html2text
 DBLATEX_DESC=		dblatex PDF renderer (experimental, requires TeXLive)
-DBLATEX_RUN_DEPENDS=	dblatex:textproc/dblatex \
+DBLATEX_RUN_DEPENDS=	dblatex:textproc/dblatex
 DBLATEX_USE=		TEX=xetex
 FOP_DESC=		FOP PDF renderer (requires Java)
 FOP_RUN_DEPENDS=	fop:textproc/fop \

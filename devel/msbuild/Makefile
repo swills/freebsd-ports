@@ -1,5 +1,5 @@
 # Created by: David Naylor <dbn@dragon.local>
-# $FreeBSD: head/devel/msbuild/Makefile 473620 2018-06-30 14:49:09Z dbn $
+# $FreeBSD: head/devel/msbuild/Makefile 474555 2018-07-13 06:55:32Z mat $
 
 PORTNAME=	msbuild
 DISTVERSIONPREFIX=	v
@@ -14,8 +14,7 @@ COMMENT=	Build platform for .NET and Visual Studio
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	bash:shells/bash \
-		python:lang/python
+BUILD_DEPENDS=	bash:shells/bash
 
 NUGET_FEEDS=	DOTNET_CORE NUGET ROSLYN ROSLYN_TOOLS SYMREADER_CONVERTER
 NUGET_LAYOUT=	dotnet

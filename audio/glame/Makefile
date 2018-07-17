@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/audio/glame/Makefile 465695 2018-03-27 11:55:48Z bapt $
+# $FreeBSD: head/audio/glame/Makefile 474783 2018-07-17 08:08:40Z antoine $
 
 PORTNAME=	glame
 PORTVERSION=	2.0.1
@@ -12,7 +12,7 @@ COMMENT=	Powerful, fast, stable, and easily extensible sound editor for GNOME
 
 BROKEN=		Does not build
 DEPRECATED=	Does not build
-DEPRECATION_DATE=	2018-04-27
+EXPIRATION_DATE=	2018-07-27
 
 BUILD_DEPENDS=	${LOCALBASE}/include/ladspa.h:audio/ladspa
 LIB_DEPENDS=	libmp3lame.so:audio/lame \

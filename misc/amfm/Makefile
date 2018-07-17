@@ -1,5 +1,5 @@
 # Created by: sanpei@FreeBSD.org
-# $FreeBSD: head/misc/amfm/Makefile 434928 2017-02-27 12:45:31Z amdmi3 $
+# $FreeBSD: head/misc/amfm/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	amfm
 PORTVERSION=	1.0
@@ -13,6 +13,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	THANKO USB AM/FM Radio controller
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 LIB_DEPENDS=	libhid.so:devel/libhid
 

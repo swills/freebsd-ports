@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-qt5/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/devel/py-qt5/Makefile 474468 2018-07-11 16:44:34Z novel $
 
 PORTNAME=	qt5
 PORTVERSION=	${PYQT5_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -15,8 +15,8 @@ USE_PYTHON=	flavors
 # Keep these synchronized with _USE_PYQT_ALL / _USE_PYQT5_ONLY in Mk/Use/pyqt.mk
 OPTIONS_DEFINE=	core dbus dbussupport demo designer \
 		designerplugin gui multimedia multimediawidgets \
-		network opengl printsupport qml qscintilla2 sql \
-		serialport svg test webchannel webengine webkit \
+		network opengl printsupport qml qscintilla2 quickwidgets \
+		sql serialport svg test webchannel webengine webkit \
 		webkitwidgets widgets xml xmlpatterns
 OPTIONS_DEFAULT=${OPTIONS_DEFINE}
 

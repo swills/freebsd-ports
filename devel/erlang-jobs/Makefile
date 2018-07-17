@@ -1,14 +1,14 @@
-# $FreeBSD: head/devel/erlang-jobs/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-jobs/Makefile 474641 2018-07-14 14:34:48Z olgeni $
 
 PORTNAME=	jobs
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
 MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Job scheduler and load regulation for Erlang
 
-USES=		erlang:rebar
+USES=		erlang:rebar3
 USE_GITHUB=	yes
 GH_ACCOUNT=	uwiger
 

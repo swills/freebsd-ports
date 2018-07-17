@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 474420 2018-07-11 04:13:45Z yuri $
+# $FreeBSD: head/audio/Makefile 474524 2018-07-12 15:44:24Z dch $
 #
 
     COMMENT = Audio tools
@@ -912,6 +912,7 @@
     SUBDIR += xvmixer
     SUBDIR += xwave
     SUBDIR += yell
+    SUBDIR += ympd
     SUBDIR += yoshimi
     SUBDIR += zam-plugins-lv2
     SUBDIR += zinf

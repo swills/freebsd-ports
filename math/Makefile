@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 474374 2018-07-10 15:03:53Z pi $
+# $FreeBSD: head/math/Makefile 474531 2018-07-12 19:03:54Z yuri $
 #
 
     COMMENT = Mathematics
@@ -818,6 +818,7 @@
     SUBDIR += vtk5
     SUBDIR += vtk5-data
     SUBDIR += vtk6
+    SUBDIR += vtk8
     SUBDIR += wcalc
     SUBDIR += wfmath
     SUBDIR += why3

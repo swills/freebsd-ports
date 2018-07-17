@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rbnacl4/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/security/rubygem-rbnacl4/Makefile 474739 2018-07-16 14:36:51Z mfechner $
 
 PORTNAME=	rbnacl
 PORTVERSION=	4.0.2
@@ -10,6 +10,9 @@ MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Networking and Cryptography (NaCl) library
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab-ce. Please use security/rubygem-rbnacl instead.
+EXPIRATION_DATE=	2018-07-31
 
 LIB_DEPENDS=	libsodium.so:security/libsodium
 BUILD_DEPENDS=	rubygem-bundler>=0:sysutils/rubygem-bundler

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 474034 2018-07-06 19:06:26Z yuri $
+# $FreeBSD: head/multimedia/Makefile 474501 2018-07-12 10:39:08Z decke $
 #
 
     COMMENT = Multimedia software
@@ -51,6 +51,7 @@
     SUBDIR += dumpmpeg
     SUBDIR += dv2jpg
     SUBDIR += dv2sub
+    SUBDIR += dvb-apps
     SUBDIR += dvbcut
     SUBDIR += dvbsnoop
     SUBDIR += dvd-slideshow

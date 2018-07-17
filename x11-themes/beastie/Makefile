@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11-themes/beastie/Makefile 445069 2017-07-05 10:31:36Z amdmi3 $
+# $FreeBSD: head/x11-themes/beastie/Makefile 474572 2018-07-13 09:56:57Z antoine $
 #    $MCom: ports/x11-themes/beastie/Makefile,v 1.10 2006/07/18 11:56:12 ahze Exp $
 
 PORTNAME=	beastie
@@ -14,6 +14,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Gnome theme with FreeBSD Colors
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 RUN_DEPENDS=	gtk-engines2>=2.7.4_1:x11-themes/gtk-engines2 \
 		gnome-themes>=2.11.91:x11-themes/gnome-themes

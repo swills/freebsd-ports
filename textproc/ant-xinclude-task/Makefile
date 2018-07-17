@@ -1,5 +1,5 @@
 # Created by: Ernst de Haan <znerd@FreeBSD.org>
-# $FreeBSD: head/textproc/ant-xinclude-task/Makefile 440619 2017-05-11 09:00:28Z amdmi3 $
+# $FreeBSD: head/textproc/ant-xinclude-task/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	xinclude-task
 PORTVERSION=	0.2
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XInclude task for Jakarta Ant
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 BUILD_DEPENDS=	${JAVALIBDIR}/xincluder.jar:textproc/xincluder
 

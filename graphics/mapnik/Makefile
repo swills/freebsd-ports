@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/mapnik/Makefile 474442 2018-07-11 12:50:15Z jbeich $
+# $FreeBSD: head/graphics/mapnik/Makefile 474543 2018-07-12 23:22:17Z jbeich $
 
 PORTNAME=	mapnik
 PORTVERSION=	3.0.9
@@ -10,7 +10,7 @@ MASTER_SITES=	http://mapnik.s3.amazonaws.com/dist/v${PORTVERSION}/
 
 PATCH_SITES=	https://github.com/mapnik/mapnik/commit/
 PATCHFILES=	1ddfe6c31548.patch:-p1
-PATCHFILES+=	f554d4fb59f8.patch:-p1
+PATCHFILES+=	aca42e284599.patch:-p1
 
 MAINTAINER=	littlesavage@rambler.ru
 COMMENT=	Free Toolkit For Developing Mapping Applications

@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/devel/p5-Proc-PID-File/Makefile 438010 2017-04-08 10:34:35Z sunpoet $
+# $FreeBSD: head/devel/p5-Proc-PID-File/Makefile 474669 2018-07-15 07:52:51Z wen $
 
 PORTNAME=	Proc-PID-File
-PORTVERSION=	1.28
+PORTVERSION=	1.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

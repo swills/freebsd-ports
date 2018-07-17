@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound6/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/audio/csound6/Makefile 474560 2018-07-13 08:10:39Z antoine $
 
 PORTNAME=	csound
 PORTVERSION=	6.06
@@ -15,6 +15,8 @@ COMMENT=	Sound synthesizer
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	boost-libs>0:devel/boost-libs \
 		swig3.0:devel/swig30 \

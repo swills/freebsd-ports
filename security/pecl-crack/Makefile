@@ -1,5 +1,5 @@
 # Created by: Bill Moran <wmoran@collaborativefusion.com>
-# $FreeBSD: head/security/pecl-crack/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/security/pecl-crack/Makefile 474626 2018-07-14 08:37:43Z amdmi3 $
 
 PORTNAME=	crack
 PORTVERSION=	0.4
@@ -22,10 +22,11 @@ CONFIGURE_ARGS=	--with-crack=${LOCALBASE}
 CFLAGS+=	-Wno-deprecated
 
 post-configure:
-	${REINPLACE_CMD} -e 's|^\$$ini_overwrites.*|&'"'"'crack.default_dictionary=\"${LOCALBASE}/libdata/cracklib/pw_dict\"'"'"',|' \
+	@${REINPLACE_CMD} -e 's|^\$$ini_overwrites.*|&'"'"'crack.default_dictionary=\"${LOCALBASE}/libdata/cracklib/pw_dict\"'"'"',|' \
 		${WRKSRC}/run-tests.php
 
-test check regression-test: build
-	${MAKE} -C ${WRKSRC} test < /dev/null
+do-test:
+	# XXX: 3 of 4 test fail
+	${MAKE_CMD} -C ${WRKSRC} test < /dev/null
 
 .include <bsd.port.mk>

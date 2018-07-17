@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qtum/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/qtum/Makefile 474652 2018-07-14 23:14:45Z jbeich $
 
 PORTNAME=	qtum
 PORTVERSION=	0.15.2
@@ -36,7 +36,7 @@ CONFIGURE_ARGS=	--disable-man \
 		--with-qrencode \
 		--without-libs
 
-USES=		autoreconf bdb:5+ compiler:c++11-lib gmake libtool pkgconfig qt:5 ssl
+USES=		autoreconf bdb:5+ compiler:c++14-lang gmake libtool pkgconfig qt:5 ssl
 USE_QT=		buildtools core dbus gui linguisttools network testlib widgets
 USE_GITHUB=	yes
 GH_TUPLE=	qtumproject:qtum:${DISTVERSIONPREFIX}${PORTVERSION} \

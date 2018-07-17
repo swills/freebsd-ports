@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/biology/blat/Makefile 443073 2017-06-10 09:01:19Z amdmi3 $
+# $FreeBSD: head/biology/blat/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	blat
 PORTVERSION=	36
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast tool for local sequence similarity searches
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 LIB_DEPENDS=	libpng.so:graphics/png
 

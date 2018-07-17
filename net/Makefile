@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 474026 2018-07-06 17:50:13Z miwi $
+# $FreeBSD: head/net/Makefile 474751 2018-07-16 17:07:19Z rene $
 #
 
     COMMENT = Networking tools
@@ -470,6 +470,7 @@
     SUBDIR += micro_inetd
     SUBDIR += micro_proxy
     SUBDIR += minidlna
+    SUBDIR += mininet
     SUBDIR += minisapserver
     SUBDIR += minissdpd
     SUBDIR += miniupnpc
@@ -905,8 +906,6 @@
     SUBDIR += p5-XML-RPC-Fast
     SUBDIR += p5-XMLRPC-Lite
     SUBDIR += p5-XPC
-    SUBDIR += p5-ZConf
-    SUBDIR += p5-ZConf-Bookmarks
     SUBDIR += p5-ZeroMQ
     SUBDIR += p5-ldap2pf
     SUBDIR += p5-ldap2pw
@@ -1345,6 +1344,7 @@
     SUBDIR += rubygem-whois
     SUBDIR += rubygem-xmlrpc
     SUBDIR += rude
+    SUBDIR += ryu
     SUBDIR += s3ql
     SUBDIR += samba46
     SUBDIR += samba47
@@ -1537,7 +1537,7 @@
     SUBDIR += wmwifi
     SUBDIR += wmwlmon
     SUBDIR += wol
-    SUBDIR += wpa_gui
+    SUBDIR += wpa_supplicant_gui
     SUBDIR += wping
     SUBDIR += x11vnc
     SUBDIR += x2goclient

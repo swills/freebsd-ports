@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/natron/Makefile 473669 2018-07-01 12:09:06Z olivier $
+# $FreeBSD: head/graphics/natron/Makefile 474555 2018-07-13 06:55:32Z mat $
 
 PORTNAME=	natron
 PORTVERSION=	2.3.13
@@ -10,8 +10,7 @@ COMMENT=	Video compositing software
 LICENSE=	GPLv2
 
 ONLY_FOR_ARCHS=	amd64
-BUILD_DEPENDS=	python-config:lang/python \
-				pyside${PYTHON_PKGNAMESUFFIX}>0:devel/pyside
+BUILD_DEPENDS=	pyside${PYTHON_PKGNAMESUFFIX}>0:devel/pyside
 RUN_DEPENDS=	${LOCALBASE}/OFX/Plugins/IO.ofx.bundle/Contents/Info.plist:graphics/openfx-io \
 				${LOCALBASE}/OFX/Plugins/Shadertoy.ofx.bundle/Contents/Info.plist:graphics/openfx-misc \
 				${LOCALBASE}/OFX/Plugins/Arena.ofx.bundle/Contents/Info.plist:graphics/openfx-arena
@@ -24,7 +23,7 @@ LIB_DEPENDS=	libcairo.so:graphics/cairo \
 				libpyside-${PYTHON_VERSION}.so:devel/pyside \
 				libfreetype.so:print/freetype2
 
-USES=	pkgconfig python qmake qt:4 shebangfix desktop-file-utils shared-mime-info \
+USES=	pkgconfig python:2.7 qmake qt:4 shebangfix desktop-file-utils shared-mime-info \
 		gettext-runtime desktop-file-utils
 USE_GITHUB=	yes
 GH_ACCOUNT=	NatronGitHub
@@ -42,6 +41,8 @@ USE_XORG=	x11 pixman
 USE_GL=		gl
 
 SHEBANG_FILES=	OpenColorIO-Configs/nuke-default/make.py
+
+BINARY_ALIAS=	python2-config=python${PYTHON_VER}-config
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/OFX/Plugins|${PREFIX}/OFX/Plugins|g' \

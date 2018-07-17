@@ -1,5 +1,5 @@
 # Created by: ABURAYER Rewsirow <pcs51674@asciinet.or.jp>
-# $FreeBSD: head/converters/uudx/Makefile 469719 2018-05-12 09:34:03Z amdmi3 $
+# $FreeBSD: head/converters/uudx/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	uudx
 PORTVERSION=	2.99
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extractor from uuencoded files
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 BUILD_DEPENDS=	nkf:japanese/nkf
 

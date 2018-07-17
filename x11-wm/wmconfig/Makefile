@@ -1,8 +1,8 @@
 # Created by: Tommy Scheunemann <net@arrishq.org>
-# $FreeBSD: head/x11-wm/wmconfig/Makefile 462542 2018-02-21 20:48:59Z tobik $
+# $FreeBSD: head/x11-wm/wmconfig/Makefile 474522 2018-07-12 14:30:24Z garga $
 
 PORTNAME=	wmconfig
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://www.arrishq.net/files/
 

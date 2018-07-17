@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/kickassembler/Makefile 434275 2017-02-17 09:01:33Z amdmi3 $
+# $FreeBSD: head/devel/kickassembler/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	kickassembler
 PORTVERSION=	3.42
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Advanced MOS 65xx assembler with embedded script language
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 USES=		zip
 USE_JAVA=	yes

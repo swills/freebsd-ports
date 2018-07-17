@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/bisoncpp/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/bisoncpp/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	bisoncpp
 PORTVERSION=	4.10.01
@@ -11,6 +11,9 @@ MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	LALR(1) parser generator that generates C++ classes
 
 LICENSE=	GPLv3
+
+DEPRECATED=	Depends on broken and expiring libbobcat
+EXPIRATION_DATE=	2018-08-20
 
 BUILD_DEPENDS=	icmake:devel/icmake \
 		yodl>=3.0:textproc/yodl \

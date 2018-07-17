@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/emulators/m2000/Makefile 453630 2017-11-06 16:45:29Z ak $
+# $FreeBSD: head/emulators/m2000/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	m2000
 PORTVERSION=	0.6
@@ -20,6 +20,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Portable emulator for the Philips P2000 home computer
 
 LICENSE=	NONE # and commercial distribution is explicitly prohibited
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 M2000TAPES=	3DDoolhof2.cas		\
 		BrickWall.cas		\

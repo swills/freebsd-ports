@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/net/e169-stats/Makefile 426925 2016-11-23 14:38:41Z amdmi3 $
+# $FreeBSD: head/net/e169-stats/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	e169-stats
 PORTVERSION=	0.6
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Curses realtime statistics for the Huawei E169 modem
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 USES=		ncurses
 PLIST_FILES=	bin/e169-stats

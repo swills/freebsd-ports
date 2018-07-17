@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeorion/Makefile 473732 2018-07-02 13:23:15Z amdmi3 $
+# $FreeBSD: head/games/freeorion/Makefile 474587 2018-07-13 14:00:11Z amdmi3 $
 
 PORTNAME=	freeorion
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE=	GPLv2 CC-BY-SA-3.0
 LICENSE_COMB=	multi
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
-		libboost_python27.so:devel/boost-python-libs@${PY_FLAVOR}
+		${PY_BOOST}
 
 USE_GITHUB=	yes
 

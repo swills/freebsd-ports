@@ -1,16 +1,14 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/archivers/javatar/Makefile 451856 2017-10-12 11:26:47Z bapt $
+# $FreeBSD: head/archivers/javatar/Makefile 474750 2018-07-16 16:59:24Z ale $
 
 PORTNAME=	javatar
 PORTVERSION=	2.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	archivers java
 MASTER_SITES=	http://www.gjt.org/download/time/java/tar/
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Java tar archive I/O package
-
-RUN_DEPENDS=	${JAVALIBDIR}/activation.jar:java/jaf
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+

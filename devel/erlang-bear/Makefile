@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-bear/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-bear/Makefile 474635 2018-07-14 09:44:46Z olgeni $
 
 PORTNAME=	bear
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.5
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

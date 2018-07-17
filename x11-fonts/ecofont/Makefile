@@ -1,5 +1,5 @@
 # Created by: Joseph S. Atkinson <jsa@wickedmachine.net>
-# $FreeBSD: head/x11-fonts/ecofont/Makefile 461993 2018-02-16 09:02:58Z amdmi3 $
+# $FreeBSD: head/x11-fonts/ecofont/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	ecofont
 PORTVERSION=	2.05
@@ -14,6 +14,8 @@ COMMENT=	Environmentally friendly, ink saving typeface
 LICENSE=	NONE
 
 BROKEN=		unfetchable
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 USES=		fonts zip
 NO_BUILD=	yes

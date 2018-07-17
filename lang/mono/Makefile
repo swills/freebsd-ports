@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/lang/mono/Makefile 474411 2018-07-10 20:55:32Z feld $
+# $FreeBSD: head/lang/mono/Makefile 474691 2018-07-15 13:38:35Z feld $
 
 PORTNAME=	mono
 PORTVERSION=	5.10.1.47
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	lang
 MASTER_SITES=	https://download.mono-project.com/sources/mono/
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
@@ -34,6 +34,7 @@ MONOLITE_DISTFILES=	monolite-linux-${MONOLITE_VERSION}-latest.tar.gz:monolite
 MONOLITE_MASTER_SITES=	http://download.mono-project.com/monolite/:monolite
 MONOLITE_VERSION=	1051000004
 
+NLS_CONFIGURE_OFF=	--disable-nls
 NLS_USES=	gettext
 
 X11_USES=	display:test

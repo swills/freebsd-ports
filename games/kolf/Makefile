@@ -1,8 +1,7 @@
-# $FreeBSD: head/games/kolf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/kolf/Makefile 474596 2018-07-13 17:41:56Z tcberner $
 
 PORTNAME=	kolf
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

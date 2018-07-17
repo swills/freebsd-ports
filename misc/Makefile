@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 473886 2018-07-04 14:01:00Z zi $
+# $FreeBSD: head/misc/Makefile 474818 2018-07-17 17:47:12Z tcberner $
 #
 
     COMMENT = Miscellaneous utilities
@@ -13,7 +13,6 @@
     SUBDIR += ansiweather
     SUBDIR += apparix
     SUBDIR += artikulate
-    SUBDIR += artikulate-kde4
     SUBDIR += asbutton
     SUBDIR += asr-manpages
     SUBDIR += astrolog
@@ -106,6 +105,7 @@
     SUBDIR += fortuneit
     SUBDIR += fpc-chm
     SUBDIR += free42
+    SUBDIR += free42-skins
     SUBDIR += freebsd-doc-all
     SUBDIR += freebsd-doc-bn
     SUBDIR += freebsd-doc-da
@@ -451,6 +451,7 @@
     SUBDIR += qt5-l10n
     SUBDIR += qt5ct
     SUBDIR += qtchooser
+    SUBDIR += R-cran-xfun
     SUBDIR += raspberrypi-userland
     SUBDIR += raspbsd-led
     SUBDIR += ree
@@ -565,5 +566,7 @@
     SUBDIR += yaunc
     SUBDIR += ytree
     SUBDIR += zoneinfo
+    SUBDIR += zygrib
+    SUBDIR += zygrib-maps
 
 .include <bsd.port.subdir.mk>

@@ -1,5 +1,5 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/ghemical/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/ghemical/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	ghemical
 PORTVERSION=	3.0.0
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Computational chemistry software package
 
 LICENSE=	GPLv2+
+
+DEPRECATED=	Depends on broken and expiring libghemical
+EXPIRATION_DATE=	2018-08-20
 
 LIB_DEPENDS=	libmopac7.so:biology/mopac \
 		libghemical.so:science/libghemical \

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/graphics/svgalib/Makefile 357654 2014-06-13 07:36:27Z olgeni $
+# $FreeBSD: head/graphics/svgalib/Makefile 474721 2018-07-16 09:07:44Z amdmi3 $
 
 PORTNAME=	svgalib
 PORTVERSION=	1.4.3
@@ -10,9 +10,12 @@ MASTER_SITES=	http://www.svgalib.org/
 MAINTAINER=	zeising@FreeBSD.org
 COMMENT=	Low level console graphics library
 
+LICENSE=	PD
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 ONLY_FOR_ARCHS=	i386 amd64
 
-USES=	gmake uidfix dos2unix shebangfix
+USES=		gmake uidfix dos2unix shebangfix
 DOS2UNIX_FILES=	utils/gtf/gtf.h utils/gtf/scitech.h
 SHEBANG_FILES=	utils/svgakeymap
 USE_LDCONFIG=	yes

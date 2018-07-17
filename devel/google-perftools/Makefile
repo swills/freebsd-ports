@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/google-perftools/Makefile 458487 2018-01-08 22:07:37Z yuri $
+# $FreeBSD: head/devel/google-perftools/Makefile 474777 2018-07-17 06:38:09Z yuri $
 
 PORTNAME=	google-perftools
 DISTVERSIONPREFIX=	gperftools-
-DISTVERSION=	2.6.3
+DISTVERSION=	2.7
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/gperftools/gperftools/releases/download/gperftools-${PORTVERSION}/
 DISTNAME=	gperftools-${PORTVERSION}
@@ -29,7 +29,7 @@ TEST_TARGET=	check
 
 LIBS+=		-lexecinfo
 
-PLIST_SUB=	SHL3=4.5.1 SHL1=4
+PLIST_SUB=	SHL3=4.5.3 SHL1=4
 
 OPTIONS_DEFINE=		DOCS
 OPTIONS_SINGLE=		PAGESIZE ALIGN

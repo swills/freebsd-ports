@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/javolution/Makefile 465270 2018-03-22 08:35:58Z antoine $
+# $FreeBSD: head/devel/javolution/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	javolution
 PORTVERSION=	5.5.1
@@ -13,6 +13,8 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.6

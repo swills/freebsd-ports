@@ -1,32 +1,35 @@
 # Created by: Pedro F. Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/admesh/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/cad/admesh/Makefile 474673 2018-07-15 08:12:56Z yuri $
 
 PORTNAME=	admesh
-PORTVERSION=	0.95
-PORTREVISION=	1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.98.3
 CATEGORIES=	cad
-MASTER_SITES=	http://launchpadlibrarian.net/67068999/ \
-		http://www.sourcefiles.org/Scientific/Numerical_Analysis/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program for processing STL triangulated solid meshes
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		autoreconf libtool
+USE_GITHUB=	yes
+GNU_CONFIGURE=	yes
+USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	DOCS
 
-GNU_CONFIGURE=	yes
+PORTDOCS=	*
 
-PORTDOCS=	admesh.doc
-PLIST_FILES=	bin/admesh
+PLIST_FILES=	bin/admesh \
+		include/admesh/stl.h \
+		lib/libadmesh.so \
+		lib/libadmesh.so.1 \
+		lib/libadmesh.so.1.0.0 \
+		libdata/pkgconfig/libadmesh.pc \
+		man/man1/admesh.1.gz
 
-post-patch:
-	@${REINPLACE_CMD} -e 's|-O2||' ${WRKSRC}/configure
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/admesh ${STAGEDIR}${PREFIX}/bin/
 do-install-DOCS-on:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/ADMESH.DOC ${STAGEDIR}${DOCSDIR}/admesh.doc
+	@${RM} ${STAGEDIR}${DOCSDIR}/COPYING
 
 .include <bsd.port.mk>

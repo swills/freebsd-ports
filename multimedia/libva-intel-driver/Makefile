@@ -1,8 +1,8 @@
 # Created by: Manuel Creach <manuel.creach@me.com>
-# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 461668 2018-02-12 22:37:33Z madpilot $
+# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 474613 2018-07-14 06:37:14Z madpilot $
 
 PORTNAME=	libva-intel-driver
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -11,7 +11,8 @@ COMMENT=	VAAPI intel driver
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libva.so:multimedia/libva
+LIB_DEPENDS=	libva.so:multimedia/libva \
+		libdrm.so:graphics/libdrm
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 
 GNU_CONFIGURE=	yes

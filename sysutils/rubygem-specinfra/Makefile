@@ -1,9 +1,8 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/sysutils/rubygem-specinfra/Makefile 471428 2018-06-02 22:27:20Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-specinfra/Makefile 474514 2018-07-12 13:35:56Z joneum $
 
 PORTNAME=	specinfra
-PORTVERSION=	2.73.2
-PORTREVISION=	1
+PORTVERSION=	2.75.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-net-scp>=0:security/rubygem-net-scp \
-		rubygem-net-ssh4>=2.7:security/rubygem-net-ssh4 \
+		rubygem-net-ssh>=2.7:security/rubygem-net-ssh \
 		rubygem-net-telnet>=0:security/rubygem-net-telnet
 
 NO_ARCH=	yes

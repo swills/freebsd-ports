@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 474425 2018-07-11 06:45:34Z yuri $
+# $FreeBSD: head/www/Makefile 474751 2018-07-16 17:07:19Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1365,8 +1365,6 @@
     SUBDIR += p5-WebService-YouTube
     SUBDIR += p5-WordPress-XMLRPC
     SUBDIR += p5-Yahoo-Search
-    SUBDIR += p5-ZConf-RSS
-    SUBDIR += p5-ZConf-RSS-GUI-GTK
     SUBDIR += p5-chklinks
     SUBDIR += p5-jQuery-File-Upload
     SUBDIR += p5-libapreq2

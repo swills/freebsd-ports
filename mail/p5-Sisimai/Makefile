@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/p5-Sisimai/Makefile 470929 2018-05-26 17:49:12Z sunpoet $
+# $FreeBSD: head/mail/p5-Sisimai/Makefile 474799 2018-07-17 14:12:19Z wen $
 
 PORTNAME=	Sisimai
-PORTVERSION=	4.22.6
+PORTVERSION=	4.22.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN

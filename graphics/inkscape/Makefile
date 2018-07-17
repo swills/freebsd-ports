@@ -1,13 +1,10 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/graphics/inkscape/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/graphics/inkscape/Makefile 474795 2018-07-17 12:33:38Z kwm $
 
 PORTNAME=	inkscape
-PORTVERSION=	0.92.2
-PORTREVISION=	8
+PORTVERSION=	0.92.3
 CATEGORIES=	graphics gnome
-MASTER_SITES=	https://launchpadlibrarian.net/332184472/ \
-		https://inkscape.org/en/gallery/item/11254/ \
-		LOCAL/kwm
+MASTER_SITES=	https://inkscape.org/en/gallery/item/12187/
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Full featured open source SVG editor
@@ -24,12 +21,13 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 		libgsl.so:math/gsl \
 		libgtkspell.so:textproc/gtkspell \
 		liblcms2.so:graphics/lcms2 \
+		libfribidi.so:converters/fribidi \
+		libaspell.so:textproc/aspell \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libpotrace.so:graphics/libpotrace \
 		libpng.so:graphics/png \
 		libMagick++-6.so:graphics/ImageMagick
-#aspell?
 
 USE_GNOME=	gtkmm24 libxml2 libxslt
 USES=		compiler:c++11-lib cmake cpe desktop-file-utils gnome \

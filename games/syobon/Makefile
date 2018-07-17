@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/syobon/Makefile 467137 2018-04-12 09:33:36Z amdmi3 $
+# $FreeBSD: head/games/syobon/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	syobon
 PORTVERSION=	1.0.1
@@ -15,6 +15,9 @@ LICENSE=	NONE
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Platform game as Super Mario Bros
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

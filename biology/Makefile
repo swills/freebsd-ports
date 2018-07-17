@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 473806 2018-07-03 08:42:54Z yuri $
+# $FreeBSD: head/biology/Makefile 474558 2018-07-13 07:02:16Z yuri $
 #
 
     COMMENT = Biology
@@ -26,6 +26,7 @@
     SUBDIR += ddocent
     SUBDIR += diamond
     SUBDIR += emboss
+    SUBDIR += exonerate
     SUBDIR += fasta
     SUBDIR += fasta3
     SUBDIR += fastahack
@@ -125,6 +126,7 @@
     SUBDIR += slclust
     SUBDIR += smithwaterman
     SUBDIR += stacks
+    SUBDIR += stringtie
     SUBDIR += tRNAscan-SE
     SUBDIR += t_coffee
     SUBDIR += tabixpp

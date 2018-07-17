@@ -1,6 +1,6 @@
-# $FreeBSD: head/net-mgmt/seafile-server/Makefile.include 472346 2018-06-13 22:05:51Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-server/Makefile.include 474649 2018-07-14 19:42:58Z ultima $
 
-SEAFILE_VER=6.3.1
+SEAFILE_VER=6.3.2
 SEAHUB_VER=6.3.1
 
 

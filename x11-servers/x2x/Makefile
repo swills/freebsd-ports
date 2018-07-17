@@ -1,33 +1,27 @@
 # Created by: grog
-# $FreeBSD: head/x11-servers/x2x/Makefile 352744 2014-05-01 10:44:16Z pawel $
+# $FreeBSD: head/x11-servers/x2x/Makefile 474782 2018-07-17 07:48:35Z yuri $
 
 PORTNAME=	x2x
-PORTVERSION=	1.27
-PORTREVISION=	3
+PORTVERSION=	1.30.20180709
 CATEGORIES=	x11-servers
-MASTER_SITES=	GHC
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program to link multiple X servers together
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		autoreconf gmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dottedmag
-
-WRKSRC=		${WRKDIR}/${DISTNAME}
-
-USES=		imake
+GH_TAGNAME=	e62a535
+GNU_CONFIGURE=	yes
 USE_XORG=	x11 xext xtst
 
+OPTIONS_DEFINE=	DOCS
+
+PORTDOCS=	*
+
 PLIST_FILES=	bin/x2x man/man1/x2x.1.gz
-
-post-extract:
-	@${LN} -sf x2x.1 ${WRKSRC}/x2x.man
-
-post-patch:
-	@${REINPLACE_CMD} -e \
-		'/CC =/s|^|XCOMM| ; \
-		 /CDEBUGFLAGS =/s|^|XCOMM|' ${WRKSRC}/Imakefile
 
 .include <bsd.port.mk>

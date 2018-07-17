@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/k3b/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/k3b/Makefile 474596 2018-07-13 17:41:56Z tcberner $
 
 PORTNAME=	k3b
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	sysutils multimedia kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

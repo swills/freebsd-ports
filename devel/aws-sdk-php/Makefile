@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/aws-sdk-php/Makefile 472805 2018-06-19 16:53:34Z garga $
+# $FreeBSD: head/devel/aws-sdk-php/Makefile 474737 2018-07-16 13:11:57Z garga $
 
 PORTNAME=	aws-sdk
-PORTVERSION=	3.61.8
+PORTVERSION=	3.63.1
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/aws/${PORTNAME}-php/releases/download/${PORTVERSION}/
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}

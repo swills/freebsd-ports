@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/fastd-devel/Makefile 462272 2018-02-19 03:59:25Z linimon $
+# $FreeBSD: head/security/fastd-devel/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=		fastd
 PORTVERSION=		18.a.20151111
@@ -15,6 +15,8 @@ LICENSE=		BSD2CLAUSE
 LICENSE_FILE=		${WRKSRC}/COPYRIGHT
 
 BROKEN=			fails to build: cipher_aes128_ctr_nacl.c:36:10: 'crypto_stream_aes128ctr.h' file not found
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 LIB_DEPENDS=		libjson-c.so:devel/json-c       \
 			libsodium.so:security/libsodium \

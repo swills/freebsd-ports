@@ -1,5 +1,5 @@
 # Created by: jedgar@fxp.org
-# $FreeBSD: head/databases/dbf2mysql/Makefile 434335 2017-02-18 09:01:37Z amdmi3 $
+# $FreeBSD: head/databases/dbf2mysql/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	dbf2mysql
 PORTVERSION=	1.14
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Programs to convert .dbf files to MySQL tables and vice versa
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 USES=		mysql
 

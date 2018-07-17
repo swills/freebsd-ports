@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net/uget/Makefile 466339 2018-04-03 11:55:33Z wen $
+# $FreeBSD: head/net/uget/Makefile 474815 2018-07-17 17:31:28Z joneum $
 
 PORTNAME=	uget
 PORTVERSION=	2.2.1
 CATEGORIES=	net
 MASTER_SITES=	SF/urlget/${PORTNAME}%20%28stable%29/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ndowens.fbsd@yandex.com
 COMMENT=	Lightweight and full-featured graphical download manager
 
 LICENSE=	LGPL21

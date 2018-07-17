@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 473725 2018-07-02 10:52:33Z vanilla $
+# $FreeBSD: head/deskutils/Makefile 474751 2018-07-16 17:07:19Z rene $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -201,9 +201,6 @@
     SUBDIR += p5-Data-ICal
     SUBDIR += p5-Data-ICal-DateTime
     SUBDIR += p5-Goo
-    SUBDIR += p5-ZConf-BGSet
-    SUBDIR += p5-ZConf-Runner
-    SUBDIR += p5-ZConf-Runner-GUI-GTK
     SUBDIR += pal
     SUBDIR += parcellite
     SUBDIR += phpcollab

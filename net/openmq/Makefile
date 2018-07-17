@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@sendmail.cz>
-# $FreeBSD: head/net/openmq/Makefile 464224 2018-03-12 06:50:26Z antoine $
+# $FreeBSD: head/net/openmq/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	openmq
 PORTVERSION=	4.5.2.p.1
@@ -19,6 +19,8 @@ LICENSE=	GPLv2 CDDL
 LICENSE_COMB=	dual
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 SRCDIST=	mq4_5_2p1-source.zip
 BOOTJARS=	javaee-api-6.0.jar:2 \

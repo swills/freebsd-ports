@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/pydio/Makefile 462542 2018-02-21 20:48:59Z tobik $
+# $FreeBSD: head/www/pydio/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	pydio
 PORTVERSION=	8.0.2
@@ -14,6 +14,8 @@ LICENSE=	AGPLv3
 PORTSCOUT=	limitw:1,even
 
 BROKEN=		It is wrong to have the entire files owned by www user
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 NO_BUILD=	yes
 NO_ARCH=	yes

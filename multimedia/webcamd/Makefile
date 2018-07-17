@@ -1,8 +1,8 @@
 # Created by: Andrew Thompson <thompsa@FreeBSD.org>
-# $FreeBSD: head/multimedia/webcamd/Makefile 441758 2017-05-26 07:48:34Z kwm $
+# $FreeBSD: head/multimedia/webcamd/Makefile 474638 2018-07-14 11:09:46Z hselasky $
 
 PORTNAME=	webcamd
-PORTVERSION=	4.12.0.1
+PORTVERSION=	4.17.0.3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.selasky.org/hans_petter/distfiles/ \
 		http://home.selasky.org:8192/distfiles/

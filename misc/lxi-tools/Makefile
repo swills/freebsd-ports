@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/lxi-tools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/lxi-tools/Makefile 474511 2018-07-12 13:01:13Z joneum $
 
 PORTNAME=	lxi-tools
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.20
+DISTVERSION=	1.21
 CATEGORIES=	misc
 
 MAINTAINER=	dg@syrec.org

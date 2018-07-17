@@ -1,5 +1,5 @@
 # Created by: mi
-# $FreeBSD: head/java/jode/Makefile 469183 2018-05-06 08:33:58Z amdmi3 $
+# $FreeBSD: head/java/jode/Makefile 474667 2018-07-15 07:45:18Z antoine $
 
 PORTNAME=	jode
 PORTVERSION=	1.1.1.1
@@ -19,8 +19,9 @@ USE_JAVA=	yes
 JAVA_VERSION=	1.6+
 NEED_JAVAC=	yes
 GNU_CONFIGURE=	yes
-USES=		gmake perl5:test shebangfix
+USES=		gmake perl5 shebangfix
 SHEBANG_FILES=	${WRKSRC}/jcpp
+USE_PERL5=	test
 MAKE_JOBS_UNSAFE=	yes
 TEST_TARGET=	check
 

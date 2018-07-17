@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-IBMQuantumExperience/Makefile 474097 2018-07-07 14:51:46Z yuri $
+# $FreeBSD: head/devel/py-IBMQuantumExperience/Makefile 474644 2018-07-14 18:42:29Z yuri $
 
 PORTNAME=	IBMQuantumExperience
-DISTVERSION=	1.9.8
+DISTVERSION=	1.9.9
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

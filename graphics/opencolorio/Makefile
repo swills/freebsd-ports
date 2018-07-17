@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/opencolorio/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/opencolorio/Makefile 474730 2018-07-16 11:12:21Z swills $
 
 PORTNAME=	opencolorio
 PORTVERSION=	1.0.9
@@ -36,13 +36,6 @@ CMAKE_ARGS+=	-DOCIO_USE_SSE:BOOL=ON
 .else
 CMAKE_ARGS+=	-DOCIO_USE_SSE:BOOL=OFF
 .endif
-
-BROKEN_aarch64=		Does not compile: error: use of undeclared identifier __builtin_ia32_emms
-BROKEN_armv6=		Does not compile: error: use of undeclared identifier __builtin_ia32_emms
-BROKEN_armv7=		Does not compile: error: use of undeclared identifier __builtin_ia32_emms
-BROKEN_mips64=		Does not compile: error: unrecognized command line option -msse2
-BROKEN_powerpc64=	Does not compile: error: unrecognized command line option -msse2
-BROKEN_sparc64=		Does not compile: error: unrecognized command line option -msse2
 
 .include <bsd.port.options.mk>
 

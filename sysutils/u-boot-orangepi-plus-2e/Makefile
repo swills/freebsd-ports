@@ -1,7 +1,6 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/sysutils/u-boot-orangepi-plus-2e/Makefile 474371 2018-07-10 14:01:13Z lwhsu $
+# $FreeBSD: head/sysutils/u-boot-orangepi-plus-2e/Makefile 474536 2018-07-12 21:05:37Z linimon $
 
-MAINTAINER=	uboot@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		orangepi-plus-2e

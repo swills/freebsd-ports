@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/devel/gdbmods/Makefile 447013 2017-08-01 09:01:12Z amdmi3 $
+# $FreeBSD: head/devel/gdbmods/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	gdbmods
 PORTVERSION=	20020824
@@ -13,6 +13,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Wrapper for gdb -k to provide kld symbol information
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 NO_BUILD=	yes
 NO_ARCH=	yes

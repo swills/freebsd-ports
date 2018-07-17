@@ -1,5 +1,5 @@
 # Created by: tundra
-# $FreeBSD: head/sysutils/tdir/Makefile 462320 2018-02-19 14:01:41Z amdmi3 $
+# $FreeBSD: head/sysutils/tdir/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	tdir
 PORTVERSION=	1.71
@@ -11,6 +11,8 @@ MAINTAINER=	tdir@tundraware.com
 COMMENT=	Advanced file directory display utility
 
 BROKEN=		license forbids modification, but the port cannot be used without it
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 LICENSE=	TundraWare
 LICENSE_NAME=	TundraWare license

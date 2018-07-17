@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/dogecoin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/dogecoin/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	dogecoin
 PORTVERSION=	1.10.0
@@ -7,12 +7,14 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	6
 CATEGORIES=	net-p2p finance
 
-MAINTAINER=	ehaupt@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	P2P crypto currency client favored by shiba inus worldwide
 
 LICENSE=	MIT
 
 BROKEN=		fails to build with boost 1.66, see bug 224131
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 NOT_FOR_ARCHS=		powerpc powerpc64 sparc64
 NOT_FOR_ARCHS_REASON=	fails to configure: "Big Endian not supported"
 

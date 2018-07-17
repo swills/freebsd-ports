@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-asset_sync220/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/net/rubygem-asset_sync220/Makefile 474739 2018-07-16 14:36:51Z mfechner $
 
 PORTNAME=	asset_sync
 PORTVERSION=	2.2.0
@@ -10,6 +10,9 @@ MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Synchronizes Assets between Rails and S3
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab-ce. Please use net/rubygem-asset_sync instead.
+EXPIRATION_DATE=	2018-07-31
 
 RUN_DEPENDS=	rubygem-activemodel4>=4.1.0:databases/rubygem-activemodel4 \
 		rubygem-fog-core>=0:devel/rubygem-fog-core \

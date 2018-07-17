@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/sc3-plugins/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/audio/sc3-plugins/Makefile 474819 2018-07-17 17:49:40Z yuri $
 
 PORTNAME=	sc3-plugins
 DISTVERSIONPREFIX=	Version-
 DISTVERSION=	3.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

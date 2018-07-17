@@ -1,5 +1,5 @@
 # Created by: Tim Robbins
-# $FreeBSD: head/net/coda6_server/Makefile 463587 2018-03-04 16:58:30Z antoine $
+# $FreeBSD: head/net/coda6_server/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	coda
 PORTVERSION=	6.9.4
@@ -15,6 +15,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Server programs for a replicated high-performance network file system
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 LIB_DEPENDS=	liblwp.so:devel/lwp \
 		librpc2.so:devel/rpc2 \

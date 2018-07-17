@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Sunny/Makefile 450822 2017-09-28 10:41:16Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Sunny/Makefile 474593 2018-07-13 15:22:00Z wen $
 
 PORTNAME=	DBIx-Sunny
-PORTVERSION=	0.24
+PORTVERSION=	0.25
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

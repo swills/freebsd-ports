@@ -1,15 +1,14 @@
 # Created by: chris
-# $FreeBSD: head/mail/spampd/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/spampd/Makefile 474724 2018-07-16 09:53:15Z grembo $
 
 PORTNAME=	spampd
-PORTVERSION=	2.42
-PORTREVISION=	2
+PORTVERSION=	2.51
 CATEGORIES=	mail perl5
 
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Spamassassin SMTP Proxy
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 
 RUN_DEPENDS=	spamc:mail/spamassassin \
 		p5-Net-Server>=0:net/p5-Net-Server

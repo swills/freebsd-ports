@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cherivis-devel/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/devel/cherivis-devel/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	cherivis-devel
 PORTVERSION=	0.4
@@ -11,6 +11,8 @@ COMMENT=	Visualisation tool for CHERI / BERI streamtraces
 
 LICENSE=	MIT
 
+DEPRECATED=	Depends on broken and expiring cheritrace-devel
+EXPIRATION_DATE=	2018-08-20
 BROKEN_aarch64=		does not compile: error: unexpected token in argument list
 
 USES=		gnustep

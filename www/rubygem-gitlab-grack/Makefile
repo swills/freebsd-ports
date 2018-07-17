@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/rubygem-gitlab-grack/Makefile 440894 2017-05-14 18:53:43Z sunpoet $
+# $FreeBSD: head/www/rubygem-gitlab-grack/Makefile 474771 2018-07-17 03:44:08Z miwi $
 
 PORTNAME=	gitlab-grack
 PORTVERSION=	2.0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

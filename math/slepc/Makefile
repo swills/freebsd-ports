@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/slepc/Makefile 473809 2018-07-03 09:23:10Z yuri $
+# $FreeBSD: head/math/slepc/Makefile 474595 2018-07-13 17:18:41Z antoine $
 
 PORTNAME=	slepc
 DISTVERSION=	3.9.2
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libmpich.so:net/mpich2 \
 		libpetsc.so:science/PETSc
 
-USES=		gmake fortran python shebangfix
+USES=		gmake fortran python:2.7 shebangfix
 SHEBANG_FILES=	configure
 MAKEFILE=	makefile
 MAKE_ENV=	PETSC_DIR=${LOCALBASE} PETSC_ARCH="" SLEPC_DIR=${WRKSRC} FREEBSD_STAGEDIR=${STAGEDIR} PYTHON=${PYTHON_CMD}

@@ -1,5 +1,5 @@
 # Created by: Joe Greco <jgreco@ns.sol.net>
-# $FreeBSD: head/security/tripwire12/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/security/tripwire12/Makefile 474755 2018-07-16 19:49:35Z cy $
 
 PORTNAME=	tripwire
 PORTVERSION=	1.2
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	12
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	File system security and verification program
 
+BROKEN=		unfetchable
+DEPRECATED=	unfetchable
+EXPIRATION_DATE=	2018-07-31
 NO_CDROM=	cannot be redistributed for more than the cost of duplication
 NO_PACKAGE=	requires local database to be built
 ONLY_FOR_ARCHS=	i386

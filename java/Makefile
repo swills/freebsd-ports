@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/Makefile 472705 2018-06-18 18:00:28Z lev $
+# $FreeBSD: head/java/Makefile 474750 2018-07-16 16:59:24Z ale $
 #
 
     COMMENT = Java language support
@@ -37,7 +37,6 @@
     SUBDIR += intellij-rubymine
     SUBDIR += intellij-ultimate
     SUBDIR += jad
-    SUBDIR += jaf
     SUBDIR += jai
     SUBDIR += jakarta-bcel
     SUBDIR += jakarta-commons-beanutils

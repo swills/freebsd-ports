@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/gobuffalo/Makefile 463776 2018-03-07 08:06:24Z yuri $
+# $FreeBSD: head/www/gobuffalo/Makefile 474516 2018-07-12 13:46:33Z swills $
 
 PORTNAME=	gobuffalo
 PORTVERSION=	0.10.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Go web development eco-system, designed to make the life easier
 
 LICENSE=	MIT

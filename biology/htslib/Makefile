@@ -1,8 +1,8 @@
 # Created by: Reed A. Cartwright <cartwright@asu.edu>
-# $FreeBSD: head/biology/htslib/Makefile 452840 2017-10-25 10:19:50Z pizzamig $
+# $FreeBSD: head/biology/htslib/Makefile 474752 2018-07-16 18:11:44Z yuri $
 
 PORTNAME=	htslib
-PORTVERSION=	1.6
+DISTVERSION=	1.8
 CATEGORIES=	biology devel
 
 MAINTAINER=	cartwright@asu.edu
@@ -14,10 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	bash:shells/bash
 
+USES=		autoreconf gmake localbase pathfix perl5 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	samtools
-
-USES=		autoreconf gmake pathfix perl5 shebangfix
 USE_PERL5=	test
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
@@ -28,11 +27,9 @@ OPTIONS_DEFINE=		CURL
 OPTIONS_DEFAULT=	CURL
 
 CURL_DESC=		Use libcurl for network file access (HTTPS and S3 support).
+CURL_USES=		ssl
 CURL_LIB_DEPENDS=	libcurl.so:ftp/curl
 CURL_CONFIGURE_ENABLE=	libcurl
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 PLIST_SUB=	PORTVERSION="${PORTVERSION}"
 

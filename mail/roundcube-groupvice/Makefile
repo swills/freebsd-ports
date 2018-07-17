@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/mail/roundcube-groupvice/Makefile 473875 2018-07-04 09:37:36Z amdmi3 $
+# $FreeBSD: head/mail/roundcube-groupvice/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	groupvice
 PORTVERSION=	0.1.2
@@ -13,6 +13,9 @@ COMMENT=	Theme for RoundCube Web Mail
 
 LICENSE=	NONE APACHE20
 LICENSE_COMB=	multi
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.2:mail/roundcube@${PHP_FLAVOR}
 

@@ -1,23 +1,22 @@
 # Created by: Andrei Lavreniyuk <andy.lavr@gmail.com>
-# $FreeBSD: head/net/torsocks/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/net/torsocks/Makefile 474760 2018-07-16 23:15:58Z yuri $
 
 PORTNAME=	torsocks
 PORTVERSION=	2.2.0
-DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net security
+MASTER_SITES=	https://people.torproject.org/~dgoulet/${PORTNAME}/
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Easy way to make any app work through Tor
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/gpl-2.0.txt
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	dgoulet
-
+USES=		alias gmake libtool tar:xz
 GNU_CONFIGURE=	yes
-USES=		alias autoreconf gmake libtool
-USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+USE_LDCONFIG=	yes
 
 SUB_FILES=	pkg-message
 

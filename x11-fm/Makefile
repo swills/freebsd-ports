@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/Makefile 470105 2018-05-16 07:36:15Z rakuco $
+# $FreeBSD: head/x11-fm/Makefile 474751 2018-07-16 17:07:19Z rene $
 #
 
     COMMENT = X11 file managers
@@ -23,7 +23,6 @@
     SUBDIR += mucommander
     SUBDIR += nautilus
     SUBDIR += nemo
-    SUBDIR += p5-PerlFM
     SUBDIR += pcmanfm
     SUBDIR += pcmanfm-qt
     SUBDIR += pcmanfmqt-l10n
