@@ -1,8 +1,8 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/security/gopass/Makefile 472689 2018-06-18 13:15:23Z swills $
+# $FreeBSD: head/security/gopass/Makefile 474577 2018-07-13 11:53:51Z swills $
 
 PORTNAME=	gopass
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

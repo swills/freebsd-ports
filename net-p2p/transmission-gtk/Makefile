@@ -1,34 +1,20 @@
-# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 463262 2018-02-28 21:09:36Z crees $
+# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 474727 2018-07-16 11:08:17Z tcberner $
+PORTREVISION=	1
 
 PKGNAMESUFFIX=	-gtk
 
-MAINTAINER=	crees@FreeBSD.org
-COMMENT=	Fast and lightweight GTK+3 BitTorrent client
+LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
+		libnotify.so:devel/libnotify
+RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
-LIB_DEPENDS=	${GEN_LIB_DEPENDS} \
-		libnotify.so:devel/libnotify \
-		libdbus-glib-1.so:devel/dbus-glib
+USES=		desktop-file-utils gnome ssl
+NLS_USES=	gettext-tools:build
+USE_GNOME=	cairo gdkpixbuf2 gtk30 intlhack pango
 
-RUN_DEPENDS=	${GEN_RUN_DEPENDS} \
-		xdg-open:devel/xdg-utils
-
-DESCR=		${.CURDIR}/pkg-descr
 MASTERDIR=	${.CURDIR}/../transmission-cli
+DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
+
 SLAVEPORT=	gtk
-
-USE_GNOME=	cairo gtk30 intlhack
-USES=		gettext pathfix desktop-file-utils
-INSTALLS_ICONS=	yes
-
-EXTRA_CONF_ARGS=--disable-cli \
-		--disable-daemon \
-		--with-gtk \
-		--disable-mac \
-		--enable-nls
-
-post-patch: general-patch
-	@${REINPLACE_CMD} -e 's|TryExec=.*||g ; /^$$/d' \
-		${WRKSRC}/gtk/transmission-gtk.desktop.in
 
 .include "${MASTERDIR}/Makefile"

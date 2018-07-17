@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 474594 2018-07-13 15:30:17Z olgeni $
 
 PORTNAME=	ex_doc
-PORTVERSION=	0.18.3
+PORTVERSION=	0.18.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elixir-

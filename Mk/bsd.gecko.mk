@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 473091 2018-06-22 22:21:29Z rene $
+# $FreeBSD: head/Mk/bsd.gecko.mk 474546 2018-07-13 03:08:53Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -92,7 +92,7 @@ CONFIGURE_OUTSOURCE=	yes
 BUNDLE_LIBS=	yes
 
 .if ${MOZILLA_VER:R:R} >= 49
-USES+=		compiler:c++14-lang
+USES+=		compiler:c++17-lang
 CPPFLAGS+=	-D_GLIBCXX_USE_C99 -D_GLIBCXX_USE_C99_MATH_TR1 \
 			-D_DECLARE_C99_LDBL_MATH # XXX ports/193528
 .else
@@ -114,7 +114,7 @@ BUILD_DEPENDS+=	${LOCALBASE}/bin/python${PYTHON3_DEFAULT}:lang/python${PYTHON3_D
 MOZ_EXPORT+=	PYTHON3="${LOCALBASE}/bin/python${PYTHON3_DEFAULT}"
 .endif
 
-.if ${OPSYS} == FreeBSD && ${OSREL} == 11.1
+.if ${OPSYS} == FreeBSD && ${OSREL} == 11.1 && ${MOZILLA_VER:R:R} < 49
 LLD_UNSAFE=	yes
 .endif
 

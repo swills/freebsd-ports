@@ -1,5 +1,5 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/math/openlibm/Makefile 472808 2018-06-19 17:56:19Z swills $
+# $FreeBSD: head/math/openlibm/Makefile 474527 2018-07-12 17:31:03Z yuri $
 
 PORTNAME=	openlibm
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,6 @@ LICENSE=	MIT ISCL BSD2CLAUSE
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-BROKEN_aarch64=		fails to compile: the clang compiler does not support -march=aarch64
 BROKEN_armv6=		fails to compile: a parameter list without types is only allowed in a function definition
 BROKEN_armv7=		fails to compile: a parameter list without types is only allowed in a function definition
 BROKEN_mips=		fails to compile: No rule to make target mips/Make.files

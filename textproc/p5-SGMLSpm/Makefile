@@ -1,5 +1,5 @@
 # Created by: Brian Candler <B.Candler@pobox.com>
-# $FreeBSD: head/textproc/p5-SGMLSpm/Makefile 470918 2018-05-26 17:48:14Z sunpoet $
+# $FreeBSD: head/textproc/p5-SGMLSpm/Makefile 474500 2018-07-12 10:29:33Z romain $
 
 PORTNAME=	SGMLSpm
 PORTVERSION=	1.03
@@ -36,7 +36,7 @@ DOCS_INSTALL_TARGET=	docs install_html HTMLDIR=${STAGEDIR}${DOCSDIR}
 pre-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 
-pre-install-EXAMPLES-on:
+pre-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

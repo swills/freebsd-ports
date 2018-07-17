@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 472856 2018-06-20 08:56:04Z yuri $
+# $FreeBSD: head/net-p2p/Makefile 474704 2018-07-15 17:01:05Z tcberner $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -92,8 +92,7 @@
     SUBDIR += transmission-cli
     SUBDIR += transmission-daemon
     SUBDIR += transmission-gtk
-    SUBDIR += transmission-qt4
-    SUBDIR += transmission-qt5
+    SUBDIR += transmission-qt
     SUBDIR += transmission-remote-gui
     SUBDIR += tribler
     SUBDIR += twister

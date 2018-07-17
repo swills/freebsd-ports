@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-json_tricks/Makefile 470678 2018-05-23 06:47:39Z yuri $
+# $FreeBSD: head/devel/py-json_tricks/Makefile 474643 2018-07-14 18:41:47Z yuri $
 
 PORTNAME=	json_tricks
-DISTVERSION=	3.12.1
+DISTVERSION=	3.12.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

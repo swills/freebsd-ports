@@ -1,8 +1,8 @@
 # Created by: Hiroto Kagotani <hiroto.kagotani@gmail.com>
-# $FreeBSD: head/japanese/libskk/Makefile 473143 2018-06-23 17:11:11Z yuri $
+# $FreeBSD: head/japanese/libskk/Makefile 474705 2018-07-15 17:10:18Z meta $
 
 PORTNAME=	libskk
-DISTVERSION=	1.0.3
+DISTVERSION=	1.0.4
 CATEGORIES=	japanese
 
 MAINTAINER=	hiroto.kagotani@gmail.com

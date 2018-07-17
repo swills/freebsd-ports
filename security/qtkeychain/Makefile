@@ -1,13 +1,12 @@
-# $FreeBSD: head/security/qtkeychain/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/qtkeychain/Makefile 474717 2018-07-16 07:45:23Z arrowd $
 
 PORTNAME=	qtkeychain
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.8.0
-PORTREVISION=	1
+DISTVERSION=	0.9.0
 CATEGORIES=	security
 PKGNAMESUFFIX=	-${FLAVOR}
 
-MAINTAINER=	6yearold@gmail.com
+MAINTAINER=	arrowd@FreeBSD.org
 COMMENT=	Platform independent Qt API for storing passwords
 
 LICENSE=	BSD2CLAUSE

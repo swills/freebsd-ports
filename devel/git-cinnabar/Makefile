@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/git-cinnabar/Makefile 473133 2018-06-23 14:42:32Z jbeich $
+# $FreeBSD: head/devel/git-cinnabar/Makefile 474713 2018-07-15 23:31:52Z jbeich $
 
 PORTNAME=	git-cinnabar
-DISTVERSION=	0.5.0b3-2
-DISTVERSIONSUFFIX=	-gaaabee0
+DISTVERSION=	0.5.0b4
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -26,6 +25,7 @@ MAKE_ENV!=	${MAKE} -V MAKE_ENV -C ${.CURDIR}/../git
 MAKE_ARGS!=	${MAKE} -V MAKE_ARGS -C ${.CURDIR}/../git
 .endif
 MAKE_ENV+=	PYTHON_PATH="${PYTHON_CMD}"
+MAKE_ARGS+=	SUBMODULE_STATUS=dummy
 DATADIR=	${PREFIX}/libexec/git-core
 PORTDATA=	*
 PORTDOCS=	README.md

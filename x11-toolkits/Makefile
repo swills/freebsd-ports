@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 472175 2018-06-11 09:00:49Z yuri $
+# $FreeBSD: head/x11-toolkits/Makefile 474468 2018-07-11 16:44:34Z novel $
 #
 
     COMMENT = X11 toolkits
@@ -213,6 +213,7 @@
     SUBDIR += py-qt4-gui
     SUBDIR += py-qt5-gui
     SUBDIR += py-qt5-quick
+    SUBDIR += py-qt5-quickwidgets
     SUBDIR += py-qt5-widgets
     SUBDIR += py-sexy
     SUBDIR += py-tkinter

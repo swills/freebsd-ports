@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-tox/Makefile 472042 2018-06-09 07:26:05Z koobs $
+# $FreeBSD: head/devel/py-tox/Makefile 474555 2018-07-13 06:55:32Z mat $
 
 PORTNAME=	tox
 PORTVERSION=	3.0.0
@@ -21,8 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}py>=1.4.17:devel/py-py@${PY_FLAVOR} \
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.0:devel/py-pytest@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-mock>0:devel/py-pytest-mock@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-timeout>0:devel/py-pytest-timeout@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-xdist>0:devel/py-pytest-xdist@${PY_FLAVOR} \
-		python:lang/python
+		${PYTHON_PKGNAMEPREFIX}pytest-xdist>0:devel/py-pytest-xdist@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

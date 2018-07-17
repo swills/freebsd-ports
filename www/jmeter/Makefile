@@ -1,8 +1,9 @@
 # Created by: Ernst de Haan <znerd@FreeBSD.org>
-# $FreeBSD: head/www/jmeter/Makefile 438340 2017-04-12 09:10:08Z mat $
+# $FreeBSD: head/www/jmeter/Makefile 474750 2018-07-16 16:59:24Z ale $
 
 PORTNAME=	apache-jmeter
 PORTVERSION=	2.11
+PORTREVISION=	1
 CATEGORIES=	www benchmarks java
 MASTER_SITES=	APACHE/jmeter/binaries
 
@@ -14,7 +15,7 @@ LICENSE=	APACHE20
 # These are JAR-files installed by other ports. The list should keep
 # growing until all Java applications install just their own JARs -- not
 # the 3rd-party ones:
-RUN_DEPENDS=	${JAVALIBDIR}/activation.jar:java/jaf	\
+RUN_DEPENDS=	\
 		${JAVALIBDIR}/avalon-framework.jar:devel/avalon-framework	\
 		${JAVALIBDIR}/commons-codec.jar:java/jakarta-commons-codec	\
 		${JAVALIBDIR}/commons-collections.jar:java/jakarta-commons-collections	\

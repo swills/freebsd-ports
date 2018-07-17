@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/misc/tdfiglet/Makefile 473886 2018-07-04 14:01:00Z zi $
+# $FreeBSD: head/misc/tdfiglet/Makefile 474654 2018-07-15 01:01:35Z zi $
 
 PORTNAME=	tdfiglet
-PORTVERSION=	0.0.0.1
+PORTVERSION=	0.3
 CATEGORIES=	misc
 
 MAINTAINER=	zi@FreeBSD.org
@@ -13,11 +13,9 @@ ALL_TARGET=	default
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tat3r
-GH_TAGNAME=	b0860ce
-#GH_TAGNAME=	b0860ceca3f8d7fa9e3fa8180a0e491d06494afe
 
 post-patch:
-	@${REINPLACE_CMD} -e "s,fonts,${DATADIR}," ${WRKSRC}/${PORTNAME}.c
+	@${REINPLACE_CMD} -Ee "s,^(FONTDIR := ).*,\1${DATADIR}," ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

@@ -1,8 +1,9 @@
 # Created by: Eugene Grosbein <ports@grosbein.net>
-# $FreeBSD: head/java/bouncycastle15/Makefile 457500 2017-12-29 09:21:11Z eugen $
+# $FreeBSD: head/java/bouncycastle15/Makefile 474750 2018-07-16 16:59:24Z ale $
 
 PORTNAME=	bouncycastle
-PORTVERSION=	1.59
+PORTVERSION=	1.60
+PORTREVISION=	1
 CATEGORIES=	java security
 MASTER_SITES=	http://www.bouncycastle.org/download/ \
 		http://polydistortion.net/bc/download/
@@ -14,11 +15,9 @@ COMMENT=	Cleanroom build of Java Cryptography Extensions
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${JAVALIBDIR}/activation.jar:java/jaf \
-		${JAVALIBDIR}/mail.jar:java/javamail \
+BUILD_DEPENDS=	${JAVALIBDIR}/mail.jar:java/javamail \
 		${JAVALIBDIR}/junit.jar:java/junit
-RUN_DEPENDS=	${JAVALIBDIR}/activation.jar:java/jaf \
-		${JAVALIBDIR}/mail.jar:java/javamail
+RUN_DEPENDS=	${JAVALIBDIR}/mail.jar:java/javamail
 
 OPTIONS_DEFINE=	DOCS ZIPSRC
 OPTIONS_DEFAULT=	ZIPSRC

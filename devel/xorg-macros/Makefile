@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/devel/xorg-macros/Makefile 469527 2018-05-10 10:23:25Z zeising $
+# $FreeBSD: head/devel/xorg-macros/Makefile 474634 2018-07-14 09:37:42Z amdmi3 $
 
 PORTNAME=	xorg-macros
 PORTVERSION=	1.19.2
@@ -10,6 +10,7 @@ MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X.Org development aclocal macros
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	util
 

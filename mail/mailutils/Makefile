@@ -1,5 +1,5 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/mail/mailutils/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/mail/mailutils/Makefile 474555 2018-07-13 06:55:32Z mat $
 
 PORTNAME=	mailutils
 PORTVERSION=	3.4
@@ -62,7 +62,7 @@ NLS_CONFIGURE_ENABLE=	nls
 
 PAM_CONFIGURE_ENABLE=	pam
 
-PYTHON_BUILD_DEPENDS=	python-config:lang/python
+PYTHON_BINARY_ALIAS=	python-config=python${PYTHON_VER}-config
 PYTHON_USES=		python:2.7
 PYTHON_CONFIGURE_ENABLE=python
 

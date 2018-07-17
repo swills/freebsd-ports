@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/www/xist/Makefile 470176 2018-05-16 23:55:43Z sunpoet $
+# $FreeBSD: head/www/xist/Makefile 474686 2018-07-15 11:46:39Z wen $
 
 PORTNAME=	xist
-PORTVERSION=	5.33
+PORTVERSION=	5.34
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		http://ftp.livinglogic.de/xist/

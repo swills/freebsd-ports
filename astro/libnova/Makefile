@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/astro/libnova/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/astro/libnova/Makefile 474623 2018-07-14 08:11:36Z yuri $
 
 PORTNAME=	libnova
 PORTVERSION=	0.15.0
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/v%20${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Astronomical Calculation Library
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		autoreconf libtool
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/misc/xpns/Makefile 455042 2017-11-28 14:28:44Z amdmi3 $
+# $FreeBSD: head/misc/xpns/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	xpns
 PORTVERSION=	1.0
@@ -13,6 +13,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Petri-Net Simulator for Xwindows
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 NO_WRKSUBDIR=	yes
 

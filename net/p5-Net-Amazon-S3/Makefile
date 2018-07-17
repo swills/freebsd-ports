@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-Amazon-S3/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Amazon-S3/Makefile 474800 2018-07-17 14:36:15Z wen $
 
 PORTNAME=	Net-Amazon-S3
-PORTVERSION=	0.80
+PORTVERSION=	0.84
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

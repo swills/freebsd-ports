@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/dragon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/dragon/Makefile 474596 2018-07-13 17:41:56Z tcberner $
 
 PORTNAME=	dragon
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	multimedia kde kde-applications
 PKGNAMESUFFIX=	-player
 

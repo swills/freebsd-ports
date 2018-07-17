@@ -1,9 +1,9 @@
 # Created by: rasputin
-# $FreeBSD: head/java/bouncycastle/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/java/bouncycastle/Makefile 474750 2018-07-16 16:59:24Z ale $
 
 PORTNAME=	bouncycastle
 PORTVERSION=	1.45
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	java security
 MASTER_SITES=	http://downloads.bouncycastle.org/java/ \
 		http://polydistortion.net/bc/download/ \
@@ -13,11 +13,9 @@ DISTNAME=	crypto-${JARVERSION}
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Cleanroom build of Java Cryptography Extensions
 
-BUILD_DEPENDS=	${JAVALIBDIR}/activation.jar:java/jaf \
-		${JAVALIBDIR}/mail.jar:java/javamail \
+BUILD_DEPENDS=	${JAVALIBDIR}/mail.jar:java/javamail \
 		${JAVALIBDIR}/junit.jar:java/junit
-RUN_DEPENDS=	${JAVALIBDIR}/activation.jar:java/jaf \
-		${JAVALIBDIR}/mail.jar:java/javamail
+RUN_DEPENDS=	${JAVALIBDIR}/mail.jar:java/javamail
 
 OPTIONS_DEFINE=	DOCS
 

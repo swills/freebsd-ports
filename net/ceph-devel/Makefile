@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph-devel/Makefile 471033 2018-05-28 09:34:17Z amdmi3 $
+# $FreeBSD: head/net/ceph-devel/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	ceph
 DISTVERSION=	wip.v2017-08-15-1
@@ -14,6 +14,8 @@ LICENSE=	GPLv2 LGPL3
 LICENSE_COMB=	dual
 
 BROKEN=		fails to build with boost 1.66, see bug 224185
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 # even though i386 will build, it is not really advised.
 ONLY_FOR_ARCHS=	amd64
 IGNORE_FreeBSD_10=	Doesnt build for FreeBSD 10.x

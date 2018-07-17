@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qwt6/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qwt6/Makefile 474628 2018-07-14 09:10:54Z yuri $
 
 PORTNAME=	qwt
 PORTVERSION=	6.1.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	6-${FLAVOR}
@@ -15,7 +15,7 @@ FLAVOR?=	${FLAVORS:[1]}
 
 USES=		gmake qmake tar:bzip2
 USE_GL=		gl
-USE_LDCONFIG=	yes
+USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 DOCSDIR=	${PREFIX}/share/doc/qwt6-${FLAVOR}
 PORTDOCS=	*

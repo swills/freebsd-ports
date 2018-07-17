@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/powerpc64-gcc/Makefile 469834 2018-05-13 21:46:05Z kan $
+# $FreeBSD: head/devel/powerpc64-gcc/Makefile 474469 2018-07-11 16:50:00Z jhb $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMEPREFIX?=	powerpc64-
@@ -59,6 +60,10 @@ CFLAGS+=	-DCROSS_DIRECTORY_STRUCTURE
 
 .include <bsd.port.options.mk>
 .include <bsd.port.pre.mk>
+
+.if ${GCC_TARGET:M*${OPSYS:tl}*} != ""
+CONFIGURE_ARGS+= --enable-initfini-array
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e '/LIBSTDCXX/ s/stdc\+\+/c\+\+/g ' \

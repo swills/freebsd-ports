@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 473025 2018-06-22 08:37:44Z tota $
+# $FreeBSD: head/print/Makefile 474479 2018-07-11 21:16:26Z swills $
 #
 
     COMMENT = Desktop publishing
@@ -20,11 +20,11 @@
     SUBDIR += c2ps
     SUBDIR += catdvi
     SUBDIR += cdlabelgen
+    SUBDIR += cloud-print-connector
     SUBDIR += cloudprint
     SUBDIR += cups
     SUBDIR += cups-bjnp
     SUBDIR += cups-cloud-print
-    SUBDIR += cups-connector
     SUBDIR += cups-filters
     SUBDIR += cups-fxlinuxprint
     SUBDIR += cups-pdf

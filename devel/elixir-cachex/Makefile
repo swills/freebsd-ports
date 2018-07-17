@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-cachex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/elixir-cachex/Makefile 474712 2018-07-15 22:18:17Z olgeni $
 
 PORTNAME=	cachex
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

@@ -1,5 +1,5 @@
 # Created by: Volker Stolz <stolz@i2.informatik.rwth-aachen.de>
-# $FreeBSD: head/devel/as31/Makefile 445011 2017-07-04 09:00:19Z amdmi3 $
+# $FreeBSD: head/devel/as31/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	as31
 PORTVERSION=	2.0.b3
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free 8051 assembler
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 # GNU make(1) allows parallel (-jX) builds to work: we plug a race in
 # "bison" rule (which outputs multiple files) via order prerequisites

@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-gitaly-proto099/Makefile 470729 2018-05-23 23:23:49Z sunpoet $
+# $FreeBSD: head/net/rubygem-gitaly-proto099/Makefile 474739 2018-07-16 14:36:51Z mfechner $
 
 PORTNAME=	gitaly-proto
 PORTVERSION=	0.99.0

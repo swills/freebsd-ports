@@ -1,10 +1,10 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/upp/Makefile 463365 2018-03-02 03:00:22Z linimon $
+# $FreeBSD: head/devel/upp/Makefile 474699 2018-07-15 15:19:52Z fernape $
 
 PORTNAME=	upp
-DISTVERSION=	11540
+DISTVERSION=	11873
 CATEGORIES=	devel x11-toolkits
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/2017.2/
+MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/2018.1/
 DISTNAME=	${PORTNAME}-x11-src-${PORTVERSION}
 
 MAINTAINER=	m.sund@arcor.de
@@ -70,6 +70,8 @@ LLD_UNSAFE=	yes
 CXXFLAGS+=	-Wno-logical-op-parentheses
 .endif
 
+CXXFLAGS_i386+=	-msse2
+
 post-patch: .SILENT
 	${CP} ${BUILD_WRKSRC}/Makefile.in ${BUILD_WRKSRC}/Makefile
 	${CP} ${BUILD_WRKSRC}/uMakefile.in ${BUILD_WRKSRC}/uMakefile
@@ -125,7 +127,7 @@ do-build-UMK-on:
 
 do-install:
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} "${PORTDATA}" ${STAGEDIR}${DATADIR} \
-		"-not ( -type d -empty )")
+		"-not ( -type d -empty ) -o -name '*.orig'")
 	(cd ${STAGEDIR}${DATADIR}/uppsrc && ${RM} build_info.h *Makefile*)
 
 do-install-IDE-on:

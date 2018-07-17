@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 473275 2018-06-24 20:50:47Z antoine $
+# $FreeBSD: head/astro/Makefile 474751 2018-07-16 17:07:19Z rene $
 #
 
     COMMENT = Astronomical ports
@@ -77,7 +77,6 @@
     SUBDIR += p5-Misc-Quality
     SUBDIR += p5-Starlink-AST
     SUBDIR += p5-Weather-Underground
-    SUBDIR += p5-ZConf-Weather
     SUBDIR += phoon
     SUBDIR += planets
     SUBDIR += pp3

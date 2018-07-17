@@ -1,8 +1,7 @@
-# $FreeBSD: head/astro/marble/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/marble/Makefile 474596 2018-07-13 17:41:56Z tcberner $
 
 PORTNAME=	marble
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	astro kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

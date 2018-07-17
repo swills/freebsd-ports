@@ -1,5 +1,5 @@
 # Created by: roam@orbitel.bg
-# $FreeBSD: head/dns/ghtool/Makefile 462778 2018-02-24 09:02:59Z amdmi3 $
+# $FreeBSD: head/dns/ghtool/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	ghtool
 PORTVERSION=	1.0
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command-line interface to the resolver library
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 PLIST_FILES=	bin/gh
 

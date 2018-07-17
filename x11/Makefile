@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 473286 2018-06-25 00:47:02Z swills $
+# $FreeBSD: head/x11/Makefile 474690 2018-07-15 13:34:37Z tcberner $
 #
 
     COMMENT = Ports to support the X window system
@@ -6,6 +6,7 @@
     SUBDIR += 3ddesktop
     SUBDIR += 9box
     SUBDIR += 9menu
+    SUBDIR += admiral
     SUBDIR += alacritty
     SUBDIR += alltray
     SUBDIR += alttab

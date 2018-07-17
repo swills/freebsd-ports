@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libzim/Makefile 474436 2018-07-11 11:42:29Z swills $
+# $FreeBSD: head/devel/libzim/Makefile 474554 2018-07-13 06:55:26Z mat $
 
 PORTNAME=	libzim
 PORTVERSION=	4.0.0
@@ -6,8 +6,6 @@ CATEGORIES=	devel
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Reference implementation of the ZIM specification
-
-BUILD_DEPENDS=	python3-config:lang/python3
 
 LIB_DEPENDS=	libicui18n.so:devel/icu \
 		libxapian.so:databases/xapian-core
@@ -18,5 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	openzim
 # Using gcc6 and libstdc++ leads to error because xapian-core is linked with libc++
 BROKEN_FreeBSD_10=	/usr/include/c++/v1/memory:4004:35: error: no viable overloaded '='
+
+BINARY_ALIAS=	python3=python${PYTHON_VER} python3-config=python${PYTHON_VER}-config
 
 .include <bsd.port.mk>

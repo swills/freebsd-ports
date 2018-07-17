@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/net/l4ip/Makefile 438144 2017-04-10 11:15:27Z amdmi3 $
+# $FreeBSD: head/net/l4ip/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	l4ip
 PORTVERSION=	1.0.294
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	L4 health check daemon for IPFILTER
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 USES=		gmake ssl tar:tgz
 WRKSRC=		${WRKDIR}/${PORTNAME}/src

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/keepassx/Makefile 474457 2018-07-11 15:52:26Z swills $
+# $FreeBSD: head/security/keepassx/Makefile 474515 2018-07-12 13:45:51Z swills $
 
 PORTNAME=	KeePassX
 PORTVERSION=	0.4.4
@@ -8,7 +8,7 @@ MASTER_SITES=	https://www.keepassx.org/releases/${PORTVERSION}/ \
 		http://www.keepassx.org/releases/${PORTVERSION}/
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross Platform Password Manager
 
 DATADIR=	${PREFIX}/share/${PORTNAME:tl}

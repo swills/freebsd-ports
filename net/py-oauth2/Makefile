@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/py-oauth2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-oauth2/Makefile 474494 2018-07-12 08:37:45Z amdmi3 $
 
 PORTNAME=	oauth2
 DISTVERSION=	1.9.0.post1
@@ -25,7 +25,7 @@ NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.mk>

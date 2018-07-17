@@ -1,5 +1,5 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/pft/Makefile 454875 2017-11-25 09:00:19Z amdmi3 $
+# $FreeBSD: head/security/pft/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	pft
 PORTVERSION=	1.3
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Printer Job Language library and tool
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 NO_WRKSUBDIR=	yes
 

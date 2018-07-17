@@ -1,9 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/wxsvg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/graphics/wxsvg/Makefile 474600 2018-07-13 19:29:43Z danilo $
 
 PORTNAME=	wxsvg
-PORTVERSION=	1.5.13
-PORTREVISION=	1
+PORTVERSION=	1.5.14
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
@@ -21,8 +20,7 @@ USE_WX=		3.0
 WX_CONF_ARGS=	absolute
 USE_GNOME=	cairo glib20 pango
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBAV_CFLAGS="${LIBAV_CFLAGS}" LIBAV_LIBS="${LIBAV_LIBS}" \
-		CXXFLAGS="${CXXFLAGS} -std=c++11"
+CONFIGURE_ENV=	LIBAV_CFLAGS="${LIBAV_CFLAGS}" LIBAV_LIBS="${LIBAV_LIBS}"
 MAKE_ENV=	AM_CPPFLAGS="${LIBAV_CFLAGS}"
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

@@ -1,5 +1,5 @@
 # Created by: siasia
-# $FreeBSD: head/lang/v8-devel/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/lang/v8-devel/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	v8
 PORTVERSION=	3.27.7
@@ -14,6 +14,8 @@ COMMENT=	Open source JavaScript engine by Google
 LICENSE=	BSD3CLAUSE
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 
 LIB_DEPENDS=	libicui18n.so:devel/icu
 

@@ -1,20 +1,21 @@
 # Created by: Francisco Cabrita <include@npf.pt.freebsd.org>
-# $FreeBSD: head/www/joomla3/Makefile 470657 2018-05-22 20:11:42Z ler $
+# $FreeBSD: head/www/joomla3/Makefile 474655 2018-07-15 02:14:49Z ler $
 
 PORTNAME=	joomla
-PORTVERSION=	3.8.8
+DISTVERSION=	3-8-10
 CATEGORIES=	www
+MASTER_SITES=	https://downloads.joomla.org/cms/joomla3/${DISTVERSION}/
 PKGNAMESUFFIX=	3
+DISTNAME=	Joomla_${DISTVERSION}-Stable-Full_Package
 
 MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Dynamic web content management system (CMS)
 
 LICENSE=	GPLv2
 
-GH_PROJECT=	${PORTNAME}-cms
-
 NO_ARCH=	yes
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 OPTIONS_DEFINE=	MYSQL PGSQL
 OPTIONS_DEFAULT=MYSQL
@@ -22,13 +23,11 @@ OPTIONS_SUB=	yes
 
 PLIST_SUB=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
 
-USES=		php:web shebangfix
-SHEBANG_FILES=	build/indexmaker.php \
-		libraries/vendor/leafo/lessphp/lessify
+USES=		php:web tar:bz2 shebangfix
+SHEBANG_FILES=	libraries/vendor/leafo/lessphp/lessify
 
 SUB_FILES=	pkg-message
 
-USE_GITHUB=	yes
 USE_PHP=	gd json mbstring pcre pdf session simplexml xml zip zlib
 
 MYSQL_USE=	PHP=mysqli

@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/www/p5-CGI-Cache/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Cache/Makefile 474547 2018-07-13 03:18:30Z wen $
 
 PORTNAME=	CGI-Cache
-PORTVERSION=	1.4207
+PORTVERSION=	1.4214
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	p5-Cache>=0:devel/p5-Cache \
 		p5-Tie-Restore>=0:devel/p5-Tie-Restore
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 BUILD_DEPENDS+=	p5-URI>=0:net/p5-URI
-TEST_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp
+TEST_DEPENDS=	p5-File-Slurper>=0:devel/p5-File-Slurper
 
 USES=		perl5
 USE_PERL5=	configure

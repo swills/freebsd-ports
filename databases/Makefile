@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 474358 2018-07-10 12:46:35Z rm $
+# $FreeBSD: head/databases/Makefile 474784 2018-07-17 08:19:49Z farrokhi $
 #
 
     COMMENT = Databases and related software
@@ -53,6 +53,7 @@
     SUBDIR += dbf
     SUBDIR += dbf2mysql
     SUBDIR += dbh
+    SUBDIR += dbixx
     SUBDIR += dbow
     SUBDIR += dbtool
     SUBDIR += dbview

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 473842 2018-07-03 15:20:13Z rene $
+# $FreeBSD: head/security/Makefile 474585 2018-07-13 13:26:54Z garga $
 #
 
     COMMENT = Security tools
@@ -939,6 +939,7 @@
     SUBDIR += py-flask-httpauth
     SUBDIR += py-flask-kerberos
     SUBDIR += py-flask-saml
+    SUBDIR += py-fteproxy
     SUBDIR += py-gixy
     SUBDIR += py-gnupg
     SUBDIR += py-gnutls

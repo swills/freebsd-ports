@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk6/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/vtk6/Makefile 474532 2018-07-12 19:05:30Z yuri $
 
 PORTNAME=	vtk
 PORTVERSION=	6.2.0
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff \
 # TODO
 # * VTK Groups
 
-CONFLICTS=	vtk-4*
+CONFLICTS=	vtk5 vtk8
 USE_LDCONFIG=	${PREFIX}/lib/vtk-${VTK_SHORT_VER}
 USE_XORG=	xt sm ice x11 xext
 USES=		alias cmake:outsource jpeg

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/teleport/Makefile 473756 2018-07-02 16:59:13Z seanc $
+# $FreeBSD: head/security/teleport/Makefile 474557 2018-07-13 07:02:16Z mat $
 
 PORTNAME=	teleport
 DISTVERSIONPREFIX=	v
@@ -47,7 +47,7 @@ post-patch:
 		${WRKDIR}/${GO_TELEPORT_SRC_DIR}/version.mk
 	@${FIND} ${WRKDIR} -type f -exec ${SED} -i '' \
 		-e 's|\/var\/lib|/var/db|g' \
-		-e 's|\/usr\/bin\/hostname|/bin/hostname|g' {} \;
+		-e 's|\/usr\/bin\/hostname|/bin/hostname|g' {} +
 
 do-build:
 	@cd ${WRKDIR}/${GO_TELEPORT_SRC_DIR} && \

@@ -1,5 +1,5 @@
 # Created by: Shao Zhang <shaoz@asia.com>
-# $FreeBSD: head/games/xgospel/Makefile 425634 2016-11-07 15:47:56Z amdmi3 $
+# $FreeBSD: head/games/xgospel/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	xgospel
 PORTVERSION=	1.12d
@@ -12,6 +12,9 @@ COMMENT=	X11 Go (weiqi, baduk) client for the Internet Go Server
 
 LICENSE=	GPLv2+ NONE # some files have unclear license
 LICENSE_COMB=	multi
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 LIB_DEPENDS=	libXaw3d.so:x11-toolkits/Xaw3d
 

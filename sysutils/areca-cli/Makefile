@@ -1,5 +1,5 @@
 # Created by: Rink Springer <rink@FreeBSD.org>
-# $FreeBSD: head/sysutils/areca-cli/Makefile 434806 2017-02-25 13:48:04Z amdmi3 $
+# $FreeBSD: head/sysutils/areca-cli/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	areca-cli
 DISTVERSION=	${CLI_VER}.${CLI_REV}
@@ -14,6 +14,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command Line Interface for the Areca ARC-xxxx RAID controllers
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 ONLY_FOR_ARCHS=	i386 amd64
 

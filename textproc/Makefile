@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 474402 2018-07-10 20:06:48Z rene $
+# $FreeBSD: head/textproc/Makefile 474751 2018-07-16 17:07:19Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -947,7 +947,6 @@
     SUBDIR += p5-Text-SimpleTemplate
     SUBDIR += p5-Text-Soundex
     SUBDIR += p5-Text-SpellChecker
-    SUBDIR += p5-Text-SpellChecker-GUI
     SUBDIR += p5-Text-Striphigh
     SUBDIR += p5-Text-Table
     SUBDIR += p5-Text-Table-Manifold
@@ -1761,6 +1760,7 @@
     SUBDIR += uim-kde4
     SUBDIR += uim-m17nlib
     SUBDIR += uim-qt4
+    SUBDIR += uim-qt5
     SUBDIR += uml2svg
     SUBDIR += uncle
     SUBDIR += uncrustify

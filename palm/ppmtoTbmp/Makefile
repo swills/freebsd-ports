@@ -1,5 +1,5 @@
 # Created by: Jose Marques <noway@nohow.demon.co.uk>
-# $FreeBSD: head/palm/ppmtoTbmp/Makefile 451378 2017-10-06 11:18:35Z tobik $
+# $FreeBSD: head/palm/ppmtoTbmp/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	ppmtoTbmp
 PORTVERSION=	1.1
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PPM to Pilot bitmap converter
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 LIB_DEPENDS=	libnetpbm.so:graphics/netpbm
 

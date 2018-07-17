@@ -1,5 +1,5 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/textproc/bomstrip/Makefile 454299 2017-11-16 09:00:08Z amdmi3 $
+# $FreeBSD: head/textproc/bomstrip/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	bomstrip
 PORTVERSION=	9
@@ -17,6 +17,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Strip Byte-Order Marks (BOM) from UTF-8 text
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 USES=		gmake
 MAKE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \

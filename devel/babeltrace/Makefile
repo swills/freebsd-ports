@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/babeltrace/Makefile 465756 2018-03-27 21:15:28Z pizzamig $
+# $FreeBSD: head/devel/babeltrace/Makefile 474719 2018-07-16 08:23:28Z pizzamig $
 
 PORTNAME=	babeltrace
-PORTVERSION=	1.5.5
+PORTVERSION=	1.5.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

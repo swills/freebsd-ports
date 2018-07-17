@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/apache24/Makefile 468867 2018-05-02 19:03:18Z brnrd $
+# $FreeBSD: head/www/apache24/Makefile 474734 2018-07-16 12:49:23Z joneum $
 
 PORTNAME=	apache24
 PORTVERSION=	2.4.33
@@ -17,8 +17,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libapr-1.so:devel/apr1 \
 		libpcre.so:devel/pcre
-
-CONFLICTS_INSTALL=	apache22-*
 
 USES=		apache:server,2.4 autoreconf cpe iconv libtool perl5 tar:bzip2
 USE_PERL5=	run

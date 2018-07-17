@@ -1,5 +1,5 @@
 # Created by: lukin@okbmei.msk.su
-# $FreeBSD: head/archivers/freeze/Makefile 472207 2018-06-11 20:56:24Z feld $
+# $FreeBSD: head/archivers/freeze/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	freeze
 PORTVERSION=	2.5
@@ -13,6 +13,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Compression program - often used in QNX
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 CONFLICTS_INSTALL=	mlt-[0-9]*
 GNU_CONFIGURE=	yes

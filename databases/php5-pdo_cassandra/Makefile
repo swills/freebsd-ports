@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 474787 2018-07-17 08:56:32Z antoine $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
@@ -13,6 +13,8 @@ COMMENT=	PDO driver for Apache Cassandra
 LICENSE=	APACHE20
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 5 months
+EXPIRATION_DATE=	2018-08-20
 BROKEN_powerpc64=	Does not build
 
 LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs

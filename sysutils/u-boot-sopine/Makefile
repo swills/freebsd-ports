@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-sopine/Makefile 456054 2017-12-11 17:54:20Z manu $
+# $FreeBSD: head/sysutils/u-boot-sopine/Makefile 474544 2018-07-13 02:57:57Z linimon $
 
-MAINTAINER=	uboot@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		sopine

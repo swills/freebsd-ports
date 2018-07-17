@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-stable-kmod/Makefile 473933 2018-07-04 23:04:48Z jmd $
+# $FreeBSD: head/graphics/drm-stable-kmod/Makefile 474625 2018-07-14 08:18:08Z zeising $
 
 PORTNAME=	drm-stable-kmod
 PORTVERSION=	g20180619
@@ -17,7 +17,7 @@ ONLY_FOR_ARCHS_REASON=	the new KMS components are only supported on amd64
 
 RUN_DEPENDS=	gpu-firmware-kmod>=g20180319:graphics/gpu-firmware-kmod
 
-CONFLICTS_INSTALL=	drm-next-kmod
+CONFLICTS_INSTALL=	drm-devel-kmod drm-next-kmod
 
 OPTIONS_DEFINE=	DEBUG
 

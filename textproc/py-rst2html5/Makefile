@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/py-rst2html5/Makefile 470594 2018-05-22 05:15:28Z koobs $
+# $FreeBSD: head/textproc/py-rst2html5/Makefile 474689 2018-07-15 13:04:16Z wen $
 
 PORTNAME=	rst2html5
-PORTVERSION=	1.9.3
+PORTVERSION=	1.9.4
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

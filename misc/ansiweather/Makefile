@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/ansiweather/Makefile 473789 2018-07-03 00:50:59Z dbaio $
+# $FreeBSD: head/misc/ansiweather/Makefile 474757 2018-07-16 21:17:13Z dbaio $
 
 PORTNAME=	ansiweather
-PORTVERSION=	1.12.0
+PORTVERSION=	1.13.0
 CATEGORIES=	misc
 
 MAINTAINER=	dbaio@FreeBSD.org

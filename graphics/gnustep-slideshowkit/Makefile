@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gnustep-slideshowkit/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/graphics/gnustep-slideshowkit/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	slideshowkit
 PORTVERSION=	0.0.1
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SlideShow Framework
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 USES=		gnustep
 USE_GNUSTEP=	back build

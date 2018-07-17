@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 474415 2018-07-10 22:20:36Z rm $
+# $FreeBSD: head/sysutils/Makefile 474751 2018-07-16 17:07:19Z rene $
 #
 
     COMMENT = System utilities
@@ -838,7 +838,6 @@
     SUBDIR += p5-Unix-Processors
     SUBDIR += p5-Unix-Syslog
     SUBDIR += p5-User
-    SUBDIR += p5-ZConf-Cron
     SUBDIR += p5-arclog
     SUBDIR += p5-reslog
     SUBDIR += packer

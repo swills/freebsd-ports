@@ -1,7 +1,8 @@
-# $FreeBSD: head/base/gcc/Makefile 472012 2018-06-08 16:06:49Z jhb $
+# $FreeBSD: head/base/gcc/Makefile 474469 2018-07-11 16:50:00Z jhb $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
+PORTREVISION=	1
 CATEGORIES=	base
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION} \
 		http://www.mpfr.org/mpfr-3.1.6/:mpfr \
@@ -60,6 +61,10 @@ ALL_TARGET?=	all-gcc
 INSTALL_TARGET?=	install-gcc
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 1200000
+CONFIGURE_ARGS+= --enable-initfini-array
+.endif
 
 .if ${ARCH:Mmips*}
 PLIST_SUB+=	MIPS=""

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-grape-entity060/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-grape-entity060/Makefile 474739 2018-07-16 14:36:51Z mfechner $
 
 PORTNAME=	grape-entity
 PORTVERSION=	0.6.0

@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/sekrit-twc-zimg/Makefile 469338 2018-05-07 22:29:46Z jbeich $
+# $FreeBSD: head/graphics/sekrit-twc-zimg/Makefile 474709 2018-07-15 20:12:33Z jbeich $
 
 PORTNAME=	zimg
-PORTVERSION=	2.7.4
+PORTVERSION=	2.7.5
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	${GH_ACCOUNT}-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-ruby-fogbugz021/Makefile 474439 2018-07-11 12:00:36Z swills $
+# $FreeBSD: head/devel/rubygem-ruby-fogbugz021/Makefile 474512 2018-07-12 13:31:11Z swills $
 
 PORTNAME=	ruby-fogbugz
 PORTVERSION=	0.2.1
@@ -16,5 +16,7 @@ RUN_DEPENDS=	rubygem-crack>=0.4:devel/rubygem-crack
 NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
+
+PORTSCOUT=	limit:^0\.2\.1
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gnustep-slideshow/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/graphics/gnustep-slideshow/Makefile 474574 2018-07-13 10:13:53Z antoine $
 
 PORTNAME=	slideshow
 PORTVERSION=	0.3.5
@@ -12,6 +12,9 @@ MAINTAINER=	theraven@FreeBSD.org
 COMMENT=	SlideShow Viewer
 
 LICENSE=	GPLv2
+
+DEPRECATED=	depends on expiring graphics/gnustep-slideshowkit
+EXPIRATION_DATE=	2018-08-15
 
 USES=		tar:bzip2 gnustep
 USE_GNUSTEP=	back build

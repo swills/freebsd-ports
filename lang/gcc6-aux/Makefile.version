@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/gcc6-aux/Makefile.version 471043 2018-05-28 14:20:22Z ericbsd $
+# $FreeBSD: head/lang/gcc6-aux/Makefile.version 474798 2018-07-17 14:02:34Z ericbsd $
 
 # The attempt to upgrade to version 6.4.1 was done incorrectly.
 # When 6.5.1 is released, set the SNAPSHOT to the release date,
@@ -6,7 +6,7 @@
 # continue to be used and eventually be removed from mirrors.
 
 GCC_BRANCH=		6
-GCC_POINT=		5.0
+GCC_POINT=		4.1
 GCC_VERSION=		${GCC_BRANCH}.${GCC_POINT}
 SNAPSHOT=		20180516
 BUILD_RELEASE=		no

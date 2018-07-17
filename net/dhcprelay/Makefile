@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis (edwin@mavetju.org)
-# $FreeBSD: head/net/dhcprelay/Makefile 427093 2016-11-25 09:31:21Z amdmi3 $
+# $FreeBSD: head/net/dhcprelay/Makefile 474572 2018-07-13 09:56:57Z antoine $
 
 PORTNAME=	dhcprelay
 PORTVERSION=	1.2
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight DHCP Relay Agent with GIF tunnel support
 
 LICENSE=	NONE
+
+DEPRECATED=	unknown license
+EXPIRATION_DATE=	2018-08-15
 
 LIB_DEPENDS=	libdnet.so:net/libdnet
 

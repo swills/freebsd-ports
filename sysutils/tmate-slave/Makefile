@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/tmate-slave/Makefile 474456 2018-07-11 15:33:55Z swills $
+# $FreeBSD: head/sysutils/tmate-slave/Makefile 474580 2018-07-13 12:35:50Z swills $
 
 PORTNAME=	tmate-slave
 PORTVERSION=	g20171113
@@ -24,6 +24,6 @@ LDFLAGS+=	-lexecinfo
 
 PLIST_FILES=	bin/tmate-slave
 
-PORTSCOUT=	skipv:1.8
+PORTSCOUT=	skipv:1.8,1.7,to_copy,base
 
 .include <bsd.port.mk>

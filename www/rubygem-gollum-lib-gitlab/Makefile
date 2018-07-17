@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-gollum-lib-gitlab/Makefile 434702 2017-02-24 09:43:48Z tz $
+# $FreeBSD: head/www/rubygem-gollum-lib-gitlab/Makefile 474739 2018-07-16 14:36:51Z mfechner $
 
 CATEGORIES=	www
 

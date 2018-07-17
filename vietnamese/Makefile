@@ -1,11 +1,10 @@
-# $FreeBSD: head/vietnamese/Makefile 373618 2014-11-29 14:33:15Z rene $
+# $FreeBSD: head/vietnamese/Makefile 474818 2018-07-17 17:47:12Z tcberner $
 #
 
     COMMENT = Vietnamese support
 
     SUBDIR += aspell
     SUBDIR += hunspell
-    SUBDIR += kde4-l10n
     SUBDIR += libreoffice
     SUBDIR += libviet
     SUBDIR += unicode-uhoai
