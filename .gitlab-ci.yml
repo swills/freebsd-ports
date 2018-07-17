@@ -1,5 +1,5 @@
 before_script:
-  - PORT_LIST=$(mktemp) ; git diff --no-prefix --name-only origin/branches/2018Q3...origin/MFH/r474809/2018Q3 | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+  - PORT_LIST=$(mktemp) ; git log -n 2 origin/MFH/r474809/2018Q3 --format=%h | tail -n 1 | xargs git diff-tree --no-commit-id --name-only -r | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
 
 head-amd64:
   stage: build
