@@ -1,0 +1,29 @@
+head-amd64:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j head-amd64 -p swills-freebsd-ports net/nng
+
+head-i386:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j head-i386 -p swills-freebsd-ports net/nng
+
+111-amd64:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 111-amd64 -p swills-freebsd-ports net/nng
+
+111-i386:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 111-i386 -p swills-freebsd-ports net/nng
+
+104-amd64:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 104-amd64 -p swills-freebsd-ports net/nng
+
+104-i386:
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 104-i386 -p swills-freebsd-ports net/nng
