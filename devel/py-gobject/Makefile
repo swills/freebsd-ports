@@ -27,7 +27,7 @@ USE_GNOME=	glib20 introspection:build,run
 USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-CONFIGURE_ARGS=	--disable-docs --disable-introspection --with-ffi
+CONFIGURE_ARGS=	--disable-docs --enable-introspection --with-ffi
 INSTALL_TARGET=	install-strip
 SHEBANG_FILES=	codegen/*.py
 
