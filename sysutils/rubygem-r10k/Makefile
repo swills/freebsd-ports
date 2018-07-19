@@ -2,10 +2,11 @@
 
 PORTNAME=	r10k
 PORTVERSION=	2.6.2
+PORTREVISION=	1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	Tool for deploying Puppet environments and modules
 
 LICENSE=	APACHE20
