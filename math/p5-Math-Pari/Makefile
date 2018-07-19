@@ -30,7 +30,8 @@ PARI_WRKSRC=	${WRKDIR}/pari-2.3.5
 CFLAGS+=	-I${PARI_WRKSRC}/src/headers -I${PARI_WRKSRC}/build
 
 CONFIGURE_ARGS=	parilib="-L${PARI_WRKSRC}/build -lpari" \
-		paridir=${PARI_WRKSRC}
+		paridir=${PARI_WRKSRC} \
+		LDFLAGS="${LDFLAGS}"
 MAKE_ARGS=	LDLOADLIBS="-lm -L${PARI_WRKSRC}/build -Wl,-rpath=${SITE_ARCH}/auto/Math/Pari -lpari"
 
 post-patch:
