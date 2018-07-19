@@ -29,6 +29,12 @@ post-install:
 
 .include <bsd.port.pre.mk>
 
+.if ${SSL_DEFAULT} == base
+BROKEN_FreeBSD_9=	this port needs cms.h (from a more modern openssl)
+.endif
+
+.include <bsd.port.post.mk>
+
 .if ${SSL_DEFAULT:Mlibressl*}
 IGNORE=	Required CMS is disabled on LibreSSL
 .endif
