@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	knot-resolver
-DISTVERSION=	2.3.0
-PORTREVISION=	2
+DISTVERSION=	2.4.0
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://secure.nic.cz/files/knot-resolver/ \
 		https://dns.company/downloads/knot-resolver/
@@ -13,11 +12,14 @@ COMMENT=	Caching full resolver implementation
 
 LICENSE=	GPLv3
 
+BUILD_DEPENDS=	bash:shells/bash \
+		git:devel/git
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
 		libknot.so:dns/knot2 \
 		liblmdb.so:databases/lmdb \
 		libluajit-5.1.so:lang/luajit \
 		libuv.so:devel/libuv
+TEST_DEPENDS=	cmocka>=1.1.1:sysutils/cmocka
 
 CONFLICTS=	knot-1.* knot1-[0-6].*
 
@@ -27,7 +29,8 @@ MAKE_ARGS+=	MANDIR=${PREFIX}/man
 MAKE_ARGS+=	PKGCONFIGDIR=${PREFIX}/libdata/pkgconfig
 MAKE_ARGS+=	lmdb_CFLAGS=-I${PREFIX}/include lmdb_LIBS=-llmdb
 
-USES=		gmake libedit libtool ncurses pkgconfig tar:xz
+USES=		gmake libedit libtool ncurses pkgconfig shebangfix tar:xz
+SHEBANG_FILES=	scripts/coverage_env.sh
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	COOKIES DNSTAP DOXYGEN GO MEMCACHED REDIS TRUSTANCHOR
@@ -89,6 +92,7 @@ STRIP_TARGETS=	sbin/kresd			\
 		sbin/kresc			\
 		lib/libkres.so.7		\
 		lib/kdns_modules/ahocorasick.so	\
+		lib/kdns_modules/bogus_log.so	\
 		lib/kdns_modules/cookies.so	\
 		lib/kdns_modules/dnstap.so	\
 		lib/kdns_modules/hints.so	\

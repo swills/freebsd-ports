@@ -1,0 +1,30 @@
+--- Makefile.orig	2018-07-02 17:45:52.000000000 +0200
++++ Makefile	2018-07-04 10:35:57.228161000 +0200
+@@ -1,4 +1,4 @@
+-SHELL=/bin/bash -o pipefail -o errexit
++SHELL=/usr/local/bin/bash -o pipefail -o errexit
+ 
+ include config.mk
+ include platform.mk
+@@ -32,8 +32,8 @@
+ $(eval $(call find_bin,doxygen))
+ $(eval $(call find_bin,sphinx-build))
+ $(eval $(call find_pythonpkg,breathe))
+-#$(eval $(call find_lib,libmemcached,1.0))
+-#$(eval $(call find_lib,hiredis,,yes))
++$(eval $(call find_lib,libmemcached,1.0))
++$(eval $(call find_lib,hiredis,,yes))
+ $(eval $(call find_lib,socket_wrapper))
+ $(eval $(call find_lib,libsystemd,227))
+ $(eval $(call find_lib,gnutls))
+@@ -118,8 +118,8 @@
+ 	$(info [$(HAS_sphinx-build)] sphinx-build (doc))
+ 	$(info [$(HAS_breathe)] python-breathe (doc))
+ 	$(info [$(HAS_go)] go (modules/go, Go buildmode=c-shared support))
+-#	$(info [$(HAS_libmemcached)] libmemcached (modules/memcached))
+-#	$(info [$(HAS_hiredis)] hiredis (modules/redis))
++	$(info [$(HAS_libmemcached)] libmemcached (modules/memcached))
++	$(info [$(HAS_hiredis)] hiredis (modules/redis))
+ 	$(info [$(HAS_cmocka)] cmocka (tests/unit))
+ 	$(info [$(HAS_libsystemd)] systemd (daemon))
+ 	$(info [$(HAS_nettle)] nettle (modules/cookies))
