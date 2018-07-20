@@ -1,0 +1,8 @@
+You might need to define an environment variable when starting mayavi2 as e.g. in:
+
+ LD_LIBRARY_PATH=/usr/local/lib/gcc48 mayavi2
+
+An alias for this command might simplify the use of the mayavi2 script. Note that
+the version number might need adjusting to the gcc installed on your system.
+This is a temporary workaround. A solution for the root problem is under
+preparation.
