@@ -33,9 +33,12 @@ DOCS_VARS=	PYDISTUTILS_BUILD_TARGET=build_sphinx \
 		PYDISTUTILS_BUILDARGS="-n --all-files --fresh-env"
 
 NO_ARCH=	yes
-USES=		python shebangfix
+USES=		python shebangfix uniquefiles
 USE_GITHUB=	yes
-USE_PYTHON=	autoplist concurrent distutils
+USE_PYTHON=	autoplist distutils
+# Keep suffix(es) in sync with devel/py-virtualenv
+UNIQUE_SUFFIX=	${PYTHON_VER}
+UNIQUE_SUFFIX_FILES=	bin/pip
 
 SHEBANG_FILES=	pip/__init__.py
 
