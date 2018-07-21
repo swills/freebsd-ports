@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/riscv64-gcc/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/riscv64-gcc/Makefile 474879 2018-07-18 16:10:24Z lwhsu $
 
 PORTNAME=	gcc
 PORTVERSION=	7.2.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-
 
@@ -25,7 +25,7 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-riscv
 GH_PROJECT=	riscv-gcc
-GH_TAGNAME=	2ea300e
+GH_TAGNAME=	49b9ee4
 
 GCC_TARGET=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}
 
@@ -41,7 +41,6 @@ CONFIGURE_ARGS=	--target=${GCC_TARGET} \
 		--with-as=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}-as \
 		--with-ld=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}-ld \
 		--disable-werror \
-		--disable-shared \
 		--enable-threads \
 		--enable-tls \
 		--enable-languages=c,c++ \

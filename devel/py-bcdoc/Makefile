@@ -1,13 +1,13 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/py-bcdoc/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-bcdoc/Makefile 474909 2018-07-18 22:45:16Z yuri $
 
 PORTNAME=	bcdoc
-PORTVERSION=	0.12.2
+PORTVERSION=	0.16.0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tools to help document botocore-based projects
 
 LICENSE=	MIT
@@ -17,5 +17,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0.10:textproc/py-docutils@${PY_FLA
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

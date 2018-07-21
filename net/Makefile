@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/net/Makefile 474985 2018-07-20 01:07:02Z dbaio $
 #
 
     COMMENT = Networking tools
@@ -532,6 +532,7 @@
     SUBDIR += nload
     SUBDIR += nmsg
     SUBDIR += nncp
+    SUBDIR += nng
     SUBDIR += nocatsplash
     SUBDIR += norm
     SUBDIR += nph
@@ -1095,6 +1096,7 @@
     SUBDIR += py-port-for
     SUBDIR += py-portend
     SUBDIR += py-pygeoip
+    SUBDIR += py-pyicap
     SUBDIR += py-pynmsg
     SUBDIR += py-pynsq
     SUBDIR += py-pypcap

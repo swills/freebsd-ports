@@ -1,9 +1,8 @@
 # Created by: Mathias Monnerville <mathias@monnerville.com>
-# $FreeBSD: head/www/glpi/Makefile 447631 2017-08-09 15:45:26Z tz $
+# $FreeBSD: head/www/glpi/Makefile 474868 2018-07-18 14:56:53Z swills $
 
 PORTNAME=	glpi
-PORTVERSION=	9.1.2
-PORTREVISION=	2
+PORTVERSION=	9.2.1
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/glpi-project/glpi/releases/download/${PORTVERSION}/

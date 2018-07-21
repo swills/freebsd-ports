@@ -1,12 +1,9 @@
-# $FreeBSD: head/science/rdkit/Makefile 472629 2018-06-17 19:15:55Z yuri $
+# $FreeBSD: head/science/rdkit/Makefile 474991 2018-07-20 06:28:32Z yuri $
 
 PORTNAME=	rdkit
 DISTVERSIONPREFIX=	Release_
-DISTVERSION=	2018_03_2
+DISTVERSION=	2018_03_3
 CATEGORIES=	science
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	fe443fcb429e69ef13219a7b5c6dd53544042cbf.patch:-p1 # fix the SONAMEs regression
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Collection of cheminformatics and machine-learning software

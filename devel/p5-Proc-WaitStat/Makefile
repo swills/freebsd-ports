@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/p5-Proc-WaitStat/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Proc-WaitStat/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	Proc-WaitStat
 PORTVERSION=	1.00
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Interpret and act on wait() status values
 
 BUILD_DEPENDS=	p5-IPC-Signal>=0:devel/p5-IPC-Signal

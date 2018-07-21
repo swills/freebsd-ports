@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/benchmarks/slowloris/Makefile 444407 2017-06-26 19:37:37Z sunpoet $
+# $FreeBSD: head/benchmarks/slowloris/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	slowloris
 PORTVERSION=	0.7
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The low bandwidth, yet greedy and poisonous HTTP client
 
 RUN_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL

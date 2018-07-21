@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-IPC-System-Simple/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-IPC-System-Simple/Makefile 474941 2018-07-19 09:07:46Z amdmi3 $
 
 PORTNAME=	IPC-System-Simple
 PORTVERSION=	1.25
@@ -10,7 +10,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to run commands simply with detailed diagnostics
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

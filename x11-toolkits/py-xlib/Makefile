@@ -1,8 +1,9 @@
 # Created by: Mike Meyer <mwm@mired.org>
-# $FreeBSD: head/x11-toolkits/py-xlib/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/x11-toolkits/py-xlib/Makefile 474897 2018-07-18 20:22:15Z yuri $
 
 PORTNAME=	xlib
-PORTVERSION=	0.21
+DISTVERSION=	0.23-4
+DISTVERSIONSUFFIX=	-g45e4b62
 CATEGORIES=	x11-toolkits python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -17,13 +18,10 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.7:devel/py-setuptools_sc
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
 USES=		python
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	python-xlib
 GH_PROJECT=	python-xlib
-
 USE_PYTHON=	autoplist concurrent distutils
-
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

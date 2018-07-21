@@ -1,5 +1,5 @@
 # Created by: Tom Sparks <tsparks@appliedops.net>
-# $FreeBSD: head/textproc/yali/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/yali/Makefile 474943 2018-07-19 09:37:45Z amdmi3 $
 
 PORTNAME=	yali
 PORTVERSION=	1.1
@@ -14,6 +14,8 @@ EXTRACT_ONLY=	# empty
 MAINTAINER=	tsparks@appliedops.net
 COMMENT=	YALI: Yet Another LOLCODE Interpreter
 
+LICENSE=	BSD
+
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
 
@@ -22,6 +24,7 @@ USE_PERL5=	run
 SHEBANG_FILES=	${DISTFILES}
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	bin/yali

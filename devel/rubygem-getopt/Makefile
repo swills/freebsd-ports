@@ -1,12 +1,12 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/rubygem-getopt/Makefile 459058 2018-01-15 14:55:08Z swills $
+# $FreeBSD: head/devel/rubygem-getopt/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	getopt
 PORTVERSION=	1.4.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command line parsing with Ruby
 
 NO_ARCH=	yes

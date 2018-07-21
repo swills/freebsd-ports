@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/net-mgmt/percona-monitoring-plugins/Makefile 471867 2018-06-06 18:25:01Z feld $
+# $FreeBSD: head/net-mgmt/percona-monitoring-plugins/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	percona-monitoring-plugins
 PORTVERSION=	1.1.8
@@ -8,7 +8,7 @@ CATEGORIES=	net-mgmt
 MASTER_SITES=	https://www.percona.com/downloads/percona-monitoring-plugins/${PORTNAME}-${PORTVERSION}/source/tarball/ \
 		ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cacti templates for MySQL, Apache, Memcached, and more by Percona
 
 LICENSE=	GPLv2

@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-MSwM/Makefile 472761 2018-06-19 06:52:44Z tota $
+# $FreeBSD: head/math/R-cran-MSwM/Makefile 475009 2018-07-20 12:18:37Z tota $
 
 PORTNAME=	MSwM
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

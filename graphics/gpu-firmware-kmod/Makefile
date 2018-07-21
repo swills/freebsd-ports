@@ -1,10 +1,10 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 469162 2018-05-05 19:26:29Z zeising $
+# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 474998 2018-07-20 09:29:59Z 0mp $
 
 PORTNAME=	gpu-firmware-kmod
 PORTVERSION=	g20180319
 PORTREVISION=	1
-CATEGORIES=	graphics kld
+CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
 COMMENT=	Firmware modules for the linuxkpi-based KMS components

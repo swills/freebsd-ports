@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/ftp/R-cran-RCurl/Makefile 465066 2018-03-20 05:52:10Z tota $
+# $FreeBSD: head/ftp/R-cran-RCurl/Makefile 475002 2018-07-20 10:23:10Z tota $
 
 PORTNAME=	RCurl
-DISTVERSION=	1.95-4.10
+DISTVERSION=	1.95-4.11
 CATEGORIES=	ftp
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

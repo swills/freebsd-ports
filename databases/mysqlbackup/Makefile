@@ -1,12 +1,12 @@
 # Created by: Alexey Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/databases/mysqlbackup/Makefile 436244 2017-03-15 13:46:26Z amdmi3 $
+# $FreeBSD: head/databases/mysqlbackup/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	mysqlbackup
 PORTVERSION=	2.8
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Creates MySQL backups on a periodic basis
 
 LICENSE=	BSD2CLAUSE

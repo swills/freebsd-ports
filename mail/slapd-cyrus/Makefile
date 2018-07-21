@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/mail/slapd-cyrus/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/slapd-cyrus/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	slapd-cyrus
 PORTVERSION=	1.00
@@ -8,7 +8,7 @@ CATEGORIES=	mail net
 MASTER_SITES=	SF/${PORTNAME}
 DISTNAME=	Slapd-Backend-Cyrus-${PORTVERSION}
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Slapd backend to translate DIT into Cyrus configuration
 
 BUILD_DEPENDS=	cyrus-imapd24>=0:mail/cyrus-imapd24 \

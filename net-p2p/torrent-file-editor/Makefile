@@ -1,9 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 474864 2018-07-18 13:55:54Z danfe $
 
 PORTNAME=	torrent-file-editor
-PORTVERSION=	0.3.10
-PORTREVISION=	1
+PORTVERSION=	0.3.11
 CATEGORIES=	net-p2p
 MASTER_SITES=	SF/${PORTNAME}/v${PORTVERSION}
 
@@ -12,9 +11,7 @@ COMMENT=	Qt-based GUI tool for creating and editing .torrent files
 
 LICENSE=	GPLv3
 
-BROKEN_powerpc64=	fails to compile: -Werror=cpp: No option -Wcpp
-
-USES=		cmake desktop-file-utils
+USES=		cmake compiler:c++11-lang desktop-file-utils
 
 _QT4_DEPS=	linguisttools_build moc_build qmake_build rcc_build \
 		uic_build corelib gui
@@ -34,6 +31,6 @@ QT5_USES_OFF=	qt:4
 QT5_USE=	QT=${_QT5_DEPS:ts,}
 QT5_USE_OFF=	QT=${_QT4_DEPS:ts,}
 QT5_LIB_DEPENDS_OFF=	libqjson.so:devel/qjson@qt4
-QT5_CMAKE_ON=	-DQT5_BUILD:BOOL=ON
+QT5_CMAKE_BOOL=	QT5_BUILD
 
 .include <bsd.port.mk>

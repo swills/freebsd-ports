@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/gitaly/Makefile 473905 2018-07-04 17:30:59Z mfechner $
+# $FreeBSD: head/devel/gitaly/Makefile 474905 2018-07-18 21:53:13Z mfechner $
 
 PORTNAME=	gitaly
 DISTVERSION=	0.105.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -44,6 +45,7 @@ GL_ACCOUNT=	gitlab-org
 GL_COMMIT=	90ec422b0e76840075010476898637a92f287245
 
 post-patch:
+	${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|" ${WRKSRC}/config.toml.example
 	${MV} ${WRKSRC}/config.toml.example ${WRKSRC}/config.toml.sample
 
 do-install:

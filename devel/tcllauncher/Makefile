@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/devel/tcllauncher/Makefile 413646 2016-04-19 14:20:01Z gahr $
+# $FreeBSD: head/devel/tcllauncher/Makefile 474965 2018-07-19 14:57:45Z gahr $
 
 PORTNAME=	tcllauncher
-PORTVERSION=	1.6
+PORTVERSION=	1.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -13,10 +13,11 @@ LICENSE=	MIT
 
 LIB_DEPENDS=	libtclx8.4.so:lang/tclX
 
+USES+=		tcl:tea autoreconf
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	flightaware
 
-USES+=		tcl:tea autoreconf
 TCL_PKG=	Tcllauncher${PORTVERSION}
 
 PLIST_FILES=	bin/${PORTNAME} \

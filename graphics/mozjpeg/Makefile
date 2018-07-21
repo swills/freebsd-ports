@@ -1,5 +1,5 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/graphics/mozjpeg/Makefile 458971 2018-01-14 14:14:22Z sunpoet $
+# $FreeBSD: head/graphics/mozjpeg/Makefile 474832 2018-07-18 03:14:51Z jbeich $
 
 PORTNAME=	mozjpeg
 PORTVERSION=	3.3.1
@@ -11,7 +11,6 @@ COMMENT=	Improved JPEG encoder by Mozilla
 
 LICENSE=	BSD3CLAUSE
 
-BROKEN_aarch64=	does not configure: error: SIMD support cannot be enabled
 BROKEN_mips64=	does not configure: error: SIMD support cannot be enabled
 BROKEN_powerpc64=	does not build: undefined reference to htole32
 BROKEN_sparc64=	does not configure: error: SIMD support cannot be enabled

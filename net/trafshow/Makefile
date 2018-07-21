@@ -1,5 +1,5 @@
 # Created by: igor@zynaps.ru
-# $FreeBSD: head/net/trafshow/Makefile 408188 2016-02-05 13:38:41Z marino $
+# $FreeBSD: head/net/trafshow/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	trafshow
 PORTVERSION=	5.2.3
@@ -9,7 +9,7 @@ CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://renatasystems.org/pub/FreeBSD/ports/distfiles/ \
 		ftp://ftp.nsk.su/pub/RinetSoftware/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Full screen visualization of network traffic
 
 CONFLICTS=	trafshow-4.* trafshow3-*

@@ -1,5 +1,5 @@
 # Created by: Kevin Zheng <kevinz5000@gmail.com>
-# $FreeBSD: head/games/openclonk/Makefile 474556 2018-07-13 07:01:09Z wen $
+# $FreeBSD: head/games/openclonk/Makefile 475007 2018-07-20 11:57:29Z tobik $
 
 PORTNAME=	openclonk
 DISTVERSION=	8.1
@@ -33,6 +33,7 @@ USE_SDL=	sdl2
 USE_XORG=	x11 xpm
 INSTALLS_ICONS=	yes
 CMAKE_ARGS=	-DAudio_TK:STRING="OpenAL"
+LLD_UNSAFE=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|DESTINATION games|DESTINATION bin|' \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-sym/Makefile 466111 2018-04-01 00:10:47Z yuri $
+# $FreeBSD: head/math/py-sym/Makefile 474988 2018-07-20 05:39:30Z yuri $
 
 PORTNAME=	sym
-DISTVERSION=	0.3.2
+DISTVERSION=	0.3.3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

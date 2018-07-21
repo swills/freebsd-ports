@@ -1,5 +1,5 @@
 # Created by: Diane Bruce <db@db.net>
-# $FreeBSD: head/comms/xwota/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/comms/xwota/Makefile 475030 2018-07-20 17:39:34Z db $
 
 PORTNAME=	xwota
 PORTVERSION=	0.4
@@ -12,6 +12,9 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	X version of who is on the air
 
 LICENSE=	GPLv2
+
+DEPRECATED=	No server message and no upstream releases
+EXPIRATION_DATE=	2018-07-27
 
 USES=		gmake pkgconfig libtool
 USE_GNOME=	gtk20
@@ -28,7 +31,7 @@ post-install:
 	${WRKSRC}/INSTALL \
 	${WRKSRC}/NEWS \
 	${WRKSRC}/TODO
-	@${INSTALL_DATA} ${WRKSRC}/${d} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${d} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>

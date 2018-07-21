@@ -1,5 +1,5 @@
 # Created by: Paul Chvostek <paul@it.ca>
-# $FreeBSD: head/dns/rbldnsd/Makefile 469120 2018-05-05 15:09:22Z danfe $
+# $FreeBSD: head/dns/rbldnsd/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	rbldnsd
 PORTVERSION=	0.998
@@ -7,7 +7,7 @@ CATEGORIES=	dns
 MASTER_SITES=	http://www.corpit.ru/mjt/rbldnsd/ \
 		ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small and fast DNS daemon especially for DNSBL zones
 
 LICENSE=	GPLv2

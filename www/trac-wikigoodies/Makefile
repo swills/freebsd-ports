@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/www/trac-wikigoodies/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/trac-wikigoodies/Makefile 474924 2018-07-19 04:49:09Z joneum $
 
 PORTNAME=	wikigoodies
 PORTVERSION=	0.3.3522
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 PKGNAMEPREFIX=	trac-
 DISTNAME=	${PORTNAME}plugin.${PORTVERSION}
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Plugin for Trac which extends the Wiki with some goodies
 
 LICENSE=	BSD3CLAUSE

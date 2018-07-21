@@ -1,9 +1,9 @@
 # Created by: Denis Barov  <dindin@dindin.ru>
-# $FreeBSD: head/sysutils/scprotect/Makefile 441910 2017-05-28 11:55:35Z antoine $
+# $FreeBSD: head/sysutils/scprotect/Makefile 474998 2018-07-20 09:29:59Z 0mp $
 
 PORTNAME=	scprotect
 PORTVERSION=	20091116
-CATEGORIES=	sysutils kld
+CATEGORIES=	sysutils
 MASTER_SITES=	http://dindin.ru/download/
 
 MAINTAINER=	ports@FreeBSD.org

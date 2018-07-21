@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/devel/Makefile 474955 2018-07-19 10:14:26Z tota $
 #
 
     COMMENT = Development utilities
@@ -31,6 +31,7 @@
     SUBDIR += R-cran-data.table
     SUBDIR += R-cran-doParallel
     SUBDIR += R-cran-evaluate
+    SUBDIR += R-cran-fansi
     SUBDIR += R-cran-foreach
     SUBDIR += R-cran-gbm
     SUBDIR += R-cran-gdata

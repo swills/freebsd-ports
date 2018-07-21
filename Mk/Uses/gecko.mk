@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/gecko.mk 473091 2018-06-22 22:21:29Z rene $
+# $FreeBSD: head/Mk/Uses/gecko.mk 474921 2018-07-19 00:00:51Z jbeich $
 #
 # Handle dependency of different gecko based applications
 #
@@ -50,8 +50,8 @@ _GECKO_INSTALLED_VER:=	${_GECKO_INSTALLED_VER:C/[0-9]*\.//:C/\..*//}
 
 .elif ${gecko_ARGS:Mthunderbird}
 
-_GECKO_DEFAULT_VERSION=	52
-_GECKO_VERSIONS=	52
+_GECKO_DEFAULT_VERSION=	60
+_GECKO_VERSIONS=	60
 _GECKO_TYPE=	thunderbird
 
 .if exists(${LOCALBASE}/bin/thunderbird)
@@ -60,7 +60,7 @@ _GECKO_INSTALLED_VER:=	${_GECKO_INSTALLED_VER:C/\..*//}
 .endif
 
 # Dependence lines for different Thunderbird versions
-52_DEPENDS=		${LOCALBASE}/lib/thunderbird/thunderbird:mail/thunderbird
+60_DEPENDS=		${LOCALBASE}/lib/thunderbird/thunderbird:mail/thunderbird
 
 .else
 IGNORE=	Unknown type of gecko dependency you may specify either firefox, seamonkey or thunderbird

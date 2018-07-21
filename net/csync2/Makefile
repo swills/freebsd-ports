@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/net/csync2/Makefile 432379 2017-01-24 19:44:33Z bdrewery $
+# $FreeBSD: head/net/csync2/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	csync2
 PORTVERSION=	2.0
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://oss.linbit.com/csync2/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cluster synchronization tool
 
 LICENSE=	GPLv2

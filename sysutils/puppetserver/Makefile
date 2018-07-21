@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/puppetserver/Makefile 459725 2018-01-23 04:15:06Z zleslie $
+# $FreeBSD: head/sysutils/puppetserver/Makefile 474937 2018-07-19 08:24:01Z romain $
 
 PORTNAME=	puppetserver
 PORTVERSION=	2.8.0
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	sysutils java
-MASTER_SITES=	http://downloads.puppetlabs.com/puppet/
+MASTER_SITES=	https://downloads.puppetlabs.com/puppet/
 
 MAINTAINER=	freebsd@zleslie.info
 COMMENT=	Puppet Server running in the JVM

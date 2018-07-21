@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/www/Makefile 474959 2018-07-19 12:23:34Z dch $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -237,6 +237,7 @@
     SUBDIR += guile-www
     SUBDIR += gurlchecker
     SUBDIR += h2o
+    SUBDIR += h2o-devel
     SUBDIR += habari
     SUBDIR += hastymail2-devel
     SUBDIR += havp

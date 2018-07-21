@@ -1,10 +1,10 @@
 # Created by: Raaf <freebsd@luna.afraid.org>
-# $FreeBSD: head/multimedia/pwcbsd/Makefile 442405 2017-06-02 15:49:34Z linimon $
+# $FreeBSD: head/multimedia/pwcbsd/Makefile 474998 2018-07-20 09:29:59Z 0mp $
 
 PORTNAME=	pwcbsd
 PORTVERSION=	1.4.1
 PORTREVISION=	12
-CATEGORIES=	multimedia sysutils kld
+CATEGORIES=	multimedia sysutils
 MASTER_SITES=	http://raaf.atspace.org/ \
 		http://www.bsd-geek.de/FreeBSD/distfiles/ \
 		LOCAL/miwi

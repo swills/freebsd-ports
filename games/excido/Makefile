@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/excido/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/excido/Makefile 475004 2018-07-20 11:16:01Z tobik $
 
 PORTNAME=	excido
 PORTVERSION=	0.1.5c
@@ -18,9 +18,11 @@ LIB_DEPENDS=	libphysfs.so:devel/physfs
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USE_GL=		yes
-USE_SDL=	image sdl ttf
 USES=		gmake openal:al,alut tar:bzip2
+USE_GL=		gl glu
+USE_SDL=	image sdl ttf
+
+LLD_UNSAFE=	yes
 
 OPTIONS_DEFINE=	DOCS
 

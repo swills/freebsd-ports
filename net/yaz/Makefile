@@ -1,13 +1,12 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/net/yaz/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/net/yaz/Makefile 475021 2018-07-20 14:38:33Z wen $
 
 PORTNAME=	yaz
-DISTVERSION=	5.25.0
-PORTREVISION=	1
+DISTVERSION=	5.26.1
 CATEGORIES=	net
 MASTER_SITES=	http://ftp.indexdata.dk/pub/yaz/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Z39.50/SR client and API library
 
 LICENSE=	BSD3CLAUSE

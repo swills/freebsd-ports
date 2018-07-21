@@ -1,12 +1,12 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/mail/libspamtest/Makefile 345331 2014-02-21 08:51:03Z ehaupt $
+# $FreeBSD: head/mail/libspamtest/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	libspamtest
 PORTVERSION=	20080808
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Kaspersky Anti-Spam 3.x library
 
 WRKSRC=		${WRKDIR}/libspamtest

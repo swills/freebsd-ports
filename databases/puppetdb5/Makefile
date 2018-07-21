@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/puppetdb5/Makefile 469114 2018-05-05 14:29:00Z danfe $
+# $FreeBSD: head/databases/puppetdb5/Makefile 474938 2018-07-19 08:25:33Z romain $
 
 PORTNAME=	puppetdb
-PORTVERSION=	5.2.2
+PORTVERSION=	5.2.4
 CATEGORIES=	databases java
-MASTER_SITES=	http://downloads.puppetlabs.com/puppetdb/
+MASTER_SITES=	https://downloads.puppetlabs.com/puppetdb/
 PKGNAMESUFFIX=	5
 
 MAINTAINER=	puppet@FreeBSD.org

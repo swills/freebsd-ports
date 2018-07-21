@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-qutip/Makefile 474608 2018-07-13 22:19:32Z yuri $
+# $FreeBSD: head/devel/py-qutip/Makefile 474990 2018-07-20 05:56:07Z yuri $
 
 PORTNAME=	qutip
-DISTVERSION=	4.3.0
+DISTVERSION=	4.3.1
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/net/ldap-stats/Makefile 444410 2017-06-26 19:37:51Z sunpoet $
+# $FreeBSD: head/net/ldap-stats/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	ldap-stats
 PORTVERSION=	5.2
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program to generate OpenLDAP statistics reports
 
 NO_ARCH=	yes

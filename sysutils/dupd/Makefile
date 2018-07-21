@@ -1,5 +1,5 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/sysutils/dupd/Makefile 474748 2018-07-16 16:46:51Z pizzamig $
+# $FreeBSD: head/sysutils/dupd/Makefile 474840 2018-07-18 08:12:40Z pizzamig $
 
 PORTNAME=	dupd
 PORTVERSION=	1.6
@@ -11,7 +11,6 @@ COMMENT=	File duplicate detection CLI utility
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN=	undefined reference to `_binary_man_dupd_start'
 NOT_FOR_ARCHS=	arm armv6 armv7 i386 mips powerpc
 NOT_FOR_ARCHS_REASON=	test fails on large files on 32-bit
 

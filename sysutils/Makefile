@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/sysutils/Makefile 474984 2018-07-19 23:21:47Z woodsb02 $
 #
 
     COMMENT = System utilities
@@ -129,6 +129,7 @@
     SUBDIR += bulk_extractor
     SUBDIR += burp
     SUBDIR += busybox
+    SUBDIR += bvm
     SUBDIR += byobu
     SUBDIR += catfish
     SUBDIR += cbsd
@@ -634,6 +635,8 @@
     SUBDIR += lttng-ust
     SUBDIR += luckybackup
     SUBDIR += lxinput
+    SUBDIR += lxqt-policykit
+    SUBDIR += lxqt-qtplugin
     SUBDIR += lxsplit
     SUBDIR += lxtask
     SUBDIR += lxterminal
@@ -760,6 +763,7 @@
     SUBDIR += odo
     SUBDIR += ods2
     SUBDIR += ohmu
+    SUBDIR += omnibackup
     SUBDIR += open
     SUBDIR += openhpi
     SUBDIR += openipmi

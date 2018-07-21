@@ -1,5 +1,5 @@
 # Created by: adamw
-# $FreeBSD: head/multimedia/x265/Makefile 474814 2018-07-17 17:29:00Z mi $
+# $FreeBSD: head/multimedia/x265/Makefile 474911 2018-07-18 22:49:53Z jbeich $
 
 PORTNAME=	x265
 PORTVERSION=	2.8
@@ -9,6 +9,9 @@ MASTER_SITES=	https://downloads.videolan.org/pub/videolan/x265/ \
 		http://downloads.videolan.org/pub/videolan/x265/ \
 		http://mirror.leaseweb.com/videolan/x265/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
+
+PATCH_SITES=	http://hg.videolan.org/${PORTNAME}/raw-rev/
+PATCHFILES=	450421921079:-p2
 
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	H.265/High Efficiency Video Coding (HEVC) format

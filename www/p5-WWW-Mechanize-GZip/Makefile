@@ -1,9 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize-GZip/Makefile 471716 2018-06-04 18:18:12Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Mechanize-GZip/Makefile 475022 2018-07-20 14:43:31Z wen $
 
 PORTNAME=	WWW-Mechanize-GZip
-PORTVERSION=	0.12
-PORTREVISION=	2
+PORTVERSION=	0.13
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

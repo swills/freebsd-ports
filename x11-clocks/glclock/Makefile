@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@ipass.net>
-# $FreeBSD: head/x11-clocks/glclock/Makefile 474520 2018-07-12 14:11:46Z amdmi3 $
+# $FreeBSD: head/x11-clocks/glclock/Makefile 474856 2018-07-18 11:49:29Z tobik $
 
 PORTNAME=	glclock
 DISTVERSION=	6.0b6.0
@@ -15,7 +15,6 @@ USE_GL=		gl glu glut
 MAKEFILE=	makefile
 
 CFLAGS+=	-DIMAGE_PATH="\\\"${PREFIX}/lib/X11/glclock/\\\""
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 PLIST_FILES=	${PROGRAMS:S,^,bin/,} ${SCRIPTS:S,^,bin/,} \
 		${TEXTURES:S,^,lib/X11/glclock/,}

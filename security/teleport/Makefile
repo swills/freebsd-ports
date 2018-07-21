@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/teleport/Makefile 474557 2018-07-13 07:02:16Z mat $
+# $FreeBSD: head/security/teleport/Makefile 474836 2018-07-18 07:02:56Z seanc $
 
 PORTNAME=	teleport
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.6.6
+DISTVERSION=	2.6.7
 CATEGORIES=	security
 
 MAINTAINER=	seanc@FreeBSD.org

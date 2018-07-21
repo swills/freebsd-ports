@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/mail/sa-stats/Makefile 444409 2017-06-26 19:37:46Z sunpoet $
+# $FreeBSD: head/mail/sa-stats/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	sa-stats
 PORTVERSION=	1.0
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.rulesemporium.com/programs/ \
 EXTRACT_SUFX=	.txt
 EXTRACT_ONLY=
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generates top spam/ham rules fired for SpamAssassin installations
 
 USES=		perl5 shebangfix

@@ -1,5 +1,5 @@
 # Created by: Douglas Fraser <doug@idmf.net>
-# $FreeBSD: head/net-mgmt/grepcidr/Makefile 355965 2014-05-31 12:09:59Z alexey $
+# $FreeBSD: head/net-mgmt/grepcidr/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	grepcidr
 PORTVERSION=	2.0
@@ -7,7 +7,7 @@ CATEGORIES=	net-mgmt textproc
 MASTER_SITES=	http://www.pc-tools.net/files/unix/ \
 		ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Filter IP addresses matching IPv4 CIDR/network specification
 
 LICENSE=	GPLv2

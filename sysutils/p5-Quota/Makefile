@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/sysutils/p5-Quota/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-Quota/Makefile 474839 2018-07-18 07:38:44Z mat $
 
 PORTNAME=	Quota
 PORTVERSION=	1.7.2
@@ -16,4 +16,10 @@ LICENSE_COMB=	dual
 USES=		perl5
 USE_PERL5=	configure
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200072
+BROKEN=		Fails to build.
+.endif
+
+.include <bsd.port.post.mk>

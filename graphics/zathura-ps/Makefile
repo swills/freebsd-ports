@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/zathura-ps/Makefile 474620 2018-07-14 07:35:11Z riggs $
+# $FreeBSD: head/graphics/zathura-ps/Makefile 474976 2018-07-19 20:42:28Z antoine $
 
 PORTNAME=	zathura-ps
 PORTVERSION=	0.2.6
@@ -11,6 +11,8 @@ COMMENT=	PostScript support for Zathura PDF viewer
 
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to stage
 
 LIB_DEPENDS=	libspectre.so:print/libspectre
 BUILD_DEPENDS=	zathura:graphics/zathura

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 474223 2018-07-09 04:41:17Z yuri $
+# $FreeBSD: head/science/Makefile 474971 2018-07-19 19:19:38Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -218,6 +218,7 @@
     SUBDIR += pynn
     SUBDIR += qcl
     SUBDIR += qtresistors
+    SUBDIR += quantum-espresso
     SUBDIR += rdkit
     SUBDIR += rmf
     SUBDIR += rubygem-ai4r
@@ -246,6 +247,7 @@
     SUBDIR += v_sim
     SUBDIR += vmd
     SUBDIR += voro++
+    SUBDIR += xcrysden
     SUBDIR += xfce4-equake-plugin
     SUBDIR += xmakemol
 

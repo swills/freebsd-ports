@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/net-mgmt/nagios-check_puppet/Makefile 359855 2014-06-30 14:51:43Z alexey $
+# $FreeBSD: head/net-mgmt/nagios-check_puppet/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	check_puppet
 PORTVERSION=	1.3
@@ -7,7 +7,7 @@ CATEGORIES=	net-mgmt
 MASTER_SITES=	ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
 PKGNAMEPREFIX=	nagios-
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nagios plugin for checking Puppet daemon availability
 
 NO_BUILD=	yes

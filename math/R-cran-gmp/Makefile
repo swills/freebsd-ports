@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-gmp/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-gmp/Makefile 474851 2018-07-18 11:15:31Z tota $
 
 PORTNAME=	gmp
-DISTVERSION=	0.5-13.1
-PORTREVISION=	1
+DISTVERSION=	0.5-13.2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

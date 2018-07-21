@@ -1,10 +1,10 @@
 # Created by: Maxim Ignatenko
-# $FreeBSD: head/net/userfw/Makefile 444237 2017-06-24 18:36:19Z linimon $
+# $FreeBSD: head/net/userfw/Makefile 474998 2018-07-20 09:29:59Z 0mp $
 
 PORTNAME=	userfw
 PORTVERSION=	0.1.3
 PORTREVISION=	1
-CATEGORIES=	net kld
+CATEGORIES=	net
 MASTER_SITES=	http://userfw.net/files/release/ \
 		http://imax.in.ua/files/ \
 		http://projects.ukrweb.net/files/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/diff-pdf/Makefile 474820 2018-07-17 17:52:25Z yuri $
+# $FreeBSD: head/graphics/diff-pdf/Makefile 475011 2018-07-20 13:03:25Z tobik $
 
 PORTNAME=	diff-pdf
 DISTVERSIONPREFIX=	v
@@ -24,5 +24,8 @@ USE_GNOME=	cairo glib20
 USE_WX=		2.8+
 
 PLIST_FILES=	bin/${PORTNAME}
+
+post-patch:
+	@${REINPLACE_CMD} '/AM_PATH_WXCONFIG/ s,3.0.0,2.8.0,' ${WRKSRC}/configure.ac
 
 .include <bsd.port.mk>

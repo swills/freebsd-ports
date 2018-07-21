@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/net-mgmt/nagios-spamd-plugin/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/nagios-spamd-plugin/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	nagios-spamd-plugin
 PORTVERSION=	1.4
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://jhweiss.de/pub/users/weiss/nagios/plugins/
 DISTNAME=	check_spamd-${PORTVERSION}.pl
 EXTRACT_SUFX=	# empty
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nagios plugin for checking SpamAssassins spamd
 
 RUN_DEPENDS+=	${LOCALBASE}/${NAGIOS_PLUGIN_DIR}/utils.pm:net-mgmt/nagios-plugins

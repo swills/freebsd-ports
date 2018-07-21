@@ -1,8 +1,8 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/net/libnfs/Makefile 471550 2018-06-04 14:46:41Z mat $
+# $FreeBSD: head/net/libnfs/Makefile 475026 2018-07-20 16:09:45Z jgh $
 
 PORTNAME=	libnfs
-PORTVERSION=	2.0.0
+PORTVERSION=	3.0.0
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	net
 
@@ -12,6 +12,9 @@ COMMENT=	Client library for accessing NFS shares over a network
 LICENSE=	LGPL21 GPLv3
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+PLIST_SUB=	SHLIB=${SHLIB}
+SHLIB=		12
 
 GNU_CONFIGURE=	yes
 USES=		autoreconf gmake libtool pkgconfig

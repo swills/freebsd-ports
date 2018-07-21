@@ -1,5 +1,5 @@
 # Created by: mwest@uct.ac.za
-# $FreeBSD: head/mail/lbdb/Makefile 432029 2017-01-21 12:54:29Z rakuco $
+# $FreeBSD: head/mail/lbdb/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	lbdb
 PORTVERSION=	0.42.1
@@ -7,7 +7,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.spinnaker.de/debian/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tools for use with mutt external mail address query feature
 
 LICENSE=	GPLv2+

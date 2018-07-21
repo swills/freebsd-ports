@@ -1,5 +1,5 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/opencv/Makefile 474860 2018-07-18 12:53:36Z swills $
 
 PORTNAME=	opencv
 PORTVERSION=	3.4.1
@@ -15,8 +15,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 NOT_FOR_ARCHS=	sparc64
 NOT_FOR_ARCHS_REASON_sparc64=	does not compile on sparc64
 
+.if defined(OCV_CORE)
+BUILD_DEPENDS=	protoc:devel/protobuf
+.else
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf \
 		libtesseract.so:graphics/tesseract
+.endif
 
 USES=		cmake:outsource compiler:c++14-lang localbase:ldflags pkgconfig
 

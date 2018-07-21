@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/textproc/Makefile 474902 2018-07-18 20:59:25Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -200,6 +200,7 @@
     SUBDIR += fo-aspell
     SUBDIR += foiltex
     SUBDIR += fop
+    SUBDIR += fox-xml
     SUBDIR += fpc-aspell
     SUBDIR += fpc-libxml2
     SUBDIR += freexl

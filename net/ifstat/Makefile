@@ -1,5 +1,5 @@
 # Created by: spf@xslt.cs.nccu.edu.tw
-# $FreeBSD: head/net/ifstat/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net/ifstat/Makefile 474907 2018-07-18 22:20:23Z yuri $
 
 PORTNAME=	ifstat
 PORTVERSION=	1.1
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://gael.roualland.free.fr/${PORTNAME}/
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network interface statistics monitoring tool
 
 GNU_CONFIGURE=	yes

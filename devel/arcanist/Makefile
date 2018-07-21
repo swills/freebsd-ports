@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/arcanist/Makefile 467838 2018-04-20 20:05:53Z grembo $
+# $FreeBSD: head/devel/arcanist/Makefile 474969 2018-07-19 16:17:47Z 0mp $
 
 PORTNAME=	arcanist
 PORTVERSION=	20180420
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
@@ -34,5 +35,7 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${PHP_DESTDIR}
 	cd ${WRKSRC} ; ${PAX} -rw * ${STAGEDIR}${PREFIX}/${PHP_DESTDIR}
 	${LN} -sf ../${PHP_DESTDIR}/scripts/arcanist.php ${STAGEDIR}${PREFIX}/bin/arc
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/bash-completion/completions/
+	${RLN} ${STAGEDIR}${PREFIX}/${PHP_DESTDIR}/resources/shell/bash-completion ${STAGEDIR}${PREFIX}/share/bash-completion/completions/arc
 
 .include <bsd.port.mk>

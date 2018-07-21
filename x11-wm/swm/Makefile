@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/x11-wm/swm/Makefile 408901 2016-02-14 21:49:52Z amdmi3 $
+# $FreeBSD: head/x11-wm/swm/Makefile 474997 2018-07-20 09:19:20Z 0mp $
 
 PORTNAME=	swm
 PORTVERSION=	1.3.4c
@@ -13,6 +13,10 @@ COMMENT=	Window manager for low-memory systems, with title bars and shading
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/doc/COPYING
+
+BROKEN=		upstream no longer maintained, the screen turns black after starting swm
+DEPRECATED=	upstream no longer maintained, the screen turns black after starting swm
+EXPIRATION_DATE=	2018-09-20
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S,c,,}
 BUILD_WRKSRC=	${WRKSRC}/src

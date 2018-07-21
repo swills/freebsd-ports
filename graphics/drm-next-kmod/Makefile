@@ -1,10 +1,10 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-next-kmod/Makefile 474625 2018-07-14 08:18:08Z zeising $
+# $FreeBSD: head/graphics/drm-next-kmod/Makefile 474998 2018-07-20 09:29:59Z 0mp $
 
 PORTNAME=	drm-next-kmod
 PORTVERSION=	4.11.g20180619
 PORTREVISION=	1
-CATEGORIES=	graphics kld
+CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
 COMMENT=	DRM modules for the linuxkpi-based KMS components

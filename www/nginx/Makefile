@@ -1,13 +1,13 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 473856 2018-07-03 23:15:03Z osa $
+# $FreeBSD: head/www/nginx/Makefile 474970 2018-07-19 17:58:34Z joneum $
 
 PORTNAME=	nginx
 PORTVERSION=	1.14.0
-PORTREVISION?=	7
+PORTREVISION?=	9
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/ \
-		LOCAL/osa
+		LOCAL/joneum
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER?=	joneum@FreeBSD.org

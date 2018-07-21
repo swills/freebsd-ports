@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/qmail-dk/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/mail/qmail-dk/Makefile 475017 2018-07-20 14:17:26Z tobik $
 
 PORTNAME=	dk
 PORTVERSION=	0.54
@@ -11,8 +11,6 @@ DIST_SUBDIR=	qmail
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	DomainKeys implementation for qmail
-
-BROKEN_aarch64=		fails to link: scan_ulong.c:(.text+0x0): duplicate symbol 'scan_ulong'
 
 LIB_DEPENDS+=	libdomainkeys.so:mail/libdomainkeys
 

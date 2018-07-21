@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-roda/Makefile 472222 2018-06-12 00:17:15Z adamw $
+# $FreeBSD: head/www/rubygem-roda/Makefile 474880 2018-07-18 16:28:34Z adamw $
 
 PORTNAME=	roda
-PORTVERSION=	3.9.0
+PORTVERSION=	3.10.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

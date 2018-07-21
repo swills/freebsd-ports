@@ -1,5 +1,5 @@
 # Created by: Marcin Cieslak <saper@SYSTEM.PL>
-# $FreeBSD: head/net/tn5250j/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net/tn5250j/Makefile 474974 2018-07-19 20:37:15Z antoine $
 
 PORTNAME=	tn5250j
 PORTVERSION=	0.6.0
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	saper@saper.info
 COMMENT=	5250 terminal emulator for the AS/400 written in Java
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${JAVALIBDIR}/mail.jar:java/javamail \
 		${JYTHON_JAR}:lang/jython \

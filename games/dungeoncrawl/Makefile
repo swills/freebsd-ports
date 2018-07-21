@@ -1,5 +1,5 @@
 # Created by: refugee
-# $FreeBSD: head/games/dungeoncrawl/Makefile 410887 2016-03-12 14:11:20Z amdmi3 $
+# $FreeBSD: head/games/dungeoncrawl/Makefile 474830 2018-07-18 02:55:33Z jbeich $
 
 PORTNAME=	dungeoncrawl
 PORTVERSION=	4.0.0.b26
@@ -14,6 +14,8 @@ COMMENT=	Old school roguelike game
 WRKSRC_SUBDIR=	source
 
 USES=		ncurses tar:tbz2
+USE_CXXSTD=	gnu++98
+CXXFLAGS+=	-fsigned-char
 MAKEFILE=	makefile.bsd
 
 PORTDOCS=	buglist.txt crawl.txt

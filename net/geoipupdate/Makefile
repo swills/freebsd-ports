@@ -1,5 +1,5 @@
 # Created by: adamw
-# $FreeBSD: head/net/geoipupdate/Makefile 470316 2018-05-18 18:33:43Z adamw $
+# $FreeBSD: head/net/geoipupdate/Makefile 474964 2018-07-19 14:43:49Z adamw $
 
 PORTNAME=	geoipupdate
 PORTVERSION=	2.5.0
@@ -17,11 +17,6 @@ USES=		libtool localbase pathfix
 GNU_CONFIGURE=	yes
 
 OPTIONS_DEFINE=	DOCS
-
-post-patch:
-# This directory is handled by net/GeoIP
-	@${REINPLACE_CMD} -e '/MKDIR_P.*(datarootdir)\/GeoIP/ d' \
-		${WRKSRC}/Makefile.am
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/GeoIP

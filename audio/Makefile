@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 474524 2018-07-12 15:44:24Z dch $
+# $FreeBSD: head/audio/Makefile 475035 2018-07-20 20:50:31Z yuri $
 #
 
     COMMENT = Audio tools
@@ -147,6 +147,8 @@
     SUBDIR += fabla2-lv2
     SUBDIR += fapg
     SUBDIR += faust
+    SUBDIR += faust-lv2
+    SUBDIR += faustlive
     SUBDIR += fcplay
     SUBDIR += fdk-aac
     SUBDIR += fdmf

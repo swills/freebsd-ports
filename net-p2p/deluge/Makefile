@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/deluge/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/net-p2p/deluge/Makefile 474845 2018-07-18 09:37:45Z amdmi3 $
 
 PORTNAME=	deluge
 PORTVERSION=	1.3.15
@@ -16,7 +16,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}notify>=0.1.1:devel/py-notify@${PY_FLAVOR} \
 		xdg-utils>=1.0.2:devel/xdg-utils \
 		deluge:net-p2p/deluge-cli
-USE_GNOME=	librsvg2 pygtk2
+
 USES=		python:-2.7 metaport
+USE_GNOME=	librsvg2 pygtk2
 
 .include <bsd.port.mk>

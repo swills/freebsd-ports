@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 474690 2018-07-15 13:34:37Z tcberner $
+# $FreeBSD: head/x11/Makefile 474898 2018-07-18 20:26:04Z yuri $
 #
 
     COMMENT = Ports to support the X window system
@@ -228,6 +228,7 @@
     SUBDIR += lxmenu-data
     SUBDIR += lxpanel
     SUBDIR += lxqt-globalkeys
+    SUBDIR += lxqt-globalkeys-l10n
     SUBDIR += lxqt-l10n
     SUBDIR += lxrandr
     SUBDIR += mate
@@ -503,6 +504,7 @@
     SUBDIR += xpr
     SUBDIR += xpra
     SUBDIR += xprehashprinterlist
+    SUBDIR += xprintidle
     SUBDIR += xprompt
     SUBDIR += xprop
     SUBDIR += xproto
