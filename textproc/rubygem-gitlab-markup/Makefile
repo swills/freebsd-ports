@@ -1,20 +1,20 @@
 # $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 460833 2018-02-03 18:22:37Z amdmi3 $
 
 PORTNAME=	gitlab-markup
-PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTVERSION=	1.6.4
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Render any fancy GitLab markup
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem python:run shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/github-markup
 
