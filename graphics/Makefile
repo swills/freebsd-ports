@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 474821 2018-07-17 18:18:56Z yuri $
+# $FreeBSD: head/graphics/Makefile 475049 2018-07-21 06:53:41Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -1152,7 +1152,7 @@
     SUBDIR += xv
     SUBDIR += xv-m17n
     SUBDIR += xwpick
-    SUBDIR += yafray
+    SUBDIR += yafaray
     SUBDIR += yagf
     SUBDIR += yed
     SUBDIR += yukon
