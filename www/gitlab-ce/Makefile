@@ -53,7 +53,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-omniauth-kerberos>=0.3.0:net/rubygem-omniauth-kerberos \
 	rubygem-omniauth-oauth2-generic>=0.2.2:security/rubygem-omniauth-oauth2-generic \
 	rubygem-omniauth-saml>=1.10:security/rubygem-omniauth-saml \
-	rubygem-omniauth-shibboleth12>=1.3.0:security/rubygem-omniauth-shibboleth12 \
+	rubygem-omniauth-shibboleth>=1.3.0:security/rubygem-omniauth-shibboleth \
 	rubygem-omniauth-twitter>=1.4:net/rubygem-omniauth-twitter \
 	rubygem-omniauth_crowd22>=2.2.0:devel/rubygem-omniauth_crowd22 \
 	rubygem-omniauth-authentiq>=0.3.3:net/rubygem-omniauth-authentiq \
