@@ -4,7 +4,6 @@
 PORTNAME=	open-adventure
 PORTVERSION=	1.4
 CATEGORIES=	games
-MASTER_SITES=	https://gitlab.com/${GL_ACCOUNT}/${GL_PROJECT}/repository/archive${EXTRACT_SUFX}?ref=${GL_COMMIT};/
 
 MAINTAINER=	se@FreeBSD.org
 COMMENT=	Modernized version of the original Colossal Cave Adventure game
@@ -18,9 +17,7 @@ ALL_TARGET=	advent
 MAKE_ENV=	CCFLAGS="${CFLAGS}"
 
 USES=		gmake pkgconfig libedit python:build
-#USE_GITLAB=	yes # When USE_GITLAB has become available, MASTER_SITES and WRKSRC should be obsolete
-
-WRKSRC=		${WRKDIR}/${PORTNAME}-${GL_COMMIT}-${GL_COMMIT}
+USE_GITLAB=	yes
 
 GL_ACCOUNT=	esr
 GL_PROJECT=	${PORTNAME}
