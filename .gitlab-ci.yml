@@ -1,5 +1,5 @@
 before_script:
-   - PORT_LIST=$(mktemp) ; git diff $(git merge-base origin/${GIT_BRANCH} origin/master) origin/${GIT_BRANCH} | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+   - PORT_LIST=$(mktemp) ; git diff $(git merge-base origin/${CI_COMMIT_REF_NAME} origin/master) origin/${CI_COMMIT_REF_NAME} | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
 
 head-amd64:
   stage: build
