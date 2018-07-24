@@ -2,8 +2,7 @@
 
 PORTNAME=	ALPSCore
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.1
-PORTREVISION=	2
+DISTVERSION=	2.2.0
 CATEGORIES=	science
 
 MAINTAINER=	mike.d.ft402@gmail.com
@@ -12,6 +11,7 @@ COMMENT=	Generic algorithms and utilities for condensed matter physics
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 
+BUILD_DEPENDS=	eigen>=3.3.4:math/eigen3
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libhdf5.so:science/hdf5 \
 		libsz.so:science/szip
