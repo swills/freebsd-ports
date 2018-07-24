@@ -80,6 +80,7 @@ KMK_CONFIG=	VBOX_LIBPATH_X11=${LOCALBASE}
 KMK_FLAGS=
 
 .if ${PORT_OPTIONS:MDEBUG}
+BROKEN=		install: /wrkdirs/usr/ports/emulators/virtualbox-ose-additions/work/VirtualBox-5.2.14/out/freebsd.x86/debug/bin/additions/src/vboxguest/vboxguest.ko.symbols: No such file or directory
 KMK_FLAGS+=	BUILD_TYPE=debug
 KMK_BUILDTYPE=	debug
 MAKE_ARGS+=	DEBUG_FLAGS="-O1 -g"
