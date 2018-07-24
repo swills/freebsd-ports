@@ -19,7 +19,7 @@ IGNORE_FreeBSD_10=	Doesnt build for FreeBSD 10.x
 BUILD_DEPENDS=	\
 	yasm:devel/yasm \
 	pkgconf:devel/pkgconf \
-	sphinx-build:textproc/py-sphinx \
+	sphinx-build:textproc/py-sphinx@${PY_FLAVOR} \
 	gperf:devel/gperf \
 	${LOCALBASE}/lib/libatomic_ops.a:devel/libatomic_ops
 LIB_DEPENDS=	\
@@ -41,7 +41,7 @@ RUN_DEPENDS=	\
 	xml:textproc/xmlstarlet \
 	jq:textproc/jq \
 	flock:sysutils/flock \
-	virtualenv:devel/py-virtualenv \
+	virtualenv:devel/py-virtualenv@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}prettytable>=0:devel/py-prettytable@${PY_FLAVOR}
 
 CONFLICTS_INSTALL=	ceph-devel
@@ -72,15 +72,23 @@ CMAKE_ARGS=	\
 	-D WITH_SYSTEM_BOOST:BOOL=ON \
 	-D CEPH_MAN_DIR:STRING=man \
 	-D WITH_LTTNG:BOOL=OFF \
-	-D WITH_FUSE:BOOL=ON \
+	-D WITH_BABELTRACE:BOOL=OFF \
 	-D WITH_KRBD:BOOL=OFF \
 	-D WITH_XFS:BOOL=OFF \
 	-D WITH_KVS:BOOL=OFF \
-	-D WITH_BABELTRACE:BOOL=OFF \
+	-D WITH_BLKID:BOOL=OFF \
+	-D WITH_SPDK:BOOL=OFF \
+	-D WITH_RDMA=OFF \
+	-D WITH_BLUESTORE:BOOL=OFF \
 	-D WITH_LIBCEPHFS:BOOL=OFF \
 	-D WITH_CEPHFS:BOOL=OFF \
 	-D WITH_EMBEDDED:BOOL=OFF \
-	-D WITH_RADOSGW_BEAST_FRONTEND:BOOL=OFF
+	-D WITH_SYSTEM_BOOST:BOOL=ON \
+	-D WITH_BOOST_CONTEXT:BOOL=OFF \
+	-D WITH_FUSE:BOOL=ON \
+	-D WITH_MANPAGE:BOOL=ON \
+	-D WITH_RADOSGW_BEAST_FRONTEND:BOOL=OFF \
+	-D WITH_MGR_DASHBOARD_FRONTEND:BOOL=OFF 
 
 SHEBANG_FILES=src/rbdmap src/ceph-post-file.in src/rbd-replay-many \
 	src/brag/client/ceph-brag src/ceph-rest-api \
