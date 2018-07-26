@@ -9346,6 +9346,7 @@
 %%WWWDIR%%/lib/gitlab/import_export/saver.rb
 %%WWWDIR%%/lib/gitlab/import_export/shared.rb
 %%WWWDIR%%/lib/gitlab/import_export/statistics_restorer.rb
+%%WWWDIR%%/lib/gitlab/import_export/uploads_manager.rb
 %%WWWDIR%%/lib/gitlab/import_export/uploads_restorer.rb
 %%WWWDIR%%/lib/gitlab/import_export/uploads_saver.rb
 %%WWWDIR%%/lib/gitlab/import_export/version_checker.rb
@@ -12234,6 +12235,7 @@
 %%WWWDIR%%/spec/lib/gitlab/import_export/repo_saver_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/import_export/safe_model_attributes.yml
 %%WWWDIR%%/spec/lib/gitlab/import_export/saver_spec.rb
+%%WWWDIR%%/spec/lib/gitlab/import_export/uploads_manager_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/import_export/uploads_restorer_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/import_export/uploads_saver_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/import_export/version_checker_spec.rb

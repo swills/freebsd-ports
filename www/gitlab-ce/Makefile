@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab-ce/Makefile 474929 2018-07-19 06:48:12Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.1.0
+PORTVERSION=	11.1.1
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -26,7 +26,7 @@ BUILD_DEPENDS=	gem:devel/ruby-gems
 RUN_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=7.1.4:devel/gitlab-shell \
 	gitlab-workhorse>=5.0.0:www/gitlab-workhorse \
-	gitaly>=0.111.1:devel/gitaly \
+	gitaly>=0.111.2:devel/gitaly \
 	gitlab-pages>=1.0.0:www/gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
@@ -213,7 +213,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	35c387cb6bcc1406fc9aac8451bca128a12bafbf
+GL_COMMIT=	94b9323033693af247128c8648023fe5b53e80f9
 
 USERS=	git
 GROUPS=	git
