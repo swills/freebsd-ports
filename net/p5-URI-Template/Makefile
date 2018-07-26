@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-URI-Template/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-URI-Template/Makefile 475068 2018-07-21 13:52:50Z wen $
 
 PORTNAME=	URI-Template
-PORTVERSION=	0.22
+PORTVERSION=	0.23
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

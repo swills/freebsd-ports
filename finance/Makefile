@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 475044 2018-07-21 00:10:28Z mi $
+# $FreeBSD: head/finance/Makefile 475188 2018-07-23 16:15:02Z mi $
 #
 
     COMMENT = Monetary, financial, and related applications

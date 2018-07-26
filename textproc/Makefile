@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 474902 2018-07-18 20:59:25Z yuri $
+# $FreeBSD: head/textproc/Makefile 475277 2018-07-24 20:31:48Z arved $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1320,7 +1320,9 @@
     SUBDIR += py-m2r
     SUBDIR += py-mako
     SUBDIR += py-markdown
+    SUBDIR += py-markdown-math
     SUBDIR += py-markdown2
+    SUBDIR += py-markups
     SUBDIR += py-mistune
     SUBDIR += py-mkdocs
     SUBDIR += py-mkdocs-nature
@@ -1459,6 +1461,7 @@
     SUBDIR += replaceit
     SUBDIR += resume
     SUBDIR += resume-extensions
+    SUBDIR += retext
     SUBDIR += rfcdiff
     SUBDIR += ripgrep
     SUBDIR += ripole

@@ -1,8 +1,8 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 454984 2017-11-27 18:31:58Z joneum $
+# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 475260 2018-07-24 15:16:10Z joneum $
 
 PORTNAME=	YAML-LibYAML
-DISTVERSION=	0.67
+DISTVERSION=	0.72
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,7 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	p5-Filter>=0:devel/p5-Filter
+TEST_DEPENDS=	p5-Filter>=0:devel/p5-Filter \
+		p5-Test-Base>=0:devel/p5-Test-Base
 
 USES=		perl5
 USE_PERL5=	configure

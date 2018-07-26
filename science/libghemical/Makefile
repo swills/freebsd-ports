@@ -1,5 +1,5 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/libghemical/Makefile 474844 2018-07-18 09:25:31Z yuri $
+# $FreeBSD: head/science/libghemical/Makefile 475349 2018-07-26 08:11:33Z yuri $
 
 PORTNAME=	libghemical
 PORTVERSION=	3.0.0
@@ -39,6 +39,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib -lSCbasis -lSCcints -lSCclass \
 		-lSCrender -lSCscf -lSCscmat -lSCsolvent -lSCstate \
 		-lSCsymmetry -lSCwfn \
 		-lgfortran -lpthread -lblas -llapack
+CXXFLAGS+=	-Wno-c++11-narrowing # fix errors like error: non-constant-expression cannot be narrowed from type 'double' to 'fGL'
 PLIST_SUB=	LIBGHEMICAL_VERSION="${PORTVERSION}"
 INSTALL_TARGET=	install-strip
 

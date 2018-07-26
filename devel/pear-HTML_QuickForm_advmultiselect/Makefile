@@ -1,8 +1,8 @@
 # Created by: Chris St Denis <chris@ctgameinfo.com>
-# $FreeBSD: head/devel/pear-HTML_QuickForm_advmultiselect/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/pear-HTML_QuickForm_advmultiselect/Makefile 475299 2018-07-25 05:11:46Z joneum $
 
 PORTNAME=	HTML_QuickForm_advmultiselect
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.1
 CATEGORIES=	devel www pear
 
 MAINTAINER=	chris@ctgameinfo.com

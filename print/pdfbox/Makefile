@@ -1,8 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/print/pdfbox/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/print/pdfbox/Makefile 475249 2018-07-24 12:56:12Z ale $
 
 PORTNAME=	pdfbox
-PORTVERSION=	1.8.11
+PORTVERSION=	2.0.11
 CATEGORIES=	print textproc java
 MASTER_SITES=	APACHE/pdfbox/${PORTVERSION}
 DISTFILES=	${JAR_NAMES:S/$/-${PORTVERSION}.jar/}
@@ -13,13 +13,15 @@ COMMENT=	Java tool for working with PDF documents
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${JAVALIBDIR}/bcmail.jar:java/bouncycastle	\
-		${JAVALIBDIR}/commons-logging.jar:java/jakarta-commons-logging
+RUN_DEPENDS=	${JAVALIBDIR}/bcmail.jar:java/bouncycastle15 \
+		${JAVALIBDIR}/commons-logging.jar:java/jakarta-commons-logging \
+		${JAVALIBDIR}/commons-io.jar:devel/jakarta-commons-io
 
-JAR_NAMES=	pdfbox fontbox jempbox preflight xmpbox
+JAR_NAMES=	pdfbox fontbox preflight xmpbox pdfbox-tools pdfbox-debugger
 
 USE_JAVA=	yes
 NO_BUILD=	yes
+NO_ARCH=		yes
 
 PLIST_FILES=	${JAR_NAMES:S/^/%%JAVAJARDIR%%\//:S/$/.jar/}
 

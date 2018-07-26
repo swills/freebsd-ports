@@ -1,8 +1,8 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/www/privatebin/Makefile 453413 2017-11-03 16:27:30Z se $
+# $FreeBSD: head/www/privatebin/Makefile 475189 2018-07-23 16:57:18Z se $
 
 PORTNAME=	privatebin
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2
 CATEGORIES=	www security
 
 MAINTAINER=	se@FreeBSD.org

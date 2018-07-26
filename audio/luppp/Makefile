@@ -1,9 +1,8 @@
-# $FreeBSD: head/audio/luppp/Makefile 453707 2017-11-07 22:22:11Z yuri $
+# $FreeBSD: head/audio/luppp/Makefile 475330 2018-07-25 19:43:46Z yuri $
 
 PORTNAME=	luppp
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	1.1.1-15
-DISTVERSIONSUFFIX=	-gbe14f40
+DISTVERSION=	1.2.0
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Gerrit Beine (<gerrit@beine-computer.de>)
-# $FreeBSD: head/devel/pear-HTML_QuickForm/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/pear-HTML_QuickForm/Makefile 475114 2018-07-22 18:03:37Z joneum $
 
 PORTNAME=	HTML_QuickForm
-PORTVERSION=	3.2.14
+PORTVERSION=	3.2.16
 CATEGORIES=	devel www pear
 
 MAINTAINER=	joneum@FreeBSD.org

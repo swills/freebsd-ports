@@ -1,5 +1,5 @@
 # Created by: Christian Gusenbauer
-# $FreeBSD: head/graphics/inventor/Makefile 458374 2018-01-07 19:19:00Z krion $
+# $FreeBSD: head/graphics/inventor/Makefile 475125 2018-07-22 20:33:42Z yuri $
 
 PORTNAME=	inventor
 PORTVERSION=	2.1.5.p10
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://oss.sgi.com/projects/inventor/download/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p/-/}
 EXTRACT_SUFX=	.src.tar.gz
 
-MAINTAINER=	c47g@gmx.at
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SGI's Open Inventor (TM)
 
 LICENSE=	LGPL21

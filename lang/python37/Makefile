@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python37/Makefile 474270 2018-07-09 16:44:34Z miwi $
+# $FreeBSD: head/lang/python37/Makefile 475350 2018-07-26 08:58:50Z tobik $
 
 PORTNAME=	python
-PORTREVISION=	1
+PORTREVISION=	2
 PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	lang python ipv6
 MASTER_SITES=	PYTHON/ftp/python/${PORTVERSION}

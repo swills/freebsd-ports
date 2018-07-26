@@ -1,8 +1,8 @@
 # Created by: Hans Petter Selasky <hselasky@FreeBSD.org>
-# $FreeBSD: head/audio/jack_umidi/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/jack_umidi/Makefile 475237 2018-07-24 09:49:48Z hselasky $
 
 PORTNAME=	jack_umidi
-PORTVERSION=	1.0.8
+PORTVERSION=	1.0.9
 CATEGORIES=	audio
 MASTER_SITES=	http://www.selasky.org/hans_petter/distfiles/ \
 		http://home.selasky.org:8192/distfiles/

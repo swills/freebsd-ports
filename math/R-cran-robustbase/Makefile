@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-robustbase/Makefile 473696 2018-07-02 03:07:25Z tota $
+# $FreeBSD: head/math/R-cran-robustbase/Makefile 475161 2018-07-23 11:10:56Z tota $
 
 PORTNAME=	robustbase
-DISTVERSION=	0.93-1
+DISTVERSION=	0.93-1.1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

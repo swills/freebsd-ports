@@ -1,8 +1,8 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/simsu/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/simsu/Makefile 475325 2018-07-25 18:30:40Z amdmi3 $
 
 PORTNAME=	simsu
-PORTVERSION=	1.3.6
+PORTVERSION=	1.3.7
 CATEGORIES=	games
 MASTER_SITES=	https://gottcode.org/${PORTNAME}/ \
 		https://mirror.amdmi3.ru/distfiles/
@@ -35,7 +35,7 @@ post-patch-NLS-off:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	(cd ${WRKSRC} && ${INSTALL_DATA} CREDITS ChangeLog NEWS README \
+	(cd ${WRKSRC} && ${INSTALL_DATA} CREDITS ChangeLog README \
 		${STAGEDIR}${DOCSDIR})
 
 .include <bsd.port.mk>

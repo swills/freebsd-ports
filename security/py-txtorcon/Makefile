@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/security/py-txtorcon/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-txtorcon/Makefile 475201 2018-07-23 20:42:05Z yuri $
 
 PORTNAME=	txtorcon
-DISTVERSION=	0.20.0
+DISTVERSION=	18.0.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -24,7 +24,7 @@ USE_PYTHON=	distutils autoplist concurrent
 NO_ARCH=	yes
 SHEBANG_FILES=	examples/*.py
 
-OPTIONS_DEFINE=		DOCS EXAMPLES
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e " \

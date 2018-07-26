@@ -1,8 +1,8 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 475228 2018-07-24 07:29:42Z wen $
 
 PORTNAME=	pysmi
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP \
 		SF/pysmi/pysmi/${PORTVERSION}

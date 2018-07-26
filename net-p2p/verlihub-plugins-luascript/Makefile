@@ -1,5 +1,5 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins-luascript/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/net-p2p/verlihub-plugins-luascript/Makefile 475345 2018-07-26 04:21:47Z fluffy $
 
 PORTNAME=	luascript
 PORTVERSION=	1.8.1
@@ -31,8 +31,8 @@ SOCKET_DESC=	Build with LuaSocket support
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MSOCKET}
-BUILD_DEPENDS+=	${LUA_MODLIBDIR}/socket/core.so:net/luasocket
-RUN_DEPENDS+=	${LUA_MODLIBDIR}/socket/core.so:net/luasocket
+BUILD_DEPENDS+=	${LUA_MODLIBDIR}/socket/core.so:net/luasocket-51
+RUN_DEPENDS+=	${LUA_MODLIBDIR}/socket/core.so:net/luasocket-51
 CONFIGURE_ARGS+=	--with-luasocket
 .endif
 

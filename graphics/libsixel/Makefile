@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/libsixel/Makefile 472167 2018-06-11 06:32:32Z tobik $
+# $FreeBSD: head/graphics/libsixel/Makefile 475268 2018-07-24 18:12:29Z fernape $
 
 PORTNAME=	libsixel
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/saitoha/libsixel/releases/download/v${PORTVERSION}/

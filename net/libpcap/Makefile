@@ -1,8 +1,8 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/libpcap/Makefile 424823 2016-10-28 11:09:19Z garga $
+# $FreeBSD: head/net/libpcap/Makefile 475196 2018-07-23 18:26:49Z garga $
 
 PORTNAME=	libpcap
-PORTVERSION=	1.8.1
+PORTVERSION=	1.9.0
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.tcpdump.org/release/
 

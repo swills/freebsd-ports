@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gnatdroid-armv7/Makefile 473865 2018-07-04 04:31:41Z linimon $
+# $FreeBSD: head/lang/gnatdroid-armv7/Makefile 475108 2018-07-22 16:20:19Z riggs $
 
 PORTNAME?=	armv7
 PORTVERSION=	${SNAPSHOT}
@@ -14,8 +14,6 @@ COMMENT?=	C/Ada cross-compiler, target: Android ARMv7
 
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
-
-BROKEN=		fails to package
 
 BUILD_DEPENDS=	${SYSROOT}>=0:lang/${SYSROOT} \
 		${GDBINUTILS}>=2.21:lang/${GDBINUTILS}
@@ -49,7 +47,7 @@ ARG_TARGET_SPECIFIC?=	--enable-target-optspace \
 ALL_TARGET=		all
 GARCH=			${ARCH:S/amd64/x86_64/}
 BITS=			${GARCH:S/x86_64/64/:S/i386/32/}
-LABEL_TARGET?=		Android ${CPUVERSION}	
+LABEL_TARGET?=		Android ${CPUVERSION}
 OS_LABEL4VERS=		[${OPSYS}${BITS} x ${LABEL_TARGET}]
 WRKSRC=			${WRKDIR}/${IDENTIFICATION}
 BUILD_WRKSRC=		${WRKDIR}/build

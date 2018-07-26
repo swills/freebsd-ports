@@ -1,9 +1,8 @@
 # Created by: Max V. Kostikov <max@kostikov.co>
-# $FreeBSD: head/net/megatools/Makefile 448631 2017-08-23 17:13:21Z amdmi3 $
+# $FreeBSD: head/net/megatools/Makefile 475312 2018-07-25 12:52:24Z swills $
 
 PORTNAME=	megatools
-PORTVERSION=	1.9.98
-PORTREVISION=	1
+PORTVERSION=	1.10.0
 CATEGORIES=	net
 MASTER_SITES=	https://megatools.megous.com/builds/
 

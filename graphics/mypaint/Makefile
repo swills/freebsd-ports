@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/mypaint/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/mypaint/Makefile 475151 2018-07-23 07:34:14Z wen $
 
 PORTNAME=	mypaint
-PORTVERSION=	1.2.0
-PORTREVISION=	7
+PORTVERSION=	1.2.1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/mypaint/mypaint/releases/download/${PORTVERSION:S/^/v/}/
 

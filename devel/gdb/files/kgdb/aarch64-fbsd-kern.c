@@ -23,7 +23,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $FreeBSD: head/devel/gdb/files/kgdb/aarch64-fbsd-kern.c 460050 2018-01-26 19:57:23Z jhb $
+ * $FreeBSD: head/devel/gdb/files/kgdb/aarch64-fbsd-kern.c 475318 2018-07-25 17:28:36Z jhb $
  */
 
 /* Target-dependent code for FreeBSD/aarch64 kernels.  */
@@ -180,6 +180,11 @@ aarch64_fbsd_kernel_init_abi (struct gdbarch_info info, struct gdbarch *gdbarch)
 
   fbsd_vmcore_set_supply_pcb (gdbarch, aarch64_fbsd_supply_pcb);
   fbsd_vmcore_set_cpu_pcb_addr (gdbarch, kgdb_trgt_stop_pcb);
+
+  /* The kernel is linked at a virtual address with the upper 4 bits
+     set, so all 64 bits of virtual addresses need to be treated as
+     significant.  */
+  set_gdbarch_significant_addr_bit (gdbarch, 64);
 }
 
 /* Provide a prototype to silence -Wmissing-prototypes.  */

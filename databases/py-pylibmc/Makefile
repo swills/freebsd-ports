@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/py-pylibmc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-pylibmc/Makefile 475304 2018-07-25 10:18:17Z koobs $
 
 PORTNAME=	pylibmc
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.2
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,10 +11,11 @@ MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Quick and small memcached client for Python
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libmemcached.so:databases/libmemcached
 TEST_DEPENDS=	memcached:databases/memcached \
-		nosetests:devel/py-nose
+		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

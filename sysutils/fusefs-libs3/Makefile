@@ -1,9 +1,9 @@
 # Created by: Stefan Esser
-# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 474477 2018-07-11 19:33:13Z se $
+# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 475238 2018-07-24 09:52:02Z se $
 
 PORTNAME=	fusefs-libs3
 DISTVERSIONPREFIX=	fuse-
-DISTVERSION=	3.2.4
+DISTVERSION=	3.2.5
 CATEGORIES=	sysutils
 
 MAINTAINER=	se@freebsd.org

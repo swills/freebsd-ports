@@ -1,11 +1,12 @@
-# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 458270 2018-01-06 13:52:00Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 475227 2018-07-24 06:47:48Z romain $
 
 PORTNAME=	r10k
 PORTVERSION=	2.6.2
+PORTREVISION=	1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	Tool for deploying Puppet environments and modules
 
 LICENSE=	APACHE20
@@ -25,5 +26,9 @@ USES=		gem shebangfix
 PLIST_FILES=	bin/r10k
 
 SHEBANG_FILES=	integration/*/*.sh
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|' \
+		${WRKSRC}/lib/r10k/settings/loader.rb
 
 .include <bsd.port.mk>

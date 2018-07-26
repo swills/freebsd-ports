@@ -1,9 +1,11 @@
-# $FreeBSD: head/converters/php72-iconv/Makefile 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/converters/php72-iconv/Makefile 475229 2018-07-24 08:44:32Z tz $
 
 CATEGORIES=	converters
 
 MASTERDIR=	${.CURDIR}/../../lang/php72
 
 PKGNAMESUFFIX=	-iconv
+
+TEST_TARGET=    test
 
 .include "${MASTERDIR}/Makefile"

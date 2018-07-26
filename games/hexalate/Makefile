@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hexalate/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/hexalate/Makefile 475326 2018-07-25 18:30:45Z amdmi3 $
 
 PORTNAME=	hexalate
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	games
 MASTER_SITES=	https://gottcode.org/${PORTNAME}/ \
 		https://mirror.amdmi3.ru/distfiles/

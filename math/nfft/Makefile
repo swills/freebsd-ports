@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/nfft/Makefile 459474 2018-01-19 21:28:34Z antoine $
+# $FreeBSD: head/math/nfft/Makefile 475263 2018-07-24 15:37:28Z swills $
 
 PORTNAME=	nfft
-PORTVERSION=	3.4.0
-PORTREVISION=	1
+PORTVERSION=	3.4.1
 CATEGORIES=	math
 
 MAINTAINER=	mike.d.ft402@gmail.com

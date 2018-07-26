@@ -1,8 +1,8 @@
 # Created by: Matthew Hunt <mph@pobox.com>
-# $FreeBSD: head/games/angband/Makefile 444399 2017-06-26 19:36:58Z sunpoet $
+# $FreeBSD: head/games/angband/Makefile 475262 2018-07-24 15:35:28Z swills $
 
 PORTNAME=	angband
-PORTVERSION=	4.1.0
+PORTVERSION=	4.1.2
 CATEGORIES=	games
 MASTER_SITES=	http://rephial.org/downloads/${PORTVERSION:R}/
 
@@ -18,7 +18,6 @@ USES=		autoreconf gmake ncurses
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_path_NCURSES_CONFIG=${TRUE}
 CONFIGURE_ARGS=	--localstatedir=/var
-WRKSRC=		${WRKDIR}/${PORTNAME}-master
 
 CPPFLAGS+=	-I${NCURSESINC}
 LDFLAGS+=	-L${NCURSESLIB} -lncursesw

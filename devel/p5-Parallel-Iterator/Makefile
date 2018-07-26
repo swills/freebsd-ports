@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <frederic@culot.org>
-# $FreeBSD: head/devel/p5-Parallel-Iterator/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Parallel-Iterator/Makefile 475234 2018-07-24 09:07:49Z amdmi3 $
 
 PORTNAME=	Parallel-Iterator
 PORTVERSION=	1.00
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Simple parallel execution
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	modbuild
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

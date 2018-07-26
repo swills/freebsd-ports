@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 474531 2018-07-12 19:03:54Z yuri $
+# $FreeBSD: head/math/Makefile 475328 2018-07-25 19:14:54Z yuri $
 #
 
     COMMENT = Mathematics
@@ -298,6 +298,7 @@
     SUBDIR += lapacke
     SUBDIR += laspack
     SUBDIR += ldouble
+    SUBDIR += lean
     SUBDIR += levmar
     SUBDIR += libRmath
     SUBDIR += libflame
@@ -306,6 +307,7 @@
     SUBDIR += libmissing
     SUBDIR += libocas
     SUBDIR += liborigin
+    SUBDIR += libpoly
     SUBDIR += libqalculate
     SUBDIR += libranlip
     SUBDIR += librsb
@@ -679,6 +681,7 @@
     SUBDIR += py-intspan
     SUBDIR += py-keras
     SUBDIR += py-levmar
+    SUBDIR += py-libpoly
     SUBDIR += py-luminol
     SUBDIR += py-mathdom
     SUBDIR += py-matplotlib
@@ -733,6 +736,7 @@
     SUBDIR += py-uncertainties
     SUBDIR += py-viper
     SUBDIR += py-yt
+    SUBDIR += py-z3
     SUBDIR += qalculate
     SUBDIR += qd
     SUBDIR += qhull
@@ -836,6 +840,7 @@
     SUBDIR += xspread
     SUBDIR += xtensor
     SUBDIR += yacas
+    SUBDIR += yices
     SUBDIR += z3
     SUBDIR += zimpl
 

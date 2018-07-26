@@ -1,8 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/astro/cfitsio/Makefile 463491 2018-03-03 16:29:40Z sunpoet $
+# $FreeBSD: head/astro/cfitsio/Makefile 475145 2018-07-23 04:51:11Z yuri $
 
 PORTNAME=	cfitsio
 PORTVERSION=	3.430
+PORTREVISION=	1
 CATEGORIES=	astro
 MASTER_SITES=	https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/ \
 		https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/oldvers/ \
@@ -14,7 +15,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Library for reading and writing files in FITS data format
 
-LIB_DEPENDS=	libf2c.so:lang/f2c
+LIB_DEPENDS=	libcurl.so:ftp/curl \
+		libf2c.so:lang/f2c
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/fusefs-hfsfuse/Makefile 464368 2018-03-13 12:40:13Z tobik $
+# $FreeBSD: head/sysutils/fusefs-hfsfuse/Makefile 475163 2018-07-23 11:55:02Z tobik $
 
 PORTNAME=	hfsfuse
 DISTVERSION=	g20180118
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libublio.so:devel/libublio \
 		libutf8proc.so:textproc/utf8proc
 
 USES=		fuse gmake
+USE_CSTD=	c99
 USE_GITHUB=	yes
 GH_ACCOUNT=	0x09
 GH_TAGNAME=	d021835629c3fb37bd5bf8d364d5196f1db53867

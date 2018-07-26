@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-simpy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-simpy/Makefile 475130 2018-07-22 23:32:02Z wen $
 
 PORTNAME=	simpy
-PORTVERSION=	3.0.10
+PORTVERSION=	3.0.11
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

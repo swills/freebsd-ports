@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-utils/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/emulators/qemu-utils/Makefile 475342 2018-07-26 01:36:48Z asomers $
 
 PKGNAMESUFFIX=	-utils
 
@@ -23,7 +23,6 @@ EXTRA_PATCHES=	${.CURDIR}/files/patch-configure
 PKGMESSAGE=
 
 PORTDOCS=	qemu-doc.html qemu-doc.txt
-		
 
 CONFIGURE_ARGS?=--localstatedir=/var --extra-ldflags=-L\"${LOCALBASE}/lib\" \
 		--disable-libssh2 \
@@ -73,8 +72,7 @@ CONFIGURE_ARGS?=--localstatedir=/var --extra-ldflags=-L\"${LOCALBASE}/lib\" \
 		--disable-glusterfs \
 		--disable-tpm \
 		--disable-numa \
-		--disable-blobs \
-		--without-pixman
+		--disable-blobs
 
 LIB_DEPENDS=
 

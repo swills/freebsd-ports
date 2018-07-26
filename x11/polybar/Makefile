@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/polybar/Makefile 473406 2018-06-26 19:07:54Z tcberner $
+# $FreeBSD: head/x11/polybar/Makefile 475257 2018-07-24 14:11:11Z tobik $
 
 PORTNAME=	polybar
-DISTVERSION=	3.1.0.20180621
+DISTVERSION=	3.2.0
 CATEGORIES=	x11
 
 MAINTAINER=	lebarondemerde@privacychain.ch
@@ -29,7 +29,6 @@ USES=		cmake:outsource localbase:ldflags pkgconfig \
 		python:2.7,build
 USE_GITHUB=	yes
 GH_ACCOUNT=	jaagr
-GH_TAGNAME=	028b141
 GH_TUPLE=	jaagr:i3ipcpp:v0.7.1-4-gd4e4786:i3ipcpp/lib/i3ipcpp \
 		jaagr:xpp:1.4.0-4-g00165e1:xpp/lib/xpp
 USE_GNOME=	cairo

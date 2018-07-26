@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 474955 2018-07-19 10:14:26Z tota $
+# $FreeBSD: head/devel/Makefile 475319 2018-07-25 17:46:55Z jhb $
 #
 
     COMMENT = Development utilities
@@ -1210,6 +1210,9 @@
     SUBDIR += hub
     SUBDIR += hwloc
     SUBDIR += hyperscan
+    SUBDIR += i386-binutils
+    SUBDIR += i386-gcc
+    SUBDIR += i386-xtoolchain-gcc
     SUBDIR += ice
     SUBDIR += icestorm
     SUBDIR += icmake

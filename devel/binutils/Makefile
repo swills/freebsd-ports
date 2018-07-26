@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/binutils/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/binutils/Makefile 475319 2018-07-25 17:46:55Z jhb $
 
 PORTNAME=	binutils
 PORTVERSION=	2.30
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH?=	1
 CATEGORIES?=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases
@@ -119,6 +119,7 @@ post-install:
 .if ${PKGNAMEPREFIX:S/-$//} != ${BUTARGET}
 	${RM} -r ${STAGEDIR}${PREFIX}/${PKGNAMEPREFIX:S/-$//}
 .endif
+	${RM} ${STAGEDIR}${PREFIX}/${BUTARGET}/lib/ldscripts/i386bsd.*
 	@if [ -d ${STAGEDIR}${PREFIX}/${INFO_PATH} ] ; then rm -rf ${STAGEDIR}${PREFIX}/${INFO_PATH}; fi
 	${LN} -fs ../../bin/${BUTARGET}-size ${STAGEDIR}${PREFIX}/${BUTARGET}/bin/size
 .if defined(CROSS_TOOLCHAIN)

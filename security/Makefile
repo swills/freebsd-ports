@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 474585 2018-07-13 13:26:54Z garga $
+# $FreeBSD: head/security/Makefile 475144 2018-07-23 03:19:26Z yuri $
 #
 
     COMMENT = Security tools
@@ -309,6 +309,7 @@
     SUBDIR += kgpg
     SUBDIR += kgpg-kde4
     SUBDIR += kickpass
+    SUBDIR += klee
     SUBDIR += kleopatra
     SUBDIR += knock
     SUBDIR += knocker
