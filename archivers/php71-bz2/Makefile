@@ -1,9 +1,11 @@
-# $FreeBSD: head/archivers/php71-bz2/Makefile 432324 2017-01-24 11:54:20Z tz $
+# $FreeBSD: head/archivers/php71-bz2/Makefile 475229 2018-07-24 08:44:32Z tz $
 
 CATEGORIES=	archivers
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
 
 PKGNAMESUFFIX=	-bz2
+
+TEST_TARGET=    test
 
 .include "${MASTERDIR}/Makefile"

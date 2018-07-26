@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 474674 2018-07-15 08:17:42Z rene $
+# $FreeBSD: head/lang/Makefile 475072 2018-07-21 17:42:19Z tobik $
 #
 
     COMMENT = Programming languages
@@ -347,7 +347,6 @@
     SUBDIR += smlnj
     SUBDIR += snobol4
     SUBDIR += solidity
-    SUBDIR += spec.alpha
     SUBDIR += spidermonkey17
     SUBDIR += spidermonkey170
     SUBDIR += spidermonkey185

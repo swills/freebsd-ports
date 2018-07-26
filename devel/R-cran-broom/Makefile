@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-broom/Makefile 474156 2018-07-08 06:57:13Z tota $
+# $FreeBSD: head/devel/R-cran-broom/Makefile 475064 2018-07-21 10:48:06Z tota $
 
 PORTNAME=	broom
-DISTVERSION=	0.4.5
+DISTVERSION=	0.5.0
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -11,7 +11,8 @@ COMMENT=	Convert Statistical Analysis Objects into Tidy Data Frames
 
 LICENSE=	MIT
 
-CRAN_DEPENDS=	R-cran-plyr>0:devel/R-cran-plyr \
+CRAN_DEPENDS=	R-cran-backports>0:math/R-cran-backports \
+		R-cran-plyr>0:devel/R-cran-plyr \
 		R-cran-dplyr>0:math/R-cran-dplyr \
 		R-cran-tidyr>0:devel/R-cran-tidyr \
 		R-cran-psych>0:math/R-cran-psych \

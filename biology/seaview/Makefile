@@ -1,8 +1,8 @@
 # Created by: frankch@waru.life.nthu.edu.tw
-# $FreeBSD: head/biology/seaview/Makefile 468198 2018-04-24 12:31:32Z bofh $
+# $FreeBSD: head/biology/seaview/Makefile 475082 2018-07-22 03:22:15Z bofh $
 
 PORTNAME=	seaview
-PORTVERSION=	4.6.5
+PORTVERSION=	4.7
 PORTEPOCH=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://pbil.univ-lyon1.fr/pub/mol_phylogeny/seaview/archive/

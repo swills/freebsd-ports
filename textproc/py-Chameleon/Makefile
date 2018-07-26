@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/textproc/py-Chameleon/Makefile 470930 2018-05-26 17:49:18Z sunpoet $
+# $FreeBSD: head/textproc/py-Chameleon/Makefile 475135 2018-07-23 01:31:44Z wen $
 
 PORTNAME=	Chameleon
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	textproc www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

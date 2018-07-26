@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/libXfont/Makefile 456561 2017-12-17 19:01:19Z zeising $
+# $FreeBSD: head/x11-fonts/libXfont/Makefile 475302 2018-07-25 09:07:51Z amdmi3 $
 
 PORTNAME=	libXfont
 PORTVERSION=	1.5.4
@@ -9,15 +9,19 @@ CATEGORIES=	x11-fonts
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X font library
 
+LICENSE=	MIT BSD2CLAUSE BSD3CLAUSE
+LICENSE_COMB=	multi
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libfreetype.so:print/freetype2
 
+USES=		cpe
 XORG_CAT=	lib
 USE_XORG=	xproto:both xtrans fontsproto:both fontenc
 INSTALL_TARGET=	install-strip
-USES+=	cpe
 CPE_PRODUCT=	libxfont
 CPE_VENDOR=	x
 
-CONFIGURE_ARGS=--without-xmlto --disable-devel-docs
+CONFIGURE_ARGS=	--without-xmlto --disable-devel-docs
 
 .include <bsd.port.mk>

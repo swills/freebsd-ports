@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/textproc/ibus-typing-booster/Makefile 473674 2018-07-01 16:36:53Z thierry $
+# $FreeBSD: head/textproc/ibus-typing-booster/Makefile 475336 2018-07-25 21:02:21Z thierry $
 
 PORTNAME=	ibus-typing-booster
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1.0
 CATEGORIES=	textproc
 
 MAINTAINER=	thierry@FreeBSD.org
@@ -32,10 +32,12 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mike-fabian
 
 USES=		autoreconf gettext gmake gnome iconv pathfix pkgconfig python:3.3+
-USE_GNOME=	pygobject3
+USE_GNOME=	glib20 gtk30 pygobject3
 GNU_CONFIGURE=	yes
 NO_ARCH=	yes
 INSTALLS_ICONS=	yes
+GLIB_SCHEMAS=	org.freedesktop.ibus.engine.typing-booster.gschema.xml
+
 TEST_TARGET=	check
 TEST_ENV=	MAKE_CMD=${LOCALBASE}/bin/gmake LC_ALL=en_US.UTF-8
 

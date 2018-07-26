@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/ir-lv2/Makefile 473027 2018-06-22 09:21:01Z yuri $
+# $FreeBSD: head/audio/ir-lv2/Makefile 475092 2018-07-22 08:08:17Z yuri $
 
 PORTNAME=	ir
 DISTVERSION=	1.3.4
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

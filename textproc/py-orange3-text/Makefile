@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-orange3-text/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-orange3-text/Makefile 475058 2018-07-21 09:14:30Z yuri $
 
 PORTNAME=	orange3-text
-DISTVERSION=	0.3.0
+DISTVERSION=	0.4.1
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

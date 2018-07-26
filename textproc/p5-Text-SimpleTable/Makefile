@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-SimpleTable/Makefile 472658 2018-06-17 23:38:38Z wen $
+# $FreeBSD: head/textproc/p5-Text-SimpleTable/Makefile 475242 2018-07-24 12:29:32Z wen $
 
 PORTNAME=	Text-SimpleTable
-PORTVERSION=	2.05
+PORTVERSION=	2.07
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

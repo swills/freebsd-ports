@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/libhyve-remote/Makefile 463820 2018-03-07 18:31:58Z araujo $
+# $FreeBSD: head/devel/libhyve-remote/Makefile 475298 2018-07-25 05:02:40Z araujo $
 
 PORTNAME=	libhyve-remote
-PORTVERSION=	0.1.4.1
-PORTREVISION=	1
+PORTVERSION=	0.1.4.2
 CATEGORIES=	devel
 
 MAINTAINER=	araujo@FreeBSD.org

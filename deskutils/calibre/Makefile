@@ -1,8 +1,8 @@
 # Created by: stas
-# $FreeBSD: head/deskutils/calibre/Makefile 474042 2018-07-06 23:56:13Z madpilot $
+# $FreeBSD: head/deskutils/calibre/Makefile 475110 2018-07-22 16:48:48Z madpilot $
 
 PORTNAME=	calibre
-PORTVERSION=	3.27.1
+PORTVERSION=	3.28.0
 CATEGORIES=	deskutils python
 MASTER_SITES=	http://download.calibre-ebook.com/${PORTVERSION}/
 
@@ -70,7 +70,8 @@ MAKE_ENV+=	FC_INC_DIR="${LOCALBASE}/include/fontconfig" \
 		XDG_DATA_DIRS=${STAGEDIR}${PREFIX}/share \
 		XDG_CONFIG_HOME=${WRKDIR}/xdg-config \
 		XDG_UTILS_INSTALL_MODE=system \
-		QMAKE=${QMAKE}
+		QMAKE=${QMAKE} \
+		SIP_BIN=sip-${PYTHON_VER}
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|#!/usr/bin/env python2|#!${PYTHON_CMD}|" \

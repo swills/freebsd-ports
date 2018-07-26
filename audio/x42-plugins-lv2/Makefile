@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 472826 2018-06-19 21:48:16Z yuri $
+# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 475092 2018-07-22 08:08:17Z yuri $
 
 PORTNAME=	x42-plugins
 DISTVERSION=	20180320 # the version is published here: http://gareus.org/misc/x42-plugins.php
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://gareus.org/misc/x42-plugins/
 PKGNAMESUFFIX=	-lv2

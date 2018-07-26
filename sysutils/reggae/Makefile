@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/reggae/Makefile 474415 2018-07-10 22:20:36Z rm $
+# $FreeBSD: head/sysutils/reggae/Makefile 475131 2018-07-22 23:59:35Z wen $
 
 PORTNAME=	reggae
-PORTVERSION=	0.0.10
+PORTVERSION=	0.0.11
 CATEGORIES=	sysutils
 
 MAINTAINER=	meka@tilda.center

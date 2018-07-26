@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/Makefile 467656 2018-04-17 20:39:37Z rene $
+# $FreeBSD: head/irc/Makefile 475253 2018-07-24 13:45:03Z garga $
 #
 
     COMMENT = Internet Relay Chat utilities
@@ -122,6 +122,7 @@
     SUBDIR += undernet-ircu
     SUBDIR += unreal
     SUBDIR += weechat
+    SUBDIR += weechat-otr
     SUBDIR += xaric
     SUBDIR += znc
 

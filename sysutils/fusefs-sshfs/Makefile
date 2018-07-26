@@ -1,8 +1,9 @@
 # Created by: Anish Mistry
-# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 458526 2018-01-09 12:45:04Z bofh $
+# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 475207 2018-07-23 21:42:51Z bofh $
 
 PORTNAME=	sshfs
-PORTVERSION=	3.3.1
+PORTVERSION=	3.4.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-

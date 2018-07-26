@@ -1,9 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/qjackctl/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/qjackctl/Makefile 475112 2018-07-22 17:13:25Z yuri $
 
 PORTNAME=	qjackctl
 DISTVERSIONPREFIX=	qjackctl_
-DISTVERSION=	0_5_2
+DISTVERSION=	0_5_3
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

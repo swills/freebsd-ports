@@ -1,9 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Quantum-Superpositions/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/lang/p5-Quantum-Superpositions/Makefile 475340 2018-07-26 00:27:07Z bofh $
 
 PORTNAME=	Quantum-Superpositions
-PORTVERSION=	2.02
-PORTREVISION=	1
+PORTVERSION=	2.03
 CATEGORIES=	lang science perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,5 +18,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

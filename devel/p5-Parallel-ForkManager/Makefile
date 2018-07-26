@@ -1,8 +1,8 @@
 # Created by: Nicolas Jombart <Nicolas.Jombart@hsc-labs.com>
-# $FreeBSD: head/devel/p5-Parallel-ForkManager/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Parallel-ForkManager/Makefile 475062 2018-07-21 10:05:56Z wen $
 
 PORTNAME=	Parallel-ForkManager
-PORTVERSION=	1.19
+PORTVERSION=	1.20
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

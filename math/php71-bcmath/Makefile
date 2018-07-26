@@ -1,9 +1,11 @@
-# $FreeBSD: head/math/php71-bcmath/Makefile 432324 2017-01-24 11:54:20Z tz $
+# $FreeBSD: head/math/php71-bcmath/Makefile 475229 2018-07-24 08:44:32Z tz $
 
 CATEGORIES=	math
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
 
 PKGNAMESUFFIX=	-bcmath
+
+TEST_TARGET=    test
 
 .include "${MASTERDIR}/Makefile"

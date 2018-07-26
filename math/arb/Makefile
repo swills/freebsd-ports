@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/arb/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/arb/Makefile 475332 2018-07-25 20:12:03Z yuri $
 
 PORTNAME=	arb
-DISTVERSION=	2.13.0
-PORTREVISION=	1
+DISTVERSION=	2.14.0
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -21,8 +20,5 @@ CONFIGURE_ARGS=	--disable-static
 USE_GITHUB=	yes
 GH_ACCOUNT=	fredrik-johansson
 USE_LDCONFIG=	yes
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libarb.so.*
 
 .include <bsd.port.mk>

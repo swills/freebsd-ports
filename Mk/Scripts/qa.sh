@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 474853 2018-07-18 11:33:24Z mat $
+# $FreeBSD: head/Mk/Scripts/qa.sh 475360 2018-07-26 10:37:36Z mat $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -918,7 +918,9 @@ license()
 {
 	local lic autoaccept pkgmirror #distsell distmirror pkgsell
 
-	if [ -n "$LICENSE" ]; then
+	if [ -n "$DISABLE_LICENSES" ]; then
+		warn "You have disabled the licenses framework with DISABLE_LICENSES, unable to run checks"
+	elif [ -n "$LICENSE" ]; then
 		for lic in $LICENSE_PERMS; do
 			case "$lic" in
 				auto-accept) autoaccept=1 ;;

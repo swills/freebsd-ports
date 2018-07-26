@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 474818 2018-07-17 17:47:12Z tcberner $
+# $FreeBSD: head/misc/Makefile 475352 2018-07-26 09:11:26Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -303,6 +303,7 @@
     SUBDIR += opencyc
     SUBDIR += openhab2
     SUBDIR += openhab2-addons
+    SUBDIR += openhmd
     SUBDIR += openmvg
     SUBDIR += openr2
     SUBDIR += orange3

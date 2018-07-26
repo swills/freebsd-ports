@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 471283 2018-06-01 18:50:44Z rene $
+# $FreeBSD: head/emulators/Makefile 475276 2018-07-24 20:26:10Z antoine $
 #
 
     COMMENT = Emulators for other operating systems
@@ -176,8 +176,8 @@
     SUBDIR += x49gp
     SUBDIR += xbraitenberg
     SUBDIR += xcpc
-    SUBDIR += xen
-    SUBDIR += xen-kernel
+    SUBDIR += xen-kernel411
+    SUBDIR += xen-kernel47
     SUBDIR += xhomer
     SUBDIR += xsystem35
     SUBDIR += xzx

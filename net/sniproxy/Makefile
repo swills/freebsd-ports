@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/sniproxy/Makefile 468034 2018-04-22 15:25:48Z krion $
+# $FreeBSD: head/net/sniproxy/Makefile 475258 2018-07-24 14:50:33Z krion $
 
 PORTNAME=	sniproxy
 DISTVERSION=	0.5.0
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	krion@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/ansible/Makefile 474203 2018-07-08 22:23:28Z lifanov $
+# $FreeBSD: head/sysutils/ansible/Makefile 475222 2018-07-24 03:16:31Z lifanov $
 
 PORTNAME=	ansible
 PORTVERSION?=	2.6.1
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://releases.ansible.com/ansible/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -68,6 +68,10 @@ post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/ansible.cfg ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/hosts ${STAGEDIR}${EXAMPLESDIR}
+
+post-stage:
+	${FIND} ${STAGEDIR}${PREFIX}/bin -type l -name ansible-\* -lname ansible \
+		-execdir ${RLN} ansible-${PYTHON_VER} {} \;
 
 TEST_WRKSRC=${WRKSRC}/test
 

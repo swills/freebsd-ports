@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: head/Mk/Scripts/plist_sub_sed_sort.sh 471990 2018-06-08 09:26:28Z mat $
+# $FreeBSD: head/Mk/Scripts/plist_sub_sed_sort.sh 475361 2018-07-26 11:09:46Z mat $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -14,4 +14,4 @@ awk '{
 		gsub(/\\./, ".", a[2])
 		print length(a[2]), sedp
 	}
-}' | sort -rn | awk '{$1=""; print $0}' | paste -s -d ' ' -
+}' | sort -rn | awk '{$1=""; print $0}' > $1

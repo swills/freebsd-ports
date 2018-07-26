@@ -1,6 +1,5 @@
-# $FreeBSD: head/devel/php71-intl/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/devel/php71-intl/Makefile 475229 2018-07-24 08:44:32Z tz $
 
-PORTREVISION=	1
 CATEGORIES=	devel
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
@@ -11,5 +10,7 @@ USES=		compiler:c++11-lib
 USE_CXXSTD=	gnu++11
 
 CPPFLAGS+=	-DU_USING_ICU_NAMESPACE=1
+
+TEST_TARGET=    test
 
 .include "${MASTERDIR}/Makefile"

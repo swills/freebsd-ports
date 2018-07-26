@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/libdatrie/Makefile 468252 2018-04-24 23:45:46Z bofh $
+# $FreeBSD: head/devel/libdatrie/Makefile 475306 2018-07-25 12:19:43Z bofh $
 
 PORTNAME=	libdatrie
-PORTVERSION=	0.2.11
+PORTVERSION=	0.2.12
 CATEGORIES=	devel
 MASTER_SITES=	http://linux.thai.net/pub/thailinux/software/libthai/
 

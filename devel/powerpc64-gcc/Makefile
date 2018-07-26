@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/powerpc64-gcc/Makefile 474469 2018-07-11 16:50:00Z jhb $
+# $FreeBSD: head/devel/powerpc64-gcc/Makefile 475319 2018-07-25 17:46:55Z jhb $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMEPREFIX?=	powerpc64-
@@ -71,7 +71,7 @@ post-patch:
 	@${REINPLACE_CMD} -e '/LOCAL_INCLUDE_DIR/ d ' \
 		${WRKSRC}//gcc/Makefile.in
 
-.if ${TARGETARCH} == "amd64"
+.if ${ARCH} == "amd64"
 CONFIGURE_TARGET=	x86_64-unknown-${OPSYS:tl}${OSREL}
 .else
 CONFIGURE_TARGET=	${ARCH}-unknown-${OPSYS:tl}${OSREL}
@@ -105,6 +105,10 @@ post-install:
 	@${RM} ${STAGEDIR}${PREFIX}/man/man7/*
 .if empty(PKGNAMEPREFIX:M*-*-)
 	@${RM} -r ${STAGEDIR}${PREFIX}/lib/gcc/${GCC_TARGET}/${PORTVERSION}/include-fixed
+.endif
+.if ${TARGETARCH} == "amd64" || ${TARGETARCH} == "i386"
+	# Conflicts with sys/x86/include/float.h
+	${RM} ${STAGEDIR}${PREFIX}/lib/gcc/${GCC_TARGET$}/${PORTVERSION}/include/float.h
 .endif
 
 # This port and all its slave ports fail on aarch64 -- but not all

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34/Makefile 472187 2018-06-11 12:00:59Z mat $
+# $FreeBSD: head/databases/mongodb34/Makefile 475271 2018-07-24 20:03:01Z swills $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
@@ -33,7 +33,9 @@ CONFLICTS_BUILD=	mongo-cxx-driver
 
 CHOSEN_COMPILER_TYPE=	clang
 
-USES=		compiler:c++14-lang cpe python:build scons
+USES=		compiler:c++14-lang cpe dos2unix python:build scons
+DOS2UNIX_FILES=	src/third_party/IntelRDFPMathLib20U1/LIBRARY/src/bid_functions.h
+
 USE_RC_SUBR=	mongod
 
 MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} \

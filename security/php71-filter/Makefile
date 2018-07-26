@@ -1,9 +1,11 @@
-# $FreeBSD: head/security/php71-filter/Makefile 432324 2017-01-24 11:54:20Z tz $
+# $FreeBSD: head/security/php71-filter/Makefile 475229 2018-07-24 08:44:32Z tz $
 
 CATEGORIES=	security
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
 
 PKGNAMESUFFIX=	-filter
+
+TEST_TARGET=    test
 
 .include "${MASTERDIR}/Makefile"

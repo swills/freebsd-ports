@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/trezord/Makefile 472381 2018-06-14 14:07:55Z mat $
+# $FreeBSD: head/security/trezord/Makefile 475309 2018-07-25 12:42:43Z ale $
 
 PORTNAME=	trezord
-PORTVERSION=	2.0.14
+PORTVERSION=	2.0.20
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

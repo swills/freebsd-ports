@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Radius/Makefile 428518 2016-12-13 17:27:19Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-Radius/Makefile 475297 2018-07-25 04:43:34Z wen $
 
 PORTNAME=	Authen-Radius
-PORTVERSION=	0.26
+PORTVERSION=	0.27
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

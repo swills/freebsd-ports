@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 474850 2018-07-18 11:13:06Z mat $
+# $FreeBSD: head/Mk/bsd.port.mk 475360 2018-07-26 10:37:36Z mat $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1633,6 +1633,7 @@ QA_ENV+=		STAGEDIR=${STAGEDIR} \
 				PKGBASE=${PKGBASE} \
 				LICENSE="${LICENSE}" \
 				LICENSE_PERMS="${_LICENSE_PERMS}" \
+				DISABLE_LICENSES="${DISABLE_LICENSES:Dyes}" \
 				PORTNAME=${PORTNAME} \
 				NO_ARCH=${NO_ARCH} \
 				"NO_ARCH_IGNORE=${NO_ARCH_IGNORE}" \

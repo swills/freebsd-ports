@@ -1,5 +1,5 @@
 # Created by: Guixing Bai <khsing.cn@gmail.com>
-# $FreeBSD: head/www/py-tornado/Makefile 474846 2018-07-18 10:03:32Z gblach $
+# $FreeBSD: head/www/py-tornado/Makefile 475190 2018-07-23 17:26:35Z gblach $
 
 PORTNAME=	tornado
 PORTVERSION=	5.1
@@ -18,6 +18,10 @@ USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} < 3200
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures@${PY_FLAVOR}
+.endif
 
 .if ${PYTHON_REL} < 3400
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>0:devel/py-singledispatch@${PY_FLAVOR}

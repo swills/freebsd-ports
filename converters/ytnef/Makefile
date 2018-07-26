@@ -1,8 +1,8 @@
 # Created by: Rodrigo Graeff <delphus@gmail.com>
-# $FreeBSD: head/converters/ytnef/Makefile 437222 2017-03-29 18:30:43Z pawel $
+# $FreeBSD: head/converters/ytnef/Makefile 475117 2018-07-22 19:35:40Z fernape $
 
 PORTNAME=	ytnef
-PORTVERSION=	1.9.2
+PORTVERSION=	1.9.3
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	converters mail
@@ -15,12 +15,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	p5-MIME-Tools>=0:mail/p5-MIME-Tools
 
+USES=		autoreconf libtool pathfix perl5 shebangfix
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	Yeraze
 
-USES=		autoreconf libtool pathfix perl5 shebangfix
-SHEBANG_FILES=	ytnef/ytnefprocess
 USE_PERL5=	run
+
+SHEBANG_FILES=	ytnef/ytnefprocess
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
