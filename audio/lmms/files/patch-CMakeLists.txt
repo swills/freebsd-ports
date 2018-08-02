@@ -1,30 +1,40 @@
---- CMakeLists.txt.orig	2016-07-26 15:14:45 UTC
+https://github.com/LMMS/lmms/pull/4486
+
+--- CMakeLists.txt.orig	2018-07-14 13:58:23 UTC
 +++ CMakeLists.txt
-@@ -325,6 +325,7 @@ ENDIF(LMMS_BUILD_WIN32)
+@@ -56,6 +56,7 @@ OPTION(WANT_MP3LAME	"Include MP3/Lame support" ON)
+ OPTION(WANT_OGGVORBIS	"Include OGG/Vorbis support" ON)
+ OPTION(WANT_PULSEAUDIO	"Include PulseAudio support" ON)
+ OPTION(WANT_PORTAUDIO	"Include PortAudio support" ON)
++OPTION(WANT_SNDIO	"Include sndio support" OFF)
+ OPTION(WANT_SOUNDIO	"Include libsoundio support" ON)
+ OPTION(WANT_SDL		"Include SDL (Simple DirectMedia Layer) support" ON)
+ OPTION(WANT_SF2		"Include SoundFont2 player plugin" ON)
+@@ -80,6 +81,9 @@ ELSE(LMMS_BUILD_APPLE)
+ 	SET(STATUS_APPLEMIDI "<not supported on this platform>")
+ ENDIF(LMMS_BUILD_APPLE)
  
- # check for libsamplerate
- PKG_CHECK_MODULES(SAMPLERATE REQUIRED samplerate>=0.1.8)
-+link_directories(${SAMPLERATE_LIBRARY_DIRS})
++IF(LMMS_BUILD_OPENBSD)
++	SET(WANT_SNDIO ON)
++ENDIF(LMMS_BUILD_OPENBSD)
  
+ IF(LMMS_BUILD_WIN32)
+ 	SET(WANT_ALSA OFF)
+@@ -428,7 +432,7 @@ IF(LMMS_BUILD_LINUX OR LMMS_BUILD_APPLE OR LMMS_BUILD_
+ 	FIND_PACKAGE(Threads)
+ ENDIF(LMMS_BUILD_LINUX OR LMMS_BUILD_APPLE OR LMMS_BUILD_OPENBSD)
  
- CONFIGURE_FILE("${CMAKE_SOURCE_DIR}/lmmsconfig.h.in" "${CMAKE_BINARY_DIR}/lmmsconfig.h")
-@@ -333,10 +334,7 @@ CONFIGURE_FILE("${CMAKE_SOURCE_DIR}/lmms
- CONFIGURE_FILE("${CMAKE_SOURCE_DIR}/plugins/zynaddsubfx/zynaddsubfx.rc.in" "${CMAKE_BINARY_DIR}/plugins/zynaddsubfx/zynaddsubfx.rc")
+-IF(LMMS_BUILD_OPENBSD)
++IF(WANT_SNDIO)
+ 	FIND_PACKAGE(Sndio)
+ 	IF(SNDIO_FOUND)
+ 		SET(LMMS_HAVE_SNDIO TRUE)
+@@ -436,7 +440,7 @@ IF(LMMS_BUILD_OPENBSD)
+     	ELSE()
+         	SET(STATUS_SNDIO "<not found or not supported on this platform>")
+ 	ENDIF(SNDIO_FOUND)
+-ENDIF(LMMS_BUILD_OPENBSD)
++ENDIF(WANT_SNDIO)
  
- # set compiler flags
--SET(WERROR_FLAGS "-Wall -Werror=unused-function -Wno-sign-compare -Wno-strict-overflow")
--IF(NOT LMMS_BUILD_APPLE)
--   SET(WERROR_FLAGS "${WERROR_FLAGS} -Werror")
--ENDIF()
-+SET(WERROR_FLAGS "-Wall -Wno-sign-compare -Wno-strict-overflow")
- 
- # Due to a regression in gcc-4.8.X, we need to disable array-bounds check
- IF (CMAKE_COMPILER_IS_GNUCXX AND ((CMAKE_CXX_COMPILER_VERSION VERSION_EQUAL "4.8.0") OR (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER "4.8.0")))
-@@ -639,6 +637,7 @@ MESSAGE(
- "running cmake again!\n"
- "-----------------------------------------------------------------\n"
- "\n\n")
-+message(STATUS "using link directories: ${FFTW3F_LIBRARY_DIRS} ${AUDIO_LIBRARY_DIRS} ${ZLIB_LIBRARY_DIRS} ${FFTW_LIBRARY_DIRS} ${MXML_LIBRARY_DIRS} ${FLTK_LIBRARY_DIRS}")
- 
- INCLUDE(InstallRequiredSystemLibraries)
- SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "LMMS - easy music production for everyone!")
+ # check for WINE
+ IF(WANT_VST)
