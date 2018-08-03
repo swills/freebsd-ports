@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 467090 2018-04-11 19:38:46Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 475800 2018-07-29 19:22:26Z sunpoet $
 
 PORTNAME=	fog-ovirt
-PORTVERSION=	1.0.3
+PORTVERSION=	1.1.1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -12,9 +12,9 @@ COMMENT=	Module for the 'fog' gem to support oVirt platform
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-fog-core1>=1.45:devel/rubygem-fog-core1 \
+RUN_DEPENDS=	rubygem-fog-core>=0:devel/rubygem-fog-core \
 		rubygem-fog-json>=0:devel/rubygem-fog-json \
-		rubygem-fog-xml>=0.1.1:textproc/rubygem-fog-xml \
+		rubygem-fog-xml>=0:textproc/rubygem-fog-xml \
 		rubygem-ovirt-engine-sdk>=4.1.3:net/rubygem-ovirt-engine-sdk \
 		rubygem-rbovirt>=0.1.5:www/rubygem-rbovirt
 

@@ -1,10 +1,10 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/librime/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/chinese/librime/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	librime
 PORTVERSION=	1.2.9
 DISTVERSIONPREFIX=	rime-
-PORTREVISION=	9
+PORTREVISION=	11
 CATEGORIES=	chinese textproc
 
 MAINTAINER=	lichray@gmail.com
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 USES=		cmake compiler:c++11-lib pathfix pkgconfig gettext perl5
 USE_PERL5=	build patch
 USE_LDCONFIG=	yes
-USE_XORG=	xproto
+USE_XORG=	xorgproto
 LDFLAGS+=	-lintl
 USE_GITHUB=	yes
 GH_ACCOUNT=	rime

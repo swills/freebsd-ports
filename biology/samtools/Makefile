@@ -1,8 +1,8 @@
 # Created by: Reed A. Cartwright <cartwright@asu.edu>
-# $FreeBSD: head/biology/samtools/Makefile 455518 2017-12-04 15:27:29Z mat $
+# $FreeBSD: head/biology/samtools/Makefile 476246 2018-08-02 19:28:36Z fernape $
 
 PORTNAME=	samtools
-PORTVERSION=	1.6
+DISTVERSION=	1.9
 CATEGORIES=	biology
 
 MAINTAINER=	cartwright@asu.edu
@@ -15,16 +15,15 @@ BUILD_DEPENDS=	htslib>=1.6:biology/htslib
 LIB_DEPENDS=	libhts.so:biology/htslib
 TEST_DEPENDS=	bash:shells/bash
 
+USES=		autoreconf gmake localbase ncurses \
+		perl5 python:env shebangfix
+
 USE_GITHUB=	yes
 
-USES=		autoreconf gmake ncurses perl5 python:env shebangfix
 USE_PERL5=	test
 GNU_CONFIGURE=	yes
 SUB_FILES=	pkg-message
 SHEBANG_FILES=	misc/*.pl misc/*.py misc/plot-bamstats test/test.pl
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 TEST_TARGET=	test
 

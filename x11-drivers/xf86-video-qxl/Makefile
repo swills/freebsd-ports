@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-video-qxl/Makefile 462587 2018-02-22 12:53:13Z tobik $
+# $FreeBSD: head/x11-drivers/xf86-video-qxl/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-video-qxl
 DISTVERSION=	0.1.5
+PORTREVISION=	1
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	ports@FreeBSD.org
@@ -15,7 +16,7 @@ LIB_DEPENDS=	libspice-server.so:devel/libspice-server
 
 USES=		localbase:ldflags pkgconfig python:2.7 shebangfix
 
-USE_XORG=	xf86dgaproto xfont
+USE_XORG=	xfont
 XORG_CAT=	driver
 
 CONFIGURE_ARGS+=--enable-xspice

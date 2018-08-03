@@ -1,9 +1,9 @@
 # Created by: bf@FreeBSD.org
-# $FreeBSD: head/math/sfft/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/sfft/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	sfft
 PORTVERSION=	0.1.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	math
 MASTER_SITES=	http://spiral.net/software/sfft/ LOCAL/bf
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}

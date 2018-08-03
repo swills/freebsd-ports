@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-slepc4py/Makefile 473300 2018-06-25 09:00:12Z yuri $
+# $FreeBSD: head/math/py-slepc4py/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	slepc4py
 DISTVERSION=	3.9.0
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

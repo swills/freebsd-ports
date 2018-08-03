@@ -1,8 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/ftp/lftp/Makefile 472303 2018-06-13 11:32:16Z martymac $
+# $FreeBSD: head/ftp/lftp/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lftp
 PORTVERSION=	4.8.3
+PORTREVISION=	1
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	http://lftp.tech/ftp/ \
 		http://lftp.tech/ftp/old/ \

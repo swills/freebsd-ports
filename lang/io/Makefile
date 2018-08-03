@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/lang/io/Makefile 471965 2018-06-08 01:56:02Z linimon $
+# $FreeBSD: head/lang/io/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	io
 PORTVERSION=	2017.09.06
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 
 MAINTAINER=	gahr@FreeBSD.org

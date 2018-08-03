@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/kaddressbook/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/kaddressbook/Makefile 476229 2018-08-02 10:22:44Z tcberner $
 
 PORTNAME=	kaddressbook
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	2
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -20,7 +21,8 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons crash \
 		prison service sonnet textwidgets widgetsaddons xmlgui
 # pim components
 USE_KDE+=	akonadi akonadicontacts akonadisearch contacts grantleetheme \
-		kdepim-apps-libs kontactinterface libkdepim pimcommon
+		kdepim-apps-libs kontactinterface libkdepim pimcommon \
+		kdepim-runtime5_run
 USE_QT=		core dbus gui network printsupport widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

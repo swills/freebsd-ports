@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/rpy2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/rpy2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	rpy2
 PORTVERSION=	2.7.8
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 MASTER_SITES=	CHEESESHOP
 

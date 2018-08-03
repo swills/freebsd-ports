@@ -1,9 +1,9 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/math/ised/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/ised/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ised
 PORTVERSION=	2.7.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}
 

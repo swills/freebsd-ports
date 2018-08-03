@@ -1,8 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-demos/Makefile 462715 2018-02-23 19:02:43Z jbeich $
+# $FreeBSD: head/graphics/mesa-demos/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	mesa-demos
 PORTVERSION=	8.4.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.freedesktop.org/pub/mesa/demos/ #${PORTVERSION}/
 
@@ -16,7 +17,7 @@ LIB_DEPENDS=	libdrm.so:graphics/libdrm
 GNU_CONFIGURE=	yes
 USES=		gmake localbase pkgconfig tar:bzip2
 USE_GL=		egl gbm gl glesv2 glew glu glut
-USE_XORG=	dri2proto glproto x11 xdamage xext xfixes xi xxf86vm
+USE_XORG=	xorgproto x11 xdamage xext xfixes xi xxf86vm
 
 CONFIGURE_ARGS+=--disable-osmesa --disable-vg --disable-wayland \
 		--with-system-data-files

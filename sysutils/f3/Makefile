@@ -1,8 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/sysutils/f3/Makefile 461655 2018-02-12 21:23:31Z dbaio $
+# $FreeBSD: head/sysutils/f3/Makefile 475536 2018-07-28 12:10:19Z dbaio $
 
 PORTNAME=	f3
-PORTVERSION=	7.0
+PORTVERSION=	7.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

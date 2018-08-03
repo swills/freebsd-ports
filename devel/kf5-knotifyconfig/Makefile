@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/kf5-knotifyconfig/Makefile 474977 2018-07-19 20:45:03Z tcberner $
+# $FreeBSD: head/devel/kf5-knotifyconfig/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	knotifyconfig
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

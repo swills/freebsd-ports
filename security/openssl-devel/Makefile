@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl-devel/Makefile 472247 2018-06-12 13:45:44Z brnrd $
+# $FreeBSD: head/security/openssl-devel/Makefile 476184 2018-08-01 16:33:11Z adamw $
 
 PORTNAME=	openssl
 PORTVERSION=	1.1.0h
@@ -100,7 +100,7 @@ ZLIB_CONFIGURE_ON=	zlib-dynamic
 
 .include <bsd.port.pre.mk>
 .if ${PREFIX} == /usr
-IGNORE=	the OpenSSL port can not be installed over the base version
+IGNORE=	the OpenSSL port cannot be installed over the base version
 .endif
 
 OPENSSLDIR?=	${PREFIX}/openssl

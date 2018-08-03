@@ -1,9 +1,9 @@
 # Created by: Brooks Davis
-# $FreeBSD: head/devel/lldb38/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/lldb38/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lldb
 PORTVERSION=	3.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 PKGNAMESUFFIX=	${LLVM_SUFFIX}
 

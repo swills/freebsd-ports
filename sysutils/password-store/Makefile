@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/password-store/Makefile 472398 2018-06-14 21:04:06Z rene $
+# $FreeBSD: head/sysutils/password-store/Makefile 476287 2018-08-03 10:04:04Z rene $
 
 PORTNAME=	password-store
-PORTVERSION=	1.7.2
+PORTVERSION=	1.7.3
 CATEGORIES=	sysutils
 MASTER_SITES=	https://git.zx2c4.com/password-store/snapshot/
 

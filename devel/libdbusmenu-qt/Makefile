@@ -1,9 +1,9 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/devel/libdbusmenu-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/libdbusmenu-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libdbusmenu-qt
 PORTVERSION=	${MAJOR_VER}.${SNAPSHOT_VER:S/.//g}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://archive.ubuntu.com/ubuntu/pool/main/libd/${PORTNAME}/ \
 		LOCAL/tcberner/${PORTNAME}/${PORTVERSION}

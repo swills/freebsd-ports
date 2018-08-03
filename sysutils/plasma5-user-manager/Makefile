@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/plasma5-user-manager/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-user-manager/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	user-manager
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

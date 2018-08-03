@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-symbolic/Makefile 468999 2018-05-03 23:42:35Z stephen $
+# $FreeBSD: head/math/octave-forge-symbolic/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	octave-forge-symbolic
-PORTVERSION=	2.6.0
-PORTREVISION=	4
+PORTVERSION=	2.7.0
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

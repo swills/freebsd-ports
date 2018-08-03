@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/graphics/aeskulap/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/graphics/aeskulap/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	aeskulap
 PORTVERSION=	0.2.2.20140119
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org

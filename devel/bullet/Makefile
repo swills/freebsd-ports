@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/bullet/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/bullet/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	bullet
 PORTVERSION=	2.86.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	acm@FreeBSD.org

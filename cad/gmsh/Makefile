@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/gmsh/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/gmsh/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gmsh
 DISTVERSION=	3.0.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	cad
 MASTER_SITES=	http://gmsh.info/src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source

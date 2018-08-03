@@ -1,9 +1,9 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/x11-wm/gcompmgr/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/x11-wm/gcompmgr/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gcompmgr
 PORTVERSION=	0.21
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

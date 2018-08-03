@@ -1,9 +1,9 @@
 # Created by: mm
-# $FreeBSD: head/archivers/pxz/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/archivers/pxz/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pxz
 PORTVERSION=	0.20141018
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	archivers
 MASTER_SITES=	LOCAL/delphij
 DISTNAME=	pxz-git-${PORTVERSION:S/0.//}

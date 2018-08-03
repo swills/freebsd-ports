@@ -1,8 +1,9 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/science/h5utils/Makefile 465256 2018-03-22 04:45:38Z yuri $
+# $FreeBSD: head/science/h5utils/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	h5utils
 DISTVERSION=	1.13.1
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	aehlig@linta.de

@@ -1,9 +1,9 @@
 # Created by: Golyashov Sergei <svvord@mail.ru>
-# $FreeBSD: head/devel/kdevplatform-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kdevplatform-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kdevplatform
 PORTVERSION=	${KDEVELOP_VERSION:S/4./1./}
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/${KDEVELOP_BRANCH}/kdevelop/${KDEVELOP_VERSION}
 DIST_SUBDIR=	KDE/kdevelop/${KDEVELOP_VERSION}

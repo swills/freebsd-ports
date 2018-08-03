@@ -1,9 +1,9 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/meep/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/science/meep/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	meep
 PORTVERSION=	1.2.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	science
 MASTER_SITES=	http://ab-initio.mit.edu/meep/
 

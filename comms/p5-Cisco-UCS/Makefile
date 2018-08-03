@@ -1,8 +1,8 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/comms/p5-Cisco-UCS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/comms/p5-Cisco-UCS/Makefile 475893 2018-07-30 14:10:59Z miwi $
 
 PORTNAME=	Cisco-UCS
-PORTVERSION=	0.30
+PORTVERSION=	0.51
 PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	comms perl5
@@ -16,11 +16,13 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
-		p5-XML-Simple>=0:textproc/p5-XML-Simple \
+		p5-XML-Simple>=0:textproc/p5-XML-Simple
+RUN_DEPENDS=	p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

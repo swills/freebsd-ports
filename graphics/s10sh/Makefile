@@ -1,5 +1,5 @@
 # Created by: John Reynolds <johnjen@reynoldsnet.org>
-# $FreeBSD: head/graphics/s10sh/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/graphics/s10sh/Makefile 476184 2018-08-01 16:33:11Z adamw $
 
 PORTNAME=	s10sh
 PORTVERSION=	0.2.2
@@ -14,9 +14,9 @@ COMMENT=	USB/serial userspace driver for the Canon PowerShot digital cameras
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_aarch64=	Fails to build: error: can not find the byte order for this architecture, fix bytesex.h
-BROKEN_armv6=	Fails to build: error: can not find the byte order for this architecture, fix bytesex.h
-BROKEN_armv7=	Fails to build: error: can not find the byte order for this architecture, fix bytesex.h
+BROKEN_aarch64=	Fails to build: error: cannot find the byte order for this architecture, fix bytesex.h
+BROKEN_armv6=	Fails to build: error: cannot find the byte order for this architecture, fix bytesex.h
+BROKEN_armv7=	Fails to build: error: cannot find the byte order for this architecture, fix bytesex.h
 
 USES=		ncurses readline
 

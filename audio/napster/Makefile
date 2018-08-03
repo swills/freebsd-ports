@@ -1,5 +1,5 @@
 # Created by: dburr@FreeBSD.org
-# $FreeBSD: head/audio/napster/Makefile 408401 2016-02-07 13:08:14Z marino $
+# $FreeBSD: head/audio/napster/Makefile 475499 2018-07-28 06:41:07Z tobik $
 
 PORTNAME=	nap
 PORTVERSION=	1.5.4
@@ -8,6 +8,9 @@ MASTER_SITES=	SF/nap/nap/${PORTVERSION}
 
 MAINTAINER?=	ports@FreeBSD.org
 COMMENT?=	MP3 sharing, search, and chat client for the OpenNAP network
+
+DEPRECATED=	Unmaintained. Napster and OpenNap are dead
+EXPIRATION_DATE=	2018-08-30
 
 CONFLICTS?=	ru-nap-*
 

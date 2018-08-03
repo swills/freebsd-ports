@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/gxplugins-lv2/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/audio/gxplugins-lv2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gxplugins
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

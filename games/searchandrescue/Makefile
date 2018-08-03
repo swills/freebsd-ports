@@ -1,20 +1,23 @@
 # Created by: Jesse Smith <jessefrgsmith@yahoo.ca>
-# $FreeBSD: head/games/searchandrescue/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/searchandrescue/Makefile 476220 2018-08-02 05:57:25Z tobik $
 
 PORTNAME=	SearchAndRescue
 PORTVERSION=	1.4.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME:tl}/Program/
 
 MAINTAINER=	jessefrgsmith@yahoo.ca
 COMMENT=	Flight simulator in which the player rescues people
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 RUN_DEPENDS=	${LOCALBASE}/share/searchandrescue/human.ini:games/searchandrescue-data
 
 USE_SDL=	mixer
-USE_XORG=	x11 xau xdmcp xext xmu xpm xxf86vm
-USE_GL=		glu
+USE_XORG=	ice sm x11 xau xdmcp xext xmu xpm xxf86vm
+USE_GL=		gl glu
 WRKSRC=		${WRKDIR}/${PORTNAME:tl}_${PORTVERSION}
 
 PLIST_FILES=	bin/${PORTNAME} \
@@ -30,6 +33,7 @@ post-patch:
 		-e 's,/usr/local,${LOCALBASE},g' \
 		-e 's,/usr/X11R6,${LOCALBASE},g' \
 		-e '/^CFLAGS = /s,=,= ${CFLAGS},g' \
+		-e '/^CPPFLAGS = /s, = .*, = ${CPPFLAGS},g' \
 		-e '/^CC = /s, = .*, = ${CC},' \
 		-e '/^CPP = /s, = .*, = ${CXX},' \
 		-e 's,-O6,,' \

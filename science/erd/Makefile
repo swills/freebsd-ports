@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/erd/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/erd/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	erd
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

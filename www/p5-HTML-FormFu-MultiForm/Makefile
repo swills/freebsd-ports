@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-FormFu-MultiForm/Makefile 468014 2018-04-22 12:49:41Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-FormFu-MultiForm/Makefile 475566 2018-07-28 13:17:35Z sunpoet $
 
 PORTNAME=	HTML-FormFu-MultiForm
 PORTVERSION=	1.03
+PORTREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,7 +15,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-xBUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
+BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-Crypt-CBC>=0:security/p5-Crypt-CBC \
 		p5-Crypt-DES>=0:security/p5-Crypt-DES \
 		p5-HTML-FormFu>=0:www/p5-HTML-FormFu \

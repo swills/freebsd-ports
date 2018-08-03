@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-RO/Makefile 473228 2018-06-24 20:16:47Z sunpoet $
+# $FreeBSD: head/astro/py-RO/Makefile 475617 2018-07-28 23:23:46Z yuri $
 
 PORTNAME=	RO
 PORTVERSION=	3.6.9
@@ -28,6 +28,6 @@ USE_PYTHON=	autoplist distutils
 
 ASTROPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}astropy>=0:astro/py-astropy@${PY_FLAVOR}
 MATPLOTLIB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib>=0.98:math/py-matplotlib@${PY_FLAVOR}
-PYGAME_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}game>=1.8.1:devel/py-game@${PY_FLAVOR}
+PYGAME_RUN_DEPENDS=	${PYGAME}
 
 .include <bsd.port.mk>

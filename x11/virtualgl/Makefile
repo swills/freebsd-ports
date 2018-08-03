@@ -1,9 +1,9 @@
 # Created by: David Mackay <davidjx8p@gmail.com>
-# $FreeBSD: head/x11/virtualgl/Makefile 464178 2018-03-11 15:17:17Z danfe $
+# $FreeBSD: head/x11/virtualgl/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	virtualgl
 PORTVERSION=	2.4.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11 graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 DISTNAME=	VirtualGL-${PORTVERSION}

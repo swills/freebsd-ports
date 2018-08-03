@@ -1,9 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/x11/xrestop/Makefile 345825 2014-02-24 12:47:37Z bapt $
+# $FreeBSD: head/x11/xrestop/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xrestop
 PORTVERSION=	0.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11
 MASTER_SITES=	http://projects.o-hand.com/sources/${PORTNAME}/
 
@@ -11,7 +11,7 @@ MAINTAINER=	bland@FreeBSD.org
 COMMENT=	X11 server side resource usage statistics monitor
 
 USES=		gmake pkgconfig ncurses
-USE_XORG=	x11 xext xrender xt xres xproto
+USE_XORG=	x11 xext xrender xt xres xorgproto
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ENV=	XLIBS="-L${LOCALBASE}/lib -lX11"

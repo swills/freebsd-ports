@@ -1,5 +1,5 @@
 # Created by: Patrick Dung (patrick_dkt@yahoo.com.hk)
-# $FreeBSD: head/print/pdftk/Makefile 470199 2018-05-17 06:32:17Z mat $
+# $FreeBSD: head/print/pdftk/Makefile 476184 2018-08-01 16:33:11Z adamw $
 
 PORTNAME=	pdftk
 PORTVERSION=	2.02
@@ -37,7 +37,7 @@ PLIST_FILES=	bin/${PORTNAME} man/man1/${PORTNAME}.1.gz
 pre-configure:
 	@if [ ! -e ${LOCALBASE}/bin/gcj${CSUFF} ]; then \
 		${ECHO_MSG} ""; \
-		${ECHO_MSG} "Can not find gcj${CSUFF}"; \
+		${ECHO_MSG} "Cannot find gcj${CSUFF}"; \
 		${ECHO_MSG} "Please rebuild ${_GCC_PORT} with java support"; \
 		${ECHO_MSG} ""; \
 		exit 1; \

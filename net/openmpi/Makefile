@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/openmpi/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/net/openmpi/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 # TODO:
 #  - etc/*.sample support
 
 PORTNAME=	openmpi
 PORTVERSION=	1.10.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net parallel
 MASTER_SITES=	http://www.open-mpi.org/software/ompi/v${PORTVERSION:R}/downloads/
 

@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 475360 2018-07-26 10:37:36Z mat $
+# $FreeBSD: head/Mk/bsd.port.mk 476013 2018-07-31 18:41:30Z zeising $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1895,10 +1895,10 @@ _GL_egl_BUILD_DEPENDS=		${LOCALBASE}/lib/libEGL.so:graphics/mesa-libs
 _GL_egl_RUN_DEPENDS=		${LOCALBASE}/lib/libEGL.so:graphics/mesa-libs
 _GL_gl_BUILD_DEPENDS=		${LOCALBASE}/lib/libGL.so:graphics/mesa-libs
 _GL_gl_RUN_DEPENDS=			${LOCALBASE}/lib/libGL.so:graphics/mesa-libs
-_GL_gl_USE_XORG=			glproto dri2proto dri3proto
+_GL_gl_USE_XORG=			xorgproto
 _GL_glew_LIB_DEPENDS=		libGLEW.so:graphics/glew
 _GL_glu_LIB_DEPENDS=		libGLU.so:graphics/libGLU
-_GL_glu_USE_XORG=			glproto dri2proto dri3proto
+_GL_glu_USE_XORG=			xorgproto
 _GL_glw_LIB_DEPENDS=		libGLw.so:graphics/libGLw
 _GL_glut_LIB_DEPENDS=		libglut.so:graphics/freeglut
 .if defined(USE_GL)
@@ -2642,7 +2642,7 @@ GNU_CONFIGURE_PREFIX?=	${PREFIX}
 GNU_CONFIGURE_MANPREFIX?=	${MANPREFIX}
 CONFIGURE_ARGS+=	--prefix=${GNU_CONFIGURE_PREFIX} $${_LATE_CONFIGURE_ARGS}
 .if defined(CROSS_TOOLCHAIN)
-CROSS_HOST=		${CROSS_TOOLCHAIN:C,-.*$,,}-unknown-${OPSYS:tl}${OSREL}
+CROSS_HOST=		${ARCH:S/amd64/x86_64/}-unknown-${OPSYS:tl}${OSREL}
 CONFIGURE_ARGS+=	--host=${CROSS_HOST}
 .endif
 CONFIGURE_ENV+=		CONFIG_SITE=${CONFIG_SITE} lt_cv_sys_max_cmd_len=${CONFIGURE_MAX_CMD_LEN}

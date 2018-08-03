@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/py-cyipopt/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-cyipopt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cyipopt
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.1.7
+PORTREVISION=	1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

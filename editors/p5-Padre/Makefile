@@ -1,9 +1,9 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/editors/p5-Padre/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/editors/p5-Padre/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	Padre
 PORTVERSION=	1.00
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	editors perl5
 MASTER_SITES=	CPAN/${PORTNAME}/ CPAN/Wx/:wxsc
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,9 @@
-# $FreeBSD: head/multimedia/mpc-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/mpc-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mpc-qt
 DISTVERSIONPREFIX=	v
 DISTVERSION=	18.03
+PORTREVISION=	1
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	jbeich@FreeBSD.org

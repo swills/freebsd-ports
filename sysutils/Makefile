@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 475329 2018-07-25 19:17:22Z pi $
+# $FreeBSD: head/sysutils/Makefile 476251 2018-08-02 21:54:55Z danilo $
 #
 
     COMMENT = System utilities
@@ -396,6 +396,7 @@
     SUBDIR += fusefs-ntfs-compression
     SUBDIR += fusefs-pod
     SUBDIR += fusefs-rar2fs
+    SUBDIR += fusefs-s3backer
     SUBDIR += fusefs-s3fs
     SUBDIR += fusefs-simple-mtpfs
     SUBDIR += fusefs-smbnetfs
@@ -573,11 +574,13 @@
     SUBDIR += kldfind
     SUBDIR += kldpatch
     SUBDIR += knutclient-kde4
+    SUBDIR += kops
     SUBDIR += krename
     SUBDIR += kshutdown-kde4
     SUBDIR += ksysguardd-kde4
     SUBDIR += ksystemlog
     SUBDIR += ksystemlog-kde4
+    SUBDIR += kubectl
     SUBDIR += kuser-kde4
     SUBDIR += lava
     SUBDIR += lbl-cf
@@ -597,6 +600,7 @@
     SUBDIR += libieee1284
     SUBDIR += libretto-config
     SUBDIR += libsunacl
+    SUBDIR += libsysstat 
     SUBDIR += liburcu
     SUBDIR += libutempter
     SUBDIR += life-preserver

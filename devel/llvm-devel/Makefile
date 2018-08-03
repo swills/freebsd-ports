@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 473956 2018-07-05 09:02:51Z jbeich $
+# $FreeBSD: head/devel/llvm-devel/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.0.d${SNAPDATE}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-devel
 

@@ -1,8 +1,9 @@
 # Created by: J.F. Dockes
-# $FreeBSD: head/databases/xapian-core/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/databases/xapian-core/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	xapian-core
-PORTVERSION=	1.4.5
+PORTVERSION=	1.4.7
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
@@ -29,6 +30,7 @@ USE_LDCONFIG=	yes
 SSE2_CONFIGURE_ENABLE=	sse
 
 post-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/bin/xapian-inspect ${STAGEDIR}${PREFIX}/bin/xapian-inspect
 	${INSTALL_PROGRAM} ${WRKSRC}/examples/.libs/copydatabase ${STAGEDIR}${PREFIX}/bin/xapian-copydatabase
 	${INSTALL_PROGRAM} ${WRKSRC}/examples/.libs/quest ${STAGEDIR}${PREFIX}/bin/xapian-quest
 	${INSTALL_PROGRAM} ${WRKSRC}/examples/.libs/xapian-metadata ${STAGEDIR}${PREFIX}/bin/xapian-metadata

@@ -1,9 +1,9 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/caf/Makefile 456105 2017-12-12 04:35:49Z jbeich $
+# $FreeBSD: head/devel/caf/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	caf
 PORTVERSION=	0.15.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	vallentin@icir.org

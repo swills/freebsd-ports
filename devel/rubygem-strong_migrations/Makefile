@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-strong_migrations/Makefile 461912 2018-02-15 12:47:43Z sunpoet $
+# $FreeBSD: head/devel/rubygem-strong_migrations/Makefile 476081 2018-07-31 23:50:13Z sunpoet $
 
 PORTNAME=	strong_migrations
-PORTVERSION=	0.2.2
+PORTVERSION=	0.2.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

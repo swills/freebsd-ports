@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 475168 2018-07-23 12:48:07Z arrowd $
+# $FreeBSD: head/x11-fonts/Makefile 476013 2018-07-31 18:41:30Z zeising $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -93,12 +93,10 @@
     SUBDIR += font-util
     SUBDIR += font-winitzki-cyrillic
     SUBDIR += font-xfree86-type1
-    SUBDIR += fontcacheproto
     SUBDIR += fontconfig
     SUBDIR += fontconfig-reference
     SUBDIR += fontmatrix
     SUBDIR += fonts-indic
-    SUBDIR += fontsproto
     SUBDIR += fonttosfnt
     SUBDIR += freefont-ttf
     SUBDIR += freefonts
@@ -196,7 +194,6 @@
     SUBDIR += vollkorn-ttf
     SUBDIR += webfonts
     SUBDIR += wqy
-    SUBDIR += xf86bigfontproto
     SUBDIR += xfontsel
     SUBDIR += xfs
     SUBDIR += xfsinfo

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hyperscan/Makefile 455793 2017-12-08 18:44:07Z vsevolod $
+# $FreeBSD: head/devel/hyperscan/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	hyperscan
-PORTVERSION=	4.6.0
+PORTVERSION=	4.7.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel textproc
 MASTER_SITES=	SF/boost/boost/1.65.1:boost
@@ -32,6 +33,8 @@ NATIVE_CFLAGS=		-march=native -mtune=native
 
 NATIVE_CXXFLAGS_OFF=	-march=core2
 NATIVE_CFLAGS_OFF=	-march=core2
+
+CFLAGS+=	-fPIC
 
 .include <bsd.port.options.mk>
 

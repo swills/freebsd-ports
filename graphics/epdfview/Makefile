@@ -1,9 +1,9 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/graphics/epdfview/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/graphics/epdfview/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	epdfview
 PORTVERSION=	0.1.8
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	graphics print gnome
 MASTER_SITES=	FRUGALWARE/xapps-extra/${PORTNAME} \
 		ftp://ftp.slackware.com/.1/blfs/conglomeration/${PORTNAME}/ \

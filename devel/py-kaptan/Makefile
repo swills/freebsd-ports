@@ -1,8 +1,8 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/devel/py-kaptan/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-kaptan/Makefile 475738 2018-07-29 19:15:57Z sunpoet $
 
 PORTNAME=	kaptan
-PORTVERSION=	0.5.9
+PORTVERSION=	0.5.10
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

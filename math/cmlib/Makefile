@@ -1,9 +1,9 @@
 # Created by: Anton Shterenlikht <mexas@bris.ac.uk>
-# $FreeBSD: head/math/cmlib/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/cmlib/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cmlib
 PORTVERSION=	3.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	NL/blas:blas ftp://ftp.nist.gov/pub/cmlib/
 # Get d1mach.f, i1mach.f, r1mach.f from BLAS, rather than from CMLIB.

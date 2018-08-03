@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/graphics/p5-PGPLOT/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/p5-PGPLOT/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	PGPLOT
 PORTVERSION=	2.21
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:KGB

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-bosh-gen/Makefile 468490 2018-04-27 18:53:06Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-bosh-gen/Makefile 476098 2018-07-31 23:52:50Z sunpoet $
 
 PORTNAME=	bosh-gen
-PORTVERSION=	0.99.1
+PORTVERSION=	0.99.2
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

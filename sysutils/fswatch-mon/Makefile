@@ -1,8 +1,9 @@
 # Created by: Enrico M. Crisostomo <enrico.m.crisostomo@gmail.com>
-# $FreeBSD: head/sysutils/fswatch-mon/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/sysutils/fswatch-mon/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	fswatch
 PORTVERSION=	1.11.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/${PORTVERSION}/
 PKGNAMESUFFIX=	-mon

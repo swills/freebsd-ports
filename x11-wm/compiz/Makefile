@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-wm/compiz/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-wm/compiz/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	compiz
 PORTVERSION=	0.8.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://releases.compiz.org/${PORTVERSION}/
 
@@ -21,7 +21,7 @@ INSTALL_TARGET=	install-strip
 USES=		gettext gmake libtool pathfix tar:bzip2
 USE_GL=		glu
 USE_GNOME=	gconf2 libxslt intltool
-USE_XORG=	glproto ice sm x11 xcomposite xdamage xext xfixes xinerama \
+USE_XORG=	xorgproto ice sm x11 xcomposite xdamage xext xfixes xinerama \
 		xrandr xrender
 USE_LDCONFIG=	yes
 

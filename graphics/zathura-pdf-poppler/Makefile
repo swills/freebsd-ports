@@ -1,8 +1,9 @@
 # Created by: Mike Krutov <neko@takino.org>
-# $FreeBSD: head/graphics/zathura-pdf-poppler/Makefile 474619 2018-07-14 07:34:20Z riggs $
+# $FreeBSD: head/graphics/zathura-pdf-poppler/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	zathura-pdf-poppler
 PORTVERSION=	0.2.9
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://pwmt.org/projects/zathura/plugins/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/

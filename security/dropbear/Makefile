@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/security/dropbear/Makefile 465733 2018-03-27 18:50:24Z jrm $
+# $FreeBSD: head/security/dropbear/Makefile 475463 2018-07-27 21:01:49Z swills $
 
 PORTNAME=	dropbear
 PORTVERSION=	2018.76
@@ -51,6 +51,8 @@ SHA2_256_DESC=		Enable SHA2_256 MAC
 SMALL_CODE_DESC=	Make binary smaller in exchange for 50% performance hit
 TWOFISH128_DESC=	Enable Twofish128-based encryption
 TWOFISH256_DESC=	Enable Twofish256-based encryption
+
+CBC_BROKEN=		./session.h:77:3: error: unknown type name 'symmetric_CBC'
 
 3DES_IMPLIES=	CTR
 STATIC_CONFIGURE_ENABLE=	static

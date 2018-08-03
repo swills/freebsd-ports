@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/security/cryptopp/Makefile 468307 2018-04-25 22:00:04Z mat $
+# $FreeBSD: head/security/cryptopp/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 # Minor version bumps may not be ABI compatible and deskutils/cdcat
 # links to the static library, so bump PORTREVISION of dependent
@@ -7,7 +7,7 @@
 
 PORTNAME=	cryptopp
 PORTVERSION=	5.6.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	http://www.cryptopp.com/
 DISTNAME=	cryptopp${PORTVERSION:S/.//g}

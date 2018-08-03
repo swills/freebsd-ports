@@ -1,9 +1,9 @@
 # Created by: redcrash@gmail.com
-# $FreeBSD: head/devel/papi/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/papi/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	papi
 PORTVERSION=	5.4.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://icl.cs.utk.edu/projects/papi/downloads/
 

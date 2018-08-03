@@ -1,8 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/graphics/fig2sxd/Makefile 462485 2018-02-21 10:07:43Z ehaupt $
+# $FreeBSD: head/graphics/fig2sxd/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	fig2sxd
 PORTVERSION=	0.22.1
+PORTREVISION=	1
 CATEGORIES=	graphics converters
 MASTER_SITES=	LOCAL/ehaupt SF
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig

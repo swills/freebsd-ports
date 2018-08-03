@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/zathura-cb/Makefile 474617 2018-07-14 07:31:43Z riggs $
+# $FreeBSD: head/graphics/zathura-cb/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	zathura-cb
 PORTVERSION=	0.1.8
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://pwmt.org/projects/zathura-cb/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/

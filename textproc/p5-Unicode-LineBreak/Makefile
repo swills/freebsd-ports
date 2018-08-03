@@ -1,8 +1,9 @@
 # Created by: Olivier Girard <Olivier.Girard@univ-angers.fr>
-# $FreeBSD: head/textproc/p5-Unicode-LineBreak/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Unicode-LineBreak/Makefile 476198 2018-08-01 20:28:12Z fernape $
 
 PORTNAME=	Unicode-LineBreak
 PORTVERSION=	2017.004
+PORTREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

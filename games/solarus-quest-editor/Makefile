@@ -1,9 +1,9 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/games/solarus-quest-editor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/solarus-quest-editor/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	solarus-quest-editor
 PORTVERSION=	1.5.3
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

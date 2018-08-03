@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-raabro/Makefile 470065 2018-05-15 23:58:32Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-raabro/Makefile 475809 2018-07-29 19:23:10Z sunpoet $
 
 PORTNAME=	raabro
-PORTVERSION=	1.1.5
+PORTVERSION=	1.1.6
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: lesi@FreeBSD.org
-# $FreeBSD: head/x11-servers/xorg-dmx/Makefile 433900 2017-02-11 18:31:47Z bapt $
+# $FreeBSD: head/x11-servers/xorg-dmx/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xorg-dmx
 
@@ -13,7 +13,7 @@ DESCR=		${.CURDIR}/pkg-descr
 SLAVE_PORT=	yes
 OPTIONS_EXCLUDE=DEVD HAL SUID
 
-USE_XORG=	dmx dmxproto x11 xaw7 xext xfixes xi xmu xpm xrender xres xt xtst
+USE_XORG=	dmx xorgproto x11 xaw7 xext xfixes xi xmu xpm xrender xres xt xtst
 
 CONFIGURE_ARGS+=--enable-dmx --disable-xephyr --disable-xnest --disable-xvfb \
 		--disable-xwayland

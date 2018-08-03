@@ -1,8 +1,8 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/devel/rubygem-trollop/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-trollop/Makefile 475782 2018-07-29 19:21:02Z sunpoet $
 
 PORTNAME=	trollop
-PORTVERSION=	2.1.2
+PORTVERSION=	2.1.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

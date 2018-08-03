@@ -1,8 +1,9 @@
 # Created by: ade, archie
-# $FreeBSD: head/x11-fm/nautilus/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/x11-fm/nautilus/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	nautilus
 PORTVERSION=	3.18.5
+PORTREVISION=	1
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

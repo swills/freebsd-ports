@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 473001 2018-06-21 20:29:22Z kwm $
+# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gtksourceview
 PORTVERSION=	3.24.8
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	3

@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/net/hping/Makefile 425869 2016-11-11 07:21:12Z linimon $
+# $FreeBSD: head/net/hping/Makefile 476184 2018-08-01 16:33:11Z adamw $
 
 PORTNAME=	hping
 PORTVERSION=	2.0.0r3
@@ -17,7 +17,7 @@ CONFLICTS=	hping-devel-[0-9]*
 
 WRKSRC=		${WRKDIR}/hping2-rc3
 
-BROKEN_aarch64=	fails to build: can not find the byte order for this architecture, fix bytesex.h
+BROKEN_aarch64=	fails to build: cannot find the byte order for this architecture, fix bytesex.h
 
 USES=		gmake
 GNU_CONFIGURE=	yes

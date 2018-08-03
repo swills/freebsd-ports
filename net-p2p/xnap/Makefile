@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/net-p2p/xnap/Makefile 405324 2016-01-06 01:16:11Z amdmi3 $
+# $FreeBSD: head/net-p2p/xnap/Makefile 475499 2018-07-28 06:41:07Z tobik $
 
 PORTNAME=	XNap
 DISTVERSION=	2.5r3
@@ -14,6 +14,9 @@ COMMENT=	Pure Java napster client; also, supports OpenNap & giFT (FastTrack)
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Unmaintained. Napster, OpenNap, and FastTrack are dead
+EXPIRATION_DATE=	2018-08-30
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+

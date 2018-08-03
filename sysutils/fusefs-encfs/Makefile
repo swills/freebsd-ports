@@ -1,9 +1,10 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/sysutils/fusefs-encfs/Makefile 468550 2018-04-28 15:23:17Z yuri $
+# $FreeBSD: head/sysutils/fusefs-encfs/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	encfs
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.9.5
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
 

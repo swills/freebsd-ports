@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/mgba/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/emulators/mgba/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mgba
 DISTVERSION=	0.6.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	emulators
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-igakit/Makefile 474326 2018-07-10 04:52:56Z yuri $
+# $FreeBSD: head/math/py-igakit/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	igakit
 DISTVERSION=	0.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

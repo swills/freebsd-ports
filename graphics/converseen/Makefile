@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/converseen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/converseen/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	converseen
 PORTVERSION=	0.9.6.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/Converseen/Converseen%20${PORTVERSION:R:R}/
 

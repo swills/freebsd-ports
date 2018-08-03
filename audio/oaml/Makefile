@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/oaml/Makefile 471952 2018-06-07 19:59:04Z amdmi3 $
+# $FreeBSD: head/audio/oaml/Makefile 476017 2018-07-31 19:17:33Z amdmi3 $
 
 PORTNAME=	oaml
-PORTVERSION=	1.3.3
+PORTVERSION=	1.3.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	audio
 

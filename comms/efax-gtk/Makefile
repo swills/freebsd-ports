@@ -1,9 +1,9 @@
 # Created by: Jean-Baptiste Quenot <jb.quenot@caraldi.com>
-# $FreeBSD: head/comms/efax-gtk/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/comms/efax-gtk/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	efax-gtk
 PORTVERSION=	3.2.13
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	comms
 MASTER_SITES=	SF
 EXTRACT_SUFX=	.src.tgz

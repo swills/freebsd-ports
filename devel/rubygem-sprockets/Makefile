@@ -1,8 +1,8 @@
 # Created by: Mikhail T. <m.tsatsenko@gmail.com>
-# $FreeBSD: head/devel/rubygem-sprockets/Makefile 447487 2017-08-07 10:14:08Z tz $
+# $FreeBSD: head/devel/rubygem-sprockets/Makefile 476080 2018-07-31 23:50:08Z sunpoet $
 
 PORTNAME=	sprockets
-PORTVERSION=	2.12.4
+PORTVERSION=	2.12.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

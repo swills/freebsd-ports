@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tdiff/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-tdiff/Makefile 475780 2018-07-29 19:20:57Z sunpoet $
 
 PORTNAME=	tdiff
-PORTVERSION=	0.3.3
+PORTVERSION=	0.3.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

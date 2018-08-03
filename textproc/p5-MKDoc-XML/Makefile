@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-MKDoc-XML/Makefile 381221 2015-03-13 17:29:58Z adamw $
+# $FreeBSD: head/textproc/p5-MKDoc-XML/Makefile 476284 2018-08-03 09:07:57Z amdmi3 $
 
 PORTNAME=	MKDoc-XML
 PORTVERSION=	0.75
@@ -12,7 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	The MKDoc XML Toolkit
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

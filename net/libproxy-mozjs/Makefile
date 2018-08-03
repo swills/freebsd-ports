@@ -1,7 +1,7 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/libproxy-mozjs/Makefile 473062 2018-06-22 19:59:41Z tcberner $
+# $FreeBSD: head/net/libproxy-mozjs/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	net www
 PKGNAMESUFFIX=	-${LIBPROXY_SLAVE}
 

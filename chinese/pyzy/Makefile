@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/chinese/pyzy/Makefile 455851 2017-12-09 12:25:00Z antoine $
+# $FreeBSD: head/chinese/pyzy/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pyzy
 PORTVERSION=	0.1.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	chinese
 
 MAINTAINER=	henry.hu.sh@gmail.com

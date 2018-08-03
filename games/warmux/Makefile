@@ -1,5 +1,5 @@
 # Created by: Anton Yudin <toha@FreeBSD.org>
-# $FreeBSD: head/games/warmux/Makefile 472061 2018-06-09 16:10:36Z amdmi3 $
+# $FreeBSD: head/games/warmux/Makefile 475879 2018-07-30 11:05:18Z tobik $
 
 PORTNAME=	warmux
 DISTVERSION=	11.04.1
@@ -19,10 +19,13 @@ LIB_DEPENDS=	libxml++-2.6.so:textproc/libxml++26 \
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	cxx_present=yes
-USES=		dos2unix gmake pkgconfig tar:bzip2
+USES=		compiler dos2unix gmake pkgconfig tar:bzip2
 USE_SDL=	sdl image mixer ttf gfx net
 DOS2UNIX_GLOB=	fixed_class.h
 
+# build ignores CXXFLAGS
+CFLAGS+=	${CFLAGS_${CHOSEN_COMPILER_TYPE}}
+CFLAGS_clang=	-Wno-c++11-narrowing
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION:R}
 
 OPTIONS_DEFINE=	FRIBIDI SERVER NLS DEBUG

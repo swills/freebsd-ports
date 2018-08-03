@@ -1,8 +1,9 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/metasploit/Makefile 473315 2018-06-25 14:09:39Z antoine $
+# $FreeBSD: head/security/metasploit/Makefile 475661 2018-07-29 15:17:36Z antoine $
 
 PORTNAME=	metasploit
 PORTVERSION=	4.16.63
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	tanawts@gmail.com
@@ -34,7 +35,7 @@ RUN_DEPENDS=	nmap:security/nmap \
 		rubygem-nokogiri>=0:textproc/rubygem-nokogiri \
 		rubygem-packetfu>=0:net/rubygem-packetfu \
 		rubygem-pcaprub>=0:net/rubygem-pcaprub \
-		rubygem-pg>=0:databases/rubygem-pg \
+		rubygem-pg0>=0:databases/rubygem-pg0 \
 		rubygem-railties4>=4.2.6:www/rubygem-railties4 \
 		rubygem-recog>=0:security/rubygem-recog \
 		rubygem-openssl-ccm>=0:security/rubygem-openssl-ccm \

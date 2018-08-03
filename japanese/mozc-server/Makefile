@@ -1,10 +1,10 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/mozc-server/Makefile 474103 2018-07-07 15:57:34Z nobutaka $
+# $FreeBSD: head/japanese/mozc-server/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mozc
 PORTVERSION=	2.20.2677.102.02
 DISTVERSIONPREFIX=	v
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	japanese
 
 MAINTAINER=	hrs@FreeBSD.org

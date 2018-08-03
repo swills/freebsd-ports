@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger
-# $FreeBSD: head/x11-wm/fluxter/Makefile 379328 2015-02-19 00:08:23Z jgh $
+# $FreeBSD: head/x11-wm/fluxter/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	fluxter
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.hydrus.org.uk/downloads/
 
@@ -11,7 +12,7 @@ COMMENT=	Desktop pager for the Fluxbox Slit
 
 LICENSE=	GPLv2
 
-USE_XORG=	x11 ice xproto xt xaw xext
+USE_XORG=	x11 ice xorgproto xt xaw xext
 GNU_CONFIGURE=	yes
 USES=		gmake
 

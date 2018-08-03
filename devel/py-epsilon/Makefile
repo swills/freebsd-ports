@@ -1,8 +1,8 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/devel/py-epsilon/Makefile 473474 2018-06-27 23:34:20Z sunpoet $
+# $FreeBSD: head/devel/py-epsilon/Makefile 475734 2018-07-29 19:15:35Z sunpoet $
 
 PORTNAME=	epsilon
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/calculix/Makefile 475093 2018-07-22 08:27:22Z antoine $
+# $FreeBSD: head/cad/calculix/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	calculix
 PORTVERSION=	2.14
+PORTREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	http://www.dhondt.de/
 DISTFILES=	${DIST_SOURCES}

@@ -1,8 +1,8 @@
 # Created by: Sulev-Madis Silber <madis555@hot.ee>
-# $FreeBSD: head/devel/p5-Number-Bytes-Human/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Number-Bytes-Human/Makefile 475847 2018-07-29 19:28:23Z sunpoet $
 
 PORTNAME=	Number-Bytes-Human
-PORTVERSION=	0.07
+PORTVERSION=	0.11
 PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
@@ -11,6 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	madis555@hot.ee
 COMMENT=	Convert byte count to human readable format
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

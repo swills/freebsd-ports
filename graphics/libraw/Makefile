@@ -1,8 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/graphics/libraw/Makefile 473649 2018-07-01 02:00:56Z jhale $
+# $FreeBSD: head/graphics/libraw/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libraw
 PORTVERSION=	0.18.13
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libraw.org/data/
 DISTNAME=	LibRaw-${PORTVERSION}

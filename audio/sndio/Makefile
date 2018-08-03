@@ -1,8 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/audio/sndio/Makefile 458929 2018-01-13 12:45:07Z tobik $
+# $FreeBSD: head/audio/sndio/Makefile 476019 2018-07-31 19:40:24Z tobik $
 
 PORTNAME=	sndio
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	audio
 MASTER_SITES=	http://www.sndio.org/
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cmake-doc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/cmake-doc/Makefile 475584 2018-07-28 15:01:53Z tcberner $
 
 PORTNAME=	cmake
-DISTVERSION=	3.11.4
+DISTVERSION=	3.12.0
 CATEGORIES=	devel
 MASTER_SITES=	https://www.cmake.org/files/v${PORTVERSION:R}/
 PKGNAMESUFFIX=	-doc
@@ -29,6 +29,6 @@ CMAKE_SOURCE_PATH=	${WRKSRC}/Utilities/Sphinx
 ALL_TARGET=	documentation
 INSTALL_TARGET=	install
 
-PLIST_SUB=	CMAKEVERSION="${PORTVERSION:S/.//g}"
+PLIST_SUB=	CMAKEVERSION="${DISTVERSION:S/.//g:C/-.*//}"
 
 .include <bsd.port.mk>

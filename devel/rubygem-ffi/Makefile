@@ -1,5 +1,5 @@
 # Created by: Christoph Kick
-# $FreeBSD: head/devel/rubygem-ffi/Makefile 471783 2018-06-05 18:56:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ffi/Makefile 475850 2018-07-29 19:28:39Z sunpoet $
 
 PORTNAME=	ffi
 PORTVERSION=	1.9.25
@@ -16,5 +16,9 @@ LIB_DEPENDS=	libffi.so:devel/libffi
 
 USE_RUBY=	yes
 USES=		gem
+
+post-patch:
+	@${LN} -s i386-freebsd ${WRKSRC}/lib/ffi/platform/arm-freebsd
+	@${LN} -s x86_64-freebsd ${WRKSRC}/lib/ffi/platform/aarch64-freebsd
 
 .include <bsd.port.mk>

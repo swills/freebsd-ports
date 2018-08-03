@@ -1,8 +1,9 @@
 # Created by: Koop Mast<kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/polkit/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/sysutils/polkit/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	polkit
 PORTVERSION=	0.114
+PORTREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://www.freedesktop.org/software/polkit/releases/
 

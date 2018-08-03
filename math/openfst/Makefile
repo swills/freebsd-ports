@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/math/openfst/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/math/openfst/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	openfst
 PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://www.openfst.org/twiki/pub/FST/FstDownload/
 

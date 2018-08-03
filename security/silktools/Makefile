@@ -1,8 +1,8 @@
 # Created by: David Thiel <lx@redundancy.redundancy.org>
-# $FreeBSD: head/security/silktools/Makefile 468424 2018-04-27 11:38:49Z antoine $
+# $FreeBSD: head/security/silktools/Makefile 475640 2018-07-29 09:56:26Z antoine $
 
 PORTNAME=	silktools
-PORTVERSION=	3.17.1
+PORTVERSION=	3.17.2
 CATEGORIES=	security net
 MASTER_SITES=	http://tools.netsa.cert.org/releases/
 DISTNAME=	silk-${PORTVERSION}

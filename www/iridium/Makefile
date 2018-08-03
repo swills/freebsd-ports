@@ -1,9 +1,9 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/www/iridium/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	iridium
 PORTVERSION=	58.0
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	www
 MASTER_SITES=	https://downloads.iridiumbrowser.de/source/
 PKGNAMESUFFIX=	-browser
@@ -62,8 +62,8 @@ USES=		bison desktop-file-utils jpeg ninja perl5 \
 		pkgconfig python:2.7,build shebangfix tar:xz
 
 USE_PERL5=	build
-USE_XORG=	scrnsaverproto x11 xcb xcomposite xcursor xext xdamage xfixes xi \
-		xproto xrandr xrender xscrnsaver xtst
+USE_XORG=	x11 xcb xcomposite xcursor xext xdamage xfixes xi \
+		xorgproto xrandr xrender xscrnsaver xtst
 USE_GNOME=	atk dconf glib20 gtk20 gtk30 libxml2 libxslt
 MAKE_ARGS=	-C out/${BUILDTYPE}
 ALL_TARGET=	chrome

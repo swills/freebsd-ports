@@ -1,8 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/libconcurrent/Makefile 456316 2017-12-14 17:28:54Z tobik $
+# $FreeBSD: head/devel/libconcurrent/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libconcurrent
 PORTVERSION=	0.0.20160629
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	tobik@FreeBSD.org

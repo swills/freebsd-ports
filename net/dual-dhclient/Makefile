@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/dual-dhclient/Makefile 431537 2017-01-15 09:00:18Z cperciva $
+# $FreeBSD: head/net/dual-dhclient/Makefile 475986 2018-07-31 09:09:09Z rene $
 
 PORTNAME=	dual-dhclient
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -12,7 +13,7 @@ COMMENT=	Spawns dhclients for a dual-stack network
 
 LICENSE=	PD
 
-RUN_DEPENDS=	${LOCALBASE}/sbin/dhclient:net/isc-dhcp43-client
+RUN_DEPENDS=	${LOCALBASE}/sbin/dhclient:net/isc-dhcp44-client
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

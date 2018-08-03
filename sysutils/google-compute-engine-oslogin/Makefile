@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 472316 2018-06-13 13:12:44Z swills $
+# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	google-compute-engine-oslogin
 DISTVERSION=	1.3.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	helen.koike@collabora.com

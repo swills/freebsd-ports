@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/py-country/Makefile 430922 2017-01-09 08:49:56Z demon $
+# $FreeBSD: head/devel/py-country/Makefile 475594 2018-07-28 18:26:12Z yuri $
 
 PORTNAME=	country
 PORTVERSION=	17.1.8
@@ -10,6 +10,9 @@ DISTNAME=	pycountry-${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Python API for ISO country, subdivision, language and currency
+
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		python
 USE_PYTHON=	distutils autoplist

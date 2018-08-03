@@ -1,9 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Business-ISSN/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Business-ISSN/Makefile 476216 2018-08-02 05:06:20Z bofh $
 
 PORTNAME=	Business-ISSN
-PORTVERSION=	0.91
-PORTREVISION=	1
+PORTVERSION=	1.003
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,6 +15,7 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,Business-ISSN,Business::ISSN,' ${WRKSRC}/${CONFIGURE_SCRIPT}

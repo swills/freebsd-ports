@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/stuntrally/Makefile 473541 2018-06-29 11:45:23Z amdmi3 $
+# $FreeBSD: head/games/stuntrally/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	stuntrally
 PORTVERSION=	2.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

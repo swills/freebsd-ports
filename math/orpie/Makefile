@@ -1,11 +1,11 @@
 # Created by: Dylan Simon <dylan@dylex.net>
-# $FreeBSD: head/math/orpie/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/math/orpie/Makefile 476230 2018-08-02 10:57:23Z danfe $
 
 PORTNAME=	orpie
 PORTVERSION=	1.5.2
 PORTREVISION=	4
 CATEGORIES+=	math
-MASTER_SITES=	http://pessimization.com/software/orpie/
+MASTER_SITES=	GENTOO http://pessimization.com/software/orpie/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fullscreen RPN calculator for the console

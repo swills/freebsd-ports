@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/photivo/Makefile 474437 2018-07-11 11:42:31Z danfe $
+# $FreeBSD: head/graphics/photivo/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	photivo
 PORTVERSION=	0.0.2015.03.21
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/${PORTNAME}/
 DISTNAME=	source-archive

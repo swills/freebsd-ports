@@ -1,9 +1,9 @@
 # Created by: hrs
-# $FreeBSD: head/cad/alliance/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/cad/alliance/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	alliance
 DISTVERSION=	5.0-20120515
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	cad
 MASTER_SITES=	http://ftp.lyx.org/lip6/softs/alliance/distribution/5.0/ \
 		http://ftp.jussieu.fr/lip6/softs/alliance/distribution/5.0/ \

@@ -1,13 +1,13 @@
 # Created by: ache
-# $FreeBSD: head/archivers/unrar/Makefile 466824 2018-04-08 18:30:08Z sunpoet $
+# $FreeBSD: head/archivers/unrar/Makefile 475681 2018-07-29 19:09:18Z sunpoet $
 
 PORTNAME=	unrar
-DISTVERSION=	5.50
+DISTVERSION=	5.60
 PORTEPOCH=	6
 CATEGORIES+=	archivers
 MASTER_SITES=	https://www.rarlab.com/rar/ \
 		LOCAL/sunpoet
-DISTNAME=	unrarsrc-5.5.8
+DISTNAME=	unrarsrc-5.6.5
 
 MAINTAINER?=	sunpoet@FreeBSD.org
 COMMENT=	Extract, view & test RAR archives

@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/devel/p5-Log-Dispatch-FileRotate/Makefile 463904 2018-03-08 15:38:41Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Dispatch-FileRotate/Makefile 475889 2018-07-30 13:23:57Z wen $
 
 PORTNAME=	Log-Dispatch-FileRotate
-PORTVERSION=	1.35
+PORTVERSION=	1.36
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

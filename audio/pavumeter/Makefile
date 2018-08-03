@@ -1,9 +1,9 @@
 # Created by: Romain Tartière <romain@blogreen.org>
-# $FreeBSD: head/audio/pavumeter/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/pavumeter/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pavumeter
 PORTVERSION=	0.9.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/${PORTNAME}/
 

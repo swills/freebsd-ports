@@ -1,8 +1,9 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime21/Makefile 475362 2018-07-26 11:29:31Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime21/Makefile 475871 2018-07-30 09:14:40Z dumbbell $
 
 PORTNAME=	erlang
 PORTVERSION=	21.0.4
+PORTREVISION=	1
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg			\
 		http://erlang.stacken.kth.se/download/:erlangorg		\

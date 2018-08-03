@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fog-json/Makefile 458555 2018-01-09 16:43:29Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fog-json/Makefile 475771 2018-07-29 19:18:50Z sunpoet $
 
 PORTNAME=	fog-json
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Extraction of the JSON parsing tools between providers
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-fog-core>=2.0:devel/rubygem-fog-core \
+RUN_DEPENDS=	rubygem-fog-core>=0:devel/rubygem-fog-core \
 		rubygem-multi_json>=1.10:devel/rubygem-multi_json
 
 NO_ARCH=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/py-wxPython30/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/x11-toolkits/py-wxPython30/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	wxPython
 PORTVERSION=	3.0.2.0
-PORTREVISION=	4
+PORTREVISION=	5
 DISTVERSIONPREFIX=	src-
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	SF/wxpython/wxPython/${PORTVERSION}

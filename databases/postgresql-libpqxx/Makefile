@@ -1,8 +1,9 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql-libpqxx/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/databases/postgresql-libpqxx/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libpqxx
 PORTVERSION=	6.1.0
+PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql-
 DIST_SUBDIR=	postgresql

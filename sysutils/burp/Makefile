@@ -1,9 +1,9 @@
 # Created by: Loic Pefferkorn <loic-freebsd@loicp.eu>
-# $FreeBSD: head/sysutils/burp/Makefile 465828 2018-03-28 17:16:48Z linimon $
+# $FreeBSD: head/sysutils/burp/Makefile 476181 2018-08-01 13:39:36Z tobik $
 
 PORTNAME=	burp
 PORTVERSION=	1.4.40
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org
@@ -46,10 +46,4 @@ post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/vss_strip
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/burp
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} >= 1200039 && ${CC:T} == "clang"
-BROKEN=		fails to compile due to clang 4.0 regression: util/bdthreads.cc:132:10: ordered comparison between pointer and zero
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

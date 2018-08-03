@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-im/uTox/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/net-im/uTox/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	uTox
 DISTVERSION=	0.17.0
 DISTVERSIONSUFFIX=	-full
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im net-p2p
 MASTER_SITES=	https://github.com/uTox/uTox/releases/download/v${PORTVERSION}/
 

@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/textproc/libsass/Makefile 469713 2018-05-12 07:30:11Z yuri $
+# $FreeBSD: head/textproc/libsass/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libsass
 DISTVERSION=	3.5.4
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	nivit@FreeBSD.org

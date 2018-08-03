@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/wxgtk30/Makefile 473927 2018-07-04 21:57:33Z swills $
+# $FreeBSD: head/x11-toolkits/wxgtk30/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	wx
 PORTVERSION=	3.0.4
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-toolkits
 PKGNAMESUFFIX=	30-gtk2

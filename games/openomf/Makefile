@@ -1,9 +1,9 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/games/openomf/Makefile 458402 2018-01-08 10:38:20Z krion $
+# $FreeBSD: head/games/openomf/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	openomf
 PORTVERSION=	0.6.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://www.omf2097.com/pub/files/omf/:data
 DISTFILES+=	omf2097.rar:data

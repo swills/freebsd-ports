@@ -1,8 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/libXaw/Makefile 474245 2018-07-09 09:12:43Z amdmi3 $
+# $FreeBSD: head/x11-toolkits/libXaw/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	libXaw
 PORTVERSION=	1.0.13
+PORTREVISION=	1
 PORTEPOCH=	2
 CATEGORIES=	x11-toolkits
 
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gmake
 XORG_CAT=	lib
-USE_XORG=	printproto:both x11 xau xext xextproto xmu xp xpm xproto:both xt
+USE_XORG=	x11 xau xext xmu xp xpm xorgproto xt
 CONFIGURE_ARGS=	--without-xmlto
 
 .include <bsd.port.mk>

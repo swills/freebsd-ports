@@ -1,9 +1,9 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/sdpara/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/sdpara/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	sdpara
 PORTVERSION=	7.3.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math parallel
 MASTER_SITES=	SF/sdpa/sdpara
 DISTNAME=	${PORTNAME}.${PORTVERSION}.src.20100914

@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/pink-pony/Makefile 473276 2018-06-24 21:11:14Z sunpoet $
+# $FreeBSD: head/games/pink-pony/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pink-pony
 PORTVERSION=	1.4.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

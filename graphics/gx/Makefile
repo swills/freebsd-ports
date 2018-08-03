@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/gx/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/gx/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gx
 PORTVERSION=	0.4.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	http://BSDforge.com/projects/source/graphics/gx/
 

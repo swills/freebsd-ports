@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/rubygem-dotenv/Makefile 468466 2018-04-27 15:57:28Z sunpoet $
+# $FreeBSD: head/misc/rubygem-dotenv/Makefile 475792 2018-07-29 19:21:50Z sunpoet $
 
 PORTNAME=	dotenv
-PORTVERSION=	2.4.0
+PORTVERSION=	2.5.0
 CATEGORIES=	misc rubygems
 MASTER_SITES=	RG
 

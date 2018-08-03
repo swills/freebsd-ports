@@ -1,9 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11/xwinwrap/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/x11/xwinwrap/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xwinwrap
 PORTVERSION=	0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	LOCAL/vg
 
@@ -14,7 +14,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 ONLY_FOR_ARCHS=	amd64 i386
 USES=	tar:bzip2
-USE_XORG=	x11 xproto xrender xext
+USE_XORG=	x11 xorgproto xrender xext
 PLIST_FILES=	bin/${PORTNAME}
 MAKE_ARGS+=	PREFIX=${PREFIX}
 

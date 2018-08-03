@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/lxqt-policykit/Makefile 474968 2018-07-19 16:03:22Z jsm $
+# $FreeBSD: head/sysutils/lxqt-policykit/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lxqt-policykit
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	LXQT
 

@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/devel/rubygem-clamp/Makefile 461726 2018-02-13 17:03:09Z sunpoet $
+# $FreeBSD: head/devel/rubygem-clamp/Makefile 476052 2018-07-31 23:47:40Z sunpoet $
 
 PORTNAME=	clamp
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3.0
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

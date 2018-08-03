@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/py-brotli/Makefile 467085 2018-04-11 19:38:21Z sunpoet $
+# $FreeBSD: head/archivers/py-brotli/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	brotli
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	archivers
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/databases/db6/Makefile 447822 2017-08-12 10:24:46Z mandree $
+# $FreeBSD: head/databases/db6/Makefile 476241 2018-08-02 16:05:16Z mandree $
 
 PORTNAME=	db6
 PORTVERSION=	6.2.32
+PORTREVISION=	1
 CATEGORIES=	databases java
 MASTER_SITES=	http://download.oracle.com/berkeley-db/
 PKGNAMEPREFIX?=
@@ -17,9 +18,11 @@ COMMENT=	Oracle Berkeley DB, revision ${BDBVER}
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
+BROKEN_mips64=	no usable MUTEX implementation, assy works only for MIPS32, POSIX mutexes are unshared
+
 BDBVER=		${PORTVERSION:R}
 BDBMAJ=		${BDBVER:R}
-CONFIGURE_ARGS=	--enable-cxx --enable-stl \
+CONFIGURE_ARGS=	--enable-cxx --enable-stl --enable-dbm \
 		--enable-compat185 --enable-dump185 \
 		--includedir=${PREFIX}/include/${PORTNAME} \
 		--libdir=${PREFIX}/lib/${PORTNAME} \
@@ -63,6 +66,14 @@ DOCS_INSTALL_TARGET=	install_docs
 
 .include <bsd.port.options.mk>
 
+.if ${ARCH} == aarch64
+. if ${OSVERSION} > 1100100
+CONFIGURE_ARGS+=	--with-mutex=POSIX/pthreads
+. else
+CONFIGURE_ARGS+=	--enable-posixmutexes
+. endif
+.endif
+
 post-patch:
 	${REINPLACE_CMD} -e '/^DOCLIST/{s/csharp//;}' ${WRKSRC}/../dist/Makefile.in
 	${REINPLACE_CMD} -Ee 's/[[:<:]]atomic_init[[:>:]]/db_atomic_init/g' \
@@ -74,6 +85,7 @@ post-install:
 .for i in ${DBLIBS}
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/${PORTNAME}/${i}-${BDBVER}.so
 	${LN} -s -f ${PORTNAME}/${i}-${BDBVER}.so ${STAGEDIR}${PREFIX}/lib
+	${LN} -s -f ${PORTNAME}/${i}-${BDBVER}.so ${STAGEDIR}${PREFIX}/lib/${i}-${BDBMAJ}.so
 	${LN} -s -f ${i}-${BDBVER}.a ${STAGEDIR}${PREFIX}/lib/${PORTNAME}/${i}.a
 .endfor
 	cd ${STAGEDIR}${PREFIX}/bin/${PORTNAME}; \

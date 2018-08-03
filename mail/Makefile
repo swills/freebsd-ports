@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/mail/Makefile 475412 2018-07-27 05:14:51Z pi $
 #
 
     COMMENT = Electronic mail utilities
@@ -610,6 +610,7 @@
     SUBDIR += roundcube-thunderbird_labels
     SUBDIR += roundcube-umich
     SUBDIR += roundcube-veximaccountadmin
+    SUBDIR += roundcube-yubikey_auth
     SUBDIR += rspamd
     SUBDIR += rspamd-devel
     SUBDIR += rss2email2

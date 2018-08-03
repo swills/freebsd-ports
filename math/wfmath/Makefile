@@ -1,9 +1,9 @@
 # Created by: Janni
-# $FreeBSD: head/math/wfmath/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/wfmath/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	wfmath
 PORTVERSION=	1.0.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 MASTER_SITES=	SF/worldforge/${PORTNAME}%20%28math%20lib%29/${PORTVERSION}
 

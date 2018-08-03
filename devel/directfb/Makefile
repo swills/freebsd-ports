@@ -1,8 +1,9 @@
 # Created by: Devaux Fabien <fab@gcu.info>
-# $FreeBSD: head/devel/directfb/Makefile 471731 2018-06-04 23:18:21Z linimon $
+# $FreeBSD: head/devel/directfb/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	directfb
 PORTVERSION=	1.4.17
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://sources.buildroot.net/
 DISTNAME=	DirectFB-${PORTVERSION}
@@ -54,7 +55,7 @@ CONFIGURE_ARGS=	--disable-osx --disable-extra-warnings --disable-profiling \
 DOCS_BUILD_DEPENDS=	man2html:textproc/man2html
 FREETYPE_LIB_DEPENDS=	libfreetype.so:print/freetype2
 FREETYPE_CONFIGURE_ENABLE=	freetype
-X11_USE=	XORG=x11,xext,xproto
+X11_USE=	XORG=x11,xext,xorgproto
 X11_CONFIGURE_ENABLE=	x11
 SDL_USE=	sdl=sdl
 SDL_CONFIGURE_ENABLE=	sdl

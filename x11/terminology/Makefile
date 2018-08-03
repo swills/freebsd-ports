@@ -1,8 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11/terminology/Makefile 474282 2018-07-09 19:13:41Z gblach $
+# $FreeBSD: head/x11/terminology/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	terminology
 PORTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	x11 enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/apps/${PORTNAME}/
 

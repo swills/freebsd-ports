@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libfmt/Makefile 466179 2018-04-01 20:13:38Z yuri $
+# $FreeBSD: head/devel/libfmt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libfmt
 DISTVERSION=	4.1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	SlavaMikerov@gmail.com

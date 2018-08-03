@@ -1,9 +1,9 @@
 # Created by: Peter Vereshagin <peter@vereshagin.org>
-# $FreeBSD: head/www/links-hacked/Makefile 450569 2017-09-25 05:26:59Z antoine $
+# $FreeBSD: head/www/links-hacked/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	links-hacked
 DISTVERSION=	101110
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES?=	www
 MASTER_SITES=	http://xray.sai.msu.ru/~karpov/links-hacked/downloads/
 
@@ -42,7 +42,7 @@ JS_DESC=		Javascript interpreter support (very basic)
 JS_CONFIGURE_ENABLE=	javascript
 SVGALIB_LIB_DEPENDS=	libvga.so:graphics/svgalib
 SVGALIB_CONFIGURE_WITH=	svgalib
-X11_USE=		xorg=x11,xproto
+X11_USE=		xorg=x11,xorgproto
 X11_CONFIGURE_WITH=	x
 
 .include <bsd.port.options.mk>

@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/audio/ccaudio2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/ccaudio2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ccaudio2
 PORTVERSION=	2.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	GNU/ccaudio
 

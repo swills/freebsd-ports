@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/lang/tcl87/Makefile 463967 2018-03-09 15:40:14Z gahr $
+# $FreeBSD: head/lang/tcl87/Makefile 475997 2018-07-31 12:47:10Z gahr $
 
 PORTNAME=	tcl
 DISTVERSION=	8.7a1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	SF/tcl/Tcl/${DISTVERSION} \
 		TCLTK/tcl8_7

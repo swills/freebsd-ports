@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libzmf/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/graphics/libzmf/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libzmf
 PORTVERSION=	0.0.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	LODEV
 

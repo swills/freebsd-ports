@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/print/libgnomeprintmm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/print/libgnomeprintmm/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libgnomeprintmm
 PORTVERSION=	2.5.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	print gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

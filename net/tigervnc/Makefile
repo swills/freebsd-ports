@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/tigervnc/Makefile 474993 2018-07-20 08:17:05Z meta $
+# $FreeBSD: head/net/tigervnc/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	tigervnc
 PORTVERSION=	1.9.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net x11-servers
 
@@ -33,11 +34,8 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	TigerVNC
 
-USE_XORG+=	bigreqsproto compositeproto damageproto fixesproto fontsproto glproto \
-		ice inputproto kbproto pixman presentproto randrproto renderproto \
-		resourceproto scrnsaverproto sm videoproto x11 xau xcmiscproto xdamage \
-		xdmcp xext xextproto xfixes xfont xkbfile xorg-macros xproto xrandr \
-		xrender xtrans xtst
+USE_XORG+=	ice pixman sm x11 xau xdamage xdmcp xext xfixes xfont xkbfile \
+		xorg-macros xorgproto xrandr xrender xtrans xtst
 
 CFLAGS+=	-fPIC
 

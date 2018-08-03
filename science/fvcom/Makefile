@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/fvcom/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/fvcom/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	fvcom
 PORTVERSION=	2.7.1
-PORTREVISION?=	11
+PORTREVISION?=	12
 CATEGORIES=	science
 MASTER_SITES=	http://fvcom.smast.umassd.edu/FVCOM/index.html/
 DISTNAME=	sourcecode1

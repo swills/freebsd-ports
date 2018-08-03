@@ -1,9 +1,9 @@
 # Created by: Pedro Garcia Freitas <sawp@sawp.com.br>
-# $FreeBSD: head/graphics/mahotas/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/mahotas/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mahotas
 PORTVERSION=	0.9.6
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/gbsplay/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/gbsplay/Makefile 475972 2018-07-31 06:43:53Z ehaupt $
 
 PORTNAME=	gbsplay
 PORTVERSION=	0.0.93.20161217
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	audio
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -11,12 +11,11 @@ COMMENT=	Emulates the sound hardware of the Nintendo Game Boy(TM)
 
 LICENSE=	GPLv2
 
+USES=		gmake compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	mmitch
 GH_TAGNAME=	2c4486e
-
 HAS_CONFIGURE=	yes
-USES=		gmake compiler:gcc-c++11-lib
 USE_CSTD=	gnu89
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}

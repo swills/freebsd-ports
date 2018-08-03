@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-grape-swagger/Makefile 470739 2018-05-23 23:24:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-grape-swagger/Makefile 476057 2018-07-31 23:48:07Z sunpoet $
 
 PORTNAME=	grape-swagger
-PORTVERSION=	0.29.0
+PORTVERSION=	0.30.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

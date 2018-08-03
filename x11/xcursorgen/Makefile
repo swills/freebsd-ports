@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/xcursorgen/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xcursorgen/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xcursorgen
 PORTVERSION=	1.0.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
@@ -13,7 +13,7 @@ LICENSE=	MIT
 LIB_DEPENDS=	libpng.so:graphics/png
 
 XORG_CAT=	app
-USE_XORG=	x11 xcursor xextproto
+USE_XORG=	x11 xcursor xorgproto
 INSTALL_TARGET=	install-strip
 
 PLIST_FILES=	bin/xcursorgen man/man1/xcursorgen.1.gz

@@ -1,9 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-ext2/Makefile 462394 2018-02-20 12:58:43Z ehaupt $
+# $FreeBSD: head/sysutils/fusefs-ext2/Makefile 475641 2018-07-29 09:57:19Z ehaupt $
 
 PORTNAME=	fusefs-ext2
 PORTVERSION=	0.0.10
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -23,6 +24,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib/e2fsprogs -Wl,--rpath -Wl,${LOCALBASE}/lib/e2fsprog
 
 GH_PROJECT=	fuse-ext2
 GH_ACCOUNT=	alperakcan
+GH_TAGNAME=	677722d
 
 PLIST_FILES=	bin/fuse-ext2 bin/fuse-ext2.probe \
 		man/man1/fuse-ext2.1.gz

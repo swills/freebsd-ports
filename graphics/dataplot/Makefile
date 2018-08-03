@@ -1,9 +1,9 @@
 # Created by: Pedro F. Giffuni <pfgshield-freebsd@yahoo.com>
-# $FreeBSD: head/graphics/dataplot/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/dataplot/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	dataplot
 PORTVERSION=	20132012
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.nist.gov/pub/dataplot/unix/:source \
 		LOCAL/beech:source \

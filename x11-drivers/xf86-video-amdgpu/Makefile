@@ -1,10 +1,10 @@
-# $FreeBSD: head/x11-drivers/xf86-video-amdgpu/Makefile 468435 2018-04-27 15:14:53Z jbeich $
+# $FreeBSD: head/x11-drivers/xf86-video-amdgpu/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 # this port is for future amdgpu kernel support testing.
 
 PORTNAME=	xf86-video-amdgpu
 PORTVERSION=	1.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

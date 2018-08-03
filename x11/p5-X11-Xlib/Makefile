@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/p5-X11-Xlib/Makefile 472770 2018-06-19 08:13:10Z pi $
+# $FreeBSD: head/x11/p5-X11-Xlib/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	X11-Xlib
 PORTVERSION=	0.18
+PORTREVISION=	1
 CATEGORIES=	x11 perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,7 +20,7 @@ BUILD_DEPENDS=	p5-Devel-CheckLib>=0:devel/p5-Devel-CheckLib \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
-USE_XORG=	x11 xcomposite xext xfixes xinerama xproto xrender xtst
+USE_XORG=	x11 xcomposite xext xfixes xinerama xorgproto xrender xtst
 
 pre-configure:
 	cd ${WRKSRC} && ${PERL} Makefile.PL

@@ -1,8 +1,9 @@
 # Created by: alex
-# $FreeBSD: head/emulators/bochs/Makefile 454975 2017-11-27 17:33:28Z mmokhi $
+# $FreeBSD: head/emulators/bochs/Makefile 476184 2018-08-01 16:33:11Z adamw $
 
 PORTNAME=	bochs
 PORTVERSION=	2.6.9
+PORTREVISION=	1
 PORTEPOCH=	2
 CATEGORIES=	emulators
 MASTER_SITES=	SF
@@ -223,7 +224,7 @@ CONFIGURE_ARGS+=--enable-vmx=1
 
 .if defined(WITH_CPU_LEVEL)
 .if ${WITH_CPU_LEVEL} < 3 || ${WITH_CPU_LEVEL} > 6
-IGNORE=		can not install: WITH_CPU_LEVEL must be an integer value between 3 and 6
+IGNORE=		cannot install: WITH_CPU_LEVEL must be an integer value between 3 and 6
 .endif
 CONFIGURE_ARGS+=--enable-cpu-level=${WITH_CPU_LEVEL}
 .endif

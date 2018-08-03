@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/talloc/Makefile 470190 2018-05-17 02:24:59Z timur $
+# $FreeBSD: head/devel/talloc/Makefile 475968 2018-07-31 04:09:06Z timur $
 
 PORTNAME=		talloc
-PORTVERSION=		2.1.13
+PORTVERSION=		2.1.14
 PORTREVISION=		0
 CATEGORIES=		devel
 MASTER_SITES=		SAMBA

@@ -1,8 +1,9 @@
 # Created by: Eric van Gyzen <vangyzen@stat.duke.edu>
-# $FreeBSD: head/math/libRmath/Makefile 474214 2018-07-09 00:49:15Z jrm $
+# $FreeBSD: head/math/libRmath/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libRmath
 DISTVERSION=	3.5.1
+PORTREVISION=	1
 CATEGORIES=	math lang
 MASTER_SITES=	CRAN/src/base/R-${PORTVERSION:C|\..*||}
 DISTNAME=	R-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

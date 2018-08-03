@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pspg/Makefile 468511 2018-04-28 00:30:00Z miwi $
+# $FreeBSD: head/databases/pspg/Makefile 475605 2018-07-28 19:31:03Z joneum $
 
 PORTNAME=	pspg
-DISTVERSION=	1.1.0
+DISTVERSION=	1.2.2
 CATEGORIES=	databases
 
 MAINTAINER=	dg@syrec.org
@@ -10,7 +10,7 @@ COMMENT=	Tabular data pager designed to be used with psql
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		autoreconf localbase ncurses pkgconfig readline
+USES=		autoreconf gmake localbase ncurses pkgconfig readline
 USE_GITHUB=	yes
 GH_ACCOUNT=	okbob
 GNU_CONFIGURE=	yes

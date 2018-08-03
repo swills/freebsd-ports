@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/quantum-espresso/Makefile 474956 2018-07-19 10:18:07Z yuri $
+# $FreeBSD: head/science/quantum-espresso/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	quantum-espresso
 DISTVERSIONPREFIX=	qe-
 DISTVERSION=	6.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	http://www.quantum-espresso.org/wp-content/uploads/upf_files/:pp
 DIST_SUBDIR=	${PORTNAME}

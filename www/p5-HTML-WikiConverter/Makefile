@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/www/p5-HTML-WikiConverter/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-WikiConverter/Makefile 475635 2018-07-29 09:07:52Z amdmi3 $
 
 PORTNAME=	HTML-WikiConverter
 PORTVERSION=	0.68
@@ -10,6 +10,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	HTML to wiki markup converter
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/LICENSE # GPLv2 actually
 
 BUILD_DEPENDS=	p5-Class-Data-Inheritable>=0.02:devel/p5-Class-Data-Inheritable \
 		p5-Params-Validate>=0.77:devel/p5-Params-Validate \
@@ -22,5 +26,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

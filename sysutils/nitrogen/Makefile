@@ -1,9 +1,9 @@
 # Created by: Jonathan Liu <Net147@hotmail.com>
-# $FreeBSD: head/sysutils/nitrogen/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/sysutils/nitrogen/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	nitrogen
 PORTVERSION=	1.5.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://projects.l3ib.org/nitrogen/files/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.default-versions.mk 474017 2018-07-06 16:11:14Z miwi $
+# $FreeBSD: head/Mk/bsd.default-versions.mk 475856 2018-07-29 21:59:44Z gerald $
 #
 # MAINTAINER:	ports@FreeBSD.org
 #
@@ -42,8 +42,8 @@ FIREBIRD_DEFAULT?=	2.5
 FORTRAN_DEFAULT?=	gfortran
 # Possible values: 3.0.4
 FPC_DEFAULT?=		3.0.4
-# Possible values: 4.9, 5, 6, 7
-GCC_DEFAULT?=		6
+# Possible values: 4.9, 5, 6, 7, 8
+GCC_DEFAULT?=		7
 # Possible values: 7, 8, 9, agpl
 GHOSTSCRIPT_DEFAULT?=	agpl
 # Possible values: 1.8.2

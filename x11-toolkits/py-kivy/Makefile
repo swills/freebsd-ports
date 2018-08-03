@@ -1,5 +1,5 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 475617 2018-07-28 23:23:46Z yuri $
 
 PORTNAME=	kivy
 PORTVERSION=	1.10.0
@@ -67,7 +67,7 @@ OPENCV_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cv2.so:graphics/py-opencv@${PY_FLAVOR}
 PIL_DESC=		Text and window rendering support via Pillow
 PIL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 PYGAME_DESC=		Window, text and image rendering support via PyGame
-PYGAME_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game@${PY_FLAVOR}
+PYGAME_RUN_DEPENDS=	${PYGAME}
 PYGLET_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyglet>0:graphics/py-pyglet@${PY_FLAVOR}
 SDL2_DESC=		Simple Direct Media Layer v2.0 support
 SDL2_MAKE_ENV=		USE_SDL2=1

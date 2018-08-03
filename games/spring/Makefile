@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/spring/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/spring/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	spring
 PORTVERSION=	98.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	SF/springrts/springrts/${PORTNAME}-${PORTVERSION} \
 		http://springrts.com/dl/

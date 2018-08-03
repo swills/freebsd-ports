@@ -1,5 +1,5 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion19/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/devel/subversion19/Makefile 476184 2018-08-01 16:33:11Z adamw $
 
 PORTREVISION=	0
 PKGNAMESUFFIX=  19
@@ -140,7 +140,7 @@ pre-configure:
 .if ${PORT_OPTIONS:MSTATIC}
 	@if ${GREP} -q ucol_close ${LOCALBASE}/lib/libsqlite3.a ; then \
 		${ECHO_MSG} "" ; \
-		${ECHO_MSG} "You can not build static subversion if your SQLite3 is built with ICU enabled."; \
+		${ECHO_MSG} "You cannot build static subversion if your SQLite3 is built with ICU enabled."; \
 		${ECHO_MSG} "Please, reinstall 'devel/sqlite3' port with disabled ICU support."; \
 		${ECHO_MSG} "" ; \
 		${FALSE} ; \

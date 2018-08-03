@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/libgnomeprintuimm/Makefile 460131 2018-01-27 17:34:51Z danfe $
+# $FreeBSD: head/x11-toolkits/libgnomeprintuimm/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libgnomeprintuimm
 PORTVERSION=	2.5.2
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

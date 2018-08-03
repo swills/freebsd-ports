@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/cairo/Makefile 450506 2017-09-24 18:49:06Z sunpoet $
+# $FreeBSD: head/graphics/cairo/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	cairo
 PORTVERSION=	1.14.8
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/
@@ -52,7 +52,7 @@ GLIB_DESC=	Enable GObject Functions Feature
 OPTIONS_SUB=	yes
 X11_USE=	xorg=x11,xext,xrender
 X11_CONFIGURE_ENABLE=xlib
-OPENGL_USE=	gl=gl,egl xorg=glproto:both,dri2proto:both
+OPENGL_USE=	gl=gl,egl xorg=xorgproto:both
 OPENGL_CONFIGURE_ENABLE=gl egl
 OPENGL_IMPLIES=	X11
 GLIB_USES=	gettext-runtime

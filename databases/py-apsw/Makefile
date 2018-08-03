@@ -1,8 +1,8 @@
 # Created by: Rusty Nejdl
-# $FreeBSD: head/databases/py-apsw/Makefile 470073 2018-05-15 23:59:17Z sunpoet $
+# $FreeBSD: head/databases/py-apsw/Makefile 475729 2018-07-29 19:15:10Z sunpoet $
 
 PORTNAME=	apsw
-PORTVERSION=	3.23.1
+PORTVERSION=	3.24.0
 DISTVERSIONSUFFIX=	-r1
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/www/gtkhtml4/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/gtkhtml4/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	gtkhtml
 PORTVERSION=	4.10.0
+PORTREVISION=	1
 CATEGORIES=	www gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	4
@@ -17,7 +18,7 @@ LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:misc/iso-codes
 
 USES=		gettext gmake gnome libtool pathfix pkgconfig tar:xz
-USE_XORG=	xinerama xi xrandr xcursor xcomposite xdamage xproto
+USE_XORG=	xinerama xi xrandr xcursor xcomposite xdamage xorgproto
 USE_GNOME=	gnomeprefix intlhack gtk30
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

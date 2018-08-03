@@ -1,10 +1,10 @@
 # Created by: Kyle Martin <mkm@ieee.org>
-# $FreeBSD: head/devel/cmake/Makefile 474884 2018-07-18 16:41:18Z fluffy $
+# $FreeBSD: head/devel/cmake/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cmake
 # Remember to update devel/cmake-doc and devel/cmake-gui as well.
-DISTVERSION=	3.11.4
-PORTREVISION=	2
+DISTVERSION=	3.12.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://www.cmake.org/files/v${PORTVERSION:R}/
 

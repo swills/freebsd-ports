@@ -1,7 +1,7 @@
-# $FreeBSD: head/accessibility/sct/Makefile 463470 2018-03-03 08:59:34Z yuri $
+# $FreeBSD: head/accessibility/sct/Makefile 475979 2018-07-31 08:22:15Z 0mp $
 
 PORTNAME=	sct
-DISTVERSION=	0.2.1
+DISTVERSION=	0.3.1
 CATEGORIES=	accessibility
 
 MAINTAINER=	0mp@FreeBSD.org

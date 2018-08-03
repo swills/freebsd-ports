@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-gon/Makefile 451298 2017-10-05 09:50:12Z sunpoet $
+# $FreeBSD: head/www/rubygem-gon/Makefile 476122 2018-07-31 23:54:52Z sunpoet $
 
 PORTNAME=	gon
-PORTVERSION=	6.2.0
+PORTVERSION=	6.2.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

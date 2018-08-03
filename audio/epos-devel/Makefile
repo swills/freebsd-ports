@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/audio/epos-devel/Makefile 407279 2016-01-26 17:57:01Z danfe $
+# $FreeBSD: head/audio/epos-devel/Makefile 475652 2018-07-29 12:15:10Z tobik $
 
 PORTNAME=	epos
 PORTVERSION=	2.5.37
@@ -14,6 +14,7 @@ LICENSE=	GPLv2 LGPL20
 LICENSE_COMB=	multi
 
 USES=		gmake
+USE_CXXSTD=	gnu++98
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	YACC="${YACC}"
 

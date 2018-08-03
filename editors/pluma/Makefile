@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/editors/pluma/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/editors/pluma/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pluma
 PORTVERSION=	1.20.1
+PORTREVISION=	1
 CATEGORIES=	editors mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/games/alienarena/Makefile 450323 2017-09-22 08:30:43Z mat $
+# $FreeBSD: head/games/alienarena/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	alienarena
 PORTVERSION=	2013.766
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	SF/alienarena.mirror/Alien%20Arena%207.66/ \
 		http://icculus.org/alienarena/Files/ \

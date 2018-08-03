@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libcdr01/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/graphics/libcdr01/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libcdr
 PORTVERSION=	0.1.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics devel
 MASTER_SITES=	LODEV
 PKGNAMESUFFIX=	01

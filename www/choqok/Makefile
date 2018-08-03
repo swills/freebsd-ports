@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/choqok/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/choqok/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	choqok
 DISTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	www kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION:R}/src
 DIST_SUBDIR=	KDE/${PORTNAME}

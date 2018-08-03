@@ -1,8 +1,8 @@
 # Created by: Rozhuk Ivan <rozhuk.im@gmail.com>
-# $FreeBSD: head/databases/mantis/Makefile 474875 2018-07-18 15:52:26Z swills $
+# $FreeBSD: head/databases/mantis/Makefile 475644 2018-07-29 10:51:37Z joneum $
 
 PORTNAME=	mantis
-PORTVERSION=	2.9.0
+PORTVERSION=	2.15.0
 CATEGORIES=	databases www
 
 MAINTAINER=	ports@FreeBSD.org

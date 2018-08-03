@@ -1,10 +1,10 @@
 # Created by: Alex "lissyara" Keda <admin@lissyara.su>
-# $FreeBSD: head/deskutils/xneur/Makefile 472671 2018-06-18 04:16:19Z linimon $
+# $FreeBSD: head/deskutils/xneur/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	xneur
 PORTVERSION=	0.17.0
 DISTVERSIONSUFFIX=.orig
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	deskutils
 MASTER_SITES=	https://launchpad.net/~andrew-crew-kuznetsov/+archive/xneur-stable/+files/
 DISTNAME=	${PORTNAME}_${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

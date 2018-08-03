@@ -1,8 +1,9 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/sysutils/xfce4-settings/Makefile 472985 2018-06-21 17:19:12Z madpilot $
+# $FreeBSD: head/sysutils/xfce4-settings/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xfce4-settings
 PORTVERSION=	4.12.4
+PORTREVISION=	1
 CATEGORIES=	sysutils xfce
 MASTER_SITES=	XFCE/src/xfce/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4
@@ -25,7 +26,7 @@ GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 USE_GNOME=	glib20 gtk20 cairo intltool intlhack
 USE_XFCE=	garcon libexo
-USE_XORG=	inputproto x11 xcursor xi xrandr
+USE_XORG=	xorgproto x11 xcursor xi xrandr
 
 CONFIGURE_ARGS=	--enable-debug=yes \
 		--disable-xorg-libinput

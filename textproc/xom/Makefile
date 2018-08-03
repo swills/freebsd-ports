@@ -1,8 +1,8 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/textproc/xom/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/xom/Makefile 475664 2018-07-29 16:58:24Z danilo $
 
 PORTNAME=	xom
-PORTVERSION=	1.2.10
+PORTVERSION=	1.2.11
 PORTEPOCH=	1
 CATEGORIES=	textproc java
 MASTER_SITES=	http://www.cafeconleche.org/XOM/

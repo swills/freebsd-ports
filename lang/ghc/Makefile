@@ -1,8 +1,9 @@
 # Created by: Simon Marlow <simonmar@microsoft.com>
-# $FreeBSD: head/lang/ghc/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/lang/ghc/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ghc
 PORTVERSION=	${GHC_VERSION}
+PORTREVISION=	1
 CATEGORIES=	lang haskell
 MASTER_SITES=	http://www.haskell.org/ghc/dist/${PORTVERSION}/:source \
 		LOCAL/arrowd/:boot

@@ -1,9 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/science/py-scikit-learn/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-scikit-learn/Makefile 475875 2018-07-30 09:38:14Z rm $
 
 PORTNAME=	scikit-learn
-PORTVERSION=	0.19.1
-PORTREVISION=	1
+PORTVERSION=	0.19.2
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

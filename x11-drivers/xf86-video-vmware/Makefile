@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-video-vmware/Makefile 473914 2018-07-04 18:30:10Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-vmware/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-video-vmware
 PORTVERSION=	13.3.0
+PORTREVISION=	2
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

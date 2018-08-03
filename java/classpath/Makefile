@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/java/classpath/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/java/classpath/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	classpath
 PORTVERSION=	0.99
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	java devel
 MASTER_SITES=	GNU \
 		SAVANNAH
@@ -24,7 +24,7 @@ GNU_CONFIGURE=	yes
 USES=		gmake iconv libtool perl5 pkgconfig
 USE_LDCONFIG=	yes
 USE_PERL5=	build
-USE_XORG=	x11 ice xtst xaw xproto xext
+USE_XORG=	x11 ice xtst xaw xorgproto xext
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

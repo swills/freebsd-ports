@@ -1,5 +1,5 @@
 # Created by: Volker Stolz <vs@FreeBSD.org>
-# $FreeBSD: head/devel/ncc/Makefile 438972 2017-04-20 15:47:51Z amdmi3 $
+# $FreeBSD: head/devel/ncc/Makefile 476164 2018-08-01 08:03:51Z tobik $
 
 PORTNAME=	ncc
 PORTVERSION=	2.8
@@ -15,9 +15,12 @@ LICENSE_FILE=	${WRKSRC}/doc/LICENSE
 
 ALL_TARGET=	# empty
 MAKE_ARGS=	CC="${CXX}" LCFLAGS="${CFLAGS}"
-USES=		ncurses python:run shebangfix
+USES=		compiler ncurses python:run shebangfix
 SHEBANG_FILES=	scripts/*.py
-CFLAGS+=	-DNOGNU='\"${PREFIX}/include/ncc/nognu\"' -fpermissive
+# build ignores CXXFLAGS
+CFLAGS+=	-DNOGNU='\"${PREFIX}/include/ncc/nognu\"' -fpermissive \
+		${CFLAGS_${CHOSEN_COMPILER_TYPE}}
+CFLAGS_clang=	-Wno-c++11-narrowing
 
 PORTDOCS=	*
 

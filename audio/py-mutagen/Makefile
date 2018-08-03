@@ -1,8 +1,8 @@
 # Created by: Byung-Hee HWANG <bh@izb.knu.ac.kr>
-# $FreeBSD: head/audio/py-mutagen/Makefile 460029 2018-01-26 18:12:21Z sunpoet $
+# $FreeBSD: head/audio/py-mutagen/Makefile 475456 2018-07-27 18:35:10Z miwi $
 
 PORTNAME=	mutagen
-PORTVERSION=	1.40.0
+PORTVERSION=	1.41.0
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

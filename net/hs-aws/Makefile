@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/hs-aws/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/net/hs-aws/Makefile 475642 2018-07-29 10:40:28Z arrowd $
 
 PORTNAME=	aws
-PORTVERSION=	0.19
-PORTREVISION=	1
+PORTVERSION=	0.20
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -20,8 +19,6 @@ USE_CABAL=	aeson>=0.6 attoparsec>=0.11 base16-bytestring \
 		utf8-string>=0.3 vector>=0.10 xml-conduit>=1.2
 
 FLAGS_DISABLE=	examples
-
-IGNORE=		Doesn't build with recent hs-conduit and hs-resourcet
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

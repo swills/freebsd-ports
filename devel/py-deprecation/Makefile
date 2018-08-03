@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-deprecation/Makefile 473231 2018-06-24 20:17:03Z sunpoet $
+# $FreeBSD: head/devel/py-deprecation/Makefile 475733 2018-07-29 19:15:30Z sunpoet $
 
 PORTNAME=	deprecation
-PORTVERSION=	2.0.4
+PORTVERSION=	2.0.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

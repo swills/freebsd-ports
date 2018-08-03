@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/petiga/Makefile 470562 2018-05-21 16:55:17Z yuri $
+# $FreeBSD: head/math/petiga/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	petiga
 DISTVERSION=	g20180518
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math python
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

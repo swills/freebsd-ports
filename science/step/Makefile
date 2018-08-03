@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/step/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/science/step/Makefile 475421 2018-07-27 10:14:39Z jhale $
 
 PORTNAME=	step
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	science kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

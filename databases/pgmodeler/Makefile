@@ -1,8 +1,9 @@
 # Created by: LoÃ¯c BARTOLETTI
-# $FreeBSD: head/databases/pgmodeler/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/databases/pgmodeler/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pgmodeler
 PORTVERSION=	0.9.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 

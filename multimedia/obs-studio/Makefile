@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/obs-studio/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/obs-studio/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	obs-studio
 DISTVERSION=	21.1.2
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@FreeBSD.org

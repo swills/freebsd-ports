@@ -1,8 +1,6 @@
-# $FreeBSD: head/audio/kid3-qt4/Makefile 333590 2013-11-12 16:50:12Z makc $
+# $FreeBSD: head/audio/kid3-qt4/Makefile 476239 2018-08-02 15:22:58Z jhale $
 
-PKGNAMESUFFIX=	-qt4
+SLAVE=		qt4
+MASTERDIR=	${.CURDIR}/../../audio/kid3-kde4
 
-COMMENT=	Qt 4 based MP3/Ogg/FLAC tag editor
-
-MASTERDIR=	${.CURDIR}/../kid3-kde4
 .include "${MASTERDIR}/Makefile"

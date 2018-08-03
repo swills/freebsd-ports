@@ -1,10 +1,10 @@
 # Created by: Diego Depaoli <trebestie@gmail.com>
-# $FreeBSD: head/editors/texworks/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/texworks/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	texworks
 PORTVERSION=	0.4.6
 DISTVERSIONPREFIX=	release-
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	editors
 
 MAINTAINER=	hrs@FreeBSD.org

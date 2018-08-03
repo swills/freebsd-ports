@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/xsd/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/devel/xsd/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	xsd
 PORTVERSION=	4.0.0
 DISTVERSIONSUFFIX=	+dep
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.codesynthesis.com/download/${PORTNAME}/${PORTVERSION:R}/
 

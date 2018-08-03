@@ -1,5 +1,5 @@
 # Created by: Tom Hukins <tom@eborcom.com>
-# $FreeBSD: head/mail/maildrop/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/mail/maildrop/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 # You can define the following to enable further compile time
 # customizations:
@@ -17,6 +17,7 @@
 
 PORTNAME=	maildrop
 PORTVERSION=	2.9.3
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	SF/courier/${PORTNAME}/${PORTVERSION}
 

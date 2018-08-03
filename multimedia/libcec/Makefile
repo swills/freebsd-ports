@@ -1,9 +1,9 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/multimedia/libcec/Makefile 473635 2018-06-30 19:35:44Z decke $
+# $FreeBSD: head/multimedia/libcec/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	libcec
 PORTVERSION=	4.0.2
-PORTREVISION=	2
+PORTREVISION=	4
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	multimedia
 
@@ -51,7 +51,7 @@ CMAKE_ARGS+=	-DSKIP_PYTHON_WRAPPER:BOOL=true
 .endif
 
 .if ${PORT_OPTIONS:MX11}
-USE_XORG=	x11 xproto xrandr
+USE_XORG=	x11 xorgproto xrandr
 .endif
 
 post-patch:

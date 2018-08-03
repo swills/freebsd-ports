@@ -1,10 +1,10 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/bakery/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11-toolkits/bakery/Makefile 475857 2018-07-29 22:18:44Z gerald $
 #   $MCom: ports/x11-toolkits/bakery/Makefile,v 1.16 2009/01/09 22:07:11 kwm Exp $
 
 PORTNAME=	bakery
 PORTVERSION=	2.6.3
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 

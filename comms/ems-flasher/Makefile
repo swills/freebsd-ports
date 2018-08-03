@@ -1,9 +1,9 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/comms/ems-flasher/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/comms/ems-flasher/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ems-flasher
 PORTVERSION=	0.03
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	comms
 MASTER_SITES=	http://lacklustre.net/projects/ems-flasher/ \
 		https://cooltrainer.org/freebsd-ports/ems-flasher/

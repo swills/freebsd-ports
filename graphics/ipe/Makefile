@@ -1,9 +1,9 @@
 # Created by: David Bremner <bremner@unb.ca>
-# $FreeBSD: head/graphics/ipe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/ipe/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ipe
 PORTVERSION=	7.2.7
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	graphics
 MASTER_SITES=	https://dl.bintray.com/otfried/generic/ipe/${PORTVERSION:R}/

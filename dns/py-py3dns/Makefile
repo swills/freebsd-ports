@@ -1,9 +1,8 @@
 # Created by: Mark Linimon <linimon@lonesome.com>
-# $FreeBSD: head/dns/py-py3dns/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/dns/py-py3dns/Makefile 475930 2018-07-31 00:03:04Z sunpoet $
 
 PORTNAME=	py3dns
-PORTVERSION=	3.1.1
-DISTVERSIONSUFFIX=	a
+PORTVERSION=	3.2.0
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

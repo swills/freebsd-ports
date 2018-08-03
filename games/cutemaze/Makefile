@@ -1,8 +1,8 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/cutemaze/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/cutemaze/Makefile 475620 2018-07-29 02:00:09Z jhale $
 
 PORTNAME=	cutemaze
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.4
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/${PORTNAME}/
 DISTNAME=	${PORTNAME}-${DISTVERSION}-src
@@ -18,7 +18,7 @@ USE_GL=		gl
 USE_QT=		core gui svg imageformats_run widgets \
 		linguisttools_build buildtools_build
 
-PORTDOCS=	ChangeLog NEWS README
+PORTDOCS=	ChangeLog README
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 OPTIONS_DEFINE=	DOCS NLS

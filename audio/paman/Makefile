@@ -1,9 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/audio/paman/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/paman/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	paman
 PORTVERSION=	0.9.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/${PORTNAME}/
 

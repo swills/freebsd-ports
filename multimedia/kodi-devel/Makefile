@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/kodi-devel/Makefile 475155 2018-07-23 08:50:02Z tobik $
+# $FreeBSD: head/multimedia/kodi-devel/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kodi
 DISTVERSION=	18.0.g201807222249
+PORTREVISION=	1
 CATEGORIES=	multimedia
 PKGNAMESUFFIX?=	-devel
 

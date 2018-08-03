@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/magit-popup/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/devel/magit-popup/Makefile 475427 2018-07-27 10:56:24Z swills $
 
 PORTNAME=	magit-popup
-PORTVERSION=	2.12.3
+PORTVERSION=	2.12.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=   1
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
@@ -11,7 +10,7 @@ MAINTAINER=	yasu@utahime.org
 COMMENT=	Define prefix-infix-suffix command combos
 
 LICENSE=	GPLv3+
-LICENSE_FILE=	${WRKSRC}/LICENCE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	dash.el${EMACS_PKGNAMESUFFIX}>=2.12.1:devel/dash.el@${EMACS_FLAVOR}
 RUN_DEPENDS=	dash.el${EMACS_PKGNAMESUFFIX}>=2.12.1:devel/dash.el@${EMACS_FLAVOR}

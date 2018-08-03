@@ -1,9 +1,9 @@
 # Created by: Dmitry Kazarov <d.y.kazarov@mail.ru>
-# $FreeBSD: head/print/qpdf/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/print/qpdf/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	qpdf
 DISTVERSION=	8.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	SF
 

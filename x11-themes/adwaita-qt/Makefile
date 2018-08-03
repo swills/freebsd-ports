@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-themes/adwaita-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/adwaita-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	adwaita-qt
 DISTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	x11-themes
 
 MAINTAINER=	tcberner@FreeBSD.org

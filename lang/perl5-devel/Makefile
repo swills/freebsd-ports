@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/lang/perl5-devel/Makefile 475173 2018-07-23 13:27:25Z mat $
+# $FreeBSD: head/lang/perl5-devel/Makefile 475881 2018-07-30 11:59:07Z mat $
 
 PORTNAME=	perl
 # XXX Remove second line, uncomment first
@@ -35,7 +35,7 @@ TEST_ENV=	${MAKE_ENV} TEST_JOBS=${MAKE_JOBS_NUMBER} \
 USE_GITHUB=	yes
 GH_ACCOUNT=	Perl
 GH_PROJECT=	perl5
-GH_TAGNAME=	v5.29.1-29-g3d50648cc4
+GH_TAGNAME=	v5.29.1-37-g91584c7ae6
 
 OPTIONS_DEFINE=	DEBUG GDBM PERL_64BITINT MULTIPLICITY SITECUSTOMIZE \
 		THREADS PERL_MALLOC DTRACE DOT_INC

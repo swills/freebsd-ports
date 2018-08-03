@@ -1,9 +1,9 @@
 # Created by: Sevan Janiyan <venture37@geeklan.co.uk>
-# $FreeBSD: head/net-mgmt/chillispot/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/net-mgmt/chillispot/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	chillispot
 PORTVERSION=	1.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.chillispot.info/download/ \
 		http://www.geeklan.co.uk/files/ \

@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/irc/ngircd/Makefile 454189 2017-11-14 18:38:52Z zi $
+# $FreeBSD: head/irc/ngircd/Makefile 476228 2018-08-02 09:37:54Z amdmi3 $
 
 PORTNAME=	ngircd
 PORTVERSION=	24
@@ -11,18 +11,15 @@ MASTER_SITES=	http://arthur.barton.de/pub/${PORTNAME}/ \
 MAINTAINER=	fgsch@lodoss.net
 COMMENT=	Free open source daemon for Internet Relay Chat (IRC)
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cpe tar:xz
+USES=		cpe localbase:ldflags tar:xz
 GNU_CONFIGURE=	yes
 USE_RC_SUBR=	ngircd
 
 CPE_VENDOR=	barton
 CPE_VERSION=	${PORTVERSION:C/^([0-9]+)$/\1.0/}
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 PORTDOCS=	*
 PLIST_FILES=	etc/ngircd.conf.sample \

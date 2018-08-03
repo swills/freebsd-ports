@@ -1,8 +1,9 @@
-# $FreeBSD: head/cad/openvsp/Makefile 465714 2018-03-27 15:10:25Z fernape $
+# $FreeBSD: head/cad/openvsp/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	openvsp
 DISTVERSIONPREFIX=	${GH_PROJECT}_
 DISTVERSION=	3.16.0
+PORTREVISION=	1
 CATEGORIES=	cad
 
 MAINTAINER=	fernape@FreeBSD.org

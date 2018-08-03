@@ -1,9 +1,9 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/py-zope.configuration/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-zope.configuration/Makefile 475646 2018-07-29 11:46:50Z pi $
 
 PORTNAME=	zope.configuration
-PORTVERSION=	3.8.0
-PORTREVISION=	1
+PORTVERSION=	4.1.0
+PORTREVISION=	0
 CATEGORIES=	devel textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,5 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

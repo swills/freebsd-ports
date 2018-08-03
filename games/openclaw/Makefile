@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/openclaw/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/games/openclaw/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	OpenClaw
 DISTVERSION=	0.0-51
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-gbac7730
 CATEGORIES=	games
 

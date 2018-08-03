@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/xcrysden/Makefile 474971 2018-07-19 19:19:38Z yuri $
+# $FreeBSD: head/science/xcrysden/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	xcrysden
 DISTVERSION=	1.5.60
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	http://www.xcrysden.org/download/
 
@@ -12,7 +13,11 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfftw3.so:math/fftw3
-RUN_DEPENDS=	bwidget>0:x11-toolkits/bwidget
+RUN_DEPENDS=	bwidget>0:x11-toolkits/bwidget \
+		babel:science/openbabel \
+		convert:graphics/ImageMagick \
+		ppmtompeg:graphics/netpbm \
+		xwd:x11/xwd
 
 USES=		fortran gmake localbase:ldflags tcl tk
 USE_GL=		gl glu

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/znapzend/Makefile 449808 2017-09-13 17:48:05Z jlaffaye $
+# $FreeBSD: head/sysutils/znapzend/Makefile 475581 2018-07-28 14:53:38Z miwi $
 
 PORTNAME=		znapzend
-PORTVERSION=		0.17.0
+PORTVERSION=		0.18.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=		sysutils
 

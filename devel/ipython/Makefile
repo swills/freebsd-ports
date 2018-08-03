@@ -1,9 +1,8 @@
 # Created by: Dryice Liu
-# $FreeBSD: head/devel/ipython/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/ipython/Makefile 476010 2018-07-31 17:41:03Z rm $
 
 PORTNAME=	ipython
-PORTVERSION=	5.5.0
-PORTREVISION=	2
+PORTVERSION=	5.8.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

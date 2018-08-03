@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Guard/Makefile 379120 2015-02-16 21:46:14Z adamw $
+# $FreeBSD: head/devel/p5-Guard/Makefile 476227 2018-08-02 09:07:55Z amdmi3 $
 
 PORTNAME=	Guard
 PORTVERSION=	1.023
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Safe cleanup blocks
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

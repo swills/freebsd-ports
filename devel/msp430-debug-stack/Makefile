@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/msp430-debug-stack/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/msp430-debug-stack/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	msp430-debug-stack
 PORTVERSION=	3.12.000.004
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ti.com/lit/sw/slac460x/ \
 		http://www.ti.com/lit/ug/slau320ac/:doc1 \

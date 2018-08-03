@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/rspamd-devel/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/mail/rspamd-devel/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	rspamd
 PORTVERSION=	1.7.0.a2.20180302
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-devel
 

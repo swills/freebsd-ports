@@ -1,9 +1,9 @@
 # Created by: Romain Tartière <romain@blogreen.org>
-# $FreeBSD: head/audio/pavucontrol/Makefile 473769 2018-07-02 19:46:56Z romain $
+# $FreeBSD: head/audio/pavucontrol/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pavucontrol
 PORTVERSION=	3.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://freedesktop.org/software/pulseaudio/${PORTNAME}/
 

@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/chinese/ibus-libpinyin/Makefile 472665 2018-06-18 01:48:46Z linimon $
+# $FreeBSD: head/chinese/ibus-libpinyin/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ibus-libpinyin
 PORTVERSION=	1.7.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	chinese
 MASTER_SITES=	SF/libpinyin/${PORTNAME}
 

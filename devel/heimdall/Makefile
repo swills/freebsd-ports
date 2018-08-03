@@ -1,8 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/heimdall/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/heimdall/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	heimdall
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

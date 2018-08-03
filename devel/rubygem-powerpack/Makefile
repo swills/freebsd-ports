@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-powerpack/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-powerpack/Makefile 476067 2018-07-31 23:49:02Z sunpoet $
 
 PORTNAME=	powerpack
-PORTVERSION=	0.1.1
+PORTVERSION=	0.1.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

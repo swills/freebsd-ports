@@ -1,9 +1,9 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/mail/pop3vscan/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/mail/pop3vscan/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pop3vscan
 PORTVERSION=	0.4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

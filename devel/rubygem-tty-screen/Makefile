@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-screen/Makefile 464288 2018-03-12 20:40:08Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-screen/Makefile 475791 2018-07-29 19:21:45Z sunpoet $
 
 PORTNAME=	tty-screen
-PORTVERSION=	0.6.4
+PORTVERSION=	0.6.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/x11/slock/Makefile 434734 2017-02-24 17:14:38Z krion $
+# $FreeBSD: head/x11/slock/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	slock
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://dl.suckless.org/tools/
 
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		cpe
 CPE_VENDOR=	suckless
-USE_XORG=	x11 xext xproto xrandr xt
+USE_XORG=	x11 xext xorgproto xrandr xt
 MAKE_ARGS=	PREFIX="${PREFIX}" X11LIB="${LOCALBASE}/lib" \
 		X11INC="${LOCALBASE}/include" CC="${CC}" \
 		MANPREFIX="${MANPREFIX}/man"

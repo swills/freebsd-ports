@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/archivers/rvm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/archivers/rvm/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	rvm
 PORTVERSION=	1.11
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	archivers
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	an

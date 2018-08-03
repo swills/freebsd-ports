@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-BSON/Makefile 473340 2018-06-25 20:55:41Z sunpoet $
+# $FreeBSD: head/databases/p5-BSON/Makefile 475701 2018-07-29 19:11:02Z sunpoet $
 
 PORTNAME=	BSON
-PORTVERSION=	1.6.6
+PORTVERSION=	1.6.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN

@@ -1,9 +1,9 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/waffle/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/waffle/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	waffle
 PORTVERSION=	1.5.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.waffle-gl.org/files/release/waffle-${PORTVERSION}/
 

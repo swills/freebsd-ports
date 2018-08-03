@@ -1,8 +1,9 @@
-# $FreeBSD: head/www/mod_security3/Makefile 468551 2018-04-28 16:03:37Z joneum $
+# $FreeBSD: head/www/mod_security3/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mod_security
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0.2
+PORTREVISION=	1
 CATEGORIES=	www security
 PKGNAMESUFFIX=	3
 

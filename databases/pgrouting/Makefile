@@ -1,10 +1,10 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/databases/pgrouting/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/databases/pgrouting/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pgrouting
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org

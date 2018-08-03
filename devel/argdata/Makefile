@@ -1,10 +1,10 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/devel/argdata/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/argdata/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	argdata
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	ed@FreeBSD.org

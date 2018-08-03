@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/cbc/Makefile 467464 2018-04-16 07:55:42Z yuri $
+# $FreeBSD: head/math/cbc/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cbc
 DISTVERSIONPREFIX=	releases/
 DISTVERSION=	2.9.9
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

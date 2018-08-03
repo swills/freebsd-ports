@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: head/LEGAL 474291 2018-07-09 19:39:56Z trasz $
+# $FreeBSD: head/LEGAL 476231 2018-08-02 11:54:36Z rene $
 #
 #    **********************************************************************
 #    ***                      NOTE TO COMMITTERS                        ***
@@ -201,7 +201,6 @@ thundercache		www/thundercache	Commercial software with shareware license to 50 
 tinker*			biology/tinker		Distribution is prohibited
 triangle-*/*		math/triangle		No commercial use without prior arrangement with the author
 Tripwire-*-1.tar.gz	security/tripwire-131	Cannot be redistributed for more than the cost of duplication
-tripwire-*.tar.gz	security/tripwire12	Cannot be redistributed for more than the cost of duplication
 TrueCrypt*		security/truecrypt	May not be redistributed.  Must accept license to download.
 tuc-*			converters/tuc		Author does not allow CD-ROM distribution
 tw_cli-*		sysutils/tw_cli		Redistribution forbidden by license

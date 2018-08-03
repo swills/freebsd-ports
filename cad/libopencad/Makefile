@@ -1,9 +1,9 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/cad/libopencad/Makefile 456105 2017-12-12 04:35:49Z jbeich $
+# $FreeBSD: head/cad/libopencad/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libopencad
 PORTVERSION=	0.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad graphics geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org

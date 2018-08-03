@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/gwenhywfar/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/gwenhywfar/Makefile 476244 2018-08-02 18:48:22Z jhale $
 
 PORTNAME=	gwenhywfar
-PORTVERSION=	4.19.0
-PORTREVISION?=	1
+PORTVERSION=	4.20.0
+PORTREVISION?=	0
 CATEGORIES=	devel net security
-MASTER_SITES=	http://www.aquamaniac.de/sites/download/download.php?package=01&release=207&file=01&dummy=/
+MASTER_SITES=	http://www.aquamaniac.de/sites/download/download.php?package=01&release=208&file=02&dummy=/
 
 MAINTAINER?=	jhale@FreeBSD.org
 COMMENT?=	Multi-platform helper library for networking and security applications

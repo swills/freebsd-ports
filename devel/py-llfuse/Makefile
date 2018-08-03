@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-llfuse/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-llfuse/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	llfuse
 PORTVERSION=	1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

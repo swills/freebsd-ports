@@ -1,8 +1,9 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/astro/qmapshack/Makefile 474792 2018-07-17 10:19:46Z cmt $
+# $FreeBSD: head/astro/qmapshack/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	qmapshack
 PORTVERSION=	1.11.1
+PORTREVISION=	1
 CATEGORIES=	astro
 MASTER_SITES=	https://bitbucket.org/maproom/qmapshack/downloads/
 

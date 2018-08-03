@@ -1,9 +1,9 @@
 # Created by: Eric Camachat <eric@camachat.org>
-# $FreeBSD: head/security/keepassx-devel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/keepassx-devel/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	keepassx
 PORTVERSION=	2.0.3
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	security
 PKGNAMESUFFIX=	-devel
 
@@ -28,7 +28,7 @@ USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 USE_QT=		buildtools_build concurrent core gui linguisttools qmake_build \
 		testlib widgets x11extras
-USE_XORG=	ice inputproto sm x11 xcursor xext xfixes xi xrandr xrender \
+USE_XORG=	ice xorgproto sm x11 xcursor xext xfixes xi xrandr xrender \
 		xt xtst
 
 USE_GITHUB=	yes

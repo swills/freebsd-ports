@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/mythes/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/textproc/mythes/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mythes
 PORTVERSION=	1.2.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	SF/hunspell/MyThes/${PORTVERSION}/
 DIST_SUBDIR=	${PORTNAME}

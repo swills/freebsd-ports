@@ -1,8 +1,9 @@
-# $FreeBSD: head/multimedia/assimp/Makefile 461274 2018-02-08 22:09:15Z yuri $
+# $FreeBSD: head/multimedia/assimp/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	assimp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	4.1.0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@FreeBSD.org

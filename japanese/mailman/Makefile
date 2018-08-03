@@ -1,9 +1,9 @@
 # Created by: Sunagawa Koji <koj@ofug.net>
-# $FreeBSD: head/japanese/mailman/Makefile 462947 2018-02-25 10:44:59Z tota $
+# $FreeBSD: head/japanese/mailman/Makefile 475623 2018-07-29 03:40:17Z tota $
 
 PORTNAME=	mailman
 PORTVERSION=	2.1.14.j7
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	japanese mail
 MASTER_SITES=	https://docs.python.jp/contrib/mailman/_static/ \
@@ -105,7 +105,7 @@ MAIL_GID?=	courier
 
 .if ${PORT_OPTIONS:MNAMAZU2}
 RUN_DEPENDS+=	mknmz:japanese/namazu2
-EXTRA_PATCHES+=	${FILESDIR}/extra-patch-Mailman-Cgi-private.py
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-Mailman_Cgi_private.py
 .endif
 
 pre-everything::

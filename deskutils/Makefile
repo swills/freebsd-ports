@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/deskutils/Makefile 476187 2018-08-01 18:04:33Z tcberner $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -312,6 +312,7 @@
     SUBDIR += xpostitPlus
     SUBDIR += xrolo
     SUBDIR += xwrits
+    SUBDIR += zanshin
     SUBDIR += zim
     SUBDIR += znotes
     SUBDIR += zorro

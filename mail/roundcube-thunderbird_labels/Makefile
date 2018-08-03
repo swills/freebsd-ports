@@ -1,5 +1,5 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 468851 2018-05-02 16:15:59Z mat $
+# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 476008 2018-07-31 17:14:25Z pi $
 
 PORTNAME=	thunderbird_labels
 PORTVERSION=	1.1.4
@@ -22,7 +22,7 @@ NO_ARCH=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mike-kfed
-GH_PROJECT=	rcmail-thunderbird-labels
+GH_PROJECT=	roundcube-thunderbird_labels
 
 PLUGINDIR=	${WWWDIR:S,/${PORTNAME}$$,,}/roundcube/plugins/${PORTNAME}
 PLUGINDIR_REL=	${WWWDIR_REL:S,/${PORTNAME}$$,,}/roundcube/plugins/${PORTNAME}

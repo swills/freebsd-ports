@@ -1,9 +1,9 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/wyrmgus/Makefile 469077 2018-05-04 21:51:11Z amdmi3 $
+# $FreeBSD: head/games/wyrmgus/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	wyrmgus
 PORTVERSION=	3.3.1
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games devel
 

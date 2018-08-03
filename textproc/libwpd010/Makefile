@@ -1,9 +1,9 @@
 # Created by: reed@pugetsoundtechnology.com
-# $FreeBSD: head/textproc/libwpd010/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/textproc/libwpd010/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libwpd
 PORTVERSION=	0.10.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	010

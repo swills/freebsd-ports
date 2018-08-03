@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/libcmis/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/net/libcmis/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libcmis
 PORTVERSION=	0.5.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net devel
 MASTER_SITES=	http://dev-www.libreoffice.org/src/
 

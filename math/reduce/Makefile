@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/reduce/Makefile 473012 2018-06-22 01:15:19Z linimon $
+# $FreeBSD: head/math/reduce/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	reduce
 PORTVERSION=	20180117
+PORTREVISION=	1
 CATEGORIES=	math lang
 MASTER_SITES=	SF/${PORTNAME}-algebra/${SFSUBDIR}/
 DISTNAME=	Reduce-svn4372-src
@@ -35,7 +36,7 @@ CPPFLAGS+=	-I${NCURSESINC}
 HAS_CONFIGURE=	yes
 ALL_TARGET=
 
-USE_XORG=	x11 xext xproto xft
+USE_XORG=	x11 xext xorgproto xft
 USES+=		jpeg
 CONFIGURE_ARGS=	--with-csl
 CPPFLAGS+=	`freetype-config --cflags`

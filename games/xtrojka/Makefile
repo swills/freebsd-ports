@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/xtrojka/Makefile 372029 2014-11-01 19:04:18Z antoine $
+# $FreeBSD: head/games/xtrojka/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xtrojka
 PORTVERSION=	1.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SUNSITE/games/arcade/tetris
 DISTNAME=	${PORTNAME}${PORTVERSION:C/\.//g}
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION:C/\.//g}
 MAINTAINER=	ports@edwinm.ik.nu
 COMMENT=	Game of skill similar to T*tris
 
-USE_XORG=	x11 xt xproto xaw xmu xext
+USE_XORG=	x11 xt xorgproto xaw xmu xext
 MAKE_JOBS_UNSAFE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}
 INSTALL_TARGET=	install PREFIX=${STAGEDIR}${PREFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-parser/Makefile 467189 2018-04-12 18:33:33Z sunpoet $
+# $FreeBSD: head/devel/rubygem-parser/Makefile 476065 2018-07-31 23:48:51Z sunpoet $
 
 PORTNAME=	parser
-PORTVERSION=	2.5.1.0
+PORTVERSION=	2.5.1.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

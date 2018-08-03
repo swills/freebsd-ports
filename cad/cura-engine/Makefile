@@ -1,8 +1,8 @@
-# $FreeBSD: head/cad/cura-engine/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/cura-engine/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	CuraEngine
 PORTVERSION=	15.04
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad
 
 MAINTAINER=	cederom@tlen.pl

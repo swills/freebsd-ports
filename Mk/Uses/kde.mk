@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/kde.mk 474977 2018-07-19 20:45:03Z tcberner $
+# $FreeBSD: head/Mk/Uses/kde.mk 476229 2018-08-02 10:22:44Z tcberner $
 #
 # Provides support for KDE and KF5-based ports.
 #
@@ -802,7 +802,7 @@ kdepim-apps-libs_PORT=	deskutils/kdepim-apps-libs
 kdepim-apps-libs_LIB=	libKF5SendLater.so
 
 kdepim-runtime5_PORT=	deskutils/kdepim-runtime
-kdepim-runtime5_LIB=	libakonadi-filestore.so.5
+kdepim-runtime5_PATH=	${KDE_PREFIX}/lib/sasl2/libkdexoauth2.so
 
 kontactinterface_PORT=	net/kontactinterface
 kontactinterface_LIB=	libKF5KontactInterface.so

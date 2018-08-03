@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/elmerfem/Makefile 466257 2018-04-02 20:02:19Z adridg $
+# $FreeBSD: head/cad/elmerfem/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	elmerfem
 PORTVERSION=	8.3.20170524
+PORTREVISION=	1
 CATEGORIES=	cad science
 
 MAINTAINER=	ports@FreeBSD.org

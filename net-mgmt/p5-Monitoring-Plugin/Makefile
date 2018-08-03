@@ -1,8 +1,8 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/net-mgmt/p5-Monitoring-Plugin/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-mgmt/p5-Monitoring-Plugin/Makefile 475994 2018-07-31 12:13:08Z mat $
 
 PORTNAME=	Monitoring-Plugin
-PORTVERSION=	0.39
+PORTVERSION=	0.40
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:NIERLEIN

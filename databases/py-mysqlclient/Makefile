@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-mysqlclient/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-mysqlclient/Makefile 475576 2018-07-28 14:44:01Z miwi $
 
 PORTNAME=	mysqlclient
-DISTVERSION=	1.3.12
+DISTVERSION=	1.3.13
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

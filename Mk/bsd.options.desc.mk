@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 467512 2018-04-16 18:33:25Z sunpoet $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 475657 2018-07-29 12:36:50Z dbaio $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -485,6 +485,9 @@ TK_DESC?=		Tk GUI toolkit support
 TLS_DESC?=		Secure network connection support via TLS
 TOMCAT6_DESC?=		Tomcat 6.x support
 TOMCAT7_DESC?=		Tomcat 7.x support
+TOMCAT8_DESC?=		Tomcat 8.x support
+TOMCAT85_DESC?=		Tomcat 8.5.x support
+TOMCAT9_DESC?=		Tomcat 9.x support
 TOOLAME_DESC?=		TooLAME MP2 audio encoder support
 TREMOR_DESC?=		Tremor audio decoder support
 TTA_DESC?=		TTA lossless audio format support

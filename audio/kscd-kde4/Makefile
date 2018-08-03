@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/audio/kscd-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/kscd-kde4/Makefile 476022 2018-07-31 21:11:24Z jhale $
 
 PORTNAME=	kscd
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,7 +11,8 @@ COMMENT=	CD Player for KDE
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libmusicbrainz3.so:audio/libmusicbrainz3
+LIB_DEPENDS=	libdiscid.so:audio/libdiscid \
+		libmusicbrainz5.so:audio/libmusicbrainz5
 
 USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4

@@ -1,9 +1,9 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/net-im/diligent/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/diligent/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	diligent
 PORTVERSION=	0.2.7
-PORTREVISION=	4
+PORTREVISION=	5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im
 

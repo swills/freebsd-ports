@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-jekyll-redirect-from/Makefile 456012 2017-12-11 10:44:28Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-redirect-from/Makefile 476111 2018-07-31 23:53:57Z sunpoet $
 
 PORTNAME=	jekyll-redirect-from
-PORTVERSION=	0.13.0
+PORTVERSION=	0.14.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

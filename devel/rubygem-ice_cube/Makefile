@@ -1,8 +1,8 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/devel/rubygem-ice_cube/Makefile 445524 2017-07-11 17:00:52Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ice_cube/Makefile 476059 2018-07-31 23:48:19Z sunpoet $
 
 PORTNAME=	ice_cube
-PORTVERSION=	0.16.2
+PORTVERSION=	0.16.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

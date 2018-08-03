@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 475144 2018-07-23 03:19:26Z yuri $
+# $FreeBSD: head/security/Makefile 476233 2018-08-02 12:12:40Z rene $
 #
 
     COMMENT = Security tools
@@ -293,6 +293,7 @@
     SUBDIR += john
     SUBDIR += kbfs
     SUBDIR += kc
+    SUBDIR += kc24
     SUBDIR += kdbx-viewer
     SUBDIR += kedpm
     SUBDIR += keepass
@@ -913,11 +914,15 @@
     SUBDIR += py-certbot-dns-digitalocean
     SUBDIR += py-certbot-dns-dnsimple
     SUBDIR += py-certbot-dns-dnsmadeeasy
+    SUBDIR += py-certbot-dns-gehirn
     SUBDIR += py-certbot-dns-google
+    SUBDIR += py-certbot-dns-linode
     SUBDIR += py-certbot-dns-luadns
     SUBDIR += py-certbot-dns-nsone
+    SUBDIR += py-certbot-dns-ovh
     SUBDIR += py-certbot-dns-rfc2136
     SUBDIR += py-certbot-dns-route53
+    SUBDIR += py-certbot-dns-sakuracloud
     SUBDIR += py-certbot-nginx
     SUBDIR += py-certifi
     SUBDIR += py-certstream
@@ -1005,10 +1010,10 @@
     SUBDIR += py-pyscard
     SUBDIR += py-pysha3
     SUBDIR += py-python-gnupg
+    SUBDIR += py-python-jose
     SUBDIR += py-python-nss
     SUBDIR += py-python-openid
     SUBDIR += py-python-registry
-    SUBDIR += py-python-social-auth
     SUBDIR += py-python3-openid
     SUBDIR += py-pywinrm
     SUBDIR += py-rekall
@@ -1155,7 +1160,6 @@
     SUBDIR += rubygem-razorback-scriptNugget
     SUBDIR += rubygem-rbnacl
     SUBDIR += rubygem-rbnacl-libsodium
-    SUBDIR += rubygem-rbnacl4
     SUBDIR += rubygem-recog
     SUBDIR += rubygem-rex-arch
     SUBDIR += rubygem-rex-bin_tools
@@ -1301,7 +1305,6 @@
     SUBDIR += trinokiller
     SUBDIR += tripwire
     SUBDIR += tripwire-131
-    SUBDIR += tripwire12
     SUBDIR += trousers
     SUBDIR += truecrypt
     SUBDIR += tsshbatch

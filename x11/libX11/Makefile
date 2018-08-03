@@ -1,8 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libX11/Makefile 434981 2017-02-27 17:40:43Z rezny $
+# $FreeBSD: head/x11/libX11/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	libX11
 PORTVERSION=	1.6.5
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	x11
 
@@ -13,9 +14,7 @@ LICENSE=	MIT
 
 USES=		cpe perl5
 XORG_CAT=	lib
-USE_XORG=	bigreqsproto xau xcmiscproto xdmcp xextproto xtrans \
-		kbproto:both inputproto xf86bigfontproto xproto:both \
-		xcb
+USE_XORG=	xau xdmcp xtrans xorgproto xcb
 USE_PERL5=	build
 CPE_VENDOR=	x
 

@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-yesod-bin/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-yesod-bin/Makefile 475642 2018-07-29 10:40:28Z arrowd $
 
 PORTNAME=	yesod-bin
-PORTVERSION=	1.5.2.3
-PORTREVISION=	3
+PORTVERSION=	1.6.0.3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -24,8 +23,6 @@ USE_CABAL=	async attoparsec>=0.10 base64-bytestring \
 
 EXECUTABLE=	yesod
 STANDALONE=	yes
-
-IGNORE=		Doesn't build with recent Cabal
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

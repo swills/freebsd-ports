@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/ufoai/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/games/ufoai/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ufoai
 PORTVERSION=	2.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/UFO_AI%202.x/${PORTVERSION}
 DISTNAME=	${PORTNAME:S/$/-/}${PORTVERSION}-source

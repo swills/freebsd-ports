@@ -1,9 +1,9 @@
 # Created by: Guillaume Paquet <amyfoub@gmail.com>
-# $FreeBSD: head/deskutils/xpad3/Makefile 375843 2014-12-30 18:36:31Z jgh $
+# $FreeBSD: head/deskutils/xpad3/Makefile 475445 2018-07-27 15:56:57Z jgh $
 
 PORTNAME=	xpad
 PORTVERSION=	3.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	deskutils
 MASTER_SITES=	http://launchpad.net/xpad/stable/${PORTVERSION}/+download/
 PKGNAMESUFFIX=	3
@@ -13,14 +13,17 @@ COMMENT=	Virtual note-pad system for your X11 desktop
 
 LICENSE=	GPLv3
 
+LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
+
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
 
 CONFLICTS_INSTALL=	xpad-[0-9]*
 
-USE_XORG=	x11 sm
-USE_GNOME=	gtk20 intltool
 USES=	pkgconfig gmake tar:bzip2
+USE_XORG=	x11 sm ice
+USE_GNOME=	gtk20 intltool cairo
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
 
@@ -31,10 +34,8 @@ NLS_CONFIGURE_ENABLE=	nls
 
 .include <bsd.port.options.mk>
 
-post-patch:
-.if ! ${PORT_OPTIONS:MNLS}
+post-patch-NLS-off:
 	@${REINPLACE_CMD} -e 's|SUBDIRS = autopackage doc src images po|SUBDIRS = autopackage doc src images|' \
 		${WRKSRC}/Makefile.in
-.endif
 
 .include <bsd.port.mk>

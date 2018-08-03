@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/liquibase/Makefile 427548 2016-12-02 09:21:58Z mat $
+# $FreeBSD: head/databases/liquibase/Makefile 475607 2018-07-28 20:03:51Z joneum $
 
 PORTNAME=	liquibase
-PORTVERSION=	3.4.1
+PORTVERSION=	3.6.2
 DISTVERSIONSUFFIX=	-bin
 CATEGORIES=	databases java
 MASTER_SITES=	https://github.com/liquibase/liquibase/releases/download/liquibase-parent-${PORTVERSION}/

@@ -1,8 +1,9 @@
 # Created by: Guerkan Karaman <gk.freebsd@googlemail.com>
-# $FreeBSD: head/net/ipxe/Makefile 472124 2018-06-10 10:02:55Z tobik $
+# $FreeBSD: head/net/ipxe/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ipxe
 PORTVERSION=	20180514
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	tobik@FreeBSD.org

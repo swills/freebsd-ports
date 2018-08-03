@@ -1,8 +1,9 @@
 # Created by: Pedro F. Giffuni
-# $FreeBSD: head/science/tfel/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/science/tfel/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	tfel
 PORTVERSION=	3.1.2
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	SF/${PORTNAME}/
 PKGNAMESUFFIX=	-mfront

@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/multimedia/dvdstyler/Makefile 468955 2018-05-03 18:38:06Z jbeich $
+# $FreeBSD: head/multimedia/dvdstyler/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	dvdstyler
 PORTVERSION=	2.9.6
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	SF

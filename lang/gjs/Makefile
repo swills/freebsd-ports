@@ -1,9 +1,9 @@
 # Created by: Pawel Worach <pawel.worach@gmail.com>
-# $FreeBSD: head/lang/gjs/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/gjs/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gjs
 PORTVERSION=	1.44.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

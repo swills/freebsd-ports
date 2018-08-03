@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fugit/Makefile 470066 2018-05-15 23:58:38Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fugit/Makefile 475931 2018-07-31 00:03:10Z sunpoet $
 
 PORTNAME=	fugit
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -18,5 +18,8 @@ RUN_DEPENDS=	rubygem-et-orbi>=1.1.1:devel/rubygem-et-orbi \
 NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
+
+# Disable rdoc
+OPTIONS_EXCLUDE=DOCS
 
 .include <bsd.port.mk>

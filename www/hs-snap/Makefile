@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-snap/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-snap/Makefile 475642 2018-07-29 10:40:28Z arrowd $
 
 PORTNAME=	snap
-PORTVERSION=	1.0.0.1
-PORTREVISION=	4
+PORTVERSION=	1.1.1.0
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -15,8 +14,6 @@ USE_CABAL=	aeson attoparsec cereal clientsession configurator \
 		map-syntax monad-control mtl mwc-random pwstore-fast \
 		snap-core snap-server transformers-base \
 		unordered-containers xmlhtml
-
-IGNORE=		Doesn't build with recent GHC version
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

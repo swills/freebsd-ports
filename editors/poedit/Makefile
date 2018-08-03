@@ -1,10 +1,10 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/editors/poedit/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/editors/poedit/Makefile 475857 2018-07-29 22:18:44Z gerald $
 #    $MCom: ports/editors/poedit/Makefile,v 1.2 2006/10/05 07:03:09 mezz Exp $
 
 PORTNAME=	poedit
 PORTVERSION=	1.8.4
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	editors
 MASTER_SITES=	https://github.com/vslavik/${PORTNAME}/releases/download/v${PORTVERSION}-oss/
 

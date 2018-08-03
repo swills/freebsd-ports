@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-multidimensional/Makefile 468484 2018-04-27 18:52:35Z sunpoet $
+# $FreeBSD: head/devel/p5-multidimensional/Makefile 475718 2018-07-29 19:12:32Z sunpoet $
 
 PORTNAME=	multidimensional
 PORTVERSION=	0.014
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-B-Hooks-OP-Check>=0.19:devel/p5-B-Hooks-OP-Check
-RUN_DEPENDS:=	${BUILD_DEPENDS}
-BUILD_DEPENDS+=	p5-ExtUtils-Depends>=0:devel/p5-ExtUtils-Depends
+BUILD_DEPENDS=	p5-ExtUtils-Depends>=0:devel/p5-ExtUtils-Depends \
+		${RUN_DEPENDS}
+RUN_DEPENDS=	p5-B-Hooks-OP-Check>=0.19:devel/p5-B-Hooks-OP-Check
 
 USE_PERL5=	configure
 USES=		perl5

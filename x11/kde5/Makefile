@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/kde5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/kde5/Makefile 476175 2018-08-01 12:53:41Z tcberner $
 
 PORTNAME=	kde5
 DISTVERSION=	${KDE_PLASMA_VERSION}.${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde # kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -10,10 +11,10 @@ COMMENT=	KDE Plasma Desktop and Applications (current)
 LICENSE=	LGPL20
 
 RUN_DEPENDS=	kde-baseapps>=0:x11/kde-baseapps \
-		kwalletmanager5:security/kwalletmanager
+		kwalletmanager5:security/kwalletmanager \
+		plasma5-plasma>=0:x11/plasma5-plasma
 
 USES=		kde:5 metaport qt:5
-USE_KDE=	plasma-desktop_run
 USE_QT=		# empty
 
 OPTIONS_DEFINE=	KDEADMIN KDEEDU \

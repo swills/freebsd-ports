@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/deskutils/taskwarrior/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/deskutils/taskwarrior/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	taskwarrior
 PORTVERSION=	2.5.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	deskutils
 
 MAINTAINER=	skreuzer@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_dirtyread/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pg_dirtyread/Makefile 475862 2018-07-30 06:11:54Z joneum $
 
 PORTNAME=	pg_dirtyread
-PORTVERSION=	1.2
+PORTVERSION=	2.0
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
@@ -20,6 +20,8 @@ WANT_PGSQL=	server
 
 PLIST_FILES=	lib/postgresql/pg_dirtyread.so \
 		share/postgresql/extension/pg_dirtyread--1.0.sql \
+		share/postgresql/extension/pg_dirtyread--1.0--2.sql \
+		share/postgresql/extension/pg_dirtyread--2.sql \
 		share/postgresql/extension/pg_dirtyread.control
 
 post-install:

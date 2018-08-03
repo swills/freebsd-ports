@@ -1,8 +1,9 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/textproc/ansifilter/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/ansifilter/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ansifilter
 PORTVERSION=	2.10
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.andre-simon.de/zip/
 

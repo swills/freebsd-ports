@@ -1,8 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/rage/Makefile 474282 2018-07-09 19:13:41Z gblach $
+# $FreeBSD: head/multimedia/rage/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	rage
 PORTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	multimedia enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/apps/${PORTNAME}/
 

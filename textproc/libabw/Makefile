@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/libabw/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/textproc/libabw/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libabw
 PORTVERSION=	0.1.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	LODEV/${PORTNAME}
 

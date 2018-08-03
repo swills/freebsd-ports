@@ -1,9 +1,9 @@
 # Created by: Martin Dieringer <martin.dieringe@gmx.de>
-# $FreeBSD: head/cad/repsnapper/Makefile 472665 2018-06-18 01:48:46Z linimon $
+# $FreeBSD: head/cad/repsnapper/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	repsnapper
 DISTVERSION=	2.5a4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	cad
 
 MAINTAINER=	martin.dieringer@gmx.de

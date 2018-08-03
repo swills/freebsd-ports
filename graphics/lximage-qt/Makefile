@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/lximage-qt/Makefile 474277 2018-07-09 18:03:14Z jsm $
+# $FreeBSD: head/graphics/lximage-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lximage-qt
 PORTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	LXQT
 

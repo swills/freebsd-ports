@@ -1,8 +1,9 @@
 # Created by: jabley@clear.co.nz
-# $FreeBSD: head/x11-servers/Xfstt/Makefile 436327 2017-03-17 09:01:54Z amdmi3 $
+# $FreeBSD: head/x11-servers/Xfstt/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xfstt
 PORTVERSION=	1.9.2
+PORTREVISION=	1
 CATEGORIES=	x11-servers
 MASTER_SITES=	http://archive.hadrons.org/software/xfstt/
 
@@ -13,7 +14,7 @@ LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
 USES=		pkgconfig tar:xz
-USE_XORG=	fontsproto xproto
+USE_XORG=	xorgproto
 USE_RC_SUBR=	xfstt
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var --disable-nls

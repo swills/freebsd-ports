@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qtermwidget/Makefile 474277 2018-07-09 18:03:14Z jsm $
+# $FreeBSD: head/x11-toolkits/qtermwidget/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	qtermwidget
 PORTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	LXQT
 

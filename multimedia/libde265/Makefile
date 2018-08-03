@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/libde265/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/multimedia/libde265/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libde265
 PORTVERSION=	1.0.2
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia
 

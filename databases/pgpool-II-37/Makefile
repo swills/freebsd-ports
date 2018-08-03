@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pgpool-II-37/Makefile 473432 2018-06-27 11:03:24Z tz $
+# $FreeBSD: head/databases/pgpool-II-37/Makefile 475978 2018-07-31 08:17:33Z tz $
 
 PORTNAME=	pgpool-II
-PORTVERSION=	3.7.4
+PORTVERSION=	3.7.5
 CATEGORIES=	databases
 MASTER_SITES=	http://www.pgpool.net/mediawiki/images/
 PKGNAMESUFFIX=	37

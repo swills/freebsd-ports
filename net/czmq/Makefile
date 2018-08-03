@@ -1,11 +1,10 @@
 # Created by: Andrew Thompson <thompsa@FreeBSD.org>
-# $FreeBSD: head/net/czmq/Makefile 448460 2017-08-21 10:35:42Z koobs $
+# $FreeBSD: head/net/czmq/Makefile 475964 2018-07-31 01:00:40Z koobs $
 
 PORTNAME=	czmq
-PORTVERSION=	3.0.2
-PORTREVISION=	1
+PORTVERSION=	4.1.1
 CATEGORIES=	net
-MASTER_SITES=	http://download.zeromq.org/
+MASTER_SITES=	https://github.com/zeromq/${PORTNAME}/releases/download/v${PORTVERSION}/
 
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	High-level C Binding for ZeroMQ
@@ -20,12 +19,12 @@ USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libzmq=${LOCALBASE} \
-		--with-pkgconfigdir=${LOCALBASE}/libdata/pkgconfig
+		--with-pkgconfigdir=${LOCALBASE}/libdata/pkgconfig \
+		--without-docs
 
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
 
-MAKE_ENV=	V=1
-CPPFLAGS+=	-Wno-error
+CFLAGS+=	-Wno-error
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 473274 2018-06-24 20:28:18Z yuri $
+# $FreeBSD: head/comms/Makefile 476147 2018-08-01 03:43:16Z loader $
 #
 
     COMMENT = Communication utilities
@@ -134,7 +134,9 @@
     SUBDIR += picocom
     SUBDIR += pr
     SUBDIR += predict
+    SUBDIR += py-adafruit-ampy
     SUBDIR += py-bulksms
+    SUBDIR += py-esptool
     SUBDIR += py-gammu
     SUBDIR += py-hidapi
     SUBDIR += py-libconcord
@@ -204,7 +206,6 @@
     SUBDIR += xmorse
     SUBDIR += xnec2c
     SUBDIR += xnecview
-    SUBDIR += xwota
     SUBDIR += yaac
     SUBDIR += yagiuda
     SUBDIR += yaps
