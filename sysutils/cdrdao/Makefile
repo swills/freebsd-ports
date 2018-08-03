@@ -1,9 +1,9 @@
 # Created by: futatuki
-# $FreeBSD: head/sysutils/cdrdao/Makefile 472345 2018-06-13 21:40:03Z marius $
+# $FreeBSD: head/sysutils/cdrdao/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME?=	cdrdao
 PORTVERSION=	1.2.4
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	sysutils audio
 MASTER_SITES=	SF/cdrdao
 DISTNAME=	cdrdao-${PORTVERSION}

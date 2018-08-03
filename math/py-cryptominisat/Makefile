@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-cryptominisat/Makefile 472633 2018-06-17 20:36:22Z arrowd $
+# $FreeBSD: head/math/py-cryptominisat/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cryptominisat
 DISTVERSION=	5.6.1
+PORTREVISION=	1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

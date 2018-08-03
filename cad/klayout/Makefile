@@ -1,8 +1,8 @@
-# $FreeBSD: head/cad/klayout/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/cad/klayout/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	klayout
 PORTVERSION=	0.24.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad
 MASTER_SITES=	http://www.klayout.org/downloads/source/
 

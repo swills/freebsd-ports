@@ -1,9 +1,9 @@
 # Created by: vanilla@
-# $FreeBSD: head/databases/postgresql-plv8js/Makefile 453809 2017-11-09 14:13:44Z vanilla $
+# $FreeBSD: head/databases/postgresql-plv8js/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	plv8
 PORTVERSION=	1.4.8
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-

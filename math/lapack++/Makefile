@@ -1,9 +1,9 @@
 # Created by: NAKATA Maho <chat95@mbox.kyoto-inet.or.jp>
-# $FreeBSD: head/math/lapack++/Makefile 464164 2018-03-11 11:20:43Z rene $
+# $FreeBSD: head/math/lapack++/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lapack++
 PORTVERSION=	2.5.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	SF/lapackpp \
 		http://math.nist.gov/lapack++/:doc

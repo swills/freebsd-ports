@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/flukz/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/flukz/Makefile 475867 2018-07-30 08:11:14Z tobik $
 
 PORTNAME=	flukz
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://download.tuxfamily.org/${PORTNAME}/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -10,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Vertically scrolling shoot'em up
 
 USES=		qmake qt:4
-USE_QT=		multimedia network moc_build rcc_build
+USE_QT=		corelib gui multimedia network moc_build rcc_build
 
 DESKTOP_ENTRIES=	Flukz "" ${PORTNAME} \
 			${PORTNAME} "Game;ArcadeGame;" true

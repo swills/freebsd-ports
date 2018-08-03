@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/lang/ghc/bsd.cabal.mk 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/lang/ghc/bsd.cabal.mk 475610 2018-07-28 20:09:01Z arrowd $
 #
 # bsd.cabal.mk -- Support for ports based on Haskell Cabal.
 #
@@ -325,7 +325,7 @@ add-plist-post: add-plist-cabal
 add-plist-cabal:
 
 .  if !defined(STANDALONE)
-	@${ECHO_CMD} '@postunexec ${LOCALBASE}/bin/ghc-pkg unregister --force ${PORTNAME}-${PORTVERSION}' >> ${TMPPLIST}
+	@${ECHO_CMD} '@postunexec ${LOCALBASE}/bin/ghc-pkg unregister --no-user-package-db --force ${PORTNAME}-${PORTVERSION}' >> ${TMPPLIST}
 .  endif
 
 .  if defined(HADDOCK_AVAILABLE) && ${PORT_OPTIONS:MDOCS}

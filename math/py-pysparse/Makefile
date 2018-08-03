@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-pysparse/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-pysparse/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pysparse
 PORTVERSION=	1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

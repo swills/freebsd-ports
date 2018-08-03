@@ -1,9 +1,9 @@
 # Created by: Oliver Braun <obraun@informatik.unibw-muenchen.de>
-# $FreeBSD: head/lang/nhc98/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/nhc98/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	nhc98
 PORTVERSION=	1.22
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	lang haskell
 MASTER_SITES=	http://haskell.org/${PORTNAME}/
 DISTFILES=	${PORTNAME}src-${PORTVERSION}${EXTRACT_SUFX}

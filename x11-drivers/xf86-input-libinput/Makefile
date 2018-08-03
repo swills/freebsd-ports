@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-input-libinput/Makefile 435963 2017-03-11 21:26:06Z rezny $
+# $FreeBSD: head/x11-drivers/xf86-input-libinput/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-input-libinput
 PORTVERSION=	0.25.0
+PORTREVISION=	1
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

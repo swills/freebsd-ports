@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net/uget/Makefile 474815 2018-07-17 17:31:28Z joneum $
+# $FreeBSD: head/net/uget/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	uget
 PORTVERSION=	2.2.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	SF/urlget/${PORTNAME}%20%28stable%29/${PORTVERSION}
 

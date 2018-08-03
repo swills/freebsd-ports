@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/pixd/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/graphics/pixd/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pixd
 DISTVERSIONPREFIX=v
 DISTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	mail@dbalan.in

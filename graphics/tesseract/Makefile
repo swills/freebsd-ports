@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/tesseract/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/graphics/tesseract/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	tesseract
 PORTVERSION=	3.05.02
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	pkubaj@anongoth.pl

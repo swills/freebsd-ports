@@ -1,8 +1,9 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/archivers/innoextract/Makefile 472706 2018-06-18 19:03:03Z linimon $
+# $FreeBSD: head/archivers/innoextract/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	innoextract
 PORTVERSION=	1.7
+PORTREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	http://constexpr.org/innoextract/files/
 

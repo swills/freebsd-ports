@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-input-joystick/Makefile 431440 2017-01-13 23:25:56Z bapt $
+# $FreeBSD: head/x11-drivers/xf86-input-joystick/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-input-joystick
 PORTVERSION=	1.6.3
+PORTREVISION=	1
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

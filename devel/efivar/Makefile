@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/devel/efivar/Makefile 465032 2018-03-19 20:39:29Z linimon $
+# $FreeBSD: head/devel/efivar/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	efivar
 PORTVERSION=	0.15
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

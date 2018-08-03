@@ -1,10 +1,10 @@
 # Created by: Adam Weinberger
-# $FreeBSD: head/audio/cmus/Makefile 473386 2018-06-26 14:36:48Z tobik $
+# $FreeBSD: head/audio/cmus/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cmus
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.8.0-rc0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	audio
 DIST_SUBDIR=	cmus
 

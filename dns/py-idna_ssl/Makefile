@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/py-idna_ssl/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/dns/py-idna_ssl/Makefile 475754 2018-07-29 19:17:23Z sunpoet $
 
 PORTNAME=	idna_ssl
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

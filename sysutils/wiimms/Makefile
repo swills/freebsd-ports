@@ -1,9 +1,9 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/sysutils/wiimms/Makefile 470446 2018-05-20 09:34:11Z amdmi3 $
+# $FreeBSD: head/sysutils/wiimms/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	wiimms
 DISTVERSION=	2.23a
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils
 MASTER_SITES=	http://gugus69.free.fr/wiimms/ \
 		LOCAL/martymac

@@ -1,9 +1,10 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/sayonara/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/sayonara/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	sayonara
 DISTVERSIONPREFIX=	player-
 DISTVERSION=	1.0.0
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-git1-20171231
 CATEGORIES=	audio
 MASTER_SITES=	http://www.sayonara-player.com/sw/

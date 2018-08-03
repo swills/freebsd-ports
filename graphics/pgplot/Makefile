@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/graphics/pgplot/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/pgplot/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	pgplot
 PORTVERSION=	5.2.2
-PORTREVISION=	21
+PORTREVISION=	23
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.astro.caltech.edu/pub/pgplot/
 DISTNAME=	${PORTNAME}${PORTVERSION:R}
@@ -17,7 +17,7 @@ MAKE_JOBS_UNSAFE=	yes
 
 USES=		fortran shebangfix
 USE_LDCONFIG=	yes
-USE_XORG=	x11 xproto xt
+USE_XORG=	x11 xorgproto xt
 
 MAKE_ENV=	SSP_CFLAGS=
 SHEBANG_FILES=	makehtml maketex

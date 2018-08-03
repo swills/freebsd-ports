@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/devhelp/Makefile 466598 2018-04-05 20:13:48Z tobik $
+# $FreeBSD: head/devel/devhelp/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	devhelp
 PORTVERSION=	3.24.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

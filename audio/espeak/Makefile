@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/audio/espeak/Makefile 459230 2018-01-17 09:21:28Z tcberner $
+# $FreeBSD: head/audio/espeak/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	espeak
 PORTVERSION=	1.48.04
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source

@@ -1,8 +1,8 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	eiskaltdcpp
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX=	-qt
 

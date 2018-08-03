@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/dkh/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/dkh/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	dkh
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

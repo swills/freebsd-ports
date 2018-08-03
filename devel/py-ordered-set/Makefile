@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-ordered-set/Makefile 473333 2018-06-25 19:33:10Z antoine $
+# $FreeBSD: head/devel/py-ordered-set/Makefile 475514 2018-07-28 09:39:28Z antoine $
 
 PORTNAME=	ordered-set
-PORTVERSION=	3.0.0
+PORTVERSION=	3.0.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

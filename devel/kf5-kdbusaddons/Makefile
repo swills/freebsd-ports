@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/kf5-kdbusaddons/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kf5-kdbusaddons/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kdbusaddons
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

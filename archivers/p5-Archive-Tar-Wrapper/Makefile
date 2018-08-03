@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Tar-Wrapper/Makefile 473466 2018-06-27 23:33:38Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Tar-Wrapper/Makefile 475563 2018-07-28 13:17:19Z sunpoet $
 
 PORTNAME=	Archive-Tar-Wrapper
-PORTVERSION=	0.29
+PORTVERSION=	0.33
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,6 +17,7 @@ BUILD_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which \
 		p5-IPC-Run>=0:devel/p5-IPC-Run \
 		p5-Log-Log4perl>=0:devel/p5-Log-Log4perl
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Dumbbench>=0.111:benchmarks/p5-Dumbbench
 
 NO_ARCH=	yes
 USE_PERL5=	configure

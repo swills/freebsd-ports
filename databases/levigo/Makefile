@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/levigo/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/levigo/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	levigo
 PORTVERSION=	20150216
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases
 
 MAINTAINER=	cheffo@freebsd-bg.org

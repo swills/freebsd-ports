@@ -1,8 +1,9 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/security/cyberchef/Makefile 432355 2017-01-24 16:25:15Z dvl $
+# $FreeBSD: head/security/cyberchef/Makefile 475389 2018-07-26 17:05:19Z dvl $
 
 PORTNAME=	cyberchef
-PORTVERSION=	0.0.0.20170124
+PORTVERSION=	7.11.1
+DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
 MAINTAINER=	dvl@FreeBSD.org
@@ -14,13 +15,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	gchq
 GH_PROJECT=	CyberChef
-GH_TAGNAME=	3c3f5d9
 
 NO_BUILD=       yes
 NO_ARCH=        yes
 
 do-install:
-	(cd ${WRKSRC}/build/prod && ${COPYTREE_SHARE} \*       ${STAGEDIR}${WWWDIR}/)
-	(cd ${WRKSRC}/build/prod && ${INSTALL_DATA}  .htaccess ${STAGEDIR}${WWWDIR}/)
+	(cd ${WRKSRC}/src/web/static && ${COPYTREE_SHARE} images       ${STAGEDIR}${WWWDIR}/)
+	${INSTALL} ${WRKSRC}/src/web/html/index.html                   ${STAGEDIR}${WWWDIR}/
+	
 
 .include <bsd.port.mk>

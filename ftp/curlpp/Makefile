@@ -1,9 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/ftp/curlpp/Makefile 471501 2018-06-03 18:16:51Z sunpoet $
+# $FreeBSD: head/ftp/curlpp/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	curlpp
 PORTVERSION=	0.8.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	ftp
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -29,7 +30,7 @@ post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/
 	${INSTALL_DATA} ${WRKSRC}/doc/guide.pdf ${STAGEDIR}${DOCSDIR}/
 
-x-post-install-EXAMPLES-on:
+post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	${INSTALL_DATA} ${WRKSRC}/examples/README ${WRKSRC}/examples/example*.cpp ${STAGEDIR}${EXAMPLESDIR}/
 

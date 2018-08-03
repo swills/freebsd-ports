@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/xd3d/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/xd3d/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	xd3d
 PORTVERSION=	8.3.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics math
 MASTER_SITES=	http://www.cmap.polytechnique.fr/~jouve/xd3d/
 

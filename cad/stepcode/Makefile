@@ -1,9 +1,9 @@
-# $FreeBSD: head/cad/stepcode/Makefile 464438 2018-03-13 22:24:58Z fernape $
+# $FreeBSD: head/cad/stepcode/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	stepcode
 PORTVERSION=	0.8
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	cad
 
 MAINTAINER=	fernape@FreeBSD.org

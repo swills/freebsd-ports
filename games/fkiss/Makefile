@@ -1,9 +1,9 @@
 # Created by: Seiichirou Hiraoka <flathill@flathill.gr.jp>
-# $FreeBSD: head/games/fkiss/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/games/fkiss/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	fkiss
 PORTVERSION=	0.33a
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://www2s.biglobe.ne.jp/~yav/soft/fkiss/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/a//}
@@ -25,7 +25,7 @@ BROKEN_armv7=		fails to compile: passing char * to parameter of incompatible typ
 EXTRA_PATCHES=	${WRKDIR}/${PORTNAME}-${PORTVERSION}.diff
 
 USES=		gmake
-USE_XORG=	x11 xproto
+USE_XORG=	x11 xorgproto
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	ACLOCAL="${TRUE}" AUTOCONF="${TRUE}" AUTOHEADER="${TRUE}" \
 		AUTOMAKE="${TRUE}"

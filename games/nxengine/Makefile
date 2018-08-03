@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/nxengine/Makefile 473012 2018-06-22 01:15:19Z linimon $
+# $FreeBSD: head/games/nxengine/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	nxengine
 PORTVERSION=	2.6.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 MASTER_SITES+=	https://www.cavestory.org/downloads/:data \

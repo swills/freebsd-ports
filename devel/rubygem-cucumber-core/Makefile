@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-cucumber-core/Makefile 455459 2017-12-03 20:36:37Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cucumber-core/Makefile 475769 2018-07-29 19:18:39Z sunpoet $
 
 PORTNAME=	cucumber-core
-PORTVERSION=	3.1.0
+PORTVERSION=	3.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

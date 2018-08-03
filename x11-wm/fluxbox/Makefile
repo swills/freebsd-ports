@@ -1,9 +1,9 @@
 # Created by: spn
-# $FreeBSD: head/x11-wm/fluxbox/Makefile 469574 2018-05-10 20:02:33Z asomers $
+# $FreeBSD: head/x11-wm/fluxbox/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	fluxbox
 PORTVERSION=	1.3.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libfribidi.so:converters/fribidi \
 		libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig
 
-USE_XORG=	x11 xext xextproto xft xpm xrandr
+USE_XORG=	x11 xext xorgproto xft xpm xrandr
 USES=		gmake pkgconfig
 GNU_CONFIGURE=	yes
 

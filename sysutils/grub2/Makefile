@@ -1,9 +1,9 @@
 # Created by: sem@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/grub2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	grub2
 PORTVERSION=	2.00
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU/grub
 DISTNAME=	grub-${PORTVERSION}

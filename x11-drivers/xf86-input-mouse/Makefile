@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-input-mouse/Makefile 473003 2018-06-21 21:27:04Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-input-mouse/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-input-mouse
 PORTVERSION=	1.9.3
+PORTREVISION=	1
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

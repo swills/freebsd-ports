@@ -1,9 +1,9 @@
 # Created by: Nikola Lecic <nikola.lecic@anthesphoria.net>
-# $FreeBSD: head/textproc/scim-kmfl-imengine/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/scim-kmfl-imengine/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	scim-kmfl-imengine
 PORTVERSION=	0.9.9
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	SF/kmfl/kmfl/${PORTVERSION} \
 		http://anthesphoria.net/FreeBSD/ports/distfiles/${DIST_SUBDIR}/
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 RUN_DEPENDS=	kmflcomp:textproc/kmflcomp \
 		scim:textproc/scim
 
-USE_XORG=	x11 xkbfile xproto
+USE_XORG=	x11 xkbfile xorgproto
 USE_GNOME=	glib20 gtk20 intlhack
 USES=		gettext iconv pkgconfig libtool
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/recordmydesktop/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/multimedia/recordmydesktop/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	recordmydesktop
 DISTVERSION=	0.3.8.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 
@@ -16,7 +16,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-oss=yes \
 			--enable-jack=yes
 
-USE_XORG=	ice sm x11 xext xextproto xfixes xdamage
+USE_XORG=	ice sm x11 xext xorgproto xfixes xdamage
 PLIST_FILES=	bin/recordmydesktop man/man1/recordmydesktop.1.gz
 
 .include <bsd.port.mk>

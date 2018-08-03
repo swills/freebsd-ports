@@ -1,8 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libXres/Makefile 457109 2017-12-23 22:20:48Z zeising $
+# $FreeBSD: head/x11/libXres/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	libXres
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
@@ -11,7 +12,7 @@ COMMENT=	X Resource usage library
 LICENSE=	MIT
 
 XORG_CAT=	lib
-USE_XORG=	x11 xext xextproto resourceproto xproto:both
+USE_XORG=	x11 xext xorgproto
 INSTALL_TARGET=	install-strip
 USES+=	cpe
 CPE_PRODUCT=	libxres

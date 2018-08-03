@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/x11-wm/Makefile 476292 2018-08-03 13:19:06Z jsm $
 #
 
     COMMENT = X11 window managers
@@ -73,6 +73,7 @@
     SUBDIR += lwm
     SUBDIR += lxappearance-obconf
     SUBDIR += lxmed
+    SUBDIR += lxqt-panel
     SUBDIR += lxsession
     SUBDIR += marco
     SUBDIR += matwm2
@@ -138,6 +139,7 @@
     SUBDIR += xfce4
     SUBDIR += xfce4-desktop
     SUBDIR += xfce4-panel
+    SUBDIR += xfce4-panel-profiles
     SUBDIR += xfce4-session
     SUBDIR += xfce4-wm
 

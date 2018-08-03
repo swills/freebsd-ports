@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/games/kuklomenos/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/kuklomenos/Makefile 475880 2018-07-30 11:11:40Z tobik $
 
 PORTNAME=	kuklomenos
 PORTVERSION=	0.4.5
@@ -19,9 +19,12 @@ OPTIONS_DEFINE=	VORBIS
 OPTIONS_DEFAULT=	VORBIS
 OPTIONS_SUB=	yes
 
+USES=		compiler
 USE_SDL=	sdl
 GNU_CONFIGURE=	yes
 
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 

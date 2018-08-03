@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/warzone2100/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/warzone2100/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	warzone2100
 PORTVERSION=	3.2.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/releases/${PORTVERSION}/
 

@@ -1,8 +1,9 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/math/qalculate/Makefile 463014 2018-02-26 11:22:36Z jhale $
+# $FreeBSD: head/math/qalculate/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	qalculate
-PORTVERSION=	2.2.1
+PORTVERSION=	2.6.1
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/v${PORTVERSION}/
 DISTNAME=	${GH_PROJECT}-${PORTVERSION}

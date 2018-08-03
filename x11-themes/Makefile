@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 472790 2018-06-19 14:07:01Z tcberner $
+# $FreeBSD: head/x11-themes/Makefile 475459 2018-07-27 19:01:18Z jsm $
 #
 
     COMMENT = X11 themes
@@ -126,6 +126,7 @@
     SUBDIR += lumina-themes
     SUBDIR += lxappearance
     SUBDIR += lxde-icon-theme
+    SUBDIR += lxqt-themes
     SUBDIR += mate-backgrounds
     SUBDIR += mate-icon-theme
     SUBDIR += mate-icon-theme-faenza

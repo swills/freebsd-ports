@@ -1,5 +1,5 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/mail/roundcube-contextmenu/Makefile 468851 2018-05-02 16:15:59Z mat $
+# $FreeBSD: head/mail/roundcube-contextmenu/Makefile 476009 2018-07-31 17:16:07Z pi $
 
 PORTNAME=	contextmenu
 PORTVERSION=	2.3
@@ -20,7 +20,7 @@ NO_ARCH=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	JohnDoh
-GH_PROJECT=	Roundcube-Plugin-Context-Menu
+GH_PROJECT=	roundcube-contextmenu
 
 PLUGINDIR=	${WWWDIR:S,/${PORTNAME}$$,,}/roundcube/plugins/${PORTNAME}
 RCDIR_REL=	${WWWDIR_REL:S,/${PORTNAME}$$,,}/roundcube

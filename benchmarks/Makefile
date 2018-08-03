@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 472007 2018-06-08 14:51:46Z philip $
+# $FreeBSD: head/benchmarks/Makefile 475557 2018-07-28 13:15:41Z sunpoet $
 #
 
     COMMENT = Benchmarking tools
@@ -51,6 +51,7 @@
     SUBDIR += octave-forge-benchmark
     SUBDIR += p5-Benchmark-Forking
     SUBDIR += p5-Benchmark-Stopwatch
+    SUBDIR += p5-Dumbbench
     SUBDIR += pathchirp
     SUBDIR += pathload
     SUBDIR += pathrate

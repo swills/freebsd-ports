@@ -1,9 +1,9 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/games/xye/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/games/xye/Makefile 475864 2018-07-30 07:12:06Z tobik $
 
 PORTNAME=	xye
 PORTVERSION=	0.12.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	SF:game \
 		http://xye.sourceforge.net/levels/ \
@@ -27,10 +27,12 @@ LICENSE=	ZLIB
 
 EXTRACT_DEPENDS=${UNZIP_CMD}:archivers/unzip
 
-USES=		gmake
+USES=		compiler gmake
 USE_SDL=	sdl image ttf
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-docdir=${PREFIX}/share/doc
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 LEVELS=		Xye%20level%20-%204corners Xye%20level%20-%20Against%20the%20force \
 		Xye%20level%20-%20Stop%20that%20cab Xye%20level%20-%20Helping%20Hand \
@@ -89,7 +91,7 @@ post-install:
 	@(cd ${WRKDIR}/skins && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}/res)
 .endif
 
-	${LN} -sf ${DATADIR}/res/detailed_icon.png \
+	${RLN} ${STAGEDIR}${DATADIR}/res/detailed_icon.png \
 		${STAGEDIR}${PREFIX}/share/pixmaps/${PORTNAME}.png
 
 .include <bsd.port.mk>

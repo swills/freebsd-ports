@@ -1,9 +1,9 @@
 # Created by: LEVAI Daniel <leva@ecentrum.hu>
-# $FreeBSD: head/security/kc/Makefile 421778 2016-09-11 02:05:24Z marino $
+# $FreeBSD: head/security/kc/Makefile 475519 2018-07-28 10:41:55Z pi $
 
 PORTNAME=	kc
 PORTVERSION=	2.3.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 
 MAINTAINER=	leva@ecentrum.hu
@@ -12,8 +12,13 @@ COMMENT=	Console based password storing application
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+DEPRECATED=	Versions 2.4.x use incompatible database format
+EXPIRATION_DATE=	2019-03-01
+
 LIB_DEPENDS=	libxml2.so:textproc/libxml2 \
 		libpcre.so:devel/pcre
+
+CONFLICTS=	kc24
 
 USES=		libedit pkgconfig ssl uidfix
 USE_GITHUB=	yes

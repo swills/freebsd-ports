@@ -1,9 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/x11/thingylaunch/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11/thingylaunch/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	thingylaunch
 PORTVERSION=	2.0.3
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	x11
 MASTER_SITES=	http://gahr.ch/thingylaunch/
 
@@ -19,7 +19,7 @@ LIBX11_DESC=		Build against libX11
 LIBXCB_DESC=		Build against libXCB
 OPTIONS_DEFAULT=	LIBX11
 
-USE_XORG=	xproto
+USE_XORG=	xorgproto
 USE_CXXSTD=	c++11
 USES=		cmake:outsource compiler:c++11-lib
 

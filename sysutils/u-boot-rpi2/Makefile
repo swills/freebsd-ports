@@ -1,15 +1,15 @@
-# $FreeBSD: head/sysutils/u-boot-rpi2/Makefile 475142 2018-07-23 03:04:18Z imp $
+# $FreeBSD: head/sysutils/u-boot-rpi2/Makefile 475665 2018-07-29 17:37:00Z imp $
 
 MASTERDIR=	${.CURDIR}/../u-boot-master
+
+PATCHFILES+=	937869/raw	\
+		939129/raw
 
 MODEL=		rpi2
 BOARD_CONFIG=	rpi_2_defconfig
 FAMILY=		rpi
 
 DEPENDS=	${LOCALBASE}/share/rpi-firmware/bootcode.bin:sysutils/rpi-firmware
-
-PATCHFILES+=	937869/mbox/?	\
-		939129/mbox/?
 
 CONFIG_FRAGMENT=	${.CURDIR}/files/rpi2_fragment
 FRAGMENT_NAME=	rpi2_fragment

@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/rubygem-metasploit_data_models/Makefile 460872 2018-02-04 08:08:26Z antoine $
+# $FreeBSD: head/security/rubygem-metasploit_data_models/Makefile 475661 2018-07-29 15:17:36Z antoine $
 
 PORTNAME=	metasploit_data_models
 PORTVERSION=	2.0.16
+PORTREVISION=	1
 PORTEPOCH=	2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
@@ -20,7 +21,7 @@ RUN_DEPENDS=	rubygem-activerecord4>=4.2.6:databases/rubygem-activerecord4 \
 		rubygem-recog>=2.0:security/rubygem-recog \
 		rubygem-arel-helpers>=0:databases/rubygem-arel-helpers \
 		rubygem-postgres_ext>=0:databases/rubygem-postgres_ext \
-		rubygem-pg>=0:databases/rubygem-pg
+		rubygem-pg0>=0:databases/rubygem-pg0
 
 NO_ARCH=	yes
 USE_RUBY=	yes

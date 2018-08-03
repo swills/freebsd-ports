@@ -1,12 +1,12 @@
 # Created by: michaelnottebrock@gmx.net and lioux@FreeBSD.org
-# $FreeBSD: head/audio/portaudio/Makefile 475024 2018-07-20 15:09:32Z tobik $
+# $FreeBSD: head/audio/portaudio/Makefile 475422 2018-07-27 10:27:40Z tobik $
 
 PORTNAME=	portaudio
-DISTVERSION=	19_20140130
-PORTREVISION=	8
+PORTVERSION=	19.6.0
+PORTEPOCH=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.portaudio.com/archives/
-DISTNAME=	pa_stable_v${DISTVERSION}
+DISTNAME=	pa_stable_v190600_20161030
 
 MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Portable cross-platform Audio API

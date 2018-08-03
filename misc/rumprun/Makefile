@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/rumprun/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/misc/rumprun/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	rumprun
 DISTVERSION=	g20180105
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 
 MAINTAINER=	fabian.freyer@physik.tu-berlin.de

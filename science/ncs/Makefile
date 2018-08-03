@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/ncs/Makefile 464358 2018-03-13 09:50:42Z yuri $
+# $FreeBSD: head/science/ncs/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ncs
 PORTVERSION=	2.0.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science parallel
 MASTER_SITES=	http://code-saturne.org/releases/
 

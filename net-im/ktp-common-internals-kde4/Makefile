@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/ktp-common-internals-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/ktp-common-internals-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ktp-common-internals
 PORTVERSION=	${KTP_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net-im kde
 MASTER_SITES=	KDE/${KTP_BRANCH}/kde-telepathy/${PORTVERSION}/src
 PKGNAMESUFFIX=	-kde4

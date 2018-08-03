@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/mailcommon/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/net/mailcommon/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mailcommon
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

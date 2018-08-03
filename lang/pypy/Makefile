@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/lang/pypy/Makefile 458375 2018-01-07 19:32:34Z krion $
+# $FreeBSD: head/lang/pypy/Makefile 475489 2018-07-28 05:26:21Z farrokhi $
 
 PORTNAME?=	pypy
 CATEGORIES=	lang python
@@ -105,7 +105,7 @@ PLIST=		${.CURDIR}/pkg-plist
 .include "${MASTERDIR}/bsd.pypy.mk"
 .include <bsd.port.pre.mk>
 
-.if ${OPSYS} == FreeBSD && (${OSVERSION} < 1100000 || (${ARCH} != i386 && ${ARCH} != amd64))
+.if ${OPSYS} == FreeBSD && ${ARCH} != i386 && ${ARCH} != amd64
 PYPY_ARGS=	--withoutmod-_vmprof
 .else
 LIB_DEPENDS+=	libunwind.so:devel/libunwind

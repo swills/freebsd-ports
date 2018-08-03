@@ -1,10 +1,10 @@
-# $FreeBSD: head/math/ambit/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/math/ambit/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ambit
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2-37
 DISTVERSIONSUFFIX=	-g9c7049a
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 PKGNAMESUFFIX=	-tensor # avoid clash with shells/ambit
 

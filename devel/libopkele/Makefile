@@ -1,9 +1,9 @@
 # Created by: Sutra Zhou <zhoushuqun@gmail.com>
-# $FreeBSD: head/devel/libopkele/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/libopkele/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libopkele
 PORTVERSION=	2.0.4
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	devel
 MASTER_SITES=	http://kin.klever.net/dist/
 

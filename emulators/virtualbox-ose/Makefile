@@ -1,9 +1,9 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/emulators/virtualbox-ose/Makefile 475363 2018-07-26 11:46:58Z tobik $
+# $FreeBSD: head/emulators/virtualbox-ose/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	virtualbox-ose
 PORTVERSION=	5.2.16
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
 DISTFILES=	VirtualBox-${PORTVERSION}${EXTRACT_SUFX} ${GUESTADDITIONS}
@@ -180,7 +180,7 @@ VBOX_UTILS+=	vboxwebsrv webtest
 
 .if ${PORT_OPTIONS:MX11}
 USE_SDL=	sdl
-USE_XORG+=	inputproto x11 xcursor xext xinerama xmu xt
+USE_XORG+=	xorgproto x11 xcursor xext xinerama xmu xt
 VBOX_PROGS+=	VBoxSDL
 .endif
 

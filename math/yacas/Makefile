@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/yacas/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/math/yacas/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	yacas
 PORTVERSION=	1.6.0
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math
 

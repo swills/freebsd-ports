@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/devel/p5-FileHandle-Unget/Makefile 473989 2018-07-06 02:47:36Z wen $
+# $FreeBSD: head/devel/p5-FileHandle-Unget/Makefile 475813 2018-07-29 19:23:31Z sunpoet $
 
 PORTNAME=	FileHandle-Unget
-PORTVERSION=	0.1629
+PORTVERSION=	0.1634
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,9 @@ COMMENT=	FileHandle which supports ungetting of multiple bytes
 LICENSE=	GPLv2
 
 BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
-TEST_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp
+TEST_DEPENDS=	p5-File-Slurper>=0:devel/p5-File-Slurper
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

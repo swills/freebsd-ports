@@ -1,10 +1,10 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/aspcud/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/math/aspcud/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	aspcud
 PORTVERSION=	1.9.1
 DISTVERSIONSUFFIX=	-source
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math ports-mgmt sysutils
 MASTER_SITES=	SOURCEFORGE/potassco/${PORTNAME}/${PORTVERSION}
 

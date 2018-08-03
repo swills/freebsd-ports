@@ -1,8 +1,8 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/p5-parent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-parent/Makefile 475719 2018-07-29 19:12:37Z sunpoet $
 
 PORTNAME=	parent
-PORTVERSION=	0.236
+PORTVERSION=	0.237
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CORION

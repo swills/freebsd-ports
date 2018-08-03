@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/qqwing/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/games/qqwing/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	qqwing
 PORTVERSION=	1.3.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games gnome
 DIST_SUBDIR=	gnome3
 

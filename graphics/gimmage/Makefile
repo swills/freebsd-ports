@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/gimmage/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/graphics/gimmage/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gimmage
 PORTVERSION=	0.2.3
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	BERLIOS
 

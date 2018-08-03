@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/binaryen/Makefile 474533 2018-07-12 19:20:57Z yuri $
+# $FreeBSD: head/devel/binaryen/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	binaryen
 DISTVERSION=	1.38.8
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	greg@unrelenting.technology

@@ -1,5 +1,5 @@
 # Created by: Nosov Artem <chip-set@mail.ru>
-# $FreeBSD: head/x11/xbelld/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xbelld/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xbelld
 PORTVERSION=	0.2b2
@@ -14,7 +14,7 @@ COMMENT=	XBellD is a small daemon for replacing the standard X terminal bell
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile
 
 USES=		imake tar:tgz
-USE_XORG=	ice sm xtrap xmu xt
+USE_XORG=	ice sm x11 xtrap xmu xt
 USE_GNOME=	esound
 
 # xbelld calls sqrt which requires -lm on some architectures

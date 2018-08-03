@@ -1,9 +1,9 @@
 # Created by: marino@FreeBSD.org
-# $FreeBSD: head/graphics/copperspice/Makefile 455165 2017-11-30 05:55:17Z linimon $
+# $FreeBSD: head/graphics/copperspice/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	copperspice
 PORTVERSION=	1.3.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.copperspice.com/copperspice/source/
 

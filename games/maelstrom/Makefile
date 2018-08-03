@@ -1,9 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/maelstrom/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/games/maelstrom/Makefile 475492 2018-07-28 05:58:22Z tobik $
 
 PORTNAME=	maelstrom
 PORTVERSION=	3.0.6
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	http://slouken.libsdl.org/projects/Maelstrom/src/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons
@@ -18,6 +18,7 @@ COMMENT=	Asteroids-style game for X Window System
 
 LICENSE=	GPLv2
 
+USE_CXXSTD=	gnu++98
 USE_SDL=	sdl net
 USE_XORG=	xpm
 GNU_CONFIGURE=	yes

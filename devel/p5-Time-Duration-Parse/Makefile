@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Time-Duration-Parse/Makefile 473935 2018-07-04 23:43:34Z wen $
+# $FreeBSD: head/devel/p5-Time-Duration-Parse/Makefile 475570 2018-07-28 13:17:56Z sunpoet $
 
 PORTNAME=	Time-Duration-Parse
 PORTVERSION=	0.14
@@ -12,6 +12,7 @@ COMMENT=	Parse string that represents time duration
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Exporter-Lite>=0.02:devel/p5-Exporter-Lite
 RUN_DEPENDS:=	${BUILD_DEPENDS}

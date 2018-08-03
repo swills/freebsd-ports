@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/deskutils/xpad/Makefile 422944 2016-09-29 20:00:41Z jgh $
+# $FreeBSD: head/deskutils/xpad/Makefile 475444 2018-07-27 15:53:55Z jgh $
 
 PORTNAME=	xpad
-PORTVERSION=	4.8.0
+PORTVERSION=	5.0.0
 CATEGORIES=	deskutils
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/trunk/${PORTVERSION}/+download/
 
@@ -17,9 +17,9 @@ OPTIONS_DEFINE=	NLS DOCS
 OPTIONS_SUB=	yes
 
 CONFLICTS_INSTALL=	xpad3-[0-9]*
+USES=	pkgconfig gmake tar:bzip2 autoreconf
 USE_XORG=	x11 sm ice
 USE_GNOME=	gtk30 intltool gtksourceview3 cairo
-USES=	pkgconfig gmake tar:bzip2 autoreconf
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	${CXXFLAGS} -I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
@@ -37,7 +37,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|/etc/xdg/autostart|${LOCALBASE}/etc/xdg/autostart|g' \
 		${WRKSRC}/Makefile.am
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for doc in AUTHORS ChangeLog INSTALL NEWS README TODO THANKS
 	${INSTALL_DATA} ${WRKSRC}/${doc} ${STAGEDIR}${DOCSDIR}

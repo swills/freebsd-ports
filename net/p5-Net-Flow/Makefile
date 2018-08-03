@@ -1,9 +1,8 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/net/p5-Net-Flow/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Flow/Makefile 475547 2018-07-28 12:26:51Z miwi $
 
 PORTNAME=	Net-Flow
-PORTVERSION=	1.000
-PORTREVISION=	1
+PORTVERSION=	1.003
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +12,20 @@ COMMENT=	Decode and encode NetFlow/IPFIX datagrams
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
+LICENSE_FILE_GPLv1=	${WRKSRC}/LICENSE
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
+PORTEXAMPLES=	examples/*
+
+OPTIONS_DEFINE=	EXAMPLES
+OPTIONS_SUB=	yes
+
+post-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTEXAMPLES} ${STAGEDIR}${EXAMPLESDIR})
 
 .include <bsd.port.mk>

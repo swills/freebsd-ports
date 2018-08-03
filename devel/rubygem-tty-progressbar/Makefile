@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-progressbar/Makefile 464296 2018-03-12 20:42:58Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-progressbar/Makefile 475787 2018-07-29 19:21:30Z sunpoet $
 
 PORTNAME=	tty-progressbar
-PORTVERSION=	0.14.0
+PORTVERSION=	0.15.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,8 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-tty-cursor>=0.5.0:devel/rubygem-tty-cursor \
-		rubygem-tty-screen>=0.6.4:devel/rubygem-tty-screen
+		rubygem-tty-screen>=0.6.4:devel/rubygem-tty-screen \
+		rubygem-unicode-display_width>=1.3:devel/rubygem-unicode-display_width
 
 NO_ARCH=	yes
 USE_RUBY=	yes

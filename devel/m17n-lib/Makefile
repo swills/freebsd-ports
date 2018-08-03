@@ -1,8 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/devel/m17n-lib/Makefile 474807 2018-07-17 16:53:05Z thierry $
+# $FreeBSD: head/devel/m17n-lib/Makefile 476198 2018-08-01 20:28:12Z fernape $
 
 PORTNAME=	m17n-lib
 PORTVERSION=	1.8.0
+PORTREVISION=	1
 CATEGORIES=	devel textproc
 MASTER_SITES=	SAVANNAH/m17n
 

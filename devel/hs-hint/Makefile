@@ -1,9 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-hint/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-hint/Makefile 475642 2018-07-29 10:40:28Z arrowd $
 
 PORTNAME=	hint
-PORTVERSION=	0.7.0
-PORTREVISION=	2
+PORTVERSION=	0.8.0
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -12,9 +11,7 @@ COMMENT=	Runtime Haskell interpreter (GHC API wrapper)
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	exceptions extensible-exceptions ghc-mtl>=1.2.1 ghc-paths \
-		mtl random utf8-string
-
-IGNORE=		Doesn't build with recent GHC version
+		mtl random temporary utf8-string
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

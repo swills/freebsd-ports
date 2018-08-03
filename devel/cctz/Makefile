@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/cctz/Makefile 469091 2018-05-05 08:12:40Z krion $
+# $FreeBSD: head/devel/cctz/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cctz
 PORTVERSION=	2.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

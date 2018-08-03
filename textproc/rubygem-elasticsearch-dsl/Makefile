@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-elasticsearch-dsl/Makefile 464279 2018-03-12 20:33:05Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-elasticsearch-dsl/Makefile 475933 2018-07-31 00:03:20Z sunpoet $
 
 PORTNAME=	elasticsearch-dsl
-PORTVERSION=	0.1.5
+PORTVERSION=	0.1.6
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

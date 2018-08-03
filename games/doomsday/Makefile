@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/games/doomsday/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/doomsday/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	doomsday
 PORTVERSION=	2.0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	SF/deng/Doomsday%20Engine/${PORTVERSION}
 

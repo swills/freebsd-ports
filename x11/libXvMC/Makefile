@@ -1,8 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libXvMC/Makefile 474167 2018-07-08 09:07:38Z amdmi3 $
+# $FreeBSD: head/x11/libXvMC/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	libXvMC
 PORTVERSION=	1.0.10
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
@@ -13,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cpe
 XORG_CAT=	lib
-USE_XORG=	x11 xext xv xextproto videoproto:both xproto:both
+USE_XORG=	x11 xext xv xorgproto
 CPE_PRODUCT=	libxvmc
 CPE_VENDOR=	x
 

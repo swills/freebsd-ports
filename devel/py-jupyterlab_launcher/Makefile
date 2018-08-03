@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jupyterlab_launcher/Makefile 475070 2018-07-21 15:14:11Z yuri $
+# $FreeBSD: head/devel/py-jupyterlab_launcher/Makefile 475476 2018-07-28 00:13:46Z yuri $
 
 PORTNAME=	jupyterlab_launcher
-DISTVERSION=	0.11.1
+DISTVERSION=	0.11.2
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,5 +17,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonschema>=2.6.0:devel/py-jsonschema@${PY_F
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: lambert@lambertfam.org
-# $FreeBSD: head/comms/aldo/Makefile 465407 2018-03-23 20:46:26Z yuri $
+# $FreeBSD: head/comms/aldo/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	aldo
 DISTVERSION=	0.7.7
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SAVANNAH
 

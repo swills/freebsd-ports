@@ -1,9 +1,9 @@
 # Created by: Robin Schilham
-# $FreeBSD: head/math/clp/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/clp/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	Clp
 PORTVERSION=	1.16.10
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	http://www.coin-or.org/download/source/${PORTNAME}/ \
 		http://www.mavetju.org/download/adopted/

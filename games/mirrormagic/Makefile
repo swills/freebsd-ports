@@ -1,9 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/mirrormagic/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/mirrormagic/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mirrormagic
 PORTVERSION=	2.0.2
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	games
 MASTER_SITES=	http://www.artsoft.org/RELEASES/unix/mirrormagic/ \
 		http://mirror.amdmi3.ru/distfiles/

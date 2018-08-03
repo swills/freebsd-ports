@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-video-rendition/Makefile 470661 2018-05-22 20:47:31Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-rendition/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-video-rendition
 PORTVERSION=	4.2.7
+PORTREVISION=	1
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

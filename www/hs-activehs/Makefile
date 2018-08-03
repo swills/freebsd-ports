@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-activehs/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-activehs/Makefile 476243 2018-08-02 18:05:43Z arrowd $
 
 PORTNAME=	activehs
 PORTVERSION=	0.3.2
@@ -9,6 +9,9 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Haskell code presentation tool
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Doesn't build with recent dependencies
+EXPIRATION_DATE=2018-09-02
 
 USE_CABAL=	activehs-base blaze-html blaze-markup cmdargs data-pprint \
 		dia-base dia-functions exceptions haskell-src-exts \

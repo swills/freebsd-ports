@@ -1,9 +1,9 @@
 # Created by: Mike Lockwood <mike@mikelockwood.com>
-# $FreeBSD: head/editors/zoinks/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/editors/zoinks/Makefile 475496 2018-07-28 06:23:54Z tobik $
 
 PORTNAME=	zoinks
 PORTVERSION=	0.4.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	editors
 MASTER_SITES=	http://zoinks.mikelockwood.com/download/
 
@@ -11,11 +11,15 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X11 programmer's editor and development environment
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USE_XORG=	xpm
+USES=		compiler
+USE_XORG=	x11 xext xpm
 GNU_CONFIGURE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 OPTIONS_DEFINE=		NLS

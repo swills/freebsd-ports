@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-video-vesa/Makefile 472040 2018-06-09 06:57:47Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-vesa/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-video-vesa
 PORTVERSION=	2.4.0
+PORTREVISION=	1
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

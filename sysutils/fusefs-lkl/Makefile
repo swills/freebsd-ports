@@ -1,8 +1,9 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-lkl/Makefile 473847 2018-07-03 16:39:35Z cem $
+# $FreeBSD: head/sysutils/fusefs-lkl/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lkl
 DISTVERSION=	4.16.g20180628
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
 

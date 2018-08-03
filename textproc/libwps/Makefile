@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/textproc/libwps/Makefile 468293 2018-04-25 19:58:50Z jkim $
+# $FreeBSD: head/textproc/libwps/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libwps
 PORTVERSION=	0.4.9
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/knotes/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/knotes/Makefile 476229 2018-08-02 10:22:44Z tcberner $
 
 PORTNAME=	knotes
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	2
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -21,7 +22,8 @@ USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
 # pim components
 USE_KDE+=	akonadi akonadicontacts akonadinotes akonadisearch  \
 		calendarcore calendarutils contacts kontactinterface libkdepim \
-		mime pimcommon pimtextedit
+		mime pimcommon pimtextedit \
+		kdepim-runtime5_run
 USE_QT=		core dbus gui network printsupport widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	ice sm x11 xext

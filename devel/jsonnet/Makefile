@@ -1,9 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/jsonnet/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/jsonnet/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	jsonnet
 PORTVERSION=	0.9.3
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

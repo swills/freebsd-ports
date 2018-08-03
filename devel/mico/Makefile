@@ -1,5 +1,5 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/devel/mico/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/mico/Makefile 476162 2018-08-01 07:50:29Z tobik $
 
 PORTNAME=	mico
 PORTVERSION=	2.3.13
@@ -15,6 +15,8 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2=	${WRKSRC}/LICENSE-GPL
 LICENSE_FILE_LGPL20=	${WRKSRC}/LICENSE-LGPL
 
+DEPRECATED=	unmaintained upstream and unused in the ports tree
+EXPIRATION_DATE=	2018-08-30
 BROKEN_SSL=	openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'BIO' (aka 'bio_st')
 
@@ -22,6 +24,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-optimize --with-ssl=${OPENSSLBASE}
 MAKE_ARGS=	INSTDIR=${STAGEDIR}${PREFIX} SHARED_INSTDIR=${STAGEDIR}${PREFIX}
 USES=		gmake ncurses readline ssl
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

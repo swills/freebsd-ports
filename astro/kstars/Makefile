@@ -1,7 +1,8 @@
-# $FreeBSD: head/astro/kstars/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/kstars/Makefile 476214 2018-08-02 03:53:40Z danilo $
 
 PORTNAME=	kstars
-DISTVERSION=	2.9.6
+DISTVERSION=	2.9.7
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	astro kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
@@ -26,7 +27,7 @@ USE_KDE=	attica auth bookmarks codecs completion config configwidgets\
 		notifyconfig parts plotting service solid texteditor \
 		widgetsaddons xmlgui
 USE_QT=		concurrent core dbus gui multimedia network opengl printsupport \
-		qml quick sql svg testlib widgets xml \
+		qml quick sql svg testlib websockets widgets xml \
 		buildtools_build qmake_build
 
 post-patch:

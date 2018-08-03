@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/cad/qelectrotech/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/cad/qelectrotech/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	qelectrotech
 PORTVERSION=	0.5
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	cad
 MASTER_SITES=	http://download.tuxfamily.org/qet/tags/20151127/

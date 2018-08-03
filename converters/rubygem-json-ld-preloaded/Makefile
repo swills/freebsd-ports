@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/rubygem-json-ld-preloaded/Makefile 456361 2017-12-14 20:43:38Z sunpoet $
+# $FreeBSD: head/converters/rubygem-json-ld-preloaded/Makefile 475945 2018-07-31 00:04:23Z sunpoet $
 
 PORTNAME=	json-ld-preloaded
-PORTVERSION=	2.2.3
+PORTVERSION=	3.0.0
 CATEGORIES=	converters rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ LICENSE=	UNLICENSE
 
 RUN_DEPENDS=	rubygem-json-ld>=2.2:converters/rubygem-json-ld \
 		rubygem-multi_json>=1.12:devel/rubygem-multi_json \
-		rubygem-rdf>=2.2:www/rubygem-rdf
+		rubygem-rdf>=3.0:www/rubygem-rdf
 
 NO_ARCH=	yes
 USES=		gem

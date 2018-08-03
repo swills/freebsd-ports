@@ -1,8 +1,8 @@
 # Created by: Thawatchai Piyawat <piyawat@usablelabs.com>
-# $FreeBSD: head/devel/libthai/Makefile 453092 2017-10-29 06:57:53Z vanilla $
+# $FreeBSD: head/devel/libthai/Makefile 476198 2018-08-01 20:28:12Z fernape $
 
 PORTNAME=	libthai
-PORTVERSION=	0.1.27
+DISTVERSION=	0.1.28
 CATEGORIES=	devel
 MASTER_SITES=	http://linux.thai.net/pub/thailinux/software/libthai/
 

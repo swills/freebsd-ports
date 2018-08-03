@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-sass/Makefile 465379 2018-03-23 16:45:39Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-sass/Makefile 476114 2018-07-31 23:54:13Z sunpoet $
 
 PORTNAME=	sass
-PORTVERSION=	3.5.6
+PORTVERSION=	3.5.7
 CATEGORIES=	textproc ruby
 MASTER_SITES=	RG
 

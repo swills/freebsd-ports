@@ -1,9 +1,9 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/www/wt/Makefile 474787 2018-07-17 08:56:32Z antoine $
+# $FreeBSD: head/www/wt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	wt
 PORTVERSION=	3.3.7
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	www
 
 MAINTAINER=	info@babaei.net

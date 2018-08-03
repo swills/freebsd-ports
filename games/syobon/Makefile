@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/syobon/Makefile 474572 2018-07-13 09:56:57Z antoine $
+# $FreeBSD: head/games/syobon/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	syobon
 PORTVERSION=	1.0.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	http://zapek.com/wp-content/uploads/2010/09/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

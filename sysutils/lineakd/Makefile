@@ -1,5 +1,5 @@
 # Created by: Kay Lehmann
-# $FreeBSD: head/sysutils/lineakd/Makefile 409665 2016-02-27 13:25:13Z amdmi3 $
+# $FreeBSD: head/sysutils/lineakd/Makefile 476177 2018-08-01 13:19:54Z tobik $
 
 PORTNAME=	lineakd
 PORTVERSION=	0.9
@@ -12,6 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lineakd is a daemon which enables special keys on internet keyboards
 
 USES=		gmake libtool localbase
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 USE_XORG=	x11 xext xt
 GNU_CONFIGURE=	yes

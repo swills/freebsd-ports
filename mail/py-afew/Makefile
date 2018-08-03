@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/py-afew/Makefile 472746 2018-06-19 02:07:26Z yuri $
+# $FreeBSD: head/mail/py-afew/Makefile 475403 2018-07-26 22:43:40Z swills $
 
 PORTNAME=	afew
 DISTVERSION=	1.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,7 +23,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${PY_FLAVOR} \
 		notmuch:mail/notmuch
 
 USES=		python
-USE_PYTHON=	distutils concurrent autoplist noflavors
+USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	MANPAGES DOCS

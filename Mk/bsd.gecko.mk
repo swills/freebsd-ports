@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 474546 2018-07-13 03:08:53Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 475614 2018-07-28 20:28:34Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -93,8 +93,6 @@ BUNDLE_LIBS=	yes
 
 .if ${MOZILLA_VER:R:R} >= 49
 USES+=		compiler:c++17-lang
-CPPFLAGS+=	-D_GLIBCXX_USE_C99 -D_GLIBCXX_USE_C99_MATH_TR1 \
-			-D_DECLARE_C99_LDBL_MATH # XXX ports/193528
 .else
 USES+=		compiler:c++11-lang
 .endif

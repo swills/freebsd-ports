@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/libmusicxml/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/audio/libmusicxml/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libmusicxml
 DISTVERSION=	3.11
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

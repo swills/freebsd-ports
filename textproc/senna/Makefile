@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/senna/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/textproc/senna/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	senna
 PORTVERSION=	1.1.5
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	1
 CATEGORIES=	textproc
 MASTER_SITES=	OSDN/senna/46945

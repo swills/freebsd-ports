@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-CGI-Ex/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CGI-Ex/Makefile 475818 2018-07-29 19:23:57Z sunpoet $
 
 PORTNAME=	CGI-Ex
-PORTVERSION=	2.45
+PORTVERSION=	2.46
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,9 +13,10 @@ COMMENT=	CGI utility suite - makes powerful application writing fun and easy
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CGI>=0:www/p5-CGI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI>=0:www/p5-CGI \
 		p5-Template-Alloy>=1.004:www/p5-Template-Alloy
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Test-Warn>=0:devel/p5-Test-Warn
 
 OPTIONS_DEFINE=	EXAMPLES
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/p5-X11-XCB/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/x11/p5-X11-XCB/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	X11-XCB
 PORTVERSION=	0.16
+PORTREVISION=	1
 CATEGORIES=	x11 perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -32,7 +33,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		localbase perl5
 USE_PERL5=	configure
-USE_XORG=	x11 xcb xproto xinerama
+USE_XORG=	x11 xcb xorgproto xinerama
 MAKE_JOBS_UNSAFE=	yes
 
 post-install:

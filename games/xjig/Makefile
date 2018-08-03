@@ -1,9 +1,9 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/games/xjig/Makefile 433010 2017-02-01 12:25:57Z jbeich $
+# $FreeBSD: head/games/xjig/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xjig
 PORTVERSION=	2.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	XCONTRIB/games
 
@@ -11,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Jigsaw puzzle game for X11
 
 USES=		compiler tar:tgz
-USE_XORG=	x11 xproto xext
+USE_XORG=	x11 xorgproto xext
 MAKEFILE=	Makefile.Linux
 PLIST_FILES=	bin/xjig man/man1/xjig.1.gz
 

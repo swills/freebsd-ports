@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/woff2/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/devel/woff2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	woff2
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	tobik@FreeBSD.org

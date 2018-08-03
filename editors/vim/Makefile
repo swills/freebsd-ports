@@ -1,8 +1,8 @@
 # Created by: David O'Brien <obrien@cs.ucdavis.edu>
-# $FreeBSD: head/editors/vim/Makefile 473772 2018-07-02 21:59:03Z adamw $
+# $FreeBSD: head/editors/vim/Makefile 476185 2018-08-01 16:51:31Z adamw $
 
 PORTNAME=	vim
-PORTVERSION=	8.1.0139
+PORTVERSION=	8.1.0231
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
 
@@ -94,7 +94,7 @@ CONSOLE_VARS=		GUI=no
 
 GNOME_PLIST_SUB=	GUI="" DESKTOP=""
 GNOME_IMPLIES=		NLS
-GNOME_USE=		GNOME=gdkpixbuf2,libgnomeui XORG=ice,sm,glproto,x11,xpm,xt
+GNOME_USE=		GNOME=gdkpixbuf2,libgnomeui XORG=ice,sm,xorgproto,x11,xpm,xt
 GNOME_USES=		desktop-file-utils
 GNOME_VARS=		GUI=gnome2 INSTALLS_ICONS=yes
 

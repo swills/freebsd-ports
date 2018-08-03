@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/bats-core/Makefile 473688 2018-07-01 23:28:16Z lifanov $
+# $FreeBSD: head/devel/bats-core/Makefile 475853 2018-07-29 20:54:52Z lifanov $
 
 PORTNAME=	bats-core
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.2
+DISTVERSION=	1.1.0
 CATEGORIES=	devel
 
 MAINTAINER=	lifanov@FreeBSD.org

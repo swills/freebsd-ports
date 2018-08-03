@@ -1,8 +1,8 @@
 # Created by: ache
-# $FreeBSD: head/archivers/rar/Makefile 472905 2018-06-20 19:35:19Z sunpoet $
+# $FreeBSD: head/archivers/rar/Makefile 475680 2018-07-29 19:09:13Z sunpoet $
 
 PORTNAME=	rar
-PORTVERSION=	5.5.0
+PORTVERSION=	5.6.0
 PORTEPOCH=	3
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.rarlab.com/rar/

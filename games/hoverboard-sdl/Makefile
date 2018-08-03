@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hoverboard-sdl/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/hoverboard-sdl/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	hoverboard
 PORTVERSION=	0.7.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

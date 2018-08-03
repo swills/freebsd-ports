@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-iso8601/Makefile 457733 2017-12-31 22:23:14Z sunpoet $
+# $FreeBSD: head/devel/rubygem-iso8601/Makefile 475932 2018-07-31 00:03:15Z sunpoet $
 
 PORTNAME=	iso8601
-PORTVERSION=	0.10.1
+PORTVERSION=	0.12.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/ponyc/Makefile 473529 2018-06-29 07:31:24Z linimon $
+# $FreeBSD: head/lang/ponyc/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ponyc
 DISTVERSION=	0.23.0
+PORTREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	greg@unrelenting.technology

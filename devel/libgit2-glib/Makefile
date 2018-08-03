@@ -1,10 +1,11 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/devel/libgit2-glib/Makefile 472849 2018-06-20 06:53:29Z mfechner $
+# $FreeBSD: head/devel/libgit2-glib/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 # Also update devel/libgit2, devel/rubygem-rugged, devel/py-pygit2
 
 PORTNAME=	libgit2-glib
 PORTVERSION=	0.26.0
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

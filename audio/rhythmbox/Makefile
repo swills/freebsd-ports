@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/rhythmbox/Makefile 458425 2018-01-08 14:56:11Z marcus $
+# $FreeBSD: head/audio/rhythmbox/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	rhythmbox
 PORTVERSION=	3.4.2
+PORTREVISION=	1
 CATEGORIES=	audio gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -34,7 +35,7 @@ USES=		desktop-file-utils gmake gnome libtool localbase \
 		pathfix pkgconfig tar:xz
 USE_GNOME=	cairo intlhack glib20 gnomeprefix gtk30 introspection \
 		pygobject3 libxml2
-USE_XORG=	ice x11 xproto
+USE_XORG=	ice x11 xorgproto
 GNU_CONFIGURE=	yes
 USE_GSTREAMER1=	flac lame jpeg cdparanoia vorbis
 CONFIGURE_ARGS=	--enable-vala \

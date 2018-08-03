@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/science/hypre/Makefile 471969 2018-06-08 02:39:46Z linimon $
+# $FreeBSD: head/science/hypre/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	hypre
 DISTVERSION=	2.11.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 MASTER_SITES=	https://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/download/
 

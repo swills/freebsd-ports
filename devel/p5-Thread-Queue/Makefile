@@ -1,8 +1,8 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Thread-Queue/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Thread-Queue/Makefile 476180 2018-08-01 13:37:29Z culot $
 
 PORTNAME=	Thread-Queue
-PORTVERSION=	3.12
+PORTVERSION=	3.13
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,5 +16,8 @@ LICENSE_COMB=	dual
 NO_ARCH=	YES
 USES=		perl5
 USE_PERL5=	configure
+
+PLIST_FILES=	${SITE_PERL_REL}/Thread/Queue.pm \
+		${SITE_MAN3_REL}/Thread::Queue.3.gz
 
 .include <bsd.port.mk>

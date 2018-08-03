@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-Astro/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/p5-DateTime-Astro/Makefile 475704 2018-07-29 19:11:17Z sunpoet $
 
 PORTNAME=	DateTime-Astro
 PORTVERSION=	1.03
@@ -15,12 +15,12 @@ COMMENT=	Functions For Astromical Calendars
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
-		p5-DateTime-Set>=0:devel/p5-DateTime-Set
+BUILD_DEPENDS=	p5-Module-Build-XSUtil>=0.16:devel/p5-Module-Build-XSUtil \
+		${RUN_DEPENDS}
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr
-RUN_DEPENDS:=	${BUILD_DEPENDS}
-BUILD_DEPENDS+=	p5-Module-Build-XSUtil>=0.16:devel/p5-Module-Build-XSUtil
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
+		p5-DateTime-Set>=0:devel/p5-DateTime-Set
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USE_PERL5=	modbuild

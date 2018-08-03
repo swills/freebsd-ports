@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/tdb/Makefile 470190 2018-05-17 02:24:59Z timur $
+# $FreeBSD: head/databases/tdb/Makefile 475968 2018-07-31 04:09:06Z timur $
 
 PORTNAME=		tdb
-PORTVERSION=		1.3.15
-PORTREVISION=		2
+PORTVERSION=		1.3.16
+PORTREVISION=		0
 PORTEPOCH=		1
 CATEGORIES=		databases
 MASTER_SITES=		SAMBA

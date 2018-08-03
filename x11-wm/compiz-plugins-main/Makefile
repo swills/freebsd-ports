@@ -1,9 +1,9 @@
 # Created by: Robert Noland <rnoland@FreeBSD.org>
-# $FreeBSD: head/x11-wm/compiz-plugins-main/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-wm/compiz-plugins-main/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	compiz-plugins-main
 PORTVERSION=	0.8.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://releases.compiz.org/${PORTVERSION}/
 
@@ -22,7 +22,7 @@ USE_GL=		yes
 USES=		gettext gmake libtool:keepla pathfix pkgconfig tar:bzip2
 USE_CSTD=	gnu89
 USE_GNOME=	gconf2 intltool
-USE_XORG=	glproto
+USE_XORG=	xorgproto
 USE_LDCONFIG=	yes
 
 GCONF_SCHEMAS=	compiz-animation.schemas \

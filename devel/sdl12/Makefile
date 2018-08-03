@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/sdl12/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
+# $FreeBSD: head/devel/sdl12/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	sdl
 PORTVERSION=	1.2.15
-PORTREVISION=	10
+PORTREVISION=	11
 PORTEPOCH=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.libsdl.org/release/
@@ -58,7 +58,7 @@ SVGALIB_LIB_DEPENDS=		libvga.so:graphics/svgalib
 VGL_CONFIGURE_ENABLE=		video-vgl
 VGL_VARS=			PKGMESSAGE=pkg-message.vgl
 X11_CONFIGURE_ENABLE=		video-x11
-X11_USE=			XORG=x11,xrender,xrandr,xextproto
+X11_USE=			XORG=x11,xrender,xrandr,xorgproto
 
 post-patch:
 	@${REINPLACE_CMD} -e '/EXTRA_LDFLAGS/s/-liconv/${ICONV_LIB}/' \

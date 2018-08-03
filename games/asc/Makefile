@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/asc/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/asc/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	asc
 PORTVERSION=	2.6.1.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}-hq/ASC%20Source/${PORTVERSION:R} \
 		http://www.asc-hq.org/music/:music

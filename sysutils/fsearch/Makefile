@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/fsearch/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/sysutils/fsearch/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	fsearch
 DISTVERSION=	0.1beta2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	danfe@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/ffms2/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/ffms2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ffms2
 DISTVERSION=	2.23
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org

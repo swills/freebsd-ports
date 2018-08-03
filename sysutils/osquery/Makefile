@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 474401 2018-07-10 18:50:18Z jbeich $
+# $FreeBSD: head/sysutils/osquery/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	osquery
 PORTVERSION=	3.2.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

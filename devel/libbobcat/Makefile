@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libbobcat/Makefile 474787 2018-07-17 08:56:32Z antoine $
+# $FreeBSD: head/devel/libbobcat/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libbobcat
 PORTVERSION=	3.25.01
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	SF/bobcat/bobcat/${PORTVERSION}
 DISTNAME=	bobcat_${PORTVERSION}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/trustedqsl/Makefile 474657 2018-07-15 02:36:36Z yuri $
+# $FreeBSD: head/comms/trustedqsl/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	trustedqsl
 DISTVERSION=	2.4
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://www.arrl.org/files/file/LoTW%20Instructions/ \
 		LOCAL/shurd

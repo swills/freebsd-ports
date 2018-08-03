@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/zam-plugins-lv2/Makefile 475092 2018-07-22 08:08:17Z yuri $
+# $FreeBSD: head/audio/zam-plugins-lv2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	zam-plugins
 DISTVERSION=	3.10-13
 DISTVERSIONSUFFIX=	-gfbdbf08
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/editors/gedit/Makefile 465547 2018-03-25 21:48:32Z brd $
+# $FreeBSD: head/editors/gedit/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gedit
 PORTVERSION=	3.22.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

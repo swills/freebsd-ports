@@ -1,10 +1,10 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/seexpr/Makefile 474573 2018-07-13 10:00:59Z antoine $
+# $FreeBSD: head/graphics/seexpr/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	seexpr
 DISTVERSIONPREFIX=	v
 PORTVERSION=	2.11
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics math
 
 MAINTAINER=	danfe@FreeBSD.org

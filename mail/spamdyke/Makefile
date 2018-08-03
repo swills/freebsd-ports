@@ -1,9 +1,9 @@
 # Created by: Peter Kieser <peter@kieser.ca>
-# $FreeBSD: head/mail/spamdyke/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/mail/spamdyke/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	spamdyke
 PORTVERSION=	5.0.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail
 MASTER_SITES=	http://www.spamdyke.org/releases/
 

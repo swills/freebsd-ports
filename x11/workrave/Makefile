@@ -1,10 +1,10 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/x11/workrave/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11/workrave/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	workrave
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1_10_16
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	x11
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libgdome.so:textproc/gdome2
 USES=		compiler:c++11-lang autoreconf:build gettext gmake libtool \
 		localbase pathfix pkgconfig
 USE_CXXSTD=	c++11
-USE_XORG=	ice recordproto sm x11 xext xmu xscrnsaver xtst
+USE_XORG=	ice xorgproto sm x11 xext xmu xscrnsaver xtst
 USE_GNOME=	intltool intlhack introspection gtkmm30
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gsettings \

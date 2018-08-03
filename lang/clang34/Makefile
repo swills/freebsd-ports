@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/clang34/Makefile 463118 2018-02-27 12:26:25Z amdmi3 $
+# $FreeBSD: head/lang/clang34/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	clang
 DISTVERSION=	3.4.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	lang devel
 MASTER_SITES=	http://llvm.org/releases/${PORTVERSION}/
 PKGNAMESUFFIX=	${LLVM_SUFFIX}

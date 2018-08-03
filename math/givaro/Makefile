@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/givaro/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/math/givaro/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	givaro
 PORTVERSION=	4.0.4
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	math
 

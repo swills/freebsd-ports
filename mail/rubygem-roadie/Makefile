@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/rubygem-roadie/Makefile 466672 2018-04-06 16:27:55Z sunpoet $
+# $FreeBSD: head/mail/rubygem-roadie/Makefile 476086 2018-07-31 23:50:39Z sunpoet $
 
 PORTNAME=	roadie
-PORTVERSION=	3.3.0
+PORTVERSION=	3.4.0
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 

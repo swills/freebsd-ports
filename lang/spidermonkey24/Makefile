@@ -1,9 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey24/Makefile 471483 2018-06-03 08:34:23Z amdmi3 $
+# $FreeBSD: head/lang/spidermonkey24/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=		spidermonkey24
 PORTVERSION=		24.2.0
-PORTREVISION=		8
+PORTREVISION=		9
 CATEGORIES=		lang
 MASTER_SITES=		MOZILLA/js
 #http://people.mozilla.org/~sstangl/

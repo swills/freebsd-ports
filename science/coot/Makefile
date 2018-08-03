@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/coot/Makefile 474154 2018-07-08 04:45:25Z yuri $
+# $FreeBSD: head/science/coot/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	coot
 DISTVERSION=	0.8.9.1
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/${PORTNAME}/source/releases/ \
 		https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/${PORTNAME}/dependencies/:data

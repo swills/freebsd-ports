@@ -1,10 +1,11 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/x11-toolkits/gtk30/Makefile 465961 2018-03-30 11:33:23Z bapt $
+# $FreeBSD: head/x11-toolkits/gtk30/Makefile 475857 2018-07-29 22:18:44Z gerald $
 # Please keep gtk30 in sync with the following x11-themes ports:
 # adwaita-icon-theme, gnome-themes-standard and mate-themes
 
 PORTNAME=	gtk
 PORTVERSION=	3.22.29
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME/sources/gtk+/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMESUFFIX=	3

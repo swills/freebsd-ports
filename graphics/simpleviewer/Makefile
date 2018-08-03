@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/simpleviewer/Makefile 456098 2017-12-12 03:45:49Z jbeich $
+# $FreeBSD: head/graphics/simpleviewer/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	simpleviewer
 PORTVERSION=	2.92
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	https://bitbucket.org/andreyu/simple-viewer-gl/get/
 DISTNAME=	v${PORTVERSION}	# version tag, thus no embedded ${PORTNAME}

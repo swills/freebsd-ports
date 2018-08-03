@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/games/torcs/Makefile 462754 2018-02-24 00:28:10Z madpilot $
+# $FreeBSD: head/games/torcs/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	torcs
 DISTVERSION=	1.3.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/all-in-one/${PORTVERSION}
 

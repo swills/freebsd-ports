@@ -1,9 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/deskutils/charmtimetracker/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/charmtimetracker/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	charmtimetracker
 DISTVERSION=	1.11.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	adridg@FreeBSD.org

@@ -1,9 +1,8 @@
 # Created by: Kurt Jaeger <fbsd-ports@opsec.eu>
-# $FreeBSD: head/devel/dragon/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/dragon/Makefile 475895 2018-07-30 14:31:11Z pi $
 
 PORTNAME=	dragon
-PORTVERSION=	1.4.3
-PORTREVISION=	1
+PORTVERSION=	1.5.1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.lemke-it.com/
 

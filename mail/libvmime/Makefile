@@ -1,10 +1,10 @@
 # Created by: delphij@FreeBSD.org
-# $FreeBSD: head/mail/libvmime/Makefile 457756 2018-01-01 09:00:44Z amdmi3 $
+# $FreeBSD: head/mail/libvmime/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libvmime
 PORTVERSION=	0.9.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 
 MAINTAINER=	ports@FreeBSD.org

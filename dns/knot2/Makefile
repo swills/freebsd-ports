@@ -1,8 +1,9 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/knot2/Makefile 474517 2018-07-12 14:04:24Z joneum $
+# $FreeBSD: head/dns/knot2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	knot
 DISTVERSION=	2.6.8
+PORTREVISION=	1
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://secure.nic.cz/files/knot-dns/ \
 		https://dns.company/downloads/knot-dns/

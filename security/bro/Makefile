@@ -1,8 +1,9 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/bro/Makefile 472014 2018-06-08 16:40:46Z leres $
+# $FreeBSD: head/security/bro/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	bro
 PORTVERSION=	2.5.4
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.bro.org/downloads/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}

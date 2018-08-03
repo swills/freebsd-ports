@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime/Makefile 470642 2018-05-22 17:48:40Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime/Makefile 476267 2018-08-02 23:43:07Z sunpoet $
 
 PORTNAME=	DateTime
-PORTVERSION=	1.49
+PORTVERSION=	1.50
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

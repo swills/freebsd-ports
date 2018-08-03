@@ -1,10 +1,10 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 473439 2018-06-27 13:55:56Z mat $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
 DISTVERSIONPREFIX=	stable-
-PORTREVISION=	1
+PORTREVISION=		2
 PORTEPOCH=		2
 CATEGORIES=		emulators
 
@@ -30,7 +30,7 @@ DNET_DESC=		libdnet support
 LIBNOTIFY_DESC=		Desktop notification support
 
 X11_CONFIGURE_WITH=	x gtk2 gtkmm
-X11_USE=		xorg=ice,sm,x11,xext,xi,xinerama,xineramaproto,xrandr,xrender,xtst \
+X11_USE=		xorg=ice,sm,x11,xext,xi,xinerama,xorgproto,xrandr,xrender,xtst \
 			gnome=gdkpixbuf2,gtk20,gtkmm24
 X11_LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 			libfreetype.so:print/freetype2

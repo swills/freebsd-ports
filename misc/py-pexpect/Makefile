@@ -1,13 +1,13 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/py-pexpect/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/misc/py-pexpect/Makefile 475883 2018-07-30 12:16:55Z rm $
 
 PORTNAME=	pexpect
-PORTVERSION=	4.2.1
+PORTVERSION=	4.6.0
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	wg@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Pure Python Expect-like module
 
 LICENSE=	ISCL

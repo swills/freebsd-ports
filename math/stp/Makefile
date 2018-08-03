@@ -1,8 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/math/stp/Makefile 475224 2018-07-24 06:19:15Z arrowd $
+# $FreeBSD: head/math/stp/Makefile 475500 2018-07-28 06:46:10Z arrowd $
 
 PORTNAME=	stp
 DISTVERSION=	2.3.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	math
 
@@ -22,5 +23,9 @@ LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs \
 USES=		bison:build cmake:outsource perl5 python
 USE_GITHUB=	yes
 USE_PERL5=	build
+USE_LDCONFIG=	yes
+
+post-install:
+	@${MV} ${STAGEDIR}${PREFIX}/bin/stp-2.1.2 ${STAGEDIR}${PREFIX}/bin/stp
 
 .include <bsd.port.mk>

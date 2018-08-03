@@ -1,5 +1,5 @@
 # Created by: Jeroen Schot <schot@a-eskwadraat.nl>
-# $FreeBSD: head/x11-wm/dwm/Makefile 475000 2018-07-20 09:40:25Z 0mp $
+# $FreeBSD: head/x11-wm/dwm/Makefile 476165 2018-08-01 08:26:27Z 0mp $
 
 PORTNAME=	dwm
 PORTVERSION=	6.1
@@ -28,7 +28,7 @@ PORTDOCS=	README
 OPTIONS_DEFINE=	DMENUANDSTERM DOCS SUPERASMODKEY VOLUMECONTROL XINERAMA
 OPTIONS_DEFAULT=DMENUANDSTERM XINERAMA
 
-DMENUANDSTERM_DESC=	Install x11/dmenu and x11/st as runtime dependencies
+DMENUANDSTERM_DESC=	Install x11/dmenu and x11/sterm as runtime dependencies
 SUPERASMODKEY_DESC=	Use Super instead of Alt for the dwm mod key
 VOLUMECONTROL_DESC=	Use keys on keyboard to raise or lower volume
 

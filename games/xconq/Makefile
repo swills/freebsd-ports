@@ -1,5 +1,5 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/games/xconq/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/xconq/Makefile 475869 2018-07-30 08:17:16Z tobik $
 
 PORTNAME=	xconq
 DISTVERSION=	7.5.0-0pre.0.20050612
@@ -20,6 +20,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-alternate-scoresdir=${SCOREDIR} \
 		--enable-alternate-gameuser=root \
 		--enable-alternate-gamegroup=games
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 MAKE_ARGS=	GAMEPERM=755 DIRPERM=775 FILEPERM=664
 MAKE_JOBS_UNSAFE=	yes
 

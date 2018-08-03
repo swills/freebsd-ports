@@ -1,15 +1,15 @@
 # Created by: Charlie Root <se@FreeBSD.org>
-# $FreeBSD: head/security/pwned-check/Makefile 463960 2018-03-09 13:56:32Z se $
+# $FreeBSD: head/security/pwned-check/Makefile 475648 2018-07-29 11:52:42Z se $
 
 PORTNAME=	pwned-check
-PORTVERSION=	2.0
+PORTVERSION=	2.2
 PORTEPOCH=	1
 CATEGORIES=	security
 MASTER_SITES=	#
 DISTFILES=	#
 
 MAINTAINER=	se@FreeBSD.org
-COMMENT=	Check whether password is known to have been exposed in data breaches
+COMMENT=	Check whether password is known to have been exposed in a data breach
 
 LICENSE=	BSD2CLAUSE
 

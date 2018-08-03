@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/audio/HVSC-Update/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/HVSC-Update/Makefile 476157 2018-08-01 06:16:52Z tobik $
 
 PORTNAME=	HVSC-Update
 PORTVERSION=	2.8.7
@@ -14,6 +14,7 @@ BUILD_DEPENDS=	makedepend:devel/makedepend
 
 GNU_CONFIGURE=	yes
 USES=		gmake
+USE_CXXSTD=	c++98
 WRKSRC=		${WRKDIR}/${PORTNAME:S/-/_/}_Tool_${PORTVERSION:S/.//g}
 
 PORTDOCS=	HVS_file_format.txt HVSC_Update.txt SID_file_format.txt

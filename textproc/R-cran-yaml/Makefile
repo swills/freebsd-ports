@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-yaml/Makefile 469433 2018-05-09 06:04:23Z tota $
+# $FreeBSD: head/textproc/R-cran-yaml/Makefile 475402 2018-07-26 22:43:21Z tota $
 
 PORTNAME=	yaml
-PORTVERSION=	2.1.19
+PORTVERSION=	2.2.0
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

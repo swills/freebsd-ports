@@ -1,9 +1,9 @@
 # Created by: Glenn Johnson
-# $FreeBSD: head/biology/tinker/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/biology/tinker/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	tinker
 PORTVERSION=	7.1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	biology
 MASTER_SITES=	http://dasher.wustl.edu/tinker/downloads/
 

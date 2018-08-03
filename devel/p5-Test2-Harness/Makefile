@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test2-Harness/Makefile 468444 2018-04-27 15:55:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Test2-Harness/Makefile 475714 2018-07-29 19:12:11Z sunpoet $
 
 PORTNAME=	Test2-Harness
-PORTVERSION=	0.001065
+PORTVERSION=	0.001068
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:EXODIST

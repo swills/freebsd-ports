@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-itextomml/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/textproc/rubygem-itextomml/Makefile 476110 2018-07-31 23:53:52Z sunpoet $
 
 PORTNAME=	itextomml
-PORTVERSION=	1.5.6
+PORTVERSION=	1.5.7
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

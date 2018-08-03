@@ -1,9 +1,9 @@
 # Created by: Daniel O'Connor <darius@dons.net.au>
-# $FreeBSD: head/graphics/pfstools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/pfstools/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pfstools
 DISTVERSION=	2.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/py-softlayer/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-softlayer/Makefile 475759 2018-07-29 19:17:48Z sunpoet $
 
 PORTNAME=	softlayer
-PORTVERSION=	5.4.4
+PORTVERSION=	5.5.0
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=5:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}prettytable>=0.7.0:devel/py-prettytable@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ptable>=0.9.2:devel/py-ptable@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}prompt_toolkit>=0.53:devel/py-prompt_toolkit@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pygments>=2.0.0:textproc/py-pygments@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.18.4:www/py-requests@${PY_FLAVOR} \

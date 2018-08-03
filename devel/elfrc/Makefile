@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@fxq.nl>
-# $FreeBSD: head/devel/elfrc/Makefile 345022 2014-02-19 08:39:38Z ehaupt $
+# $FreeBSD: head/devel/elfrc/Makefile 475781 2018-07-29 19:20:58Z dbaio $
 
 PORTNAME=	elfrc
 PORTVERSION=	0.7
@@ -8,6 +8,9 @@ MASTER_SITES=	http://ktown.kde.org/~frerich/
 
 MAINTAINER=	ed@FreeBSD.org
 COMMENT=	Resource compiler for ELF systems
+
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PLIST_FILES=	bin/elfrc
 PORTDOCS=	README

@@ -1,9 +1,10 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/packetq/Makefile 468167 2018-04-24 00:49:55Z dbaio $
+# $FreeBSD: head/dns/packetq/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	packetq
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	dns
 
 MAINTAINER=	freebsd@dns.company

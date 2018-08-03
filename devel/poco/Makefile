@@ -1,8 +1,9 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/poco/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/devel/poco/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	poco
 PORTVERSION=	1.8.0.1
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-all
 CATEGORIES=	devel net
 MASTER_SITES=	http://pocoproject.org/releases/${PORTNAME}-${PORTVERSION}/

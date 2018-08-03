@@ -1,8 +1,9 @@
 # Created by: Johannes Dieterich <jmd@freebsd.org>
-# $FreeBSD: head/devel/oclgrind/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/devel/oclgrind/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	oclgrind
 PORTVERSION=	20180101
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 472565 2018-06-16 19:12:02Z krion $
+# $FreeBSD: head/converters/Makefile 475529 2018-07-28 12:03:06Z miwi $
 #
 
     COMMENT = Character code converters
@@ -162,6 +162,7 @@
     SUBDIR += py-iconv
     SUBDIR += py-pint
     SUBDIR += py-rencode
+    SUBDIR += py-text-unidecode
     SUBDIR += py-unidecode
     SUBDIR += py-webencodings
     SUBDIR += py-zfec

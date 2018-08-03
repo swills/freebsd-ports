@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/font-awesome/Makefile 474256 2018-07-09 13:54:58Z swills $
+# $FreeBSD: head/x11-fonts/font-awesome/Makefile 475860 2018-07-30 00:46:12Z yuri $
 
 PORTNAME=	font-awesome
-DISTVERSION=	5.1.0
+DISTVERSION=	5.2.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://use.fontawesome.com/releases/v${DISTVERSION}/
 DISTNAME=	fontawesome-free-${DISTVERSION}-desktop
@@ -10,6 +10,9 @@ MAINTAINER=	dg@syrec.org
 COMMENT=	Suite of pictographic icons from Font Awesome (free version)
 
 LICENSE=	OFL11
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+PORTSCOUT=	site:https://github.com/FortAwesome/Font-Awesome/releases
 
 USES=		fonts zip
 NO_ARCH=	yes

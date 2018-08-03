@@ -1,8 +1,9 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/devel/kdevelop-pg-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kdevelop-pg-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kdevelop-pg-qt
 DISTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/src
 DIST_SUBDIR=	KDE/kdevelop

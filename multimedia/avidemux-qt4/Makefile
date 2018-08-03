@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/avidemux-qt4/Makefile 464215 2018-03-11 22:48:02Z gerald $
+# $FreeBSD: head/multimedia/avidemux-qt4/Makefile 476029 2018-07-31 23:26:50Z bar $
 
 PORTNAME=	avidemux
 PORTVERSION=	${AVIDEMUX_VERSION}
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-qt4
 

@@ -1,9 +1,9 @@
 # Created by: bf@FreeBSD.org
-# $FreeBSD: head/math/kktdirect/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/kktdirect/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kktdirect
 PORTVERSION=	0.5
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	math
 MASTER_SITES=	http://www.cs.ubc.ca/~rbridson/download/ LOCAL/bf
 DISTNAME=	KKTDirect${PORTVERSION}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/glucose/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/math/glucose/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	glucose
 DISTVERSION=	4.1
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.labri.fr/perso/lsimon/downloads/softwares/
 DISTNAME=	glucose-syrup-${DISTVERSION}

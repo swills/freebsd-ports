@@ -1,9 +1,9 @@
 # Created by: bf@FreeBSD.org
-# $FreeBSD: head/math/spblas/Makefile 468411 2018-04-27 09:33:50Z amdmi3 $
+# $FreeBSD: head/math/spblas/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	spblas
 DISTVERSION=	1_02
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	http://math.nist.gov/spblas/:1 LOCAL/bf/:1 NL/blas/blast-forum/:2
 DISTFILES=	nist_spblas_${DISTVERSION}.zip:1

@@ -1,9 +1,9 @@
 # Created by: David Chisnall <theraven@FreeBSD.org>
-# $FreeBSD: head/devel/cheritrace-devel/Makefile 474787 2018-07-17 08:56:32Z antoine $
+# $FreeBSD: head/devel/cheritrace-devel/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cheritrace
 PORTVERSION=	0.0.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel security
 
 MAINTAINER=	theraven@FreeBSD.org

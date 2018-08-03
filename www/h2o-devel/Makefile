@@ -1,9 +1,10 @@
 # Created by: Dave Cottlehuber <dch@FreeBSD.org>
-# $FreeBSD: head/www/h2o-devel/Makefile 474959 2018-07-19 12:23:34Z dch $
+# $FreeBSD: head/www/h2o-devel/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	h2o
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.3.0-beta1
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMESUFFIX=	-devel
 

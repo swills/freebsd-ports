@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/simutrans/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/games/simutrans/Makefile 475510 2018-07-28 08:12:06Z tobik $
 
 PORTNAME=	simutrans
 DISTVERSION=	120-2-2
@@ -37,9 +37,12 @@ MAKE_ARGS=	BACKEND=mixer_sdl \
 		FLAGS="-DUSE_C -DREVISION=${SIMUTRANS_REVISION}" \
 		VERBOSE=1
 NO_WRKSUBDIR=	yes
-USES=		gmake zip
+USES=		compiler dos2unix gmake zip
 USE_SDL=	sdl mixer
 
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
+DOS2UNIX_GLOB=	*
 DESKTOP_ENTRIES=Simutrans "" "" simutrans "Game;Simulation;" false
 PLIST_FILES=	bin/simutrans bin/simutrans-bin
 PORTDATA=	*

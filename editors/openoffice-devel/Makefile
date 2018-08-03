@@ -1,8 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-devel/Makefile 472230 2018-06-12 04:00:07Z truckman $
+# $FreeBSD: head/editors/openoffice-devel/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION1}.${AOOVERSION2}.${SVNREVISION}
+PORTREVISION=	1
 #PORTREVISION=	1
 PORTEPOCH=	4
 CATEGORIES=	editors java

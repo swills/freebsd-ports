@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-pyodesys/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-pyodesys/Makefile 475470 2018-07-27 22:06:05Z yuri $
 
 PORTNAME=	pyodesys
-DISTVERSION=	0.11.14
+DISTVERSION=	0.11.15
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

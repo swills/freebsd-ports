@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/py-acefile/Makefile 470317 2018-05-18 18:56:48Z antoine $
+# $FreeBSD: head/archivers/py-acefile/Makefile 475494 2018-07-28 06:11:27Z antoine $
 
 PORTNAME=	acefile
-PORTVERSION=	0.6.9
+PORTVERSION=	0.6.10
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

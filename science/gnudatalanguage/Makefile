@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/gnudatalanguage/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/science/gnudatalanguage/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gnudatalanguage
 DISTVERSION=	0.9.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science lang
 MASTER_SITES=	SF/${PORTNAME}/gdl/${PORTVERSION}
 .if defined(BUILD_PYTHON_MODULE)

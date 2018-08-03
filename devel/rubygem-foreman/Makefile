@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/rubygem-foreman/Makefile 448125 2017-08-17 15:05:14Z sunpoet $
+# $FreeBSD: head/devel/rubygem-foreman/Makefile 476055 2018-07-31 23:47:57Z sunpoet $
 
 PORTNAME=	foreman
-PORTVERSION=	0.84.0
-PORTREVISION=	1
+PORTVERSION=	0.85.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

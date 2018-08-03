@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-linear-algebra/Makefile 469969 2018-05-14 21:04:13Z stephen $
+# $FreeBSD: head/math/octave-forge-linear-algebra/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	octave-forge-linear-algebra
 PORTVERSION=	2.2.2
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	1
 CATEGORIES=	math
 

@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/science/gromacs/Makefile 472566 2018-06-16 21:07:10Z yuri $
+# $FreeBSD: head/science/gromacs/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gromacs
 DISTVERSION=	2018.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	ftp://ftp.gromacs.org/pub/gromacs/
 

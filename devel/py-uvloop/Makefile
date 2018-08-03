@@ -1,8 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/devel/py-uvloop/Makefile 473997 2018-07-06 07:26:47Z farrokhi $
+# $FreeBSD: head/devel/py-uvloop/Makefile 476279 2018-08-03 06:58:17Z farrokhi $
 
 PORTNAME=	uvloop
-PORTVERSION=	0.11.0
+PORTVERSION=	0.11.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/LICENSE-MIT
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USES=		python:3.5+
-USE_PYTHON=	autoplist concurrent distutils setuptools
+USE_PYTHON=	autoplist concurrent distutils
 
 PORTDOCS=	PKG-INFO README.rst
 

@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/randlm/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/textproc/randlm/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	randlm
 PORTVERSION=	0.2.5
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}
 

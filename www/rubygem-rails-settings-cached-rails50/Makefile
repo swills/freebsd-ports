@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-rails-settings-cached-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/www/rubygem-rails-settings-cached-rails50/Makefile 476130 2018-07-31 23:55:35Z sunpoet $
 
 PORTNAME=	rails-settings-cached
-PORTVERSION=	0.6.6
+PORTVERSION=	0.7.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

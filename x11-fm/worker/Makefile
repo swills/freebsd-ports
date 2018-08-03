@@ -1,8 +1,9 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/x11-fm/worker/Makefile 471571 2018-06-04 16:33:22Z misha $
+# $FreeBSD: head/x11-fm/worker/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	worker
 PORTVERSION=	3.15.1
+PORTREVISION=	1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.boomerangsworld.de/cms/worker/downloads/
 

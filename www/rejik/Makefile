@@ -1,9 +1,9 @@
 # Created by: Elisey Savateev <b3k@mail.ru>
-# $FreeBSD: head/www/rejik/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/www/rejik/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	rejik
 PORTVERSION=	3.2.11
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	http://www.rejik.ru/download/
 DISTNAME=	redirector-${PORTVERSION}_squid_3.4

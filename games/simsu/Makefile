@@ -1,8 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/simsu/Makefile 475325 2018-07-25 18:30:40Z amdmi3 $
+# $FreeBSD: head/games/simsu/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	simsu
 PORTVERSION=	1.3.7
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	https://gottcode.org/${PORTNAME}/ \
 		https://mirror.amdmi3.ru/distfiles/

@@ -1,9 +1,9 @@
 # Created by: Vladimir Gorelov <virtual.lark@gmail.com>
-# $FreeBSD: head/devel/art/Makefile 470599 2018-05-22 08:34:13Z amdmi3 $
+# $FreeBSD: head/devel/art/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	art
 PORTVERSION=	0.9.01
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://skylark.tsu.ru/art/0.9/download/src/ \
 		SF/art-project/src/

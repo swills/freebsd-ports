@@ -1,9 +1,9 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/audio/funktrackergold/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/funktrackergold/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	funktrackergold
 DISTVERSION=	1.5-2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	SUNSITE/apps/sound/players
 

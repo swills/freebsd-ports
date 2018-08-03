@@ -1,14 +1,14 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-dri/Makefile 466926 2018-04-10 00:15:05Z jbeich $
+# $FreeBSD: head/graphics/mesa-dri/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	mesa-dri
 PORTVERSION=	${MESAVERSION}
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 COMMENT=	OpenGL hardware acceleration drivers for DRI2+
 
-USE_XORG=	dri2proto dri3proto glproto presentproto x11 xdamage xext \
-		xfixes xshmfence xv xvmc
+USE_XORG=	xorgproto x11 xdamage xext xfixes xshmfence xv xvmc
 
 OPTIONS_DEFINE=	TEXTURE VAAPI VDPAU
 OPTIONS_DEFAULT=TEXTURE

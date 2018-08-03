@@ -1,17 +1,18 @@
 # Created by: Espen Tagestad <espen@tagestad.no>
-# $FreeBSD: head/databases/p5-SQL-Abstract-More/Makefile 454370 2017-11-17 10:10:01Z culot $
+# $FreeBSD: head/databases/p5-SQL-Abstract-More/Makefile 475511 2018-07-28 08:59:25Z wen $
 
 PORTNAME=	SQL-Abstract-More
-PORTVERSION=	1.30
+PORTVERSION=	1.33
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	espen@tagestad.no
+MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Extension of SQL::Abstract with more constructs and more flexible API
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/README
 
 BUILD_DEPENDS=	p5-MRO-Compat>0:devel/p5-MRO-Compat \
 		p5-Params-Validate>0:devel/p5-Params-Validate \

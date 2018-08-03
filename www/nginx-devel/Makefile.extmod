@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/nginx-devel/Makefile.extmod 474774 2018-07-17 04:34:49Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile.extmod 476160 2018-08-01 07:37:22Z osa $
 
 ### External modules
 AJP_GH_TUPLE=		yaoweibin:nginx_ajp_module:bf6cd93:ajp
@@ -219,7 +219,7 @@ NAXSI_NGINX_VER=	0.56
 NAXSI_GH_TUPLE=		nbs-system:naxsi:${NAXSI_NGINX_VER}:naxsi
 NAXSI_VARS=		DSO_EXTMODS+=naxsi NAXSI_SUBDIR=/naxsi_src
 
-NJS_GH_TUPLE=		nginx:njs:b4a58c4:njs
+NJS_GH_TUPLE=		nginx:njs:a930e69:njs
 NJS_VARS=		DSO_EXTMODS+=njs NJS_SUBDIR=/nginx
 
 PASSENGER_NGINX_VER=	5.3.3

@@ -1,12 +1,12 @@
-# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 468862 2018-05-02 18:30:13Z jbeich $
+# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 475455 2018-07-27 18:34:37Z netchild $
 
 PORTNAME=	zoneminder-h264
 PORTVERSION=	1.30.20170222
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia
 
 MAINTAINER=	bsd@abinet.ru
-COMMENT=	Complete security camera solution, fully web based with image analysis
+COMMENT=	Complete security camera solution, fully web based with image analysis, experimental h264 version
 
 LICENSE=	GPLv2
 

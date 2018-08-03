@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/multimarkdown/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/textproc/multimarkdown/Makefile 475668 2018-07-29 18:11:05Z pi $
 
 PORTNAME=	multimarkdown
 DISTVERSION=	6.3.2
@@ -17,7 +17,7 @@ BROKEN_powerpc64=	fails to compile: Sources/libMultiMarkdown/file.h:116: redefin
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		cmake
+USES=		cmake localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	fletcher
 GH_PROJECT=	MultiMarkdown-6

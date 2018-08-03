@@ -1,9 +1,9 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/graphics/ogre3d/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/ogre3d/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ogre3d
 PORTVERSION=	1.9.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics devel
 MASTER_SITES=   https://bitbucket.org/sinbad/ogre/get/
 DISTNAME=	v1-9-0

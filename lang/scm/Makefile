@@ -1,9 +1,9 @@
 # Created by: hsu
-# $FreeBSD: head/lang/scm/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/scm/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	scm
 PORTVERSION=	5f2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang scheme
 MASTER_SITES=	http://groups.csail.mit.edu/mac/ftpdir/scm/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. OLD

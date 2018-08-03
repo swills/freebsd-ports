@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-POE-Loop-AnyEvent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-POE-Loop-AnyEvent/Makefile 475711 2018-07-29 19:11:55Z sunpoet $
 
 PORTNAME=	POE-Loop-AnyEvent
 PORTVERSION=	0.004
@@ -13,10 +13,10 @@ COMMENT=	AnyEvent event loop support for POE
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
+BUILD_DEPENDS=	p5-POE-Test-Loops>=1.035:devel/p5-POE-Test-Loops \
+		${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
 		p5-POE>=1.289:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
-BUILD_DEPENDS+=	p5-POE-Test-Loops>=1.035:devel/p5-POE-Test-Loops
 
 USE_PERL5=	configure
 USES=		perl5

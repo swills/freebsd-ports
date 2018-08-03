@@ -1,15 +1,16 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/x11/thinglaunch/Makefile 376411 2015-01-06 09:40:51Z ehaupt $
+# $FreeBSD: head/x11/thinglaunch/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	thinglaunch
 PORTVERSION=	1.8
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	LOCAL/ehaupt
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Very fast launcher program for X
 
-USE_XORG=	x11 xproto
+USE_XORG=	x11 xorgproto
 
 CPPFLAGS+=	-I${LOCALBASE}/include -lX11
 LDFLAGS+=	-L${LOCALBASE}/lib

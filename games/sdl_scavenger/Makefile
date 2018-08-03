@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/sdl_scavenger/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/games/sdl_scavenger/Makefile 475555 2018-07-28 13:09:36Z tobik $
 
 PORTNAME=	sdl_scavenger
 PORTVERSION=	145.2015.01.05
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/sdlscavenger/
@@ -20,7 +20,6 @@ USES=		gmake shebangfix tar:tgz
 SHEBANG_FILES=	scavsaver
 bash_CMD=	/bin/sh
 USE_SDL=	sdl image mixer
-USE_GCC=	yes
 ALL_TARGET=
 
 PORTDOCS=	CREDITS DOC NEW_FEATURES README STRATEGY

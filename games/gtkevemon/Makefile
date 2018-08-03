@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/gtkevemon/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/gtkevemon/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	gtkevemon
 PORTVERSION=	1.10.2016.02.17
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	feld@FreeBSD.org

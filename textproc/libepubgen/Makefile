@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/libepubgen/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/textproc/libepubgen/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libepubgen
 PORTVERSION=	0.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

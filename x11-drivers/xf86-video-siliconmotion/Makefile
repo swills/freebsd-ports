@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-video-siliconmotion/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/x11-drivers/xf86-video-siliconmotion/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xf86-video-siliconmotion
 PORTVERSION=	1.7.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

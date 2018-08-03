@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/devel/ucommon/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/ucommon/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ucommon
 PORTVERSION=	7.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNU/commoncpp
 

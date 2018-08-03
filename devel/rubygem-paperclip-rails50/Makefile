@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-paperclip-rails50/Makefile 464109 2018-03-10 23:01:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-paperclip-rails50/Makefile 476064 2018-07-31 23:48:45Z sunpoet $
 
 PORTNAME=	paperclip
-PORTVERSION=	6.0.0
+PORTVERSION=	6.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

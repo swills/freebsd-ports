@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/lives/Makefile 469466 2018-05-09 20:27:51Z swills $
+# $FreeBSD: head/multimedia/lives/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lives
 PORTVERSION=	2.8.7
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	http://lives-video.com/releases/
 DISTNAME=	LiVES-${PORTVERSION}

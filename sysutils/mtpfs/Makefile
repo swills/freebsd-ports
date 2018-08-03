@@ -1,5 +1,5 @@
 # Created by: John Hixson <john@pcbsd.org>
-# $FreeBSD: head/sysutils/mtpfs/Makefile 436558 2017-03-20 18:42:27Z araujo $
+# $FreeBSD: head/sysutils/mtpfs/Makefile 476169 2018-08-01 09:37:54Z amdmi3 $
 
 PORTNAME=	mtpfs
 PORTVERSION=	1.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.adebenham.com/files/mtp/
 
 MAINTAINER=	jhixson@gmail.com
 COMMENT=	MTP device filesystem
+
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libmtp.so:multimedia/libmtp \
 		libid3.so:audio/id3lib \

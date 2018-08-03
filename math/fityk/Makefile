@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/fityk/Makefile 471351 2018-06-02 08:56:35Z wen $
+# $FreeBSD: head/math/fityk/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	fityk
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math
 

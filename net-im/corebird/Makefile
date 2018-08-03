@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net-im/corebird/Makefile 463397 2018-03-02 13:34:27Z cpm $
+# $FreeBSD: head/net-im/corebird/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	corebird
 PORTVERSION=	1.7.4
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	cpm@FreeBSD.org

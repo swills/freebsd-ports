@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-gssapi/Makefile 472837 2018-06-20 01:38:58Z miwi $
+# $FreeBSD: head/security/py-gssapi/Makefile 476201 2018-08-01 21:45:21Z bhughes $
 
 PORTNAME=	gssapi
-DISTVERSION=	1.5.0
+DISTVERSION=	1.5.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

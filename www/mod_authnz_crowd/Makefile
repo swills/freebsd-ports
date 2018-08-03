@@ -1,9 +1,9 @@
 # Created by: Vick Khera <vivek@khera.org>
-# $FreeBSD: head/www/mod_authnz_crowd/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/www/mod_authnz_crowd/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mod_authnz_crowd
 PORTVERSION=	2.2.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	www
 MASTER_SITES=	http://downloads.atlassian.com/software/crowd/downloads/cwdapache/
 DIST_SUBDIR=	apache2

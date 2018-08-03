@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/math/blocksolve95/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/blocksolve95/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	blocksolve95
 PORTVERSION=	3.0
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	math parallel
 MASTER_SITES=	ftp://ftp.mcs.anl.gov/pub/BlockSolve95/ \
 		http://ftp.mcs.anl.gov/pub/BlockSolve95/

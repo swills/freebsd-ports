@@ -1,10 +1,10 @@
 # Created by: Andras Horvath <han@log69.com>
-# $FreeBSD: head/graphics/aaphoto/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/aaphoto/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	aaphoto
 PORTVERSION=	0.43.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics
 
 MAINTAINER=	mail@log69.com

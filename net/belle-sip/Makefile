@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/belle-sip/Makefile 473012 2018-06-22 01:15:19Z linimon $
+# $FreeBSD: head/net/belle-sip/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	belle-sip
 PORTVERSION=	1.5.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net java
 MASTER_SITES=	SAVANNAH/linphone/${PORTNAME}/ \
 		http://www.antlr3.org/download/:source2

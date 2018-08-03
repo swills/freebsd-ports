@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl/Makefile 474428 2018-07-11 08:37:43Z amdmi3 $
+# $FreeBSD: head/security/openssl/Makefile 476184 2018-08-01 16:33:11Z adamw $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.2o
@@ -112,7 +112,7 @@ CFLAGS+= -Werror -Qunused-arguments
 .endif
 
 .if ${PREFIX} == /usr
-IGNORE=	the OpenSSL port can not be installed over the base version
+IGNORE=	the OpenSSL port cannot be installed over the base version
 .endif
 
 OPENSSLDIR?=	${PREFIX}/openssl

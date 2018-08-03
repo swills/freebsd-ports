@@ -1,9 +1,9 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/blacs/Makefile 469120 2018-05-05 15:09:22Z danfe $
+# $FreeBSD: head/math/blacs/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	blacs
 PORTVERSION=	1.7
-PORTREVISION=	31
+PORTREVISION=	32
 CATEGORIES=	math
 MASTER_SITES=	NETLIB/blacs
 DISTNAME=	BLACS

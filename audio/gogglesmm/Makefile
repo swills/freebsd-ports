@@ -1,9 +1,8 @@
 # Created by: Sascha Klauder <sklauder@trimind.de>
-# $FreeBSD: head/audio/gogglesmm/Makefile 462001 2018-02-16 11:05:58Z jhale $
+# $FreeBSD: head/audio/gogglesmm/Makefile 476199 2018-08-01 20:39:46Z jhale $
 
 PORTNAME=	gogglesmm
-PORTVERSION=	1.1.9
-PORTREVISION=	2
+PORTVERSION=	1.2.1
 CATEGORIES=	audio
 
 MAINTAINER=	jhale@FreeBSD.org
@@ -12,19 +11,19 @@ COMMENT=	Music collection manager and player
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN_powerpc64=	fails to compile: ap_mad.cpp:358:2: \#error fixme
+
 LIB_DEPENDS=	libtag.so:audio/taglib \
 		libexpat.so:textproc/expat2 \
 		libFOX-1.7.so:x11-toolkits/fox17
 
-BROKEN_powerpc64=	fails to compile: ap_mad.cpp:358:2: \#error fixme
-
-USE_GITHUB=	yes
-
 USES=		cmake compiler:c++11-lib desktop-file-utils \
 		localbase:ldflags pkgconfig shebangfix sqlite
+USE_GITHUB=	yes
 USE_XORG=	ice sm x11
-INSTALLS_ICONS=	yes
 
+CMAKE_OFF=	WITH_CFOX
+INSTALLS_ICONS=	yes
 SHEBANG_FILES=	extra/*.py
 
 PORTDOCS=	AUTHORS ChangeLog README

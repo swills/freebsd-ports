@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-unicorn/Makefile 464671 2018-03-16 10:06:15Z jhale $
+# $FreeBSD: head/www/rubygem-unicorn/Makefile 475956 2018-07-31 00:05:19Z sunpoet $
 
 PORTNAME=	unicorn
-PORTVERSION=	5.4.0
+PORTVERSION=	5.4.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

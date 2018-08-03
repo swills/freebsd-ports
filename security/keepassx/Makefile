@@ -1,8 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/keepassx/Makefile 474515 2018-07-12 13:45:51Z swills $
+# $FreeBSD: head/security/keepassx/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	KeePassX
 PORTVERSION=	0.4.4
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.keepassx.org/releases/${PORTVERSION}/ \
 		http://www.keepassx.org/releases/${PORTVERSION}/
@@ -22,7 +23,7 @@ PORTSCOUT=	ignore
 USES=		desktop-file-utils qmake qt:4 shared-mime-info
 USE_QT=		moc_build uic_build qt3support_build rcc_build \
 		corelib gui xml
-USE_XORG=	xt inputproto xtst xrender xrandr xfixes xcursor\
+USE_XORG=	xt xorgproto xtst xrender xrandr xfixes xcursor\
 		xext x11 sm ice xi
 
 QMAKE_ARGS+=	INCLUDEPATH+=${LOCALBASE}/include LIBS+=-L${LOCALBASE}/lib

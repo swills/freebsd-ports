@@ -1,5 +1,5 @@
 # Created by: aaron@FreeBSD.org
-# $FreeBSD: head/games/libdungeonmaker/Makefile 385787 2015-05-08 14:04:50Z amdmi3 $
+# $FreeBSD: head/games/libdungeonmaker/Makefile 475507 2018-07-28 07:41:24Z tobik $
 
 PORTNAME=	libdungeonmaker
 PORTVERSION=	2.05
@@ -13,6 +13,10 @@ COMMENT=	Program/library that "grows" dungeons for use in isometric games
 
 LICENSE=	GPLv1
 
+DEPRECATED=	Abandonware. Unused in the ports tree
+EXPIRATION_DATE=	2018-08-30
+
+USE_CXXSTD=	gnu++98
 USE_LDCONFIG=	yes
 
 SUB_FILES=	pkg-message

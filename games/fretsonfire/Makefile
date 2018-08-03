@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/fretsonfire/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/fretsonfire/Makefile 475617 2018-07-28 23:23:46Z yuri $
 
 PORTNAME=	fretsonfire
 PORTVERSION=	1.3.110
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/copying.txt
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}game>=0:devel/py-game@${PY_FLAVOR} \
+		${PYGAME} \
 		${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
 		${LOCALBASE}/share/${PORTNAME}/default.ttf:games/fretsonfire-data

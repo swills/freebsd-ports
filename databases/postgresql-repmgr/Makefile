@@ -1,8 +1,8 @@
 # Created by: alp@sfedu.ru
-# $FreeBSD: head/databases/postgresql-repmgr/Makefile 475208 2018-07-23 21:52:47Z bofh $
+# $FreeBSD: head/databases/postgresql-repmgr/Makefile 476215 2018-08-02 05:03:11Z bofh $
 
 PORTNAME=	postgresql-repmgr
-PORTVERSION=	4.0.6
+PORTVERSION=	4.1.0
 CATEGORIES=	databases
 MASTER_SITES=	http://www.repmgr.org/download/
 DISTNAME=	repmgr-${PORTVERSION}

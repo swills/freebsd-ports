@@ -1,10 +1,10 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/mosesdecoder/Makefile 472395 2018-06-14 19:38:52Z amdmi3 $
+# $FreeBSD: head/math/mosesdecoder/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	mosesdecoder
 PORTVERSION=	2.1.1
 DISTVERSIONPREFIX=	RELEASE-
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	math
 
 MAINTAINER=	demon@FreeBSD.org

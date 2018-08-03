@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-retriable/Makefile 446916 2017-07-30 13:12:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-retriable/Makefile 475777 2018-07-29 19:20:41Z sunpoet $
 
 PORTNAME=	retriable
-PORTVERSION=	3.1.1
+PORTVERSION=	3.1.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

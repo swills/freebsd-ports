@@ -1,8 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/graphics/swfmill/Makefile 471400 2018-06-02 19:40:59Z linimon $
+# $FreeBSD: head/graphics/swfmill/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	swfmill
 PORTVERSION=	0.3.6
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://swfmill.org/releases/
 

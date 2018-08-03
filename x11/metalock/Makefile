@@ -1,9 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/x11/metalock/Makefile 422140 2016-09-14 15:59:34Z mat $
+# $FreeBSD: head/x11/metalock/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	metalock
 PORTVERSION=	0.8.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	BERLIOS
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -16,7 +16,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKDIR}/${DISTNAME}/LICENSE
 
 USES=		tar:bzip2
-USE_XORG=	x11 xt xproto xext xpm
+USE_XORG=	x11 xt xorgproto xext xpm
 
 OPTIONS_DEFINE=	IMLIB2 XFT ULTRAGETOPT
 OPTIONS_DEFAULT=	IMLIB2 XFT ULTRAGETOPT

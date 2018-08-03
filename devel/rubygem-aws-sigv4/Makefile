@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-aws-sigv4/Makefile 449065 2017-09-01 10:50:37Z sunpoet $
+# $FreeBSD: head/devel/rubygem-aws-sigv4/Makefile 475768 2018-07-29 19:18:34Z sunpoet $
 
 PORTNAME=	aws-sigv4
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

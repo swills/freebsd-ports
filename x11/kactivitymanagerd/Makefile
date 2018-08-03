@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/kactivitymanagerd/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/kactivitymanagerd/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kactivitymanagerd
 PORTVERSION=	${KDE4_ACTIVITIES_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11 kde
 MASTER_SITES=	KDE/Attic/${PORTVERSION}/src
 DISTNAME=	kactivities-${PORTVERSION}

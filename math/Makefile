@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 475328 2018-07-25 19:14:54Z yuri $
+# $FreeBSD: head/math/Makefile 476278 2018-08-03 05:05:08Z yuri $
 #
 
     COMMENT = Mathematics
@@ -595,6 +595,7 @@
     SUBDIR += p5-Set-Window
     SUBDIR += p5-Statistics-Basic
     SUBDIR += p5-Statistics-Benford
+    SUBDIR += p5-Statistics-CaseResampling
     SUBDIR += p5-Statistics-ChiSquare
     SUBDIR += p5-Statistics-Contingency
     SUBDIR += p5-Statistics-Descriptive
@@ -736,7 +737,7 @@
     SUBDIR += py-uncertainties
     SUBDIR += py-viper
     SUBDIR += py-yt
-    SUBDIR += py-z3
+    SUBDIR += py-z3-solver
     SUBDIR += qalculate
     SUBDIR += qd
     SUBDIR += qhull
@@ -842,6 +843,7 @@
     SUBDIR += yacas
     SUBDIR += yices
     SUBDIR += z3
+    SUBDIR += zegrapher
     SUBDIR += zimpl
 
 .include <bsd.port.subdir.mk>

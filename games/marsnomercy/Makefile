@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/marsnomercy/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/marsnomercy/Makefile 475506 2018-07-28 07:29:00Z tobik $
 
 PORTNAME=	marsnomercy
 PORTVERSION=	0.2.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	SF/mars/mars/${PORTVERSION}
 DISTNAME=	mars-${PORTVERSION}-src
@@ -14,11 +14,15 @@ COMMENT=	Turn-based strategy game setting on Mars
 LICENSE=	GPLv2 # version unspecified actually
 
 BUILD_DEPENDS=	scons:devel/scons
+LIB_DEPENDS=	libpng.so:graphics/png
 
+USES=		compiler
 USE_GL=		gl
 USE_SDL=	sdl image ttf
 SCONS_ARGS=	prefix=${PREFIX}
 
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 SUB_FILES=	mars-nomercy pkg-message
 WRKSRC=		${WRKDIR}/mars-${PORTVERSION}
 

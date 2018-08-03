@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/lang/cilkplus/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/cilkplus/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cilkplus
 PORTVERSION=	20160603
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang devel
 MASTER_SITES=	https://www.cilkplus.org/sites/default/files/runtime_source/
 PKGNAMESUFFIX=	-rtl

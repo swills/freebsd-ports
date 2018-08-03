@@ -1,15 +1,14 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/security/super/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/super/Makefile 475405 2018-07-26 23:28:32Z garga $
 
 PORTNAME=	super
-PORTVERSION=	3.30.0
-PORTREVISION=	1
+PORTVERSION=	3.30.1
 CATEGORIES=	security sysutils
 MASTER_SITES=	ftp://ftp.ucolick.org/pub/users/will/ \
 		http://www.ucolick.org/~will/RUE/super/
 EXTRACT_SUFX=	-tar.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@googlemail.com
 COMMENT=	Allow others to run commands as root
 
 LICENSE=	ART10 GPLv1+

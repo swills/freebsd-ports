@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openxcom/Makefile 472063 2018-06-09 16:11:58Z amdmi3 $
+# $FreeBSD: head/games/openxcom/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	openxcom
 PORTVERSION=	1.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

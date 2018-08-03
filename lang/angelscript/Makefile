@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/lang/angelscript/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/lang/angelscript/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	angelscript
 PORTVERSION=	2.29.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	http://www.angelcode.com/angelscript/sdk/files/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

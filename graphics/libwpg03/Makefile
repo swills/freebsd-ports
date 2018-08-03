@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/libwpg03/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/graphics/libwpg03/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libwpg
 PORTVERSION=	0.3.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	03

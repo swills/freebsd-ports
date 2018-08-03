@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/ags/Makefile 474982 2018-07-19 21:27:40Z tobik $
+# $FreeBSD: head/games/ags/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ags
 DISTVERSION=	3.4.1.14
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	https://github.com/adventuregamestudio/ags/releases/download/v.${DISTVERSION}/
 DISTNAME=	ags_linux_v.${DISTVERSION}

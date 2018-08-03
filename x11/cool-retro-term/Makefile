@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/cool-retro-term/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/cool-retro-term/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	cool-retro-term
 PORTVERSION=	1.0.0
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11
 

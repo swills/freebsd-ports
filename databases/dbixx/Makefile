@@ -1,8 +1,9 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/databases/dbixx/Makefile 474784 2018-07-17 08:19:49Z farrokhi $
+# $FreeBSD: head/databases/dbixx/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	dbixx
 PORTVERSION=	0.0.4
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	SF/cppcms/${PORTNAME}/${PORTVERSION}
 

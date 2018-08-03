@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/kig/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/kig/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kig
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

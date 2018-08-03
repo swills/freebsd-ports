@@ -1,9 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/graphics/opencsg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/opencsg/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	opencsg
 PORTVERSION=	1.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.opencsg.org/
 DISTNAME=	OpenCSG-${PORTVERSION}

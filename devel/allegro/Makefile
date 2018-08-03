@@ -1,5 +1,5 @@
 # Created by: Jimmy Olgeni <olgeni@FreeBSD.org>
-# $FreeBSD: head/devel/allegro/Makefile 442981 2017-06-09 13:30:19Z tobik $
+# $FreeBSD: head/devel/allegro/Makefile 475552 2018-07-28 12:50:39Z tobik $
 
 PORTNAME=	allegro
 DISTVERSION=	4.4.2
@@ -7,7 +7,7 @@ PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	SF/alleg/allegro/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Cross-platform library for games and multimedia programming
 
 LICENSE=	GIFTWARE

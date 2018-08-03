@@ -1,11 +1,13 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/bzr-fastimport/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/bzr-fastimport/Makefile 475413 2018-07-27 05:41:19Z yuri $
 
 PORTNAME=	bzr-fastimport
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	http://launchpadlibrarian.net/94774555/ \
-		http://www.c-s.li/ports/
+MASTER_SITES=	${MASTER_SITE_DEBIAN_POOL}
+DISTNAME=	${PORTNAME}_${PORTVERSION}+bzr361
+EXTRACT_SUFX=	.orig.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Provide fast loading of revision control data into bzr
@@ -18,5 +20,9 @@ RUN_DEPENDS=	bzr:devel/bzr \
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
+
+WRKSRC=		${WRKDIR}/${DISTNAME:S/_/-/}
+PATCH_STRIP=	-p1
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/openbsc/Makefile 457170 2017-12-24 14:59:56Z tijl $
+# $FreeBSD: head/net/openbsc/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	openbsc
 PORTVERSION=	0.15.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://git.osmocom.org/${PORTNAME}/snapshot/ \
 		http://chaosophia.net/downloads/osmocom/${PORTNAME}/

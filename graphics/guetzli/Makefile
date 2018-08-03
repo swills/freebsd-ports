@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/guetzli/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/graphics/guetzli/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	guetzli
 PORTVERSION=	1.0.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

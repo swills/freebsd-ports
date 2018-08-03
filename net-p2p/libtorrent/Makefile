@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-p2p/libtorrent/Makefile 475216 2018-07-24 00:38:48Z dbaio $
+# $FreeBSD: head/net-p2p/libtorrent/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	libtorrent
 PORTVERSION=	0.13.7
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://rtorrent.net/downloads/
 

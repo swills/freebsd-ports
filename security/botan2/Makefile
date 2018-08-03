@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/botan2/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/security/botan2/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	botan
 DISTVERSION=	2.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://botan.randombit.net/releases/
 PKGNAMESUFFIX=	2

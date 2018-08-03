@@ -1,8 +1,8 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/sysutils/rubygem-bundler/Makefile 470240 2018-05-17 18:30:39Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-bundler/Makefile 476099 2018-07-31 23:52:55Z sunpoet $
 
 PORTNAME=	bundler
-PORTVERSION=	1.16.2
+PORTVERSION=	1.16.3
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

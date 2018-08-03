@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-ipyparallel/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-ipyparallel/Makefile 475941 2018-07-31 00:04:02Z sunpoet $
 
 PORTNAME=	ipyparallel
-PORTVERSION=	6.2.0
+PORTVERSION=	6.2.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

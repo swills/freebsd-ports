@@ -1,9 +1,9 @@
 # Created by: David Shane Holden <dpejesh@yahoo.com>
-# $FreeBSD: head/devel/kronosnet/Makefile 469705 2018-05-12 03:26:59Z vanilla $
+# $FreeBSD: head/devel/kronosnet/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	kronosnet
 PORTVERSION=	1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://kronosnet.org/releases/
 

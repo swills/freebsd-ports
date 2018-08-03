@@ -1,8 +1,9 @@
 # Created by: Tobias Reifenberger <tr@freebsd.mayn.de>
-# $FreeBSD: head/emulators/stonx/Makefile 428647 2016-12-16 07:26:44Z dinoex $
+# $FreeBSD: head/emulators/stonx/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	stonx
 PORTVERSION=	0.6.7e.6
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/stonx/stonx/0.6.7.6
 DISTNAME=	STonX-0.6.7.6
@@ -23,7 +24,7 @@ RESTRICTED=	Contains ROM (C) by Atari
 TOSIMG?=	tos.img
 USES=		fonts
 FONTNAME=	misc
-USE_XORG=	x11 sm ice xext xextproto
+USE_XORG=	x11 sm ice xext xorgproto
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--x-includes=${LOCALBASE}/include \
 		--x-libraries=${LOCALBASE}/lib

@@ -1,8 +1,9 @@
 # Created by: Craig Leres <leres@freebsd.org>
-# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 473009 2018-06-21 23:52:37Z linimon $
+# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	xtensa-esp32-elf
 DISTVERSION=	1.22.0.g20171219
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases/binutils:source1 \
 		GNU/binutils:source1 \
@@ -62,6 +63,7 @@ TAGNAME=	1.22.0-80-g6c4433a5
 GH_TUPLE=	espressif:${SUBDIR}:${TAGNAME}
 BINARY_ALIAS=	g++=${CXX} gcc=${CC} python=${PYTHON_VERSION}
 BUILD_ENV=	CT_ALLOW_BUILD_AS_ROOT_SURE=1 \
+		LD_RUN_PATH=${PREFIX}/lib/${CC} \
 		${MAKE_ENV:MPATH=*}
 
 post-extract:

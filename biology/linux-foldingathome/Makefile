@@ -1,5 +1,5 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/biology/linux-foldingathome/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/biology/linux-foldingathome/Makefile 475407 2018-07-27 02:19:43Z eadler $
 
 PORTNAME=	foldingathome
 PORTVERSION=	5.04
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	linux-
 DISTNAME=	FAH${PORTVERSION:S/.//}-Linux
 EXTRACT_SUFX=	.exe
 
-MAINTAINER=	onatan@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Distributed client for Protein Folding
 
 USES=		linux

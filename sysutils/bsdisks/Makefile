@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/bsdisks/Makefile 475241 2018-07-24 11:22:40Z arrowd $
+# $FreeBSD: head/sysutils/bsdisks/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	bsdisks
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://bitbucket.org/arrowd/bsdisks/downloads/
 

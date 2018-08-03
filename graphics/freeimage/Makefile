@@ -1,9 +1,9 @@
 # Created by: Choe, Cheng-Dae <whitekid@gmail.com>
-# $FreeBSD: head/graphics/freeimage/Makefile 473660 2018-07-01 09:17:45Z linimon $
+# $FreeBSD: head/graphics/freeimage/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	freeimage
 PORTVERSION=	3.16.0
-PORTREVISION=	5
+PORTREVISION=	6
 # Version 3.17.0 is available, but does not build on i386 (and probably
 # other 32-bit arches) without some not-quite-trivial patching.  If one
 # decides to update the port, please make sure 32-bit builds are tested!

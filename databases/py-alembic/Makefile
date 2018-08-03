@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/py-alembic/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-alembic/Makefile 476001 2018-07-31 13:21:48Z lwhsu $
 
 PORTNAME=	alembic
-PORTVERSION=	0.9.9
+PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ LICENSE=	MIT
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mako>=0:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-editor>=0:devel/py-python-editor@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0:databases/py-sqlalchemy10@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}sqlalchemy12>=0:databases/py-sqlalchemy12@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

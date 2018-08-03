@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/ephoto/Makefile 463149 2018-02-27 18:15:46Z yuri $
+# $FreeBSD: head/graphics/ephoto/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	ephoto
 DISTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	graphics enlightenment
 MASTER_SITES=	https://download.enlightenment.org/rel/apps/${PORTNAME}/
 DIST_SUBDIR=	enlightenment

@@ -1,9 +1,8 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/multimedia/emby-server/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/emby-server/Makefile 475490 2018-07-28 05:30:58Z woodsb02 $
 
 PORTNAME=	emby-server
-PORTVERSION=	3.3.1.0
-PORTREVISION=	1
+PORTVERSION=	3.5.0.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	woodsb02@FreeBSD.org
@@ -12,7 +11,7 @@ COMMENT=	Home media server built using mono and other open source technologies
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-BUILD_DEPENDS=	referenceassemblies-pcl>=0:lang/referenceassemblies-pcl
+BUILD_DEPENDS=	msbuild:devel/msbuild
 LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg
 
 CONFLICTS_INSTALL=	mediabrowser
@@ -37,15 +36,12 @@ X11_LIB_DEPENDS_OFF=	libMagickWand-6.so:graphics/ImageMagick-nox11
 
 do-build:
 	(cd ${WRKSRC} && \
-		${SETENV} ${MAKE_ENV} ${LOCALBASE}/bin/xbuild /t:build /p:Configuration="Release Mono" \
+		${SETENV} ${MAKE_ENV} ${LOCALBASE}/bin/msbuild /t:build /p:Configuration="Release Mono" \
 			/p:Platform="Any CPU" MediaBrowser.sln)
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/emby-server
 	(cd ${WRKSRC}/MediaBrowser.Server.Mono/bin/Release && \
-		${ECHO_MSG} "Deleting the following non-FreeBSD library files:" && \
-		${FIND} -E . -iregex '(.*\.dylib)' -print -delete && \
-		${FIND} . -type d -empty -print -delete && \
 		${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/lib/emby-server)
 
 .include <bsd.port.mk>

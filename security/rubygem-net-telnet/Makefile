@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/rubygem-net-telnet/Makefile 438735 2017-04-17 16:50:32Z miwi $
+# $FreeBSD: head/security/rubygem-net-telnet/Makefile 476096 2018-07-31 23:52:40Z sunpoet $
 
 PORTNAME=	net-telnet
-PORTVERSION=	0.1.1
-PORTREVISION=	1
+PORTVERSION=	0.2.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

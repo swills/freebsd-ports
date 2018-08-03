@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-elasticsearch/Makefile 465377 2018-03-23 16:45:29Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-elasticsearch/Makefile 476107 2018-07-31 23:53:37Z sunpoet $
 
 PORTNAME=	elasticsearch
-PORTVERSION=	6.0.2
+PORTVERSION=	6.1.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

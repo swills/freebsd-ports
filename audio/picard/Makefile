@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/audio/picard/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/picard/Makefile 476006 2018-07-31 15:37:00Z jhale $
 
 PORTNAME=	picard
-PORTVERSION=	1.4.2
-PORTREVISION=	1
+PORTVERSION=	2.0.2
 CATEGORIES=	audio python
 MASTER_SITES=	http://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
 		ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
@@ -18,9 +17,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}discid>=0.5.2:audio/py-discid@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mutagen>=1.23:audio/py-mutagen@${PY_FLAVOR}
 
-USES=		gettext pyqt:4 python:2.7 desktop-file-utils
-USE_PYQT=	core_run gui_run network_run xml_run sip
-USE_PYTHON=	distutils
+USES=		gettext pyqt:5 python:3.5+ desktop-file-utils
+USE_LOCALE=	en_US.UTF-8
+USE_PYQT=	core_run gui_run network_run widgets_run sip
+USE_PYTHON=	autoplist distutils noflavors
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-release-${PORTVERSION}
 
@@ -37,6 +37,6 @@ post-patch:
 		${WRKSRC}/setup.py
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/picard/util/astrcmp.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/picard/util/_astrcmp.so
 
 .include <bsd.port.mk>

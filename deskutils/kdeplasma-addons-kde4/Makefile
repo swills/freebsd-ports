@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/kdeplasma-addons-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/kdeplasma-addons-kde4/Makefile 475421 2018-07-27 10:14:39Z jhale $
 
 PORTNAME=	kdeplasma-addons
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	deskutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 469306 2018-05-07 18:05:48Z kmoore $
+# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	grub2-pcbsd
 PORTVERSION=	2.02q
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.pcbsd.org/~kris/software/ \
 		ftp://ftp.pcbsd.org/pub/software/

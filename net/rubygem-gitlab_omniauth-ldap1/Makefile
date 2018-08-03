@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-gitlab_omniauth-ldap1/Makefile 442932 2017-06-08 14:07:31Z sunpoet $
+# $FreeBSD: head/net/rubygem-gitlab_omniauth-ldap1/Makefile 476040 2018-07-31 23:45:42Z sunpoet $
 
 PORTNAME=	gitlab_omniauth-ldap
 PORTVERSION=	1.2.1
@@ -11,6 +11,9 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	LDAP strategy for OmniAuth
 
 LICENSE=	MIT
+
+DEPRECATED=	Use net/rubygem-gitlab_omniauth-ldap instead
+EXPIRATION_DATE=2018-08-31
 
 RUN_DEPENDS=	rubygem-net-ldap>=0.9:net/rubygem-net-ldap \
 		rubygem-omniauth>=1.0:security/rubygem-omniauth \

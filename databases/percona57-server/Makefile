@@ -1,9 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-server/Makefile 466073 2018-03-31 18:26:51Z flo $
+# $FreeBSD: head/databases/percona57-server/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME?=	percona
 DISTVERSION=	5.7.21-20
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://www.percona.com/downloads/Percona-Server-5.7/Percona-Server-${DISTVERSION}/source/tarball/:percona \
 		SF/boost/boost/1.59.0:boost

@@ -1,10 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/lang/elixir/Makefile 474363 2018-07-10 13:03:02Z dumbbell $
+# $FreeBSD: head/lang/elixir/Makefile 476027 2018-07-31 22:14:54Z dch $
 
 PORTNAME=	elixir
-PORTVERSION=	1.6.6
-PORTREVISION=	1
 DISTVERSIONPREFIX=	v
+DISTVERSION=	1.7.0
 CATEGORIES=	lang
 MASTER_SITES+=	https://github.com/elixir-lang/elixir/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/:doc
 DISTFILES=	Docs.zip:doc

@@ -1,8 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/games/pioneer/Makefile 461383 2018-02-10 11:17:38Z yuri $
+# $FreeBSD: head/games/pioneer/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	pioneer
 DISTVERSION=	0.0.${GH_TAGNAME}
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	lightside@gmx.com

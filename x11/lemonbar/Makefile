@@ -1,9 +1,10 @@
 # Created by: Evgeni Dimitrov <evgeni.dimitrov@gmail.com>
-# $FreeBSD: head/x11/lemonbar/Makefile 458981 2018-01-14 15:21:26Z tobik $
+# $FreeBSD: head/x11/lemonbar/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	lemonbar
 DISTVERSIONPREFIX=v
 DISTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	dg@syrec.org

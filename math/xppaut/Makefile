@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/xppaut/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/math/xppaut/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	xppaut
 PORTVERSION=	7.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math graphics
 MASTER_SITES=	http://www.math.pitt.edu/~bard/bardware/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -14,7 +14,7 @@ COMMENT=	Graphical tool for solving differential equations, etc
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_XORG=	x11 xbitmaps xproto
+USE_XORG=	x11 xbitmaps xorgproto
 CFLAGS+=	-w -Wno-return-type
 WRKSRC=		${WRKDIR}
 ALL_TARGET=	xppaut

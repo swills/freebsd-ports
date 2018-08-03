@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/jellyfish/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/biology/jellyfish/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	jellyfish
 PORTVERSION=	2.2.6
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	biology
 

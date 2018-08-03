@@ -1,8 +1,8 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/print/py-fonttools/Makefile 473272 2018-06-24 20:21:16Z sunpoet $
+# $FreeBSD: head/print/py-fonttools/Makefile 475760 2018-07-29 19:17:53Z sunpoet $
 
 PORTNAME=	fonttools
-PORTVERSION=	3.28.0
+PORTVERSION=	3.29.0
 CATEGORIES=	print python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

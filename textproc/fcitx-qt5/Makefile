@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/fcitx-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/fcitx-qt5/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	fcitx-qt5
 DISTVERSION=	1.2.3
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	yuri@FreeBSD.org

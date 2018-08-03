@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql57-server/Makefile 473276 2018-06-24 21:11:14Z sunpoet $
+# $FreeBSD: head/databases/mysql57-server/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.7.22
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES=	databases ipv6
 MASTER_SITES=	MYSQL/MySQL-5.7
 PKGNAMESUFFIX?=	57-server

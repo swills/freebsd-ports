@@ -1,10 +1,10 @@
 # Created by: Carl Makin <carl@stagecraft.cx>
-# $FreeBSD: head/comms/xastir/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/comms/xastir/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	xastir
 DISTVERSIONPREFIX=	Release-
 DISTVERSION=	2.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 
 MAINTAINER=	carl@stagecraft.cx

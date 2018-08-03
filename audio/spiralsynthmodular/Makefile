@@ -1,9 +1,9 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/spiralsynthmodular/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/audio/spiralsynthmodular/Makefile 476156 2018-08-01 06:04:56Z tobik $
 
 PORTNAME=	spiralsynthmodular
 PORTVERSION=	0.2.2a
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	audio
 MASTER_SITES=	SF/spiralmodular/spiralmodular/${PORTVERSION}%20%28Latest%20Version%29
 DISTNAME=	spiralmodular-${PORTVERSION}

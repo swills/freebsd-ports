@@ -1,8 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/schismtracker/Makefile 469859 2018-05-14 08:24:45Z ehaupt $
+# $FreeBSD: head/audio/schismtracker/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	schismtracker
 PORTVERSION=	20180513
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	ehaupt@FreeBSD.org

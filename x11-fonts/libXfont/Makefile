@@ -1,8 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/libXfont/Makefile 475302 2018-07-25 09:07:51Z amdmi3 $
+# $FreeBSD: head/x11-fonts/libXfont/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	libXfont
 PORTVERSION=	1.5.4
+PORTREVISION=	1
 PORTEPOCH=	2
 CATEGORIES=	x11-fonts
 
@@ -17,7 +18,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2
 
 USES=		cpe
 XORG_CAT=	lib
-USE_XORG=	xproto:both xtrans fontsproto:both fontenc
+USE_XORG=	xorgproto xtrans fontenc
 INSTALL_TARGET=	install-strip
 CPE_PRODUCT=	libxfont
 CPE_VENDOR=	x

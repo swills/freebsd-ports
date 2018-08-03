@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/golly/Makefile 475313 2018-07-25 12:55:23Z swills $
+# $FreeBSD: head/games/golly/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	golly
 PORTVERSION=	3.2
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}

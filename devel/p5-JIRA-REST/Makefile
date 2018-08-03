@@ -1,8 +1,8 @@
 # Created by: Brad Davis <brd@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JIRA-REST/Makefile 473539 2018-06-29 10:10:35Z mat $
+# $FreeBSD: head/devel/p5-JIRA-REST/Makefile 475888 2018-07-30 13:17:40Z wen $
 
 PORTNAME=	JIRA-REST
-PORTVERSION=	0.018
+PORTVERSION=	0.019
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

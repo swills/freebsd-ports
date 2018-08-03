@@ -1,9 +1,9 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/www/links/Makefile 458398 2018-01-08 08:52:48Z tobik $
+# $FreeBSD: head/www/links/Makefile 476013 2018-07-31 18:41:30Z zeising $
 
 PORTNAME=	links
 DISTVERSION=	2.14
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://links.twibright.com/download/
@@ -55,7 +55,7 @@ TRANS_EXTRA_PATCHES=	${FILESDIR}/extra-terminal.c.diff
 
 UTF8_CONFIGURE_ENABLE=	utf8
 
-X11_USE=		xorg=x11,xproto
+X11_USE=		xorg=x11,xorgproto
 X11_LIB_DEPENDS=	libevent.so:devel/libevent \
 			libfontconfig.so:x11-fonts/fontconfig
 X11_CONFIGURE_WITH=	x

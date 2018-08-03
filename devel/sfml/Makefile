@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/sfml/Makefile 469887 2018-05-14 13:48:29Z amdmi3 $
+# $FreeBSD: head/devel/sfml/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	sfml
 PORTVERSION=	2.5.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org

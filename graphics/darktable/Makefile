@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/darktable/Makefile 471854 2018-06-06 15:31:57Z dumbbell $
+# $FreeBSD: head/graphics/darktable/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	darktable
 PORTVERSION=	2.4.4
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/darktable-org/${PORTNAME}/releases/download/release-${PORTVERSION:C/\.rc/rc/}/
 

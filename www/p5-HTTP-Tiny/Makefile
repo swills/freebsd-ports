@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTTP-Tiny/Makefile 476255 2018-08-02 23:42:03Z sunpoet $
 
 PORTNAME=	HTTP-Tiny
-PORTVERSION=	0.070
+PORTVERSION=	0.074
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

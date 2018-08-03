@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeminer/Makefile 458388 2018-01-07 22:34:17Z krion $
+# $FreeBSD: head/games/freeminer/Makefile 475857 2018-07-29 22:18:44Z gerald $
 
 PORTNAME=	freeminer
 PORTVERSION=	0.4.10.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

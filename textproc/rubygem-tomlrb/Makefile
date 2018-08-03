@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-tomlrb/Makefile 460109 2018-01-27 11:38:33Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-tomlrb/Makefile 475810 2018-07-29 19:23:16Z sunpoet $
 
 PORTNAME=	tomlrb
-PORTVERSION=	1.2.6
+PORTVERSION=	1.2.7
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

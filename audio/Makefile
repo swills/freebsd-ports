@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 475035 2018-07-20 20:50:31Z yuri $
+# $FreeBSD: head/audio/Makefile 476294 2018-08-03 13:33:39Z rene $
 #
 
     COMMENT = Audio tools
@@ -209,7 +209,6 @@
     SUBDIR += gimmix
     SUBDIR += gkrellmms2
     SUBDIR += gkrellmvolume2
-    SUBDIR += glame
     SUBDIR += glurp
     SUBDIR += gmidimonitor
     SUBDIR += gmixer
@@ -367,6 +366,7 @@
     SUBDIR += julius
     SUBDIR += kexis
     SUBDIR += kid3-kde4
+    SUBDIR += kid3-kf5
     SUBDIR += kid3-qt4
     SUBDIR += kid3-qt5
     SUBDIR += kio-audiocd-kde4
@@ -427,7 +427,6 @@
     SUBDIR += libmp3splt
     SUBDIR += libmpd
     SUBDIR += libmpdclient
-    SUBDIR += libmusicbrainz3
     SUBDIR += libmusicbrainz5
     SUBDIR += libmusicxml
     SUBDIR += libmysofa
