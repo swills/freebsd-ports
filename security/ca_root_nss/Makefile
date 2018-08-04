@@ -16,7 +16,7 @@ OPTIONS_DEFAULT=	ETCSYMLINK
 
 OPTIONS_SUB=		yes
 
-ETCSYMLINK_DESC=	Add symlink to /etc/ssl/cert.pem
+ETCSYMLINK_DESC=	Add symlink to /etc/ssl/cert.pem and /etc/ssl/certs/cert.pem
 ETCSYMLINK_CONFLICTS_INSTALL=	ca-roots-[0-9]*
 
 USES=		perl5 ssl:build
@@ -54,13 +54,15 @@ do-build:	apply-slist
 		${PERL} ${WRKDIR}/${BUNDLE_PROCESSOR} \
 	    < ${WRKDIR}/certdata.txt > \
 	    ${WRKDIR}/ca-root-nss.crt
+	@${PATCH} -p0 <${FILESDIR}/ascii.patch
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${CERTDIR}
 	${INSTALL_DATA} ${WRKDIR}/ca-root-nss.crt ${STAGEDIR}${PREFIX}/${CERTDIR}
 .if ${PORT_OPTIONS:METCSYMLINK}
-	${MKDIR} ${STAGEDIR}/etc/ssl
+	${MKDIR} ${STAGEDIR}/etc/ssl ${STAGEDIR}/etc/ssl/certs
 	${LN} -sf ${PREFIX}/${CERTDIR}/ca-root-nss.crt ${STAGEDIR}/etc/ssl/cert.pem
+	${LN} -sf ${PREFIX}/${CERTDIR}/ca-root-nss.crt ${STAGEDIR}/etc/ssl/certs/cert.pem
 .endif
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/ssl
 	${LN} -sf ${PREFIX}/${CERTDIR}/ca-root-nss.crt ${STAGEDIR}${PREFIX}/etc/ssl/cert.pem.sample

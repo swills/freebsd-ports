@@ -1,0 +1,11 @@
+--- work/ca-root-nss.crt.orig	2018-07-20 23:33:59.994946000 +0200
++++ work/ca-root-nss.crt	2018-07-20 23:47:36.490322000 +0200
+@@ -200,7 +200,7 @@
+                 Policy: X509v3 Any Policy
+                   CPS: http://www.certicamara.com/dpc/
+                   User Notice:
+-                    Explicit Text: Limitaciones de garantías de este certificado se pueden encontrar en la DPC.
++                    Explicit Text: Limitaciones de garantias de este certificado se pueden encontrar en la DPC.
+
+     Signature Algorithm: sha1WithRSAEncryption
+          5c:94:b5:b8:45:91:4d:8e:61:1f:03:28:0f:53:7c:e6:a4:59:

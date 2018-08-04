@@ -19,6 +19,7 @@ If you prefer to do this manually, replace the following symlinks with
 either an empty file or your site-local certificate bundle.
 
   * /etc/ssl/cert.pem
+  * /etc/ssl/certs/cert.pem
   * %%PREFIX%%/etc/ssl/cert.pem
   * %%PREFIX%%/openssl/cert.pem
 
