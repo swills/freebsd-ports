@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pip
-PORTVERSION=	9.0.3
+PORTVERSION=	10.0.1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -23,11 +23,12 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pretend>0:devel/py-pretend@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}freezegun>0:devel/py-freezegun@${PY_FLAVOR} \
 		git>0:devel/git \
-		bzr>0:devel/bzr
+		bzr>0:devel/bzr \
+		OPTIONS_DEFINE=	DOCS
 
-OPTIONS_DEFINE=	DOCS
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tox:devel/py-tox@${PY_FLAVOR}
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
 DOCS_PORTDOCS=	*
 DOCS_VARS=	PYDISTUTILS_BUILD_TARGET=build_sphinx \
 		PYDISTUTILS_BUILDARGS="-n --all-files --fresh-env"
@@ -36,8 +37,6 @@ NO_ARCH=	yes
 USES=		python shebangfix
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist concurrent distutils
-
-SHEBANG_FILES=	pip/__init__.py
 
 GH_ACCOUNT=	pypa
 
