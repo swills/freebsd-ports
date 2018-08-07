@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-rfc3987/Makefile 445993 2017-07-16 10:14:21Z koobs $
+# $FreeBSD: head/www/py-rfc3987/Makefile 476564 2018-08-07 04:26:20Z koobs $
 
 PORTNAME=	rfc3987
-PORTVERSION=	1.3.7
+PORTVERSION=	1.3.8
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

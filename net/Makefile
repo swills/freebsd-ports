@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 476231 2018-08-02 11:54:36Z rene $
+# $FreeBSD: head/net/Makefile 476367 2018-08-04 16:23:51Z yuri $
 #
 
     COMMENT = Networking tools
@@ -526,6 +526,7 @@
     SUBDIR += ng_mikrotik_eoip
     SUBDIR += ngrep
     SUBDIR += nifmon
+    SUBDIR += nitroshare
     SUBDIR += nload
     SUBDIR += nmsg
     SUBDIR += nncp

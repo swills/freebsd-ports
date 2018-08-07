@@ -1,12 +1,12 @@
-# $FreeBSD: head/multimedia/mlt/Makefile 470373 2018-05-19 10:32:30Z tcberner $
+# $FreeBSD: head/multimedia/mlt/Makefile 476344 2018-08-04 09:13:30Z tcberner $
 
 PORTNAME=	mlt
 DISTVERSIONPREFIX=	v
-DISTVERSION=	6.6.0
+DISTVERSION=	6.10.0
 PORTREVISION?=	0
 CATEGORIES?=	multimedia
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT?=	Multimedia framework for TV broadcasting
 
 LICENSE?=	GPLv2 GPLv3 LGPL21

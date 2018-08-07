@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/IPA/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/graphics/IPA/Makefile 476485 2018-08-06 02:49:34Z jhale $
 
 PORTNAME=	IPA
 PORTVERSION=	1.08
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.prima.eu.org/IPA/ CPAN/Prima/KARASIK
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Image Processing Algorithms
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Prima>1.24:x11-toolkits/p5-Prima
@@ -21,10 +24,4 @@ MAKE_JOBS_UNSAFE=	yes
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/IPA/IPA.so
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} >= 502600
-BROKEN=		Does not build
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

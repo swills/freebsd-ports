@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/x11/p5-Clipboard/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/p5-Clipboard/Makefile 476398 2018-08-05 09:07:58Z amdmi3 $
 
 PORTNAME=	Clipboard
 PORTVERSION=	0.13
@@ -12,11 +12,15 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Access to X11 clipboard from Perl
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	p5-Spiffy>=0:devel/p5-Spiffy
 RUN_DEPENDS:=	${BUILD_DEPENDS} \
 		xclip:x11/xclip
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

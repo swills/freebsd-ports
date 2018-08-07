@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-cryptography/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-cryptography/Makefile 476488 2018-08-06 03:25:20Z koobs $
 
 PORTNAME=	cryptography
-PORTVERSION=	2.1.4
+PORTVERSION=	2.3
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,13 +16,16 @@ LICENSE_FILE_APACHE20=		${WRKSRC}/LICENSE.APACHE
 LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/LICENSE.BSD
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.7:devel/py-cffi@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4.1:devel/py-six@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}idna>=2.1:dns/py-idna@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}asn1crypto>=0.21.0:devel/py-asn1crypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.4.1:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cffi>=1.7:devel/py-cffi@${PY_FLAVOR} \
-		${PY_ENUM34} ${PY_IPADDRESS} \
-		${PYTHON_PKGNAMEPREFIX}idna>=2.1:dns/py-idna@${PY_FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.9.0:devel/py-pytest@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}iso8601>0:devel/py-iso8601@${PY_FLAVOR}
+		${PY_ENUM34} ${PY_IPADDRESS}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.2.1:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pretend>0:devel/py-pretend@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}iso8601>0:devel/py-iso8601@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}hypothesis>=1.11.4:devel/py-hypothesis@${PY_FLAVOR}
 
 # Python 2.7, 3.4-3.6
 USES=		compiler:env python ssl

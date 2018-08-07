@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-gen_smtp/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-gen_smtp/Makefile 476374 2018-08-04 17:36:01Z olgeni $
 
 PORTNAME=	gen_smtp
-PORTVERSION=	0.12.0
+PORTVERSION=	0.13
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

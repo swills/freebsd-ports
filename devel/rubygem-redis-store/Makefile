@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-redis-store/Makefile 452302 2017-10-17 20:07:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-redis-store/Makefile 476462 2018-08-05 19:09:21Z sunpoet $
 
 PORTNAME=	redis-store
-PORTVERSION=	1.4.1
+PORTVERSION=	1.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

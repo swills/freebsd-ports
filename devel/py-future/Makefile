@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman<5u623l20@gmail.com>
-# $FreeBSD: head/devel/py-future/Makefile 435903 2017-03-11 13:16:20Z bofh $
+# $FreeBSD: head/devel/py-future/Makefile 476454 2018-08-05 19:08:44Z sunpoet $
 
 PORTNAME=	future
 PORTVERSION=	0.16.0
@@ -17,7 +17,7 @@ USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.mk>

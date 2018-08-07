@@ -1,5 +1,5 @@
 # Created by: David Bremner <bremner@unb.ca>
-# $FreeBSD: head/textproc/p5-Text-BibTeX/Makefile 455089 2017-11-29 00:59:43Z linimon $
+# $FreeBSD: head/textproc/p5-Text-BibTeX/Makefile 476451 2018-08-05 19:08:29Z sunpoet $
 
 PORTNAME=	Text-BibTeX
 PORTVERSION=	0.85
@@ -27,14 +27,7 @@ STRIP_FILES=	bin/dumpnames bin/biblex bin/bibparse \
 		${SITE_ARCH_REL}/auto/Text/BibTeX/BibTeX.so \
 		lib/libbtparse.so
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502300
-BUILD_DEPENDS+=	p5-Scalar-List-Utils>=0.42:lang/p5-Scalar-List-Utils
-RUN_DEPENDS+=	p5-Scalar-List-Utils>=0.42:lang/p5-Scalar-List-Utils
-.endif
-
 post-install:
 	${STRIP_CMD} ${STRIP_FILES:S|^|${STAGEDIR}${PREFIX}/|}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

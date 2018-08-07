@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/rainloop/Makefile 469239 2018-05-06 16:33:41Z krion $
+# $FreeBSD: head/mail/rainloop/Makefile 476465 2018-08-05 19:23:40Z joneum $
 
 PORTNAME=	rainloop
-PORTVERSION=	1.12.0
+PORTVERSION=	1.12.1
 CATEGORIES=	mail www
 MASTER_SITES=	https://github.com/RainLoop/rainloop-webmail/releases/download/v${PORTVERSION}/
 

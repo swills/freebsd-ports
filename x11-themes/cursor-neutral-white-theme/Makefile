@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11-themes/cursor-neutral-white-theme/Makefile 475981 2018-07-31 08:41:22Z gblach $
+# $FreeBSD: head/x11-themes/cursor-neutral-white-theme/Makefile 476395 2018-08-05 07:28:11Z antoine $
 
 PORTNAME=	cursor-neutral-white-theme
 DISTVERSION=	1.1.1
@@ -9,6 +9,8 @@ DISTNAME=	108143-Neutral++_White-${DISTVERSION}
 
 MAINTAINER=	enlightenment@FreeBSD.org
 COMMENT=	White cursor theme based on neutral
+
+BROKEN=		checksum and size mismatch
 
 USES=		tar:xz
 NO_BUILD=	yes

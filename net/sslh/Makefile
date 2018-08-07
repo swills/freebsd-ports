@@ -1,9 +1,10 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/sslh/Makefile 461754 2018-02-13 22:20:49Z olivier $
+# $FreeBSD: head/net/sslh/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	sslh
 PORTVERSION=	1.19c
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	olivier@FreeBSD.org

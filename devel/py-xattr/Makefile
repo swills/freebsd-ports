@@ -1,9 +1,8 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/devel/py-xattr/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-xattr/Makefile 476484 2018-08-06 02:44:18Z timur $
 
 PORTNAME=	xattr
-PORTVERSION=	0.9.2
-PORTREVISION=	1
+PORTVERSION=	0.9.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,10 +1,10 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/security/cvechecker/Makefile 452276 2017-10-17 13:38:34Z se $
+# $FreeBSD: head/security/cvechecker/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	cvechecker
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	se@FreeBSD.org

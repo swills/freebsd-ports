@@ -1,7 +1,7 @@
-# $FreeBSD: head/biology/vcftools/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/biology/vcftools/Makefile 476330 2018-08-04 01:29:29Z jwb $
 
 PORTNAME=	vcftools
-PORTVERSION=	0.1.15
+PORTVERSION=	0.1.16
 DISTVERSIONPREFIX=	v
 CATEGORIES=	biology
 

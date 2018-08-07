@@ -1,5 +1,5 @@
 # Created by: Vladimir Kondratiev <wulf@mail.mipt.ru>
-# $FreeBSD: head/emulators/fuse-roms/Makefile 447896 2017-08-13 16:27:54Z rene $
+# $FreeBSD: head/emulators/fuse-roms/Makefile 476369 2018-08-04 16:53:19Z rene $
 
 PORTNAME=	fuse-roms
 PORTVERSION=	0.9.0
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://mirror.switch.ch/pool/4/mirror/rpmfusion/${FC_SUBDIR}/:1 \
 		ftp://ftp.pbone.net/mirror/rpmfusion.org/${FC_SUBDIR}/:1 \
 		ftp://ftp.icm.edu.pl/vol/rzm6/linux-rpmfusion/${FC_SUBDIR}/:1 \
 		http://zxspectrum.it.omegahg.com/rom/:2 \
-		https://rene-ladan.nl/distfiles/
+		https://ladan0.home.xs4all.nl/distfiles/
 DISTFILES=	fuse-emulator-roms-0.9.0-6.fc${FCVER}.noarch.rpm:1,DEFAULT \
 		Opus-22.rom:2,DEFAULT
 EXTRACT_ONLY=	fuse-emulator-roms-0.9.0-6.fc${FCVER}.noarch.rpm

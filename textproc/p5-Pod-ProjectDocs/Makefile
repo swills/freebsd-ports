@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-Pod-ProjectDocs/Makefile 475816 2018-07-29 19:23:47Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-ProjectDocs/Makefile 476450 2018-08-05 19:08:24Z sunpoet $
 
 PORTNAME=	Pod-ProjectDocs
 PORTVERSION=	0.52
@@ -25,11 +25,4 @@ NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502400
-BUILD_DEPENDS+=	p5-Pod-Simple>=3.31:textproc/p5-Pod-Simple
-RUN_DEPENDS+=	p5-Pod-Simple>=3.31:textproc/p5-Pod-Simple
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

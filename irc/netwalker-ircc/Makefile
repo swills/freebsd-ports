@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/irc/netwalker-ircc/Makefile 476281 2018-08-03 07:24:42Z ehaupt $
+# $FreeBSD: head/irc/netwalker-ircc/Makefile 476347 2018-08-04 10:56:56Z gerald $
 
 PORTNAME=	netwalker-ircc
 PORTVERSION=	0.5.0
@@ -12,6 +12,7 @@ COMMENT=	Lightweight curses-based IRC client
 
 LICENSE=	GPLv2
 
+# Also see PR 226177.
 DEPRECATED=	Upstream gone, very old code base, use modern irc client instead
 EXPIRATION_DATE=	2018-11-03
 
@@ -21,7 +22,7 @@ LDFLAGS+=	-lncurses -lpthread
 
 .include <bsd.port.pre.mk>
 
-# does not compile with clang 6.0.0
+# Does not compile with clang 6.0.0; PR 226177.
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200056
 USE_GCC=	6
 .endif

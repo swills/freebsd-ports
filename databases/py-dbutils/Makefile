@@ -1,8 +1,8 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/databases/py-dbutils/Makefile 433589 2017-02-07 20:31:41Z sunpoet $
+# $FreeBSD: head/databases/py-dbutils/Makefile 476453 2018-08-05 19:08:39Z sunpoet $
 
 PORTNAME=	dbutils
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

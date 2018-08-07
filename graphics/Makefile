@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 475599 2018-07-28 18:40:01Z yuri $
+# $FreeBSD: head/graphics/Makefile 476335 2018-08-04 07:16:21Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -988,6 +988,7 @@
     SUBDIR += rawstudio
     SUBDIR += rawtherapee
     SUBDIR += rayshade
+    SUBDIR += reactphysics3d
     SUBDIR += reallyslick
     SUBDIR += recoverjpeg
     SUBDIR += renrot
