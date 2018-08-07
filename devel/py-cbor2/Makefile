@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/devel/py-cbor2/Makefile 476240 2018-08-02 15:26:02Z dvl $
+# $FreeBSD: head/devel/py-cbor2/Makefile 476399 2018-08-05 09:20:37Z antoine $
 
 PORTNAME=	cbor2
 PORTVERSION=	4.1.0
@@ -12,10 +12,10 @@ COMMENT=	Pure Python CBOR (de)serializer with extensive tag support
 
 LICENSE=	MIT
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist concurrent distutils
 
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR}
 
 #post-install:
 #	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/cbor/_cbor.so

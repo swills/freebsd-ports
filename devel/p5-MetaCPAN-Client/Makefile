@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MetaCPAN-Client/Makefile 468442 2018-04-27 15:55:23Z sunpoet $
+# $FreeBSD: head/devel/p5-MetaCPAN-Client/Makefile 476429 2018-08-05 19:06:32Z sunpoet $
 
 PORTNAME=	MetaCPAN-Client
 PORTVERSION=	2.025000
@@ -32,14 +32,7 @@ NO_ARCH=	yes
 USE_PERL5=	configure
 USES=		perl5
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502400
-BUILD_DEPENDS+=	p5-HTTP-Tiny>=0.56:www/p5-HTTP-Tiny
-RUN_DEPENDS+=	p5-HTTP-Tiny>=0.56:www/p5-HTTP-Tiny
-.endif
-
 post-patch:
 	@${REINPLACE_CMD} -e '/use ExtUtils::MakeMaker/ s| 7.1101||' ${WRKSRC}/Makefile.PL
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

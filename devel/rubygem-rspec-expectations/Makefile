@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rspec-expectations/Makefile 452363 2017-10-18 17:22:32Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rspec-expectations/Makefile 476544 2018-08-06 19:54:22Z sunpoet $
 
 PORTNAME=	rspec-expectations
-PORTVERSION=	3.7.0
+PORTVERSION=	3.8.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	rubygem-diff-lcs>=1.2.0:textproc/rubygem-diff-lcs \
-		rubygem-rspec-support>=${PORTVERSION:R}:devel/rubygem-rspec-support
+		rubygem-rspec-support>=${PORTVERSION:R}.0:devel/rubygem-rspec-support
 
 NO_ARCH=	yes
 USE_RUBY=	yes

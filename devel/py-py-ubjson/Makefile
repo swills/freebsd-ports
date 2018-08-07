@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-py-ubjson/Makefile 469392 2018-05-08 19:35:11Z sunpoet $
+# $FreeBSD: head/devel/py-py-ubjson/Makefile 476436 2018-08-05 19:07:08Z sunpoet $
 
 PORTNAME=	py-ubjson
-PORTVERSION=	0.11.0
+PORTVERSION=	0.12.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

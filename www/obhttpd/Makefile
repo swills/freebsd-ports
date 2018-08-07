@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/obhttpd/Makefile 474407 2018-07-10 20:22:10Z swills $
+# $FreeBSD: head/www/obhttpd/Makefile 476303 2018-08-03 16:14:26Z swills $
 
 PORTNAME=	obhttpd
-PORTVERSION=	6.3.20180529
+PORTVERSION=	6.3.20180803
 CATEGORIES=	www
 
 MAINTAINER=	koue@chaosophia.net

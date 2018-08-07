@@ -1,8 +1,9 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/databases/xtrabackup/Makefile 464844 2018-03-17 20:16:32Z yuri $
+# $FreeBSD: head/databases/xtrabackup/Makefile 476547 2018-08-06 20:53:02Z feld $
 
 PORTNAME=	xtrabackup
 DISTVERSION=	2.4.9
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	https://www.percona.com/downloads/XtraBackup/Percona-XtraBackup-${PORTVERSION}/source/tarball/:xtrabackup \
 		SF/boost/boost/1.59.0/:boost
@@ -23,8 +24,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libev.so:devel/libev \
 		libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error
-RUN_DEPENDS=	p5-DBD-mysql>=0:databases/p5-DBD-mysql \
-		qpress:archivers/qpress
+RUN_DEPENDS=	qpress:archivers/qpress
 
 BROKEN_armv6=		fails to compile: cannot combine with previous 'type-name' declaration specifier
 BROKEN_armv7=		fails to compile: cannot combine with previous 'type-name' declaration specifier

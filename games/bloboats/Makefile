@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/games/bloboats/Makefile 462525 2018-02-21 14:28:17Z ehaupt $
+# $FreeBSD: head/games/bloboats/Makefile 476470 2018-08-05 19:32:13Z gerald $
 
 PORTNAME=	bloboats
 PORTVERSION=	1.0.2
@@ -15,7 +15,7 @@ COMMENT=	Boat racing game in the spirit of Elasto Mania or X-Moto
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/copying.txt
 
-BROKEN_FreeBSD_12=	does not build on 12.X
+BROKEN_FreeBSD_12=	does not build on 12.X	# PR 226180
 
 USES=		dos2unix gmake
 USE_SDL=	mixer image net sdl

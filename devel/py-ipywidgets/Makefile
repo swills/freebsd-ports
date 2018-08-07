@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-ipywidgets/Makefile 474418 2018-07-11 00:12:44Z swills $
+# $FreeBSD: head/devel/py-ipywidgets/Makefile 476507 2018-08-06 11:23:41Z antoine $
 
 PORTNAME=	ipywidgets
 PORTVERSION=	7.2.1
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -9,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Interactive HTML widgets for Jupyter notebooks and the IPython kernel
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=4.0.0:devel/ipython@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython5>=4.0.0:devel/ipython5@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ipykernel>=4.2.2:devel/py-ipykernel@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}widgetsnbextension>=1.2:devel/py-widgetsnbextension@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}traitlets>=4.2:devel/py-traitlets@${PY_FLAVOR}

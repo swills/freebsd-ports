@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/py-jmespath/Makefile 474910 2018-07-18 22:48:08Z yuri $
+# $FreeBSD: head/devel/py-jmespath/Makefile 476434 2018-08-05 19:06:58Z sunpoet $
 
 PORTNAME=	jmespath
 DISTVERSION=	0.9.3
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	JSON Matching Expressions
 
 LICENSE=	MIT

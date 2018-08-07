@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/sk-mythes/Makefile 475938 2018-07-31 00:03:45Z sunpoet $
+# $FreeBSD: head/textproc/sk-mythes/Makefile 476535 2018-08-06 19:53:32Z sunpoet $
 
 PORTNAME=	mythes
-PORTVERSION=	2018.07.29
+PORTVERSION=	2018.08.05
 CATEGORIES=	textproc
 MASTER_SITES=	LOCAL/sunpoet/${PORTNAME}/
 PKGNAMEPREFIX=	sk-

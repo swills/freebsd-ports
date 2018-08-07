@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-hijack/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-hijack/Makefile 476309 2018-08-03 16:37:15Z swills $
 
 PORTNAME=	django-hijack
-PORTVERSION=	2.1.7
+PORTVERSION=	2.1.9
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Allows DJango superusers to login as other users
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

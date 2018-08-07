@@ -27,7 +27,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: head/Mk/bsd.gcc.mk 474663 2018-07-15 05:59:51Z gerald $
+# $FreeBSD: head/Mk/bsd.gcc.mk 476413 2018-08-05 13:30:30Z gerald $
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
 
@@ -166,6 +166,10 @@ CPP:=			cpp
 .endfor
 .undef V
 
+# Now filter unsupported flags for CC and CXX.
+CFLAGS:=		${CFLAGS:N-mretpoline}
+CXXFLAGS:=		${CXXFLAGS:N-mretpoline}
+
 .if defined(_GCC_PORT_DEPENDS)
 BUILD_DEPENDS+=	${_GCC_PORT_DEPENDS}:lang/${_GCC_PORT}
 RUN_DEPENDS+=	${_GCC_PORT_DEPENDS}:lang/${_GCC_PORT}
@@ -197,7 +201,9 @@ test-gcc:
 .endfor
 	@echo Using GCC version ${_USE_GCC}
 .endif
-	@echo CC=${CC} - CXX=${CXX} - CPP=${CPP} - CFLAGS=\"${CFLAGS}\"
+	@echo CC=${CC} - CXX=${CXX} - CPP=${CPP}
+	@echo CFLAGS=\"${CFLAGS}\"
+	@echo CXXFLAGS=\"${CXXFLAGS}\"
 	@echo LDFLAGS=\"${LDFLAGS}\"
 	@echo "BUILD_DEPENDS=${BUILD_DEPENDS}"
 	@echo "RUN_DEPENDS=${RUN_DEPENDS}"

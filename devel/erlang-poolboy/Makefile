@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/erlang-poolboy/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-poolboy/Makefile 476350 2018-08-04 12:06:19Z olgeni $
 
 PORTNAME=	poolboy
-PORTVERSION=	1.5.1
-PORTREVISION=	1
+PORTVERSION=	1.5.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

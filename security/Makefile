@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 476298 2018-08-03 15:48:55Z mfechner $
+# $FreeBSD: head/security/Makefile 476361 2018-08-04 15:05:34Z mfechner $
 #
 
     COMMENT = Security tools
@@ -33,6 +33,7 @@
     SUBDIR += authforce
     SUBDIR += autossh
     SUBDIR += avcheck
+    SUBDIR += aws-iam-authenticator
     SUBDIR += axTLS
     SUBDIR += barnyard2
     SUBDIR += barnyard2-sguil
@@ -1148,7 +1149,6 @@
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-saml
     SUBDIR += rubygem-omniauth-shibboleth
-    SUBDIR += rubygem-omniauth-shibboleth12
     SUBDIR += rubygem-openssl
     SUBDIR += rubygem-openssl-ccm
     SUBDIR += rubygem-openvas-omp

@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/openntpd/Makefile 454083 2017-11-12 20:52:46Z naddy $
+# $FreeBSD: head/net/openntpd/Makefile 476321 2018-08-03 20:29:52Z naddy $
 
 PORTNAME=	openntpd
 PORTVERSION=	6.2p3
+PORTREVISION=	1
 PORTEPOCH=	2
 CATEGORIES=	net
 MASTER_SITES=	OPENBSD/OpenNTPD

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-XML-DOM/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/textproc/p5-XML-DOM/Makefile 476498 2018-08-06 09:07:58Z amdmi3 $
 
 PORTNAME=	XML-DOM
 PORTVERSION=	1.44
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl module for building DOM Level 1 compliant document structures
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		p5-libxml>=0:textproc/p5-libxml \
@@ -18,5 +21,6 @@ RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

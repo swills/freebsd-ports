@@ -1,9 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-reader/Makefile 475789 2018-07-29 19:21:40Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-reader/Makefile 476532 2018-08-06 19:53:17Z sunpoet $
 
 PORTNAME=	tty-reader
-PORTVERSION=	0.3.0
-PORTREVISION=	1
+PORTVERSION=	0.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +12,7 @@ COMMENT=	Methods for processing keyboard input
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-tty-cursor>=0.5.0:devel/rubygem-tty-cursor \
+RUN_DEPENDS=	rubygem-tty-cursor>=0.6.0:devel/rubygem-tty-cursor \
 		rubygem-tty-screen>=0.6.4:devel/rubygem-tty-screen \
 		rubygem-wisper>=2.0.0:devel/rubygem-wisper
 

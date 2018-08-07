@@ -34,11 +34,12 @@
 # Chris Rees <crees@FreeBSD.org>
 # Rene Ladan <rene@FreeBSD.org>
 #
-# $FreeBSD: head/Tools/scripts/rmport 465615 2018-03-26 16:55:52Z rene $
+# $FreeBSD: head/Tools/scripts/rmport 476368 2018-08-04 16:29:31Z eugen $
 #
 # MAINTAINER=	crees@FreeBSD.org
 #
 
+EDITOR=${EDITOR:-/usr/bin/vi}
 PORTSDIR=${PORTSDIR:-/usr/ports}
 INDEX=${PORTSDIR}/`make -C ${PORTSDIR} -V INDEXFILE`
 

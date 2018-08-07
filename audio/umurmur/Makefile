@@ -1,8 +1,9 @@
 # Created by: Ayumi Mitsui <ayu@commun.jp>
-# $FreeBSD: head/audio/umurmur/Makefile 462888 2018-02-25 00:53:01Z yuri $
+# $FreeBSD: head/audio/umurmur/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	umurmur
 DISTVERSION=	0.2.17
+PORTREVISION=	1
 CATEGORIES=	audio net
 
 MAINTAINER=	ayu@commun.jp

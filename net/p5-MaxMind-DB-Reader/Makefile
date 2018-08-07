@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-MaxMind-DB-Reader/Makefile 433231 2017-02-03 14:09:49Z sunpoet $
+# $FreeBSD: head/net/p5-MaxMind-DB-Reader/Makefile 476433 2018-08-05 19:06:53Z sunpoet $
 
 PORTNAME=	MaxMind-DB-Reader
 PORTVERSION=	1.000013
@@ -36,10 +36,4 @@ NO_ARCH=	yes
 USE_PERL5=	configure
 USES=		perl5
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502300
-TEST_DEPENDS+=	p5-Scalar-List-Utils>=1.42:lang/p5-Scalar-List-Utils
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

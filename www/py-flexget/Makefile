@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/www/py-flexget/Makefile 476205 2018-08-01 22:24:23Z jbeich $
+# $FreeBSD: head/www/py-flexget/Makefile 476325 2018-08-03 22:42:31Z jbeich $
 
 PORTNAME=	flexget
-PORTVERSION=	2.14.12
+PORTVERSION=	2.14.14
 PORTEPOCH=	1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

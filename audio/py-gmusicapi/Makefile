@@ -1,8 +1,8 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/audio/py-gmusicapi/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-gmusicapi/Makefile 476403 2018-08-05 10:05:07Z riggs $
 
 PORTNAME=	gmusicapi
-PORTVERSION=	10.1.2
+PORTVERSION=	11.0.1
 CATEGORIES=	audio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

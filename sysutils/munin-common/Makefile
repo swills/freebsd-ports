@@ -1,5 +1,5 @@
 # Created by: Sean Rees <sean@rees.us>
-# $FreeBSD: head/sysutils/munin-common/Makefile 424766 2016-10-27 14:12:23Z mat $
+# $FreeBSD: head/sysutils/munin-common/Makefile 476509 2018-08-06 12:20:47Z mat $
 
 PORTNAME=	munin
 PORTVERSION=	${MUNIN_VERSION}
@@ -18,7 +18,7 @@ USES=		gmake perl5 cpe
 
 .include "${.CURDIR}/../munin-common/munin.mk"
 
-ALL_TARGET=	build-common-prime
+ALL_TARGET=	build-common
 INSTALL_TARGET=	install-common
 NO_ARCH=	yes
 

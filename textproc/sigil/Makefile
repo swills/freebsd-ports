@@ -1,9 +1,8 @@
 # Created by: Jonathan Chen <jonc@chen.org.nz>
-# $FreeBSD: head/textproc/sigil/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/sigil/Makefile 476554 2018-08-06 22:57:16Z ler $
 
 PORTNAME=	sigil
-PORTVERSION=	0.9.9
-PORTREVISION=	1
+PORTVERSION=	0.9.10
 CATEGORIES=	textproc
 
 MAINTAINER=	ports@FreeBSD.org

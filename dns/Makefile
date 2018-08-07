@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 474355 2018-07-10 11:49:01Z ehaupt $
+# $FreeBSD: head/dns/Makefile 476551 2018-08-06 22:13:45Z crees $
 #
 
     COMMENT = Domain Name Service tools
@@ -32,6 +32,7 @@
     SUBDIR += dns2blackhole
     SUBDIR += dns2tcp
     SUBDIR += dns_balance
+    SUBDIR += dnsblast
     SUBDIR += dnscap
     SUBDIR += dnscheck
     SUBDIR += dnscheckengine
@@ -110,6 +111,7 @@
     SUBDIR += mdnsd
     SUBDIR += mydns
     SUBDIR += mydns-ng
+    SUBDIR += namesilo_ddns
     SUBDIR += noip
     SUBDIR += nsd
     SUBDIR += nslint
@@ -200,6 +202,7 @@
     SUBDIR += py-pywdns
     SUBDIR += py-tld
     SUBDIR += py-tldextract
+    SUBDIR += qmdnsengine
     SUBDIR += radns
     SUBDIR += rbldnsd
     SUBDIR += rbllookup

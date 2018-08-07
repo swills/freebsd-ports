@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 476251 2018-08-02 21:54:55Z danilo $
+# $FreeBSD: head/sysutils/Makefile 476317 2018-08-03 18:59:18Z rene $
 #
 
     COMMENT = System utilities
@@ -263,6 +263,7 @@
     SUBDIR += dmidecode
     SUBDIR += docker
     SUBDIR += docker-compose
+    SUBDIR += docker-credential-pass
     SUBDIR += docker-freebsd
     SUBDIR += docker-machine
     SUBDIR += doctl

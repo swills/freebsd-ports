@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 474594 2018-07-13 15:30:17Z olgeni $
+# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 476401 2018-08-05 09:25:14Z antoine $
 
 PORTNAME=	ex_doc
 PORTVERSION=	0.18.4
@@ -11,6 +11,8 @@ COMMENT=	Tool to generate documentation for Elixir projects
 
 LICENSE=	APACHE20 MIT
 LICENSE_COMB=	multi
+
+BROKEN=		fails to build
 
 USES=		elixir
 USE_GITHUB=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 476278 2018-08-03 05:05:08Z yuri $
+# $FreeBSD: head/math/Makefile 476382 2018-08-04 23:33:34Z yuri $
 #
 
     COMMENT = Mathematics
@@ -726,6 +726,7 @@
     SUBDIR += py-simhash
     SUBDIR += py-slepc4py
     SUBDIR += py-spectral
+    SUBDIR += py-spot
     SUBDIR += py-statsmodels
     SUBDIR += py-svgmath
     SUBDIR += py-sym
@@ -795,6 +796,7 @@
     SUBDIR += speedcrunch
     SUBDIR += spooles
     SUBDIR += spooles-mpich
+    SUBDIR += spot
     SUBDIR += stp
     SUBDIR += suitesparse
     SUBDIR += sundials

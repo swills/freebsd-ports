@@ -1,8 +1,8 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/xmms-faad/Makefile 453293 2017-11-01 15:36:25Z riggs $
+# $FreeBSD: head/audio/xmms-faad/Makefile 476490 2018-08-06 05:50:10Z tobik $
 
 PORTNAME=	faad2
-PORTVERSION=	2.8.6
+PORTVERSION=	2.8.8
 CATEGORIES=	audio
 MASTER_SITES=	SF/faac/${PORTNAME}-src/${PORTNAME}-${PORTVERSION:R}.0
 PKGNAMEPREFIX=	xmms-

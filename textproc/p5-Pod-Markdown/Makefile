@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-Markdown/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Pod-Markdown/Makefile 476537 2018-08-06 19:53:44Z sunpoet $
 
 PORTNAME=	Pod-Markdown
-PORTVERSION=	3.005
+PORTVERSION=	3.100
 CATEGORIES=	textproc devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

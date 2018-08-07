@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-activehs/Makefile 476243 2018-08-02 18:05:43Z arrowd $
+# $FreeBSD: head/www/hs-activehs/Makefile 476400 2018-08-05 09:23:59Z antoine $
 
 PORTNAME=	activehs
 PORTVERSION=	0.3.2
@@ -10,6 +10,7 @@ COMMENT=	Haskell code presentation tool
 
 LICENSE=	BSD3CLAUSE
 
+BROKEN=		fails to build
 DEPRECATED=	Doesn't build with recent dependencies
 EXPIRATION_DATE=2018-09-02
 

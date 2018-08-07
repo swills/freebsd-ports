@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 476032 2018-07-31 23:43:11Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 476388 2018-08-05 04:16:28Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -74,6 +74,7 @@
     SUBDIR += c2html
     SUBDIR += c2man
     SUBDIR += ca-aspell
+    SUBDIR += castxml
     SUBDIR += catdoc
     SUBDIR += cdif
     SUBDIR += cdiff
@@ -1356,6 +1357,7 @@
     SUBDIR += py-pyaml
     SUBDIR += py-pyctpp2
     SUBDIR += py-pyes
+    SUBDIR += py-pygccxml
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
     SUBDIR += py-pyhamcrest
@@ -1551,7 +1553,6 @@
     SUBDIR += rubygem-hikidoc
     SUBDIR += rubygem-html-pipeline
     SUBDIR += rubygem-html-pipeline27
-    SUBDIR += rubygem-html-pipeline-gitlab
     SUBDIR += rubygem-html-pipeline1
     SUBDIR += rubygem-html2text
     SUBDIR += rubygem-htmlentities
