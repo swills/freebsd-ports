@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/mariadb100-server/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/databases/mariadb100-server/Makefile 476674 2018-08-08 20:25:39Z brnrd $
 
 PORTNAME?=	mariadb
-PORTVERSION=	10.0.35
-PORTREVISION?=	1
+PORTVERSION=	10.0.36
+PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/${SITESDIR}/ \
 		http://mirrors.supportex.net/${SITESDIR}/ \

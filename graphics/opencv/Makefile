@@ -1,9 +1,9 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 474860 2018-07-18 12:53:36Z swills $
+# $FreeBSD: head/graphics/opencv/Makefile 476672 2018-08-08 20:02:45Z jbeich $
 
 PORTNAME=	opencv
 PORTVERSION=	3.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org
@@ -263,7 +263,8 @@ EXTRA_MODULES_LIB_DEPENDS=	libgflags.so:devel/gflags \
 				libglog.so:devel/glog \
 				libhdf5.so:science/hdf5
 EXTRA_MODULES_EXTRA_PATCHES+=	${FILESDIR}/extra-patch-modules_dnn__modern_CMakeLists.txt \
-				${FILESDIR}/extra-patch-modules_sfm_src__libmv__light_libmv_numeric_numeric.h
+				${FILESDIR}/extra-patch-modules_sfm_src__libmv__light_libmv_numeric_numeric.h \
+				${FILESDIR}/extra-patch-modules_stereo_src_descriptor.cpp
 
 OPENGL_DESC=		OpenGL (require QT or GTK2)
 OPENGL_CMAKE_BOOL=	WITH_OPENGL

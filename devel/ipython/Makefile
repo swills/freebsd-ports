@@ -1,8 +1,9 @@
 # Created by: Dryice Liu
-# $FreeBSD: head/devel/ipython/Makefile 476502 2018-08-06 11:01:55Z farrokhi $
+# $FreeBSD: head/devel/ipython/Makefile 476628 2018-08-08 07:47:30Z farrokhi $
 
 PORTNAME=	ipython
 PORTVERSION=	6.5.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -36,17 +37,6 @@ PORTEXAMPLES=	*
 .if ${PYTHON_REL} < 3400
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pathlib2>=0:devel/py-pathlib2@${PY_FLAVOR}
 .endif
-
-post-install:
-	@${ECHO_CMD} "/EASY-INSTALL"	> ${WRKDIR}/ex.script
-	@${ECHO_CMD} "a"		>> ${WRKDIR}/ex.script
-	@${ECHO_CMD} "import os"	>> ${WRKDIR}/ex.script
-	@${ECHO_CMD} "os.environ[\"LD_LIBRARY_PATH\"]=\"${_GCC_RUNTIME}\"" >> ${WRKDIR}/ex.script
-	@${ECHO_CMD} "."		>> ${WRKDIR}/ex.script
-	@${ECHO_CMD} "x!"		>> ${WRKDIR}/ex.script
-	@for file in ${STAGEDIR}${PREFIX}/bin/*; do \
-		ex $${file} < ${WRKDIR}/ex.script > /dev/null; \
-	done
 
 post-install-EXAMPLES-on:
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}

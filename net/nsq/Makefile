@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/nsq/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/net/nsq/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	nsq
 PORTVERSION=	1.0.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-compat
 CATEGORIES=	net
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Realtime distributed messaging platform
 
 LICENSE=	MIT

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 476233 2018-08-02 12:12:40Z rene $
+# $FreeBSD: head/databases/Makefile 476639 2018-08-08 12:26:27Z mat $
 #
 
     COMMENT = Databases and related software
@@ -988,9 +988,9 @@
     SUBDIR += rubygem-peek-mysql2
     SUBDIR += rubygem-peek-pg
     SUBDIR += rubygem-pg
-    SUBDIR += rubygem-pg_array_parser
     SUBDIR += rubygem-pg0
     SUBDIR += rubygem-pg018
+    SUBDIR += rubygem-pg_array_parser
     SUBDIR += rubygem-pghero
     SUBDIR += rubygem-pghero-rails5
     SUBDIR += rubygem-pghero-rails50

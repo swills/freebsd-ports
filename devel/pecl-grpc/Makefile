@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-grpc/Makefile 474423 2018-07-11 05:26:15Z vanilla $
+# $FreeBSD: head/devel/pecl-grpc/Makefile 476598 2018-08-07 13:56:18Z vanilla $
 
 PORTNAME=	grpc
-PORTVERSION=	1.13.0
+PORTVERSION=	1.14.0
 CATEGORIES=	devel net
 
 MAINTAINER=	vanilla@FreeBSD.org

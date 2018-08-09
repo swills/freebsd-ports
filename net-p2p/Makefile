@@ -1,10 +1,11 @@
-# $FreeBSD: head/net-p2p/Makefile 474704 2018-07-15 17:01:05Z tcberner $
+# $FreeBSD: head/net-p2p/Makefile 476572 2018-08-07 07:09:34Z acm $
 #
 
     COMMENT = Peer-to-peer network applications
 
     SUBDIR += amule
     SUBDIR += amule-devel
+    SUBDIR += awgg
     SUBDIR += bitcoin
     SUBDIR += bitcoin-daemon
     SUBDIR += bitcoin-utils

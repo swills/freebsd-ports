@@ -1,5 +1,5 @@
 # Created by: John Hixson <john@ixsystems.com>
-# $FreeBSD: head/www/py-djangotoolbox/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-djangotoolbox/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	djangotoolbox
 PORTVERSION=	1.6.1
@@ -8,7 +8,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Common API for running Django on non-relational/NoSQL databases
 
 LICENSE=	BSD3CLAUSE

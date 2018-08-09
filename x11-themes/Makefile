@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 475459 2018-07-27 19:01:18Z jsm $
+# $FreeBSD: head/x11-themes/Makefile 476639 2018-08-08 12:26:27Z mat $
 #
 
     COMMENT = X11 themes
@@ -97,6 +97,7 @@
     SUBDIR += icons-tango
     SUBDIR += icons-tango-extras
     SUBDIR += irssi-themes
+    SUBDIR += kde-base-artwork-kde4
     SUBDIR += kde-gtk-config
     SUBDIR += kde-icons-black-and-white
     SUBDIR += kde-icons-gartoon-blue-svg
@@ -108,7 +109,6 @@
     SUBDIR += kde-icons-noia
     SUBDIR += kde-icons-nuovext2
     SUBDIR += kde-icons-nuvola
-    SUBDIR += kde-base-artwork-kde4
     SUBDIR += kde-wallpapers-kde4
     SUBDIR += kde4-style-bespin
     SUBDIR += kde4-style-nitrogen

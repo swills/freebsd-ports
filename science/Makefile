@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 474971 2018-07-19 19:19:38Z yuri $
+# $FreeBSD: head/science/Makefile 476658 2018-08-08 19:09:09Z brooks $
 #
 
     COMMENT = Scientific ports
@@ -210,7 +210,6 @@
     SUBDIR += py-scipy
     SUBDIR += py-scoria
     SUBDIR += py-spglib
-    SUBDIR += py-tensorflow
     SUBDIR += py-veusz
     SUBDIR += py-ws2300
     SUBDIR += pybrain

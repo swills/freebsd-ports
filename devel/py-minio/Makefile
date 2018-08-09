@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-minio/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-minio/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	minio
 DISTVERSION=	4.0.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Minio library for Amazon S3 compatible cloud storage
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 476388 2018-08-05 04:16:28Z yuri $
+# $FreeBSD: head/textproc/Makefile 476639 2018-08-08 12:26:27Z mat $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1291,9 +1291,9 @@
     SUBDIR += py-duecredit
     SUBDIR += py-elasticsearch
     SUBDIR += py-elasticsearch-async
-    SUBDIR += py-elasticsearch5
     SUBDIR += py-elasticsearch-curator
     SUBDIR += py-elasticsearch-dsl
+    SUBDIR += py-elasticsearch5
     SUBDIR += py-elib.intl
     SUBDIR += py-empy
     SUBDIR += py-enchant
@@ -1552,8 +1552,8 @@
     SUBDIR += rubygem-heredoc_unindent
     SUBDIR += rubygem-hikidoc
     SUBDIR += rubygem-html-pipeline
-    SUBDIR += rubygem-html-pipeline27
     SUBDIR += rubygem-html-pipeline1
+    SUBDIR += rubygem-html-pipeline27
     SUBDIR += rubygem-html2text
     SUBDIR += rubygem-htmlentities
     SUBDIR += rubygem-ini

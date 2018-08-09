@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 476551 2018-08-06 22:13:45Z crees $
+# $FreeBSD: head/dns/Makefile 476638 2018-08-08 12:26:13Z mat $
 #
 
     COMMENT = Domain Name Service tools
@@ -63,6 +63,7 @@
     SUBDIR += dnswalk
     SUBDIR += dnswall
     SUBDIR += doc
+    SUBDIR += doh-proxy
     SUBDIR += dq
     SUBDIR += drool
     SUBDIR += dsc

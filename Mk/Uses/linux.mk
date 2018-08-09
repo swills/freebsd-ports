@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/linux.mk 460532 2018-01-31 21:03:35Z tijl $
+# $FreeBSD: head/Mk/Uses/linux.mk 476605 2018-08-07 16:40:53Z dbn $
 #
 # Ports Linux compatibility framework
 #
@@ -172,6 +172,9 @@ BUILD_DEPENDS+=		${linux_${i:C/:.*//}_DEP}
 .endif
 .if ${_i_args:Mrun} || empty(_i_args)
 RUN_DEPENDS+=		${linux_${i:C/:.*//}_DEP}
+.endif
+.if !defined(linux_${i:C/:.*//}_DEP)
+DEV_ERROR+=		"USE_LINUX=${i}: package does not exist"
 .endif
 .endfor
 

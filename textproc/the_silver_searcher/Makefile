@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/the_silver_searcher/Makefile 457171 2017-12-24 15:02:30Z tijl $
+# $FreeBSD: head/textproc/the_silver_searcher/Makefile 476649 2018-08-08 17:36:38Z olgeni $
 
 PORTNAME=	the_silver_searcher
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	textproc
 
 MAINTAINER=	olgeni@FreeBSD.org

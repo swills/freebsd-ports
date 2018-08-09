@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ipfs-go/Makefile 472406 2018-06-14 22:52:48Z swills $
+# $FreeBSD: head/sysutils/ipfs-go/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	ipfs
 PORTVERSION=	0.4.15
@@ -9,7 +9,7 @@ MASTER_SITES=	https://dist.ipfs.io/go-ipfs/${DISTVERSIONPREFIX}${DISTVERSION}/
 PKGNAMESUFFIX=	-go
 DISTNAME=	go-ipfs_${DISTVERSIONPREFIX}${DISTVERSION}_freebsd-${ARCH}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	IPFS implementation in Go
 
 LICENSE=	MIT
