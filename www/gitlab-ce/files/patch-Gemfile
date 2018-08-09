@@ -1,4 +1,4 @@
---- Gemfile.orig	2018-07-20 09:55:24 UTC
+--- Gemfile.orig	2018-07-30 23:59:33 UTC
 +++ Gemfile
 @@ -24,7 +24,7 @@ gem 'sprockets', '~> 3.7.0'
  gem 'default_value_for', gem_versions['default_value_for']
@@ -132,3 +132,12 @@
  gem 'octokit', '~> 4.9'
  
  gem 'mail_room', '~> 0.9.1'
+@@ -419,7 +335,7 @@ end
+ 
+ # Gitaly GRPC client
+ gem 'gitaly-proto', '~> 0.105.0', require: 'gitaly'
+-gem 'grpc', '~> 1.11.0'
++gem 'grpc', '~> 1.14.0'
+ 
+ # Locked until https://github.com/google/protobuf/issues/4210 is closed
+ gem 'google-protobuf', '= 3.5.1'
