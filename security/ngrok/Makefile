@@ -1,5 +1,5 @@
 # Created by: John Hixson <jhixson@gmail.com>
-# $FreeBSD: head/security/ngrok/Makefile 460825 2018-02-03 16:46:10Z dbaio $
+# $FreeBSD: head/security/ngrok/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	ngrok
 PORTVERSION=	2.2.8
@@ -8,7 +8,7 @@ MASTER_SITES=	https://bin.equinox.io/c/4VmDzA7iaHb/
 DISTNAME=	${PORTNAME}-stable-freebsd-${ARCH:S/i386/386/:S/x86_64/amd64/}
 DIST_SUBDIR=	${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Secure tunnels to localhost
 
 # run 'ngrok credits' for details

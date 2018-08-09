@@ -1,9 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pss/Makefile 467357 2018-04-14 23:59:21Z sunpoet $
+# $FreeBSD: head/textproc/py-pss/Makefile 476613 2018-08-07 19:41:52Z sunpoet $
 
 PORTNAME=	pss
-PORTVERSION=	1.41
-PORTREVISION=	1
+PORTVERSION=	1.42
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

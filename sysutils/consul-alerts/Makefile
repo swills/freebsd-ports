@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/consul-alerts/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/sysutils/consul-alerts/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	consul-alerts
 PORTVERSION=	0.5.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Simple daemon to send notifications based on Consul health checks
 
 LICENSE=	GPLv2+

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/lang/php-mode.el/Makefile 476483 2018-08-06 02:43:26Z knu $
+# $FreeBSD: head/lang/php-mode.el/Makefile 476604 2018-08-07 15:36:54Z knu $
 
 PORTNAME=	php-mode.el
 PORTVERSION=	1.19.1
@@ -8,7 +8,7 @@ PORTREVISION=	1
 CATEGORIES=	lang elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	knu@FreeBSD.org
+MAINTAINER=	yasu@utahime.org
 COMMENT=	PHP mode for GNU Emacs
 
 LICENSE=	GPLv3

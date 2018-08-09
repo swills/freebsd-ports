@@ -1,8 +1,8 @@
 # Created by: kappa@FreeBSD.org.ua
-# $FreeBSD: head/lang/p5-JavaScript-SpiderMonkey/Makefile 476431 2018-08-05 19:06:43Z sunpoet $
+# $FreeBSD: head/lang/p5-JavaScript-SpiderMonkey/Makefile 476697 2018-08-08 23:28:28Z sunpoet $
 
 PORTNAME=	JavaScript-SpiderMonkey
-PORTVERSION=	0.23
+PORTVERSION=	0.25
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

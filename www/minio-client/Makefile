@@ -1,10 +1,10 @@
-# $FreeBSD: head/www/minio-client/Makefile 472314 2018-06-13 13:06:20Z swills $
+# $FreeBSD: head/www/minio-client/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	minio-client
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
 CATEGORIES=	www
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Replacement for ls, cp, mkdir, diff and rsync commands for filesystems
 
 LICENSE=	APACHE20

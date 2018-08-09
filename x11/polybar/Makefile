@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/polybar/Makefile 475257 2018-07-24 14:11:11Z tobik $
+# $FreeBSD: head/x11/polybar/Makefile 476719 2018-08-09 05:36:15Z tcberner $
 
 PORTNAME=	polybar
-DISTVERSION=	3.2.0
+DISTVERSION=	3.2.1
 CATEGORIES=	x11
 
 MAINTAINER=	lebarondemerde@privacychain.ch

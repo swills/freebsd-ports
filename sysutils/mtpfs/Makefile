@@ -1,5 +1,5 @@
 # Created by: John Hixson <john@pcbsd.org>
-# $FreeBSD: head/sysutils/mtpfs/Makefile 476169 2018-08-01 09:37:54Z amdmi3 $
+# $FreeBSD: head/sysutils/mtpfs/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	mtpfs
 PORTVERSION=	1.1
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.adebenham.com/files/mtp/
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	MTP device filesystem
 
 LICENSE=	GPLv3

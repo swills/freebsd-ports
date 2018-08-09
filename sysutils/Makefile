@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 476317 2018-08-03 18:59:18Z rene $
+# $FreeBSD: head/sysutils/Makefile 476673 2018-08-08 20:06:44Z zi $
 #
 
     COMMENT = System utilities
@@ -87,16 +87,16 @@
     SUBDIR += baloo-widgets
     SUBDIR += baloo-widgets-kde4
     SUBDIR += bamf
-    SUBDIR += bareos16-bat
-    SUBDIR += bareos16-client
-    SUBDIR += bareos16-client-static
-    SUBDIR += bareos16-server
-    SUBDIR += bareos16-traymonitor
     SUBDIR += bareos-client
     SUBDIR += bareos-client-static
     SUBDIR += bareos-docs
     SUBDIR += bareos-server
     SUBDIR += bareos-traymonitor
+    SUBDIR += bareos16-bat
+    SUBDIR += bareos16-client
+    SUBDIR += bareos16-client-static
+    SUBDIR += bareos16-server
+    SUBDIR += bareos16-traymonitor
     SUBDIR += batmon
     SUBDIR += battfink
     SUBDIR += battmond
@@ -1076,6 +1076,7 @@
     SUBDIR += rubygem-chef
     SUBDIR += rubygem-chef-api
     SUBDIR += rubygem-chef-config
+    SUBDIR += rubygem-chef-dk
     SUBDIR += rubygem-chef-zero
     SUBDIR += rubygem-facter
     SUBDIR += rubygem-fluent-mixin-plaintextformatter

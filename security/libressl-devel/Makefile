@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/security/libressl-devel/Makefile 472388 2018-06-14 17:29:29Z brnrd $
+# $FreeBSD: head/security/libressl-devel/Makefile 476588 2018-08-07 10:43:52Z brnrd $
 
 PORTNAME=	libressl
-PORTVERSION=	2.7.4
+PORTVERSION=	2.8.0
 CATEGORIES=	security devel
 MASTER_SITES=	OPENBSD/LibreSSL
 PKGNAMESUFFIX=	-devel

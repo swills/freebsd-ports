@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/gps/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/devel/gps/Makefile 476656 2018-08-08 19:03:36Z brooks $
 
 PORTNAME=	gps
 PORTVERSION=	2016
@@ -13,6 +13,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNAT Programming Studio - IDE for Ada and many other languages
 
 LICENSE=	GPLv3
+
+DEPRECATED=	Depends on obsolete LLVM 3.8.
+EXPIRATION_DATE=	2018-08-22
 
 BROKEN_aarch64=		fails to compile: No rule to make target 'default'
 

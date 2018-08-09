@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/archivers/urbackup-client/files/urbackup_client.in 467397 2018-04-15 16:17:59Z pi $
+# $FreeBSD: head/archivers/urbackup-client/files/urbackup_client.in 476717 2018-08-09 02:43:44Z pi $
 #
 # PROVIDE: urbackup_client
 # REQUIRE: LOGIN
@@ -25,6 +25,6 @@ load_rc_config $name
 command=%%PREFIX%%/sbin/urbackupclientbackend
 pidfile=/var/run/urbackupclientbackend.pid
 
-command_args="-d -w $pidfile"
+command_args="-d -w $pidfile -c %%PREFIX%%/etc/urbackup/urbackupclient.conf"
 
 run_rc_command "$1"

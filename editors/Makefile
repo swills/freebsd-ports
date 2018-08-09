@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 476280 2018-08-03 06:58:31Z tobik $
+# $FreeBSD: head/editors/Makefile 476569 2018-08-07 07:06:04Z acm $
 #
 
     COMMENT = Editors
@@ -215,6 +215,7 @@
     SUBDIR += paredit-mode.el
     SUBDIR += pdfedit
     SUBDIR += pico-alpine
+    SUBDIR += picpas
     SUBDIR += pluma
     SUBDIR += plume-creator-devel
     SUBDIR += poedit

@@ -1,15 +1,17 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/lang/io/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/io/Makefile 476592 2018-08-07 12:41:26Z gahr $
 
 PORTNAME=	io
 PORTVERSION=	2017.09.06
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 
 MAINTAINER=	gahr@FreeBSD.org
 COMMENT=	Small prototype-based programming language
 
 LICENSE=	BSD3CLAUSE
+
+CONFLICTS=	io-devel-[0-9]*
 
 BROKEN_armv6=		fails to compile: ucontext.h: expected parameter declarator
 BROKEN_armv7=		fails to compile: Coro.c:392:2: no member named 'arm_r0' in 'mcontext_t'

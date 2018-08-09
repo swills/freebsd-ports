@@ -1,9 +1,10 @@
-# $FreeBSD: head/misc/Makefile 476385 2018-08-05 02:26:26Z yuri $
+# $FreeBSD: head/misc/Makefile 476639 2018-08-08 12:26:27Z mat $
 #
 
     COMMENT = Miscellaneous utilities
 
     SUBDIR += R-cran-mime
+    SUBDIR += R-cran-xfun
     SUBDIR += achievo
     SUBDIR += aclgen
     SUBDIR += amanda-client
@@ -458,7 +459,6 @@
     SUBDIR += qt5-l10n
     SUBDIR += qt5ct
     SUBDIR += qtchooser
-    SUBDIR += R-cran-xfun
     SUBDIR += raspberrypi-userland
     SUBDIR += raspbsd-led
     SUBDIR += ree

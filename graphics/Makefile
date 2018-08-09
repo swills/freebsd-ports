@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 476335 2018-08-04 07:16:21Z yuri $
+# $FreeBSD: head/graphics/Makefile 476639 2018-08-08 12:26:27Z mat $
 #
 
     COMMENT = Graphics tools and libraries
@@ -492,6 +492,7 @@
     SUBDIR += l2p
     SUBDIR += largetifftools
     SUBDIR += laternamagica
+    SUBDIR += lazpaint
     SUBDIR += lcdtest
     SUBDIR += lcms
     SUBDIR += lcms-python
@@ -876,6 +877,7 @@
     SUBDIR += pstoedit
     SUBDIR += pstoepsi
     SUBDIR += ptex
+    SUBDIR += py-OWSLib
     SUBDIR += py-PyOpenGL
     SUBDIR += py-PyOpenGL-accelerate
     SUBDIR += py-PyX
@@ -919,7 +921,6 @@
     SUBDIR += py-opencv
     SUBDIR += py-openexr
     SUBDIR += py-openimageio
-    SUBDIR += py-OWSLib
     SUBDIR += py-paint
     SUBDIR += py-photocollage
     SUBDIR += py-pillow
@@ -1121,8 +1122,8 @@
     SUBDIR += waffle
     SUBDIR += waifu2x-converter-cpp
     SUBDIR += wayland
-    SUBDIR += waylandpp
     SUBDIR += wayland-protocols
+    SUBDIR += waylandpp
     SUBDIR += webp
     SUBDIR += wings
     SUBDIR += wmicons
