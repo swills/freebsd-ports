@@ -1,0 +1,11 @@
+--- src/Makefile.orig	2018-08-11 15:35:48 UTC
++++ src/Makefile
+@@ -834,7 +834,7 @@ uninstall-am: uninstall-includeHEADERS u
+ install-exec-hook:
+ 	- [ -f $(DESTDIR)/${libdir}/libunibreak.a ] && \
+ 	rm -f $(DESTDIR)/${libdir}/liblinebreak.a && \
+-	${LN_S} $(DESTDIR)/${libdir}/libunibreak.a $(DESTDIR)/${libdir}/liblinebreak.a
++	${INSTALL_DATA} $(DESTDIR)/${libdir}/libunibreak.a $(DESTDIR)/${libdir}/liblinebreak.a
+ 
+ distclean-local:
+ 	rm -f LineBreak.txt WordBreakData.txt GraphemeBreakData.txt filter_dup${EXEEXT}
