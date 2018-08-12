@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pan
-PORTVERSION=	0.141
+PORTVERSION=	0.145
 CATEGORIES=	news gnome
 MASTER_SITES=	http://pan.rebelbase.com/download/releases/${PORTVERSION}/source/
 DIST_SUBDIR=	gnome2
@@ -12,6 +12,7 @@ COMMENT=	Threaded GTK+ newsreader based on Agent for Windows
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	itstool:textproc/itstool
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libenchant.so:textproc/enchant \
 		libfontconfig.so:x11-fonts/fontconfig \

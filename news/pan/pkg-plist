@@ -1,4 +1,5 @@
 bin/pan
+man/man1/pan.1.gz
 share/applications/pan.desktop
 share/appdata/pan.appdata.xml
 %%NLS%%share/locale/am/LC_MESSAGES/pan.mo
@@ -49,4 +50,8 @@ share/appdata/pan.appdata.xml
 %%NLS%%share/locale/vi/LC_MESSAGES/pan.mo
 %%NLS%%share/locale/zh_CN/LC_MESSAGES/pan.mo
 %%NLS%%share/locale/zh_TW/LC_MESSAGES/pan.mo
-share/pixmaps/pan.png
+share/icons/hicolor/16x16/apps/pan.png
+share/icons/hicolor/24x24/apps/pan.png
+share/icons/hicolor/32x32/apps/pan.png
+share/icons/hicolor/48x48/apps/pan.png
+share/icons/hicolor/256x256/apps/pan.png
