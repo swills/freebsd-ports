@@ -13,11 +13,18 @@ COMMENT=	Utilities to limit user accounts to specific files and/or commands
 
 LICENSE=	BSD3CLAUSE
 
+OPTIONS_DEFINE=	PROCMAIL
+OPTIONS_SUB=	yes
+
 USES=		python:2.7
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PYTHONINTERPRETER=${PYTHON_CMD}
 
 PORTDOCS=	COPYRIGHT README.txt
+
+PROCMAIL_CONFIGURE_ENV_OFF=	ac_cv_path_PROCMAILPATH=no
+PROCMAIL_BUILD_DEPENDS=	procmail:mail/procmail
+PROCMAIL_RUN_DEPENDS=	procmail:mail/procmail
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
