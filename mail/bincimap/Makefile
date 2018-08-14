@@ -1,9 +1,9 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/mail/bincimap/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/mail/bincimap/Makefile 476860 2018-08-11 06:30:44Z loader $
 
 PORTNAME=	bincimap
 PORTVERSION=	1.2.13
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION}final

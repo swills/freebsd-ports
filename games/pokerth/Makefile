@@ -1,9 +1,9 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/games/pokerth/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/pokerth/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	pokerth
 PORTVERSION=	1.1.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	SF
 

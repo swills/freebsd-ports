@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libcutl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/libcutl/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	libcutl
 PORTVERSION=	1.10.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	devel
 MASTER_SITES=	http://www.codesynthesis.com/download/${PORTNAME}/${PORTVERSION:R}/
 

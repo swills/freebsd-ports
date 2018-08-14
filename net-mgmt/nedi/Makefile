@@ -1,5 +1,5 @@
 # Created by: Cristian KLEIN <cristi@net.utcluj.ro>
-# $FreeBSD: head/net-mgmt/nedi/Makefile 466796 2018-04-08 12:19:58Z brnrd $
+# $FreeBSD: head/net-mgmt/nedi/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	nedi
 DISTVERSION=	1.0.w
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network discovery and monitoring tool
 
 LICENSE=	GPLv2
+
+IGNORE_WITH_PHP=	70 71 72
 
 RUN_DEPENDS=	p5-Net-SNMP>=0:net-mgmt/p5-Net-SNMP \
 		p5-Net-Telnet-Cisco>=0:net-mgmt/p5-Telnet-Cisco \

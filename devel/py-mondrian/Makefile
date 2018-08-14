@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-mondrian/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-mondrian/Makefile 477087 2018-08-13 18:19:55Z sunpoet $
 
 PORTNAME=	mondrian
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

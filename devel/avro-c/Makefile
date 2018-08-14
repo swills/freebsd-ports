@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-c/Makefile 463227 2018-02-28 15:13:22Z sunpoet $
+# $FreeBSD: head/devel/avro-c/Makefile 476784 2018-08-09 14:45:57Z sunpoet $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.2
@@ -14,11 +14,6 @@ COMMENT=	C library for Apache Avro
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_aarch64=	fails to build: error: No atomic implementation
-BROKEN_armv6=	fails to build: error: No atomic implementation
-BROKEN_armv7=	fails to build: error: No atomic implementation
-BROKEN_mips=	fails to build: error: No atomic implementation
-BROKEN_mips64=	fails to build: error: No atomic implementation
 BROKEN_sparc64=	fails to build
 
 LIB_DEPENDS=	libjansson.so:devel/jansson \

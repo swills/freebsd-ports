@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/unixcw/Makefile 476626 2018-08-08 04:35:54Z shurd $
+# $FreeBSD: head/comms/unixcw/Makefile 476737 2018-08-09 11:14:52Z db $
 
 # NOTE: comms/xcwcp is a sub-port of this.  When making changes, ensure
 #       it still works as well.
@@ -44,7 +44,7 @@ OPTIONS_DEFAULT+=	ALSA PULSEAUDIO
 ALSA_CONFIGURE_ENABLE=	alsa
 PULSEAUDIO_CONFIGURE_ENABLE=	pulseaudio
 ALSA_BUILD_DEPENDS=	${LOCALBASE}/include/alsa/asoundlib.h:audio/alsa-lib
-PULSEAUDIO_BUILD_DEPENDS=	${LOCALBASE}/include/pulse/simple.h:audio/portaudio
+PULSEAUDIO_BUILD_DEPENDS=	${LOCALBASE}/include/pulse/simple.h:audio/pulseaudio
 .endif
 
 post-install:

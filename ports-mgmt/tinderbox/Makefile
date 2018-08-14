@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/ports-mgmt/tinderbox/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/ports-mgmt/tinderbox/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	tinderbox
 PORTVERSION=	4.2.0
@@ -10,6 +10,8 @@ DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Port build tinderbox system
+
+IGNORE_WITH_PHP=	70 71 72
 
 RUN_DEPENDS=	dialog4ports-static:ports-mgmt/dialog4ports-static
 

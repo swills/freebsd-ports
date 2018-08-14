@@ -1,5 +1,5 @@
 # Created by: Chie Taguchi <taguchi.ch@gmail.com>
-# $FreeBSD: head/security/masscan/Makefile 476660 2018-08-08 19:11:50Z brooks $
+# $FreeBSD: head/security/masscan/Makefile 477118 2018-08-13 21:31:22Z brooks $
 
 PORTNAME=	masscan
 PORTVERSION=	1.0.4
@@ -24,8 +24,8 @@ PLIST_FILES=	bin/masscan man/man8/masscan.8.gz
 .include <bsd.port.pre.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-BUILD_DEPENDS+=	clang38:devel/llvm38
-CC=		clang38
+BUILD_DEPENDS+=	clang60:devel/llvm60
+CC=		clang60
 .endif
 
 do-install:

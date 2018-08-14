@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-zookeeper/Makefile 475567 2018-07-28 13:17:40Z sunpoet $
+# $FreeBSD: head/devel/pecl-zookeeper/Makefile 477015 2018-08-12 17:33:47Z sunpoet $
 
 PORTNAME=	zookeeper
 PORTVERSION=	0.6.2
@@ -17,7 +17,7 @@ IGNORE_WITH_PHP=56
 USE_PHP=	session:build
 USES=		php:pecl
 
-PLIST_FILES=	%%DATADIR%%/zookeeper-api.php
+PORTDATA=	zookeeper-api.php
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/

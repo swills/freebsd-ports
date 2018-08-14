@@ -1,5 +1,5 @@
 # Created by: Sergei Kolobov <sergei@FreeBSD.org>
-# $FreeBSD: head/mail/annoyance-filter/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/mail/annoyance-filter/Makefile 477145 2018-08-14 09:13:31Z tobik $
 
 PORTNAME=	annoyance-filter
 PORTVERSION=	1.0d
@@ -15,6 +15,9 @@ LICENSE=	PD GPLv2+
 LICENSE_COMB=	multi
 LICENSE_FILE_PD=	${WRKSRC}/COPYING
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING.GNU
+
+DEPRECATED=	Unmaintained upstream
+EXPIRATION_DATE=	2018-09-15
 
 USE_GCC=	yes
 GNU_CONFIGURE=	yes

@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/aqsis/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/aqsis/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	aqsis
 PORTVERSION=	1.8.2
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-source/${PORTVERSION}
 

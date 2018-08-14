@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-subatom/Makefile 471636 2018-06-04 18:08:12Z sunpoet $
+# $FreeBSD: head/devel/p5-subatom/Makefile 477014 2018-08-12 17:33:42Z sunpoet $
 
 PORTNAME=	subatom
 PORTVERSION=	0.12
@@ -22,6 +22,6 @@ USE_PERL5=	modbuild
 USES=		perl5
 
 PLIST_FILES=	bin/subatom \
-		%%PERL5_MAN1%%/subatom.1.gz
+		${SITE_MAN1_REL}/subatom.1.gz
 
 .include <bsd.port.mk>

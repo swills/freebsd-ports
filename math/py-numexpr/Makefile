@@ -1,8 +1,8 @@
 # Created by: Ju Pengfei <ju.pengfei@gmail.com>
-# $FreeBSD: head/math/py-numexpr/Makefile 475755 2018-07-29 19:17:28Z sunpoet $
+# $FreeBSD: head/math/py-numexpr/Makefile 477088 2018-08-13 18:20:00Z sunpoet $
 
 PORTNAME=	numexpr
-PORTVERSION=	2.6.6
+PORTVERSION=	2.6.7
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

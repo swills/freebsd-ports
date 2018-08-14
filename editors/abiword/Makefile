@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/editors/abiword/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/editors/abiword/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	abiword
 PORTVERSION=	3.0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	editors
 MASTER_SITES=	http://www.abisource.com/downloads/abiword/${PORTVERSION}/source/
 DIST_SUBDIR=	AbiWord

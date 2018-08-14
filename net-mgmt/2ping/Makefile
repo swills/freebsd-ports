@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/2ping/Makefile 456138 2017-12-12 13:33:20Z sunpoet $
+# $FreeBSD: head/net-mgmt/2ping/Makefile 477085 2018-08-13 18:19:45Z sunpoet $
 
 PORTNAME=	2ping
-PORTVERSION=	4.1
+PORTVERSION=	4.2
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	https://www.finnie.org/software/2ping/ \
 		LOCAL/sunpoet

@@ -1,5 +1,5 @@
 # Created by: Peter C. Lai <cowbert@gmail.com>
-# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 476915 2018-08-11 14:18:49Z sunpoet $
 
 PORTNAME=	mk-livestatus
 PORTVERSION=	1.2.8p16
@@ -42,7 +42,7 @@ NAGIOS4_CONFIGURE_ON=	--with-nagios4
 
 # perl api is really outdated, do not install!
 # Actual version can be found on CPAN
-# http://search.cpan.org/~nierlein/Monitoring-Livestatus/
+# https://metacpan.org/release/Monitoring-Livestatus
 post-extract:
 	@${RM} -r ${WRKSRC}/api/perl
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/snuffleupagus/Makefile 466361 2018-04-03 16:13:32Z joneum $
+# $FreeBSD: head/security/snuffleupagus/Makefile 477186 2018-08-14 16:51:42Z swills $
 
 PORTNAME=	snuffleupagus
 DISTVERSIONPREFIX=v
-DISTVERSION=	0.2.2
+DISTVERSION=	0.3.0
 CATEGORIES=	security
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
@@ -16,10 +16,12 @@ IGNORE_WITH_PHP=56
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
+TEST_TARGET=	test
+
 WRKSRC_SUBDIR=	src
 
 USES=		localbase:ldflags php:ext
-USE_PHP=	hash:build
+USE_PHP=	hash:build session:build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nbs-system

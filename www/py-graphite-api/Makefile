@@ -1,9 +1,9 @@
-# Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/www/py-graphite-api/Makefile 473979 2018-07-05 18:23:22Z dch $
+# Created by: Dave Cottlehuber <dch@FreeBSD.org>
+# $FreeBSD: head/www/py-graphite-api/Makefile 476828 2018-08-10 11:40:28Z dch $
 
 PORTNAME=	graphite-api
 PORTVERSION=	1.1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

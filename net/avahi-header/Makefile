@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/net/avahi-header/Makefile 464707 2018-03-16 15:22:00Z sunpoet $
+# $FreeBSD: head/net/avahi-header/Makefile 477046 2018-08-13 01:49:59Z zi $
 #   $MCom: ports/net/avahi-header/Makefile,v 1.4 2012/07/09 18:22:19 kwm Exp $
 
 PORTREVISION=	0
@@ -8,7 +8,7 @@ PKGNAMESUFFIX=	-header
 
 COMMENT=	Install an avahi-gtk* header to avoid conflict
 
-CONFLICTS=	avahi-gtk-0.6.[0-2]*
+CONFLICTS=	avahi-gtk-0.7.[0-2]*
 
 MASTERDIR=	${.CURDIR}/../avahi-app
 BUILD_WRKSRC=	${WRKSRC}/avahi-ui

@@ -1,10 +1,10 @@
 # Created by: Moritz Warning <moritzwarning@web.de>
-# $FreeBSD: head/dns/kadnode/Makefile 470552 2018-05-21 15:17:23Z tobik $
+# $FreeBSD: head/dns/kadnode/Makefile 476834 2018-08-10 14:23:15Z tijl $
 
 PORTNAME=	kadnode
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.3
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	dns
 
 MAINTAINER=	moritzwarning@web.de

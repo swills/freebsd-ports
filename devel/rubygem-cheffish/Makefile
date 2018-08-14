@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-cheffish/Makefile 476663 2018-08-08 19:29:19Z zi $
+# $FreeBSD: head/devel/rubygem-cheffish/Makefile 476896 2018-08-11 14:17:14Z sunpoet $
 
 PORTNAME=	cheffish
 PORTVERSION=	13.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	ruby@FreeBSD.org
-COMMENT=	A library to manipulate Chef in Chef
+COMMENT=	Library to manipulate Chef in Chef
 
 LICENSE=	APACHE20
 

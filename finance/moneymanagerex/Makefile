@@ -1,10 +1,10 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/finance/moneymanagerex/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/finance/moneymanagerex/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	mmex
 PORTVERSION=	1.2.7
 DISTVERSIONPREFIX=	v
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	finance
 MASTER_SITES=	https://github.com/vslavik/bakefile/releases/download/v0.2.9/:bakefile
 DISTFILES=	bakefile-0.2.9${EXTRACT_SUFX}:bakefile

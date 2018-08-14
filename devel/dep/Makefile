@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/dep/Makefile 461634 2018-02-12 19:05:00Z sunpoet $
+# $FreeBSD: head/devel/dep/Makefile 476837 2018-08-10 14:53:39Z miwi $
 
 PORTNAME=	dep
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.1
+DISTVERSION=	0.5.0
 CATEGORIES=	devel
 
 MAINTAINER=	sam.gwydir@joyent.com

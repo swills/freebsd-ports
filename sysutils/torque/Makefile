@@ -1,5 +1,5 @@
 # Created by: trasz
-# $FreeBSD: head/sysutils/torque/Makefile 462276 2018-02-19 04:25:17Z linimon $
+# $FreeBSD: head/sysutils/torque/Makefile 476945 2018-08-11 20:34:55Z danilo $
 
 PORTNAME=	torque
 PORTVERSION=	2.5.13
@@ -12,7 +12,6 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open source distributed computing resource manager based on PBS
 
 BROKEN_aarch64=		fails to link: missing sbrk
-BROKEN_FreeBSD_12=	fails to compile: mom_mach.c: variable has incomplete type 'struct vmmeter'
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}
 USES=		gmake perl5 libtool
@@ -24,6 +23,7 @@ USE_RC_SUBR=	pbs_server pbs_sched pbs_mom
 SUB_FILES=	pkg-message torque-config
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+CFLAGS+=	-D_WANT_VMMETER
 
 CONFLICTS_INSTALL=	qstat-[0-9]* zh-qterm-[0-9]*
 

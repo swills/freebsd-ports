@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/supercollider/Makefile 474819 2018-07-17 17:49:40Z yuri $
+# $FreeBSD: head/audio/supercollider/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	supercollider
 DISTVERSION=	3.9.3
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/supercollider/supercollider/releases/download/Version-${PORTVERSION}/
 DISTNAME=	SuperCollider-${PORTVERSION}-Source-linux

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/msx264/Makefile 457488 2017-12-29 02:55:42Z jbeich $
+# $FreeBSD: head/multimedia/msx264/Makefile 476802 2018-08-10 00:55:12Z jbeich $
 
 PORTNAME=	msx264
 PORTVERSION=	1.5.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia net
 MASTER_SITES=	SAVANNAH/linphone/plugins/sources/
 

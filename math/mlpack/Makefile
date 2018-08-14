@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/mlpack/Makefile 470420 2018-05-19 16:34:16Z krion $
+# $FreeBSD: head/math/mlpack/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	mlpack
 DISTVERSION=	3.0.1
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://mlpack.org/files/
 

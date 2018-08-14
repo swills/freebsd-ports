@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-plugins-x264/Makefile 457488 2017-12-29 02:55:42Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer-plugins-x264/Makefile 476802 2018-08-10 00:55:12Z jbeich $
 #   $MCom: ports/multimedia/gstreamer-plugins-x264/Makefile,v 1.3 2008/03/19 14:05:37 ahze Exp $
 
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	multimedia
 
 COMMENT=	Gstreamer x264 plugin

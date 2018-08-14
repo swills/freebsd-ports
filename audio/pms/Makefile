@@ -1,9 +1,9 @@
 # Created by: Ashish SHUKLA <wahjava@gmail.com>
-# $FreeBSD: head/audio/pms/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/audio/pms/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	pms
 PORTVERSION=	0.42
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

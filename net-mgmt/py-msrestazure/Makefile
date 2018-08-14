@@ -1,22 +1,25 @@
 # Created by: Johannes Jost Meixner <johannes@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-msrestazure/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-mgmt/py-msrestazure/Makefile 476789 2018-08-09 16:32:16Z dbn $
 
 PORTNAME=	msrestazure
-PORTVERSION=	0.4.8
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.5.0
 CATEGORIES=	net-mgmt python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dbn@FreeBSD.org
 COMMENT=	Azure-specific AutoRest swagger generator Python client runtime
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}keyring>0:security/py-keyring@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}msrest>0:net-mgmt/py-msrest@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msrest>0:net-mgmt/py-msrest@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}adal>0:net-mgmt/py-adal@${PY_FLAVOR}
 
-USES=		python zip
+USES=		python
 USE_PYTHON=	autoplist distutils
+USE_GITHUB=	yes
+GH_ACCOUNT=	Azure
+GH_PROJECT=	msrestazure-for-python
 
 .include <bsd.port.mk>

@@ -1,10 +1,10 @@
 # Created by: Luca Pizzamiglio <pizzamig@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/openbmp/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-mgmt/openbmp/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	openbmp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.14.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	pizzamig@FreeBSD.org

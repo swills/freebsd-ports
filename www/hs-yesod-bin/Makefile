@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-yesod-bin/Makefile 475642 2018-07-29 10:40:28Z arrowd $
+# $FreeBSD: head/www/hs-yesod-bin/Makefile 476867 2018-08-11 09:38:02Z amdmi3 $
 
 PORTNAME=	yesod-bin
 PORTVERSION=	1.6.0.3
@@ -8,6 +8,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Yesod helper executable
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	async attoparsec>=0.10 base64-bytestring \
 		blaze-builder>=0.2.1.4 conduit>=1.2 conduit-extra \

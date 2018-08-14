@@ -1,8 +1,8 @@
 # Created by: Evan Sarmiento <bsdports@wayfair.com>
-# $FreeBSD: head/devel/rubygem-mongo/Makefile 476061 2018-07-31 23:48:29Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mongo/Makefile 477181 2018-08-14 16:41:45Z sunpoet $
 
 PORTNAME=	mongo
-PORTVERSION=	2.6.1
+PORTVERSION=	2.6.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

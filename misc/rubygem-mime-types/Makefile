@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/misc/rubygem-mime-types/Makefile 416246 2016-06-01 15:28:42Z pi $
+# $FreeBSD: head/misc/rubygem-mime-types/Makefile 477183 2018-08-14 16:41:55Z sunpoet $
 
 PORTNAME=	mime-types
-PORTVERSION=	3.1
+PORTVERSION=	3.2.1
 CATEGORIES=	misc rubygems
 MASTER_SITES=	RG
 
@@ -10,7 +10,7 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Ruby gem which provides a mailcap-like MIME Content-Type lookup
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/Licence.rdoc
+LICENSE_FILE=	${WRKSRC}/Licence.md
 
 RUN_DEPENDS=	rubygem-mime-types-data>=3.2015:misc/rubygem-mime-types-data
 

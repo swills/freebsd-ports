@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 476658 2018-08-08 19:09:09Z brooks $
+# $FreeBSD: head/science/Makefile 476726 2018-08-09 08:13:10Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -247,6 +247,7 @@
     SUBDIR += vmd
     SUBDIR += voro++
     SUBDIR += xcrysden
+    SUBDIR += xdrawchem
     SUBDIR += xfce4-equake-plugin
     SUBDIR += xmakemol
 

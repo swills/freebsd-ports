@@ -1,5 +1,5 @@
 # Created by: brd@FreeBSD.org
-# $FreeBSD: head/net/p5-Net-NTP/Makefile 437360 2017-03-31 14:32:02Z brd $
+# $FreeBSD: head/net/p5-Net-NTP/Makefile 477024 2018-08-12 17:34:34Z sunpoet $
 
 PORTNAME=	Net-NTP
 PORTVERSION=	1.5
@@ -13,7 +13,7 @@ NO_ARCH=	yes
 USE_PERL5=	configure
 USES=		perl5
 
-PLIST_FILES=	%%SITE_PERL%%/Net/NTP.pm \
-		%%PERL5_MAN3%%/Net::NTP.3.gz
+PLIST_FILES=	${SITE_PERL_REL}/Net/NTP.pm \
+		${SITE_MAN3_REL}/Net::NTP.3.gz
 
 .include <bsd.port.mk>

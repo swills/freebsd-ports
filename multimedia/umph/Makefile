@@ -1,5 +1,5 @@
 # Created by: Toni Gundogdu <legatvs@gmail.com>
-# $FreeBSD: head/multimedia/umph/Makefile 425406 2016-11-05 18:00:26Z sunpoet $
+# $FreeBSD: head/multimedia/umph/Makefile 477012 2018-08-12 17:33:32Z sunpoet $
 
 PORTNAME=	umph
 PORTVERSION=	0.2.5
@@ -22,6 +22,6 @@ USE_PERL5=	configure
 USES=		perl5
 
 PLIST_FILES=	bin/umph \
-		%%PERL5_MAN1%%/umph.1.gz
+		${SITE_MAN1_REL}/umph.1.gz
 
 .include <bsd.port.mk>

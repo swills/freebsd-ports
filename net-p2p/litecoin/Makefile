@@ -1,9 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net-p2p/litecoin/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-p2p/litecoin/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	litecoin
 PORTVERSION=	0.16.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-p2p finance
 

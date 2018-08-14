@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 476321 2018-08-03 20:29:52Z naddy $
+# $FreeBSD: head/GIDs 477056 2018-08-13 07:21:32Z girgen $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -417,7 +417,7 @@ minio:*:473:
 gitlab-runner:*:474:
 traefik:*:475:
 gitlab-pages:*:476:
-# free: 477
+fiche:*:477:
 prometheus:*:478:
 alertmanager:*:479:
 # free: 480
@@ -824,7 +824,7 @@ _geodns:*:853:
 # free: 881
 # free: 882
 # free: 883
-# free: 884
+telegraf:*:884:
 tcpdump:*:885:
 miniflux:*:886:
 pdagent:*:887:

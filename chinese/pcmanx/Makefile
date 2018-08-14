@@ -1,8 +1,9 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/chinese/pcmanx/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/pcmanx/Makefile 476861 2018-08-11 08:30:55Z lwhsu $
 
 PORTNAME=	pcmanx
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	chinese net gnome
 MASTER_SITES=	https://github.com/pcman-bbs/${PORTNAME}/releases/download/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-gtk2-${PORTVERSION}
@@ -13,9 +14,10 @@ COMMENT=	BBS client using GTK+ 2.x
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USE_GNOME=	gtk20 intlhack
 USES=		gmake iconv pkgconfig tar:xz
+
 GNU_CONFIGURE=	yes
+USE_GNOME=	gtk20 intlhack
 
 OPTIONS_DEFINE=	NLS DEBUG DOCKLET NOTIFIER LIBNOTIFY NANCY MOUSE EXTERNAL IPLOOKUP PROXY
 OPTIONS_DEFAULT=	DOCKLET NOTIFIER NANCY MOUSE EXTERNAL

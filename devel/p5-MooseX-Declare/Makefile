@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Declare/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Declare/Makefile 476978 2018-08-12 08:06:23Z antoine $
 
 PORTNAME=	MooseX-Declare
 PORTVERSION=	0.43
@@ -27,9 +27,6 @@ BUILD_DEPENDS=	p5-Devel-Declare>=0.005011:devel/p5-Devel-Declare \
 		p5-namespace-clean>=0.19:devel/p5-namespace-clean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
-
-DEPRECATED=	Deprecated by upstream
-EXPIRATION_DATE=	2017-03-01
 
 USES=		perl5
 USE_PERL5=	modbuildtiny

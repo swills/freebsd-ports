@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/kdenetwork-strigi-analyzers-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/kdenetwork-strigi-analyzers-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	kdenetwork-strigi-analyzers
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	net kde kde-kde4
 PKGNAMESUFFIX=	-kde4
 

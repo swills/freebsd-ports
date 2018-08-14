@@ -1,9 +1,9 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/thrift-cpp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/thrift-cpp/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION} # to keep in sync with thrift
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/thrift/${PORTVERSION}

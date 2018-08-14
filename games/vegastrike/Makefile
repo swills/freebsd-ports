@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/vegastrike/Makefile 470946 2018-05-26 19:29:58Z antoine $
+# $FreeBSD: head/games/vegastrike/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	vegastrike
 PORTVERSION=	0.5.1.r1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:R}/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}

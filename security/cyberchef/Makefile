@@ -1,8 +1,8 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/security/cyberchef/Makefile 476515 2018-08-06 16:34:40Z dvl $
+# $FreeBSD: head/security/cyberchef/Makefile 476832 2018-08-10 14:06:02Z dvl $
 
 PORTNAME=	cyberchef
-PORTVERSION=	8.0.0
+PORTVERSION=	8.0.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

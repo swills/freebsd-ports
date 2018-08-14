@@ -1,9 +1,9 @@
 # Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/editors/xmlcopyeditor/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/editors/xmlcopyeditor/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	xmlcopyeditor
 PORTVERSION=	1.2.1.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	editors
 MASTER_SITES=	SF/xml-copy-editor/${PORTNAME}-linux/${PORTVERSION}
 

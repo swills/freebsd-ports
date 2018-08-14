@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/p5-File-Type/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-File-Type/Makefile 477059 2018-08-13 09:08:03Z amdmi3 $
 
 PORTNAME=	File-Type
 PORTVERSION=	0.22
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Determine file type using magic
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

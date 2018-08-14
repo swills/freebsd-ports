@@ -1,5 +1,5 @@
 # Created by: Dryice Liu
-# $FreeBSD: head/devel/ipython/Makefile 476628 2018-08-08 07:47:30Z farrokhi $
+# $FreeBSD: head/devel/ipython/Makefile 476894 2018-08-11 14:17:04Z sunpoet $
 
 PORTNAME=	ipython
 PORTVERSION=	6.5.0
@@ -32,13 +32,7 @@ NO_ARCH=	yes
 OPTIONS_DEFINE=	EXAMPLES
 PORTEXAMPLES=	*
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pathlib2>=0:devel/py-pathlib2@${PY_FLAVOR}
-.endif
-
 post-install-EXAMPLES-on:
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

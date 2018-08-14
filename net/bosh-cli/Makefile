@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/bosh-cli/Makefile 476234 2018-08-02 12:14:05Z dumbbell $
+# $FreeBSD: head/net/bosh-cli/Makefile 476749 2018-08-09 14:27:30Z dumbbell $
 
 PORTNAME=	bosh-cli
-PORTVERSION=	5.0.1
+PORTVERSION=	5.1.1
 CATEGORIES=	net sysutils
 
 MAINTAINER=	dumbbell@FreeBSD.org

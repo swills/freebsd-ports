@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 476716 2018-08-09 02:18:00Z zi $
+# $FreeBSD: head/net/Makefile 476859 2018-08-11 06:22:47Z yuri $
 #
 
     COMMENT = Networking tools
@@ -1569,5 +1569,6 @@
     SUBDIR += zillion
     SUBDIR += zmap
     SUBDIR += zsync
+    SUBDIR += zyre
 
 .include <bsd.port.subdir.mk>

@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/smack/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/devel/smack/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	smack
 PORTVERSION=	0.5.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/devel/py-cbor2/Makefile 476399 2018-08-05 09:20:37Z antoine $
+# $FreeBSD: head/devel/py-cbor2/Makefile 476734 2018-08-09 10:42:42Z dvl $
 
 PORTNAME=	cbor2
 PORTVERSION=	4.1.0
@@ -16,8 +16,5 @@ USES=		python:2.7
 USE_PYTHON=	autoplist concurrent distutils
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR}
-
-#post-install:
-#	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/cbor/_cbor.so
 
 .include <bsd.port.mk>

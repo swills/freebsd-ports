@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Daemonize/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Daemonize/Makefile 476978 2018-08-12 08:06:23Z antoine $
 
 PORTNAME=	MooseX-Daemonize
 PORTVERSION=	0.21
@@ -19,9 +19,6 @@ BUILD_DEPENDS=	p5-Moose>=0.33:devel/p5-Moose \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 BUILD_DEPENDS+=	p5-Devel-CheckOS>=1.63:devel/p5-Devel-CheckOS
-
-DEPRECATED=	Deprecated by upstream, use devel/p5-Daemon-Control instead
-EXPIRATION_DATE=	2017-03-01
 
 NO_ARCH=	yes
 USES=		perl5

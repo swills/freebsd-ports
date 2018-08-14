@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openlierox/Makefile 473445 2018-06-27 14:48:58Z amdmi3 $
+# $FreeBSD: head/games/openlierox/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	openlierox
 DISTVERSION=	0.58_rc3
-PORTREVISION=	16
+PORTREVISION=	17
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/OpenLieroX%20${DISTVERSION:C/_/%20/}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-meck/Makefile 474630 2018-07-14 09:20:53Z olgeni $
+# $FreeBSD: head/devel/erlang-meck/Makefile 476720 2018-08-09 06:30:09Z olgeni $
 
 PORTNAME=	meck
-PORTVERSION=	0.8.11
+PORTVERSION=	0.8.12
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

@@ -1,12 +1,12 @@
-# $FreeBSD: head/www/py-flask-migrate/Makefile 476506 2018-08-06 11:21:54Z arved $
+# $FreeBSD: head/www/py-flask-migrate/Makefile 477018 2018-08-12 17:34:02Z sunpoet $
 
 PORTNAME=	Flask-Migrate
 PORTVERSION=	2.2.1
-DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Database schema migrations for Flask applications
 
 LICENSE=	MIT
@@ -18,8 +18,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.9:www/py-flask@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	autoplist distutils
-USE_GITHUB=	yes
-GH_ACCOUNT=	miguelgrinberg
 
 NO_ARCH=	yes
 

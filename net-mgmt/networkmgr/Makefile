@@ -1,8 +1,8 @@
 # Created by: Eric Turgeon <ericturgeon.bsd@gmail.org>
-# $FreeBSD: head/net-mgmt/networkmgr/Makefile 472249 2018-06-12 13:50:58Z ericbsd $
+# $FreeBSD: head/net-mgmt/networkmgr/Makefile 477062 2018-08-13 11:10:57Z ericbsd $
 
 PORTNAME=	networkmgr
-DISTVERSION=	2.6
+DISTVERSION=	2.7
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ericbsd@FreeBSD.org

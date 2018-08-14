@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 475665 2018-07-29 17:37:00Z imp $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 476839 2018-08-10 15:49:13Z manu $
 #
 # Common infrastructure for u-boot ports
 #
 
 PORTNAME=	u-boot
 PORTVERSION=	${UBOOT_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	-${MODEL}
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/
@@ -83,6 +83,12 @@ UBOOT_MOVE_ZYNQ_7000=${WRKSRC}/spl/boot.bin ${.CURDIR}/files/uEnv.txt
 UBOOT_PLIST_RPI=	u-boot.bin
 UBOOT_METADATA_RPI_FILES=	${UBOOT_PLIST_RPI}
 UBOOT_METADATA_RPI_METHOD=	file
+
+# Overrides for IMX6 family
+UBOOT_METADATA_IMX6_FILES=	u-boot.imx
+UBOOT_METADATA_IMX6_METHOD=	raw
+UBOOT_METADATA_IMX6_RAW_OFFSET=	2
+UBOOT_METADATA_IMX6_RAW_BS=	512
 
 # Uboot variables
 .if !defined(UBOOT_VERSION) && defined(UBOOT_VERSION_${FAMILY:tu})

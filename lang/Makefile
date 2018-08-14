@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 476655 2018-08-08 18:45:51Z brooks $
+# $FreeBSD: head/lang/Makefile 477121 2018-08-13 22:56:27Z brooks $
 #
 
     COMMENT = Programming languages
@@ -36,8 +36,6 @@
     SUBDIR += cint
     SUBDIR += cjs
     SUBDIR += clang-devel
-    SUBDIR += clang33
-    SUBDIR += clang34
     SUBDIR += clang35
     SUBDIR += cling
     SUBDIR += clojure

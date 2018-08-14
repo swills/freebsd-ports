@@ -1,8 +1,7 @@
-# Created by: Nikolai Lifanov <lifanov@FreeBSD.org>
-# $FreeBSD: head/sysutils/docker-machine/Makefile 464490 2018-03-14 13:00:56Z lifanov $
+# $FreeBSD: head/sysutils/docker-machine/Makefile 477041 2018-08-12 23:10:49Z lifanov $
 
 PORTNAME=		docker-machine
-PORTVERSION=		0.14.0
+PORTVERSION=		0.15.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=		sysutils
 
@@ -22,9 +21,6 @@ GH_ACCOUNT=	docker
 GH_PROJECT=	machine
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
-GO_TARGET=	github.com/${GH_ACCOUNT}/${GH_PROJECT}/cmd
-
-post-install:
-	@${MV} ${STAGEDIR}${PREFIX}/bin/cmd ${STAGEDIR}${PREFIX}/bin/docker-machine
+GO_TARGET=	github.com/${GH_ACCOUNT}/${GH_PROJECT}/cmd/${PORTNAME}
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/gauche/Makefile 476412 2018-08-05 13:18:46Z danfe $
+# $FreeBSD: head/lang/gauche/Makefile 476834 2018-08-10 14:23:15Z tijl $
 
 PORTNAME=	gauche
 PORTVERSION=	0.9.6
+PORTREVISION=	1
 CATEGORIES=	lang scheme
 MASTER_SITES=	SF/${PORTNAME}/Gauche
 DISTNAME=	Gauche-${PORTVERSION}

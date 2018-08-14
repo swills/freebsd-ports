@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/gstreamer-plugins-sndio/Makefile 442111 2017-05-30 18:21:35Z tobik $
+# $FreeBSD: head/audio/gstreamer-plugins-sndio/Makefile 476844 2018-08-10 18:49:49Z tobik $
 
 PORTNAME=	gstreamer-plugins-sndio
-PORTVERSION=	0.10.31
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.10.31.1
 CATEGORIES=	audio
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -18,8 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	t6
 
 USES=		pkgconfig
-USE_GNOME=	glib20 libxml2
-USE_LDCONFIG=	yes
+USE_GNOME=	glib20
 
 PLIST_FILES=	lib/gstreamer-0.10/libgstsndio.so
 

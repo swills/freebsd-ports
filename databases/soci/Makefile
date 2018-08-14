@@ -1,9 +1,9 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/databases/soci/Makefile 469114 2018-05-05 14:29:00Z danfe $
+# $FreeBSD: head/databases/soci/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	soci
 PORTVERSION=	3.2.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	databases
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

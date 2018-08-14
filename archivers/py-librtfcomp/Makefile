@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/archivers/py-librtfcomp/Makefile 455486 2017-12-03 20:47:08Z antoine $
+# $FreeBSD: head/archivers/py-librtfcomp/Makefile 477016 2018-08-12 17:33:52Z sunpoet $
 
 PORTNAME=	librtfcomp
 PORTVERSION=	1.3
@@ -25,8 +25,8 @@ USES=		libtool python:2.7
 BUILD_WRKSRC=	${WRKSRC}/python
 INSTALL_WRKSRC=	${WRKSRC}/python
 
-PLIST_FILES=	%%PYTHON_SITELIBDIR%%/pyrtfcomp.a \
-		%%PYTHON_SITELIBDIR%%/pyrtfcomp.so
+PLIST_FILES=	${PYTHON_SITELIBDIR}/pyrtfcomp.a \
+		${PYTHON_SITELIBDIR}/pyrtfcomp.so
 
 post-patch:
 	@${REINPLACE_CMD} -e '/VISIBILITY=/ s| -fvisibility=hidden||' ${WRKSRC}/configure

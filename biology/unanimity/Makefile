@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/unanimity/Makefile 473010 2018-06-22 00:03:08Z linimon $
+# $FreeBSD: head/biology/unanimity/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	unanimity
 DISTVERSION=	g20180307
+PORTREVISION=	1
 CATEGORIES=	biology
 
 MAINTAINER=	jwb@FreeBSD.org

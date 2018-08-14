@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/vowpal_wabbit/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/vowpal_wabbit/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	vowpal_wabbit
 PORTVERSION=	7.10
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	math
 
 MAINTAINER=	demon@FreeBSD.org

@@ -1,5 +1,4 @@
-# Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-paint1/Makefile 476671 2018-08-08 20:00:05Z zi $
+# $FreeBSD: head/devel/rubygem-paint1/Makefile 476736 2018-08-09 11:07:45Z sunpoet $
 
 PORTNAME=	paint
 PORTVERSION=	1.0.1

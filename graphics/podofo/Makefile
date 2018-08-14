@@ -1,9 +1,8 @@
 # Created by: stas
-# $FreeBSD: head/graphics/podofo/Makefile 462291 2018-02-19 10:29:34Z sunpoet $
+# $FreeBSD: head/graphics/podofo/Makefile 477169 2018-08-14 16:40:46Z sunpoet $
 
 PORTNAME=	podofo
-PORTVERSION=	0.9.5
-PORTREVISION=	1
+PORTVERSION=	0.9.6
 CATEGORIES=	graphics print
 MASTER_SITES=	SF
 

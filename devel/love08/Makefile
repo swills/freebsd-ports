@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/love08/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/love08/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	love
 PORTVERSION=	0.8.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel games
 MASTER_SITES=	http://cdn.bitbucket.org/rude/love/downloads/ \
 		http://mirror.amdmi3.ru/distfiles/

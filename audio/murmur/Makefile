@@ -1,9 +1,9 @@
 # Created by: Ayumi M <ayu@commun.jp>
-# $FreeBSD: head/audio/murmur/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/murmur/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	murmur
 PORTVERSION=	1.2.19
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	audio net
 
 MAINTAINER=	feld@FreeBSD.org

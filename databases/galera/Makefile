@@ -1,10 +1,10 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/databases/galera/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/databases/galera/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	galera
 PORTVERSION?=	25.3.23
 DISTVERSIONPREFIX?=	release_
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 
 MAINTAINER=	devel@galeracluster.com

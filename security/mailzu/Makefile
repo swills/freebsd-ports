@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/security/mailzu/Makefile 466797 2018-04-08 12:21:09Z brnrd $
+# $FreeBSD: head/security/mailzu/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	mailzu
 DISTVERSION=	0.8rc3
@@ -13,6 +13,8 @@ COMMENT=	Simple and intuitive web interface to manage amavisd-new quarantine
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+IGNORE_WITH_PHP=	70 71 72
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/amavisd:security/amavisd-new \
 		${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR} \

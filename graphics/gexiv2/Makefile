@@ -1,11 +1,11 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gexiv2/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/gexiv2/Makefile 477117 2018-08-13 21:20:18Z cmt $
 
 PORTNAME=	gexiv2
-PORTVERSION=	0.10.6
-PORTREVISION=	1
+PORTVERSION=	0.10.8
 CATEGORIES=	graphics
-MASTER_SITES=	GNOME/sources/gexiv2/${PORTVERSION:R}
+# MASTER_SITES=	GNOME/sources/gexiv2/${PORTVERSION:R}
+MASTER_SITES=	GNOME
 
 MAINTAINER=	cmt@FreeBSD.org
 COMMENT=	GObject-based wrapper around Exiv2 library

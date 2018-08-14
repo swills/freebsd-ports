@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pyvisa/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pyvisa/Makefile 477171 2018-08-14 16:40:52Z sunpoet $
 
 PORTNAME=	pyvisa
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

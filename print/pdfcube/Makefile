@@ -1,9 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/print/pdfcube/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/print/pdfcube/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	pdfcube
 PORTVERSION=	0.0.5
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	print
 MASTER_SITES=	http://code.100allora.it/releases/pdfcube/
 

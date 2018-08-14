@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/mail/Makefile 477131 2018-08-14 01:18:54Z loader $
 #
 
     COMMENT = Electronic mail utilities
@@ -540,6 +540,7 @@
     SUBDIR += py-flufl.bounce
     SUBDIR += py-fuglu
     SUBDIR += py-libgmail
+    SUBDIR += py-managesieve3
     SUBDIR += py-milter
     SUBDIR += py-notmuch
     SUBDIR += py-ppolicy

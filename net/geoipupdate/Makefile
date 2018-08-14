@@ -1,8 +1,8 @@
 # Created by: adamw
-# $FreeBSD: head/net/geoipupdate/Makefile 474964 2018-07-19 14:43:49Z adamw $
+# $FreeBSD: head/net/geoipupdate/Makefile 477193 2018-08-14 18:38:02Z adamw $
 
 PORTNAME=	geoipupdate
-PORTVERSION=	2.5.0
+PORTVERSION=	3.0.1
 CATEGORIES=	net geography
 MASTER_SITES=	https://github.com/maxmind/geoipupdate/releases/download/v${PORTVERSION}/
 

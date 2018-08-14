@@ -1,10 +1,10 @@
 # Created by: Xiaoding Liu <xiaoding+freebsd@xiaoding.org>
-# $FreeBSD: head/net/shadowsocks-libev/Makefile 471909 2018-06-07 12:16:47Z tijl $
+# $FreeBSD: head/net/shadowsocks-libev/Makefile 476834 2018-08-10 14:23:15Z tijl $
 
 PORTNAME=	shadowsocks-libev
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 
 MAINTAINER=	xiaoding+freebsd@xiaoding.org

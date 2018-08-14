@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/kdepim-runtime/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/kdepim-runtime/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	kdepim-runtime
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

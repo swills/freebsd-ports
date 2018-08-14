@@ -1,8 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-parallel/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/octave-forge-parallel/Makefile 476952 2018-08-12 02:57:03Z stephen $
 
 PORTNAME=	octave-forge-parallel
-PORTVERSION=	3.1.2
+PORTVERSION=	3.1.3
 PORTREVISION=	1
 CATEGORIES=	math
 

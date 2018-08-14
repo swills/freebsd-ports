@@ -1,10 +1,10 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-p2p/twister/Makefile 474787 2018-07-17 08:56:32Z antoine $
+# $FreeBSD: head/net-p2p/twister/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	twister-core
 PORTVERSION=	0.9.34
 DISTVERSIONPREFIX=	v
-PORTREVISION=	11
+PORTREVISION=	12
 PORTEPOCH=	1
 CATEGORIES=	net-p2p
 

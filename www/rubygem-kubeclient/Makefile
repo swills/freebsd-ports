@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-kubeclient/Makefile 471422 2018-06-02 22:26:48Z sunpoet $
+# $FreeBSD: head/www/rubygem-kubeclient/Makefile 477029 2018-08-12 17:35:02Z sunpoet $
 
 PORTNAME=	kubeclient
-PORTVERSION=	3.1.1
+PORTVERSION=	3.1.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

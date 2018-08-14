@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sprockets-rails-rails50/Makefile 449074 2017-09-01 10:51:24Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sprockets-rails-rails50/Makefile 477102 2018-08-13 18:21:13Z sunpoet $
 
 PORTNAME=	sprockets-rails
 PORTVERSION=	3.2.1
@@ -13,8 +13,8 @@ COMMENT=	Sprockets Rails integration
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-RUN_DEPENDS=	rubygem-actionpack50>0:www/rubygem-actionpack50 \
-		rubygem-activesupport50>0:devel/rubygem-activesupport50 \
+RUN_DEPENDS=	rubygem-actionpack50>=4.0:www/rubygem-actionpack50 \
+		rubygem-activesupport50>=4.0:devel/rubygem-activesupport50 \
 		rubygem-sprockets3>=3.0.0:devel/rubygem-sprockets3
 
 NO_ARCH=	yes

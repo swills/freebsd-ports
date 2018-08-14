@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/clementine-player/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	clementine
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.3.1-441
 DISTVERSIONSUFFIX=	-gc01b7bc
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-player
 

@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-kernlab/Makefile 469419 2018-05-09 00:53:54Z tota $
+# $FreeBSD: head/science/R-cran-kernlab/Makefile 477058 2018-08-13 08:44:29Z tota $
 
 PORTNAME=	kernlab
-DISTVERSION=	0.9-26
+DISTVERSION=	0.9-27
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

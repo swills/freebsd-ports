@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/gnutls/Makefile 462006 2018-02-16 12:42:32Z tijl $
+# $FreeBSD: head/security/gnutls/Makefile 476838 2018-08-10 14:55:06Z tijl $
 
 PORTNAME=	gnutls
-PORTVERSION=	3.5.18
+PORTVERSION=	3.5.19
 CATEGORIES=	security net
 MASTER_SITES=	GNUPG/gnutls/v${PORTVERSION:R}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 476569 2018-08-07 07:06:04Z acm $
+# $FreeBSD: head/editors/Makefile 477048 2018-08-13 02:11:47Z zi $
 #
 
     COMMENT = Editors
@@ -66,7 +66,6 @@
     SUBDIR += jed
     SUBDIR += jedit
     SUBDIR += joe
-    SUBDIR += joe2
     SUBDIR += jove
     SUBDIR += jucipp
     SUBDIR += jupp

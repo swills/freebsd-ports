@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/xen-tools411/Makefile 475276 2018-07-24 20:26:10Z antoine $
+# $FreeBSD: head/sysutils/xen-tools411/Makefile 477143 2018-08-14 09:03:28Z royger $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools411
 PORTVERSION=	4.11.0
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	sysutils emulators
 MASTER_SITES=	http://downloads.xenproject.org/release/xen/${PORTVERSION}/
 
@@ -33,7 +33,7 @@ USES=		cpe gettext gmake libtool localbase:ldflags perl5 pkgconfig \
 		python:2.7 shebangfix
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
-GNU_CONFIGURE=	yes
+HAS_CONFIGURE=	yes
 # Set ARCH=x86_64 in order to overwrite the environment ARCH=amd64
 MAKE_ARGS=	clang=y ARCH=x86_64
 

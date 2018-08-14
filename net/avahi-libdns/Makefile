@@ -1,7 +1,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/net/avahi-libdns/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/avahi-libdns/Makefile 477046 2018-08-13 01:49:59Z zi $
 
-PORTREVISION=	2
+PORTREVISION=	0
 CATEGORIES=	net
 PKGNAMESUFFIX=	-libdns
 

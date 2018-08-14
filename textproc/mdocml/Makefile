@@ -1,8 +1,8 @@
 # Created by: Ulrich Spoerlein <uspoerlein@gmail.com>
-# $FreeBSD: head/textproc/mdocml/Makefile 455662 2017-12-06 16:56:30Z uqs $
+# $FreeBSD: head/textproc/mdocml/Makefile 477109 2018-08-13 20:21:00Z uqs $
 
 PORTNAME=	mdocml
-PORTVERSION=	1.14.3
+PORTVERSION=	1.14.4
 CATEGORIES=	textproc
 MASTER_SITES=	http://mdocml.bsd.lv/snapshots/ \
 		LOCAL/uqs

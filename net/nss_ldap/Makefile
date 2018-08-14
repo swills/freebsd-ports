@@ -1,9 +1,9 @@
 # Created by: Jacques Vidrine <nectar@FreeBSD.org>
-# $FreeBSD: head/net/nss_ldap/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/net/nss_ldap/Makefile 477119 2018-08-13 21:37:49Z des $
 
 PORTNAME=	nss_ldap
 PORTVERSION=	1.${NSS_LDAP_VERSION}
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	net
 MASTER_SITES=	http://www.padl.com/download/ \
 		LOCAL/martymac

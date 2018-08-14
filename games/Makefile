@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 475111 2018-07-22 17:11:40Z yuri $
+# $FreeBSD: head/games/Makefile 477198 2018-08-14 19:29:27Z tobik $
 #
 
     COMMENT = Games and related software
@@ -74,6 +74,7 @@
     SUBDIR += ballerburg
     SUBDIR += banihstypos
     SUBDIR += barbie_seahorse_adventures
+    SUBDIR += barony
     SUBDIR += barrage
     SUBDIR += bass
     SUBDIR += bastet

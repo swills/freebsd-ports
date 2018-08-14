@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@FreeBSD.org>
-# $FreeBSD: head/sysutils/docker/Makefile 466368 2018-04-03 18:46:51Z lifanov $
+# $FreeBSD: head/sysutils/docker/Makefile 477042 2018-08-12 23:15:55Z lifanov $
 
 PORTNAME=		docker
-PORTVERSION=		18.03.0
+PORTVERSION=		18.06.0
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-ce
 CATEGORIES=		sysutils
@@ -26,7 +26,5 @@ pre-build:
 		@${MV} ${GO_WRKSRC}/components/* ${GO_WRKSRC}/
 		@${CP} ${FILESDIR}/default_store_freebsd.go \
 			${GO_WRKSRC}/cli/cli/config/credentials/
-		@${CP} ${FILESDIR}/pass_freebsd.go \
-			${GO_WRKSRC}/cli/vendor/github.com/docker/docker-credential-helpers/pass/
 
 .include <bsd.port.mk>

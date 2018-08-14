@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/www/Makefile 477162 2018-08-14 15:06:38Z adamw $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1081,6 +1081,7 @@
     SUBDIR += p5-Mojolicious
     SUBDIR += p5-Mojolicious-Plugin-Authentication
     SUBDIR += p5-Mojolicious-Plugin-Database
+    SUBDIR += p5-Mojolicious-Plugin-HamlRenderer
     SUBDIR += p5-Mojolicious-Plugin-Mongodb
     SUBDIR += p5-Mojolicious-Plugin-SetUserGroup
     SUBDIR += p5-Mojolicious-Plugin-TtRenderer
@@ -1894,6 +1895,7 @@
     SUBDIR += py-websocket-client
     SUBDIR += py-webunit
     SUBDIR += py-werkzeug
+    SUBDIR += py-wfuzz
     SUBDIR += py-wikipedia
     SUBDIR += py-wikitools
     SUBDIR += py-ws4py
@@ -2479,6 +2481,7 @@
     SUBDIR += wsdlpull
     SUBDIR += wsmake
     SUBDIR += wt
+    SUBDIR += wuzz
     SUBDIR += www6to4
     SUBDIR += wwwoffle
     SUBDIR += xapian-omega

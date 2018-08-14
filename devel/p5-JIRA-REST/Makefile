@@ -1,5 +1,5 @@
 # Created by: Brad Davis <brd@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JIRA-REST/Makefile 475888 2018-07-30 13:17:40Z wen $
+# $FreeBSD: head/devel/p5-JIRA-REST/Makefile 477023 2018-08-12 17:34:29Z sunpoet $
 
 PORTNAME=	JIRA-REST
 PORTVERSION=	0.019
@@ -26,7 +26,7 @@ USES=		perl5
 USE_PERL5=	configure
 NO_ARCH=	yes
 
-PLIST_FILES=	%%SITE_PERL%%/JIRA/REST.pm \
-		%%PERL5_MAN3%%/JIRA::REST.3.gz
+PLIST_FILES=	${SITE_PERL_REL}/JIRA/REST.pm \
+		${SITE_MAN3_REL}/JIRA::REST.3.gz
 
 .include <bsd.port.mk>

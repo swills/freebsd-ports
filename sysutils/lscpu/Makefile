@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/lscpu/Makefile 456045 2017-12-11 15:26:23Z danfe $
+# $FreeBSD: head/sysutils/lscpu/Makefile 476951 2018-08-12 01:57:26Z zi $
 
 PORTNAME=	lscpu
-PORTVERSION=	1.0.0
+PORTVERSION=	1.2.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	zi@FreeBSD.org

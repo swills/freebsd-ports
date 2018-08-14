@@ -1,8 +1,8 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-gtk/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-gtk/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	eiskaltdcpp
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX=	-gtk
 

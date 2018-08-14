@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/galaxyhack/Makefile 472068 2018-06-09 16:31:25Z amdmi3 $
+# $FreeBSD: head/games/galaxyhack/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	galaxyhack
 PORTVERSION=	1.74
-PORTREVISION=	27
+PORTREVISION=	28
 CATEGORIES=	games
 MASTER_SITES=	SF \
 		SF/${PORTNAME}/Fleet%20packages/020906:fleets

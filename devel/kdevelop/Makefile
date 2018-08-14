@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/kdevelop/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/kdevelop/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	kdevelop
 DISTVERSION=	5.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/stable/kdevelop/${DISTVERSION}/src
 DIST_SUBDIR=	KDE/kdevelop

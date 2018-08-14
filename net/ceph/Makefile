@@ -1,9 +1,10 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph/Makefile 475261 2018-07-24 15:30:16Z swills $
+# $FreeBSD: head/net/ceph/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
 DISTVERSION=	12.2.7
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	wjw@digiware.nl

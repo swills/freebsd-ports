@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/netbox/Makefile 475452 2018-07-27 18:27:44Z miwi $
+# $FreeBSD: head/net-mgmt/netbox/Makefile 476924 2018-08-11 14:34:18Z miwi $
 
 PORTNAME=	netbox
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.3.6
+DISTVERSION=	2.3.7
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	freebsd_ports@k-worx.org

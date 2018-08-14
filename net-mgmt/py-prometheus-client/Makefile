@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-prometheus-client/Makefile 474733 2018-07-16 12:49:19Z pizzamig $
+# $FreeBSD: head/net-mgmt/py-prometheus-client/Makefile 476869 2018-08-11 09:47:27Z pizzamig $
 
 PORTNAME=	prometheus-client
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

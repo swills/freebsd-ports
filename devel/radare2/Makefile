@@ -1,8 +1,8 @@
 # Created by: Karsten Pedersen <kpedersen@opencde.org>
-# $FreeBSD: head/devel/radare2/Makefile 476304 2018-08-03 16:21:04Z swills $
+# $FreeBSD: head/devel/radare2/Makefile 476979 2018-08-12 08:40:13Z manu $
 
 PORTNAME=	radare2
-DISTVERSION=	2.7.0
+DISTVERSION=	2.8.0
 CATEGORIES=	devel
 
 MAINTAINER=	mizhka@gmail.com
@@ -11,7 +11,7 @@ COMMENT=	Tools to disasm, debug, analyze, and manipulate binary files
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-NOT_FOR_ARCHS=	aarch64 armv6 armv7 mips mips64 powerpc powerpc64 sparc64
+NOT_FOR_ARCHS=		armv6 armv7 mips mips64 powerpc powerpc64 sparc64
 NOT_FOR_ARCHS_REASON=	does not build: Unsupported BSD architecture
 
 LIB_DEPENDS=	libcapstone.so:devel/capstone4

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/cvc4/Makefile 475198 2018-07-23 18:51:55Z yuri $
+# $FreeBSD: head/math/cvc4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	cvc4
 DISTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	math java
 MASTER_SITES=	https://cvc4.cs.stanford.edu/downloads/builds/src/
 

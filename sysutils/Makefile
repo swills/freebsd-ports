@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 476673 2018-08-08 20:06:44Z zi $
+# $FreeBSD: head/sysutils/Makefile 476941 2018-08-11 19:25:41Z danilo $
 #
 
     COMMENT = System utilities
@@ -688,6 +688,7 @@
     SUBDIR += metalog
     SUBDIR += mfid
     SUBDIR += mgeupsd
+    SUBDIR += minikube
     SUBDIR += minimunin
     SUBDIR += minirsyslogd
     SUBDIR += mixer
@@ -1074,10 +1075,13 @@
     SUBDIR += rubygem-capistrano-ext
     SUBDIR += rubygem-capistrano-harrow
     SUBDIR += rubygem-chef
+    SUBDIR += rubygem-chef12
     SUBDIR += rubygem-chef-api
     SUBDIR += rubygem-chef-config
+    SUBDIR += rubygem-chef-config12
     SUBDIR += rubygem-chef-dk
     SUBDIR += rubygem-chef-zero
+    SUBDIR += rubygem-chef-zero5
     SUBDIR += rubygem-facter
     SUBDIR += rubygem-fluent-mixin-plaintextformatter
     SUBDIR += rubygem-fluent-plugin-config-expander
@@ -1111,6 +1115,7 @@
     SUBDIR += rubygem-mothra
     SUBDIR += rubygem-murder
     SUBDIR += rubygem-ohai
+    SUBDIR += rubygem-ohai8
     SUBDIR += rubygem-parallel
     SUBDIR += rubygem-puppet_forge
     SUBDIR += rubygem-r10k

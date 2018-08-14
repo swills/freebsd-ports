@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/misc/Makefile 476962 2018-08-12 05:45:52Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -540,6 +540,7 @@
     SUBDIR += usbids
     SUBDIR += usbrh-libusb
     SUBDIR += utftools
+    SUBDIR += valentina
     SUBDIR += valspeak
     SUBDIR += vdmfec
     SUBDIR += vera

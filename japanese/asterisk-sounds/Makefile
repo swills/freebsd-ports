@@ -1,9 +1,9 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/japanese/asterisk-sounds/Makefile 452780 2017-10-24 15:05:30Z madpilot $
+# $FreeBSD: head/japanese/asterisk-sounds/Makefile 476806 2018-08-10 07:45:49Z madpilot $
 
 PORTNAME=	asterisk
 PORTVERSION=	1.6
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	japanese net
 MASTER_SITES=	http://ftp.voip-info.jp/asterisk/sounds/${PORTVERSION:S|.|_|}/ \
@@ -13,8 +13,6 @@ DISTNAME=	asterisk-sound-jp_${PORTVERSION:S|.||}_pre
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Japanese sound files for Asterisk
-
-RUN_DEPENDS=	asterisk:net/asterisk13
 
 NO_BUILD=	yes
 ASTERISKDIR=	${PREFIX}/share/asterisk/sounds

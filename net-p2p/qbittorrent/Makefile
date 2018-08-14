@@ -1,11 +1,13 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qbittorrent/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-p2p/qbittorrent/Makefile 477138 2018-08-14 07:01:41Z yuri $
 
 PORTNAME=	qbittorrent
-DISTVERSION=	4.1.1
-PORTREVISION=	2
+DISTVERSION=	4.1.2
 CATEGORIES=	net-p2p ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
+
+PATCH_SITES=	https://github.com/qBittorrent/qBittorrent/commit/
+PATCHFILES=	acdf9061fe5539c75604d2b7919cc434b2cebb02.patch:-p1 # fix regression of the missing .desktop file
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Bittorrent client using Qt4/5 and libtorrent-rasterbar

@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/citra-qt5/Makefile 459487 2018-01-20 00:22:37Z jbeich $
+# $FreeBSD: head/emulators/citra-qt5/Makefile 477122 2018-08-14 00:28:15Z jbeich $
 
 PORTREVISION=	0
 PKGNAMESUFFIX=	-qt5

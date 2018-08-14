@@ -1,8 +1,7 @@
-# $FreeBSD: head/lang/ponyc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/ponyc/Makefile 476989 2018-08-12 13:16:00Z riggs $
 
 PORTNAME=	ponyc
-DISTVERSION=	0.23.0
-PORTREVISION=	1
+DISTVERSION=	0.24.4
 CATEGORIES=	lang
 
 MAINTAINER=	greg@unrelenting.technology
@@ -26,14 +25,24 @@ MAKE_ARGS=	config=release
 
 LLVM_VERSION=	50
 
-PLIST_SUB=	VERSION="${DISTVERSION}"
+PLIST_SUB=	VERSION="${DISTVERSION}" PONYARCH="${PONYARCH}"
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ponylang
 
 PORTDOCS=	*.md
 
-MAKE_ENV=	prefix=${PREFIX} verbose=true ${"${ARCH}" == aarch64:?arch=armv8-a:}
+MAKE_ENV=	prefix=${PREFIX} verbose=true arch=${PONYARCH}
+
+# Pony defaults to 'native', which
+# a) doesn't work on aarch64
+# b) is not appropriate for official OS packages
+.if "${ARCH}" == aarch64
+PONYARCH?=	armv8-a
+.elif "${ARCH}" == amd64
+# Can't use 'x86-64' because atomics are required
+PONYARCH?=	core2
+.endif
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/pony/${DISTVERSION}/bin/ponyc

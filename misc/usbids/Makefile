@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/misc/usbids/Makefile 475687 2018-07-29 19:09:50Z sunpoet $
+# $FreeBSD: head/misc/usbids/Makefile 477011 2018-08-12 17:33:27Z sunpoet $
 
 PORTNAME=	usbids
 PORTVERSION=	20180703
@@ -16,7 +16,7 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 USES=		tar:xz
 
-PLIST_FILES=	%%DATADIR%%/usb.ids
+PORTDATA=	usb.ids
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/

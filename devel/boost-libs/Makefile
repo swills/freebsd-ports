@@ -1,8 +1,8 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-libs/Makefile 474979 2018-07-19 21:04:44Z grembo $
+# $FreeBSD: head/devel/boost-libs/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	boost-libs
-PORTREVISION=	3
+PORTREVISION=	0
 
 COMMENT=	Free portable C++ libraries (without Boost.Python)
 

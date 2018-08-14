@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dlib-cpp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/dlib-cpp/Makefile 476747 2018-08-09 14:24:37Z arrowd $
 
 PORTNAME=	dlib
 DISTVERSION=	19.13
@@ -7,7 +7,7 @@ CATEGORIES=	science devel math
 MASTER_SITES=	http://dlib.net/files/
 PKGNAMESUFFIX=	-cpp
 
-MAINTAINER=	6yearold@gmail.com
+MAINTAINER=	arrowd@FreeBSD.org
 COMMENT=	Machine learning framework written in C++
 
 LICENSE=	BSL

@@ -1,8 +1,9 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-happenings/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-happenings/Makefile 476932 2018-08-11 17:36:31Z rene $
 
 PORTNAME=	django-happenings
 PORTVERSION=	0.3.3
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +14,7 @@ COMMENT=	Event calendar app for Django
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${PY_FLAVOR}
 
 CONFLICTS_INSTALL= py*-django-mptt

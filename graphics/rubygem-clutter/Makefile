@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/rubygem-clutter/Makefile 474173 2018-07-08 10:34:36Z miwi $
+# $FreeBSD: head/graphics/rubygem-clutter/Makefile 476766 2018-08-09 14:44:22Z sunpoet $
 
 PORTNAME=	clutter
-PORTVERSION=	3.2.7
+PORTVERSION=	3.2.9
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

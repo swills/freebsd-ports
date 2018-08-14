@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-dlib/Makefile 473012 2018-06-22 01:15:19Z linimon $
+# $FreeBSD: head/science/py-dlib/Makefile 476747 2018-08-09 14:24:37Z arrowd $
 
 PORTNAME=	dlib
 DISTVERSION=	19.13
@@ -6,7 +6,7 @@ CATEGORIES=	science devel math python
 MASTER_SITES=	http://dlib.net/files/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	6yearold@gmail.com
+MAINTAINER=	arrowd@FreeBSD.org
 COMMENT=	Machine learning framework written in C++ (python bindings)
 
 LICENSE=	BSL

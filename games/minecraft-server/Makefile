@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/minecraft-server/Makefile 476166 2018-08-01 08:30:38Z 0mp $
+# $FreeBSD: head/games/minecraft-server/Makefile 476836 2018-08-10 14:51:27Z miwi $
 
 PORTNAME=	minecraft-server
 PORTVERSION=	1.13
@@ -51,7 +51,7 @@ NO_ARCH=	yes
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${PORTNAME}
-	${INSTALL_DATA} ${DISTDIR}/${DISTFILES} ${STAGEDIR}${PREFIX}/${PORTNAME}
+	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} ${STAGEDIR}${PREFIX}/${PORTNAME}
 	${MKDIR} ${STAGEDIR}${ETCDIR}
 	${MKDIR} ${STAGEDIR}/var/db/minecraft-server
 	${MKDIR} ${STAGEDIR}/var/log/minecraft-server

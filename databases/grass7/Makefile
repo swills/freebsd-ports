@@ -1,9 +1,9 @@
 # Created by: Mikael URANKAR and Loïc BARTOLETTI
-# $FreeBSD: head/databases/grass7/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/databases/grass7/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	grass
 PORTVERSION=	7.4.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases geography
 MASTER_SITES=	http://grass.osgeo.org/%SUBDIR%/ \
 		http://grass.cict.fr/%SUBDIR%/ \
