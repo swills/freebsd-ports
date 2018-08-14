@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	google-appengine
-DISTVERSION=	1.9.66
+DISTVERSION=	1.9.73
 CATEGORIES=	www devel python
 MASTER_SITES=	https://storage.googleapis.com/appengine-sdks/featured/
 DISTFILES=	${PORTNAME:S|-|_|}_${PORTVERSION}.zip
@@ -20,6 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=${PYTHON_VER}:databases/py-sqlite3@
 WRKSRC=	${WRKDIR}/${PORTNAME:S,-,_,}
 
 USES=		gettext python:2.7 shebangfix zip
+NO_ARCH=	yes
 NO_BUILD=	yes
 SHEBANG_FILES=	${GAESCRIPTS}
 
@@ -42,7 +43,7 @@ GAESCRIPTS=	_php_runtime.py _python_runtime.py appcfg.py \
 MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb@${PY_FLAVOR}
 
 PHP_USE=	mysql=server
-PHP_VARS=	gaedatadir+=php want_mysql_ver=55
+PHP_VARS=	gaedatadir+=php want_mysql_ver=56
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
