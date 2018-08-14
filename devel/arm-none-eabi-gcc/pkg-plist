@@ -14,12 +14,6 @@ lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/crtfastmath.o
 lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/crti.o
 lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/crtn.o
 lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/limits.h
-lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/netinet/ip_fil.h
-lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/netinet/ip_lookup.h
-lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/netinet/ip_nat.h
-lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/netinet/ip_proxy.h
-lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/netinet/ip_scan.h
-lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/netinet/ip_state.h
 lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/README
 lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/stddef.h
 lib/gcc/%%GCC_TARGET%%/%%GCC_VERSION%%/include-fixed/stdio.h
