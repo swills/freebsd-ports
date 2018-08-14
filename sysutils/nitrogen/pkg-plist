@@ -11,3 +11,5 @@ share/icons/hicolor/16x16/mimetypes/image-x-generic.png
 share/icons/hicolor/22x22/apps/nitrogen.png
 share/icons/hicolor/32x32/apps/nitrogen.png
 share/icons/hicolor/48x48/apps/nitrogen.png
+share/appdata/nitrogen.appdata.xml
+
