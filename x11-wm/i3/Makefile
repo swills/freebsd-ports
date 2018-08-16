@@ -3,6 +3,7 @@
 
 PORTNAME=	i3
 DISTVERSION=	4.15
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://i3wm.org/downloads/
 
@@ -35,6 +36,8 @@ CONFIGURE_ENV=	ac_cv_path_PATH_ASCIIDOC=""
 USE_PERL5=	run
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
 INSTALL_TARGET=	install-strip
+
+CONFLICTS_INSTALL=	i3-gaps
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/man/*.1 ${STAGEDIR}${MANPREFIX}/man/man1/
