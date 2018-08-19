@@ -2,11 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	ode
-PORTVERSION=	0.13
-PORTREVISION=	4
+DISTVERSION=	0.15.2
 PORTEPOCH=	1
 CATEGORIES=	devel
-MASTER_SITES=	SF/opende/ODE/${PORTVERSION}
+MASTER_SITES=	https://bitbucket.org/odedevs/${PORTNAME}/downloads/
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Articulated rigid body dynamics library
@@ -14,10 +13,10 @@ COMMENT=	Articulated rigid body dynamics library
 LICENSE=	LGPL21 BSD3CLAUSE
 LICENSE_COMB=	dual
 
-USES=		tar:bzip2 libtool pathfix
+USES=		libtool pathfix
 USE_GL=		yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-shared
+CONFIGURE_ARGS=	--enable-shared --disable-static
 TEST_TARGET=	check
 
 OPTIONS_DEFINE=		GIMPACT DOUBLE OU
@@ -49,7 +48,7 @@ post-patch:
 		${WRKSRC}/build/config-default.h ${WRKSRC}/ou/src/ou/malloc.cpp
 
 post-install:
-	${SED} -e '/PACKAGE/ s|^|//|; /VERSION/ s|^|//|' ${WRKSRC}/ode/src/config.h \
+	@${SED} -e '/PACKAGE/ s|^|//|; /VERSION/ s|^|//|' ${WRKSRC}/ode/src/config.h \
 		> ${STAGEDIR}${PREFIX}/include/ode/config.h
 
 .include <bsd.port.mk>

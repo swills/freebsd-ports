@@ -25,8 +25,8 @@ include/ode/rotation.h
 include/ode/threading.h
 include/ode/threading_impl.h
 include/ode/timer.h
-lib/libode.a
+include/ode/version.h
 lib/libode.so
-lib/libode.so.3
-lib/libode.so.3.1.0
+lib/libode.so.6
+lib/libode.so.6.1.2
 libdata/pkgconfig/ode.pc
