@@ -7,7 +7,6 @@ PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	security net python
 MASTER_SITES=	CHEESESHOP
-PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	-tor
 
 MAINTAINER=	cs@FreeBSD.org
@@ -23,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyptlib>=0.0.5:security/py-pyptlib@${PY_FLAV
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python:2.7
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist noflavors
 SUB_FILES=	pkg-message
 NO_ARCH=	yes
 
