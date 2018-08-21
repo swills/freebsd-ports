@@ -2,10 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	doublecmd
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.4
 CATEGORIES=	x11-fm
-PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	SF/${PORTNAME}/Double%20Commander%20Source
+PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 DISTFILES=	${DISTNAME}.tar.gz ${PORTNAME}-help-${HELPVERSION}-src.tar.gz
 
@@ -175,7 +175,7 @@ LAZARUS_PROJECT_FILES+=		plugins/wdx/textline/src/TextLine.lpi
 .endif
 
 .if ${PORT_OPTIONS:MWFX_SAMBA}
-LAZARUS_PROJECT_FILES+= 	plugins/wfx/samba/src/samba.lpi
+LAZARUS_PROJECT_FILES+=		plugins/wfx/samba/src/samba.lpi
 .endif
 
 .if ${PORT_OPTIONS:MWLX_MPLAYER}
