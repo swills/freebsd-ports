@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/mpdcon/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/audio/mpdcon/Makefile 477713 2018-08-21 09:38:07Z amdmi3 $
 
 PORTNAME=	mpdcon
 PORTVERSION=	1.5.1
@@ -10,13 +10,14 @@ DISTNAME=	MPDCon-${PORTVERSION}
 MAINTAINER=	theraven@FreeBSD.org
 COMMENT=	MPD client for GNUstep
 
-LICENSE=	GPLv2
-
-USES=		gnustep
-USE_GNUSTEP=	base gui back build
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/Documentation/COPYING
 
 LIB_DEPENDS=	libmpdclient.so.2:audio/libmpdclient \
 		libSQLClient.so:databases/sqlclient
+
+USES=		gnustep
+USE_GNUSTEP=	base gui back build
 
 post-patch:
 	${REINPLACE_CMD} -e \

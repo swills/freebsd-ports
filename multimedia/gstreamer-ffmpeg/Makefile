@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/gstreamer-ffmpeg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer-ffmpeg/Makefile 477647 2018-08-20 10:36:02Z riggs $
 #    $MCom: ports/multimedia/gstreamer-ffmpeg/Makefile,v 1.14 2006/07/20 13:40:27 ahze Exp $
 
 PORTNAME=	gstreamer
@@ -15,9 +15,6 @@ MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	GStreamer plug-in for manipulating MPEG video streams
 
 LICENSE=	GPLv2
-
-NOT_FOR_ARCHS=		aarch64
-NOT_FOR_ARCHS_REASON=	invokes x86 asm
 
 LIB_DEPENDS=	liborc-0.4.so:devel/orc
 

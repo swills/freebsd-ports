@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@cs.ucdavis.edu>
-# $FreeBSD: head/editors/vim/Makefile 476185 2018-08-01 16:51:31Z adamw $
+# $FreeBSD: head/editors/vim/Makefile 477376 2018-08-16 21:04:01Z adamw $
 
 PORTNAME=	vim
 PORTVERSION=	8.1.0231
@@ -129,10 +129,12 @@ PERL_CONFIGURE_ENABLE=	perlinterp
 PERL_USES=		perl5
 
 PYTHON2_CONFIGURE_ENABLE=	pythoninterp
+PYTHON2_CONFIGURE_WITH=	python-command=${LOCALBASE}/bin/python${PYTHON2_DEFAULT}
 PYTHON2_BUILD_DEPENDS=	python${PYTHON2_DEFAULT}:lang/python${PYTHON2_DEFAULT:S/.//}
 PYTHON2_RUN_DEPENDS=	${PYTHON2_BUILD_DEPENDS}
 
 PYTHON3_CONFIGURE_ENABLE=	python3interp
+PYTHON3_CONFIGURE_WITH=	python3-command=${PYTHON_CMD}
 PYTHON3_USES=		python:3.4+
 
 RUBY_CONFIGURE_ENABLE=	rubyinterp

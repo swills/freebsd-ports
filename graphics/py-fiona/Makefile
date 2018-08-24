@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/py-fiona/Makefile 474243 2018-07-09 08:45:12Z mat $
+# $FreeBSD: head/graphics/py-fiona/Makefile 477791 2018-08-22 14:38:43Z swills $
 
 PORTNAME=	Fiona
-DISTVERSION=	1.7.12
-#DISTVERSIONSUFFIX=	.post2
+DISTVERSION=	1.7.13
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

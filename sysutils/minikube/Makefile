@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/minikube/Makefile 476941 2018-08-11 19:25:41Z danilo $
+# $FreeBSD: head/sysutils/minikube/Makefile 477622 2018-08-20 03:25:56Z danilo $
 
 PORTNAME=	minikube
 PORTVERSION=	0.28.2
@@ -18,21 +18,15 @@ USES=		go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kubernetes
+GH_SUBDIR=	src/k8s.io/${PORTNAME}
 
 PLIST_FILES=	bin/${PORTNAME}
 
 SUB_FILES=	pkg-message
 
-post-patch:
-	${LN} -s ${WRKSRC}/vendor ${WRKSRC}/src
-	${MKDIR} ${WRKSRC}/src/k8s.io/${PORTNAME}
-	${LN} -s ${WRKSRC}/pkg ${WRKSRC}/src/k8s.io/${PORTNAME}/pkg
-	${LN} -s ${WRKSRC}/cmd ${WRKSRC}/src/k8s.io/${PORTNAME}/cmd
-	${LN} -s ${WRKSRC}/third_party ${WRKSRC}/src/k8s.io/${PORTNAME}/third_party
-
 do-build:
 	(cd ${WRKSRC}; ${LOCALBASE}/bin/go-bindata -nomemcopy -o pkg/minikube/assets/assets.go -pkg assets deploy/addons/...)
-	cd ${WRKSRC}/cmd/${PORTNAME} && \
+	cd ${WRKSRC}/${GH_SUBDIR} && \
 		GOPATH=${WRKSRC} go build \
 		-ldflags="-X k8s.io/minikube/pkg/version.version=v${PORTVERSION} \
 			-X k8s.io/minikube/pkg/version.isoVersion=v0.28.1 \
@@ -48,11 +42,12 @@ do-build:
 			-X k8s.io/client-go/pkg/version.gitVersion=v1.10.0 \
 			-X k8s.io/client-go/pkg/version.gitMajor=1 \
 			-X k8s.io/client-go/pkg/version.gitMinor=10 \
-			-X k8s.io/client-go/pkg/version.buildDate=$$(date +'%Y-%m-%dT%H:%M:%SZ')"
+			-X k8s.io/client-go/pkg/version.buildDate=$$(date +'%Y-%m-%dT%H:%M:%SZ')" \
+			./cmd/${PORTNAME}
 
 do-install:
 	${INSTALL_PROGRAM} \
-		${WRKSRC}/cmd/${PORTNAME}/${PORTNAME} \
+		${WRKSRC}/${PORTNAME} \
 		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Sentence/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Sentence/Makefile 477685 2018-08-20 22:14:59Z sunpoet $
 
 PORTNAME=	Lingua-EN-Sentence
-PORTVERSION=	0.30
+PORTVERSION=	0.31
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

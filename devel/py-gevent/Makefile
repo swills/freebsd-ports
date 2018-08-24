@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/devel/py-gevent/Makefile 475735 2018-07-29 19:15:41Z sunpoet $
+# $FreeBSD: head/devel/py-gevent/Makefile 477592 2018-08-19 20:32:16Z sunpoet $
 
 PORTNAME=	gevent
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,9 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcares.so:dns/c-ares \
 		libev.so:devel/libev
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.13:devel/py-greenlet@${PY_FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.13:devel/py-greenlet@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.14:devel/py-greenlet@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 
 DO_MAKE_TEST=	${SETENV} PYTHONPATH=../ ${PYTHON_CMD}
 MAKE_ENV=	CARES_EMBED=0 LIBEV_EMBED=0

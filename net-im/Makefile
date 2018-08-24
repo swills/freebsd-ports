@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 474751 2018-07-16 17:07:19Z rene $
+# $FreeBSD: head/net-im/Makefile 477572 2018-08-19 13:30:35Z swills $
 #
 
     COMMENT = Instant messaging
@@ -179,6 +179,7 @@
     SUBDIR += skype-devel
     SUBDIR += skype4
     SUBDIR += slack-term
+    SUBDIR += talkatu
     SUBDIR += teamwords
     SUBDIR += telegram
     SUBDIR += telegram-desktop
@@ -207,7 +208,6 @@
     SUBDIR += tkabber-plugins
     SUBDIR += toot
     SUBDIR += tox
-    SUBDIR += tox12
     SUBDIR += toxbot
     SUBDIR += toxic
     SUBDIR += toxins

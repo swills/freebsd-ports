@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-ipred/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-ipred/Makefile 477776 2018-08-22 08:35:14Z tota $
 
 PORTNAME=	ipred
-DISTVERSION=	0.9-6
-PORTREVISION=	1
+DISTVERSION=	0.9-7
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

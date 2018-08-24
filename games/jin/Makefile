@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/games/jin/Makefile 477194 2018-08-14 18:50:39Z mi $
+# $FreeBSD: head/games/jin/Makefile 477355 2018-08-16 16:03:00Z mi $
 
 PORTNAME=	jin
 PORTVERSION=	2.14.1
@@ -14,8 +14,8 @@ COMMENT=	Graphical client for chess servers
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/src/free/jin/legal/copyright.txt
 
-RUN_DEPENDS=	${JAVAJARDIR}/bsh.jar:lang/bsh
 BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	${JAVAJARDIR}/bsh.jar:lang/bsh
 
 USES=		dos2unix
 DOS2UNIX_GLOB=	*.java *.txt

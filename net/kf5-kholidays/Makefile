@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/kf5-kholidays/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/kf5-kholidays/Makefile 477922 2018-08-23 18:49:16Z adridg $
 
 PORTNAME=	kholidays
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

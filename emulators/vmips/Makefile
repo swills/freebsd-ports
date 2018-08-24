@@ -1,8 +1,8 @@
 # Created by: Brian Gaeke <brg@dgate.org>
-# $FreeBSD: head/emulators/vmips/Makefile 375264 2014-12-22 20:26:16Z pawel $
+# $FreeBSD: head/emulators/vmips/Makefile 477789 2018-08-22 14:32:04Z swills $
 
 PORTNAME=	vmips
-PORTVERSION=	1.5
+PORTVERSION=	1.5.1
 CATEGORIES=	emulators
 MASTER_SITES=	SF \
 		http://www.dgate.org/vmips/releases/${DISTNAME}/

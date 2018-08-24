@@ -1,21 +1,23 @@
-# $FreeBSD: head/security/wpa_supplicant/Makefile 477202 2018-08-14 20:21:58Z cy $
+# $FreeBSD: head/security/wpa_supplicant/Makefile 477405 2018-08-17 02:18:41Z cy $
 
 PORTNAME=	wpa_supplicant
 PORTVERSION=	2.6
 PORTREVISION=	3
 CATEGORIES=	security net
 MASTER_SITES=	https://w1.fi/releases/
-PATCH_SITES=	https://w1.fi/security/2017-1/ \
-		https://w1.fi/security/2018-1/
-PATCHFILES=	rebased-v2.6-0001-hostapd-Avoid-key-reinstallation-in-FT-handshake.patch \
-	rebased-v2.6-0002-Prevent-reinstallation-of-an-already-in-use-group-ke.patch \
-	rebased-v2.6-0003-Extend-protection-of-GTK-IGTK-reinstallation-of-WNM-.patch \
-	rebased-v2.6-0004-Prevent-installation-of-an-all-zero-TK.patch \
-	rebased-v2.6-0005-Fix-PTK-rekeying-to-generate-a-new-ANonce.patch \
-	rebased-v2.6-0006-TDLS-Reject-TPK-TK-reconfiguration.patch \
-	rebased-v2.6-0007-WNM-Ignore-WNM-Sleep-Mode-Response-without-pending-r.patch \
-	rebased-v2.6-0008-FT-Do-not-allow-multiple-Reassociation-Response-fram.patch \
-	rebased-v2.6-0001-WPA-Ignore-unauthenticated-encrypted-EAPOL-Key-data.patch 
+
+PATCH_SITES=	https://w1.fi/security/2017-1/:2017_1 \
+		https://w1.fi/security/2018-1/:2018_1
+
+PATCHFILES=	rebased-v2.6-0001-hostapd-Avoid-key-reinstallation-in-FT-handshake.patch:2017_1 \
+	rebased-v2.6-0002-Prevent-reinstallation-of-an-already-in-use-group-ke.patch:2017_1 \
+	rebased-v2.6-0003-Extend-protection-of-GTK-IGTK-reinstallation-of-WNM-.patch:2017_1 \
+	rebased-v2.6-0004-Prevent-installation-of-an-all-zero-TK.patch:2017_1 \
+	rebased-v2.6-0005-Fix-PTK-rekeying-to-generate-a-new-ANonce.patch:2017_1 \
+	rebased-v2.6-0006-TDLS-Reject-TPK-TK-reconfiguration.patch:2017_1 \
+	rebased-v2.6-0007-WNM-Ignore-WNM-Sleep-Mode-Response-without-pending-r.patch:2017_1 \
+	rebased-v2.6-0008-FT-Do-not-allow-multiple-Reassociation-Response-fram.patch:2017_1 \
+	rebased-v2.6-0001-WPA-Ignore-unauthenticated-encrypted-EAPOL-Key-data.patch:2018_1
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	cy@FreeBSD.org

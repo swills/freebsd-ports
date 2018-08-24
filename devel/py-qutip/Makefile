@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qutip/Makefile 474990 2018-07-20 05:56:07Z yuri $
+# $FreeBSD: head/devel/py-qutip/Makefile 477702 2018-08-21 04:52:50Z linimon $
 
 PORTNAME=	qutip
 DISTVERSION=	4.3.1
@@ -10,6 +10,11 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Quantum toolbox in python
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_aarch64=		fails to compile: the clang compiler does not support -march=native
+BROKEN_armv6=		fails to compile: the clang compiler does not support -march=native
+BROKEN_armv7=		fails to compile: the clang compiler does not support -march=native
+BROKEN_powerpc64=	fails to compile: the clang compiler does not support -march=native
 
 BUILD_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}scipy>=0.15:science/py-scipy@${PY_FLAVOR}

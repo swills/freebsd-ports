@@ -1,8 +1,8 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/kibana6/Makefile 469572 2018-05-10 19:15:44Z feld $
+# $FreeBSD: head/textproc/kibana6/Makefile 477876 2018-08-23 16:27:11Z feld $
 
 PORTNAME=	kibana
-PORTVERSION=	6.2.4
+PORTVERSION=	6.3.2
 DISTVERSIONSUFFIX=	-linux-x86_64
 PORTREVISION=	0
 CATEGORIES=	textproc www
@@ -15,7 +15,7 @@ COMMENT=	Browser based analytics and search interface to ElasticSearch
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	node6>=6.12.2:www/node6
+RUN_DEPENDS=	node8>=8.11.3:www/node8
 
 CONFLICTS=	kibana[3-5]*
 

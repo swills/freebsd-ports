@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-yesod-auth/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-yesod-auth/Makefile 477218 2018-08-15 09:38:03Z amdmi3 $
 
 PORTNAME=	yesod-auth
 PORTVERSION=	1.6.3
@@ -9,6 +9,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Authentication for Yesod
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	aeson>=0.7 authenticate>=1.3 base16-bytestring \
 		base64-bytestring blaze-builder blaze-html>=0.5 \

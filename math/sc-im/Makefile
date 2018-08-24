@@ -1,9 +1,10 @@
-# $FreeBSD: head/math/sc-im/Makefile 456387 2017-12-15 10:53:54Z bapt $
+# $FreeBSD: head/math/sc-im/Makefile 477579 2018-08-19 14:38:07Z pi $
 
-PORTNAME=	sc-im
-PORTVERSION=	0.7.0
+PORTNAME=		sc-im
+PORTVERSION=		0.7.0
 DISTVERSIONPREFIX=	v
-CATEGORIES=	math
+PORTREVISION=		1
+CATEGORIES=		math
 
 MAINTAINER=	bapt@FreeBSD.org
 COMMENT=	Ncurses spreadsheet program for terminal

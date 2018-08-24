@@ -1,5 +1,5 @@
 # Created by: Craig Leres <leres@freebsd.org>
-# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	xtensa-esp32-elf
 DISTVERSION=	1.22.0.g20171219
@@ -32,7 +32,7 @@ DISTFILES=	binutils-2.25.1.tar.bz2:source1 \
 		newlib-2.2.0.tar.gz:source10
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	leres@freebsd.org
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Espressif ESP32 toolchain
 
 LICENSE=	GPLv2 LGPL21

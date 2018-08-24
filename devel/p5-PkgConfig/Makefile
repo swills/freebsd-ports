@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PkgConfig/Makefile 458538 2018-01-09 15:40:33Z sunpoet $
+# $FreeBSD: head/devel/p5-PkgConfig/Makefile 477518 2018-08-18 20:41:18Z sunpoet $
 
 PORTNAME=	PkgConfig
-PORTVERSION=	0.19026
+PORTVERSION=	0.21026
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PLICEASE
@@ -17,8 +17,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5 pkgconfig
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

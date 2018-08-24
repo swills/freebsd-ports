@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/tt-rss/Makefile 476516 2018-08-06 17:14:54Z thierry $
+# $FreeBSD: head/www/tt-rss/Makefile 477644 2018-08-20 10:20:26Z mat $
 
 PORTNAME=	tt-rss
 PORTVERSION=	g20180718
@@ -7,6 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	https://git.tt-rss.org/git/tt-rss/archive/
 DISTNAME=	${GIT_TAGNAME}
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Tiny Tiny RSS: web-based news feed (RSS/Atom) aggregator

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 476154 2018-08-01 05:44:14Z zeising $
+# $FreeBSD: head/x11/Makefile 477963 2018-08-24 14:28:39Z jsm $
 #
 
     COMMENT = Ports to support the X window system
@@ -219,6 +219,7 @@
     SUBDIR += lxqt-globalkeys
     SUBDIR += lxqt-globalkeys-l10n
     SUBDIR += lxqt-l10n
+    SUBDIR += lxqt-runner
     SUBDIR += lxrandr
     SUBDIR += mate
     SUBDIR += mate-applets
@@ -258,6 +259,7 @@
     SUBDIR += p5-XTerm-Conf
     SUBDIR += pantheon-terminal
     SUBDIR += pcdm
+    SUBDIR += perwindowlayoutd
     SUBDIR += pipeglade
     SUBDIR += pixman
     SUBDIR += plasma-scriptengine-python-kde4

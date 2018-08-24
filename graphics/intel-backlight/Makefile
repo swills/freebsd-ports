@@ -1,11 +1,11 @@
 # Created by: Michael Gmelin <freebsd@grem.de>
-# $FreeBSD: head/graphics/intel-backlight/Makefile 464647 2018-03-16 02:26:14Z jmd $
+# $FreeBSD: head/graphics/intel-backlight/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=		intel-backlight
 DISTVERSION=		20180303
 CATEGORIES=		graphics
 
-MAINTAINER=		jmd@freebsd.org
+MAINTAINER=		jmd@FreeBSD.org
 COMMENT=		Control backlight on various modern Intel(R) GPUs
 
 LICENSE=		MIT

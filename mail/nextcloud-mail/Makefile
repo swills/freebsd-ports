@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/mail/nextcloud-mail/Makefile 476410 2018-08-05 12:02:53Z brnrd $
+# $FreeBSD: head/mail/nextcloud-mail/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	mail
 PORTVERSION=	0.8.3
@@ -11,7 +11,7 @@ PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}/${DISTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}
 
-MAINTAINER=	brnrd@freebsd.org
+MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Mail app for Nextcloud
 
 LICENSE=	AGPLv3

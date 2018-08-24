@@ -1,13 +1,14 @@
 # Created by: Remington Lang <MrL0Lz@gmail.com>
-# $FreeBSD: head/security/openvpn-admin/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/openvpn-admin/Makefile 477229 2018-08-15 14:16:18Z garga $
 
 PORTNAME=	openvpn-admin
 PORTVERSION=	1.9.4
-PORTREVISION=	5
+DISTVERSIONSUFFIX=	-2
+PORTREVISION=	6
 CATEGORIES=	security gnome
-MASTER_SITES=	SF/${PORTNAME}/OldFiles
+MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/release-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@googlemail.com
 COMMENT=	GUI frontend to openvpn
 
 LICENSE=	LGPL21+
@@ -15,8 +16,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	openvpn:security/openvpn
 
-WRKSRC=		${WRKDIR}/${DISTNAME:S/b//}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
+NO_ARCH=	yes
 USES=		gettext gmake pkgconfig
 USE_GNOME=	gtksharp20 intltool
 GNU_CONFIGURE=	yes

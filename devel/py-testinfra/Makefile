@@ -1,8 +1,8 @@
 # Created by: Sofian Brabez <sbz@FreeBSD.org>
-# $FreeBSD: head/devel/py-testinfra/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-testinfra/Makefile 477308 2018-08-16 05:41:11Z matthew $
 
 PORTNAME=	testinfra
-PORTVERSION=	1.10.1
+PORTVERSION=	1.14.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

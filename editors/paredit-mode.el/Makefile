@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/paredit-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/editors/paredit-mode.el/Makefile 477952 2018-08-24 09:38:10Z amdmi3 $
 
 PORTNAME=	paredit-mode.el
 PORTVERSION=	24
@@ -13,9 +13,12 @@ EXTRACT_ONLY=
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Minor mode for performing editing of S-expression data
 
+LICENSE=	GPLv3+
+
 USES=		emacs
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	${EMACS_SITE_LISPDIR}/paredit.el
 

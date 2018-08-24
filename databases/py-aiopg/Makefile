@@ -1,9 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/databases/py-aiopg/Makefile 474064 2018-07-07 09:07:45Z farrokhi $
+# $FreeBSD: head/databases/py-aiopg/Makefile 477251 2018-08-15 18:32:55Z farrokhi $
 
 PORTNAME=	aiopg
-PORTVERSION=	0.14.0
-PORTREVISION=	1
+PORTVERSION=	0.15.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.7.0:databases/py-psycopg2@${PY_F
 OPTIONS_DEFINE=	DOCS
 
 USES=		pgsql:9.2+ python:3.4+
-USE_PYTHON=	autoplist concurrent distutils setuptools
+USE_PYTHON=	autoplist concurrent distutils
 
 PORTDOCS=	PKG-INFO README.rst CHANGES.txt
 

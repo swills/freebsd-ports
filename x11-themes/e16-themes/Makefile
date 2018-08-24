@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/x11-themes/e16-themes/Makefile 446812 2017-07-28 09:01:09Z amdmi3 $
+# $FreeBSD: head/x11-themes/e16-themes/Makefile 477582 2018-08-19 16:32:13Z gblach $
 
 PORTNAME=	e16-themes
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	x11-themes enlightenment
 MASTER_SITES=	SF/enlightenment/${PORTNAME}/${PORTVERSION}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/graphite2/Makefile 463749 2018-03-06 20:31:35Z sunpoet $
+# $FreeBSD: head/graphics/graphite2/Makefile 477696 2018-08-21 00:43:37Z jbeich $
 
 PORTNAME=	graphite2
-PORTVERSION=	1.3.11
+PORTVERSION=	1.3.12
 CATEGORIES=	graphics print
 
 MAINTAINER=	office@FreeBSD.org
@@ -11,7 +11,7 @@ LICENSE=	GPLv2 LGPL21 MPL20
 LICENSE_COMB=	dual
 LICENSE_FILE_LGPL21=	${WRKSRC}/LICENSE
 
-USES=		cmake
+USES=		cmake compiler:c++11-lib
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

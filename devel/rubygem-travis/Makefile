@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-travis/Makefile 463225 2018-02-28 15:13:12Z sunpoet $
+# $FreeBSD: head/devel/rubygem-travis/Makefile 477465 2018-08-18 00:14:29Z sunpoet $
 
 PORTNAME=	travis
-PORTVERSION=	1.8.8
-PORTREVISION=	1
+PORTVERSION=	1.8.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Mango/Makefile 464856 2018-03-18 02:34:33Z sunpoet $
+# $FreeBSD: head/databases/p5-Mango/Makefile 477220 2018-08-15 11:37:37Z rene $
 
 PORTNAME=	Mango
 PORTVERSION=	1.30
+PORTREVISION=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ODC
@@ -14,7 +15,7 @@ COMMENT=	Pure-Perl non-blocking I/O MongoDB driver
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	mongo:databases/mongodb \
+BUILD_DEPENDS=	mongo:databases/mongodb34 \
 		p5-Mojolicious>=5.40:www/p5-Mojolicious
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 

@@ -1,8 +1,7 @@
-# $FreeBSD: head/misc/kf5-purpose/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/misc/kf5-purpose/Makefile 477922 2018-08-23 18:49:16Z adridg $
 
 PORTNAME=	purpose
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	misc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

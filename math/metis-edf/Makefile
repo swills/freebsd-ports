@@ -1,8 +1,8 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/metis-edf/Makefile 471196 2018-05-31 08:34:20Z amdmi3 $
+# $FreeBSD: head/math/metis-edf/Makefile 477484 2018-08-18 08:51:53Z thierry $
 
 PORTNAME=	metis-edf
-DISTVERSION=	5.1.0-aster1
+DISTVERSION=	5.1.0-aster4
 PORTEPOCH=	1
 CATEGORIES=	math
 

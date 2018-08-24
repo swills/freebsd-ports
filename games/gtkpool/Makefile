@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/gtkpool/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/gtkpool/Makefile 477558 2018-08-19 08:13:51Z tobik $
 
 PORTNAME=	gtkpool
 PORTVERSION=	0.5.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.seul.org/pub/gtkpool/ \
 		http://www.sourcefiles.org/Games/Sports/Pool/
@@ -11,11 +11,14 @@ MASTER_SITES=	ftp://ftp.seul.org/pub/gtkpool/ \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	2D pool game using the GTK+ toolkit
 
-USES=		autoreconf gmake perl5 pkgconfig
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		autoreconf compiler:c++11-lang gmake perl5 pkgconfig
+USE_CXXSTD=	c++11
 USE_GNOME=	gtk20
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
-USE_GCC=	any
 
 PLIST_FILES=	bin/gtkpool \
 		share/icons/gtkpool.png

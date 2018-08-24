@@ -1,8 +1,8 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/mail/sympa/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/mail/sympa/Makefile 477348 2018-08-16 15:08:04Z miwi $
 
 PORTNAME=	sympa
-DISTVERSION=	6.2.32
+DISTVERSION=	6.2.34
 CATEGORIES=	mail
 
 MAINTAINER=	dgeo@centrale-marseille.fr

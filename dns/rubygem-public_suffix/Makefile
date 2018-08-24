@@ -1,13 +1,12 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/dns/rubygem-public_suffix/Makefile 477082 2018-08-13 18:19:28Z sunpoet $
+# $FreeBSD: head/dns/rubygem-public_suffix/Makefile 477395 2018-08-16 23:43:10Z sunpoet $
 
 PORTNAME=	public_suffix
-PORTVERSION=	3.0.2
-PORTREVISION=	2
+PORTVERSION=	3.0.3
 CATEGORIES=	dns rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Ruby domain name parser based on the Public Suffix List
 
 LICENSE=	MIT

@@ -1,7 +1,6 @@
-# $FreeBSD: head/textproc/tinyxml/files/Makefile 340722 2014-01-22 17:00:46Z mat $
-# $Id$
+# $FreeBSD: head/textproc/tinyxml/files/Makefile 477603 2018-08-19 21:14:12Z tobik $
 
-LIB = 	tinyxml
+LIB_CXX= 	tinyxml
 SRCS=	tinystr.cpp tinyxmlerror.cpp tinyxml.cpp tinyxmlparser.cpp
 INCS=	tinyxml.h tinystr.h
 

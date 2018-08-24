@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 476294 2018-08-03 13:33:39Z rene $
+# $FreeBSD: head/audio/Makefile 477480 2018-08-18 07:03:28Z yuri $
 #
 
     COMMENT = Audio tools
@@ -115,6 +115,7 @@
     SUBDIR += denemo
     SUBDIR += dir2ogg
     SUBDIR += discid
+    SUBDIR += dpf-plugins-lv2
     SUBDIR += dream
     SUBDIR += drumgizmo
     SUBDIR += drumpiler
@@ -664,6 +665,7 @@
     SUBDIR += puddletag
     SUBDIR += pulseaudio
     SUBDIR += pulseaudio-module-sndio
+    SUBDIR += pulseaudio-module-xrdp
     SUBDIR += py-SoundFile
     SUBDIR += py-al
     SUBDIR += py-ao

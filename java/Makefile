@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/Makefile 474750 2018-07-16 16:59:24Z ale $
+# $FreeBSD: head/java/Makefile 477717 2018-08-21 12:06:54Z rene $
 #
 
     COMMENT = Java language support
@@ -77,7 +77,6 @@
     SUBDIR += jflex
     SUBDIR += jfreechart
     SUBDIR += jgraph
-    SUBDIR += jgrapht
     SUBDIR += jgraphx
     SUBDIR += jikes
     SUBDIR += jlex

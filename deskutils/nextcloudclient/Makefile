@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/nextcloudclient/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/nextcloudclient/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	nextcloudclient
 PORTVERSION=	0.0.0.20180323
@@ -7,7 +7,7 @@ PORTVERSION=	0.0.0.20180323
 PORTREVISION=	2
 CATEGORIES=	deskutils
 
-MAINTAINER=	mr@freebsd.org
+MAINTAINER=	mr@FreeBSD.org
 COMMENT=	NextCloud Desktop Syncing Client
 
 LICENSE=	GPLv2

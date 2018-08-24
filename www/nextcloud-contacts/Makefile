@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-contacts/Makefile 474086 2018-07-07 13:52:59Z brnrd $
+# $FreeBSD: head/www/nextcloud-contacts/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	contacts
 PORTVERSION=	2.1.5
@@ -11,7 +11,7 @@ PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}/${DISTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}
 
-MAINTAINER=	brnrd@freebsd.org
+MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Contacts app for Nextcloud
 
 LICENSE=	AGPLv3

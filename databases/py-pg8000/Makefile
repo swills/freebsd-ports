@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/py-pg8000/Makefile 473955 2018-07-05 08:52:25Z wen $
+# $FreeBSD: head/databases/py-pg8000/Makefile 477874 2018-08-23 14:28:01Z wen $
 
 PORTNAME=	pg8000
-PORTVERSION=	1.12.2
+PORTVERSION=	1.12.3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

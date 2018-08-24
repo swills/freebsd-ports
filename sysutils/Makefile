@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 476941 2018-08-11 19:25:41Z danilo $
+# $FreeBSD: head/sysutils/Makefile 477717 2018-08-21 12:06:54Z rene $
 #
 
     COMMENT = System utilities
@@ -49,7 +49,6 @@
     SUBDIR += aptly
     SUBDIR += arcconf
     SUBDIR += archivemount
-    SUBDIR += areca-cli
     SUBDIR += ascpu
     SUBDIR += asfsm
     SUBDIR += asmctl
@@ -301,6 +300,7 @@
     SUBDIR += ec2-scripts
     SUBDIR += edid-decode
     SUBDIR += eject
+    SUBDIR += eksctl
     SUBDIR += endian
     SUBDIR += enteruser
     SUBDIR += entr
@@ -481,6 +481,7 @@
     SUBDIR += healthd
     SUBDIR += heartbeat
     SUBDIR += heirloom
+    SUBDIR += helm
     SUBDIR += hextools
     SUBDIR += hfm
     SUBDIR += hfsexplorer
@@ -532,6 +533,7 @@
     SUBDIR += isomaster
     SUBDIR += isomd5sum
     SUBDIR += istatserver
+    SUBDIR += istio
     SUBDIR += jadm
     SUBDIR += jail-primer
     SUBDIR += jailadmin
@@ -640,6 +642,7 @@
     SUBDIR += lttng-ust
     SUBDIR += luckybackup
     SUBDIR += lxinput
+    SUBDIR += lxqt-config
     SUBDIR += lxqt-policykit
     SUBDIR += lxqt-qtplugin
     SUBDIR += lxsplit
@@ -959,6 +962,7 @@
     SUBDIR += pxattr
     SUBDIR += py-XenAPI
     SUBDIR += py-analyzemft
+    SUBDIR += py-ansible-lint
     SUBDIR += py-bcfg2
     SUBDIR += py-cdmi
     SUBDIR += py-consul
@@ -1089,7 +1093,6 @@
     SUBDIR += rubygem-fluent-plugin-graylog
     SUBDIR += rubygem-fluent-plugin-tail-asis
     SUBDIR += rubygem-fluentd
-    SUBDIR += rubygem-fluentd010
     SUBDIR += rubygem-fssm
     SUBDIR += rubygem-god
     SUBDIR += rubygem-guard
@@ -1254,6 +1257,7 @@
     SUBDIR += syslog-ng313
     SUBDIR += syslog-ng314
     SUBDIR += syslog-ng315
+    SUBDIR += syslog-ng317
     SUBDIR += syslog-ng36
     SUBDIR += syslog-ng37
     SUBDIR += syslog-ng39
@@ -1337,6 +1341,7 @@
     SUBDIR += u-boot-rpi
     SUBDIR += u-boot-rpi2
     SUBDIR += u-boot-rpi3
+    SUBDIR += u-boot-rpi-0-w
     SUBDIR += u-boot-sinovoip-bpi-m3
     SUBDIR += u-boot-sopine
     SUBDIR += u-boot-tools

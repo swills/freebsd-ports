@@ -1,9 +1,8 @@
 # Created by: Daniel B. Hemmerich <dan@spot.org>
-# $FreeBSD: head/misc/p5-Text-FIGlet/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Text-FIGlet/Makefile 477730 2018-08-21 18:23:52Z sunpoet $
 
 PORTNAME=	Text-FIGlet
-PORTVERSION=	2.19.3
-PORTREVISION=	2
+PORTVERSION=	2.19.4
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

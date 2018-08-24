@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hs-hashed-storage/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-hashed-storage/Makefile 477219 2018-08-15 10:51:55Z arrowd $
 
 PORTNAME=	hashed-storage
 PORTVERSION=	0.5.11
@@ -9,6 +9,9 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Hashed file storage support code
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Not being developed upstream
+EXPIRATION_DATE=	2018-09-15
 
 USE_CABAL=	dataenc extensible-exceptions mmap>=0.5 mtl zlib
 

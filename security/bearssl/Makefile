@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/bearssl/Makefile 450903 2017-09-29 15:24:58Z bapt $
+# $FreeBSD: head/security/bearssl/Makefile 477665 2018-08-20 17:20:04Z bapt $
 
 PORTNAME=	bearssl
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	security devel
 MASTER_SITES=	https://bearssl.org/
 

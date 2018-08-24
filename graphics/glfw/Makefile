@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/graphics/glfw/Makefile 465839 2018-03-28 18:55:34Z tobik $
+# $FreeBSD: head/graphics/glfw/Makefile 477325 2018-08-16 12:17:58Z swills $
 
 PORTNAME=	glfw
 PORTVERSION=	3.2.1
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Portable framework for OpenGL development
 
 LICENSE=	ZLIB

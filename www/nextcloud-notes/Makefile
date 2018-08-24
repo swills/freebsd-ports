@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-notes/Makefile 476409 2018-08-05 11:59:33Z brnrd $
+# $FreeBSD: head/www/nextcloud-notes/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	notes
 PORTVERSION=	2.4.0
@@ -11,7 +11,7 @@ PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}/${DISTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}
 
-MAINTAINER=	brnrd@freebsd.org
+MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Notes app for Nextcloud
 
 LICENSE=	AGPLv3

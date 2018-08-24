@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/french/aster/bsd.aster.mk 454187 2017-11-14 18:29:22Z thierry $
+# $FreeBSD: head/french/aster/bsd.aster.mk 477484 2018-08-18 08:51:53Z thierry $
 #
 # Common variables used by ports related to Code_Aster
 
@@ -10,8 +10,8 @@ MASTER_SITES=	http://www.code-aster.org/FICHIERS/	\
 DISTNAME=	aster-${DISTVERSIONPREFIX}${ASTER_DISTVERSION}${DISTVERSIONSUFFIX}
 DISTINFO_FILE=	${.CURDIR}/../../french/aster/distinfo
 
-ASTER_VER=	13.4.0
-ASTER_DISTVERSION=	${ASTER_VER}-3
+ASTER_VER=	13.6.0
+ASTER_DISTVERSION=	${ASTER_VER}-1
 EXTRACT_WRKSRC=	${WRKDIR}/aster-${DISTVERSIONPREFIX}${ASTER_VER}/SRC
 
 .if ${PORTNAME} == metis-edf || ${PORTNAME} == mumps-edf

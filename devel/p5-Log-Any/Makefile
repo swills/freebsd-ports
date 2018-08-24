@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Log-Any/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Log-Any/Makefile 477566 2018-08-19 10:46:37Z wen $
 
 PORTNAME=	Log-Any
-PORTVERSION=	1.049
+PORTVERSION=	1.707
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PREACTION

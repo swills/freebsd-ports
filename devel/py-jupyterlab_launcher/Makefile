@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jupyterlab_launcher/Makefile 476965 2018-08-12 05:48:36Z yuri $
+# $FreeBSD: head/devel/py-jupyterlab_launcher/Makefile 477470 2018-08-18 01:03:19Z yuri $
 
 PORTNAME=	jupyterlab_launcher
-DISTVERSION=	0.12.0
+DISTVERSION=	0.13.1
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonschema>=2.6.0:devel/py-jsonschema@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}notebook>=4.2.0:www/py-notebook@${PY_FLAVOR}
 
-USES=		python
+USES=		python:3.4+
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

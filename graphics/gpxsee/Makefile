@@ -1,8 +1,8 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/gpxsee/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/gpxsee/Makefile 477356 2018-08-16 16:03:11Z swills $
 
 PORTNAME=	gpxsee
-PORTVERSION=	5.13
+PORTVERSION=	5.16
 PORTREVISION=	1
 CATEGORIES=	graphics geography
 

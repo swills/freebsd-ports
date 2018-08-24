@@ -1,8 +1,8 @@
 # Created by: Goran Mekić <meka@tilda.center>
-# $FreeBSD: head/audio/drumgizmo/Makefile 475525 2018-07-28 11:46:47Z swills $
+# $FreeBSD: head/audio/drumgizmo/Makefile 477370 2018-08-16 20:15:32Z swills $
 
 PORTNAME=	drumgizmo
-PORTVERSION=	0.9.15
+PORTVERSION=	0.9.16
 CATEGORIES=	audio
 MASTER_SITES=	http://www.drumgizmo.org/releases/${PORTNAME}-${PORTVERSION}/
 

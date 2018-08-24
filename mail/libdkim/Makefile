@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/mail/libdkim/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/libdkim/Makefile 477307 2018-08-16 05:03:33Z dinoex $
 
 PORTNAME=	libdkim
 PORTVERSION=	1.0.21
@@ -12,6 +12,7 @@ COMMENT=	DKIM (DomainKeys Identified Mail) library
 LICENSE=	APACHE20
 
 USES=		uidfix zip ssl
+CXXFLAGS+=	-std=gnu++98
 USE_LDCONFIG=	YES
 SHLIB_MAJOR=	1
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"

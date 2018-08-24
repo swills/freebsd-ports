@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/converters/Makefile 477371 2018-08-16 20:28:32Z rene $
 #
 
     COMMENT = Character code converters
@@ -183,7 +183,6 @@
     SUBDIR += tuc
     SUBDIR += unix2dos
     SUBDIR += uudeview
-    SUBDIR += uudx
     SUBDIR += uulib
     SUBDIR += vda2fbd
     SUBDIR += wkhtmltopdf

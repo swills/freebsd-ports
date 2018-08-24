@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/monero-cli/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/monero-cli/Makefile 477702 2018-08-21 04:52:50Z linimon $
 
 PORTNAME=	monero-cli
 # To build from an arbitrary git commit comment the following two lines
@@ -15,6 +15,11 @@ MAINTAINER=	vd@FreeBSD.org
 COMMENT=	Private, secure, untraceable, decentralised digital currency (CLI)
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_aarch64=		fails to compile: the clang compiler does not support -march=native
+BROKEN_armv6=		fails to compile: the clang compiler does not support -march=native
+BROKEN_armv7=		fails to compile: the clang compiler does not support -march=native
+BROKEN_powerpc64=	fails to compile: the clang compiler does not support -march=native
 
 LIB_DEPENDS=	\
 		libboost_chrono.so:devel/boost-libs \

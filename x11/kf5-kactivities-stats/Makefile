@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/kf5-kactivities-stats/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/x11/kf5-kactivities-stats/Makefile 477922 2018-08-23 18:49:16Z adridg $
 
 PORTNAME=	kactivities-stats
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

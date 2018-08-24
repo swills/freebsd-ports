@@ -1,8 +1,8 @@
 # Created by: Jason Harris <jharris@widomaker.com>
-# $FreeBSD: head/sysutils/file/Makefile 462377 2018-02-20 09:02:56Z amdmi3 $
+# $FreeBSD: head/sysutils/file/Makefile 477877 2018-08-23 16:34:20Z swills $
 
 PORTNAME=	file
-PORTVERSION=	5.32
+PORTVERSION=	5.34
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.astron.com/pub/file/ \
 		ftp://ftp.fu-berlin.de/unix/tools/file/

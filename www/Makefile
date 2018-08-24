@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 477162 2018-08-14 15:06:38Z adamw $
+# $FreeBSD: head/www/Makefile 477785 2018-08-22 13:20:44Z 0mp $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -492,11 +492,11 @@
     SUBDIR += mod_xsendfile
     SUBDIR += mohawk
     SUBDIR += moinmoin
+    SUBDIR += moinmoincli
     SUBDIR += monast
     SUBDIR += mongoose
     SUBDIR += mongrel2
     SUBDIR += moodle31
-    SUBDIR += moodle32
     SUBDIR += moodle33
     SUBDIR += moodle34
     SUBDIR += moodle35
@@ -1906,7 +1906,6 @@
     SUBDIR += py-zope.app.wsgi
     SUBDIR += pyblosxom
     SUBDIR += pycarddav
-    SUBDIR += pydio
     SUBDIR += pyjamas
     SUBDIR += qdecoder
     SUBDIR += qhttpengine

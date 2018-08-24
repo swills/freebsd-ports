@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/citra/Makefile 477122 2018-08-14 00:28:15Z jbeich $
+# $FreeBSD: head/emulators/citra/Makefile 477844 2018-08-22 23:56:36Z jbeich $
 
 PORTNAME=	citra
-PORTVERSION=	s20180812
+PORTVERSION=	s20180821
 PORTREVISION?=	0
 CATEGORIES=	emulators
 
@@ -23,7 +23,7 @@ BUILD_DEPENDS=	boost-libs>=1.66:devel/boost-libs
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	citra-emu
-GH_TAGNAME=	6a1fa3c84
+GH_TAGNAME=	47025552c
 GH_TUPLE=	citra-emu:ext-libressl-portable:7d01cb0:libressl/externals/libressl \
 		citra-emu:ext-soundtouch:060181e:soundtouch/externals/soundtouch \
 		MerryMage:dynarmic:r1-2-g4b350a3:dynarmic/externals/dynarmic \

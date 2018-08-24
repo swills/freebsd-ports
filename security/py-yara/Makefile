@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-yara/Makefile 476939 2018-08-11 18:19:11Z antoine $
+# $FreeBSD: head/security/py-yara/Makefile 477423 2018-08-17 13:07:56Z antoine $
 
 PORTNAME=	yara
-PORTVERSION=	3.8.0
+PORTVERSION=	3.8.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

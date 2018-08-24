@@ -1,9 +1,10 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/net/fping/Makefile 473606 2018-06-30 08:49:13Z fernape $
+# $FreeBSD: head/net/fping/Makefile 477297 2018-08-15 23:54:20Z rodrigo $
 
 PORTNAME=	fping
 PORTVERSION=	4.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net ipv6
 
 MAINTAINER=	jharris@widomaker.com
@@ -19,9 +20,11 @@ USES=		autoreconf gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	schweikert
 
+OPTIONS_DEFINE=IPV6
+IPV6_CONFIGURE_OFF=--disable-ipv6
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--bindir="${PREFIX}/sbin" \
-		--enable-ipv6 \
 		--enable-ipv4
 INSTALL_TARGET=	install-strip
 

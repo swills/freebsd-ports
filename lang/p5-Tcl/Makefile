@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Tcl/Makefile 476448 2018-08-05 19:08:13Z sunpoet $
+# $FreeBSD: head/lang/p5-Tcl/Makefile 477914 2018-08-23 17:58:56Z sunpoet $
 
 PORTNAME=	Tcl
-PORTVERSION=	1.25
+PORTVERSION=	1.27
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

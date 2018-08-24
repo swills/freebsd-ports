@@ -1,4 +1,4 @@
-# $FreeBSD: head/base/binutils/Makefile 476217 2018-08-02 05:30:17Z antoine $
+# $FreeBSD: head/base/binutils/Makefile 477638 2018-08-20 09:17:45Z jhb $
 
 PORTEPOCH=	0
 CATEGORIES=	base
@@ -23,11 +23,27 @@ BUTARGET=	${TARGETARCH}-unknown-${OPSYS:tl}${OSREL}
 
 CONFIGURE_ARGS+=	--disable-host-shared
 PREFIX=	/usr
+BUREMOVE=	addr2line \
+		ar \
+		c++filt \
+		dlltool \
+		elfedit \
+		gprof \
+		nlmconv \
+		nm \
+		ranlib \
+		readelf \
+		size \
+		strings \
+		strip \
+		windmc \
+		windres
 
 .include "${MASTERDIR}/Makefile"
 
 .if ${OSVERSION} >= 1100100
 PLIST_SUB+=	OBJCOPY="@comment "
+BUREMOVE+=	objcopy
 .else
 PLIST_SUB+=	OBJCOPY=""
 .endif

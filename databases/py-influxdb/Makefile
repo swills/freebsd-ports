@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/py-influxdb/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-influxdb/Makefile 477660 2018-08-20 16:08:18Z yuri $
 
 PORTNAME=	influxdb
 PORTVERSION=	5.0.0
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +11,7 @@ MAINTAINER=	vladimirv@ixsystems.com
 COMMENT=	Python Client for InfluxDB
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${PY_FLAVOR} \
@@ -18,5 +20,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

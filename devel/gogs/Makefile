@@ -1,9 +1,13 @@
-# $FreeBSD: head/devel/gogs/Makefile 471920 2018-06-07 13:33:03Z swills $
+# $FreeBSD: head/devel/gogs/Makefile 477825 2018-08-22 21:16:16Z swills $
 
 PORTNAME=	gogs
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.11.53
+PORTREVISION=	1
 CATEGORIES=	devel www
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	1f247cf8139cb483276cd8dd06385a800ce9d4b2.patch:-p1
 
 MAINTAINER=	dg@syrec.org
 COMMENT=	Painless self-hosted Git service

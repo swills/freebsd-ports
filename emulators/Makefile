@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 476314 2018-08-03 17:53:09Z antoine $
+# $FreeBSD: head/emulators/Makefile 477371 2018-08-16 20:28:32Z rene $
 #
 
     COMMENT = Emulators for other operating systems
@@ -72,7 +72,6 @@
     SUBDIR += linux_base-c7
     SUBDIR += lisaem
     SUBDIR += loemu
-    SUBDIR += m2000
     SUBDIR += mame
     SUBDIR += mastergear
     SUBDIR += mednafen

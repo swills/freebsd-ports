@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 476147 2018-08-01 03:43:16Z loader $
+# $FreeBSD: head/comms/Makefile 477750 2018-08-21 18:32:30Z rene $
 #
 
     COMMENT = Communication utilities
@@ -191,7 +191,6 @@
     SUBDIR += uird
     SUBDIR += unixcw
     SUBDIR += usbmuxd
-    SUBDIR += usrp
     SUBDIR += viewfax
     SUBDIR += vrflash
     SUBDIR += wsjt

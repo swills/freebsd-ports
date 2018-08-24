@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-ce/Makefile 476329 2018-08-04 00:27:16Z mfechner $
+# $FreeBSD: head/www/gitlab-ce/Makefile 477216 2018-08-15 07:59:53Z mfechner $
 
 PORTNAME=	gitlab-ce
 PORTVERSION=	11.1.4
@@ -240,6 +240,9 @@ post-patch-PGSQL-on:
 post-patch-PGSQL-off:
 	${REINPLACE_CMD} -e "/gem 'pg'/d" ${WRKSRC}/Gemfile
 	${REINPLACE_CMD} -e "/gem 'peek-pg'/d" ${WRKSRC}/Gemfile
+
+pre-install:
+	(cd ${WRKSRC} && rm Gemfile.lock && bundle install --local)
 
 do-install:
 	${FIND} ${WRKSRC} -name '*.orig' -delete

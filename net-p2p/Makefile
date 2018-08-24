@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 476572 2018-08-07 07:09:34Z acm $
+# $FreeBSD: head/net-p2p/Makefile 477752 2018-08-21 18:46:35Z rene $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -21,7 +21,6 @@
     SUBDIR += dclib
     SUBDIR += deluge
     SUBDIR += deluge-cli
-    SUBDIR += dogecoin
     SUBDIR += ed2k
     SUBDIR += edonkey-tool-hash
     SUBDIR += eiskaltdcpp-cli
@@ -96,7 +95,6 @@
     SUBDIR += transmission-qt
     SUBDIR += transmission-remote-gui
     SUBDIR += tribler
-    SUBDIR += twister
     SUBDIR += uhub
     SUBDIR += valknut
     SUBDIR += verlihub

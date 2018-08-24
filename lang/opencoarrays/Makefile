@@ -1,9 +1,9 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/opencoarrays/Makefile 477793 2018-08-22 14:58:55Z swills $
 
 PORTNAME=	opencoarrays
-DISTVERSION=	2.0.0
-PORTREVISION=	1
+DISTVERSION=	2.2.0
+PORTREVISION=	2
 CATEGORIES=	lang parallel
 
 MAINTAINER=	as@cmplx.uk
@@ -45,7 +45,9 @@ OPENMPI2_CONFIGURE_ENV=	MPI_HOME=${LOCALBASE}/mpi/openmpi2
 
 .include <bsd.port.options.mk>
 
-.if ${GCC_DEFAULT} >= 7
+.if ${GCC_DEFAULT} >= 8
+PLIST_SUB+=	SOVERSION=3
+.elif ${GCC_DEFAULT} == 7
 PLIST_SUB+=	SOVERSION=2
 .elif ${GCC_DEFAULT} == 6
 PLIST_SUB+=	SOVERSION=1

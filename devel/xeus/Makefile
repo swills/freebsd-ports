@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/xeus/Makefile 477108 2018-08-13 19:53:53Z yuri $
+# $FreeBSD: head/devel/xeus/Makefile 477605 2018-08-19 23:14:11Z yuri $
 
 PORTNAME=	xeus
 DISTVERSION=	0.13.0
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -19,7 +20,7 @@ RUN_DEPENDS=	cppzmq>0:net/cppzmq \
 		nlohmann-json>0:devel/nlohmann-json \
 		xtl-quant-stack>0:devel/xtl-quant-stack
 
-USES=		cmake:outsource localbase:ldflags pkgconfig
+USES=		cmake:outsource compiler:c++14-lang localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	QuantStack
 USE_LDCONFIG=	yes

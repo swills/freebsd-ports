@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 476638 2018-08-08 12:26:13Z mat $
+# $FreeBSD: head/dns/Makefile 477456 2018-08-18 00:13:39Z sunpoet $
 #
 
     COMMENT = Domain Name Service tools
@@ -78,7 +78,6 @@
     SUBDIR += gdnsd2
     SUBDIR += gen6dns
     SUBDIR += getdns
-    SUBDIR += ghtool
     SUBDIR += go-geodns
     SUBDIR += hesiod
     SUBDIR += hostdb
@@ -197,6 +196,7 @@
     SUBDIR += py-ldns
     SUBDIR += py-namebench
     SUBDIR += py-publicsuffix
+    SUBDIR += py-publicsuffixlist
     SUBDIR += py-py3dns
     SUBDIR += py-pycares
     SUBDIR += py-pydnstable

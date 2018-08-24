@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Web-Query/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Web-Query/Makefile 477886 2018-08-23 17:54:20Z sunpoet $
 
 PORTNAME=	Web-Query
-PORTVERSION=	0.38
+PORTVERSION=	0.39
 CATEGORIES=	www
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

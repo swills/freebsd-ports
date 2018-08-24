@@ -1,8 +1,8 @@
 # Created by: sec@42.org
-# $FreeBSD: head/graphics/gmt/Makefile 462620 2018-02-22 19:03:40Z yuri $
+# $FreeBSD: head/graphics/gmt/Makefile 477777 2018-08-22 08:58:31Z wen $
 
 PORTNAME=	gmt
-DISTVERSION=	4.5.17
+DISTVERSION=	4.5.18
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.soest.hawaii.edu/%SUBDIR%/ \

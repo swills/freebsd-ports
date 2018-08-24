@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 477131 2018-08-14 01:18:54Z loader $
+# $FreeBSD: head/mail/Makefile 477718 2018-08-21 12:09:54Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -225,6 +225,7 @@
     SUBDIR += mairix
     SUBDIR += masqmail
     SUBDIR += mb2md
+    SUBDIR += mblaze
     SUBDIR += mbox2imap
     SUBDIR += mbox2mdir
     SUBDIR += mboxcheck-applet
@@ -262,8 +263,6 @@
     SUBDIR += mulberry
     SUBDIR += mutt
     SUBDIR += mutt-lite
-    SUBDIR += mutt14
-    SUBDIR += mutt14-lite
     SUBDIR += mutt_vc_query
     SUBDIR += muttils
     SUBDIR += nbsmtp
@@ -599,7 +598,6 @@
     SUBDIR += roundcube-automatic_addressbook
     SUBDIR += roundcube-carddav
     SUBDIR += roundcube-contextmenu
-    SUBDIR += roundcube-groupvice
     SUBDIR += roundcube-html5_notifier
     SUBDIR += roundcube-identity_smtp
     SUBDIR += roundcube-login_info

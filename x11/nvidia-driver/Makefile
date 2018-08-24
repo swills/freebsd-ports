@@ -1,5 +1,5 @@
 # Created by: Stijn Hoop <stijn@win.tue.nl>
-# $FreeBSD: head/x11/nvidia-driver/Makefile 475170 2018-07-23 12:58:00Z danfe $
+# $FreeBSD: head/x11/nvidia-driver/Makefile 477761 2018-08-21 22:58:43Z glebius $
 #
 # For those wondering why this port is not under `x11-drivers' category,
 # have a look at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=121930.
@@ -113,6 +113,10 @@ MAKE_ENV+=	WITHOUT_LINUX=yes
 .endif
 
 post-patch: .SILENT
+# KPI of kmem_alloc_contig() changed in FreeBSD src r338143
+.if ${OSVERSION} >= 1200079
+	${REINPLACE_CMD} -e 's/kmem_alloc_contig(kmem_arena, /kmem_alloc_contig(/' ${WRKSRC}/src/${NVSRC}/nvidia_subr.c
+.endif
 # We should support -CURRENT: kill the check
 	${REINPLACE_CMD} -e '24,26d' ${WRKSRC}/src/${NVSRC}/nv-freebsd.h
 # Adjust Linux headers #include's after FreeBSD src r246085

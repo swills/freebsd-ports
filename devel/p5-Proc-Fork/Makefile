@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Proc-Fork/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Proc-Fork/Makefile 477763 2018-08-22 02:12:53Z wen $
 
 PORTNAME=	Proc-Fork
-PORTVERSION=	0.804
+PORTVERSION=	0.805
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,9 +1,8 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/ftp/lftp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/ftp/lftp/Makefile 477715 2018-08-21 10:25:31Z martymac $
 
 PORTNAME=	lftp
-PORTVERSION=	4.8.3
-PORTREVISION=	1
+PORTVERSION=	4.8.4
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	http://lftp.tech/ftp/ \
 		http://lftp.tech/ftp/old/ \
@@ -25,14 +24,6 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 
 USES=		charsetfix iconv libtool localbase readline shebangfix
 GNU_CONFIGURE=	yes
-
-# XXX Fix readline detection with a non-standard LOCALBASE
-# To remove when m4/lftp_lib_readline.m4 is fixed upstream
-.if !exists(/usr/lib/libreadline.so)
-CONFIGURE_ARGS+=	--with-readline=${LOCALBASE}
-.else
-CONFIGURE_ARGS+=	--with-readline=/usr
-.endif
 
 PORTDOCS=	AUTHORS BUGS ChangeLog FAQ FEATURES INSTALL \
 		MIRRORS NEWS README README.debug-levels README.modules \

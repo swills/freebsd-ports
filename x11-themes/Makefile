@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/x11-themes/Makefile 477371 2018-08-16 20:28:32Z rene $
 #
 
     COMMENT = X11 themes
@@ -9,7 +9,6 @@
     SUBDIR += adwaita-qt
     SUBDIR += arc-gruvbox-theme
     SUBDIR += audacious-skins
-    SUBDIR += beastie
     SUBDIR += claws-mail-themes
     SUBDIR += clearlooks
     SUBDIR += clearlooks-metacity

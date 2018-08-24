@@ -1,9 +1,8 @@
-# $FreeBSD: head/misc/pubs/Makefile 472611 2018-06-17 16:43:58Z yuri $
+# $FreeBSD: head/misc/pubs/Makefile 477705 2018-08-21 05:39:15Z yuri $
 
 PORTNAME=	pubs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.7.0-104
-DISTVERSIONSUFFIX=	-gc513870
+DISTVERSION=	0.8.0
 CATEGORIES=	misc python
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,11 +14,14 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>0:www/py-beautifulsoup@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}bibtexparser>0:textproc/py-bibtexparser@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}configobj>0:devel/py-configobj@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}feedparser>0:textproc/py-feedparser@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes
 USE_PYTHON=	distutils autoplist noflavors
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

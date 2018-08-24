@@ -1,8 +1,8 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/graphics/py-graphviz/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/graphics/py-graphviz/Makefile 477406 2018-08-17 02:24:03Z wen $
 
 PORTNAME=	graphviz
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.4
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

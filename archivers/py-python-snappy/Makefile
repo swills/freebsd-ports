@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/archivers/py-python-snappy/Makefile 460924 2018-02-04 11:42:27Z antoine $
+# $FreeBSD: head/archivers/py-python-snappy/Makefile 477429 2018-08-17 13:46:31Z antoine $
 
 PORTNAME=	python-snappy
-PORTVERSION=	0.5.2
+PORTVERSION=	0.5.3
 CATEGORIES=	archivers devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

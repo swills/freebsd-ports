@@ -1,8 +1,8 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/audio/lilv/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/audio/lilv/Makefile 477805 2018-08-22 18:03:41Z swills $
 
 PORTNAME=	lilv
-PORTVERSION=	0.24.2
+PORTVERSION=	0.24.4
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 

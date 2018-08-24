@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-turbolinks-source/Makefile 458551 2018-01-09 16:41:23Z sunpoet $
+# $FreeBSD: head/www/rubygem-turbolinks-source/Makefile 477748 2018-08-21 18:25:25Z sunpoet $
 
 PORTNAME=	turbolinks-source
-PORTVERSION=	5.1.0
+PORTVERSION=	5.2.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

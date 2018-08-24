@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/libsbml/Makefile 473289 2018-06-25 01:37:52Z wen $
+# $FreeBSD: head/biology/libsbml/Makefile 477936 2018-08-24 06:24:30Z linimon $
 
 PORTNAME=	libsbml
 PORTVERSION=	5.17.0
@@ -51,4 +51,12 @@ post-install-EXAMPLES-on:
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . \
 		${STAGEDIR}${EXAMPLESDIR} '! -name *Makefile*'
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD
+.if ( ${OSVERSION} >= 1101513 && ${OSVERSION} < 1200000 ) || ${OSVERSION} >= 1200060
+BROKEN=		fails to compile with clang6 or later
+.endif
+.endif
+
+.include <bsd.port.post.mk>

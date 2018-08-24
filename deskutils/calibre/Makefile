@@ -1,8 +1,8 @@
 # Created by: stas
-# $FreeBSD: head/deskutils/calibre/Makefile 476854 2018-08-10 22:23:57Z madpilot $
+# $FreeBSD: head/deskutils/calibre/Makefile 477962 2018-08-24 14:21:06Z madpilot $
 
 PORTNAME=	calibre
-PORTVERSION=	3.29.0
+PORTVERSION=	3.30.0
 CATEGORIES=	deskutils python
 MASTER_SITES=	http://download.calibre-ebook.com/${PORTVERSION}/
 

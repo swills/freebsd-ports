@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-twilio/Makefile 476797 2018-08-09 18:58:23Z olgeni $
+# $FreeBSD: head/devel/py-twilio/Makefile 477938 2018-08-24 06:35:18Z olgeni $
 
 PORTNAME=	twilio
-PORTVERSION=	6.16.1
+PORTVERSION=	6.16.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

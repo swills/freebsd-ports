@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libbde/Makefile 449201 2017-09-03 12:37:13Z antoine $
+# $FreeBSD: head/devel/libbde/Makefile 477427 2018-08-17 13:32:20Z antoine $
 
 PORTNAME=	libbde
-DISTVERSION=	alpha-20170902
+DISTVERSION=	alpha-20180806
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libbde/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

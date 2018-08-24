@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/kanboard/Makefile 475451 2018-07-27 18:26:50Z miwi $
+# $FreeBSD: head/www/kanboard/Makefile 477331 2018-08-16 13:03:36Z miwi $
 
 PORTNAME=	kanboard
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -13,8 +13,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_BUILD=	yes
 NO_ARCH=	yes
-USE_GITHUB=	yes
 USES=		php
+USE_GITHUB=	yes
 USE_PHP=	ctype curl dom gd hash filter iconv json mcrypt mbstring \
 		openssl pdo session simplexml \
 		zlib xml

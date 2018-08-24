@@ -1,5 +1,5 @@
 # Created by: <mr@freebsd.org>
-# $FreeBSD: head/comms/inspectrum/Makefile 474281 2018-07-09 19:02:43Z mr $
+# $FreeBSD: head/comms/inspectrum/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	inspectrum
 PORTVERSION=	g20180708
@@ -7,7 +7,7 @@ PORTVERSION=	g20180708
 #DISTVERSIONPREFIX=	v
 CATEGORIES=	comms hamradio
 
-MAINTAINER=	mr@freebsd.org
+MAINTAINER=	mr@FreeBSD.org
 COMMENT=	Offline radio signal analyser
 
 LICENSE=	GPLv3

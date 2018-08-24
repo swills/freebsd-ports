@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-devel/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/cad/kicad-devel/Makefile 477727 2018-08-21 18:03:43Z mr $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_SRC_DATE}
@@ -59,7 +59,7 @@ CMAKE_ARGS=	-DLOCALBASE="${LOCALBASE}" \
 		-DwxWidgets_wxrc_EXECUTABLE=${WXRC_CMD} \
 		-DKICAD_SCRIPTING=ON \
 		-DKICAD_SCRIPTING_MODULES=ON \
-		-DKICAD_SCRIPTING_WXPYTHON=ON \
+		-DKICAD_SCRIPTING_WXPYTHON=OFF \
 		-DKICAD_SKIP_BOOST=YES \
 		-DKICAD_SPICE=OFF \
 		-DKICAD_USE_OCE=OFF

@@ -1,8 +1,8 @@
 # Created by: Brad Lanam <bll@gentoo.com>
-# $FreeBSD: head/sysutils/di/Makefile 472095 2018-06-09 21:28:09Z swills $
+# $FreeBSD: head/sysutils/di/Makefile 477820 2018-08-22 20:04:00Z swills $
 
 PORTNAME=	di
-PORTVERSION=	4.46
+PORTVERSION=	4.47
 CATEGORIES=	sysutils
 MASTER_SITES=	https://gentoo.com/di/ \
 		http://www.cyberbotx.com/di/

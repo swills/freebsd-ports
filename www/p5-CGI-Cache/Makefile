@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/www/p5-CGI-Cache/Makefile 476452 2018-08-05 19:08:34Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Cache/Makefile 477596 2018-08-19 20:32:37Z sunpoet $
 
 PORTNAME=	CGI-Cache
 PORTVERSION=	1.4214
@@ -18,6 +18,8 @@ RUN_DEPENDS=	p5-Cache>=0:devel/p5-Cache \
 		p5-Cache-Cache>=0:devel/p5-Cache-Cache \
 		p5-Tie-Restore>=0:devel/p5-Tie-Restore
 TEST_DEPENDS=	p5-File-Slurper>=0:devel/p5-File-Slurper
+
+PORTSCOUT=	skipv:1.4213
 
 USES=		perl5
 USE_PERL5=	configure

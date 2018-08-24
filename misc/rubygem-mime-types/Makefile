@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/misc/rubygem-mime-types/Makefile 477183 2018-08-14 16:41:55Z sunpoet $
+# $FreeBSD: head/misc/rubygem-mime-types/Makefile 477273 2018-08-15 19:34:02Z sunpoet $
 
 PORTNAME=	mime-types
-PORTVERSION=	3.2.1
+PORTVERSION=	3.2.2
 CATEGORIES=	misc rubygems
 MASTER_SITES=	RG
 

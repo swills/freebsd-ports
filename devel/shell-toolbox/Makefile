@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/shell-toolbox/Makefile 468627 2018-04-29 13:01:25Z riggs $
+# $FreeBSD: head/devel/shell-toolbox/Makefile 477222 2018-08-15 12:39:19Z 0mp $
 
 PORTNAME=	shell-toolbox
-DISTVERSION=	20180422
+DISTVERSION=	20180719
 CATEGORIES=	devel
 
 MAINTAINER=	0mp@FreeBSD.org

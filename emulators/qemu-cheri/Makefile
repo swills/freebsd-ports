@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-cheri/Makefile 472718 2018-06-18 21:30:38Z brooks $
+# $FreeBSD: head/emulators/qemu-cheri/Makefile 477400 2018-08-16 23:49:55Z brooks $
 
 PORTNAME=	qemu
 PORTVERSION=	0.d${SNAPDATE}
@@ -43,6 +43,7 @@ CONFIGURE_ARGS+= \
 		--disable-sdl \
 		--disable-vte \
 		--disable-xen \
+		--smbd=${LOCALBASE}/sbin/smbd \
 		--extra-cflags="-g ${EXTRA_CFLAGS}" \
 		--localstatedir=/var
 EXTRA_CFLAGS=	-DCHERI_UNALIGNED

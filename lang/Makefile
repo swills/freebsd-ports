@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 477121 2018-08-13 22:56:27Z brooks $
+# $FreeBSD: head/lang/Makefile 477802 2018-08-22 17:46:21Z tobik $
 #
 
     COMMENT = Programming languages
@@ -31,6 +31,7 @@
     SUBDIR += chez-scheme
     SUBDIR += chibi-scheme
     SUBDIR += chicken
+    SUBDIR += chicken5
     SUBDIR += cilkplus
     SUBDIR += cim
     SUBDIR += cint
@@ -374,7 +375,6 @@
     SUBDIR += ucc
     SUBDIR += urweb
     SUBDIR += v8
-    SUBDIR += v8-devel
     SUBDIR += vala
     SUBDIR += visualworks
     SUBDIR += yabasic

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rssroll/Makefile 477187 2018-08-14 16:58:52Z swills $
+# $FreeBSD: head/www/rssroll/Makefile 477231 2018-08-15 14:46:41Z swills $
 
 PORTNAME=	rssroll
 PORTVERSION=	0.6
@@ -24,7 +24,7 @@ GH_PROJECT=	rssroll:rssroll \
 GH_TAGNAME=	${CEZ_VERSION}:libcez
 
 pre-configure:
-	@(cd ${WRKDIR}/libcez-${CEZ_VERSION} && ${SETENV} ${MAKE_ENV} ${MAKE})
+	@(cd ${WRKSRC_libcez} && ${SETENV} ${MAKE_ENV} ${MAKE})
 	${REINPLACE_CMD} -e 's|cez_config.h|cez_config.h PATHS ${WRKDIR}/libcez-${CEZ_VERSION}/src/config NO_DEFAULT_PATH|g' \
 			 -e 's|cez_fossil.h|cez_fossil.h PATHS ${WRKDIR}/libcez-${CEZ_VERSION}/src/fossil NO_DEFAULT_PATH|g' \
 			 -e 's|cez_misc.h|cez_misc.h PATHS ${WRKDIR}/libcez-${CEZ_VERSION}/src/misc NO_DEFAULT_PATH|g' \

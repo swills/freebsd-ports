@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/p5-Redis-Fast/Makefile 472865 2018-06-20 11:19:12Z pi $
+# $FreeBSD: head/databases/p5-Redis-Fast/Makefile 477235 2018-08-15 15:23:57Z swills $
 
 PORTNAME=	Redis-Fast
-PORTVERSION=	0.21
+PORTVERSION=	0.22
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

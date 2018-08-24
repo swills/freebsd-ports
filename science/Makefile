@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 476726 2018-08-09 08:13:10Z yuri $
+# $FreeBSD: head/science/Makefile 477927 2018-08-23 22:00:33Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -43,6 +43,7 @@
     SUBDIR += chemps2
     SUBDIR += chemtool
     SUBDIR += chemtool-devel
+    SUBDIR += chrono
     SUBDIR += clhep
     SUBDIR += clipper
     SUBDIR += colt
@@ -129,6 +130,7 @@
     SUBDIR += netcdf-cxx
     SUBDIR += netcdf-fortran
     SUBDIR += nifticlib
+    SUBDIR += nwchem
     SUBDIR += openbabel
     SUBDIR += openkim
     SUBDIR += openstructure
@@ -216,8 +218,10 @@
     SUBDIR += pycdf
     SUBDIR += pynn
     SUBDIR += qcl
+    SUBDIR += qmcpack
     SUBDIR += qtresistors
     SUBDIR += quantum-espresso
+    SUBDIR += qwalk
     SUBDIR += rdkit
     SUBDIR += rmf
     SUBDIR += rubygem-ai4r

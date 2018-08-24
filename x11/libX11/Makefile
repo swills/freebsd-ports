@@ -1,9 +1,8 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libX11/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/libX11/Makefile 477818 2018-08-22 19:47:21Z zeising $
 
 PORTNAME=	libX11
-PORTVERSION=	1.6.5
-PORTREVISION=	1
+PORTVERSION=	1.6.6
 PORTEPOCH=	1
 CATEGORIES=	x11
 

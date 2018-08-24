@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-ddt/Makefile 474900 2018-07-18 20:38:41Z cpm $
+# $FreeBSD: head/devel/py-ddt/Makefile 477724 2018-08-21 17:03:40Z cpm $
 
 PORTNAME=	ddt
 PORTVERSION=	1.2.0
@@ -8,7 +8,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	cpm@FreeBSD.org
-COMMENT=	Data-Driven Tests
+COMMENT=	Data-Driven Tests for Python Unittest
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md

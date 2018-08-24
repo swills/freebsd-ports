@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-pafy/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-pafy/Makefile 477254 2018-08-15 19:23:27Z nivit $
 
 PORTNAME=	pafy
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.4
 PORTREVISION=	0
 CATEGORIES=	www
 MASTER_SITES=	CHEESESHOP

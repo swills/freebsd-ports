@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/reactphysics3d/Makefile 476335 2018-08-04 07:16:21Z yuri $
+# $FreeBSD: head/graphics/reactphysics3d/Makefile 477368 2018-08-16 19:03:31Z yuri $
 
 PORTNAME=	reactphysics3d
 DISTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -13,8 +14,14 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USES=		cmake:outsource
 USE_GITHUB=	yes
 GH_ACCOUNT=	DanielChappuis
-GH_TAGNAME=	f86038aa31875daacc2d950be7b999c0d6a19986  # branch 'fix37'
+GH_TAGNAME=	f3be5384997da7ddeccc526036985a80de660bae  # branch 'fix37'
 USE_LDCONFIG=	yes
 CMAKE_ON=	BUILD_SHARED_LIBS
+
+do-test:
+	@cd ${BUILD_WRKSRC} && \
+		${SETENV} ${CONFIGURE_ENV} ${CMAKE_BIN} ${CMAKE_ARGS} -DRP3D_COMPILE_TESTS=ON ${CMAKE_SOURCE_PATH} && \
+		${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_ARGS} ${ALL_TARGET} && \
+		./test/tests
 
 .include <bsd.port.mk>

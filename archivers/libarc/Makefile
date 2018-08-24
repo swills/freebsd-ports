@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/archivers/libarc/Makefile 417348 2016-06-23 07:09:57Z bapt $
+# $FreeBSD: head/archivers/libarc/Makefile 477488 2018-08-18 09:08:06Z amdmi3 $
 
 PORTNAME=	libarc
 PORTVERSION=	2.0.2
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.onicos.com/staff/iz/release/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tiny C decompression library for several popular compression formats
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 SOLIB=		libarc.so
 SOVERSION=	1

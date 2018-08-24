@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 477922 2018-08-23 18:49:16Z adridg $
 
 PORTNAME=	plasma-framework
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

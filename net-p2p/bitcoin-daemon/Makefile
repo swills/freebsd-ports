@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 477870 2018-08-23 13:31:05Z swills $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-daemon
 
 COMMENT=	Virtual Peer-to-Peer Currency (Daemon)
@@ -27,11 +27,11 @@ CONFIGURE_ARGS=	--with-daemon \
 
 PLIST_FILES=	bin/bitcoind \
 		man/man1/bitcoind.1.gz \
-		%%ETCDIR%%.conf.sample
+		"@sample %%ETCDIR%%.conf.sample"
 
 USE_RC_SUBR=	bitcoind
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/contrib/debian/examples/bitcoin.conf ${STAGEDIR}${PREFIX}/etc/bitcoin.conf.sample
+	${INSTALL_DATA} ${FILESDIR}/bitcoin.conf ${STAGEDIR}${PREFIX}/etc/bitcoin.conf.sample
 
 .include "${MASTERDIR}/Makefile"

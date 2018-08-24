@@ -1,9 +1,9 @@
 # Created by: Eric Anholt
-# $FreeBSD: head/devel/git/Makefile 474443 2018-07-11 13:03:59Z garga $
+# $FreeBSD: head/devel/git/Makefile 477627 2018-08-20 05:07:46Z koobs $
 
 PORTNAME=	git
 DISTVERSION=	2.18.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	KERNEL_ORG/software/scm/git
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -87,7 +87,8 @@ PCRE2_LIB_DEPENDS=	libpcre2-8.so:devel/pcre2
 PCRE2_CONFIGURE_WITH=	libpcre
 
 SEND_EMAIL_IMPLIES=	PERL
-SEND_EMAIL_RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL
+SEND_EMAIL_RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL \
+			p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL
 
 ICONV_USES=		iconv
 ICONV_MAKE_ARGS_OFF=	NO_ICONV=1

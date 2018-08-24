@@ -1,10 +1,10 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/cad/electric-ng/Makefile 427012 2016-11-24 14:05:35Z danilo $
+# $FreeBSD: head/cad/electric-ng/Makefile 477277 2018-08-15 19:34:23Z sunpoet $
 
 PORTNAME=	electric
 PORTVERSION=	9.07
 CATEGORIES=	cad java
-MASTER_SITES=	GNU/${PORTNAME:S/-ng//} \
+MASTER_SITES=	GNU \
 		http://www.staticfreesoft.com/:1 \
 		http://www.staticfreesoft.com/jmanual/:2
 PKGNAMESUFFIX=	-ng

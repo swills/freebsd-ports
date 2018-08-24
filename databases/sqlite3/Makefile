@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/sqlite3/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/databases/sqlite3/Makefile 477940 2018-08-24 07:31:59Z jbeich $
 
 PORTNAME=	sqlite3
 DISTVERSION=	3.24.0
@@ -135,7 +135,7 @@ OPTIONS_DEFAULT=	FTS4 URI METADATA SECURE_DELETE UNLOCK_NOTIFY THREADS \
 			FTS3_TOKEN FTS5
 # SECURE_DELETE, UNLOCK_NOTIFY, DBSTAT (since 41.0) used by www/firefox et al.
 # RTREE used by graphics/mapnik, databases/spatialite
-# FTS3_TOKEN used by audio/clementine-player
+# FTS3_TOKEN used by audio/clementine-player, mail/thunderbird, www/seamonkey
 # FTS5 used by sysutils/tracker
 
 PLIST_FILES=	bin/sqlite3 include/sqlite3.h include/sqlite3ext.h \

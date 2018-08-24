@@ -1,8 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/sysutils/dd_rescue/Makefile 474702 2018-07-15 16:45:41Z nobutaka $
+# $FreeBSD: head/sysutils/dd_rescue/Makefile 477631 2018-08-20 06:48:55Z se $
 
 PORTNAME=	dd_rescue
 PORTVERSION=	1.99.8
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.garloff.de/kurt/linux/ddrescue/ \
 		http://fossies.org/unix/privat/
