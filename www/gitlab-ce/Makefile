@@ -183,6 +183,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-email_reply_trimmer>=0.1:mail/rubygem-email_reply_trimmer \
 	rubygem-html2text>=0:textproc/rubygem-html2text \
 	rubygem-ruby-prof>=0.17.0:devel/rubygem-ruby-prof \
+	rubygem-rbtrace>=0.4:devel/rubygem-rbtrace \
 	rubygem-oauth2>=1.4.0:net/rubygem-oauth2 \
 	rubygem-health_check26>=2.6.0:devel/rubygem-health_check26 \
 	rubygem-vmstat>=2.3.0:sysutils/rubygem-vmstat \
