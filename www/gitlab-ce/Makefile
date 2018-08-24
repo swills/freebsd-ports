@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab-ce/Makefile 477216 2018-08-15 07:59:53Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.1.4
+PORTVERSION=	11.2.1
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -80,7 +80,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-graphiql-rails>=1.4.10:devel/rubygem-graphiql-rails \
 	rubygem-hashie-forbidden_attributes>=0:devel/rubygem-hashie-forbidden_attributes \
 	rubygem-kaminari-rails4>=1.0:www/rubygem-kaminari-rails4 \
-	rubygem-hamlit26>=2.6.1:www/rubygem-hamlit26 \
+	rubygem-hamlit>=2.8.8:www/rubygem-hamlit \
 	rubygem-carrierwave>=1.1:www/rubygem-carrierwave \
 	rubygem-mini_magick>=0:graphics/rubygem-mini_magick \
 	rubygem-dropzonejs-rails07>=0.7.1:www/rubygem-dropzonejs-rails07 \
