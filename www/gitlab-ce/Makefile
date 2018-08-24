@@ -136,6 +136,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-gitlab-flowdock-git-hook>=1.0.1:www/rubygem-gitlab-flowdock-git-hook \
 	rubygem-gemnasium-gitlab-service>=0.2:devel/rubygem-gemnasium-gitlab-service \
 	rubygem-slack-notifier1>=1.5.1:devel/rubygem-slack-notifier1 \
+	rubygem-hangouts-chat>=0.0.5:net/rubygem-hangouts-chat \
 	rubygem-asana>=0.6.0:www/rubygem-asana \
 	rubygem-ruby-fogbugz021>=0.2.1:devel/rubygem-ruby-fogbugz021 \
 	rubygem-kubeclient>=3.1.0:www/rubygem-kubeclient \
@@ -213,7 +214,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	63daf37ad326bb4c4e74ebee8b8e2be7878b298f
+GL_COMMIT=	2d6c1c61191f3b6a390a04ff90ed3514d9eda30b
 
 USERS=	git
 GROUPS=	git
