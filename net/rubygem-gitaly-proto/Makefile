@@ -2,7 +2,7 @@
 # $FreeBSD: head/net/rubygem-gitaly-proto/Makefile 475372 2018-07-26 13:46:10Z mfechner $
 
 PORTNAME=	gitaly-proto
-PORTVERSION=	0.105.0
+PORTVERSION=	0.113.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,8 @@ LICENSE=	MIT
 RUN_DEPENDS=	rubygem-google-protobuf>=3.1:devel/rubygem-google-protobuf \
 		rubygem-grpc>=1.10:net/rubygem-grpc
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+NO_ARCH=	yes
 
 .include <bsd.port.mk>
