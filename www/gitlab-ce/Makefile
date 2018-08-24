@@ -140,7 +140,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-asana>=0.6.0:www/rubygem-asana \
 	rubygem-ruby-fogbugz021>=0.2.1:devel/rubygem-ruby-fogbugz021 \
 	rubygem-kubeclient>=3.1.0:www/rubygem-kubeclient \
-	rubygem-sanitize>=4.6.5:textproc/rubygem-sanitize \
+	rubygem-sanitize>=4.6:textproc/rubygem-sanitize \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \
 	rubygem-loofah>=2.2:textproc/rubygem-loofah \
 	rubygem-licensee8>=8.9:devel/rubygem-licensee8 \
