@@ -9,15 +9,6 @@
  gem 'pg', '~> 0.18.2', group: :postgres
  
  gem 'rugged', '~> 0.27'
-@@ -86,7 +86,7 @@ gem 'gitlab-gollum-lib', '~> 4.2', requi
- gem 'gitlab-gollum-rugged_adapter', '~> 0.4.4', require: false
- 
- # Language detection
- gem 'github-linguist', '~> 5.3.3', require: 'linguist'
- gem 'github-linguist', '~> 6.1', require: 'linguist'
- 
- # API
- gem 'grape', '~> 1.0'
 @@ -123,7 +123,7 @@ gem 'fog-rackspace', '~> 0.1.1'
  gem 'fog-aliyun', '~> 0.2.0'
  
