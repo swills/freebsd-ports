@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 MY_DEPENDS=	git>=2.17:devel/git \
 		rubygem-i18n>=0:devel/rubygem-i18n \
 		rubygem-rugged>=0.27.4:devel/rubygem-rugged \
-		rubygem-github-linguist>=6.1:textproc/rubygem-github-linguist \
+		rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
 		rubygem-gitlab-markup>=1.6.4:textproc/rubygem-gitlab-markup \
 		rubygem-gitaly-proto>=0.107.0:net/rubygem-gitaly-proto \
