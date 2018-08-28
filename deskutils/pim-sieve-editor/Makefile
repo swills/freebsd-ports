@@ -1,8 +1,7 @@
-# $FreeBSD: head/deskutils/pim-sieve-editor/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/pim-sieve-editor/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 
 PORTNAME=	pim-sieve-editor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

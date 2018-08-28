@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/libsbml/Makefile 477936 2018-08-24 06:24:30Z linimon $
+# $FreeBSD: head/biology/libsbml/Makefile 477994 2018-08-25 03:31:43Z tobik $
 
 PORTNAME=	libsbml
 PORTVERSION=	5.17.0
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USES=		cmake:outsource iconv:build
+USE_CXXSTD=	c++98
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 
@@ -51,12 +52,4 @@ post-install-EXAMPLES-on:
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . \
 		${STAGEDIR}${EXAMPLESDIR} '! -name *Makefile*'
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD
-.if ( ${OSVERSION} >= 1101513 && ${OSVERSION} < 1200000 ) || ${OSVERSION} >= 1200060
-BROKEN=		fails to compile with clang6 or later
-.endif
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

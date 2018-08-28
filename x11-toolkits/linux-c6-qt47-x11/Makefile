@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/x11-toolkits/linux-c6-qt47-x11/Makefile 441768 2017-05-26 10:26:39Z tijl $
+# $FreeBSD: head/x11-toolkits/linux-c6-qt47-x11/Makefile 478283 2018-08-28 05:58:12Z antoine $
 
 PORTNAME=	qt47-x11
 PORTVERSION=	4.7.2
@@ -11,6 +11,8 @@ DIST_SUBDIR=	atrpms
 
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Cross-platform application and UI framework (Linux CentOS ${LINUX_DIST_VER})
+
+BROKEN=		uses non existing qt47
 
 DATADIR=	${PREFIX}/usr/share/qt47
 DESCR=		${.CURDIR}/../../devel/qt4/pkg-descr

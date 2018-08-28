@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/devel/kyra/Makefile 456901 2017-12-21 10:23:19Z linimon $
+# $FreeBSD: head/devel/kyra/Makefile 478247 2018-08-27 19:50:40Z tobik $
 
 PORTNAME=	kyra
 PORTVERSION=	2.1.3
@@ -22,9 +22,13 @@ BROKEN_armv7=		invalid output constraint =A in assembler
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		gmake jpeg zip
+USES=		compiler gmake jpeg zip
 USE_GL=		gl
 USE_SDL=	image sdl
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
+
 MAKEFILE=	MakefileKyra
 MAKE_ENV=	MAKE_KYRA=RELEASE KYRA_OPENGL=YES
 MAKE_ARGS=	CC="${CC}" CXX="${CXX}" LD="${CXX}" \

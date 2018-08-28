@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 477963 2018-08-24 14:28:39Z jsm $
+# $FreeBSD: head/x11/Makefile 478215 2018-08-27 16:00:10Z jsm $
 #
 
     COMMENT = Ports to support the X window system
@@ -216,6 +216,7 @@
     SUBDIR += lxhotkey
     SUBDIR += lxmenu-data
     SUBDIR += lxpanel
+    SUBDIR += lxqt-about
     SUBDIR += lxqt-globalkeys
     SUBDIR += lxqt-globalkeys-l10n
     SUBDIR += lxqt-l10n

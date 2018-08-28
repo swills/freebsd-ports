@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/trezord/Makefile 475309 2018-07-25 12:42:43Z ale $
+# $FreeBSD: head/security/trezord/Makefile 478292 2018-08-28 08:39:37Z ale $
 
 PORTNAME=	trezord
-PORTVERSION=	2.0.20
+PORTVERSION=	2.0.21
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -23,4 +23,10 @@ PATCH_STRIP=	-p1
 
 PLIST_FILES=	bin/${GH_PROJECT}
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1102000
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-usb_webusb.go
+.endif
+
+.include <bsd.port.post.mk>

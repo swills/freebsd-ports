@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/kdav/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/kdav/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 
 PORTNAME=	kdav
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -10,7 +9,7 @@ COMMENT=	A DAV protocol implementation with KJobs
 
 USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons ecm i18n kio service
-USE_QT=		core gui network xml xmlpatterns \
+USE_QT=		core dbus gui network xml xmlpatterns \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

@@ -1,8 +1,8 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/devel/linux-c6-nspr/Makefile 441768 2017-05-26 10:26:39Z tijl $
+# $FreeBSD: head/devel/linux-c6-nspr/Makefile 478165 2018-08-26 19:53:54Z pi $
 
 PORTNAME=	nspr
-PORTVERSION=	4.13.1
+PORTVERSION=	4.19.0
 CATEGORIES=	devel linux
 
 MAINTAINER=	emulation@FreeBSD.org

@@ -1,14 +1,15 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/security/please/Makefile 421735 2016-09-10 19:57:27Z gblach $
+# $FreeBSD: head/security/please/Makefile 478128 2018-08-26 14:47:34Z gblach $
 
 PORTNAME=	please
-PORTVERSION=	2.6
+PORTVERSION=	2.7
 CATEGORIES=	security
 
 MAINTAINER=	gblach@FreeBSD.org
 COMMENT=	Execute a command as root
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	MagikBSD

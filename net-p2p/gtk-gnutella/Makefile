@@ -1,8 +1,9 @@
 # Created by: rbt@zort.on.ca
-# $FreeBSD: head/net-p2p/gtk-gnutella/Makefile 458950 2018-01-14 01:59:26Z woodsb02 $
+# $FreeBSD: head/net-p2p/gtk-gnutella/Makefile 478105 2018-08-26 08:07:29Z delphij $
 
 PORTNAME=	gtk-gnutella
 PORTVERSION=	1.1.13
+PORTREVISION=	1
 CATEGORIES=	net-p2p ipv6
 MASTER_SITES=	SF
 

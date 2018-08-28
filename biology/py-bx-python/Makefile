@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/biology/py-bx-python/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/biology/py-bx-python/Makefile 478115 2018-08-26 09:50:41Z yuri $
 
 PORTNAME=	bx-python
-DISTVERSION=	0.8.1
-PORTREVISION=	1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.8.2
 CATEGORIES=	biology python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

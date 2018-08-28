@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/ponyc/Makefile 476989 2018-08-12 13:16:00Z riggs $
+# $FreeBSD: head/lang/ponyc/Makefile 478280 2018-08-28 05:05:17Z riggs $
 
 PORTNAME=	ponyc
 DISTVERSION=	0.24.4
+PORTREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	greg@unrelenting.technology
@@ -31,6 +32,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ponylang
 
 PORTDOCS=	*.md
+
+.include <bsd.port.options.mk>
 
 MAKE_ENV=	prefix=${PREFIX} verbose=true arch=${PONYARCH}
 

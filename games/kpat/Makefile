@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kpat/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/games/kpat/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 
 PORTNAME=	kpat
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,9 @@ CATEGORIES=	games kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-USES=		cmake:outsource gettext kde:5 qt:5 shared-mime-info tar:xz
+LIB_DEPENDS=	libfreecell-solver.so:games/freecell-solver
+
+USES=		cmake:outsource gettext kde:5 pkgconfig qt:5 shared-mime-info tar:xz
 USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		crash dbusaddons ecm guiaddons i18n iconthemes itemviews \
 		kdeclarative kio libkdegames newstuff notifyconfig service \

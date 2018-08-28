@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph/Makefile 477944 2018-08-24 07:45:53Z jhale $
+# $FreeBSD: head/net/ceph/Makefile 478216 2018-08-27 16:09:21Z jhale $
 
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
@@ -99,6 +99,9 @@ USE_LDCONFIG=	yes
 
 USERS=		ceph
 GROUPS=		ceph
+
+post-patch:
+	${REINPLACE_CMD} 's|sphinx-build|sphinx-build-${PYTHON_VER}|g' ${WRKSRC}/CMakeLists.txt
 
 pre-configure:
 	${LN} -s ${CONFIGURE_WRKSRC} ${WRKSRC}/build

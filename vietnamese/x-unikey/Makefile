@@ -1,5 +1,5 @@
 # Created by: Alexander Yerenkow <yerenkow@gmail.com>
-# $FreeBSD: head/vietnamese/x-unikey/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/vietnamese/x-unikey/Makefile 478043 2018-08-25 14:22:46Z tobik $
 
 PORTNAME=	x-unikey
 PORTVERSION=	1.0.4
@@ -9,9 +9,12 @@ MASTER_SITES=	SF/unikey/${PORTNAME}/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Vietnamese input method for X
 
-USES=		tar:bzip2
+USES=		compiler tar:bzip2
 USE_XORG=	x11
 GNU_CONFIGURE=	yes
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/unikey bin/ukxim
 

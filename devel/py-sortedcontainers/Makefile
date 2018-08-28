@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-sortedcontainers/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-sortedcontainers/Makefile 477969 2018-08-24 17:49:12Z antoine $
 
 PORTNAME=	sortedcontainers
-PORTVERSION=	1.5.10
+PORTVERSION=	2.0.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,13 +13,8 @@ COMMENT=	Python Sorted Container Types: SortedList, SortedDict, and SortedSet
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
-
 NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist
-
-do-test:
-	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} nosetests-${PYTHON_VER})
 
 .include <bsd.port.mk>

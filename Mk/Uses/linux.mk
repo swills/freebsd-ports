@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/linux.mk 476605 2018-08-07 16:40:53Z dbn $
+# $FreeBSD: head/Mk/Uses/linux.mk 478165 2018-08-26 19:53:54Z pi $
 #
 # Ports Linux compatibility framework
 #
@@ -37,7 +37,7 @@ linux_ARGS=		${LINUX_DEFAULT:S/_64//}
 .endif
 
 .if ${linux_ARGS} == c6
-LINUX_DIST_VER?=	6.9
+LINUX_DIST_VER?=	6.10
 .if ${ARCH} == amd64 && ${LINUX_DEFAULT} != c6
 LINUX_ARCH=		x86_64
 .elif ${ARCH} == amd64 || ${ARCH} == i386

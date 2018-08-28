@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/xeus-cling/Makefile 477606 2018-08-19 23:15:03Z yuri $
+# $FreeBSD: head/devel/xeus-cling/Makefile 477967 2018-08-24 17:22:01Z jhale $
 
 PORTNAME=	xeus-cling
 DISTVERSION=	0.4.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -13,10 +13,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	cppzmq>0:net/cppzmq \
 		cxxopts>0:devel/cxxopts \
-		czmq>0:net/czmq \
-		llvm-config:lang/cling
+		llvm-config:lang/cling \
+		nlohmann-json>0:devel/nlohmann-json \
+		xtl-quant-stack>0:devel/xtl-quant-stack
 LIB_DEPENDS=	libclingInterpreter.so:lang/cling \
-		libcryptopp.so:security/cryptopp \
 		libpugixml.so:textproc/pugixml \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libxeus.so:devel/xeus \

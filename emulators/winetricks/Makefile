@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/winetricks/Makefile 477611 2018-08-20 00:30:50Z lifanov $
+# $FreeBSD: head/emulators/winetricks/Makefile 478174 2018-08-27 03:08:20Z lifanov $
 
 PORTNAME=	winetricks
-PORTVERSION=	20180603
+PORTVERSION=	20180815
 CATEGORIES=	emulators
 
 MAINTAINER=	lifanov@FreeBSD.org

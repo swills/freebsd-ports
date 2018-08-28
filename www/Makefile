@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 477785 2018-08-22 13:20:44Z 0mp $
+# $FreeBSD: head/www/Makefile 478050 2018-08-25 14:50:53Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1628,7 +1628,6 @@
     SUBDIR += py-django-voting
     SUBDIR += py-django-widget-tweaks
     SUBDIR += py-django111
-    SUBDIR += py-django18
     SUBDIR += py-django20
     SUBDIR += py-django21
     SUBDIR += py-django_compressor

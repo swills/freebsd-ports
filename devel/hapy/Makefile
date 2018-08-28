@@ -1,5 +1,5 @@
 # Created by: rousskov
-# $FreeBSD: head/devel/hapy/Makefile 366482 2014-08-29 09:33:54Z tijl $
+# $FreeBSD: head/devel/hapy/Makefile 478229 2018-08-27 17:07:26Z tobik $
 
 PORTNAME=	hapy
 PORTVERSION=	0.0.8
@@ -14,6 +14,7 @@ COMMENT=	Runtime parser generator
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USES=		libtool
+USE_CXXSTD=	c++98
 
 post-build:
 	@${ECHO_MSG} "Consider running 'make check' before 'make install'"

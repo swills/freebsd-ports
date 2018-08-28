@@ -1,8 +1,8 @@
-# $FreeBSD: head/dns/samba-nsupdate/Makefile 457256 2017-12-25 20:26:58Z tijl $
+# $FreeBSD: head/dns/samba-nsupdate/Makefile 478110 2018-08-26 08:50:57Z delphij $
 
 PORTNAME=		nsupdate
 PORTVERSION=		9.8.6
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		dns net ipv6
 MASTER_SITES=		ISC/bind9/${ISCVERSION}
 PKGNAMEPREFIX=		samba-

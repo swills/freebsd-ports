@@ -1,5 +1,5 @@
 # Created by: Matthew Dillon <dillon@backplane.com>
-# $FreeBSD: head/java/jikes/Makefile 473337 2018-06-25 20:39:31Z linimon $
+# $FreeBSD: head/java/jikes/Makefile 478118 2018-08-26 10:10:25Z tobik $
 
 PORTNAME=	jikes
 PORTVERSION=	1.22
@@ -10,13 +10,11 @@ MASTER_SITES=	SF/${PORTNAME}/Jikes/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Java source to byte-code compiler made available by IBM
 
-BROKEN_FreeBSD_12=	fails to configure: Could not find standard set_new_handler function
-
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	ac_cv_search_iconv=${ICONV_LIB} \
 		ac_cv_search_libiconv_open=no
-USES=		iconv gmake tar:bzip2
+USES=		autoreconf iconv gmake tar:bzip2
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib

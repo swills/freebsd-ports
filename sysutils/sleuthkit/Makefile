@@ -1,8 +1,8 @@
 # Created by: Pieter Danhieux <opr@bsdaemon.be>
-# $FreeBSD: head/sysutils/sleuthkit/Makefile 473334 2018-06-25 19:34:16Z antoine $
+# $FreeBSD: head/sysutils/sleuthkit/Makefile 478014 2018-08-25 08:27:04Z antoine $
 
 PORTNAME=	sleuthkit
-PORTVERSION=	4.6.1
+PORTVERSION=	4.6.2
 CATEGORIES=	sysutils security
 MASTER_SITES=	https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-${PORTVERSION}/
 

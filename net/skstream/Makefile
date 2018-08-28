@@ -1,5 +1,5 @@
 # Created by: Janni
-# $FreeBSD: head/net/skstream/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/skstream/Makefile 478079 2018-08-25 18:59:29Z oliver $
 
 PORTNAME=	skstream
 PORTVERSION=	0.3.9
@@ -13,6 +13,9 @@ COMMENT=	iostream based C++ socket library
 USES=		libtool pathfix pkgconfig compiler:c++11-lib gmake
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 OPTIONS_DEFINE=	DOCS
 

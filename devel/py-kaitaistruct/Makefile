@@ -1,8 +1,8 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/devel/py-kaitaistruct/Makefile 438329 2017-04-12 02:33:07Z shaun $
+# $FreeBSD: head/devel/py-kaitaistruct/Makefile 478168 2018-08-26 20:37:59Z shaun $
 
 PORTNAME=	kaitaistruct
-PORTVERSION=	0.7
+PORTVERSION=	0.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

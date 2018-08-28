@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/textproc/htdig/Makefile 421655 2016-09-10 03:34:02Z marino $
+# $FreeBSD: head/textproc/htdig/Makefile 478121 2018-08-26 11:19:21Z tobik $
 
 PORTNAME=	htdig
 PORTVERSION=	3.2.0.b6
@@ -25,6 +25,7 @@ CONFIGURE_ARGS=	--with-config-dir=${PREFIX}/etc/htdig \
 		--with-image-url-prefix=/icons/htdig \
 		--with-ssl
 USES=		alias libtool ssl
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 LDFLAGS+=	-L${OPENSSLLIB}

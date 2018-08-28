@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/p5-Math-ProvablePrime/Makefile 473539 2018-06-29 10:10:35Z mat $
+# $FreeBSD: head/math/p5-Math-ProvablePrime/Makefile 478135 2018-08-26 18:26:43Z pi $
 
 PORTNAME=	Math-ProvablePrime
-PORTVERSION=	0.043
+PORTVERSION=	0.045
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

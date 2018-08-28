@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 477787 2018-08-22 13:42:36Z 0mp $
+# $FreeBSD: head/security/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 #
 
     COMMENT = Security tools
@@ -315,6 +315,7 @@
     SUBDIR += knock
     SUBDIR += knocker
     SUBDIR += kpcli
+    SUBDIR += kpkpass
     SUBDIR += kqoauth
     SUBDIR += kr
     SUBDIR += krb5

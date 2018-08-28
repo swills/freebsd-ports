@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/vegastrike/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/vegastrike/Makefile 478099 2018-08-26 05:11:38Z tobik $
 
 PORTNAME=	vegastrike
 PORTVERSION=	0.5.1.r1
@@ -22,6 +22,7 @@ LIB_DEPENDS=	${PY_BOOST} \
 
 USES=		dos2unix gmake localbase:ldflags openal:al pkgconfig python:2.7 \
 		tar:bzip2
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl
 USE_GL=		glut

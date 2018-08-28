@@ -1,9 +1,9 @@
-# $FreeBSD: head/math/blaze/Makefile 477586 2018-08-19 18:00:36Z yuri $
+# $FreeBSD: head/math/blaze/Makefile 478252 2018-08-27 20:38:50Z yuri $
 
 PORTNAME=	blaze
-DISTVERSION=	3.3-430
+DISTVERSION=	3.4
 CATEGORIES=	math
-MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
+MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/downloads/
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	C++ math library for dense and sparse arithmetic
@@ -23,8 +23,5 @@ NO_ARCH=	yes
 
 BB_ACCOUNT=	${PORTNAME}-lib
 BB_PROJECT=	${PORTNAME}
-BB_COMMIT=	ea158fdf70ef
-
-WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
 
 .include <bsd.port.mk>

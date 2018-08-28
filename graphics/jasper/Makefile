@@ -1,11 +1,11 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/graphics/jasper/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/jasper/Makefile 478143 2018-08-26 18:41:27Z sunpoet $
 
 PORTNAME=	jasper
 PORTVERSION=	1.900.1
 PORTREVISION=	17
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.ece.uvic.ca/~mdadams/jasper/software/ \
+MASTER_SITES=	https://www.ece.uvic.ca/~frodo/jasper/software/ \
 		ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/
 
 MAINTAINER=	sunpoet@FreeBSD.org

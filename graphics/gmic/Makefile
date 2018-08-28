@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/gmic/Makefile 477509 2018-08-18 15:29:18Z yuri $
+# $FreeBSD: head/graphics/gmic/Makefile 478116 2018-08-26 09:51:16Z yuri $
 
 PORTNAME=	gmic
-DISTVERSION=	2.3.4
+DISTVERSION=	2.3.5
 CATEGORIES=	graphics
 MASTER_SITES=	https://gmic.eu/files/source/
 DISTNAME=	${PORTNAME}_${DISTVERSION}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/kid3-kde4/Makefile 476239 2018-08-02 15:22:58Z jhale $
+# $FreeBSD: head/audio/kid3-kde4/Makefile 478075 2018-08-25 16:28:18Z jhale $
 
 PORTNAME=	kid3
-PORTVERSION=	3.6.1
+PORTVERSION=	3.6.2
 PORTREVISION?=	0
 CATEGORIES=	audio kde
 MASTER_SITES=	SF
@@ -66,10 +66,8 @@ OPTIONS_SLAVE+=	PHONON
 .elif ${SLAVE} == kf5
 # KF5 only
 USES+=		desktop-file-utils kde:5
-USE_KDE+=	auth bookmarks codecs completion config configwidgets \
-		coreaddons doctools_build ecm_build itemviews jobwidgets \
-		kio service solid widgetsaddons xmlgui
-USE_QT+=	concurrent
+USE_KDE+=	auth codecs config configwidgets coreaddons \
+		widgetsaddons xmlgui doctools_build ecm_build
 PLIST_SUB+=	KDE4="@comment " KF5=""
 .endif
 
@@ -128,9 +126,6 @@ PLIST_SUB+=	OGGFLAC=""
 .else
 PLIST_SUB+=	OGGFLAC="@comment "
 .endif
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|aiff|aif|g' ${WRKSRC}/src/test/test_cli_functions.py
 
 pre-test:
 	@${CP} ${WRKSRC}/src/test/*.py ${TEST_WRKSRC}

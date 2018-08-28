@@ -1,8 +1,8 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/misc/mime-support/Makefile 452535 2017-10-20 15:19:00Z ak $
+# $FreeBSD: head/misc/mime-support/Makefile 478081 2018-08-25 19:08:57Z oliver $
 
 PORTNAME=	mime-support
-PORTVERSION=	3.60
+PORTVERSION=	3.61
 CATEGORIES=	misc
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION:C/([0-9]*\.[0-9]*)\.(.*)/\1-\2/}
@@ -16,7 +16,7 @@ USES=		cpe shebangfix
 
 CPE_VENDOR=	debian
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 NO_BUILD=	yes
 PLIST_FILES=	bin/run-mailcap etc/mime.types \

@@ -1,9 +1,9 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/devel/linux-c6-dbus-libs/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/devel/linux-c6-dbus-libs/Makefile 478165 2018-08-26 19:53:54Z pi $
 
 PORTNAME=	dbus
 PORTVERSION=	1.2.24
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel linux
 PKGNAMESUFFIX=	-libs
 LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
@@ -13,7 +13,7 @@ COMMENT=	Libraries for accessing D-BUS (Linux CentOS ${LINUX_DIST_VER})
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
-RPMVERSION=	8.el6_6
+RPMVERSION=	9.el6
 USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes

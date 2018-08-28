@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/audio/clementine-player/Makefile 477967 2018-08-24 17:22:01Z jhale $
 
 PORTNAME=	clementine
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.3.1-441
 DISTVERSIONSUFFIX=	-gc01b7bc
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-player
 
@@ -80,16 +80,7 @@ CFLAGS+=	-Wno-inconsistent-missing-override \
 
 CMAKE_ARGS+=	-DCMAKE_LIBRARY_PATH:PATH="${LOCALBASE}/lib:${PREFIX}/lib" \
 		-DENABLE_DBUS=ON \
-		-DENABLE_SPOTIFY_BLOB=OFF \
-		-DCRYPTOPP_LIBS=${LOCALBASE}/lib/libcryptopp.so \
-		-DCRYPTOPP_INCLUDEDIR=${LOCALBASE}/include/cryptopp \
-		-DCRYPTOPP_LIBDIR=${LOCALBASE}/lib \
-		-DCRYPTOPP_LDFLAGS=-lcryptopp \
-		-DCRYPTOPP_LIBRARIES=cryptopp \
-		-DCRYPTOPP_LIBRARY_DIRS=${LOCALBASE}/lib \
-		-DCRYPTOPP_cryptopp_INCLUDEDIR=${LOCALBASE}/include/cryptopp \
-		-DCRYPTOPP_cryptopp_LIBDIR=${LOCALBASE}/lib \
-		-DCRYPTOPP_FOUND=1
+		-DENABLE_SPOTIFY_BLOB=OFF
 
 OPTIONS_DEFINE=		AMAZON \
 			AUDIOCD \

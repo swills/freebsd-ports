@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/editors/pdfedit/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/editors/pdfedit/Makefile 478001 2018-08-25 05:00:37Z tobik $
 
 PORTNAME=	pdfedit
 PORTVERSION=	0.4.5
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libt1.so:devel/t1lib
 
 USES=		gmake perl5 tar:bzip2
+USE_CXXSTD=	c++98
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-root-dir=${STAGEDIR} \
