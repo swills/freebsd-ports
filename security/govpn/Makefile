@@ -1,8 +1,7 @@
-# Created by: Sergey Matveev <stargrave@stargrave.org>
 # $FreeBSD$
 
 PORTNAME=	govpn
-PORTVERSION=	7.3
+PORTVERSION=	7.5
 PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.govpn.info/download/
