@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/efl/Makefile 474206 2018-07-08 22:30:30Z yuri $
+# $FreeBSD: head/devel/efl/Makefile 478151 2018-08-26 18:42:08Z sunpoet $
 
 PORTNAME=	efl
 DISTVERSION=	1.20.7
@@ -21,6 +21,9 @@ LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libdbus-1.so:devel/dbus \
 		libsndfile.so:audio/libsndfile \
 		libunwind.so:devel/libunwind
+
+# lib/libeio.so.1
+CONFLICTS_INSTALL=	libeio
 
 GNU_CONFIGURE=	yes
 USES=		autoreconf compiler:c++14-lang gettext-tools gmake iconv jpeg \

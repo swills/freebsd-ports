@@ -1,5 +1,5 @@
 # Created by: George Sorsby <george@crackpipe.net>
-# $FreeBSD: head/news/nget/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/news/nget/Makefile 478053 2018-08-25 15:57:39Z tobik $
 
 PORTNAME=	nget
 PORTVERSION=	0.27.1
@@ -15,6 +15,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		compiler:c++11-lang gmake
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 
 # Skip check if the C++ compiler supports exceptions.  We know both

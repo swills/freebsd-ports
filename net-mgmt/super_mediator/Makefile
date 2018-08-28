@@ -1,8 +1,8 @@
 # Created by: Inacio <nacho319+freebsdZilla@gmail.com>
-# $FreeBSD: head/net-mgmt/super_mediator/Makefile 440141 2017-05-05 03:20:15Z miwi $
+# $FreeBSD: head/net-mgmt/super_mediator/Makefile 478224 2018-08-27 16:43:24Z swills $
 
 PORTNAME=	super_mediator
-PORTVERSION=	1.5.2
+PORTVERSION=	1.6.0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://tools.netsa.cert.org/releases/
 
@@ -19,7 +19,6 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USES=		libtool pathfix perl5 pkgconfig ssl
 USE_GNOME=	glib20
-USE_LDCONFIG=	yes
 
 PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
 
@@ -34,7 +33,7 @@ SKIPSET_LIB_DEPENDS=	libsilk.so:security/silktools
 SPREAD_LIB_DEPENDS=	libspread.so:net/spread4
 MYSQL_LIB_DEPENDS=	libmysqlclient.so:${_MYSQL_CLIENT}
 
-MYSQL_USE=	mysql=yes
+MYSQL_USE=	mysql
 
 MYSQL_CONFIGURE_WITH=	mysql
 SKIPSET_CONFIGURE_WITH=	skipset

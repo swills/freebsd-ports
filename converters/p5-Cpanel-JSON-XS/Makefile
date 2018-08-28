@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Cpanel-JSON-XS/Makefile 477677 2018-08-20 22:14:17Z sunpoet $
+# $FreeBSD: head/converters/p5-Cpanel-JSON-XS/Makefile 478031 2018-08-25 13:49:05Z sunpoet $
 
 PORTNAME=	Cpanel-JSON-XS
-PORTVERSION=	4.05
+PORTVERSION=	4.06
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RURBAN

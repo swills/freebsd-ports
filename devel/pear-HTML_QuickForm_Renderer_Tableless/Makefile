@@ -1,8 +1,8 @@
 # Created by: Chris St Denis <chris@smartt.com>
-# $FreeBSD: head/devel/pear-HTML_QuickForm_Renderer_Tableless/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/pear-HTML_QuickForm_Renderer_Tableless/Makefile 478235 2018-08-27 17:23:38Z joneum $
 
 PORTNAME=	HTML_QuickForm_Renderer_Tableless
-PORTVERSION=	0.6.1
+PORTVERSION=	0.6.2
 CATEGORIES=	devel www pear
 
 MAINTAINER=	chris@smartt.com

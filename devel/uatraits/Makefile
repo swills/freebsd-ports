@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/uatraits/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/uatraits/Makefile 478250 2018-08-27 20:20:33Z tobik $
 
 PORTNAME=	uatraits
 PORTVERSION=	20130430
@@ -16,7 +16,7 @@ LIB_DEPENDS=	${PY_BOOST} \
 		libpcre.so:devel/pcre \
 		libxml2.so:textproc/libxml2
 
-USES=		autoreconf libtool pkgconfig python:2.7 ssl
+USES=		autoreconf compiler libtool pkgconfig python:2.7 ssl
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
@@ -27,6 +27,8 @@ CONFIGURE_ARGS=	--with-boost-prefix=${LOCALBASE} \
 CONFIGURE_ENV=	crypto_CFLAGS="-I${OPENSSLINC}" \
 		crypto_LIBS="-L${OPENSSLLIB} -lcrypto"
 CPPFLAGS+=	-I${LOCALBASE}/include
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/\[boost_python]/[${PY_BOOST_LIB}]/' \

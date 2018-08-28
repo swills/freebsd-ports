@@ -1,10 +1,10 @@
-# $FreeBSD: head/net-p2p/ktorrent/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/ktorrent/Makefile 478100 2018-08-26 06:39:08Z fluffy $
 
 # TODO: once plasma5 ports are in, re-add dependency on workspace.
 
 PORTNAME=	ktorrent
 DISTVERSION=	5.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION:R}/
 

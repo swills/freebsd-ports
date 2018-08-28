@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/p5-Crypt-Perl/Makefile 475649 2018-07-29 11:54:29Z pi $
+# $FreeBSD: head/security/p5-Crypt-Perl/Makefile 478137 2018-08-26 18:31:51Z pi $
 
 PORTNAME=	Crypt-Perl
-PORTVERSION=	0.27
+PORTVERSION=	0.29
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

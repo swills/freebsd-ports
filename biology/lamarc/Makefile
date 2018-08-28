@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/biology/lamarc/Makefile 420392 2016-08-18 09:31:58Z amdmi3 $
+# $FreeBSD: head/biology/lamarc/Makefile 477992 2018-08-25 03:13:37Z tobik $
 
 PORTNAME=	lamarc
 PORTVERSION=	2.1.8
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Package of programs for computing population parameters
 
 LICENSE=	APACHE20
+
+USE_CXXSTD=	c++98
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S,${DISTVERSIONSUFFIX},,}
 

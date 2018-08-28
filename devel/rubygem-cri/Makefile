@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-cri/Makefile 477533 2018-08-18 20:42:38Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cri/Makefile 478067 2018-08-25 16:01:20Z sunpoet $
 
 PORTNAME=	cri
-PORTVERSION=	2.13.0
+PORTVERSION=	2.14.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

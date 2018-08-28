@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libosmo-sccp/Makefile 456052 2017-12-11 17:12:21Z swills $
+# $FreeBSD: head/devel/libosmo-sccp/Makefile 478234 2018-08-27 17:16:36Z swills $
 
 PORTNAME=	libosmo-sccp
-PORTVERSION=	0.8.1
+PORTVERSION=	0.10.0
 CATEGORIES=	devel
 MASTER_SITES=	http://git.osmocom.org/libosmo-sccp/snapshot/ \
 		http://chaosophia.net/downloads/osmocom/${PORTNAME}/

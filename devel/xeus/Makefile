@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/xeus/Makefile 477605 2018-08-19 23:14:11Z yuri $
+# $FreeBSD: head/devel/xeus/Makefile 477967 2018-08-24 17:22:01Z jhale $
 
 PORTNAME=	xeus
 DISTVERSION=	0.13.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,10 +15,8 @@ BUILD_DEPENDS=	cppzmq>0:net/cppzmq \
 		nlohmann-json>0:devel/nlohmann-json \
 		xtl-quant-stack>0:devel/xtl-quant-stack
 LIB_DEPENDS=	libcryptopp.so:security/cryptopp \
-		libuuid.so:misc/e2fsprogs-libuuid
-RUN_DEPENDS=	cppzmq>0:net/cppzmq \
-		nlohmann-json>0:devel/nlohmann-json \
-		xtl-quant-stack>0:devel/xtl-quant-stack
+		libuuid.so:misc/e2fsprogs-libuuid \
+		libzmq.so:net/libzmq4
 
 USES=		cmake:outsource compiler:c++14-lang localbase:ldflags pkgconfig
 USE_GITHUB=	yes

@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/py-pyphen/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/textproc/py-pyphen/Makefile 478178 2018-08-27 06:14:21Z yuri $
 
 PORTNAME=	pyphen
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.5
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

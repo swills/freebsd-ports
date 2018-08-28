@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/py-seqdiag/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/graphics/py-seqdiag/Makefile 478182 2018-08-27 08:26:18Z tota $
 
 PORTNAME=	seqdiag
-PORTVERSION=	0.9.5
+PORTVERSION=	0.9.6
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/heimdal/Makefile 459739 2018-01-23 10:35:25Z hrs $
+# $FreeBSD: head/security/heimdal/Makefile 478108 2018-08-26 08:36:30Z delphij $
 
 PORTNAME=	heimdal
 PORTVERSION=	7.5.0
+PORTREVISION=	1
 CATEGORIES=	security ipv6
 MASTER_SITES=	https://github.com/heimdal/heimdal/releases/download/${DISTNAME}/
 

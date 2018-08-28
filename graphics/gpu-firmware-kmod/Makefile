@@ -1,8 +1,8 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 477822 2018-08-22 20:32:03Z zeising $
+# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 478094 2018-08-26 04:00:03Z jmd $
 
 PORTNAME=	gpu-firmware-kmod
-PORTVERSION=	g20180822
+PORTVERSION=	g20180825
 CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -22,7 +22,7 @@ USES=		kmod uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-firmware
-GH_TAGNAME=	9d1be40
+GH_TAGNAME=	da173cc
 
 .include <bsd.port.pre.mk>
 

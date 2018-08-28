@@ -1,9 +1,9 @@
 # Created by: Sangwoo Shim <sangwoos@gmail.com>
-# $FreeBSD: head/biology/protomol/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/biology/protomol/Makefile 477997 2018-08-25 03:47:25Z tobik $
 
 PORTNAME=	protomol
 PORTVERSION=	2.0.3
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	biology
 MASTER_SITES=	SF/${PORTNAME}/ProtoMol/${PORTVERSION}
 DISTFILES=	${DISTNAME}-tar.gz
@@ -17,7 +17,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
-USES=		shebangfix
+USES=		jpeg shebangfix
+USE_CXXSTD=	c++98
 SHEBANG_FILES=	examples/butane_4/procDihedralFile.awk \
 		examples/butane_4/cleanOutput.bash \
 		examples/butane_4/runButaneResults.sh \
@@ -26,7 +27,6 @@ SHEBANG_LANG=	awk
 awk_OLD_CMD=	/usr/bin/gawk
 awk_CMD=	/usr/bin/awk # base awk works fine in this case
 GNU_CONFIGURE=	yes
-USES=		jpeg
 USE_XORG=	xmu xt sm ice xext x11 xi
 
 # Hack to cure a misbehavior of the configure script

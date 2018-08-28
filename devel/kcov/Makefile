@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/kcov/Makefile 471041 2018-05-28 13:02:54Z asomers $
+# $FreeBSD: head/devel/kcov/Makefile 477975 2018-08-24 18:29:28Z asomers $
 
 PORTNAME=	kcov
 DISTVERSIONPREFIX=	v
-DISTVERSION=	35-57
-DISTVERSIONSUFFIX=	-g69dfa9c
+DISTVERSION=	36
 CATEGORIES=	devel
 
 MAINTAINER=	asomers@FreeBSD.org
@@ -30,7 +29,6 @@ CMAKE_ARGS=	-DKCOV_INSTALL_MANDIR=${PREFIX}/man -DPORTVERSION=${PORTVERSION}
 
 SHEBANG_GLOB=	*.py
 
-# Use a GitHub tag until version 36 gets released, whenever that might be
 USE_GITHUB=	yes
 GH_ACCOUNT=	SimonKagstrom
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/horde-turba/Makefile 474162 2018-07-08 08:00:00Z joneum $
+# $FreeBSD: head/mail/horde-turba/Makefile 478233 2018-08-27 17:16:31Z joneum $
 
 PORTNAME=	turba
-PORTVERSION=	4.2.22
+PORTVERSION=	4.2.23
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 CATEGORIES=	mail www pear
 

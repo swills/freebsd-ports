@@ -1,8 +1,7 @@
-# $FreeBSD: head/deskutils/kalarm/Makefile 476229 2018-08-02 10:22:44Z tcberner $
+# $FreeBSD: head/deskutils/kalarm/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 
 PORTNAME=	kalarm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

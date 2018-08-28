@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/randlm/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/textproc/randlm/Makefile 478232 2018-08-27 17:13:43Z tobik $
 
 PORTNAME=	randlm
 PORTVERSION=	0.2.5
@@ -19,6 +19,7 @@ BROKEN_armv6=		fails to compile: invalid output constraint =a in assembler
 BROKEN_powerpc64=	fails to compile: 'itr' does not name a type
 
 GNU_CONFIGURE=	yes
+USE_CXXSTD=	gnu++98
 USE_PERL5=	run
 USE_LDCONFIG=	yes
 USES=		autoreconf libtool compiler:c++11-lang

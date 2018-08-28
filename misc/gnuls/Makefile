@@ -1,9 +1,8 @@
 # Created by: bmc@WillsCreek.COM
-# $FreeBSD: head/misc/gnuls/Makefile 464772 2018-03-17 09:14:09Z antoine $
+# $FreeBSD: head/misc/gnuls/Makefile 478242 2018-08-27 17:43:52Z joneum $
 
 PORTNAME=	gnuls
-PORTVERSION=	8.22
-PORTREVISION=	1
+PORTVERSION=	8.30
 CATEGORIES=	misc
 MASTER_SITES=	GNU/coreutils
 DISTNAME=	coreutils-${PORTVERSION}

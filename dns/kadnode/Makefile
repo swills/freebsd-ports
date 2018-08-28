@@ -1,10 +1,10 @@
 # Created by: Moritz Warning <moritzwarning@web.de>
-# $FreeBSD: head/dns/kadnode/Makefile 476834 2018-08-10 14:23:15Z tijl $
+# $FreeBSD: head/dns/kadnode/Makefile 478093 2018-08-26 02:41:13Z tobik $
 
 PORTNAME=	kadnode
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.2.3
-PORTREVISION=	1
+DISTVERSION=	2.2.5
+PORTREVISION=	0
 CATEGORIES=	dns
 
 MAINTAINER=	moritzwarning@web.de
@@ -66,7 +66,7 @@ do-install:
 		${STAGEDIR}${MANPREFIX}/man/man1/kadnode.1
 
 do-install-NSS-on:
-	${INSTALL_LIB} ${WRKSRC}/build/libnss_kadnode.so.2 \
+	${INSTALL_LIB} ${WRKSRC}/build/libnss_kadnode-2.0.so \
 		${STAGEDIR}${PREFIX}/lib/nss_kadnode.so.1
 	${RLN} ${STAGEDIR}${PREFIX}/lib/nss_kadnode.so.1 \
 		${STAGEDIR}${PREFIX}/lib/nss_kadnode.so

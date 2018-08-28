@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/audio/zinf/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/audio/zinf/Makefile 477990 2018-08-25 03:03:09Z tobik $
 
 PORTNAME=	zinf
 PORTVERSION=	2.2.5
@@ -14,6 +14,7 @@ LIB_DEPENDS=	libid3.so:audio/id3lib \
 		libgdbm.so:databases/gdbm
 
 USES=		alias gettext gmake libtool ncurses pathfix perl5 pkgconfig
+USE_CXXSTD=	gnu++98
 USE_GNOME=	gtk20
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-ipv6 \

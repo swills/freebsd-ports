@@ -1,9 +1,8 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime21/Makefile 475871 2018-07-30 09:14:40Z dumbbell $
+# $FreeBSD: head/lang/erlang-runtime21/Makefile 478005 2018-08-25 08:01:16Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	21.0.4
-PORTREVISION=	1
+PORTVERSION=	21.0.6
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg			\
 		http://erlang.stacken.kth.se/download/:erlangorg		\
@@ -20,7 +19,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 PATCH_SITES=	http://olgeni.olgeni.com/~olgeni/distfiles/ \
 		LOCAL/olgeni
 PATCHFILES=	patch-otp-21.0.1 patch-otp-21.0.2 patch-otp-21.0.3 \
-		patch-otp-21.0.4
+		patch-otp-21.0.4 patch-otp-21.0.5 patch-otp-21.0.6
 
 MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson

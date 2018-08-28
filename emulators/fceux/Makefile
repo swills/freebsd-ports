@@ -1,5 +1,5 @@
 # Created by: HIYAMA Takeshi <gibbon@cocoa.freemail.ne.jp>
-# $FreeBSD: head/emulators/fceux/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/emulators/fceux/Makefile 478002 2018-08-25 05:12:35Z tobik $
 
 PORTNAME=	fceux
 PORTVERSION=	2.2.3
@@ -21,6 +21,9 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USES=		compiler:c++0x desktop-file-utils dos2unix localbase:ldflags pkgconfig scons
 USE_SDL=	sdl
 USE_XORG=	x11
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 OPTIONS_DEFINE=		CREATE_AVI DEBUG DOCS FRAMESKIP LOGO LUA OPENGL
 OPTIONS_SINGLE=		GUI

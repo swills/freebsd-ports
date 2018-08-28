@@ -1,5 +1,4 @@
-# Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/mail/mbox2mdir/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/mail/mbox2mdir/Makefile 478177 2018-08-27 05:59:25Z acm $
 
 PORTNAME=	mbox2mdir
 PORTVERSION=	1.4

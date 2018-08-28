@@ -1,10 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/archivers/gzrecover/Makefile 376387 2015-01-06 09:36:02Z ehaupt $
+# $FreeBSD: head/archivers/gzrecover/Makefile 478290 2018-08-28 07:55:29Z ehaupt $
 
 PORTNAME=	gzrecover
 PORTVERSION=	0.8
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.urbanophile.com/arenn/hacking/gzrt/ \
+MASTER_SITES=	https://www.urbanophile.com/arenn/hacking/gzrt/ \
 		LOCAL/ehaupt
 DISTNAME=	gzrt-${PORTVERSION}
 

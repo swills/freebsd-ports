@@ -1,5 +1,5 @@
 # Created by: Donald Burr <dburr@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/v/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/v/Makefile 478040 2018-08-25 13:54:30Z tobik $
 
 PORTNAME=	v
 PORTVERSION=	1.90
@@ -12,9 +12,12 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ GUI development framework for X11 and Microsoft Windows
 
-USES=		dos2unix gmake
+USES=		compiler dos2unix gmake
 USE_XORG=	x11 xt xmu xaw
 MAKE_ENV=	INSTALLDIR=${PREFIX} HOMEV=${WRKSRC}
+# Build ignores CXXFLAGS
+CFLAGS+=	${CFLAGS_${CHOSEN_COMPILER_TYPE}}
+CFLAGS_clang=	-Wno-c++11-narrowing
 
 WRKSRC=		${WRKDIR}/home/vgui
 

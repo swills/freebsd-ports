@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-IO-AIO/Makefile 462432 2018-02-20 20:26:25Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-AIO/Makefile 478149 2018-08-26 18:41:58Z sunpoet $
 
 PORTNAME=	IO-AIO
-PORTVERSION=	4.40
+PORTVERSION=	4.60
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

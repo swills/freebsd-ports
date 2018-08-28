@@ -1,8 +1,8 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 478129 2018-08-26 15:04:34Z riggs $
 
 PORTNAME=	openorienteering-mapper
-PORTVERSION=	0.8.1
+PORTVERSION=	0.8.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics geography
 

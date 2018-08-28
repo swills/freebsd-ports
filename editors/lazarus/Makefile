@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/lazarus/Makefile 471474 2018-06-03 08:10:55Z acm $
+# $FreeBSD: head/editors/lazarus/Makefile 478173 2018-08-27 02:36:05Z acm $
 
 PORTNAME=	lazarus
 PORTVERSION=	1.8.4
@@ -31,6 +31,7 @@ MAKE_ENV=	OPT=${OPT}
 PLIST=		${WRKDIR}/pkg-plist
 WRKSRC?=	${WRKDIR}/${PORTNAME}
 DATADIR?=	${PREFIX}/share/${PORTNAME}-${PORTVERSION}
+LLD_UNSAFE=	yes
 
 OPTIONS_DEFINE=		GDB
 GDB_DESC=		Install a newest version  of gdb

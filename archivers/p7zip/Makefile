@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/archivers/p7zip/Makefile 461379 2018-02-10 10:59:11Z rakuco $
+# $FreeBSD: head/archivers/p7zip/Makefile 478120 2018-08-26 11:11:02Z mmokhi $
 
 PORTNAME=	p7zip
 PORTVERSION=	16.02
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	archivers
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${DISTVERSION}_src_all
@@ -25,8 +25,14 @@ CFLAGS_armv6=	-fPIC
 CFLAGS_armv7=	-fPIC
 CFLAGS_aarch64=	-fPIC
 CFLAGS_amd64=	-fPIC
+CFLAGS_i386=	-fPIC
 CFLAGS_powerpc=	-fPIC
 CFLAGS_sparc64=	-fPIC
+
+# Fix the build for i386 when WITH_LLD_IS_LD is set
+# https://bugs.freebsd.org/230210
+LDFLAGS+=	${LDFLAGS_${ARCH}}
+LDFLAGS_i386=	-Wl,-z,notext
 
 OPTIONS_DEFINE=	DOCS
 

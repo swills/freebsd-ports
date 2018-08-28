@@ -1,19 +1,19 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/net/freerdp/Makefile 478243 2018-08-27 18:12:35Z swills $
 
 PORTNAME=	freerdp
-DISTVERSION=	2.0.0-rc1
-PORTREVISION=	8
+DISTVERSION=	2.0.0-rc3
 CATEGORIES=	net comms ipv6
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	78df32c77f28.patch:-p1 ed571e74a594.patch:-p1
 
 MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Free implementation of Remote Desktop Protocol
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	libepoll-shim.so:devel/libepoll-shim
 
 USES=		alias cmake:outsource compiler:c++11-lib cpe gettext localbase pathfix pkgconfig ssl
 USE_LDCONFIG=	yes
@@ -75,8 +75,7 @@ SSE_CMAKE_BOOL=		WITH_SSE2
 
 WAYLAND_DESC=		Build FreeRDP Wayland client
 WAYLAND_BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat
-WAYLAND_LIB_DEPENDS=	libepoll-shim.so:devel/libepoll-shim \
-			libwayland-client.so:graphics/wayland \
+WAYLAND_LIB_DEPENDS=	libwayland-client.so:graphics/wayland \
 			libwayland-cursor.so:graphics/wayland \
 			libxkbcommon.so:x11/libxkbcommon
 WAYLAND_CMAKE_BOOL=	WITH_WAYLAND

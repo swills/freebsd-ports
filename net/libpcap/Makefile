@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/libpcap/Makefile 475196 2018-07-23 18:26:49Z garga $
+# $FreeBSD: head/net/libpcap/Makefile 478125 2018-08-26 13:10:35Z zi $
 
 PORTNAME=	libpcap
 PORTVERSION=	1.9.0
@@ -29,6 +29,8 @@ DAG_DESC=	Support for Endace DAG hardware
 
 IPV6_CONFIGURE_ENABLE=	ipv6
 DAG_CONFIGURE_WITH=	dag
+DAG_CFLAGS=		-I${LOCALBASE}/include
 DAG_LDFLAGS=		-L${LOCALBASE}/lib
+DAG_EXTRA_PATCHES=	${FILESDIR}/dag-patch-pcap-dag.c
 
 .include <bsd.port.mk>

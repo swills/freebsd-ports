@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdesdk-thumbnailers/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kdesdk-thumbnailers/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 
 PORTNAME=	kdesdk-thumbnailers
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -8,8 +8,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE thumbnail generator for gettext po files
 
 USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
-USE_KDE=	config ecm i18n kio
-USE_QT=		core gui widgets \
+USE_KDE=	completion config coreaddons ecm i18n jobwidgets \
+		kio service widgetsaddons
+USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

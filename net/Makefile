@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 477718 2018-08-21 12:09:54Z rene $
+# $FreeBSD: head/net/Makefile 478302 2018-08-28 11:59:46Z bapt $
 #
 
     COMMENT = Networking tools
@@ -335,6 +335,7 @@
     SUBDIR += kio-upnp-ms
     SUBDIR += kippo
     SUBDIR += kissd
+    SUBDIR += kitinerary
     SUBDIR += kldap
     SUBDIR += kmailtransport
     SUBDIR += kmbox
@@ -518,6 +519,8 @@
     SUBDIR += nettest
     SUBDIR += netwib
     SUBDIR += neubot
+    SUBDIR += nfs-ganesha
+    SUBDIR += nfs-ganesha-kmod
     SUBDIR += nfsshell
     SUBDIR += ng_mikrotik_eoip
     SUBDIR += ngrep

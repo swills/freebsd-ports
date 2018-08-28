@@ -1,8 +1,8 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/sysutils/bacula9-docs/Makefile 449352 2017-09-06 18:28:20Z dvl $
+# $FreeBSD: head/sysutils/bacula9-docs/Makefile 478126 2018-08-26 14:07:17Z dvl $
 
 PORTNAME=	bacula
-PORTVERSION=	9.0.4
+PORTVERSION=	9.2.1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	9-docs

@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/Mk/bsd.port.mk 478304 2018-08-28 12:19:06Z mat $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1416,11 +1416,13 @@ USES+=	apache:${USE_APACHE:C/2([0-9])/2.\1/g}
 .include "${PORTSDIR}/Mk/bsd.gecko.mk"
 .endif
 
-.if defined(USE_GNOME) || defined(INSTALLS_ICONS)
+.if (defined(USE_GNOME) || defined(INSTALLS_ICONS)) && empty(USES:Mgnome)
+DEV_WARNING+=	"Using USE_GNOME alone is deprecated, please add USES=gnome."
 USES+=	gnome
 .endif
 
-.if defined(USE_MATE)
+.if defined(USE_MATE) && empty(USES:Mmate)
+DEV_WARNING+=	"Using USE_MATE alone is deprecated, please add USES=mate."
 USES+=	mate
 .endif
 

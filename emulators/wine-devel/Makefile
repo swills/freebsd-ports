@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 477550 2018-08-19 00:36:10Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 478025 2018-08-25 12:28:15Z gerald $
 
 PORTNAME=	wine
 DISTVERSION=	3.14

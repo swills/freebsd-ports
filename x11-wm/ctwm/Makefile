@@ -1,8 +1,8 @@
 # Created by: torstenb
-# $FreeBSD: head/x11-wm/ctwm/Makefile 445226 2017-07-07 09:36:28Z bhughes $
+# $FreeBSD: head/x11-wm/ctwm/Makefile 478167 2018-08-26 20:33:13Z fernape $
 
 PORTNAME=	ctwm
-PORTVERSION=	4.0.1
+DISTVERSION=	4.0.2
 PORTEPOCH=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://www.ctwm.org/dist/ \

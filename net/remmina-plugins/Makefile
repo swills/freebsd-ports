@@ -1,9 +1,8 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/remmina-plugins/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
+# $FreeBSD: head/net/remmina-plugins/Makefile 478294 2018-08-28 09:36:54Z woodsb02 $
 
 PORTNAME?=	remmina-plugins
-DISTVERSIONPREFIX=v
-DISTVERSION=	1.2.0-rcgit.27
+DISTVERSION=	1.2.31.4
 CATEGORIES=	net gnome
 
 MAINTAINER?=	woodsb02@FreeBSD.org
@@ -11,12 +10,15 @@ COMMENT?=	Remmina plugin system
 
 LICENSE?=	GPLv2+
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	FreeRDP
-GH_PROJECT=	Remmina
-
 .if defined(PKGNAMESUFFIX)
+
+USE_GITLAB=	yes
+GL_ACCOUNT=	Remmina
+GL_PROJECT=	Remmina
+GL_COMMIT=	65d552c9becc957cae124ab5c26562cf22c052b9
+
 .include "${.CURDIR}/../remmina-plugins/bsd.plugin.mk"
+
 .else
 
 USES=	metaport

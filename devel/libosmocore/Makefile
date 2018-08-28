@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libosmocore/Makefile 476021 2018-07-31 20:55:18Z swills $
+# $FreeBSD: head/devel/libosmocore/Makefile 478236 2018-08-27 17:25:16Z swills $
 
 PORTNAME=	libosmocore
-PORTVERSION=	0.12.0
+PORTVERSION=	0.12.1
 CATEGORIES=	devel
 MASTER_SITES=	http://git.osmocom.org/libosmocore/snapshot/ \
 		http://chaosophia.net/downloads/osmocom/${PORTNAME}/

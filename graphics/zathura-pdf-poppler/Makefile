@@ -1,5 +1,5 @@
 # Created by: Mike Krutov <neko@takino.org>
-# $FreeBSD: head/graphics/zathura-pdf-poppler/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/zathura-pdf-poppler/Makefile 478019 2018-08-25 09:38:13Z amdmi3 $
 
 PORTNAME=	zathura-pdf-poppler
 PORTVERSION=	0.2.9
@@ -18,8 +18,8 @@ LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
 BUILD_DEPENDS=	zathura:graphics/zathura
 RUN_DEPENDS=	zathura:graphics/zathura
 
-USE_GNOME=	glib20 gtk30
 USES=		meson ninja compiler:c11 desktop-file-utils pkgconfig tar:xz
+USE_GNOME=	glib20 gtk30
 
 CONFLICTS=	zathura-pdf-mupdf-[0-9]*
 
@@ -28,6 +28,6 @@ PLIST_FILES=	lib/zathura/libpdf-poppler.so \
 		share/applications/org.pwmt.zathura-pdf-poppler.desktop
 
 pre-configure:
-	${REINPLACE_CMD} "s:join_paths(datadir, 'metainfo'):join_paths(datadir, 'appdata'):" ${WRKSRC}/meson.build
+	@${REINPLACE_CMD} "s:join_paths(datadir, 'metainfo'):join_paths(datadir, 'appdata'):" ${WRKSRC}/meson.build
 
 .include <bsd.port.mk>
