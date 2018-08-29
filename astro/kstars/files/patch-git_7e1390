@@ -1,0 +1,29 @@
+From 4791903ced3d13f9f6bb487096776f49cd4c4344 Mon Sep 17 00:00:00 2001
+From: "Tobias C. Berner" <tcberner@FreeBSD.org>
+Date: Tue, 14 Aug 2018 07:52:36 +0200
+Subject: [PATCH] Don't add "-z nodump" for lld -- it does not support it.
+
+---
+ CMakeLists.txt | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git CMakeLists.txt CMakeLists.txt
+index 180deacde..1ba68dd62 100644
+--- CMakeLists.txt
++++ CMakeLists.txt
+@@ -283,7 +283,11 @@ IF (UNIX OR APPLE OR ANDROID)
+     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${SEC_COMP_FLAGS}")
+     SET(SEC_LINK_FLAGS "")
+     IF (NOT APPLE)
+-        SET(SEC_LINK_FLAGS "${SEC_LINK_FLAGS} -Wl,-z,nodump -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now")
++        SET(SEC_LINK_FLAGS "${SEC_LINK_FLAGS} -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now")
++        execute_process(COMMAND ${CMAKE_LINKER} "-v" OUTPUT_VARIABLE LD_VERSION)
++        IF (NOT LD_VERSION MATCHES "^LLD")
++           SET(SEC_LINK_FLAGS "${SEC_LINK_FLAGS} -Wl,-z,nodump")
++        ENDIF()
+     ENDIF ()
+     IF (NOT ANDROID AND NOT APPLE)
+         SET(SEC_LINK_FLAGS "${SEC_LINK_FLAGS} -pie")
+-- 
+2.18.0
+
