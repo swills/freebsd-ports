@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gnumail
-PORTVERSION=	1.2.3
+PORTVERSION=	1.3.0
 PORTREVISION=	1
 CATEGORIES=	mail gnustep
 MASTER_SITES=	SAVANNAH/gnustep-nonfsf/
@@ -13,11 +13,12 @@ COMMENT=	GNUstep mail client
 
 LICENSE=	GPLv2
 
-USES=		cpe gnustep
+USES=		cpe gnustep  
 CPE_VENDOR=	gnu
-USE_GNUSTEP=	back build
+USE_GNUSTEP=	back build gui base
 LIB_DEPENDS=	libPantomime.so:mail/pantomime \
 		libAddresses.so:mail/addresses
+
 USE_LDCONFIG=	${GNUSTEP_SYSTEM_LIBRARIES}
 
 .include <bsd.port.mk>
