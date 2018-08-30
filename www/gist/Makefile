@@ -1,8 +1,8 @@
 # Created by: Ricky E. <codeblock@eighthbit.net>
-# $FreeBSD: head/www/gist/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/gist/Makefile 477753 2018-08-21 19:02:03Z joneum $
 
 PORTNAME=	gist
-PORTVERSION=	4.5.0
+PORTVERSION=	5.0.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www net
 

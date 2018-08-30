@@ -1,9 +1,9 @@
 # Created by: Bruce M. Simpson
-# $FreeBSD: head/devel/boost_build/Makefile 469120 2018-05-05 15:09:22Z danfe $
+# $FreeBSD: head/devel/boost_build/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	boost_build
 PORTVERSION=	2.0.m12
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	SF/boost/boost-build/2.0-m12
 DISTNAME=	${PORTNAME:S/_/-/g}-${PORTVERSION:S/.m/-m/}

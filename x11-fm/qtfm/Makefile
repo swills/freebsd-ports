@@ -1,18 +1,19 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fm/qtfm/Makefile 475095 2018-07-22 08:28:30Z antoine $
+# $FreeBSD: head/x11-fm/qtfm/Makefile 477170 2018-08-14 16:40:46Z swills $
 
 PORTNAME=	qtfm
 DISTVERSION=	5.5
+PORTREEVISION=	1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.qtfm.org/
 
-MAINTAINER=	lichray@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small, lightweight file manager based on pure Qt
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN=		fails to build
+LIB_DEPENDS=	libinotify.so:devel/libinotify
 
 USES=		dos2unix qmake qt:4
 DOS2UNIX_REGEX=	.*\.(h|cpp)

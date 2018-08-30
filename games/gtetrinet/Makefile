@@ -1,9 +1,9 @@
 # Created by: Dan Papasian <bugg@bugg.strangled.net>
-# $FreeBSD: head/games/gtetrinet/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/games/gtetrinet/Makefile 477420 2018-08-17 12:27:06Z tobik $
 
 PORTNAME=	gtetrinet
 PORTVERSION=	0.7.11
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games gnome ipv6
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2
@@ -15,13 +15,16 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		pathfix gettext gmake pkgconfig tar:bzip2
-USE_GNOME=	esound gnomeprefix intltool libgnomeui
+USE_GNOME=	gnomeprefix intltool libgnomeui
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS=	--bindir=${PREFIX}/bin --enable-ipv6
 
 GCONF_SCHEMAS=	gtetrinet.schemas
+
+post-patch:
+	@${REINPLACE_CMD} 's/pkg-config --exists esound/false/' ${WRKSRC}/configure
 
 pre-configure:
 	@${FIND} ${WRKSRC} -name "Makefile.in" | ${XARGS} ${REINPLACE_CMD} -e \

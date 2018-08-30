@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/devel/gpsim/Makefile 445063 2017-07-05 10:23:34Z amdmi3 $
+# $FreeBSD: head/devel/gpsim/Makefile 478164 2018-08-26 19:25:48Z tobik $
 
 PORTNAME=	gpsim
 PORTVERSION=	0.29.0
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libpopt.so:devel/popt
 RUN_DEPENDS=	gpasm:devel/gputils
 
 USES=		gmake libtool localbase:ldflags pathfix pkgconfig readline
+USE_CXXSTD=	gnu++98
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

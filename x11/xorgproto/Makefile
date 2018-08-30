@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/xorgproto/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/xorgproto/Makefile 476508 2018-08-06 12:20:39Z mat $
 
 PORTNAME=	xorgproto
 PORTVERSION=	2018.4
@@ -13,5 +13,8 @@ CONFIGURE_ARGS= --without-fop \
 		--without-xmlto \
 		--without-xsltproc \
 		--enable-legacy
+
+pre-patch:
+	@${MKDIR} ${WRKSRC}/man
 
 .include <bsd.port.mk>

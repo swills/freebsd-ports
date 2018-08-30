@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-google/Makefile 475799 2018-07-29 19:22:21Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-google/Makefile 477909 2018-08-23 17:58:30Z sunpoet $
 
 PORTNAME=	fog-google
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

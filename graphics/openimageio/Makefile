@@ -1,10 +1,10 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openimageio/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/openimageio/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	openimageio
 PORTVERSION=	1.7.17
 DISTVERSIONPREFIX=	Release-
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES?=	graphics multimedia
 
 MAINTAINER?=	FreeBSD@Shaneware.biz

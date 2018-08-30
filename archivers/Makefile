@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 476237 2018-08-02 15:07:58Z mm $
+# $FreeBSD: head/archivers/Makefile 477641 2018-08-20 09:53:59Z mm $
 #
 
     COMMENT = Archivers
@@ -97,7 +97,7 @@
     SUBDIR += nwreckdum
     SUBDIR += ocaml-bz2
     SUBDIR += ocaml-zip
-    SUBDIR += opkg
+    SUBDIR += opkg-openwrt
     SUBDIR += p5-Archive-Any
     SUBDIR += p5-Archive-Any-Lite
     SUBDIR += p5-Archive-Any-Plugin-Rar

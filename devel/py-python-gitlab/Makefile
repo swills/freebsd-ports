@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-python-gitlab/Makefile 473748 2018-07-02 15:10:17Z swills $
+# $FreeBSD: head/devel/py-python-gitlab/Makefile 478227 2018-08-27 16:59:09Z swills $
 
 PORTNAME=	python-gitlab
-PORTVERSION=	1.5.1
+PORTVERSION=	1.6.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

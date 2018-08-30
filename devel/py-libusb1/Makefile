@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-libusb1/Makefile 433284 2017-02-04 07:41:56Z jbeich $
+# $FreeBSD: head/devel/py-libusb1/Makefile 477257 2018-08-15 19:29:34Z jbeich $
 
 PORTNAME=	libusb1
-PORTVERSION?=	1.6.4
+PORTVERSION?=	1.6.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/xapian-bindings12/Makefile 455440 2017-12-03 20:35:02Z sunpoet $
+# $FreeBSD: head/databases/xapian-bindings12/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	xapian-bindings
 PORTVERSION=	1.2.25
@@ -14,6 +14,8 @@ COMMENT=	Bindings allowing Xapian to be used from various programming languages
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+IGNORE_WITH_PHP=	70 71 72
 
 LIB_DEPENDS=	libxapian.so:databases/xapian-core12
 

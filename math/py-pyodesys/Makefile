@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-pyodesys/Makefile 475470 2018-07-27 22:06:05Z yuri $
+# $FreeBSD: head/math/py-pyodesys/Makefile 476715 2018-08-09 00:31:44Z yuri $
 
 PORTNAME=	pyodesys
-DISTVERSION=	0.11.15
+DISTVERSION=	0.11.16
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,6 +13,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYNUMPY} \
+		${PYTHON_PKGNAMEPREFIX}appdirs>0:devel/py-appdirs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=2.0.2:math/py-matplotlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sym>=0.3.0:math/py-sym@${PY_FLAVOR} \

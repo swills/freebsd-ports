@@ -1,12 +1,12 @@
 # Created by: John Hixson <john@pcbsd.org>
-# $FreeBSD: head/audio/pithos/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/pithos/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	pithos
 PORTVERSION=	1.0.0
 PORTREVISION=	2
 CATEGORIES=	audio
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Pandora client for the GNOME desktop
 
 LICENSE=	GPLv3

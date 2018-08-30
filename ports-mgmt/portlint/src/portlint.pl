@@ -14,7 +14,7 @@
 # bsd.port.mk.  There are significant differences in those so non-FreeBSD code
 # was removed.
 #
-# $FreeBSD: head/ports-mgmt/portlint/src/portlint.pl 476188 2018-08-01 18:13:39Z adamw $
+# $FreeBSD: head/ports-mgmt/portlint/src/portlint.pl 476593 2018-08-07 12:49:20Z marcus $
 # $MCom: portlint/portlint.pl,v 1.467 2018/06/24 16:07:04 jclarke Exp $
 #
 
@@ -1714,7 +1714,6 @@ sub checkmakefile {
 		next if ($i eq 'DOCS' or $i eq 'NLS' or $i eq 'EXAMPLES' or $i eq 'IPV6' or $i eq 'X11' or $i eq 'DEBUG');
 		if (!grep(/^$i$/, (@mopt, @popt))) {
 			if ($whole !~ /\n${i}_($m)(_\w+)?(.)?=[^\n]+/) {
-     +\n/) {
 				if (!$slaveport) {
 					&perror("WARN", $file, -1, "$i is listed in ".
 						"OPTIONS_DEFINE, but no PORT_OPTIONS:M$i appears.");

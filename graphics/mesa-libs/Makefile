@@ -1,9 +1,8 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-libs/Makefile 476189 2018-08-01 18:30:52Z zeising $
+# $FreeBSD: head/graphics/mesa-libs/Makefile 476319 2018-08-03 19:24:44Z zeising $
 
 PORTNAME=	mesa-libs
 PORTVERSION=	${MESAVERSION}
-PORTREVISION=	2
 CATEGORIES=	graphics
 
 COMMENT=	OpenGL libraries that support GLX and EGL clients

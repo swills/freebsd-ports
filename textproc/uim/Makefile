@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim/Makefile 474102 2018-07-07 15:56:01Z nobutaka $
+# $FreeBSD: head/textproc/uim/Makefile 477478 2018-08-18 06:05:09Z nobutaka $
 
 PORTNAME=	uim
 PORTVERSION=	1.8.8
@@ -15,8 +15,6 @@ COMMENT?=	Input method library
 LICENSE=	BSD3CLAUSE GPLv2+ GPLv3+ LGPL21+ PD
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_aarch64=	Fails to build: The collector has not been ported to this machine/OS combination
 
 USES+=		gettext gmake iconv libedit libtool pathfix pkgconfig perl5 sqlite tar:bzip2
 USE_LDCONFIG=	yes

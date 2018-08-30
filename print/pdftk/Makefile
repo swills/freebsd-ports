@@ -1,5 +1,5 @@
 # Created by: Patrick Dung (patrick_dkt@yahoo.com.hk)
-# $FreeBSD: head/print/pdftk/Makefile 476184 2018-08-01 16:33:11Z adamw $
+# $FreeBSD: head/print/pdftk/Makefile 477652 2018-08-20 13:40:45Z mat $
 
 PORTNAME=	pdftk
 PORTVERSION=	2.02
@@ -8,7 +8,7 @@ CATEGORIES=	print
 MASTER_SITES=	http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/ LOCAL/mat/pdftk
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	mat@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple tool for doing everyday things with PDF documents
 
 LICENSE=	GPLv2

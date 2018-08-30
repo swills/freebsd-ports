@@ -1,8 +1,8 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/databases/py-peewee/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-peewee/Makefile 476923 2018-08-11 14:33:24Z miwi $
 
 PORTNAME=	peewee
-DISTVERSION=	3.1.2
+DISTVERSION=	3.6.4
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -27,5 +27,8 @@ post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/playhouse/_speedups.so
 	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/playhouse/_sqlite_ext.so
 	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/playhouse/_sqlite_udf.so
+
+do-test:
+	${PYTHON_CMD} ${WRKSRC}/runtests.py
 
 .include <bsd.port.mk>

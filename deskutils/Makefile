@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 476187 2018-08-01 18:04:33Z tcberner $
+# $FreeBSD: head/deskutils/Makefile 477948 2018-08-24 08:59:53Z tobik $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -162,6 +162,7 @@
     SUBDIR += ljclive
     SUBDIR += ljit
     SUBDIR += logjam
+    SUBDIR += lookbook
     SUBDIR += lumina-archiver
     SUBDIR += lumina-calculator
     SUBDIR += lumina-fileinfo
@@ -172,6 +173,7 @@
     SUBDIR += lumina-screenshot
     SUBDIR += lumina-textedit
     SUBDIR += lumina-xdg-entry
+    SUBDIR += lxqt-notificationd
     SUBDIR += mat
     SUBDIR += mate-notification-daemon
     SUBDIR += mate-utils

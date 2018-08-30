@@ -1,8 +1,8 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/devel/py-pyflakes/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyflakes/Makefile 476562 2018-08-07 03:43:52Z koobs $
 
 PORTNAME=	pyflakes
-PORTVERSION=	1.5.0
+PORTVERSION=	2.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-graphite/Makefile 467224 2018-04-13 09:29:52Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-graphite/Makefile 476816 2018-08-10 09:10:19Z lme $
 
 PORTNAME=	icingaweb2-module-graphite
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.1
+DISTVERSION=	1.1.0
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org

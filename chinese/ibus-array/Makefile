@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/ibus-array/Makefile 456529 2017-12-17 13:02:50Z riggs $
+# $FreeBSD: head/chinese/ibus-array/Makefile 477671 2018-08-20 20:36:35Z kwm $
 
 PORTNAME=	ibus-array
 PORTVERSION=	0.1.2
@@ -15,7 +15,7 @@ RUN_DEPENDS=	ibus-daemon:textproc/ibus
 
 GNU_CONFIGURE=	yes
 
-USES=		autoreconf gettext gmake libtool pkgconfig sqlite
+USES=		autoreconf gettext gmake libtool pkgconfig python:2.7 sqlite
 USE_GNOME+=	glib20
 
 USE_GITHUB=	yes

@@ -1,9 +1,10 @@
-# $FreeBSD: head/net-mgmt/seafile-server/Makefile 472346 2018-06-13 22:05:51Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-server/Makefile 477620 2018-08-20 03:06:13Z ultima $
 
 PORTNAME=	seafile-server
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAFILE_VER}
 DISTVERSIONSUFFIX=	-server
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ultima@FreeBSD.org

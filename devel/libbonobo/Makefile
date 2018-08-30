@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/libbonobo/Makefile 437572 2017-04-02 17:22:44Z bapt $
+# $FreeBSD: head/devel/libbonobo/Makefile 477415 2018-08-17 09:38:05Z amdmi3 $
 #   $MCom: ports/trunk/devel/libbonobo/Makefile 18393 2013-04-26 21:23:07Z kwm $
 
 PORTNAME=	libbonobo
@@ -15,16 +15,20 @@ USES=		tar:bzip2
 
 .if !defined(REFERENCE_PORT)
 
+LICENSE=	GPLv2 LGPL21  # former for tools, latter for library
+LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
+LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LIB
+
 LIB_DEPENDS=	libpopt.so:devel/popt
 
-USES+=		bison gettext gmake libtool:keepla pathfix pkgconfig perl5
+USES+=		bison gettext gmake libtool:keepla localbase:ldflags pathfix pkgconfig perl5
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 USE_GNOME=	intlhack libxml2 orbit2 referencehack
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc \
 		--disable-gtk-doc
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -pthread
+LDFLAGS+=	-pthread
 MAKE_ENV=	gnomelocaledir=${PREFIX}/share/locale
 
 post-patch:

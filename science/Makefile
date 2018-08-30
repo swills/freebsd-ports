@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 474971 2018-07-19 19:19:38Z yuri $
+# $FreeBSD: head/science/Makefile 478276 2018-08-28 00:57:26Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -43,11 +43,13 @@
     SUBDIR += chemps2
     SUBDIR += chemtool
     SUBDIR += chemtool-devel
+    SUBDIR += chrono
     SUBDIR += clhep
     SUBDIR += clipper
     SUBDIR += colt
     SUBDIR += coot
     SUBDIR += crf++
+    SUBDIR += datawarrior
     SUBDIR += dcl
     SUBDIR += devisor
     SUBDIR += dft_tools
@@ -65,6 +67,7 @@
     SUBDIR += fvcom
     SUBDIR += fvcom-mpi
     SUBDIR += fvm
+    SUBDIR += gabedit
     SUBDIR += gchemutils
     SUBDIR += gdma
     SUBDIR += getdp
@@ -98,6 +101,7 @@
     SUBDIR += libgeodecomp
     SUBDIR += libghemical
     SUBDIR += libint
+    SUBDIR += libint2
     SUBDIR += libkml
     SUBDIR += liblinear
     SUBDIR += liboglappth
@@ -107,6 +111,7 @@
     SUBDIR += libsvm-python
     SUBDIR += libxc
     SUBDIR += linsmith
+    SUBDIR += madness
     SUBDIR += massxpert
     SUBDIR += mbdyn
     SUBDIR += mcstas
@@ -124,11 +129,14 @@
     SUBDIR += mpb
     SUBDIR += mpqc
     SUBDIR += mpqc-mpich
+    SUBDIR += multiwfn
     SUBDIR += ncs
     SUBDIR += netcdf
     SUBDIR += netcdf-cxx
     SUBDIR += netcdf-fortran
     SUBDIR += nifticlib
+    SUBDIR += nwchem
+    SUBDIR += octopus
     SUBDIR += openbabel
     SUBDIR += openkim
     SUBDIR += openstructure
@@ -210,15 +218,16 @@
     SUBDIR += py-scipy
     SUBDIR += py-scoria
     SUBDIR += py-spglib
-    SUBDIR += py-tensorflow
     SUBDIR += py-veusz
     SUBDIR += py-ws2300
     SUBDIR += pybrain
     SUBDIR += pycdf
     SUBDIR += pynn
     SUBDIR += qcl
+    SUBDIR += qmcpack
     SUBDIR += qtresistors
     SUBDIR += quantum-espresso
+    SUBDIR += qwalk
     SUBDIR += rdkit
     SUBDIR += rmf
     SUBDIR += rubygem-ai4r
@@ -248,6 +257,7 @@
     SUBDIR += vmd
     SUBDIR += voro++
     SUBDIR += xcrysden
+    SUBDIR += xdrawchem
     SUBDIR += xfce4-equake-plugin
     SUBDIR += xmakemol
 

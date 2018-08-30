@@ -1,9 +1,9 @@
 # Created by: Aren Tyr <aren.tyr@gawab.com>
-# $FreeBSD: head/deskutils/cdcat/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/cdcat/Makefile 477967 2018-08-24 17:22:01Z jhale $
 
 PORTNAME=	cdcat
 PORTVERSION=	2.3.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -13,19 +13,20 @@ COMMENT=	Qt based tool for offline CD/DVD/disk catalogs
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	cryptopp>0:security/cryptopp
 LIB_DEPENDS=	libtar.so:devel/libtar \
 		libexif.so:graphics/libexif \
 		libmediainfo.so:multimedia/libmediainfo \
-		libzen.so:multimedia/libzen
+		libzen.so:multimedia/libzen \
+		libcryptopp.so:security/cryptopp
 
 CONFIGURE_WRKSRC=	${WRKSRC}/src
 BUILD_WRKSRC=	${CONFIGURE_WRKSRC}
 
-USES=		libtool qmake:norecursive qt:4 tar:bzip2
+USES=		libtool pkgconfig qmake:norecursive qt:4 tar:bzip2
 USE_QT=		corelib gui xml linguisttools_build moc_build uic_build
-QMAKE_ARGS=	LIBS+="${LOCALBASE}/lib/libcryptopp.a" \
-		LIBS+="-lz -lbz2 -ltar -lexif -lmediainfo -lzen" \
+QMAKE_ARGS=	LIBS+="-lz -lbz2 -ltar -lexif -lmediainfo -lzen" \
+		CONFIG+="link_pkgconfig" \
+		PKGCONFIG+="libcryptopp" \
 		DEFINES+="MEDIAINFO_STATIC" \
 		DEFINES+="MEDIAINFO_UNICODE" \
 		DEFINES+="USE_LIBEXIF"

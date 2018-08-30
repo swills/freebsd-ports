@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/devel/p5-App-perlbrew/Makefile 473468 2018-06-27 23:33:48Z sunpoet $
+# $FreeBSD: head/devel/p5-App-perlbrew/Makefile 476427 2018-08-05 19:06:21Z sunpoet $
 
 PORTNAME=	App-perlbrew
 PORTVERSION=	0.84
@@ -32,11 +32,4 @@ NO_ARCH=	yes
 USE_PERL5=	modbuildtiny
 USES=		perl5
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502400
-BUILD_DEPENDS+=	p5-Pod-Usage>=1.68:devel/p5-Pod-Usage
-RUN_DEPENDS+=	p5-Pod-Usage>=1.68:devel/p5-Pod-Usage
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

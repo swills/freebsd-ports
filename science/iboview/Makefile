@@ -1,9 +1,9 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/science/iboview/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/iboview/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	iboview
 PORTVERSION=	20150427
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	science
 MASTER_SITES=	http://www.iboview.org/bin/
 DISTNAME=	ibo-view.20150427

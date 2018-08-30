@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/packer/Makefile 475854 2018-07-29 20:55:21Z lifanov $
+# $FreeBSD: head/sysutils/packer/Makefile 477044 2018-08-12 23:35:55Z lifanov $
 
 PORTNAME=	packer
 PORTVERSION=	1.2.5
@@ -20,10 +20,4 @@ GH_ACCOUNT=	hashicorp
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "i386"
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-i386
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/rubygem-kensa/Makefile 446903 2017-07-29 19:27:06Z sunpoet $
+# $FreeBSD: head/www/rubygem-kensa/Makefile 477275 2018-08-15 19:34:12Z sunpoet $
 
 PORTNAME=	kensa
-PORTVERSION=	3.0.2
-PORTREVISION=	2
+PORTVERSION=	3.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

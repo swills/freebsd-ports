@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/rpi-firmware/Makefile 475126 2018-07-22 20:44:48Z linimon $
+# $FreeBSD: head/sysutils/rpi-firmware/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	rpi-firmware
 PORTVERSION=	1.20180619
 CATEGORIES=	sysutils
 
-MAINTAINER=	uboot@freebsd.org
+MAINTAINER=	uboot@FreeBSD.org
 COMMENT=	Firmware for RaspberryPi Single Board Computer
 
 LICENSE=	BROADCOM

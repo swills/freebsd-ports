@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/py-idna_ssl/Makefile 475754 2018-07-29 19:17:23Z sunpoet $
+# $FreeBSD: head/dns/py-idna_ssl/Makefile 477017 2018-08-12 17:33:57Z sunpoet $
 
 PORTNAME=	idna_ssl
 PORTVERSION=	1.1.0
@@ -22,6 +22,6 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiohttp>=2.3:www/py-aiohttp@${PY_FLAVOR} \
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils
-USES=		python:3.3-3.6
+USES=		python:3.3+
 
 .include <bsd.port.mk>

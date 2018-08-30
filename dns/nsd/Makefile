@@ -1,8 +1,8 @@
 # Created by: alexis
-# $FreeBSD: head/dns/nsd/Makefile 475892 2018-07-30 13:59:49Z swills $
+# $FreeBSD: head/dns/nsd/Makefile 477296 2018-08-15 23:33:07Z dbaio $
 
 PORTNAME=	nsd
-PORTVERSION=	4.1.23
+PORTVERSION=	4.1.24
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://www.nlnetlabs.nl/downloads/nsd/	\
 		ftp://ftp.rhnet.is/pub/nsd/

@@ -1,8 +1,8 @@
 # Created by: k@123.org
-# $FreeBSD: head/www/lighttpd/Makefile 464342 2018-03-13 06:13:40Z joneum $
+# $FreeBSD: head/www/lighttpd/Makefile 477242 2018-08-15 17:23:21Z dinoex $
 
 PORTNAME?=	lighttpd
-PORTVERSION=	1.4.49
+PORTVERSION=	1.4.50
 CATEGORIES?=	www
 MASTER_SITES?=	http://download.lighttpd.net/lighttpd/releases-1.4.x/
 

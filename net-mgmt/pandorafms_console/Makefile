@@ -1,5 +1,5 @@
 # Created by: KIKUCHI Koichiro <koichiro@rworks.jp>
-# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 466796 2018-04-08 12:19:58Z brnrd $
+# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	pandora_console
 CATEGORIES=	net-mgmt
@@ -9,6 +9,8 @@ COMMENT=	Pandora FMS console
 
 LICENSE=	${PANDORA_LICENSE}
 LICENSE_FILE=	${PANDORA_LICENSE_FILE}
+
+IGNORE_WITH_PHP=	70 71 72
 
 RUN_DEPENDS=	${LOCALBASE}/bin/twopi:graphics/graphviz
 

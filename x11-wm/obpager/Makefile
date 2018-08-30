@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/x11-wm/obpager/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/obpager/Makefile 478029 2018-08-25 13:42:44Z tobik $
 
 PORTNAME=	obpager
 PORTVERSION=	1.8
@@ -13,9 +13,12 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	gsed:textproc/gsed
 
-USES=		gmake
+USES=		compiler gmake
 USE_XORG=	x11 xext
 
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
+MAKE_ARGS=	CDEFS="${CXXFLAGS}"
 PLIST_FILES=	bin/${PORTNAME}
 
 post-patch:

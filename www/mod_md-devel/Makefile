@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 473717 2018-07-02 09:18:10Z brnrd $
+# $FreeBSD: head/www/mod_md-devel/Makefile 476474 2018-08-05 20:39:28Z brnrd $
 
 PORTNAME=	mod_md
-PORTVERSION=	1.1.15
+PORTVERSION=	1.1.16
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}

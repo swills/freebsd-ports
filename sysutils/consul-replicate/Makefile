@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/consul-replicate/Makefile 474263 2018-07-09 15:05:56Z amdmi3 $
+# $FreeBSD: head/sysutils/consul-replicate/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	consul-replicate
 PORTVERSION=	0.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Consul cross-DC KV replication daemon
 
 LICENSE=	MPL20

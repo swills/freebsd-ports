@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Protocol-HTTP2/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Protocol-HTTP2/Makefile 476521 2018-08-06 19:52:17Z sunpoet $
 
 PORTNAME=	Protocol-HTTP2
-PORTVERSION=	1.08
+PORTVERSION=	1.09
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CRUX

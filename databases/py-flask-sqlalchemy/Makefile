@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/databases/py-flask-sqlalchemy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-flask-sqlalchemy/Makefile 476455 2018-08-05 19:08:48Z sunpoet $
 
 PORTNAME=	Flask-SQLAlchemy
 PORTVERSION=	2.3.2
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10:www/py-flask@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0.8:databases/py-sqlalchemy10@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}sqlalchemy12>=0.8:databases/py-sqlalchemy12@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

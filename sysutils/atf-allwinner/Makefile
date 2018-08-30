@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/atf-allwinner/Makefile 472719 2018-06-18 21:45:43Z linimon $
+# $FreeBSD: head/sysutils/atf-allwinner/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	atf-allwinner
 PORTVERSION=	1.2.20180112
 CATEGORIES=	sysutils
 MASTER_SITES=	GH
 
-MAINTAINER=	manu@freebsd.org
+MAINTAINER=	manu@FreeBSD.org
 COMMENT=	Arm Trusted Framework for Allwinner SoCs
 
 LICENSE=	BSD2CLAUSE BSD3CLAUSE GPLv2+

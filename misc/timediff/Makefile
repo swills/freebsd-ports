@@ -1,9 +1,8 @@
 # Created by: Naito Yuichiro <naito.yuichiro@gmail.com>
-# $FreeBSD: head/misc/timediff/Makefile 421229 2016-09-01 14:50:26Z cpm $
+# $FreeBSD: head/misc/timediff/Makefile 477790 2018-08-22 14:36:31Z swills $
 
 PORTNAME=	timediff
-PORTVERSION=	0.1
-PORTREVISION=	2
+PORTVERSION=	0.8
 CATEGORIES=	misc
 
 MAINTAINER=	naito.yuichiro@gmail.com

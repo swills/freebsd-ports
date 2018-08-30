@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/rubygem-gstreamer/Makefile 474173 2018-07-08 10:34:36Z miwi $
+# $FreeBSD: head/multimedia/rubygem-gstreamer/Makefile 476769 2018-08-09 14:44:39Z sunpoet $
 
 PORTNAME=	gstreamer
-PORTVERSION=	3.2.7
+PORTVERSION=	3.2.9
 CATEGORIES=	multimedia rubygems
 MASTER_SITES=	RG
 

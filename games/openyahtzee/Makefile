@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/openyahtzee/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/openyahtzee/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	openyahtzee
 PORTVERSION=	1.9.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Open%20Yahtzee/Open%20Yahtzee%20${PORTVERSION}
 

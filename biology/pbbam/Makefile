@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/pbbam/Makefile 468100 2018-04-23 16:08:21Z jwb $
+# $FreeBSD: head/biology/pbbam/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	pbbam
 DISTVERSION=	g20180416
+PORTREVISION=	1
 CATEGORIES=	biology
 
 MAINTAINER=	jwb@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Janni
-# $FreeBSD: head/devel/mercator/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/mercator/Makefile 477562 2018-08-19 09:38:06Z amdmi3 $
 
 PORTNAME=	mercator
 PORTVERSION=	0.3.3
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/worldforge/Mercator%20%28terrain%20lib%29/${PORTVERSION}
 
 MAINTAINER=	oliver@FreeBSD.org
 COMMENT=	Procedural terrain library
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libwfmath-1.0.so:math/wfmath
 

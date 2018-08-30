@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/p5-Alien-SDL/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/devel/p5-Alien-SDL/Makefile 477527 2018-08-18 20:42:06Z sunpoet $
 
 PORTNAME=	Alien-SDL
-PORTVERSION=	1.440
-PORTREVISION=	7
+PORTVERSION=	1.446
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

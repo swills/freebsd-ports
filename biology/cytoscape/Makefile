@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/cytoscape/Makefile 473806 2018-07-03 08:42:54Z yuri $
+# $FreeBSD: head/biology/cytoscape/Makefile 476967 2018-08-12 06:29:51Z yuri $
 
 PORTNAME=	cytoscape
 DISTVERSION=	3.6.1
@@ -10,8 +10,12 @@ DISTFILES=	FreeBSD-${PORTNAME}-${PORTVERSION}-maven-repository.tar.gz:maven
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Software to visualize molecular interaction networks, gene expression
 
-LICENSE=	MIT
-xLICENSE_FILE=	${WRKSRC}/license.txt
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/api/LICENSE
+
+BROKEN_aarch64=		fails to build: Cytoscape Third-Party Dependencies (third-party): FAILURE
+BROKEN_armv6=		fails to build: Cytoscape Third-Party Dependencies (third-party): FAILURE
+BROKEN_armv7=		fails to build: Cytoscape Third-Party Dependencies (third-party): FAILURE
 
 BUILD_DEPENDS=	mvn:devel/maven \
 		bash:shells/bash

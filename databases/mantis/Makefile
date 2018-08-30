@@ -1,11 +1,12 @@
 # Created by: Rozhuk Ivan <rozhuk.im@gmail.com>
-# $FreeBSD: head/databases/mantis/Makefile 475644 2018-07-29 10:51:37Z joneum $
+# $FreeBSD: head/databases/mantis/Makefile 477984 2018-08-24 22:14:34Z tobik $
 
 PORTNAME=	mantis
-PORTVERSION=	2.15.0
+PORTVERSION=	2.9.0
+PORTEPOCH=	1
 CATEGORIES=	databases www
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Bug tracking system written in PHP
 
 NO_BUILD=	yes

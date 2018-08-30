@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/py-softlayer/Makefile 475759 2018-07-29 19:17:48Z sunpoet $
+# $FreeBSD: head/net/py-softlayer/Makefile 476612 2018-08-07 19:41:47Z sunpoet $
 
 PORTNAME=	softlayer
-PORTVERSION=	5.5.0
+PORTVERSION=	5.5.1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

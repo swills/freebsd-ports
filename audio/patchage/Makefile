@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/patchage/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/patchage/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	patchage
 PORTVERSION=	0.5.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/ \
 		http://frugalware.mirrors.tds.net/pub/linux/frugalware/frugalware-current/source/xmultimedia-extra/patchage/

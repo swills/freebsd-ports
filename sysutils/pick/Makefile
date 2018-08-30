@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/pick/Makefile 453748 2017-11-08 14:56:58Z robak $
+# $FreeBSD: head/sysutils/pick/Makefile 476926 2018-08-11 14:37:17Z miwi $
 
 PORTNAME=	pick
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.2
 CATEGORIES=	sysutils
-MASTER_SITES=	https://github.com/calleerlandsson/pick/releases/download/v${PORTVERSION}/
+MASTER_SITES=	https://github.com/mptre/pick/releases/download/v${PORTVERSION}/
 
 MAINTAINER=	neel@neelc.org
 COMMENT=	Tool for choosing one option from a set of choices with an interface

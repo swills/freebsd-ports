@@ -1,9 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/zita-convolver/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/zita-convolver/Makefile 478251 2018-08-27 20:38:13Z yuri $
 
 PORTNAME=	zita-convolver
-DISTVERSION=	4.0.0
-PORTREVISION=	1
+DISTVERSION=	4.0.3
 CATEGORIES=	audio
 MASTER_SITES=	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/
 
@@ -19,7 +18,7 @@ LIB_DEPENDS=	libfftw3f.so:math/fftw3-float
 USES=		compiler:c++11-lib gmake localbase:ldflags tar:bz2
 USE_LDCONFIG=	yes
 
-WRKSRC_SUBDIR=	libs
+WRKSRC_SUBDIR=	source
 
 PLIST_FILES=	include/zita-convolver.h \
 		lib/libzita-convolver.so \

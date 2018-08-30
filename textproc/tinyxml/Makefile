@@ -1,9 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/tinyxml/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/textproc/tinyxml/Makefile 477603 2018-08-19 21:14:12Z tobik $
 
 PORTNAME=	tinyxml
 PORTVERSION=	2.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION:S/./_/g}

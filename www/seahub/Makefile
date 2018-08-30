@@ -1,9 +1,10 @@
-# $FreeBSD: head/www/seahub/Makefile 472346 2018-06-13 22:05:51Z ultima $
+# $FreeBSD: head/www/seahub/Makefile 477620 2018-08-20 03:06:13Z ultima $
 
 PORTNAME=	seahub
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAHUB_VER}
 DISTVERSIONSUFFIX=	-pro
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	ultima@FreeBSD.org
@@ -68,8 +69,6 @@ SUB_FILES=	pkg-message
 
 do-patch:
 	echo "${WRKSRC}..."
-	@${MKDIR} ${WRKSRC}/runtime
-	${CP} ${FILESDIR}/runtime_seahub.conf ${WRKSRC}/runtime/seahub.conf
 	${REINPLACE_CMD} -Ee "s|SEAFILE_VERSION = '[0-9]+\.[0-9]+\.[0-9]+'|SEAFILE_VERSION = '${SEAFILE_VER}'|" \
 			 ${WRKSRC}/seahub/settings.py
 	${REINPLACE_CMD} -e 's|##FIX_WWWDIR##|${PREFIX}/${HAIWENDIR}|' ${WRKSRC}/*.template
@@ -89,10 +88,8 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${SEAFILE_SERVER}/runtime/ \
 		${STAGEDIR}${PREFIX}/${SEAHUBDIR} ${STAGEDIR}${PREFIX}/${SEAHUB_DATA_DIR} \
 		${STAGEDIR}${PREFIX}/${SEAHUB_DATA_DIR}/custom
-	${INSTALL} ${WRKSRC}/runtime/seahub.conf \
-		${STAGEDIR}${PREFIX}/${SEAFILE_SERVER}/runtime/
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${SEAHUBDIR} \
-	"! -name Makefile ! -name runtime ! -name seahub.conf ! -name avatars \
+	"! -name Makefile ! -name seahub.conf ! -name avatars \
 	! -name default-non-register.jpg ! -name default.png ! -name groups")
 	(cd ${WRKSRC}/media && ${COPYTREE_SHARE} ./avatars \
 		 ${STAGEDIR}${PREFIX}/${SEAHUB_DATA_DIR})

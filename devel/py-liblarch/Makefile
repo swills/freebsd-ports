@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/py-liblarch/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-liblarch/Makefile 477795 2018-08-22 16:04:13Z rm $
 
 PORTNAME=	liblarch
 PORTVERSION=	2.1.0
-PORTREVISION=	1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,10 +11,12 @@ MAINTAINER=	rm@FreeBSD.org
 COMMENT=	Python library to easily handle data structures
 
 LICENSE=	LGPL3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		python:2.7
 USE_GITHUB=	yes
 USE_GNOME=	pygobject
-USES=		python:2.7
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

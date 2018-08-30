@@ -1,9 +1,9 @@
 # Created by: Roland van Laar <roland@micite.net>
-# $FreeBSD: head/security/py-kerberos/Makefile 460369 2018-01-30 02:20:10Z dvl $
+# $FreeBSD: head/security/py-kerberos/Makefile 477669 2018-08-20 18:34:53Z swills $
 
 PORTNAME=	kerberos
-PORTVERSION=	1.2.5
-PORTREVISION=	1
+PORTVERSION=	1.3.0
+PORTREVISION=	0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kleopatra/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/kleopatra/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 
 PORTNAME=	kleopatra
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libosmo-netif/Makefile 459644 2018-01-22 11:50:08Z danfe $
+# $FreeBSD: head/devel/libosmo-netif/Makefile 477569 2018-08-19 12:51:26Z swills $
 
 PORTNAME=	libosmo-netif
-PORTVERSION=	0.1.1
+PORTVERSION=	0.3.0
 CATEGORIES=	devel
 MASTER_SITES=	http://git.osmocom.org/libosmo-netif/snapshot/ \
 		http://chaosophia.net/downloads/osmocom/${PORTNAME}/

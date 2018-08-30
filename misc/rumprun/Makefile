@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/rumprun/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/misc/rumprun/Makefile 476365 2018-08-04 15:50:04Z gerald $
 
 PORTNAME=	rumprun
 DISTVERSION=	g20180105
@@ -12,6 +12,8 @@ LICENSE=	BSD2CLAUSE
 
 ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	not yet ported to FreeBSD on other architectures
+
+BROKEN=		fails with current versions of GCC	# PR 230125
 
 USES=		gmake
 USE_GCC=	any

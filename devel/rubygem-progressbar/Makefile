@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-progressbar/Makefile 450831 2017-09-28 11:01:08Z sunpoet $
+# $FreeBSD: head/devel/rubygem-progressbar/Makefile 476707 2018-08-08 23:29:21Z sunpoet $
 
 PORTNAME=	progressbar
-PORTVERSION=	1.9.0
+PORTVERSION=	1.10.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,9 +1,10 @@
 # Created by: Loïc BARTOLETTI <coder@tuxfamily.org>
-# $FreeBSD: head/databases/sfcgal/Makefile 468186 2018-04-24 07:28:36Z yuri $
+# $FreeBSD: head/databases/sfcgal/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	sfcgal
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.3.5
+PORTREVISION=	1
 CATEGORIES=	databases math graphics
 
 MAINTAINER=	lbartoletti@tuxfamily.org

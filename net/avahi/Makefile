@@ -1,16 +1,16 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/avahi/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/avahi/Makefile 477046 2018-08-13 01:49:59Z zi $
 #   $MCom: ports/net/avahi/Makefile,v 1.30 2011/03/13 17:23:19 kwm Exp $
 
 PORTNAME=	avahi
-PORTVERSION=	0.6.31
-PORTREVISION?=	1
+PORTVERSION=	0.7
+PORTREVISION?=	0
 CATEGORIES?=	net dns
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	"meta-port" for the Avahi service discovery suite
 
-RUN_DEPENDS=	avahi-app>=0.6.31:net/avahi-app
+RUN_DEPENDS=	avahi-app>=0.7:net/avahi-app
 
 USES=		metaport
 

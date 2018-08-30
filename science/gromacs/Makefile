@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/science/gromacs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/gromacs/Makefile 477971 2018-08-24 17:52:09Z yuri $
 
 PORTNAME=	gromacs
-DISTVERSION=	2018.2
-PORTREVISION=	2
+DISTVERSION=	2018.3
 CATEGORIES=	science
 MASTER_SITES=	ftp://ftp.gromacs.org/pub/gromacs/
 
@@ -16,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	boost-libs>=1.44:devel/boost-libs
 LIB_DEPENDS=	libhwloc.so:devel/hwloc
 
-USES=		cmake fortran perl5 pkgconfig shebangfix
+USES=		cmake:outsource fortran perl5 pkgconfig shebangfix
 SHEBANG_FILES=	admin/*.sh scripts/*.pl scripts/*.sh src/gromacs/selection/*.sh
 bash_CMD=	${SH}
 USE_GNOME=	libxml2

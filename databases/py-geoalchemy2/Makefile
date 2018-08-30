@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-geoalchemy2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-geoalchemy2/Makefile 478059 2018-08-25 16:00:37Z sunpoet $
 
 PORTNAME=	geoalchemy2
-PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTVERSION=	0.5.0
 CATEGORIES=	databases geography python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

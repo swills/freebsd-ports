@@ -1,8 +1,8 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/cad/gtkwave/Makefile 475398 2018-07-26 21:07:16Z zeising $
+# $FreeBSD: head/cad/gtkwave/Makefile 476363 2018-08-04 15:17:34Z zeising $
 
 PORTNAME=	gtkwave
-PORTVERSION=	3.3.92
+PORTVERSION=	3.3.93
 CATEGORIES=	cad
 MASTER_SITES=	http://gtkwave.sourceforge.net/
 

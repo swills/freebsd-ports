@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 475188 2018-07-23 16:15:02Z mi $
+# $FreeBSD: head/finance/Makefile 477816 2018-08-22 19:42:48Z swills $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -27,6 +27,7 @@
     SUBDIR += beanie
     SUBDIR += bitcoin-armory
     SUBDIR += cbb
+    SUBDIR += cointop
     SUBDIR += electrum
     SUBDIR += expense
     SUBDIR += fixc

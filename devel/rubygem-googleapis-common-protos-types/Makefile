@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-googleapis-common-protos-types/Makefile 467356 2018-04-14 23:59:17Z sunpoet $
+# $FreeBSD: head/devel/rubygem-googleapis-common-protos-types/Makefile 476757 2018-08-09 14:43:34Z sunpoet $
 
 PORTNAME=	googleapis-common-protos-types
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,6 +12,7 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	rubygem-google-protobuf>=3.0:devel/rubygem-google-protobuf
 
+NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
 

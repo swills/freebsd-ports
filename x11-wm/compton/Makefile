@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-wm/compton/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-wm/compton/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	compton
 PORTVERSION=	20160907
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-wm
 
 MAINTAINER=	femc7488@gmail.com

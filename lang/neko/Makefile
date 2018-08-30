@@ -1,9 +1,9 @@
-# $FreeBSD: head/lang/neko/Makefile 471909 2018-06-07 12:16:47Z tijl $
+# $FreeBSD: head/lang/neko/Makefile 476834 2018-08-10 14:23:15Z tijl $
 
 PORTNAME=	neko
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2-2-0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	lang
 
 MAINTAINER=	penzin.dev@gmail.com

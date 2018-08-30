@@ -1,13 +1,13 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_repack/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pg_repack/Makefile 476359 2018-08-04 14:20:23Z farrokhi $
 
 PORTNAME=	pg_repack
-PORTVERSION=	1.4.2
+PORTVERSION=	1.4.3
 DISTVERSIONPREFIX=	ver_
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	farrokhi@FreeBSD.org
 COMMENT=	Reorganize tables in PostgreSQL databases with minimal locks
 
 LICENSE=	BSD3CLAUSE
@@ -21,7 +21,7 @@ WANT_PGSQL=	server
 
 PLIST_FILES=	bin/pg_repack \
 		lib/postgresql/pg_repack.so \
-		share/postgresql/extension/pg_repack--1.4.2.sql \
+		share/postgresql/extension/pg_repack--1.4.3.sql \
 		share/postgresql/extension/pg_repack.control
 
 post-install:

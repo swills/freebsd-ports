@@ -1,8 +1,8 @@
 # Created by: markm@FreeBSD.org
-# $FreeBSD: head/textproc/p5-Text-CSV/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-CSV/Makefile 477475 2018-08-18 03:38:05Z wen $
 
 PORTNAME=	Text-CSV
-PORTVERSION=	1.95
+PORTVERSION=	1.97
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

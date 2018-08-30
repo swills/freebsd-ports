@@ -1,9 +1,9 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/net/omnitty/Makefile 424599 2016-10-25 02:25:49Z wen $
+# $FreeBSD: head/net/omnitty/Makefile 476742 2018-08-09 12:25:08Z tobik $
 
 PORTNAME=	omnitty
 PORTVERSION=	0.3.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	SF/omnitty/omnitty/omnitty-${PORTVERSION}
 
@@ -18,9 +18,6 @@ LIBS+=		-lncurses
 
 ALL_TARGET=	omnitty
 PLIST_FILES=	bin/omnitty man/man1/omnitty.1.gz
-
-post-patch:
-	${REINPLACE_CMD} 's|<alloca.h>|<stdlib.h>|' ${WRKSRC}/machmgr.c
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/omnitty ${STAGEDIR}${PREFIX}/bin

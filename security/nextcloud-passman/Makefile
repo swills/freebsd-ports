@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-passman/Makefile 468708 2018-04-30 15:43:16Z brnrd $
+# $FreeBSD: head/security/nextcloud-passman/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	passman
 PORTVERSION=	2.1.4
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	nextcloud-
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	brnrd@freebsd.org
+MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Full featured password manager for Nextcloud
 
 LICENSE=	AGPLv3

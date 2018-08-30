@@ -1,18 +1,19 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/log4shib/Makefile 362647 2014-07-23 09:59:58Z amdmi3 $
+# $FreeBSD: head/devel/log4shib/Makefile 476595 2018-08-07 13:24:36Z girgen $
 
 PORTNAME=	log4shib
-DISTVERSION=	1.0.7
-PORTREVISION=	1
+DISTVERSION=	2.0.0
 CATEGORIES=	devel
 MASTER_SITES=	http://shibboleth.net/downloads/${PORTNAME}/${DISTVERSION}/
 
 MAINTAINER=	girgen@FreeBSD.org
 COMMENT=	Library of C++ classes for flexible logging
 
+LICENSE=	APACHE20
+
 USES=		gmake pathfix pkgconfig libtool
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-html-docs --disable-doxygen
+CONFIGURE_ARGS=	--disable-html-docs --disable-doxygen --disable-dependency-tracking
 USE_LDCONFIG=	yes
 
 post-patch:

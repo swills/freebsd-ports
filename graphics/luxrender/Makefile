@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/luxrender/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/luxrender/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	luxrender
 DISTVERSION?=	1.6
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics
 MASTER_SITES=	https://bitbucket.org/luxrender/lux/get/ \
 		https://bitbucket.org/luxrender/luxrays/get/:lr

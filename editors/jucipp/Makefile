@@ -1,9 +1,10 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/editors/jucipp/Makefile 472407 2018-06-14 22:55:37Z swills $
+# $FreeBSD: head/editors/jucipp/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	jucipp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4.4
+PORTREVISION=	1
 CATEGORIES=	editors
 
 MAINTAINER=	info@babaei.net

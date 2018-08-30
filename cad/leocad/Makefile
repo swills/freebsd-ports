@@ -1,9 +1,9 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/cad/leocad/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/cad/leocad/Makefile 477998 2018-08-25 04:00:13Z tobik $
 
 PORTNAME=	leocad
 PORTVERSION=	0.80.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	cad
 MASTER_SITES=	SF/nemysisfreebsdp/${CATEGORIES}/${PORTNAME}/
 DISTFILES=	LeoCAD-Source-${PORTVERSION}.tgz

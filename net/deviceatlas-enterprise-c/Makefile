@@ -1,8 +1,8 @@
 # Created by: David Carlier
-# $FreeBSD: head/net/deviceatlas-enterprise-c/Makefile 452913 2017-10-26 11:03:49Z tobik $
+# $FreeBSD: head/net/deviceatlas-enterprise-c/Makefile 477191 2018-08-14 17:31:58Z tobik $
 
 PORTNAME=	deviceatlas-enterprise-c
-PORTVERSION=	2.1.3
+PORTVERSION=	2.1.4
 CATEGORIES=	net devel
 MASTER_SITES=	#
 
@@ -33,6 +33,7 @@ IGNORE?=	you must manually fetch the DeviceAtlas Device Detection C API from ${R
 .endif
 
 post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libda.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libda.so \
+		${STAGEDIR}${PREFIX}/lib/libci.so
 
 .include <bsd.port.post.mk>

@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/net-im/telegram/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net-im/telegram/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	telegram
 PORTVERSION=	1.4.1.g20161227
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-im
 
 MAINTAINER=	cpm@FreeBSD.org

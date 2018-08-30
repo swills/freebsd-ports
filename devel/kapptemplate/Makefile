@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kapptemplate/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kapptemplate/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 
 PORTNAME=	kapptemplate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,7 +13,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-
 USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth archive codecs completion config configwidgets coreaddons \
 		doctools ecm i18n jobwidgets kio newstuff service widgetsaddons
-USE_QT=		core gui network testlib widgets xml \
+USE_QT=		core dbus gui network testlib widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

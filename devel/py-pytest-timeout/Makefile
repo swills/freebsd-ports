@@ -1,8 +1,8 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-timeout/Makefile 475143 2018-07-23 03:19:25Z loader $
+# $FreeBSD: head/devel/py-pytest-timeout/Makefile 476397 2018-08-05 07:31:12Z loader $
 
 PORTNAME=	pytest-timeout
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

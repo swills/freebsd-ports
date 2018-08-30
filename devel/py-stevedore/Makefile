@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-stevedore/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-stevedore/Makefile 477107 2018-08-13 19:52:12Z nivit $
 
 PORTNAME=	stevedore
-PORTVERSION=	1.28.0
+PORTVERSION=	1.29.0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

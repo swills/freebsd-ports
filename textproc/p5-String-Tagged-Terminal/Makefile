@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Tagged-Terminal/Makefile 451665 2017-10-10 11:16:33Z sunpoet $
+# $FreeBSD: head/textproc/p5-String-Tagged-Terminal/Makefile 477519 2018-08-18 20:41:23Z sunpoet $
 
 PORTNAME=	String-Tagged-Terminal
-PORTVERSION=	0.02
+PORTVERSION=	0.03
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,13 +14,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Convert-Color>=0:graphics/p5-Convert-Color \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Convert-Color>=0:graphics/p5-Convert-Color \
 		p5-Convert-Color-XTerm>=0:graphics/p5-Convert-Color-XTerm \
 		p5-String-Tagged>=0:textproc/p5-String-Tagged
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+USES=		perl5
+USE_PERL5=	configure
 
 NO_ARCH=	yes
-USE_PERL5=	configure
-USES=		perl5
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/devel/libeio/Makefile 416242 2016-06-01 13:15:36Z mat $
+# $FreeBSD: head/devel/libeio/Makefile 478152 2018-08-26 18:42:13Z sunpoet $
 
 PORTNAME=	libeio
 PORTVERSION=	4.18
@@ -9,6 +9,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	osa@FreeBSD.org
 COMMENT=	Full-featured asynchronous I/O library for C
+
+# lib/libeio.so.1
+CONFLICTS_INSTALL=	efl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	scunningham

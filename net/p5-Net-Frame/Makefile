@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Frame/Makefile 470337 2018-05-18 23:31:44Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Frame/Makefile 476449 2018-08-05 19:08:19Z sunpoet $
 
 PORTNAME=	Net-Frame
 PORTVERSION=	1.19
@@ -23,11 +23,4 @@ NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502400
-BUILD_DEPENDS+=	p5-Socket>=2.019:net/p5-Socket
-RUN_DEPENDS+=	p5-Socket>=2.019:net/p5-Socket
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

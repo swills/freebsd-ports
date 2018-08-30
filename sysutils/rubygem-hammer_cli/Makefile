@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/sysutils/rubygem-hammer_cli/Makefile 469598 2018-05-10 23:14:35Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-hammer_cli/Makefile 477397 2018-08-16 23:43:21Z sunpoet $
 
 PORTNAME=	hammer_cli
-PORTVERSION=	0.13.0
+PORTVERSION=	0.13.1
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 

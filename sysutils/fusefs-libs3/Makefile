@@ -1,12 +1,12 @@
 # Created by: Stefan Esser
-# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 475238 2018-07-24 09:52:02Z se $
+# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	fusefs-libs3
 DISTVERSIONPREFIX=	fuse-
 DISTVERSION=	3.2.5
 CATEGORIES=	sysutils
 
-MAINTAINER=	se@freebsd.org
+MAINTAINER=	se@FreeBSD.org
 COMMENT=	FUSE library version 3 for filesystems implemented in userspace
 
 LICENSE=	LGPL21

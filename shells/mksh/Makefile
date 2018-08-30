@@ -1,8 +1,8 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/shells/mksh/Makefile 449578 2017-09-10 15:16:03Z riggs $
+# $FreeBSD: head/shells/mksh/Makefile 476589 2018-08-07 11:10:15Z swills $
 
 PORTNAME=	mksh
-PORTVERSION=	56b
+PORTVERSION=	56c
 DISTVERSIONPREFIX=	R
 CATEGORIES=	shells
 MASTER_SITES=	http://www.mirbsd.org/MirOS/dist/mir/mksh/ \

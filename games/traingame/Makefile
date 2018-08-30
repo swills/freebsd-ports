@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/traingame/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/traingame/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	traingame
 PORTVERSION=	0.3
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	games
 
 MAINTAINER=	ports@FreeBSD.org

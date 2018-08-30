@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-yesod-persistent/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-yesod-persistent/Makefile 476732 2018-08-09 09:38:00Z amdmi3 $
 
 PORTNAME=	yesod-persistent
 PORTVERSION=	1.6.0
@@ -9,6 +9,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Some helpers for using Persistent from Yesod
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	blaze-builder conduit persistent persistent-template \
 		resource-pool resourcet yesod-core

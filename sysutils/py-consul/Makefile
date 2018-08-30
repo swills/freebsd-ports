@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-consul/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/py-consul/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	py-consul
 PORTVERSION=	0.7.2
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Python client for consul
 
 LICENSE=	MIT

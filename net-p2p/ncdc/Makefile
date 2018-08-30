@@ -1,12 +1,10 @@
 # Created by: Dmitriy Limonov
-# $FreeBSD: head/net-p2p/ncdc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-p2p/ncdc/Makefile 477374 2018-08-16 20:44:45Z swills $
 
 PORTNAME=	ncdc
-PORTVERSION=	1.19.1
-PORTREVISION=	7
+PORTVERSION=	1.20
 CATEGORIES=	net-p2p
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION} \
-		http://dev.yorhel.nl/download/
+MASTER_SITES=	http://dev.yorhel.nl/download/
 
 MAINTAINER=	earl1k@mail.ru
 COMMENT=	Lightweight direct connect client with ncurses interface

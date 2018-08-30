@@ -1,9 +1,9 @@
 # Created by: Tobias Roth <ports@fsck.ch>
-# $FreeBSD: head/x11/slim/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/x11/slim/Makefile 478222 2018-08-27 16:42:30Z swills $
 
 PORTNAME=	slim
 PORTVERSION=	1.3.6
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.berlios.de/pub/slim/ \
 		SF/slim.berlios
@@ -30,7 +30,7 @@ CMAKE_ARGS=	-DUSE_CONSOLEKIT=yes \
 		-DBUILD_SHARED_LIBS=yes
 
 OPTIONS_DEFINE=		PAM UTF8 CONSOLEKIT
-OPTIONS_DEFAULT=	PAM CONSOLEKIT
+OPTIONS_DEFAULT=	PAM UTF8 CONSOLEKIT
 OPTIONS_SUB=	yes
 
 UTF8_DESC=	Support UTF-8 characters
@@ -45,7 +45,8 @@ PAM_CMAKE_OFF=	-DUSE_PAM=no
 UTF8_EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-utf8
 
 CONSOLEKIT_CMAKE_ON=	-DUSE_CONSOLEKIT=yes
-CONSOLEKIT_LIB_DEPENDS=	libck-connector.so:sysutils/consolekit2
+CONSOLEKIT_LIB_DEPENDS=	libck-connector.so:sysutils/consolekit2 \
+			libdbus-1.so:devel/dbus
 CONSOLEKIT_CMAKE_OFF=	-DUSE_CONSOLEKIT=no
 
 post-patch:

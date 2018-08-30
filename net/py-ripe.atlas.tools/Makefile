@@ -1,8 +1,8 @@
 # Created by: Massimiliano Stucchi <mstucchi@ripe.net>
-# $FreeBSD: head/net/py-ripe.atlas.tools/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-ripe.atlas.tools/Makefile 477473 2018-08-18 03:28:16Z wen $
 
 PORTNAME=	ripe.atlas.tools
-PORTVERSION=	1.1.0
+PORTVERSION=	2.2.3
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

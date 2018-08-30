@@ -1,19 +1,20 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/tt-rss/Makefile 469119 2018-05-05 14:58:18Z danfe $
+# $FreeBSD: head/www/tt-rss/Makefile 477644 2018-08-20 10:20:26Z mat $
 
 PORTNAME=	tt-rss
-PORTVERSION=	g20171120
+PORTVERSION=	g20180718
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	https://git.tt-rss.org/git/tt-rss/archive/
 DISTNAME=	${GIT_TAGNAME}
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Tiny Tiny RSS: web-based news feed (RSS/Atom) aggregator
 
 LICENSE=	GPLv2
 
-GIT_TAGNAME=	d2957a2718
+GIT_TAGNAME=	a2d1fa5b14
 
 NO_BUILD=	yes
 NO_ARCH=	yes
@@ -36,14 +37,14 @@ GD_DESC=	Use OTP QR code generation
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPGSQL}
-USE_PHP+=	pgsql
+USE_PHP+=	pdo_pgsql
 DB=		pgsql
 MYSQL=		"\#"
 PGSQL=
 .endif
 
 .if ${PORT_OPTIONS:MMYSQL}
-USE_PHP+=	mysqli
+USE_PHP+=	pdo_mysql
 DB=		mysql
 MYSQL=
 PGSQL=		"\#"

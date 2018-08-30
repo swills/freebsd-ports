@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/libdecaf/Makefile 458614 2018-01-10 07:55:18Z krion $
+# $FreeBSD: head/security/libdecaf/Makefile 477238 2018-08-15 16:27:42Z krion $
 
 PORTNAME=	libdecaf
-PORTVERSION=	0.9.4
-PORTREVISION=	1
+PORTVERSION=	1.0.0
 CATEGORIES=	security
 MASTER_SITES=	SF/ed448goldilocks/
 

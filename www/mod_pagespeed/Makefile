@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_pagespeed/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/www/mod_pagespeed/Makefile 477644 2018-08-20 10:20:26Z mat $
 
 PORTNAME=	mod_pagespeed
 PORTVERSION=	1.12.34.2
@@ -9,6 +9,7 @@ MASTER_SITES=	LOCAL/mmokhi:boringssl,chromium_base,chromium_build,googleurl,gfla
 		https://dl.google.com/closure-compiler/:closurezip
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 DISTFILES=	${NON_GH_DISTS}
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	mmokhi@FreeBSD.org
 COMMENT=	Apache module for rewriting web pages to reduce latency

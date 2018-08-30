@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-yesod-static/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-yesod-static/Makefile 477147 2018-08-14 09:38:03Z amdmi3 $
 
 PORTNAME=	yesod-static
 PORTVERSION=	1.6.0
@@ -9,6 +9,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Static file serving subsite for Yesod Web Framework
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	async attoparsec>=0.10 base64-bytestring>=0.1.0.1 \
 		blaze-builder>=0.3 byteable>=0.1 conduit>=0.5 conduit-extra \

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm/Makefile 471322 2018-06-01 23:02:56Z sunpoet $
+# $FreeBSD: head/www/npm/Makefile 476885 2018-08-11 14:16:16Z sunpoet $
 
 PORTNAME=	npm
-PORTVERSION=	5.10.0
+PORTVERSION=	6.3.0
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 

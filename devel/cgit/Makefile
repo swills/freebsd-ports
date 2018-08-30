@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cgit/Makefile 474827 2018-07-17 20:14:05Z pi $
+# $FreeBSD: head/devel/cgit/Makefile 477003 2018-08-12 17:09:03Z riggs $
 
 PORTNAME=	cgit
-PORTVERSION=	1.2
+PORTVERSION=	1.2.1
 CATEGORIES=	devel www
 MASTER_SITES=	http://git.zx2c4.com/cgit/snapshot/:cgit \
 		https://www.kernel.org/pub/software/scm/git/:git

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.mk 463463 2018-03-03 06:50:15Z ultima $
+# $FreeBSD: head/Mk/bsd.options.mk 478306 2018-08-28 12:22:53Z mat $
 #
 # These variables are used in port makefiles to define the options for a port.
 #
@@ -421,10 +421,6 @@ PLIST_SUB+=		PORTDOCS=""
 PLIST_SUB+=	        PORTEXAMPLES="@comment "
 .else
 PLIST_SUB+=	        PORTEXAMPLES=""
-.endif
-
-.if ${PORT_OPTIONS:MDEBUG}
-WITH_DEBUG=	yes
 .endif
 
 .if defined(NO_OPTIONS_SORT)

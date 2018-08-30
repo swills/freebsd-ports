@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/faust-lv2/Makefile 475035 2018-07-20 20:50:31Z yuri $
+# $FreeBSD: head/audio/faust-lv2/Makefile 476955 2018-08-12 04:02:04Z linimon $
 
 PORTNAME=	faust
 DISTVERSION=	1.4.20180118
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 PKGNAMESUFFIX=	-lv2
@@ -11,6 +12,8 @@ COMMENT=	LV2 plugin architecture for the Faust programming language
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol: vtable for LV2UI in readonly segment
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		faust>0:audio/faust \

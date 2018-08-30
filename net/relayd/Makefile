@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/relayd/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net/relayd/Makefile 478106 2018-08-26 08:16:50Z delphij $
 
 PORTNAME=	relayd
 PORTVERSION=	5.5.20140810
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 
 MAINTAINER=	mm@FreeBSD.org

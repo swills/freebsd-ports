@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/miller/Makefile 446422 2017-07-22 17:40:25Z olgeni $
+# $FreeBSD: head/textproc/miller/Makefile 477333 2018-08-16 13:07:44Z miwi $
 
 PORTNAME=	miller
-PORTVERSION=	5.2.2
-DISTVERSIONPREFIX=v
+DISTVERSIONPREFIX=	v
+DISTVERSION=	5.3.0
 CATEGORIES=	textproc
 
 MAINTAINER=	jungleboogie0+mlr@gmail.com
@@ -11,13 +11,13 @@ COMMENT=	Sed/awk/cut/join/sort for name-indexed data such as CSV
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
+BROKEN_aarch64=	Fails to compile: undefined reference to .mcount
+
 USES=		autoreconf libtool
 USE_GITHUB=	yes
 GH_ACCOUNT=	johnkerl
 GNU_CONFIGURE=	yes
 
 PLIST_FILES=	bin/mlr man/man1/mlr.1.gz
-
-BROKEN_aarch64=		Fails to compile: undefined reference to .mcount
 
 .include <bsd.port.mk>

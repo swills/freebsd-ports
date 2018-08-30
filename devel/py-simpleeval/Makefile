@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-simpleeval/Makefile 433946 2017-02-12 14:08:20Z jrm $
+# $FreeBSD: head/devel/py-simpleeval/Makefile 476847 2018-08-10 19:21:24Z jrm $
 
 PORTNAME=	simpleeval
-PORTVERSION=	0.9.5
+PORTVERSION=	0.9.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-libstorj/Makefile 471179 2018-05-30 21:50:46Z antoine $
+# $FreeBSD: head/net/py-libstorj/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	libstoraj
 PORTVERSION=	1.0.2
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Python bindings for libstorj
 
 LICENSE=	LGPL21+

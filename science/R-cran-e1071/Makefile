@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-e1071/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/R-cran-e1071/Makefile 476824 2018-08-10 10:00:35Z tota $
 
 PORTNAME=	e1071
-DISTVERSION=	1.6-8
-PORTREVISION=	1
+DISTVERSION=	1.7-0
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

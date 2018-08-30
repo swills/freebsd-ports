@@ -1,19 +1,23 @@
-# $FreeBSD: head/devel/statik/Makefile 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/devel/statik/Makefile 477809 2018-08-22 18:38:28Z joneum $
 
 PORTNAME=	statik
-PORTVERSION=	20141209
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.1.2
+PORTEPOCH=	1
 CATEGORIES=	devel
 
 MAINTAINER=	cheffo@freebsd-bg.org
 COMMENT=	Embed static files into a Go executable
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	i386 amd64
 
 USES=		go
 USE_GITHUB=	yes
 GH_ACCOUNT=	rakyll
-GH_TAGNAME=	4a16c83
+
+PLIST_FILES=	bin/statik
 
 .include <bsd.port.mk>

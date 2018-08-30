@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 476233 2018-08-02 12:12:40Z rene $
+# $FreeBSD: head/www/Makefile 478050 2018-08-25 14:50:53Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -43,8 +43,8 @@
     SUBDIR += axis2
     SUBDIR += bacula-web
     SUBDIR += baikal
-    SUBDIR += bareos16-webui
     SUBDIR += bareos-webui
+    SUBDIR += bareos16-webui
     SUBDIR += bigbluebutton
     SUBDIR += bins
     SUBDIR += bkmrkconv
@@ -492,11 +492,11 @@
     SUBDIR += mod_xsendfile
     SUBDIR += mohawk
     SUBDIR += moinmoin
+    SUBDIR += moinmoincli
     SUBDIR += monast
     SUBDIR += mongoose
     SUBDIR += mongrel2
     SUBDIR += moodle31
-    SUBDIR += moodle32
     SUBDIR += moodle33
     SUBDIR += moodle34
     SUBDIR += moodle35
@@ -1081,6 +1081,7 @@
     SUBDIR += p5-Mojolicious
     SUBDIR += p5-Mojolicious-Plugin-Authentication
     SUBDIR += p5-Mojolicious-Plugin-Database
+    SUBDIR += p5-Mojolicious-Plugin-HamlRenderer
     SUBDIR += p5-Mojolicious-Plugin-Mongodb
     SUBDIR += p5-Mojolicious-Plugin-SetUserGroup
     SUBDIR += p5-Mojolicious-Plugin-TtRenderer
@@ -1627,7 +1628,6 @@
     SUBDIR += py-django-voting
     SUBDIR += py-django-widget-tweaks
     SUBDIR += py-django111
-    SUBDIR += py-django18
     SUBDIR += py-django20
     SUBDIR += py-django21
     SUBDIR += py-django_compressor
@@ -1635,10 +1635,10 @@
     SUBDIR += py-django_polymorphic
     SUBDIR += py-djangocms-admin-style
     SUBDIR += py-djangorestframework
-    SUBDIR += py-djangorestframework36
     SUBDIR += py-djangorestframework-csv
     SUBDIR += py-djangorestframework-filters
     SUBDIR += py-djangorestframework-xml
+    SUBDIR += py-djangorestframework36
     SUBDIR += py-djangotoolbox
     SUBDIR += py-dojango
     SUBDIR += py-drf-yasg
@@ -1894,6 +1894,7 @@
     SUBDIR += py-websocket-client
     SUBDIR += py-webunit
     SUBDIR += py-werkzeug
+    SUBDIR += py-wfuzz
     SUBDIR += py-wikipedia
     SUBDIR += py-wikitools
     SUBDIR += py-ws4py
@@ -1904,9 +1905,9 @@
     SUBDIR += py-zope.app.wsgi
     SUBDIR += pyblosxom
     SUBDIR += pycarddav
-    SUBDIR += pydio
     SUBDIR += pyjamas
     SUBDIR += qdecoder
+    SUBDIR += qhttpengine
     SUBDIR += qooxdoo
     SUBDIR += qt4-webkit
     SUBDIR += qt5-webchannel
@@ -2263,8 +2264,8 @@
     SUBDIR += spreadlogd
     SUBDIR += sqstat
     SUBDIR += squid
-    SUBDIR += squid3
     SUBDIR += squid-devel
+    SUBDIR += squid3
     SUBDIR += squid_radius_auth
     SUBDIR += squidanalyzer
     SUBDIR += squidclamav
@@ -2478,6 +2479,7 @@
     SUBDIR += wsdlpull
     SUBDIR += wsmake
     SUBDIR += wt
+    SUBDIR += wuzz
     SUBDIR += www6to4
     SUBDIR += wwwoffle
     SUBDIR += xapian-omega

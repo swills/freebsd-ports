@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/nomad/Makefile 472333 2018-06-13 16:27:37Z pi $
+# $FreeBSD: head/sysutils/nomad/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	nomad
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.8.4
 CATEGORIES=	sysutils
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Cluster manager and scheduler
 
 LICENSE=	MPL20

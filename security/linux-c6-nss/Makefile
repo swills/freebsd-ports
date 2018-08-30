@@ -1,15 +1,14 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/security/linux-c6-nss/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/security/linux-c6-nss/Makefile 478165 2018-08-26 19:53:54Z pi $
 
 PORTNAME=	nss
-PORTVERSION=	3.28.4
-PORTREVISION=	2
+PORTVERSION=	3.36.0
 CATEGORIES=	security linux
 LIB_DISTNAMES=	${DISTNAME} \
-		${PORTNAME}-util-${PORTVERSION}-1.el6_9 \
+		${PORTNAME}-util-${PORTVERSION}-1.el6 \
 		${PORTNAME}-softokn-3.14.3-23.3.el6_8
 SRC_DISTFILES=	${DISTNAME}${SRC_SUFX}:SOURCE \
-		${PORTNAME}-util-${PORTVERSION}-1.el6_9${SRC_SUFX}:SOURCE \
+		${PORTNAME}-util-${PORTVERSION}-1.el6${SRC_SUFX}:SOURCE \
 		${PORTNAME}-softokn-3.14.3-23.3.el6_8${SRC_SUFX}:SOURCE
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -18,7 +17,7 @@ COMMENT=	Network Security Services (Linux CentOS ${LINUX_DIST_VER})
 LICENSE=	MPL20
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
-RPMVERSION=	4.el6_9
+RPMVERSION=	8.el6
 USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	nspr sqlite3

@@ -1,9 +1,9 @@
 # Created by: aaron@FreeBSD.org
-# $FreeBSD: head/games/mkhexgrid/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/mkhexgrid/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	mkhexgrid
 PORTVERSION=	0.1.1
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	games
 MASTER_SITES=	http://www.nomic.net/~uckelman/mkhexgrid/releases/ \
 		http://aaron.daltons.ca/freebsd/

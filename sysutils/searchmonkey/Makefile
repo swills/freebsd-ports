@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/searchmonkey/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/searchmonkey/Makefile 478051 2018-08-25 15:31:48Z tobik $
 
 PORTNAME=	searchmonkey
 PORTVERSION=	2.0.0
@@ -14,6 +14,7 @@ COMMENT=	Search using regexes for file names and text
 LICENSE=	GPLv3+
 
 USES=		qmake dos2unix qt:4 zip
+USE_CXXSTD=	c++98
 DOS2UNIX_GLOB=	*.cpp *.h
 USE_QT=		corelib gui moc_build rcc_build uic_build
 

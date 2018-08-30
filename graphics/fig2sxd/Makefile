@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/graphics/fig2sxd/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/fig2sxd/Makefile 476348 2018-08-04 11:14:54Z gerald $
 
 PORTNAME=	fig2sxd
 PORTVERSION=	0.22.1
@@ -19,7 +19,7 @@ PLIST_FILES=	bin/fig2sxd man/man1/fig2sxd.1.gz
 
 .include <bsd.port.pre.mk>
 
-# does not compile with clang 6.0.0
+# Does not compile with clang 6.0.0; PR 226178.
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200056
 USE_GCC=	yes
 .endif

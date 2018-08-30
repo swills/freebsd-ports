@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/nextcloud/Makefile 472248 2018-06-12 13:48:23Z brnrd $
+# $FreeBSD: head/www/nextcloud/Makefile 476407 2018-08-05 11:30:52Z brnrd $
 
 PORTNAME=	nextcloud
-DISTVERSION=	13.0.4
+DISTVERSION=	13.0.5
 CATEGORIES=	www
 MASTER_SITES=	https://download.nextcloud.com/server/releases/
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}

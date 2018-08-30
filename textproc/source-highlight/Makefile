@@ -1,9 +1,9 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/textproc/source-highlight/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/textproc/source-highlight/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	source-highlight
 DISTVERSION=	3.1.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	GNU/src-highlite
 

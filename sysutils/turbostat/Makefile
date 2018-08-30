@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/turbostat/Makefile 475329 2018-07-25 19:17:22Z pi $
+# $FreeBSD: head/sysutils/turbostat/Makefile 476320 2018-08-03 20:06:27Z pi $
 
 PORTNAME=	turbostat
 PORTVERSION=	4.17 # Turbostat itself has a version, but we don't bother
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://raw.githubusercontent.com/torvalds/linux/v${PORTVERSION}/tools/power/x86/turbostat/ \
 		https://raw.githubusercontent.com/torvalds/linux/v${PORTVERSION}/arch/x86/include/asm/

@@ -1,9 +1,9 @@
 # Created by: Jeremy Norris <ishmael272home.com>
-# $FreeBSD: head/net-im/licq-qt-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/licq-qt-gui/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	qt4-gui
 PORTVERSION=	1.8.2
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net-im
 PKGNAMESUFFIX?=	${KDE_SUFFIX}${PKGNAMESUFFIX2}
 

@@ -1,5 +1,5 @@
 # Created by: Rashid N. Achilov <citycat4@ngs.ru>
-# $FreeBSD: head/editors/yui/Makefile 457055 2017-12-23 14:27:08Z tijl $
+# $FreeBSD: head/editors/yui/Makefile 478119 2018-08-26 11:09:38Z tobik $
 
 PORTNAME=	yui
 PORTVERSION=	3.2.06
@@ -13,6 +13,10 @@ COMMENT=	Rich-featured multi-windows console text editor
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
+DEPRECATED=	Unmaintained upstream
+EXPIRATION_DATE=	2018-09-30
+
+BROKEN_FreeBSD_12=		fails to link: undefined reference to HTAnchor_physical
 BROKEN_aarch64=		fails to compile: cast from pointer to smaller type loses information
 BROKEN_armv6=		fails to link: undefined reference to HTAnchor_physical
 BROKEN_armv7=		fails to link: undefined reference to HTAnchor_physical

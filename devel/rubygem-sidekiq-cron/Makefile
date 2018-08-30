@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq-cron/Makefile 475779 2018-07-29 19:20:52Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq-cron/Makefile 477593 2018-08-19 20:32:21Z sunpoet $
 
 PORTNAME=	sidekiq-cron
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

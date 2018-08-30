@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/Makefile 466881 2018-04-09 18:49:38Z tcberner $
+# $FreeBSD: head/x11-clocks/Makefile 477371 2018-08-16 20:28:32Z rene $
 #
 
     COMMENT = X11 clocks
@@ -39,7 +39,6 @@
     SUBDIR += rclock
     SUBDIR += sanduhr
     SUBDIR += stopwatch
-    SUBDIR += swisswatch
     SUBDIR += t3d
     SUBDIR += tclock
     SUBDIR += tktz

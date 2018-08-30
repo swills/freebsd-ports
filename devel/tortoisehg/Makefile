@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/tortoisehg/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/tortoisehg/Makefile 476747 2018-08-09 14:24:37Z arrowd $
 
 PORTNAME=	tortoisehg
 DISTVERSION=	4.6
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/tortoisehg/targz/downloads/
 
-MAINTAINER=	6yearold@gmail.com
+MAINTAINER=	arrowd@FreeBSD.org
 COMMENT=	GUI for Mercurial VCS
 
 LICENSE=	GPLv2

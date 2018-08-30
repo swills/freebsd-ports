@@ -1,10 +1,10 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/net-mgmt/resource-agents/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-mgmt/resource-agents/Makefile 477075 2018-08-13 15:25:40Z tobik $
 
 PORTNAME=	resource-agents
 PORTVERSION=	4.1.1
-PORTREVISION=	1
 DISTVERSIONPREFIX=v
+PORTREVISION=	2
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	dpejesh@yahoo.com
@@ -21,9 +21,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ClusterLabs
 
 USES=		autoreconf gmake pkgconfig python shebangfix
-USE_GCC=	yes
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--disable-fatal-warnings
 
 SHEBANG_LANG=	sh
 sh_OLD_CMD=	/bin/sh
@@ -39,7 +39,7 @@ SHEBANG_FILES=	heartbeat/* \
 		tools/ocft/ocft.in \
 		tools/ocf-tester.in
 
-OPTIONS_DEFINE=	MANPAGES
+OPTIONS_DEFINE=	DOCS MANPAGES
 OPTIONS_DEFAULT=MANPAGES
 OPTIONS_SUB=	yes
 

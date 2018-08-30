@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 476231 2018-08-02 11:54:36Z rene $
+# $FreeBSD: head/net/Makefile 478302 2018-08-28 11:59:46Z bapt $
 #
 
     COMMENT = Networking tools
@@ -75,7 +75,6 @@
     SUBDIR += calendarsupport
     SUBDIR += ccxstream
     SUBDIR += ceph
-    SUBDIR += ceph-devel
     SUBDIR += cf
     SUBDIR += chrony
     SUBDIR += citrix_ica
@@ -84,8 +83,6 @@
     SUBDIR += cloud-init-azure
     SUBDIR += clusterit
     SUBDIR += cnd
-    SUBDIR += coda6_client
-    SUBDIR += coda6_server
     SUBDIR += concourse-fly
     SUBDIR += corkscrew
     SUBDIR += corosync2
@@ -118,7 +115,6 @@
     SUBDIR += dhcpdump
     SUBDIR += dhcperf
     SUBDIR += dhcping
-    SUBDIR += dhcprelay
     SUBDIR += dhcprelya
     SUBDIR += dictd
     SUBDIR += dictd-database
@@ -133,7 +129,6 @@
     SUBDIR += dtcp
     SUBDIR += dtcpclient
     SUBDIR += dual-dhclient
-    SUBDIR += e169-stats
     SUBDIR += easysoap
     SUBDIR += echoping
     SUBDIR += elixir-kafka_ex
@@ -148,6 +143,7 @@
     SUBDIR += exabgp
     SUBDIR += exaddos
     SUBDIR += fb
+    SUBDIR += fiche
     SUBDIR += file2pcap
     SUBDIR += findmtu
     SUBDIR += flower
@@ -192,7 +188,6 @@
     SUBDIR += gnome-online-miners
     SUBDIR += gnu-dico
     SUBDIR += gnu-radius
-    SUBDIR += gobgp
     SUBDIR += go-amqp
     SUBDIR += go-bapu
     SUBDIR += go-cs
@@ -201,6 +196,7 @@
     SUBDIR += go-httptreemux
     SUBDIR += go-nats
     SUBDIR += go.net
+    SUBDIR += gobgp
     SUBDIR += gofish
     SUBDIR += gogoc
     SUBDIR += google-cloud-sdk
@@ -239,6 +235,7 @@
     SUBDIR += hanstunnel
     SUBDIR += haproxy
     SUBDIR += haproxy-devel
+    SUBDIR += haproxy17
     SUBDIR += hexinject
     SUBDIR += hidentd
     SUBDIR += hinfo
@@ -324,8 +321,8 @@
     SUBDIR += kdav
     SUBDIR += kdenetwork
     SUBDIR += kdenetwork-filesharing
-    SUBDIR += kdenetwork-kde4
     SUBDIR += kdenetwork-filesharing-kde4
+    SUBDIR += kdenetwork-kde4
     SUBDIR += kdenetwork-strigi-analyzers-kde4
     SUBDIR += kea
     SUBDIR += kf5-kholidays
@@ -338,6 +335,7 @@
     SUBDIR += kio-upnp-ms
     SUBDIR += kippo
     SUBDIR += kissd
+    SUBDIR += kitinerary
     SUBDIR += kldap
     SUBDIR += kmailtransport
     SUBDIR += kmbox
@@ -354,7 +352,6 @@
     SUBDIR += ktnef
     SUBDIR += kwooty
     SUBDIR += l2tpd
-    SUBDIR += l4ip
     SUBDIR += ladvd
     SUBDIR += lambdamoo
     SUBDIR += latd
@@ -522,10 +519,13 @@
     SUBDIR += nettest
     SUBDIR += netwib
     SUBDIR += neubot
+    SUBDIR += nfs-ganesha
+    SUBDIR += nfs-ganesha-kmod
     SUBDIR += nfsshell
     SUBDIR += ng_mikrotik_eoip
     SUBDIR += ngrep
     SUBDIR += nifmon
+    SUBDIR += nitroshare
     SUBDIR += nload
     SUBDIR += nmsg
     SUBDIR += nncp
@@ -569,8 +569,6 @@
     SUBDIR += openmpi
     SUBDIR += openmpi2
     SUBDIR += openmpi3
-    SUBDIR += openmq
-    SUBDIR += openmq-client
     SUBDIR += openntpd
     SUBDIR += opennx
     SUBDIR += openpgm
@@ -1148,6 +1146,8 @@
     SUBDIR += py-txrestapi
     SUBDIR += py-upnp-inspector
     SUBDIR += py-uritemplate
+    SUBDIR += py-uritools
+    SUBDIR += py-urlextract
     SUBDIR += py-urllib3
     SUBDIR += py-wmi-query
     SUBDIR += py-wolframalpha
@@ -1461,7 +1461,6 @@
     SUBDIR += tn5250j
     SUBDIR += toonel
     SUBDIR += torsocks
-    SUBDIR += traceroute
     SUBDIR += traefik
     SUBDIR += traff
     SUBDIR += trafshow
@@ -1565,5 +1564,6 @@
     SUBDIR += zillion
     SUBDIR += zmap
     SUBDIR += zsync
+    SUBDIR += zyre
 
 .include <bsd.port.subdir.mk>

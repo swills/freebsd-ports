@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-hS3/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-hS3/Makefile 477219 2018-08-15 10:51:55Z arrowd $
 
 PORTNAME=	hS3
 PORTVERSION=	0.5.9
@@ -9,6 +9,9 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Interface to Amazon's Simple Storage Service (S3)
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Not being developed upstream
+EXPIRATION_DATE=	2018-09-15
 
 USE_CABAL=	Crypto>=4.1.0 dataenc HTTP>=4000.0.0 hxt>=9.0.0 \
 		MissingH>=0.18.6 network>=2.6 network-uri>=2.6 random \

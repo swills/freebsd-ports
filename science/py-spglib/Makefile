@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-spglib/Makefile 472750 2018-06-19 02:20:42Z yuri $
+# $FreeBSD: head/science/py-spglib/Makefile 477482 2018-08-18 07:25:40Z yuri $
 
 PORTNAME=	spglib
-DISTVERSION=	1.10.3.65
+DISTVERSION=	1.10.4.1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

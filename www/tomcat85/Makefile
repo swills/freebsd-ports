@@ -1,9 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat85/Makefile 475658 2018-07-29 12:45:18Z dbaio $
+# $FreeBSD: head/www/tomcat85/Makefile 477212 2018-08-15 03:36:41Z joneum $
 
 PORTNAME=	tomcat
-PORTVERSION=	8.5.30
-PORTREVISION=	1
+PORTVERSION=	8.5.32
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/${PORTNAME}/${PORTNAME}-${PORTVERSION:C/([0-9])(.*)/\1/}/v${PORTVERSION}/bin
 PKGNAMESUFFIX=	85
@@ -53,13 +52,19 @@ post-install:
 	@${RM} ${STAGEDIR}${TOMCAT_HOME}/bin/*.bat
 	(cd ${STAGEDIR}${TOMCAT_HOME}/conf &&\
 		for f in $$(find . -type f); do ${MV} $$f $$f.sample; done)
+
+post-install-HOST_MANAGER-on:
 	(cd ${STAGEDIR}${TOMCAT_HOME}/webapps &&\
-		for f in host-manager/META-INF/context.xml host-manager/WEB-INF/web.xml \
-			manager/META-INF/context.xml manager/WEB-INF/web.xml; do \
+		for f in host-manager/META-INF/context.xml host-manager/WEB-INF/web.xml; do \
 			${MV} $$f $$f.sample; done)
 
 post-install-HOST_MANAGER-off:
 	@${RM} -R ${STAGEDIR}${TOMCAT_HOME}/webapps/host-manager
+
+post-install-MANAGER-on:
+	(cd ${STAGEDIR}${TOMCAT_HOME}/webapps &&\
+		for f in manager/META-INF/context.xml manager/WEB-INF/web.xml; do \
+			${MV} $$f $$f.sample; done)
 
 post-install-MANAGER-off:
 	@${RM} -R ${STAGEDIR}${TOMCAT_HOME}/webapps/manager

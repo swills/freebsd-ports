@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-async_timeout/Makefile 468294 2018-04-25 20:04:54Z wg $
+# $FreeBSD: head/devel/py-async_timeout/Makefile 476647 2018-08-08 17:22:21Z wg $
 
 PORTNAME=	async_timeout
-PORTVERSION=	2.0.1
+PORTVERSION=	3.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

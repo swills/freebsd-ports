@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@geeksrus.net>
-# $FreeBSD: head/devel/tinyq/Makefile 412149 2016-03-30 00:53:44Z amdmi3 $
+# $FreeBSD: head/devel/tinyq/Makefile 478101 2018-08-26 07:03:20Z tobik $
 
 PORTNAME=	tinyq
 PORTVERSION=	3.0.6
@@ -13,7 +13,11 @@ COMMENT=	Stripped down version of Qt 3 for use as a utility library
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE.GPL
 
+DEPRECATED=	Unmaintained upstream and unused in the ports tree
+EXPIRATION_DATE=	2018-09-15
+
 USES=		gmake tar:bzip2
+USE_CXXSTD=	c++98
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-thread -stl -prefix ${PREFIX}/tinyq -docdir ${DOCSDIR}
 CONFIGURE_ENV=	QTDIR="${WRKSRC}"
@@ -24,8 +28,8 @@ OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-O2|${CXXFLAGS}|' \
-		-e 's|gcc|${CC}|' \
-		-e 's|g++|${CXX}|' \
+		-e 's|gcc|${CC} ${CFLAGS}|' \
+		-e 's|g++|${CXX} ${CXXFLAGS}|' \
 		-e 's|/usr/local|${LOCALBASE}|' \
 		-e 's|/usr/X11R6|${LOCALBASE}|' \
 		-e 's|release|release thread|' \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-devise_pam_authenticatable2/Makefile 465479 2018-03-24 21:11:40Z sunpoet $
+# $FreeBSD: head/security/rubygem-devise_pam_authenticatable2/Makefile 478068 2018-08-25 16:01:26Z sunpoet $
 
 PORTNAME=	devise_pam_authenticatable2
-PORTVERSION=	9.1.0
+PORTVERSION=	9.1.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

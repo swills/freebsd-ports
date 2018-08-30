@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	gstreamer1
 PORTVERSION=	1.2.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/qt-gstreamer/
 PKGNAMESUFFIX=	-${FLAVOR}

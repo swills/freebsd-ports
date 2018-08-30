@@ -1,8 +1,8 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/devel/upnp/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/devel/upnp/Makefile 477687 2018-08-20 22:41:43Z swills $
 
 PORTNAME=	upnp
-PORTVERSION=	1.6.22
+PORTVERSION=	1.6.25
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/p${PORTNAME}/p${PORTNAME}/libUPnP%20${PORTVERSION}
@@ -16,17 +16,28 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 USES=		cpe libtool pathfix tar:bzip2
 CPE_VENDOR=	libupnp_project
 CPE_PRODUCT=	libupnp
 USE_LDCONFIG=	yes
 
-PORTDOCS=	*
+PORTDOCS=	ixml/*.html upnp/*.html
 
-OPTIONS_DEFINE=	DEBUG DOCS
+OPTIONS_DEFINE=	DEBUG DOCS IPV6
+OPTIONS_SUB=	yes
 
 DEBUG_CONFIGURE_ON=	--enable-debug
 DOCS_CONFIGURE_ON=	--with-documentation=${DOCSDIR}
 DOCS_CONFIGURE_OFF=	--without-documentation
+IPV6_CONFIGURE_ON=	--enable-ipv6
+
+pre-configure:
+	${REINPLACE_CMD} -e '386s,docs/dist,,' ${WRKSRC}/Makefile.in
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	(cd ${WRKSRC}/docs/dist/html && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
+	${RM} -r ${STAGEDIR}${DOCSDIR}/examples
 
 .include <bsd.port.mk>

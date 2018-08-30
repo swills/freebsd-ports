@@ -1,9 +1,9 @@
 # Created by: mharo@FreeBSD.org
-# $FreeBSD: head/security/keyprint/Makefile 412563 2016-04-05 15:48:31Z amdmi3 $
+# $FreeBSD: head/security/keyprint/Makefile 477723 2018-08-21 16:25:42Z tobik $
 
 PORTNAME=	keyprint
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	LOCAL/mharo
 

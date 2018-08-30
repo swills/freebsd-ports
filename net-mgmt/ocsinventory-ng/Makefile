@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/ocsinventory-ng/Makefile 466796 2018-04-08 12:19:58Z brnrd $
+# $FreeBSD: head/net-mgmt/ocsinventory-ng/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	ocsinventory-ng
 PORTVERSION=	2.1.2
@@ -12,6 +12,8 @@ COMMENT=	Open Computer and Software Inventory Next Generation
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+IGNORE_WITH_PHP=	70 71 72
 
 RUN_DEPENDS=	p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-DBI>=0:databases/p5-DBI \

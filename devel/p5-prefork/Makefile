@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-prefork/Makefile 381151 2015-03-12 23:00:02Z adamw $
+# $FreeBSD: head/devel/p5-prefork/Makefile 476342 2018-08-04 09:07:57Z amdmi3 $
 
 PORTNAME=	prefork
 PORTVERSION=	1.04
@@ -12,7 +12,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Optimize module loading across forking and non-forking scenarios
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

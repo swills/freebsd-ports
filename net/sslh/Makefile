@@ -1,9 +1,10 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/sslh/Makefile 461754 2018-02-13 22:20:49Z olivier $
+# $FreeBSD: head/net/sslh/Makefile 477536 2018-08-18 20:43:01Z sunpoet $
 
 PORTNAME=	sslh
 PORTVERSION=	1.19c
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -38,11 +39,7 @@ PORTEXAMPLES=	example.cfg
 
 MAKE_JOBS_UNSAFE=	yes
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MLIBWRAP}
-MAKE_ENV+=	USELIBWRAP=1
-.endif
+LIBWRAP_MAKE_ENV=	USELIBWRAP=1
 
 post-patch:
 	@${REINPLACE_CMD} -Ee 's,^(release=)$$,\1${PORTVERSION},' \

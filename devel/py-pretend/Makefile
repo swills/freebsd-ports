@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-pretend/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pretend/Makefile 476557 2018-08-07 02:07:53Z koobs $
 
 PORTNAME=		pretend
-PORTVERSION=		1.0.8
+PORTVERSION=		1.0.9
 DISTVERSIONPREFIX=	v
 CATEGORIES=		devel python
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
@@ -20,5 +20,8 @@ USE_PYTHON=	autoplist distutils
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	alex
+
+do-test:
+	@cd ${WRKSRC} && ${PYTHON_CMD} -m pytest
 
 .include <bsd.port.mk>

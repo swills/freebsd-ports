@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/librelp/Makefile 470266 2018-05-18 05:18:14Z matthew $
+# $FreeBSD: head/devel/librelp/Makefile 478186 2018-08-27 09:50:23Z matthew $
 
 PORTNAME=	librelp
-PORTVERSION=	1.2.16
+PORTVERSION=	1.2.17
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://download.rsyslog.com/librelp/
 
@@ -11,7 +12,17 @@ COMMENT=	Reliable event logging protocol library
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS=	libgnutls.so:security/gnutls
+OPTIONS_SINGLE=			SSLLIB
+OPTIONS_SINGLE_SSLLIB=		GNUTLS OPENSSL
+OPTIONS_DEFAULT=		GNUTLS
+
+GNUTLS_LIB_DEPENDS=		libgnutls.so:security/gnutls
+GNUTLS_CONFIGURE_ENABLE=	tls
+
+OPENSSL_USES=			ssl
+OPENSSL_CONFIGURE_ENABLE=	tls-openssl
+OPENSSL_CONFIGURE_ENV=		OPENSSL_LIBS="-L${OPENSSLLIB} -lcrypto" \
+				OPENSSL_CFLAGS="-I ${OPENSSLINC}"
 
 USES=		libtool pathfix pkgconfig
 USE_LDCONFIG=	yes

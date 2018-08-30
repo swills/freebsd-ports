@@ -1,9 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/spdlog/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/spdlog/Makefile 477313 2018-08-16 08:42:52Z vanilla $
 
 PORTNAME=	spdlog
-PORTVERSION=	0.17.0
-PORTREVISION=	1
+PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -16,6 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	gabime
 
-USES=		cmake compiler:c++11-lib dos2unix pathfix
+USES=		cmake compiler:c++11-lib pathfix
 
 .include <bsd.port.mk>

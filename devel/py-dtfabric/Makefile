@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-dtfabric/Makefile 473759 2018-07-02 17:38:10Z antoine $
+# $FreeBSD: head/devel/py-dtfabric/Makefile 478011 2018-08-25 08:10:15Z antoine $
 
 PORTNAME=	dtfabric
-PORTVERSION=	20180604
+PORTVERSION=	20180808
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/libyal/dtfabric/releases/download/${PORTVERSION}/

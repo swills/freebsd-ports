@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 475529 2018-07-28 12:03:06Z miwi $
+# $FreeBSD: head/converters/Makefile 477371 2018-08-16 20:28:32Z rene $
 #
 
     COMMENT = Character code converters
@@ -49,9 +49,9 @@
     SUBDIR += libiconv
     SUBDIR += libticonv
     SUBDIR += libutf-8
-    SUBDIR += lua51-iconv
     SUBDIR += lua-iconv
     SUBDIR += lua-json
+    SUBDIR += lua51-iconv
     SUBDIR += mimelib
     SUBDIR += mmencode
     SUBDIR += mpack
@@ -183,7 +183,6 @@
     SUBDIR += tuc
     SUBDIR += unix2dos
     SUBDIR += uudeview
-    SUBDIR += uudx
     SUBDIR += uulib
     SUBDIR += vda2fbd
     SUBDIR += wkhtmltopdf

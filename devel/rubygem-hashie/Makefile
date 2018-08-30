@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-hashie/Makefile 456811 2017-12-20 14:37:53Z sunpoet $
+# $FreeBSD: head/devel/rubygem-hashie/Makefile 477175 2018-08-14 16:41:14Z sunpoet $
 
 PORTNAME=	hashie
-PORTVERSION=	3.5.7
+PORTVERSION=	3.6.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

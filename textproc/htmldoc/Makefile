@@ -1,9 +1,9 @@
 # Created by: Glenn Trewitt <glenn@trewitt.org>
-# $FreeBSD: head/textproc/htmldoc/Makefile 462145 2018-02-17 12:01:12Z sunpoet $
+# $FreeBSD: head/textproc/htmldoc/Makefile 478107 2018-08-26 08:26:41Z delphij $
 
 PORTNAME=	htmldoc
 PORTVERSION=	1.8.28
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/michaelrsweet/htmldoc/releases/download/release-${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source

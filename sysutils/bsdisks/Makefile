@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/bsdisks/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/bsdisks/Makefile 476747 2018-08-09 14:24:37Z arrowd $
 
 PORTNAME=	bsdisks
 PORTVERSION=	0.4
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://bitbucket.org/arrowd/bsdisks/downloads/
 
-MAINTAINER=	6yearold@gmail.com
+MAINTAINER=	arrowd@FreeBSD.org
 COMMENT=	UDisks2 service implementation for FreeBSD
 
 LICENSE=	BSD3CLAUSE

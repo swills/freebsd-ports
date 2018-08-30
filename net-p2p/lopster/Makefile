@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/net-p2p/lopster/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-p2p/lopster/Makefile 477771 2018-08-22 06:40:47Z tobik $
 
 PORTNAME=	lopster
 PORTVERSION=	1.2.2
@@ -13,6 +13,9 @@ COMMENT=	GTK+ client for Napster and free alternatives
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Unmaintained. Napster is dead
+EXPIRATION_DATE=	2018-08-30
 
 GNU_CONFIGURE=	yes
 USES=		gmake

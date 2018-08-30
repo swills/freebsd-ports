@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/libevent/Makefile 459209 2018-01-16 22:15:05Z feld $
+# $FreeBSD: head/devel/libevent/Makefile 478104 2018-08-26 07:56:39Z delphij $
 
 PORTNAME=	libevent
 PORTVERSION=	2.1.8
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	release-
 DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	devel

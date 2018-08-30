@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/socket_wrapper/Makefile 473829 2018-07-03 13:09:10Z timur $
+# $FreeBSD: head/devel/socket_wrapper/Makefile 476959 2018-08-12 04:14:20Z linimon $
 
 PORTNAME=		socket_wrapper
 PORTVERSION=		1.1.9
@@ -9,6 +9,8 @@ MAINTAINER=		timur@FreeBSD.org
 COMMENT=		Library passing all socket communications through unix sockets
 
 LICENSE=		GPLv3
+
+BROKEN_aarch64=		fails to compile: socket_wrapper.c:4036:9: cast to 'void *' from smaller integer type 'uintptr_t' (aka 'unsigned int')
 
 USES=			cmake:outsource
 USE_LDCONFIG=		yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/libav/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/multimedia/libav/Makefile 476802 2018-08-10 00:55:12Z jbeich $
 
 PORTNAME=	libav
 PORTVERSION=	12.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	http://libav.org/releases/
 

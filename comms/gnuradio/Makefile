@@ -1,8 +1,7 @@
-# $FreeBSD: head/comms/gnuradio/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/comms/gnuradio/Makefile 477209 2018-08-14 23:33:58Z db $
 
 PORTNAME=	gnuradio
-PORTVERSION=	3.7.13.3
-PORTREVISION=	3
+PORTVERSION=	3.7.13.4
 CATEGORIES=	comms astro hamradio
 MASTER_SITES=	http://gnuradio.org/releases/gnuradio/ \
 		LOCAL/db
@@ -111,6 +110,9 @@ TESTING_BUILD_DEPENDS=	cppunit-config:devel/cppunit
 .if ${PORT_OPTIONS:MUHD}
 LIBSTRIP_FILES+=	uhd
 LIB_DEPENDS+=	libuhd.so:comms/uhd
+PLIST_SUB+=	UHD=""
+.else
+PLIST_SUB+=	UHD="@comment "
 .endif
 
 PATCH_FILES=	docs/doxygen/Doxyfile.in \

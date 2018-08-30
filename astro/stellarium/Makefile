@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium/Makefile 473960 2018-07-05 10:12:41Z danfe $
+# $FreeBSD: head/astro/stellarium/Makefile 477654 2018-08-20 14:09:18Z danfe $
 
 PORTNAME=	stellarium
-PORTVERSION=	0.18.1
+PORTVERSION=	0.18.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	astro
 EXTRACT_ONLY=	${_DISTFILES:Nstars_*.cat:N*.pdf}

@@ -1,14 +1,13 @@
-# $FreeBSD: head/finance/skrooge/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/finance/skrooge/Makefile 477709 2018-08-21 08:15:05Z adridg $
 
 PORTNAME=	skrooge
-DISTVERSION=	2.14.0
-PORTREVISION=	1
+DISTVERSION=	2.15.0
 CATEGORIES=	finance kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DIST_SUBDIR=	KDE/${PORTNAME}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE personal finance manager
+COMMENT=	Personal finance manager
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

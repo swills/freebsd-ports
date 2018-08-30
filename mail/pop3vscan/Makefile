@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/mail/pop3vscan/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/mail/pop3vscan/Makefile 477136 2018-08-14 06:53:02Z tobik $
 
 PORTNAME=	pop3vscan
 PORTVERSION=	0.4
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Transparent POP3-Proxy with virus-scanning capabilities
+
+DEPRECATED=	Unmaintained upstream
+EXPIRATION_DATE=	2018-09-15
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 

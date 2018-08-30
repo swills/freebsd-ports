@@ -1,8 +1,8 @@
 # Created by: jupengfei <jupengfei@gmail.com>
-# $FreeBSD: head/devel/p5-Paranoid/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Paranoid/Makefile 477956 2018-08-24 11:17:05Z culot $
 
 PORTNAME=	Paranoid
-PORTVERSION=	2.05
+PORTVERSION=	2.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,6 +16,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Socket6>=0.23:net/p5-Socket6
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

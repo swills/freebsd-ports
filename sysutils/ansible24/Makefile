@@ -1,7 +1,6 @@
-# $FreeBSD: head/sysutils/ansible24/Makefile 475222 2018-07-24 03:16:31Z lifanov $
+# $FreeBSD: head/sysutils/ansible24/Makefile 477613 2018-08-20 00:36:38Z lifanov $
 
-PORTVERSION=	2.4.4.0
-PORTREVISION=	2
+PORTVERSION=	2.4.6.0
 PKGNAMESUFFIX=	24
 
 CONFLICTS=	ansible-* ansible1-* ansible23-* ansible25-*

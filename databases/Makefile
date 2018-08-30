@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 476233 2018-08-02 12:12:40Z rene $
+# $FreeBSD: head/databases/Makefile 477717 2018-08-21 12:06:54Z rene $
 #
 
     COMMENT = Databases and related software
@@ -51,7 +51,6 @@
     SUBDIR += db6
     SUBDIR += dbconnect
     SUBDIR += dbf
-    SUBDIR += dbf2mysql
     SUBDIR += dbh
     SUBDIR += dbixx
     SUBDIR += dbow
@@ -199,7 +198,6 @@
     SUBDIR += memcacheq
     SUBDIR += metakit
     SUBDIR += monetdb
-    SUBDIR += mongodb
     SUBDIR += mongodb32
     SUBDIR += mongodb32-tools
     SUBDIR += mongodb34
@@ -269,6 +267,7 @@
     SUBDIR += p5-AsciiDB-TagFile
     SUBDIR += p5-BDB
     SUBDIR += p5-BSON
+    SUBDIR += p5-BSON-XS
     SUBDIR += p5-BerkeleyDB
     SUBDIR += p5-Bucardo
     SUBDIR += p5-CDB_File
@@ -623,7 +622,6 @@
     SUBDIR += php-mdcached
     SUBDIR += php-memcache
     SUBDIR += php-xapian
-    SUBDIR += php5-pdo_cassandra
     SUBDIR += php5-tarantool
     SUBDIR += php56-dba
     SUBDIR += php56-interbase
@@ -988,9 +986,9 @@
     SUBDIR += rubygem-peek-mysql2
     SUBDIR += rubygem-peek-pg
     SUBDIR += rubygem-pg
-    SUBDIR += rubygem-pg_array_parser
     SUBDIR += rubygem-pg0
     SUBDIR += rubygem-pg018
+    SUBDIR += rubygem-pg_array_parser
     SUBDIR += rubygem-pghero
     SUBDIR += rubygem-pghero-rails5
     SUBDIR += rubygem-pghero-rails50

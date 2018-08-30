@@ -1,8 +1,8 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/devel/sord/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/devel/sord/Makefile 477807 2018-08-22 18:08:15Z swills $
 
 PORTNAME=	sord
-PORTVERSION=	0.16.0
+PORTVERSION=	0.16.2
 CATEGORIES=	devel
 MASTER_SITES=	http://download.drobilla.net/
 
@@ -18,10 +18,12 @@ USES=		pkgconfig python:build tar:bzip2 waf
 
 USE_LDCONFIG=	yes
 
+PLIST_SUB=	VERSION=${PORTVERSION}
+
 post-install:
 	@${MV} ${STAGEDIR}${PREFIX}/share/man/man1 ${STAGEDIR}${PREFIX}/man/
 	@${RMDIR} ${STAGEDIR}${PREFIX}/share/man
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libsord-0.so.0.16.0
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libsord-0.so.${PORTVERSION}
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/sord_validate
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/sordi
 

@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-maec/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-maec/Makefile 476871 2018-08-11 11:16:35Z antoine $
 
 PORTNAME=	maec
-PORTVERSION=	4.1.0.13
+PORTVERSION=	4.1.0.14
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,7 +20,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	concurrent distutils autoplist
 USE_LOCALE=	en_US.UTF-8
 
 PORTDOCS=	README.rst

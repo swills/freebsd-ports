@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/emulators/wine/Makefile 477609 2018-08-20 00:02:31Z gerald $
 
 PORTNAME=	wine
 DISTVERSION=	3.0.2
@@ -127,8 +127,8 @@ CPPFLAGS+=		-D__builtin_ms_va_list=__builtin_va_list \
 			-D__builtin_ms_va_copy=__builtin_va_copy
 .endif
 
-# Wine assumes a WoW64 package is available however WoW64 is not yet available on FreeBSD.
-# Also fix the desktop file.
+# Wine assumes a WoW64 package is available, however WoW64 is not yet
+# available on FreeBSD. Also fix the desktop file.
 post-patch:
 	${REINPLACE_CMD} 's|/wine|/wine64|g' ${WRKSRC}/tools/wineapploader.in
 	${REINPLACE_CMD} '/Exec/s|wine|wine64|g' ${WRKSRC}/loader/wine.desktop

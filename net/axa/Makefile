@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/axa/Makefile 467326 2018-04-14 16:20:43Z truckman $
+# $FreeBSD: head/net/axa/Makefile 477243 2018-08-15 17:30:38Z truckman $
 
 PORTNAME=	axa
 PORTVERSION=	2.0.1
-#PORTREVISION=	1
+PORTREVISION=	1
 CATEGORIES=	net dns
 MASTER_SITES=	FARSIGHT LOCAL/truckman/farsight
 

@@ -1,10 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/archivers/tardy/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/archivers/tardy/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	tardy
 PORTVERSION=	1.28
 DISTVERSIONSUFFIX=	.D001.orig
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	archivers
 MASTER_SITES=	SF/tardy/${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}${DISTVERSIONSUFFIX}

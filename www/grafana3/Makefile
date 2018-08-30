@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/grafana3/Makefile 463776 2018-03-07 08:06:24Z yuri $
+# $FreeBSD: head/www/grafana3/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	grafana
 PORTVERSION=	3.1.1
@@ -7,7 +7,7 @@ PORTREVISION=	3
 PKGNAMESUFFIX=	3
 CATEGORIES=	www
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Dashboard and graph editor for Graphite, InfluxDB & OpenTSDB
 
 LICENSE=	APACHE20

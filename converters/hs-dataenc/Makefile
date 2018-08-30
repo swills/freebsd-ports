@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/hs-dataenc/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/converters/hs-dataenc/Makefile 477219 2018-08-15 10:51:55Z arrowd $
 
 PORTNAME=	dataenc
 PORTVERSION=	0.14.0.7
@@ -9,6 +9,9 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Data encoding library
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Not being developed upstream
+EXPIRATION_DATE=	2018-09-15
 
 CONFLICTS_INSTALL=	hs-sandi-[0-9]*
 

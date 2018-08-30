@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/www/linux-c6-qt47-webkit/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/www/linux-c6-qt47-webkit/Makefile 478284 2018-08-28 05:59:11Z antoine $
 
 PORTNAME=	qt47-webkit
 PORTVERSION=	4.7.2
@@ -11,6 +11,8 @@ DIST_SUBDIR=	atrpms
 
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Qt WebKit implementation (Linux CentOS ${LINUX_DIST_VER})
+
+BROKEN=		uses non existing qt47 qt47-x11
 
 DESCR=		${.CURDIR}/../../devel/qt4/pkg-descr
 RPMVERSION=	1_18.el6

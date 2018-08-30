@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 475227 2018-07-24 06:47:48Z romain $
+# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 477937 2018-08-24 06:30:42Z romain $
 
 PORTNAME=	r10k
-PORTVERSION=	2.6.2
-PORTREVISION=	1
+PORTVERSION=	2.6.4
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -23,7 +22,8 @@ NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem shebangfix
 
-PLIST_FILES=	bin/r10k
+PLIST_FILES=	bin/r10k \
+		${GEM_LIB_DIR}/test
 
 SHEBANG_FILES=	integration/*/*.sh
 

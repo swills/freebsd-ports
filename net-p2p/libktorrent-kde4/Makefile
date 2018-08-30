@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	libktorrent
 DISTVERSION=	1.3.1
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	net-p2p kde
 MASTER_SITES=	http://ktorrent.org/downloads/${DISTVERSION:C,^1,4,:C,-.*,,}/
 PKGNAMESUFFIX=	-kde4

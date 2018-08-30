@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/puppetserver5/Makefile 474936 2018-07-19 08:22:48Z romain $
+# $FreeBSD: head/sysutils/puppetserver5/Makefile 477943 2018-08-24 07:40:22Z romain $
 
 PORTNAME=	puppetserver
-PORTVERSION=	5.3.4
+PORTVERSION=	5.3.5
 CATEGORIES=	sysutils java
 MASTER_SITES=	https://downloads.puppetlabs.com/puppet/
 PKGNAMESUFFIX=	5

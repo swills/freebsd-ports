@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm60/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/llvm60/Makefile 477756 2018-08-21 20:29:01Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	6.0.1
@@ -47,6 +47,7 @@ CMAKE_ARGS+=	-DLLVM_HOST_TRIPLE=${CONFIGURE_TARGET}
 # we need to either change the whole man-shuffle below, or simply
 # redefine CMAKE_INSTALL_MANDIR
 CMAKE_ARGS+=	-DCMAKE_INSTALL_MANDIR:PATH="share/man"
+CMAKE_ARGS+=	-DLLVM_PARALLEL_LINK_JOBS=1
 
 OPTIONS_DEFINE=	CLANG DOCS EXTRAS LIT LLD LLDB
 OPTIONS_DEFINE_amd64=	COMPILER_RT GOLD OPENMP

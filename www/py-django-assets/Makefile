@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-django-assets/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-assets/Makefile 476870 2018-08-11 11:06:14Z rene $
 
 PORTNAME=	django-assets
 PORTVERSION=	0.12
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +12,7 @@ COMMENT=	Compress and merge CSS and Javascript files
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}webassets>0:www/py-webassets@${PY_FLAVOR}
 
 USES=		python

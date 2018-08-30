@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/linuxdcpp/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-p2p/linuxdcpp/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	linuxdcpp
 PORTVERSION=	1.1.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://launchpadlibrarian.net/69733951/
 

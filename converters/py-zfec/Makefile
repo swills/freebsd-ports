@@ -1,8 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/converters/py-zfec/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/converters/py-zfec/Makefile 477770 2018-08-22 06:38:21Z wen $
 
 PORTNAME=	zfec
-DISTVERSION=	1.5.2
+DISTVERSION=	1.5.3
 CATEGORIES=	converters python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,7 +23,7 @@ DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS
 
-PORTDOCS=	COPYING.TGPPL.rst README.rst TODO ChangeLog
+PORTDOCS=	COPYING.TGPPL.rst README.rst TODO
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/zfec/_fec.so

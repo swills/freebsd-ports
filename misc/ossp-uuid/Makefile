@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/misc/ossp-uuid/Makefile 465897 2018-03-29 14:01:06Z antoine $
+# $FreeBSD: head/misc/ossp-uuid/Makefile 476744 2018-08-09 13:44:30Z vd $
 
 PORTNAME=	uuid
 PORTVERSION=	1.6.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	misc devel
 MASTER_SITES=	OSSP/lib/${PORTNAME}
 PKGNAMEPREFIX=	ossp-

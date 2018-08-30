@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/hs-xml-hamlet/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-xml-hamlet/Makefile 476586 2018-08-07 09:37:58Z amdmi3 $
 
 PORTNAME=	xml-hamlet
 PORTVERSION=	0.5.0
@@ -9,6 +9,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Hamlet-style quasiquoter for XML content
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	shakespeare>=1.0 xml-conduit>=1.0
 

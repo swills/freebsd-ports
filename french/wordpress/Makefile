@@ -1,8 +1,8 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/french/wordpress/Makefile 474185 2018-07-08 15:48:03Z joneum $
+# $FreeBSD: head/french/wordpress/Makefile 476587 2018-08-07 10:33:36Z joneum $
 
 PORTNAME=	wordpress
-DISTVERSION=	4.9.7
+DISTVERSION=	4.9.8
 DISTVERSIONSUFFIX=	-fr_FR
 PORTEPOCH=	1
 CATEGORIES=	french www

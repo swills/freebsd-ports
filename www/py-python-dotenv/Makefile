@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-python-dotenv/Makefile 476257 2018-08-02 23:42:14Z sunpoet $
+# $FreeBSD: head/www/py-python-dotenv/Makefile 476523 2018-08-06 19:52:28Z sunpoet $
 
 PORTNAME=	python-dotenv
-PORTVERSION=	0.9.0
+PORTVERSION=	0.9.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

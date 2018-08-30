@@ -1,9 +1,8 @@
 # Created by: Cyrille Szymanski <cnszym@gmail.com>
-# $FreeBSD: head/math/R-cran-dlmodeler/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-dlmodeler/Makefile 477564 2018-08-19 10:13:05Z wen $
 
 PORTNAME=	dlmodeler
-DISTVERSION=	1.2-1
-PORTREVISION=	8
+DISTVERSION=	1.4-2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -12,6 +11,8 @@ COMMENT=	Generalized Dynamic Linear Modeler
 
 LICENSE=	GPLv2 GPLv3 BSD2CLAUSE
 LICENSE_COMB=	dual
+
+BUILD_DEPENDS=	R-cran-KFAS>0:math/R-cran-KFAS
 
 USES=	cran:auto-plist
 

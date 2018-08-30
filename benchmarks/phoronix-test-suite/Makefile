@@ -1,9 +1,9 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 468987 2018-05-03 20:46:23Z pizzamig $
+# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 477800 2018-08-22 16:40:48Z pizzamig $
 
 PORTNAME=	phoronix-test-suite
 DISTVERSIONPREFIX=	v
-DISTVERSION=	8.0.0m3
+DISTVERSION=	8.0.1
 CATEGORIES=	benchmarks
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 

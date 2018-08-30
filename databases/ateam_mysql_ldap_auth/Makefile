@@ -1,8 +1,9 @@
 # Created by: Ganbold Tsagaankhuu <ganbold@FreeBSD.org>
-# $FreeBSD: head/databases/ateam_mysql_ldap_auth/Makefile 458946 2018-01-13 22:43:03Z antoine $
+# $FreeBSD: head/databases/ateam_mysql_ldap_auth/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	ateam_mysql_ldap_auth
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	ganbold@FreeBSD.org

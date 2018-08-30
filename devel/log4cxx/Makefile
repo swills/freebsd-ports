@@ -1,9 +1,9 @@
 # Created by: Thaddeus Covert <tcovert@grimmy.sahuagin.net>
-# $FreeBSD: head/devel/log4cxx/Makefile 473831 2018-07-03 13:19:28Z amdmi3 $
+# $FreeBSD: head/devel/log4cxx/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	log4cxx
 PORTVERSION=	0.10.0
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/logging/${PORTNAME}/${PORTVERSION}
 DISTNAME=	apache-${PORTNAME}-${PORTVERSION}

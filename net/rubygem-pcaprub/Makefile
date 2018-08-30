@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-pcaprub/Makefile 415215 2016-05-15 07:13:28Z antoine $
+# $FreeBSD: head/net/rubygem-pcaprub/Makefile 476873 2018-08-11 11:32:47Z antoine $
 
 PORTNAME=	pcaprub
-PORTVERSION=	0.12.4
+PORTVERSION=	0.13.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

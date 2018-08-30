@@ -1,9 +1,9 @@
 # Created by: cartola (Carlos E. G. Carvalho)
-# $FreeBSD: head/graphics/vigra/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/vigra/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	vigra
 DISTVERSION=	1.11.0
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	graphics
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/libstorj/Makefile 470816 2018-05-25 00:16:01Z swills $
+# $FreeBSD: head/net/libstorj/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	libstorj
 PORTVERSION=	1.0.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	C library and CLI for encrypted file transfer on the Storj network
 
 LICENSE=	LGPL21+

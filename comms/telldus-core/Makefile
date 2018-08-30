@@ -1,5 +1,5 @@
 # Created by: Johan Strom <johna@stromnet.se>
-# $FreeBSD: head/comms/telldus-core/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/comms/telldus-core/Makefile 478176 2018-08-27 05:31:21Z tobik $
 
 PORTNAME=	telldus-core
 PORTVERSION=	2.1.2
@@ -28,6 +28,8 @@ CMAKE_ARGS+=-DGENERATE_MAN=TRUE
 CMAKE_ARGS+=-DSYSCONF_INSTALL_DIR="${PREFIX}/etc"
 # Using global /var, otherwise testport complains "Warning: port uses /usr/local/var instead of /var"
 CMAKE_ARGS+=-DSTATE_INSTALL_DIR="/var/telldus"
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 MAKE_JOBS_UNSAFE=	yes
 

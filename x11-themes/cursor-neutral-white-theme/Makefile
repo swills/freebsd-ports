@@ -1,10 +1,10 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11-themes/cursor-neutral-white-theme/Makefile 475981 2018-07-31 08:41:22Z gblach $
+# $FreeBSD: head/x11-themes/cursor-neutral-white-theme/Makefile 476579 2018-08-07 08:11:53Z gblach $
 
 PORTNAME=	cursor-neutral-white-theme
 DISTVERSION=	1.1.1
 CATEGORIES=	x11-themes
-MASTER_SITES=	https://dl.opendesktop.org/api/files/downloadfile/id/1460734982/s/8e93672a1ff38232a04132dbec6c80c6/t/1533029121/u/
+MASTER_SITES=	LOCAL/gblach/
 DISTNAME=	108143-Neutral++_White-${DISTVERSION}
 
 MAINTAINER=	enlightenment@FreeBSD.org

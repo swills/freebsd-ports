@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/wesnoth/Makefile 475295 2018-07-25 03:43:54Z fluffy $
+# $FreeBSD: head/games/wesnoth/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	wesnoth
 PORTVERSION=	1.14.3
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}/${PORTNAME}-${PORTVERSION} \

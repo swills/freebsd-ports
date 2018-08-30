@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-turbolinks-rails5/Makefile 467104 2018-04-11 19:39:59Z sunpoet $
+# $FreeBSD: head/www/rubygem-turbolinks-rails5/Makefile 477746 2018-08-21 18:25:15Z sunpoet $
 
 PORTNAME=	turbolinks
-PORTVERSION=	5.1.1
+PORTVERSION=	5.2.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-coffee-rails-rails5>=4.0.1:devel/rubygem-coffee-rails-rails5 \
-		rubygem-turbolinks-source>=5.1:www/rubygem-turbolinks-source
+		rubygem-turbolinks-source>=5.2:www/rubygem-turbolinks-source
 
 NO_ARCH=	yes
 USE_RUBY=	yes

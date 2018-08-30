@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/orange3/Makefile 474030 2018-07-06 18:53:15Z yuri $
+# $FreeBSD: head/misc/orange3/Makefile 476690 2018-08-08 23:08:06Z yuri $
 
 PORTNAME=	orange3
-DISTVERSION=	3.14.0
+DISTVERSION=	3.15.0
 CATEGORIES=	misc python
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -32,9 +32,10 @@ USE_PYTHON=	distutils autoplist
 USE_PYQT=	core_run gui_run printsupport_run widgets_run webengine_run
 
 CFLAGS+=	-DQSORT_R_STYLE_BSD=yes
+LDFLAGS+=	-Xlinker -strip-all # strip, stage-qa doesn't catch that it isn't stripped
 
-post-install: # https://github.com/biolab/orange3/issues/3060
-	@${REINPLACE_CMD} -e 's|^"${PREFIX}/|| ; s|"$$||' ${_PYTHONPKGLIST}
+post-install:
+	@${REINPLACE_CMD} -e 's|^"${PREFIX}/|| ; s|"$$||' ${_PYTHONPKGLIST} # https://github.com/biolab/orange3/issues/3060
 	@${REINPLACE_CMD} -e 's|import sys|& ; from OpenGL import GL|' ${STAGEDIR}${PREFIX}/bin/orange-canvas # https://github.com/biolab/orange3/issues/3062
 
 .include <bsd.port.mk>

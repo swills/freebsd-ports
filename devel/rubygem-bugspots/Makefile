@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-bugspots/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-bugspots/Makefile 478066 2018-08-25 16:01:15Z sunpoet $
 
 PORTNAME=	bugspots
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 476298 2018-08-03 15:48:55Z mfechner $
+# $FreeBSD: head/security/Makefile 478003 2018-08-25 05:15:02Z tcberner $
 #
 
     COMMENT = Security tools
@@ -33,6 +33,7 @@
     SUBDIR += authforce
     SUBDIR += autossh
     SUBDIR += avcheck
+    SUBDIR += aws-iam-authenticator
     SUBDIR += axTLS
     SUBDIR += barnyard2
     SUBDIR += barnyard2-sguil
@@ -43,6 +44,7 @@
     SUBDIR += bdes
     SUBDIR += bearssl
     SUBDIR += beecrypt
+    SUBDIR += beid
     SUBDIR += belier
     SUBDIR += bfbtester
     SUBDIR += binwalk
@@ -145,8 +147,6 @@
     SUBDIR += fakebo
     SUBDIR += fakeident
     SUBDIR += fakeroot
-    SUBDIR += fastd
-    SUBDIR += fastd-devel
     SUBDIR += fbopenssl
     SUBDIR += fcheck
     SUBDIR += fcrackzip
@@ -292,13 +292,13 @@
     SUBDIR += jbrofuzz
     SUBDIR += john
     SUBDIR += kbfs
+    SUBDIR += kbfsd
     SUBDIR += kc
     SUBDIR += kc24
     SUBDIR += kdbx-viewer
     SUBDIR += kedpm
     SUBDIR += keepass
     SUBDIR += keepass-plugin-keepassrpc
-    SUBDIR += keepassx
     SUBDIR += keepassx-devel
     SUBDIR += keepassx2
     SUBDIR += keepassxc
@@ -315,6 +315,7 @@
     SUBDIR += knock
     SUBDIR += knocker
     SUBDIR += kpcli
+    SUBDIR += kpkpass
     SUBDIR += kqoauth
     SUBDIR += kr
     SUBDIR += krb5
@@ -335,7 +336,6 @@
     SUBDIR += libadacrypt
     SUBDIR += libargon2
     SUBDIR += libassuan
-    SUBDIR += libbeid
     SUBDIR += libbf
     SUBDIR += libcryptui
     SUBDIR += libdecaf
@@ -423,6 +423,7 @@
     SUBDIR += morphis
     SUBDIR += munge
     SUBDIR += mussh
+    SUBDIR += n2n
     SUBDIR += nacl
     SUBDIR += ncrack
     SUBDIR += ncrypt
@@ -455,7 +456,7 @@
     SUBDIR += opencryptoki
     SUBDIR += openct
     SUBDIR += openiked
-    SUBDIR += opensaml2
+    SUBDIR += opensaml
     SUBDIR += opensc
     SUBDIR += openscep
     SUBDIR += openssh-askpass
@@ -826,7 +827,6 @@
     SUBDIR += pecl-ssh2
     SUBDIR += pecl-ssh2-0
     SUBDIR += pev
-    SUBDIR += pft
     SUBDIR += pgpdump
     SUBDIR += pgpgpg
     SUBDIR += pgpin
@@ -1044,8 +1044,8 @@
     SUBDIR += py-volatility
     SUBDIR += py-vulndb
     SUBDIR += py-yara
-    SUBDIR += py-yubioath-desktop
     SUBDIR += py-yubikey-manager
+    SUBDIR += py-yubioath-desktop
     SUBDIR += py-zope.app.authentication
     SUBDIR += py-zope.app.localpermission
     SUBDIR += py-zope.app.principalannotation
@@ -1102,16 +1102,16 @@
     SUBDIR += rubygem-bcrypt
     SUBDIR += rubygem-bcrypt-ruby
     SUBDIR += rubygem-bcrypt_pbkdf
-    SUBDIR += rubygem-devise_pam_authenticatable2
     SUBDIR += rubygem-devise-two-factor
     SUBDIR += rubygem-devise-two-factor-rails5
     SUBDIR += rubygem-devise-two-factor-rails50
+    SUBDIR += rubygem-devise_pam_authenticatable2
     SUBDIR += rubygem-digest-crc
     SUBDIR += rubygem-doorkeeper
-    SUBDIR += rubygem-doorkeeper43
     SUBDIR += rubygem-doorkeeper-openid_connect
     SUBDIR += rubygem-doorkeeper-rails5
     SUBDIR += rubygem-doorkeeper-rails50
+    SUBDIR += rubygem-doorkeeper43
     SUBDIR += rubygem-ed25519
     SUBDIR += rubygem-encryptor
     SUBDIR += rubygem-ezcrypto
@@ -1131,10 +1131,10 @@
     SUBDIR += rubygem-net-scp
     SUBDIR += rubygem-net-sftp
     SUBDIR += rubygem-net-ssh
-    SUBDIR += rubygem-net-ssh4
     SUBDIR += rubygem-net-ssh-gateway
     SUBDIR += rubygem-net-ssh-gateway1
     SUBDIR += rubygem-net-ssh-multi
+    SUBDIR += rubygem-net-ssh4
     SUBDIR += rubygem-net-telnet
     SUBDIR += rubygem-nexpose
     SUBDIR += rubygem-nmap-parser
@@ -1148,7 +1148,6 @@
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-saml
     SUBDIR += rubygem-omniauth-shibboleth
-    SUBDIR += rubygem-omniauth-shibboleth12
     SUBDIR += rubygem-openssl
     SUBDIR += rubygem-openssl-ccm
     SUBDIR += rubygem-openvas-omp
@@ -1217,7 +1216,7 @@
     SUBDIR += sha
     SUBDIR += sha1collisiondetection
     SUBDIR += sha2wordlist
-    SUBDIR += shibboleth2-sp
+    SUBDIR += shibboleth-sp
     SUBDIR += shimmer
     SUBDIR += shishi
     SUBDIR += shttpscanner
@@ -1290,6 +1289,7 @@
     SUBDIR += tcpcrypt
     SUBDIR += teleport
     SUBDIR += testssl.sh
+    SUBDIR += theonionbox
     SUBDIR += tinc
     SUBDIR += tinc-devel
     SUBDIR += tinyca
@@ -1316,6 +1316,7 @@
     SUBDIR += unicornscan
     SUBDIR += unssh
     SUBDIR += vault
+    SUBDIR += vanguards-tor
     SUBDIR += veracrypt
     SUBDIR += vinetto
     SUBDIR += vlock

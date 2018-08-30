@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/mujs/Makefile 464830 2018-03-17 16:07:29Z yuri $
+# $FreeBSD: head/lang/mujs/Makefile 476849 2018-08-10 21:25:31Z yuri $
 
 PORTNAME=	mujs
-DISTVERSION=	1.0.3
+DISTVERSION=	1.0.4
 CATEGORIES=	lang devel
 
 MAINTAINER=	yuri@FreeBSD.org

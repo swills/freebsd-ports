@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/jimtcl/Makefile 447670 2017-08-10 09:54:00Z gahr $
+# $FreeBSD: head/lang/jimtcl/Makefile 477139 2018-08-14 07:22:55Z gahr $
 
 PORTNAME=	jimtcl
-PORTVERSION=	0.77
+PORTVERSION=	0.78
 CATEGORIES=	lang tcl
 
 MAINTAINER=	gahr@FreeBSD.org
@@ -20,6 +20,8 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--full \
 		--enable-utf8 \
 		--enable-shared
+
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 OPTIONS_DEFINE=		DOCS
 DOCS_CONFIGURE_ENABLE=	docs

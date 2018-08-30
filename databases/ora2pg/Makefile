@@ -1,8 +1,8 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/ora2pg/Makefile 475517 2018-07-28 09:51:46Z wen $
+# $FreeBSD: head/databases/ora2pg/Makefile 477578 2018-08-19 14:26:10Z pi $
 
 PORTNAME=	ora2pg
-PORTVERSION=	18.2
+PORTVERSION=	19.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 

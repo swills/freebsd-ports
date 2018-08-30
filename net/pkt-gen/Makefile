@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/pkt-gen/Makefile 448840 2017-08-27 20:02:54Z shurd $
+# $FreeBSD: head/net/pkt-gen/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	pkt-gen
 PORTVERSION=	g2017.08.06
 PORTREVISION=	1
 CATEGORIES=	net
 
-MAINTAINER=	shurd@freebsd.org
+MAINTAINER=	shurd@FreeBSD.org
 COMMENT=	Packet sink/source using the netmap API
 
 LICENSE=	BSD2CLAUSE

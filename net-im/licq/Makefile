@@ -1,10 +1,10 @@
 #	$FreeBSD: head/ports-mgmt/pkg_jail/files/pkg_update 411390 2016-03-19 11:00:57Z dinoex 2
 # Created by: Brian Feldman & Matt Heckaman
-# $FreeBSD: head/net-im/licq/Makefile 469893 2018-05-14 14:17:45Z dinoex $
+# $FreeBSD: head/net-im/licq/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	base
 PORTVERSION=	${LICQ_VER}
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net-im
 PKGNAMESUFFIX=	${SOCKS_SUFFIX}${PKGNAMESUFFIX2}
 

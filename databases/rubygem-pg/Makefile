@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/rubygem-pg/Makefile 462518 2018-02-21 13:40:16Z sunpoet $
+# $FreeBSD: head/databases/rubygem-pg/Makefile 478065 2018-08-25 16:01:09Z sunpoet $
 
 PORTNAME=	pg
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

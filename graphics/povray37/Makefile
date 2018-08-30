@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/povray37/Makefile 474071 2018-07-07 11:00:16Z tobik $
+# $FreeBSD: head/graphics/povray37/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	povray
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.7.0.8
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMESUFFIX=	37
 

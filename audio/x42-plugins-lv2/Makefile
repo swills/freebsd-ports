@@ -1,9 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 475092 2018-07-22 08:08:17Z yuri $
+# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 477000 2018-08-12 16:46:29Z yuri $
 
 PORTNAME=	x42-plugins
-DISTVERSION=	20180320 # the version is published here: http://gareus.org/misc/x42-plugins.php
-PORTREVISION=	4
+DISTVERSION=	20180812 # the version is published here: http://gareus.org/misc/x42-plugins.php
 CATEGORIES=	audio
 MASTER_SITES=	http://gareus.org/misc/x42-plugins/
 PKGNAMESUFFIX=	-lv2
@@ -53,9 +52,6 @@ CXX=		clang++${LLVM_VER}
 post-patch:
 	@${REINPLACE_CMD} 's| -O3||' \
 		${WRKSRC}/*.lv2/Makefile
-	@${REINPLACE_CMD} 's/__APPLE__/__FreeBSD__/' \
-		${WRKSRC}/tuna.lv2/src/spectr.c \
-		${WRKSRC}/meters.lv2/src/spectr.c
 	@${REINPLACE_CMD} 's|$$(mandir)/man1|$$(MANDIR)|' \
 		${WRKSRC}/sisco.lv2/Makefile
 	@cd ${WRKSRC} && ${RM} -r convoLV2 && ${MV} convoLV2zita4 convoLV2

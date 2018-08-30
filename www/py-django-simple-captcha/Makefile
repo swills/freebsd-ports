@@ -1,5 +1,5 @@
 # Created by: John Hixson <john@ixsystems.com>
-# $FreeBSD: head/www/py-django-simple-captcha/Makefile 470814 2018-05-25 00:12:16Z swills $
+# $FreeBSD: head/www/py-django-simple-captcha/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	django-simple-captcha
 PORTVERSION=	0.5.7
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Simple, yet powerful, Django captcha application
 
 LICENSE=	MIT

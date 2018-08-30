@@ -1,8 +1,9 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/math/speedcrunch/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/speedcrunch/Makefile 477580 2018-08-19 14:38:46Z swills $
 
 PORTNAME=	speedcrunch
 PORTVERSION=	0.12.0
+PORTRVISION=	1
 DISTVERSIONSUFFIX=	-${BB_COMMIT}
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
@@ -20,7 +21,7 @@ BB_COMMIT=	7f2565d6a0ad
 
 WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
 CMAKE_SOURCE_PATH=	${WRKSRC}/src
-USE_QT=		buildtools core gui help qmake_build qml widgets
+USE_QT=		buildtools_build qmake_build core gui help widgets
 USE_XORG=	x11
 
 post-patch:

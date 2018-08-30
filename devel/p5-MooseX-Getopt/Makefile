@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Getopt/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Getopt/Makefile 476446 2018-08-05 19:08:03Z sunpoet $
 
 PORTNAME=	MooseX-Getopt
-PORTVERSION=	0.71
+PORTVERSION=	0.72
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN/MooseX CPAN
 MASTER_SITE_SUBDIR=	CPAN:ETHER
@@ -27,7 +27,7 @@ TEST_DEPENDS=	p5-MooseX-SimpleConfig>=0.07:devel/p5-MooseX-SimpleConfig \
 		p5-Path-Tiny>=0.009:devel/p5-Path-Tiny \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Fatal>=0.003:devel/p5-Test-Fatal \
-		p5-Test-Requires>=0:devel/p5-Test-Requires \
+		p5-Test-Needs>=0:devel/p5-Test-Needs \
 		p5-Test-Trap>=0:devel/p5-Test-Trap \
 		p5-Test-Warnings>=0:devel/p5-Test-Warnings
 

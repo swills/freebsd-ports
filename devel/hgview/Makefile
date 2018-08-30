@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/hgview/Makefile 472888 2018-06-20 17:29:04Z antoine $
+# $FreeBSD: head/devel/hgview/Makefile 476971 2018-08-12 07:40:24Z antoine $
 
 PORTNAME=	hgview
 PORTVERSION=	1.9.0
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast Mercurial log navigator written in pyqt4
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to configure
 
 RUN_DEPENDS=	hg:devel/mercurial \
 		${PYTHON_PKGNAMEPREFIX}mx-base>0:lang/py-mx-base@${PY_FLAVOR} \

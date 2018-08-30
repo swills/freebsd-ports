@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-GUID/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-GUID/Makefile 477778 2018-08-22 09:08:09Z amdmi3 $
 
 PORTNAME=	Data-GUID
 PORTVERSION=	0.047
@@ -12,6 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Generate globally unique identifiers
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 BUILD_DEPENDS=	p5-Sub-Install>=0.03:devel/p5-Sub-Install \
 		p5-Sub-Exporter>=0.90:devel/p5-Sub-Exporter \
 		p5-Data-UUID>=1.148:devel/p5-Data-UUID
@@ -20,5 +24,6 @@ TEST_DEPENDS=	p5-Test-Simple>=0.88:devel/p5-Test-Simple
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-fonts/Makefile 477371 2018-08-16 20:28:32Z rene $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -39,7 +39,6 @@
     SUBDIR += doulos
     SUBDIR += doulos-compact
     SUBDIR += droid-fonts-ttf
-    SUBDIR += ecofont
     SUBDIR += emojione-color-font-ttf
     SUBDIR += encodings
     SUBDIR += exo

@@ -1,8 +1,6 @@
-# $FreeBSD: head/graphics/php72-gd/Makefile 475984 2018-07-31 08:47:33Z tz $
+# $FreeBSD: head/graphics/php72-gd/Makefile 477510 2018-08-18 15:32:16Z joneum $
 
 CATEGORIES=	graphics
-
-PORTREVISION=  1
 
 MASTERDIR=	${.CURDIR}/../../lang/php72
 

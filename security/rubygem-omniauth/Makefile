@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/rubygem-omniauth/Makefile 457622 2017-12-30 18:17:30Z sunpoet $
+# $FreeBSD: head/security/rubygem-omniauth/Makefile 477176 2018-08-14 16:41:19Z sunpoet $
 
 PORTNAME=	omniauth
 PORTVERSION=	1.8.1
+PORTREVISION=	1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

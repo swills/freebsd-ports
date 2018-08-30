@@ -1,8 +1,8 @@
 # Created by: Marcel Kaiser <mk@nic-nac-project.org>
-# $FreeBSD: head/sysutils/dsbmd/Makefile 464337 2018-03-13 02:25:31Z tobik $
+# $FreeBSD: head/sysutils/dsbmd/Makefile 476988 2018-08-12 12:44:33Z dbaio $
 
 PORTNAME=	dsbmd
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 
@@ -16,7 +16,7 @@ USES=		tar:tgz
 
 USE_RC_SUBR=	dsbmd
 
-PORTDOCS=	README
+PORTDOCS=	readme.mdoc
 PLIST_FILES=	libexec/dsbmd "@sample etc/dsbmd.conf.sample"
 
 OPTIONS_DEFINE=		DOCS EXFAT EXT4 LKL MTP NTFS PTP

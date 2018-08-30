@@ -1,9 +1,10 @@
 # Created by: Martin Waschbuesch <martin@waschbuesch.de>
-# $FreeBSD: head/databases/zabbix3-libzbxpgsql/Makefile 448940 2017-08-29 23:43:05Z dbaio $
+# $FreeBSD: head/databases/zabbix3-libzbxpgsql/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	libzbxpgsql
 PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	zabbix3-
 

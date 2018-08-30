@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/py-nomad/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/py-nomad/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	py-nomad
 PORTVERSION=	0.5.0
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Python client for nomad
 
 LICENSE=	MIT

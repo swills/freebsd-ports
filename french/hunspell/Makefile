@@ -1,7 +1,7 @@
-# $FreeBSD: head/french/hunspell/Makefile 457394 2017-12-27 19:51:55Z sunpoet $
+# $FreeBSD: head/french/hunspell/Makefile 477737 2018-08-21 18:24:29Z sunpoet $
 
 PORTNAME=	hunspell
-PORTVERSION=	6.2
+PORTVERSION=	6.3
 DISTVERSIONPREFIX=	french-dictionaries-v
 CATEGORIES=	french textproc
 MASTER_SITES=	https://www.dicollecte.org/download/fr/ \

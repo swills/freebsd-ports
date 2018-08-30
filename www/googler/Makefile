@@ -1,10 +1,10 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/googler/Makefile 461931 2018-02-15 16:48:45Z amdmi3 $
+# $FreeBSD: head/www/googler/Makefile 477322 2018-08-16 11:56:47Z nivit $
 
 PORTNAME=	googler
-PORTVERSION=	3.2
+PORTVERSION=	3.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	www
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -12,6 +12,8 @@ COMMENT=	Google Search, Google Site Search, Google News from the terminal
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	xclip:x11/xclip
 
 USES=		python:3.3+ shebangfix
 SHEBANG_FILES=	googler

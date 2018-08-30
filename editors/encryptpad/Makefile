@@ -1,10 +1,10 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/editors/encryptpad/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/encryptpad/Makefile 477449 2018-08-17 21:07:58Z swills $
 
 PORTNAME=	encryptpad
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors security
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

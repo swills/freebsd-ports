@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/kget-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/kget-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	kget
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	net kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

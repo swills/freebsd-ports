@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/cad/meshlab/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/meshlab/Makefile 477721 2018-08-21 15:56:20Z rene $
 
 PORTNAME=	meshlab
 PORTVERSION=	1.3.3
@@ -8,7 +8,7 @@ CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/MeshLab%20v${PORTVERSION}/
 DISTNAME=	MeshLabSrc_AllInc_v${PORTVERSION:C|\.||g}
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	3D triangular meshes processing and editing tool
 
 LICENSE=	GPLv2

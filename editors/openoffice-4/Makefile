@@ -1,9 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/editors/openoffice-4/Makefile 477451 2018-08-17 21:44:28Z truckman $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION}
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	editors java
 MASTER_SITES=	APACHE/openoffice/${PORTVERSION}/sources \
 		http://tools.openoffice.org/unowinreg_prebuild/680/:unoreg \
@@ -121,7 +121,7 @@ EXECBASE?=		openoffice-${AOOSUFFIX}
 
 USES=		autoreconf bison compiler:c++11-lib cpe \
 		desktop-file-utils \
-		gettext-runtime gmake iconv jpeg perl5 pkgconfig python \
+		gettext-runtime gmake iconv jpeg perl5 pkgconfig python:2.7 \
 		shared-mime-info ssl tar:bzip2
 USE_GL=		gl glu
 USE_GNOME=	gtk20 libxslt libidl glib20

@@ -1,11 +1,11 @@
-# $FreeBSD: head/comms/sunxi-tools/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/comms/sunxi-tools/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
 
 PORTNAME=	sunxi-tools
 PORTVERSION=	1.4.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	comms
 
-MAINTAINER=	manu@freebsd.org
+MAINTAINER=	manu@FreeBSD.org
 COMMENT=	Tools to help hacking Allwinner devices
 
 LICENSE=	GPLv2+

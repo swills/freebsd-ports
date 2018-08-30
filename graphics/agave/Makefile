@@ -1,9 +1,9 @@
 # Created by: Piotr Smyrak <smyru@heron.pl>
-# $FreeBSD: head/graphics/agave/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/agave/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	agave
 PORTVERSION=	0.4.7
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics gnome
 MASTER_SITES=	http://download.gna.org/colorscheme/releases/
 

@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-AttributeHelpers/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-AttributeHelpers/Makefile 476978 2018-08-12 08:06:23Z antoine $
 
 PORTNAME=	MooseX-AttributeHelpers
 PORTVERSION=	0.25
@@ -16,9 +16,6 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Moose>=0.56:devel/p5-Moose
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
-
-DEPRECATED=	Functionality is now a part of p5-Moose (Moose::Meta::Attribute::Native). Do not use for new projects
-EXPIRATION_DATE=	2017-03-01
 
 NO_ARCH=	yes
 USES=		perl5

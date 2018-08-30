@@ -1,8 +1,8 @@
 # Created by: Leonardo Martins <lmartins@nepe.eee.ufg.br>
-# $FreeBSD: head/graphics/geos/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/geos/Makefile 477007 2018-08-12 17:33:06Z sunpoet $
 
 PORTNAME=	geos
-PORTVERSION=	3.6.2
+PORTVERSION=	3.6.3
 CATEGORIES=	graphics geography
 MASTER_SITES=	http://download.osgeo.org/geos/ \
 		LOCAL/sunpoet

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/py-metar/Makefile 468646 2018-04-29 19:46:07Z sunpoet $
+# $FreeBSD: head/astro/py-metar/Makefile 477834 2018-08-22 21:45:18Z sunpoet $
 
 PORTNAME=	metar
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

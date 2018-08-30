@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/phpcollab/Makefile 462792 2018-02-24 11:28:32Z brnrd $
+# $FreeBSD: head/deskutils/phpcollab/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	phpcollab
 PORTVERSION=	2.5
@@ -9,6 +9,8 @@ MASTER_SITES=	SF/phpcollab/final/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHPcollab is project management and collaboration over the internet
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		zip
 NO_BUILD=	yes

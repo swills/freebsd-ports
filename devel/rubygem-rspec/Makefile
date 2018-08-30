@@ -1,8 +1,8 @@
 # Created by: Roman Shterenzon <romanbsd@yahoo.com>
-# $FreeBSD: head/devel/rubygem-rspec/Makefile 452365 2017-10-18 17:22:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rspec/Makefile 476546 2018-08-06 19:56:17Z sunpoet $
 
 PORTNAME=	rspec
-PORTVERSION=	3.7.0
+PORTVERSION=	3.8.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,9 +12,9 @@ COMMENT=	Behaviour Driven Development in Ruby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-rspec-core>=${PORTVERSION:R}:devel/rubygem-rspec-core \
-		rubygem-rspec-expectations>=${PORTVERSION:R}:devel/rubygem-rspec-expectations \
-		rubygem-rspec-mocks>=${PORTVERSION:R}:devel/rubygem-rspec-mocks
+RUN_DEPENDS=	rubygem-rspec-core>=${PORTVERSION:R}.0:devel/rubygem-rspec-core \
+		rubygem-rspec-expectations>=${PORTVERSION:R}.0:devel/rubygem-rspec-expectations \
+		rubygem-rspec-mocks>=${PORTVERSION:R}.0:devel/rubygem-rspec-mocks
 
 NO_ARCH=	yes
 USE_RUBY=	yes

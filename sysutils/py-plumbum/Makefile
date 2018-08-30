@@ -1,9 +1,8 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-plumbum/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/py-plumbum/Makefile 477485 2018-08-18 08:52:04Z dbn $
 
 PORTNAME=	plumbum
-PORTVERSION=	1.6.6
-PORTREVISION=	1
+PORTVERSION=	1.6.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python
-USE_GITHUB=	yes
 USE_PYTHON=	autoplist concurrent distutils
+USE_GITHUB=	yes
 GH_ACCOUNT=	tomerfiliba
 
 do-test:

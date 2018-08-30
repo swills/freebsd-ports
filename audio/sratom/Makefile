@@ -1,8 +1,8 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/audio/sratom/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/audio/sratom/Makefile 477806 2018-08-22 18:05:37Z swills $
 
 PORTNAME=	sratom
-PORTVERSION=	0.6.0
+PORTVERSION=	0.6.2
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 
@@ -19,7 +19,9 @@ USES=		pkgconfig python:build tar:bzip2 waf
 
 USE_LDCONFIG=	yes
 
+PLIST_SUB=	VERSION=${PORTVERSION}
+
 post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libsratom-0.so.0.6.0
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libsratom-0.so.${PORTVERSION}
 
 .include <bsd.port.mk>

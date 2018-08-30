@@ -1,9 +1,9 @@
 # Created by: Leinier Cruz Salfran <salfrancl@yahoo.es>
-# $FreeBSD: head/multimedia/aegisub/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/multimedia/aegisub/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	aegisub
 PORTVERSION=	3.2.2
-PORTREVISION=	29
+PORTREVISION=	30
 CATEGORIES=	multimedia
 MASTER_SITES=	http://ftp.aegisub.org/pub/archives/releases/source/ \
 		ftp://ftp.aegisub.org/pub/archives/releases/source/ \

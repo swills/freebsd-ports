@@ -1,8 +1,8 @@
-# $FreeBSD: head/cad/librecad/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/librecad/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	librecad
 DISTVERSION=	2.2.0-rc1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad
 
 MAINTAINER=	jhale@FreeBSD.org

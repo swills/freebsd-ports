@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/tty-solitaire/Makefile 453416 2017-11-03 17:09:20Z amdmi3 $
+# $FreeBSD: head/games/tty-solitaire/Makefile 477065 2018-08-13 13:12:46Z amdmi3 $
 
 PORTNAME=	tty-solitaire
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 
@@ -24,7 +24,7 @@ OPTIONS_DEFINE=	DOCS
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ttysolitaire ${STAGEDIR}${PREFIX}/bin/
 
-post-install-DOCS-on:
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}/
 

@@ -1,8 +1,8 @@
 # Created by: Andreas Kohn
-# $FreeBSD: head/devel/mercurial/Makefile 475939 2018-07-31 00:03:51Z sunpoet $
+# $FreeBSD: head/devel/mercurial/Makefile 476456 2018-08-05 19:08:54Z sunpoet $
 
 PORTNAME=	mercurial
-PORTVERSION=	4.6.2
+PORTVERSION=	4.7
 CATEGORIES=	devel python
 MASTER_SITES=	https://www.mercurial-scm.org/release/
 
@@ -21,7 +21,7 @@ OPTIONS_SUB=	yes
 
 CA_BUNDLE_DESC=		Install CA Certificates
 CA_BUNDLE_RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
-DATA_SUB_FILES=	pkg-message
+DATA_SUB_FILES=		pkg-message
 FREEBSD_DESC=		Patches used internally by the FreeBSD Project
 FREEBSD_EXTRA_PATCHES=	${FILESDIR}/extra-patch-authormapsuffix
 NLS_EXTRA_PATCHES_OFF=	${FILESDIR}/extra-patch-setup.py

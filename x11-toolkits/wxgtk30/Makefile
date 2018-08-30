@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/wxgtk30/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-toolkits/wxgtk30/Makefile 477608 2018-08-19 23:37:06Z yuri $
 
 PORTNAME=	wx
 PORTVERSION=	3.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-toolkits
 PKGNAMESUFFIX=	30-gtk2
@@ -65,6 +65,11 @@ WEBKIT_CONFIGURE_ENABLE=	webview
 WEBKIT_LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
 
 .include <bsd.port.pre.mk>
+
+# TLS is broken on armv6/7, PR 229396
+.if ${ARCH} == armv6 || ${ARCH} == armv7
+CONFIGURE_ARGS+=--disable-tls
+.endif
 
 # PR 196703, 197031
 .if ${CHOSEN_COMPILER_TYPE} == gcc

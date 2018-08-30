@@ -1,5 +1,5 @@
 # Created by: Dryice Liu <dryice@dryice.name>
-# $FreeBSD: head/devel/py-durus/Makefile 395777 2015-09-01 16:20:47Z amdmi3 $
+# $FreeBSD: head/devel/py-durus/Makefile 477760 2018-08-21 22:03:35Z antoine $
 
 PORTNAME=	durus
 PORTVERSION=	3.9

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/fluxbb/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/fluxbb/Makefile 477060 2018-08-13 09:25:01Z tz $
 
 PORTNAME=	fluxbb
 PORTVERSION=	1.5.10
@@ -11,6 +11,8 @@ COMMENT=	Fast and lightweight PHP-powered discussion board
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe php
 SUB_FILES=	pkg-message

@@ -1,8 +1,9 @@
 # Created by: jpaetzel
-# $FreeBSD: head/www/py-dojango/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-dojango/Makefile 476936 2018-08-11 17:58:20Z rene $
 
 PORTNAME=	dojango
 PORTVERSION=	0.5.9
+PORTREVISION=	1
 CATEGORIES=	www python java
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,7 +12,7 @@ COMMENT=	Django application for building dojo
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.6:www/py-django18@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.6:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist
@@ -19,7 +20,7 @@ USE_PYTHON=	distutils autoplist
 USE_GITHUB=	yes
 GH_ACCOUNT=	william-gr
 GH_PROJECT=	dojango
-GH_TAGNAME=	87507e5
+GH_TAGNAME=	7477cee
 
 OPTIONS_DEFINE=		JAVA
 

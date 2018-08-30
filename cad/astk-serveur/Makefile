@@ -1,9 +1,8 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/cad/astk-serveur/Makefile 469120 2018-05-05 15:09:22Z danfe $
+# $FreeBSD: head/cad/astk-serveur/Makefile 477484 2018-08-18 08:51:53Z thierry $
 
 PORTNAME=	astk
-DISTVERSION=	1.13.10-1
-PORTREVISION=	1
+DISTVERSION=	2018.0-1
 CATEGORIES=	cad
 .if !defined(CLIENT_SEUL)
 PKGNAMESUFFIX=	-serveur
@@ -123,7 +122,6 @@ SHIA=		zsh
 .endif
 SHIADEP=	${SHIA}
 BASH2RC=	asrun/calcul.py share/codeaster/asrun/data/mpirun_template
-BASH2RC2=	lib/tkselecteur.tcl
 BASH2RC3=	deprecated_outils.sh extract_info.py deprecated_client.sh	\
 		deprecated_server.sh
 
@@ -262,9 +260,6 @@ do-configure:
 		${WRKSRC}/lib/tkselecteur.tcl
 	${REINPLACE_CMD} -e "s|%%unamesm%%|${unamesm}|"				\
 		${WRKSRC}/lib/init.tcl
-. for sh in ${BASH2RC2}
-	${REINPLACE_CMD} -e 's|/bin/bash|${SHELL_INSTALL_ASTER}|' ${WRKSRC}/${sh}
-. endfor
 .endif
 .for sh in ${BASH2RC3}
 	${REINPLACE_CMD} -e 's|/bin/bash|${SHELL_INSTALL_ASTER}|' ${WRKCONF}/${sh}

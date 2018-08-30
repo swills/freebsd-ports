@@ -1,5 +1,5 @@
 # Created by: Jeremy <karlj000@unbc.ca>
-# $FreeBSD: head/biology/avida/Makefile 456901 2017-12-21 10:23:19Z linimon $
+# $FreeBSD: head/biology/avida/Makefile 477993 2018-08-25 03:22:18Z tobik $
 
 PORTNAME=	avida
 PORTVERSION=	2.12.4
@@ -21,6 +21,7 @@ BROKEN_sparc64=		missing atomics implementation
 BROKEN_powerpc64=	fails to compile: sibling call optimization does not allow automatic multiple TOCs
 
 USES=		cmake:outsource ncurses
+USE_CXXSTD=	gnu++98
 CMAKE_ARGS=	-DAPTO_UNIT_TESTS:BOOL=OFF \
 		-DAVD_UNIT_TESTS:BOOL=OFF \
 		-DNCURSES_INCLUDE_PATH:STRING="${NCURSESINC}"

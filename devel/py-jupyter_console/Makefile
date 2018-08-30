@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-jupyter_console/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-jupyter_console/Makefile 476507 2018-08-06 11:23:41Z antoine $
 
 PORTNAME=	jupyter_console
 PORTVERSION=	5.2.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +14,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING.md
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jupyter_client>=0:devel/py-jupyter_client@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ipython>=0:devel/ipython@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ipython5>=0:devel/ipython5@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ipykernel>=0:devel/py-ipykernel@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}prompt_toolkit>=1.0.4:devel/py-prompt_toolkit@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments@${PY_FLAVOR}

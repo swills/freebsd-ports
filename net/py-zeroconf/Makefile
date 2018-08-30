@@ -1,12 +1,12 @@
 # Created by: John Hixson <jhixson@gmail.com>
-# $FreeBSD: head/net/py-zeroconf/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-zeroconf/Makefile 476591 2018-08-07 12:13:47Z jhixson $
 
 PORTNAME=	zeroconf
 PORTVERSION=	0.20.0
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jhixson@gmail.com
+MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Pure python implementation of multicast DNS service discovery
 
 LICENSE=	LGPL21+

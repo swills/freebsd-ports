@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/u-boot-riotboard/Makefile 472717 2018-06-18 21:26:36Z linimon $
+# $FreeBSD: head/sysutils/u-boot-riotboard/Makefile 476839 2018-08-10 15:49:13Z manu $
 
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		riotboard
 BOARD_CONFIG=	riotboard_defconfig
-FAMILY=		riotboard
+FAMILY=		imx6
 
 UBOOT_PLIST=	u-boot.imx
 

@@ -1,9 +1,8 @@
 # Created by: Rod Taylor <ports@rbt.ca>
-# $FreeBSD: head/textproc/p5-Text-WordDiff/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-WordDiff/Makefile 477738 2018-08-21 18:24:34Z sunpoet $
 
 PORTNAME=	Text-WordDiff
-PORTVERSION=	0.08
-PORTREVISION=	1
+PORTVERSION=	0.09
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

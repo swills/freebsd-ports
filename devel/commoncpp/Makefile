@@ -1,5 +1,5 @@
 # Created by: David Sugar <dyfet@gnu.org>
-# $FreeBSD: head/devel/commoncpp/Makefile 428323 2016-12-10 20:39:32Z brnrd $
+# $FreeBSD: head/devel/commoncpp/Makefile 478117 2018-08-26 10:04:47Z tobik $
 
 PORTNAME=	commoncpp
 PORTVERSION=	1.8.1
@@ -14,6 +14,7 @@ COMMENT=	GNU project portable class framework for C++
 
 USE_LDCONFIG=	yes
 USES=		gmake libtool pathfix ssl
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_path_DOXYGEN=no
 INSTALL_TARGET=	install-strip

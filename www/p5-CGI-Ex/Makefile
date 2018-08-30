@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-CGI-Ex/Makefile 475818 2018-07-29 19:23:57Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Ex/Makefile 477531 2018-08-18 20:42:27Z sunpoet $
 
 PORTNAME=	CGI-Ex
-PORTVERSION=	2.46
+PORTVERSION=	2.47
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

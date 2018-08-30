@@ -1,8 +1,9 @@
 # Created by: Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/lyx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/print/lyx/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	lyx
 PORTVERSION=	${MAJOR_VERSION}.${MINOR_VERSION}
+PORTREVISION=	1
 CATEGORIES=	print editors
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/${MAJOR_VERSION}.x/ \
 		http://www-ftp.lip6.fr/ftp/pub/lyx/stable/${MAJOR_VERSION}.x/ \

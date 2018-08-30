@@ -1,5 +1,5 @@
 # Created by: Serguei Okladnikov <oklaspec@gmail.com>
-# $FreeBSD: head/devel/p5-Minilla/Makefile 465744 2018-03-27 19:16:57Z sunpoet $
+# $FreeBSD: head/devel/p5-Minilla/Makefile 476445 2018-08-05 19:07:57Z sunpoet $
 # Date created: 2015-05-28
 
 PORTNAME=	Minilla
@@ -46,17 +46,10 @@ USES=		perl5
 USE_PERL5=	modbuildtiny
 NO_ARCH=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502400
-BUILD_DEPENDS+=	p5-Module-Metadata>=1.000027:devel/p5-Module-Metadata
-RUN_DEPENDS+=	p5-Module-Metadata>=1.000027:devel/p5-Module-Metadata
-.endif
-
 pre-test:
 	@test ! -e ${WRKDIR}/.gitconfig && \
 		${SETENV} ${MAKE_ENV} git config --global user.name "ports-test" && \
 		${SETENV} ${MAKE_ENV} git config --global user.email "${USER}@${HOST}" || \
 		true
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

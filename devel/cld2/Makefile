@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/cld2/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/cld2/Makefile 478231 2018-08-27 17:10:21Z tobik $
 
 PORTNAME=	cld
 PORTVERSION=	20150505
@@ -12,7 +12,11 @@ COMMENT=	Compact language detector library
 
 LICENSE=	APACHE20
 
+USES=		compiler
 USE_LDCONFIG=	yes
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 post-patch:
 	${REINPLACE_CMD} -e "s#g++#${CXX}#" ${WRKSRC}/internal/compile_libs.sh

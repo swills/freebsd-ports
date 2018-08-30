@@ -1,5 +1,6 @@
-# $FreeBSD: head/net-p2p/transmission-qt/Makefile 474704 2018-07-15 17:01:05Z tcberner $
+# $FreeBSD: head/net-p2p/transmission-qt/Makefile 477076 2018-08-13 15:26:54Z arrowd $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-${FLAVOR}
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \

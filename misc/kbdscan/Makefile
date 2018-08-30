@@ -1,9 +1,9 @@
-# $FreeBSD: head/misc/kbdscan/Makefile 365424 2014-08-19 19:51:31Z sunpoet $
+# $FreeBSD: head/misc/kbdscan/Makefile 477009 2018-08-12 17:33:17Z sunpoet $
 
 PORTNAME=	kbdscan
 PORTVERSION=	20110507
 CATEGORIES=	misc
-MASTER_SITES=	http://hack.org/mc/hacks/${PORTNAME}/
+MASTER_SITES=	https://hack.org/mc/hacks/kbdscan/
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Show scancodes of keys pressed and released

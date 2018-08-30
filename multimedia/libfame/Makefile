@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libfame/Makefile 373697 2014-12-01 00:08:18Z amdmi3 $
+# $FreeBSD: head/multimedia/libfame/Makefile 477486 2018-08-18 08:52:24Z riggs $
 
 PORTNAME=	libfame
 PORTVERSION=	0.9.1
@@ -19,6 +19,12 @@ OPTIONS_DEFINE=	MMX
 OPTIONS_DEFAULT=MMX
 
 MMX_CONFIGURE_ENABLE=	mmx
+
+.include <bsd.port.options.mk>
+
+.if ${ARCH}=="i386"
+LLD_UNSAFE=	yes # cf. PR 226980
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} \

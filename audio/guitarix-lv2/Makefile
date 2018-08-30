@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/guitarix-lv2/Makefile 475092 2018-07-22 08:08:17Z yuri $
+# $FreeBSD: head/audio/guitarix-lv2/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	guitarix
 DISTVERSION=	0.37.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/
 PKGNAMESUFFIX=	-lv2

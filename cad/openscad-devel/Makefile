@@ -1,9 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad-devel/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/openscad-devel/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	openscad
 PORTVERSION=	2018.04.19
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-devel
 DIST_SUBDIR=	${PORTNAME}

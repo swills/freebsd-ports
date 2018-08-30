@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Net-DNS/Makefile 474765 2018-07-16 23:55:26Z wen $
+# $FreeBSD: head/dns/p5-Net-DNS/Makefile 476618 2018-08-07 19:42:19Z sunpoet $
 
 PORTNAME=	Net-DNS
-PORTVERSION=	1.16
+PORTVERSION=	1.17
 PORTEPOCH=	1
 CATEGORIES=	dns net perl5 ipv6
 MASTER_SITES=	CPAN

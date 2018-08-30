@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/devel/luabind/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/luabind/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	luabind
 PORTVERSION=	0.9.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

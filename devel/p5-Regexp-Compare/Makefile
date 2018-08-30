@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Regexp-Compare/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Regexp-Compare/Makefile 476611 2018-08-07 19:41:42Z sunpoet $
 
 PORTNAME=	Regexp-Compare
-PORTVERSION=	0.28
+PORTVERSION=	0.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,10 +19,4 @@ USES=		perl5
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Regexp/Compare/Compare.so
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} >= 502700
-BROKEN=		does not support 5.27+
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

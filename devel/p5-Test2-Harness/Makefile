@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test2-Harness/Makefile 475714 2018-07-29 19:12:11Z sunpoet $
+# $FreeBSD: head/devel/p5-Test2-Harness/Makefile 478032 2018-08-25 13:49:10Z sunpoet $
 
 PORTNAME=	Test2-Harness
-PORTVERSION=	0.001068
+PORTVERSION=	0.001069
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:EXODIST
@@ -28,11 +28,4 @@ NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 
-.include <bsd.port.pre.mk>
-
-.if ${PERL_LEVEL} < 502400
-BUILD_DEPENDS+=	p5-File-Path>=2.11:devel/p5-File-Path
-RUN_DEPENDS+=	p5-File-Path>=2.11:devel/p5-File-Path
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

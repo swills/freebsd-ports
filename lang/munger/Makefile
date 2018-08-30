@@ -1,8 +1,8 @@
 # Created by: James Bailie <jimmy@mammothcheese.ca>
-# $FreeBSD: head/lang/munger/Makefile 423883 2016-10-12 19:04:21Z pawel $
+# $FreeBSD: head/lang/munger/Makefile 477932 2018-08-24 00:54:25Z wen $
 
 PORTNAME=	munger
-PORTVERSION=	5.7.2
+PORTVERSION=	5.10
 CATEGORIES=	lang
 MASTER_SITES=	http://www.mammothcheese.ca/
 

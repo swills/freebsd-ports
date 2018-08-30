@@ -1,9 +1,10 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/yafaray/Makefile 475049 2018-07-21 06:53:41Z yuri $
+# $FreeBSD: head/graphics/yafaray/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	yafaray
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0-5
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g3a98966
 CATEGORIES=	graphics
 

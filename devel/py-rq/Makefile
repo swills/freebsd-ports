@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-rq/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-rq/Makefile 477205 2018-08-14 21:36:00Z rene $
 
 PORTNAME=	rq
-PORTVERSION=	0.8.1
+PORTVERSION=	0.12.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Simple library for creating background jobs, and processing them
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}redis>=2.7:databases/py-redis@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}click>=5.0:devel/py-click@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

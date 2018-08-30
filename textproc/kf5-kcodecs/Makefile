@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 477922 2018-08-23 18:49:16Z adridg $
 
 PORTNAME=	kcodecs
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	textproc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

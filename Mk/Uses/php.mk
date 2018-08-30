@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/php.mk 472460 2018-06-15 14:43:10Z pizzamig $
+# $FreeBSD: head/Mk/Uses/php.mk 478187 2018-08-27 10:05:44Z mat $
 #
 # Support for PHP-based ports.
 #
@@ -64,7 +64,7 @@ _INCLUDE_USES_PHP_MK=	yes
 DEV_WARNING+=	"USES=php:build is included in USES=php:phpize, USES=php:ext, and USES=php:zend, so it is not needed"
 .  endif
 .  if ${php_ARGS:Mflavors} && ( ${php_ARGS:Mphpize} || ${php_ARGS:Mext} || ${php_ARGS:Mzend} || ${php_ARGS:Mpecl} )
-DEV_WARNINGS+=	"USES=php:flavors is included in phpize, ext, zend and pecl, so it is not needed."
+DEV_WARNING+=	"USES=php:flavors is included in phpize, ext, zend and pecl, so it is not needed."
 .  endif
 .  if ${php_ARGS:Mphpize} && ( ${php_ARGS:Mext} || ${php_ARGS:Mzend} )
 DEV_WARNING+=	"USES=php:phpize is included in USES=php:ext and USES=php:zend, so it is not needed"

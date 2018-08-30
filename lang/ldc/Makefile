@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/ldc/Makefile 471452 2018-06-03 06:31:09Z acm $
+# $FreeBSD: head/lang/ldc/Makefile 476517 2018-08-06 17:22:36Z fernape $
 
 PORTNAME=	ldc
 PORTVERSION=	1.9.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/ldc-developers/ldc/releases/download/v${PORTVERSION}/:source \
 		https://github.com/ldc-developers/ldc/releases/download/v${BOOTVER}/:bootstrap

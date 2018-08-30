@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/p5-Log-Dispatch-Config/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Log-Dispatch-Config/Makefile 476980 2018-08-12 09:08:02Z amdmi3 $
 
 PORTNAME=	Log-Dispatch-Config
 PORTVERSION=	1.04
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Log4j equivalent for Perl
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-AppConfig>=1.52:devel/p5-AppConfig \
 		p5-Log-Dispatch>=2:devel/p5-Log-Dispatch
@@ -18,5 +21,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

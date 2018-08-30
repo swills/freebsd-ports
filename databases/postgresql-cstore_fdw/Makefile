@@ -1,13 +1,13 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-cstore_fdw/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/postgresql-cstore_fdw/Makefile 476601 2018-08-07 14:36:24Z farrokhi $
 
 PORTNAME=	cstore_fdw
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	farrokhi@FreeBSD.org
 COMMENT=	Columnar store for analytics with PostgreSQL
 
 LICENSE=	APACHE20

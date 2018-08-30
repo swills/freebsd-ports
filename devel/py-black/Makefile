@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-black/Makefile 476146 2018-08-01 03:41:42Z miwi $
+# $FreeBSD: head/devel/py-black/Makefile 476549 2018-08-06 21:00:06Z yuri $
 
 PORTNAME=	black
 DISTVERSION=	18.6b4
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}attrs>0:devel/py-attrs@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pypandoc>0:textproc/py-pypandoc@${PY_FLAVOR} # pypandoc is optional, but recommended
+		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR}
 
 USES=		python:3.6+
 USE_PYTHON=	distutils autoplist concurrent

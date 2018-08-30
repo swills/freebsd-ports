@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/math/py-pycosat/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/py-pycosat/Makefile 476559 2018-08-07 02:42:54Z koobs $
 
 PORTNAME=	pycosat
-PORTVERSION=	0.6.1
+PORTVERSION=	0.6.3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libpicosat.so:math/picosat
 
-USES=		python
+USES=		python zip
 USE_PYTHON=	autoplist distutils
 
 PYDISTUTILS_BUILDARGS=	build_ext \

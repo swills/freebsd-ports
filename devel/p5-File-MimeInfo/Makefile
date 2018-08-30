@@ -1,9 +1,8 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-File-MimeInfo/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-MimeInfo/Makefile 476519 2018-08-06 19:52:07Z sunpoet $
 
 PORTNAME=	File-MimeInfo
-PORTVERSION=	0.28
-PORTREVISION=	1
+PORTVERSION=	0.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

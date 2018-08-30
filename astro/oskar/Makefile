@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/oskar/Makefile 475148 2018-07-23 05:48:05Z yuri $
+# $FreeBSD: head/astro/oskar/Makefile 476964 2018-08-12 05:47:55Z yuri $
 
 PORTNAME=	OSKAR
 DISTVERSION=	2.7.0
@@ -7,8 +7,11 @@ CATEGORIES=	astro
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	SKA Radio telescope simulator
 
+ONLY_FOR_ARCHS=		amd64 i386 powerpc powerpc64
+ONLY_FOR_ARCHS_REASON=	gccfeatures.h:54:4: This code has only been tested on x86 and powerpc platforms
+
 LICENSE=	GPLv2
-xLICENSE_FILES=	${WRKSRC}/../COPYING
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcfitsio.so:astro/cfitsio
 

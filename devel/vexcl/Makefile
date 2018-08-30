@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/vexcl/Makefile 467747 2018-04-19 03:32:48Z yuri $
+# $FreeBSD: head/devel/vexcl/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	vexcl
 DISTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

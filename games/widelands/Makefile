@@ -1,9 +1,9 @@
 # Created by: Bartosz Fabianowski <freebsd@chillt.de>
-# $FreeBSD: head/games/widelands/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/widelands/Makefile 476723 2018-08-09 06:58:30Z jbeich $
 
 PORTNAME=	widelands
 DISTVERSION=	build19
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	https://launchpad.net/widelands/${DISTVERSION}/${DISTVERSION}/+download/ \
 		http://mirror.amdmi3.ru/distfiles/

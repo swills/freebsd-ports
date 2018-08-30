@@ -1,5 +1,5 @@
 # Created by: Stefan Ehmann <shoesoft@gmx.net>
-# $FreeBSD: head/devel/ice/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/devel/ice/Makefile 478221 2018-08-27 16:37:53Z grembo $
 
 PORTNAME=		Ice
 PORTVERSION=		3.6.4
@@ -12,6 +12,7 @@ COMMENT=		Modern alternative to object middleware such as CORBA/COM/DCOM/COM+
 LICENSE=		GPLv2
 
 SLAVE_PORT?=		no
+CONFLICTS=		Ice37 py*-Ice37 php*-Ice37
 
 MAKE_JOBS_UNSAFE=	yes
 

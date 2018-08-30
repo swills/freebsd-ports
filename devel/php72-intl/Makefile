@@ -1,6 +1,5 @@
-# $FreeBSD: head/devel/php72-intl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/php72-intl/Makefile 477510 2018-08-18 15:32:16Z joneum $
 
-PORTREVISION=	1
 CATEGORIES=	devel
 
 MASTERDIR=	${.CURDIR}/../../lang/php72

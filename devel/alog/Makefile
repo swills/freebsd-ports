@@ -1,9 +1,8 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/alog/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/alog/Makefile 477810 2018-08-22 18:57:49Z swills $
 
 PORTNAME=	alog
-PORTVERSION=	0.5.2
-PORTREVISION=	1
+PORTVERSION=	0.5.3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.codelabs.ch/download/
 DISTNAME=	libalog-${PORTVERSION}
@@ -32,8 +31,6 @@ DOCS_BUILD_DEPENDS=	asciidoc:textproc/asciidoc \
 DOCS_ALL_TARGET=	doc
 TEST_BUILD_DEPENDS=	${LOCALBASE}/lib/gnat/ahven.gpr:devel/ahven
 TEST_ALL_TARGET=	tests
-
-MAKE_JOBS_UNSAFE=	yes
 
 post-patch:
 	${REINPLACE_CMD} -e '/^NUM_CPUS/d' ${WRKSRC}/Makefile

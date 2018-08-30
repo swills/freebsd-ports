@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/bacula9-server/Makefile 461928 2018-02-15 14:41:29Z brnrd $
+# $FreeBSD: head/sysutils/bacula9-server/Makefile 478126 2018-08-26 14:07:17Z dvl $
 
 PORTNAME=	bacula
-PORTVERSION=	9.0.6
+PORTVERSION=	9.2.1
 CATEGORIES?=	sysutils
 MASTER_SITES=	SF/bacula/bacula/${PORTVERSION}
 PKGNAMEPREFIX?=	#
@@ -12,7 +12,7 @@ MAINTAINER=	dvl@FreeBSD.org
 COMMENT?=	Network backup solution (server)
 
 USES+=		libtool readline shebangfix ssl
-SHEBANG_FILES=	scripts/dvd-handler.in src/cats/make_catalog_backup.pl.in
+SHEBANG_FILES=	src/cats/make_catalog_backup.pl.in
 python_OLD_CMD=	@PYTHON@
 
 CONFLICTS?=	bacula5-server-* bacula-server-*

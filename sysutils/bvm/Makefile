@@ -1,8 +1,8 @@
 # Created by: Qiang Guo <guoqiang_cn@126.com>
-# $FreeBSD: head/sysutils/bvm/Makefile 474984 2018-07-19 23:21:47Z woodsb02 $
+# $FreeBSD: head/sysutils/bvm/Makefile 478296 2018-08-28 09:41:33Z ygy $
 
 PORTNAME=	bvm
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.4
 CATEGORIES=	sysutils
 
 MAINTAINER=	guoqiang_cn@126.com
@@ -31,5 +31,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/conf/bvmd ${STAGEDIR}${PREFIX}/etc/rc.d/
 	${INSTALL_PROGRAM} ${WRKSRC}/src/bvm ${STAGEDIR}${PREFIX}/bin/
 	${INSTALL_PROGRAM} ${WRKSRC}/src/bvmb ${STAGEDIR}${PREFIX}/bin/
+	${INSTALL_MAN} ${WRKSRC}/bvm.8 ${STAGEDIR}${MAN8PREFIX}/man/man8
 
 .include <bsd.port.mk>

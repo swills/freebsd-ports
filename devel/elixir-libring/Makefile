@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-libring/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/elixir-libring/Makefile 476721 2018-08-09 06:38:46Z olgeni $
 
 PORTNAME=	libring
-DISTVERSION=	1.3.1
+DISTVERSION=	1.3.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
