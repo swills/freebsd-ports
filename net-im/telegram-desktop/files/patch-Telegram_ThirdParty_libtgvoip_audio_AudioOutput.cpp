@@ -1,4 +1,4 @@
---- Telegram/ThirdParty/libtgvoip/audio/AudioOutput.cpp.orig	2018-07-17 16:48:21 UTC
+--- Telegram/ThirdParty/libtgvoip/audio/AudioOutput.cpp.orig	2018-08-27 11:39:27 UTC
 +++ Telegram/ThirdParty/libtgvoip/audio/AudioOutput.cpp
 @@ -27,7 +27,7 @@
  #include "../os/windows/AudioOutputWave.h"
@@ -9,16 +9,7 @@
  #ifndef WITHOUT_ALSA
  #include "../os/linux/AudioOutputALSA.h"
  #endif
-@@ -59,7 +59,7 @@ int32_t AudioOutput::estimatedDelay=60;
- 		return std::unique_ptr<AudioOutput>(new AudioOutputWave(deviceID));
- #endif
- 	return std::unique_ptr<AudioOutput>(new AudioOutputWASAPI(deviceID));
--#elif defined(__linux__)
-+#elif defined(__linux__) || defined(__FreeBSD__)
- 	if(AudioOutputPulse::IsAvailable()){
- 		AudioOutputPulse* aop=new AudioOutputPulse(deviceID);
- 		if(!aop->IsInitialized())
-@@ -107,7 +107,7 @@ void AudioOutput::EnumerateDevices(std::
+@@ -79,7 +79,7 @@ void AudioOutput::EnumerateDevices(std::
  	}
  #endif
  	AudioOutputWASAPI::EnumerateDevices(devs);

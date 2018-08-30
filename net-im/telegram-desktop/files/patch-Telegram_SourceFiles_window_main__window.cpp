@@ -1,4 +1,4 @@
---- Telegram/SourceFiles/window/main_window.cpp.orig	2018-08-04 18:53:40 UTC
+--- Telegram/SourceFiles/window/main_window.cpp.orig	2018-08-27 16:07:59 UTC
 +++ Telegram/SourceFiles/window/main_window.cpp
 @@ -421,7 +421,7 @@ bool MainWindow::minimizeToTray() {
  }

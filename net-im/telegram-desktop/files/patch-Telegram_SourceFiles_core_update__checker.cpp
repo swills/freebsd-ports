@@ -1,4 +1,4 @@
---- Telegram/SourceFiles/core/update_checker.cpp.orig	2018-08-04 18:53:40 UTC
+--- Telegram/SourceFiles/core/update_checker.cpp.orig	2018-08-27 16:07:59 UTC
 +++ Telegram/SourceFiles/core/update_checker.cpp
 @@ -2016,6 +2016,9 @@ int UpdateChecker::size() const {
  //}

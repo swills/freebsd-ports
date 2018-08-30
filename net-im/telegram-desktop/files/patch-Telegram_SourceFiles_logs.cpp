@@ -1,4 +1,4 @@
---- Telegram/SourceFiles/logs.cpp.orig	2018-08-04 18:53:40 UTC
+--- Telegram/SourceFiles/logs.cpp.orig	2018-08-27 16:07:59 UTC
 +++ Telegram/SourceFiles/logs.cpp
 @@ -333,7 +333,7 @@ void start(not_null<Core::Launcher*> lau
  	if (cBetaVersion()) {

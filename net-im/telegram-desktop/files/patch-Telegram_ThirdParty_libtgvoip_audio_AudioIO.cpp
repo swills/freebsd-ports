@@ -1,4 +1,4 @@
---- Telegram/ThirdParty/libtgvoip/audio/AudioIO.cpp.orig	2018-07-17 16:48:21 UTC
+--- Telegram/ThirdParty/libtgvoip/audio/AudioIO.cpp.orig	2018-08-27 11:39:27 UTC
 +++ Telegram/ThirdParty/libtgvoip/audio/AudioIO.cpp
 @@ -29,7 +29,7 @@
  #endif

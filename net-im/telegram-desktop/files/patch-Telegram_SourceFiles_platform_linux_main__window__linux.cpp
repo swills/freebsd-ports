@@ -1,4 +1,4 @@
---- Telegram/SourceFiles/platform/linux/main_window_linux.cpp.orig	2018-08-04 18:53:40 UTC
+--- Telegram/SourceFiles/platform/linux/main_window_linux.cpp.orig	2018-08-27 16:07:59 UTC
 +++ Telegram/SourceFiles/platform/linux/main_window_linux.cpp
 @@ -25,7 +25,9 @@ bool noQtTrayIcon = false, tryAppIndicat
  bool useGtkBase = false, useAppIndicator = false, useStatusIcon = false, trayIconChecked = false, useUnityCount = false;

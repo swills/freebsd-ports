@@ -1,4 +1,4 @@
---- Telegram/SourceFiles/history/history_inner_widget.cpp.orig	2018-08-04 18:53:40 UTC
+--- Telegram/SourceFiles/history/history_inner_widget.cpp.orig	2018-08-27 16:07:59 UTC
 +++ Telegram/SourceFiles/history/history_inner_widget.cpp
 @@ -1344,7 +1344,7 @@ void HistoryInner::mouseActionFinish(
  	_widget->noSelectingScroll();

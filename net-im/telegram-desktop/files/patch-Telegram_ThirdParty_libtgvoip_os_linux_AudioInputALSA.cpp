@@ -1,4 +1,4 @@
---- Telegram/ThirdParty/libtgvoip/os/linux/AudioInputALSA.cpp.orig	2018-07-17 16:48:21 UTC
+--- Telegram/ThirdParty/libtgvoip/os/linux/AudioInputALSA.cpp.orig	2018-08-27 11:39:27 UTC
 +++ Telegram/ThirdParty/libtgvoip/os/linux/AudioInputALSA.cpp
 @@ -12,6 +12,10 @@
  #include "../../logging.h"

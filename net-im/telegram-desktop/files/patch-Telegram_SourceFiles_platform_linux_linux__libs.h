@@ -1,4 +1,4 @@
---- Telegram/SourceFiles/platform/linux/linux_libs.h.orig	2018-08-04 18:53:40 UTC
+--- Telegram/SourceFiles/platform/linux/linux_libs.h.orig	2018-08-27 16:07:59 UTC
 +++ Telegram/SourceFiles/platform/linux/linux_libs.h
 @@ -10,14 +10,16 @@ https://github.com/telegramdesktop/tdesk
  #ifndef TDESKTOP_DISABLE_GTK_INTEGRATION

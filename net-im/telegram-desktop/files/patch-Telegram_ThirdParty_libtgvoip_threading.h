@@ -1,4 +1,4 @@
---- Telegram/ThirdParty/libtgvoip/threading.h.orig	2018-07-17 16:48:21 UTC
+--- Telegram/ThirdParty/libtgvoip/threading.h.orig	2018-08-27 11:39:27 UTC
 +++ Telegram/ThirdParty/libtgvoip/threading.h
 @@ -42,6 +42,9 @@ namespace tgvoip{
  #ifdef __APPLE__
@@ -10,7 +10,7 @@
  
  namespace tgvoip{
  	class Mutex{
-@@ -112,7 +115,9 @@ namespace tgvoip{
+@@ -115,7 +118,9 @@ namespace tgvoip{
  		static void* ActualEntryPoint(void* arg){
  			Thread* self=reinterpret_cast<Thread*>(arg);
  			if(self->name){

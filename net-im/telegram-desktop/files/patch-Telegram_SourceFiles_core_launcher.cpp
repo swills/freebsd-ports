@@ -1,4 +1,4 @@
---- Telegram/SourceFiles/core/launcher.cpp.orig	2018-08-04 18:53:40 UTC
+--- Telegram/SourceFiles/core/launcher.cpp.orig	2018-08-27 16:07:59 UTC
 +++ Telegram/SourceFiles/core/launcher.cpp
 @@ -14,6 +14,8 @@ https://github.com/telegramdesktop/tdesk
  #include "core/update_checker.h"

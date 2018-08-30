@@ -1,8 +1,8 @@
-# $FreeBSD$
+# $FreeBSD: head/net-im/telegram-desktop/Makefile 473503 2018-06-28 17:39:53Z tcberner $
 
 PORTNAME=	telegram-desktop
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.12
+DISTVERSION=	1.3.14
 CATEGORIES=	net-im
 
 MAINTAINER=	henry.hu.sh@gmail.com
@@ -29,7 +29,7 @@ GH_PROJECT=	tdesktop
 GH_TUPLE=	catchorg:Catch2:5ca44b68:catch/Telegram/ThirdParty/Catch \
 		mapbox:variant:550ac2f:variant/Telegram/ThirdParty/variant \
 		Microsoft:GSL:d846fe5:gsl/Telegram/ThirdParty/GSL \
-		telegramdesktop:libtgvoip:5380aab:libtgvoip/Telegram/ThirdParty/libtgvoip \
+		telegramdesktop:libtgvoip:bfa1e6a:libtgvoip/Telegram/ThirdParty/libtgvoip \
 		telegramdesktop:crl:527ad27:crl/Telegram/ThirdParty/crl
 USE_GNOME=	glib20
 USE_QT=		core gui imageformats network widgets buildtools_build qmake_build dbus
