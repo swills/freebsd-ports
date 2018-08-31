@@ -2,9 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	hexchat
-PORTVERSION=	2.14.1
+PORTVERSION=	2.14.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	irc gnome ipv6
 
 MAINTAINER=	pkubaj@anongoth.pl
@@ -78,6 +77,9 @@ SYSINFO_MESON_TRUE=	with-sysinfo
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%CA_BUNDLE%%|${CA_BUNDLE}|' \
 		${WRKSRC}/src/common/server.c
+	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \
+		-e 's|%%PERL_VER%%|${PERL_VER}|g' \
+		${WRKSRC}/plugins/perl/meson.build
 
 post-install:
 	${LN} -sf ../share/icons/hicolor/48x48/apps/${PORTNAME}.png \
