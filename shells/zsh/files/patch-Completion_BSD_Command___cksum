@@ -1,0 +1,21 @@
+--- Completion/BSD/Command/_cksum.orig	2018-08-19 12:56:31 UTC
++++ Completion/BSD/Command/_cksum
+@@ -1,9 +1,9 @@
+ #compdef cksum sum=cksum md2 md4 md5 rmd160 sha1 sha256 sha384 sha512 sha512t256
+ 
+-if [[ $OSTYPE == (dragonfly|freebsd)* && service == cksum ]]; then
++if [[ $OSTYPE == (dragonfly|freebsd)* && $service == cksum ]]; then
+   _arguments -s -S -A '-*' \
+     '-o[use specified historic algorithm]:historic algorithm:(1 2 3)' \
+-    '*:_files'
++    '*:filename:_files'
+ 
+ else
+   local -a args
+@@ -63,5 +63,5 @@ else
+     '-q[quiet mode]' \
+     '-s+[checksum specified string]:string: ' \
+     '-x[run built-in test]' \
+-    '*:_files'
++    '*:filename:_files'
+ fi
