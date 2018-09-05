@@ -2,17 +2,21 @@
 # $FreeBSD$
 
 PORTNAME=	freeimage
-PORTVERSION=	3.16.0
-PORTREVISION=	6
-# Version 3.17.0 is available, but does not build on i386 (and probably
-# other 32-bit arches) without some not-quite-trivial patching.  If one
-# decides to update the port, please make sure 32-bit builds are tested!
+PORTVERSION=	3.18.0
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/Source%20Distribution/${PORTVERSION}
 DISTNAME=	FreeImage${PORTVERSION:S/.//g}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple C/C++ bitmap graphics library
+
+LICENSE=		FIPL GPLv2 GPLv3
+LICENSE_COMB=		multi
+LICENSE_NAME_FIPL=	FreeImage Public License
+LICENSE_FILE_FIPL=	${WRKSRC}/license-fi.txt
+LICENSE_FILE_GPLv2=	${WRKSRC}/license-gplv2.txt
+LICENSE_FILE_GPLv3=	${WRKSRC}/license-gplv3.txt
+LICENSE_PERMS_FIPL=	dist-mirror pkg-mirror auto-accept
 
 BROKEN_mips=		fails to compile: opcode not supported on this processor: mips3 (mips3) `madd $16,$6'
 BROKEN_mips64=		fails to compile: opcode not supported on this processor: mips3 (mips3) 'madd $4,$5'
@@ -24,11 +28,7 @@ DOS2UNIX_FILES=	Source/LibOpenJPEG/opj_malloc.h \
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/FreeImage
 MAKE_ARGS=	CC="${CC}" CPP="${CPP}" CXX="${CXX}"
-
-CFLAGS+=	-DPNG_ARM_NEON_OPT=0 -fexceptions -fvisibility=hidden
-CFLAGS_aarch64=	-fPIC
-CFLAGS_amd64=	-fPIC
-CFLAGS_armv7=	-fPIC
+CFLAGS+=	-DPNG_ARM_NEON_OPT=0 -fexceptions -fvisibility=hidden -fPIC
 
 PLIST_FILES=	include/FreeImage.h \
 		include/FreeImagePlus.h \
@@ -40,12 +40,6 @@ PLIST_FILES=	include/FreeImage.h \
 		lib/libfreeimageplus-${PORTVERSION}.so \
 		lib/libfreeimageplus.so.3 \
 		lib/libfreeimageplus.so
-
-.include <bsd.port.options.mk>
-
-.if ${ARCH} == amd64 || ${ARCH} == powerpc || ${ARCH} == powerpc64 || ${ARCH} == sparc64
-USES+=		compiler:c++0x
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr|${PREFIX}| ; s|-o root -g root ||' \
