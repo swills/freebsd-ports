@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/jbig2dec/Makefile 478973 2018-09-04 18:40:08Z sunpoet $
+# $FreeBSD: head/graphics/jbig2dec/Makefile 479117 2018-09-06 18:23:20Z sunpoet $
 
 PORTNAME=	jbig2dec
 PORTVERSION=	0.15
@@ -19,7 +19,7 @@ CONFIGURE_ENV=	ac_cv_func_getopt_long=yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		autoreconf libtool
+USES=		autoreconf:build libtool
 
 GH_ACCOUNT=	ArtifexSoftware
 USE_GITHUB=	yes

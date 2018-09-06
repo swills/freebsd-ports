@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/namecoin-utils/Makefile 478893 2018-09-03 18:45:20Z rene $
+# $FreeBSD: head/net-p2p/namecoin-utils/Makefile 479111 2018-09-06 18:06:51Z rene $
 
 MASTERDIR=	${.CURDIR}/../namecoin
 
@@ -21,7 +21,8 @@ CONFIGURE_ARGS=	--without-daemon \
 		--without-libs \
 		--without-qrencode \
 		--with-utils \
-		--disable-wallet
+		--disable-wallet \
+		--disable-man
 
 PLIST_FILES=	bin/namecoin-cli bin/namecoin-tx
 

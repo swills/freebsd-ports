@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 478837 2018-09-03 00:21:45Z jbeich $
+# $FreeBSD: head/net/Makefile 479102 2018-09-06 15:25:09Z mfechner $
 #
 
     COMMENT = Networking tools
@@ -1274,6 +1274,7 @@
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-gitlab_omniauth-ldap20
     SUBDIR += rubygem-grpc
+    SUBDIR += rubygem-hangouts-chat
     SUBDIR += rubygem-http_parser.rb
     SUBDIR += rubygem-httpauth
     SUBDIR += rubygem-ipaddress

@@ -1,8 +1,8 @@
 # Created by: Simon Olofsson <simon@olofsson.de>
-# $FreeBSD: head/textproc/weka/Makefile 457321 2017-12-26 22:29:25Z danilo $
+# $FreeBSD: head/textproc/weka/Makefile 479112 2018-09-06 18:15:56Z danilo $
 
 PORTNAME=	weka
-DISTVERSION=	3-8-2
+DISTVERSION=	3-8-3
 CATEGORIES=	textproc java
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-3-8/${PORTVERSION}
 

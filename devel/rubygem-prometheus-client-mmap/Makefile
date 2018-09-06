@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-prometheus-client-mmap/Makefile 472978 2018-06-21 15:34:42Z mfechner $
+# $FreeBSD: head/devel/rubygem-prometheus-client-mmap/Makefile 479132 2018-09-06 18:55:36Z mfechner $
 
 PORTNAME=	prometheus-client-mmap
 DISTVERSION=	0.9.4
