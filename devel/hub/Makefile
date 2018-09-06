@@ -1,8 +1,9 @@
 # Created by: Simon Olofsson <simon@olofsson.de>
-# $FreeBSD: head/devel/hub/Makefile 477974 2018-08-24 17:57:35Z swills $
+# $FreeBSD: head/devel/hub/Makefile 478793 2018-09-02 15:01:24Z mat $
 
 PORTNAME=	hub
 PORTVERSION=	2.5.1
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel sysutils
 
 MAINTAINER=	egypcio@googlemail.com
@@ -18,7 +19,6 @@ USES=		go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	github
-GH_TAGNAME=	v${PORTVERSION}
 
 GO_PKGNAME=	github.com/github/hub
 

@@ -1,8 +1,8 @@
 # Created by: Lars Engels <lme@FreeBSD.org>
-# $FreeBSD: head/german/mediathekview/Makefile 476814 2018-08-10 08:59:02Z lme $
+# $FreeBSD: head/german/mediathekview/Makefile 478548 2018-08-31 12:18:07Z lme $
 
 PORTNAME=	mediathekview
-PORTVERSION=	13.1.2
+PORTVERSION=	13.2.0
 CATEGORIES=	german java
 MASTER_SITES=	https://download.mediathekview.de/stabil/
 DISTNAME=	MediathekView-${PORTVERSION}

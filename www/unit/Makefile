@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/unit/Makefile 475293 2018-07-25 02:58:01Z osa $
+# $FreeBSD: head/www/unit/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	unit
 PORTVERSION=	1.3
@@ -22,10 +22,9 @@ OPTIONS_DEFINE?=	\
 	DEBUG \
 	IPV6 \
 	UNIXSOCK
-OPTIONS_DEFAULT?=IPV6 UNIXSOCK
+OPTIONS_DEFAULT?=UNIXSOCK
 
 DEBUG_DESC=	Enable debug logging
-IPV6_DESC=	Enable IPv6
 UNIXSOCK_DESC=	Enable unix sockets
 
 .include <bsd.port.options.mk>

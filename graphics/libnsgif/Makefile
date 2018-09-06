@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/libnsgif/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/graphics/libnsgif/Makefile 478997 2018-09-05 02:29:42Z swills $
 
 PORTNAME=	libnsgif
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

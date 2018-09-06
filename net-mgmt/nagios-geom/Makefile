@@ -1,5 +1,5 @@
 # Created by: rea-fbsd@codelabs.ru
-# $FreeBSD: head/net-mgmt/nagios-geom/Makefile 393364 2015-07-31 19:33:22Z amdmi3 $
+# $FreeBSD: head/net-mgmt/nagios-geom/Makefile 478864 2018-09-03 12:40:04Z rene $
 
 PORTNAME=	geom
 PORTVERSION=	1.3
@@ -9,7 +9,7 @@ MASTER_SITES=	http://codelabs.ru/fbsd/distfiles/ \
 PKGNAMEPREFIX=	nagios-
 DISTNAME=	check_geom-${PORTVERSION}
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nagios plug-in to get geom(8) components status
 
 USES=		perl5 shebangfix

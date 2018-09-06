@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libmediawiki-kde4/Makefile 468520 2018-04-28 07:39:40Z tcberner $
+# $FreeBSD: head/net/libmediawiki-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	libmediawiki
 PORTVERSION=	4.12.0
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE4 library for accessing MediaWiki sites
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 PORTSCOUT=	limit:^4\.12\.
 

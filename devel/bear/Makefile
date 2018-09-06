@@ -1,8 +1,8 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/bear/Makefile 476620 2018-08-07 19:42:26Z jrm $
+# $FreeBSD: head/devel/bear/Makefile 478624 2018-08-31 23:37:14Z jrm $
 
 PORTNAME=	bear
-DISTVERSION=	2.3.12
+DISTVERSION=	2.3.13
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-yesod/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-yesod/Makefile 478346 2018-08-29 09:38:11Z amdmi3 $
 
 PORTNAME=	yesod
 PORTVERSION=	1.6.0
@@ -9,6 +9,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Creation of type-safe, RESTful web applications
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	aeson blaze-html>=0.5 blaze-markup>=0.5.1 conduit-extra \
 		data-default fast-logger monad-control>=0.3 monad-logger \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/vanguards-tor/Makefile 477130 2018-08-14 01:16:31Z yuri $
+# $FreeBSD: head/security/vanguards-tor/Makefile 478471 2018-08-30 16:32:07Z yuri $
 
 PORTNAME=	vanguards
-DISTVERSION=	0.2.1
+DISTVERSION=	0.2.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMESUFFIX=	-tor

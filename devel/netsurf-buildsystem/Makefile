@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/netsurf-buildsystem/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/devel/netsurf-buildsystem/Makefile 479000 2018-09-05 02:36:02Z swills $
 
 PORTNAME=	buildsystem
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	devel
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 PKGNAMEPREFIX=	netsurf-
@@ -17,7 +17,6 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex
 
 USES=		gmake perl5 shebangfix
 MAKE_ENV+=	COMPONENT_TYPE="lib-shared"
-perl_CMD=	${SETENV} perl
 SHEBANG_FILES=	testtools/testrunner.pl
-
+NO_ARCH=	yes
 .include <bsd.port.mk>

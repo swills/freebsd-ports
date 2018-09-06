@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/kremotecontrol-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/kremotecontrol-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	kremotecontrol
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	comms kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE frontend for your remote controls
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	lircd:comms/lirc
 

@@ -1,5 +1,5 @@
 # Created by: Shane Bell <decept0@gmail.com>
-# $FreeBSD: head/x11/yakuake-kde4/Makefile 477061 2018-08-13 09:38:03Z amdmi3 $
+# $FreeBSD: head/x11/yakuake-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	yakuake
 PORTVERSION=	2.9.9
@@ -13,6 +13,9 @@ COMMENT=	Drop-down terminal emulator for KDE
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	konsole:x11/konsole-kde4
 

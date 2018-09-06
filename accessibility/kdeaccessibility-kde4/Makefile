@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/accessibility/kdeaccessibility-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/accessibility/kdeaccessibility-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	kdeaccessibility
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Accessibility applications for KDE 4
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		kde:4 metaport
 

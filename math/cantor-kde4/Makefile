@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cantor-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/cantor-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	cantor
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE 4 frontend to mathematical software
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libspectre.so:print/libspectre \
 		libqalculate.so:math/libqalculate \

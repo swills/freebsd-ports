@@ -1,8 +1,8 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/sysutils/webmin/Makefile 466953 2018-04-10 10:23:58Z olgeni $
+# $FreeBSD: head/sysutils/webmin/Makefile 478420 2018-08-29 21:15:57Z olgeni $
 
 PORTNAME=	webmin
-PORTVERSION=	1.881
+PORTVERSION=	1.890
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.webmin.com/updates/:up \
 		SF/webadmin/${PORTNAME}/${PORTVERSION}:sf
@@ -37,6 +37,7 @@ post-extract:
 			${TAR} --unlink -xzf ${DISTDIR}/$${webmin_module} -C ${WRKSRC}; \
 		done; \
 	fi
+	@${RM} -r -f ${WRKSRC}/acl/Authen-SolarisRBAC-0.1
 
 post-patch:
 	@${REINPLACE_CMD} -e "s@%%PREFIX%%@${PREFIX}@g" ${WRKSRC}/setup.sh

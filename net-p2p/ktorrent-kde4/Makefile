@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/net-p2p/ktorrent-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/ktorrent-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	ktorrent
 DISTVERSION=	4.3.1
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	BitTorrent client for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/bind.hpp:devel/boost-libs
 LIB_DEPENDS=	libtag.so:audio/taglib \

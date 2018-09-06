@@ -1,8 +1,8 @@
 # Created by: Evgeny Zhirnov <jirnov@gmail.com>
-# $FreeBSD: head/sysutils/avfs/Makefile 440843 2017-05-13 13:51:32Z misha $
+# $FreeBSD: head/sysutils/avfs/Makefile 478448 2018-08-30 13:38:16Z danfe $
 
 PORTNAME=	avfs
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/avf/${PORTNAME}/${PORTVERSION}
 

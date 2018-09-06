@@ -1,8 +1,9 @@
 # Created by: Edwin Groothuis (edwin@mavetju.org)
-# $FreeBSD: head/dns/dnsperf/Makefile 469771 2018-05-13 04:19:16Z hrs $
+# $FreeBSD: head/dns/dnsperf/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	dnsperf
 PORTVERSION=	2.1.0.0
+PORTREVISION=	1
 CATEGORIES=	dns benchmarks net
 MASTER_SITES=	ftp://ftp.nominum.com/pub/nominum/${PORTNAME}/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}-1

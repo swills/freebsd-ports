@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-slim/Makefile 453918 2017-11-10 19:03:37Z sunpoet $
+# $FreeBSD: head/devel/rubygem-slim/Makefile 478874 2018-09-03 13:44:26Z adamw $
 
 PORTNAME=	slim
-PORTVERSION=	3.0.9
+PORTVERSION=	4.0.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,11 +12,12 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-temple>=0.7.6:devel/rubygem-temple \
-		rubygem-tilt>=1.3.3:devel/rubygem-tilt
+		rubygem-tilt>=2.0.6:devel/rubygem-tilt
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 PLIST_FILES=	bin/slimrb
 

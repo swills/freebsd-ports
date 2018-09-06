@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/qwalk/Makefile 477706 2018-08-21 05:50:51Z yuri $
+# $FreeBSD: head/science/qwalk/Makefile 478476 2018-08-30 17:50:38Z yuri $
 
 PORTNAME=	qwalk
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,8 @@ COMMENT=	Quantum Monte Carlo package for quantum chemistry computations
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../COPYING
+
+PORTSCOUT=	limit:^.*[1-9]\. # prevent words like 'broken'
 
 USES=		fortran gmake perl5
 USE_GITHUB=	yes

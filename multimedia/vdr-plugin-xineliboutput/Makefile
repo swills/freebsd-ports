@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 475369 2018-07-26 13:16:06Z wen $
+# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 478960 2018-09-04 13:42:13Z tobik $
 
 PORTNAME=	vdr-plugin-xineliboutput
 PORTVERSION=	1.0.90s20120511
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/xineliboutput/files/xineliboutput/vdr-xineliboutput-${PORTVERSION}/:release \
 		LOCAL/nox:snapshot
@@ -20,7 +20,6 @@ LIB_DEPENDS=	libxine.so:multimedia/libxine \
 		libdbus-glib-1.so:devel/dbus-glib \
 		libvdpau.so:multimedia/libvdpau
 
-BROKEN_FreeBSD_12=	does not build with newer clang
 PATCH_STRIP=	-p1
 USES=		pkgconfig tar:bzip2
 USE_XORG=	xrandr xrender
@@ -28,7 +27,7 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--cc="${CC}" --cxx="${CXX}" --add-cflags=-I${VDRDIR}
 USE_GL=		gl glu glut
 WRKSRC=		${WRKDIR}/vdr-${PLUGIN}
-XINE_PLUGINSDIR=lib/xine/plugins/2.5
+XINE_PLUGINSDIR=lib/xine/plugins/2.7
 
 PORTDOCS=	README HISTORY
 PORTEXAMPLES=	xine

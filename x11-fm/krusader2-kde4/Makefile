@@ -1,5 +1,5 @@
 # Created by: Heiner <h.eichmann@gmx.de>
-# $FreeBSD: head/x11-fm/krusader2-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-fm/krusader2-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	krusader
 DISTVERSION=	2.4.0-beta3
@@ -13,6 +13,9 @@ COMMENT=	Twin panel file manager for KDE, like midnight or norton commander
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 CONFLICTS_INSTALL=	krusader2-2.*
 

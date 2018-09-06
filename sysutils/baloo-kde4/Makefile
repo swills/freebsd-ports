@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/baloo-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/baloo-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	baloo
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	sysutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE framework for searching and managing user metadata
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 CONFLICTS_INSTALL=	kde-runtime-4.12.* \
 			kf5-baloo-5.*

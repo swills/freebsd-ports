@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/slurm-wlm/Makefile 472541 2018-06-16 12:24:05Z jrm $
+# $FreeBSD: head/sysutils/slurm-wlm/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	slurm
 DISTVERSION=	17.02.11
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.schedmd.com/download/latest/ \
 		http://www.schedmd.com/download/archive/ \

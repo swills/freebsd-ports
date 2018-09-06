@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/npapi-xine/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/www/npapi-xine/Makefile 478529 2018-08-31 08:16:18Z tobik $
 
 PORTNAME=	xine
 PORTVERSION=	1.0.2
-PORTREVISION=	11
+PORTREVISION=	12
 DISTVERSIONPREFIX=	plugin-
 CATEGORIES=	www multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-plugin/${PORTVERSION}

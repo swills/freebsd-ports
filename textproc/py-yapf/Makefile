@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-yapf/Makefile 470318 2018-05-18 18:57:15Z antoine $
+# $FreeBSD: head/textproc/py-yapf/Makefile 478855 2018-09-03 11:51:38Z antoine $
 
 PORTNAME=	yapf
-PORTVERSION=	0.22.0
+PORTVERSION=	0.23.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,7 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	Formatter for Python code
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 USES=		python

@@ -1,8 +1,9 @@
 # Created by: Jason Harmening <jason.harmening@gmail.com>
-# $FreeBSD: head/multimedia/cx88/Makefile 469338 2018-05-07 22:29:46Z jbeich $
+# $FreeBSD: head/multimedia/cx88/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	cx88
 PORTVERSION=	1.5.2
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	ftp://corona.homeunix.net/ports/cx88/
 

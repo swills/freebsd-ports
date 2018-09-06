@@ -1,5 +1,5 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/net/chrony/Makefile 469426 2018-05-09 03:01:58Z tobik $
+# $FreeBSD: head/net/chrony/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	chrony
 PORTVERSION=	3.3
@@ -35,7 +35,7 @@ PORTEXAMPLES=	chrony.conf.example1 chrony.conf.example2 \
 # XXX: there are also other potentially useful options worth looking into:
 #  --disable-pps        Disable PPS API support
 OPTIONS_DEFINE=		DOCS EXAMPLES IPV6 NETTLE NSS
-OPTIONS_DEFAULT=	IPV6 NETTLE
+OPTIONS_DEFAULT=	NETTLE
 
 NETTLE_DESC=		Nettle crypto library support
 NSS_DESC=		Add support for more hashing algorithms

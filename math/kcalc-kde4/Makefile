@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kcalc-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/kcalc-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kcalc
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Scientific calculator for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr

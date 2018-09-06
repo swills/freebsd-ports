@@ -1,8 +1,9 @@
 # Created by: Bernhard Froehlich <decke@FreeBSD.org>
-# $FreeBSD: head/multimedia/kodi-addon-pvr-iptvsimple/Makefile 473736 2018-07-02 13:29:25Z decke $
+# $FreeBSD: head/multimedia/kodi-addon-pvr-iptvsimple/Makefile 478793 2018-09-02 15:01:24Z mat $
 
 PORTNAME=	kodi-addon-pvr-iptvsimple
 PORTVERSION=	2.4.14
+DISTVERSIONSUFFIX=	-Krypton
 CATEGORIES=	multimedia
 
 MAINTAINER=	decke@FreeBSD.org
@@ -20,6 +21,5 @@ USES=		cmake:outsource,noninja
 USE_GITHUB=	yes
 GH_ACCOUNT=	kodi-pvr
 GH_PROJECT=	pvr.iptvsimple
-GH_TAGNAME=	${PORTVERSION}-Krypton
 
 .include <bsd.port.mk>

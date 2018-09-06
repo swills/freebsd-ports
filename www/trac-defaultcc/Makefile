@@ -1,5 +1,5 @@
 # Created by: Eygene Ryabinkin <rea@FreeBSD.org>
-# $FreeBSD: head/www/trac-defaultcc/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/trac-defaultcc/Makefile 478873 2018-09-03 13:33:18Z joneum $
 
 PORTNAME=	defaultcc
 PORTVERSION=	0.1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://dist.codelabs.ru/fbsd/trac-${PORTNAME}/
 PKGNAMEPREFIX=	trac-
 DISTNAME=	${PORTNAME}plugin-r${REL}
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Plugin that adds default CC value for tickets
 
 LICENSE=	GPLv2

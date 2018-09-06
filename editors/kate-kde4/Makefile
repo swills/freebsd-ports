@@ -1,5 +1,5 @@
 # Created by: fluffy@
-# $FreeBSD: head/editors/kate-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/kate-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kate
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ CATEGORIES=	editors kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Basic editor framework for the KDE system
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/multimc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/multimc/Makefile 478704 2018-09-01 15:22:38Z jhale $
 
 PORTNAME=	multimc
 DISTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	games java
 
 MAINTAINER=	me@tsundoku.ne.jp
@@ -20,7 +21,8 @@ GH_TUPLE=	MultiMC:libnbtplusplus:508eda8:libnbtplusplus/libraries/libnbtplusplus
 		MultiMC:quazip:3691d57:quazip/libraries/quazip
 USE_LDCONFIG=	yes
 USE_JAVA=	1.8+
-USE_QT=		buildtools core concurrent gui network qmake testlib_build widgets xml
+USE_QT=		core concurrent gui network testlib_build widgets xml \
+		buildtools_build qmake_build
 
 CMAKE_ARGS=	-DMultiMC_LAYOUT="lin-system"
 CMAKE_OFF=	MultiMC_UPDATER

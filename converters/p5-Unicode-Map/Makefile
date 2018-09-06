@@ -1,5 +1,5 @@
 # Created by: Ryan T. Dean <rtdean@cytherianage.net>
-# $FreeBSD: head/converters/p5-Unicode-Map/Makefile 390918 2015-06-29 15:47:44Z adamw $
+# $FreeBSD: head/converters/p5-Unicode-Map/Makefile 478849 2018-09-03 09:08:16Z amdmi3 $
 
 PORTNAME=	Unicode-Map
 PORTVERSION=	0.112
@@ -11,10 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl class that converts strings to/from 2-byte Unicode UCS2 format
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Unicode/Map/Map.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Unicode/Map/Map.so
 
 .include <bsd.port.mk>

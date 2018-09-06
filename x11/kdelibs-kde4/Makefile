@@ -1,5 +1,5 @@
 # Created by: arved@FreeBSD.org
-# $FreeBSD: head/x11/kdelibs-kde4/Makefile 477926 2018-08-23 21:29:11Z adridg $
+# $FreeBSD: head/x11/kdelibs-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	kdelibs
 PORTVERSION=	${KDE4_KDELIBS_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Base set of libraries needed by KDE programs
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
 		libjasper.so:graphics/jasper \

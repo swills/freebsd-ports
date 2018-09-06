@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Pegex/Makefile 475712 2018-07-29 19:12:00Z sunpoet $
+# $FreeBSD: head/devel/p5-Pegex/Makefile 478897 2018-09-03 19:03:50Z sunpoet $
 
 PORTNAME=	Pegex
-PORTVERSION=	0.64
+PORTVERSION=	0.66
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:INGY
@@ -22,8 +22,9 @@ RUN_DEPENDS=	p5-JSON-XS>=0:converters/p5-JSON-XS \
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

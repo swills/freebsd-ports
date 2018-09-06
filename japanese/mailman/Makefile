@@ -1,9 +1,9 @@
 # Created by: Sunagawa Koji <koj@ofug.net>
-# $FreeBSD: head/japanese/mailman/Makefile 475623 2018-07-29 03:40:17Z tota $
+# $FreeBSD: head/japanese/mailman/Makefile 478435 2018-08-30 06:34:27Z tota $
 
 PORTNAME=	mailman
 PORTVERSION=	2.1.14.j7
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	japanese mail
 MASTER_SITES=	https://docs.python.jp/contrib/mailman/_static/ \

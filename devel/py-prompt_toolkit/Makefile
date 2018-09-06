@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-prompt_toolkit/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-prompt_toolkit/Makefile 478454 2018-08-30 14:14:10Z sunpoet $
 
 PORTNAME=	prompt_toolkit
 PORTVERSION=	1.0.15
@@ -19,7 +19,5 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR} \
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python
-
-SLAVEDIRS=	devel/py-prompt_toolkit
 
 .include <bsd.port.mk>

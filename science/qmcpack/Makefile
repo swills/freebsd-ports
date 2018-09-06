@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/qmcpack/Makefile 477921 2018-08-23 18:17:24Z yuri $
+# $FreeBSD: head/science/qmcpack/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	qmcpack
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.5.0
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

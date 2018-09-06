@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/knemo-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/knemo-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	knemo
 PORTVERSION=	0.7.7
@@ -9,6 +9,9 @@ DISTNAME=	12956-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	KDE network monitor
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 BROKEN_FreeBSD_11=	does not build due to access to kernel-private structure (error: member access into incomplete type 'struct in6_ifaddr')
 BROKEN_FreeBSD_12=	does not build due to access to kernel-private structure (error: member access into incomplete type 'struct in6_ifaddr')

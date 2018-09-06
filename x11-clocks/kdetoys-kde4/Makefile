@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/kdetoys-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11-clocks/kdetoys-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	kdetoys
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE miscellaneous applications (meta port)
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		kde:4 metaport
 

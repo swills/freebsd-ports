@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 477750 2018-08-21 18:32:30Z rene $
+# $FreeBSD: head/comms/Makefile 478894 2018-09-03 18:46:52Z gnn $
 #
 
     COMMENT = Communication utilities
@@ -79,6 +79,7 @@
     SUBDIR += klog
     SUBDIR += kremotecontrol-kde4
     SUBDIR += kvasd
+    SUBDIR += libbtbb
     SUBDIR += libconcord
     SUBDIR += libfap
     SUBDIR += libfec
@@ -187,6 +188,7 @@
     SUBDIR += twpsk
     SUBDIR += uarduno
     SUBDIR += uartlirc
+    SUBDIR += ubertooth
     SUBDIR += uhd
     SUBDIR += uird
     SUBDIR += unixcw

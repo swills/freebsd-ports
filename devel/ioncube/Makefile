@@ -1,5 +1,5 @@
 # Created by: Svyatoslav Lempert <svyatoslav.lempert@gmail.com>
-# $FreeBSD: head/devel/ioncube/Makefile 461117 2018-02-06 23:51:31Z dbaio $
+# $FreeBSD: head/devel/ioncube/Makefile 478445 2018-08-30 13:06:46Z tobik $
 
 PORTNAME=	ioncube
 DISTVERSION=	10.1.1
@@ -7,6 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://downloads.ioncube.com/loader_downloads/ \
 		http://downloads2.ioncube.com/loader_downloads/ \
 		http://dl.ispsystem.info/ioncube/${DISTVERSION}/
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}_loaders_fre_${VER}_${ARCH:S,i386,x86,:S,amd64,x86-64,}
 DIST_SUBDIR=	${PORTNAME}/${DISTVERSION}
 
@@ -21,7 +22,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 IGNORE_DragonFly=	is unsupported on DragonFly
 ONLY_FOR_ARCHS=	amd64 i386
 NO_BUILD=	yes
-USES=		php
+USES=		php:flavors
 
 SUB_FILES=	pkg-message
 WRKSRC=		${WRKDIR}/${PORTNAME}

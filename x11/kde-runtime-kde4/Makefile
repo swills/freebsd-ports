@@ -1,13 +1,16 @@
-# $FreeBSD: head/x11/kde-runtime-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/kde-runtime-kde4/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	kde-runtime
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	x11 kde kde-applications
 PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Runtime components for KDE Plasma Desktop
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 CONFLICTS_INSTALL=	plasma5-kde-cli-tools
 

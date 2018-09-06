@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-vnsiserver/Makefile 470941 2018-05-26 18:19:35Z miwi $
+# $FreeBSD: head/multimedia/vdr-plugin-vnsiserver/Makefile 478960 2018-09-04 13:42:13Z tobik $
 
 PORTNAME=	vdr-plugin-vnsiserver
 PORTVERSION=	14.0.20150330
@@ -12,7 +12,6 @@ COMMENT=	Video Disk Recorder - VNSI server plugin
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_FreeBSD_12=	does not build with newer clang
 USE_GITHUB=	yes
 GH_ACCOUNT=	FernetMenta
 GH_TAGNAME=	36e2b61

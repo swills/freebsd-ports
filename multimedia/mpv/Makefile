@@ -1,10 +1,10 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpv/Makefile 477292 2018-08-15 21:59:13Z cpm $
+# $FreeBSD: head/multimedia/mpv/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	mpv
 PORTVERSION=	0.29.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio
 MASTER_SITES=	https://waf.io/:waf

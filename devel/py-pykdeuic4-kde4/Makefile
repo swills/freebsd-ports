@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pykdeuic4-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/py-pykdeuic4-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	pykdeuic4
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ DISTNAME=	pykde4-${PORTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Enhanced version of pyuic4
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource python:2.7 kde:4 qt:4 shebangfix tar:xz
 USE_KDE=	kdelibs automoc4 pykde4

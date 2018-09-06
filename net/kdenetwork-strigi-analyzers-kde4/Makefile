@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kdenetwork-strigi-analyzers-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net/kdenetwork-strigi-analyzers-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kdenetwork-strigi-analyzers
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Strigi analyzers for network-related file formats
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 

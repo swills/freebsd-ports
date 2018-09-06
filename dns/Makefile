@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 477456 2018-08-18 00:13:39Z sunpoet $
+# $FreeBSD: head/dns/Makefile 478837 2018-09-03 00:21:45Z jbeich $
 #
 
     COMMENT = Domain Name Service tools
@@ -122,7 +122,6 @@
     SUBDIR += opendd
     SUBDIR += opendnssec
     SUBDIR += opendnssec2
-    SUBDIR += openmdns
     SUBDIR += openresolv
     SUBDIR += p5-AnyEvent-CacheDNS
     SUBDIR += p5-AnyEvent-DNS-EtcHosts

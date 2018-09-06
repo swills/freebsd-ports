@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/marble-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/marble-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	marble
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Virtual globe and world atlas for KDE
 
 LIB_DEPENDS=	libquazip.so:archivers/quazip@qt4
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource kde:4 qt:4 shared-mime-info tar:xz
 USE_KDE=	kdelibs automoc4

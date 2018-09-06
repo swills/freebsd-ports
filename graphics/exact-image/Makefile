@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/exact-image/Makefile 456795 2017-12-20 14:10:03Z bapt $
+# $FreeBSD: head/graphics/exact-image/Makefile 478783 2018-09-02 11:06:37Z tobik $
 
 PORTNAME=	exact-image
 PORTVERSION=	0.9.1
@@ -30,6 +30,7 @@ BROKEN_armv7=		fails to configure: C++ compiler is not installed or does not wor
 #broken headers on c++ in base system:
 CPPFLAGS+=	-fpermissive -I${LOCALBASE}/include
 USES=		gmake jpeg perl5 pkgconfig python:2.7 tar:bzip2
+USE_CXXSTD=	c++98
 USE_XORG=	x11
 HAS_CONFIGURE=	yes
 INSTALL_WRKSRC=	${WRKSRC}/objdir

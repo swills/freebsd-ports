@@ -1,5 +1,5 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/games/belooted/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/belooted/Makefile 479017 2018-09-05 10:05:29Z martymac $
 
 PORTNAME=	belooted
 PORTVERSION=	0.1.4.1
@@ -14,7 +14,7 @@ COMMENT=	Popular 32-card trick-taking game played in France
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake pkgconfig
+USES=		gmake gnome pkgconfig
 USE_GNOME=	gtk20 intltool
 GNU_CONFIGURE=	yes
 

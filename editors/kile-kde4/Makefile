@@ -1,5 +1,5 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/editors/kile-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/kile-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kile
 PORTVERSION=	2.1.3
@@ -13,6 +13,9 @@ COMMENT=	LaTeX source editor for KDE
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	identify:graphics/ImageMagick
 

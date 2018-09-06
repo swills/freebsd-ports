@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/deskutils/kdepimlibs-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/deskutils/kdepimlibs-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdepimlibs
 PORTVERSION=	${KDE4_KDEPIM_VERSION}
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE PIM Libraries
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 BUILD_DEPENDS=	xsltproc:textproc/libxslt
 LIB_DEPENDS=	libgpgme.so:security/gpgme \

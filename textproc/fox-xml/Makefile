@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/fox-xml/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/fox-xml/Makefile 478964 2018-09-04 14:57:27Z yuri $
 
 PORTNAME=	fox
 DISTVERSION=	4.1.2-91
@@ -12,6 +12,8 @@ COMMENT=	Fortran XML library
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+CONFLICTS_INSTALL=	xmlf90
 
 GNU_CONFIGURE=	yes
 USES=		fortran gmake

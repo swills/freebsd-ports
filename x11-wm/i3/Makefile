@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/x11-wm/i3/Makefile 465099 2018-03-20 17:25:58Z bapt $
+# $FreeBSD: head/x11-wm/i3/Makefile 478495 2018-08-30 20:50:29Z yuri $
 
 PORTNAME=	i3
 DISTVERSION=	4.15
@@ -35,6 +35,8 @@ CONFIGURE_ENV=	ac_cv_path_PATH_ASCIIDOC=""
 USE_PERL5=	run
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
 INSTALL_TARGET=	install-strip
+
+CONFLICTS_INSTALL=	i3-gaps
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/man/*.1 ${STAGEDIR}${MANPREFIX}/man/man1/

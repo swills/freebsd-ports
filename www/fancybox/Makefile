@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/fancybox/Makefile 467254 2018-04-13 20:47:50Z sunpoet $
+# $FreeBSD: head/www/fancybox/Makefile 478738 2018-09-01 22:51:22Z sunpoet $
 
 PORTNAME=	fancybox
-PORTVERSION=	3.3.5
+PORTVERSION=	3.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

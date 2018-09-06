@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 477816 2018-08-22 19:42:48Z swills $
+# $FreeBSD: head/finance/Makefile 478720 2018-09-01 19:41:21Z nivit $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -24,12 +24,14 @@
     SUBDIR += alkimia-qt4
     SUBDIR += aqbanking
     SUBDIR += aqmoney
+    SUBDIR += beancount
     SUBDIR += beanie
     SUBDIR += bitcoin-armory
     SUBDIR += cbb
     SUBDIR += cointop
     SUBDIR += electrum
     SUBDIR += expense
+    SUBDIR += fava
     SUBDIR += fixc
     SUBDIR += frontaccounting
     SUBDIR += gnucash

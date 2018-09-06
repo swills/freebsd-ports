@@ -1,5 +1,5 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/audio/juk-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/juk-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	juk
 PORTVERSION=	${KDE4_VERSION}
@@ -10,6 +10,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Jukebox, tagger and music collection manager
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libtag.so:audio/taglib
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/russian/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/russian/Makefile 478775 2018-09-02 10:09:54Z rene $
 #
 
     COMMENT = Russian support
@@ -20,7 +20,6 @@
     SUBDIR += libreoffice
     SUBDIR += mueller-dic
     SUBDIR += mythes
-    SUBDIR += napster
     SUBDIR += p5-Convert-Cyrillic
     SUBDIR += p5-Lingua-DetectCyrillic
     SUBDIR += p5-Lingua-RU-Charset

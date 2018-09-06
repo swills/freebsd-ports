@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound6/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/audio/csound6/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	csound
 PORTVERSION=	6.06
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	audio lang
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}6/${PORTNAME:S/c/C/}${PORTVERSION}
 PKGNAMESUFFIX=	6

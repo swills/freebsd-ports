@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-click-completion/Makefile 477430 2018-08-17 14:04:43Z matthew $
+# $FreeBSD: head/devel/py-click-completion/Makefile 478833 2018-09-02 23:57:15Z sunpoet $
 
 PORTNAME=	click-completion
 PORTVERSION=	0.4.1
@@ -13,11 +13,10 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
+		${PY_ENUM34} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}shellingham>0:devel/py-shellingham@${PY_FLAVOR}
-
-py27_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

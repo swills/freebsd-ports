@@ -1,9 +1,9 @@
 # Created by: Henrik Motakef <henrik.motakef@web.de>
-# $FreeBSD: head/devel/cl-split-sequence-sbcl/Makefile 477141 2018-08-14 07:53:09Z krion $
+# $FreeBSD: head/devel/cl-split-sequence-sbcl/Makefile 478450 2018-08-30 13:39:51Z krion $
 
 PORTNAME=	split-sequence
 PORTVERSION=	20011114.1
-PORTREVISION=	25
+PORTREVISION=	26
 CATEGORIES=	devel lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

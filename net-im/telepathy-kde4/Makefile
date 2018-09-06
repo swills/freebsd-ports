@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/telepathy-kde4/Makefile 465343 2018-03-23 09:50:04Z adridg $
+# $FreeBSD: head/net-im/telepathy-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	telepathy
 PORTVERSION=	${KTP_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE integrated instant messaging framework
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/kcm_ktp_accounts.so:net-im/ktp-accounts-kcm-kde4 \
 		${KDE_PREFIX}/lib/kde4/kded_ktp_approver.so:net-im/ktp-approver-kde4 \

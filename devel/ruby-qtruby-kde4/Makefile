@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	qtruby
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Ruby bindings for Qt
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 BROKEN_powerpc64=	fails to compile: ruby.h:1381: wrong number of arguments specified for '__deprecated__' attribute
 

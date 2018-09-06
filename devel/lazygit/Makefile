@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/lazygit/Makefile 478270 2018-08-28 00:30:42Z meta $
+# $FreeBSD: head/devel/lazygit/Makefile 478339 2018-08-29 05:21:00Z meta $
 
 PORTNAME=	lazygit
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.1.80
+DISTVERSION=	0.2.1
 CATEGORIES=	devel
 
 MAINTAINER=	meta@FreeBSD.org

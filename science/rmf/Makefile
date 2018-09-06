@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/rmf/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/science/rmf/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	rmf
-DISTVERSION=	g20180614
+DISTVERSION=	1.1
 PORTREVISION=	1
 CATEGORIES=	science graphics
 

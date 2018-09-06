@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/archivers/unrar/Makefile 475681 2018-07-29 19:09:18Z sunpoet $
+# $FreeBSD: head/archivers/unrar/Makefile 478452 2018-08-30 14:13:59Z sunpoet $
 
 PORTNAME=	unrar
 DISTVERSION=	5.60
@@ -32,7 +32,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 PLIST_FILES=	bin/unrar
 
-SLAVEDIRS=	archivers/unrar-iconv chinese/unrar
+SLAVEDIRS=	archivers/unrar-iconv
 
 OPENSSL_AES_CPPFLAGS=	-DOPENSSL_AES -I${OPENSSLINC}
 OPENSSL_AES_LDFLAGS=	-L${OPENSSLLIB} -lcrypto

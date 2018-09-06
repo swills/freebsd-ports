@@ -1,9 +1,9 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/apsfilter/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/print/apsfilter/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	apsfilter
 PORTVERSION=	7.2.8
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	print
 MASTER_SITES=	http://www.apsfilter.org/download/
 DIST_SUBDIR=	apsfilter

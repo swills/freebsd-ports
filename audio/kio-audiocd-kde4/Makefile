@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kio-audiocd-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/kio-audiocd-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	kio-audiocd
 PORTVERSION=	${KDE4_VERSION}
@@ -10,6 +10,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE IOSlave for accessing audio CDs
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libcdda_paranoia.so:audio/cdparanoia \

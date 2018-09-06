@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/okteta-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/okteta-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	okteta
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE hex editor
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqca.so:devel/qca@qt4
 

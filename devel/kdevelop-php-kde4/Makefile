@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdevelop-php-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/kdevelop-php-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdevelop-php
 PORTVERSION=	${KDEVELOP_VERSION:S/4./1./}
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	PHP support for KDevelop
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libkdevplatforminterfaces.so:devel/kdevplatform-kde4
 BUILD_DEPENDS=	${KDE_PREFIX}/bin/kdev-pg-qt:devel/kdevelop-pg-qt-kde4

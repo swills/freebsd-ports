@@ -1,9 +1,8 @@
 # Created by: Neil Blakey-Milner <nbm@rucus.ru.ac.za>
-# $FreeBSD: head/ftp/curl/Makefile 475522 2018-07-28 11:43:46Z sunpoet $
+# $FreeBSD: head/ftp/curl/Makefile 479050 2018-09-05 23:52:27Z sunpoet $
 
 PORTNAME=	curl
-PORTVERSION=	7.61.0
-PORTREVISION=	1
+PORTVERSION=	7.61.1
 CATEGORIES=	ftp net www
 MASTER_SITES=	https://curl.haxx.se/download/ \
 		LOCAL/sunpoet

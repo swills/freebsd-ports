@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 477762 2018-08-22 00:35:32Z jmd $
+# $FreeBSD: head/graphics/Makefile 478912 2018-09-03 19:07:52Z pi $
 #
 
     COMMENT = Graphics tools and libraries
@@ -691,6 +691,7 @@
     SUBDIR += osgearth
     SUBDIR += oyranos
     SUBDIR += p5-Acme-Steganography-Image-Png
+    SUBDIR += p5-Algorithm-Line-Bresenham
     SUBDIR += p5-Alien-Gimp
     SUBDIR += p5-Barcode-ZBar
     SUBDIR += p5-CAD-Drawing
@@ -1124,6 +1125,7 @@
     SUBDIR += visprint
     SUBDIR += volpack
     SUBDIR += vp
+    SUBDIR += vulkan-loader
     SUBDIR += waffle
     SUBDIR += waifu2x-converter-cpp
     SUBDIR += wayland

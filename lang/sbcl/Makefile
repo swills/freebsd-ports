@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/sbcl/Makefile 477140 2018-08-14 07:52:41Z krion $
+# $FreeBSD: head/lang/sbcl/Makefile 478449 2018-08-30 13:39:13Z krion $
 
 # All *-sbcl ports and any other port [1] with SBCL fasl files must get a
 # PORTREVISION bump when lang/sbcl is updated.  The compiled fasl files are
@@ -7,7 +7,7 @@
 # [1] x11-wm/stumpwm
 
 PORTNAME=	sbcl
-DISTVERSION=	1.4.10
+DISTVERSION=	1.4.11
 DISTVERSIONSUFFIX=	-source
 PORTEPOCH=	1
 CATEGORIES=	lang lisp

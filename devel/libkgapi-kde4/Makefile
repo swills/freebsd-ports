@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libkgapi-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/libkgapi-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	libkgapi
 PORTVERSION=	2.2.0
@@ -12,6 +12,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE-based library for accessing various Google services
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-napalm-logs/Makefile 470424 2018-05-19 18:41:07Z miwi $
+# $FreeBSD: head/net-mgmt/py-napalm-logs/Makefile 478797 2018-09-02 15:38:41Z swills $
 
 PORTNAME=	napalm-logs
-DISTVERSION=	0.5.0
+DISTVERSION=	0.6.0
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,8 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pynacl>0:security/py-pynacl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyzmq>0:net/py-pyzmq@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}u-msgpack-python>0:devel/py-u-msgpack-python@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}prometheus-client>0:net-mgmt/py-prometheus-client@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

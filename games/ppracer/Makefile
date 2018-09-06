@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/ppracer/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/ppracer/Makefile 478663 2018-09-01 09:41:22Z tobik $
 
 PORTNAME=	ppracer
 DISTVERSION=	0.5alpha
@@ -13,6 +13,9 @@ COMMENT=	3D downhill racing game... kind of like TuxRacer Improved
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Unmaintained.  Play games/etracer instead
+EXPIRATION_DATE=	2018-09-08
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libfreetype.so:print/freetype2

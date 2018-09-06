@@ -1,9 +1,10 @@
-# $FreeBSD: head/science/py-gsd/Makefile 469829 2018-05-13 20:32:41Z yuri $
+# $FreeBSD: head/science/py-gsd/Makefile 478323 2018-08-28 15:46:05Z yuri $
 
 PORTNAME=	gsd
-DISTVERSION=	1.5.2
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.5.3
 CATEGORIES=	science python
-MASTER_SITES=	CHEESESHOP
+MASTER_SITES=	http://glotzerlab.engin.umich.edu/Downloads/gsd/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	yuri@FreeBSD.org

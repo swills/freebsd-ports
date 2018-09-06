@@ -1,5 +1,5 @@
 # Created by: Bob Hockney <zeus@ix.netcom.com>
-# $FreeBSD: head/security/webfwlog/Makefile 457724 2017-12-31 20:14:46Z pi $
+# $FreeBSD: head/security/webfwlog/Makefile 478528 2018-08-31 08:08:22Z mat $
 
 PORTNAME=	webfwlog
 PORTVERSION=	1.1.0
@@ -37,7 +37,6 @@ MODPHP_USES_OFF=	php:web
 
 MYSQL_CONFIGURE_WITH=	mysql
 MYSQL_USE=		php=mysqli
-MYSQL_USES=		mysql:client
 
 MYSQLIPV6_DESC=			Build plugin for Mysql IPv6 support (implies MYSQL)
 MYSQLIPV6_IMPLIES=		MYSQL
@@ -45,7 +44,6 @@ MYSQLIPV6_CONFIGURE_ENABLE=	mysql-ipv6
 MYSQLIPV6_PLUGIN_DIR_REL=	lib/mysql/plugin
 MYSQLIPV6_PLUGIN_DIR=		${LOCALBASE}/${MYSQLIPV6_PLUGIN_DIR_REL}
 MYSQLIPV6_CONFIGURE_ON=		--libdir=${MYSQLIPV6_PLUGIN_DIR}
-MYSQLIPV6_USES=			libtool mysql:server,client
 MYSQLIPV6_USE=			ldconfig=${MYSQLIPV6_PLUGIN_DIR}
 MYSQLIPV6_PLIST_FILES=		${MYSQLIPV6_PLUGIN_DIR_REL}/libwebfwlog_udf.so \
 				${MYSQLIPV6_PLUGIN_DIR_REL}/libwebfwlog_udf.so.0 \
@@ -76,6 +74,12 @@ SUB_LIST+=	VERSION=${PORTVERSION}
 PLIST_SUB+=	WWWGRP=${WWWGRP}
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MMYSQLIPV6}
+USES+=	mysql:server,client
+.elif ${PORT_OPTIONS:MMYSQL}
+USES+=	mysql:client
+.endif
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${WWWDIR}/include/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-daisy/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-daisy/Makefile 478499 2018-08-30 22:35:20Z jhale $
 
 PORTNAME=	daisy
 PORTVERSION=	0.0.4.26
@@ -13,6 +13,9 @@ COMMENT=	Simple launcher plasma applet for KDE4
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake gettext kde:4 qt:4
 USE_KDE=	automoc4 kdelibs workspace

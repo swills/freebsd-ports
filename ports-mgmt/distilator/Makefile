@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/distilator/Makefile 478219 2018-08-27 16:28:42Z ehaupt $
+# $FreeBSD: head/ports-mgmt/distilator/Makefile 478937 2018-09-04 08:58:07Z ehaupt $
 
 PORTNAME=	distilator
-PORTVERSION=	1.0
+PORTVERSION=	1.2
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	https://critical.ch/distilator/ \
 		LOCAL/ehaupt
@@ -11,6 +11,7 @@ MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Command-line script to check the availability of a ports distfiles
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.18.4_1:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests-ftp>=0.3.1:ftp/py-requests-ftp@${PY_FLAVOR}
@@ -20,5 +21,6 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 
 PLIST_FILES=	bin/distilator
+SHEBANG_FILES=	distilator.py
 
 .include <bsd.port.mk>

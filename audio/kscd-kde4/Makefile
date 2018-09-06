@@ -1,5 +1,5 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/audio/kscd-kde4/Makefile 476022 2018-07-31 21:11:24Z jhale $
+# $FreeBSD: head/audio/kscd-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	kscd
 PORTVERSION=	${KDE4_VERSION}
@@ -10,6 +10,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	CD Player for KDE
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libdiscid.so:audio/libdiscid \
 		libmusicbrainz5.so:audio/libmusicbrainz5

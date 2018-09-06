@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/teleport/Makefile 474836 2018-07-18 07:02:56Z seanc $
+# $FreeBSD: head/security/teleport/Makefile 478341 2018-08-29 07:56:33Z seanc $
 
 PORTNAME=	teleport
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.6.7
+DISTVERSION=	2.7.4
 CATEGORIES=	security
 
 MAINTAINER=	seanc@FreeBSD.org
@@ -39,8 +39,8 @@ PRE_GOPATH_DIR=	${PORTNAME}-${DISTVERSION}${DISTVERSIONSUFFIX}
 
 post-extract:
 	@${MKDIR} ${WRKDIR}/${GO_TELEPORT_SRC_DIR}
-	@${CP} -rp ${WRKDIR}/${PRE_GOPATH_DIR}/vendor/* ${WRKDIR}/src/
-	@${CP} -rp ${WRKDIR}/${PRE_GOPATH_DIR}/* ${WRKDIR}/${GO_TELEPORT_SRC_DIR}/
+	@${CP} -rpH ${WRKDIR}/${PRE_GOPATH_DIR}/vendor/* ${WRKDIR}/src/
+	@${CP} -rpH ${WRKDIR}/${PRE_GOPATH_DIR}/* ${WRKDIR}/${GO_TELEPORT_SRC_DIR}/
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|^GITREF=.*|GITREF=${GH_TAG_COMMIT}|' \

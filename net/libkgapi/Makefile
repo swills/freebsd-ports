@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libkgapi/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/net/libkgapi/Makefile 478777 2018-09-02 10:15:13Z adridg $
 
 PORTNAME=	libkgapi
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,6 +11,9 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libical.so:devel/libical \
 		libsasl2.so:security/cyrus-sasl2
+
+CONFLICTS_BUILD=	kdepim-runtime-18.0[04]* \
+			kdepim-runtime-17.*
 
 USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
@@ -25,6 +28,5 @@ USE_QT=		core dbus gui location qml network printsupport quick webchannel \
 		buildtools_build qmake_build
 
 USE_LDCONFIG=	yes
-
 
 .include <bsd.port.mk>

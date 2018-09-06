@@ -1,9 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-capstone/Makefile 418316 2016-07-10 12:57:26Z pi $
+# $FreeBSD: head/devel/py-capstone/Makefile 478858 2018-09-03 12:20:08Z antoine $
 
 PORTNAME=	capstone
-PORTVERSION=	3.0.4
-PORTREVISION=	1
+PORTVERSION=	3.0.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,5 +18,9 @@ LIB_DEPENDS=	libcapstone.so:devel/capstone3
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+MAKE_ENV+=	LIBCAPSTONE_PATH= # Prevent bundled libcapstone from being built
+
+post-patch:
+	@${REINPLACE_CMD} 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/capstone/__init__.py
 
 .include <bsd.port.mk>

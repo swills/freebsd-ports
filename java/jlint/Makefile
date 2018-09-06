@@ -1,9 +1,9 @@
 # Created by: Ernst de Haan <znerd@FreeBSD.org>
-# $FreeBSD: head/java/jlint/Makefile 433915 2017-02-11 21:23:04Z bapt $
+# $FreeBSD: head/java/jlint/Makefile 478616 2018-08-31 22:32:05Z tobik $
 
 PORTNAME=	jlint
 PORTVERSION=	3.1.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	java devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -12,6 +12,11 @@ COMMENT=	Java program analyzer and checker
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=	compiler
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/jlint \
 		bin/jlint.sh \

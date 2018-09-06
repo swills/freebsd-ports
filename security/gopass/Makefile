@@ -1,9 +1,10 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/security/gopass/Makefile 474577 2018-07-13 11:53:51Z swills $
+# $FreeBSD: head/security/gopass/Makefile 478591 2018-08-31 16:09:39Z yuri $
 
 PORTNAME=	gopass
-PORTVERSION=	1.8.2
 DISTVERSIONPREFIX=	v
+DISTVERSION=	1.8.2-2
+DISTVERSIONSUFFIX=	-g7e0fbf3
 CATEGORIES=	security
 
 MAINTAINER=	sascha@root-login.org
@@ -16,7 +17,6 @@ RUN_DEPENDS=	git:devel/git \
 		gpg2:security/gnupg
 
 USES=		go
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	gopasspw
 

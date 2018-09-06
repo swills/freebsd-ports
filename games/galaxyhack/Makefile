@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/galaxyhack/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/galaxyhack/Makefile 478625 2018-08-31 23:44:08Z tobik $
 
 PORTNAME=	galaxyhack
 PORTVERSION=	1.74
@@ -27,9 +27,12 @@ FLEETS_DESC=	Additional fleets
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/src
 
-USES=		dos2unix gmake tar:bzip2
+USES=		compiler dos2unix gmake tar:bzip2
 USE_SDL=	gfx image mixer sdl
 ALL_TARGET=	${PORTNAME}
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 SUB_FILES=	${PORTNAME}-sh
 

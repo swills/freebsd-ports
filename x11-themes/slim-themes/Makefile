@@ -1,5 +1,5 @@
 # Created by: Eygene Ryabinkin <rea-fbsd@codelabs.ru>
-# $FreeBSD: head/x11-themes/slim-themes/Makefile 420386 2016-08-18 06:02:13Z marino $
+# $FreeBSD: head/x11-themes/slim-themes/Makefile 478864 2018-09-03 12:40:04Z rene $
 
 PORTNAME=	slim-themes
 PORTVERSION=	1.0.1
@@ -10,7 +10,7 @@ MASTER_SITES=	http://dist.codelabs.ru/fbsd/ports/slim-themes/:new_themes \
 		SF/slim.berlios/:old_themes
 DISTFILES=
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Theme pack for SLiM login app
 
 NO_BUILD=	yes

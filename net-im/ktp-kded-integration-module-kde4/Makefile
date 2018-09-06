@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-kded-integration-module-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/ktp-kded-integration-module-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	ktp-kded-integration-module
 PORTVERSION=	${KTP_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Module for integration of instant messaging into KDE Workspaces
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt4 \
 		libktpcommoninternalsprivate.so:net-im/ktp-common-internals-kde4

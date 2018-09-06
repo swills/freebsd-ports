@@ -1,9 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-picklefield/Makefile 472346 2018-06-13 22:05:51Z ultima $
+# $FreeBSD: head/www/py-django-picklefield/Makefile 478391 2018-08-29 19:09:56Z sunpoet $
 
 PORTNAME=	django-picklefield
-PORTVERSION=	1.0.0
-PORTREVISION=	2
+PORTVERSION=	1.1.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

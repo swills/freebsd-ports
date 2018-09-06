@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/py-sounddevice/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-sounddevice/Makefile 478843 2018-09-03 05:23:06Z yuri $
 
 PORTNAME=	sounddevice
-DISTVERSION=	0.3.11
+DISTVERSION=	0.3.12
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

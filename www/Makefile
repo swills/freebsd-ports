@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 478050 2018-08-25 14:50:53Z rene $
+# $FreeBSD: head/www/Makefile 478901 2018-09-03 19:04:10Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -55,6 +55,7 @@
     SUBDIR += bolt
     SUBDIR += bookmarkbridge
     SUBDIR += bozohttpd
+    SUBDIR += buku
     SUBDIR += butterfly
     SUBDIR += c-icap
     SUBDIR += c-icap-modules
@@ -253,7 +254,6 @@
     SUBDIR += hotcrp
     SUBDIR += hs-DAV
     SUBDIR += hs-HTTP
-    SUBDIR += hs-activehs
     SUBDIR += hs-authenticate
     SUBDIR += hs-cgi
     SUBDIR += hs-cookie
@@ -1524,7 +1524,6 @@
     SUBDIR += py-bottle
     SUBDIR += py-bottle-cork
     SUBDIR += py-branca
-    SUBDIR += py-buku
     SUBDIR += py-cachecontrol
     SUBDIR += py-caldav
     SUBDIR += py-cheroot
@@ -1586,6 +1585,7 @@
     SUBDIR += py-django-mezzanine-filebrowser
     SUBDIR += py-django-mezzanine-grappelli
     SUBDIR += py-django-model-utils
+    SUBDIR += py-django-modern-rpc
     SUBDIR += py-django-mptt
     SUBDIR += py-django-netfields
     SUBDIR += py-django-openid-auth
@@ -1687,6 +1687,7 @@
     SUBDIR += py-google-api-python-client
     SUBDIR += py-google-cloud-core
     SUBDIR += py-google-cloud-storage
+    SUBDIR += py-google-cloud-translate
     SUBDIR += py-google-resumable-media
     SUBDIR += py-graphite-api
     SUBDIR += py-graphite-web

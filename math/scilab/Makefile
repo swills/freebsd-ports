@@ -1,9 +1,9 @@
 # Created by: js@jeannot.org
-# $FreeBSD: head/math/scilab/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/scilab/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	scilab
 PORTVERSION=	5.5.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	math cad java
 MASTER_SITES=	http://www.scilab.org/download/${PORTVERSION}/
 DISTFILES=	${DISTNAME}-src${EXTRACT_SUFX}

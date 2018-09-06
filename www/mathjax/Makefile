@@ -1,8 +1,8 @@
 # Created by: Lukasz Stelmach <lukasz.stelmach@iem.pw.edu.pl>
-# $FreeBSD: head/www/mathjax/Makefile 458730 2018-01-11 13:23:48Z tobik $
+# $FreeBSD: head/www/mathjax/Makefile 478605 2018-08-31 18:41:08Z fernape $
 
 PORTNAME=	MathJax
-DISTVERSION=	2.7.2
+DISTVERSION=	2.7.5
 CATEGORIES=	www
 
 MAINTAINER=	marko.cupac@mimar.rs
@@ -14,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 NO_BUILD=	yes
 NO_ARCH=	yes
 USE_GITHUB=	yes
-GH_ACCOUNT=	mathjax
 
 # Changing permissions of 30k files with find -exec (COPYTREE) is way
 # too slow.

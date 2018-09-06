@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/zmap/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/net/zmap/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	zmap
 PORTVERSION=	2.1.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Arjan van Leeuwen <avleeuwen@piwebs.com>
-# $FreeBSD: head/graphics/digikam-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/digikam-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	digikam
 PORTVERSION=	${DIGIKAM_VER}
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE4 digital photo management application
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 .include "${.CURDIR}/Makefile.common"
 

@@ -1,8 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/ufoai-data/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/games/ufoai-data/Makefile 478826 2018-09-02 22:37:59Z swills $
 
 PORTNAME=	data
 PORTVERSION=	2.5
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/ufoai/UFO_AI%202.x/${PORTVERSION}
 PKGNAMEPREFIX=	ufoai-
@@ -17,6 +18,9 @@ COMMENT=	UFO alien invasion data files
 LICENSE=	GPLv2 CC-BY-SA-3.0
 LICENSE_COMB=	multi
 
+BROKEN_aarch64=		Fails to install: runaway process
+BROKEN_mips64=		Fails to install: runaway process
+
 EXTRACT_DEPENDS=	${UNZIP_CMD}:archivers/unzip
 
 NO_BUILD=	yes
@@ -25,9 +29,6 @@ NO_ARCH=	yes
 
 DATADIR=	share/${PKGNAMEPREFIX:S/-//}
 PLIST=		${WRKDIR}/pkg-plist
-
-BROKEN_aarch64=		Fails to install: runaway process
-BROKEN_mips64=		Fails to install: runaway process
 
 post-extract:
 	@cd ${WRKSRC}/base && \

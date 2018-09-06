@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/py-cvxopt/Makefile 468325 2018-04-26 06:41:30Z yuri $
+# $FreeBSD: head/math/py-cvxopt/Makefile 478709 2018-09-01 15:48:10Z yuri $
 
 PORTNAME=	cvxopt
-DISTVERSION=	1.2.0
-PORTREVISION=	1
+DISTVERSION=	1.2.1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	kde-workspace
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Plasma Desktop
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libck-connector.so:sysutils/consolekit2 \

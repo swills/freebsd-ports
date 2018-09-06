@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/archivers/ark-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/archivers/ark-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	ark
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ CATEGORIES=	archivers kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Archiving tool for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 

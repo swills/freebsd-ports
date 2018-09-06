@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-rmf/Makefile 473652 2018-07-01 05:22:27Z yuri $
+# $FreeBSD: head/science/py-rmf/Makefile 478474 2018-08-30 17:34:27Z yuri $
 
 PORTNAME=	rmf
-DISTVERSION=	g20180614
+DISTVERSION=	1.1
 CATEGORIES=	science graphics
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

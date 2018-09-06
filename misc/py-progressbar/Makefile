@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/misc/py-progressbar/Makefile 451790 2017-10-11 19:50:27Z sunpoet $
+# $FreeBSD: head/misc/py-progressbar/Makefile 478390 2018-08-29 19:09:51Z sunpoet $
 
 PORTNAME=	progressbar
-PORTVERSION=	2.3
-PORTREVISION=	2
+PORTVERSION=	2.5
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

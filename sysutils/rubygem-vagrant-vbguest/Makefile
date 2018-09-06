@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-vagrant-vbguest/Makefile 470740 2018-05-23 23:24:49Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-vagrant-vbguest/Makefile 479068 2018-09-05 23:56:12Z sunpoet $
 
 PORTNAME=	vagrant-vbguest
-PORTVERSION=	0.15.2
+PORTVERSION=	0.16.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

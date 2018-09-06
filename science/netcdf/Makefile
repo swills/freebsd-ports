@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/netcdf/Makefile 467358 2018-04-14 23:59:26Z sunpoet $
+# $FreeBSD: head/science/netcdf/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	netcdf
 PORTVERSION=	4.6.1
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://www.unidata.ucar.edu/downloads/netcdf/ftp/ \
 		ftp://ftp.unidata.ucar.edu/pub/netcdf/ \

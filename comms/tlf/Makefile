@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/tlf/Makefile 476556 2018-08-07 00:19:09Z shurd $
+# $FreeBSD: head/comms/tlf/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	tlf
 PORTVERSION=	1.3.0
@@ -26,7 +26,7 @@ OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	HAMLIB FLDIGI DOCS
 HAMLIB_DESC=	Support rig control via hamlib
 FLDIGI_DESC=	Support fldigi XML-RPC integration
-OPTIONS_DEFAULT=HAMLIB FLDIGI DOCS
+OPTIONS_DEFAULT=HAMLIB FLDIGI
 
 HAMLIB_LIB_DEPENDS=	libhamlib.so:comms/hamlib
 HAMLIB_CONFIGURE_ENABLE=hamlib

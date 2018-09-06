@@ -1,9 +1,8 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/x11-fm/worker/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-fm/worker/Makefile 478446 2018-08-30 13:26:52Z danfe $
 
 PORTNAME=	worker
-PORTVERSION=	3.15.1
-PORTREVISION=	1
+PORTVERSION=	3.15.2
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.boomerangsworld.de/cms/worker/downloads/
 
@@ -23,7 +22,7 @@ SHEBANG_FILES=	${WRKSRC}/scripts/*.sh \
 		${WRKSRC}/scripts/find_file_by_chksum.py
 
 OPTIONS_DEFINE=	AVFS HAL INOTIFY LUA XFT
-OPTIONS_DEFAULT=	AVFS INOTIFY
+OPTIONS_DEFAULT=	AVFS INOTIFY XFT
 
 OPTIONS_EXCLUDE_DragonFly=	AVFS
 

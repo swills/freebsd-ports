@@ -1,5 +1,5 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/japanese/scim-anthy/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/scim-anthy/Makefile 478613 2018-08-31 22:07:04Z tobik $
 
 PORTNAME=	scim-anthy
 PORTVERSION=	1.2.7
@@ -10,6 +10,9 @@ MASTER_SITES=	OSDN/scim-imengine/37309
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SCIM IMEngine module using Anthy
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	scim:textproc/scim
 LIB_DEPENDS=	libanthy.so:japanese/anthy
 RUN_DEPENDS:=	${BUILD_DEPENDS} \
@@ -17,8 +20,5 @@ RUN_DEPENDS:=	${BUILD_DEPENDS} \
 
 USES=		gmake iconv libtool:keepla pkgconfig
 GNU_CONFIGURE=	yes
-
-CPPFLAGS+=	-I${LOCALBASE}/include -D__STDC_ISO_10646__
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 .include <bsd.port.mk>

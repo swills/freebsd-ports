@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/archivers/rubygem-rubyzip/Makefile 433732 2017-02-09 13:50:59Z sunpoet $
+# $FreeBSD: head/archivers/rubygem-rubyzip/Makefile 478746 2018-09-01 22:52:04Z sunpoet $
 
 PORTNAME=	rubyzip
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	archivers rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: Nikola Lecic <nikola.lecic@anthesphoria.net>
-# $FreeBSD: head/textproc/ibus-table/Makefile 469175 2018-05-06 05:49:39Z yuri $
+# $FreeBSD: head/textproc/ibus-table/Makefile 478478 2018-08-30 18:01:54Z yuri $
 
 PORTNAME=	ibus-table
-DISTVERSION=	1.9.20
+DISTVERSION=	1.9.21
 CATEGORIES=	textproc
 
 MAINTAINER=	yuri@FreeBSD.org

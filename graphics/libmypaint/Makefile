@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/libmypaint/Makefile 469735 2018-05-12 16:08:09Z kwm $
+# $FreeBSD: head/graphics/libmypaint/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	libmypaint
 PORTVERSION=	1.3.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/mypaint/libmypaint/releases/download/v${PORTVERSION}/
 

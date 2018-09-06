@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/gcolor3/Makefile 442405 2017-06-02 15:49:34Z linimon $
+# $FreeBSD: head/graphics/gcolor3/Makefile 478789 2018-09-02 13:11:49Z tobik $
 
 PORTNAME=	gcolor3
-PORTVERSION=	2.2
 DISTVERSIONPREFIX=	v
+DISTVERSION=	2.3
 CATEGORIES=	graphics
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -13,17 +13,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to compile: main.c: In function '_print_version_and_exit': will never be executed
 
-USES=		autoreconf gmake gettext libtool pkgconfig
-USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool
-GNU_CONFIGURE=	yes
-INSTALLS_ICONS=	yes
-
+USES=		gnome gettext meson libtool pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	Hjdskes
-
-OPTIONS_DEFINE=	NLS
-OPTIONS_SUB=	yes
-
-NLS_CONFIGURE_ENABLE=	nls
+USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool
+INSTALLS_ICONS=	yes
 
 .include <bsd.port.mk>

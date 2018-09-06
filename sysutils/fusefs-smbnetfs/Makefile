@@ -1,8 +1,9 @@
 # Created by: Denis Barov
-# $FreeBSD: head/sysutils/fusefs-smbnetfs/Makefile 460623 2018-02-01 18:57:43Z mi $
+# $FreeBSD: head/sysutils/fusefs-smbnetfs/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	smbnetfs
 PORTVERSION=	0.6.1
+PORTREVISION=	1
 CATEGORIES=	sysutils net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/SMBNetFS-${PORTVERSION}
 PKGNAMEPREFIX=	fusefs-

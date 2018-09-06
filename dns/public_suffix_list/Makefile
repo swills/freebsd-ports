@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/public_suffix_list/Makefile 477082 2018-08-13 18:19:28Z sunpoet $
+# $FreeBSD: head/dns/public_suffix_list/Makefile 478453 2018-08-30 14:14:04Z sunpoet $
 
 PORTNAME=	public_suffix_list
 PORTVERSION=	20180808
@@ -11,7 +11,7 @@ COMMENT=	Public Suffix List by Mozilla
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-SLAVEDIRS=	dns/p5-Mozilla-PublicSuffix dns/rubygem-public_suffix dns/rubygem-public_suffix_service
+SLAVEDIRS=	dns/p5-Mozilla-PublicSuffix dns/py-publicsuffix dns/py-publicsuffixlist dns/rubygem-public_suffix dns/rubygem-public_suffix_service
 
 NO_ARCH=	yes
 NO_BUILD=	yes

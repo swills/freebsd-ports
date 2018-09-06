@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/ldb13/Makefile 475968 2018-07-31 04:09:06Z timur $
+# $FreeBSD: head/databases/ldb13/Makefile 478823 2018-09-02 22:18:10Z timur $
 
 PORTNAME=		ldb
-PORTVERSION=		1.3.4
+PORTVERSION=		1.3.6
 PORTREVISION=		0
 PORTEPOCH=		0
 CATEGORIES=		databases

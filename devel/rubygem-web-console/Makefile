@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-web-console/Makefile 468724 2018-04-30 17:09:07Z sunpoet $
+# $FreeBSD: head/devel/rubygem-web-console/Makefile 478909 2018-09-03 19:04:49Z sunpoet $
 
 PORTNAME=	web-console
-PORTVERSION=	3.6.2
+PORTVERSION=	3.7.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-activemodel5>=5.0:databases/rubygem-activemodel5 \
 		rubygem-bindex>=0:devel/rubygem-bindex \
 		rubygem-railties5>=5.0:www/rubygem-railties5
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

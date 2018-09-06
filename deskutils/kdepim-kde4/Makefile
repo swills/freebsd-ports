@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/deskutils/kdepim-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/deskutils/kdepim-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdepim
 PORTVERSION=	${KDE4_KDEPIM_VERSION}
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE PIM applications
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libgpgme.so:security/gpgme \
 		libassuan.so:security/libassuan \

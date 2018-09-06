@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	libktorrent
 DISTVERSION=	1.3.1
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Torrent library from KTorrent project
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/concept_check.hpp:devel/boost-libs
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \

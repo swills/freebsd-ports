@@ -1,5 +1,5 @@
 # Created by: maho@FreeBSD.org
-# $FreeBSD: head/graphics/megapov/Makefile 439778 2017-04-30 00:44:32Z linimon $
+# $FreeBSD: head/graphics/megapov/Makefile 478782 2018-09-02 10:59:44Z tobik $
 
 PORTNAME=	megapov
 PORTVERSION=	1.2.1
@@ -19,6 +19,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 INSTALL_WRKSRC=	${WRKSRC}/unix
 
 USES=		gmake jpeg localbase tar:bzip2
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	COMPILED_BY="ports@FreeBSD.org"
 

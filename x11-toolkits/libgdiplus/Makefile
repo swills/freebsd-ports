@@ -1,17 +1,16 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/x11-toolkits/libgdiplus/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/x11-toolkits/libgdiplus/Makefile 478318 2018-08-28 14:19:47Z dbn $
 
 PORTNAME=	libgdiplus
-PORTVERSION=	4.2
-PORTREVISION=	1
+PORTVERSION=	5.6
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://download.mono-project.com/sources/${PORTNAME}/
 
 MAINTAINER=	mono@FreeBSD.org
 COMMENT=	GDI+ API for System.Windows.Forms in Mono
 
-LICENSE=	MPL11
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libgif.so:graphics/giflib \
@@ -35,8 +34,6 @@ OPTIONS_DEFAULT=X11
 
 X11_USE=	XORG=x11,xrender
 X11_CONFIGURE_OFF=	--without-x11
-X11_EXTRA_PATCHES_OFF=	${PATCHDIR}/extrapatch-nox11
-X11_USES_OFF=	autoreconf
 
 PLIST_FILES=	lib/libgdiplus.a \
 		lib/libgdiplus.la \

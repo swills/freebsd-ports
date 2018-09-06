@@ -1,10 +1,10 @@
 # Created by: Munechika SUMIKAWA <sumikawa@FreeBSD.org>
-# $FreeBSD: head/net/dhcp6/Makefile 477305 2018-08-16 01:26:36Z leres $
+# $FreeBSD: head/net/dhcp6/Makefile 478819 2018-09-02 21:02:10Z pi $
 
 PORTNAME=	dhcp6
 PORTVERSION=	20080615.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2	
 CATEGORIES=	net ipv6
 
 MAINTAINER=	hrs@FreeBSD.org

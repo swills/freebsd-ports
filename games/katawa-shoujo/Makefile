@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/katawa-shoujo/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/katawa-shoujo/Makefile 478837 2018-09-03 00:21:45Z jbeich $
 
 PORTNAME=	katawa-shoujo
 PORTVERSION=	1.3.1
@@ -19,7 +19,7 @@ COMMENT=	Bishoujo-style visual novel about disabled adolescents
 
 LICENSE=	CC-BY-NC-ND-3.0
 
-RUN_DEPENDS=	renpy6<6.99.11:devel/renpy6
+RUN_DEPENDS=	renpy6<6.99.11:games/renpy6
 
 USES=		tar:bz2
 NO_ARCH=	yes

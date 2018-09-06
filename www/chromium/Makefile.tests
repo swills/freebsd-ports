@@ -1,0 +1,9 @@
+# $FreeBSD: head/www/chromium/Makefile.tests 478691 2018-09-01 13:23:08Z cpm $
+TEST_TARGETS=	base_unittests \
+		chromedriver_unittests \
+		crypto_unittests \
+		gn_unittests \
+		headless_unittests \
+		printing_unittests \
+		url_unittests
+		

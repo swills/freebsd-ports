@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Scope-Upper/Makefile 453568 2017-11-05 21:16:35Z sunpoet $
+# $FreeBSD: head/devel/p5-Scope-Upper/Makefile 478402 2018-08-29 19:10:56Z sunpoet $
 
 PORTNAME=	Scope-Upper
-PORTVERSION=	0.30
+PORTVERSION=	0.31
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:VPIT

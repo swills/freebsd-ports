@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/librelp/Makefile 478186 2018-08-27 09:50:23Z matthew $
+# $FreeBSD: head/devel/librelp/Makefile 478763 2018-09-02 07:00:19Z matthew $
 
 PORTNAME=	librelp
 PORTVERSION=	1.2.17
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://download.rsyslog.com/librelp/
 
@@ -21,7 +21,7 @@ GNUTLS_CONFIGURE_ENABLE=	tls
 
 OPENSSL_USES=			ssl
 OPENSSL_CONFIGURE_ENABLE=	tls-openssl
-OPENSSL_CONFIGURE_ENV=		OPENSSL_LIBS="-L${OPENSSLLIB} -lcrypto" \
+OPENSSL_CONFIGURE_ENV=		OPENSSL_LIBS="-L${OPENSSLLIB} -lssl -lcrypto" \
 				OPENSSL_CFLAGS="-I ${OPENSSLINC}"
 
 USES=		libtool pathfix pkgconfig

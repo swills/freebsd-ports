@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/dynare/Makefile 476799 2018-08-09 20:49:22Z fernape $
+# $FreeBSD: head/math/dynare/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	dynare
 DISTVERSION=	4.5.6
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.dynare.org/release/source/
 

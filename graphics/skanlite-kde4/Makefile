@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/skanlite-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/skanlite-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	skanlite
 PORTVERSION=	1.1
@@ -10,6 +10,9 @@ DIST_SUBDIR=	KDE/extragear
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Simple image scanning application for KDE4
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/src/COPYING

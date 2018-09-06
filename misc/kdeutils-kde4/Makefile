@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/misc/kdeutils-kde4/Makefile 465345 2018-03-23 11:00:37Z adridg $
+# $FreeBSD: head/misc/kdeutils-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kdeutils
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Collection of utilities for KDE 4
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		kde:4 metaport
 

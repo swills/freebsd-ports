@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/libcss/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/textproc/libcss/Makefile 479005 2018-09-05 02:46:39Z swills $
 
 PORTNAME=	libcss
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

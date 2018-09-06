@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdegraphics-thumbnailers-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/kdegraphics-thumbnailers-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kdegraphics-thumbnailers
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Thumbnailers for various graphics file formats
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource kde:4 pkgconfig qt:4 tar:xz
 USE_KDE=	kdelibs libkdcraw libkexiv2 automoc4

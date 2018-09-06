@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kdenlive-kde4/Makefile 476343 2018-08-04 09:10:28Z tcberner $
+# $FreeBSD: head/multimedia/kdenlive-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kdenlive
 PORTVERSION=	0.9.10
@@ -11,6 +11,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE professional quality non-linear video editing suite
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libmlt.so:multimedia/mlt \
 		libqjson.so:devel/qjson@qt4

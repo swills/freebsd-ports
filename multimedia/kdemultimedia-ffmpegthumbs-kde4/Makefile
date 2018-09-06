@@ -1,5 +1,5 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	ffmpegthumbs
 PORTVERSION=	${KDE4_VERSION}
@@ -12,6 +12,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	FFmpeg-based thumbnail generator for video files
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libswscale.so:multimedia/ffmpeg
 

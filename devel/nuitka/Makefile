@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/nuitka/Makefile 478038 2018-08-25 13:49:43Z sunpoet $
+# $FreeBSD: head/devel/nuitka/Makefile 479065 2018-09-05 23:55:55Z sunpoet $
 
 PORTNAME=	nuitka
-PORTVERSION=	0.5.32.7
+PORTVERSION=	0.5.32.8
 CATEGORIES=	devel python
 MASTER_SITES=	https://nuitka.net/releases/
 DISTNAME=	Nuitka-${PORTVERSION}

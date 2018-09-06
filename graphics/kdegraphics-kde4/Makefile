@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/graphics/kdegraphics-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/graphics/kdegraphics-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kdegraphics
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Graphics utilities for KDE 4 (meta port)
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		kde:4 metaport
 

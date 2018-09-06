@@ -1,5 +1,5 @@
 # Created by: Eygene Ryabinkin <rea-fbsd@codelabs.ru>
-# $FreeBSD: head/www/trac-keywords/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/trac-keywords/Makefile 478873 2018-09-03 13:33:18Z joneum $
 
 PORTNAME=	keywords
 PORTVERSION=	0.2
@@ -9,7 +9,7 @@ MASTER_SITES=	http://dist.codelabs.ru/fbsd/
 PKGNAMEPREFIX=	trac-
 DISTNAME=	trackeywordsplugin-r${REL}
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Plugin for using pre-configured keywords
 
 LICENSE=	BSD3CLAUSE

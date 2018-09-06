@@ -1,8 +1,8 @@
 # Created by: freebsd-ports@evilcode.net
-# $FreeBSD: head/multimedia/mediainfo/Makefile 469654 2018-05-11 16:53:06Z sunpoet $
+# $FreeBSD: head/multimedia/mediainfo/Makefile 478736 2018-09-01 22:51:10Z sunpoet $
 
 PORTNAME=	mediainfo
-PORTVERSION=	18.05
+PORTVERSION=	18.08
 CATEGORIES=	multimedia
 MASTER_SITES=	https://mediaarea.net/download/binary/${PORTNAME}/${PORTVERSION}/ \
 		LOCAL/sunpoet

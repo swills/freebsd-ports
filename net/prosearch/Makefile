@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/prosearch/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/net/prosearch/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	prosearch
 PORTVERSION=	0.19.4
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net www
 MASTER_SITES=	http://pro.setun.net/search/download/ SF/pro-search/pro-search/${PORTVERSION}
 

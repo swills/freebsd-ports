@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/rox-filer/Makefile 477439 2018-08-17 18:06:43Z pi $
+# $FreeBSD: head/x11-fm/rox-filer/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	rox-filer
 PORTVERSION=	2.11
@@ -30,7 +30,6 @@ ALL_TARGET=
 LIBS+=			-lm
 
 OPTIONS_DEFINE=		NLS
-OPTIONS_DEFAULT=	NLS
 
 NLS_USES=		gettext-runtime:run
 

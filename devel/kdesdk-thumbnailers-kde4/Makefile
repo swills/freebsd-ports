@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdesdk-thumbnailers-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kdesdk-thumbnailers-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdesdk-thumbnailers
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE thumbnail generator for gettext po files
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource gettext kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4

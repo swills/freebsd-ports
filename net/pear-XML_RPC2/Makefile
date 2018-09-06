@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pear-XML_RPC2/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/net/pear-XML_RPC2/Makefile 479030 2018-09-05 16:44:59Z joneum $
 
 PORTNAME=	XML_RPC2
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	net devel pear
 
 MAINTAINER=	joneum@FreeBSD.org

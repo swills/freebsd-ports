@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cgit/Makefile 477003 2018-08-12 17:09:03Z riggs $
+# $FreeBSD: head/devel/cgit/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	cgit
 PORTVERSION=	1.2.1
@@ -35,7 +35,7 @@ SUB_FILES=	pkg-message
 PORTDOCS=	${PORTNAME}rc.5.txt
 
 OPTIONS_DEFINE=	DOCS ASCIIDOC
-OPTIONS_DEFAULT=	DOCS ASCIIDOC
+OPTIONS_DEFAULT=	ASCIIDOC
 OPTIONS_SUB=	yes
 
 ASCIIDOC_DESC=	Use asciidoc to preprocess man page

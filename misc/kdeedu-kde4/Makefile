@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/misc/kdeedu-kde4/Makefile 474818 2018-07-17 17:47:12Z tcberner $
+# $FreeBSD: head/misc/kdeedu-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kdeedu
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Entertaining and educational programs for KDE 4 (meta port)
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		kde:4 metaport
 

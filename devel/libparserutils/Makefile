@@ -1,8 +1,8 @@
 # Created by: David Romano <unobe@cpan.org>
-# $FreeBSD: head/devel/libparserutils/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/devel/libparserutils/Makefile 479003 2018-09-05 02:44:14Z swills $
 
 PORTNAME=	libparserutils
-PORTVERSION=	0.2.3
+PORTVERSION=	0.2.4
 CATEGORIES=	devel
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -11,6 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lexer/parser utility functions for NetSurf
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	netsurf-buildsystem>=1.5:devel/netsurf-buildsystem
 

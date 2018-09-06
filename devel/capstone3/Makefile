@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/capstone3/Makefile 418316 2016-07-10 12:57:26Z pi $
+# $FreeBSD: head/devel/capstone3/Makefile 478858 2018-09-03 12:20:08Z antoine $
 
 PORTNAME=	capstone
-PORTVERSION=	3.0.4
+PORTVERSION=	3.0.5
 CATEGORIES=	devel
 
 MAINTAINER=	oliver.pntr@gmail.com
@@ -17,8 +17,9 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	aquynh
 
-MAKE_ENV+=	INSTALL_LIB="${INSTALL_LIB}" \
-		INSTALL_DATA="${INSTALL_DATA}"
+MAKE_ENV+=	INSTALL_BIN="${INSTALL_PROGRAM}" \
+		INSTALL_DATA="${INSTALL_DATA}" \
+		INSTALL_LIB="${INSTALL_LIB}"
 
 TEST_ENV=	${MAKE_ENV} LD_LIBRARY_PATH=${STAGEDIR}${PREFIX}/lib
 TEST_TARGET=	check

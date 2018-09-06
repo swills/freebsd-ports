@@ -1,8 +1,9 @@
 # Created by: Grigori Goronzy <greg@chown.ath.cx>
-# $FreeBSD: head/multimedia/gxine/Makefile 465708 2018-03-27 14:44:07Z emaste $
+# $FreeBSD: head/multimedia/gxine/Makefile 478529 2018-08-31 08:16:18Z tobik $
 
 PORTNAME=	gxine
 PORTVERSION=	0.5.910
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/xine/${PORTNAME}/${PORTVERSION}
 

@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 477232 2018-08-15 14:59:54Z manu $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 478727 2018-09-01 20:43:36Z manu $
 #
 # Common infrastructure for u-boot ports
 #
 
 PORTNAME=	u-boot
 PORTVERSION=	${UBOOT_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	-${MODEL}
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/

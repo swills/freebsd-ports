@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/okular-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/okular-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	okular
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE 4 universal document viewer
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libdjvulibre.so:graphics/djvulibre \
 		libkscreen.so:graphics/libkscreen \

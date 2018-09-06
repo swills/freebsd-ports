@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/sysutils/knutclient-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/knutclient-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	knutclient
 PORTVERSION=	1.0.4
@@ -14,6 +14,9 @@ COMMENT=	Visual client for UPS system NUT
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqimageblitz.so:x11/qimageblitz
 

@@ -1,9 +1,9 @@
 # Created by: Diane Bruce <db@db.net
-# $FreeBSD: head/audio/xanalyser/Makefile 459386 2018-01-19 01:22:11Z db $
+# $FreeBSD: head/audio/xanalyser/Makefile 478887 2018-09-03 18:20:22Z pi $
 
 PORTNAME=	xanalyser
 PORTVERSION=	1.32
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio hamradio
 MASTER_SITES=	http://arvin.schnell-web.net/xanalyser/ \
 		LOCAL/db

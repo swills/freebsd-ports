@@ -1,5 +1,5 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/net-p2p/jigdo/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/net-p2p/jigdo/Makefile 478957 2018-09-04 13:31:29Z tobik $
 
 PORTNAME=	jigdo
 PORTVERSION=	0.7.3
@@ -13,6 +13,7 @@ COMMENT=	Utility used to retrieve large files over the Internet
 RUN_DEPENDS=	${LOCALBASE}/bin/wget:ftp/wget
 
 USES=		gmake tar:bzip2
+USE_CXXSTD=	c++98
 USE_SUBMAKE=	yes
 GNU_CONFIGURE=	yes
 

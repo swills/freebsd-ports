@@ -1,5 +1,5 @@
 # Created by: Janos.Mohacsi@bsd.hu
-# $FreeBSD: head/security/doscan/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/doscan/Makefile 478308 2018-08-28 12:43:27Z tobik $
 
 PORTNAME=	doscan
 PORTVERSION=	0.3.3
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre
 
 GNU_CONFIGURE=	yes
 USES=		gmake
+USE_CXXSTD=	gnu++98
 
 PORTDOCS=	README
 PLIST_FILES=	bin/doscan man/man1/doscan.1.gz

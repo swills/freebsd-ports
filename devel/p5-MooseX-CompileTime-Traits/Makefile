@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooseX-CompileTime-Traits/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/devel/p5-MooseX-CompileTime-Traits/Makefile 479093 2018-09-06 09:08:17Z amdmi3 $
 
 PORTNAME=	MooseX-CompileTime-Traits
 PORTVERSION=	1.102570
@@ -10,6 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to allow compile time traits for classes/roles
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Moose>0:devel/p5-Moose \
@@ -17,5 +21,6 @@ RUN_DEPENDS=	\
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

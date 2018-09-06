@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/mininet/Makefile 474559 2018-07-13 08:05:58Z antoine $
+# $FreeBSD: head/net/mininet/Makefile 478601 2018-08-31 17:42:18Z yuri $
 
 PORTNAME=	mininet
 PORTVERSION=	2.3.0d1
+PORTREVISION=	1
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

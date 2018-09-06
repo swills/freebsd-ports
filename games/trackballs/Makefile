@@ -1,10 +1,10 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/trackballs/Makefile 471254 2018-06-01 10:16:41Z cpm $
+# $FreeBSD: head/games/trackballs/Makefile 479017 2018-09-05 10:05:29Z martymac $
 
 PORTNAME=	trackballs
 PORTVERSION=	1.3.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	martymac@FreeBSD.org
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libguile-2.0.so:lang/guile2 \
 		libgc.so:devel/boehm-gc
 
-USES=		cmake desktop-file-utils gettext-runtime pkgconfig
+USES=		cmake desktop-file-utils gettext-runtime gnome pkgconfig
 
 USE_GITHUB=	yes
 

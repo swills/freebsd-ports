@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/flare-engine/Makefile 471947 2018-06-07 19:34:26Z amdmi3 $
+# $FreeBSD: head/games/flare-engine/Makefile 479034 2018-09-05 18:13:56Z amdmi3 $
 
 PORTNAME=	flare
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 PKGNAMESUFFIX=	-engine

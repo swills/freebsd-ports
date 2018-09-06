@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kde-baseapps-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/kde-baseapps-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	kde-baseapps
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Basic applications for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libtidy.so:www/tidy-lib
 

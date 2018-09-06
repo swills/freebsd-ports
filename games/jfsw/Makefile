@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/jfsw/Makefile 459919 2018-01-25 11:07:50Z martymac $
+# $FreeBSD: head/games/jfsw/Makefile 479017 2018-09-05 10:05:29Z martymac $
 
 PORTNAME=	jfsw
 PORTVERSION=	20131019
@@ -17,7 +17,7 @@ LICENSE_PERMS_BuildLic=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-acc
 
 LIB_DEPENDS=	libvorbisfile.so:audio/libvorbis
 
-USES=		alias dos2unix gmake pkgconfig:build
+USES=		alias dos2unix gmake gnome pkgconfig:build
 DOS2UNIX_REGEX=	.*(\.(c|h)|Makefile)(\.deps)?
 
 USE_GITHUB=	yes

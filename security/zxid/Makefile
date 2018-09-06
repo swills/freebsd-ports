@@ -1,12 +1,13 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/security/zxid/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/zxid/Makefile 478658 2018-09-01 07:35:29Z riggs $
 
 PORTNAME=	zxid
 PORTVERSION=	1.42
+PORTREVISION=	1
 CATEGORIES=	security www
 MASTER_SITES=	http://zxid.org/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	admins@perceptyx.com
 COMMENT=	Open Source IdM for the Masses - SAML SSO
 
 LICENSE=	E2ETA

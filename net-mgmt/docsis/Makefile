@@ -1,8 +1,9 @@
 # Created by: James Flemer <jflemer@acm.jhu.edu>
-# $FreeBSD: head/net-mgmt/docsis/Makefile 477329 2018-08-16 12:40:22Z ehaupt $
+# $FreeBSD: head/net-mgmt/docsis/Makefile 478793 2018-09-02 15:01:24Z mat $
 
 PORTNAME=	docsis
 PORTVERSION=	0.9.8
+DISTVERSIONPREFIX=	upstream/
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	plcmaechler@gmail.com
@@ -24,7 +25,6 @@ PLIST_SUB=	MIBS=share/snmp/mibs
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 GH_ACCOUNT=	rlaager
-GH_TAGNAME=	upstream/${PORTVERSION}
 
 post-patch:
 	@${REINPLACE_CMD} -e \

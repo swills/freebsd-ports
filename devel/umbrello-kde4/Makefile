@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/umbrello-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/umbrello-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	umbrello
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	UML modeller for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/keepassxc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/keepassxc/Makefile 478595 2018-08-31 16:40:05Z yuri $
 
 PORTNAME=	keepassxc
-DISTVERSION=	2.3.3
+DISTVERSION=	2.3.4
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/keepassxreboot/keepassxc/releases/download/${DISTVERSION}/${PORTNAME}-${DISTVERSION}-src.tar.xz?dummy=/
 

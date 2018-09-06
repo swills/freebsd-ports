@@ -1,10 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeorion/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/freeorion/Makefile 478649 2018-09-01 01:20:34Z amdmi3 $
 
 PORTNAME=	freeorion
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.8-rc2
-PORTREVISION=	1
+DISTVERSION=	0.4.8
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -19,6 +18,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 USE_GITHUB=	yes
 
 USES=		cmake compiler:c++14-lang python:2.7
+LLD_UNSAFE=	yes
 
 PORTDOCS=	ChangeLog.md README.md
 PORTDATA=	*

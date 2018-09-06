@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/armadillo/Makefile 477350 2018-08-16 15:40:15Z danilo $
+# $FreeBSD: head/math/armadillo/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	armadillo
 PORTVERSION=	9.100.5
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/arma
 

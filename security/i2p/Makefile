@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/security/i2p/Makefile 473972 2018-07-05 15:16:33Z joneum $
+# $FreeBSD: head/security/i2p/Makefile 478827 2018-09-02 22:46:10Z swills $
 
 PORTNAME=	i2p
-DISTVERSION=	0.9.35
+DISTVERSION=	0.9.36
 CATEGORIES=	security java net-p2p
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTVERSION} \
 		http://download.i2p2.no/releases/${PORTVERSION}/ \

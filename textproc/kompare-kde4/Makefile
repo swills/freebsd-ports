@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/kompare-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/kompare-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kompare
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	textproc kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Diff/Patch Frontend
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libkomparediff2.so:textproc/libkomparediff2-kde4
 

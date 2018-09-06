@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kdeplasma-addons-kde4/Makefile 475421 2018-07-27 10:14:39Z jhale $
+# $FreeBSD: head/deskutils/kdeplasma-addons-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdeplasma-addons
 PORTVERSION=	${KDE4_VERSION}
@@ -14,6 +14,9 @@ LIB_DEPENDS=	libqalculate.so:math/libqalculate \
 		libqoauth.so:net/qoauth \
 		libqjson.so:devel/qjson@qt4
 CONFLICTS_INSTALL=	plasma-applet-icontasks-0.[89].*
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource eigen:2 kde:4 pkgconfig qt:4 shared-mime-info tar:xz
 USE_KDE=	kdelibs libkexiv2 pimlibs workspace \

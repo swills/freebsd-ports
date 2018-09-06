@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/www/smb_auth/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/www/smb_auth/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	smb_auth
 PORTVERSION=	0.05
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/dinoex
 

@@ -1,5 +1,5 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/x11-themes/kde-base-artwork-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/kde-base-artwork-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	kde-base-artwork
 PORTVERSION=	${KDE4_VERSION}
@@ -10,6 +10,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Base artwork for the KDE Plasma Desktop
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs

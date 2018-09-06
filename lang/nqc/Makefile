@@ -1,8 +1,9 @@
 # Created by: kbyanc
-# $FreeBSD: head/lang/nqc/Makefile 446706 2017-07-27 00:43:32Z dbaio $
+# $FreeBSD: head/lang/nqc/Makefile 478781 2018-09-02 10:50:52Z tobik $
 
 PORTNAME=	nqc
 PORTVERSION=	3.1.r6
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://bricxcc.sourceforge.net/nqc/release/ \
 		ftp://ftp2.za.freebsd.org/pub/nqc/

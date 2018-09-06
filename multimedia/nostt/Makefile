@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/nostt/Makefile 463596 2018-03-04 19:11:34Z yuri $
+# $FreeBSD: head/multimedia/nostt/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	nostt
 DISTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	ik@sjmulder.nl

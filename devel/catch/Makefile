@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/devel/catch/Makefile 475239 2018-07-24 11:02:58Z gahr $
+# $FreeBSD: head/devel/catch/Makefile 479020 2018-09-05 13:26:05Z gahr $
 
 PORTNAME=	catch
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.3.0
+DISTVERSION=	2.4.0
 CATEGORIES=	devel
 
 MAINTAINER=	gahr@FreeBSD.org

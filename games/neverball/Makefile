@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/neverball/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/neverball/Makefile 478851 2018-09-03 09:38:15Z amdmi3 $
 
 PORTNAME=	neverball
 PORTVERSION=	1.6.0
@@ -10,7 +10,8 @@ MASTER_SITES=	http://icculus.org/neverball/ \
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Tilt the floor to guide a ball through an obstacle course
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/doc/legal/license-GPL-2.0.txt
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libvorbis.so:audio/libvorbis \

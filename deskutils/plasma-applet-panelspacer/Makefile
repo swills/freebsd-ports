@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-panelspacer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-panelspacer/Makefile 478499 2018-08-30 22:35:20Z jhale $
 
 PORTNAME=	panelspacer
 PORTVERSION=	0.2
@@ -12,6 +12,9 @@ MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Panel spacer plasma applet for KDE4
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake kde:4 qt:4
 USE_KDE=	automoc4 workspace

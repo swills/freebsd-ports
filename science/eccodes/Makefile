@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/eccodes/Makefile 473521 2018-06-28 21:26:47Z sunpoet $
+# $FreeBSD: head/science/eccodes/Makefile 478371 2018-08-29 19:08:12Z sunpoet $
 
 PORTNAME=	eccodes
-PORTVERSION=	2.8.0
+PORTVERSION=	2.8.2
 DISTVERSIONSUFFIX=	-Source
 CATEGORIES=	science
 MASTER_SITES=	https://software.ecmwf.int/wiki/download/attachments/45757960/ \

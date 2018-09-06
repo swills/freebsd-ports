@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-eepg/Makefile 470941 2018-05-26 18:19:35Z miwi $
+# $FreeBSD: head/multimedia/vdr-plugin-eepg/Makefile 478960 2018-09-04 13:42:13Z tobik $
 
 PORTNAME=	vdr-plugin-eepg
 PORTVERSION=	0.0.6p2011071921
@@ -14,7 +14,6 @@ COMMENT=	Video Disk Recorder - extended EPG plugin
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_FreeBSD_12=	does not build with newer clang
 GITHASH=	e7383ed
 PATCH_STRIP=	-p1
 WRKSRC=		${WRKDIR}/${PORTNAME}-${GITHASH}

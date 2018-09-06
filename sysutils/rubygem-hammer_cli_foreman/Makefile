@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/sysutils/rubygem-hammer_cli_foreman/Makefile 477398 2018-08-16 23:43:26Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-hammer_cli_foreman/Makefile 478413 2018-08-29 19:11:54Z sunpoet $
 
 PORTNAME=	hammer_cli_foreman
-PORTVERSION=	0.13.2
+PORTVERSION=	0.14.0
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 

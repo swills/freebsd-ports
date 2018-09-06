@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/titan/Makefile 457299 2017-12-26 18:26:08Z yuri $
+# $FreeBSD: head/security/titan/Makefile 479071 2018-09-06 00:35:56Z yuri $
 
 PORTNAME=	titan
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2
+DISTVERSION=	1.3
 CATEGORIES=	security
 
 MAINTAINER=	yuri@FreeBSD.org

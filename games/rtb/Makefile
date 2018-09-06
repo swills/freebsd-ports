@@ -1,5 +1,5 @@
 # Created by: Dishanker Rajakulendren <draj@oceanfree.net>
-# $FreeBSD: head/games/rtb/Makefile 456181 2017-12-12 18:35:32Z antoine $
+# $FreeBSD: head/games/rtb/Makefile 478664 2018-09-01 09:41:42Z tobik $
 
 PORTNAME=	RealTimeBattle
 PORTVERSION=	1.0.8
@@ -16,11 +16,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	gsed:textproc/gsed
 
-USES=		gettext gmake perl5 pkgconfig python:2.7 tar:bzip2
+USES=		compiler gettext gmake perl5 pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	gtk20
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-rtb-dir=${PREFIX}/lib/${PORTNAME}
 
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 

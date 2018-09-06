@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/ezjail/Makefile 402477 2015-11-27 07:52:55Z miwi $
+# $FreeBSD: head/sysutils/ezjail/Makefile 478609 2018-08-31 20:37:20Z brd $
 
 PORTNAME=	ezjail
 PORTVERSION=	3.4.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://erdgeist.org/arts/software/ezjail/
 

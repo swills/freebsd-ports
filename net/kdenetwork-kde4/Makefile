@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kdenetwork-kde4/Makefile 467042 2018-04-11 09:57:25Z tcberner $
+# $FreeBSD: head/net/kdenetwork-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kdenetwork
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Network applications (meta port)
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		kde:4 metaport
 

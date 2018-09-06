@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/monitorix/Makefile 468542 2018-04-28 13:47:47Z crees $
+# $FreeBSD: head/sysutils/monitorix/Makefile 478661 2018-09-01 09:38:14Z amdmi3 $
 
 PORTNAME=	monitorix
 PORTVERSION=	3.10.1
@@ -10,7 +10,8 @@ MASTER_SITES=	http://www.monitorix.org/ \
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Web based monitoring system
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	librrd.so:databases/rrdtool
 RUN_DEPENDS=	p5-ParallelUserAgent>=0:www/p5-ParallelUserAgent \

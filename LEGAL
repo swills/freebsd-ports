@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: head/LEGAL 476231 2018-08-02 11:54:36Z rene $
+# $FreeBSD: head/LEGAL 478966 2018-09-04 15:05:19Z yuri $
 #
 #    **********************************************************************
 #    ***                      NOTE TO COMMITTERS                        ***
@@ -238,3 +238,4 @@ sas2ircu-*		sysutils/sas2ircu	May not be redistributed. Must accept license to d
 snes9x-*		emulators/snes9x-gtk	Commercial users must seek permission from copyright holders.
 rainloop-1.*.zip	mail/rainloop		Redistribution in any form is prohibited
 lha-114i.tar.gz		archivers/lha		Binary only redistribution is prohibited. Non-network redistribution such as CDROM requires prior notification to author. Commercial use whose main purpose is to provide the functions of this program is prohibited.
+atom-*.tgz		science/atom		Redistribution in any form is prohibited

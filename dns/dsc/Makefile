@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/dsc/Makefile 478274 2018-08-28 00:45:52Z leres $
+# $FreeBSD: head/dns/dsc/Makefile 478328 2018-08-28 20:45:24Z leres $
 
 PORTNAME=	dsc
 PORTVERSION=	2.7.0
@@ -20,7 +20,7 @@ RUN_DEPENDS=	libpcap>=1.8.1:net/libpcap			\
 		dsp>=2.0.0:dns/dsp
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+= --with-extra-cflags=-I${PREFIX}/include
+CONFIGURE_ARGS=	--with-extra-cflags=-I${LOCALBASE}/include
 USES=		gmake perl5 shebangfix
 
 SUB_FILES=	pkg-message

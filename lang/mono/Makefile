@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/lang/mono/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/mono/Makefile 478685 2018-09-01 13:03:19Z feld $
 
 PORTNAME=	mono
-PORTVERSION=	5.10.1.47
-PORTREVISION=	8
+PORTVERSION=	5.10.1.57
+PORTREVISION=	0
 CATEGORIES=	lang
 MASTER_SITES=	https://download.mono-project.com/sources/mono/
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
@@ -26,7 +26,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
 CONFLICTS_INSTALL=	czmq-3*
 
 OPTIONS_DEFINE=		MONOLITE NLS X11
-OPTIONS_DEFAULT=	MONOLITE NLS X11
+OPTIONS_DEFAULT=	MONOLITE X11
 OPTIONS_SUB=	yes
 
 MONOLITE_DESC=		Use monolite to bootstrap mcs (otherwise use installed mcs)

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/nwchem/Makefile 477946 2018-08-24 08:05:04Z yuri $
+# $FreeBSD: head/science/nwchem/Makefile 478714 2018-09-01 18:39:48Z yuri $
 
 PORTNAME=	nwchem
 DISTVERSION=	6.8.1-release-94
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-g1a262862b
 CATEGORIES=	science
 
@@ -26,6 +26,8 @@ SHEBANG_FILES=	../contrib/distro-tools/build_* ../contrib/add_*
 SHEBANG_GLOB=	*.sh
 USE_GITHUB=	yes
 GH_ACCOUNT=	nwchemgit
+USE_PERL5=	build
+
 MAKEFILE=	GNUmakefile
 MAKE_ENV=	NWCHEM_TOP=${WRKSRC}/.. NWCHEM_MODULES=all NWCHEM_LONG_PATHS=Y NWCHEM_TARGET=LINUX64 USE_MPI=Y USE_INTERNALBLAS=Y EXTERNAL_GA_PATH=${LOCALBASE} \
 		BLAS_SIZE=4 USE_64TO32=y

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ksysguardd-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/sysutils/ksysguardd-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	ksysguardd
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE System Guard Daemon
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 DISTINFO_FILE=	${.CURDIR:H:H}/x11/kde-workspace-kde4/distinfo
 USES=		cmake kde:4 tar:xz

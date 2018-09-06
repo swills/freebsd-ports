@@ -1,5 +1,5 @@
 # Created by: Eygene Ryabinkin <rea-fbsd@codelabs.ru>
-# $FreeBSD: head/www/trac-autocomplete/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/trac-autocomplete/Makefile 478873 2018-09-03 13:33:18Z joneum $
 
 PORTNAME=	autocomplete
 PORTVERSION=	0.4.1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://dist.codelabs.ru/fbsd/
 PKGNAMEPREFIX=	trac-
 DISTNAME=	autocompleteusersplugin-r${REL}
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Plugin for autocompletion of user names in ticket fields
 
 RUN_DEPENDS=	trac>=0.11:www/trac

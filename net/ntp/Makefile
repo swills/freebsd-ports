@@ -1,8 +1,9 @@
 # Created by: andreas
-# $FreeBSD: head/net/ntp/Makefile 477703 2018-08-21 05:07:54Z cy $
+# $FreeBSD: head/net/ntp/Makefile 479083 2018-09-06 03:40:36Z cy $
 
 PORTNAME=	ntp
 PORTVERSION=	4.2.8p12
+PORTREVISION=	3
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ \
 		http://archive.ntp.org/ntp4/ntp-4.2/ \
@@ -29,6 +30,8 @@ SHEBANG_FILES=	scripts/ntptrace/ntptrace.in \
 		scripts/ntp-wait/ntp-wait.in \
 		scripts/update-leap/update-leap.in
 perl_OLD_CMD=	@PATH_PERL@
+
+SUB_FILES=	pkg-message
 
 .include "Makefile.inc"
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-pyocr/Makefile 475598 2018-07-28 18:36:16Z yuri $
+# $FreeBSD: head/graphics/py-pyocr/Makefile 479072 2018-09-06 00:37:25Z yuri $
 
 PORTNAME=	pyocr
-DISTVERSION=	0.5.2
+DISTVERSION=	0.5.3
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-yesod-form/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-yesod-form/Makefile 479095 2018-09-06 09:38:16Z amdmi3 $
 
 PORTNAME=	yesod-form
 PORTVERSION=	1.6.1
@@ -9,6 +9,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Form handling support for Yesod Web Framework
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	aeson attoparsec>=0.10 blaze-builder>=0.2.1.4 blaze-html>=0.5 \
 		blaze-markup>=0.5.1 byteable data-default email-validate>=1.0 \

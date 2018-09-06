@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/textproc/yamcha/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/yamcha/Makefile 479018 2018-09-05 11:15:01Z tobik $
 
 PORTNAME=	yamcha
 PORTVERSION=	0.33
@@ -15,6 +15,7 @@ BUILD_DEPENDS=	svm_learn:science/svmlight
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 USES=		libtool perl5
+USE_CXXSTD=	c++98
 USE_PERL5=	build
 INSTALL_TARGET=	install-strip
 PORTDOCS=	feature.png feature2.png feature3.png \

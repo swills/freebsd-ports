@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 472274 2018-06-13 00:43:58Z knu $
+# $FreeBSD: head/Mk/bsd.sites.mk 478541 2018-08-31 09:51:04Z mat $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -891,8 +891,7 @@ MASTER_SITE_NVIDIA+= \
 
 .if !defined(IGNORE_MASTER_SITE_OPENBSD)
 MASTER_SITE_OPENBSD+= \
-	https://fastly.cdn.openbsd.org/pub/OpenBSD/%SUBDIR%/ \
-	https://cloudflare.cdn.openbsd.org/pub/OpenBSD/%SUBDIR%/ \
+	https://cdn.openbsd.org/pub/OpenBSD/%SUBDIR%/ \
 	https://ftp.OpenBSD.org/pub/OpenBSD/%SUBDIR%/ \
 	https://ftp.eu.openbsd.org/pub/OpenBSD/%SUBDIR%/ \
 	https://ftp3.usa.openbsd.org/pub/OpenBSD/%SUBDIR%/ \
@@ -932,9 +931,8 @@ MASTER_SITE_PERL_CPAN_BY+= \
 	https://cpan.metacpan.org/modules/by-module/%SUBDIRPLUS%/ \
 	https://www.cpan.org/%CPANSORT%/%SUBDIR%/ \
 	ftp://ftp.cpan.org/pub/CPAN/%CPANSORT%/%SUBDIR%/ \
-	http://www.cpan.dk/%CPANSORT%/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/lang/perl/CPAN/%CPANSORT%/%SUBDIR%/ \
-	https://ftp.jaist.ac.jp/pub/CPAN/%CPANSORT%/%SUBDIR%/ \
+	http://ftp.jaist.ac.jp/pub/CPAN/%CPANSORT%/%SUBDIR%/ \
 	ftp://ftp.mirrorservice.org/sites/cpan.perl.org/CPAN/%CPANSORT%/%SUBDIR%/ \
 	ftp://ftp.auckland.ac.nz/pub/perl/CPAN/%CPANSORT%/%SUBDIR%/ \
 	http://backpan.perl.org/%CPANSORT%/%SUBDIR%/ \

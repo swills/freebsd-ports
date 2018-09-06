@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas (<thierry@FreeBSD.org>)
-# $FreeBSD: head/net/pear-SOAP/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/net/pear-SOAP/Makefile 478972 2018-09-04 18:10:00Z joneum $
 
 PORTNAME=	SOAP
-PORTVERSION=	0.13.0
+PORTVERSION=	0.14.0
 CATEGORIES=	net www pear
 
 MAINTAINER=	joneum@FreeBSD.org
