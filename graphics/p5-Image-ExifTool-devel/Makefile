@@ -1,10 +1,10 @@
 # Created by: Tod McQuillin <devin@spamcop.net>
-# $FreeBSD: head/graphics/p5-Image-ExifTool-devel/Makefile 454306 2017-11-16 13:10:39Z swills $
+# $FreeBSD: head/graphics/p5-Image-ExifTool-devel/Makefile 479130 2018-09-06 18:24:34Z sunpoet $
 
 PORTNAME=	Image-ExifTool
 PORTVERSION=	10.66
 CATEGORIES=	graphics perl5
-MASTER_SITES=	http://www.sno.phy.queensu.ca/~phil/exiftool/
+MASTER_SITES=	https://sno.phy.queensu.ca/~phil/exiftool/
 PKGNAMEPREFIX=	p5-
 PKGNAMESUFFIX=	-devel
 

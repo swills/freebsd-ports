@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/libgit2/Makefile 474463 2018-07-11 16:30:04Z mfechner $
+# $FreeBSD: head/devel/libgit2/Makefile 479138 2018-09-06 19:04:03Z mfechner $
 
 # Also update devel/libgit2-glib, devel/rubygem-rugged, devel/py-pygit2
 
 PORTNAME=	libgit2
-PORTVERSION=	0.27.3
+PORTVERSION=	0.27.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

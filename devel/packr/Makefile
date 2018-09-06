@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/packr/Makefile 477964 2018-08-24 15:31:41Z swills $
+# $FreeBSD: head/devel/packr/Makefile 479106 2018-09-06 16:07:38Z swills $
 
 PORTNAME=	packr
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.13.3
+DISTVERSION=	1.13.5
 CATEGORIES=	devel
 
 MAINTAINER=	dg@syrec.org
