@@ -1,5 +1,5 @@
 # Created by: Rusty Nejdl <rnejdl@ringofsaturn.com>
-# $FreeBSD: head/sysutils/filelight-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/filelight-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	filelight
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Map of concentric segmented-rings representing file system
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 CONFLICTS_INSTALL=      ${PORTNAME}
 

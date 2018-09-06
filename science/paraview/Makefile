@@ -1,12 +1,15 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/science/paraview/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/science/paraview/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	paraview
 DISTVERSION=	5.5.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science graphics
 MASTER_SITES=	http://www.paraview.org/files/v${VERMAJORMINOR}/
 DISTNAME=	ParaView-v${PORTVERSION}
+
+PATCH_SITES=	https://gitlab.kitware.com/${PORTNAME}/${PORTNAME}/commit/
+PATCHFILES=	931c779dde84.patch:-p1
 
 MAINTAINER=	devel@stasyan.com
 COMMENT=	Powerful scientific data visualization application

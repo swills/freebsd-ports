@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/sysutils/kfloppy-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/kfloppy-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kfloppy
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ CATEGORIES=	sysutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Floppy disk formatter for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs

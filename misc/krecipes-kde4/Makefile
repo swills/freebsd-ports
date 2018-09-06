@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/krecipes-kde4/Makefile 476011 2018-07-31 17:47:53Z jhale $
+# $FreeBSD: head/misc/krecipes-kde4/Makefile 478501 2018-08-30 23:08:23Z jhale $
 
 PORTNAME=	krecipes
 PORTVERSION=	2.1.0
@@ -10,6 +10,9 @@ COMMENT=	KDE4 recipe database
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake gettext kde:4 qt:4 shared-mime-info tar:xz
 USE_GNOME=	libxml2 libxslt

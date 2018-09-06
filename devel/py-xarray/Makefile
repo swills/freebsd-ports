@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-xarray/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-xarray/Makefile 478389 2018-08-29 19:09:46Z sunpoet $
 
 PORTNAME=	xarray
-PORTVERSION=	0.10.4
+PORTVERSION=	0.10.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}pandas>=0.18.0:math/py-pandas@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pandas>=0.19.2:math/py-pandas@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.7.1:devel/py-pytest@${PY_FLAVOR}
 
 NO_ARCH=	yes

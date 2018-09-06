@@ -1,8 +1,8 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/security/py-pysaml2/Makefile 476889 2018-08-11 14:16:37Z sunpoet $
+# $FreeBSD: head/security/py-pysaml2/Makefile 478569 2018-08-31 14:42:00Z sunpoet $
 
 PORTNAME=	pysaml2
-PORTVERSION=	4.6.0
+PORTVERSION=	4.6.1
 CATEGORIES=	security devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

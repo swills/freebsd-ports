@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/www/libdom/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/www/libdom/Makefile 479006 2018-09-05 03:21:10Z swills $
 
 PORTNAME=	libdom
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	www
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

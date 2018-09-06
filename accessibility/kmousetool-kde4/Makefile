@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/kmousetool-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/accessibility/kmousetool-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	kmousetool
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	accessibility kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Automatic mouse click tool for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource kde:4 qt:4 tar:xz
 USE_KDE=	kdelibs automoc4

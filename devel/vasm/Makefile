@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/vasm/Makefile 477344 2018-08-16 14:10:43Z swills $
+# $FreeBSD: head/devel/vasm/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	vasm
 PORTVERSION=	1.8c
@@ -21,7 +21,6 @@ USES=		gmake pathfix
 WRKSRC=		${WRKDIR}/vasm
 
 OPTIONS_DEFINE=	DOCS
-OPTIONS_DEFAULT=	DOCS
 DOCS_USES=	makeinfo
 
 CPU_LIST=	6502 6800 arm c16x jagrisc m68k ppc qnice tr3200 vidcore x86 z80

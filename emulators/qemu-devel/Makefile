@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-devel/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/emulators/qemu-devel/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	qemu
 DISTVERSION=	2.6.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	emulators
 MASTER_SITES=	http://wiki.qemu.org/download/
 PKGNAMESUFFIX=	-devel

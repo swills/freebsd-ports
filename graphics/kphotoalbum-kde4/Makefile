@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/graphics/kphotoalbum-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/kphotoalbum-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kphotoalbum
 PORTVERSION=	4.4
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Image viewer and organizer for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2
 

@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/ns3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/ns3/Makefile 478415 2018-08-29 20:25:36Z swills $
 
 PORTNAME=	ns3
-PORTVERSION=	3.28
-PORTREVISION=	1
+PORTVERSION=	3.28.1
 CATEGORIES=	net
 MASTER_SITES=	https://www.nsnam.org/release/
 DISTNAME=	ns-allinone-${PORTVERSION}

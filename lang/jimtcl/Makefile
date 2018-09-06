@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/jimtcl/Makefile 477139 2018-08-14 07:22:55Z gahr $
+# $FreeBSD: head/lang/jimtcl/Makefile 478319 2018-08-28 14:21:40Z gahr $
 
 PORTNAME=	jimtcl
 PORTVERSION=	0.78
@@ -26,7 +26,6 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION}
 OPTIONS_DEFINE=		DOCS
 DOCS_CONFIGURE_ENABLE=	docs
 DOCS_CONFIGURE_ON=	--docdir=${DOCSDIR}
-DOCS_BUILD_DEPENDS=	asciidoc:textproc/asciidoc
 PORTDOCS=		*
 
 TEST_TARGET=		test

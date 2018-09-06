@@ -1,5 +1,5 @@
 # Created by: Piero Serini <piero@FreeBSD.org>
-# $FreeBSD: head/astro/xearth/Makefile 455097 2017-11-29 09:00:22Z amdmi3 $
+# $FreeBSD: head/astro/xearth/Makefile 478773 2018-09-02 09:38:14Z amdmi3 $
 
 PORTNAME=	xearth
 PORTVERSION=	1.2
@@ -10,12 +10,12 @@ MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Set the root window to the image of earth
 
 LICENSE=	Xearth
-LICENSE_FILE=	${WRKSRC}/README
 LICENSE_NAME=	Xearth license
+LICENSE_FILE=	${WRKSRC}/README
 LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
-USE_XORG=	x11 xext sm ice xt
 USES=		tar:xz
+USE_XORG=	x11 xext sm ice xt
 PLIST_FILES=	bin/xearth \
 		man/man1/xearth.1.gz \
 		lib/X11/xearth/freebsd.committers.markers \

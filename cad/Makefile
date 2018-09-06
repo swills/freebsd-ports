@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 475516 2018-07-28 09:49:26Z mr $
+# $FreeBSD: head/cad/Makefile 478428 2018-08-30 02:26:19Z danfe $
 #
 
     COMMENT = CAD tools
@@ -57,6 +57,7 @@
     SUBDIR += leocad
     SUBDIR += libopencad
     SUBDIR += librecad
+    SUBDIR += libredwg
     SUBDIR += linux-eagle5
     SUBDIR += linuxcnc-devel
     SUBDIR += logisim

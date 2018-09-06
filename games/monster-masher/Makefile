@@ -1,9 +1,9 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/games/monster-masher/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/monster-masher/Makefile 478530 2018-08-31 08:46:10Z tobik $
 
 PORTNAME=	monster
 PORTVERSION=	1.8.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	games gnome
 MASTER_SITES=	http://people.iola.dk/olau/monster-masher/source/
 PKGNAMESUFFIX=	-masher
@@ -18,10 +18,10 @@ LIB_DEPENDS=	libgnomecanvasmm-2.6.so:graphics/libgnomecanvasmm26 \
 
 USES=		compiler:c++11-lang pathfix gettext gmake pkgconfig tar:bzip2
 USE_CXXSTD=	c++11
-USE_GNOME=	gnomeprefix intlhack libgnome esound
+USE_GNOME=	gnomeprefix intlhack libgnome
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lesd
+LDFLAGS+=	-L${LOCALBASE}/lib
 
 GCONF_SCHEMAS=	monster-masher.schemas
 

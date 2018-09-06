@@ -1,6 +1,6 @@
 # this is to be included by vdr plugin ports
 #
-# $FreeBSD: head/multimedia/vdr/Makefile.plugins 428482 2016-12-13 12:15:33Z amdmi3 $
+# $FreeBSD: head/multimedia/vdr/Makefile.plugins 478960 2018-09-04 13:42:13Z tobik $
 
 BUILD_DEPENDS+=  ${LOCALBASE}/include/linux/dvb/frontend.h:multimedia/v4l_compat
 
@@ -14,8 +14,10 @@ USES+=		gettext gmake
 VDRDIR=		${LOCALBASE}/include/vdr
 VDRINCDIR=	${LOCALBASE}/include
 USE_CSTD?=	gnu89
+USE_CXXSTD?=	gnu++98
 MAKE_ARGS+=	CC="${CC}"
 MAKE_ARGS+=	CXX="${CXX}"
+MAKE_ARGS+=	CXXFLAGS="${CXXFLAGS} -fPIC"
 MAKE_ARGS+=	DVBDIR=${LOCALBASE}/include
 MAKE_ARGS+=	VDRDIR=${VDRDIR}
 MAKE_ARGS+=	VDR_USER=${VDR_USER}

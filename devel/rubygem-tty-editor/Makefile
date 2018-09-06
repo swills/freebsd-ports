@@ -1,9 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-editor/Makefile 476529 2018-08-06 19:53:01Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-editor/Makefile 478573 2018-08-31 14:42:22Z sunpoet $
 
 PORTNAME=	tty-editor
-PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTVERSION=	0.4.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +12,7 @@ COMMENT=	Opens a file or text in the user preferred editor
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-tty-prompt>=0.16.0:devel/rubygem-tty-prompt \
+RUN_DEPENDS=	rubygem-tty-prompt>=0.17.0:devel/rubygem-tty-prompt \
 		rubygem-tty-which>=0.3.0:devel/rubygem-tty-which
 
 NO_ARCH=	yes

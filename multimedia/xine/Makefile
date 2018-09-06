@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/xine/Makefile 457511 2017-12-29 16:16:00Z emaste $
+# $FreeBSD: head/multimedia/xine/Makefile 478529 2018-08-31 08:16:18Z tobik $
 
 PORTNAME=	xine
 PORTVERSION=	0.99.9
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-ui/${PORTVERSION}
 DISTNAME=	${PORTNAME}-ui-${PORTVERSION}
@@ -55,7 +55,7 @@ WIN32_CODECS_RUN_DEPENDS=\
 XFT_USE=		XORG=xft
 XFT_CONFIGURE_ENABLE=	xft
 
-XINE_PLUGINSDIR=	lib/xine/plugins/2.5
+XINE_PLUGINSDIR=	lib/xine/plugins/2.7
 
 post-patch:
 	@${REINPLACE_CMD} -e \

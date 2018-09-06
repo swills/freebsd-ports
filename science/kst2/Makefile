@@ -1,10 +1,13 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/science/kst2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/science/kst2/Makefile 478532 2018-08-31 08:57:17Z jhale $
 
 PORTNAME=	kst
 DISTVERSION=	${KST_VERSION}.${KST_DATE}
 PORTREVISION=	1
 CATEGORIES=	science kde
+
+PATCH_SITES=	https://github.com/KDE/kst-plot/commit/
+PATCHFILES=	de3110c59874.patch:-p1
 
 MAINTAINER=	makc@FreeBSD.org
 COMMENT=	Data viewing and plotting tool

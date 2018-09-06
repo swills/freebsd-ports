@@ -1,9 +1,9 @@
-# $FreeBSD: head/comms/geoid/Makefile 454024 2017-11-12 09:04:42Z amdmi3 $
+# $FreeBSD: head/comms/geoid/Makefile 478990 2018-09-04 21:26:14Z yuri $
 
 PORTNAME=	geoid
 PORTVERSION=	1.0
 DISTVERSIONSUFFIX=	.src
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://www.w1hkj.com/LinuxApps/
 DISTNAME=	fl_geoid
@@ -15,14 +15,17 @@ COMMENT=	Geodetic computer for amateur radio use
 LICENSE=	GPLv2+ NONE  # only one src file contains license
 LICENSE_COMB=	multi
 
-LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
+LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libpng16.so:graphics/png
 
-USES=		gmake
+USES=		gmake jpeg
+USE_XORG=	x11 xcursor xext xfixes xft xinerama xrender
 MAKEFILE=	makefile
 
 post-patch:
 	@${REINPLACE_CMD} -e \
-		's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/geoid.cxx
+		's|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/geoid.cxx
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/geoid ${STAGEDIR}${PREFIX}/bin

@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/misc/tellico-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/tellico-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	tellico
 PORTVERSION=	2.3.12
@@ -11,6 +11,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Collection manager for KDE
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libexempi.so:textproc/exempi \
 		libgcrypt.so:security/libgcrypt \

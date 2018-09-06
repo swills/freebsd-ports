@@ -1,9 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/devel/shedskin/Makefile 471254 2018-06-01 10:16:41Z cpm $
+# $FreeBSD: head/devel/shedskin/Makefile 478604 2018-08-31 18:27:13Z fernape $
 
 PORTNAME=	shedskin
 PORTVERSION=	0.9.4
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 476292 2018-08-03 13:19:06Z jsm $
+# $FreeBSD: head/x11-wm/Makefile 478485 2018-08-30 18:52:19Z yuri $
 #
 
     COMMENT = X11 window managers
@@ -62,6 +62,7 @@
     SUBDIR += hs-xmonad
     SUBDIR += hs-xmonad-contrib
     SUBDIR += i3
+    SUBDIR += i3-gaps
     SUBDIR += icewm
     SUBDIR += ion
     SUBDIR += jewel

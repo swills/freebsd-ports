@@ -1,9 +1,10 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/libint/Makefile 478259 2018-08-27 22:56:43Z yuri $
+# $FreeBSD: head/science/libint/Makefile 478472 2018-08-30 17:24:44Z yuri $
 
 PORTNAME=	libint
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	1-2-1
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -12,6 +13,8 @@ COMMENT=	Evaluate the integrals in modern atomic and molecular theory
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+PORTSCOUT=	limit:^1
+
 USES=		autoreconf:build gmake libtool
 USE_GITHUB=	yes
 GH_ACCOUNT=	evaleev
@@ -19,8 +22,12 @@ USE_LDCONFIG=	yes
 ALL_TARGET=	default
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-shared --disable-static --with-cc-optflags="${CFLAGS}" \
+CONFIGURE_ARGS=	--enable-shared --with-cc-optflags="${CFLAGS}" \
 		--with-cxx-optflags="${CXXFLAGS}"
+
+OPTIONS_DEFINE=			STATIC # osa@ requested to keep static libs on 2018/08/28
+OPTIONS_SUB=			yes
+STATIC_CONFIGURE_ENABLE=	static
 
 post-patch:
 	@${REINPLACE_CMD} -e 's| -rpath|${LDFLAGS} -rpath|g' \

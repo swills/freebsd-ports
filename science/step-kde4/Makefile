@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/step-kde4/Makefile 475421 2018-07-27 10:14:39Z jhale $
+# $FreeBSD: head/science/step-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	step
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	science kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE 4 interactive physics simulator
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqalculate.so:math/libqalculate \
 		libgsl.so:math/gsl

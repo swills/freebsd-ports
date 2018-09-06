@@ -1,8 +1,10 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-ratelimiter/Makefile 473217 2018-06-24 20:06:39Z sunpoet $
+# $FreeBSD: head/devel/py-ratelimiter/Makefile 478455 2018-08-30 14:14:15Z sunpoet $
 
 PORTNAME=	ratelimiter
 PORTVERSION=	1.2.0
+DISTVERSIONSUFFIX=	.post0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,10 +13,12 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simple python rate limiting object
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0:devel/py-pytest@${PY_FLAVOR}
 
 NO_ARCH=	yes
+USE_LOCALE=	en_US.UTF-8
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 

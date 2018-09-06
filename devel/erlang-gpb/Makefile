@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-gpb/Makefile 478022 2018-08-25 11:15:22Z olgeni $
+# $FreeBSD: head/devel/erlang-gpb/Makefile 478933 2018-09-04 07:47:37Z olgeni $
 
 PORTNAME=	gpb
-PORTVERSION=	4.2.2
+PORTVERSION=	4.3.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

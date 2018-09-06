@@ -1,10 +1,10 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/lang/libhx/Makefile 384277 2015-04-19 10:47:14Z amdmi3 $
+# $FreeBSD: head/lang/libhx/Makefile 478458 2018-08-30 14:23:19Z danilo $
 
 PORTNAME=	libHX
-PORTVERSION=	3.22
+PORTVERSION=	3.23
 CATEGORIES=	lang
-MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}/${PORTVERSION}
+MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	C/C++ library with common data structures and functions

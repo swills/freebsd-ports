@@ -1,8 +1,9 @@
 # Created by: TAOKA Fumiyoshi
-# $FreeBSD: head/science/py-h5py/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-h5py/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	h5py
 PORTVERSION=	2.8.0
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

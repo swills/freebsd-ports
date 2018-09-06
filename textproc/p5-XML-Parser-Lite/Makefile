@@ -1,8 +1,8 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/textproc/p5-XML-Parser-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Parser-Lite/Makefile 478336 2018-08-28 23:59:10Z sunpoet $
 
 PORTNAME=	XML-Parser-Lite
-PORTVERSION=	0.721
+PORTVERSION=	0.722
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

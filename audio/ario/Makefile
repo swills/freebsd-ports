@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/audio/ario/Makefile 471753 2018-06-05 12:13:18Z wen $
+# $FreeBSD: head/audio/ario/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	ario
 PORTVERSION=	1.6
@@ -32,7 +32,7 @@ PLAYLISTS_DESC=	Playlists support
 SEARCH_DESC=	Search view support
 TAGLIB_DESC=	Manage ID3 tags and Ogg comments
 
-OPTIONS_DEFAULT=	DBUS LIBMPDCLIENT2 MPDIDLE NLS PLAYLISTS SEARCH TAGLIB
+OPTIONS_DEFAULT=	DBUS LIBMPDCLIENT2 MPDIDLE PLAYLISTS SEARCH TAGLIB
 
 AVAHI_LIB_DEPENDS=	libavahi-client.so:net/avahi-app
 AVAHI_CONFIGURE_ENABLE=	avahi

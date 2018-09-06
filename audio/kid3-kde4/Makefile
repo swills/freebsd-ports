@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kid3-kde4/Makefile 478075 2018-08-25 16:28:18Z jhale $
+# $FreeBSD: head/audio/kid3-kde4/Makefile 478502 2018-08-31 00:18:26Z jhale $
 
 PORTNAME=	kid3
 PORTVERSION=	3.6.2
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake:outsource gnome pkgconfig
 USE_GNOME=	libxslt:build
 USE_LDCONFIG=	yes
 
@@ -42,6 +42,9 @@ KID3_APPS+=	KDE
 
 .if ${SLAVE} == kde4 || ${SLAVE} == qt4
 # KDE4 and Qt4
+DEPRECATED=	Qt4 and KDE4 EOL upstream. Use audio/kid3-qt5 or audio/kid3-kf5 instead 
+EXPIRATION_DATE=	2018-12-31
+
 USES+=		qt:4
 USE_QT+=	corelib dbus gui network xml \
 		qmake_build moc_build rcc_build uic_build \

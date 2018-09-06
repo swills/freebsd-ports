@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-sleeptimer/Makefile 470941 2018-05-26 18:19:35Z miwi $
+# $FreeBSD: head/multimedia/vdr-plugin-sleeptimer/Makefile 478960 2018-09-04 13:42:13Z tobik $
 
 PORTNAME=	vdr-plugin-sleeptimer
 PORTVERSION=	0.8.2
@@ -12,8 +12,6 @@ COMMENT=	Video Disk Recorder - sleep timer plugin
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_FreeBSD_12=	does not build with newer clang
 
 USES=		tar:tgz
 PATCH_STRIP=	-p1

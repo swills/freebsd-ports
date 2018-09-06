@@ -1,9 +1,9 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/net/jags/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/net/jags/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	jags
 PORTVERSION=	0.22.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/Jags/${PORTNAME}-${PORTVERSION}
 

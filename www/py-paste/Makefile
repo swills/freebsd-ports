@@ -1,9 +1,9 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/www/py-paste/Makefile 473658 2018-07-01 09:07:20Z amdmi3 $
+# $FreeBSD: head/www/py-paste/Makefile 479031 2018-09-05 16:50:03Z nivit $
 
 PORTNAME=	Paste
-PORTVERSION=	2.0.2
-PORTREVISION=	1
+PORTVERSION=	2.0.3
+PORTREVISION=	0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

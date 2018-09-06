@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-pghero-rails5/Makefile 468368 2018-04-26 18:51:33Z sunpoet $
+# $FreeBSD: head/databases/rubygem-pghero-rails5/Makefile 478981 2018-09-04 18:40:51Z sunpoet $
 
 PORTNAME=	pghero
-DISTVERSION=	2.1.1
+DISTVERSION=	2.2.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

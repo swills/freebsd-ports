@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net/rubygem-octokit/Makefile 477028 2018-08-12 17:34:56Z sunpoet $
+# $FreeBSD: head/net/rubygem-octokit/Makefile 478633 2018-08-31 23:48:26Z sunpoet $
 
 PORTNAME=	octokit
-PORTVERSION=	4.10.0
+PORTVERSION=	4.11.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

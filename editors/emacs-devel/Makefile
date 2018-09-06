@@ -1,5 +1,5 @@
 # Created by: Kenneth Vestergaard Schmidt <kvs@pil.dk>
-# $FreeBSD: head/editors/emacs-devel/Makefile 477132 2018-08-14 01:28:07Z jrm $
+# $FreeBSD: head/editors/emacs-devel/Makefile 478751 2018-09-01 23:50:33Z jrm $
 
 PORTNAME=	emacs
 DISTVERSION=	${EMACS_VER}.${EMACS_REV}
@@ -32,7 +32,7 @@ USE_XORG=	ice sm x11 xcb xext xfixes xinerama xmu xrandr xt
 CPE_VENDOR=	gnu
 USE_GITHUB=	yes
 GH_ACCOUNT=	emacs-mirror
-GH_TAGNAME=	eb787d7
+GH_TAGNAME=	321b06b
 
 CONFIGURE_ARGS=	--disable-build-details \
 		--localstatedir=/var \
@@ -191,7 +191,7 @@ XWIDGETS_LIB_DEPENDS=	libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
 XWIDGETS_IMPLIES=	GTK3
 
 EMACS_VER=	27.0.50
-EMACS_REV=	20180813
+EMACS_REV=	20180901
 
 .include <bsd.port.options.mk>
 

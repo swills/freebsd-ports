@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-local_time/Makefile 475774 2018-07-29 19:20:25Z sunpoet $
+# $FreeBSD: head/devel/rubygem-local_time/Makefile 479059 2018-09-05 23:55:24Z sunpoet $
 
 PORTNAME=	local_time
-PORTVERSION=	2.0.1
+PORTVERSION=	2.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

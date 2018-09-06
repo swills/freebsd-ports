@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-serpent/Makefile 474386 2018-07-10 16:59:23Z rm $
+# $FreeBSD: head/devel/py-serpent/Makefile 478778 2018-09-02 10:32:53Z rm $
 
 PORTNAME=	serpent
-PORTVERSION=	1.25
+PORTVERSION=	1.27
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

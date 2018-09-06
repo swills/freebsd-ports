@@ -1,5 +1,5 @@
 # Created by: Yuan Jue <yuanjue@yuanjue.net>
-# $FreeBSD: head/devel/kdesvn-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/kdesvn-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdesvn
 DISTVERSION=	1.7.0
@@ -13,6 +13,9 @@ COMMENT=	KDE frontend for Subversion
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libsvn_client-1.so:devel/subversion \
 		libapr-1.so:devel/apr1 \

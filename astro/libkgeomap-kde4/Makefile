@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/libkgeomap-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/astro/libkgeomap-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	libkgeomap
 PORTVERSION=	${KDE4_APPLICATIONS_VERSION}
@@ -10,6 +10,9 @@ DIST_SUBDIR=	KDE/${PORTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE4 library for browsing photos on a map
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi

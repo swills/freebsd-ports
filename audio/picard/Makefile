@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/audio/picard/Makefile 476946 2018-08-11 21:40:24Z jhale $
+# $FreeBSD: head/audio/picard/Makefile 479094 2018-09-06 09:27:02Z jhale $
 
 PORTNAME=	picard
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	audio python
 MASTER_SITES=	http://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
 		ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
@@ -30,7 +30,7 @@ OPTIONS_DEFAULT=	PLUGINS
 ACOUSTID_RUN_DEPENDS=	fpcalc:audio/chromaprint
 
 PLUGINS_DESC=		Install various plugins to extend functionality
-PLUGINS_RUN_DEPENDS=	picard-plugins>0:audio/picard-plugins
+PLUGINS_RUN_DEPENDS=	picard-plugins>=2.0:audio/picard-plugins
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|distutils\.command\.install |setuptools\.command\.install |' \

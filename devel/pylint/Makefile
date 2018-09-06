@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/pylint/Makefile 473245 2018-06-24 20:18:19Z sunpoet $
+# $FreeBSD: head/devel/pylint/Makefile 478831 2018-09-02 23:57:05Z sunpoet $
 
 PORTNAME=	pylint
-PORTVERSION=	1.9.2
+PORTVERSION=	2.1.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
@@ -19,9 +19,10 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}astroid>=1.6:devel/py-astroid@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mccabe>=0:devel/py-mccabe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
+USES=		python:3.4+ shebangfix
+USE_PYTHON=	distutils py3kplist
+
 NO_ARCH=	yes
-USE_PYTHON=	concurrent distutils py3kplist
-USES=		python shebangfix
 
 SHEBANG_FILES=	pylint/test/data/ascript
 

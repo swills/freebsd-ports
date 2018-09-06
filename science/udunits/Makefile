@@ -1,8 +1,9 @@
 # Created by: Greg Lewis <glewis@FreeBSD.org>
-# $FreeBSD: head/science/udunits/Makefile 457071 2017-12-23 16:49:28Z sunpoet $
+# $FreeBSD: head/science/udunits/Makefile 478560 2018-08-31 14:41:13Z sunpoet $
 
 PORTNAME=	udunits
 PORTVERSION=	2.2.26
+PORTREVISION=	1
 CATEGORIES=	science math
 MASTER_SITES=	ftp://ftp.unidata.ucar.edu/pub/udunits/ \
 		LOCAL/sunpoet
@@ -30,5 +31,8 @@ INFO=		udunits2 udunits2lib udunits2prog
 
 post-patch:
 	@${REINPLACE_CMD} -e '/install-data-hook$$/d' ${WRKSRC}/lib/Makefile.in
+
+post-patch-DOCS-on:
+	@${REINPLACE_CMD} -e '/^dist_doc_DATA = / s| COPYRIGHT||' ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-yesod-auth-hashdb/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-yesod-auth-hashdb/Makefile 479016 2018-09-05 09:38:15Z amdmi3 $
 
 PORTNAME=	yesod-auth-hashdb
 PORTVERSION=	1.7
@@ -9,6 +9,7 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Authentication plugin for Yesod
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_CABAL=	cryptohash>=0.8 persistent>=2.1 pwstore-fast>=2.2 \
 		yesod-auth>=1.4 yesod-core>=1.4 yesod-form>=1.4 \

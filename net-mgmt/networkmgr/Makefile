@@ -1,8 +1,8 @@
 # Created by: Eric Turgeon <ericturgeon.bsd@gmail.org>
-# $FreeBSD: head/net-mgmt/networkmgr/Makefile 477062 2018-08-13 11:10:57Z ericbsd $
+# $FreeBSD: head/net-mgmt/networkmgr/Makefile 478949 2018-09-04 11:06:41Z ericbsd $
 
 PORTNAME=	networkmgr
-DISTVERSION=	2.7
+DISTVERSION=	2.8
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ericbsd@FreeBSD.org
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	doas:security/doas \
 		${LOCALBASE}/share/icons/hicolor/index.theme:misc/hicolor-icon-theme
 
-USES=		python:3.6 gnome 
+USES=		python:3.6 gnome
 USE_GITHUB=	yes
 GH_ACCOUNT=	GhostBSD
 

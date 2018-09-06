@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/security/razorback-swfScanner/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/security/razorback-swfScanner/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	swfScanner
 PORTVERSION=	0.5.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	SF/razorbacktm/Nuggets
 PKGNAMEPREFIX=	razorback-

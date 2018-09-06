@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/kstars-kde4/Makefile 476214 2018-08-02 03:53:40Z danilo $
+# $FreeBSD: head/astro/kstars-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	kstars
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	astro kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE 4 desktop planetarium
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libcfitsio.so:astro/cfitsio \
 		libwcs.so:astro/wcslib

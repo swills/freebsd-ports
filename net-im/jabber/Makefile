@@ -1,5 +1,5 @@
 # Created by: joe
-# $FreeBSD: head/net-im/jabber/Makefile 455119 2017-11-29 16:13:16Z amdmi3 $
+# $FreeBSD: head/net-im/jabber/Makefile 478963 2018-09-04 14:22:48Z tobik $
 
 PORTNAME=	jabber
 PORTVERSION=	1.6.1.1
@@ -17,6 +17,9 @@ COMMENT=	XMPP/Jabber server daemon
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+DEPRECATED=	Unmaintained upstream
+EXPIRATION_DATE=	2018-10-15
+
 LIB_DEPENDS=	libpopt.so:devel/popt \
 		libpth.so:devel/pth-hard \
 		libidn.so:dns/libidn \
@@ -24,6 +27,7 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 		libexpat.so:textproc/expat2
 
 USES=		gettext gmake iconv libtool localbase:ldflags pkgconfig
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 USE_RC_SUBR=	jabber
 CONFIGURE_ARGS=	--localstatedir=/var \

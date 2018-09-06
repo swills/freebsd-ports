@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/photivo/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/photivo/Makefile 478853 2018-09-03 10:47:13Z jhale $
 
 PORTNAME=	photivo
 PORTVERSION=	0.0.2015.03.21
@@ -23,9 +23,9 @@ LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 		libfftw3.so:math/fftw3
 
 USES=		cmake compiler:c++11-lib desktop-file-utils dos2unix \
-		gettext-runtime jpeg pkgconfig zip
+		gettext-runtime gnome jpeg pkgconfig zip
 USE_GNOME=	glib20
-DOS2UNIX_FILES=	Sources/ptImage.cpp Sources/ptCheck.cpp
+DOS2UNIX_FILES=	Sources/ptImage.cpp Sources/ptCheck.cpp Sources/filemgmt/ptFileMgrWindow.h
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

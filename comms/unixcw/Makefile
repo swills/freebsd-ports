@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/unixcw/Makefile 476737 2018-08-09 11:14:52Z db $
+# $FreeBSD: head/comms/unixcw/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 # NOTE: comms/xcwcp is a sub-port of this.  When making changes, ensure
 #       it still works as well.
@@ -35,9 +35,10 @@ PLIST_SUB=	MAJOR_LIB_VER=${MAJOR_LIB_VER}
 PLIST_SUB+=	MINOR_LIB_VER=${MINOR_LIB_VER}
 
 OPTIONS_DEFINE=	NLS
-OPTIONS_DEFAULT=	NLS
+
 NLS_USES=	gettext
 NLS_CONFIGURE_ENABLE=	nls
+
 .ifndef XCWCP
 OPTIONS_DEFINE+=	ALSA PULSEAUDIO
 OPTIONS_DEFAULT+=	ALSA PULSEAUDIO

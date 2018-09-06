@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kig-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/math/kig-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kig
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE 4 interactive geometry application
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	${PY_BOOST}
 

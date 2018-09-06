@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pmccabe/Makefile 365343 2014-08-18 19:13:18Z antoine $
+# $FreeBSD: head/devel/pmccabe/Makefile 478864 2018-09-03 12:40:04Z rene $
 
 PORTNAME=	pmccabe
 PORTVERSION=	2.6
@@ -7,7 +7,7 @@ MASTER_SITES=	http://ftp.de.debian.org/debian/pool/main/p/pmccabe/ \
 		http://dist.codelabs.ru/fbsd/pmccabe/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Code complexity estimator
 
 LICENSE=	GPLv2

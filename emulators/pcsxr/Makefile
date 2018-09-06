@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/pcsxr/Makefile 472183 2018-06-11 11:46:05Z martymac $
+# $FreeBSD: head/emulators/pcsxr/Makefile 479017 2018-09-05 10:05:29Z martymac $
 
 PORTNAME=	pcsxr
 PORTVERSION=	1.9.95.20180604
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libvorbis.so:audio/libvorbis \
 
 WRKSRC_SUBDIR=	${PORTNAME}
 
-USES=		cmake desktop-file-utils dos2unix gettext iconv libarchive \
+USES=		cmake desktop-file-utils dos2unix gettext gnome iconv libarchive \
 		libtool pkgconfig tar:bzip2
 
 USE_GITHUB=	yes

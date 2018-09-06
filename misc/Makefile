@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 477866 2018-08-23 10:20:14Z blackend $
+# $FreeBSD: head/misc/Makefile 479008 2018-09-05 03:45:53Z swills $
 #
 
     COMMENT = Miscellaneous utilities
@@ -457,6 +457,7 @@
     SUBDIR += qt5-l10n
     SUBDIR += qt5ct
     SUBDIR += qtchooser
+    SUBDIR += raspberrypi-gpioshutdown
     SUBDIR += raspberrypi-userland
     SUBDIR += raspbsd-led
     SUBDIR += ree
@@ -514,7 +515,6 @@
     SUBDIR += termatrix
     SUBDIR += teseq
     SUBDIR += thefuck
-    SUBDIR += timediff
     SUBDIR += tkcron
     SUBDIR += tkinfo
     SUBDIR += tkregexp
@@ -525,6 +525,7 @@
     SUBDIR += tudu
     SUBDIR += tvbrowser
     SUBDIR += typetrainer
+    SUBDIR += tzdiff
     SUBDIR += uk-phone
     SUBDIR += uk-postcodes
     SUBDIR += umodunpack

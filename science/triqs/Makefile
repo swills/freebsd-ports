@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/triqs/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/science/triqs/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	triqs
 DISTVERSION=	2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

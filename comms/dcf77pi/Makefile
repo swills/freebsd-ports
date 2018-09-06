@@ -1,8 +1,9 @@
 # Created by: rene@FreeBSD.org
-# $FreeBSD: head/comms/dcf77pi/Makefile 474198 2018-07-08 20:47:58Z rene $
+# $FreeBSD: head/comms/dcf77pi/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	dcf77pi
 PORTVERSION=	3.7.0
+PORTREVISION=	1
 CATEGORIES=	comms
 
 MAINTAINER=	rene@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/plasma-applet-adjustableclock/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-clocks/plasma-applet-adjustableclock/Makefile 478499 2018-08-30 22:35:20Z jhale $
 
 PORTNAME=	adjustableclock
 PORTVERSION=	4.1.4
@@ -12,6 +12,9 @@ MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	KDE4 highly configurable clock plasma applet
 
 LICENSE=	GPLv2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 workspace

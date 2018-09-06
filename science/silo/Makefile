@@ -1,10 +1,10 @@
 # Created by: Pedro F. Giffuni <giffunip@tutopia.com>
-# $FreeBSD: head/science/silo/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/silo/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	silo
 PORTVERSION=	4.10.2
 DISTVERSIONSUFFIX=	-bsd
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	science
 MASTER_SITES=	http://wci.llnl.gov/content/assets/docs/simulation/computer-codes/${PORTNAME}/silo-${PORTVERSION}/
 

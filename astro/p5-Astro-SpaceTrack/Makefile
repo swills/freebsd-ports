@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/astro/p5-Astro-SpaceTrack/Makefile 477526 2018-08-18 20:42:01Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-SpaceTrack/Makefile 478575 2018-08-31 14:42:32Z sunpoet $
 
 PORTNAME=	Astro-SpaceTrack
-PORTVERSION=	0.115
+PORTVERSION=	0.116
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,19 +13,20 @@ COMMENT=	Retrieve orbital data from www.space-track.org
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTTP-Date>=0:www/p5-HTTP-Date \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Date>=0:www/p5-HTTP-Date \
 		p5-HTTP-Message>=6.03:www/p5-HTTP-Message \
 		p5-JSON>=0:converters/p5-JSON \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-CONFIGURE_ARGS=	-y
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+CONFIGURE_ARGS=	-y
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

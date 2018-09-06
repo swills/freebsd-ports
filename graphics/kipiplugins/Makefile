@@ -1,16 +1,14 @@
-# $FreeBSD: head/graphics/kipiplugins/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/kipiplugins/Makefile 478515 2018-08-31 04:14:48Z tcberner $
 
 PORTNAME=	kipiplugins
 DISTVERSION=	5.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/digikam
 DIST_SUBDIR=	KDE/digikam/${PORTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plugins for digikam
-
-LIB_DEPENDS=	libdigikamcore.so:graphics/digikam
 
 USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig \
 		qt:5 tar:xz

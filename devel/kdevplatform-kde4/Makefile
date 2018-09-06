@@ -1,5 +1,5 @@
 # Created by: Golyashov Sergei <svvord@mail.ru>
-# $FreeBSD: head/devel/kdevplatform-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/kdevplatform-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdevplatform
 PORTVERSION=	${KDEVELOP_VERSION:S/4./1./}
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Set of libraries for KDE IDE-like programs
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libsvn_client-1.so:devel/subversion \
 		libboost_thread.so:devel/boost-libs \

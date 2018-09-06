@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-notes/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
+# $FreeBSD: head/www/nextcloud-notes/Makefile 478850 2018-09-03 09:29:22Z brnrd $
 
 PORTNAME=	notes
-PORTVERSION=	2.4.0
+PORTVERSION=	2.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/

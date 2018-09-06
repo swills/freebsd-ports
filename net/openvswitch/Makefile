@@ -1,9 +1,8 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/net/openvswitch/Makefile 474441 2018-07-11 12:42:02Z olivier $
+# $FreeBSD: head/net/openvswitch/Makefile 478601 2018-08-31 17:42:18Z yuri $
 
 PORTNAME=	openvswitch
-PORTVERSION=	2.9.2
-PORTREVISION=	1
+DISTVERSION=	2.10.0
 CATEGORIES=	net
 MASTER_SITES=	http://openvswitch.org/releases/
 
@@ -26,7 +25,7 @@ SHEBANG_FILES=	ovn/utilities/ovndb-servers.ocf \
 
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-shared --localstatedir=/var \
+CONFIGURE_ARGS=	--enable-shared --disable-static --localstatedir=/var \
 		--with-dbdir=/var/db/${PORTNAME} \
 		--with-openssl=${OPENSSLBASE}
 USE_RC_SUBR=	ovs-vswitchd ovsdb-server

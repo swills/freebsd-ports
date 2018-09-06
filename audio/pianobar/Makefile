@@ -1,9 +1,9 @@
 # Created by: John Hixson <john@pcbsd.org>
-# $FreeBSD: head/audio/pianobar/Makefile 476591 2018-08-07 12:13:47Z jhixson $
+# $FreeBSD: head/audio/pianobar/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	pianobar
 PORTVERSION=	2017.08.30
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	https://6xq.net/${PORTNAME}/
 

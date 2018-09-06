@@ -1,10 +1,11 @@
 # Created by: gno@yahoo-inc.com
-# $FreeBSD: head/devel/json-c/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/devel/json-c/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	json-c
-PORTVERSION=	0.13
+PORTVERSION=	0.13.1
 CATEGORIES=	devel
-MASTER_SITES=	https://s3.amazonaws.com/json-c_releases/releases/
+MASTER_SITES=	https://s3.amazonaws.com/json-c_releases/releases/ \
+		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	JSON (JavaScript Object Notation) implementation in C

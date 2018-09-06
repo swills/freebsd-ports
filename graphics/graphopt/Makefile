@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/graphopt/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/graphics/graphopt/Makefile 478784 2018-09-02 11:10:06Z tobik $
 
 PORTNAME=	graphopt
 PORTVERSION=	0.4.1
@@ -13,6 +13,8 @@ COMMENT=	Graph layout optimizer
 
 LICENSE=	GPLv2+
 
+USES=		gnome
+USE_CXXSTD=	c++98
 USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 

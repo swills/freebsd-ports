@@ -1,0 +1,23 @@
+# $FreeBSD: head/devel/glslang/Makefile 478883 2018-09-03 17:43:50Z jbeich $
+
+PORTNAME=	glslang
+DISTVERSION=	6.2.2596-248
+DISTVERSIONSUFFIX=	-ge0bc65b
+CATEGORIES=	devel graphics
+
+MAINTAINER=	greg@unrelenting.technology
+COMMENT=	OpenGL and OpenGL ES shader front end and validator
+
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKDIR}/LICENSE
+
+USES=		cmake:outsource compiler:c++11-lib
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	KhronosGroup
+
+post-extract:
+	${SED} '/^$$/,$$d' ${WRKSRC}/${PORTNAME}/Include/Types.h \
+			>${WRKDIR}/LICENSE
+
+.include <bsd.port.mk>

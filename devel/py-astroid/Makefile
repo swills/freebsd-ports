@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-astroid/Makefile 473230 2018-06-24 20:16:57Z sunpoet $
+# $FreeBSD: head/devel/py-astroid/Makefile 478380 2018-08-29 19:08:59Z sunpoet $
 
 PORTNAME=	astroid
 PORTVERSION=	1.6.5
@@ -7,7 +7,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	abstract syntax tree for Python with inference support
+COMMENT=	Abstract syntax tree for Python with inference support
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER

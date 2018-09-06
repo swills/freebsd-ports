@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-perlqt-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/p5-perlqt-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	perlqt
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Perl bindings for Qt
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2 \
 		libqwt.so:x11-toolkits/qwt5

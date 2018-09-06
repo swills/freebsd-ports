@@ -1,5 +1,5 @@
 # Created by: Eygene Ryabinkin <rea-fbsd@codelabs.ru>
-# $FreeBSD: head/www/redmine-http-auth/Makefile 397457 2015-09-20 20:27:30Z sunpoet $
+# $FreeBSD: head/www/redmine-http-auth/Makefile 478864 2018-09-03 12:40:04Z rene $
 
 PORTNAME=	http-auth
 PORTVERSION=	20100730
@@ -8,7 +8,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://dist.codelabs.ru/fbsd/
 DISTNAME=	AdamLantos-redmine_http_auth-${GITREV}
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	HTTP authentication plugin for Redmine
 
 LICENSE=	MIT

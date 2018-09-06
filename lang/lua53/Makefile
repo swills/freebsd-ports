@@ -1,5 +1,5 @@
 # Created by: GreenDog <fiziologus@gmail.com>
-# $FreeBSD: head/lang/lua53/Makefile 477483 2018-08-18 07:41:00Z dbn $
+# $FreeBSD: head/lang/lua53/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	lua
 DISTVERSION=	5.3.5
@@ -55,7 +55,7 @@ ALL_TARGET=bsd
 
 # Options
 
-OPTIONS_DEFAULT=LIBEDIT_DL DOCS
+OPTIONS_DEFAULT=LIBEDIT_DL
 
 OPTIONS_GROUP=	DOCSGRP DEBUGGRP
 OPTIONS_SINGLE=	EDITGRP

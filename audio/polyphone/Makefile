@@ -1,11 +1,14 @@
-# $FreeBSD: head/audio/polyphone/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/polyphone/Makefile 478536 2018-08-31 09:25:42Z jhale $
 
 PORTNAME=	polyphone
 DISTVERSION=	1.9
-PORTREVISION=	1
 DISTVERSIONSUFFIX=	-src
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://polyphone-soundfonts.com/en/download/file/76-polyphone-1-8-src-zip/latest/download?ae95d968569b61bc77f7b8559a14db4d=1/
+
+PATCH_SITES=	https://github.com/davy7125/polyphone/commit/
+PATCHFILES=	7d3e26b46cb5.patch:-p2
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Graphical user interface for editing soundfont (sf2 and sfz) files

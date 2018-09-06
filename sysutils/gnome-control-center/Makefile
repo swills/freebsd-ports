@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-control-center/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/sysutils/gnome-control-center/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	gnome-control-center
 PORTVERSION=	3.18.2
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

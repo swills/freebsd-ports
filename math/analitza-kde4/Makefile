@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/analitza-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/analitza-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	analitza
 PORTVERSION=	${KDE4_VERSION}
@@ -12,6 +12,9 @@ LICENSE=	GFDL GPLv2
 LICENSE_COMB=	multi
 LICENSE_FILE_GFDL=	${WRKSRC}/COPYING.DOC
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource ncurses kde:4 qt:4 readline tar:xz
 USE_KDE=	kdelibs automoc4

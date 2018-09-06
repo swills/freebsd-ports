@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/multimedia/kplayer-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/kplayer-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kplayer
 PORTVERSION=	0.7
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Movie player based on mplayer
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	mplayer:multimedia/mplayer
 

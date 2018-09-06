@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pspg/Makefile 475605 2018-07-28 19:31:03Z joneum $
+# $FreeBSD: head/databases/pspg/Makefile 478872 2018-09-03 13:24:26Z swills $
 
 PORTNAME=	pspg
-DISTVERSION=	1.2.2
+DISTVERSION=	1.6.0
 CATEGORIES=	databases
 
 MAINTAINER=	dg@syrec.org

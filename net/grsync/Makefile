@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net/grsync/Makefile 459919 2018-01-25 11:07:50Z martymac $
+# $FreeBSD: head/net/grsync/Makefile 479017 2018-09-05 10:05:29Z martymac $
 
 PORTNAME=	grsync
 PORTVERSION=	1.2.6
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	--disable-unity
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-USES=		desktop-file-utils gettext gmake \
+USES=		desktop-file-utils gettext gmake gnome \
 		pkgconfig shared-mime-info shebangfix
 USE_GNOME=	gtk20 intltool
 SHEBANG_FILES=	src/grsync-batch

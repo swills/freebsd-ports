@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/security/razorback-fsWalk/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/security/razorback-fsWalk/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	fsWalk
 PORTVERSION=	0.5.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	SF/razorbacktm/Nuggets
 PKGNAMEPREFIX=	razorback-

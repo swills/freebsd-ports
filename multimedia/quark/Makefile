@@ -1,9 +1,9 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/multimedia/quark/Makefile 468950 2018-05-03 17:42:45Z krion $
+# $FreeBSD: head/multimedia/quark/Makefile 478529 2018-08-31 08:16:18Z tobik $
 
 PORTNAME=	quark
 PORTVERSION=	3.24
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia gnome
 MASTER_SITES=	http://hsgg.github.com/quark/
 

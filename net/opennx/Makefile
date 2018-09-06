@@ -1,9 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/net/opennx/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/net/opennx/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	opennx
 PORTVERSION=	0.16.0.729
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/CI-source
 

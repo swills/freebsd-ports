@@ -1,5 +1,5 @@
 # Created by: miwi
-# $FreeBSD: head/databases/akonadi-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/databases/akonadi-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	akonadi
 PORTVERSION=	1.13.0
@@ -13,6 +13,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Storage server for KDE-Pim
 
 LICENSE=	LGPL21
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 # Let process generate meaningful backtrace on core dump.

@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/xmms2-scrobbler/Makefile 446563 2017-07-25 09:08:31Z eugen $
+# $FreeBSD: head/audio/xmms2-scrobbler/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	xmms2-scrobbler
 PORTVERSION=	0.4.0
@@ -25,7 +25,7 @@ PORTDOCS=	README
 SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=		APIFIX DOCS
-OPTIONS_DEFAULT=	APIFIX DOCS
+OPTIONS_DEFAULT=	APIFIX
 
 APIFIX_DESC=	Apply fix for Last.fm API 1.x
 APIFIX_EXTRA_PATCHES_ON=	${FILESDIR}/extra-patch-xmms2-scrobbler.c

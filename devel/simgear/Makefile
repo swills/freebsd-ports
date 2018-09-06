@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/simgear/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/simgear/Makefile 478881 2018-09-03 15:57:00Z martymac $
 
 PORTNAME=	simgear
-PORTVERSION=	2018.2.1
-PORTREVISION=	2
+PORTVERSION=	2018.2.2
 CATEGORIES=	devel games
 MASTER_SITES=	SF/flightgear/release-${PORTVERSION:R}
 

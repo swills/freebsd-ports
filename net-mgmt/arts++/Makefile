@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/net-mgmt/arts++/Makefile 395483 2015-08-28 13:39:56Z amdmi3 $
+# $FreeBSD: head/net-mgmt/arts++/Makefile 478678 2018-09-01 12:32:24Z tobik $
 
 PORTNAME=	arts++
 PORTVERSION=	1.1.a13
@@ -14,6 +14,7 @@ COMMENT=	Network data storage and analysis library from CAIDA
 LICENSE=	LGPL21
 
 USES=		gmake libtool
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 USE_LDCONFIG=	yes

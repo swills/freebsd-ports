@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/multimedia/gmerlin-avdecoder/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/gmerlin-avdecoder/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	gmerlin-avdecoder
 PORTVERSION=	1.2.0
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/gmerlin/${PORTNAME}/${PORTVERSION}
 

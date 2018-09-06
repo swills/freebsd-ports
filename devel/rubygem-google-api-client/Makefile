@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-google-api-client/Makefile 477919 2018-08-23 17:59:21Z sunpoet $
+# $FreeBSD: head/devel/rubygem-google-api-client/Makefile 479066 2018-09-05 23:56:01Z sunpoet $
 
 PORTNAME=	google-api-client
-PORTVERSION=	0.23.5
+PORTVERSION=	0.23.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -16,7 +16,8 @@ RUN_DEPENDS=	rubygem-addressable>=2.5.1:www/rubygem-addressable \
 		rubygem-httpclient>=2.8.1:www/rubygem-httpclient \
 		rubygem-mime-types>=3.0:misc/rubygem-mime-types \
 		rubygem-representable>=3.0:textproc/rubygem-representable \
-		rubygem-retriable>=2.0:devel/rubygem-retriable
+		rubygem-retriable>=2.0:devel/rubygem-retriable \
+		rubygem-signet>=0.9:security/rubygem-signet
 
 # bin/generate-api
 CONFLICTS_INSTALL=	rubygem-google-api-client010

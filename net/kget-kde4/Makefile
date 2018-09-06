@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kget-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net/kget-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kget
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	net kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE download manager
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libgpgme.so:security/gpgme \
 		libktorrent.so:net-p2p/libktorrent-kde4 \

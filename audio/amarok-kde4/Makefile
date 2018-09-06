@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/audio/amarok-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/amarok-kde4/Makefile 478444 2018-08-30 12:24:47Z adridg $
 
 PORTNAME=	amarok
 PORTVERSION=	2.8.0
@@ -9,6 +9,9 @@ MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE music player
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

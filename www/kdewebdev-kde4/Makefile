@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/kdewebdev-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/www/kdewebdev-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	kdewebdev
 PORTVERSION=	${KDE4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Comprehensive html/website development environment
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libtidy.so:www/tidy-lib \
 		libboost_thread.so:devel/boost-libs

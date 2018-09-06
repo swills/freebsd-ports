@@ -1,9 +1,9 @@
 # Created by: Hendrik Scholz <hendrik@scholz.net>
-# $FreeBSD: head/multimedia/totem/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/multimedia/totem/Makefile 478832 2018-09-02 23:57:10Z sunpoet $
 
 PORTNAME=	totem
 PORTVERSION=	3.18.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -13,7 +13,7 @@ COMMENT=	Gstreamer-based video player for the GNOME 3 Desktop
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:misc/iso-codes \
 		${LOCALBASE}/libdata/pkgconfig/gnome-icon-theme.pc:misc/gnome-icon-theme \
-		pylint:devel/pylint \
+		pylint:devel/pylint1 \
 		appstream-glib>=0:devel/appstream-glib \
 		itstool:textproc/itstool \
 		grilo-plugins2>=0:net/grilo-plugins2

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rbtrace/Makefile 459876 2018-01-24 18:46:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rbtrace/Makefile 479067 2018-09-05 23:56:07Z sunpoet $
 
 PORTNAME=	rbtrace
-PORTVERSION=	0.4.10
+PORTVERSION=	0.4.11
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-ffi>=1.0.6:devel/rubygem-ffi \
 		rubygem-msgpack>=0.4.3:devel/rubygem-msgpack \
-		rubygem-trollop>=1.16.2:devel/rubygem-trollop
+		rubygem-optimist>=3.0.0:devel/rubygem-optimist
 
 USE_RUBY=	yes
 USES=		gem

@@ -1,9 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/mail/roundcube-carddav/Makefile 468851 2018-05-02 16:15:59Z mat $
+# $FreeBSD: head/mail/roundcube-carddav/Makefile 479019 2018-09-05 11:42:47Z gahr $
 
 PORTNAME=	carddav
-PORTVERSION=	2.0.4
-PORTREVISION=	2
+PORTVERSION=	3.0.2
 CATEGORIES=	mail
 MASTER_SITES=	https://github.com/blind-coder/rcmcarddav/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	roundcube-

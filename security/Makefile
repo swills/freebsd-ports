@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/security/Makefile 478475 2018-08-30 17:44:06Z jsm $
 #
 
     COMMENT = Security tools
@@ -400,6 +400,8 @@
     SUBDIR += logcheck
     SUBDIR += luasec
     SUBDIR += luasec-51
+    SUBDIR += lxqt-openssh-askpass
+    SUBDIR += lxqt-sudo
     SUBDIR += lynis
     SUBDIR += mac-robber
     SUBDIR += maia

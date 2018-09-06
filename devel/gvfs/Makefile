@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/devel/gvfs/Makefile 466597 2018-04-05 20:13:33Z jhale $
+# $FreeBSD: head/devel/gvfs/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	gvfs
 PORTVERSION=	1.26.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

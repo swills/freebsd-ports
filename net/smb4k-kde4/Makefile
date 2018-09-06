@@ -1,9 +1,9 @@
 # Created by: Josh Paetzel <jpaetzel@FreeBSD.org>
-# $FreeBSD: head/net/smb4k-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/smb4k-kde4/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	smb4k-kde4
 PORTVERSION=	0.10.9
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	net kde
 MASTER_SITES=	SF/smb4k
 DISTNAME=	smb4k-${PORTVERSION}

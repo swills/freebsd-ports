@@ -1,5 +1,5 @@
 # Created by: searle
-# $FreeBSD: head/games/flying/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/games/flying/Makefile 478667 2018-09-01 09:45:44Z tobik $
 
 PORTNAME=	flying
 PORTVERSION=	6.20
@@ -10,8 +10,12 @@ MASTER_SITES=	SUNSITE/games/arcade
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pool/snooker/billiards/carrom/etc game
 
-USES=		imake tar:tgz
+USES=		compiler imake tar:tgz
 USE_XORG=	x11
 PLIST_FILES=	bin/flying man/man1/flying.1.gz
+
+# build ignores CXXFLAGS, imake gets in the way of fixing it
+CFLAGS+=	${CFLAGS_${CHOSEN_COMPILER_TYPE}}
+CFLAGS_clang=	-Wno-c++11-narrowing
 
 .include <bsd.port.mk>

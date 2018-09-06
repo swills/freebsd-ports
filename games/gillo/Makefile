@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/games/gillo/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/gillo/Makefile 478634 2018-08-31 23:51:02Z tobik $
 
 PORTNAME=	gillo
 DISTVERSION=	1.0beta1
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libode.so:devel/ode
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USES=		tar:bzip2
+USE_CXXSTD=	c++98
 USE_GL=		glu
 USE_SDL=	yes
 

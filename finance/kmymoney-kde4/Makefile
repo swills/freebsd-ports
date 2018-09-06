@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/kmymoney-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/finance/kmymoney-kde4/Makefile 478500 2018-08-30 22:49:51Z jhale $
 
 PORTNAME=	kmymoney
 PORTVERSION=	4.8.2
@@ -12,6 +12,9 @@ COMMENT=	KDE4 personal finance manager
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream. Use finance/kmymoney instead
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libboost_graph.so:devel/boost-libs \
 		libalkimia.so:finance/alkimia-qt4 \

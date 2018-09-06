@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 477865 2018-08-23 10:01:54Z trasz $
+# $FreeBSD: head/textproc/Makefile 478964 2018-09-04 14:57:27Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1424,6 +1424,7 @@
     SUBDIR += py-trans
     SUBDIR += py-transifex-client
     SUBDIR += py-translationstring
+    SUBDIR += py-transpopy
     SUBDIR += py-tvgrab
     SUBDIR += py-ucl
     SUBDIR += py-whoosh
@@ -1832,6 +1833,7 @@
     SUBDIR += xmlcharent
     SUBDIR += xmldiff
     SUBDIR += xmlenc
+    SUBDIR += xmlf90
     SUBDIR += xmlformat
     SUBDIR += xmlgen
     SUBDIR += xmlindent

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kshutdown-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/kshutdown-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kshutdown
 DISTVERSION=	4.2
@@ -12,6 +12,9 @@ COMMENT=	Advanced shutdown utility for KDE
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		alias cmake:outsource compiler:c++0x gettext kde:4 qt:4 zip
 USE_QT=		corelib dbus gui moc_build qmake_build rcc_build svg uic_build

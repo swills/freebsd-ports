@@ -1,5 +1,5 @@
 # Created by: Douglas Carmichael <dcarmich@dcarmichael.net>
-# $FreeBSD: head/devel/kdevelop-pg-qt-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/kdevelop-pg-qt-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdevelop-pg-qt
 DISTVERSION=	1.0.0
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Parser-generator from KDevplatform
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex
 

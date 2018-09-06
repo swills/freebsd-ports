@@ -1,9 +1,9 @@
-# $FreeBSD: head/biology/kallisto/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/biology/kallisto/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	kallisto
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.43.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology
 
 MAINTAINER=	jwb@FreeBSD.org

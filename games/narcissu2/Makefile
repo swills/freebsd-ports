@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/narcissu2/Makefile 417110 2016-06-19 11:25:29Z mat $
+# $FreeBSD: head/games/narcissu2/Makefile 478837 2018-09-03 00:21:45Z jbeich $
 
 PORTNAME=	narcissu2
 PORTVERSION=	1.1
@@ -22,7 +22,7 @@ LICENSE_TEXT=	Permission has been granted to anyone to redistribute \
 		game data are not modified.
 LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
 
-RUN_DEPENDS=	ponscr:devel/ponscripter-sekai
+RUN_DEPENDS=	ponscr:games/ponscripter-sekai
 
 NO_ARCH=	yes
 NO_BUILD=	yes

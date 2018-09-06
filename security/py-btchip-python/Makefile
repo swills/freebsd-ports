@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/py-btchip-python/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-btchip-python/Makefile 478878 2018-09-03 15:04:25Z ehaupt $
 
 PORTNAME=	btchip-python
-PORTVERSION=	0.1.27
+PORTVERSION=	0.1.28
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

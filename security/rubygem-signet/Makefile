@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-signet/Makefile 477736 2018-08-21 18:24:24Z sunpoet $
+# $FreeBSD: head/security/rubygem-signet/Makefile 478574 2018-08-31 14:42:28Z sunpoet $
 
 PORTNAME=	signet
-PORTVERSION=	0.9.0
+PORTVERSION=	0.9.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

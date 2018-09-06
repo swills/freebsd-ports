@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-Set-Crontab/Makefile 381151 2015-03-12 23:00:02Z adamw $
+# $FreeBSD: head/devel/p5-Set-Crontab/Makefile 478938 2018-09-04 09:08:16Z amdmi3 $
 
 PORTNAME=	Set-Crontab
 PORTVERSION=	1.03
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Expand crontab(5)-style integer lists
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

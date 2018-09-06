@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/editors/yzis/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/editors/yzis/Makefile 479017 2018-09-05 10:05:29Z martymac $
 
 PORTNAME=	yzis
 PORTVERSION=	1.0.a.1
@@ -17,7 +17,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 
-USES=		qt:4 tar:bzip2 cmake gettext perl5 lua:51
+USES=		qt:4 tar:bzip2 cmake gettext gnome perl5 lua:51
 USE_XORG=	x11 xext ice
 USE_QT=		corelib qtestlib qmake_build rcc_build uic_build moc_build gui xml
 CMAKE_ARGS+=	-DLOCALBASE:STRING="${LOCALBASE}" \

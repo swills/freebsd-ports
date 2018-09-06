@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-tasks/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
+# $FreeBSD: head/www/nextcloud-tasks/Makefile 479092 2018-09-06 08:54:29Z brnrd $
 
 PORTNAME=	tasks
-PORTVERSION=	0.9.6
+PORTVERSION=	0.9.7
 PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
@@ -18,7 +18,7 @@ COMMENT=	Tasks app for Nextcloud
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	nextcloud${PHP_PKGNAMESUFFIX}>=12:www/nextcloud@${PHP_FLAVOR}
+RUN_DEPENDS=	nextcloud${PHP_PKGNAMESUFFIX}>=13:www/nextcloud@${PHP_FLAVOR}
 
 USES=		php:flavors
 NO_BUILD=	yes

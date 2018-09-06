@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/icinga2/Makefile 476833 2018-08-10 14:12:52Z lme $
+# $FreeBSD: head/net-mgmt/icinga2/Makefile 478429 2018-08-30 04:05:07Z danfe $
 
 PORTNAME=	icinga2
 DISTVERSIONPREFIX=	v
@@ -30,7 +30,7 @@ OPTIONS_GROUP_BACKEND=	MYSQL PGSQL
 OPTIONS_RADIO=		PLUGINS
 OPTIONS_RADIO_PLUGINS=	MONPLUGINS NAGPLUGINS
 
-OPTIONS_DEFAULT=	DOCS MYSQL PGSQL MONPLUGINS
+OPTIONS_DEFAULT=	MYSQL PGSQL MONPLUGINS
 
 MONPLUGINS_RUN_DEPENDS=	${LOCALBASE}/libexec/nagios/check_nagios:net-mgmt/monitoring-plugins
 NAGPLUGINS_RUN_DEPENDS=	${LOCALBASE}/libexec/nagios/check_nagios:net-mgmt/nagios-plugins

@@ -1,5 +1,5 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/devel/kcachegrind-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kcachegrind-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kcachegrind
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Profiler frontend for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource kde:4 python:run qt:4 tar:xz shebangfix
 USE_KDE=	kdelibs automoc4

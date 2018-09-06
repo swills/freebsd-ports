@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/goattracker/Makefile 439761 2017-04-29 16:37:53Z ehaupt $
+# $FreeBSD: head/audio/goattracker/Makefile 478702 2018-09-01 14:40:59Z ehaupt $
 
 PORTNAME=	goattracker
-PORTVERSION=	2.73
+PORTVERSION=	2.74
 CATEGORIES=	audio
 MASTER_SITES=	SF/goattracker2/GoatTracker%202/${PORTVERSION}
 DISTNAME=	GoatTracker_${PORTVERSION}
@@ -21,9 +21,6 @@ EXTRACT_AFTER_ARGS=	-d ${WRKSRC}
 MAKEFILE=	makefile
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
-
-CFLAGS+=	`sdl-config --cflags`
-LIBS+=		`sdl-config --libs`
 
 DESKTOP_ENTRIES="GoatTracker 2" \
 		"${COMMENT}" \

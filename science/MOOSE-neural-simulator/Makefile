@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/science/MOOSE-neural-simulator/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/MOOSE-neural-simulator/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	MOOSE-neural-simulator
 DISTVERSION=	3.1.2
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONSUFFIX=	-382-gc93d23a
 CATEGORIES=	science biology
 

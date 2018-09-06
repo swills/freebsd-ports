@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/graphics/libkdcraw-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/libkdcraw-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	libkdcraw
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	LibRaw interface for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	liblcms.so:graphics/lcms \
 		libxml2.so:textproc/libxml2 \

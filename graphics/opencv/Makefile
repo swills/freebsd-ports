@@ -1,9 +1,9 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 476672 2018-08-08 20:02:45Z jbeich $
+# $FreeBSD: head/graphics/opencv/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
 
 PORTNAME=	opencv
 PORTVERSION=	3.4.1
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org

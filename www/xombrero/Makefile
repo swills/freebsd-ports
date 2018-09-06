@@ -1,12 +1,12 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/www/xombrero/Makefile 441696 2017-05-25 14:39:31Z bapt $
+# $FreeBSD: head/www/xombrero/Makefile 478864 2018-09-03 12:40:04Z rene $
 
 PORTNAME=	xombrero
 PORTVERSION=	1.6.4
 CATEGORIES=	www
 MASTER_SITES=	https://opensource.conformal.com/snapshots/xombrero/
 
-MAINTAINER=	rea@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Minimalists vi-like web browser based on webkit and GTK+
 
 LICENSE=	ISCL

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/kio-extras/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/devel/kio-extras/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	kio-extras
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-applications # kde kde-applications-plasma
 
 MAINTAINER=	kde@FreeBSD.org

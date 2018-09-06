@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libkvkontakte-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/libkvkontakte-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	libkvkontakte
 PORTVERSION=	4.12.0
@@ -10,6 +10,9 @@ DIST_SUBDIR=	KDE/digikam
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE library for accessing vk.com
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB

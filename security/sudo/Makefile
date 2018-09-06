@@ -1,8 +1,8 @@
 # Created by: erich@rrnet.com
-# $FreeBSD: head/security/sudo/Makefile 477656 2018-08-20 14:23:52Z garga $
+# $FreeBSD: head/security/sudo/Makefile 478950 2018-09-04 11:42:58Z garga $
 
 PORTNAME=	sudo
-PORTVERSION=	1.8.24
+PORTVERSION=	1.8.25
 CATEGORIES=	security
 MASTER_SITES=	SUDO
 

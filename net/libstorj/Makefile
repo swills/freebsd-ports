@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/libstorj/Makefile 476591 2018-08-07 12:13:47Z jhixson $
+# $FreeBSD: head/net/libstorj/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	libstorj
 PORTVERSION=	1.0.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

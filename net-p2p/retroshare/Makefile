@@ -1,10 +1,13 @@
 # Created by: glocke@bsdstammtisch.at
-# $FreeBSD: head/net-p2p/retroshare/Makefile 473509 2018-06-28 20:48:32Z swills $
+# $FreeBSD: head/net-p2p/retroshare/Makefile 478554 2018-08-31 12:51:33Z jhale $
 
 PORTNAME=	retroshare
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.4
 CATEGORIES=	net-p2p
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	428b331d8efe.patch:-p1
 
 MAINTAINER=	peter@netkey.at
 COMMENT=	Private and secure decentralised communication platform
@@ -24,7 +27,8 @@ LIB_DEPENDS=	libsqlcipher.so:databases/sqlcipher \
 		libcurl.so:ftp/curl \
 		libmicrohttpd.so:www/libmicrohttpd
 
-USES=		compiler:features desktop-file-utils dos2unix pkgconfig qmake qt:5 ssl
+USES=		compiler:features desktop-file-utils dos2unix \
+		gnome pkgconfig qmake qt:5 ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	RetroShare
 GH_PROJECT=	RetroShare

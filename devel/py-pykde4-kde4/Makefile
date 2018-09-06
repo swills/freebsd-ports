@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	pykde4
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqwt.so:x11-toolkits/qwt5
 

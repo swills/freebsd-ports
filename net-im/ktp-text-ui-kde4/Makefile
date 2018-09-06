@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-text-ui-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-im/ktp-text-ui-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	ktp-text-ui
 PORTVERSION=	${KTP_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE chat window application
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt4 \
 		libtelepathy-logger-qt4.so:net-im/telepathy-logger-qt4 \

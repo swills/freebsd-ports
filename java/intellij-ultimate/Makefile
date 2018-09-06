@@ -1,10 +1,10 @@
 # Created by: Andrey Cherkashin <andoriyu@gmail.com>
-# $FreeBSD: head/java/intellij-ultimate/Makefile 475399 2018-07-26 21:26:54Z swills $
+# $FreeBSD: head/java/intellij-ultimate/Makefile 478538 2018-08-31 09:38:21Z timur $
 
 # Based on the java/intellij port
 
 PORTNAME=	intellij-ultimate
-PORTVERSION=	2018.1.6
+PORTVERSION=	2018.2.2
 CATEGORIES=	java devel
 MASTER_SITES=	https://download.jetbrains.com/idea/ \
 		http://download.jetbrains.com/idea/
@@ -35,7 +35,7 @@ NO_BUILD=	yes
 USE_LDCONFIG=	${IDEA_HOME}/plugins/tfsIntegration/lib/native/freebsd/x86_64/
 USE_LDCONFIG32=	${IDEA_HOME}/plugins/tfsIntegration/lib/native/freebsd/x86/
 
-WRKSRC=	${WRKDIR}/idea-IU-181.5540.7
+WRKSRC=	${WRKDIR}/idea-IU-182.4129.33
 
 .include "${.CURDIR}/../intellij/common.mk"
 
@@ -73,7 +73,6 @@ do-install:
 # by java/intellij-pty4j
 	@${RM} -r ${STAGEDIR}${IDEA_HOME}/lib/libpty
 	@${RM} -r ${STAGEDIR}${IDEA_HOME}/jre/jre
-	@${RM} ${STAGEDIR}${IDEA_HOME}/lib/pty4j-0.7.1.jar
 	${INSTALL_SCRIPT} ${WRKDIR}/idea ${STAGEDIR}${PREFIX}/bin/idea
 	${INSTALL_MAN} ${FILESDIR}/idea.1 ${STAGEDIR}${PREFIX}/man/man1
 	${INSTALL_DATA} ${WRKDIR}/idea.desktop ${STAGEDIR}${PREFIX}/share/applications/

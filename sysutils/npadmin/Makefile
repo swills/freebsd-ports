@@ -1,5 +1,5 @@
 # Created by: Dom Mitchell <dom@happygiraffe.net>
-# $FreeBSD: head/sysutils/npadmin/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/sysutils/npadmin/Makefile 478958 2018-09-04 13:34:03Z tobik $
 
 PORTNAME=	npadmin
 PORTVERSION=	0.8.7
@@ -10,7 +10,11 @@ MASTER_SITES=	SF
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SNMP based command line network printer management tool
 
+USES=		compiler
 GNU_CONFIGURE=	yes
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/npadmin man/man1/${PORTNAME}.1.gz
 

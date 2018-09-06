@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/www/trac-privatetickets/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/trac-privatetickets/Makefile 479039 2018-09-05 19:37:24Z joneum $
 
 PORTNAME=	privatetickets
-PORTVERSION=	2.2.0
+PORTVERSION=	2.3.0
 CATEGORIES=	www devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	trac-

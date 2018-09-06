@@ -1,8 +1,9 @@
 # Created by: Beñat Gonzalez Etxepare <bbtruk@users.sourceforge.net>
-# $FreeBSD: head/x11-fm/doublecmd/Makefile 473203 2018-06-24 15:32:41Z rakuco $
+# $FreeBSD: head/x11-fm/doublecmd/Makefile 478711 2018-09-01 17:05:47Z antoine $
 
 PORTNAME=	doublecmd
 PORTVERSION=	0.8.3
+PORTREVISION=	1
 CATEGORIES=	x11-fm
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	SF/${PORTNAME}/Double%20Commander%20Source

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 476623 2018-08-07 19:55:32Z tobik $
+# $FreeBSD: head/Mk/Uses/cargo.mk 478931 2018-09-04 07:26:02Z tobik $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -253,8 +253,15 @@ do-test:
 # Helper targets for port maintainers
 #
 
-# cargo-crates will output the crates list from Cargo.lock.
+# cargo-crates will output the crates list from Cargo.lock.  If there
+# is no Cargo.lock for some reason, try and generate it first.
 cargo-crates: extract
+	@if [ ! -r "${CARGO_CARGOLOCK}" ]; then \
+		${ECHO_MSG} "===> ${CARGO_CARGOLOCK} not found.  Trying to generate it..."; \
+		${CARGO_CARGO_RUN} generate-lockfile \
+			--manifest-path ${CARGO_CARGOTOML} \
+			--verbose; \
+	fi
 	@${SETENV} USE_GITHUB=${USE_GITHUB} \
 		${AWK} -f ${SCRIPTSDIR}/cargo-crates.awk ${CARGO_CARGOLOCK}
 

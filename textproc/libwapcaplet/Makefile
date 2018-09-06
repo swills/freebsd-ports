@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/libwapcaplet/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/textproc/libwapcaplet/Makefile 479004 2018-09-05 02:44:33Z swills $
 
 PORTNAME=	libwapcaplet
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

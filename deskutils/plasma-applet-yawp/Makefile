@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-yawp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-yawp/Makefile 478499 2018-08-30 22:35:20Z jhale $
 
 PORTNAME=	yawp
 PORTVERSION=	0.4.5
@@ -12,6 +12,9 @@ COMMENT=	KDE4 weather plasma applet
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE-GPL2
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs workspace

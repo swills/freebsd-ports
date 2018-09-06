@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/multimedia/Makefile 478871 2018-09-03 13:17:06Z swills $
 #
 
     COMMENT = Multimedia software
@@ -10,6 +10,7 @@
     SUBDIR += abby
     SUBDIR += acidrip
     SUBDIR += aegisub
+    SUBDIR += aom
     SUBDIR += aravis
     SUBDIR += asdcplib
     SUBDIR += assimp
@@ -289,6 +290,7 @@
     SUBDIR += naludump
     SUBDIR += nordlicht
     SUBDIR += nostt
+    SUBDIR += obs-qtwebkit
     SUBDIR += obs-studio
     SUBDIR += oggvideotools
     SUBDIR += ogmrip

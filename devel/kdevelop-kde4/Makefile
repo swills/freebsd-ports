@@ -1,5 +1,5 @@
 # Created by: Golyashov Sergei <svvord@mail.ru>
-# $FreeBSD: head/devel/kdevelop-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/kdevelop-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
 
 PORTNAME=	kdevelop
 DISTVERSION=	${KDEVELOP_VERSION}
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plugin extensible IDE for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libkdevplatforminterfaces.so:devel/kdevplatform-kde4
 RUN_DEPENDS=	gmake:devel/gmake

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/libkonq-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/libkonq-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	libkonq
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ DISTNAME=	kde-baseapps-${PORTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Core library for Konqueror
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libphonon.so:multimedia/phonon@qt4
 

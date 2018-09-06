@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind913/Makefile 477957 2018-08-24 11:49:34Z mat $
+# $FreeBSD: head/dns/bind913/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -8,7 +8,7 @@ PORTVERSION=	${ISCVERSION:S/-P/P/:S/b/.b/:S/a/.a/:S/rc/.rc/}
 PORTREVISION=	0
 .else
 # dns/bind913 here
-PORTREVISION=	1
+PORTREVISION=	2
 .endif
 CATEGORIES=	dns net ipv6
 MASTER_SITES=	ISC/bind9/${ISCVERSION}

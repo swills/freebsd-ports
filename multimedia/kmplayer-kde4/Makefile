@@ -1,5 +1,5 @@
 # Created by: Kris Moore
-# $FreeBSD: head/multimedia/kmplayer-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/kmplayer-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kmplayer
 PORTVERSION=	0.11.5b
@@ -13,6 +13,9 @@ COMMENT=	KDE frontend to Phonon / KDE4
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 NOT_FOR_ARCHS=		aarch64
 NOT_FOR_ARCHS_REASON=	prcpucfg.h:764:2: error: "Unknown CPU architecture"

@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/kgpg-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/kgpg-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	kgpg
 PORTVERSION=	${KDE4_VERSION}
@@ -8,6 +8,9 @@ CATEGORIES=	security kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Encryption tool for KDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	gpg2:security/gnupg
 

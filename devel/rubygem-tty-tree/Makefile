@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-tree/Makefile 464289 2018-03-12 20:40:25Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-tree/Makefile 478904 2018-09-03 19:04:22Z sunpoet $
 
 PORTNAME=	tty-tree
-PORTVERSION=	0.1.0
+PORTVERSION=	0.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

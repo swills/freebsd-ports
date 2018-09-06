@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/www/choqok-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/choqok-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	choqok
 PORTVERSION=	1.5
@@ -13,6 +13,9 @@ COMMENT=	KDE micro-blogging client
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqjson.so:devel/qjson@qt4 \
 		libqoauth.so:net/qoauth \

@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/www/libhubbub/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/www/libhubbub/Makefile 479001 2018-09-05 02:38:16Z swills $
 
 PORTNAME=	libhubbub
-PORTVERSION=	0.3.4
+PORTVERSION=	0.3.5
 CATEGORIES=	www
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

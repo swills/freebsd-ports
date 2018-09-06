@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/hamsterdb/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/databases/hamsterdb/Makefile 478689 2018-09-01 13:12:37Z jbeich $
 
 PORTNAME=	hamsterdb
 PORTVERSION=	2.1.11
@@ -17,6 +17,7 @@ BROKEN_powerpc64=	fails to configure: checking for the Boost system library... n
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 
 USES=		alias gmake libtool
+USE_CXXSTD=	gnu++98
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-boost=${LOCALBASE}
@@ -31,6 +32,7 @@ post-patch:
 	${REINPLACE_CMD} -e 's#-ldl##g' ${WRKSRC}/configure
 	${REINPLACE_CMD} -e 's#-ldl##g' ${WRKSRC}/unittests/Makefile.in
 	${REINPLACE_CMD} -e 's#-ldl##g' ${WRKSRC}/tools/ham_bench/Makefile.in
+	${REINPLACE_CMD} -e '/^CXXFLAGS=$${CFLAGS}$$/d' ${WRKSRC}/configure
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

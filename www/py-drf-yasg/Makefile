@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-drf-yasg/Makefile 474220 2018-07-09 02:40:32Z swills $
+# $FreeBSD: head/www/py-drf-yasg/Makefile 478796 2018-09-02 15:35:37Z swills $
 
 PORTNAME=	drf-yasg
-DISTVERSION=	1.9.1
+DISTVERSION=	1.9.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

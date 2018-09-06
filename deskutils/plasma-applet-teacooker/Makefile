@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-teacooker/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-teacooker/Makefile 478499 2018-08-30 22:35:20Z jhale $
 
 PORTNAME=	teacooker
 PORTVERSION=	0.3.0
@@ -12,6 +12,9 @@ MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	KDE4 tea cooker plasma applet
 
 LICENSE=	GPLv3
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake kde:4 qt:4
 USE_KDE=	automoc4 kdelibs

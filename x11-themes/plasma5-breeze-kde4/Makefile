@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/plasma5-breeze-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-themes/plasma5-breeze-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
 
 PORTNAME=	breeze
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -11,6 +11,9 @@ COMMENT=	Plasma5 Breeze visual style for KDE4
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 CMAKE_ON=	USE_KDE4
 

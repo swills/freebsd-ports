@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/graphics/scantailor/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/scantailor/Makefile 478694 2018-09-01 13:28:52Z jbeich $
 
 PORTNAME=	scantailor
 PORTVERSION=	0.9.11.1
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff \
 
 #MAKE_JOBS_UNSAFE=	yes
 USES=		cmake gettext jpeg qt:4
+USE_CXXSTD=	gnu++98
 USE_QT=		corelib gui xml qmake_build uic_build moc_build rcc_build \
 		linguist_build
 USE_XORG+=	xrender

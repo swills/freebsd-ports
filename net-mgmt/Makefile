@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/net-mgmt/Makefile 478481 2018-08-30 18:23:46Z pi $
 #
 
     COMMENT = Network management tools
@@ -213,7 +213,8 @@
     SUBDIR += nstreams
     SUBDIR += observium
     SUBDIR += ocsinventory-agent
-    SUBDIR += ocsinventory-ng
+    SUBDIR += ocsinventory-ocsreports
+    SUBDIR += ocsinventory-server
     SUBDIR += omping
     SUBDIR += onionlauncher
     SUBDIR += openbmp

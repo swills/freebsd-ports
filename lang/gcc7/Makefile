@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/gcc7/Makefile 478993 2018-09-04 22:26:16Z kbowling $
 
 PORTNAME=	gcc
 PORTVERSION=	7.3.0
@@ -60,7 +60,9 @@ CONFIGURE_TARGET=	x86_64-portbld-${OPSYS:tl}${OSREL}
 
 .elif ${ARCH} == powerpc64
 CONFIGURE_ENV+=	UNAME_m="powerpc64"
-USE_GCC=	yes
+USE_GCC=	5	# This port requires at least GCC 4.9, and we need
+			# to ensure not to cause a dependency on itself (so
+			# USE_GCC=yes or USE_GCC=X+ are not an option).
 
 .elif ${ARCH} == powerpcspe
 CONFIGURE_ARGS+=	--with-cpu=8540 --enable-e500_double --without-fp

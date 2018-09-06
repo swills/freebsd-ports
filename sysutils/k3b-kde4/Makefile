@@ -1,5 +1,5 @@
 # Created by: Heiner Eichmann <h.eichmann@gmx.de>
-# $FreeBSD: head/sysutils/k3b-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/k3b-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	k3b
 PORTVERSION=	2.0.3
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE CD/DVD writing suite
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libcdda_paranoia.so:audio/cdparanoia \
 		libsamplerate.so:audio/libsamplerate

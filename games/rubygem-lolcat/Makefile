@@ -1,7 +1,7 @@
-# $FreeBSD: head/games/rubygem-lolcat/Makefile 467952 2018-04-22 08:49:32Z sunpoet $
+# $FreeBSD: head/games/rubygem-lolcat/Makefile 479061 2018-09-05 23:55:35Z sunpoet $
 
 PORTNAME=	lolcat
-PORTVERSION=	99.9.11
+PORTVERSION=	99.9.19
 CATEGORIES=	games
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-manpages>=0.6.1:devel/rubygem-manpages \
 		rubygem-paint>=2.0.0:devel/rubygem-paint \
-		rubygem-trollop>=2.1.2:devel/rubygem-trollop
+		rubygem-trollop>=2.1.3:devel/rubygem-trollop
 
 NO_ARCH=	yes
 USE_RUBY=	yes

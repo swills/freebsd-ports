@@ -1,8 +1,8 @@
 # Created by: Max V. Kostikov <max@kostikov.co>
-# $FreeBSD: head/net/megatools/Makefile 475575 2018-07-28 14:43:05Z miwi $
+# $FreeBSD: head/net/megatools/Makefile 478677 2018-09-01 12:31:27Z wen $
 
 PORTNAME=	megatools
-PORTVERSION=	1.10.1
+PORTVERSION=	1.10.2
 CATEGORIES=	net
 MASTER_SITES=	https://megatools.megous.com/builds/
 
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	asciidoc:textproc/asciidoc
 
 CONFIGURE_ENV=	OPENSSL_CFLAGS="-I${OPENSSLINC}" \
 		OPENSSL_LIBS="-L${OPENSSLLIB} -lcrypto -lssl"
-USES=		gettext-runtime gmake libtool pathfix pkgconfig ssl
+USES=		gettext-runtime gmake gnome libtool pathfix pkgconfig ssl
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20
 

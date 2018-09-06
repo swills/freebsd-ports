@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/aria2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/www/aria2/Makefile 478373 2018-08-29 19:08:22Z sunpoet $
 
 PORTNAME=	aria2
-PORTVERSION=	1.33.1
-PORTREVISION=	2
+PORTVERSION=	1.34.0
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/release-${PORTVERSION}/ \
 		LOCAL/sunpoet

@@ -1,8 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/libubox/Makefile 476355 2018-08-04 12:52:14Z mm $
+# $FreeBSD: head/devel/libubox/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
 
 PORTNAME=	libubox
 PORTVERSION=	20180803
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	mm@FreeBSD.org

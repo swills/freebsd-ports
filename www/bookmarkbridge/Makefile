@@ -1,5 +1,5 @@
 # Created by: Marco Molteni <molter@gufi.org>
-# $FreeBSD: head/www/bookmarkbridge/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/bookmarkbridge/Makefile 478317 2018-08-28 13:55:34Z tobik $
 
 PORTNAME=	bookmarkbridge
 PORTVERSION=	0.76
@@ -13,7 +13,11 @@ COMMENT=	Synchronize bookmarks between multiple browsers
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+DEPRECATED=	Unmaintained. Unlikely to work correctly with modern browsers
+EXPIRATION_DATE=	2018-09-15
+
 USES=		autoreconf gmake perl5 pkgconfig qt:4 shebangfix
+USE_CXXSTD=	gnu++98
 SHEBANG_FILES=	bookmarkbridge/docs/autodocs.pl
 USE_XORG=	x11 ice xext
 USE_QT=		corelib gui qt3support moc_build rcc_build uic_build

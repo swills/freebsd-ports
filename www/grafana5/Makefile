@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/grafana5/Makefile 477798 2018-08-22 16:28:44Z swills $
+# $FreeBSD: head/www/grafana5/Makefile 478631 2018-08-31 23:48:15Z swills $
 
 PORTNAME=	grafana
-PORTVERSION=	5.2.2
+PORTVERSION=	5.2.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES+=	https://s3-us-west-2.amazonaws.com/grafana-releases/release/:public
@@ -24,7 +24,7 @@ USE_RC_SUBR=	grafana
 
 USE_GITHUB=	yes
 GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
-TAG=		aeaf7b2
+TAG=		cf4c090
 
 GRAFANA_USER?=	grafana
 GRAFANA_GROUP?=	grafana

@@ -1,9 +1,9 @@
-# $FreeBSD: head/finance/gnucash/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/finance/gnucash/Makefile 478604 2018-08-31 18:27:13Z fernape $
 #   $MCom: ports/finance/gnucash/Makefile,v 1.26 2008/12/31 03:25:18 mezz Exp $
 
 PORTNAME=	gnucash
 PORTVERSION=	3.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28stable%29/${PORTVERSION}
 

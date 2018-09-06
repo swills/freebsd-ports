@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/rocs-kde4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/math/rocs-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
 
 PORTNAME=	rocs
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Graph theory IDE
+
+DEPRECATED=	KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 

@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/x11/xbanish/Makefile 455791 2017-12-08 18:34:53Z tobik $
+# $FreeBSD: head/x11/xbanish/Makefile 478696 2018-09-01 14:10:04Z tobik $
 
 PORTNAME=	xbanish
-PORTVERSION=	1.5
 DISTVERSIONPREFIX=	v
+DISTVERSION=	1.6
 CATEGORIES=	x11
 
 MAINTAINER=	tobik@FreeBSD.org

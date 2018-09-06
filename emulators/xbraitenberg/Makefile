@@ -1,5 +1,5 @@
 # Created by: krion
-# $FreeBSD: head/emulators/xbraitenberg/Makefile 340240 2014-01-19 09:24:34Z miwi $
+# $FreeBSD: head/emulators/xbraitenberg/Makefile 478619 2018-08-31 22:44:47Z tobik $
 
 PORTNAME=	xbraitenberg
 PORTVERSION=	0.9
@@ -10,6 +10,7 @@ MASTER_SITES=	http://www.lcdf.org/~eddietwo/xbraitenberg/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Braitenberg vehicle simulator with pseudo-physics
 
+USE_CXXSTD=	c++98
 USE_XORG=	x11 ice sm xext
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_fpermissive=no

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-hpilo/Makefile 467805 2018-04-19 20:52:41Z pizzamig $
+# $FreeBSD: head/sysutils/py-hpilo/Makefile 478943 2018-09-04 09:49:52Z pizzamig $
 
 PORTNAME=	hpilo
-PORTVERSION=	4.2.1
+PORTVERSION=	4.3
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

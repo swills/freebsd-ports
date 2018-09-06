@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-recaptcha/Makefile 476708 2018-08-08 23:29:26Z sunpoet $
+# $FreeBSD: head/devel/rubygem-recaptcha/Makefile 478582 2018-08-31 14:43:09Z sunpoet $
 
 PORTNAME=	recaptcha
-PORTVERSION=	4.11.1
+PORTVERSION=	4.12.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-json>=0:devel/rubygem-json
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

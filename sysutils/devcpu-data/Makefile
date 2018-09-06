@@ -1,8 +1,8 @@
 # Created by: stas
-# $FreeBSD: head/sysutils/devcpu-data/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
+# $FreeBSD: head/sysutils/devcpu-data/Makefile 478330 2018-08-28 21:51:59Z markj $
 
 PORTNAME=	data
-PORTVERSION=	1.19
+PORTVERSION=	1.20
 CATEGORIES=	sysutils
 MASTER_SITES=	https://downloadmirror.intel.com/28039/eng/:intel \
 		LOCAL/sbruno:amd
@@ -23,11 +23,13 @@ NO_ARCH=	yes
 NO_WRKSUBDIR=	yes
 
 DATADIR=	${PREFIX}/share/cpucontrol
+FWDIR=		/boot/firmware
 
 USE_RC_SUBR=	microcode_update
 
 post-extract:
 	${CP} -p ${FILESDIR}/Makefile ${FILESDIR}/ucode-split.c ${WRKSRC}
+	${CAT} ${WRKSRC}/intel-ucode/* ${WRKSRC}/intel-ucode-with-caveats/* > ${WRKSRC}/intel-ucode.bin
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/
@@ -36,5 +38,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/microcode_amd_fam16h.bin ${STAGEDIR}${DATADIR}/
 	${INSTALL_DATA} ${WRKSRC}/microcode_amd_fam17h.bin ${STAGEDIR}${DATADIR}/
 	${INSTALL_DATA} ${WRKSRC}/mcodes/* ${STAGEDIR}${DATADIR}/
+	${MKDIR} ${STAGEDIR}${FWDIR}
+	${INSTALL_DATA} ${WRKSRC}/intel-ucode.bin ${STAGEDIR}${FWDIR}/
 
 .include <bsd.port.mk>

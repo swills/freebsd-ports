@@ -1,9 +1,9 @@
 # Created by: TATEISHI Katsuyuki <katsu@iec.hiroshima-u.ac.jp>
-# $FreeBSD: head/graphics/gimageview/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/gimageview/Makefile 478529 2018-08-31 08:16:18Z tobik $
 
 PORTNAME=	gimageview
 PORTVERSION=	0.2.27
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	graphics
 MASTER_SITES=	SF/gtkmmviewer/${PORTNAME}/${PORTVERSION}
 

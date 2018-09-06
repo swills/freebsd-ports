@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 477056 2018-08-13 07:21:32Z girgen $
+# $FreeBSD: head/GIDs 478488 2018-08-30 19:39:14Z yuri $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -823,7 +823,7 @@ _geodns:*:853:
 # free: 880
 # free: 881
 # free: 882
-# free: 883
+ipfs-go:*:883:
 telegraf:*:884:
 tcpdump:*:885:
 miniflux:*:886:
