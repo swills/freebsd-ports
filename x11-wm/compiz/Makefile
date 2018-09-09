@@ -2,15 +2,23 @@
 
 PORTNAME=	compiz
 PORTVERSION=	0.8.8
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://releases.compiz.org/${PORTVERSION}/
 
 MAINTAINER=	freebsd-ports@dan.me.uk
 COMMENT=	Compiz Composite/Window Manager
 
-LIB_DEPENDS=	libpng.so:graphics/png \
+LICENSE=		GPLv2+ LGPL21+ MIT
+LICENSE_COMB=		multi
+LICENSE_FILE_GPLv2+=	${WRKSRC}/COPYING.GPL
+LICENSE_FILE_LGPL21+=	${WRKSRC}/COPYING.LGPL
+LICENSE_FILE_MIT=	${WRKSRC}/COPYING.MIT
+
+LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2 \
 		libgtop-2.0.so:devel/libgtop \
+		libpng.so:graphics/png \
 		libstartup-notification-1.so:x11/startup-notification
 RUN_DEPENDS=	glxinfo:graphics/mesa-demos \
 		nvidia-settings:x11/nvidia-settings
@@ -18,11 +26,11 @@ RUN_DEPENDS=	glxinfo:graphics/mesa-demos \
 XORG_CAT=	app
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		gettext gmake libtool pathfix tar:bzip2
-USE_GL=		glu
-USE_GNOME=	gconf2 libxslt intltool
-USE_XORG=	xorgproto ice sm x11 xcomposite xdamage xext xfixes xinerama \
-		xrandr xrender
+USES=		gmake libtool pathfix tar:bzip2
+USE_GL=		gl glu
+USE_GNOME=	cairo gconf2 intltool libxslt
+USE_XORG=	ice sm x11 xcomposite xdamage xext xfixes xinerama \
+		xorgproto xrandr xrender
 USE_LDCONFIG=	yes
 
 GCONF_SCHEMAS=	gwd.schemas \
@@ -64,10 +72,11 @@ CONFIGURE_ARGS=	--disable-kde4 --disable-kde \
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 
-OPTIONS_DEFINE=	SVG GTK2 METACITY DBUS FUSE
-OPTIONS_DEFAULT=	SVG GTK2 METACITY DBUS
+OPTIONS_DEFINE=	DBUS FUSE GTK2 METACITY NLS SVG
+OPTIONS_DEFAULT=DBUS      GTK2          NLS SVG
 
-METACITY_DESC=	Enable Metacity support
+METACITY_DESC=		Enable Metacity support [broken since Metacity migrated to GTK+ 3]
+METACITY_BROKEN=	Metacity support is broken.   Deselect the option METACITY to build
 
 SUB_FILES=		compiz-manager
 DESKTOP_ENTRIES=	"Compiz Manager" \
@@ -87,26 +96,28 @@ GTK2_USE=	GNOME=glib20,libwnck
 FUSE_CONFIGURE_ENABLE=	fuse
 FUSE_USES=		fuse
 
+DBUS_CONFIGURE_ENABLE=	dbus
+DBUS_BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/dbus-1.pc:devel/dbus
+DBUS_RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/dbus-1.pc:devel/dbus
+
+NLS_CONFIGURE_ENABLE=	nls
+NLS_USES=		gettext-runtime gettext-tools
+
 .include <bsd.port.options.mk>
 
-.if !empty(PORT_OPTIONS:MMETACITY) && !empty(PORT_OPTIONS:MGNOME) && !empty(PORT_OPTIONS:MGTK2)
+.if !empty(PORT_OPTIONS:MMETACITY) && !empty(PORT_OPTIONS:MGTK2)
 CONFIGURE_ARGS+=	--enable-metacity
 USE_GNOME+=	metacity
 .else
 CONFIGURE_ARGS+=	--disable-metacity
 .endif
 
-.if ${PORT_OPTIONS:MDBUS}
-CONFIGURE_ARGS+=	--enable-dbus
-BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dbus-1.pc:devel/dbus
-RUN_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dbus-1.pc:devel/dbus
-.if ${PORT_OPTIONS:MGTK2} && ${PORT_OPTIONS:MGNOME}
+.if !empty(PORT_OPTIONS:MDBUS) && !empty(PORT_OPTIONS:MGTK2)
 CONFIGURE_ARGS+=	--enable-dbus-glib
 BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dbus-glib-1.pc:devel/dbus-glib
 RUN_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dbus-glib-1.pc:devel/dbus-glib
-.endif
 .else
-CONFIGURE_ARGS+=	--disable-dbus --disable-dbus-glib
+CONFIGURE_ARGS+=	--disable-dbus-glib
 .endif
 
 post-install:

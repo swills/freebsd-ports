@@ -32,6 +32,8 @@ lib/compiz/libglib.a
 lib/compiz/libglib.so
 lib/compiz/libgnomecompat.a
 lib/compiz/libgnomecompat.so
+lib/compiz/libinotify.a
+lib/compiz/libinotify.so
 lib/compiz/libini.a
 lib/compiz/libini.so
 lib/compiz/libminimize.a
