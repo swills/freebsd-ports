@@ -1,6 +1,15 @@
---- src/main.c.orig	2008-04-03 12:04:50.000000000 -0400
-+++ src/main.c	2008-05-29 17:02:49.000000000 -0400
-@@ -549,7 +549,8 @@
+--- src/main.c.orig	2011-04-21 10:03:54 UTC
++++ src/main.c
+@@ -27,7 +27,7 @@
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <string.h>
+-#include <malloc.h>
++#include <stdlib.h>
+ #include <libintl.h>
+ #include <dlfcn.h>
+ #include <dirent.h>
+@@ -598,7 +598,8 @@ openBackend (char *backend)
  	asprintf (&dlname, "%s/.compizconfig/backends/lib%s.so", 
  		  home, backend);
  	dlerror ();
@@ -10,7 +19,7 @@
  	err = dlerror ();
      }
  
-@@ -560,7 +561,8 @@
+@@ -609,7 +610,8 @@ openBackend (char *backend)
          }
  	asprintf (&dlname, "%s/compizconfig/backends/lib%s.so", 
  		  LIBDIR, backend);
