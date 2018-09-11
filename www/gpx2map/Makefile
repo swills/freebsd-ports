@@ -29,7 +29,8 @@ PLIST_FILES=	bin/gpx2map \
 OPTIONS_DEFINE=	GNUPLOT
 
 GNUPLOT_DESC=	Enable draw track profiles
-GNUPLOT_RUN_DEPENDS=	p5-Chart-Gnuplot>=0:graphics/p5-Chart-Gnuplot
+GNUPLOT_RUN_DEPENDS=	p5-Chart-Gnuplot>=0:graphics/p5-Chart-Gnuplot \
+			convert:graphics/ImageMagick
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|gpx2map.google.template|${DATADIR}/gpx2map.google.template|" \
