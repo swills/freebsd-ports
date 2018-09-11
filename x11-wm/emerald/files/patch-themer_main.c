@@ -1,5 +1,5 @@
---- themer/main.c.orig	2009-10-13 20:56:23.000000000 -0400
-+++ themer/main.c	2010-11-24 15:45:57.000000000 -0500
+--- themer/main.c.orig	2011-04-21 12:06:20 UTC
++++ themer/main.c
 @@ -7,6 +7,103 @@
  #include <emerald.h>
  #include <engine.h>
