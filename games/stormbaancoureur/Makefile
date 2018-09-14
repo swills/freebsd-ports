@@ -3,7 +3,7 @@
 
 PORTNAME=	stormbaancoureur
 PORTVERSION=	2.1.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://www.stolk.org/stormbaancoureur/download/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -13,9 +13,10 @@ COMMENT=	Simulated obstacle course for automobiles
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \
-		${LOCALBASE}/lib/libode.a:devel/ode
+BUILD_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib
+LIB_DEPENDS=	libode.so:devel/ode
 
+USES=		pkgconfig
 USE_GL=		gl glu glut
 
 MAKE_ENV=	DATADIR="${DATADIR}"

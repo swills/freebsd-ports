@@ -34,7 +34,7 @@
  
  LIBS=\
 -  $(ODEPREFIX)/$(LIBDIRNAME)/libode.a \
-+  $(LOCALBASE)/lib/libode.a \
++  `pkg-config --libs ode` \
    -lplibssgaux -lplibssg -lplibsg -lplibpu -lplibfnt -lplibul \
 -  -lglut -lGLU -lGL -lasound
 +  -lglut -lGLU -lGL $(ALSA_LIBS)
