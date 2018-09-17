@@ -1,5 +1,5 @@
 # Created by: Damian Gerow <dgerow@afflictions.org>
-# $FreeBSD: head/security/openconnect/Makefile 458641 2018-01-10 14:01:49Z zi $
+# $FreeBSD: head/security/openconnect/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openconnect
 PORTVERSION=	7.08
@@ -27,7 +27,7 @@ INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	PROXY GNUTLS GSSAPI LZ4 P11 STOKEN
+OPTIONS_DEFINE=	DOCS PROXY GNUTLS GSSAPI LZ4 P11 STOKEN
 OPTIONS_DEFAULT=GSSAPI
 
 LZ4_DESC=		LZ4-based compression

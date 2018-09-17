@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/x11/thinglaunch/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/thinglaunch/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	thinglaunch
 PORTVERSION=	1.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	LOCAL/ehaupt
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kdf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/kdf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kdf
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,5 +13,7 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons doctools \
 		widgetsaddons xmlgui
 USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

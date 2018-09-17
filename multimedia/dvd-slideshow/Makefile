@@ -1,5 +1,5 @@
 # Created by: Phil Oleson <oz@nixil.net>
-# $FreeBSD: head/multimedia/dvd-slideshow/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/dvd-slideshow/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dvd-slideshow
 PORTVERSION=	0.8.4
@@ -28,7 +28,7 @@ RUN_DEPENDS=	bash:shells/bash \
 NO_BUILD=	yes
 DATADIR=	${PREFIX}/share/apps/${PORTNAME}
 
-OPTIONS_DEFINE=	LAME THEMES TOOLAME VORBIS
+OPTIONS_DEFINE=	DOCS LAME THEMES TOOLAME VORBIS
 THEMES_DESC=	Install optional themes
 
 LAME_RUN_DEPENDS=	lame:audio/lame

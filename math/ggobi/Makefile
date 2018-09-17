@@ -1,5 +1,5 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/math/ggobi/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/math/ggobi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ggobi
 PORTVERSION=	2.1.11
@@ -25,6 +25,8 @@ SUB_FILES=	pkg-message
 
 ALL_TARGET=	all ggobirc
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 post-build:
 	@${REINPLACE_CMD} -e 's|plugin.la|plugin.so|g' ${WRKSRC}/ggobirc

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-plug/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/elixir-plug/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	plug
 PORTVERSION=	1.4.5
@@ -18,5 +18,7 @@ GH_ACCOUNT=	elixir-lang
 MIX_BUILD_DEPS=	misc/elixir-mime
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

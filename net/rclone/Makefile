@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/rclone/Makefile 476637 2018-08-08 12:23:42Z wg $
+# $FreeBSD: head/net/rclone/Makefile 479534 2018-09-11 16:33:01Z wg $
 
 PORTNAME=	rclone
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.42
+DISTVERSION=	1.43
 CATEGORIES=	net
 
 MAINTAINER=	wg@FreeBSD.org

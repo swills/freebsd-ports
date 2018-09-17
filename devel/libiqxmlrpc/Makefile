@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/devel/libiqxmlrpc/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/libiqxmlrpc/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	libiqxmlrpc
 PORTVERSION=	0.13.5
@@ -14,9 +14,9 @@ LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-OPTIONS_DEFINE=	DOXYGEN
-OPTIONS_DEFAULT=
+OPTIONS_DEFINE=	DOXYGEN DOCS
 
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_CMAKE_OFF=	-Dbuild_docs=off
 

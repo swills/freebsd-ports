@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/thebridge/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/thebridge/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	thebridge
 PORTVERSION=	1.09
@@ -24,6 +24,8 @@ MAKE_ARGS=	AUTOMAKE="${TRUE}"
 SHEBANG_FILES=	addons/usermgmt.cgi
 
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's!tbdcmd=\/usr\/local!tbdcmd=${PREFIX}!'\

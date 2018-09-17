@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-im/vacuum-im/Makefile 478961 2018-09-04 14:10:25Z tobik $
+# $FreeBSD: head/net-im/vacuum-im/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	vacuum
 PORTVERSION=	1.2.5
@@ -28,5 +28,7 @@ PORTDOCS=	AUTHORS CHANGELOG COPYING README TRANSLATORS
 DESKTOP_ENTRIES="Vacuum-IM" "Modular, crossplatform Jabber client" \
 		"${PREFIX}/share/pixmaps/vacuum.png" "${PORTNAME}" \
 		"Qt;Network;InstantMessaging;" false
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

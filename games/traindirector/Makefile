@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/traindirector/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/games/traindirector/Makefile 479890 2018-09-16 11:44:37Z antoine $
 
 PORTNAME=	traindirector
 PORTVERSION=	3.6
@@ -11,6 +11,9 @@ MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Train controller simulation
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Does not build on FreeBSD 11+
+EXPIRATION_DATE=	2018-10-31
 
 NO_WRKSUBDIR=	yes
 

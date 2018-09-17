@@ -1,5 +1,5 @@
 # Created by: Mikhail T. <m.tsatsenko@gmail.com>
-# $FreeBSD: head/databases/memcacheq/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/databases/memcacheq/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	memcacheq
 PORTVERSION=	0.2.0
@@ -27,6 +27,8 @@ PORTDOCS=	README
 
 MCQDIR?=	/var/db/memcacheq
 PLIST_SUB=	MCQDIR=${MCQDIR}
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

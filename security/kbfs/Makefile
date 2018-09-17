@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/kbfs/Makefile 476695 2018-08-08 23:28:18Z sunpoet $
+# $FreeBSD: head/security/kbfs/Makefile 479624 2018-09-12 22:54:56Z sunpoet $
 
 PORTNAME=	kbfs
-PORTVERSION=	2.5.0
+PORTVERSION=	2.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -11,9 +11,12 @@ COMMENT=	Keybase Filesystem (KBFS)
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+PORTSCOUT=	skipv:initial-git-on-android
+
+USES=		go
+
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 GO_TARGET=	-tags production ${GO_PKGNAME}/kbfsfuse ${GO_PKGNAME}/kbfsgit/git-remote-keybase ${GO_PKGNAME}/kbfstool
-USES=		go
 
 PLIST_FILES=	bin/git-remote-keybase bin/kbfsfuse bin/kbfstool
 

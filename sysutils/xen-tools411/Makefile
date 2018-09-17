@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/xen-tools411/Makefile 479027 2018-09-05 16:21:20Z royger $
+# $FreeBSD: head/sysutils/xen-tools411/Makefile 479377 2018-09-10 09:10:11Z royger $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools411
 PORTVERSION=	4.11.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	sysutils emulators
 MASTER_SITES=	http://downloads.xenproject.org/release/xen/${PORTVERSION}/
 
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libyajl.so:devel/yajl \
 		libargp.so:devel/argp-standalone
 BUILD_DEPENDS=	seabios>0:misc/seabios
 RUN_DEPENDS=	seabios>0:misc/seabios
+DOCS_BUILD_DEPENDS=markdown:textproc/markdown
 
 OPTIONS_DEFINE=	DOCS
 

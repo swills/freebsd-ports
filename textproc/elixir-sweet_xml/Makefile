@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elixir-sweet_xml/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/textproc/elixir-sweet_xml/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sweet_xml
 PORTVERSION=	0.3.0
@@ -14,5 +14,7 @@ LICENSE=	MIT
 USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	gniquil
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

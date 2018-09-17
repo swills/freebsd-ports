@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-hex/Makefile 474106 2018-07-07 16:24:26Z olgeni $
+# $FreeBSD: head/devel/elixir-hex/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hex
 PORTVERSION=	0.18.1
@@ -14,5 +14,7 @@ LICENSE=	APACHE20
 USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	hexpm
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

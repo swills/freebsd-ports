@@ -1,5 +1,5 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/net/bsdproxy/Makefile 368108 2014-09-13 15:11:27Z tijl $
+# $FreeBSD: head/net/bsdproxy/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bsdproxy
 PORTVERSION=	0.04
@@ -15,6 +15,8 @@ USE_GNOME=	glib12
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	ChangeLog README
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

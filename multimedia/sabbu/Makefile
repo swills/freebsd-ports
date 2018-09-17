@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/sabbu/Makefile 469897 2018-05-14 15:04:23Z dinoex $
+# $FreeBSD: head/multimedia/sabbu/Makefile 479427 2018-09-10 14:40:53Z mat $
 
 PORTNAME=	sabbu
 PORTVERSION=	0.3.0
@@ -24,7 +24,7 @@ CFLAGS+=	-I${LOCALBASE}/include/ffmpeg0 -I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib/ffmpeg0 -L${LOCALBASE}/lib
 LDFLAGS+=	-lswscale0 -lgmodule-2.0
 
-OPTIONS_DEFINE=	GTKSPELL
+OPTIONS_DEFINE=	GTKSPELL NLS
 OPTIONS_DEFAULT=GTKSPELL
 
 GTKSPELL_LIB_DEPENDS=	libgtkspell.so:textproc/gtkspell

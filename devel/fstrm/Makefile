@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/devel/fstrm/Makefile 470130 2018-05-16 17:04:09Z truckman $
+# $FreeBSD: head/devel/fstrm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=		fstrm
 PORTVERSION=		0.4.0
@@ -23,8 +23,9 @@ GNU_CONFIGURE=		yes
 INSTALL_TARGET=		install-strip
 TEST_TARGET=		check
 
-OPTIONS_DEFINE=		DOXYGEN
+OPTIONS_DEFINE=		DOXYGEN DOCS
 DOXYGEN_DESC=		Use doxygen for docs
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_ALL_TARGET=	html-local
 

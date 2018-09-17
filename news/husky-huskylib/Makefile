@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/husky-huskylib/Makefile 397523 2015-09-21 22:09:08Z bdrewery $
+# $FreeBSD: head/news/husky-huskylib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	husky-huskylib
 
@@ -9,5 +9,7 @@ USE_LDCONFIG=	yes
 
 MASTERDIR=	${.CURDIR}/../husky
 COMPONENT_SUBDIR=	huskylib
+
+OPTIONS_DEFINE=	DOCS
 
 .include "${MASTERDIR}/Makefile"

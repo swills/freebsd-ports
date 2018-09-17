@@ -1,8 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/graphics/libosmesa/Makefile 476319 2018-08-03 19:24:44Z zeising $
+# $FreeBSD: head/graphics/libosmesa/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	libosmesa
 PORTVERSION=	${MESAVERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 COMMENT=	Off-Screen Mesa implementation of the OpenGL API

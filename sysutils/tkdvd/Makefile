@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/sysutils/tkdvd/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/tkdvd/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	tkdvd
 PORTVERSION=	4.0.9
@@ -28,7 +28,7 @@ DESKTOP_ENTRIES="TkDVD" \
 		"AudioVideo;DiscBurning;" \
 		true
 
-.include <bsd.port.options.mk>
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|tclsh|${TCLSH}|' ${WRKSRC}/install.tcl \

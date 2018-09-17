@@ -1,9 +1,9 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/x11-toolkits/qt4-gui/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-toolkits/qt4-gui/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	gui
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt4-
 

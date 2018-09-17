@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/graphics/pixie/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/pixie/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	pixie
 PORTVERSION=	2.2.6
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Pixie%20${PORTVERSION}
 DISTNAME=	Pixie-src-${PORTVERSION}

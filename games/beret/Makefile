@@ -1,5 +1,5 @@
 # Created by: Alfonso S. Siciliano <alfix86@gmail.com>
-# $FreeBSD: head/games/beret/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/games/beret/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	beret
 PORTVERSION=	1.2.1
@@ -30,6 +30,8 @@ PORTDOCS=	README.txt
 
 FONT_DEP=	AveriaSansGWF-Regular.ttf
 FONTDIR_DEP=	${LOCALBASE}/share/fonts/averiagwf
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/game.c

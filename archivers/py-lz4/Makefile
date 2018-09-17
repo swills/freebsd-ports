@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/py-lz4/Makefile 477915 2018-08-23 17:59:01Z sunpoet $
+# $FreeBSD: head/archivers/py-lz4/Makefile 479250 2018-09-08 12:33:45Z wen $
 
 PORTNAME=	lz4
 PORTVERSION=	2.1.0
@@ -27,6 +27,9 @@ post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/${PORTNAME}/_version.so \
 		${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/${PORTNAME}/block/_block.so \
 		${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/${PORTNAME}/frame/_frame.so
+
+do-test:
+	cd ${WRKSRC} && ${PYTHON_CMD} -m pytest
 
 .include <bsd.port.pre.mk>
 

@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/dbh/Makefile 452521 2017-10-20 13:59:47Z culot $
+# $FreeBSD: head/databases/dbh/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	dbh
 PORTVERSION=	5.0.22
@@ -28,10 +28,10 @@ GTKDOC_DESC=	Enable GTK html documentation
 
 .if ${PORT_OPTIONS:MGTKDOC}
 CONFIGURE_ARGS+=	--enable-gtk-doc-html
-PLIST_SUB=	GTKDOC=""
+PLIST_SUB+=	GTKDOC=""
 .else
 CONFIGURE_ARGS+=	--disable-gtk-doc-html
-PLIST_SUB=	GTKDOC="@comment "
+PLIST_SUB+=	GTKDOC="@comment "
 .endif
 
 post-patch:

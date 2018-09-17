@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/sdump/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/graphics/sdump/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sdump
 PORTVERSION=	2015.01.16
@@ -28,6 +28,8 @@ CFLAGS	+=	-I${LOCALBASE}/include -std=c99
 LDFLAGS	+=	-L${LOCALBASE}/lib -ljpeg -lpng -lsixel
 
 PORTDOCS=	README.markdown
+
+OPTIONS_DEFINE=	DOCS
 
 post-build:
 	@cd ${WRKSRC}/yaimg-sixel && ${SETENV} ${MAKE_ENV} ${MAKE_CMD}

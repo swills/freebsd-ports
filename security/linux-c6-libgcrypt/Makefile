@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/security/linux-c6-libgcrypt/Makefile 445233 2017-07-07 10:06:25Z tijl $
+# $FreeBSD: head/security/linux-c6-libgcrypt/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libgcrypt
 PORTVERSION=	1.4.5
@@ -15,5 +15,7 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	libgpg-error
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

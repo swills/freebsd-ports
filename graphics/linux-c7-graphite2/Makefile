@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-graphite2/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/graphics/linux-c7-graphite2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	graphite2
 PORTVERSION=	1.3.10
@@ -13,5 +13,7 @@ RPMVERSION=	1.el7_3
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

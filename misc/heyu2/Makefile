@@ -1,5 +1,5 @@
 # Created by: mstowe@chicago.us.mensa.org
-# $FreeBSD: head/misc/heyu2/Makefile 356524 2014-06-04 17:16:37Z feld $
+# $FreeBSD: head/misc/heyu2/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	heyu2
 PORTVERSION=	2.10
@@ -19,7 +19,7 @@ HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	Configure
 CONFIGURE_ARGS=	freebsd
 
-OPTIONS_DEFINE=	CM17A EXTENDED RFXSENS RFXMETER DMX OREGON
+OPTIONS_DEFINE=	CM17A EXTENDED RFXSENS RFXMETER DMX OREGON EXAMPLES
 CM17A_DESC=	X10 CM17A "Firecracker" Support
 EXTENDED_DESC=	Extended Type 0 (Shutter/Shade) Support
 RFXSENS_DESC=	RFXSensors (RF) Support

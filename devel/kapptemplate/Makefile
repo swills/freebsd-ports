@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kapptemplate/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/devel/kapptemplate/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kapptemplate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,5 +15,7 @@ USE_KDE=	auth archive codecs completion config configwidgets coreaddons \
 		doctools ecm i18n jobwidgets kio newstuff service widgetsaddons
 USE_QT=		core dbus gui network testlib widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

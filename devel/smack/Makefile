@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/smack/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/smack/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	smack
 PORTVERSION=	0.5.0
@@ -28,11 +28,11 @@ OPTIONS_DEFINE=	EXAMPLES
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MEXAMPLES}
-PLIST_SUB=	EXAMPLES=""
+PLIST_SUB+=	EXAMPLES=""
 CMAKE_ARGS=	-DENABLE_EXAMPLES=ON
 .else
 CMAKE_ARGS=	-DENABLE_EXAMPLES=OFF
-PLIST_SUB=	EXAMPLES="@comment "
+PLIST_SUB+=	EXAMPLES="@comment "
 .endif
 
 .include <bsd.port.mk>

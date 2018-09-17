@@ -1,5 +1,5 @@
 # Created by: Espen Skoglund <esk@ira.uka.de>
-# $FreeBSD: head/multimedia/xmms/Makefile 447461 2017-08-06 12:51:50Z tobik $
+# $FreeBSD: head/multimedia/xmms/Makefile 479840 2018-09-15 17:22:04Z emaste $
 
 PORTNAME=	xmms
 PORTVERSION=	1.2.11
@@ -22,6 +22,9 @@ USES=		desktop-file-utils gmake iconv libtool localbase pathfix tar:bzip2
 USE_GNOME=	gtk12
 USE_LDCONFIG=	yes
 USE_XORG=	sm x11 xxf86vm
+
+LDFLAGS+=	${LDFLAGS_${ARCH}}
+LDFLAGS_i386=	-Wl,-znotext
 
 CONFIGURE_ARGS=	xmms_cv_newpcm_driver=yes --disable-static
 CONFIGURE_ENV=	INPUT_PLUGINS="${INPUT_PLUGINS}" \

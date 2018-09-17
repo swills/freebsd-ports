@@ -1,5 +1,5 @@
 # Created by: Xavier Beaudouin <kiwi@oav.net>
-# $FreeBSD: head/www/mod_evasive/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_evasive/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_evasive
 PORTVERSION=	1.10.1
@@ -23,6 +23,8 @@ AP_GENPLIST=	yes
 MODULENAME=	${PORTNAME}20
 
 PORTDOCS=	README test.pl
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

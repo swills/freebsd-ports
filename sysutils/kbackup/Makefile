@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kbackup/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/kbackup/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kbackup
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,5 +13,7 @@ USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		notifications service solid widgetsaddons xmlgui
 USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

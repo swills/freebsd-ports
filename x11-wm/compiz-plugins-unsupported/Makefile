@@ -1,9 +1,9 @@
 # Created by: Robert Noland <rnoland@FreeBSD.org>
-# $FreeBSD: head/x11-wm/compiz-plugins-unsupported/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-wm/compiz-plugins-unsupported/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	compiz-plugins-unsupported
 PORTVERSION=	0.8.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://releases.compiz.org/${PORTVERSION}/
 

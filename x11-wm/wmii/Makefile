@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11-wm/wmii/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-wm/wmii/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	wmii
 DISTVERSION=	3.6	# this is stable version; for 3.9.x, use -devel port
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://dl.suckless.org/wmii/
 

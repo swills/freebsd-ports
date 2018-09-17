@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kdiamond/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/kdiamond/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kdiamond
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,6 +13,8 @@ USE_KDE=	auth codecs config configwidgets coreaddons crash dbusaddons \
 		notifications notifyconfig widgetsaddons xmlgui
 USE_QT=		core dbus gui network qml quick widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <${.CURDIR}/../kdegames/Makefile.common>
 .include <bsd.port.mk>

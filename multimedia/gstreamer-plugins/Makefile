@@ -1,12 +1,12 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-plugins/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/multimedia/gstreamer-plugins/Makefile 479538 2018-09-11 18:34:27Z zeising $
 #   $MCom: ports/multimedia/gstreamer-plugins/Makefile,v 1.125 2010/03/16 19:33:10 mezz Exp $
 
 PORTNAME=	gstreamer
 PORTVERSION?=	${BASE_PORTVERSION}
 # When chasing a shared library for a plug-in bump the PORTREVISION in the
 # plug-in port instead, like ${category}/gstreamer-plugin-${PLUGIN}.
-PORTREVISION?=	9
+PORTREVISION?=	10
 PORTEPOCH=	3
 CATEGORIES?=	multimedia audio
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gst-plugins-base/:base \

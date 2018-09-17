@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/deskutils/launchy/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/deskutils/launchy/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	launchy
 PORTVERSION=	2.5
@@ -23,6 +23,8 @@ LDFLAGS+=	-lX11
 PORTDOCS=	*
 
 MAKE_JOBS_UNSAFE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's,/usr,${PREFIX},' \

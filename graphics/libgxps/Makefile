@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/graphics/libgxps/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/graphics/libgxps/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libgxps
 PORTVERSION=	0.2.5
@@ -20,5 +20,7 @@ USE_LDCONFIG=	yes
 USE_GNOME=	cairo glib20 gnomeprefix introspection:build
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

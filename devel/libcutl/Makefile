@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libcutl/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/libcutl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libcutl
 PORTVERSION=	1.10.0
@@ -32,5 +32,7 @@ CONFIGURE_ARGS=	--disable-static \
 		--with-external-boost \
 		--with-external-expat \
 		--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

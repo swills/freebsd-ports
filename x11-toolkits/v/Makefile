@@ -1,9 +1,9 @@
 # Created by: Donald Burr <dburr@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/v/Makefile 478040 2018-08-25 13:54:30Z tobik $
+# $FreeBSD: head/x11-toolkits/v/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	v
 PORTVERSION=	1.90
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11-toolkits devel graphics
 MASTER_SITES=	SF/${PORTNAME}gui/V%20GUI/${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

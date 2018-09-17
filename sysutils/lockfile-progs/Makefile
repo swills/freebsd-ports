@@ -1,8 +1,8 @@
 # Created by: Yasuhiro KIMURA <yasu@utahime.org>
-# $FreeBSD: head/sysutils/lockfile-progs/Makefile 461821 2018-02-14 17:10:36Z pi $
+# $FreeBSD: head/sysutils/lockfile-progs/Makefile 479177 2018-09-07 03:25:50Z swills $
 
 PORTNAME=	lockfile-progs
-PORTVERSION=	0.1.17
+PORTVERSION=	0.1.18
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Frank Fenor <frank@fenor.de>
-# $FreeBSD: head/net/tcludp/Makefile 413747 2016-04-21 16:48:50Z gahr $
+# $FreeBSD: head/net/tcludp/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	tcludp
 PORTVERSION=	1.0.11
@@ -22,6 +22,6 @@ TEST_TARGET=	test
 
 PLIST_FILES=	lib/${TCL_PKG}/lib${TCL_PKG}.so \
 		lib/${TCL_PKG}/pkgIndex.tcl \
-		%%PORTDOCS%%man/mann/udp.n.gz
+		man/mann/udp.n.gz
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Patrick Li <pat@FreeBSD.org>
-# $FreeBSD: head/astro/wmsolar/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/astro/wmsolar/Makefile 479272 2018-09-09 07:04:54Z tobik $
 
 PORTNAME=	wmsolar
 PORTVERSION=	1.1
@@ -16,6 +16,7 @@ GH_ACCOUNT=	engerim42
 PLIST_FILES=	bin/wmSolar
 USE_XORG=	x11 xext xpm
 USES=		dos2unix gmake
+USE_CXXSTD=	gnu++98
 
 pre-patch:
 	@${REINPLACE_CMD} -e 's|values.h|float.h|; s|MAXDOUBLE|DBL_MAX|g' \

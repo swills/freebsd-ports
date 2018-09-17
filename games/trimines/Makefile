@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/trimines/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/games/trimines/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	trimines
 PORTVERSION=	1.3.0
@@ -23,6 +23,8 @@ DESKTOP_ENTRIES="Trimines" \
 		"trimines" \
 		"Game;LogicGame;" \
 		""
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|data/|${DATADIR}/|' ${WRKSRC}/src/gfx.c

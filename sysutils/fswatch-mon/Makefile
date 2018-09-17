@@ -1,5 +1,5 @@
 # Created by: Enrico M. Crisostomo <enrico.m.crisostomo@gmail.com>
-# $FreeBSD: head/sysutils/fswatch-mon/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/fswatch-mon/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fswatch
 PORTVERSION=	1.11.2
@@ -21,7 +21,7 @@ INFO=	fswatch
 
 CONFLICTS_INSTALL=	fswatch-[0-9]*
 
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes
 
 NLS_USES=	gettext

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 474468 2018-07-11 16:44:34Z novel $
+# $FreeBSD: head/x11-toolkits/Makefile 479774 2018-09-14 15:32:20Z mr $
 #
 
     COMMENT = X11 toolkits
@@ -188,6 +188,7 @@
     SUBDIR += p5-Tk-ToolBar
     SUBDIR += p5-Tk-WaitBox
     SUBDIR += p5-Wx
+    SUBDIR += p5-Wx-GLCanvas
     SUBDIR += p5-Wx-Perl-ProcessStream
     SUBDIR += pango
     SUBDIR += pango-reference

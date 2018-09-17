@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/apache24/Makefile.options 465461 2018-03-24 18:26:34Z joneum $
+# $FreeBSD: head/www/apache24/Makefile.options 479406 2018-09-10 13:14:50Z mat $
 
 # ===========================================================
 # Only the most important modules are enabled per default in 
@@ -85,6 +85,7 @@ ALL_MODULES=	${MOST_ENABLED_MODULES} ${MOST_DISABLED_MODULES} \
 	${EXAMPLE_MODULES} ${META_MODULES}
 
 OPTIONS_DEFINE=		\
+	DOCS \
 	${MOST_ENABLED_MODULES}	\
 	${MOST_DISABLED_MODULES}\
 	${ADDITIONAL_OPT}	\

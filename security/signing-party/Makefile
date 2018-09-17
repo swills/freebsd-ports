@@ -1,5 +1,5 @@
 # Created by: johans
-# $FreeBSD: head/security/signing-party/Makefile 461220 2018-02-08 12:48:08Z johans $
+# $FreeBSD: head/security/signing-party/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	signing-party
 PORTVERSION=	2.7
@@ -43,6 +43,8 @@ EXAMPLES=	caff/caffrc.sample gpg-mailkeys/example.gpg-mailkeysrc
 PORTEXAMPLES=	${EXAMPLES:T}
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/share/doc/signing-party/caff/caffrc\.sample|${EXAMPLESDIR}/caffrc.sample|' \

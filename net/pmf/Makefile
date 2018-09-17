@@ -1,5 +1,5 @@
 # Created by: adam
-# $FreeBSD: head/net/pmf/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/net/pmf/Makefile 479890 2018-09-16 11:44:37Z antoine $
 
 PORTNAME=	pmf
 PORTVERSION=	1.13.1
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Padrone's Mud Frontend
 
 BROKEN_powerpc64=	fails to link: ld: cannot find -lreadline
+DEPRECATED=	Does not build on FreeBSD 11+
+EXPIRATION_DATE=	2018-10-31
 
 WRKSRC=		${WRKDIR}/pmfdir
 BUILD_WRKSRC=	${WRKDIR}/pmfdir/src

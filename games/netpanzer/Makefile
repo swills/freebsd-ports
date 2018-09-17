@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/netpanzer/Makefile 459405 2018-01-19 12:25:34Z madpilot $
+# $FreeBSD: head/games/netpanzer/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	netpanzer
 PORTVERSION=	0.8.7
@@ -27,6 +27,8 @@ PLIST_FILES=	bin/netpanzer \
 
 PORTDOCS=	*
 PORTDATA=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-configure:
 	${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/SConstruct

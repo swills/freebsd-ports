@@ -1,6 +1,6 @@
-# $FreeBSD: head/devel/gwenhywfar-qt5/Makefile 424900 2016-10-29 11:38:35Z jhale $
+# $FreeBSD: head/devel/gwenhywfar-qt5/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-${SLAVEPORT}
 
 MAINTAINER=	jhale@FreeBSD.org

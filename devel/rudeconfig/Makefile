@@ -1,16 +1,17 @@
 # Created by: Hardy Schumacher <lowmaster@web.de>
-# $FreeBSD: head/devel/rudeconfig/Makefile 362731 2014-07-23 21:52:19Z amdmi3 $
+# $FreeBSD: head/devel/rudeconfig/Makefile 479277 2018-09-09 07:24:48Z tobik $
 
 PORTNAME=	rudeconfig
 PORTVERSION=	5.0.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.rudeserver.com/config/download/
 
 MAINTAINER=	lowmaster@web.de
 COMMENT=	Library for handling configuration files, written in C++
 
-USES=		libtool
+USES=		dos2unix libtool
+DOS2UNIX_GLOB=	*
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

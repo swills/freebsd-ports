@@ -1,8 +1,8 @@
 # Created by: sten@blinkenlights.nl
-# $FreeBSD: head/net/ladvd/Makefile 444207 2017-06-24 02:09:29Z woodsb02 $
+# $FreeBSD: head/net/ladvd/Makefile 479403 2018-09-10 12:55:59Z woodsb02 $
 
 PORTNAME=	ladvd
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	net
 

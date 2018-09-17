@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/audio/linux-c6-alsa-lib/Makefile 432996 2017-02-01 09:55:43Z tijl $
+# $FreeBSD: head/audio/linux-c6-alsa-lib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	alsa-lib
 PORTVERSION=	1.1.0
@@ -18,6 +18,8 @@ RPMVERSION=	4.el6
 USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${RM} -r ${WRKSRC}/etc/* ${WRKSRC}/usr/lib/alsa-lib/smixer/*.la \

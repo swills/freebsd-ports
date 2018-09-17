@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-signet/Makefile 478574 2018-08-31 14:42:28Z sunpoet $
+# $FreeBSD: head/security/rubygem-signet/Makefile 479785 2018-09-14 20:36:29Z sunpoet $
 
 PORTNAME=	signet
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -17,8 +17,9 @@ RUN_DEPENDS=	rubygem-addressable>=2.3:www/rubygem-addressable \
 		rubygem-jwt>=1.5:www/rubygem-jwt \
 		rubygem-multi_json>=1.10:devel/rubygem-multi_json
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

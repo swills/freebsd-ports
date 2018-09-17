@@ -1,5 +1,5 @@
 # Created by: Brian Somers <brian@FreeBSD.org>
-# $FreeBSD: head/news/leafnode/Makefile 466037 2018-03-31 10:08:17Z mandree $
+# $FreeBSD: head/news/leafnode/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	leafnode
 DISTVERSION=	1.11.11
@@ -31,7 +31,7 @@ LEAFNODE_SPOOLDIR?=/var/spool/news
 LEAFNODE_SPOOLDIR?=${LOCALBASE}/var/spool/leafnode
 .endif
 LEAFNODE_SPOOLDIR?=/var/spool/leafnode
-PLIST_SUB=	SPOOLDIR=${LEAFNODE_SPOOLDIR} REALPREFIX=${PREFIX}
+PLIST_SUB+=	SPOOLDIR=${LEAFNODE_SPOOLDIR} REALPREFIX=${PREFIX}
 
 CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc/leafnode \
 		--with-spooldir=${LEAFNODE_SPOOLDIR} --with-ipv6 \

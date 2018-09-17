@@ -1,5 +1,5 @@
 # Created by: Ruben <chromium@hybridsource.org>
-# $FreeBSD: head/lang/dmd2/Makefile.bootstrap 434066 2017-02-14 06:27:28Z cy $
+# $FreeBSD: head/lang/dmd2/Makefile.bootstrap 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dmd
 PORTVERSION=	2.067.1
@@ -22,6 +22,8 @@ DOCSDIR=	${PREFIX}/share/doc/dmd2
 PORTDOCS=	*.txt html/
 WRKSRC=		${WRKDIR}/dmd2/src/${PORTNAME}
 .undef		DEVELOPER
+
+OPTIONS_DEFINE=	DOCS
 
 BROKEN_sparc64=		Does not install: divide-by-zero error
 

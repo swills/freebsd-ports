@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/battletanks/Makefile 459537 2018-01-20 17:46:54Z jbeich $
+# $FreeBSD: head/games/battletanks/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	btanks
 PORTVERSION=	0.9.8083
@@ -31,6 +31,8 @@ PORTDOCS=	LICENSE LICENSE.EXCEPTION README-en.txt README-linux.txt \
 		donate.url homepage.url project_page.url video.txt
 
 DESKTOP_ENTRIES="Battle Tanks" "" "" "${PORTNAME}" "Game;ArcadeGame;" ""
+
+OPTIONS_DEFINE=	DOCS
 
 pre-build:
 # Regenerate `sl08.h' after we patch `sl08.py' (as patching the header itself

@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/husky-htick/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/husky-htick/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	husky-htick
 
@@ -22,6 +22,8 @@ INSTALL_TARGET+=	install-doc
 PORTDOCS=		htick.html
 DOCSDIR=		${PREFIX}/share/doc/husky
 INFO=			htick
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e 's^/fido/etc/config^${PREFIX}/etc/fido/config^' \

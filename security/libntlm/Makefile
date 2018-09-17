@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/security/libntlm/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/security/libntlm/Makefile 479511 2018-09-11 08:34:16Z joneum $
 
 PORTNAME=	libntlm
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	security
 MASTER_SITES=	http://www.nongnu.org/libntlm/releases/
 
@@ -18,7 +18,9 @@ USE_LDCONFIG=	yes
 
 PORTDOCS=	AUTHORS ChangeLog NEWS README THANKS
 
-post-install:
+OPTIONS_DEFINE=	DOCS
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

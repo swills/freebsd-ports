@@ -1,10 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-devel/Makefile 477727 2018-08-21 18:03:43Z mr $
+# $FreeBSD: head/cad/kicad-devel/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_SRC_DATE}
-PORTREVISION=	3
-#PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-devel
 DIST_SUBDIR=		${PORTNAME}
@@ -36,7 +35,7 @@ USE_XORG+=	ice pixman x11 xext
 
 BROKEN_aarch64=		Fails to compile: use of undeclared identifier builtin_ia32_emms
 
-#OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS
 
 PLIST_SUB=	OPSYS=${OPSYS}	\
 		DESKTOPDIR=${DESKTOPDIR:S|^${PREFIX}/||}

@@ -1,9 +1,9 @@
 # Created by: Thomas E. Zander with help from Vladimir Kushnir
-# $FreeBSD: head/multimedia/mplayer/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/multimedia/mplayer/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	mplayer
 PORTVERSION=	${MPLAYER_PORT_VERSION}.${MPLAYER_SNAPSHOT_DATE:S/-//g}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	riggs@FreeBSD.org

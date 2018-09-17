@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/editline/Makefile 449416 2017-09-07 20:12:26Z sunpoet $
+# $FreeBSD: head/devel/editline/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	editline
 PORTVERSION=	1.15.3
@@ -19,6 +19,8 @@ PORTDOCS=	*
 
 GH_ACCOUNT=	troglobit
 USE_GITHUB=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 # Rename to libeditline.3 to avoid conflict with libedit
 post-patch:

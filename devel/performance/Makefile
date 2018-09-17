@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/performance/Makefile 464862 2018-03-18 03:18:19Z linimon $
+# $FreeBSD: head/devel/performance/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	performance
 PORTVERSION=	0.5.0
@@ -13,6 +13,7 @@ COMMENT=	Help improve the performance of GNUstep applications
 LICENSE=	LGPL3
 
 BROKEN_armv7=		fails to build: gmake[2]: *** No rule to make target 'Performance/dependencies', needed by 'internal-doc-all_'.  Stop.
+BROKEN_powerpc64=	fails to build: gmake[2]: *** No rule to make target 'Performance/dependencies', needed by 'internal-doc-all_'.  Stop.
 
 USES=		gnustep
 USE_GNUSTEP=	base build

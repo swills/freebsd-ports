@@ -1,5 +1,5 @@
 # Created by: ubique
-# $FreeBSD: head/www/mod_tsa/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_tsa/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	mod_tsa
 PORTVERSION=	1.0
@@ -11,7 +11,7 @@ MASTER_SITES=	http://am.nesiac.org/static/ \
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Time stamping authority (RFC 3161) module for apache
 
-OPTIONS_DEFINE=	MYSQL PGSQL FIREBIRD DEBUG DEBUG_MEMORY
+OPTIONS_DEFINE=	MYSQL PGSQL FIREBIRD DEBUG DEBUG_MEMORY EXAMPLES
 DEBUG_MEMORY_DESC=	Memory debug
 
 GNU_CONFIGURE=	yes

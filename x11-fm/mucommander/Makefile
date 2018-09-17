@@ -1,5 +1,5 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/x11-fm/mucommander/Makefile 386097 2015-05-11 18:34:57Z mat $
+# $FreeBSD: head/x11-fm/mucommander/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mucommander
 DISTVERSION=	0_9_0
@@ -21,6 +21,8 @@ SUB_FILES=	mucommander
 PORTDOCS=	readme.txt
 
 WRKSRC=		${WRKDIR}/muCommander-${PORTVERSION:S/./_/g}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

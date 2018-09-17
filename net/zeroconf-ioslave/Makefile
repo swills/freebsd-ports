@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/zeroconf-ioslave/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/zeroconf-ioslave/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	zeroconf-ioslave
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,5 +11,7 @@ USES=		cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons dbusaddons dnssd i18n kio service
 USE_QT=		core dbus network \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/smlnj/Makefile 475003 2018-07-20 11:02:47Z tobik $
+# $FreeBSD: head/lang/smlnj/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	smlnj
 PORTVERSION=	110.77
@@ -57,7 +57,7 @@ DISTFILES+=	MLRISC.tgz ckit.tgz cml.tgz doc.tgz heap2asm.tgz \
 		ml-burg.tgz ml-lpt.tgz ml-lex.tgz ml-yacc.tgz nlffi.tgz \
 		smlnj-lib.tgz trace-debug-profile.tgz
 
-PLIST_SUB=	MLARCH=${MLARCH}
+PLIST_SUB+=	MLARCH=${MLARCH}
 
 .if ${PORT_OPTIONS:MPOSITION64} || defined(ML_POSITION64)
 ML_POSITION64?=	${PORT_OPTIONS:MPOSITION64}

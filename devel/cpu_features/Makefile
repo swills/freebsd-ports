@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cpu_features/Makefile 469029 2018-05-04 13:34:33Z skreuzer $
+# $FreeBSD: head/devel/cpu_features/Makefile 479496 2018-09-11 01:41:26Z skreuzer $
 
 PORTNAME=	cpu_features
-PORTVERSION=	0.1.0
+PORTVERSION=	0.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

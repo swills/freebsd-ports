@@ -1,5 +1,5 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/sysutils/py-bcfg2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/py-bcfg2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bcfg2
 PORTVERSION=	1.3.6
@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}daemon>=0:devel/py-daemon@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lockfile>=0:devel/py-lockfile@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR}
 
-OPTIONS_DEFINE=	CHEETAH GENSHI
+OPTIONS_DEFINE=	CHEETAH GENSHI DOCS
 CHEETAH_DESC=	Support Cheetah Templates
 GENSHI_DESC=	Support Genshi Templates
 

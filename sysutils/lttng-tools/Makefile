@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/sysutils/lttng-tools/Makefile 446075 2017-07-17 14:44:39Z mmokhi $
+# $FreeBSD: head/sysutils/lttng-tools/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lttng-tools
 PORTVERSION=	2.9.3
@@ -30,6 +30,8 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=	--with-lttng-ust-prefix=${LOCALBASE} \
 	    --disable-maintainer-mode
 INSTALL_TARGET=		install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/man/*.1 ${STAGEDIR}${MANPREFIX}/man/man1/

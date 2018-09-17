@@ -1,9 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11/xwinwrap/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/xwinwrap/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xwinwrap
 PORTVERSION=	0.3
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	x11
 MASTER_SITES=	LOCAL/vg
 

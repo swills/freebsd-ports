@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/erlang-mochiweb-basho/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/erlang-mochiweb-basho/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	mochiweb
 PORTVERSION=	2.9.0p2
@@ -18,7 +18,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	basho
 GH_TAGNAME=	4d38821	# required
 
-post-install:
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}
 

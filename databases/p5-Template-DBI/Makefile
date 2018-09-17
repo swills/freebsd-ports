@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Template-DBI/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Template-DBI/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Template-DBI
 PORTVERSION=	2.65
@@ -8,7 +8,7 @@ CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Template::Plugin::DBI - Template interface to the DBI module
 
 BUILD_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-neotoma/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-neotoma/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	neotoma
 PORTVERSION=	1.7.4
@@ -19,6 +19,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	seancribbs
 
 REBAR_TARGETS=	compile escriptize
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${ERL_APP_ROOT}

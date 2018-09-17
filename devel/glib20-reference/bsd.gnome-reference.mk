@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/glib20-reference/bsd.gnome-reference.mk 394508 2015-08-17 14:20:40Z mat $
+# $FreeBSD: head/devel/glib20-reference/bsd.gnome-reference.mk 479406 2018-09-10 13:14:50Z mat $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
@@ -31,6 +31,8 @@ REFERENCE_SRC?=	${WRKSRC}/docs/reference
 BOOKS?=		.
 
 PORTDOCS?=	*
+
+OPTIONS_DEFINE+=	DOCS
 
 .if !target(do-build)
 do-build:

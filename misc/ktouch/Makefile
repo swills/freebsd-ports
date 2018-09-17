@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/ktouch/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/ktouch/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ktouch
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,5 +16,7 @@ USE_QT=		core dbus gui network qml quick script sql testlib widgets \
 		x11extras xml xmlpatterns \
 		buildtools_build qmake_build
 USE_XORG=	ice sm x11 xcb xext xkbfile
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/xcm/Makefile 447181 2017-08-02 22:31:11Z bsam $
+# $FreeBSD: head/x11/xcm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xcm
 PORTVERSION=	0.5.4
@@ -29,5 +29,7 @@ PLIST_FILES=	bin/xcm bin/xcmedid bin/xcmevents bin/xcmhextobin \
 		man/man1/xcmddc.1.gz man/man1/xcmedid.1.gz \
 		man/man1/xcmevents.1.gz man/man1/xcmhextobin.1.gz
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

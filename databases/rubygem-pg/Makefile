@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/rubygem-pg/Makefile 478580 2018-08-31 14:42:58Z sunpoet $
+# $FreeBSD: head/databases/rubygem-pg/Makefile 479219 2018-09-08 00:14:57Z sunpoet $
 
 PORTNAME=	pg
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
@@ -14,10 +14,11 @@ LICENSE_COMB=	dual
 LICENSE_FILE_BSD2CLAUSE	=${WRKSRC}/BSDL
 LICENSE_FILE_RUBY	=${WRKSRC}/LICENSE
 
+USES=		gem pgsql
+USE_RUBY=	yes
+
 CONFIGURE_ARGS=	--with-pgsql-include-dir=`${PG_CONFIG} --includedir` \
 		--with-pgsql-lib-dir=`${PG_CONFIG} --libdir`
 PG_CONFIG=	${LOCALBASE}/bin/pg_config
-USE_RUBY=	yes
-USES=		gem pgsql
 
 .include <bsd.port.mk>

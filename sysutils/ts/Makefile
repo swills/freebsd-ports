@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/ts/Makefile 424516 2016-10-23 11:56:46Z olgeni $
+# $FreeBSD: head/sysutils/ts/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ts
 PORTVERSION=	1.0
@@ -15,6 +15,8 @@ USES=		gmake
 PLIST_FILES=	bin/ts \
 		man/man8/ts.8.gz
 PORTDOCS=	OBJECTIVES PROTOCOL README TRICKS
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e '/^GLIBCFLAGS/d;/^CFLAGS/d'\

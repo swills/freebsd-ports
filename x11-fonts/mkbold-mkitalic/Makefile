@@ -1,5 +1,5 @@
 # Created by: KOMATSU Shinichiro
-# $FreeBSD: head/x11-fonts/mkbold-mkitalic/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/x11-fonts/mkbold-mkitalic/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mkbold-mkitalic
 PORTVERSION=	0.11
@@ -15,6 +15,8 @@ CONFLICTS=	mkbold-[0-9]* mkitalic-[0-9]*
 PLIST_FILES=	bin/mkbold bin/mkitalic bin/mkbolditalic
 PORTDOCS=	ALGORITHM ALGORITHM.eucJP LICENSE README README.eucJP
 USES=	tar:bzip2
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

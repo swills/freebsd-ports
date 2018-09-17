@@ -1,5 +1,5 @@
 # Created by: Archie Cobbs
-# $FreeBSD: head/net/mpd5/Makefile 476338 2018-08-04 08:02:40Z eugen $
+# $FreeBSD: head/net/mpd5/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mpd
 DISTVERSION=	5.8
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE
 
 BROKEN_SSL=	openssl-devel
 
-OPTIONS_DEFINE=	NG_IPACCT
+OPTIONS_DEFINE=	DOCS NG_IPACCT
 NG_IPACCT_DESC=	Use ng_ipacct kernel module from port
 
 HAS_CONFIGURE=	YES

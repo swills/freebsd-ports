@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/phrap/Makefile 365765 2014-08-23 18:04:58Z pi $
+# $FreeBSD: head/biology/phrap/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	phrap
 PORTVERSION=	1.090518
@@ -25,6 +25,8 @@ SCRIPTS=	phrapview
 
 PORTDATA=	BLOSUM50 BLOSUM62 PAM250 mat50 mat70 mb_matrix penalty2 vector.seq
 PORTDOCS=	general.doc phrap.doc swat.doc
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/databases/p5-AnyEvent-Redis/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-AnyEvent-Redis/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	AnyEvent-Redis
 PORTVERSION=	0.24
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DGL
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	AnyEvent::Redis - Non-blocking Redis client
 
 BUILD_DEPENDS=	p5-Try-Tiny>=0:lang/p5-Try-Tiny \

@@ -1,15 +1,18 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-B-Hooks-OP-PPAddr/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-B-Hooks-OP-PPAddr/Makefile 479718 2018-09-13 21:54:07Z sunpoet $
 
 PORTNAME=	B-Hooks-OP-PPAddr
-PORTVERSION=	0.03
-PORTREVISION=	2
+PORTVERSION=	0.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Hook into opcode execution
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENCE
 
 BUILD_DEPENDS=	p5-ExtUtils-Depends>=0.302:devel/p5-ExtUtils-Depends
 

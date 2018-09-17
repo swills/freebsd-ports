@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/k3b/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/sysutils/k3b/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	k3b
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -34,7 +34,7 @@ USE_QT=		core dbus gui network webkit widgets xml \
 # The ffmpeg-plugin needs patching
 CMAKE_ARGS=	-DK3B_BUILD_FFMPEG_DECODER_PLUGIN:BOOL=FALSE
 
-OPTIONS_DEFINE=		CDRDAO DVDPLUSRW EMOVIX VCDIMAGER
+OPTIONS_DEFINE=		CDRDAO DVDPLUSRW EMOVIX VCDIMAGER DOCS
 OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
 
 CDRDAO_DESC=		Burning: cdrdao

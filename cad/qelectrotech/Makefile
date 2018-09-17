@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/cad/qelectrotech/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/qelectrotech/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	qelectrotech
 PORTVERSION=	0.5
@@ -19,7 +19,7 @@ USES=		compiler:c++11-lib desktop-file-utils qmake qt:5 shared-mime-info
 USE_QT=		buildtools_build gui network printsupport \
 		sql-sqlite3 svg xml
 
-OPTIONS_DEFINE=       DEBUG
+OPTIONS_DEFINE=       DEBUG DOCS
 
 DEBUG_VARS=           BUILD_TYPE=debug
 DEBUG_VARS_OFF=       BUILD_TYPE=release

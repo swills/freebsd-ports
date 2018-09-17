@@ -1,9 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/x11/metalock/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/metalock/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	metalock
 PORTVERSION=	0.8.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11
 MASTER_SITES=	BERLIOS
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

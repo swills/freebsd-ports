@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/linux-oracle-jdk10/Makefile 472705 2018-06-18 18:00:28Z lev $
+# $FreeBSD: head/java/linux-oracle-jdk10/Makefile 479256 2018-09-08 20:46:20Z glewis $
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}.${JDK_UPDATE_VERSION}.${JDK_PATCH_VERSION}
@@ -26,7 +26,7 @@ USE_LINUX=	xorglibs
 JDK_VENDOR=		oracle
 JDK_VERSION=		10
 JDK_UPDATE_VERSION=	0
-JDK_PATCH_VERSION=	1
+JDK_PATCH_VERSION=	2
 .if ${JDK_PATCH_VERSION} == 0
 .if ${JDK_UPDATE_VERSION} == 0
 DL_JDK_VERSION=		${JDK_VERSION}

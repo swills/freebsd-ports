@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/opencpn/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/astro/opencpn/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	opencpn
 PORTVERSION=	4.4.0
@@ -33,6 +33,8 @@ LDFLAGS+=	-Wl,-E # plugins
 LDFLAGS+=	-Wl,--as-needed # ICE, SM, Xext
 
 BROKEN_aarch64=		Fails to compile: use of undeclared identifier rand
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/usr/local,${PREFIX},' \

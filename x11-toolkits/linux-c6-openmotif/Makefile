@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/x11-toolkits/linux-c6-openmotif/Makefile 441768 2017-05-26 10:26:39Z tijl $
+# $FreeBSD: head/x11-toolkits/linux-c6-openmotif/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openmotif
 PORTVERSION=	2.3.3
@@ -15,6 +15,8 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	xorglibs
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${RM} -r ${WRKSRC}/etc ${WRKSRC}/usr/bin ${WRKSRC}/usr/include \

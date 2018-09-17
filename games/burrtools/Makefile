@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/games/burrtools/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/burrtools/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	burrtools
 PORTVERSION=	0.6.3
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	SF
 

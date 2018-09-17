@@ -1,5 +1,5 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/sysutils/nbosd/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/nbosd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	nbosd
 PORTVERSION=	0.5.0
@@ -14,6 +14,8 @@ LIB_DEPENDS=	libxosd.so:misc/xosd
 
 PLIST_FILES=	bin/nbosd
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nbosd ${STAGEDIR}${PREFIX}/bin

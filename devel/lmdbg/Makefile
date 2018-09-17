@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <to.my.trociny@gmail.com>
-# $FreeBSD: head/devel/lmdbg/Makefile 469616 2018-05-11 08:34:03Z amdmi3 $
+# $FreeBSD: head/devel/lmdbg/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lmdbg
 PORTVERSION=	1.2.1
@@ -27,6 +27,8 @@ MKCMAKE_ENV+=	CPPFLAGS=-I${LOCALBASE}/include
 MKCMAKE_ENV+=	LDFLAGS=-L${LOCALBASE}/lib
 
 INSTALL_TARGET=	install install-doc
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	${SETENV} ${MKCMAKE_ENV} ${MKCMAKE} -C ${WRKSRC}

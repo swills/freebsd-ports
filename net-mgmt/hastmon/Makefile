@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <to.my.trociny@gmail.com>
-# $FreeBSD: head/net-mgmt/hastmon/Makefile 424569 2016-10-24 14:46:59Z trociny $
+# $FreeBSD: head/net-mgmt/hastmon/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hastmon
 PORTVERSION=	0.3.2
@@ -20,6 +20,8 @@ MKCMAKE?=	${LOCALBASE}/bin/mkcmake
 INSTALL_TARGET=	installdirs install
 
 PORTDOCS=	ChangeLog COPYRIGHT README
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} \

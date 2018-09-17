@@ -1,5 +1,5 @@
 # Created by: David O'Brien (obrien@cs.ucdavis.edu)
-# $FreeBSD: head/japanese/plan/Makefile 354162 2014-05-15 17:50:28Z pawel $
+# $FreeBSD: head/japanese/plan/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	plan
 PORTVERSION=	1.9
@@ -16,6 +16,8 @@ PLIST=	${WRKDIR}/PLIST
 EXTRA_PATCHES=	${.CURDIR}/files/patch-*
 
 PORTDOCS=	plan_calEUC.ps
+
+OPTIONS_DEFINE=	DOCS
 
 post-build:
 	${CAT} ${MASTERDIR}/pkg-plist >> ${WRKDIR}/PLIST

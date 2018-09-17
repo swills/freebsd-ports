@@ -1,5 +1,5 @@
 # Created by: Kelly Yancey <kbyanc@FreeBSD.org>
-# $FreeBSD: head/mail/panda-cclient/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/panda-cclient/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	cclient
 PORTVERSION=	20130621
@@ -57,7 +57,7 @@ SHLIBBASE=	c-client4
 SHLIBMAJ=	10
 SHLIBNAME=	lib${SHLIBBASE}.so.${SHLIBMAJ}
 MAKE_ENV+=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
-PLIST_SUB=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
+PLIST_SUB+=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
 
 pre-configure:
 .for file in Makefile src/osdep/unix/Makefile src/osdep/unix/Makefile.gss

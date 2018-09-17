@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/sysutils/lava/Makefile 435629 2017-03-07 18:16:17Z pi $
+# $FreeBSD: head/sysutils/lava/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lava
 PORTVERSION=	1.0.1
@@ -22,6 +22,8 @@ NO_ARCH=	yes
 
 PLIST_FILES=	bin/${PORTNAME}.sh
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

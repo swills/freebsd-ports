@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/dhcpd-pools/Makefile 470538 2018-05-21 12:56:30Z zi $
+# $FreeBSD: head/net/dhcpd-pools/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dhcpd-pools
 PORTVERSION=	3.0
@@ -24,6 +24,8 @@ CONFIGURE_ARGS=	--with-dhcpd-conf=${LOCALBASE}/etc/dhcpd.conf \
 MAKE_JOBS_UNSAFE=	yes
 
 PORTDATA=	snmptest.pl
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '/features.h/d' ${WRKSRC}/src/getdata.c

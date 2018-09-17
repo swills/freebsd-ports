@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/devel/p5-Data-Compare/Makefile 465872 2018-03-29 09:03:25Z amdmi3 $
+# $FreeBSD: head/devel/p5-Data-Compare/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Data-Compare
 PORTVERSION=	1.2200
@@ -10,7 +10,7 @@ MASTER_SITE_SUBDIR=	CPAN:DCANTRELL
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-${PORTVERSION:C/0*$//}
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Data::Compare - compare perl data structures
 
 LICENSE=	ART10 GPLv1+

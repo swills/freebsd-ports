@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adam@vectors.cx>
-# $FreeBSD: head/misc/wmtunlo/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/misc/wmtunlo/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	wmtunlo
 PORTVERSION=	0.1.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	misc windowmaker
 MASTER_SITES=	http://www.gnu-darwin.org/distfiles/ \
 		http://cvsup.theplanet.com/distfiles/

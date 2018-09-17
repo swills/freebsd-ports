@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/net/netsed/Makefile 343291 2014-02-07 19:58:27Z pawel $
+# $FreeBSD: head/net/netsed/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	netsed
 PORTVERSION=	1.2
@@ -14,6 +14,8 @@ MAKE_ARGS=	CFLAGS="${CFLAGS}"
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

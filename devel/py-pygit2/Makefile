@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-pygit2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pygit2/Makefile 479927 2018-09-17 11:47:10Z mfechner $
 
 # Also update devel/libgit2, devel/libgit2-glib, devel/rubygem-rugged
 

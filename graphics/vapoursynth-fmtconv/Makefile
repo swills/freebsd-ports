@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/vapoursynth-fmtconv/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/vapoursynth-fmtconv/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fmtconv
 PORTVERSION=	r20
@@ -32,6 +32,8 @@ DATADIR=	${PREFIX}/lib/vapoursynth
 DOCSDIR=	${PREFIX}/share/doc/${PKGBASE}
 PLIST_FILES=	%%DATADIR%%/libfmtconv.so
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/x86_64/&|amd64/' \

@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/textproc/py-xlwriter/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-xlwriter/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	xlwriter
 PORTVERSION=	0.4a3
@@ -15,6 +15,8 @@ USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 PORTEXAMPLES=	*
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

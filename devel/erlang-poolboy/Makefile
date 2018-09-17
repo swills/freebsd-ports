@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-poolboy/Makefile 476350 2018-08-04 12:06:19Z olgeni $
+# $FreeBSD: head/devel/erlang-poolboy/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	poolboy
 PORTVERSION=	1.5.2
@@ -13,5 +13,7 @@ LICENSE=	ISCL
 USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	devinus
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

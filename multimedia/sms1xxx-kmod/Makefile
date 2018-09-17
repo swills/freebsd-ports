@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/multimedia/sms1xxx-kmod/Makefile 459919 2018-01-25 11:07:50Z martymac $
+# $FreeBSD: head/multimedia/sms1xxx-kmod/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sms1xxx
 PORTVERSION=	20120113
@@ -22,7 +22,7 @@ WRKSRC=	${WRKDIR}/siano-${PORTVERSION}
 NO_PACKAGE=	should be recompiled for a particular FreeBSD kernel
 
 NO_OPTIONS_SORT=	yes
-OPTIONS_DEFINE=	RC5WATCH DEBUG
+OPTIONS_DEFINE=	DOCS RC5WATCH DEBUG
 OPTIONS_MULTI=	FIRMWARE
 OPTIONS_MULTI_FIRMWARE=	STELLAR NOVA
 OPTIONS_DEFAULT=	RC5WATCH NOVA

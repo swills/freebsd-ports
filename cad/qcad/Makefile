@@ -1,10 +1,10 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/cad/qcad/Makefile 474257 2018-07-09 13:57:36Z mr $
+# $FreeBSD: head/cad/qcad/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	qcad
 PORTVERSION=	3.21.1.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad
 DIST_SUBDIR=	${PORTNAME}
 
@@ -46,6 +46,8 @@ STALIBS=	dxflib stemmer
 SHRDIR=		fonts libraries linetypes patterns plugins scripts themes ts
 #QSCRIPTS should not be installed to avoid conflicts with texlive-base
 QSCRIPTS=	bbox dwg2bmp dwg2pdf dwg2svg
+
+OPTIONS_DEFINE=	EXAMPLES
 
 pre-configure:
 	${REINPLACE_CMD} -e "s|%%DATADIR%%|${DATADIR}|"	\

@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trigger-rally/Makefile 464132 2018-03-10 23:35:03Z linimon $
+# $FreeBSD: head/games/trigger-rally/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	trigger-rally
 PORTVERSION=	0.6.5
@@ -30,6 +30,8 @@ DESKTOP_ENTRIES="Trigger" "" "trigger" \
 		"trigger-rally" "" false
 
 PORTDOCS=	README-stereo.txt README.txt DATA_AUTHORS.txt
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WORKINGSRC}/bin/trigger-rally ${STAGEDIR}${PREFIX}/bin

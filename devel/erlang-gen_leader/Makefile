@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-gen_leader/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-gen_leader/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	gen_leader
 PORTVERSION=	2014.10.20
@@ -15,7 +15,9 @@ GH_ACCOUNT=	garret-smith
 GH_PROJECT=	gen_leader_revival
 GH_TAGNAME=	a12a4e3
 
-post-install:
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 

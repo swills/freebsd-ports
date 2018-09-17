@@ -1,5 +1,5 @@
 # Created by: Motomichi Matsuzaki <mzaki@biol.s.u-tokyo.ac.jp>
-# $FreeBSD: head/biology/phred/Makefile 365765 2014-08-23 18:04:58Z pi $
+# $FreeBSD: head/biology/phred/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	phred
 PORTVERSION=	0.020425.c
@@ -28,6 +28,8 @@ DATADIR=	${PREFIX}/etc/PhredPar
 DATAFILES=	phredpar.dat
 
 PORTDOCS=	NEWS PHRED.DOC DAEV.DOC
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

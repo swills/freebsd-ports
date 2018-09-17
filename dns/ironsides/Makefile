@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/dns/ironsides/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/dns/ironsides/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	ironsides
 PORTVERSION=	${SNAPSHOT:S/_//g}
@@ -24,6 +24,8 @@ SNAPSHOT=	2015_04_15
 WRKSRC=		${WRKDIR}/${DISTFILES:S/.zip//}
 PLIST_FILES=	sbin/ironsides man/man1/ironsides.1.gz
 PORTEXAMPLES=	dfcs.usafa.edu.zonefile
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-extract:
 	@${CP} ${FILESDIR}/ironsides.gpr ${FILESDIR}/Makefile ${WRKSRC}/

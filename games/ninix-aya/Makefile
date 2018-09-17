@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/games/ninix-aya/Makefile 474224 2018-07-09 05:22:12Z pi $
+# $FreeBSD: head/games/ninix-aya/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ninix-aya
 PORTVERSION=	5.0.6
@@ -23,5 +23,7 @@ NO_ARCH=	yes
 PORTDOCS=	COPYING ChangeLog README README.ninix SAORI
 USES=		gettext tar:tgz
 USE_RUBY=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

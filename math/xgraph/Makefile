@@ -1,5 +1,5 @@
 # Created by: asami
-# $FreeBSD: head/math/xgraph/Makefile 434929 2017-02-27 12:46:16Z amdmi3 $
+# $FreeBSD: head/math/xgraph/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	xgraph
 PORTVERSION=	11.3.2.20000910
@@ -19,6 +19,8 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 USES=		imake tar:Z
 USE_XORG=	x11 xext
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-extract:
 	@${SED} -ne '2,19 {s|^ \* *||;p;}' < ${WRKSRC}/copyright.h > ${WRKSRC}/COPYING

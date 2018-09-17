@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-lager_logger/Makefile 476396 2018-08-05 07:30:31Z antoine $
+# $FreeBSD: head/devel/elixir-lager_logger/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lager_logger
 PORTVERSION=	1.0.4
@@ -16,5 +16,7 @@ BROKEN=		fails to build
 USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	PSPDFKit-labs
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

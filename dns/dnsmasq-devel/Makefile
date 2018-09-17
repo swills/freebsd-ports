@@ -1,8 +1,8 @@
 # Created by: Matthias Andree
-# $FreeBSD: head/dns/dnsmasq-devel/Makefile 478262 2018-08-27 23:52:58Z mandree $
+# $FreeBSD: head/dns/dnsmasq-devel/Makefile 479284 2018-09-09 10:18:26Z mandree $
 
 PORTNAME=	dnsmasq
-DISTVERSION=	2.80test4
+DISTVERSION=	2.80test6
 PORTEPOCH=	2
 CATEGORIES=	dns ipv6
 #MASTER_SITES=	http://www.thekelleys.org.uk/dnsmasq/release-candidates/

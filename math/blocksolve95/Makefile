@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/math/blocksolve95/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/blocksolve95/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	blocksolve95
 PORTVERSION=	3.0
@@ -23,6 +23,7 @@ LIB_DEPENDS=	libf2c.so:lang/f2c	\
 
 USES=		fortran gmake tar:Z
 
+OPTIONS_DEFINE=	DOCS EXAMPLES
 OPTIONS_RADIO=	BLAS
 OPTIONS_RADIO_BLAS=	REFERENCE ATLAS
 OPTIONS_DEFAULT=	REFERENCE

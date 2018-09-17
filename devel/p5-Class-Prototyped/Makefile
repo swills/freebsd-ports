@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Prototyped/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Class-Prototyped/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Class-Prototyped
 PORTVERSION=	1.13
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fast prototype-based OO programming in Perl
 
 USES=		perl5

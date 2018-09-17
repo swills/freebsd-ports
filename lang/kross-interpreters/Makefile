@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/kross-interpreters/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/lang/kross-interpreters/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kross-interpreters
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,7 @@ USE_KDE=	ecm kross
 USE_QT=		core gui script widgets xml \
 		buildtools_build qmake_build
 
-OPTIONS_DEFINE=		RUBY
+OPTIONS_DEFINE=		RUBY DOCS
 OPTIONS_SUB=		yes
 OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
 

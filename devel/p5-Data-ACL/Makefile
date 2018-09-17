@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-ACL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-ACL/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Data-ACL
 PORTVERSION=	0.02
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Data::ACL - Perl extension for simple ACL lists
 
 BUILD_DEPENDS=	p5-Set-NestedGroups>=0:devel/p5-Set-NestedGroups

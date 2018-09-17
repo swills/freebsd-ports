@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/duff/Makefile 457510 2017-12-29 15:47:00Z jhale $
+# $FreeBSD: head/sysutils/duff/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	duff
 PORTVERSION=	0.5.2
@@ -19,7 +19,7 @@ SHEBANG_FILES=	join-duplicates.sh
 
 PORTDOCS=	README.SHA
 
-OPTIONS_DEFINE=	JOIN NLS
+OPTIONS_DEFINE=	DOCS JOIN NLS
 OPTIONS_SUB=	yes
 
 JOIN_DESC=		Add run-dependencies for join-duplicates.sh

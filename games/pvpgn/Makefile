@@ -1,5 +1,5 @@
 # Created by: mek
-# $FreeBSD: head/games/pvpgn/Makefile 414014 2016-04-25 16:13:38Z mat $
+# $FreeBSD: head/games/pvpgn/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pvpgn
 PORTVERSION=	1.8.5
@@ -37,7 +37,7 @@ CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc/pvpgn \
 
 USE_RC_SUBR=	bnetd
 
-OPTIONS_DEFINE=		D2 MYSQL PGSQL SQLITE3
+OPTIONS_DEFINE=		D2 MYSQL PGSQL SQLITE3 DOCS
 OPTIONS_DEFAULT=	D2
 OPTIONS_SUB=		yes
 

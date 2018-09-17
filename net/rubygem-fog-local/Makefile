@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-local/Makefile 463061 2018-02-26 22:30:25Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-local/Makefile 479635 2018-09-12 22:55:55Z sunpoet $
 
 PORTNAME=	fog-local
-PORTVERSION=	0.5.0
+PORTVERSION=	0.6.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	rubygem-fog-core1>=1.27:devel/rubygem-fog-core1
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

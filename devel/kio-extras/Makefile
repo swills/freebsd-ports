@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/kio-extras/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/devel/kio-extras/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kio-extras
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-applications # kde kde-applications-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -24,7 +23,7 @@ USE_QT=		core dbus gui location network phonon4 printsupport qml quick \
 		buildtools_build qmake_build
 SHEBANG_FILES=	info/kde-info2html
 
-OPTIONS_DEFINE=	SAMBA MTP EXR EXIV SLP SSH WEBENGINE TAGLIB
+OPTIONS_DEFINE=	SAMBA MTP EXR EXIV SLP SSH WEBENGINE TAGLIB DOCS
 OPTIONS_DEFAULT=SAMBA MTP EXR EXIV SLP SSH WEBENGINE TAGLIB
 OPTIONS_SUB=	yes
 

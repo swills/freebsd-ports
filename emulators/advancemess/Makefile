@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/advancemess/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/emulators/advancemess/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	advancemess
 PORTVERSION=	1.4
@@ -32,7 +32,7 @@ PLIST_FILES=	bin/advmess \
 
 MAKE_JOBS_UNSAFE=	yes
 
-OPTIONS_DEFINE=		FREETYPE SLANG
+OPTIONS_DEFINE=		FREETYPE SLANG DOCS
 OPTIONS_DEFINE_i386=	ASM
 OPTIONS_DEFAULT=	FREETYPE
 OPTIONS_DEFAULT_i386=	ASM

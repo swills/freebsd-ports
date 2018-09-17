@@ -1,8 +1,8 @@
 # Created by: andreas@syndrom23.de
-# $FreeBSD: head/devel/simian/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/simian/Makefile 479179 2018-09-07 05:28:43Z tota $
 
 PORTNAME=	simian
-PORTVERSION=	2.4.0
+PORTVERSION=	2.5.10
 CATEGORIES=	devel java
 MASTER_SITES=	http://www.harukizaemon.com/simian/
 

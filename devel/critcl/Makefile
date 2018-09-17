@@ -1,5 +1,5 @@
 # Created by: gahr@FreeBSD.org
-# $FreeBSD: head/devel/critcl/Makefile 473691 2018-07-02 00:05:13Z linimon $
+# $FreeBSD: head/devel/critcl/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	critcl
 PORTVERSION=	3.1.17
@@ -29,7 +29,7 @@ PORTDOCS=	*
 
 NO_BUILD=	yes
 
-.include <bsd.port.options.mk>
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e 's|dtplite|${LOCALBASE}/bin/dtplite|g' ${WRKSRC}/build.tcl

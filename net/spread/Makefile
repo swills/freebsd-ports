@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/net/spread/Makefile 442121 2017-05-30 20:34:55Z bapt $
+# $FreeBSD: head/net/spread/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	spread
 PORTVERSION=	3.17.4
@@ -31,6 +31,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-src-${PORTVERSION}
 PKGMESSAGE=	${WRKSRC}/license.txt
 PORTDOCS=	Readme.txt LICENSE
 HEADERFILES=	sp_func.h sp_func.h sp_events.h
+
+OPTIONS_DEFINE=	DOCS
 
 # The configure script fails to find nroff in LOCALBASE, but works fine if
 # 'groff' is used directly

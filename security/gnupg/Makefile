@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/gnupg/Makefile 478464 2018-08-30 14:45:55Z adamw $
+# $FreeBSD: head/security/gnupg/Makefile 479210 2018-09-08 00:05:02Z jrm $
 
 PORTNAME=	gnupg
 PORTVERSION=	2.2.10
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
@@ -31,6 +32,8 @@ CONFIGURE_ARGS=	--disable-ntbtls --disable-wks-tools \
 GNU_CONFIGURE=	yes
 INFO=		gnupg
 TEST_TARGET=	check
+
+SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=	DOCS GNUTLS LARGE_RSA LDAP NLS SCDAEMON SUID_GPG
 OPTIONS_DEFAULT=GNUTLS SCDAEMON

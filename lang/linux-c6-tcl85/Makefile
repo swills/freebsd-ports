@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/lang/linux-c6-tcl85/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/lang/linux-c6-tcl85/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tcl
 PORTVERSION=	8.5.7
@@ -17,5 +17,7 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
 USE_LINUX_RPM_BAD_PERMS=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

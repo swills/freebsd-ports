@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/nfs-ganesha-kmod/Makefile 478301 2018-08-28 11:37:24Z bapt $
+# $FreeBSD: head/net/nfs-ganesha-kmod/Makefile 479923 2018-09-17 10:01:29Z bapt $
 
 PORTNAME=	nfs-ganesha-kmod
-DISTVERSION=	0.1
+DISTVERSION=	0.2
 CATEGORIES=	net
 DISTVERSIONPREFIX=	v
 

@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 478541 2018-08-31 09:51:04Z mat $
+# $FreeBSD: head/Mk/bsd.sites.mk 479746 2018-09-13 22:13:24Z gerald $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -300,7 +300,6 @@ MASTER_SITE_FRUGALWARE+= \
 MASTER_SITE_GCC+= \
 	https://mirrors.kernel.org/sourceware/gcc/%SUBDIR%/ \
 	http://gcc.parentingamerica.com/%SUBDIR%/ \
-	http://gcc.skazkaforyou.com/%SUBDIR%/ \
 	http://gcc.cybermirror.org/%SUBDIR%/ \
 	http://gcc-uk.internet.bs/%SUBDIR%/ \
 	http://www.netgull.com/gcc/%SUBDIR%/ \

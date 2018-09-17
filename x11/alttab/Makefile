@@ -1,5 +1,5 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/x11/alttab/Makefile 467291 2018-04-14 07:11:20Z yuri $
+# $FreeBSD: head/x11/alttab/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	alttab
 DISTVERSIONPREFIX=	v
@@ -27,5 +27,7 @@ PLIST_FILES=	bin/alttab \
 PORTDOCS=	README \
 		alttab.ad \
 		wm-setup.md
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: mahlon
-# $FreeBSD: head/www/volta/Makefile 429892 2016-12-29 12:41:04Z mat $
+# $FreeBSD: head/www/volta/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	volta
 PORTVERSION=	0.3.0
@@ -24,6 +24,8 @@ LDFLAGS+=	-L${PREFIX}/lib
 PLIST_FILES=	bin/volta
 PORTDOCS=	README INSTALL LICENSE ChangeLog
 SUB_FILES=	pkg-message
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

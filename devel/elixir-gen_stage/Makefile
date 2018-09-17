@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-gen_stage/Makefile 472494 2018-06-15 21:19:23Z olgeni $
+# $FreeBSD: head/devel/elixir-gen_stage/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gen_stage
 PORTVERSION=	0.14.0
@@ -17,5 +17,7 @@ GH_ACCOUNT=	elixir-lang
 
 ELIXIR_APP_NAME=gen_stage
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

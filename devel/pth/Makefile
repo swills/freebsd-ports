@@ -1,5 +1,5 @@
 # Created by: Ralf S. Engelschall <rse@gnu.org>
-# $FreeBSD: head/devel/pth/Makefile 458558 2018-01-09 18:44:07Z danfe $
+# $FreeBSD: head/devel/pth/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	pth
 PORTVERSION=	2.0.7
@@ -30,10 +30,10 @@ CONFLICTS?=	pth-hard-2.*
 
 .if ${PKGNAMESUFFIX} == "-hard"
 CONFIGURE_ARGS+=	--enable-syscall-hard --disable-syscall-soft
-PLIST_SUB=	PTHREAD="@comment "
+PLIST_SUB+=	PTHREAD="@comment "
 .else
 CONFIGURE_ARGS+=	--enable-syscall-soft --enable-pthread
-PLIST_SUB=	PTHREAD=""
+PLIST_SUB+=	PTHREAD=""
 .endif
 
 post-patch:

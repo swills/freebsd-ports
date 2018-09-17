@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/mail/p5-Email-Find/Makefile 474627 2018-07-14 09:07:42Z amdmi3 $
+# $FreeBSD: head/mail/p5-Email-Find/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Email-Find
 PORTVERSION=	0.10
@@ -8,7 +8,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Find RFC 822 email addresses in plain text
 
 LICENSE=	ART10 GPLv1+

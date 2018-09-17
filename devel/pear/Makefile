@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/pear/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/pear/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pear
 PORTVERSION=	1.10.5
@@ -21,6 +21,8 @@ NO_ARCH=	yes
 USE_PHP=	pcre:build xml:build zlib:build
 
 PEARDIR=	${PREFIX}/share/pear
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|" \

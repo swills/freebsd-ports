@@ -1,5 +1,5 @@
 # Created by: tobez
-# $FreeBSD: head/math/p5-Graph/Makefile 462415 2018-02-20 18:42:43Z tobez $
+# $FreeBSD: head/math/p5-Graph/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Graph
 PORTVERSION=	0.9704
@@ -8,7 +8,7 @@ CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Graph, the Perl module for graph operations
 
 BUILD_DEPENDS=	p5-Heap>=0:devel/p5-Heap

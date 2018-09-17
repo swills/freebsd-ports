@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql95-contrib/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/postgresql95-contrib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	postgresql
 PORTREVISION=	0
@@ -22,6 +22,8 @@ SLAVE_ONLY=	yes
 COMPONENT=	-contrib
 CONFIGURE_ARGS+=--with-libxslt --with-libxml --with-openssl --disable-nls --with-uuid=bsd
 LDFLAGS+=	-lpthread -L${PREFIX}/lib
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@- ${INSTALL_DATA} ${WRKSRC}/contrib/README ${STAGEDIR}${DOCSDIR}/extension/README

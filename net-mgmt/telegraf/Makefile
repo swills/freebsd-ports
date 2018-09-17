@@ -1,8 +1,8 @@
 # Created by: Stefan Lambrev <cheffo@freebsd-bg.org>
-# $FreeBSD: head/net-mgmt/telegraf/Makefile 477056 2018-08-13 07:21:32Z girgen $
+# $FreeBSD: head/net-mgmt/telegraf/Makefile 479378 2018-09-10 09:24:25Z girgen $
 
 PORTNAME=	telegraf
-DISTVERSION=	1.7.3
+DISTVERSION=	1.7.4
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	girgen@FreeBSD.org

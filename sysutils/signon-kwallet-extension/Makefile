@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/signon-kwallet-extension/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/signon-kwallet-extension/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	signon-kwallet-extension
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,5 +16,7 @@ USE_QT=		core dbus gui \
 USE_LDCONFIG=	${KDE_PREFIX}/${SE_DIR}
 PLIST_FILES=	${SE_DIR}/libkeyring-kwallet.so
 SE_DIR=		lib/signon/extensions
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

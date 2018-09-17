@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 460231 2018-01-28 21:50:25Z bsam $
+# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	firmware
 PORTVERSION=	0.1.6
@@ -31,6 +31,8 @@ FW_FILES=	fx2lafw-braintechnology-usb-lps.fw \
 
 PORTDOCS=	README NEWS
 PLIST_FILES=	${FW_FILES:S,^,share/sigrok-firmware/,}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

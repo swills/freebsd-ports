@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish5/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/www/varnish5/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	varnish
 PORTVERSION=	5.2.1
@@ -42,6 +42,8 @@ USE_RC_SUBR=	varnishd varnishlog varnishncsa
 BAD_TESTS+=	r00832
 EXTRA_PATCHES+=	${FILESDIR}/no-inet6.patch
 .endif
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 .if defined(BAD_TESTS)

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/tigervnc-devel/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/net/tigervnc-devel/Makefile 479891 2018-09-16 12:16:53Z antoine $
 
 PORTNAME=	tigervnc
 PORTVERSION=	1.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net x11-servers
 PKGNAMESUFFIX=	-devel
@@ -14,6 +14,8 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENCE.TXT
 
 IGNORE=		no development version available right now. Please use net/tigervnc instead
+DEPRECATED=	Use net/tigervnc instead
+EXPIRATION_DATE=	2018-09-29
 
 PATCH_DEPENDS=	${NONEXISTENT}:x11-servers/xorg-server:patch
 BUILD_DEPENDS=	${LOCALBASE}/include/GL/internal/dri_interface.h:graphics/mesa-dri \

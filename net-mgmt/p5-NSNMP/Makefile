@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/p5-NSNMP/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/net-mgmt/p5-NSNMP/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	NSNMP
 PORTVERSION=	0.5
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:KRAGEN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	NSNMP - fast, flexible, low-level, pure-Perl SNMP library
 
 USES=		perl5

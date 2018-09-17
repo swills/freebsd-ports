@@ -1,11 +1,11 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/dejavu/Makefile 451453 2017-10-07 09:27:57Z sunpoet $
+# $FreeBSD: head/x11-fonts/dejavu/Makefile 479854 2018-09-16 00:06:42Z sunpoet $
 
 PORTNAME=	dejavu
 PORTVERSION=	2.37
 DISTVERSIONPREFIX=	fonts-ttf-
 CATEGORIES=	x11-fonts
-MASTER_SITES=	SF
+MASTER_SITES=	https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_${PORTVERSION:R}_${PORTVERSION:E}/
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Bitstream Vera Fonts clone with a wider range of characters

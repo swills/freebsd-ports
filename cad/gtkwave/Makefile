@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/cad/gtkwave/Makefile 476363 2018-08-04 15:17:34Z zeising $
+# $FreeBSD: head/cad/gtkwave/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gtkwave
 PORTVERSION=	3.3.93
@@ -21,7 +21,7 @@ CONFIGURE_ARGS=	--disable-mime-update
 USE_GNOME=	cairo gtk20
 INSTALLS_ICONS=	yes
 
-OPTIONS_DEFINE=	TCL GCONF EXAMPLES
+OPTIONS_DEFINE=	TCL GCONF DOCS EXAMPLES
 TCL_DESC=	Enable support for TCL/TK
 TCL_USES=	tcl tk
 TCL_CONFIGURE_ON=	--with-tcl=${TCL_LIBDIR} \

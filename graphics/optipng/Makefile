@@ -1,5 +1,5 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/graphics/optipng/Makefile 461572 2018-02-12 10:02:02Z yuri $
+# $FreeBSD: head/graphics/optipng/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	optipng
 PORTVERSION=	0.7.7
@@ -12,7 +12,7 @@ COMMENT=	Optimizer for PNG files
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-OPTIONS_DEFINE=	BUNDLED_LIBPNG BUNDLED_ZLIB
+OPTIONS_DEFINE=	BUNDLED_LIBPNG BUNDLED_ZLIB DOCS
 
 BUNDLED_LIBPNG_DESC=		Use bundled libpng
 BUNDLED_LIBPNG_CONFIGURE_OFF=	--with-system-libpng

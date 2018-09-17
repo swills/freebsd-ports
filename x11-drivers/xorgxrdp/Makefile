@@ -1,7 +1,9 @@
-# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 476807 2018-08-10 08:00:42Z meta $
+# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xorgxrdp
 PORTVERSION=	0.2.7
+PORTREVISION=	1
+CATEGORIES=	x11-drivers
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-drivers
 DIST_SUBDIR=	xrdp

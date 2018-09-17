@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/databases/p5-DBD-Excel/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBD-Excel/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	DBD-Excel
 PORTVERSION=	0.06
@@ -21,7 +21,9 @@ EXAMPLESDIR?=	${PREFIX}/share/examples/${PORTNAME}
 USES=		perl5
 USE_PERL5=	configure
 
-post-install:
+OPTIONS_DEFINE=	EXAMPLES
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	@${INSTALL_DATA} ${WRKSRC}/sample/* ${STAGEDIR}${EXAMPLESDIR}
 

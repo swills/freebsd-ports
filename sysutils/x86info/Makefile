@@ -1,11 +1,11 @@
 # Created by: Erik Greenwald <erik@smluc.org>
-# $FreeBSD: head/sysutils/x86info/Makefile 458760 2018-01-11 17:57:44Z sbruno $
+# $FreeBSD: head/sysutils/x86info/Makefile 479847 2018-09-15 22:57:53Z ler $
 
 PORTNAME=	x86info
-DISTVERSION=	1.31snap02
+DISTVERSION=	1.31snap03
 CATEGORIES=	sysutils
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ler@FreeBSD.org
 COMMENT=	x86 CPU identification and feature display utility
 
 LICENSE=	GPLv2
@@ -17,7 +17,7 @@ ONLY_FOR_ARCHS=	i386 amd64
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kernelslacker
-GH_TAGNAME=	b7d0839
+GH_TAGNAME=	1b41e8b
 
 USES=		gmake pkgconfig python:build
 

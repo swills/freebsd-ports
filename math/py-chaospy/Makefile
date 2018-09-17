@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-chaospy/Makefile 479090 2018-09-06 07:19:49Z yuri $
+# $FreeBSD: head/math/py-chaospy/Makefile 479367 2018-09-10 07:04:56Z yuri $
 
 PORTNAME=	chaospy
-PORTVERSION=	2.3.3
+DISTVERSION=	2.3.4
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

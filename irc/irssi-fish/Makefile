@@ -1,5 +1,5 @@
 # Created by: Jens Holmqvist <zparta@hispan.se>
-# $FreeBSD: head/irc/irssi-fish/Makefile 460717 2018-02-02 17:37:28Z brd $
+# $FreeBSD: head/irc/irssi-fish/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	irssi-fish
 DISTVERSION=	1.4.20160122
@@ -26,6 +26,8 @@ USE_LDCONFIG=	yes
 
 PLIST_FILES=	lib/irssi/modules/libfish.so
 PORTDOCS=	README.md FiSH-irssi.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e "s,/usr/local,${LOCALBASE},g" \

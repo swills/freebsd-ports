@@ -1,5 +1,5 @@
 # Created by: Daniel Walter <sahne@0x90.at>
-# $FreeBSD: head/sysutils/bsdmoted/Makefile 439789 2017-04-30 04:35:10Z linimon $
+# $FreeBSD: head/sysutils/bsdmoted/Makefile 479890 2018-09-16 11:44:37Z antoine $
 
 PORTNAME=	bsdmoted
 PORTVERSION=	0.4.0
@@ -15,6 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BROKEN_powerpc64=	does not build: warning Make sure new member of socket address initialized
 BROKEN_FreeBSD_11=	does not build (bluetooth changes in 11.x need to be handled)
 BROKEN_FreeBSD_12=	does not build (bluetooth changes in 11.x need to be handled)
+DEPRECATED=	does not build on FreeBSD 11+
+EXPIRATION_DATE=	2018-10-31
 
 USES=		uidfix
 PLIST_FILES=	sbin/bsdmoted

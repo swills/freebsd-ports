@@ -1,9 +1,9 @@
 # Created by: Greg Lewis <glewis@FreeBSD.org>
-# $FreeBSD: head/archivers/rpm4/Makefile 478959 2018-09-04 13:35:09Z rodrigo $
+# $FreeBSD: head/archivers/rpm4/Makefile 479338 2018-09-09 22:16:40Z rodrigo $
 
 PORTNAME=	rpm
 PORTVERSION=	4.14.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	archivers
 MASTER_SITES=	http://ftp.rpm.org/releases/rpm-${PORTVERSION:R}.x/
 PKGNAMESUFFIX=	4

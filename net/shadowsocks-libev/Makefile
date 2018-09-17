@@ -1,10 +1,10 @@
 # Created by: Xiaoding Liu <xiaoding+freebsd@xiaoding.org>
-# $FreeBSD: head/net/shadowsocks-libev/Makefile 476834 2018-08-10 14:23:15Z tijl $
+# $FreeBSD: head/net/shadowsocks-libev/Makefile 479770 2018-09-14 12:04:53Z tijl $
 
 PORTNAME=	shadowsocks-libev
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.1.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 
 MAINTAINER=	xiaoding+freebsd@xiaoding.org
@@ -12,6 +12,8 @@ COMMENT=	Lightweight tunnel proxy which can help you get through firewalls
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to link: cc: Internal error: Segmentation fault (program ld)
 
 LIB_DEPENDS=	libev.so:devel/libev \
 		libmbedcrypto.so:security/mbedtls \

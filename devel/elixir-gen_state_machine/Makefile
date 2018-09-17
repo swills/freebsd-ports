@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-gen_state_machine/Makefile 478023 2018-08-25 11:29:32Z olgeni $
+# $FreeBSD: head/devel/elixir-gen_state_machine/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gen_state_machine
 PORTVERSION=	2.0.3
@@ -16,5 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	antipax
 
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

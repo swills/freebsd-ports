@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/www/websh/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/websh/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	websh
 PORTVERSION=	3.6.0b5
@@ -28,6 +28,8 @@ PORTDOCS=	*
 PORTEXAMPLES=	*
 
 CONFIGURE_ARGS+=--with-httpdinclude=`apxs -q includedir`
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 CPPFLAGS+=	-I ${LOCALBASE}/include/apr-1
 .if !defined(NO_WERROR) && ${CC} == "cc" || ${CC:T:Mgcc*} != ""

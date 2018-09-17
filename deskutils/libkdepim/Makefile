@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/libkdepim/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/deskutils/libkdepim/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libkdepim
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -23,5 +23,7 @@ USE_QT=		core dbus designer gui network testlib uiplugin uitools \
 
 USE_LDCONFIG=	yes
 
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

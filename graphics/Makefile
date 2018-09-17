@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 478912 2018-09-03 19:07:52Z pi $
+# $FreeBSD: head/graphics/Makefile 479295 2018-09-09 16:57:52Z sunpoet $
 #
 
     COMMENT = Graphics tools and libraries
@@ -95,6 +95,7 @@
     SUBDIR += cegui
     SUBDIR += cenon
     SUBDIR += cfdg
+    SUBDIR += charls
     SUBDIR += chbg
     SUBDIR += cimg
     SUBDIR += cinepaint
@@ -1126,6 +1127,7 @@
     SUBDIR += volpack
     SUBDIR += vp
     SUBDIR += vulkan-loader
+    SUBDIR += vv
     SUBDIR += waffle
     SUBDIR += waifu2x-converter-cpp
     SUBDIR += wayland

@@ -1,8 +1,8 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/pointcloud/Makefile 471299 2018-06-01 22:15:31Z swills $
+# $FreeBSD: head/databases/pointcloud/Makefile 479317 2018-09-09 16:59:43Z sunpoet $
 
 PORTNAME=	pointcloud
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases geography
 
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 BUILD_DEPENDS=	${LOCALBASE}/include/laz-perf/las.hpp:archivers/lazperf
 LIB_DEPENDS=	libght.so:devel/libght
 
-USES=		autoreconf gmake pgsql
+USES=		autoreconf gmake gnome pgsql
 WANT_PGSQL=	server
 USE_GNOME=	libxml2
 GNU_CONFIGURE=	yes

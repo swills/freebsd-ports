@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_http2-devel/Makefile 468953 2018-05-03 18:17:38Z brnrd $
+# $FreeBSD: head/www/mod_http2-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_http2
 PORTVERSION=	1.10.20
@@ -30,6 +30,8 @@ CFLAGS+=	-I${LOCALBASE}/include
 
 SUB_FILES=	200_mod_http2.conf 300_mod_proxy_http2.conf
 PORTDOCS=	README README.md
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${APACHEETCDIR}/modules.d

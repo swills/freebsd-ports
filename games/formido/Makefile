@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/formido/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/formido/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	formido
 PORTVERSION=	1.0.1
@@ -22,6 +22,8 @@ PLIST_FILES=	bin/${PORTNAME}
 
 PORTDATA=	*
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 pre-build:
 	@${MKDIR} ${WRKSRC}/obj

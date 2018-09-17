@@ -1,5 +1,5 @@
 # Created by: bsam
-# $FreeBSD: head/x11/linux-c6-xorg-libs/Makefile 445273 2017-07-07 16:33:39Z tijl $
+# $FreeBSD: head/x11/linux-c6-xorg-libs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xorg-libs
 PORTVERSION=	7.4
@@ -80,6 +80,8 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	fontconfig
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${RM} -r ${WRKSRC}/usr/share/icons

@@ -1,5 +1,5 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/net/file2pcap/Makefile 452863 2017-10-25 15:08:50Z nobutaka $
+# $FreeBSD: head/net/file2pcap/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	file2pcap
 PORTVERSION=	1.25
@@ -20,6 +20,8 @@ ALL_TARGET=	file2pcap
 
 PLIST_FILES=	bin/file2pcap
 PORTDOCS=	Changelog README.md TODO
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/file2pcap ${STAGEDIR}/${PREFIX}/bin

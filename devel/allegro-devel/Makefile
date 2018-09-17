@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/devel/allegro-devel/Makefile 458558 2018-01-09 18:44:07Z danfe $
+# $FreeBSD: head/devel/allegro-devel/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	allegro
 DISTVERSION=	5.0.9
@@ -64,6 +64,7 @@ DOCS_BUILD_DEPENDS=	${LOCALBASE}/bin/pandoc:textproc/hs-pandoc
 ALSA_LIB_DEPENDS=	libasound.so.2:audio/alsa-lib
 ALSA_CMAKE_ON=		-DWANT_ALSA=on
 ALSA_CMAKE_OFF=		-DWANT_ALSA=off
+DEMOS_IMPLIES=	EXAMPLES
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 PULSEAUDIO_CMAKE_ON=	-DWANT_PULSEAUDIO=on
 PULSEAUDIO_CMAKE_OFF=	-DWANT_PULSEAUDIO=off

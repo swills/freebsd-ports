@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/avinfo/Makefile 431345 2017-01-13 07:21:04Z sunpoet $
+# $FreeBSD: head/multimedia/avinfo/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	avinfo
 PORTVERSION=	1.0.a15
@@ -19,6 +19,8 @@ PLIST_FILES=	bin/${PORTNAME} \
 		man/man1/${PORTNAME}.1.gz
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '/^CC=/ d; /^CFLAGS=/ d; /^PREFIX=/ d' \

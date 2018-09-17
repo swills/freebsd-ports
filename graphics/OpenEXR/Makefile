@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/graphics/OpenEXR/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/OpenEXR/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	OpenEXR
 PORTVERSION=	2.2.1
@@ -57,7 +57,7 @@ USE_GCC=	yes
 MAJORVER=	2_2
 VER=		23
 
-PLIST_SUB=	MAJORVER=${MAJORVER}
+PLIST_SUB+=	MAJORVER=${MAJORVER}
 PLIST_SUB+=	VER=${VER}
 
 post-patch:

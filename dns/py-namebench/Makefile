@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/dns/py-namebench/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/dns/py-namebench/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	namebench
 PORTVERSION=	1.3.1
@@ -37,6 +37,8 @@ PORTDOCS=	README.txt
 USE_PYTHON=	distutils autoplist
 
 PYDISTUTILS_INSTALLARGS+=	--install-data=${PREFIX}/share
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/usr/local,${PREFIX},' \

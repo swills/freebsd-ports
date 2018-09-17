@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kwalletmanager/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/security/kwalletmanager/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kwalletmanager
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,5 +15,7 @@ USE_KDE=	archive auth codecs config configwidgets coreaddons crash \
 		windowsystem xmlgui
 USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/jdk9-doc/Makefile 463029 2018-02-26 16:45:46Z glewis $
+# $FreeBSD: head/java/jdk9-doc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}.${JDK_UPDATE_VERSION}.${JDK_PATCH_VERSION}
@@ -22,6 +22,8 @@ DOWNLOAD_URL=	http://www.oracle.com/technetwork/java/javase/downloads/index.html
 NO_BUILD=	yes
 USES=		zip
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

@@ -1,5 +1,5 @@
 # Created by: Eric L. Camachat <eric@camachat.org>
-# $FreeBSD: head/sysutils/djmount/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/sysutils/djmount/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	djmount
 PORTVERSION=	0.71
@@ -22,6 +22,8 @@ CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG} \
 		--with-external-libupnp --with-libupnp-prefix=${LOCALBASE}
 
 PORTDOCS=	AUTHORS ChangeLog NEWS README TODO
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${INSTALL} -d ${STAGEDIR}${DOCSDIR}

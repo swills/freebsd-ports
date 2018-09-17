@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/direwolf/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/comms/direwolf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	direwolf
 PORTVERSION=	1.4
@@ -23,6 +23,8 @@ SHEBANG_FILES=	telemetry-toolkit/telem-bits.pl telemetry-toolkit/telem-parm.pl\
 		telemetry-toolkit/telem-volts.py telemetry-toolkit/telem-data.pl \
 		telemetry-toolkit/telem-data91.pl \
 		telemetry-toolkit/telem-unit.pl	telemetry-toolkit/telem-balloon.pl
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${CP} ${FILESDIR}/Makefile.FreeBSD ${WRKSRC}

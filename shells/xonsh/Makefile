@@ -1,7 +1,7 @@
-# $FreeBSD: head/shells/xonsh/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/shells/xonsh/Makefile 479833 2018-09-15 12:34:47Z 0mp $
 
 PORTNAME=	xonsh
-PORTVERSION=	0.6.0
+PORTVERSION=	0.7.8
 CATEGORIES=	shells python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,7 @@ MAINTAINER=	roberfern@gmail.com
 COMMENT=	Python-ish BASH-wards shell
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/license
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}amalgamate>=0:devel/py-amalgamate@${PY_FLAVOR}
 

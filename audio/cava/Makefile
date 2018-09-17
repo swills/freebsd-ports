@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/cava/Makefile 469360 2018-05-08 05:59:04Z tobik $
+# $FreeBSD: head/audio/cava/Makefile 479389 2018-09-10 10:41:09Z tobik $
 
 PORTNAME=	cava
 DISTVERSION=	0.6.1
@@ -35,9 +35,6 @@ PULSEAUDIO_LIB_DEPENDS=		libpulse-simple.so:audio/pulseaudio \
 
 SNDIO_CONFIGURE_ENV_OFF=	ac_cv_lib_sndio_sio_open=no
 SNDIO_LIB_DEPENDS=		libsndio.so:audio/sndio
-
-post-patch:
-	@${REINPLACE_CMD} '/^cava_font/d' ${WRKSRC}/Makefile.am
 
 pre-configure:
 	@${ECHO_CMD} ${DISTVERSION} > ${WRKSRC}/version

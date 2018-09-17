@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Best/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Best/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Best
 PORTVERSION=	0.15
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:GAAL
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fallbackable module loader
 
 BUILD_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception

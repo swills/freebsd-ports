@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/konqueror/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-fm/konqueror/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	konqueror
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -19,5 +19,7 @@ USE_QT=		core dbus gui location network printsupport qml quick script \
 		speech webchannel webengine widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	ice sm x11 xext
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

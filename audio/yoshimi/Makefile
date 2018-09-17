@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/yoshimi/Makefile 465460 2018-03-24 18:17:31Z tobik $
+# $FreeBSD: head/audio/yoshimi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	yoshimi
 DISTVERSION=	1.5.7
@@ -33,5 +33,7 @@ USE_XORG=	x11 ice sm xext
 
 CMAKE_SOURCE_PATH=	${WRKSRC}/src
 INSTALLS_ICONS=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

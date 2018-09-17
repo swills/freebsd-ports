@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_rpaf2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_rpaf2/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	mod_rpaf
 PORTVERSION=	0.8.4
@@ -31,11 +31,11 @@ SUB_FILES=	${APMOD_FILE}
 
 PORTDOCS=	README.md
 
-.include <bsd.port.pre.mk>
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${APACHEETCDIR}/modules.d ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKDIR}/${APMOD_FILE} ${STAGEDIR}${PREFIX}/${APACHEETCDIR}/modules.d
 	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

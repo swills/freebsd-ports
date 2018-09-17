@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-exprotobuf/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/elixir-exprotobuf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	exprotobuf
 DISTVERSION=	1.2.9
@@ -16,6 +16,8 @@ GH_ACCOUNT=	bitwalker
 
 MIX_BUILD_DEPS=	devel/erlang-gpb
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 pre-build:
 	@${MKDIR} ${WRKSRC}/deps

@@ -1,5 +1,5 @@
 # Created by: Matthew Will <mwill@spingen.com>
-# $FreeBSD: head/devel/cvschangelogbuilder/Makefile 438346 2017-04-12 10:00:46Z amdmi3 $
+# $FreeBSD: head/devel/cvschangelogbuilder/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cvschangelogbuilder
 PORTVERSION=	2.5
@@ -21,6 +21,8 @@ NO_ARCH=	yes
 
 PLIST_FILES=	bin/cvschangelogbuilder
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

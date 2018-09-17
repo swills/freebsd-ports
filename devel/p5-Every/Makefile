@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Every/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Every/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Every
 PORTVERSION=	0.08
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TEODOR
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Return true every N cycles or S seconds
 
 BUILD_DEPENDS=	p5-Devel-Callsite>=0.04:devel/p5-Devel-Callsite

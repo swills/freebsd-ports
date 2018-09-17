@@ -1,9 +1,9 @@
 # Created by: Gleb Smirnoff <glebius@FreeBSD.org>
-# $FreeBSD: head/x11-drivers/xf86-input-egalax/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-input-egalax/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xf86-input-egalax
 PORTVERSION=	0.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	glebius@FreeBSD.org

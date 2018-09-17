@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/archivers/brotli/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/archivers/brotli/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	brotli
 PORTVERSION=	1.0.5
@@ -23,6 +23,8 @@ GNU_CONFIGURE=	yes
 
 INSTALL_TARGET=	install-strip
 PLIST_SUB=	SHLIBVER=${PORTVERSION}
+
+OPTIONS_DEFINE=	DOCS
 
 pre-configure:
 	(cd ${WRKSRC} && ./bootstrap)

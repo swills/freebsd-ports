@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/cad/opencascade/Makefile 469338 2018-05-07 22:29:46Z jbeich $
+# $FreeBSD: head/cad/opencascade/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	opencascade
 PORTVERSION=	7.2.0
@@ -74,6 +74,7 @@ VIS_LIB_DEPENDS=	libftgl.so:graphics/ftgl		\
 
 VIS_CMAKE_ON=	-D3RDPARTY_FREETYPE_DIR=${LOCALBASE}
 
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_USE=	TEX=latex:build
 DOXYGEN_BUILD_DEPENDS=	bash:shells/bash		\
 			doxygen:devel/doxygen		\

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Clone/Makefile 464570 2018-03-15 07:56:17Z tobik $
+# $FreeBSD: head/devel/p5-Clone/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Clone
 PORTVERSION=	0.39
@@ -6,7 +6,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Clone - recursively copy Perl datatypes
 
 LICENSE=	ART10 GPLv1+

@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/sysutils/liburcu/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/sysutils/liburcu/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	liburcu
 PORTVERSION=	0.10.0
@@ -25,5 +25,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--docdir=${DOCSDIR}
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/archivers/zip-ada/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/archivers/zip-ada/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	zip-ada
 PORTVERSION=	52
@@ -44,6 +44,8 @@ DEMOS=		demo_csv_into_zip \
 		test_lz_scramble \
 		test_llhc \
 		test_lz77
+
+OPTIONS_DEFINE=	EXAMPLES
 
 do-build:
 	(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} gnatmake -p -P zipada.gpr)

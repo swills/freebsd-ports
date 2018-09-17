@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/devel/rubygem-hoe/Makefile 464900 2018-03-18 11:27:34Z sunpoet $
+# $FreeBSD: head/devel/rubygem-hoe/Makefile 479221 2018-09-08 00:15:09Z sunpoet $
 
 PORTNAME=	hoe
-PORTVERSION=	3.17.0
+PORTVERSION=	3.17.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,9 +13,10 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-rake>=0.8:devel/rubygem-rake
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/sow
 

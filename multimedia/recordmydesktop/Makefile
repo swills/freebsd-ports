@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/recordmydesktop/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/multimedia/recordmydesktop/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	recordmydesktop
 DISTVERSION=	0.3.8.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 

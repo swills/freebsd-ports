@@ -1,5 +1,5 @@
 # Created by: Harald Schmalzbauer <freebsd@omnilan.de>
-# $FreeBSD: head/misc/vdmfec/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/misc/vdmfec/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	vdmfec
 PORTVERSION=	1.0
@@ -23,6 +23,8 @@ PLIST_FILES=	bin/vdm_decode \
 		bin/vdm_encode \
 		bin/vdmfec \
 		man/man1/vdmfec.1.gz
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

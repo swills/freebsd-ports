@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/seq2gif/Makefile 385633 2015-05-07 15:17:32Z mat $
+# $FreeBSD: head/graphics/seq2gif/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	seq2gif
 PORTVERSION=	0.10.4
@@ -24,6 +24,8 @@ INSTALL_TARGET=	install-strip
 PORTDOCS=	README.md
 
 PLIST_FILES=	bin/seq2gif
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

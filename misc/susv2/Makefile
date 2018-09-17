@@ -1,5 +1,5 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/misc/susv2/Makefile 366961 2014-09-01 21:32:06Z mandree $
+# $FreeBSD: head/misc/susv2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	susv2
 PORTVERSION=	1.0
@@ -15,6 +15,8 @@ RESTRICTED=	Redistribution of the documents is not permitted
 USES=		tar:bzip2
 NO_BUILD=	yes
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

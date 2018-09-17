@@ -1,21 +1,20 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Return-Value/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Return-Value/Makefile 479731 2018-09-13 21:55:18Z sunpoet $
 
 PORTNAME=	Return-Value
-PORTVERSION=	1.666002
-PORTREVISION=	2
+PORTVERSION=	1.666005
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RJBS
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Return::Value - Polymorphic Return Values
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
-
-post-patch:
-	@${REINPLACE_CMD} -i '' -e 's/^Carp::cluck/# Carp::cluck/' ${WRKSRC}/lib/Return/Value.pm
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/sysutils/tree/Makefile 382754 2015-03-30 21:45:44Z bapt $
+# $FreeBSD: head/sysutils/tree/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tree
 PORTVERSION=	1.7.0
@@ -18,6 +18,8 @@ PLIST_FILES=	bin/tree \
 		man/man1/tree.1.gz
 
 PORTDOCS=	CHANGES README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tree ${STAGEDIR}${PREFIX}/bin

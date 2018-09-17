@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sys-RunAlways/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/p5-Sys-RunAlways/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Sys-RunAlways
 PORTVERSION=	0.05
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Make sure there is always one invocation of a script active
 
 USES=		perl5

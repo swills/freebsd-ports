@@ -1,5 +1,5 @@
 # Created by: Jerry Hicks <wghicks@bellsouth.net>
-# $FreeBSD: head/devel/p5-Parse-RecDescent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Parse-RecDescent/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Parse-RecDescent
 PORTVERSION=	1.967.009
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Recursive descent parsing framework for Perl
 
 LICENSE=	ART10 GPLv1+

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/parley/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/parley/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	parley
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -21,5 +21,7 @@ USE_QT=		concurrent core dbus gui location network multimedia qml quick \
 		script svg webchannel webengine widgets xml \
 		buildtools_build qmake_build
 USE_XORG=	x11 xrender
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/glusterfs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/glusterfs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	glusterfs
 PORTVERSION=	3.11.1
@@ -54,6 +54,8 @@ LDFLAGS+=	-L"${LOCALBASE}/lib" -largp
 INSTALL_TARGET=	install-strip
 PLIST_SUB=	GLUSTERLIBDIR="lib/${PORTNAME}/${PORTVERSION}"
 KMODDIR?=	/boot/modules
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

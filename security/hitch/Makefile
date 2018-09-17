@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/hitch/Makefile 472971 2018-06-21 12:38:59Z zi $
+# $FreeBSD: head/security/hitch/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=		hitch
 PORTVERSION=		1.4.8
@@ -27,6 +27,8 @@ CONFIGURE_ENV=		CRYPTO_CFLAGS="-I${OPENSSLINC}" CRYPTO_LIBS="-L${OPENSSLLIB}" \
 USE_RC_SUBR=		${PORTNAME}
 CPPFLAGS+=		-I${LOCALBASE}/include
 LDFLAGS+=		-L${LOCALBASE}/lib -lcrypto -lssl
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc

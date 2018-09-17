@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/multimedia/libdvdnav/Makefile 459704 2018-01-22 21:31:13Z martymac $
+# $FreeBSD: head/multimedia/libdvdnav/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libdvdnav
 PORTVERSION=	6.0.0
@@ -22,5 +22,7 @@ USES=		tar:bz2 gmake libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
 
 PORTDOCS=	AUTHORS COPYING ChangeLog README TODO
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

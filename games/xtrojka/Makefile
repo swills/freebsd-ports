@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/xtrojka/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/games/xtrojka/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xtrojka
 PORTVERSION=	1.2.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	SUNSITE/games/arcade/tetris
 DISTNAME=	${PORTNAME}${PORTVERSION:C/\.//g}

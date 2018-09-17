@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/devel/tcllib/Makefile 462319 2018-02-19 13:40:22Z gahr $
+# $FreeBSD: head/devel/tcllib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tcllib
 PORTVERSION=	1.19
@@ -23,7 +23,10 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	ac_cv_path_tclsh="${TCLSH}"
 TEST_TARGET=	test
 TEST_ENV=	${MAKE_ENV} DISPLAY= TZ=utc
+
+.if ${OPTIONS_DEFINE:MDOCS}
 PORTDOCS=	*
+.endif
 
 INSTALL_ARGS=	-pkgs -pkg-path ${STAGEDIR}${PREFIX}/lib/tcllib \
 		-apps -app-path ${STAGEDIR}${PREFIX}/bin \

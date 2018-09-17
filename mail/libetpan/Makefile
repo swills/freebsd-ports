@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/mail/libetpan/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/mail/libetpan/Makefile 479916 2018-09-17 07:53:36Z wen $
 
 PORTNAME=	libetpan
-PORTVERSION=	1.8
+PORTVERSION=	1.9.1
 CATEGORIES=	mail ipv6
 
 MAINTAINER=	ports@FreeBSD.org
@@ -15,15 +15,17 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libexpat.so:textproc/expat2 \
 		libsasl2.so:security/cyrus-sasl2
 
+GNU_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
+
+USES=		autoreconf gmake iconv libtool localbase
+USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	dinhviethoa
 
-USES=		autoreconf gmake iconv libtool localbase
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
-USE_LDCONFIG=	yes
+PORTDOCS=	AUTHORS ChangeLog NEWS
 
-OPTIONS_DEFINE=		IPV6
+OPTIONS_DEFINE=		DOCS IPV6
 OPTIONS_SINGLE=		CRYPTO
 OPTIONS_SINGLE_CRYPTO=	GNUTLS OPENSSL
 OPTIONS_DEFAULT=	OPENSSL
@@ -35,10 +37,14 @@ GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls \
 
 IPV6_CONFIGURE_ENABLE=	ipv6
 
-OPENSSL_CONFIGURE_ON=	--with-openssl="${OPENSSLBASE}"
+OPENSSL_CONFIGURE_WITH=	openssl="${OPENSSLBASE}"
 OPENSSL_USES=		ssl
 
 pre-configure:
 	@(cd ${WRKSRC} && ${LN} -s README.md README)
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

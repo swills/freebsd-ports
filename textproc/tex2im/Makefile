@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/tex2im/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/tex2im/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	tex2im
 PORTVERSION=	1.8
@@ -19,6 +19,8 @@ PLIST_FILES=	bin/tex2im
 PORTEXAMPLES=	example1.png example1.tex example2.png example2.tex \
 		example3.png example3.tex example4.png example4.tex \
 		fig_1.eps
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e "s,^#!/bin/bash,#!${LOCALBASE}/bin/bash,g" ${WRKSRC}/tex2im

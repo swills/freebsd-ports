@@ -1,5 +1,5 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/sysutils/memdump/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/sysutils/memdump/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	memdump
 PORTVERSION=	1.01
@@ -19,6 +19,8 @@ MAKE_ARGS=	OPT="${CFLAGS}" DEBUG=''
 
 PORTDOCS=	README
 PLIST_FILES=	bin/memdump man/man1/memdump.1.gz
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/memdump ${STAGEDIR}${PREFIX}/bin

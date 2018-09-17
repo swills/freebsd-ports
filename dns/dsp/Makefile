@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/dsp/Makefile 465236 2018-03-21 20:12:43Z pi $
+# $FreeBSD: head/dns/dsp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dsp
 PORTVERSION=	2.0.0
@@ -27,5 +27,7 @@ GNU_CONFIGURE=	yes
 USES=		gmake perl5
 PERL5=		configure patch shebangfix
 NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

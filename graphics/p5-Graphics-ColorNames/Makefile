@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/graphics/p5-Graphics-ColorNames/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Graphics-ColorNames/Makefile 479589 2018-09-12 09:08:20Z amdmi3 $
 
 PORTNAME=	Graphics-ColorNames
 PORTVERSION=	2.11
@@ -11,9 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl class that defines RGB values for common color names
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5
 USE_PERL5=	modbuild
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

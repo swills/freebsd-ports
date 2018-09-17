@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/net-mgmt/iftop/Makefile 408163 2016-02-05 11:38:42Z marino $
+# $FreeBSD: head/net-mgmt/iftop/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	iftop
 DISTVERSION=	1.0pre4
@@ -16,6 +16,8 @@ GNU_CONFIGURE=	yes
 
 PORTDOCS=	README
 PLIST_FILES=	sbin/iftop man/man8/iftop.8.gz
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/sbin

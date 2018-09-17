@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IPC-DirQueue/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-IPC-DirQueue/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	IPC-DirQueue
 PORTVERSION=	1.0
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	IPC::DirQueue - disk-based many-to-many task queue
 
 BUILD_DEPENDS=	p5-POE>0:devel/p5-POE

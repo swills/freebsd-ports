@@ -1,5 +1,5 @@
 # Created by: gordon@FreeBSD.org
-# $FreeBSD: head/devel/p4/Makefile 464853 2018-03-18 02:05:21Z linimon $
+# $FreeBSD: head/devel/p4/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	p4
 PORTVERSION=	${YEAR}.${MAJOR}.${MINOR}
@@ -22,6 +22,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_mips64=	fails to install: /wrkdirs/usr/ports/devel/p4/work/2016-1/p4-bin/p4: No such file or directory
+BROKEN_powerpc64=	fails to build: /bin/sh: clang++: not found
 
 BUILD_DEPENDS=	${JAM}:devel/jam
 

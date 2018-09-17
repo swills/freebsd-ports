@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/kubectl/Makefile 477621 2018-08-20 03:13:46Z danilo $
+# $FreeBSD: head/sysutils/kubectl/Makefile 479571 2018-09-11 22:29:10Z danilo $
 
 PORTNAME=	kubectl
-PORTVERSION=	1.11.2
+PORTVERSION=	1.11.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -16,22 +16,14 @@ USES=		go
 USE_GITHUB=	yes
 GH_ACCOUNT=	kubernetes
 GH_PROJECT=	kubernetes
-GH_SUBDIR=	src/k8s.io/kubernetes
 
-PLIST_FILES=	bin/${PORTNAME}
-
-do-build:
-	cd ${WRKSRC}/${GH_SUBDIR} && \
-		GOPATH=${WRKSRC} go build \
-		-ldflags="-X k8s.io/kubernetes/pkg/version.gitMajor=${PORTVERSION:R:R} \
+GO_PKGNAME=	k8s.io/kubernetes
+GO_TARGET=	${GO_PKGNAME}/cmd/${PORTNAME}
+GO_BUILDFLAGS=	-ldflags="-X k8s.io/kubernetes/pkg/version.gitMajor=${PORTVERSION:R:R} \
 		-X k8s.io/kubernetes/pkg/version.gitMinor=${PORTVERSION:R:E} \
 		-X k8s.io/kubernetes/pkg/version.buildDate=$$(date +'%Y-%m-%dT%H:%M:%SZ') \
-		-X k8s.io/kubernetes/pkg/version.gitVersion=${DISTVERSIONPREFIX}${PORTVERSION}" \
-		./cmd/${PORTNAME}
+		-X k8s.io/kubernetes/pkg/version.gitVersion=${DISTVERSIONPREFIX}${PORTVERSION}"
 
-do-install:
-	${INSTALL_PROGRAM} \
-		${WRKSRC}/${PORTNAME} \
-		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+PLIST_FILES=	bin/${PORTNAME}
 
 .include <bsd.port.mk>

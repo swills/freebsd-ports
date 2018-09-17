@@ -1,8 +1,8 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/net/radcli/Makefile 475154 2018-07-23 08:14:18Z wen $
+# $FreeBSD: head/net/radcli/Makefile 479873 2018-09-16 00:08:22Z sunpoet $
 
 PORTNAME=	radcli
-PORTVERSION=	1.2.10
+PORTVERSION=	1.2.11
 CATEGORIES=	net
 
 MAINTAINER=	neel@neelc.org

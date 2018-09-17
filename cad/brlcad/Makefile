@@ -1,9 +1,9 @@
 # Created by: Pedro F. Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/brlcad/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/cad/brlcad/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	brlcad
 PORTVERSION=	7.24.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/BRL-CAD%20Source/${PORTVERSION}
 

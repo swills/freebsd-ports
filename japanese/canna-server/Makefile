@@ -1,5 +1,5 @@
 # Created by: hrs
-# $FreeBSD: head/japanese/canna-server/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/canna-server/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	canna
 PORTVERSION=	3.7p3
@@ -23,6 +23,8 @@ INSTALL_TARGET=	instserver instclient
 PORTDOCS=	canna.bib canna.sty Imakefile README.jp Makefile \
 		intern lisp man
 MAKE_JOBS_UNSAFE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@cd ${INSTALL_WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} \

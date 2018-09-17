@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-bear/Makefile 474635 2018-07-14 09:44:46Z olgeni $
+# $FreeBSD: head/devel/erlang-bear/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bear
 PORTVERSION=	0.8.5
@@ -13,5 +13,7 @@ LICENSE=	APACHE20
 USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	puzza007
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

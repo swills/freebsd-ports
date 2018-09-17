@@ -1,5 +1,5 @@
 # Created by: Adam VanderHook <acidos@bandwidth-junkies.net>
-# $FreeBSD: head/java/castor/Makefile 385926 2015-05-10 06:54:14Z amdmi3 $
+# $FreeBSD: head/java/castor/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	castor
 PORTVERSION=	1.3.2
@@ -27,6 +27,8 @@ PLIST_FILES=	%%JAVAJARDIR%%/${PORTNAME}-anttasks.jar \
 
 PORTDOCS=	*.html *.txt *.css *.dtd *.xsd *.pdf \
 		ora-mar-2k images rss
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 .for f in ${PLIST_FILES:T:R}

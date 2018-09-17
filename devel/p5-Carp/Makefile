@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Carp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Carp/Makefile 479457 2018-09-10 20:26:53Z sunpoet $
 
 PORTNAME=	Carp
-PORTVERSION=	1.38
+PORTVERSION=	1.50
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,9 @@ COMMENT=	Alternative warn and die for modules
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

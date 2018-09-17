@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/textproc/p5-Text-Autoformat/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-Autoformat/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Text-Autoformat
 PORTVERSION=	1.670.000
@@ -10,7 +10,7 @@ MASTER_SITE_SUBDIR=	CPAN:NEILB
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-${PORTVERSION:C/0\.(000)$//}
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Automatic and manual text wrapping and reformating formatting
 
 LICENSE=	ART10 GPLv1+

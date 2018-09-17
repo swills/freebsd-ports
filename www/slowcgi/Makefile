@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/slowcgi/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/www/slowcgi/Makefile 479142 2018-09-06 19:21:06Z swills $
 
 PORTNAME=	slowcgi
-PORTVERSION=	6.0.20161031
-PORTREVISION=	2
+PORTVERSION=	6.3.20180905
 CATEGORIES=	www
 
 MAINTAINER=	koue@chaosophia.net

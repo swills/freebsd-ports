@@ -1,5 +1,5 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 472699 2018-06-18 14:40:31Z linimon $
+# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 479839 2018-09-15 16:13:49Z linimon $
 
 PORTNAME=	fltk
 PORTVERSION=	1.3.4.1
@@ -14,7 +14,7 @@ COMMENT=	Python interface to FLTK window toolkit
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	fails to compile: fltk_wrap.cpp:5355: #pragma GCC diagnostic not allowed inside functions
+BROKEN_powerpc64=	fails to compile: fltk_wrap.cpp:5355: \#pragma GCC diagnostic not allowed inside functions
 
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 
@@ -29,6 +29,8 @@ EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}
 PORTDOCS=	*
 PORTEXAMPLES=	*
 WRKSRC=		${WRKDIR}/pyFltk-${PORTVERSION}
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|/usr/X11R6|${LOCALBASE}|g;s|package_data.*},||g;s|sunos5|dragonfly4', 'freebsd8', 'freebsd9', 'freebsd10', 'freebsd11', 'freebsd12|g" ${WRKSRC}/setup.py

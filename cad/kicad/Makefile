@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/cad/kicad/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	kicad
 PORTVERSION=	4.0.7
-PORTREVISION=	10
+PORTREVISION=	11
 PORTEPOCH=	2
 CATEGORIES=	cad
 

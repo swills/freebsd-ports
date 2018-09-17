@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/oyranos/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/oyranos/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	oyranos
 PORTVERSION=	0.9.6
@@ -40,7 +40,8 @@ CMAKE_ARGS+=	-DXDG_CONFIG_DIR=${PREFIX}/etc/xdg
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
 MAKE_JOBS_UNSAFE=yes
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	${LOCALBASE}/bin/doxygen:devel/doxygen
 
 PORTDOCS=	*

@@ -1,8 +1,8 @@
 # Created by: luigi@FreeBSD.org
-# $FreeBSD: head/benchmarks/fio/Makefile 477664 2018-08-20 17:18:04Z bapt $
+# $FreeBSD: head/benchmarks/fio/Makefile 479816 2018-09-15 05:57:20Z bapt $
 
 PORTNAME=	fio
-PORTVERSION=	3.8
+PORTVERSION=	3.10
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://brick.kernel.dk/snaps/
 

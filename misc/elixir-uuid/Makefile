@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/elixir-uuid/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/misc/elixir-uuid/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	elixir-uuid
 PORTVERSION=	1.1.8
@@ -15,5 +15,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	zyro
 
 ELIXIR_APP_NAME=uuid
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

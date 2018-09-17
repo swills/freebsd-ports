@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/immortal/Makefile 471956 2018-06-07 20:24:11Z dbaio $
+# $FreeBSD: head/sysutils/immortal/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	immortal
 PORTVERSION=	0.20.0
@@ -20,6 +20,8 @@ GH_TUPLE=	immortal:logrotate:6f52ae7:logrotate/src/github.com/immortal/logrotate
 		nbari:violetear:5c7cdfe:nbari/src/github.com/nbari/violetear \
 		go-yaml:yaml:5420a8b:yaml/src/github.com/go-yaml/yaml
 GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
+
+OPTIONS_DEFINE=	EXAMPLES
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \

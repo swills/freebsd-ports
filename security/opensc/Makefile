@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson
-# $FreeBSD: head/security/opensc/Makefile 473380 2018-06-26 10:09:46Z ale $
+# $FreeBSD: head/security/opensc/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	opensc
 PORTVERSION=	0.18.0
@@ -10,6 +10,8 @@ MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Libraries and utilities to access smart cards
 
 LICENSE=	LGPL21
+
+BROKEN_powerpc64=	fails to compile: cc1: unrecognized command line option "-Wno-unused-but-set-variable"
 
 OPTIONS_SINGLE=	BACKEND
 OPTIONS_SINGLE_BACKEND=PCSC OPENCT CTAPI

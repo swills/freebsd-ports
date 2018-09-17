@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/fsmtrie/Makefile 471219 2018-05-31 17:13:36Z truckman $
+# $FreeBSD: head/devel/fsmtrie/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fsmtrie
 PORTVERSION=	1.1.0
@@ -21,11 +21,12 @@ TEST_TARGET=	check
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOCS DOXYGEN
 OPTIONS_DEFAULT=DOXYGEN
 
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_ALL_TARGET=	html-local
+DOXYGEN_IMPLIES=	DOCS
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

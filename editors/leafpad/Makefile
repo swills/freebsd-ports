@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/editors/leafpad/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/editors/leafpad/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	leafpad
 PORTVERSION=	0.8.18.1
@@ -21,6 +21,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 
 PORTDOCS=	AUTHORS COPYING ChangeLog INSTALL README
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	@${CHMOD} a+x ${WRKSRC}/install-sh

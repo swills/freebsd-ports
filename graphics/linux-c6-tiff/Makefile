@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/graphics/linux-c6-tiff/Makefile 433503 2017-02-06 18:05:47Z tijl $
+# $FreeBSD: head/graphics/linux-c6-tiff/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libtiff
 PORTVERSION=	3.9.4
@@ -17,5 +17,7 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	jpeg
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

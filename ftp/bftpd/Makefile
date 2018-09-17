@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/ftp/bftpd/Makefile 463585 2018-03-04 16:44:31Z danilo $
+# $FreeBSD: head/ftp/bftpd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bftpd
 PORTVERSION=	4.9
@@ -20,6 +20,8 @@ WRKSRC=	${WRKDIR}/${PORTNAME}
 PLIST_FILES=	sbin/${PORTNAME} etc/${PORTNAME}.conf.sample \
 		man/man8/bftpd.8.gz
 PORTDOCS=	en pl sk
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/etc/bftpd.conf,${PREFIX}/etc/bftpd.conf,' \

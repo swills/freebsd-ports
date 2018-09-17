@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/connectfive/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/connectfive/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	connectfive
 PORTVERSION=	1.0.2
@@ -28,7 +28,7 @@ PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	*
 PORTDATA=	*
 
-.include <bsd.port.options.mk>
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|sdl-config|${SDL_CONFIG}|' ${WRKSRC}/Makefile.linux

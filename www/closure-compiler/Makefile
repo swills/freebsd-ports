@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/closure-compiler/Makefile 427016 2016-11-24 14:26:14Z jlaffaye $
+# $FreeBSD: head/www/closure-compiler/Makefile 479162 2018-09-06 21:49:02Z jlaffaye $
 
 PORTNAME=	closure-compiler
-PORTVERSION=	20160911
+PORTVERSION=	20180805
 CATEGORIES=	www java
 MASTER_SITES=	http://dl.google.com/closure-compiler/
 DISTNAME=	compiler-${PORTVERSION}
@@ -20,7 +20,7 @@ SUB_LIST=	JAVA="${JAVA}" PORTVERSION=${PORTVERSION}
 USE_JAVA=	yes
 
 PLIST_FILES=	bin/closure-compiler \
-		%%DATADIR%%/closure-compiler-v${PORTVERSION}.jar
+		${DATADIR}/closure-compiler-v${PORTVERSION}.jar
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/

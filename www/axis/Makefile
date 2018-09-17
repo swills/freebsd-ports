@@ -1,5 +1,5 @@
 # Created by: Kensaku MASUDA <greg@greg.rim.or.jp>
-# $FreeBSD: head/www/axis/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/axis/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=		axis
 DISTVERSION=		1_4
@@ -13,6 +13,7 @@ COMMENT=	Java SOAP implementation by Apache
 
 LICENSE=	APACHE20
 
+OPTIONS_DEFINE=	DOCS EXAMPLES
 OPTIONS_SINGLE=		AS
 OPTIONS_SINGLE_AS=	TOMCAT6 TOMCAT7
 OPTIONS_DEFAULT=	TOMCAT6

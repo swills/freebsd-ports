@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/x11-fonts/linux-c6-fontconfig/Makefile 433087 2017-02-01 20:10:41Z tijl $
+# $FreeBSD: head/x11-fonts/linux-c6-fontconfig/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fontconfig
 PORTVERSION=	2.8.0
@@ -15,6 +15,8 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	expat
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${RM} -r ${WRKSRC}/etc ${WRKSRC}/usr/share/fonts ${WRKSRC}/var

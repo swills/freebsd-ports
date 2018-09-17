@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 478695 2018-09-01 13:58:58Z danilo $
+# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fs-uae-launcher
 PORTVERSION=	2.8.4
@@ -23,5 +23,7 @@ INSTALLS_ICONS=	yes
 MAKE_ARGS+=	DESTDIR=${STAGEDIR} prefix=${PREFIX} PYTHON=${PYTHON_CMD}
 
 PYDISTUTILS_INSTALLARGS+=	--install-lib=${PYTHON_SITELIBDIR}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

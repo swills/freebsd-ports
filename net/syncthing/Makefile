@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/syncthing/Makefile 471953 2018-06-07 20:03:18Z swills $
+# $FreeBSD: head/net/syncthing/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	syncthing
 PORTVERSION=	0.14.48
@@ -25,6 +25,8 @@ PORTDOCS=	*
 
 USERS=		syncthing
 GROUPS=		syncthing
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${PORTNAME}/${PORTNAME} ; \

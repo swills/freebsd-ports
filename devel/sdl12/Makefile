@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/sdl12/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/devel/sdl12/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	sdl
 PORTVERSION=	1.2.15
-PORTREVISION=	11
+PORTREVISION=	12
 PORTEPOCH=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.libsdl.org/release/

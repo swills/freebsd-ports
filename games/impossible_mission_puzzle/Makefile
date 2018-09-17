@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/impossible_mission_puzzle/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/games/impossible_mission_puzzle/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	impossible_mission_puzzle
 PORTVERSION=	1.0.1
@@ -28,6 +28,8 @@ PORTDOCS=	README
 
 DESKTOP_ENTRIES="Impossible Mission puzzle" "" "${PORTNAME}" \
 		"${PORTNAME}" "Game;ArcadeGame;" ""
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	@cd ${WRKSRC} && ${CC} -o ${PORTNAME} ${CFLAGS} \

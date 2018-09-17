@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/devel/p5-Set-NestedGroups/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Set-NestedGroups/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Set-NestedGroups
 PORTVERSION=	0.01
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for grouped data eg ACL's, city/state/country etc
 
 USES=		perl5

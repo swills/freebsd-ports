@@ -1,8 +1,8 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/databases/py-python-swiftclient/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-python-swiftclient/Makefile 479879 2018-09-16 08:23:41Z trociny $
 
 PORTNAME=	python-swiftclient
-PORTVERSION=	3.5.0
+PORTVERSION=	3.6.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.5.21:devel/py-pbr@${PY_FLAVOR}
 
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 RUN_DEPENDS+=	${PY_FUTURES} \
-		${PYTHON_PKGNAMEPREFIX}six>=1.5.2:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=1.1:www/py-requests@${PY_FLAVOR}
 
 USES=		python

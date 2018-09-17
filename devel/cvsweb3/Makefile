@@ -1,5 +1,5 @@
 # Created by: SADA Kenji <sada@FreeBSD.org>
-# $FreeBSD: head/devel/cvsweb3/Makefile 467474 2018-04-16 10:48:08Z brnrd $
+# $FreeBSD: head/devel/cvsweb3/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	cvsweb
 PORTVERSION=	3.0.6
@@ -34,6 +34,8 @@ USES=		perl5 shebangfix
 SHEBANG_FILES=	cvsweb.cgi
 NO_BUILD=	yes
 NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.pre.mk>
 

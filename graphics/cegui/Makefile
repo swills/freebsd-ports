@@ -1,9 +1,9 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/graphics/cegui/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/cegui/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	cegui
 PORTVERSION=	0.8.7
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics devel
 MASTER_SITES=	SF/crayzedsgui/CEGUI%20Mk-2/0.8
 

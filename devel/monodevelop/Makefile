@@ -1,8 +1,8 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/devel/monodevelop/Makefile 478340 2018-08-29 05:43:08Z dbn $
+# $FreeBSD: head/devel/monodevelop/Makefile 479269 2018-09-09 06:22:42Z dbn $
 
 PORTNAME=	monodevelop
-PORTVERSION=	7.6
+PORTVERSION=	7.6.3.1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	devel
 
@@ -46,7 +46,7 @@ PAKET_DEPENDS=	ExtCore=0.8.46 \
 		System.ValueTuple=4.4.0
 PAKET_PACKAGEDIR=${WRKSRC}/external/fsharpbinding/packages
 
-USES=		autoreconf desktop-file-utils gettext gmake mono:nuget pathfix pkgconfig shared-mime-info ssl
+USES=		autoreconf desktop-file-utils gettext gmake gnome mono:nuget pathfix pkgconfig shared-mime-info ssl
 USE_GNOME=	gtksharp20 gnomesharp20
 INSTALLS_ICONS=	yes
 
@@ -56,8 +56,8 @@ CONFIGURE_ARGS=	--enable-release --disable-update-mimedb --disable-update-deskto
 INSTALL=	/usr/bin/install
 USE_GITHUB=	yes
 GH_ACCOUNT=	mono
-GH_TAGNAME=	3296905
-GH_TUPLE=	icsharpcode:RefactoringEssentials:d24ca71:1/external/RefactoringEssentials \
+GH_TAGNAME=	6594701	# release-7.6 @ 2018-08-30
+GH_TUPLE=	icsharpcode:RefactoringEssentials:0148f6a:1/external/RefactoringEssentials \
 		mono:debugger-libs:cd477ba:3/external/debugger-libs \
 		mono:guiunit:dd094e7:4/external/guiunit \
 		mono:libgit-binary:d8b2aca:6/external/libgit-binary \

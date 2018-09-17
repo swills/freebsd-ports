@@ -1,5 +1,5 @@
 # Created by: Max V. Kostikov <max@kostikov.co>
-# $FreeBSD: head/net/megatools/Makefile 478677 2018-09-01 12:31:27Z wen $
+# $FreeBSD: head/net/megatools/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	megatools
 PORTVERSION=	1.10.2
@@ -22,6 +22,8 @@ GNU_CONFIGURE=	yes
 USE_GNOME=	glib20
 
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 # Unsilence build

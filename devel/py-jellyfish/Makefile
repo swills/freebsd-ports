@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jellyfish/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-jellyfish/Makefile 479694 2018-09-13 20:45:14Z bdrewery $
 
 PORTNAME=	jellyfish
-PORTVERSION=	0.3.1
+PORTVERSION=	0.6.1
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -9,7 +9,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Library for doing approximate and phonetic matching of strings
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	BSD2CLAUSE
+LICENSE_FILES=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	distutils autoplist

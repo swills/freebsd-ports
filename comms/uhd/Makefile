@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/uhd/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/comms/uhd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	uhd
 PORTVERSION=	3.10.3.0
@@ -48,7 +48,7 @@ CMAKE_ARGS+=	-DPKG_LIB_DIR:STRING="share/uhd" -DUHD_TXRX_DEBUG_PRINTS="yes"
 
 IMAGE_FILE=	uhd-images_003.010.003.000-release.zip
 
-OPTIONS_DEFINE= DOXYGEN
+OPTIONS_DEFINE= DOXYGEN DOCS
 #OPTIONS_DEFAULT= DOXYGEN
 
 OPTIONS_SUB=yes

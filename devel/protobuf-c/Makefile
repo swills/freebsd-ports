@@ -1,5 +1,5 @@
 # Created by: Aaron Hurt <ahurt@anbcs.com>
-# $FreeBSD: head/devel/protobuf-c/Makefile 477241 2018-08-15 17:13:32Z truckman $
+# $FreeBSD: head/devel/protobuf-c/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=		protobuf-c
 PORTVERSION=		1.3.1
@@ -22,13 +22,14 @@ USE_LDCONFIG=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
 OPTIONS_DEFAULT=	DOXYGEN
 
 PORTDOCS=	*
 
 ALL_TARGET=	all
 INSTALL_TARGET=	install-strip
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_ALL_TARGET=	html-local
 

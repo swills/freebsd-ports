@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/security/linux-c6-openssl/Makefile 460347 2018-01-29 22:00:39Z tijl $
+# $FreeBSD: head/security/linux-c6-openssl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.1e
@@ -14,5 +14,7 @@ RPMVERSION=	57.el6
 USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

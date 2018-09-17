@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/vtk8/Makefile 474531 2018-07-12 19:03:54Z yuri $
+# $FreeBSD: head/math/vtk8/Makefile 479172 2018-09-06 22:18:27Z yuri $
 
 PORTNAME=	vtk
 DISTVERSION=	8.1.1
+PORTREVISION=	1
 CATEGORIES=	math graphics
 MASTER_SITES=	http://www.vtk.org/files/release/${VTK_SHORT_VER}/
 PKGNAMESUFFIX=	8
@@ -39,7 +40,7 @@ DATADIR=	${PREFIX}/share/vtk-${VTK_SHORT_VER}
 
 # Options
 OPTIONS_DEFINE=	DESIGNER DOCS OSMESA EXAMPLES
-#OPTIONS_DEFAULT=MPI Qt JAVA TCLTK DESIGNER
+OPTIONS_DEFAULT=	QT5
 OSMESA_DESC=	Use Mesa for off-screen rendering
 DESIGNER_DESC=	Build the Qt Designer plugin
 OPTIONS_SUB=	yes
@@ -71,7 +72,7 @@ QT4_CMAKE_ON=		-DVTK_QT_VERSION:STRING="4" \
 			-DVTK_Group_Qt:BOOL=ON
 
 QT5_USES=		qt:5
-QT5_USE=		QT=core,gui,sql,widgets,x11extras,qmake_build,buildtools_build
+QT5_USE=		QT=core,gui,sql,uiplugin,widgets,x11extras,qmake_build,buildtools_build
 QT5_CMAKE_ON=		-DVTK_QT_VERSION:STRING="5" \
 			-DCMAKE_PREFIX_PATH:STRING=${LOCALBASE}/lib/qt5 \
 			-DVTK_Group_Qt:BOOL=ON

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/tasksh/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/tasksh/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tasksh
 PORTVERSION=	1.2.0
@@ -10,5 +10,7 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Shell command that wraps Taskwarrior commands
 
 USES=		cmake compiler:c++11-lang readline
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

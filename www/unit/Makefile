@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/unit/Makefile 478429 2018-08-30 04:05:07Z danfe $
+# $FreeBSD: head/www/unit/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	unit
 PORTVERSION=	1.3
@@ -12,6 +12,8 @@ COMMENT?=	Dynamic web application server
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to build: nxt_conf_validation.c:275: undefined reference to __builtin_popcount
 
 USES+=		cpe
 

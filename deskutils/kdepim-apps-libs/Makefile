@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kdepim-apps-libs/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/deskutils/kdepim-apps-libs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kdepim-apps-libs
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -27,5 +27,7 @@ USE_QT=		core dbus gui network testlib uitools webkit widgets xml \
 USE_LDCONFIG=	yes
 
 DESCR=		${.CURDIR:H:H}/deskutils/kdepim/pkg-descr
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

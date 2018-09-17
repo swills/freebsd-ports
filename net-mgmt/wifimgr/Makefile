@@ -1,9 +1,8 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/net-mgmt/wifimgr/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net-mgmt/wifimgr/Makefile 479141 2018-09-06 19:18:34Z swills $
 
 PORTNAME=	wifimgr
-PORTVERSION=	1.11
-PORTREVISION=	2
+PORTVERSION=	1.12
 CATEGORIES=	net-mgmt sysutils
 MASTER_SITES=	http://opal.com/freebsd/ports/net-mgmt/wifimgr/ \
 		LOCAL/ehaupt

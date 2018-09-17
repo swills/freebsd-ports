@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/vapoursynth-waifu2x-w2xc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/vapoursynth-waifu2x-w2xc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	waifu2x-w2xc
 DISTVERSION=	r6
@@ -35,6 +35,8 @@ DOCSDIR=	${PREFIX}/share/doc/${PKGBASE}
 PLIST_FILES=	%%DATADIR%%/libwaifu2x-w2xc.so
 PORTDATA=	models
 PORTDOCS=	*.md
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/\*linux\*/*/' \

@@ -1,5 +1,5 @@
 # Created by: Kay Lehmann <kay_lehmann@web.de>
-# $FreeBSD: head/security/gorilla/Makefile 458754 2018-01-11 16:24:53Z danfe $
+# $FreeBSD: head/security/gorilla/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gorilla
 PORTVERSION=	1.5.3.6
@@ -16,6 +16,8 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	itcl>=3.4:lang/itcl \
 		wish:x11-toolkits/tk-wrapper
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

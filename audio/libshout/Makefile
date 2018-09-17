@@ -1,5 +1,5 @@
 # Created by: Zach Zurflu <zach@pabst.bendnet.com>
-# $FreeBSD: head/audio/libshout/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/audio/libshout/Makefile 479869 2018-09-16 00:08:01Z sunpoet $
 
 PORTNAME=	libshout
 PORTVERSION=	2.4.1
@@ -12,9 +12,6 @@ COMMENT=	Connect and transmit data to an Icecast media streaming server
 
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	undefined reference to `SSLeay_add_all_algorithms'
 
 LIB_DEPENDS=	libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis

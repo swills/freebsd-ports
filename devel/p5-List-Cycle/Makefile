@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-List-Cycle/Makefile 381151 2015-03-12 23:00:02Z adamw $
+# $FreeBSD: head/devel/p5-List-Cycle/Makefile 479391 2018-09-10 11:19:43Z des $
 
 PORTNAME=	List-Cycle
 PORTVERSION=	1.02
@@ -10,7 +10,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Objects for cycling through a list of values
-TAGS=		list cycle
 
 USES=		perl5
 USE_PERL5=	configure

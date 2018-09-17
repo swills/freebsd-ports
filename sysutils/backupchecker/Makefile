@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/backupchecker/Makefile 459921 2018-01-25 11:41:21Z martymac $
+# $FreeBSD: head/sysutils/backupchecker/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	backupchecker
 PORTVERSION=	1.9
@@ -18,6 +18,8 @@ USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} "s|'share','man'|'${MANPREFIX}/man'|" ${WRKSRC}/setup.py

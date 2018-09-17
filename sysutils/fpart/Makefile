@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/fpart/Makefile 453934 2017-11-10 21:57:56Z martymac $
+# $FreeBSD: head/sysutils/fpart/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fpart
 PORTVERSION=	1.0.0
@@ -18,7 +18,7 @@ CONFIGURE_ARGS=	--disable-embfts
 PLIST_FILES=	bin/fpart man/man1/fpart.1.gz
 PORTDOCS=	Changelog README TODO
 
-OPTIONS_DEFINE=	FPSYNC
+OPTIONS_DEFINE=	FPSYNC DOCS
 OPTIONS_DEFAULT=	FPSYNC
 FPSYNC_DESC=	Install fpsync tool
 FPSYNC_RUN_DEPENDS=	rsync:net/rsync \

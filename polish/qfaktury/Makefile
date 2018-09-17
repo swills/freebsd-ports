@@ -1,5 +1,5 @@
 # Created by: Piotr Rybicki (meritus@innervision.pl)
-# $FreeBSD: head/polish/qfaktury/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/polish/qfaktury/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	qfaktury
 PORTVERSION=	0.6.2
@@ -14,6 +14,8 @@ USES=		qmake qt:4
 USE_QT=		uic_build moc_build rcc_build corelib gui xml qt3support
 
 PORTDOCS=	ChangeLog.txt ReadMe.txt ReleaseNotes.txt TODO.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@cd ${WRKSRC} && ${REINPLACE_CMD} -e 's|@PREFIX@|${PREFIX}|g' qfaktury.pro \

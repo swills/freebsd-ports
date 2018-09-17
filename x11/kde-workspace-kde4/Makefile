@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 478483 2018-08-30 18:40:36Z adridg $
+# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	kde-workspace
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
-PORTREVISION=	25
+PORTREVISION=	26
 CATEGORIES=	x11 kde kde-applications
 PKGNAMESUFFIX=	-kde4
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/erlang-cowboy/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/erlang-cowboy/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	cowboy
 PORTVERSION=	1.1.2
@@ -18,7 +18,9 @@ ERL_BUILD_DEPS=	www/erlang-cowlib
 ERL_RUN_DEPS=	www/erlang-cowlib \
 		net/erlang-ranch
 
-post-install:
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}
 

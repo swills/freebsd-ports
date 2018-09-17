@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/afni/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/science/afni/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 ############################################################################
 # http://www.neuro.mcw.edu/Ports has the latest source distribution from
@@ -47,6 +47,8 @@ SHEBANG_FILES=	suma_change_spec \
 		pkundu/meica.libs/*.py \
 		pkundu/meica.libs/mdp/test/run_tests.py
 USE_GNOME=	glib20
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

@@ -1,5 +1,5 @@
 # Created by: Frank Altpeter <frank@altpeter.de>
-# $FreeBSD: head/net-im/centerim-devel/Makefile 464260 2018-03-12 17:00:10Z amdmi3 $
+# $FreeBSD: head/net-im/centerim-devel/Makefile 479433 2018-09-10 15:32:24Z tobik $
 
 PORTNAME=	centerim
 PORTVERSION=	4.22.10.11
@@ -18,6 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
 USES=		iconv gmake ncurses perl5 pkgconfig python:2.7,run shebangfix ssl
+USE_CXXSTD=	gnu++98
 USE_PERL5=	run
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ssl --with-openssl
@@ -29,7 +30,7 @@ SHEBANG_LANG=	gawk
 gawk_OLD_CMD=	/bin/gawk
 gawk_CMD=	/usr/bin/awk
 
-OPTIONS_DEFINE=	NLS MULTIBYTE FRIBIDI MSN YAHOO IRC JABBER GPGME RSS LJ GG
+OPTIONS_DEFINE=	NLS MULTIBYTE FRIBIDI MSN YAHOO IRC JABBER GPGME RSS LJ GG DOCS
 
 FRIBIDI_DESC=	Fribidi Support
 MSN_DESC=	MSN Protocol

@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <Kai_Allard_Liao@gmx.de>
-# $FreeBSD: head/sysutils/xcdroast/Makefile 468307 2018-04-25 22:00:04Z mat $
+# $FreeBSD: head/sysutils/xcdroast/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	xcdroast
 PORTVERSION=	0.98.a.16
@@ -34,9 +34,9 @@ CONFIGURE_ARGS=	--with-cdrtools-prefix=${LOCALBASE} \
 
 .if ${PORT_OPTIONS:MNLS}
 CONFIGURE_ARGS+=--disable-nls
-PLIST_SUB=	NLS="@comment "
+PLIST_SUB+=	NLS="@comment "
 .else
-PLIST_SUB=	NLS=""
+PLIST_SUB+=	NLS=""
 .endif
 
 .if ${PORT_OPTIONS:MGTK2}

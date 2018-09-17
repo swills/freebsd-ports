@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/bowtie/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/biology/bowtie/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=		bowtie
 PORTVERSION=		1.1.2
@@ -23,6 +23,8 @@ SHEBANG_FILES=	scripts/*.pl bowtie bowtie-build \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	BenLangmead
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/scripts

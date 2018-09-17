@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/step/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/science/step/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	step
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -21,6 +21,8 @@ USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
 USE_QT=		core dbus gui network opengl printsupport qml quick svg \
 		widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 pre-configure:
 # Avoid building translations, should the user pass

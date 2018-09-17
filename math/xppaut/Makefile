@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/xppaut/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/math/xppaut/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xppaut
 PORTVERSION=	7.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math graphics
 MASTER_SITES=	http://www.math.pitt.edu/~bard/bardware/
 DISTNAME=	${PORTNAME}${PORTVERSION}

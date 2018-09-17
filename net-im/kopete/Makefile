@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/kopete/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/net-im/kopete/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kopete
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -33,5 +33,7 @@ LLD_UNSAFE=	yes
 SHEBANG_FILES=	protocols/winpopup/winpopup-install \
 		protocols/winpopup/winpopup-send \
 		kopete/kconf_update/*.pl
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

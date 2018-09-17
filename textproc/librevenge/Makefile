@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/librevenge/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/textproc/librevenge/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	librevenge
 PORTVERSION=	0.0.4
@@ -19,12 +19,13 @@ INSTALL_TARGET=	install-strip
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/algorithm/string.hpp:devel/boost-libs
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
 
 CPPFLAGS=	-I${LOCALBASE}/include
 CONFIGURE_ARGS=	-disable-werror --disable-tests
 
 PORTDOCS=	*
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_CONFIGURE_OFF=	--without-docs
 

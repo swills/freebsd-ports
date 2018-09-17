@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/graphics/pqiv/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/graphics/pqiv/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pqiv
 PORTVERSION=	2.10.4
@@ -18,6 +18,8 @@ BUILD_DEPENDS=	bash:shells/bash
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	phillipberndt
+
+OPTIONS_DEFINE=	DOCS
 
 OPTIONS_SINGLE=		GTK
 OPTIONS_SINGLE_GTK=	GTK2 GTK3

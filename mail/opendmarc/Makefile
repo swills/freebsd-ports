@@ -1,5 +1,5 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/mail/opendmarc/Makefile 473663 2018-07-01 10:17:18Z dinoex $
+# $FreeBSD: head/mail/opendmarc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	opendmarc
 PORTVERSION=	1.3.2
@@ -30,7 +30,7 @@ USE_RC_SUBR=	opendmarc
 
 GNU_CONFIGURE=	yes
 
-OPTIONS_DEFINE=		SPF
+OPTIONS_DEFINE=		SPF DOCS
 OPTIONS_DEFAULT=	SPF
 
 SPF_DESC=		Enable support for SPF record checking

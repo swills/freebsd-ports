@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/pim-sieve-editor/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/deskutils/pim-sieve-editor/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pim-sieve-editor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -19,5 +19,7 @@ USE_LDCONFIG=	yes
 
 DESCR=		${.CURDIR:H:H}/deskutils/kdepim/pkg-descr
 
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

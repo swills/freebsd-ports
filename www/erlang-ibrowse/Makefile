@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/erlang-ibrowse/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/erlang-ibrowse/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ibrowse
 PORTVERSION=	4.4.0
@@ -15,5 +15,7 @@ LICENSE_COMB=	dual
 USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	cmullaparthi
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

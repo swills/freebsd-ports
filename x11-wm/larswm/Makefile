@@ -1,5 +1,5 @@
 # Created by: lab@fnurt.net
-# $FreeBSD: head/x11-wm/larswm/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/x11-wm/larswm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	larswm
 PORTVERSION=	7.5.3
@@ -18,6 +18,8 @@ PORTDOCS=	ChangeLog README README.9menu README.9wm \
 PLIST_FILES=	bin/larsclock bin/larsmenu bin/larsremote bin/larswm \
 		man/man1/larsclock.1.gz man/man1/larsmenu.1.gz \
 		man/man1/larsremote.1.gz man/man1/larswm.1.gz
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/games/burgerspace/Makefile 460940 2018-02-04 16:34:17Z martymac $
+# $FreeBSD: head/games/burgerspace/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	burgerspace
 PORTVERSION=	1.9.2
@@ -23,6 +23,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 PORTDOCS=	AUTHORS COPYING INSTALL NEWS README THANKS TODO
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|^pkgsounddir =.*|pkgsounddir = ${DATADIR}/sounds|' \

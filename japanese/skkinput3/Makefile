@@ -1,5 +1,5 @@
 # Created by: KOMATSU Shinichiro <koma2@jiro.c.u-tokyo.ac.jp>
-# $FreeBSD: head/japanese/skkinput3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/japanese/skkinput3/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	skkinput3
 PORTVERSION=	3.0.6
@@ -31,9 +31,9 @@ SKK10_DESC=	Install SKK10 elisp files
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MSKK10}
-PLIST_SUB=	SKK8="@comment " SKK10=""
+PLIST_SUB+=	SKK8="@comment " SKK10=""
 .else
-PLIST_SUB=	SKK8="" SKK10="@comment "
+PLIST_SUB+=	SKK8="" SKK10="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MDBSKKD}

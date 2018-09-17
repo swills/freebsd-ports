@@ -1,5 +1,5 @@
 # Created by: Pierre David <pdagog@gmail.com>, Jean Benoit <jean@unistra.fr>
-# $FreeBSD: head/net-mgmt/netmagis-www/Makefile 464190 2018-03-11 17:53:51Z riggs $
+# $FreeBSD: head/net-mgmt/netmagis-www/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	netmagis
 PKGNAMESUFFIX=	-www
@@ -22,6 +22,8 @@ MASTERDIR=	${.CURDIR}/../netmagis-common
 
 PKGMESSAGE=	${.CURDIR}/pkg-message
 PLIST=		${.CURDIR}/pkg-plist
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/htgtcl

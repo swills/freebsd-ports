@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/gprbuild/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/gprbuild/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gprbuild
 PORTVERSION=	${SNAPSHOT}
@@ -26,7 +26,7 @@ BUILD_WRKSRC=	${WRKSRC}/construction
 INSTALL_WRKSRC=	${BUILD_WRKSRC}
 INSTALL_TARGET=	install
 
-#OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS
 #DOCS_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
 #DOCS_ALL_TARGET=	gen-docs
 #DOCS_INSTALL_TARGET=	install-docs

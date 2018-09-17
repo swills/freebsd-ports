@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmocore/Makefile 478236 2018-08-27 17:25:16Z swills $
+# $FreeBSD: head/devel/libosmocore/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libosmocore
 PORTVERSION=	0.12.1
@@ -29,7 +29,9 @@ PORTDOCS=	*
 SHEBANG_FILES=	utils/conv_codes_gsm.py utils/conv_gen.py
 python_OLD_CMD=	/usr/bin/python2
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
+
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
 			dot:graphics/graphviz
 DOXYGEN_CONFIGURE_ENV_OFF=ac_cv_path_DOXYGEN=false

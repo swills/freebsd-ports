@@ -1,5 +1,5 @@
 # Created by: Euan Thoms <euan@potensol.com>
-# $FreeBSD: head/devel/sope3/Makefile 471451 2018-06-03 06:09:41Z acm $
+# $FreeBSD: head/devel/sope3/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=		sope3
 PORTVERSION=		3.2.10
@@ -12,6 +12,8 @@ MAINTAINER=		acm@FreeBSD.org
 COMMENT=		Extensive set of GNUstep web application frameworks
 
 LICENSE=		LGPL20
+
+BROKEN_powerpc64=	fails to build: bundle.make:301: STXSaxDriver.sax/Resources/Info-gnustep.plist] Illegal instruction (core dumped)
 
 LIB_DEPENDS=		libxml2.so:textproc/libxml2 \
 			libmemcached.so:databases/libmemcached

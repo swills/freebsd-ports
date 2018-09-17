@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/rebar/Makefile 421200 2016-09-01 09:29:05Z olgeni $
+# $FreeBSD: head/devel/rebar/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	rebar
 PORTVERSION=	2.6.4
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 BUILD_DEPENDS=	${LOCALBASE}/bin/escript:lang/erlang
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-OPTIONS_DEFINE=	BASH ZSH
+OPTIONS_DEFINE=	BASH ZSH EXAMPLES
 
 USE_GITHUB=	yes
 NO_ARCH=	yes

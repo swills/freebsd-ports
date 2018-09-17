@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-dri/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/graphics/linux-c7-dri/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dri
 PORTVERSION=	17.0.1
@@ -29,6 +29,8 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	expat libelf libpciaccess xorglibs
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${RM} ${STAGEDIR}${PREFIX}/usr/lib/libEGL.so.1

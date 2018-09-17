@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/textproc/linux-c7-expat/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/textproc/linux-c7-expat/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	expat
 PORTVERSION=	2.1.0
@@ -18,5 +18,7 @@ RPMVERSION=	10.el7_3
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

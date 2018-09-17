@@ -1,5 +1,5 @@
 # Created by: Marcin Cieslak <saper@SYSTEM.PL>
-# $FreeBSD: head/www/jericho-html/Makefile 471970 2018-06-08 02:46:08Z linimon $
+# $FreeBSD: head/www/jericho-html/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jericho-html
 PORTVERSION=	3.2
@@ -20,6 +20,8 @@ INTERFACES:=	"compile-time-dependencies/slf4j-api-1.6.1.jar:\
 
 PORTDOCS=	*
 PLIST_FILES+=	%%JAVAJARDIR%%/${PORTNAME}.jar
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	(cd ${WRKSRC} && ${RM} -r classes/* && ${SETENV}         \

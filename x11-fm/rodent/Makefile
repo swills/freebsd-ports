@@ -1,5 +1,5 @@
 # Created by: Jens K. Loewe <bsd@tuxproject.de>
-# $FreeBSD: head/x11-fm/rodent/Makefile 419625 2016-08-04 15:54:57Z marino $
+# $FreeBSD: head/x11-fm/rodent/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	rodent
 PORTVERSION=	5.3.16.3
@@ -30,7 +30,7 @@ SHEBANG_FILES=	configure
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	NLS DOCS
 OPTIONS_SUB=	yes
 
 NLS_USES=	gettext

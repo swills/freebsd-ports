@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libkcompactdisc/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/audio/libkcompactdisc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libkcompactdisc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -14,7 +14,7 @@ USE_QT=		core dbus phonon4\
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 
-OPTIONS_DEFINE=	ALSA
+OPTIONS_DEFINE=	ALSA DOCS
 
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 ALSA_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_ALSA

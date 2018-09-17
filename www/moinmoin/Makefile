@@ -1,9 +1,8 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/www/moinmoin/Makefile 475859 2018-07-30 00:05:20Z koobs $
+# $FreeBSD: head/www/moinmoin/Makefile 479472 2018-09-10 20:28:12Z sunpoet $
 
 PORTNAME=	moinmoin
-PORTVERSION=	1.9.9
-PORTREVISION=	1
+PORTVERSION=	1.9.10
 CATEGORIES=	www python
 MASTER_SITES=	https://static.moinmo.in/files/
 DISTNAME=	moin-${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/security/erlang-fast_tls/Makefile 472074 2018-06-09 17:54:27Z farrokhi $
+# $FreeBSD: head/security/erlang-fast_tls/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fast_tls
 PORTVERSION=	1.0.22
@@ -23,6 +23,8 @@ GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${OPENSSLINC}
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/erlang/lib/${PORTNAME}-${PORTVERSION}/priv/lib/*.so

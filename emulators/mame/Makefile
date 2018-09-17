@@ -1,8 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/mame/Makefile 476360 2018-08-04 14:28:32Z danilo $
+# $FreeBSD: head/emulators/mame/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME?=	mame
 PORTVERSION=	0.200
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	ports@FreeBSD.org
@@ -62,7 +63,7 @@ EMULATOR=	${MSUBTARGET}64
 .else
 EMULATOR=	${MSUBTARGET}
 .endif
-PLIST_SUB=	EMULATOR=${EMULATOR}
+PLIST_SUB+=	EMULATOR=${EMULATOR}
 
 post-patch:
 	@${RM} ${WRKSRC}/3rdparty/bx/include/compat/freebsd/dirent.h

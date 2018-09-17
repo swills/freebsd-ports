@@ -1,5 +1,5 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/security/stoken/Makefile 461562 2018-02-12 07:58:18Z yuri $
+# $FreeBSD: head/security/stoken/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	stoken
 DISTVERSION=	0.92
@@ -20,7 +20,7 @@ USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
-OPTIONS_DEFINE=	X11
+OPTIONS_DEFINE=	DOCS X11
 OPTIONS_SUB=	yes
 
 X11_CONFIGURE_WITH=	gtk

@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/multimedia/winff/Makefile 471481 2018-06-03 08:17:22Z acm $
+# $FreeBSD: head/multimedia/winff/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	WinFF
 PORTVERSION=	1.5.5
@@ -45,6 +45,8 @@ USE_FPC+=	cairo
 USE_GNOME+=	cairo
 INSTALLS_ICONS=yes
 .endif
+
+OPTIONS_DEFINE=	DOCS
 
 pre-configure:
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' ${BUILD_WRKSRC}/unit1.pas

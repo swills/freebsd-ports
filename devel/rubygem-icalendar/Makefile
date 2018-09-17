@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-icalendar/Makefile 430076 2016-12-30 22:32:04Z swills $
+# $FreeBSD: head/devel/rubygem-icalendar/Makefile 479561 2018-09-11 19:01:10Z sunpoet $
 
 PORTNAME=	icalendar
-PORTVERSION=	2.4.1
+PORTVERSION=	2.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,9 +11,11 @@ COMMENT=	Library for working with iCalendar files
 LICENSE=	BSD2CLAUSE GPLv2 RUBY
 LICENSE_COMB=	dual
 
-NO_ARCH=	yes
+RUN_DEPENDS=	rubygem-ice_cube>=0.16:devel/rubygem-ice_cube
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

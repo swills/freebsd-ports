@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/net/linux-c7-openldap/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/net/linux-c7-openldap/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openldap
 PORTVERSION=	2.4.44
@@ -16,6 +16,8 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	cyrus-sasl2 nspr nss
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 # do not install any openldap configuration directories/files
 post-patch:

@@ -1,5 +1,5 @@
 # Created by: nbm
-# $FreeBSD: head/www/roundup/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/roundup/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	roundup
 PORTVERSION=	1.5.1
@@ -17,7 +17,7 @@ CPE_VENDOR=	roundup-tracker
 USE_PYTHON=	distutils
 NO_ARCH=	yes
 
-OPTIONS_DEFINE=	SQLITE PGSQL MYSQL NLS
+OPTIONS_DEFINE=	DOCS SQLITE PGSQL MYSQL NLS
 OPTIONS_DEFAULT=SQLITE
 OPTIONS_SUB=	yes
 

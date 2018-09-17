@@ -1,9 +1,8 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/sysutils/dmidecode/Makefile 449544 2017-09-10 13:08:59Z sunpoet $
+# $FreeBSD: head/sysutils/dmidecode/Makefile 479853 2018-09-16 00:06:36Z sunpoet $
 
 PORTNAME=	dmidecode
-PORTVERSION=	3.1
-PORTREVISION=	1
+PORTVERSION=	3.2
 CATEGORIES=	sysutils
 MASTER_SITES=	SAVANNAH
 
@@ -20,16 +19,6 @@ OPTIONS_DEFINE=	DOCS
 MAKE_ENV=	DOCSDIR="${DOCSDIR}"
 USES=		tar:xz
 
-PLIST_FILES=	etc/periodic/daily/dmidecode \
-		man/man8/biosdecode.8.gz \
-		man/man8/dmidecode.8.gz \
-		man/man8/ownership.8.gz \
-		man/man8/vpddecode.8.gz \
-		sbin/biosdecode \
-		sbin/dmidecode \
-		sbin/ownership \
-		sbin/vpddecode
-PORTDOCS=	AUTHORS CHANGELOG README
 SUB_FILES=	dmidecode
 
 post-install:

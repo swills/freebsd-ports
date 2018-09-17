@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/p5-Net-IP-Resolver/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-Net-IP-Resolver/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Net-IP-Resolver
 PORTVERSION=	0.02
@@ -8,7 +8,7 @@ CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Net::IP::Resolver - Resolve IPs to a particular network
 
 BUILD_DEPENDS=	p5-Net-IP-Match-XS>=0.03:net-mgmt/p5-Net-IP-Match-XS \

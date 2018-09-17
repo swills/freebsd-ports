@@ -1,5 +1,5 @@
 # Created by: Janos Mohacsi <janos.mohacsi@dante.org.uk>
-# $FreeBSD: head/www/www6to4/Makefile 353178 2014-05-07 17:08:56Z ak $
+# $FreeBSD: head/www/www6to4/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	www6to4
 PORTVERSION=	1.6
@@ -19,6 +19,8 @@ USE_RC_SUBR=	www6to4
 PORTDOCS=	README
 
 ALL_TARGET=	www6to4
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/etc,${ETCDIR},' \

@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-libtasn1/Makefile 464668 2018-03-16 09:41:38Z jhale $
+# $FreeBSD: head/security/linux-c7-libtasn1/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libtasn1
 PORTVERSION=	4.10
@@ -18,5 +18,7 @@ USES=		cpe linux:c7
 CPE_VENDOR=	gnu
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Encoding-FixLatin/Makefile 400843 2015-11-05 11:03:12Z tobez $
+# $FreeBSD: head/converters/p5-Encoding-FixLatin/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Encoding-FixLatin
 PORTVERSION=	1.04
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:GRANTM
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Takes mixed encoding input and produces UTF-8 output
 
 USES=		perl5

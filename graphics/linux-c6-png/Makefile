@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/graphics/linux-c6-png/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/graphics/linux-c6-png/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libpng
 PORTVERSION=	1.2.49
@@ -14,5 +14,7 @@ RPMVERSION=	2.el6_7
 USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

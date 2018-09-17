@@ -1,5 +1,5 @@
 # Created by: rhwang@bigpanda.com
-# $FreeBSD: head/sysutils/most/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/most/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	most
 PORTVERSION=	5.0.0
@@ -24,6 +24,8 @@ PLIST_FILES=	bin/most man/man1/most.1.gz
 PORTDOCS=	README changes.txt lesskeys.rc most-fun.txt most.doc most.rc
 
 PORTSCOUT=	skipv:5.0.0a
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|<malloc\.h>|<stdlib.h>|' \

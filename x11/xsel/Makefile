@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/x11/xsel/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/xsel/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xsel
 PORTVERSION=	0.04.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11
 MASTER_SITES=	http://BSDforge.com/projects/source/x11/xsel/
 

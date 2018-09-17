@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/open3d/Makefile 477556 2018-08-19 07:45:40Z yuri $
+# $FreeBSD: head/graphics/open3d/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	Open3D
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

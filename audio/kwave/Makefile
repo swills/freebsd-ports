@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kwave/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/kwave/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kwave
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -33,6 +33,8 @@ ALSA_CMAKE_BOOL=		WITH_ALSA
 ALSA_LIB_DEPENDS=		libasound.so:audio/alsa-lib
 PULSEAUDIO_CMAKE_BOOL=		WITH_PULSEAUDIO
 PULSEAUDIO_LIB_DEPENDS=		libpulse.so:audio/pulseaudio
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

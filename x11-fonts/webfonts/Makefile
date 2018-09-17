@@ -1,5 +1,5 @@
 # Created by: Konstantinos Konstantinidis <kkonstan@daemon.gr>
-# $FreeBSD: head/x11-fonts/webfonts/Makefile 424233 2016-10-19 09:04:41Z olgeni $
+# $FreeBSD: head/x11-fonts/webfonts/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	webfonts
 PORTVERSION=	0.30
@@ -32,7 +32,7 @@ EXTRACT_CMD=		${LOCALBASE}/bin/cabextract
 EXTRACT_BEFORE_ARGS=	-qLF '[a-uw-z]*.ttf' -d ${WRKSRC}
 EXTRACT_AFTER_ARGS=
 
-OPTIONS_DEFINE=	EXTRAFONTS CLEARTYPE NEWVERDANA
+OPTIONS_DEFINE=	EXTRAFONTS CLEARTYPE NEWVERDANA DOCS
 OPTIONS_SUB=	yes
 
 EXTRAFONTS_DESC=	Fonts licensed under MS Windows license

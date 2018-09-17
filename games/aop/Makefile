@@ -1,5 +1,5 @@
 # Created by: Aaron Zauner <az_mail@gmx.at>
-# $FreeBSD: head/games/aop/Makefile 408072 2016-02-04 18:41:27Z marino $
+# $FreeBSD: head/games/aop/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	aop
 PORTVERSION=	0.6
@@ -21,6 +21,8 @@ MAKE_ARGS=	LDFLAGS="${LDFLAGS} -lncurses"
 ALL_TARGET=	#empty
 
 PORTDOCS=	README
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${STAGEDIR}${PREFIX}|g' \

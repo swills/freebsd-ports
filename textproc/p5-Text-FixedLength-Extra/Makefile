@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/textproc/p5-Text-FixedLength-Extra/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-FixedLength-Extra/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Text-FixedLength-Extra
 PORTVERSION=	1.1
@@ -8,7 +8,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Various niceties for p5-Text-FixedLength lovers
 
 BUILD_DEPENDS=	p5-Text-FixedLength>=0:textproc/p5-Text-FixedLength

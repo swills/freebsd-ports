@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/www/webinject/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/www/webinject/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	webinject
 PORTVERSION=	1.41
@@ -31,6 +31,8 @@ PLIST_FILES=	bin/webinject.pl \
 		${DATADIR:S,^${PREFIX}/,,}/testcases.xml
 
 PORTDOCS=	LICENSE README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

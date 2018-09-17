@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/xfce4-panel-profiles/Makefile 475914 2018-07-30 20:21:27Z madpilot $
+# $FreeBSD: head/x11-wm/xfce4-panel-profiles/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xfce4-panel-profiles
 PORTVERSION=	1.0.8
@@ -18,6 +18,8 @@ NO_ARCH=	yes
 HAS_CONFIGURE=	yes
 SHEBANG_FILES=	xfce4-panel-profiles/xfce4-panel-profiles.py \
 		xfce4-panel-profiles/panelconfig.py
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${RLN} ${STAGEDIR}${PREFIX}/share/locale ${STAGEDIR}${PREFIX}/share/${PORTNAME}/locale

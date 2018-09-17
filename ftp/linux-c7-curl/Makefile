@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/ftp/linux-c7-curl/Makefile 456040 2017-12-11 14:40:06Z tijl $
+# $FreeBSD: head/ftp/linux-c7-curl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	curl
 PORTVERSION=	7.29.0
@@ -20,5 +20,7 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	libssh2 nspr nss openldap
 USE_LINUX_RPM=	nolib
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

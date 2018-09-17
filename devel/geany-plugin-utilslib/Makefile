@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/geany-plugin-utilslib/Makefile 454620 2017-11-21 17:59:25Z madpilot $
+# $FreeBSD: head/devel/geany-plugin-utilslib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	geany-plugin-utilslib
 PORTVERSION=	${GEANY_VER}
@@ -6,6 +6,8 @@ CATEGORIES=	devel
 
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Geany plugin: ${${GEANY_PLUGIN}_DESC}
+
+OPTIONS_DEFINE=	DOCS
 
 .include "${.CURDIR}/../geany-plugins/files/Makefile.common"
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/analitza/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/analitza/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	analitza
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -23,5 +23,7 @@ USE_LDCONFIG=	yes
 SHLIB_VER=	8.0.0
 PLIST_SUB+=	SHLIB_VER="${SHLIB_VER}" \
 		SHLIB_SHVER="${SHLIB_VER:R:R}"
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

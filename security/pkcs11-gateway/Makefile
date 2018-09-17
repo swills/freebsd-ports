@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/pkcs11-gateway/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/security/pkcs11-gateway/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pkcs11-gateway
 PORTVERSION=	1.2
@@ -19,6 +19,8 @@ PLIST_FILES=	bin/pkcs11-gateway lib/libpkcs11-gateway.so \
 		lib/libpkcs11-gateway.so.1
 
 PORTDOCS=	README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pkcs11-gateway ${STAGEDIR}${PREFIX}/bin

@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/dissy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/dissy/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dissy
 PORTVERSION=	10
@@ -23,6 +23,8 @@ GH_ACCOUNT=	SimonKagstrom
 GH_TAGNAME=	2f1005e
 
 PORTDOCS=	COPYING ChangeLog README UPGRADE
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

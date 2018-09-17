@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/menulibre/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/x11/menulibre/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	menulibre
 PORTVERSION=	2.2.0
@@ -21,6 +21,8 @@ USES=		desktop-file-utils gettext gnome python:3.4+
 USE_GNOME=	intltool pygobject3
 USE_PYTHON=	distutils
 INSTALLS_ICONS=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

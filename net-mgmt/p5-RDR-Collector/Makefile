@@ -1,5 +1,5 @@
 # Created by: Eugene Grosbein <eugen@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/p5-RDR-Collector/Makefile 465798 2018-03-28 11:37:37Z eugen $
+# $FreeBSD: head/net-mgmt/p5-RDR-Collector/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	RDR-Collector
 PORTVERSION=	1.0000
@@ -16,6 +16,8 @@ LICENSE_COMB=	dual
 USES=		perl5 shebangfix
 USE_PERL5=	configure
 SHEBANG_FILES=	examples/*.pl
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

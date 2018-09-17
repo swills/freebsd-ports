@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/ddgr/Makefile 467153 2018-04-12 13:43:53Z amdmi3 $
+# $FreeBSD: head/www/ddgr/Makefile 479524 2018-09-11 13:07:32Z amdmi3 $
 
 PORTNAME=	ddgr
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

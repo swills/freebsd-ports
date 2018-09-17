@@ -1,8 +1,9 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/www/links/Makefile 479089 2018-09-06 06:56:07Z yuri $
+# $FreeBSD: head/www/links/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	links
 DISTVERSION=	2.16
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://links.twibright.com/download/

@@ -1,14 +1,18 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/net/py-gspread/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-gspread/Makefile 479230 2018-09-08 06:54:27Z mat $
 
 PORTNAME=	gspread
-PORTVERSION=	2.0.0
+PORTVERSION=	3.0.1
+DISTVERSIONPREFIX=     v
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Google Spreadsheets Python API
+
+USE_GITHUB=     yes
+GH_ACCOUNT=     burnash
 
 LICENSE=	MIT
 

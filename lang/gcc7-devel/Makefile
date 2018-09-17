@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7-devel/Makefile 478993 2018-09-04 22:26:16Z kbowling $
+# $FreeBSD: head/lang/gcc7-devel/Makefile 479808 2018-09-14 21:21:31Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	7.3.1.s20180830
+PORTVERSION=	7.3.1.s20180913
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -101,7 +101,7 @@ CONFIGURE_ARGS+=--disable-nls \
 		--with-system-zlib
 MAKE_ARGS+=	MAKEINFOFLAGS="--no-split"
 USE_LDCONFIG=	${TARGLIB}
-PLIST_SUB=	GCC_VERSION=${GCC_VERSION} \
+PLIST_SUB+=	GCC_VERSION=${GCC_VERSION} \
 		GNU_HOST=${CONFIGURE_TARGET} \
 		SUFFIX=${SUFFIX}
 INFO=		gcc${SUFFIX}/cpp \

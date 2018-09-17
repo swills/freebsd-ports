@@ -1,9 +1,9 @@
 # Created by: 1wardd@airmail.net
-# $FreeBSD: head/x11-toolkits/lesstif/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-toolkits/lesstif/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	lesstif
 PORTVERSION=	0.95.2
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF

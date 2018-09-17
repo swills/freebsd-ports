@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/mail/fastforward/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/mail/fastforward/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fastforward
 PORTVERSION=	0.51
@@ -18,6 +18,8 @@ FILES=	fastforward printforward setforward newaliases printmaillist setmaillist 
 PORTDOCS=	ALIASES
 
 PLIST_FILES=	${FILES:S,^,bin/,} ${FILES:S,^,man/man1/,:S,$,.1.gz,} ${FILES:S,^,man/cat1/,:S,$,.0.gz,}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 .for binfile in ${FILES}

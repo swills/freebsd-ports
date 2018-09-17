@@ -1,25 +1,25 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Directory-Scratch/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Directory-Scratch/Makefile 479725 2018-09-13 21:54:46Z sunpoet $
 
 PORTNAME=	Directory-Scratch
-PORTVERSION=	0.15
-PORTREVISION=	1
+PORTVERSION=	0.18
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy-to-use self-cleaning scratch space
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Path-Class>0:devel/p5-Path-Class \
-		p5-File-Slurp>=9999.12:devel/p5-File-Slurp \
-		p5-String-Random>0:devel/p5-String-Random
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Path-Class>=0:devel/p5-Path-Class \
+		p5-Path-Tiny>=0.060:devel/p5-Path-Tiny \
+		p5-String-Random>=0:devel/p5-String-Random
 
 USES=		perl5
-USE_PERL5=	configure
+USE_PERL5=	modbuildtiny
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Alexey V. Antipovsky <kemm@in-line.ru>
-# $FreeBSD: head/emulators/libspectrum/Makefile 473969 2018-07-05 13:39:55Z rene $
+# $FreeBSD: head/emulators/libspectrum/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libspectrum
 PORTVERSION=	1.4.4
@@ -21,7 +21,9 @@ USE_LDCONFIG=	yes
 
 INSTALL_TARGET=	install-strip
 
-post-install:
+OPTIONS_DEFINE=	DOCS
+
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} AUTHORS ChangeLog README THANKS \
 	    doc/libspectrum.txt ${STAGEDIR}${DOCSDIR}

@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/games/glob2/Makefile 478096 2018-08-26 04:27:23Z tobik $
+# $FreeBSD: head/games/glob2/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	glob2
 PORTVERSION=	0.9.4.4
-PORTREVISION=	23
+PORTREVISION=	24
 CATEGORIES=	games
 MASTER_SITES=	SAVANNAH/${PORTNAME}/${PORTVERSION:R}/
 

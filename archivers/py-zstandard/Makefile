@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/py-zstandard/Makefile 476274 2018-08-03 00:17:01Z yuri $
+# $FreeBSD: head/archivers/py-zstandard/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	zstandard
 DISTVERSION=	0.9.1
@@ -11,6 +11,8 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Zstandard bindings for Python, a full-featured version
 
 LICENSE=	BSD2CLAUSE
+
+BROKEN_powerpc64=	fails to build: cffi.error.CDefError: parse error
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.8.0:devel/py-cffi@${PY_FLAVOR}
 #LIB_DEPENDS=	libzstd.so:archivers/zstd # system-zstd is broken, see comment below

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/lang/fasm/Makefile 465882 2018-03-29 10:48:13Z krion $
+# $FreeBSD: head/lang/fasm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fasm
 PORTVERSION=	1.73.02
@@ -18,6 +18,8 @@ IA32_BINARY_PORT=	yes
 PLIST_FILES=	bin/fasm
 PORTDOCS=	*
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

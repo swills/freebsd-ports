@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-URI-Title/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-URI-Title/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	URI-Title
 PORTVERSION=	1.86
@@ -8,7 +8,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Get the titles of things on the web in a sensible way
 
 COMMON_DEPENDS=	p5-File-Type>=0.22:devel/p5-File-Type \

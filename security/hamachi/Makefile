@@ -1,5 +1,5 @@
 # Created by: Lapo Luchini <lapo@lapo.it>
-# $FreeBSD: head/security/hamachi/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/security/hamachi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hamachi
 DISTVERSION=	0.9.9.9-20
@@ -20,6 +20,8 @@ USE_RC_SUBR=	hamachi
 PLIST_FILES=	bin/hamachi bin/hamachi-init sbin/hamachi-tuncfg
 PORTDOCS=	README CHANGES
 MAKE_ENV=	HAMACHI_DST=${STAGEDIR}${PREFIX}/bin TUNCFG_DST=${STAGEDIR}${PREFIX}/sbin
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${RM} ${WRKSRC}/tuncfg/tuncfg

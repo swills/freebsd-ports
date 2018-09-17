@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/gnatsd/Makefile 478521 2018-08-31 06:40:10Z olgeni $
+# $FreeBSD: head/net/gnatsd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gnatsd
 PORTVERSION=	1.3.0
@@ -17,6 +17,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	nats-io
 
 USE_RC_SUBR=	gnatsd.sh
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc

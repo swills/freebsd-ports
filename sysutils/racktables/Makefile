@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/racktables/Makefile 460974 2018-02-05 14:03:42Z vanilla $
+# $FreeBSD: head/sysutils/racktables/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	racktables
 DISTVERSION=	0.21.1
@@ -28,7 +28,7 @@ PLIST_SUB=	WWWDIR_REL=${WWWDIR_REL} WWWDIR=${WWWDIR}
 WWWUSER?=	www
 WWWGRP?=	www
 
-OPTIONS_DEFINE=	LDAP SNMP CURL PCNTL PCRE
+OPTIONS_DEFINE=	LDAP SNMP CURL PCNTL PCRE EXAMPLES
 PCRE_DESC=	Regular Expression Support
 PCNTL_DESC=	pcntl Support
 LDAP_USE=	PHP=ldap

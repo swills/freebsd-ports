@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/jchessboard/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/games/jchessboard/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jchessboard
 PORTVERSION=	1.5
@@ -30,6 +30,8 @@ SUB_LIST=	JARFILE=${JARFILE} \
 PORTDOCS=	*
 
 JARFILE=	JChessBoard.jar
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/net/linux-c6-openldap/Makefile 441768 2017-05-26 10:26:39Z tijl $
+# $FreeBSD: head/net/linux-c6-openldap/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openldap
 PORTVERSION=	2.4.40
@@ -15,6 +15,8 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	cyrus-sasl2 nss nspr
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 # do not install any openldap configuration directories/files
 post-patch:

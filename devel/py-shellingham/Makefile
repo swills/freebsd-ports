@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-shellingham/Makefile 477418 2018-08-17 10:10:58Z matthew $
+# $FreeBSD: head/devel/py-shellingham/Makefile 479832 2018-09-15 11:34:01Z matthew $
 
 PORTNAME=	shellingham
-PORTVERSION=	1.2.4
+PORTVERSION=	1.2.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

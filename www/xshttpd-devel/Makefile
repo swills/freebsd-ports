@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@fxq.nl>
-# $FreeBSD: head/www/xshttpd-devel/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/www/xshttpd-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xshttpd
 DISTVERSION=	3.7b35
@@ -22,7 +22,7 @@ USE_RC_SUBR=	xshttpd
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-hier=bsd --with-userid=${WWWOWN}:${WWWGRP}
 
-OPTIONS_DEFINE=		BDB CURL LDAP M4 NETPBM PERL
+OPTIONS_DEFINE=		BDB CURL LDAP M4 NETPBM PERL DOCS
 OPTIONS_DEFAULT=	BDB CURL M4 NETPBM
 OPTIONS_SUB=		yes
 BDB_USES=		bdb:5+

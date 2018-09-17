@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/mail/sieve-connect/Makefile 474913 2018-07-18 22:53:00Z yuri $
+# $FreeBSD: head/mail/sieve-connect/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sieve-connect
 DISTVERSION=	0.89
@@ -29,6 +29,8 @@ PLIST_FILES=	bin/sieve-connect \
 		man/man1/sieve-connect.1.gz
 
 PORTDOCS=	ChangeLog README.md TODO
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/sieve-connect \

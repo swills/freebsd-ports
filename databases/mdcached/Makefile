@@ -1,5 +1,5 @@
 # Created by: Ivan Voras <ivoras@FreeBSD.org>
-# $FreeBSD: head/databases/mdcached/Makefile 385781 2015-05-08 13:40:03Z amdmi3 $
+# $FreeBSD: head/databases/mdcached/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mdcached
 PORTVERSION=	1.0.9
@@ -17,6 +17,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/${PORTNAME}
 USE_LDCONFIG=	yes
 
 PORTDOCS=	UserGuide.txt mdcached.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's|ADDCFLAGS = -Wall -g -O3 -march=native|ADDCFLAGS = ${CFLAGS}|' \

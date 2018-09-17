@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Perl6-Subs/Makefile 471649 2018-06-04 18:09:35Z sunpoet $
+# $FreeBSD: head/lang/p5-Perl6-Subs/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Perl6-Subs
 PORTVERSION=	0.05
@@ -8,7 +8,7 @@ CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl6::Subs - Define your subroutines in the Perl 6 style
 
 LICENSE=	LGPL21+

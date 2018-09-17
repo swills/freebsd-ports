@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx-devel/Makefile 478331 2018-08-28 22:04:02Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile 479498 2018-09-11 02:13:18Z osa $
 
 PORTNAME=	nginx
 PORTVERSION=	1.15.3
@@ -195,6 +195,12 @@ _addextmod=	add-module
 
 .for mod in ${DSO_BASEMODS}
 CONFIGURE_ARGS+=	--with-${mod}${_addbasemod}
+.endfor
+
+# Some modules depend on other being there before, for example, devel_kit needs
+# to be there before a few other.
+.for mod in ${FIRST_DSO_EXTMODS}
+CONFIGURE_ARGS+=	--${_addextmod}=${WRKSRC_${mod}}${${mod:tu}_SUBDIR}
 .endfor
 
 .for mod in ${DSO_EXTMODS}

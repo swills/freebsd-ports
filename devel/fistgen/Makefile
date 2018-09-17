@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/devel/fistgen/Makefile 402505 2015-11-28 03:28:43Z amdmi3 $
+# $FreeBSD: head/devel/fistgen/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	fistgen
 PORTVERSION=	0.2.1
@@ -19,6 +19,8 @@ PORTDOCS=	*
 PORTEXAMPLES=	*
 PLIST_FILES=	sbin/fistgen \
 		man/man8/fistgen.8.gz
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

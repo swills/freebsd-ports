@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/ffms2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/multimedia/ffms2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ffms2
 DISTVERSION=	2.23
@@ -27,6 +27,8 @@ CPPFLAGS+=	`pkg-config vapoursynth --cflags`
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 DATADIR=	${PREFIX}/lib/vapoursynth
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '/^dist_doc_DATA/s,=,& \

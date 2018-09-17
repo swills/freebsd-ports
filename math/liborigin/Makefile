@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/liborigin/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/math/liborigin/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	liborigin
 PORTVERSION=	2.0.0
@@ -23,7 +23,9 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
+
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 post-patch-DOXYGEN-off:

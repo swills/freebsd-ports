@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/statsite/Makefile 477497 2018-08-18 11:46:07Z tobik $
+# $FreeBSD: head/net-mgmt/statsite/Makefile 479293 2018-09-09 16:07:07Z tobik $
 
 PORTNAME=	statsite
 PORTVERSION=	0.8.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	rbarabas@rbarabas.info
@@ -11,7 +12,7 @@ COMMENT=	C implementation of statsd
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		autoreconf
+USES=		autoreconf python:env
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	armon
@@ -20,10 +21,18 @@ MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
 
 USERS=		statsd
 GROUPS=		statsd
+USE_RC_SUBR=	statsite
 
 OPTIONS_DEFINE=	DOCS
 
 PORTDOCS=	README.md
+
+post-patch:
+	@${REINPLACE_CMD} -e 's,python,${PYTHON_CMD},' \
+		-e 's,/usr/libexec/statsite,${DATADIR},' \
+		-e '/daemonize/d' \
+		-e '/pid_file/d' \
+		${WRKSRC}/rpm/statsite.conf.example
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/rpm/statsite.conf.example \

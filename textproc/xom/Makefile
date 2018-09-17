@@ -1,5 +1,5 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/textproc/xom/Makefile 475664 2018-07-29 16:58:24Z danilo $
+# $FreeBSD: head/textproc/xom/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	xom
 PORTVERSION=	1.2.11
@@ -18,7 +18,7 @@ JAVA_VERSION=	1.6+
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/XOM
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 PLIST_FILES=	%%JAVAJARDIR%%/${PORTNAME}.jar
 PORTDOCS=	overview.html apidocs

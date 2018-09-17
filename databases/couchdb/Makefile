@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/databases/couchdb/Makefile 474499 2018-07-12 10:12:06Z dch $
+# $FreeBSD: head/databases/couchdb/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	couchdb
 DISTVERSION=	1.7.2
@@ -45,6 +45,8 @@ GROUPS=		couchdb
 STRIP=	#empty
 
 INFO=		CouchDB
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

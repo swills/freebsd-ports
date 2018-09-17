@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/mininet/Makefile 478601 2018-08-31 17:42:18Z yuri $
+# $FreeBSD: head/net/mininet/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	mininet
 PORTVERSION=	2.3.0d1
@@ -25,6 +25,8 @@ USE_PYTHON=	distutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	akoshibe
 GH_TAGNAME=	b88c58c
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-build:
 	@${CC} ${WRKSRC}/mnexec.c -o ${BUILD_WRKSRC}/mnexec

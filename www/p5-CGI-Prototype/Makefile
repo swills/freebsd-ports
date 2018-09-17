@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-Prototype/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Prototype/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	CGI-Prototype
 PORTVERSION=	0.9054
@@ -8,7 +8,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create a CGI application by subclassing
 
 COMMON_DEPENDS=	p5-Class-Prototyped>0:devel/p5-Class-Prototyped \

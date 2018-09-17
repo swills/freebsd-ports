@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/audiocd-kio/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/audio/audiocd-kio/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	audiocd-kio
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -27,7 +27,7 @@ USE_QT=		core dbus gui network phonon4 printsupport widgets xml \
 
 USE_LDCONFIG=	yes
 
-OPTIONS_DEFINE=	LAME
+OPTIONS_DEFINE=	LAME DOCS
 LAME_DESC=	Install LAME MP3 audio encoder
 LAME_RUN_DEPENDS=	lame:audio/lame
 

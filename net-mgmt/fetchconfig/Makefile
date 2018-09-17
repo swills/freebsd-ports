@@ -1,5 +1,5 @@
 # Created by: salexanov@gmail.com
-# $FreeBSD: head/net-mgmt/fetchconfig/Makefile 465462 2018-03-24 18:38:07Z riggs $
+# $FreeBSD: head/net-mgmt/fetchconfig/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fetchconfig
 DISTVERSION=	0.26
@@ -30,6 +30,8 @@ MODULES=	model/3ComMSR.pm model/Abstract.pm model/Acme.pm \
 	       	model/Parks.pm model/ProCurve.pm model/Riverstone.pm \
 		model/TellabsMSR.pm model/Terayon.pm Constants.pm Logger.pm
 PORTDOCS=	CHANGES README device_table.example
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.pl \

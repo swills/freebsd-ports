@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/read-edid/Makefile 420524 2016-08-20 18:43:29Z danfe $
+# $FreeBSD: head/sysutils/read-edid/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	read-edid
 PORTVERSION=	3.0.2
@@ -15,5 +15,7 @@ USES=		cmake localbase
 
 PLIST_FILES=	bin/get-edid bin/parse-edid man/man1/get-edid.1.gz
 PORTDOCS=	AUTHORS ChangeLog LICENSE README
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

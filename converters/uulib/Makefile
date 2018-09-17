@@ -1,5 +1,5 @@
 # Created by: Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
-# $FreeBSD: head/converters/uulib/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/converters/uulib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	uulib
 PORTVERSION=	0.5.20
@@ -28,6 +28,8 @@ SHLIB_VER=	3
 DOCFILES=	HISTORY doc/Makefile doc/README doc/binhex.fig \
 		doc/library.ltx doc/structure.fig doc/td-v1.c doc/td-v2.c \
 		doc/td-v3.c doc/test.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${SED} -e 's,FUNKYTOKENHERE,${PREFIX}/,' \

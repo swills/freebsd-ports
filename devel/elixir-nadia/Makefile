@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-nadia/Makefile 473948 2018-07-05 05:12:54Z olgeni $
+# $FreeBSD: head/devel/elixir-nadia/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	nadia
 DISTVERSIONPREFIX=	v
@@ -19,5 +19,7 @@ MIX_BUILD_DEPS=	devel/elixir-poison \
 		www/elixir-httpoison
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

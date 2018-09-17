@@ -1,5 +1,5 @@
 # Created by: Alexey A.Ukhov <auk@startext.de>
-# $FreeBSD: head/www/mod_chroot/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_chroot/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_chroot
 PORTVERSION=	0.5
@@ -16,6 +16,8 @@ AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 
 PORTDOCS=	INSTALL CAVEATS README.Apache20 README
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

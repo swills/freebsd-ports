@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/tint-devel/Makefile 413791 2016-04-22 19:49:18Z lme $
+# $FreeBSD: head/x11/tint-devel/Makefile 479891 2018-09-16 12:16:53Z antoine $
 
 PORTNAME=	tint2
 PORTVERSION=	2.00.${DATE}
@@ -22,6 +22,8 @@ LIB_DEPENDS=	libcairo.so:graphics/cairo \
 CONFLICTS=	tint2-[0-9]*
 
 IGNORE=		-devel version is older than x11/tint
+DEPRECATED=	Use x11/tint instead
+EXPIRATION_DATE=	2018-09-29
 
 USES=		alias cmake pkgconfig tar:xz
 USE_GNOME=	glib20 gtk20 pango

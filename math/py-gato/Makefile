@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/math/py-gato/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-gato/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	gato
 PORTVERSION=	1.2.2
@@ -21,6 +21,8 @@ NO_ARCH=	yes
 PORTEXAMPLES=	*
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

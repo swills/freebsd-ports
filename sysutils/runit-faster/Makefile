@@ -1,10 +1,10 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/sysutils/runit-faster/Makefile 470770 2018-05-24 11:43:56Z tobik $
+# $FreeBSD: head/sysutils/runit-faster/Makefile 479836 2018-09-15 13:35:30Z tobik $
 
 PORTNAME=	runit
 DISTVERSION=	${RUNITVERSION}-${CONFVERSION}
 RUNITVERSION=	2.1.2
-CONFVERSION=	0.1.24
+CONFVERSION=	0.1.26
 CATEGORIES=	sysutils
 MASTER_SITES=	http://smarden.org/runit/ \
 		http://www.bayofrum.net/dist/runit/ \

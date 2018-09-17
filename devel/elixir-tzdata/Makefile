@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-tzdata/Makefile 478846 2018-09-03 07:30:55Z olgeni $
+# $FreeBSD: head/devel/elixir-tzdata/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tzdata
 PORTVERSION=	0.5.19
@@ -18,6 +18,8 @@ GH_ACCOUNT=	lau
 MIX_BUILD_DEPS=	www/elixir-httpoison \
 		www/erlang-hackney
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	@${RM} ${WRKSRC}/priv/release_ets/.gitkeep

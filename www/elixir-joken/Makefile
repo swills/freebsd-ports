@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-joken/Makefile 443413 2017-06-12 03:31:15Z vanilla $
+# $FreeBSD: head/www/elixir-joken/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	joken
 PORTVERSION=	1.5.0
@@ -18,5 +18,7 @@ GH_ACCOUNT=	bryanjos
 MIX_BUILD_DEPS=	devel/elixir-plug \
 		security/elixir-jose
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

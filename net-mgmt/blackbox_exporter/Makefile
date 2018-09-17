@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSDD.org>
-# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 463983 2018-03-09 17:55:55Z bsam $
+# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	blackbox_exporter
 PORTVERSION=	0.12.0
@@ -28,6 +28,8 @@ GO_TARGET=	github.com/${GH_ACCOUNT}/${PORTNAME}
 USE_RC_SUBR=	${PORTNAME}
 
 PORTEXAMPLES=	${WRKSRC}/*.yml
+
+OPTIONS_DEFINE=	EXAMPLES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/bin/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

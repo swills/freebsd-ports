@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rebar3/Makefile 473839 2018-07-03 14:54:06Z olgeni $
+# $FreeBSD: head/devel/rebar3/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	rebar3
 PORTVERSION=	3.6.1
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/erl:lang/erlang \
 		${LOCALBASE}/bin/git:devel/git
 RUN_DEPENDS=	${LOCALBASE}/bin/erl:lang/erlang
 
-OPTIONS_DEFINE=	BASH ZSH
+OPTIONS_DEFINE=	BASH ZSH EXAMPLES
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	rebar

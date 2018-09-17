@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/mail/drac/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/mail/drac/Makefile 479426 2018-09-10 14:40:42Z mat $
 
 PORTNAME=	drac
 PORTVERSION=	1.12
@@ -20,7 +20,7 @@ PLIST_FILES=	sbin/rpc.dracd include/drac.h lib/libdrac.a \
 USE_CSTD=	gnu89
 
 MAKE_JOBS_UNSAFE=	yes
-OPTIONS_DEFINE=		DB DOCS
+OPTIONS_DEFINE=		DB DOCS IPV6
 OPTIONS_RADIO=		MUA
 OPTIONS_RADIO_MUA=	POSTFIX EXIM
 POSTFIX_DESC=		Use POSTFIX

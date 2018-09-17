@@ -1,5 +1,5 @@
 # Created by: shalunov
-# $FreeBSD: head/benchmarks/thrulay/Makefile 358409 2014-06-19 13:15:37Z amdmi3 $
+# $FreeBSD: head/benchmarks/thrulay/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	thrulay
 PORTVERSION=	0.9
@@ -19,6 +19,8 @@ SUB_FILES=	thrulayd
 MAKE_JOBS_UNSAFE=	yes
 
 PORTDOCS=	ChangeLog README thrulay-protocol.txt thrulay-index.html
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e '922s,datarootdir,prefix,g' ${WRKSRC}/configure

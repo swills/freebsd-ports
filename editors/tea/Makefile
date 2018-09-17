@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/editors/tea/Makefile 473976 2018-07-05 16:28:34Z danilo $
+# $FreeBSD: head/editors/tea/Makefile 479896 2018-09-16 14:54:58Z danilo $
 
 PORTNAME=	tea
-PORTVERSION=	45.0.2
+PORTVERSION=	46.0.0
 CATEGORIES=	editors
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -19,7 +19,7 @@ OPTIONS_GROUP=		SPELL
 OPTIONS_GROUP_SPELL=	ASPELL HUNSPELL
 OPTIONS_DEFAULT=	QT4 ASPELL HUNSPELL
 
-USES=		pkgconfig:build qmake
+USES=		gl pkgconfig:build qmake
 USE_GL=		gl
 USE_LOCALE=	en_US.UTF-8
 

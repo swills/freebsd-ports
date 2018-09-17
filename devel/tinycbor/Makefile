@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/tinycbor/Makefile 466421 2018-04-04 10:56:48Z sunpoet $
+# $FreeBSD: head/devel/tinycbor/Makefile 479456 2018-09-10 20:26:47Z sunpoet $
 
 PORTNAME=	tinycbor
-PORTVERSION=	0.5.1
+PORTVERSION=	0.5.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -28,7 +28,6 @@ do-configure:
 	@cd ${WRKSRC}/ && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} configure
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/src/tinycbor-version.h ${STAGEDIR}${PREFIX}/include/tinycbor/tinycbor-version.h
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libtinycbor.so.${PORTVERSION}
 	${LN} -fs libtinycbor.so.${PORTVERSION} ${STAGEDIR}${PREFIX}/lib/libtinycbor.so
 	${LN} -fs libtinycbor.so.${PORTVERSION} ${STAGEDIR}${PREFIX}/lib/libtinycbor.so.${PORTVERSION:R:R}

@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/mlt/Makefile 476344 2018-08-04 09:13:30Z tcberner $
+# $FreeBSD: head/multimedia/mlt/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	mlt
 DISTVERSIONPREFIX=	v
 DISTVERSION=	6.10.0
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	multimedia
 
 MAINTAINER=	kde@FreeBSD.org

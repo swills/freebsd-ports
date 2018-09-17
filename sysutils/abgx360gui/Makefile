@@ -1,5 +1,5 @@
 # Created by: okeeblow <root@cooltrainer.org>
-# $FreeBSD: head/sysutils/abgx360gui/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/sysutils/abgx360gui/Makefile 479668 2018-09-13 09:38:20Z amdmi3 $
 
 PORTNAME=	abgx360gui
 PORTVERSION=	1.0.2
@@ -14,6 +14,8 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	root@cooltrainer.org
 COMMENT=	wxWidgets frontend for abgx360
+
+LICENSE=	NONE
 
 RUN_DEPENDS=	abgx360:sysutils/abgx360 \
 		xterm:x11/xterm

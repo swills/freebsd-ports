@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/net-mgmt/smokeping/Makefile 452133 2017-10-15 10:28:09Z rodrigo $
+# $FreeBSD: head/net-mgmt/smokeping/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	smokeping
 PORTVERSION=	2.6.11
@@ -64,7 +64,7 @@ RADIUS_DESC=	Support for Radius probes
 TELNET_DESC=	Support for TelnetIOSPing probes
 DNS_DESC=	Support for AnotherDNS probes
 
-OPTIONS_DEFINE=	ECHOPING CURL RADIUS TELNET DNS FPING
+OPTIONS_DEFINE=	ECHOPING CURL RADIUS TELNET DNS FPING EXAMPLES
 OPTIONS_DEFAULT=	FPING
 
 FPING_RUN_DEPENDS=	${LOCALBASE}/sbin/fping:net/fping

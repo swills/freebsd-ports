@@ -1,5 +1,5 @@
 # Created by: Bruce A. Mah <bmah@FreeBSD.org>
-# $FreeBSD: head/benchmarks/iperf3/Makefile 473358 2018-06-26 00:27:47Z bmah $
+# $FreeBSD: head/benchmarks/iperf3/Makefile 479480 2018-09-10 20:28:53Z sunpoet $
 
 PORTNAME=	iperf
 PORTVERSION=	3.6
@@ -22,13 +22,15 @@ PORTDOCS=	README.md RELEASE_NOTES
 # Set ${DOCSDIR} to avoid conflict with benchmarks/iperf ${DOCSDIR}
 DOCSDIR=	${PREFIX}/share/doc/${PORTNAME}${PKGNAMESUFFIX}
 
+OPTIONS_DEFINE=	DOCS
+
 post-patch:
 # Don't build stuff that we're not going to install.  Among other
 # things this means we're not going to try to build profiled objects
 # and/or executables.
 	@${REINPLACE_CMD} -e '/^PROGRAMS /s/\$$(noinst_PROGRAMS)//' ${WRKSRC}/src/Makefile.in
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 

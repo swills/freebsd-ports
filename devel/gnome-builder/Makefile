@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gnome-builder/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/devel/gnome-builder/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gnome-builder
 PORTVERSION=	3.16.2
@@ -41,5 +41,7 @@ GLIB_SCHEMAS=	org.gnome.builder.editor.gschema.xml \
 		org.gnome.builder.editor.language.gschema.xml \
 		org.gnome.builder.experimental.gschema.xml \
 		org.gnome.builder.project-tree.gschema.xml
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/security/pad/Makefile 421787 2016-09-11 04:09:29Z marino $
+# $FreeBSD: head/security/pad/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pad
 PORTVERSION=	1.0.4
@@ -19,6 +19,8 @@ PORTDOCS=	COPYING README ChangeLog
 
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e "s|\(-lcrypto\)|${LDFLAGS} \1|g" \

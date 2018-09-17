@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Module-Util/Makefile 472122 2018-06-10 09:04:29Z amdmi3 $
+# $FreeBSD: head/devel/p5-Module-Util/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Module-Util
 PORTVERSION=	1.09
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module name tools and transformations
 
 LICENSE=	ART10 GPLv1+

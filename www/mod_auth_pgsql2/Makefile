@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_auth_pgsql2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_auth_pgsql2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_auth_pgsql
 PORTVERSION=	2.0.3
@@ -18,6 +18,8 @@ AP_LIB?=	${LOCALBASE}/lib -lpq
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 PORTDOCS=	mod_auth_pgsql.html
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-openstack/Makefile 479713 2018-09-13 21:53:40Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-openstack02/Makefile 479926 2018-09-17 11:39:16Z mfechner $
 
 PORTNAME=	fog-openstack
 PORTVERSION=	0.2.4

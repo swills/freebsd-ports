@@ -1,5 +1,5 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/devel/linux-c7-icu/Makefile 460524 2018-01-31 19:50:13Z tijl $
+# $FreeBSD: head/devel/linux-c7-icu/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	icu
 PORTVERSION=	50.1.2
@@ -16,5 +16,7 @@ RPMVERSION=	15.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/pongix/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/games/pongix/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pongix
 PORTVERSION=	0.4
@@ -20,6 +20,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 LIBS+=		-lm
 PORTDOCS=	AUTHORS ChangeLog README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR} ${STAGEDIR}${DOCSDIR}

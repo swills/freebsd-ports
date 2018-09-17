@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-Continuity/Makefile 458321 2018-01-07 12:12:33Z sunpoet $
+# $FreeBSD: head/www/p5-Continuity/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Continuity
 PORTVERSION=	1.5
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=CPAN:AWWAIID
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Stateful Web applications in Perl
 
 COMMON_DEPENDS=	p5-Event>0:devel/p5-Event \

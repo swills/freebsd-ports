@@ -1,5 +1,5 @@
 # Created by: Hizbulin Ildar <hizel@vyborg.ru>
-# $FreeBSD: head/sysutils/py-supervisor/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/py-supervisor/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	supervisor
 PORTVERSION=	3.3.3
@@ -30,6 +30,8 @@ USE_RC_SUBR=	supervisord
 SHEBANG_FILES=	supervisor/scripts/*.py supervisor/tests/fixtures/*.py
 python_OLD_CMD=	"/usr/bin/env python"
 python_OLD_CMD+=	"<<PYTHON>>"
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's!%%PREFIX%%!${PREFIX}!' ${WRKSRC}/supervisor/options.py

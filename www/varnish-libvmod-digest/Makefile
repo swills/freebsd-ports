@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish-libvmod-digest/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/varnish-libvmod-digest/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libvmod-digest
 DISTVERSIONPREFIX=${PORTNAME}-
@@ -22,5 +22,7 @@ INSTALL_TARGET=	install-strip
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	varnish
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

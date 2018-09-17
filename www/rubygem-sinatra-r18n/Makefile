@@ -1,12 +1,12 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-sinatra-r18n/Makefile 476139 2018-07-31 23:56:21Z sunpoet $
+# $FreeBSD: head/www/rubygem-sinatra-r18n/Makefile 479909 2018-09-16 23:25:51Z sunpoet $
 
 PORTNAME=	sinatra-r18n
 PORTVERSION=	3.0.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Sinatra extension that provides i18n support to your web application
 
 LICENSE=	LGPL3
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-r18n-core>=${PORTVERSION}:devel/rubygem-r18n-core \
 		rubygem-sinatra>=1.3:www/rubygem-sinatra
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

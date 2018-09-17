@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/textproc/htmlc/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/textproc/htmlc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	htmlc
 PORTVERSION=	2.21.0
@@ -20,6 +20,8 @@ PORTDOCS=	LICENSE INSTALL README JoeCaml.gif rocq.gif copyright-eng.htm \
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix ${LOCALBASE}
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${RM} ${WRKSRC}/doc/Makefile

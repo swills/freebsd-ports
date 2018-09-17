@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/xorgramana/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/xorgramana/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xorgramana
 PORTVERSION=	0.0.8
@@ -28,6 +28,8 @@ DESKTOP_ENTRIES="XorGramana" \
 		"xorgramana" \
 		"Game;LogicGame;" \
 		false
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|GFX/|${DATADIR}/&|' ${WRKSRC}/icons.c

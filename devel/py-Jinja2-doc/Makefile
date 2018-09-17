@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Jinja2-doc/Makefile 346867 2014-03-03 09:04:41Z rm $
+# $FreeBSD: head/devel/py-Jinja2-doc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PKGNAMESUFFIX=	-doc
 
@@ -11,7 +11,7 @@ DESCR=		${.CURDIR}/pkg-descr
 
 MASTERDIR=	${.CURDIR}/../py-Jinja2
 
-OPTIONS_DEFINE=
+OPTIONS_DEFINE=	DOCS
 OPTIONS_DEFAULT=
 
 .include "${MASTERDIR}/Makefile"

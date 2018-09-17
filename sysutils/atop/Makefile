@@ -1,5 +1,5 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/sysutils/atop/Makefile 444332 2017-06-26 00:42:53Z linimon $
+# $FreeBSD: head/sysutils/atop/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	atop
 PORTVERSION=	2.0.2.b3
@@ -30,6 +30,8 @@ PORTDOCS=	AUTHOR \
 		ChangeLog.FreeBSD \
 		README \
 		README.FreeBSD
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/atop ${STAGEDIR}${PREFIX}/bin

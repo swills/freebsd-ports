@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/baloo-widgets/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/sysutils/baloo-widgets/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	baloo-widgets
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -14,5 +14,7 @@ USE_KDE=	baloo completion config coreaddons ecm emoticons filemetadata \
 USE_QT=		core dbus gui network testlib widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-pyro/Makefile 474387 2018-07-10 16:59:50Z rm $
+# $FreeBSD: head/devel/py-pyro/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pyro
 PORTVERSION=	4.73
@@ -22,6 +22,8 @@ USE_PYTHON=	autoplist concurrent distutils
 
 PORTDOCS=	*
 PORTEXAMPLES=	*
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.pre.mk>
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/lfe/Makefile 452068 2017-10-14 14:35:19Z olgeni $
+# $FreeBSD: head/lang/lfe/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lfe
 PORTVERSION=	1.3
@@ -15,6 +15,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	rvirding
 ALL_TARGET=	compile
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	cd ${BUILD_WRKSRC} && \

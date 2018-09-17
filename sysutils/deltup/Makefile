@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/sysutils/deltup/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/sysutils/deltup/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	deltup
 PORTVERSION=	0.4.4
@@ -36,6 +36,8 @@ WRKSRC_BZIP2_102=	${WRKDIR}/bzip2-${BZIP2_102}
 WRKSRC_BZIP2_103=	${WRKDIR}/bzip2-${BZIP2_103}
 
 PORTDOCS=	ChangeLog README
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/CC/CXX/' -e 's,gcc,$${CXX},' \

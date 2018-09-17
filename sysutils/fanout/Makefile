@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/sysutils/fanout/Makefile 343046 2014-02-06 12:14:48Z miwi $
+# $FreeBSD: head/sysutils/fanout/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fanout
 PORTVERSION=	0.6.1
@@ -16,6 +16,8 @@ USE_PERL5=	run
 NO_BUILD=	yes
 PLIST_FILES=	bin/fanout bin/fanterm bin/fanmux
 PORTDOCS=	README index.html
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,%%LOCALBASE%%,${LOCALBASE},g' \

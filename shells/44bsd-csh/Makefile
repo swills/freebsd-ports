@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@NUXI.com>
-# $FreeBSD: head/shells/44bsd-csh/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/shells/44bsd-csh/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	44bsd-csh
 PORTVERSION=	20001106
@@ -17,6 +17,8 @@ BROKEN_aarch64=	Fails to link: missing sbrk
 USES=		tar:bzip2
 NO_WRKSUBDIR=	yes
 PORTDOCS=	paper.ascii.gz
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	cd ${WRKSRC} ; co RCS/*,v; chmod u+w *

@@ -1,5 +1,5 @@
 # Created by: Miroslav Lachman
-# $FreeBSD: head/mail/ratelimit-policyd/Makefile 466364 2018-04-03 16:52:56Z mandree $
+# $FreeBSD: head/mail/ratelimit-policyd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ratelimit-policyd
 PORTVERSION=	1.0.1
@@ -35,6 +35,8 @@ PLIST_FILES=	bin/ratelimit-policyd.pl \
 
 PORTDATA=	mysql-schema.sql
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e "s|/usr/local|${PREFIX}|g" ${WRKSRC}/rc.d/ratelimit-policyd

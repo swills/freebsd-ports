@@ -1,5 +1,5 @@
 # Created by: Eijiro Shibusawa <ej-sib@ice.uec.ac.jp>
-# $FreeBSD: head/math/openblas/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/openblas/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	openblas
 PORTVERSION=	0.2.20
@@ -16,6 +16,8 @@ COMMENT=	Optimized BLAS library based on GotoBLAS2
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to compile: gemm.c:403: 'SGEMM_DEFAULT_Q' undeclared (first use in this function)
 
 USES=		fortran gmake perl5
 

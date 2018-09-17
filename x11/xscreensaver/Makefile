@@ -1,8 +1,9 @@
 # Created by: dom@myrddin.demon.co.uk
-# $FreeBSD: head/x11/xscreensaver/Makefile 477774 2018-08-22 08:32:50Z zeising $
+# $FreeBSD: head/x11/xscreensaver/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xscreensaver
 PORTVERSION=	5.40
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 

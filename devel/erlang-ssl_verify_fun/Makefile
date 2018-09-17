@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-ssl_verify_fun/Makefile 474682 2018-07-15 09:44:41Z olgeni $
+# $FreeBSD: head/devel/erlang-ssl_verify_fun/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ssl_verify_fun
 PORTVERSION=	1.1.4
@@ -14,5 +14,7 @@ USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	deadtrickster
 GH_PROJECT=	ssl_verify_fun.erl
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

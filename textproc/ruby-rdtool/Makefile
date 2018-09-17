@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/textproc/ruby-rdtool/Makefile 414173 2016-04-28 14:02:21Z swills $
+# $FreeBSD: head/textproc/ruby-rdtool/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	rdtool
 PORTVERSION=	0.6.38
@@ -24,7 +24,7 @@ RUBY_MODNAME=	rd
 DOCS_EN=	README.rd	doc/rd-draft.rd
 DOCS_JA=	README.rd.ja	doc/rd-draft.rd.ja
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-install:
 	${MKDIR} ${STAGEDIR}${RUBY_SITELIBDIR}/rd

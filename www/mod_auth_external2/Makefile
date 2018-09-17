@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_auth_external2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_auth_external2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_auth_external
 PORTVERSION=	2.2.11
@@ -21,7 +21,9 @@ SHORTMODNAME=	auth_external
 
 PORTDOCS=	AUTHENTICATORS INSTALL README
 
-post-install:
+OPTIONS_DEFINE=	DOCS
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

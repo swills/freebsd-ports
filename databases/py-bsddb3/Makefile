@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/databases/py-bsddb3/Makefile 475289 2018-07-25 00:45:06Z bofh $
+# $FreeBSD: head/databases/py-bsddb3/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bsddb3
 PORTVERSION=	6.2.6
@@ -21,6 +21,8 @@ PYDISTUTILS_INSTALLARGS=-c -O1 --prefix=${PREFIX} --berkeley-db=${LOCALBASE}
 
 PORTDOCS=	*
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's,%%DBVERSION%%,${BDB_LIB_NAME},g' ${WRKSRC}/setup2.py ${WRKSRC}/setup3.py

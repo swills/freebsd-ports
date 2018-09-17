@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/bareos-docs/Makefile 470319 2018-05-18 19:00:37Z acm $
+# $FreeBSD: head/sysutils/bareos-docs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bareos
 PORTVERSION=	17.2.5
@@ -13,6 +13,8 @@ COMMENT=	Bareos document set (PDF)
 NO_BUILD=	yes
 
 PORTDOCS=	*.pdf
+
+OPTIONS_DEFINE=	DOCS
 
 do-extract:
 	${MKDIR} ${WRKSRC}

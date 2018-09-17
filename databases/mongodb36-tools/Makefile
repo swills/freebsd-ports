@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb36-tools/Makefile 475580 2018-07-28 14:50:19Z miwi $
+# $FreeBSD: head/databases/mongodb36-tools/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mongodb36-tools
 PORTVERSION=	3.6.3
@@ -27,7 +27,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mongodb
 GH_PROJECT=	mongo-tools
 
-OPTIONS_DEFINE=	SSL SASL
+OPTIONS_DEFINE=	DOCS SSL SASL
 OPTIONS_DEFAULT=	SSL SASL
 
 SASL_USE=	my_tags=sasl

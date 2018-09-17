@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/elixir-oauth2/Makefile 454430 2017-11-18 13:33:03Z vanilla $
+# $FreeBSD: head/net/elixir-oauth2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	oauth2
 PORTVERSION=	0.9.2
@@ -18,5 +18,7 @@ USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	scrogson
 NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

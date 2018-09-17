@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/devel/upnp/Makefile 477687 2018-08-20 22:41:43Z swills $
+# $FreeBSD: head/devel/upnp/Makefile 479374 2018-09-10 08:58:04Z danfe $
 
 PORTNAME=	upnp
 PORTVERSION=	1.6.25
@@ -13,6 +13,8 @@ COMMENT=	Universal Plug and Play Software Development Kit
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+PORTSCOUT=	skipv:1.8.3	# released on 2017-11-14; older than 1.6.25
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

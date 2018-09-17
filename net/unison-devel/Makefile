@@ -1,5 +1,5 @@
 # Created by: Dan Pelleg <dpelleg+unison@cs.cmu.edu>
-# $FreeBSD: head/net/unison-devel/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/net/unison-devel/Makefile 479891 2018-09-16 12:16:53Z antoine $
 
 PORTNAME=	unison
 PORTVERSION=	2.48.1
@@ -16,6 +16,8 @@ COMMENT=	User-level file synchronization tool
 
 IGNORE=		No devel release available. \
 		Install net/unison which is the latest stable version.
+DEPRECATED=	Use net/unison instead
+EXPIRATION_DATE=	2018-09-29
 
 LICENSE=	GPLv3
 

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/print/p5-Text-PDF/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/print/p5-Text-PDF/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Text-PDF
 PORTVERSION=	0.29a
@@ -8,7 +8,7 @@ CATEGORIES=	print perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PDF manipulation module
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/a$//}

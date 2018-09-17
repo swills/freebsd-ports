@@ -1,10 +1,11 @@
-# $FreeBSD: head/dns/Makefile 478837 2018-09-03 00:21:45Z jbeich $
+# $FreeBSD: head/dns/Makefile 479878 2018-09-16 08:03:36Z tcberner $
 #
 
     COMMENT = Domain Name Service tools
 
     SUBDIR += adns
     SUBDIR += adsuck
+    SUBDIR += amass
     SUBDIR += ares
     SUBDIR += autotrust
     SUBDIR += axfr2acl
@@ -182,6 +183,7 @@
     SUBDIR += powerdns-recursor
     SUBDIR += powerdns-recursor40
     SUBDIR += public_suffix_list
+    SUBDIR += py-adns
     SUBDIR += py-aiodns
     SUBDIR += py-cloudflare
     SUBDIR += py-dns

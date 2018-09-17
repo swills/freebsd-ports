@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/json-glib/Makefile 437489 2017-04-01 21:31:15Z bapt $
+# $FreeBSD: head/devel/json-glib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	json-glib
 PORTVERSION=	1.2.8
@@ -11,7 +11,7 @@ COMMENT=	JSON (RFC 4627) interface for Glib
 
 LICENSE=	LGPL21
 
-OPTIONS_DEFINE=	GIR
+OPTIONS_DEFINE=	GIR DOCS
 OPTIONS_DEFAULT=GIR
 OPTIONS_SUB=	yes
 GIR_DESC=	Build introspection data

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/talkatu/Makefile 477644 2018-08-20 10:20:26Z mat $
+# $FreeBSD: head/net-im/talkatu/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	talkatu
 PORTVERSION=	g2018081801
@@ -21,5 +21,7 @@ USES=		meson pkgconfig
 USE_LDCONFIG=	yes
 MESON_ARGS=	-Dgobject-introspection=false
 WRKSRC=		${WRKDIR}/rw_grim-talkatu-${DISTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

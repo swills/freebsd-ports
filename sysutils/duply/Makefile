@@ -1,5 +1,5 @@
 # Created by: Michael Ranner <michael@ranner.eu>
-# $FreeBSD: head/sysutils/duply/Makefile 476940 2018-08-11 19:01:15Z dbaio $
+# $FreeBSD: head/sysutils/duply/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	duply
 PORTVERSION=	2.1
@@ -26,6 +26,8 @@ PLIST_FILES=	bin/duply ${PERIODICDIR}/${PERIODICFILE}
 PERIODICFILE?=	300.duply
 PERIODICDIR?=	${PREFIX}/etc/periodic/backup
 SUB_FILES=	pkg-message periodic_duply
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e "s,/etc/duply,${ETCDIR},g" ${WRKSRC}/duply

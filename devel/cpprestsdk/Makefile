@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpprestsdk/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/cpprestsdk/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	cpprestsdk
 PORTVERSION=	2.9.1
@@ -11,6 +11,8 @@ COMMENT=	Microsoft C++ REST SDK
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/../license.txt
+
+BROKEN_powerpc64=	fails to compile: threadpool.h:59:25: conversion to 'int' from 'size_t {aka long unsigned int}' may alter its value
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 

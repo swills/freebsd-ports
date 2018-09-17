@@ -1,5 +1,5 @@
 # Created by: Kay Lehmann
-# $FreeBSD: head/sysutils/cdbkup/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/cdbkup/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cdbkup
 PORTVERSION=	1.0
@@ -22,5 +22,7 @@ USES=		perl5
 CONFIGURE_ENV+=	PATH=${PATH}:${LOCALBASE}/sbin
 
 PORTDOCS=	README TODO COMPLIANCE
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

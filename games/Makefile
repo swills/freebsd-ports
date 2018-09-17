@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 478885 2018-09-03 17:48:23Z jbeich $
+# $FreeBSD: head/games/Makefile 479444 2018-09-10 19:49:05Z rene $
 #
 
     COMMENT = Games and related software
@@ -824,7 +824,6 @@
     SUBDIR += powder-toy
     SUBDIR += powermanga
     SUBDIR += powwow
-    SUBDIR += ppracer
     SUBDIR += prboom
     SUBDIR += prboom-plus
     SUBDIR += primateplunge

@@ -1,5 +1,5 @@
 # Created by: dwcjr@inethouston.net
-# $FreeBSD: head/security/openssh-portable/Makefile 473555 2018-06-29 15:44:33Z bdrewery $
+# $FreeBSD: head/security/openssh-portable/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openssh
 DISTVERSION=	7.7p1
@@ -39,6 +39,7 @@ OPTIONS_DEFINE=		PAM TCP_WRAPPERS LIBEDIT BSM \
 			LDNS NONECIPHER XMSS
 OPTIONS_DEFAULT=	LIBEDIT PAM TCP_WRAPPERS LDNS
 .if ${FLAVOR:U} == hpn
+OPTIONS_DEFINE+=	DOCS
 OPTIONS_DEFAULT+=	HPN NONECIPHER
 .endif
 OPTIONS_RADIO=		KERBEROS

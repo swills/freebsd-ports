@@ -1,5 +1,5 @@
 # Created by: netchild@FreeBSD.org
-# $FreeBSD: head/net-im/skype4/Makefile 462775 2018-02-24 08:52:27Z tcberner $
+# $FreeBSD: head/net-im/skype4/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	skype
 PORTVERSION=	4.3.0.37
@@ -16,7 +16,7 @@ RUN_DEPENDS=	${LINUXBASE}/lib/skype_oss_wrapper/libpulse.so.0:audio/linux-skype_
 
 CONFLICTS=	skype-devel-[0-9]*
 
-OPTIONS_DEFINE=	VIDEO
+OPTIONS_DEFINE=	DOCS VIDEO
 OPTIONS_DEFAULT=VIDEO
 
 NO_BUILD=	yes

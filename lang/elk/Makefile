@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/elk/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/lang/elk/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	elk
 PORTVERSION=	3.99.8
@@ -23,6 +23,8 @@ MAKE_JOBS_UNSAFE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include/libelf -I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+
+OPTIONS_DEFINE=	EXAMPLES
 
 .include <bsd.port.pre.mk>
 

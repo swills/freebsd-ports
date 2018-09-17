@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_cfg_ldap/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_cfg_ldap/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_cfg_ldap
 PORTVERSION=	1.2
@@ -26,7 +26,9 @@ AP_LIB+=	${LDAP_LIB}
 PORTDOCS=	AUTHORS cfg_ldap.conf ChangeLog COPYING INSTALL \
 		mod_cfg_ldap.schema README TODO
 
-post-install:
+OPTIONS_DEFINE=	DOCS
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

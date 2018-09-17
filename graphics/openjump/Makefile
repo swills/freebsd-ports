@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/openjump/Makefile 474099 2018-07-07 15:04:40Z swills $
+# $FreeBSD: head/graphics/openjump/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	OpenJUMP
 PORTVERSION=	1.13
@@ -47,6 +47,8 @@ NO_ARCH=	yes
 TARGET_DIR=	${STAGEDIR}${PREFIX}/${PORTNAME}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-r${PLUS_REV}-PLUS
 PLUS_REV=	5792
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${ECHO_CMD} "--->  Installing JAR files"

@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/gmsh/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/cad/gmsh/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gmsh
 DISTVERSION=	3.0.6
@@ -37,7 +37,7 @@ MAKE_JOBS_UNSAFE=	yes
 
 CMAKE_ARGS=	-DCMAKE_SKIP_RPATH:BOOL=YES
 
-OPTIONS_DEFINE=		CGNS MED OCC SHARED STATIC
+OPTIONS_DEFINE=		CGNS DOCS MED OCC SHARED STATIC
 OPTIONS_DEFAULT=	MED
 
 CGNS_DESC=	Enable experimental CGNS mesh support

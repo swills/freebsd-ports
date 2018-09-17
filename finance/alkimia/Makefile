@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/alkimia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/finance/alkimia/Makefile 479530 2018-09-11 16:02:43Z jhale $
 
 PORTNAME=	alkimia
 PORTVERSION=	7.0.2
@@ -54,7 +54,6 @@ MPIR_DESC=		MPIR (multiple precision arithmetic) support
 MPIR_LIB_DEPENDS=	libmpir.so:math/mpir
 
 .if ${SLAVE} == qt4
-TEST_USES=	qt:4 qt:5
 TEST_USE=		QT=qtestlib
 .else
 TEST_USE=		QT=testlib

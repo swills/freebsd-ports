@@ -1,5 +1,5 @@
 # Created by: Doug Harple
-# $FreeBSD: head/sysutils/detox/Makefile 435453 2017-03-05 07:07:29Z pi $
+# $FreeBSD: head/sysutils/detox/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	detox
 PORTVERSION=	1.3.0
@@ -16,6 +16,8 @@ USES=		autoreconf gmake tar:bzip2
 USE_GITHUB=	yes
 GNU_CONFIGURE=	yes
 GH_ACCOUNT=	dharple
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/detox

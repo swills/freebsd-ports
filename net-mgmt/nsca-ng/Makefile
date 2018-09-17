@@ -1,5 +1,5 @@
 # Created by: Alexander Sulfrian <alexander@sulfrian.net>
-# $FreeBSD: head/net-mgmt/nsca-ng/Makefile 434300 2017-02-17 16:49:13Z mat $
+# $FreeBSD: head/net-mgmt/nsca-ng/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	nsca-ng
 PORTVERSION=	1.4
@@ -32,6 +32,8 @@ CONFIGURE_ARGS+=	--enable-server
 .endif
 
 PORTDOCS=	NEWS COPYING README PROTOCOL TODO
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.pre.mk>
 

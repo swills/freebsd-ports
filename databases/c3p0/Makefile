@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/c3p0/Makefile 420254 2016-08-15 17:35:29Z olgeni $
+# $FreeBSD: head/databases/c3p0/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	c3p0
 PORTVERSION=	0.9.5.2
@@ -17,6 +17,8 @@ USE_JAVA=	yes
 NO_BUILD=	yes
 JAVA_VERSION=	1.6+
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/lib/${PORTNAME}-${PORTVERSION}.jar ${STAGEDIR}${JAVAJARDIR}/${PORTNAME}.jar

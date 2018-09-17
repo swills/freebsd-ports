@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/moinmoincli/Makefile 477785 2018-08-22 13:20:44Z 0mp $
+# $FreeBSD: head/www/moinmoincli/Makefile 479619 2018-09-12 20:45:39Z 0mp $
 
 PORTNAME=	moinmoincli
-DISTVERSION=	4.5.0
+DISTVERSION=	4.5.2
 CATEGORIES=	www docs
 
 MAINTAINER=	0mp@FreeBSD.org

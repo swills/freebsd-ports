@@ -1,5 +1,5 @@
 # Created by: Pavel Timofeev <timp87@gmail.com>
-# $FreeBSD: head/www/ufdbguard/Makefile 473034 2018-06-22 12:04:00Z swills $
+# $FreeBSD: head/www/ufdbguard/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	ufdbGuard
 PORTVERSION=	1.33.6
@@ -57,7 +57,7 @@ CONFIGURE_ARGS=	--with-ssl=${OPENSSLBASE} \
 
 MAKE_JOBS_UNSAFE=	yes
 
-OPTIONS_DEFINE=	UNIXSOCKETS
+OPTIONS_DEFINE=	UNIXSOCKETS EXAMPLES
 
 UNIXSOCKETS_CONFIGURE_WITH=	unix-sockets
 

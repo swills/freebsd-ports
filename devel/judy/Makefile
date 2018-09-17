@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/judy/Makefile 473660 2018-07-01 09:17:45Z linimon $
+# $FreeBSD: head/devel/judy/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	Judy
 PORTVERSION=	1.0.5
@@ -24,6 +24,8 @@ INSTALL_TARGET=	install-strip
 WRKSRC=	${WRKDIR}/${PORTNAME:tl}-${PORTVERSION}
 
 PORTDOCS=	COPYRIGHT README *.htm
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

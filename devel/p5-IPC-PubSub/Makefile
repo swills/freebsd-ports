@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IPC-PubSub/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-IPC-PubSub/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	IPC-PubSub
 PORTVERSION=	0.29
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interprocess Publish/Subscribe channels
 
 BUILD_DEPENDS=	p5-DBM-Deep>=1:databases/p5-DBM-Deep \

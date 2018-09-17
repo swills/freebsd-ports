@@ -1,14 +1,32 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 477965 2018-08-24 15:53:11Z brooks $
+# $FreeBSD: head/devel/llvm-devel/Makefile 479687 2018-09-13 18:45:43Z brooks $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.0.d${SNAPDATE}
-PORTREVISION=	2
+PORTREVISION=	0
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-devel
 
 MAINTAINER=	brooks@FreeBSD.org
 COMMENT=	LLVM and Clang
+
+# License are listed in the order they appear in LICENSE.TXT
+LICENSE=	LLVM GTEST REGEX MIT ARM PD
+LICENSE_COMB=	multi
+LICENSE_NAME_LLVM=	LLVM Release License
+LICENSE_PERMS_LLVM=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_FILE_LLVM=	${WRKSRC}/LICENSE.TXT
+LICENSE_NAME_GTEST=	Google test license
+LICENSE_PERMS_GTEST=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_FILE_GTEST=	${WRKSRC}/utils/unittest/googletest/LICENSE.TXT
+LICENSE_NAME_REGEX=	OpenBSD Regex License
+LICENSE_PERMS_REGEX=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_FILE_REGEX=	${WRKSRC}/lib/Support/COPYRIGHT.regex
+# pyyaml tests are under the MIT license
+LICENSE_NAME_ARM=	ARM Limited license
+LICENSE_PERMS_ARM=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_FILE_ARM=	${WRKSRC}/lib/Target/ARM/LICENSE.TXT
+# md5 is in the public domain
 
 LLVM_SUFFIX=	-devel
 LLVM_PREFIX=	${PREFIX}/llvm${LLVM_SUFFIX}
@@ -162,6 +180,7 @@ COMMANDS=	bugpoint \
 		llvm-symbolizer \
 		llvm-tblgen \
 		llvm-undname \
+		llvm-xray \
 		macho-dump \
 		opt \
 		sancov
@@ -285,7 +304,8 @@ COMMANDS+=	lldb \
 		lldb-argdumper \
 		lldb-mi \
 		lldb-server \
-		lldb-test
+		lldb-test \
+		lldb-vscode
 .endif
 
 .if ! ${OPTIONS_DEFINE:MCOMPILER_RT}

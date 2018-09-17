@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	archiveopteryx
 PORTVERSION=	3.2.99.20180207
@@ -41,6 +41,8 @@ PLIST_SUB+=	USERS="${USERS}"
 PLIST_SUB+=	GROUPS="${GROUPS}"
 
 JAM?=		${LOCALBASE}/bin/jam
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

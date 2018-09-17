@@ -1,5 +1,5 @@
 # Created by: okeeblow <root@cooltrainer.org>
-# $FreeBSD: head/sysutils/abgx360/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/sysutils/abgx360/Makefile 479379 2018-09-10 09:38:19Z amdmi3 $
 
 PORTNAME=	abgx360
 PORTVERSION=	1.0.6
@@ -12,7 +12,9 @@ MASTER_SITES=	http://abgx360.xecuter.com/dl/ \
 MAINTAINER=	root@cooltrainer.org
 COMMENT=	Verify and repair Xbox 360 backup images
 
-BUILD_DEPENDS=	curl:ftp/curl
+LICENSE=	NONE
+
+LIB_DEPENDS=	libcurl.so:ftp/curl
 
 GNU_CONFIGURE=	yes
 

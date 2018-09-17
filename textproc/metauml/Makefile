@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@rtfm.jp>
-# $FreeBSD: head/textproc/metauml/Makefile 359662 2014-06-28 06:38:02Z tota $
+# $FreeBSD: head/textproc/metauml/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	metauml
 PORTVERSION=	0.2.5
@@ -31,6 +31,8 @@ NO_BUILD=	yes
 WRKSRC=	${WRKDIR}/${PORTNAME}_lib
 PORTDOCS=	${PORTNAME}_manual_${PORTVERSION}.pdf
 PORTEXAMPLES=	*.1 *.jpg *.mp lop lop.html lop.pdf lop.tex
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${MPDIR}

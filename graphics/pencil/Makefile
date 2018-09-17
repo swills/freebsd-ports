@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/graphics/pencil/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/pencil/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pencil
 PORTVERSION=	0.4.4b
@@ -28,6 +28,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-source
 PLIST_FILES=	bin/pencil
 
 PORTDOCS=	README TODO
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${MKDIR} ${WRKSRC}/src/external/freebsd

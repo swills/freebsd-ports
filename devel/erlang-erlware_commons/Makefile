@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-erlware_commons/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-erlware_commons/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	erlware_commons
 PORTVERSION=	1.1.0
@@ -16,5 +16,7 @@ GH_ACCOUNT=	erlware
 
 ERL_BUILD_DEPS= devel/erlang-cf
 ERL_RUN_DEPS:=  ${ERL_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

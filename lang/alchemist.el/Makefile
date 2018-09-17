@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/alchemist.el/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/lang/alchemist.el/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	alchemist.el
 PORTVERSION=	1.8.2
@@ -20,6 +20,8 @@ GH_ACCOUNT=	tonini
 
 NO_ARCH=	yes
 NO_BUILD=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}/alchemist-server

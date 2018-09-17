@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/misc/tdfiglet/Makefile 474654 2018-07-15 01:01:35Z zi $
+# $FreeBSD: head/misc/tdfiglet/Makefile 479344 2018-09-09 23:35:26Z zi $
 
 PORTNAME=	tdfiglet
-PORTVERSION=	0.3
+PORTVERSION=	0.5
 CATEGORIES=	misc
 
 MAINTAINER=	zi@FreeBSD.org

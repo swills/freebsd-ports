@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/knot1/Makefile 468167 2018-04-24 00:49:55Z dbaio $
+# $FreeBSD: head/dns/knot1/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	knot
 PORTVERSION=	1.6.8
@@ -39,7 +39,7 @@ SUB_LIST+=	USERS="${USERS}" GROUPS="${GROUPS}"
 
 PORTDOCS=	AUTHORS COPYING ChangeLog INSTALL NEWS README THANKS
 
-OPTIONS_DEFINE=	DNSTAP IDN LMDB
+OPTIONS_DEFINE=	DNSTAP IDN LMDB DOCS
 
 DNSTAP_DESC=		dnstap support (see dnstap.info)
 LMDB_DESC=		Enable LMDB backend

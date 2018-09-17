@@ -1,5 +1,5 @@
 # Created by: Chifeng QU <chifeng@gmail.com>
-# $FreeBSD: head/mail/policyd2/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/policyd2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	policyd2
 PORTVERSION=	2.0.14
@@ -32,7 +32,7 @@ SHEBANG_FILES=	cbpadmin \
 WWWDIR=		${PREFIX}/www/policyd
 PORTDOCS=	AUTHORS ChangeLog INSTALL TODO WISHLIST
 
-OPTIONS_DEFINE=	MYSQL PGSQL SQLITE WEBUI
+OPTIONS_DEFINE=	MYSQL PGSQL SQLITE WEBUI DOCS
 OPTIONS_DEFAULT=MYSQL WEBUI
 MYSQL_DESC=	Add a dependency on DBD::mysql
 PGSQL_DESC=	Add a dependency on DBD::Pg

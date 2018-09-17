@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	gmic
 PORTVERSION=	1.6.9
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libGraphicsMagick++.so:graphics/GraphicsMagick \
 		libfftw3.so:math/fftw3 \
 		libgimp-2.0.so:graphics/gimp-app
 
-OPTIONS_DEFINE=	BASH
+OPTIONS_DEFINE=	BASH EXAMPLES
 OPTIONS_SUB=	yes
 BASH_RUN_DEPENDS=	bash:shells/bash
 

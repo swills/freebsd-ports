@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/www/p5-URI-Sequin/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-URI-Sequin/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	URI-Sequin
 PORTVERSION=	1.2
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SARGIE
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extract information from the URLs of Search-Engines
 
 LICENSE=	ART10 GPLv1+

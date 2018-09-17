@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net/rubygem-octokit/Makefile 478633 2018-08-31 23:48:26Z sunpoet $
+# $FreeBSD: head/net/rubygem-octokit/Makefile 479654 2018-09-12 22:57:37Z sunpoet $
 
 PORTNAME=	octokit
-PORTVERSION=	4.11.0
+PORTVERSION=	4.12.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	rubygem-sawyer>=0.8.0:www/rubygem-sawyer
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/kile/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/kile/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kile
 DISTVERSIONPREFIX=	v
@@ -29,5 +29,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	kde
 
 CONFLICTS_INSTALL=	kile-kde4
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

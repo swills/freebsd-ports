@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/devel/pure-stllib/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/pure-stllib/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pure-stllib
 PORTVERSION=	0.6
@@ -26,6 +26,8 @@ DOCSDIR2=	${DOCSDIR}/doc
 DOC_FILES2=	*.pdf
 
 PORTEXAMPLES=	*
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|CFLAGS =|CFLAGS ?=|' \

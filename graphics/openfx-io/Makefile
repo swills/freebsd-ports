@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/openfx-io/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/openfx-io/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	openfx-io
 PORTVERSION=	2.3.14
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	Natron-
 CATEGORIES=	graphics
 

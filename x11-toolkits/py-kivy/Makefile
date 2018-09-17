@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 477599 2018-08-19 20:51:51Z antoine $
+# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	kivy
 PORTVERSION=	1.10.1
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/net-mgmt/p5-Nagios-Plugin/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-Nagios-Plugin/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	Nagios-Plugin
 PORTVERSION=	0.36
@@ -22,6 +22,8 @@ USES=		perl5
 USE_PERL5=	configure
 
 PORTDOCS=	Changes README
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

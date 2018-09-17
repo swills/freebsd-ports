@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/acme.sh/Makefile 474961 2018-07-19 12:55:43Z dvl $
+# $FreeBSD: head/security/acme.sh/Makefile 479341 2018-09-09 22:48:30Z woodsb02 $
 
 PORTNAME=	acme.sh
 PORTVERSION=	2.7.9
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	dvl@FreeBSD.org
@@ -42,7 +43,7 @@ do-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/deploy ${STAGEDIR}${EXAMPLESDIR}/dnsapi
 	( cd ${WRKSRC} && ${COPYTREE_BIN} deploy ${STAGEDIR}${EXAMPLESDIR} )
 	( cd ${WRKSRC} && ${COPYTREE_BIN} dnsapi ${STAGEDIR}${EXAMPLESDIR} )
-	${INSTALL_DATA} ${FILESDIR}/acme.sh ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${FILESDIR}/acme.sh.conf ${STAGEDIR}${EXAMPLESDIR}
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

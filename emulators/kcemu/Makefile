@@ -1,5 +1,5 @@
 # Created by: Hardy Schumacher <hardy.schumacher@gmx.de>
-# $FreeBSD: head/emulators/kcemu/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/emulators/kcemu/Makefile 479431 2018-09-10 15:23:20Z tobik $
 
 PORTNAME=	kcemu
 PORTVERSION=	0.5.1
@@ -26,6 +26,7 @@ GNU_CONFIGURE=	yes
 USE_XORG=	xmu
 USE_GNOME=	gtk20
 USES=		gettext ncurses pkgconfig
+USE_CXXSTD=	gnu++98
 
 LDFLAGS+=	-L${LOCALBASE}/lib
 WRKSRC=		${WRKDIR}/KCemu-${PORTVERSION}

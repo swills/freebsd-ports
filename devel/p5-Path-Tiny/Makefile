@@ -1,24 +1,25 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Path-Tiny/Makefile 464571 2018-03-15 08:01:38Z tobik $
+# $FreeBSD: head/devel/p5-Path-Tiny/Makefile 479642 2018-09-12 22:56:32Z sunpoet $
 
 PORTNAME=	Path-Tiny
-PORTVERSION=	0.104
+PORTVERSION=	0.108
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DAGOLDEN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	File path utility
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	p5-Test-MockRandom>=0:devel/p5-Test-MockRandom \
-		p5-Test-FailWarnings>=0:devel/p5-Test-FailWarnings
+TEST_DEPENDS=	p5-Test-FailWarnings>=0:devel/p5-Test-FailWarnings \
+		p5-Test-MockRandom>=0:devel/p5-Test-MockRandom
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

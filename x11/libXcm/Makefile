@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/libXcm/Makefile 429555 2016-12-26 17:26:57Z mat $
+# $FreeBSD: head/x11/libXcm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libXcm
 PORTVERSION=	0.5.4
@@ -18,5 +18,7 @@ GNU_CONFIGURE=	yes
 USE_XORG=	x11 xfixes xmu xt
 INSTALL_TARGET=	install-strip
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

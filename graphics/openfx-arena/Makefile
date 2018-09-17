@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/openfx-arena/Makefile 476511 2018-08-06 13:02:00Z olivier $
+# $FreeBSD: head/graphics/openfx-arena/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	openfx-arena
 PORTVERSION=	2.3.14
+PORTREVISION=	1
 DISTVERSIONPREFIX=	Natron-
 CATEGORIES=	graphics
 

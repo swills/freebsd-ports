@@ -1,5 +1,5 @@
 # Created by: Jonathan Anderson <jonathan@FreeBSD.org>
-# $FreeBSD: head/devel/git-cola/Makefile 461932 2018-02-15 16:52:14Z amdmi3 $
+# $FreeBSD: head/devel/git-cola/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	git-cola
 PORTVERSION=	2.6
@@ -24,5 +24,7 @@ INSTALLS_ICONS=	yes
 NO_ARCH=	yes
 
 MAKE_ARGS=	prefix=${PREFIX} PYTHON=${PYTHON_CMD}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

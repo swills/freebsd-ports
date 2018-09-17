@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/devel/godot/Makefile 473165 2018-06-23 21:18:20Z amdmi3 $
+# $FreeBSD: head/devel/godot/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	godot
 PORTVERSION=	3.0.3
@@ -17,6 +17,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.txt
 BROKEN_aarch64=		fails to build: KeyError: 'android_arch'
 BROKEN_armv6=		fails to build: KeyError: 'android_arch'
 BROKEN_armv7=		fails to build: KeyError: 'android_arch'
+BROKEN_powerpc64=	fails to compile: inv_txfm_sse2.h:14:32: emmintrin.h: No such file or directory
 
 BUILD_DEPENDS=	yasm:devel/yasm
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \

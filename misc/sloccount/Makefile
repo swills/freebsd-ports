@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/sloccount/Makefile 372652 2014-11-16 21:54:14Z amdmi3 $
+# $FreeBSD: head/misc/sloccount/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sloccount
 PORTVERSION=	2.26
@@ -20,6 +20,8 @@ MAKEFILE=	makefile
 INSTALL_TARGET=	install_programs install_man
 
 PORTDOCS=	ChangeLog README TODO sloccount.html
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 .for file in lexcount1 c_count java_count php_count

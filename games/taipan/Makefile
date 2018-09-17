@@ -1,5 +1,5 @@
 # Created by: Dave Walton <dwalton@acm.org>
-# $FreeBSD: head/games/taipan/Makefile 412884 2016-04-10 01:21:51Z junovitch $
+# $FreeBSD: head/games/taipan/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	taipan
 PORTVERSION=	0.9
@@ -15,6 +15,8 @@ MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}" LIBS="${LDFLAGS} -lncurses"
 
 PORTDOCS=	README
 PLIST_FILES=	bin/taipan
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/taipan ${STAGEDIR}${PREFIX}/bin

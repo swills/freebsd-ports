@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/evilfinder/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/evilfinder/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	evilfinder
 PORTVERSION=	1.00
@@ -25,7 +25,7 @@ PLIST_FILES=	bin/ef \
 PORTDATA=	evilnumbers.dat
 PORTDOCS=	README
 
-OPTIONS_DEFINE=	WRAPPER
+OPTIONS_DEFINE=	DOCS WRAPPER
 WRAPPER_DESC=	Evilfinder local wrapper
 OPTIONS_DEFAULT=	WRAPPER
 

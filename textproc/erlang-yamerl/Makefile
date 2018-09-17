@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/erlang-yamerl/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/textproc/erlang-yamerl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	yamerl
 PORTVERSION=	0.7.0
@@ -16,5 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	yakaz
 
 ERL_DOCS=	README.md doc
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

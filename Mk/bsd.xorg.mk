@@ -7,7 +7,7 @@
 #
 # !!! Here be dragons !!! (yeah, here as well...)
 #
-# $FreeBSD: head/Mk/bsd.xorg.mk 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/Mk/bsd.xorg.mk 479538 2018-09-11 18:34:27Z zeising $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Xorg_Pre_Include)
@@ -198,7 +198,7 @@ xmu_LIB_PC_DEPENDS=		${LOCALBASE}/libdata/pkgconfig/xmu.pc:x11-toolkits/libXmu
 xmuu_LIB_PC_DEPENDS=		${LOCALBASE}/libdata/pkgconfig/xmuu.pc:x11-toolkits/libXmu
 xorg-macros_BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/xorg-macros.pc:devel/xorg-macros
 xorg-server_LIB_PC_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/xorg-server.pc:x11-servers/xorg-server
-xorgproto_LIB_PC_DEPENDS=		${LOCALBASE}/libdata/pkgconfig/xproto.pc:x11/xorgproto
+xorgproto_BUILD_DEPENDS=		xorgproto>=0:x11/xorgproto
 xp_LIB_PC_DEPENDS=		${LOCALBASE}/libdata/pkgconfig/xp.pc:x11/libXp
 xpm_LIB_PC_DEPENDS=		${LOCALBASE}/libdata/pkgconfig/xpm.pc:x11/libXpm
 xprintapputil_LIB_PC_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/xprintapputil.pc:x11/libXprintAppUtil

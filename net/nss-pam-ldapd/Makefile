@@ -1,8 +1,9 @@
 # Created by: melifaro@ipfw.ru
-# $FreeBSD: head/net/nss-pam-ldapd/Makefile 469116 2018-05-05 14:37:10Z danfe $
+# $FreeBSD: head/net/nss-pam-ldapd/Makefile 479439 2018-09-10 16:30:50Z zi $
 
 PORTNAME=		nss-pam-ldapd
-PORTVERSION=		0.9.9
+PORTVERSION=		0.9.10
+PORTREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://arthurdejong.org/nss-pam-ldapd/ \
 			ZI
@@ -23,7 +24,8 @@ NSS_LDAP_SHMAJOR=	1
 SUB_FILES+=		pkg-message
 
 NSLCD_PIDFILE?=		/var/run/nslcd.pid
-NSLCD_SOCKET?=		/var/run/nslcd.ctl
+NSLCD_VARDIR?=		/var/run/nslcd
+NSLCD_SOCKET?=		${NSLCD_VARDIR}/nslcd.ctl
 
 OPTIONS_DEFINE=		KERBEROS
 OPTIONS_DEFAULT=	KERBEROS
@@ -65,7 +67,9 @@ PLIST_SUB+=		CONFIG="${CONFIG_FILE}" \
 			PAM_LDAP_SHMAJOR="${PAM_LDAP_SHMAJOR}" \
 			NSS_LDAP_SHMAJOR="${NSS_LDAP_SHMAJOR}"
 SUB_LIST+=		CONFIG_FILE="${PREFIX}/etc/${CONFIG_FILE}" \
-			NSLCD_PIDFILE="${NSLCD_PIDFILE}"
+			NSLCD_PIDFILE="${NSLCD_PIDFILE}" \
+			NSLCD_VARDIR="${NSLCD_VARDIR}" \
+			USERS="${USERS}" GROUPS="${GROUPS}"
 
 .if empty(PORT_OPTIONS:MKERBEROS)
 CONFIGURE_ARGS+=	--disable-kerberos

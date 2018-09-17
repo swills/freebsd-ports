@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-maru/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/elixir-maru/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	maru
 PORTVERSION=	0.12.4
@@ -19,5 +19,7 @@ MIX_BUILD_DEPS=	devel/elixir-plug \
 		devel/elixir-poison \
 		www/erlang-cowboy
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

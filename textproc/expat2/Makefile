@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/textproc/expat2/Makefile 478260 2018-08-27 23:45:15Z cpm $
+# $FreeBSD: head/textproc/expat2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	expat
 PORTVERSION=	2.2.6
@@ -18,5 +18,7 @@ USES=		libtool pathfix tar:bz2
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--without-docbook
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

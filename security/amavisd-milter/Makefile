@@ -1,5 +1,5 @@
 # Created by: Petr Rehor <rx@rx.cz>
-# $FreeBSD: head/security/amavisd-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
+# $FreeBSD: head/security/amavisd-milter/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	amavisd-milter
 PORTVERSION=	1.6.0
@@ -41,6 +41,8 @@ SUB_LIST=	AMAVISUSER=${AMAVISUSER} \
 PLIST_SUB=	${SUB_LIST}
 
 PORTDOCS=	AUTHORS CHANGES INSTALL LICENSE README TODO
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

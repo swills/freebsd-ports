@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kgpg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/kgpg/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kgpg
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -17,5 +17,7 @@ USE_KDE=	akonadi akonadicontacts archive auth bookmarks codecs \
 		widgetsaddons windowsystem xmlgui
 USE_QT=		core dbus gui network printsupport widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

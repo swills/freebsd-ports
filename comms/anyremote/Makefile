@@ -1,9 +1,8 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/comms/anyremote/Makefile 439605 2017-04-28 12:34:53Z miwi $
+# $FreeBSD: head/comms/anyremote/Makefile 479154 2018-09-06 19:46:19Z swills $
 
 PORTNAME=	anyremote
-PORTVERSION=	6.3.2
-PORTREVISION=	3
+PORTVERSION=	6.7.1
 CATEGORIES=	comms
 MASTER_SITES=	SF
 
@@ -13,14 +12,15 @@ COMMENT=	Remote control service over Bluetooth, infrared, or TCP/IP networking
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+LIB_DEPENDS=	libdbus-1.so:devel/dbus \
+		libavahi-client.so:net/avahi-app
+
 USES=		alias iconv pkgconfig python shebangfix
-SHEBANG_FILES=	cfg-data/Utils/imdb-mf.sh \
-		cfg-data/Utils/all-in-1.py
+SHEBANG_FILES=	cfg-data/Utils/all-in-1.py
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
-LIB_DEPENDS+=	libdbus-1.so:devel/dbus
 
 OPTIONS_DEFINE=	DOCS DBUS X11
 OPTIONS_DEFAULT=	DBUS X11

@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/dns/ddclient/Makefile 474118 2018-07-07 18:54:31Z tobik $
+# $FreeBSD: head/dns/ddclient/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ddclient
 DISTVERSIONPREFIX=	v
@@ -23,7 +23,7 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 SUB_FILES=	pkg-message ddclient_force
 
-OPTIONS_DEFINE=	SSL
+OPTIONS_DEFINE=	SSL DOCS
 OPTIONS_DEFAULT=SSL
 
 SSL_RUN_DEPENDS=ca_root_nss>0:security/ca_root_nss \

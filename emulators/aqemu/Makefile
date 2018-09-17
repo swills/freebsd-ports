@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/aqemu/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/emulators/aqemu/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	aqemu
 DISTVERSIONPREFIX=	v
@@ -19,5 +19,7 @@ USE_QT=		buildtools_build linguisttools_build qmake_build \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tobimensch
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

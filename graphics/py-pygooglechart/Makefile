@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@FreeBSD.org>
-# $FreeBSD: head/graphics/py-pygooglechart/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-pygooglechart/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pygooglechart
 PORTVERSION=	0.3.0
@@ -17,6 +17,8 @@ USE_PYTHON=	distutils autoplist
 
 PORTEXAMPLES=	*
 EXAMPLESDIR=	${PREFIX}/share/examples/${PKGNAMEPREFIX}${PORTNAME}
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR} && \

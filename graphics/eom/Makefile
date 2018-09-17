@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/eom/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/graphics/eom/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	eom
 PORTVERSION=	1.20.0
@@ -35,7 +35,7 @@ INSTALL_TARGET=	install-strip
 GLIB_SCHEMAS=	org.mate.eom.gschema.xml \
 		org.mate.eom.enums.xml
 
-OPTIONS_DEFINE=	EXIF EXEMPI
+OPTIONS_DEFINE=	EXIF EXEMPI DOCS
 OPTIONS_DEFAULT=EXIF EXEMPI
 
 EXEMPI_DESC=		XMP support

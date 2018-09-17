@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/garith/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/garith/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	garith
 PORTVERSION=	2.1
@@ -17,6 +17,8 @@ CFLAGS+=	`${GTK_CONFIG} --cflags`
 LDFLAGS+=	`${GTK_CONFIG} --libs`
 PORTDOCS=	BUGS HISTORY README TODO
 PLIST_FILES=	bin/garith
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|gldouble|double|;/gnome/d;/all.*apps/d'\

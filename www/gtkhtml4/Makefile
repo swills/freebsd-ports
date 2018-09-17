@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/www/gtkhtml4/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/www/gtkhtml4/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	gtkhtml
 PORTVERSION=	4.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	4

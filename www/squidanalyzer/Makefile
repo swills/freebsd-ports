@@ -1,5 +1,5 @@
 # Created by: Dominique Goncalves <dominique.goncalves@gmail.com>
-# $FreeBSD: head/www/squidanalyzer/Makefile 409220 2016-02-20 01:01:06Z novel $
+# $FreeBSD: head/www/squidanalyzer/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	squidanalyzer
 PORTVERSION=	6.5
@@ -32,6 +32,8 @@ SUB_FILES=	pkg-message
 
 CONF_FILES=	excluded included network-aliases \
 		squidanalyzer.conf user-aliases
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 .for file in ${CONF_FILES}

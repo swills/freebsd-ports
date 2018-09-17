@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/cad/linuxcnc-devel/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/cad/linuxcnc-devel/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	linuxcnc
 PORTVERSION=	20170708
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-devel
 

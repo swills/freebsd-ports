@@ -1,9 +1,9 @@
 # Created by: Jesse Smith <jessefrgsmith@yahoo.ca>
-# $FreeBSD: head/games/searchandrescue/Makefile 476220 2018-08-02 05:57:25Z tobik $
+# $FreeBSD: head/games/searchandrescue/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	SearchAndRescue
 PORTVERSION=	1.4.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME:tl}/Program/
 

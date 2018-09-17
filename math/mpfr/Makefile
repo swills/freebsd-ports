@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/math/mpfr/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/mpfr/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mpfr
 PORTVERSION=	4.0.1
@@ -34,5 +34,7 @@ USE_LDCONFIG=	yes
 INFO=		mpfr
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

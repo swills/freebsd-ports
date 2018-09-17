@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-excoveralls/Makefile 478297 2018-08-28 09:56:45Z vanilla $
+# $FreeBSD: head/devel/elixir-excoveralls/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	excoveralls
 PORTVERSION=	0.10.0
@@ -17,5 +17,7 @@ MIX_RUN_DEPS=	devel/elixir-exjsx \
 USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	parroty
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

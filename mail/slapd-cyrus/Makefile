@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/mail/slapd-cyrus/Makefile 474907 2018-07-18 22:20:23Z yuri $
+# $FreeBSD: head/mail/slapd-cyrus/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	slapd-cyrus
 PORTVERSION=	1.00
@@ -27,6 +27,8 @@ PLIST_SUB=	SITE_PERL_REL=${SITE_PERL_REL} \
 		DOCS_DIR_REL=${DOCSDIR_REL}
 
 PORTDOCS=	slapd-cyrus.conf.sample
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR} ${STAGEDIR}${PREFIX}/${SITE_PERL_REL}

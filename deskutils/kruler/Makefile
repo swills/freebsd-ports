@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kruler/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/kruler/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kruler
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,5 +13,7 @@ USE_KDE=	auth codecs config configwidgets coreaddons ecm doctools i18n \
 USE_QT=		core dbus gui widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	x11 xcb
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

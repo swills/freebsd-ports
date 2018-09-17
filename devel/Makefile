@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 479048 2018-09-05 23:03:55Z sunpoet $
+# $FreeBSD: head/devel/Makefile 479881 2018-09-16 09:14:45Z rene $
 #
 
     COMMENT = Development utilities
@@ -1056,7 +1056,6 @@
     SUBDIR += hs-haddock-library
     SUBDIR += hs-happy
     SUBDIR += hs-hashable
-    SUBDIR += hs-hashed-storage
     SUBDIR += hs-hashtables
     SUBDIR += hs-haskell-lexer
     SUBDIR += hs-haskell-src
@@ -4021,6 +4020,7 @@
     SUBDIR += pear-XML_Util
     SUBDIR += pear-channel-doctrine
     SUBDIR += pear-channel-ezc
+    SUBDIR += pear-channel-geshi
     SUBDIR += pear-channel-horde
     SUBDIR += pear-channel-htmlpurifier.org
     SUBDIR += pear-channel-openpear
@@ -4352,6 +4352,7 @@
     SUBDIR += py-aspyct
     SUBDIR += py-astor
     SUBDIR += py-astroid
+    SUBDIR += py-astroid1
     SUBDIR += py-asttokens
     SUBDIR += py-async_generator
     SUBDIR += py-async_timeout
@@ -4603,6 +4604,7 @@
     SUBDIR += py-grizzled
     SUBDIR += py-grouch
     SUBDIR += py-grpcio
+    SUBDIR += py-grpcio-gcp
     SUBDIR += py-grpcio-tools
     SUBDIR += py-gtfslib
     SUBDIR += py-gyp
@@ -4931,8 +4933,10 @@
     SUBDIR += py-pytest-cov
     SUBDIR += py-pytest-django
     SUBDIR += py-pytest-flake8
+    SUBDIR += py-pytest-flakes
     SUBDIR += py-pytest-localserver
     SUBDIR += py-pytest-mock
+    SUBDIR += py-pytest-pycodestyle
     SUBDIR += py-pytest-runner
     SUBDIR += py-pytest-sugar
     SUBDIR += py-pytest-timeout
@@ -6240,7 +6244,6 @@
     SUBDIR += tijmp
     SUBDIR += tinycbor
     SUBDIR += tinylaf
-    SUBDIR += tinyq
     SUBDIR += tkcon
     SUBDIR += tkcvs
     SUBDIR += tkmerge

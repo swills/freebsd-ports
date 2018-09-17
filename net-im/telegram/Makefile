@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/net-im/telegram/Makefile 476517 2018-08-06 17:22:36Z fernape $
+# $FreeBSD: head/net-im/telegram/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	telegram
 PORTVERSION=	1.4.1.g20161227
@@ -32,6 +32,8 @@ GH_SUBDIR=	tgl:tgl tgl/tl-parser:tlparser
 PLIST_FILES=	bin/telegram-cli \
 		etc/telegram-cli/server.pub
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/telegram-cli

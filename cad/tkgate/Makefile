@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/tkgate/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/cad/tkgate/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tkgate
 PORTVERSION=	2.0.0
@@ -15,6 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 USES+=		iconv:translit tk:build,run
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/bin/wish|${WISH}|g' ${WRKSRC}/scripts/tree.tcl

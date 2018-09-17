@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/stf-6rd-kmod/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net/stf-6rd-kmod/Makefile 479890 2018-09-16 11:44:37Z antoine $
 
 PORTNAME=	stf
 PORTVERSION=	0.${SVN_REV}
@@ -9,6 +9,9 @@ DISTNAME=	freebsd-stf-${OSREL}-${PORTVERSION}
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	6rd patched stf(4) kernel modules port for 8.4+
+
+DEPRECATED=	Does not build on FreeBSD 11+
+EXPIRATION_DATE=	2018-10-31
 
 ONLY_FOR_ARCHS=	amd64 i386
 

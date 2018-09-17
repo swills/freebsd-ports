@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/emc2/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/math/emc2/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	emc2
 DISTVERSIONPREFIX=v
@@ -32,7 +32,7 @@ PORTEXAMPLES=	*
 
 PLIST_FILES=	bin/emc2 bin/prf_f3d
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 DOCS_DISTFILES=	RTemc2_fr.pdf RTemc2_gb.pdf
 

@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-jbigkit/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/graphics/linux-c7-jbigkit/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jbigkit
 PORTVERSION=	2.0
@@ -18,5 +18,7 @@ RPMVERSION=	11.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

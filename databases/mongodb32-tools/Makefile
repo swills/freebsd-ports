@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/databases/mongodb32-tools/Makefile 467537 2018-04-16 21:33:18Z feld $
+# $FreeBSD: head/databases/mongodb32-tools/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mongodb32-tools
 PORTVERSION=	3.2.11
@@ -22,7 +22,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mongodb
 GH_PROJECT=	mongo-tools
 
-OPTIONS_DEFINE=	SSL SASL
+OPTIONS_DEFINE=	SSL SASL DOCS
 OPTIONS_DEFAULT=	SSL
 
 SASL_USE=	my_tags=sasl

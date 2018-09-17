@@ -1,5 +1,5 @@
 # Created by: rene@FreeBSD.org
-# $FreeBSD: head/comms/dcf77pi/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/comms/dcf77pi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dcf77pi
 PORTVERSION=	3.7.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
 
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_ALL_TARGET=	all doxygen
@@ -26,6 +26,8 @@ USE_LDCONFIG=	yes
 
 PATCH_STRIP=	-p1
 PORTDOCS=	CHANGELOG.md README.md receiver.svg
+
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_PORTDOCS=	html/*
 
 INSTALL_TARGET=	install-strip

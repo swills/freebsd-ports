@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/www/xombrero/Makefile 478864 2018-09-03 12:40:04Z rene $
+# $FreeBSD: head/www/xombrero/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	xombrero
 PORTVERSION=	1.6.4
@@ -35,6 +35,8 @@ GTK3_MAKE_ENV=		GTK_VERSION="gtk3"
 
 SUB_FILES=	xombrero
 PORTEXAMPLES=	*
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@cd ${WRKSRC}; ${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \

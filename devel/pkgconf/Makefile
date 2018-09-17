@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pkgconf/Makefile 462790 2018-02-24 11:27:49Z bapt $
+# $FreeBSD: head/devel/pkgconf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pkgconf
 PORTVERSION=	1.4.2
@@ -26,6 +26,8 @@ CONFIGURE_ARGS=	--with-pkg-config-dir=${PREFIX}/libdata/pkgconfig:/usr/libdata/p
 		--with-system-libdir=/usr/lib \
 		--with-system-includedir=/usr/include
 MAKE_ARGS=	MANDIR="${MAN1PREFIX}/man/man1"
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${LN} -sf pkgconf ${STAGEDIR}${PREFIX}/bin/pkg-config

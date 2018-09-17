@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/x11/linux-c7-xorg-libs/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/x11/linux-c7-xorg-libs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xorg-libs
 PORTVERSION=	7.7
@@ -84,6 +84,8 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	fontconfig
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${RM} -r ${WRKSRC}/usr/share/icons

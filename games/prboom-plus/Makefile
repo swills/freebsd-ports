@@ -1,5 +1,5 @@
 # Created by: Jordan DeLong <fracture@allusion.net>
-# $FreeBSD: head/games/prboom-plus/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/prboom-plus/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	prboom-plus
 PORTVERSION=	2.5.1.3
@@ -22,7 +22,7 @@ USE_SDL=	mixer net sdl
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-waddir=${DATADIR}
 
-OPTIONS_DEFINE=	OPENGL
+OPTIONS_DEFINE=	DOCS OPENGL
 OPTIONS_DEFAULT=OPENGL
 
 DATADIR=	${DMDIR}

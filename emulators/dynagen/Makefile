@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/emulators/dynagen/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/emulators/dynagen/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	dynagen
 PORTVERSION=	0.11.0
@@ -27,6 +27,8 @@ SHEBANG_FILES=	*.py dynagen
 USE_PYTHON=	distutils autoplist
 ALL_TARGET=	# empty
 NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.pre.mk>
 

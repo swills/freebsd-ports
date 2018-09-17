@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-protobuffs/Makefile 474131 2018-07-07 19:43:33Z olgeni $
+# $FreeBSD: head/devel/erlang-protobuffs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	protobuffs
 PORTVERSION=	0.9.1
@@ -17,5 +17,7 @@ USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	basho
 GH_PROJECT=	erlang_protobuffs
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

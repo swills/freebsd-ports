@@ -1,5 +1,5 @@
 # Created by: Martin Jackson <mhjacks@swbell.net>
-# $FreeBSD: head/net-mgmt/py-snmp4/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-mgmt/py-snmp4/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	snmp4
 PORTVERSION=	4.3.2
@@ -27,6 +27,8 @@ DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
 
 PORTDOCS=	*
 PORTEXAMPLES=	*
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

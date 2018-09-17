@@ -1,5 +1,5 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/lookup/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/japanese/lookup/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	lookup
 PORTVERSION=	1.99.96.20180209
@@ -23,9 +23,12 @@ INFO=		lookup
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-emacs=${EMACS_CMD} \
 		--with-lispdir=${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}
+
+OPTIONS_DEFINE=	DOCS
+
 PORTDOCS=	AUTHORS ChangeLog NEWS README.md
 
- post-install:
+post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 

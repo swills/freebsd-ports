@@ -1,5 +1,5 @@
 # Created by: Rihaz Jerrin <rihaz.jerrin@gmail.com>
-# $FreeBSD: head/security/cisco-torch/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/security/cisco-torch/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cisco-torch
 PORTVERSION=	0.4
@@ -30,6 +30,8 @@ FILELIST=	brutefile.txt \
 		password.txt \
 		tfingerprint.db \
 		users.txt
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT}   ${WRKSRC}/cisco-torch.pl ${STAGEDIR}${PREFIX}/bin/cisco-torch

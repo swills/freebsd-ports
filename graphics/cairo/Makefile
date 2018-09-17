@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/cairo/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/graphics/cairo/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	cairo
 PORTVERSION=	1.14.8
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/

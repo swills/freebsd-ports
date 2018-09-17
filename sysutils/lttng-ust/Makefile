@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/sysutils/lttng-ust/Makefile 446075 2017-07-17 14:44:39Z mmokhi $
+# $FreeBSD: head/sysutils/lttng-ust/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lttng-ust
 PORTVERSION=	2.9.0
@@ -24,6 +24,8 @@ USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%PYTHON_VERSION%%|${PYTHON_VERSION}|g' \

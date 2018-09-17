@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/distel/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/distel/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	distel
 PORTVERSION=	4.1.1
@@ -23,6 +23,8 @@ NO_ARCH=	yes
 
 DISTEL_DOCS=	AUTHORS ChangeLog INSTALL INSTALL.WIN32 NEWS README README.ie-session
 DISTEL_ROOT=	${PREFIX}/lib/erlang/lib/${PORTNAME}-${PORTVERSION}
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	@${MKDIR} ${WRKSRC}/ebin

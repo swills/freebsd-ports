@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/elixir-postgrex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/databases/elixir-postgrex/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	postgrex
 PORTVERSION=	0.13.5
@@ -20,5 +20,7 @@ MIX_BUILD_DEPS=	databases/elixir-db_connection \
 		devel/elixir-decimal
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

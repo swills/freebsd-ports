@@ -1,5 +1,5 @@
 # Created by: Lefteris Chatzibarbas <lefcha@hellug.gr>
-# $FreeBSD: head/mail/imapfilter/Makefile 458805 2018-01-12 06:36:36Z bofh $
+# $FreeBSD: head/mail/imapfilter/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	imapfilter
 PORTVERSION=	2.6.11
@@ -29,6 +29,8 @@ MAKE_ARGS=	PREFIX=${PREFIX} \
 		SHAREDIR=${DATADIR} \
 		MANDIR=${MANPREFIX}/man \
 		LIBLUA=-llua-${LUA_VER}
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's|-ldl ||' ${WRKSRC}/src/Makefile
