@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/dsc/Makefile 478328 2018-08-28 20:45:24Z leres $
+# $FreeBSD: head/dns/dsc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dsc
 PORTVERSION=	2.7.0
@@ -26,5 +26,7 @@ USES=		gmake perl5 shebangfix
 SUB_FILES=	pkg-message
 
 USE_RC_SUBR=    dsc
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

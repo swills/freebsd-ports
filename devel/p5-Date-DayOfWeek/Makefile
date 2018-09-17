@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-Date-DayOfWeek/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Date-DayOfWeek/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Date-DayOfWeek
 PORTVERSION=	1.22
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Determine the day of the week for any date
 
 BUILD_DEPENDS=	p5-Date-Leapyear>=0:devel/p5-Date-Leapyear \

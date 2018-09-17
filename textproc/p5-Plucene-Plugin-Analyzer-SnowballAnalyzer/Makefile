@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Plucene-Plugin-Analyzer-SnowballAnalyzer/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Plucene-Plugin-Analyzer-SnowballAnalyzer/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Plucene-Plugin-Analyzer-SnowballAnalyzer
 PORTVERSION=	1.1
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:FABPOT
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Stemmed analyzer plugin for p5-Plucene search engine
 
 BUILD_DEPENDS=	p5-Lingua-StopWords>=0:textproc/p5-Lingua-StopWords \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/signon-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/signon-qt5/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	signon
 PORTVERSION=	8.58
@@ -21,6 +21,8 @@ USE_GITLAB=	yes
 GL_ACCOUNT=	accounts-sso
 GL_PROJECT=	signond
 GL_COMMIT=	aa1bcf3c9218addbdb376a40151b689409046125
+
+OPTIONS_DEFINE=	DOCS
 
 pre-configure:
 	#make it find qdbusxml2ccp (as ${QT_BINDIR} is not in PATH)

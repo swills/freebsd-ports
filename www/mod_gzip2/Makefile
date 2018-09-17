@@ -1,5 +1,5 @@
 # Created by: Stefan `Sec` Zehl <sec@42.org>
-# $FreeBSD: head/www/mod_gzip2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_gzip2/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	mod_gzip2
 PORTVERSION=	2.1.0
@@ -20,6 +20,8 @@ USES=		apache:2.2+ gmake
 
 PORTDOCS=	commands.txt samples.txt
 PORTEXAMPLES=	mod_gzip2.conf.sample
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${MV} ${WRKSRC}/mod_gzip.c ${WRKSRC}/${PORTNAME}.c

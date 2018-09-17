@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-SBC/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-HTML-SBC/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	HTML-SBC
 PORTVERSION=	0.15
@@ -8,7 +8,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple blog code to valid XHTML
 
 LICENSE=	ART10 GPLv1+

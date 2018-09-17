@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/kodi-devel/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/multimedia/kodi-devel/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	kodi
 CATEGORIES=	multimedia
-DISTVERSION=	18.0.g201808261011
+DISTVERSION=	18.0.g201809092101
 PORTREVISION=	1
 PKGNAMESUFFIX?=	-devel
 
@@ -50,12 +50,12 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 # leads to dependency problems where libcpluff.a is not yet finished
 # building when it's required.
 USES=		autoreconf:build cmake:outsource,noninja compiler:c++11-lib \
-		gettext gmake iconv:wchar_t jpeg libtool pkgconfig python:2.7 \
-		ssl sqlite
+		gettext gmake gnome iconv:wchar_t jpeg libtool pkgconfig \
+		python:2.7 ssl sqlite
 USE_GITHUB=	yes
 GH_ACCOUNT=	xbmc
 GH_PROJECT=	xbmc
-GH_TAGNAME=	18.0b1v2-Leia
+GH_TAGNAME=	18.0b2-Leia
 USE_GNOME=	libxslt libxml2
 USE_JAVA=	yes
 JAVA_BUILD=	yes

@@ -1,5 +1,5 @@
 # Created by: Ben Smithurst <ben@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-Sender/Makefile 400692 2015-11-03 10:56:32Z tobez $
+# $FreeBSD: head/mail/p5-Mail-Sender/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Mail-Sender
 PORTVERSION=	0.8.23
@@ -7,7 +7,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module for sending mails with attachments through an SMTP server
 
 USES=		perl5

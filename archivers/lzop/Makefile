@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/archivers/lzop/Makefile 447757 2017-08-11 12:59:31Z mandree $
+# $FreeBSD: head/archivers/lzop/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lzop
 DISTVERSION=	1.04
@@ -17,5 +17,7 @@ LIB_DEPENDS=	liblzo2.so:archivers/lzo2
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

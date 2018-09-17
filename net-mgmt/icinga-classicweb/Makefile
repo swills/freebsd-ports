@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/icinga-classicweb/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/net-mgmt/icinga-classicweb/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	icinga-classicweb
 PORTREVISION=	2
@@ -6,6 +6,8 @@ DISTNAME=	icinga-${PORTVERSION}
 
 MAINTAINER=	lme@FreeBSD.org
 COMMENT=	Classic web interface for Icinga 1 and 2
+
+OPTIONS_DEFINE=	EXAMPLES
 
 .include "${.CURDIR}/../icinga-core/Makefile.common"
 

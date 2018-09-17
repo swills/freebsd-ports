@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/editors/pluma/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/editors/pluma/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pluma
 PORTVERSION=	1.20.1
@@ -38,5 +38,7 @@ GLIB_SCHEMAS=	org.mate.pluma.gschema.xml \
 		org.mate.pluma.plugins.filebrowser.gschema.xml \
 		org.mate.pluma.plugins.spell.gschema.xml \
                 org.mate.pluma.plugins.time.gschema.xml
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

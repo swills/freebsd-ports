@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/math/gnubc/Makefile 472673 2018-06-18 07:29:21Z yuri $
+# $FreeBSD: head/math/gnubc/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	bc
 DISTVERSION=	1.07.1
@@ -12,6 +12,8 @@ COMMENT=	GNU bc/dc calculator
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: tests fail with error code 2
 
 USES=		libedit makeinfo
 GNU_CONFIGURE=	yes

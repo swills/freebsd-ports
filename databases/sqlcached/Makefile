@@ -1,5 +1,5 @@
 # Created by: ivoras
-# $FreeBSD: head/databases/sqlcached/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/sqlcached/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sqlcached
 PORTVERSION=	r6
@@ -22,6 +22,8 @@ PORTDOCS=	${PORTNAME}.html ${PORTNAME}.txt
 
 PLIST_FILES=	bin/${PORTNAME} etc/rc.d/${PORTNAME} \
 		man/man1/${PORTNAME}.1.gz
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-lcurses|-lncurses|' ${WRKSRC}/Makefile

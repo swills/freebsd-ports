@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/icmake/Makefile 475081 2018-07-22 02:56:51Z bofh $
+# $FreeBSD: head/devel/icmake/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	icmake
 PORTVERSION=	9.02.08
@@ -34,6 +34,8 @@ GL_ACCOUNT=	fbb-git
 GL_COMMIT=	8e3ac3057363162b87279bab1e9ba356eb0aea0f
 
 .include <bsd.port.options.mk>
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|find|find .|g' \

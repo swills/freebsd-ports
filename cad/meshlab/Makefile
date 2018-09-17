@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/cad/meshlab/Makefile 477721 2018-08-21 15:56:20Z rene $
+# $FreeBSD: head/cad/meshlab/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	meshlab
 PORTVERSION=	1.3.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/MeshLab%20v${PORTVERSION}/
 DISTNAME=	MeshLabSrc_AllInc_v${PORTVERSION:C|\.||g}

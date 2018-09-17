@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/security/linux-c6-libtasn1/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/security/linux-c6-libtasn1/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libtasn1
 PORTVERSION=	2.3
@@ -15,5 +15,7 @@ USES=		cpe linux:c6
 CPE_VENDOR=	gnu
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

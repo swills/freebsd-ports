@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/calendarsupport/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/net/calendarsupport/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	calendarsupport
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -21,5 +21,7 @@ USE_KDE+=	akonadi akonadicalendar calendarcore calendarutils holidays \
 USE_QT=		core gui network printsupport testlib uitools widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

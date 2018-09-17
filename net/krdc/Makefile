@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/krdc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/krdc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	krdc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,7 +18,7 @@ USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 
-OPTIONS_DEFINE=	FREERDP
+OPTIONS_DEFINE=	FREERDP DOCS
 OPTIONS_SUB=	yes
 FREERDP_CMAKE_BOOL=	WITH_FREERDP
 FREERDP_DESC=	Remote Desktop support via FreeRDP

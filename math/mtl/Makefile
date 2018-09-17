@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/mtl/Makefile 470679 2018-05-23 07:06:21Z linimon $
+# $FreeBSD: head/math/mtl/Makefile 479889 2018-09-16 11:21:34Z antoine $
 
 PORTNAME=	mtl
 DISTVERSION=	2.1.2-23.tentative
@@ -17,6 +17,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN=		fails to fetch: mastersite times out
 DEPRECATED=	fails to fetch: mastersite times out
+EXPIRATION_DATE=	2018-09-25
 
 CONFIGURE_ENV=	CXXCPP="${CXXCPP}"
 CXXCPP?=	${CXX} -E

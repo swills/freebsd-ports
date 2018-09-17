@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/deskutils/notecase/Makefile 479017 2018-09-05 10:05:29Z martymac $
+# $FreeBSD: head/deskutils/notecase/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	notecase
 PORTVERSION=	1.9.8
@@ -23,6 +23,8 @@ MAKE_ARGS=	prefix=${PREFIX}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 PORTDOCS=	help.ncd
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/notecase

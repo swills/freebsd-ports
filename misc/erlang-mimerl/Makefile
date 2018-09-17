@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/erlang-mimerl/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/misc/erlang-mimerl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mimerl
 PORTVERSION=	1.1.1
@@ -13,5 +13,7 @@ LICENSE=	MIT
 USES=		erlang:rebar3
 USE_GITHUB=	yes
 GH_ACCOUNT=	benoitc
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

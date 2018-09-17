@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/games/pokerth/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/pokerth/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pokerth
 PORTVERSION=	1.1.2
@@ -32,6 +32,8 @@ QMAKE_ARGS+=	CONFIG+="client"
 WRKSRC=		${WRKDIR}/${DISTNAME}-rc
 
 PORTDOCS=	server_setup_howto.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -E \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/elixir-kafka_ex/Makefile 437011 2017-03-27 02:08:14Z vanilla $
+# $FreeBSD: head/net/elixir-kafka_ex/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kafka_ex
 PORTVERSION=	0.6.4
@@ -17,5 +17,7 @@ USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	jacklund
 NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

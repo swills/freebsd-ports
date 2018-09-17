@@ -1,5 +1,5 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/security/obfsclient/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/obfsclient/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	obfsclient
 PORTVERSION=	0.0.2
@@ -27,6 +27,8 @@ TEST_TARGET=	check
 PLIST_FILES=	bin/${PORTNAME}
 
 PORTDOCS=	COPYING
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

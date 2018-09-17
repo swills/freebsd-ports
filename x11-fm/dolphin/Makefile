@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/dolphin/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/x11-fm/dolphin/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dolphin
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -28,5 +28,7 @@ USE_QT=		concurrent core dbus gui network phonon4 widgets xml \
 SHLIB_VER=	5.0.0
 PLIST_SUB+=	SHLIB_VER="${SHLIB_VER}" \
 		SHLIB_SHVER="${SHLIB_VER:R:R}"
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

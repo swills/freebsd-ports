@@ -1,5 +1,5 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/ports-mgmt/pkgcompare/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/ports-mgmt/pkgcompare/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pkgcompare
 PORTVERSION=	1.1
@@ -27,6 +27,8 @@ PORTDOCS=	*
 PLIST_FILES=	man/man8/pkg-compare.8.gz \
 		sbin/pkg-compare
 SUB_FILES=	pkg-message
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${BINARY} ${STAGEDIR}${PREFIX}/sbin

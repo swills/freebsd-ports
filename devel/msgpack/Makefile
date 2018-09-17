@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/msgpack/Makefile 478618 2018-08-31 22:43:43Z adamw $
+# $FreeBSD: head/devel/msgpack/Makefile 479291 2018-09-09 13:41:08Z adamw $
 
 PORTNAME=	msgpack
-PORTVERSION=	3.1.0
+PORTVERSION=	3.1.1
 DISTVERSIONPREFIX=	cpp-
 CATEGORIES=	devel
 
@@ -10,6 +10,8 @@ COMMENT=	Efficient binary serialization, like JSON but smaller and faster
 
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
+
+TEST_DEPENDS=	googletest>0:devel/googletest
 
 USES=		cmake pathfix
 USE_LDCONFIG=	yes

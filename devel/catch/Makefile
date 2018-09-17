@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/devel/catch/Makefile 479020 2018-09-05 13:26:05Z gahr $
+# $FreeBSD: head/devel/catch/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	catch
 DISTVERSIONPREFIX=	v
@@ -21,6 +21,8 @@ GH_PROJECT=	Catch2
 
 CMAKE_ARGS=	-DCMAKE_INSTALL_DOCDIR=${DOCSDIR}
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 do-test:
 	${BUILD_WRKSRC}/projects/SelfTest

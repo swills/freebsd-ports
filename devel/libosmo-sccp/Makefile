@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmo-sccp/Makefile 478234 2018-08-27 17:16:36Z swills $
+# $FreeBSD: head/devel/libosmo-sccp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libosmo-sccp
 PORTVERSION=	0.10.0
@@ -20,6 +20,8 @@ CONFLICTS_INSTALL=libmtp-[0-9]* # lib/libmtp.a
 
 USES=		autoreconf libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${ECHO_CMD} ${PORTVERSION} > ${WRKSRC}/.tarball-version

@@ -1,9 +1,9 @@
 # Created by: Peter Jeremy <peterjeremy@optushome.com.au>
-# $FreeBSD: head/graphics/jogl/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/graphics/jogl/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	jogl
 PORTVERSION=	1.1.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics devel java
 MASTER_SITES=	http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.1/
 EXTRACT_SUFX=	-src.zip

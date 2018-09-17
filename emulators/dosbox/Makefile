@@ -1,5 +1,5 @@
 # Created by: Tom Carrick <knyghtmare@knyghtmare.com>
-# $FreeBSD: head/emulators/dosbox/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/dosbox/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dosbox
 PORTVERSION=	0.74
@@ -27,6 +27,7 @@ DESKTOP_ENTRIES="DOSBox" "${COMMENT}" \
 		"${PREFIX}/share/pixmaps/dosbox.ico" "dosbox" \
 		"System;Emulator;" "true"
 
+OPTIONS_DEFINE=	DOCS
 OPTIONS_RADIO=	DEBUGGER
 OPTIONS_RADIO_DEBUGGER=DEBUGGER_ENABLE DEBUGGER_HEAVY
 DEBUGGER_ENABLE_DESC=Enable internal debugger

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/mandelbulber/Makefile 387476 2015-05-26 13:32:36Z amdmi3 $
+# $FreeBSD: head/graphics/mandelbulber/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mandelbulber
 DISTVERSION=	1.13-1
@@ -24,6 +24,8 @@ PLIST_FILES=	bin/${PORTNAME} share/applications/${PORTNAME}.desktop
 
 PORTDOCS=	README NEWS
 PORTDATA=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/share/mandelbulber|${DATADIR}|' \

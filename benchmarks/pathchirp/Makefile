@@ -1,5 +1,5 @@
 # Created by: dikshie <dikshie@lapi.itb.ac.id>
-# $FreeBSD: head/benchmarks/pathchirp/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/benchmarks/pathchirp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pathchirp
 PORTVERSION=	2.4.1
@@ -16,6 +16,8 @@ MAKE_JOBS_UNSAFE=	yes
 
 PLIST_FILES=	bin/pathchirp_rcv bin/pathchirp_snd bin/pathchirp_run
 PORTDOCS=	README
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '/CFLAGS.*O4/d' ${WRKSRC}/configure

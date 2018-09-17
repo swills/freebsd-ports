@@ -1,11 +1,11 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/net/recvnet/Makefile 408182 2016-02-05 13:08:59Z marino $
+# $FreeBSD: head/net/recvnet/Makefile 479588 2018-09-12 08:52:49Z ehaupt $
 
 PORTNAME=	recvnet
 PORTVERSION=	0.0.1
 PORTREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	http://www.vanheusden.com/Linux/ \
+MASTER_SITES=	https://www.vanheusden.com/Linux/ \
 		LOCAL/ehaupt
 
 MAINTAINER=	ehaupt@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/kaccounts-providers/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/kaccounts-providers/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kaccounts-providers
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -17,6 +17,8 @@ USE_GNOME=	intltool
 USE_KDE=	config coreaddons i18n kdeclarative kio package service
 USE_QT=		core gui network qml xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 #install to ${LOCALBASE}:
 pre-configure:

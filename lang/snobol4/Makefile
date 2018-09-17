@@ -1,5 +1,5 @@
 # Created by: Wes Peters <wes@softweyr.com>
-# $FreeBSD: head/lang/snobol4/Makefile 377801 2015-01-24 16:43:54Z johans $
+# $FreeBSD: head/lang/snobol4/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	snobol4
 PORTVERSION=	2.0
@@ -19,6 +19,8 @@ ALL_TARGET=	xsnobol4
 
 DOCSDIR=	${PREFIX}/share/doc/${PORTNAME}-${PORTVERSION}
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's:[^=]*\.tmp$$:${WRKSRC}/&:' ${WRKSRC}/configure

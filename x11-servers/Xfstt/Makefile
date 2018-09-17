@@ -1,9 +1,9 @@
 # Created by: jabley@clear.co.nz
-# $FreeBSD: head/x11-servers/Xfstt/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-servers/Xfstt/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xfstt
 PORTVERSION=	1.9.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-servers
 MASTER_SITES=	http://archive.hadrons.org/software/xfstt/
 

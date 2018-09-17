@@ -1,5 +1,5 @@
 # Created by: gpalmer@FreeBSD.org
-# $FreeBSD: head/x11/rxvt-unicode/Makefile 455173 2017-11-30 07:02:49Z linimon $
+# $FreeBSD: head/x11/rxvt-unicode/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	rxvt-unicode
 PORTVERSION=	9.22
@@ -73,10 +73,10 @@ PATCH_DEPENDS+=	p5-Encode-HanExtra>=0:chinese/p5-Encode-HanExtra \
 CONFIGURE_ARGS+=	--disable-perl
 USES+=			perl5
 USE_PERL5=		build
-PLIST_SUB=		PERL="@comment "
+PLIST_SUB+=		PERL="@comment "
 .else
 USES+=			perl5
-PLIST_SUB=		PERL=""
+PLIST_SUB+=		PERL=""
 .endif
 
 # disable XIM (X Input Method) protocol support

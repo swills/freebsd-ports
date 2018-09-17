@@ -1,5 +1,5 @@
 # Created by: Danijel Tasov <danielt@pilgerer.org>
-# $FreeBSD: head/shells/heirloom-sh/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/shells/heirloom-sh/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	heirloom-sh
 PORTVERSION=	050706
@@ -19,6 +19,8 @@ PORTDOCS=	CALDERA.LICENSE OPENSOLARIS.LICENSE CHANGES README
 
 PKGINSTALL=	pkg-install
 PKGDEINSTALL=	pkg-deinstall
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/jsh ${STAGEDIR}${PREFIX}/bin

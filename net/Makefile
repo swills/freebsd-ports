@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 479102 2018-09-06 15:25:09Z mfechner $
+# $FreeBSD: head/net/Makefile 479887 2018-09-16 10:50:53Z mfechner $
 #
 
     COMMENT = Networking tools
@@ -76,6 +76,7 @@
     SUBDIR += ccxstream
     SUBDIR += ceph
     SUBDIR += cf
+    SUBDIR += charm
     SUBDIR += chrony
     SUBDIR += citrix_ica
     SUBDIR += cjdns
@@ -1252,6 +1253,7 @@
     SUBDIR += rubygem-fog-joyent
     SUBDIR += rubygem-fog-local
     SUBDIR += rubygem-fog-openstack
+    SUBDIR += rubygem-fog-openstack02
     SUBDIR += rubygem-fog-ovirt
     SUBDIR += rubygem-fog-powerdns
     SUBDIR += rubygem-fog-profitbricks
@@ -1273,6 +1275,8 @@
     SUBDIR += rubygem-gitaly-proto094
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-gitlab_omniauth-ldap20
+    SUBDIR += rubygem-google-cloud-core
+    SUBDIR += rubygem-google-cloud-env
     SUBDIR += rubygem-grpc
     SUBDIR += rubygem-hangouts-chat
     SUBDIR += rubygem-http_parser.rb

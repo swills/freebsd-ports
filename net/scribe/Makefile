@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/scribe/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net/scribe/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
@@ -35,6 +35,8 @@ CONFIGURE_ARGS=	--with-boost-filesystem=boost_filesystem \
 		--with-boost-system=boost_system \
 		PY_PREFIX="${PREFIX}"
 USE_RC_SUBR=	${PORTNAME}
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/^AM_INIT_AUTOMAKE/#/' ${WRKSRC}/configure.ac

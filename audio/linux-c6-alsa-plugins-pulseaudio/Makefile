@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-alsa-plugins-pulseaudio/Makefile 460379 2018-01-30 10:50:22Z tijl $
+# $FreeBSD: head/audio/linux-c6-alsa-plugins-pulseaudio/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	alsa-plugins
 PORTVERSION=	1.1.0
@@ -21,5 +21,7 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	alsalib pulseaudio-libs
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

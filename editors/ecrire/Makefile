@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/ecrire/Makefile 476692 2018-08-08 23:09:46Z yuri $
+# $FreeBSD: head/editors/ecrire/Makefile 479318 2018-09-09 16:59:45Z yuri $
 
 PORTNAME=	ecrire
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.2
+DISTVERSION=	0.3.3
 CATEGORIES=	editors enlightenment
 DIST_SUBDIR=	enlightenment
 

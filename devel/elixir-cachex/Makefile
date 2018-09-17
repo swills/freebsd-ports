@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-cachex/Makefile 474712 2018-07-15 22:18:17Z olgeni $
+# $FreeBSD: head/devel/elixir-cachex/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cachex
 PORTVERSION=	3.0.3
@@ -19,5 +19,7 @@ MIX_BUILD_DEPS=	devel/elixir-eternal \
 		devel/elixir-unsafe
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

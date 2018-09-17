@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 478901 2018-09-03 19:04:10Z rene $
+# $FreeBSD: head/www/Makefile 479897 2018-09-16 17:16:02Z yuri $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -53,7 +53,6 @@
     SUBDIR += bluefish
     SUBDIR += boa
     SUBDIR += bolt
-    SUBDIR += bookmarkbridge
     SUBDIR += bozohttpd
     SUBDIR += buku
     SUBDIR += butterfly
@@ -260,7 +259,6 @@
     SUBDIR += hs-css-text
     SUBDIR += hs-fastcgi
     SUBDIR += hs-gitit
-    SUBDIR += hs-hS3
     SUBDIR += hs-happstack
     SUBDIR += hs-happstack-server
     SUBDIR += hs-heist
@@ -1578,7 +1576,6 @@
     SUBDIR += py-django-jsonfield
     SUBDIR += py-django-jsonfield2
     SUBDIR += py-django-ldapdb
-    SUBDIR += py-django-livesettings
     SUBDIR += py-django-markdownx
     SUBDIR += py-django-markwhat
     SUBDIR += py-django-mezzanine
@@ -1857,7 +1854,6 @@
     SUBDIR += py-scrapy
     SUBDIR += py-seafdav
     SUBDIR += py-seafobj
-    SUBDIR += py-searx
     SUBDIR += py-selector
     SUBDIR += py-selenium
     SUBDIR += py-slimit
@@ -2039,7 +2035,6 @@
     SUBDIR += rubygem-hamlit-rails
     SUBDIR += rubygem-hamlit-rails-rails5
     SUBDIR += rubygem-hamlit-rails-rails50
-    SUBDIR += rubygem-hamlit26
     SUBDIR += rubygem-hashicorp-checkpoint
     SUBDIR += rubygem-heroku
     SUBDIR += rubygem-heroku-api
@@ -2238,6 +2233,7 @@
     SUBDIR += seahub
     SUBDIR += seamonkey
     SUBDIR += seamonkey-i18n
+    SUBDIR += searx
     SUBDIR += selenium
     SUBDIR += serendipity
     SUBDIR += serf

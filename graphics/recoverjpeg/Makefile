@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/graphics/recoverjpeg/Makefile 466337 2018-04-03 10:34:44Z ehaupt $
+# $FreeBSD: head/graphics/recoverjpeg/Makefile 479686 2018-09-13 18:41:24Z ehaupt $
 
 PORTNAME=	recoverjpeg
-PORTVERSION=	2.6.2
+PORTVERSION=	2.6.3
 CATEGORIES=	graphics
 MASTER_SITES=	https://rfc1149.net/download/${PORTNAME}/ \
 		LOCAL/ehaupt

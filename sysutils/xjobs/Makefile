@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/sysutils/xjobs/Makefile 475447 2018-07-27 16:10:04Z jgh $
+# $FreeBSD: head/sysutils/xjobs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xjobs
 PORTVERSION=	20170829
@@ -16,6 +16,8 @@ PLIST_FILES=	bin/xjobs man/man1/xjobs.1.gz
 USES=		tar:tgz
 
 PORTDOCS=	ChangeLog README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

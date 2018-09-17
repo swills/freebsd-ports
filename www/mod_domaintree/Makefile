@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@rulez.sk>
-# $FreeBSD: head/www/mod_domaintree/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_domaintree/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_domaintree
 PORTVERSION=	1.6
@@ -17,6 +17,8 @@ AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 
 PORTDOCS=	LICENSE.txt ChangeLog
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

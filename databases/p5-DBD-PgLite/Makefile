@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBD-PgLite/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/databases/p5-DBD-PgLite/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	DBD-PgLite
 PORTVERSION=	0.11
@@ -8,7 +8,7 @@ CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PostgreSQL emulation mode for SQLite
 
 BUILD_DEPENDS=	${RUN_DEPENDS}

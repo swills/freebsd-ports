@@ -1,5 +1,5 @@
 # Created by: Colin Percival
-# $FreeBSD: head/security/pkesh/Makefile 429892 2016-12-29 12:41:04Z mat $
+# $FreeBSD: head/security/pkesh/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pkesh
 PORTVERSION=	1.0
@@ -15,6 +15,8 @@ NO_BUILD=	yes
 
 PLIST_FILES=	bin/pkesh
 PORTDOCS=	README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/pkesh.sh ${STAGEDIR}${PREFIX}/bin/pkesh

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/tbe/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/tbe/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tbe
 PORTVERSION=	0.9.2.1
@@ -23,6 +23,8 @@ USE_QT=		corelib gui linguisttools_build moc_build qmake_build rcc_build \
 		svg uic_build xml
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's/ make/ $$(MAKE)/' \

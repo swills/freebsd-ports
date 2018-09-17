@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kcachegrind/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kcachegrind/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kcachegrind
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,7 +18,7 @@ SHEBANG_FILES=	converters/hotshot2calltree.cmake \
 		converters/memprof2calltree \
 		converters/op2calltree converters/dprof2calltree
 
-OPTIONS_DEFINE=	DOT VALGRIND
+OPTIONS_DEFINE=	DOT VALGRIND DOCS
 
 DOT_DESC=		Use GraphViz/dot to render call graphs
 DOT_RUN_DEPENDS=	dot:graphics/graphviz

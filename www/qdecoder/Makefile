@@ -1,5 +1,5 @@
 # Created by: CHOI Junho <cjh@FreeBSD.org>
-# $FreeBSD: head/www/qdecoder/Makefile 385665 2015-05-07 20:24:15Z mat $
+# $FreeBSD: head/www/qdecoder/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	qdecoder
 PORTVERSION=	12.0.5
@@ -20,7 +20,7 @@ PORTEXAMPLES=	*
 PLIST_FILES=	include/qdecoder.h lib/libqdecoder.a \
 		lib/libqdecoder.so lib/libqdecoder.so.12
 
-OPTIONS_DEFINE=		DEBUG
+OPTIONS_DEFINE=		DEBUG EXAMPLES
 DEBUG_CONFIGURE_ENABLE=	debug
 
 post-patch:

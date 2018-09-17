@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kajongg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/kajongg/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 BROKEN=		Requires PyQt5 for python3 which is broken at the moment.
 
@@ -17,6 +17,8 @@ USE_KDE=	config doctools ecm
 USE_PYQT=	core gui svg widgets
 USE_QT=		core gui svg widgets \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <${.CURDIR}/../kdegames/Makefile.common>
 .include <bsd.port.mk>

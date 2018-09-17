@@ -1,5 +1,5 @@
 # Created by: Rob Zinkov
-# $FreeBSD: head/lang/gambit-c/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/gambit-c/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gambit-c
 PORTVERSION=	4.8.8
@@ -31,7 +31,7 @@ USE_LDCONFIG=	${PREFIX}/lib/gambit-c
 
 INFO=		gambit
 
-OPTIONS_DEFINE=	GCC
+OPTIONS_DEFINE=	DOCS GCC
 OPTIONS_DEFAULT=GCC
 
 GCC_DESC=	Build with GCC

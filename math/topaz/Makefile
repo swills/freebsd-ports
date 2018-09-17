@@ -1,5 +1,5 @@
 # Created by: Issei Suzuki <issei@jp.FreeBSD.ORG>
-# $FreeBSD: head/math/topaz/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/topaz/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	topaz
 DISTVERSION=	3_41
@@ -18,6 +18,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USES=		ncurses readline
 USE_XORG=	x11
 MAKEFILE=	Makefile.freebsd
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${LN} -sf ${PREFIX}/lib/topaz/topaz.sh ${STAGEDIR}${PREFIX}/bin/topaz

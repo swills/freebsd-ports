@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openbsc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/openbsc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openbsc
 PORTVERSION=	0.15.0
@@ -24,7 +24,7 @@ USES=		autoreconf compiler:c11 gmake pathfix pkgconfig ssl
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	CFLAGS="-I${LOCALBASE}/include"
 
-OPTIONS_DEFINE=	BSC NAT SQLITE
+OPTIONS_DEFINE=	BSC NAT SQLITE DOCS
 OPTIONS_DEFAULT= BSC NAT
 
 BSC_DESC=	Enable OSMO BSC

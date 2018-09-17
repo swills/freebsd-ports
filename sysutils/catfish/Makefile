@@ -1,5 +1,5 @@
 # Created by: jpaetzel@FreeBSD.org
-# $FreeBSD: head/sysutils/catfish/Makefile 474983 2018-07-19 22:36:38Z woodsb02 $
+# $FreeBSD: head/sysutils/catfish/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	catfish
 PORTVERSION=	1.4.6
@@ -22,7 +22,7 @@ USES=		desktop-file-utils python:2.7 tar:bz2
 USE_PYTHON=	distutils
 USE_GNOME=	gtk30 intltool pygobject3
 
-OPTIONS_DEFINE=	ZEITGEIST
+OPTIONS_DEFINE=	DOCS ZEITGEIST
 OPTIONS_DEFAULT=ZEITGEIST
 
 ZEITGEIST_DESC=	Provide recent search suggestions

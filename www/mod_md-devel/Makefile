@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 476474 2018-08-05 20:39:28Z brnrd $
+# $FreeBSD: head/www/mod_md-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_md
 PORTVERSION=	1.1.16
@@ -38,6 +38,8 @@ CONFIGURE_ARGS=	--with-openssl=${OPENSSLBASE} \
 SUB_FILES=	999_mod_md.conf pkg-message
 DOCSDIR=	share/doc/mod_md
 PORTDOCS=	README README.md
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

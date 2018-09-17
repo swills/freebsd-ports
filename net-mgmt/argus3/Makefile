@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/argus3/Makefile 419894 2016-08-08 21:17:25Z bofh $
+# $FreeBSD: head/net-mgmt/argus3/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	argus
 PORTVERSION=	3.0.8.2
@@ -15,7 +15,7 @@ LICENSE=	GPLv3
 
 CONFLICTS=	argus-2* argus-sasl-2* argus-clients-2*
 
-OPTIONS_DEFINE=	SASL
+OPTIONS_DEFINE=	SASL EXAMPLES
 OPTIONS_DEFAULT=SASL
 SASL_LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 SASL_CONFIGURE_ON=	--with-sasl=${LOCALBASE}

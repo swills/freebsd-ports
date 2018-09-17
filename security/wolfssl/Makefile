@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/wolfssl/Makefile 457220 2017-12-25 11:47:17Z johans $
+# $FreeBSD: head/security/wolfssl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	wolfssl
 PORTVERSION=	3.13.0
@@ -27,6 +27,8 @@ CONFIGURE_ARGS=	--disable-dependency-tracking \
 
 USE_LDCONFIG=	yes
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-configure:
 	@${REINPLACE_CMD} \

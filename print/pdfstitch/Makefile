@@ -1,5 +1,5 @@
 # Created by: Stefan Hagen <ports@textmail.me>
-# $FreeBSD: head/print/pdfstitch/Makefile 454836 2017-11-24 19:22:13Z yuri $
+# $FreeBSD: head/print/pdfstitch/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pdfstitch
 DISTVERSIONPREFIX=	v
@@ -22,6 +22,8 @@ GH_ACCOUNT=	sur5r
 
 NO_ARCH=	yes
 NO_BUILD=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/pdfstitch ${STAGEDIR}${PREFIX}/bin/pdfstitch

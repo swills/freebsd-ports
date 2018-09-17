@@ -1,5 +1,5 @@
 # Created by: Maxim Ignatenko
-# $FreeBSD: head/net/userfw/Makefile 474998 2018-07-20 09:29:59Z 0mp $
+# $FreeBSD: head/net/userfw/Makefile 479890 2018-09-16 11:44:37Z antoine $
 
 PORTNAME=	userfw
 PORTVERSION=	0.1.3
@@ -19,6 +19,8 @@ BROKEN_powerpc=		fails to compile
 BROKEN_powerpc64=	fails to compile: pcpu.h: size of array '__assert_0' is negative
 BROKEN_FreeBSD_11=	fails to build on FreeBSD 11+
 BROKEN_FreeBSD_12=	fails to build on FreeBSD 11+
+DEPRECATED=	Does not build on FreeBSD 11+
+EXPIRATION_DATE=	2018-10-31
 
 SSP_UNSAFE=	kernel module does not support ssp
 USES=		cmake:outsource kmod tar:xz uidfix

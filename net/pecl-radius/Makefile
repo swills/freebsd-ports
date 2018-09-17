@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/net/pecl-radius/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/net/pecl-radius/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	radius
 DISTVERSION=	1.4.0b1
@@ -14,7 +14,9 @@ USES=		php:pecl
 
 CONFIGURE_ARGS=	--enable-radius
 
-post-install:
+OPTIONS_DEFINE=	EXAMPLES
+
+post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 

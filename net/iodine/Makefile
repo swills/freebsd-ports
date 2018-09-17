@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/net/iodine/Makefile 384697 2015-04-25 00:53:10Z amdmi3 $
+# $FreeBSD: head/net/iodine/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	iodine
 PORTVERSION=	0.7.0
@@ -19,6 +19,8 @@ USE_RC_SUBR=	iodined
 
 USERS=		_iodined
 GROUPS=		_iodined
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/iodine ${STAGEDIR}${PREFIX}/bin

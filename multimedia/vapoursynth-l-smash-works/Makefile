@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	l-smash-works
 DISTVERSION=	0.0-935 # git rev-list --count HEAD
@@ -44,6 +44,8 @@ DOCSDIR=	${PREFIX}/share/doc/${PKGBASE}
 PLIST_FILES=	lib/libvslsmashsource.so.${PORTVERSION:E} \
 		%%DATADIR%%/libvslsmashsource.so
 PORTDOCS=	README
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -Ee '/CROSS/!s/^(CC|LD|REV|HASH)=.*/: $${&}/' \

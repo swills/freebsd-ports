@@ -1,5 +1,5 @@
 # Created by: Christopher N. Harrell <cnh@ivmg.net>
-# $FreeBSD: head/net-mgmt/p5-NetAddr-IP/Makefile 464568 2018-03-15 07:44:07Z tobik $
+# $FreeBSD: head/net-mgmt/p5-NetAddr-IP/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	NetAddr-IP
 PORTVERSION=	4.079
@@ -7,7 +7,7 @@ CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Work with IPv4 and IPv6 addresses and subnets
 
 LICENSE=	ART10 GPLv2

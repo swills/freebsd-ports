@@ -1,9 +1,9 @@
 # Created by: Devaux Fabien <fab@gcu.info>
-# $FreeBSD: head/devel/directfb/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/devel/directfb/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	directfb
 PORTVERSION=	1.4.17
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://sources.buildroot.net/
 DISTNAME=	DirectFB-${PORTVERSION}

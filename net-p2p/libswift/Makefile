@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/net-p2p/libswift/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/net-p2p/libswift/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=		libswift
 PORTVERSION=	20160817
@@ -42,6 +42,8 @@ SWIFT_SHAREDIR=		/var/db/${PORTNAME}/
 SWIFT_PIDDIR=		/var/run/${PORTNAME}/
 
 USE_RC_SUBR=		${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR} \

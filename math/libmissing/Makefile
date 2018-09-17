@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/libmissing/Makefile 477151 2018-08-14 13:33:20Z jbeich $
+# $FreeBSD: head/math/libmissing/Makefile 479776 2018-09-14 16:47:48Z jbeich $
 
 PORTNAME=	libmissing
 DISTVERSION=	20130815
@@ -15,7 +15,6 @@ LIB_DEPENDS=	libmpc.so:math/mpc
 
 USE_LDCONFIG=	yes
 USES=		tar:xz uidfix
-LLD_UNSAFE=	yes # LLD doesn't grok -z interpose
 
 MAKE_ENV=	LDADD=-lmpc LIB=missing SHLIB_MAJOR="${SHLIB_MAJOR}" \
 		SRCCONF=/dev/null SRCS="${SRCS}" __MAKE_CONF=/dev/null

@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/statcvs/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/statcvs/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	statcvs
 PORTVERSION=	0.7.0
@@ -39,9 +39,9 @@ DOCS_ALL_TARGET=javadoc
 .include <bsd.port.pre.mk>
 
 .if ${JAVA_PORT_VERSION} == "1.6.0"
-PLIST_SUB=	JDK6=""
+PLIST_SUB+=	JDK6=""
 .else
-PLIST_SUB=	JDK6="@comment "
+PLIST_SUB+=	JDK6="@comment "
 .endif
 
 do-install:

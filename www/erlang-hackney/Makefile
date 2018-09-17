@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/erlang-hackney/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/erlang-hackney/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hackney
 PORTVERSION=	1.8.6
@@ -20,6 +20,8 @@ ERL_BUILD_DEPS=	dns/erlang-idna \
 		devel/erlang-metrics \
 		misc/erlang-mimerl
 ERL_RUN_DEPS:=	${ERL_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 pre-build:
 	@${MKDIR} ${WRKSRC}/_build/default/lib

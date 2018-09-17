@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_auth_pam2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_auth_pam2/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	mod_auth_pam
 PORTVERSION=	1.1.1
@@ -23,6 +23,8 @@ AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 
 AP_EXTRAS+=	-lpam
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

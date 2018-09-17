@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/openra/Makefile 473599 2018-06-30 07:13:40Z dbn $
+# $FreeBSD: head/games/openra/Makefile 479618 2018-09-12 19:20:10Z jbeich $
 
 PORTNAME=	openra
 PORTVERSION=	20180307
@@ -31,7 +31,7 @@ NUGET_DEPENDS=	FuzzyLogicLibrary=1.2.0 \
 		Open.NAT=2.1.0 \
 		SharpFont=4.0.1 \
 		SharpZipLib=0.86.0 \
-		StyleCop.MSBuild=4.7.49.0 \
+		StyleCop.MSBuild=4.7.49 \
 		StyleCopPlus.MSBuild=4.7.49.5 \
 		rix0rrr.BeaconLib=1.0.1
 

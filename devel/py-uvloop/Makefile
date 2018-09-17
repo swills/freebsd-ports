@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/devel/py-uvloop/Makefile 476629 2018-08-08 07:57:05Z farrokhi $
+# $FreeBSD: head/devel/py-uvloop/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	uvloop
 PORTVERSION=	0.11.2
@@ -20,14 +20,15 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 USES=		python:3.5+
 USE_PYTHON=	autoplist concurrent distutils
 
-PORTDOCS=	PKG-INFO README.rst
+PORTDOCS=	*
+PORTEXAMPLES=	*
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/uvloop/loop.so
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/
-	cd ${WRKSRC}/ && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
+	cd ${WRKSRC}/ && ${INSTALL_DATA} PKG-INFO README.rst ${STAGEDIR}${DOCSDIR}/
 	cd ${WRKSRC}/docs &&  ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}/
 
 post-install-EXAMPLES-on:

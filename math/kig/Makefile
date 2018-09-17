@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kig/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/math/kig/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kig
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,5 +18,7 @@ USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 USE_QT=		core dbus gui network printsupport svg widgets xml xmlpatterns \
 		buildtools_build qmake_build
 SHEBANG_FILES=	pykig/pykig.py
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

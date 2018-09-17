@@ -1,5 +1,5 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/freedroidrpg/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/games/freedroidrpg/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	freedroidrpg
 PORTVERSION=	0.16.1
@@ -30,7 +30,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 PORTDATA=	*
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	NLS BACKTRACE OPENGL SOUND
+OPTIONS_DEFINE=	NLS BACKTRACE OPENGL SOUND DOCS
 OPTIONS_DEFAULT=BACKTRACE OPENGL SOUND
 OPTIONS_SUB=	yes
 

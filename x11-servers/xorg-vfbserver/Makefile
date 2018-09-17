@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-servers/xorg-vfbserver/Makefile 452247 2017-10-16 19:45:15Z rezny $
+# $FreeBSD: head/x11-servers/xorg-vfbserver/Makefile 479663 2018-09-13 08:30:04Z zeising $
 
 PORTNAME=	xorg-vfbserver
 PORTVERSION=	1.19.1

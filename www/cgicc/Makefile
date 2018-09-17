@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/www/cgicc/Makefile 445641 2017-07-13 09:10:14Z bofh $
+# $FreeBSD: head/www/cgicc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cgicc
 PORTVERSION=	3.2.19
@@ -11,7 +11,7 @@ COMMENT=	C++ class library for writing CGI applications
 
 LICENSE=	LGPL3+
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
 
 USES=		gmake pathfix libtool
 GNU_CONFIGURE=	yes
@@ -24,6 +24,7 @@ CXXFLAGS+=	-Wno-unknown-pragmas
 
 PORTDOCS=	*
 
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_CONFIGURE_ENV_OFF=	ac_cv_prog_DOXYGEN="${ECHO_CMD}"
 

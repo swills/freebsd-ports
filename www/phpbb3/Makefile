@@ -1,8 +1,8 @@
 # Created by: Zhen REN <bg1tpt@gmail.com>
-# $FreeBSD: head/www/phpbb3/Makefile 459414 2018-01-19 13:27:43Z joneum $
+# $FreeBSD: head/www/phpbb3/Makefile 479831 2018-09-15 09:59:55Z joneum $
 
 PORTNAME=	phpbb
-DISTVERSION=	3.2.2
+DISTVERSION=	3.2.3
 CATEGORIES=	www
 MASTER_SITES=	https://www.phpbb.com/files/release/
 PKGNAMESUFFIX=	3

@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/games/afternoonstalker/Makefile 460940 2018-02-04 16:34:17Z martymac $
+# $FreeBSD: head/games/afternoonstalker/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	afternoonstalker
 PORTVERSION=	1.1.5
@@ -23,6 +23,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 PORTDOCS=	AUTHORS COPYING INSTALL NEWS README THANKS TODO
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|^pkgsounddir =.*|pkgsounddir = ${DATADIR}/sounds|' \

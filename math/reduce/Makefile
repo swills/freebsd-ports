@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/reduce/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/math/reduce/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	reduce
 PORTVERSION=	20180117
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math lang
 MASTER_SITES=	SF/${PORTNAME}-algebra/${SFSUBDIR}/
 DISTNAME=	Reduce-svn4372-src
@@ -44,7 +44,7 @@ LDFLAGS+=	`freetype-config --libs`
 
 REDUCE_BINS=	${WRKSRC}/cslbuild/${TARGET_SDIR}
 
-.include <bsd.port.options.mk>
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}

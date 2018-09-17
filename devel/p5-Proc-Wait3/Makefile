@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Proc-Wait3/Makefile 475351 2018-07-26 09:07:52Z amdmi3 $
+# $FreeBSD: head/devel/p5-Proc-Wait3/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Proc-Wait3
 PORTVERSION=	0.05
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for wait3 system call
 
 LICENSE=	ART10 GPLv1+

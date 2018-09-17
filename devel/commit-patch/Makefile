@@ -1,5 +1,5 @@
 # Created by: Lapo Luchini <lapo@lapo.it>
-# $FreeBSD: head/devel/commit-patch/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/commit-patch/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	commit-patch
 PORTVERSION=	2.5.2
@@ -25,6 +25,8 @@ PLIST_FILES=	bin/commit-partial bin/commit-patch \
 		share/emacs/site-lisp/commit-patch-buffer.el \
 		man/man1/commit-partial.1.gz man/man1/commit-patch.1.gz
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 		${REINPLACE_CMD} -e 's/share[/]man/man/' \

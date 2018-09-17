@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/git-cinnabar/Makefile 476983 2018-08-12 11:21:46Z jbeich $
+# $FreeBSD: head/devel/git-cinnabar/Makefile 479682 2018-09-13 17:29:17Z jbeich $
 
 PORTNAME=	git-cinnabar
-DISTVERSION=	0.5.0
+DISTVERSION=	0.5.0-22
+DISTVERSIONSUFFIX=	-g10c8142
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -29,6 +30,8 @@ MAKE_ARGS+=	SUBMODULE_STATUS=dummy
 DATADIR=	${PREFIX}/libexec/git-core
 PORTDATA=	*
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 post-configure:
 	@${TAR} cf - -C$$(${MAKE} -V WRKSRC -C ${PORTSDIR}/devel/git) . | \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/ports-mgmt/pkg-devel/Makefile 477663 2018-08-20 17:06:15Z bapt $
+# $FreeBSD: head/ports-mgmt/pkg-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pkg
-DISTVERSION=	1.10.99.8
+DISTVERSION=	1.10.99.9
 _PKG_VERSION=	${DISTVERSION}
 CATEGORIES=	ports-mgmt
 PKGNAMESUFFIX=	-devel
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd
-GH_TAGNAME=	f35a78cb
+GH_TAGNAME=	60666a1
 
 WITH_DEBUG=	yes
 CFLAGS+=	-O0 -g -Wno-error
@@ -26,6 +26,8 @@ CONFIGURE_ARGS=	--mandir=${PREFIX}/man
 # Use a submake as 'deinstall install' needs to reevaluate PKG_REGISTER
 # so that pkg-static is used from the wrkdir
 USE_SUBMAKE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .if !exists(/usr/include/jail.h)
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-docs_pkg.8

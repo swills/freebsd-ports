@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/sysutils/ck4up/Makefile 421464 2016-09-06 20:09:37Z amdmi3 $
+# $FreeBSD: head/sysutils/ck4up/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	ck4up
 PORTVERSION=	1.4
@@ -20,6 +20,8 @@ PORTEXAMPLES=	ck4up.conf
 
 PLIST_FILES=	bin/ck4up \
 		man/man1/ck4up.1.gz
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr|${LOCALBASE}|g' \

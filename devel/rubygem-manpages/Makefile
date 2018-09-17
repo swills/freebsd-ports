@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-manpages/Makefile 467412 2018-04-15 20:02:19Z sunpoet $
+# $FreeBSD: head/devel/rubygem-manpages/Makefile 479902 2018-09-16 23:25:16Z sunpoet $
 
 PORTNAME=	manpages
 PORTVERSION=	0.6.1
@@ -12,9 +12,10 @@ COMMENT=	Detect man pages within gems and exposes them to the man command
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 SHEBANG_FILES=	rbenv/rbenv_hook_install.sh \
 		rbenv/remove_hook_folders.sh

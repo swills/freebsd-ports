@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/festalon/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/audio/festalon/Makefile 479693 2018-09-13 19:50:55Z ehaupt $
 
 PORTNAME=	festalon
 PORTVERSION=	0.5.5
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	audio
 MASTER_SITES=	http://projects.raphnet.net/festalon/ \
 		LOCAL/ehaupt

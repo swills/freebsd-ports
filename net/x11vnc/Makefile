@@ -1,9 +1,9 @@
 # Created by: Loren M. Lang
-# $FreeBSD: head/net/x11vnc/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/net/x11vnc/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	x11vnc
 PORTVERSION=	0.9.13
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	SF/libvncserver/${PORTNAME}/${PORTVERSION}
 

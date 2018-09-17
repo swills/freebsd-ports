@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/math/p5-Statistics-OLS/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/math/p5-Statistics-OLS/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Statistics-OLS
 PORTVERSION=	0.07
@@ -8,7 +8,7 @@ CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to perform ordinary least squares and other bivariate statistics
 
 USES=		perl5

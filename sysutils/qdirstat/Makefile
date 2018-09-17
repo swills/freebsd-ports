@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qdirstat/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/qdirstat/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	qdirstat
 PORTVERSION=	1.4
@@ -17,6 +17,8 @@ USES=		desktop-file-utils qmake qt:5 shebangfix
 USE_GL=		gl
 USE_QT=		buildtools_build core gui widgets
 SHEBANG_FILES=	scripts/qdirstat-cache-writer
+
+OPTIONS_DEFINE=	DOCS
 
 pre-configure:
 	${REINPLACE_CMD} -e 's,/usr/,${PREFIX}/,g' \

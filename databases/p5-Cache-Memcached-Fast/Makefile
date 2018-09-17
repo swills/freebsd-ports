@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Cache-Memcached-Fast/Makefile 475549 2018-07-28 12:30:27Z miwi $
+# $FreeBSD: head/databases/p5-Cache-Memcached-Fast/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Cache-Memcached-Fast
 PORTVERSION=	0.25
@@ -7,7 +7,7 @@ CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fast Perl client for memcached, a distributed memory cache daemon
 
 LICENSE=	ART10 GPLv2+

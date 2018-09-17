@@ -1,5 +1,5 @@
 # Created by: Stefan Hagen <ports@textmail.me>
-# $FreeBSD: head/www/luakit/Makefile 466598 2018-04-05 20:13:48Z tobik $
+# $FreeBSD: head/www/luakit/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	luakit
 PORTVERSION=	2017.08.10
@@ -30,7 +30,7 @@ NOT_FOR_ARCHS_REASON_sparc64=	Does not install on sparc64
 
 MAKE_ARGS+=	DEVELOPMENT_PATHS=0
 
-OPTIONS_DEFINE=	LUAJIT
+OPTIONS_DEFINE=	DOCS LUAJIT
 LUAJIT_DESC=	Use the Just-In-Time compiler for lua
 LUAJIT_LIB_DEPENDS=	libluajit-5.1.so:lang/luajit
 LUAJIT_MAKE_ARGS=	USE_LUAJIT=1

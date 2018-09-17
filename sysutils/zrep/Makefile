@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/zrep/Makefile 462664 2018-02-23 03:02:36Z yuri $
+# $FreeBSD: head/sysutils/zrep/Makefile 479871 2018-09-16 00:08:12Z sunpoet $
 
 PORTNAME=	zrep
-PORTVERSION=	1.7.3
+PORTVERSION=	1.7.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -20,6 +20,7 @@ GH_ACCOUNT=	bolthole
 
 PLIST_FILES=	bin/zrep
 
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 post-patch:

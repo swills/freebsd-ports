@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-panel/Makefile 476653 2018-08-08 18:16:00Z ericbsd $
+# $FreeBSD: head/x11/mate-panel/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mate-panel
 PORTVERSION=	1.20.3
@@ -43,5 +43,7 @@ GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 		org.mate.panel.menubar.gschema.xml \
 		org.mate.panel.object.gschema.xml \
 		org.mate.panel.toplevel.gschema.xml
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

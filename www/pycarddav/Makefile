@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/pycarddav/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/pycarddav/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pycarddav
 PORTVERSION=	0.7.0
@@ -31,6 +31,8 @@ PLIST_FILES+=	man/man1/pc_query.1.gz \
 PORTEXAMPLES=	pycard.conf.sample
 
 SUB_FILES=	pkg-message
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

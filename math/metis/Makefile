@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/metis/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/metis/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	metis
 PORTVERSION=	5.1.0
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Package for unstructured graph partitioning
 
 LICENSE=	APACHE20
+
+BROKEN_powerpc64=	fails to build: cc: Internal error: Segmentation fault (program ld)
 
 CONFLICTS=	metis4-4* metis-edf-[0-9]*
 

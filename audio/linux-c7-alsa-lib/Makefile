@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/audio/linux-c7-alsa-lib/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/audio/linux-c7-alsa-lib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	alsa-lib
 PORTVERSION=	1.1.3
@@ -18,6 +18,8 @@ RPMVERSION=	3.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${RM} -r ${WRKSRC}/etc/* ${WRKSRC}/lib/modprobe.d \

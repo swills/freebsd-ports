@@ -1,8 +1,8 @@
 # Created by: Axel Rau <axel.rau@chaos1.de>
-# $FreeBSD: head/devel/py-attrs/Makefile 473627 2018-06-30 16:59:33Z loader $
+# $FreeBSD: head/devel/py-attrs/Makefile 479874 2018-09-16 00:08:28Z sunpoet $
 
 PORTNAME=	attrs
-PORTVERSION=	18.1.0
+PORTVERSION=	18.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

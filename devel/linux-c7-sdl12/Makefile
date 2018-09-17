@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/devel/linux-c7-sdl12/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/devel/linux-c7-sdl12/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sdl
 PORTVERSION=	1.2.15
@@ -20,5 +20,7 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	xorglibs
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

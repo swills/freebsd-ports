@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/textproc/linux-c6-libxml2/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/textproc/linux-c6-libxml2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libxml2
 PORTVERSION=	2.7.6
@@ -14,5 +14,7 @@ RPMVERSION=	21.el6_8.1
 USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: David Carlier
-# $FreeBSD: head/net/deviceatlas-enterprise-c/Makefile 477191 2018-08-14 17:31:58Z tobik $
+# $FreeBSD: head/net/deviceatlas-enterprise-c/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	deviceatlas-enterprise-c
 PORTVERSION=	2.1.4
@@ -25,6 +25,8 @@ CMAKE_ARGS=	-DDOCSDIR=${DOCSDIR} -DEXAMPLESDIR=${EXAMPLESDIR}
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 REGISTRATION_URL=	https://deviceatlas.com/deviceatlas-haproxy-module
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.pre.mk>
 

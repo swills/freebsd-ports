@@ -1,10 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/net/httping/Makefile 421999 2016-09-13 13:46:19Z ehaupt $
+# $FreeBSD: head/net/httping/Makefile 479590 2018-09-12 09:13:05Z ehaupt $
 
 PORTNAME=	httping
 PORTVERSION=	2.5
 CATEGORIES=	net
-MASTER_SITES=	http://www.vanheusden.com/httping/ \
+MASTER_SITES=	https://www.vanheusden.com/httping/ \
 		LOCAL/ehaupt
 
 MAINTAINER=	ehaupt@FreeBSD.org

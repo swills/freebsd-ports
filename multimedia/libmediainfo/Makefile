@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libmediainfo/Makefile 478735 2018-09-01 22:51:05Z sunpoet $
+# $FreeBSD: head/multimedia/libmediainfo/Makefile 479547 2018-09-11 18:59:54Z sunpoet $
 
 PORTNAME=	libmediainfo
-PORTVERSION=	18.08
+PORTVERSION=	18.08.1
 CATEGORIES=	multimedia
 MASTER_SITES=	https://mediaarea.net/download/binary/mediainfo/${PORTVERSION}/ \
 		LOCAL/sunpoet

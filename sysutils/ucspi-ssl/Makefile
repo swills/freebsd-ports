@@ -1,5 +1,5 @@
 # Created by: David Thiel <lx@redundancy.redundancy.org>
-# $FreeBSD: head/sysutils/ucspi-ssl/Makefile 446229 2017-07-19 19:36:41Z lx $
+# $FreeBSD: head/sysutils/ucspi-ssl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ucspi-ssl
 PORTVERSION=	0.99b
@@ -20,6 +20,8 @@ PORTDOCS=	CERTS CHAIN-SSL CHANGES TODO UCSPI-SSL
 WRKSRC=		${WRKDIR}/host/superscript.com/net/${DISTNAME}
 
 SCRIPTS_TO_INSTALL=	https@ sslcat sslconnect
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

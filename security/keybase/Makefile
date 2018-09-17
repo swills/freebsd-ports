@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/keybase/Makefile 476696 2018-08-08 23:28:23Z sunpoet $
+# $FreeBSD: head/security/keybase/Makefile 479625 2018-09-12 22:55:02Z sunpoet $
 
 PORTNAME=	keybase
-PORTVERSION=	2.5.0
+PORTVERSION=	2.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -11,9 +11,10 @@ COMMENT=	Keybase.io client
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
+USES=		go
+
 GO_PKGNAME=	github.com/keybase/client/go
 GO_TARGET=	-tags production ${GO_PKGNAME}/keybase
-USES=		go
 WRKSRC_SUBDIR=	go
 
 PLIST_FILES=	bin/keybase

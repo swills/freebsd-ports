@@ -1,5 +1,5 @@
 # Created by: Marcin Cieslak
-# $FreeBSD: head/textproc/xerces-j/Makefile 469564 2018-05-10 16:19:40Z ale $
+# $FreeBSD: head/textproc/xerces-j/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	xerces-j
 PORTVERSION=	2.12.0
@@ -25,6 +25,8 @@ PORTEXAMPLES=	*
 JARFILES=	xercesImpl.jar xml-apis.jar
 
 PLIST_FILES=	${JARFILES:S,^,%%JAVAJARDIR%%/,}
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-install:
 	@${ECHO_MSG} -n ">> Installing JAR files in ${JAVAJARDIR}..."

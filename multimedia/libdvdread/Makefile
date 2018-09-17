@@ -1,5 +1,5 @@
 # Created by: Marc van Woerkom <3d@FreeBSD.org>
-# $FreeBSD: head/multimedia/libdvdread/Makefile 459704 2018-01-22 21:31:13Z martymac $
+# $FreeBSD: head/multimedia/libdvdread/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libdvdread
 PORTVERSION=	6.0.0
@@ -21,7 +21,7 @@ USE_LDCONFIG=	yes
 
 PORTDOCS=	AUTHORS COPYING ChangeLog NEWS README TODO
 
-OPTIONS_DEFINE=	DVDCSS
+OPTIONS_DEFINE=	DVDCSS DOCS
 .if !defined(PACKAGE_BUILDING)
 OPTIONS_DEFAULT=	DVDCSS
 .endif

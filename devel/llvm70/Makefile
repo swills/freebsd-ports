@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/llvm70/Makefile 478325 2018-08-28 16:37:05Z brooks $
+# $FreeBSD: head/devel/llvm70/Makefile 479683 2018-09-13 17:36:58Z brooks $
 
 PORTNAME=	llvm
-DISTVERSION=	7.0.0rc2
+DISTVERSION=	7.0.0rc3
 PORTREVISION=	0
 CATEGORIES=	devel lang
 MASTER_SITES=	http://${PRE_}releases.llvm.org/${LLVM_RELEASE}/${RCDIR}
@@ -154,6 +154,7 @@ COMMANDS=	bugpoint \
 		llvm-symbolizer \
 		llvm-tblgen \
 		llvm-undname \
+		llvm-xray \
 		macho-dump \
 		opt \
 		sancov

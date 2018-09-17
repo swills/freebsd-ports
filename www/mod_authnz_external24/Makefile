@@ -1,5 +1,5 @@
 # Created by: Jose Garcia Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/www/mod_authnz_external24/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_authnz_external24/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_authnz_external
 PORTVERSION=	3.3.2
@@ -20,6 +20,8 @@ SHORTMODNAME=	authnz_external
 
 PORTDOCS=	AUTHENTICATORS INSTALL README	\
 		CHANGES UPGRADE INSTALL.HARDCODE
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

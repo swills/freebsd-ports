@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/ark/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/archivers/ark/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ark
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -20,7 +20,7 @@ USE_QT=		concurrent core dbus gui network widgets xml \
 
 USE_LDCONFIG=	yes
 
-OPTIONS_DEFINE=	7ZIP RAR ZIP
+OPTIONS_DEFINE=	7ZIP RAR ZIP DOCS
 OPTIONS_SUB=		YES
 
 7ZIP_DESC=	Support for 7-Zip archives

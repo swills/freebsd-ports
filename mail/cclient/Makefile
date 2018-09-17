@@ -1,5 +1,5 @@
 # Created by: Kelly Yancey <kbyanc@FreeBSD.org>
-# $FreeBSD: head/mail/cclient/Makefile 464076 2018-03-10 14:44:27Z riggs $
+# $FreeBSD: head/mail/cclient/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	cclient
 PORTVERSION=	2007f
@@ -55,7 +55,7 @@ SHLIBBASE=	c-client4
 SHLIBMAJ=	9
 SHLIBNAME=	lib${SHLIBBASE}.so.${SHLIBMAJ}
 MAKE_ENV+=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
-PLIST_SUB=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
+PLIST_SUB+=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
 
 post-patch:
 .for file in Makefile src/osdep/unix/Makefile src/osdep/unix/Makefile.gss

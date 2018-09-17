@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34-tools/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/databases/mongodb34-tools/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mongodb34-tools
 PORTVERSION=	3.4.9
@@ -23,7 +23,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mongodb
 GH_PROJECT=	mongo-tools
 
-OPTIONS_DEFINE=	SSL SASL
+OPTIONS_DEFINE=	SSL SASL DOCS
 OPTIONS_DEFAULT=	SSL SASL
 
 SASL_USE=	my_tags=sasl

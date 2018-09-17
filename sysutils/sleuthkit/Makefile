@@ -1,5 +1,5 @@
 # Created by: Pieter Danhieux <opr@bsdaemon.be>
-# $FreeBSD: head/sysutils/sleuthkit/Makefile 478014 2018-08-25 08:27:04Z antoine $
+# $FreeBSD: head/sysutils/sleuthkit/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	sleuthkit
 PORTVERSION=	4.6.2
@@ -17,6 +17,8 @@ LICENSE_FILE_CPL=${WRKSRC}/licenses/cpl1.0.txt
 LICENSE_FILE_IBM=${WRKSRC}/licenses/IBM-LICENSE
 LICENSE_PERMS_CPL=dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_PERMS_IBM=dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_powerpc64=	fails to compile: cc1: unrecognized command line option -Wpedantic
 
 RUN_DEPENDS=	p5-DateTime-TimeZone>=0:devel/p5-DateTime-TimeZone \
 		exif:graphics/exif

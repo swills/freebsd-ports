@@ -1,20 +1,20 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-Graph-Easy/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Graph-Easy/Makefile 479866 2018-09-16 00:07:45Z sunpoet $
 
 PORTNAME=	Graph-Easy
-PORTVERSION=	0.73
-PORTREVISION=	1
+PORTVERSION=	0.76
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Render graphs as ASCII, HTML, SVG, or Graphviz
 
-BUILD_DEPENDS=	p5-Heap>0:devel/p5-Heap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+LICENSE=	GPLv2+
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: hrs@FreeBSD.org
-# $FreeBSD: head/www/p5-PodToHTML/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-PodToHTML/Makefile 479880 2018-09-16 09:08:23Z amdmi3 $
 
 PORTNAME=	PodToHTML
 PORTVERSION=	0.08
@@ -11,6 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Generating HTML from several files containing POD documentation
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 BUILD_DEPENDS=	p5-URI>=0:net/p5-URI \
 		p5-HTML-Tree>=0:www/p5-HTML-Tree \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser \
@@ -19,5 +23,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

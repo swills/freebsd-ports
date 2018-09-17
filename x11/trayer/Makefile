@@ -1,5 +1,5 @@
 # Created by: Alexey Mikhailov <karma@ez.pereslavl.ru>
-# $FreeBSD: head/x11/trayer/Makefile 464913 2018-03-18 14:09:29Z madpilot $
+# $FreeBSD: head/x11/trayer/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	trayer
 PORTVERSION=	1.1.8
@@ -25,6 +25,8 @@ GH_PROJECT=	${PORTNAME}-srg
 PORTDOCS=	README CREDITS CHANGELOG
 
 PLIST_FILES=	bin/trayer man/man1/trayer.1.gz
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/man/${PORTNAME}.1 ${STAGEDIR}${MAN1PREFIX}/man/man1

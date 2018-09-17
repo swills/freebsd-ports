@@ -1,10 +1,9 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/security/cvechecker/Makefile 476517 2018-08-06 17:22:36Z fernape $
+# $FreeBSD: head/security/cvechecker/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cvechecker
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.8
-PORTREVISION=	2
+DISTVERSION=	3.9
 CATEGORIES=	security
 
 MAINTAINER=	se@FreeBSD.org
@@ -27,6 +26,7 @@ CONFIGURE_ARGS=	--localstatedir=/var/db
 
 bash_OLD_CMD+=	/bin/sh
 
+OPTIONS_DEFINE=			DOCS
 OPTIONS_MULTI=			DB
 OPTIONS_MULTI_DB=		MYSQL SQLITE
 OPTIONS_DEFAULT=		SQLITE

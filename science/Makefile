@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 479085 2018-09-06 06:31:27Z yuri $
+# $FreeBSD: head/science/Makefile 479761 2018-09-14 07:44:45Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -56,6 +56,7 @@
     SUBDIR += dcl
     SUBDIR += devisor
     SUBDIR += dft_tools
+    SUBDIR += dftbplus
     SUBDIR += dkh
     SUBDIR += dlib-cpp
     SUBDIR += dlpoly-classic
@@ -118,6 +119,8 @@
     SUBDIR += libsvm-python
     SUBDIR += libxc
     SUBDIR += linsmith
+    SUBDIR += lm
+    SUBDIR += luscus
     SUBDIR += madness
     SUBDIR += massxpert
     SUBDIR += mbdyn
@@ -136,7 +139,9 @@
     SUBDIR += mol2ps
     SUBDIR += mpb
     SUBDIR += mpqc
+    SUBDIR += msms
     SUBDIR += multiwfn
+    SUBDIR += namd
     SUBDIR += ncs
     SUBDIR += netcdf
     SUBDIR += netcdf-cxx
@@ -146,6 +151,7 @@
     SUBDIR += octopus
     SUBDIR += openbabel
     SUBDIR += openkim
+    SUBDIR += openmx
     SUBDIR += openstructure
     SUBDIR += p5-Algorithm-SVMLight
     SUBDIR += p5-Chemistry-3DBuilder
@@ -204,10 +210,13 @@
     SUBDIR += py-mdp
     SUBDIR += py-mlpy
     SUBDIR += py-mmtf-python
+    SUBDIR += py-molmod
     SUBDIR += py-netCDF4
     SUBDIR += py-obspy
     SUBDIR += py-openpiv
     SUBDIR += py-paida
+    SUBDIR += py-phono3py
+    SUBDIR += py-phonopy
     SUBDIR += py-pupynere
     SUBDIR += py-pyaixi
     SUBDIR += py-pydicom

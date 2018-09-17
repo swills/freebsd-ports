@@ -1,9 +1,9 @@
 # Created by: Seiichirou Hiraoka <flathill@flathill.gr.jp>
-# $FreeBSD: head/games/fkiss/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/games/fkiss/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	fkiss
 PORTVERSION=	0.33a
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	http://www2s.biglobe.ne.jp/~yav/soft/fkiss/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/a//}

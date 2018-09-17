@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/elixir-comeonin/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/security/elixir-comeonin/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	comeonin
 PORTVERSION=	3.2
@@ -19,6 +19,8 @@ GH_ACCOUNT=	elixircnx
 MIX_BUILD_DEPS=	devel/elixir-make \
 		security/elixir-comeonin_i18n
 MIX_RUN_DEPS:=	security/elixir-comeonin_i18n
+
+OPTIONS_DEFINE=	DOCS
 
 post-build:
 	${STRIP_CMD} ${WRKSRC}/priv/bcrypt_nif.so

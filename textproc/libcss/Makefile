@@ -1,13 +1,13 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/libcss/Makefile 479005 2018-09-05 02:46:39Z swills $
+# $FreeBSD: head/textproc/libcss/Makefile 479319 2018-09-09 16:59:57Z sunpoet $
 
 PORTNAME=	libcss
 PORTVERSION=	0.8.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-src
+EXTRACT_SUFX=	-src.tar.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Cascading Style Sheets library
 
 LICENSE=	MIT
@@ -19,12 +19,11 @@ LIB_DEPENDS=	libwapcaplet.so:textproc/libwapcaplet \
 
 USES=		gmake iconv:wchar_t localbase pkgconfig
 USE_LDCONFIG=	yes
-WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
-MAKE_ENV+=	COMPONENT_TYPE="lib-shared"
+MAKE_ENV=	COMPONENT_TYPE="lib-shared"
 LDFLAGS+=	${ICONV_LIB}
-PLIST_SUB+=	VERSION=${PORTVERSION}
+PLIST_SUB=	VERSION=${PORTVERSION}
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libcss.so*
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libcss.so
 
 .include <bsd.port.mk>

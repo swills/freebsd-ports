@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/x11-toolkits/linux-c6-pango/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/x11-toolkits/linux-c6-pango/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pango
 PORTVERSION=	1.28.1
@@ -15,5 +15,7 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	cairo fontconfig libthai xorglibs
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

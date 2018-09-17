@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webengine/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/www/qt5-webengine/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 # QtWebEngine itself is a very thin layer of Qt code on top of a large part of
 # Chromium (everything up to the content/ layer). As such, most of the work in
@@ -20,7 +20,7 @@
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -141,5 +141,7 @@ pre-configure:
 # Unbundle a few dependencies.
 	${PYTHON_CMD} ${WRKSRC}/src/3rdparty/chromium/build/linux/unbundle/replace_gn_files.py \
 		--system-libraries libwebp libxml libxslt yasm
+# Rerun syncqt.pl -- otherwise the resulting package misses some forwarding headers.
+	cd ${WRKSRC} && ${QT_BINDIR}/syncqt.pl -version ${QT5_VERSION}
 
 .include <bsd.port.post.mk>

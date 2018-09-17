@@ -1,8 +1,9 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear/Makefile 478881 2018-09-03 15:57:00Z martymac $
+# $FreeBSD: head/games/flightgear/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	flightgear
 PORTVERSION=	2018.2.2
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/flightgear/release-${PORTVERSION:R}
 

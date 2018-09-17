@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/libvdpau/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/multimedia/libvdpau/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	libvdpau
 PORTVERSION=	1.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://cgit.freedesktop.org/~aplattner/libvdpau/snapshot/
 

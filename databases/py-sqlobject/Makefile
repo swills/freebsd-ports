@@ -1,5 +1,5 @@
 # Created by: "Choe, Cheng-Dae" whitekid
-# $FreeBSD: head/databases/py-sqlobject/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-sqlobject/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sqlobject
 PORTVERSION=	1.6.0
@@ -21,7 +21,7 @@ USES=		python${PY_MYSQL}
 USE_PYTHON=	autoplist distutils
 
 # currently MaxDB(SAP), ADODB are not supported
-OPTIONS_DEFINE=	MYSQL PGSQL SQLITE MSSQL SYBASE
+OPTIONS_DEFINE=	DOCS MYSQL PGSQL SQLITE MSSQL SYBASE
 SYBASE_DESC=	sybase support
 
 PORTDOCS=	*

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/erlang-fast_xml/Makefile 473621 2018-06-30 14:50:34Z farrokhi $
+# $FreeBSD: head/textproc/erlang-fast_xml/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fast_xml
 PORTVERSION=	1.1.32
@@ -21,6 +21,8 @@ ERL_RUN_DEPS:=	${ERL_BUILD_DEPS}
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -l expat
+
+OPTIONS_DEFINE=	DOCS
 
 pre-install:
 	${STRIP_CMD} ${WRKSRC}/priv/lib/*.so

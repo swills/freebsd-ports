@@ -1,5 +1,5 @@
 # Created by: Chris Hutchinson <portmaster@bsdforge.com>
-# $FreeBSD: head/textproc/smi/Makefile 397201 2015-09-17 18:53:07Z jbeich $
+# $FreeBSD: head/textproc/smi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	smi
 PORTVERSION=	1.4
@@ -23,6 +23,8 @@ MAKE_ENV=	PROG="${PORTNAME}" FILES="${PORTDOCS}" \
 		BINDIR="${PREFIX}/bin" FILESDIR="${DOCSDIR}" \
 		MANDIR="${MANPREFIX}/man/man"
 CFLAGS+=	-DVERSION=${PORTVERSION}
+
+OPTIONS_DEFINE=	DOCS
 
 pre-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

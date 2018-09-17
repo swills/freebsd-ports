@@ -1,5 +1,5 @@
 # Created by: jseger@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine22/Makefile 465144 2018-03-21 01:33:36Z cy $
+# $FreeBSD: head/sysutils/cfengine22/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	cfengine
 PORTVERSION=	2.2.10
@@ -36,7 +36,7 @@ CONFIGURE_ENV+=	BERKELEY_DB_CFLAGS=-I${BDB_INCLUDE_DIR} \
 
 INFO=		cfengine-Tutorial cfengine-Reference
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 		@${REINPLACE_CMD} -e '/^docdir/s!=.*!= @docdir@!'\

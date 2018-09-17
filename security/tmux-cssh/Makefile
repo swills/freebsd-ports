@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/tmux-cssh/Makefile 422697 2016-09-23 21:42:02Z jrm $
+# $FreeBSD: head/security/tmux-cssh/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tmux-cssh
 PORTVERSION=	20151014
@@ -19,7 +19,10 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	dennishafemann
 GH_TAGNAME=	2175073
 
-PLIST_FILES=	bin/tmux-cssh %%PORTDOCS%%%%DOCSDIR%%/README.md
+PLIST_FILES=	bin/tmux-cssh
+PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tmux-cssh ${STAGEDIR}${PREFIX}/bin

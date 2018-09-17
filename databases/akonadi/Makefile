@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/akonadi/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/databases/akonadi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	akonadi
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -51,6 +51,8 @@ SQLITE_CMAKE_ON=	-DAKONADI_BUILD_QSQLITE:BOOL=ON
 SQLITE_CMAKE_OFF=	-DAKONADI_BUILD_QSQLITE:BOOL=OFF
 
 OPTIONS_DEFAULT=	MYSQL
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 # To avoid overflow, MySQL settings need to be lower than

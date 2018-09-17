@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/net/xrdp-devel/Makefile 469777 2018-05-13 07:25:24Z meta $
+# $FreeBSD: head/net/xrdp-devel/Makefile 479891 2018-09-16 12:16:53Z antoine $
 
 PORTNAME=	xrdp
 PORTVERSION=	0.9.6
@@ -16,6 +16,8 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 IGNORE=		no development version available right now, use net/xrdp instead
+DEPRECATED=	Use net/xrdp instead
+EXPIRATION_DATE=	2018-09-29
 
 # pulseaudio's configured source is required for audio redirection
 BUILD_DEPENDS=	${NONEXISTENT}:audio/pulseaudio:configure \

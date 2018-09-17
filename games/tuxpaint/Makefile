@@ -1,13 +1,12 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/tuxpaint/Makefile 462364 2018-02-20 00:15:56Z truckman $
+# $FreeBSD: head/games/tuxpaint/Makefile 479915 2018-09-17 02:43:14Z wen $
 
 PORTNAME=	tuxpaint
-PORTVERSION=	0.9.22
-PORTREVISION=	1
+PORTVERSION=	0.9.23
 CATEGORIES=	games
 MASTER_SITES=	SF
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Drawing program designed for young children
 
 LICENSE=	GPLv2+
@@ -39,7 +38,7 @@ MAKE_JOBS_UNSAFE=	yes
 INSTALL_TARGET=	install-gettext install-im install-magic-plugins \
 		install-magic-plugin-dev install-default-config \
 		install-example-stamps install-example-starters \
-		install-gnome install-icon install-bin install-importscript \
+		install-icon install-bin install-importscript \
 		install-data install-doc install-man
 
 PORTDOCS=	*

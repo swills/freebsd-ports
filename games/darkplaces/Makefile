@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/darkplaces/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/darkplaces/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	darkplaces
 PORTVERSION=	20140513
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://icculus.org/twilight/darkplaces/files/
 DISTNAME=	${PORTNAME}engine${PORTVERSION}

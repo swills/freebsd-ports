@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@ccca.nctu.edu.tw>
-# $FreeBSD: head/www/mod_limitipconn2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_limitipconn2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_limitipconn
 PORTVERSION=	0.24
@@ -21,6 +21,8 @@ AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 
 PORTDOCS=	ChangeLog INSTALL README
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

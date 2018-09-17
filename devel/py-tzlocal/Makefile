@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-tzlocal/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-tzlocal/Makefile 479175 2018-09-07 02:26:36Z yuri $
 
 PORTNAME=	tzlocal
-PORTVERSION=	1.4
+DISTVERSION=	1.5.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

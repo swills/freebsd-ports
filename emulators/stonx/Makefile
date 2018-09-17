@@ -1,9 +1,9 @@
 # Created by: Tobias Reifenberger <tr@freebsd.mayn.de>
-# $FreeBSD: head/emulators/stonx/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/emulators/stonx/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	stonx
 PORTVERSION=	0.6.7e.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	SF/stonx/stonx/0.6.7.6
 DISTNAME=	STonX-0.6.7.6

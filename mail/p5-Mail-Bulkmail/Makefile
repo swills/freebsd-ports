@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/mail/p5-Mail-Bulkmail/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/mail/p5-Mail-Bulkmail/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Mail-Bulkmail
 PORTVERSION=	3.12
@@ -8,7 +8,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for mailing lists
 
 USES=		perl5

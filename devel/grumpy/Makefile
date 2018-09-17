@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/grumpy/Makefile 462532 2018-02-21 16:24:53Z antoine $
+# $FreeBSD: head/devel/grumpy/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	grumpy
 PORTVERSION=	0.0.0.2017020301
@@ -21,10 +21,10 @@ BINARY_ALIAS=	python=${PYTHON_CMD}
 .include <bsd.port.options.mk>
 
 .if ${ARCH} == "amd64"
-PLIST_SUB=	ARCH=amd64
+PLIST_SUB+=	ARCH=amd64
 .endif
 .if ${ARCH} == "i386"
-PLIST_SUB=	ARCH=386
+PLIST_SUB+=	ARCH=386
 .endif
 
 do-install:

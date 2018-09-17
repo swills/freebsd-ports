@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-cuttlefish/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-cuttlefish/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cuttlefish
 PORTVERSION=	2.0.11
@@ -20,5 +20,7 @@ ERL_BUILD_DEPS=	devel/erlang-getopt \
 		devel/erlang-lager \
 		devel/erlang-neotoma
 ERL_RUN_DEPS:=	${ERL_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

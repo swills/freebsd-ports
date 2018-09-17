@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/hashcat/Makefile 477043 2018-08-12 23:31:33Z lifanov $
+# $FreeBSD: head/security/hashcat/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hashcat
 PORTVERSION=	4.2.1
@@ -31,6 +31,8 @@ MAKE_ARGS=	SHARED=1 \
 		CC="${CC}" \
 		LFLAGS_NATIVE="${LDFLAGS} -lpthread -lm" \
 		CFLAGS_NATIVE="${CFLAGS} -Iinclude -IOpenCL -Ideps/lzma_sdk"
+
+OPTIONS_DEFINE=	DOCS
 
 pre-install:
 	${STRIP_CMD} ${WRKSRC}/libhashcat.so.${PORTVERSION}

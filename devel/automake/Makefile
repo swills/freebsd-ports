@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/automake/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/devel/automake/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	automake
 PORTVERSION=	1.16.1
@@ -24,5 +24,7 @@ GNU_CONFIGURE=	yes
 MAKE_ENV+=	MAKEINFOFLAGS=--no-split
 INFO=		automake automake-history
 CPE_VENDOR=	gnu
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

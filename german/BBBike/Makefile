@@ -1,5 +1,5 @@
 # Created by: Slaven Rezic <eserte@cs.tu-berlin.de>
-# $FreeBSD: head/german/BBBike/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/german/BBBike/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	BBBike
 PORTVERSION=	3.18
@@ -59,7 +59,7 @@ MYDESTDIR=	${STAGEDIR}${PREFIX}/BBBike
 .if exists(${PERL5})
 LOCAL_PERL_ARCH!=	${PERL5} -MConfig -e '$$x = qq{$$Config{version}/$$Config{archname}}; $$x =~ s{/}{\\\\/}g; print $$x'
 .endif
-PLIST_SUB=		LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
+PLIST_SUB+=		LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
 BBBIKE_PERL_EXE=	bbbike cbbbike bbbikeclient cmdbbbike smsbbbike
 
 post-patch:

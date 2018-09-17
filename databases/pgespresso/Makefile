@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pgespresso/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pgespresso/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pgespresso
 PORTVERSION=	1.2
@@ -27,6 +27,8 @@ PORTDOCS=	README.asciidoc
 
 INSTALL_TARGET=	install-strip
 MAKE_ARGS=	INSTALL="${INSTALL} -c"
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/

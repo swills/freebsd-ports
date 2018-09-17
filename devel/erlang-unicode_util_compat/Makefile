@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-unicode_util_compat/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-unicode_util_compat/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	unicode_util_compat
 PORTVERSION=	0.3.1
@@ -13,5 +13,7 @@ LICENSE=	BSD3CLAUSE
 USES=		gmake erlang:rebar3
 USE_GITHUB=	yes
 GH_ACCOUNT=	benoitc
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

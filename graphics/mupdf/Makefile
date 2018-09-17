@@ -1,10 +1,10 @@
 # Created by: Martin Dieringer <martin.dieringer@gmx.de>
-# $FreeBSD: head/graphics/mupdf/Makefile 476821 2018-08-10 09:38:00Z amdmi3 $
+# $FreeBSD: head/graphics/mupdf/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	mupdf
 PORTVERSION=	1.13.0
 DISTVERSIONSUFFIX=	-source
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.mupdf.com/downloads/ \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/babeltrace/Makefile 474719 2018-07-16 08:23:28Z pizzamig $
+# $FreeBSD: head/devel/babeltrace/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	babeltrace
 PORTVERSION=	1.5.6
@@ -31,6 +31,8 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 USE_LDCONFIG=	yes
 
 PORTDOCS=	ChangeLog std-ext-lib.txt API.txt lttng-live.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|LICENSE mit-license.txt gpl-2.0.txt||' \

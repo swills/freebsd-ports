@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnote/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/deskutils/gnote/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gnote
 PORTVERSION=	3.18.1
@@ -38,6 +38,8 @@ GLIB_SCHEMAS=	org.gnome.gnote.gschema.xml
 DOCS=		AUTHORS ChangeLog NEWS README TODO
 
 PLIST_SUB+=	VERSION=${PORTVERSION}
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

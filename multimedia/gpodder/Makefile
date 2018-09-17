@@ -1,5 +1,5 @@
 # Created by: Chess Griffin <chess@chessgriffin.com>
-# $FreeBSD: head/multimedia/gpodder/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/gpodder/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gpodder
 PORTVERSION=	3.9.3
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}eyed3>=0:audio/py-eyed3@${PY_FLAVOR}
 
-OPTIONS_DEFINE=		GTK2 NOTIFY MUTAGEN OGG2MP3
+OPTIONS_DEFINE=		GTK2 NOTIFY MUTAGEN OGG2MP3 DOCS
 OPTIONS_DEFAULT=	GTK2
 OPTIONS_SUB=		yes
 MUTAGEN_DESC=		Allow metadata manipulation

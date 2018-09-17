@@ -1,5 +1,5 @@
 # Created by: rene
-# $FreeBSD: head/emulators/fuse-utils/Makefile 473969 2018-07-05 13:39:55Z rene $
+# $FreeBSD: head/emulators/fuse-utils/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fuse-utils
 DISTVERSION=	1.4.3
@@ -23,6 +23,8 @@ USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libspectrum-prefix=${LOCALBASE} \
 		--with-local-prefix=${LOCALBASE}
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

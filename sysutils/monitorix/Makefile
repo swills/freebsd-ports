@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/monitorix/Makefile 478661 2018-09-01 09:38:14Z amdmi3 $
+# $FreeBSD: head/sysutils/monitorix/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	monitorix
 PORTVERSION=	3.10.1
@@ -52,6 +52,8 @@ WWW_FILES=	logo_top.png \
 
 PORTDOCS=	*
 PORTDATA=	*.pm
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

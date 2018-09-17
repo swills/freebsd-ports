@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/sddm-freebsd-black-theme/Makefile 464458 2018-03-14 05:13:01Z yuri $
+# $FreeBSD: head/x11-themes/sddm-freebsd-black-theme/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sddm-freebsd-black-theme
 DISTVERSION=	1.0
@@ -24,6 +24,8 @@ PLIST_SUB=	THEMEDIR=${THEMEDIR_REL}
 
 SUB_FILES=	pkg-message
 PORTDOCS=	README.md AUTHORS COPYING TRADEMARKS
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${THEMEDIR}

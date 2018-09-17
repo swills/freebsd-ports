@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/mail/exim-doc-html/Makefile 467486 2018-04-16 16:14:59Z vsevolod $
+# $FreeBSD: head/mail/exim-doc-html/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	exim
 PORTVERSION=	4.91
@@ -23,6 +23,8 @@ AVAILABLE_FORMATS=	html \
 					pdf \
 					postscript
 NO_BUILD=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .if make(makesum) && !defined(FETCH_ALL)
 .error "You forgot to define FETCH_ALL to create the sane distinfo"

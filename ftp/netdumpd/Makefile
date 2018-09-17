@@ -1,5 +1,5 @@
 # Created by: Mark Johnston <markj@FreeBSD.org>
-# $FreeBSD: head/ftp/netdumpd/Makefile 469644 2018-05-11 15:17:35Z markj $
+# $FreeBSD: head/ftp/netdumpd/Makefile 479351 2018-09-10 02:06:12Z linimon $
 
 PORTNAME=	netdumpd
 PORTVERSION=	20180511
@@ -13,6 +13,7 @@ COMMENT=	UDP server capable of handling netdump transfers
 LICENSE=	BSD2CLAUSE
 
 IGNORE_FreeBSD_10=	Depends on libcasper
+BROKEN_powerpc64=	fails to build: netdumpd.c:270: warning: declaration of 'index' shadows a global declaration
 
 MAKE_ARGS+=	BINDIR=${PREFIX}/sbin
 MAKE_ARGS+=	MANDIR=${PREFIX}/man/man

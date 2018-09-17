@@ -1,7 +1,8 @@
-# $FreeBSD: head/dns/namesilo_ddns/Makefile 476551 2018-08-06 22:13:45Z crees $
+# $FreeBSD: head/dns/namesilo_ddns/Makefile 479536 2018-09-11 17:55:08Z crees $
 
 PORTNAME=	namesilo_ddns
-PORTVERSION=	2.0
+PORTVERSION=	2.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	dns net
 
@@ -10,8 +11,7 @@ COMMENT=	Updates DNS records with Namesilo for dynamic IP addresses
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	curl:ftp/curl			\
-		xmllint:textproc/libxml2
+RUN_DEPENDS=	xmllint:textproc/libxml2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	crees

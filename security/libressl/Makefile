@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/security/libressl/Makefile 472387 2018-06-14 17:28:54Z brnrd $
+# $FreeBSD: head/security/libressl/Makefile 479595 2018-09-12 11:36:17Z brnrd $
 
 PORTNAME=	libressl
 PORTVERSION=	2.7.4
@@ -21,7 +21,8 @@ NC_DESC=	Install TLS-enabled netcat
 
 CONFLICTS_INSTALL=	libressl-devel-[0-9]* \
 			openssl-[0-9]* \
-			openssl-devel-[0-9]*
+			openssl-devel-[0-9]* \
+			openssl111-[0-9]*
 
 NC_CONFIGURE_ENABLE=	nc
 

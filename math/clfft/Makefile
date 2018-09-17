@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/math/clfft/Makefile 459114 2018-01-15 20:45:16Z jmd $
+# $FreeBSD: head/math/clfft/Makefile 479383 2018-09-10 10:29:06Z mat $
 
 PORTNAME=	clfft
 PORTVERSION=	2.12.2
@@ -18,7 +18,6 @@ LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd
 RUN_DEPENDS=	opencl>=0:devel/opencl
 
 ONLY_FOR_ARCHS=	amd64
-ONLY_FOR_ARCHS_REASON_amd64=	only builds and is supported on amd64
 
 USES=		cmake
 USE_LDCONFIG=	yes

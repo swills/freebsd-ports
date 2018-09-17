@@ -1,5 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/graphics/rawtherapee/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/rawtherapee/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	rawtherapee
 PORTVERSION=	5.4
@@ -60,7 +60,7 @@ CMAKE_ARGS+=	-DPROC_TARGET_NUMBER="1"
 
 RTDIR=		${PREFIX}/libdata/${PORTNAME}
 
-OPTIONS_DEFINE=		OPTIMIZED_CFLAGS OPENMP NATIVE
+OPTIONS_DEFINE=		DOCS OPTIMIZED_CFLAGS OPENMP NATIVE
 OPTIONS_DEFAULT=	OPTIMIZED_CFLAGS OPENMP
 OPENMP_DESC=		Enable multicore processing using OpenMP (amd64)
 OPTIMIZED_CFLAGS_DESC=	Use extra compiler optimizations (requires SSE2 support)

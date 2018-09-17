@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/dpf-plugins-lv2/Makefile 477480 2018-08-18 07:03:28Z yuri $
+# $FreeBSD: head/audio/dpf-plugins-lv2/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	dpf-plugins
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.1-1
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-g0c433e4
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2

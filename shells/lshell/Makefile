@@ -1,5 +1,5 @@
 # Created by: Sylvio Cesar <scjamorim@bsd.com.br>
-# $FreeBSD: head/shells/lshell/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/shells/lshell/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lshell
 PORTVERSION=	0.9.18.20160916
@@ -18,6 +18,8 @@ NO_ARCH=	yes
 USES=		python:2.7
 USE_GITHUB=	yes
 USE_PYTHON=	distutils
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e \

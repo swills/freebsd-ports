@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/net-p2p/minder/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net-p2p/minder/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	minder
 PORTVERSION=	2.0.2
@@ -25,6 +25,8 @@ LDFLAGS+=	$$(pkg-config --libs libxml-2.0) \
 
 PORTEXAMPLES=	minder.cfg
 PLIST_FILES=	bin/minder
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e \

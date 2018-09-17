@@ -1,5 +1,5 @@
 # Created by: tobez
-# $FreeBSD: head/devel/p5-File-ReadBackwards/Makefile 464886 2018-03-18 09:03:18Z amdmi3 $
+# $FreeBSD: head/devel/p5-File-ReadBackwards/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	File-ReadBackwards
 PORTVERSION=	1.05
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	File::ReadBackwards -- read a file backwards by lines
 
 LICENSE=	ART10 GPLv1+

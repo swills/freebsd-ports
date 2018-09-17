@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/rubygem-json-ld/Makefile 477532 2018-08-18 20:42:33Z sunpoet $
+# $FreeBSD: head/converters/rubygem-json-ld/Makefile 479473 2018-09-10 20:28:17Z sunpoet $
 
 PORTNAME=	json-ld
-DISTVERSION=	3.0.0
+DISTVERSION=	3.0.1
 CATEGORIES=	converters rubygems
 MASTER_SITES=	RG
 

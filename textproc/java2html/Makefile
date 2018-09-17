@@ -1,5 +1,5 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/textproc/java2html/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/textproc/java2html/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=		java2html
 PORTVERSION=		0.9.2
@@ -15,6 +15,8 @@ LICENSE=	GPLv2
 GNU_CONFIGURE=	yes
 PORTDOCS=	AUTHORS NEWS README
 PLIST_FILES=	bin/java2html man/man1/java2html.1.gz
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

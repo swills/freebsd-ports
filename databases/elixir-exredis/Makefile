@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/elixir-exredis/Makefile 418825 2016-07-20 08:34:56Z vanilla $
+# $FreeBSD: head/databases/elixir-exredis/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	exredis
 PORTVERSION=	0.2.5
@@ -16,5 +16,7 @@ GH_ACCOUNT=	artemeff
 
 MIX_BUILD_DEPS=	databases/erlang-eredis
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

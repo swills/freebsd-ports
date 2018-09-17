@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/reduce-psl/Makefile 462743 2018-02-23 20:23:26Z pi $
+# $FreeBSD: head/math/reduce-psl/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	reduce
 PORTVERSION=	20180117
@@ -35,7 +35,7 @@ CONFIGURE_ARGS=	--with-psl
 
 REDUCE_BINS=	${WRKSRC}/pslbuild/${TARGET_SDIR}
 
-.include <bsd.port.options.mk>
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}

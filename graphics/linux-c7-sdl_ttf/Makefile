@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-sdl_ttf/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/graphics/linux-c7-sdl_ttf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sdl_ttf
 PORTVERSION=	2.0.11
@@ -22,5 +22,7 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	jpeg png sdl12 tiff
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-httpoison/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/elixir-httpoison/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	httpoison
 PORTVERSION=	0.13.0
@@ -17,5 +17,7 @@ GH_ACCOUNT=	edgurgel
 
 MIX_BUILD_DEPS=	www/erlang-hackney
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

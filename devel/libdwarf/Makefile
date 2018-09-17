@@ -1,5 +1,5 @@
 # Created by: joerg@FreeBSD.org
-# $FreeBSD: head/devel/libdwarf/Makefile 430988 2017-01-09 17:33:50Z feld $
+# $FreeBSD: head/devel/libdwarf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libdwarf
 PORTVERSION=	20161124
@@ -26,6 +26,8 @@ USES=		dos2unix
 DOS2UNIX_GLOB=	*.h
 
 PS_FILES=	libdwarf2.1.pdf libdwarf2p.1.pdf mips_extensions.pdf
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libdwarf.a ${STAGEDIR}${PREFIX}/lib

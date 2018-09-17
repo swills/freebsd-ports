@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-commonmarker/Makefile 476893 2018-08-11 14:16:59Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-commonmarker/Makefile 479462 2018-09-10 20:27:20Z sunpoet $
 
 PORTNAME=	commonmarker
-PORTVERSION=	0.17.11
+PORTVERSION=	0.17.13
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-ruby-enum>=0.5:devel/rubygem-ruby-enum
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 PLIST_FILES=	bin/commonmarker
 

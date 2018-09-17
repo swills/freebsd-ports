@@ -1,5 +1,5 @@
 # Created by: Xavier Beaudouin <kiwi@oav.net>
-# $FreeBSD: head/mail/postfix-policyd-sf/Makefile 380982 2015-03-11 13:49:01Z mat $
+# $FreeBSD: head/mail/postfix-policyd-sf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	policyd
 PORTVERSION=	1.82
@@ -33,6 +33,8 @@ PLIST_FILES=	sbin/${REALNAME}-cleanup \
 		sbin/${REALNAME}-stats \
 		sbin/${REALNAME} \
 		etc/${REALNAME}.conf.sample
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,policyd.pid,postfix-policyd-sf.pid,' \

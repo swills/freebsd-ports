@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-sinatra-contrib/Makefile 476041 2018-07-31 23:45:47Z sunpoet $
+# $FreeBSD: head/www/rubygem-sinatra-contrib/Makefile 479908 2018-09-16 23:25:46Z sunpoet $
 
 PORTNAME=	sinatra-contrib
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -18,10 +18,11 @@ RUN_DEPENDS=	rubygem-activesupport5>=4.0.0:devel/rubygem-activesupport5 \
 		rubygem-sinatra>=${PORTVERSION}:www/rubygem-sinatra \
 		rubygem-tilt>=1.3:devel/rubygem-tilt
 
+USES=		gem
+USE_RUBY=	yes
+
 NO_ARCH=	yes
 REINPLACE_ARGS=	-i ''
-USE_RUBY=	yes
-USES=		gem
 
 post-patch:
 # Remove backports

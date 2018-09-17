@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-deface/Makefile 459068 2018-01-15 15:20:42Z swills $
+# $FreeBSD: head/devel/rubygem-deface/Makefile 479220 2018-09-08 00:15:03Z sunpoet $
 
 PORTNAME=	deface
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	devel rubygems www
 MASTER_SITES=	RG
 
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-nokogiri>=1.6:textproc/rubygem-nokogiri \
 		rubygem-rails4>=4.1:www/rubygem-rails4 \
 		rubygem-rainbow>=2.1.0:devel/rubygem-rainbow
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

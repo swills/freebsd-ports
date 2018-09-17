@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/prosody-modules/Makefile 462461 2018-02-20 22:43:53Z rodrigo $
+# $FreeBSD: head/net-im/prosody-modules/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	prosody-modules
 PORTVERSION=	20180216
@@ -22,6 +22,8 @@ SUB_LIST=	INSTALLPATH=${INSTALLPATH}
 PLIST_SUB=	INSTALLPATH=${INSTALLPATH}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTNAME}
 INSTALLPATH=	${PREFIX}/lib/${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${INSTALLPATH} ${STAGEDIR}${DOCSDIR}

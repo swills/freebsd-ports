@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/databases/qdbm/Makefile 452147 2017-10-15 14:05:04Z madpilot $
+# $FreeBSD: head/databases/qdbm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	qdbm
 PORTVERSION=	1.8.78
@@ -28,6 +28,8 @@ MAKE_ARGS=	MYDATADIR="${DOCSDIR}" MYDOCS="${PORTDOCS}" \
 		MYPCDIR="${PREFIX}/libdata/pkgconfig"
 INSTALL_TARGET=	install-strip
 PORTDOCS=	ChangeLog NEWS
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 .if defined(WITH_DEBUG)

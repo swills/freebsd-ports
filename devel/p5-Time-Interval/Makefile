@@ -1,21 +1,20 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Time-Interval/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Time-Interval/Makefile 479739 2018-09-13 21:56:01Z sunpoet $
 
 PORTNAME=	Time-Interval
-PORTVERSION=	1.232
-PORTREVISION=	1
+PORTVERSION=	1.234
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Converts time intervals of days, hours, minutes, and seconds
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-TimeDate>0:devel/p5-TimeDate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-TimeDate>=2.20:devel/p5-TimeDate
 
 USES=		perl5
 USE_PERL5=	configure

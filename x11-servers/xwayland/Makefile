@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-servers/xwayland/Makefile 452247 2017-10-16 19:45:15Z rezny $
+# $FreeBSD: head/x11-servers/xwayland/Makefile 479663 2018-09-13 08:30:04Z zeising $
 
 PORTNAME=	xwayland
 PORTVERSION=	1.19.1

@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/www/privatebin/Makefile 475189 2018-07-23 16:57:18Z se $
+# $FreeBSD: head/www/privatebin/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	privatebin
 PORTVERSION=	1.2
@@ -18,6 +18,8 @@ USES=		php
 USE_PHP=	gd hash json wddx zlib
 USE_GITHUB=	yes
 GH_PROJECT=	PrivateBin
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's:%%DATADBDIR%%:/var/db/${PORTNAME}:' \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/gabedit/Makefile 478477 2018-08-30 18:00:12Z yuri $
+# $FreeBSD: head/science/gabedit/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	gabedit
 DISTVERSION=	2.5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	http://prdownloads.sourceforge.net/${PORTNAME}/
 DISTNAME=	GabeditSrc${DISTVERSION:S/.//g}

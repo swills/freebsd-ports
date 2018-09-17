@@ -1,5 +1,5 @@
 # Created by: stephen@FreeBSD.org
-# $FreeBSD: head/math/librsb/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/librsb/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	librsb
 PORTVERSION=	1.2.0r7
@@ -27,6 +27,8 @@ SHEBANG_FILES=	scripts/*.sh
 USE_LDCONFIG=	yes
 
 MANUAL_PACKAGE_BUILD=	Optimizes for the local machine
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -E s/sed/gsed/g ${WRKSRC}/scripts/*.sh

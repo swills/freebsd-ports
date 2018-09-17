@@ -1,9 +1,8 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/piglit/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/piglit/Makefile 479512 2018-09-11 09:05:07Z dumbbell $
 
 PORTNAME=	piglit
-PORTVERSION=	20170922
-PORTREVISION=	3
+PORTVERSION=	20180910
 CATEGORIES=	graphics
 
 MAINTAINER=	x11@FreeBSD.org
@@ -28,7 +27,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 USE_GITHUB=	yes
 GH_ACCOUNT=	dumbbell
 GH_PROJECT=	piglit
-GH_TAGNAME=	60996b829c85f3df192bc6228108c0a8eaa38afd
+GH_TAGNAME=	a0db4427446ab50882a721ae3084fa26cc9e751a
 
 USES=		cmake:outsource compiler:c11 pkgconfig python:2.7 shebangfix
 USE_GL=		egl gbm gl glu
@@ -44,5 +43,7 @@ SUB_FILES=	pkg-message
 
 DATADIR=	${PREFIX}/lib/piglit
 PORTDATA=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

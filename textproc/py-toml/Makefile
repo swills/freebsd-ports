@@ -1,8 +1,8 @@
 # Created by: Waitman Gobble <waitman@waitman.net>
-# $FreeBSD: head/textproc/py-toml/Makefile 471078 2018-05-29 04:32:35Z vanilla $
+# $FreeBSD: head/textproc/py-toml/Makefile 479559 2018-09-11 19:00:59Z sunpoet $
 
 PORTNAME=	toml
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.6
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,9 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 OPTIONS_DEFINE=	DOCS
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 PORTDOCS=	README.rst
 

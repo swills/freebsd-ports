@@ -1,9 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/libXext/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/libXext/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	libXext
 PORTVERSION=	1.3.3
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	x11
 

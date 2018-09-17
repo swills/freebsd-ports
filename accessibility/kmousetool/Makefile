@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/kmousetool/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/accessibility/kmousetool/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kmousetool
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,5 +16,7 @@ USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons \
 USE_QT=		core dbus gui phonon4 widgets xml \
 		buildtools_build qmake_build
 USE_XORG=	ice sm x11 xext xtst
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

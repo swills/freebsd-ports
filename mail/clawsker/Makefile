@@ -1,9 +1,9 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/mail/clawsker/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/mail/clawsker/Makefile 479380 2018-09-10 09:49:02Z danfe $
 
 PORTNAME=	clawsker
-PORTVERSION=	1.1.1
-CATEGORIES=	mail
+PORTVERSION=	1.2.0
+CATEGORIES=	mail perl5
 MASTER_SITES=	http://www.claws-mail.org/tools/
 
 MAINTAINER=	ports@FreeBSD.org

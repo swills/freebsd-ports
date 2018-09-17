@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kdeedu-data/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/kdeedu-data/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kdeedu-data
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -17,5 +17,7 @@ USE_QT=		buildtools_build qmake_build
 # to avoid needlessly depending on qt5-core.
 CMAKE_ARGS=	-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Core=TRUE \
 		-DQMAKE_EXECUTABLE:PATH=${QMAKE}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

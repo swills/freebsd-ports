@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/deskutils/taskd/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/taskd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	taskd
 PORTVERSION=	1.1.0
@@ -47,6 +47,8 @@ SHEBANG_FILES=	demo/client/case* \
 CFLAGS+=	-g -O0
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	(cd ${WRKSRC}/pki && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR})

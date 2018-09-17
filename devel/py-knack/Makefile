@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-knack/Makefile 476822 2018-08-10 09:43:08Z dbn $
+# $FreeBSD: head/devel/py-knack/Makefile 479608 2018-09-12 14:58:32Z dbn $
 
 PORTNAME=	knack
-DISTVERSION=	0.4.2
+DISTVERSION=	0.4.3
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

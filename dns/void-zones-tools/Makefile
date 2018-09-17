@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/void-zones-tools/Makefile 478228 2018-08-27 17:04:08Z tobik $
+# $FreeBSD: head/dns/void-zones-tools/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	void-zones-tools
 DISTVERSIONPREFIX=	v
@@ -17,6 +17,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	cyclaero
 
 SUB_FILES=	pkg-message
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hosts2zones ${STAGEDIR}${PREFIX}/bin

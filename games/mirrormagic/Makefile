@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/mirrormagic/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/mirrormagic/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mirrormagic
 PORTVERSION=	2.0.2
@@ -29,7 +29,7 @@ DESKTOP_ENTRIES="Mirror Magic" \
 		"Game;LogicGame;" \
 		""
 
-OPTIONS_DEFINE=	SDL
+OPTIONS_DEFINE=	SDL DOCS
 OPTIONS_DEFAULT=SDL
 
 SDL_USE=		SDL=image,mixer,sdl

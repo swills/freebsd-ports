@@ -1,5 +1,5 @@
 # Created by: dchapes@ddm.on.ca
-# $FreeBSD: head/emulators/vice/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/emulators/vice/Makefile 479427 2018-09-10 14:40:53Z mat $
 
 PORTNAME=	vice
 PORTVERSION=	3.1
@@ -51,7 +51,7 @@ LMLINKS=	vice.1 x64.1 \
 		vice.1 xplus4.1 \
 		vice.1 xcbm2.1
 
-OPTIONS_DEFINE=	SDL ALSA PULSEAUDIO DOCS
+OPTIONS_DEFINE=	SDL ALSA PULSEAUDIO DOCS NLS
 OPTIONS_SINGLE=	GUI
 OPTIONS_SINGLE_GUI=	GNOMEUI3 GNOMEUI2 XAW
 OPTIONS_DEFAULT?=	GNOMEUI3 SDL ALSA

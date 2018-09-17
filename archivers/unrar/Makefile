@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/archivers/unrar/Makefile 478452 2018-08-30 14:13:59Z sunpoet $
+# $FreeBSD: head/archivers/unrar/Makefile 479868 2018-09-16 00:07:56Z sunpoet $
 
 PORTNAME=	unrar
 DISTVERSION=	5.60
@@ -16,8 +16,6 @@ LICENSE=	UNRAR
 LICENSE_FILE=	${WRKSRC}/license.txt
 LICENSE_NAME=	UnRAR license
 LICENSE_PERMS=	auto-accept dist-mirror pkg-mirror
-
-BROKEN_SSL=	openssl-devel
 
 OPTIONS_DEFINE=	OPENSSL_AES
 OPTIONS_DEFAULT=OPENSSL_AES

@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/jdk8-doc/Makefile 478490 2018-08-30 20:25:42Z pi $
+# $FreeBSD: head/java/jdk8-doc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}.${JDK_UPDATE_VER}
@@ -22,6 +22,8 @@ USES=		zip
 NO_BUILD=	yes
 NO_ARCH=	yes
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

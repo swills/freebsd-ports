@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/netsurf/Makefile 472464 2018-06-15 17:08:57Z fernape $
+# $FreeBSD: head/www/netsurf/Makefile 479892 2018-09-16 12:39:35Z wen $
 
 PORTNAME=	netsurf
-PORTVERSION=	3.7
+PORTVERSION=	3.8
 CATEGORIES=	www
 MASTER_SITES=	http://download.netsurf-browser.org/netsurf/releases/source/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

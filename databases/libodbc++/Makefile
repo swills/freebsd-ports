@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/libodbc++/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/libodbc++/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libodbc++
 PORTVERSION=	0.2.5
@@ -11,8 +11,9 @@ COMMENT=	C++ class library and toolset for ODBC access to data sources
 
 LICENSE=	GPLv2
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
 
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 USES=		gmake libtool ncurses pathfix pkgconfig readline tar:bzip2

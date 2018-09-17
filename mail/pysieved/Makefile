@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@wizard.volgograd.ru>
-# $FreeBSD: head/mail/pysieved/Makefile 456126 2017-12-12 12:40:15Z antoine $
+# $FreeBSD: head/mail/pysieved/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pysieved
 PORTVERSION=	1.0
@@ -22,6 +22,8 @@ PORTEXAMPLES=	pysieved.xinetd
 SUB_LIST=	PORTNAME=${PORTNAME} PYTHON_CMD=${PYTHON_CMD}
 
 PORTDOCS=	COPYING README README.Dovecot THANKS
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	${REINPLACE_CMD} \

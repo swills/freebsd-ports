@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/www/php-templates/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/php-templates/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	templates
 PORTVERSION=	1.7.2
@@ -25,6 +25,8 @@ CONFIGURE_ARGS=	--enable-templates=shared
 SUB_FILES=	pkg-message
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/php/${PHP_EXT_DIR}

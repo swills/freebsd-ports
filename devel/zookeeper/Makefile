@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/zookeeper/Makefile 468773 2018-05-01 17:45:33Z skreuzer $
+# $FreeBSD: head/devel/zookeeper/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	zookeeper
 PORTVERSION=	3.4.12
@@ -47,6 +47,8 @@ JAVA_RUN=	yes
 USE_RC_SUBR=	zookeeper
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	@${REINPLACE_CMD} "/dataDir/s|=.*|=${ZOOKEEPER_DBDIR}|" ${WRKDIR}/${DISTNAME}/conf/zoo_sample.cfg

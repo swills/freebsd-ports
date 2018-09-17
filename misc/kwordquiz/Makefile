@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kwordquiz/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/misc/kwordquiz/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kwordquiz
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,5 +16,7 @@ USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
 		unitconversion widgetsaddons windowsystem xmlgui
 USE_QT=		core dbus gui network phonon4 printsupport widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

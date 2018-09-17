@@ -1,5 +1,5 @@
 # Created by: Brian Candler <B.Candler@pobox.com>
-# $FreeBSD: head/textproc/docbook-utils/Makefile 472207 2018-06-11 20:56:24Z feld $
+# $FreeBSD: head/textproc/docbook-utils/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	docbook-utils
 PORTVERSION=	0.6.14
@@ -29,6 +29,8 @@ SHEBANG_FILES=	bin/sgmldiff.in
 perl_OLD_CMD=	@perl_bindir@/perl
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/etc/sgml/catalog|${PREFIX}/share/sgml/catalog|g' \

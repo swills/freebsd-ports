@@ -1,9 +1,9 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/games/xjig/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/games/xjig/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xjig
 PORTVERSION=	2.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	XCONTRIB/games
 

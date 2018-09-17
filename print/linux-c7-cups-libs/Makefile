@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/print/linux-c7-cups-libs/Makefile 464668 2018-03-16 09:41:38Z jhale $
+# $FreeBSD: head/print/linux-c7-cups-libs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cups
 PORTVERSION=	1.6.3
@@ -21,5 +21,7 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	avahi-libs openssl
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

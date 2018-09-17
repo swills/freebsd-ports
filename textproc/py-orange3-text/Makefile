@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-orange3-text/Makefile 475058 2018-07-21 09:14:30Z yuri $
+# $FreeBSD: head/textproc/py-orange3-text/Makefile 479918 2018-09-17 08:37:13Z yuri $
 
 PORTNAME=	orange3-text
-DISTVERSION=	0.4.1
+DISTVERSION=	0.5.0
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -24,6 +24,7 @@ RUN_DEPENDS=	orange3>0:misc/orange3 \
 		${PYTHON_PKGNAMEPREFIX}scikit-learn>0:science/py-scikit-learn@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}simhash>0:math/py-simhash@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tweepy>0:net/py-tweepy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ufal.udpipe>0:textproc/py-ufal.udpipe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}validate_email>0:mail/py-validate_email@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wikipedia>0:www/py-wikipedia@${PY_FLAVOR}
 py34_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}typing>0:devel/py-typing@${PY_FLAVOR}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/rocs/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/math/rocs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	rocs
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -24,5 +24,7 @@ USE_LDCONFIG=	yes
 # /wrkdirs/usr/ports/math/rocs/work/rocs-4.14.3/VisualEditor/Actions/SelectMoveHandAction.cpp:86:52: error: no viable conversion from 'int' to 'QPainter::RenderHints' (aka 'QFlags<QPainter::RenderHint>')
 #         _graphScene->views().at(0)->setRenderHints(QPainter::Antialiasing
 USE_CXXSTD=	gnu++98
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

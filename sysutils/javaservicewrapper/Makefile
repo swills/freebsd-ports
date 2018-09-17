@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/sysutils/javaservicewrapper/Makefile 413728 2016-04-21 11:35:12Z amdmi3 $
+# $FreeBSD: head/sysutils/javaservicewrapper/Makefile 479580 2018-09-12 02:09:45Z jmd $
 
 PORTNAME=	javaservicewrapper
 PORTVERSION=	3.5.29
@@ -7,12 +7,12 @@ CATEGORIES=	sysutils java
 MASTER_SITES=	http://wrapper.tanukisoftware.com/download/${PORTVERSION}/
 DISTNAME=	wrapper_${PORTVERSION}_src
 
-MAINTAINER=	mike.jakubik@gmail.com
+MAINTAINER=	michael.osipov@siemens.com
 COMMENT=	Application to solve problems common to many Java applications
 
 ONLY_FOR_ARCHS=	i386 amd64
 
-USE_JAVA=	1.4+
+USE_JAVA=	1.8+
 USE_ANT=	yes
 USES=		gmake iconv
 

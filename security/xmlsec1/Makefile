@@ -1,5 +1,5 @@
 # Created by: Jim Geovedi <jim@corebsd.or.id>
-# $FreeBSD: head/security/xmlsec1/Makefile 461199 2018-02-08 07:07:43Z lwhsu $
+# $FreeBSD: head/security/xmlsec1/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xmlsec1
 PORTVERSION=	1.2.25
@@ -31,7 +31,7 @@ MAKE_ENV=	ABS_BUILDDIR=${WRKSRC} TMPFOLDER=${WRKSRC}
 INSTALL_TARGET=	install-strip
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	GNUTLS NSS
+OPTIONS_DEFINE=	DOCS GNUTLS NSS
 OPTIONS_DEFAULT=	NSS
 OPTIONS_SUB=	yes
 

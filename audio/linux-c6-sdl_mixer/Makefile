@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-sdl_mixer/Makefile 460328 2018-01-29 19:45:22Z tijl $
+# $FreeBSD: head/audio/linux-c6-sdl_mixer/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sdl_mixer
 PORTVERSION=	1.2.12
@@ -21,5 +21,7 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	sdl12
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

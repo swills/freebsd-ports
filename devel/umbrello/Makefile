@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/umbrello/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/devel/umbrello/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	umbrello
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -21,6 +21,8 @@ USE_QT=		core dbus gui network printsupport svg webkit widgets xml \
 
 # Build the KDE Frameworks 5 based version.
 CMAKE_BOOL=	BUILD_KF5
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 # The CMakeFile  sets BUILD_UNITTESTS to 1, not respecting the

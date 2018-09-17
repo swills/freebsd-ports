@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/devel/pydbus-common/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/pydbus-common/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	dbus
 PORTVERSION=	1.2.0
@@ -31,8 +31,9 @@ DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}
 EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}
 
 OPTIONS_SUB=	yes
-OPTIONS_DEFINE=	HTMLDOCS
+OPTIONS_DEFINE=	HTMLDOCS DOCS EXAMPLES
 HTMLDOCS_DESC=	build html documentation
+HTMLDOCS_IMPLIES=	DOCS
 HTMLDOCS_CONFIGURE_OFF=	--disable-html-docs
 HTMLDOCS_BUILD_DEPENDS=	rst2html:textproc/py-docutils
 

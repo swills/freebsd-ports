@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/pyqt.mk 474468 2018-07-11 16:44:34Z novel $
+# $FreeBSD: head/Mk/Uses/pyqt.mk 479417 2018-09-10 13:41:02Z mat $
 #
 # Handle PyQt related ports
 #
@@ -217,7 +217,6 @@ DISTNAME=	${PYQT_DISTNAME}
 DISTINFO_FILE=	${PYQT_DISTINFO_FILE}
 LICENSE?=	${PYQT_LICENSE}
 HAS_CONFIGURE=	yes
-QT_NONSTANDARD=	yes  # Do not add unknown arguments to CONFIGURE_ARGS.
 
 .if ${_PYQT_VERSION} > 4
 # PyQt5's configure.py generates .pro files and calls qmake to generate the

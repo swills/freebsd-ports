@@ -1,5 +1,5 @@
 # Created by: jkh@FreeBSD.org
-# $FreeBSD: head/x11/sxpc/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/x11/sxpc/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	sxpc
 PORTVERSION=	1.4
@@ -12,6 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple X Protocol Compressor
 
 USES=		imake
+USE_XORG=	xorgproto
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=		${GZIP_CMD}
 EXTRACT_BEFORE_ARGS=	-dc

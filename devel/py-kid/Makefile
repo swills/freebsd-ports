@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/devel/py-kid/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-kid/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	kid
 PORTVERSION=	0.9.6
@@ -16,7 +16,7 @@ USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils autoplist
 SHEBANG_FILES=	misc/upgrade-0.6.py
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 NO_ARCH=	yes
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/scct/Makefile 423195 2016-10-03 13:44:27Z jrm $
+# $FreeBSD: head/sysutils/scct/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	scct
 PORTVERSION=	0.1
@@ -19,6 +19,8 @@ GH_ACCOUNT=	Jehops
 
 PLIST_FILES=	bin/scct
 PORTDOCS=	README.org
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/scct ${STAGEDIR}${PREFIX}/bin

@@ -1,5 +1,5 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/net/freeswitch/Makefile 468853 2018-05-02 16:33:59Z jbeich $
+# $FreeBSD: head/net/freeswitch/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	freeswitch
 PORTVERSION=	1.6.19
@@ -46,7 +46,7 @@ GROUPS=		${USERS}
 
 SUB_FILES=	pkg-message
 
-OPTIONS_DEFINE=		ALL_MODULES X11
+OPTIONS_DEFINE=		ALL_MODULES X11 EXAMPLES
 OPTIONS_DEFAULT=	8K 16K ENGLISH
 OPTIONS_MULTI=		BITRATE LANGUAGE
 OPTIONS_MULTI_BITRATE=	8K 16K 32K 48K

@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/py-soco/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/multimedia/py-soco/Makefile 479147 2018-09-06 19:27:37Z swills $
 
 PORTNAME=	soco
-PORTVERSION=	0.15
+PORTVERSION=	0.16
 DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

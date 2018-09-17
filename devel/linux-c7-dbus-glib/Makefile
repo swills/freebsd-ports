@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/devel/linux-c7-dbus-glib/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/devel/linux-c7-dbus-glib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dbus-glib
 PORTVERSION=	0.100
@@ -17,5 +17,7 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	dbuslibs expat
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

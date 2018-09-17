@@ -1,5 +1,5 @@
 # Created by: Scott Flatman <sf@dsinw.com>
-# $FreeBSD: head/math/maxima/Makefile 460153 2018-01-28 01:36:20Z rene $
+# $FreeBSD: head/math/maxima/Makefile 479528 2018-09-11 15:51:35Z lwhsu $
 
 PORTNAME=	maxima
 PORTVERSION=	5.41.0
@@ -35,26 +35,16 @@ PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 PORTDATA=	*
 
 OPTIONS_SINGLE=		LISP
-OPTIONS_SINGLE_LISP=	CLISP CMUCL SBCL
+OPTIONS_SINGLE_LISP=	CMUCL SBCL
 
 OPTIONS_DEFAULT=	SBCL
 
-CLISP_DESC=	Build with Clisp
 CMUCL_DESC=	Build with CMU Common Lisp
 SBCL_DESC=	Build with Steel Bank Common Lisp
 
 .include <bsd.port.pre.mk>
 
 # Lisp to build with. Define only ONE of these!
-.if ${PORT_OPTIONS:MCLISP}
-LISPSELECT=	--enable-clisp
-LISPPORT=	clisp:lang/clisp
-BINDIRECTORY=	binary-clisp
-LISPBINARY=	lisp.run
-PLIST_SUB+=	LISPBINARY=""
-MAXIMABINARY=	maxima.mem
-.endif
-
 .if ${PORT_OPTIONS:MCMUCL}
 LISPSELECT=	--enable-cmucl
 LISPPORT=	lisp:lang/cmucl

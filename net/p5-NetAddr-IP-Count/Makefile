@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/net/p5-NetAddr-IP-Count/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-NetAddr-IP-Count/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	NetAddr-IP-Count
 PORTVERSION=	2.01
@@ -8,7 +8,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	NetAddr::IP::Count - Count hosts in named subnets
 
 BUILD_DEPENDS=	p5-NetAddr-IP>0:net-mgmt/p5-NetAddr-IP

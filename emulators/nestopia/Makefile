@@ -1,7 +1,8 @@
-# $FreeBSD: head/emulators/nestopia/Makefile 476276 2018-08-03 02:54:03Z yuri $
+# $FreeBSD: head/emulators/nestopia/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	nestopia
 DISTVERSION=	1.49
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	neel@neelc.org
@@ -23,5 +24,7 @@ USE_GL=		glu
 USE_GNOME=	cairo gdkpixbuf2 gtk30
 USE_SDL=	sdl2
 INSTALLS_ICONS=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

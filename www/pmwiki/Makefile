@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/www/pmwiki/Makefile 479108 2018-09-06 16:50:29Z joneum $
+# $FreeBSD: head/www/pmwiki/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pmwiki
 PORTVERSION=	2.2.109
@@ -24,6 +24,8 @@ PORTDOCS=	*
 PLIST_SUB=	PMWIKIDIR=${PMWIKIDIR} WWWGRP=${WWWGRP} WWWOWN=${WWWOWN}
 SUB_LIST+=	PMWIKIDIR=${PMWIKIDIR}
 SUB_FILES=	pkg-message
+
+OPTIONS_DEFINE=	DOCS
 
 pre-fetch:
 .if !defined(PMWIKIDIR)

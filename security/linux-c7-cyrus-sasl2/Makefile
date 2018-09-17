@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-cyrus-sasl2/Makefile 464668 2018-03-16 09:41:38Z jhale $
+# $FreeBSD: head/security/linux-c7-cyrus-sasl2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	2.1.26
@@ -20,5 +20,7 @@ RPMVERSION=	21.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

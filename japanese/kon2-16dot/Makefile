@@ -1,5 +1,5 @@
 # Created by: Makoto Matsushita <matusita@jp.freebsd.org>
-# $FreeBSD: head/japanese/kon2-16dot/Makefile 411834 2016-03-25 11:42:13Z ohauer $
+# $FreeBSD: head/japanese/kon2-16dot/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kon2
 PORTVERSION=	0.3
@@ -22,6 +22,9 @@ ONLY_FOR_ARCHS=	i386 amd64
 PORTDOCS=	README README.FreeBSD
 SUB_LIST=	KON16FONT=${KON16FONT} \
 		KON14FONT=${KON14FONT}
+
+OPTIONS_DEFINE=	DOCS
+
 .include <bsd.port.pre.mk>
 
 .if !defined(KONFONT)

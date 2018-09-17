@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/quagga/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/quagga/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	quagga
 PORTVERSION=	1.2.4
@@ -27,7 +27,7 @@ USE_PERL5=	build
 INFO=		quagga
 
 OPTIONS_DEFINE=	ISISD PIMD PAM RTADV SNMP TCPSOCKETS DLMALLOC \
-		NO_BGP_ANNOUNCE OSPF_NEXTHOP ISIS_TOPOLOGY
+		NO_BGP_ANNOUNCE OSPF_NEXTHOP ISIS_TOPOLOGY EXAMPLES
 # IRDP needs something freebsd does not seem to have:
 # configure: error: 'IRDP requires in_pktinfo at the moment!'
 OPTIONS_DEFAULT=	ISISD PIMD RTADV

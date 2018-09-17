@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net/nyancat/Makefile 423138 2016-10-02 17:30:13Z ehaupt $
+# $FreeBSD: head/net/nyancat/Makefile 479375 2018-09-10 08:58:46Z ehaupt $
 
 PORTNAME=	nyancat
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.2
 PORTEPOCH=	1
 CATEGORIES=	net games
 

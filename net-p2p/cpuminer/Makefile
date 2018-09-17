@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/net-p2p/cpuminer/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-p2p/cpuminer/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cpuminer
 PORTVERSION=	2.5.0
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libjansson.so:devel/jansson
 
-OPTIONS_DEFINE=	GCC
+OPTIONS_DEFINE=	GCC DOCS
 OPTIONS_DEFAULT=GCC
 
 USES=		autoreconf cpe

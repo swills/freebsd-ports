@@ -1,5 +1,5 @@
 # Created by: rox@fearme.com
-# $FreeBSD: head/irc/roxirc/Makefile 357654 2014-06-13 07:36:27Z olgeni $
+# $FreeBSD: head/irc/roxirc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	roxirc
 PORTVERSION=	2.0
@@ -15,6 +15,8 @@ NO_BUILD=	yes
 
 PLIST_FILES=	bin/roxirc
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's|if \[ -x .*|${WISH} "$$0" "$$@"|' ${WRKSRC}/roxirc

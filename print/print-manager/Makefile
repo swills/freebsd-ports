@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/print-manager/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/print/print-manager/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	print-manager
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,5 +16,7 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		windowsystem
 USE_QT=		core dbus gui network qml quick widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

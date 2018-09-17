@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-strings/Makefile 478396 2018-08-29 19:10:24Z sunpoet $
+# $FreeBSD: head/devel/rubygem-strings/Makefile 479558 2018-09-11 19:00:53Z sunpoet $
 
 PORTNAME=	strings
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-strings-ansi>=0.1.0:devel/rubygem-strings-ansi \
 		rubygem-unicode-display_width>=1.4.0:devel/rubygem-unicode-display_width \
 		rubygem-unicode_utils>=1.4.0:devel/rubygem-unicode_utils
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

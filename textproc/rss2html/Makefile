@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/textproc/rss2html/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/textproc/rss2html/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	rss2html
 PORTVERSION=	0.8.2
@@ -19,6 +19,8 @@ CFLAGS+=	"-I${LOCALBASE}/include" "-L${LOCALBASE}/lib"
 
 PLIST_FILES=	bin/rss2html man/man1/rss2html.1.gz
 PORTDOCS=	rss2html.links usage.example rss2html.template
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '16,20d' ${WRKSRC}/Makefile.acr

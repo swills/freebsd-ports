@@ -1,5 +1,5 @@
 # Created by: Robin Schilham
-# $FreeBSD: head/math/clp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/clp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	Clp
 PORTVERSION=	1.16.10
@@ -27,7 +27,7 @@ CONFIGURE_ARGS=	--with-lapack-lib="${LAPACKLIB} -L${LOCALBASE}/lib" \
 		--with-blas-lib="${BLASLIB} -L${LOCALBASE}/lib" \
 		--datadir=${DATADIR}
 
-OPTIONS_DEFINE=	DEBUG
+OPTIONS_DEFINE=	DEBUG DOCS
 PORTDOCS=	*
 
 DEBUG_CXXFLAGS=	-fomit-frame-pointer

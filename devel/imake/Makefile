@@ -1,9 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/devel/imake/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/devel/imake/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	imake
 PORTVERSION=	1.0.7
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel
 

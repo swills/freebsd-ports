@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rcracki_mt/Makefile 455165 2017-11-30 05:55:17Z linimon $
+# $FreeBSD: head/security/rcracki_mt/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	rcracki_mt
 PORTVERSION=	0.7.0
@@ -20,6 +20,8 @@ USES=		7z gmake ssl
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	ChangeLog.txt README.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} \

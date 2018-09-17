@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/bbfreeze/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/bbfreeze/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bbfreeze
 PORTVERSION=	1.1.3
@@ -21,6 +21,8 @@ USE_PYTHON=	autoplist distutils
 
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '/altgraph/s,==,>=,' ${WRKSRC}/${PYSETUP}

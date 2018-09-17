@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/databases/libpbl/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/databases/libpbl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libpbl
 PORTVERSION=	1.04.04
@@ -24,6 +24,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/src
 PLIST_FILES=	include/pbl.h \
 		lib/libpbl.a
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	@${REINPLACE_CMD} -e 's/=  -Wall -O3/+=  -Wall -Werror/' \

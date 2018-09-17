@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/xfs/Makefile 457117 2017-12-23 23:01:08Z zeising $
+# $FreeBSD: head/x11-fonts/xfs/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xfs
 PORTVERSION=	1.2.0
@@ -10,7 +10,7 @@ COMMENT=	X.Org font server
 
 XORG_CAT=	app
 USES=		gmake
-USE_XORG=	libfs xfont2 xtrans
+USE_XORG=	libfs xfont2 xorgproto xtrans
 USE_RC_SUBR=	xfs
 CONFIGURE_ARGS=	--without-xmlto --without-fop
 

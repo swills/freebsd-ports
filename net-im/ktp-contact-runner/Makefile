@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-contact-runner/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/ktp-contact-runner/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ktp-contact-runner
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,5 +15,7 @@ USE_KDE=	config coreaddons ecm i18n package plasma-framework runner \
 		service wallet
 USE_QT=		core dbus gui network widgets xml\
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

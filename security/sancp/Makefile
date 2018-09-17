@@ -1,5 +1,5 @@
 # Created by: Paul Schmehl <pauls@utdallas.edu>
-# $FreeBSD: head/security/sancp/Makefile 395960 2015-09-03 14:09:17Z amdmi3 $
+# $FreeBSD: head/security/sancp/Makefile 479234 2018-09-08 08:53:37Z tobik $
 
 PORTNAME=	sancp
 PORTVERSION=	1.6.1
@@ -16,6 +16,7 @@ LICENSE_NAME=	Q PUBLIC LICENSE v1.0
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
+USES=		compiler
 ALL_TARGET=	bsd
 USE_RC_SUBR=	sancp
 
@@ -27,7 +28,9 @@ OPTIONS_DEFINE=	DOCS
 PORTDOCS=	CHANGES INSTALL ISSUES \
 		README SETUP fields.LIST
 
-MAKE_ARGS=	CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" \
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
+MAKE_ARGS=	CFLAGS="${CXXFLAGS}" \
 		LFLAGS="${LDFLAGS}"
 SUB_FILES=	pkg-message
 

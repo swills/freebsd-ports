@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/erlang-p1_utils/Makefile 473622 2018-06-30 14:53:17Z farrokhi $
+# $FreeBSD: head/textproc/erlang-p1_utils/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	p1_utils
 PORTVERSION=	1.0.12
@@ -13,5 +13,7 @@ LICENSE=	APACHE20
 USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	processone
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

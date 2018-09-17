@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/databases/py-PyGreSQL/Makefile 475887 2018-07-30 12:41:36Z wen $
+# $FreeBSD: head/databases/py-PyGreSQL/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	PyGreSQL
 PORTVERSION=	5.0.6
@@ -18,6 +18,8 @@ USES=		pgsql python
 USE_PYTHON=	autoplist distutils
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/_pg.so

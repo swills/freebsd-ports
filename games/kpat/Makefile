@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kpat/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/games/kpat/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kpat
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,6 +16,8 @@ USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		textwidgets widgetsaddons xmlgui
 USE_QT=		core dbus gui network phonon4 qml quick svg widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <${.CURDIR}/../kdegames/Makefile.common>
 .include <bsd.port.mk>

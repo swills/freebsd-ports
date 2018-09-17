@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-bitvector/Makefile 465510 2018-03-25 10:09:47Z lwhsu $
+# $FreeBSD: head/math/py-bitvector/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bitvector
 PORTVERSION=	3.4.8
@@ -18,6 +18,8 @@ USE_PYTHON=	autoplist distutils
 PYDISTUTILS_PKGNAME=	BitVector
 
 PORTDOCS=	README BitVector-${PORTVERSION}.html
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	@${RM} ${WRKSRC}/test.py

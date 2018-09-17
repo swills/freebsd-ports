@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/tcl-sqlite3/Makefile 472411 2018-06-14 23:19:38Z swills $
+# $FreeBSD: head/databases/tcl-sqlite3/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	sqlite3
 PORTVERSION=	3.24.0
@@ -14,7 +14,7 @@ LICENSE=	PD
 
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3
 
-OPTIONS_DEFINE=	THREADS
+OPTIONS_DEFINE=	EXAMPLES THREADS
 OPTIONS_DEFAULT=	THREADS
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/tea

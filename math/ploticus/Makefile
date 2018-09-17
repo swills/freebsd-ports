@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/ploticus/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/math/ploticus/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	ploticus
 PORTVERSION=	2.40
@@ -38,6 +38,8 @@ PKGNAMESUFFIX=	-nox11
 .else
 USE_XORG=	xpm
 .endif
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/usr/X11R6,${LOCALBASE},g' \

@@ -1,5 +1,5 @@
 # Created by: Horst Leitenmueller <horst.leitenmueller@liwest.at>
-# $FreeBSD: head/mail/openemm2015/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/mail/openemm2015/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openemm2015
 PORTVERSION=	0
@@ -63,6 +63,8 @@ ANT=		${SETENV} JAVA_HOME=${JAVA_HOME} ${ANT_CMD}
 ANT_TARGETS=	build
 ANT_BUILD_PARAM=	-Dbuild=${WRKSRC}/target -Doe.home=${WRKSRC}/target -Dbin=${WRKSRC}/target/bin -Dcatalina.home=${TOMCATDIR} -Dsrc=${WRKSRC} -f openemm_build.xml
 JAVA_BUILD=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 do-extract:
 	@cd ${WRKDIR} && ${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${_DISTDIR}/${DISTNAME}.tar.gz ${EXTRACT_AFTER_ARGS}

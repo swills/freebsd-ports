@@ -1,9 +1,9 @@
 # Created by: Jean-Marc Zucconi <jmz@FreeBSD.org>
-# $FreeBSD: head/games/doom/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/games/doom/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	doom
 PORTVERSION=	1.10
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	IDSOFTWARE/source
 DISTNAME=	doomsrc

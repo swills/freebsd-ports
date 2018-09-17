@@ -1,5 +1,5 @@
 # Created by: adrianm
-# $FreeBSD: head/audio/libnjb/Makefile 422996 2016-09-30 16:04:11Z mat $
+# $FreeBSD: head/audio/libnjb/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libnjb
 PORTVERSION=	2.2.7
@@ -23,8 +23,9 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN DOCS
 
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_CONFIGURE_ENV_OFF=	ac_cv_prog_HAVE_DOXYGEN=no
 

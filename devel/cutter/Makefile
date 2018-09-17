@@ -1,5 +1,5 @@
 # Created by: Romain Tartiere <romain@FreeBSD.org>
-# $FreeBSD: head/devel/cutter/Makefile 464713 2018-03-16 17:06:24Z bdrewery $
+# $FreeBSD: head/devel/cutter/Makefile 479427 2018-09-10 14:40:53Z mat $
 
 PORTNAME=	cutter
 PORTVERSION=	1.2.6
@@ -28,7 +28,7 @@ USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
 
-OPTIONS_DEFINE=	GOFFICE SOUP LCOV
+OPTIONS_DEFINE=	GOFFICE SOUP LCOV NLS
 GOFFICE_DESC=	GOffice support
 SOUP_DESC=	libsoup support
 LCOV_DESC=	Force dependency on lcov

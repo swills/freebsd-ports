@@ -1,5 +1,5 @@
 # Created by: JunSeon Oh <hollywar@mail.holywar.net>
-# $FreeBSD: head/www/mod_fastcgi/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_fastcgi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_fastcgi
 PORTVERSION=	2.4.7
@@ -19,7 +19,9 @@ AP_GENPLIST=	yes
 SRC_FILE=	*.c
 PORTDOCS=	mod_fastcgi.html
 
-post-install:
+OPTIONS_DEFINE=	DOCS
+
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/docs/|} ${STAGEDIR}${DOCSDIR}
 

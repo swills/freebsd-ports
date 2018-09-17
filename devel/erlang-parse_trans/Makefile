@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-parse_trans/Makefile 474633 2018-07-14 09:24:59Z olgeni $
+# $FreeBSD: head/devel/erlang-parse_trans/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	parse_trans
 PORTVERSION=	3.3.0
@@ -14,7 +14,9 @@ GH_ACCOUNT=	uwiger
 
 ERL_DOCS=	doc/*
 
-post-install:
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 

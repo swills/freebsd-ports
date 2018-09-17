@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/nasawash/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/comms/nasawash/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	nasawash
 PORTVERSION=	0.50
@@ -16,6 +16,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}-${PORTVERSION}
 USES=		tar:tgz
 PLIST_FILES=	bin/nasawash
 PORTDOCS=	nasawash.txt nasawash.upd
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	${CC} ${CPPFLAGS} ${CFLAGS} -c -o ${WRKSRC}/nasawash.o ${WRKSRC}/nasawash.c

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/erlang-mochiweb/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/erlang-mochiweb/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	mochiweb
 PORTVERSION=	2.18.0
@@ -18,7 +18,9 @@ CPE_VENDOR=	mochiweb_project
 USE_GITHUB=	yes
 GH_ACCOUNT=	mochi
 
-post-install:
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}
 

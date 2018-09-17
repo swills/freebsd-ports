@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cctz/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/cctz/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cctz
 PORTVERSION=	2.1
@@ -28,6 +28,8 @@ PLIST_FILES=	include/cctz/civil_time.h \
 		lib/libcctz.a
 
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

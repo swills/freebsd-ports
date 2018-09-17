@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/nsgenbind/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/devel/nsgenbind/Makefile 479148 2018-09-06 19:28:55Z swills $
 
 PORTNAME=	nsgenbind
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	devel
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -21,7 +21,6 @@ WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 MAKE_ENV+=	COMPONENT_TYPE="lib-shared" \
 		FLEX="${LOCALBASE}/bin/flex"
 PLIST_FILES=	bin/nsgenbind
-MAKE_JOBS_UNSAFE=	yes
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/*

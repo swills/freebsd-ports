@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/hidapi/Makefile 398996 2015-10-10 14:03:00Z tijl $
+# $FreeBSD: head/comms/hidapi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hidapi
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -23,6 +23,8 @@ PORTDOCS=	*
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
+
+OPTIONS_DEFINE=	DOCS
 
 pre-configure:
 	@${CP} ${LOCALBASE}/share/gettext/config.rpath ${WRKSRC}

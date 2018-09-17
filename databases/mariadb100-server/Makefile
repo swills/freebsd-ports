@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb100-server/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/databases/mariadb100-server/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.0.36
@@ -73,7 +73,7 @@ CONFLICTS_INSTALL=	mariadb5*-${PKGNAMESUFFIX:C/^[0-9]*-//}-* \
 
 .if !defined(CLIENT_ONLY)
 # MySQL-Server options
-OPTIONS_DEFINE+=	CONNECT_EXTRA MAXKEY
+OPTIONS_DEFINE+=	CONNECT_EXTRA MAXKEY DOCS
 OPTIONS_DEFAULT+=	MAXKEY
 OPTIONS_GROUP=		ENGINES
 OPTIONS_GROUP_ENGINES=	INNOBASE MROONGA OQGRAPH SPHINX SPIDER TOKUDB
@@ -123,6 +123,7 @@ OQGRAPH_LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 TOKUDB_LIB_DEPENDS=	libsnappy.so:archivers/snappy
 TOKUDB_PORTDOCS=	PATENTS README.md
 TOKUDB_VARS=		LICENSE+=PerconaFT LICENSE_COMB=multi
+TOKUDB_IMPLIES=		DOCS
 
 post-install:
 	# Remove programs to avoid conflict with mariadb100-client

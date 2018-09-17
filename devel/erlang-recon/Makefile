@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-recon/Makefile 474107 2018-07-07 16:46:22Z olgeni $
+# $FreeBSD: head/devel/erlang-recon/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	recon
 PORTVERSION=	2.3.6
@@ -16,6 +16,8 @@ GH_ACCOUNT=	ferd
 
 ERL_DOCS=	README.md doc/*
 REBAR_TARGETS=	compile doc
+
+OPTIONS_DEFINE=	DOCS
 
 post-build:
 	@${RM} ${WRKSRC}/doc/packages-frame.html

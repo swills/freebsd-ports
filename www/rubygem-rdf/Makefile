@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rdf/Makefile 465311 2018-03-22 19:53:42Z sunpoet $
+# $FreeBSD: head/www/rubygem-rdf/Makefile 479563 2018-09-11 19:01:20Z sunpoet $
 
 PORTNAME=	rdf
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -17,6 +17,7 @@ RUN_DEPENDS=	rubygem-hamster>=3.0:devel/rubygem-hamster \
 
 USES=		gem
 USE_RUBY=	yes
+
 NO_ARCH=	yes
 
 PLIST_FILES=	bin/rdf

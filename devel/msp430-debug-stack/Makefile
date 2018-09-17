@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/msp430-debug-stack/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/msp430-debug-stack/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	msp430-debug-stack
 PORTVERSION=	3.12.000.004
@@ -35,6 +35,8 @@ MAKE_JOBS_UNSAFE=	yes
 SUB_FILES+=	pkg-message
 
 REINPLACE_ARGS=	-i ""
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${FIND} ${WRKSRC}/DLL430_v3/src/TI/DLL430 \

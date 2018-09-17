@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kolf/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/games/kolf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kolf
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,6 +18,8 @@ USE_QT=		core dbus gui network phonon4 printsupport qml quick \
 		buildtools_build qmake_build
 
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <${.CURDIR}/../kdegames/Makefile.common>
 .include <bsd.port.mk>

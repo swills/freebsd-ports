@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kpkpass/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/security/kpkpass/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kpkpass
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,5 +13,7 @@ USE_QT=		core gui testlib \
 		buildtools_build qmake_build
 
 DESCR=		${.CURDIR:H:H}/deskutils/kdepim/pkg-descr
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

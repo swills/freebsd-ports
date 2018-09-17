@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-desktop/Makefile 478199 2018-08-27 12:27:27Z ericbsd $
+# $FreeBSD: head/x11/mate-desktop/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mate-desktop
 PORTVERSION=	1.20.3
@@ -48,5 +48,7 @@ GLIB_SCHEMAS=	org.mate.accessibility-keyboard.gschema.xml \
 		org.mate.thumbnailers.gschema.xml \
 		org.mate.typing-break.gschema.xml \
 		org.mate.debug.gschema.xml
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

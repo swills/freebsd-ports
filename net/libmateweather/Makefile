@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net/libmateweather/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/net/libmateweather/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libmateweather
 PORTVERSION=	1.20.0
@@ -25,5 +25,7 @@ INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.weather.gschema.xml
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/highlight/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/textproc/highlight/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	highlight
 PORTVERSION=	3.43
@@ -24,6 +24,8 @@ MAKE_ARGS=	CXX="${CXX}" \
 		LDFLAGS="${LDFLAGS}"
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} \

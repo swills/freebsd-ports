@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/icc-profiles-adobe-cs4/Makefile 459383 2018-01-18 22:13:05Z bsam $
+# $FreeBSD: head/graphics/icc-profiles-adobe-cs4/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	icc-profiles-adobe-cs4
 PORTVERSION=	1
@@ -20,6 +20,8 @@ NO_ARCH=	yes
 
 SYSCOLORDIR=	share/color
 PLIST_SUB=	SYSCOLORDIR=${SYSCOLORDIR}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

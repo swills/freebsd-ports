@@ -1,5 +1,5 @@
 # Created by: John Merryweather Cooper
-# $FreeBSD: head/lang/fpc-docs/Makefile 460558 2018-02-01 07:14:41Z acm $
+# $FreeBSD: head/lang/fpc-docs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	docs
 PORTVERSION=	3.0.4
@@ -20,6 +20,8 @@ DOCSDIR=	${PREFIX}/share/doc/fpdocs-${PORTVERSION}
 PORTDOCS=	chart.pdf fcl.pdf fclres.pdf fpdoc.pdf prog.pdf ref.pdf \
 		rtl.pdf user.pdf
 SUB_FILES=	pkg-message
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

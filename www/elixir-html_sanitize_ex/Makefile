@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-html_sanitize_ex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/www/elixir-html_sanitize_ex/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	html_sanitize_ex
 PORTVERSION=	1.3.0
@@ -18,5 +18,7 @@ GH_ACCOUNT=	rrrene
 MIX_BUILD_DEPS=	www/erlang-mochiweb
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

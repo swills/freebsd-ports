@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Lint/Makefile 478184 2018-08-27 09:08:11Z amdmi3 $
+# $FreeBSD: head/www/p5-HTML-Lint/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	HTML-Lint
 PORTVERSION=	2.20
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PETDANCE
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	HTML::Lint - check for HTML errors in a string or file
 
 LICENSE=	ART20

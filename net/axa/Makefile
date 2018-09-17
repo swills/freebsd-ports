@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/axa/Makefile 477243 2018-08-15 17:30:38Z truckman $
+# $FreeBSD: head/net/axa/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	axa
 PORTVERSION=	2.0.1
@@ -32,13 +32,14 @@ SHEBANG_FILES=	cert_tools/axa_link_certs.in
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_DEFINE=	DOCS DOXYGEN
 OPTIONS_DEFAULT=DOXYGEN
 
 ALL_TARGET=	all
 INSTALL_TARGET=	install-strip
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_ALL_TARGET=	html-local
+DOXYGEN_IMPLIES=	DOCS
 
 LDFLAGS+=	-lm
 

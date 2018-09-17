@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/urxvt-perls/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/urxvt-perls/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	urxvt-perls
 PORTVERSION=	2.0
@@ -20,6 +20,8 @@ PORTDOCS=	README
 INSTDIR_REL=	lib/urxvt/perl
 SCRIPTS=	clipboard keyboard-select url-select
 PLIST_FILES+=	${SCRIPTS:C/^/${INSTDIR_REL}\//}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${INSTDIR_REL}

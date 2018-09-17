@@ -1,5 +1,5 @@
 # Created by: Frank W. Josellis <frank@dynamical-systems.org>
-# $FreeBSD: head/net/siproxd/Makefile 415083 2016-05-12 19:04:52Z pi $
+# $FreeBSD: head/net/siproxd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	siproxd
 PORTVERSION=	0.8.2
@@ -24,6 +24,8 @@ PORTDOCS1=	AUTHORS ChangeLog README RELNOTES
 PORTDOCS2=	FAQ KNOWN_BUGS RFC3261_compliance.txt \
 		sample_cfg_budgetone.txt sample_cfg_x-lite.txt
 PORTDOCS=	${PORTDOCS1} ${PORTDOCS2}
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 .for docs in ${PORTDOCS2}

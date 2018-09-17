@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/pcsxr/Makefile 479017 2018-09-05 10:05:29Z martymac $
+# $FreeBSD: head/emulators/pcsxr/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	pcsxr
 PORTVERSION=	1.9.95.20180604
@@ -51,7 +51,7 @@ DEFAULT_DVD_DEVICE?=	/dev/cd0
 
 # XXX Gettext support is mandatory and cannot really be disabled.
 # The following option only enables/disables building *additional* translations
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	NLS DOCS
 OPTIONS_SUB=	yes
 NLS_DESC=	Build additional NLS translations
 NLS_CMAKE_ON=	-DDISABLE_NLS_TRANSLATIONS:BOOL=OFF

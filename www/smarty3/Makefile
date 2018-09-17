@@ -1,9 +1,9 @@
 # Created by: Michael Fausten <ports@michael-fausten.de>
-# $FreeBSD: head/www/smarty3/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/smarty3/Makefile 479251 2018-09-08 12:53:21Z wen $
 
 PORTNAME=	smarty
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.1.30
+DISTVERSION=	3.1.32
 CATEGORIES=	www
 PKGNAMESUFFIX=	3${PHP_PKGNAMESUFFIX}
 

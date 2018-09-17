@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kmix/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/kmix/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kmix
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -22,7 +22,7 @@ USE_QT=		core dbus gui widgets xml \
 # we want the KF5 version of kmix
 CMAKE_ARGS=	-DKMIX_KF5_BUILD:BOOL=TRUE
 
-OPTIONS_DEFINE=	PULSEAUDIO
+OPTIONS_DEFINE=	PULSEAUDIO DOCS
 # TODO: readd ALSA option
 #
 # ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib

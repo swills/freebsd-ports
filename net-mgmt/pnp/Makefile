@@ -1,5 +1,5 @@
 # Created by: rea-fbsd@codelabs.ru
-# $FreeBSD: head/net-mgmt/pnp/Makefile 448595 2017-08-23 10:46:51Z lme $
+# $FreeBSD: head/net-mgmt/pnp/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pnp
 PORTVERSION=	0.6.26
@@ -19,7 +19,7 @@ RUN_DEPENDS?=	${LOCALBASE}/bin/rrdtool:databases/rrdtool \
 MAKE_JOBS_UNSAFE=	yes
 USES=		dos2unix perl5 php php:web
 
-OPTIONS_DEFINE=	PDF
+OPTIONS_DEFINE=	PDF EXAMPLES
 OPTIONS_DEFAULT=	PDF
 PDF_DESC=	Use built-in fpdf library to produce PDF views
 

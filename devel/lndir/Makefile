@@ -1,9 +1,9 @@
 # Created by: Carlos A M dos Santos <unixmania@gmail.com>
-# $FreeBSD: head/devel/lndir/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/devel/lndir/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	lndir
 PORTVERSION=	1.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	unixmania@gmail.com

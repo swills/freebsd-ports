@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/husky-fidoconf/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/husky-fidoconf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	husky-fidoconf
 
@@ -19,6 +19,8 @@ USES+=		makeinfo
 PORTDOCS=	fidoconfig.html
 DOCSDIR=	${PREFIX}/share/doc/husky
 INFO=		fidoconfig
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e 's^/path/to/config^${PREFIX}/etc/fido/config^' \

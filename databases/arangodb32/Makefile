@@ -1,5 +1,5 @@
 # Created by: Vlad Galu <galu@packetdam.com>
-# $FreeBSD: head/databases/arangodb32/Makefile 472080 2018-06-09 18:41:46Z riggs $
+# $FreeBSD: head/databases/arangodb32/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	arangodb
 DISTVERSIONPREFIX=	v
@@ -27,6 +27,8 @@ CMAKE_ARGS=	-DUSE_JEMALLOC:BOOL=off \
 USERS=		arangodb
 GROUPS=		arangodb
 USE_RC_SUBR=	arangod
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

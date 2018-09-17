@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/net-mgmt/p5-Monitoring-Plugin/Makefile 475994 2018-07-31 12:13:08Z mat $
+# $FreeBSD: head/net-mgmt/p5-Monitoring-Plugin/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	Monitoring-Plugin
 PORTVERSION=	0.40
@@ -24,6 +24,8 @@ USES=		perl5
 USE_PERL5=	configure
 
 PORTDOCS=	Changes README
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

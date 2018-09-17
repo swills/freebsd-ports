@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/ksirk/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/games/ksirk/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ksirk
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,6 +16,8 @@ USE_KDE=	attica auth codecs completion config configwidgets \
 USE_QT=		core dbus gui network phonon4 qml quick svg widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <${.CURDIR}/../kdegames/Makefile.common>
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gb/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/devel/gb/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gb
 PORTVERSION=	0.4.4
@@ -18,6 +18,8 @@ GH_TUPLE=	pkg:errors:645ef00:errors/../src/github.com/pkg/errors
 PLIST_FILES=	bin/gb bin/gb-vendor
 
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 GO_TARGET=	./...

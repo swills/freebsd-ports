@@ -1,5 +1,5 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/lang/racket/Makefile 475917 2018-07-30 22:20:32Z olgeni $
+# $FreeBSD: head/lang/racket/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	racket
 PORTVERSION=	7.0
@@ -44,7 +44,7 @@ USE_LDCONFIG=	yes
 REINPLACE_ARGS=	-i ""
 USE_GNOME=	cairo pango
 
-OPTIONS_DEFINE=	FUTURES
+OPTIONS_DEFINE=	DOCS FUTURES
 OPTIONS_DEFAULT=FUTURES
 
 OPTIONS_DEFINE_amd64=	JIT

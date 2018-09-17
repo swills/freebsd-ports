@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/lang/cint/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/cint/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cint
 PORTVERSION=	5.18.00
@@ -30,6 +30,8 @@ INSTALL_ARGS=	--bindir=${STAGEDIR}${PREFIX}/bin\
 		--libdir=${STAGEDIR}${PREFIX}/lib/cint\
 		--mandir=${STAGEDIR}${PREFIX}/man\
 		--docdir=${STAGEDIR}${DOCSDIR}
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} 's,#!/bin/bash,#!${LOCALBASE}/bin/bash,' ${WRKSRC}/cint/lib/dll_stl/setup

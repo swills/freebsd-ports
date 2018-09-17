@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 475955 2018-07-31 00:05:13Z sunpoet $
+# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 479560 2018-09-11 19:01:04Z sunpoet $
 
 PORTNAME=	bootsnap
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-msgpack1>=1.0:devel/rubygem-msgpack1
 
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
 
 SHEBANG_FILES=	bin/*
 

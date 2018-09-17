@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/speex/Makefile 474429 2018-07-11 09:07:40Z amdmi3 $
+# $FreeBSD: head/audio/speex/Makefile 479478 2018-09-10 20:28:43Z sunpoet $
 
 PORTNAME=	speex
 DISTVERSION=	1.2.0

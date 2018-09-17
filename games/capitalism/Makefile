@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/capitalism/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/capitalism/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	capitalism
 PORTVERSION=	0.5.1
@@ -36,7 +36,7 @@ ICON_SIZES=	16x16 22x22 24x24 32x32 48x48 64x64
 DESKTOP_ENTRIES="Capitalism" "" "${PORTNAME}" \
 		"${PORTNAME}" "Game;BoardGame;" ""
 
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	NLS DOCS
 OPTIONS_SUB=	yes
 
 NLS_CONFIGURE_ENABLE=	nls

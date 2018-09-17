@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-lager_syslog/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-lager_syslog/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lager_syslog
 PORTVERSION=	3.0.3
@@ -17,5 +17,7 @@ GH_ACCOUNT=	basho
 ERL_BUILD_DEPS=	devel/erlang-lager \
 		devel/erlang-syslog
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

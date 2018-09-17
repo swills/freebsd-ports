@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/erlang-couchbeam/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/databases/erlang-couchbeam/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	couchbeam
 PORTVERSION=	1.4.2
@@ -17,5 +17,7 @@ GH_ACCOUNT=	benoitc
 ERL_BUILD_DEPS=	devel/erlang-jsx \
 		www/erlang-hackney
 ERL_RUN_DEPS:=  ${ERL_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

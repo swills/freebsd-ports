@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/skytools/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/skytools/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	skytools
 PORTVERSION=	3.2
@@ -25,6 +25,8 @@ SHEBANG_FILES=	setup_pkgloader.py setup_skytools.py \
 CONFIGURE_ARGS=	--with-python=${PYTHON_CMD} \
 		--docdir=${EXAMPLESDIR} \
 		--with-pgconfig=${LOCALBASE}/bin/pg_config
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e 's=share/doc=share/examples=' ${WRKSRC}/setup_skytools.py

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gwenview/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/graphics/gwenview/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gwenview
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -24,5 +24,7 @@ USE_QT=		concurrent core dbus gui network opengl phonon4 printsupport \
 		svg widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	x11
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

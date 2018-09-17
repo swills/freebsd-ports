@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/erlang-base64url/Makefile 430690 2017-01-06 05:49:11Z vanilla $
+# $FreeBSD: head/converters/erlang-base64url/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	base64url
 PORTVERSION=	1.0
@@ -14,5 +14,7 @@ LICENSE=	MIT
 USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	dvv
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

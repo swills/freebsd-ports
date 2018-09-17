@@ -1,5 +1,5 @@
 # Created by: David Shane Holden <dpejesh@yahoo.com>
-# $FreeBSD: head/devel/libqb/Makefile 469866 2018-05-14 09:04:36Z vanilla $
+# $FreeBSD: head/devel/libqb/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=		libqb
 PORTVERSION=		1.0.3
@@ -31,9 +31,10 @@ PATHFIX_MAKEFILEIN=	Makefile.am
 INSTALL_TARGET=		install-strip
 TEST_TARGET=		check
 
-OPTIONS_DEFINE=		DOXYGEN
+OPTIONS_DEFINE=		DOCS DOXYGEN
 OPTIONS_SUB=		yes
 
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 post-install:

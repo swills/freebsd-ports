@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/tw_cli/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/sysutils/tw_cli/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tw_cli
 PORTVERSION=	9.5.5
@@ -28,6 +28,8 @@ SUB_FILES=	407.status-3ware-raid
 PORTDOCS=	tw_cli.8.html
 PLIST_FILES=	etc/periodic/daily/407.status-3ware-raid\
 		man/man8/tw_cli.8.gz sbin/tw_cli
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${ARCH:S,i386,x86,:S,amd64,x86_64,}/tw_cli\

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-coverex/Makefile 445420 2017-07-10 08:54:58Z vanilla $
+# $FreeBSD: head/devel/elixir-coverex/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	coverex
 PORTVERSION=	1.4.15
@@ -17,5 +17,7 @@ MIX_BUILD_DEPS=	devel/elixir-poison \
 USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	alfert
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

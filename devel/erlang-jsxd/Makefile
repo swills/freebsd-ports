@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-jsxd/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-jsxd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jsxd
 PORTVERSION=	0.2.4
@@ -13,5 +13,7 @@ LICENSE=	CDDL
 USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	Licenser
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

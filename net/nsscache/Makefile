@@ -1,9 +1,8 @@
 # Created by: Kevin Bowling <k@kev009.com>
-# $FreeBSD: head/net/nsscache/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
+# $FreeBSD: head/net/nsscache/Makefile 479673 2018-09-13 12:51:24Z kbowling $
 
 PORTNAME=	nsscache
-PORTVERSION=	0.32
-PORTREVISION=	1
+PORTVERSION=	0.36
 DISTVERSIONPREFIX=	version/
 CATEGORIES=	net python
 

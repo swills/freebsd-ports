@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/juk/Makefile 474596 2018-07-13 17:41:56Z tcberner $
+# $FreeBSD: head/audio/juk/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	juk
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,5 +18,7 @@ USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		wallet widgetsaddons windowsystem xmlgui
 USE_QT=		core dbus gui network phonon4 svg widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

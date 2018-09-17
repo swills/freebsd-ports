@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/frogatto/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/frogatto/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	frogatto
 PORTVERSION=	1.3.1
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	games
 
 MAINTAINER=	fiziologus@gmail.com

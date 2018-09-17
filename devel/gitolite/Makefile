@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gitolite/Makefile 474495 2018-07-12 08:42:35Z mat $
+# $FreeBSD: head/devel/gitolite/Makefile 479385 2018-09-10 10:29:13Z mat $
 
 PORTNAME=	gitolite
 DISTVERSIONPREFIX=v
-DISTVERSION=	3.6.8
+DISTVERSION=	3.6.9
 PORTEPOCH=	1
 CATEGORIES=	devel
 

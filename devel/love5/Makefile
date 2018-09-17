@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/love5/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/love5/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	love
 DISTVERSION=	0.5-0
-PORTREVISION=	24
+PORTREVISION=	25
 CATEGORIES=	devel games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${DISTVERSION}
 PKGNAMESUFFIX=	5

@@ -1,5 +1,5 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/dns/drool/Makefile 462224 2018-02-18 12:54:21Z wen $
+# $FreeBSD: head/dns/drool/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	drool
 DISTVERSION=	1.1.0
@@ -19,5 +19,7 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CPPFLAGS+=	$$(pkg-config libev --cflags-only-I)
 LDFLAGS+=	$$(pkg-config libev --libs-only-L)
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

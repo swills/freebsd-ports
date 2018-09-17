@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/audio/py-soundcloud/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-soundcloud/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	soundcloud
 PORTVERSION=	0.5.0
@@ -20,6 +20,8 @@ USE_PYTHON=	autoplist distutils
 
 PORTDOCS=	README.rst
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

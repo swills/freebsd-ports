@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/erlang-edown/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/textproc/erlang-edown/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	edown
 PORTVERSION=	0.8.1
@@ -13,5 +13,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	uwiger
 
 ERL_DOCS=	doc/*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

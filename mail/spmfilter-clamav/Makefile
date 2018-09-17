@@ -1,5 +1,5 @@
 # Created by: Axel Steiner <ast@treibsand.com>
-# $FreeBSD: head/mail/spmfilter-clamav/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/mail/spmfilter-clamav/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	spmfilter-clamav
 PORTVERSION=	0.2.3
@@ -19,7 +19,7 @@ CMAKE_ARGS+=	--no-warn-unused-cli \
 
 USE_LDCONFIG=	${PREFIX}/lib/spmfilter
 
-OPTIONS_DEFINE=	DEBUG
+OPTIONS_DEFINE=	DEBUG DOCS
 
 DEBUG_CMAKE_ON=	-DENABLE_DEBUG=TRUE
 

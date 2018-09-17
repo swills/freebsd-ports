@@ -1,12 +1,12 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/www/rubygem-sinatra/Makefile 476138 2018-07-31 23:56:15Z sunpoet $
+# $FreeBSD: head/www/rubygem-sinatra/Makefile 479907 2018-09-16 23:25:41Z sunpoet $
 
 PORTNAME=	sinatra
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Classy web development framework in ruby
 
 LICENSE=	MIT
@@ -17,8 +17,9 @@ RUN_DEPENDS=	rubygem-mustermann>=1.0:devel/rubygem-mustermann \
 		rubygem-rack-protection>=${PORTVERSION}:www/rubygem-rack-protection \
 		rubygem-tilt>=2.0:devel/rubygem-tilt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

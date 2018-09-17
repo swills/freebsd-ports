@@ -1,5 +1,5 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
-# $FreeBSD: head/japanese/ddskk/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/japanese/ddskk/Makefile 479924 2018-09-17 11:22:26Z rene $
 
 PORTNAME=	ddskk
 DISTVERSION=	16.2
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.ring.gr.jp/pub/elisp/skk/maintrunk/ \
 		http://openlab.ring.gr.jp/skk/maintrunk/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	kenji@k2r.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple Kana to Kanji conversion program on Emacsen
 
 LICENSE=	GPLv2+

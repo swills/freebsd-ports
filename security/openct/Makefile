@@ -1,5 +1,5 @@
 # Created by: Janos Mohacsi <janos.mohacsi@bsd.hu>
-# $FreeBSD: head/security/openct/Makefile 438157 2017-04-10 12:14:50Z ale $
+# $FreeBSD: head/security/openct/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	openct
 PORTVERSION=	0.6.20
@@ -14,7 +14,7 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl
 
-OPTIONS_DEFINE=	PCSC DOCS
+OPTIONS_DEFINE=	PCSC DOCS EXAMPLES
 PCSC_DESC=	Enable PC/SC support
 
 GNU_CONFIGURE=	yes

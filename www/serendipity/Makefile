@@ -1,8 +1,8 @@
 # Created by: babak@farrokhi.net
-# $FreeBSD: head/www/serendipity/Makefile 469898 2018-05-14 15:10:06Z joneum $
+# $FreeBSD: head/www/serendipity/Makefile 479392 2018-09-10 11:22:55Z joneum $
 
 PORTNAME=	serendipity
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.3
 CATEGORIES=	www
 MASTER_SITES=	SF/php-blog/${PORTNAME}/${PORTVERSION}
 

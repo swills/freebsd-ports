@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-apex/Makefile 476596 2018-08-07 13:49:16Z olgeni $
+# $FreeBSD: head/devel/elixir-apex/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	apex
 PORTVERSION=	1.2.1
@@ -17,5 +17,7 @@ GH_ACCOUNT=	BjRo
 
 MIX_REWRITE=	yes
 MIX_BUILD_NAME=	shared
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

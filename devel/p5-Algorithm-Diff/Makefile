@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/devel/p5-Algorithm-Diff/Makefile 463780 2018-03-07 09:03:07Z amdmi3 $
+# $FreeBSD: head/devel/p5-Algorithm-Diff/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Algorithm-Diff
 PORTVERSION=	1.1903
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to compute differences between two objects
 
 LICENSE=	ART10 GPLv1+

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Data-Validate-Domain/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-Data-Validate-Domain/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Data-Validate-Domain
 PORTVERSION=	0.10
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:NEELY
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Data::Validate::Domain - domain validation methods
 
 BUILD_DEPENDS=	p5-Net-Domain-TLD>=0:dns/p5-Net-Domain-TLD

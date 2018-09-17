@@ -1,5 +1,5 @@
 # Created by: mjhsieh
-# $FreeBSD: head/www/hypermail/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/hypermail/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hypermail
 PORTVERSION=	2.3.0
@@ -23,6 +23,8 @@ CONFIGURE_ARGS=	--with-htmldir=${STAGEDIR}${PREFIX}/share/doc/hypermail \
 
 CFLAGS+=	-L${LOCALBASE}/lib
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}/${PREFIX}/bin/hypermail \

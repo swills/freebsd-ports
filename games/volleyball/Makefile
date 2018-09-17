@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/volleyball/Makefile 413184 2016-04-13 10:36:15Z jbeich $
+# $FreeBSD: head/games/volleyball/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	volleyball
 PORTVERSION=	0.8.6
@@ -33,6 +33,8 @@ DESKTOP_ENTRIES="Pocket Volleyball" \
 		"volleyball" \
 		"Game;SportsGame;ArcadeGame;" \
 		false
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} '/libintl\.h/d' ${WRKSRC}/src/common.h

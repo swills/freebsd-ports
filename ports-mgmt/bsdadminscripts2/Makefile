@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/bsdadminscripts2/Makefile 450473 2017-09-23 21:11:51Z adamw $
+# $FreeBSD: head/ports-mgmt/bsdadminscripts2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bsdadminscripts2
 DISTVERSION=	0.2.0
@@ -18,6 +18,8 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 
 CONFLICTS_INSTALL=	bsdadminscripts
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@cd ${WRKSRC} && ${SH} install.sh \

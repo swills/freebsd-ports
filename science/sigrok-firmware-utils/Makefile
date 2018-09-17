@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-firmware-utils/Makefile 461062 2018-02-06 15:17:45Z amdmi3 $
+# $FreeBSD: head/science/sigrok-firmware-utils/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	firmware
 PORTVERSION=	20140418
@@ -31,6 +31,8 @@ EX_FILES=	sigrok-fwextract-hantek-dso \
 PLIST_FILES=	${PY_FILES:S,^,bin/,} \
 		${EX_FILES:S,^,bin/,} \
 		${EX_FILES:S,^,man/man1/,:S,$,.1.gz,}
+
+OPTIONS_DEFINE=	DOCS
 
 do-extract:
 	@${MKDIR} ${WRKSRC}

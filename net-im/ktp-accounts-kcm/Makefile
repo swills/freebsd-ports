@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ktp-accounts-kcm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -27,7 +27,7 @@ USE_QT=		core dbus gui network qml sql widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 
-OPTIONS_DEFINE=	HAZE IRC JABBER SALUT
+OPTIONS_DEFINE=	HAZE IRC JABBER SALUT DOCS
 OPTIONS_DEFAULT=JABBER
 
 HAZE_DESC=	libpurple protocols support

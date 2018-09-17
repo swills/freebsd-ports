@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/deskutils/nautilus-actions/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/nautilus-actions/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	nautilus-actions
 PORTVERSION=	3.2.4
@@ -31,6 +31,8 @@ INSTALL_TARGET=	install-strip
 PORTDOCS=	AUTHORS ChangeLog ChangeLog-2008 ChangeLog-2009 ChangeLog-2010 \
 		ChangeLog-2011 ChangeLog-2012 COPYING COPYING-DOCS INSTALL \
 		MAINTAINERS NEWS README README-GCONF TODO
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

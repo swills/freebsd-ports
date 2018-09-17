@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/averiagwf/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/x11-fonts/averiagwf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	averiagwf
 PORTVERSION=	1.00
@@ -18,6 +18,8 @@ NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 
 PORTDOCS=	FONTLOG.txt
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${FONTSDIR}

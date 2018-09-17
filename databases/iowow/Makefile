@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/databases/iowow/Makefile 476514 2018-08-06 15:32:42Z danfe $
+# $FreeBSD: head/databases/iowow/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	iowow
 PORTVERSION=	1.2.13
@@ -17,5 +17,7 @@ GH_ACCOUNT=	Softmotions
 USE_LDCONFIG=	yes
 
 PORTDOCS=	Changelog README
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

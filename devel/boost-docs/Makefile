@@ -1,5 +1,5 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-docs/Makefile 343213 2014-02-07 11:43:02Z bapt $
+# $FreeBSD: head/devel/boost-docs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	boost-docs
 COMMENT=	Documentation for libraries from boost.org
@@ -8,6 +8,8 @@ DOCSDIR=	${PREFIX}/share/doc/boost
 UNIQ=		/usr/bin/uniq
 
 NO_BUILD=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include "${.CURDIR}/..//boost-all/common.mk"
 

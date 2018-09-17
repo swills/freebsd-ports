@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl-devel/Makefile 477158 2018-08-14 14:25:18Z brnrd $
+# $FreeBSD: head/security/openssl-devel/Makefile 479595 2018-09-12 11:36:17Z brnrd $
 
 PORTNAME=	openssl
 PORTVERSION=	1.1.0i
@@ -16,7 +16,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFLICTS_INSTALL=	libressl-[0-9]* \
 			libressl-devel-[0-9]* \
-			openssl-[0-9]*
+			openssl-[0-9]* \
+			openssl111-[0-9]*
+
+DEPRECATED=		Upstream support ends 2019-09-11
+EXPIRATION_DATE=	2019-09-11
 
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	config

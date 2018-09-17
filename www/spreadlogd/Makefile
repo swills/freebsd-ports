@@ -1,5 +1,5 @@
 # Created by: Meno Abels <meno.abels@adviser.com>
-# $FreeBSD: head/www/spreadlogd/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/spreadlogd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	spreadlogd
 PORTVERSION=	1.4.2
@@ -20,6 +20,8 @@ USE_RC_SUBR=	spreadlogd
 PLIST_FILES=	sbin/spreadlogd etc/spreadlogd.conf.sample
 
 PORTDOCS=	README
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/etc|${PREFIX}/etc|' ${WRKSRC}/spreadlogd.c

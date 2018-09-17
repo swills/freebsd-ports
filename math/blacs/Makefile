@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/blacs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/blacs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	blacs
 PORTVERSION=	1.7
@@ -17,6 +17,8 @@ COMMENT=	The BLACS (Basic Linear Algebra Communication Subprograms)
 SUB_FILES=	pkg-message
 USES=		fortran gmake
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

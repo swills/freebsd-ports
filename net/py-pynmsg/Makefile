@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-pynmsg/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-pynmsg/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pynmsg
 PORTVERSION=	0.4.0
@@ -22,6 +22,8 @@ SHEBANG_FILES=	examples/*.py
 PORTEXAMPLES=	*
 
 CPPFLAGS+=	-I${LOCALBASE}/include
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_nmsg.so

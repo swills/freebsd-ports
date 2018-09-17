@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fm/rox-filer/Makefile 478429 2018-08-30 04:05:07Z danfe $
+# $FreeBSD: head/x11-fm/rox-filer/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	rox-filer
 PORTVERSION=	2.11
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	SF/rox/rox/${PORTVERSION}
 

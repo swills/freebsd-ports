@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/noto-lite/Makefile 465386 2018-03-23 17:03:08Z tobik $
+# $FreeBSD: head/x11-fonts/noto-lite/Makefile 479701 2018-09-13 21:52:38Z sunpoet $
 
 PORTNAME=	noto
 PORTVERSION=	1.0.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://noto-website.storage.googleapis.com/pkgs/ \
 		https://github.com/googlei18n/noto-emoji/raw/master/:emoji
@@ -23,7 +23,7 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 
-LIST=	NotoEmoji-Regular.ttf NotoSans-Bold.ttf NotoSans-BoldItalic.ttf NotoSans-Italic.ttf NotoSans-Regular.ttf NotoSansLinearB-Regular.ttf NotoSansSymbols-Regular.ttf NotoSerif-Bold.ttf NotoSerif-BoldItalic.ttf NotoSerif-Italic.ttf NotoSerif-Regular.ttf
+LIST=		NotoEmoji-Regular.ttf NotoMono-Regular.ttf NotoSans-Bold.ttf NotoSans-BoldItalic.ttf NotoSans-Italic.ttf NotoSans-Regular.ttf NotoSansLinearB-Regular.ttf NotoSansSymbols-Regular.ttf NotoSerif-Bold.ttf NotoSerif-BoldItalic.ttf NotoSerif-Italic.ttf NotoSerif-Regular.ttf
 
 .for f in ${LIST}
 PLIST_FILES+=	${FONTSDIR}/${f}

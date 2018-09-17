@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net/ldapscripts/Makefile 459919 2018-01-25 11:07:50Z martymac $
+# $FreeBSD: head/net/ldapscripts/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ldapscripts
 PORTVERSION=	2.0.8
@@ -21,7 +21,7 @@ RUN_DEPENDS=	ldapadd:net/openldap${OPENLDAP_VER}${OPENLDAP_FLAVOUR}-client \
 
 NO_ARCH=	yes
 
-OPTIONS_DEFINE=	SASL
+OPTIONS_DEFINE=	SASL DOCS
 SASL_VARS=	OPENLDAP_FLAVOUR=-sasl WANT_OPENLDAP_SASL=yes
 
 USES=		iconv tar:tgz

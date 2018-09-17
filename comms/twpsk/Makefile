@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/twpsk/Makefile 449646 2017-09-11 14:09:56Z db $
+# $FreeBSD: head/comms/twpsk/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	twpsk
 PORTVERSION=	4.3
@@ -20,5 +20,7 @@ GNU_CONFIGURE=	yes
 CFLAGS+=	-L${LOCALBASE}/lib -I${PREFIX}/include
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

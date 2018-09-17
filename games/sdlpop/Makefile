@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/sdlpop/Makefile 465771 2018-03-27 23:29:00Z dbaio $
+# $FreeBSD: head/games/sdlpop/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	sdlpop
 DISTVERSIONPREFIX=	v
@@ -24,6 +24,8 @@ PORTDOCS=	*
 
 DESKTOP_ENTRIES=	"Prince" "Open-Source port of Prince of Persia" \
 		"${DATADIR}/icon.png" "prince"  "Game;" false
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%DATADIR%%|${DATADIR}|' ${WRKSRC}/seg009.c

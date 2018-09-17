@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Time-Out/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/p5-Time-Out/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Time-Out
 PORTVERSION=	0.11
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easily timeout long running operations
 
 USES=		perl5

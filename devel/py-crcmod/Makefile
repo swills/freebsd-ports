@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/py-crcmod/Makefile 401604 2015-11-14 21:24:30Z rm $
+# $FreeBSD: head/devel/py-crcmod/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	crcmod
 PORTVERSION=	1.7
@@ -20,6 +20,8 @@ USE_PYTHON=	autoplist distutils
 
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

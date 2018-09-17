@@ -1,5 +1,5 @@
 # Created by: torstenb
-# $FreeBSD: head/x11-wm/ctwm/Makefile 478167 2018-08-26 20:33:13Z fernape $
+# $FreeBSD: head/x11-wm/ctwm/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	ctwm
 DISTVERSION=	4.0.2
@@ -15,5 +15,7 @@ LICENSE=	MIT
 
 USES=		cmake:outsource jpeg tar:xz
 USE_XORG=	x11 xext xt ice sm xpm xmu
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.mk>

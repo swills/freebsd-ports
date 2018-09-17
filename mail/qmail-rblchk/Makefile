@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/mail/qmail-rblchk/Makefile 441925 2017-05-28 21:18:04Z antoine $
+# $FreeBSD: head/mail/qmail-rblchk/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	qmail-rblchk
 PORTVERSION=	2.4.1
@@ -21,6 +21,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 ALL_TARGET=	default
 INSTALL_TARGET=	setup
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e '/"cat/d; s|,02755|,0755|' ${WRKSRC}/hier.c

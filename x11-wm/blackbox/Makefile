@@ -1,5 +1,5 @@
 # Created by: Brian Handy <handy@physics.montana.edu>
-# $FreeBSD: head/x11-wm/blackbox/Makefile 476722 2018-08-09 06:42:47Z koobs $
+# $FreeBSD: head/x11-wm/blackbox/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	blackbox
 PORTVERSION=	0.70.1
@@ -22,7 +22,7 @@ LDFLAGS+=	${ICONV_LIB}
 PORTDOCS=	README.bbtools README.bsetbg
 MANPAGES=	bsetbg.1 bsetroot.1
 
-OPTIONS_DEFINE=	TOOLS_ONLY
+OPTIONS_DEFINE=	TOOLS_ONLY DOCS
 
 TOOLS_ONLY_DESC=	Do not install window manager, only tools
 

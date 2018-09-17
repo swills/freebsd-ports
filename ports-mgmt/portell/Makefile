@@ -1,5 +1,5 @@
 # Created by: mich@freebsdcluster.org
-# $FreeBSD: head/ports-mgmt/portell/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/ports-mgmt/portell/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	portell
 PORTVERSION=	0.2
@@ -18,6 +18,8 @@ NO_BUILD=	yes
 
 PLIST_FILES=	bin/portell
 PORTDOCS=	README.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	${REINPLACE_CMD} -e 's/[[:cntrl:]]*$$//' ${WRKSRC}/portell.py

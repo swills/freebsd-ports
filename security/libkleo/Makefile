@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/libkleo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/libkleo/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libkleo
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -23,6 +23,9 @@ USE_QT=		core gui widgets \
 		buildtools_build qmake_build
 
 _CORETOOLS=	md5sum sha1sum sha256sum sha512sum
+
+OPTIONS_DEFINE=	DOCS
+
 post-extract:
 # use the binaries of coreutils
 .  for ct in ${_CORETOOLS}

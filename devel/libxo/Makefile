@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libxo/Makefile 427548 2016-12-02 09:21:58Z mat $
+# $FreeBSD: head/devel/libxo/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libxo
 PORTVERSION=	0.6.1
@@ -16,5 +16,7 @@ USES=		autoreconf gmake libtool pathfix perl5
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_PERL5=	run
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

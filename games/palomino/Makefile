@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/palomino/Makefile 478662 2018-09-01 09:40:02Z tobik $
+# $FreeBSD: head/games/palomino/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	palomino
 PORTVERSION=	20131231
@@ -36,7 +36,7 @@ PORTDOCS=	*
 DESKTOP_ENTRIES=	"Palomino" "" "${PORTNAME}" \
 			"${PORTNAME}" "Game;ArcadeGame;" ""
 
-OPTIONS_DEFINE=	GUI PLIB SDL
+OPTIONS_DEFINE=	DOCS GUI PLIB SDL
 OPTIONS_DEFAULT=GUI SDL
 OPTIONS_SUB=	yes
 

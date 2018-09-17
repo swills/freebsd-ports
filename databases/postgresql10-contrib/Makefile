@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql10-contrib/Makefile 450258 2017-09-21 13:43:01Z girgen $
+# $FreeBSD: head/databases/postgresql10-contrib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	postgresql
 PORTREVISION=	0
@@ -22,6 +22,8 @@ SLAVE_ONLY=	yes
 COMPONENT=	-contrib
 CONFIGURE_ARGS+=--with-libxslt --with-libxml --with-openssl --disable-nls --with-uuid=bsd
 LDFLAGS+=	-lpthread -L${PREFIX}/lib
+
+OPTIONS_DEFINE=	DOCS
 
 post-configure: 
 		@cd ${WRKSRC}/src/backend && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} symlinks

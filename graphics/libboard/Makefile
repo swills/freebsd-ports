@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/libboard/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/libboard/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libboard
 DISTVERSION=	0.9.4
@@ -26,7 +26,8 @@ GH_TAGNAME=	5b38274
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	DOXYGEN EXAMPLES
+OPTIONS_DEFINE=	DOXYGEN EXAMPLES DOCS
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 .include <bsd.port.pre.mk>

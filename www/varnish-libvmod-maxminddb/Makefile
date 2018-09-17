@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish-libvmod-maxminddb/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/varnish-libvmod-maxminddb/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libvmod-maxminddb
 DISTVERSION=	1.0.0
@@ -25,5 +25,7 @@ GH_PROJECT=	libvmod_maxminddb
 GH_TAGNAME=	4ae6a7f
 
 MAKE_JOBS_UNSAFE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

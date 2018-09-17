@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-libvorbis/Makefile 467592 2018-04-17 10:11:58Z tijl $
+# $FreeBSD: head/audio/linux-c6-libvorbis/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libvorbis
 PORTVERSION=	1.2.3
@@ -15,5 +15,7 @@ USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	libogg
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

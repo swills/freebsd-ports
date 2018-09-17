@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/multimedia/cheese/Makefile 443492 2017-06-13 08:14:34Z kwm $
+# $FreeBSD: head/multimedia/cheese/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cheese
 PORTVERSION=	3.18.1
@@ -39,7 +39,7 @@ DOCS=		AUTHORS COPYING ChangeLog NEWS README
 GLIB_SCHEMAS=	org.gnome.Cheese.gschema.xml
 
 OPTIONS_SUB=	yes
-OPTIONS_DEFINE=	MANPAGES
+OPTIONS_DEFINE=	MANPAGES DOCS
 OPTIONS_DEFAULT=MANPAGES
 
 MANPAGES_CONFIGURE_ENABLE=	man

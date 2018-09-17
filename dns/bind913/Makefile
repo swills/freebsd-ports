@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind913/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/dns/bind913/Makefile 479408 2018-09-10 13:16:16Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -61,11 +61,11 @@ CONFLICTS+=		bind913
 USE_RC_SUBR=	named
 SUB_FILES=	pkg-message named.conf
 CONFLICTS+=		bind-tools
+
+PORTDOCS=	*
 .endif	# BIND_TOOLS_SLAVE
 
 MAKE_JOBS_UNSAFE=	yes
-
-PORTDOCS=	*
 
 OPTIONS_DEFAULT=	THREADS SIGCHASE IDN GSSAPI_NONE JSON PYTHON
 OPTIONS_DEFINE=		IDN LARGE_FILE PYTHON JSON \

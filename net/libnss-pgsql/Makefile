@@ -1,5 +1,5 @@
 # Created by: Felix Hanley <felix@userspace.com.au>
-# $FreeBSD: head/net/libnss-pgsql/Makefile 416469 2016-06-06 15:25:42Z mat $
+# $FreeBSD: head/net/libnss-pgsql/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libnss-pgsql
 PORTVERSION=	1.5.0
@@ -18,6 +18,8 @@ USES=		autoreconf gmake libtool pgsql tar:tgz
 CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc --includedir=${PREFIX}/include --libdir=${PREFIX}/lib --with-docdir=${DOCSDIR}
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

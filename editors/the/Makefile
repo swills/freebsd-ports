@@ -1,5 +1,5 @@
 # Created by: giffunip@asme.org
-# $FreeBSD: head/editors/the/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/editors/the/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	the
 PORTVERSION=	3.3.r4
@@ -21,7 +21,7 @@ CONFIGURE_ARGS=	--with-rexxincdir=${LOCALBASE}/include \
 ALL_TARGET=	all html
 CPPFLAGS+=	-I${LOCALBASE}/include
 
-OPTIONS_DEFINE=		XAW3D
+OPTIONS_DEFINE=		DOCS XAW3D
 OPTIONS_SINGLE=		Display Rexx
 OPTIONS_SINGLE_Display=	NCURSES XCURSES
 OPTIONS_SINGLE_Rexx=	REXX_IMC REGINA

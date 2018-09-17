@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/math/muparser/Makefile 458515 2018-01-09 07:55:05Z mat $
+# $FreeBSD: head/math/muparser/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	muparser
 PORTVERSION=	2.2.5
@@ -23,13 +23,12 @@ GNU_CONFIGURE=	yes
 # otherwise it fails to build when the EXAMPLES option is ON
 MAKE_JOBS_UNSAFE=	yes
 
-OPTIONS_DEFINE=		DOXYGEN EXAMPLES
+OPTIONS_DEFINE=		DOCS DOXYGEN EXAMPLES
 
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
 			dot:graphics/graphviz
 DOXYGEN_ALL_TARGET=	documentation
 DOXYGEN_PORTDOCS=	*
-# PORTDOCS macro won't work if NOPORTDOCS is defined or if DOCS is disabled
 DOXYGEN_IMPLIES=	DOCS
 
 EXAMPLES_CONFIGURE_ENABLE=	samples

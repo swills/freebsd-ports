@@ -1,5 +1,5 @@
 # Created by: George Reid <services@nevernet.net>
-# $FreeBSD: head/security/vlock/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/vlock/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	vlock
 PORTVERSION=	2.2.3
@@ -24,7 +24,7 @@ CONFIGURE_ARGS=	--enable-plugins --enable-pam \
 USES=	gmake
 USE_CSTD=	gnu99
 
-OPTIONS_DEFINE=	ROOTPWD VLOCKSCRIPTS CACASAVER
+OPTIONS_DEFINE=	ROOTPWD VLOCKSCRIPTS CACASAVER DOCS
 OPTIONS_DEFAULT=	ROOTPWD
 OPTIONS_SUB=	yes
 ROOTPWD_DESC=	Enable unlock using root password

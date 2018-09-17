@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/math/ccmath/Makefile 473296 2018-06-25 06:44:09Z linimon $
+# $FreeBSD: head/math/ccmath/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ccmath
 PORTVERSION=	2.2.1
@@ -19,6 +19,8 @@ USE_LDCONFIG=	yes
 PORTDOCS=	*
 SRC_DIRS=	cfit complex fft geom intg matrix roots sfunc simu sort statf \
 		tseries util xarm
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

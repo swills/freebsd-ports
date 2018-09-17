@@ -1,9 +1,8 @@
 # Created by: Eric Anholt
-# $FreeBSD: head/devel/git/Makefile 477627 2018-08-20 05:07:46Z koobs $
+# $FreeBSD: head/devel/git/Makefile 479678 2018-09-13 16:49:14Z garga $
 
 PORTNAME=	git
-DISTVERSION=	2.18.0
-PORTREVISION=	2
+DISTVERSION=	2.19.0
 CATEGORIES=	devel
 MASTER_SITES=	KERNEL_ORG/software/scm/git
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

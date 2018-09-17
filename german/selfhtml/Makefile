@@ -1,5 +1,5 @@
 # Created by: Frerich Raabe <frerich.raabe@gmx.de>
-# $FreeBSD: head/german/selfhtml/Makefile 417387 2016-06-23 16:42:36Z amdmi3 $
+# $FreeBSD: head/german/selfhtml/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	selfhtml
 PORTVERSION=	8.1.2
@@ -47,6 +47,8 @@ PORTDOCS=	index.htm \
 		servercgi \
 		src \
 		xml
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

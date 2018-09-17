@@ -1,5 +1,5 @@
 # Created by: Bert Burgemeister <trebbu@googlemail.com>
-# $FreeBSD: head/games/goldencheetah/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/goldencheetah/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	GoldenCheetah
 PORTVERSION=	3.2
@@ -32,6 +32,8 @@ USE_GL=		gl glu
 USE_QT=		corelib gui linguist moc_build network opengl \
 		qmake rcc script sql svg uic webkit xml
 INFO=		GC3-FAQ GC3-Release GC31-Release
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	${CP} ${WRKSRC}/src/gcconfig.pri.in ${WRKSRC}/src/gcconfig.pri

@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/erlang-wx/Makefile 478010 2018-08-25 08:03:46Z olgeni $
+# $FreeBSD: head/lang/erlang-wx/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3.6.10
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	lang parallel
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\

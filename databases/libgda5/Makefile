@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/databases/libgda5/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/libgda5/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	libgda
 PORTVERSION?=	5.2.4
@@ -37,7 +37,7 @@ CONFIGURE_ARGS=	--without-oracle \
 .include <bsd.port.options.mk>
 
 VERSION=	5.0
-PLIST_SUB=	VERSION=${VERSION}
+PLIST_SUB+=	VERSION=${VERSION}
 
 .if ${LIBGDA5_SLAVE}!="no"
 USE_GNOME+=	libgda5

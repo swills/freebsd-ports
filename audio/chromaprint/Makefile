@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/chromaprint/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/chromaprint/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	chromaprint
 PORTVERSION=	1.4.3
@@ -23,7 +23,7 @@ CMAKE_ARGS=	-DBUILD_TOOLS:BOOL=true \
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-v${PORTVERSION}
 
-OPTIONS_DEFINE=		DOXYGEN TEST
+OPTIONS_DEFINE=		DOCS DOXYGEN TEST
 
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
 			dot:graphics/graphviz

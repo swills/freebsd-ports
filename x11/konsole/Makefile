@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/konsole/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/konsole/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	konsole
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -20,5 +20,7 @@ USE_KDE=	auth attica bookmarks codecs completion config configwidgets \
 USE_QT=		core dbus gui network printsupport script scripttools sql \
 		widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

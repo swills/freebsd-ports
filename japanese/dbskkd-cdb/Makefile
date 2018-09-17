@@ -1,5 +1,5 @@
 # Created by: Makoto Matsushita <matusita@jp.FreeBSD.ORG>
-# $FreeBSD: head/japanese/dbskkd-cdb/Makefile 441959 2017-05-28 23:17:33Z sunpoet $
+# $FreeBSD: head/japanese/dbskkd-cdb/Makefile 479924 2018-09-17 11:22:26Z rene $
 
 PORTNAME=	dbskkd-cdb
 PORTVERSION=	3.00
@@ -7,7 +7,7 @@ PORTVERSION=	3.00
 CATEGORIES=	japanese
 MASTER_SITES=	GH
 
-MAINTAINER=	kenji@k2r.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SKK dictionary server based on cdb
 
 LICENSE=	MIT

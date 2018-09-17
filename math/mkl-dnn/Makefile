@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/mkl-dnn/Makefile 478994 2018-09-05 00:38:30Z yuri $
+# $FreeBSD: head/math/mkl-dnn/Makefile 479176 2018-09-07 02:31:47Z yuri $
 
 PORTNAME=	mkl-dnn
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_FreeBSD_10=	invalid value 'internal' in '-fvisibility internal'
+BROKEN_i386=	error: shift count >= width of type (and other errors), see https://github.com/intel/mkl-dnn/issues/315
 
 TEST_DEPENDS=	bash:shells/bash
 

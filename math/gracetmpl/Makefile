@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/gracetmpl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/gracetmpl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gracetmpl
 PORTVERSION=	0.3.2
@@ -33,6 +33,8 @@ INSTALL_TARGET=	install
 USE_GCC=	yes
 
 PLIST_SUB+=	PYTHON_VER=${PYTHON_VER}
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	@${ECHO_CMD} -n > ${WRKSRC}/Makefile.defs

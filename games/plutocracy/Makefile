@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/plutocracy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/plutocracy/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	plutocracy
 PORTVERSION=	0.0.20081229
@@ -27,6 +27,8 @@ SUB_FILES=	plutocracy_
 
 PORTDOCS=	AUTHORS README
 PORTDATA=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|span font|span font_desc|' \

@@ -1,5 +1,5 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/devel/gengetopt/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/gengetopt/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	gengetopt
 PORTVERSION=	2.22.6
@@ -28,6 +28,8 @@ DOC_EXAMPLES=	README.example cmdline1.c cmdline1.h cmdline2.c cmdline2.h \
 		main1.cc main2.c multiple_example.c sample1.ggo sample2.ggo
 TESTS_EXAMPLES=	test_manual_help.c test_manual_help_cmd.c \
 		test_manual_help_cmd.ggo test_manual_help_cmd.h
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/${PORTNAME}.1 \

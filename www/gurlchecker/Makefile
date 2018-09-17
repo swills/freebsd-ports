@@ -1,5 +1,5 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/www/gurlchecker/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/www/gurlchecker/Makefile 479427 2018-09-10 14:40:53Z mat $
 
 PORTNAME=	gurlchecker
 PORTVERSION=	0.10.1
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgnet-2.0.so:net/gnet2
 
-OPTIONS_DEFINE=	CROCO TIDY CLAMAV GNUTLS
+OPTIONS_DEFINE=	CROCO TIDY CLAMAV GNUTLS NLS
 OPTIONS_DEFAULT=CLAMAV GNUTLS
 CROCO_DESC=	Library for CSS2 validation
 TIDY_DESC=	Library for HTML w3c validation

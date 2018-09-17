@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-hut/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-hut/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	hut
 PORTVERSION=	1.2.0
@@ -14,5 +14,7 @@ LICENSE=	MIT
 USES=		erlang:rebar
 USE_GITHUB=	yes
 GH_ACCOUNT=	tolbrino
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Alexey V. Antipovsky <kemm@in-line.ru>
-# $FreeBSD: head/emulators/fuse/Makefile 476682 2018-08-08 21:04:06Z rene $
+# $FreeBSD: head/emulators/fuse/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fuse
 PORTVERSION=	1.5.6
@@ -24,7 +24,7 @@ USE_XORG=	x11
 
 CONFIGURE_ARGS+=--without-alsa --without-joystick
 
-OPTIONS_DEFINE=		AO ICONS ROMS
+OPTIONS_DEFINE=		AO ICONS ROMS DOCS
 OPTIONS_DEFAULT=	ICONS GTK2
 OPTIONS_SINGLE=		UI
 UI_DESC=		User Interface

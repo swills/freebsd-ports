@@ -1,14 +1,13 @@
 # Created by: Jan-Peter Koopmann <j.koopmann@seceidos.de>
-# $FreeBSD: head/mail/mailscanner/Makefile 448600 2017-08-23 11:26:47Z rene $
+# $FreeBSD: head/mail/mailscanner/Makefile 479484 2018-09-10 21:40:32Z crees $
 
 PORTNAME=	MailScanner
-PORTVERSION=	5.0.3
-PORTREVISION=	1
+PORTVERSION=	5.1.1
 CATEGORIES=	mail
 MASTER_SITES=	https://s3.amazonaws.com/msv5/release/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-${PATCHLEVEL}.nix
 
-MAINTAINER=	kkobb@skylinecorp.com
+MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Powerful virus/spam scanning framework for mail gateways
 
 LICENSE=	GPLv2
@@ -58,7 +57,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS} \
 
 CONFLICTS=	MailScanner-devel-[0-9]*
 
-PATCHLEVEL=	7
+PATCHLEVEL=	1
 
 USES=		perl5 shebangfix
 SHEBANG_GLOB=	* usr/lib/MailScanner/init/* usr/lib/MailScanner/wrapper/* \

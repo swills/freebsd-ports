@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/kde.mk 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/Mk/Uses/kde.mk 479820 2018-09-15 07:48:03Z dbn $
 #
 # Provides support for KDE and KF5-based ports.
 #
@@ -74,8 +74,8 @@ KDE_FRAMEWORKS_VERSION?=	5.49.0
 KDE_FRAMEWORKS_BRANCH?= 	stable
 
 # Current KDE applications.
-KDE_APPLICATIONS_VERSION?=	18.08.0
-KDE_APPLICATIONS_SHLIB_VER?=	5.9.0
+KDE_APPLICATIONS_VERSION?=	18.08.1
+KDE_APPLICATIONS_SHLIB_VER?=	5.9.1
 KDE_APPLICATIONS_BRANCH?=	stable
 # Upstream moves old software to Attic/. Specify the newest applications release there.
 # Only the major version is used for the comparison.
@@ -228,14 +228,14 @@ _USE_KDE_BOTH=		akonadi attica libkcddb libkcompactdisc libkdcraw libkdegames \
 			libkeduvocdocument libkexiv2 libkipi libksane okular \
 			baloo baloo-widgets kate marble
 
-_USE_KDE4_ALL=		baloo baloo-widgets baseapps kactivities kdelibs \
+_USE_KDE4_ALL=		baseapps kactivities kdelibs \
 			kfilemetadata korundum \
 			libkonq  nepomuk-core nepomuk-widgets \
 			oxygen-icons5 perlkde perlqt pimlibs pykde4 \
 			pykdeuic4 qtruby runtime smokegen smokekde smokeqt \
 			workspace
 # These components are not part of the Software Compilation.
-_USE_KDE4_ALL+=		akonadi automoc4 ontologies qimageblitz soprano \
+_USE_KDE4_ALL+=		automoc4 ontologies qimageblitz soprano \
 			strigi
 
 _USE_KDE4_ALL+= 	${_USE_KDE_BOTH}
@@ -910,10 +910,12 @@ attica4_LIB=		libattica.so
 
 baloo4_PORT=		sysutils/baloo-kde4
 baloo4_LIB=		libbaloocore.so
+# baloo5 defined above, under KDE5 components
 
 baloo-widgets4_PORT=	sysutils/baloo-widgets-kde4
 baloo-widgets4_LIB=	libbaloowidgets.so
-
+baloo-widgets5_PORT=	sysutils/baloo-widgets
+baloo-widgets5_LIB=	libKF5BalooWidgets.so
 
 kate4_PORT=		editors/kate-kde4
 kate4_LIB=		libkateinterfaces.so
@@ -922,9 +924,13 @@ kate5_PATH=		${QT_PLUGINDIR}/ktexteditor/katebacktracebrowserplugin.so
 
 libkcddb4_PORT=		audio/libkcddb-kde4
 libkcddb4_LIB=		libkcddb.so
+libkcddb5_PORT=		audio/libkcddb
+libkcddb5_LIB=		libKF5Cddb.so
 
 libkcompactdisc4_PORT=	audio/libkcompactdisc-kde4
 libkcompactdisc4_LIB=	libkcompactdisc.so
+libkcompactdisc5_PORT=	audio/libkcompactdisc-kde5
+libkcompactdisc5_LIB=	libKF5CompactDisc.so
 
 libkdcraw4_PORT=	graphics/libkdcraw-kde4
 libkdcraw4_LIB=		libkdcraw.so

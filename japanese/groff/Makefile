@@ -1,5 +1,5 @@
 # Created by: Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
-# $FreeBSD: head/japanese/groff/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/japanese/groff/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	groff
 PORTVERSION=	1.18.1
@@ -44,6 +44,8 @@ TMAC_DISTNAME=	tmac-20030521_2
 TMACFILES=	tmac.orig_me tmac.vgrind \
 		an-old.tmac doc.tmac e.tmac
 MDOCFILES=	ja.eucJP doc-common doc-syms
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	${REINPLACE_CMD} -E -e 's|^@setfilename +groff|&.info|g;' \

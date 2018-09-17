@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-make/Makefile 474126 2018-07-07 19:21:15Z olgeni $
+# $FreeBSD: head/devel/elixir-make/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	make
 DISTVERSIONPREFIX=	v
@@ -17,5 +17,7 @@ GH_ACCOUNT=	elixir-lang
 GH_PROJECT=	elixir_make
 
 ELIXIR_APP_NAME=elixir_make
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

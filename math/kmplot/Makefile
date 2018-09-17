@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kmplot/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/kmplot/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kmplot
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,5 +15,7 @@ USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		textwidgets unitconversion widgetsaddons windowsystem xmlgui
 USE_QT=		core dbus gui network printsupport svg widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

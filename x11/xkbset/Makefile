@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/x11/xkbset/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xkbset/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	xkbset
 PORTVERSION=	0.5
@@ -28,10 +28,10 @@ GUI_DESC=	Install Tk GUI
 
 .if ${PORT_OPTIONS:MGUI}
 RUN_DEPENDS+=	p5-Tk>=0:x11-toolkits/p5-Tk
-PLIST_SUB=	GUI=""
+PLIST_SUB+=	GUI=""
 MAKE_ARGS+=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 .else
-PLIST_SUB=	GUI="@comment "
+PLIST_SUB+=	GUI="@comment "
 MAKE_ARGS+=	INSTALL_SCRIPT=:
 .endif
 

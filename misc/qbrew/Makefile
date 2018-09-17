@@ -1,5 +1,5 @@
 # Created by: David Johnson <david@usermode.org>
-# $FreeBSD: head/misc/qbrew/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/qbrew/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	qbrew
 PORTVERSION=	0.4.1
@@ -18,6 +18,8 @@ QMAKE_ARGS=	CONFIG+="configure"
 QMAKE_ENV+=	BINDIR="${PREFIX}/bin" \
 		DATADIR="${DATADIR}" \
 		DOCDIR="${DOCSDIR}"
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/qbrew

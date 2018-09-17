@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Aliases/Makefile 477317 2018-08-16 09:08:06Z amdmi3 $
+# $FreeBSD: head/devel/p5-MooseX-Aliases/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	MooseX-Aliases
 PORTVERSION=	0.11
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DOY
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy aliasing of methods and attributes in Moose
 
 LICENSE=	ART10 GPLv1+

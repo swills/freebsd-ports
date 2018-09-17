@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish-libvmod-awsrest/Makefile 473483 2018-06-28 00:45:29Z vanilla $
+# $FreeBSD: head/www/varnish-libvmod-awsrest/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libvmod-awsrest
 DISTVERSIONPREFIX=	v
@@ -23,5 +23,7 @@ INSTALL_TARGET=	install-strip
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	xcir
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

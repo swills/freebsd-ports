@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-google-api-python-client/Makefile 478123 2018-08-26 12:07:00Z nivit $
+# $FreeBSD: head/www/py-google-api-python-client/Makefile 479771 2018-09-14 12:16:48Z mat $
 
 PORTNAME=	google-api-python-client
 PORTVERSION=	1.7.4
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}httplib2>=0.9.2:www/py-httplib2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}google-auth>=0:security/py-google-auth@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}google-auth-httplib2>=0.0.3:security/py-google-auth-httplib2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.6.1:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}uritemplate>=3.0.0:net/py-uritemplate@${PY_FLAVOR}
 

@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/graphics/glfw/Makefile 477325 2018-08-16 12:17:58Z swills $
+# $FreeBSD: head/graphics/glfw/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	glfw
 PORTVERSION=	3.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/multimedia/nordlicht/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/nordlicht/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	nordlicht
 PORTVERSION=	0.4.5
@@ -29,6 +29,8 @@ BROKEN_aarch64=		Fails to install: runaway process
 BROKEN_powerpc64=	Does not build
 
 SHEBANG_FILES=	utils/mpv-nordlicht
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} \

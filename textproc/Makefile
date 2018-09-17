@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 478964 2018-09-04 14:57:27Z yuri $
+# $FreeBSD: head/textproc/Makefile 479917 2018-09-17 08:36:20Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -762,6 +762,7 @@
     SUBDIR += p5-Regexp-Common-Email-Address
     SUBDIR += p5-Regexp-Common-net-CIDR
     SUBDIR += p5-Regexp-Common-profanity_us
+    SUBDIR += p5-Regexp-Common-time
     SUBDIR += p5-Regexp-Copy
     SUBDIR += p5-Regexp-Debugger
     SUBDIR += p5-Regexp-DefaultFlags
@@ -1427,6 +1428,7 @@
     SUBDIR += py-transpopy
     SUBDIR += py-tvgrab
     SUBDIR += py-ucl
+    SUBDIR += py-ufal.udpipe
     SUBDIR += py-whoosh
     SUBDIR += py-wicked
     SUBDIR += py-wordnet

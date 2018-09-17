@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/security/fwbuilder/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/fwbuilder/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	fwbuilder
 PORTVERSION=	5.1.0
@@ -16,7 +16,7 @@ BROKEN_powerpc64=	fails to configure: libz library not found
 LIB_DEPENDS=	libxslt.so:textproc/libxslt \
 		libnetsnmp.so:net-mgmt/net-snmp
 
-#OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS
 
 BUILD=		3599
 

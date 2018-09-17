@@ -1,5 +1,5 @@
 # Created by: Mikhail T. <mi@aldan.algebra.com>
-# $FreeBSD: head/net-mgmt/adcli/Makefile 451760 2017-10-11 16:22:20Z feld $
+# $FreeBSD: head/net-mgmt/adcli/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	adcli
 PORTVERSION=	0.8.1
@@ -20,6 +20,7 @@ BUILD_DEPENDS=	xsltproc:textproc/libxslt	\
 GNU_CONFIGURE=	yes
 TEST_TARGET=	check
 
+OPTIONS_DEFINE=	DOCS
 OPTIONS_SINGLE=		GSSAPI
 OPTIONS_SINGLE_GSSAPI=	GSSAPI_BASE GSSAPI_HEIMDAL GSSAPI_MIT
 OPTIONS_DEFAULT=	GSSAPI_BASE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/incidenceeditor/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/net/incidenceeditor/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	incidenceeditor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -25,5 +25,7 @@ USE_QT=		core dbus gui network printsupport testlib uitools webkit \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

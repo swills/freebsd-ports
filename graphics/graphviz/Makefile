@@ -1,11 +1,11 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/graphviz/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/graphics/graphviz/Makefile 479876 2018-09-16 05:48:52Z dinoex $
 
 PORTNAME=	graphviz
 PORTVERSION=	2.40.1
 PORTREVISION=	6
 CATEGORIES=	graphics tk
-MASTER_SITES=	http://www.graphviz.org/pub/graphviz/ARCHIVE/
+MASTER_SITES=	https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Graph Visualization Software from AT&T and Bell Labs

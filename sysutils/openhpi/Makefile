@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/openhpi/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/sysutils/openhpi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openhpi
 PORTVERSION=	3.6.1
@@ -28,6 +28,8 @@ USE_GNOME=	glib20 libxml2
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 USE_RC_SUBR=	openhpid
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's/-lstdc++//' \

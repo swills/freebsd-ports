@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/zap/Makefile 451171 2017-10-03 21:04:07Z jrm $
+# $FreeBSD: head/sysutils/zap/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	zap
 DISTVERSION=	0.7.4
@@ -20,6 +20,8 @@ PORTDOCS=	README.org
 
 USERS=		${PORTNAME}
 GROUPS=		${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

@@ -1,5 +1,5 @@
 # Created by: gary@hayers.org
-# $FreeBSD: head/news/mail2nntp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/mail2nntp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mail2nntp
 PORTVERSION=	1.0
@@ -20,6 +20,8 @@ SHEBANG_FILES=	mail2nntp.pl
 
 PORTDOCS=	*
 PLIST_FILES=	bin/mail2nntp.pl
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/mail2nntp.pl ${STAGEDIR}${PREFIX}/bin

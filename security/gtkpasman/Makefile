@@ -1,5 +1,5 @@
 # Created by: Philippe Rocques <phil@teaser.fr>
-# $FreeBSD: head/security/gtkpasman/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/security/gtkpasman/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gtkpasman
 PORTVERSION=	0.12.1
@@ -23,6 +23,8 @@ SUB_FILES=	pkg-message
 
 PORTDOCS=	*
 PLIST_FILES=	bin/gtkpasman share/applications/gtkpasman.desktop
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

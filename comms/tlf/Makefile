@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/tlf/Makefile 478429 2018-08-30 04:05:07Z danfe $
+# $FreeBSD: head/comms/tlf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tlf
 PORTVERSION=	1.3.0
@@ -32,5 +32,7 @@ HAMLIB_LIB_DEPENDS=	libhamlib.so:comms/hamlib
 HAMLIB_CONFIGURE_ENABLE=hamlib
 FLDIGI_LIB_DEPENDS=	libxmlrpc.so:net/xmlrpc-c
 FLDIGI_CONFIGURE_ENABLE=fldigi-xmlrpc
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

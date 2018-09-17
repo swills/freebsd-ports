@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pymtbl/Makefile 447311 2017-08-04 00:37:55Z truckman $
+# $FreeBSD: head/devel/py-pymtbl/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pymtbl
 PORTVERSION=	0.4.1
@@ -23,6 +23,8 @@ SHEBANG_FILES=	examples/*.py examples/*/*.py
 PORTEXAMPLES=	*
 
 CPPFLAGS+=	-I${LOCALBASE}/include
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}/${PYTHON_SITELIBDIR}/mtbl.so

@@ -1,9 +1,9 @@
 # Created by: lesi@FreeBSD.org
-# $FreeBSD: head/x11-drivers/xf86-video-intel/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-intel/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	xf86-video-intel
 PORTVERSION=	2.99.917.20180512
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-drivers
 MASTER_SITES=	http://cgit.freedesktop.org/xorg/${XORG_CAT}/${PORTNAME}/snapshot/
 DISTNAME=	${PORTNAME}-${COMMIT_ID}

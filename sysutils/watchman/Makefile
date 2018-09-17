@@ -1,5 +1,5 @@
 # Created by: Jin-Sih, Lin <linpct@gmail.com>
-# $FreeBSD: head/sysutils/watchman/Makefile 473692 2018-07-02 00:47:14Z linimon $
+# $FreeBSD: head/sysutils/watchman/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	watchman
 PORTVERSION=	4.5.0
@@ -27,7 +27,7 @@ PLIST_FILES=	bin/${PORTNAME} \
 		"@dir(,,2777) /var/run/${PORTNAME}"
 PORTDOCS=	README.markdown
 
-OPTIONS_DEFINE=	BACKTRACE PCRE
+OPTIONS_DEFINE=	BACKTRACE PCRE DOCS
 OPTIONS_DEFAULT=BACKTRACE PCRE
 
 BACKTRACE_DESC=		Stack backtrace support via (lib)execinfo

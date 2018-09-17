@@ -1,5 +1,5 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/net/radvd/Makefile 444996 2017-07-04 06:08:18Z farrokhi $
+# $FreeBSD: head/net/radvd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	radvd
 PORTVERSION=	2.17
@@ -22,6 +22,8 @@ USES=		gmake pkgconfig
 USE_RC_SUBR=	radvd
 
 PORTDOCS=	CHANGES COPYRIGHT INTRO.html README TODO
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/radvd.conf.example ${STAGEDIR}${PREFIX}/etc/radvd.conf.sample

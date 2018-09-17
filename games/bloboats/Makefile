@@ -1,10 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/games/bloboats/Makefile 476470 2018-08-05 19:32:13Z gerald $
+# $FreeBSD: head/games/bloboats/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	bloboats
 PORTVERSION=	1.0.2
 DISTVERSIONSUFFIX=	-source
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	http://bloboats.dy.fi/mirror/ \
 		LOCAL/ehaupt

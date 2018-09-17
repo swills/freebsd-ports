@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/osm-gps-map/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/osm-gps-map/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	osm-gps-map
 PORTVERSION=	1.1.0
@@ -20,5 +20,7 @@ USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	pkgconfigdir="${PREFIX}/libdata/pkgconfig"
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

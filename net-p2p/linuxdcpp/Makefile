@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/linuxdcpp/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/linuxdcpp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	linuxdcpp
 PORTVERSION=	1.1.0
@@ -19,7 +19,7 @@ USE_GNOME=	libglade2
 PORTDOCS=	*
 DESTDIRNAME=	FAKE_ROOT
 
-OPTIONS_DEFINE=	NOTIFY
+OPTIONS_DEFINE=	NOTIFY DOCS
 OPTIONS_DEFAULT=NOTIFY
 
 .if defined(WITH_DEBUG)

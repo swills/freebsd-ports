@@ -1,5 +1,5 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/security/hashcat-legacy/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/hashcat-legacy/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	hashcat-legacy
 PORTVERSION=	2.00
@@ -25,6 +25,8 @@ ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	uses amd64 instructions
 
 ALL_TARGET=	posix64 posixXOP
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -r 's|^(CC_.*[[:blank:]]*=[[:blank:]]*)gcc[[:blank:]]*$$|\1${CC}|' ${WRKSRC}/src/Makefile

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/erlang-jose/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/security/erlang-jose/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jose
 PORTVERSION=	1.8.4
@@ -20,5 +20,7 @@ NO_ARCH=	yes
 
 ERL_BUILD_DEPS=	converters/erlang-base64url
 ERL_RUN_DEPS:=	${ERL_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

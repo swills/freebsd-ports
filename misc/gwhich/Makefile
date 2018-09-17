@@ -1,5 +1,5 @@
 # Created by: Jeremy Shaffner <jeremy@external.org>
-# $FreeBSD: head/misc/gwhich/Makefile 381907 2015-03-22 11:58:01Z johans $
+# $FreeBSD: head/misc/gwhich/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	gwhich
 PORTVERSION=	2.21
@@ -16,6 +16,8 @@ CONFIGURE_ARGS=	--program-prefix=g
 INFO=		which
 PORTEXAMPLES=	EXAMPLES
 PLIST_FILES=	bin/gwhich man/man1/gwhich.1.gz
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

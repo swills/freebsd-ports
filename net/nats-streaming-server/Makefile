@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/nats-streaming-server/Makefile 479013 2018-09-05 08:02:18Z olgeni $
+# $FreeBSD: head/net/nats-streaming-server/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	nats-streaming-server
 PORTVERSION=	0.11.0
@@ -17,6 +17,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	nats-io
 
 USE_RC_SUBR=	nats_streaming.sh
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc

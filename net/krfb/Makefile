@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/krfb/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/net/krfb/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	krfb
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -19,7 +19,7 @@ USE_QT=		core dbus gui network widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	x11 xcb xdamage xext xtst
 
-OPTIONS_DEFINE=		TELEPATHY
+OPTIONS_DEFINE=		TELEPATHY DOCS
 OPTIONS_SUB=		yes
 TELEPATHY_DESC=		Support for Telepathy Tubes
 TELEPATHY_LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt5

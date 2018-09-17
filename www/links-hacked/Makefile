@@ -1,9 +1,9 @@
 # Created by: Peter Vereshagin <peter@vereshagin.org>
-# $FreeBSD: head/www/links-hacked/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/www/links-hacked/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	links-hacked
 DISTVERSION=	101110
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES?=	www
 MASTER_SITES=	http://xray.sai.msu.ru/~karpov/links-hacked/downloads/
 

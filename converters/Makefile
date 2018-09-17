@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 477371 2018-08-16 20:28:32Z rene $
+# $FreeBSD: head/converters/Makefile 479881 2018-09-16 09:14:45Z rene $
 #
 
     COMMENT = Character code converters
@@ -35,7 +35,6 @@
     SUBDIR += hs-aeson
     SUBDIR += hs-aeson-compat
     SUBDIR += hs-aeson-pretty
-    SUBDIR += hs-dataenc
     SUBDIR += hs-json
     SUBDIR += hs-sandi
     SUBDIR += htx

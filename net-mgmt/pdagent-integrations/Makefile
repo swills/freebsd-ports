@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/pdagent-integrations/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/net-mgmt/pdagent-integrations/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pdagent-integrations
 PORTVERSION=	1.4
@@ -24,6 +24,8 @@ SUB_FILES=	pagerduty-icinga2.conf pkg-message
 
 NO_ARCH=	yes
 NO_BUILD=	yes
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
 	${REINPLACE_CMD} 's|/usr/share/pdagent-integrations/bin|${PREFIX}/bin|g' ${WRKSRC}/pagerduty_nagios.cfg ${WRKSRC}/conf.d/sensu_pagerduty_handler.json

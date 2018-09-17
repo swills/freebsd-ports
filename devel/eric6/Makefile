@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/devel/eric6/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PKGNAMESUFFIX=	-${FLAVOR:U:S/_/-/}
 DISTNAME=	${PORTNAME}-nolang-${DISTVERSION}
@@ -28,6 +28,8 @@ MASTERPORT=	yes
 PORTDATA=	*
 PORTDOCS=	*
 PORTEXAMPLES=	*
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include "${.CURDIR}/bsd.eric6.mk"
 .include <bsd.port.options.mk>

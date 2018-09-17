@@ -1,5 +1,5 @@
 # Created by: Sergey Matveev <stargrave@stargrave.org>
-# $FreeBSD: head/security/govpn/Makefile 478598 2018-08-31 17:15:36Z yuri $
+# $FreeBSD: head/security/govpn/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	govpn
 DISTVERSION=	7.5
@@ -23,5 +23,7 @@ INSTALL_TARGET=	install-strip
 
 PLIST_FILES=	bin/govpn-server bin/govpn-client bin/govpn-verifier \
 		share/govpn/newclient.sh
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

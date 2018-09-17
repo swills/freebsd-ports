@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/knot2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/dns/knot2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	knot
 DISTVERSION=	2.6.8
@@ -40,7 +40,7 @@ SUB_LIST+=	USERS="${USERS}" GROUPS="${GROUPS}"
 
 PORTDOCS=	AUTHORS COPYING ChangeLog INSTALL NEWS README THANKS
 
-OPTIONS_DEFINE=			DNSTAP FASTPARSER IDN
+OPTIONS_DEFINE=			DNSTAP FASTPARSER IDN DOCS
 
 DNSTAP_DESC=			dnstap support (see dnstap.info)
 DNSTAP_CONFIGURE_ENABLE=	dnstap

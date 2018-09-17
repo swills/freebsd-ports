@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Send/Makefile 435027 2017-02-28 09:47:13Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Send/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Email-Send
 PORTVERSION=	2.199
@@ -8,7 +8,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Email::Send - Simply Sending Email
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0.19:devel/p5-Class-Accessor \

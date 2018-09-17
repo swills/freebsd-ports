@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/openttd/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/openttd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openttd
 DISTVERSION=	1.8.0
@@ -41,6 +41,8 @@ PORTDOCS=	HOWTO_compile_lang_files.txt admin_network.txt \
 
 DESKTOP_ENTRIES="OpenTTD" "${COMMENT}" "${PORTNAME}" "${PORTNAME}" \
 		"Game;Simulation;StrategyGame;" false
+
+OPTIONS_DEFINE=	DOCS
 
 .if defined(WITH_MIDI_PLAYER)
 CONFIGURE_ARGS+=	--with-midi="${WITH_MIDI_PLAYER}"

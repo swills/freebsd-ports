@@ -1,5 +1,5 @@
 # Created by: Jukka A. Ukkonen <jau@iki.fi>
-# $FreeBSD: head/www/mod_geoip2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_geoip2/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_geoip2
 PORTVERSION=	1.2.10
@@ -25,6 +25,8 @@ AP_LIB+=	${LOCALBASE}/lib -lGeoIP
 
 SUB_FILES+=	pkg-message
 PORTDOCS=	Changes INSTALL.md README.md README.php
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

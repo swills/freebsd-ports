@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kde-dev-scripts/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kde-dev-scripts/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kde-dev-scripts
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -25,5 +25,7 @@ SHEBANG_FILES=	cxxmetric \
 		reviewboard-am \
 		kde_generate_export_header \
 		zonetab2pot.py
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

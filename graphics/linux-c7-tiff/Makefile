@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-tiff/Makefile 433504 2017-02-06 18:07:28Z tijl $
+# $FreeBSD: head/graphics/linux-c7-tiff/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libtiff
 PORTVERSION=	4.0.3
@@ -17,5 +17,7 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	jbigkit jpeg
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 477718 2018-08-21 12:09:54Z rene $
+# $FreeBSD: head/mail/Makefile 479881 2018-09-16 09:14:45Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -11,7 +11,6 @@
     SUBDIR += alpine
     SUBDIR += altermime
     SUBDIR += amavis-logwatch
-    SUBDIR += annoyance-filter
     SUBDIR += anomy-sanitizer
     SUBDIR += antivirus-milter
     SUBDIR += anubis
@@ -497,7 +496,6 @@
     SUBDIR += policyd2
     SUBDIR += pop3lite
     SUBDIR += pop3proxy
-    SUBDIR += pop3vscan
     SUBDIR += popa3d
     SUBDIR += popa3d-before-sendmail
     SUBDIR += popcheck
@@ -510,6 +508,7 @@
     SUBDIR += postfix
     SUBDIR += postfix-current
     SUBDIR += postfix-current-sasl
+    SUBDIR += postfix-ldap-sasl
     SUBDIR += postfix-logwatch
     SUBDIR += postfix-policyd-sf
     SUBDIR += postfix-policyd-spf-perl

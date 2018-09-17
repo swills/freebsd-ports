@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-jobs/Makefile 474641 2018-07-14 14:34:48Z olgeni $
+# $FreeBSD: head/devel/erlang-jobs/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	jobs
 PORTVERSION=	0.7.2
@@ -16,7 +16,9 @@ ERL_BUILD_DEPS=	devel/erlang-parse_trans
 ERL_RUN_DEPS:=	${ERL_BUILD_DEPS}
 ERL_DOCS=	doc/*
 
-post-install:
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 

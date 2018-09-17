@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/textproc/p5-DelimMatch/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-DelimMatch/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	DelimMatch
 PORTVERSION=	1.05
@@ -8,7 +8,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	http://nwalsh.com/perl/delimmatch/
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to find regexp delimited strings with proper nesting
 
 USES=		perl5

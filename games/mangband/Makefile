@@ -1,5 +1,5 @@
 # Created by: driedfruit
-# $FreeBSD: head/games/mangband/Makefile 416249 2016-06-01 16:16:22Z arved $
+# $FreeBSD: head/games/mangband/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	mangband
 PORTVERSION=	1.1.3
@@ -19,7 +19,7 @@ DOS2UNIXFILES=	${WRKSRC}/client/main-sdl.c
 
 MAKE_ARGS=	"DATADIR=${DATADIR}"
 
-OPTIONS_DEFINE=	GCU X11 SDL
+OPTIONS_DEFINE=	GCU X11 SDL EXAMPLES
 OPTIONS_DEFAULT=	GCU X11 SDL
 GCU_DESC=	Display module GCU (curses)
 X11_DESC=	Display module X11

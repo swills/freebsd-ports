@@ -1,8 +1,7 @@
-# $FreeBSD: head/lang/qt5-qml/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/lang/qt5-qml/Makefile 479286 2018-09-09 11:12:14Z tcberner $
 
 PORTNAME=	qml
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	lang
 PKGNAMEPREFIX=	qt5-
 

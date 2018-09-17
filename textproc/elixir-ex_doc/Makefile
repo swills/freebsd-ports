@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 476401 2018-08-05 09:25:14Z antoine $
+# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ex_doc
 PORTVERSION=	0.18.4
@@ -21,5 +21,7 @@ GH_ACCOUNT=	elixir-lang
 MIX_BUILD_DEPS=	textproc/elixir-earmark
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

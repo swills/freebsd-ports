@@ -1,5 +1,5 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/multimedia/devede/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/devede/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	devede
 PORTVERSION=	3.23.0
@@ -31,7 +31,7 @@ NO_BUILD=	yes
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	IBUS NLS
+OPTIONS_DEFINE=	DOCS IBUS NLS
 OPTIONS_DEFAULT=	IBUS
 OPTIONS_SUB=	yes
 

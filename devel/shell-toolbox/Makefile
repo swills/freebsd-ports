@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/shell-toolbox/Makefile 477222 2018-08-15 12:39:19Z 0mp $
+# $FreeBSD: head/devel/shell-toolbox/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	shell-toolbox
 DISTVERSION=	20180719
@@ -15,5 +15,7 @@ NO_ARCH=	yes
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	kusalananda
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

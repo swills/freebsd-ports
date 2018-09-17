@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-paratize/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/elixir-paratize/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	elixir-paratize
 PORTVERSION=	2.1.5
@@ -16,5 +16,7 @@ GH_ACCOUNT=	seantanly
 
 ELIXIR_APP_NAME=paratize
 MIX_REWRITE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

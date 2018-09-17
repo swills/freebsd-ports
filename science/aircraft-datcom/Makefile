@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/aircraft-datcom/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/aircraft-datcom/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	aircraft-datcom
 DISTVERSION=	0.0.20120723
@@ -16,10 +16,10 @@ GH_TAGNAME=	ed877bb
 
 USES=	fortran cmake
 
-.include <bsd.port.pre.mk>
+OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/* ${STAGEDIR}${DOCSDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

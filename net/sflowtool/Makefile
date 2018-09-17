@@ -1,5 +1,5 @@
 # Created by: Gregory Edigarov <greg@bestnet.kharkov.ua>
-# $FreeBSD: head/net/sflowtool/Makefile 457689 2017-12-31 13:02:01Z ohauer $
+# $FreeBSD: head/net/sflowtool/Makefile 479408 2018-09-10 13:16:16Z mat $
 
 PORTNAME=	sflowtool
 PORTVERSION=	3.41
@@ -21,7 +21,7 @@ PORTDOCS=	README
 PORTEXAMPLES=	README ipTopTalkers ipTrafficMatrix sflowRRDChart.cgi \
 		sflowRRDLoad sflowenable
 
-.include <bsd.port.options.mk>
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

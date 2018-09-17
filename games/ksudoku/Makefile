@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/ksudoku/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/ksudoku/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ksudoku
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,6 +15,8 @@ USE_KDE=	archive auth codecs completion config configwidgets \
 USE_QT=		core dbus gui network opengl printsupport qml quick \
 		svg widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <${.CURDIR}/../kdegames/Makefile.common>
 .include <bsd.port.mk>

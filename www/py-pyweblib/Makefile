@@ -1,5 +1,5 @@
 # Created by: Oddbjorn Steffensen <oddbjorn@tricknology.org>
-# $FreeBSD: head/www/py-pyweblib/Makefile 448723 2017-08-25 17:56:42Z bsam $
+# $FreeBSD: head/www/py-pyweblib/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	pyweblib
 PORTVERSION=	1.3.13
@@ -20,7 +20,7 @@ PORTDOCS=	pyweblib.forms.html pyweblib.helper.html \
 		pyweblib.session.html pyweblib.sslenv.html
 EXAMPLES=	*.py
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 PORTEXAMPLES=	*
 

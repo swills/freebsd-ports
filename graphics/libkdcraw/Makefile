@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libkdcraw/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/graphics/libkdcraw/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libkdcraw
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -20,5 +20,7 @@ USE_KDE=	ecm
 USE_QT=		core gui \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

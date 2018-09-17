@@ -1,8 +1,9 @@
 # Created by: Leonardo Martins <lmartins@nepe.eee.ufg.br>
-# $FreeBSD: head/graphics/geos/Makefile 477007 2018-08-12 17:33:06Z sunpoet $
+# $FreeBSD: head/graphics/geos/Makefile 479700 2018-09-13 21:52:33Z sunpoet $
 
 PORTNAME=	geos
 PORTVERSION=	3.6.3
+PORTREVISION=	1
 CATEGORIES=	graphics geography
 MASTER_SITES=	http://download.osgeo.org/geos/ \
 		LOCAL/sunpoet
@@ -13,7 +14,7 @@ COMMENT=	GEOS implements all the OpenGIS "Simple Features for SQL"
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-OPTIONS_DEFINE=	PYTHON RUBY
+OPTIONS_DEFINE=	RUBY
 OPTIONS_SUB=	yes
 
 CONFIGURE_ARGS=	ac_cv_path_SWIG=${LOCALBASE}/bin/swig3.0
@@ -25,9 +26,6 @@ USES=		gmake libtool tar:bzip2
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
-PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30
-PYTHON_CONFIGURE_ENABLE=python
-PYTHON_USES=		python:2.7
 RUBY_BUILD_DEPENDS=	swig3.0:devel/swig30
 RUBY_CONFIGURE_ENABLE=	ruby
 RUBY_CONFIGURE_ENV=	RUBY="${RUBY}"

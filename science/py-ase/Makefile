@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-ase/Makefile 478712 2018-09-01 18:17:53Z yuri $
+# $FreeBSD: head/science/py-ase/Makefile 479772 2018-09-14 12:19:48Z mat $
 
 PORTNAME=	ase
 DISTVERSION=	3.16.2
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
 		${PYNUMPY} \
 		nwchem:science/nwchem
 

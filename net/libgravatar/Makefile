@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libgravatar/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/net/libgravatar/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libgravatar
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -17,5 +17,7 @@ USE_KDE+=	pimcommon
 USE_QT=		core gui network testlib widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

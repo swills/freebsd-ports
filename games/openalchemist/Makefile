@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/openalchemist/Makefile 479017 2018-09-05 10:05:29Z martymac $
+# $FreeBSD: head/games/openalchemist/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	openalchemist
 PORTVERSION=	0.3
@@ -32,6 +32,8 @@ USE_GL=		gl glu
 USE_SDL=	sdl gfx
 
 PORTDOCS=	AUTHORS ChangeLog README TODO
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -E -e 's|0.8|1.0|g' -e 's|^%|#|g' ${WRKSRC}/configure.ac

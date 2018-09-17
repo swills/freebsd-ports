@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cervisia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/cervisia/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	cervisia
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,5 +12,7 @@ USE_KDE=	dbusaddons doctools ecm iconthemes init itemviews kdesu \
 		notifications parts widgetsaddons
 USE_QT=		core dbus gui widgets \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

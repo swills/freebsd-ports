@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/hfm/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/hfm/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	hfm
 PORTVERSION=	1.2.3
@@ -32,6 +32,8 @@ USE_RC_SUBR=	hfm
 MAKE_ARGS+=	ETCDIR=${ETCDIR} TAG=${DISTVERSIONPREFIX}${PORTVERSION}
 
 ALL_TARGET=	test build
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-patch:
 	(cd ${WRKSRC}; ${PATCH} vendor/src/github.com/mitchellh/go-libucl/libucl.go < vendor/patches/github.com/mitchellh/go-libucl/libucl.go.patch )

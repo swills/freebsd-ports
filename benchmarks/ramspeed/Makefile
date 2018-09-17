@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/ramspeed/Makefile 341993 2014-01-31 13:40:21Z pawel $
+# $FreeBSD: head/benchmarks/ramspeed/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ramspeed
 PORTVERSION=	3.5.0
@@ -17,6 +17,8 @@ LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell
 
 PLIST_FILES=	bin/ramspeed
 PORTDOCS=	HISTORY README
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	cd ${BUILD_WRKSRC} && ${SETENV} ${MAKE_ENV} ${SH} build.sh

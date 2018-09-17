@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/textproc/p5-String-ShellQuote/Makefile 478344 2018-08-29 09:08:11Z amdmi3 $
+# $FreeBSD: head/textproc/p5-String-ShellQuote/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	String-ShellQuote
 PORTVERSION=	1.04
@@ -8,7 +8,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for quote strings for passing through the shell
 
 LICENSE=	ART10 GPLv1+

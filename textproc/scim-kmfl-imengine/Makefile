@@ -1,9 +1,9 @@
 # Created by: Nikola Lecic <nikola.lecic@anthesphoria.net>
-# $FreeBSD: head/textproc/scim-kmfl-imengine/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/textproc/scim-kmfl-imengine/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	scim-kmfl-imengine
 PORTVERSION=	0.9.9
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	textproc
 MASTER_SITES=	SF/kmfl/kmfl/${PORTVERSION} \
 		http://anthesphoria.net/FreeBSD/ports/distfiles/${DIST_SUBDIR}/

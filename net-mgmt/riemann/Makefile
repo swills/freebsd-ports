@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/riemann/Makefile 477983 2018-08-24 22:06:12Z dch $
+# $FreeBSD: head/net-mgmt/riemann/Makefile 479420 2018-09-10 13:41:19Z mat $
 
 PORTNAME=	riemann
 PORTVERSION=	0.3.1
@@ -9,7 +9,7 @@ MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/${POR
 MAINTAINER=	dch@FreeBSD.org
 COMMENT=	Monitors distributed systems
 
-LICENSE=	EPL APACHE20 CDDL MIT BSD3CLAUSE LGPL2+ BSD2CLAUSE GPLv2+
+LICENSE=	EPL APACHE20 CDDL MIT BSD3CLAUSE LGPL20+ BSD2CLAUSE GPLv2+
 LICENSE_COMB=	multi
 
 USES=		tar:bzip2

@@ -1,9 +1,9 @@
 # Created by: Ginzburg Oleg
-# $FreeBSD: head/games/netherearth/Makefile 476219 2018-08-02 05:48:38Z tobik $
+# $FreeBSD: head/games/netherearth/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	netherearth
 PORTVERSION=	0.51
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	http://move.kirishi.ru/soft/netherearth/
 

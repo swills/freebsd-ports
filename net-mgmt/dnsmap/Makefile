@@ -1,5 +1,5 @@
 # Created by: Rihaz Jerrin <rihaz.jerrin@gmail.com>
-# $FreeBSD: head/net-mgmt/dnsmap/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/net-mgmt/dnsmap/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	dnsmap
 PORTVERSION=	0.30
@@ -18,6 +18,8 @@ GH_ACCOUNT=	lifanov
 PORTDOCS=	Changelog.txt README.txt CREDITS.txt use_cases.txt
 
 PLIST_FILES=	bin/dnsmap bin/dnsmap-bulk ${DATADIR}/wordlist_TLAs.txt
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	${CC} ${CFLAGS} ${WRKSRC}/dnsmap.c -o ${WRKSRC}/dnsmap

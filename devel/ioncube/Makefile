@@ -1,8 +1,8 @@
 # Created by: Svyatoslav Lempert <svyatoslav.lempert@gmail.com>
-# $FreeBSD: head/devel/ioncube/Makefile 478445 2018-08-30 13:06:46Z tobik $
+# $FreeBSD: head/devel/ioncube/Makefile 479270 2018-09-09 06:25:17Z riggs $
 
 PORTNAME=	ioncube
-DISTVERSION=	10.1.1
+DISTVERSION=	10.2.4
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.ioncube.com/loader_downloads/ \
 		http://downloads2.ioncube.com/loader_downloads/ \
@@ -27,7 +27,7 @@ USES=		php:flavors
 SUB_FILES=	pkg-message
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-VER=	9
+VER=	11
 
 PHP_INSTVER=	${PHP_VERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 

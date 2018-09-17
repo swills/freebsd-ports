@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/scalapack/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/scalapack/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	scalapack
 PORTVERSION=	2.0.2
@@ -31,6 +31,8 @@ DATADIR=	${PREFIX}/share/${PORTNAME:tu}
 EXAMPLESDIR=	${PREFIX}/share/examples/${PORTNAME:tu}
 SUB_FILES=	pkg-message
 PLIST_SUB=	SVERSION=${SVERSION} PORTVERSION=${PORTVERSION}
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.pre.mk>
 

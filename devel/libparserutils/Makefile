@@ -1,13 +1,13 @@
 # Created by: David Romano <unobe@cpan.org>
-# $FreeBSD: head/devel/libparserutils/Makefile 479003 2018-09-05 02:44:14Z swills $
+# $FreeBSD: head/devel/libparserutils/Makefile 479319 2018-09-09 16:59:57Z sunpoet $
 
 PORTNAME=	libparserutils
 PORTVERSION=	0.2.4
 CATEGORIES=	devel
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-src
+EXTRACT_SUFX=	-src.tar.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Lexer/parser utility functions for NetSurf
 
 LICENSE=	MIT
@@ -18,14 +18,12 @@ BUILD_DEPENDS=	netsurf-buildsystem>=1.5:devel/netsurf-buildsystem
 USES=		gmake iconv localbase pkgconfig
 USE_LDCONFIG=	yes
 
-MAKE_ENV+=	COMPONENT_TYPE="lib-shared"
+MAKE_ENV=	COMPONENT_TYPE="lib-shared"
 LDFLAGS+=	${ICONV_LIB}
 
-WRKSRC=	${WRKDIR}/${DISTNAME:S/-src//}
-
-PLIST_SUB+=	VERSION=${PORTVERSION}
+PLIST_SUB=	VERSION=${PORTVERSION}
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libparserutils.so*
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libparserutils.so
 
 .include <bsd.port.mk>

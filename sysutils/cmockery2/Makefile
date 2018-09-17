@@ -1,5 +1,5 @@
 # Created by: Harshavardhana
-# $FreeBSD: head/sysutils/cmockery2/Makefile 461924 2018-02-15 13:51:44Z mat $
+# $FreeBSD: head/sysutils/cmockery2/Makefile 479406 2018-09-10 13:14:50Z mat $
 #
 
 PORTNAME=	cmockery2
@@ -21,6 +21,8 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 # Disable gcov on FreeBSD
 # CONFIGURE_ARGS=	--enable-gcov
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '/^docdir =/s|-$$(VERSION)||' \

@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/gstreamer1-vaapi/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/multimedia/gstreamer1-vaapi/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	gstreamer1-vaapi
 PORTVERSION=	1.12.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	https://gstreamer.freedesktop.org/src/gstreamer-vaapi/
 DISTNAME=	gstreamer-vaapi-${PORTVERSION}

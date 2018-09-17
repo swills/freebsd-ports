@@ -1,10 +1,10 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/x11-toolkits/gtk12/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11-toolkits/gtk12/Makefile 479538 2018-09-11 18:34:27Z zeising $
 #    $MCom: ports/x11-toolkits/gtk12/Makefile,v 1.3 2006/10/09 19:31:53 ahze Exp $
 
 PORTNAME=	gtk
 PORTVERSION=	1.2.10
-PORTREVISION=	26
+PORTREVISION=	27
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME/sources/gtk+/1.2
 PKGNAMESUFFIX=	12
@@ -26,6 +26,8 @@ LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 INFO=		gdk gtk
+
+OPTIONS_DEFINE=	NLS
 
 .include <bsd.port.options.mk>
 

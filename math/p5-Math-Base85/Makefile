@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Base85/Makefile 465438 2018-03-24 09:03:20Z amdmi3 $
+# $FreeBSD: head/math/p5-Math-Base85/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Math-Base85
 PORTVERSION=	0.2
@@ -8,7 +8,7 @@ CATEGORIES=	math perl5 converters net
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for base 85 numbers, as referenced by RFC 1924
 
 LICENSE=	ART10 GPLv1+

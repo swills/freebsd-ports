@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/jfsw/Makefile 479017 2018-09-05 10:05:29Z martymac $
+# $FreeBSD: head/games/jfsw/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jfsw
 PORTVERSION=	20131019
@@ -42,6 +42,8 @@ MAKE_ENV+=	DATADIR="${DATADIR}" \
 SUB_FILES=	pkg-message
 
 PORTDOCS=	readme.txt releasenotes.html
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} 's|/usr/X11R6|${LOCALBASE}|' \

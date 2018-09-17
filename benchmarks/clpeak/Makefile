@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/benchmarks/clpeak/Makefile 442362 2017-06-02 00:20:18Z jmd $
+# $FreeBSD: head/benchmarks/clpeak/Makefile 479383 2018-09-10 10:29:06Z mat $
 
 PORTNAME=	clpeak
 PORTVERSION=	1.0g20170524
@@ -16,7 +16,6 @@ LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd
 RUN_DEPENDS=	opencl>=0:devel/opencl
 
 ONLY_FOR_ARCHS=	amd64
-ONLY_FOR_ARCHS_REASON_amd64=	only builds and is supported on amd64
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	krrishnarraj

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kcharselect/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/deskutils/kcharselect/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kcharselect
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,5 +15,7 @@ USE_KDE=	auth codecs config configwidgets coreaddons crash  ecm bookmarks \
 		doctools i18n widgetsaddons xmlgui
 USE_QT=		core dbus gui widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

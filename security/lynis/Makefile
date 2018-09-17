@@ -1,5 +1,5 @@
 # Created by: Cory McIntire (loon@noncensored.com)
-# $FreeBSD: head/security/lynis/Makefile 477871 2018-08-23 14:08:15Z lme $
+# $FreeBSD: head/security/lynis/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	lynis
 PORTVERSION=	2.6.8
@@ -21,6 +21,8 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 
 PORTDOCS=	FAQ README
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e '/tINCLUDE_TARGETS/ s|".*"|"${DATADIR}/include"|; \

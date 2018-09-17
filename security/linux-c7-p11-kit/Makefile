@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/linux-c7-p11-kit/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/security/linux-c7-p11-kit/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	p11-kit
 PORTVERSION=	0.23.5
@@ -12,5 +12,7 @@ RPMVERSION=	3.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

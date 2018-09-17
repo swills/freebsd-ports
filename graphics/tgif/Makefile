@@ -1,5 +1,5 @@
 # Created by: bmc@WillsCreek.COM
-# $FreeBSD: head/graphics/tgif/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/graphics/tgif/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	tgif
 PORTVERSION=	4.2.5
@@ -32,9 +32,9 @@ USE_XORG=	x11 xext xt sm ice
 .if ${PORT_OPTIONS:MNLS}
 USES+=		gettext
 IMAKEDEFINES+=	WITH_NLS
-PLIST_SUB=	NLS=""
+PLIST_SUB+=	NLS=""
 .else
-PLIST_SUB=	NLS="@comment "
+PLIST_SUB+=	NLS="@comment "
 .endif
 .if ${PORT_OPTIONS:MA4SIZE}
 IMAKEDEFINES+=	WITH_A4SIZE

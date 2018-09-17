@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/net-mgmt/nagiosgraph/Makefile 458039 2018-01-04 17:29:28Z zi $
+# $FreeBSD: head/net-mgmt/nagiosgraph/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	nagiosgraph
 PORTVERSION=	1.5.2
@@ -15,7 +15,7 @@ LICENSE=	ART20
 RUN_DEPENDS=	rrdtool>=0:databases/rrdtool \
 		p5-CGI>=0:www/p5-CGI
 
-OPTIONS_DEFINE=		DOCS
+OPTIONS_DEFINE=		DOCS EXAMPLES
 OPTIONS_SINGLE=		NAGIOS
 OPTIONS_SINGLE_NAGIOS=	NAGIOS35 NAGIOS4
 OPTIONS_DEFAULT=	NAGIOS35

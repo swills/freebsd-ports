@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/kaccounts-integration/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/kaccounts-integration/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kaccounts-integration
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -20,5 +20,7 @@ USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons ecm \
 		akonadi
 USE_QT=		dbus core gui network qml widgets xml \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

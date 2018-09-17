@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/liquid-dsp/Makefile 469271 2018-05-07 08:08:43Z mr $
+# $FreeBSD: head/comms/liquid-dsp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	liquid-dsp
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -28,6 +28,8 @@ PORTDOCS=	*
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
+
+OPTIONS_DEFINE=	DOCS
 
 pre-configure:
 	@cd ${WRKSRC}; ${SH} bootstrap.sh

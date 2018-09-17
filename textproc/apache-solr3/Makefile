@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/apache-solr3/Makefile 396695 2015-09-11 18:32:50Z amdmi3 $
+# $FreeBSD: head/textproc/apache-solr3/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	apache-solr
 PORTVERSION=	3.6.2
@@ -23,6 +23,8 @@ USES=		cpe tar:tgz
 CPE_PRODUCT=	solr
 CPE_VENDOR=	apache
 NO_ARCH=	yes
+
+OPTIONS_DEFINE=	EXAMPLES
 
 do-install:
 	cd ${WRKSRC}/dist && ${COPYTREE_SHARE} . ${STAGEDIR}${JAVAJARDIR}

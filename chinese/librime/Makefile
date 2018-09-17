@@ -1,10 +1,10 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/librime/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/chinese/librime/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	librime
 PORTVERSION=	1.2.9
 DISTVERSIONPREFIX=	rime-
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	chinese textproc
 
 MAINTAINER=	lichray@gmail.com

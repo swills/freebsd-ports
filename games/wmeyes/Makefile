@@ -1,5 +1,5 @@
 # Created by: Zenin <zenin@archive.rhps.org>
-# $FreeBSD: head/games/wmeyes/Makefile 365343 2014-08-18 19:13:18Z antoine $
+# $FreeBSD: head/games/wmeyes/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	wmeyes
 PORTVERSION=	1.2
@@ -15,6 +15,8 @@ USE_XORG=	xpm xmu
 
 PORTDOCS=	README
 PLIST_FILES=	bin/wmeyes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|Target(|TargetNoMan(|g' ${WRKSRC}/Imakefile

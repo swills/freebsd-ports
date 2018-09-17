@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/x11/wbarconf/Makefile 455536 2017-12-04 20:25:18Z antoine $
+# $FreeBSD: head/x11/wbarconf/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	wbarconf
 PORTVERSION=	0.7.2.2
@@ -22,6 +22,8 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 PORTDOCS=	README COPYING
 INSTALLS_ICONS=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

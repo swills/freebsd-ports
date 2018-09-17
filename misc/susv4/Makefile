@@ -1,5 +1,5 @@
 # Based on a port created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/misc/susv4/Makefile 423486 2016-10-07 21:49:04Z mandree $
+# $FreeBSD: head/misc/susv4/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	susv4
 PORTVERSION=	20160930
@@ -19,6 +19,8 @@ USES=		tar:bzip2
 NO_ARCH=	yes
 NO_BUILD=	yes
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

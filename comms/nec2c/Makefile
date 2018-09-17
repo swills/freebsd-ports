@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/nec2c/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/nec2c/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	nec2c
 PORTVERSION=	.9
@@ -14,7 +14,7 @@ COMMENT=	Used to calculate antenna patterns useful to ham radio
 
 LIB_DEPENDS=	libccm.so:math/ccmath
 
-OPTIONS_DEFINE=	EXAMPLES
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nec2c ${STAGEDIR}${PREFIX}/bin

@@ -1,5 +1,5 @@
 # Created by: Anton Lysenok <bart@tapolsky.net.ua>
-# $FreeBSD: head/sysutils/clonehdd/Makefile 340147 2014-01-18 07:46:27Z jgh $
+# $FreeBSD: head/sysutils/clonehdd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	clonehdd
 PORTVERSION=	2.0.3
@@ -17,6 +17,8 @@ USE_PERL5=	run
 PLIST_FILES=	sbin/clonehdd man/man8/${PORTNAME}.8.gz
 NO_BUILD=	yes
 PORTDOCS=	CHANGES README
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/clonehdd ${STAGEDIR}${PREFIX}/sbin

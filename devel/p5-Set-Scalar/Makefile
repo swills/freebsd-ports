@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/devel/p5-Set-Scalar/Makefile 464574 2018-03-15 08:11:12Z tobik $
+# $FreeBSD: head/devel/p5-Set-Scalar/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Set-Scalar
 PORTVERSION=	1.29
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module containing a set of scalars, including references
 
 LICENSE=	ART10 GPLv1+

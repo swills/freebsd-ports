@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/czmq4/Makefile 465443 2018-03-24 09:56:09Z tcberner $
+# $FreeBSD: head/net/czmq4/Makefile 479924 2018-09-17 11:22:26Z rene $
 
 PORTNAME=	czmq
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	4.1.1
 CATEGORIES=	net
 PKGNAMESUFFIX=	4
 
-MAINTAINER=	kenji@k2r.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-level C Binding for ZeroMQ (Version 4)
 
 LICENSE=	MPL20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/lua-sysctl/Makefile 461385 2018-02-10 11:34:32Z riggs $
+# $FreeBSD: head/devel/lua-sysctl/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	sysctl
 PORTVERSION=	2.0
@@ -18,6 +18,8 @@ USES=		pkgconfig lua
 USE_GITHUB=	yes
 GH_ACCOUNT=	kAworu
 GH_PROJECT=	lua-${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e "s/5.1/${LUA_VER}/g" ${WRKSRC}/Makefile

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdegraphics-thumbnailers/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/kdegraphics-thumbnailers/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kdegraphics-thumbnailers
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,5 +12,7 @@ USE_KDE=	completion config coreaddons ecm jobwidgets libkdcraw \
 		libkexiv2 kio service widgetsaddons
 USE_QT=		core gui network widgets \
 		buildtools_build qmake_build
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: D'Arcy J.M. Cain <darcy@druid.net>
-# $FreeBSD: head/devel/generate/Makefile 404830 2015-12-30 11:09:03Z rakuco $
+# $FreeBSD: head/devel/generate/Makefile 479435 2018-09-10 16:04:04Z fernape $
 
 PORTNAME=	generate
 PORTVERSION=	2.8
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.druid.net/darcy/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	darcy@druid.net
 COMMENT=	Simple text pre-processor
 
 USES=		gmake tar:tgz

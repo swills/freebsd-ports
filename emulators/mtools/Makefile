@@ -1,5 +1,5 @@
 # Created by: jmz
-# $FreeBSD: head/emulators/mtools/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/emulators/mtools/Makefile 479405 2018-09-10 13:11:23Z mat $
 
 PORTNAME=	mtools
 PORTVERSION=	4.0.10
@@ -38,10 +38,10 @@ CONFIGURE_ENV+=	ac_cv_header_iconv_h=no
 
 .if ${PORT_OPTIONS:MX11}
 USE_XORG=	x11 sm ice xau
-PLIST_SUB=	X11=""
+PLIST_SUB+=	X11=""
 .else
 CONFIGURE_ARGS+=	--without-x
-PLIST_SUB=	X11="@comment "
+PLIST_SUB+=	X11="@comment "
 MAKE_ENV+=	WITHOUT_X11=yes
 .endif
 

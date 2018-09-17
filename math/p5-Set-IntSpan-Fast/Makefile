@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/math/p5-Set-IntSpan-Fast/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Set-IntSpan-Fast/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Set-IntSpan-Fast
 PORTVERSION=	1.15
@@ -8,7 +8,7 @@ CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fast handling of sets containing integer spans
 
 BUILD_DEPENDS=	p5-Data-Types>=0:devel/p5-Data-Types

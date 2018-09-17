@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/spdylay/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/www/spdylay/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	spdylay
 PORTVERSION=	1.4.0
@@ -33,6 +33,8 @@ USE_LDCONFIG=	yes
 USES=		compiler:c++11-lang gnome libtool pathfix pkgconfig ssl tar:xz
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/examples/spdycli ${STAGEDIR}${PREFIX}/bin/

@@ -1,5 +1,5 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/shells/jailkit/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/shells/jailkit/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jailkit
 PORTVERSION=	2.19
@@ -18,6 +18,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PYTHONINTERPRETER=${PYTHON_CMD}
 
 PORTDOCS=	COPYRIGHT README.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/sysutils/bacula-docs/Makefile 424555 2016-10-24 09:55:02Z mat $
+# $FreeBSD: head/sysutils/bacula-docs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bacula-docs
 PORTVERSION=	7.4.4
@@ -13,6 +13,8 @@ USES=		tar:bz2
 NO_BUILD=	yes
 
 PORTDOCS=	*.pdf
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

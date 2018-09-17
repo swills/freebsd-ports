@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/messagelib/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/net/messagelib/Makefile 479406 2018-09-10 13:14:50Z mat $
  
 PORTNAME=	messagelib
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -32,7 +32,7 @@ USE_QT=		core dbus gui location network printsupport qml quick testlib \
 USE_LDCONFIG=	yes
 
 
-OPTIONS_DEFINE=		INOTIFY
+OPTIONS_DEFINE=		INOTIFY DOCS
 OPTIONS_DEFAULT=	INOTIFY
 OPTIONS_SUB=		yes
 

@@ -1,5 +1,5 @@
 # Created by: nishida@sfc.wide.ad.jp
-# $FreeBSD: head/net/tcpillust/Makefile 375100 2014-12-20 19:23:19Z bapt $
+# $FreeBSD: head/net/tcpillust/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tcpillust
 PORTVERSION=	2.01
@@ -24,6 +24,8 @@ PLIST_FILES=	bin/tcpillust \
 		share/tcpillust/zoomout.xbm
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 .for file in binread.c button.c draw.c parser.c tcpillust.c tcpdump/print-tcp.c

@@ -1,5 +1,5 @@
 # Created by: SeaD
-# $FreeBSD: head/security/ipguard/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/ipguard/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ipguard
 PORTVERSION=	1.04
@@ -18,6 +18,8 @@ USE_RC_SUBR=	${PORTNAME}
 PORTDOCS=	COPYRIGHT NEWS README README.tcpdump README.log ethers.sample rfc826.txt
 PLIST_FILES=	sbin/ipguard \
 		man/man8/${PORTNAME}.8.gz
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

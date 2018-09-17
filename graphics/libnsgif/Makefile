@@ -1,13 +1,13 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/libnsgif/Makefile 478997 2018-09-05 02:29:42Z swills $
+# $FreeBSD: head/graphics/libnsgif/Makefile 479319 2018-09-09 16:59:57Z sunpoet $
 
 PORTNAME=	libnsgif
 PORTVERSION=	0.2.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-src
+EXTRACT_SUFX=	-src.tar.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	NetSurf GIF Decoder
 
 LICENSE=	MIT
@@ -17,11 +17,10 @@ BUILD_DEPENDS=	netsurf-buildsystem>=1.5:devel/netsurf-buildsystem
 
 USES=		gmake
 USE_LDCONFIG=	yes
-WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
-MAKE_ENV+=	COMPONENT_TYPE="lib-shared"
-PLIST_SUB+=	VERSION=${PORTVERSION}
+MAKE_ENV=	COMPONENT_TYPE="lib-shared"
+PLIST_SUB=	VERSION=${PORTVERSION}
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libnsgif.so*
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libnsgif.so
 
 .include <bsd.port.mk>

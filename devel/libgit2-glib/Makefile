@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/devel/libgit2-glib/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/libgit2-glib/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 # Also update devel/libgit2, devel/rubygem-rugged, devel/py-pygit2
 
@@ -27,5 +27,7 @@ GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CONFIGURE_ARGS=	--disable-python
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

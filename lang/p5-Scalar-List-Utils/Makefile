@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Scalar-List-Utils/Makefile 462500 2018-02-21 12:55:34Z tobez $
+# $FreeBSD: head/lang/p5-Scalar-List-Utils/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Scalar-List-Utils
 PORTVERSION=	1.50
@@ -8,7 +8,7 @@ CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl subroutines that would be nice to have in the perl core
 
 LICENSE=	ART10 GPLv1+

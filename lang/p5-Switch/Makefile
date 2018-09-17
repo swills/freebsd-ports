@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/lang/p5-Switch/Makefile 472437 2018-06-15 09:04:34Z amdmi3 $
+# $FreeBSD: head/lang/p5-Switch/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Switch
 PORTVERSION=	2.17
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CHORNY
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Switch - A switch statement for Perl
 
 LICENSE=	ART10 GPLv1+

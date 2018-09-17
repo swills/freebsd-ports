@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/lapack95/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/lapack95/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	lapack95
 PORTVERSION=	1.0
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	LAPACK95, Fortran90/95 wrapper for LAPACK
 
 USES=		fortran tar:tgz
+
+OPTIONS_DEFINE=	EXAMPLES
 
 OPTIONS_RADIO=	BLAS
 OPTIONS_RADIO_BLAS=	REFERENCE ATLAS

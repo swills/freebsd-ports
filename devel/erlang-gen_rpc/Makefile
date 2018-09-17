@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-gen_rpc/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-gen_rpc/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	gen_rpc
 PORTVERSION=	2.1.0
@@ -17,5 +17,7 @@ GH_ACCOUNT=	priestjim
 ERL_BUILD_DEPS=	devel/erlang-hut \
 		devel/erlang-ssl_verify_fun
 ERL_RUN_DEPS:=  ${ERL_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

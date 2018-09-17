@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/openfx-misc/Makefile 476512 2018-08-06 13:02:34Z olivier $
+# $FreeBSD: head/graphics/openfx-misc/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	openfx-misc
 PORTVERSION=	2.3.14
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	olivier@FreeBSD.org

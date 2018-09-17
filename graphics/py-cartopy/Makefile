@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/py-cartopy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/graphics/py-cartopy/Makefile 479708 2018-09-13 21:53:13Z sunpoet $
 
 PORTNAME=	cartopy
 PORTVERSION=	0.16.0
@@ -14,7 +14,7 @@ COMMENT=	Cartographic library with Matplotlib support for visualisation
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
-BUILD_DEPENDS=	geos>-3.3.3:graphics/geos \
+BUILD_DEPENDS=	geos>=3.3.3:graphics/geos \
 		proj>=4.9.0:graphics/proj \
 		${PYNUMPY}
 LIB_DEPENDS=	libgeos.so:graphics/geos \

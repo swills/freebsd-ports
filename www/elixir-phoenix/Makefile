@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-phoenix/Makefile 474128 2018-07-07 19:26:55Z olgeni $
+# $FreeBSD: head/www/elixir-phoenix/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	phoenix
 PORTVERSION=	1.3.3
@@ -15,7 +15,7 @@ USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	phoenixframework
 
-OPTIONS_DEFINE=	COWBOY
+OPTIONS_DEFINE=	COWBOY DOCS
 COWBOY_DESC=	Use Cowboy library
 
 COWBOY_BUILD_DEPENDS=	erlang-cowboy>=0:www/erlang-cowboy

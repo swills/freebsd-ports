@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/textproc/bibtool/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/textproc/bibtool/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bibtool
 PORTVERSION=	2.67
@@ -22,6 +22,8 @@ MAKEFILE=	makefile
 INSTALL_TARGET=	install install.man
 
 PORTDOCS=	bibtool.pdf ref_card.pdf c_lib.pdf
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} 's/bibtex$$/&8/' ${WRKSRC}/doc/Makefile

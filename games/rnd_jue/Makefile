@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/rnd_jue/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/games/rnd_jue/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	rnd_jue
 PORTVERSION=	3.3.0.0
@@ -44,6 +44,8 @@ ICON_SIZES=	32x32 48x48 64x64 72x72 96x96
 
 DESKTOP_ENTRIES="R'n'D jue" "" "${PORTNAME}" \
 		"${PORTNAME}" "Game;ArcadeGame;" ""
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract-script:
 	@(cd ${WRKDIR}/rocksndiamonds* && ${COPYTREE_SHARE} levels ${WRKSRC})

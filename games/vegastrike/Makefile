@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/vegastrike/Makefile 478099 2018-08-26 05:11:38Z tobik $
+# $FreeBSD: head/games/vegastrike/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	vegastrike
 PORTVERSION=	0.5.1.r1
@@ -43,7 +43,7 @@ BIN_FILES=	bin/vegastrike bin/vssetup bin/vegaserver
 PLIST_FILES=	${BIN_FILES}
 PORTDOCS=	README
 
-OPTIONS_DEFINE=	MESHER
+OPTIONS_DEFINE=	MESHER DOCS
 MESHER_DESC=	Enable mesher modelling tool
 
 MESHER_PLIST_FILES=	bin/mesher

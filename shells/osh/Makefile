@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/shells/osh/Makefile 406248 2016-01-16 17:23:28Z johans $
+# $FreeBSD: head/shells/osh/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	osh
 DISTVERSION=	20160108
@@ -17,6 +17,8 @@ PORTDOCS=	*
 PORTEXAMPLES=	*
 INSTALL_TARGET=	install install-doc install-exp
 PLIST_SUB+=	VER=${DISTVERSION}
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -E -e 's|(DESTEXPDIR)=|\1?=|' \

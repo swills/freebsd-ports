@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-Ditto/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/devel/p5-Devel-Ditto/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Devel-Ditto
 PORTVERSION=	0.06
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Devel::Ditto - Identify where print output comes from
 
 BUILD_DEPENDS=	${RUN_DEPENDS}

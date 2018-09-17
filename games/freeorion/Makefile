@@ -1,9 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeorion/Makefile 478649 2018-09-01 01:20:34Z amdmi3 $
+# $FreeBSD: head/games/freeorion/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	freeorion
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4.8
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

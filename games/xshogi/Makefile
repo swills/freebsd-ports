@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
-# $FreeBSD: head/games/xshogi/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/xshogi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	xshogi
 PORTVERSION=	1.4.2
@@ -18,5 +18,7 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 
 PORTDOCS=	README.xboard BUGS
 PLIST_FILES=	bin/xshogi man/man6/xshogi.6.gz
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

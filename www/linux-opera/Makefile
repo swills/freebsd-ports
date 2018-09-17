@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/linux-opera/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/www/linux-opera/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	opera
 PORTVERSION=	${OPERA_VER}
@@ -37,6 +37,8 @@ RENAME=		opera lib/opera \
 		share/applications/opera-browser.desktop \
 		share/doc/opera share/opera man/man1/opera.1 \
 		share/mime/packages/opera-extension.xml
+
+OPTIONS_DEFINE=	DOCS
 
 post-extract:
 	@${GUNZIP_CMD} ${WRKSRC}/share/man/man1/*.gz

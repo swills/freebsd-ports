@@ -1,5 +1,5 @@
 # Created by: Chris Rees <utisoft@gmail.com>
-# $FreeBSD: head/science/jstrack/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/science/jstrack/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jstrack
 PORTVERSION=	3.3.4
@@ -29,6 +29,8 @@ SUB_FILES=	${PORTNAME}.sh
 SUB_LIST=	WISH=${WISH}
 
 PORTDOCS=	00-README_FIRST.txt HISTORY install.txt jstrackdoc-v2.pdf
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|' ${WRKSRC}/paths.tcl

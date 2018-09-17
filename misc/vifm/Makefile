@@ -1,5 +1,5 @@
 # Created by: Stefan Walter <swalter@lettermax.de>
-# $FreeBSD: head/misc/vifm/Makefile 462561 2018-02-22 06:09:21Z misha $
+# $FreeBSD: head/misc/vifm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	vifm
 PORTVERSION=	0.9.1
@@ -17,5 +17,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-gtk
 
 USE_GITHUB=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

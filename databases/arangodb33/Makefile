@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/arangodb33/Makefile 472082 2018-06-09 19:25:56Z riggs $
+# $FreeBSD: head/databases/arangodb33/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	arangodb
 DISTVERSIONPREFIX=	v
@@ -30,6 +30,8 @@ CMAKE_ARGS=	-DBASE_LD_FLAGS:STRING="-L${BUILD_WRKSRC}/3rdParty/V8/v5.7.492.77/x6
 USERS=		arangodb
 GROUPS=		arangodb
 USE_RC_SUBR=	arangod
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 

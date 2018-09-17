@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/relx/Makefile 473840 2018-07-03 14:55:18Z olgeni $
+# $FreeBSD: head/devel/relx/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	relx
 PORTVERSION=	3.26.0
@@ -39,6 +39,8 @@ REBAR_DEPS=	bbmustache-1.0.4 \
 DISTFILES+=	${_dep}.tar:hex
 .endfor
 
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
 # convenience target to rebuild the relx cache file
 build-cache:
 	cd ${WRKDIR} && ${TAR} -c -v -z -f relx-cache-${CACHE_VERSION}${EXTRACT_SUFX} .cache
@@ -68,8 +70,6 @@ post-build:
 	@${LN} -s ${WRKSRC}/_build/dev/lib/${PORTNAME}/ebin ${WRKSRC}
 
 do-install:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/erlang/lib/${PORTNAME}-${PORTVERSION}
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/erlang/lib/${PORTNAME}-${PORTVERSION}/ebin
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/erlang/lib/${PORTNAME}-${PORTVERSION}/include
@@ -80,6 +80,11 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/_build/default/lib/relx/ebin/* ${STAGEDIR}${PREFIX}/lib/erlang/lib/${PORTNAME}-${PORTVERSION}/ebin
 	cd ${WRKSRC}/priv && ${COPYTREE_SHARE} \* ${STAGEDIR}${PREFIX}/lib/erlang/lib/${PORTNAME}-${PORTVERSION}/priv
 	${INSTALL_SCRIPT} ${WRKSRC}/_build/default/bin/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 

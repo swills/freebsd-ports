@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/cvs2svn/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/cvs2svn/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	cvs2svn
 PORTVERSION=	2.5.0
@@ -54,6 +54,8 @@ MANPAGES=	cvs2svn.1.gz \
 		cvs2bzr.1.gz
 
 PLIST_FILES+=	${MANPAGES:S|^|man/man1/|}
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 # be consistent with PORTVERSION

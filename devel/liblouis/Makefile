@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/liblouis/Makefile 471756 2018-06-05 12:47:12Z wen $
+# $FreeBSD: head/devel/liblouis/Makefile 479242 2018-09-08 09:54:56Z wen $
 
 PORTNAME=	liblouis
-PORTVERSION=	3.6.0
+PORTVERSION=	3.7.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/husky-hpt/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/husky-hpt/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	husky-hpt
 
@@ -14,6 +14,8 @@ INFO=		hpt
 
 MASTERDIR=	${.CURDIR}/../husky
 COMPONENT_SUBDIR=       hpt
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	${REINPLACE_CMD} -e 's^/path/to/config^${PREFIX}/etc/fido/config^' \

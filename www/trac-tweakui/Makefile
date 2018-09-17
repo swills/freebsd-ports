@@ -1,5 +1,5 @@
 # Created by: glarkin
-# $FreeBSD: head/www/trac-tweakui/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/trac-tweakui/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	tweakui
 PORTVERSION=	0.1.7413
@@ -26,6 +26,8 @@ PORTEXAMPLES=	*
 SUB_FILES=	pkg-message
 
 WRKSRC=		${WRKDIR}/trac${PORTNAME}plugin/0.11
+
+OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	cd ${WRKSRC}/tractweakui/htdocs && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}

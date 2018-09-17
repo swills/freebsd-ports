@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-marcel/Makefile 467080 2018-04-11 19:37:54Z sunpoet $
+# $FreeBSD: head/devel/rubygem-marcel/Makefile 479857 2018-09-16 00:06:59Z sunpoet $
 
 PORTNAME=	marcel
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-mimemagic>=0.3.2:misc/rubygem-mimemagic
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

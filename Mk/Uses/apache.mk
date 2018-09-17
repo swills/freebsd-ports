@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/Uses/apache.mk 464175 2018-03-11 14:23:28Z brnrd $
+# $FreeBSD: head/Mk/Uses/apache.mk 479418 2018-09-10 13:41:13Z mat $
 #
 # apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -299,9 +299,9 @@ APACHEMODDIR=		libexec/apache${APACHE_VERSION:S/.//}
 APACHEINCLUDEDIR=	include/apache${APACHE_VERSION:S/.//}
 APACHEETCDIR=		etc/apache${APACHE_VERSION:S/.//}
 .if ${APACHE_VERSION} == 2.5
-APACHE_PORT?=		www/apache${APACHE_VERSION:S/.//}-devel
+_APACHE_PORT?=		www/apache${APACHE_VERSION:S/.//}-devel
 .else
-APACHE_PORT?=		www/apache${APACHE_VERSION:S/.//}
+_APACHE_PORT?=		www/apache${APACHE_VERSION:S/.//}
 .endif
 
 PLIST_SUB+=	APACHEMODDIR="${APACHEMODDIR}" \
@@ -320,11 +320,11 @@ PKGNAMEPREFIX?=	${APACHE_PKGNAMEPREFIX}
 .endif
 
 .if defined(_APACHE_BUILD_DEP)
-BUILD_DEPENDS+=	${APXS}:${APACHE_PORT}
+BUILD_DEPENDS+=	${APXS}:${_APACHE_PORT}
 .endif
 
 .if defined(_APACHE_RUN_DEP)
-RUN_DEPENDS+=	${APXS}:${APACHE_PORT}
+RUN_DEPENDS+=	${APXS}:${_APACHE_PORT}
 .endif
 
 PLIST_SUB+=	AP_NAME="${SHORTMODNAME}"

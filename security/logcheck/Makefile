@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dan@freebsddiary.org>
-# $FreeBSD: head/security/logcheck/Makefile 471201 2018-05-31 12:13:59Z krion $
+# $FreeBSD: head/security/logcheck/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	logcheck
 PORTVERSION=	1.3.19
@@ -27,7 +27,7 @@ BASEDIR?=	# None. portlint compliance
 DBDIR=		${BASEDIR}/var/db/${PORTNAME}
 RUNDIR=		${BASEDIR}/var/run/${PORTNAME}
 
-OPTIONS_DEFINE=	CRON
+OPTIONS_DEFINE=	CRON DOCS EXAMPLES
 CRON_DESC=	Install cron script automatically
 .if !defined(BATCH)
 OPTIONS_DEFAULT=CRON

@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/x11-toolkits/linux-c7-openmotif/Makefile 460332 2018-01-29 20:25:22Z tijl $
+# $FreeBSD: head/x11-toolkits/linux-c7-openmotif/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	motif
 PORTVERSION=	2.3.4
@@ -17,6 +17,8 @@ USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	xorglibs
 USE_LINUX_RPM=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${RM} -r ${WRKSRC}/etc ${WRKSRC}/usr/bin ${WRKSRC}/usr/include \

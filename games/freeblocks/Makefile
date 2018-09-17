@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeblocks/Makefile 385523 2015-05-06 16:04:20Z mat $
+# $FreeBSD: head/games/freeblocks/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	freeblocks
 PORTVERSION=	0.5
@@ -21,7 +21,7 @@ USE_SDL=	sdl mixer image ttf
 
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	HALF_GFX
+OPTIONS_DEFINE=	HALF_GFX DOCS
 HALF_GFX_DESC=	Use 320x240 graphics
 HALF_GFX_CMAKE_ON=	-DHALF_GFX=ON
 

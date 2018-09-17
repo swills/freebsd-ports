@@ -1,5 +1,5 @@
 # Created by: Chin-San Huang <chinsan@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/icinga-core/Makefile 447117 2017-08-02 16:09:43Z lme $
+# $FreeBSD: head/net-mgmt/icinga-core/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	icinga-core
 DISTNAME=	icinga-${PORTVERSION}
@@ -20,7 +20,7 @@ SUB_FILES=	pkg-message
 SUB_LIST=	PREFIX=${PREFIX} \
 		${PLIST_SUB}
 
-OPTIONS_DEFINE=		IDOUTILS
+OPTIONS_DEFINE=		IDOUTILS EXAMPLES
 OPTIONS_RADIO=		PLUGINS
 OPTIONS_RADIO_PLUGINS=	MONPLUGINS NAGPLUGINS
 OPTIONS_DEFAULT=	IDOUTILS MONPLUGINS

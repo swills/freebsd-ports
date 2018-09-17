@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/sysutils/zfsnap2/Makefile 433999 2017-02-13 16:38:32Z mat $
+# $FreeBSD: head/sysutils/zfsnap2/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	zfsnap
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 NO_BUILD=	yes
 USE_GITHUB=	yes
 
-OPTIONS_DEFINE=		BASH ZSH
+OPTIONS_DEFINE=		BASH ZSH DOCS EXAMPLES
 OPTIONS_DEFAULT=	BASH ZSH
 OPTIONS_SUB=	yes
 

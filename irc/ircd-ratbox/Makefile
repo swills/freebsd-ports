@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/irc/ircd-ratbox/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/irc/ircd-ratbox/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ircd-ratbox
 PORTVERSION=	3.0.10
@@ -50,7 +50,7 @@ PORTDOCS=	[^i]*.txt README.* technical/[^i]*.txt Tao-of-IRC.*
 #-- Options ------------------------------------------------------------
 
 OPTIONS_DEFINE=		OPENSSL IPV6 ZIPLINKS SHARED_MODS ASSERT SMALL_NET	\
-			SERVICES SHORTCUTS
+			SERVICES SHORTCUTS DOCS
 ZIPLINKS_DESC=		Support compressed server links
 SHARED_MODS_DESC=	Support shared modules
 ASSERT_DESC=		Enable debugging code

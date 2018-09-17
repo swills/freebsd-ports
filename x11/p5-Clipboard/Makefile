@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/x11/p5-Clipboard/Makefile 476398 2018-08-05 09:07:58Z amdmi3 $
+# $FreeBSD: head/x11/p5-Clipboard/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	Clipboard
 PORTVERSION=	0.13
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:KING
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Access to X11 clipboard from Perl
 
 LICENSE=	ART10 GPLv1+

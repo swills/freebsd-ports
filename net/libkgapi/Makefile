@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libkgapi/Makefile 478777 2018-09-02 10:15:13Z adridg $
+# $FreeBSD: head/net/libkgapi/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libkgapi
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -28,5 +28,7 @@ USE_QT=		core dbus gui location qml network printsupport quick webchannel \
 		buildtools_build qmake_build
 
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

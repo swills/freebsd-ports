@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/elixir-mongo/Makefile 403366 2015-12-09 07:19:04Z vanilla $
+# $FreeBSD: head/databases/elixir-mongo/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	elixir-mongo
 PORTVERSION=	0.5.4
@@ -17,5 +17,7 @@ ELIXIR_APP_NAME=mongo
 
 MIX_BUILD_DEPS=	devel/elixir-bson
 MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

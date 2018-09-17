@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/erlang-snappy/Makefile 444180 2017-06-23 13:50:20Z olgeni $
+# $FreeBSD: head/archivers/erlang-snappy/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	snappy
 PORTVERSION=	1.1.1
@@ -17,5 +17,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	skunkwerks
 GH_PROJECT=	snappy-erlang-nif
 GH_TAGNAME=	0951a1b
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

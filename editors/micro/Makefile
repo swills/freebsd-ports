@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/micro/Makefile 478241 2018-08-27 17:43:46Z swills $
+# $FreeBSD: head/editors/micro/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	micro
 PORTVERSION=	1.4.1
@@ -47,6 +47,8 @@ BUILD_DATE=	August 9, 2018
 
 PLIST_FILES=	bin/micro
 PORTDOCS=	README.md
+
+OPTIONS_DEFINE=	DOCS
 
 do-build:
 	@(cd ${WRKSRC} ; \

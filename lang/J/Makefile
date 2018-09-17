@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/J/Makefile 471550 2018-06-04 14:46:41Z mat $
+# $FreeBSD: head/lang/J/Makefile 479384 2018-09-10 10:29:10Z mat $
 
 PORTNAME=	J
 DISTVERSIONPREFIX=	j
@@ -13,7 +13,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/license.txt
 
 ONLY_FOR_ARCHS=	amd64
-ONLY_FOR_ARCHS_REASON_amd64=	Not built or tested for other archs. i386 needs hostdefs and netdefs files to be generated.
+ONLY_FOR_ARCHS_REASON_i386=	i386 needs hostdefs and netdefs files to be generated.
 
 BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libpcreposix.so:devel/pcre \

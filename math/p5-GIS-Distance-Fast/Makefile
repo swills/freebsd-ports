@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/math/p5-GIS-Distance-Fast/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-GIS-Distance-Fast/Makefile 479390 2018-09-10 11:16:59Z des $
 
 PORTNAME=	GIS-Distance-Fast
 PORTVERSION=	0.07
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:BLUEFEET
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	C implementation of GIS::Distance formulas
 
 BUILD_DEPENDS=	p5-GIS-Distance>=0.07:math/p5-GIS-Distance

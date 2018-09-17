@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/py-click-plugins/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-click-plugins/Makefile 479885 2018-09-16 10:17:23Z ehaupt $
 
 PORTNAME=	click-plugins
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

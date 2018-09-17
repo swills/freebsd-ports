@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/elixir-mode.el/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/lang/elixir-mode.el/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	elixir-mode.el
 DISTVERSIONPREFIX=	v
@@ -20,9 +20,13 @@ GH_PROJECT=	emacs-elixir
 NO_ARCH=	yes
 NO_BUILD=	yes
 
+OPTIONS_DEFINE=	DOCS
+
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.el ${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.md ${STAGEDIR}${DOCSDIR}
 

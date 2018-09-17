@@ -1,5 +1,5 @@
 # Created by: Maxim Ignatenko
-# $FreeBSD: head/devel/erlang-exmpp/Makefile 472000 2018-06-08 13:43:25Z olgeni $
+# $FreeBSD: head/devel/erlang-exmpp/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	exmpp
 PORTVERSION=	0.9.9
@@ -35,6 +35,8 @@ GNU_CONFIGURE_PREFIX=	"${PREFIX}/lib/erlang/lib"
 PLIST_SUB=	VERSION=${PORTVERSION}
 USES=		autoreconf cpe libtool pkgconfig ssl
 CPE_VENDOR=	process-one
+
+OPTIONS_DEFINE=	DOCS
 
 DOCS_CONFIGURE_ENABLE=	documentation
 

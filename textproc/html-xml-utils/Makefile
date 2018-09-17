@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/html-xml-utils/Makefile 471922 2018-06-07 13:38:53Z swills $
+# $FreeBSD: head/textproc/html-xml-utils/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	html-xml-utils
 PORTVERSION=	7.7
@@ -21,7 +21,7 @@ SHEBANG_FILES=	${WRKSRC}/hxcite-mkbib
 CONFIGURE_ARGS=	LDFLAGS=${ICONV_LIB}
 
 OPTIONS_SUB=		yes
-OPTIONS_DEFINE=		CURL IDN IDN2
+OPTIONS_DEFINE=		CURL IDN IDN2 DOCS
 CURL_CONFIGURE_WITH=	libcurl=${LOCALBASE}
 CURL_LIB_DEPENDS=	libcurl.so:ftp/curl
 IDN_CONFIGURE_WITH=	libidn=${LOCALBASE}

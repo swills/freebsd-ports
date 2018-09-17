@@ -1,8 +1,8 @@
 # Created by: Kevin Bowling <k@kev009.com>
-# $FreeBSD: head/net/libnss-cache/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
+# $FreeBSD: head/net/libnss-cache/Makefile 479754 2018-09-14 02:28:32Z kbowling $
 
 PORTNAME=	libnss-cache
-PORTVERSION=	0.15
+PORTVERSION=	0.16
 DISTVERSIONPREFIX=	version/
 CATEGORIES=	net
 

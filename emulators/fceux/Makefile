@@ -1,9 +1,9 @@
 # Created by: HIYAMA Takeshi <gibbon@cocoa.freemail.ne.jp>
-# $FreeBSD: head/emulators/fceux/Makefile 478002 2018-08-25 05:12:35Z tobik $
+# $FreeBSD: head/emulators/fceux/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	fceux
 PORTVERSION=	2.2.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	emulators
 MASTER_SITES=	SF/fceultra/Source%20Code/${PORTVERSION}%20src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src

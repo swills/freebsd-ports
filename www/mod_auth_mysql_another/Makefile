@@ -1,5 +1,5 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/www/mod_auth_mysql_another/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_auth_mysql_another/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	3.0.0
@@ -24,6 +24,8 @@ AP_LIB=	${LOCALBASE}/lib/mysql
 AP_EXTRAS=	-lmysqlclient_r -lz -lm
 
 PORTDOCS=	CONFIGURE CHANGES
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

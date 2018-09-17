@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/fonttosfnt/Makefile 476195 2018-08-01 20:11:30Z zeising $
+# $FreeBSD: head/x11-fonts/fonttosfnt/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	fonttosfnt
 PORTVERSION=	1.0.5
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	x11@FreeBSD.org

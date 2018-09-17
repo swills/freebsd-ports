@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmo-netif/Makefile 477569 2018-08-19 12:51:26Z swills $
+# $FreeBSD: head/devel/libosmo-netif/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libosmo-netif
 PORTVERSION=	0.3.0
@@ -22,11 +22,12 @@ INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 PORTDOCS=	*
 
-OPTIONS_DEFINE= DOXYGEN DAHDI
+OPTIONS_DEFINE= DOXYGEN DAHDI DOCS
 
 DOXYGEN_DESC=	Build documentation
 DAHDI_DESC=	Build DAHDI input driver
 
+DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_BUILD_DEPENDS=  doxygen:devel/doxygen \
 			dot:graphics/graphviz
 DOXYGEN_CONFIGURE_ENV_OFF=ac_cv_path_DOXYGEN=false

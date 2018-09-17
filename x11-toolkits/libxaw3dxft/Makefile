@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/libxaw3dxft/Makefile 461863 2018-02-15 08:24:51Z yuri $
+# $FreeBSD: head/x11-toolkits/libxaw3dxft/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	libxaw3dxft
 DISTVERSION=	1.6.2e
@@ -25,6 +25,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include/freetype2
 
 DOCSDIR=	${LOCALBASE}/share/doc/libXaw3dXft
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} '/^typedef.*Pixel;/d' ${WRKSRC}/src/Xaw3dXft.c

@@ -1,5 +1,5 @@
 # Created by: kstailey
-# $FreeBSD: head/www/amphetadesk/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/amphetadesk/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	amphetadesk
 PORTVERSION=	0.93.1
@@ -37,6 +37,8 @@ SUB_LIST+=	PERL="${PERL}"
 .endif
 
 PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 

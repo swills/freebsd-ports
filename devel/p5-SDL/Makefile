@@ -1,8 +1,9 @@
 # Created by: Klaus Goger <klaus.goger@reflex.at>
-# $FreeBSD: head/devel/p5-SDL/Makefile 477528 2018-08-18 20:42:12Z sunpoet $
+# $FreeBSD: head/devel/p5-SDL/Makefile 479538 2018-09-11 18:34:27Z zeising $
 
 PORTNAME=	SDL
 PORTVERSION=	2.548
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

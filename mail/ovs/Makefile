@@ -1,5 +1,5 @@
 # Created by: Xavier Beaudouin <kiwi@oav.net>
-# $FreeBSD: head/mail/ovs/Makefile 414458 2016-05-02 16:08:56Z zeising $
+# $FreeBSD: head/mail/ovs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ovs
 PORTVERSION=	1.05
@@ -34,6 +34,8 @@ PLIST_SUB=	CGIDIR=${CGIDIR:S,${PREFIX}/,,} WWWROOT=${WWWROOT:S,${PREFIX}/,,} \
 		OVS_USER=${OVS_USER} OVS_GROUP=${OVS_GROUP}
 
 PORTDOCS=	README CHANGES COPYING CHANGES.old README.old
+
+OPTIONS_DEFINE=	DOCS
 
 pre-everything::
 	@${ECHO_MSG} ""

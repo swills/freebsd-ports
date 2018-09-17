@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/irc/ratbox-respond/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/irc/ratbox-respond/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	ratbox-respond
 PORTVERSION=	1.0
@@ -21,6 +21,8 @@ GNU_CONFIGURE=	yes
 PORTDOCS=	challenge.txt
 PORTEXAMPLES=	*
 PLIST_FILES=	bin/ratbox-respond bin/makekeypair
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-install:
 	${INSTALL_PROGRAM} ${BUILD_WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kalarm/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/deskutils/kalarm/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	kalarm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -29,5 +29,7 @@ SHEBANG_FILES=	src/kconf_update/kalarm*.pl
 
 DESCR=		${.CURDIR:H:H}/deskutils/kdepim/pkg-descr
 
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

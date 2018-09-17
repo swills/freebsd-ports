@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/l2tpd/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/l2tpd/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	l2tpd
 PORTVERSION=	0.69
@@ -17,6 +17,8 @@ USES=		compiler:nestedfct
 
 PORTDOCS=	README
 ETCDIR=		${PREFIX}/etc/l2tp
+
+OPTIONS_DEFINE=	DOCS
 
 do-configure:
 	${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/doc/l2tpd.8 \

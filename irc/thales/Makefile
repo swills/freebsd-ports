@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/irc/thales/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/irc/thales/Makefile 479407 2018-09-10 13:15:47Z mat $
 
 PORTNAME=	thales
 PORTVERSION=	1.0
@@ -19,7 +19,7 @@ SHEBANG_FILES=	examples/MRTG/thalesinfo.pl
 USE_MYSQL=	yes
 USE_RC_SUBR=	thales
 
-OPTIONS_DEFINE=	MODES DOCS
+OPTIONS_DEFINE=	MODES DOCS EXAMPLES
 OPTIONS_RADIO=	IRCD
 OPTIONS_RADIO_IRCD=	HYBRID IRCDRU UNREAL
 OPTIONS_DEFAULT=MODES UNREAL

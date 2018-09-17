@@ -1,5 +1,5 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/ora2pg/Makefile 477578 2018-08-19 14:26:10Z pi $
+# $FreeBSD: head/databases/ora2pg/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	ora2pg
 PORTVERSION=	19.0
@@ -21,6 +21,8 @@ USES=		perl5
 USE_PERL5=	configure
 USE_GITHUB=	yes
 GH_ACCOUNT=	darold
+
+OPTIONS_DEFINE=	DOCS
 
 do-patch:
 	${REINPLACE_CMD} -e '/install_all :/,/};/s=$$CONFDIR=${STAGEDIR}${ETCDIR}=g' \

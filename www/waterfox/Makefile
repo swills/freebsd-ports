@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/waterfox/Makefile 474659 2018-07-15 04:34:43Z jbeich $
+# $FreeBSD: head/www/waterfox/Makefile 479823 2018-09-15 08:48:54Z jbeich $
 
 PORTNAME=	waterfox
-DISTVERSION=	56.2.2
+DISTVERSION=	56.2.3
 CATEGORIES=	www ipv6
 
 MAINTAINER=	jbeich@FreeBSD.org

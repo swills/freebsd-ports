@@ -1,8 +1,9 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/devel/go-godef/Makefile 456183 2017-12-12 20:20:34Z ultima $
+# $FreeBSD: head/devel/go-godef/Makefile 479913 2018-09-17 02:00:30Z ultima $
 
 PORTNAME=	godef
-PORTVERSION=	g20170920
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.0.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	go-
 

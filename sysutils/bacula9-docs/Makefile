@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/sysutils/bacula9-docs/Makefile 478126 2018-08-26 14:07:17Z dvl $
+# $FreeBSD: head/sysutils/bacula9-docs/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	bacula
 PORTVERSION=	9.2.1
@@ -17,6 +17,8 @@ USES=		tar:bz2
 NO_BUILD=	yes
 
 PORTDOCS=	*.pdf
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/security/tclsasl/Makefile 453458 2017-11-04 13:07:41Z zi $
+# $FreeBSD: head/security/tclsasl/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	tclsasl
 PORTVERSION=	1.0
@@ -19,6 +19,8 @@ CONFIGURE_ARGS=	--with-cyrus-sasl=${LOCALBASE}
 CONFIGURE_ENV=	INSTALL="${INSTALL_DATA}" STAGEDIR="${STAGEDIR}"
 
 PORTDOCS=	tclsasl.html
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

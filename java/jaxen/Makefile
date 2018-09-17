@@ -1,5 +1,5 @@
 # Created by: Herve Quiroz <herve.quiroz@esil.univ-mrs.fr>
-# $FreeBSD: head/java/jaxen/Makefile 346734 2014-03-02 05:22:25Z tabthorpe $
+# $FreeBSD: head/java/jaxen/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	jaxen
 PORTVERSION=	1.0
@@ -20,6 +20,8 @@ PLIST_FILES+=	${JARFILES:S,^lib/,,:S,^,%%JAVAJARDIR%%/,}
 
 DOCS=		default.css download.html faq.html index.html javadoc status.html style
 PORTDOCS=	LICENSE ${DOCS}
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	@${ECHO_MSG} -n ">> Installing JAR files in ${JAVAJARDIR}..."

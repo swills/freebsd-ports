@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/artikulate/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/misc/artikulate/Makefile 479406 2018-09-10 13:14:50Z mat $
 
 PORTNAME=	artikulate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,5 +18,7 @@ USE_QT=		core dbus gui multimedia network qml quick sql testlib widgets \
 		xml xmlpatterns \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

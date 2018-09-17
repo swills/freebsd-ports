@@ -1,5 +1,5 @@
 # Created by: Frank Altpeter <frank@altpeter.de>
-# $FreeBSD: head/net-im/centerim/Makefile 464936 2018-03-18 17:16:56Z yuri $
+# $FreeBSD: head/net-im/centerim/Makefile 479433 2018-09-10 15:32:24Z tobik $
 
 PORTNAME=	centerim
 PORTVERSION=	4.22.10
@@ -19,6 +19,7 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpg-error.so:security/libgpg-error
 
 USES=		iconv gmake ncurses pkgconfig python shebangfix ssl
+USE_CXXSTD=	gnu++98
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 CXXFLAGS+=	-I${LOCALBASE}/include
@@ -29,7 +30,7 @@ SHEBANG_FILES=	misc/CenterIMLog2HTML.py misc/cimformathistory misc/cimextracthis
 gawk_OLD_CMD=	/bin/gawk
 gawk_CMD=	/usr/bin/awk
 
-OPTIONS_DEFINE=	NLS MULTIBYTE FRIBIDI MSN YAHOO IRC JABBER GPGME RSS LJ GG
+OPTIONS_DEFINE=	NLS MULTIBYTE FRIBIDI MSN YAHOO IRC JABBER GPGME RSS LJ GG DOCS
 
 FRIBIDI_DESC=	Fribidi Support
 MSN_DESC=	MSN Protocol
