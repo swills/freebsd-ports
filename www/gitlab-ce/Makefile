@@ -73,7 +73,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-hashie-forbidden_attributes>=0:devel/rubygem-hashie-forbidden_attributes \
 	rubygem-kaminari-rails4>=1.0:www/rubygem-kaminari-rails4 \
 	rubygem-hamlit>=2.8.8:www/rubygem-hamlit \
-	rubygem-carrierwave>=1.1:www/rubygem-carrierwave \
+	rubygem-carrierwave>=1.2.3:www/rubygem-carrierwave \
 	rubygem-mini_magick>=0:graphics/rubygem-mini_magick \
 	rubygem-dropzonejs-rails07>=0.7.1:www/rubygem-dropzonejs-rails07 \
 	rubygem-fog-aws2>=2.0.1:net/rubygem-fog-aws2 \
