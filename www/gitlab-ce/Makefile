@@ -19,7 +19,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=8.1.1:devel/gitlab-shell \
 	gitlab-workhorse>=5.1.0:www/gitlab-workhorse \
 	gitaly>=0.120.0:devel/gitaly \
-	gitlab-pages>=1.0.0:www/gitlab-pages \
+	gitlab-pages>=1.1.0:www/gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
