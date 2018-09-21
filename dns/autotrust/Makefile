@@ -1,9 +1,9 @@
 # Created by: Jaap Akkerhuis <jaap@nlnetlabs.nl>
-# $FreeBSD: head/dns/autotrust/Makefile 435306 2017-03-03 04:12:20Z miwi $
+# $FreeBSD: head/dns/autotrust/Makefile 480056 2018-09-18 18:24:05Z swills $
 
 PORTNAME=	autotrust
 PORTVERSION=	0.3.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	dns
 MASTER_SITES=	http://www.nlnetlabs.nl/downloads/autotrust/
 

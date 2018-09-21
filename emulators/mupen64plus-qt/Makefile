@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/mupen64plus-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/emulators/mupen64plus-qt/Makefile 480022 2018-09-18 13:55:11Z arved $
 
 PORTNAME=	mupen64plus-qt
-DISTVERSION=	1.11
+DISTVERSION=	1.12
 CATEGORIES=	emulators
 
 MAINTAINER=	maintainer@hasting.email

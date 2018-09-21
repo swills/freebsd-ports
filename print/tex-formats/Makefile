@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/tex-formats/Makefile 392909 2015-07-26 06:57:26Z hrs $
+# $FreeBSD: head/print/tex-formats/Makefile 480305 2018-09-21 19:30:43Z yuri $
 
 PORTNAME=	formats
 PORTVERSION=	20150521
@@ -10,7 +10,7 @@ DISTFILES=	#empty
 EXTRACT_ONLY=	#empty
 
 MAINTAINER=	hrs@FreeBSD.org
-COMMENT=	Formats for basic TeX engines
+COMMENT=	Formats for basic TeX engines and the 'latex' command
 
 NO_BUILD=	yes
 NO_INSTALL=	yes

@@ -1,8 +1,8 @@
 # Created by: Phillip Neumann <pneumann@gmail.com>
-# $FreeBSD: head/lang/fsharp/Makefile 473640 2018-06-30 20:21:52Z dbn $
+# $FreeBSD: head/lang/fsharp/Makefile 480109 2018-09-19 19:54:47Z dbn $
 
 PORTNAME=	fsharp
-PORTVERSION=	10.0.2
+PORTVERSION=	10.2.1
 CATEGORIES=	lang
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 

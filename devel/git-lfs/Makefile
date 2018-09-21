@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/git-lfs/Makefile 479924 2018-09-17 11:22:26Z rene $
+# $FreeBSD: head/devel/git-lfs/Makefile 480122 2018-09-19 23:19:00Z swills $
 
-PORTNAME=	git-lfs
+PORTNAME=		git-lfs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.5.1
-CATEGORIES=	devel
+DISTVERSION=		2.5.2
+CATEGORIES=		devel
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Git extension for versioning large files
@@ -24,7 +24,7 @@ do-build:
 	${SETENV} ${MAKE_ENV} ${GO_ENV} \
 	TMPDIR=${WRKSRC}/.tmp GOARCH=${GOARCH} GOOS="freebsd" \
 	VERSION="" GIT_LFS_SHA="" GO=${GO_CMD} \
-	sh -c "${GO_CMD} generate ${GO_PKGNAME}/commands && \
+	${SH} -c "${GO_CMD} generate ${GO_PKGNAME}/commands && \
 		${MAKE_CMD} bin/git-lfs"
 
 do-install:

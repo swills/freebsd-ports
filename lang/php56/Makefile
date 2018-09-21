@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php56/Makefile 475248 2018-07-24 12:46:32Z ale $
+# $FreeBSD: head/lang/php56/Makefile 480035 2018-09-18 16:08:00Z emaste $
 
 PORTNAME=	php56
 PORTVERSION=	5.6.37
@@ -31,6 +31,9 @@ CONFIGURE_ARGS+=--with-layout=GNU \
 		--program-prefix=""
 USES+=		autoreconf:build
 USE_GNOME=	libxml2
+
+# PR230207 Allow relocations against read-only segments (override lld default)
+LDFLAGS_i386=	-Wl,-z,notext
 
 OPTIONS_DEFINE+=CLI CGI FPM EMBED PHPDBG DEBUG DTRACE IPV6 MAILHEAD LINKTHR ZTS
 OPTIONS_DEFAULT=CLI CGI FPM EMBED LINKTHR

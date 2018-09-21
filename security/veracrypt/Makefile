@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/veracrypt/Makefile 467852 2018-04-21 00:27:04Z acm $
+# $FreeBSD: head/security/veracrypt/Makefile 480003 2018-09-18 09:28:34Z linimon $
 
 PORTNAME=	veracrypt
 PORTVERSION=	1.22
@@ -9,12 +9,12 @@ DISTNAME=	${PORTNAME:S/v/V/:S/c/C/}_${PORTVERSION}_Source
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Open-source disk encryption software based on Truecrypt
 
-LICENSE_FILE=	${DOCSDIR}/LICENSE
-
 BUILD_DEPENDS=	yasm:devel/yasm
 RUN_DEPENDS=	${LOCALBASE}/bin/sudo:security/sudo
 
-USES=		desktop-file-utils fuse gmake iconv pkgconfig tar:bz2
+LICENSE_FILE=	${DOCSDIR}/LICENSE
+
+USES=		compiler:c++11-lang desktop-file-utils fuse gmake iconv pkgconfig tar:bz2
 USE_WX=		3.0+
 NO_WRKSUBDIR=	yes
 BUILD_WRKSRC=	${WRKSRC}/src

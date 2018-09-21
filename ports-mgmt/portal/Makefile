@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/portal/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/ports-mgmt/portal/Makefile 480010 2018-09-18 11:01:50Z linimon $
 
 PORTNAME=	portal
 PORTVERSION=	0.4
@@ -9,6 +9,8 @@ MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Front-end to pkg(8)
 
 LICENSE=	BSD2CLAUSE
+
+BROKEN_powerpc64=	fails to build: /usr/local/lib/gcc6/include/c++/thread:189: undefined reference to `std::thread::_State::~_State()'
 
 PLIST_FILES=	bin/${PORTNAME} \
 		man/man1/${PORTNAME}.1.gz

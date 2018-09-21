@@ -1,12 +1,12 @@
-# $FreeBSD: head/sysutils/ganglia-webfrontend/Makefile 451871 2017-10-12 12:38:04Z jrm $
+# $FreeBSD: head/sysutils/ganglia-webfrontend/Makefile 480273 2018-09-21 14:57:26Z jwb $
 
 PORTNAME=	ganglia
 PORTVERSION=	3.7.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils net parallel www
 PKGNAMESUFFIX=	-webfrontend
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Ganglia cluster monitor, web frontend
 
 LICENSE=	BSD3CLAUSE

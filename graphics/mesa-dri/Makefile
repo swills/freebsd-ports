@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-dri/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/mesa-dri/Makefile 480189 2018-09-20 18:49:51Z emaste $
 
 PORTNAME=	mesa-dri
 PORTVERSION=	${MESAVERSION}
@@ -66,6 +66,7 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-src_gallium_drivers_vc4_Makefile.in
 BUILD_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR}
 .endif
 
+LDFLAGS_i386=		-Wl,-znotext
 .if ${DRI_DRIVERS} || ${VULKAN_DRIVERS:MINTEL}
 . if ${/usr/bin/ld:L:tA} != /usr/bin/ld.lld
 # --build-id isn't supported by old GNU ld.bfd in base

@@ -1,12 +1,12 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/devel/skalibs/Makefile 473660 2018-07-01 09:17:45Z linimon $
+# $FreeBSD: head/devel/skalibs/Makefile 480054 2018-09-18 18:18:06Z fernape $
 
 PORTNAME=	skalibs
-PORTVERSION=	2.6.3.0
+PORTVERSION=	2.7.0.0
 CATEGORIES=	devel
-MASTER_SITES=	http://www.skarnet.org/software/${PORTNAME}/
+MASTER_SITES=	https://www.skarnet.org/software/${PORTNAME}/
 
-MAINTAINER=	colin-ports@heliocat.net
+MAINTAINER=	crest@rlwinm.de
 COMMENT=	General purpose C libraries used by skarnet.org software
 
 LICENSE=	ISCL
@@ -20,8 +20,9 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--with-default-path=${PREFIX}/bin:/usr/bin:/bin
 
-DOCS=		AUTHORS README doc/*.html
 OPTIONS_DEFINE=	DOCS
+
+DOCS=		AUTHORS README doc/*.html
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libskarnet.so.${PORTVERSION}

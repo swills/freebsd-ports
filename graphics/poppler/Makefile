@@ -1,5 +1,5 @@
 # Created by: marcus@FreeBSD.org
-# $FreeBSD: head/graphics/poppler/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/poppler/Makefile 480003 2018-09-18 09:28:34Z linimon $
 
 PORTNAME=	poppler
 PORTVERSION=	0.57.0
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libnspr4.so:devel/nspr
 RUN_DEPENDS=	poppler-data>0:graphics/poppler-data
 
-USES=		cpe gmake jpeg libtool localbase pathfix pkgconfig tar:xz
+USES=		compiler:c++11-lang cpe gmake jpeg libtool localbase pathfix pkgconfig tar:xz
 CPE_VENDOR=	freedesktop
 USE_GNOME=	libxml2
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/graphics/libosmesa/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/libosmesa/Makefile 480190 2018-09-20 19:07:00Z emaste $
 
 PORTNAME=	libosmesa
 PORTVERSION=	${MESAVERSION}
@@ -16,6 +16,7 @@ USE_XORG=	xorgproto
 CONFIGURE_ARGS+=	--disable-dri --disable-egl --disable-gbm \
 			--disable-gles2 --with-gallium-drivers=swrast
 MESA_BUILD_WRKSRC=	src/util src/compiler src/mapi src/mesa
+LDFLAGS_i386=		-Wl,-znotext
 
 .if "${MESA_LLVM_VER}" != ""
 CONFIGURE_ARGS+=	--enable-osmesa-gallium

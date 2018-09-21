@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/antioch/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/science/antioch/Makefile 480003 2018-09-18 09:28:34Z linimon $
 
 PORTNAME=	antioch
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/metaphysicl/metaphysicl_version.h:science/me
 LIB_DEPENDS=	libgsl.so:math/gsl \
 		libOpenCL.so:devel/ocl-icd
 
-USES=		autoreconf eigen:3 gmake libtool localbase
+USES=		autoreconf compiler:c++11-lang eigen:3 gmake libtool localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	libantioch
 GNU_CONFIGURE=	yes

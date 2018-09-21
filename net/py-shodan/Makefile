@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net/py-shodan/Makefile 479246 2018-09-08 10:31:00Z ehaupt $
+# $FreeBSD: head/net/py-shodan/Makefile 480011 2018-09-18 11:40:10Z ehaupt $
 
 PORTNAME=	shodan
-PORTVERSION=	1.10.1
+PORTVERSION=	1.10.2
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

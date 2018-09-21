@@ -1,5 +1,5 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/archivers/laszip/Makefile 467446 2018-04-16 00:11:58Z dbaio $
+# $FreeBSD: head/archivers/laszip/Makefile 480114 2018-09-19 21:38:38Z linimon $
 
 PORTNAME=	laszip
 PORTVERSION=	3.2.2
@@ -11,7 +11,7 @@ COMMENT=	Library for lossless LAS compression
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake
+USES=		cmake compiler:c++0x
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

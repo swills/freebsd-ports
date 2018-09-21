@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/mtm/Makefile 469648 2018-05-11 16:13:49Z krion $
+# $FreeBSD: head/sysutils/mtm/Makefile 479979 2018-09-18 07:10:07Z linimon $
 
 PORTNAME=	mtm
 DISTVERSION=	g20180507
@@ -12,6 +12,7 @@ LICENSE_FILE=	${WRKSRC}/README.rst
 
 USES=		ncurses
 
+USE_CSTD=	gnu99
 USE_GITHUB=	yes
 GH_ACCOUNT=	deadpixi
 GH_TAGNAME=	b861104

@@ -1,9 +1,9 @@
 # Created by: Yuu Yashiki
-# $FreeBSD: head/graphics/lfview/Makefile 395395 2015-08-26 19:37:57Z amdmi3 $
+# $FreeBSD: head/graphics/lfview/Makefile 480072 2018-09-18 19:58:32Z emaste $
 
 PORTNAME=	lfview
 PORTVERSION=	1.1a
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://hoshina.denpa.org/
 
@@ -19,10 +19,8 @@ DOCSDIR=	${PREFIX}/share/doc/ja/lfview
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} != i386
 CFLAGS+=	-fPIC
 MAKE_ENV+=	SHLIBGLOBALSFLAGS=-fPIC
-.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/lfview ${STAGEDIR}${PREFIX}/bin

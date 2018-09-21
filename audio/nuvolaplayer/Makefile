@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/nuvolaplayer/Makefile 466598 2018-04-05 20:13:48Z tobik $
+# $FreeBSD: head/audio/nuvolaplayer/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	nuvolaplayer
 PORTVERSION=	3.0.4
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PORTNAME}-all-services>=0:www/${PORTNAME}-all-services
 USE_GITHUB=	yes
 GH_ACCOUNT=	tiliado
 
-USES=		gnome libarchive pkgconfig waf
+USES=		compiler:c11 gnome libarchive pkgconfig waf
 USE_GNOME=	glib20 gtk30
 USE_XORG=	x11
 # src/nuvolakit-runner/components/keybindings/XKeyGrabber.c:128:2: error: non-void function 'nuvola_xkey_grabber_construct' should return a value [-Wreturn-type]

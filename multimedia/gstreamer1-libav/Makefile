@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/gstreamer1-libav/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer1-libav/Makefile 479994 2018-09-18 08:31:51Z linimon $
 
 PORTNAME=	gstreamer1-libav
 PORTVERSION=	1.12.3
@@ -26,6 +26,7 @@ USE_GSTREAMER1=	yes
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+CFLAGS_powerpc64=	-mminimal-toc
 
 OPTIONS_DEFINE=	FFMPEG
 

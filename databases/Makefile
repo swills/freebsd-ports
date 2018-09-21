@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 477717 2018-08-21 12:06:54Z rene $
+# $FreeBSD: head/databases/Makefile 480279 2018-09-21 15:21:00Z dch $
 #
 
     COMMENT = Databases and related software
@@ -37,6 +37,7 @@
     SUBDIR += clickhouse
     SUBDIR += cockroach
     SUBDIR += couchdb
+    SUBDIR += couchdb2
     SUBDIR += courier-authlib-mysql
     SUBDIR += courier-authlib-pgsql
     SUBDIR += courier-authlib-userdb
@@ -252,6 +253,7 @@
     SUBDIR += ocaml-mysql
     SUBDIR += ocaml-sqlite3
     SUBDIR += openark-kit
+    SUBDIR += opendbviewer
     SUBDIR += opendbx
     SUBDIR += opentsdb
     SUBDIR += ora2pg

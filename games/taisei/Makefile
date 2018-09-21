@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/taisei/Makefile 454826 2017-11-24 16:02:29Z amdmi3 $
+# $FreeBSD: head/games/taisei/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	taisei
 PORTVERSION=	1.1.2
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME}-project
 
-USES=		cmake pkgconfig
+USES=		cmake compiler:c11 pkgconfig
 CMAKE_ARGS=	-DTAISEI_VERSION_OVERRIDE=${PORTVERSION}
 USE_SDL=	sdl2 ttf2 mixer2
 

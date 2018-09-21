@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/thrift/Makefile 473692 2018-07-02 00:47:14Z linimon $
+# $FreeBSD: head/devel/thrift/Makefile 480025 2018-09-18 14:21:33Z arved $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION}	# get these from bsd.thrift.mk. any upgrade needs to check ALL dependencies
@@ -53,6 +53,9 @@ PLIST_FILES=	bin/thrift
 .include "bsd.thrift.mk"
 
 PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
+
+post-patch:
+	${REINPLACE_CMD} 's,-Werror,,' ${WRKSRC}/lib/rb/ext/extconf.rb
 
 pre-configure:
 	@${REINPLACE_CMD} '/config.h/d' ${WRKSRC}/lib/cpp/Makefile.am

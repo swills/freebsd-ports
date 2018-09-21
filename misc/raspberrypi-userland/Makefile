@@ -1,5 +1,5 @@
 # Created by: Mikael Urankar <mikael.urankar@gmail.com>
-# $FreeBSD: head/misc/raspberrypi-userland/Makefile 451653 2017-10-10 01:46:52Z linimon $
+# $FreeBSD: head/misc/raspberrypi-userland/Makefile 480019 2018-09-18 13:03:44Z manu $
 
 PORTNAME=	raspberrypi-userland
 PORTVERSION=	20161026
@@ -14,14 +14,13 @@ ONLY_FOR_ARCHS=	armv6 armv7
 
 CONFLICTS_INSTALL=	libglesv2 libEGL
 
+USES=		cmake:outsource pkgconfig shebangfix
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	gonzoua
 GH_PROJECT=	userland
 GH_TAGNAME=	e143b48
 
-USE_LDCONFIG=	yes
-
-USES=		cmake:outsource pkgconfig shebangfix
 CMAKE_ARGS+=	-DVMCS_INSTALL_PREFIX=${PREFIX} \
 		-DCMAKE_TOOLCHAIN_FILE=${WRKSRC}/makefiles/cmake/toolchains/arm-freebsd.cmake
 SHEBANG_FILES=	host_applications/linux/apps/dtoverlay/dtoverlay-post \
@@ -32,6 +31,10 @@ EXAMPLES_DESC=	Install test applications source code (hello_pi)
 EXAMPLES_LIB_DEPENDS=	libfreetype.so:print/freetype2
 
 DEBUG_CFLAGS_OFF=	-DNDEBUG
+
+USE_LDCONFIG=	yes
+
+LLD_UNSAFE=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|/opt/vc|${PREFIX}|g" \

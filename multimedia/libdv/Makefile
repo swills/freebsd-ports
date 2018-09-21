@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/libdv/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/libdv/Makefile 480028 2018-09-18 14:53:04Z emaste $
 
 PORTNAME=	libdv
 PORTVERSION=	1.0.0
@@ -21,6 +21,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 USES=		jpeg libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
+LDFLAGS_i386=	-Wl,-znotext
 
 DOCS=		AUTHORS COPYING COPYRIGHT ChangeLog NEWS README \
 		README.dvconnect README.encoder TODO

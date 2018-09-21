@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 478931 2018-09-04 07:26:02Z tobik $
+# $FreeBSD: head/Mk/Uses/cargo.mk 480253 2018-09-21 11:16:08Z jbeich $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -151,6 +151,12 @@ DEV_WARNING+=	"CARGO_CRATES=libc-0.2.37 or older maybe unstable on FreeBSD 12.0.
 # Use the system's libgit2 instead of building the bundled version
 CARGO_ENV+=	LIBGIT2_SYS_USE_PKG_CONFIG=1
 LIB_DEPENDS+=	libgit2.so:devel/libgit2
+.endif
+
+.if ${CARGO_CRATES:Mlibssh2-sys-[0-9]*}
+# Use the system's libssh2 instead of building the bundled version
+CARGO_ENV+=	LIBSSH2_SYS_USE_PKG_CONFIG=1
+LIB_DEPENDS+=	libssh2.so:security/libssh2
 .endif
 
 .if ${CARGO_CRATES:Monig_sys-[0-9]*}

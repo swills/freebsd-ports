@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-pybind11/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/devel/py-pybind11/Makefile 480229 2018-09-21 06:59:41Z yuri $
 
 PORTNAME=	pybind11
 DISTVERSION=	2.2.1
@@ -13,7 +13,7 @@ COMMENT=	Seamless interoperability between C++11 and Python
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

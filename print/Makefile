@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 476639 2018-08-08 12:26:27Z mat $
+# $FreeBSD: head/print/Makefile 480091 2018-09-19 08:29:23Z ehaupt $
 #
 
     COMMENT = Desktop publishing
@@ -157,6 +157,7 @@
     SUBDIR += papersize-default-letter
     SUBDIR += paps
     SUBDIR += pcal
+    SUBDIR += pdf-redact-tools
     SUBDIR += pdf-renderer
     SUBDIR += pdf-tools
     SUBDIR += pdf4tcl

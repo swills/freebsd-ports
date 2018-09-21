@@ -1,5 +1,5 @@
 # Created by: Eric Turgeon <ericbsd@FreeBSD.org>
-# $FreeBSD: head/x11/brisk-menu/Makefile 471255 2018-06-01 11:41:18Z ericbsd $
+# $FreeBSD: head/x11/brisk-menu/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	brisk-menu
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libnotify.so:devel/libnotify
 
-USES=		gnome mate meson ninja pkgconfig gettext
+USES=		compiler:c11 gnome mate meson ninja pkgconfig gettext
 MESON_ARGS=	--sysconfdir=${PREFIX}/etc
 
 USE_GITHUB=	yes

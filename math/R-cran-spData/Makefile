@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-spData/Makefile 477040 2018-08-12 22:22:09Z tota $
+# $FreeBSD: head/math/R-cran-spData/Makefile 479978 2018-09-18 06:52:59Z tota $
 
 PORTNAME=	spData
-PORTVERSION=	0.2.9.3
+PORTVERSION=	0.2.9.4
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

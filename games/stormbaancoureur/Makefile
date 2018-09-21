@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/stormbaancoureur/Makefile 473074 2018-06-22 21:04:21Z amdmi3 $
+# $FreeBSD: head/games/stormbaancoureur/Makefile 479998 2018-09-18 08:47:31Z linimon $
 
 PORTNAME=	stormbaancoureur
 PORTVERSION=	2.1.6
@@ -16,11 +16,13 @@ LICENSE=	GPLv3
 BUILD_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \
 		${LOCALBASE}/lib/libode.a:devel/ode
 
+USES=		compiler
 USE_GL=		gl glu glut
 
 MAKE_ENV=	DATADIR="${DATADIR}"
 
-CXXFLAGS+=	-Wno-c++11-narrowing
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 BUILD_WRKSRC=	${WRKSRC}/src-stormbaancoureur
 INSTALL_WRKSRC=	${WRKSRC}/src-stormbaancoureur

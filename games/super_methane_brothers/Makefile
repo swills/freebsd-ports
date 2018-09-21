@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/super_methane_brothers/Makefile 450712 2017-09-27 05:09:30Z jbeich $
+# $FreeBSD: head/games/super_methane_brothers/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	super_methane_brothers
 PORTVERSION=	1.5.1
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libclan23Core.so:devel/clanlib
 
-USES=		gmake localbase pkgconfig tar:tgz
+USES=		compiler:c++0x gmake localbase pkgconfig tar:tgz
 MAKE_ENV=	METHANE_FLAGS="${CPPFLAGS}" METHANE_LIBS="${LIBS}"
 MAKE_JOBS_UNSAFE=	yes
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/p5-Spreadsheet-Read/Makefile 461978 2018-02-16 04:03:37Z swills $
+# $FreeBSD: head/textproc/p5-Spreadsheet-Read/Makefile 480220 2018-09-20 21:54:10Z swills $
 
 PORTNAME=	Spreadsheet-Read
-PORTVERSION=	0.78
+PORTVERSION=	0.79
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:HMBRAND

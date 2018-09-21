@@ -1,13 +1,10 @@
-# $FreeBSD: head/math/py-rapi/Makefile 478706 2018-09-01 15:39:55Z yuri $
+# $FreeBSD: head/math/py-rapi/Makefile 479983 2018-09-18 07:41:43Z yuri $
 
 PORTNAME=	rapi
-DISTVERSION=	0.1.2
+DISTVERSION=	0.1.3
 CATEGORIES=	math
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-
-PATCH_SITES=	https://github.com/randy3k/${PORTNAME}/commit/
-PATCHFILES=	fb8b962651d6bec009f1bf67eb0369e62da134c4.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Minimal R API for Python

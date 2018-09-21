@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Search-Xapian12/Makefile 450738 2017-09-27 13:23:37Z sunpoet $
+# $FreeBSD: head/databases/p5-Search-Xapian12/Makefile 480193 2018-09-20 19:27:13Z sunpoet $
 
 PORTNAME=	Search-Xapian
-PORTVERSION=	1.2.25.0
+PORTVERSION=	1.2.25.2
 CATEGORIES=	databases perl5
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION:R}/ \
 		LOCAL/sunpoet \

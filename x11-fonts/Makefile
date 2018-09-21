@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 477371 2018-08-16 20:28:32Z rene $
+# $FreeBSD: head/x11-fonts/Makefile 480260 2018-09-21 11:42:26Z tobik $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -177,6 +177,7 @@
     SUBDIR += sourcecodepro-ttf
     SUBDIR += sourcesanspro-ttf
     SUBDIR += sourceserifpro-ttf
+    SUBDIR += spleen
     SUBDIR += stix-fonts
     SUBDIR += suxus
     SUBDIR += symbola

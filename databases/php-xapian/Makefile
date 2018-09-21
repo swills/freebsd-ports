@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/php-xapian/Makefile 475696 2018-07-29 19:10:37Z sunpoet $
+# $FreeBSD: head/databases/php-xapian/Makefile 480003 2018-09-18 09:28:34Z linimon $
 
 PORTNAME=	xapian
 PORTVERSION=	1.4.7
@@ -32,7 +32,7 @@ CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
 CONFIGURE_ENV=	PHP_CONFIG=${LOCALBASE}/bin/php-config
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		libtool php:build tar:xz
+USES=		compiler:c++11-lang libtool php:build tar:xz
 
 PLIST_SUB=	PHP_EXT_DIR=${PHP_EXT_DIR} PHP_MAJOR_VER=${PHP_VER:C|.$||}
 

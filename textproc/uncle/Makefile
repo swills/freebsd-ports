@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/textproc/uncle/Makefile 472026 2018-06-08 23:53:03Z gblach $
+# $FreeBSD: head/textproc/uncle/Makefile 479979 2018-09-18 07:10:07Z linimon $
 
 PORTNAME=	uncle
 PORTVERSION=	0.2
@@ -12,8 +12,7 @@ LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libucl.so:textproc/libucl
 
-BROKEN_powerpc64=	fails to compile: uncle.c: 'for' loop initial declaration used outside C99 mode
-
+USE_CSTD=	c99
 USE_GITHUB=	yes
 GH_ACCOUNT=	MagikBSD
 

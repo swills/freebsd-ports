@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/pg_partman/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/pg_partman/Makefile 480299 2018-09-21 18:10:59Z swills $
 
 PORTNAME=	pg_partman
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.1.3
+DISTVERSION=	3.2.1
 CATEGORIES=	databases
 
 MAINTAINER=	lacey.leanne@gmail.com

@@ -1,5 +1,5 @@
 # Created by: bauerm
-# $FreeBSD: head/math/ntl/Makefile 477766 2018-08-22 03:12:04Z wen $
+# $FreeBSD: head/math/ntl/Makefile 480130 2018-09-20 00:00:29Z swills $
 
 PORTNAME=	ntl
 PORTVERSION=	11.3.0
@@ -12,7 +12,7 @@ COMMENT=	Victor Shoup's Number Theory Library
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/../doc/copying.txt
 
-USES=		perl5 libtool
+USES=		compiler:c11 libtool perl5
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 HAS_CONFIGURE=	yes

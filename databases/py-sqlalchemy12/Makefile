@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-sqlalchemy12/Makefile 477731 2018-08-21 18:23:57Z sunpoet $
+# $FreeBSD: head/databases/py-sqlalchemy12/Makefile 480195 2018-09-20 19:27:23Z sunpoet $
 
 PORTNAME=	sqlalchemy
-PORTVERSION=	1.2.11
+PORTVERSION=	1.2.12
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -25,8 +25,8 @@ OPTIONS_MULTI=	BACKEND
 OPTIONS_MULTI_BACKEND=	MSSQL MYSQL PGSQL SQLITE SYBASE
 OPTIONS_DEFAULT=SQLITE
 
-USE_PYTHON=	autoplist concurrent distutils
 USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 PORTDOCS=	*
 PORTEXAMPLES=	*

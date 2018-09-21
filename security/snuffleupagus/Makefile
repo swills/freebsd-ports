@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/snuffleupagus/Makefile 477186 2018-08-14 16:51:42Z swills $
+# $FreeBSD: head/security/snuffleupagus/Makefile 480021 2018-09-18 13:22:58Z arved $
 
 PORTNAME=	snuffleupagus
 DISTVERSIONPREFIX=v
-DISTVERSION=	0.3.0
+DISTVERSION=	0.4.0
 CATEGORIES=	security
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 

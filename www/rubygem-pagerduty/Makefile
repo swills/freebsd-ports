@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-pagerduty/Makefile 463807 2018-03-07 16:48:09Z sunpoet $
+# $FreeBSD: head/www/rubygem-pagerduty/Makefile 480141 2018-09-20 00:23:18Z sunpoet $
 
 PORTNAME=	pagerduty
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -14,9 +14,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-json>=1.7.7:devel/rubygem-json
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
+
 SHEBANG_FILES=	script/setup.sh
 
 .include <bsd.port.mk>

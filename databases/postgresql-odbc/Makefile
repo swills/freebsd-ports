@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/postgresql-odbc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/databases/postgresql-odbc/Makefile 480010 2018-09-18 11:01:50Z linimon $
 
 PORTNAME=	postgresql
 PORTVERSION=	10.03.0000
@@ -14,6 +14,8 @@ COMMENT=	PostgreSQL ODBC driver
 
 LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/license.txt
+
+BROKEN_powerpc64=	fails to compile: misc.h:58:21: expected ';' before 'dummy_for_check'
 
 LIB_DEPENDS=	libodbc.so:databases/unixODBC
 

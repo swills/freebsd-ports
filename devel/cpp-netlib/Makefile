@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/cpp-netlib/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/cpp-netlib/Makefile 480114 2018-09-19 21:38:38Z linimon $
 
 PORTNAME=		cpp-netlib
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -17,9 +17,7 @@ LICENSE_FILE=		${WRKSRC}/LICENSE_1_0.txt
 BUILD_DEPENDS=		boost-libs>0:devel/boost-libs \
 					asio>0:net/asio
 
-BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option "-std=c++11"
-
-USES=			cmake:outsource
+USES=			cmake:outsource compiler:c++11-lang
 USE_LDCONFIG=		yes
 CFLAGS+=	-fPIC
 CMAKE_ARGS+=		-DCPP-NETLIB_BUILD_EXAMPLES=OFF \

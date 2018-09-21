@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 478428 2018-08-30 02:26:19Z danfe $
+# $FreeBSD: head/cad/Makefile 480119 2018-09-19 22:44:36Z 0mp $
 #
 
     COMMENT = CAD tools
@@ -44,6 +44,7 @@
     SUBDIR += irsim
     SUBDIR += iverilog
     SUBDIR += jspice3
+    SUBDIR += k40-whisperer
     SUBDIR += kicad
     SUBDIR += kicad-devel
     SUBDIR += kicad-library

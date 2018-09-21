@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/chapping/Makefile 473069 2018-06-22 20:34:06Z amdmi3 $
+# $FreeBSD: head/games/chapping/Makefile 479998 2018-09-18 08:47:31Z linimon $
 
 PORTNAME=	chapping
 PORTVERSION=	0.43
@@ -15,10 +15,11 @@ COMMENT=	Turn based board football game
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake tar:bzip2
+USES=		compiler gmake tar:bzip2
 USE_SDL=	sdl image gfx ttf
 
-CXXFLAGS+=	-Wno-c++11-narrowing
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-source
 ALL_TARGET=	linux

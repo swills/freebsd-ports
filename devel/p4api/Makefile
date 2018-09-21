@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p4api/Makefile 461074 2018-02-06 16:23:48Z asomers $
+# $FreeBSD: head/devel/p4api/Makefile 480010 2018-09-18 11:01:50Z linimon $
 
 PORTNAME=	p4api
 PORTVERSION=	${YEAR}.${MAJOR}.${MINOR}
@@ -21,6 +21,8 @@ COMMENT=	Perforce API (static libraries and header files)
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to build: /bin/sh: clang++: not found
 
 BUILD_DEPENDS=	${JAM}:devel/jam
 

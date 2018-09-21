@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 479160 2018-09-06 20:57:01Z lwhsu $
+# $FreeBSD: head/lang/Makefile 479963 2018-09-18 00:19:31Z lwhsu $
 #
 
     COMMENT = Programming languages
@@ -224,6 +224,7 @@
     SUBDIR += oo2c
     SUBDIR += opencoarrays
     SUBDIR += opendylan
+    SUBDIR += ott
     SUBDIR += owl-lisp
     SUBDIR += p2c
     SUBDIR += p5-Data-JavaScript

@@ -1,8 +1,9 @@
 # Created by: Oliver Hartmann <ohartman@zedat.fu-berlin.de>
-# $FreeBSD: head/devel/opencl/Makefile 471216 2018-05-31 16:24:31Z swills $
+# $FreeBSD: head/devel/opencl/Makefile 480226 2018-09-21 05:32:26Z yuri $
 
 PORTNAME=	opencl
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	ohartman@zedat.fu-berlin.de
@@ -26,6 +27,7 @@ CLHPP_TAG=	8b6a312
 
 USES=		python:build
 NO_CONFIGURE=	yes
+NO_ARCH=	yes
 
 WRKSRC=		${WRKDIR}/${GH_PROJECT}-${GH_TAGNAME}/opencl${PORTVERSION:S/.//}/CL
 

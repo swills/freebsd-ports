@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML5-DOM/Makefile 472583 2018-06-17 01:42:06Z wen $
+# $FreeBSD: head/www/p5-HTML5-DOM/Makefile 479979 2018-09-18 07:10:07Z linimon $
 
 PORTNAME=		HTML5-DOM
 PORTVERSION=		1.08
@@ -13,6 +13,7 @@ COMMENT=		Super fast html5 DOM library with css selectors
 LICENSE=		MIT
 
 USES=			perl5
+USE_CSTD=		gnu99
 USE_PERL5=		configure
 
 .include <bsd.port.mk>

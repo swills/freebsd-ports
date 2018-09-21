@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/growl-for-linux/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/growl-for-linux/Makefile 480002 2018-09-18 09:12:56Z linimon $
 
 PORTNAME=	growl-for-linux
 PORTVERSION=	0.8.5
@@ -17,8 +17,6 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libdbus-glib-1.so:devel/dbus-glib \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
-
-BROKEN_powerpc64=	fails to compile: balloon.c:160: error: nested functions are disabled, use -fnested-functions to re-enable
 
 CONFIGURE_ARGS=	OPENSSL_CFLAGS="-I${OPENSSLINC}" OPENSSL_LIBS="-L${OPENSSLLIB} -lcrypto"
 

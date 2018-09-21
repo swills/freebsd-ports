@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/editline/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/editline/Makefile 480131 2018-09-20 00:22:23Z sunpoet $
 
 PORTNAME=	editline
-PORTVERSION=	1.15.3
+PORTVERSION=	1.16.0
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -10,10 +10,11 @@ COMMENT=	Minix editline: A free readline() for UNIX
 LICENSE=	BSD4CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		autoreconf libtool ncurses pathfix
+
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		autoreconf libtool ncurses pathfix
 
 PORTDOCS=	*
 

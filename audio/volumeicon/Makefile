@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/volumeicon/Makefile 472665 2018-06-18 01:48:46Z linimon $
+# $FreeBSD: head/audio/volumeicon/Makefile 479979 2018-09-18 07:10:07Z linimon $
 
 PORTNAME=	volumeicon
 PORTVERSION=	0.5.1
@@ -10,8 +10,6 @@ COMMENT=	Lightweight volume control for the systray
 
 LICENSE=	GPLv3
 
-BROKEN_powerpc64=	fails to build: oss3_backend.c:80: 'for' loop initial declaration used outside C99 mode
-
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-oss=v3 \
 		--with-oss-include-path=/usr/include/sys
@@ -21,6 +19,7 @@ LIBS+=		-L${LOCALBASE}/lib
 USES=		autoreconf gmake gettext pkgconfig
 USE_GNOME=	gtk30 intltool cairo gdkpixbuf2
 USE_XORG=	x11
+USE_CSTD=	gnu99
 USE_GITHUB=	yes
 GH_ACCOUNT=	Maato
 

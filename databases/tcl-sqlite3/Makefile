@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/tcl-sqlite3/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/databases/tcl-sqlite3/Makefile 480214 2018-09-20 21:18:02Z swills $
 
 PORTNAME=	sqlite3
-PORTVERSION=	3.24.0
+PORTVERSION=	3.25.1
 CATEGORIES=	databases tcl
 MASTER_SITES=	https://www.sqlite.org/2018/ http://www2.sqlite.org/2018/ http://www3.sqlite.org/2018/
 PKGNAMEPREFIX=	tcl-

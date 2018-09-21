@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/x11-wm/golem/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/x11-wm/golem/Makefile 480069 2018-09-18 19:20:17Z emaste $
 
 PORTNAME=	golem
 PORTVERSION=	0.0.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF
 
@@ -22,6 +22,7 @@ CONFIGURE_ARGS=	--enable-i18n
 MAKE_ARGS=	DEVEL=1
 
 CFLAGS_amd64=	-fPIC
+CFLAGS_i386=	-fPIC
 
 OPTIONS_DEFINE=	ESOUND XINERAMA
 OPTIONS_DEFAULT=	XINERAMA

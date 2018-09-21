@@ -1,5 +1,5 @@
 # Created by: DarwinSurvivor <darwinsurvivor@gmail.com>
-# $FreeBSD: head/mail/notmuch/Makefile 472817 2018-06-19 19:29:32Z pi $
+# $FreeBSD: head/mail/notmuch/Makefile 480256 2018-09-21 11:28:59Z linimon $
 
 PORTNAME=	notmuch
 PORTVERSION=	0.27
@@ -27,7 +27,7 @@ TEST_DEPENDS=	bash:shells/bash \
 		gwc:sysutils/coreutils \
 		${LOCALBASE}/bin/gdb:devel/gdb
 
-USES=		gmake pkgconfig python:build,test
+USES=		compiler:c++11-lang gmake pkgconfig python:build,test
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 

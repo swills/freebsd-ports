@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/toxins/Makefile 473381 2018-06-26 10:10:03Z thierry $
+# $FreeBSD: head/net-im/toxins/Makefile 479979 2018-09-18 07:10:07Z linimon $
 
 PORTNAME=	toxins
 DISTVERSION=	g20180217
@@ -15,6 +15,7 @@ LIB_DEPENDS=	libsodium.so:security/libsodium \
 		libtoxcore.so:net-im/tox
 
 USES=		gmake pkgconfig
+USE_CSTD=	gnu99
 USE_GITHUB=	yes
 GH_ACCOUNT=	TokTok
 GH_TAGNAME=	f76a7bd

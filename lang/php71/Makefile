@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/lang/php71/Makefile 479837 2018-09-15 14:55:54Z joneum $
+# $FreeBSD: head/lang/php71/Makefile 480035 2018-09-18 16:08:00Z emaste $
 
 PORTNAME=	php71
 PORTVERSION=	7.1.22
@@ -31,6 +31,9 @@ CONFIGURE_ARGS+=--with-layout=GNU \
 		--program-prefix=""
 USES+=		autoreconf:build
 USE_GNOME=	libxml2
+
+# PR230207 Allow relocations against read-only segments (override lld default)
+LDFLAGS_i386=	-Wl,-z,notext
 
 OPTIONS_DEFINE+=CLI CGI FPM EMBED PHPDBG DEBUG DTRACE IPV6 MAILHEAD LINKTHR ZTS
 OPTIONS_DEFAULT=CLI CGI FPM EMBED LINKTHR DTRACE

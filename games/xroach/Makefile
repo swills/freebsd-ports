@@ -1,5 +1,5 @@
 # Created by: markm
-# $FreeBSD: head/games/xroach/Makefile 461766 2018-02-14 08:08:49Z romain $
+# $FreeBSD: head/games/xroach/Makefile 479979 2018-09-18 07:10:07Z linimon $
 
 PORTNAME=	xroach
 PORTVERSION=	4.4
@@ -23,6 +23,7 @@ BINMODE=	755
 
 USES=		imake
 USE_XORG=	x11 xext
+USE_CSTD=	gnu99
 PLIST_FILES=	bin/xroach man/man6/xroach.6.gz
 
 do-install:

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/numptyphysics/Makefile 473068 2018-06-22 20:33:55Z amdmi3 $
+# $FreeBSD: head/games/numptyphysics/Makefile 480003 2018-09-18 09:28:34Z linimon $
 
 PORTNAME=	numptyphysics
 DISTVERSION=	0.3.r20090104
@@ -13,7 +13,7 @@ COMMENT=	Drawing physics-based puzzle game
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		tar:bzip2 desktop-file-utils
+USES=		compiler:c++11-lang tar:bzip2 desktop-file-utils
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl image
 USE_XORG=	x11

@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 477371 2018-08-16 20:28:32Z rene $
+# $FreeBSD: head/biology/Makefile 480236 2018-09-21 08:04:50Z yuri $
 #
 
     COMMENT = Biology
@@ -103,6 +103,7 @@
     SUBDIR += py-biopython
     SUBDIR += py-bx-python
     SUBDIR += py-cutadapt
+    SUBDIR += py-loompy
     SUBDIR += py-macs2
     SUBDIR += py-orange3-bioinformatics
     SUBDIR += py-orange3-single-cell

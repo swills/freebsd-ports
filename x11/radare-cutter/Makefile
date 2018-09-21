@@ -1,9 +1,8 @@
-# $FreeBSD: head/x11/radare-cutter/Makefile 474554 2018-07-13 06:55:26Z mat $
+# $FreeBSD: head/x11/radare-cutter/Makefile 479966 2018-09-18 02:39:43Z swills $
 
 PORTNAME=	radare-cutter
-PORTVERSION=	1.5
+PORTVERSION=	1.7.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	swills@FreeBSD.org
@@ -14,13 +13,14 @@ LICENSE_FILE=	${WRKSRC}/../COPYING
 
 LIB_DEPENDS=	libr_bin.so:devel/radare2
 
-USES=		pkgconfig python:3.4+ qmake:outsource qt:5
+USES=		gl pkgconfig python:3.4+ qmake:outsource qt:5
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	radareorg
 GH_PROJECT=	cutter
 
-USE_QT=		buildtools_build core gui location network qml quick svg \
-		webchannel webengine widgets
+USE_QT=		buildtools_build core gui location network printsupport qml \
+		quick svg webchannel webengine widgets
 USE_GL=		gl
 
 WRKSRC_SUBDIR=	src

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/arx-libertatis/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/arx-libertatis/Makefile 480001 2018-09-18 09:10:17Z linimon $
 
 PORTNAME=	arx-libertatis
 PORTVERSION=	1.1.2
@@ -23,6 +23,7 @@ USE_GL=		gl glew
 LLD_UNSAFE=	yes
 CMAKE_ARGS=	-DDATA_DIR=arx \
 		-DSTRICT_USE=ON
+CFLAGS_powerpc64+=	-mminimal-toc
 
 SUB_FILES=	pkg-message
 

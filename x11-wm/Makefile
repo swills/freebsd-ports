@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 478485 2018-08-30 18:52:19Z yuri $
+# $FreeBSD: head/x11-wm/Makefile 480239 2018-09-21 08:37:54Z rene $
 #
 
     COMMENT = X11 window managers
@@ -115,7 +115,6 @@
     SUBDIR += spectrwm
     SUBDIR += stumpwm
     SUBDIR += subtle
-    SUBDIR += swm
     SUBDIR += tinywm
     SUBDIR += transset
     SUBDIR += treewm

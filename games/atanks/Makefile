@@ -1,5 +1,5 @@
 # Created by: Jesse Smith <jessefrgsmith@yahoo.ca>
-# $FreeBSD: head/games/atanks/Makefile 458936 2018-01-13 16:58:26Z pi $
+# $FreeBSD: head/games/atanks/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	atanks
 PORTVERSION=	6.5
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liballeg.so:devel/allegro
 
-USES=		gmake
+USES=		compiler:c++0x gmake
 
 PORTDOCS=	Changelog README README_ru.txt credits.txt
 

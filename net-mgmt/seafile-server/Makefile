@@ -1,10 +1,9 @@
-# $FreeBSD: head/net-mgmt/seafile-server/Makefile 477620 2018-08-20 03:06:13Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-server/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	seafile-server
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAFILE_VER}
 DISTVERSIONSUFFIX=	-server
-PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ultima@FreeBSD.org
@@ -29,7 +28,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} 
 
 CONFLICTS=	seafile-[0-9]*
 
-USES=		autoreconf iconv libarchive libtool localbase mysql \
+USES=		autoreconf compiler:c11 iconv libarchive libtool localbase mysql \
 		pathfix pgsql pkgconfig python:-2.7 shebangfix sqlite ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	haiwen

@@ -1,9 +1,8 @@
 # Created by: Thomas E. Zander
-# $FreeBSD: head/multimedia/mencoder/Makefile 476802 2018-08-10 00:55:12Z jbeich $
+# $FreeBSD: head/multimedia/mencoder/Makefile 480245 2018-09-21 09:41:54Z riggs $
 
 PORTNAME=	mencoder
 PORTVERSION=	${MPLAYER_PORT_VERSION}.${MPLAYER_SNAPSHOT_DATE:S/-//g}
-PORTREVISION=	2
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	riggs@FreeBSD.org

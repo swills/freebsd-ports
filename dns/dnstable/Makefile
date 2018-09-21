@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/dnstable/Makefile 473327 2018-06-25 17:11:08Z truckman $
+# $FreeBSD: head/dns/dnstable/Makefile 479967 2018-09-18 02:59:17Z truckman $
 
 PORTNAME=	dnstable
-PORTVERSION=	0.10.1
+PORTVERSION=	0.10.2
 CATEGORIES=	dns
 MASTER_SITES=	FARSIGHT LOCAL/truckman/farsight
 

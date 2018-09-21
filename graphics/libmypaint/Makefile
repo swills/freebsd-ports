@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libmypaint/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/graphics/libmypaint/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	libmypaint
 PORTVERSION=	1.3.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
-USES=		gmake gnome libtool localbase pkgconfig tar:xz
+USES=		compiler:c11 gmake gnome libtool localbase pkgconfig tar:xz
 USE_GNOME=	glib20 intltool introspection:build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

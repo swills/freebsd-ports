@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/7kaa/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/7kaa/Makefile 479998 2018-09-18 08:47:31Z linimon $
 
 PORTNAME=	7kaa
 PORTVERSION=	2.14.7
@@ -13,18 +13,20 @@ COMMENT=	Seven Kingdoms: Ancient Adversaries
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libenet.so:net/enet \
-		libcurl.so:ftp/curl
-
 BROKEN_aarch64=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates to -1 which cannot be narrowed to type 'char'
 BROKEN_armv6=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates to -1 which cannot be narrowed to type 'char'
 BROKEN_armv7=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates to -1 which cannot be narrowed to type 'char'
+
+LIB_DEPENDS=	libenet.so:net/enet \
+		libcurl.so:ftp/curl
 
 USES=		compiler:c++11-lib gmake localbase openal:al pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 LLD_UNSAFE=	yes
 CONFIGURE_ARGS=	--disable-nls # no translations ATM
 USE_SDL=	sdl2
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=		-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/${PORTNAME} \
 		share/pixmaps/${PORTNAME}.ico

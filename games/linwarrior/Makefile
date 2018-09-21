@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/linwarrior/Makefile 473735 2018-07-02 13:28:46Z amdmi3 $
+# $FreeBSD: head/games/linwarrior/Makefile 480017 2018-09-18 12:24:29Z linimon $
 
 PORTNAME=	linwarrior
 PORTVERSION=	20100320
@@ -12,12 +12,13 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Navigate a mech through a 3D world and fire at enemies
 
-USES=		gmake openal:al,alut
+USES=		compiler gmake openal:al,alut
 USE_GL=		gl glu
 USE_SDL=	sdl
-
-CFLAGS+=	-Wno-c++11-narrowing
 LLD_UNSAFE=	yes
+
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

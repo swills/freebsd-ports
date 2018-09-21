@@ -1,9 +1,9 @@
 # Created by: Matt Harris <mattdharris@users.sourceforge.net>
-# $FreeBSD: head/security/libpwstor/Makefile 421779 2016-09-11 02:08:45Z marino $
+# $FreeBSD: head/security/libpwstor/Makefile 480069 2018-09-18 19:20:17Z emaste $
 
 PORTNAME=	libpwstor
 PORTVERSION=	0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security devel
 MASTER_SITES=	SF/kageki/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -16,9 +16,7 @@ GNU_CONFIGURE=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} != "i386"
 CFLAGS+=	-fPIC -DPIC
-.endif
 
 .if defined(WITH_DEBUG)
 CONFIGURE_ARGS+=--enable-debug

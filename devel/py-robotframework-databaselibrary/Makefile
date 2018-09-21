@@ -1,8 +1,8 @@
 # Created by: Dan Langille
-# $FreeBSD: head/devel/py-robotframework-databaselibrary/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-robotframework-databaselibrary/Makefile 480210 2018-09-20 20:29:00Z dvl $
 
 PORTNAME=	robotframework-databaselibrary
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

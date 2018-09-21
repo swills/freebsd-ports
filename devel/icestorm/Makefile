@@ -1,5 +1,5 @@
 # Created by: Johnny Sorocil <jsorocil@gmail.com>
-# $FreeBSD: head/devel/icestorm/Makefile 471841 2018-06-06 13:33:44Z tobik $
+# $FreeBSD: head/devel/icestorm/Makefile 480114 2018-09-19 21:38:38Z linimon $
 
 PORTNAME=	icestorm
 PORTVERSION=	g20180310
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libftdi1.so:devel/libftdi1
 
-USES=		gmake python:3.3+ shebangfix pkgconfig
+USES=		compiler:c++11-lang gmake pkgconfig python:3.3+ shebangfix
 SHEBANG_FILES=	${WRKSRC}/icebox/*.py \
 		${WRKSRC}/icebox/Makefile
 

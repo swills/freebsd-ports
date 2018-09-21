@@ -1,9 +1,9 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/mail/opendkim/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/mail/opendkim/Makefile 480056 2018-09-18 18:24:05Z swills $
 
 PORTNAME=	opendkim
 PORTVERSION=	2.10.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	mail security
 MASTER_SITES=	SF/${PORTNAME} \
 		SF/${PORTNAME}/Previous%20Releases \

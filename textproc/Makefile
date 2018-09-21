@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 479917 2018-09-17 08:36:20Z yuri $
+# $FreeBSD: head/textproc/Makefile 480169 2018-09-20 13:20:08Z daichi $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1769,6 +1769,7 @@
     SUBDIR += translate-toolkit
     SUBDIR += ts-hunspell
     SUBDIR += tth
+    SUBDIR += tttcmds
     SUBDIR += turboxsl
     SUBDIR += txt2html
     SUBDIR += txt2man

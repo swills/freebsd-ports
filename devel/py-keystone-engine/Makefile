@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-keystone-engine/Makefile 467463 2018-04-16 07:49:50Z vanilla $
+# $FreeBSD: head/devel/py-keystone-engine/Makefile 480010 2018-09-18 11:01:50Z linimon $
 
 PORTNAME=	keystone-engine
 DISTVERSION=	0.9.1-3
@@ -11,6 +11,8 @@ COMMENT=	Keystone Assembler Engine with Python bindings
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
+
+BROKEN_powerpc64=	fails to install: /wrkdirs/usr/ports/devel/py-keystone-engine/work-py36/keystone-engine-0.9.1-3/src/build/llvm/lib/libkeystone.so: No such file or directory
 
 BUILD_DEPENDS=	cmake:devel/cmake
 

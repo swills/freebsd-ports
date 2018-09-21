@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/facter/Makefile 477941 2018-08-24 07:38:58Z romain $
+# $FreeBSD: head/sysutils/facter/Makefile 480250 2018-09-21 10:41:36Z romain $
 
 PORTNAME=	facter
-PORTVERSION=	3.11.4
+PORTVERSION=	3.12.0
 CATEGORIES?=	sysutils
 MASTER_SITES=	https://downloads.puppetlabs.com/facter/
 

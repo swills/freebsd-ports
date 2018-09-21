@@ -1,9 +1,9 @@
 # Created by: Jyun-Yan You <jyyou@cs.nctu.edu.tw>
-# $FreeBSD: head/lang/rust/Makefile 479877 2018-09-16 07:57:08Z dumbbell $
+# $FreeBSD: head/lang/rust/Makefile 480255 2018-09-21 11:24:21Z jbeich $
 
 PORTNAME=	rust
 PORTVERSION?=	1.29.0
-PORTREVISION?=
+PORTREVISION?=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://static.rust-lang.org/dist/:src \
 		LOCAL/dumbbell/rust:rust_bootstrap \
@@ -31,6 +31,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/LICENSE-MIT
 
 BUILD_DEPENDS=		cmake:devel/cmake
 LIB_DEPENDS=		libcurl.so:ftp/curl \
+			libgit2.so:devel/libgit2 \
 			libssh2.so:security/libssh2
 
 ONLY_FOR_ARCHS?=	aarch64 amd64 i386
@@ -97,6 +98,8 @@ PLIST_FILES=		lib/rustlib/components \
 .include <bsd.port.pre.mk>
 
 X_PY_ENV=	HOME="${WRKDIR}" \
+		LIBGIT2_SYS_USE_PKG_CONFIG=1 \
+		LIBSSH2_SYS_USE_PKG_CONFIG=1 \
 		OPENSSL_DIR="${OPENSSLBASE}"
 X_PY_CMD=	${PYTHON_CMD} ${WRKSRC}/x.py
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/p5-Image-PNG-Libpng/Makefile 469376 2018-05-08 14:06:39Z pi $
+# $FreeBSD: head/graphics/p5-Image-PNG-Libpng/Makefile 480208 2018-09-20 19:28:33Z sunpoet $
 
 PORTNAME=	Image-PNG-Libpng
-DISTVERSION=	0.45
+DISTVERSION=	0.46
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,11 +14,7 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		perl5
+USES=		localbase perl5
 USE_PERL5=	configure
-
-post-patch:
-	${REINPLACE_CMD} -e 's|#  *INC  *=>  *$$inc|INC => "-I${LOCALBASE}/include"|' \
-		${WRKSRC}/Makefile.PL
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: ismail@enderunix.org
-# $FreeBSD: head/mail/eps/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/mail/eps/Makefile 480069 2018-09-18 19:20:17Z emaste $
 
 PORTNAME=	eps
 PORTVERSION=	1.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}inter7/${PORTNAME}inter7/${PORTVERSION}
 
@@ -17,6 +17,7 @@ OPTIONS_DEFINE=	DOCS
 USE_CSTD=	gnu89
 
 CFLAGS_amd64=	-fPIC
+CFLAGS_i386=	-fPIC
 
 PORTDOCS=	howto
 

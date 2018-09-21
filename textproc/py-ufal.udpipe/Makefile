@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-ufal.udpipe/Makefile 479917 2018-09-17 08:36:20Z yuri $
+# $FreeBSD: head/textproc/py-ufal.udpipe/Makefile 480120 2018-09-19 22:52:41Z yuri $
 
 PORTNAME=	ufal.udpipe
 PORTVERSION=	1.2.0.1
@@ -12,7 +12,10 @@ COMMENT=	Python bindings to UDPipe library for parsing universal treebanks
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python
+BROKEN_mips64=	Only little endian systems are supported!
+BROKEN_powerpc64=	Only little endian systems are supported!
+
+USES=		compiler:c++11-lang python
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>
