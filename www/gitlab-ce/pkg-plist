@@ -14455,6 +14455,12 @@
 @dir %%WWWDIR%%/public
 @dir %%WWWDIR%%/public/assets
 @dir(,,700) %%WWWDIR%%/public/uploads
+@dir %%WWWDIR%%/qa/qa/specs/features/api/2_plan
+@dir %%WWWDIR%%/qa/qa/specs/features/api/4_verify
+@dir %%WWWDIR%%/qa/qa/specs/features/api/5_package
+@dir %%WWWDIR%%/qa/qa/specs/features/api/6_release
+@dir %%WWWDIR%%/qa/qa/specs/features/api/7_configure
+@dir %%WWWDIR%%/qa/qa/specs/features/browser_ui/5_package
 @dir %%WWWDIR%%/spec/support/gitlab-git-test.git/refs/heads
 @dir %%WWWDIR%%/spec/support/gitlab-git-test.git/refs/tags
 @dir(,,700) %%WWWDIR%%/shared

@@ -9,15 +9,6 @@
  gem 'pg', '~> 0.18.2', group: :postgres
  
  gem 'rugged', '~> 0.27'
-@@ -125,7 +125,7 @@ gem 'fog-rackspace', '~> 0.1.1'
- gem 'fog-aliyun', '~> 0.2.0'
- 
- # for Google storage
--gem 'google-api-client', '~> 0.23'
-+gem 'google-api-client', '>= 0.23'
- 
- # for aws storage
- gem 'unf', '~> 0.1.4'
 @@ -179,7 +179,7 @@ gem 'sidekiq-limit_fetch', '~> 3.4', req
  gem 'rufus-scheduler', '~> 3.4'
  
