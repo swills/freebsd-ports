@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	ocaml-
 DISTNAME=	opam-full-${DISTVERSION}
 DIST_SUBDIR=	opam-01
 
-MAINTAINER=	joris@giovannangeli.fr
+MAINTAINER=	hannes@mehnert.org
 COMMENT=	Source-based package manager for OCaml
 
 LICENSE=	GPLv3
