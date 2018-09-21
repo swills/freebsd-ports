@@ -2,12 +2,8 @@
 
 PORTNAME=	gogs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.11.53
-PORTREVISION=	1
+DISTVERSION=	0.11.66
 CATEGORIES=	devel www
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	1f247cf8139cb483276cd8dd06385a800ce9d4b2.patch:-p1
 
 MAINTAINER=	dg@syrec.org
 COMMENT=	Painless self-hosted Git service
@@ -59,8 +55,8 @@ post-patch:
 		${WRKSRC}/conf/app.ini
 
 do-build:
-	@(cd ${WRKSRC}/${GH_SUBDIR} && \
-		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -tags "sqlite pam cert" -p ${MAKE_JOBS_NUMBER} -o ${PORTNAME})
+	cd ${WRKSRC}/${GH_SUBDIR} && \
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -tags "sqlite pam cert" -p ${MAKE_JOBS_NUMBER} -o ${PORTNAME}
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/libexec/${PORTNAME}
@@ -78,7 +74,7 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${GOGS_LOGDIR}
 	@${LN} -sf ${GOGS_LOGDIR} ${STAGEDIR}/${PREFIX}/libexec/${PORTNAME}/log
 
-do-install-DOCS-on:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
