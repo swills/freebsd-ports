@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/openquicktime/Makefile 428135 2016-12-08 16:39:11Z tijl $
+# $FreeBSD: head/multimedia/openquicktime/Makefile 480069 2018-09-18 19:20:17Z emaste $
 
 PORTNAME=	openquicktime
 PORTVERSION=	1.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/OpenQuicktime%20v1/${PORTVERSION}b
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -22,6 +22,7 @@ PKGDEINSTALL=	${PKGINSTALL}
 
 CFLAGS_aarch64=	-fPIC
 CFLAGS_amd64=	-fPIC
+CFLAGS_i386=	-fPIC
 
 OPTIONS_DEFINE=	DEBUG
 

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack-proxy/Makefile 463748 2018-03-06 20:31:30Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-proxy/Makefile 480086 2018-09-18 23:41:52Z sunpoet $
 
 PORTNAME=	rack-proxy
-PORTVERSION=	0.6.4
+PORTVERSION=	0.6.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-rack>=0:www/rubygem-rack
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

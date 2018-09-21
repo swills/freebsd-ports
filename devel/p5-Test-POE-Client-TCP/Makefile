@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-POE-Client-TCP/Makefile 474764 2018-07-16 23:42:46Z wen $
+# $FreeBSD: head/devel/p5-Test-POE-Client-TCP/Makefile 480143 2018-09-20 00:23:28Z sunpoet $
 
 PORTNAME=	Test-POE-Client-TCP
-PORTVERSION=	1.22
+PORTVERSION=	1.24
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,11 +13,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-POE>=1.28:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=1.28:devel/p5-POE
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

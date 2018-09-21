@@ -1,8 +1,8 @@
 # Created by: krion
-# $FreeBSD: head/x11/xterm/Makefile 477215 2018-08-15 07:37:42Z ehaupt $
+# $FreeBSD: head/x11/xterm/Makefile 480159 2018-09-20 09:19:06Z ehaupt $
 
 PORTNAME=	xterm
-PORTVERSION=	335
+PORTVERSION=	336
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.invisible-island.net/xterm/:src1 \
 		https://invisible-mirror.net/archives/xterm/:src1 \
@@ -15,14 +15,16 @@ COMMENT=	Terminal emulator for the X Window System
 
 LICENSE=	MIT
 
-CONFLICTS=	x11iraf-[0-9]*
-
 USES=		cpe ncurses tar:tgz
-CPE_VENDOR=	invisible-island
 USE_XORG=	xft xmu xt x11 xpm ice
+
 GNU_CONFIGURE=	yes
 
+CPE_VENDOR=	invisible-island
+
 CONFIGURE_ARGS+=	--with-utempter --enable-narrowproto
+
+CONFLICTS=	x11iraf-[0-9]*
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib

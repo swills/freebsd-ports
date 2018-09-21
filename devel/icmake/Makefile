@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/icmake/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/icmake/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	icmake
 PORTVERSION=	9.02.08
@@ -20,7 +20,7 @@ PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
 
 REINPLACE_ARGS=	-I ""
 
-USES=		shebangfix
+USES=		compiler shebangfix
 SHEBANG_FILES=	build comp/build comp/icm_bootstrap comp/updategrammar \
 		comp/updateparser comp/updatescanner dep/build dep/icm_bootstrap \
 		exec/build exec/icm_bootstrap exec/list/test/build exec/string/test/build \
@@ -36,6 +36,12 @@ GL_COMMIT=	8e3ac3057363162b87279bab1e9ba356eb0aea0f
 .include <bsd.port.options.mk>
 
 OPTIONS_DEFINE=	DOCS
+
+.include <bsd.port.pre.mk>
+
+.if ${CHOSEN_COMPILER_TYPE} == gcc && ${COMPILER_VERSION} == 42
+CFLAGS+=	-std=gnu99
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|find|find .|g' \

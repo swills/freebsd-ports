@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio/Makefile 476597 2018-08-07 13:54:42Z swills $
+# $FreeBSD: head/www/minio/Makefile 479968 2018-09-18 03:01:09Z swills $
 
 PORTNAME=	minio
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -14,9 +14,9 @@ BUILD_DEPENDS=	go>=1.9.4:lang/go
 USES=		compiler
 
 USE_GITHUB=	yes
-GH_TAGNAME=	RELEASE.2018-08-02T23-11-36Z
+GH_TAGNAME=	RELEASE.2018-09-12T18-49-56Z
 GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
-COMMIT_ID=	a091b1a3eefbaea07499bef9a5462280ec9d2a7a
+COMMIT_ID=	ce419c98352324caa4c79b159a9f840ca714c3d5
 
 PLIST_FILES=	bin/minio
 

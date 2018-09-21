@@ -1,8 +1,8 @@
 # Created by: Pietro Cerutti <gahr@gahr.ch>
-# $FreeBSD: head/textproc/scew/Makefile 462246 2018-02-18 13:38:57Z sunpoet $
+# $FreeBSD: head/textproc/scew/Makefile 479953 2018-09-17 20:04:10Z sunpoet $
 
 PORTNAME=	scew
-PORTVERSION=	1.1.9
+PORTVERSION=	1.2.0
 CATEGORIES=	textproc
 MASTER_SITES=	SAVANNAH
 

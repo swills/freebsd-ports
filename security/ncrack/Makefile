@@ -1,11 +1,11 @@
 # Created by: David E. Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/security/ncrack/Makefile 468860 2018-05-02 18:07:06Z lx $
+# $FreeBSD: head/security/ncrack/Makefile 480244 2018-09-21 09:38:25Z amdmi3 $
 
 PORTNAME=	ncrack
 DISTVERSION=	0.6
 CATEGORIES=	security
 MASTER_SITES=	http://nmap.org/ncrack/dist/ \
-				http://redundancy.redundancy.org/mirror/
+		http://redundancy.redundancy.org/mirror/
 
 MAINTAINER=	lx@FreeBSD.org
 COMMENT=	High-speed network authentication cracking tool
@@ -18,6 +18,6 @@ USES=		gmake ssl
 CPPFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
 
-WRKSRC=	${WRKDIR}/${PORTNAME}-${DISTVERSION}.0
+WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}.0
 
 .include <bsd.port.mk>

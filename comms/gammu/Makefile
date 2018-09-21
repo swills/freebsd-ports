@@ -1,5 +1,5 @@
 # Created by: Kirill Bezzubets <kirill@solaris.ru>
-# $FreeBSD: head/comms/gammu/Makefile 470032 2018-05-15 16:07:39Z yuri $
+# $FreeBSD: head/comms/gammu/Makefile 480259 2018-09-21 11:37:03Z linimon $
 
 PORTNAME=	gammu
 PORTVERSION=	1.39.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl
 CMAKE_ARGS=	-DINSTALL_LIBDATA_DIR:PATH=${PREFIX}/libdata \
 		-DINSTALL_MAN_DIR:PATH=${PREFIX}/man
 
-USES=		cmake:outsource gettext iconv pkgconfig shebangfix tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext iconv pkgconfig shebangfix tar:xz
 SHEBANG_FILES=	utils/jadmaker utils/gammu-config
 bash_CMD=	/bin/sh
 USE_GNOME=	glib20

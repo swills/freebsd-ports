@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/tarsnap-gui/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/tarsnap-gui/Makefile 480221 2018-09-21 00:54:45Z swills $
 
 PORTNAME=	tarsnap-gui
-PORTVERSION=	1.0.1
-PORTREVISION=	1
+PORTVERSION=	1.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

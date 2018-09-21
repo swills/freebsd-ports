@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/pbcopper/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/biology/pbcopper/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	pbcopper
 DISTVERSION=	g20180413
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 
-USES=		cmake
+USES=		cmake compiler:c++14-lang
 # Although there are a couple releases, git describe --tags does not work
 # so we cannot use the usual USE_GITHUB tools here.
 USE_GITHUB=	yes

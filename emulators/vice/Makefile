@@ -1,5 +1,5 @@
 # Created by: dchapes@ddm.on.ca
-# $FreeBSD: head/emulators/vice/Makefile 479427 2018-09-10 14:40:53Z mat $
+# $FreeBSD: head/emulators/vice/Makefile 480114 2018-09-19 21:38:38Z linimon $
 
 PORTNAME=	vice
 PORTVERSION=	3.1
@@ -32,7 +32,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 
 RESTRICTED=	ROMs are copyrighted by Commodore Business Machines
 
-USES=		pkgconfig makeinfo gmake iconv jpeg
+USES=		compiler:c++11-lang pkgconfig makeinfo gmake iconv jpeg
 USE_XORG=	xpm ice sm xext xv xt x11 xmu xxf86vm
 USE_XORG+=	xrender xinerama xi xrandr xcursor xcomposite xdamage xfixes
 GNU_CONFIGURE=	yes

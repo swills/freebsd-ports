@@ -1,8 +1,8 @@
 # Created by: Alban MAIRE <a.maire@s2mi.fr>
-# $FreeBSD: head/net-mgmt/unifi-devel/Makefile 477961 2018-08-24 13:24:22Z swills $
+# $FreeBSD: head/net-mgmt/unifi-devel/Makefile 480179 2018-09-20 14:47:48Z swills $
 
 PORTNAME=	unifi
-PORTVERSION=	5.9.24
+PORTVERSION=	5.9.26
 PORTREVISION=	0
 CATEGORIES=	net-mgmt java
 MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}-${UNIFI_BUILD}/
@@ -24,7 +24,7 @@ EXTRACT_CMD=	/usr/bin/ar
 EXTRACT_BEFORE_ARGS=	-p
 EXTRACT_AFTER_ARGS=	data.tar.xz | ${TAR} -xf -
 
-UNIFI_BUILD=	64c9fed777
+UNIFI_BUILD=	25460f7409
 
 USES=		cpe
 CPE_VENDOR=	ubnt

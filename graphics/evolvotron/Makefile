@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/evolvotron/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/evolvotron/Makefile 479996 2018-09-18 08:35:49Z linimon $
 
 PORTNAME=	evolvotron
 DISTVERSION=	0.7.1
@@ -15,8 +15,6 @@ COMMENT=	Generative software that evolves images/textures/patterns
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_powerpc64=	fails to link: evolvotron.o: undefined reference to boost::program_options::options_description::options_description
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 

@@ -1,5 +1,5 @@
 # Created by: Dominic Marks <d.marks@student.umist.ac.uk>
-# $FreeBSD: head/devel/ccache/Makefile 478334 2018-08-28 22:41:43Z amdmi3 $
+# $FreeBSD: head/devel/ccache/Makefile 480093 2018-09-19 09:38:24Z amdmi3 $
 
 PORTNAME=	ccache
 PORTVERSION=	3.4.2
@@ -115,7 +115,7 @@ post-patch-MEMCACHED-off:
 
 post-build-TINDERBOX-on:
 	@${MKDIR} ${WRKDIR}/tb/opt
-	@${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${WRKDIR}/tb/opt
+	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${WRKDIR}/tb/opt
 .for l in ${CCACHE_COMPILERS}
 	@${LN} -sf ${PORTNAME} ${WRKDIR}/tb/opt/${l}
 .endfor

@@ -1,9 +1,8 @@
-# $FreeBSD: head/math/py-permutation/Makefile 472631 2018-06-17 20:07:07Z yuri $
+# $FreeBSD: head/math/py-permutation/Makefile 480100 2018-09-19 17:41:53Z yuri $
 
 PORTNAME=	permutation
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.1.0-2
-DISTVERSIONSUFFIX=	-g42654bb
+DISTVERSION=	0.1.1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

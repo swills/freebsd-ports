@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/engauge-digitizer/Makefile 475908 2018-07-30 19:50:33Z yuri $
+# $FreeBSD: head/graphics/engauge-digitizer/Makefile 479988 2018-09-18 08:01:05Z yuri $
 
 PORTNAME=	engauge-digitizer
 DISTVERSIONPREFIX=	v
-DISTVERSION=	10.9
+DISTVERSION=	10.10
 CATEGORIES=	graphics math science
 
 MAINTAINER=	yuri@FreeBSD.org

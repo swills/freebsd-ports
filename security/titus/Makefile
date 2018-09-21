@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/titus/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/titus/Makefile 479980 2018-09-18 07:34:45Z linimon $
 
 PORTNAME=	titus
 PORTVERSION=	0.3
@@ -10,8 +10,6 @@ MAINTAINER=	feld@FreeBSD.org
 COMMENT=	TLS/SSL proxy server
 
 LICENSE=	MIT
-
-BROKEN_powerpc64=	fails to compile: child.cpp: undefined reference to std::__cxx11::basic_string
 
 USES=		compiler:c++11-lang ssl
 USE_RC_SUBR=	titus

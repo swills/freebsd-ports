@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/freebayes/Makefile 473009 2018-06-21 23:52:37Z linimon $
+# $FreeBSD: head/biology/freebayes/Makefile 480003 2018-09-18 09:28:34Z linimon $
 
 PORTNAME=		freebayes
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ BROKEN_armv7=		fails to compile: invalid conversion between vector type and inte
 
 # Submodules use older versions than the ports, so we cannot safely unbundle
 # No shared libs are built by the submodules so there will be no conflicts
-USES=		gmake tar:xz
+USES=		compiler:c++11-lang gmake tar:xz
 USE_GITHUB=	yes
 GH_ACCOUNT=	ekg
 GH_TUPLE=	walaj:SeqLib:5941c68:SeqLib/SeqLib-temp \

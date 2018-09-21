@@ -1,8 +1,9 @@
 # Created by: Bob Eager <rde@ml1.org.uk>
-# $FreeBSD: head/textproc/ml1/Makefile 478795 2018-09-02 15:34:17Z swills $
+# $FreeBSD: head/textproc/ml1/Makefile 480282 2018-09-21 15:41:57Z fernape $
 
 PORTNAME=	ml1
 PORTVERSION=	4.12
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.ml1.org.uk/distfiles/ \
 		http://www.ancientgeek.org.uk/distfiles/

@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/bitcoin/Makefile 477794 2018-08-22 15:33:56Z swills $
+# $FreeBSD: head/net-p2p/bitcoin/Makefile 479993 2018-09-18 08:30:37Z linimon $
 
 PORTNAME=	bitcoin
 PORTVERSION=	0.16.2
@@ -18,8 +18,6 @@ LICENSE=	MIT
 
 LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs \
 		libevent.so:devel/libevent
-
-BROKEN_powerpc64=	fails to compile: util.cpp: undefined reference to boost::program_options::to_internal
 
 USES=		autoreconf compiler:c++11-lib gmake libtool pkgconfig qt:5 shebangfix ssl
 GNU_CONFIGURE=	yes

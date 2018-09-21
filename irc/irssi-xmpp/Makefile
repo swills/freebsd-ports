@@ -1,9 +1,9 @@
 # Created by: Philippe Audeoud <jadawin@tuxaco.net>
-# $FreeBSD: head/irc/irssi-xmpp/Makefile 460717 2018-02-02 17:37:28Z brd $
+# $FreeBSD: head/irc/irssi-xmpp/Makefile 480069 2018-09-18 19:20:17Z emaste $
 
 PORTNAME=	irssi-xmpp
 PORTVERSION=	0.53
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	irc
 MASTER_SITES=	http://cybione.org/~irssi-xmpp/files/
 
@@ -24,6 +24,7 @@ DATADIR=	${PREFIX}/share/irssi
 DOCSDIR=	${PREFIX}/share/doc/irssi
 CFLAGS_aarch64=	-fPIC
 CFLAGS_amd64=	-fPIC
+CFLAGS_i386=	-fPIC
 
 OPTIONS_DEFINE=	DOCS
 

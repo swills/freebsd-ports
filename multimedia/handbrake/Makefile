@@ -1,9 +1,8 @@
 # Created by: Andrew Thompson <andy@fud.org.nz>
-# $FreeBSD: head/multimedia/handbrake/Makefile 476802 2018-08-10 00:55:12Z jbeich $
+# $FreeBSD: head/multimedia/handbrake/Makefile 480053 2018-09-18 18:06:15Z swills $
 
 PORTNAME=	handbrake
-DISTVERSION=	1.1.1
-PORTREVISION=	2
+DISTVERSION=	1.1.2
 CATEGORIES=	multimedia
 DIST_SUBDIR=	${PORTNAME}
 
@@ -40,8 +39,8 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 CONTRIB_FILES=	fdk-aac-0.1.5.tar.gz \
 		libav-12.3.tar.gz \
 		libbluray-1.0.2.tar.bz2 \
-		libdvdnav-5.0.3.tar.bz2 \
-		libdvdread-5.0.3.tar.bz2 \
+		libdvdnav-6.0.0.tar.bz2 \
+		libdvdread-6.0.0.tar.bz2 \
 		libvpx-1.7.0.tar.gz \
 		x265_2.6.tar.gz
 MASTER_SITES+=	https://download.handbrake.fr/contrib/:contrib

@@ -1,5 +1,5 @@
 # Created by: adamw
-# $FreeBSD: head/multimedia/x265/Makefile 476480 2018-08-05 22:15:03Z mi $
+# $FreeBSD: head/multimedia/x265/Makefile 480188 2018-09-20 18:33:21Z emaste $
 
 PORTNAME=	x265
 PORTVERSION=	2.8
@@ -44,6 +44,7 @@ USE_LDCONFIG=	yes
 CMAKE_ARGS=	-DENABLE_PIC=on -DPLATFORM_LIBS=md -DENABLE_TESTS=on
 CFLAGS_mips=	-DNO_ATOMICS # cannot use lang/gcc
 CFLAGS_mips64=	-DNO_ATOMICS # cannot use lang/gcc
+LDFLAGS_i386=	-Wl,-znotext
 EXTRACT_AFTER_ARGS+=	--exclude "md5*" --exclude compat
 WRKSRC=		${WRKDIR}/${PORTNAME}_${PORTVERSION}/source
 

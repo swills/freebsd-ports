@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/intervaltree/Makefile 467529 2018-04-16 19:18:04Z jwb $
+# $FreeBSD: head/math/intervaltree/Makefile 479987 2018-09-18 07:56:07Z linimon $
 
 PORTNAME=	intervaltree
 DISTVERSION=	g20151213
@@ -9,6 +9,7 @@ COMMENT=	Minimal C++ interval tree implementation
 
 LICENSE=	MIT
 
+USES=		compiler:c++0x
 USE_GITHUB=	yes
 GH_ACCOUNT=	ekg
 GH_TAGNAME=	8fc4be91866237995e1105689d84bece619f4663

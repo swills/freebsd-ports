@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/gpx2map/Makefile 425630 2016-11-07 15:26:13Z jhale $
+# $FreeBSD: head/www/gpx2map/Makefile 480063 2018-09-18 18:40:37Z swills $
 
 PORTNAME=	gpx2map
 PORTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	koue@chaosophia.net
@@ -29,7 +30,8 @@ PLIST_FILES=	bin/gpx2map \
 OPTIONS_DEFINE=	GNUPLOT
 
 GNUPLOT_DESC=	Enable draw track profiles
-GNUPLOT_RUN_DEPENDS=	p5-Chart-Gnuplot>=0:graphics/p5-Chart-Gnuplot
+GNUPLOT_RUN_DEPENDS=	p5-Chart-Gnuplot>=0:graphics/p5-Chart-Gnuplot \
+			convert:graphics/ImageMagick
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|gpx2map.google.template|${DATADIR}/gpx2map.google.template|" \

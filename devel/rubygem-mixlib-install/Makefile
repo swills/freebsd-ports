@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-mixlib-install/Makefile 476688 2018-08-08 21:46:21Z zi $
+# $FreeBSD: head/devel/rubygem-mixlib-install/Makefile 480296 2018-09-21 18:08:29Z sunpoet $
 
 PORTNAME=	mixlib-install
-PORTVERSION=	3.11.2
+PORTVERSION=	3.11.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -17,6 +17,8 @@ RUN_DEPENDS=	rubygem-mixlib-shellout>0:devel/rubygem-mixlib-shellout \
 
 USES=		gem
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/mixlib-install
 

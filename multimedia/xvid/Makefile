@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <michaelnottebrock@gmx.net> et al
-# $FreeBSD: head/multimedia/xvid/Makefile 476404 2018-08-05 10:24:48Z riggs $
+# $FreeBSD: head/multimedia/xvid/Makefile 480032 2018-09-18 16:04:19Z emaste $
 
 PORTNAME=	xvid
 PORTVERSION=	1.3.5
@@ -18,6 +18,9 @@ USES=		gmake tar:bz2
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
+
+# PR230208 Allow relocations against read-only segments (override lld default)
+LDFLAGS_i386=	-Wl,-z,notext
 
 CONFIGURE_ENV+=	ac_cv_prog_ac_yasm=no
 

@@ -1,5 +1,5 @@
 # Created by: Mike Krutov <neko@takino.org>
-# $FreeBSD: head/x11-toolkits/girara/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/x11-toolkits/girara/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	girara
 PORTVERSION=	0.3.0
@@ -11,7 +11,7 @@ MASTER_SITES=	https://pwmt.org/projects/girara/download/ \
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	GTK3 Interface Library for Zathura PDF Viewer
 
-USES=		meson pathfix pkgconfig tar:xz
+USES=		compiler:c11 meson pathfix pkgconfig tar:xz
 PATHFIX_MAKEFILEIN=	Makefile
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30
 USE_LDCONFIG=	yes

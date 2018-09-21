@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/libcjson/Makefile 470630 2018-05-22 17:47:33Z sunpoet $
+# $FreeBSD: head/devel/libcjson/Makefile 480114 2018-09-19 21:38:38Z linimon $
 
 PORTNAME=	libcjson
 PORTVERSION=	1.7.7
@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CMAKE_ON=	BUILD_SHARED_AND_STATIC_LIBS ENABLE_CJSON_UTILS ENABLE_TARGET_EXPORT
-USES=		cmake
+USES=		cmake compiler:c11
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 

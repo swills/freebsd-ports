@@ -1,5 +1,5 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/audio/madplay/Makefile 470803 2018-05-24 19:01:31Z tobik $
+# $FreeBSD: head/audio/madplay/Makefile 480006 2018-09-18 10:10:54Z tobik $
 
 PORTNAME=	madplay
 PORTVERSION=	0.15.2b
@@ -11,7 +11,8 @@ MASTER_SITES=	SF/mad/${PORTNAME}/${PORTVERSION} \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Madplay MP3 player (part of MAD project)
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 LIB_DEPENDS=	libmad.so:audio/libmad \
 		libid3tag.so:audio/libid3tag
@@ -23,11 +24,17 @@ CONFIGURE_ARGS=	--without-esd
 LDFLAGS+=	-lz
 ALL_TARGET=	all madtime
 
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	NLS SNDIO
 OPTIONS_SUB=	yes
 
 NLS_USES=		gettext
 NLS_CONFIGURE_ENABLE=	nls
+
+SNDIO_CONFIGURE_WITH=	sndio
+SNDIO_LIB_DEPENDS=	libsndio.so:audio/sndio
+
+post-extract-SNDIO-on:
+	@${CP} ${FILESDIR}/audio_sndio.c ${WRKSRC}
 
 post-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/madtime ${STAGEDIR}${PREFIX}/bin

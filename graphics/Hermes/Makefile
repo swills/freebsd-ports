@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/graphics/Hermes/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/graphics/Hermes/Makefile 480079 2018-09-18 20:12:04Z emaste $
 
 PORTNAME=	Hermes
 PORTVERSION=	1.3.3
@@ -15,6 +15,7 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USES=		gmake libtool tar:bzip2
 USE_LDCONFIG=	yes
+LDFLAGS_i386=	-Wl,-znotext
 
 PORTDOCS=	*
 

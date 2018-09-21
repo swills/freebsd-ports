@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 479990 2018-09-18 08:14:23Z linimon $
 
 PORTNAME=	gstreamer1-editing-services
 PORTVERSION=	1.12.3
@@ -10,11 +10,9 @@ DISTNAME=	gstreamer-editing-services-${PORTVERSION}
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	GStreamer editing services
 
-BROKEN_powerpc64=	fails to compile: ges-extractable.h:24: error: redefinition of typedef 'GESExtractable'
-
 PORTSCOUT=	limitw:1,even
 
-USES=		gmake gnome libtool pathfix python:2.7 pkgconfig tar:xz
+USES=		compiler:c11 gmake gnome libtool pathfix python:2.7 pkgconfig tar:xz
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20 introspection:build libxml2 pygobject3

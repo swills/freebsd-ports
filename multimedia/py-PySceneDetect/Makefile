@@ -1,9 +1,8 @@
-# $FreeBSD: head/multimedia/py-PySceneDetect/Makefile 472736 2018-06-19 01:33:28Z yuri $
+# $FreeBSD: head/multimedia/py-PySceneDetect/Makefile 480183 2018-09-20 17:25:40Z swills $
 
 PORTNAME=	PySceneDetect
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	multimedia python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -13,6 +12,7 @@ COMMENT=	OpenCV-based video scene detection program and Python library
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=  ${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${PY_FLAVOR}
 RUN_DEPENDS=	${PYNUMPY} \
 		mkvmerge:multimedia/mkvtoolnix \
 		${PYTHON_PKGNAMEPREFIX}opencv>=0:graphics/py-opencv@${PY_FLAVOR}

@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/libx264/Makefile 479025 2018-09-05 14:48:12Z emaste $
+# $FreeBSD: head/multimedia/libx264/Makefile 480026 2018-09-18 14:48:48Z emaste $
 #
 # Updating notes: see multimedia/x264/Makefile.
 
@@ -13,6 +13,7 @@ PLIST=		${.CURDIR}/pkg-plist
 LIB_DEPENDS=	#
 
 USES=		pathfix
+LDFLAGS_i386=	-Wl,-znotext
 
 OPTIONS_DEFINE=		ASM OPENCL
 OPTIONS_DEFAULT=	ASM OPENCL

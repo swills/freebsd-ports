@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libstorj/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/net/libstorj/Makefile 480114 2018-09-19 21:38:38Z linimon $
 
 PORTNAME=	libstorj
 PORTVERSION=	1.0.3
@@ -16,7 +16,6 @@ BROKEN_armv6=		fails to build: invokes x86 assembler
 BROKEN_armv7=		fails to build: invokes x86 assembler
 BROKEN_mips=		fails to build: invokes x86 assembler
 BROKEN_mips64=		fails to build: invokes x86 assembler
-BROKEN_powerpc64=	fails to compile: storj.c:135: 'for' loop initial declaration used outside C99 mode
 
 LIB_DEPENDS=	libjson-c.so:devel/json-c \
 		libuv.so:devel/libuv \
@@ -25,6 +24,7 @@ LIB_DEPENDS=	libjson-c.so:devel/json-c \
 		libmicrohttpd.so:www/libmicrohttpd
 
 USES=		autoreconf gmake libtool localbase pkgconfig
+USE_CSTD=	gnu99
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Storj

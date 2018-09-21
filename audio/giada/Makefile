@@ -1,12 +1,12 @@
-# $FreeBSD: head/audio/giada/Makefile 474420 2018-07-11 04:13:45Z yuri $
+# $FreeBSD: head/audio/giada/Makefile 480106 2018-09-19 19:38:36Z yuri $
 
 PORTNAME=	giada
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.15.1
+DISTVERSION=	0.15.2
 CATEGORIES=	audio
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	6712086d9d64c95dbf919ac74d14ca2e40fe18a5.patch:-p1
+PATCHFILES=	64a37052fd26d578929e068eb70529f0bd895596.patch:-p1 \
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Hardcore loop machine
@@ -30,6 +30,7 @@ GH_ACCOUNT=	monocasual
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=freebsd
 USE_XORG=	x11 xext xft xpm
+LDFLAGS+=	-lfltk
 
 PLIST_FILES=	bin/giada
 

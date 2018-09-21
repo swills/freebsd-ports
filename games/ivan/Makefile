@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/ivan/Makefile 473080 2018-06-22 21:28:52Z amdmi3 $
+# $FreeBSD: head/games/ivan/Makefile 479998 2018-09-18 08:47:31Z linimon $
 
 PORTNAME=	ivan
 PORTVERSION=	0.50
@@ -16,11 +16,12 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BROKEN_armv6=		fails to compile: use of overloaded operator '<<' is ambiguous
 BROKEN_armv7=		fails to compile: use of overloaded operator '<<' is ambiguous
 
-USES=		gmake
+USES=		compiler gmake
 USE_SDL=	sdl
 GNU_CONFIGURE=	yes
 
-CXXFLAGS+=	-Wno-c++11-narrowing
+CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 CONFIGURE_ARGS=	--localstatedir=/var/games
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/airspy/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/comms/airspy/Makefile 480118 2018-09-19 22:17:02Z linimon $
 
 PORTNAME=	airspy
 DISTVERSIONPREFIX=	v
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/airspy-tools/LICENSE.md
 
 BROKEN_FreeBSD_10=	error: use of undeclared identifier '__m128'
 BROKEN_aarch64=		fails to compile: invalid conversion between vector type '__m64' and integer type 'int'
+BROKEN_powerpc64=	fails to build: iqconverter_float.c:45:23: error: immintrin.h: No such file or directory
 
 USES=		cmake:outsource pkgconfig
 USE_GITHUB=	yes

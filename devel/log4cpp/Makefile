@@ -1,5 +1,5 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/log4cpp/Makefile 459474 2018-01-19 21:28:34Z antoine $
+# $FreeBSD: head/devel/log4cpp/Makefile 480225 2018-09-21 05:11:36Z linimon $
 
 PORTNAME=	log4cpp
 PORTVERSION=	1.1.3
@@ -12,10 +12,6 @@ COMMENT=	Library of C++ classes for flexible logging
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_mips=		fails to compile: Appender.cpp: extra ';'
-BROKEN_mips64=		fails to compile: Appender.cpp: extra ';'
-BROKEN_powerpc64=	fails to compile: Appender.cpp: extra ';'
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

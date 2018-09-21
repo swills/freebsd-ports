@@ -1,22 +1,33 @@
-# $FreeBSD: head/net-im/xmpp-client/Makefile 437562 2017-04-02 15:07:05Z cs $
+# $FreeBSD: head/net-im/xmpp-client/Makefile 480307 2018-09-21 20:08:18Z yuri $
 
 PORTNAME=	xmpp-client
 PORTVERSION=	20170324
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	cs@FreeBSD.org
 COMMENT=	XMPP client with OTR support
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${LOCALBASE}/${GO_LIBDIR}/golang.org/x/crypto/bcrypt.a:security/go.crypto \
-		${LOCALBASE}/${GO_LIBDIR}/golang.org/x/net/dict.a:net/go.net
+BUILD_DEPENDS=	go:lang/go
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	agl
-GH_TAGNAME=	3030ad42ee2df255ffc108dc6d04893d9501c863
-USES=		go
+GH_TUPLE=	agl:xmpp-client:3030ad4:DEFAULT/src/github.com/agl/xmpp-client \
+		golang:crypto:c126467:crypto/src/golang.org/x/crypto \
+		golang:net:a680a1e:net/src/golang.org/x/net \
+		golang:sys:ac767d6:sys/src/golang.org/x/sys
+
 PLIST_FILES=	bin/xmpp-client
-GO_PKGNAME=	github.com/agl/${PORTNAME}
+
+do-build:
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build  -o ${PORTNAME}
+
+do-test:
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go test . ./xmpp
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 
 .include <bsd.port.mk>

@@ -1,9 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD: head/mail/rspamd-devel/files/rspamd.in 426229 2016-11-16 09:50:06Z vsevolod $
+# $FreeBSD: head/mail/rspamd-devel/files/rspamd.in 480185 2018-09-20 18:01:29Z vsevolod $
 #
 # PROVIDE: rspamd
-# REQUIRE: LOGIN
+# REQUIRE: LOGIN redis
+# BEFORE:  mail
 # KEYWORD: shutdown
 #
 # Add the following line to /etc/rc.conf to enable rspamd:

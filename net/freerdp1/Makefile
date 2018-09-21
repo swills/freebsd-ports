@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp1/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/net/freerdp1/Makefile 480010 2018-09-18 11:01:50Z linimon $
 
 PORTNAME=	freerdp
 PORTVERSION=	1.2.0
@@ -12,6 +12,8 @@ COMMENT=	Free implementation of Remote Desktop Protocol
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to build: ninja: error: build.ninja:315: bad $-escape (literal $ must be written as $$)
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeRDP

@@ -1,8 +1,8 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Devel-PPPort/Makefile 467915 2018-04-22 07:05:25Z wen $
+# $FreeBSD: head/devel/p5-Devel-PPPort/Makefile 480206 2018-09-20 19:28:22Z sunpoet $
 
 PORTNAME=	Devel-PPPort
-PORTVERSION=	3.42
+PORTVERSION=	3.43
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 477793 2018-08-22 14:58:55Z swills $
+# $FreeBSD: head/lang/opencoarrays/Makefile 479979 2018-09-18 07:10:07Z linimon $
 
 PORTNAME=	opencoarrays
 DISTVERSION=	2.2.0
@@ -18,6 +18,7 @@ BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash
 
 USES=		cmake:outsource fortran
+USE_CSTD=	gnu99
 USE_GITHUB=	yes
 GH_ACCOUNT=	sourceryinstitute
 GH_PROJECT=	OpenCoarrays

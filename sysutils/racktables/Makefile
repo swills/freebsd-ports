@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/racktables/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/sysutils/racktables/Makefile 480178 2018-09-20 14:47:44Z dinoex $
 
 PORTNAME=	racktables
 DISTVERSION=	0.21.1
@@ -7,7 +7,7 @@ CATEGORIES?=	sysutils www
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	RackTables-${DISTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Server room asset management suite
 
 LICENSE=	GPLv2

@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/cjose/Makefile 449745 2017-09-13 01:24:41Z zi $
+# $FreeBSD: head/devel/cjose/Makefile 480088 2018-09-19 01:09:58Z wen $
 
 PORTNAME=	cjose
-PORTVERSION=	0.4.1
-PORTREVISION=	1
+PORTVERSION=	0.6.1
 CATEGORIES=	devel
 
 MAINTAINER=	jamie@chair6.net

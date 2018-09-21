@@ -1,21 +1,21 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/databases/mysql-udf/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/databases/mysql-udf/Makefile 480077 2018-09-18 20:09:03Z emaste $
 
 PORTNAME=	mysql-udf
 PORTVERSION=	0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Set of user-defined functions for the MySQL server
 
-BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol 'compare_doubles(void const*, void const*)' defined in udf_median.o
-
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USES=		mysql
+CFLAGS_aarch64+=-fPIC
 CFLAGS_amd64+=	-fPIC
+CFLAGS_i386+=	-fPIC
 
 MODULES=	colwidth confidence_higher confidence_lower correlation \
 		faculty geomean intercept kurtosis longest median noverm \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/arb/Makefile 475332 2018-07-25 20:12:03Z yuri $
+# $FreeBSD: head/math/arb/Makefile 480102 2018-09-19 17:43:15Z yuri $
 
 PORTNAME=	arb
-DISTVERSION=	2.14.0
+DISTVERSION=	2.15.0
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

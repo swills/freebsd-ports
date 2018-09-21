@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/z3/Makefile 475278 2018-07-24 21:03:48Z yuri $
+# $FreeBSD: head/math/z3/Makefile 480036 2018-09-18 16:59:01Z emaste $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -35,6 +35,7 @@ GMP_LIB_DEPENDS=	libgmp.so:math/gmp
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS=		--prefix=${PREFIX}
 USE_LDCONFIG=		yes
+LDFLAGS_i386=		-Wl,-znotext
 BUILD_WRKSRC=		${WRKSRC}/build
 INSTALL_WRKSRC=		${WRKSRC}/build
 

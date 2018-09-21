@@ -1,12 +1,12 @@
 # Created by: Matthew Hunt <mph@pobox.com>
-# $FreeBSD: head/games/angband/Makefile 477357 2018-08-16 16:05:36Z swills $
+# $FreeBSD: head/games/angband/Makefile 480191 2018-09-20 19:13:04Z arrowd $
 
 PORTNAME=	angband
 PORTVERSION=	4.1.3
 CATEGORIES=	games
 MASTER_SITES=	http://rephial.org/downloads/${PORTVERSION:R}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	andrew@merenbach.com
 COMMENT=	Rogue-like game with color, X11 support
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
 # Created by: Johnny Sorocil <jsorocil@gmail.com>
-# $FreeBSD: head/devel/yosys/Makefile 471844 2018-06-06 14:19:51Z tobik $
+# $FreeBSD: head/devel/yosys/Makefile 480010 2018-09-18 11:01:50Z linimon $
 
 PORTNAME=	yosys
 DISTVERSION=	0.7-783
@@ -11,6 +11,8 @@ COMMENT=	Yosys Open SYnthesis Suite
 
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: /bin/sh: clang: not found
 
 BUILD_DEPENDS=	abc:cad/abc \
 		bash:shells/bash \

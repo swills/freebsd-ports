@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 477100 2018-08-13 18:21:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 480144 2018-09-20 00:23:34Z sunpoet $
 
 PORTNAME=	sidekiq
-PORTVERSION=	5.2.1
+PORTVERSION=	5.2.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -17,9 +17,10 @@ RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0:devel/rubygem-concurrent-ruby \
 		rubygem-rack-protection>=1.5.0:www/rubygem-rack-protection \
 		rubygem-redis>=3.3.5:databases/rubygem-redis
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/sidekiq bin/sidekiqctl
 

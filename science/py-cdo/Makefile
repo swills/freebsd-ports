@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/py-cdo/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-cdo/Makefile 480198 2018-09-20 19:27:39Z sunpoet $
 
 PORTNAME=	cdo
-PORTVERSION=	1.3.6
+PORTVERSION=	1.4.0
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,8 +15,9 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	cdo:science/cdo \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USE_PYTHON=	autoplist concurrent distutils
 USES=		python
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/Makefile 472672 2018-06-18 04:59:40Z tobik $
+# $FreeBSD: head/shells/Makefile 480231 2018-09-21 07:20:43Z cy $
 #
 
     COMMENT = Shells
@@ -23,6 +23,7 @@
     SUBDIR += jailkit
     SUBDIR += klish
     SUBDIR += ksh93
+    SUBDIR += ksh93-devel
     SUBDIR += lshell
     SUBDIR += mksh
     SUBDIR += nologinmsg

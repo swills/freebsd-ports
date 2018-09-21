@@ -1,8 +1,9 @@
 # Created by: Christopher Hall <hsw@bitmark.com>
-# $FreeBSD: head/security/libargon2/Makefile 458583 2018-01-09 23:18:28Z dbaio $
+# $FreeBSD: head/security/libargon2/Makefile 480029 2018-09-18 15:08:52Z riggs $
 
 PORTNAME=	libargon2
 PORTVERSION=	20171227
+PORTREVISION=	1
 CATEGORIES=	security devel
 
 MAINTAINER=	hsw@bitmark.com
@@ -20,7 +21,8 @@ GH_PROJECT=	phc-winner-argon2
 
 MAKE_JOBS_UNSAFE=	yes
 LIBARGON2=	libargon2.so.0
-MAKE_ARGS+=	SO_LDFLAGS="-shared -Wl,-soname=${LIBARGON2}"
+MAKE_ARGS+=	SO_LDFLAGS="-shared -Wl,-soname=${LIBARGON2}" \
+		OPTTARGET="generic"
 
 # remove multiarch as this is only for Linux
 SUBST=		s/@HOST_MULTIARCH@//g;

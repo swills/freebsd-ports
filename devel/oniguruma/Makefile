@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma/Makefile 474217 2018-07-09 02:07:36Z yuri $
+# $FreeBSD: head/devel/oniguruma/Makefile 480105 2018-09-19 18:46:15Z yuri $
 
 PORTNAME=	oniguruma
-DISTVERSION=	6.8.2
+DISTVERSION=	6.9.0
 CATEGORIES=	devel textproc
 MASTER_SITES=	https://github.com/kkos/${PORTNAME}/releases/download/v${DISTVERSION}/
 DISTNAME=	onig-${DISTVERSION}
