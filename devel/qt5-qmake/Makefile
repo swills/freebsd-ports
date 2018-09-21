@@ -30,13 +30,17 @@ CONFIGURE_ARGS=	-no-accessibility -no-openssl -no-gui -no-cups \
 QMAKESPEC=	freebsd-${QMAKE_COMPILER}
 INSTALL_TARGET=	sub-qmake-qmake-aux-pro-install_subtargets install_mkspecs
 
-BROKEN_powerpc64=	fails to compile: error: unrecognized command line option -std=c++11
-
 BUILD_WRKSRC=	${WRKSRC}/${PORTNAME}
+
+.include <bsd.port.pre.mk>
 
 post-patch:
 # Clean up files created by patching
 	@${RM} ${WRKSRC}/mkspecs/*/*.orig
+.if ${ARCH} == sparc64 || ${ARCH} == mips64 || ${ARCH:Mpowerpc*}
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-mkspecs_common_g++-base.conf \
+		${PATCHDIR}/extra-patch-mkspecs_common_gcc-base.conf
+.endif
 
 post-build:
 # Complete configure stage to generate *.pri files.
@@ -45,4 +49,4 @@ post-build:
 		CXXFLAGS="${CXXFLAGS}" LDFLAGS="${LDFLAGS}" BUILD_QMAKE=1 \
 		${CONFIGURE_ENV} ${CONFIGURE_CMD} ${CONFIGURE_ARGS}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
