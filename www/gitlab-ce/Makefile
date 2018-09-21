@@ -78,7 +78,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-dropzonejs-rails07>=0.7.1:www/rubygem-dropzonejs-rails07 \
 	rubygem-fog-aws2>=2.0.1:net/rubygem-fog-aws2 \
 	rubygem-fog-core1>=1.44:devel/rubygem-fog-core1 \
-	rubygem-fog-google13>=1.3.3:net/rubygem-fog-google13 \
+	rubygem-fog-google>=1.7.1:net/rubygem-fog-google \
 	rubygem-fog-local>=0.3:net/rubygem-fog-local \
 	rubygem-fog-openstack02>=0.1:net/rubygem-fog-openstack02 \
 	rubygem-fog-rackspace>=0.1.1:net/rubygem-fog-rackspace \
