@@ -4,7 +4,6 @@ Make sure to edit the following files to adapt to your setup:
 
 %%LOCALBASE%%/etc/solr.in.sh
 /var/db/solr/solr.xml
-/var/db/solr/log4j.properties
 
 All files are configured to have your solr instances running in
 /var/db/solr/<instancename>
