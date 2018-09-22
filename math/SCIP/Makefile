@@ -13,7 +13,7 @@ COMMENT=	Solver for mixed integer, mixed integer nonlinear programming
 LICENSE=	ZIB
 LICENSE_NAME=	ZIB ACADEMIC LICENSE
 LICENSE_FILE=	${WRKSRC}/COPYING
-LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
+LICENSE_PERMS=	no-dist-mirror no-pkg-mirror no-auto-accept
 
 EXTRACT_DEPENDS=	gtar:archivers/gtar
 LIB_DEPENDS=	libgmp.so:math/gmp \
