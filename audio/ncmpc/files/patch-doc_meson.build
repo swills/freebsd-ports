@@ -1,7 +1,7 @@
---- doc/meson.build.orig	2018-04-04 08:23:50 UTC
+--- doc/meson.build.orig	2018-09-19 10:46:55 UTC
 +++ doc/meson.build
-@@ -1,24 +1,28 @@
- sphinx = find_program('sphinx-build', required:false)
+@@ -1,28 +1,32 @@
+ sphinx = find_program('sphinx-build', required: enable_documentation == 'true')
 -if sphinx.found()
 -  custom_target(
 -    'HTML documentation',
@@ -47,4 +47,9 @@
 +  endif
  endif
  
- if get_option('documentation')
+ doxygen = find_program('doxygen', required: enable_documentation == 'true')
+-if doxygen.found()
++if doxygen.found() and get_option('doxygen')
+   dconf = configuration_data()
+   dconf.set('VERSION', meson.project_version())
+   dconf.set('abs_top_srcdir', meson.source_root())

@@ -1,14 +1,21 @@
---- meson_options.txt.orig	2018-04-04 08:23:50 UTC
+--- meson_options.txt.orig	2018-09-19 10:46:55 UTC
 +++ meson_options.txt
-@@ -83,3 +83,11 @@ option('chat_screen', type: 'boolean',
- option('documentation', type: 'boolean',
+@@ -79,6 +79,18 @@ option('chat_screen', type: 'boolean',
    value: false,
-   description: 'Build API documentation')
-+
+   description: 'Enable the chat screen')
+ 
 +option('manual', type: 'boolean',
 +  value: true,
 +  description: 'Build the manual')
 +
++option('doxygen', type: 'boolean',
++	value: true,
++	description: 'Build API docs')
++
 +option('html_manual', type: 'boolean',
 +  value: true,
 +  description: 'Build the HTML manual')
++
+ option('documentation', type: 'combo',
+   choices: ['true', 'false', 'auto'], value: 'auto',
+   description: 'Build documentation')
