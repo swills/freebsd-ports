@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 480350 2018-09-22 06:48:58Z bapt $
+# $FreeBSD: head/textproc/Makefile 480515 2018-09-23 18:08:19Z mfechner $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)

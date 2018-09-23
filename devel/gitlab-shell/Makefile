@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/gitlab-shell/Makefile 479137 2018-09-06 19:01:13Z mfechner $
+# $FreeBSD: head/devel/gitlab-shell/Makefile 480517 2018-09-23 18:15:25Z mfechner $
 
 PORTNAME=	gitlab-shell
 PORTVERSION=	8.3.3

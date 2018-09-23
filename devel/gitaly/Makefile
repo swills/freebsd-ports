@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gitaly/Makefile 480298 2018-09-21 18:08:40Z sunpoet $
+# $FreeBSD: head/devel/gitaly/Makefile 480516 2018-09-23 18:13:56Z mfechner $
 
 PORTNAME=	gitaly
 DISTVERSION=	0.120.0
