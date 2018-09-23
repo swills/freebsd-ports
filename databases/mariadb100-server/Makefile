@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/mariadb100-server/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/mariadb100-server/Makefile 480390 2018-09-22 15:05:05Z des $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.0.36
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/${SITESDIR}/ \
 		http://mirrors.supportex.net/${SITESDIR}/ \
@@ -176,6 +176,11 @@ post-patch:
 		${WRKSRC}/cmake/os/DragonFly.cmake
 	${MV} ${WRKSRC}/storage/tokudb ${WRKSRC}/skip-tokudb
 .endif
+
+# This file is being generated incorrectly for unknown reasons.
+# See https://bugs.freebsd.org/230839 for details.
+post-configure:
+	${REINPLACE_CMD} -e 's|-l-pthread|-pthread|g' ${WRKSRC}/scripts/mysql_config
 
 post-configure-MROONGA-on:
 	${REINPLACE_CMD} 's|-llz4|-L${LOCALBASE}/lib -llz4|' \

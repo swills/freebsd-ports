@@ -1,5 +1,5 @@
 # Created by: jhanna@home.com
-# $FreeBSD: head/devel/spin/Makefile 479777 2018-09-14 16:56:48Z lwhsu $
+# $FreeBSD: head/devel/spin/Makefile 480346 2018-09-22 06:27:10Z yuri $
 
 PORTNAME=	spin
 PORTVERSION=	6.4.8

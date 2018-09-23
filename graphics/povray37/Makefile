@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/povray37/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/povray37/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	povray
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.7.0.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 PKGNAMESUFFIX=	37
 
@@ -79,9 +79,9 @@ CONFIGURE_ARGS+=--without-libtiff
 
 .if ${PORT_OPTIONS:MOPENEXR}
 .if ${PORT_OPTIONS:MSTATIC}
-BUILD_DEPENDS+=	OpenEXR>=1.6:graphics/OpenEXR
+BUILD_DEPENDS+=	openexr>=1.6:graphics/openexr
 .else
-LIB_DEPENDS+=	libIlmImf.so:graphics/OpenEXR
+LIB_DEPENDS+=	libIlmImf.so:graphics/openexr
 CPPFLAGS+=	-I${LOCALBASE}/include/OpenEXR
 .endif
 .else

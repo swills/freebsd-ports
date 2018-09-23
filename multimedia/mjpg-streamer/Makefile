@@ -1,5 +1,5 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/multimedia/mjpg-streamer/Makefile 428135 2016-12-08 16:39:11Z tijl $
+# $FreeBSD: head/multimedia/mjpg-streamer/Makefile 480460 2018-09-23 08:13:44Z skozlov $
 
 PORTNAME=	mjpg-streamer
 PORTVERSION=	r63
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	multimedia net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Sourcecode
 
-MAINTAINER=	kozlov.sergey.404@gmail.com
+MAINTAINER=	skozlov@FreeBSD.org
 COMMENT=	HTTP video streaming daemon
 
 LICENSE=	GPLv2

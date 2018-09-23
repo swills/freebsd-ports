@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-junos-eznc/Makefile 476800 2018-08-10 00:46:16Z dbaio $
+# $FreeBSD: head/net-mgmt/py-junos-eznc/Makefile 480347 2018-09-22 06:30:25Z wen $
 
 PORTNAME=	junos-eznc
-DISTVERSION=	2.1.9
+DISTVERSION=	2.2.0
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.7.1:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lxml>=3.2.4:devel/py-lxml@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ncclient>=0.5.3:net-mgmt/py-ncclient@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ncclient>=0.5.4:net-mgmt/py-ncclient@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}netaddr>0:net/py-netaddr@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}paramiko>=1.15.2:security/py-paramiko@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scp>=0.7.0:security/py-scp@${PY_FLAVOR} \

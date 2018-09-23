@@ -1,7 +1,7 @@
-# $FreeBSD: head/print/ghostscript9-agpl-x11/Makefile 478951 2018-09-04 12:28:45Z tijl $
+# $FreeBSD: head/print/ghostscript9-agpl-x11/Makefile 480373 2018-09-22 09:53:10Z tijl $
 
 PORTNAME=	ghostscript
-PORTVERSION=	9.24
+PORTVERSION=	9.25
 CATEGORIES=	print
 MASTER_SITES=	https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${PORTVERSION:S/.//}/
 PKGNAMESUFFIX=	9-agpl-x11

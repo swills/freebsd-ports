@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/py-slepc4py/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/py-slepc4py/Makefile 480424 2018-09-22 17:40:41Z yuri $
 
 PORTNAME=	slepc4py
 DISTVERSION=	3.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
 BUILD_DEPENDS=	${PYNUMPY}
-LIB_DEPENDS=	libmpich.so:net/mpich2 \
+LIB_DEPENDS=	libmpich.so:net/mpich \
 		libpetsc.so:science/PETSc \
 		libslepc.so:math/slepc
 RUN_DEPENDS=	${PYNUMPY}

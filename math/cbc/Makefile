@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cbc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/cbc/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	cbc
 DISTVERSIONPREFIX=	releases/
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libClp.so:math/clp \
 		liblapack.so:math/lapack
 
-USES=		fortran gmake libtool pkgconfig
+USES=		compiler:c++11-lang fortran gmake libtool pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	coin-or
 GH_PROJECT=	Cbc

@@ -1,5 +1,5 @@
 # Created by: meka
-# $FreeBSD: head/devel/serd/Makefile 475266 2018-07-24 18:01:13Z fernape $
+# $FreeBSD: head/devel/serd/Makefile 480454 2018-09-23 05:10:38Z linimon $
 
 PORTNAME=	serd
 PORTVERSION=	0.30.0
@@ -13,6 +13,7 @@ LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		pkgconfig tar:bzip2 waf
+USE_CSTD=	c99
 USE_LDCONFIG=	yes
 
 PLIST_SUB=	VERSION=${PORTVERSION}

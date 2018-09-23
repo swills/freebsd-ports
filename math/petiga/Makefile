@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/petiga/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/petiga/Makefile 480424 2018-09-22 17:40:41Z yuri $
 
 PORTNAME=	petiga
 DISTVERSION=	g20180518
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math python
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
 LIB_DEPENDS=	libblas.so:math/blas \
 		liblapack.so:math/lapack \
-		libmpich.so:net/mpich2 \
+		libmpich.so:net/mpich \
 		libpetsc.so:science/PETSc
 
 BB_ACCOUNT=	dalcinl

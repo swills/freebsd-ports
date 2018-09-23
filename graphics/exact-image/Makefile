@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/exact-image/Makefile 478783 2018-09-02 11:06:37Z tobik $
+# $FreeBSD: head/graphics/exact-image/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	exact-image
 PORTVERSION=	0.9.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics perl5 python
 MASTER_SITES=	http://dl.exactcode.de/oss/${PORTNAME}/ LOCAL/bf
 
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libagg.so:graphics/agg \
 		libpng.so:graphics/png \
 		libgif.so:graphics/giflib \
 		libjasper.so:graphics/jasper \
-		libIlmImf.so:graphics/OpenEXR \
+		libIlmImf.so:graphics/openexr \
 		liblcms.so:graphics/lcms \
 		libfreetype.so:print/freetype2 \
 		libexpat.so:textproc/expat2

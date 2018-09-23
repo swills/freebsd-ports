@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trigger-rally/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/trigger-rally/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	trigger-rally
 PORTVERSION=	0.6.5
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libphysfs.so:devel/physfs
 LIB_DEPENDS+=	libalut.so:audio/freealut
 
 WRKSRC_SUBDIR=	src
-USES=		gmake openal:al,alut
+USES=		compiler:c++11-lang gmake openal:al,alut
 USE_SDL=	sdl2 image2
 USE_GL=		glu gl glew
 MAKEFILE=	GNUmakefile

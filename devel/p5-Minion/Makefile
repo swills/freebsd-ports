@@ -1,14 +1,14 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Minion/Makefile 480142 2018-09-20 00:23:23Z sunpoet $
+# $FreeBSD: head/devel/p5-Minion/Makefile 480494 2018-09-23 11:14:42Z sunpoet $
 
 PORTNAME=	Minion
-PORTVERSION=	9.05
+PORTVERSION=	9.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SRI
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Asynchronous job queue for Mojolicious
 
 LICENSE=	ART20

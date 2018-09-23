@@ -1,5 +1,5 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/print/py-preppy/Makefile 396733 2015-09-12 07:33:37Z wen $
+# $FreeBSD: head/print/py-preppy/Makefile 480460 2018-09-23 08:13:44Z skozlov $
 
 PORTNAME=	preppy
 PORTVERSION=	2.3.4
@@ -7,7 +7,7 @@ CATEGORIES=	print python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kozlov.sergey.404@gmail.com
+MAINTAINER=	skozlov@FreeBSD.org
 COMMENT=	ReportLab's templating system
 
 LICENSE=	BSD3CLAUSE

@@ -1,10 +1,10 @@
 # Created by: Henrik Brix Andersen <brix@FreeBSD.org>
-# $FreeBSD: head/www/xapian-omega/Makefile 475700 2018-07-29 19:10:57Z sunpoet $
+# $FreeBSD: head/www/xapian-omega/Makefile 480470 2018-09-23 09:38:41Z sunpoet $
 
 PORTNAME=	xapian-omega
 PORTVERSION=	1.4.7
 CATEGORIES=	www
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -29,8 +29,8 @@ CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR}
 CONFIGURE_ENV=	PCRE_CONFIG=${LOCALBASE}/bin/pcre-config \
 		XAPIAN_CONFIG=${LOCALBASE}/bin/xapian-config
 GNU_CONFIGURE=	yes
+USES=		compiler:c++11-lang libtool localbase perl5 shebangfix tar:xz
 USE_LDCONFIG=	yes
-USES=		libtool localbase perl5 shebangfix tar:xz
 
 SHEBANG_FILES=	dbi2omega htdig2omega mbox2omega
 

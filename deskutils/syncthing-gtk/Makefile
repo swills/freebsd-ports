@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/syncthing-gtk/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/deskutils/syncthing-gtk/Makefile 480323 2018-09-21 22:37:51Z swills $
 
 PORTNAME=	syncthing-gtk
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.4
+DISTVERSION=	0.9.4.1
 CATEGORIES=	deskutils python
 
 MAINTAINER=	swills@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/dns/libnspsl/Makefile 479002 2018-09-05 02:40:28Z swills $
+# $FreeBSD: head/dns/libnspsl/Makefile 480504 2018-09-23 12:53:06Z sunpoet $
 
 PORTNAME=	libnspsl
 PORTVERSION=	0.1.3
@@ -7,7 +7,7 @@ CATEGORIES=	dns
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	NetSurf public suffix list handling
 
 LICENSE=	MIT

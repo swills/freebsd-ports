@@ -1,11 +1,11 @@
-# $FreeBSD: head/print/p910nd/Makefile 372510 2014-11-13 07:41:17Z antoine $
+# $FreeBSD: head/print/p910nd/Makefile 480460 2018-09-23 08:13:44Z skozlov $
 
 PORTNAME=	p910nd
 PORTVERSION=	0.97
 CATEGORIES=	print net
 MASTER_SITES=	SF
 
-MAINTAINER=	kozlov.sergey.404@gmail.com
+MAINTAINER=	skozlov@FreeBSD.org
 COMMENT=	Port 9100+n printer daemon
 
 LICENSE=	GPLv2

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 479774 2018-09-14 15:32:20Z mr $
+# $FreeBSD: head/x11-toolkits/Makefile 480449 2018-09-23 01:49:06Z swills $
 #
 
     COMMENT = X11 toolkits
@@ -257,6 +257,7 @@
     SUBDIR += rubygem-gtksourceview3
     SUBDIR += rubygem-pango
     SUBDIR += rubygem-poppler
+    SUBDIR += rubygem-tk
     SUBDIR += rubygem-uh
     SUBDIR += rubygem-vte
     SUBDIR += rubygem-vte3

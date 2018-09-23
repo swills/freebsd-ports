@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-bokeh/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-bokeh/Makefile 480460 2018-09-23 08:13:44Z skozlov $
 
 PORTNAME=	bokeh
 PORTVERSION=	0.12.9
@@ -8,7 +8,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kozlov.sergey.404@gmail.com
+MAINTAINER=	skozlov@FreeBSD.org
 COMMENT=	Interactive Web Plotting for Python
 
 LICENSE=	BSD3CLAUSE

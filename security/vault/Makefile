@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/vault/Makefile 474395 2018-07-10 17:49:55Z swills $
+# $FreeBSD: head/security/vault/Makefile 480325 2018-09-21 22:51:17Z swills $
 
 PORTNAME=	vault
-PORTVERSION=	0.10.3
-PORTREVISION=	1
+PORTVERSION=	0.11.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -17,7 +16,7 @@ BUILD_DEPENDS=	go>=1.9:lang/go
 USE_GITHUB=	yes
 GH_ACCOUNT=	hashicorp
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${PORTNAME}
-COMMIT_ID=	5dd7f25f5c4b541f2da62d70075b6f82771a650d
+COMMIT_ID=	8575f8fedcf8f5a6eb2b4701cb527b99574b5286
 
 USE_RC_SUBR=	vault
 

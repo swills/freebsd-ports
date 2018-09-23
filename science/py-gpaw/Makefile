@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-gpaw/Makefile 478713 2018-09-01 18:31:54Z yuri $
+# $FreeBSD: head/science/py-gpaw/Makefile 480395 2018-09-22 16:36:38Z yuri $
 
 PORTNAME=	gpaw
 DISTVERSION=	1.4.0
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	DFT and beyond within the projector-augmented wave method in chemistry
 LICENSE=	GPLv3+
 
 BUILD_DEPENDS=	${PYNUMPY}
-LIB_DEPENDS=	libmpich.so:net/mpich2 \
+LIB_DEPENDS=	libmpich.so:net/mpich \
 		libopenblas.so:math/openblas \
 		libxc.so:science/libxc
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ase>0:science/py-ase@${PY_FLAVOR} \

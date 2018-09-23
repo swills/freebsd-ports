@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-gitit/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-gitit/Makefile 480361 2018-09-22 08:13:53Z antoine $
 
 PORTNAME=	gitit
 PORTVERSION=	0.12.2.1
@@ -20,6 +20,8 @@ USE_CABAL=	ConfigFile HStringTemplate HTTP SHA aeson base64-bytestring \
 EXECUTABLE=	expireGititCache gitit
 
 IGNORE=		Doesn't build with newest packages
+DEPRECATED=	Doesn't build with newest packages
+EXPIRATION_DATE=	2018-10-22
 
 FLAGS_DEFINE=	PLUGINS
 FLAGS_DEFAULT=	PLUGINS

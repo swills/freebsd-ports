@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	gmic
 PORTVERSION=	1.6.9
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	graphics
 MASTER_SITES=	http://gmic.eu/files/source/
 PKGNAMEPREFIX=	gimp-
@@ -13,7 +13,7 @@ MAINTAINER=	rm@FreeBSD.org
 COMMENT=	GREYC's Magic Image Converter
 
 LIB_DEPENDS=	libGraphicsMagick++.so:graphics/GraphicsMagick \
-		libIlmImf.so:graphics/OpenEXR \
+		libIlmImf.so:graphics/openexr \
 		libopencv_video.so:graphics/opencv \
 		libMagick++-6.so:graphics/ImageMagick \
 		libavcodec.so:multimedia/ffmpeg \

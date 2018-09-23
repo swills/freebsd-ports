@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/bedtools/Makefile 472560 2018-06-16 17:55:01Z jwb $
+# $FreeBSD: head/biology/bedtools/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	bedtools
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Toolset for genome set arithmetic such as intersect, union
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake python
+USES=		compiler:c++11-lang gmake python
 USE_GITHUB=	yes
 GH_ACCOUNT=	arq5x
 GH_PROJECT=	bedtools2

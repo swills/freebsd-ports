@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Perl-Releases/Makefile 477729 2018-08-21 18:23:47Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Perl-Releases/Makefile 480398 2018-09-22 16:43:13Z sunpoet $
 
 PORTNAME=	CPAN-Perl-Releases
-PORTVERSION=	3.74
+PORTVERSION=	3.76
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

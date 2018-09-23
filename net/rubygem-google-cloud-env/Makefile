@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-google-cloud-env/Makefile 479696 2018-09-13 21:49:34Z sunpoet $
+# $FreeBSD: head/net/rubygem-google-cloud-env/Makefile 480409 2018-09-22 16:44:36Z sunpoet $
 
 PORTNAME=	google-cloud-env
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

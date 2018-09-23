@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 475360 2018-07-26 10:37:36Z mat $
+# $FreeBSD: head/Mk/Scripts/qa.sh 480421 2018-09-22 16:45:47Z sunpoet $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -905,7 +905,7 @@ flavors()
 		pkgnames=$(make -C "${CURDIR}" flavors-package-names|sort)
 		uniques=$(echo "${pkgnames}"|uniq)
 		if [ "$pkgnames" != "${uniques}" ]; then
-			err "Package names are not uniques with flavors:"
+			err "Package names are not unique with flavors:"
 			make -C "${CURDIR}" pretty-flavors-package-names >&2
 			err "maybe use <flavor>_PKGNAMEPREFIX/SUFFIX".
 			rc=1

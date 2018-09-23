@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/squid3/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/www/squid3/Makefile 480500 2018-09-23 12:33:29Z riggs $
 
 PORTNAME=	squid
-PORTVERSION=	3.5.27
-PORTREVISION=	4
+PORTVERSION=	3.5.28
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.squid-cache.org/Versions/v3/${PORTVERSION:R}/ \
 		http://www2.us.squid-cache.org/Versions/v3/${PORTVERSION:R}/ \
@@ -218,6 +217,7 @@ CONFIGURE_ARGS=	--with-default-user=squid \
 		--with-pidfile=/var/run/squid/squid.pid \
 		--with-swapdir=/var/squid/cache \
 		--without-gnutls \
+		--with-included-ltdl \
 		--enable-auth \
 		--enable-zph-qos \
 		--enable-build-info \

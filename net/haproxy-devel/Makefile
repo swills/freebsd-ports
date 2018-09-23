@@ -1,5 +1,5 @@
 # Created by: Hugo Saro <hugo@barafranca.com>
-# $FreeBSD: head/net/haproxy-devel/Makefile 479664 2018-09-13 08:42:10Z demon $
+# $FreeBSD: head/net/haproxy-devel/Makefile 480451 2018-09-23 04:38:22Z linimon $
 
 PORTNAME=	haproxy
 DISTVERSION=	1.9-dev2
@@ -16,7 +16,7 @@ LICENSE_COMB=	multi
 
 CONFLICTS_INSTALL=	haproxy-[0-9]* haproxy17-[0-9]*
 
-USES=		cpe gmake
+USES=		compiler:c++11-lang cpe gmake
 USE_RC_SUBR=	haproxy
 
 MAKE_ARGS=	TARGET=freebsd DEFINE=-DFREEBSD_PORTS USE_GETADDRINFO=1 \

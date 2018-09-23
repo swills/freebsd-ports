@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.sanity.mk 479421 2018-09-10 13:41:21Z mat $
+# $FreeBSD: head/Mk/bsd.sanity.mk 480426 2018-09-22 18:08:12Z adamw $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -187,7 +187,7 @@ SANITY_NOTNEEDED=	CMAKE_NINJA WX_UNICODE USE_KDEBASE_VER \
 
 .for a in 1 2 3 4 5 6 7 8 9 L N
 SANITY_DEPRECATED+=	MAN${a}
-MAN${a}_ALT=		it more, obsoleted by staging
+MAN${a}_ALT=		pkg-plist to list manpages
 .endfor
 
 USE_AUTOTOOLS_ALT=	USES=autoreconf and GNU_CONFIGURE=yes

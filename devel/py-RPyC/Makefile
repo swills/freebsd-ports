@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-RPyC/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-RPyC/Makefile 480460 2018-09-23 08:13:44Z skozlov $
 
 PORTNAME=	rpyc
 PORTVERSION=	3.3.0
@@ -8,7 +8,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kozlov.sergey.404@gmail.com
+MAINTAINER=	skozlov@FreeBSD.org
 COMMENT=	Remote Python Call
 
 LICENSE=	MIT

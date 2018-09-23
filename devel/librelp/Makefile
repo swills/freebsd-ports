@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/librelp/Makefile 478763 2018-09-02 07:00:19Z matthew $
+# $FreeBSD: head/devel/librelp/Makefile 480360 2018-09-22 08:11:03Z matthew $
 
 PORTNAME=	librelp
-PORTVERSION=	1.2.17
-PORTREVISION=	2
+PORTVERSION=	1.2.18
 CATEGORIES=	devel
 MASTER_SITES=	http://download.rsyslog.com/librelp/
 

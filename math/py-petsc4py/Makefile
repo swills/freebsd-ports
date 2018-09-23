@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-petsc4py/Makefile 472067 2018-06-09 16:20:43Z yuri $
+# $FreeBSD: head/math/py-petsc4py/Makefile 480424 2018-09-22 17:40:41Z yuri $
 
 PORTNAME=	petsc4py
 DISTVERSION=	3.9.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +17,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
 BUILD_DEPENDS=	${PYNUMPY}
-LIB_DEPENDS=	libmpich.so:net/mpich2 \
+LIB_DEPENDS=	libmpich.so:net/mpich \
 		libpetsc.so:science/PETSc
 RUN_DEPENDS=	${PYNUMPY}
 

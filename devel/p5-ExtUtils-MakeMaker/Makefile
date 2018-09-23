@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/p5-ExtUtils-MakeMaker/Makefile 465017 2018-03-19 15:14:12Z sunpoet $
+# $FreeBSD: head/devel/p5-ExtUtils-MakeMaker/Makefile 480493 2018-09-23 11:14:37Z sunpoet $
 
 PORTNAME=	ExtUtils-MakeMaker
 PORTVERSION=	7.34
@@ -12,11 +12,13 @@ COMMENT=	Designed to write a Makefile for an extension module
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-CONFLICTS=	p5-ExtUtils-Command-[0-9]*
 
-NO_ARCH=	yes
+CONFLICTS_INSTALL=	p5-ExtUtils-Command
+
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e '/EXE_FILES/d; /my::bundles/d' ${WRKSRC}/Makefile.PL

@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/py-vobject/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/deskutils/py-vobject/Makefile 480445 2018-09-23 01:14:51Z swills $
 
 PORTNAME=	vobject
-PORTVERSION=	0.9.5
+PORTVERSION=	0.9.6.1
 CATEGORIES=	deskutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

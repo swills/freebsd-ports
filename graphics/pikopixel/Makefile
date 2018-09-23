@@ -1,13 +1,12 @@
 # Created by: theraven@FreeBSD.org
-# $FreeBSD: head/graphics/pikopixel/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/graphics/pikopixel/Makefile 480320 2018-09-21 22:08:38Z swills $
 
 PORTNAME=	pikopixel
-PORTVERSION=	1.0
-PORTREVISION=	1
+DISTVERSION=	1.0-b9c
+PORTEPOCH=	1
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://twilightedge.com/downloads/
-DISTNAME=	PikoPixel.Sources.1.0-b8
-WRKSRC_SUBDIR=	PikoPixel
+DISTNAME=	PikoPixel.Sources.1.0-b9c
 
 MAINTAINER=	theraven@FreeBSD.org
 COMMENT=	Application for drawing and editing pixel-art images
@@ -16,7 +15,10 @@ LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKDIR}/${DISTNAME}/LICENSE_agpl-3.0.txt
 
 USES=		gnustep
+WRKSRC_SUBDIR=	PikoPixel
+USE_GNUSTEP=	base build gui
 
-USE_GNUSTEP=	gui build
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${GNUSTEP_SYSTEM_ROOT}/Applications/PikoPixel.app/PikoPixel
 
 .include <bsd.port.mk>

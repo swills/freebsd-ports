@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 480169 2018-09-20 13:20:08Z daichi $
+# $FreeBSD: head/textproc/Makefile 480350 2018-09-22 06:48:58Z bapt $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -407,6 +407,7 @@
     SUBDIR += libcss
     SUBDIR += libcsv
     SUBDIR += libcue
+    SUBDIR += libdiff
     SUBDIR += libe-book
     SUBDIR += libebml
     SUBDIR += libepubgen

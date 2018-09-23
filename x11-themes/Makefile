@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 478124 2018-08-26 12:18:20Z tcberner $
+# $FreeBSD: head/x11-themes/Makefile 480342 2018-09-22 06:02:44Z tcberner $
 #
 
     COMMENT = X11 themes
@@ -34,6 +34,8 @@
     SUBDIR += e16-themes
     SUBDIR += emerald-themes
     SUBDIR += fluxbox-tenr-styles-pack
+    SUBDIR += freebsd-8k-wallpapers
+    SUBDIR += freebsd-8k-wallpapers-kde
     SUBDIR += fvwm-themes
     SUBDIR += gnome-backgrounds
     SUBDIR += gnome-icon-theme-symbolic

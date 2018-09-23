@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/PETSc/Makefile 479584 2018-09-12 06:33:44Z yuri $
+# $FreeBSD: head/science/PETSc/Makefile 480424 2018-09-22 17:40:41Z yuri $
 
 PORTNAME=	PETSc
 DISTVERSION=	3.9.4
+PORTREVISION=	1
 CATEGORIES=	science devel
 MASTER_SITES=	http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}
@@ -18,7 +19,7 @@ BROKEN_armv6=		fails to build: MPI compiler wrappers do not work. See http://www
 BROKEN_armv7=		fails to build: MPI compiler wrappers do not work. See http://www.mcs.anl.gov/petsc/documentation/faq.html#mpi-compilers
 BROKEN_powerpc64=	fails to build: MPI compiler wrappers do not work. See http://www.mcs.anl.gov/petsc/documentation/faq.html#mpi-compilers
 
-LIB_DEPENDS=	libmpich.so:net/mpich2
+LIB_DEPENDS=	libmpich.so:net/mpich
 
 USES=		blaslapack fortran gmake python:2.7 shebangfix
 GNU_CONFIGURE=	yes
@@ -32,6 +33,8 @@ SHEBANG_FILES=	lib/petsc/bin/*.py lib/petsc/bin/saws/SAWs.py lib/petsc/bin/saws/
 USE_LDCONFIG=	yes
 TEST_TARGET=	test
 BINARY_ALIAS=	python=${PYTHON_CMD}
+
+LDFLAGS+=	${LOCALBASE}/lib/libmpi.so
 
 DATADIR=	${PREFIX}/share/${PORTNAME:tl}
 PLIST_SUB=	SHLIB=${DISTVERSION} SHL=${DISTVERSION:C/\.[0-9]$//}

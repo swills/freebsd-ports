@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/sysutils/e2fsprogs/Makefile 478261 2018-08-27 23:45:26Z mandree $
+# $FreeBSD: head/sysutils/e2fsprogs/Makefile 480389 2018-09-22 14:40:13Z mandree $
 
 PORTNAME=	e2fsprogs
 PORTVERSION=	1.44.4
@@ -17,10 +17,6 @@ LICENSE_FILE?=	${WRKSRC}/NOTICE
 LICENSE_DISTFILES_GPLv2=	${DISTNAME}${EXTRACT_SUFX}
 
 PORTSCOUT=	ignore	# cannot handle the version in the directory
-
-.if !defined(MASTERDIR)
-BROKEN_powerpc64=	fails to build: Entry '..' in Signal (11) SIGSEGV si_code=SEGV_MAPERR fault addr=0x2434
-.endif
 
 USES=		cpe gmake makeinfo pkgconfig tar:xz
 CPE_VENDOR=	e2fsprogs_project
@@ -84,6 +80,12 @@ PKGDEINSTALL=	${PKGINSTALL}
 MAKE_ARGS+=	V=1
 
 .include <bsd.port.options.mk>
+
+. if ${ARCH} == powerpc64
+# Fix powerpc64 SIGSEGV,
+# see https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=231570
+USES+=		compiler:c11
+. endif
 
 .if ${PORT_OPTIONS:MFUSEFS}
 USES+=		fuse

@@ -1,9 +1,9 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/luminance-qt5/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/luminance-qt5/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	luminance-hdr
 DISTVERSION=	2.4.0
-PORTREVISION=	24
+PORTREVISION=	25
 CATEGORIES=	graphics
 MASTER_SITES=	SF/qtpfsgui/luminance/${DISTVERSION}
 PKGNAMESUFFIX=	-qt5
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	${LOCALBASE}/include/fftw3.h:math/fftw3
 LIB_DEPENDS=	libfftw3f.so:math/fftw3-float \
 		libexiv2.so:graphics/exiv2 \
-		libIlmImf.so:graphics/OpenEXR \
+		libIlmImf.so:graphics/openexr \
 		libtiff.so:graphics/tiff \
 		libgsl.so:math/gsl \
 		libraw_r.so:graphics/libraw \

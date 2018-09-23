@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hs-PSQueue/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-PSQueue/Makefile 480361 2018-09-22 08:13:53Z antoine $
 
 PORTNAME=	PSQueue
 PORTVERSION=	1.1
@@ -11,6 +11,8 @@ COMMENT=	Priority Search Queue
 LICENSE=	BSD3CLAUSE
 
 IGNORE=		Doesn't build with recent GHC version
+DEPRECATED=	Doesn't build with recent GHC version
+EXPIRATION_DATE=	2018-10-22
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

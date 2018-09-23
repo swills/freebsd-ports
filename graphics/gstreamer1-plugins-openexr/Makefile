@@ -1,6 +1,6 @@
-# $FreeBSD: head/graphics/gstreamer1-plugins-openexr/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/gstreamer1-plugins-openexr/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 COMMENT=	GStreamer OpenExr codec plugin

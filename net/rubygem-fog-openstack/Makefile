@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-openstack/Makefile 480139 2018-09-20 00:23:07Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-openstack/Makefile 480489 2018-09-23 11:14:16Z sunpoet $
 
 PORTNAME=	fog-openstack
-PORTVERSION=	0.3.1
+PORTVERSION=	1.0.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Module for the 'fog' gem to support OpenStack clouds
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-fog-core>=2.1.2:devel/rubygem-fog-core \
+RUN_DEPENDS=	rubygem-fog-core>=2.1:devel/rubygem-fog-core \
 		rubygem-fog-json>=1.0:devel/rubygem-fog-json \
 		rubygem-ipaddress>=0.8:net/rubygem-ipaddress
 

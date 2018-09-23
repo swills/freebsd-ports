@@ -1,5 +1,5 @@
 # Created by: Emil Smolenski <am@raisa.eu.org>
-# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent-Task-SNMPQuery/Makefile 471674 2018-06-04 18:11:53Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent-Task-SNMPQuery/Makefile 480450 2018-09-23 01:56:55Z swills $
 
 PORTNAME=	FusionInventory-Agent-Task-SNMPQuery
 PORTVERSION=	1.3
@@ -14,6 +14,9 @@ COMMENT=	SNMP support for FusionInventory Agent
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	No longer needed
+EXPIRATION_DATE=	2018-10-22
 
 BUILD_DEPENDS=	p5-FusionInventory-Agent>=0:net-mgmt/p5-FusionInventory-Agent \
 		p5-Net-IP>=0:net-mgmt/p5-Net-IP \

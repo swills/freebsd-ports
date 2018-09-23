@@ -1,7 +1,7 @@
-# $FreeBSD: head/ports-mgmt/pkg-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/ports-mgmt/pkg-devel/Makefile 480380 2018-09-22 10:44:56Z bapt $
 
 PORTNAME=	pkg
-DISTVERSION=	1.10.99.9
+DISTVERSION=	1.10.99.10
 _PKG_VERSION=	${DISTVERSION}
 CATEGORIES=	ports-mgmt
 PKGNAMESUFFIX=	-devel
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd
-GH_TAGNAME=	60666a1
+GH_TAGNAME=	7ee6127d
 
 WITH_DEBUG=	yes
 CFLAGS+=	-O0 -g -Wno-error

@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/xpilot-ng-server/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/xpilot-ng-server/Makefile 480381 2018-09-22 12:49:01Z zeising $
 
 PORTNAME=	xpilot-ng
 PORTVERSION=	4.7.3
@@ -50,7 +50,8 @@ SOUND_CONFIGURE_ENABLE=	sound
 SOUND_USES=	openal:al,alut
 
 SDL_CONFIGURE_ENABLE=	sdl-client
-SDL_USE=	SDL=image,sdl,ttf GL=yes
+SDL_USE=	SDL=image,sdl,ttf GL=gl
+SDL_USES=	gl
 .endif
 
 .include <bsd.port.options.mk>

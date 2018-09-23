@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cjose/Makefile 480088 2018-09-19 01:09:58Z wen $
+# $FreeBSD: head/devel/cjose/Makefile 480457 2018-09-23 06:04:21Z linimon $
 
 PORTNAME=	cjose
 PORTVERSION=	0.6.1
@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libjansson.so:devel/jansson
 
-USES=		libtool pathfix pkgconfig ssl
+USES=		compiler:c++11-lang libtool pathfix pkgconfig ssl
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 

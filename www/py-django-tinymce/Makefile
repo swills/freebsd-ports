@@ -1,5 +1,5 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-django-tinymce/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-tinymce/Makefile 480460 2018-09-23 08:13:44Z skozlov $
 
 PORTNAME=	django-tinymce
 PORTVERSION=	2.7.0
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kozlov.sergey.404@gmail.com
+MAINTAINER=	skozlov@FreeBSD.org
 COMMENT=	Django application to use TinyMCE editor
 
 LICENSE=	MIT

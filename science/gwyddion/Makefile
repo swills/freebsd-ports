@@ -1,8 +1,9 @@
 # Created by: Yeti <yeti@gwyddion.net>
-# $FreeBSD: head/science/gwyddion/Makefile 479606 2018-09-12 14:13:14Z danfe $
+# $FreeBSD: head/science/gwyddion/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	gwyddion
 PORTVERSION=	2.51
+PORTREVISION=	1
 CATEGORIES=	science graphics
 MASTER_SITES=	SF
 
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libminizip.so:archivers/minizip \
 		libcfitsio.so:astro/cfitsio \
-		libIlmImf.so:graphics/OpenEXR \
+		libIlmImf.so:graphics/openexr \
 		libfftw3.so:math/fftw3 \
 		libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-smart_proxy_dynflow/Makefile 466822 2018-04-08 18:29:58Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-smart_proxy_dynflow/Makefile 480419 2018-09-22 16:45:28Z sunpoet $
 
 PORTNAME=	smart_proxy_dynflow
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 
@@ -13,9 +13,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	foreman-proxy>=1.12.0:net/foreman-proxy
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	"@sample etc/foreman-proxy/settings.d/dynflow.yml.sample" \
 		share/foreman-proxy/bundler.d/dynflow.rb

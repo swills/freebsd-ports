@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-AnyEvent-AIO/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/devel/p5-AnyEvent-AIO/Makefile 480371 2018-09-22 09:08:26Z amdmi3 $
 
 PORTNAME=	AnyEvent-AIO
 PORTVERSION=	1.1
@@ -11,10 +11,15 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Asynchronous file and directory I/O with AnyEvent
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	p5-AnyEvent>=3.4:devel/p5-AnyEvent \
 		p5-IO-AIO>=3.0:devel/p5-IO-AIO
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

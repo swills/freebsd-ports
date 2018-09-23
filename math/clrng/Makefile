@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/math/clrng/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/math/clrng/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	clrng
 DISTVERSIONPREFIX=	v
@@ -12,20 +12,19 @@ COMMENT=	Library for uniform random number generation in OpenCL
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+ONLY_FOR_ARCHS=		amd64 i386 powerpc powerpc64
+ONLY_FOR_ARCHS_REASON=	this code has only been tested on x86 and powerpc platforms
+
 BUILD_DEPENDS=	opencl>=0:devel/opencl
 LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd
 RUN_DEPENDS=	opencl>=0:devel/opencl
-
-ONLY_FOR_ARCHS=		amd64 i386 powerpc powerpc64
-ONLY_FOR_ARCHS_REASON=	this code has only been tested on x86 and powerpc platforms
-BROKEN_powerpc64=	fails to compile: cc1: error: unrecognized command line option -std=c11
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	clMathLibraries
 GH_PROJECT=	clRNG
 
+USES=		cmake compiler:c++11-lang
 USE_LDCONFIG=	yes
-USES=		cmake
 
 CMAKE_ARGS+=	-DBUILD_CLIENT=OFF \
 		-DBUILD_TEST=OFF \

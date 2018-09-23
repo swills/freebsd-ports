@@ -1,5 +1,5 @@
 # Created by: anders
-# $FreeBSD: head/databases/tora/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/databases/tora/Makefile 480498 2018-09-23 12:28:37Z linimon $
 
 PORTNAME=	tora
 PORTVERSION=	2.1.3
@@ -20,8 +20,9 @@ LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2 \
 OPTIONS_DEFINE=	PGSQL MYSQL DOCS
 OPTIONS_DEFAULT=	PGSQL MYSQL
 
+USES=		autoreconf compiler:c++11-lang gmake libtool localbase:ldflags \
+		makeinfo qmake:no_env qt:4
 USE_QT=		corelib gui sql xml network moc_build qmake_build rcc_build uic_build
-USES=		autoreconf gmake libtool localbase:ldflags makeinfo qmake:no_env qt:4
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-pcre=${LOCALBASE} \
 		--with-qt-includes=${QT_INCDIR} \

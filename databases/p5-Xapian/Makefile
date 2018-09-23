@@ -1,10 +1,10 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Xapian/Makefile 475695 2018-07-29 19:10:32Z sunpoet $
+# $FreeBSD: head/databases/p5-Xapian/Makefile 480465 2018-09-23 09:38:22Z sunpoet $
 
 PORTNAME=	Xapian
 PORTVERSION=	1.4.7.0
 CATEGORIES=	databases perl5
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION:R}/ \
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION:R}/ \
 		LOCAL/sunpoet
 PKGNAMEPREFIX=	p5-
 DISTNAME=	xapian-bindings-${PORTVERSION:R}
@@ -30,7 +30,7 @@ CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 LDFLAGS+=	-L${LOCALBASE}/lib/perl5/${PERL_VER}/mach/CORE -lperl
-USES=		libtool perl5 tar:xz
+USES=		compiler:c++11-lang libtool perl5 tar:xz
 
 PORTDOCS=	*
 

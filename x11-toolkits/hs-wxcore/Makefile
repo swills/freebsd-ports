@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/hs-wxcore/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/x11-toolkits/hs-wxcore/Makefile 480361 2018-09-22 08:13:53Z antoine $
 
 PORTNAME=	wxcore
 PORTVERSION=	0.92.3.0
@@ -15,6 +15,9 @@ DOS2UNIX_GLOB=	*.hs
 
 USE_WX=		3.0
 WX_COMPS=	wx
+
+DEPRECATED=	Doesn't build with recent GHC version
+EXPIRATION_DATE=	2018-10-22
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

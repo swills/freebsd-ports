@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/py-xdot/Makefile 466041 2018-03-31 11:30:40Z dbaio $
+# $FreeBSD: head/x11/py-xdot/Makefile 480384 2018-09-22 13:38:15Z dbaio $
 
 PORTNAME=	xdot
-PORTVERSION=	0.9
+PORTVERSION=	1.0
 CATEGORIES=	x11 python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ LICENSE=	LGPL3+
 RUN_DEPENDS=	dot:graphics/graphviz
 
 NO_ARCH=	yes
-USES=		python:3.4+
+USES=		gnome python:3.4+
 USE_PYTHON=	autoplist distutils
 USE_GNOME=	cairo gtk30 pygobject3
 

@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/devel/staf/Makefile 468637 2018-04-29 17:50:14Z dbaio $
+# $FreeBSD: head/devel/staf/Makefile 480460 2018-09-23 08:13:44Z skozlov $
 
 PORTNAME=	staf
 PORTVERSION=	3.4.26
@@ -7,7 +7,7 @@ CATEGORIES=	devel net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/V${PORTVERSION}
 DISTNAME=	STAF${PORTVERSION:S/.//g}-src
 
-MAINTAINER=	kozlov.sergey.404@gmail.com
+MAINTAINER=	skozlov@FreeBSD.org
 COMMENT=	Software Testing Automation Framework
 
 LICENSE=	EPL

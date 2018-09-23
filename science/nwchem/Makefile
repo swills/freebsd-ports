@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/nwchem/Makefile 478714 2018-09-01 18:39:48Z yuri $
+# $FreeBSD: head/science/nwchem/Makefile 480395 2018-09-22 16:36:38Z yuri $
 
 PORTNAME=	nwchem
 DISTVERSION=	6.8.1-release-94
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONSUFFIX=	-g1a262862b
 CATEGORIES=	science
 
@@ -19,7 +19,7 @@ BROKEN_i386=	Compiling basis.F...  f951: sorry, unimplemented: 64-bit mode not c
 BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libblas.so:math/blas \
 		libga.so:devel/ga \
-		libmpich.so:net/mpich2
+		libmpich.so:net/mpich
 
 USES=		fortran gmake shebangfix
 SHEBANG_FILES=	../contrib/distro-tools/build_* ../contrib/add_*

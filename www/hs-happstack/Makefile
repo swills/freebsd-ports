@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-happstack/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-happstack/Makefile 480361 2018-09-22 08:13:53Z antoine $
 
 PORTNAME=	happstack
 PORTVERSION=	7.0.2
@@ -13,6 +13,8 @@ LICENSE=	BSD3CLAUSE
 USE_CABAL=	happstack-server>=7.0
 
 IGNORE=		Doesn't build with recent GHC version
+DEPRECATED=	Doesn't build with recent GHC version
+EXPIRATION_DATE=	2018-10-22
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

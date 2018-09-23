@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/py-powerline-status/Makefile 465253 2018-03-22 00:35:15Z swills $
+# $FreeBSD: head/misc/py-powerline-status/Makefile 480324 2018-09-21 22:41:09Z swills $
 
 PORTNAME=	powerline-status
-PORTVERSION=	2.6
+PORTVERSION=	2.7
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

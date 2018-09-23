@@ -1,8 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/graphics/gegl3/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/graphics/gegl3/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	gegl
 PORTVERSION=	0.3.34
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	GIMP
 PKGNAMESUFFIX=	3
@@ -81,8 +82,8 @@ LCMS2_CONFIGURE_OFF=	--without-lcms
 LUA_USES=		lua
 LUA_CONFIGURE_WITH=	lua
 
-OPENEXR_LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR \
-			libImath-2_2.so:graphics/ilmbase
+OPENEXR_LIB_DEPENDS=	libIlmImf.so:graphics/openexr \
+			libImath.so:graphics/ilmbase
 OPENEXR_CONFIGURE_WITH=	openexr
 
 RAW_LIB_DEPENDS=	libraw.so:graphics/libraw

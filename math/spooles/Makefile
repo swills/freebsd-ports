@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/spooles/Makefile 464164 2018-03-11 11:20:43Z rene $
+# $FreeBSD: head/math/spooles/Makefile 480424 2018-09-22 17:40:41Z yuri $
 
 PORTNAME=	spooles
 PORTVERSION=	2.2
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	math
 MASTER_SITES=	NETLIB/linalg/spooles
 .ifdef WITH_MPI
@@ -19,7 +19,7 @@ COMMENT=	SParse Object Oriented Linear Equations Solver
 LICENSE=	PD
 
 .if defined(WITH_MPI)
-BUILD_DEPENDS=	${LOCALBASE}/lib/libmpich.a:net/mpich2
+LIB_DEPENDS=	libmpich.so:net/mpich
 .endif
 
 USES=		gmake tar:tgz

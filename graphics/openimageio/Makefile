@@ -1,10 +1,10 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openimageio/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/graphics/openimageio/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	openimageio
 PORTVERSION=	1.7.17
 DISTVERSIONPREFIX=	Release-
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES?=	graphics multimedia
 
 MAINTAINER?=	FreeBSD@Shaneware.biz
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libImath.so:graphics/ilmbase \
-		libIlmImf.so:graphics/OpenEXR \
+		libIlmImf.so:graphics/openexr \
 		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
 		libwebp.so:graphics/webp \

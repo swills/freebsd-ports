@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/radicale2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/radicale2/Makefile 480453 2018-09-23 05:08:21Z decke $
 
 PORTNAME=	radicale2
-PORTVERSION=	2.1.9
+PORTVERSION=	2.1.10
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +16,8 @@ LICENSE=	GPLv3
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>=0:security/py-bcrypt@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}passlib>=0:security/py-passlib@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}vobject>=0:deskutils/py-vobject@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}vobject>=0.9.6:deskutils/py-vobject@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=2.7.3:devel/py-dateutil@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8>=0:devel/py-flake8@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}isort>=0:devel/py-isort@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${PY_FLAVOR} \

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/net/liferea/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/net/liferea/Makefile 480498 2018-09-23 12:28:37Z linimon $
 
 PORTNAME=	liferea
 PORTVERSION=	1.12.3
@@ -11,8 +11,6 @@ COMMENT=	Simple RSS/RDF feed reader
 
 LICENSE=	GPLv2
 
-BROKEN_powerpc64=	fails to compile: WebKitWebEditor.h:40: redefinition of typedef 'WebKitWebEditor'
-
 BUILD_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 		libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
@@ -21,7 +19,7 @@ LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas \
 		${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py-libpeas@${PY_FLAVOR}
 
-USES=		desktop-file-utils gettext gmake gnome libtool localbase \
+USES=		compiler:c++11-lang desktop-file-utils gettext gmake gnome libtool localbase \
 		pathfix pkgconfig python:3.4+ sqlite tar:bzip2
 USE_GNOME=	cairo dconf:run gtk30 intltool introspection \
 		libxslt libxml2

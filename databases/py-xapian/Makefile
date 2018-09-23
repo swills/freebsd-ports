@@ -1,11 +1,11 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-xapian/Makefile 475697 2018-07-29 19:10:42Z sunpoet $
+# $FreeBSD: head/databases/py-xapian/Makefile 480468 2018-09-23 09:38:32Z sunpoet $
 
 PORTNAME=	xapian
 PORTVERSION=	1.4.7
 DISTVERSIONPREFIX=	bindings-
 CATEGORIES=	databases python
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -32,7 +32,7 @@ CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
 		--without-php --without-ruby --without-tcl
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		libtool python tar:xz
+USES=		compiler:c++11-lang libtool python tar:xz
 USE_PYTHON=	flavors
 
 PORTDOCS=	*

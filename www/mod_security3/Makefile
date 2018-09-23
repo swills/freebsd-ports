@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_security3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/www/mod_security3/Makefile 480451 2018-09-23 04:38:22Z linimon $
 
 PORTNAME=	mod_security
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libyajl.so:devel/yajl \
 		libGeoIP.so:net/GeoIP
 
-USES=		gmake autoreconf libtool pkgconfig:build
+USES=		autoreconf compiler:c++11-lang gmake libtool pkgconfig:build
 USE_GNOME=	libxml2
 # GCC because of https://github.com/SpiderLabs/ModSecurity/issues/1411
 USE_GCC=	yes
