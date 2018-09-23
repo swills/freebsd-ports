@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-gitaly-proto/Makefile 479135 2018-09-06 18:57:45Z mfechner $
+# $FreeBSD: head/net/rubygem-gitaly-proto/Makefile 480519 2018-09-23 18:20:45Z mfechner $
 
 PORTNAME=	gitaly-proto
-PORTVERSION=	0.113.0
+PORTVERSION=	0.117.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -16,6 +16,7 @@ RUN_DEPENDS=	rubygem-google-protobuf>=3.1:devel/rubygem-google-protobuf \
 
 USES=		gem
 USE_RUBY=	yes
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

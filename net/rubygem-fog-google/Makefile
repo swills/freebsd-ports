@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-google/Makefile 477909 2018-08-23 17:58:30Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-google/Makefile 480518 2018-09-23 18:19:16Z mfechner $
 
 PORTNAME=	fog-google
 PORTVERSION=	1.7.1
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -17,8 +18,9 @@ RUN_DEPENDS=	rubygem-fog-core>=0:devel/rubygem-fog-core \
 		rubygem-fog-xml>=0:textproc/rubygem-fog-xml \
 		rubygem-google-api-client>=0.23.0:devel/rubygem-google-api-client
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>
