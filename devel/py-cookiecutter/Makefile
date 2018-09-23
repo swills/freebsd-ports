@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-cookiecutter/Makefile 480272 2018-09-21 14:08:36Z matthew $
+# $FreeBSD: head/devel/py-cookiecutter/Makefile 480344 2018-09-22 06:23:55Z matthew $
 
 PORTNAME=	cookiecutter
 PORTVERSION=	1.6.0
@@ -42,6 +42,6 @@ TEST_ENV=	TMPDIR=${WRKDIR} HOME=${WRKDIR} LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 
 do-test:
 	@cd ${WRKSRC} && \
-	env ${TEST_ENV} ${LOCALBASE}/bin/pytest-${PYTHON_VER} --cov=cookiecutter tests
+	${SETENV} ${TEST_ENV} ${LOCALBASE}/bin/pytest-${PYTHON_VER} --cov=cookiecutter tests
 
 .include <bsd.port.mk>

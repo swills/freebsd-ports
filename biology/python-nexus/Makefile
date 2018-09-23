@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/biology/python-nexus/Makefile 466142 2018-04-01 11:52:08Z wen $
+# $FreeBSD: head/biology/python-nexus/Makefile 480370 2018-09-22 08:54:58Z wen $
 
 PORTNAME=	python-nexus
-PORTVERSION=	1.61
+PORTVERSION=	1.63
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

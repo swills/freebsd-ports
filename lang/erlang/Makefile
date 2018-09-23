@@ -1,8 +1,8 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang/Makefile 478008 2018-08-25 08:02:07Z olgeni $
+# $FreeBSD: head/lang/erlang/Makefile 480510 2018-09-23 14:54:52Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	19.3.6.10
+PORTVERSION=	19.3.6.11
 PORTEPOCH=	4
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg			\
@@ -23,7 +23,7 @@ PATCHFILES=	patch-otp-19.3.1 patch-otp-19.3.2 patch-otp-19.3.3 \
 		patch-otp-19.3.6.1 patch-otp-19.3.6.2 patch-otp-19.3.6.3 \
 		patch-otp-19.3.6.4 patch-otp-19.3.6.5 patch-otp-19.3.6.6 \
 		patch-otp-19.3.6.7 patch-otp-19.3.6.8 patch-otp-19.3.6.9 \
-		patch-otp-19.3.6.10
+		patch-otp-19.3.6.10 patch-otp-19.3.6.11
 
 MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson

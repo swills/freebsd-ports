@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/graphics/pixie/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/pixie/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	pixie
 PORTVERSION=	2.2.6
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Pixie%20${PORTVERSION}
 DISTNAME=	Pixie-src-${PORTVERSION}
@@ -14,7 +14,7 @@ COMMENT=	Photorealistic renderer with Pixar's RenderMan-like interface
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR \
+LIB_DEPENDS=	libIlmImf.so:graphics/openexr \
 		libtiff.so:graphics/tiff \
 		libfltk_gl.so:x11-toolkits/fltk
 

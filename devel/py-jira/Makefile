@@ -1,9 +1,8 @@
 # Created by: Alexandros Kosiaris <akosiaris+ports@gmail.com>
-# $FreeBSD: head/devel/py-jira/Makefile 476507 2018-08-06 11:23:41Z antoine $
+# $FreeBSD: head/devel/py-jira/Makefile 480335 2018-09-22 00:43:12Z swills $
 
 PORTNAME=	jira
-PORTVERSION=	1.0.15
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

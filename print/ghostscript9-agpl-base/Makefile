@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/ghostscript9-agpl-base/Makefile 479243 2018-09-08 10:02:22Z tijl $
+# $FreeBSD: head/print/ghostscript9-agpl-base/Makefile 480382 2018-09-22 13:01:38Z tijl $
 
 PORTNAME=	ghostscript
-PORTVERSION=	9.24
-PORTREVISION=	2
+PORTVERSION=	9.25
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${PORTVERSION:S/.//}/
 PKGNAMESUFFIX=	9-agpl-base
@@ -67,9 +67,9 @@ IJS_DESC=		Support libijs based Ghostscript devices
 IJS_LIB_DEPENDS=	libijs.so:print/libijs
 
 post-patch:
-	@${RM} -r ${WRKSRC}/freetype ${WRKSRC}/ijs ${WRKSRC}/jbig2dec \
-		${WRKSRC}/jpeg ${WRKSRC}/libpng ${WRKSRC}/openjpeg \
-		${WRKSRC}/zlib
+	@${RM} -r ${WRKSRC}/cups/libs ${WRKSRC}/freetype ${WRKSRC}/ijs \
+		${WRKSRC}/jbig2dec ${WRKSRC}/jpeg ${WRKSRC}/libpng \
+		${WRKSRC}/openjpeg ${WRKSRC}/zlib
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/bin/gsc ${STAGEDIR}${PREFIX}/bin/gs

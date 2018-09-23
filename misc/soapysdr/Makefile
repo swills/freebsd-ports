@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/soapysdr/Makefile 473693 2018-07-02 01:09:27Z yuri $
+# $FreeBSD: head/misc/soapysdr/Makefile 480499 2018-09-23 12:32:19Z linimon $
 
 PORTNAME=	SoapySDR
 DISTVERSIONPREFIX=	soapy-sdr-
@@ -12,7 +12,7 @@ COMMENT=	Vendor and platform neutral SDR support library
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	pothosware
 USE_LDCONFIG=	yes

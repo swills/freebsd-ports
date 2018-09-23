@@ -1,5 +1,5 @@
 # Created by: b.f. <bf@FreeBSD.org>
-# $FreeBSD: head/textproc/tinyxml2/Makefile 466817 2018-04-08 18:29:31Z sunpoet $
+# $FreeBSD: head/textproc/tinyxml2/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	tinyxml2
 PORTVERSION=	6.2.0
@@ -15,8 +15,8 @@ OPTIONS_DEFINE=	EXAMPLES
 
 CMAKE_OFF=	BUILD_TESTS
 CMAKE_ON=	BUILD_SHARED_LIBS BUILD_STATIC_LIBS
+USES=		cmake compiler:c++11-lang dos2unix pathfix
 USE_LDCONFIG=	yes
-USES=		cmake dos2unix pathfix
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 PORTEXAMPLES=	*

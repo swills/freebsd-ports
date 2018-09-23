@@ -1,8 +1,8 @@
 # Created by: Thorsten Greiner <thorsten.greiner@web.de>
-# $FreeBSD: head/sysutils/xfce4-battery-plugin/Makefile 450777 2017-09-27 18:24:40Z madpilot $
+# $FreeBSD: head/sysutils/xfce4-battery-plugin/Makefile 480480 2018-09-23 10:32:17Z madpilot $
 
 PORTNAME=	xfce4-battery-plugin
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	sysutils xfce
 MASTER_SITES=	XFCE/src/panel-plugins/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4

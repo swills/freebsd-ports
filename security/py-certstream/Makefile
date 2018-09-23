@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/py-certstream/Makefile 472709 2018-06-18 19:50:41Z antoine $
+# $FreeBSD: head/security/py-certstream/Makefile 480365 2018-09-22 08:32:24Z antoine $
 
 PORTNAME=	certstream
-PORTVERSION=	1.9
-PORTREVISION=	1
+PORTVERSION=	1.10
 CATEGORIES=	security www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,5 +19,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}termcolor>=0:devel/py-termcolor@${PY_FLAVOR}
 NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent
+
+post-patch:
+	@${REINPLACE_CMD} 's,==.*,,' ${WRKSRC}/requirements.txt
 
 .include <bsd.port.mk>

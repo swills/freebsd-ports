@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/hs-certificate/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/security/hs-certificate/Makefile 480361 2018-09-22 08:13:53Z antoine $
 
 PORTNAME=	certificate
 PORTVERSION=	1.3.9
@@ -21,6 +21,8 @@ EXECUTABLE_FLAG_CABAL=		cmdargs text>=0.11 cryptohash crypto-pubkey
 EXECUTABLE_FLAG_EXECUTABLE=	certificate
 
 IGNORE=		Doesn't build with recent GHC version
+DEPRECATED=	Doesn't build with recent GHC version
+EXPIRATION_DATE=	2018-10-22
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

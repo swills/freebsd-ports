@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 479617 2018-09-12 17:51:34Z jsm $
+# $FreeBSD: head/sysutils/Makefile 480509 2018-09-23 13:50:11Z tobik $
 #
 
     COMMENT = System utilities
@@ -106,6 +106,7 @@
     SUBDIR += beadm
     SUBDIR += beadm-devel
     SUBDIR += beats
+    SUBDIR += bfs
     SUBDIR += bhyve-firmware
     SUBDIR += bhyve-rc
     SUBDIR += biosfont

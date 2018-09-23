@@ -1,9 +1,9 @@
 # Created by: Chao Shin <quakelee@cn.freebsd.org>
-# $FreeBSD: head/benchmarks/mdtest/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/benchmarks/mdtest/Makefile 480425 2018-09-22 18:00:24Z yuri $
 
 PORTNAME=	mdtest
 PORTVERSION=	1.9.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	benchmarks
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20latest/${PORTNAME}-${PORTVERSION}
 
@@ -27,8 +27,8 @@ OPENMPI_BUILD_DEPENDS=		${LOCALBASE}/mpi/openmpi/bin/mpicc:net/openmpi
 OPENMPI_RUN_DEPENDS=		${LOCALBASE}/mpi/openmpi/bin/mpirun:net/openmpi
 OPENMPI_VARS=			MPICC=${LOCALBASE}/mpi/openmpi/bin/mpicc
 
-OPENMPI_BUILD_DEPENDS_OFF=	${LOCALBASE}/bin/mpicc:net/mpich2
-OPENMPI_RUN_DEPENDS_OFF=	${LOCALBASE}/bin/mpirun:net/mpich2
+OPENMPI_BUILD_DEPENDS_OFF=	${LOCALBASE}/bin/mpicc:net/mpich
+OPENMPI_RUN_DEPENDS_OFF=	${LOCALBASE}/bin/mpirun:net/mpich
 OPENMPI_VARS_OFF=		MPICC=${LOCALBASE}/bin/mpicc
 
 do-build:

@@ -1,13 +1,13 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/math/arpack-ng-mpich/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/arpack-ng-mpich/Makefile 480395 2018-09-22 16:36:38Z yuri $
 
 PORTNAME=	arpack-ng
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-mpich
 
 COMMENT=	Revised Argand library for solving large-scale eigenvalue problems with MPI support
 
-LIB_DEPENDS+=	libmpich.so.8:net/mpich2
+LIB_DEPENDS+=	libmpich.so:net/mpich
 
 MASTERDIR=	${.CURDIR}/../../math/arpack-ng
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/cp2k/Makefile 479762 2018-09-14 07:58:05Z yuri $
+# $FreeBSD: head/science/cp2k/Makefile 480440 2018-09-23 00:25:19Z yuri $
 
 PORTNAME=	cp2k
 DISTVERSION=	6.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	SF/${PORTNAME}/
 
@@ -45,12 +45,14 @@ SERIAL_VARS=		VERSION=sopt
 OPENMP_VARS=		VERSION=ssmp
 
 MPI_VARS=		VERSION=popt
-MPI_LIB_DEPENDS=	libmpich.so:net/mpich2 \
+MPI_LIB_DEPENDS=	libmpich.so:net/mpich \
 			libscalapack.so:math/scalapack
+MPI_LDFLAGS=		-lmpifort
 
 OPENMP_MPI_DESC=	Enable both OpenMP and MPI
 OPENMP_MPI_VARS=	VERSION=psmp
 OPENMP_MPI_LIB_DEPENDS=	${MPI_LIB_DEPENDS}
+OPENMP_MPI_LDFLAGS=	${MPI_LDFLAGS}
 
 PLIST_FILES=		bin/${PORTNAME}
 

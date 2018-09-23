@@ -1,5 +1,5 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/py-tables/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/devel/py-tables/Makefile 480333 2018-09-21 23:33:52Z yuri $
 
 PORTNAME=	tables
 PORTVERSION=	3.4.4
@@ -19,6 +19,8 @@ LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		liblzo2.so:archivers/lzo2 \
 		libucl.so:archivers/ucl
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+CONFLICTS_BUILD=	zstd # conflicting version of zstd is bundled
 
 USES=		fortran python
 USE_PYTHON=	autoplist concurrent distutils cython

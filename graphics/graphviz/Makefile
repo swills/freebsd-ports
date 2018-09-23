@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/graphviz/Makefile 479876 2018-09-16 05:48:52Z dinoex $
+# $FreeBSD: head/graphics/graphviz/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	graphviz
 PORTVERSION=	2.40.1
@@ -20,8 +20,9 @@ LIB_DEPENDS=	libltdl.so:devel/libltdl \
 		libexpat.so:textproc/expat2 \
 		libgd.so:${GD_PORT}
 
-USES=		cpe pathfix shebangfix gmake bison groff pkgconfig \
-		libtool:keepla localbase:ldflags jpeg
+USES=		bison compiler:c++11-lang cpe gmake groff \
+		jpeg libtool:keepla localbase:ldflags pathfix \
+		pkgconfig shebangfix
 GNU_CONFIGURE=	yes
 # sincos is broken on armv6, see ports/220591
 CFLAGS_armv6=	-fno-builtin-sincos -fno-builtin-sin -fno-builtin-cos \

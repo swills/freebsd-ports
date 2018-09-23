@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/slop/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/x11/slop/Makefile 480498 2018-09-23 12:28:37Z linimon $
 
 PORTNAME=	slop
 PORTVERSION=	7.4
@@ -14,7 +14,7 @@ LICENSE=	GPLv3
 BUILD_DEPENDS=	${LOCALBASE}/include/glm/glm.hpp:math/glm
 LIB_DEPENDS=	libicuuc.so:devel/icu
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 USE_GL=		gl glu glew
 USE_LDCONFIG=	yes
 USE_XORG=	ice sm x11 xext xrender

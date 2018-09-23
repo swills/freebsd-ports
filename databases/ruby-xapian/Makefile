@@ -1,11 +1,11 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/ruby-xapian/Makefile 475698 2018-07-29 19:10:47Z sunpoet $
+# $FreeBSD: head/databases/ruby-xapian/Makefile 480469 2018-09-23 09:38:36Z sunpoet $
 
 PORTNAME=	xapian
 PORTVERSION=	1.4.7
 DISTVERSIONPREFIX=	bindings-
 CATEGORIES=	databases ruby
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 
@@ -30,8 +30,8 @@ CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
 		--without-php --without-python --without-python3 --without-tcl
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+USES=		compiler:c++11-lang libtool tar:xz
 USE_RUBY=	yes
-USES=		libtool tar:xz
 
 PORTDOCS=	*
 

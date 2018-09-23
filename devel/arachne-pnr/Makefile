@@ -1,5 +1,5 @@
 # Created by: Johnny Sorocil <jsorocil@gmail.com>
-# $FreeBSD: head/devel/arachne-pnr/Makefile 471842 2018-06-06 13:47:33Z tobik $
+# $FreeBSD: head/devel/arachne-pnr/Makefile 480456 2018-09-23 05:59:30Z linimon $
 
 PORTNAME=	arachne-pnr
 PORTVERSION=	g20180310
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	icestorm>=g0:devel/icestorm
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	cseed

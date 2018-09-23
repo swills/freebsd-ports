@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/sleef/Makefile 479149 2018-09-06 19:31:08Z jmd $
+# $FreeBSD: head/math/sleef/Makefile 480452 2018-09-23 05:07:13Z linimon $
 
 PORTNAME=	sleef
 DISTVERSION=	3.3-9
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 IGNORE_FreeBSD_10=	base compiler too old
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c11
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

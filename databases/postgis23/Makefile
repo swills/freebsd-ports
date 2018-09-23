@@ -1,5 +1,5 @@
 # Created by: Loïc BARTOLETTI <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/postgis23/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/databases/postgis23/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	postgis
 PORTVERSION=	2.3.7
@@ -20,7 +20,8 @@ LIB_DEPENDS=	libproj.so:graphics/proj \
 
 CONFLICTS=	postgis20  postgis21 postgis22 postgis24 postgis
 
-USES=		gettext gmake iconv:wchar_t libtool:keepla perl5 pgsql pkgconfig shebangfix
+USES=		compiler:c++11-lang gettext gmake iconv:wchar_t libtool:keepla \
+		perl5 pgsql pkgconfig shebangfix
 LLD_UNSAFE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}

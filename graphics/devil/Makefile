@@ -1,9 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/graphics/devil/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/devil/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	devil
 PORTVERSION=	1.7.8
-PORTREVISION=	22
+PORTREVISION=	23
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF/openil/DevIL/${PORTVERSION}
@@ -55,7 +55,7 @@ PNG_CONFIGURE_ENABLE=	png
 PNG_CONFIGURE_OFF=	libpng_app=no
 TIFF_LIB_DEPENDS=	libtiff.so:graphics/tiff
 TIFF_CONFIGURE_ENABLE=	tiff
-EXR_LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR
+EXR_LIB_DEPENDS=	libIlmImf.so:graphics/openexr
 EXR_CONFIGURE_ENABLE=	exr
 #SQUISH_BUILD_DEPENDS=	${LOCALBASE}/lib/libsquish.a:graphics/squish
 #SQUISH_CONFIGURE_WITH=	libsquish

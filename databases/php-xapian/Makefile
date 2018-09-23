@@ -1,11 +1,11 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/php-xapian/Makefile 480003 2018-09-18 09:28:34Z linimon $
+# $FreeBSD: head/databases/php-xapian/Makefile 480467 2018-09-23 09:38:27Z sunpoet $
 
 PORTNAME=	xapian
 PORTVERSION=	1.4.7
 DISTVERSIONPREFIX=	bindings-
 CATEGORIES=	databases
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
 PKGNAMEPREFIX=	php-
 

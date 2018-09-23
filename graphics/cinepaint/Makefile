@@ -1,9 +1,9 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/cinepaint/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/cinepaint/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	cinepaint
 DISTVERSION=	1.0-4
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/CinePaint/CinePaint-${DISTVERSION}
 
@@ -13,7 +13,7 @@ COMMENT=	Editing tool used for painting and retouching of movies
 LICENSE=	GPLv2 LGPL21 MIT
 LICENSE_COMB=	multi
 
-LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR \
+LIB_DEPENDS=	libIlmImf.so:graphics/openexr \
 		libftgl.so:graphics/ftgl \
 		liblcms.so:graphics/lcms \
 		libpng.so:graphics/png \

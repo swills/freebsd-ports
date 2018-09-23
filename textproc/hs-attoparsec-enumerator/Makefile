@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/hs-attoparsec-enumerator/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-attoparsec-enumerator/Makefile 480361 2018-09-22 08:13:53Z antoine $
 
 PORTNAME=	attoparsec-enumerator
 PORTVERSION=	0.3.4
@@ -11,6 +11,9 @@ COMMENT=	Pass input from an enumerator to an Attoparsec parser
 LICENSE=	MIT
 
 USE_CABAL=	attoparsec>=0.10 enumerator>=0.4
+
+DEPRECATED=	Doesn't build with recent GHC version
+EXPIRATION_DATE=	2018-10-22
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

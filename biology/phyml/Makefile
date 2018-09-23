@@ -1,9 +1,10 @@
 # Created by: ballen
-# $FreeBSD: head/biology/phyml/Makefile 473138 2018-06-23 15:53:54Z fernape $
+# $FreeBSD: head/biology/phyml/Makefile 480425 2018-09-22 18:00:24Z yuri $
 
 PORTNAME=	phyml
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.3.20180621
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	biology
 
@@ -27,10 +28,11 @@ PLIST_FILES=	bin/phyml${BIN_SUFFIX}
 
 OPTIONS_DEFINE=		DOCS EXAMPLES
 OPTIONS_RADIO=		MPI
-OPTIONS_RADIO_MPI=	MPICH2 OPENMPI
+OPTIONS_RADIO_MPI=	MPICH OPENMPI
 
-MPICH2_LIB_DEPENDS=	libmpich.so:net/mpich2
-MPICH2_MAKE_ARGS=	CC="${LOCALBASE}/bin/mpicc"
+MPICH_DESC=		Parallel processing support via MPICH
+MPICH_LIB_DEPENDS=	libmpich.so:net/mpich
+MPICH_MAKE_ARGS=	CC="${LOCALBASE}/bin/mpicc"
 OPENMPI_LIB_DEPENDS=	libmpi.so:net/openmpi
 OPENMPI_MAKE_ARGS=	CC="${LOCALBASE}/mpi/openmpi/bin/mpicc"
 

@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/rubygem-holidays/Makefile 463813 2018-03-07 16:48:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-holidays/Makefile 480417 2018-09-22 16:45:18Z sunpoet $
 
 PORTNAME=	holidays
-PORTVERSION=	6.4.0
+PORTVERSION=	6.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,11 @@ COMMENT=	Collection of Ruby methods to deal with statutory and other holidays
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
+USES=		gem shebangfix
 USE_RUBY=	yes
-USES=		gem
+
+NO_ARCH=	yes
+
+SHEBANG_FILES=	bin/setup
 
 .include <bsd.port.mk>

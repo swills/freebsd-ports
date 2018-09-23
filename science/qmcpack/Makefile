@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/qmcpack/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/qmcpack/Makefile 480395 2018-09-22 16:36:38Z yuri $
 
 PORTNAME=	qmcpack
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -18,7 +18,7 @@ BROKEN_i386=	undefined reference to `__atomic_load'
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libfftw3.so:math/fftw3 \
 		libhdf5.so:science/hdf5 \
-		libmpich.so:net/mpich2 \
+		libmpich.so:net/mpich \
 		libomp.so:devel/openmp \
 		libopenblas.so:math/openblas \
 		libsz.so:science/szip

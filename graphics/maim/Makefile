@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/maim/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/graphics/maim/Makefile 480451 2018-09-23 04:38:22Z linimon $
 
 PORTNAME=	maim
 PORTVERSION=	5.5.2
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libImlib2.so:graphics/imlib2 \
 		libpng.so:graphics/png \
 		libslopy.so:x11/slop
 
-USES=		cmake jpeg
+USES=		cmake compiler:c++11-lang jpeg
 USE_GITHUB=	yes
 GH_ACCOUNT=	naelstrof
 USE_GL=		gl glut

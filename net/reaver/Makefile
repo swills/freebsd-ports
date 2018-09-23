@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/reaver/Makefile 469707 2018-05-12 06:57:39Z yuri $
+# $FreeBSD: head/net/reaver/Makefile 480498 2018-09-23 12:28:37Z linimon $
 
 PORTNAME=	reaver
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Reaver brute force attack against WPS (Wi-Fi Protected Setup)
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../docs/LICENSE
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	t6x

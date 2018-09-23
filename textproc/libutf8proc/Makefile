@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/libutf8proc/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/textproc/libutf8proc/Makefile 480503 2018-09-23 12:53:01Z sunpoet $
 
 PORTNAME=	libutf8proc
 PORTVERSION=	1.3.1.3
@@ -8,7 +8,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.3$//}${DISTVERSIONSUFFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	UTF8 Processing library
 
 LICENSE=	MIT

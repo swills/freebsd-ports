@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/ImageMagick/Makefile 480301 2018-09-21 18:37:30Z pi $
+# $FreeBSD: head/graphics/ImageMagick/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	ImageMagick
 DISTVERSION=	6.9.9-28
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	graphics perl5
 MASTER_SITES=	http://www.imagemagick.org/download/ \
@@ -179,8 +179,8 @@ PLIST_SUB+=		MODULES='@comment '
 . if ${_IMAGEMAGICK_THREADS} == "no"
 IGNORE=OpenEXR requires threads. ${_IMAGEMAGICK_THREADS_IGNORE_MSG}
 . else
-LIB_DEPENDS+=		libIlmImf.so:graphics/OpenEXR \
-			libImath-2_2.so:graphics/ilmbase
+LIB_DEPENDS+=		libIlmImf.so:graphics/openexr \
+			libImath.so:graphics/ilmbase
 PLIST_SUB+=		OPENEXR=""
 . endif
 .else

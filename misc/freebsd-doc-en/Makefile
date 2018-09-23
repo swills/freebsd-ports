@@ -1,8 +1,8 @@
 # Created by: Marc Fonvieille <blackend@FreeBSD.org>
-# $FreeBSD: head/misc/freebsd-doc-en/Makefile 477650 2018-08-20 12:48:29Z blackend $
+# $FreeBSD: head/misc/freebsd-doc-en/Makefile 480481 2018-09-23 10:33:21Z blackend $
 
 PORTNAME=	freebsd-doc
-PORTVERSION=	52155
+PORTVERSION=	52287
 PORTEPOCH=	1
 CATEGORIES=	misc docs
 MASTER_SITES=	LOCAL/blackend

@@ -1,11 +1,11 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/xapian-bindings12/Makefile 477060 2018-08-13 09:25:01Z tz $
+# $FreeBSD: head/databases/xapian-bindings12/Makefile 480473 2018-09-23 09:47:30Z sunpoet $
 
 PORTNAME=	xapian-bindings
 PORTVERSION=	1.2.25
 PORTREVISION=	1
 CATEGORIES=	databases
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
 PKGNAMESUFFIX=	12
 

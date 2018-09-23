@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/databases/mysql-connector-c++/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/databases/mysql-connector-c++/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	mysql-connector-c++
 PORTVERSION=	1.1.9
@@ -15,9 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 
-BROKEN_powerpc64=	fails to configure: the compiler doesn't support C++11
-
-USES=		cmake:outsource mysql ssl
+USES=		cmake:outsource compiler:c++11-lang mysql ssl
 USE_LDCONFIG=	yes
 CMAKE_ARGS=	-DDOC_DESTINATION="${DOCSDIR}"
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/ImageMagick7/Makefile 480301 2018-09-21 18:37:30Z pi $
+# $FreeBSD: head/graphics/ImageMagick7/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	ImageMagick
-DISTVERSION=	7.0.8-10
-PORTREVISION=	1
+DISTVERSION=	7.0.7-16
+PORTREVISION=	2
 CATEGORIES=	graphics perl5
 MASTER_SITES=	http://www.imagemagick.org/download/ \
 		http://www.imagemagick.org/download/legacy/ \
@@ -60,7 +60,7 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION:R}
 OPTIONS_DEFINE=	BZIP2 DOCS DJVU FFTW FONTCONFIG FPX FREETYPE \
 		GRAPHVIZ GSLIB JPEG2000 JBIG JPEG LCMS2 LZMA LQR MODULES \
 		OPENEXR OPENMP PANGO PDF PERL PNG SVG TESTS TIFF WEBP WMF \
-		THREADS X11 16BIT_PIXEL HDRI HEIF
+		THREADS X11 16BIT_PIXEL HDRI
 OPTIONS_DEFAULT=	16BIT_PIXEL BZIP2 FFTW FONTCONFIG FREETYPE \
 		JPEG2000 JBIG JPEG LCMS2 LZMA LQR MODULES PDF PERL PNG SVG \
 		TIFF WEBP WMF THREADS X11 HDRI
@@ -171,8 +171,8 @@ PLIST_SUB+=		MODULES='@comment '
 . if ${_IMAGEMAGICK_THREADS} == "no"
 IGNORE=OpenEXR requires threads. ${_IMAGEMAGICK_THREADS_IGNORE_MSG}
 . else
-LIB_DEPENDS+=		libIlmImf.so:graphics/OpenEXR \
-			libImath-2_2.so:graphics/ilmbase
+LIB_DEPENDS+=		libIlmImf.so:graphics/openexr \
+			libImath.so:graphics/ilmbase
 PLIST_SUB+=		OPENEXR=""
 . endif
 .else
@@ -361,18 +361,6 @@ USES+=		ghostscript:x11
 . else
 USES+=		ghostscript
 . endif
-.endif
-
-## HEIF (High EfficiencImage Format) support
-HEIF_DESC=		High Efficiency Image File support (e.g. from iPhone)
-
-.if ${PORT_OPTIONS:MHEIF}
-LIB_DEPENDS+=		libheif.so:graphics/libheif
-CONFIGURE_ARGS+=	--with-heic
-PLIST_SUB+=             HEIF=""
-.else
-CONFIGURE_ARGS+=	--without-heic
-PLIST_SUB+=             HEIF="@comment "
 .endif
 
 .if ! ${PORT_OPTIONS:MX11}

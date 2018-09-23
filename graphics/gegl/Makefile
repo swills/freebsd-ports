@@ -1,9 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/graphics/gegl/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/graphics/gegl/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	gegl
 PORTVERSION=	0.2.0
-PORTREVISION=	23
+PORTREVISION=	24
 CATEGORIES=	graphics
 MASTER_SITES=	GIMP
 
@@ -127,7 +127,7 @@ CONFIGURE_ARGS+=--without-lua
 .endif
 
 .if ${PORT_OPTIONS:MOPENEXR}
-LIB_DEPENDS+=	libIlmImf.so:graphics/OpenEXR
+LIB_DEPENDS+=	libIlmImf.so:graphics/openexr
 PLIST_SUB+=	OPENEXR=""
 .else
 CONFIGURE_ARGS+=--without-openexr

@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/science/bddsolve/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/science/bddsolve/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	bddsolve
 PORTVERSION=	1.04
@@ -12,12 +12,11 @@ MAINTAINER=	ed@FreeBSD.org
 COMMENT=	BDD-based satisfiability and reachability solver
 
 BROKEN_powerpc=		fails to compile due to running out of virtual memory
-BROKEN_powerpc64=	fails to build: undefined reference to boost::program_options::options_description::options_description
 
 LIB_DEPENDS+=	libbdd.so:science/buddy \
 		libboost_program_options.so:devel/boost-libs
 
-USES=		zip
+USES=		compiler:c++11-lang zip
 NO_WRKSUBDIR=	yes
 CFLAGS+=	-I${LOCALBASE}/include -I${WRKSRC}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -lbdd -lboost_program_options

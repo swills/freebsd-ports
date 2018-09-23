@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/frogatto/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/frogatto/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	frogatto
 PORTVERSION=	1.3.1
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 USE_GITHUB=	yes
 GH_ACCOUNT=	frogatto
 
-USES=		gmake pkgconfig dos2unix
+USES=		compiler:c++11-lang dos2unix gmake pkgconfig
 ALL_TARGET=	game server
 USE_GL=		glew glu
 USE_SDL=	sdl image mixer ttf

@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/graphics/exrtools/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/exrtools/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	exrtools
 PORTVERSION=	0.4
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	graphics
 MASTER_SITES=	http://scanline.ca/exrtools/ \
 		LOCAL/ehaupt
@@ -13,9 +13,9 @@ COMMENT=	Utilities for manipulating with HDR images in OpenEXR format
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
+LIB_DEPENDS=	libImath.so:graphics/ilmbase \
 		libpng.so:graphics/png \
-		libIlmImf.so:graphics/OpenEXR
+		libIlmImf.so:graphics/openexr
 
 BROKEN_armv6=		fails to configure: checking for /nxb-bin/usr/bin/cc... no
 BROKEN_armv7=		fails to configure: checking for /nxb-bin/usr/bin/cc... no

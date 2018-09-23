@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/calligra/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/editors/calligra/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	calligra
 DISTVERSION=	3.1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	editors kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}
@@ -10,7 +10,7 @@ DIST_SUBDIR=	KDE/${PORTNAME}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE office suite
 
-LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
+LIB_DEPENDS=	libImath.so:graphics/ilmbase \
 		libKPropertyCore3.so:x11-toolkits/kproperty \
 		libKReport3.so:textproc/kreport \
 		libboost_thread.so:devel/boost-libs \
@@ -56,7 +56,7 @@ USE_LDCONFIG=	yes
 OPTIONS_DEFINE=	OPENEXR
 OPTIONS_DEFAULT=	OPENEXR
 
-OPENEXR_LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR
+OPENEXR_LIB_DEPENDS=	libIlmImf.so:graphics/openexr
 OPENEXR_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_OpenEXR
 
 CMAKE_ARGS=	-DCMAKE_INCLUDE_PATH:STRING="${QT_INCDIR} ${LOCALBASE}/include" \

@@ -1,10 +1,10 @@
 # Created by: Henrik Brix Andersen <brix@FreeBSD.org>
-# $FreeBSD: head/www/xapian-omega12/Makefile 451547 2017-10-08 13:49:58Z sunpoet $
+# $FreeBSD: head/www/xapian-omega12/Makefile 480474 2018-09-23 09:47:35Z sunpoet $
 
 PORTNAME=	xapian-omega
 PORTVERSION=	1.2.25
 CATEGORIES=	www
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
 PKGNAMESUFFIX=	12
 

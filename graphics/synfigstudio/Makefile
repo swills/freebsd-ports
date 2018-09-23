@@ -1,9 +1,9 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/synfigstudio/Makefile 476343 2018-08-04 09:10:28Z tcberner $
+# $FreeBSD: head/graphics/synfigstudio/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	synfigstudio
 PORTVERSION=	1.2.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	SF/synfig/releases/${PORTVERSION}/source
 
@@ -14,7 +14,7 @@ LICENSE=	GPLv2+
 
 BUILD_DEPENDS=	etl>=0.04.19_1:devel/etl
 LIB_DEPENDS=	libHalf.so:graphics/ilmbase \
-		libIlmImf.so:graphics/OpenEXR \
+		libIlmImf.so:graphics/openexr \
 		libMagick++-6.so:graphics/ImageMagick \
 		libfftw3.so:math/fftw3 \
 		libfontconfig.so:x11-fonts/fontconfig \

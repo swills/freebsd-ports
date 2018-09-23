@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/fyre/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/fyre/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	fyre
 PORTVERSION=	1.0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics
 MASTER_SITES=	http://releases.navi.cx/fyre/
 
@@ -22,7 +22,7 @@ OPTIONS_DEFINE=		OPTIMIZED_CFLAGS OPENEXR GNET DOCS
 OPTIONS_DEFAULT=	OPENEXR GNET
 
 OPENEXR_CONFIGURE_ENABLE=	openexr
-OPENEXR_LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR
+OPENEXR_LIB_DEPENDS=	libIlmImf.so:graphics/openexr
 
 GNET_DESC=		Networking support via GNet
 GNET_CONFIGURE_ENABLE=	gnet

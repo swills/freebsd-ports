@@ -1,8 +1,8 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime20/Makefile 478526 2018-08-31 07:35:41Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime20/Makefile 480484 2018-09-23 11:10:45Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	20.3.8.8
+PORTVERSION=	20.3.8.9
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg			\
 		http://erlang.stacken.kth.se/download/:erlangorg		\
@@ -23,7 +23,7 @@ PATCHFILES=	patch-otp-20.3.1 patch-otp-20.3.2 patch-otp-20.3.3 \
 		patch-otp-20.3.7 patch-otp-20.3.8 patch-otp-20.3.8.1 \
 		patch-otp-20.3.8.2 patch-otp-20.3.8.3 patch-otp-20.3.8.4 \
 		patch-otp-20.3.8.5 patch-otp-20.3.8.6 patch-otp-20.3.8.7 \
-		patch-otp-20.3.8.8
+		patch-otp-20.3.8.8 patch-otp-20.3.8.9
 
 MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson

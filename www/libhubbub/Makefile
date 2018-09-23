@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/www/libhubbub/Makefile 479001 2018-09-05 02:38:16Z swills $
+# $FreeBSD: head/www/libhubbub/Makefile 480507 2018-09-23 13:25:45Z 0mp $
 
 PORTNAME=	libhubbub
 PORTVERSION=	0.3.5
@@ -7,7 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	HTML5 parser library
 
 LICENSE=	MIT

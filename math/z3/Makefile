@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/z3/Makefile 480036 2018-09-18 16:59:01Z emaste $
+# $FreeBSD: head/math/z3/Makefile 480432 2018-09-22 20:31:22Z arrowd $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -12,7 +12,7 @@ COMMENT=	Z3 Theorem Prover
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python:2.7,build
+USES=		compiler:c++11-lang python:2.7,build
 USE_GITHUB=	yes
 GH_ACCOUNT=	Z3Prover
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 480230 2018-09-21 07:11:11Z yuri $
+# $FreeBSD: head/science/Makefile 480461 2018-09-23 08:43:32Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -62,6 +62,7 @@
     SUBDIR += dlpoly-classic
     SUBDIR += eccodes
     SUBDIR += ecs
+    SUBDIR += elk
     SUBDIR += epte
     SUBDIR += erd
     SUBDIR += fastcap

@@ -1,9 +1,8 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/www/mediawiki130/Makefile 474051 2018-07-07 00:48:29Z wen $
+# $FreeBSD: head/www/mediawiki130/Makefile 480387 2018-09-22 14:20:19Z wen $
 
 PORTNAME=	mediawiki
-PORTVERSION=	1.30.0
-PORTREVISION=	1
+PORTVERSION=	1.30.1
 CATEGORIES=	www
 MASTER_SITES=	http://releases.wikimedia.org/mediawiki/${PORTVERSION:R}/
 PKGNAMESUFFIX=	130
@@ -55,8 +54,6 @@ XCACHE_RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/xcache.so:www/xcache
 
 pre-install:
 	@${FIND} -s -d ${WRKSRC} -not -type d | ${SED} "s?${WRKSRC}?${MEDIAWIKIDIR}?g" >>${PLIST}
-	@${ECHO} "@dir %%WWWDIR%%/vendor/monolog/monolog/tests/Monolog/Handler/Fixtures" >> ${PLIST}
-	@${ECHO} "@dir %%WWWDIR%%/tests/phan/issues" >> ${PLIST}
 	@${ECHO} "@mode 0777" >> ${PLIST}
 	@${ECHO} "@dir %%WWWDIR%%/images" >> ${PLIST}
 	@${ECHO} "@mode" >> ${PLIST}

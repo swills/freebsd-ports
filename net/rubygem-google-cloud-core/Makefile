@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-google-cloud-core/Makefile 479697 2018-09-13 21:49:52Z sunpoet $
+# $FreeBSD: head/net/rubygem-google-cloud-core/Makefile 480408 2018-09-22 16:44:31Z sunpoet $
 
 PORTNAME=	google-cloud-core
-PORTVERSION=	1.2.6
+PORTVERSION=	1.2.7
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

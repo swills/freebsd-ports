@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/hdr_tools/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/hdr_tools/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	hdr_tools
 PORTVERSION=	0.0.2010.11.23	# unspecified by the author, so use the date
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://ttic.uchicago.edu/~cotter/projects/hdr_tools/archives/ \
 		http://freebsd.nsu.ru/distfiles/
@@ -16,7 +16,7 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	libpopt.so:devel/popt \
 		libtiff.so:graphics/tiff \
-		libIlmImf.so:graphics/OpenEXR \
+		libIlmImf.so:graphics/openexr \
 		libMagick++-6.so:graphics/ImageMagick
 
 USES=		compiler:features gmake pkgconfig tar:tgz

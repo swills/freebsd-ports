@@ -1,16 +1,16 @@
 # Created by: Carlos Eduardo G. Carvalho <cartola@openit.com.br>
-# $FreeBSD: head/graphics/hugin/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/hugin/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	hugin
 PORTVERSION=	2018.0.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 
 MAINTAINER=	grog@FreeBSD.org
 COMMENT=	GUI for Panorama Tools, to stitch panoramic images
 
-LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR \
+LIB_DEPENDS=	libIlmImf.so:graphics/openexr \
 		libImath.so:graphics/ilmbase \
 		libboost_thread.so:devel/boost-libs \
 		liblcms2.so:graphics/lcms2 \

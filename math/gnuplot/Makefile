@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/gnuplot/Makefile 472558 2018-06-16 17:44:07Z glewis $
+# $FreeBSD: head/math/gnuplot/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	gnuplot
 PORTVERSION=	5.2.4
@@ -15,7 +15,7 @@ LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
 
 CONFLICTS_INSTALL?=	gnuplot-lite-[0-9]*
 
-USES+=		groff iconv pkgconfig readline
+USES+=		compiler:c++11-lang groff iconv pkgconfig readline
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
 CONFIGURE_ARGS+=--with-readline=gnu \

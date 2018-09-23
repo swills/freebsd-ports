@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 479881 2018-09-16 09:14:45Z rene $
+# $FreeBSD: head/audio/Makefile 480439 2018-09-23 00:10:21Z yuri $
 #
 
     COMMENT = Audio tools
@@ -724,6 +724,7 @@
     SUBDIR += rexima
     SUBDIR += rezound
     SUBDIR += rhvoice
+    SUBDIR += rhvoice-dictionary
     SUBDIR += rhythmbox
     SUBDIR += rio500
     SUBDIR += rioutil

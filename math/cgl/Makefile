@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cgl/Makefile 467460 2018-04-16 07:22:08Z yuri $
+# $FreeBSD: head/math/cgl/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	cgl
 DISTVERSIONPREFIX=	releases/
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libClp.so:math/clp \
 		liblapack.so:math/lapack
 
-USES=		gmake libtool pkgconfig
+USES=		compiler:c++11-lang gmake libtool pkgconfig
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	coin-or

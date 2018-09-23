@@ -1,11 +1,11 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Search-Xapian10/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Search-Xapian10/Makefile 480476 2018-09-23 09:47:45Z sunpoet $
 
 PORTNAME=	Search-Xapian
 PORTVERSION=	1.0.23.0
 PORTREVISION=	2
 CATEGORIES=	databases perl5
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION:R}/
+MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION:R}/
 PKGNAMEPREFIX=	p5-
 PKGNAMESUFFIX=	10
 

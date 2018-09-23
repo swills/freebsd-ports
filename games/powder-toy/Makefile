@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/powder-toy/Makefile 468982 2018-05-03 19:52:47Z amdmi3 $
+# $FreeBSD: head/games/powder-toy/Makefile 480451 2018-09-23 04:38:22Z linimon $
 
 PORTNAME=	powder-toy
 PORTVERSION=	93.3
@@ -19,7 +19,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ThePowderToy
 GH_PROJECT=	The-Powder-Toy
 
-USES=		scons localbase:ldflags lua:51 pkgconfig
+USES=		compiler:c++11-lang scons localbase:ldflags lua:51 pkgconfig
 USE_SDL=	sdl
 USE_XORG=	x11
 

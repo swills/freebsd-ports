@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/oaml/Makefile 476017 2018-07-31 19:17:33Z amdmi3 $
+# $FreeBSD: head/audio/oaml/Makefile 480340 2018-09-22 05:30:31Z linimon $
 
 PORTNAME=	oaml
 PORTVERSION=	1.3.4
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libogg.so:audio/libogg \
 USE_GITHUB=	yes
 GH_ACCOUNT=	oamldev
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 CMAKE_ARGS=	-DENABLE_UNITYPLUGIN:BOOL=OFF
 
 PORTDOCS=	*

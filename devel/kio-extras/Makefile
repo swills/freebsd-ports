@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/kio-extras/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/kio-extras/Makefile 480374 2018-09-22 10:15:22Z mandree $
 
 PORTNAME=	kio-extras
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-applications # kde kde-applications-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -37,7 +38,7 @@ MTP_LIB_DEPENDS=	libmtp.so:multimedia/libmtp
 
 EXR_DESC=		Provides support for OpenEXR formatted images in the thumbnail kioslave
 EXR_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_OpenEXR
-EXR_LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR
+EXR_LIB_DEPENDS=	libIlmImf.so:graphics/openexr
 
 EXIV_DESC=		Provides support for automatic rotation of JPEGs in the thumbnail kioslave
 EXIV_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_Exiv2

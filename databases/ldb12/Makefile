@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/ldb12/Makefile 470190 2018-05-17 02:24:59Z timur $
+# $FreeBSD: head/databases/ldb12/Makefile 480451 2018-09-23 04:38:22Z linimon $
 
 PORTNAME=		ldb
 PORTVERSION=		1.2.3
@@ -31,7 +31,7 @@ CONFLICTS_INSTALL=	ldb-1.1.* ldb13-1.3.*
 #nopython_CONFLICTS=	ldb
 #default_CONFLICTS=	ldb-nopython
 
-USES=			compiler pkgconfig waf
+USES=			compiler:c++11-lang pkgconfig waf
 USE_LDCONFIG=		yes
 WAF_CMD=		buildtools/bin/waf
 CONFIGURE_LOG=		bin/config.log

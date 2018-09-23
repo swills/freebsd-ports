@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 479295 2018-09-09 16:57:52Z sunpoet $
+# $FreeBSD: head/graphics/Makefile 480374 2018-09-22 10:15:22Z mandree $
 #
 
     COMMENT = Graphics tools and libraries
@@ -14,7 +14,6 @@
     SUBDIR += ImageMagick7
     SUBDIR += ImageMagick7-nox11
     SUBDIR += O2-tools
-    SUBDIR += OpenEXR
     SUBDIR += R-cran-DiagrammeR
     SUBDIR += R-cran-GDD
     SUBDIR += R-cran-RColorBrewer
@@ -671,6 +670,7 @@
     SUBDIR += opencv-core
     SUBDIR += opencv-java
     SUBDIR += opendx
+    SUBDIR += openexr
     SUBDIR += openfx-arena
     SUBDIR += openfx-io
     SUBDIR += openfx-misc
