@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	astropy
-PORTVERSION=	1.1.2
-PORTREVISION=	1
+DISTVERSION=	3.0.4
 CATEGORIES=	astro
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,10 +12,11 @@ COMMENT=	Community-developed python astronomy tools
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYNUMPY}
+BUILD_DEPENDS=	${PYNUMPY} \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>=0.6:devel/py-Jinja2@${PY_FLAVOR}
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		python
-USE_PYTHON=	autoplist distutils
+USES=		python:3.5+
+USE_PYTHON=	autoplist concurrent cython distutils
 
 .include <bsd.port.mk>
