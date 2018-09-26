@@ -40,6 +40,8 @@ post-patch:
 		's|/usr|${PREFIX}|g'
 	@${REINPLACE_CMD} -e 's|%%ETCDIR%%|${PREFIX}/etc| ; \
 		 s|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/ddclient
+	@${REINPLACE_CMD} -e '/^\#\!\/usr\/local\/local/d' \
+		${WRKSRC}/ddclient
 
 do-install:
 	(cd ${WRKSRC} && ${INSTALL_DATA} sample-etc_ddclient.conf \
