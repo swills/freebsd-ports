@@ -1,9 +1,9 @@
 # $FreeBSD$
 
 PORTNAME=	mininet
-PORTVERSION=	2.3.0d1
-PORTREVISION=	1
+PORTVERSION=	2.2.2	
 CATEGORIES=	net python
+MASTER_SITES =	https://github.com/akoshibe/mininet/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	akoshibe@gmail.com
@@ -22,16 +22,13 @@ RUN_DEPENDS=	iperf>=0:benchmarks/iperf \
 USES=		python:2.7
 USE_PYTHON=	distutils
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	akoshibe
-GH_TAGNAME=	b88c58c
-
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-build:
-	@${CC} ${WRKSRC}/mnexec.c -o ${BUILD_WRKSRC}/mnexec
+	@${CC} ${WRKSRC}/mnexec.c ${WRKSRC}/mnexec_bsd.c -o ${BUILD_WRKSRC}/mnexec
 	@help2man -N -n "create a Mininet network."  --no-discard-stderr \
-		"${PYTHON_CMD} -B ${BUILD_WRKSRC}/bin/mn" -o ${BUILD_WRKSRC}/mn.1
+		"PYTHONPATH=${BUILD_WRKSRC} ${PYTHON_CMD} -B ${BUILD_WRKSRC}/bin/mn" \
+		-o ${BUILD_WRKSRC}/mn.1
 	@help2man -N -n "execution utility for Mininet."  -h "-h" -v "-v" \
 		--no-discard-stderr ${BUILD_WRKSRC}/mnexec -o ${BUILD_WRKSRC}/mnexec.1
 	@(cd ${BUILD_WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} ${PYDISTUTILS_SETUP} ${PYDISTUTILS_BUILD_TARGET} ${PYDISTUTILS_BUILDARGS})
