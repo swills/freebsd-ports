@@ -3,6 +3,7 @@
 
 PORTNAME=	libffcall
 PORTVERSION=	2.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 
@@ -26,6 +27,9 @@ CONFIGURE_ARGS=		--enable-shared
 CONFIGURE_TARGET=	${ARCH:S/amd64/x86_64/}-portbld-${OPSYS:tl}${OSREL}
 MAKE_JOBS_UNSAFE=	yes
 CFLAGS+=		-fPIC
+
+PATCHES_powerpc64=	${PATCHDIR}/extra-patch-vacall_vacall-internal.h
+EXTRA_PATCHES=		${PATCHES_${ARCH}}
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libavcall.so \
