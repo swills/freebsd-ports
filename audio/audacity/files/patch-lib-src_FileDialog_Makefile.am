@@ -7,8 +7,8 @@
 +DIST_SUBDIRS=	gtk mac win
  lib_LTLIBRARIES = libFileDialog.la
  
- libFileDialog_la_CPPFLAGS = $(WX_CXXFLAGS) -Wno-deprecated-declarations
-@@ -7,22 +9,32 @@ libFileDialog_la_LIBADD = $(WX_LIBS)
+ libFileDialog_la_LIBTOOLFLAGS = --tag=CXX
+@@ -8,22 +10,32 @@
  libFileDialog_la_SOURCES = FileDialog.cpp FileDialog.h
  
  if GTK
