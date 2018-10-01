@@ -1,9 +1,9 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/audio/gqradio/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/gqradio/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	gqradio
 PORTVERSION=	1.9.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	audio
 MASTER_SITES=	SF/gqmpeg/${PORTNAME}/${PORTVERSION}
 

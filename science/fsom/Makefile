@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/fsom/Makefile 467501 2018-04-16 18:15:30Z jwb $
+# $FreeBSD: head/science/fsom/Makefile 480985 2018-09-30 21:41:44Z jwb $
 
 PORTNAME=	fsom
 DISTVERSION=	g20151117
@@ -9,6 +9,7 @@ COMMENT=	Tiny C library for managing SOM (Self-Organizing Maps) neural networks
 
 LICENSE=	GPLv3
 
+USES=		compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	ekg
 GH_TAGNAME=	56695e1611d824cda97f08e932d25d08419170cd

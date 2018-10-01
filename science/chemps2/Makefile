@@ -1,9 +1,8 @@
-# $FreeBSD: head/science/chemps2/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/chemps2/Makefile 480839 2018-09-28 03:25:20Z yuri $
 
 PORTNAME=	CheMPS2
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.7
-PORTREVISION=	2
+DISTVERSION=	1.8.8
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/v4l_compat/Makefile 473615 2018-06-30 12:37:58Z riggs $
+# $FreeBSD: head/multimedia/v4l_compat/Makefile 480895 2018-09-29 07:23:14Z riggs $
 
 PORTNAME=	v4l_compat
-PORTREVISION=	1
+PORTREVISION=	2
 
 COMMENT=	Video4Linux IOCTL header files
 

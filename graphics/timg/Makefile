@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/timg/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/timg/Makefile 480820 2018-09-27 21:10:13Z linimon $
 
 PORTNAME=	timg
 PORTVERSION=	0.9.5
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
 USE_GITHUB=	yes
 GH_ACCOUNT=	hzeller
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 ALL_TARGET=	${PORTNAME}
 WRKSRC_SUBDIR=	src
 

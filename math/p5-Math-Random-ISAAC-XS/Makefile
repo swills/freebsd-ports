@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Random-ISAAC-XS/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Math-Random-ISAAC-XS/Makefile 480654 2018-09-25 09:08:29Z amdmi3 $
 
 PORTNAME=	Math-Random-ISAAC-XS
 PORTVERSION=	1.004
@@ -11,6 +11,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	C implementation of the ISAAC PRNG Algorithm
+
+LICENSE=	PD MIT ART10 ART20 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	p5-Test-NoWarnings>0:devel/p5-Test-NoWarnings
 

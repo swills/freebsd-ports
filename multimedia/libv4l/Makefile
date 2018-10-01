@@ -1,10 +1,10 @@
 # Created by: Andrew Thompson <thompsa@FreeBSD.org>
-# $FreeBSD: head/multimedia/libv4l/Makefile 422052 2016-09-13 18:10:12Z kwm $
+# $FreeBSD: head/multimedia/libv4l/Makefile 480899 2018-09-29 08:04:27Z riggs $
 # Check v4l_compat and v4l-utils slave ports
 
 PORTNAME?=	libv4l
 PORTVERSION=	1.6.3
-PORTREVISION?=	2
+PORTREVISION?=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	http://linuxtv.org/downloads/v4l-utils/:master \
 		LOCAL/kwm:local

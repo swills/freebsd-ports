@@ -1,11 +1,11 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/four-in-a-row/Makefile 441065 2017-05-17 08:44:31Z kwm $
+# $FreeBSD: head/games/four-in-a-row/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	four-in-a-row
-PORTVERSION=	3.22.1
+PORTVERSION=	3.28.0
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
-DIST_SUBDIR=	gnome3
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Make lines of the same color

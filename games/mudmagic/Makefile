@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/games/mudmagic/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/mudmagic/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	mudmagic
 PORTVERSION=	1.9
@@ -12,6 +12,8 @@ COMMENT=	GTK+ based MUD client
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		Does not build with recent devel/glib20
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpcre.so:devel/pcre \

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11/pantheon-terminal/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/x11/pantheon-terminal/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	pantheon-terminal
 PORTVERSION=	0.4.3
@@ -11,6 +11,8 @@ COMMENT=	Lightweight, beautiful, and simple terminal from Elementary OS
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		Doesn't build with vala 0.40+
 
 LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 		libgnutls.so:security/gnutls \

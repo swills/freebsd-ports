@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh@pn.sinp.msu.ru>
-# $FreeBSD: head/devel/p5-DateTime-Format-DateParse/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-DateParse/Makefile 480901 2018-09-29 09:08:31Z amdmi3 $
 
 PORTNAME=	DateTime-Format-DateParse
 PORTVERSION=	0.05
@@ -11,11 +11,16 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	This module is a compatibility wrapper around Date::Parse
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-TimeDate>=0:devel/p5-TimeDate
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

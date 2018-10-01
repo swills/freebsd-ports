@@ -1,9 +1,9 @@
 # Created by: Mike Heffner <mikeh@FreeBSD.org>
-# $FreeBSD: head/comms/lirc/Makefile 461927 2018-02-15 14:35:58Z amdmi3 $
+# $FreeBSD: head/comms/lirc/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	lirc
 PORTVERSION=	0.9.0
-PORTREVISION=	8
+PORTREVISION=	9
 PORTEPOCH=	1
 CATEGORIES=	comms
 MASTER_SITES=	SF/${PORTNAME}/LIRC/${PORTVERSION}

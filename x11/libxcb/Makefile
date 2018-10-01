@@ -1,8 +1,8 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/x11/libxcb/Makefile 470141 2018-05-16 18:59:47Z zeising $
+# $FreeBSD: head/x11/libxcb/Makefile 480881 2018-09-28 19:47:03Z zeising $
 
 PORTNAME=	libxcb
-PORTVERSION=	1.13
+PORTVERSION=	1.13.1
 CATEGORIES=	x11 python
 MASTER_SITES=	http://xcb.freedesktop.org/dist/
 
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-st
 CONFIGURE_ARGS+=	--disable-build-docs --without-doxygen --enable-xinput
 
 XORG_CAT=	lib
-USES=		cpe gmake python:build
+USES=		cpe gmake gnome python:build
 USE_GNOME=	libxslt:build
 USE_XORG=	xau xdmcp
 INSTALL_TARGET=	install-strip

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-applicationinsights/Makefile 477560 2018-08-19 09:17:48Z dbn $
+# $FreeBSD: head/devel/py-applicationinsights/Makefile 480615 2018-09-24 17:36:14Z dbn $
 
 PORTNAME=	applicationinsights
-DISTVERSION=	0.11.6
+DISTVERSION=	0.11.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

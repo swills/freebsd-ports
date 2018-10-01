@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libmtdev/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/libmtdev/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	mtdev
 PORTVERSION=	1.1.5
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://bitmath.org/code/${PORTNAME}/
 PKGNAMEPREFIX=	lib

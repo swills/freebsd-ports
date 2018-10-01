@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libgrading/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/libgrading/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	libgrading
 PORTVERSION=	0.1.2
@@ -12,8 +12,6 @@ COMMENT=	Simple library for grading C- and C++-language assignments
 LICENSE=	APACHE20
 
 LIB_DEPENDS=	libdistance.so:devel/libdistance
-
-BROKEN_powerpc64=	fails to compile: Arguments.cpp: 'atol' is not a member of 'std'
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	trombonehero

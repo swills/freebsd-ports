@@ -1,9 +1,9 @@
 # Created by: Vladimir Kondratyev <wulf@FreeBSD.org>
-# $FreeBSD: head/devel/evemu/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/evemu/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	evemu
 PORTVERSION=	2.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.freedesktop.org/software/${PORTNAME}/
 

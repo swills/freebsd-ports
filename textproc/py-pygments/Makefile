@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pygments/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-pygments/Makefile 480898 2018-09-29 07:34:45Z yuri $
 
 PORTNAME=	pygments
 PORTVERSION=	2.2.0
@@ -17,4 +17,10 @@ USES=		python
 USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_VER} == ${PYTHON_DEFAULT}
+CONFLICTS_INSTALL=	paraview
+.endif
+
+.include <bsd.port.post.mk>

@@ -1,10 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-logger/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-im/telepathy-logger/Makefile 480951 2018-09-30 11:58:29Z kwm $
 #    $MCom: ports/trunk/net-im/telepathy-logger/Makefile 19955 2014-10-15 10:15:00Z gusi $
 
 PORTNAME=	telepathy-logger
-PORTVERSION=	0.8.1
-PORTREVISION=	1
+PORTVERSION=	0.8.2
 CATEGORIES=	net-im
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/${PORTNAME}/
 

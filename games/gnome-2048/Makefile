@@ -1,11 +1,11 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/gnome-2048/Makefile 441065 2017-05-17 08:44:31Z kwm $
+# $FreeBSD: head/games/gnome-2048/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-2048
-PORTVERSION=	3.22.0
+PORTVERSION=	3.26.1
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
-DIST_SUBDIR=	gnome3
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Move the tiles until you obtain the 2048 tile

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 480439 2018-09-23 00:10:21Z yuri $
+# $FreeBSD: head/audio/Makefile 480742 2018-09-26 15:25:03Z naddy $
 #
 
     COMMENT = Audio tools
@@ -438,6 +438,7 @@
     SUBDIR += liboggz
     SUBDIR += libopenmpt
     SUBDIR += libopenspc
+    SUBDIR += libopusenc
     SUBDIR += libsamplerate
     SUBDIR += libshairport
     SUBDIR += libshout

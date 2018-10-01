@@ -1,12 +1,11 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/gnome-sudoku/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/gnome-sudoku/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-sudoku
-PORTVERSION=	3.24.0
-PORTREVISION=	1
+PORTVERSION=	3.28.0
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
-DIST_SUBDIR=	gnome3
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Sudoku game for gnome
@@ -23,9 +22,8 @@ LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		compiler:c++11-lang gettext gmake gnome localbase pathfix \
-		pkgconfig python:3.3+ shebangfix tar:xz
-USE_GNOME=	cairo gtk30 intlhack libxml2:build pygobject3
+USES=		compiler:c++11-lang gettext gmake gnome pkgconfig tar:xz
+USE_GNOME=	cairo gtk30
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
 

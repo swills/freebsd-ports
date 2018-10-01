@@ -1,15 +1,13 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome3-lite/Makefile 439367 2017-04-25 08:20:30Z riggs $
-#   $MCom: ports/trunk/x11/gnome3-lite/Makefile 18610 2013-06-30 16:33:05Z marcus $
+# $FreeBSD: head/x11/gnome3-lite/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	x11 gnome
 PKGNAMESUFFIX=	-lite
 
 COMMENT=	The "meta-port" of the GNOME desktop slimmed down for only the basics
 
 MASTERDIR=	${.CURDIR}/../gnome3
-CONFLICTS=	gnome2-[0-9]* gnome2-lite-[0-9]* gnome3-[0-9]*
 
 DESCR=		${.CURDIR}/pkg-descr
 PKGMESSAGE=	${.CURDIR}/pkg-message

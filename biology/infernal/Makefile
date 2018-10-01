@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/infernal/Makefile 471850 2018-06-06 15:15:18Z krion $
+# $FreeBSD: head/biology/infernal/Makefile 480834 2018-09-27 23:02:56Z linimon $
 
 PORTNAME=	infernal
 PORTVERSION=	1.1.2
@@ -11,7 +11,7 @@ COMMENT=	Search sequence databases for structural RNA homologs
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	amd64 i386
+ONLY_FOR_ARCHS=	amd64 i386 powerpc64
 ONLY_FOR_ARCHS_REASON=	requires SSE2 or AltiVec instructions
 
 USES=		gmake

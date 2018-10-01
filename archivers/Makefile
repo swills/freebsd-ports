@@ -1,9 +1,10 @@
-# $FreeBSD: head/archivers/Makefile 477641 2018-08-20 09:53:59Z mm $
+# $FreeBSD: head/archivers/Makefile 480950 2018-09-30 11:08:43Z rene $
 #
 
     COMMENT = Archivers
 
     SUBDIR += 9e
+    SUBDIR += R-cran-zip
     SUBDIR += advancecomp
     SUBDIR += amigadepacker
     SUBDIR += arc
@@ -31,7 +32,6 @@
     SUBDIR += fpc-bzip2
     SUBDIR += fpc-unzip
     SUBDIR += freetar
-    SUBDIR += freeze
     SUBDIR += gcab
     SUBDIR += gcpio
     SUBDIR += gnome-autoar

@@ -1,9 +1,9 @@
 # Created by: Chuck Hein <chein@FreeBSD.org> & Jim Overholt <overholt@isdw.net>
-# $FreeBSD: head/multimedia/camserv/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/camserv/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	camserv
 PORTVERSION=	0.5.1
-PORTREVISION=	19
+PORTREVISION=	20
 PORTEPOCH=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/cserv/${PORTNAME}/${PORTVERSION}

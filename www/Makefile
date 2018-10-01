@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 479944 2018-09-17 19:27:20Z ultima $
+# $FreeBSD: head/www/Makefile 480900 2018-09-29 09:05:37Z jbeich $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1617,6 +1617,7 @@
     SUBDIR += py-django-tables2
     SUBDIR += py-django-tagging
     SUBDIR += py-django-taggit
+    SUBDIR += py-django-taggit-serializer
     SUBDIR += py-django-tastypie
     SUBDIR += py-django-templatetag-sugar
     SUBDIR += py-django-timezone-field
@@ -2442,7 +2443,6 @@
     SUBDIR += w3mir
     SUBDIR += waccess
     SUBDIR += wadcomblog
-    SUBDIR += waterfox
     SUBDIR += web2ldap
     SUBDIR += webalizer
     SUBDIR += webbrowser

@@ -1,8 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/w_scan/Makefile 445048 2017-07-05 06:33:03Z rene $
+# $FreeBSD: head/multimedia/w_scan/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	w_scan
 PORTVERSION=	20170107
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://wirbel.htpc-forum.de/w_scan/
 

@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/mediastreamer/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/net/mediastreamer/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	mediastreamer
 PORTVERSION=	2.14.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	net
 MASTER_SITES=	SAVANNAH/linphone/mediastreamer
 

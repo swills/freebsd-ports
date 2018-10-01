@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libevdev/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/libevdev/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	libevdev
 PORTVERSION=	1.4.4
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://freedesktop.org/software/${PORTNAME}/
 

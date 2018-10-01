@@ -1,5 +1,5 @@
 # Created by: peter.thoenen@yahoo.com
-# $FreeBSD: head/security/tor/Makefile 479497 2018-09-11 01:51:56Z yuri $
+# $FreeBSD: head/security/tor/Makefile 480932 2018-09-30 01:55:03Z yuri $
 
 PORTNAME=	tor
 DISTVERSION=	0.3.4.8
@@ -12,11 +12,9 @@ COMMENT=	Anonymizing overlay network for TCP
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_mips64=		does not build: error: Need a uint128_t implementation!
-BROKEN_powerpc64=	does not build: error: Need a uint128_t implementation!
-BROKEN_sparc64=		does not build: error: Need a uint128_t implementation!
+USES=		compiler:c11 cpe gmake pkgconfig # should be compiler:c99 or compiler:gnu99
+USE_CSTD=	gnu99 # until this bug report is closed: https://trac.torproject.org/projects/tor/ticket/27900
 
-USES=		cpe gmake pkgconfig
 CPE_VENDOR=	torproject
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-openssl-dir="${OPENSSLBASE}"

@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau <olivierd@FreeBSD.org>
-# $FreeBSD: head/devel/xfce4-vala/Makefile 459817 2018-01-24 07:16:38Z truckman $
+# $FreeBSD: head/devel/xfce4-vala/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	xfce4-vala
 PORTVERSION=	4.10.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel xfce
 MASTER_SITES=	XFCE/src/bindings/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4
@@ -19,6 +19,6 @@ GNU_CONFIGURE=	yes
 USES=	pkgconfig gmake pathfix xfce tar:bzip2
 USE_XFCE=	panel
 
-CONFIGURE_ARGS=	--with-vala-api=0.36
+CONFIGURE_ARGS=	--with-vala-api=0.40
 
 .include <bsd.port.mk>

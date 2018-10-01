@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/colord/Makefile 430669 2017-01-05 22:58:02Z jbeich $
+# $FreeBSD: head/graphics/colord/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	colord
-PORTVERSION=	1.2.12
+PORTVERSION=	1.3.5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.freedesktop.org/software/colord/releases/
 

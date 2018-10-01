@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Table-ASV/Makefile 475558 2018-07-28 13:16:04Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Table-ASV/Makefile 480572 2018-09-24 11:12:04Z sunpoet $
 
 PORTNAME=	Text-Table-ASV
 PORTVERSION=	0.001
@@ -14,8 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11-fm/nemo/Makefile 480498 2018-09-23 12:28:37Z linimon $
+# $FreeBSD: head/x11-fm/nemo/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	nemo
 PORTVERSION=	2.4.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fm gnome
 DIST_SUBDIR=	gnome3
 
@@ -42,7 +42,7 @@ OPTIONS_SUB=			yes
 OPTIONS_DEFINE=			TRACKER
 OPTIONS_DEFAULT=		TRACKER
 TRACKER_CONFIGURE_ENABLE=	tracker
-TRACKER_LIB_DEPENDS=		libtracker-sparql-1.0.so:sysutils/tracker
+TRACKER_LIB_DEPENDS=		libtracker-sparql-2.0.so:sysutils/tracker
 TRACKER_DESC=			Integration with tracker
 
 post-patch:
@@ -57,6 +57,7 @@ post-patch:
 		${WRKSRC}/files/Makefile.in
 
 	@${REINPLACE_CMD} -e 's|-DGTK_DISABLE_DEPRECATED||g' \
+		-e 's|tracker-sparql-1.0|tracker-sparql-2.0|g' \
 		${WRKSRC}/configure.in
 
 	@${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \

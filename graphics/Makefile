@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/Makefile 480967 2018-09-30 19:19:44Z jmd $
 #
 
     COMMENT = Graphics tools and libraries
@@ -83,7 +83,6 @@
     SUBDIR += cadubi
     SUBDIR += caffe
     SUBDIR += cairo
-    SUBDIR += cairo-reference
     SUBDIR += cairomm
     SUBDIR += cal3d
     SUBDIR += camera
@@ -154,6 +153,7 @@
     SUBDIR += drawpile
     SUBDIR += driconf
     SUBDIR += drm-devel-kmod
+    SUBDIR += drm-kmod
     SUBDIR += drm-legacy-kmod
     SUBDIR += drm-next-kmod
     SUBDIR += drm-stable-kmod
@@ -294,8 +294,6 @@
     SUBDIR += gnofract4d
     SUBDIR += gnome-color-manager
     SUBDIR += gnome-video-effects
-    SUBDIR += gnustep-slideshow
-    SUBDIR += gnustep-slideshowkit
     SUBDIR += gocr
     SUBDIR += goocanvas
     SUBDIR += goocanvas2

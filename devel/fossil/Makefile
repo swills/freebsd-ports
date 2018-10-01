@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/fossil/Makefile 473020 2018-06-22 08:06:05Z gahr $
+# $FreeBSD: head/devel/fossil/Makefile 480556 2018-09-24 08:30:36Z gahr $
 
 PORTNAME=	fossil
-PORTVERSION=	2.6
+PORTVERSION=	2.7
 DISTVERSIONPREFIX=	src-
-PORTREVISION=	1
+PORTREVISION=	0
 PORTEPOCH=	2
 CATEGORIES=	devel www
 MASTER_SITES=	http://fossil-scm.org/index.html/uv/

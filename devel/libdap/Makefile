@@ -1,10 +1,10 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/libdap/Makefile 450815 2017-09-28 10:40:27Z sunpoet $
+# $FreeBSD: head/devel/libdap/Makefile 480971 2018-09-30 19:41:36Z sunpoet $
 
 PORTNAME=	libdap
-PORTVERSION=	3.19.1
+PORTVERSION=	3.20.0
 CATEGORIES=	devel
-MASTER_SITES=	http://www.opendap.org/pub/source/ \
+MASTER_SITES=	https://www.opendap.org/pub/source/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -17,10 +17,11 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libxml2.so:textproc/libxml2
 
+USES=		bison charsetfix gmake libtool localbase pathfix ssl
+
 CONFIGURE_ARGS=	ac_cv_type_max_align_t=yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		bison charsetfix gmake libtool localbase pathfix ssl
 
 .include <bsd.port.mk>

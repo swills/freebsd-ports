@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/polybar/Makefile 476719 2018-08-09 05:36:15Z tcberner $
+# $FreeBSD: head/x11/polybar/Makefile 480820 2018-09-27 21:10:13Z linimon $
 
 PORTNAME=	polybar
 DISTVERSION=	3.2.1
@@ -25,8 +25,8 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libxcb-util.so:x11/xcb-util \
 		libxcb-xrm.so:x11/xcb-util-xrm
 
-USES=		cmake:outsource localbase:ldflags pkgconfig \
-		python:2.7,build
+USES=		cmake:outsource compiler:c++11-lang localbase:ldflags \
+		pkgconfig python:2.7,build
 USE_GITHUB=	yes
 GH_ACCOUNT=	jaagr
 GH_TUPLE=	jaagr:i3ipcpp:v0.7.1-4-gd4e4786:i3ipcpp/lib/i3ipcpp \

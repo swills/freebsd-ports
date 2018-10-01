@@ -1,9 +1,9 @@
 # Created by: Olivier Smedts <olivier@gid0.org>
-# $FreeBSD: head/audio/abraca/Makefile 449397 2017-09-07 13:23:26Z madpilot $
+# $FreeBSD: head/audio/abraca/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	abraca
 PORTVERSION=	0.8.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.GPL
 BUILD_DEPENDS=	${LOCALBASE}/bin/valac:lang/vala
 LIB_DEPENDS=	libxmmsclient.so:audio/xmms2 \
 		libgee-0.8.so:devel/libgee
-RUN_DEPENDS=	gnome-themes-standard>=3.0.0:x11-themes/gnome-themes-standard \
+RUN_DEPENDS=	gnome-themes-extra>=3.0.0:x11-themes/gnome-themes-extra \
 		gnome-icon-theme>=0:misc/gnome-icon-theme
 
 USES=		pkgconfig waf tar:bzip2

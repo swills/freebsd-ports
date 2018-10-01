@@ -1,9 +1,9 @@
 # Created by: Jesse van den Kieboom <troplosti@orcaweb.cjb.net>
-# $FreeBSD: head/sysutils/libgksu/Makefile 473672 2018-07-01 15:15:34Z woodsb02 $
+# $FreeBSD: head/sysutils/libgksu/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	libgksu
 PORTVERSION=	2.0.12
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://people.debian.org/~kov/gksu/
 

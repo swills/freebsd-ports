@@ -1,9 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/sysutils/cinnamon-control-center/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/sysutils/cinnamon-control-center/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	cinnamon-control-center
 PORTVERSION=	2.4.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	https://raw.githubusercontent.com/${GH_ACCOUNT}/${GH_PROJECT}/9363a4a1e121344ae98f22b55fb28623cf0f6038/panels/datetime/data/:tzpng
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}

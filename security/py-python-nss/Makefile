@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-python-nss/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/security/py-python-nss/Makefile 480707 2018-09-25 23:11:39Z jhale $
 
 PORTNAME=	python-nss
 PORTVERSION=	1.0.1
@@ -15,14 +15,10 @@ LICENSE_FILE_LGPL21+ =	${WRKSRC}/LICENSE.lgpl
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/LICENSE.gpl
 LICENSE_FILE_MPL20=	${WRKSRC}/LICENSE.mpl
 
-BROKEN_mips=		fails to compile: py_nss.c:20285: #pragma GCC diagnostic not allowed inside functions
-BROKEN_mips64=		fails to compile: py_nss.c:20285: #pragma GCC diagnostic not allowed inside functions
-BROKEN_powerpc64=	fails to compile: py_nss.c:20285: #pragma GCC diagnostic not allowed inside functions
-
 LIB_DEPENDS=	libnspr4.so:devel/nspr \
 		libnss3.so:security/nss
 
-USES=		python tar:bzip2
+USES=		compiler:c11 python tar:bzip2
 USE_PYTHON=	autoplist distutils
 
 PYDISTUTILS_CONFIGUREARGS=	--include-root="${LOCALBASE}/include" \

@@ -1,8 +1,8 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime21/Makefile 479766 2018-09-14 10:00:35Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime21/Makefile 480790 2018-09-27 08:50:01Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	21.0.9
+PORTVERSION=	21.1
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg			\
 		http://erlang.stacken.kth.se/download/:erlangorg		\
@@ -18,9 +18,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 PATCH_SITES=	http://olgeni.olgeni.com/~olgeni/distfiles/ \
 		LOCAL/olgeni
-PATCHFILES=	patch-otp-21.0.1 patch-otp-21.0.2 patch-otp-21.0.3 \
-		patch-otp-21.0.4 patch-otp-21.0.5 patch-otp-21.0.6 \
-		patch-otp-21.0.7 patch-otp-21.0.8 patch-otp-21.0.9
+PATCHFILES=
 
 MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson
@@ -32,7 +30,7 @@ BROKEN_sparc64=	Fails to build: error: fp_except undeclared
 WRKSRC=		${WRKDIR}/otp_src_${ERLANG_REL}
 
 ERLANG_LIB=	${PORTNAME}${PORTVERSION:C/\..*//}
-ERLANG_REL=	21.0
+ERLANG_REL=	21.1
 
 OPTIONS_SUB=	yes
 SUB_FILES=	pkg-message

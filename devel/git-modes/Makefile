@@ -1,9 +1,8 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/devel/git-modes/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/devel/git-modes/Makefile 480875 2018-09-28 18:20:29Z miwi $
 
 PORTNAME=	git-modes
-DISTVERSION=	1.2.7
-PORTREVISION=   1
+DISTVERSION=	1.2.8
 PORTEPOCH=	1
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

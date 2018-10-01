@@ -1,8 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/textproc/duncan/Makefile 457858 2018-01-02 14:25:13Z vanilla $
+# $FreeBSD: head/textproc/duncan/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	duncan
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	textproc gnustep
 MASTER_SITES=	http://www.eskimo.com/~pburns/Dictionaries/files/
 DISTNAME=	Duncan-${PORTVERSION}

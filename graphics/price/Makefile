@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/graphics/price/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/graphics/price/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	price
 PORTVERSION=	1.3.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 DISTNAME=	PRICE-${PORTVERSION}

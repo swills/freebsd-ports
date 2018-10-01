@@ -1,8 +1,8 @@
 # Created by: Gustau Pérez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11-themes/adwaita-icon-theme/Makefile 439206 2017-04-23 08:35:28Z kwm $
+# $FreeBSD: head/x11-themes/adwaita-icon-theme/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	adwaita-icon-theme
-PORTVERSION=	3.22.0
+PORTVERSION=	3.28.0
 CATEGORIES=	x11-themes gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

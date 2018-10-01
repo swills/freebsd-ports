@@ -1,5 +1,5 @@
 # Created by: Daniel J. O'Connor <darius@dons.net.au>
-# $FreeBSD: head/games/quakeforge/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/quakeforge/Makefile 480747 2018-09-26 16:12:12Z emaste $
 
 PORTNAME=	quakeforge
 PORTVERSION=	0.7.2
@@ -34,6 +34,7 @@ CONFIGURE_ARGS=	--disable-alsa \
 USE_CSTD=	gnu89
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
+LDFLAGS_i386=	-Wl,-znotext
 
 SUB_FILES=	pkg-message
 

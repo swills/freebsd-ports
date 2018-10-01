@@ -1,8 +1,8 @@
 # Created by: Tobias Rehbein <tobias.rehbein@web.de>
-# $FreeBSD: head/games/stonesoup/Makefile 477045 2018-08-13 01:17:47Z lifanov $
+# $FreeBSD: head/games/stonesoup/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	stonesoup
-PORTVERSION=	0.22.0
+PORTVERSION=	0.22.1
 CATEGORIES=	games
 
 MAINTAINER=	lifanov@FreeBSD.org
@@ -11,7 +11,6 @@ COMMENT=	Dungeon Crawl Stone Soup - a fun, free rogue-like game
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../../LICENSE
 
-BROKEN_powerpc64=	fails to compile: tool/tile.h: 'nullptr' was not declared in this scope
 NOT_FOR_ARCHS=		armv6
 NOT_FOR_ARCHS_REASON=	missing platform \#define or unsupported compiler
 
@@ -55,6 +54,7 @@ LUA_DESC=	Bindings for LUA user scripts
 
 SDL_CONFLICTS=	${PORTNAME}-[0-9]*
 SDL_USE=	sdl=sdl2,image2,mixer2 gl=gl,glu
+SDL_USES=	gl
 SDL_USES_OFF=	ncurses
 SDL_MAKE_ARGS=	TILES=y SOUND=y
 SDL_BUILD_DEPENDS=	\

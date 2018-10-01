@@ -1,8 +1,8 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/sysutils/consolekit2/Makefile 472163 2018-06-11 02:14:07Z linimon $
+# $FreeBSD: head/sysutils/consolekit2/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	consolekit
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	https://github.com/ConsoleKit2/ConsoleKit2/releases/download/${PORTVERSION}/
 PKGNAMESUFFIX=	2

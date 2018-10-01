@@ -1,9 +1,8 @@
 # Created by: Sean Greven <sean.greven@gmail.com>
-# $FreeBSD: head/security/fwknop/Makefile 451339 2017-10-05 19:27:45Z cs $
+# $FreeBSD: head/security/fwknop/Makefile 480983 2018-09-30 20:54:01Z fernape $
 
 PORTNAME=	fwknop
-PORTVERSION=	2.6.9
-PORTREVISION=	2
+PORTVERSION=	2.6.10
 CATEGORIES=	security
 MASTER_SITES=	http://www.cipherdyne.org/fwknop/download/
 
@@ -15,8 +14,18 @@ LICENSE=	GPLv2
 BUILD_DEPENDS= wget:ftp/wget
 RUN_DEPENDS=   wget:ftp/wget
 LIB_DEPENDS+=  libassuan.so:security/libassuan
-CONFLICTS_BUILD=	fwknop-2.6.8_*
+
+USES=		cpe libtool
+USE_LDCONFIG=	yes
+USE_RC_SUBR=	fwknopd
+
 CPE_VENDOR=	cipherdyne
+CONFLICTS_BUILD=	fwknop-2.6.8_*
+
+GNU_CONFIGURE=	yes
+
+INSTALL_TARGET=	install-strip
+INFO=		libfko
 
 OPTIONS_DEFINE=	GPGME
 
@@ -29,15 +38,6 @@ FW_DESC=	Firewall Backend
 IPFW_DESC=	Use the IPFW firewall
 PF_DESC=	Use the PF firewall.
 GPGME_DESC=	Build support for gpgme
-
-USES=		cpe libtool
-USE_LDCONFIG=	yes
-USE_RC_SUBR=	fwknopd
-
-GNU_CONFIGURE=	yes
-
-INSTALL_TARGET=	install-strip
-INFO=		libfko
 
 IPFW_CONFIGURE_WITH=	ipfw=/sbin/ipfw
 

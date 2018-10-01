@@ -1,10 +1,8 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/mail/geary/Makefile 479990 2018-09-18 08:14:23Z linimon $
-#   $MCom: ports/trunk/mail/geary/Makefile 20050 2014-11-10 09:22:41Z gusi $
+# $FreeBSD: head/mail/geary/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	geary
-PORTVERSION=	0.12.1
-PORTREVISION=	1
+PORTVERSION=	0.12.2
 CATEGORIES=	mail gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

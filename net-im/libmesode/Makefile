@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/libmesode/Makefile 433459 2017-02-05 21:30:33Z arved $
+# $FreeBSD: head/net-im/libmesode/Makefile 480648 2018-09-25 07:55:46Z arved $
 
 PORTNAME=	libmesode
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.2
 CATEGORIES=	net-im
 
 MAINTAINER=	arved@FreeBSD.org

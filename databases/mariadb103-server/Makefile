@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/databases/mariadb103-server/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/mariadb103-server/Makefile 480563 2018-09-24 09:49:21Z mat $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.3.8
@@ -158,7 +158,7 @@ ROCKSDB_USES=		python
 SNAPPY_CMAKE_OFF=	-DWITH_INNODB_SNAPPY=OFF -DWITH_ROCKSDB_snappy=OFF
 SNAPPY_CMAKE_ON=	-DWITH_INNODB_SNAPPY=ON  -DWITH_ROCKSDB_snappy=ON
 SNAPPY_LIB_DEPENDS=	libsnappy.so:archivers/snappy
-TOKUDB_IMPLIES=		SNAPPY DOCS
+TOKUDB_IMPLIES=		SNAPPY
 TOKUDB_PORTDOCS=	README.md
 TOKUDB_VARS=		LICENSE+=PerconaFT LICENSE_COMB=multi
 WSREP_CMAKE_OFF=	-DWITH_WSREP=OFF

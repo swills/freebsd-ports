@@ -1,8 +1,8 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/deskutils/notification-daemon/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/notification-daemon/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	notification-daemon
-PORTVERSION=	3.18.1
+PORTVERSION=	3.20.0
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 
@@ -18,12 +18,11 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 PORTSCOUT=	limitw:1,even
 
 USE_GNOME=	gnomeprefix gtk30
-USES=		gettext gmake gnome pathfix pkgconfig tar:xz
+USES=		gettext gmake gnome localbase pathfix \
+		pkgconfig tar:xz
 USE_XORG=	x11
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 .include <bsd.port.mk>

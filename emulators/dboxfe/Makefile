@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/dboxfe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/emulators/dboxfe/Makefile 480947 2018-09-30 09:38:30Z amdmi3 $
 
 PORTNAME=	dboxfe
 PORTVERSION=	0.1.3
@@ -14,8 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.GPL
 
 RUN_DEPENDS=	dosbox:emulators/dosbox
 
-USE_QT=		corelib gui network xml uic_build moc_build qmake_build rcc_build
 USES=		qmake qt:4 tar:bzip2
+USE_QT=		corelib gui network xml uic_build moc_build qmake_build rcc_build
 
 PLIST_FILES=	bin/dboxfe \
 		bin/dboxfetray \

@@ -1,8 +1,8 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/sysutils/py-tmuxp/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/py-tmuxp/Makefile 480977 2018-09-30 19:42:10Z sunpoet $
 
 PORTNAME=	tmuxp
-DISTVERSION=	1.4.0
+DISTVERSION=	1.4.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,6 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=6.7:devel/py-click@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

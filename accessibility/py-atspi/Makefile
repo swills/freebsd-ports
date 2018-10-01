@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/accessibility/py-atspi/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/accessibility/py-atspi/Makefile 480999 2018-10-01 06:10:39Z antoine $
 
 PORTNAME=	atspi
-PORTVERSION=	2.24.0
+PORTVERSION=	2.26.0
 CATEGORIES=	accessibility x11-toolkits python
 MASTER_SITES=	GNOME/sources/pyatspi/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,11 +20,8 @@ CONFLICTS=	at-spi-1.[0-9]*
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake gnome localbase pathfix pkgconfig python tar:xz
-USE_PYTHON=	flavors
+USE_PYTHON=	flavors py3kplist
 USE_GNOME=	intlhack pygobject3
-py34_PLIST=	${.CURDIR}/pkg-plist-py3
-py35_PLIST=	${.CURDIR}/pkg-plist-py3
-py36_PLIST=	${.CURDIR}/pkg-plist-py3
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

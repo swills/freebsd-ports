@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/google-perftools/Makefile 474777 2018-07-17 06:38:09Z yuri $
+# $FreeBSD: head/devel/google-perftools/Makefile 480734 2018-09-26 13:04:20Z linimon $
 
 PORTNAME=	google-perftools
 DISTVERSIONPREFIX=	gperftools-
@@ -14,9 +14,9 @@ COMMENT=	Fast, multi-threaded malloc() and nifty performance analysis tools
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc=		fails to build: assembly not supported, see PR#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
-BROKEN_powerpc64=	fails to build: assembly not supported, see PR#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
-BROKEN_sparc64=		fails to build: assembly not supported, see PR#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
+BROKEN_powerpc=		fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
+BROKEN_powerpc64=	fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
+BROKEN_sparc64=		fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
 
 LIB_DEPENDS=	libunwind.so:devel/libunwind
 

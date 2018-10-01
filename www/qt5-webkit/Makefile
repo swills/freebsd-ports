@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/qt5-webkit/Makefile 479286 2018-09-09 11:12:14Z tcberner $
+# $FreeBSD: head/www/qt5-webkit/Makefile 480692 2018-09-25 20:12:03Z tcberner $
 
 PORTNAME=		webkit
 DISTVERSION=		5.212.0-alpha2
-PORTREVISION=		11
+PORTREVISION=		12
 CATEGORIES=		www
 MASTER_SITES=		https://github.com/annulen/${PORTNAME}/releases/download/${DISTNAME}/
 PKGNAMEPREFIX=		qt5-

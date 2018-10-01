@@ -1,9 +1,9 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/pijul/Makefile 472396 2018-06-14 20:17:42Z cs $
+# $FreeBSD: head/devel/pijul/Makefile 480871 2018-09-28 17:59:24Z jbeich $
 
 PORTNAME=	pijul
 PORTVERSION=	0.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://pijul.org/releases/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}

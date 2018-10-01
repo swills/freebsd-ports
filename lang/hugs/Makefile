@@ -1,5 +1,5 @@
 # Created by: Torsten Teg Grust (Torsten.Grust@uni-konstanz.de)
-# $FreeBSD: head/lang/hugs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/hugs/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	hugs98
 PORTVERSION=	200609
@@ -11,11 +11,10 @@ DISTNAME=	${PORTNAME}-plus-${HUGS_DATE}
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Interpreter for the functional programming language Haskell 98
 
-BUILD_DEPENDS=	bash:shells/bash
-
 BROKEN_armv6=		fails to compile: cppinput.c: invalid preprocessing directive \#!
 BROKEN_armv7=		fails to compile: cppinput.c: invalid preprocessing directive \#!
-BROKEN_powerpc64=	fails to compile: cppinput.c: detected recursion whilst expanding macro "vector"
+
+BUILD_DEPENDS=	bash:shells/bash
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 

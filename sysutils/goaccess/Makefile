@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/sysutils/goaccess/Makefile 437169 2017-03-28 21:43:35Z sbz $
+# $FreeBSD: head/sysutils/goaccess/Makefile 480854 2018-09-28 12:00:33Z adamw $
 
 PORTNAME=	goaccess
 PORTVERSION=	1.2
@@ -23,16 +23,23 @@ LDFLAGS+=	-L${NCURSESLIB} -L${LOCALBASE}/lib
 
 PORTDOCS=	AUTHORS COPYING ChangeLog NEWS README TODO
 
-OPTIONS_DEFINE=	DOCS DEBUG GEOIP UTF8
+OPTIONS_DEFINE=	DOCS DEBUG UTF8
 OPTIONS_DEFAULT=	GEOIP UTF8
-OPTIONS_RADIO=	TOKYOCABINET
+OPTIONS_RADIO=	GEOIPDB TOKYOCABINET
+OPTIONS_RADIO_GEOIPDB=	GEOIP GEOIP2
 OPTIONS_RADIO_TOKYOCABINET=	TOKYOCABINET_BTREE TOKYOCABINET_MHASH
+
+GEOIPDB_DESC=	GeoIP IP location support
+GEOIP_DESC=	Legacy/free database format
+GEOIP2_DESC=	New/paid database format
 
 DEBUG_CONFIGURE_ON=	--enable-debug
 UTF8_CONFIGURE_ON=	--enable-utf8
 
 GEOIP_CONFIGURE_ON=	--enable-geoip=legacy
 GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+GEOIP2_CONFIGURE_ON=	--enable-geoip=mmdb
+GEOIP2_LIB_DEPENDS=	libmaxminddb.so:net/libmaxminddb
 
 TOKYOCABINET_DESC=	Tokyo Cabinet support
 TOKYOCABINET_BTREE_DESC=	Storage using on-disk B+ Tree

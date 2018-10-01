@@ -1,5 +1,5 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/math/p5-Set-IntSpan/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/math/p5-Set-IntSpan/Makefile 480558 2018-09-24 09:08:28Z amdmi3 $
 
 PORTNAME=	Set-IntSpan
 PORTVERSION=	1.19
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Manages sets of integers
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

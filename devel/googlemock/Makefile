@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/googlemock/Makefile 478607 2018-08-31 20:14:40Z jbeich $
+# $FreeBSD: head/devel/googlemock/Makefile 480991 2018-10-01 00:36:37Z jbeich $
 
 PORTNAME=	googlemock
 DISTVERSIONPREFIX=	release-
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	google
 GH_PROJECT=	googletest
 
-USES=		autoreconf libtool localbase python:run shebangfix
+USES=		autoreconf compiler:c++11-lang libtool localbase python:run shebangfix
 SHEBANG_FILES=	scripts/gmock_doctor.py
 WRKSRC_SUBDIR=	${PORTNAME}
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/sysutils/hoz/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/sysutils/hoz/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	hoz
 PORTVERSION=	1.65
@@ -41,15 +41,15 @@ PLIST_FILES+=	bin/ghoz
 .endif
 
 .if ${PORT_OPTIONS:MLANG_ES}
-MAKE_ENV+=	LANG="-DHOZ_LANG_ES"
+MAKE_ENV+=	HOZ_LANG="-DHOZ_LANG_ES"
 .endif
 
 .if ${PORT_OPTIONS:MLANG_EN}
-MAKE_ENV+=	LANG="-DHOZ_LANG_EN"
+MAKE_ENV+=	HOZ_LANG="-DHOZ_LANG_EN"
 .endif
 
 .if ${PORT_OPTIONS:MLANG_FR}
-MAKE_ENV+=	LANG="-DHOZ_LANG_FR"
+MAKE_ENV+=	HOZ_LANG="-DHOZ_LANG_FR"
 .endif
 
 do-install:

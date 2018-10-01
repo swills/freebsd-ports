@@ -1,8 +1,9 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/x11-wm/marco/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/x11-wm/marco/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	marco
 PORTVERSION=	1.20.1
+PORTREVISION=	1
 CATEGORIES=	x11-wm mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

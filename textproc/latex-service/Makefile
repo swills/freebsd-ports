@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/latex-service/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/textproc/latex-service/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	latex
 PORTVERSION=	0.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	textproc gnustep
 MASTER_SITES=	http://www.roard.com/latexservice/download/
 PKGNAMESUFFIX=	-service${PKGNAMESUFFIX2}

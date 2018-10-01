@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/cppcms/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/www/cppcms/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	cppcms
 PORTVERSION=	1.2.1
@@ -10,8 +10,6 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ web development framework
 
 LICENSE=	MIT
-
-BROKEN_powerpc64=	Does not build: error: 'localeconv_l' was not declared in this scope
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 

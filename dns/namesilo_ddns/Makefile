@@ -1,8 +1,7 @@
-# $FreeBSD: head/dns/namesilo_ddns/Makefile 479536 2018-09-11 17:55:08Z crees $
+# $FreeBSD: head/dns/namesilo_ddns/Makefile 480765 2018-09-26 19:51:48Z crees $
 
 PORTNAME=	namesilo_ddns
-PORTVERSION=	2.1
-PORTREVISION=	1
+PORTVERSION=	2.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	dns net
 

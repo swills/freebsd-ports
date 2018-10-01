@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/kopete-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/net-im/kopete-kde4/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	kopete
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net-im kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

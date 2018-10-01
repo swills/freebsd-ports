@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/textproc/gtkspell3/Makefile 465574 2018-03-26 10:01:16Z bapt $
+# $FreeBSD: head/textproc/gtkspell3/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gtkspell3
-PORTVERSION=	3.0.8
+PORTVERSION=	3.0.9
 CATEGORIES=	textproc gnome
 MASTER_SITES=	SF/gtkspell/${PORTVERSION}
 
@@ -12,8 +12,8 @@ COMMENT=	GTK+ 3 spell checking component
 BUILD_DEPENDS=	vapigen:lang/vala
 LIB_DEPENDS=	libenchant.so:textproc/enchant
 
-USE_GNOME=	gtk30 intlhack introspection:build
-USES=		gettext gmake localbase libtool pathfix pkgconfig
+USE_GNOME=	cairo gdkpixbuf2 gtk30 intlhack introspection:build
+USES=		gettext gmake localbase libtool pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

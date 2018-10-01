@@ -1,10 +1,10 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-mptt/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-mptt/Makefile 480959 2018-09-30 14:43:23Z miwi $
 
 PORTNAME=	django-mptt
-PORTVERSION=	0.9.0
-PORTREVISION=	3
+PORTVERSION=	0.9.1
 CATEGORIES=	www python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	cs@FreeBSD.org
@@ -13,12 +13,10 @@ COMMENT=	Utilities for implementing Modified Preorder Tree Traversal in Django
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django111@${PY_FLAVOR}\
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}django-js-asset>0:www/py-django-js-asset@${PY_FLAVOR}
 
 CONFLICTS_INSTALL=py*-django-happenings
-
-USE_GITHUB=	yes
 
 USES=		gettext python
 USE_PYTHON=	autoplist distutils

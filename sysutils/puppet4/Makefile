@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/puppet4/Makefile 474934 2018-07-19 08:17:03Z romain $
+# $FreeBSD: head/sysutils/puppet4/Makefile 480786 2018-09-27 07:44:48Z romain $
 
 PORTNAME=	puppet
 PORTVERSION=	4.10.12
@@ -20,7 +20,7 @@ RUN_DEPENDS=	rubygem-hiera>=2.0:sysutils/rubygem-hiera \
 
 USES=		cpe
 CPE_VENDOR=	puppetlabs
-CONFLICTS_INSTALL=	puppet5-*
+CONFLICTS_INSTALL=	puppet5-* puppet6-*
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_RUBY=	yes

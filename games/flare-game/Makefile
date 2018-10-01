@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/flare-game/Makefile 479035 2018-09-05 18:14:00Z amdmi3 $
+# $FreeBSD: head/games/flare-game/Makefile 480565 2018-09-24 10:57:55Z amdmi3 $
 
 PORTNAME=	flare
-PORTVERSION=	1.07
+PORTVERSION=	1.08
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 PKGNAMESUFFIX=	-game
@@ -27,7 +27,7 @@ CMAKE_ARGS=	-DBINDIR="bin" -DDATADIR="share/flare"
 
 PORTDOCS=	*
 PORTDATA=	*
-PLIST_FILES=	share/appdata/org.flarerpg.Flare.appdata.xml
+PLIST_FILES=	share/metainfo/org.flarerpg.Flare.appdata.xml
 
 OPTIONS_DEFINE=	DOCS
 

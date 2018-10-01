@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net/openpgm/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/net/openpgm/Makefile 480652 2018-09-25 08:38:15Z arved $
 
 PORTNAME=	openpgm
 DISTVERSIONPREFIX=	release-
@@ -13,13 +13,11 @@ COMMENT=	Implementation of the PGM reliable multicast protocol
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	fails to compile: socket.c: internal compiler error: in extract_insn, at recog.c
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	steve-o
 
 GNU_CONFIGURE=	yes
-USES=		autoreconf pathfix perl5 libtool python:build
+USES=		autoreconf compiler:c11 pathfix perl5 libtool python:build
 USE_PERL5=	build
 USE_LDCONFIG=	yes
 WRKSRC_SUBDIR=	openpgm/pgm

@@ -1,9 +1,9 @@
 # Created by: Jyun-Yan You <jyyou@cs.nctu.edu.tw>
-# $FreeBSD: head/lang/rust/Makefile 480255 2018-09-21 11:24:21Z jbeich $
+# $FreeBSD: head/lang/rust/Makefile 480986 2018-09-30 22:28:27Z dumbbell $
 
 PORTNAME=	rust
-PORTVERSION?=	1.29.0
-PORTREVISION?=	1
+PORTVERSION?=	1.29.1
+PORTREVISION?=	0
 CATEGORIES=	lang
 MASTER_SITES=	http://static.rust-lang.org/dist/:src \
 		LOCAL/dumbbell/rust:rust_bootstrap \
@@ -162,8 +162,7 @@ post-patch:
 # `.cargo-checksum.json` to reflect the new checksums verified by Cargo.
 	@for dir in "${WRKSRC}/src/vendor/libc" \
 	"${WRKSRC}/src/vendor/libgit2-sys" \
-	"${WRKSRC}/src/vendor/openssl" \
-	"${WRKSRC}/src/vendor/openssl-sys"; do \
+	"${WRKSRC}/src/vendor/openssl"; do \
 		if ! test -d "$$dir"; then \
 			continue; \
 		fi; \

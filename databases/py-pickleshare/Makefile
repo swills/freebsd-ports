@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/py-pickleshare/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-pickleshare/Makefile 480771 2018-09-27 03:12:28Z yuri $
 
 PORTNAME=	pickleshare
-PORTVERSION=	0.7.4
+PORTVERSION=	0.7.5
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/lang/rust-nightly/Makefile 466378 2018-04-03 20:48:47Z bdrewery $
+# $FreeBSD: head/lang/rust-nightly/Makefile 480524 2018-09-23 18:53:49Z jbeich $
 
 PORTVERSION=	1.25.0.${NIGHTLY_DATE:C,-,,g}
 PKGNAMESUFFIX=	-nightly
@@ -23,5 +23,7 @@ RUST_BOOTSTRAP_VERSION=		beta
 CARGO_BOOTSTRAP_VERSION=	beta
 
 ONLY_FOR_ARCHS=			amd64 i386
+IGNORE=				is older than stable version. Get nightly via rustup or \
+				use lang/rust and pass RUSTC_BOOTSTRAP=1 via environ(7)
 
 .include "${MASTERDIR}/Makefile"

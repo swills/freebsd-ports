@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/benchmarks/bombardier/Makefile 474111 2018-07-07 17:17:52Z danilo $
+# $FreeBSD: head/benchmarks/bombardier/Makefile 480819 2018-09-27 21:06:28Z danilo $
 
 PORTNAME=	bombardier
 PORTVERSION=	1.2
@@ -16,19 +16,9 @@ USES=		go
 USE_GITHUB=	yes
 GH_ACCOUNT=	codesenberg
 
+GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
+GO_BUILDFLAGS=	-ldflags "-X main.version=${PORTVERSION}"
+
 PLIST_FILES=	bin/${PORTNAME}
-
-post-patch:
-	${MKDIR} ${WRKDIR}/src/github.com/${GH_ACCOUNT}
-	${LN} -s ${WRKSRC} ${WRKDIR}/src/github.com/${GH_ACCOUNT}/${PORTNAME}
-
-do-build:
-	cd ${WRKDIR}/src/github.com/${GH_ACCOUNT}/${PORTNAME} && \
-		GOPATH=${WRKDIR} go build -ldflags "-X main.version=${PORTVERSION}" .
-
-do-install:
-	${INSTALL_PROGRAM} \
-		${WRKDIR}/src/github.com/${GH_ACCOUNT}/${PORTNAME}/${PORTNAME} \
-		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

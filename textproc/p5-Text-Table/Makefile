@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/textproc/p5-Text-Table/Makefile 447419 2017-08-05 23:11:03Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Table/Makefile 480570 2018-09-24 11:11:54Z sunpoet $
 
 PORTNAME=	Text-Table
 PORTVERSION=	1.133
@@ -7,17 +7,18 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Organize Data in Tables
 
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Text-Aligner>=0:textproc/p5-Text-Aligner
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Aligner>=0:textproc/p5-Text-Aligner
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

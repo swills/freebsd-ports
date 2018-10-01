@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/facter/Makefile 480250 2018-09-21 10:41:36Z romain $
+# $FreeBSD: head/sysutils/facter/Makefile 480784 2018-09-27 06:47:03Z romain $
 
 PORTNAME=	facter
 PORTVERSION=	3.12.0
+PORTREVISION=	1
 CATEGORIES?=	sysutils
 MASTER_SITES=	https://downloads.puppetlabs.com/facter/
 
@@ -45,6 +46,10 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \
 		${WRKSRC}/lib/src/facts/posix/collection.cc \
 		${WRKSRC}/lib/src/util/config/posix/config.cc
+
+post-install:
+	${MKDIR} ${STAGEDIR}${PREFIX}/lib/ruby/gems/${RUBY_VER}/specifications
+	${INSTALL_DATA} ${WRKSRC}/.gemspec ${STAGEDIR}${PREFIX}/lib/ruby/gems/${RUBY_VER}/specifications/${DISTNAME}.gemspec
 
 test: build
 	cd ${WRKSRC}/lib && bundle install --path vendor

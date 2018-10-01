@@ -1,8 +1,8 @@
 # Created by: Frank Steinborn <steinex@nognu.de>
-# $FreeBSD: head/devel/libgee/Makefile 442378 2017-06-02 11:55:08Z kwm $
+# $FreeBSD: head/devel/libgee/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	libgee
-PORTVERSION=	0.18.1
+PORTVERSION=	0.20.1
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
 

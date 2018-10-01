@@ -1,8 +1,8 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/iagno/Makefile 441065 2017-05-17 08:44:31Z kwm $
+# $FreeBSD: head/games/iagno/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	iagno
-PORTVERSION=	3.22.0
+PORTVERSION=	3.28.0
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

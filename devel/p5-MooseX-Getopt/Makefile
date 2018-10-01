@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Getopt/Makefile 478674 2018-09-01 12:16:03Z wen $
+# $FreeBSD: head/devel/p5-MooseX-Getopt/Makefile 480541 2018-09-24 00:36:07Z wen $
 
 PORTNAME=	MooseX-Getopt
-PORTVERSION=	0.73
+PORTVERSION=	0.74
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN/MooseX CPAN
 MASTER_SITE_SUBDIR=	CPAN:ETHER

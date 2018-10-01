@@ -1,9 +1,9 @@
 # Created by: Andrew Thompson <thompsa@FreeBSD.org>
-# $FreeBSD: head/multimedia/pwcview/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/pwcview/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	pwcview
 PORTVERSION=	1.4.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://raaf.atspace.org/ \
 		http://www.selasky.org/hans_petter/video4bsd/releases/ \

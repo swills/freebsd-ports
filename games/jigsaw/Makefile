@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/jigsaw/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/games/jigsaw/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	jigsaw
 PORTVERSION=	0.8
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	Jigsaw-${PORTVERSION}

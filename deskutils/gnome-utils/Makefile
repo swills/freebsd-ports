@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/deskutils/gnome-utils/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/gnome-utils/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-utils
-PORTVERSION=	3.18.0
+PORTVERSION=	3.26
 PORTEPOCH=	1
 CATEGORIES=	deskutils gnome
 
@@ -20,6 +20,7 @@ RUN_DEPENDS=	baobab>=3.0:deskutils/baobab \
 		gnome-system-log>=3.0:deskutils/gnome-system-log \
 		gnome-font-viewer>=3.0:deskutils/gnome-font-viewer \
 		gnome-system-monitor>=3.0:sysutils/gnome-system-monitor \
+		gnome-calendar>=3.0:deskutils/gnome-calendar \
 		gnome-photos>=3.0:deskutils/gnome-photos \
 		gnome-clocks>=3.0:deskutils/gnome-clocks \
 		gnome-maps>=3.0:deskutils/gnome-maps \

@@ -1,9 +1,9 @@
 # Created by: Oliver Heesakkers <dev2@heesakkers.info>
-# $FreeBSD: head/graphics/zbar/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/zbar/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	zbar
 PORTVERSION=	0.10
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

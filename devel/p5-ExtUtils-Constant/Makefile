@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-ExtUtils-Constant/Makefile 467976 2018-04-22 08:54:47Z sunpoet $
+# $FreeBSD: head/devel/p5-ExtUtils-Constant/Makefile 480680 2018-09-25 16:09:23Z sunpoet $
 
 PORTNAME=	ExtUtils-Constant
 PORTVERSION=	0.25
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate XS code to import C header constants
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 NO_ARCH=	yes
 USES=		perl5

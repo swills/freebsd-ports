@@ -1,8 +1,8 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/graphics/libgxps/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/libgxps/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	libgxps
-PORTVERSION=	0.2.5
+PORTVERSION=	0.3.0
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -15,11 +15,11 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libpng.so:graphics/png \
 		liblcms2.so:graphics/lcms2
 
-USES=		gettext gmake jpeg libtool libarchive localbase pathfix pkgconfig tar:xz
+USES=		gettext jpeg libarchive localbase meson pkgconfig tar:xz
 USE_LDCONFIG=	yes
-USE_GNOME=	cairo glib20 gnomeprefix introspection:build
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
+USE_GNOME=	cairo glib20 introspection:build
+
+MESON_ARGS=	-Denable-test=false
 
 OPTIONS_DEFINE=	DOCS
 

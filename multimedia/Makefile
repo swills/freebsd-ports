@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 478871 2018-09-03 13:17:06Z swills $
+# $FreeBSD: head/multimedia/Makefile 480897 2018-09-29 07:31:08Z riggs $
 #
 
     COMMENT = Multimedia software
@@ -454,6 +454,7 @@
     SUBDIR += vid.stab
     SUBDIR += vlc
     SUBDIR += vlc-qt4
+    SUBDIR += vlc3
     SUBDIR += vtkmpeg2encode
     SUBDIR += w_scan
     SUBDIR += webcamd

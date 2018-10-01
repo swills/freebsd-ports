@@ -1,9 +1,8 @@
 # Created by: Matthieu Guegan <matt.guegan@free.fr>
-# $FreeBSD: head/x11-wm/hs-xmonad/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/x11-wm/hs-xmonad/Makefile 480801 2018-09-27 15:43:12Z arrowd $
 
 PORTNAME=	xmonad
-PORTVERSION=	0.13
-PORTREVISION=	4
+PORTVERSION=	0.14
 CATEGORIES=	x11-wm haskell
 
 MAINTAINER=	haskell@FreeBSD.org

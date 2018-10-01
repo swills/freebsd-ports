@@ -1,9 +1,9 @@
 # Created by: Chris D. Faulhaber <jedgar@fxp.org>
-# $FreeBSD: head/sysutils/wmfire/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/sysutils/wmfire/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	wmfire
 PORTVERSION=	1.2.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.swanson.ukfsn.org/wmfire/
 

@@ -1,9 +1,9 @@
 # Created by: Roger Hardiman <roger@freebsd.org>
-# $FreeBSD: head/devel/ptlib/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/ptlib/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	ptlib
 PORTVERSION=	2.10.11
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
 

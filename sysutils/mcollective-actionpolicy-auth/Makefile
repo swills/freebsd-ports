@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/mcollective-actionpolicy-auth/Makefile 446262 2017-07-20 15:30:52Z romain $
+# $FreeBSD: head/sysutils/mcollective-actionpolicy-auth/Makefile 480796 2018-09-27 09:29:44Z romain $
 
 PORTNAME=	mcollective-actionpolicy-auth
 PORTVERSION=	2.2.0
@@ -8,6 +8,8 @@ MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	MCollective Authorization plugin allowing fine grained ACLs
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Agents are better distributed through the Puppet forge
 
 RUN_DEPENDS=	mcollective>=2:sysutils/mcollective
 

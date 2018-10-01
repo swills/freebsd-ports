@@ -1,8 +1,8 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-shell-extension-weather/Makefile 429612 2016-12-27 12:20:41Z amdmi3 $
+# $FreeBSD: head/deskutils/gnome-shell-extension-weather/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-shell-extension-weather
-PORTVERSION=	0.0.0.20151011
+PORTVERSION=	0.0.0.20180411
 CATEGORIES=	deskutils gnome
 DIST_SUBDIR=	gnome3
 
@@ -16,11 +16,9 @@ USE_GNOME=	glib20 intlhack
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 GH_ACCOUNT=	Neroth
-GH_TAGNAME=	5c44f2f
+GH_TAGNAME=	ea2d56a
 
 PKGMESSAGE=	../gnome-shell-extra-extensions/pkg-message.slaves
 

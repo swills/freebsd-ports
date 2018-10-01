@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/deskutils/nautilus-actions/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/nautilus-actions/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	nautilus-actions
 PORTVERSION=	3.2.4
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	GNOME
 

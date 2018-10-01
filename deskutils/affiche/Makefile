@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/affiche/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/deskutils/affiche/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	affiche
 PORTVERSION=	0.6.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	http://www.collaboration-world.com/affiche.data/releases/Stable/
 DISTNAME=	Affiche-${PORTVERSION}

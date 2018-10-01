@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/pcbsd-utils-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/pcbsd-utils-qt5/Makefile 480627 2018-09-24 20:34:19Z kmoore $
 
 PORTNAME=	pcbsd-utils-qt5
 PORTVERSION=	1444236547
@@ -10,6 +10,8 @@ MAINTAINER=	kmoore@FreeBSD.org
 COMMENT=	PC-BSD Qt5 Utilities
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_FreeBSD_12=	fails to compile: netif.cpp: error: use of undeclared identifier 'IFM_FDDI'
 
 BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx \
 		${PYTHON_PKGNAMEPREFIX}sphinx-intl>=0:textproc/py-sphinx-intl@${PY_FLAVOR} \

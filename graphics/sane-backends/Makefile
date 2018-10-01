@@ -1,9 +1,9 @@
 # Created by: gary@hotlava.com
-# $FreeBSD: head/graphics/sane-backends/Makefile 472451 2018-06-15 14:08:44Z tobik $
+# $FreeBSD: head/graphics/sane-backends/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	sane-backends
 PORTVERSION=	1.0.27
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	https://alioth.debian.org/frs/download.php/file/4146/ \
 		http://fossies.org/linux/misc/

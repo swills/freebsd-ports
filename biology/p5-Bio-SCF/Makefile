@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/p5-Bio-SCF/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/biology/p5-Bio-SCF/Makefile 480878 2018-09-28 18:47:49Z danilo $
 
 PORTNAME=	Bio-SCF
 PORTVERSION=	1.03
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

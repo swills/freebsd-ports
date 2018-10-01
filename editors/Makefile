@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 477048 2018-08-13 02:11:47Z zi $
+# $FreeBSD: head/editors/Makefile 480949 2018-09-30 10:39:44Z rene $
 #
 
     COMMENT = Editors
@@ -261,7 +261,6 @@
     SUBDIR += xmlcopyeditor
     SUBDIR += xvile
     SUBDIR += yudit
-    SUBDIR += yui
     SUBDIR += yzis
     SUBDIR += zile
     SUBDIR += zoinks

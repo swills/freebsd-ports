@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 480091 2018-09-19 08:29:23Z ehaupt $
+# $FreeBSD: head/print/Makefile 480950 2018-09-30 11:08:43Z rene $
 #
 
     COMMENT = Desktop publishing
@@ -12,7 +12,6 @@
     SUBDIR += afm
     SUBDIR += alignmargins
     SUBDIR += ansiprint
-    SUBDIR += apsfilter
     SUBDIR += asprint
     SUBDIR += auctex
     SUBDIR += bibcursed
@@ -89,7 +88,6 @@
     SUBDIR += harfbuzz
     SUBDIR += harfbuzz-icu
     SUBDIR += hp2xx
-    SUBDIR += hpijs
     SUBDIR += hplip
     SUBDIR += hplip-plugin
     SUBDIR += hs-hscolour

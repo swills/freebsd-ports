@@ -1,14 +1,17 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/accessibility/orca/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/accessibility/orca/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	orca
-PORTVERSION=	3.18.2
+PORTVERSION=	3.28.2
 CATEGORIES=	accessibility gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Scriptable screen reader
+
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	py3?-dbus>=0:devel/py-dbus@${PY_FLAVOR} \
 		py3?-xdg>=0:devel/py-xdg@${PY_FLAVOR} \
@@ -27,12 +30,11 @@ CONFLICTS=	py*-json-py-[0-9]*
 PORTSCOUT=	limitw:1,even
 
 NO_ARCH=	yes
-USES=		gettext gmake gnome pathfix pkgconfig python:3.4+ tar:xz
+USES=		gettext gmake gnome localbase pathfix pkgconfig \
+		python:3.4+ tar:xz
 USE_GNOME=	gtk30 pygobject3 intlhack
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \

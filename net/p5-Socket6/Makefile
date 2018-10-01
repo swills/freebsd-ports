@@ -1,8 +1,8 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/net/p5-Socket6/Makefile 418380 2016-07-11 11:37:06Z ume $
+# $FreeBSD: head/net/p5-Socket6/Makefile 480942 2018-09-30 08:46:27Z ume $
 
 PORTNAME=	Socket6
-PORTVERSION=	0.28
+PORTVERSION=	0.29
 #PORTREVISION=	0
 CATEGORIES=	net perl5 ipv6
 MASTER_SITES=	CPAN

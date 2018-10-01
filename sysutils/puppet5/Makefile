@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/puppet5/Makefile 477942 2018-08-24 07:39:42Z romain $
+# $FreeBSD: head/sysutils/puppet5/Makefile 480786 2018-09-27 07:44:48Z romain $
 
 PORTNAME=	puppet
 PORTVERSION=	5.5.6
@@ -24,7 +24,7 @@ RUN_DEPENDS=	rubygem-gettext-setup>=0:devel/rubygem-gettext-setup \
 
 USES=		cpe
 CPE_VENDOR=	puppetlabs
-CONFLICTS_INSTALL=	puppet4-*
+CONFLICTS_INSTALL=	puppet4-* puppet6-*
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_RUBY=	yes

@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/mate-system-monitor/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/mate-system-monitor/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	mate-system-monitor
 PORTVERSION=	1.20.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

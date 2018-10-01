@@ -1,9 +1,9 @@
 # Created by: Yonatan <Yonatan@Xpert.com>
-# $FreeBSD: head/security/libtomcrypt/Makefile 473692 2018-07-02 00:47:14Z linimon $
+# $FreeBSD: head/security/libtomcrypt/Makefile 480862 2018-09-28 14:48:17Z gahr $
 
 PORTNAME=	libtomcrypt
-PORTVERSION=	1.18.1
-PORTREVISION=	1
+PORTVERSION=	1.18.2
+PORTREVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/libtom/${PORTNAME}/releases/download/v${PORTVERSION}/
 DISTNAME=	crypt-${PORTVERSION}
@@ -14,9 +14,7 @@ COMMENT=	Comprehensive, modular, and portable cryptographic toolkit
 LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_mips=		fails to compile: unrecognized command line option "-Wno-type-limits"
-BROKEN_mips64=		fails to compile: unrecognized command line option "-Wno-type-limits"
-BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-type-limits"
+USES=		gmake libtool:build tar:xz
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
@@ -26,7 +24,6 @@ MAKEFILE=	makefile.shared
 ALL_TARGET=	library
 MAKE_ARGS=	INCPATH="${PREFIX}/include" LIBPATH="${PREFIX}/lib" \
 		EXTRALIBS="${EXTRALIBS}"
-USES=		gmake libtool:build tar:xz
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=		DOCS

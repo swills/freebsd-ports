@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/triqs/Makefile 480424 2018-09-22 17:40:41Z yuri $
+# $FreeBSD: head/science/triqs/Makefile 480780 2018-09-27 05:26:32Z antoine $
 
 PORTNAME=	triqs
 DISTVERSION=	2.0
@@ -11,6 +11,7 @@ COMMENT=	Toolbox for Research on Interacting Quantum Systems
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
+BROKEN=		wrong LIB_DEPENDS
 BROKEN_FreeBSD_10=	fatal error: 'optional' file not found
 BROKEN_i386=		error: no matching function for call to 'max': https://github.com/TRIQS/triqs/issues/596
 

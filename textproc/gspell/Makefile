@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/gspell/Makefile 440703 2017-05-12 19:12:27Z kwm $
+# $FreeBSD: head/textproc/gspell/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gspell
-PORTVERSION=	1.4.1
+PORTVERSION=	1.8.1
 CATEGORIES=	textproc
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -10,11 +10,15 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Spell checking for GTK+
 
-LICENSE=	GPLv2
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	valac:lang/vala \
 		iso-codes>=3.57:misc/iso-codes
-LIB_DEPENDS=	libenchant.so:textproc/enchant
+LIB_DEPENDS=	libenchant-2.so:textproc/enchant2 \
+		libfribidi.so:converters/fribidi
+
+PORTSCOUT=	limitw:even
 
 USES=		gmake iconv libtool pathfix pkgconfig tar:xz
 USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk30 introspection:build \

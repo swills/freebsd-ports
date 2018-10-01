@@ -1,10 +1,9 @@
-# $FreeBSD: head/www/seahub/Makefile 479973 2018-09-18 05:24:16Z ultima $
+# $FreeBSD: head/www/seahub/Makefile 480528 2018-09-23 19:41:17Z ultima $
 
 PORTNAME=	seahub
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAHUB_VER}
 DISTVERSIONSUFFIX=	-pro
-PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	ultima@FreeBSD.org

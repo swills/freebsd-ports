@@ -1,8 +1,8 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/hitori/Makefile 441065 2017-05-17 08:44:31Z kwm $
+# $FreeBSD: head/games/hitori/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	hitori
-PORTVERSION=	3.22.3
+PORTVERSION=	3.22.4
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

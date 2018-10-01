@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/graphics/camera/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
+# $FreeBSD: head/graphics/camera/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	camera
 PORTVERSION=	0.8
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://download.gna.org/gsimageapps/
 DISTNAME=	Camera-${PORTVERSION}

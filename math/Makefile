@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 480238 2018-09-21 08:25:54Z yuri $
+# $FreeBSD: head/math/Makefile 480793 2018-09-27 09:00:13Z rene $
 #
 
     COMMENT = Mathematics
@@ -46,6 +46,7 @@
     SUBDIR += R-cran-dlmodeler
     SUBDIR += R-cran-dplyr
     SUBDIR += R-cran-expm
+    SUBDIR += R-cran-forcats
     SUBDIR += R-cran-forecast
     SUBDIR += R-cran-fracdiff
     SUBDIR += R-cran-geepack
@@ -355,7 +356,6 @@
     SUBDIR += mppp
     SUBDIR += mprime
     SUBDIR += msieve
-    SUBDIR += mtl
     SUBDIR += mtrxmath
     SUBDIR += multichoose
     SUBDIR += mumps
@@ -658,6 +658,7 @@
     SUBDIR += pspp
     SUBDIR += pure-mpfr
     SUBDIR += pure-rational
+    SUBDIR += py-CyLP
     SUBDIR += py-Diofant
     SUBDIR += py-GridDataFormats
     SUBDIR += py-PuLP

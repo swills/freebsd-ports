@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 480342 2018-09-22 06:02:44Z tcberner $
+# $FreeBSD: head/x11-themes/Makefile 480951 2018-09-30 11:58:29Z kwm $
 #
 
     COMMENT = X11 themes
@@ -59,8 +59,8 @@
     SUBDIR += gnome-icons-stylish
     SUBDIR += gnome-icons-ximian-south
     SUBDIR += gnome-themes
+    SUBDIR += gnome-themes-extra
     SUBDIR += gnome-themes-extras
-    SUBDIR += gnome-themes-standard
     SUBDIR += greybird-theme
     SUBDIR += gtk-E17-theme
     SUBDIR += gtk-aluminumalloy-cryogenic-theme

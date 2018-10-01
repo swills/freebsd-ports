@@ -1,8 +1,8 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/devel/py-tinyarray/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-tinyarray/Makefile 480855 2018-09-28 12:05:49Z wen $
 
 PORTNAME=	tinyarray
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/multimedia/kaffeine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/kaffeine/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	kaffeine
 PORTVERSION=	1.3.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia kde
 MASTER_SITES=	SF/kaffeine/current
 

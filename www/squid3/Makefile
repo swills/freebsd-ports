@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/squid3/Makefile 480500 2018-09-23 12:33:29Z riggs $
+# $FreeBSD: head/www/squid3/Makefile 480908 2018-09-29 14:39:16Z riggs $
 
 PORTNAME=	squid
 PORTVERSION=	3.5.28
+PORTREVISION=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.squid-cache.org/Versions/v3/${PORTVERSION:R}/ \
 		http://www2.us.squid-cache.org/Versions/v3/${PORTVERSION:R}/ \

@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/devel/dia2code+/Makefile 476390 2018-08-05 05:35:36Z bofh $
+# $FreeBSD: head/devel/dia2code+/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	dia2code+
 PORTVERSION=	1.0.0
@@ -13,8 +13,6 @@ COMMENT=	Complete rewrite of dia2code in C++
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to compile: GenerateCodePhp.cpp: 'stoi' is not a member of 'std'
 
 USES=		autoreconf:build compiler:c++11-lib iconv
 USE_GNOME=	libxml2

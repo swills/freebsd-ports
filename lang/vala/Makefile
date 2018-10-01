@@ -1,9 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/lang/vala/Makefile 477444 2018-08-17 19:09:15Z truckman $
+# $FreeBSD: head/lang/vala/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	vala
-PORTVERSION=	0.36.15
-PORTREVISION=	1
+PORTVERSION=	0.40.7
 PORTEPOCH=	1
 CATEGORIES=	lang gnome
 MASTER_SITES=	GNOME
@@ -12,6 +11,9 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Programming language and compiler that converts Vala code into C code
 
 LICENSE=	LGPL21
+
+BUILD_DEPENDS=	graphviz>=0:graphics/graphviz
+RUN_DEPENDS=	graphviz>=0:graphics/graphviz
 
 PORTSCOUT=	limitw:1,even
 
@@ -24,6 +26,6 @@ INSTALL_TARGET=	install-strip
 
 VALA_VER=	${PORTVERSION:R}
 
-PLIST_SUB=	VERSION=0.36
+PLIST_SUB=	VERSION=0.40
 
 .include <bsd.port.mk>

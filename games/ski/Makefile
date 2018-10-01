@@ -1,8 +1,8 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/games/ski/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/games/ski/Makefile 480726 2018-09-26 09:54:07Z lme $
 
 PORTNAME=	ski
-PORTVERSION=	6.11
+PORTVERSION=	6.12
 CATEGORIES=	games python
 MASTER_SITES=	http://catb.org/~esr/ski/
 

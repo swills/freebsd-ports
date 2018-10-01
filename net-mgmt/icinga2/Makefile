@@ -1,9 +1,8 @@
-# $FreeBSD: head/net-mgmt/icinga2/Makefile 478429 2018-08-30 04:05:07Z danfe $
+# $FreeBSD: head/net-mgmt/icinga2/Makefile 480800 2018-09-27 13:20:31Z lme $
 
 PORTNAME=	icinga2
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.9.1
-PORTREVISION=	1
+DISTVERSION=	2.9.2
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	lme@FreeBSD.org

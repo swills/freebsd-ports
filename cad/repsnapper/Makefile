@@ -1,5 +1,5 @@
 # Created by: Martin Dieringer <martin.dieringe@gmx.de>
-# $FreeBSD: head/cad/repsnapper/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/repsnapper/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	repsnapper
 DISTVERSION=	2.5a4
@@ -11,8 +11,6 @@ COMMENT=	Controller and GCode generator for RepRap 3D printers
 
 LICENSE=	GPLv2 BSD3CLAUSE MIT
 LICENSE_COMB=	multi
-
-BROKEN_powerpc64=	fails to compile: clipper.hpp:52:10: 'vector' file not found
 
 LIB_DEPENDS=	libgtkglextmm-x11-1.2.so:x11-toolkits/gtkglextmm \
 		libpolyclipping.so:graphics/polyclipping \

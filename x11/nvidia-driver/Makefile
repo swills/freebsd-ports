@@ -1,5 +1,5 @@
 # Created by: Stijn Hoop <stijn@win.tue.nl>
-# $FreeBSD: head/x11/nvidia-driver/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11/nvidia-driver/Makefile 480954 2018-09-30 14:18:44Z danfe $
 #
 # For those wondering why this port is not under `x11-drivers' category,
 # have a look at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=121930.
@@ -10,9 +10,9 @@
 # slave ports instead (`x11/nvidia-driver-340' or `x11/nvidia-driver-304').
 
 PORTNAME=	nvidia-driver
-DISTVERSION?=	390.77
+DISTVERSION?=	390.87
 # Always try to set PORTREVISION as it can be overridden by the slave ports
-PORTREVISION?=	2
+PORTREVISION?=	0
 CATEGORIES=	x11
 MASTER_SITES=	NVIDIA/XFree86/FreeBSD-${ARCH_SUFX}/${DISTVERSION}
 DISTNAME=	NVIDIA-FreeBSD-${ARCH_SUFX}-${DISTVERSION}
@@ -113,11 +113,6 @@ MAKE_ENV+=	WITHOUT_LINUX=yes
 .endif
 
 post-patch: .SILENT
-# KPI of kmem_alloc_contig(),kmem_free() changed in FreeBSD src r338143,r338318
-.if ${OSVERSION} >= 1200079
-	${REINPLACE_CMD} -e 's/kmem_alloc_contig(kmem_arena, /kmem_alloc_contig(/' ${WRKSRC}/src/${NVSRC}/nvidia_subr.c
-	${REINPLACE_CMD} -e 's/kmem_free(kmem_arena, /kmem_free(/' ${WRKSRC}/src/${NVSRC}/nvidia_subr.c
-.endif
 # We should support -CURRENT: kill the check
 	${REINPLACE_CMD} -e '24,26d' ${WRKSRC}/src/${NVSRC}/nv-freebsd.h
 # Adjust Linux headers #include's after FreeBSD src r246085
@@ -133,6 +128,13 @@ post-patch: .SILENT
 .if ${NVVERSION} >= 358.009
 	${REINPLACE_CMD} -e 's:sys/capability\.h:sys/capsicum.h:' \
 		${WRKSRC}/src/nvidia-modeset/nvidia-modeset-freebsd.c
+.endif
+# KPI of kmem_alloc_contig(),kmem_free() changed in FreeBSD src r338143,r338318
+.if ${OSVERSION} >= 1200079
+	${REINPLACE_CMD} \
+	    -e 's/kmem_alloc_contig(kmem_arena, /kmem_alloc_contig(/' \
+	    -e 's/kmem_free(kmem_arena, /kmem_free(/' \
+		${WRKSRC}/src/${NVSRC}/nvidia_subr.c
 .endif
 # Respect WITHOUT_LINUX setting
 	${REINPLACE_CMD} -e 's/exists(\/.*/& \&\& !defined(WITHOUT_LINUX)/' \

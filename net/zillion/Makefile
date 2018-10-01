@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/zillion/Makefile 464198 2018-03-11 19:46:31Z sunpoet $
+# $FreeBSD: head/net/zillion/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	zillion
 PORTVERSION=	0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	net gnustep
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 DISTNAME=	${PORTNAME}-0_1

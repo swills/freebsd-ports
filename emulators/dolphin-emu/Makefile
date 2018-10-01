@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/dolphin-emu/Makefile 480187 2018-09-20 18:13:03Z martymac $
+# $FreeBSD: head/emulators/dolphin-emu/Makefile 480690 2018-09-25 19:33:09Z martymac $
 
 PORTNAME=	dolphin-emu
 PORTVERSION=	5.0.8715
@@ -42,7 +42,7 @@ LIB_DEPENDS=	libpulse.so:audio/pulseaudio \
 		libcurl.so:ftp/curl \
 		libhidapi.so:comms/hidapi
 
-USES=		cmake compiler:c++11-lib desktop-file-utils iconv pkgconfig \
+USES=		cmake compiler:c++17-lang desktop-file-utils iconv pkgconfig \
 		qmake qt:5
 
 USE_GITHUB=	yes
@@ -63,6 +63,9 @@ CMAKE_ARGS+=	-DTRY_X11:BOOL=ON \
 		-DCMAKE_REQUIRED_INCLUDES:PATH="${LOCALBASE}/include" \
 		-DCMAKE_REQUIRED_FLAGS:STRING="-L${LOCALBASE}/lib"
 MAKE_ENV+=	DESTDIR="${STAGEDIR}"
+
+# XXX Fix build on archs where 'unsigned long' is 32bit
+CXXFLAGS+=	-DLZO_CFG_PREFER_TYPEOF_ACC_INT32E_T=LZO_TYPEOF_INT
 
 # XXX Bypass git check (and set a dummy -unused- revision)
 CMAKE_ARGS+=	-DDOLPHIN_WC_BRANCH:STRING="stable" \

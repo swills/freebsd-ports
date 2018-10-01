@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/libchamplain/Makefile 442058 2017-05-30 11:18:24Z kwm $
+# $FreeBSD: head/graphics/libchamplain/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	libchamplain
-PORTVERSION=	0.12.15
+PORTVERSION=	0.12.16
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 

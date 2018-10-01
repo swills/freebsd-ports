@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/leatherman/Makefile 480248 2018-09-21 10:39:13Z romain $
+# $FreeBSD: head/devel/leatherman/Makefile 480555 2018-09-24 08:29:47Z romain $
 
 PORTNAME=	leatherman
 PORTVERSION=	1.5.0
@@ -9,12 +9,10 @@ COMMENT=	Leatherman C++ Tool library
 
 LICENSE=	APACHE20
 
-BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option "-std=c++11"
-
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libcurl.so:ftp/curl
 
-USES=		cmake:outsource gettext
+USES=		compiler:c++11-lang cmake:outsource gettext
 USE_GITHUB=	yes
 GH_ACCOUNT=	puppetlabs
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/puppetserver/Makefile 474937 2018-07-19 08:24:01Z romain $
+# $FreeBSD: head/sysutils/puppetserver/Makefile 480787 2018-09-27 07:59:11Z romain $
 
 PORTNAME=	puppetserver
 PORTVERSION=	2.8.0
@@ -22,6 +22,8 @@ USE_RUBY=	yes
 NO_ARCH=	yes
 NO_BUILD=	yes
 JAVA_VERSION=	1.7+
+
+CONFLICTS_INSTALL=	puppetserver5-* puppetserver6-*
 
 USERS=		puppet
 GROUPS=		puppet

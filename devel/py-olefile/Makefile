@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-olefile/Makefile 460801 2018-02-03 09:52:35Z antoine $
+# $FreeBSD: head/devel/py-olefile/Makefile 480527 2018-09-23 19:28:32Z antoine $
 
 PORTNAME=	olefile
-PORTVERSION=	0.45.1
+PORTVERSION=	0.46
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

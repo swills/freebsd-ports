@@ -1,9 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/devhelp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/devhelp/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	devhelp
-PORTVERSION=	3.24.0
-PORTREVISION=	4
+PORTVERSION=	3.28.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -14,6 +13,7 @@ COMMENT=	Developer help browser for GNOME 3
 LICENSE=	GPLv2
 LICENSE_FILES=	${WRKSRC}/COPYING
 
+BUILD_DEPENDS=	itstool:textproc/itstool
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 		libwebkit2gtk-4.0.so:www/webkit2-gtk3
 

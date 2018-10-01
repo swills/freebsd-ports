@@ -1,14 +1,15 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-shell-extension-hidetopbar/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/deskutils/gnome-shell-extension-hidetopbar/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-shell-extension-hidetopbar
-PORTVERSION=	0.0.0.20151025
-PORTREVISION=	1
+PORTVERSION=	0.0.0.20180511
 CATEGORIES=	deskutils gnome
-DIST_SUBDIR=	gnome3
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Hide the topbar except in overview mode
+
+LICENSE=	GPLv2
 
 BUILD_DEPENDS=	gnome-shell>=0:x11/gnome-shell \
 		gsettings-desktop-schemas>=3.12.0:devel/gsettings-desktop-schemas
@@ -18,13 +19,11 @@ RUN_DEPENDS=	gnome-shell>=0:x11/gnome-shell \
 USES=		gettext gmake gnome pkgconfig
 USE_GNOME=	glib20
 USE_GITHUB=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 GLIB_SCHEMAS=	org.gnome.shell.extensions.hidetopbar.gschema.xml
 
 GH_ACCOUNT=	mlutfy
 GH_PROJECT=	hidetopbar
-GH_TAGNAME=	2a899bf
+GH_TAGNAME=	7977769
 
 PKGMESSAGE=	../gnome-shell-extra-extensions/pkg-message.slaves
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/Makefile 468533 2018-04-28 10:22:20Z tcberner $
+# $FreeBSD: head/accessibility/Makefile 480951 2018-09-30 11:58:29Z kwm $
 #
 
     COMMENT = Ports to help disabled users
@@ -7,7 +7,6 @@
     SUBDIR += at-spi2-atk
     SUBDIR += at-spi2-core
     SUBDIR += atk
-    SUBDIR += atk-reference
     SUBDIR += atkmm
     SUBDIR += caribou
     SUBDIR += eflite
@@ -23,7 +22,6 @@
     SUBDIR += kmouth-kde4
     SUBDIR += linux-c6-atk
     SUBDIR += linux-c7-atk
-    SUBDIR += mousetweaks
     SUBDIR += orca
     SUBDIR += py-atspi
     SUBDIR += py-papi

@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/security/libsecret/Makefile 466245 2018-04-02 18:23:00Z bapt $
+# $FreeBSD: head/security/libsecret/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	libsecret
 PORTVERSION=	0.18.6
+POIRTREVISION=	1
 CATEGORIES=	security gnome
 MASTER_SITES=	GNOME
 
@@ -13,7 +14,8 @@ LICENSE=	LGPL21
 
 BUILD_DEPENDS=	docbook-xsl>=0:textproc/docbook-xsl \
 		vala:lang/vala
-LIB_DEPENDS=	libgcrypt.so:security/libgcrypt
+LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
+		libgpg-error.so:security/libgpg-error
 
 USES=		gettext gmake gnome libtool localbase pkgconfig tar:xz
 USE_GNOME=	glib20 libxslt:build intltool \

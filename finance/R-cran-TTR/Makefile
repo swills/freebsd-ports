@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-TTR/Makefile 466934 2018-04-10 01:00:45Z tota $
+# $FreeBSD: head/finance/R-cran-TTR/Makefile 480640 2018-09-25 07:02:04Z tota $
 
 PORTNAME=	TTR
-DISTVERSION=	0.23-3
+DISTVERSION=	0.23-4
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

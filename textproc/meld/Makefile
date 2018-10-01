@@ -1,8 +1,8 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/textproc/meld/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/textproc/meld/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	meld
-PORTVERSION=	3.18.0
+PORTVERSION=	3.18.2
 CATEGORIES=	textproc devel python
 MASTER_SITES=	GNOME
 
@@ -24,6 +24,8 @@ GLIB_SCHEMAS=	org.gnome.meld.gschema.xml
 PYDISTUTILS_INSTALL_TARGET=	--no-update-icon-cache --no-compile-schemas install
 INSTALLS_ICONS=	yes
 NO_ARCH=	yes
+
+PLIST_SUB=	PORTVER=${PORTVERSION}
 
 .include <bsd.port.pre.mk>
 

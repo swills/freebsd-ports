@@ -1,5 +1,5 @@
 # Created by: Jie Gao	<gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/textproc/scim/Makefile 375281 2014-12-22 22:46:11Z bapt $
+# $FreeBSD: head/textproc/scim/Makefile 480829 2018-09-27 22:47:47Z linimon $
 
 PORTNAME=	scim
 PORTVERSION=	1.4.9
@@ -14,7 +14,8 @@ LICENSE=	LGPL21
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		gettext gmake iconv libtool pathfix pkgconfig
+USES=		compiler:c++11-lang gettext gmake gnome iconv libtool pathfix \
+		pkgconfig
 USE_GNOME=	gtk20 intlhack
 USE_XORG=	x11 xpm
 USE_LDCONFIG=	yes

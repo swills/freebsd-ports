@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-input-evdev/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-input-evdev/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	xf86-input-evdev
 PORTVERSION=	2.10.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

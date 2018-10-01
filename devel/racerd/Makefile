@@ -1,11 +1,11 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/devel/racerd/Makefile 468993 2018-05-03 22:43:22Z jbeich $
+# $FreeBSD: head/devel/racerd/Makefile 480871 2018-09-28 17:59:24Z jbeich $
 
 PORTNAME=	racerd
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.1.1-56
-PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g29cd4c6
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	ultima@FreeBSD.org

@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/spot/Makefile 476848 2018-08-10 21:24:45Z yuri $
+# $FreeBSD: head/math/spot/Makefile 480934 2018-09-30 01:58:21Z yuri $
 
 PORTNAME=	spot
-DISTVERSION=	2.6.1
-PORTREVISION=	1
+DISTVERSION=	2.6.2
 CATEGORIES=	math
 MASTER_SITES=	http://www.lrde.epita.fr/dload/${PORTNAME}/
 

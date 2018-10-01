@@ -1,9 +1,9 @@
 # Created by: Chao Shin <quakelee@cn.FreeBSD.org>
-# $FreeBSD: head/science/pnetcdf/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/pnetcdf/Makefile 480595 2018-09-24 11:14:24Z sunpoet $
 
 PORTNAME=	pnetcdf
 PORTVERSION=	1.8.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	science parallel
 MASTER_SITES=	http://cucis.ece.northwestern.edu/projects/PnetCDF/Release/ \
 		LOCAL/sunpoet
@@ -14,7 +14,7 @@ COMMENT=	Library providing high-performance I/O
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_SINGLE=	MPI
-OPTIONS_SINGLE_MPI=	OPENMPI OPENMPI2 OPENMPI3 MPICH2
+OPTIONS_SINGLE_MPI=	OPENMPI OPENMPI2 OPENMPI3 MPICH
 OPTIONS_DEFAULT=OPENMPI3
 OPENMPI_DESC=	Parallel processing support via Open MPI 1.x
 OPENMPI2_DESC=	Parallel processing support via Open MPI 2.x
@@ -31,8 +31,8 @@ USES=		fortran gmake pathfix perl5 tar:bzip2
 
 PORTDOCS=	COPYRIGHT INSTALL README
 
-MPICH2_CONFIGURE_ON=	--with-mpi=${LOCALBASE}
-MPICH2_LIB_DEPENDS=	libmpich.so:net/mpich2
+MPICH_CONFIGURE_ON=	--with-mpi=${LOCALBASE}
+MPICH_LIB_DEPENDS=	libmpich.so:net/mpich
 OPENMPI_CONFIGURE_ON=	--with-mpi=${LOCALBASE}/mpi/openmpi
 OPENMPI_LIB_DEPENDS=	libmpi.so:net/openmpi
 OPENMPI2_CONFIGURE_ON=	--with-mpi=${LOCALBASE}/mpi/openmpi2

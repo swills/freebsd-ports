@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/graphics/py-pillow/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/graphics/py-pillow/Makefile 480957 2018-09-30 14:39:35Z miwi $
 
 PORTNAME=	pillow
-PORTVERSION=	5.0.0
+PORTVERSION=	5.2.0
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

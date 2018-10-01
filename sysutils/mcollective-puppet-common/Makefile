@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/mcollective-puppet-common/Makefile 450380 2017-09-22 15:07:57Z romain $
+# $FreeBSD: head/sysutils/mcollective-puppet-common/Makefile 480796 2018-09-27 09:29:44Z romain $
 
 PORTNAME?=	mcollective-puppet-common
 PORTVERSION=	1.13.2
@@ -8,6 +8,8 @@ MAINTAINER=	puppet@FreeBSD.org
 COMMENT?=	MCollective common files to manage the Puppet Agent
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Agents are better distributed through the Puppet forge
 
 RUN_DEPENDS?=	mcollective>=2:sysutils/mcollective
 

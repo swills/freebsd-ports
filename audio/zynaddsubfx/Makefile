@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/zynaddsubfx/Makefile 473009 2018-06-21 23:52:37Z linimon $
+# $FreeBSD: head/audio/zynaddsubfx/Makefile 480701 2018-09-25 22:09:55Z brooks $
 
 PORTNAME=	zynaddsubfx
 PORTVERSION=	3.0.3
@@ -82,13 +82,14 @@ CMAKE_ARGS+=	-DZYN_DATADIR:STRING=${DATADIR}
 CMAKE_ARGS+=	-DZYN_EXAMPLESDIR:STRING=${EXAMPLESDIR}
 
 .include <bsd.port.options.mk>
-
-# Build fix for ZynAddSubFx
-BUILD_DEPENDS+=	clang40:devel/llvm40
-CC=		clang40
-CXX=		clang++40
-
 .include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
+# Build fix for ZynAddSubFx
+BUILD_DEPENDS+=	clang60:devel/llvm60
+CC=		clang60
+CXX=		clang++60
+.endif
 
 .if ${ARCH} == "i386" || ${ARCH} == "amd64"
 CFLAGS+=	-DASM_F2I_YES

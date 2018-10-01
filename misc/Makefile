@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 479008 2018-09-05 03:45:53Z swills $
+# $FreeBSD: head/misc/Makefile 480951 2018-09-30 11:58:29Z kwm $
 #
 
     COMMENT = Miscellaneous utilities
@@ -154,6 +154,7 @@
     SUBDIR += gkrellweather2
     SUBDIR += gkx86info2
     SUBDIR += gnome-devel-docs
+    SUBDIR += gnome-getting-started-docs
     SUBDIR += gnome-icon-theme
     SUBDIR += gnome-icon-theme-extras
     SUBDIR += gnome-mime-data
@@ -445,6 +446,7 @@
     SUBDIR += py-tqdm
     SUBDIR += py-yolk
     SUBDIR += pylize
+    SUBDIR += pyobd
     SUBDIR += qbrew
     SUBDIR += qlas
     SUBDIR += qmetro

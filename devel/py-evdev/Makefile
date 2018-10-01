@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-evdev/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-evdev/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	evdev
 PORTVERSION=	0.5.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
