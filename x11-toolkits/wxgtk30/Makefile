@@ -2,8 +2,8 @@
 
 PORTNAME=	wx
 PORTVERSION=	3.0.4
-PORTREVISION=	3
 DISTVERSIONPREFIX=	v
+PORTREVISION=	4
 CATEGORIES=	x11-toolkits
 PKGNAMESUFFIX=	30-gtk2
 
@@ -21,10 +21,11 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	wxWidgets
 GH_PROJECT=	wxWidgets
 
-USES=		compiler:c++11-lib gmake iconv jpeg localbase pkgconfig
+USES=		compiler:c++11-lib gmake gnome gl iconv jpeg localbase \
+		pkgconfig
 USE_XORG=	x11 sm xxf86vm xinerama
-USE_GL=		glu
-USE_GNOME=	gtk20
+USE_GL=		gl glu
+USE_GNOME=	cairo gdkpixbuf2 gtk20
 USE_LDCONFIG=	yes
 USE_CXXSTD=	c++11
 GNU_CONFIGURE=	yes
@@ -48,7 +49,7 @@ CONFIGURE_ARGS=	--with-libpng=sys \
 CONFIGURE_ENV=	X11BASE="${LOCALBASE}" \
 		ac_cv_header_sys_inotify_h=no
 
-OPTIONS_DEFINE=	GSTREAMER MSPACK NLS WEBKIT
+OPTIONS_DEFINE=	GSTREAMER NOTIFY MSPACK NLS WEBKIT
 OPTIONS_DEFAULT=GSTREAMER MSPACK WEBKIT
 MSPACK_DESC=	Microsoft archives support
 OPTIONS_SUB=	yes
@@ -57,6 +58,8 @@ NLS_USES=	gettext
 
 GSTREAMER_CONFIGURE_ENABLE=	mediactrl
 GSTREAMER_USE=	GNOME=gconf2 GSTREAMER1=yes
+
+NOTIFY_CONFIGURE_WITH=	libnotify
 
 MSPACK_CONFIGURE_WITH=	libmspack
 MSPACK_LIB_DEPENDS=	libmspack.so:archivers/libmspack
