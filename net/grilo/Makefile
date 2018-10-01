@@ -1,8 +1,8 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/net/grilo/Makefile 441301 2017-05-20 09:50:58Z kwm $
+# $FreeBSD: head/net/grilo/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	grilo
-PORTVERSION=	0.3.3
+PORTVERSION=	0.3.4
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 
@@ -32,6 +32,6 @@ OPTIONS_DEFINE=	UI
 
 UI_DESC=	Enable testing UI
 UI_CONFIGURE_ENABLE=test-ui
-UI_USE=		GNOME=gtk30
+UI_USE=		GNOME=cairo,gdkpixbuf2,gtk30
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/lang/p5-Modern-Perl/Makefile 478898 2018-09-03 19:03:55Z sunpoet $
+# $FreeBSD: head/lang/p5-Modern-Perl/Makefile 480974 2018-09-30 19:41:54Z sunpoet $
 
 PORTNAME=	Modern-Perl
-PORTVERSION=	1.20180901
+PORTVERSION=	1.20180928
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CHROMATIC

@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alepulver@FreeBSD.org>
-# $FreeBSD: head/games/q2pro/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/q2pro/Makefile 480747 2018-09-26 16:12:12Z emaste $
 
 PORTNAME=	q2pro
 PORTVERSION=	${SVN_REV}
@@ -22,6 +22,7 @@ SVN_REV=	142
 MAKE_ENV=	LIBDIR="${LIBDIR}"
 PLIST_SUB=	LIBDIR="${LIBDIR:S|${PREFIX}/||}"
 LIBDIR=		${PREFIX}/lib/${PORTNAME}
+LDFLAGS_i386=	-Wl,-znotext
 
 OPTIONS_DEFINE=		CLIENT DEDICATED GAME GL SOFT UI
 OPTIONS_DEFINE_i386=	ASM

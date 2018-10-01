@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/archivers/gnome-autoar/Makefile 443409 2017-06-11 21:02:28Z kwm $
+# $FreeBSD: head/archivers/gnome-autoar/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-autoar
-PORTVERSION=	0.2.2
+PORTVERSION=	0.2.3
 CATEGORIES=	archivers
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

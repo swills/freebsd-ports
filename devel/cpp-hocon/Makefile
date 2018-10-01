@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpp-hocon/Makefile 480249 2018-09-21 10:39:43Z romain $
+# $FreeBSD: head/devel/cpp-hocon/Makefile 480828 2018-09-27 22:44:49Z linimon $
 
 PORTNAME=	cpp-hocon
 PORTVERSION=	0.2.0
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libleatherman_util.so:devel/leatherman
 
-USES=		cmake:noninja
+USES=		cmake:noninja compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	puppetlabs
 

@@ -1,12 +1,11 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/lightsoff/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/lightsoff/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	lightsoff
-PORTVERSION=	3.24.0
-PORTREVISION=	1
+PORTVERSION=	3.28.0
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
-DIST_SUBDIR=	gnome3
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Gnome ligthsoff

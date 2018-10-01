@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb4/Makefile 469114 2018-05-05 14:29:00Z danfe $
+# $FreeBSD: head/databases/puppetdb4/Makefile 480788 2018-09-27 08:06:17Z romain $
 
 PORTNAME=	puppetdb
 PORTVERSION=	4.4.0
@@ -16,7 +16,7 @@ RUN_DEPENDS=	bash:shells/bash \
 
 USE_RC_SUBR=	puppetdb
 
-CONFLICTS_INSTALL=	puppetdb3-* puppetdb5-*
+CONFLICTS_INSTALL=	puppetdb5-* puppetdb6-*
 USES=		shebangfix
 SHEBANG_FILES=	ext/bin/puppetdb \
 		ext/cli/anonymize \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/triceratops-lv2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/triceratops-lv2/Makefile 480666 2018-09-25 14:42:34Z emaste $
 
 PORTNAME=	triceratops
 DISTVERSIONPREFIX=	lv2-v
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 USES=		compiler:c++11-lang pkgconfig waf
 USE_GNOME=	cairo cairomm gdkpixbuf2 gtk20 gtkmm24
 NO_WRKSUBDIR=	yes
+LDFLAGS_i386=	-Wl,-znotext
 
 post-install:
 		@${STRIP_CMD} \

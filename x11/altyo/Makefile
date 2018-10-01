@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/x11/altyo/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/x11/altyo/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	altyo
 DISTVERSIONPREFIX=	debian/
@@ -12,6 +12,8 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Drop-down terminal emulator, written in Vala
 
 LICENSE=	GPLv3
+
+BROKEN=		Cannot convert from `unowned string' to `unowned char[]?'
 
 BUILD_DEPENDS=	git:devel/git \
 		valac:lang/vala

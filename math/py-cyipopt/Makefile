@@ -1,9 +1,8 @@
-# $FreeBSD: head/math/py-cyipopt/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/py-cyipopt/Makefile 480614 2018-09-24 17:34:50Z yuri $
 
 PORTNAME=	cyipopt
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.1.7
-PORTREVISION=	1
+DISTVERSION=	0.1.9
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -18,7 +17,9 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libcoinmetis.so:math/ipopt \
 		liblapack.so:math/lapack
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USES=		fortran python pkgconfig # fortran because ipopt's pkg-config returns gcc libs
 USE_GITHUB=	yes

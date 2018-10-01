@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/multimedia/qt4-mobility/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/qt4-mobility/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	mobility
 PORTVERSION=	1.2.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	http://dev.gentoo.org/~pesa/distfiles/ \
 		LOCAL/vg

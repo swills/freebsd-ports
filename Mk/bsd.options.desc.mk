@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 475657 2018-07-29 12:36:50Z dbaio $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 480590 2018-09-24 11:13:36Z sunpoet $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -338,7 +338,8 @@ MP4_DESC?=		MP4 media format support
 MPEG2_DESC?=		MPEG-2 video support via libmpeg2
 MPG123_DESC?=		MP3 decoding support via mpg123
 MPI_DESC?=		MPI (Message Passing Interface) support
-MPICH2_DESC?=		Parallel processing support via MPICH2
+MPICH_DESC?=		Parallel processing support via MPICH 3
+MPICH2_DESC?=		Parallel processing support via MPICH 2
 MPLAYER_DESC?=		MPlayer media player support
 MPLS_DESC?=		MPLS support
 MPP_DESC?=		Musepack audio format support

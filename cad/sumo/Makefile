@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/sumo/Makefile 471726 2018-06-04 22:51:18Z linimon $
+# $FreeBSD: head/cad/sumo/Makefile 480700 2018-09-25 22:05:45Z brooks $
 
 PORTNAME=	sumo
 DISTVERSION=	0.31.0
@@ -47,9 +47,9 @@ do-install-DOCS-on:
 .include <bsd.port.pre.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-BUILD_DEPENDS+=	clang40:devel/llvm40
-CC=		clang40
-CXX=		clang++40 # fails to build with the default compiler on 10
+BUILD_DEPENDS+=	clang60:devel/llvm60
+CC=		clang60
+CXX=		clang++60 # fails to build with the default compiler on 10
 .endif
 
 .include <bsd.port.post.mk>

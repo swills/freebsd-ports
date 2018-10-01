@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/botan2/Makefile 477449 2018-08-17 21:07:58Z swills $
+# $FreeBSD: head/security/botan2/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	botan
 DISTVERSION=	2.7.0
@@ -15,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 
 BROKEN_armv6=		include/arm_neon.h:28:2: error: "NEON support not enabled"
 BROKEN_armv7=		fails to package: pkg-static: Unable to access file stage/usr/local/include/botan-2/botan/rdrand_rng.h:No such file or directory
-BROKEN_powerpc64=	fails to configure: Unknown compiler "None"; available options: clang ekopath gcc hpcc icc msvc pgi sunstudio xlc
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs
 

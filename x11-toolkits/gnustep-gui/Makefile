@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 474151 2018-07-08 01:30:03Z linimon $
+# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	gnustep-gui
 PORTVERSION=	0.25.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-toolkits gnustep
 MASTER_SITES=	GNUSTEP/core
 

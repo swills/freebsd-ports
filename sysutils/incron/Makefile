@@ -1,5 +1,5 @@
 # Created by: mi@aldan.algebra.com
-# $FreeBSD: head/sysutils/incron/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/sysutils/incron/Makefile 480737 2018-09-26 13:13:48Z linimon $
 
 PORTNAME=	incron
 DISTVERSION=	2017-11-13
@@ -15,9 +15,9 @@ LICENSE_FILE_GPLv2=	${WRKSRC}/LICENSE-GPL
 LICENSE_FILE_LGPL21=	${WRKSRC}/LICENSE-LGPL
 LICENSE_FILE_MIT=	${WRKSRC}/LICENSE-X11
 
-BROKEN_mips=		fails to compile: usertable.cpp:440: #pragma GCC diagnostic not allowed inside functions
-BROKEN_mips64=		fails to compile: usertable.cpp:440: #pragma GCC diagnostic not allowed inside functions
-BROKEN_powerpc64=	fails to compile: usertable.cpp:440: #pragma GCC diagnostic not allowed inside functions
+BROKEN_mips=		fails to compile: usertable.cpp:440: \#pragma GCC diagnostic not allowed inside functions
+BROKEN_mips64=		fails to compile: usertable.cpp:440: \#pragma GCC diagnostic not allowed inside functions
+BROKEN_powerpc64=	fails to compile: usertable.cpp:440: \#pragma GCC diagnostic not allowed inside functions
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify
 

@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gdl/Makefile 449184 2017-09-03 09:01:42Z amdmi3 $
+# $FreeBSD: head/x11-toolkits/gdl/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gdl
-PORTVERSION=	3.22.0
+PORTVERSION=	3.28.0
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

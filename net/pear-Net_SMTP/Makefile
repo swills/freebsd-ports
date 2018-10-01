@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/net/pear-Net_SMTP/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/net/pear-Net_SMTP/Makefile 480938 2018-09-30 07:18:35Z joneum $
 
 PORTNAME=	Net_SMTP
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	net mail www pear
 
 MAINTAINER=	joneum@FreeBSD.org

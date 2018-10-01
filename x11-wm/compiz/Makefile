@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-wm/compiz/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-wm/compiz/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	compiz
 PORTVERSION=	0.8.8
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://releases.compiz.org/${PORTVERSION}/
 

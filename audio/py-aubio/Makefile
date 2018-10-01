@@ -1,6 +1,6 @@
-# $FreeBSD: head/audio/py-aubio/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-aubio/Makefile 480997 2018-10-01 03:13:59Z jhale $
 
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	audio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,7 +14,7 @@ TEST_DEPENDS=	sox:audio/sox \
 		${PYTHON_PKGNAMEPREFIX}nose2>=0.6.5:devel/py-nose2@${PY_FLAVOR}
 
 USES+=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 TEST_ENV=	${MAKE_ENV} PYTHONPATH=${WRKSRC}/`ls -rtd build/lib.* | head -1`
 TEST_TARGET=	test

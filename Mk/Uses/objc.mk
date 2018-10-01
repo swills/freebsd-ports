@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/objc.mk 464435 2018-03-13 21:43:28Z bdrewery $
+# $FreeBSD: head/Mk/Uses/objc.mk 480741 2018-09-26 15:23:37Z brooks $
 #
 # Objective C support
 #
@@ -10,7 +10,7 @@
 .if !defined(_INCLUDE_USES_OBJC_MK)
 _INCLUDE_USES_OBJC_MK=	yes
 
-OBJC_CLANG_VERSION=40
+OBJC_CLANG_VERSION=60
 
 objc_ARGS?=
 .if !empty(objc_ARGS) && ! ${objc_ARGS:Mcompiler}

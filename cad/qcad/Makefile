@@ -1,10 +1,10 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/cad/qcad/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/cad/qcad/Makefile 480692 2018-09-25 20:12:03Z tcberner $
 
 PORTNAME=	qcad
 PORTVERSION=	3.21.1.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	cad
 DIST_SUBDIR=	${PORTNAME}
 

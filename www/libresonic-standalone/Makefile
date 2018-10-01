@@ -1,10 +1,10 @@
 # Created by: Jeremie Le Hen <jlh@FreeBSD.org>
-# $FreeBSD: head/www/libresonic-standalone/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/www/libresonic-standalone/Makefile 480631 2018-09-24 21:30:58Z jlh $
 
 PORTNAME=	libresonic
 DISTVERSIONPREFIX=	v
 DISTVERSION=	6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www java
 MASTER_SITES=	https://github.com/Libresonic/libresonic/releases/download/v${DISTVERSION}/
 PKGNAMESUFFIX=	-standalone

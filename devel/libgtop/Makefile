@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/libgtop/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/devel/libgtop/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	libgtop
-PORTVERSION=	2.32.0
+PORTVERSION=	2.38.0
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2
@@ -10,7 +10,8 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GNOME top library
 
-BROKEN_aarch64=	Fails to link: missing sbrk
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_PERL5=	build
 USE_XORG=	xau

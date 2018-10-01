@@ -1,10 +1,10 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/qjackctl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/qjackctl/Makefile 480620 2018-09-24 18:30:38Z yuri $
 
 PORTNAME=	qjackctl
 DISTVERSIONPREFIX=	qjackctl_
-DISTVERSION=	0_5_3
-PORTREVISION=	1
+DISTVERSION=	0_5_4-1
+DISTVERSIONSUFFIX=	-g75af70c # include the regression fix
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libjack.so:audio/jack
 
-USES=		autoreconf compiler:c++11-lib gmake localbase pkgconfig qt:5
+USES=		autoreconf compiler:c++11-lib gl gmake localbase pkgconfig qt:5
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	rncbc

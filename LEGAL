@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: head/LEGAL 479360 2018-09-10 05:53:46Z yuri $
+# $FreeBSD: head/LEGAL 480718 2018-09-26 06:36:51Z loader $
 #
 #    **********************************************************************
 #    ***                      NOTE TO COMMITTERS                        ***
@@ -208,6 +208,7 @@ ue*dev.zip		editors/uemacs		Resale allowed for media cost only
 unifi-5*/UniFi.unix.zip	net-mgmt/unifi5		Redistribution of bundled firmware images is not permitted
 uplink-demo*		games/linux-uplink-demo	Redistribution is limited, see license
 uzap.tar.gz		editors/uzap		This software may not be used to make a profit in any way.
+vdbench*.zip		benchmarks/linux-vdbench	Redistribution is not permitted
 vdr-markad-*		multimedia/vdr-plugin-markad	Installs station logos
 vice-*			emulators/vice		ROMs are copyrighted by Commodore Business Machines
 VMware-vSphere-Perl*	net/vmware-vsphere-cli	May not be redistributed.  Must accept license to download.

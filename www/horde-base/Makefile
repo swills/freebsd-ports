@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/horde-base/Makefile 478218 2018-08-27 16:27:19Z joneum $
+# $FreeBSD: head/www/horde-base/Makefile 480808 2018-09-27 18:36:35Z joneum $
 
 PORTNAME=	horde
-PORTVERSION=	5.2.19
+PORTVERSION=	5.2.20
 CATEGORIES=	www pear
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 

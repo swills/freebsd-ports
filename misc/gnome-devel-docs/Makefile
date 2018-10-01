@@ -1,11 +1,11 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/misc/gnome-devel-docs/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/gnome-devel-docs/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-devel-docs
-PORTVERSION=	3.18.1
+PORTVERSION=	3.28.0
 CATEGORIES=	misc gnome
 MASTER_SITES=	GNOME
-DIST_SUBDIR=	gnome3
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Documents targeted for GNOME developers

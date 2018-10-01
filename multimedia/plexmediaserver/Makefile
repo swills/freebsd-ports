@@ -1,9 +1,9 @@
 # Created by: KalleDK <plexmaintainer@k-moeller.dk>
-# $FreeBSD: head/multimedia/plexmediaserver/Makefile 477872 2018-08-23 14:12:58Z feld $
+# $FreeBSD: head/multimedia/plexmediaserver/Makefile 480670 2018-09-25 15:47:26Z feld $
 
 PORTNAME=	plexmediaserver
-PORTVERSION?=	1.13.5.5332
-DISTVERSIONSUFFIX?=21ab172de
+PORTVERSION?=	1.13.8.5395
+DISTVERSIONSUFFIX?=10d48da0d
 PORTREVISION?=	0
 CATEGORIES=	multimedia
 MASTER_SITES=	https://downloads.plex.tv/plex-media-server/${DISTVERSION}-${DISTVERSIONSUFFIX}/

@@ -1,9 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-rime/Makefile 418259 2016-07-09 04:16:28Z pi $
+# $FreeBSD: head/chinese/fcitx-rime/Makefile 480655 2018-09-25 09:29:59Z wen $
 
 PORTNAME=	fcitx-rime
-PORTVERSION=	0.3.1
-PORTREVISION=	1
+PORTVERSION=	0.3.2
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx

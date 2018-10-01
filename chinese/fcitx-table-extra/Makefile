@@ -1,8 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-table-extra/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/fcitx-table-extra/Makefile 480769 2018-09-27 02:07:35Z wen $
 
 PORTNAME=	fcitx-table-extra
-PORTVERSION=	0.3.7
+PORTVERSION=	0.3.8
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx

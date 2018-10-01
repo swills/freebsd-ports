@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/graphics/inkscape/Makefile 479351 2018-09-10 02:06:12Z linimon $
+# $FreeBSD: head/graphics/inkscape/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	inkscape
 PORTVERSION=	0.92.3
@@ -16,8 +16,6 @@ LICENSE_FILE_GPLv2=	${WRKSRC}/GPL2.txt
 LICENSE_FILE_GPLv3=	${WRKSRC}/GPL3.txt
 LICENSE_FILE_LGPL21=	${WRKSRC}/LGPL2.1.txt
 
-BROKEN_powerpc64=	fails to build: lib/libinkscape_base.so: undefined reference to Magick::Image::read(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
-
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/concept_check.hpp:devel/boost-libs
 LIB_DEPENDS=	libpopt.so:devel/popt \
 		libgc.so:devel/boehm-gc \
@@ -32,10 +30,10 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 		libpng.so:graphics/png \
 		libMagick++-6.so:graphics/ImageMagick
 
-USE_GNOME=	gtkmm24 libxml2 libxslt
 USES=		compiler:c++11-lib cmake cpe desktop-file-utils gnome \
 		iconv:wchar_t jpeg pathfix pkgconfig python:2.7,build \
 		shebangfix tar:bzip2
+USE_GNOME=	gtkmm24 libxml2 libxslt
 USE_XORG=	x11
 INSTALLS_ICONS=	yes
 CMAKE_ARGS+=	-DWITH_GNOME_VFS:BOOL=NO

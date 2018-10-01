@@ -1,8 +1,8 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/gpxsee/Makefile 479961 2018-09-17 22:15:37Z ultima $
+# $FreeBSD: head/graphics/gpxsee/Makefile 480545 2018-09-24 04:08:06Z wen $
 
 PORTNAME=	gpxsee
-PORTVERSION=	5.18
+PORTVERSION=	6.0
 CATEGORIES=	graphics geography
 
 MAINTAINER=	sikmir@gmail.com
@@ -12,7 +12,8 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/licence.txt
 
 USES=		qmake:outsource desktop-file-utils qt:5 shared-mime-info
-USE_QT=		buildtools_build core gui network opengl printsupport widgets
+USE_QT=		buildtools_build core gui network opengl printsupport \
+		sql sql-sqlite3_run widgets
 USE_GL=		gl
 
 USE_GITHUB=	yes

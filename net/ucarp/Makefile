@@ -1,11 +1,11 @@
 # Created by: Meno Abels <meno.abels@adviser.com>
-# $FreeBSD: head/net/ucarp/Makefile 474908 2018-07-18 22:41:24Z yuri $
+# $FreeBSD: head/net/ucarp/Makefile 480749 2018-09-26 17:18:55Z yuri $
 
 PORTNAME=	ucarp
 PORTVERSION=	1.5.2.20171201
 CATEGORIES=	net
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jcpierri@gmail.com
 COMMENT=	Userlevel Common Address Redundancy Protocol
 
 LICENSE=	ISC

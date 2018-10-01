@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/php-geos/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/graphics/php-geos/Makefile 480574 2018-09-24 11:12:14Z sunpoet $
 
 PORTNAME=	geos
 PORTVERSION=	1.0.0
@@ -21,8 +21,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/MIT-LICENSE
 BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libgeos_c.so:graphics/geos
 
-LDFLAGS+=	-L${PREFIX}/lib
-USES=		php:ext
+USES=		localbase:ldflags php:ext
 
 WRKSRC=		${WRKDIR}/php-${PORTNAME}
 

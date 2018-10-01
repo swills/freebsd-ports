@@ -1,5 +1,5 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/audio/sratom/Makefile 477806 2018-08-22 18:05:37Z swills $
+# $FreeBSD: head/audio/sratom/Makefile 480651 2018-09-25 08:34:35Z arved $
 
 PORTNAME=	sratom
 PORTVERSION=	0.6.2
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libserd-0.so:devel/serd libsord-0.so:devel/sord
 BUILD_DEPENDS=	lv2>=1.14.0:audio/lv2
 
 USES=		pkgconfig python:build tar:bzip2 waf
-
+USE_CSTD=	c99
 USE_LDCONFIG=	yes
 
 PLIST_SUB=	VERSION=${PORTVERSION}

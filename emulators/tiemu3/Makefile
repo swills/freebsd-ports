@@ -1,9 +1,9 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/emulators/tiemu3/Makefile 441694 2017-05-25 14:35:49Z bapt $
+# $FreeBSD: head/emulators/tiemu3/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	tiemu3
 PORTVERSION=	3.03
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	emulators
 MASTER_SITES=	SF/gtktiemu/tiemu-linux/TIEmu%20${DISTVERSION}
 DISTNAME=	tiemu-${DISTVERSION}

@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/bamf/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/sysutils/bamf/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	bamf
 PORTVERSION=	0.5.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	https://launchpadlibrarian.net/280921055/ \
 	https://launchpad.net/${PORTNAME}/${PORTVERSION:R}/${PORTVERSION}/+download/

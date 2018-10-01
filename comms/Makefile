@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 478894 2018-09-03 18:46:52Z gnn $
+# $FreeBSD: head/comms/Makefile 480915 2018-09-29 19:50:58Z db $
 #
 
     COMMENT = Communication utilities
@@ -8,6 +8,7 @@
     SUBDIR += aldo
     SUBDIR += amtterm
     SUBDIR += anyremote
+    SUBDIR += apitran
     SUBDIR += aprsd
     SUBDIR += atslog
     SUBDIR += bfhist

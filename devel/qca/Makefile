@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/devel/qca/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qca/Makefile 480827 2018-09-27 22:42:11Z linimon $
 
 PORTNAME=	qca
 PORTVERSION=	2.1.3
@@ -31,7 +31,7 @@ USES+=		qt:4
 USE_QT=		corelib moc_build qmake_build rcc_build
 .  else
 CMAKE_ARGS+=	-DQCA_SUFFIX=qt5
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=	core buildtools_build qmake_build
 .  endif
 qt4_PLIST=	${.CURDIR}/pkg-plist.qt4

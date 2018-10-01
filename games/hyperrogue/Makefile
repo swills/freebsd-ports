@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hyperrogue/Makefile 474895 2018-07-18 19:44:12Z amdmi3 $
+# $FreeBSD: head/games/hyperrogue/Makefile 480598 2018-09-24 11:14:41Z amdmi3 $
 
 PORTNAME=	hyperrogue
-PORTVERSION=	10.4j
-DISTVERSIONPREFIX=	v
+PORTVERSION=	10.4t
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -38,6 +37,9 @@ DESKTOP_ENTRIES="HyperRogue" \
 		""
 
 OPTIONS_DEFINE=	DOCS
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|isnumber|is_number|' ${WRKSRC}/archimedean.cpp
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/hr-icon.ico ${STAGEDIR}${PREFIX}/share/pixmaps/${PORTNAME}.ico

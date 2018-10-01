@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/trezord/Makefile 478292 2018-08-28 08:39:37Z ale $
+# $FreeBSD: head/security/trezord/Makefile 480603 2018-09-24 12:15:09Z ale $
 
 PORTNAME=	trezord
-PORTVERSION=	2.0.21
+PORTVERSION=	2.0.23
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -18,8 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	trezor
 GH_PROJECT=	${PORTNAME}-go
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
-
-PATCH_STRIP=	-p1
+GH_TAGNAME=	0e82873
 
 PLIST_FILES=	bin/${GH_PROJECT}
 

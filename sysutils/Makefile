@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 480509 2018-09-23 13:50:11Z tobik $
+# $FreeBSD: head/sysutils/Makefile 480951 2018-09-30 11:58:29Z kwm $
 #
 
     COMMENT = System utilities
@@ -935,6 +935,7 @@
     SUBDIR += polkit-kde
     SUBDIR += polkit-qt
     SUBDIR += pot
+    SUBDIR += potnet
     SUBDIR += powerdxx
     SUBDIR += powerman
     SUBDIR += powermon
@@ -955,8 +956,10 @@
     SUBDIR += puppet-mode.el
     SUBDIR += puppet4
     SUBDIR += puppet5
+    SUBDIR += puppet6
     SUBDIR += puppetserver
     SUBDIR += puppetserver5
+    SUBDIR += puppetserver6
     SUBDIR += pv
     SUBDIR += pwd_unmkdb
     SUBDIR += pwgen
@@ -1123,6 +1126,7 @@
     SUBDIR += rubygem-ohai8
     SUBDIR += rubygem-parallel
     SUBDIR += rubygem-puppet_forge
+    SUBDIR += rubygem-puppetserver-ca
     SUBDIR += rubygem-r10k
     SUBDIR += rubygem-rubyipmi
     SUBDIR += rubygem-serverspec
@@ -1298,6 +1302,7 @@
     SUBDIR += torque
     SUBDIR += toshctl
     SUBDIR += tracker
+    SUBDIR += tracker-miners
     SUBDIR += tree
     SUBDIR += tren
     SUBDIR += trueos-libqt5

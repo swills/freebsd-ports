@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-bullet3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/py-bullet3/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	bullet3
 DISTVERSION=	2.87
@@ -11,8 +11,6 @@ COMMENT=	Python version of 3D collision detection library Bullet
 
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
-
-BROKEN_powerpc64=	fails to compile: FontData.h:265:1: narrowing conversion of '-96' from 'int' to 'char' inside { }
 
 USES=		compiler:c++11-lang localbase python
 USE_GITHUB=	yes

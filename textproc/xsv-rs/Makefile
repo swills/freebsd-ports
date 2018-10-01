@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/xsv-rs/Makefile 469849 2018-05-14 04:51:37Z tobik $
+# $FreeBSD: head/textproc/xsv-rs/Makefile 480871 2018-09-28 17:59:24Z jbeich $
 
 PORTNAME=	xsv
 DISTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 PKGNAMESUFFIX=	-rs
 

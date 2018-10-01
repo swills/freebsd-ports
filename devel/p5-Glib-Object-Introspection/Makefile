@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Glib-Object-Introspection/Makefile 470730 2018-05-23 23:23:54Z sunpoet $
+# $FreeBSD: head/devel/p5-Glib-Object-Introspection/Makefile 480973 2018-09-30 19:41:49Z sunpoet $
 
 PORTNAME=	Glib-Object-Introspection
-PORTVERSION=	0.045
+PORTVERSION=	0.046
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,16 +16,16 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 # t/vfunc-ref-counting.t requires gobject-introspection 1.35.5+
 BUILD_DEPENDS=	p5-ExtUtils-Depends>=0.300:devel/p5-ExtUtils-Depends \
 		p5-ExtUtils-PkgConfig>=1:devel/p5-ExtUtils-PkgConfig \
-		p5-Glib2>=1.320:devel/p5-Glib2
+		${RUN_DEPENDS}
 LIB_DEPENDS=	libffi.so:devel/libffi
 RUN_DEPENDS=	p5-Glib2>=1.320:devel/p5-Glib2
 TEST_DEPENDS=	p5-Cairo-GObject>=0:devel/p5-Cairo-GObject
 
 OPTIONS_DEFINE=	TEST
 
+USES=		gnome perl5
 USE_GNOME=	introspection
 USE_PERL5=	configure
-USES=		gnome perl5
 
 # Glib::Object::Introspection requires cairo and glib20 to build
 # test libraries during build phase, therefore we add them to BUILD_DEPENDS.

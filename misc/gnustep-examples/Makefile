@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/gnustep-examples/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/misc/gnustep-examples/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	gnustep-examples
 PORTVERSION=	1.4.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	misc gnustep
 MASTER_SITES=	GNUSTEP/usr-apps
 

@@ -1,8 +1,8 @@
 # Created by: lth@FreeBSD.org
-# $FreeBSD: head/devel/p5-Test-Script/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Script/Makefile 480852 2018-09-28 10:55:01Z wen $
 
 PORTNAME=	Test-Script
-PORTVERSION=	1.23
+PORTVERSION=	1.25
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

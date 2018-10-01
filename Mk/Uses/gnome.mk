@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/Uses/gnome.mk 469965 2018-05-14 20:43:50Z kwm $
+# $FreeBSD: head/Mk/Uses/gnome.mk 480951 2018-09-30 11:58:29Z kwm $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -99,6 +99,10 @@ _USE_GNOME_ALL+=atkmm cairomm gconfmm26 glibmm gtkmm20 gtkmm24 \
 		gtkmm30 gtksourceviewmm3 libgdamm5 \
 		libgtksourceviewmm libxml++26 libsigc++12 libsigc++20 \
 		pangomm
+
+# glib-mkenums often fails with C locale
+# https://gitlab.gnome.org/GNOME/glib/issues/1430
+USE_LOCALE?=	en_US.UTF-8
 
 GNOME_MAKEFILEIN?=	Makefile.in
 SCROLLKEEPER_DIR=	/var/db/rarian

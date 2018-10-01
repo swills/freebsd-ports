@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/libinput/Makefile 433898 2017-02-11 17:51:19Z rezny $
+# $FreeBSD: head/x11/libinput/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	libinput
 PORTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://freedesktop.org/software/${PORTNAME}/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 479963 2018-09-18 00:19:31Z lwhsu $
+# $FreeBSD: head/lang/Makefile 480802 2018-09-27 15:44:56Z danfe $
 #
 
     COMMENT = Programming languages
@@ -218,6 +218,7 @@
     SUBDIR += nyan
     SUBDIR += ocaml
     SUBDIR += ocaml-autoconf
+    SUBDIR += ocaml-camlidl
     SUBDIR += ocaml-nox11
     SUBDIR += ohugs
     SUBDIR += onyx

@@ -1,9 +1,9 @@
 # Created by: Brian Somers <brian@FreeBSD.org>
-# $FreeBSD: head/multimedia/vlc/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/multimedia/vlc/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	vlc
 DISTVERSION=	2.2.8
-PORTREVISION=	11
+PORTREVISION=	13
 PORTEPOCH=	4
 CATEGORIES=	multimedia audio ipv6 net www
 MASTER_SITES=	http://download.videolan.org/pub/videolan/${PORTNAME}/${DISTVERSION:S/a$//}/ \
@@ -14,6 +14,9 @@ MAINTAINER=	multimedia@FreeBSD.org
 COMMENT?=	Qt based multimedia player and streaming server
 
 LICENSE=	GPLv2
+
+DEPRECATED=	vlc 2.x and vlc-qt4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libdvbpsi.so:multimedia/libdvbpsi \
@@ -36,7 +39,8 @@ USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
-CONFLICTS?=	vlc-qt4-*
+CONFLICTS?=	vlc-qt4-* \
+		vlc3-*
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-avcodec --enable-avformat --enable-dvbpsi \

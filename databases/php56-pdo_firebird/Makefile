@@ -1,7 +1,6 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/php56-pdo_firebird/Makefile 468288 2018-04-25 18:40:14Z acm $
+# $FreeBSD: head/databases/php56-pdo_firebird/Makefile 480602 2018-09-24 12:01:39Z ale $
 
-PORTREVISION=	1
 CATEGORIES=	databases
 
 MASTERDIR=	${.CURDIR}/../../lang/php56

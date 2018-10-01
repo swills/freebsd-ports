@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/clover/Makefile 457264 2017-12-25 23:30:54Z rezny $
+# $FreeBSD: head/lang/clover/Makefile 480747 2018-09-26 16:12:12Z emaste $
 
 PORTNAME=	clover
 PORTVERSION=	${MESAVERSION}
@@ -22,6 +22,7 @@ CONFIGURE_ARGS+=	--enable-opencl --enable-opencl-icd --disable-dri \
 			--disable-egl --disable-gbm --disable-gles2 --disable-glx \
 			--disable-va --disable-vdpau --disable-xvmc \
 			--with-gallium-drivers=r600,radeonsi	# only supported GPUs
+LDFLAGS_i386=		-Wl,-znotext
 
 #MESA_BUILD_WRKSRC=	src/util src/compiler src/mesa src/gallium
 MESA_INSTALL_WRKSRC=	src/gallium/targets/opencl src/gallium/targets/pipe-loader

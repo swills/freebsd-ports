@@ -1,5 +1,5 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/mail/claws-mail/Makefile 461043 2018-02-06 13:15:36Z amdmi3 $
+# $FreeBSD: head/mail/claws-mail/Makefile 480830 2018-09-27 22:51:25Z linimon $
 
 PORTNAME=	claws-mail
 PORTREVISION=	1
@@ -17,9 +17,10 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfontconfig.so:x11-fonts/fontconfig
 RUN_DEPENDS=	mime-support>0:misc/mime-support
 
+USES=		compiler:c++11-lang cpe desktop-file-utils gnome pathfix \
+		python:2.7,run shebangfix ssl
 USE_XORG=	ice sm
 USE_GNOME=	cairo gtk20 librsvg2
-USES=		cpe desktop-file-utils pathfix python:2.7,run shebangfix ssl
 SHEBANG_FILES=	tools/*.pl tools/*.py tools/tb2claws-mail
 INSTALLS_ICONS=	yes
 

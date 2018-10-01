@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 479602 2018-09-12 13:53:56Z brnrd $
+# $FreeBSD: head/security/Makefile 480949 2018-09-30 10:39:44Z rene $
 #
 
     COMMENT = Security tools
@@ -395,7 +395,6 @@
     SUBDIR += linux-c7-openssl
     SUBDIR += linux-c7-p11-kit
     SUBDIR += linux-c7-trousers
-    SUBDIR += lockdown
     SUBDIR += log2timeline
     SUBDIR += logcheck
     SUBDIR += luasec
@@ -449,6 +448,7 @@
     SUBDIR += ocaml-ssl
     SUBDIR += oidentd
     SUBDIR += oinkmaster
+    SUBDIR += onionscan
     SUBDIR += op
     SUBDIR += openbsm
     SUBDIR += openca-tools-forked

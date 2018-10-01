@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-fusepy/Makefile 424793 2016-10-27 21:18:50Z jbeich $
+# $FreeBSD: head/devel/py-fusepy/Makefile 480923 2018-09-29 20:36:40Z jbeich $
 
 PORTNAME=	fusepy
-PORTVERSION=	2.0.4
+PORTVERSION=	3.0.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

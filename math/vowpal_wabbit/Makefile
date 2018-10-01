@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/vowpal_wabbit/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/math/vowpal_wabbit/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	vowpal_wabbit
 PORTVERSION=	7.10
@@ -10,8 +10,6 @@ MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Fast out-of-core learning system
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
-
-BROKEN_powerpc64=	fails to compile: network.cc: 'atoi' was not declared in this scope
 
 USES=		compiler:c++11-lang libtool
 GNU_CONFIGURE=	yes

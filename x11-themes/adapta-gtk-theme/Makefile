@@ -1,5 +1,5 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/x11-themes/adapta-gtk-theme/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/x11-themes/adapta-gtk-theme/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	adapta-gtk-theme
 PORTVERSION=	3.91.2.152
@@ -16,6 +16,7 @@ LICENSE_FILE_CC-BY-SA-4.0=	${WRKSRC}/LICENSE_CC_BY_SA4
 
 BUILD_DEPENDS=	gsed:textproc/gsed \
 		inkscape:graphics/inkscape \
+		bash:shells/bash \
 		sassc:textproc/sassc
 RUN_DEPENDS=	noto>=1.0.5:x11-fonts/noto \
 		roboto-fonts-ttf>=2.134:x11-fonts/roboto-fonts-ttf

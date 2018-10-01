@@ -1,5 +1,5 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/science/paraview/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/science/paraview/Makefile 480838 2018-09-28 02:41:25Z yuri $
 
 PORTNAME=	paraview
 DISTVERSION=	5.5.1
@@ -41,6 +41,8 @@ USE_GL=		gl glu
 USE_XORG=	x11 xt xext ice xdmcp xau xcb xfixes xdamage xxf86vm xrender sm xorgproto
 USE_LDCONFIG=	yes
 USE_GSTREAMER=	yes
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}pygments
 
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS="ON" \
 		-DVTK_USE_SYSTEM_PNG="ON" \

@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <Nakai@technologist.com>
-# $FreeBSD: head/x11/libgnome/Makefile 465356 2018-03-23 13:39:40Z bapt $
+# $FreeBSD: head/x11/libgnome/Makefile 480951 2018-09-30 11:58:29Z kwm $
 #   $MCom: ports/x11/libgnome/Makefile,v 1.135 2010/09/27 20:06:45 kwm Exp $
 
 PORTNAME=	libgnome
@@ -16,7 +16,8 @@ USES=	tar:bzip2
 .if !defined(REFERENCE_PORT)
 
 BUILD_DEPENDS=	rarian-sk-config:textproc/rarian
-LIB_DEPENDS=	libcanberra-gtk.so:audio/libcanberra
+LIB_DEPENDS=	libcanberra-gtk.so:audio/libcanberra \
+		libpopt.so:devel/popt
 RUN_DEPENDS=	rarian-sk-config:textproc/rarian
 
 INSTALL_TARGET=	install-strip

@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 475557 2018-07-28 13:15:41Z sunpoet $
+# $FreeBSD: head/benchmarks/Makefile 480718 2018-09-26 06:36:51Z loader $
 #
 
     COMMENT = Benchmarking tools
@@ -37,6 +37,7 @@
     SUBDIR += iperf
     SUBDIR += iperf3
     SUBDIR += libmicro
+    SUBDIR += linux-vdbench
     SUBDIR += lmbench
     SUBDIR += lzbench
     SUBDIR += mdtest

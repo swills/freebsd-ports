@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libass/Makefile 463052 2018-02-26 22:02:48Z jbeich $
+# $FreeBSD: head/multimedia/libass/Makefile 480747 2018-09-26 16:12:12Z emaste $
 
 PORTNAME=	libass
 PORTVERSION=	0.14.0
@@ -20,6 +20,7 @@ USES=		autoreconf iconv libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+LDFLAGS_i386=	-Wl,-znotext
 
 OPTIONS_DEFINE=	HARFBUZZ
 OPTIONS_DEFAULT=HARFBUZZ

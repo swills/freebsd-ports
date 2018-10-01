@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/net/gnome-nettool/Makefile 456462 2017-12-16 09:00:35Z amdmi3 $
+# $FreeBSD: head/net/gnome-nettool/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	gnome-nettool
 PORTVERSION=	3.8.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net gnome
 MASTER_SITES=	GNOME

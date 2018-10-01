@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/pjsip/Makefile 472194 2018-06-11 17:19:29Z madpilot $
+# $FreeBSD: head/net/pjsip/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	pjsip
 PORTVERSION=	2.7.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://www.pjsip.org/release/${PORTVERSION}/
 DISTNAME=	pjproject-${DISTVERSION}

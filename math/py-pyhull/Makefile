@@ -1,9 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-pyhull/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-pyhull/Makefile 480772 2018-09-27 03:13:34Z yuri $
 
 PORTNAME=	pyhull
-PORTVERSION=	2015.2.0
-PORTREVISION=	1
+DISTVERSION=	2015.2.1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

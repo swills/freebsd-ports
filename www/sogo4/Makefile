@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/sogo4/Makefile 478431 2018-08-30 05:58:52Z acm $
+# $FreeBSD: head/www/sogo4/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=		sogo4
 PORTVERSION=		4.0.2
+PORTREVISION=	1
 CATEGORIES=		www gnustep
 MASTER_SITES=		http://www.sogo.nu/files/downloads/SOGo/Sources/
 DISTNAME=		SOGo-${PORTVERSION}

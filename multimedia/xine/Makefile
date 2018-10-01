@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/xine/Makefile 478529 2018-08-31 08:16:18Z tobik $
+# $FreeBSD: head/multimedia/xine/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	xine
 PORTVERSION=	0.99.9
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 
 USES=		desktop-file-utils gmake iconv jpeg pkgconfig readline \
 		shared-mime-info tar:xz
-USE_XORG=	x11 xext xinerama xscrnsaver xtst xv xxf86vm
+USE_XORG=	x11 xext xinerama xscrnsaver xt xtst xv xxf86vm
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-vdr-keys \
 		--disable-nvtvsimple \

@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/lang/gcc5/Makefile 480939 2018-09-30 07:35:17Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	5.5.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	lang
 MASTER_SITES=	GCC
 PKGNAMESUFFIX=	${SUFFIX}
@@ -14,7 +14,7 @@ COMMENT=	GNU Compiler Collection 5
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
-DEPRECATED=	Unsupported by upstream. Use GCC 6 or newer instead.
+DEPRECATED=	Unsupported by upstream. Use GCC 7 or newer instead.
 ONLY_FOR_ARCHS=	aarch64 amd64 arm armv6 i386 powerpc powerpc64 powerpcspe sparc64
 BROKEN_sparc64=	Does not build: bootstrap comparison failure
 

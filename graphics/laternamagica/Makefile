@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/laternamagica/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/graphics/laternamagica/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	laternamagica
 PORTVERSION=	0.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	LaternaMagica-${PORTVERSION}

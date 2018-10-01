@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 480279 2018-09-21 15:21:00Z dch $
+# $FreeBSD: head/databases/Makefile 480996 2018-10-01 02:23:40Z wen $
 #
 
     COMMENT = Databases and related software
@@ -760,10 +760,13 @@
     SUBDIR += proftpd-mod_sql_sqlite
     SUBDIR += proftpd-mod_sql_tds
     SUBDIR += pspg
+    SUBDIR += puppetdb-cli
     SUBDIR += puppetdb-terminus4
     SUBDIR += puppetdb-terminus5
+    SUBDIR += puppetdb-terminus6
     SUBDIR += puppetdb4
     SUBDIR += puppetdb5
+    SUBDIR += puppetdb6
     SUBDIR += pure-sql3
     SUBDIR += puredb
     SUBDIR += pxlib
@@ -783,6 +786,7 @@
     SUBDIR += py-bsddb
     SUBDIR += py-bsddb3
     SUBDIR += py-carbon
+    SUBDIR += py-cassandra-driver
     SUBDIR += py-cdb
     SUBDIR += py-couchdb
     SUBDIR += py-cql
@@ -1008,6 +1012,7 @@
     SUBDIR += rubygem-state_machines-activemodel
     SUBDIR += rubygem-state_machines-activerecord
     SUBDIR += rubygem-tarantool
+    SUBDIR += sequeler
     SUBDIR += sfcgal
     SUBDIR += sharedance
     SUBDIR += skytools

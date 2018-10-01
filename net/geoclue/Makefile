@@ -1,8 +1,8 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/net/geoclue/Makefile 440652 2017-05-11 20:21:48Z kwm $
+# $FreeBSD: head/net/geoclue/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	geoclue
-PORTVERSION=	2.4.3
+PORTVERSION=	2.4.7
 CATEGORIES=	net devel gnome
 MASTER_SITES=	http://www.freedesktop.org/software/geoclue/releases/${PORTVERSION:R}/
 

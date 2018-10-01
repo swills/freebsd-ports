@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/textproc/source-highlight/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/textproc/source-highlight/Makefile 480833 2018-09-27 23:01:12Z linimon $
 
 PORTNAME=	source-highlight
 DISTVERSION=	3.1.8
@@ -13,13 +13,12 @@ COMMENT=	C/C++ and Java sources to HTML converter
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	fails to configure: checking for exit in -lboost_regex... (cached) no
 BROKEN_sparc64=		fails to compile with GCC 4.2
 
 BUILD_DEPENDS=	exctags:devel/ctags
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 
-USES=		gmake pathfix libtool localbase
+USES=		compiler:c++11-lang gmake pathfix libtool localbase
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-bash-completion
 INSTALL_TARGET=	install-strip

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/sysutils/mptd/Makefile 331477 2013-10-24 11:35:03Z feld $
+# $FreeBSD: head/sysutils/mptd/Makefile 480848 2018-09-28 09:38:29Z amdmi3 $
 
 PORTNAME=	mptd
 PORTVERSION=	0.01
@@ -9,6 +9,8 @@ MASTER_SITES=	https://www.glenbarber.us/ports/${CATEGORIES}/${PORTNAME}/
 
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Monitoring daemon for mpt RAID controllers
+
+LICENSE=	BSD2CLAUSE
 
 USE_RC_SUBR=	mptd
 PLIST_FILES+=	sbin/mptd

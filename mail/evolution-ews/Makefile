@@ -1,9 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/mail/evolution-ews/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/mail/evolution-ews/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	evolution-ews
-PORTVERSION=	3.24.2
-PORTREVISION=	6
+PORTVERSION=	3.28.3
 CATEGORIES=	mail gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -11,8 +10,12 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Evolution Microsoft Exchange plugin through Exchange Web Services
 
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	evolution>=3.0.0:mail/evolution
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
+		libfribidi.so:converters/fribidi \
 		libicuuc.so:devel/icu \
 		libmspack.so:archivers/libmspack \
 		libsecret-1.so:security/libsecret \

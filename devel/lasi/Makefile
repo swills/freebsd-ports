@@ -1,5 +1,5 @@
 # Created by: giffunip
-# $FreeBSD: head/devel/lasi/Makefile 459474 2018-01-19 21:28:34Z antoine $
+# $FreeBSD: head/devel/lasi/Makefile 480646 2018-09-25 07:53:26Z linimon $
 #    $MCom: ports/devel/lasi/Makefile,v 1.1 2006/10/04 20:25:40 ahze Exp $
 
 PORTNAME=	lasi
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libltdl.so:devel/libltdl
 OPTIONS_DEFINE=	DOXYGEN EXAMPLES
 OPTIONS_SUB=	yes
 
-USES=		cmake pathfix pkgconfig
+USES=		cmake compiler:c++11-lang gnome pathfix pkgconfig
 PATHFIX_CMAKELISTSTXT=	pkg-config.cmake
 USE_GNOME=	pango
 

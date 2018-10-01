@@ -1,8 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/szap-s2/Makefile 426094 2016-11-14 09:00:17Z amdmi3 $
+# $FreeBSD: head/multimedia/szap-s2/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	szap_s2
 PORTVERSION=	20100129s
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	LOCAL/nox
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-poyo/Makefile 480280 2018-09-21 15:21:57Z matthew $
+# $FreeBSD: head/devel/py-poyo/Makefile 480964 2018-09-30 17:00:31Z matthew $
 
 PORTNAME=	poyo
-PORTVERSION=	0.4.1
+PORTVERSION=	0.4.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

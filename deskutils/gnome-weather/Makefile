@@ -1,8 +1,8 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-weather/Makefile 442621 2017-06-05 14:00:16Z kwm $
+# $FreeBSD: head/deskutils/gnome-weather/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-weather
-PORTVERSION=	3.24.0
+PORTVERSION=	3.26.0
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

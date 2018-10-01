@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng36/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/sysutils/syslog-ng36/Makefile 480832 2018-09-27 22:59:12Z linimon $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.6.4
@@ -15,11 +15,10 @@ PKGNAMESUFFIX=	36
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Powerful syslogd replacement
 
+BROKEN_sparc64=		fails to compile: gcc core dump
+
 LIB_DEPENDS=	libevtlog.so:sysutils/eventlog \
 		libpcre.so:devel/pcre
-
-BROKEN_powerpc64=	fails to link: cc: Internal error: Segmentation fault (program ld)
-BROKEN_sparc64=		fails to compile: gcc core dump
 
 CONFLICTS?=	syslog-ng-[0-9]* syslog-ng[0-9]-[0-9]* \
 		syslog-ng[0-9][0-9]-[0-9]* \
@@ -38,7 +37,7 @@ JSON_DESC=		Build with JSON-C support
 GEOIP_DESC=		Build with GeoIP support
 REDIS_DESC=		Build with Redis support
 
-USES=		alias gmake libtool pathfix pkgconfig
+USES=		alias compiler:c11 gmake libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	syslog-ng
 GNU_CONFIGURE=	yes

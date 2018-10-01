@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/performance/Makefile 479351 2018-09-10 02:06:12Z linimon $
+# $FreeBSD: head/devel/performance/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	performance
 PORTVERSION=	0.5.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel gnustep
 MASTER_SITES=	GNUSTEP/libs
 DISTNAME=	Performance-${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/sysutils/osquery/Makefile 480702 2018-09-25 22:14:39Z brooks $
 
 PORTNAME=	osquery
 PORTVERSION=	3.2.6
@@ -69,9 +69,9 @@ LLDPD_CONFIGURE_ENV_OFF=SKIP_LLDPD=1
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 1100000
-BUILD_DEPENDS+=	clang40:devel/llvm40
-CC=	clang40
-CXX=	clang++40
+BUILD_DEPENDS+=	clang60:devel/llvm60
+CC=	clang60
+CXX=	clang++60
 .endif
 
 post-patch:

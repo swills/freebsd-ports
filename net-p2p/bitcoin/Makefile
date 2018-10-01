@@ -1,8 +1,8 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/bitcoin/Makefile 479993 2018-09-18 08:30:37Z linimon $
+# $FreeBSD: head/net-p2p/bitcoin/Makefile 480928 2018-09-29 21:40:00Z kbowling $
 
 PORTNAME=	bitcoin
-PORTVERSION=	0.16.2
+PORTVERSION=	0.16.3
 PORTREVISION?=	0
 CATEGORIES=	net-p2p finance
 MASTER_SITES=	https://bitcoincore.org/bin/bitcoin-core-${PORTVERSION}/:DEFAULT \

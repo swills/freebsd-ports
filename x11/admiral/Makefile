@@ -1,9 +1,10 @@
-# $FreeBSD: head/x11/admiral/Makefile 474690 2018-07-15 13:34:37Z tcberner $
+# $FreeBSD: head/x11/admiral/Makefile 480871 2018-09-28 17:59:24Z jbeich $
 
 PORTNAME=	admiral
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.0-7
 DISTVERSIONSUFFIX=	-g5a9f33b
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	lebarondemerde@privacychain.ch

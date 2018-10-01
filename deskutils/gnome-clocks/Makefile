@@ -1,11 +1,11 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-clocks/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/deskutils/gnome-clocks/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-clocks
-PORTVERSION=	3.24.0
+PORTVERSION=	3.28.0
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
-DIST_SUBDIR=	gnome3
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Clocks for GNOME 3
@@ -23,11 +23,12 @@ LIB_DEPENDS=	libgeoclue-2.so:net/geoclue \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake gnome libtool localbase pathfix pkgconfig tar:xz
+USES=		gettext gnome localbase meson pkgconfig python:3.4+,build \
+		shebangfix tar:xz
 USE_LDCONFIG=	yes
 USE_GNOME=	cairo gnomedesktop3 gsound
-GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
+SHEBANG_FILES=	build-aux/post-install.py
 
 GLIB_SCHEMAS=	org.gnome.clocks.gschema.xml
 

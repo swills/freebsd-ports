@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/textproc/yelp-tools/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/yelp-tools/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	yelp-tools
-PORTVERSION=	3.18.0
+PORTVERSION=	3.28.0
 CATEGORIES=	textproc gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/sope4/Makefile 478430 2018-08-30 05:57:57Z acm $
+# $FreeBSD: head/devel/sope4/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=		sope4
 PORTVERSION=		4.0.2
+PORTREVISION=	1
 CATEGORIES=		devel gnustep
 MASTER_SITES=		http://www.sogo.nu/files/downloads/SOGo/Sources/
 DISTNAME=		SOPE-${PORTVERSION}
@@ -28,6 +29,7 @@ MEMCACHED_DESC=		Install memcached
 USES=			gmake iconv gnustep
 USE_GNUSTEP=		base build
 USE_LDCONFIG=		${GNUSTEP_LOCAL_LIBRARIES}
+LLD_UNSAFE=		yes # PR 230608
 
 CONFLICTS=		sope2-[0-9]* sope3-[0-9]*
 

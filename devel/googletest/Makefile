@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/googletest/Makefile 478607 2018-08-31 20:14:40Z jbeich $
+# $FreeBSD: head/devel/googletest/Makefile 480989 2018-10-01 00:31:09Z jbeich $
 
 PORTNAME=	googletest
 DISTVERSIONPREFIX=	release-
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
 
-USES=		autoreconf libtool
+USES=		autoreconf compiler:c++11-lang libtool
 WRKSRC_SUBDIR=	${PORTNAME}
 GNU_CONFIGURE=	yes
 # fused-src python tests are only useful for bundling. There's no point in

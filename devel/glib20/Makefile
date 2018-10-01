@@ -1,9 +1,9 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/devel/glib20/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/glib20/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	glib
-PORTVERSION=	2.50.3
-PORTREVISION=	5
+PORTVERSION=	2.56.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
@@ -39,11 +39,11 @@ INSTALL_TARGET=	install-strip
 
 SHEBANG_FILES=	*/*.pl
 
-LIBVERSION=	0.5000.3
+LIBVERSION=	0.5600.1
 PLIST_SUB+=	LIBVERSION=${LIBVERSION}
 
 glib_MAN=	gtester.1 gtester-report.1 glib-gettextize.1
-gio_MAN=	gdbus.1 gsettings.1 gio-querymodules.1 \
+gio_MAN=	gdbus.1 gsettings.1 gio-querymodules.1 gio.1 \
 		glib-compile-schemas.1 gapplication.1 \
 		glib-compile-resources.1 gresource.1 gdbus-codegen.1
 gobject_MAN=	glib-genmarshal.1 glib-mkenums.1 gobject-query.1

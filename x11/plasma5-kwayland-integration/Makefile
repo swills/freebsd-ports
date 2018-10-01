@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/plasma5-kwayland-integration/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11/plasma5-kwayland-integration/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	kwayland-integration
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

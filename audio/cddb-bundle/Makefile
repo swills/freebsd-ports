@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/cddb-bundle/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/audio/cddb-bundle/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	cddb
 PORTVERSION=	0.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio gnustep
 MASTER_SITES=	SF/gsburn/cdplayer/${DISTNAME}
 PKGNAMESUFFIX=	-bundle${PKGNAMESUFFIX2}

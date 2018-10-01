@@ -1,9 +1,8 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-shell-extension-audio-output-switcher/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/deskutils/gnome-shell-extension-audio-output-switcher/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-shell-extension-audio-output-switcher
-PORTVERSION=	0.0.0.20140520
-PORTREVISION=	4
+PORTVERSION=	0.0.0.20171022
 CATEGORIES=	deskutils gnome
 DIST_SUBDIR=	gnome3
 
@@ -15,22 +14,20 @@ BUILD_DEPENDS=	gnome-shell>=0:x11/gnome-shell \
 RUN_DEPENDS=	gnome-shell>=0:x11/gnome-shell \
 		gsettings-desktop-schemas>=3.12.0:devel/gsettings-desktop-schemas
 
-USES=		gettext gmake gnome pkgconfig
+USES=		gettext gmake gnome localbase pkgconfig
 USE_GNOME=	glib20
 USE_GITHUB=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
-GH_ACCOUNT=	anduchs
-GH_TAGNAME=	2bec66d
+GH_ACCOUNT=	adaxi
 GH_PROJECT=	audio-output-switcher
+GH_TAGNAME=	89e6e29
 
 PKGMESSAGE=	../gnome-shell-extra-extensions/pkg-message.slaves
 
 NO_BUILD=	yes
 
 post-patch:
-		@${REINPLACE_CMD} -e 's|3.12"|3.12","3.14","3.16", "3.18"|g' \
+		@${REINPLACE_CMD} -e 's|"3.26"|"3.26", "3.28"|g' \
 			${WRKSRC}/metadata.json
 
 do-install:

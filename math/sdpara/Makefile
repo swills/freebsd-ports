@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/sdpara/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/sdpara/Makefile 480781 2018-09-27 05:28:49Z antoine $
 
 PORTNAME=	sdpara
 PORTVERSION=	7.3.1
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SDPARA parallel version of SDPA (math/sdpa)
 
 LICENSE=	GPLv2 # (or later)
+
+BROKEN=		conflicting dependencies
 
 LIB_DEPENDS=	libblacs.so:math/blacs \
 		libscalapack.so:math/scalapack \

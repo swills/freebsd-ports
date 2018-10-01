@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/deskutils/mdh/Makefile 455121 2017-11-29 16:15:52Z amdmi3 $
+# $FreeBSD: head/deskutils/mdh/Makefile 480982 2018-09-30 20:27:44Z kwm $
 
 PORTNAME=	mdh
 PORTVERSION=	1.9.60
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://www.gozer.org/programs/gtk/files/
 

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/unit-go/Makefile 455874 2017-12-09 19:46:42Z lwhsu $
+# $FreeBSD: head/www/unit-go/Makefile 480821 2018-09-27 21:40:07Z osa $
 
 PKGNAMESUFFIX=	-go
 
@@ -9,23 +9,23 @@ USES=		go
 
 PLIST_FILES=	# reset to empty
 PLIST_DIRS=	# reset to empty
-PLIST=	${.CURDIR}/pkg-plist
+PLIST=		${.CURDIR}/pkg-plist
 
 USE_RC_SUBR?=	# reset to empty
 
 MASTERDIR=	${.CURDIR}/../unit
 
 CGO_CFLAGS+=	-I${WRKSRC}/src -I${WRKSRC}/build
+GO_PKGNAME=	nginx/unit
 
 post-extract:
-	${MKDIR} ${GO_WRKSRC:H}
-	${LN} -sf ${WRKSRC}/src/go/unit ${GO_WRKSRC}
+	@true # override master's
 
 post-configure:
-	cd ${WRKSRC} && env ${GO_ENV} ./configure go
+	cd ${WRKSRC} && ${SETENV} ${GO_ENV} ./configure go --go-path=${WRKDIR}
 
 pre-build:
-	cd ${WRKSRC} && make go
+	cd ${WRKSRC} && ${MAKE} go-install
 
 post-install:
 	@true # override master's

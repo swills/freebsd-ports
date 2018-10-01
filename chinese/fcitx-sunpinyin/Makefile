@@ -1,8 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-sunpinyin/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/fcitx-sunpinyin/Makefile 480649 2018-09-25 07:58:06Z wen $
 
 PORTNAME=	fcitx-sunpinyin
-PORTVERSION=	0.4.1
+PORTVERSION=	0.4.2
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/nginx-devel/Makefile.extmod 480081 2018-09-18 21:56:19Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile.extmod 480657 2018-09-25 09:56:02Z osa $
 
 ### External modules
 AJP_GH_TUPLE=		yaoweibin:nginx_ajp_module:bf6cd93:ajp
@@ -222,7 +222,7 @@ NAXSI_VARS=		DSO_EXTMODS+=naxsi NAXSI_SUBDIR=/naxsi_src
 NJS_GH_TUPLE=		nginx:njs:95b46dc:njs
 NJS_VARS=		DSO_EXTMODS+=njs NJS_SUBDIR=/nginx
 
-PASSENGER_NGINX_VER=	5.3.4
+PASSENGER_NGINX_VER=	5.3.5
 PASSENGER_CATEGORIES=	ruby
 PASSENGER_USE=		ruby=yes
 PASSENGER_BUILD_DEPENDS=${LOCALBASE}/bin/rake:devel/rubygem-rake

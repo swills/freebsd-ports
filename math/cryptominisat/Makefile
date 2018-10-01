@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cryptominisat/Makefile 476827 2018-08-10 10:20:15Z arrowd $
+# $FreeBSD: head/math/cryptominisat/Makefile 480642 2018-09-25 07:29:25Z linimon $
 
 PORTNAME=	cryptominisat
 DISTVERSION=	5.6.3
@@ -12,8 +12,6 @@ LICENSE=	MIT LGPL21
 LICENSE_COMB=	multi
 LICENSE_FILE_LGPL21=	${WRKSRC}/LICENSE.txt
 LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.txt
-
-BROKEN_powerpc64=	fails to compile: main.cpp: undefined reference to boost::program_options::abstract_variables_map::operator[]
 
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs
 

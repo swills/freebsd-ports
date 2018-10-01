@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/mupen64plus-core/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/emulators/mupen64plus-core/Makefile 480747 2018-09-26 16:12:12Z emaste $
 
 PORTNAME=	mupen64plus
 PORTVERSION?=	2.5
@@ -19,6 +19,7 @@ USE_GL?=	yes
 USE_SDL?=	sdl2
 USE_LDCONFIG?=	yes
 ONLY_FOR_ARCHS=	i386 amd64
+LDFLAGS_i386=	-Wl,-znotext
 
 OPTFLAGS=	#
 

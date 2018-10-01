@@ -1,9 +1,9 @@
 # Created by: archfan <mail_me@riseup.net>
-# $FreeBSD: head/x11-themes/gtk-arc-themes/Makefile 439438 2017-04-26 10:57:39Z kwm $
+# $FreeBSD: head/x11-themes/gtk-arc-themes/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gtk-arc-themes
 PORTVERSION=	20170302
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-themes
 
 MAINTAINER=	mail_me@riseup.net
@@ -13,9 +13,9 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	gtk-murrine-engine>0:x11-themes/gtk-murrine-engine \
-		gnome-themes-standard>0:x11-themes/gnome-themes-standard
+		gnome-themes-extra>0:x11-themes/gnome-themes-extra
 RUN_DEPENDS=	gtk-murrine-engine>0:x11-themes/gtk-murrine-engine \
-		gnome-themes-standard>0:x11-themes/gnome-themes-standard
+		gnome-themes-extra>0:x11-themes/gnome-themes-extra
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	horst3180

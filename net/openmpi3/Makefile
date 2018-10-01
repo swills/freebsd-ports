@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/openmpi3/Makefile 479576 2018-09-12 00:29:38Z danilo $
+# $FreeBSD: head/net/openmpi3/Makefile 480705 2018-09-25 22:25:35Z danilo $
 
 PORTNAME=	openmpi
 PORTVERSION=	3.1.2
+PORTREVISION=	1
 CATEGORIES=	net parallel
 MASTER_SITES=	http://www.open-mpi.org/software/ompi/v${PORTVERSION:R}/downloads/
 PKGNAMESUFFIX=	3
@@ -22,11 +23,12 @@ LIB_DEPENDS=	libhwloc.so:devel/hwloc \
 		libevent.so:devel/libevent \
 		libmunge.so:security/munge
 
-HAS_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
 # :keepla because port uses lt_dlopen
 USES=		fortran gmake libtool:keepla localbase perl5 \
 		pkgconfig shebangfix tar:bzip2
+
+HAS_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
 USE_PERL5=	build
 
 MPIBASE?=	mpi
@@ -43,7 +45,6 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX}/${MPIDIR} \
 			--enable-mpi-fortran=usempi \
 			--enable-mpi-cxx \
 			--enable-cxx-exceptions \
-			--enable-heterogeneous \
 			--enable-mpi-thread-multiple \
 			--with-libevent=external \
 			--enable-mca-no-build=verbs,btl_openib,oob_ud \

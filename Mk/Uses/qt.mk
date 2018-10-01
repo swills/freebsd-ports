@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/qt.mk 479286 2018-09-09 11:12:14Z tcberner $
+# $FreeBSD: head/Mk/Uses/qt.mk 480692 2018-09-25 20:12:03Z tcberner $
 #
 # There are three Qt related USES files with different access to Qt.
 #   - qmake: The port requires Qt's qmake to build -- creates the configure target
@@ -30,7 +30,7 @@ _QT_MK_INCLUDED=	qt.mk
 # Qt versions currently supported by the framework.
 _QT_SUPPORTED?=		4 5
 QT4_VERSION?=		4.8.7
-QT5_VERSION?=		5.11.1
+QT5_VERSION?=		5.11.2
 
 # We accept the Qt version to be passed by either or all of the three mk files.
 .  if empty(qt_ARGS) && empty(qmake_ARGS) && empty(qt-dist_ARGS)

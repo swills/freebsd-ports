@@ -1,5 +1,5 @@
 # Created by: jpaetzel@FreeBSD.org
-# $FreeBSD: head/sysutils/catfish/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/catfish/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	catfish
 PORTVERSION=	1.4.6
@@ -18,7 +18,8 @@ RUN_DEPENDS=	\
 	gksu:sysutils/gksu
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
-USES=		desktop-file-utils python:2.7 tar:bz2
+USES=		desktop-file-utils gettext-tools gnome python:2.7 tar:bz2
+NO_ARCH=	yes
 USE_PYTHON=	distutils
 USE_GNOME=	gtk30 intltool pygobject3
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/mygui/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-toolkits/mygui/Makefile 480604 2018-09-24 12:26:06Z linimon $
 
 PORTNAME=	mygui
 PORTVERSION=	3.2.3.git20171212
@@ -21,8 +21,6 @@ LIB_DEPENDS+=	libMyGUIEngine.so:x11-toolkits/mygui
 BUILD_WRKSRC=	${WRKSRC}/${MYGUI_SUBDIR}
 INSTALL_WRKSRC=	${WRKSRC}/${MYGUI_SUBDIR}
 .endif
-
-BROKEN_powerpc64=	fails to build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	MyGUI

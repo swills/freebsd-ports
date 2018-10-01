@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/libepoxy/Makefile 443565 2017-06-14 12:04:11Z kwm $
+# $FreeBSD: head/graphics/libepoxy/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	libepoxy
-PORTVERSION=	1.4.3
+PORTVERSION=	1.5.2
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/anholt/${PORTNAME}/releases/download/${PORTVERSION}/
 
@@ -25,6 +25,6 @@ OPTIONS_EXCLUDE_mips=	EGL
 
 EGL_DESC=	Build EGL support
 EGL_USE=	GL=egl
-EGL_MESON_YES=	enable-egl
+EGL_MESON_YES=	egl
 
 .include <bsd.port.mk>

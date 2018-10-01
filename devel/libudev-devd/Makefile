@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libudev-devd/Makefile 446463 2017-07-23 11:41:13Z kwm $
+# $FreeBSD: head/devel/libudev-devd/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	libudev-devd
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org

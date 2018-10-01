@@ -1,9 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/deskutils/kdepimlibs-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
+# $FreeBSD: head/deskutils/kdepimlibs-kde4/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	kdepimlibs
 PORTVERSION=	${KDE4_KDEPIM_VERSION}
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	deskutils kde
 MASTER_SITES=	KDE/${KDE4_APPLICATIONS_BRANCH}/applications/${KDE4_APPLICATIONS_VERSION}/src
 DIST_SUBDIR=	KDE/${PORTVERSION}

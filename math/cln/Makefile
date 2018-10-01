@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/cln/Makefile 473530 2018-06-29 07:36:14Z linimon $
+# $FreeBSD: head/math/cln/Makefile 480717 2018-09-26 06:36:20Z wen $
 
 PORTNAME=	cln
 PORTVERSION=	1.3.4
@@ -25,6 +25,9 @@ INFO=		cln
 
 .if ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7
 CPPFLAGS+=	-DNO_ASM
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-src_base_cl__low.h \
+		${PATCHDIR}/extra-patch-src_base_low_cl__low__div.cc \
+		${PATCHDIR}/extra-patch-src_base_low_cl__low__mul.cc
 .endif
 
 .include <bsd.port.post.mk>

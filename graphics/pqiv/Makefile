@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/graphics/pqiv/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/pqiv/Makefile 480737 2018-09-26 13:13:48Z linimon $
 
 PORTNAME=	pqiv
 PORTVERSION=	2.10.4
@@ -10,7 +10,7 @@ COMMENT=	Pretty Quick Image Viewer
 
 LICENSE=	GPLv2
 
-BROKEN_powerpc64=	fails to compile: pqiv.c:1183: #pragma GCC diagnostic not allowed inside functions
+BROKEN_powerpc64=	fails to compile: pqiv.c:1183: \#pragma GCC diagnostic not allowed inside functions
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2

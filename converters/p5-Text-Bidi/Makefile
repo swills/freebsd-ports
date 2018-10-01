@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Text-Bidi/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-Text-Bidi/Makefile 480586 2018-09-24 11:13:16Z sunpoet $
 
 PORTNAME=	Text-Bidi
 PORTVERSION=	2.12
@@ -12,13 +12,14 @@ COMMENT=	Perl interface to the libfribidi
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-ExtUtils-PkgConfig>=0:devel/p5-ExtUtils-PkgConfig \
 		swig3.0:devel/swig30
 LIB_DEPENDS=	libfribidi.so:converters/fribidi
 
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Text/Bidi/private/private.so

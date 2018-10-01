@@ -1,5 +1,5 @@
 # Created by: Jeroen Ruigrok van der Werven <asmodai@FreeBSD.org>
-# $FreeBSD: head/emulators/tuxnes/Makefile 340296 2014-01-19 13:49:20Z miwi $
+# $FreeBSD: head/emulators/tuxnes/Makefile 480740 2018-09-26 13:55:28Z emaste $
 
 PORTNAME=	tuxnes
 PORTVERSION=	0.75
@@ -29,6 +29,10 @@ DESKTOP_ENTRIES="TuxNES" "" "${PREFIX}/share/pixmaps/tuxnes.xpm" \
 
 .if ${COMPILER_TYPE} == "clang"
 CPPFLAGS+=	-no-integrated-as
+.endif
+.if ${ARCH} == "i386"
+# Build tool "compdata" segfaults when linked with lld
+LLD_UNSAFE=	yes
 .endif
 
 post-patch:

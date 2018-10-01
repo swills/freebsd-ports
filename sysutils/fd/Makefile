@@ -1,10 +1,10 @@
 # Created by: Andrey Cherkashin <andoriyu@gmail.com>
-# $FreeBSD: head/sysutils/fd/Makefile 468993 2018-05-03 22:43:22Z jbeich $
+# $FreeBSD: head/sysutils/fd/Makefile 480871 2018-09-28 17:59:24Z jbeich $
 
 PORTNAME=	fd
 DISTVERSIONPREFIX=	v
 DISTVERSION=	7.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-find
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/innerspace/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/x11/innerspace/Makefile 480741 2018-09-26 15:23:37Z brooks $
 
 PORTNAME=	innerspace
 PORTVERSION=	0.2.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11 gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	InnerSpace-${PORTVERSION}

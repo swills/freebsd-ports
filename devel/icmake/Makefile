@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/icmake/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/devel/icmake/Makefile 480536 2018-09-23 22:06:04Z antoine $
 
 PORTNAME=	icmake
 PORTVERSION=	9.02.08
@@ -103,4 +103,4 @@ do-build:
 do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./icm_install strip all ${STAGEDIR}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

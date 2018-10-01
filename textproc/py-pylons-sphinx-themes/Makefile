@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pylons-sphinx-themes/Makefile 480490 2018-09-23 11:14:22Z sunpoet $
+# $FreeBSD: head/textproc/py-pylons-sphinx-themes/Makefile 480755 2018-09-26 19:18:25Z sunpoet $
 
 PORTNAME=	pylons-sphinx-themes
-PORTVERSION=	1.0.8
+PORTVERSION=	1.0.10
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

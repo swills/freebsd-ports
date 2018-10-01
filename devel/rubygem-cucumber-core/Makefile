@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-cucumber-core/Makefile 475769 2018-07-29 19:18:39Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cucumber-core/Makefile 480678 2018-09-25 16:09:12Z sunpoet $
 
 PORTNAME=	cucumber-core
-PORTVERSION=	3.2.0
+PORTVERSION=	3.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,10 +13,11 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-cucumber-tag_expressions>=1.1.0:devel/rubygem-cucumber-tag_expressions \
-		rubygem-gherkin>=5.0.0:textproc/rubygem-gherkin
+		rubygem-gherkin>=5.0:textproc/rubygem-gherkin
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

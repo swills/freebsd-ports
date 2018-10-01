@@ -1,5 +1,5 @@
 # Created by: chuynh@biolateral.com.au
-# $FreeBSD: head/biology/tRNAscan-SE/Makefile 473544 2018-06-29 12:43:19Z antoine $
+# $FreeBSD: head/biology/tRNAscan-SE/Makefile 480837 2018-09-28 00:12:48Z wen $
 
 PORTNAME=	tRNAscan-SE
 PORTVERSION=	2.0.0
@@ -13,8 +13,6 @@ COMMENT=	Searching for tRNA genes in genomic sequence
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		missing plist
 
 RUN_DEPENDS=	cmsearch:biology/infernal
 

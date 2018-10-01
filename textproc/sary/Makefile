@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/textproc/sary/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/textproc/sary/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	sary
 PORTVERSION=	1.2.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	http://sary.sourceforge.net/
 

@@ -1,9 +1,9 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/multimedia/spook/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/spook/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	spook
 PORTVERSION=	20050207
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.litech.org/spook/dist/
 

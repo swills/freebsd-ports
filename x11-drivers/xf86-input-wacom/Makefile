@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-input-wacom/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-input-wacom/Makefile 480899 2018-09-29 08:04:27Z riggs $
 
 PORTNAME=	xf86-input-wacom
 PORTVERSION=	0.36.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-drivers
 MASTER_SITES=	https://github.com/linuxwacom/${PORTNAME}/releases/download/${DISTNAME}/
 

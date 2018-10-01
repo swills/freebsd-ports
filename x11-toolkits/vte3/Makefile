@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/vte3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-toolkits/vte3/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	vte
-PORTVERSION=	0.50.3
+PORTVERSION=	0.52.2
 PORTREVISION=	1
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
@@ -17,11 +17,12 @@ LICENSE=	LGPL21
 BUILD_DEPENDS=	vapigen:lang/vala \
 		bash:shells/bash
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
+		libfribidi.so:converters/fribidi \
 		libpcre2-8.so:devel/pcre2
 
 PORTSCOUT=	limitw:1,even
 
-USES=		compiler:c++0x gettext gmake gnome gperf libtool localbase \
+USES=		compiler:c++11-lang gettext gmake gnome gperf libtool localbase \
 		pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
@@ -32,5 +33,11 @@ CONFIGURE_ARGS=	--enable-introspection \
 INSTALL_TARGET=	install-strip
 
 PLIST_SUB=	VERSION=2.91
+
+.include <bsd.port.options.mk>
+
+.if ${OSVERSION} <= 1100000
+EXTRA_PATCHES=	${FILESDIR}/extra-src_app_app.cc
+.endif
 
 .include <bsd.port.mk>

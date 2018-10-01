@@ -1,29 +1,35 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-shell-extension-recent-items/Makefile 403692 2015-12-13 21:46:45Z kwm $
+# $FreeBSD: head/deskutils/gnome-shell-extension-recent-items/Makefile 480951 2018-09-30 11:58:29Z kwm $
 
 PORTNAME=	gnome-shell-extension-recent-items
-PORTVERSION=	13
+PORTVERSION=	15
 CATEGORIES=	deskutils gnome
-MASTER_SITES=	http://www.bananenfisch.net/code/
-DISTNAME=	RecentItems-${PORTVERSION}
 DIST_SUBDIR=	gnome3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Recent items extensions for the GNOME3 shell
 
-WRKSRC=		${WRKDIR}/RecentItems@bananenfisch.net
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	bananenfisch
+GH_PROJECT=	RecentItems
 
 PKGMESSAGE=	../gnome-shell-extra-extensions/pkg-message.slaves
 
 NO_BUILD=	yes
 
+post-patch:
+		@${REINPLACE_CMD} -e 's|"3.22"|"3.22","3.24","3.26","3.28"|g' \
+			${WRKSRC}/metadata.json
+
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/gnome-shell/extensions/RecentItems@bananenfisch.net
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . \
 		${STAGEDIR}${PREFIX}/share/gnome-shell/extensions/RecentItems@bananenfisch.net
-	@chmod +r ${STAGEDIR}${PREFIX}/share/gnome-shell/extensions/RecentItems@bananenfisch.net/metadata.json
 
 .include <bsd.port.mk>

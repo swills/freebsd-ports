@@ -1,9 +1,10 @@
-# $FreeBSD: head/misc/py-SoapySDR/Makefile 473425 2018-06-27 08:41:01Z yuri $
+# $FreeBSD: head/misc/py-SoapySDR/Makefile 480622 2018-09-24 18:39:25Z yuri $
 
 PORTNAME=	SoapySDR
 DISTVERSIONPREFIX=	soapy-sdr-
 DISTVERSION=	0.6.1-71
 DISTVERSIONSUFFIX=	-g69c16e9
+PORTREVISION=	1
 CATEGORIES=	misc hamradio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -16,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE_1_0.txt
 BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libSoapySDR.so:misc/soapysdr
 
-USES=		cmake:outsource python
+USES=		cmake:outsource compiler:c++11-lang python
 USE_GITHUB=	yes
 GH_ACCOUNT=	pothosware
 USE_PYTHON=	flavors

@@ -1,5 +1,5 @@
 # Created by: Joep Grooten <joep@di.nl>
-# $FreeBSD: head/devel/doxygen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/doxygen/Makefile 480650 2018-09-25 08:26:39Z arved $
 
 PORTNAME=	doxygen
 PORTVERSION=	1.8.14
@@ -15,9 +15,7 @@ COMMENT=	Documentation system for C, C++, and other languages
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to link: ../lib/lib_doxygen.a(language.cpp.o)(.text+0xb6c): sibling call optimization to `_ZN12ConfigValuesD1Ev' does not allow automatic multiple TOCs
-
-USES=		bison cmake:outsource,noninja iconv python shebangfix
+USES=		bison cmake:outsource,noninja compiler:c++11-lang iconv python shebangfix
 ALL_TARGET=	all
 CMAKE_ARGS+=	-DDOC_INSTALL_DIR:PATH=${DOCSDIR_REL}
 # Parallel jobs breaks when the DOCS option is on

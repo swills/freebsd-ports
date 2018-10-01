@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/graphics/rubygem-mini_magick/Makefile 480418 2018-09-22 16:45:23Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-mini_magick/Makefile 480762 2018-09-26 19:19:03Z sunpoet $
 
 PORTNAME=	mini_magick
-PORTVERSION=	4.9.0
+PORTVERSION=	4.9.2
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

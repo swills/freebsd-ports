@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/gstreamer-ffmpeg/Makefile 477647 2018-08-20 10:36:02Z riggs $
+# $FreeBSD: head/multimedia/gstreamer-ffmpeg/Makefile 480747 2018-09-26 16:12:12Z emaste $
 #    $MCom: ports/multimedia/gstreamer-ffmpeg/Makefile,v 1.14 2006/07/20 13:40:27 ahze Exp $
 
 PORTNAME=	gstreamer
@@ -27,6 +27,7 @@ USE_LDCONFIG=	yes
 USE_GSTREAMER=	yes
 GNU_CONFIGURE=	yes
 PLIST_SUB=	VERSION="${PORTVERSION:R}"
+LDFLAGS_i386=	-Wl,-znotext
 
 OPTIONS_DEFINE=	FFMPEG
 FFMPEG_DESC?=	Use system ffmpeg instead of internal libav
