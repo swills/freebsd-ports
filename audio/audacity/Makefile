@@ -2,9 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	audacity
-PORTVERSION=	2.2.2
+PORTVERSION=	2.3.0
 DISTVERSIONPREFIX=	Audacity-
-PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	xxjack12xx@gmail.com
@@ -27,6 +26,8 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 
 USES=		autoreconf compiler:c++11-lib cpe desktop-file-utils gettext-tools gmake iconv libtool pkgconfig shared-mime-info shebangfix dos2unix localbase
 GNU_CONFIGURE=	yes
+MOD_SCRIPT_PIPE_USES=	python:3.6+
+MOD_NYQ_BENCH_USES=	python:3.6+
 NLS_USES=	gettext-runtime
 NLS_CONFIGURE_ENABLE=	nls
 NLS_CONFIGURE_WITH=	libintl-prefix="${LOCALBASE}"
@@ -40,7 +41,7 @@ SHEBANG_FILES=	lib-src/lv2/build
 USE_GITHUB=	yes
 
 OPTIONS_DEFINE=	NLS DEBUG DOCS DYNLOAD FFMPEG FLAC ID3TAG LADSPA LAME LV2 \
-		MAD SBSMS SOUNDTOUCH TWOLAME VAMP VORBIS VST
+		MAD MOD_SCRIPT_PIPE MOD_NYQ_BENCH SBSMS SOUNDTOUCH TWOLAME VAMP VORBIS VST
 OPTIONS_DEFAULT=	FLAC ID3TAG LADSPA MAD \
 			SBSMS SOUNDTOUCH TWOLAME VAMP VORBIS VST
 
@@ -53,6 +54,8 @@ DYNLOAD_DESC=	Enable dynamic loading of lame and FFmpeg
 LAME_DESC=	Use lame for import and export support
 LV2_DESC=	Add LV2 plug-in support
 MAD_DESC=	Use libmad for mp2/3 decoding support
+MOD_SCRIPT_PIPE_DESC=	mod-script-pipe scripting support
+MOD_NYQ_BENCH_DESC=	Enable Nyquist Workbench
 SBSMS_DESC=	Use libsbsms for pitch and tempo changing
 SOUNDTOUCH_DESC=	Use libSoundTouch for pitch and tempo changing
 TAGLIB_DESC=	Use TagLib for metadata support
@@ -101,9 +104,6 @@ JACK_LIB_DEPENDS=	libjack.so:audio/jack
 LADSPA_CONFIGURE_ENABLE=	ladspa
 LADSPA_RUN_DEPENDS=	listplugins:audio/ladspa
 
-MAD_CONFIGURE_WITH=	libmad=system
-MAD_LIB_DEPENDS=	libmad.so:audio/libmad
-
 LAME_CONFIGURE_ON=	--with-lame=system
 LAME_CONFIGURE_OFF=	--with-lame	# --without-lame is broken
 LAME_CPPFLAGS=		-I${LOCALBASE}/include
@@ -113,6 +113,14 @@ LAME_LIB_DEPENDS=	libmp3lame.so:audio/lame
 LV2_CONFIGURE_WITH=	lv2=system
 LV2_LIB_DEPENDS=	liblilv-0.so:audio/lilv \
 			libsuil-0.so:audio/suil
+
+MAD_CONFIGURE_WITH=	libmad=system
+MAD_LIB_DEPENDS=	libmad.so:audio/libmad
+
+MOD_SCRIPT_PIPE_CONFIGURE_WITH= mod-script-pipe
+MOD_NYQ_BENCH_CONFIGURE_WITH=	mod-nyq-bench
+
+NLS_CONFIGURE_OFF=	--disable-nls
 
 SBSMS_CONFIGURE_WITH=	sbsms
 
