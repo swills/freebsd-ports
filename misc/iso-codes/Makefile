@@ -2,9 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	iso-codes
-PORTVERSION=	3.76
+PORTVERSION=	4.1
 CATEGORIES=	misc
-MASTER_SITES=	http://pkg-isocodes.alioth.debian.org/downloads/
+MASTER_SITES=	https://salsa.debian.org/iso-codes-team/iso-codes/uploads/049ce6aac94d842be809f4063950646c/
 
 MAINTAINER=	kwm@FreeBSD.org
 COMMENT=	Lists of the country, language, and currency iso names
