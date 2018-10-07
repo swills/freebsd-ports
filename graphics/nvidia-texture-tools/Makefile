@@ -26,7 +26,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	castano
 GH_TAGNAME=	${PORTVERSION:R}
 
-USES=		alias cmake jpeg
+USES=		alias cmake compiler:c++11-lang jpeg
 CMAKE_ARGS=	-DNVTT_SHARED=TRUE
 
 CFLAGS+=	-fPIC
