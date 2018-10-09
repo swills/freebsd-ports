@@ -1,0 +1,11 @@
+--- massagevendor.orig	2018-09-24 10:43:54 UTC
++++ massagevendor
+@@ -15,7 +15,7 @@
+     awk -f euppertolower.awk | \
+     sed -n \
+     -e 's/^\([0-9A-Za-z][0-9A-Za-z]\)\([0-9A-Za-z][0-9A-Za-z]\)\([0-9A-Za-z][0-9A-Za-z]\)[ 	]\(.*\)$/\1:\2:\3	\4/' \
+-    -e 's/^0//' -e 's/:0\([0-9A-Za-z]\)/:\1/g' -e p | \
++    -e p | \
+     sort | \
+     awk -f duplicates.awk ) | \
+     awk -f p.awk | \
