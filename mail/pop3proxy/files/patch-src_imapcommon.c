@@ -1,10 +1,11 @@
---- src/imapcommon.c.orig
+--- src/imapcommon.c.orig	2018-10-09 22:42:54 UTC
 +++ src/imapcommon.c
-@@ -121,6 +121,7 @@
- #include <errno.h>
+@@ -295,7 +295,7 @@ extern ICD_Struct *Get_Server_conn( char *Username, 
+     int rc;
+     unsigned int Expiration;
  
- #include <openssl/evp.h>
-+#include <openssl/md5.h>
+-    EVP_MD_CTX mdctx;
++    EVP_MD_CTX *mdctx;
+     int md_len;
  
- #include <pthread.h>
- #include <sys/types.h>
+     Expiration = PC_Struct.cache_expiration_time;

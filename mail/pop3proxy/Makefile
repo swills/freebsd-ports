@@ -3,7 +3,7 @@
 
 PORTNAME=	pop3proxy
 PORTVERSION=	1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://people.freebsd.org/~mbr/distfiles/
 EXTRACT_SUFX=	.tgz
