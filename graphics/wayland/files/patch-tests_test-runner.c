@@ -84,7 +84,7 @@
  	pid = fork();
  	if (pid == -1) {
  		perror("fork");
-@@ -312,7 +339,7 @@ is_debugger_attached(void)
+@@ -312,14 +339,13 @@ is_debugger_attached(void)
  			_exit(1);
  		if (!waitpid(-1, NULL, 0))
  			_exit(1);
@@ -93,7 +93,14 @@
  		ptrace(PTRACE_DETACH, ppid, NULL, NULL);
  		_exit(0);
  	} else {
-@@ -346,17 +373,19 @@ int main(int argc, char *argv[])
+ 		close(pipefd[0]);
+ 
+ 		/* Enable child to ptrace the parent process */
+-		rc = prctl(PR_SET_PTRACER, pid);
+ 		if (rc != 0 && errno != EINVAL) {
+ 			/* An error prevents us from telling if a debugger is attached.
+ 			 * Instead of propagating the error, assume no debugger present.
+@@ -346,17 +372,19 @@ int main(int argc, char *argv[])
  	const struct test *t;
  	pid_t pid;
  	int total, pass;
@@ -116,7 +123,7 @@
  	if (is_debugger_attached()) {
  		leak_check_enabled = 0;
  		timeouts_enabled = 0;
-@@ -364,7 +393,17 @@ int main(int argc, char *argv[])
+@@ -364,7 +392,17 @@ int main(int argc, char *argv[])
  		leak_check_enabled = !getenv("WAYLAND_TEST_NO_LEAK_CHECK");
  		timeouts_enabled = !getenv("WAYLAND_TEST_NO_TIMEOUTS");
  	}
@@ -134,7 +141,7 @@
  	if (argc == 2 && strcmp(argv[1], "--help") == 0)
  		usage(argv[0], EXIT_SUCCESS);
  
-@@ -395,7 +434,8 @@ int main(int argc, char *argv[])
+@@ -395,7 +433,8 @@ int main(int argc, char *argv[])
  		if (pid == 0)
  			run_test(t); /* never returns */
  
@@ -144,7 +151,7 @@
  			stderr_set_color(RED);
  			fprintf(stderr, "waitid failed: %m\n");
  			stderr_reset_color();
-@@ -426,6 +466,25 @@ int main(int argc, char *argv[])
+@@ -426,6 +465,25 @@ int main(int argc, char *argv[])
  
  			break;
  		}
