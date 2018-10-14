@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	sqlite3
-DISTVERSION=	3.25.1
+DISTVERSION=	3.25.2
 CATEGORIES=	databases
 MASTER_SITES=	https://www.sqlite.org/2018/ http://www2.sqlite.org/2018/ http://www3.sqlite.org/2018/
 DISTNAME=	sqlite-autoconf-${PORTVERSION:C/\.([[:digit:]])[[:>:]]/0\1/g:S/.//g}00
@@ -12,9 +12,24 @@ COMMENT=	SQL database engine in a C library
 
 LICENSE=	PD
 
+FLAVORS=	default icu
+FLAVOR?=	${FLAVORS:[1]}
+default_CONFLICTS_INSTALL=	${PORTNAME}${icu_PKGNAMESUFFIX}
+icu_CONFLICTS_INSTALL=	${PORTNAME}
+icu_PKGNAMESUFFIX=	-icu
+icu_BUILD_DEPENDS=	${ICU_BUILD_DEPENDS}
+icu_LIB_DEPENDS=	${ICU_LIB_DEPENDS}
+.if ${FLAVOR:U} == icu
+COMMENT+=	(${FLAVOR} flavor)
+CPPFLAGS+=	${ICU_CPPFLAGS}
+LIBS+=	${ICU_LIBS}
+OPTIONS_EXCLUDE=	ICU
+.endif
+
 USES=		libtool ncurses pathfix
-GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+
+GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
 MAKE_JOBS_UNSAFE=	yes
