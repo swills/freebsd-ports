@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger
-# $FreeBSD: head/games/monkeybubble/Makefile 465887 2018-03-29 12:47:38Z tobik $
+# $FreeBSD: head/games/monkeybubble/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	monkeybubble
 PORTVERSION=	0.4.0
@@ -13,6 +13,9 @@ COMMENT=	GTK2 Puzzle Bobble clone with monkeys
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		gmake libtool localbase pathfix pkgconfig
 USE_GNOME=	gnomedocutils gnomeprefix intlhack librsvg2 libgnomeui

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Protocol-XMLRPC/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Protocol-XMLRPC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Protocol-XMLRPC
 PORTVERSION=	0.10
@@ -14,8 +14,8 @@ COMMENT=	XML-RPC implementation
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML
 
 NO_ARCH=	yes
 USE_PERL5=	configure

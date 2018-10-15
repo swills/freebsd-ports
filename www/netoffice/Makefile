@@ -1,5 +1,5 @@
 # Created by: Marcelo Araujo <araujo@bsdmail.org>
-# $FreeBSD: head/www/netoffice/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/netoffice/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	netoffice
 PORTVERSION=	2.6.0b2
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-devel/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	NetOffice is a free web based project-management environment
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 NO_BUILD=	yes
 NO_ARCH=	yes

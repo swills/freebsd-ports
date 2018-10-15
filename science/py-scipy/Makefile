@@ -1,11 +1,11 @@
 # Created by: ijliao
-# $FreeBSD: head/science/py-scipy/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/py-scipy/Makefile 481336 2018-10-06 09:27:12Z sunpoet $
 
 PORTNAME=	scipy
 PORTVERSION=	1.1.0
 PORTREVISION=	1
 CATEGORIES=	science python
-MASTER_SITES=	http://docs.scipy.org/doc/scipy/:doc \
+MASTER_SITES=	https://docs.scipy.org/doc/scipy/:doc \
 		CHEESESHOP:source \
 		SF:source
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

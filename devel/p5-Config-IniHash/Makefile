@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Config-IniHash/Makefile 471593 2018-06-04 18:03:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-IniHash/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Config-IniHash
 PORTVERSION=	3.01.01
@@ -14,10 +14,10 @@ COMMENT=	Perl extension for reading and writing INI files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Hash-Case>=0:devel/p5-Hash-Case \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Hash-Case>=0:devel/p5-Hash-Case \
 		p5-Hash-WithDefaults>=0.04:devel/p5-Hash-WithDefaults \
 		p5-IO-stringy>=0:devel/p5-IO-stringy
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		dos2unix perl5
 USE_PERL5=	configure

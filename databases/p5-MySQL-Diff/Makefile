@@ -1,5 +1,5 @@
 # Created by: Andrew McNaughton <andrew@scoop.co.nz>
-# $FreeBSD: head/databases/p5-MySQL-Diff/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-MySQL-Diff/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MySQL-Diff
 PORTVERSION=	0.50
@@ -13,11 +13,11 @@ COMMENT=	Perl module for comparing the table structure of two MySQL databases
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-MakeMethods>=0:devel/p5-Class-MakeMethods \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-MakeMethods>=0:devel/p5-Class-MakeMethods \
 		p5-DBD-mysql>=0:databases/p5-DBD-mysql \
 		p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-String-ShellQuote>=0:textproc/p5-String-ShellQuote
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 USE_PERL5=	configure

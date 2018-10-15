@@ -1,9 +1,9 @@
 # Created by: gahr@FreeBSD.org
-# $FreeBSD: head/lang/nx/Makefile 446739 2017-07-27 13:00:35Z olgeni $
+# $FreeBSD: head/lang/nx/Makefile 481009 2018-10-01 08:11:53Z gahr $
 
 PORTNAME=	nx
-DISTVERSION=	2.1.0
-PORTREVISION=	1
+DISTVERSION=	2.2.0
+PORTREVISION=	0
 CATEGORIES=	lang
 MASTER_SITES=	SF/next-scripting/${DISTVERSION}/
 DISTNAME=	nsf${DISTVERSION}
@@ -22,8 +22,8 @@ PLIST_SUB+=	PKGNAME=${DISTNAME}
 PORTDOCS=	*
 
 post-patch:
-	cd ${WRKSRC}/doc && for f in *.1; do mv $$f $${f%.1}.nx.1; done
-	cd ${WRKSRC}/doc && for f in *.3; do mv $$f $${f%.3}.nx.3; done
+	cd ${WRKSRC}/doc && for f in *.1; do ${MV} $$f $${f%.1}.nx.1; done
+	cd ${WRKSRC}/doc && for f in *.3; do ${MV} $$f $${f%.3}.nx.3; done
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

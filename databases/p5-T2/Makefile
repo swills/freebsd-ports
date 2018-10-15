@@ -1,5 +1,5 @@
 # Created by: Scott McWhirter <scott@surreytech.co.uk>
-# $FreeBSD: head/databases/p5-T2/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-T2/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	T2
 PORTVERSION=	0.10
@@ -15,11 +15,11 @@ COMMENT=	Object Relational mapping system
 LICENSE=	ART10 GPLv2
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Tangram>=0:devel/p5-Class-Tangram \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Tangram>=0:devel/p5-Class-Tangram \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-Set-Object>=0:devel/p5-Set-Object \
 		p5-Tangram>=0:databases/p5-Tangram
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

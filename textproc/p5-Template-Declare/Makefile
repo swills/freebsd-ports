@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Template-Declare/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/textproc/p5-Template-Declare/Makefile 481724 2018-10-10 10:24:31Z sunpoet $
 
 PORTNAME=	Template-Declare
-PORTVERSION=	0.46
+PORTVERSION=	0.47
 PORTREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
@@ -14,16 +14,17 @@ COMMENT=	Perlish declarative templates
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-COMMON_DEPENDS=	p5-Test-Warn>=0.11:devel/p5-Test-Warn \
-		p5-Class-Accessor>0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>0:devel/p5-Class-Data-Inheritable \
-		p5-HTML-Lint>0:www/p5-HTML-Lint \
 		p5-Class-ISA>0:devel/p5-Class-ISA \
+		p5-HTML-Lint>0:www/p5-HTML-Lint \
 		p5-String-BufferStack>=1.10:textproc/p5-String-BufferStack
-BUILD_DEPENDS=	${COMMON_DEPENDS}
-RUN_DEPENDS=	${COMMON_DEPENDS}
+TEST_DEPENDS=	p5-Test-Warn>=0.11:devel/p5-Test-Warn
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

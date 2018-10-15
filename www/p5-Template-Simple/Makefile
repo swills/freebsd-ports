@@ -1,5 +1,5 @@
 # Created by: Ken McGlothlen <ken.mcglothlen@gmail.com>
-# $FreeBSD: head/www/p5-Template-Simple/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Template-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Simple
 PORTVERSION=	0.06
@@ -13,8 +13,8 @@ COMMENT=	Fast templating module
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp
 
 USES=		perl5
 USE_PERL5=	configure

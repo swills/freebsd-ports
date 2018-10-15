@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Validate/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Validate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Validate
 PORTVERSION=	1.025
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	XML validator factory
 
-BUILD_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-Log-TraceMessages>=0:devel/p5-Log-TraceMessages
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Assertions>0:devel/p5-Test-Assertions
 
 USES=		perl5

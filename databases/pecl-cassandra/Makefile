@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pecl-cassandra/Makefile 443946 2017-06-20 10:15:28Z mat $
+# $FreeBSD: head/databases/pecl-cassandra/Makefile 481778 2018-10-11 02:16:16Z swills $
 
 PORTNAME=	cassandra
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.2
 CATEGORIES=	databases
 
 MAINTAINER=	daniel@blodan.se

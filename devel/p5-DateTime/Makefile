@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime/Makefile 476267 2018-08-02 23:43:07Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime
 PORTVERSION=	1.50
@@ -14,14 +14,14 @@ LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 # Do not add p5-DateTime-Format-Strptime>=1.20.00 to TEST_DEPENDS to avoid cyclic dependency
-BUILD_DEPENDS=	p5-DateTime-Locale>=1.06:devel/p5-DateTime-Locale \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime-Locale>=1.06:devel/p5-DateTime-Locale \
 		p5-DateTime-TimeZone>=2.02:devel/p5-DateTime-TimeZone \
 		p5-Params-Validate>=1.03:devel/p5-Params-Validate \
 		p5-Params-ValidationCompiler>=0.26:devel/p5-Params-ValidationCompiler \
 		p5-Specio>=0:devel/p5-Specio \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny \
 		p5-namespace-autoclean>=0.19:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-CPAN-Meta-Check>=0.011:devel/p5-CPAN-Meta-Check \
 		p5-Test-Warnings>=0.005:devel/p5-Test-Warnings

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Method-Signatures/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Method-Signatures/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Method-Signatures
 PORTVERSION=	0.49
@@ -13,7 +13,8 @@ COMMENT=	Method declarations with type constraints and no source filter
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-B-Hooks-EndOfScope>=0.10:devel/p5-B-Hooks-EndOfScope \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-B-Hooks-EndOfScope>=0.10:devel/p5-B-Hooks-EndOfScope \
 		p5-Devel-Declare>=0.005011:devel/p5-Devel-Declare \
 		p5-Context-Preserve>=0:devel/p5-Context-Preserve \
 		p5-Module-Runtime>=0.012:devel/p5-Module-Runtime \
@@ -28,7 +29,6 @@ BUILD_DEPENDS=	p5-B-Hooks-EndOfScope>=0.10:devel/p5-B-Hooks-EndOfScope \
 		p5-aliased>=0:devel/p5-aliased \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean \
 		p5-namespace-clean>=0.19:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Eval-Closure>=0:devel/p5-Eval-Closure \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal

@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/gnomeattacks/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/games/gnomeattacks/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gnomeattacks
 PORTVERSION=	0.3
@@ -12,6 +12,9 @@ COMMENT=	GNOME 2 game featuring a bizarre flying GNOME logo
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 GNU_CONFIGURE=	yes
 USES=		pathfix gmake pkgconfig

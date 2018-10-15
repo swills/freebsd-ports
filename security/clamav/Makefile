@@ -1,9 +1,8 @@
 # Created by: markun@onohara.to
-# $FreeBSD: head/security/clamav/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/security/clamav/Makefile 481197 2018-10-04 01:53:09Z ler $
 
 PORTNAME=	clamav
-PORTVERSION=	0.100.1
-PORTREVISION=	1
+PORTVERSION=	0.100.2
 CATEGORIES=	security
 MASTER_SITES=	http://www.clamav.net/downloads/production/
 
@@ -52,7 +51,7 @@ IPV6_CONFIGURE_ENABLE=	ipv6
 DMG_XAR_CONFIGURE_ENABLE=	xml
 DMG_XAR_USE=		GNOME=libxml2
 
-USES=		cpe gmake libtool ncurses pathfix ssl
+USES=		cpe gmake gnome libtool ncurses pathfix ssl
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

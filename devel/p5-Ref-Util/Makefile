@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Ref-Util/Makefile 467925 2018-04-22 08:47:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Ref-Util/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Ref-Util
 PORTVERSION=	0.204
@@ -13,8 +13,8 @@ COMMENT=	Utility functions for checking references
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Ref-Util-XS>=0:devel/p5-Ref-Util-XS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Ref-Util-XS>=0:devel/p5-Ref-Util-XS
 
 NO_ARCH=	yes
 USE_PERL5=	configure

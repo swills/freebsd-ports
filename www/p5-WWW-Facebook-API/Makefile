@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Facebook-API/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Facebook-API/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Facebook-API
 PORTVERSION=	0.4.18
@@ -14,11 +14,11 @@ COMMENT=	Facebook API implementation in Perl
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-JSON-Any>=0:converters/p5-JSON-Any \
 		p5-Readonly>=0:devel/p5-Readonly \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

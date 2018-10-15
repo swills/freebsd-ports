@@ -1,5 +1,5 @@
 # Created by: Yoshisato YANAGISAWA
-# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 471027 2018-05-28 08:03:39Z wen $
+# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-DKIM
 PORTVERSION=	0.53
@@ -14,11 +14,11 @@ COMMENT=	Perl5 module to process and/or create DKIM email
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-OpenSSL-RSA>=0:security/p5-Crypt-OpenSSL-RSA \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-OpenSSL-RSA>=0:security/p5-Crypt-OpenSSL-RSA \
 		p5-Mail-Tools>=0:mail/p5-Mail-Tools \
 		p5-Net-DNS>=0:dns/p5-Net-DNS \
 		p5-Net-DNS-Resolver-Mock>=0:dns/p5-Net-DNS-Resolver-Mock
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-RequiresInternet>=0:devel/p5-Test-RequiresInternet \
 		p5-YAML-LibYAML>=0:textproc/p5-YAML-LibYAML
 

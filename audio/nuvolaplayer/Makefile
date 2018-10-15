@@ -1,11 +1,11 @@
-# $FreeBSD: head/audio/nuvolaplayer/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/audio/nuvolaplayer/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	nuvolaplayer
 PORTVERSION=	3.0.4
 PORTREVISION=	1
 CATEGORIES=	audio www
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Cloud music integration for your desktop
 
 LICENSE=	BSD2CLAUSE

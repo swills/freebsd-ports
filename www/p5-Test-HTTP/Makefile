@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-Test-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Test-HTTP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-HTTP
 PORTVERSION=	0.18
@@ -14,9 +14,9 @@ COMMENT=	Test HTTP interactions
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Field>=0:devel/p5-Class-Field \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Field>=0:devel/p5-Class-Field \
 		p5-libwww>=5.827:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

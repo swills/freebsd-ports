@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/www/p5-CGI-Untaint/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Untaint/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Untaint
 PORTVERSION=	1.26
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Process CGI input parameters
 
-BUILD_DEPENDS=	p5-UNIVERSAL-require>=0.01:devel/p5-UNIVERSAL-require
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-UNIVERSAL-require>=0.01:devel/p5-UNIVERSAL-require
 
 USES=		perl5
 USE_PERL5=	configure

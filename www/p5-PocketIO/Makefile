@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-PocketIO/Makefile 445929 2017-07-15 19:09:09Z sunpoet $
+# $FreeBSD: head/www/p5-PocketIO/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PocketIO
 PORTVERSION=	0.17000
@@ -14,12 +14,12 @@ COMMENT=	Socket.IO Plack application
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
 		p5-JSON>=2.53:converters/p5-JSON \
 		p5-Protocol-SocketIO>=0.04:www/p5-Protocol-SocketIO \
 		p5-Protocol-WebSocket>=0.00906:www/p5-Protocol-WebSocket \
 		p5-Test-TCP>=0:devel/p5-Test-TCP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Plack>=0:www/p5-Plack \
 		p5-Twiggy>=0:www/p5-Twiggy
 

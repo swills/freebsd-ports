@@ -1,5 +1,5 @@
 # Created by: Matthew Luckie <mjl@luckie.org.nz>
-# $FreeBSD: head/net/p5-Net-IPTrie/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-IPTrie/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-IPTrie
 PORTVERSION=	0.7
@@ -14,8 +14,8 @@ COMMENT=	Module for building IPv4 and IPv6 address space hierarchies
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-NetAddr-IP>=4.00.7:net-mgmt/p5-NetAddr-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-NetAddr-IP>=4.00.7:net-mgmt/p5-NetAddr-IP
 
 USES=		perl5
 USE_PERL5=	modbuild

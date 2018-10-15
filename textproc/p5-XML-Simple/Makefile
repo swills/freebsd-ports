@@ -1,5 +1,5 @@
 # Created by: Andrew <andrew@ugh.net.au>
-# $FreeBSD: head/textproc/p5-XML-Simple/Makefile 464906 2018-03-18 13:19:31Z wen $
+# $FreeBSD: head/textproc/p5-XML-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Simple
 PORTVERSION=	2.25
@@ -14,10 +14,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		p5-XML-SAX>=0.15:textproc/p5-XML-SAX \
 		p5-XML-SAX-Expat>=0:textproc/p5-XML-SAX-Expat
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 MAKE_JOBS_UNSAFE=	yes
 NO_ARCH=	yes

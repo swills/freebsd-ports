@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Term-Menus/Makefile 447214 2017-08-03 14:26:47Z culot $
+# $FreeBSD: head/devel/p5-Term-Menus/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Term-Menus
 PORTVERSION=	3.015
@@ -13,13 +13,13 @@ COMMENT=	Create Powerful Terminal, Console, and CMD Environment Menus
 
 LICENSE=	AGPLv3
 
-BUILD_DEPENDS=	p5-Capture-Tiny>0:devel/p5-Capture-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Capture-Tiny>0:devel/p5-Capture-Tiny \
 		p5-Data-Dump-Streamer>0:devel/p5-Data-Dump-Streamer \
 		p5-Devel-Symdump>0:devel/p5-Devel-Symdump \
 		p5-PadWalker>0:devel/p5-PadWalker \
 		p5-Term-RawInput>=1.20:devel/p5-Term-RawInput \
 		p5-Term-ReadKey>0:devel/p5-Term-ReadKey
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

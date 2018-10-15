@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-Filter-CBC/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/security/p5-Filter-CBC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Filter-CBC
 PORTVERSION=	0.10
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Source filter for Cipher Block Chaining
 
-BUILD_DEPENDS=	p5-Filter>=0:devel/p5-Filter \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Filter>=0:devel/p5-Filter \
 		p5-Crypt-Rijndael>=0:security/p5-Crypt-Rijndael \
 		p5-Crypt-CBC>=0:security/p5-Crypt-CBC
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PLIST_SUB=	EXAMPLESDIR="share/examples/${PORTNAME}"
 USES=		perl5 shebangfix

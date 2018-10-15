@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Util/Makefile 452097 2017-10-15 00:36:36Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Util/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Util
 PORTVERSION=	0.006
@@ -14,11 +14,11 @@ COMMENT=	Moose::Util extensions
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-TraitFor-Meta-Class-BetterAnonClassNames>=0.002001:devel/p5-MooseX-TraitFor-Meta-Class-BetterAnonClassNames \
 		p5-Sub-Exporter-Progressive>=0:devel/p5-Sub-Exporter-Progressive \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-CheckDeps>=0.010:devel/p5-Test-CheckDeps \
 		p5-Test-Moose-More>=0.016:devel/p5-Test-Moose-More \
 		p5-Test-Requires>=0:devel/p5-Test-Requires \

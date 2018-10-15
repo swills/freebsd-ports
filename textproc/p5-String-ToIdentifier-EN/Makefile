@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-ToIdentifier-EN/Makefile 463244 2018-02-28 15:53:02Z sunpoet $
+# $FreeBSD: head/textproc/p5-String-ToIdentifier-EN/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	String-ToIdentifier-EN
 PORTVERSION=	0.12
@@ -13,10 +13,10 @@ COMMENT=	Convert Strings to English Program Identifiers
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Lingua-EN-Inflect-Phrase>=0:textproc/p5-Lingua-EN-Inflect-Phrase \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-EN-Inflect-Phrase>=0:textproc/p5-Lingua-EN-Inflect-Phrase \
 		p5-Text-Unidecode>=0:converters/p5-Text-Unidecode \
 		p5-namespace-clean>=0:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/mail/pop3lite/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/mail/pop3lite/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	pop3lite
 PORTVERSION=	0.2.4a
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Flexible, modular RFC-compliant POP3 daemon
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

@@ -1,9 +1,10 @@
 # Created by: Kimo <kimor79@yahoo.com>
-# $FreeBSD: head/www/mod_auth_cas/Makefile 479408 2018-09-10 13:16:16Z mat $
+# $FreeBSD: head/www/mod_auth_cas/Makefile 482047 2018-10-14 15:38:40Z joneum $
 
 PORTNAME=	mod_auth_cas
 PORTVERSION=	1.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 
@@ -15,9 +16,10 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpcre.so:devel/pcre
 
+USES=		apache:2.4 ssl
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	Jasig
-USES=		apache:2.2+ ssl
 
 HAS_CONFIGURE=	yes
 # configure requires LDFLAGS to find libpcre

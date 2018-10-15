@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/devel/p5-TheSchwartz-Worker-SendEmail/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-TheSchwartz-Worker-SendEmail/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	TheSchwartz-Worker-SendEmail
 PORTVERSION=	1.00
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	TheSchwartz Worker Task to Send Email
 
-BUILD_DEPENDS=	p5-TheSchwartz>=1.10:devel/p5-TheSchwartz \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-TheSchwartz>=1.10:devel/p5-TheSchwartz \
 		p5-Net-DNS>=0.66_1:dns/p5-Net-DNS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Template-Plugin-FillInForm/Makefile 471710 2018-06-04 18:17:32Z sunpoet $
+# $FreeBSD: head/www/p5-Template-Plugin-FillInForm/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-FillInForm
 PORTVERSION=	0.04
@@ -14,9 +14,9 @@ COMMENT=	Template::Plugin::FillInForm - TT plugin for HTML::FillInForm
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-FillInForm>=0:www/p5-HTML-FillInForm \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-FillInForm>=0:www/p5-HTML-FillInForm \
 		p5-Template-Toolkit>=0:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

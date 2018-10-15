@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/phonon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/phonon/Makefile 481267 2018-10-05 09:38:36Z amdmi3 $
 
 PORTNAME=	phonon
 DISTVERSION=	4.10.1
@@ -10,7 +10,8 @@ DIST_SUBDIR=	KDE/phonon
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE multimedia framework
 
-LICENSE=	LGPL21
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
 FLAVORS=	qt4 qt5
 FLAVOR?=	${FLAVORS:[1]}

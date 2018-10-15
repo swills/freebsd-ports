@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/dns/p5-Net-DNS-ToolKit/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-Net-DNS-ToolKit/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-DNS-ToolKit
 PORTVERSION=	0.48
@@ -14,9 +14,9 @@ COMMENT=	Tools for working with DNS packets
 LICENSE=	ART10 GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-DNS-Codes>=0.09:dns/p5-Net-DNS-Codes \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS-Codes>=0.09:dns/p5-Net-DNS-Codes \
 		p5-NetAddr-IP>=1.30:net-mgmt/p5-NetAddr-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 MAKE_JOBS_UNSAFE=	yes
 USES=		perl5

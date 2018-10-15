@@ -1,5 +1,5 @@
 # Created by: dom@happygiraffe.net
-# $FreeBSD: head/devel/p5-SVN-Notify/Makefile 474237 2018-07-09 08:09:48Z wen $
+# $FreeBSD: head/devel/p5-SVN-Notify/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-Notify
 PORTVERSION=	2.87
@@ -13,11 +13,11 @@ COMMENT=	Subversion activity notification
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Email-Address-XS>=1.03:mail/p5-Email-Address-XS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Address-XS>=1.03:mail/p5-Email-Address-XS \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Net-SMTP-TLS>=0:mail/p5-Net-SMTP-TLS \
 		p5-Text-Trac>=0.10:textproc/p5-Text-Trac
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

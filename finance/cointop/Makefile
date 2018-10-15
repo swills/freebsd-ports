@@ -1,10 +1,10 @@
-# $FreeBSD: head/finance/cointop/Makefile 477816 2018-08-22 19:42:48Z swills $
+# $FreeBSD: head/finance/cointop/Makefile 481417 2018-10-07 04:37:15Z swills $
 
 PORTNAME=	cointop
 PORTVERSION=	1.0.6
 CATEGORIES=	finance
 
-MAINTAINER=	ndowens.fbsd@yandex.com
+MAINTAINER=	ndowens@yahoo.com
 COMMENT=	Light cryptocurrency coin stats
 
 LICENSE=	APACHE20

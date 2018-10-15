@@ -1,12 +1,12 @@
 # Created by: mat
-# $FreeBSD: head/irc/anope/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/irc/anope/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	anope
 PORTVERSION=	2.0.5
 PORTREVISION=	0
 CATEGORIES=	irc
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Set of IRC services for IRC networks
 
 LICENSE=	GPLv2

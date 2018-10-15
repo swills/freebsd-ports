@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-PDF-API2-Simple/Makefile 470093 2018-05-16 00:01:06Z sunpoet $
+# $FreeBSD: head/textproc/p5-PDF-API2-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PDF-API2-Simple
 PORTVERSION=	1.1.5
@@ -12,8 +12,8 @@ COMMENT=	Wrapper for the PDF::API2 modules
 
 LICENSE=	PD
 
-BUILD_DEPENDS=	p5-PDF-API2>=0:textproc/p5-PDF-API2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PDF-API2>=0:textproc/p5-PDF-API2
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-CGI-XMLApplication/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-XMLApplication/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-XMLApplication
 PORTVERSION=	1.1.5
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Object Oriented Interface for CGI Script Applications
 
-BUILD_DEPENDS=	p5-XML-LibXML>=1.1:textproc/p5-XML-LibXML \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-LibXML>=1.1:textproc/p5-XML-LibXML \
 		p5-XML-LibXSLT>=1.08:textproc/p5-XML-LibXSLT
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	EXAMPLES
 

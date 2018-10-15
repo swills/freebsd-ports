@@ -1,11 +1,11 @@
-# $FreeBSD: head/comms/libusbmuxd/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/libusbmuxd/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	libusbmuxd
 PORTVERSION=	1.0.10
 CATEGORIES=	comms
 MASTER_SITES=	http://www.libimobiledevice.org/downloads/
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Communication interface library for usbmuxd
 
 LICENSE=	LGPL21 LGPL3

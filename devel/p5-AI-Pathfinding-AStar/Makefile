@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-AI-Pathfinding-AStar/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-AI-Pathfinding-AStar/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	AI-Pathfinding-AStar
 PORTVERSION=	0.10
@@ -14,8 +14,8 @@ COMMENT=	Perl implementation of the A* pathfinding algorithm
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Heap>=0:devel/p5-Heap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Heap>=0:devel/p5-Heap
 
 USES=		perl5
 USE_PERL5=	configure

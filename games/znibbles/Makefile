@@ -1,5 +1,5 @@
 # Created by: Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
-# $FreeBSD: head/games/znibbles/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/znibbles/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	znibbles
 PORTVERSION=	0.0.7
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.zyllius.com/vmallet/archives/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multi-player networked nibbles game
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 

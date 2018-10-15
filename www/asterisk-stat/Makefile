@@ -1,5 +1,5 @@
 # Created by: Fumihiko Kimura <jfkimura@yahoo.com>
-# $FreeBSD: head/www/asterisk-stat/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/asterisk-stat/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	asterisk-stat
 PORTVERSION=	2.0.1
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION:S/./_/g}
 MAINTAINER=	jfkimura@yahoo.co.jp
 COMMENT=	ASTERISK call detail records analyzer
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 LIB_DEPENDS=	libgd.so:graphics/gd
 

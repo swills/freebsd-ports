@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/truevision/Makefile 478787 2018-09-02 11:36:06Z tobik $
+# $FreeBSD: head/graphics/truevision/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	truevision
 DISTVERSION=	0.5.5-2
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME 3D modeler
 
 LICENSE=	GPLv2+
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
 

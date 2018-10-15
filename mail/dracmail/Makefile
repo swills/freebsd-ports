@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/mail/dracmail/Makefile 477060 2018-08-13 09:25:01Z tz $
+# $FreeBSD: head/mail/dracmail/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	dracmail
 PORTVERSION=	0.1.2
@@ -11,7 +11,7 @@ DISTNAME=	dracMail-${PORTVERSION}_release
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	DracMail is a webmail interface built using PHP
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 USE_PHP+=	mysql imap dom tidy iconv mbstring
 USE_MYSQL=	yes
 NO_BUILD=	yes

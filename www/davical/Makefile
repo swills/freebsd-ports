@@ -1,12 +1,12 @@
 # Created by: Maurice Castro <maurice@castro.aus.net>
-# $FreeBSD: head/www/davical/Makefile 464458 2018-03-14 05:13:01Z yuri $
+# $FreeBSD: head/www/davical/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	davical
 DISTVERSIONPREFIX=	r
 DISTVERSION=	1.1.7
 CATEGORIES?=	www
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Simple CalDAV server using a postgres backend
 
 LICENSE=	GPLv2 LGPL21

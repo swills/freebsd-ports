@@ -1,5 +1,5 @@
 # Created by: Garrett Wollman <wollman@lcs.mit.edu>
-# $FreeBSD: head/graphics/p5-Chart-PNGgraph/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Chart-PNGgraph/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Chart-PNGgraph
 PORTVERSION=	1.21
@@ -14,9 +14,9 @@ COMMENT=	Perl module for generating presentation graphics (i.e., charts)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-GD>=0:graphics/p5-GD \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-GD>=0:graphics/p5-GD \
 		p5-GD-Graph>=0:graphics/p5-GD-Graph
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

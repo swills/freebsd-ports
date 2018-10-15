@@ -1,5 +1,5 @@
 # Created by: devin@spamcop.net
-# $FreeBSD: head/devel/p5-Log-Agent-Logger/Makefile 435090 2017-02-28 22:50:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Agent-Logger/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Log-Agent-Logger
 PORTVERSION=	0.200
@@ -12,8 +12,8 @@ COMMENT=	Log::Agent::Logger - a logging interface for perl
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Log-Agent>=0.208:devel/p5-Log-Agent
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Agent>=0.208:devel/p5-Log-Agent
 
 NO_ARCH=	yes
 USES=		perl5

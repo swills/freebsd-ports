@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/pecl-zmq/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/net/pecl-zmq/Makefile 481624 2018-10-09 11:51:18Z garga $
 
 PORTNAME=	zmq
 PORTVERSION=	1.1.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net pear
 
 MAINTAINER=	garga@FreeBSD.org

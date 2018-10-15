@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/net/p5-POE-Component-Client-Twitter/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-POE-Component-Client-Twitter/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Client-Twitter
 PORTVERSION=	0.01
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	POE chat component for twitter.com
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-JSON-Any>=0:converters/p5-JSON-Any \
 		p5-POE>=0:devel/p5-POE \
 		p5-POE-Component-Client-HTTP>=0:www/p5-POE-Component-Client-HTTP \
@@ -20,7 +21,6 @@ BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-Test-Base>=0:devel/p5-Test-Base \
 		p5-Module-Install-TestBase>=0:devel/p5-Module-Install-TestBase \
 		p5-Module-Install>=0:devel/p5-Module-Install
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

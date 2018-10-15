@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-Excel/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-Excel/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Format-Excel
 PORTVERSION=	0.31
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert between DateTime and Excel dates
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
 
 USES=		perl5
 USE_PERL5=	modbuild

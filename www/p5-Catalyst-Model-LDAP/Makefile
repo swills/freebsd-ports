@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-Model-LDAP/Makefile 452370 2017-10-18 17:23:08Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Model-LDAP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Model-LDAP
 PORTVERSION=	0.21
@@ -13,13 +13,13 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.62000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.62000:www/p5-Catalyst-Runtime \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-Module-Runtime>=0.015:devel/p5-Module-Runtime \
 		p5-Data-Page>=0:databases/p5-Data-Page \
 		p5-perl-ldap>=0.65:net/p5-perl-ldap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/www/p5-Catalyst-View-GraphViz/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-View-GraphViz/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-View-GraphViz
 PORTVERSION=	0.05
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Catalyst::View::GraphViz - GraphViz View Class
 
-BUILD_DEPENDS=	p5-Catalyst-Plugin-SubRequest>=0:www/p5-Catalyst-Plugin-SubRequest \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Plugin-SubRequest>=0:www/p5-Catalyst-Plugin-SubRequest \
 		p5-GraphViz>=0:graphics/p5-GraphViz
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/ftp/p5-Net-FTPSSL/Makefile 463432 2018-03-02 18:51:53Z sunpoet $
+# $FreeBSD: head/ftp/p5-Net-FTPSSL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-FTPSSL
 PORTVERSION=	0.40
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-IO-Socket-SSL>=1.26:security/p5-IO-Socket-SSL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Socket-SSL>=1.26:security/p5-IO-Socket-SSL \
 		p5-Net-SSLeay>=0:security/p5-Net-SSLeay
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

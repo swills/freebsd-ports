@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/math/p5-Chart-Math-Axis/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Chart-Math-Axis/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Chart-Math-Axis
 PORTVERSION=	1.06
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Implements an algorithm to find good values for chart axis
 
-BUILD_DEPENDS=	p5-Params-Util>=0.15:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Params-Util>=0.15:devel/p5-Params-Util
 
 USES=		perl5
 USE_PERL5=	configure

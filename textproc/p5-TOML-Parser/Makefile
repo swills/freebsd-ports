@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TOML-Parser/Makefile 453856 2017-11-09 19:44:17Z sunpoet $
+# $FreeBSD: head/textproc/p5-TOML-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	TOML-Parser
 PORTVERSION=	0.91
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Types-Serialiser>=0:devel/p5-Types-Serialiser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Types-Serialiser>=0:devel/p5-Types-Serialiser
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep
 
 PORTSCOUT=	limit:^[0-9\.]*$$

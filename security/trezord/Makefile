@@ -1,9 +1,10 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/trezord/Makefile 480603 2018-09-24 12:15:09Z ale $
+# $FreeBSD: head/security/trezord/Makefile 481156 2018-10-03 10:58:17Z ale $
 
 PORTNAME=	trezord
-PORTVERSION=	2.0.23
 DISTVERSIONPREFIX=	v
+DISTVERSION=	2.0.24-5
+DISTVERSIONSUFFIX=	-gf593bf3
 CATEGORIES=	security
 
 MAINTAINER=	ale@FreeBSD.org
@@ -18,14 +19,13 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	trezor
 GH_PROJECT=	${PORTNAME}-go
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
-GH_TAGNAME=	0e82873
 
 PLIST_FILES=	bin/${GH_PROJECT}
 
 .include <bsd.port.pre.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1102000
-EXTRA_PATCHES+=	${FILESDIR}/extra-patch-usb_webusb.go
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-usb_libusb.go
 .endif
 
 .include <bsd.port.post.mk>

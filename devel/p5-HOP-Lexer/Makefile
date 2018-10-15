@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/devel/p5-HOP-Lexer/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-HOP-Lexer/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HOP-Lexer
 PORTVERSION=	0.032
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Higher Order Perl Lexer
 
-BUILD_DEPENDS=	p5-HOP-Stream>=0.01:devel/p5-HOP-Stream
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HOP-Stream>=0.01:devel/p5-HOP-Stream
 
 USES=		perl5
 USE_PERL5=	modbuild

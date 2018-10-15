@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Accessor-Fast-Contained/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Class-Accessor-Fast-Contained/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Accessor-Fast-Contained
 PORTVERSION=	1.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fast accessors with data containment
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor
 TEST_DEPENDS=	p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage \
 		p5-Test-Pod>=0:devel/p5-Test-Pod
 

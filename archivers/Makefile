@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 480950 2018-09-30 11:08:43Z rene $
+# $FreeBSD: head/archivers/Makefile 481529 2018-10-08 09:31:09Z tz $
 #
 
     COMMENT = Archivers
@@ -168,6 +168,10 @@
     SUBDIR += php72-phar
     SUBDIR += php72-zip
     SUBDIR += php72-zlib
+    SUBDIR += php73-bz2
+    SUBDIR += php73-phar
+    SUBDIR += php73-zip
+    SUBDIR += php73-zlib
     SUBDIR += pigz
     SUBDIR += pixz
     SUBDIR += plzip

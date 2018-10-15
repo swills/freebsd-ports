@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-RabbitFoot/Makefile 458078 2018-01-04 20:12:33Z sunpoet $
+# $FreeBSD: head/net/p5-Net-RabbitFoot/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-RabbitFoot
 PORTVERSION=	1.03
@@ -14,7 +14,8 @@ COMMENT=	Synchronous interface to AnyEvent::RabbitMQ
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-AnyEvent-RabbitMQ>=0:net/p5-AnyEvent-RabbitMQ \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent-RabbitMQ>=0:net/p5-AnyEvent-RabbitMQ \
 		p5-Config-Any>=0:devel/p5-Config-Any \
 		p5-Coro>=0:devel/p5-Coro \
 		p5-JSON-XS>=0:converters/p5-JSON-XS \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-AnyEvent-RabbitMQ>=0:net/p5-AnyEvent-RabbitMQ \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-App-Cmd>=0:devel/p5-MooseX-App-Cmd \
 		p5-MooseX-ConfigFromFile>=0:devel/p5-MooseX-ConfigFromFile
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

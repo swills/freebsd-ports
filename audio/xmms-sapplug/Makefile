@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-sapplug/Makefile 480738 2018-09-26 13:33:22Z emaste $
+# $FreeBSD: head/audio/xmms-sapplug/Makefile 481894 2018-10-12 11:46:32Z antoine $
 
 PORTNAME=	xmms-sapplug
 DISTVERSION=	0.3f
@@ -10,6 +10,9 @@ DISTNAME=	sapplug-xmms-${DISTVERSION}
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	XMMS input plugin for playing 8bit Atari(TM) .sap audio files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-X509-CRL/Makefile 469465 2018-05-09 20:20:21Z pi $
+# $FreeBSD: head/security/p5-Crypt-X509-CRL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Crypt-X509-CRL
 PORTVERSION=	0.1
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/README
 
-BUILD_DEPENDS=	p5-Convert-ASN1>=0.19:converters/p5-Convert-ASN1
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Convert-ASN1>=0.19:converters/p5-Convert-ASN1
 
 USES=		perl5
 USE_PERL5=	configure

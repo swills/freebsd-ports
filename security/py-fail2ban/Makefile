@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/py-fail2ban/Makefile 475327 2018-07-25 19:09:50Z swills $
+# $FreeBSD: head/security/py-fail2ban/Makefile 481422 2018-10-07 05:02:36Z swills $
 
 PORTNAME=	fail2ban
-PORTVERSION=	0.10.3.1
-PORTREVISION=   1
+PORTVERSION=	0.10.4
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -61,6 +60,8 @@ post-patch:
 		${WRKSRC}/config/fail2ban.conf
 	@${REINPLACE_CMD} -e 's,jail.conf(5),fail2ban-jail.conf(5),g' \
 		${MAN_FILES}
+	@${REINPLACE_CMD} -e 's, sed , ${SED} ,g' \
+		${WRKSRC}/config/action.d/hostsdeny.conf
 
 .	if ${PYTHON_MAJOR_VER} >= 3
 		(cd ${WRKSRC}/ && ${PY2TO3_CMD} ${PY2TO3_ARG} bin/* fail2ban)

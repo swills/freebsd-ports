@@ -1,8 +1,8 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/misc/osinfo-db/Makefile 480866 2018-09-28 16:27:29Z novel $
+# $FreeBSD: head/misc/osinfo-db/Makefile 481978 2018-10-13 12:52:17Z novel $
 
 PORTNAME=	osinfo-db
-PORTVERSION=	20180920
+PORTVERSION=	20181011
 CATEGORIES=	misc
 MASTER_SITES=	https://releases.pagure.org/libosinfo/
 
@@ -12,6 +12,7 @@ COMMENT=	Osinfo database files
 BUILD_DEPENDS=	osinfo-db-tools>=1.1.0:sysutils/osinfo-db-tools
 
 USES=		tar:xz
+
 NO_ARCH=	yes
 NO_BUILD=	yes
 

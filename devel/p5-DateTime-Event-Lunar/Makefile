@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/devel/p5-DateTime-Event-Lunar/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Event-Lunar/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Event-Lunar
 PORTVERSION=	0.06
@@ -12,11 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Compute Lunar Events
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Set>=0:devel/p5-DateTime-Set \
 		p5-DateTime-Astro>=1.00:devel/p5-DateTime-Astro \
 		p5-Math-Round>=0:math/p5-Math-Round
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

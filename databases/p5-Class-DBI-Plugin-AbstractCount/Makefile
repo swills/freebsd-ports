@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Class-DBI-Plugin-AbstractCount/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/databases/p5-Class-DBI-Plugin-AbstractCount/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-Plugin-AbstractCount
 PORTVERSION=	0.08
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Get COUNT(*) results with abstract SQL
 
-BUILD_DEPENDS=	p5-Class-DBI-Plugin>=0.02:databases/p5-Class-DBI-Plugin \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI-Plugin>=0.02:databases/p5-Class-DBI-Plugin \
 		p5-Class-DBI>=0.95:databases/p5-Class-DBI \
 		p5-SQL-Abstract>=1.50:databases/p5-SQL-Abstract
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Method-Signatures-Simple/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Method-Signatures-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Method-Signatures-Simple
 PORTVERSION=	1.07
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Basic method declarations with signatures, without source filters
 
-BUILD_DEPENDS=	p5-Devel-Declare>=0:devel/p5-Devel-Declare
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Devel-Declare>=0:devel/p5-Devel-Declare
 
 USES=		perl5
 USE_PERL5=	configure

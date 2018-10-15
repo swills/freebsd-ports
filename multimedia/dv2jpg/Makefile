@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/multimedia/dv2jpg/Makefile 428135 2016-12-08 16:39:11Z tijl $
+# $FreeBSD: head/multimedia/dv2jpg/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	dv2jpg
 PORTVERSION=	1.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convert Type-2 DV codec-encoded AVI streams to mjpeg-encoded AVI
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 

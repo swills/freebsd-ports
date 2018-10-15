@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 480802 2018-09-27 15:44:56Z danfe $
+# $FreeBSD: head/lang/Makefile 481529 2018-10-08 09:31:09Z tz $
 #
 
     COMMENT = Programming languages
@@ -280,6 +280,8 @@
     SUBDIR += php71-extensions
     SUBDIR += php72
     SUBDIR += php72-extensions
+    SUBDIR += php73
+    SUBDIR += php73-extensions
     SUBDIR += php_doc
     SUBDIR += picoc
     SUBDIR += pocl

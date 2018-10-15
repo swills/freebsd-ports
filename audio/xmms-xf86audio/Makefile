@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/xmms-xf86audio/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/xmms-xf86audio/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmms-xf86audio
 PORTVERSION=	0.4.4
@@ -8,6 +8,9 @@ MASTER_SITES=	http://www.devin.com/xmms-xf86audio/download/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XF86Audio multimedia-key support for XMMS
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooX-Thunking/Makefile 462688 2018-02-23 12:42:25Z wen $
+# $FreeBSD: head/devel/p5-MooX-Thunking/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooX-Thunking
 PORTVERSION=	0.08
@@ -12,9 +12,9 @@ COMMENT=	Allow Moo attributes to be thunked
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moo>=0:devel/p5-Moo \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moo>=0:devel/p5-Moo \
 		p5-Type-Tiny>=0:devel/p5-Type-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

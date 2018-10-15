@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/games/p5-Games-Bingo-Bot/Makefile 451823 2017-10-12 08:10:43Z sunpoet $
+# $FreeBSD: head/games/p5-Games-Bingo-Bot/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Games-Bingo-Bot
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple class holding IRC related methods for bingo
 
-BUILD_DEPENDS=	p5-Games-Bingo>=0:games/p5-Games-Bingo
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Games-Bingo>=0:games/p5-Games-Bingo
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	bin/bingobot.pl

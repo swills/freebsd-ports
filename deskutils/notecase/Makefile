@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/deskutils/notecase/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/notecase/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	notecase
 PORTVERSION=	1.9.8
@@ -12,6 +12,9 @@ MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	Hierarchical text notes manager
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		dos2unix gmake desktop-file-utils gettext gnome pkgconfig shared-mime-info
 USE_GNOME=	gtk20 gtksourceview2 gnomevfs2

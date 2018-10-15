@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Test-Email/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Test-Email/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Email
 PORTVERSION=	0.07
@@ -12,11 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Test Email Contents
 
-BUILD_DEPENDS=	p5-Mail-POP3Client>=2:mail/p5-Mail-POP3Client \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mail-POP3Client>=2:mail/p5-Mail-POP3Client \
 		p5-Mail-Sendmail>=0.79:mail/p5-Mail-Sendmail \
 		p5-MIME-Tools>=5.4:mail/p5-MIME-Tools \
 		p5-Test-Simple>=0.7:devel/p5-Test-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 

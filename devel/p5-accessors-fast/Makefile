@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/devel/p5-accessors-fast/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-accessors-fast/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	accessors-fast
 PORTVERSION=	0.03
@@ -15,10 +15,10 @@ COMMENT=	Wrap fastest Class::Accessor::* into pragma
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor-Fast-XS>=0:devel/p5-Class-Accessor-Fast-XS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor-Fast-XS>=0:devel/p5-Class-Accessor-Fast-XS \
 		p5-constant-def>=0.01:devel/p5-constant-def \
 		p5-Class-C3>=0:devel/p5-Class-C3
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings \
 		p5-lib-abs>=0.90:devel/p5-lib-abs
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Any-Moose-Convert/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Any-Moose-Convert/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Any-Moose-Convert
 PORTVERSION=	0.004
@@ -14,8 +14,8 @@ COMMENT=	Convert Moose libraries to Mouse ones, or vice versa
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PerlIO-Util>=0:devel/p5-PerlIO-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PerlIO-Util>=0:devel/p5-PerlIO-Util
 TEST_DEPENDS=	p5-Moose>=0.90:devel/p5-Moose \
 		p5-Mouse>=0.40:devel/p5-Mouse
 

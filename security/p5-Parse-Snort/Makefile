@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Parse-Snort/Makefile 470071 2018-05-15 23:59:06Z sunpoet $
+# $FreeBSD: head/security/p5-Parse-Snort/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Parse-Snort
 PORTVERSION=	0.9
@@ -12,8 +12,8 @@ COMMENT=	Parse and create Snort rules
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

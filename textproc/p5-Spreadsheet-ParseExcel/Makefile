@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-Spreadsheet-ParseExcel/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Spreadsheet-ParseExcel/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Spreadsheet-ParseExcel
 PORTVERSION=	0.65
@@ -15,10 +15,10 @@ COMMENT=	Get information from Excel file
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-RC4>=0:security/p5-Crypt-RC4 \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-RC4>=0:security/p5-Crypt-RC4 \
 		p5-Digest-Perl-MD5>=0:security/p5-Digest-Perl-MD5 \
 		p5-OLE-Storage_Lite>=0.19:devel/p5-OLE-Storage_Lite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	sample/parse.pl \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 477572 2018-08-19 13:30:35Z swills $
+# $FreeBSD: head/net-im/Makefile 481654 2018-10-09 20:34:02Z antoine $
 #
 
     COMMENT = Instant messaging
@@ -21,6 +21,7 @@
     SUBDIR += farstream
     SUBDIR += finch
     SUBDIR += folks
+    SUBDIR += fractal
     SUBDIR += freetalk
     SUBDIR += fugu
     SUBDIR += gajim
@@ -199,8 +200,7 @@
     SUBDIR += telepathy-logger-qt5
     SUBDIR += telepathy-mission-control
     SUBDIR += telepathy-python
-    SUBDIR += telepathy-qt4
-    SUBDIR += telepathy-qt5
+    SUBDIR += telepathy-qt
     SUBDIR += telepathy-rakia
     SUBDIR += telepathy-salut
     SUBDIR += telepathy-sofiasip

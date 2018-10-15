@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-prompt/Makefile 476531 2018-08-06 19:53:12Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-prompt/Makefile 481355 2018-10-06 09:36:25Z sunpoet $
 
 PORTNAME=	tty-prompt
-PORTVERSION=	0.17.0
+PORTVERSION=	0.17.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -18,8 +18,9 @@ RUN_DEPENDS=	rubygem-necromancer>=0.4.0:devel/rubygem-necromancer \
 		rubygem-tty-cursor>=0.6.0:devel/rubygem-tty-cursor \
 		rubygem-tty-reader>=0.4.0:devel/rubygem-tty-reader
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gaspar Chilingarov <nm@web.am>
-# $FreeBSD: head/sysutils/mount.app/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/sysutils/mount.app/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	mountapp
 PORTVERSION=	3.0
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Windowmaker application, Resembles wmmount with extra functionality
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libWINGs.a:x11-wm/windowmaker
 

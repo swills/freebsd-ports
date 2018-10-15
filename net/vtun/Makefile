@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/net/vtun/Makefile 462138 2018-02-17 12:00:38Z sunpoet $
+# $FreeBSD: head/net/vtun/Makefile 482121 2018-10-14 22:11:32Z dvl $
 
 PORTNAME=	vtun
 PORTVERSION=	3.0.4
@@ -11,6 +11,9 @@ MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping
 
 LICENSE=	GPLv2
+
+DEPRECATED=		No longer supported by upline
+EXPIRATION_DATE=	2021-09-30
 
 BROKEN_SSL=	openssl-devel
 

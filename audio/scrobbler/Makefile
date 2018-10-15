@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/audio/scrobbler/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/audio/scrobbler/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME?=	scrobbler
 PORTVERSION=	0.3.8.1
@@ -11,6 +11,9 @@ DISTNAME=	xmms-scrobbler-${PORTVERSION}
 
 MAINTAINER?=	novel@FreeBSD.org
 COMMENT?=	XMMS/BMP plugin for Audioscrobbler.com
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

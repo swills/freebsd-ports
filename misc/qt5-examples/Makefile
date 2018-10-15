@@ -1,5 +1,5 @@
-# Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/misc/qt5-examples/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# Created by: Marie Loise Nolden <loise@kde.org>
+# $FreeBSD: head/misc/qt5-examples/Makefile 482048 2018-10-14 16:04:46Z adridg $
 
 PORTNAME=	examples
 DISTVERSION=	${QT5_VERSION}

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/databases/p5-Class-DBI-AutoLoader/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-AutoLoader/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-AutoLoader
 PORTVERSION=	0.12
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generates Class::DBI subclasses dynamically
 
-BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
 		p5-Class-DBI-BaseDSN>=0:databases/p5-Class-DBI-BaseDSN
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

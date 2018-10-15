@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/security/crank/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/security/crank/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	crank
 PORTVERSION=	0.2.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	CRyptANalysis toolKit
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libguile.so:lang/guile
 

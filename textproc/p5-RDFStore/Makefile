@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-RDFStore/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/textproc/p5-RDFStore/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	RDFStore
 PORTVERSION=	0.51
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl API for RDF Storage
 
-BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		p5-URI>=0:net/p5-URI \
 		p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		bdb perl5
 USE_PERL5=	configure

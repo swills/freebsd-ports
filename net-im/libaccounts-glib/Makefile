@@ -1,5 +1,5 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/net-im/libaccounts-glib/Makefile 468640 2018-04-29 18:17:36Z tcberner $
+# $FreeBSD: head/net-im/libaccounts-glib/Makefile 481246 2018-10-04 20:19:46Z tcberner $
 
 PORTNAME=	libaccounts-glib
 PORTVERSION=	1.21
@@ -20,9 +20,10 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--disable-tests --enable-gtk-doc
 INSTALL_TARGET=	install-strip
 
-USES=		autoreconf gmake libtool pathfix pkgconfig python sqlite:3
+USES=		autoreconf gmake gnome libtool pathfix pkgconfig python sqlite:3
 USE_GNOME=	pygobject3 introspection libxml2
 USE_PYTHON=	py3kplist
+CFLAGS_powerpc64=	-Wno-error
 
 # GitLab variables.
 USE_GITLAB=	yes

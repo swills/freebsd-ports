@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Class-DBI-FromForm/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Class-DBI-FromForm/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-FromForm
 PORTVERSION=	0.04
@@ -15,9 +15,9 @@ COMMENT=	Update Class::DBI using Data::FormValidator or HTML::Widget
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
 		p5-Data-FormValidator>=0:textproc/p5-Data-FormValidator
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,9 +1,9 @@
 # Created by: Slava Shwartsman <slavash@FreeBSD.org>
-# $FreeBSD: head/benchmarks/perftest/Makefile 472443 2018-06-15 12:55:15Z mat $
+# $FreeBSD: head/benchmarks/perftest/Makefile 481415 2018-10-07 04:31:32Z swills $
 
 PORTNAME=	perftest
 DISTVERSIONPREFIX=	V
-DISTVERSION=	4.2-0.8
+DISTVERSION=	4.4-0.3
 CATEGORIES=	benchmarks
 
 MAINTAINER=	slavash@FreeBSD.org

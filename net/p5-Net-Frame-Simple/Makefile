@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-Frame-Simple/Makefile 453914 2017-11-10 19:03:15Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Frame-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Frame-Simple
 PORTVERSION=	1.09
@@ -12,9 +12,9 @@ COMMENT=	Base framework for frame crafting
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/LICENSE.Artistic
 
-BUILD_DEPENDS=	p5-Class-Gomor>=1.03:devel/p5-Class-Gomor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Gomor>=1.03:devel/p5-Class-Gomor \
 		p5-Net-Frame>=1.16:net/p5-Net-Frame
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

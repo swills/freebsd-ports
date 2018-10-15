@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/finance/p5-Business-TW-TSIB-VirtualAccount/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/finance/p5-Business-TW-TSIB-VirtualAccount/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Business-TW-TSIB-VirtualAccount
 PORTVERSION=	0.04b
@@ -14,9 +14,9 @@ COMMENT=	Module for Taishin Bank Virtual Account Management
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-DateTime>=0:devel/p5-DateTime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

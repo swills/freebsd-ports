@@ -1,5 +1,5 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/devel/p5-Glib2/Makefile 470711 2018-05-23 18:16:18Z swills $
+# $FreeBSD: head/devel/p5-Glib2/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Glib
 PORTVERSION=	1.327
@@ -15,9 +15,9 @@ COMMENT=	This module provides access to Glib and GObject libraries
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-ExtUtils-Depends>=0.300:devel/p5-ExtUtils-Depends \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-ExtUtils-Depends>=0.300:devel/p5-ExtUtils-Depends \
 		p5-ExtUtils-PkgConfig>=1:devel/p5-ExtUtils-PkgConfig
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_GNOME=	glib20
 USES=		perl5

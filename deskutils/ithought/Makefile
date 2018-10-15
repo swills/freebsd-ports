@@ -1,5 +1,5 @@
 # Created by: nbm
-# $FreeBSD: head/deskutils/ithought/Makefile 389087 2015-06-10 17:24:55Z amdmi3 $
+# $FreeBSD: head/deskutils/ithought/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	ithought
 PORTVERSION=	a5
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-alpha
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extensible text management system
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USES=		libtool
 USE_GNOME=	gtk12 libxml2

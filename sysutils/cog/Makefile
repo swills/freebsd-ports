@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/cog/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/sysutils/cog/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	cog
 PORTVERSION=	0.8.0
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.krakoa.dk/progs/cog/
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Program for editing advanced GNOME settings in an easy way
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USE_XORG=	x11
 USE_GNOME=	gnomeprefix libgnomeui

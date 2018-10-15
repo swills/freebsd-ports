@@ -1,13 +1,13 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-jaraco.functools/Makefile 475538 2018-07-28 12:12:20Z miwi $
+# $FreeBSD: head/devel/py-jaraco.functools/Makefile 481340 2018-10-06 09:34:32Z sunpoet $
 
 PORTNAME=	jaraco.functools
-PORTVERSION=	1.19
+PORTVERSION=	1.20
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Additional functools for Python
 
 LICENSE=	MIT
@@ -17,11 +17,13 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}more-itertools>=2.7:devel/py-more-itertools@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${PYTHON_VER} == "2.7"
+.if ${PYTHON_REL} < 3000
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports.functools_lru_cache>=1.0.3:devel/py-backports.functools_lru_cache@${PY_FLAVOR}
 .endif
 

@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/www/p5-WWW-Comic/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Comic/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Comic
 PORTVERSION=	1.06
@@ -13,9 +13,9 @@ COMMENT=	Retrieve comic strip images
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	p5-WWW-Dilbert>=1.19:www/p5-WWW-Dilbert \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Dilbert>=1.19:www/p5-WWW-Dilbert \
 		p5-WWW-VenusEnvy>=1.10:www/p5-WWW-VenusEnvy
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-Image-Base-SVG/Makefile 463566 2018-03-04 16:10:37Z sunpoet $
+# $FreeBSD: head/graphics/p5-Image-Base-SVG/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Image-Base-SVG
 PORTVERSION=	4
@@ -14,10 +14,10 @@ COMMENT=	SVG image file output
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	p5-Image-Base>=0:graphics/p5-Image-Base \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Image-Base>=0:graphics/p5-Image-Base \
 		p5-SVG>=2.38:textproc/p5-SVG \
 		p5-SVG-Parser>=0:textproc/p5-SVG-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

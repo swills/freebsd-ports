@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 480915 2018-09-29 19:50:58Z db $
+# $FreeBSD: head/comms/Makefile 481126 2018-10-02 18:59:25Z rene $
 #
 
     COMMENT = Communication utilities
@@ -79,7 +79,6 @@
     SUBDIR += kermit
     SUBDIR += klog
     SUBDIR += kremotecontrol-kde4
-    SUBDIR += kvasd
     SUBDIR += libbtbb
     SUBDIR += libconcord
     SUBDIR += libfap
@@ -196,9 +195,7 @@
     SUBDIR += usbmuxd
     SUBDIR += viewfax
     SUBDIR += vrflash
-    SUBDIR += wsjt
     SUBDIR += wsjtx
-    SUBDIR += wspr
     SUBDIR += wwl
     SUBDIR += wy60
     SUBDIR += xastir

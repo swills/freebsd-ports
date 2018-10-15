@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.idv.tw>
-# $FreeBSD: head/devel/p5-Algorithm-Accounting/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Algorithm-Accounting/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Algorithm-Accounting
 PORTVERSION=	0.08
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Generate accounting statistic for general logs
 
-BUILD_DEPENDS=	p5-Spiffy>=0:devel/p5-Spiffy \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Spiffy>=0:devel/p5-Spiffy \
 		p5-Perl6-Form>=0:devel/p5-Perl6-Form \
 		p5-FreezeThaw>=0:devel/p5-FreezeThaw \
 		p5-Array-Compare>=0:misc/p5-Array-Compare \
@@ -20,7 +21,6 @@ BUILD_DEPENDS=	p5-Spiffy>=0:devel/p5-Spiffy \
 		p5-GD-Graph>=0:graphics/p5-GD-Graph \
 		p5-Imager-Graph>=0:graphics/p5-Imager-Graph \
 		p5-YAML>=0:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

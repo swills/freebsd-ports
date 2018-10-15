@@ -1,5 +1,5 @@
 # Created by: gugu
-# $FreeBSD: head/net/p5-XML-RPC-Fast/Makefile 416157 2016-05-30 15:33:44Z mat $
+# $FreeBSD: head/net/p5-XML-RPC-Fast/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-RPC-Fast
 PORTVERSION=	0.8
@@ -11,12 +11,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mons@cpan.org
 COMMENT=	Fast and modular implementation for an XML-RPC client and server
 
-BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-WWW-Curl>=0:www/p5-WWW-Curl \
 		p5-XML-Hash-LX>=0.05:textproc/p5-XML-Hash-LX \
 		p5-XML-LibXML>=1.58:textproc/p5-XML-LibXML \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
 

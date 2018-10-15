@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11/babl/Makefile 480953 2018-09-30 12:34:45Z kwm $
+# $FreeBSD: head/x11/babl/Makefile 482099 2018-10-14 17:29:48Z kwm $
 
 PORTNAME=	babl
-PORTVERSION=	0.1.56
+PORTVERSION=	0.1.58
 CATEGORIES=	x11
 MASTER_SITES=	GIMP
 
@@ -24,6 +24,10 @@ OPTIONS_DEFINE=	SIMD
 .if !${PORT_OPTIONS:MSIMD}
 CONFIGURE_ARGS+=--disable-mmx \
 		--disable-sse \
+		--disable-sse2 \
+		--disable-sse3 \
+		--disable-sse4.1 \
+		--disable-f16c \
 		--disable-altivec
 .endif
 

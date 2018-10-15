@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Term-Table/Makefile 451887 2017-10-12 15:09:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-Table/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Term-Table
 PORTVERSION=	0.012
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Importer>=0.024:devel/p5-Importer
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Importer>=0.024:devel/p5-Importer
 TEST_DEPENDS=	p5-Test-Simple>=1.302097:devel/p5-Test-Simple
 
 NO_ARCH=	yes

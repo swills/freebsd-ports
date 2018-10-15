@@ -1,11 +1,11 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/mod_cloudflare/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_cloudflare/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	mod_cloudflare
 PORTVERSION=	0.0.2016.6.0
 CATEGORIES=	www
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cloudflare fork of mod_remoteip
 
 LICENSE=	APACHE20

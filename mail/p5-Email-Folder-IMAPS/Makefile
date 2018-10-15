@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Folder-IMAPS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Email-Folder-IMAPS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-Folder-IMAPS
 PORTVERSION=	1.105
@@ -14,11 +14,11 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Email-Folder-IMAP>=1.102:mail/p5-Email-Folder-IMAP \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Folder-IMAP>=1.102:mail/p5-Email-Folder-IMAP \
 		p5-Net-IMAP-Simple-SSL>=1.3:mail/p5-Net-IMAP-Simple-SSL \
 		p5-URI-imap>=0:mail/p5-URI-imap \
 		p5-URI-imaps>=0:mail/p5-URI-imaps
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

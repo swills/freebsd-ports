@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Aggregate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Aggregate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Aggregate
 PORTVERSION=	0.375
@@ -13,10 +13,10 @@ COMMENT=	Aggregate Perl tests for better performance
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Test-Most>=0.21:devel/p5-Test-Most \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-Most>=0.21:devel/p5-Test-Most \
 		p5-Test-NoWarnings>0:devel/p5-Test-NoWarnings \
 		p5-Test-Trap>0:devel/p5-Test-Trap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

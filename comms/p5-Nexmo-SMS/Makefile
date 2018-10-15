@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/comms/p5-Nexmo-SMS/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/p5-Nexmo-SMS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Nexmo-SMS
 PORTVERSION=	0.06
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw
 COMMENT=	Send SMS via http://www.nexmo.com/ API
 
-BUILD_DEPENDS=	p5-HTTP-Message>=5.836:www/p5-HTTP-Message \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=5.836:www/p5-HTTP-Message \
 		p5-JSON-PP>=2.26000:converters/p5-JSON-PP \
 		p5-libwww>=5.835:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 TEST_DEPENDS=	p5-Test-Pod>=1.22:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=1.08:devel/p5-Test-Pod-Coverage

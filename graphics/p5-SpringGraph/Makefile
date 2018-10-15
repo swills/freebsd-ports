@@ -1,5 +1,5 @@
 # Created by: fernan@iib.unsam.edu.ar
-# $FreeBSD: head/graphics/p5-SpringGraph/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-SpringGraph/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SpringGraph
 PORTVERSION=	0.05
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Directed graph alternative to GraphViz
 
-BUILD_DEPENDS=	p5-GD>=1:graphics/p5-GD
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-GD>=1:graphics/p5-GD
 
 USES=		perl5
 USE_PERL5=	configure

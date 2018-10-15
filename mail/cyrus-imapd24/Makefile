@@ -1,11 +1,11 @@
-# $FreeBSD: head/mail/cyrus-imapd24/Makefile 472520 2018-06-16 06:42:34Z ume $
+# $FreeBSD: head/mail/cyrus-imapd24/Makefile 481513 2018-10-08 05:07:35Z ume $
 
 PORTNAME=	cyrus-imapd
 PORTVERSION=	2.4.20
 PORTREVISION=	2
 CATEGORIES=	mail ipv6
-MASTER_SITES=	ftp://ftp.cyrusimap.org/cyrus-imapd/ \
-		http://cyrusimap.org/releases/
+MASTER_SITES=	https://www.cyrusimap.org/releases/ \
+		ftp://ftp.cyrusimap.org/cyrus-imapd/
 PKGNAMESUFFIX=	24
 
 MAINTAINER=	ume@FreeBSD.org

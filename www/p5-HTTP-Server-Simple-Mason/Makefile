@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Server-Simple-Mason/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Server-Simple-Mason/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Server-Simple-Mason
 PORTVERSION=	0.14
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Abstract baseclass for a standalone mason server
 
-BUILD_DEPENDS=	p5-HTTP-Server-Simple>=0:www/p5-HTTP-Server-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Server-Simple>=0:www/p5-HTTP-Server-Simple \
 		p5-HTML-Mason>=0:www/p5-HTML-Mason \
 		p5-Hook-LexWrap>=0:devel/p5-Hook-LexWrap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

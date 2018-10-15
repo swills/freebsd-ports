@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/libimobiledevice/Makefile 421640 2016-09-09 22:22:43Z marino $
+# $FreeBSD: head/comms/libimobiledevice/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	libimobiledevice
 PORTVERSION=	1.2.0
@@ -6,7 +6,7 @@ PORTREVISION?=	0
 CATEGORIES?=	comms
 MASTER_SITES=	http://www.${PORTNAME}.org/downloads/
 
-MAINTAINER?=	avilla@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 COMMENT?=	Library to communicate with Apple iOS devices
 
 LICENSE?=	LGPL21

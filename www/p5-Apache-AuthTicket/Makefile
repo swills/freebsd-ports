@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/www/p5-Apache-AuthTicket/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/p5-Apache-AuthTicket/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Apache-AuthTicket
 PORTVERSION=	0.94
@@ -14,7 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=1.9922:www/mod_perl2 \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=1.9922:www/mod_perl2 \
 		p5-Apache-AuthCookie>=3.0:www/p5-Apache-AuthCookie \
 		p5-CGI>=3.12:www/p5-CGI \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=1.9922:www/mod_perl2 \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-ModPerl-VersionUtil>=0:www/p5-ModPerl-VersionUtil \
 		p5-SQL-Abstract>=0:databases/p5-SQL-Abstract
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		apache:2.2+ perl5

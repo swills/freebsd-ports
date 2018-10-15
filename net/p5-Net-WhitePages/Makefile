@@ -1,5 +1,5 @@
 # Created by: Zane C. Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/net/p5-Net-WhitePages/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-WhitePages/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-WhitePages
 PORTVERSION=	1.04
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Provides access to the XML API for WhitePages.com
 
-BUILD_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

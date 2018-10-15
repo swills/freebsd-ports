@@ -1,8 +1,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/py-gimp/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/py-gimp/Makefile 482098 2018-10-14 17:14:32Z kwm $
 
 PORTNAME=	gimp
-PORTREVISION=	1
 PORTEPOCH=	0
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=

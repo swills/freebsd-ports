@@ -1,5 +1,5 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/devel/p5-UUID-Tiny/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-UUID-Tiny/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	UUID-Tiny
 PORTVERSION=	1.04
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Pure Perl UUID Support With Functional Interface
 
-BUILD_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
 
 USES=		perl5
 USE_PERL5=	configure

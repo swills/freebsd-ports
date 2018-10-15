@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-DocSet/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-DocSet/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DocSet
 PORTVERSION=	0.19
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Documentation projects builder in HTML, PS, and PDF formats
 
-BUILD_DEPENDS=	p5-Pod-POM>=0:textproc/p5-Pod-POM \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Pod-POM>=0:textproc/p5-Pod-POM \
 		p5-Template-Toolkit>=0:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-Ima-DBI/Makefile 476863 2018-08-11 09:08:02Z amdmi3 $
+# $FreeBSD: head/databases/p5-Ima-DBI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Ima-DBI
 PORTVERSION=	0.35
@@ -15,9 +15,9 @@ COMMENT=	Database connection caching and organization
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBIx-ContextualFetch>=0:databases/p5-DBIx-ContextualFetch \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBIx-ContextualFetch>=0:databases/p5-DBIx-ContextualFetch \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

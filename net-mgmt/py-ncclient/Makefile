@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-ncclient/Makefile 480314 2018-09-21 21:38:55Z 0mp $
+# $FreeBSD: head/net-mgmt/py-ncclient/Makefile 481386 2018-10-06 18:31:41Z swills $
 
 PORTNAME=	ncclient
-DISTVERSION=	0.6.2
+DISTVERSION=	0.6.3
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

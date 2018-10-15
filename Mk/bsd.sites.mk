@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 479746 2018-09-13 22:13:24Z gerald $
+# $FreeBSD: head/Mk/bsd.sites.mk 482112 2018-10-14 20:17:25Z arved $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -688,7 +688,6 @@ MASTER_SITE_GNUPG+= \
 	https://ftp.heanet.ie/mirrors/ftp.gnupg.org/gcrypt/%SUBDIR%/ \
 	ftp://ftp.franken.de/pub/crypt/mirror/ftp.gnupg.org/gcrypt/%SUBDIR%/ \
 	ftp://mirror.switch.ch/mirror/gnupg/%SUBDIR%/ \
-	http://gd.tuwien.ac.at/privacy/gnupg/%SUBDIR%/ \
 	https://mirrors.dotsrc.org/gcrypt/%SUBDIR%/ \
 	ftp://ftp.freenet.de/pub/ftp.gnupg.org/gcrypt/%SUBDIR%/ \
 	ftp://ftp.crysys.hu/pub/gnupg/%SUBDIR%/ \
@@ -1057,7 +1056,6 @@ MASTER_SITE_SOURCEFORGE+= ${p}://${m}.dl.sourceforge.net/project/%SUBDIR%/
 .if !defined(IGNORE_MASTER_SITE_SOURCEWARE)
 MASTER_SITE_SOURCEWARE+= \
 	https://mirrors.kernel.org/sourceware/%SUBDIR%/ \
-	http://gd.tuwien.ac.at/gnu/sourceware/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/mirrors/sourceware.org/pub/%SUBDIR%/
 .endif
 
@@ -1197,7 +1195,6 @@ MASTER_SITE_XORG+= \
 	https://mirror.csclub.uwaterloo.ca/x.org/%SUBDIR%/ \
 	https://artfiles.org/x.org/pub/%SUBDIR%/ \
 	https://ftp.gwdg.de/pub/x11/x.org/pub/%SUBDIR%/ \
-	http://gd.tuwien.ac.at/X11/%SUBDIR%/ \
 	https://mi.mirror.garr.it/mirrors/x.org/%SUBDIR%/ \
 	http://mirror.switch.ch/ftp/mirror/X11/pub/%SUBDIR%/ \
 	https://mirrors.ircam.fr/pub/x.org/%SUBDIR%/ \

@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Time-Warp/Makefile 477913 2018-08-23 17:58:50Z sunpoet $
+# $FreeBSD: head/devel/p5-Time-Warp/Makefile 481503 2018-10-08 02:11:48Z wen $
 
 PORTNAME=	Time-Warp
-PORTVERSION=	0.53
+PORTVERSION=	0.54
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-FCGI-Async/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-FCGI-Async/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	FCGI-Async
 PORTVERSION=	0.22
@@ -14,10 +14,10 @@ COMMENT=	Module to allow use of FastCGI asynchronously
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-Async>=0:devel/p5-IO-Async \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Async>=0:devel/p5-IO-Async \
 		p5-Net-Async-FastCGI>=0:www/p5-Net-Async-FastCGI \
 		p5-Net-FastCGI>=0:www/p5-Net-FastCGI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Identity>=0:devel/p5-Test-Identity \
 		p5-Test-HexString>=0:devel/p5-Test-HexString \
 		p5-Test-Refcount>0:devel/p5-Test-Refcount

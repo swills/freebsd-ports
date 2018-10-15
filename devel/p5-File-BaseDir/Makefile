@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-File-BaseDir/Makefile 466469 2018-04-04 18:51:54Z sunpoet $
+# $FreeBSD: head/devel/p5-File-BaseDir/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-BaseDir
 PORTVERSION=	0.08
@@ -13,8 +13,8 @@ COMMENT=	Use the freedesktop basedir spec
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IPC-System-Simple>=0:devel/p5-IPC-System-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IPC-System-Simple>=0:devel/p5-IPC-System-Simple
 TEST_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which  \
 		p5-Test-Pod>=1.00:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=1.00:devel/p5-Test-Pod-Coverage

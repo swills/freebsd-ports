@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Date-Calc-Iterator/Makefile 468116 2018-04-23 18:16:55Z sunpoet $
+# $FreeBSD: head/devel/p5-Date-Calc-Iterator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Date-Calc-Iterator
 PORTVERSION=	1.02
@@ -13,9 +13,9 @@ COMMENT=	Iterate over a range of dates
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Date-Calc>=0:devel/p5-Date-Calc \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Date-Calc>=0:devel/p5-Date-Calc \
 		p5-Ref-Util>=0.202:devel/p5-Ref-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

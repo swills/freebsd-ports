@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-GD-Graph-ohlc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-GD-Graph-ohlc/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	GD-Graph-ohlc
 PORTVERSION=	0.9703
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Create charts displaying the open, high, low, and close
 
-BUILD_DEPENDS=	p5-GD-Graph>=0:graphics/p5-GD-Graph \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-GD-Graph>=0:graphics/p5-GD-Graph \
 		p5-Test-Simple>=0:devel/p5-Test-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

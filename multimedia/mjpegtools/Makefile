@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mjpegtools/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/mjpegtools/Makefile 481478 2018-10-07 19:35:33Z riggs $
 
 PORTNAME=	mjpegtools
 PORTVERSION=	2.1.0
@@ -17,7 +17,8 @@ BUILD_DEPENDS=	v4l_compat>0:multimedia/v4l_compat
 
 CONFLICTS=	mplex-[0-9]*
 
-USES=		gmake jpeg libtool pathfix pkgconfig localbase
+USES=		compiler:c++11-lang gmake gnome jpeg libtool localbase pathfix \
+		pkgconfig
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes

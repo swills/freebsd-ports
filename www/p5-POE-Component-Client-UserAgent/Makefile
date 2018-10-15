@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-POE-Component-Client-UserAgent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-POE-Component-Client-UserAgent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Client-UserAgent
 PORTVERSION=	0.08
@@ -15,9 +15,9 @@ COMMENT=	LWP and LWP::Parallel based POE component
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-ParallelUserAgent>=0:www/p5-ParallelUserAgent
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

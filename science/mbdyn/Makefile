@@ -1,9 +1,9 @@
 # Created by: Kay Lehmann <kay_lehmann@web.de>
-# $FreeBSD: head/science/mbdyn/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/mbdyn/Makefile 481254 2018-10-04 21:10:42Z yuri $
 
 PORTNAME=	mbdyn
 PORTVERSION=	1.7.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science
 MASTER_SITES=	https://www.mbdyn.org/userfiles/downloads/
 
@@ -17,7 +17,7 @@ BROKEN_powerpc=	Does not compile on powerpc
 
 BUILD_DEPENDS=	libatomic_ops>0:devel/libatomic_ops
 LIB_DEPENDS=	libltdl.so:devel/libltdl \
-		libarpack.so:math/arpack \
+		libarpack.so:math/arpack-ng \
 		libumfpack.so:math/suitesparse
 
 GNU_CONFIGURE=	yes

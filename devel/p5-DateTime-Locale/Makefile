@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 479722 2018-09-13 21:54:29Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Locale
 PORTVERSION=	1.22
@@ -35,7 +35,6 @@ USE_PERL5=	configure
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} < 502501
-BUILD_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 .endif
 

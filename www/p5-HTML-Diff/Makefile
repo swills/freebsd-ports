@@ -1,5 +1,5 @@
 # Created by: Travis Campbell <hcoyote@ghostar.org>
-# $FreeBSD: head/www/p5-HTML-Diff/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Diff/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Diff
 PORTVERSION=	0.561
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hcoyote@ghostar.org
 COMMENT=	Perl module for finding changes between two strings of HTML
 
-BUILD_DEPENDS=	p5-Algorithm-Diff>=0:devel/p5-Algorithm-Diff
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Algorithm-Diff>=0:devel/p5-Algorithm-Diff
 
 USES=		perl5
 USE_PERL5=	configure

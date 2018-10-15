@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/devel/p5-POE-Loop-Glib/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/devel/p5-POE-Loop-Glib/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Loop-Glib
 PORTVERSION=	0.038
@@ -14,9 +14,9 @@ COMMENT=	Bridge that supports Glib event loop from POE
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	p5-POE>=1.288:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=1.288:devel/p5-POE \
 		p5-Glib2>=1.222:devel/p5-Glib2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	examples/gtk2_counter.pl

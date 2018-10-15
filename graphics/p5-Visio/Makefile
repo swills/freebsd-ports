@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/graphics/p5-Visio/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Visio/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Visio
 PORTVERSION=	1.010
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension manipulating XML based Visio files
 
-BUILD_DEPENDS=	p5-Log-Log4perl>=0:devel/p5-Log-Log4perl \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Log4perl>=0:devel/p5-Log-Log4perl \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

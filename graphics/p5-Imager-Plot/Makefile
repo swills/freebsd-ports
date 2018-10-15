@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/p5-Imager-Plot/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Imager-Plot/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Imager-Plot
 PORTVERSION=	0.09
@@ -14,8 +14,8 @@ COMMENT=	Perl extension for generating fancy graphic plots in color
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Imager>=0:graphics/p5-Imager
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Imager>=0:graphics/p5-Imager
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	plot.pl

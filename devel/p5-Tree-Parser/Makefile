@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Tree-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Tree-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tree-Parser
 PORTVERSION=	0.15
@@ -14,9 +14,9 @@ COMMENT=	Module to parse formatted files into tree structures
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Array-Iterator>=0:devel/p5-Array-Iterator \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Array-Iterator>=0:devel/p5-Array-Iterator \
 		p5-Tree-Simple>=0:devel/p5-Tree-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

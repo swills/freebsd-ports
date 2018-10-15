@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pecl-oauth/Makefile 465055 2018-03-20 02:20:07Z dbaio $
+# $FreeBSD: head/net/pecl-oauth/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

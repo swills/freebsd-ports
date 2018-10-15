@@ -1,5 +1,5 @@
 # Created by: A.J.Robinson (ajr@subdimension.com)
-# $FreeBSD: head/sysutils/fastest_cvsup/Makefile 385739 2015-05-08 09:15:20Z amdmi3 $
+# $FreeBSD: head/sysutils/fastest_cvsup/Makefile 482033 2018-10-14 08:00:14Z ak $
 
 PORTNAME=	fastest_cvsup
 PORTVERSION=	0.3.0
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME:S/_/-/}
 
 MAINTAINER=	freebsd@hm2k.org
 COMMENT=	Finds fastest CVSup server
+
+DEPRECATED=	Obsolete, FreeBSD and OpenBSD switched from cvsup to svn and cvsync, NetBSD only have 2 servers left
+EXPIRATION_DATE=	2018-11-15
 
 LICENSE=	BSD
 

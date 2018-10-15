@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-Authen-SASL-Cyrus/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Authen-SASL-Cyrus/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-SASL-Cyrus
 PORTVERSION=	0.13
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XS SASL Authentication
 
-BUILD_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL
 LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

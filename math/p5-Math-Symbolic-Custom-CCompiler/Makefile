@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Symbolic-Custom-CCompiler/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-Symbolic-Custom-CCompiler/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Symbolic-Custom-CCompiler
 PORTVERSION=	1.04
@@ -14,10 +14,10 @@ COMMENT=	Compile Math::Symbolic trees to C
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Math-Symbolic>=0.509:math/p5-Math-Symbolic \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Symbolic>=0.509:math/p5-Math-Symbolic \
 		p5-Inline>=0.44:devel/p5-Inline \
 		p5-Inline-C>=0.44:devel/p5-Inline-C
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

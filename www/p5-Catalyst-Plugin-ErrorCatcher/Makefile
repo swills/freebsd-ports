@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/www/p5-Catalyst-Plugin-ErrorCatcher/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-ErrorCatcher/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-ErrorCatcher
 PORTVERSION=	0.0.8.21
@@ -14,7 +14,8 @@ COMMENT=	Catch application errors and emit them somewhere
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.80000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.80000:www/p5-Catalyst-Runtime \
 		p5-Data-Dump>=0:devel/p5-Data-Dump \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-File-Slurp>=0:devel/p5-File-Slurp \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.80000:www/p5-Catalyst-Runtime \
 		p5-Module-Pluggable>=0:devel/p5-Module-Pluggable \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-Path-Class>=0:devel/p5-Path-Class
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.10010:www/p5-Catalyst-Plugin-Authentication \
 		p5-Catalyst-Plugin-ConfigLoader>=0.22:www/p5-Catalyst-Plugin-ConfigLoader \
 		p5-Catalyst-Plugin-Session-State-Cookie>=0:www/p5-Catalyst-Plugin-Session-State-Cookie \

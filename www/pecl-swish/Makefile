@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/www/pecl-swish/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/www/pecl-swish/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	swish
 PORTVERSION=	0.5.0
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	swish-config:www/swish-e
 RUN_DEPENDS:=	swish-config:www/swish-e
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 CONFIGURE_ARGS=	--enable-swish --with-swish=${LOCALBASE}/bin
 

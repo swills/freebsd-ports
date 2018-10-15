@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-XForwardedFor/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-XForwardedFor/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Plack-Middleware-XForwardedFor
 PORTVERSION=	0.172050
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Net-IP>=1.26:net-mgmt/p5-Net-IP \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-IP>=1.26:net-mgmt/p5-Net-IP \
 		p5-Plack>=0.9913:www/p5-Plack
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

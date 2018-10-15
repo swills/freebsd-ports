@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/math/p5-GIS-Distance-Fast/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/math/p5-GIS-Distance-Fast/Makefile 481719 2018-10-10 10:23:52Z sunpoet $
 
 PORTNAME=	GIS-Distance-Fast
-PORTVERSION=	0.07
+PORTVERSION=	0.08
 PORTREVISION=	1
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
@@ -12,8 +12,16 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	C implementation of GIS::Distance formulas
 
-BUILD_DEPENDS=	p5-GIS-Distance>=0.07:math/p5-GIS-Distance
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Measure>=0:devel/p5-Class-Measure \
+		p5-GIS-Distance>=0.09:math/p5-GIS-Distance \
+		p5-Moo>=1:devel/p5-Moo \
+		p5-namespace-clean>=0:devel/p5-namespace-clean \
+		p5-strictures>=1:devel/p5-strictures
 
 USES=		perl5
 USE_PERL5=	configure

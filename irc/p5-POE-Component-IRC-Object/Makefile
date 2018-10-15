@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Object/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Object/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-IRC-Object
 PORTVERSION=	0.02
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Slightly simpler OO interface to POE::Component::IRC
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-POE-Component-IRC>=0:irc/p5-POE-Component-IRC
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 #PLIST_SUB=	EXAMPLESDIR="share/examples/${PORTNAME}"
 USES=		perl5

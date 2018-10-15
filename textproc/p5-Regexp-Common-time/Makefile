@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Regexp-Common-time/Makefile 479182 2018-09-07 08:32:30Z des $
+# $FreeBSD: head/textproc/p5-Regexp-Common-time/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Regexp-Common-time
 PORTVERSION=	0.16
@@ -9,8 +9,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Regexp::Common::time - Date and time regexps
 
-BUILD_DEPENDS=	p5-Regexp-Common>0:textproc/p5-Regexp-Common
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Regexp-Common>0:textproc/p5-Regexp-Common
 
 USES=		perl5
 USE_PERL5=	configure

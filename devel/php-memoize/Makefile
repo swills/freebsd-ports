@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-memoize/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/php-memoize/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	memoize
 PORTVERSION=	0.2.0b1
@@ -16,7 +16,7 @@ GH_ACCOUNT=	arraypad
 GH_PROJECT=	php-${PORTNAME}
 
 USES=		php:ext
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 CONFIGURE_ARGS=	--enable-memoize
 
 OPTIONS_DEFINE=	MEMCACHED MEMORY

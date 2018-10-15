@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-POE-Component-Schedule/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-POE-Component-Schedule/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Schedule
 PORTVERSION=	0.95
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Schedule POE Events using a cron spec
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-DateTime-Set>=0:devel/p5-DateTime-Set
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

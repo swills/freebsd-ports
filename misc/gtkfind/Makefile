@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/misc/gtkfind/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/misc/gtkfind/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gtkfind
 PORTVERSION=	1.1
@@ -10,6 +10,9 @@ MASTER_SITES=	http://www.bayofrum.net/dist/${PORTNAME}/ \
 
 MAINTAINER=	perryh@pluto.rain.com
 COMMENT=	GTK front-end to find(1)
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

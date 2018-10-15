@@ -1,5 +1,5 @@
 # Created by: Ryan T. Dean <rtdean@cytherianage.net>
-# $FreeBSD: head/converters/p5-Unicode-MapUTF8/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-Unicode-MapUTF8/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Unicode-MapUTF8
 PORTVERSION=	1.11
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl class that implements conversion between arbitrary charsets
 
-BUILD_DEPENDS=	ja-p5-Jcode>=0:japanese/p5-Jcode \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	ja-p5-Jcode>=0:japanese/p5-Jcode \
 		p5-Unicode-Map>=0:converters/p5-Unicode-Map \
 		p5-Unicode-Map8>=0:converters/p5-Unicode-Map8 \
 		p5-Unicode-String>=0:converters/p5-Unicode-String
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

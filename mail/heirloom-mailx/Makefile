@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/heirloom-mailx/Makefile 444007 2017-06-21 02:30:36Z cy $
+# $FreeBSD: head/mail/heirloom-mailx/Makefile 482131 2018-10-15 02:56:36Z cy $
 
 PORTNAME=	mailx
 PORTVERSION=	12.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF/heirloom/heirloom-${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	heirloom-
@@ -18,6 +18,7 @@ CONFLICTS=	mailx-[0-9]*
 
 MAKE_JOBS_UNSAFE=	yes
 USES=		iconv localbase ssl tar:bzip2
+CPPFLAGS+=	-DOPENSSL_NO_SSL2
 MAKE_ARGS=	PREFIX="${PREFIX}" \
 		SYSCONFDIR="${PREFIX}/etc" \
 		SENDMAIL="/usr/sbin/sendmail" \

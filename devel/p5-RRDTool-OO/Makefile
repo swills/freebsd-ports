@@ -1,5 +1,5 @@
 # Created by: Stefan Pauly <stefan@fh-mainz.de>
-# $FreeBSD: head/devel/p5-RRDTool-OO/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-RRDTool-OO/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	RRDTool-OO
 PORTVERSION=	0.36
@@ -14,9 +14,9 @@ COMMENT=	RRDTool::OO - Object-oriented interface to RRDTool
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	rrdtool>=0:databases/rrdtool \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	rrdtool>=0:databases/rrdtool \
 		p5-Log-Log4perl>=0.40:devel/p5-Log-Log4perl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

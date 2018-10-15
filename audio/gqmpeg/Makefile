@@ -1,5 +1,5 @@
 # Created by: Vanilla Pooh Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/audio/gqmpeg/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/gqmpeg/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gqmpeg
 PORTVERSION=	0.20.0
@@ -10,6 +10,9 @@ MASTER_SITES=	SF
 
 MAINTAINER?=	lyngbol@wheel.dk
 COMMENT?=	Another gtk-based MP3 frontend
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 OPTIONS_DEFINE=	MPG321
 MPG321_DESC=	use mpg321 instead of mpg123

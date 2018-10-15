@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Petal-CodePerl/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Petal-CodePerl/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Petal-CodePerl
 PORTVERSION=	0.06
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Make Petal go faster by compiling the expressions
 
-BUILD_DEPENDS=	p5-Petal>=0:textproc/p5-Petal \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Petal>=0:textproc/p5-Petal \
 		p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent \
 		p5-Code-Perl>=0:devel/p5-Code-Perl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

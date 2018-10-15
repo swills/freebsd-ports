@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-FixMissingBodyInRedirect/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-FixMissingBodyInRedirect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Plack-Middleware-FixMissingBodyInRedirect
 PORTVERSION=	0.12
@@ -14,9 +14,9 @@ COMMENT=	Sets body for redirect response, if it is not already set
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Plack>=0:www/p5-Plack
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message
 
 USE_PERL5=	configure

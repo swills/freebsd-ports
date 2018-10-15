@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/mail/p5-Mail-Address-MobileJp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Address-MobileJp/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Address-MobileJp
 PORTVERSION=	0.09
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Utility to detect an e-mail is mobile one or not
 
-BUILD_DEPENDS=	p5-Mail-Tools>=0:mail/p5-Mail-Tools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mail-Tools>=0:mail/p5-Mail-Tools
 
 USES=		perl5
 USE_PERL5=	configure

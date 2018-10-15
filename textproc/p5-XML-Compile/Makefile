@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/textproc/p5-XML-Compile/Makefile 463756 2018-03-06 20:32:12Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Compile/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Compile
 PORTVERSION=	1.60
@@ -13,10 +13,10 @@ COMMENT=	Compilation based XML processing
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Log-Report>=1.20:devel/p5-Log-Report \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Report>=1.20:devel/p5-Log-Report \
 		p5-Types-Serialiser>=0:devel/p5-Types-Serialiser \
 		p5-XML-LibXML>=2.0107:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0.095:devel/p5-Test-Deep \
 		p5-XML-Compile-Tester>=0.90:devel/p5-XML-Compile-Tester
 

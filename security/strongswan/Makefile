@@ -1,8 +1,8 @@
 # Created by: Riaan Kruger <riaank@gmail.com>
-# $FreeBSD: head/security/strongswan/Makefile 480733 2018-09-26 13:03:49Z garga $
+# $FreeBSD: head/security/strongswan/Makefile 481111 2018-10-02 11:00:10Z garga $
 
 PORTNAME=	strongswan
-PORTVERSION=	5.7.0
+PORTVERSION=	5.7.1
 CATEGORIES=	security
 MASTER_SITES=	http://download.strongswan.org/ \
 		http://download2.strongswan.org/

@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/citra/Makefile 480883 2018-09-28 21:40:10Z jbeich $
+# $FreeBSD: head/emulators/citra/Makefile 481947 2018-10-12 23:48:38Z jbeich $
 
 PORTNAME=	citra
-PORTVERSION=	s20180927
+PORTVERSION=	s20181011
 PORTREVISION?=	0
 CATEGORIES=	emulators
 
@@ -23,14 +23,14 @@ BUILD_DEPENDS=	boost-libs>=1.66:devel/boost-libs
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	citra-emu
-GH_TAGNAME=	7c97e8df6
+GH_TAGNAME=	0962ab8da
 GH_TUPLE=	citra-emu:ext-libressl-portable:7d01cb0:libressl/externals/libressl \
 		citra-emu:ext-soundtouch:060181e:soundtouch/externals/soundtouch \
-		MerryMage:dynarmic:r1-873-g68ca03e:dynarmic/externals/dynarmic \
+		MerryMage:dynarmic:r1-992-g4e6848d1:dynarmic/externals/dynarmic \
 		arsenm:sanitizers-cmake:f09151b:sanitizers_cmake/externals/cubeb/cmake/sanitizers-cmake \
 		benhoyt:inih:r40:inih/externals/inih/inih \
 		catchorg:Catch2:v2.3.0:catch/externals/catch \
-		fmtlib:fmt:5.1.0:fmt/externals/fmt \
+		fmtlib:fmt:5.2.1:fmt/externals/fmt \
 		herumi:xbyak:v5.71:xbyak/externals/xbyak \
 		kinetiknz:cubeb:cubeb-0.2-1039-g44341a1:cubeb/externals/cubeb \
 		lsalzman:enet:39a72ab:enet/externals/enet \

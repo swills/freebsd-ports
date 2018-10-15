@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/www/p5-WWW-Wikipedia/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Wikipedia/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Wikipedia
 PORTVERSION=	2.05
@@ -14,10 +14,10 @@ COMMENT=	Perl module of Automated interface to the Wikipedia
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-Text-Autoformat>=0:textproc/p5-Text-Autoformat \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

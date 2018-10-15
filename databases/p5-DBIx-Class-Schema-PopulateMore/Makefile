@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Class-Schema-PopulateMore/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-Schema-PopulateMore/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Class-Schema-PopulateMore
 PORTVERSION=	0.19
@@ -13,13 +13,13 @@ COMMENT=	Enhanced populate method
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-Visitor>=0.27:devel/p5-Data-Visitor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Visitor>=0.27:devel/p5-Data-Visitor \
 		p5-DateTimeX-Easy>=0.089:devel/p5-DateTimeX-Easy \
 		p5-List-MoreUtils>=0.30:lang/p5-List-MoreUtils \
 		p5-Moo>=1.004006:devel/p5-Moo \
 		p5-MooX-HandlesVia>=0.001005:devel/p5-MooX-HandlesVia \
 		p5-Type-Tiny>=0.042:devel/p5-Type-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-DBIx-Class>=0.08127:databases/p5-DBIx-Class \
 		p5-DateTime-Format-SQLite>=0.11:devel/p5-DateTime-Format-SQLite \

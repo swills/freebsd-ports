@@ -1,9 +1,9 @@
 # Created by: timur@FreeBSD.org
-# $FreeBSD: head/net/samba47/Makefile 478947 2018-09-04 10:19:31Z timur $
+# $FreeBSD: head/net/samba47/Makefile 481463 2018-10-07 17:16:23Z dim $
 
 PORTNAME=			${SAMBA4_BASENAME}47
 PORTVERSION=			${SAMBA4_VERSION}
-PORTREVISION=			0
+PORTREVISION=			1
 CATEGORIES?=			net
 MASTER_SITES=			SAMBA/samba/stable SAMBA/samba/rc
 DISTNAME=			${SAMBA4_DISTNAME}

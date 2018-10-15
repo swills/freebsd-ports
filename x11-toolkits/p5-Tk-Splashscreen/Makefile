@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Tk-Splashscreen/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/x11-toolkits/p5-Tk-Splashscreen/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-Splashscreen
 PORTVERSION=	1.0
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Tk::Splashscreen, display a Splashscreen during program initialization
 
-BUILD_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
 
 USES=		perl5
 USE_PERL5=	configure

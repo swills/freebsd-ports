@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Gtk2-Ex-Simple-List/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Gtk2-Ex-Simple-List/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Gtk2-Ex-Simple-List
 PORTVERSION=	0.50
@@ -14,9 +14,9 @@ COMMENT=	Simple interface to complex MVC list widget
 LICENSE=	LGPL21 LGPL3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Glib2>=1.00:devel/p5-Glib2 \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Glib2>=1.00:devel/p5-Glib2 \
 		p5-Gtk2>=1.060:x11-toolkits/p5-Gtk2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

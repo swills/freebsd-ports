@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/fiche/Makefile 476716 2018-08-09 02:18:00Z zi $
+# $FreeBSD: head/net/fiche/Makefile 481390 2018-10-06 19:51:28Z zi $
 
 PORTNAME=	fiche
 PORTVERSION=	0.9.1
@@ -14,6 +14,7 @@ LICENSE=	MIT
 USERS=		${PORTNAME}
 GROUPS=		${PORTNAME}
 
+USES=		compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	solusipse
 

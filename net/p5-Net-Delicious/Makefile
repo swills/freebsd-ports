@@ -1,5 +1,5 @@
 # Created by: Aaron Straup Cope <ascope@cpan.org>
-# $FreeBSD: head/net/p5-Net-Delicious/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Delicious/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Delicious
 PORTVERSION=	1.14
@@ -13,7 +13,8 @@ COMMENT=	OOP for managing posts on del.icio.us
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Config-Simple>=2:devel/p5-Config-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-Simple>=2:devel/p5-Config-Simple \
 		p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-IO-stringy>=2.1:devel/p5-IO-stringy \
 		p5-Log-Dispatch>=2:devel/p5-Log-Dispatch \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-Config-Simple>=2:devel/p5-Config-Simple \
 		p5-XML-Simple>=2:textproc/p5-XML-Simple \
 		p5-YAML>=0.35:textproc/p5-YAML \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

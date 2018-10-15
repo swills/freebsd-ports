@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/p5-Algorithm-KMeans/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Algorithm-KMeans/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Algorithm-KMeans
 PORTVERSION=	2.05
@@ -13,10 +13,10 @@ COMMENT=	Clustering multi-dimensional data with a pure-Perl implementation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Graphics-GnuplotIF>=1.4:graphics/p5-Graphics-GnuplotIF \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Graphics-GnuplotIF>=1.4:graphics/p5-Graphics-GnuplotIF \
 		p5-Math-GSL>=0.26:math/p5-Math-GSL \
 		p5-Math-Random>=0.71:math/p5-Math-Random
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

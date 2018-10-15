@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Simple-SMB/Makefile 471682 2018-06-04 18:14:38Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-Simple-SMB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-Simple-SMB
 PORTVERSION=	0.1
@@ -14,9 +14,9 @@ COMMENT=	Simple SMB authentication
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple \
 		p5-Authen-Smb>=0:security/p5-Authen-Smb
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Petal/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Petal/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Petal
 PORTVERSION=	2.24
@@ -14,9 +14,9 @@ COMMENT=	Perl Template Attribute Language - TAL for Perl!
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Locale-Maketext-Gettext>=0:devel/p5-Locale-Maketext-Gettext \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Locale-Maketext-Gettext>=0:devel/p5-Locale-Maketext-Gettext \
 		p5-MKDoc-XML>=0.72:textproc/p5-MKDoc-XML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-URI>=0:net/p5-URI
 
 NO_ARCH=	yes

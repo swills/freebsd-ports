@@ -1,5 +1,5 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/games/dopewars/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/dopewars/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	dopewars
 PORTVERSION=	1.5.12
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	UNIX rewrite of a game originally based on "Drug Wars"
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

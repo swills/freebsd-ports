@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-MIME/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Email-MIME/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-MIME
 PORTVERSION=	1.946
@@ -13,14 +13,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Email-Address-XS>=0:mail/p5-Email-Address-XS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Address-XS>=0:mail/p5-Email-Address-XS \
 		p5-Email-MIME-ContentType>=1.022:mail/p5-Email-MIME-ContentType \
 		p5-Email-MIME-Encodings>=1.314:mail/p5-Email-MIME-Encodings \
 		p5-Email-MessageID>=0:mail/p5-Email-MessageID \
 		p5-Email-Simple>=2.212:mail/p5-Email-Simple \
 		p5-MIME-Types>=1.13:mail/p5-MIME-Types \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

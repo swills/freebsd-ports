@@ -1,8 +1,8 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/www/UniversalFeedCreator/Makefile 453351 2017-11-02 16:28:06Z dvl $
+# $FreeBSD: head/www/UniversalFeedCreator/Makefile 481234 2018-10-04 17:10:02Z dvl $
 
 PORTNAME=	UniversalFeedCreator
-PORTVERSION=	1.8.3
+PORTVERSION=	1.8.3.1
 DISTVERSIONPREFIX=	v
 PORTREVISION=	0
 CATEGORIES=	www

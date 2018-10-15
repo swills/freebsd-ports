@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-WWW-DHL/Makefile 471712 2018-06-04 18:17:45Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-DHL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-DHL
 PORTVERSION=	0.03
@@ -14,10 +14,10 @@ COMMENT=	Perl module for the DHL online tracking service
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-HTML-TokeParser-Simple>=0:www/p5-HTML-TokeParser-Simple \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

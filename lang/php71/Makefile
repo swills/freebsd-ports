@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/lang/php71/Makefile 480035 2018-09-18 16:08:00Z emaste $
+# $FreeBSD: head/lang/php71/Makefile 481914 2018-10-12 17:03:07Z joneum $
 
 PORTNAME=	php71
-PORTVERSION=	7.1.22
+PORTVERSION=	7.1.23
 PORTREVISION?=	0
 CATEGORIES?=	lang devel www
 MASTER_SITES=	PHP/distributions
@@ -58,7 +58,7 @@ MAILHEAD_DESC=	Enable mail header patch
 LINKTHR_DESC=	Link thread lib (for threaded extensions)
 ZTS_DESC=	Force Zend Thread Safety (ZTS) build
 
-CONFLICTS=	php56-* php70-* php72-*
+CONFLICTS=	php56-* php70-* php72-* php73-*
 
 DESTDIRNAME=	INSTALL_ROOT
 

@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/devel/p5-Test-Mock-LWP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Mock-LWP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Mock-LWP
 PORTVERSION=	0.08
@@ -14,8 +14,8 @@ COMMENT=	Easy mocking of LWP packages
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Test-MockObject>=1.08:devel/p5-Test-MockObject
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-MockObject>=1.08:devel/p5-Test-MockObject
 
 USE_PERL5=	configure
 USES=		perl5

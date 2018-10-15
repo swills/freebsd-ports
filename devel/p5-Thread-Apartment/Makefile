@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/devel/p5-Thread-Apartment/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Thread-Apartment/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Thread-Apartment
 PORTVERSION=	0.51
@@ -16,10 +16,10 @@ LICENSE_NAME=	Academic Free License version 2.1
 LICENSE_FILE=	${WRKSRC}/License.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BUILD_DEPENDS=	p5-Class-ISA>=0.32:devel/p5-Class-ISA \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-ISA>=0.32:devel/p5-Class-ISA \
 		p5-Class-Inspector>=1.08:devel/p5-Class-Inspector \
 		p5-Thread-Queue-Duplex>=0.92:devel/p5-Thread-Queue-Duplex
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

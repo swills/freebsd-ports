@@ -1,5 +1,5 @@
 # Created by: johnpupu <johnpupu@gmail.com>
-# $FreeBSD: head/www/pecl-yaf2/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/pecl-yaf2/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	yaf
 PORTVERSION=	2.3.5
@@ -15,6 +15,6 @@ LIB_DEPENDS=	libpcre.so:devel/pcre
 PORTSCOUT=	limit:^2\.
 
 USES=		localbase php:pecl
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 
 .include <bsd.port.mk>

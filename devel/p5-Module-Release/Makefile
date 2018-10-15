@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Module-Release/Makefile 463242 2018-02-28 15:52:52Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Release/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Module-Release
 PORTVERSION=	2.125
@@ -13,7 +13,8 @@ COMMENT=	Upload files to CPAN and SourceForge
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-CACertOrg-CA>=0:security/p5-CACertOrg-CA \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CACertOrg-CA>=0:security/p5-CACertOrg-CA \
 		p5-ConfigReader-Simple>=0:devel/p5-ConfigReader-Simple \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-IO-Null>=0:devel/p5-IO-Null \
@@ -21,7 +22,6 @@ BUILD_DEPENDS=	p5-CACertOrg-CA>=0:security/p5-CACertOrg-CA \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=6.02:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-Test-Output>=0:devel/p5-Test-Output \
 		p5-Test-Pod>=1:devel/p5-Test-Pod \

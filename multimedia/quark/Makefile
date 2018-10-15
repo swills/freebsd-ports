@@ -1,5 +1,5 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/multimedia/quark/Makefile 478529 2018-08-31 08:16:18Z tobik $
+# $FreeBSD: head/multimedia/quark/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	quark
 PORTVERSION=	3.24
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Audio player, for geeks, by geeks
 
 LICENSE=	GPLv2
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libxine.so:multimedia/libxine
 

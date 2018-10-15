@@ -1,5 +1,5 @@
 # Created by: Luke Jee
-# $FreeBSD: head/lang/pecl-perl/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/lang/pecl-perl/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	perl
 DISTVERSION=	1.0.1
@@ -11,7 +11,7 @@ COMMENT=	Embedded Perl
 
 LICENSE=	PHP301
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 USES=		perl5 php:pecl
 

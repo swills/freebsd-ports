@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-MIME-Attachment-Stripper/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Email-MIME-Attachment-Stripper/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-MIME-Attachment-Stripper
 PORTVERSION=	1.317
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Email-MIME>=1.861:mail/p5-Email-MIME \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-MIME>=1.861:mail/p5-Email-MIME \
 		p5-Email-MIME-ContentType>=1.016:mail/p5-Email-MIME-ContentType
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

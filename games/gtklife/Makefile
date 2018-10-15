@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/gtklife/Makefile 453461 2017-11-04 13:27:09Z vanilla $
+# $FreeBSD: head/games/gtklife/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gtklife
 PORTVERSION=	5.2
@@ -8,6 +8,9 @@ MASTER_SITES=	http://ironphoenix.org/tril/gtklife/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK+ implementation of Conways Game of Life
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

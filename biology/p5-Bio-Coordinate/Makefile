@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/biology/p5-Bio-Coordinate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/biology/p5-Bio-Coordinate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Bio-Coordinate
 PORTVERSION=	1.007001
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-BioPerl>=1.007000:biology/p5-BioPerl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-BioPerl>=1.007000:biology/p5-BioPerl
 
 NO_ARCH=	yes
 USE_PERL5=	configure

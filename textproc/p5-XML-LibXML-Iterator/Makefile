@@ -1,5 +1,5 @@
 # Created by: Oliver Eikemeier <eikemeier@fillmore-labs.com>
-# $FreeBSD: head/textproc/p5-XML-LibXML-Iterator/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-LibXML-Iterator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-LibXML-Iterator
 PORTVERSION=	1.04
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XML::LibXML::Iterator is an iterator for XML::LibXML parsed documents
 
-BUILD_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-XML-NodeFilter>=0:textproc/p5-XML-NodeFilter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

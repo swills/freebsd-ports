@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-send-file/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/ktp-send-file/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-send-file
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	net-im kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE instant messaging file transfer application
 
-LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt5 \
+LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 RUN_DEPENDS=	${KDE_PREFIX}/lib/libexec/ktp-filetransfer-handler:net-im/ktp-filetransfer-handler \
 		${KDE_PREFIX}/bin/ktp-contactlist:net-im/ktp-contact-list

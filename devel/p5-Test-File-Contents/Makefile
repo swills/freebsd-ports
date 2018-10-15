@@ -1,5 +1,5 @@
 # Created by: Rod Taylor <ports@rbt.ca>
-# $FreeBSD: head/devel/p5-Test-File-Contents/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-File-Contents/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-File-Contents
 PORTVERSION=	0.23
@@ -13,8 +13,8 @@ COMMENT=	Test routines for examining the contents of files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Text-Diff>=0.35:textproc/p5-Text-Diff
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Diff>=0.35:textproc/p5-Text-Diff
 
 USES=		perl5
 USE_PERL5=	modbuild

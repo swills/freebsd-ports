@@ -1,5 +1,5 @@
 # Created by: Shinsuke Matsui <smatsui@karashi.org>
-# $FreeBSD: head/shells/p5-Shell-Perl/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/shells/p5-Shell-Perl/Makefile 481722 2018-10-10 10:24:15Z sunpoet $
 
 PORTNAME=	Shell-Perl
 PORTVERSION=	0.0022
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	smatsui@karashi.org
 COMMENT=	Read-eval-print loop in Perl
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-YAML>=0:textproc/p5-YAML \
@@ -24,5 +27,7 @@ BUILD_DEPENDS=	p5-Test-Script>=0:devel/p5-Test-Script \
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

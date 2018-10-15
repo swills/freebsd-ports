@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rssroll/Makefile 477231 2018-08-15 14:46:41Z swills $
+# $FreeBSD: head/www/rssroll/Makefile 481903 2018-10-12 13:53:26Z tobik $
 
 PORTNAME=	rssroll
-PORTVERSION=	0.6
+PORTVERSION=	0.6.1
 CATEGORIES=	www
 
 MAINTAINER=	koue@chaosophia.net

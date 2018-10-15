@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Simple-Net/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Authen-Simple-Net/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-Simple-Net
 PORTVERSION=	0.2
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple authentication via FTP, POP3, or SMTP
 
-BUILD_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple
 
 USES=		perl5
 USE_PERL5=	modbuild

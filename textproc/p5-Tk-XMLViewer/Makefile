@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/textproc/p5-Tk-XMLViewer/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Tk-XMLViewer/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-XMLViewer
 PORTVERSION=	0.21
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Tk::XMLViewer - Tk widget to display XML
 
-BUILD_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

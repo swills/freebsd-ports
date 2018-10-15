@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Perl6-Export-Attrs/Makefile 462234 2018-02-18 13:37:54Z sunpoet $
+# $FreeBSD: head/devel/p5-Perl6-Export-Attrs/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Perl6-Export-Attrs
 PORTVERSION=	0.000006
@@ -13,8 +13,8 @@ COMMENT=	Perl 6 'is export(...)' trait as a Perl 5 attribute
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PadWalker>=0:devel/p5-PadWalker
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PadWalker>=0:devel/p5-PadWalker
 
 NO_ARCH=	yes
 USES=		perl5

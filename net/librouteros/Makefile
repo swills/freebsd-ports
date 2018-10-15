@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net/librouteros/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/librouteros/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	librouteros
 PORTVERSION=	1.1.2
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://verplant.org/librouteros/files/
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for communicating with network devices by MikroTik
 
 LICENSE=	GPLv2

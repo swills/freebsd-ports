@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
-# $FreeBSD: head/www/p5-WWW-Scraper-ISBN-Amazon_Driver/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Scraper-ISBN-Amazon_Driver/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Scraper-ISBN-Amazon_Driver
 PORTVERSION=	0.41
@@ -12,9 +12,9 @@ COMMENT=	Search driver for the (US) Amazon online catalog
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-WWW-Mechanize>=1.60:www/p5-WWW-Mechanize \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Mechanize>=1.60:www/p5-WWW-Mechanize \
 		p5-WWW-Scraper-ISBN>=1:www/p5-WWW-Scraper-ISBN
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-JSON>=0:converters/p5-JSON
 
 USES=		perl5

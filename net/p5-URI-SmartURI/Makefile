@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/net/p5-URI-SmartURI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-URI-SmartURI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	URI-SmartURI
 PORTVERSION=	0.032
@@ -14,14 +14,14 @@ COMMENT=	Subclassable and hostless URIs
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-C3-Componentised>=0:devel/p5-Class-C3-Componentised \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-C3-Componentised>=0:devel/p5-Class-C3-Componentised \
 		p5-File-Find-Rule>=0:devel/p5-File-Find-Rule \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-MRO-Compat>=0.09:devel/p5-MRO-Compat \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-URI>=1.51:net/p5-URI \
 		p5-namespace-clean>=0:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>0:devel/p5-Test-Fatal \
 		p5-Test-NoWarnings>0:devel/p5-Test-NoWarnings
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/databases/p5-Class-DBI-AsForm/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/databases/p5-Class-DBI-AsForm/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-AsForm
 PORTVERSION=	2.42
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Produce HTML form elements for database columns
 
-BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
 		p5-HTML-Tree>=0:www/p5-HTML-Tree \
 		p5-Class-DBI-Plugin-Type>=0:databases/p5-Class-DBI-Plugin-Type
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

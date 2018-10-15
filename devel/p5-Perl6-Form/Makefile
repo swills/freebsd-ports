@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.idv.tw>
-# $FreeBSD: head/devel/p5-Perl6-Form/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Perl6-Form/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Perl6-Form
 PORTVERSION=	0.04
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Implements the Perl 6 'form' built-in
 
-BUILD_DEPENDS=	p5-Perl6-Export>=0:devel/p5-Perl6-Export
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Perl6-Export>=0:devel/p5-Perl6-Export
 
 USES=		perl5
 USE_PERL5=	configure

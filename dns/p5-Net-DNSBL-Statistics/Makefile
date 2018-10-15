@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/dns/p5-Net-DNSBL-Statistics/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-Net-DNSBL-Statistics/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-DNSBL-Statistics
 PORTVERSION=	0.14
@@ -14,10 +14,10 @@ COMMENT=	Gather DNSBL Statistics
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-DNS-Codes>=0.09:dns/p5-Net-DNS-Codes \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS-Codes>=0.09:dns/p5-Net-DNS-Codes \
 		p5-Net-DNS-ToolKit>=0.41:dns/p5-Net-DNS-ToolKit \
 		p5-Net-DNSBL-MultiDaemon>=0.26:dns/p5-Net-DNSBL-MultiDaemon
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

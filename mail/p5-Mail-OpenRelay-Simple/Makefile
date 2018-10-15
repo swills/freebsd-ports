@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/mail/p5-Mail-OpenRelay-Simple/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-OpenRelay-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-OpenRelay-Simple
 PORTVERSION=	0.02
@@ -13,9 +13,9 @@ COMMENT=	Check if a mail server runs as an open relay
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0.25:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0.25:devel/p5-Class-Accessor \
 		p5-Net-Telnet>=3.03:net/p5-Net-Telnet
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

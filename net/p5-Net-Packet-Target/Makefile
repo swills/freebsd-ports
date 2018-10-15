@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Packet-Target/Makefile 471663 2018-06-04 18:10:54Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Packet-Target/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Packet-Target
 PORTVERSION=	1.01
@@ -14,9 +14,9 @@ COMMENT=	Target object for all Net-Packet related stuff
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/LICENSE.Artistic
 
-BUILD_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
 		p5-Net-Packet>=3.00:net/p5-Net-Packet
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

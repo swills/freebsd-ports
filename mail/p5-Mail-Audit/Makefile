@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/mail/p5-Mail-Audit/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Mail-Audit/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Audit
 PORTVERSION=	2.228
@@ -14,11 +14,11 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-File-HomeDir>=0.61:devel/p5-File-HomeDir \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-HomeDir>=0.61:devel/p5-File-HomeDir \
 		p5-File-Tempdir>=0:devel/p5-File-Tempdir \
 		p5-MIME-Tools>=0:mail/p5-MIME-Tools \
 		p5-Mail-Tools>=0:mail/p5-Mail-Tools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Mail-POP3Client>=0:mail/p5-Mail-POP3Client \
 		p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
 

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/net/p5-REST-Application/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-REST-Application/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	REST-Application
 PORTVERSION=	0.992
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Framework for building RESTful web-applications
 
-BUILD_DEPENDS=	p5-Tie-IxHash>=0:devel/p5-Tie-IxHash
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tie-IxHash>=0:devel/p5-Tie-IxHash
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Hansjoerg Pehofer <hansjoerg.pehofer@uibk.ac.at>
-# $FreeBSD: head/textproc/p5-XML-Generator-PerlData/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Generator-PerlData/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Generator-PerlData
 PORTVERSION=	0.95
@@ -13,8 +13,8 @@ COMMENT=	Perl extension for generating SAX2 events from Perl data structures
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-SAX-Base>=1.02:textproc/p5-XML-SAX-Base
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-SAX-Base>=1.02:textproc/p5-XML-SAX-Base
 
 USES=		perl5
 USE_PERL5=	configure

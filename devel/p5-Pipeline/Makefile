@@ -1,5 +1,5 @@
 # Created by: Rouslan Iskhakov <rouslan@rshell.net>
-# $FreeBSD: head/devel/p5-Pipeline/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Pipeline/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pipeline
 PORTVERSION=	3.12
@@ -12,13 +12,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	rouslan@rshell.net
 COMMENT=	Pipeline - Generic pipeline interface
 
-BUILD_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA \
 		p5-Error>=0:lang/p5-Error \
 		p5-IO-Null>=0:devel/p5-IO-Null \
 		p5-IO-String>=0:devel/p5-IO-String \
 		p5-Data-UUID>=0:devel/p5-Data-UUID \
 		p5-Data-Structure-Util>=0:devel/p5-Data-Structure-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/plasma-applet-ktp-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/net-im/plasma-applet-ktp-kde4/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp
 PORTVERSION=	${KTP_VERSION}
@@ -15,7 +15,7 @@ COMMENT=	KDE instant messaging Plasma applets
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
 
-LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt4 \
+LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt@qt4 \
 		libktpcommoninternalsprivate.so:net-im/ktp-common-internals-kde4
 
 USES=		cmake gettext kde:4 qt:4 tar:bzip2

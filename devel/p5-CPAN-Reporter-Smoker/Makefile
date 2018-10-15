@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Reporter-Smoker/Makefile 452205 2017-10-16 16:42:56Z swills $
+# $FreeBSD: head/devel/p5-CPAN-Reporter-Smoker/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPAN-Reporter-Smoker
 PORTVERSION=	0.29
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Turnkey CPAN Testers smoking
 
-BUILD_DEPENDS=	p5-CPAN-Reporter>0:devel/p5-CPAN-Reporter \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CPAN-Reporter>0:devel/p5-CPAN-Reporter \
 		p5-Probe-Perl>0:sysutils/p5-Probe-Perl \
 		p5-Test-Reporter>0:devel/p5-Test-Reporter \
 		p5-Term-Title>0:devel/p5-Term-Title
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

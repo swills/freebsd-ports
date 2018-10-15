@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Class-Unload/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-Unload/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Unload
 PORTVERSION=	0.11
@@ -13,8 +13,8 @@ COMMENT=	Perl5 module for unloading classes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Inspector>=0:devel/p5-Class-Inspector
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Inspector>=0:devel/p5-Class-Inspector
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires
 
 NO_ARCH=	yes

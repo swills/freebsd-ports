@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/graphics/p5-GD-Barcode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-GD-Barcode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	GD-Barcode
 PORTVERSION=	1.15
@@ -14,8 +14,8 @@ COMMENT=	GD::Barcode - Create barcode image with GD
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-GD>=0:graphics/p5-GD
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-GD>=0:graphics/p5-GD
 
 USES=		perl5
 USE_PERL5=	configure

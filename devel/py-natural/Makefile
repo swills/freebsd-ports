@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-natural/Makefile 409956 2016-03-02 17:28:51Z jpaetzel $
+# $FreeBSD: head/devel/py-natural/Makefile 481507 2018-10-08 02:52:07Z jpaetzel $
 
 PORTNAME=	natural
-PORTVERSION=	0.1.6
+PORTVERSION=	0.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

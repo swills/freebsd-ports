@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/games/p5-Games-Bingo-Print/Makefile 447706 2017-08-10 18:24:00Z sunpoet $
+# $FreeBSD: head/games/p5-Games-Bingo-Print/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Games-Bingo-Print
 PORTVERSION=	0.04
@@ -13,9 +13,9 @@ COMMENT=	Games::Bingo::Print - PDF Generation Class
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Games-Bingo>=0:games/p5-Games-Bingo \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Games-Bingo>=0:games/p5-Games-Bingo \
 		p5-PDFLib>=0:print/p5-PDFLib
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Perl-Critic>=0:textproc/p5-Test-Perl-Critic \
 		p5-Test-Pod>=0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage

@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-Autopod/Makefile 428448 2016-12-12 20:58:46Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-Autopod/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Autopod
 PORTVERSION=	1.215
@@ -13,8 +13,8 @@ COMMENT=	Generates pod documentation by analysing perl modules
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Pod-Abstract>=0:textproc/p5-Pod-Abstract
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Pod-Abstract>=0:textproc/p5-Pod-Abstract
 
 USES=		perl5
 USE_PERL5=	configure

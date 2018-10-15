@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/gnono/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/games/gnono/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gnono
 PORTVERSION=	1.9.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Uno card game
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USE_GNOME=	gtk20 libgnomeui intltool
 USES=		gettext gmake pkgconfig tar:bzip2

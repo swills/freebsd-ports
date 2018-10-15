@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-XML-Literal/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Literal/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Literal
 PORTVERSION=	0.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Syntax support for XML literals
 
-BUILD_DEPENDS=	p5-Sub-Override>=0:devel/p5-Sub-Override
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Sub-Override>=0:devel/p5-Sub-Override
 
 USES=		perl5
 USE_PERL5=	configure

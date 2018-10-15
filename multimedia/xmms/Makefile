@@ -1,5 +1,5 @@
 # Created by: Espen Skoglund <esk@ira.uka.de>
-# $FreeBSD: head/multimedia/xmms/Makefile 480026 2018-09-18 14:48:48Z emaste $
+# $FreeBSD: head/multimedia/xmms/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	xmms
 PORTVERSION=	1.2.11
@@ -12,6 +12,9 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X Multimedia System -- audio player with Winamp GUI
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

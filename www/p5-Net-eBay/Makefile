@@ -1,5 +1,5 @@
 # Created by: Alexander Zhuravlev <zaa@zaa.pp.ru>
-# $FreeBSD: head/www/p5-Net-eBay/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Net-eBay/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-eBay
 PORTVERSION=	0.61
@@ -14,7 +14,8 @@ COMMENT=	Perl Interface to XML based eBay API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-DateTime-Precise>=0:devel/p5-DateTime-Precise \
 		p5-HTML-Format>=0:textproc/p5-HTML-Format \
 		p5-HTML-PrettyPrinter>=0:www/p5-HTML-PrettyPrinter \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-XML-Dumper>=0:textproc/p5-XML-Dumper \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	EXAMPLES
 

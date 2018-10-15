@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/textproc/p5-Data-SpreadPagination/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Data-SpreadPagination/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-SpreadPagination
 PORTVERSION=	0.1.2
@@ -14,9 +14,9 @@ COMMENT=	Page numbering and spread pagination
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-Page>=0:databases/p5-Data-Page \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Page>=0:databases/p5-Data-Page \
 		p5-Math-Round>=0:math/p5-Math-Round
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=0:devel/p5-Test-Pod
 
 USES=		perl5

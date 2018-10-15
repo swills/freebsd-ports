@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/graphics/p5-SVG-Graph/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-SVG-Graph/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVG-Graph
 PORTVERSION=	0.04
@@ -14,11 +14,11 @@ COMMENT=	Visualize your data in Scalable Vector Graphics (SVG) format
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Math-Spline>=0:math/p5-Math-Spline \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Spline>=0:math/p5-Math-Spline \
 		p5-SVG>=0:textproc/p5-SVG \
 		p5-Statistics-Descriptive>=0:math/p5-Statistics-Descriptive \
 		p5-Tree-DAG_Node>=0:devel/p5-Tree-DAG_Node
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

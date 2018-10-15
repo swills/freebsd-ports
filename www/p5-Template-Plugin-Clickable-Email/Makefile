@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Template-Plugin-Clickable-Email/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-Template-Plugin-Clickable-Email/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-Clickable-Email
 PORTVERSION=	0.01
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	TT plugin to make email addresses into HTML links
 
-BUILD_DEPENDS=	p5-Email-Find>=0:mail/p5-Email-Find \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Find>=0:mail/p5-Email-Find \
 		p5-Template-Toolkit>=0:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

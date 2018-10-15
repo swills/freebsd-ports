@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-URI-imap/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/mail/p5-URI-imap/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	URI-imap
 PORTVERSION=	1.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	URI::imap - Support IMAP URI
 
-BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: snowchyld
-# $FreeBSD: head/mail/p5-Mail-SRS/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-SRS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-SRS
 PORTVERSION=	0.31
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Sender Rewriting Scheme
 
-BUILD_DEPENDS=	p5-Digest-HMAC>=0:security/p5-Digest-HMAC \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-HMAC>=0:security/p5-Digest-HMAC \
 		p5-MLDBM>=0:databases/p5-MLDBM
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

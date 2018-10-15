@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/mail/roundcube-login_info/Makefile 468851 2018-05-02 16:15:59Z mat $
+# $FreeBSD: head/mail/roundcube-login_info/Makefile 481129 2018-10-02 19:18:34Z feld $
 
 PORTNAME=	login_info
 DISTVERSION=	1.2
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	roundcube-
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}_rc0.5_v${DISTVERSION}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Roundcube login info plugin
 
 LICENSE=	GPLv2

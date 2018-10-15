@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/deskutils/drivel/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/drivel/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	drivel
 PORTVERSION=	3.0.5
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Blog editor for GNOME
 
 LICENSE=	GPLv2+
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup
 

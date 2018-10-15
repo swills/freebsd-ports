@@ -1,5 +1,5 @@
 # Created by: glarkin
-# $FreeBSD: head/net/p5-Net-Mosso-CloudFiles/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Mosso-CloudFiles/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Mosso-CloudFiles
 PORTVERSION=	0.44
@@ -14,7 +14,8 @@ COMMENT=	Perl interface to the Mosso CloudFiles service
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-Data-Stream-Bulk>=0:devel/p5-Data-Stream-Bulk \
 		p5-DateTime-Format-HTTP>=0:devel/p5-DateTime-Format-HTTP \
 		p5-Digest-MD5-File>=0:security/p5-Digest-MD5-File \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-StrictConstructor>=0:devel/p5-MooseX-StrictConstructor \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-ucl/Makefile 430490 2017-01-03 18:12:13Z mat $
+# $FreeBSD: head/textproc/py-ucl/Makefile 481237 2018-10-04 17:57:21Z wg $
 
 PORTNAME=	ucl
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.1
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -12,6 +12,8 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKDIR}/libucl-${PORTVERSION}/COPYING
 
 LIB_DEPENDS=	libucl.so:textproc/libucl
+
+CFLAGS+=	-I${PREFIX}/include
 
 USES=		python
 USE_GITHUB=	yes

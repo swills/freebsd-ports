@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-MojoMojo/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-MojoMojo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MojoMojo
 PORTVERSION=	1.12
@@ -15,7 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 # Please keep order as in Makefile.PL
-BUILD_DEPENDS=	\
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	\
 	p5-Plack>=0.9974:www/p5-Plack \
 	p5-Algorithm-Diff>=1.1901:devel/p5-Algorithm-Diff \
 	p5-Algorithm-Merge>=0:devel/p5-Algorithm-Merge \
@@ -82,7 +83,6 @@ BUILD_DEPENDS=	\
 	p5-Term-Prompt>=0:devel/p5-Term-Prompt \
 	p5-Text-Emoticon-MSN>=0:textproc/p5-Text-Emoticon-MSN \
 	p5-File-Slurp>=0:devel/p5-File-Slurp
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-WWW-Mechanize-Catalyst>=0:devel/p5-Test-WWW-Mechanize-Catalyst
 
 NO_ARCH=	yes

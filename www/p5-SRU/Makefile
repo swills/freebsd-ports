@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/www/p5-SRU/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-SRU/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SRU
 PORTVERSION=	1.01
@@ -15,13 +15,13 @@ COMMENT=	Search and Retrieval by URL
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
 		p5-CQL-Parser>=1.12:textproc/p5-CQL-Parser \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-URI>=0:net/p5-URI \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

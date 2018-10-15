@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-HTML-FromANSI/Makefile 442390 2017-06-02 15:39:18Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-FromANSI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-FromANSI
 PORTVERSION=	2.03
@@ -14,9 +14,9 @@ COMMENT=	Mark up ANSI sequences as HTML
 LICENSE=	ART10 GPLv1 MIT
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Term-VT102-Boundless>=0:devel/p5-Term-VT102-Boundless
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

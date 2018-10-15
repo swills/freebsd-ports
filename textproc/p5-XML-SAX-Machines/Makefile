@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX-Machines/Makefile 451828 2017-10-12 08:11:15Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-SAX-Machines/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-SAX-Machines
 PORTVERSION=	0.46
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Manage collections of SAX processors
 
-BUILD_DEPENDS=	p5-XML-SAX>=0:textproc/p5-XML-SAX \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-SAX>=0:textproc/p5-XML-SAX \
 		p5-XML-SAX-Writer>=0:textproc/p5-XML-SAX-Writer
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/mail/p5-Mail-FilterXML/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-FilterXML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-FilterXML
 PORTVERSION=	0.3
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module that allows writing mail filter rules in XML
 
-BUILD_DEPENDS=	p5-Mail-Audit>=0:mail/p5-Mail-Audit \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mail-Audit>=0:mail/p5-Mail-Audit \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	mailfilter.pl

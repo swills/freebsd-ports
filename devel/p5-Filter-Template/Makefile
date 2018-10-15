@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Filter-Template/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Filter-Template/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Filter-Template
 PORTVERSION=	1.043
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Source filter for inline code templates (macros)
 
-BUILD_DEPENDS=	p5-Filter>=0:devel/p5-Filter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Filter>=0:devel/p5-Filter
 
 USES=		perl5
 USE_PERL5=	configure

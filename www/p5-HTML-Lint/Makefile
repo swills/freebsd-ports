@@ -1,9 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Lint/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/www/p5-HTML-Lint/Makefile 481620 2018-10-09 10:48:02Z wen $
 
 PORTNAME=	HTML-Lint
-PORTVERSION=	2.20
-PORTREVISION=	1
+PORTVERSION=	2.32
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PETDANCE
@@ -14,10 +13,10 @@ COMMENT=	HTML::Lint - check for HTML errors in a string or file
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-HTML-Tagset>0:www/p5-HTML-Tagset \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Tagset>0:www/p5-HTML-Tagset \
 		p5-libwww>0:www/p5-libwww \
 		p5-HTML-Parser>0:www/p5-HTML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

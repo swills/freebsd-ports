@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-CGI-Cookie-Splitter/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CGI-Cookie-Splitter/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Cookie-Splitter
 PORTVERSION=	0.05
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-CGI-Simple>=0:www/p5-CGI-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Simple>=0:www/p5-CGI-Simple \
 		p5-namespace-clean>=0.19:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

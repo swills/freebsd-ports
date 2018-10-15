@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-contact-runner/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/ktp-contact-runner/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-contact-runner
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	net-im kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KRunner integration module for KDE Telepathy
 
-LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt5 \
+LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 
 USES=		cmake:outsource gettext kde:5 qt:5 tar:xz

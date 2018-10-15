@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/mail/p5-Mail-Freshmeat/Makefile 471650 2018-06-04 18:09:42Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-Freshmeat/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Freshmeat
 PORTVERSION=	1.20
@@ -15,8 +15,8 @@ COMMENT=	Perl module to parse daily newsletters from freshmeat.net
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Mail-Tools>=0:mail/p5-Mail-Tools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mail-Tools>=0:mail/p5-Mail-Tools
 
 USES=		perl5
 USE_PERL5=	configure

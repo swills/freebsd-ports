@@ -1,8 +1,8 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/security/py-YubiOTP/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-YubiOTP/Makefile 481844 2018-10-11 18:45:22Z cs $
 
 PORTNAME=	YubiOTP
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

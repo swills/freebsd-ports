@@ -1,9 +1,9 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/www/neon/Makefile 474867 2018-07-18 14:28:57Z lev $
+# $FreeBSD: head/www/neon/Makefile 481885 2018-10-12 08:45:36Z lev $
 
 PORTNAME=	neon
 PORTVERSION=	0.30.2
-PORTREVISION=	1
+PORTREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/lev
 
@@ -36,6 +36,7 @@ LIBXML_CONFIGURE_WITH=	libxml2
 LIBXML_USE=		GNOME=libxml2
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=		gettext
+OPENSSL_CONFIGURE_ENV=	ne_cv_libsfor_SSL_library_init=-lssl
 OPENSSL_CONFIGURE_WITH=	ssl
 OPENSSL_USES=		ssl
 PROXY_CONFIGURE_WITH=	libproxy

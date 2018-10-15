@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/comms/gqrx/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/comms/gqrx/Makefile 481268 2018-10-05 10:10:02Z martymac $
 
 PORTNAME=	gqrx
 PORTVERSION=	2.11.5
@@ -26,7 +26,7 @@ LIB_DEPENDS=	libgnuradio-runtime.so:comms/gnuradio \
 		libboost_program_options.so:devel/boost-libs \
 		liblog4cpp.so:devel/log4cpp
 
-USES=		pkgconfig qmake qt:5
+USES=		gl pkgconfig qmake qt:5
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	csete

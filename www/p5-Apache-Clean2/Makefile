@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <martin@matuska.org>
-# $FreeBSD: head/www/p5-Apache-Clean2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/p5-Apache-Clean2/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Apache-Clean
 PORTVERSION=	2.00
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mod_perl interface into HTML::Clean
 
-BUILD_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2 \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2 \
 		p5-HTML-Clean>=0.8:www/p5-HTML-Clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		apache:2.2+ perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/mail/p5-POE-Component-Client-POP3/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/mail/p5-POE-Component-Client-POP3/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Client-POP3
 PORTVERSION=	0.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Implement a POP3 client POE component
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	samples/test.perl samples/term.perl

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/textproc/p5-XML-Atom-Syndication/Makefile 435926 2017-03-11 15:59:18Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Atom-Syndication/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Atom-Syndication
 PORTVERSION=	0.942
@@ -13,10 +13,10 @@ COMMENT=	Simple lightweight client for consuming Atom syndication feeds
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Class-ErrorHandler>=0:devel/p5-Class-ErrorHandler \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-ErrorHandler>=0:devel/p5-Class-ErrorHandler \
 		p5-XML-Elemental>=2:textproc/p5-XML-Elemental \
 		p5-XML-Writer>=0.6:textproc/p5-XML-Writer
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Maxim Tuliuk <mt@primats.org.ua>
-# $FreeBSD: head/net-mgmt/ipplan/Makefile 477060 2018-08-13 09:25:01Z tz $
+# $FreeBSD: head/net-mgmt/ipplan/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	ipplan
 PORTVERSION=	4.92b
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/iptrack/${PORTNAME}/Release%204.92
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	IP address management and tracking
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 RUN_DEPENDS=	nmap:security/nmap
 

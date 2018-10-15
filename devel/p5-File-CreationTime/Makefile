@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-CreationTime/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/devel/p5-File-CreationTime/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-CreationTime
 PORTVERSION=	2.04
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Keeps track of file creation times
 
-BUILD_DEPENDS=	p5-File-Attributes>=0:devel/p5-File-Attributes
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Attributes>=0:devel/p5-File-Attributes
 
 USES=		perl5
 USE_PERL5=	configure

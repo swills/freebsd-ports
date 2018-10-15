@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Import-Base/Makefile 459250 2018-01-17 13:43:55Z sunpoet $
+# $FreeBSD: head/devel/p5-Import-Base/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Import-Base
 PORTVERSION=	1.004
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Import-Into>=1.002005:devel/p5-Import-Into \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Import-Into>=1.002005:devel/p5-Import-Into \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Dancer2-Plugin-Ajax>=0:www/p5-Dancer2-Plugin-Ajax \
 		p5-Dancer2>=0:www/p5-Dancer2 \
 		p5-Moo>=0:devel/p5-Moo

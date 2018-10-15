@@ -1,5 +1,5 @@
 # Created by: Alex Kapranoff <kappa@FreeBSD.org.ua>
-# $FreeBSD: head/textproc/p5-NetAddr-IP-Find/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-NetAddr-IP-Find/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	NetAddr-IP-Find
 PORTVERSION=	0.03
@@ -14,8 +14,8 @@ COMMENT=	Iterates over all IP addresses in a text similar to Email::Find
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-NetAddr-IP>0:net-mgmt/p5-NetAddr-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-NetAddr-IP>0:net-mgmt/p5-NetAddr-IP
 
 USES=		perl5
 USE_PERL5=	configure

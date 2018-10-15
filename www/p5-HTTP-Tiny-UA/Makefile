@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Tiny-UA/Makefile 468446 2018-04-27 15:55:44Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Tiny-UA/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Tiny-UA
 PORTVERSION=	0.006
@@ -13,9 +13,9 @@ COMMENT=	Higher-level UA features for HTTP::Tiny
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-Tiny>=1.000:devel/p5-Class-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Tiny>=1.000:devel/p5-Class-Tiny \
 		p5-superclass>=0:devel/p5-superclass
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

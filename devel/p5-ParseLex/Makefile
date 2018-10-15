@@ -1,5 +1,5 @@
 # Created by: Jim Pirzyk <pirzyk@uiuc.edu>
-# $FreeBSD: head/devel/p5-ParseLex/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-ParseLex/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	ParseLex
 PORTVERSION=	2.21
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pirzyk@FreeBSD.org
 COMMENT=	Object-oriented generator of lexical analyzers
 
-BUILD_DEPENDS=	p5-ParseTemplate>=3.01:devel/p5-ParseTemplate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-ParseTemplate>=3.01:devel/p5-ParseTemplate
 
 USES=		perl5
 USE_PERL5=	configure

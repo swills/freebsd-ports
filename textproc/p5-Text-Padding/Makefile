@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Padding/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-Padding/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Padding
 PORTVERSION=	1.110170
@@ -13,10 +13,10 @@ COMMENT=	Simple way of formatting a text
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-Has-Sugar>=0:devel/p5-MooseX-Has-Sugar \
 		p5-Text-Truncate>=0:textproc/p5-Text-Truncate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	modbuild
 USES=		perl5

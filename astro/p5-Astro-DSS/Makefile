@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/astro/p5-Astro-DSS/Makefile 451685 2017-10-10 11:20:29Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-DSS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Astro-DSS
 PORTVERSION=	1.6.1
@@ -13,8 +13,8 @@ COMMENT=	OO interface to the 1st and 2nd Digital Sky Surveys
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 NO_ARCH=	yes
 USES=		perl5

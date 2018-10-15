@@ -1,13 +1,13 @@
-# $FreeBSD: head/x11/admiral/Makefile 480871 2018-09-28 17:59:24Z jbeich $
+# $FreeBSD: head/x11/admiral/Makefile 481921 2018-10-12 19:01:02Z jbeich $
 
 PORTNAME=	admiral
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.0-7
 DISTVERSIONSUFFIX=	-g5a9f33b
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Merge concurrent outputs for a status bar
 
 LICENSE=	BSD2CLAUSE

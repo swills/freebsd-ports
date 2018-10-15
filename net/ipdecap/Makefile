@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/ipdecap/Makefile 465337 2018-03-23 08:33:20Z amdmi3 $
+# $FreeBSD: head/net/ipdecap/Makefile 482107 2018-10-14 19:00:04Z swills $
 
 PORTNAME=	ipdecap
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	net
@@ -13,12 +13,13 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/include/pcap/vlan.h:net/libpcap
-LIB_DEPENDS=	libpcap.so.1:net/libpcap	# require ports libpcap
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	lpefferkorn
+LIB_DEPENDS=	libpcap.so:net/libpcap	# require ports libpcap
 
 USES=		autoreconf gmake ssl
+USE_GITHUB=	yes
+
+GH_ACCOUNT=	lpefferkorn
+
 GNU_CONFIGURE=	yes
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}

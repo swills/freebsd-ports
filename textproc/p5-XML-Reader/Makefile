@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-XML-Reader/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Reader/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Reader
 PORTVERSION=	0.65
@@ -12,8 +12,8 @@ COMMENT=	Reading XML and providing path information based on a pull-parser
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Acme-HTTP>=0:net/p5-Acme-HTTP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Acme-HTTP>=0:net/p5-Acme-HTTP
 TEST_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		p5-XML-Parsepp>=0:textproc/p5-XML-Parsepp
 

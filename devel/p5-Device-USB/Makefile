@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Device-USB/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/devel/p5-Device-USB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Device-USB
 PORTVERSION=	0.35
@@ -13,9 +13,9 @@ COMMENT=	Perl wrapper for libusb
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Inline>=0:devel/p5-Inline \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Inline>=0:devel/p5-Inline \
 		p5-Inline-C>=0:devel/p5-Inline-C
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 MAKE_JOBS_UNSAFE=yes
 USES=		perl5

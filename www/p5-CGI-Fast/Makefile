@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-Fast/Makefile 454398 2017-11-18 00:10:57Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Fast/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Fast
 PORTVERSION=	2.13
@@ -14,9 +14,9 @@ COMMENT=	Perl CGI Interface for FastCGI
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CGI>=4:www/p5-CGI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI>=4:www/p5-CGI \
 		p5-FCGI>=0.67:www/p5-FCGI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-CPAN-Changes>=0:devel/p5-CPAN-Changes \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser
 

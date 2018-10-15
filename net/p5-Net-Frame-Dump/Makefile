@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Frame-Dump/Makefile 472650 2018-06-17 23:09:34Z wen $
+# $FreeBSD: head/net/p5-Net-Frame-Dump/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Frame-Dump
 PORTVERSION=	1.17
@@ -13,10 +13,10 @@ COMMENT=	Tcpdump like perl implementation
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/LICENSE.Artistic
 
-BUILD_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
 		p5-Net-Frame>=0:net/p5-Net-Frame \
 		p5-Net-Pcap>=0.12:net/p5-Net-Pcap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

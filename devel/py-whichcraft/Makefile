@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-whichcraft/Makefile 480166 2018-09-20 11:27:46Z matthew $
+# $FreeBSD: head/devel/py-whichcraft/Makefile 481787 2018-10-11 06:56:56Z matthew $
 
 PORTNAME=	whichcraft
-PORTVERSION=	0.4.1
+PORTVERSION=	0.5.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

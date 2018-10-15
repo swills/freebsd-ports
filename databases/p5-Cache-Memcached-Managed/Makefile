@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Cache-Memcached-Managed/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Cache-Memcached-Managed/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Cache-Memcached-Managed
 PORTVERSION=	0.24
@@ -14,8 +14,8 @@ COMMENT=	Provide API for managing cached information
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Cache-Memcached>=0:databases/p5-Cache-Memcached
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache-Memcached>=0:databases/p5-Cache-Memcached
 TEST_DEPENDS=	memcached:databases/memcached
 
 USES=		perl5

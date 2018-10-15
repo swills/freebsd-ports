@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-ClassAPI/Makefile 457611 2017-12-30 18:16:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-ClassAPI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-ClassAPI
 PORTVERSION=	1.07
@@ -14,10 +14,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-Inspector>=1.12:devel/p5-Class-Inspector \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Inspector>=1.12:devel/p5-Class-Inspector \
 		p5-Config-Tiny>=2.00:devel/p5-Config-Tiny \
 		p5-Params-Util>=1.00:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

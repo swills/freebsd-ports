@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/www/p5-Catalyst-Model-DynamicAdaptor/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Model-DynamicAdaptor/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Model-DynamicAdaptor
 PORTVERSION=	0.02
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dynamically load adaptor modules
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-Module-Recursive-Require>=0:devel/p5-Module-Recursive-Require \
 		p5-Test-Spelling>=0:devel/p5-Test-Spelling
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

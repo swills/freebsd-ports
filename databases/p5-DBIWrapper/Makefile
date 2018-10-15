@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/databases/p5-DBIWrapper/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIWrapper/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIWrapper
 PORTVERSION=	0.30
@@ -14,13 +14,13 @@ COMMENT=	Perl extension for generic DBI database access
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
 		p5-DateTime-HiRes>=0:devel/p5-DateTime-HiRes \
 		p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-Spreadsheet-WriteExcel>=0:textproc/p5-Spreadsheet-WriteExcel \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg \
 		p5-DateTime>=0:devel/p5-DateTime
 

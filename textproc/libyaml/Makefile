@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/libyaml/Makefile 383836 2015-04-12 01:20:44Z jpaetzel $
+# $FreeBSD: head/textproc/libyaml/Makefile 481510 2018-10-08 03:05:59Z jpaetzel $
 
 PORTNAME=	libyaml
-PORTVERSION=	0.1.6
-PORTREVISION=	2
+PORTVERSION=	0.2.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://pyyaml.org/download/libyaml/
 DISTNAME=	yaml-${PORTVERSION}

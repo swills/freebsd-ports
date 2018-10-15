@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-Yahoo-Search/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/www/p5-Yahoo-Search/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Yahoo-Search
 PORTVERSION=	1.11.3
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the Yahoo Search public API
 
-BUILD_DEPENDS=	p5-URI>=1.54:net/p5-URI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=1.54:net/p5-URI \
 		p5-libwww>=5.835:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Simple>=0.88:devel/p5-Test-Simple
 
 USES=		perl5

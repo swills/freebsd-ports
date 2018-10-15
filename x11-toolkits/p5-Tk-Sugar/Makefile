@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Tk-Sugar/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Tk-Sugar/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-Sugar
 PORTVERSION=	1.093190
@@ -14,8 +14,8 @@ COMMENT=	Sugar syntax for Tk
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
 
 NO_ARCH=	yes
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@lovett.com>
-# $FreeBSD: head/graphics/gdk-pixbuf/Makefile 448906 2017-08-29 11:26:40Z amdmi3 $
+# $FreeBSD: head/graphics/gdk-pixbuf/Makefile 481888 2018-10-12 09:19:04Z antoine $
 #    $MCom: ports/graphics/gdk-pixbuf/Makefile,v 1.2 2006/09/10 00:51:10 mezz Exp $
 
 PORTNAME=	gdk-pixbuf
@@ -12,6 +12,9 @@ DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Graphic library for GTK+
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB

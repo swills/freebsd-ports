@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Appliance-Phrasebook/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Appliance-Phrasebook/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Appliance-Phrasebook
 PORTVERSION=	2.103642
@@ -14,11 +14,11 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-Data-Phrasebook>=0:textproc/p5-Data-Phrasebook \
 		p5-Data-Phrasebook-Loader-YAML>=0:textproc/p5-Data-Phrasebook-Loader-YAML \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

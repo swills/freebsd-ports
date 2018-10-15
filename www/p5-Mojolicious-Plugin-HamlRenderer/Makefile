@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-HamlRenderer/Makefile 477162 2018-08-14 15:06:38Z adamw $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-HamlRenderer/Makefile 481277 2018-10-05 14:32:58Z adamw $
 
 PORTNAME=	Mojolicious-Plugin-HamlRenderer
 PORTVERSION=	2.100000
@@ -7,15 +7,15 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	adamw@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Haml renderer for Mojolicious
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Mojolicious>=1.3:www/p5-Mojolicious \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mojolicious>=1.3:www/p5-Mojolicious \
 		p5-Text-Haml>=0.990103:textproc/p5-Text-Haml
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

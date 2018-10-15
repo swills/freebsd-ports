@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/gtodo/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/deskutils/gtodo/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gtodo
 PORTVERSION=	0.14
@@ -8,6 +8,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Gtk2 Todo list manager
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		pathfix gettext gmake pkgconfig
 USE_GNOME=	gnomeprefix gnomevfs2 intltool

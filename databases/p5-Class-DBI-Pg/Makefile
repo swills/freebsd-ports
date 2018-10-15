@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/databases/p5-Class-DBI-Pg/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-Pg/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-Pg
 PORTVERSION=	0.09
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensions to Class::DBI for PostgreSQL
 
-BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
 		p5-DBD-Pg>=0:databases/p5-DBD-Pg
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

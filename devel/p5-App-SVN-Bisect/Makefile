@@ -1,5 +1,5 @@
 # Created by: Rui Paulo <rpaulo@FreeBSD.org>
-# $FreeBSD: head/devel/p5-App-SVN-Bisect/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-App-SVN-Bisect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	App-SVN-Bisect
 PORTVERSION=	1.1
@@ -13,10 +13,10 @@ COMMENT=	Binary search through svn revisions
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-IO-All>0:devel/p5-IO-All \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-All>0:devel/p5-IO-All \
 		p5-YAML-Syck>0:textproc/p5-YAML-Syck \
 		${LOCALBASE}/bin/svn:devel/subversion
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-Output>=0:devel/p5-Test-Output
 

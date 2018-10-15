@@ -1,5 +1,5 @@
 # Created by: Travis Campbell <hcoyote@ghostar.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Textile/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Textile/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Textile
 PORTVERSION=	0.01
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Textile for Catalyst
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-Text-Textile>=0:textproc/p5-Text-Textile
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

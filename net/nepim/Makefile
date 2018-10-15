@@ -1,5 +1,5 @@
 # Created by: Marcin Jessa <yazzy@yazzy.org>
-# $FreeBSD: head/net/nepim/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/nepim/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	nepim
 PORTVERSION=	0.53
@@ -9,6 +9,9 @@ MASTER_SITES=	SAVANNAH/nepim
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool for measuring available bandwidth between hosts
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	liboop.so:devel/liboop
 

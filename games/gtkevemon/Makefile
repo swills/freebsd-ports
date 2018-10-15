@@ -1,11 +1,11 @@
-# $FreeBSD: head/games/gtkevemon/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/gtkevemon/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	gtkevemon
 PORTVERSION=	1.10.2016.02.17
 PORTREVISION=	2
 CATEGORIES=	games
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Skill monitoring standalone application for EVE Online
 
 LIB_DEPENDS=	libgtkmm-3.0.so:x11-toolkits/gtkmm30 \

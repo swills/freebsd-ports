@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/p5-Net-Gnats/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Gnats/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Gnats
 PORTVERSION=	0.22
@@ -13,8 +13,8 @@ COMMENT=	Perl interface to GNU Gnats daemon
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-strictures>=0:devel/p5-strictures
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-strictures>=0:devel/p5-strictures
 TEST_DEPENDS=	p5-Test-MockObject>=0:devel/p5-Test-MockObject
 
 NO_ARCH=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-UML-Class-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-UML-Class-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	UML-Class-Simple
 PORTVERSION=	0.22
@@ -12,7 +12,8 @@ COMMENT=	Render simple UML class diagrams, by loading the code
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Inspector>=1.16:devel/p5-Class-Inspector \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Inspector>=1.16:devel/p5-Class-Inspector \
 		p5-File-Slurp>0:devel/p5-File-Slurp \
 		p5-IPC-Run3>0:devel/p5-IPC-Run3 \
 		p5-List-MoreUtils>0:lang/p5-List-MoreUtils \
@@ -21,7 +22,6 @@ BUILD_DEPENDS=	p5-Class-Inspector>=1.16:devel/p5-Class-Inspector \
 		p5-XML-LibXML>0:textproc/p5-XML-LibXML \
 		p5-YAML-Syck>0:textproc/p5-YAML-Syck \
 		dot:graphics/graphviz
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

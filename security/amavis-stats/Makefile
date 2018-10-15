@@ -1,5 +1,5 @@
 # Created by: Mantas Kaulakys <stone@tainet.lt>
-# $FreeBSD: head/security/amavis-stats/Makefile 469113 2018-05-05 14:20:33Z danfe $
+# $FreeBSD: head/security/amavis-stats/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	amavis-stats
 PORTVERSION=	0.1.12
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	LOCAL/feld
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple AMaViS statistics generator based on rrdtool
 
 RUN_DEPENDS=	rrdtool>=0:databases/rrdtool

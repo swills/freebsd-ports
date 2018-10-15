@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/print/gnomephotoprinter/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/print/gnomephotoprinter/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gnomephotoprinter
 PORTVERSION=	0.7.0
@@ -11,6 +11,9 @@ DIST_SUBDIR=	gnome2
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Gnome Photo Printer is intended for printing photos in an easy way
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USE_GNOME=	gnomeprefix intltool libgnomeui libglade2 \
 		libgnomeprintui gnomevfs2

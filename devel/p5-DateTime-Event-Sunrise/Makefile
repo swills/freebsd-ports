@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Event-Sunrise/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Event-Sunrise/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Event-Sunrise
 PORTVERSION=	0.0505
@@ -14,11 +14,11 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-DateTime>=0.21:devel/p5-DateTime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0.21:devel/p5-DateTime \
 		p5-DateTime-Set>=0.1600:devel/p5-DateTime-Set \
 		p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-Set-Infinite>=0:devel/p5-Set-Infinite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

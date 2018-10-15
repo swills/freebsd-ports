@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/p5-WebService-GData/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WebService-GData/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WebService-GData
 PORTVERSION=	0.0600
@@ -16,9 +16,9 @@ COMMENT=	Google data protocol v2 base object to inherit from
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JSON>=2.0:converters/p5-JSON \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=2.0:converters/p5-JSON \
 		p5-libwww>0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Mock-LWP>=0.05:devel/p5-Test-Mock-LWP
 
 USES=		perl5

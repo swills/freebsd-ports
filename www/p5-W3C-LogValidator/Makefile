@@ -1,5 +1,5 @@
 # Created by: toni.viemero@iki.fi
-# $FreeBSD: head/www/p5-W3C-LogValidator/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-W3C-LogValidator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	W3C-LogValidator
 PORTVERSION=	1.4
@@ -12,14 +12,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	toni.viemero@iki.fi
 COMMENT=	Comprehensive validation tool for webmasters and web developers
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-URI>=0:net/p5-URI \
 		p5-Config-General>=0:devel/p5-Config-General \
 		p5-Mail-Sendmail>=0:mail/p5-Mail-Sendmail \
 		p5-WebService-Validator-CSS-W3C>=0:www/p5-webservice-validator-css-w3c \
 		p5-WebService-Validator-HTML-W3C>=0:www/p5-webservice-validator-html-w3c \
 		${LOCALBASE}/bin/checklink:www/p5-W3C-LinkChecker
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

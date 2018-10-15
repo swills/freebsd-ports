@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openafs/Makefile 472455 2018-06-15 14:19:25Z amdmi3 $
+# $FreeBSD: head/net/openafs/Makefile 481399 2018-10-06 21:13:24Z antoine $
 
 PORTNAME=	openafs
 DISTVERSION=	${AFS_DISTVERSION}.${DBVERSION:S/-//g}
@@ -21,7 +21,7 @@ LICENSE_NAME=	IBM Public License Version 1.0
 LICENSE_FILE=	${WRKSRC}/doc/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BROKEN_FreeBSD_12=	does not build (use of undeclared identifier 'ROOTINO')
+BROKEN=		fails to build
 ONLY_FOR_ARCHS=	i386 amd64
 
 AFS_DISTVERSION=	1.6.22

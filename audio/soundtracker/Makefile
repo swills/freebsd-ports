@@ -1,5 +1,5 @@
 # Created by: Kristopher Zentner <kzentner@u.washington.edu>
-# $FreeBSD: head/audio/soundtracker/Makefile 477323 2018-08-16 12:08:35Z tobik $
+# $FreeBSD: head/audio/soundtracker/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	soundtracker
 PORTVERSION=	0.6.8
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.soundtracker.org/dl/v${PORTVERSION:R}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mod player/tracking tool which supports XM and MOD formats
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

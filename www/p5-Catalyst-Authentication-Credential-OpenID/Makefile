@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/www/p5-Catalyst-Authentication-Credential-OpenID/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Authentication-Credential-OpenID/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Authentication-Credential-OpenID
 PORTVERSION=	0.19
@@ -14,11 +14,11 @@ COMMENT=	OpenID credential for Catalyst::Plugin::Authentication framework
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.7:www/p5-Catalyst-Runtime \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Net-OpenID-Consumer>=1.03:net/p5-Net-OpenID-Consumer \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

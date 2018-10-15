@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-DBMS/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-DBMS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-DBMS
 PORTVERSION=	1.03
@@ -12,11 +12,11 @@ DISTNAME=	perl-${PORTNAME:tl}-${PORTVERSION}
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl port of Java package XML-DBMS v1.0
 
-BUILD_DEPENDS=	p5-libxml>=0:textproc/p5-libxml \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libxml>=0:textproc/p5-libxml \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-TimeDate>=0:devel/p5-TimeDate \
 		p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	EXAMPLES
 

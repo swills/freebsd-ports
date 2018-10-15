@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/textproc/p5-HTML-Format/Makefile 458329 2018-01-07 12:13:16Z sunpoet $
+# $FreeBSD: head/textproc/p5-HTML-Format/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Format
 PORTVERSION=	2.12
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Font-AFM>=0:x11-fonts/p5-Font-AFM \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Font-AFM>=0:x11-fonts/p5-Font-AFM \
 		p5-HTML-Tree>=3.15:www/p5-HTML-Tree
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-Slurper>=0:devel/p5-File-Slurper
 
 NO_ARCH=	yes

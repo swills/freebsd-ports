@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Dancer-Plugin-Auth-Extensible/Makefile 452126 2017-10-15 02:47:49Z pi $
+# $FreeBSD: head/security/p5-Dancer-Plugin-Auth-Extensible/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dancer-Plugin-Auth-Extensible
 PORTVERSION=	1.00
@@ -13,9 +13,9 @@ COMMENT=	Extensible authentication framework for Dancer apps
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-SaltedHash>=0:security/p5-Crypt-SaltedHash \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-SaltedHash>=0:security/p5-Crypt-SaltedHash \
 		p5-Dancer>=1.3118:www/p5-Dancer
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

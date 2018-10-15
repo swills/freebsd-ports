@@ -1,9 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-pybind11/Makefile 480229 2018-09-21 06:59:41Z yuri $
+# $FreeBSD: head/devel/py-pybind11/Makefile 481427 2018-10-07 05:14:06Z yuri $
 
 PORTNAME=	pybind11
-DISTVERSION=	2.2.1
-PORTREVISION=	1
+DISTVERSION=	2.2.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

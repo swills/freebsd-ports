@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Fraction/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-String-Fraction/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	String-Fraction
 PORTVERSION=	0.30
@@ -14,8 +14,8 @@ COMMENT=	Convert fractions into Unicode chars
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Fraction>=0.40:textproc/p5-HTML-Fraction
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Fraction>=0.40:textproc/p5-HTML-Fraction
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@netmag.cz>
-# $FreeBSD: head/archivers/lzma/Makefile 474824 2018-07-17 19:23:19Z pi $
+# $FreeBSD: head/archivers/lzma/Makefile 481416 2018-10-07 04:34:30Z swills $
 
 PORTNAME=	lzma
 PORTVERSION=	18.05
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	SF/sevenzip/LZMA%20SDK/
 DISTNAME=	lzma${PORTVERSION:S/.//g}
 
-MAINTAINER=	ndowens.fbsd@yandex.com
+MAINTAINER=	ndowens@yahoo.com
 COMMENT=	High-ratio LZMA compressor
 
 CONFLICTS=	lzmautils-[0-9]* xz-[0-9]*

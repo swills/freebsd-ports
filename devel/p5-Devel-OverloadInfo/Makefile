@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-OverloadInfo/Makefile 459762 2018-01-23 15:16:31Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-OverloadInfo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-OverloadInfo
 PORTVERSION=	0.005
@@ -13,10 +13,10 @@ COMMENT=	Introspect overloaded operators
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-MRO-Compat>=0:devel/p5-MRO-Compat \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-Package-Stash>=0.14:devel/p5-Package-Stash \
 		p5-Sub-Identify>=0:devel/p5-Sub-Identify
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 NO_ARCH=	yes

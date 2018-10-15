@@ -1,5 +1,5 @@
 # Created by: Oleg R. Muhutdinov <mor@WhiteLuna.com>
-# $FreeBSD: head/net-p2p/p5-Net-BitTorrent-File/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-p2p/p5-Net-BitTorrent-File/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-BitTorrent-File
 PORTVERSION=	1.02
@@ -15,9 +15,9 @@ COMMENT=	Perl5 module for handles loading and saving of .torrent file
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Convert-Bencode>=0:converters/p5-Convert-Bencode \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Convert-Bencode>=0:converters/p5-Convert-Bencode \
 		p5-Digest-SHA1>=0:security/p5-Digest-SHA1
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

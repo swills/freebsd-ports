@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-POE-API-Hooks/Makefile 471617 2018-06-04 18:05:07Z sunpoet $
+# $FreeBSD: head/devel/p5-POE-API-Hooks/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-API-Hooks
 PORTVERSION=	1.0800
@@ -15,9 +15,9 @@ COMMENT=	Implement lightweight hooks into POE
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-Params-Validate>=0:devel/p5-Params-Validate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

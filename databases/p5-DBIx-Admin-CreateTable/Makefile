@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Admin-CreateTable/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Admin-CreateTable/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Admin-CreateTable
 PORTVERSION=	2.10
@@ -13,9 +13,9 @@ COMMENT=	Create and drop tables, primary indexes, and sequences
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
 		p5-Moo>=1.004002:devel/p5-Moo
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Version>=1.002003:devel/p5-Test-Version
 
 NO_ARCH=	yes

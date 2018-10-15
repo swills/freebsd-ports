@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/dns/p5-DNS-EasyDNS/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-DNS-EasyDNS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DNS-EasyDNS
 PORTVERSION=	0.04
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Update your EasyDNS dynamic DNS entries
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 USES=		perl5
 USE_PERL5=	configure

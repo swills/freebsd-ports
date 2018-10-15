@@ -1,5 +1,5 @@
 # Created by: Espen Tagestad <espen@tagestad.no>
-# $FreeBSD: head/databases/p5-DBD-Mock/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBD-Mock/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBD-Mock
 PORTVERSION=	1.45
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Simple mock DBD implementation used for testing
 
-BUILD_DEPENDS=	p5-DBI>=1.3:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=1.3:databases/p5-DBI \
 		p5-Test-Exception>=0.31:devel/p5-Test-Exception \
 		p5-Test-Simple>=0.47:devel/p5-Test-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-SMS-Mollie/Makefile 471665 2018-06-04 18:11:05Z sunpoet $
+# $FreeBSD: head/net/p5-Net-SMS-Mollie/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SMS-Mollie
 PORTVERSION=	0.04
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-XML-Simple>=0:textproc/p5-XML-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Simple>=0:textproc/p5-XML-Simple
 
 USES=		perl5
 USE_PERL5=	configure

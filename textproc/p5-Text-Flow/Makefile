@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/p5-Text-Flow/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Flow/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Flow
 DISTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Flexible text flowing and word wrapping for not just ASCII output
 
-BUILD_DEPENDS=	p5-Moose>=0.45:devel/p5-Moose
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.45:devel/p5-Moose
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-LongString>=0:devel/p5-Test-LongString
 

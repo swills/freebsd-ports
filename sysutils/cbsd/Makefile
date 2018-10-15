@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/cbsd/Makefile 475577 2018-07-28 14:45:25Z miwi $
+# $FreeBSD: head/sysutils/cbsd/Makefile 481034 2018-10-01 14:22:37Z 0mp $
 
 PORTNAME=	cbsd
 DISTVERSION=	11.2.1
@@ -9,10 +9,6 @@ COMMENT=	Yet another FreeBSD Jail and Bhyve Management Utility
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_mips=		fails to link: cannot find -lc++
-BROKEN_mips64=		fails to link: cannot find -lc++
-BROKEN_powerpc64=	fails to link: cannot find -lc++
 
 RUN_DEPENDS=	rsync:net/rsync \
 		sudo:security/sudo \

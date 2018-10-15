@@ -1,9 +1,9 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/monitoring-plugins/Makefile 473879 2018-07-04 11:52:25Z rene $
+# $FreeBSD: head/net-mgmt/monitoring-plugins/Makefile 481146 2018-10-03 08:09:59Z mat $
 
 PORTNAME=	monitoring-plugins
 PORTVERSION=	2.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://www.monitoring-plugins.org/download/ LOCAL/mat/${PORTNAME}
 

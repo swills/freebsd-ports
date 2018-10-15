@@ -1,5 +1,5 @@
 # Created by: Trevor Corpropst <tcornpropst@cox.net>
-# $FreeBSD: head/net/p5-Net-SFTP/Makefile 450097 2017-09-19 03:12:28Z bofh $
+# $FreeBSD: head/net/p5-Net-SFTP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SFTP
 PORTVERSION=	0.12
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Net-SSH-Perl>=0:net/p5-Net-SSH-Perl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-SSH-Perl>=0:net/p5-Net-SSH-Perl
 
 NO_ARCH=	yes
 USES=		perl5

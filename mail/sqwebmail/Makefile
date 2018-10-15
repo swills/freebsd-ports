@@ -1,8 +1,8 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/sqwebmail/Makefile 478085 2018-08-25 19:43:07Z oliver $
+# $FreeBSD: head/mail/sqwebmail/Makefile 481732 2018-10-10 11:54:58Z madpilot $
 
 PORTNAME=	sqwebmail
-PORTVERSION=	5.9.3
+PORTVERSION=	6.0.0
 CATEGORIES=	mail www
 MASTER_SITES=	SF/courier/webmail/${PORTVERSION}
 
@@ -71,7 +71,8 @@ CONFIGURE_ARGS=	--enable-cgibindir=${PREFIX}/${CGIBINDIR}/${CGIBINSUBDIR} \
 		${ICONV_CONFIGURE_ARG} \
 		--cache-file=${WRKDIR}/sqwebmail.cache \
 		--with-mailuser=${MAILOWN} \
-		--with-mailgroup=${MAILGRP}
+		--with-mailgroup=${MAILGRP} \
+		--with-notice=unicode
 
 PLIST_SUB+=	CGIBINDIR=${CGIBINDIR} \
 		CGIBINSUBDIR=${CGIBINSUBDIR} \

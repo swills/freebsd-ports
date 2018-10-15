@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Class-Default/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-Default/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Default
 PORTVERSION=	1.51
@@ -14,8 +14,8 @@ COMMENT=	Static calls apply to a default instantiation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Inspector>=0:devel/p5-Class-Inspector
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Inspector>=0:devel/p5-Class-Inspector
 
 USES=		perl5
 USE_PERL5=	configure

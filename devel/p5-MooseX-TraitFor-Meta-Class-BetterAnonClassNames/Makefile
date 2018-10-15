@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-TraitFor-Meta-Class-BetterAnonClassNames/Makefile 450533 2017-09-24 19:03:25Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-TraitFor-Meta-Class-BetterAnonClassNames/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-TraitFor-Meta-Class-BetterAnonClassNames
 PORTVERSION=	0.002003
@@ -13,10 +13,10 @@ COMMENT=	Metaclass trait to demystify generated anonymous class names
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
 		p5-autobox-Core>=0:devel/p5-autobox-Core \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-CheckDeps>=0.010:devel/p5-Test-CheckDeps \
 		p5-Test-Moose-More>=0:devel/p5-Test-Moose-More
 

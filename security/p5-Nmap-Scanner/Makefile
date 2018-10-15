@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-Nmap-Scanner/Makefile 463218 2018-02-28 15:12:38Z sunpoet $
+# $FreeBSD: head/security/p5-Nmap-Scanner/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Nmap-Scanner
 PORTVERSION=	1.0
@@ -14,11 +14,11 @@ COMMENT=	Perform and manipulate nmap scans using perl
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	nmap:security/nmap \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	nmap:security/nmap \
 		p5-Class-Generate>=0:devel/p5-Class-Generate \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

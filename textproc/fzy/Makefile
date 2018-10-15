@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/fzy/Makefile 453639 2017-11-06 18:51:08Z yuri $
+# $FreeBSD: head/textproc/fzy/Makefile 481088 2018-10-01 23:59:58Z swills $
 
 PORTNAME=	fzy
-DISTVERSION=	0.9
+DISTVERSION=	1.0
 CATEGORIES=	textproc
 
 MAINTAINER=	gor@clogic.com.ua

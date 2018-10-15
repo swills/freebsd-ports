@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/www/p5-WWW-HatenaDiary/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-HatenaDiary/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-HatenaDiary
 PORTVERSION=	0.02
@@ -11,12 +11,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	CRUD interface to Hatena::Diary
 
-BUILD_DEPENDS=	p5-YAML-Syck>=0:textproc/p5-YAML-Syck \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-YAML-Syck>=0:textproc/p5-YAML-Syck \
 		p5-URI>=0:net/p5-URI \
 		p5-WWW-HatenaLogin>=0.02:www/p5-WWW-HatenaLogin \
 		p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
 		p5-Web-Scraper>=0:www/p5-Web-Scraper
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBD-mysql/Makefile 479858 2018-09-16 00:07:04Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-mysql/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBD-mysql
 PORTVERSION=	4.048
@@ -26,8 +26,7 @@ USES=		mysql perl5
 USE_PERL5=	configure
 
 OPTIONS_DEFINE=	SSL
-SSL_BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay
-SSL_RUN_DEPENDS=	${SSL_BUILD_DEPENDS}
+SSL_RUN_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay
 SSL_CONFIGURE_OFF=	--nossl
 SSL_CONFIGURE_ON=	--ssl
 SSL_USES=		ssl

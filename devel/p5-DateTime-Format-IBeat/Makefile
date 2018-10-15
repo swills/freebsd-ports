@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-DateTime-Format-IBeat/Makefile 435020 2017-02-28 09:46:39Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Format-IBeat/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Format-IBeat
 PORTVERSION=	0.161
@@ -16,8 +16,8 @@ LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/Artistic
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: gugu
-# $FreeBSD: head/www/p5-Catalyst-Plugin-AutoCRUD/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-AutoCRUD/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-AutoCRUD
 PORTVERSION=	2.200002
@@ -13,7 +13,8 @@ COMMENT=	Instant AJAX web front-end for DBIx::Class
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Action-RenderView>=0:www/p5-Catalyst-Action-RenderView \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Action-RenderView>=0:www/p5-Catalyst-Action-RenderView \
 		p5-Catalyst-Model-DBIC-Schema>=0:www/p5-Catalyst-Model-DBIC-Schema \
 		p5-Catalyst-Plugin-ConfigLoader>=0:www/p5-Catalyst-Plugin-ConfigLoader \
 		p5-Catalyst-Runtime>=5.70000:www/p5-Catalyst-Runtime \
@@ -27,7 +28,6 @@ BUILD_DEPENDS=	p5-Catalyst-Action-RenderView>=0:www/p5-Catalyst-Action-RenderVie
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-SQL-Translator>=0:databases/p5-SQL-Translator
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-JSON-XS>=0:converters/p5-JSON-XS \
 		p5-Test-WWW-Mechanize-Catalyst>=0:devel/p5-Test-WWW-Mechanize-Catalyst

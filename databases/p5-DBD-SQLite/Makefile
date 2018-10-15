@@ -1,5 +1,5 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/databases/p5-DBD-SQLite/Makefile 466013 2018-03-30 23:46:14Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-SQLite/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBD-SQLite
 PORTVERSION=	1.58
@@ -13,8 +13,8 @@ COMMENT=	Provides access to SQLite3 databases through the DBI
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBI>=1.57:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=1.57:databases/p5-DBI
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/p5-Nagios-Plugins-Memcached/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-Nagios-Plugins-Memcached/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Nagios-Plugins-Memcached
 PORTVERSION=	0.02
@@ -14,10 +14,10 @@ COMMENT=	Module to check memcached via nagios
 USES=		perl5 shebangfix
 USE_PERL5=	configure
 
-BUILD_DEPENDS=	p5-Nagios-Plugin>=0:net-mgmt/p5-Nagios-Plugin \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Nagios-Plugin>=0:net-mgmt/p5-Nagios-Plugin \
 		p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
 		p5-Carp-Clan>=0:devel/p5-Carp-Clan
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTDOCS=	Changes README
 

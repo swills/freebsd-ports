@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/chinese/p5-Lingua-ZH-Summarize/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/p5-Lingua-ZH-Summarize/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Lingua-ZH-Summarize
 PORTVERSION=	0.01
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Chinese Text Summarization
 
-BUILD_DEPENDS=	p5-Lingua-ZH-Toke>=0:chinese/p5-Lingua-ZH-Toke \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-ZH-Toke>=0:chinese/p5-Lingua-ZH-Toke \
 		p5-Lingua-ZH-Wrap>=0:chinese/p5-Lingua-ZH-Wrap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

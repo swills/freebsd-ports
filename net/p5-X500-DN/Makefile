@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-X500-DN/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-X500-DN/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	X500-DN
 PORTVERSION=	0.29
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Handle X.500 DNs (Distinguished Names), parse, and format them
 
-BUILD_DEPENDS=	p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
 
 USES=		perl5
 USE_PERL5=	configure

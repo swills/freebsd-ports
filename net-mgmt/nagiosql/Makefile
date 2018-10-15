@@ -1,5 +1,5 @@
 # Created by: Chris St Denis <chris@smartt.com>
-# $FreeBSD: head/net-mgmt/nagiosql/Makefile 477060 2018-08-13 09:25:01Z tz $
+# $FreeBSD: head/net-mgmt/nagiosql/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	nagiosql
 PORTVERSION=	3.2.0
@@ -14,7 +14,7 @@ COMMENT=	Web based administration tool for Nagios
 
 LICENSE=	GPLv2
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 RUN_DEPENDS=	nagios:net-mgmt/nagios \
 		${PEARDIR}/HTML/Template/IT.php:devel/pear-HTML_Template_IT@${PHP_FLAVOR}

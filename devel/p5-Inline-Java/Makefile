@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Inline-Java/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Inline-Java/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Inline-Java
 PORTVERSION=	0.540
@@ -13,9 +13,9 @@ COMMENT=	Write Perl subroutines and classes in Java
 
 LICENSE=	ARTPERL10
 
-BUILD_DEPENDS=	p5-Inline>=0.68:devel/p5-Inline \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Inline>=0.68:devel/p5-Inline \
 		p5-Inline-C>=0.62:devel/p5-Inline-C
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+

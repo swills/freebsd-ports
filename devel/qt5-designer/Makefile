@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-designer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt5-designer/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	designer
 DISTVERSION=	${QT5_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Qt 5 graphical user interface designer
 
 USE_QT=		assistant_run core gui network printsupport quick uiplugin \
 		widgets xml buildtools_build
-USES=		qmake qt-dist:5,tools
+USES=		compiler:c++11-lang qmake qt-dist:5,tools
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 DESKTOP_ENTRIES="Qt 5 Designer" "" \

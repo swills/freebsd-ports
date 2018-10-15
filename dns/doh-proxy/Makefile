@@ -1,9 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/dns/doh-proxy/Makefile 480871 2018-09-28 17:59:24Z jbeich $
+# $FreeBSD: head/dns/doh-proxy/Makefile 481921 2018-10-12 19:01:02Z jbeich $
 
 PORTNAME=	doh-proxy
 DISTVERSION=	0.1.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns
 
 MAINTAINER=	mat@FreeBSD.org

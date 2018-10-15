@@ -1,5 +1,5 @@
 # Created by: James McNaughton
-# $FreeBSD: head/audio/xmms-nas/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/xmms-nas/Makefile 481894 2018-10-12 11:46:32Z antoine $
 
 PORTNAME=	xmms-nas
 PORTVERSION=	0.2
@@ -9,6 +9,9 @@ MASTER_SITES=	ftp://ftp.stack.nl/pub/users/willem/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network Audio System (NAS) output plugin for XMMS
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libxmms.so:multimedia/xmms \
 		libaudio.so:audio/nas

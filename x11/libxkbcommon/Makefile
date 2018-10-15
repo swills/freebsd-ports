@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/libxkbcommon/Makefile 472020 2018-06-08 19:18:24Z zeising $
+# $FreeBSD: head/x11/libxkbcommon/Makefile 481530 2018-10-08 09:38:38Z amdmi3 $
 
 PORTNAME=	libxkbcommon
 PORTVERSION=	0.8.0
@@ -9,6 +9,7 @@ MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Keymap handling library for toolkits and window systems
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 XORG_CAT=	lib
 USES=		gmake bison tar:xz

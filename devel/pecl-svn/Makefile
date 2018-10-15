@@ -1,5 +1,5 @@
 # Created by: Alex Kiesel <kiesel@schlund.de>
-# $FreeBSD: head/devel/pecl-svn/Makefile 465055 2018-03-20 02:20:07Z dbaio $
+# $FreeBSD: head/devel/pecl-svn/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	svn
 PORTVERSION=	1.0.3
@@ -14,7 +14,7 @@ LICENSE=	PHP301
 LIB_DEPENDS=	libsvn_client-1.so:devel/subversion
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 USE_CSTD=	c99
 
 .include <bsd.port.mk>

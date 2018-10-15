@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Class/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Class
 PORTVERSION=	0.50
@@ -13,8 +13,8 @@ COMMENT=	Easily create test classes in an xUnit style
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-MRO-Compat>=0.11:devel/p5-MRO-Compat
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MRO-Compat>=0.11:devel/p5-MRO-Compat
 TEST_DEPENDS=	p5-Contextual-Return>=0:devel/p5-Contextual-Return \
 		p5-Test-Exception>=0.25:devel/p5-Test-Exception
 

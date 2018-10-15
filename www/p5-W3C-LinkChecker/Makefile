@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/www/p5-W3C-LinkChecker/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-W3C-LinkChecker/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	W3C-LinkChecker
 PORTVERSION=	4.81
@@ -12,14 +12,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Checks the validity of links in an HTML or XHTML document
 
-BUILD_DEPENDS=	p5-CSS-DOM>=0.09:www/p5-CSS-DOM \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CSS-DOM>=0.09:www/p5-CSS-DOM \
 		p5-Config-General>=0:devel/p5-Config-General \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Net-IP>=0:net-mgmt/p5-Net-IP \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

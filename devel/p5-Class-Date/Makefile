@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/devel/p5-Class-Date/Makefile 472305 2018-06-13 11:58:28Z culot $
+# $FreeBSD: head/devel/p5-Class-Date/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Date
 PORTVERSION=	1.1.17
@@ -13,8 +13,8 @@ COMMENT=	Perl class for easy date and time manipulation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-TimeDate>0:devel/p5-TimeDate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-TimeDate>0:devel/p5-TimeDate
 TEST_DEPENDS=	p5-Test-Warnings>0:devel/p5-Test-Warnings
 
 NO_ARCH=	yes

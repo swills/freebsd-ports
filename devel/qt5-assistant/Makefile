@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-assistant/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt5-assistant/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	assistant
 DISTVERSION=	${QT5_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Qt 5 documentation browser
 
 USE_QT=		core gui help network printsupport sql widgets \
 		buildtools_build sql-sqlite3_run
-USES=		qmake qt-dist:5,tools
+USES=		compiler:c++11-lang qmake qt-dist:5,tools
 
 DESKTOP_ENTRIES="Qt 5 Assistant" "" \
 		"${PREFIX}/share/pixmaps/assistant-qt5.png" \

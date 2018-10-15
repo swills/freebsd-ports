@@ -1,5 +1,5 @@
 # Created by: Andrey Kostenko <andrey@kostenko.name>
-# $FreeBSD: head/devel/p5-Data-Section/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-Section/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Section
 PORTVERSION=	0.200007
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-MRO-Compat>=0.09:devel/p5-MRO-Compat \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MRO-Compat>=0.09:devel/p5-MRO-Compat \
 		p5-Sub-Exporter>=0.979:devel/p5-Sub-Exporter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-FailWarnings>=0:devel/p5-Test-FailWarnings
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/devel/p5-Tie-FileLRUCache/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Tie-FileLRUCache/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tie-FileLRUCache
 PORTVERSION=	1.05
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lightweight but robust filesystem based persistent LRU cache
 
-BUILD_DEPENDS=	p5-Class-NamedParms>=0:devel/p5-Class-NamedParms \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-NamedParms>=0:devel/p5-Class-NamedParms \
 		p5-Digest-SHA1>=0:security/p5-Digest-SHA1 \
 		p5-Class-ParmList>=0:devel/p5-Class-ParmList
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

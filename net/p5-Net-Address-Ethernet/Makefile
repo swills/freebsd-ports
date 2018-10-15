@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-Address-Ethernet/Makefile 460273 2018-01-29 11:28:19Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Address-Ethernet/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Address-Ethernet
 PORTVERSION=	1.126
@@ -13,10 +13,10 @@ COMMENT=	Find hardware ethernet address
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Env-Path>=0:devel/p5-Env-Path \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Env-Path>=0:devel/p5-Env-Path \
 		p5-Net-Ifconfig-Wrapper>=0:net/p5-Net-Ifconfig-Wrapper \
 		p5-Regexp-Common>=0:textproc/p5-Regexp-Common
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

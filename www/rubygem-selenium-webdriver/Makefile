@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-selenium-webdriver/Makefile 476464 2018-08-05 19:09:32Z sunpoet $
+# $FreeBSD: head/www/rubygem-selenium-webdriver/Makefile 482096 2018-10-14 16:33:45Z sunpoet $
 
 PORTNAME=	selenium-webdriver
-PORTVERSION=	3.14.0
+PORTVERSION=	3.14.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -13,9 +13,9 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-childprocess>=0.5:devel/rubygem-childprocess \
-		rubygem-rubyzip>=1.2:archivers/rubygem-rubyzip
+		rubygem-rubyzip>=1.2.2:archivers/rubygem-rubyzip
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

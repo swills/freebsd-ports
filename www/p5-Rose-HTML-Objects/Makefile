@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/p5-Rose-HTML-Objects/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Rose-HTML-Objects/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Rose-HTML-Objects
 PORTVERSION=	0.623
@@ -13,7 +13,8 @@ COMMENT=	Object-oriented interfaces for HTML
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Clone-PP>=0:devel/p5-Clone-PP \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Clone-PP>=0:devel/p5-Clone-PP \
 		p5-DateTime>=0.20:devel/p5-DateTime \
 		p5-Email-Valid>=0:mail/p5-Email-Valid \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser \
@@ -24,7 +25,6 @@ BUILD_DEPENDS=	p5-Clone-PP>=0:devel/p5-Clone-PP \
 		p5-Rose-Object>=0.854:devel/p5-Rose-Object \
 		p5-Rose-URI>=0.021:net/p5-Rose-URI \
 		p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Memory-Cycle>=0:devel/p5-Test-Memory-Cycle
 
 PORTSCOUT=	skipv:0.6061

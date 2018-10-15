@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/math/p5-Math-Geometry/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-Geometry/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Geometry
 PORTVERSION=	0.04
@@ -14,8 +14,8 @@ COMMENT=	Geometry related functions
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Math-Matrix>=0:math/p5-Math-Matrix
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Matrix>=0:math/p5-Math-Matrix
 
 NO_ARCH=	yes
 USE_PERL5=	configure

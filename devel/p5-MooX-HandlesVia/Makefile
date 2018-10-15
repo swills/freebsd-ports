@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooX-HandlesVia/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooX-HandlesVia/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooX-HandlesVia
 PORTVERSION=	0.001008
@@ -12,9 +12,9 @@ COMMENT=	NativeTrait-like behavior for Moo
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-Perl>=0.002006:devel/p5-Data-Perl \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Perl>=0.002006:devel/p5-Data-Perl \
 		p5-Moo>=1.003000:devel/p5-Moo
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-MooX-Types-MooseLike>=0.23:devel/p5-MooX-Types-MooseLike

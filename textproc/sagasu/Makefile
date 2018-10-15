@@ -1,5 +1,5 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/textproc/sagasu/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/textproc/sagasu/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	sagasu
 PORTVERSION=	2.0.12
@@ -12,6 +12,9 @@ COMMENT=	GNOME tool to find strings in a set of files
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		pathfix pkgconfig gettext gmake
 USE_GNOME=	libgnomeui

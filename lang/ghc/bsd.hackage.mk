@@ -1,5 +1,5 @@
 #
-# $FreeBSD: head/lang/ghc/bsd.hackage.mk 476202 2018-08-01 21:53:17Z arrowd $
+# $FreeBSD: head/lang/ghc/bsd.hackage.mk 481625 2018-10-09 12:03:07Z arrowd $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -418,6 +418,7 @@ pandoc-citeproc_port?=                           textproc/hs-pandoc-citeproc    
 pandoc-types_port?=                              textproc/hs-pandoc-types
 pango_port?=                                     x11-toolkits/hs-pango
 parallel_port?=                                  devel/hs-parallel
+parsec-numbers_port?=                            textproc/hs-parsec-numbers
 path-pieces_port?=                               www/hs-path-pieces
 pcap_port?=                                      net/hs-pcap
 pcre-light_port?=                                devel/hs-pcre-light                             # lib_depends

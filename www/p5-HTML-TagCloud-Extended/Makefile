@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-TagCloud-Extended/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-TagCloud-Extended/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-TagCloud-Extended
 PORTVERSION=	0.10
@@ -14,10 +14,10 @@ COMMENT=	HTML::TagCloud extension for time-stamp based coloring of tags
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-Readonly>=0:devel/p5-Readonly
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

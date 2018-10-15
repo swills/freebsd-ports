@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-scikit-umfpack/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-scikit-umfpack/Makefile 482020 2018-10-14 03:43:37Z yuri $
 
 PORTNAME=	scikit-umfpack
-DISTVERSION=	0.3.1
+DISTVERSION=	0.3.2
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

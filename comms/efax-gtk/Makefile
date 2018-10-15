@@ -1,5 +1,5 @@
 # Created by: Jean-Baptiste Quenot <jb.quenot@caraldi.com>
-# $FreeBSD: head/comms/efax-gtk/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/comms/efax-gtk/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	efax-gtk
 PORTVERSION=	3.2.13
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GUI frontend for efax program
 
 LICENSE=	GPLv2
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libsigc-1.2.so:devel/libsigc++12 \
 		libcxx-gtk-utils-2-2.2.so:x11-toolkits/c++-gtk-utils

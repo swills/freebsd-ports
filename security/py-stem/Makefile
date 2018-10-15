@@ -1,9 +1,8 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/py-stem/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-stem/Makefile 481666 2018-10-09 20:58:10Z cs $
 
 PORTNAME=	stem
-PORTVERSION=	1.6.0
-PORTREVISION=	1
+PORTVERSION=	1.7.0
 CATEGORIES=	security net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

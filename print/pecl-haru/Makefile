@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/print/pecl-haru/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/print/pecl-haru/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	haru
 PORTVERSION=	1.0.4
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/hpdf.h:print/libharu
 RUN_DEPENDS:=	${LOCALBASE}/include/hpdf.h:print/libharu
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 CONFIGURE_ARGS+=	--with-haru=${LOCALBASE}
 CFLAGS+=	-I${LOCALBASE}/include

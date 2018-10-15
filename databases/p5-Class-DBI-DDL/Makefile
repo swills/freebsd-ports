@@ -1,5 +1,5 @@
 # Created by: Daniel Wijnands <daniel@itxl.nl>
-# $FreeBSD: head/databases/p5-Class-DBI-DDL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-DDL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-DDL
 PORTVERSION=	1.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DDL for Class-DBI
 
-BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Jim Pirzyk <pirzyk@uiuc.edu>
-# $FreeBSD: head/devel/p5-Config-Objective/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Config-Objective/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Config-Objective
 PORTVERSION=	0.9.1
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pirzyk@FreeBSD.org
 COMMENT=	Configuration data as perl objects
 
-BUILD_DEPENDS=	p5-Parse-Yapp>=0:devel/p5-Parse-Yapp \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Parse-Yapp>=0:devel/p5-Parse-Yapp \
 		p5-ParseLex>=0:devel/p5-ParseLex
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

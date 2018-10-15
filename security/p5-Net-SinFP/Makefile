@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/security/p5-Net-SinFP/Makefile 471688 2018-06-04 18:15:13Z sunpoet $
+# $FreeBSD: head/security/p5-Net-SinFP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME?=	Net-SinFP
 PORTVERSION=	2.09
@@ -33,11 +33,11 @@ NOT_FOR_ARCHS_REASON=	does not support big-endian architectures
 .if ${PORTNAME} == "Net-SinFP"
 PKGNAMEPREFIX=	p5-
 
-BUILD_DEPENDS+=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
 		p5-DBIx-SQLite-Simple>=0.33:databases/p5-DBIx-SQLite-Simple \
 		p5-Net-Packet>=3.00:net/p5-Net-Packet \
 		p5-Net-Packet-Target>=1.00:net/p5-Net-Packet-Target
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

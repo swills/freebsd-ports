@@ -1,5 +1,5 @@
 # Created by: Fanying Jen <fanying@fynet.com>
-# $FreeBSD: head/www/p5-WWW-Search-AltaVista/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Search-AltaVista/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Search-AltaVista
 PORTVERSION=	2.154
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl WWW::Search class for searching AltaVista
 
-BUILD_DEPENDS=	p5-Date-Manip>=0:devel/p5-Date-Manip \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Date-Manip>=0:devel/p5-Date-Manip \
 		p5-HTML-Tree>=0:www/p5-HTML-Tree \
 		p5-WWW-Search>=0:www/p5-WWW-Search
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

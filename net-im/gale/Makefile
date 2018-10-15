@@ -1,5 +1,5 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/net-im/gale/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/net-im/gale/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gale
 PORTVERSION=	0.99f
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}ruit
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Secure instant messaging system
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libgc.so:devel/boehm-gc \
 		libwwwcore.so:www/libwww \

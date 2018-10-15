@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/ipsorc/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net/ipsorc/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	ipsorc
 PORTVERSION=	1.7.5
@@ -9,6 +9,9 @@ MASTER_SITES=	http://200ok.org/distfiles/ipsorc/ \
 
 MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	GTK GUI tool to create and send IP packets
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

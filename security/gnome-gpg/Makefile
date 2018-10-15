@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/security/gnome-gpg/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/security/gnome-gpg/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #    $MCom: ports/security/gnome-gpg/Makefile,v 1.1 2006/09/02 15:20:58 ahze Exp $
 
 PORTNAME=	gnome-gpg
@@ -10,6 +10,9 @@ MASTER_SITES=	GNOME
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Simple commandline wrapper around gpg for gnome-keyring
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 BUILD_DEPENDS=	gpgv:security/gnupg1
 LIB_DEPENDS=	libgnome-keyring.so:security/libgnome-keyring

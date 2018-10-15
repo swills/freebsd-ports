@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/databases/p5-Text-Query-SQL/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/databases/p5-Text-Query-SQL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Query-SQL
 PORTVERSION=	0.09
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Text-Query-SQL provides query builders for SQL databases
 
-BUILD_DEPENDS=	p5-Text-Query>=0:textproc/p5-Text-Query
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Query>=0:textproc/p5-Text-Query
 TEST_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 
 USES=		perl5

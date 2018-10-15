@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/flowgger/Makefile 480871 2018-09-28 17:59:24Z jbeich $
+# $FreeBSD: head/sysutils/flowgger/Makefile 481921 2018-10-12 19:01:02Z jbeich $
 
 PORTNAME=	flowgger
 DISTVERSION=	0.2.6-28
 DISTVERSIONSUFFIX=	-gab572a0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org

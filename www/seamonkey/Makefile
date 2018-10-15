@@ -1,9 +1,9 @@
 # Created by: eivind/dima/jseger
-# $FreeBSD: head/www/seamonkey/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/www/seamonkey/Makefile 481921 2018-10-12 19:01:02Z jbeich $
 
 PORTNAME=	seamonkey
 DISTVERSION=	2.49.4
-PORTREVISION=	12
+PORTREVISION=	13
 MOZILLA_VER=	52 # above + 3
 CATEGORIES?=	www mail news editors irc ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \

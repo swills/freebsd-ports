@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/net/p5-Net-LDAP-Express/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-LDAP-Express/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-LDAP-Express
 PORTVERSION=	0.12
@@ -14,8 +14,8 @@ COMMENT=	Module to simplify connecting up to a LDAP server
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-perl-ldap>=0.23:net/p5-perl-ldap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-perl-ldap>=0.23:net/p5-perl-ldap
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Dmitry Morozovsky <marck@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Driver-HTML/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Driver-HTML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Driver-HTML
 PORTVERSION=	0.06
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl SAX Driver for non wellformed HTML
 
-BUILD_DEPENDS=	p5-XML-TreeBuilder>=0:textproc/p5-XML-TreeBuilder \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-TreeBuilder>=0:textproc/p5-XML-TreeBuilder \
 		p5-XML-Handler-YAWriter>=0:textproc/p5-XML-Handler-YAWriter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

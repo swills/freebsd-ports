@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Software-License-CCpack/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/p5-Software-License-CCpack/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Software-License-CCpack
 PORTVERSION=	1.11
@@ -13,8 +13,8 @@ COMMENT=	Software::License pack for Creative Commons licenses
 
 LICENSE=	LGPL3
 
-BUILD_DEPENDS=	p5-Software-License>=0:misc/p5-Software-License
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Software-License>=0:misc/p5-Software-License
 TEST_DEPENDS=	p5-Test-CheckDeps>=0.010:devel/p5-Test-CheckDeps
 
 NO_ARCH=	yes

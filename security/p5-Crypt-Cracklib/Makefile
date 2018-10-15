@@ -1,9 +1,9 @@
 # Created by: will
-# $FreeBSD: head/security/p5-Crypt-Cracklib/Makefile 462863 2018-02-24 21:01:47Z adamw $
+# $FreeBSD: head/security/p5-Crypt-Cracklib/Makefile 481800 2018-10-11 09:30:28Z tobik $
 
 PORTNAME=	Crypt-Cracklib
 PORTVERSION=	1.7
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libcrack.so:security/cracklib
 
 USES=		perl5
 USE_PERL5=	configure
-CONFIGURE_ARGS=	INC="-I${LOCALBASE}/include" DEFINE="-DCRACKLIB_DICTPATH=\\\"${PREFIX}/libdata/cracklib/pw_dict\\\""
+CONFIGURE_ARGS=	INC="-I${LOCALBASE}/include" DEFINE="-DCRACKLIB_DICTPATH=\\\"${PREFIX}/libdata/cracklib/cracklib-words\\\""
 
 post-patch:
 	@${REINPLACE_CMD} 's/-Werror//' ${WRKSRC}/Makefile.PL

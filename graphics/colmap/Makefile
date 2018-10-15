@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/colmap/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/colmap/Makefile 481770 2018-10-10 21:44:29Z jbeich $
 
 PORTNAME=	colmap
 DISTVERSION=	3.5
@@ -85,14 +85,5 @@ post-install:
 post-install-DOCS-on:
 	(cd ${WRKSRC}/doc/_build/html && ${COPYTREE_SHARE} \
 		"${PORTDOCS}" ${STAGEDIR}${DOCSDIR})
-
-.include <bsd.port.options.mk>
-
-post-patch:	sincos-arm
-sincos-arm:
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101504 && ${MACHINE} == arm
-	@${REINPLACE_CMD} -e 's/-ffast-math/& -fno-unsafe-math-optimizations/' \
-		${WRKSRC}/lib/PoissonRecon/CMakeLists.txt
-.endif
 
 .include <bsd.port.mk>

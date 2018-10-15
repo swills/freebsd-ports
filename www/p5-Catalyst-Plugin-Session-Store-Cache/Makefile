@@ -1,5 +1,5 @@
 # Created by: lbr@FreeBSD.org
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-Store-Cache/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-Store-Cache/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Session-Store-Cache
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Store sessions using a Catalyst::Plugin::Cache
 
-BUILD_DEPENDS=	p5-Catalyst-Plugin-Session>=0.06:www/p5-Catalyst-Plugin-Session
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Plugin-Session>=0.06:www/p5-Catalyst-Plugin-Session
 
 USES=		perl5
 USE_PERL5=	configure

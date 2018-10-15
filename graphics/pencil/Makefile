@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/graphics/pencil/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/pencil/Makefile 481268 2018-10-05 10:10:02Z martymac $
 
 PORTNAME=	pencil
 PORTVERSION=	0.4.4b
@@ -19,7 +19,7 @@ BROKEN_armv7=		fails to compile: no matching function for call to 'qMax'
 LIB_DEPENDS=	libming.so:graphics/ming \
 		libpng.so:graphics/png
 
-USES=		qmake qt:4 zip
+USES=		gl qmake qt:4 zip
 USE_QT=		gui opengl xml moc_build rcc_build
 USE_GL=		gl
 QMAKE_ARGS=	INCLUDEPATH+=${LOCALBASE}/include/ming

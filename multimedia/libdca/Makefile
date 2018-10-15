@@ -1,8 +1,9 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/multimedia/libdca/Makefile 470419 2018-05-19 16:33:53Z riggs $
+# $FreeBSD: head/multimedia/libdca/Makefile 481831 2018-10-11 14:33:19Z tobik $
 
 PORTNAME=	libdca
 PORTVERSION=	0.0.6
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.videolan.org/pub/videolan/${PORTNAME}/${PORTVERSION}/
 

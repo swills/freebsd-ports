@@ -1,5 +1,5 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/audio/mcplay/Makefile 368108 2014-09-13 15:11:27Z tijl $
+# $FreeBSD: head/audio/mcplay/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	mcplay
 DISTVERSION=	0.3i
@@ -10,6 +10,9 @@ MASTER_SITES=	http://www.yahuxo.de/${PORTNAME}/ \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Curses based front-end to various audio players
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

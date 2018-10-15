@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-script/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt5-script/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	script
 DISTVERSION=	${QT5_VERSION}
@@ -8,10 +8,8 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4-compatible scripting module
 
-BROKEN_powerpc64=	Does not build
-
 USE_QT=		core buildtools_build
-USES=		qmake qt-dist:5,script
+USES=		compiler:c++11-lang qmake qt-dist:5,script
 # Keep make(1) from descending into src/script/obj/ (qmake:outsource
 # doesn't work).
 MAKE_ENV=	MAKEOBJDIR=.

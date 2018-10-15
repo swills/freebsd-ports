@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-pySmartDL/Makefile 461428 2018-02-10 19:59:26Z sunpoet $
+# $FreeBSD: head/www/py-pySmartDL/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	pySmartDL
 PORTVERSION=	1.2.4
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Smart download manager for Python
 
 RUN_DEPENDS=	${PY_FUTURES}

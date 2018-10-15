@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/p5-Monitor-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-Monitor-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Monitor-Simple
 PORTVERSION=	0.2.8
@@ -14,12 +14,12 @@ COMMENT=	Simple monitoring of applications and services
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-CaptureOutput>=0:devel/p5-IO-CaptureOutput \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-CaptureOutput>=0:devel/p5-IO-CaptureOutput \
 		p5-Log-Log4perl>=0:devel/p5-Log-Log4perl \
 		p5-Parallel-ForkManager>=0:devel/p5-Parallel-ForkManager \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-File-Which>=0:sysutils/p5-File-Which
 

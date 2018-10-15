@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/fvm/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/fvm/Makefile 481135 2018-10-02 21:38:06Z yuri $
 
 PORTNAME=	fvm
 PORTVERSION=	0.15.5
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	science parallel
 MASTER_SITES=	http://code-saturne.org/releases/
 
@@ -31,10 +31,10 @@ BUILD_DEPENDS+=	${LOCALBASE}/mpi/openmpi/bin/mpicc:net/openmpi
 RUN_DEPENDS+=	${LOCALBASE}/mpi/openmpi/bin/mpirun:net/openmpi
 CONFIGURE_ARGS+=	--with-mpi=${LOCALBASE}/mpi/openmpi
 .else
-BUILD_DEPENDS+=	${LOCALBASE}/bin/mpicc:net/mpich2
-RUN_DEPENDS+=	${LOCALBASE}/bin/mpirun:net/mpich2
+BUILD_DEPENDS+=	${LOCALBASE}/bin/mpicc:net/mpich
+RUN_DEPENDS+=	${LOCALBASE}/bin/mpirun:net/mpich
 CONFIGURE_ARGS+=	--with-mpi=${LOCALBASE}
-# Do not directly depend on Fortran, but FFLAGS needed to link with mpich2
+# Do not directly depend on Fortran, but FFLAGS needed to link with mpich
 USES+=		fortran
 .endif
 

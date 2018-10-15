@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Carp-Assert-More/Makefile 447416 2017-08-05 23:10:47Z sunpoet $
+# $FreeBSD: head/devel/p5-Carp-Assert-More/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Carp-Assert-More
 PORTVERSION=	1.16
@@ -12,8 +12,8 @@ COMMENT=	Convenience wrappers around Carp::Assert
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Carp-Assert>=0:devel/p5-Carp-Assert
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Carp-Assert>=0:devel/p5-Carp-Assert
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Dancer-Session-Memcached/Makefile 458319 2018-01-07 12:12:22Z sunpoet $
+# $FreeBSD: head/databases/p5-Dancer-Session-Memcached/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dancer-Session-Memcached
 PORTVERSION=	0.202
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
 		p5-Dancer>=0:www/p5-Dancer
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

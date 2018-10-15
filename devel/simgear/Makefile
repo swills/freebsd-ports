@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/simgear/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/devel/simgear/Makefile 481268 2018-10-05 10:10:02Z martymac $
 
 PORTNAME=	simgear
 PORTVERSION=	2018.2.2
@@ -16,7 +16,8 @@ RUN_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libosg.so:graphics/osg
 
-USES=		alias cmake compiler:c++11-lib cpe jpeg openal:al,alut tar:bzip2
+USES=		alias cmake compiler:c++11-lib cpe gl jpeg openal:al,alut \
+		tar:bzip2
 USE_XORG=	ice sm x11 xext xi xmu xt
 USE_GL=		gl glu glut
 

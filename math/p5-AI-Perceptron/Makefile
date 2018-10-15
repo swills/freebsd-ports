@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/math/p5-AI-Perceptron/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-AI-Perceptron/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	AI-Perceptron
 PORTVERSION=	1.0
@@ -14,8 +14,8 @@ COMMENT=	Perl module for introducing to internal operations of neural networks
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-accessors>=0:devel/p5-accessors
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-accessors>=0:devel/p5-accessors
 
 USES=		perl5
 USE_PERL5=	modbuild

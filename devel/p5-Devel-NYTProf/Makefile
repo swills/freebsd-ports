@@ -1,8 +1,8 @@
 # Created by: Vladimir Timofeev <vovkasm@gmail.com>
-# $FreeBSD: head/devel/p5-Devel-NYTProf/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-NYTProf/Makefile 481715 2018-10-10 10:23:19Z sunpoet $
 
 PORTNAME=	Devel-NYTProf
-PORTVERSION=	6.04
+PORTVERSION=	6.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,9 +13,9 @@ COMMENT=	Powerful feature-rich Perl source code profiler
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Which>=1.09:sysutils/p5-File-Which \
 		p5-JSON-MaybeXS>=0:converters/p5-JSON-MaybeXS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Differences>=0.60:devel/p5-Test-Differences
 
 USES=		perl5

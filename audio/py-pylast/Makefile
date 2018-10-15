@@ -1,13 +1,13 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/audio/py-pylast/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-pylast/Makefile 481877 2018-10-12 06:19:16Z wen $
 
 PORTNAME=	pylast
-PORTVERSION=	1.4.2
+PORTVERSION=	2.4.0
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python interface to Last.fm and Libre.fm
 
 LICENSE=	APACHE20

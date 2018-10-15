@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Blowfish/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Blowfish/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-IRC-Plugin-Blowfish
 PORTVERSION=	0.01
@@ -15,10 +15,10 @@ COMMENT=	POE::Component::IRC plugin tthat provides blowfish encryption
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-POE>=0.37:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0.37:devel/p5-POE \
 		p5-POE-Component-IRC>=5.07:irc/p5-POE-Component-IRC \
 		p5-Crypt-Blowfish_PP>=1.12:security/p5-Crypt-Blowfish_PP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PLIST_SUB=	EXAMPLESDIR="share/examples/${PORTNAME}"
 

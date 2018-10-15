@@ -1,5 +1,5 @@
 # Created by: Guy Antony Halse <guy@rucus.ru.za.za>
-# $FreeBSD: head/mail/p5-Mail-Ezmlm/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Ezmlm/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Ezmlm
 PORTVERSION=	0.08.2
@@ -15,9 +15,9 @@ COMMENT=	Perl module to allow object methods for ezmlm-idx mailing lists
 LICENSE=	BSD3CLAUSE GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	${EZMLM_DIR}/bin/ezmlm-idx:mail/ezmlm-idx \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	${EZMLM_DIR}/bin/ezmlm-idx:mail/ezmlm-idx \
 		p5-Crypt-GPG>=0:security/p5-Crypt-GPG
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

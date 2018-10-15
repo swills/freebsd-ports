@@ -1,5 +1,5 @@
 # Created by: Mikael Urankar <mikael.urankar@gmail.com>
-# $FreeBSD: head/misc/raspberrypi-userland/Makefile 480019 2018-09-18 13:03:44Z manu $
+# $FreeBSD: head/misc/raspberrypi-userland/Makefile 481796 2018-10-11 09:14:11Z manu $
 
 PORTNAME=	raspberrypi-userland
 PORTVERSION=	20161026
@@ -16,6 +16,8 @@ CONFLICTS_INSTALL=	libglesv2 libEGL
 
 USES=		cmake:outsource pkgconfig shebangfix
 
+USE_LDCONFIG=	yes
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	gonzoua
 GH_PROJECT=	userland
@@ -31,8 +33,6 @@ EXAMPLES_DESC=	Install test applications source code (hello_pi)
 EXAMPLES_LIB_DEPENDS=	libfreetype.so:print/freetype2
 
 DEBUG_CFLAGS_OFF=	-DNDEBUG
-
-USE_LDCONFIG=	yes
 
 LLD_UNSAFE=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Ali Mashtizadeh <ali@mashtizadeh.org>
-# $FreeBSD: head/mail/p5-GMail-IMAPD/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-GMail-IMAPD/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	GMail-IMAPD
 PORTVERSION=	0.94
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mashtizadeh@gmail.com
 COMMENT=	Perl IMAP4 gateway to Google's webmail service
 
-BUILD_DEPENDS=	p5-Mail-Webmail-Gmail>=0:mail/p5-Mail-Webmail-Gmail
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mail-Webmail-Gmail>=0:mail/p5-Mail-Webmail-Gmail
 
 USES=		perl5
 USE_PERL5=	configure

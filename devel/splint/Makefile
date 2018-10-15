@@ -1,5 +1,5 @@
 # Created by: moeding
-# $FreeBSD: head/devel/splint/Makefile 340962 2014-01-25 00:23:18Z bapt $
+# $FreeBSD: head/devel/splint/Makefile 481057 2018-10-01 19:42:24Z tobik $
 
 PORTNAME=	splint
 PORTVERSION=	3.1.2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.src.tgz
 
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Tool for statically checking sourcecode for security vulnerabilities
+
+LICENSE=	GPLv2+
 
 USES=		gmake
 GNU_CONFIGURE=	yes

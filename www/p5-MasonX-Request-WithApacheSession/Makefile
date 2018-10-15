@@ -1,5 +1,5 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/www/p5-MasonX-Request-WithApacheSession/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-MasonX-Request-WithApacheSession/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MasonX-Request-WithApacheSession
 PORTVERSION=	0.31
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface to Apache::Session for HTML::Mason
 
-BUILD_DEPENDS=	p5-HTML-Mason>=0:www/p5-HTML-Mason \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Mason>=0:www/p5-HTML-Mason \
 		p5-Apache-Session-Wrapper>=0:www/p5-Apache-Session-Wrapper
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

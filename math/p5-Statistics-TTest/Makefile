@@ -1,5 +1,5 @@
 # Created by: dawe <daweonline@gmail.com>
-# $FreeBSD: head/math/p5-Statistics-TTest/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Statistics-TTest/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Statistics-TTest
 PORTVERSION=	1.1.0
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to perform T-test on 2 independent samples
 
-BUILD_DEPENDS=	p5-Statistics-Descriptive>=0:math/p5-Statistics-Descriptive \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Statistics-Descriptive>=0:math/p5-Statistics-Descriptive \
 		p5-Statistics-Distributions>=0.07:math/p5-Statistics-Distributions
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

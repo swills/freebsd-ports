@@ -1,5 +1,5 @@
 # Created by: Aaron Straup Cope <ascope@cpan.org>
-# $FreeBSD: head/textproc/p5-XML-XBEL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-XBEL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-XBEL
 PORTVERSION=	1.4
@@ -14,9 +14,9 @@ COMMENT=	OOP for reading and writing XBEL documents
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-TimeDate>=0:devel/p5-TimeDate \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-TimeDate>=0:devel/p5-TimeDate \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

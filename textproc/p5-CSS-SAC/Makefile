@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-CSS-SAC/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-CSS-SAC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CSS-SAC
 PORTVERSION=	0.08
@@ -14,8 +14,8 @@ COMMENT=	SAC CSS (Simple API for CSS) parser
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-ArrayObjects>=0.04:devel/p5-Class-ArrayObjects
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-ArrayObjects>=0.04:devel/p5-Class-ArrayObjects
 
 USES=		perl5
 USE_PERL5=	configure

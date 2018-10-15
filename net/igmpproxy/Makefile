@@ -1,8 +1,9 @@
 # Created by: asami
-# $FreeBSD: head/net/igmpproxy/Makefile 464223 2018-03-12 06:49:17Z yuri $
+# $FreeBSD: head/net/igmpproxy/Makefile 481067 2018-10-01 20:50:46Z swills $
 
 PORTNAME=	igmpproxy
 DISTVERSION=	0.2.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net
 

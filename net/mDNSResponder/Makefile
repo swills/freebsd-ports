@@ -1,10 +1,10 @@
 # Created by: Alfred Perlstein <alfred@FreeBSD.org>
-# $FreeBSD: head/net/mDNSResponder/Makefile 460991 2018-02-05 17:49:21Z sunpoet $
+# $FreeBSD: head/net/mDNSResponder/Makefile 481298 2018-10-05 21:07:11Z sunpoet $
 
 PORTNAME=	mDNSResponder
-PORTVERSION=	878.30.4
+PORTVERSION=	878.70.2
 CATEGORIES=	net dns
-MASTER_SITES=	http://opensource.apple.com/tarballs/${PORTNAME}/
+MASTER_SITES=	https://opensource.apple.com/tarballs/mDNSResponder/
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Bonjour (zero-configuration networking) by Apple

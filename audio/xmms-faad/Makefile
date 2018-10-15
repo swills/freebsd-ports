@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/xmms-faad/Makefile 476490 2018-08-06 05:50:10Z tobik $
+# $FreeBSD: head/audio/xmms-faad/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	faad2
 PORTVERSION=	2.8.8
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	xmms-
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XMMS plugin for MP4/M4A/AAC files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/../../../COPYING

@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/mail/p5-Sendmail-AccessDB/Makefile 421693 2016-09-10 14:14:08Z ehaupt $
+# $FreeBSD: head/mail/p5-Sendmail-AccessDB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Sendmail-AccessDB
 PORTVERSION=	1.04
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Perl5 interface to the Sendmail access.db list
 
-BUILD_DEPENDS=	p5-BerkeleyDB>=0:databases/p5-BerkeleyDB
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-BerkeleyDB>=0:databases/p5-BerkeleyDB
 
 USES=		perl5
 USE_PERL5=	configure

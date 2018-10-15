@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/sams2/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/sams2/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	sams2
 DISTVERSION=	2.0.0
@@ -11,7 +11,7 @@ COMMENT=	Squid Accounting Management System
 
 LICENSE=	BSD4CLAUSE
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 RUN_DEPENDS=	${LOCALBASE}/libexec/mysqld:${_MYSQL_SERVER}

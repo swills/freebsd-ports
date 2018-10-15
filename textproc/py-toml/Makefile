@@ -1,8 +1,8 @@
 # Created by: Waitman Gobble <waitman@waitman.net>
-# $FreeBSD: head/textproc/py-toml/Makefile 479559 2018-09-11 19:00:59Z sunpoet $
+# $FreeBSD: head/textproc/py-toml/Makefile 481577 2018-10-08 21:42:14Z sunpoet $
 
 PORTNAME=	toml
-PORTVERSION=	0.9.6
+PORTVERSION=	0.10.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

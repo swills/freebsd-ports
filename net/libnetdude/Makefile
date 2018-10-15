@@ -1,5 +1,5 @@
 # Created by: Yann Berthier <yb@sainte-barbe.org>
-# $FreeBSD: head/net/libnetdude/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/libnetdude/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	libnetdude
 PORTVERSION=	0.12
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/netdude/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for manipulating libpcap/tcpdump trace files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl \
 		libpcapnav.so:net/libpcapnav

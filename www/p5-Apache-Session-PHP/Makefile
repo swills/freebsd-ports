@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/www/p5-Apache-Session-PHP/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Apache-Session-PHP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Apache-Session-PHP
 PORTVERSION=	0.05
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Glue Apache::Session with PHP::Session
 
-BUILD_DEPENDS=	p5-PHP-Session>=0:www/p5-PHP-Session \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PHP-Session>=0:www/p5-PHP-Session \
 		p5-Apache-Session>=0:www/p5-Apache-Session
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

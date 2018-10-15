@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Static/Makefile 451830 2017-10-12 08:11:29Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Static/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Static
 PORTVERSION=	0.11
@@ -12,12 +12,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Serve static files with Catalyst
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=2.99:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=2.99:www/p5-Catalyst-Runtime \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-File-MimeInfo>=0.11:devel/p5-File-MimeInfo \
 		p5-File-Slurp>0:devel/p5-File-Slurp \
 		p5-MRO-Compat>0:devel/p5-MRO-Compat
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

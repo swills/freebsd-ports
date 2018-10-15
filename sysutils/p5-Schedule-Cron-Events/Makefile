@@ -1,5 +1,5 @@
 # Created by: Andrey Kuzmin <akuz84@gmail.com>
-# $FreeBSD: head/sysutils/p5-Schedule-Cron-Events/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-Schedule-Cron-Events/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Schedule-Cron-Events
 PORTVERSION=	1.95
@@ -14,8 +14,8 @@ COMMENT=	Take a line from a crontab and find out when events will occur
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Set-Crontab>=0:devel/p5-Set-Crontab
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Set-Crontab>=0:devel/p5-Set-Crontab
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/www/p5-Template-Mustache/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Template-Mustache/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Mustache
 PORTVERSION=	v0.5.1
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kurt.lidl@cello.com
 COMMENT=	Perl version of the fabulous Mustache template language
 
-BUILD_DEPENDS=	p5-YAML-Syck>=1.15:textproc/p5-YAML-Syck
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-YAML-Syck>=1.15:textproc/p5-YAML-Syck
 TEST_DEPENDS:=	p5-Test-Mini-Unit>=v1.0.3:devel/p5-Test-Mini-Unit
 
 USES=		perl5

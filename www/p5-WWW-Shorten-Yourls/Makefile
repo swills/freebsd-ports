@@ -1,5 +1,5 @@
 # Created by: Lawrence Chen <beastie@tardisi.com>
-# $FreeBSD: head/www/p5-WWW-Shorten-Yourls/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten-Yourls/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Shorten-Yourls
 PORTVERSION=	0.06
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	beastie@tardisi.com
 COMMENT=	Perl interface to www/yourls, Your Own URL Shortener
 
-BUILD_DEPENDS=	p5-JSON-Any>=1.18:converters/p5-JSON-Any \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON-Any>=1.18:converters/p5-JSON-Any \
 		p5-WWW-Shorten>=1.9:www/p5-WWW-Shorten \
 		p5-XML-Simple>=2.18:textproc/p5-XML-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

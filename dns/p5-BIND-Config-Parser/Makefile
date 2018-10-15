@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/dns/p5-BIND-Config-Parser/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-BIND-Config-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	BIND-Config-Parser
 PORTVERSION=	0.01
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parse BIND Config files
 
-BUILD_DEPENDS=	p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent
 
 USES=		perl5
 USE_PERL5=	configure

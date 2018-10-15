@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/py-zodbpickle/Makefile 451925 2017-10-12 19:00:13Z feld $
+# $FreeBSD: head/databases/py-zodbpickle/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	zodbpickle
 PORTVERSION=	0.7.0
@@ -7,7 +7,7 @@ CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python pickling interface for ZODB
 
 LICENSE=	PSFL ZPL21

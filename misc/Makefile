@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/misc/Makefile 481529 2018-10-08 09:31:09Z tz $
 #
 
     COMMENT = Miscellaneous utilities
@@ -394,6 +394,7 @@
     SUBDIR += php70-calendar
     SUBDIR += php71-calendar
     SUBDIR += php72-calendar
+    SUBDIR += php73-calendar
     SUBDIR += phraze
     SUBDIR += pinfo
     SUBDIR += pipe

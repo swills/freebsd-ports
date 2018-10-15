@@ -1,5 +1,5 @@
 # Created by: Frank Laszlo <laszlof@freebsdmatrix.net>
-# $FreeBSD: head/games/netspades/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/games/netspades/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	NetSpades
 PORTVERSION=	4.2.0
@@ -10,6 +10,9 @@ MASTER_SITES=	TUCOWS/x11/entertain \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Very popular card game for 1-4 players over a network
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 

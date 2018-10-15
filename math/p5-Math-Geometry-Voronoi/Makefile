@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/p5-Math-Geometry-Voronoi/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Math-Geometry-Voronoi/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Geometry-Voronoi
 PORTVERSION=	1.3
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Module to compute Voronoi diagrams from sets of points
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0.18:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0.18:devel/p5-Class-Accessor \
 		p5-Params-Validate>=0:devel/p5-Params-Validate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

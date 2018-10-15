@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/www/rubygem-jekyll-watch/Makefile 456369 2017-12-14 20:44:21Z sunpoet $
+# $FreeBSD: head/www/rubygem-jekyll-watch/Makefile 482090 2018-10-14 16:33:01Z sunpoet $
 
 PORTNAME=	jekyll-watch
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,9 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-listen>=3.0:devel/rubygem-listen
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/devel/p5-Test-WWW-Mechanize-CGIApp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-WWW-Mechanize-CGIApp/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-WWW-Mechanize-CGIApp
 PORTVERSION=	0.05
@@ -14,10 +14,10 @@ COMMENT=	Test::WWW::Mechanize for CGIApp
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
 		p5-HTTP-Request-AsCGI>=0:www/p5-HTTP-Request-AsCGI \
 		p5-Test-WWW-Mechanize>=1.14:devel/p5-Test-WWW-Mechanize
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

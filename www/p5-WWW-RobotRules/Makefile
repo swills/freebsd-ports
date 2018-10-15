@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-RobotRules/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-RobotRules/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-RobotRules
 PORTVERSION=	6.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Database of robots.txt-derived permissions
 
-BUILD_DEPENDS=	p5-URI>=1.10:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=1.10:net/p5-URI
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual

@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/devel/p5-Params-Validate/Makefile 443426 2017-06-12 10:21:54Z sunpoet $
+# $FreeBSD: head/devel/p5-Params-Validate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Params-Validate
 PORTVERSION=	1.29
@@ -13,8 +13,8 @@ COMMENT=	Validate method/function parameters
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Module-Implementation>=0.04:devel/p5-Module-Implementation
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Module-Implementation>=0.04:devel/p5-Module-Implementation
 TEST_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Requires>0:devel/p5-Test-Requires \

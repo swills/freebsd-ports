@@ -1,5 +1,5 @@
 # Created by: ache@FreeBSD.org
-# $FreeBSD: head/databases/p5-MLDBM/Makefile 477710 2018-08-21 09:08:08Z amdmi3 $
+# $FreeBSD: head/databases/p5-MLDBM/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MLDBM
 PORTVERSION=	2.05
@@ -14,8 +14,8 @@ COMMENT=	Store multi-level hash structure in single level tied hash
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-FreezeThaw>=0:devel/p5-FreezeThaw
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-FreezeThaw>=0:devel/p5-FreezeThaw
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Yi-Hsuan Hsin <mhsin@mhsin.org>
-# $FreeBSD: head/net/p5-Net-Google-Calendar/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Google-Calendar/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Google-Calendar
 PORTVERSION=	1.01
@@ -11,13 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mhsin@mhsin.org
 COMMENT=	Programmatic access to Google's Calendar API
 
-BUILD_DEPENDS=	p5-XML-Atom>=0.37:textproc/p5-XML-Atom \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Atom>=0.37:textproc/p5-XML-Atom \
 		p5-libwww>=0:www/p5-libwww \
 		p5-URI>=0:net/p5-URI \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-Net-SSLeay>=0:security/p5-Net-SSLeay \
 		p5-Net-Google-AuthSub>=0:net/p5-Net-Google-AuthSub
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

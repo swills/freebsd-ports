@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/dolphin-emu/Makefile 480690 2018-09-25 19:33:09Z martymac $
+# $FreeBSD: head/emulators/dolphin-emu/Makefile 481268 2018-10-05 10:10:02Z martymac $
 
 PORTNAME=	dolphin-emu
 PORTVERSION=	5.0.8715
@@ -42,8 +42,8 @@ LIB_DEPENDS=	libpulse.so:audio/pulseaudio \
 		libcurl.so:ftp/curl \
 		libhidapi.so:comms/hidapi
 
-USES=		cmake compiler:c++17-lang desktop-file-utils iconv pkgconfig \
-		qmake qt:5
+USES=		cmake compiler:c++17-lang desktop-file-utils gl iconv \
+		pkgconfig qmake qt:5
 
 USE_GITHUB=	yes
 GH_PROJECT=	dolphin

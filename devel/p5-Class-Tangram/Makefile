@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Tangram/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Class-Tangram/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Tangram
 PORTVERSION=	1.57
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create constructors, accessor, update methods for objects from Tangram
 
-BUILD_DEPENDS=	p5-Set-Object>=0:devel/p5-Set-Object \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Set-Object>=0:devel/p5-Set-Object \
 		p5-Date-Manip>=0:devel/p5-Date-Manip \
 		p5-Tangram>=0:databases/p5-Tangram
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

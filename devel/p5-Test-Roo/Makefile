@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-Roo/Makefile 452126 2017-10-15 02:47:49Z pi $
+# $FreeBSD: head/devel/p5-Test-Roo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Roo
 PORTVERSION=	1.004
@@ -11,8 +11,8 @@ COMMENT=	Composable, reusable tests with roles and Moo
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	p5-Moo>=0:devel/p5-Moo
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moo>=0:devel/p5-Moo
 
 NO_ARCH=	yes
 USES=		perl5

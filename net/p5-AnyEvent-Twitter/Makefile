@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/net/p5-AnyEvent-Twitter/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-AnyEvent-Twitter/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	AnyEvent-Twitter
 PORTVERSION=	0.64
@@ -11,12 +11,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Implementation of the Twitter API for AnyEvent
 
-BUILD_DEPENDS=	p5-AnyEvent>=5.34:devel/p5-AnyEvent \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent>=5.34:devel/p5-AnyEvent \
 		p5-AnyEvent-HTTP>=2.12:www/p5-AnyEvent-HTTP \
 		p5-JSON>=2.53:converters/p5-JSON \
 		p5-Net-OAuth>=0.27:net/p5-Net-OAuth \
 		p5-URI>=1.58:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

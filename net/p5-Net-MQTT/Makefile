@@ -1,5 +1,5 @@
 # Created by: Alex Bakhtin <Alex.Bakhtin@gmail.com>
-# $FreeBSD: head/net/p5-Net-MQTT/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-MQTT/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-MQTT
 PORTVERSION=	1.143260
@@ -15,10 +15,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Module-Pluggable>=0:devel/p5-Module-Pluggable \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Module-Pluggable>=0:devel/p5-Module-Pluggable \
 		p5-Net-Pcap>=0:net/p5-Net-Pcap
 
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Pod-Usage>=0:devel/p5-Pod-Usage
 
 USES=		perl5

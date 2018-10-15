@@ -1,10 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/cimg/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/cimg/Makefile 481651 2018-10-09 19:54:51Z thierry $
 
 PORTNAME=	cimg
 DISTVERSIONPREFIX=	v.
-DISTVERSION=	2.3.6
-PORTREVISION=	1
+DISTVERSION=	2.4.0
 PORTEPOCH=	3
 CATEGORIES=	graphics devel
 

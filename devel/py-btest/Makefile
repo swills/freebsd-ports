@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-btest/Makefile 480917 2018-09-29 20:24:18Z 0mp $
+# $FreeBSD: head/devel/py-btest/Makefile 481209 2018-10-04 08:33:37Z 0mp $
 
 PORTNAME=	btest
 DISTVERSION=	0.58
-CATEGORIES=	devel
+CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

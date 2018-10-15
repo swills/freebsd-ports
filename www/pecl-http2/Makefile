@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/pecl-http2/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/pecl-http2/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	http
 PORTVERSION=	2.6.0
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/pecl-raphf@${PHP
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libevent.so:devel/libevent
 
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 USES=		php:pecl
 CONFLICTS=	pecl-http1* pecl-http-*
 

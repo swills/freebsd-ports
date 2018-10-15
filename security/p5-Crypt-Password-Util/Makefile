@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Crypt-Password-Util/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-Password-Util/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Crypt-Password-Util
 PORTVERSION=	0.17
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Bytes-Random-Secure>=0:security/p5-Bytes-Random-Secure
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Bytes-Random-Secure>=0:security/p5-Bytes-Random-Secure
 TEST_DEPENDS=	p5-Sort-Versions>=0:devel/p5-Sort-Versions
 
 NO_ARCH=	yes

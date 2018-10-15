@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/p5-MogileFS-Client/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-MogileFS-Client/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MogileFS-Client
 PORTVERSION=	1.17
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	trociny@FreeBSD.org
 COMMENT=	Client library for the MogileFS distributed file system
 
-BUILD_DEPENDS=	p5-IO-stringy>=2.102:devel/p5-IO-stringy \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-stringy>=2.102:devel/p5-IO-stringy \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

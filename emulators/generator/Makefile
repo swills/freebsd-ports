@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/emulators/generator/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/generator/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	generator
 PORTVERSION=	0.35
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.squish.net/generator/files/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SEGA Genesis emulator
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

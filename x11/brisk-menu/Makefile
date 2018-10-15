@@ -1,9 +1,10 @@
 # Created by: Eric Turgeon <ericbsd@FreeBSD.org>
-# $FreeBSD: head/x11/brisk-menu/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/x11/brisk-menu/Makefile 482009 2018-10-13 20:24:52Z kwm $
 
 PORTNAME=	brisk-menu
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.5.1
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	ericbsd@FreeBSD.org
@@ -20,9 +21,15 @@ MESON_ARGS=	--sysconfdir=${PREFIX}/etc
 USE_GITHUB=	yes
 GH_ACCOUNT=	GhostBSD
 
-NO_ARCH=	yes
 USE_GNOME=	gtk30
-USE_MATE= 	panel:lib
+USE_MATE=	menus panel
 GLIB_SCHEMAS=	com.solus-project.brisk-menu.gschema.xml
+
+.if exists(/usr/bin/ld.lld)
+LDFLAGS+=	-fuse-ld=lld
+.else
+USE_BINUTILS=	yes
+LDFLAGS+=	-B${LOCALBASE}/bin
+.endif
 
 .include <bsd.port.mk>

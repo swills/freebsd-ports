@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/math/p5-Math-Spline/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-Spline/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Spline
 PORTVERSION=	0.02
@@ -14,8 +14,8 @@ COMMENT=	Cubic Spline Interpolation of data
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Math-Derivative>=0:math/p5-Math-Derivative
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Derivative>=0:math/p5-Math-Derivative
 
 USES=		perl5
 USE_PERL5=	configure

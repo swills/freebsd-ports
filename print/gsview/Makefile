@@ -1,5 +1,5 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/print/gsview/Makefile 458646 2018-01-10 15:08:51Z danfe $
+# $FreeBSD: head/print/gsview/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gsview
 PORTVERSION=	4.9
@@ -9,6 +9,9 @@ MASTER_SITES=	LOCAL/bf
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	GUI to view, search, print, and convert PostScript and PDF documents
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	AFPL
 LICENSE_NAME=	Aladdin Free Public Licence

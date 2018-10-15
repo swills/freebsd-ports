@@ -1,8 +1,7 @@
-# $FreeBSD: head/astro/kstars/Makefile 476214 2018-08-02 03:53:40Z danilo $
+# $FreeBSD: head/astro/kstars/Makefile 481304 2018-10-05 21:32:15Z rigoletto $
 
 PORTNAME=	kstars
-DISTVERSION=	2.9.7
-PORTREVISION=	1
+DISTVERSION=	2.9.8
 PORTEPOCH=	1
 CATEGORIES=	astro kde
 MASTER_SITES=	KDE/stable/${PORTNAME}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Meta-Builder/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Meta-Builder/Makefile 481435 2018-10-07 09:08:48Z amdmi3 $
 
 PORTNAME=	Meta-Builder
 PORTVERSION=	0.003
@@ -11,10 +11,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for creating Meta objects to track custom metrics
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Fennec-Lite>=0:devel/p5-Fennec-Lite
 
 USES=		perl5
 USE_PERL5=	modbuild
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

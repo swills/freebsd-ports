@@ -1,5 +1,5 @@
 # Created by: Danny Warren <danny@dannywarren.com>
-# $FreeBSD: head/www/p5-CatalystX-VirtualComponents/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CatalystX-VirtualComponents/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CatalystX-VirtualComponents
 PORTVERSION=	0.00004
@@ -14,12 +14,12 @@ COMMENT=	Setup virtual Catalyst components
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-namespace-clean>0:devel/p5-namespace-clean \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-namespace-clean>0:devel/p5-namespace-clean \
 		p5-Catalyst-Runtime>=5.8:www/p5-Catalyst-Runtime \
 		p5-Devel-InheritNamespace>0:devel/p5-Devel-InheritNamespace \
 		p5-Moose>0:devel/p5-Moose \
 		p5-Module-Pluggable>0:devel/p5-Module-Pluggable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

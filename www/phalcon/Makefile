@@ -1,5 +1,5 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 478621 2018-08-31 23:21:44Z swills $
+# $FreeBSD: head/www/phalcon/Makefile 481878 2018-10-12 06:23:47Z antoine $
 
 PORTNAME=	phalcon
 DISTVERSIONPREFIX=	v
@@ -16,6 +16,7 @@ ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386
 
 USES=		php:ext
 USE_PHP=	hash:build json:build pdo:build
+IGNORE_WITH_PHP=	73
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	phalcon

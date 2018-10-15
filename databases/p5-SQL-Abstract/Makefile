@@ -1,5 +1,5 @@
 # Created by: Dominic Mitchell
-# $FreeBSD: head/databases/p5-SQL-Abstract/Makefile 477847 2018-08-23 01:15:04Z wen $
+# $FreeBSD: head/databases/p5-SQL-Abstract/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SQL-Abstract
 PORTVERSION=	1.86
@@ -15,12 +15,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Hash-Merge>=0.12:textproc/p5-Hash-Merge \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Hash-Merge>=0.12:textproc/p5-Hash-Merge \
 		p5-Moo>=2.000001:devel/p5-Moo \
 		p5-MRO-Compat>=0.12:devel/p5-MRO-Compat \
 		p5-Sub-Quote>=2.000001:devel/p5-Sub-Quote \
 		p5-Test-Deep>=0.101:devel/p5-Test-Deep
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBIx-Class>=0:databases/p5-DBIx-Class \
 		p5-Test-Exception>=0.31:devel/p5-Test-Exception \
 		p5-Test-Warn>=0:devel/p5-Test-Warn

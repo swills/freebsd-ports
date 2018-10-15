@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/py-mido/Makefile 453959 2017-11-11 08:15:42Z yuri $
+# $FreeBSD: head/multimedia/py-mido/Makefile 481408 2018-10-07 01:13:36Z yuri $
 
 PORTNAME=	mido
-DISTVERSION=	1.2.8
+DISTVERSION=	1.2.9
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

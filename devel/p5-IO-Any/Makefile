@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IO-Any/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-IO-Any/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	IO-Any
 PORTVERSION=	0.09
@@ -14,11 +14,11 @@ COMMENT=	IO::Any opens anything
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
 		p5-IO-String>=0:devel/p5-IO-String \
 		p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-Test-Differences>=0:devel/p5-Test-Differences \
 		p5-Test-Distribution>=0:devel/p5-Test-Distribution \

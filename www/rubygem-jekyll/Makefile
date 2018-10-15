@@ -1,5 +1,5 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/www/rubygem-jekyll/Makefile 480146 2018-09-20 00:23:44Z sunpoet $
+# $FreeBSD: head/www/rubygem-jekyll/Makefile 481152 2018-10-03 09:38:33Z amdmi3 $
 
 PORTNAME=	jekyll
 PORTVERSION=	3.8.4
@@ -27,9 +27,9 @@ RUN_DEPENDS=	rubygem-addressable>=2.4:www/rubygem-addressable \
 
 CONFLICTS_INSTALL=	rubygem-jekyll2-*
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/jekyll
 

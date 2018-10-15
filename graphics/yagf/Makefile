@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/graphics/yagf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/yagf/Makefile 481619 2018-10-09 10:08:51Z bsam $
 
 PORTNAME=	yagf
 PORTVERSION=	0.9.5
@@ -12,9 +12,9 @@ COMMENT=	Graphical interface for an OCR program (cuneiform and tesseract)
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libaspell.so:textproc/aspell
+ONLY_FOR_ARCHS=	amd64 i386
 
-ONLY_FOR_ARCHS=	i386 amd64
+LIB_DEPENDS=	libaspell.so:textproc/aspell
 
 OPTIONS_MULTI=		OCRENGINE
 OPTIONS_MULTI_OCRENGINE=CUNEIFORM TESSERACT

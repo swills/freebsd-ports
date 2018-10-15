@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent/Makefile 464181 2018-03-11 15:38:21Z pi $
+# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	FusionInventory-Agent
 PORTVERSION=	2.4
@@ -14,13 +14,13 @@ COMMENT=	Agent for OCS Inventory server and FusionInventory for GLPI servers
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which \
 		p5-libwww>=0:www/p5-libwww \
 		p5-Net-IP>=0:net-mgmt/p5-Net-IP \
 		p5-UNIVERSAL-require>=0:devel/p5-UNIVERSAL-require \
 		p5-Text-Template>=0:textproc/p5-Text-Template \
 		p5-XML-TreePP>=0:textproc/p5-XML-TreePP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-Copy-Recursive>=0:devel/p5-File-Copy-Recursive \
 		p5-POE-Component-Client-Ping>=0:net/p5-POE-Component-Client-Ping \
 		p5-HTTP-Proxy>=0:www/p5-HTTP-Proxy \

@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/security/p5-Crypt-Eksblowfish/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-Eksblowfish/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Crypt-Eksblowfish
 PORTVERSION=	0.009
@@ -14,8 +14,8 @@ COMMENT=	Perl module for the Eksblowfish block cipher
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Mix>=0:devel/p5-Class-Mix
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Mix>=0:devel/p5-Class-Mix
 
 USES=		perl5
 USE_PERL5=	modbuild

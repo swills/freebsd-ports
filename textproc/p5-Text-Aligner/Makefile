@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/textproc/p5-Text-Aligner/Makefile 413597 2016-04-18 17:28:55Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Aligner/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Aligner
 PORTVERSION=	0.13
@@ -13,8 +13,8 @@ COMMENT=	Align text in columns
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Term-ANSIColor>=2.02:devel/p5-Term-ANSIColor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Term-ANSIColor>=2.02:devel/p5-Term-ANSIColor
 
 NO_ARCH=	yes
 USES=		perl5

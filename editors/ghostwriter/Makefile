@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/ghostwriter/Makefile 476984 2018-08-12 12:09:45Z tobik $
+# $FreeBSD: head/editors/ghostwriter/Makefile 482135 2018-10-15 06:24:42Z tobik $
 
 PORTNAME=	ghostwriter
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 
-USES=		desktop-file-utils pkgconfig qmake qt:5
+USES=		compiler:c++11-lang desktop-file-utils pkgconfig qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	wereturtle
 USE_QT=		concurrent core gui network printsupport svg webkit widgets \

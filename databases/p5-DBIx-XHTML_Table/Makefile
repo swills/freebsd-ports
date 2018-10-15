@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/databases/p5-DBIx-XHTML_Table/Makefile 430655 2017-01-05 19:33:37Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-XHTML_Table/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-XHTML_Table
 PORTVERSION=	1.49
@@ -12,8 +12,8 @@ COMMENT=	Create XHTML tables from SQL queries
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 TEST_DEPENDS=	p5-HTML-TableExtract>=0:www/p5-HTML-TableExtract
 
 NO_ARCH=	yes

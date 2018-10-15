@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Array-Window/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Array-Window/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Array-Window
 PORTVERSION=	1.02
@@ -14,8 +14,8 @@ COMMENT=	Calculate windows/subsets/pages of arrays
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Params-Util>=0.12:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Params-Util>=0.12:devel/p5-Params-Util
 
 USES=		perl5
 USE_PERL5=	configure

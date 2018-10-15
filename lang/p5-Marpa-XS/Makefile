@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Marpa-XS/Makefile 471648 2018-06-04 18:09:29Z sunpoet $
+# $FreeBSD: head/lang/p5-Marpa-XS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Marpa-XS
 PORTVERSION=	1.008000
@@ -15,11 +15,11 @@ COMMENT=	XS version of Marpa
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
-BUILD_DEPENDS=	p5-ExtUtils-PkgConfig>=0:devel/p5-ExtUtils-PkgConfig \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-ExtUtils-PkgConfig>=0:devel/p5-ExtUtils-PkgConfig \
 		p5-Glib2>=1.223:devel/p5-Glib2 \
 		p5-PPI>=1.206:textproc/p5-PPI \
 		p5-Task-Weaken>=0:devel/p5-Task-Weaken
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Weaken>=3.004000:devel/p5-Test-Weaken
 
 USE_PERL5=	modbuild

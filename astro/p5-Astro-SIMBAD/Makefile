@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/astro/p5-Astro-SIMBAD/Makefile 451689 2017-10-10 11:20:48Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-SIMBAD/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Astro-SIMBAD
 PORTVERSION=	2.0.0
@@ -13,10 +13,10 @@ COMMENT=	OO Perl interface to the SIMBAD astronomical database
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	p5-HTML-Parser>=3.36:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=3.36:www/p5-HTML-Parser \
 		p5-HTML-Tree>=3.17:www/p5-HTML-Tree \
 		p5-libwww>=5.53:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 480950 2018-09-30 11:08:43Z rene $
+# $FreeBSD: head/print/Makefile 481371 2018-10-06 15:59:34Z feld $
 #
 
     COMMENT = Desktop publishing
@@ -234,6 +234,7 @@
     SUBDIR += rubygem-rbpdf-font
     SUBDIR += rubygem-ttfunk
     SUBDIR += scribus
+    SUBDIR += scribus-devel
     SUBDIR += sgf2tex
     SUBDIR += splix
     SUBDIR += system-config-printer

@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/dns/p5-Net-Domain-ExpireDate/Makefile 437889 2017-04-06 21:56:38Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-Domain-ExpireDate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Domain-ExpireDate
 PORTVERSION=	1.19
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module obtain expiration date of domain names
 
-BUILD_DEPENDS=	p5-Net-Whois-Raw>=0:net/p5-Net-Whois-Raw
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-Whois-Raw>=0:net/p5-Net-Whois-Raw
 
 NO_ARCH=	yes
 USES=		perl5

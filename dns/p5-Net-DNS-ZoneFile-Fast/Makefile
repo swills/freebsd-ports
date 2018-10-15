@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Net-DNS-ZoneFile-Fast/Makefile 476619 2018-08-07 19:42:25Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-DNS-ZoneFile-Fast/Makefile 481601 2018-10-09 05:55:56Z wen $
 
 PORTNAME=	Net-DNS-ZoneFile-Fast
-PORTVERSION=	1.26
+PORTVERSION=	1.27
 CATEGORIES=	dns perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,9 +12,9 @@ COMMENT=	Perl module to parse BIND8/9 zone files
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	p5-Net-DNS>=0.65:dns/p5-Net-DNS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0.65:dns/p5-Net-DNS \
 		p5-Net-DNS-SEC>=0.15:dns/p5-Net-DNS-SEC
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/misc/exercism/Makefile 480442 2018-09-23 00:52:53Z swills $
+# $FreeBSD: head/misc/exercism/Makefile 481658 2018-10-09 20:48:13Z antoine $
 
 PORTNAME=	exercism
 PORTVERSION=	3.0.9
@@ -11,6 +11,8 @@ COMMENT=	CLI client for exercism.io
 
 LICENSE=	MIT
 LICENSE_FILE=	LICENSE
+
+BROKEN=		wrong LICENSE_FILE
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
 

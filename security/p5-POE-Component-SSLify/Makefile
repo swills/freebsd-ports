@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-POE-Component-SSLify/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-POE-Component-SSLify/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-SSLify
 PORTVERSION=	1.012
@@ -13,10 +13,10 @@ COMMENT=	Integrate SSL into POE
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-SSLeay>=1.36:security/p5-Net-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-SSLeay>=1.36:security/p5-Net-SSLeay \
 		p5-POE>=1.267:devel/p5-POE \
 		p5-Task-Weaken>=1.03:devel/p5-Task-Weaken
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-FailWarnings>=0:devel/p5-Test-FailWarnings
 
 USES=		perl5

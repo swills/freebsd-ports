@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/databases/p5-ORLite/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-ORLite/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	ORLite
 PORTVERSION=	1.98
@@ -15,11 +15,11 @@ COMMENT=	Perl5 extremely light weight SQLite-specific ORM
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBD-SQLite>=1.27:databases/p5-DBD-SQLite \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBD-SQLite>=1.27:databases/p5-DBD-SQLite \
 		p5-DBI>=1.60.7:databases/p5-DBI \
 		p5-File-Remove>=1.40:devel/p5-File-Remove \
 		p5-Params-Util>=0.33:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Class-XSAccessor>=0:devel/p5-Class-XSAccessor \
 		p5-Test-Script>=1.06:devel/p5-Test-Script
 

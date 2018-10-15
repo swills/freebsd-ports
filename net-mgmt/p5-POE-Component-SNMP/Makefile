@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net-mgmt/p5-POE-Component-SNMP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-POE-Component-SNMP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-SNMP
 PORTVERSION=	1.1006
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Event-driven SNMP interface
 
-BUILD_DEPENDS=	p5-POE>=0.31:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0.31:devel/p5-POE \
 		p5-Net-SNMP>=0:net-mgmt/p5-Net-SNMP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

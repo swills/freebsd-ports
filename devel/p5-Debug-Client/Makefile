@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/devel/p5-Debug-Client/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Debug-Client/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Debug-Client
 PORTVERSION=	0.31
@@ -13,9 +13,9 @@ COMMENT=	Client for the standard Perl debugger
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PadWalker>=1.98:devel/p5-PadWalker \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PadWalker>=1.98:devel/p5-PadWalker \
 		p5-Term-ReadLine-Gnu>=1.20:devel/p5-Term-ReadLine-Gnu
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-HomeDir>=1:devel/p5-File-HomeDir \
 		p5-Test-CheckDeps>=0.010:devel/p5-Test-CheckDeps \
 		p5-Test-Class>=0.42:devel/p5-Test-Class \

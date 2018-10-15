@@ -1,5 +1,5 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/multimedia/p5-Audio-M4P/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/multimedia/p5-Audio-M4P/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Audio-M4P
 PORTVERSION=	0.57
@@ -13,10 +13,10 @@ COMMENT=	M4P / MP4 / m4a Quicktime audio and video tools
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-Rijndael>=0:security/p5-Crypt-Rijndael \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-Rijndael>=0:security/p5-Crypt-Rijndael \
 		p5-Tree-Simple>=0:devel/p5-Tree-Simple \
 		p5-Tree-Simple-View>=0:devel/p5-Tree-Simple-View
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Memory-Cycle>=0:devel/p5-Test-Memory-Cycle
 
 USES=		perl5

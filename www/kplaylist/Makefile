@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/kplaylist/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/www/kplaylist/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	kplaylist
 PORTVERSION=	1.8.505
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP based music database
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 RUN_DEPENDS=	lame:audio/lame \
 		oggenc:audio/vorbis-tools \

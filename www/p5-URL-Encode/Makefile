@@ -1,5 +1,5 @@
 # Created by: Geoffroy Desvernay <dgeo@centrale-marseille.fr>
-# $FreeBSD: head/www/p5-URL-Encode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-URL-Encode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	URL-Encode
 PORTVERSION=	0.03
@@ -14,11 +14,13 @@ COMMENT=	Encoding and decoding of application/x-www-form-urlencoded encoding
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-OPTIONS_DEFINE=	XS
-XS_BUILD_DEPENDS=	p5-URL-Encode-XS>=0:www/p5-URL-Encode-XS
-XS_RUN_DEPENDS=	${XS_BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+
+OPTIONS_DEFINE=	XS
+
+XS_RUN_DEPENDS=	p5-URL-Encode-XS>=0:www/p5-URL-Encode-XS
 
 .include <bsd.port.mk>

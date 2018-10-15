@@ -1,5 +1,5 @@
 # Created by: Kurt Jaeger <fbsd-ports@opsec.eu>
-# $FreeBSD: head/devel/p5-CBOR-XS/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/devel/p5-CBOR-XS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CBOR-XS
 PORTVERSION=	1.30
@@ -17,9 +17,9 @@ LICENSE=	GPLv3
 USES=		perl5
 USE_PERL5=	configure
 
-BUILD_DEPENDS=	p5-Types-Serialiser>=0:devel/p5-Types-Serialiser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Types-Serialiser>=0:devel/p5-Types-Serialiser \
 		p5-common-sense>=0:devel/p5-common-sense
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/CBOR/XS/XS.so

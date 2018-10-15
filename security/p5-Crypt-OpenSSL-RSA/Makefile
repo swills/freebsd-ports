@@ -1,9 +1,8 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-RSA/Makefile 475571 2018-07-28 13:18:01Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-RSA/Makefile 481758 2018-10-10 19:10:58Z sunpoet $
 
 PORTNAME=	Crypt-OpenSSL-RSA
-PORTVERSION=	0.30
-PORTREVISION=	1
+PORTVERSION=	0.31
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

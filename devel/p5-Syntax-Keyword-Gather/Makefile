@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Syntax-Keyword-Gather/Makefile 462102 2018-02-17 11:57:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Syntax-Keyword-Gather/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Syntax-Keyword-Gather
 PORTVERSION=	1.003002
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Sub-Exporter-Progressive>=0:devel/p5-Sub-Exporter-Progressive
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Sub-Exporter-Progressive>=0:devel/p5-Sub-Exporter-Progressive
 
 NO_ARCH=	yes
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Volodymyr Kostyrko <c.kworr@gmail.com>
-# $FreeBSD: head/devel/pecl-scream/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/devel/pecl-scream/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	scream
 DISTVERSION=	0.1.0
@@ -12,7 +12,7 @@ COMMENT=	Break the silence operator
 LICENSE=	PHP301
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 test: build
 	@(cd ${WRKSRC} && ${MAKE} test)

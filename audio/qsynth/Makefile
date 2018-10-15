@@ -1,8 +1,8 @@
 # Created by: lazyklimm <lazyklimm@gmail.com>
-# $FreeBSD: head/audio/qsynth/Makefile 475157 2018-07-23 08:59:39Z tobik $
+# $FreeBSD: head/audio/qsynth/Makefile 482134 2018-10-15 06:22:44Z tobik $
 
 PORTNAME=	qsynth
-PORTVERSION=	0.5.2
+PORTVERSION=	0.5.3
 CATEGORIES=	audio
 MASTER_SITES=	SF
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfluidsynth.so:audio/fluidsynth
 
-USES=		gmake pkgconfig qt:5
+USES=		compiler:c++11-lang gmake pkgconfig qt:5
 USE_CXXSTD=	c++11
 USE_QT=		core gui widgets x11extras buildtools_build linguisttools_build qmake_build
 USE_GL=		gl

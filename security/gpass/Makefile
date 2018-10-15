@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net <ports@c0decafe.net>
-# $FreeBSD: head/security/gpass/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/security/gpass/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gpass
 PORTVERSION=	0.5.1
@@ -12,6 +12,9 @@ COMMENT=	Password manager for GNOME2
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libmcrypt.so:security/libmcrypt \
 		libmhash.so:security/mhash

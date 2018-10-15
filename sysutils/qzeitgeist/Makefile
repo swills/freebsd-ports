@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qzeitgeist/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/qzeitgeist/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	qzeitgeist
 PORTVERSION=	0.8.0
@@ -11,7 +11,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:kde \
 		zeitgeist-${ZEITGEIST_VERSION}.tar.xz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4 wrapper library around the Zeitgeist D-Bus API
 
 LICENSE=	LGPL21

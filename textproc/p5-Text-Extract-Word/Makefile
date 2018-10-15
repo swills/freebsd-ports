@@ -1,5 +1,5 @@
 # Created by: jupengfei <jupengfei@gmail.com>
-# $FreeBSD: head/textproc/p5-Text-Extract-Word/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Extract-Word/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Extract-Word
 PORTVERSION=	0.04
@@ -13,8 +13,8 @@ COMMENT=	Simple module for extracting the text from a Microsoft Word file
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-OLE-Storage_Lite>0:devel/p5-OLE-Storage_Lite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-OLE-Storage_Lite>0:devel/p5-OLE-Storage_Lite
 
 USES=		perl5
 USE_PERL5=	configure

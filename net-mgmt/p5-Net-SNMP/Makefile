@@ -1,5 +1,5 @@
 # Created by: Christopher N. Harrell <cnh@ivmg.net>
-# $FreeBSD: head/net-mgmt/p5-Net-SNMP/Makefile 479237 2018-09-08 09:08:18Z amdmi3 $
+# $FreeBSD: head/net-mgmt/p5-Net-SNMP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SNMP
 PORTVERSION=	6.0.1
@@ -17,10 +17,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Crypt-DES>=0:security/p5-Crypt-DES \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-DES>=0:security/p5-Crypt-DES \
 		p5-Digest-SHA1>=0:security/p5-Digest-SHA1 \
 		p5-Digest-HMAC>=0:security/p5-Digest-HMAC
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

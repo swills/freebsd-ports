@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-SVG-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-SVG-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVG-Parser
 PORTVERSION=	1.03
@@ -14,10 +14,10 @@ COMMENT=	XML Parser for SVG documents
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-SVG>=2:textproc/p5-SVG \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-SVG>=2:textproc/p5-SVG \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	modbuild
 USES=		perl5

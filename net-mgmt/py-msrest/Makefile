@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net-mgmt/py-msrest/Makefile 479052 2018-09-05 23:54:44Z sunpoet $
+# $FreeBSD: head/net-mgmt/py-msrest/Makefile 481709 2018-10-10 10:22:29Z sunpoet $
 
 PORTNAME=	msrest
-PORTVERSION=	0.5.5
+PORTVERSION=	0.6.0
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,12 +15,13 @@ LICENSE=	MIT
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>=2017.4.17:security/py-certifi@${PY_FLAVOR} \
 		${PY_ENUM34} \
 		${PYTHON_PKGNAMEPREFIX}isodate>=0.6.0:devel/py-isodate@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0.5.0:www/py-requests-oauthlib@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.16:www/py-requests@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}requests>=2.16:www/py-requests@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0.5.0:www/py-requests-oauthlib@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 

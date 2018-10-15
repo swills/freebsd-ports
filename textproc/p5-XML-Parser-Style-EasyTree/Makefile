@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Parser-Style-EasyTree/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/textproc/p5-XML-Parser-Style-EasyTree/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Parser-Style-EasyTree
 PORTVERSION=	0.09
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parse XML to a simple tree
 
-BUILD_DEPENDS=	p5-XML-Parser>0:textproc/p5-XML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>0:textproc/p5-XML-Parser \
 		p5-ex-lib>=0.03:devel/p5-ex-lib
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

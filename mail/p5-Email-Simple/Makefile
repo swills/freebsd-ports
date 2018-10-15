@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-Simple/Makefile 472654 2018-06-17 23:24:45Z wen $
+# $FreeBSD: head/mail/p5-Email-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-Simple
 PORTVERSION=	2.216
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Email-Date-Format>=0:mail/p5-Email-Date-Format
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Date-Format>=0:mail/p5-Email-Date-Format
 
 USES=		perl5
 USE_PERL5=	configure

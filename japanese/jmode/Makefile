@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/japanese/jmode/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/jmode/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	jmode
 PORTVERSION=	0.6.7
@@ -9,6 +9,9 @@ MASTER_SITES=	OSDN/anthy/5467
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT?=	XIM server for Anthy input method
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

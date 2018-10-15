@@ -1,5 +1,5 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/audio/gkrellmms2/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/gkrellmms2/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gkrellmms
 PORTVERSION=	2.1.22
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	2
 
 MAINTAINER=	ume@FreeBSD.org
 COMMENT=	GKrellM XMMS Plugin
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 BUILD_DEPENDS=	${LOCALBASE}/include/gkrellm2/gkrellm.h:sysutils/gkrellm2
 LIB_DEPENDS=	libxmms.so:multimedia/xmms

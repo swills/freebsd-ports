@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/teg/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/games/teg/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	teg
 PORTVERSION=	0.11.2
@@ -11,6 +11,9 @@ COMMENT=	Turn-based strategy game for GNOME
 
 LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	wfx

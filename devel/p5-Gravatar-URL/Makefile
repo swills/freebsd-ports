@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/devel/p5-Gravatar-URL/Makefile 420668 2016-08-23 12:11:11Z jadawin $
+# $FreeBSD: head/devel/p5-Gravatar-URL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Gravatar-URL
 PORTVERSION=	1.07
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Make URLs for Gravatars from an email address
 
-BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS \
 		p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 TEST_DEPENDS=	p5-Test-Warn>=0:devel/p5-Test-Warn
 

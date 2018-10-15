@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 480897 2018-09-29 07:31:08Z riggs $
+# $FreeBSD: head/multimedia/Makefile 481596 2018-10-09 04:19:08Z swills $
 #
 
     COMMENT = Multimedia software
@@ -333,6 +333,7 @@
     SUBDIR += pwcbsd
     SUBDIR += pwcview
     SUBDIR += py-PySceneDetect
+    SUBDIR += py-av
     SUBDIR += py-cec
     SUBDIR += py-enzyme
     SUBDIR += py-flvlib

@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/mail/roundcube-umich/Makefile 468851 2018-05-02 16:15:59Z mat $
+# $FreeBSD: head/mail/roundcube-umich/Makefile 482145 2018-10-15 09:38:43Z amdmi3 $
 
 PORTNAME=	umich
 PORTVERSION=	20090813
@@ -11,16 +11,18 @@ PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Theme for RoundCube Web Mail
 
+LICENSE=	GPLv3+  # same as roundcube's
+
 RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.2:mail/roundcube@${PHP_FLAVOR}
 
-USES=	php:flavors
+USES=		php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 
 WWWDIR?=	${PREFIX}/www/roundcube/skins/umich
 
 post-patch:
-	${FIND} ${WRKSRC} -type f -name '*.orig' -delete
+	@${FIND} ${WRKSRC} -type f -name '*.orig' -delete
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${WWWDIR}

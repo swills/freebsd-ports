@@ -1,8 +1,9 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/virt-viewer/Makefile 475579 2018-07-28 14:47:59Z novel $
+# $FreeBSD: head/net-mgmt/virt-viewer/Makefile 482032 2018-10-14 07:27:39Z novel $
 
 PORTNAME=	virt-viewer
 PORTVERSION=	7.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://virt-manager.org/download/sources/${PORTNAME}/
 
@@ -26,7 +27,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	DATADIRNAME=share
 CONFIGURE_ARGS=	--with-spice-gtk
 USES=		autoreconf libtool desktop-file-utils gmake pkgconfig \
-		shared-mime-info cpe
+		shared-mime-info cpe gettext-tools
 USE_GNOME=	gtk30
 INSTALLS_ICONS=	yes
 CPE_VENDOR=	redhat

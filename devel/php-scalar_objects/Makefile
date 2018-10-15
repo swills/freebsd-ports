@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-scalar_objects/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/php-scalar_objects/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	scalar_objects
 PORTVERSION=	0.0.20140124
@@ -17,6 +17,6 @@ GH_ACCOUNT=	nikic
 GH_TAGNAME=	baf4985
 
 USES=		php:ext
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 .include <bsd.port.mk>

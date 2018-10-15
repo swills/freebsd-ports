@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-Flickr-API/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Flickr-API/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Flickr-API
 PORTVERSION=	1.28
@@ -13,13 +13,13 @@ COMMENT=	Perl interface to the Flickr API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTTP-Message>=1.56:www/p5-HTTP-Message \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=1.56:www/p5-HTTP-Message \
 		p5-Net-OAuth>=0:net/p5-Net-OAuth \
 		p5-URI>=1.18:net/p5-URI \
 		p5-XML-LibXML-Simple>=0:textproc/p5-XML-LibXML-Simple \
 		p5-XML-Parser-Lite-Tree>=0.06:textproc/p5-XML-Parser-Lite-Tree \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Script>=0:devel/p5-Test-Script
 
 NO_ARCH=	yes

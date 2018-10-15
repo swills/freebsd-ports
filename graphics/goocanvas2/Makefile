@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/goocanvas2/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/graphics/goocanvas2/Makefile 481102 2018-10-02 08:19:24Z antoine $
 #    $MCom: ports/trunk/graphics/goocanvas2/Makefile 17268 2013-04-01 05:13:11Z marcus $
 
 PORTNAME=	goocanvas
@@ -14,7 +14,7 @@ COMMENT=	Canvas widget for GTK+ 3
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		gmake libtool pathfix pkgconfig tar:xz
+USES=		gmake libtool pathfix pkgconfig python tar:xz
 USE_GNOME=	gtk30 introspection:build
 USE_LDCONFIG=	yes
 

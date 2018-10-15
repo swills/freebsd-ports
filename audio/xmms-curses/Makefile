@@ -1,5 +1,5 @@
 # Created by: Ion-Mihai "IOnut" Tetcu <itetcu@FreeBSD.org>
-# $FreeBSD: head/audio/xmms-curses/Makefile 437182 2017-03-29 06:50:28Z ashish $
+# $FreeBSD: head/audio/xmms-curses/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmms-curses
 PORTVERSION=	0.2.2
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ncurses program for (remote) controlling multimedia/xmms
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 BUILD_DEPENDS=	xmms:multimedia/xmms \
 		${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs

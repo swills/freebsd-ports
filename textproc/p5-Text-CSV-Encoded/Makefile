@@ -1,5 +1,5 @@
 # Created by: Dereckson <dereckson@gmail.com>
-# $FreeBSD: head/textproc/p5-Text-CSV-Encoded/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-CSV-Encoded/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-CSV-Encoded
 PORTVERSION=	0.25
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Text-CSV>=0:textproc/p5-Text-CSV
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-CSV>=0:textproc/p5-Text-CSV
 
 NO_ARCH=	yes
 USES=		perl5

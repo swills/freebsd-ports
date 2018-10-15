@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Progress-Any/Makefile 466472 2018-04-04 18:52:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Progress-Any/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Progress-Any
 PORTVERSION=	0.214
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Time-Duration>=0:devel/p5-Time-Duration
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Time-Duration>=0:devel/p5-Time-Duration
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

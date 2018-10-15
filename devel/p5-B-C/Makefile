@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-B-C/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-B-C/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	B-C
 PORTVERSION=	1.55
@@ -14,10 +14,10 @@ COMMENT=	Perl compiler's C backend #'
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-B-Flags>=0.15:devel/p5-B-Flags \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-B-Flags>=0.15:devel/p5-B-Flags \
 		p5-Opcodes>=0:devel/p5-Opcodes \
 		p5-IPC-Run>=0:devel/p5-IPC-Run
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 

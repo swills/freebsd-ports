@@ -1,5 +1,5 @@
 # Created by: rom
-# $FreeBSD: head/math/geg/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/math/geg/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	geg
 PORTVERSION=	1.0.2
@@ -10,6 +10,9 @@ MASTER_SITES=	SUNSITE/science/visualization/plotting \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Visualise multiple 2D-functions of one variable
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USE_GNOME=	gtk12
 USES=		autoreconf

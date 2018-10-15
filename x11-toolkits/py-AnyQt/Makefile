@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/py-AnyQt/Makefile 472175 2018-06-11 09:00:49Z yuri $
+# $FreeBSD: head/x11-toolkits/py-AnyQt/Makefile 482021 2018-10-14 03:46:06Z yuri $
 
 PORTNAME=	AnyQt
-DISTVERSION=	0.0.8
+DISTVERSION=	0.0.10
 CATEGORIES=	x11-toolkits devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,6 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		python
 USE_PYTHON=	distutils autoplist
-xNO_BUILD=	yes
+NO_BUILD=	yes
 
 .include <bsd.port.mk>

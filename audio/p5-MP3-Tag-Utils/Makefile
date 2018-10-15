@@ -1,5 +1,5 @@
 # Created by: Zane C. Bowers-Hadley <vvelox@vvelox.net>
-# $FreeBSD: head/audio/p5-MP3-Tag-Utils/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/audio/p5-MP3-Tag-Utils/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MP3-Tag-Utils
 PORTVERSION=	0.0.3
@@ -15,9 +15,9 @@ COMMENT=	Assorted utilities for manipulating MP3 files via MP3::Tag
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-MP3-Tag>=1.13:audio/p5-MP3-Tag \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MP3-Tag>=1.13:audio/p5-MP3-Tag \
 		p5-Text-NeatTemplate>=0.10.01:textproc/p5-Text-NeatTemplate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 USE_PERL5=	configure

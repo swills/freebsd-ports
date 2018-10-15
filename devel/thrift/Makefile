@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/thrift/Makefile 480025 2018-09-18 14:21:33Z arved $
+# $FreeBSD: head/devel/thrift/Makefile 481648 2018-10-09 18:17:37Z swills $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION}	# get these from bsd.thrift.mk. any upgrade needs to check ALL dependencies
@@ -12,11 +12,7 @@ COMMENT=	Framework for scalable cross-language services development
 
 LICENSE=	APACHE20
 
-BROKEN_mips=		fails to compile: unrecognized command line option "-Wno-c++11-long-long"
-BROKEN_mips64=		fails to compile: unrecognized command line option "-Wno-c++11-long-long"
-BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-c++11-long-long"
-
-USES=		autoreconf libtool pkgconfig
+USES=		autoreconf compiler:c++11-lang libtool pkgconfig
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=	yes

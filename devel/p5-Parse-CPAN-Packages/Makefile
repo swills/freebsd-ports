@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/devel/p5-Parse-CPAN-Packages/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Parse-CPAN-Packages/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Parse-CPAN-Packages
 PORTVERSION=	2.40
@@ -14,12 +14,12 @@ COMMENT=	Parse 02packages.details.txt.gz from CPAN
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Archive-Peek>0:archivers/p5-Archive-Peek \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Archive-Peek>0:archivers/p5-Archive-Peek \
 		p5-CPAN-DistnameInfo>0:devel/p5-CPAN-DistnameInfo \
 		p5-Moo>=0:devel/p5-Moo \
 		p5-PPI>0:textproc/p5-PPI \
 		p5-Type-Tiny>0:devel/p5-Type-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-InDistDir>0:devel/p5-Test-InDistDir \
 		p5-File-Slurp>0:devel/p5-File-Slurp
 

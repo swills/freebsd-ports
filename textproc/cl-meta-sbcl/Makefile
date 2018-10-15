@@ -1,9 +1,9 @@
 # Created by: Henrik Motakef <henrik.motakef@web.de>
-# $FreeBSD: head/textproc/cl-meta-sbcl/Makefile 479931 2018-09-17 12:08:43Z krion $
+# $FreeBSD: head/textproc/cl-meta-sbcl/Makefile 481014 2018-10-01 08:34:25Z krion $
 
 PORTNAME=	meta
 PORTVERSION=	0.1
-PORTREVISION=	28
+PORTREVISION=	29
 PORTEPOCH=	1
 CATEGORIES=	textproc lisp
 PKGNAMEPREFIX=	cl-

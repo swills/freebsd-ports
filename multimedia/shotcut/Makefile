@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/shotcut/Makefile 478547 2018-08-31 11:23:33Z jhale $
+# $FreeBSD: head/multimedia/shotcut/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	shotcut
 PORTVERSION=	${FULLVERSION:R}
@@ -9,7 +9,7 @@ CATEGORIES=	multimedia
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
 PATCHFILES=	f304b7403cc7.patch:-p1
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Free, open source, cross-platform video editor
 
 LICENSE=	GPLv3

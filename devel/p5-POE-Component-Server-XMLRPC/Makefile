@@ -1,5 +1,5 @@
 # Created by: Jesper Dalberg <jesper@jdn.dk>
-# $FreeBSD: head/devel/p5-POE-Component-Server-XMLRPC/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-POE-Component-Server-XMLRPC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Server-XMLRPC
 PORTVERSION=	0.05
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jesper@jdn.dk
 COMMENT=	POE Component to create XMLRPC Servers
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-POE-Component-Server-HTTP>=0:www/p5-POE-Component-Server-HTTP \
 		p5-SOAP-Lite>=0:net/p5-SOAP-Lite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/devel/p5-DateTime-Util-Calc/Makefile 443755 2017-06-17 10:02:08Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Util-Calc/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Util-Calc
 PORTVERSION=	0.13002
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	DateTime Calculation Utilities
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
 
 NO_ARCH=	yes
 USES=		perl5

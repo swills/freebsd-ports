@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/net/p5-PlRPC/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net/p5-PlRPC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PlRPC
 PORTVERSION=	0.2020
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for writing RPC servers and clients
 
-BUILD_DEPENDS=	p5-Net-Daemon>=0:net/p5-Net-Daemon
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-Daemon>=0:net/p5-Net-Daemon
 
 USES=		perl5
 USE_PERL5=	configure

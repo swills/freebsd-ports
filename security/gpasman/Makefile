@@ -1,5 +1,5 @@
 # Created by: domi@saargate.de
-# $FreeBSD: head/security/gpasman/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/security/gpasman/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gpasman
 PORTVERSION=	1.3.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://gpasman.sourceforge.net/files/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Password manager that stores password information encrypted
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 PLIST_FILES=	bin/gpasman
 USES=		gmake

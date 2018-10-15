@@ -1,5 +1,5 @@
 # Created by: Bill Swingle <unfurl@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Spreadsheet-WriteExcel-FromXML/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Spreadsheet-WriteExcel-FromXML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Spreadsheet-WriteExcel-FromXML
 PORTVERSION=	1.1
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create an Excel Spreadsheet from XML
 
-BUILD_DEPENDS=	p5-OLE-Storage_Lite>=0:devel/p5-OLE-Storage_Lite \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-OLE-Storage_Lite>=0:devel/p5-OLE-Storage_Lite \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		p5-Spreadsheet-WriteExcel>=0:textproc/p5-Spreadsheet-WriteExcel
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

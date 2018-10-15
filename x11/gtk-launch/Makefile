@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/x11/gtk-launch/Makefile 428840 2016-12-18 09:57:19Z ehaupt $
+# $FreeBSD: head/x11/gtk-launch/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gtk-launch
 DISTVERSION=	1.1b
@@ -10,6 +10,9 @@ MASTER_SITES=	http://pierric.descamps.free.fr/pierric/downloads/ \
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Fast GTK+ program launcher
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE

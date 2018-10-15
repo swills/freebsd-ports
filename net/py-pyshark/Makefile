@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net/py-pyshark/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-pyshark/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	pyshark
 PORTVERSION=	0.3.6.2
@@ -7,7 +7,7 @@ CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pyhon packet parsing using wireshark dissectors
 
 LICENSE=	MIT

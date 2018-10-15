@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/science/p5-Chemistry-Bond-Find/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/p5-Chemistry-Bond-Find/Makefile 481616 2018-10-09 09:08:39Z amdmi3 $
 
 PORTNAME=	Chemistry-Bond-Find
 PORTVERSION=	0.23
@@ -12,10 +12,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Detect bonds in a molecule and assign formal bond orders
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	p5-Chemistry-Mol>=0:science/p5-Chemistry-Mol
 RUN_DEPENDS=	p5-Chemistry-Mol>=0:science/p5-Chemistry-Mol
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

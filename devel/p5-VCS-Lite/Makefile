@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-VCS-Lite/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-VCS-Lite/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	VCS-Lite
 PORTVERSION=	0.12
@@ -12,8 +12,8 @@ COMMENT=	Minimal version control system
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Algorithm-Diff>=1.13:devel/p5-Algorithm-Diff
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Algorithm-Diff>=1.13:devel/p5-Algorithm-Diff
 
 USES=		perl5
 USE_PERL5=	configure

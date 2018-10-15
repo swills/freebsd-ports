@@ -1,5 +1,5 @@
 # Created by: Martin Waschbuesch <martin@waschbuesch.de>
-# $FreeBSD: head/devel/p5-Any-Daemon/Makefile 463666 2018-03-05 17:15:31Z sunpoet $
+# $FreeBSD: head/devel/p5-Any-Daemon/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Any-Daemon
 PORTVERSION=	0.95
@@ -15,8 +15,8 @@ COMMENT=	Provides basic needs for a daemon
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Log-Report-Optional>=1.06:devel/p5-Log-Report-Optional
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Report-Optional>=1.06:devel/p5-Log-Report-Optional
 
 USES=		perl5
 USE_PERL5=	configure

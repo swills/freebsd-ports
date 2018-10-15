@@ -1,5 +1,5 @@
 # Created by: Oleg Alexeenkov <proler@gmail.com>
-# $FreeBSD: head/net-p2p/p5-Net-DirectConnect/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-p2p/p5-Net-DirectConnect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-DirectConnect
 PORTVERSION=	0.14
@@ -14,7 +14,8 @@ COMMENT=	Perl Direct Connect lib and client
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-IO-Socket-INET6>=0:net/p5-IO-Socket-INET6 \
 		p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-lib-abs>=0:devel/p5-lib-abs \
 		p5-MIME-Base32>=0:converters/p5-MIME-Base32 \
 		p5-Sys-Sendfile-FreeBSD>=0:devel/p5-Sys-Sendfile-FreeBSD
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

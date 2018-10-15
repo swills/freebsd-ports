@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-ExtUtils-CppGuess/Makefile 452654 2017-10-22 16:09:37Z sunpoet $
+# $FreeBSD: head/devel/p5-ExtUtils-CppGuess/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	ExtUtils-CppGuess
 PORTVERSION=	0.12
@@ -13,8 +13,8 @@ COMMENT=	Guess C++ compiler and flags
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny
 
 NO_ARCH=	yes
 USE_PERL5=	configure

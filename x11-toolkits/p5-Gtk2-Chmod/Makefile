@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/x11-toolkits/p5-Gtk2-Chmod/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Gtk2-Chmod/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Gtk2-Chmod
 PORTVERSION=	0.0.0
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Provides a dialog for getting values to use with chmod
 
-BUILD_DEPENDS=	p5-File-Stat-Bits>=0:sysutils/p5-File-Stat-Bits \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Stat-Bits>=0:sysutils/p5-File-Stat-Bits \
 		p5-Gtk2>=1.060:x11-toolkits/p5-Gtk2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

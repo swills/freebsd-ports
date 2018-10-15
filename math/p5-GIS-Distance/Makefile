@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/math/p5-GIS-Distance/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-GIS-Distance/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	GIS-Distance
 PORTVERSION=	0.09
@@ -15,12 +15,12 @@ COMMENT=	Calculate geographic distances
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Measure>=0:devel/p5-Class-Measure \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Measure>=0:devel/p5-Class-Measure \
 		p5-Moo>=1.006000:devel/p5-Moo \
 		p5-Type-Tiny>=1:devel/p5-Type-Tiny \
 		p5-namespace-clean>=0:devel/p5-namespace-clean \
 		p5-strictures>=1:devel/p5-strictures
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

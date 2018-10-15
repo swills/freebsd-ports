@@ -1,5 +1,5 @@
 # Created by: Peter Avalos <pavalos@theshell.com>
-# $FreeBSD: head/databases/p5-DBIx-DBSchema/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-DBSchema/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-DBSchema
 PORTVERSION=	0.45
@@ -13,8 +13,8 @@ COMMENT=	OO-interface to database schemas
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 
 OPTIONS_DEFINE=	DOCS
 

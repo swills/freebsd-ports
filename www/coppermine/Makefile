@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/coppermine/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/coppermine/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	coppermine
 PORTVERSION=	1.5.46
@@ -11,7 +11,7 @@ COMMENT=	Web picture gallery script
 
 LICENSE=	GPLv3
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 OPTIONS_DEFINE=	DOCS IMAGEMAGICK
 IMAGEMAGICK_DESC=	Use ImageMagick instead of PHP GD extension

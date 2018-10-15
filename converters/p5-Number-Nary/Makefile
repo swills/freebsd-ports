@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Number-Nary/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/converters/p5-Number-Nary/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Number-Nary
 PORTVERSION=	1.100312
@@ -14,10 +14,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-UDCode>=0:devel/p5-UDCode
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

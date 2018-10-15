@@ -1,29 +1,30 @@
 # Created by: Toni Andjelkovic <toni@soth.at>
-# $FreeBSD: head/devel/pcsc-lite/Makefile 470569 2018-05-21 18:59:42Z mmokhi $
+# $FreeBSD: head/devel/pcsc-lite/Makefile 481811 2018-10-11 10:22:46Z 0mp $
 
 PORTNAME=	pcsc-lite
 PORTVERSION=	1.8.23
 PORTEPOCH=	2
 CATEGORIES=	devel security
-MASTER_SITES=	https://alioth.debian.org/frs/download.php/latestfile/39/
+MASTER_SITES=	https://pcsclite.apdu.fr/files/
 
 MAINTAINER=	mmokhi@FreeBSD.org
-COMMENT=	Smartcard development library
+COMMENT=	Middleware library to access a smart card using SCard API (PC/SC)
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	BSD3CLAUSE GPLv3+
+LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
 USES=		libtool pathfix perl5 pkgconfig python:2.7,build shebangfix tar:bzip2
+USE_LDCONFIG=	yes
 USE_PERL5=	build
 USE_RC_SUBR=	pcscd
-SHEBANG_FILES=	src/spy/pcsc-spy
 
-USE_LDCONFIG=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-libsystemd \
 		--enable-usbdropdir=${PREFIX}/lib/pcsc/drivers/
 
+INSTALL_TARGET=	install-strip
+SHEBANG_FILES=	src/spy/pcsc-spy
 SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=	DOCS EXAMPLES

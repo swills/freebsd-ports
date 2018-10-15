@@ -1,5 +1,5 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/net/jags/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/net/jags/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	jags
 PORTVERSION=	0.22.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/Jags/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	JAGS - Just Another GTK+ Samba Client
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 CONFLICTS=	jags-1.*
 

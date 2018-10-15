@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero
-# $FreeBSD: head/www/p5-Catalyst-Plugin-FormBuilder/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-FormBuilder/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-FormBuilder
 PORTVERSION=	1.07
@@ -14,9 +14,9 @@ COMMENT=	FormBuilder for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.7:www/p5-Catalyst-Runtime \
 		p5-CGI-FormBuilder>=3.02:www/p5-CGI-FormBuilder
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 tar:tgz
 USE_PERL5=	configure

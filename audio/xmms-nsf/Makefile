@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-nsf/Makefile 419817 2016-08-08 11:18:50Z ehaupt $
+# $FreeBSD: head/audio/xmms-nsf/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmms-nsf
 PORTVERSION=	0.0.3
@@ -10,6 +10,9 @@ MASTER_SITES=	http://optronic.sourceforge.net/files/ \
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	XMMS input-plugin for playing Nintendo(TM) NSF audio files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-FormValidator/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-FormValidator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-FormValidator
 PORTVERSION=	0.094
@@ -14,11 +14,11 @@ COMMENT=	FormValidator for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.80001:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.80001:www/p5-Catalyst-Runtime \
 		p5-Data-FormValidator>=0:textproc/p5-Data-FormValidator \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-Moose>=0.93:devel/p5-Moose
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

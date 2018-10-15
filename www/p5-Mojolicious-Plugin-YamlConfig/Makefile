@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-YamlConfig/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-YamlConfig/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mojolicious-Plugin-YamlConfig
 PORTVERSION=	0.2.1
@@ -13,9 +13,9 @@ COMMENT=	YAML Configuration Plugin
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Mojolicious>=5.54:www/p5-Mojolicious \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mojolicious>=5.54:www/p5-Mojolicious \
 		p5-YAML-Tiny>=1.60:textproc/p5-YAML-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Compile>=0:devel/p5-Test-Compile
 
 USES=		perl5

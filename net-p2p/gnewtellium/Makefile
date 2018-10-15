@@ -1,5 +1,5 @@
 # Created by: haikal
-# $FreeBSD: head/net-p2p/gnewtellium/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net-p2p/gnewtellium/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gnewtellium
 PORTVERSION=	0.05b
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Gnutella client
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 PORTSCOUT=	skipv:0.05	# older than current one
 

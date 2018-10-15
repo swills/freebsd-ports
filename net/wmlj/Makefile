@@ -1,5 +1,5 @@
 # Created by: Sergei Barbarash <sgt@outline.ru>
-# $FreeBSD: head/net/wmlj/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/net/wmlj/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	wmlj
 PORTVERSION=	0.4.0
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dockapp that monitors your friends list at LiveJournal.com
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

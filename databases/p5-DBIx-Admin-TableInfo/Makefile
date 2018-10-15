@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Admin-TableInfo/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Admin-TableInfo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Admin-TableInfo
 PORTVERSION=	3.03
@@ -14,14 +14,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
 		p5-DBIx-Admin-CreateTable>=2.10:databases/p5-DBIx-Admin-CreateTable \
 		p5-DBIx-Admin-DSNManager>=2.01:databases/p5-DBIx-Admin-DSNManager \
 		p5-Data-Dumper-Concise>=2.022:devel/p5-Data-Dumper-Concise \
 		p5-Lingua-EN-PluralToSingular>=0.18:textproc/p5-Lingua-EN-PluralToSingular \
 		p5-Moo>=2.002004:devel/p5-Moo \
 		p5-Text-Table-Manifold>=1:textproc/p5-Text-Table-Manifold
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

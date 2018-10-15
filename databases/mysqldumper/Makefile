@@ -1,5 +1,5 @@
 # Created by: Marek Holienka <marekholienka@gmail.com>
-# $FreeBSD: head/databases/mysqldumper/Makefile 454522 2017-11-20 04:31:58Z sunpoet $
+# $FreeBSD: head/databases/mysqldumper/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	mysqldumper
 PORTVERSION=	1.24.4
@@ -20,7 +20,7 @@ OPTIONS_DEFAULT=APACHE
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_PHP=	ftp mysql session zlib

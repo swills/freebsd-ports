@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-PKCS10/Makefile 424377 2016-10-21 05:29:32Z pi $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-PKCS10/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Crypt-OpenSSL-PKCS10
 PORTVERSION=	0.16
@@ -11,8 +11,8 @@ COMMENT=	Perl extension for OpenSSL PKCS10 API
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Crypt-OpenSSL-RSA>=0:security/p5-Crypt-OpenSSL-RSA
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-OpenSSL-RSA>=0:security/p5-Crypt-OpenSSL-RSA
 
 USES=		perl5 ssl
 USE_PERL5=	configure

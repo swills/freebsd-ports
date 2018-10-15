@@ -1,8 +1,8 @@
 # Created by: Kuei-Feng Li <thinker@branda.to>
-# $FreeBSD: head/www/trac/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/trac/Makefile 482010 2018-10-13 20:29:56Z joneum $
 
 PORTNAME=	trac
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.3
 CATEGORIES=	www devel python
 MASTER_SITES=	http://ftp.edgewall.com/pub/trac/ \
 		ftp://ftp.edgewall.com/pub/trac/
@@ -14,14 +14,14 @@ COMMENT=	Enhanced wiki and issue tracking system for software projects
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.6.0:devel/py-babel@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Genshi>=0.7:textproc/py-genshi@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.6.0:devel/py-babel@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Genshi>=0.7:textproc/py-genshi@${PY_FLAVOR}
+
 CONFLICTS_INSTALL=	trac-devel
 
 PORTSCOUT=	limit:^1\.2\.[0-9]*
-
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Genshi>=0.7:textproc/py-genshi@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Genshi>=0.7:textproc/py-genshi@${PY_FLAVOR}
 
 USES=		python:-2.7 shebangfix
 SHEBANG_FILES=	trac/tests/functional/better_twill.py trac/tests/functional/tester.py \

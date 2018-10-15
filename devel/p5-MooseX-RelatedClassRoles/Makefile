@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooseX-RelatedClassRoles/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-RelatedClassRoles/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-RelatedClassRoles
 PORTVERSION=	0.004
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Apply roles to a class related to yours
 
-BUILD_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
 		p5-MooseX-Role-Parameterized>=0.04:devel/p5-MooseX-Role-Parameterized
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

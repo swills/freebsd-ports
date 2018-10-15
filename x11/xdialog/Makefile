@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
-# $FreeBSD: head/x11/xdialog/Makefile 431147 2017-01-11 00:28:13Z ler $
+# $FreeBSD: head/x11/xdialog/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xdialog
 PORTVERSION=	2.3.1
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME:S/x/X/}-${PORTVERSION}
 
 MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Drop in replacement for the "dialog" or "cdialog" programs
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

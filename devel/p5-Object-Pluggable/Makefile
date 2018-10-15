@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/devel/p5-Object-Pluggable/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/p5-Object-Pluggable/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Object-Pluggable
 PORTVERSION=	1.29
@@ -15,8 +15,8 @@ COMMENT=	Base class for creating plugin-enabled objects
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Task-Weaken>=0:devel/p5-Task-Weaken
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Task-Weaken>=0:devel/p5-Task-Weaken
 
 USES=		perl5
 USE_PERL5=	configure

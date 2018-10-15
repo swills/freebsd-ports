@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-CSS-Packer/Makefile 460780 2018-02-03 06:21:06Z sunpoet $
+# $FreeBSD: head/textproc/p5-CSS-Packer/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CSS-Packer
 PORTVERSION=	2.05
@@ -13,8 +13,8 @@ COMMENT=	Another CSS minifier
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Regexp-RegGrp>=1.001001:devel/p5-Regexp-RegGrp
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Regexp-RegGrp>=1.001001:devel/p5-Regexp-RegGrp
 TEST_DEPENDS=	p5-Test-File-Contents>=0.21:devel/p5-Test-File-Contents \
 		p5-Test-Pod>=1.22:devel/p5-Test-Pod
 

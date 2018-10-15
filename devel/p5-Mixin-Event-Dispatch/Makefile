@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mixin-Event-Dispatch/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Mixin-Event-Dispatch/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mixin-Event-Dispatch
 PORTVERSION=	2.000
@@ -14,8 +14,8 @@ COMMENT=	Mixin methods for simple event/message dispatch framework
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-List-UtilsBy>=0:devel/p5-List-UtilsBy
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-List-UtilsBy>=0:devel/p5-List-UtilsBy
 TEST_DEPENDS=	p5-Test-CheckDeps>=0.010:devel/p5-Test-CheckDeps \
 		p5-Test-Fatal>=0.010:devel/p5-Test-Fatal \
 		p5-Test-Refcount>=0.07:devel/p5-Test-Refcount

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/p5-Redis/Makefile 431699 2017-01-16 19:34:06Z pi $
+# $FreeBSD: head/databases/p5-Redis/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Redis
 PORTVERSION=	1.9910
@@ -13,9 +13,9 @@ COMMENT=	Perl binding for Redis database
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-IO-Socket-Timeout>=0.29:net/p5-IO-Socket-Timeout \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Socket-Timeout>=0.29:net/p5-IO-Socket-Timeout \
 		p5-Try-Tiny>=0.24:lang/p5-Try-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \

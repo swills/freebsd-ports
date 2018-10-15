@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/ports-mgmt/p5-FreeBSD-Portindex/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/ports-mgmt/p5-FreeBSD-Portindex/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	FreeBSD-Portindex
 PORTVERSION=	3.6
@@ -12,8 +12,8 @@ COMMENT=	Incremental FreeBSD ports INDEX file generation
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	p5-BerkeleyDB>0:databases/p5-BerkeleyDB
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-BerkeleyDB>0:databases/p5-BerkeleyDB
 
 USES=		perl5 tar:xz
 USE_PERL5=	configure

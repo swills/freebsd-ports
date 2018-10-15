@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-Catalyst-View-XSLT/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-View-XSLT/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-View-XSLT
 PORTVERSION=	0.09
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XSLT view class for Catalyst
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
 		p5-XML-LibXSLT>=1.52:textproc/p5-XML-LibXSLT \
 		p5-Path-Class>=0.12:devel/p5-Path-Class
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

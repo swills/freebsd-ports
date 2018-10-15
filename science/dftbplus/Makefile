@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/dftbplus/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/science/dftbplus/Makefile 481254 2018-10-04 21:10:42Z yuri $
 
 PORTNAME=	dftbplus
 DISTVERSION=	18.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -54,7 +54,7 @@ SOCKETS_BINARY_ALIAS=	gcc=${CC}
 ARPACK_DESC=		Build with ARPACK for large eigenvalue problems
 ARPACK_MAKE_ARGS=	WITH_ARPACK=1
 ARPACK_MAKE_ARGS_OFF=	WITH_ARPACK=0
-ARPACK_LIB_DEPENDS=	libarpack.so:math/arpack
+ARPACK_LIB_DEPENDS=	libarpack.so:math/arpack-ng
 ARPACK_PREVENTS=	MPI # ARPACK is only used in a single-core application
 
 MAKE_JOBS_UNSAFE=	yes # race conditions when some options are ON

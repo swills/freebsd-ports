@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/gstreamer1-plugins/Makefile.common 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/multimedia/gstreamer1-plugins/Makefile.common 481937 2018-10-12 20:16:28Z jbeich $
 
 BASE_GST_ALL_PLUGINS= \
 		alsa \
@@ -462,6 +462,9 @@ gst_vdpau_GST_PLUGIN_DIR=	sys/vdpau
 
 # webp
 gst_webp_LIB_DEPENDS=	libwebp.so:graphics/webp
+
+# webrtcdsp
+gst_webrtcdsp_LIB_DEPENDS=	libwebrtc_audio_processing.so:audio/webrtc-audio-processing
 
 # X ximage and xvimage sinks aka output
 .if ${DIST} == base

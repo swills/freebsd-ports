@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/devel/p5-AnyEvent-DBI-Abstract/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-AnyEvent-DBI-Abstract/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	AnyEvent-DBI-Abstract
 PORTVERSION=	0.01
@@ -14,9 +14,9 @@ COMMENT=	AnyEvent::DBI + SQL::Abstract
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-AnyEvent-DBI>=0:devel/p5-AnyEvent-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent-DBI>=0:devel/p5-AnyEvent-DBI \
 		p5-SQL-Abstract>=0:databases/p5-SQL-Abstract
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

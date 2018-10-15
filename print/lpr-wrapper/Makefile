@@ -1,5 +1,5 @@
 # Created by: e-masson@kisoft-services.com
-# $FreeBSD: head/print/lpr-wrapper/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/lpr-wrapper/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	lpr-wrapper
 PORTVERSION=	0.7
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.mathstat.dal.ca/~selinger/lpr-wrapper/download/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	User level printer frontend
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 RUN_DEPENDS=	bash:shells/bash \
 		ppdfilt:print/libppd \

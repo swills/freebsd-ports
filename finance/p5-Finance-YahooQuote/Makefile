@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Finance-YahooQuote/Makefile 454141 2017-11-13 19:36:16Z sunpoet $
+# $FreeBSD: head/finance/p5-Finance-YahooQuote/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Finance-YahooQuote
 PORTVERSION=	0.26
@@ -12,9 +12,9 @@ COMMENT=	Get stock quotes from Yahoo! Finance
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	p5-HTML-Parser>=2.2:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=2.2:www/p5-HTML-Parser \
 		p5-libwww>=1.62:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/archivers/p5-Archive-Any-Plugin-Rar/Makefile 451676 2017-10-10 11:19:47Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Any-Plugin-Rar/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Archive-Any-Plugin-Rar
 PORTVERSION=	0.02
@@ -14,10 +14,10 @@ COMMENT=	Wrapper around Archive::Rar
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Archive-Any>=0:archivers/p5-Archive-Any \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Archive-Any>=0:archivers/p5-Archive-Any \
 		p5-Archive-Rar>=0:archivers/p5-Archive-Rar \
 		p5-lib-abs>=0.90:devel/p5-lib-abs
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

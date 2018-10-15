@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/www/p5-WWW-Mechanize-DecodedContent/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Mechanize-DecodedContent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Mechanize-DecodedContent
 PORTVERSION=	0.02
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Decode Mech content using its HTTP response encoding
 
-BUILD_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
 		p5-HTTP-Response-Encoding>=0:www/p5-HTTP-Response-Encoding
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

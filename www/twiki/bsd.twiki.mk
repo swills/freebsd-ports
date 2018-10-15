@@ -1,7 +1,7 @@
 # ex:ts=4 sw=4
 #
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/twiki/bsd.twiki.mk 444752 2017-06-30 13:45:11Z sunpoet $
+# $FreeBSD: head/www/twiki/bsd.twiki.mk 482003 2018-10-13 17:55:13Z joneum $
 #
 # For more info, please go to http://wiki.FreeBSD.org/TWiki
 #
@@ -26,7 +26,7 @@ WWWDIR?=	${PREFIX}/www/twiki
 PLIST_SUB+=	TWDIR="share/twiki/${PNAME}"
 SUB_LIST+=	TWDIR="${TWDIR}" WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 SUB_FILES+=	pkg-install pkg-deinstall
-MAINTAINER?=	ports@FreeBSD.org
+MAINTAINER?=	joneum@FreeBSD.org
 DIST_SUBDIR?=	twiki
 RUN_DEPENDS+=	${TWDEP:C/([^=<>]*)([=<>]*)(.*)/twiki-\1\20.0.\3:www\/twiki-\1/}
 

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-knowledgebase/Makefile 418139 2016-07-06 14:50:23Z feld $
+# $FreeBSD: head/www/redmine-knowledgebase/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	knowledgebase
 PORTVERSION=	3.2.0
@@ -8,7 +8,7 @@ PORTREVISION=	0
 CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Knowledgebase functionality for Redmine
 
 LICENSE=	MIT

@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/deskutils/znotes/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/znotes/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	znotes
 PORTVERSION=	0.4.5.20150825
 CATEGORIES=	deskutils
 PKGNAMESUFFIX=	-${FLAVOR}
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Simple notes managment application based on Qt
 
 LICENSE=	GPLv3

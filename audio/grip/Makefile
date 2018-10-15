@@ -1,5 +1,5 @@
 # Created by: kbyanc@posi.net
-# $FreeBSD: head/audio/grip/Makefile 466722 2018-04-07 12:32:26Z riggs $
+# $FreeBSD: head/audio/grip/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	grip
 PORTVERSION=	3.7.0
@@ -11,6 +11,9 @@ COMMENT=	GTK front-end to external cd rippers and audio encoders
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfontconfig.so:x11-fonts/fontconfig \

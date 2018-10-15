@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPANPLUS-Dist-Build/Makefile 473263 2018-06-24 20:20:28Z sunpoet $
+# $FreeBSD: head/devel/p5-CPANPLUS-Dist-Build/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPANPLUS-Dist-Build
 PORTVERSION=	0.90
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-CPANPLUS>=0.84:devel/p5-CPANPLUS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CPANPLUS>=0.84:devel/p5-CPANPLUS \
 		p5-Module-Build>=0.32:devel/p5-Module-Build
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

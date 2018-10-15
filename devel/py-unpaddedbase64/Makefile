@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-unpaddedbase64/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-unpaddedbase64/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	unpaddedbase64
 PORTVERSION=	1.1.0
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Unpadded Base64
 
 LICENSE=	APACHE20

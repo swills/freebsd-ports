@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-RPC-ExtDirect/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-RPC-ExtDirect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	RPC-ExtDirect
 PORTVERSION=	3.24
@@ -13,9 +13,9 @@ COMMENT=	Perl extension for implementing the Ext.Direct remoting protocol
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Attribute-Handlers>=0.93:devel/p5-Attribute-Handlers \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Attribute-Handlers>=0.93:devel/p5-Attribute-Handlers \
 		p5-JSON>=2.53:converters/p5-JSON
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=1.46:devel/p5-Test-Pod
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-zkpython/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-zkpython/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	zkpython
 PORTVERSION=	0.4.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python bindings to Apache Zookeeper
 
 LICENSE=	APACHE20

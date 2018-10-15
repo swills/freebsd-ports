@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-dynflow/Makefile 476053 2018-07-31 23:47:46Z sunpoet $
+# $FreeBSD: head/devel/rubygem-dynflow/Makefile 482071 2018-10-14 16:30:23Z sunpoet $
 
 PORTNAME=	dynflow
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -18,9 +18,10 @@ RUN_DEPENDS=	rubygem-algebrick>=0.7.0:devel/rubygem-algebrick \
 		rubygem-multi_json>=0:devel/rubygem-multi_json \
 		rubygem-sequel>=4.0.0:devel/rubygem-sequel
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	${GEM_LIB_DIR}/web/assets/images/logo-square.png
 

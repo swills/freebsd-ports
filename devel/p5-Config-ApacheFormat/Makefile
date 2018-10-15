@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <carpetsmoker@gmail.com>
-# $FreeBSD: head/devel/p5-Config-ApacheFormat/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Config-ApacheFormat/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Config-ApacheFormat
 PORTVERSION=	1.2
@@ -14,8 +14,8 @@ COMMENT=	Parse a configuration file in the same syntax as the Apache web server
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-MethodMaker>=0:devel/p5-Class-MethodMaker
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-MethodMaker>=0:devel/p5-Class-MethodMaker
 
 USES=		perl5
 USE_PERL5=	configure

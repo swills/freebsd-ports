@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/php-gdal/Makefile 465313 2018-03-22 19:54:38Z sunpoet $
+# $FreeBSD: head/graphics/php-gdal/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	gdal
 PORTVERSION=	2.2.4
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal
 
 ALL_TARGET=	php_gdal.so php_gdalconst.so php_ogr.so php_osr.so
 CFLAGS+=	-fPIC
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 MAKEFILE=	GNUmakefile
 PHP_MOD_NAME=	php_${PORTNAME}
 USES=		php:build gmake localbase tar:xz

@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/graphics/p5-Tk-JPEG-Lite/Makefile 428135 2016-12-08 16:39:11Z tijl $
+# $FreeBSD: head/graphics/p5-Tk-JPEG-Lite/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-JPEG-Lite
 PORTVERSION=	2.01500
@@ -12,8 +12,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/00$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Very simplistic image viewer that loads JPEG images
 
-BUILD_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
 
 USES=		jpeg perl5
 USE_PERL5=	configure

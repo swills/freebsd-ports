@@ -1,10 +1,14 @@
-# $FreeBSD: head/sysutils/ansible1/Makefile 475222 2018-07-24 03:16:31Z lifanov $
+# $FreeBSD: head/sysutils/ansible1/Makefile 482130 2018-10-15 00:58:09Z lifanov $
 
 PKGNAMESUFFIX=	1
 PORTVERSION=	1.9.6
 PORTREVISION=	4
 
-CONFLICTS=	ansible-* ansible23-* ansible24-* ansible25-*
+CONFLICTS=	ansible-* \
+		ansible23-* \
+		ansible24-* \
+		ansible25-* \
+		ansible26-*
 
 MASTERDIR=	${.CURDIR}/../ansible
 DISTINFO_FILE=	${.CURDIR}/distinfo

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/irc/p5-POE-Filter-IRCD/Makefile 474843 2018-07-18 09:07:46Z amdmi3 $
+# $FreeBSD: head/irc/p5-POE-Filter-IRCD/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Filter-IRCD
 PORTVERSION=	2.44
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE
 
 USES=		perl5
 USE_PERL5=	configure

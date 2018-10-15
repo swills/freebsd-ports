@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Dancer-Plugin-Email/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Dancer-Plugin-Email/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dancer-Plugin-Email
 PORTVERSION=	1.0400
@@ -12,12 +12,12 @@ COMMENT=	Simple email handling for Dancer applications
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Dancer>=0:www/p5-Dancer \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Dancer>=0:www/p5-Dancer \
 		p5-Email-Date-Format>=0:mail/p5-Email-Date-Format \
 		p5-Email-Sender>=0:mail/p5-Email-Sender \
 		p5-File-Type>=0:devel/p5-File-Type \
 		p5-MIME-Tools>=0:mail/p5-MIME-Tools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/sysutils/gai-leds/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/sysutils/gai-leds/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gai-leds
 PORTVERSION=	0.6
@@ -11,6 +11,9 @@ MAINTAINER=	douglas@douglasthrift.net
 COMMENT=	GAI applet that displays the keyboard status leds
 
 LICENSE=	GPLv2
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libgai.so:x11-toolkits/gai
 

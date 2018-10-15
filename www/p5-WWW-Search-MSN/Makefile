@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-WWW-Search-MSN/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Search-MSN/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Search-MSN
 PORTVERSION=	0.0202
@@ -13,9 +13,9 @@ COMMENT=	Backend for searching search.msn.com
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTML-Tree>=0:www/p5-HTML-Tree \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Tree>=0:www/p5-HTML-Tree \
 		p5-WWW-Search>=0:www/p5-WWW-Search
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

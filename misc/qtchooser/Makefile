@@ -1,8 +1,7 @@
-# $FreeBSD: head/misc/qtchooser/Makefile 462177 2018-02-17 17:51:11Z sunpoet $
+# $FreeBSD: head/misc/qtchooser/Makefile 481555 2018-10-08 18:26:07Z tcberner $
 
 PORTNAME=	qtchooser
-PORTVERSION=	39
-DISTVERSIONSUFFIX=	-g4717841
+PORTVERSION=	66
 CATEGORIES=	misc
 MASTER_SITES=	QT/official_releases/${PORTNAME}
 DIST_SUBDIR=	KDE/Qt/qtchooser
@@ -13,7 +12,7 @@ COMMENT=	Qt tool wrapper
 LICENSE=	GPLv3 LGPL21
 LICENSE_COMB=	dual
 
-USES=		gmake
+USES=		gmake tar:xz
 DESTDIRNAME=	INSTALL_ROOT
 MAKE_ARGS=	prefix=${PREFIX}
 

@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-ViewCode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-ViewCode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Application-Plugin-ViewCode
 PORTVERSION=	1.02
@@ -14,12 +14,12 @@ COMMENT=	View the source of the running application
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
 		p5-CGI-Application-Plugin-Forward>=0:www/p5-CGI-Application-Plugin-Forward \
 		p5-Syntax-Highlight-Perl-Improved>=0:textproc/p5-Syntax-Highlight-Perl-Improved \
 		p5-Pod-Xhtml>=0:textproc/p5-Pod-Xhtml \
 		p5-Test-LongString>=0:devel/p5-Test-LongString
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Data-Phrasebook/Makefile 435401 2017-03-04 13:48:49Z sunpoet $
+# $FreeBSD: head/textproc/p5-Data-Phrasebook/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Phrasebook
 PORTVERSION=	0.35
@@ -13,8 +13,8 @@ COMMENT=	Accessing phrasebooks from various data sources
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Module-Pluggable>=2.7:devel/p5-Module-Pluggable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Module-Pluggable>=2.7:devel/p5-Module-Pluggable
 
 USES=		perl5
 USE_PERL5=	configure

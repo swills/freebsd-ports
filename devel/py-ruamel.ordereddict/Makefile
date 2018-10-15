@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-ruamel.ordereddict/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-ruamel.ordereddict/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	ruamel.ordereddict
 PORTVERSION=	0.4.9
@@ -8,7 +8,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python dict that keeps keys in insertion sorted order
 
 LICENSE=	MIT

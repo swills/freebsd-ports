@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine39/Makefile 465142 2018-03-21 01:33:27Z cy $
+# $FreeBSD: head/sysutils/cfengine39/Makefile 482116 2018-10-14 20:59:36Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.9.2
@@ -10,6 +10,10 @@ MAINTAINER=	cy@FreeBSD.org
 #		gjb@FreeBSD.org is also committer for this port
 #		skreuzer@FreeBSD.org is also committer for this port
 COMMENT=	Systems administration tool for networks
+
+DEPRECATED=		OpenSSL 1.1.X is not supported.
+EXPIRATION_DATE=	2021-09-30
+BROKEN_FreeBSD_12=	openssl111 is not supported
 
 LICENSE=	GPLv3
 

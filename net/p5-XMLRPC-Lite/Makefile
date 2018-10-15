@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-XMLRPC-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-XMLRPC-Lite/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XMLRPC-Lite
 PORTVERSION=	0.717
@@ -12,9 +12,9 @@ COMMENT=	Client and server side XMLRPC implementation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-SOAP-Lite>=1.11:net/p5-SOAP-Lite
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-SOAP-Lite>=1.11:net/p5-SOAP-Lite
 
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 CONFIGURE_ARGS=	--noprompt
 INSTALL_TARGET=	pure_install

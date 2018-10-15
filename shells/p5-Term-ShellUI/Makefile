@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/shells/p5-Term-ShellUI/Makefile 417207 2016-06-21 13:24:53Z mat $
+# $FreeBSD: head/shells/p5-Term-ShellUI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Term-ShellUI
 PORTVERSION=	0.92
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fully-featured shell-like command line environment
 
-BUILD_DEPENDS=	p5-Term-ReadLine-Gnu>=0:devel/p5-Term-ReadLine-Gnu
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Term-ReadLine-Gnu>=0:devel/p5-Term-ReadLine-Gnu
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	examples/*

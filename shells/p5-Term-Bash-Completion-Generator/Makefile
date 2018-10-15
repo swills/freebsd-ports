@@ -1,5 +1,5 @@
 # Created by: gebhart@secnetix.de
-# $FreeBSD: head/shells/p5-Term-Bash-Completion-Generator/Makefile 458217 2018-01-06 05:33:56Z sunpoet $
+# $FreeBSD: head/shells/p5-Term-Bash-Completion-Generator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Term-Bash-Completion-Generator
 PORTVERSION=	0.02.8
@@ -14,10 +14,10 @@ COMMENT=	Generate bash completion scripts
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
 		p5-Tree-Trie>=0:devel/p5-Tree-Trie
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings \
 		p5-Test-Warn>=0:devel/p5-Test-Warn \
 

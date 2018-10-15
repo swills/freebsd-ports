@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-Events-Objects/Makefile 442343 2017-06-01 23:51:12Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-Events-Objects/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-Events-Objects
 PORTVERSION=	0.05
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module providing object tracking support for Devel::Events
 
-BUILD_DEPENDS=	p5-Devel-Events>=0:devel/p5-Devel-Events \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Devel-Events>=0:devel/p5-Devel-Events \
 		p5-Task-Weaken>=0:devel/p5-Task-Weaken \
 		p5-Tie-RefHash-Weak>=0:devel/p5-Tie-RefHash-Weak \
 		p5-Variable-Magic>=0:devel/p5-Variable-Magic
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

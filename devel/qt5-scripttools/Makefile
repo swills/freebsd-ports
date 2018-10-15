@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-scripttools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt5-scripttools/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	scripttools
 DISTVERSION=	${QT5_VERSION}
@@ -9,7 +9,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt Script additional components
 
 USE_QT=		core gui script widgets buildtools_build
-USES=		qmake qt-dist:5,script
+USES=		compiler:c++11-lang qmake qt-dist:5,script
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 BUILD_WRKSRC=	${WRKSRC}/src/${PORTNAME}

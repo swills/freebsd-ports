@@ -1,5 +1,5 @@
 # Created by: Vasek Balcar <vasek@ti.cz>
-# $FreeBSD: head/textproc/p5-IO-CSVHeaderFile/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-IO-CSVHeaderFile/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	IO-CSVHeaderFile
 PORTVERSION=	0.04
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to automate reads from CSV formatted text files
 
-BUILD_DEPENDS=	p5-Text-CSV_XS>=0:textproc/p5-Text-CSV_XS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-CSV_XS>=0:textproc/p5-Text-CSV_XS
 
 NO_ARCH=	yes
 USES=		perl5

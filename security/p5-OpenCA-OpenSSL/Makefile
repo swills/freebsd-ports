@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/security/p5-OpenCA-OpenSSL/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/p5-OpenCA-OpenSSL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	OpenCA-OpenSSL
 PORTVERSION=	2.0.29
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl crypto extension to OpenSSL
 
-BUILD_DEPENDS=	p5-Locale-libintl>=0:devel/p5-Locale-libintl \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Locale-libintl>=0:devel/p5-Locale-libintl \
 		p5-MIME-Tools>=0:mail/p5-MIME-Tools \
 		p5-X500-DN>=0:net/p5-X500-DN
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 ssl
 USE_PERL5=	configure

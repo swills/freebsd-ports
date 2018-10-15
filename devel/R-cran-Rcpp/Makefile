@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-Rcpp/Makefile 475359 2018-07-26 09:44:41Z tota $
+# $FreeBSD: head/devel/R-cran-Rcpp/Makefile 481869 2018-10-12 02:55:56Z tota $
 
 PORTNAME=	Rcpp
-PORTVERSION=	0.12.18
+PORTVERSION=	0.12.19
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

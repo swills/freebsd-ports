@@ -1,5 +1,5 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/www/gurlchecker/Makefile 479427 2018-09-10 14:40:53Z mat $
+# $FreeBSD: head/www/gurlchecker/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gurlchecker
 PORTVERSION=	0.10.1
@@ -12,6 +12,9 @@ COMMENT=	Gnome program to check a page/website for broken links
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libgnet-2.0.so:net/gnet2
 

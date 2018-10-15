@@ -1,5 +1,5 @@
 # Created by: Denis Barov <dindin@dindin.ru>
-# $FreeBSD: head/graphics/gimp-focusblur-plugin/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/graphics/gimp-focusblur-plugin/Makefile 481655 2018-10-09 20:38:50Z kwm $
 
 PORTNAME=	focusblur
 PORTVERSION=	3.2.6
@@ -25,7 +25,7 @@ USE_GNOME=	gtk20 intltool
 PLUGIN_DIR?=	libexec/gimp/2.2/plug-ins
 PLIST_SUB=	PLUGIN_DIR=${PLUGIN_DIR}
 
-CPPFLAGS+=	-I${LOCALBASE}/include
+CPPFLAGS+=	-I${LOCALBASE}/include -DGIMP_DISABLE_DEPRECATED
 LDFLAGS+=	-lm -L${LOCALBASE}/lib
 
 OPTIONS_DEFINE=	NLS

@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/security/p5-Authen-OATH/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Authen-OATH/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-OATH
 PORTVERSION=	1.0.0
@@ -15,10 +15,10 @@ COMMENT=	OATH one time passwords implementation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Digest-HMAC>0:security/p5-Digest-HMAC \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-HMAC>0:security/p5-Digest-HMAC \
 		p5-Digest-SHA1>0:security/p5-Digest-SHA1 \
 		p5-Moose>0:devel/p5-Moose
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

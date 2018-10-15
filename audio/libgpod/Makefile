@@ -1,5 +1,5 @@
 # Created by: Devon Ryan <dpryan@dpryan.com>
-# $FreeBSD: head/audio/libgpod/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/audio/libgpod/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	libgpod
 PORTVERSION=	0.8.3
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	SF/gtkpod/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 
-MAINTAINER?=	avilla@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 COMMENT?=	Library for direct access to iPod contents
 
 LICENSE=	LGPL20

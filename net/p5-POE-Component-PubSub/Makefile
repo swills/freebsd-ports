@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/p5-POE-Component-PubSub/Makefile 470917 2018-05-26 17:48:08Z sunpoet $
+# $FreeBSD: head/net/p5-POE-Component-PubSub/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-PubSub
 PORTVERSION=	0.091370
@@ -14,7 +14,8 @@ COMMENT=	Generic publish/subscribe POE::Component
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=0.79:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.79:devel/p5-Moose \
 		p5-MooseX-Declare>=0.22:devel/p5-MooseX-Declare \
 		p5-MooseX-Types>=0:devel/p5-MooseX-Types \
 		p5-MooseX-Types-Set-Object>=0.02:devel/p5-MooseX-Types-Set-Object \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-Moose>=0.79:devel/p5-Moose \
 		p5-POE-API-Peek>=2.15:devel/p5-POE-API-Peek \
 		p5-POEx-Role-SessionInstantiation>=0.01:devel/p5-POEx-Role-SessionInstantiation \
 		p5-signatures>=0.05:lang/p5-signatures
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

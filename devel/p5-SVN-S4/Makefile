@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-SVN-S4/Makefile 428514 2016-12-13 17:23:35Z sunpoet $
+# $FreeBSD: head/devel/p5-SVN-S4/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-S4
 PORTVERSION=	1.062
@@ -13,11 +13,11 @@ COMMENT=	Wrapper for subversion program
 LICENSE=	ART20 LGPL3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Config-Tiny>=0:devel/p5-Config-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-Tiny>=0:devel/p5-Config-Tiny \
 		p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-IO-AIO>=0:devel/p5-IO-AIO \
 		p5-subversion>=0:devel/p5-subversion
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

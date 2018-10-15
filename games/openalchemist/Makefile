@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/openalchemist/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/openalchemist/Makefile 481268 2018-10-05 10:10:02Z martymac $
 
 PORTNAME=	openalchemist
 PORTVERSION=	0.3
@@ -23,7 +23,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 GNU_CONFIGURE=	yes
 
-USES=		autoreconf gmake gnome iconv jpeg pkgconfig python:2.7,run shebangfix
+USES=		autoreconf gl gmake gnome iconv jpeg pkgconfig python:2.7,run \
+		shebangfix
 SHEBANG_FILES=	openalchemist-config
 
 USE_GNOME=	pygtk2

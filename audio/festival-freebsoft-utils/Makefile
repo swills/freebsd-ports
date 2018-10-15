@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/festival-freebsoft-utils/Makefile 458725 2018-01-11 12:39:22Z danfe $
+# $FreeBSD: head/audio/festival-freebsoft-utils/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	festival-freebsoft-utils
 PORTVERSION=	0.10
@@ -6,7 +6,7 @@ PORTREVISION=	3
 CATEGORIES=	audio accessibility
 MASTER_SITES=	http://www.freebsoft.org/pub/projects/${PORTNAME}/
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Festival utilities focused on interaction with Speech Dispatcher
 
 RUN_DEPENDS=	festival:audio/festival \

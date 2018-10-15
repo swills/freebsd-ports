@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Version/Makefile 468443 2018-04-27 15:55:29Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Version/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Version
 PORTVERSION=	2.09
@@ -13,8 +13,8 @@ COMMENT=	Check to see that version in modules are sane
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-File-Find-Rule-Perl>=0:devel/p5-File-Find-Rule-Perl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Find-Rule-Perl>=0:devel/p5-File-Find-Rule-Perl
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

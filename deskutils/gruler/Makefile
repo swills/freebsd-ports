@@ -1,5 +1,5 @@
 # Created by: Piotr Smyrak <smyru@heron.pl>
-# $FreeBSD: head/deskutils/gruler/Makefile 469070 2018-05-04 18:16:10Z krion $
+# $FreeBSD: head/deskutils/gruler/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gruler
 PORTVERSION=	0.6
@@ -9,6 +9,9 @@ MASTER_SITES=	https://BSDforge.com/projects/source/deskutils/gruler/
 
 MAINTAINER=	ps.ports@smyrak.com
 COMMENT=	Simple customizable GTK screen ruler
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		pkgconfig pathfix libtool
 GNU_CONFIGURE=	yes

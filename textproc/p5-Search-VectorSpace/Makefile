@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/textproc/p5-Search-VectorSpace/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/textproc/p5-Search-VectorSpace/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Search-VectorSpace
 PORTVERSION=	0.02
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Very basic vector-space search engine perl module
 
-BUILD_DEPENDS=	PDL>=0:math/PDL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	PDL>=0:math/PDL \
 		p5-Lingua-Stem>=0:textproc/p5-Lingua-Stem
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

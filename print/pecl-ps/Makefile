@@ -1,5 +1,5 @@
 # Created by: Alan Garfield <alan@fromorbit.com>
-# $FreeBSD: head/print/pecl-ps/Makefile 468263 2018-04-25 08:33:50Z amdmi3 $
+# $FreeBSD: head/print/pecl-ps/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	ps
 PORTVERSION=	1.3.7
@@ -11,7 +11,7 @@ COMMENT=	PHP extension for pslib to generate postscript
 
 LICENSE=	PHP202
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 LIB_DEPENDS=	libps.so:print/pslib
 

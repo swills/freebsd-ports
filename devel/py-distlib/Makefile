@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-distlib/Makefile 473864 2018-07-04 02:48:45Z yuri $
+# $FreeBSD: head/devel/py-distlib/Makefile 481134 2018-10-02 21:36:32Z yuri $
 
 PORTNAME=	distlib
-DISTVERSION=	0.2.7
+DISTVERSION=	0.2.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

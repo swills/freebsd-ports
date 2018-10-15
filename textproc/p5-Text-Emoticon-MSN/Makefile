@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Emoticon-MSN/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-Emoticon-MSN/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Emoticon-MSN
 PORTVERSION=	0.04
@@ -13,8 +13,8 @@ COMMENT=	Emoticon filter of MSN Messenger
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Text-Emoticon>=0.02:textproc/p5-Text-Emoticon
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Emoticon>=0.02:textproc/p5-Text-Emoticon
 
 USE_PERL5=	configure
 USES=		perl5

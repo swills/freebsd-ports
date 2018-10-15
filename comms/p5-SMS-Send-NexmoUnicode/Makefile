@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/comms/p5-SMS-Send-NexmoUnicode/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/p5-SMS-Send-NexmoUnicode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SMS-Send-NexmoUnicode
 PORTVERSION=	0.02
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw
 COMMENT=	SMS::Send driver for www.nexmo.com (Unicode)
 
-BUILD_DEPENDS=	p5-Nexmo-SMS>=0.04:comms/p5-Nexmo-SMS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Nexmo-SMS>=0.04:comms/p5-Nexmo-SMS \
 		p5-SMS-Send>=0:comms/p5-SMS-Send
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Alexandre Biancalana <ale@biancalanas.net>
-# $FreeBSD: head/net/p5-Net-Google-SafeBrowsing2/Makefile 444675 2017-06-29 19:13:58Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Google-SafeBrowsing2/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Google-SafeBrowsing2
 PORTVERSION=	1.09
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ale@biancalanas.net
 COMMENT=	Perl extension for the Google Safe Browsing v2 API
 
-BUILD_DEPENDS=	p5-libwww>=5:www/p5-libwww \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=5:www/p5-libwww \
 		p5-URI>=1:net/p5-URI \
 		p5-Net-IPAddress>=1:net-mgmt/p5-Net-IPAddress \
 		p5-Text-Trim>=1:textproc/p5-Text-Trim \
@@ -20,7 +21,6 @@ BUILD_DEPENDS=	p5-libwww>=5:www/p5-libwww \
 		p5-String-HexConvert>=0.01:textproc/p5-String-HexConvert \
 		p5-File-Slurp>9:devel/p5-File-Slurp
 
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	MySQL SQLite Postgres
 

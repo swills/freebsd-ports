@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-ManyParams/Makefile 479736 2018-09-13 21:55:45Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-ManyParams/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-ManyParams
 PORTVERSION=	0.10
@@ -14,10 +14,10 @@ COMMENT=	Perl module to test many params as one test
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Set-CrossProduct>0:devel/p5-Set-CrossProduct \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Set-CrossProduct>0:devel/p5-Set-CrossProduct \
 		p5-Test-Differences>0:devel/p5-Test-Differences \
 		p5-Test-Exception>0:devel/p5-Test-Exception
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

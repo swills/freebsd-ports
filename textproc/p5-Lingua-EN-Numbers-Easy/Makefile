@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Numbers-Easy/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Numbers-Easy/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Lingua-EN-Numbers-Easy
 PORTVERSION=	2014120401
@@ -12,8 +12,8 @@ COMMENT=	Perl module providing hash access to Lingua::EN::Numbers objects
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	p5-Lingua-EN-Numbers>=1.01:textproc/p5-Lingua-EN-Numbers
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-EN-Numbers>=1.01:textproc/p5-Lingua-EN-Numbers
 
 USES=		perl5
 USE_PERL5=	configure

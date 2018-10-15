@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/comms/p5-SMS-Send-DeviceGsm/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/p5-SMS-Send-DeviceGsm/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SMS-Send-DeviceGsm
 PORTVERSION=	1.06
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	SMS::Send driver for Device::Gsm
 
-BUILD_DEPENDS=	p5-SMS-Send>=0.04:comms/p5-SMS-Send \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-SMS-Send>=0.04:comms/p5-SMS-Send \
 		p5-Device-Gsm>=1.45:comms/p5-Device-Gsm
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

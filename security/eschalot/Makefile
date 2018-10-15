@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/eschalot/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/security/eschalot/Makefile 482103 2018-10-14 18:25:41Z yuri $
 
 PORTNAME=	eschalot
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.0.20180118
 CATEGORIES=	security
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ReclaimYourPrivacy
-GH_TAGNAME=	e9e085e
+GH_TAGNAME=	56a967b
 
 USES=		gmake ssl
 MAKE_ENV=	INSTALL="${INSTALL_PROGRAM}"

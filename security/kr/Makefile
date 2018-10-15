@@ -1,14 +1,15 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/kr/Makefile 480871 2018-09-28 17:59:24Z jbeich $
+# $FreeBSD: head/security/kr/Makefile 481921 2018-10-12 19:01:02Z jbeich $
 
 PORTNAME=	kr
 PORTVERSION=	2.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	SSH and Git commit/tag signing using a key stored in Krypton
 
+BROKEN=		fails to build
 NOT_FOR_ARCHS=	i386
 NOT_FOR_ARCHS_REASON=	Uses 64bit types
 

@@ -1,5 +1,5 @@
 # Created by: Heiner <h.eichmann@gmx.de>
-# $FreeBSD: head/german/steak/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/german/steak/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	steak
 PORTVERSION=	1.7.3
@@ -11,6 +11,9 @@ DISTNAME=	Steak.${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	English <-> German dictionary under the GPL
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 RUN_DEPENDS=	ispell:textproc/aspell-ispell
 

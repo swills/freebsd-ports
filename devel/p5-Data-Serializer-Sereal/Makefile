@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Serializer-Sereal/Makefile 454089 2017-11-12 22:00:17Z adamw $
+# $FreeBSD: head/devel/p5-Data-Serializer-Sereal/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Serializer-Sereal
 PORTVERSION=	1.05
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	adamw@FreeBSD.org
 COMMENT=	Creates bridge between Data::Serializer and Sereal
 
-BUILD_DEPENDS=	p5-Data-Serializer>=0:devel/p5-Data-Serializer \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Serializer>=0:devel/p5-Data-Serializer \
 		p5-Sereal-Decoder>=0:converters/p5-Sereal-Decoder \
 		p5-Sereal-Encoder>=0:converters/p5-Sereal-Encoder
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

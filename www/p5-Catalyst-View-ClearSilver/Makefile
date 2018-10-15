@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-Catalyst-View-ClearSilver/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-View-ClearSilver/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-View-ClearSilver
 PORTVERSION=	0.02
@@ -15,12 +15,12 @@ COMMENT=	ClearSilver view class for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-ClearSilver>=0:www/p5-ClearSilver \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-ClearSilver>=0:www/p5-ClearSilver \
 		p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
 		p5-Data-Structure-Util>=0:devel/p5-Data-Structure-Util \
 		p5-Class-C3>=0:devel/p5-Class-C3 \
 		p5-Catalyst-View-Templated>=0:www/p5-Catalyst-View-Templated
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Catalyst-View-Template-Declare>=0:www/p5-Catalyst-View-Template-Declare
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: erwin@FreeBSD.org
-# $FreeBSD: head/databases/p5-ResourcePool-Resource-DBI/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-ResourcePool-Resource-DBI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	ResourcePool-Resource-DBI
 PORTVERSION=	1.0101
@@ -13,9 +13,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	ResourcePool::Resource::DBI - A ResourcePool wrapper for DBI
 
-BUILD_DEPENDS=	p5-ResourcePool>=0:devel/p5-ResourcePool \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-ResourcePool>=0:devel/p5-ResourcePool \
 		p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

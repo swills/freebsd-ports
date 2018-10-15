@@ -1,5 +1,5 @@
 # Created by: asami
-# $FreeBSD: head/games/xbill/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/xbill/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xbill
 PORTVERSION=	2.1
@@ -10,6 +10,9 @@ MASTER_SITES=	http://www.xbill.org/download/ \
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Save your computers from the evil clutches of Bill
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${SCORES_DIR}

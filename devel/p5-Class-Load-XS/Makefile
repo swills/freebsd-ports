@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Load-XS/Makefile 438277 2017-04-11 15:55:58Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-Load-XS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Load-XS
 PORTVERSION=	0.10
@@ -12,8 +12,8 @@ COMMENT=	XS implementation of parts of Class::Load
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Class-Load>=0.20:devel/p5-Class-Load
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Load>=0.20:devel/p5-Class-Load
 TEST_DEPENDS=	p5-Module-Implementation>=0.04:devel/p5-Module-Implementation \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Needs>=0:devel/p5-Test-Needs \

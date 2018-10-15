@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/devel/p5-Agent/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Agent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Agent
 PORTVERSION=	3.20
@@ -13,8 +13,8 @@ COMMENT=	Perl module that provides a foundation for software agent developers
 
 LICENSE=	ARTPERL10
 
-BUILD_DEPENDS=	p5-Class-Tom>=0:devel/p5-Class-Tom
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Tom>=0:devel/p5-Class-Tom
 
 USES=		perl5
 USE_PERL5=	configure

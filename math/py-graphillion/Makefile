@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/math/py-graphillion/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-graphillion/Makefile 481437 2018-10-07 09:57:10Z koobs $
 
 PORTNAME=	graphillion
-PORTVERSION=	0.99
+PORTVERSION=	1.2
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,10 @@ COMMENT=	Fast, lightweight graphset operation library in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python:2.7
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${PY_FLAVOR}
+
+# Python 2.7,3.4+
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 post-install:

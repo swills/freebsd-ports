@@ -1,5 +1,5 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/games/gturing/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/games/gturing/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gturing
 PORTVERSION=	0.1.1
@@ -12,6 +12,9 @@ COMMENT=	Simple Turing machine simulator for GNOME 2
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USE_GNOME=	gnomeprefix libgnomeui
 USES=		gettext gmake libtool pathfix pkgconfig

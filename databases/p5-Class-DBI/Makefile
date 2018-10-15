@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Class-DBI/Makefile 463216 2018-02-28 15:12:28Z sunpoet $
+# $FreeBSD: head/databases/p5-Class-DBI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI
 PORTVERSION=	3.0.17
@@ -15,13 +15,13 @@ COMMENT=	Simple Database Abstraction
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-Class-Trigger>=0:devel/p5-Class-Trigger \
 		p5-Clone>=0:devel/p5-Clone \
 		p5-Ima-DBI>=0:databases/p5-Ima-DBI \
 		p5-UNIVERSAL-moniker>=0:devel/p5-UNIVERSAL-moniker
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 NO_ARCH=	yes

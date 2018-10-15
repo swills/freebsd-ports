@@ -1,8 +1,8 @@
 # Created by: Goran Tal
-# $FreeBSD: head/net/gnu-dico/Makefile 440158 2017-05-05 13:57:36Z miwi $
+# $FreeBSD: head/net/gnu-dico/Makefile 481523 2018-10-08 08:10:38Z wen $
 
 PORTNAME=	dico
-PORTVERSION=	2.4
+PORTVERSION=	2.7
 CATEGORIES=	net textproc
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu-
@@ -57,6 +57,7 @@ post-patch:
 		-e 's/mu_check_lib_save_LIBS/LIBS/' \
 		-e 's/python-config/$${PYTHON_CONFIG}/' \
 		${WRKSRC}/configure
+	@${REINPLACE_CMD} 's/mergesort/xmergesort/' ${WRKSRC}/lib/mergesort.c
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/dicod.conf ${STAGEDIR}${PREFIX}/etc/dicod.conf.sample

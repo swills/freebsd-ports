@@ -1,5 +1,5 @@
 # Created by: buganini@gmail.com
-# $FreeBSD: head/mail/pecl-pop3/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/mail/pecl-pop3/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	pop3
 PORTVERSION=	1.0.2
@@ -10,6 +10,6 @@ MAINTAINER=	buganini@gmail.com
 COMMENT=	POP3 Client Library for PHP
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 .include <bsd.port.mk>

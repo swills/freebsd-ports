@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-Data-FormValidator-Constraints-DateTime/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Data-FormValidator-Constraints-DateTime/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-FormValidator-Constraints-DateTime
 PORTVERSION=	1.11
@@ -15,11 +15,11 @@ COMMENT=	Data::FormValidator constraints for dates and times
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-FormValidator>=0:textproc/p5-Data-FormValidator \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-FormValidator>=0:textproc/p5-Data-FormValidator \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Format-Strptime>=0:devel/p5-DateTime-Format-Strptime \
 		p5-DateTime-Format-Builder>=0:devel/p5-DateTime-Format-Builder
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

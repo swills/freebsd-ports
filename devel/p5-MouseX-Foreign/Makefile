@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MouseX-Foreign/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MouseX-Foreign/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MouseX-Foreign
 PORTVERSION=	1.000
@@ -14,8 +14,8 @@ COMMENT=	Extends non-Mouse classes as well as Mouse classes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Mouse>=0.77:devel/p5-Mouse
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mouse>=0.77:devel/p5-Mouse
 TEST_DEPENDS=	p5-Any-Moose>=0.15:devel/p5-Any-Moose \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \

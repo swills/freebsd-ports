@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman<5u623l20@gmail.com>
-# $FreeBSD: head/devel/p5-MooX-Cmd/Makefile 458477 2018-01-08 20:23:05Z bofh $
+# $FreeBSD: head/devel/p5-MooX-Cmd/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooX-Cmd
 PORTVERSION=	0.017
@@ -13,13 +13,13 @@ COMMENT=	Giving an easy Moo style way to make command organized CLI apps
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-TieCombine>=0:devel/p5-IO-TieCombine \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-TieCombine>=0:devel/p5-IO-TieCombine \
 		p5-Module-Pluggable>=4.8:devel/p5-Module-Pluggable \
 		p5-Moo>=0.009013:devel/p5-Moo \
 		p5-Package-Stash>=0.33:devel/p5-Package-Stash \
 		p5-Regexp-Common>=2011121001:textproc/p5-Regexp-Common \
 		p5-Test-LoadAllModules>=0.021:devel/p5-Test-LoadAllModules
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-TieCombine>=0:devel/p5-IO-TieCombine
 
 USES=		perl5

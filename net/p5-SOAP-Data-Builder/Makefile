@@ -1,5 +1,5 @@
 # Created by: kungfuftr <scott@surreytech.co.uk>
-# $FreeBSD: head/net/p5-SOAP-Data-Builder/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-SOAP-Data-Builder/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SOAP-Data-Builder
 PORTVERSION=	1
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Wrapper simplifying SOAP::Data and SOAP::Serialiser
 
-BUILD_DEPENDS=	p5-SOAP-Lite>=0:net/p5-SOAP-Lite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-SOAP-Lite>=0:net/p5-SOAP-Lite
 
 USES=		perl5
 USE_PERL5=	configure

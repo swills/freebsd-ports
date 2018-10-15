@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-CPANTS-Analyse/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-CPANTS-Analyse/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Module-CPANTS-Analyse
 PORTVERSION=	0.96
@@ -14,7 +14,9 @@ COMMENT=	Generate Kwalitee ratings for a distribution
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Archive-Any-Lite>=0.06:archivers/p5-Archive-Any-Lite \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
+		p5-ExtUtils-MakeMaker-CPANfile>=0.06:devel/p5-ExtUtils-MakeMaker-CPANfile
+RUN_DEPENDS=	p5-Archive-Any-Lite>=0.06:archivers/p5-Archive-Any-Lite \
 		p5-Array-Diff>=0.04:misc/p5-Array-Diff \
 		p5-CPAN-DistnameInfo>=0.06:devel/p5-CPAN-DistnameInfo \
 		p5-Class-Accessor>=0.19:devel/p5-Class-Accessor \
@@ -26,9 +28,7 @@ BUILD_DEPENDS=	p5-Archive-Any-Lite>=0.06:archivers/p5-Archive-Any-Lite \
 		p5-Set-Scalar>=0:devel/p5-Set-Scalar \
 		p5-Software-License>=0.103008:misc/p5-Software-License \
 		p5-Software-License-CCpack>=0:misc/p5-Software-License-CCpack
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-FailWarnings>=0:devel/p5-Test-FailWarnings
-BUILD_DEPENDS+=	p5-ExtUtils-MakeMaker-CPANfile>=0.06:devel/p5-ExtUtils-MakeMaker-CPANfile
 
 NO_ARCH=	yes
 USES=		perl5

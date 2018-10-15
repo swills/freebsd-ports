@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/qt5-opengl/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/qt5-opengl/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	opengl
 DISTVERSION=	${QT5_VERSION}
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 5-compatible OpenGL support module
 
-USES=		qmake:no_env qt-dist:5,base
+USES=		compiler:c++11-lang gl qmake:no_env qt-dist:5,base
 USE_GL=		gl
 USE_QT=		core gui widgets qmake_build buildtools_build
 HAS_CONFIGURE=	yes

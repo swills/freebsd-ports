@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-GraphViz-Traverse/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-GraphViz-Traverse/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	GraphViz-Traverse
 PORTVERSION=	0.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Build a GraphViz object via callback traversal
 
-BUILD_DEPENDS=	p5-GraphViz>=0:graphics/p5-GraphViz
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-GraphViz>=0:graphics/p5-GraphViz
 
 USES=		perl5
 USE_PERL5=	configure

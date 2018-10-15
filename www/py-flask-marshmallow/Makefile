@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-flask-marshmallow/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-marshmallow/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	flask-marshmallow
 PORTVERSION=	0.8.0
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Marshmallow support for Flask
 
 LICENSE=	BSD3CLAUSE

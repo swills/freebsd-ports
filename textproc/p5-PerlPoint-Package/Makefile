@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/textproc/p5-PerlPoint-Package/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/textproc/p5-PerlPoint-Package/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PerlPoint-Package
 PORTVERSION=	0.45.2
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PerlPoint is both a presentation and a documentation toolset
 
-BUILD_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
 
 USES=		perl5
 USE_PERL5=	configure

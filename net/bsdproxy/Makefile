@@ -1,5 +1,5 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/net/bsdproxy/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/bsdproxy/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	bsdproxy
 PORTVERSION=	0.04
@@ -9,6 +9,9 @@ MASTER_SITES=	http://daveb.net/bsdproxy/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	TCP proxy, demonstrating use of the kevent(2)/kqueue(2) API
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib12

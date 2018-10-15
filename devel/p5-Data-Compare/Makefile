@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/devel/p5-Data-Compare/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/devel/p5-Data-Compare/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Compare
 PORTVERSION=	1.2200
@@ -16,8 +16,8 @@ COMMENT=	Data::Compare - compare perl data structures
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Find-Rule>=0:devel/p5-File-Find-Rule
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Find-Rule>=0:devel/p5-File-Find-Rule
 
 USES=		perl5
 USE_PERL5=	configure

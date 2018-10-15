@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-MethodAttributes/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-MethodAttributes/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-MethodAttributes
 PORTVERSION=	0.31
@@ -13,10 +13,10 @@ COMMENT=	Code attribute introspection
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0.98:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.98:devel/p5-Moose \
 		p5-MooseX-Types>=0.21:devel/p5-MooseX-Types \
 		p5-namespace-autoclean>=0.08:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-MooseX-Role-Parameterized>=0:devel/p5-MooseX-Role-Parameterized \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Requires>=0:devel/p5-Test-Requires

@@ -1,5 +1,5 @@
 # Created by: Michael Haro <mharo@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Data-Buffer/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/misc/p5-Data-Buffer/Makefile 481794 2018-10-11 09:08:40Z amdmi3 $
 
 PORTNAME=	Data-Buffer
 PORTVERSION=	0.04
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Read/write buffer class
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

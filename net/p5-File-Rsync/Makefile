@@ -1,5 +1,5 @@
 # Created by: petef@FreeBSD.org
-# $FreeBSD: head/net/p5-File-Rsync/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-File-Rsync/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Rsync
 PORTVERSION=	0.49
@@ -13,9 +13,9 @@ COMMENT=	Perl convenience wrapper for the rsync(1) program
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	rsync:net/rsync \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	rsync:net/rsync \
 		p5-IPC-Run3>=0.042:devel/p5-IPC-Run3
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

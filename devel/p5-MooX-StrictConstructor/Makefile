@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-StrictConstructor/Makefile 466470 2018-04-04 18:51:59Z sunpoet $
+# $FreeBSD: head/devel/p5-MooX-StrictConstructor/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooX-StrictConstructor
 PORTVERSION=	0.010
@@ -13,10 +13,10 @@ COMMENT=	Make your Moo-based object constructors blow up on unknown attributes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
 		p5-Moo>=1.001000:devel/p5-Moo \
 		p5-strictures>=1:devel/p5-strictures
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 NO_ARCH=	yes

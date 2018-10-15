@@ -1,5 +1,5 @@
 # Created by: Konstantin Menshikov <kostjnspb@yandex.ru>
-# $FreeBSD: head/textproc/p5-HTML-HTMLDoc/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-HTML-HTMLDoc/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-HTMLDoc
 PORTVERSION=	0.10
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kostjnspb@yandex.ru
 COMMENT=	Perl interface to the htmldoc program
 
-BUILD_DEPENDS=	htmldoc>0:textproc/htmldoc
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	htmldoc>0:textproc/htmldoc
 
 USES=		perl5
 USE_PERL5=	configure

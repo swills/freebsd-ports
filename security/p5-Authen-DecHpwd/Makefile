@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/security/p5-Authen-DecHpwd/Makefile 446331 2017-07-21 17:29:45Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-DecHpwd/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-DecHpwd
 PORTVERSION=	2.007
@@ -12,10 +12,10 @@ COMMENT=	Perl module for DEC VMS password hashing
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	p5-Data-Integer>=0:devel/p5-Data-Integer \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Integer>=0:devel/p5-Data-Integer \
 		p5-Digest-CRC>=0:security/p5-Digest-CRC \
 		p5-Scalar-String>=0:devel/p5-Scalar-String
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

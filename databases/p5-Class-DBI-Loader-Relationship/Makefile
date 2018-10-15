@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/databases/p5-Class-DBI-Loader-Relationship/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/databases/p5-Class-DBI-Loader-Relationship/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-Loader-Relationship
 PORTVERSION=	1.3
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easier relationship specification in CDBI::L
 
-BUILD_DEPENDS=	p5-Class-DBI-Loader>=0:databases/p5-Class-DBI-Loader \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI-Loader>=0:databases/p5-Class-DBI-Loader \
 		p5-Lingua-EN-Inflect-Number>=0:textproc/p5-Lingua-EN-Inflect-Number
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

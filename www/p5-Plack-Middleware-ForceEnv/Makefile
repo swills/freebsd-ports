@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-ForceEnv/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-ForceEnv/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Plack-Middleware-ForceEnv
 PORTVERSION=	0.02
@@ -14,8 +14,8 @@ COMMENT=	Force set environment variables for testing
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Plack>=0.9925:www/p5-Plack
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Plack>=0.9925:www/p5-Plack
 
 NO_ARCH=	yes
 USE_PERL5=	configure

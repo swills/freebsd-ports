@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-Catalyst-Authentication-Store-LDAP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Authentication-Store-LDAP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Authentication-Store-LDAP
 PORTVERSION=	1.016
@@ -13,9 +13,9 @@ COMMENT=	Authentication from an LDAP Directory for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.10003:www/p5-Catalyst-Plugin-Authentication \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.10003:www/p5-Catalyst-Plugin-Authentication \
 		p5-perl-ldap>=0:net/p5-perl-ldap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Net-LDAP-Server-Test>=0:net/p5-Net-LDAP-Server-Test \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Catalyst-Model-LDAP>=0:www/p5-Catalyst-Model-LDAP \

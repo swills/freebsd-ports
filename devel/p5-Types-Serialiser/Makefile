@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Types-Serialiser/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Types-Serialiser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Types-Serialiser
 PORTVERSION=	1.0
@@ -15,8 +15,8 @@ COMMENT=	Simple data types for common serialisation formats
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-common-sense>=0:devel/p5-common-sense
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-common-sense>=0:devel/p5-common-sense
 
 USE_PERL5=	configure
 USES=		perl5

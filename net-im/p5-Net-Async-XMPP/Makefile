@@ -1,5 +1,5 @@
 # Created by: <ports@c0decafe.net>
-# $FreeBSD: head/net-im/p5-Net-Async-XMPP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-im/p5-Net-Async-XMPP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Async-XMPP
 PORTVERSION=	0.003
@@ -15,14 +15,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Future>=0.29:devel/p5-Future \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Future>=0.29:devel/p5-Future \
 		p5-IO-Async>=0.60:devel/p5-IO-Async \
 		p5-IO-Async-Resolver-DNS>=0.04:dns/p5-IO-Async-Resolver-DNS \
 		p5-IO-Async-SSL>=0.14:security/p5-IO-Async-SSL \
 		p5-Mixin-Event-Dispatch>=1:devel/p5-Mixin-Event-Dispatch \
 		p5-Protocol-XMPP>=0.006:net-im/p5-Protocol-XMPP \
 		p5-curry>=0:devel/p5-curry
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-CheckDeps>=0.010:devel/p5-Test-CheckDeps \
 		p5-Test-Fatal>=0.010:devel/p5-Test-Fatal
 

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 457000 2017-12-22 23:04:32Z sunpoet $
+# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	TeX-Encode
 PORTVERSION=	2.004
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTML-Parser>=3.35:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=3.35:www/p5-HTML-Parser \
 		p5-Pod-LaTeX>=0.56:textproc/p5-Pod-LaTeX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

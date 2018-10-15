@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-FailWarnings/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-FailWarnings/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-FailWarnings
 PORTVERSION=	0.008
@@ -13,8 +13,8 @@ COMMENT=	Add test failures if warnings are caught
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	p5-Capture-Tiny>=0.21:devel/p5-Capture-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Capture-Tiny>=0.21:devel/p5-Capture-Tiny
 
 USES=		perl5
 USE_PERL5=	configure

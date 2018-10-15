@@ -1,5 +1,5 @@
 # Created by: milki <milki@rescomp.berkeley.edy>
-# $FreeBSD: head/databases/p5-Class-DBI-Plugin-DeepAbstractSearch/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-Plugin-DeepAbstractSearch/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-Plugin-DeepAbstractSearch
 PORTVERSION=	0.08
@@ -15,10 +15,10 @@ COMMENT=	Provides deep_search_where() for Class::DBI
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-DBI>=0.96:databases/p5-Class-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0.96:databases/p5-Class-DBI \
 		p5-Class-DBI-Plugin>=0.02:databases/p5-Class-DBI-Plugin \
 		p5-SQL-Abstract>=1.18:databases/p5-SQL-Abstract
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 

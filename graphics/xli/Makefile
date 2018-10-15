@@ -1,9 +1,9 @@
 # Created by: Satoshi Asami <asami@FreeBSD.org>
-# $FreeBSD: head/graphics/xli/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/xli/Makefile 481832 2018-10-11 14:36:37Z tobik $
 
 PORTNAME=	xli
 PORTVERSION=	1.17.0
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	graphics
 MASTER_SITES=	DEBIAN
 DISTNAME=	xli_${PORTVERSION}+${XLI_SNAPVER:C/-//g}.orig
@@ -26,9 +26,9 @@ PLIST_FILES=	bin/xli bin/xlito bin/xview bin/xsetbg \
 XLI_SNAPVER=	2006-11-10
 
 post-install:
-	${LN} -s ${MANPREFIX}/man/man1/xli.1.gz \
+	${RLN} ${STAGEDIR}${MANPREFIX}/man/man1/xli.1.gz \
 		${STAGEDIR}${MANPREFIX}/man/man1/xview.1.gz
-	${LN} -s ${MANPREFIX}/man/man1/xli.1.gz \
+	${RLN} ${STAGEDIR}${MANPREFIX}/man/man1/xli.1.gz \
 		${STAGEDIR}${MANPREFIX}/man/man1/xsetbg.1.gz
 
 .include <bsd.port.mk>

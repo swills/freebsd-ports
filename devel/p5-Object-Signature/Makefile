@@ -1,9 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Object-Signature/Makefile 474996 2018-07-20 09:07:50Z amdmi3 $
+# $FreeBSD: head/devel/p5-Object-Signature/Makefile 481504 2018-10-08 02:22:00Z wen $
 
 PORTNAME=	Object-Signature
-PORTVERSION=	1.07
-PORTREVISION=	1
+PORTVERSION=	1.08
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

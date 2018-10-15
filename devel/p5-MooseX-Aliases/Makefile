@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Aliases/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/devel/p5-MooseX-Aliases/Makefile 481754 2018-10-10 19:10:25Z sunpoet $
 
 PORTNAME=	MooseX-Aliases
 PORTVERSION=	0.11
@@ -16,15 +16,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-COMMON_DEPENDS=	p5-Moose>=1.09:devel/p5-Moose
-BUILD_DEPENDS=	${COMMON_DEPENDS}
-RUN_DEPENDS=	${COMMON_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=1.09:devel/p5-Moose
 TEST_DEPENDS=	p5-Test-Fatal>=0.003:devel/p5-Test-Fatal \
-		p5-Test-Simple>=0.88:devel/p5-Test-Simple \
 		p5-Test-Requires>=0:devel/p5-Test-Requires
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/math/secp256k1/Makefile 460299 2018-01-29 13:23:12Z ale $
+# $FreeBSD: head/math/secp256k1/Makefile 481792 2018-10-11 08:16:57Z ale $
 
 PORTNAME=	secp256k1
-PORTVERSION=	0.1.20171222
+PORTVERSION=	0.1.20180531
 CATEGORIES=	math security java
 
 MAINTAINER=	ale@FreeBSD.org
@@ -15,7 +15,7 @@ USES=		autoreconf libtool gmake
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	bitcoin-core
-GH_TAGNAME=	c95f6f1
+GH_TAGNAME=	1e6f1f5
 
 OPTIONS_DEFINE=	GMP JAVA
 OPTIONS_DEFAULT=GMP JAVA

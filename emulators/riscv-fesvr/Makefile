@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/riscv-fesvr/Makefile 458358 2018-01-07 16:34:37Z lwhsu $
+# $FreeBSD: head/emulators/riscv-fesvr/Makefile 481272 2018-10-05 11:06:25Z lwhsu $
 
 PORTNAME=	riscv-fesvr
 DISTVERSION=	git
-PORTREVISION=	20180103
+PORTREVISION=	20181005
 CATEGORIES=	emulators
 
 MAINTAINER=	lwhsu@FreeBSD.org
@@ -12,10 +12,10 @@ LICENSE=	BSD3CLAUSE
 
 ONLY_FOR_ARCHS=	amd64
 
-GH_ACCOUNT=	freebsd-riscv
-GH_TAGNAME=	07fbcd5
-
 USES=	gmake
+
+GH_ACCOUNT=	freebsd-riscv
+GH_TAGNAME=	8c831dc
 
 HAS_CONFIGURE=	yes
 USE_GITHUB=	yes

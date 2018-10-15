@@ -1,10 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpv/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/mpv/Makefile 481467 2018-10-07 17:39:44Z cpm $
 
 PORTNAME=	mpv
-PORTVERSION=	0.29.0
+PORTVERSION=	0.29.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio
 MASTER_SITES=	https://waf.io/:waf
@@ -108,6 +107,7 @@ OPENAL_CONFIGURE_ENABLE=	openal
 OPENAL_USES=			openal
 OPENAL_VARS=			LLD_UNSAFE=yes # cf. PR 226980
 
+OPENGL_USES=			gl
 OPENGL_USE=			GL=egl,gbm,gl
 OPENGL_CONFIGURE_OFF=		--disable-gl
 OPENGL_IMPLIES=			X11
@@ -147,6 +147,7 @@ WAYLAND_LIB_DEPENDS=		libwayland-client.so:graphics/wayland \
 				libxkbcommon.so:x11/libxkbcommon
 WAYLAND_CONFIGURE_OFF=		--disable-wayland
 
+X11_USES=			gnome
 X11_USE=			XORG=x11,xext,xinerama,xorgproto,xrandr,xscrnsaver,xv,xxf86vm
 X11_VARS=			INSTALLS_ICONS=yes
 X11_CONFIGURE_OFF=		--disable-x11

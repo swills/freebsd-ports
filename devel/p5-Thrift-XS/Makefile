@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Thrift-XS/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Thrift-XS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Thrift-XS
 PORTVERSION=	1.04
@@ -12,11 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Faster Thrift binary protocol encoding and decoding
 
-BUILD_DEPENDS=	p5-Bit-Vector>=0:math/p5-Bit-Vector \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Bit-Vector>=0:math/p5-Bit-Vector \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-IO-String>=0:devel/p5-IO-String \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Proc-ProcessTable>=0:devel/p5-Proc-ProcessTable \
 		p5-Test-BinaryData>=0:devel/p5-Test-BinaryData \
 		p5-Test-Pod>=1.14:devel/p5-Test-Pod \

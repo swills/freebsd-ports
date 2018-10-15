@@ -1,5 +1,5 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/x11-fm/mtoolsfm/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-fm/mtoolsfm/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	mtoolsfm
 PORTVERSION=	1.9.5
@@ -10,6 +10,9 @@ DISTNAME=	MToolsFM-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Graphical frontend to mtools
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 RUN_DEPENDS=	mtools:emulators/mtools
 

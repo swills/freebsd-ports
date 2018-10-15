@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/py-obfsproxy-tor/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-obfsproxy-tor/Makefile 481843 2018-10-11 18:41:02Z antoine $
 
 PORTNAME=	obfsproxy
 PORTVERSION=	0.2.13

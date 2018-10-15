@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Package-Variant/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Package-Variant/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Package-Variant
 PORTVERSION=	1.003002
@@ -14,10 +14,10 @@ COMMENT=	Parameterizable packages
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Import-Into>=1:devel/p5-Import-Into \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Import-Into>=1:devel/p5-Import-Into \
 		p5-Module-Runtime>=0.013:devel/p5-Module-Runtime \
 		p5-strictures>=2:devel/p5-strictures
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Moo>=0:devel/p5-Moo \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal
 

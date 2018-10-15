@@ -1,5 +1,5 @@
 # Created by: Michael Haro <mharo@FreeBSD.org>
-# $FreeBSD: head/security/p5-Tie-EncryptedHash/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Tie-EncryptedHash/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tie-EncryptedHash
 PORTVERSION=	1.24
@@ -14,8 +14,8 @@ COMMENT=	Hashes (and objects based on hashes) with encrypting fields
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-CBC>=0:security/p5-Crypt-CBC
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-CBC>=0:security/p5-Crypt-CBC
 TEST_DEPENDS=	p5-Crypt-Blowfish>=0:security/p5-Crypt-Blowfish \
 		p5-Crypt-DES>=0:security/p5-Crypt-DES
 

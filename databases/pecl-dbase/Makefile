@@ -1,5 +1,5 @@
 # Created by: toomas <toomas@median.ee>
-# $FreeBSD: head/databases/pecl-dbase/Makefile 454850 2017-11-24 21:54:14Z joneum $
+# $FreeBSD: head/databases/pecl-dbase/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	dbase
 PORTVERSION=	5.1.1
@@ -11,6 +11,6 @@ COMMENT=	dBase database file access functions for PHP
 LICENSE=	PHP301
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 .include <bsd.port.mk>

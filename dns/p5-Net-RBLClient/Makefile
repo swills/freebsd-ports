@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/dns/p5-Net-RBLClient/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/dns/p5-Net-RBLClient/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-RBLClient
 PORTVERSION=	0.5
@@ -14,8 +14,8 @@ COMMENT=	Queries multiple Realtime Blackhole Lists in parallel
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
 
 NO_ARCH=	yes
 USE_PERL5=	configure

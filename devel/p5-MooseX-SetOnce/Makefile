@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-SetOnce/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-SetOnce/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-SetOnce
 PORTVERSION=	0.200002
@@ -14,8 +14,8 @@ COMMENT=	Write-once, read-many attributes for Moose
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0.90:devel/p5-Moose
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.90:devel/p5-Moose
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 USES=		perl5

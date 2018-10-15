@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/dns/py-adns/Makefile 479878 2018-09-16 08:03:36Z tcberner $
+# $FreeBSD: head/dns/py-adns/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	adns
 DISTVERSION=	1.4
@@ -8,7 +8,7 @@ CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Python module to resolve IPs to host names
 
 LICENSE=	GPLv2+

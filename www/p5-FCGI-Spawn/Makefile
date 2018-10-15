@@ -1,5 +1,5 @@
 # Created by: Peter <peter@vereshagin.org>
-# $FreeBSD: head/www/p5-FCGI-Spawn/Makefile 464022 2018-03-09 21:49:26Z sunpoet $
+# $FreeBSD: head/www/p5-FCGI-Spawn/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	FCGI-Spawn
 PORTVERSION=	0.16.7
@@ -14,11 +14,11 @@ COMMENT=	FastCGI server for CGI-like applications multiprocessing
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	p5-CGI-Fast>=0:www/p5-CGI-Fast \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Fast>=0:www/p5-CGI-Fast \
 		p5-Const-Fast>0:devel/p5-Const-Fast \
 		p5-FCGI>0:www/p5-FCGI \
 		p5-FCGI-ProcManager>0:www/p5-FCGI-ProcManager
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Most>0:devel/p5-Test-Most \
 		p5-Test-Strict>0:devel/p5-Test-Strict
 

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Import-Into/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Import-Into/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Import-Into
 PORTVERSION=	1.002005
@@ -15,8 +15,8 @@ COMMENT=	Import packages into other packages
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Module-Runtime>=0:devel/p5-Module-Runtime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Module-Runtime>=0:devel/p5-Module-Runtime
 
 USES=		perl5
 USE_PERL5=	configure

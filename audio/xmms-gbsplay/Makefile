@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-gbsplay/Makefile 475971 2018-07-31 06:38:00Z ehaupt $
+# $FreeBSD: head/audio/xmms-gbsplay/Makefile 481894 2018-10-12 11:46:32Z antoine $
 
 PORTNAME=	gbsplay
 PORTVERSION=	0.0.8
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	xmms-
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	XMMS plugin for playing Nintendo Game Boy(TM) audio
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

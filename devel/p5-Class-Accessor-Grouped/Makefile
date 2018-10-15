@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Accessor-Grouped/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-Accessor-Grouped/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Accessor-Grouped
 PORTVERSION=	0.10012
@@ -15,11 +15,11 @@ COMMENT=	Lets you build groups of accessors
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Module-Runtime>=0.012:devel/p5-Module-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Module-Runtime>=0.012:devel/p5-Module-Runtime \
 		p5-Class-XSAccessor>=1.19:devel/p5-Class-XSAccessor \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-Sub-Name>=0.05:devel/p5-Sub-Name
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0.31:devel/p5-Test-Exception
 
 USES=		perl5

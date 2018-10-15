@@ -1,5 +1,5 @@
 # Created by: Alex Kapranoff <kappa@rambler-co.ru>
-# $FreeBSD: head/devel/p5-Set-Array/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Set-Array/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Set-Array
 PORTVERSION=	0.30
@@ -14,9 +14,9 @@ COMMENT=	Arrays as objects with set operations
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Try-Tiny>=0.11:lang/p5-Try-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Try-Tiny>=0.11:lang/p5-Try-Tiny \
 		p5-Want>=0:devel/p5-Want
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Pod>=0:devel/p5-Test-Pod
 

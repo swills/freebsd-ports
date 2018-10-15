@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-single_auth/Makefile 471174 2018-05-30 21:19:25Z feld $
+# $FreeBSD: head/www/redmine-single_auth/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	single_auth
 PORTVERSION=	2.0.1
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	redmine-
 DISTNAME=	${BB_COMMIT}
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SSO authentication method for Redmine
 
 RUN_DEPENDS=	redmine-a_common_libs>0:www/redmine-a_common_libs

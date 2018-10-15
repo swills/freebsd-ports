@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/games/gnomebreakout/Makefile 477567 2018-08-19 10:58:05Z tobik $
+# $FreeBSD: head/games/gnomebreakout/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gnomebreakout
 PORTVERSION=	0.5.3
@@ -14,6 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME version of the classic breakout game
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		gettext-tools pathfix pkgconfig
 USE_GNOME=	gnomeprefix libgnomeui

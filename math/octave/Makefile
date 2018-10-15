@@ -1,9 +1,9 @@
 # Created by: chuckr@FreeBSD.org
-# $FreeBSD: head/math/octave/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/math/octave/Makefile 481261 2018-10-05 05:24:46Z yuri $
 
 PORTNAME=	octave
 PORTVERSION=	${OCTAVE_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math java
 MASTER_SITES=	GNU
 
@@ -20,7 +20,7 @@ RUN_DEPENDS=	gnuplot:math/gnuplot \
 		gsed:textproc/gsed \
 		${LOCALBASE}/bin/makeinfo:print/texinfo
 LIB_DEPENDS=	libGraphicsMagick.so:graphics/GraphicsMagick \
-		libarpack.so:math/arpack \
+		libarpack.so:math/arpack-ng \
 		libcurl.so:ftp/curl \
 		libfftw3.so:math/fftw3 \
 		libfftw3f.so:math/fftw3-float \

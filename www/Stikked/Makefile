@@ -1,9 +1,8 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/www/Stikked/Makefile 456372 2017-12-14 20:49:24Z dvl $
+# $FreeBSD: head/www/Stikked/Makefile 481244 2018-10-04 19:38:03Z dvl $
 
 PORTNAME=	Stikked
-DISTVERSION=	0.12.0
-PORTREVISION=	1
+DISTVERSION=	0.13.0
 CATEGORIES=	www
 
 MAINTAINER=	dvl@FreeBSD.org

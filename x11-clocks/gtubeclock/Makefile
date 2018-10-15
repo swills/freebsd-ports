@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/x11-clocks/gtubeclock/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/x11-clocks/gtubeclock/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gtubeclock
 PORTVERSION=	0.9.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.bonnyswan.com/gtubeclock/downloads/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nixie tube clock for GNOME
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		pkgconfig pathfix
 USE_XORG=	x11

@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-Store-Memcached-Fast/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-Store-Memcached-Fast/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Session-Store-Memcached-Fast
 PORTVERSION=	0.02
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Memcached storage backend for session data
 
-BUILD_DEPENDS=	p5-Cache-Memcached-Fast>=0:databases/p5-Cache-Memcached-Fast \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache-Memcached-Fast>=0:databases/p5-Cache-Memcached-Fast \
 		p5-Catalyst-Plugin-Session>=0.01:www/p5-Catalyst-Plugin-Session \
 		p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

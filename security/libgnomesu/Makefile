@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/libgnomesu/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/security/libgnomesu/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #    $MCom: ports/security/libgnomesu/Makefile,v 1.2 2007/05/19 21:36:21 marcus Exp $
 
 PORTNAME=	libgnomesu
@@ -14,6 +14,9 @@ COMMENT=	Library and frontend for running commands as root
 LICENSE=	LGPL20+ PD
 LICENSE_COMB=	multi
 LICENSE_FILE_LGPL20+ =	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		gmake gettext-tools libtool localbase pathfix pkgconfig
 GNU_CONFIGURE=	yes

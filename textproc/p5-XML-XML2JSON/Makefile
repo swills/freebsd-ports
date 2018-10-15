@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-XML2JSON/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-XML2JSON/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-XML2JSON
 PORTVERSION=	0.06
@@ -14,8 +14,8 @@ COMMENT=	Convert XML into JSON (and back again) using XML::LibXML
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-LibXML>=1.59:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-LibXML>=1.59:textproc/p5-XML-LibXML
 
 # the order of options follows the search order of JSON module by XML::XML2JSON
 OPTIONS_MULTI=	JSON_BACKEND

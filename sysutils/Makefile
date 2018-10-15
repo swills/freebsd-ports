@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/sysutils/Makefile 482130 2018-10-15 00:58:09Z lifanov $
 #
 
     COMMENT = System utilities
@@ -42,6 +42,7 @@
     SUBDIR += ansible23
     SUBDIR += ansible24
     SUBDIR += ansible25
+    SUBDIR += ansible26
     SUBDIR += anvil
     SUBDIR += apachetop
     SUBDIR += apcpwr
@@ -296,6 +297,7 @@
     SUBDIR += dvtm
     SUBDIR += dwatch
     SUBDIR += dwatch-gource
+    SUBDIR += dwatch-json
     SUBDIR += dwatch-pwsnoop
     SUBDIR += e2fsprogs
     SUBDIR += ec2-scripts
@@ -909,6 +911,8 @@
     SUBDIR += php71-posix
     SUBDIR += php72-fileinfo
     SUBDIR += php72-posix
+    SUBDIR += php73-fileinfo
+    SUBDIR += php73-posix
     SUBDIR += phpfpm_exporter
     SUBDIR += phybs
     SUBDIR += pick
@@ -1008,6 +1012,7 @@
     SUBDIR += py-ptyprocess
     SUBDIR += py-pytsk
     SUBDIR += py-pywatchman
+    SUBDIR += py-pyznap
     SUBDIR += py-queuelib
     SUBDIR += py-ranger
     SUBDIR += py-salt
@@ -1236,6 +1241,7 @@
     SUBDIR += ssync
     SUBDIR += stalepid
     SUBDIR += stanchion
+    SUBDIR += stepsync
     SUBDIR += stmpclean
     SUBDIR += storcli
     SUBDIR += stow
@@ -1344,6 +1350,7 @@
     SUBDIR += u-boot-pandaboard
     SUBDIR += u-boot-pcduino3
     SUBDIR += u-boot-pine64
+    SUBDIR += u-boot-pinebook
     SUBDIR += u-boot-riotboard
     SUBDIR += u-boot-rpi
     SUBDIR += u-boot-rpi2

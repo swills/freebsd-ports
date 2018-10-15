@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-call-ui/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/ktp-call-ui/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-call-ui
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,7 +13,7 @@ LIB_DEPENDS=	libKTpCommonInternals.so:net-im/ktp-common-internals \
 		libfarstream-0.2.so:net-im/farstream \
 		libtelepathy-farstream.so:net-im/telepathy-farstream \
 		libtelepathy-glib.so:net-im/telepathy-glib \
-		libtelepathy-qt5-farstream.so:net-im/telepathy-qt5
+		libtelepathy-qt5-farstream.so:net-im/telepathy-qt@qt5
 
 USES=		cmake:outsource compiler:c++11-lang gettext kde:5 pkgconfig \
 		python:2.7 qt:5 tar:xz

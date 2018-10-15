@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/multimedia/ffmpeg/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/ffmpeg/Makefile 482030 2018-10-14 06:59:59Z riggs $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	4.0.2
-PORTREVISION=	4
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	https://ffmpeg.org/releases/
@@ -39,7 +39,7 @@ OPTIONS_DEFINE=	ALSA AMR_NB AMR_WB AOM ASS BEIGNET BS2B CACA CDIO CELT CHROMAPRI
 
 OPTIONS_DEFAULT=	FONTCONFIG FREETYPE FREI0R GMP GNUTLS ICONV \
 			OPENCV OPTIMIZED_CFLAGS OPUS RTCPU THEORA V4L VAAPI VDPAU \
-			VORBIS VPX X264 X265 XVID
+			VORBIS VPX X264 X265 XCB XVID
 
 .if !exists(${.CURDIR:H:H}/net/srt)
 # https://git.ffmpeg.org/gitweb/ffmpeg.git/commitdiff/a2fc8dbae853

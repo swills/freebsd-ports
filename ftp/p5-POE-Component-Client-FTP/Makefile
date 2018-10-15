@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/ftp/p5-POE-Component-Client-FTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/ftp/p5-POE-Component-Client-FTP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Client-FTP
 PORTVERSION=	0.24
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-POE>=0.38:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0.38:devel/p5-POE
 TEST_DEPENDS=	p5-Test-POE-Client-TCP>=0.1:devel/p5-Test-POE-Client-TCP \
 		p5-Test-POE-Server-TCP>=0.16:devel/p5-Test-POE-Server-TCP
 

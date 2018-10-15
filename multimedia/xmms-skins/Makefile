@@ -1,5 +1,5 @@
 # Created by: Filippo Natali <filippo@widestore.net>
-# $FreeBSD: head/multimedia/xmms-skins/Makefile 472671 2018-06-18 04:16:19Z linimon $
+# $FreeBSD: head/multimedia/xmms-skins/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	xmms-skins
 PORTVERSION=	0.1
@@ -92,6 +92,9 @@ EXTRACT_ONLY=
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Skins for X Multimedia System (XMMS)
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 CONFLICTS_INSTALL=	xmms-skins-huge-*
 

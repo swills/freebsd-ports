@@ -1,5 +1,5 @@
 # Created by: thinker@branda.to
-# $FreeBSD: head/devel/py-subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
+# $FreeBSD: head/devel/py-subversion/Makefile 481744 2018-10-10 15:39:51Z lev $
 
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PORTREVISION=	0
@@ -10,7 +10,7 @@ COMMENT=	Python bindings for version control system
 USES+=		python
 USE_PYTHON=	flavors py3kplist
 
-PORTREVISION_110=	1
+PORTREVISION_110=	0
 PORTREVISION_19=	0
 
 SVN_BUILD_BINDINGS=	yes

@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Forest/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Forest/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Forest
 PORTVERSION=	0.10
@@ -15,9 +15,9 @@ COMMENT=	Collection of n-ary tree related modules
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
 		p5-MooseX-Clone>=0.05:devel/p5-MooseX-Clone
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-Test-Exception>=0:devel/p5-Test-Exception
 

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/graphics/p5-Image-Magick-Iterator/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/p5-Image-Magick-Iterator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Image-Magick-Iterator
 PORTVERSION=	0.01
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Sequentially read Image::Magick object from a filehandle
 
-BUILD_DEPENDS=	ImageMagick>=0:graphics/ImageMagick \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	ImageMagick>=0:graphics/ImageMagick \
 		p5-Image-PBMlib>=1.05:graphics/p5-Image-PBMlib
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

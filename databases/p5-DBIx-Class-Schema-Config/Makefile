@@ -1,5 +1,5 @@
 # Created by: Espen Tagestad <espen@tagestad.no>
-# $FreeBSD: head/databases/p5-DBIx-Class-Schema-Config/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-Schema-Config/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Class-Schema-Config
 PORTVERSION=	0.001008
@@ -14,10 +14,10 @@ COMMENT=	Credential Management for DBIx::Class
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Config-Any>=0.23:devel/p5-Config-Any \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-Any>=0.23:devel/p5-Config-Any \
 		p5-DBIx-Class>=0.08100:databases/p5-DBIx-Class \
 		p5-File-HomeDir>0:devel/p5-File-HomeDir
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Config-Any>=0.23:devel/p5-Config-Any \
 		p5-DBD-SQLite>0:databases/p5-DBD-SQLite \
 		p5-Test-MockObject>=1.09:devel/p5-Test-MockObject

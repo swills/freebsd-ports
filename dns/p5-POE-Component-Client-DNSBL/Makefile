@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/dns/p5-POE-Component-Client-DNSBL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-POE-Component-Client-DNSBL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Client-DNSBL
 PORTVERSION=	1.08
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl POE component that provides non-blocking DNSBL lookups
 
-BUILD_DEPENDS=	p5-POE>=1.004:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=1.004:devel/p5-POE \
 		p5-Net-IP-Minimal>=0:net/p5-Net-IP-Minimal \
 		p5-POE-Component-Client-DNS>=0:dns/p5-POE-Component-Client-DNS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

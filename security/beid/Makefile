@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/beid/Makefile 477146 2018-08-14 09:21:13Z tijl $
+# $FreeBSD: head/security/beid/Makefile 481740 2018-10-10 14:46:36Z tijl $
 
 PORTNAME=	beid
-PORTVERSION=	4.4.5
+PORTVERSION=	4.4.9
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

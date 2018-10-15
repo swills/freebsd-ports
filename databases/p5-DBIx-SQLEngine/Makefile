@@ -1,5 +1,5 @@
 # Created by: Hansjoerg Pehofer <hansjoerg.pehofer@uibk.ac.at>
-# $FreeBSD: head/databases/p5-DBIx-SQLEngine/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-SQLEngine/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-SQLEngine
 PORTVERSION=	0.93
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extends DBI with high-level operations
 
-BUILD_DEPENDS=	p5-Class-MakeMethods>=0:devel/p5-Class-MakeMethods \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-MakeMethods>=0:devel/p5-Class-MakeMethods \
 		p5-Class-MixinFactory>=0:devel/p5-Class-MixinFactory \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-DBIx-AnyDBD>=0:databases/p5-DBIx-AnyDBD
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

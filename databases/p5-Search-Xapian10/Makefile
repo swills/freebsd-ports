@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Search-Xapian10/Makefile 480476 2018-09-23 09:47:45Z sunpoet $
+# $FreeBSD: head/databases/p5-Search-Xapian10/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Search-Xapian
 PORTVERSION=	1.0.23.0
@@ -15,8 +15,8 @@ COMMENT=	Perl XS frontend to the Xapian C++ search library
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	xapian-core10>=1.0.22:databases/xapian-core10
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	xapian-core10>=1.0.22:databases/xapian-core10
 
 CONFLICTS_INSTALL=	p5-Search-Xapian12
 

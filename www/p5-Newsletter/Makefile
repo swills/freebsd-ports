@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/www/p5-Newsletter/Makefile 471707 2018-06-04 18:17:13Z sunpoet $
+# $FreeBSD: head/www/p5-Newsletter/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Newsletter
 PORTVERSION=	0.033
@@ -14,10 +14,10 @@ COMMENT=	Simple website based Newsletter interface
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Type>0:devel/p5-File-Type \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Type>0:devel/p5-File-Type \
 		p5-MIME-Explode>0:mail/p5-MIME-Explode \
 		p5-MIME-Lite>0:mail/p5-MIME-Lite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

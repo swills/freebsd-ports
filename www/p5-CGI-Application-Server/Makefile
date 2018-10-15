@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/www/p5-CGI-Application-Server/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CGI-Application-Server/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Application-Server
 PORTVERSION=	0.063
@@ -14,12 +14,12 @@ COMMENT=	Simple HTTP server for developing with CGI::Application
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CGI-Application>4.21:www/p5-CGI-Application \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Application>4.21:www/p5-CGI-Application \
 		p5-CGI-Application-Plugin-Redirect>0:www/p5-CGI-Application-Plugin-Redirect \
 		p5-HTTP-Message>0:www/p5-HTTP-Message \
 		p5-HTTP-Server-Simple>=0.18:www/p5-HTTP-Server-Simple \
 		p5-HTTP-Server-Simple-Static>=0.02:www/p5-HTTP-Server-Simple-Static
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-CGI-Application>0:www/p5-CGI-Application \
 		p5-CGI-Application-Dispatch>0:www/p5-CGI-Application-Dispatch \
 		p5-CGI-Application-Plugin-Redirect>0:www/p5-CGI-Application-Plugin-Redirect \

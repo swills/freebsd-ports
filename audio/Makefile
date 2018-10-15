@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 480742 2018-09-26 15:25:03Z naddy $
+# $FreeBSD: head/audio/Makefile 481937 2018-10-12 20:16:28Z jbeich $
 #
 
     COMMENT = Audio tools
@@ -315,6 +315,7 @@
     SUBDIR += gstreamer1-plugins-twolame
     SUBDIR += gstreamer1-plugins-vorbis
     SUBDIR += gstreamer1-plugins-wavpack
+    SUBDIR += gstreamer1-plugins-webrtcdsp
     SUBDIR += gtick
     SUBDIR += gtkguitune
     SUBDIR += gtkpod
@@ -869,6 +870,7 @@
     SUBDIR += waveplay
     SUBDIR += wavpack
     SUBDIR += wavplay
+    SUBDIR += webrtc-audio-processing
     SUBDIR += whysynth
     SUBDIR += wildmidi
     SUBDIR += wmalbum

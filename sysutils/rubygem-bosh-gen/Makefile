@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-bosh-gen/Makefile 476098 2018-07-31 23:52:50Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-bosh-gen/Makefile 482083 2018-10-14 16:32:04Z sunpoet $
 
 PORTNAME=	bosh-gen
-PORTVERSION=	0.99.2
+PORTVERSION=	0.101.1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -20,9 +20,10 @@ RUN_DEPENDS=	rubygem-activesupport4>=4.0:devel/rubygem-activesupport4 \
 		rubygem-readwritesettings>=3.0:devel/rubygem-readwritesettings \
 		rubygem-thor>=0:devel/rubygem-thor
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/bosh-gen
 

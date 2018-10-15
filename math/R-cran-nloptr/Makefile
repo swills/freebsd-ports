@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-nloptr/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-nloptr/Makefile 481705 2018-10-10 10:13:08Z tota $
 
 PORTNAME=	nloptr
-PORTVERSION=	1.0.4
-PORTREVISION=	2
+PORTVERSION=	1.2.1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -15,8 +14,5 @@ LICENSE=	LGPL3
 LIB_DEPENDS=	libnlopt.so:math/nlopt
 
 USES=		cran:auto-plist,compiles pkgconfig
-
-post-patch:
-	@${REINPLACE_CMD} -e 's/<<</</' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

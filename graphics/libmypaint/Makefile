@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libmypaint/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/graphics/libmypaint/Makefile 481840 2018-10-11 17:10:44Z kwm $
 
 PORTNAME=	libmypaint
 PORTVERSION=	1.3.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
 USES=		compiler:c11 gmake gnome libtool localbase pkgconfig tar:xz
-USE_GNOME=	glib20 intltool introspection:build
+USE_GNOME=	glib20 introspection:build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
@@ -26,6 +26,7 @@ OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	NLS
 
 NLS_USES=	gettext
-NLS_CONFIGURE_ENABLE=	nls
+NLS_USE=	GNOME=intltool
+NLS_CONFIGURE_ENABLE=	nls i18n
 
 .include <bsd.port.mk>

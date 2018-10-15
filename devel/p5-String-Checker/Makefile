@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/devel/p5-String-Checker/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-String-Checker/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	String-Checker
 PORTVERSION=	0.03
@@ -14,8 +14,8 @@ COMMENT=	Perl module implementing an extensible string validation interface
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Date-Manip>=0:devel/p5-Date-Manip
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Date-Manip>=0:devel/p5-Date-Manip
 
 USES=		perl5
 USE_PERL5=	configure

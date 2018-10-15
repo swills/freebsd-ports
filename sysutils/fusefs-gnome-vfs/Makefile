@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-gnome-vfs/Makefile 433935 2017-02-12 09:01:29Z amdmi3 $
+# $FreeBSD: head/sysutils/fusefs-gnome-vfs/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	fusefs-gnome-vfs
 PORTVERSION=	0.1
@@ -13,6 +13,9 @@ COMMENT=	Interface between FUSE and the Gnome VFS 2.0
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 RPORTNAME=	gnome-vfs-fuse
 WRKSRC=		${WRKDIR}/${RPORTNAME}

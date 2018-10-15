@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Dev-Bollocks/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Dev-Bollocks/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dev-Bollocks
 PORTVERSION=	0.06
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to generate bollocks straight from middle management
 
-BUILD_DEPENDS=	p5-Math-String>=0:math/p5-Math-String
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-String>=0:math/p5-Math-String
 
 USES=		perl5
 USE_PERL5=	configure

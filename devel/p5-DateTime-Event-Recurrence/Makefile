@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Event-Recurrence/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Event-Recurrence/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Event-Recurrence
 PORTVERSION=	0.19
@@ -13,9 +13,9 @@ COMMENT=	Perl DateTime extension for computing basic recurrences
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DateTime>=0.27:devel/p5-DateTime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0.27:devel/p5-DateTime \
 		p5-DateTime-Set>=0.3600:devel/p5-DateTime-Set
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Validator/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-Validator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Validator
 PORTVERSION=	1.07
@@ -14,8 +14,8 @@ COMMENT=	Rule based validator on type constraint system
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Mouse>=0.93:devel/p5-Mouse
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mouse>=0.93:devel/p5-Mouse
 TEST_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
 		p5-Test-Requires>=0:devel/p5-Test-Requires
 

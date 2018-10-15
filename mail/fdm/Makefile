@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/fdm/Makefile 448968 2017-08-30 10:33:51Z danfe $
+# $FreeBSD: head/mail/fdm/Makefile 481691 2018-10-10 06:10:46Z dinoex $
 
 PORTNAME=	fdm
 PORTVERSION=	1.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 
 MAINTAINER=	dinoex@FreeBSD.org

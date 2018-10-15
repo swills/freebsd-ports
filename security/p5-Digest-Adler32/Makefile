@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan
-# $FreeBSD: head/security/p5-Digest-Adler32/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Digest-Adler32/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Digest-Adler32
 PORTVERSION=	0.03
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Perl extension for Adler32 hash algorithm
 
-BUILD_DEPENDS=	p5-Digest>=0:security/p5-Digest
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest>=0:security/p5-Digest
 
 USES=		perl5
 USE_PERL5=	configure

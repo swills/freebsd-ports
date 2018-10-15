@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-redcarpet_formatter/Makefile 415114 2016-05-13 14:12:03Z feld $
+# $FreeBSD: head/www/redmine-redcarpet_formatter/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	redcarpet_formatter
 PORTVERSION=	2.0.1
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=v
 CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Redmine plugin to support Markdown
 
 LICENSE=	GPLv2

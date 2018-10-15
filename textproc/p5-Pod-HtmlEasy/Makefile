@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-HtmlEasy/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Pod-HtmlEasy/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-HtmlEasy
 PORTVERSION=	1.0108
@@ -14,13 +14,13 @@ COMMENT=	Generate personalized HTML from PODs
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Slurp>=9999.13:devel/p5-File-Slurp \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Slurp>=9999.13:devel/p5-File-Slurp \
 		p5-IPC-Run>=0.8:devel/p5-IPC-Run \
 		p5-Exporter-Easy>=0:devel/p5-Exporter-Easy \
 		p5-Readonly>=1.03:devel/p5-Readonly \
 		p5-Regexp-Common>=2.12:textproc/p5-Regexp-Common \
 		p5-Pod-Escapes>=0:textproc/p5-Pod-Escapes
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 tar:tgz
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/www/p5-WWW-Google-Video/Makefile 471714 2018-06-04 18:17:58Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Google-Video/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Google-Video
 PORTVERSION=	0.4
@@ -14,8 +14,8 @@ COMMENT=	Interface to fetch the Google Video Information
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 USES=		perl5
 USE_PERL5=	configure

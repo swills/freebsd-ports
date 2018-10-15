@@ -1,5 +1,5 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/deskutils/gtweakui/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/deskutils/gtweakui/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #    $MCom: ports/deskutils/gtweakui/Makefile,v 1.2 2007/05/19 21:36:03 marcus Exp $
 
 PORTNAME=	gTweakUI
@@ -11,6 +11,9 @@ DIST_SUBDIR=	gnome2
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Collection of simple dialogs as a front end to GConf
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		gmake pathfix pkgconfig tar:bzip2
 USE_GNOME=	gnomeprefix libgnomeui gconf2 libglade2 intlhack

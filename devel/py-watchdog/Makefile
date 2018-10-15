@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-watchdog/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-watchdog/Makefile 481993 2018-10-13 15:54:20Z nivit $
 
 PORTNAME=	watchdog
-PORTVERSION=	0.8.3
+PORTVERSION=	0.9.0
 DISTVERSIONPREFIX=	v
 PORTREVISION=	0
 CATEGORIES=	devel
@@ -16,20 +16,21 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argh>=0.26.1:devel/py-argh@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pathtools>=0.1.2:devel/py-pathtools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR}
 
+USES=		python
+USE_GITHUB=	yes
+USE_PYTHON=	autoplist distutils
+
 DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pathtools>=0.1.2:devel/py-pathtools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sphinx>=1.4.4:textproc/py-sphinx@${PY_FLAVOR}
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 
 GH_ACCOUNT=	gorakhargosh
 
+NO_ARCH=	yes
+
 OPTIONS_DEFINE=	DOCS
 
 PORTDOCS=	*
-
-USE_GITHUB=	yes
-USES=		python
-USE_PYTHON=	autoplist distutils
-NO_ARCH=	yes
 
 post-build-DOCS-on:
 	(cd ${WRKSRC}/docs ; ${MAKE_CMD} SPHINXBUILD=sphinx-build-${PYTHON_VER} html)

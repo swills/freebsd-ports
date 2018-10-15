@@ -1,5 +1,5 @@
 # Created by: Christopher Boumenot <boumenot@gmail.com>
-# $FreeBSD: head/devel/p5-CPAN-SQLite/Makefile 451495 2017-10-08 07:58:40Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-SQLite/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPAN-SQLite
 PORTVERSION=	0.199
@@ -15,12 +15,12 @@ COMMENT=	Search CPAN using a SQLite database
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite	\
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite	\
 		p5-File-HomeDir>=0:devel/p5-File-HomeDir \
 		p5-CPAN-DistnameInfo>=0:devel/p5-CPAN-DistnameInfo \
 		p5-libwww>=0:www/p5-libwww \
 		p5-PathTools>=0:devel/p5-PathTools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Recent-Uploads/Makefile 450677 2017-09-26 15:56:01Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Recent-Uploads/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPAN-Recent-Uploads
 PORTVERSION=	0.14
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-URI>=1.56:net/p5-URI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=1.56:net/p5-URI \
 		p5-YAML-LibYAML>=0.64:textproc/p5-YAML-LibYAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-HTTP-Daemon>=0:www/p5-HTTP-Daemon \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message
 

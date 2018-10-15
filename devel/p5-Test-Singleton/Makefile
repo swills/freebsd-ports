@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Test-Singleton/Makefile 435909 2017-03-11 15:58:00Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Singleton/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Singleton
 PORTVERSION=	1.03
@@ -15,8 +15,8 @@ COMMENT=	Test for Singleton classes
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	p5-Class-Singleton>=0:devel/p5-Class-Singleton
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Singleton>=0:devel/p5-Class-Singleton
 
 NO_ARCH=	yes
 USE_PERL5=	configure

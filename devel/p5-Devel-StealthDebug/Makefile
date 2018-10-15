@@ -1,5 +1,5 @@
 # Created by: Alex Kapranoff <alex@kapranoff.ru>
-# $FreeBSD: head/devel/p5-Devel-StealthDebug/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-StealthDebug/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-StealthDebug
 PORTVERSION=	1.008
@@ -14,8 +14,8 @@ COMMENT=	Simple non-intrusive debug module
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Filter-Simple>=0:textproc/p5-Filter-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Filter-Simple>=0:textproc/p5-Filter-Simple
 
 USES=		perl5
 USE_PERL5=	configure

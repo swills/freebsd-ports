@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/textproc/p5-Lingua-EN-NamedEntity/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-NamedEntity/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Lingua-EN-NamedEntity
 PORTVERSION=	1.93
@@ -13,8 +13,8 @@ COMMENT=	Basic Named Entity Extraction algorithm
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Lingua-Stem>=0:textproc/p5-Lingua-Stem
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-Stem>=0:textproc/p5-Lingua-Stem
 
 NO_ARCH=	yes
 USES=		perl5

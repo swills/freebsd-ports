@@ -1,5 +1,5 @@
 # Created by: Andrey Kostenko <andrey@kostenko.name>
-# $FreeBSD: head/archivers/p5-Archive-SimpleExtractor/Makefile 451678 2017-10-10 11:19:56Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-SimpleExtractor/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Archive-SimpleExtractor
 PORTVERSION=	0.11
@@ -14,9 +14,9 @@ COMMENT=	Simple module for extract archives
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Archive-Rar>=2.02:archivers/p5-Archive-Rar \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Archive-Rar>=2.02:archivers/p5-Archive-Rar \
 		p5-Archive-Zip>=1.30:archivers/p5-Archive-Zip
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage
 

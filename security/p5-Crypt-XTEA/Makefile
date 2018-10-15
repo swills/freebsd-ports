@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/p5-Crypt-XTEA/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-XTEA/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Crypt-XTEA
 PORTVERSION=	0.0108
@@ -13,8 +13,8 @@ COMMENT=	Implementation of the eXtended Tiny Encryption Algorithm
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Scalar-Util-Numeric>=0.40:devel/p5-Scalar-Util-Numeric
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Scalar-Util-Numeric>=0.40:devel/p5-Scalar-Util-Numeric
 TEST_DEPENDS=	p5-Crypt-CBC>=0:security/p5-Crypt-CBC
 
 USES=		perl5

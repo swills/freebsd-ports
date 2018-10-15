@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-RPSL-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-RPSL-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	RPSL-Parser
 PORTVERSION=	0.04000
@@ -15,8 +15,8 @@ COMMENT=	Router Policy Specification Language (RFC2622) Parser
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0.31:devel/p5-Class-Accessor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0.31:devel/p5-Class-Accessor
 
 PORTSCOUT=	skipv:0.039001,0.039_001,0.19,0.28,0.29,0.32,0.38,0.39
 

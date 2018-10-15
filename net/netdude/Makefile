@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/netdude/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/net/netdude/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	netdude
 PORTVERSION=	0.5.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	NETwork DUmp data Displayer and Editor for tcpdump tracefiles
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl \
 		libnetdude.so:net/libnetdude

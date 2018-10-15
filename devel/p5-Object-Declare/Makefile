@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Object-Declare/Makefile 442352 2017-06-01 23:51:57Z sunpoet $
+# $FreeBSD: head/devel/p5-Object-Declare/Makefile 481517 2018-10-08 07:34:11Z wen $
 
 PORTNAME=	Object-Declare
-PORTVERSION=	0.23
+PORTVERSION=	0.24
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

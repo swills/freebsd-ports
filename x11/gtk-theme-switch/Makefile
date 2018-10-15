@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11/gtk-theme-switch/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11/gtk-theme-switch/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gtk-theme-switch
 PORTVERSION=	1.0.1
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	1
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command line tool for switching GTK+ themes
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

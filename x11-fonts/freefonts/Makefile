@@ -1,9 +1,9 @@
 # Created by: erich@FreeBSD.org
-# $FreeBSD: head/x11-fonts/freefonts/Makefile 424512 2016-10-23 11:25:18Z olgeni $
+# $FreeBSD: head/x11-fonts/freefonts/Makefile 481060 2018-10-01 19:53:38Z tobik $
 
 PORTNAME=	freefonts
 PORTVERSION=	0.10
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://download.gimp.org/pub/%SUBDIR%/ \
 		ftp://ftp.sunet.se/pub/gnu/%SUBDIR%/   \

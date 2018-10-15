@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/editors/conglomerate/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/editors/conglomerate/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	conglomerate
 PORTVERSION=	0.9.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/Conglomerate%20XML%20Editor/${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME2 visual XML editor with emphasis on DocBook editing
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 INSTALLS_OMF=	yes
 USES=		desktop-file-utils gettext-tools gmake pathfix pkgconfig

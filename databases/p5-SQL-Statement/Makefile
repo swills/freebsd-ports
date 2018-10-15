@@ -1,5 +1,5 @@
 # Created by: wolman@cs.washington.edu
-# $FreeBSD: head/databases/p5-SQL-Statement/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-SQL-Statement/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SQL-Statement
 PORTVERSION=	1.412
@@ -15,10 +15,10 @@ LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/ARTISTIC-1.0
 LICENSE_FILE_GPLv1+ =	${WRKSRC}/GPL-1
 
-BUILD_DEPENDS=	p5-Clone>=0.30:devel/p5-Clone \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Clone>=0.30:devel/p5-Clone \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime \
 		p5-Params-Util>=1.00:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

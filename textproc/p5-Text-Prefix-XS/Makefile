@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Prefix-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-Prefix-XS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Prefix-XS
 PORTVERSION=	0.15
@@ -14,8 +14,8 @@ COMMENT=	Fast prefix searching
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Digest-SHA1>=1:security/p5-Digest-SHA1
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-SHA1>=1:security/p5-Digest-SHA1
 TEST_DEPENDS=	p5-Test-Deep>=0.108:devel/p5-Test-Deep
 
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-XML-Parser-EasyTree/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Parser-EasyTree/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Parser-EasyTree
 PORTVERSION=	0.01
@@ -14,8 +14,8 @@ COMMENT=	Easier tree style for XML::Parser
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
 USES=		perl5
 USE_PERL5=	configure

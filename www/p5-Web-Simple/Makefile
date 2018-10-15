@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Web-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Web-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Web-Simple
 PORTVERSION=	0.033
@@ -13,12 +13,12 @@ COMMENT=	Quick and easy way to build simple web applications
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTTP-Body>=1.22:www/p5-HTTP-Body \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Body>=1.22:www/p5-HTTP-Body \
 		p5-Moo>=0.009014:devel/p5-Moo \
 		p5-Plack>=0.9968:www/p5-Plack \
 		p5-Syntax-Keyword-Gather>=1.001000:devel/p5-Syntax-Keyword-Gather \
 		p5-strictures>=1:devel/p5-strictures
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Data-Dumper-Concise>=2.20:devel/p5-Data-Dumper-Concise
 
 NO_ARCH=	yes

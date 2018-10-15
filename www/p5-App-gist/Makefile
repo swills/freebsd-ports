@@ -1,5 +1,5 @@
 # Created by: Denny Lin <dennylin93@hs.ntnu.edu.tw>
-# $FreeBSD: head/www/p5-App-gist/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-App-gist/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	App-gist
 PORTVERSION=	0.16
@@ -15,12 +15,12 @@ COMMENT=	GitHub Gist creator
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-App-Cmd>=0:devel/p5-App-Cmd \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-App-Cmd>=0:devel/p5-App-Cmd \
 		p5-Class-Load>=0:devel/p5-Class-Load \
 		p5-Moo>=0:devel/p5-Moo \
 		p5-Pithub>=0:devel/p5-Pithub \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 CONFLICTS=	gist-[0-9]*
 

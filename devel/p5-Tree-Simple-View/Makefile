@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Tree-Simple-View/Makefile 457581 2017-12-30 06:42:18Z sunpoet $
+# $FreeBSD: head/devel/p5-Tree-Simple-View/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tree-Simple-View
 PORTVERSION=	0.19
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-Throwable>=0.10:devel/p5-Class-Throwable \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Throwable>=0.10:devel/p5-Class-Throwable \
 		p5-Tree-Simple>=1.31:devel/p5-Tree-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0.15:devel/p5-Test-Exception \
 		p5-Test-LongString>=0:devel/p5-Test-LongString
 

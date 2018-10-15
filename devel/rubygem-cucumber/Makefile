@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-cucumber/Makefile 475822 2018-07-29 19:24:17Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cucumber/Makefile 481973 2018-10-13 10:00:43Z sunpoet $
 
 PORTNAME=	cucumber
 PORTVERSION=	3.1.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Behaviour Driven Development with elegance and joy
 
 LICENSE=	MIT

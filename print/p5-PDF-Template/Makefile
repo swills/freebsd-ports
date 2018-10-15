@@ -1,5 +1,5 @@
 # Created by: Yuichiro AIZAWA <yaizawa@mdbl.sfc.keio.ac.jp>
-# $FreeBSD: head/print/p5-PDF-Template/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/p5-PDF-Template/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PDF-Template
 PORTVERSION=	0.22
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	yaizawa@2004.jukuin.keio.ac.jp
 COMMENT=	PDF layout system that uses the same data structures as HTML::Template
 
-BUILD_DEPENDS+=	pdflib-perl>=0:print/pdflib-perl \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	pdflib-perl>=0:print/pdflib-perl \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

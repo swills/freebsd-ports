@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/d0_blind_id/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/security/d0_blind_id/Makefile 482125 2018-10-14 23:17:19Z jbeich $
 
 PORTNAME=	d0_blind_id
-PORTVERSION=	1.0
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.0
 PORTREVISION=	1
 CATEGORIES=	security devel
 
@@ -13,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	divVerent
-GH_TAGNAME=	ff1ce7e
 
 USES=		autoreconf libtool pathfix ssl
 GNU_CONFIGURE=	yes

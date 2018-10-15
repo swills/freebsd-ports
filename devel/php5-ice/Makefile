@@ -1,5 +1,5 @@
 # Created by: DIrk Ye <dirk.ye@gmail.com>
-# $FreeBSD: head/devel/php5-ice/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/php5-ice/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
@@ -24,7 +24,7 @@ PLIST=		${.CURDIR}/pkg-plist
 MAKE_ARGS+=	PHP_EXT_DIR=${PHP_EXT_DIR} ICE_HOME=${LOCALBASE} \
 		PHP_HOME=${LOCALBASE} OPTIMIZE=yes
 USES+=	php:build,flavors
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 BUILD_WRKSRC=	${WRKSRC}/php
 INSTALL_WRKSRC=	${WRKSRC}/php
 

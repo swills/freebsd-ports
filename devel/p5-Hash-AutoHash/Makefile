@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <frederic@culot.org>
-# $FreeBSD: head/devel/p5-Hash-AutoHash/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Hash-AutoHash/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Hash-AutoHash
 PORTVERSION=	1.17
@@ -14,9 +14,9 @@ COMMENT=	Object-oriented access to real and tied hashes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-List-MoreUtils>=0.33:lang/p5-List-MoreUtils \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-List-MoreUtils>=0.33:lang/p5-List-MoreUtils \
 		p5-Tie-ToObject>=0.03:devel/p5-Tie-ToObject
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0.11:devel/p5-Test-Deep \
 		p5-Tie-Hash-MultiValue>=1.02:devel/p5-Tie-Hash-MultiValue
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-XML/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Test-XML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-XML
 PORTVERSION=	0.08
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Compare XML in perl tests
 
-BUILD_DEPENDS=	p5-XML-SemanticDiff>=0:textproc/p5-XML-SemanticDiff \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-SemanticDiff>=0:textproc/p5-XML-SemanticDiff \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

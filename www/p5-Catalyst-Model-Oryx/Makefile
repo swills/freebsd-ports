@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/www/p5-Catalyst-Model-Oryx/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Model-Oryx/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Model-Oryx
 PORTVERSION=	0.01
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Oryx model component for Catalyst
 
-BUILD_DEPENDS=	p5-Oryx>=0:databases/p5-Oryx \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Oryx>=0:databases/p5-Oryx \
 		p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-Catalyst-Devel>=1.00:www/p5-Catalyst-Devel
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

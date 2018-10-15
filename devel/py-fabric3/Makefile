@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-fabric3/Makefile 425178 2016-11-03 00:18:13Z feld $
+# $FreeBSD: head/devel/py-fabric3/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	fabric3
 DISTVERSION=	1.12.post1
@@ -8,7 +8,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Fabric3-${DISTVERSION}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python tool for remote execution and deployment
 
 LICENSE=	BSD3CLAUSE

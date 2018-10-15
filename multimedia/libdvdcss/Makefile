@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libdvdcss/Makefile 458572 2018-01-09 20:59:05Z jpaetzel $
+# $FreeBSD: head/multimedia/libdvdcss/Makefile 481509 2018-10-08 03:01:24Z jpaetzel $
 
 PORTNAME=	libdvdcss
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.videolan.org/pub/${PORTNAME}/${PORTVERSION}/
 

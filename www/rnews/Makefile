@@ -1,6 +1,6 @@
 
 # Created by: Vincent Tantardini <vinc@FreeBSD-fr.org>
-# $FreeBSD: head/www/rnews/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/rnews/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	rnews
 PORTVERSION=	1.01
@@ -11,7 +11,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Server-side RSS aggregator written in PHP with MySQL
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 NO_BUILD=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/net/p5-Amazon-SQS-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Amazon-SQS-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Amazon-SQS-Simple
 PORTVERSION=	1.06
@@ -15,11 +15,11 @@ COMMENT=	OO API for accessing the Amazon Simple Queue Service
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Digest-HMAC>=0:security/p5-Digest-HMAC \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-HMAC>=0:security/p5-Digest-HMAC \
 		p5-URI>=0:net/p5-URI \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Date-Piece/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Date-Piece/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Date-Piece
 PORTVERSION=	0.0.3
@@ -16,8 +16,8 @@ COMMENT=	Perl5 module containing date manipulation routines
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Date-Simple>=3.03:devel/p5-Date-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Date-Simple>=3.03:devel/p5-Date-Simple
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/science/linsmith/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/science/linsmith/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	linsmith
 PORTVERSION=	0.99.30
@@ -11,6 +11,9 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Smith charting program
 
 LICENSE=	GPLv2+
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		gettext pkgconfig
 USE_GNOME=	libgnomeui libxml2

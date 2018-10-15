@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-POE-Component-Daemon/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-POE-Component-Daemon/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Daemon
 PORTVERSION=	0.1400
@@ -14,8 +14,8 @@ COMMENT=	Handles all the housework for a daemon in POE
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-POE>=1:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=1:devel/p5-POE
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	eg/forking eg/preforking

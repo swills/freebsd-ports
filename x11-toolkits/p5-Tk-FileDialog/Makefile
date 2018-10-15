@@ -1,5 +1,5 @@
 # Created by: minter@lunenburg.org
-# $FreeBSD: head/x11-toolkits/p5-Tk-FileDialog/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Tk-FileDialog/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-FileDialog
 PORTVERSION=	1.3
@@ -14,8 +14,8 @@ COMMENT=	Tk::FileDialog - A file selector dialog for perl/Tk
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
 
 USES=		perl5
 USE_PERL5=	configure

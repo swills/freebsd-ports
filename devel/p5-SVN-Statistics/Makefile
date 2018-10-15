@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.org>
-# $FreeBSD: head/devel/p5-SVN-Statistics/Makefile 471628 2018-06-04 18:07:22Z sunpoet $
+# $FreeBSD: head/devel/p5-SVN-Statistics/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-Statistics
 PORTVERSION=	0.041
@@ -15,11 +15,11 @@ COMMENT=	SVN::Statistics - perl module to create subversion statistics
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-subversion>=0:devel/p5-subversion \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-subversion>=0:devel/p5-subversion \
 		p5-RRDTool-OO>=0:devel/p5-RRDTool-OO \
 		p5-Data-Dumper-Simple>=0:devel/p5-Data-Dumper-Simple \
 		p5-IO-Toolkit>=0:devel/p5-IO-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

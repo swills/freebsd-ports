@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Carp-Always-Color/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Carp-Always-Color/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Carp-Always-Color
 PORTVERSION=	0.08
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Carp-Always>=0.10:devel/p5-Carp-Always
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Carp-Always>=0.10:devel/p5-Carp-Always
 TEST_DEPENDS=	p5-IO-Pty-Easy>=0:devel/p5-IO-Pty-Easy
 
 NO_ARCH=	yes

@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org> et al.
-# $FreeBSD: head/graphics/shotwell/Makefile 480313 2018-09-21 21:34:47Z cmt $
+# $FreeBSD: head/graphics/shotwell/Makefile 481030 2018-10-01 13:46:40Z cmt $
 
 PORTNAME=	shotwell
-PORTVERSION=	0.30.0
+PORTVERSION=	0.30.1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 
@@ -32,11 +32,15 @@ LIB_DEPENDS=	libgio-2.0.so:devel/glib20 \
 		libxml2.so:textproc/libxml2
 
 USES=		gettext desktop-file-utils gnome meson ninja pkgconfig \
-		sqlite tar:xz
+		python:3.4+,build shebangfix sqlite tar:xz
 USE_GNOME=	cairo dconf gtk30 gnomedocutils
 USE_GSTREAMER1=	yes
 USE_LDCONFIG=	yes
 USE_XORG=	x11
+
+SHEBANG_FILES=	build-aux/meson/postinstall.py
+python_OLD_CMD=	"/usr/bin/env python3"
+python_CMD=	${SETENV} ${PYTHON_VERSION}
 
 MESON_ARGS=	-Dudev=false -Dextra-plugins=true -Dinstall-apport-hook=false \
 		-Dpublishers=facebook,flickr,gallery3,picasa,piwigo,rajce,tumblr,yandex,youtube

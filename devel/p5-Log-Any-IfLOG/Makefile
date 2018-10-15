@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Any-IfLOG/Makefile 471608 2018-06-04 18:04:24Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Any-IfLOG/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Log-Any-IfLOG
 PORTVERSION=	0.08
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Log-Any>=0:devel/p5-Log-Any
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Any>=0:devel/p5-Log-Any
 
 NO_ARCH=	yes
 USE_PERL5=	configure

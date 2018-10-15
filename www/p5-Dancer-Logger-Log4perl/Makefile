@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-Dancer-Logger-Log4perl/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Dancer-Logger-Log4perl/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dancer-Logger-Log4perl
 PORTVERSION=	0.9.0
@@ -13,9 +13,9 @@ COMMENT=	Dancer logging adapter for Log::Log4perl
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Dancer>=1.2001:www/p5-Dancer \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Dancer>=1.2001:www/p5-Dancer \
 		p5-Log-Log4perl>=0:devel/p5-Log-Log4perl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

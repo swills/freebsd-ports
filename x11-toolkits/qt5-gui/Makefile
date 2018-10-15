@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-gui/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	gui
 DISTVERSION=	${QT5_VERSION}
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libxkbcommon.so:x11/libxkbcommon
 RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
-USES=		jpeg localbase qmake:no_env qt-dist:5,base
+USES=		compiler:c++11-lang jpeg localbase qmake:no_env qt-dist:5,base
 USE_GL=		gl egl
 USE_GNOME=	glib20
 USE_QT=		core dbus network qmake_build buildtools_build

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-XML-SemanticDiff/Makefile 477388 2018-08-16 23:42:31Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-SemanticDiff/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-SemanticDiff
 PORTVERSION=	1.0007
@@ -13,8 +13,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
 NO_ARCH=	yes
 USES=		perl5

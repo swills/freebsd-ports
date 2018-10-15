@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-GeoNames/Makefile 445927 2017-07-15 19:08:59Z sunpoet $
+# $FreeBSD: head/misc/p5-Geo-GeoNames/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Geo-GeoNames
 PORTVERSION=	1.120
@@ -14,10 +14,10 @@ COMMENT=	Perform geographical queries using GeoNames Web Services
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-JSON>=1.14:converters/p5-JSON \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=1.14:converters/p5-JSON \
 		p5-Mojolicious>=0:www/p5-Mojolicious \
 		p5-XML-Simple>=2.13:textproc/p5-XML-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

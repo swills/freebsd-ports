@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 480718 2018-09-26 06:36:51Z loader $
+# $FreeBSD: head/benchmarks/Makefile 482026 2018-10-14 05:45:10Z yuri $
 #
 
     COMMENT = Benchmarking tools
@@ -36,6 +36,7 @@
     SUBDIR += iozone21
     SUBDIR += iperf
     SUBDIR += iperf3
+    SUBDIR += libcelero
     SUBDIR += libmicro
     SUBDIR += linux-vdbench
     SUBDIR += lmbench

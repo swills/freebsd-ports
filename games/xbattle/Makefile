@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/games/xbattle/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/xbattle/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xbattle
 PORTVERSION=	5.4.1
@@ -12,6 +12,9 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Concurrent multi-player battle strategy game
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	XBATTLE_LICENSE
 LICENSE_NAME=	XBATTLE License

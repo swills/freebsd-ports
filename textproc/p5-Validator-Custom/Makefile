@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/textproc/p5-Validator-Custom/Makefile 458972 2018-01-14 14:14:27Z sunpoet $
+# $FreeBSD: head/textproc/p5-Validator-Custom/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Validator-Custom
 PORTVERSION=	1.0201
@@ -14,8 +14,8 @@ COMMENT=	Validator::Custom for simple data validation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Object-Simple>=3.0621:devel/p5-Object-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Object-Simple>=3.0621:devel/p5-Object-Simple
 TEST_DEPENDS=	p5-JSON>=2:converters/p5-JSON \
 		p5-Test-Pod>=1.22:devel/p5-Test-Pod
 

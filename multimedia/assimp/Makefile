@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/assimp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/multimedia/assimp/Makefile 481119 2018-10-02 14:50:32Z yuri $
 
 PORTNAME=	assimp
 DISTVERSIONPREFIX=	v
@@ -13,8 +13,6 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libminizip.so:archivers/minizip
-
-BROKEN_powerpc64=	Does not build: error: ByteSwap has not been declared
 
 USES=		cmake compiler:c++11-lib localbase:ldflags pkgconfig
 USE_GITHUB=	yes

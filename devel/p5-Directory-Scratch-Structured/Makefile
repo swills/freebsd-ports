@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Directory-Scratch-Structured/Makefile 457737 2017-12-31 22:23:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Directory-Scratch-Structured/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Directory-Scratch-Structured
 PORTVERSION=	0.04
@@ -14,12 +14,12 @@ COMMENT=	Creates temporary files and directories from a structured description
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
 		p5-Sub-Install>=0:devel/p5-Sub-Install \
 		p5-Data-TreeDumper>=0:devel/p5-Data-TreeDumper \
 		p5-Directory-Scratch>=0:devel/p5-Directory-Scratch
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings \
 		p5-Test-Strict>=0:devel/p5-Test-Strict \

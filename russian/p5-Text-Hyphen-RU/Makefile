@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/russian/p5-Text-Hyphen-RU/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/russian/p5-Text-Hyphen-RU/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Hyphen-RU
 PORTVERSION=	0.11
@@ -13,8 +13,8 @@ COMMENT=	Determine positions for hyphens inside russian words
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	p5-Text-Hyphen>=0:textproc/p5-Text-Hyphen
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Hyphen>=0:textproc/p5-Text-Hyphen
 
 USE_PERL5=	configure
 USES=		perl5

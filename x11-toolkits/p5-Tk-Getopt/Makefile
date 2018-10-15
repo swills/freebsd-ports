@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/x11-toolkits/p5-Tk-Getopt/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Tk-Getopt/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-Getopt
 PORTVERSION=	0.51
@@ -13,9 +13,9 @@ COMMENT=	User configuration window for Tk with interface to Getopt::Long
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Tk>=804:x11-toolkits/p5-Tk \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tk>=804:x11-toolkits/p5-Tk \
 		p5-Tk-FontDialog>=0:x11-toolkits/p5-Tk-FontDialog
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

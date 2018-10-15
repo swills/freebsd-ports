@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/p5-Font-TTF/Makefile 423725 2016-10-10 21:13:26Z adamw $
+# $FreeBSD: head/x11-fonts/p5-Font-TTF/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Font-TTF
 PORTVERSION=	1.06
@@ -11,8 +11,8 @@ COMMENT=	Perl module for TrueType font hacking
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String
 
 USES=		perl5
 USE_PERL5=	configure

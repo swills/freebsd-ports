@@ -1,5 +1,5 @@
 # Created by: scheidell@secnap.net
-# $FreeBSD: head/textproc/p5-PDF-Table/Makefile 468865 2018-05-02 18:39:00Z danilo $
+# $FreeBSD: head/textproc/p5-PDF-Table/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PDF-Table
 DISTVERSION=	0.10.1
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Utility class for building table layouts in a PDF::API2 object
 
-BUILD_DEPENDS=	p5-PDF-API2>=0:textproc/p5-PDF-API2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PDF-API2>=0:textproc/p5-PDF-API2
 
 USES=		perl5
 USE_PERL5=	configure

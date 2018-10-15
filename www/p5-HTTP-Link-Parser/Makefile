@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Link-Parser/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Link-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Link-Parser
 PORTVERSION=	0.200
@@ -13,10 +13,10 @@ COMMENT=	Parse HTTP Link headers
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	p5-URI>=1.30:net/p5-URI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=1.30:net/p5-URI \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-RDF-Trine>=0:textproc/p5-RDF-Trine
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

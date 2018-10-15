@@ -1,5 +1,5 @@
 # Created by: Vany <ivan@serezhkin.com>
-# $FreeBSD: head/textproc/p5-Perl-Critic-Bangs/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Perl-Critic-Bangs/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Perl-Critic-Bangs
 PORTVERSION=	1.08
@@ -14,8 +14,8 @@ COMMENT=	Collection of handy Perl::Critic policies
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Perl-Critic>=0:textproc/p5-Perl-Critic
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Perl-Critic>=0:textproc/p5-Perl-Critic
 TEST_DEPENDS=	p5-Test-Perl-Critic>=0:textproc/p5-Test-Perl-Critic \
 		p5-Perl-Critic-Deprecated>=0:devel/p5-Perl-Critic-Deprecated
 

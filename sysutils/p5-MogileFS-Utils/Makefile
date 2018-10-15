@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/p5-MogileFS-Utils/Makefile 464229 2018-03-12 07:43:10Z trociny $
+# $FreeBSD: head/sysutils/p5-MogileFS-Utils/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MogileFS-Utils
 PORTVERSION=	2.30
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	trociny@FreeBSD.org
 COMMENT=	MogileFS tools
 
-BUILD_DEPENDS=	p5-MogileFS-Client>=1.16:sysutils/p5-MogileFS-Client \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MogileFS-Client>=1.16:sysutils/p5-MogileFS-Client \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

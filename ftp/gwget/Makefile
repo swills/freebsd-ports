@@ -1,5 +1,5 @@
 # Created by: Radek Kozlowski <radek@raadradd.com>
-# $FreeBSD: head/ftp/gwget/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/ftp/gwget/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gwget
 PORTVERSION=	1.0.4
@@ -10,6 +10,9 @@ DIST_SUBDIR=	gnome2
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME wget front-end
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib
 RUN_DEPENDS=	wget:ftp/wget

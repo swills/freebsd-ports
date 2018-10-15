@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Digest-Bcrypt/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Digest-Bcrypt/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Digest-Bcrypt
 PORTVERSION=	1.209
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Crypt-Eksblowfish>0:security/p5-Crypt-Eksblowfish
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-Eksblowfish>0:security/p5-Crypt-Eksblowfish
 TEST_DEPENDS=	p5-Try-Tiny>=0.24:lang/p5-Try-Tiny
 
 USES=		perl5

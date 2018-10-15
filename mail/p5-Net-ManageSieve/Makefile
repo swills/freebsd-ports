@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/mail/p5-Net-ManageSieve/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Net-ManageSieve/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-ManageSieve
 PORTVERSION=	0.13
@@ -13,8 +13,8 @@ COMMENT=	ManageSieve Protocol Client
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL
 
 NO_ARCH=	yes
 USES=		perl5

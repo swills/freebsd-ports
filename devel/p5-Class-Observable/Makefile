@@ -1,5 +1,5 @@
 # Created by: Travis Campbell <hcoyote@ghostar.org>
-# $FreeBSD: head/devel/p5-Class-Observable/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Class-Observable/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Observable
 PORTVERSION=	1.04
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hcoyote@ghostar.org
 COMMENT=	Allow other classes and objects to respond to events in yours
 
-BUILD_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA
 
 USES=		perl5
 USE_PERL5=	configure

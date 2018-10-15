@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-Module-Extract-Use/Makefile 453126 2017-10-29 16:10:24Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Extract-Use/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Module-Extract-Use
 PORTVERSION=	1.043
@@ -14,8 +14,8 @@ COMMENT=	Pull out the modules a module explicitly uses
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-PPI>=0:textproc/p5-PPI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PPI>=0:textproc/p5-PPI
 TEST_DEPENDS=	p5-Test-Pod>0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>0:devel/p5-Test-Pod-Coverage
 

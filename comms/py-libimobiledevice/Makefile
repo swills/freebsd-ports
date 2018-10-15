@@ -1,10 +1,10 @@
-# $FreeBSD: head/comms/py-libimobiledevice/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/comms/py-libimobiledevice/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTREVISION=	0
 CATEGORIES=	comms python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python bindings for libimobiledevice
 
 LIB_DEPENDS=	libimobiledevice.so:${MASTER_PORT}

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Bigtop/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Bigtop/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Bigtop
 PORTVERSION=	0.38
@@ -14,7 +14,8 @@ COMMENT=	Web application data language processor
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Config-General>=0:devel/p5-Config-General \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-General>=0:devel/p5-Config-General \
 		p5-IO-Prompt>=0:devel/p5-IO-Prompt \
 		p5-Parse-RecDescent>=0:devel/p5-Parse-RecDescent \
 		p5-File-HomeDir>=0:devel/p5-File-HomeDir \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-Config-General>=0:devel/p5-Config-General \
 		p5-Inline-TT>=0.06:devel/p5-Inline-TT \
 		p5-Template-Toolkit>=2.0:www/p5-Template-Toolkit \
 		p5-HTTP-Server-Simple>0.27:www/p5-HTTP-Server-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

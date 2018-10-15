@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Net-Plurk/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Net-Plurk/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Plurk
 PORTVERSION=	0.11
@@ -14,7 +14,8 @@ COMMENT=	Perl interface to Plurk API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-AnyEvent-HTTP>=0:www/p5-AnyEvent-HTTP \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent-HTTP>=0:www/p5-AnyEvent-HTTP \
 		p5-DateTime-Format-Strptime>=0:devel/p5-DateTime-Format-Strptime \
 		p5-Digest-HMAC>=0:security/p5-Digest-HMAC \
 		p5-HTTP-Lite>=0:www/p5-HTTP-Lite \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-AnyEvent-HTTP>=0:www/p5-AnyEvent-HTTP \
 		p5-Net-SSLeay>=0:security/p5-Net-SSLeay \
 		p5-URI>=0:net/p5-URI \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

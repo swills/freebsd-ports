@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 480260 2018-09-21 11:42:26Z tobik $
+# $FreeBSD: head/x11-fonts/Makefile 481613 2018-10-09 08:50:12Z miwi $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -137,6 +137,7 @@
     SUBDIR += linuxlibertine-g
     SUBDIR += lohit
     SUBDIR += manu-gothica
+    SUBDIR += materialdesign-ttf
     SUBDIR += meslo
     SUBDIR += mgopen
     SUBDIR += mkbold
@@ -168,6 +169,7 @@
     SUBDIR += profont
     SUBDIR += proggy_fonts
     SUBDIR += proggy_fonts-ttf
+    SUBDIR += psftools
     SUBDIR += py-QtAwesome
     SUBDIR += py-bdflib
     SUBDIR += roboto-fonts-ttf

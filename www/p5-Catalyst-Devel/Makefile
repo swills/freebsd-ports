@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Devel/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Devel/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Devel
 PORTVERSION=	1.39
@@ -13,7 +13,9 @@ COMMENT=	Catalyst Development Tools
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Action-RenderView>=0.10:www/p5-Catalyst-Action-RenderView \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
+		p5-Module-Install>=1.02:devel/p5-Module-Install
+RUN_DEPENDS=	p5-Catalyst-Action-RenderView>=0.10:www/p5-Catalyst-Action-RenderView \
 		p5-Catalyst-Plugin-ConfigLoader>=0.30:www/p5-Catalyst-Plugin-ConfigLoader \
 		p5-Catalyst-Plugin-Static-Simple>=0.28:www/p5-Catalyst-Plugin-Static-Simple \
 		p5-Catalyst-Runtime>=5.90001:www/p5-Catalyst-Runtime \
@@ -28,8 +30,6 @@ BUILD_DEPENDS=	p5-Catalyst-Action-RenderView>=0.10:www/p5-Catalyst-Action-Render
 		p5-YAML-Tiny>=0:textproc/p5-YAML-Tiny \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean \
 		p5-namespace-clean>=0:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
-BUILD_DEPENDS+=	p5-Module-Install>=1.02:devel/p5-Module-Install
 TEST_DEPENDS=	p5-IPC-Run3>=0:devel/p5-IPC-Run3 \
 		p5-Test-Fatal>=0.003:devel/p5-Test-Fatal
 

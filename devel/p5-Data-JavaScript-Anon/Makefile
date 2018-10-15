@@ -1,5 +1,5 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/p5-Data-JavaScript-Anon/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-JavaScript-Anon/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-JavaScript-Anon
 PORTVERSION=	1.03
@@ -14,9 +14,9 @@ COMMENT=	Dump big dumb Perl structs to anonymous JavaScript structs
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Default>=1.51:devel/p5-Class-Default \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Default>=1.51:devel/p5-Class-Default \
 		p5-Params-Util>=0.01:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

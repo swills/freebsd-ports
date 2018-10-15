@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/devel/p5-Data-Rx/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-Rx/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Rx
 PORTVERSION=	0.200007
@@ -13,10 +13,10 @@ COMMENT=	Perl implementation of Rx schema system
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Find-Rule>=0:devel/p5-File-Find-Rule \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Find-Rule>=0:devel/p5-File-Find-Rule \
 		p5-JSON>=2:converters/p5-JSON \
 		p5-Number-Tolerant>=0:devel/p5-Number-Tolerant
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny
 

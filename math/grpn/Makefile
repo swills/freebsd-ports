@@ -1,5 +1,5 @@
 # Created by: Chris D. Faulhaber <jedgar@fxp.org>
-# $FreeBSD: head/math/grpn/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/math/grpn/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	grpn
 PORTVERSION=	1.1.2
@@ -9,6 +9,9 @@ MASTER_SITES=	http://lashwhip.com/grpn/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK+-based reverse polish notation (RPN) calculator
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USE_GNOME=	gtk12
 

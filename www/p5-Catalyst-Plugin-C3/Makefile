@@ -1,5 +1,5 @@
 # Created by: lbr@FreeBSD.org
-# $FreeBSD: head/www/p5-Catalyst-Plugin-C3/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-C3/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-C3
 PORTVERSION=	0.03
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Catalyst Plugin to subvert NEXT to use Class::C3
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7006:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.7006:www/p5-Catalyst-Runtime \
 		p5-Class-C3>=0.19:devel/p5-Class-C3
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-WebService-ISBNDB/Makefile 430503 2017-01-03 18:36:39Z sunpoet $
+# $FreeBSD: head/www/p5-WebService-ISBNDB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WebService-ISBNDB
 PORTVERSION=	0.34
@@ -11,13 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to access isbndb.com
 
-BUILD_DEPENDS=	p5-Business-ISBN>=1.80:misc/p5-Business-ISBN \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Business-ISBN>=1.80:misc/p5-Business-ISBN \
 		p5-Class-Std>=0.0.8:devel/p5-Class-Std \
 		p5-Error>=0.17:lang/p5-Error \
 		p5-libwww>=5.801:www/p5-libwww \
 		p5-XML-LibXML>=1.58:textproc/p5-XML-LibXML \
 		p5-TimeDate>=1.16:devel/p5-TimeDate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/oqtplayer/Makefile 427086 2016-11-25 09:00:41Z amdmi3 $
+# $FreeBSD: head/multimedia/oqtplayer/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	OQTPlayer
 PORTVERSION=	0.5
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME:tl}-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small, not functional, video OpenQuicktime (TM) player
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	LGPL20 # version not really specified
 
