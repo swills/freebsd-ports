@@ -1,9 +1,8 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/math/p5-Statistics-ChiSquare/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/math/p5-Statistics-ChiSquare/Makefile 481604 2018-10-09 06:17:26Z wen $
 
 PORTNAME=	Statistics-ChiSquare
-PORTVERSION=	0.6
-PORTREVISION=	1
+PORTVERSION=	1.0000
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

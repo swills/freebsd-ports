@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-CookiedSession/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-CookiedSession/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-CookiedSession
 PORTVERSION=	0.35
@@ -11,12 +11,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Catalyst Plugin for storing sessions in a browser cookie
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Crypt-CBC>=0:security/p5-Crypt-CBC \
 		p5-Crypt-Rijndael>=0:security/p5-Crypt-Rijndael \
 		p5-JSON-XS-VersionOneAndTwo>=0:converters/p5-JSON-XS-VersionOneAndTwo \
 		p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

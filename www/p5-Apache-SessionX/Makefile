@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/www/p5-Apache-SessionX/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Apache-SessionX/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Apache-SessionX
 PORTVERSION=	2.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extented persistence framework for session data
 
-BUILD_DEPENDS=	p5-Apache-Session>=0:www/p5-Apache-Session
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Apache-Session>=0:www/p5-Apache-Session
 
 USES=		perl5
 USE_PERL5=	configure

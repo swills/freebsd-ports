@@ -1,11 +1,11 @@
-# $FreeBSD: head/net-p2p/transmission/Makefile 474727 2018-07-16 11:08:17Z tcberner $
+# $FreeBSD: head/net-p2p/transmission/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	transmission
 DISTVERSION=	2.94
 PORTREVISION=	1
 CATEGORIES=	net-p2p
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Meta-port for Transmission BitTorrent client
 
 LICENSE=	GPLv2+ MIT

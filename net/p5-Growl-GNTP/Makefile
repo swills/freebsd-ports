@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Growl-GNTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Growl-GNTP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Growl-GNTP
 PORTVERSION=	0.21
@@ -13,9 +13,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Crypt-CBC>=2.29:security/p5-Crypt-CBC \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-CBC>=2.29:security/p5-Crypt-CBC \
 		p5-Data-UUID>=0.149:devel/p5-Data-UUID
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuildtiny

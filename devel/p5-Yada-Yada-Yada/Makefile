@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Yada-Yada-Yada/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Yada-Yada-Yada/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Yada-Yada-Yada
 PORTVERSION=	1.00
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Adds a Yada-Yada-Yada operator (...) to Perl 5
 
-BUILD_DEPENDS=	p5-Filter-Simple>=0:textproc/p5-Filter-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Filter-Simple>=0:textproc/p5-Filter-Simple
 
 USES=		perl5
 USE_PERL5=	configure

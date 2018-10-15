@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 480496 2018-09-23 11:14:53Z sunpoet $
+# $FreeBSD: head/Mk/bsd.port.mk 481023 2018-10-01 09:53:10Z rene $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1180,7 +1180,7 @@ OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < ${SRC
 .endif
 _EXPORTED_VARS+=	OSVERSION
 
-.if (${OPSYS} == FreeBSD && (${OSVERSION} < 1004000 || (${OSVERSION} >= 1100000 && ${OSVERSION} < 1101001))) || \
+.if (${OPSYS} == FreeBSD && (${OSVERSION} < 1004000 || (${OSVERSION} >= 1100000 && ${OSVERSION} < 1102000))) || \
     (${OPSYS} == DragonFly && ${DFLYVERSION} < 400400)
 _UNSUPPORTED_SYSTEM_MESSAGE=	Ports Collection support for your ${OPSYS} version has ended, and no ports\
 								are guaranteed to build on this system. Please upgrade to a supported release.

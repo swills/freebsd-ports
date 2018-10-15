@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Data-Phrasebook-Loader-YAML/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Data-Phrasebook-Loader-YAML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Phrasebook-Loader-YAML
 PORTVERSION=	0.13
@@ -13,9 +13,9 @@ COMMENT=	Loader class for phrasebook implementations using YAML
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Data-Phrasebook>=0.24:textproc/p5-Data-Phrasebook \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Phrasebook>=0.24:textproc/p5-Data-Phrasebook \
 		p5-YAML>=0.35:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Distribution>=0:devel/p5-Test-Distribution
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: svmohr
-# $FreeBSD: head/comms/gscmxx/Makefile 435066 2017-02-28 14:58:33Z sunpoet $
+# $FreeBSD: head/comms/gscmxx/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gscmxx
 PORTVERSION=	0.4.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	svmohr@gmail.com
 COMMENT=	Graphical frontend for scmxx
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 RUN_DEPENDS=	p5-Image-Size>=0:graphics/p5-Image-Size \
 		p5-Gtk-Perl>=0:x11-toolkits/p5-Gtk-Perl

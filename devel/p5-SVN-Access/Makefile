@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-SVN-Access/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-SVN-Access/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-Access
 PORTVERSION=	0.11
@@ -13,9 +13,9 @@ COMMENT=	Perl extension to manipulate SVN Access files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Tie-IxHash>=1.21:devel/p5-Tie-IxHash \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tie-IxHash>=1.21:devel/p5-Tie-IxHash \
 		p5-subversion>=0:devel/p5-subversion
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

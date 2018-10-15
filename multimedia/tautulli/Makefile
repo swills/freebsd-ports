@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/multimedia/tautulli/Makefile 466727 2018-04-07 14:14:23Z feld $
+# $FreeBSD: head/multimedia/tautulli/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	tautulli
 PORTVERSION=	2.0.28
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=v
 PORTREVISION=	0
 CATEGORIES=	multimedia python
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Monitoring, analytics, and notifications for Plex Media Server
 
 LICENSE=	GPLv3

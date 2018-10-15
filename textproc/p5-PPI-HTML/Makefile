@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-PPI-HTML/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-PPI-HTML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PPI-HTML
 PORTVERSION=	1.08
@@ -15,10 +15,10 @@ COMMENT=	Generate syntax-highlighted HTML for Perl using PPI
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PPI>=0.990:textproc/p5-PPI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PPI>=0.990:textproc/p5-PPI \
 		p5-CSS-Tiny>=0.10:textproc/p5-CSS-Tiny \
 		p5-Params-Util>=0.05:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/www/p5-Template-Plugin-MP3/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Template-Plugin-MP3/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-MP3
 PORTVERSION=	1.02
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	TT Plugin that wraps around the MP3::Info module
 
-BUILD_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit \
 		p5-MP3-Info>=0:audio/p5-MP3-Info
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

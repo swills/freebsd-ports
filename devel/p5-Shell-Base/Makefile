@@ -1,5 +1,5 @@
 # Created by: Christopher Nehren <apeiron@comcast.net>
-# $FreeBSD: head/devel/p5-Shell-Base/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Shell-Base/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Shell-Base
 PORTVERSION=	0.05
@@ -14,9 +14,9 @@ COMMENT=	Perl module implementing a simple command shell
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Term-Size>=0:devel/p5-Term-Size \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Term-Size>=0:devel/p5-Term-Size \
 		p5-Text-Shellwords>=0:textproc/p5-Text-Shellwords
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

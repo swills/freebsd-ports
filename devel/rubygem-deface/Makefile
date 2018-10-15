@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-deface/Makefile 479220 2018-09-08 00:15:03Z sunpoet $
+# $FreeBSD: head/devel/rubygem-deface/Makefile 482070 2018-10-14 16:30:15Z sunpoet $
 
 PORTNAME=	deface
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	devel rubygems www
 MASTER_SITES=	RG
 

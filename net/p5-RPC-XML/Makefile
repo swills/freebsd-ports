@@ -1,5 +1,5 @@
 # Created by: Dominic Mitchell <dom@happygiraffe.net>
-# $FreeBSD: head/net/p5-RPC-XML/Makefile 430158 2016-12-31 20:10:16Z sunpoet $
+# $FreeBSD: head/net/p5-RPC-XML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	RPC-XML
 PORTVERSION=	0.80
@@ -13,9 +13,9 @@ COMMENT=	XML-RPC client and server library for Perl
 LICENSE=	ART20 LGPL21
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-Parser>=2.31:textproc/p5-XML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=2.31:textproc/p5-XML-Parser \
 		p5-libwww>=5.834:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DateTime-Format-ISO8601>=0.07:devel/p5-DateTime-Format-ISO8601
 
 NO_ARCH=	yes

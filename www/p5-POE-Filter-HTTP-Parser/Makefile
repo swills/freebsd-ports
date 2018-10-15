@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-POE-Filter-HTTP-Parser/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-POE-Filter-HTTP-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Filter-HTTP-Parser
 PORTVERSION=	1.08
@@ -9,10 +9,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	HTTP POE filter for HTTP clients or servers
 
-BUILD_DEPENDS=	p5-POE>=1.003:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=1.003:devel/p5-POE \
 		p5-libwww>=0:www/p5-libwww \
 		p5-HTTP-Parser>=0.06:www/p5-HTTP-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-POE-Client-TCP>=0:devel/p5-Test-POE-Client-TCP \
 		p5-Test-POE-Server-TCP>=0:devel/p5-Test-POE-Server-TCP
 

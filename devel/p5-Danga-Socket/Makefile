@@ -1,5 +1,5 @@
 # Created by: Jacques Marneweck <jacques@php.net>
-# $FreeBSD: head/devel/p5-Danga-Socket/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Danga-Socket/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Danga-Socket
 PORTVERSION=	1.61
@@ -14,9 +14,9 @@ COMMENT=	Event loop and event-driven async socket base class
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-KQueue>=0:devel/p5-IO-KQueue \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-KQueue>=0:devel/p5-IO-KQueue \
 		p5-Sys-Syscall>=0:devel/p5-Sys-Syscall
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Hailo/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Hailo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-IRC-Plugin-Hailo
 PORTVERSION=	0.18
@@ -15,12 +15,12 @@ COMMENT=	PoCo-IRC plugin for a Hailo conversation simulator
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IRC-Utils>=0.05:irc/p5-IRC-Utils \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IRC-Utils>=0.05:irc/p5-IRC-Utils \
 		p5-Math-Random-OO>=0.21:math/p5-Math-Random-OO \
 		p5-POE>=0:devel/p5-POE \
 		p5-POE-Component-Hailo>=0:devel/p5-POE-Component-Hailo \
 		p5-POE-Component-IRC>=6.22:irc/p5-POE-Component-IRC
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Script>=1.07:devel/p5-Test-Script
 
 USES=		perl5

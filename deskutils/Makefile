@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 480969 2018-09-30 19:22:44Z tcberner $
+# $FreeBSD: head/deskutils/Makefile 481769 2018-10-10 21:36:03Z rigoletto $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -231,6 +231,7 @@
     SUBDIR += puush
     SUBDIR += py-bugwarrior
     SUBDIR += py-khal
+    SUBDIR += py-khard
     SUBDIR += py-pystash
     SUBDIR += py-send2trash
     SUBDIR += py-taskw
@@ -239,6 +240,7 @@
     SUBDIR += pybookreader
     SUBDIR += pypanel
     SUBDIR += qorganizer
+    SUBDIR += qownnotes
     SUBDIR += qrfcview
     SUBDIR += qtm
     SUBDIR += recoll

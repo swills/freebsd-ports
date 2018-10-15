@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/databases/p5-ORLite-Migrate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-ORLite-Migrate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	ORLite-Migrate
 PORTVERSION=	1.10
@@ -15,7 +15,8 @@ COMMENT=	Light weight SQLite-specific schema migration
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-pushd>=1.00:devel/p5-File-pushd \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-pushd>=1.00:devel/p5-File-pushd \
 		p5-IPC-Run3>=0.042:devel/p5-IPC-Run3 \
 		p5-ORLite>=1.28:databases/p5-ORLite \
 		p5-Probe-Perl>=0.01:sysutils/p5-Probe-Perl \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-File-pushd>=1.00:devel/p5-File-pushd \
 		p5-DBD-SQLite>=1.21:databases/p5-DBD-SQLite \
 		p5-Params-Util>0.37:devel/p5-Params-Util \
 		p5-File-Which>=0.05:sysutils/p5-File-Which
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 480949 2018-09-30 10:39:44Z rene $
+# $FreeBSD: head/editors/Makefile 481286 2018-10-05 17:43:09Z kwm $
 #
 
     COMMENT = Editors
@@ -51,6 +51,7 @@
     SUBDIR += ghex
     SUBDIR += ghostwriter
     SUBDIR += gmanedit
+    SUBDIR += gnome-latex
     SUBDIR += gnotepad+
     SUBDIR += gobby
     SUBDIR += gomate
@@ -77,7 +78,6 @@
     SUBDIR += kile-kde4
     SUBDIR += klat4
     SUBDIR += komodo-edit
-    SUBDIR += latexila
     SUBDIR += lazarus
     SUBDIR += lazarus-qt4
     SUBDIR += lazarus-qt5

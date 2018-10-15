@@ -1,5 +1,5 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/print/gnome-cups-manager/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/print/gnome-cups-manager/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #   $MCom: ports/print/gnome-cups-manager/Makefile,v 1.8 2007/07/20 01:11:31 mezz Exp $
 
 PORTNAME=	gnome-cups-manager
@@ -15,6 +15,9 @@ COMMENT=	Administration tool for cups
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libgnomecups-1.0.so:print/libgnomecups
 RUN_DEPENDS=	gnomesu:security/libgnomesu

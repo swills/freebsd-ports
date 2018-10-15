@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/pcre2/Makefile 477253 2018-08-15 19:09:00Z adamw $
+# $FreeBSD: head/devel/pcre2/Makefile 481159 2018-10-03 13:37:14Z krion $
 
 PORTNAME=	pcre2
 PORTVERSION=	10.31
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/pcre/${PORTNAME}/${PORTVERSION} \
 		ftp://ftp.fu-berlin.de/unix/misc/pcre/ \
 		ftp://ftp.tin.org/pub/libs/pcre/
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	krion@FreeBSD.org
 COMMENT=	Perl Compatible Regular Expressions library, version 2
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adam@vectors.cx>
-# $FreeBSD: head/sysutils/bbapm/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/sysutils/bbapm/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	bbapm
 PORTVERSION=	0.0.1
@@ -13,6 +13,9 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	APM monitor for the Blackbox slit
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

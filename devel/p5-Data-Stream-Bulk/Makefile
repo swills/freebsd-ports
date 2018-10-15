@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Stream-Bulk/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-Stream-Bulk/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Stream-Bulk
 PORTVERSION=	0.11
@@ -14,11 +14,11 @@ COMMENT=	N at a time iteration API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0.90:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.90:devel/p5-Moose \
 		p5-Path-Class>0:devel/p5-Path-Class \
 		p5-Sub-Exporter>0:devel/p5-Sub-Exporter \
 		p5-namespace-clean>0:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 TEST_DEPENDS=	p5-Test-Requires>0:devel/p5-Test-Requires
 

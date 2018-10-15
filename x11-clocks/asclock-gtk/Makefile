@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/asclock-gtk/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-clocks/asclock-gtk/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	asclock-gtk
 PORTVERSION=	2.1.10
@@ -9,6 +9,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}beta
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	New flavor of asclock (GTK version)
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 ALL_TARGET=	asclock

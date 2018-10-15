@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Module-Math-Depends/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-Math-Depends/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Module-Math-Depends
 PORTVERSION=	0.02
@@ -14,8 +14,8 @@ COMMENT=	Convenience object for manipulating module dependencies
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Params-Util>=0:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Params-Util>=0:devel/p5-Params-Util
 
 USES=		perl5
 USE_PERL5=	configure

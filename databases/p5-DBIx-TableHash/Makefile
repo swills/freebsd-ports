@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/databases/p5-DBIx-TableHash/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-TableHash/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-TableHash
 CATEGORIES=	databases perl5
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Tie a hash to a MySQL table + SQL utils
 
-BUILD_DEPENDS=	p5-DBD-mysql>=0:databases/p5-DBD-mysql
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBD-mysql>=0:databases/p5-DBD-mysql
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/net-p2p/p5-WWW-BitTorrent/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-p2p/p5-WWW-BitTorrent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-BitTorrent
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	Search and Download .torrent(s) files from BitTorrents boards
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	bittorrent.pl

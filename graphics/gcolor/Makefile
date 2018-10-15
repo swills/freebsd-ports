@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/graphics/gcolor/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/graphics/gcolor/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gcolor
 PORTVERSION=	0.4
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK-based color picker
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 PLIST_FILES=	bin/gcolor
 USE_GNOME=	gtk12

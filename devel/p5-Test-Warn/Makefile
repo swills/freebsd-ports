@@ -1,5 +1,5 @@
 # Created by: Brian Minard <bminard@flatfoot.ca>
-# $FreeBSD: head/devel/p5-Test-Warn/Makefile 473135 2018-06-23 14:54:44Z wen $
+# $FreeBSD: head/devel/p5-Test-Warn/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Warn
 PORTVERSION=	0.36
@@ -13,8 +13,8 @@ COMMENT=	Perl extension to test methods for warnings
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Sub-Uplevel>=0.12:devel/p5-Sub-Uplevel
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Sub-Uplevel>=0.12:devel/p5-Sub-Uplevel
 
 NO_ARCH=	yes
 USES=		perl5

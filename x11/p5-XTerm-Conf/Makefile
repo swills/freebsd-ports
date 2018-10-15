@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/p5-XTerm-Conf/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/x11/p5-XTerm-Conf/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XTerm-Conf
 PORTVERSION=	0.10
@@ -13,8 +13,8 @@ COMMENT=	Perl module that changes configuration of a running xterm
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Term-ReadKey>=2.32:devel/p5-Term-ReadKey
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Term-ReadKey>=2.32:devel/p5-Term-ReadKey
 
 USES=		perl5
 USE_PERL5=	configure

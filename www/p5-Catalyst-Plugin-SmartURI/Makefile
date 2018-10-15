@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-SmartURI/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-SmartURI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-SmartURI
 PORTVERSION=	0.041
@@ -13,12 +13,12 @@ COMMENT=	Configurable URIs for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime	\
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime	\
 		p5-Class-C3-Componentised>=0:devel/p5-Class-C3-Componentised	\
 		p5-Class-Load>=0:devel/p5-Class-Load		\
 		p5-Moose>=0:devel/p5-Moose			\
 		p5-URI-SmartURI>=0:net/p5-URI-SmartURI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/audio/p5-Audio-MPD-Common/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/audio/p5-Audio-MPD-Common/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Audio-MPD-Common
 PORTVERSION=	2.003
@@ -13,12 +13,12 @@ COMMENT=	Bunch of common helper classes for mpd
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0.92:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.92:devel/p5-Moose \
 		p5-MooseX-Has-Sugar>=0:devel/p5-MooseX-Has-Sugar \
 		p5-MooseX-Types>=0:devel/p5-MooseX-Types \
 		p5-Readonly>=0:devel/p5-Readonly \
 		p5-String-Formatter>=0:devel/p5-String-Formatter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

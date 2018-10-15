@@ -1,5 +1,5 @@
 # Created by: Janos.Mohacsi@bsd.hu
-# $FreeBSD: head/net/p5-IO-Socket-INET6/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-IO-Socket-INET6/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	IO-Socket-INET6
 PORTVERSION=	2.72
@@ -15,8 +15,8 @@ COMMENT=	Perl module with object interface to AF_INET6 domain sockets
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Socket6>=0.12:net/p5-Socket6
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Socket6>=0.12:net/p5-Socket6
 
 USES=		perl5
 USE_PERL5=	configure

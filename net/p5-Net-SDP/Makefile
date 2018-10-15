@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-Net-SDP/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/net/p5-Net-SDP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SDP
 PORTVERSION=	0.07
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Session Description Protocol (RFC 2327) packet parser/generator
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 USES=		perl5
 USE_PERL5=	modbuild

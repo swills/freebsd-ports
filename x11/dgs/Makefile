@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <Nakai@technologist.com>
-# $FreeBSD: head/x11/dgs/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/dgs/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	dgs
 PORTVERSION=	0.5.9.1
@@ -9,6 +9,9 @@ MASTER_SITES=	GNU/../old-gnu/dgs
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Display ghostscript system
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff

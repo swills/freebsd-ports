@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Model-Tarantool/Makefile 463313 2018-03-01 13:35:15Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Model-Tarantool/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Model-Tarantool
 PORTVERSION=	0.02
@@ -13,9 +13,9 @@ COMMENT=	Tarantool interface for Catalyst based application
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.90001:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.90001:www/p5-Catalyst-Runtime \
 		p5-DR-Tarantool>=0.37:databases/p5-DR-Tarantool
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

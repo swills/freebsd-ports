@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/science/p5-Chemistry-Canonicalize/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/p5-Chemistry-Canonicalize/Makefile 481264 2018-10-05 09:08:36Z amdmi3 $
 
 PORTNAME=	Chemistry-Canonicalize
 PORTVERSION=	0.11
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Number the atoms in a molecule in a unique way
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Chemistry-Mol>=0:science/p5-Chemistry-Mol
 RUN_DEPENDS=	p5-Chemistry-Mol>=0:science/p5-Chemistry-Mol

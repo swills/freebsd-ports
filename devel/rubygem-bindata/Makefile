@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-bindata/Makefile 464106 2018-03-10 23:00:46Z sunpoet $
+# $FreeBSD: head/devel/rubygem-bindata/Makefile 482069 2018-10-14 16:30:07Z sunpoet $
 
 PORTNAME=	bindata
-PORTVERSION=	2.4.3
+PORTVERSION=	2.4.4
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_COMB=	dual
 LICENSE_FILE_BSD2CLAUSE=${WRKSRC}/BSDL
 LICENSE_FILE_RUBY=	${WRKSRC}/COPYING
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

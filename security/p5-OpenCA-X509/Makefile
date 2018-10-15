@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/security/p5-OpenCA-X509/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-OpenCA-X509/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	OpenCA-X509
 PORTVERSION=	0.9.10
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for handling X509 Certificates
 
-BUILD_DEPENDS=	p5-X500-DN>=0:net/p5-X500-DN
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-X500-DN>=0:net/p5-X500-DN
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	prova.pl

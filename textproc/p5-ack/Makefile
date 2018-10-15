@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/p5-ack/Makefile 473268 2018-06-24 20:20:55Z sunpoet $
+# $FreeBSD: head/textproc/p5-ack/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	ack
 PORTVERSION=	2.24
@@ -14,8 +14,8 @@ COMMENT=	Grep-like text finder for large trees of text
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-BUILD_DEPENDS=	p5-File-Next>=1.16:sysutils/p5-File-Next
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Next>=1.16:sysutils/p5-File-Next
 TEST_DEPENDS=	bash:shells/bash \
 		p5-IO-Tty>=0:devel/p5-IO-Tty
 

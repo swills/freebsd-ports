@@ -1,5 +1,5 @@
 # Created by: James E Keenan <jkeenan@cpan.org>
-# $FreeBSD: head/devel/p5-System-Info/Makefile 470907 2018-05-26 17:37:58Z krion $
+# $FreeBSD: head/devel/p5-System-Info/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	System-Info
 PORTVERSION=	0.058
@@ -13,9 +13,9 @@ COMMENT=	Extract system info for reporting
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Test-Simple>=0.88:devel/p5-Test-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-Simple>=0.88:devel/p5-Test-Simple \
 		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5 tar:tgz

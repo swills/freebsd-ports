@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-HTML-Encoding/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Encoding/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Encoding
 PORTVERSION=	0.61
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Determine the encoding of HTML/XML/XHTML documents
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70/Makefile 480035 2018-09-18 16:08:00Z emaste $
+# $FreeBSD: head/lang/php70/Makefile 481525 2018-10-08 08:52:51Z tz $
 
 PORTNAME=	php70
 PORTVERSION=	7.0.32
@@ -57,7 +57,7 @@ MAILHEAD_DESC=	Enable mail header patch
 LINKTHR_DESC=	Link thread lib (for threaded extensions)
 ZTS_DESC=	Force Zend Thread Safety (ZTS) build
 
-CONFLICTS=	php56-* php71-* php72-*
+CONFLICTS=	php56-* php71-* php72-* php73-*
 
 DESTDIRNAME=	INSTALL_ROOT
 

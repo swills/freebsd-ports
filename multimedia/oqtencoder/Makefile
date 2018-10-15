@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/oqtencoder/Makefile 423014 2016-09-30 19:24:30Z tijl $
+# $FreeBSD: head/multimedia/oqtencoder/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	OQTEncoder
 PORTVERSION=	0.1
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME:tl}-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple encoder using OpenQuicktime (TM)
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libopenquicktime.so:multimedia/openquicktime
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/p5-X11-XCB/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11/p5-X11-XCB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	X11-XCB
 PORTVERSION=	0.16
@@ -16,7 +16,8 @@ LICENSE_COMB=	dual
 LIB_DEPENDS=	libxcb.so:x11/libxcb \
 		libxcb-util.so:x11/xcb-util \
 		libxcb-icccm.so:x11/xcb-util-wm
-BUILD_DEPENDS=	\
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	\
 		${LOCALBASE}/share/xcb/xcb.xsd:x11/xcb-proto \
 		p5-Data-Dump>=0:devel/p5-Data-Dump \
 		p5-Mouse>=0:devel/p5-Mouse \
@@ -29,7 +30,6 @@ BUILD_DEPENDS=	\
 		p5-XML-Descent>=0:textproc/p5-XML-Descent \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-XS-Object-Magic>=0:devel/p5-XS-Object-Magic
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		localbase perl5
 USE_PERL5=	configure

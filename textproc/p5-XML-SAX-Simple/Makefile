@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-SAX-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-SAX-Simple
 PORTVERSION=	0.08
@@ -14,10 +14,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-XML-Handler-Trees>=0.2:textproc/p5-XML-Handler-Trees \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Handler-Trees>=0.2:textproc/p5-XML-Handler-Trees \
 		p5-XML-SAX>=0.99:textproc/p5-XML-SAX \
 		p5-XML-Simple>=2.22:textproc/p5-XML-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

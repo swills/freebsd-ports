@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/net-mgmt/p5-Nagios-Plugin/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-mgmt/p5-Nagios-Plugin/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Nagios-Plugin
 PORTVERSION=	0.36
@@ -12,11 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	gjb@FreeBSD.org
 COMMENT=	Modules to streamline writing Nagios plugins
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-Math-Calc-Units>=0:math/p5-Math-Calc-Units \
 		p5-Config-Tiny>=0:devel/p5-Config-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

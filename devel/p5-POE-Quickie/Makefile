@@ -1,5 +1,5 @@
 # Created by: Takefu
-# $FreeBSD: head/devel/p5-POE-Quickie/Makefile 416271 2016-06-02 07:50:27Z mat $
+# $FreeBSD: head/devel/p5-POE-Quickie/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Quickie
 PORTVERSION=	0.18
@@ -15,8 +15,8 @@ LICENSE=	GPLv1 ART10
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-POE>=1.350:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=1.350:devel/p5-POE
 TEST_DEPENDS=	p5-Capture-Tiny>=0.07:devel/p5-Capture-Tiny \
 		p5-Test-Deep>=0:devel/p5-Test-Deep
 

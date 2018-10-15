@@ -1,5 +1,5 @@
 # Created by: Carsten Jensen <carsten@sitracker.org>
-# $FreeBSD: head/www/sit/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/sit/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	sit
 PORTVERSION=	3.67
@@ -13,7 +13,7 @@ COMMENT=	PHP incident tracking system / Helpdesk
 
 LICENSE=	GPLv2
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 USES=		php:web
 USE_PHP=	pcre mysql session zlib mbstring

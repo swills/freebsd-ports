@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Pod-Readme/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Pod-Readme/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Readme
 PORTVERSION=	1.1.2
@@ -13,7 +13,8 @@ COMMENT=	Convert POD to README file
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CPAN-Changes>=0:devel/p5-CPAN-Changes \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CPAN-Changes>=0:devel/p5-CPAN-Changes \
 		p5-Class-Method-Modifiers>=2.00:devel/p5-Class-Method-Modifiers \
 		p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-Getopt-Long-Descriptive>=0:devel/p5-Getopt-Long-Descriptive \
@@ -24,7 +25,6 @@ BUILD_DEPENDS=	p5-CPAN-Changes>=0:devel/p5-CPAN-Changes \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny \
 		p5-Type-Tiny>=0:devel/p5-Type-Tiny \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Exception>=0:devel/p5-Test-Exception

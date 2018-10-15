@@ -1,5 +1,5 @@
 # Created by: Martin Waschbuesch <martin@waschbuesch.de>
-# $FreeBSD: head/www/p5-Plack-Middleware-ExtDirect/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-ExtDirect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Plack-Middleware-ExtDirect
 PORTVERSION=	3.20
@@ -13,10 +13,10 @@ COMMENT=	Implement an RPC::ExtDirect gateway using Plack
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	pkg-config:devel/pkgconf \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	pkg-config:devel/pkgconf \
 		p5-Plack>=0:www/p5-Plack \
 		p5-RPC-ExtDirect>=3.20:www/p5-RPC-ExtDirect
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=1.46:devel/p5-Test-Pod
 
 USES=		perl5

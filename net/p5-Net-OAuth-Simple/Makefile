@@ -1,5 +1,5 @@
 # Created by: skreuzer
-# $FreeBSD: head/net/p5-Net-OAuth-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-OAuth-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-OAuth-Simple
 PORTVERSION=	1.7
@@ -13,12 +13,12 @@ COMMENT=	Simple wrapper around the OAuth protocol
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-SSLeay>=0.57:security/p5-Crypt-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-SSLeay>=0.57:security/p5-Crypt-SSLeay \
 		p5-libwww>=5.825:www/p5-libwww \
 		p5-Net-OAuth>=0.27:net/p5-Net-OAuth \
 		p5-URI>=1.37:net/p5-URI \
 		p5-Test-Simple>=0.86:devel/p5-Test-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

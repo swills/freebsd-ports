@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libzen/Makefile 479546 2018-09-11 18:59:49Z sunpoet $
+# $FreeBSD: head/multimedia/libzen/Makefile 482065 2018-10-14 16:29:34Z sunpoet $
 
 PORTNAME=	libzen
 PORTVERSION=	18.08.1
@@ -16,11 +16,13 @@ LICENSE_FILE=	${WRKSRC}/../../../License.txt
 
 CONFLICTS_INSTALL=	mediainfo-0.[0-6]* mediainfo-0.7.[0-5]*
 
+USES=		compiler:c++11-lang libtool pathfix tar:xz
+
 CONFIGURE_ARGS=	--enable-shared --enable-static
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
-USES=		libtool pathfix tar:xz
 
 WRKSRC=		${WRKDIR}/MediaInfo_CLI_GNU_FromSource/ZenLib/Project/GNU/Library
 

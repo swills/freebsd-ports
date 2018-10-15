@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/security/p5-Authen-Passphrase/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Authen-Passphrase/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-Passphrase
 PORTVERSION=	0.008
@@ -14,7 +14,8 @@ COMMENT=	Perl module for handling hashed passwords/passphrases as objects
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Authen-DecHpwd>=0:security/p5-Authen-DecHpwd \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-DecHpwd>=0:security/p5-Authen-DecHpwd \
 		p5-Crypt-Blowfish>=0:security/p5-Crypt-Blowfish \
 		p5-Crypt-DES>=0:security/p5-Crypt-DES \
 		p5-Crypt-Eksblowfish>=0:security/p5-Crypt-Eksblowfish \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-Authen-DecHpwd>=0:security/p5-Authen-DecHpwd \
 		p5-Digest-MD4>=0:security/p5-Digest-MD4 \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime \
 		p5-Params-Classify>=0:devel/p5-Params-Classify
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

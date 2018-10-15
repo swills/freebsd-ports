@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Form/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-Form/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Form
 PORTVERSION=	6.03
@@ -14,10 +14,10 @@ COMMENT=	Class that represents an HTML form element
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-HTTP-Message>=6.03:www/p5-HTTP-Message \
 		p5-URI>=1.10:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

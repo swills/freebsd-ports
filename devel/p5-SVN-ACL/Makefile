@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/devel/p5-SVN-ACL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-SVN-ACL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-ACL
 PORTVERSION=	0.02
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple ACL frontend for subversion
 
-BUILD_DEPENDS=	p5-subversion>=0:devel/p5-subversion \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-subversion>=0:devel/p5-subversion \
 		p5-YAML>=0:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 tar:tgz
 USE_PERL5=	configure

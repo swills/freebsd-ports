@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/hf/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/comms/hf/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	hf
 PORTVERSION=	0.8
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}term/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio soundcard fsk, pactor 1, amtor, gtor, mt63
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

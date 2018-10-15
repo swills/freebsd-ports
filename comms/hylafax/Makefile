@@ -1,9 +1,9 @@
 # Created by: Julian Stacey <jhs@FreeBSD.org>
-# $FreeBSD: head/comms/hylafax/Makefile 420508 2016-08-20 12:41:55Z koobs $
+# $FreeBSD: head/comms/hylafax/Makefile 481438 2018-10-07 10:29:06Z koobs $
 
 PORTNAME=	hylafax
 PORTVERSION=	6.0.6
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.hylafax.org/source/
 

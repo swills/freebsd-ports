@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Body/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTTP-Body/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Body
 PORTVERSION=	1.22
@@ -14,8 +14,8 @@ COMMENT=	HTTP Body Parser
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Pod>=1.14:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=1.04:devel/p5-Test-Pod-Coverage

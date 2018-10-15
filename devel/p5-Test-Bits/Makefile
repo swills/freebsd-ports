@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Bits/Makefile 442421 2017-06-02 18:13:03Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Bits/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Bits
 PORTVERSION=	0.02
@@ -14,8 +14,8 @@ COMMENT=	Provides a bits_is() subroutine for testing binary data
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-List-AllUtils>=0:devel/p5-List-AllUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-List-AllUtils>=0:devel/p5-List-AllUtils
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 NO_ARCH=	yes

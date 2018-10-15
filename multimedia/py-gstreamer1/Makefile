@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/py-gstreamer1/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/multimedia/py-gstreamer1/Makefile 481025 2018-10-01 11:32:37Z antoine $
 
 PORTNAME=	gstreamer
 PORTVERSION=	1.12.3
@@ -19,10 +19,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gmake libtool localbase pathfix pkgconfig python tar:xz
 USE_GNOME=	pygobject3
-py34_PLIST=	${.CURDIR}/pkg-plist-py3
-py35_PLIST=	${.CURDIR}/pkg-plist-py3
-py36_PLIST=	${.CURDIR}/pkg-plist-py3
-USE_PYTHON=	flavors
+USE_PYTHON=	flavors py3kplist
 USE_GSTREAMER1=	yes
 GNU_CONFIGURE=	yes
 PLIST_SUB=	VERSION="${GST_VERSION}"

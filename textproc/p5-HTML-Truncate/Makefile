@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-Truncate/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/textproc/p5-HTML-Truncate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Truncate
 PORTVERSION=	0.20
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Truncate HTML by character count while preserving well-formedness
 
-BUILD_DEPENDS=	p5-HTML-Parser>=2:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=2:www/p5-HTML-Parser \
 		p5-HTML-Tagset>=3:www/p5-HTML-Tagset
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

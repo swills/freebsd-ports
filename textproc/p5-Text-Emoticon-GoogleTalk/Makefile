@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/p5-Text-Emoticon-GoogleTalk/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Emoticon-GoogleTalk/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Emoticon-GoogleTalk
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Emoticon filter of GoogleTalk
 
-BUILD_DEPENDS=	p5-Text-Emoticon>=0:textproc/p5-Text-Emoticon
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Emoticon>=0:textproc/p5-Text-Emoticon
 
 USES=		perl5
 USE_PERL5=	configure

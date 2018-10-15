@@ -1,5 +1,5 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/print/gribouy/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/print/gribouy/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gribouy
 PORTVERSION=	0.0.8
@@ -9,6 +9,9 @@ MASTER_SITES=	LOCAL/bland
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Gribouy is a Type1 font editor
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

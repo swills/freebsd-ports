@@ -1,5 +1,5 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/audio/xmms-volnorm/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/audio/xmms-volnorm/Makefile 481894 2018-10-12 11:46:32Z antoine $
 
 PORTNAME=	volnorm
 PORTVERSION=	0.8.3
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	xmms-
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Volume Normalizer plugin for XMMS
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

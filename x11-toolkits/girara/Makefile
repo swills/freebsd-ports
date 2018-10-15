@@ -1,9 +1,8 @@
 # Created by: Mike Krutov <neko@takino.org>
-# $FreeBSD: head/x11-toolkits/girara/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/x11-toolkits/girara/Makefile 481106 2018-10-02 08:57:25Z madpilot $
 
 PORTNAME=	girara
-PORTVERSION=	0.3.0
-PORTREVISION=	1
+PORTVERSION=	0.3.1
 CATEGORIES=	x11-toolkits graphics
 MASTER_SITES=	https://pwmt.org/projects/girara/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/

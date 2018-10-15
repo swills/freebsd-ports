@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-HTTP-Cookies-iCab/Makefile 468792 2018-05-01 19:50:34Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Cookies-iCab/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Cookies-iCab
 PORTVERSION=	1.132
@@ -13,9 +13,9 @@ COMMENT=	Cookie storage and management for iCab
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTTP-Cookies>=1.25:www/p5-HTTP-Cookies \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Cookies>=1.25:www/p5-HTTP-Cookies \
 		p5-Text-Diff>=0:textproc/p5-Text-Diff
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

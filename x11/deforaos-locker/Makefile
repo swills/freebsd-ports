@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/x11/deforaos-locker/Makefile 430367 2017-01-02 15:10:16Z olivier $
+# $FreeBSD: head/x11/deforaos-locker/Makefile 481890 2018-10-12 09:38:40Z amdmi3 $
 
 PORTNAME=	locker
 PORTVERSION=	0.4.0
@@ -15,10 +15,10 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libDesktop.so:x11/deforaos-libdesktop \
-				libSystem.so:devel/deforaos-libsystem \
-				libfontconfig.so:x11-fonts/fontconfig \
-				libfreetype.so:print/freetype2 \
-				libXss.so:x11/libXScrnSaver
+		libSystem.so:devel/deforaos-libsystem \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2 \
+		libXss.so:x11/libXScrnSaver
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/Panel.pc:x11/deforaos-panel
 
@@ -33,7 +33,7 @@ OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes
 NLS_USES=		gettext
 DOCS_BUILD_DEPENDS=	xsltproc:textproc/libxslt \
-	${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl
+			${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl
 
 post-patch:
 	${REINPLACE_CMD} 's|-Wl,-pie||g' \

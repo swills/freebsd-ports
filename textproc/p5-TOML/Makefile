@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TOML/Makefile 430295 2017-01-01 21:40:53Z sunpoet $
+# $FreeBSD: head/textproc/p5-TOML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	TOML
 PORTVERSION=	0.97
@@ -14,8 +14,8 @@ COMMENT=	Parser for Tom's Obvious, Minimal Language (TOML) #'
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-TOML-Parser>=0.04:textproc/p5-TOML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-TOML-Parser>=0.04:textproc/p5-TOML-Parser
 
 NO_ARCH=	yes
 USE_PERL5=	modbuildtiny

@@ -1,16 +1,34 @@
-# $FreeBSD: head/shells/oksh/Makefile 466613 2018-04-06 03:58:41Z tobik $
+# $FreeBSD: head/shells/oksh/Makefile 481781 2018-10-11 02:33:20Z swills $
 
 PORTNAME=	oksh
-DISTVERSION=	20180401
+DISTVERSION=	20181009
 CATEGORIES=	shells
-MASTER_SITES=	https://devio.us/~bcallah/oksh/
+MASTER_SITES=	https://mirrors.nycbug.org/pub/distfiles/
 
 MAINTAINER=	bcallah@openbsd.org
 COMMENT=	Portable OpenBSD Korn shell
 
 LICENSE=	PD
 
+OPTIONS_DEFINE=		CURSES STATIC
+OPTIONS_DEFAULT=	CURSES
+
+CURSES_DESC=	Use ncurses for screen clearing routines
+CURSES_USES=	ncurses
+
 HAS_CONFIGURE=	yes
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MSTATIC}
+CONFIGURE_ARGS+=	--enable-static
+.endif
+
+.if ${PORT_OPTIONS:MCURSES}
+CONFIGURE_ARGS+=	--enable-curses
+.else
+CONFIGURE_ARGS+=	--disable-curses
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

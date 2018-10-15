@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-NBsocket/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-NBsocket/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-NBsocket
 PORTVERSION=	0.24
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Non-Blocking Sockets
 
-BUILD_DEPENDS=	p5-NetAddr-IP>=4.049:net-mgmt/p5-NetAddr-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-NetAddr-IP>=4.049:net-mgmt/p5-NetAddr-IP
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/shells/p5-Bash-Completion/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/shells/p5-Bash-Completion/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Bash-Completion
 PORTVERSION=	0.008
@@ -15,9 +15,9 @@ COMMENT=	Extensible system to provide bash completion
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Module-Load>=0.22:devel/p5-Module-Load
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/p5-Cache-AgainstFile/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Cache-AgainstFile/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Cache-AgainstFile
 PORTVERSION=	1.016
@@ -13,8 +13,8 @@ COMMENT=	Cache data structures parsed from files, watching for updates
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	p5-Log-Trace>=0:devel/p5-Log-Trace
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Trace>=0:devel/p5-Log-Trace
 TEST_DEPENDS=	p5-Test-Assertions>=0:devel/p5-Test-Assertions
 
 USES=		perl5

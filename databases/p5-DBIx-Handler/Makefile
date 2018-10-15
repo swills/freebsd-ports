@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/databases/p5-DBIx-Handler/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Handler/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Handler
 PORTVERSION=	0.14
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-DBI>=1.605:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=1.605:databases/p5-DBI \
 		p5-DBIx-TransactionManager>=1.09:databases/p5-DBIx-TransactionManager
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-Test-Requires>=0:devel/p5-Test-Requires \
 		p5-Test-SharedFork>=0.16:devel/p5-Test-SharedFork

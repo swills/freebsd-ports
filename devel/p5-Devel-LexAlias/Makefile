@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Chen
-# $FreeBSD: head/devel/p5-Devel-LexAlias/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-LexAlias/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-LexAlias
 PORTVERSION=	0.05
@@ -14,8 +14,8 @@ COMMENT=	Perl module which does alias lexical variables
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Devel-Caller>=0.03:devel/p5-Devel-Caller
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Devel-Caller>=0.03:devel/p5-Devel-Caller
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack-contrib/Makefile 456016 2017-12-11 10:44:48Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-contrib/Makefile 482092 2018-10-14 16:33:17Z sunpoet $
 
 PORTNAME=	rack-contrib
-PORTVERSION=	2.0.1
+PORTVERSION=	2.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	rubygem-rack>=2.0:www/rubygem-rack
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/www/p5-WWW-Shorten-KUSO/Makefile 471718 2018-06-04 18:18:25Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Shorten-KUSO/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Shorten-KUSO
 PORTVERSION=	0.3
@@ -14,8 +14,8 @@ COMMENT=	Shorten URL using http://KUSO.CC/
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-WWW-Shorten>=0:www/p5-WWW-Shorten
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Shorten>=0:www/p5-WWW-Shorten
 
 USES=		perl5
 USE_PERL5=	configure

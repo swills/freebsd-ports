@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/finance/p5-Business-TW-TSIB-CStorePayment/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Business-TW-TSIB-CStorePayment/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Business-TW-TSIB-CStorePayment
 PORTVERSION=	0.04
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module for Taishin Bank Convenient Store Payment Management
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

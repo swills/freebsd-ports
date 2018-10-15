@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/ncs/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/ncs/Makefile 481398 2018-10-06 21:10:46Z antoine $
 
 PORTNAME=	ncs
 PORTVERSION=	2.0.8
@@ -11,6 +11,8 @@ MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Code_Saturne Kernel
 
 LICENSE=	GPLv2
+
+BROKEN=		conflicting dependencies
 
 BUILD_DEPENDS=	cs_preprocess:science/ecs
 LIB_DEPENDS=	libbft.so:science/bft \

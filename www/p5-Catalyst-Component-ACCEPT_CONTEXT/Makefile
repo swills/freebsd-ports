@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Component-ACCEPT_CONTEXT/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-Catalyst-Component-ACCEPT_CONTEXT/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Component-ACCEPT_CONTEXT
 PORTVERSION=	0.07
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Make the Catalyst request context available in Models and Views
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>0:www/p5-Catalyst-Runtime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>0:www/p5-Catalyst-Runtime
 TEST_DEPENDS=	p5-Devel-Cycle>=0:devel/p5-Devel-Cycle
 
 USES=		perl5

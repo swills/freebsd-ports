@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/textproc/p5-XML-FeedPP/Makefile 470788 2018-05-24 16:02:26Z krion $
+# $FreeBSD: head/textproc/p5-XML-FeedPP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-FeedPP
 PORTVERSION=	0.95
@@ -13,8 +13,8 @@ COMMENT=	Parse/write/merge/edit RSS/RDF/Atom syndication feeds
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-TreePP>=0.39:textproc/p5-XML-TreePP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-TreePP>=0.39:textproc/p5-XML-TreePP
 
 USES=		perl5
 USE_PERL5=	configure

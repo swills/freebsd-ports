@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Hash-LX/Makefile 471703 2018-06-04 18:16:47Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Hash-LX/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Hash-LX
 PORTVERSION=	0.0603
@@ -14,9 +14,9 @@ COMMENT=	Convert hash to xml and xml to hash using LibXML
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-lib-abs>=0.90:devel/p5-lib-abs \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-lib-abs>=0.90:devel/p5-lib-abs \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

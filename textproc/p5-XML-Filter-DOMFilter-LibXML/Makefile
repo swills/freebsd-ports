@@ -1,5 +1,5 @@
 # Created by: Andrew Humphrey <ahumphrey@realestate.com.au>
-# $FreeBSD: head/textproc/p5-XML-Filter-DOMFilter-LibXML/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Filter-DOMFilter-LibXML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Filter-DOMFilter-LibXML
 PORTVERSION=	0.04
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl SAX Filter allowing DOM processing of selected subtrees
 
-BUILD_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML
 TEST_DEPENDS=	p5-XML-SAX-Writer>=0:textproc/p5-XML-SAX-Writer
 
 NO_ARCH=	yes

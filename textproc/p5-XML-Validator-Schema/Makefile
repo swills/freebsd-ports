@@ -1,5 +1,5 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/textproc/p5-XML-Validator-Schema/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Validator-Schema/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Validator-Schema
 PORTVERSION=	1.10
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for validating XML documents against a W3C XML Schema
 
-BUILD_DEPENDS=	p5-Tree-DAG_Node>=0:devel/p5-Tree-DAG_Node \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tree-DAG_Node>=0:devel/p5-Tree-DAG_Node \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX \
 		p5-XML-Filter-BufferText>=0:textproc/p5-XML-Filter-BufferText
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

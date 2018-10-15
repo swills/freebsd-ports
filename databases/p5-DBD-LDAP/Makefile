@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/databases/p5-DBD-LDAP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBD-LDAP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBD-LDAP
 PORTVERSION=	0.22
@@ -13,9 +13,9 @@ COMMENT=	DBI interface for accessing LDAP servers
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-perl-ldap>=0.01:net/p5-perl-ldap \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-perl-ldap>=0.01:net/p5-perl-ldap \
 		p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

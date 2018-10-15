@@ -1,5 +1,5 @@
 # Created by: Dmitry Frolov <frol@nov.net>
-# $FreeBSD: head/sysutils/ipmitool/Makefile 462144 2018-02-17 12:01:08Z sunpoet $
+# $FreeBSD: head/sysutils/ipmitool/Makefile 481917 2018-10-12 18:20:35Z sbruno $
 
 PORTNAME=	ipmitool
 PORTVERSION=	1.8.18
@@ -48,6 +48,12 @@ FREEIPMI_LIB_DEPENDS=	libfreeipmi.so:sysutils/freeipmi
 FREEIPMI_CPPFLAGS=	-I${LOCALBASE}/include
 FREEIPMI_LDFLAGS=	-L${LOCALBASE}/lib
 FREEIPMI_CONFIGURE_ENABLE=	intf-free
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200085
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-src_plugins_lanplus_lanplus__crypt__impl.c
+.endif
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${PERIODIC_DIR}

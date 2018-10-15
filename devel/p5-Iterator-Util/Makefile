@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Iterator-Util/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Iterator-Util/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Iterator-Util
 PORTVERSION=	0.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Essential utilities for the Iterator class
 
-BUILD_DEPENDS=	p5-Iterator>=0:devel/p5-Iterator
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Iterator>=0:devel/p5-Iterator
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/garith/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/garith/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	garith
 PORTVERSION=	2.1
@@ -10,6 +10,9 @@ MASTER_SITES=	http://www.cnm-vra.com/micah/garith/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Arithmetic quiz program for X Window System
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USE_GNOME=	gtk12
 WRKSRC=		${WRKDIR}/garith

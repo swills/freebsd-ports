@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/luppp/Makefile 475330 2018-07-25 19:43:46Z yuri $
+# $FreeBSD: head/audio/luppp/Makefile 481372 2018-10-06 16:05:18Z yuri $
 
 PORTNAME=	luppp
 DISTVERSIONPREFIX=	release-
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libjack.so:audio/jack \
 		libsamplerate.so:audio/libsamplerate \
 		libsndfile.so:audio/libsndfile
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake:outsource compiler:c++11-lang gnome pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	openAVproductions
 GH_PROJECT=	openAV-Luppp

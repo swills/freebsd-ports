@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/p5-Text-Wrapper/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/textproc/p5-Text-Wrapper/Makefile 481631 2018-10-09 13:01:40Z wen $
 
 PORTNAME=	Text-Wrapper
-PORTVERSION=	1.04
-PORTREVISION=	1
+PORTVERSION=	1.05
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/p5-CatalystX-LeakChecker/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CatalystX-LeakChecker/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CatalystX-LeakChecker
 PORTVERSION=	0.06
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Debug memory leaks in Catalyst applications
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-Devel-Cycle>0:devel/p5-Devel-Cycle \
 		p5-PadWalker>0:devel/p5-PadWalker
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

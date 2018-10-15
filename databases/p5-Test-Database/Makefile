@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/p5-Test-Database/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Test-Database/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Database
 PORTVERSION=	1.113
@@ -14,10 +14,10 @@ COMMENT=	Database handles ready for testing
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
 		p5-YAML-Tiny>=0:textproc/p5-YAML-Tiny \
 		p5-File-HomeDir>=0.84:devel/p5-File-HomeDir
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

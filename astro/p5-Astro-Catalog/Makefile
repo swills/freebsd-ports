@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/astro/p5-Astro-Catalog/Makefile 473988 2018-07-06 01:52:49Z wen $
+# $FreeBSD: head/astro/p5-Astro-Catalog/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Astro-Catalog
 PORTVERSION=	4.34
@@ -13,7 +13,8 @@ COMMENT=	Generic stellar catalogue object
 LICENSE=	GPLv3
 
 # p5-Astro-FITS-CFITSIO is a recommended dependency
-BUILD_DEPENDS=	p5-Astro-Coords>=0.12:astro/p5-Astro-Coords \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Astro-Coords>=0.12:astro/p5-Astro-Coords \
 		p5-Astro-FITS-CFITSIO>=1.03:astro/p5-Astro-FITS-CFITSIO \
 		p5-Astro-Flux>=0.01:astro/p5-Astro-Flux \
 		p5-Astro-Telescope>=0.50:astro/p5-Astro-Telescope \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-Astro-Coords>=0.12:astro/p5-Astro-Coords \
 		p5-Number-Uncertainty>=0.1:math/p5-Number-Uncertainty \
 		p5-SOAP-Lite>=0:net/p5-SOAP-Lite \
 		p5-libwww>=5.53:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		localbase perl5

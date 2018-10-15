@@ -1,5 +1,5 @@
 # Created by: Evgeniy Kosov <evgeniy@kosov.su>
-# $FreeBSD: head/devel/p5-Log-Any-Adapter-Log4perl/Makefile 468120 2018-04-23 18:17:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Any-Adapter-Log4perl/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Log-Any-Adapter-Log4perl
 PORTVERSION=	0.09
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Log-Any>=1.03:devel/p5-Log-Any \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Any>=1.03:devel/p5-Log-Any \
 		p5-Log-Log4perl>=1.32:devel/p5-Log-Log4perl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

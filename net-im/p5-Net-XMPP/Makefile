@@ -1,5 +1,5 @@
 # Created by: Lars Eggert <lars.eggert@gmx.net>
-# $FreeBSD: head/net-im/p5-Net-XMPP/Makefile 444676 2017-06-29 19:14:03Z sunpoet $
+# $FreeBSD: head/net-im/p5-Net-XMPP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-XMPP
 PORTVERSION=	1.05
@@ -14,9 +14,9 @@ COMMENT=	Net::XMPP provides Perl Developer access to the XMPP protocol
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Authen-SASL>=2.12:security/p5-Authen-SASL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-SASL>=2.12:security/p5-Authen-SASL \
 		p5-XML-Stream>=1.24:textproc/p5-XML-Stream
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-LWP-Online>=1.07:www/p5-LWP-Online \
 		p5-YAML-Tiny>=1.41:textproc/p5-YAML-Tiny
 

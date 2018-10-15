@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-send-file-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/net-im/ktp-send-file-kde4/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-send-file
 PORTVERSION=	${KTP_VERSION}
@@ -13,7 +13,7 @@ COMMENT=	KDE instant messaging file transfer application
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
 
-LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt4 \
+LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt@qt4 \
 		libktpcommoninternalsprivate.so:net-im/ktp-common-internals-kde4
 RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/libexec/ktp-filetransfer-handler:net-im/ktp-filetransfer-handler-kde4 \
 		${KDE_PREFIX}/bin/ktp-contactlist:net-im/ktp-contact-list-kde4

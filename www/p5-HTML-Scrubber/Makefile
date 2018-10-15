@@ -1,5 +1,5 @@
 # Created by: Foxfair Hu <foxfair@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Scrubber/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-Scrubber/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Scrubber
 PORTVERSION=	0.17
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTML-Parser>=3.47:www/p5-HTML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=3.47:www/p5-HTML-Parser
 TEST_DEPENDS=	p5-Test-CPAN-Meta>=0:devel/p5-Test-CPAN-Meta \
 		p5-Test-Differences>=0:devel/p5-Test-Differences \
 		p5-Test-EOL>=0:devel/p5-Test-EOL \

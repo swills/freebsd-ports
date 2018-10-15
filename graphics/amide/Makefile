@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/amide/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/graphics/amide/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	amide
 PORTVERSION=	1.0.5
@@ -10,6 +10,9 @@ MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Medical Imaging Data Examiner
 
 LICENSE=	GPLv2
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 BUILD_DEPENDS=	gm4:devel/m4
 

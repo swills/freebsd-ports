@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-client/Makefile 466073 2018-03-31 18:26:51Z flo $
+# $FreeBSD: head/databases/percona57-client/Makefile 481225 2018-10-04 15:07:30Z feld $
 
 PORTNAME=	percona
 PORTREVISION?=	0
@@ -8,8 +8,6 @@ PKGNAMESUFFIX=	57-client
 COMMENT=	Multithreaded SQL database (client)
 
 LICENSE=	GPLv2+
-
-BROKEN_powerpc64=	fails to configure: CMake Error at cmake/os/FreeBSD.cmake:34: Unsupported compiler!
 
 MASTERDIR=	${.CURDIR}/../percona57-server
 

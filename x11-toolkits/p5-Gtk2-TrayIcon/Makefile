@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/p5-Gtk2-TrayIcon/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-toolkits/p5-Gtk2-TrayIcon/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Gtk2-TrayIcon
 PORTVERSION=	0.06
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the EggTrayIcon library
 
-BUILD_DEPENDS=	p5-Cairo>=0:graphics/p5-Cairo \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cairo>=0:graphics/p5-Cairo \
 		p5-ExtUtils-Depends>=0:devel/p5-ExtUtils-Depends	\
 		p5-ExtUtils-PkgConfig>=0:devel/p5-ExtUtils-PkgConfig \
 		p5-Gtk2>=0:x11-toolkits/p5-Gtk2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

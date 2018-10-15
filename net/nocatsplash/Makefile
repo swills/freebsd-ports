@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/nocatsplash/Makefile 392664 2015-07-22 05:27:59Z rene $
+# $FreeBSD: head/net/nocatsplash/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	nocatsplash
 PORTVERSION=	0.82
@@ -11,6 +11,9 @@ DISTNAME=	NoCatSplash-nightly
 
 MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Open 802.11 Splash Screen
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

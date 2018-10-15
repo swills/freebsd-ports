@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/devel/p5-Devel-Size-Report/Makefile 474907 2018-07-18 22:20:23Z yuri $
+# $FreeBSD: head/devel/p5-Devel-Size-Report/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-Size-Report
 PORTVERSION=	0.13
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extension to generate a size report for all elements in a structure
 
-BUILD_DEPENDS=	p5-Array-RefElem>=1.00:misc/p5-Array-RefElem \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Array-RefElem>=1.00:misc/p5-Array-RefElem \
 		p5-Devel-Size>=0.69:devel/p5-Devel-Size
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

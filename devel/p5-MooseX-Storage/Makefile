@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-MooseX-Storage/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Storage/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Storage
 PORTVERSION=	0.52
@@ -13,11 +13,11 @@ COMMENT=	Serialization framework for Moose classes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JSON-MaybeXS>=1.001000:converters/p5-JSON-MaybeXS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON-MaybeXS>=1.001000:converters/p5-JSON-MaybeXS \
 		p5-Moose>=0.99:devel/p5-Moose \
 		p5-String-RewritePrefix>=0.004:textproc/p5-String-RewritePrefix \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-JSON-XS>=0:converters/p5-JSON-XS \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \

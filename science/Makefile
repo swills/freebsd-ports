@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 480687 2018-09-25 18:11:34Z yuri $
+# $FreeBSD: head/science/Makefile 482124 2018-10-14 23:15:09Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -75,6 +75,7 @@
     SUBDIR += fvcom-mpi
     SUBDIR += fvm
     SUBDIR += gabedit
+    SUBDIR += gamess-us
     SUBDIR += gchemutils
     SUBDIR += gdma
     SUBDIR += getdp
@@ -139,6 +140,7 @@
     SUBDIR += minc2
     SUBDIR += mmdb2
     SUBDIR += mol2ps
+    SUBDIR += molgif
     SUBDIR += mpb
     SUBDIR += mpqc
     SUBDIR += msms
@@ -267,6 +269,7 @@
     SUBDIR += sigrok-firmware-fx2lafw
     SUBDIR += sigrok-firmware-utils
     SUBDIR += silo
+    SUBDIR += simint
     SUBDIR += simlib
     SUBDIR += simsmith
     SUBDIR += spglib
@@ -276,12 +279,14 @@
     SUBDIR += szip
     SUBDIR += teem
     SUBDIR += tfel
+    SUBDIR += tinker
     SUBDIR += triqs
     SUBDIR += udunits
     SUBDIR += v_sim
     SUBDIR += vmd
     SUBDIR += voro++
     SUBDIR += wannier90
+    SUBDIR += wxmacmolplt
     SUBDIR += xcrysden
     SUBDIR += xdrawchem
     SUBDIR += xfce4-equake-plugin

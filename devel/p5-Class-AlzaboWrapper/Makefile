@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Class-AlzaboWrapper/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Class-AlzaboWrapper/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-AlzaboWrapper
 PORTVERSION=	0.14
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Higher level wrapper around Alzabo Row and Table objects
 
-BUILD_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-Exception-Class>=0:devel/p5-Exception-Class \
 		p5-Alzabo>=0:devel/p5-Alzabo
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/php5-tarantool/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/php5-tarantool/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	tarantool
 PORTVERSION=	0.1.0
@@ -18,7 +18,7 @@ PORTSCOUT=	ignore:1
 USES=		php:ext
 
 CONFIGURE_ARGS=	--with-tarantool
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 
 USE_GITHUB=	yes
 GH_PROJECT=	${PORTNAME}-php

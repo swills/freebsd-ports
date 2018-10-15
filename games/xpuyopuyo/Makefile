@@ -1,5 +1,5 @@
 # Created by: Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
-# $FreeBSD: head/games/xpuyopuyo/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/xpuyopuyo/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xpuyopuyo
 PORTVERSION=	0.9.8
@@ -9,6 +9,9 @@ MASTER_SITES=	http://chaos2.org/xpuyopuyo/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Puzzle game, somewhat like Tetris
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

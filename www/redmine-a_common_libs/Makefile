@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-a_common_libs/Makefile 471173 2018-05-30 21:18:46Z feld $
+# $FreeBSD: head/www/redmine-a_common_libs/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	a_common_libs
 PORTVERSION=	2.4.6
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	redmine-
 DISTNAME=	${BB_COMMIT}
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Common libraries for RedMine
 
 RUN_DEPENDS=	rubygem-activerecord-session_store>0:databases/rubygem-activerecord-session_store

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Template-Plugin-Filter-Minify-CSS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Template-Plugin-Filter-Minify-CSS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-Filter-Minify-CSS
 PORTVERSION=	0.95
@@ -14,9 +14,9 @@ COMMENT=	CSS::Minifier filter for Template Toolkit
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CSS-Minifier>=0:textproc/p5-CSS-Minifier \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CSS-Minifier>=0:textproc/p5-CSS-Minifier \
 		p5-Template-Toolkit>=2:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

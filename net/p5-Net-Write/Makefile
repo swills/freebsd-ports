@@ -1,5 +1,5 @@
 # Created by: Christopher Boumenot <boumenot@gmail.com>
-# $FreeBSD: head/net/p5-Net-Write/Makefile 479183 2018-09-07 09:08:18Z amdmi3 $
+# $FreeBSD: head/net/p5-Net-Write/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Write
 PORTVERSION=	1.05
@@ -14,10 +14,10 @@ COMMENT=	Interface to open and send raw frames to the network
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/LICENSE.Artistic
 
-BUILD_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
 		p5-Socket6>=0.19:net/p5-Socket6 \
 		p5-Net-Pcap>=0.14:net/p5-Net-Pcap
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

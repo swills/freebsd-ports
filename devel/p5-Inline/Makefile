@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Inline/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Inline/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Inline
 PORTVERSION=	0.80
@@ -14,8 +14,8 @@ COMMENT=	Write Perl subroutines in other programming languages
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Parse-RecDescent>=1.800:devel/p5-Parse-RecDescent
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Parse-RecDescent>=1.800:devel/p5-Parse-RecDescent
 TEST_DEPENDS=	p5-Inline-Files>=0:devel/p5-Inline-Files \
 		p5-Test-Warn>=0.23:devel/p5-Test-Warn
 

@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/www/p5-HTML-CalendarMonthSimple/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-CalendarMonthSimple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-CalendarMonthSimple
 PORTVERSION=	1.25
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Module for Generating HTML Calendars
 
-BUILD_DEPENDS=	p5-Date-Calc>=0:devel/p5-Date-Calc
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Date-Calc>=0:devel/p5-Date-Calc
 
 USES=		perl5
 USE_PERL5=	configure

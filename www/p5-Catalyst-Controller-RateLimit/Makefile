@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/www/p5-Catalyst-Controller-RateLimit/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Controller-RateLimit/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Controller-RateLimit
 PORTVERSION=	0.28
@@ -14,12 +14,12 @@ COMMENT=	Protect your site from robots
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Algorithm-FloodControl>=1.91:devel/p5-Algorithm-FloodControl \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Algorithm-FloodControl>=1.91:devel/p5-Algorithm-FloodControl \
 		p5-Catalyst-Plugin-Cache-FastMmap>=0:www/p5-Catalyst-Plugin-Cache-FastMmap \
 		p5-Catalyst-Plugin-ConfigLoader>=0:www/p5-Catalyst-Plugin-ConfigLoader \
 		p5-Catalyst-Runtime>=5.7002:www/p5-Catalyst-Runtime \
 		p5-Params-Validate>=0:devel/p5-Params-Validate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-WWW-Mechanize-Catalyst>=0:devel/p5-Test-WWW-Mechanize-Catalyst \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable
 

@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/www/p5-Template-Plugin-StripScripts/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Template-Plugin-StripScripts/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-StripScripts
 PORTVERSION=	0.02
@@ -13,9 +13,9 @@ COMMENT=	TT plugin to filter HTML against XSS
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	p5-HTML-StripScripts-Parser>=0.99:www/p5-HTML-StripScripts-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-StripScripts-Parser>=0.99:www/p5-HTML-StripScripts-Parser \
 		p5-Template-Toolkit>=0:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Prototype/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Prototype/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Prototype
 PORTVERSION=	1.48
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate HTML and JavaScript for the Prototype library
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-HTML-Tree>=0:www/p5-HTML-Tree
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

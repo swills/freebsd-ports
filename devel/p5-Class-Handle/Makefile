@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Class-Handle/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-Handle/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Handle
 PORTVERSION=	1.07
@@ -14,9 +14,9 @@ COMMENT=	Create objects that are handles to classes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA \
 		p5-Class-Inspector>=0:devel/p5-Class-Inspector
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

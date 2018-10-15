@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/mail/p5-LMAP-CID2SPF/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-LMAP-CID2SPF/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	LMAP-CID2SPF
 PORTVERSION=	0.9
@@ -14,8 +14,8 @@ COMMENT=	Module to convert between Microsoft's Caller-ID and SPF		#'
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
 USES=		perl5 shebangfix
 USE_PERL5=	configure

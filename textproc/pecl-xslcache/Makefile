@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/pecl-xslcache/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/textproc/pecl-xslcache/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	xslcache
 PORTVERSION=	0.7.2
@@ -13,6 +13,6 @@ LICENSE=	PHP301
 
 USES=		php:pecl
 USE_PHP=	dom:build xml:build xsl:build
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 .include <bsd.port.mk>

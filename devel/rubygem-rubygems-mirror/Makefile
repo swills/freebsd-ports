@@ -1,9 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rubygems-mirror/Makefile 471415 2018-06-02 22:26:11Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rubygems-mirror/Makefile 482075 2018-10-14 16:30:58Z sunpoet $
 
 PORTNAME=	rubygems-mirror
-PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTVERSION=	1.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +13,9 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-net-http-persistent>=2.9:www/rubygem-net-http-persistent
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/kpartsplugin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/kpartsplugin/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	kpartsplugin
 DISTVERSION=	0.0-${PORTDATE}
@@ -7,7 +7,7 @@ CATEGORIES=	www kde
 MASTER_SITES=	http://www.unix-ag.uni-kl.de/~fischer/${PORTNAME}/
 DISTNAME=	${PORTNAME}-${PORTDATE}
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Browser file viewer using KDE technology
 
 USES=		cmake kde:4 qt:4 webplugin:native tar:bzip2

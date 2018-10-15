@@ -1,5 +1,5 @@
 # Created by: Henrik Hodne <henrik@hodne.io>
-# $FreeBSD: head/databases/p5-App-Sqitch/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/databases/p5-App-Sqitch/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	App-Sqitch
 PORTVERSION=	0.9994
@@ -18,7 +18,8 @@ TEST_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-Test-Dir>=0:misc/p5-Test-Dir \
 		p5-Test-File-Contents>=0:devel/p5-Test-File-Contents \
 		p5-Test-MockModule>=0:devel/p5-Test-MockModule
-BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-Config-GitLike>=1.11:devel/p5-Config-GitLike \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-DateTime>=0:devel/p5-DateTime \
@@ -47,7 +48,6 @@ BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-URI-db>=0.15:net/p5-URI-db \
 		p5-namespace-autoclean>=0.16:devel/p5-namespace-autoclean
 
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		gettext perl5
 USE_PERL5=	modbuild

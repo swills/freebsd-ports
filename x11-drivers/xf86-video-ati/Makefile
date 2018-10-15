@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-drivers/xf86-video-ati/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-ati/Makefile 481094 2018-10-02 01:25:49Z jmd $
 
 PORTNAME=	xf86-video-ati
-PORTVERSION=	7.9.0
-PORTREVISION=	3
+PORTVERSION=	18.1.0
 PORTEPOCH=	1
 CATEGORIES=	x11-drivers
 

@@ -1,5 +1,5 @@
 # Created by: Svyatoslav Lempert <svyatoslav.lempert@gmail.com>
-# $FreeBSD: head/devel/ioncube/Makefile 479270 2018-09-09 06:25:17Z riggs $
+# $FreeBSD: head/devel/ioncube/Makefile 481878 2018-10-12 06:23:47Z antoine $
 
 PORTNAME=	ioncube
 DISTVERSION=	10.2.4
@@ -23,6 +23,7 @@ IGNORE_DragonFly=	is unsupported on DragonFly
 ONLY_FOR_ARCHS=	amd64 i386
 NO_BUILD=	yes
 USES=		php:flavors
+IGNORE_WITH_PHP=	73
 
 SUB_FILES=	pkg-message
 WRKSRC=		${WRKDIR}/${PORTNAME}

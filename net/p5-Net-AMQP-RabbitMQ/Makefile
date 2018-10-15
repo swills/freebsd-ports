@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-AMQP-RabbitMQ/Makefile 474098 2018-07-07 14:52:51Z swills $
+# $FreeBSD: head/net/p5-Net-AMQP-RabbitMQ/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-AMQP-RabbitMQ
 PORTVERSION=	2.30000
@@ -12,8 +12,8 @@ COMMENT=	Interact with RabbitMQ over AMQP using librabbitmq
 NOT_FOR_ARCHS=		mips mips64
 NOT_FOR_ARCHS_REASON=	Endianness not known
 
-BUILD_DEPENDS=	p5-Math-Int64>0.34:math/p5-Math-Int64
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Int64>0.34:math/p5-Math-Int64
 
 USES=		perl5
 USE_PERL5=	configure

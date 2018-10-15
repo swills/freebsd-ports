@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Cache-Memcached/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Cache-Memcached/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Cache-Memcached
 PORTVERSION=	0.8
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Distributed cache for Catalyst
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
 		p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

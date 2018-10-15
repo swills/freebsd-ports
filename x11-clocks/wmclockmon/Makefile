@@ -1,5 +1,5 @@
 # Created by: pat
-# $FreeBSD: head/x11-clocks/wmclockmon/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-clocks/wmclockmon/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	wmclockmon
 PORTVERSION=	0.8.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://tnemeth.free.fr/projets/programmes/
 
 MAINTAINER=	xride@FreeBSD.org
 COMMENT=	Digital clock dockapp with a similar look to wmcpuload
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USE_XORG=	xpm
 USE_GNOME=	gtk12

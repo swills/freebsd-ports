@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/www/p5-Apache-Session-SharedMem/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Apache-Session-SharedMem/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Apache-Session-SharedMem
 PORTVERSION=	0.6
@@ -14,9 +14,9 @@ COMMENT=	Apache::Session extension that store session in shared memory
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IPC-Cache>=0:devel/p5-IPC-Cache \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IPC-Cache>=0:devel/p5-IPC-Cache \
 		p5-Apache-Session>=0:www/p5-Apache-Session
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

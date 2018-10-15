@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/textproc/p5-URI-Find/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-URI-Find/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	URI-Find
 PORTVERSION=	20160806
@@ -14,8 +14,8 @@ COMMENT=	Perl module to find URIs in arbitrary text
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-URI>=1:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=1:net/p5-URI
 
 USES=		perl5
 USE_PERL5=	modbuild

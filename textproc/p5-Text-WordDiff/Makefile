@@ -1,5 +1,5 @@
 # Created by: Rod Taylor <ports@rbt.ca>
-# $FreeBSD: head/textproc/p5-Text-WordDiff/Makefile 477738 2018-08-21 18:24:34Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-WordDiff/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-WordDiff
 PORTVERSION=	0.09
@@ -13,9 +13,9 @@ COMMENT=	Track changes between documents
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Algorithm-Diff>=0:devel/p5-Algorithm-Diff \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Algorithm-Diff>=0:devel/p5-Algorithm-Diff \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

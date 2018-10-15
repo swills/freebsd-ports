@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/devel/pecl-params/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/devel/pecl-params/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	params
 PORTVERSION=	1.0
@@ -10,7 +10,7 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PECL extension for a userspace equivalent of zend_parse_parameters()
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 CONFIGURE_ARGS=	--enable-params
 

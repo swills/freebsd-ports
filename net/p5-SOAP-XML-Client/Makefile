@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/p5-SOAP-XML-Client/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-SOAP-XML-Client/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SOAP-XML-Client
 PORTVERSION=	2.8
@@ -14,12 +14,12 @@ COMMENT=	Simple frame work for talking with web services
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-SOAP-Data-Builder>=0.8:net/p5-SOAP-Data-Builder \
 		p5-SOAP-Lite>=0.67:net/p5-SOAP-Lite \
 		p5-XML-LibXML>=0.6:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTSCOUT=	skipv:2.26
 

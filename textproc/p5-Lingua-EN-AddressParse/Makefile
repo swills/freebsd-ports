@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Lingua-EN-AddressParse/Makefile 458330 2018-01-07 12:13:21Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-EN-AddressParse/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Lingua-EN-AddressParse
 PORTVERSION=	1.27
@@ -12,10 +12,10 @@ COMMENT=	Perl module to manipulate geographical addresses
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Lingua-EN-NameParse>=1.24:textproc/p5-Lingua-EN-NameParse \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-EN-NameParse>=1.24:textproc/p5-Lingua-EN-NameParse \
 		p5-Locale-SubCountry>=1.41:misc/p5-Locale-SubCountry \
 		p5-Parse-RecDescent>=1:devel/p5-Parse-RecDescent
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-JSON>=0:converters/p5-JSON
 
 NO_ARCH=	yes

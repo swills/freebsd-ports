@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-Net-Google/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Google/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Google
 PORTVERSION=	1.0.1
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple OOP-ish interface to the Google SOAP API
 
-BUILD_DEPENDS=	p5-SOAP-Lite>=0:net/p5-SOAP-Lite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-SOAP-Lite>=0:net/p5-SOAP-Lite
 
 USES=		perl5
 USE_PERL5=	modbuild

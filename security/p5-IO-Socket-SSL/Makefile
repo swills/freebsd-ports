@@ -1,11 +1,10 @@
 # Created by: scrappy
-# $FreeBSD: head/security/p5-IO-Socket-SSL/Makefile 478356 2018-08-29 14:24:46Z swills $
+# $FreeBSD: head/security/p5-IO-Socket-SSL/Makefile 481491 2018-10-07 20:02:59Z sunpoet $
 
 PORTNAME=	IO-Socket-SSL
-PORTVERSION=	2.059
+PORTVERSION=	2.060
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:SULLR
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	svysh.fbsd@gmail.com
@@ -15,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/lib/IO/Socket/SSL.pod
 
-BUILD_DEPENDS=	p5-Net-SSLeay>=1.59:security/p5-Net-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-SSLeay>=1.59:security/p5-Net-SSLeay \
 		p5-Mozilla-CA>=20130114:www/p5-Mozilla-CA
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5 shebangfix

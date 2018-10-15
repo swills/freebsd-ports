@@ -1,5 +1,5 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/devel/p5-File-Tail-Scribe/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Tail-Scribe/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Tail-Scribe
 PORTVERSION=	0.13
@@ -14,10 +14,10 @@ COMMENT=	Perl Module to tail file to Scribe server
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Tail-Dir>=0:devel/p5-File-Tail-Dir \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Tail-Dir>=0:devel/p5-File-Tail-Dir \
 		p5-Log-Dispatch-Scribe>=0:devel/p5-Log-Dispatch-Scribe \
 		p5-Moose>=0:devel/p5-Moose
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-MockObject>=0:devel/p5-Test-MockObject
 
 USES=		perl5

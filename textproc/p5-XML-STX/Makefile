@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-STX/Makefile 463220 2018-02-28 15:12:48Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-STX/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-STX
 PORTVERSION=	0.43
@@ -14,10 +14,10 @@ COMMENT=	Pure Perl STX processor
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-XML-NamespaceSupport>=0:textproc/p5-XML-NamespaceSupport \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/net-mgmt/p5-NetApp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-mgmt/p5-NetApp/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	NetApp
 PORTVERSION=	500.002
@@ -14,13 +14,13 @@ COMMENT=	Perl interface to manage NetApp NAS devices
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Std>=0:devel/p5-Class-Std \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Std>=0:devel/p5-Class-Std \
 		p5-Clone>=0:devel/p5-Clone \
 		p5-IPC-Cmd>=0:devel/p5-IPC-Cmd \
 		p5-Net-Telnet>=0:net/p5-Net-Telnet \
 		p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-Regexp-Common>=0:textproc/p5-Regexp-Common
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

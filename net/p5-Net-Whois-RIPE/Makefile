@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/p5-Net-Whois-RIPE/Makefile 453615 2017-11-06 13:19:41Z mich $
+# $FreeBSD: head/net/p5-Net-Whois-RIPE/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Whois-RIPE
 PORTVERSION=	2.006001
@@ -14,8 +14,8 @@ COMMENT=	Implementation of RIPE Whois
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Iterator-Util>=0:devel/p5-Iterator-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Iterator-Util>=0:devel/p5-Iterator-Util
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize
 

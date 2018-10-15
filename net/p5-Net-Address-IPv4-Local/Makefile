@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Address-IPv4-Local/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Address-IPv4-Local/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Address-IPv4-Local
 PORTVERSION=	0.12
@@ -14,8 +14,8 @@ COMMENT=	Class for discovering the local system's IP address
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Error>=0:lang/p5-Error
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Error>=0:lang/p5-Error
 
 USES=		perl5
 USE_PERL5=	modbuild

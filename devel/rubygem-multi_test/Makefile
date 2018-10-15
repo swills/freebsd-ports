@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-multi_test/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-multi_test/Makefile 482062 2018-10-14 16:29:10Z sunpoet $
 
 PORTNAME=	multi_test
 PORTVERSION=	0.1.2
@@ -6,15 +6,17 @@ PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Help control rogue test, unit, autorun requirments
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES=		gem shebangfix
+USE_RUBY=	yes
 
 NO_ARCH=	yes
 
-USE_RUBY=	yes
-USES=		gem shebangfix
 SHEBANG_FILES=	test/all test/run
 
 .include <bsd.port.mk>

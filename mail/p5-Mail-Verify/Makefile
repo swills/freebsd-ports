@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net >
-# $FreeBSD: head/mail/p5-Mail-Verify/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Verify/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Verify
 PORTVERSION=	0.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to verify email addresses
 
-BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
 
 USES=		perl5
 USE_PERL5=	configure

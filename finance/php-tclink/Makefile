@@ -1,5 +1,5 @@
 # Created by: <mbowie@buzmo.com>
-# $FreeBSD: head/finance/php-tclink/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/finance/php-tclink/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	tclink
 PORTVERSION=	4.0.2
@@ -14,7 +14,7 @@ COMMENT=	PHP extension for TrustCommerce credit card processing
 
 USES=		php:ext ssl
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 post-patch:
 	# avoid name conflicts with libressl

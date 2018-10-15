@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/net/p5-URI-OpenURL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-URI-OpenURL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	URI-OpenURL
 PORTVERSION=	0.4.6
@@ -14,8 +14,8 @@ COMMENT=	Parse and construct OpenURL's (NISO Z39.88-2004)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI
 
 USES=		perl5
 USE_PERL5=	configure

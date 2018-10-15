@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-TypeTiny/Makefile 458791 2018-01-11 20:41:11Z adamw $
+# $FreeBSD: head/devel/p5-MooX-TypeTiny/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooX-TypeTiny
 PORTVERSION=	0.001003
@@ -13,9 +13,9 @@ COMMENT=	Optimized type checks for Moo + Type::Tiny
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moo>=1.004003:devel/p5-Moo \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moo>=1.004003:devel/p5-Moo \
 		p5-Type-Tiny>=1.000002:devel/p5-Type-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 USES=		perl5

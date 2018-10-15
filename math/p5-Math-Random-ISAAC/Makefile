@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Random-ISAAC/Makefile 437785 2017-04-05 13:35:45Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Random-ISAAC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Random-ISAAC
 PORTVERSION=	1.004
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Perl interface to the ISAAC PRNG Algorithm
 
-BUILD_DEPENDS=	p5-Math-Random-ISAAC-XS>0:math/p5-Math-Random-ISAAC-XS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Random-ISAAC-XS>0:math/p5-Math-Random-ISAAC-XS
 TEST_DEPENDS=	p5-Test-NoWarnings>0:devel/p5-Test-NoWarnings
 
 NO_ARCH=	yes

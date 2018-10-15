@@ -1,5 +1,5 @@
 # Created by: Kazumasa Nishizawa <k_nishizawa@anet.ne.jp>
-# $FreeBSD: head/audio/rio500/Makefile 451220 2017-10-04 11:40:06Z bapt $
+# $FreeBSD: head/audio/rio500/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	rio500
 PORTVERSION=	0.7
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Utilities for Diamond Rio500
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

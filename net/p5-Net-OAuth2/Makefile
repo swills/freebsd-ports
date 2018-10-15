@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-OAuth2/Makefile 465305 2018-03-22 19:53:10Z sunpoet $
+# $FreeBSD: head/net/p5-Net-OAuth2/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-OAuth2
 PORTVERSION=	0.64
@@ -13,11 +13,11 @@ COMMENT=	OAuth 2.0 for Perl
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-JSON>=0:converters/p5-JSON \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Mock-LWP-Dispatch>=0:devel/p5-Test-Mock-LWP-Dispatch \
 		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings \
 		p5-Test-Pod>=1.22:devel/p5-Test-Pod \

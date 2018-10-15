@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/www/p5-RT-Extension-SLA/Makefile 414664 2016-05-05 20:35:59Z matthew $
+# $FreeBSD: head/www/p5-RT-Extension-SLA/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	RT-Extension-SLA
 PORTVERSION=	1.04
@@ -12,8 +12,8 @@ COMMENT=	RT extension to automate due dates using service levels
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	p5-Business-Hours>0:misc/p5-Business-Hours
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Business-Hours>0:misc/p5-Business-Hours
 
 # SLA functionality comes as standard in RT 4.4.x
 CONFLICTS_INSTALL=	rt44-4.4.*
@@ -40,7 +40,6 @@ RT_VER=         ${opt:S/RT//}
 ### Temporary for debugging
 #WRKDIR=		${WRKDIRPREFIX}${.CURDIR}/work${RT_VER}
 
-BUILD_DEPENDS+=	${LOCALBASE}/bin/rt:www/rt${RT_VER}
 RUN_DEPENDS+=	${LOCALBASE}/bin/rt:www/rt${RT_VER}
 
 PLIST_SUB+=	RTHOME=share/rt${RT_VER}

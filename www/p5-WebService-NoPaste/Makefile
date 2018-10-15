@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@netnews.NCTU.edu.tw>
-# $FreeBSD: head/www/p5-WebService-NoPaste/Makefile 458062 2018-01-04 20:11:12Z sunpoet $
+# $FreeBSD: head/www/p5-WebService-NoPaste/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WebService-NoPaste
 PORTVERSION=	0.03
@@ -14,10 +14,10 @@ COMMENT=	Pastebin web application to upload snippets of text
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-All>=0:devel/p5-IO-All \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-All>=0:devel/p5-IO-All \
 		p5-Spiffy>=0:devel/p5-Spiffy \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	X11
 X11_DESC=	X11 Clipboard support

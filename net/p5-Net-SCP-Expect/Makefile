@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/net/p5-Net-SCP-Expect/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-SCP-Expect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SCP-Expect
 PORTVERSION=	0.16
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	numisemis@yahoo.com
 COMMENT=	Perl5 wrapper for scp that allows passwords via Expect
 
-BUILD_DEPENDS=	p5-Expect>=1.14:lang/p5-Expect \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Expect>=1.14:lang/p5-Expect \
 		p5-Net-IPv6Addr>=0:net-mgmt/p5-Net-IPv6Addr \
 		p5-Term-ReadPassword>=0.01:devel/p5-Term-ReadPassword
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net-mgmt/p5-GRNOC-TL1/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-GRNOC-TL1/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	GRNOC-TL1
 PORTVERSION=	1.3.10
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Retrieve data from different models of TL1 devices
 
-BUILD_DEPENDS=	p5-Date-Calc>0:devel/p5-Date-Calc \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Date-Calc>0:devel/p5-Date-Calc \
 		p5-Net-SSH-Expect>0:net/p5-Net-SSH-Expect \
 		p5-Net-Telnet>0:net/p5-Net-Telnet
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

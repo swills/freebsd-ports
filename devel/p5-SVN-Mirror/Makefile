@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-SVN-Mirror/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-SVN-Mirror/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-Mirror
 PORTVERSION=	0.75
@@ -14,7 +14,8 @@ COMMENT=	Mirror remote subversion repository to local
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Data-UUID>=0:devel/p5-Data-UUID \
 		p5-File-chdir>=0:devel/p5-File-chdir \
 		p5-SVN-Simple>=0:devel/p5-SVN-Simple \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-URI>=0:net/p5-URI \
 		p5-VCP-autrijus>=0:devel/p5-VCP-autrijus \
 		p5-subversion>=0:devel/p5-subversion
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

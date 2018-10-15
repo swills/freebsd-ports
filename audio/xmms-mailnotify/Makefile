@@ -1,5 +1,5 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/xmms-mailnotify/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/xmms-mailnotify/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmms-mailnotify
 PORTVERSION=	0.2.0
@@ -9,6 +9,9 @@ MASTER_SITES=	LOCAL/arved
 
 MAINTAINER=	arved@FreeBSD.org
 COMMENT=	XMMS plugin, that plays a sound on incoming mail and opens the MUA
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libxmms.so:multimedia/xmms
 

@@ -1,12 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-wiki_notes/Makefile 415113 2016-05-13 13:21:10Z feld $
+# $FreeBSD: head/www/redmine-wiki_notes/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	wiki_notes
 PORTVERSION=	0.0.20150125
 CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Redmine wiki notes plugin
 
 LICENSE=	GPLv2

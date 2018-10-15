@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/py-softlayer/Makefile 478741 2018-09-01 22:51:38Z sunpoet $
+# $FreeBSD: head/net/py-softlayer/Makefile 481345 2018-10-06 09:35:05Z sunpoet $
 
 PORTNAME=	softlayer
-PORTVERSION=	5.5.2
+PORTVERSION=	5.5.3
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,8 +22,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=5:devel/py-click@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.7.0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}urllib3>=1.22:net/py-urllib3@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USE_PYTHON=	autoplist concurrent distutils
 USES=		python
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

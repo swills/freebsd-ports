@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-GenToc/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/www/p5-HTML-GenToc/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-GenToc
 PORTVERSION=	3.20
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate a Table of Contents for HTML documents
 
-BUILD_DEPENDS=	p5-HTML-LinkList>=0.1501:www/p5-HTML-LinkList \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-LinkList>=0.1501:www/p5-HTML-LinkList \
 		p5-HTML-SimpleParse>=0.10:www/p5-HTML-SimpleParse \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Getopt-ArgvFile>=1.09:devel/p5-Getopt-ArgvFile
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <frederic@culot.org>
-# $FreeBSD: head/devel/p5-Package-DeprecationManager/Makefile 447172 2017-08-02 19:15:24Z culot $
+# $FreeBSD: head/devel/p5-Package-DeprecationManager/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Package-DeprecationManager
 PORTVERSION=	0.17
@@ -14,11 +14,11 @@ COMMENT=	Manage deprecation warnings for your distribution
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Package-Stash>0:devel/p5-Package-Stash \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Package-Stash>0:devel/p5-Package-Stash \
 		p5-Params-Util>0:devel/p5-Params-Util \
 		p5-Sub-Install>0:devel/p5-Sub-Install \
 		p5-Sub-Name>=0:devel/p5-Sub-Name
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>0:devel/p5-Test-Fatal \
 		p5-Test-Warnings>0:devel/p5-Test-Warnings
 

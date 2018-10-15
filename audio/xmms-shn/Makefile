@@ -1,5 +1,5 @@
 # Created by: Bill Fenner <fenner@FreeBSD.org>
-# $FreeBSD: head/audio/xmms-shn/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/xmms-shn/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmms-shn
 PORTVERSION=	2.4.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.etree.org/shnutils/xmms-shn/dist/src/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XMMS plugin to allow playing shorten-compressed audio
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+ SHORTEN
 LICENSE_COMB=	multi

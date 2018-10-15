@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-dbus/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt5-dbus/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	dbus
 DISTVERSION=	${QT5_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Qt D-Bus inter-process communication module
 
 LIB_DEPENDS=	libdbus-1.so:devel/dbus
 
-USES=		qmake:no_env qt-dist:5,base
+USES=		compiler:c++11-lang qmake:no_env qt-dist:5,base
 USE_QT=		core qmake_build buildtools_build
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-no-gui -no-xcb

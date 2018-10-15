@@ -1,5 +1,5 @@
 # Created by: erwin@FreeBSD.org
-# $FreeBSD: head/databases/p5-MLDBM-Sync/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-MLDBM-Sync/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MLDBM-Sync
 PORTVERSION=	0.30
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	MLDBM::Sync - safe concurrent access to MLDBM databases
 
-BUILD_DEPENDS=	p5-MLDBM>=0:databases/p5-MLDBM
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MLDBM>=0:databases/p5-MLDBM
 
 USES=		perl5
 USE_PERL5=	configure

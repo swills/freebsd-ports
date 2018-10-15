@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-MaxMind-DB-Common/Makefile 454068 2017-11-12 19:10:14Z sunpoet $
+# $FreeBSD: head/net/p5-MaxMind-DB-Common/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MaxMind-DB-Common
 PORTVERSION=	0.040001
@@ -15,13 +15,13 @@ COMMENT=	Code shared by the DB reader and writer modules
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Data-Dumper-Concise>=0:devel/p5-Data-Dumper-Concise \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Dumper-Concise>=0:devel/p5-Data-Dumper-Concise \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-List-AllUtils>=0:devel/p5-List-AllUtils \
 		p5-Moo>=0:devel/p5-Moo \
 		p5-MooX-StrictConstructor>=0:devel/p5-MooX-StrictConstructor \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

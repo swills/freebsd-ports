@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gcvs/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/gcvs/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gcvs
 PORTVERSION=	1.0
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/cvsgui/gCvs/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-end interface client for CVS
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-SimpleLinkChecker/Makefile 468650 2018-04-29 19:46:28Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-SimpleLinkChecker/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-SimpleLinkChecker
 PORTVERSION=	1.167
@@ -13,11 +13,11 @@ COMMENT=	Check the HTTP response code for a link
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTTP-Message>=1.28:www/p5-HTTP-Message \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=1.28:www/p5-HTTP-Message \
 		p5-LWP-Protocol-https>=1:www/p5-LWP-Protocol-https \
 		p5-Mojolicious>=4.50:www/p5-Mojolicious \
 		p5-libwww>0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/misc/p5-Business-Hours/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/p5-Business-Hours/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Business-Hours
 PORTVERSION=	0.12
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Calculate business hours during a time period
 
-BUILD_DEPENDS=	p5-Set-IntSpan>1.12:math/p5-Set-IntSpan
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Set-IntSpan>1.12:math/p5-Set-IntSpan
 TEST_DEPENDS=	p5-Test-Pod>-1.0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>0:devel/p5-Test-Pod-Coverage
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/seafile-server/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/net-mgmt/seafile-server/Makefile 481020 2018-10-01 09:36:38Z antoine $
 
 PORTNAME=	seafile-server
 DISTVERSIONPREFIX=	v
@@ -29,7 +29,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} 
 CONFLICTS=	seafile-[0-9]*
 
 USES=		autoreconf compiler:c11 iconv libarchive libtool localbase mysql \
-		pathfix pgsql pkgconfig python:-2.7 shebangfix sqlite ssl
+		pathfix pgsql pkgconfig python:2.7 shebangfix sqlite ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	haiwen
 USE_GNOME=	glib20

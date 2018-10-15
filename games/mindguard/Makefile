@@ -1,5 +1,5 @@
 # Created by: kris
-# $FreeBSD: head/games/mindguard/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/mindguard/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	mindguard
 PORTVERSION=	0.0.0.4
@@ -9,6 +9,9 @@ MASTER_SITES=	http://zapatopi.net/mindguard/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Helpful utility for detecting and jamming harmful mind-control rays
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	MGPL
 LICENSE_NAME=	MINDGUARD PUBLIC LICENSE

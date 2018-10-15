@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.idv.tw>
-# $FreeBSD: head/www/p5-WWW-SourceForge/Makefile 416157 2016-05-30 15:33:44Z mat $
+# $FreeBSD: head/www/p5-WWW-SourceForge/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-SourceForge
 PORTVERSION=	0.70
@@ -13,10 +13,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Retrieve information from SourceForge site
 
-BUILD_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
 		p5-HTML-TableExtract>=0:www/p5-HTML-TableExtract \
 		p5-YAML>=0:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Net-Trac/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Net-Trac/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Trac
 PORTVERSION=	0.16
@@ -14,7 +14,8 @@ COMMENT=	Interact with a remote Trac instance
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Any-Moose>0:devel/p5-Any-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Any-Moose>0:devel/p5-Any-Moose \
 		p5-DateTime>0:devel/p5-DateTime \
 		p5-Lingua-EN-Inflect>0:textproc/p5-Lingua-EN-Inflect \
 		p5-Params-Validate>0:devel/p5-Params-Validate \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-Any-Moose>0:devel/p5-Any-Moose \
 		p5-URI>0:net/p5-URI \
 		p5-WWW-Mechanize>=1.52:www/p5-WWW-Mechanize \
 		p5-libwww>0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

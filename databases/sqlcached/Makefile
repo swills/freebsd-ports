@@ -1,20 +1,16 @@
 # Created by: ivoras
-# $FreeBSD: head/databases/sqlcached/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/sqlcached/Makefile 481362 2018-10-06 10:30:45Z tobik $
 
 PORTNAME=	sqlcached
 PORTVERSION=	r6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ivoras@FreeBSD.org
 COMMENT=	Cache daemon using SQL for data manipulation
 
-LIB_DEPENDS=	libsqlite.so:databases/sqlite2
-
-USES=		readline ncurses tar:tgz
-
-LDFLAGS+=	-L${LOCALBASE}/lib
+USES=		localbase:ldflags ncurses readline sqlite tar:tgz
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
@@ -26,7 +22,6 @@ PLIST_FILES=	bin/${PORTNAME} etc/rc.d/${PORTNAME} \
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|-lcurses|-lncurses|' ${WRKSRC}/Makefile
 	@${REINPLACE_CMD} 's|/usr/local|${PREFIX}|' \
 		${WRKSRC}/FreeBSD/${PORTNAME}
 

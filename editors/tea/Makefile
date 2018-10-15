@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/editors/tea/Makefile 480817 2018-09-27 20:29:00Z danilo $
+# $FreeBSD: head/editors/tea/Makefile 481055 2018-10-01 19:22:53Z danilo $
 
 PORTNAME=	tea
-PORTVERSION=	46.2.0
+PORTVERSION=	46.3.0
 CATEGORIES=	editors
 
 MAINTAINER=	danilo@FreeBSD.org

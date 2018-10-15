@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-File-Find-Object/Makefile 448329 2017-08-19 16:05:18Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Find-Object/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Find-Object
 PORTVERSION=	0.3.2
@@ -14,8 +14,8 @@ COMMENT=	Object oriented File::Find replacement
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-XSAccessor>=0:devel/p5-Class-XSAccessor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-XSAccessor>=0:devel/p5-Class-XSAccessor
 
 NO_ARCH=	yes
 USES=		perl5

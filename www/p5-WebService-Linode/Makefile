@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-WebService-Linode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WebService-Linode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WebService-Linode
 PORTVERSION=	0.28
@@ -13,11 +13,11 @@ COMMENT=	Perl Interface to the Linode.com API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-JSON>=0:converters/p5-JSON \
 		p5-Mozilla-CA>=0:www/p5-Mozilla-CA \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-MockObject>=0:devel/p5-Test-MockObject
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-SPDY/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-SPDY/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SPDY
 DISTVERSION=	0.1_5
@@ -15,9 +15,9 @@ COMMENT=	SPDY protocol client and server implementation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
 		p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Pod>=0:devel/p5-Test-Pod
 

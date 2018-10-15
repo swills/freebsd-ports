@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/graphopt/Makefile 478784 2018-09-02 11:10:06Z tobik $
+# $FreeBSD: head/graphics/graphopt/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	graphopt
 PORTVERSION=	0.4.1
@@ -10,6 +10,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Graph layout optimizer
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 

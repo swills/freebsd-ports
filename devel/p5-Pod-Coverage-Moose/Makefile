@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Pod-Coverage-Moose/Makefile 458202 2018-01-06 04:33:51Z sunpoet $
+# $FreeBSD: head/devel/p5-Pod-Coverage-Moose/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Coverage-Moose
 PORTVERSION=	0.07
@@ -13,10 +13,10 @@ COMMENT=	Pod::Coverage extension for Moose
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=2.1300:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=2.1300:devel/p5-Moose \
 		p5-Pod-Coverage>=0:devel/p5-Pod-Coverage \
 		p5-namespace-autoclean>=0.08:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires
 
 NO_ARCH=	yes

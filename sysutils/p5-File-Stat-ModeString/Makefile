@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/sysutils/p5-File-Stat-ModeString/Makefile 422377 2016-09-18 11:54:01Z rene $
+# $FreeBSD: head/sysutils/p5-File-Stat-ModeString/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Stat-ModeString
 PORTVERSION=	1.00
@@ -14,8 +14,8 @@ COMMENT=	Converts file stat(2) mode to/from string representation
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	p5-File-Stat-Bits>0:sysutils/p5-File-Stat-Bits
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Stat-Bits>0:sysutils/p5-File-Stat-Bits
 
 USES=		perl5
 USE_PERL5=	configure

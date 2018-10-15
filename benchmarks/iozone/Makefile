@@ -1,8 +1,8 @@
 # Created by: jmz
-# $FreeBSD: head/benchmarks/iozone/Makefile 419222 2016-07-28 14:40:45Z jpaetzel $
+# $FreeBSD: head/benchmarks/iozone/Makefile 481506 2018-10-08 02:49:46Z jpaetzel $
 
 PORTNAME=	iozone
-DISTVERSION=	3_457
+DISTVERSION=	3_482
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.iozone.org/src/current/
 DISTNAME=	${PORTNAME}${DISTVERSION}

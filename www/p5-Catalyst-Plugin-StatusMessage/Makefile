@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-Plugin-StatusMessage/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-StatusMessage/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-StatusMessage
 PORTVERSION=	1.002000
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	fw@moov.de
 COMMENT=	Handle passing of status (success and error) messages
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime
 
 USES=		perl5
 USE_PERL5=	configure

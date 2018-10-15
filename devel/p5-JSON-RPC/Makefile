@@ -1,5 +1,5 @@
 # Created by: Vadim Vatlin
-# $FreeBSD: head/devel/p5-JSON-RPC/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-JSON-RPC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	JSON-RPC
 PORTVERSION=	1.06
@@ -15,14 +15,14 @@ COMMENT=	Perl implementation of JSON-RPC 1.1 protocol
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor-Lite>=0:devel/p5-Class-Accessor-Lite \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor-Lite>=0:devel/p5-Class-Accessor-Lite \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-JSON>=0:converters/p5-JSON \
 		p5-JSON-XS>=0:converters/p5-JSON-XS \
 		p5-Plack>=0:www/p5-Plack \
 		p5-Router-Simple>=0:www/p5-Router-Simple \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

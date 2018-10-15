@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Protocol-SocketIO/Makefile 431106 2017-01-10 18:05:28Z sunpoet $
+# $FreeBSD: head/www/p5-Protocol-SocketIO/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Protocol-SocketIO
 PORTVERSION=	0.07
@@ -13,8 +13,8 @@ COMMENT=	Socket.IO protocol implementation
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-JSON>=0:converters/p5-JSON
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=0:converters/p5-JSON
 
 NO_ARCH=	yes
 USE_PERL5=	modbuildtiny

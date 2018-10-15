@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-File-MimeInfo/Makefile 476519 2018-08-06 19:52:07Z sunpoet $
+# $FreeBSD: head/devel/p5-File-MimeInfo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-MimeInfo
 PORTVERSION=	0.29
@@ -13,9 +13,9 @@ COMMENT=	Determine file type
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-BaseDir>=0.03:devel/p5-File-BaseDir \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-BaseDir>=0.03:devel/p5-File-BaseDir \
 		p5-File-DesktopEntry>=0.04:devel/p5-File-DesktopEntry
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

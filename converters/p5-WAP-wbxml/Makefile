@@ -1,5 +1,5 @@
 # Created by: Timur I. Bakeyev <bat@cpan.org>
-# $FreeBSD: head/converters/p5-WAP-wbxml/Makefile 431120 2017-01-10 18:36:41Z sunpoet $
+# $FreeBSD: head/converters/p5-WAP-wbxml/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WAP-wbxml
 PORTVERSION=	1.14
@@ -14,9 +14,9 @@ COMMENT=	Binarization of XML file
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-XML-DOM>=0:textproc/p5-XML-DOM \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-DOM>=0:textproc/p5-XML-DOM \
 		p5-I18N-Charset>=0:misc/p5-I18N-Charset
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		dos2unix perl5
 USE_PERL5=	configure

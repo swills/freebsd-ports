@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Params-Validate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Params-Validate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Params-Validate
 PORTVERSION=	0.21
@@ -13,11 +13,11 @@ COMMENT=	Extension of Params::Validate for using Moose types
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Devel-Caller>=0:devel/p5-Devel-Caller \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Devel-Caller>=0:devel/p5-Devel-Caller \
 		p5-Moose>=0.58:devel/p5-Moose \
 		p5-Params-Validate>=0.88:devel/p5-Params-Validate \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Unicode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Unicode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Unicode
 PORTVERSION=	0.93
@@ -14,9 +14,9 @@ COMMENT=	Unicode aware Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
 		p5-MRO-Compat>=0.10:devel/p5-MRO-Compat
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-Test-WWW-Mechanize-Catalyst>=0:devel/p5-Test-WWW-Mechanize-Catalyst
 

@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Infinitive/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Infinitive/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Lingua-EN-Infinitive
 PORTVERSION=	1.14
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moo>=2.003000:devel/p5-Moo \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moo>=2.003000:devel/p5-Moo \
 		p5-Type-Tiny>=1.000005:devel/p5-Type-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5 tar:tgz

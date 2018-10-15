@@ -1,10 +1,10 @@
-# $FreeBSD: head/net-im/talkatu/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/talkatu/Makefile 481501 2018-10-08 01:23:58Z swills $
 
 PORTNAME=	talkatu
-PORTVERSION=	g2018081801
+PORTVERSION=	g2018092901
 CATEGORIES=	net-im
 MASTER_SITES=	https://bitbucket.org/rw_grim/talkatu/get/
-DISTNAME=	d0bd69e7ca26
+DISTNAME=	7cac4f444642
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	swills@FreeBSD.org
@@ -17,10 +17,11 @@ LIB_DEPENDS=	libgladeui-2.so:devel/glade \
 		libgumbo.so:devel/gumbo \
 		libcmark.so:textproc/cmark
 
-USES=		meson pkgconfig
+USES=		gettext-runtime meson pkgconfig
 USE_LDCONFIG=	yes
-MESON_ARGS=	-Dgobject-introspection=false
+MESON_ARGS=	-Dgobject-introspection=false -Dtests=false
 WRKSRC=		${WRKDIR}/rw_grim-talkatu-${DISTNAME}
+USE_GNOME=	glib20 gtk30
 
 OPTIONS_DEFINE=	DOCS
 

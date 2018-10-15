@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/biology/p5-Bio-Phylo/Makefile 457333 2017-12-26 23:20:28Z sunpoet $
+# $FreeBSD: head/biology/p5-Bio-Phylo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Bio-Phylo
 PORTVERSION=	2.0.1
@@ -15,7 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \
 		p5-BioPerl>=0:biology/p5-BioPerl \
 		p5-GD>=0:graphics/p5-GD \
 		p5-Math-CDF>=0:math/p5-Math-CDF \
@@ -29,7 +30,6 @@ BUILD_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \
 		p5-XML-Twig>=0:textproc/p5-XML-Twig \
 		p5-XML-XML2JSON>=0:textproc/p5-XML-XML2JSON \
 		p5-libxml>=0:textproc/p5-libxml
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-JSON>=0:converters/p5-JSON
 
 NO_ARCH=	yes

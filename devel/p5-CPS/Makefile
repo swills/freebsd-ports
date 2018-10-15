@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-CPS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPS
 PORTVERSION=	0.18
@@ -15,8 +15,8 @@ COMMENT=	Manage flow of control in Continuation-Passing Style
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Future>0:devel/p5-Future
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Future>0:devel/p5-Future
 TEST_DEPENDS=	p5-Test-Identity>0:devel/p5-Test-Identity \
 		p5-Test-Pod>=1:devel/p5-Test-Pod \
 		p5-Test-Refcount>0:devel/p5-Test-Refcount \

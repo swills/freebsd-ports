@@ -1,12 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytvmaze/Makefile 415300 2016-05-16 02:13:10Z feld $
+# $FreeBSD: head/devel/py-pytvmaze/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	pytvmaze
 PORTVERSION=	1.5.1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python interface to the TV Maze API
 
 USES=		python

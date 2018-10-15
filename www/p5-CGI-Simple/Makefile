@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-Simple/Makefile 475370 2018-07-26 13:20:38Z wen $
+# $FreeBSD: head/www/p5-CGI-Simple/Makefile 481518 2018-10-08 07:45:13Z wen $
 
 PORTNAME=	CGI-Simple
-PORTVERSION=	1.160
+PORTVERSION=	1.210
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Parv <parv@pair.org>
-# $FreeBSD: head/databases/p5-DBIx-Simple/Makefile 456146 2017-12-12 13:34:01Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Simple
 PORTVERSION=	1.37
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simplified object oriented interface to Perl DBI
 
-BUILD_DEPENDS=	p5-DBI>=1.21:databases/p5-DBI ${TEST_DEPENDS}
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=1.21:databases/p5-DBI ${TEST_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 OPTIONS_DEFINE=		SQL_INTERP SQL_ABSTRACT DBIX_XHTML_TABLE TEXT_TABLE

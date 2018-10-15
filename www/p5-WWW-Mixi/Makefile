@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/www/p5-WWW-Mixi/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Mixi/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Mixi
 PORTVERSION=	0.50
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module of Automated interface to the Mixi
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 				ja-p5-Jcode>=0:japanese/p5-Jcode
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

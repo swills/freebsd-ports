@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Build-XSUtil/Makefile 467923 2018-04-22 08:46:58Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Build-XSUtil/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Module-Build-XSUtil
 PORTVERSION=	0.19
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Devel-CheckCompiler>=0:devel/p5-Devel-CheckCompiler
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Devel-CheckCompiler>=0:devel/p5-Devel-CheckCompiler
 TEST_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-Cwd-Guard>=0:devel/p5-Cwd-Guard \
 		p5-File-Copy-Recursive-Reduced>=0.002:devel/p5-File-Copy-Recursive-Reduced

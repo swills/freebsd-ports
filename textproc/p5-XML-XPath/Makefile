@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-XPath/Makefile 446923 2017-07-30 13:13:00Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-XPath/Makefile 481862 2018-10-12 00:16:44Z wen $
 
 PORTNAME=	XML-XPath
-PORTVERSION=	1.42
+PORTVERSION=	1.44
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,8 @@ COMMENT=	Modules for parsing and evaluating XPath statements
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-XML-Parser>=2.23:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=2.23:textproc/p5-XML-Parser
 TEST_DEPENDS=	p5-Path-Tiny>=0.076:devel/p5-Path-Tiny
 
 NO_ARCH=	yes
@@ -24,7 +24,8 @@ USE_PERL5=	configure
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} < 502501
-BUILD_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 .endif
 

@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Class-DBI-Oracle/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-Oracle/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-Oracle
 PORTVERSION=	0.51
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensions to Class::DBI for Oracle
 
-BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
 
 USES=		perl5
 USE_PERL5=	configure

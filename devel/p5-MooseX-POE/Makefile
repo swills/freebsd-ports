@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-POE/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-POE/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-POE
 PORTVERSION=	0.215
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=2.0002:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=2.0002:devel/p5-Moose \
 		p5-POE>=1.310:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-MooseX-Declare>=0:devel/p5-MooseX-Declare \
 		p5-Test-Fatal>=0.003:devel/p5-Test-Fatal
 

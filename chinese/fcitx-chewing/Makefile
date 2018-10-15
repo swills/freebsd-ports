@@ -1,8 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-chewing/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/fcitx-chewing/Makefile 481196 2018-10-04 01:48:10Z wen $
 
 PORTNAME=	fcitx-chewing
-PORTVERSION=	0.2.2
+PORTVERSION=	0.2.3
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx

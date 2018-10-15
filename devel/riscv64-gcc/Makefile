@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/riscv64-gcc/Makefile 474879 2018-07-18 16:10:24Z lwhsu $
+# $FreeBSD: head/devel/riscv64-gcc/Makefile 481270 2018-10-05 10:31:05Z lwhsu $
 
 PORTNAME=	gcc
-PORTVERSION=	7.2.0
-PORTREVISION=	5
+PORTVERSION=	8.1.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-
 
@@ -25,7 +24,7 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-riscv
 GH_PROJECT=	riscv-gcc
-GH_TAGNAME=	49b9ee4
+GH_TAGNAME=	7a5a908
 
 GCC_TARGET=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}
 

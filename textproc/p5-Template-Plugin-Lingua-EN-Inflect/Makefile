@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Template-Plugin-Lingua-EN-Inflect/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/textproc/p5-Template-Plugin-Lingua-EN-Inflect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-Lingua-EN-Inflect
 PORTVERSION=	0.04
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface Template Toolkit to Lingua::EN::Inflect module
 
-BUILD_DEPENDS=	p5-Lingua-EN-Inflect>=0:textproc/p5-Lingua-EN-Inflect \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-EN-Inflect>=0:textproc/p5-Lingua-EN-Inflect \
 		p5-Template-Toolkit>=0:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

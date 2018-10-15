@@ -1,9 +1,9 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 477800 2018-08-22 16:40:48Z pizzamig $
+# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 481217 2018-10-04 11:41:13Z pizzamig $
 
 PORTNAME=	phoronix-test-suite
 DISTVERSIONPREFIX=	v
-DISTVERSION=	8.0.1
+DISTVERSION=	8.2.0
 CATEGORIES=	benchmarks
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
@@ -12,6 +12,8 @@ COMMENT=	Phoronix Benchmarking Suite
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+RUN_DEPENDS=	sudo:security/sudo
 
 USES=		php:cli,build,flavors python
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/flightgear/Makefile 481268 2018-10-05 10:10:02Z martymac $
 
 PORTNAME=	flightgear
 PORTVERSION=	2018.2.2
@@ -28,8 +28,8 @@ RUN_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \
 		${LOCALBASE}/share/flightgear/version:games/flightgear-data
 
 LLD_UNSAFE=	yes
-USES=		alias cmake compiler cpe dos2unix jpeg openal:al,alut sqlite \
-		tar:bzip2
+USES=		alias cmake compiler cpe dos2unix gl jpeg openal:al,alut \
+		sqlite tar:bzip2
 USE_XORG=	ice sm x11 xext xft xi xinerama xmu xt
 USE_GL=		gl glew glu glut
 

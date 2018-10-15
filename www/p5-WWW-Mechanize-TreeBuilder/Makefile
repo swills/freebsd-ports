@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <Alex.Deiter@Gmail.COM>
-# $FreeBSD: head/www/p5-WWW-Mechanize-TreeBuilder/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Mechanize-TreeBuilder/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Mechanize-TreeBuilder
 PORTVERSION=	1.20000
@@ -13,10 +13,10 @@ COMMENT=	Combine WWW::Mechanize and HTML::TreeBuilder
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-MooseX-Role-Parameterized>=0:devel/p5-MooseX-Role-Parameterized \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MooseX-Role-Parameterized>=0:devel/p5-MooseX-Role-Parameterized \
 		p5-HTML-Tree>=0:www/p5-HTML-Tree \
 		p5-Moose>=2.1200:devel/p5-Moose
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Params-Util>0:devel/p5-Params-Util \
 		p5-Test-WWW-Mechanize>0:devel/p5-Test-WWW-Mechanize
 

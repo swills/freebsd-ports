@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Polygon-Tree/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Math-Polygon-Tree/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Polygon-Tree
 PORTVERSION=	0.08
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Class for fast check if point is inside polygon
 
-BUILD_DEPENDS=	p5-Test-Simple>=0:devel/p5-Test-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-Simple>=0:devel/p5-Test-Simple \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Math-Geometry-Planar-GPC-PolygonXS>=0:math/p5-Math-Geometry-Planar-GPC-PolygonXS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS:=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
 
 USES=		perl5

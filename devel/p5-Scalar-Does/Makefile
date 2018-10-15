@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Scalar-Does/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Scalar-Does/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Scalar-Does
 PORTVERSION=	0.203
@@ -14,12 +14,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Exporter-Tiny>=0.026:devel/p5-Exporter-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Exporter-Tiny>=0.026:devel/p5-Exporter-Tiny \
 		p5-Type-Tiny>=0.004:devel/p5-Type-Tiny \
 		p5-URI>=0:net/p5-URI \
 		p5-lexical-underscore>=0:devel/p5-lexical-underscore \
 		p5-namespace-clean>=0.19:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-All>=0:devel/p5-IO-All \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-Types>=0:devel/p5-MooseX-Types \

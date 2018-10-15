@@ -1,15 +1,18 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/devel/qca/Makefile 480827 2018-09-27 22:42:11Z linimon $
+# $FreeBSD: head/devel/qca/Makefile 481850 2018-10-11 19:56:47Z adridg $
 
 PORTNAME=	qca
 PORTVERSION=	2.1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	KDE/stable/qca/${PORTVERSION}/src
 PKGNAMESUFFIX=	-${FLAVOR}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Cross-platform crypto API for Qt ${FLAVOR:C/qt//}
+
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss

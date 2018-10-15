@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/deskutils/planner/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/deskutils/planner/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #   $MCom: ports-stable/deskutils/planner/Makefile,v 1.4 2009/04/16 00:34:24 kwm Exp $
 
 PORTNAME=	planner
@@ -11,6 +11,9 @@ DIST_SUBDIR=	gnome2
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Project management application for GNOME 2
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
 		shared-mime-info tar:xz

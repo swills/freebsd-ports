@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/devel/p5-Module-Starter/Makefile 472651 2018-06-17 23:15:50Z wen $
+# $FreeBSD: head/devel/p5-Module-Starter/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Module-Starter
 PORTVERSION=	1.75
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Module-Runtime>=0:devel/p5-Module-Runtime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Module-Runtime>=0:devel/p5-Module-Runtime
 
 PORTSCOUT=	skipv:1.470
 

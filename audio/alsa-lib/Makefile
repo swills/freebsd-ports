@@ -1,9 +1,9 @@
 # Created by: Aragon Gouveia <aragon@phat.za.net>
-# $FreeBSD: head/audio/alsa-lib/Makefile 464376 2018-03-13 14:11:42Z jbeich $
+# $FreeBSD: head/audio/alsa-lib/Makefile 481945 2018-10-12 23:19:20Z jbeich $
 
 PORTNAME=	alsa-lib
 PORTVERSION=	1.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.alsa-project.org/pub/lib/ \
 		GENTOO

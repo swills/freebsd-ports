@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-Mason-PSGIHandler/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-HTML-Mason-PSGIHandler/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Mason-PSGIHandler
 PORTVERSION=	0.53
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PSGI handler for HTML::Mason
 
-BUILD_DEPENDS=	p5-CGI-PSGI>0:www/p5-CGI-PSGI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-PSGI>0:www/p5-CGI-PSGI \
 		p5-HTML-Mason>0:www/p5-HTML-Mason
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Plack>=0:www/p5-Plack
 
 USES=		perl5

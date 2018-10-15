@@ -1,5 +1,5 @@
 # Created by: June-Yen Huang <jihuang@gate.sinica.edu.tw>
-# $FreeBSD: head/devel/p5-VCP-Source-cvsbk/Makefile 471634 2018-06-04 18:08:01Z sunpoet $
+# $FreeBSD: head/devel/p5-VCP-Source-cvsbk/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	VCP-Source-cvsbk
 PORTVERSION=	0.11
@@ -15,9 +15,9 @@ COMMENT=	VCP source driver for bk exported cvs repository
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-VCP-autrijus>=0:devel/p5-VCP-autrijus \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-VCP-autrijus>=0:devel/p5-VCP-autrijus \
 		p5-Module-Install>0:devel/p5-Module-Install
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

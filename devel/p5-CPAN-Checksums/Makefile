@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-CPAN-Checksums/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-CPAN-Checksums/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPAN-Checksums
 PORTVERSION=	2.12
@@ -13,10 +13,10 @@ COMMENT=	Perl module to write a CHECKSUMS file for a directory as on CPAN
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-Compare>=0:devel/p5-Data-Compare \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Compare>=0:devel/p5-Data-Compare \
 		p5-Compress-Bzip2>=0:archivers/p5-Compress-Bzip2 \
 		p5-Module-Signature>=0:security/p5-Module-Signature
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Hiroyuki Iwatsuki <don@na.rim.or.jp>
-# $FreeBSD: head/devel/ruby-subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
+# $FreeBSD: head/devel/ruby-subversion/Makefile 481744 2018-10-10 15:39:51Z lev $
 
 PKGNAMEPREFIX=	ruby-
 
@@ -10,7 +10,7 @@ BROKEN_powerpc64=	fails to compile: swigutil_rb.c: 'ruby_errinfo' undeclared
 
 USE_RUBY=	yes
 
-PORTREVISION_110=	1
+PORTREVISION_110=	0
 PORTREVISION_19=	0
 
 SVN_BUILD_BINDINGS=	yes

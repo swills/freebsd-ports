@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 480949 2018-09-30 10:39:44Z rene $
+# $FreeBSD: head/security/Makefile 481633 2018-10-09 13:51:40Z 0mp $
 #
 
     COMMENT = Security tools
@@ -64,6 +64,7 @@
     SUBDIR += ca_root_nss
     SUBDIR += calife
     SUBDIR += cardpeek
+    SUBDIR += cargo-audit
     SUBDIR += ccrypt
     SUBDIR += ccsrch
     SUBDIR += certificate-transparency
@@ -851,6 +852,10 @@
     SUBDIR += php72-hash
     SUBDIR += php72-openssl
     SUBDIR += php72-sodium
+    SUBDIR += php73-filter
+    SUBDIR += php73-hash
+    SUBDIR += php73-openssl
+    SUBDIR += php73-sodium
     SUBDIR += phpdeadlock
     SUBDIR += phpsecinfo
     SUBDIR += pidentd
@@ -909,6 +914,7 @@
     SUBDIR += py-backports.ssl_match_hostname
     SUBDIR += py-bcrypt
     SUBDIR += py-borg.localrole
+    SUBDIR += py-bro-pkg
     SUBDIR += py-btchip-python
     SUBDIR += py-cerealizer
     SUBDIR += py-certbot

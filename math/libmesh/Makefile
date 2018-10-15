@@ -1,10 +1,9 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/libmesh/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/math/libmesh/Makefile 482014 2018-10-13 20:52:26Z yuri $
 
 PORTNAME=	libmesh
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.0
-PORTREVISION=	3
+DISTVERSION=	1.3.1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

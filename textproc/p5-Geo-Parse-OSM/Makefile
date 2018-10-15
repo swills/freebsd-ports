@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Geo-Parse-OSM/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Geo-Parse-OSM/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Geo-Parse-OSM
 PORTVERSION=	0.42
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	OpenStreetMap XML file regexp parser
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTSCOUT=	skipv:0.221
 

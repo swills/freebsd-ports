@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/surf/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/math/surf/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	surf
 PORTVERSION=	1.0.6
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Visualize some real algebraic geometry
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

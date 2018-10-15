@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/p5-Net-Abuse-Utils-Spamhaus/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-mgmt/p5-Net-Abuse-Utils-Spamhaus/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Abuse-Utils-Spamhaus
 PORTVERSION=	0.09
@@ -12,8 +12,8 @@ COMMENT=	Routines useful for checking data against the spamhaus blacklists
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-DNS>=0.72:dns/p5-Net-DNS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0.72:dns/p5-Net-DNS
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/deskutils/p5-Goo/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/deskutils/p5-Goo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Goo
 PORTVERSION=	0.09
@@ -14,7 +14,8 @@ COMMENT=	Stick Things together with The Goo
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Config-Auto>=0:devel/p5-Config-Auto \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-Auto>=0:devel/p5-Config-Auto \
 		p5-Config-Tiny>=0:devel/p5-Config-Tiny \
 		p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-Devel-Symdump>=0:devel/p5-Devel-Symdump \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-Config-Auto>=0:devel/p5-Config-Auto \
 		p5-Term-ProgressBar>=0:devel/p5-Term-ProgressBar \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-Text-FormatTable>=0:textproc/p5-Text-FormatTable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	lib/Goo/Thing/*/*.pl

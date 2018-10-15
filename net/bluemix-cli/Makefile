@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/bluemix-cli/Makefile 432023 2017-01-21 11:57:17Z avilla $
+# $FreeBSD: head/net/bluemix-cli/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	bluemix-cli
 PORTVERSION=	0.4.6
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://public.dhe.ibm.com/cloud/${PORTNAME:C/-.*//}/cli/${PORTNAME}/
 DISTNAME=	Bluemix_CLI_${PORTVERSION}_386
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Bluemix command line interface
 
 LICENSE=	BLUEMIX

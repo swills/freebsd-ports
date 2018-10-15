@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/py-libplist/Makefile 455838 2017-12-09 10:15:42Z antoine $
+# $FreeBSD: head/devel/py-libplist/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTREVISION=	0
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python bindings for libplist
 
 LIB_DEPENDS=	libplist.so:${MASTER_PORT}

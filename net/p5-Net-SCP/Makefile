@@ -1,5 +1,5 @@
 # Created by: Erich Zigler <erich@tacni.net>
-# $FreeBSD: head/net/p5-Net-SCP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-SCP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SCP
 PORTVERSION=	0.08
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module to access and use scp protocol
 
-BUILD_DEPENDS=	p5-Net-SSH>=0:net/p5-Net-SSH \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-SSH>=0:net/p5-Net-SSH \
 		p5-String-ShellQuote>=0:textproc/p5-String-ShellQuote
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

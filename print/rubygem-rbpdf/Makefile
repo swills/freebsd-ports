@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/print/rubygem-rbpdf/Makefile 476091 2018-07-31 23:51:05Z sunpoet $
+# $FreeBSD: head/print/rubygem-rbpdf/Makefile 482079 2018-10-14 16:31:30Z sunpoet $
 
 PORTNAME=	rbpdf
-PORTVERSION=	1.19.5
+PORTVERSION=	1.19.6
 CATEGORIES=	print rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 RUN_DEPENDS=	rubygem-htmlentities>=0:textproc/rubygem-htmlentities \
 		rubygem-rbpdf-font>=${PORTVERSION:R}:print/rubygem-rbpdf-font
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

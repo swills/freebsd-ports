@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 478893 2018-09-03 18:45:20Z rene $
+# $FreeBSD: head/net-p2p/Makefile 481392 2018-10-06 20:31:52Z yuri $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -48,7 +48,6 @@
     SUBDIR += libswift
     SUBDIR += libtorrent
     SUBDIR += libtorrent-rasterbar
-    SUBDIR += libtorrent-rasterbar-python
     SUBDIR += linuxdcpp
     SUBDIR += litecoin
     SUBDIR += litecoin-daemon
@@ -72,6 +71,7 @@
     SUBDIR += p5-Net-DirectConnect
     SUBDIR += p5-WWW-BitTorrent
     SUBDIR += phex
+    SUBDIR += py-libtorrent-rasterbar
     SUBDIR += py-py2play
     SUBDIR += py-transmissionrpc
     SUBDIR += py-tremc

@@ -1,5 +1,5 @@
 # Created by: Jeff Putsch <jdputsch@comcast.net>
-# $FreeBSD: head/net/p5-POE-Component-Jabber/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/net/p5-POE-Component-Jabber/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Jabber
 PORTVERSION=	3.00
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE Component for communicating over Jabber
 
-BUILD_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL \
 		p5-Digest-SHA1>=0:security/p5-Digest-SHA1 \
 		p5-Filter-Template>=0:devel/p5-Filter-Template \
 		p5-Net-SSLeay>=0:security/p5-Net-SSLeay \
@@ -19,7 +20,6 @@ BUILD_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL \
 		p5-POE-Component-SSLify>=0:security/p5-POE-Component-SSLify \
 		p5-POE-Filter-XML>=0:textproc/p5-POE-Filter-XML \
 		p5-POE>=0:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	examples/*

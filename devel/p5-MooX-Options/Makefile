@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooX-Options/Makefile 459508 2018-01-20 10:03:02Z sunpoet $
+# $FreeBSD: head/devel/p5-MooX-Options/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooX-Options
 PORTVERSION=	4.010
@@ -12,7 +12,8 @@ COMMENT=	Option keywords to your object (Mo/Moo/Moose)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-Record>=0:devel/p5-Data-Record \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Record>=0:devel/p5-Data-Record \
 		p5-Getopt-Long-Descriptive>=0.091:devel/p5-Getopt-Long-Descriptive \
 		p5-JSON>=0:converters/p5-JSON \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-Data-Record>=0:devel/p5-Data-Record \
 		p5-Regexp-Common>=0:textproc/p5-Regexp-Common \
 		p5-Term-Size-Any>=0:devel/p5-Term-Size-Any \
 		p5-Unicode-LineBreak>=0:textproc/p5-Unicode-LineBreak
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-Mo>=0:devel/p5-Mo \
 		p5-Moose>=0:devel/p5-Moose \

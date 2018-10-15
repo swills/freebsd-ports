@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Mozilla-PublicSuffix/Makefile 480569 2018-09-24 11:11:49Z sunpoet $
+# $FreeBSD: head/dns/p5-Mozilla-PublicSuffix/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mozilla-PublicSuffix
 PORTVERSION=	1.0.0
@@ -15,8 +15,8 @@ COMMENT=	Get public suffix of domain name via Mozilla Public Suffix List
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${RUN_DEPENDS}
 PATCH_DEPENDS=	public_suffix_list>=0:dns/public_suffix_list
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-URI>=0:net/p5-URI
 
 USES=		perl5

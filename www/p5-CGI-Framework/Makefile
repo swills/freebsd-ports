@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-Framework/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Framework/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Framework
 PORTVERSION=	0.23
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple-to-use, lightweight web CGI framework
 
-BUILD_DEPENDS=	p5-HTML-Template>=0:www/p5-HTML-Template \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Template>=0:www/p5-HTML-Template \
 		p5-CGI-Session>=0:www/p5-CGI-Session \
 		p5-CGI>=0:www/p5-CGI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

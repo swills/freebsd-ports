@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio-client/Makefile 476591 2018-08-07 12:13:47Z jhixson $
+# $FreeBSD: head/www/minio-client/Makefile 481403 2018-10-06 22:43:52Z amdmi3 $
 
 PORTNAME=	minio-client
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -8,6 +8,8 @@ MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Replacement for ls, cp, mkdir, diff and rsync commands for filesystems
 
 LICENSE=	APACHE20
+
+BROKEN_amd64=	github.com/minio/mc/vendor/golang.org/x/crypto/blake2b.supportsAVX2: relocation target runtime.support_avx2 not defined
 
 BUILD_DEPENDS=	go>=1.9.4:lang/go \
 		bash:shells/bash

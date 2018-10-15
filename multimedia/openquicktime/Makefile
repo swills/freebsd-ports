@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/openquicktime/Makefile 480069 2018-09-18 19:20:17Z emaste $
+# $FreeBSD: head/multimedia/openquicktime/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	openquicktime
 PORTVERSION=	1.0
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Portable library for handling Apple's QuickTime(TM) files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING

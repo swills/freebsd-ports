@@ -1,5 +1,5 @@
 # Created by: Jan-Peter Koopmann <Jan-Peter.Koopmann@seceidos.de>
-# $FreeBSD: head/mail/p5-Mail-ClamAV/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Mail-ClamAV/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-ClamAV
 PORTVERSION=	0.29
@@ -14,10 +14,10 @@ COMMENT=	Perl extension for the clamav virus scanner
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Inline>=0:devel/p5-Inline \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Inline>=0:devel/p5-Inline \
 		p5-Inline-C>=0:devel/p5-Inline-C \
 		clamscan:security/clamav
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 MAKE_JOBS_UNSAFE=	yes
 USES=		perl5

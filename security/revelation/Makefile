@@ -1,9 +1,9 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/security/revelation/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/security/revelation/Makefile 481611 2018-10-09 08:45:49Z tobik $
 
 PORTNAME=	revelation
 PORTVERSION=	0.4.14
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security gnome
 MASTER_SITES=	https://bitbucket.org/erikg/revelation/downloads/
 
@@ -31,7 +31,7 @@ GCONF_SCHEMAS=	revelation.schemas
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-DICTPATH=	${LOCALBASE}/libdata/cracklib/pw_dict
+DICTPATH=	${LOCALBASE}/libdata/cracklib/cracklib-words
 
 post-patch:
 	@${REINPLACE_CMD} -e \

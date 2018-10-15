@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Bucardo/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Bucardo/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Bucardo
 PORTVERSION=	5.4.1
@@ -13,12 +13,12 @@ COMMENT=	Asynchronous PostgreSQL replication system
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-DBI>=1.51:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=1.51:databases/p5-DBI \
 		p5-DBD-Pg>=2.0:databases/p5-DBD-Pg \
 		p5-Encode-Locale>=0:converters/p5-Encode-Locale \
 		p5-boolean>=0:devel/p5-boolean \
 		p5-DBIx-Safe>=1.2.4:databases/p5-DBIx-Safe
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=	perl5
 USE_PERL5=	configure

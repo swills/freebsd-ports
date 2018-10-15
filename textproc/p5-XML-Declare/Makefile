@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/textproc/p5-XML-Declare/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Declare/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Declare
 PORTVERSION=	0.06
@@ -14,8 +14,8 @@ COMMENT=	Create XML documents with declaration style
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-LibXML>=1.70:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-LibXML>=1.70:textproc/p5-XML-LibXML
 TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings \
 		p5-lib-abs>=0.90:devel/p5-lib-abs \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean

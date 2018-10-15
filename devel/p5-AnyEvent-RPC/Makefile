@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/devel/p5-AnyEvent-RPC/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-AnyEvent-RPC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	AnyEvent-RPC
 PORTVERSION=	0.05
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	anes@anes.su
 COMMENT=	Abstract framework for RPC clients
 
-BUILD_DEPENDS=	p5-URI>=0:net/p5-URI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI \
 		p5-AnyEvent>=5:devel/p5-AnyEvent \
 		p5-XML-Hash-LX>=0.05:textproc/p5-XML-Hash-LX \
 		p5-YAML-Syck>=0:textproc/p5-YAML-Syck \
@@ -21,7 +22,6 @@ BUILD_DEPENDS=	p5-URI>=0:net/p5-URI \
 		p5-Test-NoWarnings>=1.03:devel/p5-Test-NoWarnings \
 		p5-Test-TCP>=0.14:devel/p5-Test-TCP \
 		p5-lib-abs>=0.90:devel/p5-lib-abs
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

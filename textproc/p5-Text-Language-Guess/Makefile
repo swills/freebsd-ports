@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/textproc/p5-Text-Language-Guess/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Language-Guess/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Language-Guess
 PORTVERSION=	0.02
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Trained module to guess a document's language
 
-BUILD_DEPENDS=	p5-Log-Log4perl>=1.0:devel/p5-Log-Log4perl \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Log4perl>=1.0:devel/p5-Log-Log4perl \
 		p5-Text-ExtractWords>=0:textproc/p5-Text-ExtractWords \
 		p5-Lingua-StopWords>=0:textproc/p5-Lingua-StopWords
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

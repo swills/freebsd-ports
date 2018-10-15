@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Koremutake/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/textproc/p5-String-Koremutake/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	String-Koremutake
 PORTVERSION=	0.30
@@ -14,9 +14,9 @@ COMMENT=	Convert to/from Koremutake Memorable Random Strings
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Error>=0:lang/p5-Error \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Error>=0:lang/p5-Error \
 		p5-Test-Exception>=0:devel/p5-Test-Exception
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

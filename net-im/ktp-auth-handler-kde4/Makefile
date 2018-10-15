@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-auth-handler-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/net-im/ktp-auth-handler-kde4/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-auth-handler
 PORTVERSION=	${KTP_VERSION}
@@ -15,7 +15,7 @@ EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqjson.so:devel/qjson \
 		libqca.so:devel/qca \
-		libtelepathy-qt4.so:net-im/telepathy-qt4 \
+		libtelepathy-qt4.so:net-im/telepathy-qt@qt4 \
 		libktpcommoninternalsprivate.so:net-im/ktp-common-internals-kde4
 
 USES=		cmake gettext kde:4 qt:4 tar:bzip2

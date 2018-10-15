@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Set/Makefile 435024 2017-02-28 09:46:58Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Set/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Set
 PORTVERSION=	0.3900
@@ -13,10 +13,10 @@ COMMENT=	Datetime sets and set math
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-DateTime>=0.12:devel/p5-DateTime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0.12:devel/p5-DateTime \
 		p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-Set-Infinite>=0.59:devel/p5-Set-Infinite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	DOCS
 

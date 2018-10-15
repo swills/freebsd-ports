@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-LibXML-PrettyPrint/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-LibXML-PrettyPrint/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-LibXML-PrettyPrint
 PORTVERSION=	0.006
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Exporter-Tiny>=0:devel/p5-Exporter-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Exporter-Tiny>=0:devel/p5-Exporter-Tiny \
 		p5-XML-LibXML>=1.62:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Warnings>=0:devel/p5-Test-Warnings
 
 NO_ARCH=	yes

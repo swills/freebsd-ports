@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 479881 2018-09-16 09:14:45Z rene $
+# $FreeBSD: head/mail/Makefile 481529 2018-10-08 09:31:09Z tz $
 #
 
     COMMENT = Electronic mail utilities
@@ -261,7 +261,6 @@
     SUBDIR += mu4e-maildirs
     SUBDIR += mulberry
     SUBDIR += mutt
-    SUBDIR += mutt-lite
     SUBDIR += mutt_vc_query
     SUBDIR += muttils
     SUBDIR += nbsmtp
@@ -488,6 +487,7 @@
     SUBDIR += php70-imap
     SUBDIR += php71-imap
     SUBDIR += php72-imap
+    SUBDIR += php73-imap
     SUBDIR += phplist
     SUBDIR += phpmailer
     SUBDIR += phpmailer6

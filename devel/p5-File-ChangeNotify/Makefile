@@ -1,8 +1,8 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/devel/p5-File-ChangeNotify/Makefile 475175 2018-07-23 13:42:59Z wen $
+# $FreeBSD: head/devel/p5-File-ChangeNotify/Makefile 481569 2018-10-08 21:41:08Z sunpoet $
 
 PORTNAME=	File-ChangeNotify
-PORTVERSION=	0.28
+PORTVERSION=	0.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,9 @@ COMMENT=	Watch for changes to files
 LICENSE=	ART20
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	p5-Moo>=1.006:devel/p5-Moo \
-		p5-Module-Pluggable>=0:devel/p5-Module-Pluggable \
+RUN_DEPENDS=	p5-Module-Pluggable>=0:devel/p5-Module-Pluggable \
+		p5-Module-Runtime>=0:devel/p5-Module-Runtime \
+		p5-Moo>=1.006:devel/p5-Moo \
 		p5-Type-Tiny>=0:devel/p5-Type-Tiny \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
 TEST_DEPENDS=	p5-Test-Exception>0:devel/p5-Test-Exception \

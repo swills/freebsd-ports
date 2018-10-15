@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Devel-BeginLift/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/devel/p5-Devel-BeginLift/Makefile 481262 2018-10-05 05:56:39Z des $
 
 PORTNAME=	Devel-BeginLift
 PORTVERSION=	0.001003
@@ -21,7 +21,7 @@ USE_PERL5=	configure
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} >= 502501
-BROKEN=		Does not build, op_sibling usage. https://rt.cpan.org/Public/Bug/Display.html?id=115272
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-BeginLift.xs
 .endif
 
 .include <bsd.port.post.mk>

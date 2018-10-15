@@ -1,5 +1,5 @@
 # Created by: Jan Srocker <Jan.Stocker@t-online.de>
-# $FreeBSD: head/math/gdcalc/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/math/gdcalc/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gdcalc
 PORTVERSION=	2.15
@@ -12,6 +12,9 @@ COMMENT=	Gnome-based scientific calculator
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 RUN_DEPENDS=	${LOCALBASE}/bin/gunits:math/units
 

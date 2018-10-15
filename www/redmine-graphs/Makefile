@@ -1,12 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-graphs/Makefile 471175 2018-05-30 21:20:07Z feld $
+# $FreeBSD: head/www/redmine-graphs/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	graphs
 PORTVERSION=	0.0.20170403
 CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Additional Redmine graphs
 
 LICENSE=	GPLv2+

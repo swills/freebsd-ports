@@ -1,5 +1,5 @@
 # Created by: Igor Vinokurov <igor@zynaps.ru>
-# $FreeBSD: head/www/p5-Apache-DBI/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/www/p5-Apache-DBI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Apache-DBI
 PORTVERSION=	1.12
@@ -14,9 +14,9 @@ COMMENT=	DBI persistent connection, authentication and authorization
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
 		${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 CONFLICTS=	p5-Apache-DBI-mp[12]*
 

@@ -1,8 +1,8 @@
 # Created by: Matthieu Guegan <matt.guegan@free.fr>
-# $FreeBSD: head/x11-wm/hs-xmonad/Makefile 480801 2018-09-27 15:43:12Z arrowd $
+# $FreeBSD: head/x11-wm/hs-xmonad/Makefile 481361 2018-10-06 10:09:13Z arrowd $
 
 PORTNAME=	xmonad
-PORTVERSION=	0.14
+PORTVERSION=	0.15
 CATEGORIES=	x11-wm haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -18,7 +18,10 @@ MAN1SRC=	man
 
 EXECUTABLE=	xmonad
 
-FLAGS_DISABLE=	testing
+OPTIONS_DEFINE=	EXAMPLES
+
+INSTALL_PORTEXAMPLES=	${INSTALL_DATA} ${WRKSRC}/man/xmonad.hs \
+				${STAGEDIR}${EXAMPLESDIR}
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 

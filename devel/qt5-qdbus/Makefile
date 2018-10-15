@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-qdbus/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt5-qdbus/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	qdbus
 DISTVERSION=	${QT5_VERSION}
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt command-line interface to D-Bus
 
-USES=		qmake qt-dist:5,tools
+USES=		compiler:c++11-lang qmake qt-dist:5,tools
 USE_QT=		core dbus xml buildtools_build
 
 BUILD_WRKSRC=	${WRKSRC}/src/${PORTNAME}/${PORTNAME}

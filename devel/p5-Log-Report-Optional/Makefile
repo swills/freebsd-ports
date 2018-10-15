@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Report-Optional/Makefile 460737 2018-02-02 19:54:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Report-Optional/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Log-Report-Optional
 PORTVERSION=	1.06
@@ -13,8 +13,8 @@ COMMENT=	Log::Report or ::Minimal
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-String-Print>=0.91:textproc/p5-String-Print
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-String-Print>=0.91:textproc/p5-String-Print
 
 NO_ARCH=	yes
 USE_PERL5=	configure

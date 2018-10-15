@@ -1,5 +1,5 @@
 # Created by: Vladimir Timofeev <vovkasm@gmail.com>
-# $FreeBSD: head/databases/p5-DBIx-RetryOverDisconnects/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-RetryOverDisconnects/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-RetryOverDisconnects
 PORTVERSION=	0.08
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vovkasm@gmail.com
 COMMENT=	Keeps database connection persistent
 
-BUILD_DEPENDS=	p5-DBI>0:databases/p5-DBI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>0:databases/p5-DBI \
 		p5-Exception-Class>0:devel/p5-Exception-Class
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

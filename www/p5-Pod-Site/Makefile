@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Pod-Site/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Pod-Site/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Site
 PORTVERSION=	0.56
@@ -14,9 +14,9 @@ COMMENT=	Build browsable HTML documentation for your app
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Object-Tiny>=0:devel/p5-Object-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-File>=0:devel/p5-Test-File \
 		p5-Test-MockModule>=0.05:devel/p5-Test-MockModule \
 		p5-Test-XPath>=0.12:lang/p5-Test-XPath

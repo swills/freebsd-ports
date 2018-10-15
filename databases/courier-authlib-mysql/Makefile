@@ -1,7 +1,7 @@
 # Created by: Yarema <yds@CoolRat.org>
-# $FreeBSD: head/databases/courier-authlib-mysql/Makefile 450857 2017-09-28 18:46:27Z madpilot $
+# $FreeBSD: head/databases/courier-authlib-mysql/Makefile 481732 2018-10-10 11:54:58Z madpilot $
 
-PORTREVISION=	1
+PORTREVISION=	0
 PKGNAMESUFFIX=	-mysql
 
 COMMENT=	MySQL support for the Courier authentication library

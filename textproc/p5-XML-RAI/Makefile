@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/textproc/p5-XML-RAI/Makefile 435927 2017-03-11 15:59:22Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-RAI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-RAI
 PORTVERSION=	1.3031
@@ -13,9 +13,9 @@ COMMENT=	RSS Abstraction Interface
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-XML-RSS-Parser>=0:textproc/p5-XML-RSS-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-RSS-Parser>=0:textproc/p5-XML-RSS-Parser \
 		p5-TimeDate>=0:devel/p5-TimeDate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

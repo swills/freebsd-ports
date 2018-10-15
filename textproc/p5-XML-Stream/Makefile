@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
-# $FreeBSD: head/textproc/p5-XML-Stream/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Stream/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Stream
 DISTVERSION=	1.24
@@ -13,8 +13,8 @@ COMMENT=	XML::Stream provides you with access to XML Stream
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL
 
 USES=		perl5
 USE_PERL5=	configure

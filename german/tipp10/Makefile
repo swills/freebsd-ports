@@ -1,12 +1,12 @@
 # Created by: Heiner <h.eichmann@gmx.de>
-# $FreeBSD: head/german/tipp10/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/german/tipp10/Makefile 481328 2018-10-06 08:35:32Z tobik $
 
 PORTNAME=	tipp10
-PORTVERSION=	2.1.0
-PORTREVISION=	2
+DISTVERSION=	2-1-0
+PORTREVISION=	3
 CATEGORIES=	german
 MASTER_SITES=	http://www.tipp10.com/en/download/
-DISTNAME=	tipp10_source_v2-1-0
+DISTNAME=	tipp10_source_v${DISTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	10-finger touch typing learning program
@@ -16,15 +16,13 @@ LICENSE_FILE=	${WRKSRC}/license_en.txt
 
 USES=		qmake dos2unix qt:4 zip
 DOS2UNIX_GLOB=	*.pro *.cpp
-USE_QT=		gui sql corelib network script qtestlib \
-		rcc_build uic_build moc_build \
-		sql-sqlite2_run sql-sqlite3_run
-QMAKE_ARGS+=	DATADIR="${DATADIR}"
-WRKSRC=		${WRKDIR}/tipp10_source_v2-1-0
+USE_QT=		corelib gui network sql rcc_build uic_build moc_build \
+		sql-sqlite3_run
 
 pre-configure:
-	@cd ${WRKSRC} \
-	&& for i in `grep -lR 'QCoreApplication::applicationDirPath()' *`; do ${REINPLACE_CMD} -e 's/QCoreApplication::applicationDirPath()/QString(DATADIR)/g' $$i ; done
+	cd ${WRKSRC} \
+	&& for i in `grep -lR 'QCoreApplication::applicationDirPath()' *`; do \
+		${REINPLACE_CMD} -e 's,QCoreApplication::applicationDirPath(),QString("${DATADIR}"),g' $$i ; done
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tipp10 ${STAGEDIR}${PREFIX}/bin

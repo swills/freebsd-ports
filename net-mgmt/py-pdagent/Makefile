@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 470609 2018-05-22 13:14:43Z mat $
+# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	pdagent
 PORTVERSION=	1.4
@@ -8,7 +8,7 @@ PORTREVISION=	2
 CATEGORIES=	net-mgmt python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PagerDuty Agent software
 
 LICENSE=	BSD3CLAUSE

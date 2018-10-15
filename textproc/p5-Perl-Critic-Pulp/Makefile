@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Perl-Critic-Pulp/Makefile 457146 2017-12-24 11:15:11Z sunpoet $
+# $FreeBSD: head/textproc/p5-Perl-Critic-Pulp/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Perl-Critic-Pulp
 PORTVERSION=	96
@@ -12,10 +12,10 @@ COMMENT=	some add-on perlcritic policies
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Perl-Critic>=0:textproc/p5-Perl-Critic \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Perl-Critic>=0:textproc/p5-Perl-Critic \
 		p5-Perl-MinimumVersion>=0:textproc/p5-Perl-MinimumVersion \
 		p5-Pod-MinimumVersion>=0:textproc/p5-Pod-MinimumVersion
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

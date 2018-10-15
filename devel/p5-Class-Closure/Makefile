@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Closure/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/devel/p5-Class-Closure/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Closure
 PORTVERSION=	0.302
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Encapsulated, declarative classes in Perl
 
-BUILD_DEPENDS=	p5-PadWalker>=0:devel/p5-PadWalker \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PadWalker>=0:devel/p5-PadWalker \
 		p5-Devel-Caller>=0:devel/p5-Devel-Caller \
 		p5-Sentinel>=0:devel/p5-Sentinel
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

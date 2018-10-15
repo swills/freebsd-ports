@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-CPAN-Meta-YAML/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-CPAN-Meta-YAML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-CPAN-Meta-YAML
 PORTVERSION=	0.25
@@ -12,8 +12,8 @@ COMMENT=	Validate a META.yml file within a CPAN distribution
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Test-YAML-Valid>=0.03:devel/p5-Test-YAML-Valid
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-YAML-Valid>=0.03:devel/p5-Test-YAML-Valid
 
 USE_PERL5=	configure
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mock-Quick/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Mock-Quick/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mock-Quick
 PORTVERSION=	1.111
@@ -14,8 +14,8 @@ COMMENT=	Quickly mock objects and classes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Exporter-Declare>=0.103:devel/p5-Exporter-Declare
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Exporter-Declare>=0.103:devel/p5-Exporter-Declare
 TEST_DEPENDS=	p5-Fennec-Lite>=0.004:devel/p5-Fennec-Lite \
 		p5-Test-Exception>=0.29:devel/p5-Test-Exception
 

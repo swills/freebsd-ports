@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-MboxParser/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-MboxParser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-MboxParser
 PORTVERSION=	0.55
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Module for working with UNIX-flavoured mailboxes
 
-BUILD_DEPENDS=	p5-MIME-Tools>=0:mail/p5-MIME-Tools \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MIME-Tools>=0:mail/p5-MIME-Tools \
 		p5-Mail-Mbox-MessageParser>=0:mail/p5-Mail-Mbox-MessageParser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

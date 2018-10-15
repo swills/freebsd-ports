@@ -1,5 +1,5 @@
 # Created by: Piero Serini <piero@FreeBSD.org>
-# $FreeBSD: head/astro/xearth/Makefile 478773 2018-09-02 09:38:14Z amdmi3 $
+# $FreeBSD: head/astro/xearth/Makefile 481548 2018-10-08 15:39:07Z rene $
 
 PORTNAME=	xearth
 PORTVERSION=	1.2
@@ -16,6 +16,7 @@ LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
 USES=		tar:xz
 USE_XORG=	x11 xext sm ice xt
+
 PLIST_FILES=	bin/xearth \
 		man/man1/xearth.1.gz \
 		lib/X11/xearth/freebsd.committers.markers \

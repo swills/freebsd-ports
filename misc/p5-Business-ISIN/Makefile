@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Business-ISIN/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/p5-Business-ISIN/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Business-ISIN
 PORTVERSION=	0.20
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Validate International Securities Identification Numbers
 
-BUILD_DEPENDS=	p5-Locale-Codes>=0:misc/p5-Locale-Codes
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Locale-Codes>=0:misc/p5-Locale-Codes
 
 USES=		perl5 tar:tgz
 USE_PERL5=	configure

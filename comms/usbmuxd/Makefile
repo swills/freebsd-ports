@@ -1,11 +1,11 @@
-# $FreeBSD: head/comms/usbmuxd/Makefile 430669 2017-01-05 22:58:02Z jbeich $
+# $FreeBSD: head/comms/usbmuxd/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	usbmuxd
 DISTVERSION=	1.1.0
 CATEGORIES=	comms
 MASTER_SITES=	http://www.libimobiledevice.org/downloads/
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Daemon for multiplexing connections over USB to iPhone/iPod Touch
 
 LICENSE=	GPLv2 GPLv3

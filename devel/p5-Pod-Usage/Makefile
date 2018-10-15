@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Pod-Usage/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Pod-Usage/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Usage
 PORTVERSION=	1.69
@@ -13,8 +13,8 @@ COMMENT=	Print a usage message from embedded pod documentation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-podlators>=4:textproc/p5-podlators
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-podlators>=4:textproc/p5-podlators
 
 NO_ARCH=	yes
 USE_PERL5=	configure

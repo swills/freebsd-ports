@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-LibXML/Makefile 453122 2017-10-29 16:10:04Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-LibXML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-LibXML
 PORTVERSION=	2.0132
@@ -14,9 +14,9 @@ COMMENT=	Interface to Gnome libxml2 library
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-NamespaceSupport>=1.07:textproc/p5-XML-NamespaceSupport \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-NamespaceSupport>=1.07:textproc/p5-XML-NamespaceSupport \
 		p5-XML-SAX>=0.11:textproc/p5-XML-SAX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-LeakTrace>=0:devel/p5-Test-LeakTrace \
 		p5-URI>=0:net/p5-URI
 

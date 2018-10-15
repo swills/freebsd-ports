@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-cligj/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-cligj/Makefile 481469 2018-10-07 18:09:42Z swills $
 
 PORTNAME=	cligj
-PORTVERSION=	0.4.0
+PORTVERSION=	0.5.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Daniel Wijnands <daniel@itxl.nl>
-# $FreeBSD: head/www/p5-CGI-Builder-TT2/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Builder-TT2/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Builder-TT2
 PORTVERSION=	0.03
@@ -12,9 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	CGI::Builder and Template Toolkit 2 integration
 
-BUILD_DEPENDS=	p5-CGI-Builder>=0:www/p5-CGI-Builder \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Builder>=0:www/p5-CGI-Builder \
 		p5-Template-Toolkit>=0:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

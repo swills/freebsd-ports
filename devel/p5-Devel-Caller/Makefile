@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Chen
-# $FreeBSD: head/devel/p5-Devel-Caller/Makefile 466632 2018-04-06 09:03:33Z amdmi3 $
+# $FreeBSD: head/devel/p5-Devel-Caller/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-Caller
 PORTVERSION=	2.06
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module which is meatier versions of caller
 
-BUILD_DEPENDS=	p5-PadWalker>=0.08:devel/p5-PadWalker
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PadWalker>=0.08:devel/p5-PadWalker
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual

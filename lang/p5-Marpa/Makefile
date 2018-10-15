@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Marpa/Makefile 471646 2018-06-04 18:09:15Z sunpoet $
+# $FreeBSD: head/lang/p5-Marpa/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Marpa
 PORTVERSION=	0.208
@@ -17,9 +17,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTML-Parser>=3.64:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=3.64:www/p5-HTML-Parser \
 		p5-PPI>=1.206:textproc/p5-PPI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	modbuild

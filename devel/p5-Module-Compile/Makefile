@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/devel/p5-Module-Compile/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Module-Compile/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Module-Compile
 PORTVERSION=	0.23
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	Provide a system for writing modules that compile other Perl modules
 
-BUILD_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
 
 USES=		perl5
 USE_PERL5=	configure

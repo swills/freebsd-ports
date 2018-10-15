@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/textproc/p5-HTML-Tidy/Makefile 449863 2017-09-14 23:48:24Z sunpoet $
+# $FreeBSD: head/textproc/p5-HTML-Tidy/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Tidy
 PORTVERSION=	1.60
@@ -12,9 +12,9 @@ COMMENT=	Web validation in a Perl object using tidy
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 LIB_DEPENDS=	libtidyp.so:textproc/tidyp
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	DOCS
 

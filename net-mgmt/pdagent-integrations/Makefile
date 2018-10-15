@@ -1,12 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/pdagent-integrations/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/net-mgmt/pdagent-integrations/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	pdagent-integrations
 PORTVERSION=	1.4
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt python
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PagerDuty integrations for monitoring monitoring tools
 
 LICENSE=	BSD3CLAUSE

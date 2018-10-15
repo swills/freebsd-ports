@@ -1,9 +1,8 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/graphics/mapserver/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/mapserver/Makefile 481143 2018-10-03 07:01:54Z wen $
 
 PORTNAME=		mapserver
-PORTVERSION=		7.0.7
-PORTREVISION=	1
+PORTVERSION=		7.2.1
 CATEGORIES=		graphics www geography
 MASTER_SITES=		http://download.osgeo.org/mapserver/
 
@@ -18,7 +17,8 @@ LIB_DEPENDS=		libgd.so:graphics/gd \
 			libgif.so:graphics/giflib \
 			libharfbuzz.so:print/harfbuzz \
 			libsvg.so:graphics/libsvg \
-			libfreetype.so:print/freetype2
+			libfreetype.so:print/freetype2 \
+			libprotobuf-c.so:devel/protobuf-c
 
 USES=			cpe cmake:outsource jpeg
 CPE_VENDOR=		umn

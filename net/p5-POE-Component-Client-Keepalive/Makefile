@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-POE-Component-Client-Keepalive/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-POE-Component-Client-Keepalive/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Client-Keepalive
 PORTVERSION=	0.2720
@@ -16,10 +16,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Net-IP-Minimal>=0.02:net/p5-Net-IP-Minimal  \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-IP-Minimal>=0.02:net/p5-Net-IP-Minimal  \
 		p5-POE>=1.311:devel/p5-POE \
 		p5-POE-Component-Resolver>=0.917:dns/p5-POE-Component-Resolver
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/puppetdb-cli/Makefile 480871 2018-09-28 17:59:24Z jbeich $
+# $FreeBSD: head/databases/puppetdb-cli/Makefile 481921 2018-10-12 19:01:02Z jbeich $
 
 PORTNAME=	puppetdb-cli
-PORTVERSION=	1.2.4
-PORTREVISION=	1
+PORTVERSION=	1.2.5
+PORTREVISION=	2
 CATEGORIES=	databases
 
 MAINTAINER=	puppet@FreeBSD.org

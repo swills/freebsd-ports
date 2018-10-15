@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/www/p5-Catalyst-Action-Serialize-XML-Hash-LX/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Action-Serialize-XML-Hash-LX/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Action-Serialize-XML-Hash-LX
 PORTVERSION=	0.06
@@ -14,9 +14,9 @@ COMMENT=	XML::Hash::LX serializer for Catalyst::Action::Serialize
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-XML-Hash-LX>=0.06:textproc/p5-XML-Hash-LX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-lib-abs>=0.90:devel/p5-lib-abs
 
 USE_PERL5=	configure

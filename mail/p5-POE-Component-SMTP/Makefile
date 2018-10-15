@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/mail/p5-POE-Component-SMTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-POE-Component-SMTP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-SMTP
 PORTVERSION=	1.6
@@ -14,10 +14,10 @@ COMMENT=	SMTP Protocol Implementation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-POE-Session-MultiDispatch>=0:devel/p5-POE-Session-MultiDispatch \
 		p5-Mail-Tools>=0:mail/p5-Mail-Tools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

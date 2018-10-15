@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Tiny-SPDY/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTTP-Tiny-SPDY/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Tiny-SPDY
 PORTVERSION=	0.020
@@ -14,10 +14,10 @@ COMMENT=	Subclass of HTTP::Tiny with SPDY support
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-Socket-SSL>=1.560:security/p5-IO-Socket-SSL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Socket-SSL>=1.560:security/p5-IO-Socket-SSL \
 		p5-Net-SPDY>=0:net/p5-Net-SPDY \
 		p5-Net-SSLeay>=1.49:security/p5-Net-SSLeay
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Mozilla-CA>=0:www/p5-Mozilla-CA
 
 NO_ARCH=	yes

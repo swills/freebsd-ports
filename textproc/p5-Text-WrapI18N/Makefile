@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-WrapI18N/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-WrapI18N/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-WrapI18N
 PORTVERSION=	0.06
@@ -14,8 +14,8 @@ COMMENT=	Line wrapping module
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Text-CharWidth>=0.02:textproc/p5-Text-CharWidth
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-CharWidth>=0.02:textproc/p5-Text-CharWidth
 
 USE_PERL5=	configure
 USES=		perl5

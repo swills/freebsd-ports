@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Devel-TraceSAX/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/textproc/p5-Devel-TraceSAX/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-TraceSAX
 PORTVERSION=	0.021
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Trace SAX events
 
-BUILD_DEPENDS=	p5-Devel-TraceCalls>=0.03:devel/p5-Devel-TraceCalls \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Devel-TraceCalls>=0.03:devel/p5-Devel-TraceCalls \
 		p5-XML-SAX-Machines>=0:textproc/p5-XML-SAX-Machines
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

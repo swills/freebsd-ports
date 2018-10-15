@@ -1,5 +1,5 @@
 # Created by: Sergey Kandaurov <pluknet@gmail.com>
-# $FreeBSD: head/russian/p5-Convert-Cyrillic/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/russian/p5-Convert-Cyrillic/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Convert-Cyrillic
 PORTVERSION=	1.05
@@ -12,8 +12,8 @@ DISTNAME=	cyrillic-${PORTVERSION}
 MAINTAINER=	pluknet@gmail.com
 COMMENT=	Routines for converting from one Cyrillic charset to another
 
-BUILD_DEPENDS=	p5-Unicode-Map8>=0:converters/p5-Unicode-Map8
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Unicode-Map8>=0:converters/p5-Unicode-Map8
 
 USES=		perl5
 USE_PERL5=	configure

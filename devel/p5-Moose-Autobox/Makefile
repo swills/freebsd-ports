@@ -1,5 +1,5 @@
 # Created by: Bill Brinzer <bill.brinzer@gmail.com>
-# $FreeBSD: head/devel/p5-Moose-Autobox/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Moose-Autobox/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Moose-Autobox
 PORTVERSION=	0.15
@@ -15,10 +15,10 @@ COMMENT=	Autoboxed wrappers for Native Perl datatypes
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-autobox>=2.23:devel/p5-autobox \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-autobox>=2.23:devel/p5-autobox \
 		p5-Moose>=0.42:devel/p5-Moose \
 		p5-Syntax-Keyword-Junction>=0:devel/p5-Syntax-Keyword-Junction
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0.21:devel/p5-Test-Exception
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/www/p5-Tie-TinyURL/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Tie-TinyURL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tie-TinyURL
 PORTVERSION=	0.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Tied interface to TinyURL.com
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 USES=		perl5
 USE_PERL5=	modbuild

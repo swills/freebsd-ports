@@ -1,5 +1,5 @@
 # Created by: Carl Makin <carl@stagecraft.cx>
-# $FreeBSD: head/comms/gmfsk/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/comms/gmfsk/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gmfsk
 PORTVERSION=	0.6
@@ -14,6 +14,9 @@ COMMENT=	The Gnome MFSK terminal program
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libfftw.so:math/fftw
 

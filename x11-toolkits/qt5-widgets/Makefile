@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5-widgets/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-widgets/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	widgets
 DISTVERSION=	${QT5_VERSION}
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt C++ widgets module
 
-USES=		qmake:no_env qt-dist:5,base
+USES=		compiler:c++11-lang qmake:no_env qt-dist:5,base
 USE_QT=		core gui qmake_build buildtools_build
 USE_XORG=	x11
 HAS_CONFIGURE=	yes

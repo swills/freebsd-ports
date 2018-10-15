@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-LaTeX-Driver/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-LaTeX-Driver/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	LaTeX-Driver
 PORTVERSION=	0.300.2
@@ -14,14 +14,14 @@ COMMENT=	Perl module of LaTeX Driver
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Exception-Class>=0:devel/p5-Exception-Class \
 		p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-File-pushd>=0:devel/p5-File-pushd \
 		p5-IPC-ShellCmd>=0:devel/p5-IPC-ShellCmd \
 		p5-Readonly>=0:devel/p5-Readonly
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTSCOUT=	skipv:0.2002
 

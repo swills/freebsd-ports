@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Dancer-Plugin-Database-Core/Makefile 425509 2016-11-06 16:46:35Z sunpoet $
+# $FreeBSD: head/databases/p5-Dancer-Plugin-Database-Core/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dancer-Plugin-Database-Core
 PORTVERSION=	0.20
@@ -12,8 +12,8 @@ COMMENT=	Shared core for D1 and D2 Database plugins
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 TEST_DEPENDS=	p5-Test-Pod>=1.22:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=1.08:devel/p5-Test-Pod-Coverage
 

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-POE/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-POE/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE
 PORTVERSION=	1.367
@@ -13,7 +13,8 @@ COMMENT=	Multitasking and networking framework for perl
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Curses>=1.08:devel/p5-Curses \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Curses>=1.08:devel/p5-Curses \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-IO-Pipely>=0.005:devel/p5-IO-Pipely \
 		p5-IO-Tty>=1.08:devel/p5-IO-Tty \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-Curses>=1.08:devel/p5-Curses \
 		p5-Term-ReadKey>=2.21:devel/p5-Term-ReadKey \
 		p5-URI>=1.30:net/p5-URI \
 		p5-libwww>=5.79:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	EXAMPLES
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qt5-qtpaths/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/qt5-qtpaths/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	qtpaths
 DISTVERSION=	${QT5_VERSION}
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Command line client to QStandardPaths
 
-USES=		qmake:outsource qt-dist:5,tools
+USES=		compiler:c++11-lang qmake:outsource qt-dist:5,tools
 USE_QT=		core
 
 PLIST_FILES=	${QT_BINDIR}/qtpaths

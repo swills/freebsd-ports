@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan
-# $FreeBSD: head/security/p5-Crypt-MySQL/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Crypt-MySQL/Makefile 481107 2018-10-02 09:08:32Z amdmi3 $
 
 PORTNAME=	Crypt-MySQL
 PORTVERSION=	0.04
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Perl extension to compare MySQL passwords without libmysqlclient
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
 

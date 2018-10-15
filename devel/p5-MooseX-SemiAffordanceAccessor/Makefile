@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/devel/p5-MooseX-SemiAffordanceAccessor/Makefile 446749 2017-07-27 15:47:42Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-SemiAffordanceAccessor/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-SemiAffordanceAccessor
 PORTVERSION=	0.10
@@ -14,8 +14,8 @@ COMMENT=	Name your accessors foo() and set_foo()
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=0.94:devel/p5-Moose
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.94:devel/p5-Moose
 
 NO_ARCH=	yes
 USES=		perl5

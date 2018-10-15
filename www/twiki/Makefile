@@ -1,15 +1,15 @@
 # Created by: Justin Hawkins <justin@hawkins.id.au>
-# $FreeBSD: head/www/twiki/Makefile 444752 2017-06-30 13:45:11Z sunpoet $
+# $FreeBSD: head/www/twiki/Makefile 481996 2018-10-13 16:50:07Z joneum $
 
 PORTNAME=	twiki
-PORTVERSION=	6.0.2
+PORTVERSION=	6.1.0
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME}/TWiki%20for%20all%20Platforms/${DISTNAME} \
 		http://twiki.org/p/pub/Codev/Release/
 DISTNAME=	TWiki-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Flexible, powerful, and easy to use enterprise wiki
 
 RUN_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \

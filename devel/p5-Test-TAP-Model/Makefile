@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Test-TAP-Model/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-TAP-Model/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-TAP-Model
 PORTVERSION=	0.10
@@ -14,9 +14,9 @@ COMMENT=	Accessible result collector for Test::Harness::Straps runs
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Method-Alias>=0:devel/p5-Method-Alias \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Method-Alias>=0:devel/p5-Method-Alias \
 		p5-Test-Harness-Straps>=0.30:devel/p5-Test-Harness-Straps
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

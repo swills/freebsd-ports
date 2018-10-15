@@ -1,7 +1,7 @@
 # Created by: Yarema <yds@CoolRat.org>
-# $FreeBSD: head/net/courier-authlib-ldap/Makefile 450857 2017-09-28 18:46:27Z madpilot $
+# $FreeBSD: head/net/courier-authlib-ldap/Makefile 481732 2018-10-10 11:54:58Z madpilot $
 
-PORTREVISION=	1
+PORTREVISION=	0
 PKGNAMESUFFIX=	-ldap
 
 COMMENT=	LDAP support for the Courier authentication library

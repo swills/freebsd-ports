@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/sysutils/acts/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/acts/Makefile 481646 2018-10-09 18:16:36Z feld $
 
 PORTNAME=	acts
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 PORTREVISION=	0
 CATEGORIES=	sysutils archivers
 

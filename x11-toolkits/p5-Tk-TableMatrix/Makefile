@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Tk-TableMatrix/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Tk-TableMatrix/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-TableMatrix
 PORTVERSION=	1.23
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Table/matrix extension to perl/tk for displaying table formatted data
 
-BUILD_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-FITS-CFITSIO/Makefile 451686 2017-10-10 11:20:34Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-FITS-CFITSIO/Makefile 481538 2018-10-08 13:05:56Z wen $
 
 PORTNAME=	Astro-FITS-CFITSIO
-PORTVERSION=	1.11
-PORTREVISION=	1
+PORTVERSION=	1.12
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

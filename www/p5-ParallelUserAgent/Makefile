@@ -1,5 +1,5 @@
 # Created by: ache@FreeBSD.org
-# $FreeBSD: head/www/p5-ParallelUserAgent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-ParallelUserAgent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	ParallelUserAgent
 PORTVERSION=	2.62
@@ -14,9 +14,9 @@ COMMENT=	Extension for LWP to allow parallel HTTP and FTP access
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
 		p5-libwww>=5.64:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 REINPLACE_ARGS=	-i ''

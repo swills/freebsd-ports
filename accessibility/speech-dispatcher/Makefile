@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/speech-dispatcher/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/accessibility/speech-dispatcher/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	speech-dispatcher
 PORTVERSION=	0.8.6
@@ -6,7 +6,7 @@ PORTREVISION?=	0
 CATEGORIES?=	accessibility audio
 MASTER_SITES=	http://devel.freebsoft.org/pub/projects/speechd/
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT?=	Common interface to speech synthesis
 
 LICENSE=	GPLv2 LGPL21

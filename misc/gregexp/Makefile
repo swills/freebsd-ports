@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/gregexp/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/misc/gregexp/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gregexp
 PORTVERSION=	0.4
@@ -9,6 +9,9 @@ MASTER_SITES=	http://dentrassi.de/download/gregexp/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Graphical regular expression explorer
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 

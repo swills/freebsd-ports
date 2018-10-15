@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/japanese/p5-DateTime-Calendar-Japanese-Era/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/japanese/p5-DateTime-Calendar-Japanese-Era/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Calendar-Japanese-Era
 PORTVERSION=	0.08001
@@ -13,14 +13,14 @@ COMMENT=	DateTime Extension for Japanese Eras
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-Module-Install>=0.91:devel/p5-Module-Install \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-File-ShareDir>=0:devel/p5-File-ShareDir \
 		p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-YAML-Tiny>=1.38:textproc/p5-YAML-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-YAML>=0:textproc/p5-YAML
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/devel/p5-Devel-ArgNames/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-ArgNames/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-ArgNames
 PORTVERSION=	0.03
@@ -14,8 +14,8 @@ COMMENT=	Figure out the names of variables passed into subroutines
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PadWalker>=0:devel/p5-PadWalker
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PadWalker>=0:devel/p5-PadWalker
 
 USES=		perl5
 USE_PERL5=	configure

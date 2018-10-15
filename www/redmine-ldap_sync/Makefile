@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-ldap_sync/Makefile 457904 2018-01-02 16:04:00Z feld $
+# $FreeBSD: head/www/redmine-ldap_sync/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	ldap_sync
 PORTVERSION=	2.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	LDAP user/group synchronization for Redmine
 
 LICENSE=	GPLv3+

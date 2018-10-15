@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-Pod-Xhtml/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Pod-Xhtml/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Xhtml
 PORTVERSION=	1.61
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate well-formed XHTML documents from POD format documentation
 
-BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI
 TEST_DEPENDS=	p5-Test-Assertions>0:devel/p5-Test-Assertions
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-BBS-UserInfo-Ptt/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-BBS-UserInfo-Ptt/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	BBS-UserInfo-Ptt
 PORTVERSION=	0.06
@@ -15,8 +15,8 @@ COMMENT=	Get user information of PTT-style BBS
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Expect>=0:lang/p5-Expect
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Expect>=0:lang/p5-Expect
 
 NO_ARCH=	yes
 USE_PERL5=	configure

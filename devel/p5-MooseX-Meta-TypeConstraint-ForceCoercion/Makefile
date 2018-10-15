@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Meta-TypeConstraint-ForceCoercion/Makefile 473190 2018-06-24 09:07:14Z amdmi3 $
+# $FreeBSD: head/devel/p5-MooseX-Meta-TypeConstraint-ForceCoercion/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Meta-TypeConstraint-ForceCoercion
 PORTVERSION=	0.01
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

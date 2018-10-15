@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-SBC/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/textproc/p5-HTML-SBC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-SBC
 PORTVERSION=	0.15
@@ -14,8 +14,8 @@ COMMENT=	Simple blog code to valid XHTML
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5
 USE_PERL5=	configure

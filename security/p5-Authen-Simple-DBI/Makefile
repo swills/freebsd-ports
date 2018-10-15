@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Simple-DBI/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Authen-Simple-DBI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-Simple-DBI
 PORTVERSION=	0.2
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple DBI authentication
 
-BUILD_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple \
 		p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

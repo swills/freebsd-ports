@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/www/p5-HTML-Template-HashWrapper/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Template-HashWrapper/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Template-HashWrapper
 PORTVERSION=	1.3
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy way to use the associate option from HTML::Template
 
-BUILD_DEPENDS=	p5-HTML-Template>=0:www/p5-HTML-Template
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Template>=0:www/p5-HTML-Template
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/math/p5-Set-IntSpan-Fast-XS/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/math/p5-Set-IntSpan-Fast-XS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Set-IntSpan-Fast-XS
 PORTVERSION=	0.05
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Faster Set::IntSpan::Fast
 
-BUILD_DEPENDS=	p5-Data-Swap>=0.07:devel/p5-Data-Swap \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Swap>=0.07:devel/p5-Data-Swap \
 		p5-Set-IntSpan-Fast>=1.13:math/p5-Set-IntSpan-Fast
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

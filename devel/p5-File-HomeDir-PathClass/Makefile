@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-HomeDir-PathClass/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-HomeDir-PathClass/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-HomeDir-PathClass
 PORTVERSION=	1.112060
@@ -13,10 +13,10 @@ COMMENT=	File::HomeDir returning Path::Class objects
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-HomeDir>=0.93:devel/p5-File-HomeDir \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-HomeDir>=0.93:devel/p5-File-HomeDir \
 		p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	modbuild

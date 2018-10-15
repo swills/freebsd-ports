@@ -1,5 +1,5 @@
 # Created by: lx@redundancy.redundancy.org
-# $FreeBSD: head/audio/wmalbum/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/wmalbum/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	wmalbum
 PORTVERSION=	0.1.5
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dockapp to display album covers for XMMS
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libxmms.so:multimedia/xmms \
 		libgdk_pixbuf_xlib.so:graphics/gdk-pixbuf

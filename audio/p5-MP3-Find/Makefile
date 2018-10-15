@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/audio/p5-MP3-Find/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/audio/p5-MP3-Find/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MP3-Find
 PORTVERSION=	0.07
@@ -14,8 +14,8 @@ COMMENT=	Search and sort MP3 files based on their ID3 tags
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-MP3-Info>=0:audio/p5-MP3-Info
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MP3-Info>=0:audio/p5-MP3-Info
 
 USES=		perl5
 USE_PERL5=	configure

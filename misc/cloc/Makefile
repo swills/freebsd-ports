@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/misc/cloc/Makefile 479572 2018-09-11 22:42:26Z danilo $
+# $FreeBSD: head/misc/cloc/Makefile 481335 2018-10-06 09:25:57Z danilo $
 
 PORTNAME=	cloc
-PORTVERSION=	1.78
+PORTVERSION=	1.80
+DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 
 MAINTAINER=	danilo@FreeBSD.org

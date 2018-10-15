@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-XML-TreePP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-TreePP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-TreePP
 PORTVERSION=	0.43
@@ -13,8 +13,8 @@ COMMENT=	Pure Perl implementation for parsing/writing xml files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-libwww>=5.811:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=5.811:www/p5-libwww
 TEST_DEPENDS=	p5-HTTP-Lite>=0:www/p5-HTTP-Lite \
 		p5-Tie-IxHash>=0:devel/p5-Tie-IxHash
 

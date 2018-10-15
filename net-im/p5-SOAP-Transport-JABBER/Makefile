@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net-im/p5-SOAP-Transport-JABBER/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/p5-SOAP-Transport-JABBER/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SOAP-Transport-JABBER
 PORTVERSION=	0.713
@@ -13,9 +13,9 @@ COMMENT=	Jabber-based transport backend for SOAP::Lite
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Net-Jabber>=0:net-im/p5-Net-Jabber \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-Jabber>=0:net-im/p5-Net-Jabber \
 		p5-SOAP-Lite>=0.711:net/p5-SOAP-Lite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	modbuild

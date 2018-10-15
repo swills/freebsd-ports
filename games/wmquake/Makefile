@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <uspoerlein@gmail.com>
-# $FreeBSD: head/games/wmquake/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/wmquake/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	wmquake
 PORTVERSION=	1.1
@@ -10,6 +10,9 @@ MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/ \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Id Software's Quake I in a 64x64 WM dockapp window
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USES=		gmake tar:bzip2
 USE_GNOME=	gtk12

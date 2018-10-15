@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/security/p5-Yahoo-BBAuth/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Yahoo-BBAuth/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Yahoo-BBAuth
 PORTVERSION=	0.50
@@ -14,10 +14,10 @@ COMMENT=	Perl interface to the Yahoo! Browser-Based Authentication
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-JSON>=0:converters/p5-JSON \
 		p5-libwww>=5.6:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

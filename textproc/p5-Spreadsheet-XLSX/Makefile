@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Spreadsheet-XLSX/Makefile 438299 2017-04-11 18:03:31Z swills $
+# $FreeBSD: head/textproc/p5-Spreadsheet-XLSX/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Spreadsheet-XLSX
 PORTVERSION=	0.15
@@ -9,9 +9,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Perl extension for reading MS Excel 2007 files
 
-BUILD_DEPENDS=	p5-Spreadsheet-ParseExcel>0:textproc/p5-Spreadsheet-ParseExcel \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Spreadsheet-ParseExcel>0:textproc/p5-Spreadsheet-ParseExcel \
 		p5-Archive-Zip>=1.18:archivers/p5-Archive-Zip
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

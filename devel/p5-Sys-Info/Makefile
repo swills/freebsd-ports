@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sys-Info/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Sys-Info/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Sys-Info
 PORTVERSION=	0.78
@@ -14,9 +14,9 @@ COMMENT=	Fetch information from the host system
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Sys-Info-Base>=0.7800:devel/p5-Sys-Info-Base \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Sys-Info-Base>=0.7800:devel/p5-Sys-Info-Base \
 		p5-Sys-Info-Driver-BSD>=0.7800:devel/p5-Sys-Info-Driver-BSD
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage \
 		p5-Test-Sys-Info>=0.20:devel/p5-Test-Sys-Info

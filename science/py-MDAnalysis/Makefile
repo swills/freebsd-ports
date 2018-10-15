@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-MDAnalysis/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-MDAnalysis/Makefile 481865 2018-10-12 01:15:42Z yuri $
 
 PORTNAME=	MDAnalysis
-DISTVERSION=	0.18.0
+DISTVERSION=	0.19.0
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

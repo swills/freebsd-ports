@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net/p5-URI-FromHash/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-URI-FromHash/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	URI-FromHash
 DISTVERSION=	0.05
@@ -12,9 +12,9 @@ COMMENT=	Create URI from hash of components
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-URI>=1.68:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

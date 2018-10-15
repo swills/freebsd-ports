@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/deskutils/p5-Data-ICal/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/deskutils/p5-Data-ICal/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-ICal
 PORTVERSION=	0.22
@@ -13,10 +13,10 @@ COMMENT=	Data::ICal - Generates iCalendar (RFC 2445) calendar files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-ReturnValue>=0:devel/p5-Class-ReturnValue \
 		p5-Text-vFile-asData>=0:devel/p5-Text-vFile-asData
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-LongString>=0:devel/p5-Test-LongString \
 		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings \
 		p5-Test-Pod>=1.14:devel/p5-Test-Pod \

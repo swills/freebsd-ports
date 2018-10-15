@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Lingua-Identify/Makefile 479391 2018-09-10 11:19:43Z des $
+# $FreeBSD: head/textproc/p5-Lingua-Identify/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Lingua-Identify
 PORTVERSION=	0.56
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lingua::Identify - Language identification
 
-BUILD_DEPENDS=	p5-Class-Factory-Util>=1.6:devel/p5-Class-Factory-Util \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Factory-Util>=1.6:devel/p5-Class-Factory-Util \
 		p5-Text-Affixes>=0.04:textproc/p5-Text-Affixes \
 		p5-Text-Ngram>=0.03:textproc/p5-Text-Ngram
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-Forward/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-Forward/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Application-Plugin-Forward
 PORTVERSION=	1.06
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hartzell@alerce.com
 COMMENT=	Support for forwarding requests in CGI::Application
 
-BUILD_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
 		p5-CGI-Application-Plugin-AutoRunmode>=0:www/p5-CGI-Application-Plugin-AutoRunmode
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
+# $FreeBSD: head/devel/p5-subversion/Makefile 481744 2018-10-10 15:39:51Z lev $
 
 PKGNAMEPREFIX=	p5-
 
@@ -9,7 +9,7 @@ COMMENT=	Perl bindings for Version control system
 USES=		perl5
 USE_PERL5=	build run
 
-PORTREVISION_110=	1
+PORTREVISION_110=	0
 PORTREVISION_19=	0
 
 SVN_BUILD_BINDINGS=	yes

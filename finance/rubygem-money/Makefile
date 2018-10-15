@@ -1,9 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/finance/rubygem-money/Makefile 476702 2018-08-08 23:28:55Z sunpoet $
+# $FreeBSD: head/finance/rubygem-money/Makefile 482077 2018-10-14 16:31:15Z sunpoet $
 
 PORTNAME=	money
-PORTVERSION=	6.12.0
-PORTREVISION=	1
+PORTVERSION=	6.13.0
 CATEGORIES=	finance rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-i18n>=0.6.4:devel/rubygem-i18n
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

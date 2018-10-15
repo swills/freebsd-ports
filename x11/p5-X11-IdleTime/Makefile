@@ -1,5 +1,5 @@
 # Created by: Sean Farley <sean-freebsd@farley.org>
-# $FreeBSD: head/x11/p5-X11-IdleTime/Makefile 457740 2017-12-31 22:23:48Z sunpoet $
+# $FreeBSD: head/x11/p5-X11-IdleTime/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	X11-IdleTime
 PORTVERSION=	0.09
@@ -13,9 +13,9 @@ COMMENT=	Perl module that reports number of seconds that X11 has been idle
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Inline>=0.44:devel/p5-Inline \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Inline>=0.44:devel/p5-Inline \
 		p5-Inline-C>=0.44:devel/p5-Inline-C
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 MAKE_JOBS_UNSAFE=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-SVN-Notify-Config/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-SVN-Notify-Config/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-Notify-Config
 PORTVERSION=	0.0911
@@ -15,10 +15,10 @@ COMMENT=	Perl module for config-driven Subversion notification
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/svnlook:devel/subversion \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	${LOCALBASE}/bin/svnlook:devel/subversion \
 		p5-SVN-Notify>=2.70:devel/p5-SVN-Notify \
 		p5-YAML>=0.62:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0.1:devel/p5-Test-Deep
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-Authorization/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-Authorization/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Application-Plugin-Authorization
 PORTVERSION=	0.07
@@ -14,13 +14,13 @@ COMMENT=	Support for authorization of requests in CGI::Application
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \
 		p5-Class-ISA>=0:devel/p5-Class-ISA \
 		p5-UNIVERSAL-require>=0:devel/p5-UNIVERSAL-require \
 		p5-CGI-Application-Plugin-Authentication>=0:www/p5-CGI-Application-Plugin-Authentication \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-Warn>=0:devel/p5-Test-Warn
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

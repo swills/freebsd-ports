@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/p5-Test-WWW-Selenium/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-WWW-Selenium/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-WWW-Selenium
 PORTVERSION=	1.36
@@ -14,9 +14,9 @@ COMMENT=	Perl driver and test library for Selenium Remote Control (SRC)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-Devel-REPL>=0:devel/p5-Devel-REPL
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-Mock-LWP>=0:devel/p5-Test-Mock-LWP \

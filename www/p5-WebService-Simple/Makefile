@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/www/p5-WebService-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WebService-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WebService-Simple
 PORTVERSION=	0.24
@@ -13,7 +13,8 @@ COMMENT=	Simple Interface To Web Services APIs
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-Data-ConfigHash>=0:devel/p5-Class-Data-ConfigHash \
 		p5-Class-Inspector>=0:devel/p5-Class-Inspector \
 		p5-Hash-MultiValue>=0:devel/p5-Hash-MultiValue \
@@ -24,7 +25,6 @@ BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-XML-Feed>=0:textproc/p5-XML-Feed \
 		p5-XML-Parser-Lite-Tree>=0:textproc/p5-XML-Parser-Lite-Tree
 

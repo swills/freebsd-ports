@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/transmission-cli/Makefile 474704 2018-07-15 17:01:05Z tcberner $
+# $FreeBSD: head/net-p2p/transmission-cli/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	transmission
 DISTVERSION=	2.94
@@ -6,7 +6,7 @@ CATEGORIES+=	net-p2p
 SLAVEPORT?=	cli
 PKGNAMESUFFIX?=	-cli
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Meta-port for Transmission BitTorrent client
 
 LICENSE+=	MIT

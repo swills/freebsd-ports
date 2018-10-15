@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Message/Makefile 472660 2018-06-17 23:47:50Z wen $
+# $FreeBSD: head/www/p5-HTTP-Message/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Message
 PORTVERSION=	6.18
@@ -14,12 +14,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Encode-Locale>=1:converters/p5-Encode-Locale \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Encode-Locale>=1:converters/p5-Encode-Locale \
 		p5-HTTP-Date>=6:www/p5-HTTP-Date \
 		p5-IO-HTML>=0:devel/p5-IO-HTML \
 		p5-LWP-MediaTypes>=6:www/p5-LWP-MediaTypes \
 		p5-URI>=1.10:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Try-Tiny>=0:lang/p5-Try-Tiny
 
 NO_ARCH=	yes

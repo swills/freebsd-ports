@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/www/p5-Apache-Gallery/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/p5-Apache-Gallery/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Apache-Gallery
 PORTVERSION=	1.0.2
@@ -15,14 +15,14 @@ COMMENT=	Apache::Gallery - mod_perl handler to create an image gallery
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-URI>=0:net/p5-URI \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI \
 		p5-Text-Template>=0:textproc/p5-Text-Template \
 		p5-Image-Info>=0:graphics/p5-Image-Info \
 		p5-Image-Size>=0:graphics/p5-Image-Size \
 		p5-Image-Imlib2>=0:graphics/p5-Image-Imlib2 \
 		p5-libapreq2>=0:www/p5-libapreq2 \
 		p5-CGI>=0:www/p5-CGI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		apache:2.2+ perl5
 USE_PERL5=	configure

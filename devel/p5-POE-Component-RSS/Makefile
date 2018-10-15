@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-POE-Component-RSS/Makefile 471619 2018-06-04 18:05:18Z sunpoet $
+# $FreeBSD: head/devel/p5-POE-Component-RSS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-RSS
 PORTVERSION=	0.09
@@ -14,9 +14,9 @@ COMMENT=	Module for event based RSS parsing
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-XML-RSS>=0:textproc/p5-XML-RSS
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

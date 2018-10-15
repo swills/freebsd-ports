@@ -1,8 +1,8 @@
 # Created by: Wen Heping
-# $FreeBSD: head/www/py-WebTest/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-WebTest/Makefile 481673 2018-10-09 21:23:36Z cs $
 
 PORTNAME=	WebTest
-PORTVERSION=	2.0.29
+PORTVERSION=	2.0.32
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

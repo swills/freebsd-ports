@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-Format-Duration/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-Duration/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Format-Duration
 PORTVERSION=	1.04
@@ -13,8 +13,8 @@ COMMENT=	Format and parse DateTime::Durations
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/a$//}
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-MARC-Lint/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-MARC-Lint/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MARC-Lint
 PORTVERSION=	1.46
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Mechanism for validating MARC records
 
-BUILD_DEPENDS=	p5-MARC-Record>=0:textproc/p5-MARC-Record \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MARC-Record>=0:textproc/p5-MARC-Record \
 		p5-Business-ISBN>=2.03:misc/p5-Business-ISBN
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 WRKSRC=		${WRKDIR}/marc-lint
 

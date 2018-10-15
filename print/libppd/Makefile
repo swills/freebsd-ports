@@ -1,5 +1,5 @@
 # Created by: e-masson@kisoft-services.com
-# $FreeBSD: head/print/libppd/Makefile 368108 2014-09-13 15:11:27Z tijl $
+# $FreeBSD: head/print/libppd/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	libppd
 PORTVERSION=	0.10
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/lpr/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	emss@free.fr
 COMMENT=	Library providing routines for ppd files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USES=		libtool
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-diffoscope/Makefile 475286 2018-07-25 00:23:33Z koobs $
+# $FreeBSD: head/sysutils/py-diffoscope/Makefile 481219 2018-10-04 12:47:33Z emaste $
 
 PORTNAME=	diffoscope
-PORTVERSION=	99
+PORTVERSION=	103
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

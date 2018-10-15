@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-accounts-kcm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KDE instant messaging account management module
 
 LIB_DEPENDS=	libaccounts-qt5.so:net-im/libaccounts-qt5 \
 		libkaccounts.so:net-im/kaccounts-integration \
-		libtelepathy-qt5.so:net-im/telepathy-qt5 \
+		libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
 		libtelepathy-logger-qt.so:net-im/telepathy-logger-qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals \
 		libKF5AkonadiPrivate.so:databases/akonadi \

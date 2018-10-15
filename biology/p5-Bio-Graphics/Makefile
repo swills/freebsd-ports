@@ -1,5 +1,5 @@
 # Created by: wen@FreeBSD.org
-# $FreeBSD: head/biology/p5-Bio-Graphics/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/biology/p5-Bio-Graphics/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Bio-Graphics
 PORTVERSION=	2.40
@@ -14,14 +14,14 @@ COMMENT=	Generate GD Images of Bio::Seq Objects
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Bio-Coordinate>=1.007000:biology/p5-Bio-Coordinate \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Bio-Coordinate>=1.007000:biology/p5-Bio-Coordinate \
 		p5-Bio-SCF>=1.01:biology/p5-Bio-SCF \
 		p5-BioPerl>=1.007000:biology/p5-BioPerl \
 		p5-CGI>=0:www/p5-CGI \
 		p5-GD>=2.30:graphics/p5-GD \
 		p5-GD-SVG>=0.32:graphics/p5-GD-SVG \
 		p5-Statistics-Descriptive>=2.6:math/p5-Statistics-Descriptive
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

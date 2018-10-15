@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-CPAN-Reporter/Makefile 438218 2017-04-10 23:36:17Z swills $
+# $FreeBSD: head/devel/p5-CPAN-Reporter/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPAN-Reporter
 PORTVERSION=	1.2018
@@ -10,14 +10,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Adds CPAN Testers reporting to CPAN.pm
 
-BUILD_DEPENDS=	p5-Capture-Tiny>0:devel/p5-Capture-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Capture-Tiny>0:devel/p5-Capture-Tiny \
 		p5-Config-Tiny>=2.08:devel/p5-Config-Tiny \
 		p5-Devel-Autoflush>=0.04:devel/p5-Devel-Autoflush \
 		p5-File-HomeDir>0:devel/p5-File-HomeDir \
 		p5-IPC-Cmd>=0.76:devel/p5-IPC-Cmd \
 		p5-Probe-Perl>0:sysutils/p5-Probe-Perl \
 		p5-Test-Reporter>1.54:devel/p5-Test-Reporter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

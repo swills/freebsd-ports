@@ -1,5 +1,5 @@
 # Created by: Tuc <freebsd-ports@t-b-o-h.net>
-# $FreeBSD: head/net-mgmt/p5-Data-Validate-IP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-mgmt/p5-Data-Validate-IP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Validate-IP
 PORTVERSION=	0.27
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-NetAddr-IP>=4:net-mgmt/p5-NetAddr-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-NetAddr-IP>=4:net-mgmt/p5-NetAddr-IP
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires \
 		p5-Test-Taint>=0:devel/p5-Test-Taint
 

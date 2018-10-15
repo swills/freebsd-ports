@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-cpp/Makefile 480257 2018-09-21 11:33:10Z linimon $
+# $FreeBSD: head/devel/avro-cpp/Makefile 482064 2018-10-14 16:29:26Z sunpoet $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.2
@@ -17,6 +17,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 
 USES=		cmake compiler:c++11-lang
+
+USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 WRKSRC_SUBDIR=	lang/c++
 

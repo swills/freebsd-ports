@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-sphinxcontrib-newsfeed/Makefile 472986 2018-06-21 17:23:29Z tcberner $
+# $FreeBSD: head/textproc/py-sphinxcontrib-newsfeed/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	sphinxcontrib-newsfeed
 PORTVERSION=	0.1.4
@@ -6,7 +6,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	News Feed extension for Sphinx
 
 LICENSE=	BSD2CLAUSE

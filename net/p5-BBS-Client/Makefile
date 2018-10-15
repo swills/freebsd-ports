@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng, Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/net/p5-BBS-Client/Makefile 471658 2018-06-04 18:10:27Z sunpoet $
+# $FreeBSD: head/net/p5-BBS-Client/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	BBS-Client
 PORTVERSION=	0.03
@@ -15,8 +15,8 @@ COMMENT=	Client Module For BBS Systems
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-Telnet>=0:net/p5-Net-Telnet
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-Telnet>=0:net/p5-Net-Telnet
 
 USES=		perl5
 USE_PERL5=	configure

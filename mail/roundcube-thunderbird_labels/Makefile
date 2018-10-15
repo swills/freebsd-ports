@@ -1,8 +1,8 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 476008 2018-07-31 17:14:25Z pi $
+# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 481581 2018-10-08 23:43:15Z wen $
 
 PORTNAME=	thunderbird_labels
-PORTVERSION=	1.1.4
+PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
@@ -42,6 +42,8 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${PLUGINDIR}
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PLUGINDIR}
 	cd ${STAGEDIR}${PLUGINDIR} && \
-		${MV} config.inc.php config.inc.php.sample
+		${MV} config.inc.php config.inc.php.sample && \
+		${RM} coffee2js.sh docs/_config.yml && \
+		${RM} -r coffeescripts
 
 .include <bsd.port.mk>

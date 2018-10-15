@@ -1,8 +1,8 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/devel/rubygem-sequel/Makefile 478749 2018-09-01 22:52:20Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sequel/Makefile 482076 2018-10-14 16:31:06Z sunpoet $
 
 PORTNAME=	sequel
-PORTVERSION=	5.12.0
+PORTVERSION=	5.13.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,9 +12,10 @@ COMMENT=	Database Toolkit for Ruby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/sequel
 

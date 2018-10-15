@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-List-Objects-WithUtils/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-List-Objects-WithUtils/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	List-Objects-WithUtils
 PORTVERSION=	2.028003
@@ -15,7 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
 		p5-List-UtilsBy>=0.09:devel/p5-List-UtilsBy \
 		p5-List-UtilsBy-XS>=0.03:devel/p5-List-UtilsBy-XS \
 		p5-Module-Runtime>=0.013:devel/p5-Module-Runtime \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
 		p5-Type-Tie>=0.004:devel/p5-Type-Tie \
 		p5-autobox>=0:devel/p5-autobox \
 		p5-strictures>=2:devel/p5-strictures
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

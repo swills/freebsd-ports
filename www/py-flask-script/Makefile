@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-flask-script/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-script/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	Flask-Script
 PORTVERSION=	2.0.6
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scripting support for Flask
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-DBD-InterBase/Makefile 468288 2018-04-25 18:40:14Z acm $
+# $FreeBSD: head/databases/p5-DBD-InterBase/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBD-InterBase
 PORTVERSION=	0.48
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	yuri@rivera.ru
 COMMENT=	DBI driver for InterBase/Firebird/Yaffil RDBMS server
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 
 USES=		perl5 firebird
 USE_PERL5=	patch configure

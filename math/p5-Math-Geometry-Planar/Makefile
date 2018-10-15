@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Geometry-Planar/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Math-Geometry-Planar/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Geometry-Planar
 PORTVERSION=	1.18
@@ -14,9 +14,9 @@ COMMENT=	Collection of planar geometry functions
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Math-Geometry-Planar-GPC>=0:math/p5-Math-Geometry-Planar-GPC \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Geometry-Planar-GPC>=0:math/p5-Math-Geometry-Planar-GPC \
 		p5-Math-Geometry-Planar-Offset>=0:math/p5-Math-Geometry-Planar-Offset
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

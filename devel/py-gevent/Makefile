@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/devel/py-gevent/Makefile 477592 2018-08-19 20:32:16Z sunpoet $
+# $FreeBSD: head/devel/py-gevent/Makefile 482058 2018-10-14 16:28:36Z sunpoet $
 
 PORTNAME=	gevent
-PORTVERSION=	1.3.6
+PORTVERSION=	1.3.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,12 +18,13 @@ LIB_DEPENDS=	libcares.so:dns/c-ares \
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.14:devel/py-greenlet@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 
+USES=		localbase python
+USE_PYTHON=	autoplist concurrent distutils
+
 DO_MAKE_TEST=	${SETENV} PYTHONPATH=../ ${PYTHON_CMD}
 MAKE_ENV=	CARES_EMBED=0 LIBEV_EMBED=0
 TEST_TARGET=	testrunner.py
 TEST_WRKSRC=	${WRKSRC}/greentest
-USE_PYTHON=	autoplist concurrent distutils
-USES=		localbase python
 
 .include <bsd.port.pre.mk>
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libplist/Makefile 389224 2015-06-11 15:07:48Z avilla $
+# $FreeBSD: head/devel/libplist/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	libplist
 PORTVERSION=	1.12
@@ -6,7 +6,7 @@ PORTREVISION?=	0
 CATEGORIES?=	devel
 MASTER_SITES=	http://www.libimobiledevice.org/downloads/
 
-MAINTAINER?=	avilla@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 COMMENT?=	Library to handle Apple Property List format
 
 LICENSE?=	LGPL21

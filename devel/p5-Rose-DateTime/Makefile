@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-Rose-DateTime/Makefile 478436 2018-08-30 09:08:13Z amdmi3 $
+# $FreeBSD: head/devel/p5-Rose-DateTime/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Rose-DateTime
 PORTVERSION=	0.540
@@ -15,9 +15,9 @@ COMMENT=	DateTime helper functions and objects
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-Rose-Object>=0.82:devel/p5-Rose-Object
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

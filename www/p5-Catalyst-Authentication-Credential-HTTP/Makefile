@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/www/p5-Catalyst-Authentication-Credential-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Authentication-Credential-HTTP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Authentication-Credential-HTTP
 PORTVERSION=	1.018
@@ -13,13 +13,13 @@ COMMENT=	HTTP plain and digest authentication plugin for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.10005:www/p5-Catalyst-Plugin-Authentication \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.10005:www/p5-Catalyst-Plugin-Authentication \
 		p5-Catalyst-Runtime>0:www/p5-Catalyst-Runtime \
 		p5-Class-Accessor>0:devel/p5-Class-Accessor \
 		p5-Data-UUID>=0.11:devel/p5-Data-UUID \
 		p5-String-Escape>0:textproc/p5-String-Escape \
 		p5-URI>0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-HTTP-Message>0:www/p5-HTTP-Message \
 		p5-Test-Exception>0:devel/p5-Test-Exception \
 		p5-Test-MockObject>0:devel/p5-Test-MockObject \

@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-POE-XS-Queue-Array/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-POE-XS-Queue-Array/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-XS-Queue-Array
 PORTVERSION=	0.006
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XS implementation of POE::Queue::Array
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE
 
 USES=		perl5
 USE_PERL5=	configure

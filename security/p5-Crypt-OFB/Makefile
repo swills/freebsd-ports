@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/security/p5-Crypt-OFB/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Crypt-OFB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Crypt-OFB
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Encrypt Data using OFB Mode
 
-BUILD_DEPENDS=	p5-Crypt-ECB>=0:security/p5-Crypt-ECB
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-ECB>=0:security/p5-Crypt-ECB
 
 USES=		perl5
 USE_PERL5=	configure

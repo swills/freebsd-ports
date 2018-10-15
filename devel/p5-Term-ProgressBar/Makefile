@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/devel/p5-Term-ProgressBar/Makefile 469766 2018-05-12 23:50:52Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-ProgressBar/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Term-ProgressBar
 PORTVERSION=	2.22
@@ -13,9 +13,9 @@ COMMENT=	Perl extension to display a progress bar
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-MethodMaker>=1.02:devel/p5-Class-MethodMaker \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-MethodMaker>=1.02:devel/p5-Class-MethodMaker \
 		p5-Term-ReadKey>=2.14:devel/p5-Term-ReadKey
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Capture-Tiny>=0.13:devel/p5-Capture-Tiny \
 		p5-Test-Exception>=0.31:devel/p5-Test-Exception \
 		p5-Test-Warnings>=0:devel/p5-Test-Warnings

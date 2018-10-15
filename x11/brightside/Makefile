@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/brightside/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/x11/brightside/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	brightside
 PORTVERSION=	1.4.0
@@ -9,6 +9,9 @@ MASTER_SITES=	LOCAL/marcus
 
 MAINTAINER=	marcus@FreeBSD.org
 COMMENT=	Tool to add reactivity to the edges and corners of the GNOME desktop
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		gmake pathfix pkgconfig tar:bzip2
 USE_XORG=	x11

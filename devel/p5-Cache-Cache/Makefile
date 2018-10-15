@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/devel/p5-Cache-Cache/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Cache-Cache/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Cache-Cache
 PORTVERSION=	1.08
@@ -13,11 +13,11 @@ COMMENT=	Perl Cache interface
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Cache>=0:devel/p5-Cache \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache>=0:devel/p5-Cache \
 		p5-Digest-SHA1>=2.02:security/p5-Digest-SHA1 \
 		p5-Error>=0.15:lang/p5-Error \
 		p5-IPC-ShareLite>=0.09:devel/p5-IPC-ShareLite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

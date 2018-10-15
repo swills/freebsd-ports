@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/security/stegdetect/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/security/stegdetect/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	stegdetect
 PORTVERSION=	0.6
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.sourcefiles.org/Graphics/Tools/Miscellaneous/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Automated tool for detecting steganographic content in JPEGs
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 OPTIONS_DEFINE=	X11
 OPTIONS_DEFAULT=	X11

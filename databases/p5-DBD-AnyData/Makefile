@@ -1,5 +1,5 @@
 # Created by: ijlioa
-# $FreeBSD: head/databases/p5-DBD-AnyData/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBD-AnyData/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBD-AnyData
 PORTVERSION=	0.110
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DBI access to XML, CSV, and other formats
 
-BUILD_DEPENDS=	p5-AnyData>=0.07:devel/p5-AnyData \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyData>=0.07:devel/p5-AnyData \
 		p5-DBI>1:databases/p5-DBI \
 		p5-SQL-Statement>1:databases/p5-SQL-Statement
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

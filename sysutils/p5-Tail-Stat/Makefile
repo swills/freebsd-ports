@@ -1,5 +1,5 @@
 # Created by: Oleg A. Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/sysutils/p5-Tail-Stat/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-Tail-Stat/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tail-Stat
 PORTVERSION=	0.26
@@ -14,13 +14,13 @@ COMMENT=	Real-time log statistics server
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-JSON-XS>=0:converters/p5-JSON-XS \
 		p5-Log-Dispatch>=2.26:devel/p5-Log-Dispatch \
 		p5-POE>=0:devel/p5-POE \
 		p5-Pid-File-Flock>=0:devel/p5-Pid-File-Flock \
 		p5-Tie-Hash-Indexed>=0:devel/p5-Tie-Hash-Indexed
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-TCP>=0:devel/p5-Test-TCP
 
 USES=		perl5

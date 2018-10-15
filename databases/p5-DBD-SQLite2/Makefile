@@ -1,8 +1,8 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/databases/p5-DBD-SQLite2/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBD-SQLite2/Makefile 481567 2018-10-08 21:40:51Z sunpoet $
 
 PORTNAME=	DBD-SQLite2
-PORTVERSION=	0.37
+PORTVERSION=	0.38
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,8 @@ COMMENT=	Provides access to SQLite2 databases through the DBI
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=1.625:databases/p5-DBI
 
 USES=		perl5
 USE_PERL5=	configure

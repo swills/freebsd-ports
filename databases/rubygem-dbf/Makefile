@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-dbf/Makefile 468459 2018-04-27 15:56:50Z sunpoet $
+# $FreeBSD: head/databases/rubygem-dbf/Makefile 481351 2018-10-06 09:35:55Z sunpoet $
 
 PORTNAME=	dbf
-PORTVERSION=	3.1.2
+PORTVERSION=	3.1.3
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
@@ -12,9 +12,10 @@ COMMENT=	Library for reading dBase, xBase, Clipper and FoxPro database files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/dbf
 

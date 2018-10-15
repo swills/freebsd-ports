@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/wireguard/Makefile 480667 2018-09-25 15:21:46Z decke $
+# $FreeBSD: head/net/wireguard/Makefile 481820 2018-10-11 12:49:45Z decke $
 
 PORTNAME=	wireguard
-PORTVERSION=	0.0.20180925
+PORTVERSION=	0.0.20181007
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://git.zx2c4.com/WireGuard/snapshot/
 DISTNAME=	WireGuard-${PORTVERSION}
@@ -16,6 +17,7 @@ RUN_DEPENDS=	bash:shells/bash \
 		wireguard-go:net/wireguard-go
 
 USES=		gmake tar:xz
+USE_RC_SUBR=	${PORTNAME}
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src/tools
 

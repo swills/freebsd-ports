@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/p5-IPC-Cache/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-IPC-Cache/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	IPC-Cache
 PORTVERSION=	0.02
@@ -13,8 +13,8 @@ COMMENT=	Persist data across processes via shared memory
 
 LICENSE=	GPLv1
 
-BUILD_DEPENDS=	p5-IPC-ShareLite>=0:devel/p5-IPC-ShareLite
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IPC-ShareLite>=0:devel/p5-IPC-ShareLite
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Test-Output/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Output/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Output
 PORTVERSION=	1.03.1
@@ -14,8 +14,8 @@ COMMENT=	Utilities to test STDOUT and STDERR messages
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Capture-Tiny>=0.17:devel/p5-Capture-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Capture-Tiny>=0.17:devel/p5-Capture-Tiny
 
 NO_ARCH=	yes
 USES=		perl5

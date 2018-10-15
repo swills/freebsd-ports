@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Graphics-Color/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Graphics-Color/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Graphics-Color
 PORTVERSION=	0.31
@@ -13,13 +13,13 @@ COMMENT=	Device and library agnostic color spaces
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Color-Library>=0.020:graphics/p5-Color-Library \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Color-Library>=0.020:graphics/p5-Color-Library \
 		p5-Moose>=0.74:devel/p5-Moose \
 		p5-MooseX-Aliases>=0.03:devel/p5-MooseX-Aliases \
 		p5-MooseX-Clone>=0.03:devel/p5-MooseX-Clone \
 		p5-MooseX-Storage>=0.23:devel/p5-MooseX-Storage \
 		p5-MooseX-Types>=0.19:devel/p5-MooseX-Types
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Number-Delta>=0:devel/p5-Test-Number-Delta
 
 USES=		perl5

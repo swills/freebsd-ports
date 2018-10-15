@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cctz/Makefile 480096 2018-09-19 15:28:25Z linimon $
+# $FreeBSD: head/devel/cctz/Makefile 481413 2018-10-07 04:23:58Z swills $
 
 PORTNAME=	cctz
-PORTVERSION=	2.1
+PORTVERSION=	2.2
 PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
@@ -12,8 +12,8 @@ COMMENT=	C++ library for handling dates, times, and time zones
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		compiler:c++11-lib gmake
 GH_ACCOUNT=	google
+USES=		compiler:c++11-lib gmake
 USE_GITHUB=	yes
 
 MAKE_ARGS+=	CXX=${CXX} \
@@ -24,7 +24,6 @@ PLIST_FILES=	include/cctz/civil_time.h \
 		include/cctz/time_zone.h \
 		include/cctz/zone_info_source.h \
 		lib/libcctz.a
-
 PORTDOCS=	README.md
 
 OPTIONS_DEFINE=	DOCS

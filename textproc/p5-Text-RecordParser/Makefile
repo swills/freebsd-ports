@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-RecordParser/Makefile 441165 2017-05-18 16:03:52Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-RecordParser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-RecordParser
 PORTVERSION=	1.6.5
@@ -11,13 +11,13 @@ COMMENT=	Read record-oriented files
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Readonly>=0:devel/p5-Readonly \
 		p5-Text-Autoformat>=0:textproc/p5-Text-Autoformat \
 		p5-Text-TabularDisplay>=1.22:textproc/p5-Text-TabularDisplay
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes

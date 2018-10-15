@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/databases/p5-Rose-DB/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Rose-DB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Rose-DB
 PORTVERSION=	0.778
@@ -14,7 +14,8 @@ COMMENT=	DBI wrapper and abstraction layer
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Bit-Vector>=6.4:math/p5-Bit-Vector \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Bit-Vector>=6.4:math/p5-Bit-Vector \
 		p5-Clone-PP>=0:devel/p5-Clone-PP \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-DateTime>=0:devel/p5-DateTime \
@@ -26,7 +27,6 @@ BUILD_DEPENDS=	p5-Bit-Vector>=6.4:math/p5-Bit-Vector \
 		p5-SQL-ReservedWords>=0:databases/p5-SQL-ReservedWords \
 		p5-Time-Clock>=0:devel/p5-Time-Clock \
 		p5-YAML-Syck>=0:textproc/p5-YAML-Syck
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTSCOUT=	skipv:0.7591
 

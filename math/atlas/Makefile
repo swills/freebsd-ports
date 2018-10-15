@@ -1,5 +1,5 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/atlas/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/atlas/Makefile 482101 2018-10-14 18:07:46Z yuri $
 
 PORTNAME=	atlas
 PORTVERSION=	3.8.4
@@ -227,6 +227,7 @@ do-install:
 	(cd ${WRKSRC}/${opt}/ARCHS; \
 		${COPYTREE_SHARE} "*" ${STAGEDIR}${DATADIR}/${opt} \
 		"! -name Makefile -and ! -name *.tgz")
+	@${FIND} ${STAGEDIR}${DATADIR}/${opt} -type d -empty -delete
 .    endif
 .endfor
 .if ${PORT_OPTIONS:MDOCS}

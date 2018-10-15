@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/openhmd/Makefile 475353 2018-07-26 09:12:27Z yuri $
+# $FreeBSD: head/misc/openhmd/Makefile 481376 2018-10-06 16:22:16Z yuri $
 
 PORTNAME=	OpenHMD
 DISTVERSION=	0.2.0-215
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libhidapi.so:comms/hidapi
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 

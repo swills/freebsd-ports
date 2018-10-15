@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/ispc/Makefile 460800 2018-02-03 09:44:55Z danfe $
+# $FreeBSD: head/devel/ispc/Makefile 481833 2018-10-11 14:47:13Z martymac $
 
 PORTNAME=	ispc
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.9.2
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

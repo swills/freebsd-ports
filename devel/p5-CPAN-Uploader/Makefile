@@ -1,5 +1,5 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-CPAN-Uploader/Makefile 458896 2018-01-13 08:12:41Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Uploader/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CPAN-Uploader
 PORTVERSION=	0.103013
@@ -14,12 +14,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Getopt-Long-Descriptive>=0.084:devel/p5-Getopt-Long-Descriptive \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Getopt-Long-Descriptive>=0.084:devel/p5-Getopt-Long-Descriptive \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-LWP-Protocol-https>=1:www/p5-LWP-Protocol-https \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-HomeDir>=0:devel/p5-File-HomeDir
 
 NO_ARCH=	yes

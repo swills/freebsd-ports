@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/www/p5-HTTP-Recorder/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/p5-HTTP-Recorder/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Recorder
 PORTVERSION=	0.07
@@ -11,12 +11,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Record interaction with websites
 
-BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-HTTP-Proxy>=0:www/p5-HTTP-Proxy \
 		p5-HTTP-Request-Params>=0:www/p5-HTTP-Request-Params \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 dos2unix
 USE_PERL5=	configure

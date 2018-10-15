@@ -1,5 +1,5 @@
 # Created by: Alexander Timoshenko <gonzo@univ.kiev.ua>
-# $FreeBSD: head/misc/p5-asterisk-perl/Makefile 458326 2018-01-07 12:13:00Z sunpoet $
+# $FreeBSD: head/misc/p5-asterisk-perl/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	asterisk-perl
 PORTVERSION=	1.08
@@ -14,8 +14,8 @@ COMMENT=	Asterisk perl library
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Net-Telnet>=0:net/p5-Net-Telnet
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-Telnet>=0:net/p5-Net-Telnet
 
 NO_ARCH=	yes
 USES=		perl5

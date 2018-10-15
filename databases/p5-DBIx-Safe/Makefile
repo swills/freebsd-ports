@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Safe/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Safe/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Safe
 PORTVERSION=	1.2.5
@@ -15,9 +15,9 @@ COMMENT=	Safer access to your database through a DBI database handle
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-DBD-Pg>=1.49:databases/p5-DBD-Pg \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBD-Pg>=1.49:databases/p5-DBD-Pg \
 		p5-DBI>=1.490:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

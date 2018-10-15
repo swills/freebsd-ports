@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-Functions/Makefile 418076 2016-07-05 09:08:55Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Functions/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Functions
 PORTVERSION=	0.13
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Procedural interface to DateTime functions
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime
 
 USES=		perl5
 USE_PERL5=	configure

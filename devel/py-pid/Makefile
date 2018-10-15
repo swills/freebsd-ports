@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-pid/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pid/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	pid
 PORTVERSION=	2.1.1
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pidfile management for Python
 
 LICENSE=	APACHE20

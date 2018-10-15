@@ -1,15 +1,19 @@
-# $FreeBSD: head/devel/memleax/Makefile 471131 2018-05-30 12:34:15Z tobik $
+# $FreeBSD: head/devel/memleax/Makefile 481819 2018-10-11 12:28:32Z tobik $
 
 PORTNAME=	memleax
 PORTVERSION=	1.0.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	guy.tabrar@me.com
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Debug memory leaks of running processes
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	does not actually detect leaks
+EXPIRATION_DATE=	2018-10-31
+BROKEN=		does not actually detect leaks
 
 LIB_DEPENDS=	libunwind.so:devel/libunwind
 BUILD_DEPENDS=	${LOCALBASE}/lib/libdwarf.a:devel/libdwarf

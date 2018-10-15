@@ -1,5 +1,5 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/audio/gmixer/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/gmixer/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gmixer
 PORTVERSION=	0.98c
@@ -9,6 +9,9 @@ MASTER_SITES=	LOCAL/cpiazza
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X11/gtk+ mixer control
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 ALL_TARGET=	gmixer
 

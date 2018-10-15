@@ -1,5 +1,5 @@
 # Created by: johnpupu <johnpupu@gmail.com>
-# $FreeBSD: head/databases/pecl-leveldb/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/databases/pecl-leveldb/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	leveldb
 PORTVERSION=	0.1.5
@@ -14,6 +14,6 @@ LICENSE=	PHP301
 LIB_DEPENDS=	libleveldb.so:databases/leveldb
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 .include <bsd.port.mk>

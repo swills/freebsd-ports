@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/qtkeychain/Makefile 474893 2018-07-18 19:17:28Z arrowd $
+# $FreeBSD: head/security/qtkeychain/Makefile 481623 2018-10-09 11:04:06Z arrowd $
 
 PORTNAME=	qtkeychain
 DISTVERSIONPREFIX=	v
@@ -29,7 +29,7 @@ USE_QT=		corelib dbus linguisttools_build moc_build rcc_build qmake_build
 PLIST_SUB+=	PLIST_QT_PREFIX_UPCASE=Qt PLIST_QT_PREFIX=qt
 PLIST=		${PKGDIR}/pkg-plist.${FLAVOR}
 .  else
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=		core dbus linguisttools_build buildtools_build qmake_build
 PLIST_SUB+=	PLIST_QT_PREFIX_UPCASE=Qt5 PLIST_QT_PREFIX=qt5
 PLIST=		${PKGDIR}/pkg-plist.${FLAVOR}

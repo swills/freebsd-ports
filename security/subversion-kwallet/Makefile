@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/security/subversion-kwallet/Makefile 467834 2018-04-20 15:38:58Z lev $
+# $FreeBSD: head/security/subversion-kwallet/Makefile 481744 2018-10-10 15:39:51Z lev $
 
 PKGNAMESUFFIX=	-kwallet
 CATEGORIES=	security kde
@@ -10,7 +10,7 @@ COMMENT=	KDE KWallet integration for Version control system
 USE_KDE=	kdelibs runtime
 USES+=		kde:4
 
-PORTREVISION_110=	6
+PORTREVISION_110=	0
 PORTREVISION_19=	0
 
 .include "${.CURDIR}/../../devel/subversion/Makefile.addons"

@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/graphics/p5-Color-Calc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Color-Calc/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Color-Calc
 PORTVERSION=	1.074
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	Simple calculations with RGB colors
 
-BUILD_DEPENDS=	p5-Graphics-ColorNames-WWW>=1.13:graphics/p5-Graphics-ColorNames-WWW
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Graphics-ColorNames-WWW>=1.13:graphics/p5-Graphics-ColorNames-WWW
 
 USES=		perl5
 USE_PERL5=	configure

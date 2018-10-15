@@ -1,5 +1,5 @@
 # Created by: Alex Bakhtin <Alex.Bakhtin@gmail.com>
-# $FreeBSD: head/www/p5-Catalyst-TraitFor-Controller-DBIC-DoesPaging/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-TraitFor-Controller-DBIC-DoesPaging/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-TraitFor-Controller-DBIC-DoesPaging
 PORTVERSION=	1.001000
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Alex.Bakhtin@gmail.com
 COMMENT=	Helps you paginate, search, sort, and more easily using DBIx::Class
 
-BUILD_DEPENDS=	p5-Catalyst-Model-DBIC-Schema>=0.29:www/p5-Catalyst-Model-DBIC-Schema \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Model-DBIC-Schema>=0.29:www/p5-Catalyst-Model-DBIC-Schema \
 		p5-Catalyst-Runtime>=5.80000:www/p5-Catalyst-Runtime \
 		p5-DBIx-Class>=0.08108:databases/p5-DBIx-Class
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Catalyst-View-JSON>=0:www/p5-Catalyst-View-JSON \
 		p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-JSON>=0:converters/p5-JSON \

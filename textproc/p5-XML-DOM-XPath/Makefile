@@ -1,5 +1,5 @@
 # Created by: Mauricio Herrera Cuadra <mauricio@arareko.net>
-# $FreeBSD: head/textproc/p5-XML-DOM-XPath/Makefile 449928 2017-09-15 19:17:49Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-DOM-XPath/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-DOM-XPath
 PORTVERSION=	0.14
@@ -14,9 +14,9 @@ COMMENT=	Adds XPath support to XML::DOM, using XML::XPath engine
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-DOM>=0:textproc/p5-XML-DOM \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-DOM>=0:textproc/p5-XML-DOM \
 		p5-XML-XPathEngine>=0:textproc/p5-XML-XPathEngine
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

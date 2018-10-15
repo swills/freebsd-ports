@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-POE-Component-Pcap/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-POE-Component-Pcap/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Pcap
 PORTVERSION=	0.04
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE component for non-blocking use of Net::Pcap
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-Net-Pcap>=0:net/p5-Net-Pcap \
 		p5-NetPacket>=0:net/p5-NetPacket
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/textproc/p5-CSS-Croco/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/textproc/p5-CSS-Croco/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CSS-Croco
 PORTVERSION=	0.09
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Quick CSS parser
 
-BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI
 LIB_DEPENDS=	libcroco-0.6.so:textproc/libcroco
 
 USES=		perl5 pkgconfig

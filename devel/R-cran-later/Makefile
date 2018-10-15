@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/R-cran-later/Makefile 478928 2018-09-04 06:33:37Z tota $
+# $FreeBSD: head/devel/R-cran-later/Makefile 481027 2018-10-01 11:36:13Z tota $
 
 PORTNAME=	later
-PORTVERSION=	0.7.4
+PORTVERSION=	0.7.5
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -9,6 +9,8 @@ MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Utilities for Delaying Function Execution
 
 LICENSE=	GPLv2+
+
+BROKEN_i386=	Undefined symbol "_ZN5boost7atomics6detail8lockpool11scoped_lockC1EPVKv"
 
 USES=		cran:auto-plist,compiles
 

@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Address-List/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Email-Address-List/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-Address-List
 PORTVERSION=	0.05
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	RFC-close address list parsing
 
-BUILD_DEPENDS=	p5-Email-Address>0:mail/p5-Email-Address
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Address>0:mail/p5-Email-Address
 
 NO_ARCH=	yes
 

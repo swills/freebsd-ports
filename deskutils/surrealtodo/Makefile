@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/surrealtodo/Makefile 477060 2018-08-13 09:25:01Z tz $
+# $FreeBSD: head/deskutils/surrealtodo/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	surrealtodo
 PORTVERSION=	0.6.1.2
@@ -11,7 +11,7 @@ DISTNAME=	surrealtodo_v${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Surreal ToDo is an AJAX enabled web 2.0 list manager
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 USES=		zip
 USE_PHP=	mysql
 NO_BUILD=	yes

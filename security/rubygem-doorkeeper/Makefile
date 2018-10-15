@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-doorkeeper/Makefile 478069 2018-08-25 16:01:31Z sunpoet $
+# $FreeBSD: head/security/rubygem-doorkeeper/Makefile 482080 2018-10-14 16:31:38Z sunpoet $
 
 PORTNAME=	doorkeeper
-PORTVERSION=	5.0.0
+PORTVERSION=	5.0.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-railties4>=4.2:www/rubygem-railties4
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

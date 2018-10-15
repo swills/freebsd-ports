@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/p5-JSON-RPC-Dispatcher/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-JSON-RPC-Dispatcher/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	JSON-RPC-Dispatcher
 PORTVERSION=	0.0508
@@ -14,11 +14,11 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-JSON>=2.16:converters/p5-JSON \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=2.16:converters/p5-JSON \
 		p5-Log-Any>=0.11:devel/p5-Log-Any \
 		p5-Moose>=0.93:devel/p5-Moose \
 		p5-Plack>=0.9913:www/p5-Plack
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

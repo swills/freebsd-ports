@@ -1,9 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/lang/sagittarius-scheme/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/lang/sagittarius-scheme/Makefile 481549 2018-10-08 16:29:22Z ashish $
 
 PORTNAME=	sagittarius
-PORTVERSION=	0.9.2
-PORTREVISION=	2
+PORTVERSION=	0.9.4
 CATEGORIES=	lang
 MASTER_SITES=	https://bitbucket.org/ktakashi/sagittarius-scheme/downloads/ \
 		LOCAL/ashish
@@ -53,6 +52,6 @@ post-patch-ODBC-off:
 	@${REINPLACE_CMD} -e '/odbc odbc/d' ${WRKSRC}/ext/CMakeLists.txt
 
 post-install:
-	@${LN} -sf ${PREFIX}/bin/sagittarius ${STAGEDIR}${PREFIX}/bin/sash
+	@${LN} -sf sagittarius ${STAGEDIR}${PREFIX}/bin/sash
 
 .include <bsd.port.post.mk>

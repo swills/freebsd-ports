@@ -1,5 +1,5 @@
 # Created by: sumikawa
-# $FreeBSD: head/multimedia/p5-FFmpeg-Command/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/p5-FFmpeg-Command/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	FFmpeg-Command
 PORTVERSION=	0.19
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Wrapper class for ffmpeg command line utility
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-ErrorHandler>=0:devel/p5-Class-ErrorHandler \
 		p5-IPC-Run>=0:devel/p5-IPC-Run
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 RUN_DEPENDS+=	ffmpeg:multimedia/ffmpeg
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Senna/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/textproc/p5-Senna/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Senna
 PORTVERSION=	0.51
@@ -13,8 +13,8 @@ COMMENT=	Perl module for Embeddable Fulltext Search Engine
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	senna-cfg:textproc/senna
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	senna-cfg:textproc/senna
 
 USES=		perl5
 USE_PERL5=	modbuild

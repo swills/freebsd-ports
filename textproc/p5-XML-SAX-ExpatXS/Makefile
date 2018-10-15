@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX-ExpatXS/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/textproc/p5-XML-SAX-ExpatXS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-SAX-ExpatXS
 PORTVERSION=	1.33
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PerlSAX2 XS extension to Expat parser
 
-BUILD_DEPENDS=	p5-XML-SAX>=0:textproc/p5-XML-SAX
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-SAX>=0:textproc/p5-XML-SAX
 LIB_DEPENDS=	libexpat.so:textproc/expat2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

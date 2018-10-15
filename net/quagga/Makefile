@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/quagga/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/net/quagga/Makefile 481704 2018-10-10 09:38:40Z amdmi3 $
 
 PORTNAME=	quagga
 PORTVERSION=	1.2.4
@@ -10,7 +10,8 @@ MASTER_SITES=	SAVANNAH
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Free RIPv1, RIPv2, OSPFv2, BGP4, IS-IS route software
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	gawk:lang/gawk
 

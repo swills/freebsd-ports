@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi <umeno@rr.iij4u.or.jp>
-# $FreeBSD: head/games/gnomekiss/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/games/gnomekiss/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gnomekiss
 PORTVERSION=	2.0
@@ -12,6 +12,9 @@ COMMENT=	GNOME version of Kisekae Set System
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 RUN_DEPENDS=	lha:archivers/lha
 

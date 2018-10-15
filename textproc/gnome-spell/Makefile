@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/textproc/gnome-spell/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/textproc/gnome-spell/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #   $MCom: ports/textproc/gnome-spell/Makefile,v 1.13 2007/10/15 17:17:18 mezz Exp $
 
 PORTNAME=	gnome-spell
@@ -14,6 +14,9 @@ COMMENT=	GNOME/Bonobo component for spell checking
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libaspell.so:textproc/aspell
 

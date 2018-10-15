@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Eval-Closure/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Eval-Closure/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Eval-Closure
 PORTVERSION=	0.14
@@ -13,8 +13,8 @@ COMMENT=	Safely and cleanly create closures via string eval
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Try-Tiny>=0:lang/p5-Try-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Try-Tiny>=0:lang/p5-Try-Tiny
 TEST_DEPENDS=	p5-Devel-LexAlias>=0.05:devel/p5-Devel-LexAlias \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Requires>=0:devel/p5-Test-Requires

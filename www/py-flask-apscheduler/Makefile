@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-flask-apscheduler/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-apscheduler/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	Flask-APScheduler
 PORTVERSION=	1.7.1
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	APScheduler support for Flask
 
 LICENSE=	BSD3CLAUSE

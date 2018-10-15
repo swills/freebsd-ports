@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-sass-rails-rails50/Makefile 454286 2017-11-15 19:57:00Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-sass-rails-rails50/Makefile 482088 2018-10-14 16:32:44Z sunpoet $
 
 PORTNAME=	sass-rails
 PORTVERSION=	5.0.7
@@ -19,8 +19,9 @@ RUN_DEPENDS=	rubygem-railties50>=5.0.0:www/rubygem-railties50 \
 		rubygem-sprockets-rails-rails50>=2.0:devel/rubygem-sprockets-rails-rails50 \
 		rubygem-tilt>=1.1:devel/rubygem-tilt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

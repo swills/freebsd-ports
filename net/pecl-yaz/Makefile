@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/net/pecl-yaz/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/net/pecl-yaz/Makefile 481878 2018-10-12 06:23:47Z antoine $
 
 PORTNAME=	yaz
 PORTVERSION=	1.2.1
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libyaz.so:net/yaz
 
 USES=		php:pecl
 USE_GNOME+=	libxslt
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 73
 
 CONFIGURE_ARGS=	--with-yaz=${LOCALBASE}
 

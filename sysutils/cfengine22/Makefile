@@ -1,5 +1,5 @@
 # Created by: jseger@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine22/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/sysutils/cfengine22/Makefile 481981 2018-10-13 13:33:54Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	2.2.10
@@ -15,7 +15,7 @@ COMMENT=	Systems administration tool for networks
 CPE_VENDOR=	gnu
 
 DEPRECATED=	No longeer supported by cfengine.com
-EXPIRATION_DATE=	2019-03-31
+EXPIRATION_DATE=	2018-12-31
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}
 

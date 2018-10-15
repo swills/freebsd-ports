@@ -1,5 +1,5 @@
 # Created by: raven428 <raven428@gmail.com>
-# $FreeBSD: head/devel/php5-pinba/Makefile 473276 2018-06-24 21:11:14Z sunpoet $
+# $FreeBSD: head/devel/php5-pinba/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	pinba
 PORTVERSION=	2012.03.20
@@ -20,6 +20,6 @@ GH_PROJECT=	pinba_extension
 GH_TAGNAME=	f76b673
 
 USES=		php:ext
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 .include <bsd.port.mk>

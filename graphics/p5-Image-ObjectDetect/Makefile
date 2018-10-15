@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/graphics/p5-Image-ObjectDetect/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/graphics/p5-Image-ObjectDetect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Image-ObjectDetect
 PORTVERSION=	0.12
@@ -14,8 +14,8 @@ COMMENT=	Detects objects from picture using opencv
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/opencv.pc:graphics/opencv
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/opencv.pc:graphics/opencv
 
 USE_PERL5=	configure
 USES=		perl5 pkgconfig

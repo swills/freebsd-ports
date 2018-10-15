@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/www/p5-WWW-Shorten-0rz/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten-0rz/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Shorten-0rz
 PORTVERSION=	0.07
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	Shorten URL using 0rz.net
 
-BUILD_DEPENDS=	p5-WWW-Shorten>=0:www/p5-WWW-Shorten \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Shorten>=0:www/p5-WWW-Shorten \
 		p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5

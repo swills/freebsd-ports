@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-WWW-Pastebin-PastebinCom-Create/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Pastebin-PastebinCom-Create/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Pastebin-PastebinCom-Create
 PORTVERSION=	1.003
@@ -12,9 +12,9 @@ COMMENT=	Paste to http://pastebin.com from Perl
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Moo>=1.004001:devel/p5-Moo \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moo>=1.004001:devel/p5-Moo \
 		p5-WWW-Mechanize>=1.73:www/p5-WWW-Mechanize
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

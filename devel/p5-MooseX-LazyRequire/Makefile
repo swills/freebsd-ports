@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooseX-LazyRequire/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-LazyRequire/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-LazyRequire
 PORTVERSION=	0.11
@@ -12,10 +12,10 @@ COMMENT=	Required attributes which fail only when trying to use them
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0.94:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.94:devel/p5-Moose \
 		p5-aliased>=0.30:devel/p5-aliased \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 USES=		perl5

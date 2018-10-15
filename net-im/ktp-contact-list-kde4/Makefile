@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-contact-list-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/net-im/ktp-contact-list-kde4/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-contact-list
 PORTVERSION=	${KTP_VERSION}
@@ -13,7 +13,7 @@ COMMENT=	KDE instant messaging contact list application
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
 
-LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt4 \
+LIB_DEPENDS=	libtelepathy-qt4.so:net-im/telepathy-qt@qt4 \
 		libtelepathy-logger-qt4.so:net-im/telepathy-logger-qt4 \
 		libktpcommoninternalsprivate.so:net-im/ktp-common-internals-kde4
 

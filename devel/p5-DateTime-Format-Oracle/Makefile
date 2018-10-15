@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-Format-Oracle/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-Oracle/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Format-Oracle
 PORTVERSION=	0.06
@@ -14,10 +14,10 @@ COMMENT=	Parse and format Oracle dates and timestamps
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Convert-NLS_DATE_FORMAT>=0.03:converters/p5-Convert-NLS_DATE_FORMAT \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Convert-NLS_DATE_FORMAT>=0.03:converters/p5-Convert-NLS_DATE_FORMAT \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Format-Builder>=0:devel/p5-DateTime-Format-Builder
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Luka/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Luka/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Luka
 PORTVERSION=	1.08
@@ -15,7 +15,8 @@ COMMENT=	Exception handling and reporting framework
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Std>=0:devel/p5-Class-Std \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Std>=0:devel/p5-Class-Std \
 		p5-Config-IniFiles>=0:devel/p5-Config-IniFiles \
 		p5-Error>=0:lang/p5-Error \
 		p5-Exception-Class>=0:devel/p5-Exception-Class \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-Class-Std>=0:devel/p5-Class-Std \
 		p5-Sub-Uplevel>=0:devel/p5-Sub-Uplevel \
 		p5-Sys-Hostname-Long>=0:sysutils/p5-Sys-Hostname-Long \
 		p5-What>=0:net/p5-What
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USE_PERL5=	configure

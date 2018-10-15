@@ -1,5 +1,5 @@
 # Created by: petef@FreeBSD.org
-# $FreeBSD: head/devel/p5-Curses-Widgets/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Curses-Widgets/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Curses-Widgets
 PORTVERSION=	1.997
@@ -14,8 +14,8 @@ COMMENT=	Curses-based widgets and functions
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	p5-Curses>=0:devel/p5-Curses
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Curses>=0:devel/p5-Curses
 
 USES=		perl5
 USE_PERL5=	configure

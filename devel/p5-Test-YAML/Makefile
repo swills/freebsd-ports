@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-YAML/Makefile 475846 2018-07-29 19:28:18Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-YAML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-YAML
 PORTVERSION=	1.07
@@ -13,9 +13,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	bash:shells/bash \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	bash:shells/bash \
 		p5-Test-Base>=0.89:devel/p5-Test-Base
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 CONFLICTS_INSTALL=	p5-YAML-0.*
 

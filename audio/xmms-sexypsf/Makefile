@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-sexypsf/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/xmms-sexypsf/Makefile 481894 2018-10-12 11:46:32Z antoine $
 
 PORTNAME=	xmms-sexypsf
 PORTVERSION=	0.4.8
@@ -11,6 +11,9 @@ DISTNAME=	sexypsf-${PORTVERSION}
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	XMMS plugin for playing .psf files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 BUILD_DEPENDS=	xmms:multimedia/xmms
 RUN_DEPENDS:=	${BUILD_DEPENDS}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-rails-settings-cached-rails5/Makefile 476129 2018-07-31 23:55:30Z sunpoet $
+# $FreeBSD: head/www/rubygem-rails-settings-cached-rails5/Makefile 482094 2018-10-14 16:33:31Z sunpoet $
 
 PORTNAME=	rails-settings-cached
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
@@ -13,9 +13,9 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-rails5>=0:www/rubygem-rails5
 
-NO_ARCH=	yes
-
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Geo-JSON/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Geo-JSON/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Geo-JSON
 PORTVERSION=	0.007
@@ -13,10 +13,10 @@ COMMENT=	Perl OO interface for geojson
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JSON>=0:converters/p5-JSON \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=0:converters/p5-JSON \
 		p5-Moo>=1.004003:devel/p5-Moo \
 		p5-Type-Tiny>=0:devel/p5-Type-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \
 		p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \

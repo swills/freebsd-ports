@@ -1,5 +1,5 @@
 # Created by: Ivan Voras <ivoras@FreeBSD.org>
-# $FreeBSD: head/databases/php-mdcached/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/php-mdcached/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	mdcached
 PORTVERSION=	1.0.9
@@ -17,7 +17,7 @@ LICENSE=	BSD2CLAUSE
 LIB_DEPENDS=	libmdcached.so:databases/mdcached
 
 USES=		php:ext
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 CONFIGURE_ARGS=	--enable-mdcached
 WRKSRC_SUBDIR=		${PORTNAME}/client_php/${PORTNAME}
 

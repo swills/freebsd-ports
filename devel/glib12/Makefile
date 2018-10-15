@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/devel/glib12/Makefile 456711 2017-12-19 09:00:33Z amdmi3 $
+# $FreeBSD: head/devel/glib12/Makefile 481899 2018-10-12 12:42:22Z antoine $
 
 PORTNAME=	glib
 PORTVERSION=	1.2.10
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	12
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Some useful routines of C programming (previous stable version)
+
+DEPRECATED=	Obsolete
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING

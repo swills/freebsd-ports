@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-self/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-self/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	self
 PORTVERSION=	0.35
@@ -14,11 +14,11 @@ COMMENT=	Provides "self" and "args" keywords in your OO program
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-B-Hooks-Parser>=0.08:devel/p5-B-Hooks-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-B-Hooks-Parser>=0.08:devel/p5-B-Hooks-Parser \
 		p5-B-OPCheck>=0.27:devel/p5-B-OPCheck \
 		p5-Devel-Declare>=0.003004:devel/p5-Devel-Declare \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

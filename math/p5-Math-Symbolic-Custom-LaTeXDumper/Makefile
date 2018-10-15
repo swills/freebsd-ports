@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Symbolic-Custom-LaTeXDumper/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Math-Symbolic-Custom-LaTeXDumper/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Symbolic-Custom-LaTeXDumper
 PORTVERSION=	0.208
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Math::Symbolic LaTeX output
 
-BUILD_DEPENDS=	p5-Math-Symbolic>=0.201:math/p5-Math-Symbolic
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Symbolic>=0.201:math/p5-Math-Symbolic
 
 USES=		perl5
 USE_PERL5=	configure

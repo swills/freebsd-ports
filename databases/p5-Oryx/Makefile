@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/databases/p5-Oryx/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Oryx/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Oryx
 PORTVERSION=	0.24
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Meta-Model Driven Object Persistance with Multiple Inheritance
 
-BUILD_DEPENDS=	p5-SQL-Abstract>=0:databases/p5-SQL-Abstract \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-SQL-Abstract>=0:databases/p5-SQL-Abstract \
 		p5-DBM-Deep>=0:databases/p5-DBM-Deep \
 		p5-YAML>=0:textproc/p5-YAML \
 		p5-Class-Date>=0:devel/p5-Class-Date \
@@ -19,7 +20,6 @@ BUILD_DEPENDS=	p5-SQL-Abstract>=0:databases/p5-SQL-Abstract \
 		p5-Ima-DBI>=0:databases/p5-Ima-DBI \
 		p5-Data-Types>=0:devel/p5-Data-Types \
 		p5-Class-Observable>=0:devel/p5-Class-Observable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-XML-DOM-Lite>0:textproc/p5-XML-DOM-Lite \
 		p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 

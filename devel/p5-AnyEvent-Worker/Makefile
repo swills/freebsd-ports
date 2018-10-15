@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/devel/p5-AnyEvent-Worker/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-AnyEvent-Worker/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	AnyEvent-Worker
 PORTVERSION=	0.06
@@ -14,12 +14,12 @@ COMMENT=	Manage blocking task in external process
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-AnyEvent>=5:devel/p5-AnyEvent \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent>=5:devel/p5-AnyEvent \
 		p5-common-sense>=2:devel/p5-common-sense \
 		p5-Test-NoWarnings>=1.03:devel/p5-Test-NoWarnings \
 		p5-Test-TCP>=0.14:devel/p5-Test-TCP \
 		p5-lib-abs>=0.90:devel/p5-lib-abs
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

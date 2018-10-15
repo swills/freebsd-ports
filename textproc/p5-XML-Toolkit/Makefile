@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Toolkit/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Toolkit/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Toolkit
 PORTVERSION=	0.15
@@ -15,7 +15,8 @@ COMMENT=	Suit of XML tools with Antlers
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Bread-Board>=0:devel/p5-Bread-Board \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Bread-Board>=0:devel/p5-Bread-Board \
 		p5-Devel-PackagePath>=0.01:devel/p5-Devel-PackagePath \
 		p5-Moose>=0.92:devel/p5-Moose \
 		p5-MooseX-Aliases>=0:devel/p5-MooseX-Aliases \
@@ -30,7 +31,6 @@ BUILD_DEPENDS=	p5-Bread-Board>=0:devel/p5-Bread-Board \
 		p5-XML-SAX-Writer>=0:textproc/p5-XML-SAX-Writer \
 		p5-aliased>=0:devel/p5-aliased \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-XML>=0:devel/p5-Test-XML

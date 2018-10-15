@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/qt5-xml/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/qt5-xml/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	xml
 DISTVERSION=	${QT5_VERSION}
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt SAX and DOM implementations
 
-USES=		qmake:no_env qt-dist:5,base
+USES=		compiler:c++11-lang qmake:no_env qt-dist:5,base
 USE_QT=		core qmake_build buildtools_build
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-no-gui -no-xcb

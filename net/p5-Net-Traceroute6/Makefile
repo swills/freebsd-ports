@@ -1,5 +1,5 @@
 # Created by: petef
-# $FreeBSD: head/net/p5-Net-Traceroute6/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Traceroute6/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Traceroute6
 PORTVERSION=	0.03
@@ -13,8 +13,8 @@ COMMENT=	Perl module to parse traceroute6(8) output
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	p5-Socket6>=0:net/p5-Socket6
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Socket6>=0:net/p5-Socket6
 
 USES=		perl5
 USE_PERL5=	configure

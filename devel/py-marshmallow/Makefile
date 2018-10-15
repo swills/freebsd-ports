@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-marshmallow/Makefile 463833 2018-03-07 21:34:03Z feld $
+# $FreeBSD: head/devel/py-marshmallow/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	marshmallow
 DISTVERSION=	3.0.0b7
@@ -8,7 +8,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simplified object serialization for Python
 
 LICENSE=	MIT

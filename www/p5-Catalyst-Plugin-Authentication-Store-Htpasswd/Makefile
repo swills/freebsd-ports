@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Authentication-Store-Htpasswd/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Authentication-Store-Htpasswd/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Authentication-Store-Htpasswd
 PORTVERSION=	0.020
@@ -15,9 +15,9 @@ COMMENT=	Use .htpasswd with Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.01:www/p5-Catalyst-Plugin-Authentication \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.01:www/p5-Catalyst-Plugin-Authentication \
 		p5-Authen-Htpasswd>=0.13:security/p5-Authen-Htpasswd
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

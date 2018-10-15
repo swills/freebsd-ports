@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-TraitFor-Request-BrowserDetect/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-TraitFor-Request-BrowserDetect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-TraitFor-Request-BrowserDetect
 PORTVERSION=	0.02
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Browser detection for Catalyst::Requests
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-CatalystX-RoleApplicator>=0:www/p5-CatalystX-RoleApplicator \
 		p5-HTTP-BrowserDetect>=0:www/p5-HTTP-BrowserDetect
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/www/p5-WWW-TWSMS/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-TWSMS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-TWSMS
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	Perl interface for sending sms by TWSMS
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 USES=		perl5
 USE_PERL5=	configure

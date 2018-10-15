@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/pecl-weakref/Makefile 462972 2018-02-25 18:05:51Z joneum $
+# $FreeBSD: head/devel/pecl-weakref/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	weakref
 PORTVERSION=	0.2.6
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 PORTSCOUT=	limit:^0\.2\.[0-9]*
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 CFLAGS+=	-I${LOCALBASE}/include
 

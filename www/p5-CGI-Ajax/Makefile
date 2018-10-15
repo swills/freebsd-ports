@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-Ajax/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-CGI-Ajax/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Ajax
 PORTVERSION=	0.707
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module for writing AJAX/DHTML-based web apps
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor
 
 USES=		perl5
 USE_PERL5=	configure

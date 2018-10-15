@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/py-django-bulk-update/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-bulk-update/Makefile 481636 2018-10-09 14:27:40Z rene $
 
 PORTNAME=	django-bulk-update
 PORTVERSION=	2.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,8 +14,12 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.11:www/py-django@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python:-3.4
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
+
+post-extract:
+	${RM} ${WRKSRC}/tests/__init__.py # prevent conflict with devel/py-phply in textproc/pootle
 
 .include <bsd.port.mk>

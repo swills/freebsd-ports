@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/py-tremc/Makefile 479878 2018-09-16 08:03:36Z tcberner $
+# $FreeBSD: head/net-p2p/py-tremc/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	tremc
 DISTVERSION=	0.9.1-11
@@ -6,7 +6,7 @@ DISTVERSIONSUFFIX=	-g54a873f
 CATEGORIES=	net-p2p python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Console client for the BitTorrent client Transmission
 
 LICENSE=	GPLv3

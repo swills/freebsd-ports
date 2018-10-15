@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/spectacle/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/spectacle/Makefile 481851 2018-10-11 20:23:50Z tcberner $
 
 PORTNAME=	spectacle
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -17,7 +17,7 @@ USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		libkipi newstuff notifications package service widgetsaddons \
 		windowsystem xmlgui
 USE_QT=		core concurrent dbus gui network printsupport qml quick \
-		widgets x11extras xml \
+		quickcontrols widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	x11 xcb xext xfixes
 

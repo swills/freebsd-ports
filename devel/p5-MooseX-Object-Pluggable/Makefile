@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <wahjava@gmail.com>
-# $FreeBSD: head/devel/p5-MooseX-Object-Pluggable/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Object-Pluggable/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Object-Pluggable
 PORTVERSION=	0.0014
@@ -15,12 +15,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny \
 		p5-Module-Pluggable>=0:devel/p5-Module-Pluggable \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 USES=		perl5

@@ -1,7 +1,8 @@
-# $FreeBSD: head/dns/powerdns/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/dns/powerdns/Makefile 481285 2018-10-05 16:42:24Z fernape $
 
 PORTNAME=	powerdns
 DISTVERSION=	4.1.4
+PORTREVISION=	1
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://downloads.powerdns.com/releases/
 DISTNAME=	pdns-${DISTVERSION}

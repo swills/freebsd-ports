@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/www/p5-Data-TreeDumper-Renderer-DHTML/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Data-TreeDumper-Renderer-DHTML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-TreeDumper-Renderer-DHTML
 PORTVERSION=	0.09
@@ -14,8 +14,8 @@ COMMENT=	DHTML renderer for Data::TreeDumper
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-TreeDumper>=0:devel/p5-Data-TreeDumper
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-TreeDumper>=0:devel/p5-Data-TreeDumper
 
 USES=		perl5
 USE_PERL5=	configure

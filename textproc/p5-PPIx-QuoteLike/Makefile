@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-PPIx-QuoteLike/Makefile 475722 2018-07-29 19:14:36Z sunpoet $
+# $FreeBSD: head/textproc/p5-PPIx-QuoteLike/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PPIx-QuoteLike
 PORTVERSION=	0.006
@@ -14,8 +14,8 @@ COMMENT=	Parse Perl string literals and string-literal-like things
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PPI>=1.117:textproc/p5-PPI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PPI>=1.117:textproc/p5-PPI
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 

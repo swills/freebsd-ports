@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test2-Harness/Makefile 478032 2018-08-25 13:49:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Test2-Harness/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test2-Harness
 PORTVERSION=	0.001069
@@ -15,14 +15,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Data-UUID>=1.148:devel/p5-Data-UUID \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-UUID>=1.148:devel/p5-Data-UUID \
 		p5-Importer>=0.024:devel/p5-Importer \
 		p5-Module-Pluggable>=0:devel/p5-Module-Pluggable \
 		p5-Term-Table>=0.011:devel/p5-Term-Table \
 		p5-Test-Simple>=1.302133:devel/p5-Test-Simple \
 		p5-Test2-Suite>=0.000105:devel/p5-Test2-Suite \
 		p5-goto-file>=0.005:devel/p5-goto-file
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

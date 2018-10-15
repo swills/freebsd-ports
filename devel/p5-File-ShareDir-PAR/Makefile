@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-File-ShareDir-PAR/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-ShareDir-PAR/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-ShareDir-PAR
 PORTVERSION=	0.06
@@ -14,11 +14,11 @@ COMMENT=	Perl5 File::ShareDir module with PAR support
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Inspector>=0:devel/p5-Class-Inspector \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Inspector>=0:devel/p5-Class-Inspector \
 		p5-File-ShareDir>=0:devel/p5-File-ShareDir \
 		p5-PAR>=0:devel/p5-PAR \
 		p5-Params-Util>=0:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

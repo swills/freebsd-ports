@@ -1,5 +1,5 @@
-# Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/x11-themes/qt5-style-plugins/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# Created by: Marie Loise Nolden <loise@kde.org>
+# $FreeBSD: head/x11-themes/qt5-style-plugins/Makefile 482048 2018-10-14 16:04:46Z adridg $
 
 PORTNAME=	qt5-style-plugins
 PORTVERSION=	5.0.0

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-WWW-Shorten/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Shorten
 PORTVERSION=	3.093
@@ -13,9 +13,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-libwww>=5.835:www/p5-libwww \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=5.835:www/p5-libwww \
 		p5-Try-Tiny>=0.24:lang/p5-Try-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

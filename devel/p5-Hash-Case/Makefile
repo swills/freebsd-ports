@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin
-# $FreeBSD: head/devel/p5-Hash-Case/Makefile 463573 2018-03-04 16:11:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Hash-Case/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Hash-Case
 PORTVERSION=	1.030
@@ -15,8 +15,8 @@ COMMENT=	Base class for hashes with key-casing requirements
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Log-Report>=0.26:devel/p5-Log-Report
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Report>=0.26:devel/p5-Log-Report
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Test-Unit/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-Unit/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Unit
 PORTVERSION=	0.25
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PerlUnit testing framework
 
-BUILD_DEPENDS=	p5-Class-Inner>=0:devel/p5-Class-Inner \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Inner>=0:devel/p5-Class-Inner \
 		p5-Devel-Symdump>=0:devel/p5-Devel-Symdump \
 		p5-Error>=0:lang/p5-Error
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	TestLister.pl

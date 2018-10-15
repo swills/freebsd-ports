@@ -1,5 +1,5 @@
 # Created by: Andrea Venturoli <freebsd@netfence.it>
-# $FreeBSD: head/mail/p5-Mail-Field-Received/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Mail-Field-Received/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Field-Received
 PORTVERSION=	0.26
@@ -14,8 +14,8 @@ COMMENT=	Perl5 modules for parsing of `Received' headers in e-mails
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Mail-Tools>0:mail/p5-Mail-Tools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mail-Tools>0:mail/p5-Mail-Tools
 
 TEST_DEPENDS=	p5-Test-Differences>0:devel/p5-Test-Differences
 

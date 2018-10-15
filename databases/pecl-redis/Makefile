@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pecl-redis/Makefile 475660 2018-07-29 13:20:13Z joneum $
+# $FreeBSD: head/databases/pecl-redis/Makefile 481838 2018-10-11 15:41:23Z joneum $
 
 PORTNAME=	redis
-PORTVERSION=	4.1.0
+PORTVERSION=	4.1.1
 CATEGORIES=	databases
 
 MAINTAINER=	daniel@blodan.se

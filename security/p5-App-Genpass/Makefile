@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/p5-App-Genpass/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-App-Genpass/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	App-Genpass
 PORTVERSION=	2.401
@@ -15,14 +15,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Config-Any>=0:devel/p5-Config-Any \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-Any>=0:devel/p5-Config-Any \
 		p5-File-HomeDir>=0:devel/p5-File-HomeDir \
 		p5-List-AllUtils>=0:devel/p5-List-AllUtils \
 		p5-Math-Random-Secure>=0.06:math/p5-Math-Random-Secure \
 		p5-Moo>=0:devel/p5-Moo \
 		p5-MooX-Types-MooseLike>=0:devel/p5-MooX-Types-MooseLike \
 		p5-namespace-clean>=0.20:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Test-Deep>=0:devel/p5-Test-Deep
 

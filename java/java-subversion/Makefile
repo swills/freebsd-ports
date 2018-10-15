@@ -1,5 +1,5 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/java/java-subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
+# $FreeBSD: head/java/java-subversion/Makefile 481744 2018-10-10 15:39:51Z lev $
 
 PKGNAMEPREFIX=	java-
 CATEGORIES=	java
@@ -16,7 +16,7 @@ JAVA_BUILD=	yes
 JAVA_RUN=	yes
 
 
-PORTREVISION_110=	1
+PORTREVISION_110=	0
 PORTREVISION_19=	0
 
 SVN_BUILD_BINDINGS=	yes

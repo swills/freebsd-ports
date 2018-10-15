@@ -1,9 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt-glib/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/libvirt-glib/Makefile 481988 2018-10-13 14:27:44Z novel $
 
 PORTNAME=	libvirt-glib
-PORTVERSION=	1.0.0
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	devel
 MASTER_SITES=	ftp://libvirt.org/libvirt/glib/
 

@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/sysutils/gcombust/Makefile 431725 2017-01-17 09:03:56Z amdmi3 $
+# $FreeBSD: head/sysutils/gcombust/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gcombust
 PORTVERSION=	0.1.55
@@ -10,6 +10,9 @@ MASTER_SITES=	http://mirror.symnds.com/software/misc/ \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK+ frontend for mkisofs and cdrecord
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

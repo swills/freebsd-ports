@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/dns/p5-Net-DNS-TestNS/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-Net-DNS-TestNS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-DNS-TestNS
 PORTVERSION=	1.10
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl extension for simulating simple Nameservers
 
-BUILD_DEPENDS=	p5-Net-DNS>=0.64:dns/p5-Net-DNS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0.64:dns/p5-Net-DNS \
 		p5-XML-LibXML>=1.53:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

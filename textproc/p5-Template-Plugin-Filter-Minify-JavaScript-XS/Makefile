@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Template-Plugin-Filter-Minify-JavaScript-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Template-Plugin-Filter-Minify-JavaScript-XS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-Filter-Minify-JavaScript-XS
 PORTVERSION=	0.94
@@ -14,9 +14,9 @@ COMMENT=	JavaScript::Minifier::XS filter for Template Toolkit
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JavaScript-Minifier-XS>=0:textproc/p5-JavaScript-Minifier-XS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JavaScript-Minifier-XS>=0:textproc/p5-JavaScript-Minifier-XS \
 		p5-Template-Toolkit>=2:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/net-mgmt/nfsen/Makefile 432875 2017-01-30 21:40:17Z feld $
+# $FreeBSD: head/net-mgmt/nfsen/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	nfsen
 PORTVERSION=	1.3.8
@@ -8,7 +8,7 @@ CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/${PORTNAME}/stable/${PORTNAME}-${PORTVERSION} \
 		http://nfsen.sourceforge.net/
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web based frontend to nfdump netflow collector
 
 LICENSE=	BSD3CLAUSE

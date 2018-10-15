@@ -1,9 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/net/mosquitto/Makefile 466690 2018-04-06 20:50:15Z yuri $
+# $FreeBSD: head/net/mosquitto/Makefile 481153 2018-10-03 09:54:40Z lwhsu $
 
 PORTNAME=	mosquitto
-PORTVERSION=	1.4.14
-PORTREVISION=	2
+PORTVERSION=	1.5.3
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
 
@@ -25,6 +24,8 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION}
 USERS=		nobody
 
 OPTIONS_DEFINE=	WS
+
+CMAKE_ARGS+=	-DCMAKE_LIBDATADIR="${PREFIX}/libdata"
 
 WS_DESC=	MQTT over Websockets support
 WS_LIB_DEPENDS=	libwebsockets.so:net/libwebsockets

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-POE-Component-DBIAgent/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-POE-Component-DBIAgent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-DBIAgent
 PORTVERSION=	0.26
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE Component for running asynchronous DBI calls
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-Class-MethodMaker>=0:devel/p5-Class-MethodMaker \
 		p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

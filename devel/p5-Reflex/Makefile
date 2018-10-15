@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/devel/p5-Reflex/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Reflex/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Reflex
 PORTVERSION=	0.100
@@ -15,10 +15,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=2.0203:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=2.0203:devel/p5-Moose \
 		p5-MooseX-Role-Parameterized>=0.23:devel/p5-MooseX-Role-Parameterized \
 		p5-POE>=1.294:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5 shebangfix

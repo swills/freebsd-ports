@@ -1,9 +1,9 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/qmailadmin/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/mail/qmailadmin/Makefile 481799 2018-10-11 09:27:37Z tobik $
 
 PORTNAME=	qmailadmin
 PORTVERSION=	1.2.15
-PORTREVISION=	7
+PORTREVISION=	8
 PORTEPOCH=	2
 CATEGORIES=	mail www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-stable/${PORTVERSION} \
@@ -86,7 +86,7 @@ CONFIGURE_ARGS+=	--enable-spam-command="${SPAM_COMMAND}"
 .if ${PORT_OPTIONS:MCRACKLIB}
 EXTRA_PATCHES+=		${FILESDIR}/cracklib.patch
 BUILD_DEPENDS+=		${LOCALBASE}/include/crack.h:security/cracklib
-CONFIGURE_ARGS+=	--enable-cracklib=${LOCALBASE}/libdata/cracklib/pw_dict
+CONFIGURE_ARGS+=	--enable-cracklib=${LOCALBASE}/libdata/cracklib/cracklib-words
 CFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib -lcrack
 .endif

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind9-devel/Makefile 480560 2018-09-24 09:31:05Z mat $
+# $FreeBSD: head/dns/bind9-devel/Makefile 481532 2018-10-08 10:15:35Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -40,13 +40,13 @@ LIB_DEPENDS=	libxml2.so:textproc/libxml2
 # XXX: remove tar:bz2
 USES=	cpe libedit ssl tar:bz2
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.13.1a0.2018.09.20
+ISCVERSION=	9.13.1a0.2018.10.05
 # XXX: Remove gitlab
 USE_GITLAB=	yes
 GL_SITE=	https://gitlab.isc.org
 GL_ACCOUNT=	isc-projects
 GL_PROJECT=	bind9
-GL_COMMIT=	eb74f2ee683e1ab344ebab8c4ddce902ec935be6
+GL_COMMIT=	e8f66bcfa36b89586319372a7fe626fbf4e49a03
 
 CPE_VENDOR=	isc
 CPE_VERSION=	${ISCVERSION:C/-.*//}

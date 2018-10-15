@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-scrypt/Makefile 475848 2018-07-29 19:28:29Z sunpoet $
+# $FreeBSD: head/security/rubygem-scrypt/Makefile 481358 2018-10-06 09:36:50Z sunpoet $
 
 PORTNAME=	scrypt
-PORTVERSION=	3.0.5
+PORTVERSION=	3.0.6
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	rubygem-ffi-compiler>=1.0:devel/rubygem-ffi-compiler
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

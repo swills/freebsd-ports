@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/mail/p5-Mail-Box/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/mail/p5-Mail-Box/Makefile 481748 2018-10-10 18:55:41Z sunpoet $
 
 PORTNAME=	Mail-Box
 PORTVERSION=	2.109
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MARKOV
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl module implementing a modern mail folder management
 
 COMMON_DEPENDS=	\

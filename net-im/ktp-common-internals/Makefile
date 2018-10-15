@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-common-internals/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/ktp-common-internals/Makefile 481446 2018-10-07 13:43:14Z tcberner $
 
 PORTNAME=	ktp-common-internals
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KDE Telepathy internal library
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libsignon-qt5.so:sysutils/signon-qt5 \
-		libtelepathy-qt5.so:net-im/telepathy-qt5 \
+		libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
 		libtelepathy-logger-qt.so:net-im/telepathy-logger-qt5 \
 		libotr.so:security/libotr \
 		libaccounts-qt5.so:net-im/libaccounts-qt5 \

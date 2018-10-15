@@ -1,5 +1,5 @@
 # Created by: Bill Brinzer <bill.brinzer@gmail.com>
-# $FreeBSD: head/devel/p5-autobox/Makefile 427322 2016-11-28 14:21:56Z mat $
+# $FreeBSD: head/devel/p5-autobox/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	autobox
 PORTVERSION=	2.84
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bill.brinzer@gmail.com
 COMMENT=	Call methods on native Perl types
 
-BUILD_DEPENDS=	p5-Scope-Guard>=0.20:devel/p5-Scope-Guard
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Scope-Guard>=0.20:devel/p5-Scope-Guard
 
 USES=		perl5
 USE_PERL5=	configure

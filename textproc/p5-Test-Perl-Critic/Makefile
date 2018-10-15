@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/p5-Test-Perl-Critic/Makefile 465739 2018-03-27 18:55:50Z sunpoet $
+# $FreeBSD: head/textproc/p5-Test-Perl-Critic/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Perl-Critic
 PORTVERSION=	1.04
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-MCE>=1.827:devel/p5-MCE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MCE>=1.827:devel/p5-MCE \
 		p5-Perl-Critic>=0:textproc/p5-Perl-Critic
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@FreeBSD.org>
-# $FreeBSD: head/games/mkgichessclub/Makefile 477060 2018-08-13 09:25:01Z tz $
+# $FreeBSD: head/games/mkgichessclub/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	mkgichessclub
 PORTVERSION=	2.2.0
@@ -11,7 +11,7 @@ DISTNAME=	MKGIChessClub-${PORTVERSION}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Chess playing server with a pure web interface
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 OPTIONS_DEFINE=	GNUCHESS PHALANX DOCS
 GNUCHESS_DESC=	Install gnuchess robot

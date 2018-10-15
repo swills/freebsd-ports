@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Symbolic-Custom-Pattern/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Math-Symbolic-Custom-Pattern/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-Symbolic-Custom-Pattern
 PORTVERSION=	2.01
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pattern matching on Math::Symbolic trees
 
-BUILD_DEPENDS=	p5-Math-Symbolic>=0.510:math/p5-Math-Symbolic \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-Symbolic>=0.510:math/p5-Math-Symbolic \
 		p5-Clone>=0:devel/p5-Clone
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=1.0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=1.0:devel/p5-Test-Pod-Coverage
 

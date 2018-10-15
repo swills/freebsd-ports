@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php56/Makefile 480602 2018-09-24 12:01:39Z ale $
+# $FreeBSD: head/lang/php56/Makefile 481525 2018-10-08 08:52:51Z tz $
 
 PORTNAME=	php56
 PORTVERSION=	5.6.38
@@ -52,7 +52,7 @@ MAILHEAD_DESC=	Enable mail header patch
 LINKTHR_DESC=	Link thread lib (for threaded extensions)
 ZTS_DESC=	Force Zend Thread Safety (ZTS) build
 
-CONFLICTS=	php55-5* php70-*
+CONFLICTS=	php55-5* php70-* php71-* php72-* php73-*
 
 DESTDIRNAME=	INSTALL_ROOT
 

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net-im/p5-DJabberd/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/p5-DJabberd/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DJabberd
 PORTVERSION=	0.85
@@ -12,7 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Scalable, extensible Jabber/XMPP server framework
 
-BUILD_DEPENDS=	p5-Danga-Socket>=0:devel/p5-Danga-Socket \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Danga-Socket>=0:devel/p5-Danga-Socket \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-Net-DNS>=0:dns/p5-Net-DNS \
@@ -20,7 +21,6 @@ BUILD_DEPENDS=	p5-Danga-Socket>=0:devel/p5-Danga-Socket \
 		p5-Log-Log4perl>=0:devel/p5-Log-Log4perl \
 		p5-Digest-HMAC>=0:security/p5-Digest-HMAC \
 		p5-Unicode-Stringprep>=0:converters/p5-Unicode-Stringprep
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
 
 PORTSCOUT=	limit:^[0-9\.]*$$

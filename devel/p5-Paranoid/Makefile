@@ -1,5 +1,5 @@
 # Created by: jupengfei <jupengfei@gmail.com>
-# $FreeBSD: head/devel/p5-Paranoid/Makefile 477956 2018-08-24 11:17:05Z culot $
+# $FreeBSD: head/devel/p5-Paranoid/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Paranoid
 PORTVERSION=	2.06
@@ -13,8 +13,8 @@ COMMENT=	Paranoia support for safer programs
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Socket6>=0.23:net/p5-Socket6
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Socket6>=0.23:net/p5-Socket6
 
 NO_ARCH=	yes
 USES=		perl5

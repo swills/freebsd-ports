@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-IO-Digest/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-IO-Digest/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	IO-Digest
 PORTVERSION=	0.11
@@ -14,8 +14,8 @@ COMMENT=	Calculate digests while reading or writing
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PerlIO-via-dynamic>=0:devel/p5-PerlIO-via-dynamic
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PerlIO-via-dynamic>=0:devel/p5-PerlIO-via-dynamic
 
 USE_PERL5=	configure
 USES=		perl5

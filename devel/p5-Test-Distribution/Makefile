@@ -1,5 +1,5 @@
 # Created by: Felippe de Meirelles Motta <lippemail@gmail.com>
-# $FreeBSD: head/devel/p5-Test-Distribution/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-Distribution/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Distribution
 PORTVERSION=	2.00
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Test::Distribution - Perform tests on all modules of a distribution
 
-BUILD_DEPENDS+=	p5-File-Find-Rule>=0:devel/p5-File-Find-Rule \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Find-Rule>=0:devel/p5-File-Find-Rule \
 		p5-Pod-Coverage>=0:devel/p5-Pod-Coverage \
 		p5-Test-Pod>=0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

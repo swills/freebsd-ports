@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/gx/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/gx/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gx
 PORTVERSION=	0.4.0
@@ -12,6 +12,9 @@ COMMENT=	Lightweight image viewer
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libgnomevfsmm-2.6.so:devel/gnome-vfsmm
 

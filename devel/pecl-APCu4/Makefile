@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu4/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/pecl-APCu4/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	APCu
 PORTVERSION=	4.0.11
@@ -16,7 +16,7 @@ CONFLICTS_INSTALL=	pecl-APC
 
 PORTSCOUT=	limit:^4\.
 
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 USES=		localbase php:pecl
 PHP_MODNAME=	${PORTNAME:tl}
 

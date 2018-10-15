@@ -1,5 +1,5 @@
 # Created by: Max Baryshnikov <mephius@gmail.com>
-# $FreeBSD: head/www/pecl-sphinx/Makefile 469119 2018-05-05 14:58:18Z danfe $
+# $FreeBSD: head/www/pecl-sphinx/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	sphinx
 DISTVERSION=	1.3.3
@@ -11,7 +11,7 @@ COMMENT=	Sphinx search engine php client
 
 LICENSE=	PHP301
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 LIB_DEPENDS=	libsphinxclient.so:textproc/libsphinxclient
 

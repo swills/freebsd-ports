@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/p5-Nagios-Object/Makefile 444068 2017-06-21 18:53:35Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-Nagios-Object/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Nagios-Object
 PORTVERSION=	0.21.18
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Perl objects to represent Nagios configuration
 
-BUILD_DEPENDS=	p5-Test-Exception>=0.31:devel/p5-Test-Exception \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-Exception>=0.31:devel/p5-Test-Exception \
 		p5-Module-Build>=0.3607:devel/p5-Module-Build \
 		p5-List-Compare>=0.37:misc/p5-List-Compare \
 		p5-Test-NoWarnings>=1.01:devel/p5-Test-NoWarnings
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

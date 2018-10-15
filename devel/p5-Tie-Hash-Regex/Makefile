@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Tie-Hash-Regex/Makefile 463246 2018-02-28 15:53:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Tie-Hash-Regex/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tie-Hash-Regex
 PORTVERSION=	1.12
@@ -13,8 +13,8 @@ COMMENT=	Match hash keys using Regular Expressions
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Attribute-Handlers>=0:devel/p5-Attribute-Handlers
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Attribute-Handlers>=0:devel/p5-Attribute-Handlers
 
 NO_ARCH=	yes
 USES=		perl5

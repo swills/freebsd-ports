@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-Todoist/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Todoist/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Todoist
 PORTVERSION=	0.06
@@ -14,9 +14,9 @@ COMMENT=	Todoist API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JSON-XS>=0:converters/p5-JSON-XS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON-XS>=0:converters/p5-JSON-XS \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

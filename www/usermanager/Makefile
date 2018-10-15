@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@FreeBSD.org>
-# $FreeBSD: head/www/usermanager/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/usermanager/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	UserManager
 PORTVERSION=	2.1
@@ -10,7 +10,7 @@ DISTNAME=	ftp_v${PORTVERSION}
 MAINTAINER=	danger@FreeBSD.org
 COMMENT=	Easily create, change, or delete virtual PureFTPd users
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 WRKSRC=		${WRKDIR}/ftp
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/xmms-flac/Makefile 431427 2017-01-13 21:41:25Z naddy $
+# $FreeBSD: head/audio/xmms-flac/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmms-flac
 PORTVERSION=	1.3.2
@@ -8,6 +8,9 @@ DISTNAME=	flac-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XMMS input plugin for playing FLAC files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING.GPL

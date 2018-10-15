@@ -1,5 +1,5 @@
 # Created by: Andrej Zverev <andrey.zverev@electro-com.ru>
-# $FreeBSD: head/www/p5-Catalyst-Controller-HTML-FormFu/Makefile 468023 2018-04-22 12:50:29Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Controller-HTML-FormFu/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Controller-HTML-FormFu
 PORTVERSION=	2.04
@@ -15,7 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Catalyst-Component-InstancePerContext>=0:www/p5-Catalyst-Component-InstancePerContext \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Component-InstancePerContext>=0:www/p5-Catalyst-Component-InstancePerContext \
 		p5-Catalyst-Runtime>=5.71001:www/p5-Catalyst-Runtime \
 		p5-Config-Any>=0:devel/p5-Config-Any \
 		p5-HTML-FormFu>=2.06:www/p5-HTML-FormFu \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-Catalyst-Component-InstancePerContext>=0:www/p5-Catalyst-Compo
 		p5-Regexp-Assemble>=0:devel/p5-Regexp-Assemble \
 		p5-Task-Weaken>=0:devel/p5-Task-Weaken \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Catalyst-Action-RenderView>=0:www/p5-Catalyst-Action-RenderView \
 		p5-Catalyst-Plugin-Session>=0:www/p5-Catalyst-Plugin-Session \
 		p5-Catalyst-Plugin-Session-State-Cookie>=0:www/p5-Catalyst-Plugin-Session-State-Cookie \

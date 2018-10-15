@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize-GZip/Makefile 477271 2018-08-15 19:33:52Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Mechanize-GZip/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Mechanize-GZip
 PORTVERSION=	0.14
@@ -13,8 +13,8 @@ COMMENT=	Use WWW::Mechanize by requesting gzip-compression from the webserver
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize
 
 USES=		perl5
 USE_PERL5=	configure

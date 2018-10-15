@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-SimpleLinkExtor/Makefile 473270 2018-06-24 20:21:06Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-SimpleLinkExtor/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-SimpleLinkExtor
 PORTVERSION=	1.271
@@ -13,10 +13,10 @@ COMMENT=	This is a simple HTML link extractor
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTML-Parser>=1.28:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=1.28:www/p5-HTML-Parser \
 		p5-URI>=1.09:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Output>=0:devel/p5-Test-Output
 
 NO_ARCH=	yes

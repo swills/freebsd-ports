@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/cbrpager/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/graphics/cbrpager/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	cbrpager
 PORTVERSION=	0.9.22
@@ -15,6 +15,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Viewer for cbr (comic book archive) files
 
 LICENSE=	GPLv3
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		pkgconfig
 GNU_CONFIGURE=	yes

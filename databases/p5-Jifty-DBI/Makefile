@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Jifty-DBI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Jifty-DBI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Jifty-DBI
 PORTVERSION=	0.78
@@ -13,7 +13,8 @@ COMMENT=	Jifty::DBI - An object-relational persistence framework
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
 		p5-Cache-Simple-TimedExpiry>=0.21:devel/p5-Cache-Simple-TimedExpiry \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
@@ -37,7 +38,6 @@ BUILD_DEPENDS=	p5-Cache-Memcached>=0:databases/p5-Cache-Memcached \
 		p5-UNIVERSAL-require>=0.11:devel/p5-UNIVERSAL-require \
 		p5-URI>=0:net/p5-URI \
 		p5-YAML-Syck>=0:textproc/p5-YAML-Syck
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Warn>=0.1:devel/p5-Test-Warn
 
 NO_ARCH=	yes

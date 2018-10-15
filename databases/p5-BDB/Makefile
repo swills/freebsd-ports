@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-BDB/Makefile 459439 2018-01-19 17:02:16Z sunpoet $
+# $FreeBSD: head/databases/p5-BDB/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	BDB
 PORTVERSION=	1.92
@@ -14,8 +14,8 @@ COMMENT=	Asynchronous Berkeley DB access
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-common-sense>=0:devel/p5-common-sense
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-common-sense>=0:devel/p5-common-sense
 
 PORTSCOUT=	skipv:1.801
 

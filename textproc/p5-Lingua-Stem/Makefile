@@ -1,5 +1,5 @@
 # Created by: Thorsten Greiner <thorsten.greiner@web.de>
-# $FreeBSD: head/textproc/p5-Lingua-Stem/Makefile 473225 2018-06-24 20:16:30Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-Stem/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Lingua-Stem
 PORTVERSION=	0.84
@@ -14,7 +14,8 @@ COMMENT=	Provides word stemming algorithms localized by language
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Lingua-PT-Stemmer>=0:textproc/p5-Lingua-PT-Stemmer \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-PT-Stemmer>=0:textproc/p5-Lingua-PT-Stemmer \
 		p5-Lingua-Stem-Fr>=0:textproc/p5-Lingua-Stem-Fr \
 		p5-Lingua-Stem-It>=0:textproc/p5-Lingua-Stem-It \
 		p5-Lingua-Stem-Ru>=0:textproc/p5-Lingua-Stem-Ru \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-Lingua-PT-Stemmer>=0:textproc/p5-Lingua-PT-Stemmer \
 		p5-Lingua-Stem-Snowball-No>=0:textproc/p5-Lingua-Stem-Snowball-No \
 		p5-Lingua-Stem-Snowball-Se>=0:textproc/p5-Lingua-Stem-Snowball-Se \
 		p5-Text-German>=0:textproc/p5-Text-German
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

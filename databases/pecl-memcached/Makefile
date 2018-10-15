@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/pecl-memcached/Makefile 454783 2017-11-23 19:09:00Z sunpoet $
+# $FreeBSD: head/databases/pecl-memcached/Makefile 482055 2018-10-14 16:28:10Z sunpoet $
 
 PORTNAME=	memcached
 PORTVERSION=	3.0.4
@@ -18,10 +18,11 @@ OPTIONS_DEFINE=	IGBINARY SASL
 OPTIONS_DEFAULT=SASL
 IGBINARY_DESC=	Binary serializer support
 
+USES=		php:pecl pkgconfig
+USE_PHP=	json:build session:build
+
 CONFIGURE_ARGS=	--with-libmemcached-dir=${LOCALBASE}
 IGNORE_WITH_PHP=56
-USE_PHP=	json:build session:build
-USES=		php:pecl pkgconfig
 
 IGBINARY_CONFIGURE_ENABLE=	memcached-igbinary
 IGBINARY_USE=		PHP=igbinary:build

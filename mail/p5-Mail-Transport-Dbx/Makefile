@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-Transport-Dbx/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/mail/p5-Mail-Transport-Dbx/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Transport-Dbx
 PORTVERSION=	0.07
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mail::Transport::Dbx - Parse Outlook Express mailboxes
 
-#BUILD_DEPENDS=	p5-ExtUtils-Constant>0:devel/p5-ExtUtils-Constant
-#RUN_DEPENDS:=	${BUILD_DEPENDS}
+#BUILD_DEPENDS=	${RUN_DEPENDS}
+#RUN_DEPENDS=	p5-ExtUtils-Constant>0:devel/p5-ExtUtils-Constant
 
 USES=		perl5
 USE_PERL5=	configure

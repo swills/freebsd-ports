@@ -1,12 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-default_assign/Makefile 437177 2017-03-28 23:47:58Z feld $
+# $FreeBSD: head/www/redmine-default_assign/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	default_assign
 PORTVERSION=	0.6
 CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Assign Redmine tickets by default
 
 LICENSE=	GPLv2+

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5-quickcontrols2/Makefile 474153 2018-07-08 01:51:36Z linimon $
+# $FreeBSD: head/x11-toolkits/qt5-quickcontrols2/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	quickcontrols2
 DISTVERSION=	${QT5_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Set of controls for building complete interfaces in Qt Quick
 
 BROKEN_armv6=		fails to install: pkg-static: Unable to access file DayOfWeekRow.qmlc: No such file or directory
 
-USES=		qmake:norecursive qt-dist:5
+USES=		compiler:c++11-lang qmake:norecursive qt-dist:5
 USE_QT=		core gui qml quick widgets \
 		buildtools_build
 QT_DIST=	${PORTNAME}

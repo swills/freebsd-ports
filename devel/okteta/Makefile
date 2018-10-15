@@ -1,8 +1,10 @@
-# $FreeBSD: head/devel/okteta/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/okteta/Makefile 481389 2018-10-06 19:40:58Z tcberner $
 
 PORTNAME=	okteta
-DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-CATEGORIES=	devel kde kde-applications
+DISTVERSION=	0.25.3
+PORTEPOCH=	1
+CATEGORIES=	devel kde
+MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/src
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE hex editor
@@ -15,13 +17,9 @@ USE_KDE=	attica auth bookmarks codecs completion crash \
 		ecm i18n iconthemes itemviews jobwidgets kcmutils kio \
 		newstuff parts service solid sonnet textwidgets \
 		widgetsaddons xmlgui
-USE_QT=		core dbus designer gui network printsupport script scripttools \
-		widgets xml \
+USE_QT=		concurrent core dbus designer gui network printsupport qml \
+		script scripttools widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
-
-# okteta is no longer released as part of KDE Appplications past 17.12.3
-# Until there is a new release, use the last one
-KDE_APPLICATIONS_VERSION=	17.12.3
 
 .include <bsd.port.mk>

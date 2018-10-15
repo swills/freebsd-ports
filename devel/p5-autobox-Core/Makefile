@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/p5-autobox-Core/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-autobox-Core/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	autobox-Core
 PORTVERSION=	1.33
@@ -13,9 +13,9 @@ COMMENT=	Core functions exposed as methods in primitive types
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Want>=0.26:devel/p5-Want \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Want>=0.26:devel/p5-Want \
 		p5-autobox>=2.71:devel/p5-autobox
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

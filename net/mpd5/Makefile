@@ -1,9 +1,9 @@
 # Created by: Archie Cobbs
-# $FreeBSD: head/net/mpd5/Makefile 480436 2018-09-22 23:19:40Z eugen $
+# $FreeBSD: head/net/mpd5/Makefile 481990 2018-10-13 14:59:41Z eugen $
 
 PORTNAME=	mpd
 DISTVERSION=	5.8
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/Mpd5/Mpd-${PORTVERSION}
 PKGNAMESUFFIX=	5

@@ -1,9 +1,8 @@
-# Created by: Jens Rehsack <rehsack@liwing.de>
-# $FreeBSD: head/devel/pecl-xdebug/Makefile 460519 2018-01-31 17:00:28Z pizzamig $
+# Created by: Luca Pizzamiglio <luca.pizzamiglio@trivago.com>
+# $FreeBSD: head/devel/pecl-xdebug/Makefile 481638 2018-10-09 16:23:46Z pizzamig $
 
 PORTNAME=	xdebug
-PORTVERSION=	2.5.5
-PORTREVISION=	1
+DISTVERSION=	2.6.1
 CATEGORIES=	devel pear
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -12,10 +11,10 @@ COMMENT=	Xdebug extension for PHP
 LICENSE=	PHP30
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-IGNORE_WITH_PHP=	72
+IGNORE_WITH_PHP=	56 73
 
 CONFIGURE_ARGS=	--enable-xdebug
-USES=		php:pecl,zend
+USES=		php:pecl,zend tar:tgz
 
 SUB_FILES=	pkg-message
 

@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Radius/Makefile 475297 2018-07-25 04:43:34Z wen $
+# $FreeBSD: head/security/p5-Authen-Radius/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-Radius
 PORTVERSION=	0.27
@@ -13,9 +13,9 @@ COMMENT=	Perl5 module to provide simple Radius client facilities
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Data-HexDump>=0.02:devel/p5-Data-HexDump \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-HexDump>=0.02:devel/p5-Data-HexDump \
 		p5-Net-IP>=1.26:net-mgmt/p5-Net-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
 
 REINPLACE_ARGS=	-i ''

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Admin-DSNManager/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Admin-DSNManager/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-Admin-DSNManager
 PORTVERSION=	2.01
@@ -13,11 +13,11 @@ COMMENT=	Manage a file of DSNs, for both testing and production
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Config-Tiny>=2.12:devel/p5-Config-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-Tiny>=2.12:devel/p5-Config-Tiny \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-File-Slurp>=9999.13:devel/p5-File-Slurp \
 		p5-Moo>=1.004002:devel/p5-Moo
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Version>=1.002003:devel/p5-Test-Version \
 		p5-Try-Tiny>=0.06:lang/p5-Try-Tiny
 

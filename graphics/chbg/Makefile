@@ -1,5 +1,5 @@
 # Created by: Peter Jones <p@dancris.com>
-# $FreeBSD: head/graphics/chbg/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/chbg/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	chbg
 PORTVERSION=	1.5
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Change Background Picture with time period
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 

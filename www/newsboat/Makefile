@@ -1,9 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/www/newsboat/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/www/newsboat/Makefile 481077 2018-10-01 23:25:25Z tobik $
 
 PORTNAME=	newsboat
-PORTVERSION=	2.12
-PORTREVISION=	2
+PORTVERSION=	2.13
 DISTVERSIONPREFIX=	r
 CATEGORIES=	www
 
@@ -18,7 +17,7 @@ LIB_DEPENDS=	libstfl.so:devel/stfl \
 		libcurl.so:ftp/curl \
 		libjson-c.so:devel/json-c
 
-USES=		compiler:c++11-lib gettext gmake iconv:translit ncurses \
+USES=		compiler:c++11-lib gettext gmake gnome iconv:translit ncurses \
 		pkgconfig sqlite shebangfix ssl
 USE_GITHUB=	yes
 USE_CXXSTD=	gnu++11

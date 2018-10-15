@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Array-Diff/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Array-Diff/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Array-Diff
 PORTVERSION=	0.07
@@ -14,9 +14,9 @@ COMMENT=	Diff two arrays
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Algorithm-Diff>=1.19:devel/p5-Algorithm-Diff \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Algorithm-Diff>=1.19:devel/p5-Algorithm-Diff \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

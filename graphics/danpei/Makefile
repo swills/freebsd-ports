@@ -1,5 +1,5 @@
 # Created by: Andrey V. Elsukov <bu7cher@yandex.ru>
-# $FreeBSD: head/graphics/danpei/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/danpei/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	danpei
 PORTVERSION=	2.9.7
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	rum1cro@yandex.ru
 COMMENT=	Image Viewer for X Window System with thumbnail preview feature
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

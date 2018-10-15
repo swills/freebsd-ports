@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/qt5-qml/Makefile 479286 2018-09-09 11:12:14Z tcberner $
+# $FreeBSD: head/lang/qt5-qml/Makefile 482034 2018-10-14 08:01:13Z tcberner $
 
 PORTNAME=	qml
 DISTVERSION=	${QT5_VERSION}
@@ -8,10 +8,8 @@ PKGNAMEPREFIX=	qt5-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt QML and JavaScript language module
 
-BROKEN_powerpc64=	Does not build
-
 USE_QT=		core network buildtools_build
-USES=		python:build qmake qt-dist:5,declarative
+USES=		compiler:c++11-lang python:build qmake qt-dist:5,declarative
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 BUILD_WRKSRC=	${WRKSRC}/src

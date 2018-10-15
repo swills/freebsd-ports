@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBICx-TestDatabase/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBICx-TestDatabase/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBICx-TestDatabase
 PORTVERSION=	0.05
@@ -15,9 +15,9 @@ COMMENT=	Module to create temporary database from a DBIx::Class::Schema
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DBD-SQLite>=1.29:databases/p5-DBD-SQLite \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBD-SQLite>=1.29:databases/p5-DBD-SQLite \
 		p5-SQL-Translator>=0:databases/p5-SQL-Translator
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBIx-Class>=0.07005:databases/p5-DBIx-Class
 
 NO_ARCH=	yes

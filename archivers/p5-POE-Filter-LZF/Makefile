@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/p5-POE-Filter-LZF/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/archivers/p5-POE-Filter-LZF/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Filter-LZF
 PORTVERSION=	1.72
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Compress-LZF>=1.51:archivers/p5-Compress-LZF \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Compress-LZF>=1.51:archivers/p5-Compress-LZF \
 		p5-POE>=0.38:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/textproc/p5-SGML-Parser-OpenSP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-SGML-Parser-OpenSP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SGML-Parser-OpenSP
 PORTVERSION=	0.994
@@ -16,10 +16,10 @@ COMMENT=	Parse SGML documents using OpenSP
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	onsgmls:textproc/opensp \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	onsgmls:textproc/opensp \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Test-Exception>=0:devel/p5-Test-Exception
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		dos2unix perl5
 USE_PERL5=	configure

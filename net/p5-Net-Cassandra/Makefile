@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-Cassandra/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Cassandra/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Cassandra
 PORTVERSION=	0.35
@@ -14,9 +14,9 @@ COMMENT=	Interface to Cassandra
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-StrictConstructor>=0:devel/p5-MooseX-StrictConstructor
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

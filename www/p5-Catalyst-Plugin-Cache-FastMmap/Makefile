@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Cache-FastMmap/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Cache-FastMmap/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Cache-FastMmap
 PORTVERSION=	0.9
@@ -14,10 +14,10 @@ COMMENT=	Mmap cache for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Cache-FastMmap>=0:devel/p5-Cache-FastMmap \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache-FastMmap>=0:devel/p5-Cache-FastMmap \
 		p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \
 		p5-Class-Data-Inheritable>0:devel/p5-Class-Data-Inheritable
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

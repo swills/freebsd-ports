@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/xmmsctrl/Makefile 464851 2018-03-17 22:49:06Z gerald $
+# $FreeBSD: head/audio/xmmsctrl/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmmsctrl
 PORTVERSION=	1.8
@@ -11,6 +11,9 @@ MASTER_SITES=	http://user.it.uu.se/~adavid/utils/ \
 
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Small utility to control XMMS from the command line
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

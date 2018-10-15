@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/devel/gnome-vfs-monikers/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/gnome-vfs-monikers/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #    $MCom: ports/devel/gnome-vfs-monikers/Makefile,v 1.4 2006/07/18 11:37:57 ahze Exp $
 
 PORTNAME=	gnome-vfs-monikers
@@ -10,6 +10,9 @@ MASTER_SITES=	GNOME
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Gnome-vfs monikers module
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		gettext-tools gmake libtool:keepla pkgconfig
 USE_GNOME=	gnomevfs2 intltool libbonobo

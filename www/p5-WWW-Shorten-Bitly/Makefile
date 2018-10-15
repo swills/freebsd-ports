@@ -1,5 +1,5 @@
 # Created by: Masafumi NAKANE <max@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Shorten-Bitly/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten-Bitly/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Shorten-Bitly
 PORTVERSION=	2.001
@@ -14,13 +14,13 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-File-HomeDir>=1.00:devel/p5-File-HomeDir \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-HomeDir>=1.00:devel/p5-File-HomeDir \
 		p5-JSON-MaybeXS>0:converters/p5-JSON-MaybeXS \
 		p5-LWP-Protocol-https>0:www/p5-LWP-Protocol-https \
 		p5-Path-Tiny>0:devel/p5-Path-Tiny \
 		p5-URI>=1.58:net/p5-URI \
 		p5-WWW-Shorten>=3.09:www/p5-WWW-Shorten
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

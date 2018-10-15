@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JSON-Schema/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-JSON-Schema/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	JSON-Schema
 PORTVERSION=	0.016
@@ -12,7 +12,8 @@ COMMENT=	Validate JSON against a schema
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	p5-Exporter-Tiny>=0:devel/p5-Exporter-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Exporter-Tiny>=0:devel/p5-Exporter-Tiny \
 		p5-JSON>=2.0:converters/p5-JSON \
 		p5-JSON-Path>=0:devel/p5-JSON-Path \
 		p5-JSON-Hyper>=0:devel/p5-JSON-Hyper \
@@ -20,7 +21,6 @@ BUILD_DEPENDS=	p5-Exporter-Tiny>=0:devel/p5-Exporter-Tiny \
 		p5-libwww>=0:www/p5-libwww \
 		p5-autovivification>=0:devel/p5-autovivification \
 		p5-match-simple>=0:devel/p5-match-simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

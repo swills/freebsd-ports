@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/ge-x2212/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/comms/ge-x2212/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	ge-x2212
 PORTVERSION=	0.0.2010.09.15
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-2-15sept2010
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	EEPROM programmer for GE Phoenix SX Radios
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		pkgconfig
 USE_GNOME=	libgnomeui

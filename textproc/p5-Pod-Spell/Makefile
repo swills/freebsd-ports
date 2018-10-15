@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Pod-Spell/Makefile 413989 2016-04-25 09:11:57Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-Spell/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Spell
 PORTVERSION=	1.20
@@ -11,13 +11,13 @@ COMMENT=	Formatter for spellchecking Pod
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Class-Tiny>=0:devel/p5-Class-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS} \
+		p5-File-ShareDir-Install>=0.06:devel/p5-File-ShareDir-Install
+RUN_DEPENDS=	p5-Class-Tiny>=0:devel/p5-Class-Tiny \
 		p5-File-ShareDir>=0:devel/p5-File-ShareDir \
 		p5-Lingua-EN-Inflect>=0:textproc/p5-Lingua-EN-Inflect \
 		p5-Path-Tiny>=0:devel/p5-Path-Tiny \
 		p5-Pod-Escapes>=1.01:textproc/p5-Pod-Escapes
-RUN_DEPENDS:=	${BUILD_DEPENDS}
-BUILD_DEPENDS+=	p5-File-ShareDir-Install>=0.06:devel/p5-File-ShareDir-Install
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep
 
 NO_ARCH=	yes

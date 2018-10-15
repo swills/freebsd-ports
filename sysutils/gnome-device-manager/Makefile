@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-device-manager/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/sysutils/gnome-device-manager/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #   $MCom: ports/sysutils/gnome-device-manager/Makefile,v 1.1 2008/01/08 06:47:29 marcus Exp $
 
 PORTNAME=	gnome-device-manager
@@ -10,6 +10,9 @@ MASTER_SITES=	http://hal.freedesktop.org/releases/
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	HAL device manager for the GNOME Desktop
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libhal.so:sysutils/hal
 

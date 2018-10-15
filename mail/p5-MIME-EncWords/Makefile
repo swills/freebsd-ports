@@ -1,5 +1,5 @@
 # Created by: Olivier Girard <Olivier.Girard@univ-angers.fr>
-# $FreeBSD: head/mail/p5-MIME-EncWords/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-MIME-EncWords/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MIME-EncWords
 PORTVERSION=	1.014.3
@@ -13,8 +13,8 @@ COMMENT=	Deal with RFC 2047 encoded words (improved)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-MIME-Charset>=1.010.1:mail/p5-MIME-Charset
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-MIME-Charset>=1.010.1:mail/p5-MIME-Charset
 
 USES=		perl5
 USE_PERL5=	configure

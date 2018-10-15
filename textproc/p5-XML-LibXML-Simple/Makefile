@@ -1,5 +1,5 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/textproc/p5-XML-LibXML-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-LibXML-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-LibXML-Simple
 PORTVERSION=	0.95
@@ -13,9 +13,9 @@ COMMENT=	XML::LibXML clone of XML::Simple::XMLin()
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Slurp-Tiny>=0:devel/p5-File-Slurp-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Slurp-Tiny>=0:devel/p5-File-Slurp-Tiny \
 		p5-XML-LibXML>=1.64:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

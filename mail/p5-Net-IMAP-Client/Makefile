@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/mail/p5-Net-IMAP-Client/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Net-IMAP-Client/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-IMAP-Client
 PORTVERSION=	0.9505
@@ -14,9 +14,9 @@ COMMENT=	Not so simple IMAP client library
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Garrett Wollman <wollman@lcs.mit.edu>
-# $FreeBSD: head/devel/p5-Term-Query/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Term-Query/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Term-Query
 PORTVERSION=	2.0
@@ -14,8 +14,8 @@ COMMENT=	Interactive question-response user interface module
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Array-PrintCols>=0:misc/p5-Array-PrintCols
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Array-PrintCols>=0:misc/p5-Array-PrintCols
 
 USES=		perl5
 USE_PERL5=	configure

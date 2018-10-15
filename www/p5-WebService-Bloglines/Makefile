@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-WebService-Bloglines/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WebService-Bloglines/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WebService-Bloglines
 PORTVERSION=	0.12
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy-to-use Interface for Bloglines Web Services
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-XML-RSS>=0:textproc/p5-XML-RSS \
 		p5-XML-RSS-LibXML>=0:textproc/p5-XML-RSS-LibXML \
 		p5-XML-XPath>=0:textproc/p5-XML-XPath
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

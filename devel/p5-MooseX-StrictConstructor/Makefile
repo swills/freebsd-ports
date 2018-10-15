@@ -1,5 +1,5 @@
 # Created by: glarkin
-# $FreeBSD: head/devel/p5-MooseX-StrictConstructor/Makefile 435497 2017-03-05 19:15:17Z bofh $
+# $FreeBSD: head/devel/p5-MooseX-StrictConstructor/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-StrictConstructor
 PORTVERSION=	0.21
@@ -12,9 +12,9 @@ COMMENT=	Make your MooseX object constructors blow up on unknown attributes
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Moose>=0.94:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.94:devel/p5-Moose \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 USES=		perl5

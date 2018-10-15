@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-dateutils/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-dateutils/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	dateutils
 PORTVERSION=	0.6.6
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Various utilities for working with date and datetime objects
 
 LICENSE=	BSD3CLAUSE

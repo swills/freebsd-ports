@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/p5-Template-Magic/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Template-Magic/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Magic
 PORTVERSION=	1.39
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Module with magic merger of runtime values with templates
 
-BUILD_DEPENDS=	p5-IO-Util>=0:devel/p5-IO-Util \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-Util>=0:devel/p5-IO-Util \
 		p5-OOTools>=0:devel/p5-OOTools \
 		p5-HTML-TableTiler>=0:www/p5-HTML-TableTiler
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

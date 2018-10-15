@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11/gdkxft/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/gdkxft/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gdkxft
 PORTVERSION=	1.5
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Anti-aliased font support for gtk+
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

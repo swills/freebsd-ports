@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/note/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/deskutils/note/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	note
 DISTVERSION=	1.3.22
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	deskutils perl5
 MASTER_SITES=	http://www.daemon.de/idisk/Apps/note/
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Console based tool to handle encrypted notes
 
 LICENSE=	GPLv1

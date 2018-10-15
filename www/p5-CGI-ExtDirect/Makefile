@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-ExtDirect/Makefile 427561 2016-12-02 15:10:08Z tj $
+# $FreeBSD: head/www/p5-CGI-ExtDirect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-ExtDirect
 PORTVERSION=	3.24
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Perl extension for creating Ext.Direct remoting in CGI applications
 
-BUILD_DEPENDS=	p5-RPC-ExtDirect>=3.20:www/p5-RPC-ExtDirect \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-RPC-ExtDirect>=3.20:www/p5-RPC-ExtDirect \
 		p5-CGI>4.20:www/p5-CGI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

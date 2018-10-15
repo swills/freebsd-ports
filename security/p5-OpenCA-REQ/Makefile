@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-OpenCA-REQ/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-OpenCA-REQ/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	OpenCA-REQ
 PORTVERSION=	0.9.60
@@ -13,8 +13,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to easily manage Cert REQUESTs
 
-BUILD_DEPENDS=	p5-X500-DN>=0:net/p5-X500-DN
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-X500-DN>=0:net/p5-X500-DN
 
 USES=		perl5
 USE_PERL5=	configure

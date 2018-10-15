@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/textproc/p5-Text-Markdown/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Markdown/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Markdown
 PORTVERSION=	1.000031
@@ -13,8 +13,8 @@ COMMENT=	Markdown Perl5 module
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
 TEST_DEPENDS=	p5-Test-Differences>=0:devel/p5-Test-Differences \
 		p5-Test-Exception>=0:devel/p5-Test-Exception
 

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Business-OnlinePayment-BankOfAmerica/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Business-OnlinePayment-BankOfAmerica/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Business-OnlinePayment-BankOfAmerica
 PORTVERSION=	1.02
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Business::OnlinePayment backend module for Bank of America eStores
 
-BUILD_DEPENDS=	p5-Business-CreditCard>=0:finance/p5-Business-CreditCard \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Business-CreditCard>=0:finance/p5-Business-CreditCard \
 		p5-Business-OnlinePayment>=0:finance/p5-Business-OnlinePayment
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

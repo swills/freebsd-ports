@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/net/p5-Net-SMS-PChome/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-SMS-PChome/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-SMS-PChome
 PORTVERSION=	0.11
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	Send SMS messages via the sms.pchome.com.tw service
 
-BUILD_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
 		p5-HTML-TagParser>=0:www/p5-HTML-TagParser \
 		p5-Date-Calc>=0:devel/p5-Date-Calc
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

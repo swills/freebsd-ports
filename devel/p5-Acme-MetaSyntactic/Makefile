@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Acme-MetaSyntactic/Makefile 453298 2017-11-01 16:50:27Z sunpoet $
+# $FreeBSD: head/devel/p5-Acme-MetaSyntactic/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Acme-MetaSyntactic
 PORTVERSION=	1.014
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 
 NO_ARCH=	yes
 USES=		perl5

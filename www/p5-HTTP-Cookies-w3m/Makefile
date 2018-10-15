@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/www/p5-HTTP-Cookies-w3m/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Cookies-w3m/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Cookies-w3m
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Cookie storage and management for w3m
 
-BUILD_DEPENDS=	p5-Module-Install>=0:devel/p5-Module-Install
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Module-Install>=0:devel/p5-Module-Install
 
 USES=		perl5
 USE_PERL5=	configure

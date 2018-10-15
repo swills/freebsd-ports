@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-BibTeX-Parser/Makefile 468649 2018-04-29 19:46:23Z sunpoet $
+# $FreeBSD: head/textproc/p5-BibTeX-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	BibTeX-Parser
 PORTVERSION=	1.02
@@ -15,9 +15,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
 		p5-LaTeX-ToUnicode>=0.02:textproc/p5-LaTeX-ToUnicode
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

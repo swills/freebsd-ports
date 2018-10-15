@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
-# $FreeBSD: head/textproc/p5-Template-Extract/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Template-Extract/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Extract
 PORTVERSION=	0.41
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use TT2 syntax to extract data from documents
 
-BUILD_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit
 
 USES=		perl5
 USE_PERL5=	configure

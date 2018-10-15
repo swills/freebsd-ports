@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Model-Xapian/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Model-Xapian/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Model-Xapian
 PORTVERSION=	0.06
@@ -14,11 +14,11 @@ COMMENT=	Catalyst model for Search::Xapian
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.30:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.30:www/p5-Catalyst-Runtime \
 		p5-Catalyst-Devel>=1.00:www/p5-Catalyst-Devel \
 		p5-Data-Page>=0:databases/p5-Data-Page \
 		p5-Search-Xapian12>=1.2.7.0:databases/p5-Search-Xapian12
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5 shebangfix

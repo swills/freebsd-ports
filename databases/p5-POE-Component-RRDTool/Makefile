@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-POE-Component-RRDTool/Makefile 471578 2018-06-04 18:01:46Z sunpoet $
+# $FreeBSD: head/databases/p5-POE-Component-RRDTool/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-RRDTool
 PORTVERSION=	0.18
@@ -15,9 +15,9 @@ COMMENT=	POE interface to Round Robin Database Tools
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	rrdtool:databases/rrdtool \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	rrdtool:databases/rrdtool \
 		p5-POE>=0:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/p5-Geo-Coordinates-Converter/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/science/p5-Geo-Coordinates-Converter/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Geo-Coordinates-Converter
 PORTVERSION=	0.13
@@ -14,10 +14,10 @@ COMMENT=	Simple converter of geo coordinates
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor-Lite>=0.05:devel/p5-Class-Accessor-Lite \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor-Lite>=0.05:devel/p5-Class-Accessor-Lite \
 		p5-String-CamelCase>0:textproc/p5-String-CamelCase \
 		p5-YAML>0:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Base>0:devel/p5-Test-Base
 
 USES=		perl5

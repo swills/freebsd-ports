@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Frame/Makefile 476449 2018-08-05 19:08:19Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Frame/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Net-Frame
 PORTVERSION=	1.19
@@ -13,11 +13,11 @@ COMMENT=	Base framework for frame crafting
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/LICENSE.Artistic
 
-BUILD_DEPENDS=	p5-Bit-Vector>=0:math/p5-Bit-Vector \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Bit-Vector>=0:math/p5-Bit-Vector \
 		p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
 		p5-Net-IPv6Addr>=0:net-mgmt/p5-Net-IPv6Addr \
 		p5-Socket6>=0:net/p5-Socket6
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

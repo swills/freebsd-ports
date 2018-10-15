@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@bamus.cz>
-# $FreeBSD: head/databases/p5-Protocol-CassandraCQL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Protocol-CassandraCQL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Protocol-CassandraCQL
 PORTVERSION=	0.11
@@ -16,8 +16,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Compress-Snappy>0:archivers/p5-Compress-Snappy
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Compress-Snappy>0:archivers/p5-Compress-Snappy
 TEST_DEPENDS=	p5-Test-Fatal>0:devel/p5-Test-Fatal \
 		p5-Test-HexString>0:devel/p5-Test-HexString
 

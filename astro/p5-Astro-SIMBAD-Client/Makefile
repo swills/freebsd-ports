@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/p5-Astro-SIMBAD-Client/Makefile 479997 2018-09-18 08:43:40Z wen $
+# $FreeBSD: head/astro/p5-Astro-SIMBAD-Client/Makefile 481537 2018-10-08 13:01:46Z wen $
 
 PORTNAME=	Astro-SIMBAD-Client
-PORTVERSION=	0.037
+PORTVERSION=	0.038
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,12 +13,12 @@ COMMENT=	OO interface to SIMBAD4
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-SOAP-Lite>=0:net/p5-SOAP-Lite \
 		p5-URI>=0:net/p5-URI \
 		p5-XML-DoubleEncodedEntities>=1:textproc/p5-XML-DoubleEncodedEntities \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-YAML>=0:textproc/p5-YAML
 
 USES=		perl5

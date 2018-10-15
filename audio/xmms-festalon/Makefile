@@ -1,9 +1,12 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-festalon/Makefile 419816 2016-08-08 11:11:16Z ehaupt $
+# $FreeBSD: head/audio/xmms-festalon/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PKGNAMEPREFIX=	xmms-
 
 COMMENT=	XMMS plugin for playing .nsf and .hes audio files
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 MASTERDIR=	${.CURDIR}/../festalon
 

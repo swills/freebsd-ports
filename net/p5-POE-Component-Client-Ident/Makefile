@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net/p5-POE-Component-Client-Ident/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-POE-Component-Client-Ident/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Client-Ident
 PORTVERSION=	1.16
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE component for non-blocking ident lookups
 
-BUILD_DEPENDS=	p5-POE>=0.9999:devel/p5-POE
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0.9999:devel/p5-POE
 TEST_DEPENDS=	p5-Test-POE-Server-TCP>=0:devel/p5-Test-POE-Server-TCP
 
 USES=		perl5

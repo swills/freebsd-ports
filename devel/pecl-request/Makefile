@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-request/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/devel/pecl-request/Makefile 481878 2018-10-12 06:23:47Z antoine $
 
 PORTNAME=	request
 PORTVERSION=	1.0.0b1
@@ -12,6 +12,6 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	56 72
+IGNORE_WITH_PHP=	56 72 73
 
 .include <bsd.port.mk>

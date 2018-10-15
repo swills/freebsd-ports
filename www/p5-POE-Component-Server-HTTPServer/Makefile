@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <lin-chi@lastamericanempire.com>
-# $FreeBSD: head/www/p5-POE-Component-Server-HTTPServer/Makefile 428682 2016-12-16 14:03:43Z sunpoet $
+# $FreeBSD: head/www/p5-POE-Component-Server-HTTPServer/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Server-HTTPServer
 PORTVERSION=	0.9.2
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	lin-chi@lastamericanempire.com
 COMMENT=	POE Component to server HTTP requests
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-libwww>=0:www/p5-libwww \
 		p5-HTML-Template-HashWrapper>=0:www/p5-HTML-Template-HashWrapper \
 		p5-MIME-Types>=0:mail/p5-MIME-Types
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

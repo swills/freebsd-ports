@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 481007 2018-10-01 07:57:19Z mfechner $
+# $FreeBSD: head/net/Makefile 482049 2018-10-14 16:06:28Z sbruno $
 #
 
     COMMENT = Networking tools
@@ -281,6 +281,7 @@
     SUBDIR += imapproxy
     SUBDIR += incidenceeditor
     SUBDIR += intel-em-kmod
+    SUBDIR += intel-ix-kmod
     SUBDIR += intel-ixl-kmod
     SUBDIR += iodine
     SUBDIR += ip2location
@@ -1000,6 +1001,10 @@
     SUBDIR += php72-soap
     SUBDIR += php72-sockets
     SUBDIR += php72-xmlrpc
+    SUBDIR += php73-ldap
+    SUBDIR += php73-soap
+    SUBDIR += php73-sockets
+    SUBDIR += php73-xmlrpc
     SUBDIR += phpldapadmin
     SUBDIR += pim6-tools
     SUBDIR += pim6dd

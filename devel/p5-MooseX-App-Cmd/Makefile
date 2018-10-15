@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-MooseX-App-Cmd/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-App-Cmd/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-App-Cmd
 PORTVERSION=	0.32
@@ -13,13 +13,13 @@ COMMENT=	Mashes up MooseX::Getopt and App::Cmd
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-App-Cmd>=0.321:devel/p5-App-Cmd \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-App-Cmd>=0.321:devel/p5-App-Cmd \
 		p5-Getopt-Long-Descriptive>=0.091:devel/p5-Getopt-Long-Descriptive \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-Getopt>=0:devel/p5-MooseX-Getopt \
 		p5-MooseX-NonMoose>=0:devel/p5-MooseX-NonMoose \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-MooseX-ConfigFromFile>=0:devel/p5-MooseX-ConfigFromFile \
 		p5-Test-Output>=0:devel/p5-Test-Output \
 		p5-YAML>=0:textproc/p5-YAML

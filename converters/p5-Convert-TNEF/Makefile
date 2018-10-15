@@ -1,5 +1,5 @@
 # Created by: roman@xpert.com
-# $FreeBSD: head/converters/p5-Convert-TNEF/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-Convert-TNEF/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Convert-TNEF
 PORTVERSION=	0.18
@@ -14,9 +14,9 @@ COMMENT=	Perl module to read TNEF files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-MIME-Tools>=4.109:mail/p5-MIME-Tools
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

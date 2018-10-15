@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-EscapeEvil/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-HTML-EscapeEvil/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-EscapeEvil
 PORTVERSION=	0.05
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Escape evil HTML tags
 
-BUILD_DEPENDS=	p5-HTML-Tree>=0:www/p5-HTML-Tree \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Tree>=0:www/p5-HTML-Tree \
 		p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

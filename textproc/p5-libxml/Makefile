@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/textproc/p5-libxml/Makefile 470107 2018-05-16 09:04:07Z amdmi3 $
+# $FreeBSD: head/textproc/p5-libxml/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	libxml
 PORTVERSION=	0.08
@@ -15,8 +15,8 @@ COMMENT=	Collection of Perl5 modules for working with XML
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
 USES=		perl5
 USE_PERL5=	configure

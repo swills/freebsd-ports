@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/pecl-intl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/pecl-intl/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	intl
 PORTVERSION=	3.0.0
@@ -13,7 +13,7 @@ LICENSE=	PHP301
 
 LIB_DEPENDS=	libicui18n.so:devel/icu
 
-IGNORE_WITH_PHP=70 71 72
+IGNORE_WITH_PHP=70 71 72 73
 USES=		compiler:c++11-lib php:pecl
 USE_CXXSTD=	gnu++11
 

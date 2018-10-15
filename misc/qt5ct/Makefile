@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/qt5ct/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/qt5ct/Makefile 481374 2018-10-06 16:12:30Z tcberner $
 
 PORTNAME=	qt5ct
-DISTVERSION=	0.35
+DISTVERSION=	0.36
 CATEGORIES=	misc
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 	libfreetype.so:print/freetype2
 
-USES=		gettext-runtime qmake qt:5 tar:bz2
+USES=		compiler:c++11-lang gettext-runtime qmake qt:5 tar:bz2
 USE_QT=		core dbus gui svg widgets buildtools_build \
 	linguisttools_build
 USE_GL=	egl gl

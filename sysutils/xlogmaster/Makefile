@@ -1,5 +1,5 @@
 # Created by: Adrian Wontroba <aw1@stade.co.uk>
-# $FreeBSD: head/sysutils/xlogmaster/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/sysutils/xlogmaster/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xlogmaster
 PORTVERSION=	1.6.2
@@ -9,6 +9,9 @@ MASTER_SITES=	GNU
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Quick & easy monitoring of logfiles and devices
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 USE_GNOME=	gtk12
 USES=		gmake makeinfo

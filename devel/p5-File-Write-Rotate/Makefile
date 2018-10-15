@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Write-Rotate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Write-Rotate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Write-Rotate
 PORTVERSION=	0.31
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-File-Flock-Retry>=0:devel/p5-File-Flock-Retry \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Flock-Retry>=0:devel/p5-File-Flock-Retry \
 		p5-Proc-PID-File>=0:devel/p5-Proc-PID-File
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-Slurper>=0:devel/p5-File-Slurper \
 		p5-File-chdir>=0:devel/p5-File-chdir \
 		p5-Taint-Runtime>=0:devel/p5-Taint-Runtime \

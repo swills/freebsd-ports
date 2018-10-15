@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Helper-Controller-Scaffold/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Helper-Controller-Scaffold/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Helper-Controller-Scaffold
 PORTVERSION=	0.04
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Catalyst helper for Scaffolding
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-Catalyst-Devel>=1.00:www/p5-Catalyst-Devel \
 		p5-Catalyst-Plugin-FormValidator>=0:www/p5-Catalyst-Plugin-FormValidator \
 		p5-Catalyst-View-TT>=0:www/p5-Catalyst-View-TT \
@@ -20,7 +21,6 @@ BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-Class-DBI-FromForm>=0:www/p5-Class-DBI-FromForm \
 		p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-Template-Plugin-Class>=0:www/p5-Template-Plugin-Class
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

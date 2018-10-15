@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-MooseX-Types-DateTimeX/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Types-DateTimeX/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Types-DateTimeX
 PORTVERSION=	0.10
@@ -14,13 +14,13 @@ COMMENT=	Extensions to MooseX::Types::DateTime::ButMaintained
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-DateTimeX-Easy>=0.085:devel/p5-DateTimeX-Easy \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTimeX-Easy>=0.085:devel/p5-DateTimeX-Easy \
 		p5-Moose>=0.41:devel/p5-Moose \
 		p5-MooseX-Types>=0.04:devel/p5-MooseX-Types \
 		p5-MooseX-Types-DateTime-ButMaintained>=0.04:devel/p5-MooseX-Types-DateTime-ButMaintained \
 		p5-Time-Duration-Parse>=0.06:devel/p5-Time-Duration-Parse \
 		p5-namespace-clean>=0.08:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

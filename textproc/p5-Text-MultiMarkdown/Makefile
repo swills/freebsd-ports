@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-MultiMarkdown/Makefile 435402 2017-03-04 13:48:54Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-MultiMarkdown/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-MultiMarkdown
 PORTVERSION=	1.000035
@@ -14,9 +14,9 @@ COMMENT=	Convert MultiMarkdown syntax to (X)HTML
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/License.text
 
-BUILD_DEPENDS=	p5-HTML-Parser>0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>0:www/p5-HTML-Parser \
 		p5-Text-Markdown>=1.0.26:textproc/p5-Text-Markdown
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Test-Exception>=0:devel/p5-Test-Exception
 

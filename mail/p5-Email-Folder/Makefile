@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-Folder/Makefile 458325 2018-01-07 12:12:54Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Folder/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-Folder
 PORTVERSION=	0.860
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Email-FolderType>=0.600:mail/p5-Email-FolderType \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-FolderType>=0.600:mail/p5-Email-FolderType \
 		p5-Email-Simple>=0:mail/p5-Email-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Edgardo Garcia Hoeffler <edybsd@yahoo.com.ar>
-# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gnome-commander
 PORTVERSION=	1.8.1
@@ -15,6 +15,9 @@ COMMENT=	File manager for Gnome2
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 LIB_DEPENDS=	libunique-1.0.so:x11-toolkits/unique \
 		libgnome-keyring.so:security/libgnome-keyring \

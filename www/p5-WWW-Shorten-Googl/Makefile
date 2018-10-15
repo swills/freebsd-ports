@@ -1,5 +1,5 @@
 # Created by: Jonathan Pater <cowboyneal@gmail.com>
-# $FreeBSD: head/www/p5-WWW-Shorten-Googl/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten-Googl/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-Shorten-Googl
 PORTVERSION=	1.02
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	cowboyneal@gmail.com
 COMMENT=	Perl interface to goo.gl
 
-BUILD_DEPENDS=	p5-WWW-Shorten>=1.98:www/p5-WWW-Shorten \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-WWW-Shorten>=1.98:www/p5-WWW-Shorten \
 		p5-libwww>=5.75:www/p5-libwww \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-JSON-Any>=0:converters/p5-JSON-Any
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

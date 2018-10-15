@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-PackagePath/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-PackagePath/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-PackagePath
 PORTVERSION=	0.03
@@ -14,9 +14,9 @@ COMMENT=	Inspect and manipulate a Path based on a Package name
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Moose>=0.64:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.64:devel/p5-Moose \
 		p5-MooseX-Types-Path-Class>=0.04:devel/p5-MooseX-Types-Path-Class
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

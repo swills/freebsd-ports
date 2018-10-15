@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Data-Pageset/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Data-Pageset/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Data-Pageset
 PORTVERSION=	1.06
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Page numbering and page sets
 
-BUILD_DEPENDS=	p5-Data-Page>=2:databases/p5-Data-Page
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-Page>=2:databases/p5-Data-Page
 
 USES=		perl5
 USE_PERL5=	configure

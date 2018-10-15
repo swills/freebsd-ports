@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/p5-Text-CharWidth/Makefile 420253 2016-08-15 17:12:18Z mat $
+# $FreeBSD: head/textproc/p5-Text-CharWidth/Makefile 481528 2018-10-08 09:08:40Z amdmi3 $
 
 PORTNAME=	Text-CharWidth
 DISTVERSION=	0.04
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Get number of occupied columns of a string on terminal
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

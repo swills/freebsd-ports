@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-XML-Canonical/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Canonical/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Canonical
 PORTVERSION=	0.10
@@ -14,9 +14,9 @@ COMMENT=	Perl Implementation of Canonical XML
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-GDOME>=0:textproc/p5-XML-GDOME
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-GDOME>=0:textproc/p5-XML-GDOME
 LIB_DEPENDS=	libgdome.so:textproc/gdome2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5 pkgconfig

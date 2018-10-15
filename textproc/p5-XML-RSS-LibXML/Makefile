@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-XML-RSS-LibXML/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-RSS-LibXML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-RSS-LibXML
 PORTVERSION=	0.3105
@@ -14,12 +14,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-DateTime-Format-Mail>=0:devel/p5-DateTime-Format-Mail \
 		p5-DateTime-Format-W3CDTF>=0:devel/p5-DateTime-Format-W3CDTF \
 		p5-UNIVERSAL-require>=0:devel/p5-UNIVERSAL-require \
 		p5-XML-LibXML>=1.66:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Differences>=0:devel/p5-Test-Differences \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-Warn>=0:devel/p5-Test-Warn

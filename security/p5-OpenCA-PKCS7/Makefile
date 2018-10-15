@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-OpenCA-PKCS7/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-OpenCA-PKCS7/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	OpenCA-PKCS7
 PORTVERSION=	0.9.1.1.1
@@ -13,10 +13,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for basic handling PKCS\#7 Signatures
 
-BUILD_DEPENDS=	p5-OpenCA-OpenSSL>=0:security/p5-OpenCA-OpenSSL \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-OpenCA-OpenSSL>=0:security/p5-OpenCA-OpenSSL \
 		p5-OpenCA-X509>=0:security/p5-OpenCA-X509 \
 		p5-X500-DN>=0:net/p5-X500-DN
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PORTSCOUT=	skipv:0.9.13
 

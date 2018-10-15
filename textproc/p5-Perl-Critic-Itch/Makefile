@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Perl-Critic-Itch/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Perl-Critic-Itch/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Perl-Critic-Itch
 PORTVERSION=	0.07
@@ -12,8 +12,8 @@ COMMENT=	Collection of Perl::Critic Policies
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Perl-Critic>=0:textproc/p5-Perl-Critic
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Perl-Critic>=0:textproc/p5-Perl-Critic
 
 USES=		perl5
 USE_PERL5=	configure

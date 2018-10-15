@@ -1,5 +1,5 @@
 # Created by: Shell Hung <shell@shellhung.org>
-# $FreeBSD: head/graphics/p5-Image-Info/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Image-Info/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Image-Info
 PORTVERSION=	1.41
@@ -13,10 +13,10 @@ COMMENT=	Perl module for getting image information
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

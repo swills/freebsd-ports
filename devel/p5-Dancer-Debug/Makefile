@@ -1,5 +1,5 @@
 # Created by: Geistteufel <geistteufel@yahoo.fr>
-# $FreeBSD: head/devel/p5-Dancer-Debug/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Dancer-Debug/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dancer-Debug
 PORTVERSION=	0.03
@@ -14,10 +14,10 @@ COMMENT=	Dancer::Debug - Extend Plack::Middleware::Debug
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
 		p5-Dancer>=0:www/p5-Dancer \
 		p5-Plack-Middleware-Debug>=0:www/p5-Plack-Middleware-Debug
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

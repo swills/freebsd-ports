@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-IniFiles/Makefile 470139 2018-05-16 18:46:32Z culot $
+# $FreeBSD: head/devel/p5-Config-IniFiles/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Config-IniFiles
 PORTVERSION=	2.98
@@ -13,8 +13,8 @@ COMMENT=	Read .ini-style configuration files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-IO-stringy>0:devel/p5-IO-stringy
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IO-stringy>0:devel/p5-IO-stringy
 
 NO_ARCH=	yes
 USES=		perl5

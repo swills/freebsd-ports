@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Fatal/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Fatal/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Fatal
 PORTVERSION=	0.014
@@ -13,8 +13,8 @@ COMMENT=	Incredibly simple helpers for testing code with exceptions
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Try-Tiny>=0.07:lang/p5-Try-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Try-Tiny>=0.07:lang/p5-Try-Tiny
 
 USES=		perl5
 USE_PERL5=	configure

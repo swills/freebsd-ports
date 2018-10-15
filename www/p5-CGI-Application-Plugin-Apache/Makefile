@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-Apache/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-Apache/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CGI-Application-Plugin-Apache
 PORTVERSION=	1.02
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provides easy access to Apache::* modules for CGI::Application
 
-BUILD_DEPENDS=	p5-CGI-Application>=3.22:www/p5-CGI-Application \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI-Application>=3.22:www/p5-CGI-Application \
 		p5-HTML-GenerateUtil>=0:www/p5-HTML-GenerateUtil \
 		p5-libapreq2>=0:www/p5-libapreq2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 LICENSE_COMB=	dual
 LICENSE=	ART10 GPLv1+

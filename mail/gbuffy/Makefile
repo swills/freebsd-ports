@@ -1,5 +1,5 @@
 # Created by: rasmus@kaj.se
-# $FreeBSD: head/mail/gbuffy/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/gbuffy/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	gbuffy
 PORTVERSION=	0.2.6
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.fiction.net/blong/programs/gbuffy/gbuffy-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK+ multiple mailbox "biff" program
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libPropList.so:devel/libPropList \
 		libcompface.so:mail/faces

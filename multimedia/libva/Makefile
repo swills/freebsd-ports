@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/libva/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/libva/Makefile 481144 2018-10-03 07:07:02Z madpilot $
 
 PORTNAME=	libva
-PORTVERSION=	2.2.0
-PORTREVISION=	3
+PORTVERSION=	2.3.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -24,7 +23,7 @@ USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	01org
+GH_ACCOUNT=	intel
 
 LDFLAGS+=	-lpthread
 # prevent types conflict: videodev2.h vs. drm.h

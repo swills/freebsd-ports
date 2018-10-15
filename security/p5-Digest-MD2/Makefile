@@ -1,5 +1,5 @@
 # Created by: petef@FreeBSD.org
-# $FreeBSD: head/security/p5-Digest-MD2/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/security/p5-Digest-MD2/Makefile 481887 2018-10-12 09:08:47Z amdmi3 $
 
 PORTNAME=	Digest-MD2
 PORTVERSION=	2.04
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to the MD2 message digest algorithm
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-thriftpy/Makefile 425177 2016-11-03 00:05:46Z feld $
+# $FreeBSD: head/devel/py-thriftpy/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	thriftpy
 PORTVERSION=	0.3.9
@@ -8,7 +8,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pure python implementation of Apache Thrift
 
 LICENSE=	MIT

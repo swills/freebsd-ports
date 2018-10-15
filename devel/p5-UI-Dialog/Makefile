@@ -1,5 +1,5 @@
 # Created by: Dmitry Karasik <dmitry@karasik.eu.org>
-# $FreeBSD: head/devel/p5-UI-Dialog/Makefile 435929 2017-03-11 15:59:32Z sunpoet $
+# $FreeBSD: head/devel/p5-UI-Dialog/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	UI-Dialog
 PORTVERSION=	1.21
@@ -14,9 +14,9 @@ COMMENT=	Perl wrapper for the various dialog applications
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-String-ShellQuote>=0:textproc/p5-String-ShellQuote
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 RUN_DEPENDS+=	cdialog:devel/cdialog
 
 OPTIONS_DEFINE=	KDE NEWT X11 ZENITY

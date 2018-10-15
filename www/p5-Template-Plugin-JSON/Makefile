@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Template-Plugin-JSON/Makefile 442725 2017-06-05 23:26:33Z sunpoet $
+# $FreeBSD: head/www/p5-Template-Plugin-JSON/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Template-Plugin-JSON
 PORTVERSION=	0.06
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Adds a .json vmethod for all TT values
 
-BUILD_DEPENDS=	p5-JSON>=2.12:converters/p5-JSON \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=2.12:converters/p5-JSON \
 		p5-Moose>0:devel/p5-Moose \
 		p5-Template-Toolkit>=2.20:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

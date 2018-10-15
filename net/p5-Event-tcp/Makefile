@@ -1,5 +1,5 @@
 # Created by: steinex
-# $FreeBSD: head/net/p5-Event-tcp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Event-tcp/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Event-tcp
 PORTVERSION=	0.14
@@ -14,9 +14,9 @@ COMMENT=	Glue code to build client-server style TCP-based services
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Event>=0:devel/p5-Event \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Event>=0:devel/p5-Event \
 		p5-Ioctl>=0:devel/p5-Ioctl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

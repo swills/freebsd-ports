@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/www/p5-Geo-Caching/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Geo-Caching/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Geo-Caching
 PORTVERSION=	0.11
@@ -14,10 +14,10 @@ COMMENT=	Object interface for querying Geocaching.com website
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Geo-Cache>=0:misc/p5-Geo-Cache \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Geo-Cache>=0:misc/p5-Geo-Cache \
 		p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize \
 		p5-Geo-Gpx>=0:graphics/p5-Geo-Gpx
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

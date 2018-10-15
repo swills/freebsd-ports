@@ -1,8 +1,8 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/ilias/Makefile 478510 2018-08-31 02:04:11Z wen $
+# $FreeBSD: head/www/ilias/Makefile 481259 2018-10-05 04:52:55Z wen $
 
 PORTNAME=	ilias
-PORTVERSION=	5.3.8
+PORTVERSION=	5.3.10
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

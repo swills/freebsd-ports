@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net/grdesktop/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/net/grdesktop/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	grdesktop
 PORTVERSION=	0.23
@@ -9,6 +9,9 @@ MASTER_SITES=	SAVANNAH
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME frontend for the remote desktop client (rdesktop)
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 RUN_DEPENDS=	rdesktop:net/rdesktop
 

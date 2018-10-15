@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/www/p5-WWW-HatenaLogin/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-HatenaLogin/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-HatenaLogin
 PORTVERSION=	0.03
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Login/Logout interface to Hatena
 
-BUILD_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-URI>=0:net/p5-URI \
 		p5-WWW-Mechanize>=0:www/p5-WWW-Mechanize
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

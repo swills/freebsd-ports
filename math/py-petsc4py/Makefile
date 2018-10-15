@@ -1,14 +1,10 @@
-# $FreeBSD: head/math/py-petsc4py/Makefile 480424 2018-09-22 17:40:41Z yuri $
+# $FreeBSD: head/math/py-petsc4py/Makefile 481139 2018-10-02 23:11:15Z yuri $
 
 PORTNAME=	petsc4py
-DISTVERSION=	3.9.1
-PORTREVISION=	1
+DISTVERSION=	3.10.0
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-
-PATCH_SITES=	https://bitbucket.org/petsc/petsc4py/commits/
-PATCHFILES=	ab877906425e/raw:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	PETSc for Python

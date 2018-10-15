@@ -1,10 +1,10 @@
-# $FreeBSD: head/x11/polybar/Makefile 480820 2018-09-27 21:10:13Z linimon $
+# $FreeBSD: head/x11/polybar/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
 
 PORTNAME=	polybar
 DISTVERSION=	3.2.1
 CATEGORIES=	x11
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Fast and easy-to-use status bar
 
 LICENSE=	MIT

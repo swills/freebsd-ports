@@ -1,5 +1,5 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/www/p5-HTML-TreeBuilder-LibXML/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-TreeBuilder-LibXML/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-TreeBuilder-LibXML
 PORTVERSION=	0.23
@@ -15,10 +15,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 # Do not add p5-Web-Query and p5-Web-Scraper to TEST_DEPENDS to avoid cyclic dependency loop
-BUILD_DEPENDS=	p5-Filter>=0:devel/p5-Filter \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Filter>=0:devel/p5-Filter \
 		p5-HTML-TreeBuilder-XPath>=0.14:www/p5-HTML-TreeBuilder-XPath \
 		p5-XML-LibXML>=1.70:textproc/p5-XML-LibXML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,8 +1,9 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/www/rubygem-passenger/Makefile 480657 2018-09-25 09:56:02Z osa $
+# $FreeBSD: head/www/rubygem-passenger/Makefile 481455 2018-10-07 16:18:58Z osa $
 
 PORTNAME=	passenger
 PORTVERSION=	5.3.5
+PORTREVISION=	1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMEPREFIX=	rubygem-
@@ -60,7 +61,7 @@ BUILD_DEPENDS+=	rubygem-rack>=0:www/rubygem-rack
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 SUB_LIST+=	GEM_LIB_DIR=${GEM_LIB_DIR} RUBY=${RUBY}
-SUB_FILES=	pkg-message
+SUB_FILES=	pkg-message-${FLAVOR}
 
 PLIST_FILES=	bin/passenger \
 		bin/passenger-config \

@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/devel/p5-TheSchwartz-Simple/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-TheSchwartz-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	TheSchwartz-Simple
 PORTVERSION=	0.05
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DBI only job dispatcher for TheSchwartz
 
-BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 
 USES=		perl5
 USE_PERL5=	configure

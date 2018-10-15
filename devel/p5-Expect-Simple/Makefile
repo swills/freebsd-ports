@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Expect-Simple/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Expect-Simple/Makefile 481984 2018-10-13 13:41:40Z mat $
 
 PORTNAME=	Expect-Simple
 PORTVERSION=	0.04
@@ -11,10 +11,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Wrapper around the Expect module
 
-BUILD_DEPENDS=	p5-Expect>=0:lang/p5-Expect
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Expect>=0:lang/p5-Expect
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

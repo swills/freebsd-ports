@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/qt-dist.mk 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/Mk/Uses/qt-dist.mk 482034 2018-10-14 08:01:13Z tcberner $
 #
 # There are three Qt related USES files with different access to Qt.
 #   - qmake: The port requires Qt's qmake to build -- creates the configure target
@@ -74,7 +74,7 @@ DESCR?=			${PORTSDIR}/devel/${_QT_RELNAME}/pkg-descr
 DESTDIRNAME=		INSTALL_ROOT
 
 .  if ${_QT_VER:M4}
-MASTER_SITE_SUBDIR?=	official_releases/qt/${_QT_VERSION:R}/${_QT_VERSION}/
+MASTER_SITE_SUBDIR?=	archive/qt/${_QT_VERSION:R}/${_QT_VERSION}/
 DISTNAME=		qt-everywhere-opensource-src-${_QT_VERSION}
 DIST_SUBDIR=		KDE
 .  else
@@ -196,6 +196,11 @@ _EXTRA_PATCHES_QT4+=	${PORTSDIR}/devel/${_QT_RELNAME}/files/extrapatch-aarch64
 _EXTRA_PATCHES_QT5=	${PORTSDIR}/devel/${_QT_RELNAME}/files/extrapatch-mkspecs_features_create__cmake.prf \
 			${PORTSDIR}/devel/${_QT_RELNAME}/files/extrapatch-mkspecs_features_qt__module.prf \
 			${PORTSDIR}/devel/${_QT_RELNAME}/files/extrapatch-mkspecs_common_bsd_bsd.conf
+.        if ${ARCH:Mmips*} || ${ARCH:Mpowerpc*} || ${ARCH} == sparc64
+_EXTRA_PATCHES_QT5+=	${PORTSDIR}/devel/${_QT_RELNAME}/files/extra-patch-mkspecs_common_g++-base.conf \
+			${PORTSDIR}/devel/${_QT_RELNAME}/files/extra-patch-mkspecs_common_gcc-base.conf
+USE_GCC=		yes
+.        endif
 .    endif
 EXTRA_PATCHES?=		${PORTSDIR}/devel/${_QT_RELNAME}/files/extrapatch-configure \
 			${_EXTRA_PATCHES_QT4} ${_EXTRA_PATCHES_QT5}
@@ -267,6 +272,14 @@ _QT_TOOLS+=		${UIC}
 # The list of QtBase components that need to be linked into WRKSRC/lib for
 # other QtBase ports. See below.
 _QT5_BASE=		core dbus gui network sql widgets
+
+.if ${_QT_VER:M5}
+post-patch: gcc-post-patch
+gcc-post-patch:
+	${REINPLACE_CMD} 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/mkspecs/common/gcc-base.conf
+	${REINPLACE_CMD} 's|%%GCC_DEFAULT%%|${GCC_DEFAULT}|' ${WRKSRC}/mkspecs/common/gcc-base.conf \
+		${WRKSRC}/mkspecs/common/g++-base.conf
+.endif
 
 pre-configure: qtbase-pre-configure
 qtbase-pre-configure:

@@ -1,5 +1,5 @@
 # Created by: Khairil Yusof <kaeru@inigo-tech.com>
-# $FreeBSD: head/deskutils/tagutils/Makefile 473661 2018-07-01 09:32:03Z linimon $
+# $FreeBSD: head/deskutils/tagutils/Makefile 481326 2018-10-06 07:33:02Z tobik $
 
 PORTNAME=	tagutils
 PORTVERSION=	0.3.0
@@ -9,6 +9,9 @@ MASTER_SITES=	http://releases.chipx86.com/leaftag/tagutils/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command line tool for tagging files
+
+DEPRECATED=	Unmaintained upstream
+EXPIRATION_DATE=	2018-10-15
 
 LIB_DEPENDS=	libleaftag.so:devel/libleaftag
 

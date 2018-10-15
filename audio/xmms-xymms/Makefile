@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-xymms/Makefile 419821 2016-08-08 11:31:02Z ehaupt $
+# $FreeBSD: head/audio/xmms-xymms/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xymms
 DISTVERSION=	0.9.1
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	xmms-
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Sega Genesis GYM plugin for XMMS
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LIB_DEPENDS=	libxmms.so:multimedia/xmms
 

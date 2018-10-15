@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-View-JSON/Makefile 455528 2017-12-04 17:09:40Z pi $
+# $FreeBSD: head/www/p5-Catalyst-View-JSON/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-View-JSON
 PORTVERSION=	0.36
@@ -12,10 +12,10 @@ COMMENT=	Catalyst View handler that returns stash data in JSON format
 
 LICENSE=	ART10
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.6000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.6000:www/p5-Catalyst-Runtime \
 		p5-JSON-Any>=1.15:converters/p5-JSON-Any \
 		p5-MRO-Compat>0:devel/p5-MRO-Compat
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

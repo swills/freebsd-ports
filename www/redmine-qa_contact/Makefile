@@ -1,12 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-qa_contact/Makefile 415101 2016-05-13 12:19:47Z feld $
+# $FreeBSD: head/www/redmine-qa_contact/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	qa_contact
 PORTVERSION=	0.0.20120612
 CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Redmine QA Contact plugin
 
 NO_ARCH=	yes

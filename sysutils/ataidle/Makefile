@@ -1,5 +1,5 @@
 # Created by: Bruce Cran <bruce@cran.org.uk>
-# $FreeBSD: head/sysutils/ataidle/Makefile 374505 2014-12-11 00:40:16Z feld $
+# $FreeBSD: head/sysutils/ataidle/Makefile 481902 2018-10-12 13:41:44Z tobik $
 
 PORTNAME=	ataidle
 PORTVERSION=	2.7.2
@@ -10,6 +10,9 @@ MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Utility to spin down ATA drives
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	obsoleted by camcontrol(8)
+EXPIRATION_DATE=	2018-12-31
 
 USE_RC_SUBR=	${PORTNAME}
 PORTDOCS=	Changelog README

@@ -1,5 +1,5 @@
 # Created by: Po-Chien Lin <linpc@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/p5-syntax/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-syntax/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	syntax
 PORTVERSION=	0.004
@@ -15,9 +15,9 @@ COMMENT=	Activate syntax extensions in Perl
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Data-OptList>=0.104:devel/p5-Data-OptList \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Data-OptList>=0.104:devel/p5-Data-OptList \
 		p5-namespace-clean>=0:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

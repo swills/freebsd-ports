@@ -1,5 +1,5 @@
 # Created by: Alexander Y. Grigoryev <alexander.4mail@gmail.com>
-# $FreeBSD: head/security/p5-File-KeePass/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-File-KeePass/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-KeePass
 PORTVERSION=	2.03
@@ -14,10 +14,10 @@ COMMENT=	Interface to KeePassX, KeePass 1.x and 2.x database files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Crypt-Rijndael>=1.0:security/p5-Crypt-Rijndael \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-Rijndael>=1.0:security/p5-Crypt-Rijndael \
 		p5-MIME-Base64>=1.0:converters/p5-MIME-Base64 \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

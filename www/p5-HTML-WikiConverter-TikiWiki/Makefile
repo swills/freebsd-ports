@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/www/p5-HTML-WikiConverter-TikiWiki/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-WikiConverter-TikiWiki/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-WikiConverter-TikiWiki
 PORTVERSION=	0.50
@@ -14,9 +14,9 @@ COMMENT=	Convert HTML to TikiWiki markup
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-WikiConverter>=0.54:www/p5-HTML-WikiConverter \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-WikiConverter>=0.54:www/p5-HTML-WikiConverter \
 		p5-URI>=1.35:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

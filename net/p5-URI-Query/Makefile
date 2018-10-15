@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-URI-Query/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-URI-Query/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	URI-Query
 PORTVERSION=	0.16
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

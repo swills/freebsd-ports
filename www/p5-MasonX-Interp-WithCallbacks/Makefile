@@ -1,5 +1,5 @@
 # Created by: Rod Taylor <ports@rbt.ca>
-# $FreeBSD: head/www/p5-MasonX-Interp-WithCallbacks/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-MasonX-Interp-WithCallbacks/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MasonX-Interp-WithCallbacks
 PORTVERSION=	1.19
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mason callback support via Params::CallbackRequest
 
-BUILD_DEPENDS=	p5-HTML-Mason>=0:www/p5-HTML-Mason \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Mason>=0:www/p5-HTML-Mason \
 		p5-Params-CallbackRequest>=0:devel/p5-Params-CallbackRequest
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

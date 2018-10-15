@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/php7-tarantool/Makefile 467931 2018-04-22 08:47:42Z sunpoet $
+# $FreeBSD: head/databases/php7-tarantool/Makefile 482057 2018-10-14 16:28:27Z sunpoet $
 
 PORTNAME=	tarantool
 PORTVERSION=	0.3.2

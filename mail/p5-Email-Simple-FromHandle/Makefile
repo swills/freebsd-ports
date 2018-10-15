@@ -1,5 +1,5 @@
 # Created by: <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Simple-FromHandle/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Email-Simple-FromHandle/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-Simple-FromHandle
 PORTVERSION=	0.054
@@ -14,10 +14,10 @@ COMMENT=	Perl library for making email objects from a filehandle
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Email-Simple>=0:mail/p5-Email-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Simple>=0:mail/p5-Email-Simple \
 		p5-IO-String>=0:devel/p5-IO-String
 
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/p5-Text-MultiMarkdown-ApacheHandler/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/p5-Text-MultiMarkdown-ApacheHandler/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-MultiMarkdown-ApacheHandler
 PORTVERSION=	0.01
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module for processing files with MultiMarkdown syntax for Apache
 
-BUILD_DEPENDS=	p5-Text-MultiMarkdown>=0:textproc/p5-Text-MultiMarkdown \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-MultiMarkdown>=0:textproc/p5-Text-MultiMarkdown \
 		p5-Text-Typography>=0:textproc/p5-Text-Typography \
 		${APACHE_PKGNAMEPREFIX}mod_perl2>=2.0.5:www/mod_perl2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		apache:run,2.2+ perl5
 USE_PERL5=	configure

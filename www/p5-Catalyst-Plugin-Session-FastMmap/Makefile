@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-FastMmap/Makefile 451829 2017-10-12 08:11:22Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-FastMmap/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Session-FastMmap
 PORTVERSION=	0.13
@@ -12,14 +12,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	FastMmap sessions for Catalyst
 
-BUILD_DEPENDS=	p5-Cache-FastMmap>0:devel/p5-Cache-FastMmap \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache-FastMmap>0:devel/p5-Cache-FastMmap \
 		p5-Catalyst-Runtime>2.99:www/p5-Catalyst-Runtime \
 		p5-Class-Accessor>0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>0:devel/p5-Class-Data-Inheritable \
 		p5-MRO-Compat>0:devel/p5-MRO-Compat \
 		p5-URI-Find>0:textproc/p5-URI-Find \
 		p5-URI>0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

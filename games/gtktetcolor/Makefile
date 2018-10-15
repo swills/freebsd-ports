@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/gtktetcolor/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/gtktetcolor/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gtktetcolor
 DISTVERSION=	0.6.5pre3
@@ -16,6 +16,9 @@ COMMENT=	Game for GNOME that resembles well-known Tetris and Columns
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 

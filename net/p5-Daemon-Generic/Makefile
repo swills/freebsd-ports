@@ -1,5 +1,5 @@
 # Created by: BluePex Security Solutions <freebsd-ports@bluepex.com>
-# $FreeBSD: head/net/p5-Daemon-Generic/Makefile 448074 2017-08-17 01:15:25Z danilo $
+# $FreeBSD: head/net/p5-Daemon-Generic/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Daemon-Generic
 PORTVERSION=	0.85
@@ -10,12 +10,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Framework to provide start/stop/reload for a daemon
 
-BUILD_DEPENDS=	p5-File-Flock>=0:devel/p5-File-Flock \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Flock>=0:devel/p5-File-Flock \
 		p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-AnyEvent>=0:devel/p5-AnyEvent \
 		p5-Event>=0:devel/p5-Event \
 		p5-Eval-LineNumbers>=0:devel/p5-Eval-LineNumbers
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

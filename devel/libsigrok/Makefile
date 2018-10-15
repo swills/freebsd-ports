@@ -1,15 +1,17 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/libsigrok/Makefile 451800 2017-10-11 21:18:39Z bsam $
+# $FreeBSD: head/devel/libsigrok/Makefile 481952 2018-10-13 00:44:29Z amdmi3 $
 
 PORTNAME=	libsigrok
 PORTVERSION=	0.5.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://sigrok.org/download/source/libsigrok/
 
 MAINTAINER=	bsam@FreeBSD.org
 COMMENT=	Framework for hardware logic analyzers, core library
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	doxygen:devel/doxygen
 LIB_DEPENDS=	libftdi1.so:devel/libftdi1 \

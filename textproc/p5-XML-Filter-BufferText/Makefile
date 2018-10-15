@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Filter-BufferText/Makefile 466947 2018-04-10 09:03:35Z amdmi3 $
+# $FreeBSD: head/textproc/p5-XML-Filter-BufferText/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-Filter-BufferText
 PORTVERSION=	1.01
@@ -14,8 +14,8 @@ COMMENT=	Filter to put all characters() in one event
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-SAX>=0:textproc/p5-XML-SAX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-SAX>=0:textproc/p5-XML-SAX
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-Elemental/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Pod-Elemental/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pod-Elemental
 PORTVERSION=	0.103004
@@ -13,7 +13,8 @@ COMMENT=	Treating a Pod document as a tree of elements
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \
 		p5-Mixin-Linewise>=0:devel/p5-Mixin-Linewise \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-Types>=0:devel/p5-MooseX-Types \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \
 		p5-String-Truncate>=0:textproc/p5-String-Truncate \
 		p5-Sub-Exporter-ForMethods>=0:devel/p5-Sub-Exporter-ForMethods \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Differences>=0:devel/p5-Test-Differences
 

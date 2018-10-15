@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-HTML-FormatExternal/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-HTML-FormatExternal/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-FormatExternal
 PORTVERSION=	26
@@ -12,10 +12,10 @@ COMMENT=	HTML to text formatting using external programs
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	p5-IPC-Run>0:devel/p5-IPC-Run \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-IPC-Run>0:devel/p5-IPC-Run \
 		p5-URI>=0.08:net/p5-URI \
 		p5-constant-defer>=0:devel/p5-constant-defer
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	ELINKS HTML2TEXT LINKS LYNX LYNX_CURRENT NETRIK W3M
 OPTIONS_DEFAULT=LYNX

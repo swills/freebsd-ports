@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-issue_templates/Makefile 415155 2016-05-13 21:09:42Z feld $
+# $FreeBSD: head/www/redmine-issue_templates/Makefile 481128 2018-10-02 19:18:10Z feld $
 
 PORTNAME=	issue_templates
 PORTVERSION=	0.1.1
@@ -8,7 +8,7 @@ MASTER_SITES=	https://bitbucket.org/akiko_pusu/redmine_issue_templates/downloads
 PKGNAMEPREFIX=	redmine-
 DISTNAME=	redmine_${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Redmine project issue templates plugin
 
 LICENSE=	GPLv2+

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Inline-TT/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Inline-TT/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Inline-TT
 PORTVERSION=	0.07
@@ -14,9 +14,9 @@ COMMENT=	Provides inline support for template toolkit 2.x
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Inline>=0.42:devel/p5-Inline \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Inline>=0.42:devel/p5-Inline \
 		p5-Template-Toolkit>=2:www/p5-Template-Toolkit
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

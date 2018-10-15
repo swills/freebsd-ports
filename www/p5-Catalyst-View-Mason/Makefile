@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-View-Mason/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-View-Mason/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-View-Mason
 PORTVERSION=	0.19
@@ -13,10 +13,10 @@ COMMENT=	Mason view class for Catalyst
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.5000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.5000:www/p5-Catalyst-Runtime \
 		p5-HTML-Mason>=0:www/p5-HTML-Mason \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Catalyst-Devel>=0:www/p5-Catalyst-Devel
 
 USES=		perl5

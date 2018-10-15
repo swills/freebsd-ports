@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Paranoid-Log-Email/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Paranoid-Log-Email/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Paranoid-Log-Email
 PORTVERSION=	2.00
@@ -12,8 +12,8 @@ COMMENT=	SMTP support for Paranoid::Log
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Paranoid>=2:devel/p5-Paranoid
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Paranoid>=2:devel/p5-Paranoid
 
 NO_ARCH=	YES
 USES=		perl5

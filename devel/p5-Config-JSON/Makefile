@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/devel/p5-Config-JSON/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Config-JSON/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Config-JSON
 PORTVERSION=	1.5202
@@ -13,9 +13,9 @@ COMMENT=	JSON based config file system
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JSON>=2.16:converters/p5-JSON \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=2.16:converters/p5-JSON \
 		p5-Moo>=0:devel/p5-Moo
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep
 
 USES=		perl5

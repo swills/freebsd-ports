@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/xtheater/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/xtheater/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xtheater
 PORTVERSION=	1.0.0.p1
@@ -11,6 +11,9 @@ DISTNAME=	Xtheater-${PORTVERSION:S/.p/-pre/}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	MPEG-1 player in GTK+ capable of playing MPEG-1 format streams
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

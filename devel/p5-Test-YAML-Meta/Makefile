@@ -1,5 +1,5 @@
 # Created by: Felippe de Meirelles Motta <lippemail@gmail.com>
-# $FreeBSD: head/devel/p5-Test-YAML-Meta/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-YAML-Meta/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-YAML-Meta
 PORTVERSION=	0.22
@@ -12,9 +12,9 @@ COMMENT=	Validation of the META.yml file in a distribution
 
 LICENSE=	ART20
 
-BUILD_DEPENDS=	p5-Test-YAML-Valid>=0:devel/p5-Test-YAML-Valid \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-YAML-Valid>=0:devel/p5-Test-YAML-Valid \
 		p5-Test-CPAN-Meta-YAML>=0.17:devel/p5-Test-CPAN-Meta-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

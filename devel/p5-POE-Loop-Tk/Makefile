@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-POE-Loop-Tk/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-POE-Loop-Tk/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Loop-Tk
 PORTVERSION=	1.305
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Bridge that allows POE to be driven by Tk
 
-BUILD_DEPENDS=	p5-POE>=1.356:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=1.356:devel/p5-POE \
 		p5-Tk>=804.031:x11-toolkits/p5-Tk
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-certsrv/Makefile 442680 2017-06-05 18:28:58Z feld $
+# $FreeBSD: head/devel/py-certsrv/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	certsrv
 PORTVERSION=	1.5.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python client for the Microsoft Certificate Authority
 
 LICENSE=	MIT

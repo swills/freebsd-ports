@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Authen-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-Simple
 PORTVERSION=	0.5
@@ -14,11 +14,11 @@ COMMENT=	Simple authentication framework
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-Crypt-PasswdMD5>=0:security/p5-Crypt-PasswdMD5 \
 		p5-Params-Validate>=0:devel/p5-Params-Validate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

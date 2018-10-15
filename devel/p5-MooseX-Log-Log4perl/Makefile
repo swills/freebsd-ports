@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Log-Log4perl/Makefile 451819 2017-10-12 08:10:17Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Log-Log4perl/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Log-Log4perl
 PORTVERSION=	0.47
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Logging role for Moose based on Log::Log4perl
 
-BUILD_DEPENDS=	p5-Any-Moose>=0.12:devel/p5-Any-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Any-Moose>=0.12:devel/p5-Any-Moose \
 		p5-Log-Log4perl>=1.13:devel/p5-Log-Log4perl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \
 		p5-Moose>=0.65:devel/p5-Moose
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Extract-Libarchive/Makefile 449892 2017-09-15 08:32:44Z mat $
+# $FreeBSD: head/archivers/p5-Archive-Extract-Libarchive/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Archive-Extract-Libarchive
 PORTVERSION=	0.38
@@ -14,8 +14,8 @@ COMMENT=	Generic archive extracting mechanism (using libarchive)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Object-Tiny>=0:devel/p5-Object-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Object-Tiny>=0:devel/p5-Object-Tiny
 TEST_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp \
 		p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-Test-Pod>=1.04:devel/p5-Test-Pod

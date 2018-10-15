@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/drumkv1-lv2/Makefile 478880 2018-09-03 15:40:22Z yuri $
+# $FreeBSD: head/audio/drumkv1-lv2/Makefile 481373 2018-10-06 16:08:43Z yuri $
 
 PORTNAME=	drumkv1
 DISTVERSION=	0.9.2
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libjack.so:audio/jack \
 		libsndfile.so:audio/libsndfile \
 		liblo.so:audio/liblo
 
-USES=		gmake localbase:ldflags pkgconfig qt:5 shared-mime-info
+USES=		compiler:c++11-lang gl gmake localbase:ldflags pkgconfig qt:5 shared-mime-info
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-alsa-midi
 USE_QT=		core gui widgets xml buildtools_build qmake_build

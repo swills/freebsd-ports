@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/p5-Geo-Point/Makefile 459935 2018-01-25 13:06:55Z sunpoet $
+# $FreeBSD: head/graphics/p5-Geo-Point/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Geo-Point
 PORTVERSION=	0.97
@@ -13,10 +13,10 @@ COMMENT=	Perl Module Tries To Abstract Coordinate Systems
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Geo-Distance>=0.06:math/p5-Geo-Distance \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Geo-Distance>=0.06:math/p5-Geo-Distance \
 		p5-Geo-Proj4>=1.01:graphics/p5-Geo-Proj4 \
 		p5-Math-Polygon>=1.01:math/p5-Math-Polygon
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/print/p5-XML-ApacheFOP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/p5-XML-ApacheFOP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-ApacheFOP
 PORTVERSION=	0.03
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	numisemis@yahoo.com
 COMMENT=	Access Apache FOP from Perl to create PDF files using XSL-FO
 
-BUILD_DEPENDS=	p5-Java>=0:devel/p5-Java \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Java>=0:devel/p5-Java \
 		${LOCALBASE}/share/java/fop/build/fop.jar:textproc/fop
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

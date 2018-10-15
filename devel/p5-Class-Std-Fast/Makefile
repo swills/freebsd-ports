@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/p5-Class-Std-Fast/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-Std-Fast/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-Std-Fast
 PORTVERSION=	0.0.8
@@ -15,8 +15,8 @@ COMMENT=	Faster but less secure than Class::Std
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Std>=0.0.9:devel/p5-Class-Std
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Std>=0.0.9:devel/p5-Class-Std
 
 USES=		perl5
 USE_PERL5=	configure

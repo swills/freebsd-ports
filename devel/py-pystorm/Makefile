@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-pystorm/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pystorm/Makefile 481127 2018-10-02 19:06:16Z feld $
 
 PORTNAME=	pystorm
 PORTVERSION=	3.1.0
@@ -8,7 +8,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Battle-tested Apache Storm Multi-Lang implementation for Python
 
 LICENSE=	APACHE20

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/security/tinc/Makefile 472682 2018-06-18 10:33:00Z dinoex $
+# $FreeBSD: head/security/tinc/Makefile 481663 2018-10-09 20:54:47Z dinoex $
 
 PORTNAME=	tinc
-PORTVERSION=	1.0.34
+PORTVERSION=	1.0.35
 CATEGORIES=	security
 MASTER_SITES=	https://www.tinc-vpn.org/packages/ \
 		http://www.tinc-vpn.org/packages/

@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <Alex.Deiter@Gmail.COM>
-# $FreeBSD: head/www/p5-HTML-Toc/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Toc/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Toc
 PORTVERSION=	1.12
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	alex.deiter@gmail.com
 COMMENT=	Generate, insert and update HTML Table of Contents
 
-BUILD_DEPENDS=	p5-Test-Differences>=0:devel/p5-Test-Differences \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Test-Differences>=0:devel/p5-Test-Differences \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

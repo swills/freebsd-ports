@@ -1,5 +1,5 @@
 # Created by: Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
-# $FreeBSD: head/biology/xmolwt/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/biology/xmolwt/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmolwt
 PORTVERSION=	0.7
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.st.hirosaki-u.ac.jp/~rmiya/xmolwt/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Calculate atom weight and percent of each element for a given formula
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 OPTIONS_DEFINE=	DOCS GTK2
 

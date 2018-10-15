@@ -1,5 +1,5 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/xmms-ladspa/Makefile 455336 2017-12-02 09:00:24Z amdmi3 $
+# $FreeBSD: head/audio/xmms-ladspa/Makefile 481894 2018-10-12 11:46:32Z antoine $
 
 PORTNAME=	xmms-ladspa
 PORTVERSION=	1.1
@@ -11,6 +11,9 @@ DISTNAME=	xmms_ladspa-${PORTVERSION}
 
 MAINTAINER=	arved@FreeBSD.org
 COMMENT=	XMMS Plugin that provides LADSPA Plugins to XMMS
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

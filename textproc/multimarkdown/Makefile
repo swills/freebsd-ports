@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/multimarkdown/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/textproc/multimarkdown/Makefile 481233 2018-10-04 16:22:30Z fernape $
 
 PORTNAME=	multimarkdown
-DISTVERSION=	6.3.2
+DISTVERSION=	6.4.0
 CATEGORIES=	textproc
 DIST_SUBDIR=	${PORTNAME}
 

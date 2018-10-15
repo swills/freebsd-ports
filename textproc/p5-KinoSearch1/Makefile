@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-KinoSearch1/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-KinoSearch1/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	KinoSearch1
 PORTVERSION=	1.01
@@ -12,10 +12,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl search engine library
 
-BUILD_DEPENDS=	p5-Lingua-StopWords>=0.02:textproc/p5-Lingua-StopWords \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Lingua-StopWords>=0.02:textproc/p5-Lingua-StopWords \
 		p5-Lingua-Stem-Snowball>=0.94:textproc/p5-Lingua-Stem-Snowball \
 		p5-Clone>=0.18:devel/p5-Clone
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

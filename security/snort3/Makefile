@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/snort3/Makefile 478429 2018-08-30 04:05:07Z danfe $
+# $FreeBSD: head/security/snort3/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	snort
 DISTVERSION=	3.0.0-a4.243
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	security
 PKGNAMESUFFIX=	3
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight network intrusion detection system
 
 LICENSE=	GPLv2

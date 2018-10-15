@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/semantik/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/semantik/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	semantik
 DISTVERSION=	0.9.5
@@ -7,7 +7,7 @@ CATEGORIES=	deskutils kde
 MASTER_SITES=	http://ftp.waf.io/pub/release/ \
 		http://www.freehackers.org/~tnagy/release/
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE mind mapping tool
 
 LICENSE=	GPLv3

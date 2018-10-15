@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Business-OnlinePayment-OCV/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/finance/p5-Business-OnlinePayment-OCV/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Business-OnlinePayment-OCV
 PORTVERSION=	0.01
@@ -14,9 +14,9 @@ COMMENT=	Business::OnlinePayment backend module for OCV
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Business-OCV>=0:finance/p5-Business-OCV \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Business-OCV>=0:finance/p5-Business-OCV \
 		p5-Business-OnlinePayment>=0:finance/p5-Business-OnlinePayment
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

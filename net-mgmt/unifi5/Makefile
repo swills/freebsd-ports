@@ -1,8 +1,8 @@
 # Created by: Alban MAIRE <a.maire@s2mi.fr>
-# $FreeBSD: head/net-mgmt/unifi5/Makefile 480288 2018-09-21 17:56:23Z feld $
+# $FreeBSD: head/net-mgmt/unifi5/Makefile 481828 2018-10-11 13:49:22Z feld $
 
 PORTNAME=	unifi5
-PORTVERSION=	5.8.30
+PORTVERSION=	5.9.29
 PORTREVISION=	0
 CATEGORIES=	net-mgmt java
 MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}/

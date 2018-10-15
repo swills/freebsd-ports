@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-App-GitHub/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-App-GitHub/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	App-GitHub
 PORTVERSION=	1.0.1
@@ -14,10 +14,10 @@ COMMENT=	GitHub Command Tools
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JSON-XS>=2.3:converters/p5-JSON-XS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON-XS>=2.3:converters/p5-JSON-XS \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-Net-GitHub>=0.12:net/p5-Net-GitHub
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

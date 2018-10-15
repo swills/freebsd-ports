@@ -1,5 +1,5 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/news/p5-News-Newsrc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/p5-News-Newsrc/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	News-Newsrc
 PORTVERSION=	1.11
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Manage newsrc files
 
-BUILD_DEPENDS=	p5-Set-IntSpan>=0:math/p5-Set-IntSpan
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Set-IntSpan>=0:math/p5-Set-IntSpan
 
 USES=		perl5
 USE_PERL5=	configure

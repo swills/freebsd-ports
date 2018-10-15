@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-plugins/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/gstreamer1-plugins/Makefile 481018 2018-10-01 09:21:37Z antoine $
 
 PORTNAME=	gstreamer
 PORTVERSION?=	${BASE_PORTVERSION}
@@ -40,7 +40,7 @@ UGLY_DISTNAME=		gst-plugins-ugly-${UGLY_PORTVERSION}
 UGLY_DISTFILE=		${UGLY_DISTNAME}${EXTRACT_SUFX}
 DIST?=		base
 
-USES+=		gettext gmake gnome libtool pathfix pkgconfig tar:xz
+USES+=		gettext gmake gnome libtool pathfix pkgconfig python tar:xz
 WANT_GSTREAMER=	yes
 USE_GNOME+=	glib20 introspection:build libxml2
 GNU_CONFIGURE=	yes

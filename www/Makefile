@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 480900 2018-09-29 09:05:37Z jbeich $
+# $FreeBSD: head/www/Makefile 482024 2018-10-14 05:29:32Z yuri $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -395,7 +395,6 @@
     SUBDIR += mattermost-server
     SUBDIR += mattermost-webapp
     SUBDIR += mediawiki127
-    SUBDIR += mediawiki129
     SUBDIR += mediawiki130
     SUBDIR += mediawiki131
     SUBDIR += mergelog
@@ -467,6 +466,7 @@
     SUBDIR += mod_php70
     SUBDIR += mod_php71
     SUBDIR += mod_php72
+    SUBDIR += mod_php73
     SUBDIR += mod_proctitle
     SUBDIR += mod_proxy_xml
     SUBDIR += mod_python35
@@ -1463,6 +1463,9 @@
     SUBDIR += php72-opcache
     SUBDIR += php72-session
     SUBDIR += php72-tidy
+    SUBDIR += php73-opcache
+    SUBDIR += php73-session
+    SUBDIR += php73-tidy
     SUBDIR += phpbb
     SUBDIR += phpbb3
     SUBDIR += phpgroupware
@@ -2225,6 +2228,7 @@
     SUBDIR += rubygem-websocket-driver
     SUBDIR += rubygem-websocket-extensions
     SUBDIR += rubygem-yapra
+    SUBDIR += s
     SUBDIR += sabredav
     SUBDIR += sahi
     SUBDIR += sakai

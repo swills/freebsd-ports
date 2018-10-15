@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-AnyData/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-AnyData/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	AnyData
 PORTVERSION=	0.12
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-CGI>=0:www/p5-CGI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-CGI>=0:www/p5-CGI
 TEST_DEPENDS=	p5-Test-Output>=0:devel/p5-Test-Output
 
 NO_ARCH=	yes

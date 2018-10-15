@@ -1,5 +1,5 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/textproc/p5-Sphinx-Search/Makefile 456150 2017-12-12 13:34:21Z sunpoet $
+# $FreeBSD: head/textproc/p5-Sphinx-Search/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Sphinx-Search
 PORTVERSION=	0.31
@@ -14,12 +14,12 @@ COMMENT=	Sphinx search engine API Perl client
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-File-SearchPath>=0:devel/p5-File-SearchPath \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Path-Class>=0:devel/p5-Path-Class
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

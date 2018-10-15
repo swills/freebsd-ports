@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/bolt/Makefile 447485 2017-08-07 09:01:16Z amdmi3 $
+# $FreeBSD: head/www/bolt/Makefile 481130 2018-10-02 19:21:49Z feld $
 
 PORTNAME=	bolt
 PORTVERSION=	2.2.24
@@ -7,7 +7,7 @@ PORTREVISION=	0
 CATEGORIES=	www
 MASTER_SITES=	https://bolt.cm/distribution/
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sophisticated, lightweight & simple CMS
 
 LICENSE=	MIT

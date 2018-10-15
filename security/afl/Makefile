@@ -1,10 +1,10 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/security/afl/Makefile 468504 2018-04-27 23:10:39Z jbeich $
+# $FreeBSD: head/security/afl/Makefile 482035 2018-10-14 08:48:23Z tobik $
 
 PORTNAME=	afl
 PORTVERSION=	2.52
 DISTVERSIONSUFFIX=	b
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	http://lcamtuf.coredump.cx/afl/releases/
 
@@ -33,7 +33,7 @@ LLVM_DESC=	LLVM-based instrumentation
 # You have implicit approval to bump the LLVM version here as long as
 # it builds WITH=LLVM and `make test` passes on all supported
 # releases.
-LLVM_VERSION?= 60
+LLVM_VERSION?= 70
 
 LLVM_ALL_TARGET=	llvm_mode
 LLVM_BUILD_DEPENDS=	clang${LLVM_VERSION}:devel/llvm${LLVM_VERSION}

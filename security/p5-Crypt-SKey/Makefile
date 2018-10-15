@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan
-# $FreeBSD: head/security/p5-Crypt-SKey/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Crypt-SKey/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Crypt-SKey
 PORTVERSION=	0.10
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Perl S/Key calculator
 
-BUILD_DEPENDS=	p5-Digest-MD4>=0:security/p5-Digest-MD4 \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Digest-MD4>=0:security/p5-Digest-MD4 \
 		p5-Digest-SHA1>=0:security/p5-Digest-SHA1 \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

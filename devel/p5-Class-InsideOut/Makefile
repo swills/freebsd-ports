@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Class-InsideOut/Makefile 437596 2017-04-03 07:42:39Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-InsideOut/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-InsideOut
 PORTVERSION=	1.14
@@ -13,8 +13,8 @@ COMMENT=	Safe, simple inside-out object construction kit
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-ISA>=0:devel/p5-Class-ISA
 
 PORTSCOUT=	skipv:1.0301
 

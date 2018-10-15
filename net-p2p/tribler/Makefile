@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/net-p2p/tribler/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/net-p2p/tribler/Makefile 481402 2018-10-06 21:20:42Z yuri $
 
 PORTNAME=	tribler
 PORTVERSION=	6.5.2
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Tribler/tribler/releases/download/v${PORTVERSION}/
 DISTNAME=	Tribler-v${PORTVERSION}
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}apsw>0:databases/py-apsw@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}gmpy>0:math/py-gmpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}netifaces>0:net/py-netifaces@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}libtorrent-rasterbar>=0.16.4:net-p2p/libtorrent-rasterbar-python@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}libtorrent-rasterbar>=0.16.4:net-p2p/py-libtorrent-rasterbar@${PY_FLAVOR} \
 		libsodium>0:security/libsodium \
 		${PYTHON_PKGNAMEPREFIX}m2crypto>0:security/py-m2crypto@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR} \

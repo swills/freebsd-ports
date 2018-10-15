@@ -1,8 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/sysutils/flashrom/Makefile 464166 2018-03-11 11:27:16Z tobik $
+# $FreeBSD: head/sysutils/flashrom/Makefile 481795 2018-10-11 09:12:46Z manu $
 
 PORTNAME=	flashrom
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://download.flashrom.org/releases/
 
@@ -17,23 +18,20 @@ ONLY_FOR_ARCHS=	amd64 i386
 LIB_DEPENDS=	libpci.so:devel/libpci
 
 USES=		gmake tar:bzip2
-MAKE_ENV=	CONFIG_BUSPIRATE_SPI=no \
-		WARNERROR=no
+
+MAKE_ENV=	WARNERROR=no
 
 PLIST_FILES=	bin/flashrom \
 		man/man8/flashrom.8.gz
 PORTDOCS=	*
 
-OPTIONS_DEFINE=		BUSPIRATE DMIDECODE DOCS FTDI
+OPTIONS_DEFINE=		DMIDECODE DOCS FTDI
 OPTIONS_DEFAULT=	DMIDECODE FTDI
 
-BUSPIRATE_DESC=		Enable buspirate support (broken)
 DMIDECODE_DESC=		Use dmidecode to gather DMI information
 FTDI_DESC=		Enable external FT2232SPI flasher support
 
-BUSPIRATE_MAKE_ENV=	CONFIG_BUSPIRATE_SPI=yes
-
-DMIDECODE_RUN_DEPENDS+=	dmidecode:sysutils/dmidecode
+DMIDECODE_RUN_DEPENDS=	dmidecode:sysutils/dmidecode
 
 FTDI_LIB_DEPENDS=	libftdi1.so:devel/libftdi1
 FTDI_USES=		pkgconfig

@@ -1,5 +1,5 @@
 # Created by: Chenguang LI
-# $FreeBSD: head/databases/sqlbuddy/Makefile 477060 2018-08-13 09:25:01Z tz $
+# $FreeBSD: head/databases/sqlbuddy/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	sqlbuddy
 PORTVERSION=	1.3.3
@@ -12,7 +12,7 @@ COMMENT=	Web based MySQL administration with a set of PHP scripts
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	deliciousbrains

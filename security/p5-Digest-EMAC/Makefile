@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan
-# $FreeBSD: head/security/p5-Digest-EMAC/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Digest-EMAC/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Digest-EMAC
 PORTVERSION=	1.2
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Perl5 interface to EMAC Double Message-Digest Algorithms
 
-BUILD_DEPENDS=	p5-Crypt-CBC>=0:security/p5-Crypt-CBC \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Crypt-CBC>=0:security/p5-Crypt-CBC \
 		p5-MIME-Base64>=0:converters/p5-MIME-Base64
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

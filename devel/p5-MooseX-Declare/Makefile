@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Declare/Makefile 476978 2018-08-12 08:06:23Z antoine $
+# $FreeBSD: head/devel/p5-MooseX-Declare/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Declare
 PORTVERSION=	0.43
@@ -13,7 +13,8 @@ COMMENT=	Declarative syntax for Moose
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Devel-Declare>=0.005011:devel/p5-Devel-Declare \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Devel-Declare>=0.005011:devel/p5-Devel-Declare \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime \
 		p5-Moose>=0.90:devel/p5-Moose \
 		p5-MooseX-Method-Signatures>=0.36:devel/p5-MooseX-Method-Signatures \
@@ -25,7 +26,6 @@ BUILD_DEPENDS=	p5-Devel-Declare>=0.005011:devel/p5-Devel-Declare \
 		p5-aliased>=0:devel/p5-aliased \
 		p5-namespace-autoclean>=0.16:devel/p5-namespace-autoclean \
 		p5-namespace-clean>=0.19:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 USES=		perl5

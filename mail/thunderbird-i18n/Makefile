@@ -1,11 +1,11 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/thunderbird-i18n/Makefile 479660 2018-09-13 00:54:15Z jbeich $
+# $FreeBSD: head/mail/thunderbird-i18n/Makefile 481073 2018-10-01 21:43:22Z cmt $
 
 PORTNAME=	thunderbird-i18n
-PORTVERSION=	60.1.0
+PORTVERSION=	60.2.1
 CATEGORIES=	mail news net-im
-MASTER_SITES=	MOZILLA/${PORTNAME:S|-i18n||}/releases/${DISTVERSION}/linux-i686/xpi \
-		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build1/linux-i686/xpi
+MASTER_SITES=	MOZILLA/${PORTNAME:S|-i18n||}/releases/${DISTVERSION}/linux-x86_64/xpi \
+		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build1/linux-x86_64/xpi
 PKGNAMEPREFIX=
 DISTFILES=	${THUNDERBIRD_I18N_:S/$/.xpi/}
 DIST_SUBDIR=	xpi/${DISTNAME}

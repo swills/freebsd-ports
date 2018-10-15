@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Type-Tiny/Makefile 475851 2018-07-29 19:30:07Z sunpoet $
+# $FreeBSD: head/devel/p5-Type-Tiny/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Type-Tiny
 PORTVERSION=	1.004002
@@ -15,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Exporter-Tiny>=0.026:devel/p5-Exporter-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Exporter-Tiny>=0.026:devel/p5-Exporter-Tiny
 TEST_DEPENDS=	p5-Class-InsideOut>=0:devel/p5-Class-InsideOut \
 		p5-Function-Parameters>=0:devel/p5-Function-Parameters \
 		p5-JSON>=0:converters/p5-JSON \

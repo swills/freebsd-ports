@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-ahx/Makefile 419811 2016-08-08 09:47:18Z ehaupt $
+# $FreeBSD: head/audio/xmms-ahx/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	xmms-ahx
 PORTVERSION=	0.6
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}.tar.gz
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	XMMS plugin for playing AHX tunes
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

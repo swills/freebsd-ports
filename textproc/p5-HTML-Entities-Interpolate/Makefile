@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-Entities-Interpolate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-HTML-Entities-Interpolate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Entities-Interpolate
 PORTVERSION=	1.10
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTML-Parser>=3.69:www/p5-HTML-Parser \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Parser>=3.69:www/p5-HTML-Parser \
 		p5-Tie-Function>=0.02:devel/p5-Tie-Function
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Capture-Tiny>=0.44:devel/p5-Capture-Tiny \
 		p5-File-Slurper>=0.009:devel/p5-File-Slurper
 

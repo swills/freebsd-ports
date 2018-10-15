@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/databases/p5-Class-DBI-Plugin-Type/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/databases/p5-Class-DBI-Plugin-Type/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Class-DBI-Plugin-Type
 PORTVERSION=	0.02
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Determine type information for columns
 
-BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 USES=		perl5

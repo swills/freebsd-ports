@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-FormatText-WithLinks-AndTables/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-HTML-FormatText-WithLinks-AndTables/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-FormatText-WithLinks-AndTables
 PORTVERSION=	0.07
@@ -13,10 +13,10 @@ COMMENT=	Perl5 module to convert HTML to text with tables intact
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Format>=0:textproc/p5-HTML-Format \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Format>=0:textproc/p5-HTML-Format \
 		p5-HTML-FormatText-WithLinks>=0:textproc/p5-HTML-FormatText-WithLinks \
 		p5-HTML-Tree>=0:www/p5-HTML-Tree
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Ilya Bakulin <webmaster@kibab.com>
-# $FreeBSD: head/devel/php5-thrift/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/php5-thrift/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION}
@@ -13,7 +13,7 @@ COMMENT=	PHP interface to Thrift
 
 USES=		php:ext
 PHP_MODNAME=	thrift_protocol
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 DISTINFO_FILE=	${.CURDIR}/../thrift/distinfo
 WRKSRC_SUBDIR=	lib/php/src/ext/thrift_protocol

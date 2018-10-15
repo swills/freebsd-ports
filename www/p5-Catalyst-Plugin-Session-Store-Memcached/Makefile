@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-Store-Memcached/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Session-Store-Memcached/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Session-Store-Memcached
 PORTVERSION=	0.05
@@ -14,7 +14,8 @@ COMMENT=	Memcached storage backend for session data
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Cache-Memcached-Managed>=0:databases/p5-Cache-Memcached-Managed \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Cache-Memcached-Managed>=0:databases/p5-Cache-Memcached-Managed \
 		p5-Catalyst-Plugin-Session>=0.26:www/p5-Catalyst-Plugin-Session \
 		p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	p5-Cache-Memcached-Managed>=0:databases/p5-Cache-Memcached-Manage
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-Emulate-Class-Accessor-Fast>=0:devel/p5-MooseX-Emulate-Class-Accessor-Fast \
 		p5-namespace-clean>=0:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

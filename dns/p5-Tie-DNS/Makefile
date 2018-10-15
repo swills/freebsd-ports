@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/dns/p5-Tie-DNS/Makefile 470379 2018-05-19 11:06:31Z sunpoet $
+# $FreeBSD: head/dns/p5-Tie-DNS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tie-DNS
 PORTVERSION=	1.151560
@@ -14,9 +14,9 @@ COMMENT=	Tie interface to Net::DNS
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS \
 		p5-Tie-Cache>=0:devel/p5-Tie-Cache
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-CheckManifest>=0:devel/p5-Test-CheckManifest \
 		p5-Test-Perl-Critic>=0:textproc/p5-Test-Perl-Critic
 

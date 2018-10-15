@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/atutor/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/atutor/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	atutor
 PORTVERSION=	2.2.2
@@ -12,7 +12,7 @@ COMMENT=	Open Source Web-based Learning Content Management System (LCMS)
 
 LICENSE=	GPLv2
 
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 USES=		cpe php
 

@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-SVN-Simple/Makefile 453819 2017-11-09 14:48:35Z danfe $
+# $FreeBSD: head/devel/p5-SVN-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-Simple
 PORTVERSION=	0.28
@@ -14,8 +14,8 @@ COMMENT=	Simple interface to SVN::Delta::Editor
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-subversion>=0:devel/p5-subversion
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-subversion>=0:devel/p5-subversion
 
 USES=		perl5
 USE_PERL5=	configure

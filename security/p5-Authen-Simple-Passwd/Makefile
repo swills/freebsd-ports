@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Simple-Passwd/Makefile 471680 2018-06-04 18:14:27Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-Simple-Passwd/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Authen-Simple-Passwd
 PORTVERSION=	0.6
@@ -14,8 +14,8 @@ COMMENT=	Simple Passwd authentication
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple
 
 USES=		perl5
 USE_PERL5=	modbuild

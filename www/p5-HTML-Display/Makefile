@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Display/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-Display/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Display
 PORTVERSION=	0.40
@@ -14,10 +14,10 @@ COMMENT=	Display HTML locally in a browser
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-TokeParser-Simple>=2:www/p5-HTML-TokeParser-Simple \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-TokeParser-Simple>=2:www/p5-HTML-TokeParser-Simple \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=5.69:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

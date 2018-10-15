@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Dispatch-Configurator-Any/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Log-Dispatch-Configurator-Any/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Log-Dispatch-Configurator-Any
 PORTVERSION=	1.122640
@@ -13,10 +13,10 @@ COMMENT=	Configurator implementation with Config::Any
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Config-Any>=0.15:devel/p5-Config-Any \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Config-Any>=0.15:devel/p5-Config-Any \
 		p5-Log-Dispatch>=2.23:devel/p5-Log-Dispatch \
 		p5-Log-Dispatch-Config>=0:devel/p5-Log-Dispatch-Config
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Config-Tiny>=0:devel/p5-Config-Tiny \
 		p5-Test-Pod>=1.14:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=1.04:devel/p5-Test-Pod-Coverage \

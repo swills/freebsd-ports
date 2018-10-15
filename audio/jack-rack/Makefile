@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/audio/jack-rack/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/audio/jack-rack/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	jack-rack
 PORTVERSION=	1.4.7
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	LADSPA effects rack for the JACK audio server
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 BUILD_DEPENDS=	${LOCALBASE}/include/ladspa.h:audio/ladspa
 LIB_DEPENDS=	libjack.so:audio/jack \

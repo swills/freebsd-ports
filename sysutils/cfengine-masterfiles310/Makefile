@@ -1,5 +1,5 @@
 # Created by: cy@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine-masterfiles310/Makefile 465143 2018-03-21 01:33:32Z cy $
+# $FreeBSD: head/sysutils/cfengine-masterfiles310/Makefile 482121 2018-10-14 22:11:32Z dvl $
 
 PORTNAME=	cfengine-masterfiles
 PORTVERSION=	3.10.3
@@ -12,6 +12,9 @@ MAINTAINER=	cy@FreeBSD.org
 COMMENT=	cfengine sample policies for installations and upgrades
 
 LICENSE=	GPLv3
+
+DEPRECATED=		cfengine310 will retire at FreeBSD 11 EOL
+EXPIRATION_DATE=	2021-09-30
 
 CPE_VENDOR=	gnu
 

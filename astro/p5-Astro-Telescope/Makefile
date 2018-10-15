@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-Telescope/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/astro/p5-Astro-Telescope/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Astro-Telescope
 PORTVERSION=	0.71
@@ -14,8 +14,8 @@ COMMENT=	Class for obtaining telescope information
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Astro-PAL>=0.99:astro/p5-Astro-PAL
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Astro-PAL>=0.99:astro/p5-Astro-PAL
 
 NO_ARCH=	yes
 USE_PERL5=	modbuild

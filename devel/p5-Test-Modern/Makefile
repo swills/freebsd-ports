@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Modern/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Modern/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Modern
 PORTVERSION=	0.013
@@ -14,14 +14,14 @@ COMMENT=	Precision testing for modern perl
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Exporter-Tiny>=0:devel/p5-Exporter-Tiny \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Exporter-Tiny>=0:devel/p5-Exporter-Tiny \
 		p5-Import-Into>=1:devel/p5-Import-Into \
 		p5-Module-Runtime>=0.012:devel/p5-Module-Runtime \
 		p5-Test-API>=0.004:devel/p5-Test-API \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Fatal>0:devel/p5-Test-Fatal \
 		p5-Test-Warnings>0:devel/p5-Test-Warnings
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Moose>=0:devel/p5-Moose
 
 USES=		perl5

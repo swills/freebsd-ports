@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-File-Find-Rule-VCS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Find-Rule-VCS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Find-Rule-VCS
 PORTVERSION=	1.08
@@ -14,9 +14,9 @@ COMMENT=	Exclude files and directories for Version Control Systems
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-Find-Rule>=0.20:devel/p5-File-Find-Rule \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Find-Rule>=0.20:devel/p5-File-Find-Rule \
 		p5-Text-Glob>=0.08:textproc/p5-Text-Glob
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

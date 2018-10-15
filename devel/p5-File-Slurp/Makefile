@@ -1,9 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Slurp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Slurp/Makefile 481579 2018-10-08 23:28:24Z wen $
 
 PORTNAME=	File-Slurp
-PORTVERSION=	9999.19
-PORTREVISION=	1
+PORTVERSION=	9999.21
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:URI

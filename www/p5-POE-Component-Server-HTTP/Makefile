@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <lin-chi@lastamericanempire.com>
-# $FreeBSD: head/www/p5-POE-Component-Server-HTTP/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-POE-Component-Server-HTTP/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	POE-Component-Server-HTTP
 PORTVERSION=	0.09
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE Component to create HTTP Servers
 
-BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-POE-API-Peek>=0:devel/p5-POE-API-Peek \
 		p5-YAML>=0:textproc/p5-YAML \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

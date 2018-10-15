@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-Plucene-Analysis-CJKAnalyzer/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Plucene-Analysis-CJKAnalyzer/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Plucene-Analysis-CJKAnalyzer
 PORTVERSION=	0.02
@@ -15,8 +15,8 @@ COMMENT=	Analyzer for CJK texts
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Plucene>=0:textproc/p5-Plucene
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Plucene>=0:textproc/p5-Plucene
 TEST_DEPENDS=	p5-YAML>=0:textproc/p5-YAML
 
 USE_PERL5=	configure

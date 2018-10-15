@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/p5-MARC-Charset/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-MARC-Charset/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MARC-Charset
 PORTVERSION=	1.35
@@ -14,9 +14,9 @@ COMMENT=	Convert MARC-8 encoded strings to UTF-8
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-XML-SAX>=0:textproc/p5-XML-SAX
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

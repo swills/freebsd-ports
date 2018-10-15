@@ -1,5 +1,5 @@
 # Created by: Garrett A. Wollman
-# $FreeBSD: head/www/p5-HTML-Element-Extended/Makefile 475985 2018-07-31 09:07:54Z amdmi3 $
+# $FreeBSD: head/www/p5-HTML-Element-Extended/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Element-Extended
 PORTVERSION=	1.18
@@ -14,8 +14,8 @@ COMMENT=	Extended interface to HTML::Tree's HTML::Element class
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTML-Tree>=3.01:www/p5-HTML-Tree
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Tree>=3.01:www/p5-HTML-Tree
 
 USES=		perl5
 USE_PERL5=	configure

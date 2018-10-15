@@ -1,8 +1,9 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/ftp/vsftpd/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/ftp/vsftpd/Makefile 481692 2018-10-10 06:11:42Z dinoex $
 
 PORTNAME=	vsftpd
 PORTVERSION=	3.0.3
+PORTREVISION=	1
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	https://security.appspot.com/downloads/ \
 		GENTOO

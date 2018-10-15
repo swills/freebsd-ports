@@ -1,9 +1,8 @@
 # Created by: Mauricio Herrera Cuadra <mauricio@arareko.net>
-# $FreeBSD: head/biology/p5-Bio-ASN1-EntrezGene/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/biology/p5-Bio-ASN1-EntrezGene/Makefile 481714 2018-10-10 10:23:10Z sunpoet $
 
 PORTNAME=	Bio-ASN1-EntrezGene
-PORTVERSION=	1.72
-PORTREVISION=	1
+PORTVERSION=	1.73
 PORTEPOCH=	1
 CATEGORIES=	biology perl5
 MASTER_SITES=	CPAN
@@ -16,11 +15,16 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-BioPerl>=0:biology/p5-BioPerl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-BioPerl>=0:biology/p5-BioPerl
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
+
+post-patch:
+# do not install Bio::SeqIO::entrezgene which is identical with the one from p5-BioPerl
+	@${RM} ${WRKSRC}/lib/Bio/SeqIO/entrezgene.pm
 
 .include <bsd.port.mk>

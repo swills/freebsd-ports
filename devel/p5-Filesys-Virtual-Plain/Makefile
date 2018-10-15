@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Filesys-Virtual-Plain/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Filesys-Virtual-Plain/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Filesys-Virtual-Plain
 PORTVERSION=	0.10
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Plain virtual filesystem
 
-BUILD_DEPENDS=	p5-Filesys-Virtual>=0.05:devel/p5-Filesys-Virtual
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Filesys-Virtual>=0.05:devel/p5-Filesys-Virtual
 
 USES=		perl5
 USE_PERL5=	configure

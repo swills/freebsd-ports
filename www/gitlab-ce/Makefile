@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-ce/Makefile 480522 2018-09-23 18:25:11Z mfechner $
+# $FreeBSD: head/www/gitlab-ce/Makefile 481317 2018-10-06 05:29:33Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.3.0
+PORTVERSION=	11.3.4
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 MY_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=8.3.3:devel/gitlab-shell \
 	gitlab-workhorse>=6.1.0:www/gitlab-workhorse \
-	gitaly>=0.120.0:devel/gitaly \
+	gitaly>=0.120.1:devel/gitaly \
 	gitlab-pages>=1.1.0:www/gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
@@ -218,7 +218,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	17bd59adecf525e5e0a42101d241d05e29228338
+GL_COMMIT=	30f019dca78bb64bcb8b355a267be006884e6d8f
 
 USERS=	git
 GROUPS=	git

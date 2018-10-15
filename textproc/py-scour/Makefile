@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-scour/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-scour/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	scour
 PORTVERSION=	0.35
@@ -7,7 +7,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SVG scrubber
 
 LICENSE=	APACHE20

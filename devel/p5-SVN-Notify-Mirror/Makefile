@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-SVN-Notify-Mirror/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-SVN-Notify-Mirror/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SVN-Notify-Mirror
 PORTVERSION=	0.040
@@ -15,9 +15,9 @@ COMMENT=	Keep a mirrored working copy of a repository path
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-SVN-Notify>=2.83:devel/p5-SVN-Notify \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-SVN-Notify>=2.83:devel/p5-SVN-Notify \
 		p5-YAML>=0.81:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	modbuild

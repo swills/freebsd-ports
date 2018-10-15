@@ -1,5 +1,5 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/sysutils/wmcube-gdk/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/sysutils/wmcube-gdk/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	wmcube
 PORTVERSION=	0.98p2
@@ -11,6 +11,9 @@ DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}-${PORTVERSION}
 
 MAINTAINER=	garga@FreeBSD.org
 COMMENT=	Modified version of the dockapp wmCube
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2
 

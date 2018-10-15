@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/p5-Giovanni/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/sysutils/p5-Giovanni/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Giovanni
 PORTVERSION=	1.12
@@ -13,7 +13,8 @@ COMMENT=	PERL-based software deployment tool inspired by capistrano
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	\
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	\
 		p5-Config-GitLike>=0:devel/p5-Config-GitLike \
 		p5-Expect>=0:lang/p5-Expect \
 		p5-Git-Repository>=0:devel/p5-Git-Repository \
@@ -22,7 +23,6 @@ BUILD_DEPENDS=	\
 		p5-Mouse>=0:devel/p5-Mouse \
 		p5-Net-OpenSSH>=0:net/p5-Net-OpenSSH
 
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

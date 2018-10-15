@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-Graph-Writer-GraphViz/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Graph-Writer-GraphViz/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Graph-Writer-GraphViz
 PORTVERSION=	0.11
@@ -14,11 +14,11 @@ COMMENT=	GraphViz Writer for Graph object
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Graph>=0.54:math/p5-Graph \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Graph>=0.54:math/p5-Graph \
 		p5-Graph-ReadWrite>=0:graphics/p5-Graph-ReadWrite \
 		p5-GraphViz>=2.02:graphics/p5-GraphViz \
 		p5-IO-All>=0.30:devel/p5-IO-All
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

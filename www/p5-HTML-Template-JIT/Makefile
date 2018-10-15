@@ -1,5 +1,5 @@
 # Created by: alex@kapranoff.ru
-# $FreeBSD: head/www/p5-HTML-Template-JIT/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Template-JIT/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-Template-JIT
 PORTVERSION=	0.05
@@ -13,10 +13,10 @@ COMMENT=	Perl module to compile HTML Templates with Inline::C
 
 LICENSE=	ARTPERL10
 
-BUILD_DEPENDS=	p5-HTML-Template>=2.8:www/p5-HTML-Template \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Template>=2.8:www/p5-HTML-Template \
 		p5-Inline>=0.43:devel/p5-Inline \
 		p5-Inline-C>=0:devel/p5-Inline-C
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

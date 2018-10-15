@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-pip/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-pip/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	pip
 PORTVERSION=	1.19
@@ -15,7 +15,8 @@ COMMENT=	Perl Installation Program
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Archive-Zip>=1.29:archivers/p5-Archive-Zip \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Archive-Zip>=1.29:archivers/p5-Archive-Zip \
 		p5-CPAN-Inject>=0.07:devel/p5-CPAN-Inject \
 		p5-File-Which>=1.08:sysutils/p5-File-Which \
 		p5-File-pushd>=0.32:devel/p5-File-pushd \
@@ -23,7 +24,6 @@ BUILD_DEPENDS=	p5-Archive-Zip>=1.29:archivers/p5-Archive-Zip \
 		p5-Params-Util>=1.00:devel/p5-Params-Util \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-LWP-Online>=0:www/p5-LWP-Online \
 		p5-Test-Script>=0:devel/p5-Test-Script \
 		p5-Compress-Bzip2>=0:archivers/p5-Compress-Bzip2

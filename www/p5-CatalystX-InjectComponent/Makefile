@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/p5-CatalystX-InjectComponent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CatalystX-InjectComponent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	CatalystX-InjectComponent
 PORTVERSION=	0.025
@@ -14,9 +14,9 @@ COMMENT=	Inject components into your Catalyst application
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.80000:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.80000:www/p5-Catalyst-Runtime \
 		p5-Class-Inspector>=0:devel/p5-Class-Inspector
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Most>=0:devel/p5-Test-Most
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Parse-HTTP-UserAgent/Makefile 454782 2017-11-23 19:08:55Z sunpoet $
+# $FreeBSD: head/www/p5-Parse-HTTP-UserAgent/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Parse-HTTP-UserAgent
 PORTVERSION=	0.42
@@ -14,10 +14,10 @@ COMMENT=	Parser for the User Agent string
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-JSON>=0:converters/p5-JSON \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-JSON>=0:converters/p5-JSON \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-YAML>=0:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Pod>=0:devel/p5-Test-Pod \
 		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage
 

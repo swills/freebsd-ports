@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/devel/p5-File-DesktopEntry/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-DesktopEntry/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-DesktopEntry
 PORTVERSION=	0.22
@@ -13,8 +13,8 @@ COMMENT=	Object to handle desktop files
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-File-BaseDir>=0.03:devel/p5-File-BaseDir
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-BaseDir>=0.03:devel/p5-File-BaseDir
 
 USES=		perl5
 USE_PERL5=	configure

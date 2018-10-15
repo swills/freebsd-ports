@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Spec/Makefile 454780 2017-11-23 19:08:45Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Spec/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Test-Spec
 PORTVERSION=	0.54
@@ -13,11 +13,11 @@ COMMENT=	Write tests in a declarative specification style
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Package-Stash>=0.23:devel/p5-Package-Stash \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Package-Stash>=0.23:devel/p5-Package-Stash \
 		p5-Test-Deep>=0.103:devel/p5-Test-Deep \
 		p5-Test-Trap>=0:devel/p5-Test-Trap \
 		p5-Tie-IxHash>=0:devel/p5-Tie-IxHash
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USE_PERL5=	configure

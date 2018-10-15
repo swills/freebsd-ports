@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Atom-SimpleFeed/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/textproc/p5-XML-Atom-SimpleFeed/Makefile 481622 2018-10-09 10:56:05Z wen $
 
 PORTNAME=	XML-Atom-SimpleFeed
-PORTVERSION=	0.862
+PORTVERSION=	0.902
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

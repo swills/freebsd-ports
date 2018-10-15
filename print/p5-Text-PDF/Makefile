@@ -1,9 +1,8 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/print/p5-Text-PDF/Makefile 480794 2018-09-27 09:08:30Z amdmi3 $
+# $FreeBSD: head/print/p5-Text-PDF/Makefile 481721 2018-10-10 10:24:08Z sunpoet $
 
 PORTNAME=	Text-PDF
-PORTVERSION=	0.29a
-PORTREVISION=	3
+PORTVERSION=	0.31
 CATEGORIES=	print perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,14 +13,10 @@ COMMENT=	PDF manipulation module
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-WRKSRC=		${WRKDIR}/${DISTNAME:C/a$//}
-
 USES=		perl5
 USE_PERL5=	configure
-NO_ARCH=	yes
 
-post-patch:
-	@${RM} ${WRKSRC}/pm_to_blib
+NO_ARCH=	yes
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${SITE_PERL_REL}/Text/PDF/examples

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Attributes/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/devel/p5-File-Attributes/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Attributes
 PORTVERSION=	0.04
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	File::Attributes - Manipulate file metadata
 
-BUILD_DEPENDS=	p5-YAML>=0:textproc/p5-YAML \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-YAML>=0:textproc/p5-YAML \
 		p5-Directory-Scratch>=0:devel/p5-Directory-Scratch \
 		p5-Best>=0:devel/p5-Best \
 		p5-YAML-Syck>0:textproc/p5-YAML-Syck
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

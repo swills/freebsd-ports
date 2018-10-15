@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/editors/manedit/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/editors/manedit/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	manedit
 PORTVERSION=	1.2.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://wolfsinger.com/~wolfpack/packages/
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	UNIX manual page editor and viewer
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
 

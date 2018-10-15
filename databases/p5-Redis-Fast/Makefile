@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-Redis-Fast/Makefile 477235 2018-08-15 15:23:57Z swills $
+# $FreeBSD: head/databases/p5-Redis-Fast/Makefile 481753 2018-10-10 19:10:17Z sunpoet $
 
 PORTNAME=	Redis-Fast
 PORTVERSION=	0.22
@@ -14,7 +14,6 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which \
-		p5-Module-Build>=0.4005:devel/p5-Module-Build \
 		p5-Module-Build-XSUtil>=0.02:devel/p5-Module-Build-XSUtil \
 		gmake:devel/gmake
 RUN_DEPENDS=	p5-Try-Tiny>=0:lang/p5-Try-Tiny

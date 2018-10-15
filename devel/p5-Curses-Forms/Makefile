@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-Curses-Forms/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Curses-Forms/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Curses-Forms
 PORTVERSION=	1.997
@@ -14,8 +14,8 @@ COMMENT=	Provide high level APIs for rapid UI design on the console
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	p5-Curses-Widgets>=0:devel/p5-Curses-Widgets
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Curses-Widgets>=0:devel/p5-Curses-Widgets
 
 USES=		perl5
 USE_PERL5=	configure

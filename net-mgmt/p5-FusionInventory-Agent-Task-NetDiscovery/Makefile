@@ -1,5 +1,5 @@
 # Created by: Emil Smolenski <am@raisa.eu.org>
-# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent-Task-NetDiscovery/Makefile 471673 2018-06-04 18:11:47Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent-Task-NetDiscovery/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	FusionInventory-Agent-Task-NetDiscovery
 PORTVERSION=	2.1
@@ -15,12 +15,12 @@ COMMENT=	Network discovery support for FusionInventory Agent
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-FusionInventory-Agent>=2.2.0:net-mgmt/p5-FusionInventory-Agent \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-FusionInventory-Agent>=2.2.0:net-mgmt/p5-FusionInventory-Agent \
 		p5-Net-IP>=0:net-mgmt/p5-Net-IP \
 		p5-Net-NBName>=0:net/p5-Net-NBName \
 		p5-Net-SNMP>=0:net-mgmt/p5-Net-SNMP \
 		p5-XML-TreePP>=0.26:textproc/p5-XML-TreePP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

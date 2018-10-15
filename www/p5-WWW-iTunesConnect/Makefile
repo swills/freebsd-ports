@@ -1,5 +1,5 @@
 # Created by: Brandon Fosdick <bfoz@bfoz.net>
-# $FreeBSD: head/www/p5-WWW-iTunesConnect/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-iTunesConnect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	WWW-iTunesConnect
 PORTVERSION=	1.16
@@ -12,11 +12,11 @@ DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}
 MAINTAINER=	bfoz@bfoz.net
 COMMENT=	Client interface for Apple's iTunes Connect service
 
-BUILD_DEPENDS=	p5-HTML-Tree>=0:www/p5-HTML-Tree \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTML-Tree>=0:www/p5-HTML-Tree \
 		p5-libwww>=5.829:www/p5-libwww \
 		p5-Net-SSLeay>=0:security/p5-Net-SSLeay \
 		p5-HTML-Form>=0:www/p5-HTML-Form
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-SetUserGroup/Makefile 462437 2018-02-20 20:26:51Z sunpoet $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-SetUserGroup/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mojolicious-Plugin-SetUserGroup
 PORTVERSION=	1.000
@@ -14,9 +14,9 @@ COMMENT=	Mojolicious plugin to set unprivileged credentials
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Mojolicious>=6.0:www/p5-Mojolicious \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mojolicious>=6.0:www/p5-Mojolicious \
 		p5-Unix-Groups-FFI>=0:devel/p5-Unix-Groups-FFI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

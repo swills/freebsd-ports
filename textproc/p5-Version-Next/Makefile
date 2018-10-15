@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Version-Next/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Version-Next/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Version-Next
 PORTVERSION=	1.000
@@ -12,8 +12,8 @@ COMMENT=	Increment module version numbers simply and correctly
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter
 
 USES=		perl5
 USE_PERL5=	configure

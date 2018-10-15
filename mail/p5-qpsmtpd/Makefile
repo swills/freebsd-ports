@@ -1,5 +1,5 @@
 # Created by: Zane C. Bowers
-# $FreeBSD: head/mail/p5-qpsmtpd/Makefile 464208 2018-03-11 21:00:35Z antoine $
+# $FreeBSD: head/mail/p5-qpsmtpd/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	qpsmtpd
 PORTVERSION=	0.93
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	noc-ports@biglist.com
 COMMENT=	Flexible SMTP daemon written in Perl and featuring a plugin API
 
-BUILD_DEPENDS=	spamd:mail/spamassassin \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	spamd:mail/spamassassin \
 		p5-Mail-Tools>=0:mail/p5-Mail-Tools \
 		p5-Net-DNS>=0.39:dns/p5-Net-DNS \
 		p5-Net-IP>=0:net-mgmt/p5-Net-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	MODPERL DOCS EXAMPLES
 OPTIONS_DEFAULT=MODPERL

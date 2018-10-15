@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Tk-DKW/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Tk-DKW/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Tk-DKW
 PORTVERSION=	0.03
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Collection of Tk widgets
 
-BUILD_DEPENDS=	p5-Tk>=804:x11-toolkits/p5-Tk \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Tk>=804:x11-toolkits/p5-Tk \
 		p5-Tk-Contrib>=0.07:x11-toolkits/p5-Tk-Contrib
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

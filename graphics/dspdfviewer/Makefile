@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/dspdfviewer/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/dspdfviewer/Makefile 481419 2018-10-07 04:48:09Z swills $
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
 DISTVERSIONPREFIX=v
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 
 MAINTAINER=	santhosh.raju@gmail.com
@@ -43,7 +43,7 @@ CFLAGS+=	-Wno-error=undefined-func-template
 CFLAGS+=	-Wno-error=zero-as-null-pointer-constant
 .endif
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200056
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1102000
 CFLAGS+=	-Wno-error=redundant-parens
 .endif
 

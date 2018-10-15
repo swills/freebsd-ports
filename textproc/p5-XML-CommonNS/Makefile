@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-CommonNS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-CommonNS/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	XML-CommonNS
 PORTVERSION=	0.06
@@ -14,8 +14,8 @@ COMMENT=	List of commonly used namespaces
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-XML-NamespaceFactory>=0:textproc/p5-XML-NamespaceFactory
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-XML-NamespaceFactory>=0:textproc/p5-XML-NamespaceFactory
 
 USES=		perl5
 USE_PERL5=	configure

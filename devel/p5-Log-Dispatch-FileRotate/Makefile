@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/devel/p5-Log-Dispatch-FileRotate/Makefile 475889 2018-07-30 13:23:57Z wen $
+# $FreeBSD: head/devel/p5-Log-Dispatch-FileRotate/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Log-Dispatch-FileRotate
 PORTVERSION=	1.36
@@ -14,9 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Date-Manip>=0:devel/p5-Date-Manip \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Date-Manip>=0:devel/p5-Date-Manip \
 		p5-Log-Dispatch>=0:devel/p5-Log-Dispatch
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Path-Tiny>=0.018:devel/p5-Path-Tiny \
 		p5-Test-Warn>=0:devel/p5-Test-Warn
 

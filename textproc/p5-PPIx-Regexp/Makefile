@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <wahjava@gmail.com>
-# $FreeBSD: head/textproc/p5-PPIx-Regexp/Makefile 477298 2018-08-16 00:03:14Z wen $
+# $FreeBSD: head/textproc/p5-PPIx-Regexp/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	PPIx-Regexp
 PORTVERSION=	0.062
@@ -16,8 +16,8 @@ LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSES/Artistic
 LICENSE_FILE_GPLv1=	${WRKSRC}/LICENSES/Copying
 
-BUILD_DEPENDS=	p5-PPI>=1.117:textproc/p5-PPI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-PPI>=1.117:textproc/p5-PPI
 
 PORTSCOUT=	limit:^[^_]+$$
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-BigInt-Lite/Makefile 467929 2018-04-22 08:47:32Z sunpoet $
+# $FreeBSD: head/math/p5-Math-BigInt-Lite/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Math-BigInt-Lite
 PORTVERSION=	0.18
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Math-BigInt>=1.999812:math/p5-Math-BigInt
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Math-BigInt>=1.999812:math/p5-Math-BigInt
 
 NO_ARCH=	yes
 USE_PERL5=	configure

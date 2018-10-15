@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 480949 2018-09-30 10:39:44Z rene $
+# $FreeBSD: head/textproc/Makefile 481625 2018-10-09 12:03:07Z arrowd $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -280,6 +280,7 @@
     SUBDIR += hs-pandoc
     SUBDIR += hs-pandoc-citeproc
     SUBDIR += hs-pandoc-types
+    SUBDIR += hs-parsec-numbers
     SUBDIR += hs-polyparse
     SUBDIR += hs-pretty-show
     SUBDIR += hs-regex-applicative
@@ -1251,6 +1252,16 @@
     SUBDIR += php72-xmlreader
     SUBDIR += php72-xmlwriter
     SUBDIR += php72-xsl
+    SUBDIR += php73-ctype
+    SUBDIR += php73-dom
+    SUBDIR += php73-enchant
+    SUBDIR += php73-pspell
+    SUBDIR += php73-simplexml
+    SUBDIR += php73-wddx
+    SUBDIR += php73-xml
+    SUBDIR += php73-xmlreader
+    SUBDIR += php73-xmlwriter
+    SUBDIR += php73-xsl
     SUBDIR += plover
     SUBDIR += po4a
     SUBDIR += pocketreader

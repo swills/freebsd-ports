@@ -1,8 +1,8 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/tarantool/Makefile 479115 2018-09-06 18:23:09Z sunpoet $
+# $FreeBSD: head/databases/tarantool/Makefile 482052 2018-10-14 16:27:45Z sunpoet $
 
 PORTNAME=	tarantool
-PORTVERSION=	1.9.2
+PORTVERSION=	1.10.2
 CATEGORIES=	databases
 
 MAINTAINER=	sunpoet@FreeBSD.org

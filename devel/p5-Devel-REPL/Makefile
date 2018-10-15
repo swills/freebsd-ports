@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <wahjava@gmail.com>
-# $FreeBSD: head/devel/p5-Devel-REPL/Makefile 458072 2018-01-04 20:12:03Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-REPL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Devel-REPL
 PORTVERSION=	1.003028
@@ -15,7 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-BUILD_DEPENDS=	p5-Moose>=0.93:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=0.93:devel/p5-Moose \
 	p5-MooseX-Object-Pluggable>=0.0009:devel/p5-MooseX-Object-Pluggable \
 	p5-MooseX-Getopt>=0.18:devel/p5-MooseX-Getopt \
 	p5-namespace-autoclean>0:devel/p5-namespace-autoclean \
@@ -31,7 +32,6 @@ BUILD_DEPENDS=	p5-Moose>=0.93:devel/p5-Moose \
 	p5-Module-Refresh>0:devel/p5-Module-Refresh \
 	p5-Module-Runtime>0:devel/p5-Module-Runtime \
 	p5-Sys-SigAction>0:devel/p5-Sys-SigAction
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

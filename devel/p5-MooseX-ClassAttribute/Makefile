@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-ClassAttribute/Makefile 458074 2018-01-04 20:12:13Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-ClassAttribute/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-ClassAttribute
 PORTVERSION=	0.29
@@ -14,11 +14,11 @@ COMMENT=	Declare class attributes Moose-style
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
 		p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils \
 		p5-namespace-autoclean>=0.11:devel/p5-namespace-autoclean \
 		p5-namespace-clean>=0.20:devel/p5-namespace-clean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-MooseX-Role-Parameterized>=0:devel/p5-MooseX-Role-Parameterized \
 		p5-MooseX-Role-Strict>=0:devel/p5-MooseX-Role-Strict \
 		p5-Test-Requires>=0.05:devel/p5-Test-Requires \

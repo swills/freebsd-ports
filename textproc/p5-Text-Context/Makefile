@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Context/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Context/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Text-Context
 PORTVERSION=	3.7
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Handle highlighting search result context snippets
 
-BUILD_DEPENDS=	p5-Text-Context-EitherSide>=1.1:textproc/p5-Text-Context-EitherSide \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Context-EitherSide>=1.1:textproc/p5-Text-Context-EitherSide \
 		p5-UNIVERSAL-require>=0.03:devel/p5-UNIVERSAL-require \
 		p5-HTML-Parser>0:www/p5-HTML-Parser
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

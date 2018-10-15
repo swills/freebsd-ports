@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-RBL/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-RBL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-RBL
 PORTVERSION=	1.10
@@ -11,9 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to access RBL-style host verification services
 
-BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS \
 		p5-NetAddr-IP>0:net-mgmt/p5-NetAddr-IP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

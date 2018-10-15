@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/mail/p5-Email-Valid-Loose/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Email-Valid-Loose/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Email-Valid-Loose
 PORTVERSION=	0.05
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Variation of Email::Valid which allows dot before at mark
 
-BUILD_DEPENDS=	p5-Email-Valid>=0:mail/p5-Email-Valid
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Email-Valid>=0:mail/p5-Email-Valid
 
 USES=		perl5
 USE_PERL5=	configure

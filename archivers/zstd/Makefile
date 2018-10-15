@@ -1,8 +1,8 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/archivers/zstd/Makefile 475682 2018-07-29 19:09:23Z sunpoet $
+# $FreeBSD: head/archivers/zstd/Makefile 481337 2018-10-06 09:34:07Z sunpoet $
 
 PORTNAME=	zstd
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	archivers
 
@@ -17,10 +17,11 @@ LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 OPTIONS_DEFINE=	LZ4
 OPTIONS_DEFAULT=LZ4
 
+USES=		gmake
+
 ALL_TARGET=	default
 TEST_TARGET=	test
 USE_LDCONFIG=	yes
-USES=		gmake
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 

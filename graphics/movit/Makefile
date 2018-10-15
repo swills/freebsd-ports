@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/movit/Makefile 458029 2018-01-04 14:09:31Z mat $
+# $FreeBSD: head/graphics/movit/Makefile 481072 2018-10-01 21:43:17Z rene $
 
 PORTNAME=	movit
 PORTVERSION=	1.4.0
@@ -6,7 +6,7 @@ PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://${PORTNAME}.sesse.net/
 
-MAINTAINER=	avilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-performance video filters for the GPU
 
 LICENSE=	GPLv2+

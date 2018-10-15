@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/japanese/p5-DateTime-Format-Japanese/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/p5-DateTime-Format-Japanese/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DateTime-Format-Japanese
 PORTVERSION=	0.04000
@@ -11,12 +11,12 @@ MASTER_SITE_SUBDIR=	CPAN:DMAKI
 MAINTAINER=	markun@onohara.to
 COMMENT=	Japanese DateTime Formatter
 
-BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Calendar-Japanese>=0.05:devel/p5-DateTime-Calendar-Japanese \
 		ja-p5-DateTime-Calendar-Japanese-Era>=0.08000:japanese/p5-DateTime-Calendar-Japanese-Era \
 		p5-DateTime-Format-Builder>=0:devel/p5-DateTime-Format-Builder \
 		p5-Params-Validate>=0:devel/p5-Params-Validate
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

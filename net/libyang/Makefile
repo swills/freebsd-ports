@@ -1,9 +1,10 @@
-# $FreeBSD: head/net/libyang/Makefile 480743 2018-09-26 15:54:11Z olivier $
+# $FreeBSD: head/net/libyang/Makefile 481853 2018-10-11 20:48:51Z olivier $
 
 PORTNAME=	libyang
 PORTVERSION=	0.16
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-r1
+PORTREVISION=	3
 CATEGORIES=	net
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -14,10 +15,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-USES=	cmake
+USES=	cmake compiler:c++11-lang pkgconfig
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	CESNET
+
+CMAKE_ARGS+=	-DENABLE_LYD_PRIV=ON
 
 .include <bsd.port.mk>

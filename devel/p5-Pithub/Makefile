@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Pithub/Makefile 462624 2018-02-22 19:50:23Z sunpoet $
+# $FreeBSD: head/devel/p5-Pithub/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Pithub
 PORTVERSION=	0.01034
@@ -15,14 +15,14 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Array-Iterator>=0:devel/p5-Array-Iterator \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Array-Iterator>=0:devel/p5-Array-Iterator \
 		p5-Cache-LRU>=0:devel/p5-Cache-LRU \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-JSON-MaybeXS>=0:converters/p5-JSON-MaybeXS \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-Moo>=0:devel/p5-Moo \
 		p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Import-Into>=0:devel/p5-Import-Into \
 		p5-Path-Tiny>=0:devel/p5-Path-Tiny \
 		p5-Test-Most>=0:devel/p5-Test-Most

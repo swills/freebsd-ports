@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-RemoveRedundantBody/Makefile 463127 2018-02-27 13:24:25Z sunpoet $
+# $FreeBSD: head/www/p5-Plack-Middleware-RemoveRedundantBody/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Plack-Middleware-RemoveRedundantBody
 PORTVERSION=	0.07
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Plack>=0:www/p5-Plack
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Plack>=0:www/p5-Plack
 TEST_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Role-Loggable/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Role-Loggable/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	MooseX-Role-Loggable
 PORTVERSION=	0.114
@@ -14,12 +14,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Log-Dispatchouli>=0:devel/p5-Log-Dispatchouli \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Log-Dispatchouli>=0:devel/p5-Log-Dispatchouli \
 		p5-Moo>=1.000001:devel/p5-Moo \
 		p5-MooX-Types-MooseLike>=0:devel/p5-MooX-Types-MooseLike \
 		p5-Safe-Isa>=0:devel/p5-Safe-Isa \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
 NO_ARCH=	yes

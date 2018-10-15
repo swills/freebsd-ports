@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/battfink/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/sysutils/battfink/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	battfink
 PORTVERSION=	0.6.2
@@ -13,6 +13,9 @@ COMMENT=	Energy saving preferences app for GNOME
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 INSTALLS_OMF=	yes
 USE_GNOME=	gnomeprefix libgnomeui

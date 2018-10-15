@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library-templates/Makefile 480629 2018-09-24 20:50:24Z thierry $
+# $FreeBSD: head/cad/kicad-library-templates/Makefile 481747 2018-10-10 18:31:16Z thierry $
 
 PORTNAME=	kicad
-PORTVERSION=	5.0.0
+PORTVERSION=	5.0.1
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-library-tmpl
 

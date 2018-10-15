@@ -1,5 +1,5 @@
 # Created by: Paul Schmehl <pauls@utdallas.edu>
-# $FreeBSD: head/x11-toolkits/p5-Gtk2-Ex-Dialogs/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Gtk2-Ex-Dialogs/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Gtk2-Ex-Dialogs
 PORTVERSION=	0.11
@@ -13,9 +13,9 @@ COMMENT=	Useful tools for Gnome2/Gtk2 Perl GUI design
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	p5-File-Type>=0:devel/p5-File-Type \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Type>=0:devel/p5-File-Type \
 		p5-Gtk2-Ex-Utils>=0:x11-toolkits/p5-Gtk2-Ex-Utils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

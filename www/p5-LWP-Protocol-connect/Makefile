@@ -1,5 +1,5 @@
 # Created by: Lawrence Chen <beastie@tardisi.com>
-# $FreeBSD: head/www/p5-LWP-Protocol-connect/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-LWP-Protocol-connect/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	LWP-Protocol-connect
 PORTVERSION=	6.09
@@ -14,13 +14,13 @@ COMMENT=	Provides HTTP/CONNECT proxy support for LWP::UserAgent
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \
 		p5-libwww>=0:www/p5-libwww \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-URI>=0:net/p5-URI \
 		p5-Net-HTTP>=6:net/p5-Net-HTTP
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

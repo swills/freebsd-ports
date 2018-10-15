@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Static-Simple/Makefile 464698 2018-03-16 15:21:13Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Static-Simple/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Catalyst-Plugin-Static-Simple
 PORTVERSION=	0.36
@@ -13,12 +13,12 @@ COMMENT=	Make serving static pages painless
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.80008:www/p5-Catalyst-Runtime \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Catalyst-Runtime>=5.80008:www/p5-Catalyst-Runtime \
 		p5-MIME-Types>=2.03:mail/p5-MIME-Types \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-Types>=0:devel/p5-MooseX-Types \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

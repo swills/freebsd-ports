@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/textproc/pecl-syck/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/textproc/pecl-syck/Makefile 481545 2018-10-08 15:08:13Z antoine $
 
 PORTNAME=	syck
 PORTVERSION=	0.9.3
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libsyck.a:textproc/syck
 
 USES=		php:pecl
 USE_PHP=	spl:build hash:build
-IGNORE_WITH_PHP=	70 71 72
+IGNORE_WITH_PHP=	70 71 72 73
 
 CONFIGURE_ARGS=	--enable-syck
 

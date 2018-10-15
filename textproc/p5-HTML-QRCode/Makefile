@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/p5-HTML-QRCode/Makefile 450419 2017-09-23 02:59:07Z vanilla $
+# $FreeBSD: head/textproc/p5-HTML-QRCode/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTML-QRCode
 PORTVERSION=	0.01
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate HTML based QR Code
 
-BUILD_DEPENDS=	p5-Text-QRCode>0:textproc/p5-Text-QRCode
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-QRCode>0:textproc/p5-Text-QRCode
 LIB_DEPENDS=	libqrencode.so:graphics/libqrencode
 
 USES=		perl5

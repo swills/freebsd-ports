@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/print/ggv/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/print/ggv/Makefile 481492 2018-10-07 20:25:16Z antoine $
 #   $MCom: ports/print/ggv/Makefile,v 1.8 2007/09/24 19:40:45 mezz Exp $
 
 PORTNAME=	ggv
@@ -11,6 +11,9 @@ DIST_SUBDIR=	gnome2
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GNOME 2 ghostscript viewer
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 INSTALLS_OMF=	yes
 USE_GNOME=	gnomeprefix intlhack libgnomeui

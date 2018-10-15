@@ -1,5 +1,5 @@
 # Created by: Jan-Peter Koopmann <Jan-Peter.Koopmann@seceidos.de>
-# $FreeBSD: head/security/p5-File-Scan-ClamAV/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-File-Scan-ClamAV/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	File-Scan-ClamAV
 PORTVERSION=	1.95
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	clamscan:security/clamav
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	clamscan:security/clamav
 
 NO_ARCH=	yes
 USES=		perl5

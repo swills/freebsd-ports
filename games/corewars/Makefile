@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/corewars/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/corewars/Makefile 481888 2018-10-12 09:19:04Z antoine $
 
 PORTNAME=	corewars
 PORTVERSION=	0.9.13
@@ -8,6 +8,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28stable%2C%20tar.gz%29/${PORTVERSIO
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simulation game where the goal is to crash each other's programs
+
+DEPRECATED=	Uses obsolete glib12
+EXPIRATION_DATE=	2018-12-20
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

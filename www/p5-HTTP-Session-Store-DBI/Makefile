@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Session-Store-DBI/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Session-Store-DBI/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	HTTP-Session-Store-DBI
 PORTVERSION=	0.02
@@ -10,11 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to store session data in DBI for HTTP::Session
 
-BUILD_DEPENDS=	\
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	\
 	p5-Moose>0:devel/p5-Moose \
 	p5-HTTP-Session>=0.26:www/p5-HTTP-Session \
 	p5-DBI>0:databases/p5-DBI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

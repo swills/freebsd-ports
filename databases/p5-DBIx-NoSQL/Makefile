@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-NoSQL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-NoSQL/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	DBIx-NoSQL
 PORTVERSION=	0.0021
@@ -14,7 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-DBD-SQLite>=1.44:databases/p5-DBD-SQLite \
 		p5-DBIx-Class>=0.08124:databases/p5-DBIx-Class \
 		p5-Data-GUID>=0:devel/p5-Data-GUID \
@@ -26,7 +27,6 @@ BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-SQL-Translator>=0.11016:databases/p5-SQL-Translator \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Most>=0:devel/p5-Test-Most

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-File_MARC/Makefile 464822 2018-03-17 14:43:34Z dbaio $
+# $FreeBSD: head/textproc/pear-File_MARC/Makefile 481444 2018-10-07 12:57:56Z dbaio $
 
 PORTNAME=	File_MARC
-PORTVERSION=	1.2.0
+PORTVERSION=	1.3.0
 CATEGORIES=	textproc pear
 
 MAINTAINER=	dbaio@FreeBSD.org

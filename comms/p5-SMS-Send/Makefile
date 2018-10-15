@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/comms/p5-SMS-Send/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/comms/p5-SMS-Send/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SMS-Send
 PORTVERSION=	1.06
@@ -14,9 +14,9 @@ COMMENT=	Driver-based API for sending SMS messages
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-Adapter>=1.05:devel/p5-Class-Adapter \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Adapter>=1.05:devel/p5-Class-Adapter \
 		p5-Params-Util>=1.00:devel/p5-Params-Util
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

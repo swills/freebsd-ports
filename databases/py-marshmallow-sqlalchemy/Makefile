@@ -1,13 +1,13 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/py-marshmallow-sqlalchemy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-marshmallow-sqlalchemy/Makefile 481880 2018-10-12 07:22:46Z wen $
 
 PORTNAME=	marshmallow-sqlalchemy
-PORTVERSION=	0.13.2
+PORTVERSION=	0.14.1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SQLAlchemy integration with the marshmallow serialization library
 
 LICENSE=	BSD3CLAUSE

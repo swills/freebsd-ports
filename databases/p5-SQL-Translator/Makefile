@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/databases/p5-SQL-Translator/Makefile 458768 2018-01-11 18:35:30Z sunpoet $
+# $FreeBSD: head/databases/p5-SQL-Translator/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	SQL-Translator
 PORTVERSION=	0.11024
@@ -13,7 +13,8 @@ COMMENT=	Manipulate structured data definitions (SQL and more)
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Carp-Clan>=0:devel/p5-Carp-Clan \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Carp-Clan>=0:devel/p5-Carp-Clan \
 		p5-DBI>=1.54:databases/p5-DBI \
 		p5-File-ShareDir>=1:devel/p5-File-ShareDir \
 		p5-JSON>=2:converters/p5-JSON \
@@ -28,7 +29,6 @@ BUILD_DEPENDS=	p5-Carp-Clan>=0:devel/p5-Carp-Clan \
 		p5-XML-LibXML>=1.69:textproc/p5-XML-LibXML \
 		p5-strictures>=0:devel/p5-strictures \
 		p5-YAML>=0.66:textproc/p5-YAML
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-Test-Differences>=0.61:devel/p5-Test-Differences \
 		p5-Test-Exception>=0:devel/p5-Test-Exception

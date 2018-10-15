@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/databases/p5-Dancer2-Plugin-Database/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Dancer2-Plugin-Database/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Dancer2-Plugin-Database
 PORTVERSION=	2.17
@@ -13,9 +13,9 @@ COMMENT=	Easy database connections for Dancer2 applications
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Dancer2>=0.166001:www/p5-Dancer2 \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Dancer2>=0.166001:www/p5-Dancer2 \
 		p5-Dancer-Plugin-Database-Core>=0.16:databases/p5-Dancer-Plugin-Database-Core
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-DBI>=0:databases/p5-DBI \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \

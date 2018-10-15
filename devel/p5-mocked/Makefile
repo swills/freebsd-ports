@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-mocked/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-mocked/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	mocked
 PORTVERSION=	0.09
@@ -12,8 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	mocked - use mocked libraries in unit tests
 
-BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>=0:net/p5-URI
 TEST_DEPENDS=	p5-Test-Exception>0:devel/p5-Test-Exception
 
 USES=		perl5

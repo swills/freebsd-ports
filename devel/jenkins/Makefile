@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/jenkins/Makefile 480807 2018-09-27 18:31:06Z lwhsu $
+# $FreeBSD: head/devel/jenkins/Makefile 481827 2018-10-11 13:47:09Z lwhsu $
 
 PORTNAME=	jenkins
-PORTVERSION=	2.143
+PORTVERSION=	2.146
 CATEGORIES=	devel java
 MASTER_SITES=	http://mirrors.jenkins-ci.org/war/${PORTVERSION}/
 DISTNAME=	jenkins
@@ -22,7 +22,7 @@ NO_BUILD=	yes
 
 USE_RC_SUBR=	jenkins
 
-USES+=		cpe
+USES=		cpe
 CPE_VENDOR=	cloudbees
 
 JENKINS_HOME?=	${PREFIX}/jenkins

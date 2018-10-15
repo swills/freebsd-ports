@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <krion@FreeBSD.org>
-# $FreeBSD: head/games/briquolo/Makefile 460698 2018-02-02 12:12:31Z martymac $
+# $FreeBSD: head/games/briquolo/Makefile 481268 2018-10-05 10:10:02Z martymac $
 
 PORTNAME=	briquolo
 PORTVERSION=	0.5.7
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		tar:bzip2 gmake iconv desktop-file-utils
+USES=		tar:bzip2 gl gmake iconv desktop-file-utils
 USE_GL=		gl
 USE_SDL=	mixer sdl ttf
 USE_XORG=	x11

@@ -1,15 +1,10 @@
-# $FreeBSD: head/math/py-slepc4py/Makefile 480424 2018-09-22 17:40:41Z yuri $
+# $FreeBSD: head/math/py-slepc4py/Makefile 481139 2018-10-02 23:11:15Z yuri $
 
 PORTNAME=	slepc4py
-DISTVERSION=	3.9.0
-PORTREVISION=	2
+DISTVERSION=	3.10.0
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-
-# https://bitbucket.org/slepc/slepc4py/issues/34/freebsd-compatibility-patches
-PATCH_SITES=	https://bitbucket.org/petsc/petsc4py/commits/
-PATCHFILES=	ab877906425e/raw:-p1 ecf673e8b8da/raw:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	SLEPc for Python

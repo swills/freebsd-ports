@@ -1,5 +1,5 @@
 # Created by: Dan Papasian <bugg@bugg.strangled.net>
-# $FreeBSD: head/games/gtetrinet/Makefile 477420 2018-08-17 12:27:06Z tobik $
+# $FreeBSD: head/games/gtetrinet/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gtetrinet
 PORTVERSION=	0.7.11
@@ -13,6 +13,9 @@ COMMENT=	Version of the popular TetriNET multiplayer Tetris clone
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 USES=		pathfix gettext gmake pkgconfig tar:bzip2
 USE_GNOME=	gnomeprefix intltool libgnomeui

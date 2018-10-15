@@ -1,5 +1,5 @@
 # Created by: Stephane Lapie <stephane.lapie@darkbsd.org>
-# $FreeBSD: head/japanese/gjiten/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/japanese/gjiten/Makefile 481492 2018-10-07 20:25:16Z antoine $
 
 PORTNAME=	gjiten
 PORTVERSION=	2.6
@@ -9,6 +9,9 @@ MASTER_SITES=	http://gjiten.sourceforge.net/
 
 MAINTAINER=	stephane.lapie@darkbsd.org
 COMMENT=	Japanese dictionary program for GNOME
+
+DEPRECATED=	GNOME 2 application
+EXPIRATION_DATE=	2018-12-10
 
 OPTIONS_DEFINE=	UTF8 KANJIPAD DOCS NLS
 UTF8_DESC=	Use UTF-8 edict dictionaries

@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 480236 2018-09-21 08:04:50Z yuri $
+# $FreeBSD: head/biology/Makefile 481520 2018-10-08 07:54:49Z yuri $
 #
 
     COMMENT = Biology
@@ -65,6 +65,7 @@
     SUBDIR += mummer
     SUBDIR += muscle
     SUBDIR += ncbi-blast+
+    SUBDIR += ncbi-cxx-toolkit
     SUBDIR += ncbi-toolkit
     SUBDIR += ngs-sdk
     SUBDIR += njplot
@@ -131,7 +132,6 @@
     SUBDIR += tRNAscan-SE
     SUBDIR += t_coffee
     SUBDIR += tabixpp
-    SUBDIR += tinker
     SUBDIR += treepuzzle
     SUBDIR += trimadap
     SUBDIR += trimmomatic

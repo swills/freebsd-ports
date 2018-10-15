@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/mail/p5-Mail-Box-Parser-C/Makefile 463753 2018-03-06 20:31:56Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-Box-Parser-C/Makefile 481365 2018-10-06 13:06:42Z des $
 
 PORTNAME=	Mail-Box-Parser-C
 PORTVERSION=	3.009
@@ -13,8 +13,8 @@ COMMENT=	Parsing folders for Mail::Box with C routines
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Mail-Box>=0:mail/p5-Mail-Box
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Mail-Box>=0:mail/p5-Mail-Box
 
 USES=		perl5
 USE_PERL5=	configure
