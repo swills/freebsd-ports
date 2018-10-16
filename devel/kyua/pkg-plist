@@ -21,13 +21,6 @@ man/man5/kyuafile.5.gz
 %%DATADIR%%/store/migrate_v1_v2.sql
 %%DATADIR%%/store/migrate_v2_v3.sql
 %%DATADIR%%/store/schema_v3.sql
-%%PORTDOCS%%%%DOCSDIR%%/AUTHORS
-%%PORTDOCS%%%%DOCSDIR%%/CONTRIBUTING.md
-%%PORTDOCS%%%%DOCSDIR%%/CONTRIBUTORS
-%%PORTDOCS%%%%DOCSDIR%%/LICENSE
-%%PORTDOCS%%%%DOCSDIR%%/NEWS.md
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/Kyuafile.top
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/kyua.conf
 %%TEST%%tests/Kyuafile
 %%TEST%%tests/kyua/Kyuafile
 %%TEST%%tests/kyua/bootstrap/Kyuafile
