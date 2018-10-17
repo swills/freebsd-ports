@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pystorm
-PORTVERSION=	3.1.0
-PORTREVISION=	2
+PORTVERSION=	3.1.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,12 +15,11 @@ LICENSE=	APACHE20
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR}
 
 NO_ARCH=	yes
-REINPLACE_ARGS=	-i ''
 
 post-patch:
 	${RM} ${WRKSRC}/test/__init__.py
