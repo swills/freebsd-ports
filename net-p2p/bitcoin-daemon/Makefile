@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 477870 2018-08-23 13:31:05Z swills $
+# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 482296 2018-10-17 14:29:53Z ale $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
-PORTREVISION=	2
+PORTREVISION=	3
 PKGNAMESUFFIX=	-daemon
 
 COMMENT=	Virtual Peer-to-Peer Currency (Daemon)

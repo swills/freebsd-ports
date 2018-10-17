@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/amavisd-new/Makefile 477373 2018-08-16 20:30:03Z rene $
+# $FreeBSD: head/security/amavisd-new/Makefile 482297 2018-10-17 15:09:47Z flo $
 
 PORTNAME=	amavisd-new
-PORTVERSION=	2.11.0
-PORTREVISION=	3
+PORTVERSION=	2.11.1
 PORTEPOCH=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.ijs.si/software/amavisd/ \
@@ -23,7 +22,7 @@ RUN_DEPENDS=	p5-Unix-Syslog>=0:sysutils/p5-Unix-Syslog \
 		p5-Mail-DKIM>=0.33:mail/p5-Mail-DKIM \
 		p5-Net-LibIDN>=0:dns/p5-Net-LibIDN
 
-USES=		perl5 shebangfix tar:xz
+USES=		perl5 shebangfix tar:bz2
 USE_PERL5=	run
 SHEBANG_FILES=	amavisd-agent amavisd-nanny amavisd-release p0f-analyzer.pl \
 		amavisd-snmp-subagent amavisd
