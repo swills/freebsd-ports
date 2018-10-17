@@ -1,6 +1,9 @@
 bin/lxterminal
 man/man1/lxterminal.1.gz
 share/applications/lxterminal.desktop
+%%PORTDOCS%%%%DOCSDIR%%/AUTHORS
+%%PORTDOCS%%%%DOCSDIR%%/ChangeLog
+%%PORTDOCS%%%%DOCSDIR%%/NEWS
 share/icons/hicolor/128x128/apps/lxterminal.png
 %%NLS%%share/locale/af/LC_MESSAGES/lxterminal.mo
 %%NLS%%share/locale/ar/LC_MESSAGES/lxterminal.mo
