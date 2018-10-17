@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-114/Makefile 473706 2018-07-02 05:57:37Z cy $
+# $FreeBSD: head/security/krb5-114/Makefile 482227 2018-10-16 13:41:26Z rene $
 
 PORTNAME=		krb5
 PORTVERSION=		1.14.6
@@ -21,6 +21,7 @@ LICENSE=		MIT
 DEPRECATED=		EOL twelve months after release of krb5-1.16
 EXPIRATION_DATE=	2018-12-31
 
+BROKEN_FreeBSD_12=	Fails to build after import of openssl111
 BROKEN_SSL=		openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	 OpenSSL >= 1.1.0 unsupported.
 

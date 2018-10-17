@@ -1,5 +1,5 @@
 # Created by: Joachim Strombergson <watchman@ludd.ltu.se>
-# $FreeBSD: head/cad/dinotrace/Makefile 472883 2018-06-20 16:59:37Z mat $
+# $FreeBSD: head/cad/dinotrace/Makefile 482213 2018-10-16 09:30:07Z amdmi3 $
 
 PORTNAME=	dinotrace
 PORTVERSION=	9.4c
@@ -12,6 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Graphical signal trace waveform viewer
 
 LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gmake motif perl5 tar:tgz
 USE_XORG=	x11 sm ice xmu xt

@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-TtRenderer/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-TtRenderer/Makefile 482268 2018-10-17 01:29:37Z adamw $
 
 PORTNAME=	Mojolicious-Plugin-TtRenderer
-PORTVERSION=	1.59
+PORTVERSION=	1.60
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

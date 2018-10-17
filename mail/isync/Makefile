@@ -1,8 +1,9 @@
 # Created by: eivind
-# $FreeBSD: head/mail/isync/Makefile 480737 2018-09-26 13:13:48Z linimon $
+# $FreeBSD: head/mail/isync/Makefile 482205 2018-10-16 07:43:31Z ehaupt $
 
 PORTNAME=	isync
 PORTVERSION=	1.3.0
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	SF
 
@@ -19,10 +20,14 @@ LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 
 USES=		alias bdb cpe perl5 ssl
 USE_PERL5=	build
-CPE_VENDOR=	oswald_buddenhagen
+
 GNU_CONFIGURE=	yes
+CPE_VENDOR=	oswald_buddenhagen
+
 CONFIGURE_ARGS=	--with-sasl=${LOCALBASE} \
 		--with-ssl=${OPENSSLLIB:H}
+
+MAKE_ARGS+=	SSL_LIBS="-L${OPENSSLLIB} -lssl -lcrypto"
 
 CPPFLAGS+=	-I${BDB_INCLUDE_DIR}
 LDFLAGS+=	-L${BDB_LIB_DIR}

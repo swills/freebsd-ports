@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 481769 2018-10-10 21:36:03Z rigoletto $
+# $FreeBSD: head/deskutils/Makefile 482226 2018-10-16 13:11:58Z rene $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -269,7 +269,6 @@
     SUBDIR += synapse
     SUBDIR += syncthing-gtk
     SUBDIR += systempreferences
-    SUBDIR += tagutils
     SUBDIR += taskcoach
     SUBDIR += taskd
     SUBDIR += tasksh

@@ -1,5 +1,5 @@
 # Created by: andreas
-# $FreeBSD: head/net/ntp/Makefile 479083 2018-09-06 03:40:36Z cy $
+# $FreeBSD: head/net/ntp/Makefile 482219 2018-10-16 12:02:28Z cy $
 
 PORTNAME=	ntp
 PORTVERSION=	4.2.8p12
@@ -22,7 +22,8 @@ USES=		cpe pathfix shebangfix libedit libtool localbase:ldflags \
 USES+=		autoreconf # until trustedbsd-mac changes accepted upstream
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-leap-smear --enable-trustedbsd-mac
+CONFIGURE_ARGS=	--enable-leap-smear --enable-trustedbsd-mac \
+		--with-locfile=freebsd
 
 TEST_TARGET=	check
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 481785 2018-10-11 05:28:54Z swills $
+# $FreeBSD: head/devel/Makefile 482226 2018-10-16 13:11:58Z rene $
 #
 
     COMMENT = Development utilities
@@ -1490,7 +1490,6 @@
     SUBDIR += liblangtag
     SUBDIR += liblas
     SUBDIR += liblas12
-    SUBDIR += libleaftag
     SUBDIR += liblnk
     SUBDIR += liblockfile
     SUBDIR += liblogging

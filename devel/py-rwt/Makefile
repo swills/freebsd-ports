@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-rwt/Makefile 481749 2018-10-10 19:09:43Z sunpoet $
+# $FreeBSD: head/devel/py-rwt/Makefile 482249 2018-10-16 20:04:28Z sunpoet $
 
 PORTNAME=	rwt
-PORTVERSION=	4.4.1
+PORTVERSION=	4.4.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

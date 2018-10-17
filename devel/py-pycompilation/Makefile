@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pycompilation/Makefile 480124 2018-09-19 23:38:57Z yuri $
+# $FreeBSD: head/devel/py-pycompilation/Makefile 482275 2018-10-17 07:07:58Z yuri $
 
 PORTNAME=	pycompilation
-DISTVERSION=	0.4.3
+DISTVERSION=	0.4.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,5 +17,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 
 USES=		python
 USE_PYTHON=	distutils cython_run autoplist
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/alkimia/Makefile 479530 2018-09-11 16:02:43Z jhale $
+# $FreeBSD: head/finance/alkimia/Makefile 482152 2018-10-15 11:48:08Z jhale $
 
 PORTNAME=	alkimia
 PORTVERSION=	7.0.2
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 # Depending on ecm via USE_KDE causes unwanted CMAKE_ARGS to be set
 BUILD_DEPENDS=	${LOCALBASE}/share/ECM/cmake/ECMConfig.cmake:devel/kf5-extra-cmake-modules
 
-USES=		cmake:outsource pathfix tar:xz
+USES=		cmake:outsource compiler:c++11-lang pathfix tar:xz
 USE_LDCONFIG=	yes
 
 SLAVE?=		qt5

@@ -1,10 +1,10 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/security/libssh/Makefile 465899 2018-03-29 14:53:23Z mat $
+# $FreeBSD: head/security/libssh/Makefile 482279 2018-10-17 08:39:12Z johans $
 
 PORTNAME=	libssh
-DISTVERSION=	0.7.5
+DISTVERSION=	0.8.4
 CATEGORIES=	security devel
-MASTER_SITES=	https://git.libssh.org/projects/libssh.git/snapshot/
+MASTER_SITES=	https://www.libssh.org/files/0.8/
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Library implementing the SSH1 and SSH2 protocol
@@ -43,14 +43,14 @@ STATIC_CMAKE_ON=	-DWITH_STATIC_LIB:BOOL=ON
 STATIC_CMAKE_OFF=	-DWITH_STATIC_LIB:BOOL=OFF
 
 post-patch:
-	@${RM} ${PATCH_WRKSRC}/cmake/Modules/UseDoxygen.cmake
-	@${REINPLACE_CMD} \
+	${RM} ${PATCH_WRKSRC}/cmake/Modules/UseDoxygen.cmake
+	${REINPLACE_CMD} \
 		-e 's|LIB_INSTALL_DIR}|CMAKE_INSTALL_PREFIX}/libdata|' \
 		-e 's|CMAKE_INSTALL_DIR}|CMAKE_INSTALL_DIR}/libssh|' \
 		${WRKSRC}/CMakeLists.txt
-	@${REINPLACE_CMD} -e 's|-lssh_threads|-lssh_threads -lpthread|' \
-		${WRKSRC}/libssh_threads.pc.cmake
-	@${REINPLACE_CMD} -e 's| -pedantic-errors||' \
+#	${REINPLACE_CMD} -e 's|-lssh_threads|-lssh_threads -lpthread|' \
+#		${WRKSRC}/libssh_threads.pc.cmake
+	${REINPLACE_CMD} -e 's| -pedantic-errors||' \
 		${WRKSRC}/cmake/Modules/DefineCompilerFlags.cmake
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 481654 2018-10-09 20:34:02Z antoine $
+# $FreeBSD: head/net-im/Makefile 482226 2018-10-16 13:11:58Z rene $
 #
 
     COMMENT = Instant messaging
@@ -32,7 +32,6 @@
     SUBDIR += hs-haskell-xmpp
     SUBDIR += icmpchat
     SUBDIR += icqlib
-    SUBDIR += jabber
     SUBDIR += jabber.el
     SUBDIR += jabberd
     SUBDIR += jarl

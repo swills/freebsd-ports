@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-faker/Makefile 459586 2018-01-21 11:41:05Z antoine $
+# $FreeBSD: head/devel/rubygem-faker/Makefile 482280 2018-10-17 08:58:43Z antoine $
 
 PORTNAME=	faker
-PORTVERSION=	1.8.7
+PORTVERSION=	1.9.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

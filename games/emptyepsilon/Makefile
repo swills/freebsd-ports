@@ -1,10 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/emptyepsilon/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/games/emptyepsilon/Makefile 482278 2018-10-17 07:43:25Z yuri $
 
 PORTNAME=	emptyepsilon
 DISTVERSIONPREFIX=	EE-
-DISTVERSION=	2018.02.15
-PORTREVISION=	1
+DISTVERSION=	2018.09.06
 CATEGORIES=	games
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libsfml-system.so:devel/sfml
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake:outsource compiler:c++11-lib gl
 USE_GITHUB=	yes
 GH_ACCOUNT=	daid
 GH_PROJECT=	EmptyEpsilon SeriousProton:sproton

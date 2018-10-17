@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/graphics/glfw/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/glfw/Makefile 482189 2018-10-15 23:59:23Z jbeich $
 
 PORTNAME=	glfw
 PORTVERSION=	3.2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
@@ -26,8 +26,7 @@ OPTIONS_EXCLUDE_FreeBSD_10=	WAYLAND # needs dev/evdev/input.h
 
 WAYLAND_BUILD_DEPENDS=	wayland-protocols>=0:graphics/wayland-protocols
 WAYLAND_CMAKE_BOOL=	GLFW_USE_WAYLAND
-WAYLAND_LIB_DEPENDS=	libwayland-client.so:graphics/wayland \
-			libwayland-egl.so:graphics/mesa-libs \
+WAYLAND_LIB_DEPENDS=	libwayland-egl.so:graphics/wayland \
 			libxkbcommon.so:x11/libxkbcommon
 WAYLAND_USES=		kde:5 pkgconfig
 WAYLAND_USE=		KDE=ecm

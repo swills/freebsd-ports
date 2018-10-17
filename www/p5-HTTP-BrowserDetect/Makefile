@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-HTTP-BrowserDetect/Makefile 481936 2018-10-12 20:00:14Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-BrowserDetect/Makefile 482181 2018-10-15 21:07:51Z sunpoet $
 
 PORTNAME=	HTTP-BrowserDetect
-PORTVERSION=	3.18
+PORTVERSION=	3.19
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,7 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	p5-Path-Tiny>=0:devel/p5-Path-Tiny \
+TEST_DEPENDS=	p5-Hash-Merge>=0:textproc/p5-Hash-Merge \
+		p5-Path-Tiny>=0:devel/p5-Path-Tiny \
 		p5-Test-FailWarnings>=0:devel/p5-Test-FailWarnings \
 		p5-Test-Most>=0:devel/p5-Test-Most \
 		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings

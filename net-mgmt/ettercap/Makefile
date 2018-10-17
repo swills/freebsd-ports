@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/net-mgmt/ettercap/Makefile 462292 2018-02-19 10:29:43Z sunpoet $
+# $FreeBSD: head/net-mgmt/ettercap/Makefile 482244 2018-10-16 20:03:46Z sunpoet $
 
 PORTNAME=	ettercap
 PORTVERSION=	0.8.2
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libnet.so:net/libnet
 
 OPTIONS_DEFINE=	DESKTOP DOCS GTK2 IPV6 NCURSES PCRE PLUGINS SSL UTF8
-OPTIONS_DEFAULT=GTK2 NCURSES PCRE PLUGINS SSL UTF8
+OPTIONS_DEFAULT=NCURSES PCRE PLUGINS SSL UTF8
 OPTIONS_SUB=	yes
 DESKTOP_DESC=	Install ettercap.desktop
 NCURSES_DESC=	Ncurses interface

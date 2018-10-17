@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-certsrv/Makefile 481127 2018-10-02 19:06:16Z feld $
+# $FreeBSD: head/devel/py-certsrv/Makefile 482207 2018-10-16 07:48:58Z wen $
 
 PORTNAME=	certsrv
-PORTVERSION=	1.5.0
+PORTVERSION=	2.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

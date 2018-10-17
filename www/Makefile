@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 482024 2018-10-14 05:29:32Z yuri $
+# $FreeBSD: head/www/Makefile 482226 2018-10-16 13:11:58Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -2283,7 +2283,6 @@
     SUBDIR += surfraw
     SUBDIR += swfdec-plugin
     SUBDIR += swiggle
-    SUBDIR += swish++
     SUBDIR += swish-e
     SUBDIR += sws
     SUBDIR += syndigator

@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Slurp/Makefile 481579 2018-10-08 23:28:24Z wen $
+# $FreeBSD: head/devel/p5-File-Slurp/Makefile 482256 2018-10-16 20:05:27Z sunpoet $
 
 PORTNAME=	File-Slurp
-PORTVERSION=	9999.21
+PORTVERSION=	9999.22
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:URI
@@ -16,5 +16,7 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

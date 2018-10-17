@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <sergey.kozlov@intel.com>
-# $FreeBSD: head/net/intel-ixl-kmod/Makefile 481560 2018-10-08 20:17:16Z skozlov $
+# $FreeBSD: head/net/intel-ixl-kmod/Makefile 482220 2018-10-16 12:02:50Z skozlov $
 
 PORTNAME?=	ixl
 PORTVERSION?=	1.9.13
@@ -39,6 +39,7 @@ MANPAGENAME?=	${PORTNAME}
 MANPAGELINKS?=	if_${PORTNAME}
 PLIST_FILES=	${KMODDIR}/if_${PORTNAME}_updated.ko \
 		man/man4/${MANPAGENAME}.4.gz
+MAKE_ENV+=	WERROR=""
 
 .for link in ${MANPAGELINKS}
 PLIST_FILES+=	man/man4/${link}.4.gz

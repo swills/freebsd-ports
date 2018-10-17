@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-pager/Makefile 464295 2018-03-12 20:42:39Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-pager/Makefile 482173 2018-10-15 21:06:46Z sunpoet $
 
 PORTNAME=	tty-pager
 PORTVERSION=	0.11.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -16,8 +17,9 @@ RUN_DEPENDS=	rubygem-strings>=0.1.0:devel/rubygem-strings \
 		rubygem-tty-screen>=0.6.4:devel/rubygem-tty-screen \
 		rubygem-tty-which>=0.3.0:devel/rubygem-tty-which
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

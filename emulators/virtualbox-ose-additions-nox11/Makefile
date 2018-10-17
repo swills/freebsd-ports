@@ -1,6 +1,5 @@
-# $FreeBSD: head/emulators/virtualbox-ose-additions-nox11/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/emulators/virtualbox-ose-additions-nox11/Makefile 482272 2018-10-17 06:49:30Z jkim $
 
-PORTREVISION=	1
 PKGNAMESUFFIX=	-additions-nox11
 
 OPTIONS_EXCLUDE=	DEBUG OPENGL X11

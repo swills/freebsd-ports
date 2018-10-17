@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpv/Makefile 481467 2018-10-07 17:39:44Z cpm $
+# $FreeBSD: head/multimedia/mpv/Makefile 482193 2018-10-16 00:00:33Z jbeich $
 
 PORTNAME=	mpv
 PORTVERSION=	0.29.1
@@ -142,6 +142,7 @@ VAAPI_CONFIGURE_OFF=		--disable-vaapi
 VDPAU_LIB_DEPENDS=		libvdpau.so:multimedia/libvdpau
 VDPAU_CONFIGURE_OFF=		--disable-vdpau
 
+WAYLAND_BUILD_DEPENDS=		wayland-protocols>=1.14:graphics/wayland-protocols
 WAYLAND_LIB_DEPENDS=		libwayland-client.so:graphics/wayland \
 				libwayland-cursor.so:graphics/wayland \
 				libxkbcommon.so:x11/libxkbcommon
