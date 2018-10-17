@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 480239 2018-09-21 08:37:54Z rene $
+# $FreeBSD: head/x11-wm/Makefile 482283 2018-10-17 09:09:08Z danfe $
 #
 
     COMMENT = X11 window managers
@@ -85,6 +85,7 @@
     SUBDIR += nickleby
     SUBDIR += obapps
     SUBDIR += obconf
+    SUBDIR += obconf-qt
     SUBDIR += obkey
     SUBDIR += obmenu
     SUBDIR += obpager
@@ -112,6 +113,7 @@
     SUBDIR += sawfish
     SUBDIR += selectwm
     SUBDIR += simple-ccsm
+    SUBDIR += skippy-xd
     SUBDIR += spectrwm
     SUBDIR += stumpwm
     SUBDIR += subtle

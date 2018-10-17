@@ -1,8 +1,8 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/mail/phplist/Makefile 481167 2018-10-03 15:11:12Z wen $
+# $FreeBSD: head/mail/phplist/Makefile 482165 2018-10-15 17:35:43Z joneum $
 
 PORTNAME=	phplist
-PORTVERSION=	3.3.4
+PORTVERSION=	3.3.5
 CATEGORIES=	mail www
 MASTER_SITES=	SF
 

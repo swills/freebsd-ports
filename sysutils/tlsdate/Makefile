@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/tlsdate/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/sysutils/tlsdate/Makefile 482230 2018-10-16 14:26:45Z sunpoet $
 
 PORTNAME=	tlsdate
 PORTVERSION=	0.0.13
@@ -15,11 +15,12 @@ LIB_DEPENDS=	libevent.so:devel/libevent
 
 OPTIONS_DEFINE=	DOCS
 
-GNU_CONFIGURE=	yes
-TEST_TARGET=	test
 USES=		autoreconf libtool pkgconfig ssl
+
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
+GNU_CONFIGURE=	yes
+TEST_TARGET=	test
 
 PLIST_SUB=	PKGNAME=${PKGNAME}
 PORTDOCS=	*

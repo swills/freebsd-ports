@@ -1,5 +1,5 @@
 # Created by: dwm
-# $FreeBSD: head/devel/icu/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/icu/Makefile 482223 2018-10-16 12:56:00Z jbeich $
 
 PORTNAME=	icu
 DISTVERSION=	62_1

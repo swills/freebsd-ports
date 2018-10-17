@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Devel-FindPerl/Makefile 479311 2018-09-09 16:59:12Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-FindPerl/Makefile 482255 2018-10-16 20:05:19Z sunpoet $
 
 PORTNAME=	Devel-FindPerl
-PORTVERSION=	0.014
+PORTVERSION=	0.015
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,5 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

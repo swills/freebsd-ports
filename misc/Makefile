@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 481529 2018-10-08 09:31:09Z tz $
+# $FreeBSD: head/misc/Makefile 482261 2018-10-16 22:07:52Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -291,6 +291,7 @@
     SUBDIR += mime-support
     SUBDIR += mirmon
     SUBDIR += mmv
+    SUBDIR += molequeue
     SUBDIR += morse
     SUBDIR += mtail
     SUBDIR += mtx
@@ -444,6 +445,7 @@
     SUBDIR += py-spdx
     SUBDIR += py-spdx-lookup
     SUBDIR += py-spdx-tools
+    SUBDIR += py-toil
     SUBDIR += py-tqdm
     SUBDIR += py-yolk
     SUBDIR += pylize

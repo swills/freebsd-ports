@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/net-im/mu-conference/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/mu-conference/Makefile 482225 2018-10-16 13:11:05Z rene $
 
 PORTNAME=	mu-conference
 PORTVERSION=	0.8
@@ -25,9 +25,8 @@ USE_RC_SUBR=	${PORTNAME}
 OPTIONS_DEFINE=	MYSQL DOCS
 OPTIONS_DEFAULT=DAEMON
 OPTIONS_SINGLE=	SERVER
-OPTIONS_SINGLE_SERVER=	JABBER JABBERD EJABBERD DAEMON
+OPTIONS_SINGLE_SERVER=	JABBERD EJABBERD DAEMON
 
-JABBER_DESC=	Use with jabberd14 (net-im/jabber)
 JABBERD_DESC=	Use with jabberd 2.x (net-im/jabberd)
 EJABBERD_DESC=	Use with ejabberd (net-im/ejabberd)
 DAEMON_DESC=	Use builtin daemon
@@ -53,13 +52,7 @@ DOCFILES+=	README.sql mu-conference.sql
 
 MUC_LOGDIR?=	/var/log/mu-conference
 
-.if ${PORT_OPTIONS:MJABBER}
-JABBER_REQUIRE?=        jabber
-JABBER_USER?=           jabber
-JABBER_PIDDIR?=         /var/run/jabberd
-JABBER_SPOOLDIR?=       /var/spool/jabberd
-RUN_DEPENDS+=           jabberd14:net-im/jabber
-.elif ${PORT_OPTIONS:MJABBERD}
+.if ${PORT_OPTIONS:MJABBERD}
 JABBER_REQUIRE?=        jabberd
 JABBER_USER?=           jabber
 JABBER_PIDDIR?=         /var/jabberd/pid

@@ -1,9 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty/Makefile 478905 2018-09-03 19:04:28Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty/Makefile 482171 2018-10-15 21:06:30Z sunpoet $
 
 PORTNAME=	tty
 PORTVERSION=	0.8.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -35,9 +35,10 @@ RUN_DEPENDS=	rubygem-bundler>=1.16:sysutils/rubygem-bundler \
 		rubygem-tty-tree>=0.1.0:devel/rubygem-tty-tree \
 		rubygem-tty-which>=0.3.0:devel/rubygem-tty-which
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/teletype
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 482124 2018-10-14 23:15:09Z yuri $
+# $FreeBSD: head/science/Makefile 482266 2018-10-17 01:04:41Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -29,6 +29,8 @@
     SUBDIR += atom
     SUBDIR += atompaw
     SUBDIR += avogadro
+    SUBDIR += avogadro2
+    SUBDIR += avogadrolibs
     SUBDIR += bagel
     SUBDIR += bddsolve
     SUBDIR += bft
@@ -115,6 +117,7 @@
     SUBDIR += libint2
     SUBDIR += libkml
     SUBDIR += liblinear
+    SUBDIR += libmsym
     SUBDIR += liboglappth
     SUBDIR += libquantum
     SUBDIR += libssm

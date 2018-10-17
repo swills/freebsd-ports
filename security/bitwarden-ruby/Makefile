@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/bitwarden-ruby/Makefile 465295 2018-03-22 16:05:19Z feld $
+# $FreeBSD: head/security/bitwarden-ruby/Makefile 482187 2018-10-15 22:25:28Z feld $
 
 PORTNAME=	bitwarden-ruby
 DISTVERSION=	0.0.0.20180321
@@ -9,6 +9,9 @@ MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Ruby implementation of the BitWarden API
 
 LICENSE=	ISCL
+
+EXPIRATION_DATE=	2019-01-01
+DEPRECATED=	Expects very specific rubygem versions for new updates. Please follow instructions in git repo.
 
 RUN_DEPENDS=	rubygem-sinatra>=2.0:www/rubygem-sinatra \
 		rubygem-sinatra-contrib>=2.0:www/rubygem-sinatra-contrib \

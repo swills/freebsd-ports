@@ -1,5 +1,5 @@
 # Created by: torstenb
-# $FreeBSD: head/www/libwww/Makefile 473964 2018-07-05 11:32:32Z dbaio $
+# $FreeBSD: head/www/libwww/Makefile 482200 2018-10-16 00:46:47Z dbaio $
 
 PORTNAME=	libwww
 PORTVERSION=	5.4.2
@@ -15,8 +15,6 @@ LICENSE=	W3C
 LICENSE_NAME=	W3C IPR SOFTWARE NOTICE
 LICENSE_FILE=	${WRKSRC}/LICENSE.html
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
-
-BROKEN_SSL=		openssl-devel
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 

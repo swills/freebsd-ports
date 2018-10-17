@@ -1,7 +1,7 @@
-# $FreeBSD: head/biology/py-orange3-single-cell/Makefile 482023 2018-10-14 04:43:07Z yuri $
+# $FreeBSD: head/biology/py-orange3-single-cell/Makefile 482277 2018-10-17 07:31:34Z yuri $
 
 PORTNAME=	orange3-single-cell
-DISTVERSION=	0.8.1
+DISTVERSION=	0.8.2
 CATEGORIES=	biology python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

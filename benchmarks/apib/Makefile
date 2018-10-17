@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/benchmarks/apib/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/benchmarks/apib/Makefile 482156 2018-10-15 13:43:56Z danfe $
 
 PORTNAME=	apib
 PORTVERSION=	1.0
@@ -25,6 +25,9 @@ PLIST_FILES=	bin/apib bin/apibmon
 PORTEXAMPLES=	env.sh pivot run.sh rungroup.sh tojson
 
 OPTIONS_DEFINE=	EXAMPLES
+
+post-patch:
+	@${REINPLACE_CMD} -e 's, LIBS="-lssl,& -lcrypto,' ${WRKSRC}/configure
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/apib ${WRKSRC}/apibmon \

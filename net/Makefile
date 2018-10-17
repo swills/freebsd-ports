@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 482049 2018-10-14 16:06:28Z sbruno $
+# $FreeBSD: head/net/Makefile 482242 2018-10-16 20:03:29Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -635,6 +635,7 @@
     SUBDIR += p5-Kafka
     SUBDIR += p5-MaxMind-DB-Common
     SUBDIR += p5-MaxMind-DB-Reader
+    SUBDIR += p5-MaxMind-DB-Reader-XS
     SUBDIR += p5-MaxMind-DB-Writer
     SUBDIR += p5-Net
     SUBDIR += p5-Net-ACME2

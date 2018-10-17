@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/proxy65/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-im/proxy65/Makefile 482224 2018-10-16 13:08:21Z rene $
 
 PORTNAME=	proxy65
 PORTVERSION=	1.2.0.20150210
@@ -20,10 +20,9 @@ GH_TAGNAME=	4e76bf2
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_SINGLE= SERVER
-OPTIONS_SINGLE_SERVER= NOJABBER JABBER JABBERD EJABBERD
+OPTIONS_SINGLE_SERVER= NOJABBER JABBERD EJABBERD
 OPTIONS_DEFAULT=	NOJABBER
 NOJABBER_DESC=    Do not depend on a jabber server
-JABBER_DESC=    Use with jabberd14 (net-im/jabber)
 JABBERD_DESC=   Use with jabberd 2.x (net-im/jabberd)
 EJABBERD_DESC=  Use with ejabberd (net-im/ejabberd)
 
@@ -42,9 +41,6 @@ GROUPS=		${PROXY65_GROUP}
 
 .if ${PORT_OPTIONS:MNOJABBER}
 # No jabber depends
-.elif ${PORT_OPTIONS:MJABBER}
-JABBER_REQUIRE?=        jabber
-RUN_DEPENDS+=           jabberd14:net-im/jabber
 .elif ${PORT_OPTIONS:MJABBERD}
 JABBER_REQUIRE?=        jabberd
 RUN_DEPENDS+=           jabberd:net-im/jabberd

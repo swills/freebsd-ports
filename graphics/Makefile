@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 481529 2018-10-08 09:31:09Z tz $
+# $FreeBSD: head/graphics/Makefile 482194 2018-10-16 00:00:46Z jbeich $
 #
 
     COMMENT = Graphics tools and libraries
@@ -1123,6 +1123,7 @@
     SUBDIR += vigra
     SUBDIR += vips
     SUBDIR += visprint
+    SUBDIR += vkd3d
     SUBDIR += volpack
     SUBDIR += vp
     SUBDIR += vulkan-loader

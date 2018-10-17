@@ -1,13 +1,13 @@
 # Created by: Colin Booth <colin@heliocat.net>
-# $FreeBSD: head/sysutils/s6/Makefile 480057 2018-09-18 18:25:47Z fernape $
+# $FreeBSD: head/sysutils/s6/Makefile 482158 2018-10-15 16:11:57Z 0mp $
 
 PORTNAME=	s6
-PORTVERSION=	2.7.2.0
+PORTVERSION=	2.7.2.1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://www.skarnet.org/software/${PORTNAME}/
 
 MAINTAINER=	crest@rlwinm.de
-COMMENT=	skarnet.org supervision suite.
+COMMENT=	Skarnet.org supervision suite
 
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
@@ -17,12 +17,13 @@ LIB_DEPENDS=	libskarnet.so:devel/skalibs
 RUN_DEPENDS=	execlineb:lang/execline
 
 USES=		gmake
+USE_LDCONFIG=	yes
 USE_RC_SUBR=	s6
+
 SERVICE_DIR?=	/var/service
 SUB_FILES=	s6-svscan_finish s6-svscan-log_run s6-svscanboot s6-svscan_env_PATH
 SUB_LIST=	SERVICE_DIR="${SERVICE_DIR}"
 
-USE_LDCONFIG=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--with-default-path=${LOCALBASE}/bin:/usr/bin:/bin \
