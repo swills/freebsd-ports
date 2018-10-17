@@ -1,5 +1,5 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-python-libs/Makefile 479222 2018-09-08 00:53:10Z jbeich $
+# $FreeBSD: head/devel/boost-python-libs/Makefile 482292 2018-10-17 12:46:56Z jbeich $
 
 PORTNAME=	boost-libs
 PORTREVISION=	1
@@ -13,7 +13,7 @@ USES=		python
 USE_PYTHON=	flavors
 
 # Ignore -Wregister warnings in Python.h
-CFLAGS+=	${${PY_FLAVOR}_CFLAGS}
+CFLAGS+=	${${FLAVOR}_CFLAGS}
 py27_CFLAGS=	-isystem ${PYTHON_INCLUDEDIR}
 
 OPTIONS_DEFINE=	DEBUG OPTIMIZED_CFLAGS

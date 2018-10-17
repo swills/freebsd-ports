@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/sccache/Makefile 481921 2018-10-12 19:01:02Z jbeich $
+# $FreeBSD: head/devel/sccache/Makefile 482294 2018-10-17 13:15:53Z pizzamig $
 
 PORTNAME=	sccache
 DISTVERSION=	2.8.0.alpha0
@@ -282,10 +282,16 @@ CARGO_CRATES=	adler32-1.0.3 \
 		xattr-0.2.2 \
 		zip-0.4.2
 
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1200084
+IGNORE=	openssl 1.1.1 is incompatible with the reqwest 0.8.8 dependencies
+.endif
+
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/sccache
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -1,8 +1,8 @@
 # Created by: Jev Björsell <ports@ecadlabs.com>
-# $FreeBSD: head/databases/redis_exporter/Makefile 474189 2018-07-08 16:37:27Z swills $
+# $FreeBSD: head/databases/redis_exporter/Makefile 482302 2018-10-17 19:17:08Z joneum $
 
 PORTNAME=	redis_exporter
-PORTVERSION=	0.20.2
+PORTVERSION=	0.21.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	databases
 
@@ -12,8 +12,8 @@ COMMENT=	Prometheus exporter for redis stats
 LICENSE=	MIT
 
 USES=		go
-USE_GITHUB=	yes
 
+USE_GITHUB=	yes
 GH_ACCOUNT=	oliver006
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}

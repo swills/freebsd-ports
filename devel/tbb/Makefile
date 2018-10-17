@@ -1,5 +1,5 @@
 # Created by: Arun Sharma <arun@sharma-home.net>
-# $FreeBSD: head/devel/tbb/Makefile 481833 2018-10-11 14:47:13Z martymac $
+# $FreeBSD: head/devel/tbb/Makefile 482301 2018-10-17 17:50:03Z martymac $
 
 PORTNAME=	tbb
 PORTVERSION=	2019.1
@@ -26,7 +26,8 @@ SUB_LIST=	prefix="${PREFIX}" \
 		version="${PORTVERSION}"
 
 OPTIONS_DEFINE=	DOCS
-DOCS_BUILD_DEPENDS=	doxygen:devel/doxygen
+DOCS_BUILD_DEPENDS=	doxygen:devel/doxygen \
+		dot:graphics/graphviz
 
 USE_LDCONFIG=	yes
 ALL_TARGET=	default
