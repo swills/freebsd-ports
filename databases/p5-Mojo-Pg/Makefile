@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Mojo-Pg/Makefile 479859 2018-09-16 00:07:09Z sunpoet $
+# $FreeBSD: head/databases/p5-Mojo-Pg/Makefile 482518 2018-10-20 14:49:10Z sunpoet $
 
 PORTNAME=	Mojo-Pg
-PORTVERSION=	4.10
+PORTVERSION=	4.11
 CATEGORIES=	databases www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SRI
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBD-Pg>=3.5.1:databases/p5-DBD-Pg \
-		p5-Mojolicious>=7.53:www/p5-Mojolicious \
+		p5-Mojolicious>=8.03:www/p5-Mojolicious \
 		p5-SQL-Abstract>=1.86:databases/p5-SQL-Abstract
 
 OPTIONS_DEFINE=	EXAMPLES

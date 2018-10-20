@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-twitter-text/Makefile 457895 2018-01-02 15:35:50Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-twitter-text/Makefile 482548 2018-10-20 14:53:39Z sunpoet $
 
 PORTNAME=	twitter-text
-PORTVERSION=	2.1.0
-PORTREVISION=	1
+PORTVERSION=	3.0.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-idn-ruby>=0:dns/rubygem-idn-ruby \
 		rubygem-unf>=0.1.0:textproc/rubygem-unf
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

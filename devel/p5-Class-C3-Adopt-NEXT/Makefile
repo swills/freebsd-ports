@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/devel/p5-Class-C3-Adopt-NEXT/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/devel/p5-Class-C3-Adopt-NEXT/Makefile 482551 2018-10-20 14:54:03Z sunpoet $
 
 PORTNAME=	Class-C3-Adopt-NEXT
 PORTVERSION=	0.14
@@ -12,6 +12,7 @@ COMMENT=	Make NEXT suck less
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-MRO-Compat>=0:devel/p5-MRO-Compat

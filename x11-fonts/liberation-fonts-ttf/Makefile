@@ -1,41 +1,27 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/x11-fonts/liberation-fonts-ttf/Makefile 482482 2018-10-20 10:26:43Z thierry $
+# $FreeBSD: head/x11-fonts/liberation-fonts-ttf/Makefile 482561 2018-10-20 15:30:28Z tobik $
 
 PORTNAME=	liberation-fonts-ttf
 PORTVERSION=	2.00.3
 PORTEPOCH=	2
 CATEGORIES=	x11-fonts
+MASTER_SITES=	https://github.com/liberationfonts/liberation-fonts/files/2012634/
 
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Liberation fonts from Red Hat to replace MS TTF fonts
 
 LICENSE=	OFL11
 
-BUILD_DEPENDS=	fontforge:print/fontforge	\
-		fonttools-3.6:print/py-fonttools@py36
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	liberationfonts
-GH_PROJECT=	liberation-fonts
-
-USES=		fonts gmake python:3.3+,build
-USE_XORG=	x11
+USES=		fonts
 
 NO_ARCH=	yes
+NO_BUILD=	yes
 SUB_FILES=	pkg-message
-
-SCRIPT_F=	scripts/setisFixedPitch-fonttools.py
 
 FONTNAME=	Liberation
 
-pre-configure:
-	${REINPLACE_CMD} -e 's|python3|${PYTHON_CMD}|' ${WRKSRC}/${MAKEFILE}
-	${REINPLACE_CMD} -e 's|/usr/bin/python3| ${PYTHON_CMD}|'	\
-		${WRKSRC}/${SCRIPT_F}
-
 do-install:
 	${MKDIR} ${STAGEDIR}${FONTSDIR}
-	cd ${WRKSRC}/${PORTNAME}-${PORTVERSION} && \
-		${INSTALL_DATA} *.ttf ${STAGEDIR}${FONTSDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.ttf ${STAGEDIR}${FONTSDIR}
 
 .include <bsd.port.mk>

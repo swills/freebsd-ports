@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/mathmod/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/mathmod/Makefile 482562 2018-10-20 15:32:33Z thierry $
 
 PORTNAME=	MathMod
 PORTVERSION=	8.0
@@ -14,7 +14,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	parisolab
 GH_PROJECT=	${PORTNAME:tl}
 
-USES=		dos2unix qmake qt:5
+USES=		compiler:c++11-lang dos2unix gl qmake qt:5
 USE_GL=		gl
 USE_QT=		buildtools_build core gui opengl qmake_build widgets
 

@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/suphp/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/suphp/Makefile 482491 2018-10-20 11:33:29Z mfechner $
 
 PORTNAME=	suphp
 PORTVERSION=	0.7.2
@@ -8,12 +8,15 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.suphp.org/download/ \
 		LOCAL/bdrewery/${PORTNAME}/ \
 		http://mirror.shatow.net/freebsd/${PORTNAME}/
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
-MAINTAINER=	bdrewery@FreeBSD.org
+MAINTAINER=	freebsd-ports@dan.me.uk
 COMMENT=	Securely execute PHP scripts under Apache
 
+LICENSE=	GPLv2
+
 GNU_CONFIGURE=	yes
-USES=		apache:2.2+ autoreconf libtool php:cgi
+USES=		apache:2.2+ autoreconf libtool php:cgi,flavors
 SUB_FILES=	pkg-message
 
 CFLAGS+=	-I${LOCALBASE}/include
@@ -45,6 +48,7 @@ CONFIGURE_ARGS+=	--with-apr=${LOCALBASE}
 post-install:
 .if !defined(WITH_DEBUG)
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/suphp
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/${APACHEMODDIR}/mod_suphp.so
 .endif
 	${INSTALL_DATA} ${WRKSRC}/doc/suphp.conf-example \
 	    ${STAGEDIR}${PREFIX}/etc/suphp.conf-example

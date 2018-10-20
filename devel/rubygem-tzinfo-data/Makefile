@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tzinfo-data/Makefile 469204 2018-05-06 12:49:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tzinfo-data/Makefile 482515 2018-10-20 14:48:46Z sunpoet $
 
 PORTNAME=	tzinfo-data
-PORTVERSION=	1.2018.5
+PORTVERSION=	1.2018.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-tzinfo>=1.0.0:devel/rubygem-tzinfo
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

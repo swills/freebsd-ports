@@ -1,8 +1,8 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/lang/libhx/Makefile 478458 2018-08-30 14:23:19Z danilo $
+# $FreeBSD: head/lang/libhx/Makefile 482501 2018-10-20 14:40:42Z danilo $
 
 PORTNAME=	libHX
-PORTVERSION=	3.23
+PORTVERSION=	3.24
 CATEGORIES=	lang
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}
 

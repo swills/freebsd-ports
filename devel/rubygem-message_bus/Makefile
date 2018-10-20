@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-message_bus/Makefile 470178 2018-05-16 23:55:53Z sunpoet $
+# $FreeBSD: head/devel/rubygem-message_bus/Makefile 482534 2018-10-20 14:51:44Z sunpoet $
 
 PORTNAME=	message_bus
-PORTVERSION=	2.1.5
+PORTVERSION=	2.1.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,9 +14,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-rack>=1.1.3:www/rubygem-rack
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
+
 SHEBANG_FILES=	examples/chat/docker_container/update_chat
 
 .include <bsd.port.mk>

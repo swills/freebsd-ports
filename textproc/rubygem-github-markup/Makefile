@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-github-markup/Makefile 476108 2018-07-31 23:53:42Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-markup/Makefile 482545 2018-10-20 14:53:14Z sunpoet $
 
 PORTNAME=	github-markup
-PORTVERSION=	2.0.1
+PORTVERSION=	3.0.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -11,9 +11,10 @@ COMMENT=	Render any fancy markup
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 REINPLACE_ARGS=	-i ''
 
 PLIST_FILES=	bin/github-markup

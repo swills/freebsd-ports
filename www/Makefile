@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 482312 2018-10-17 22:48:23Z jpaetzel $
+# $FreeBSD: head/www/Makefile 482552 2018-10-20 14:56:29Z zi $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1302,6 +1302,7 @@
     SUBDIR += p5-WWW-Myspace
     SUBDIR += p5-WWW-NicoVideo-Download
     SUBDIR += p5-WWW-NioTV
+    SUBDIR += p5-WWW-OAuth
     SUBDIR += p5-WWW-OpenSVN
     SUBDIR += p5-WWW-OpenSearch
     SUBDIR += p5-WWW-Pastebin-PastebinCom-Create
@@ -1517,6 +1518,7 @@
     SUBDIR += py-beaker
     SUBDIR += py-beautifulsoup
     SUBDIR += py-beautifulsoup32
+    SUBDIR += py-biscuits
     SUBDIR += py-bjoern
     SUBDIR += py-bleach
     SUBDIR += py-blogofile

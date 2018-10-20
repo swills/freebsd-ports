@@ -1,9 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/shairport-sync/Makefile 476517 2018-08-06 17:22:36Z fernape $
+# $FreeBSD: head/audio/shairport-sync/Makefile 482487 2018-10-20 11:01:48Z ehaupt $
 
 PORTNAME=	shairport-sync
-DISTVERSION=	3.2.1
-PORTREVISION=	1
+DISTVERSION=	3.2.2
 CATEGORIES=	audio
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -17,10 +16,11 @@ LIB_DEPENDS=	libavahi-client.so:net/avahi-app \
 		libpopt.so:devel/popt \
 		libsoxr.so:audio/libsoxr
 
-GNU_CONFIGURE=	yes
 USES=		autoreconf libtool pkgconfig ssl
-
 USE_GITHUB=	yes
+
+GNU_CONFIGURE=	yes
+
 GH_ACCOUNT=	mikebrady
 
 USE_RC_SUBR=	${PORTNAME}

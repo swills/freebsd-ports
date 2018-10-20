@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/py-flask-migrate/Makefile 477383 2018-08-16 23:42:03Z sunpoet $
+# $FreeBSD: head/www/py-flask-migrate/Makefile 482510 2018-10-20 14:48:03Z sunpoet $
 
 PORTNAME=	Flask-Migrate
-PORTVERSION=	2.2.1
-PORTREVISION=	1
+PORTVERSION=	2.3.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

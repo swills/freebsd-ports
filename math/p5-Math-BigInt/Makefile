@@ -1,8 +1,8 @@
 # Created by: tobez
-# $FreeBSD: head/math/p5-Math-BigInt/Makefile 481932 2018-10-12 19:59:42Z sunpoet $
+# $FreeBSD: head/math/p5-Math-BigInt/Makefile 482523 2018-10-20 14:49:52Z sunpoet $
 
 PORTNAME=	Math-BigInt
-PORTVERSION=	1.999814
+PORTVERSION=	1.999815
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

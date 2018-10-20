@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-nokogiri/Makefile 479310 2018-09-09 16:59:06Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-nokogiri/Makefile 482547 2018-10-20 14:53:31Z sunpoet $
 
 PORTNAME=	nokogiri
-PORTVERSION=	1.8.4
+PORTVERSION=	1.8.5
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,8 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	rubygem-pkg-config>=1.1.7:devel/rubygem-pkg-config
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt
+RUN_DEPENDS=	rubygem-pkg-config>=1.1.7:devel/rubygem-pkg-config
 
 USES=		gem gnome pkgconfig
 USE_GNOME=	libxml2 libxslt

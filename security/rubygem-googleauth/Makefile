@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-googleauth/Makefile 478036 2018-08-25 13:49:32Z sunpoet $
+# $FreeBSD: head/security/rubygem-googleauth/Makefile 482517 2018-10-20 14:49:02Z sunpoet $
 
 PORTNAME=	googleauth
-PORTVERSION=	0.6.6
+PORTVERSION=	0.6.7
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -14,13 +14,16 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	rubygem-faraday>=0.12:www/rubygem-faraday \
 		rubygem-jwt>=1.4:www/rubygem-jwt \
-		rubygem-memoist>=0.12:devel/rubygem-memoist \
+		rubygem-memoist>=0.16:devel/rubygem-memoist \
 		rubygem-multi_json>=1.11:devel/rubygem-multi_json \
 		rubygem-os>=0.9:devel/rubygem-os \
 		rubygem-signet>=0.7:security/rubygem-signet
 
-NO_ARCH=	yes
+USES=		gem shebangfix
 USE_RUBY=	yes
-USES=		gem
+
+NO_ARCH=	yes
+
+SHEBANG_FILES=	.kokoro/*.sh
 
 .include <bsd.port.mk>

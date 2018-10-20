@@ -1,5 +1,5 @@
 # Created by: Frerich Raabe <frerich.raabe@gmx.de>
-# $FreeBSD: head/german/selfhtml/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/german/selfhtml/Makefile 482497 2018-10-20 13:24:51Z tobik $
 
 PORTNAME=	selfhtml
 PORTVERSION=	8.1.2
@@ -20,6 +20,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extensive German HTML reference
+
+DEPRECATED=	Project migrated to a Wiki
+EXPIRATION_DATE=	2018-11-15
 
 NO_ARCH=	yes
 NO_BUILD=	yes
