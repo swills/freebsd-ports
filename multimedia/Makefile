@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 481596 2018-10-09 04:19:08Z swills $
+# $FreeBSD: head/multimedia/Makefile 482343 2018-10-18 13:31:00Z tijl $
 #
 
     COMMENT = Multimedia software
@@ -26,6 +26,7 @@
     SUBDIR += avidemux-qt4
     SUBDIR += avinfo
     SUBDIR += baka-mplayer
+    SUBDIR += bcmatroska2
     SUBDIR += bino
     SUBDIR += bitstream
     SUBDIR += blind
@@ -283,7 +284,7 @@
     SUBDIR += mpv
     SUBDIR += msdl
     SUBDIR += msopenh264
-    SUBDIR += msx264
+    SUBDIR += mswebrtc
     SUBDIR += mxflib
     SUBDIR += mythtv
     SUBDIR += mythtv-frontend

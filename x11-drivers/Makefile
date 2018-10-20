@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-drivers/Makefile 459199 2018-01-16 17:47:09Z novel $
+# $FreeBSD: head/x11-drivers/Makefile 482322 2018-10-18 02:10:00Z jmd $
 #
 
     COMMENT = X11 drivers
@@ -24,6 +24,7 @@
     SUBDIR += xf86-video-ark
     SUBDIR += xf86-video-ast
     SUBDIR += xf86-video-ati
+    SUBDIR += xf86-video-ati-legacy
     SUBDIR += xf86-video-chips
     SUBDIR += xf86-video-cirrus
     SUBDIR += xf86-video-dummy

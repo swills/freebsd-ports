@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 481625 2018-10-09 12:03:07Z arrowd $
+# $FreeBSD: head/textproc/Makefile 482343 2018-10-18 13:31:00Z tijl $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -58,6 +58,7 @@
     SUBDIR += be-aspell
     SUBDIR += bedic-data
     SUBDIR += beediff
+    SUBDIR += belr
     SUBDIR += bg-aspell
     SUBDIR += bg-hyphen
     SUBDIR += bg-mythes

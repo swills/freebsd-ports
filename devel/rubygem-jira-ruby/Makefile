@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 479910 2018-09-16 23:25:56Z sunpoet $
+# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 482478 2018-10-20 09:30:10Z amdmi3 $
 
 PORTNAME=	jira-ruby
 PORTVERSION=	1.6.0
@@ -16,8 +16,8 @@ RUN_DEPENDS=	rubygem-activesupport4>=4.0:devel/rubygem-activesupport4 \
 		rubygem-multipart-post>=0:www/rubygem-multipart-post \
 		rubygem-oauth>=0.5.0:net/rubygem-oauth
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

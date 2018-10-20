@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 482226 2018-10-16 13:11:58Z rene $
+# $FreeBSD: head/www/Makefile 482312 2018-10-17 22:48:23Z jpaetzel $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1688,8 +1688,10 @@
     SUBDIR += py-google-api-core
     SUBDIR += py-google-api-python-client
     SUBDIR += py-google-cloud-core
+    SUBDIR += py-google-cloud-dlp
     SUBDIR += py-google-cloud-storage
     SUBDIR += py-google-cloud-translate
+    SUBDIR += py-google-cloud-vision
     SUBDIR += py-google-resumable-media
     SUBDIR += py-graphite-api
     SUBDIR += py-graphite-web

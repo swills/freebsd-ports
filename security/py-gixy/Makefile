@@ -1,9 +1,8 @@
 # Created by: Dan Langille
-# $FreeBSD: head/security/py-gixy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-gixy/Makefile 482444 2018-10-19 18:13:05Z pi $
 
 PORTNAME=	gixy
-PORTVERSION=	0.1.3
-PORTREVISION=	1
+PORTVERSION=	0.1.20
 CATEGORIES=	security www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

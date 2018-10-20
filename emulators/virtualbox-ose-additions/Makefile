@@ -1,8 +1,9 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/emulators/virtualbox-ose-additions/Makefile 482272 2018-10-17 06:49:30Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose-additions/Makefile 482464 2018-10-20 04:42:53Z jkim $
 
 PORTNAME=	virtualbox-ose
 PORTVERSION=	5.2.20
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
 PKGNAMESUFFIX?=	-additions

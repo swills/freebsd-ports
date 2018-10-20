@@ -1,8 +1,8 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/security/libressl/Makefile 479595 2018-09-12 11:36:17Z brnrd $
+# $FreeBSD: head/security/libressl/Makefile 482483 2018-10-20 10:30:23Z brnrd $
 
 PORTNAME=	libressl
-PORTVERSION=	2.7.4
+PORTVERSION=	2.8.2
 CATEGORIES=	security devel
 MASTER_SITES=	OPENBSD/LibreSSL
 

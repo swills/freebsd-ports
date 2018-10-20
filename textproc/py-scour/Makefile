@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/py-scour/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/textproc/py-scour/Makefile 482327 2018-10-18 06:24:37Z wen $
 
 PORTNAME=	scour
-PORTVERSION=	0.35
-PORTREVISION=	1
+PORTVERSION=	0.37
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

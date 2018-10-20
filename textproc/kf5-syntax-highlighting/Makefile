@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/kf5-syntax-highlighting/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/textproc/kf5-syntax-highlighting/Makefile 482342 2018-10-18 12:19:57Z adridg $
 
 PORTNAME=	syntax-highlighting
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	textproc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,5 +12,7 @@ USES=		cmake:outsource compiler:c++11-lib kde:5 perl5 qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build core gui linguisttools_build \
 		network testlib qmake_build
+
+CMAKE_ARGS=	-DCMAKE_DISABLE_FIND_PACKAGE_Qt5XmlPatterns=TRUE
 
 .include <bsd.port.mk>

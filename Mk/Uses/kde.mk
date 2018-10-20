@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/kde.mk 481851 2018-10-11 20:23:50Z tcberner $
+# $FreeBSD: head/Mk/Uses/kde.mk 482471 2018-10-20 07:24:04Z tcberner $
 #
 # Provides support for KDE and KF5-based ports.
 #
@@ -70,7 +70,7 @@ KDE_PLASMA_VERSION?=		5.12.5
 KDE_PLASMA_BRANCH?=		stable
 
 # Current KDE frameworks.
-KDE_FRAMEWORKS_VERSION?=	5.50.0
+KDE_FRAMEWORKS_VERSION?=	5.51.0
 KDE_FRAMEWORKS_BRANCH?= 	stable
 
 # Current KDE applications.

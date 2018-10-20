@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-drivers/xf86-video-ati/Makefile 481094 2018-10-02 01:25:49Z jmd $
+# $FreeBSD: head/x11-drivers/xf86-video-ati/Makefile 482322 2018-10-18 02:10:00Z jmd $
 
 PORTNAME=	xf86-video-ati
 PORTVERSION=	18.1.0
@@ -13,6 +13,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpciaccess.so:devel/libpciaccess \
 		libdrm_radeon.so:graphics/libdrm
+
+CONFLICTS_INSTALL=	xf86-video-ati-legacy
 
 USE_GL=		gl
 XORG_CAT=	driver

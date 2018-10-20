@@ -1,9 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-pystorm/Makefile 481127 2018-10-02 19:06:16Z feld $
+# $FreeBSD: head/devel/py-pystorm/Makefile 482355 2018-10-18 19:08:53Z swills $
 
 PORTNAME=	pystorm
-PORTVERSION=	3.1.0
-PORTREVISION=	2
+PORTVERSION=	3.1.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,15 +12,14 @@ COMMENT=	Battle-tested Apache Storm Multi-Lang implementation for Python
 
 LICENSE=	APACHE20
 
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR}
+
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR}
-
 NO_ARCH=	yes
-REINPLACE_ARGS=	-i ''
 
 post-patch:
 	${RM} ${WRKSRC}/test/__init__.py

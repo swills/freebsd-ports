@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 481529 2018-10-08 09:31:09Z tz $
+# $FreeBSD: head/mail/Makefile 482363 2018-10-18 19:53:29Z sunpoet $
 #
 
     COMMENT = Electronic mail utilities
@@ -379,7 +379,9 @@
     SUBDIR += p5-Mail-Audit
     SUBDIR += p5-Mail-Audit-Attach
     SUBDIR += p5-Mail-Box
+    SUBDIR += p5-Mail-Box-IMAP4
     SUBDIR += p5-Mail-Box-IMAP4-SSL
+    SUBDIR += p5-Mail-Box-POP3
     SUBDIR += p5-Mail-Box-Parser-C
     SUBDIR += p5-Mail-Bulkmail
     SUBDIR += p5-Mail-CheckUser
@@ -402,6 +404,7 @@
     SUBDIR += p5-Mail-MailStats
     SUBDIR += p5-Mail-Mbox-MessageParser
     SUBDIR += p5-Mail-MboxParser
+    SUBDIR += p5-Mail-Message
     SUBDIR += p5-Mail-OpenDKIM
     SUBDIR += p5-Mail-OpenRelay-Simple
     SUBDIR += p5-Mail-POP3Client
@@ -416,6 +419,7 @@
     SUBDIR += p5-Mail-Sendmail
     SUBDIR += p5-Mail-Spool
     SUBDIR += p5-Mail-Tools
+    SUBDIR += p5-Mail-Transport
     SUBDIR += p5-Mail-Transport-Dbx
     SUBDIR += p5-Mail-Verify
     SUBDIR += p5-Mail-Verp

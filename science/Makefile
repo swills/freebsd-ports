@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 482266 2018-10-17 01:04:41Z yuri $
+# $FreeBSD: head/science/Makefile 482378 2018-10-18 21:21:17Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -142,6 +142,7 @@
     SUBDIR += metaphysicl
     SUBDIR += minc2
     SUBDIR += mmdb2
+    SUBDIR += mmtf
     SUBDIR += mol2ps
     SUBDIR += molgif
     SUBDIR += mpb

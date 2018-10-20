@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-dplyr/Makefile 473820 2018-07-03 12:32:06Z wen $
+# $FreeBSD: head/math/R-cran-dplyr/Makefile 482323 2018-10-18 03:27:17Z wen $
 
 PORTNAME=	dplyr
-DISTVERSION=	0.7.6
+DISTVERSION=	0.7.7
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

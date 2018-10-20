@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/tmate/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/sysutils/tmate/Makefile 482320 2018-10-18 01:28:48Z swills $
 
 PORTNAME=	tmate
 PORTVERSION=	2.2.1
@@ -10,7 +10,7 @@ COMMENT=	Instant terminal sharing
 
 LIB_DEPENDS=	libevent.so:devel/libevent \
 		libmsgpackc.so:devel/msgpack \
-		libssh_threads.so:security/libssh
+		libssh.so:security/libssh
 
 USES=		autoreconf ncurses pkgconfig
 USE_GITHUB=	yes

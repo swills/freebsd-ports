@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 480629 2018-09-24 20:50:24Z thierry $
+# $FreeBSD: head/cad/Makefile 482319 2018-10-18 00:40:18Z jrm $
 #
 
     COMMENT = CAD tools
@@ -35,7 +35,6 @@
     SUBDIR += gerbv
     SUBDIR += ghdl
     SUBDIR += gmsh
-    SUBDIR += gmsh-occ
     SUBDIR += gnucap
     SUBDIR += gplcver
     SUBDIR += gspiceui

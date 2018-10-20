@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 481937 2018-10-12 20:16:28Z jbeich $
+# $FreeBSD: head/audio/Makefile 482343 2018-10-18 13:31:00Z tijl $
 #
 
     COMMENT = Audio tools
@@ -563,8 +563,6 @@
     SUBDIR += mpg321
     SUBDIR += mpiosh
     SUBDIR += mps
-    SUBDIR += msbcg729
-    SUBDIR += msilbc
     SUBDIR += mumble
     SUBDIR += murmur
     SUBDIR += musepack

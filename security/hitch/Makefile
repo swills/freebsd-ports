@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/hitch/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/hitch/Makefile 482392 2018-10-18 23:36:11Z zi $
 
 PORTNAME=		hitch
 PORTVERSION=		1.4.8
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		security
 MASTER_SITES=		http://hitch-tls.org/source/ \
 			ZI
@@ -16,8 +16,8 @@ LICENSE=		BSD2CLAUSE
 BUILD_DEPENDS=		rst2man:textproc/py-docutils
 LIB_DEPENDS=		libev.so:devel/libev
 
-USERS=			nobody
-GROUPS=			nobody
+USERS=			hitch
+GROUPS=			hitch
 
 USES=			pkgconfig ssl
 GNU_CONFIGURE=		yes

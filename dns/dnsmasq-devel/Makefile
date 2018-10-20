@@ -1,5 +1,5 @@
 # Created by: Matthias Andree
-# $FreeBSD: head/dns/dnsmasq-devel/Makefile 482262 2018-10-16 22:36:46Z mandree $
+# $FreeBSD: head/dns/dnsmasq-devel/Makefile 482440 2018-10-19 17:48:30Z mandree $
 
 PORTNAME=	dnsmasq
 DISTVERSION=	2.80rc1
@@ -15,6 +15,8 @@ COMMENT=	Lightweight DNS forwarder, DHCP, and TFTP server
 LICENSE=	GPLv2
 
 CONFLICTS_INSTALL=dnsmasq-2*
+
+IGNORE=		use dns/dnsmasq, which is newer
 
 PORTDOCS=	CHANGELOG CHANGELOG.archive FAQ doc.html setup.html
 

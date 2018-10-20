@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-pid/Makefile 481127 2018-10-02 19:06:16Z feld $
+# $FreeBSD: head/devel/py-pid/Makefile 482396 2018-10-19 00:32:13Z swills $
 
 PORTNAME=	pid
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
