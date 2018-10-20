@@ -1,8 +1,8 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/sysutils/rubygem-specinfra/Makefile 474514 2018-07-12 13:35:56Z joneum $
+# $FreeBSD: head/sysutils/rubygem-specinfra/Makefile 482350 2018-10-18 18:47:19Z swills $
 
 PORTNAME=	specinfra
-PORTVERSION=	2.75.0
+PORTVERSION=	2.76.2
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-net-scp>=0:security/rubygem-net-scp \
 		rubygem-net-ssh>=2.7:security/rubygem-net-ssh \
 		rubygem-net-telnet>=0:security/rubygem-net-telnet
 
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

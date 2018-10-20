@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/py-pyodesys/Makefile 480285 2018-09-21 16:43:54Z yuri $
+# $FreeBSD: head/math/py-pyodesys/Makefile 482380 2018-10-18 21:34:12Z yuri $
 
 PORTNAME=	pyodesys
-DISTVERSION=	0.12.3
-PORTREVISION=	1
+DISTVERSION=	0.12.4
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -36,6 +35,6 @@ EXTRAS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>0:devel/py-appdirs@${PY_FLAVO
 			${PYTHON_PKGNAMEPREFIX}pyodeint>=0.10.1:math/py-pyodeint@${PY_FLAVOR}
 
 do-test: # Tests fail because extra-dependencies are erroneously required: https://github.com/bjodah/pyodesys/issues/97
-	@cd ${WRKSRC} && ${PYTHON_CMD} -m pytest --pyargs ${PORTNAME}
+	@cd ${WRKSRC} && ${PYTHON_CMD} -m pytest
 
 .include <bsd.port.mk>

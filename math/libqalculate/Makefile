@@ -1,5 +1,5 @@
 # Created by: Sergey Akifyev <asa@agava.com>
-# $FreeBSD: head/math/libqalculate/Makefile 480708 2018-09-25 23:23:13Z jhale $
+# $FreeBSD: head/math/libqalculate/Makefile 482451 2018-10-19 19:26:58Z jbeich $
 
 PORTNAME=	libqalculate
 PORTVERSION=	2.6.1
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libicuuc.so:devel/icu \
 		libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr
 
-USES=		compiler:c++11-lang gettext gmake gnome iconv libtool \
+USES=		compiler:c++14-lang gettext gmake gnome iconv libtool \
 		localbase ncurses pathfix pkgconfig readline:port
 USE_GNOME=	intltool libxml2
 USE_LDCONFIG=	yes

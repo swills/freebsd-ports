@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 482226 2018-10-16 13:11:58Z rene $
+# $FreeBSD: head/deskutils/Makefile 482441 2018-10-19 17:59:02Z jsm $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -16,6 +16,7 @@
     SUBDIR += autocutsel
     SUBDIR += baobab
     SUBDIR += basket
+    SUBDIR += belcard
     SUBDIR += bigyear
     SUBDIR += bijiben
     SUBDIR += bitcollider
@@ -239,6 +240,7 @@
     SUBDIR += py-vobject
     SUBDIR += pybookreader
     SUBDIR += pypanel
+    SUBDIR += qlipper
     SUBDIR += qorganizer
     SUBDIR += qownnotes
     SUBDIR += qrfcview

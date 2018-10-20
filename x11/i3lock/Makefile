@@ -1,8 +1,8 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/x11/i3lock/Makefile 481834 2018-10-11 15:17:31Z bapt $
+# $FreeBSD: head/x11/i3lock/Makefile 482416 2018-10-19 08:48:38Z bapt $
 
 PORTNAME=	i3lock
-PORTVERSION=	2.11
+PORTVERSION=	2.11.1
 CATEGORIES=	x11
 MASTER_SITES=	http://i3wm.org/${PORTNAME}/
 
@@ -32,6 +32,8 @@ LDFLAGS+=	${ICONV_LIB}
 USE_XORG=	x11 xcb xt xorgproto xext
 USES=		gmake iconv localbase pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes
+BUILD_WRKSRC=	${WRKSRC}/${CONFIGURE_TARGET}
+INSTALL_WRKSRC=	${WRKSRC}/${CONFIGURE_TARGET}
 
 PORTDOCS=	CHANGELOG README.md
 

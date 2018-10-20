@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PkgConfig/Makefile 478975 2018-09-04 18:40:19Z sunpoet $
+# $FreeBSD: head/devel/p5-PkgConfig/Makefile 482366 2018-10-18 19:54:47Z sunpoet $
 
 PORTNAME=	PkgConfig
-PORTVERSION=	0.22026
+PORTVERSION=	0.23026
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PLICEASE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/firebird25-server/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/databases/firebird25-server/Makefile 482450 2018-10-19 19:26:44Z jbeich $
 
 PORTNAME=	firebird
 PORTVERSION=	2.5.8
@@ -44,6 +44,7 @@ CONFIGURE_ARGS=	--with-system-icu \
 CONFIGURE_ENV+=	PTHREAD_LIBS="-lpthread" \
 		ac_cv_header_atomic_ops_h="no" \
 		ac_cv_lib_atomic_ops_main="no"
+CPPFLAGS+=	-DU_NOEXCEPT= # For USE_CXXSTD=gnu++98
 
 LOCALSTATEDIR=	/var/db/firebird
 CONFDIR=	etc/firebird

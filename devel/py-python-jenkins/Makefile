@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-python-jenkins/Makefile 478314 2018-08-28 13:46:02Z lwhsu $
+# $FreeBSD: head/devel/py-python-jenkins/Makefile 482436 2018-10-19 16:55:07Z lwhsu $
 
 PORTNAME=	python-jenkins
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

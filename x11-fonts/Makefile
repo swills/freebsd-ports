@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 481613 2018-10-09 08:50:12Z miwi $
+# $FreeBSD: head/x11-fonts/Makefile 482328 2018-10-18 07:13:32Z ehaupt $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -189,6 +189,7 @@
     SUBDIR += tlwg-ttf
     SUBDIR += tmu
     SUBDIR += tv-fonts
+    SUBDIR += twemoji-color-font-ttf
     SUBDIR += ubuntu-font
     SUBDIR += urwfonts
     SUBDIR += urwfonts-ttf

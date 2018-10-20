@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/linux-kernel/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/linux-kernel/Makefile 482454 2018-10-19 19:52:16Z tobik $
 
 # To configure the Linux kernel yourself run
 #
@@ -40,6 +40,9 @@ COMMENT=	Linux kernel
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	no longer useful
+EXPIRATION_DATE=	2018-10-28
 
 ONLY_FOR_ARCHS=	amd64 i386
 

@@ -1,8 +1,8 @@
 # Created by: Chris Howey <howeyc@gmail.com>
-# $FreeBSD: head/sysutils/parallel/Makefile 457935 2018-01-02 23:24:33Z dbaio $
+# $FreeBSD: head/sysutils/parallel/Makefile 482347 2018-10-18 16:00:00Z pizzamig $
 
 PORTNAME=	parallel
-PORTVERSION=	20171222
+PORTVERSION=	20180922
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 
@@ -12,11 +12,12 @@ COMMENT=	Shell tool for executing jobs in parallel
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		perl5 shebangfix tar:bzip2
+
 OPTIONS_DEFINE=	DOCS
 
 CONFIGURE_ARGS=	--docdir="${DOCSDIR}"
 GNU_CONFIGURE=	yes
-USES=		perl5 shebangfix tar:bzip2
 
 NO_ARCH=	yes
 

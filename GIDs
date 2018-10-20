@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 478488 2018-08-30 19:39:14Z yuri $
+# $FreeBSD: head/GIDs 482392 2018-10-18 23:36:11Z zi $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -753,7 +753,7 @@ clickhouse:*:800:
 # free: 810
 # free: 811
 foreman_proxy:*:812:
-# free: 813
+hitch:*:813:
 puppet:*:814:
 uchiwa:*:815:
 # free: 816

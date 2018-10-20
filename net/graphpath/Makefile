@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/graphpath/Makefile 468621 2018-04-29 11:51:06Z olivier $
+# $FreeBSD: head/net/graphpath/Makefile 482324 2018-10-18 04:48:29Z olivier $
 
 PORTNAME=	graphpath
-PORTVERSION=	1.0
+PORTVERSION=	1.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

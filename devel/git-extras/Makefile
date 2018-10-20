@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/git-extras/Makefile 462309 2018-02-19 12:07:12Z sunpoet $
+# $FreeBSD: head/devel/git-extras/Makefile 482386 2018-10-18 22:28:22Z swills $
 
 PORTNAME=	git-extras
-PORTVERSION=	4.5.0
+PORTVERSION=	4.6.0
 CATEGORIES=	devel
 
 MAINTAINER=	igor.ostapenko@gmail.com

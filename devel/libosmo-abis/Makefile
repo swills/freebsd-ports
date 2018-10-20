@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libosmo-abis/Makefile 477190 2018-08-14 17:07:42Z swills $
+# $FreeBSD: head/devel/libosmo-abis/Makefile 482343 2018-10-18 13:31:00Z tijl $
 
 PORTNAME=	libosmo-abis
 PORTVERSION=	0.5.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://git.osmocom.org/libosmo-abis/snapshot/ \
 		http://chaosophia.net/downloads/osmocom/${PORTNAME}/

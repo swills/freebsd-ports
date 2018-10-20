@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 482242 2018-10-16 20:03:29Z sunpoet $
+# $FreeBSD: head/net/Makefile 482429 2018-10-19 14:09:32Z egypcio $
 #
 
     COMMENT = Networking tools
@@ -383,6 +383,7 @@
     SUBDIR += libksieve
     SUBDIR += libkvkontakte
     SUBDIR += libkvkontakte-kde4
+    SUBDIR += liblinphone
     SUBDIR += libmaia
     SUBDIR += libmateweather
     SUBDIR += libmaxminddb
@@ -1136,6 +1137,7 @@
     SUBDIR += py-ripe.atlas.tools
     SUBDIR += py-s3cmd
     SUBDIR += py-s3transfer
+    SUBDIR += py-sbws
     SUBDIR += py-shodan
     SUBDIR += py-smart_open
     SUBDIR += py-smbpasswd

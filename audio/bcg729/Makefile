@@ -1,26 +1,21 @@
 # Created by: sobomax
-# $FreeBSD: head/audio/bcg729/Makefile 474434 2018-07-11 09:47:28Z madpilot $
+# $FreeBSD: head/audio/bcg729/Makefile 482343 2018-10-18 13:31:00Z tijl $
 
 PORTNAME=	bcg729
 PORTVERSION=	1.0.4
+PORTREVISION=	1
 CATEGORIES=	audio
+MASTER_SITES=	https://linphone.org/releases/sources/bcg729/
 
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Software G729A encoder and decoder library written in C
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-msplugin --disable-strict
-INSTALL_TARGET=	install-strip
-USES=		autoreconf libtool pathfix pkgconfig
+USES=		cmake:outsource
 USE_LDCONFIG=	yes
 
-USE_GITLAB=	yes
-GL_SITE=	https://gitlab.linphone.org
-GL_ACCOUNT=	BC/public
-GL_PROJECT=	bcg729
-GL_COMMIT=	9ada79d7ff53815e85432e7442810a2fd49dbd0e
+CMAKE_ARGS=	-DENABLE_STATIC=NO
 
 .include <bsd.port.mk>

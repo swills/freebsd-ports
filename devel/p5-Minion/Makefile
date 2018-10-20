@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Minion/Makefile 480494 2018-09-23 11:14:42Z sunpoet $
+# $FreeBSD: head/devel/p5-Minion/Makefile 482365 2018-10-18 19:54:38Z sunpoet $
 
 PORTNAME=	Minion
-PORTVERSION=	9.06
+PORTVERSION=	9.07
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SRI
@@ -15,7 +15,7 @@ LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	p5-Mojolicious>=7.56:www/p5-Mojolicious
+RUN_DEPENDS=	p5-Mojolicious>=8.03:www/p5-Mojolicious
 
 USES=		perl5
 USE_PERL5=	configure

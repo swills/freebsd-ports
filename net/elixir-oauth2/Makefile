@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/elixir-oauth2/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/elixir-oauth2/Makefile 482428 2018-10-19 14:00:20Z vanilla $
 
 PORTNAME=	oauth2
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 PKGNAMEPREFIX=	elixir-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/tmate-slave/Makefile 474580 2018-07-13 12:35:50Z swills $
+# $FreeBSD: head/sysutils/tmate-slave/Makefile 482345 2018-10-18 15:06:29Z swills $
 
 PORTNAME=	tmate-slave
 PORTVERSION=	g20171113
@@ -10,7 +10,7 @@ COMMENT=	Instant terminal sharing server
 
 LIB_DEPENDS=	libevent.so:devel/libevent \
 		libmsgpackc.so:devel/msgpack \
-		libssh_threads.so:security/libssh
+		libssh.so:security/libssh
 
 USES=		autoreconf ncurses pkgconfig
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/graphics/libQGLViewer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/libQGLViewer/Makefile 482443 2018-10-19 18:10:55Z yuri $
 
 PORTNAME=	libQGLViewer
 DISTVERSION=	2.7.1
@@ -12,7 +12,7 @@ COMMENT=	C++ library based on Qt5 that eases the creation of OpenGL 3D viewers
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang gl qmake qt:5
 USE_GL=		gl glu
 USE_QT=		core designer gui opengl widgets xml buildtools_build
 USE_LDCONFIG=	yes

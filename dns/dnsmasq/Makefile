@@ -1,8 +1,8 @@
 # Created by: Steven Honson
-# $FreeBSD: head/dns/dnsmasq/Makefile 465034 2018-03-19 21:10:34Z mandree $
+# $FreeBSD: head/dns/dnsmasq/Makefile 482439 2018-10-19 17:47:56Z mandree $
 
 PORTNAME=	dnsmasq
-DISTVERSION=	2.79
+DISTVERSION=	2.80
 PORTREVISION=	0	# leave this in even if 0 to avoid PORTEPOCH bumps
 PORTEPOCH=	1
 CATEGORIES=	dns ipv6
@@ -32,7 +32,7 @@ OPTIONS_RADIO_INTL=	IDN NLS
 INTL_DESC=	Internationalization Support Level
 NLS_DESC=	IDN+NLS: Int'l Domain Names & National Language support
 IDN_DESC=	IDN: Int'l Domain Names WITHOUT full NLS
-IPSET_DESC=	Dynamic firewall managment of resolved names (needs PF)
+IPSET_DESC=	Dynamic firewall management of resolved names (needs PF)
 LUA_DESC=	Support lease-change scripts written in Lua
 DNSSEC_DESC=	Enable DNSSEC caching and validation
 USES=		cpe shebangfix tar:xz
@@ -92,7 +92,7 @@ USE_RC_SUBR=	dnsmasq
 LDFLAGS+=	-L${LOCALBASE}/lib ${_intllibs} ${ICONV_LIB}
 
 post-patch:
-	${REINPLACE_CMD} -e "s/lua5\.1/lua-${LUA_VER}/" ${WRKSRC}/Makefile
+	${REINPLACE_CMD} -e 's/lua5\.1/lua-${LUA_VER}/' ${WRKSRC}/Makefile
 
 pre-configure: pretty-print-config
 .if ${PORT_OPTIONS:MIDN}

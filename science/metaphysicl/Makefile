@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/metaphysicl/Makefile 479253 2018-09-08 15:21:32Z yuri $
+# $FreeBSD: head/science/metaphysicl/Makefile 482379 2018-10-18 21:28:46Z yuri $
 
 PORTNAME=	MetaPhysicL
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.0.1
+DISTVERSION=	0.3.1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

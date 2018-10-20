@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 478529 2018-08-31 08:16:18Z tobik $
+# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 482461 2018-10-20 00:44:19Z jbeich $
 
 PORTNAME=	subtitlecomposer
 PORTVERSION=	0.5.7
@@ -18,6 +18,7 @@ USES=		cmake:outsource gettext kde:4 qt:4 shared-mime-info
 USE_KDE=	kdelibs automoc4
 USE_QT=		qmake_build moc_build rcc_build uic_build phonon
 USE_CXXSTD=	gnu++98
+CXXFLAGS+=	-DU_NOEXCEPT= # For USE_CXXSTD=gnu++98
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	maxrd2

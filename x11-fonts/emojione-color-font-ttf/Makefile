@@ -1,19 +1,23 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/emojione-color-font-ttf/Makefile 477417 2018-08-17 09:55:25Z ehaupt $
+# $FreeBSD: head/x11-fonts/emojione-color-font-ttf/Makefile 482329 2018-10-18 07:19:05Z ehaupt $
 
 PORTNAME=	emojione-color-font-ttf
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/eosrei/emojione-color-font/releases/download/v${PORTVERSION}/
 DISTNAME=	EmojiOneColor-SVGinOT-${PORTVERSION}
 
-MAINTAINER=	ehaupt@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Color emoji font using EmojiOne Unicode 9.0
 
 LICENSE=	CC-BY-4.0 MIT
 LICENSE_COMB=	multi
 LICENSE_FILE_CC-BY-4.0+=	${WRKSRC}/LICENSE-CC-BY.txt
 LICENSE_FILE_MIT+=		${WRKSRC}/LICENSE-MIT.txt
+
+DEPRECATED=	EOL upstream, please use x11-fonts/twemoji-color-font-ttf instead
+EXPIRATION_DATE=	2018-11-18
 
 USES=		fonts zip
 NO_BUILD=	yes

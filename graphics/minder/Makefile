@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/minder/Makefile 481151 2018-10-03 09:34:35Z tobik $
+# $FreeBSD: head/graphics/minder/Makefile 482477 2018-10-20 09:22:00Z tobik $
 
 PORTNAME=	minder
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	graphics
 PKGNAMESUFFIX=	-app # avoid PKGBASE collision with net-p2p/minder
 

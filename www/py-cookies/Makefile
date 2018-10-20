@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/www/py-cookies/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-cookies/Makefile 482446 2018-10-19 18:46:43Z sunpoet $
 
 PORTNAME=	cookies
 PORTVERSION=	2.2.1
@@ -7,7 +7,7 @@ CATEGORIES=	www devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Friendlier RFC 6265-compliant cookie parser/renderer
 
 LICENSE=	MIT

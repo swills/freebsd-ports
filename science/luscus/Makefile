@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/luscus/Makefile 479761 2018-09-14 07:44:45Z yuri $
+# $FreeBSD: head/science/luscus/Makefile 482330 2018-10-18 07:30:25Z yuri $
 
 PORTNAME=	luscus
-DISTVERSION=	0.8.5
+DISTVERSION=	0.8.6
 CATEGORIES=	science
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	${PORTNAME}_${DISTVERSION}

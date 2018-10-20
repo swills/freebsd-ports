@@ -1,18 +1,20 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/science/simlib/Makefile 474139 2018-07-07 21:09:10Z tobik $
+# $FreeBSD: head/science/simlib/Makefile 482410 2018-10-19 05:38:42Z yuri $
 
 PORTNAME=	simlib
-PORTVERSION=	3.02
-PORTREVISION=	1
+DISTVERSION=	3.06
+DISTVERSIONSUFFIX=	-20181003
 CATEGORIES=	science
 MASTER_SITES=	http://www.fit.vutbr.cz/~peringer/SIMLIB/source/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-20111030
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SIMulation LIBrary for C++ programming language
 
+LICENSE=	LGPL20
+
 USES=		gmake
 USE_LDCONFIG=	yes
+
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 CXXFLAGS+=	-fPIC
