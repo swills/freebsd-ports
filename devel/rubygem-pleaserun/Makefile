@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-pleaserun/Makefile 447568 2017-08-08 18:58:12Z sunpoet $
+# $FreeBSD: head/devel/rubygem-pleaserun/Makefile 482536 2018-10-20 14:52:01Z sunpoet $
 
 PORTNAME=	pleaserun
 PORTVERSION=	0.0.30
@@ -17,9 +17,10 @@ RUN_DEPENDS=	rubygem-cabin>=0:devel/rubygem-cabin \
 		rubygem-mustache>=0.99.8:devel/rubygem-mustache \
 		rubygem-stud>=0:devel/rubygem-stud
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/please-manage-user bin/pleaserun
 

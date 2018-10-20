@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-winrm-fs/Makefile 478750 2018-09-01 22:52:25Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-winrm-fs/Makefile 482544 2018-10-20 14:53:06Z sunpoet $
 
 PORTNAME=	winrm-fs
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

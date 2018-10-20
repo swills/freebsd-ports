@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5-canvas3d/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-canvas3d/Makefile 482574 2018-10-20 15:52:09Z tcberner $
 
 PORTNAME=	canvas3d
 DISTVERSION=	${QT5_VERSION}
@@ -9,7 +9,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt canvas3d module
 
 USE_QT=		core gui network qml quick buildtools_build
-USES=		qmake qt-dist:5,canvas3d
+USES=		compiler:c++11-lang qmake qt-dist:5,canvas3d
 
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 

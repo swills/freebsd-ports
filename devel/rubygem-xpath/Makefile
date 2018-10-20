@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-xpath/Makefile 471001 2018-05-27 20:17:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-xpath/Makefile 482539 2018-10-20 14:52:26Z sunpoet $
 
 PORTNAME=	xpath
-PORTVERSION=	3.1.0
+PORTVERSION=	3.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,9 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-nokogiri>=1.8:textproc/rubygem-nokogiri
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

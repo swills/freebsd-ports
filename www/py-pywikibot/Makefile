@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-pywikibot/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-pywikibot/Makefile 482583 2018-10-20 16:10:00Z yuri $
 
 PORTNAME=	pywikibot
-DISTVERSION=	3.0.20180403
+DISTVERSION=	3.0.20180922
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,9 +15,10 @@ LICENSE=	MIT
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR}
 
 USES=		dos2unix python
-USE_PYTHON=	autoplist distutils
-NO_ARCH=	yes
 DOS2UNIX_FILES=	setup.py
+USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 OPTIONS_DEFINE=	EVENTSTREAMS ISBN PYDOT GOOGLE IRC MWPARSE PILLOW MWOAUTH HTML
 EVENTSTREAMS_DESC=		Support for reading Server Sent Event streams

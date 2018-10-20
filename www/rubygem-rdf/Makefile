@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rdf/Makefile 480420 2018-09-22 16:45:33Z sunpoet $
+# $FreeBSD: head/www/rubygem-rdf/Makefile 482549 2018-10-20 14:53:47Z sunpoet $
 
 PORTNAME=	rdf
-PORTVERSION=	3.0.4
+PORTVERSION=	3.0.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

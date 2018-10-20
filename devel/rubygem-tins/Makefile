@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tins/Makefile 456511 2017-12-16 20:56:43Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tins/Makefile 482538 2018-10-20 14:52:17Z sunpoet $
 
 PORTNAME=	tins
-PORTVERSION=	1.16.3
+PORTVERSION=	1.17.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	Useful tools library in Ruby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

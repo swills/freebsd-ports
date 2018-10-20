@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-mustache/Makefile 437031 2017-03-27 11:12:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mustache/Makefile 482535 2018-10-20 14:51:53Z sunpoet $
 
 PORTNAME=	mustache
-PORTVERSION=	1.0.5
+PORTVERSION=	1.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,9 +11,10 @@ COMMENT=	Framework-agnostic way to render logic-free views
 
 LICENSE=	MIT
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/mustache
 

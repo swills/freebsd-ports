@@ -1,10 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/zeronet/Makefile 468303 2018-04-25 21:01:41Z sunpoet $
+# $FreeBSD: head/security/zeronet/Makefile 482569 2018-10-20 15:45:05Z yuri $
 
 PORTNAME=	zeronet
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.2
-PORTREVISION=	1
+DISTVERSION=	0.6.4
 CATEGORIES=	security net-p2p
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -39,14 +38,14 @@ USER=		nobody
 GROUP=		nobody
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|msgpack-python|msgpack|' ${WRKSRC}/requirements.txt
+	@${REINPLACE_CMD} -i '' -e 's|msgpack-python|msgpack|' ${WRKSRC}/requirements.txt
 
 do-build:
-	@(cd ${WRKSRC} && \
+	@cd ${WRKSRC} && \
 	${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py \
 		-d ${WRKSRC} -f ${WRKSRC} && \
 	${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py \
-		-d ${WRKSRC} -f ${WRKSRC})
+		-d ${WRKSRC} -f ${WRKSRC}
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	@${CP} -R ${WRKSRC}/* ${STAGEDIR}${DATADIR}/

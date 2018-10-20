@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-i18n/Makefile 476706 2018-08-08 23:29:15Z sunpoet $
+# $FreeBSD: head/devel/rubygem-i18n/Makefile 482533 2018-10-20 14:51:36Z sunpoet $
 
 PORTNAME=	i18n
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 PORTEPOCH=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0:devel/rubygem-concurrent-ruby
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/mail/rubygem-mail/Makefile 453305 2017-11-01 16:51:03Z sunpoet $
+# $FreeBSD: head/mail/rubygem-mail/Makefile 482541 2018-10-20 14:52:42Z sunpoet $
 
 PORTNAME=	mail
-PORTVERSION=	2.7.0
+PORTVERSION=	2.7.1
 PORTEPOCH=	2
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-mini_mime>=0.1.1:mail/rubygem-mini_mime
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

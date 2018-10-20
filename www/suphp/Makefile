@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/suphp/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/suphp/Makefile 482491 2018-10-20 11:33:29Z mfechner $
 
 PORTNAME=	suphp
 PORTVERSION=	0.7.2
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.suphp.org/download/ \
 		http://mirror.shatow.net/freebsd/${PORTNAME}/
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
-MAINTAINER=	bdrewery@FreeBSD.org
+MAINTAINER=	freebsd-ports@dan.me.uk
 COMMENT=	Securely execute PHP scripts under Apache
 
 LICENSE=	GPLv2

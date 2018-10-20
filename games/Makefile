@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 479444 2018-09-10 19:49:05Z rene $
+# $FreeBSD: head/games/Makefile 482490 2018-10-20 11:27:14Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -60,6 +60,7 @@
     SUBDIR += assaultcube
     SUBDIR += asteroid
     SUBDIR += asteroids3d
+    SUBDIR += astromenace
     SUBDIR += asylum
     SUBDIR += atanks
     SUBDIR += atomix
@@ -733,7 +734,6 @@
     SUBDIR += openarena-data
     SUBDIR += openarena-oax
     SUBDIR += openarena-server
-    SUBDIR += openastromenace
     SUBDIR += openbor
     SUBDIR += openbor3482
     SUBDIR += openbor3711

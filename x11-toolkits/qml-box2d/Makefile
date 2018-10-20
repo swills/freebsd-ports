@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qml-box2d/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qml-box2d/Makefile 482570 2018-10-20 15:45:30Z tcberner $
 
 PORTNAME=	qml-box2d
 DISTVERSION=	2.0.20180109
@@ -7,7 +7,7 @@ CATEGORIES=	x11-toolkits
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	QML Box2D plugin
 
-USES=		qmake:outsource qt:5
+USES=		compiler:c++11-lang qmake:outsource qt:5
 USE_GITHUB=	yes
 GH_TAGNAME=	21e57f
 USE_GL=		gl

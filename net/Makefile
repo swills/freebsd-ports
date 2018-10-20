@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 482429 2018-10-19 14:09:32Z egypcio $
+# $FreeBSD: head/net/Makefile 482560 2018-10-20 15:26:26Z zi $
 #
 
     COMMENT = Networking tools
@@ -880,6 +880,7 @@
     SUBDIR += p5-Sort-Key-IPv4
     SUBDIR += p5-TFTP
     SUBDIR += p5-Test-URI
+    SUBDIR += p5-Twitter-API
     SUBDIR += p5-URI
     SUBDIR += p5-URI-FromHash
     SUBDIR += p5-URI-Match

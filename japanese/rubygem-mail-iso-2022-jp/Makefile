@@ -1,8 +1,9 @@
 # Created by: MIHIRA Yoshiro <sanpei@FreeBSD.org>
-# $FreeBSD: head/japanese/rubygem-mail-iso-2022-jp/Makefile 462726 2018-02-23 19:24:48Z sunpoet $
+# $FreeBSD: head/japanese/rubygem-mail-iso-2022-jp/Makefile 482540 2018-10-20 14:52:34Z sunpoet $
 
 PORTNAME=	mail-iso-2022-jp
 PORTVERSION=	2.0.8
+PORTREVISION=	1
 CATEGORIES=	japanese mail rubygems
 MASTER_SITES=	RG
 
@@ -13,9 +14,10 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-mail>=2.2.6:mail/rubygem-mail
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 

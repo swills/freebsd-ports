@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/lang/php_doc/Makefile 426269 2016-11-16 22:55:39Z rene $
+# $FreeBSD: head/lang/php_doc/Makefile 482582 2018-10-20 16:09:56Z tobik $
 
 PORTNAME=	php_doc
 PORTVERSION?=	20131017
@@ -10,6 +10,9 @@ DISTNAME=	php_manual_${PHP_LANG}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT?=	PHP documentation in HTML
+
+DEPRECATED=	unmaintained and documents obsolete PHP < 5.6
+EXPIRATION_DATE=	2018-12-20
 
 NO_BUILD=	yes
 NO_ARCH=	yes

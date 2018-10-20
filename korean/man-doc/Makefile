@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/korean/man-doc/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/korean/man-doc/Makefile 482496 2018-10-20 13:06:25Z tobik $
 
 PORTNAME=	man
 PORTVERSION=	021120
@@ -12,6 +12,9 @@ DISTNAME=	ko-man-doc-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Korean online manual pages
+
+DEPRECATED=	unmaintained and outdated
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	${LOCALBASE}/bin/groff:japanese/groff
 

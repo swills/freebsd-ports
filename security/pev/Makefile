@@ -1,8 +1,9 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/security/pev/Makefile 432167 2017-01-22 22:11:24Z danilo $
+# $FreeBSD: head/security/pev/Makefile 482494 2018-10-20 12:14:02Z danilo $
 
 PORTNAME=	pev
 PORTVERSION=	0.80
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}/
 
