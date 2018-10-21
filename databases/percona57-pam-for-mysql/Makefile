@@ -22,6 +22,7 @@ DESCR=		${.CURDIR}/pkg-descr
 CONFLICTS_INSTALL=	percona5[0-68-9]-pam-for-mysql* \
 			percona-pam-for-mysql*
 
+CXXFLAGS_powerpc64=	-fpermissive
 CMAKE_ARGS+=	-DWITH_PAM=1
 
 PLUGIN_ONLY=	yes
