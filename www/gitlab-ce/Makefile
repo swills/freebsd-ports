@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab-ce/Makefile 481317 2018-10-06 05:29:33Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.3.4
+PORTVERSION=	11.4.0
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -63,7 +63,6 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-gitlab_omniauth-ldap20>=2.0.4:net/rubygem-gitlab_omniauth-ldap20 \
 	rubygem-net-ldap>=0.16.0:net/rubygem-net-ldap \
 	rubygem-gitlab-gollum-lib>=4.2.0:www/rubygem-gitlab-gollum-lib \
-	rubygem-gitlab-gollum-rugged_adapter>=0.4.4:www/rubygem-gitlab-gollum-rugged_adapter \
 	rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 	rubygem-grape>=1.0:devel/rubygem-grape \
 	rubygem-grape-entity>=0.7.1:devel/rubygem-grape-entity \
@@ -218,7 +217,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	30f019dca78bb64bcb8b355a267be006884e6d8f
+GL_COMMIT=	6ebbd70fbb3bfbda9745ad16ec1cd26ad41366c5
 
 USERS=	git
 GROUPS=	git
