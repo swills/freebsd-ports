@@ -166,7 +166,6 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-peek-gc>=0.0.2:devel/rubygem-peek-gc \
 	rubygem-peek-rblineprof>=0.2.0:devel/rubygem-peek-rblineprof \
 	rubygem-peek-redis>=1.2.0:devel/rubygem-peek-redis \
-	rubygem-peek-sidekiq>=1.0.3:devel/rubygem-peek-sidekiq \
 	rubygem-prometheus-client-mmap>=0.9.4:devel/rubygem-prometheus-client-mmap \
 	rubygem-octokit>=4.9:net/rubygem-octokit \
 	rubygem-mail_room>=0.9.1:mail/rubygem-mail_room \
