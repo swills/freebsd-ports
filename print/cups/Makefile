@@ -22,8 +22,7 @@ GH_ACCOUNT=	apple
 
 DESTDIRNAME=	DSTROOT
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-dnssd						\
-		--disable-gssapi					\
+CONFIGURE_ARGS=	--disable-gssapi					\
 		--disable-launchd					\
 		--disable-systemd					\
 		--with-cups-user=${USERS}				\
@@ -46,8 +45,10 @@ USE_RC_SUBR=	cupsd
 GROUPS=		cups
 USERS=		cups
 
-OPTIONS_DEFINE=		AVAHI DBUS DOCS GNUTLS IPPTOOL LIBPAPER NLS X11
-OPTIONS_DEFAULT=	AVAHI DBUS GNUTLS LIBPAPER
+OPTIONS_DEFINE=		DBUS DOCS GNUTLS IPPTOOL LIBPAPER NLS X11
+OPTIONS_DEFAULT=	DBUS GNUTLS LIBPAPER
+OPTIONS_SINGLE=		BONJOUR
+OPTIONS_SINGLE_BONJOUR=	AVAHI MDNSRESPONDER
 OPTIONS_SUB=		yes
 
 AVAHI_LIB_DEPENDS=	libavahi-client.so:net/avahi-app
@@ -68,6 +69,9 @@ IPPTOOL_DESC=		Internet Printing Protocol testing tool
 
 LIBPAPER_LIB_DEPENDS=	libpaper.so:print/libpaper
 LIBPAPER_CONFIGURE_ENABLE=libpaper
+
+MDNSRESPONDER=		libdns_sd.so:net/mDNSResponder
+MDNSRESPONDER_CONFIGURE_ENABLE=dnssd
 
 X11_DESC=		Install desktop menu item
 X11_BUILD_DEPENDS=	xdg-open:devel/xdg-utils

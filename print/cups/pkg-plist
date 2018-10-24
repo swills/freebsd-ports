@@ -66,6 +66,7 @@ libexec/cups/backend/snmp
 libexec/cups/backend/socket
 %%USB%%libexec/cups/backend/usb
 %%AVAHI%%libexec/cups/backend/dnssd
+%%MDNSRESPONDER%%libexec/cups/backend/dnssd
 libexec/cups/cgi-bin/admin.cgi
 libexec/cups/cgi-bin/classes.cgi
 libexec/cups/cgi-bin/help.cgi
