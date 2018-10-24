@@ -3,9 +3,10 @@
 
 PORTNAME=	maia
 DISTVERSION=	1.0.4
-PORTREVISION=	3
+PORTVERSION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.purplehat.org/downloads/maia/
+DISTNAME=	${PORTNAME}-${DISTVERSION}-${PORTVERSION}
 
 MAINTAINER=	ek@purplehat.org
 COMMENT=	Web-based management system based on amavisd-new and SpamAssassin
@@ -24,7 +25,7 @@ RUN_DEPENDS=	p5-Unix-Syslog>=0.94:sysutils/p5-Unix-Syslog \
 		p5-Template-Toolkit>=2.13:www/p5-Template-Toolkit \
 		p5-Net-Server>=0.93:net/p5-Net-Server
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}-${PORTVERSION}
 USES=		perl5 shebangfix
 USE_PERL5=	run
 NO_BUILD=	yes
@@ -124,7 +125,7 @@ RUN_DEPENDS+=	${PEAR_DIR}/Mail/mime.php:mail/pear-Mail_Mime@${PHP_FLAVOR} \
 		${PEAR_DIR}/Numbers/Roman.php:textproc/pear-Numbers_Roman@${PHP_FLAVOR} \
 		${PEAR_DIR}/Numbers/Words.php:textproc/pear-Numbers_Words@${PHP_FLAVOR} \
 		${PEAR_DIR}/MDB2.php:databases/pear-MDB2@${PHP_FLAVOR} \
-		${PEAR_DIR}/MDB2/Driver/mysql.php:databases/pear-MDB2_Driver_mysql@${PHP_FLAVOR} \
+		${PEAR_DIR}/MDB2/Driver/mysqli.php:databases/pear-MDB2_Driver_mysqli@${PHP_FLAVOR} \
 		${LOCALBASE}/share/smarty/Smarty.class.php:www/smarty2@${PHP_FLAVOR} \
 		${LOCALBASE}/lib/php/${PHP_EXT_DIR}/scrypt.so:security/pecl-scrypt@${PHP_FLAVOR}
 PLIST_SUB+=     WEBHOST=""
@@ -136,7 +137,7 @@ PLIST_SUB+=     WEBHOST="@comment "
 USE_MYSQL=	yes
 .endif
 .if ${PORT_OPTIONS:MMYSQL} && ${PORT_OPTIONS:MWEBHOST}
-USE_PHP+=	mysql mysqli
+USE_PHP+=	mysqli
 .endif
 
 .if ${PORT_OPTIONS:MPGSQL}
