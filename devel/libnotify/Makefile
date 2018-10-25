@@ -14,6 +14,8 @@ COMMENT=	Library for desktop notifications
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+RUN_DEPENDS=	gsettings-desktop-schemas>=3.28.0:devel/gsettings-desktop-schemas
+
 USES=		gmake libtool pkgconfig tar:xz
 USE_GNOME=	glib20 gdkpixbuf2 introspection:build
 USE_LDCONFIG=	yes
