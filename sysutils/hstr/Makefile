@@ -1,20 +1,23 @@
+# Created by: Patrice Clement <monsieurp@gentoo.org>
 # $FreeBSD$
 
-PORTNAME=	hstr
-DISTVERSION=	1.25
-CATEGORIES=	sysutils
+PORTNAME=	    hstr
+DISTVERSION=	2.0
+PORTREVISION=	0
+CATEGORIES=	    sysutils
 
-MAINTAINER=	monsieurp@gentoo.org
-COMMENT=	Bash and Zsh shell history suggest box
+MAINTAINER=	    monsieurp@gentoo.org
+COMMENT=	    Bash and Zsh shell history suggest box
 
-LICENSE=	APACHE20
+LICENSE=	    APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		autoreconf ncurses readline
-USE_GITHUB=	yes
-GH_ACCOUNT=	dvorka
+USES=		    autoreconf ncurses readline
+USE_GITHUB=	    yes
+GH_ACCOUNT=	    dvorka
+GH_PROJECT=	    hstr
 GNU_CONFIGURE=	yes
 
-PLIST_FILES=	bin/hh bin/hstr man/man1/hh.1.gz man/man1/hstr.1.gz
+PLIST_FILES=	bin/hh bin/hstr man/man1/hstr.1.gz
 
 .include <bsd.port.mk>
