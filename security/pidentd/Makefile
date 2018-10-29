@@ -1,5 +1,5 @@
 # Created by: torstenb
-# $FreeBSD: head/security/pidentd/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/security/pidentd/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	pidentd
 PORTVERSION=	3.0.19
@@ -17,6 +17,7 @@ MAINTAINER=	johans@FreeBSD.org
 COMMENT=	RFC1413 identification server
 
 BROKEN_FreeBSD_12=	fails to compile: k_freebsd2.c: storage size of 'pcbp' isn't known
+BROKEN_FreeBSD_13=	fails to compile: k_freebsd2.c: storage size of 'pcbp' isn't known
 
 CONFLICTS_INSTALL=	fakeident-[0-9]*
 

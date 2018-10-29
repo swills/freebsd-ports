@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/benchmark/Makefile 477511 2018-08-18 16:04:45Z yuri $
+# $FreeBSD: head/devel/benchmark/Makefile 483259 2018-10-28 10:05:24Z linimon $
 
 PORTNAME=	benchmark
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Microbenchmark support library
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
 USE_LDCONFIG=	yes

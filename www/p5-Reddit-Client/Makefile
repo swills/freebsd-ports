@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-Reddit-Client/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Reddit-Client/Makefile 483132 2018-10-27 12:29:56Z ehaupt $
 
 PORTNAME=	Reddit-Client
-PORTVERSION=	1.281
+PORTVERSION=	1.2811
 PORTEPOCH=	3
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
@@ -25,6 +25,7 @@ TEST_DEPENDS=	p5-Test-MockModule>=0:devel/p5-Test-MockModule
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/csmith/Makefile 444881 2017-07-02 12:36:06Z mmokhi $
+# $FreeBSD: head/devel/csmith/Makefile 482810 2018-10-23 06:36:00Z linimon $
 
 PORTNAME=	csmith
 PORTVERSION=	2.3.0
@@ -19,8 +19,6 @@ USES=		gmake libtool perl5 shebangfix
 USE_PERL5=	run
 SHEBANG_FILES=	scripts/compiler_test.pl scripts/launchn.pl
 USE_LDCONFIG=	yes
-
-ONLY_FOR_ARCHS=	i386 amd64
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,8 +1,8 @@
 # Created by: shan
-# $FreeBSD: head/net/radiator/Makefile 456208 2017-12-13 14:42:29Z pi $
+# $FreeBSD: head/net/radiator/Makefile 482965 2018-10-25 11:32:03Z pi $
 
 PORTNAME=	Radiator
-PORTVERSION=	4.19
+PORTVERSION=	4.21
 CATEGORIES=	net
 MASTER_SITES=	# fetch manually
 DIST_SUBDIR=	${PORTNAME}

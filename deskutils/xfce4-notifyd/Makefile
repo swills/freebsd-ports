@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/deskutils/xfce4-notifyd/Makefile 463292 2018-03-01 10:49:03Z ehaupt $
+# $FreeBSD: head/deskutils/xfce4-notifyd/Makefile 483305 2018-10-28 15:14:32Z ehaupt $
 #
 # !!!NOTE!!! Update of x11-toolkits/gtk30 (specially >= 3.20.x) must be
 # accompanied by PORTREVISION bumps of this port.
@@ -21,10 +21,11 @@ LIB_DEPENDS=	libnotify.so:devel/libnotify \
 		libdbus-1.so:devel/dbus
 
 USES=		gettext-tools gmake libtool pkgconfig tar:bzip2 xfce:gtk3
-GNU_CONFIGURE=	yes
 USE_GNOME=	gtk30 glib20 cairo intltool
 USE_XFCE=	libutil panel
 USE_XORG=	ice sm x11
+
+GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 
@@ -32,5 +33,8 @@ OPTIONS_DEFINE=	NLS
 NLS_USES=	gettext-runtime
 NLS_EXTRA_PATCHES=	${FILESDIR}/extra-patch-configure
 OPTIONS_SUB=	yes
+
+# requires libxfce4panel-2.0 >= 4.13.0 (development version)
+PORTSCOUT=	skipv:0.4.3
 
 .include <bsd.port.mk>

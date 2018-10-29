@@ -1,10 +1,10 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/gringo/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/gringo/Makefile 483254 2018-10-28 09:49:51Z linimon $
 
 PORTNAME=	gringo
 DISTVERSION=	4.5.4
-PORTREVISION=	1
 DISTVERSIONSUFFIX=	-source
+PORTREVISION=	1
 CATEGORIES=	math devel
 MASTER_SITES=	SOURCEFORGE/potassco/${PORTNAME}/${PORTVERSION}
 
@@ -15,8 +15,6 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	re2c:devel/re2c
-
-BROKEN_powerpc64=	fails to compile: term.cc: error: pow is not a member of std
 
 USES=		bison compiler:c++11-lib python:2.7 scons
 MAKE_ARGS=	${MAKE_ENV}

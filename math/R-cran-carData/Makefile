@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/R-cran-carData/Makefile 471357 2018-06-02 10:44:02Z dbn $
+# $FreeBSD: head/math/R-cran-carData/Makefile 482934 2018-10-24 18:57:51Z dbn $
 
 PORTNAME=	carData
-DISTVERSION=	3.0-1
+DISTVERSION=	3.0-2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

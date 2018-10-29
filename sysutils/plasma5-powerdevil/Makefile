@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/plasma5-powerdevil/Makefile 477968 2018-08-24 17:46:52Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-powerdevil/Makefile 483271 2018-10-28 10:59:23Z tcberner $
 
 PORTNAME=	powerdevil
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	2
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

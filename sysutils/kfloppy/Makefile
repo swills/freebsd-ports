@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kfloppy/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/kfloppy/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kfloppy
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Floppy disk formatter for KDE
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons crash \
 		doctools ecm emoticons i18n init itemmodels kdelibs4support \
 		kio widgetsaddons xmlgui

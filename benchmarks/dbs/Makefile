@@ -1,5 +1,5 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/benchmarks/dbs/Makefile 445066 2017-07-05 10:25:01Z amdmi3 $
+# $FreeBSD: head/benchmarks/dbs/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	dbs
 PORTVERSION=	1.1.5
@@ -16,6 +16,7 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	gnuplot:math/gnuplot
 
 BROKEN_FreeBSD_12=	tcp_debug.h: field has incomplete type 'struct tcpcb'
+BROKEN_FreeBSD_13=	tcp_debug.h: field has incomplete type 'struct tcpcb'
 
 BUILD_WRKSRC=	${WRKSRC}/obj/${OPSYS}
 INSTALL_WRKSRC=	${WRKSRC}/obj/${OPSYS}

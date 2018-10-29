@@ -1,8 +1,9 @@
 # Created by: Dave Cottlehuber <dch@FreeBSD.org>
-# $FreeBSD: head/databases/couchdb2/Makefile 480279 2018-09-21 15:21:00Z dch $
+# $FreeBSD: head/databases/couchdb2/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	couchdb2
 DISTVERSION=	2.2.0
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	APACHE/couchdb/source/${DISTVERSION}
 DISTNAME=	apache-couchdb-${DISTVERSION}

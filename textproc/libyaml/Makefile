@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/libyaml/Makefile 481510 2018-10-08 03:05:59Z jpaetzel $
+# $FreeBSD: head/textproc/libyaml/Makefile 482897 2018-10-24 09:30:12Z amdmi3 $
 
 PORTNAME=	libyaml
 PORTVERSION=	0.2.1
@@ -12,6 +12,7 @@ MAINTAINER=	jpaetzel@FreeBSD.org
 COMMENT=	YAML 1.1 parser and emitter written in C
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

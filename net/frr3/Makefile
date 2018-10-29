@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/frr3/Makefile 481325 2018-10-06 07:31:18Z olivier $
+# $FreeBSD: head/net/frr3/Makefile 482740 2018-10-22 09:06:29Z olivier $
 
 PORTNAME=	frr
 PORTVERSION=	3.0.3
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	gawk:lang/gawk
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
-CONFLICTS=	openbgpd openospfd zebra quagga frr4 frr5
+CONFLICTS=	openbgpd openospfd zebra quagga frr4 frr5 frr6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FRRouting

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/kea/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net/kea/Makefile 482813 2018-10-23 07:42:12Z meta $
 
 PORTNAME=	kea
 PORTVERSION=	1.3.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net ipv6
 MASTER_SITES=	ISC/kea/${PORTVERSION}
 
@@ -17,7 +17,7 @@ LIB_DEPENDS=	liblog4cplus.so:devel/log4cplus \
 
 BROKEN_powerpc64=	fails to configure: checking for log4cplus library... no
 
-USES=		autoreconf compiler:c++11-lang libtool pathfix python:3.3+ ssl
+USES=		autoreconf compiler:c++11-lang libtool pathfix ssl
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	${PORTNAME}
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/lazarus-qt5/Makefile 470847 2018-05-25 16:00:46Z acm $
+# $FreeBSD: head/editors/lazarus-qt5/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PKGNAMESUFFIX?=  -qt5
 
@@ -13,4 +13,3 @@ LCL_PLATFORM=	qt5
 MASTERDIR=	${.CURDIR}/../../editors/lazarus
 
 .include "${MASTERDIR}/Makefile"
-

@@ -1,8 +1,8 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/www/mini_httpd/Makefile 472840 2018-06-20 03:30:00Z leres $
+# $FreeBSD: head/www/mini_httpd/Makefile 483152 2018-10-27 17:12:39Z leres $
 
 PORTNAME=	mini_httpd
-PORTVERSION=	1.29
+PORTVERSION=	1.30
 CATEGORIES=	www ipv6
 MASTER_SITES=	https://www.acme.com/software/mini_httpd/
 

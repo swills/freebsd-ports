@@ -1,5 +1,5 @@
 # Created by: Dan Pelleg <daniel+mdnsd@pelleg.org>
-# $FreeBSD: head/dns/mdnsd/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/dns/mdnsd/Makefile 483267 2018-10-28 10:45:44Z linimon $
 
 PORTNAME=	mdnsd
 DISTVERSIONPREFIX=	v
@@ -14,8 +14,6 @@ COMMENT=	Advertise a service via Rendezvous
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wpedantic"
 
 USES=		cmake:outsource
 USE_GITHUB=	yes

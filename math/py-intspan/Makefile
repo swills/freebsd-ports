@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/math/py-intspan/Makefile 481127 2018-10-02 19:06:16Z feld $
+# $FreeBSD: head/math/py-intspan/Makefile 483103 2018-10-27 02:52:14Z swills $
 
 PORTNAME=	intspan
-PORTVERSION=	1.5.3
+PORTVERSION=	1.5.14
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kio-extras/Makefile 481851 2018-10-11 20:23:50Z tcberner $
+# $FreeBSD: head/devel/kio-extras/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PORTNAME=	kio-extras
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -62,4 +62,3 @@ WEBENGINE_USES=	qt:5
 WEBENGINE_USE=		QT=webengine
 
 .include <bsd.port.mk>
-

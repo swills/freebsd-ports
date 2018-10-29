@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/revealrk/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/security/revealrk/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	revealrk
 PORTVERSION=	1.2.2
@@ -11,6 +11,7 @@ COMMENT=	Search hidden procs/rootkits from cron with low false positive rate
 LICENSE=	GPLv3
 
 BROKEN_FreeBSD_12=	fails to compile: revealrk.c: 'struct xtcpcb' has no member named 'xt_socket'
+BROKEN_FreeBSD_13=	fails to compile: revealrk.c: 'struct xtcpcb' has no member named 'xt_socket'
 
 PLIST_FILES=	bin/revealrk man/man1/revealrk.1.gz
 

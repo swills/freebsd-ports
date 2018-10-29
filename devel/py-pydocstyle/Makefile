@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-pydocstyle/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pydocstyle/Makefile 483039 2018-10-26 15:20:29Z amdmi3 $
 
 PORTNAME=	pydocstyle
-PORTVERSION=	2.1.1
+PORTVERSION=	3.0.0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

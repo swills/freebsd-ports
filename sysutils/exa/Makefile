@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/exa/Makefile 481921 2018-10-12 19:01:02Z jbeich $
+# $FreeBSD: head/sysutils/exa/Makefile 482993 2018-10-25 21:59:37Z jbeich $
 
 PORTNAME=	exa
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.8.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/benchmarks/libcelero/Makefile 482026 2018-10-14 05:45:10Z yuri $
+# $FreeBSD: head/benchmarks/libcelero/Makefile 483307 2018-10-28 16:03:00Z yuri $
 
 PORTNAME=	libcelero
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.3.0
+DISTVERSION=	2.4.0
 CATEGORIES=	benchmarks
 
 MAINTAINER=	yuri@FreeBSD.org

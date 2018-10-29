@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/net-im/qxmpp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/qxmpp/Makefile 483244 2018-10-28 08:56:24Z linimon $
 
 PORTNAME=	qxmpp
 PORTVERSION=	0.9.3
@@ -16,7 +16,7 @@ CONFLICTS?=	${PORTNAME}-qt5-[0-9]*
 
 USES=		qmake pathfix pkgconfig libtool
 .if defined(QXMPP_SLAVE)
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=		core gui network xml buildtools_build
 PLIST_SUB=	QDNS="@comment "
 .else

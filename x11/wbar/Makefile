@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/x11/wbar/Makefile 425339 2016-11-04 16:31:24Z nivit $
+# $FreeBSD: head/x11/wbar/Makefile 483258 2018-10-28 10:01:49Z linimon $
 
 PORTNAME=	wbar
 PORTVERSION=	2.3.4
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libImlib2.so:graphics/imlib2
 
 CONFIGURE_ARGS=	--exec-prefix=${PREFIX}
 
-USES=		pkgconfig gettext gmake tar:tgz
+USES=		compiler:c++11-lang gettext gmake gnome pkgconfig tar:tgz
 
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib

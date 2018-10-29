@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 482226 2018-10-16 13:11:58Z rene $
+# $FreeBSD: head/net-im/Makefile 482824 2018-10-23 10:14:09Z rene $
 #
 
     COMMENT = Instant messaging
@@ -29,7 +29,6 @@
     SUBDIR += gitterdone
     SUBDIR += gloox
     SUBDIR += hotot
-    SUBDIR += hs-haskell-xmpp
     SUBDIR += icmpchat
     SUBDIR += icqlib
     SUBDIR += jabber.el

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/freeradius3/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/net/freeradius3/Makefile 482748 2018-10-22 15:57:41Z zi $
 
 PORTNAME=	freeradius
 DISTVERSION=	3.0.17
@@ -17,10 +17,6 @@ MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Free RADIUS server implementation
 
 LICENSE=	GPLv2
-
-BROKEN_mips=		fails to compile: unrecognized command line option "-Wno-date-time"
-BROKEN_mips64=		fails to compile: unrecognized command line option "-Wno-date-time"
-BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-date-time"
 
 LIB_DEPENDS=	libgdbm.so:databases/gdbm \
 		libtalloc.so:devel/talloc

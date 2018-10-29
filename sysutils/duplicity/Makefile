@@ -1,8 +1,8 @@
 # Created by: Gerhard Häring <gh@ghaering.de>
-# $FreeBSD: head/sysutils/duplicity/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/duplicity/Makefile 482943 2018-10-24 22:55:12Z dbaio $
 
 PORTNAME=	duplicity
-PORTVERSION=	0.7.17
+PORTVERSION=	0.7.18.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://launchpad.net/duplicity/0.7-series/${PORTVERSION}/+download/
 

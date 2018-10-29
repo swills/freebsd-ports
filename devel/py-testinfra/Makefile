@@ -1,8 +1,8 @@
 # Created by: Sofian Brabez <sbz@FreeBSD.org>
-# $FreeBSD: head/devel/py-testinfra/Makefile 477308 2018-08-16 05:41:11Z matthew $
+# $FreeBSD: head/devel/py-testinfra/Makefile 482617 2018-10-20 19:49:27Z sbz $
 
 PORTNAME=	testinfra
-PORTVERSION=	1.14.1
+PORTVERSION=	1.17.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Testinfra python module Serverspec-like for infrastructure testing
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>1.4:devel/py-six@${PY_FLAVOR}
 

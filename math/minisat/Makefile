@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/minisat/Makefile 459914 2018-01-25 09:04:31Z vsevolod $
+# $FreeBSD: head/math/minisat/Makefile 483249 2018-10-28 09:36:56Z jbeich $
 
 PORTNAME=	minisat
 PORTVERSION=	2.2.1
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		gmake
 USE_LDCONFIG=	yes
-MAKE_ENV=	prefix=${PREFIX} CFLAGS="-std=c++03"
+MAKE_ENV=	prefix=${PREFIX} CFLAGS="-std=gnu++98"
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME} \

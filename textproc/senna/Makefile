@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/senna/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/senna/Makefile 483289 2018-10-28 12:54:16Z linimon $
 
 PORTNAME=	senna
 PORTVERSION=	1.1.5
@@ -13,12 +13,11 @@ COMMENT=	Embeddable Fulltext Search Engine
 BROKEN_aarch64=		does not build: libsenna.so: undefined reference to SEN_ATOMIC_ADD_EX
 BROKEN_armv6=		does not build: libsenna.so: undefined reference to SEN_ATOMIC_ADD_EX
 BROKEN_armv7=		does not build: libsenna.so: undefined reference to SEN_ATOMIC_ADD_EX
-BROKEN_powerpc64=	does not build: relocation truncated to fit: R_PPC64_TOC16_DS
 BROKEN_sparc64=		does not build: libsenna.so: undefined reference to SEN_ATOMIC_ADD_EX
 
+USES=		compiler:c11 gmake libtool pathfix
 GNU_CONFIGURE=	yes
 USE_GCC=	any
-USES=		gmake libtool pathfix
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--with-sennahome=${SENNA_HOME}
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib

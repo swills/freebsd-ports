@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-robotframework-pabot/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-robotframework-pabot/Makefile 483085 2018-10-27 01:19:10Z swills $
 
 PORTNAME=	robotframework-pabot
-PORTVERSION=	0.44
+PORTVERSION=	0.45
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,8 +15,9 @@ LICENSE=	APACHE20
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}robotremoteserver>=1.0.1:devel/py-robotremoteserver@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
+
+NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

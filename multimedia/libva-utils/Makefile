@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libva-utils/Makefile 481144 2018-10-03 07:07:02Z madpilot $
+# $FreeBSD: head/multimedia/libva-utils/Makefile 483325 2018-10-28 18:43:30Z madpilot $
 
 PORTNAME=	libva-utils
 PORTVERSION=	2.3.0
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libva.so:multimedia/libva \
 		libdrm.so:graphics/libdrm
 
-USES=		autoreconf gmake libtool pkgconfig tar:bzip2
+USES=		autoreconf compiler:c++11-lang gmake libtool pkgconfig tar:bzip2
 USE_XORG=	x11 xext xfixes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

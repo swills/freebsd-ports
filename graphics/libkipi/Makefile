@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libkipi/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/libkipi/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	libkipi
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	graphics kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Image Plugin Interface
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons ecm i18n \
 		libkdcraw libkexiv2 service widgetsaddons xmlgui
 USE_QT=		core dbus gui widgets xml \

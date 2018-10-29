@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/regex2dfa/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/textproc/regex2dfa/Makefile 482835 2018-10-23 12:32:59Z egypcio $
 
 PORTNAME=	regex2dfa
 DISTVERSION=	0.1.6
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	egypcio@googlemail.com
@@ -12,6 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		compiler:c++11-lang gmake libtool
 USE_GITHUB=	yes
+
 GH_ACCOUNT=	kpdyer
 
 GNU_CONFIGURE=	yes

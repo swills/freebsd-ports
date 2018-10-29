@@ -1,8 +1,8 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-responses/Makefile 482508 2018-10-20 14:47:47Z sunpoet $
+# $FreeBSD: head/devel/py-responses/Makefile 483193 2018-10-27 23:23:05Z sunpoet $
 
 PORTNAME=	responses
-PORTVERSION=	0.10.0
+PORTVERSION=	0.10.2
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -28,9 +28,7 @@ NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${PYTHON_REL} >= 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}biscuits>=0:www/py-biscuits@${PY_FLAVOR}
-.else
+.if ${PYTHON_REL} < 3400
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cookies>=0:www/py-cookies@${PY_FLAVOR}
 .endif
 

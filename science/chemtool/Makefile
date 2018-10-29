@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/science/chemtool/Makefile 465423 2018-03-24 01:06:20Z yuri $
+# $FreeBSD: head/science/chemtool/Makefile 482591 2018-10-20 16:21:13Z yuri $
 
 PORTNAME=	chemtool
 DISTVERSION=	1.6.14
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libEMF.so:graphics/libemf \
 		libfreetype.so:print/freetype2
 RUN_DEPENDS=	transfig:print/transfig
 
-USES=		gmake pkgconfig
+USES=		compiler:c++11-lang gmake gnome pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-emf=yes --with-localedir=${PREFIX}
 USE_GNOME=	cairo gdkpixbuf2 gtk20

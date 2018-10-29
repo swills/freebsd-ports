@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 482378 2018-10-18 21:21:17Z yuri $
+# $FreeBSD: head/science/Makefile 482958 2018-10-25 07:36:58Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -51,6 +51,7 @@
     SUBDIR += clhep
     SUBDIR += clipper
     SUBDIR += colt
+    SUBDIR += coordgenlibs
     SUBDIR += coot
     SUBDIR += cp2k
     SUBDIR += crf++
@@ -68,6 +69,7 @@
     SUBDIR += elk
     SUBDIR += epte
     SUBDIR += erd
+    SUBDIR += erkale
     SUBDIR += fastcap
     SUBDIR += fasthenry
     SUBDIR += fisicalab
@@ -128,6 +130,7 @@
     SUBDIR += lm
     SUBDIR += luscus
     SUBDIR += madness
+    SUBDIR += maeparser
     SUBDIR += massxpert
     SUBDIR += mbdyn
     SUBDIR += mcstas
@@ -145,6 +148,7 @@
     SUBDIR += mmtf
     SUBDIR += mol2ps
     SUBDIR += molgif
+    SUBDIR += molsketch
     SUBDIR += mpb
     SUBDIR += mpqc
     SUBDIR += msms
@@ -208,6 +212,7 @@
     SUBDIR += py-SimpleSpectral
     SUBDIR += py-abipy
     SUBDIR += py-ase
+    SUBDIR += py-avogadrolibs
     SUBDIR += py-cdo
     SUBDIR += py-chempy
     SUBDIR += py-coards

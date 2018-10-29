@@ -1,8 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/net/remmina/Makefile 478203 2018-08-27 13:05:13Z woodsb02 $
+# $FreeBSD: head/net/remmina/Makefile 483100 2018-10-27 02:27:20Z woodsb02 $
 
 PORTNAME=	remmina
 DISTVERSION=	1.2.31.4
+PORTREVISION=	1
 CATEGORIES=	net gnome
 
 MAINTAINER=	woodsb02@FreeBSD.org
@@ -45,7 +46,7 @@ GCRYPT_CMAKE_BOOL=	WITH_GCRYPT
 
 NLS_CMAKE_BOOL=		WITH_TRANSLATIONS
 
-SSH_LIB_DEPENDS=	libssh_threads.so:security/libssh
+SSH_LIB_DEPENDS=	libssh.so:security/libssh
 SSH_LDFLAGS=		-fstack-protector
 SSH_CMAKE_BOOL=		WITH_LIBSSH
 

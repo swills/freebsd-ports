@@ -1,31 +1,32 @@
-# $FreeBSD: head/net-mgmt/klg/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net-mgmt/klg/Makefile 482613 2018-10-20 18:30:11Z mfechner $
 
 PORTNAME=	klg
 PORTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	net-mgmt www
 MASTER_SITES=	SF \
 		ftp://ftpmirror.uk/freebsd-ports/klg/
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	freebsd-ports@dan.me.uk
 COMMENT=	PHP-based looking glass for Cisco, Juniper and Quagga/Zebra routers
 
 LICENSE=	BSD3CLAUSE
 
-IGNORE_WITH_PHP=	70 71 72 73
+USES=		tar:txz php:web,flavors mysql:client
+USE_PHP=	mysqli pcre sockets xml
 
-USES=		mysql tar:txz php:web
-USE_PHP=	mysql pcre sockets xml
 NO_ARCH=	yes
 NO_BUILD=	yes
 
-PLIST_FILES=	%%DATADIR%%/CREDITS \
-		%%DATADIR%%/ChangeLog \
-		%%DATADIR%%/klg_README.txt \
-		%%DATADIR%%/klg_schema.sql \
-		%%WWWDIR%%/klg.php \
-		"@sample %%WWWDIR%%/klg_config.php.sample" \
-		"@sample %%WWWDIR%%/klg_template.html.sample" \
-		%%WWWDIR%%/klg_router_functions.php
+PLIST_FILES=	${DATADIR}/CREDITS \
+		${DATADIR}/ChangeLog \
+		${DATADIR}/klg_README.txt \
+		${DATADIR}/klg_schema.sql \
+		${WWWDIR}/klg.php \
+		"@sample ${WWWDIR}/klg_config.php.sample" \
+		"@sample ${WWWDIR}/klg_template.html.sample" \
+		${WWWDIR}/klg_router_functions.php
 SUB_FILES+=	pkg-message
 
 OPTIONS_DEFINE=		SSH2

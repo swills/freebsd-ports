@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 482261 2018-10-16 22:07:52Z yuri $
+# $FreeBSD: head/misc/Makefile 483360 2018-10-29 00:04:39Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -60,6 +60,7 @@
     SUBDIR += cryptoballot
     SUBDIR += cs
     SUBDIR += cstream
+    SUBDIR += ctm
     SUBDIR += dahdi
     SUBDIR += dahdi-kmod
     SUBDIR += dahdi-kmod26
@@ -194,8 +195,11 @@
     SUBDIR += kbdscan
     SUBDIR += kcd
     SUBDIR += kde-thumbnailer-chm
+    SUBDIR += kde-thumbnailer-chm-kde4
     SUBDIR += kde-thumbnailer-epub
+    SUBDIR += kde-thumbnailer-epub-kde4
     SUBDIR += kde-thumbnailer-fb2
+    SUBDIR += kde-thumbnailer-fb2-kde4
     SUBDIR += kde4-l10n
     SUBDIR += kde4-l10n-bg
     SUBDIR += kde4-l10n-bs
@@ -253,6 +257,7 @@
     SUBDIR += ktouch-kde4
     SUBDIR += kwordquiz
     SUBDIR += kwordquiz-kde4
+    SUBDIR += lastools
     SUBDIR += latex-mk
     SUBDIR += lazyread
     SUBDIR += lc
@@ -418,6 +423,7 @@
     SUBDIR += py-fuzzy
     SUBDIR += py-glance
     SUBDIR += py-kartograph
+    SUBDIR += py-molequeue
     SUBDIR += py-orange3-associate
     SUBDIR += py-orange3-datafusion
     SUBDIR += py-orange3-educational

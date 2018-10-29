@@ -1,8 +1,9 @@
 # Created by: Joe Kelsey
-# $FreeBSD: head/devel/libical/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/devel/libical/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	libical
 PORTVERSION=	3.0.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libical/libical/releases/download/v${PORTVERSION}/
 

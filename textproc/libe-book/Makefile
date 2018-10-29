@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/libe-book/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/textproc/libe-book/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	libe-book
 PORTVERSION=	0.1.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	textproc
 MASTER_SITES=	SF/libebook/${PORTNAME}-${PORTVERSION}/
 

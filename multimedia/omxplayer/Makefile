@@ -1,10 +1,13 @@
 # Created by: mikael.urankar@gmail.com
-# $FreeBSD: head/multimedia/omxplayer/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/multimedia/omxplayer/Makefile 483209 2018-10-28 00:52:30Z jbeich $
 
 PORTNAME=	omxplayer
 PORTVERSION=	20161004
 PORTREVISION=	9
 CATEGORIES=	multimedia
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	96800576209b.patch:-p1
 
 MAINTAINER=	mikael.urankar@gmail.com
 COMMENT=	Raspberry Pi video player

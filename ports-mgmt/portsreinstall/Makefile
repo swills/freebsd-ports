@@ -1,10 +1,10 @@
 # Created by: Mamoru Sakaue / MwGhennndo
-# $FreeBSD: head/ports-mgmt/portsreinstall/Makefile 473723 2018-07-02 10:26:27Z krion $
+# $FreeBSD: head/ports-mgmt/portsreinstall/Makefile 482937 2018-10-24 20:57:04Z tobik $
 
 PORTNAME=	portsreinstall
-PORTVERSION=	4.0.0
+PORTVERSION=	4.1.0
 CATEGORIES=	ports-mgmt
-MASTER_SITES=	OSDN/${PORTNAME}/69740/ \
+MASTER_SITES=	OSDN/${PORTNAME}/70073/ \
 		http://www.mwghennndo.com/software/${PORTNAME}/
 
 MAINTAINER=	sakaue.mamoru@mwghennndo.com

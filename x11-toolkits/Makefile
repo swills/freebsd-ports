@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 480965 2018-09-30 17:17:55Z kwm $
+# $FreeBSD: head/x11-toolkits/Makefile 482824 2018-10-23 10:14:09Z rene $
 #
 
     COMMENT = X11 toolkits
@@ -74,9 +74,6 @@
     SUBDIR += hs-gtksourceview2
     SUBDIR += hs-pango
     SUBDIR += hs-vte
-    SUBDIR += hs-wx
-    SUBDIR += hs-wxc
-    SUBDIR += hs-wxcore
     SUBDIR += hs-wxdirect
     SUBDIR += irrlicht
     SUBDIR += itk

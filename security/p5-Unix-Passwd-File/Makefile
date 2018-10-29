@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Unix-Passwd-File/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/security/p5-Unix-Passwd-File/Makefile 482699 2018-10-21 16:51:09Z sunpoet $
 
 PORTNAME=	Unix-Passwd-File
 PORTVERSION=	0.250
@@ -24,15 +24,14 @@ TEST_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \
 		p5-File-chdir>=0:devel/p5-File-chdir \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} < 502501
-BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 .endif
 

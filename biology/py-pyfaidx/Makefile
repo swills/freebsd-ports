@@ -1,7 +1,7 @@
-# $FreeBSD: head/biology/py-pyfaidx/Makefile 482399 2018-10-19 02:05:37Z yuri $
+# $FreeBSD: head/biology/py-pyfaidx/Makefile 483221 2018-10-28 04:34:14Z yuri $
 
 PORTNAME=	pyfaidx
-DISTVERSION=	0.5.5.1
+DISTVERSION=	0.5.5.2
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,8 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/sysutils/gigolo/Makefile 472160 2018-06-11 01:44:15Z linimon $
+# $FreeBSD: head/sysutils/gigolo/Makefile 483323 2018-10-28 18:31:05Z madpilot $
 
 PORTNAME=	gigolo
-PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTVERSION=	0.4.90
 CATEGORIES=	sysutils
 MASTER_SITES=	XFCE/src/apps/${PORTNAME}/${PORTVERSION:R}
 
@@ -17,9 +16,10 @@ ONLY_FOR_ARCHS_REASON=	Does not compile
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
-USES=		gmake fuse pkgconfig gettext-tools xfce tar:bzip2
-USE_GNOME=	cairo gtk20 gvfs intlhack
+USES=		gmake fuse pkgconfig gettext-tools xfce:gtk3 tar:bzip2
+USE_GNOME=	cairo gdkpixbuf2 gtk30 gvfs intlhack
 USE_XORG=	x11
+
 GNU_CONFIGURE=	yes
 
 PORTDOCS=	AUTHORS ChangeLog NEWS README

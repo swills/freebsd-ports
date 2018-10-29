@@ -1,5 +1,5 @@
 # Created by: bacon@smithers.neuro.mcw.edu
-# $FreeBSD: head/science/InsightToolkit/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/InsightToolkit/Makefile 483381 2018-10-29 09:40:56Z linimon $
 
 PORTNAME=	InsightToolkit
 PORTVERSION=	4.13.0
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libgdcmCommon.so:devel/gdcm \
 		libsz.so:science/szip \
 		libtiff.so:graphics/tiff
 
-USES=		cmake:outsource jpeg
+USES=		cmake:outsource compiler:c11 jpeg
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS:BOOL=ON \
 		-DITK_USE_KWSTYLE:BOOL=OFF \
 		-DITK_USE_SYSTEM_LIBRARIES:BOOL=ON \

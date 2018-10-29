@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/lazygit/Makefile 480639 2018-09-25 06:06:53Z meta $
+# $FreeBSD: head/devel/lazygit/Makefile 482954 2018-10-25 06:41:55Z meta $
 
 PORTNAME=	lazygit
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.1
+DISTVERSION=	0.5
 CATEGORIES=	devel
 
 MAINTAINER=	meta@FreeBSD.org
@@ -13,6 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go
 USE_GITHUB=	yes
+
 GH_ACCOUNT=	jesseduffield
 
 PLIST_FILES=	bin/${PORTNAME}

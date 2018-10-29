@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 482194 2018-10-16 00:00:46Z jbeich $
+# $FreeBSD: head/graphics/Makefile 483363 2018-10-29 02:23:13Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -289,6 +289,9 @@
     SUBDIR += gmic
     SUBDIR += gmic-qt
     SUBDIR += gmt
+    SUBDIR += gmt5
+    SUBDIR += gmt5-dcw
+    SUBDIR += gmt5-gshhg
     SUBDIR += gnash
     SUBDIR += gnofract4d
     SUBDIR += gnome-color-manager
@@ -990,6 +993,7 @@
     SUBDIR += quesa
     SUBDIR += quesoglc
     SUBDIR += qxv
+    SUBDIR += radiance
     SUBDIR += radius-engine
     SUBDIR += raster3d
     SUBDIR += rawstudio

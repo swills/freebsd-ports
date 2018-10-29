@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/openbor/Makefile 480729 2018-09-26 11:55:52Z jbeich $
+# $FreeBSD: head/games/openbor/Makefile 482948 2018-10-25 00:53:35Z jbeich $
 
 PORTNAME=	openbor
 # Hint: svn revision is git rev-list --count ${GH_TAGNAME}
-PORTVERSION?=	6484
+PORTVERSION?=	6547
 .ifndef PKGNAMESUFFIX
 PORTREVISION=	0
 .endif
@@ -31,7 +31,7 @@ PORTSCOUT=	ignore:1
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	DCurrent
-GH_TAGNAME?=	949a4031
+GH_TAGNAME?=	a26efe22
 
 USES+=		gmake pkgconfig
 .if ${PORTVERSION} < 4433

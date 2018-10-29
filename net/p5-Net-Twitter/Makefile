@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/net/p5-Net-Twitter/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/net/p5-Net-Twitter/Makefile 482697 2018-10-21 16:50:53Z sunpoet $
 
 PORTNAME=	Net-Twitter
 PORTVERSION=	4.01043
@@ -38,14 +38,14 @@ TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Warn>=0:devel/p5-Test-Warn
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} < 502502
-BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS+=	p5-ExtUtils-MakeMaker>=7.11.01:devel/p5-ExtUtils-MakeMaker
 .endif
 

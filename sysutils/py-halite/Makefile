@@ -1,9 +1,8 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/sysutils/py-halite/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/py-halite/Makefile 483110 2018-10-27 04:52:58Z wen $
 
 PORTNAME=	halite
-PORTVERSION=	0.1.15
-PORTREVISION=	2
+PORTVERSION=	0.1.17
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

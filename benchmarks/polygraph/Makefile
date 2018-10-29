@@ -1,5 +1,5 @@
 # Created by: Dima Sivachenko <dima@chg.ru>
-# $FreeBSD: head/benchmarks/polygraph/Makefile 476376 2018-08-04 19:02:14Z yuri $
+# $FreeBSD: head/benchmarks/polygraph/Makefile 483260 2018-10-28 10:08:17Z jbeich $
 
 PORTNAME=	polygraph
 DISTVERSION=	4.12.0
@@ -18,13 +18,13 @@ BROKEN_SSL_REASON_openssl-devel=	configure: error: OpenSSL libraries and/or dire
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		compiler:c++0x gmake ncurses shebangfix tar:tgz
+USES=		gmake ncurses shebangfix tar:tgz
 SHEBANG_FILES=	tools/*.pl
 USE_GCC=	any
 GNU_CONFIGURE=	yes
 
 # The port does not build with C++11 or later (bug 219275).
-USE_CXXSTD=	gnu++03
+USE_CXXSTD=	gnu++98
 
 CONFLICTS=	ltrace-0*
 

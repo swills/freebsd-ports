@@ -1,8 +1,8 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/editors/jupp/Makefile 466439 2018-04-04 15:52:57Z gblach $
+# $FreeBSD: head/editors/jupp/Makefile 482843 2018-10-23 15:35:13Z gblach $
 
 PORTNAME=	jupp
-PORTVERSION=	3.1.36
+PORTVERSION=	3.1.37
 CATEGORIES=	editors
 MASTER_SITES=	http://www.mirbsd.org/MirOS/dist/jupp/ \
 		http://pub.allbsd.org/MirOS/dist/jupp/

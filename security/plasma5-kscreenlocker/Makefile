@@ -1,13 +1,13 @@
-# $FreeBSD: head/security/plasma5-kscreenlocker/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/plasma5-kscreenlocker/Makefile 483271 2018-10-28 10:59:23Z tcberner $
 
 PORTNAME=	kscreenlocker
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	security kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 secure lock screen architecture
 
+BUILD_DEPENDS=	ck-list-sessions:sysutils/consolekit2
 LIB_DEPENDS=	libwayland-client.so:graphics/wayland \
 		libxcb-keysyms.so:x11/xcb-util-keysyms
 RUN_DEPENDS=	ck-list-sessions:sysutils/consolekit2\
@@ -28,7 +28,7 @@ SHEBANG_FILES=	updaters/ksreenlocker_5_3_separate_autologin.pl
 
 # Install a generic console kit based program to unlock the screen in the event
 # of a failure.
-SUB_FILES=	ck-unlock-session
+SUB_FILES=     ck-unlock-session
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/ck-unlock-session ${STAGEDIR}${PREFIX}/bin

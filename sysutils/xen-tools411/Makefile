@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/xen-tools411/Makefile 479377 2018-09-10 09:10:11Z royger $
+# $FreeBSD: head/sysutils/xen-tools411/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools411
@@ -92,4 +92,3 @@ post-install:
 	${MKDIR} ${STAGEDIR}/var/run/xen
 
 .include <bsd.port.mk>
-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kgeography/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/misc/kgeography/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kgeography
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	misc kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE geography trainer
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons crash doctools ecm \
 		i18n iconthemes itemviews service widgetsaddons xmlgui
 USE_QT=		core dbus gui widgets xml \

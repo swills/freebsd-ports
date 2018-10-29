@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 482343 2018-10-18 13:31:00Z tijl $
+# $FreeBSD: head/multimedia/Makefile 483120 2018-10-27 09:57:10Z makc $
 #
 
     COMMENT = Multimedia software
@@ -399,6 +399,7 @@
     SUBDIR += snappy
     SUBDIR += spigot
     SUBDIR += spook
+    SUBDIR += subtitlecomposer
     SUBDIR += subtitlecomposer-kde4
     SUBDIR += subtitleeditor
     SUBDIR += subtitleoffsetmodifier

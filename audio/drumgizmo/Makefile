@@ -1,5 +1,5 @@
 # Created by: Goran Mekić <meka@tilda.center>
-# $FreeBSD: head/audio/drumgizmo/Makefile 477370 2018-08-16 20:15:32Z swills $
+# $FreeBSD: head/audio/drumgizmo/Makefile 483293 2018-10-28 13:48:26Z linimon $
 
 PORTNAME=	drumgizmo
 PORTVERSION=	0.9.16
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libsmf.so:audio/libsmf \
 		libexpat.so:textproc/expat2
 
 GNU_CONFIGURE=	yes
-USES=		gettext-runtime libtool
+USES=		compiler:c++11-lang gettext-runtime gnome libtool
 USE_GNOME=	glib20
 USE_XORG=	x11 xext
 

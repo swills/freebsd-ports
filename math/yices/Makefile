@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/yices/Makefile 475051 2018-07-21 08:11:46Z yuri $
+# $FreeBSD: head/math/yices/Makefile 483223 2018-10-28 04:45:48Z yuri $
 
 PORTNAME=	yices
-DISTVERSION=	2.6.0
+DISTVERSION=	2.6.1
 CATEGORIES=	math
 MASTER_SITES=	http://yices.csl.sri.com/releases/${DISTVERSION}/
 DISTNAME=	${PORTNAME}-${DISTVERSION}-src

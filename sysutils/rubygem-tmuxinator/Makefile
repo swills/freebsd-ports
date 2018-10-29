@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-tmuxinator/Makefile 476102 2018-07-31 23:53:12Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-tmuxinator/Makefile 482926 2018-10-24 17:58:22Z sunpoet $
 
 PORTNAME=	tmuxinator
-PORTVERSION=	0.12.0
+PORTVERSION=	0.13.0
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 
@@ -17,6 +17,7 @@ RUN_DEPENDS=	rubygem-erubis>=2.6:www/rubygem-erubis \
 
 USES=		gem
 USE_RUBY=	yes
+
 NO_ARCH=	yes
 
 OPTIONS_DEFAULT=	TMUX

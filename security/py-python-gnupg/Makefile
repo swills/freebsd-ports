@@ -1,8 +1,8 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/security/py-python-gnupg/Makefile 463733 2018-03-06 16:23:37Z swills $
+# $FreeBSD: head/security/py-python-gnupg/Makefile 483069 2018-10-27 00:47:37Z swills $
 
 PORTNAME=	python-gnupg
-PORTVERSION=	0.4.1
+PORTVERSION=	0.4.3
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +13,9 @@ COMMENT=	Python wrapper for the GNU Privacy Guard (GPG or GnuPG)
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-NO_ARCH=	yes
 USES=		python
+
+NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

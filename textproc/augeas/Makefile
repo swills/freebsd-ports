@@ -1,8 +1,9 @@
 # Created by: Russell Jackson <raj@csub.edu>
-# $FreeBSD: head/textproc/augeas/Makefile 480247 2018-09-21 10:38:03Z romain $
+# $FreeBSD: head/textproc/augeas/Makefile 482971 2018-10-25 13:51:48Z romain $
 
 PORTNAME=	augeas
 PORTVERSION=	1.11.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.augeas.net/
 
@@ -14,10 +15,11 @@ LICENSE=	LGPL21
 TEST_DEPENDS=	bash:shells/bash \
 		gsed:textproc/gsed
 
-GNU_CONFIGURE=	yes
 USES=		autoreconf cpe gmake libtool pathfix pkgconfig readline
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
+
+GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
 LENSESDIR=	${PREFIX}/share/augeas/lenses

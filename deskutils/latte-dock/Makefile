@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/latte-dock/Makefile 479943 2018-09-17 19:24:49Z tcberner $
+# $FreeBSD: head/deskutils/latte-dock/Makefile 483310 2018-10-28 16:06:50Z adridg $
 
 PORTNAME=	latte-dock
-DISTVERSION=	0.8.1
+DISTVERSION=	0.8.2
 CATEGORIES=	deskutils kde
 MASTER_SITES=	KDE/stable/latte-dock
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libxcb-util.so:x11/xcb-util
 
 USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
-USE_KDE=	activities archive auth codecs config configwidgets \
+USE_KDE=	activities archive attica auth codecs config configwidgets \
 		coreaddons crash dbusaddons globalaccel i18n iconthemes \
 		kdeclarative newstuff notifications package plasma-framework service \
 		wayland widgetsaddons windowsystem xmlgui \

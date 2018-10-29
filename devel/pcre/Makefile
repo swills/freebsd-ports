@@ -1,5 +1,5 @@
 # Created by: dom
-# $FreeBSD: head/devel/pcre/Makefile 470355 2018-05-19 06:51:05Z krion $
+# $FreeBSD: head/devel/pcre/Makefile 483248 2018-10-28 09:32:59Z linimon $
 
 PORTNAME=	pcre
 PORTVERSION=	8.42
@@ -13,7 +13,11 @@ COMMENT=	Perl Compatible Regular Expressions library
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-USES=		cpe libtool pathfix tar:bzip2
+USES=		${USES_${ARCH}} cpe libtool pathfix tar:bzip2
+USES_powerpc=	compiler:c++11-lang
+USES_powerpcspe=	compiler:c++11-lang
+USES_powerpc64=	compiler:c++11-lang
+USES_sparc64=	compiler:c++11-lang
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes

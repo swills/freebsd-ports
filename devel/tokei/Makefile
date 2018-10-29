@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/tokei/Makefile 481921 2018-10-12 19:01:02Z jbeich $
+# $FreeBSD: head/devel/tokei/Makefile 482993 2018-10-25 21:59:37Z jbeich $
 
 PORTNAME=	tokei
 DISTVERSIONPREFIX=	v
 DISTVERSION=	8.0.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	tobik@FreeBSD.org

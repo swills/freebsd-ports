@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/blitz++/Makefile 478020 2018-08-25 10:16:16Z riggs $
+# $FreeBSD: head/math/blitz++/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	blitz++
 PORTVERSION=	1.0.1
@@ -12,6 +12,7 @@ LICENSE=	GPLv3 BSD3CLAUSE
 LICENSE_COMB=	multi
 
 BROKEN_FreeBSD_12=	fails to compile: ../blitz/blitz.h:58:12: 'iostream.h' file not found
+BROKEN_FreeBSD_13=	fails to compile: ../blitz/blitz.h:58:12: 'iostream.h' file not found
 
 GNU_CONFIGURE=	yes
 USES=		gmake libtool pathfix python

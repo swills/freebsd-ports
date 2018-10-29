@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae <whitekid@gmail.com>
-# $FreeBSD: head/graphics/freeimage/Makefile 479200 2018-09-07 17:14:41Z tobik $
+# $FreeBSD: head/graphics/freeimage/Makefile 483279 2018-10-28 11:26:05Z linimon $
 
 PORTNAME=	freeimage
 PORTVERSION=	3.18.0
@@ -26,7 +26,9 @@ USES=		dos2unix gmake zip
 USE_LDCONFIG=	yes
 DOS2UNIX_FILES=	Source/LibOpenJPEG/opj_malloc.h \
 		Source/LibRawLite/dcraw/dcraw.c \
-		Source/LibRawLite/internal/dcraw_common.cpp
+		Source/LibRawLite/internal/dcraw_common.cpp \
+		Source/FreeImage/PluginBMP.cpp \
+		Source/FreeImage/PluginDDS.cpp
 
 WRKSRC=		${WRKDIR}/FreeImage
 MAKE_ARGS=	CC="${CC}" CPP="${CPP}" CXX="${CXX}"

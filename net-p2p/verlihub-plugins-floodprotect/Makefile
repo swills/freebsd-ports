@@ -1,5 +1,5 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 472693 2018-06-18 14:00:43Z linimon $
+# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 483249 2018-10-28 09:36:56Z jbeich $
 
 PORTNAME=	floodprotect
 PORTVERSION=	1.6
@@ -17,7 +17,7 @@ PLUGIN_DESC=	Floodprotect
 
 # Bug 219281: the port fails to build in C++14 mode (the default in GCC 6),
 # switch back to the old default GCC used before.
-USE_CXXSTD=	gnu++03
+USE_CXXSTD=	gnu++98
 
 .include "../verlihub-plugins/Makefile.plugins"
 .include <bsd.port.mk>

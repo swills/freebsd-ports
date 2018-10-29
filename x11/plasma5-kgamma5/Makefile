@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/plasma5-kgamma5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/plasma5-kgamma5/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kgamma5
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -7,7 +7,8 @@ CATEGORIES=	x11 kde kde-plasma
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 monitor's gamma settings
 
-USES=		cmake:outsource cpe gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang cpe gettext kde:5 qt:5 \
+		tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash doctools ecm emoticons guiaddons i18n \
 		iconthemes init itemmodels itemviews jobwidgets \

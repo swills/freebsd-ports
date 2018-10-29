@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/analitza/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/math/analitza/Makefile 482596 2018-10-20 16:31:28Z tcberner $
 
 PORTNAME=	analitza
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,7 @@ LICENSE_COMB=		multi
 LICENSE_FILE_GFDL=	${WRKSRC}/COPYING.DOC
 LICENSE_FILE_GPLv2=	 ${WRKSRC}/COPYING
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gl kde:5 qt:5 tar:xz
 USE_GL=		glu
 USE_KDE=	ecm
 USE_QT=		core gui network opengl printsupport qml quick svg widgets xml \

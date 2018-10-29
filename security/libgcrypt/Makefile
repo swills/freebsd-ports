@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/libgcrypt/Makefile 472337 2018-06-13 18:59:05Z cpm $
+# $FreeBSD: head/security/libgcrypt/Makefile 483355 2018-10-28 21:15:27Z cpm $
 
 PORTNAME=	libgcrypt
-PORTVERSION=	1.8.3
+PORTVERSION=	1.8.4
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
@@ -11,8 +11,8 @@ COMMENT=	General purpose cryptographic library based on the code from GnuPG
 LICENSE=	GPLv2+ LGPL21+
 LICENSE_COMB=	multi
 
-BUILD_DEPENDS=	libgpg-error>=1.25:security/libgpg-error
-RUN_DEPENDS=	libgpg-error>=1.25:security/libgpg-error
+BUILD_DEPENDS=	libgpg-error>=1.32:security/libgpg-error
+RUN_DEPENDS=	libgpg-error>=1.32:security/libgpg-error
 
 USES=		cpe libtool makeinfo tar:bzip2
 CPE_VENDOR=	gnupg

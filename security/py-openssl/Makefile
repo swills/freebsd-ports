@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-openssl/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-openssl/Makefile 482680 2018-10-21 15:59:07Z sbz $
 
 PORTNAME=	openssl
-PORTVERSION=	17.5.0
-PORTREVISION=	1
+PORTVERSION=	18.0.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +14,7 @@ COMMENT=	Python interface to the OpenSSL library
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=2.1.4:security/py-cryptography@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=2.2.1:security/py-cryptography@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.5.2:devel/py-six@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	EXAMPLES

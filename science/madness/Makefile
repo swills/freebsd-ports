@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/madness/Makefile 481833 2018-10-11 14:47:13Z martymac $
+# $FreeBSD: head/science/madness/Makefile 482633 2018-10-20 23:29:28Z yuri $
 
 PORTNAME=	madness
 DISTVERSION=	0.10.1.20180823
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmocore/Makefile 480960 2018-09-30 14:43:39Z antoine $
+# $FreeBSD: head/devel/libosmocore/Makefile 483147 2018-10-27 16:31:51Z linimon $
 
 PORTNAME=	libosmocore
 PORTVERSION=	0.12.1
@@ -11,8 +11,6 @@ COMMENT=	Common library for all Osmocom projects
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to compile: application.c:179: \#pragma GCC diagnostic not allowed inside functions
 
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
 		libpcsclite.so:devel/pcsc-lite \

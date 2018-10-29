@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/0ad/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/0ad/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	0ad
 PORTVERSION=	0.0.23
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://releases.wildfiregames.com/ \
 		SF/zero-ad/releases

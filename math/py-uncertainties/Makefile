@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-uncertainties/Makefile 465073 2018-03-20 08:16:55Z yuri $
+# $FreeBSD: head/math/py-uncertainties/Makefile 483366 2018-10-29 04:08:29Z yuri $
 
 PORTNAME=	uncertainties
-DISTVERSION=	3.0.2
+DISTVERSION=	3.0.3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

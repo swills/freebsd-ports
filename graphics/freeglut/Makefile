@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/freeglut/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/freeglut/Makefile 482977 2018-10-25 18:48:23Z zeising $
 
 PORTNAME=	freeglut
 PORTVERSION=	3.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

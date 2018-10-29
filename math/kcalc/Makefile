@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kcalc/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/math/kcalc/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kcalc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs coreaddons ecm config configwidgets doctools \
 		guiaddons i18n init notifications widgetsaddons xmlgui
 USE_QT=		core dbus gui widgets xml \

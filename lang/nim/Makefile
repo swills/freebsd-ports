@@ -1,8 +1,8 @@
 # Created by: Neal Nelson <ports@nicandneal.net>
-# $FreeBSD: head/lang/nim/Makefile 464947 2018-03-18 20:04:06Z riggs $
+# $FreeBSD: head/lang/nim/Makefile 483062 2018-10-27 00:12:27Z swills $
 
 PORTNAME=	nim
-PORTVERSION=	0.18.0
+PORTVERSION=	0.19.0
 CATEGORIES=	lang
 MASTER_SITES=	https://nim-lang.org/download/
 
