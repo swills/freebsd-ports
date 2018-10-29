@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-opster/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/devel/py-opster/Makefile 483348 2018-10-28 20:12:59Z yuri $
 
 PORTNAME=	opster
-PORTVERSION=	4.1
+PORTVERSION=	4.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

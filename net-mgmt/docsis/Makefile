@@ -1,5 +1,5 @@
 # Created by: James Flemer <jflemer@acm.jhu.edu>
-# $FreeBSD: head/net-mgmt/docsis/Makefile 478793 2018-09-02 15:01:24Z mat $
+# $FreeBSD: head/net-mgmt/docsis/Makefile 483229 2018-10-28 06:54:04Z linimon $
 
 PORTNAME=	docsis
 PORTVERSION=	0.9.8
@@ -19,6 +19,7 @@ LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp \
 USES=		autoreconf bison libtool ssl
 USE_GITHUB=	yes
 GNU_CONFIGURE=	yes
+MAKE_JOBS_UNSAFE=	yes
 
 PLIST_SUB=	MIBS=share/snmp/mibs
 

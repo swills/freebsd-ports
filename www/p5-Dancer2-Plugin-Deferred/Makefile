@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Dancer2-Plugin-Deferred/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Dancer2-Plugin-Deferred/Makefile 483342 2018-10-28 19:58:17Z sunpoet $
 
 PORTNAME=	Dancer2-Plugin-Deferred
-PORTVERSION=	0.007017
+PORTVERSION=	0.007018
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,8 +20,9 @@ TEST_DEPENDS=	p5-HTTP-Cookies>=0:www/p5-HTTP-Cookies \
 		p5-HTTP-Message>=0:www/p5-HTTP-Message \
 		p5-Plack>=0:www/p5-Plack
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

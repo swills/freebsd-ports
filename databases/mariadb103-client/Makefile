@@ -1,13 +1,10 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/databases/mariadb103-client/Makefile 473292 2018-06-25 05:07:26Z linimon $
+# $FreeBSD: head/databases/mariadb103-client/Makefile 483143 2018-10-27 15:06:54Z brnrd $
 
 PORTNAME=	mariadb
-PORTREVISION=	0
 PKGNAMESUFFIX=	103-client
 
 COMMENT=	Multithreaded SQL database (client)
-
-BROKEN_aarch64=		fails to link: missing sbrk
 
 MASTERDIR=	${.CURDIR}/../mariadb103-server
 
@@ -24,14 +21,16 @@ USE_LDCONFIG=	${PREFIX}/lib/mysql
 
 CLIENT_ONLY=	yes
 
+CONFLICTS_INSTALL=	databases/mytop
+
 post-configure:
 	${REINPLACE_CMD} -Ee 's|(#define INCLUDE.*)"$$|\1 -I${PREFIX}/include"|' \
 		-e 's|(#define LIBS.*)"\\ $$|\1 -L${PREFIX}/lib "\\|' \
 		${WRKSRC}/libmariadb/mariadb_config/mariadb_config.c
 
 post-install:
-	${RM} -r ${STAGEDIR}${DATADIR}/policy \
-		${STAGEDIR}${PREFIX}/include/mysql/server
+	${RM} -r ${STAGEDIR}${DATADIR}
+	${RM} -r ${STAGEDIR}${PREFIX}/include/mysql/server
 
 post-install-GSSAPI_NONE:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mysql/plugin/auth_gssapi_client.so

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/nats-streaming-server/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/nats-streaming-server/Makefile 482795 2018-10-22 21:47:03Z olgeni $
 
 PORTNAME=	nats-streaming-server
-PORTVERSION=	0.11.0
+PORTVERSION=	0.11.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Tiny-Chained/Makefile 482558 2018-10-20 15:21:16Z zi $
+# $FreeBSD: head/devel/p5-Class-Tiny-Chained/Makefile 482691 2018-10-21 16:50:05Z sunpoet $
 
 PORTNAME=	Class-Tiny-Chained
 PORTVERSION=	0.004
@@ -11,12 +11,14 @@ MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Minimalist class construction, with chained attributes
 
 LICENSE=	ART20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Class-Tiny>0:devel/p5-Class-Tiny
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Class-Tiny>0:devel/p5-Class-Tiny
 
 USES=		perl5
 USE_PERL5=	configure
-NO_ARCH=	YES
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

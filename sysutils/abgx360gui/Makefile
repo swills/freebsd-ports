@@ -1,5 +1,5 @@
 # Created by: okeeblow <root@cooltrainer.org>
-# $FreeBSD: head/sysutils/abgx360gui/Makefile 479668 2018-09-13 09:38:20Z amdmi3 $
+# $FreeBSD: head/sysutils/abgx360gui/Makefile 483236 2018-10-28 08:13:45Z linimon $
 
 PORTNAME=	abgx360gui
 PORTVERSION=	1.0.2
@@ -24,6 +24,7 @@ PLIST_FILES=	bin/abgx360gui \
 		share/pixmaps/abgx360-256.png
 
 GNU_CONFIGURE=	yes
+USES=		compiler:c++11-lang
 USE_WX=		2.8
 WX_COMPS=	wx
 CONFIGURE_ARGS=	--with-wx=${LOCALBASE} \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/lokalize/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/lokalize/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	lokalize
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,8 @@ COMMENT=	Computer-aided translation system
 
 LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 
-USES=		cmake:outsource desktop-file-utils gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang desktop-file-utils gettext \
+		kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons doctools ecm i18n itemviews \
 		jobwidgets kio kross notifications parts service solid sonnet \

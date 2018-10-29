@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 483318 2018-10-28 16:50:32Z rm $
 
 PORTNAME=	gmic
 PORTVERSION=	1.6.9
@@ -18,7 +18,8 @@ LIB_DEPENDS=	libGraphicsMagick++.so:graphics/GraphicsMagick \
 		libMagick++-6.so:graphics/ImageMagick \
 		libavcodec.so:multimedia/ffmpeg \
 		libfftw3.so:math/fftw3 \
-		libgimp-2.0.so:graphics/gimp-app
+		libgimp-2.0.so:graphics/gimp-app \
+		libcurl.so:ftp/curl
 
 OPTIONS_DEFINE=	BASH EXAMPLES
 OPTIONS_SUB=	yes

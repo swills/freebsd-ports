@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Xapian/Makefile 480465 2018-09-23 09:38:22Z sunpoet $
+# $FreeBSD: head/databases/p5-Xapian/Makefile 483183 2018-10-27 23:21:43Z sunpoet $
 
 PORTNAME=	Xapian
-PORTVERSION=	1.4.7.0
+PORTVERSION=	1.4.8.0
 CATEGORIES=	databases perl5
 MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION:R}/ \
 		LOCAL/sunpoet
@@ -22,6 +22,8 @@ OPTIONS_DEFINE=	DOCS
 
 PORTSCOUT=	limitw:1,even
 
+USES=		compiler:c++11-lang libtool perl5 tar:xz
+
 CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
 		--enable-static \
 		--with-perl \
@@ -30,7 +32,7 @@ CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 LDFLAGS+=	-L${LOCALBASE}/lib/perl5/${PERL_VER}/mach/CORE -lperl
-USES=		compiler:c++11-lang libtool perl5 tar:xz
+USE_CXXSTD=	c++11
 
 PORTDOCS=	*
 

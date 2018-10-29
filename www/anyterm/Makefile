@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/anyterm/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/www/anyterm/Makefile 483264 2018-10-28 10:35:29Z jbeich $
 
 PORTNAME=	anyterm
 PORTVERSION=	1.1.29
@@ -18,8 +18,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
 BROKEN_aarch64=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0
-BROKEN_armv6=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0
-BROKEN_armv7=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0
+BROKEN_armv6=		does not build: libstdc++.so: undefined reference to __aeabi_idiv@GCC_3.5
+BROKEN_armv7=		does not build: libstdc++.so: undefined reference to __aeabi_idiv@GCC_3.5
 BROKEN_powerpc64=	Does not build: ld: cannot find -lboost_system
 
 USE_RC_SUBR=	anytermd
@@ -31,7 +31,7 @@ PLIST_FILES=	man/man1/anytermd.1.gz \
 
 # Force the use of an older C++ standard; anyterm 1.1.29 is not compatible with
 # C++11.
-USE_CXXSTD=	gnu++03
+USE_CXXSTD=	gnu++98
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/private/etc/apache2|${FILESDIR}|' \

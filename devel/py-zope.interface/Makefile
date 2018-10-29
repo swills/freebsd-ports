@@ -1,8 +1,8 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/devel/py-zope.interface/Makefile 403670 2015-12-13 13:46:28Z rm $
+# $FreeBSD: head/devel/py-zope.interface/Makefile 483296 2018-10-28 14:13:01Z rm $
 
 PORTNAME=	zope.interface
-PORTVERSION=	4.1.3
+PORTVERSION=	4.6.0
 CATEGORIES=	devel python zope
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

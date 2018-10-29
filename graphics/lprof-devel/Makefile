@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/lprof-devel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/lprof-devel/Makefile 483281 2018-10-28 11:32:32Z linimon $
 
 PORTNAME=	lprof
 PORTVERSION=	20080514
@@ -16,7 +16,7 @@ LIB_DEPENDS=	liblcms.so:graphics/lcms \
 		libtiff.so:graphics/tiff \
 		libvigraimpex.so:graphics/vigra
 
-USES=		cmake desktop-file-utils jpeg qt:4 tar:bzip2
+USES=		cmake compiler:c++11-lang desktop-file-utils jpeg qt:4 tar:bzip2
 USE_XORG=	x11 xext sm ice xxf86vm
 USE_QT=		corelib gui qt3support svg assistantclient \
 		linguisttools_build qmake_build moc_build uic_build rcc_build

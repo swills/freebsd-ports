@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql80-server/Makefile 477105 2018-08-13 19:48:42Z mmokhi $
+# $FreeBSD: head/databases/mysql80-server/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME?=		mysql
 PORTVERSION=		8.0.12
-PORTREVISION?=		0
+PORTREVISION?=		1
 CATEGORIES=		databases ipv6
 MASTER_SITES=		MYSQL/MySQL-8.0
 PKGNAMESUFFIX?=		80-server

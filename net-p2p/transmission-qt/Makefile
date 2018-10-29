@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/transmission-qt/Makefile 477076 2018-08-13 15:26:54Z arrowd $
+# $FreeBSD: head/net-p2p/transmission-qt/Makefile 483283 2018-10-28 11:41:45Z linimon $
 
 PORTREVISION=	1
 PKGNAMESUFFIX=	-${FLAVOR}
@@ -27,6 +27,8 @@ USE_QT=		buildtools_build linguisttools_build qmake_build \
 		core dbus gui network widgets
 CMAKE_ON=	USE_QT5
 .endif
+
+USES+=		compiler:c++11-lang
 
 MASTERDIR=	${.CURDIR}/../transmission-cli
 DESCR=		${.CURDIR}/pkg-descr

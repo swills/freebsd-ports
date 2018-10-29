@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php56-extensions/Makefile 426080 2016-11-14 03:15:03Z danfe $
+# $FreeBSD: head/lang/php56-extensions/Makefile 482665 2018-10-21 11:17:12Z antoine $
 
 PORTNAME=	php56
 PORTVERSION=	1.0
@@ -11,7 +11,7 @@ COMMENT=	"meta-port" to install PHP extensions
 
 USES=		metaport php
 PHP_VER=	56
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71 72 73
 
 OPTIONS_DEFINE=	BCMATH BZ2 CALENDAR CTYPE CURL DBA \
 		DOM ENCHANT EXIF FILEINFO FILTER FTP GD GETTEXT \

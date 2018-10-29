@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/kodi-devel/Makefile 482209 2018-10-16 08:22:02Z tobik $
+# $FreeBSD: head/multimedia/kodi-devel/Makefile 482839 2018-10-23 14:16:15Z tobik $
 
 PORTNAME=	kodi
 CATEGORIES=	multimedia
-DISTVERSION=	18.0.g201810021630
+DISTVERSION=	18.0.g201810231420
 PKGNAMESUFFIX?=	-devel
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -54,7 +54,7 @@ USES=		autoreconf:build cmake:outsource,noninja compiler:c++11-lib \
 USE_GITHUB=	yes
 GH_ACCOUNT=	xbmc
 GH_PROJECT=	xbmc
-GH_TAGNAME=	18.0b3-Leia
+GH_TAGNAME=	18.0b4-Leia
 USE_GNOME=	libxslt libxml2
 USE_JAVA=	yes
 JAVA_BUILD=	yes

@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/net-mgmt/phpip/Makefile 466796 2018-04-08 12:19:58Z brnrd $
+# $FreeBSD: head/net-mgmt/phpip/Makefile 482665 2018-10-21 11:17:12Z antoine $
 
 PORTNAME=	phpip
 PORTVERSION=	${SNAPSHOT}
@@ -19,7 +19,7 @@ NO_BUILD=	yes
 USE_PHP=	mysql
 USES=		dos2unix php:web
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72 73
 
 PHPIP?=		www/phpip
 PLIST_SUB+=	PHPIP=${PHPIP} WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}

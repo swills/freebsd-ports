@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/cockroach/Makefile 481363 2018-10-06 12:15:39Z riggs $
+# $FreeBSD: head/databases/cockroach/Makefile 482757 2018-10-22 16:53:40Z riggs $
 
 PORTNAME=	cockroach
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.0.5
+DISTVERSION=	2.0.6
 CATEGORIES=	databases
 MASTER_SITES=	https://binaries.cockroachdb.com/
 EXTRACT_SUFX=	.src.tgz

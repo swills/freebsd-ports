@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 481633 2018-10-09 13:51:40Z 0mp $
+# $FreeBSD: head/security/Makefile 482824 2018-10-23 10:14:09Z rene $
 #
 
     COMMENT = Security tools
@@ -227,7 +227,6 @@
     SUBDIR += hs-HsOpenSSL
     SUBDIR += hs-RSA
     SUBDIR += hs-SHA
-    SUBDIR += hs-certificate
     SUBDIR += hs-cipher-aes
     SUBDIR += hs-cipher-aes128
     SUBDIR += hs-cipher-blowfish

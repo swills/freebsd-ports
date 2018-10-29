@@ -1,8 +1,8 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/net/liveMedia/Makefile 466256 2018-04-02 19:48:24Z bapt $
+# $FreeBSD: head/net/liveMedia/Makefile 483312 2018-10-28 16:16:59Z riggs $
 
 PORTNAME=	liveMedia
-PORTVERSION=	2018.02.28
+PORTVERSION=	2018.10.17
 PORTEPOCH=	2
 CATEGORIES=	net devel
 MASTER_SITES=	http://www.live555.com/liveMedia/public/ \

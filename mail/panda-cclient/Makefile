@@ -1,8 +1,9 @@
 # Created by: Kelly Yancey <kbyanc@FreeBSD.org>
-# $FreeBSD: head/mail/panda-cclient/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/mail/panda-cclient/Makefile 483321 2018-10-28 17:54:22Z thierry $
 
 PORTNAME=	cclient
 PORTVERSION=	20130621
+PORTREVISION=	1
 CATEGORIES=	mail devel ipv6
 PKGNAMEPREFIX=	panda-
 
@@ -31,12 +32,6 @@ MAKE_JOBS_UNSAFE=	yes
 .if ${PORT_OPTIONS:MSSL}
 USES+=		ssl
 PKGMESSAGE=	pkg-message-ssl
-.endif
-
-.include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
 .endif
 
 USE_LDCONFIG=	yes
@@ -113,4 +108,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/c-client/OSCFLAGS ${STAGEDIR}${PREFIX}/include/c-client
 	${INSTALL_DATA} ${PORTREV_H} ${STAGEDIR}${PREFIX}/include/c-client
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

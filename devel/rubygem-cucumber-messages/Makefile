@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-cucumber-messages/Makefile 481294 2018-10-05 20:59:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cucumber-messages/Makefile 482768 2018-10-22 19:09:07Z sunpoet $
 
 PORTNAME=	cucumber-messages
-PORTVERSION=	1.1.2
+PORTVERSION=	2.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

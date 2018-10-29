@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qsudo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/qsudo/Makefile 483242 2018-10-28 08:52:57Z linimon $
 
 PORTNAME=	qsudo
 DISTVERSION=	201711240000
@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 RUN_DEPENDS=	sudo:security/sudo
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	trueos
 GH_TAGNAME=	815e31c

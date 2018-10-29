@@ -1,7 +1,7 @@
-# $FreeBSD: head/ports-mgmt/pchecker/Makefile 451354 2017-10-06 06:50:17Z ak $
+# $FreeBSD: head/ports-mgmt/pchecker/Makefile 483378 2018-10-29 09:19:57Z ak $
 
 PORTNAME=	pchecker
-PORTVERSION=	1.20
+PORTVERSION=	1.21
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	https://aklv.github.io/distfiles/
 

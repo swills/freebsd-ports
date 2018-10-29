@@ -1,8 +1,8 @@
 # Created by: Christian Geier <geier@lostpackets.de>
-# $FreeBSD: head/devel/py-click-log/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-click-log/Makefile 483154 2018-10-27 17:20:32Z rigoletto $
 
 PORTNAME=	click-log
-DISTVERSION=	0.2.1
+DISTVERSION=	0.3.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +11,7 @@ MAINTAINER=	geier@lostpackets.de
 COMMENT=	Logging integration for Click
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
@@ -18,7 +19,6 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	autoplist distutils
-
 NO_ARCH=	yes
 
 do-test:

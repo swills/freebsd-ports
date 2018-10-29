@@ -1,5 +1,5 @@
 # Created by: silence <oksala@videotron.ca>
-# $FreeBSD: head/www/cherokee/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/www/cherokee/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	cherokee
 PORTVERSION=	1.2.104
@@ -13,6 +13,7 @@ COMMENT=	Fast and flexible web server
 LICENSE=	GPLv2
 
 BROKEN_FreeBSD_12=	fails to configure: Unable to detect data struct is used by crypt_r
+BROKEN_FreeBSD_13=	fails to configure: Unable to detect data struct is used by crypt_r
 
 USE_GITHUB=	yes
 GH_PROJECT=	webserver

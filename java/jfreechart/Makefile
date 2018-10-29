@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/java/jfreechart/Makefile 472588 2018-06-17 02:18:23Z linimon $
+# $FreeBSD: head/java/jfreechart/Makefile 483126 2018-10-27 11:58:13Z linimon $
 
 PORTNAME=	jfreechart
 PORTVERSION=	1.0.17
@@ -10,8 +10,6 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Free Java class library for generating charts
 
 LICENSE=	LGPL21
-
-BROKEN_powerpc64=	fails to build: DirectionalGradientPaintTransformer.java:60: unmappable character for encoding ASCII
 
 RUN_DEPENDS=	${JAVALIBDIR}/jcommon.jar:java/jcommon
 

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-power-manager/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/sysutils/gnome-power-manager/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PORTNAME=	gnome-power-manager
 PORTVERSION=	3.26.0
@@ -40,4 +40,3 @@ post-patch:
 		${WRKSRC}/man/meson.build
 
 .include <bsd.port.mk>
-

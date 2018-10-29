@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/sysutils/tracker-miners/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/sysutils/tracker-miners/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	tracker-miners
 PORTVERSION=	2.0.5
+PORTREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	GNOME
 

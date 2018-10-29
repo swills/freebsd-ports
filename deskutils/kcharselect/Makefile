@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kcharselect/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/kcharselect/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kcharselect
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Character selector for KDE
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons crash  ecm bookmarks \
 		doctools i18n widgetsaddons xmlgui
 USE_QT=		core dbus gui widgets xml \

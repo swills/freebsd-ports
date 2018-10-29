@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/atom/Makefile 478967 2018-09-04 16:42:27Z yuri $
+# $FreeBSD: head/science/atom/Makefile 482633 2018-10-20 23:29:28Z yuri $
 
 PORTNAME=	atom
 DISTVERSION=	4.2.7-100
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	https://departments.icmab.es/leem/siesta/Pseudopotentials/Code/ \
 		https://departments.icmab.es/leem/siesta/Pseudopotentials/:lic
@@ -17,7 +17,7 @@ COMMENT=	Program for DFT calculations in atoms
 LICENSE=	ATOM_LICENSE
 LICENSE_NAME=	ATOM ACADEMIC LICENCE
 LICENSE_FILE=	${DISTDIR}/${DIST_SUBDIR}/atom_licence.html
-LICENSE_PERMS=	no-dist-mirror no-pkg-mirror no-pkg-sell no-auto-accept
+LICENSE_PERMS=	# none
 
 LIB_DEPENDS=	libGridXC.so:science/libgridxc \
 		libxc.so:science/libxc \

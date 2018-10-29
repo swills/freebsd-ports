@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/yank/Makefile 479280 2018-09-09 08:51:33Z tobik $
+# $FreeBSD: head/sysutils/yank/Makefile 483060 2018-10-26 21:56:10Z tobik $
 
 PORTNAME=	yank
 DISTVERSION=	1.0.0
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/mptre/yank/releases/download/v${DISTVERSION}/
 
@@ -11,10 +12,13 @@ COMMENT=	Yank terminal output to clipboard
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	xsel-conrad>=0:x11/xsel-conrad
 
 MAKE_ARGS=	MANPREFIX=${PREFIX}/man
 PLIST_FILES=	bin/yank \
 		man/man1/yank.1.gz
+
+OPTIONS_DEFINE=	X11
+
+X11_RUN_DEPENDS=	xsel-conrad>=0:x11/xsel-conrad
 
 .include <bsd.port.mk>

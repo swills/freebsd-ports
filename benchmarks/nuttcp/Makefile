@@ -1,9 +1,8 @@
 # Created by: Andy Clark <andrewclarkii@gmail.com>
-# $FreeBSD: head/benchmarks/nuttcp/Makefile 442883 2017-06-07 19:20:14Z pi $
+# $FreeBSD: head/benchmarks/nuttcp/Makefile 482629 2018-10-20 21:59:00Z pi $
 
 PORTNAME=	nuttcp
-PORTVERSION=	7.3.2
-PORTREVISION=	1
+PORTVERSION=	8.2.2
 CATEGORIES=	benchmarks net
 MASTER_SITES=	http://nuttcp.net/nuttcp/beta/ http://nuttcp.net/nuttcp/latest/:latest
 DISTFILES=	${PORTNAME}-${PORTVERSION}.c ${NUTTSCPDISTFILE} ${PORTNAME}.8:latest examples.txt:latest LICENSE:latest README:latest
@@ -19,7 +18,7 @@ NO_WRKSUBDIR=	yes
 USES=		shebangfix
 SHEBANG_FILES=	nuttscp
 
-NUTTSCPVERSION=	2.2
+NUTTSCPVERSION=	2.3
 NUTTSCPDISTFILE=nuttscp-${NUTTSCPVERSION}
 
 OPTIONS_DEFINE=	NUTTSCP

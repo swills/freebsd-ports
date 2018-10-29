@@ -1,8 +1,9 @@
 # Created by: Frederic Praca <frederic.praca@freebsd-fr.org>
-# $FreeBSD: head/devel/py-buildbot-worker/Makefile 474280 2018-07-09 18:50:28Z miwi $
+# $FreeBSD: head/devel/py-buildbot-worker/Makefile 483022 2018-10-26 12:40:24Z grembo $
 
 PORTNAME=	buildbot-worker
 PORTVERSION=	0.9.15
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,7 +23,7 @@ USES=		python
 USE_PYTHON=	autoplist distutils
 USE_RC_SUBR=	buildbot-worker
 
-SUB_LIST+=	PYTHON_CMD=${PYTHON_CMD}
+SUB_LIST+=	PYTHON_CMD=${PYTHON_CMD} PYTHON_VER=${PYTHON_VER}
 
 NO_ARCH=	yes
 

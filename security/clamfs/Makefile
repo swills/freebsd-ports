@@ -1,5 +1,5 @@
 # Created by: Mageirias Anastasios <anastmag@gmail.com>
-# $FreeBSD: head/security/clamfs/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/security/clamfs/Makefile 483351 2018-10-28 20:22:28Z linimon $
 
 PORTNAME=	clamfs
 PORTVERSION=	1.0.1
@@ -14,7 +14,6 @@ LICENSE=	GPLv2
 
 BROKEN_armv6=		fails to compile: ./config.hxx:52:17: expected namespace name
 BROKEN_armv7=		fails to compile: ./config.hxx:52:17: expected namespace name
-BROKEN_powerpc64=	fails to compile: g++6: unrecognized command line option '-mavx2'
 
 LIB_DEPENDS=	libccgnu2.so:devel/commoncpp \
 		libPocoNet.so:devel/poco-ssl \

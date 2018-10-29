@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/freera/Makefile 473321 2018-06-25 15:06:22Z amdmi3 $
+# $FreeBSD: head/games/freera/Makefile 483327 2018-10-28 19:31:37Z linimon $
 
 PORTNAME=	freera
 PORTVERSION=	080203
@@ -14,7 +14,7 @@ COMMENT=	Westwood red alert game engine
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/doc/gpl.txt
 
-USES=		scons
+USES=		compiler:c++11-lang scons
 USE_SDL=	sdl mixer
 
 WRKSRC=		${WRKDIR}/freera++

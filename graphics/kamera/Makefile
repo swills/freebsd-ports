@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kamera/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/kamera/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kamera
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	Digital camera manager for KDE
 
 LIB_DEPENDS=	libgphoto2.so:graphics/libgphoto2
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons doctools ecm i18n \
 		kio service widgetsaddons xmlgui
 USE_QT=		core dbus gui widgets xml \

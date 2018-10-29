@@ -1,5 +1,5 @@
 # Created by: lbr
-# $FreeBSD: head/www/p5-Catalyst-Runtime/Makefile 482524 2018-10-20 14:50:00Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Runtime/Makefile 482701 2018-10-21 16:51:25Z sunpoet $
 
 PORTNAME=	Catalyst-Runtime
 PORTVERSION=	5.90120
@@ -64,15 +64,14 @@ TEST_DEPENDS=	p5-Term-Size-Any>=0:devel/p5-Term-Size-Any \
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} < 502501
-BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 .endif
 

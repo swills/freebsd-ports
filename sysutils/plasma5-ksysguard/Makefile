@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/plasma5-ksysguard/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/plasma5-ksysguard/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PORTNAME=	ksysguard
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -26,4 +25,3 @@ INOTIFY_DESC=		Filesystem alteration notifications using inotify
 INOTIFY_LIB_DEPENDS=	libinotify.so:devel/libinotify
 
 .include <bsd.port.mk>
-

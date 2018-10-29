@@ -1,8 +1,10 @@
 # Created by: Franco Fichtner <franco@opnsense.org>
-# $FreeBSD: head/net/intel-em-kmod/Makefile 481560 2018-10-08 20:17:16Z skozlov $
+# $FreeBSD: head/net/intel-em-kmod/Makefile 483387 2018-10-29 14:58:44Z skozlov $
 
 PORTNAME=	em
 PORTVERSION=	7.7.4
+PORTREVISION=	1
+PORTEPOCH=	0
 MASTER_SITE_SUBDIR=	17509/eng
 
 MAINTAINER=	franco@opnsense.org

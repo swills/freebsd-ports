@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kmplot/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/math/kmplot/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kmplot
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	math kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Mathematical function plotter for KDE
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm emoticons guiaddons i18n \
 		iconthemes init itemmodels itemviews jobwidgets \

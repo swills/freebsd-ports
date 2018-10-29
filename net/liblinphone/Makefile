@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/liblinphone/Makefile 482343 2018-10-18 13:31:00Z tijl $
+# $FreeBSD: head/net/liblinphone/Makefile 482777 2018-10-22 19:23:52Z tijl $
 
 PORTNAME=	linphone
 PORTVERSION=	3.12.0
@@ -23,7 +23,8 @@ LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox \
 		libortp.so:net/ortp \
 		libsqlite3.so:databases/sqlite3
 
-USES=		cmake:outsource gnome iconv pkgconfig python:build
+USES=		cmake:outsource compiler:c++11-lib gnome iconv pkgconfig \
+		python:build
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 

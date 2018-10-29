@@ -1,8 +1,8 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-next-kmod/Makefile 477850 2018-08-23 03:48:53Z jmd $
+# $FreeBSD: head/graphics/drm-next-kmod/Makefile 483129 2018-10-27 12:18:41Z zeising $
 
 PORTNAME=	drm-next-kmod
-PORTVERSION=	4.11.g20180822
+PORTVERSION=	4.11.g20181027
 CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -25,7 +25,7 @@ USES=		kmod uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-drm
-GH_TAGNAME=	22d72c2
+GH_TAGNAME=	b545cc4
 
 .include <bsd.port.options.mk>
 

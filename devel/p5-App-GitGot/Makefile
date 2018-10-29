@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-App-GitGot/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-App-GitGot/Makefile 482692 2018-10-21 16:50:13Z sunpoet $
 
 PORTNAME=	App-GitGot
 PORTVERSION=	1.336
@@ -37,15 +37,14 @@ TEST_DEPENDS=	p5-Test-Class>=0:devel/p5-Test-Class \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-File>=0:devel/p5-Test-File
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} < 502501
-BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 RUN_DEPENDS+=	p5-Scalar-List-Utils>=1.45:lang/p5-Scalar-List-Utils
 .endif
 

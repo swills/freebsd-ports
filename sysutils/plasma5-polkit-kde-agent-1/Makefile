@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/plasma5-polkit-kde-agent-1/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/plasma5-polkit-kde-agent-1/Makefile 483271 2018-10-28 10:59:23Z tcberner $
 
 PORTNAME=	polkit-kde-agent-1
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

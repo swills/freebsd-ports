@@ -1,12 +1,11 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-prefork/Makefile 476342 2018-08-04 09:07:57Z amdmi3 $
+# $FreeBSD: head/devel/p5-prefork/Makefile 483099 2018-10-27 02:25:01Z wen $
 
 PORTNAME=	prefork
-PORTVERSION=	1.04
-PORTREVISION=	2
+PORTVERSION=	1.05
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:ADAMK
+MASTER_SITE_SUBDIR=	CPAN:ETHER
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org

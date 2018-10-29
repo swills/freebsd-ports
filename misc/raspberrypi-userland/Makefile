@@ -1,5 +1,5 @@
 # Created by: Mikael Urankar <mikael.urankar@gmail.com>
-# $FreeBSD: head/misc/raspberrypi-userland/Makefile 481796 2018-10-11 09:14:11Z manu $
+# $FreeBSD: head/misc/raspberrypi-userland/Makefile 483208 2018-10-28 00:52:17Z jbeich $
 
 PORTNAME=	raspberrypi-userland
 PORTVERSION=	20161026
@@ -12,7 +12,7 @@ LICENSE=	BSD3CLAUSE
 
 ONLY_FOR_ARCHS=	armv6 armv7
 
-CONFLICTS_INSTALL=	libglesv2 libEGL
+CONFLICTS_INSTALL=	mesa-libs
 
 USES=		cmake:outsource pkgconfig shebangfix
 

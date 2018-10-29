@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/wlc/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/wlc/Makefile 483353 2018-10-28 20:35:26Z zeising $
 
 PORTNAME=	wlc
 PORTVERSION=	0.0.8
@@ -7,6 +7,9 @@ CATEGORIES=	x11-toolkits wayland
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Wayland compositor library
+
+DEPRECATED=	Deprecated upstream
+EXPIRATION_DATE=	2018-12-31
 
 LICENSE=	MIT
 LICENSE_FILES=	${WRKSRC}/LISENSE

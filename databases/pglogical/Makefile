@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pglogical/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/databases/pglogical/Makefile 483142 2018-10-27 14:49:17Z matthew $
 
 PORTNAME=	pglogical
-PORTVERSION=	2.2.0
+PORTVERSION=	2.2.1
 CATEGORIES=	databases
 
 MAINTAINER=	matthew@FreeBSD.org

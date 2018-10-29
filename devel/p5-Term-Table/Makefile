@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Term-Table/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Term-Table/Makefile 483051 2018-10-26 21:19:39Z sunpoet $
 
 PORTNAME=	Term-Table
 PORTVERSION=	0.012
@@ -18,8 +18,9 @@ BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Importer>=0.024:devel/p5-Importer
 TEST_DEPENDS=	p5-Test-Simple>=1.302097:devel/p5-Test-Simple
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

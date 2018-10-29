@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rspec-rails/Makefile 476527 2018-08-06 19:52:50Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rspec-rails/Makefile 482923 2018-10-24 17:57:57Z sunpoet $
 
 PORTNAME=	rspec-rails
-PORTVERSION=	3.8.0
+PORTVERSION=	3.8.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -20,8 +20,9 @@ RUN_DEPENDS=	rubygem-actionpack4>=3.0:www/rubygem-actionpack4 \
 		rubygem-rspec-mocks>=${PORTVERSION:R}.0:devel/rubygem-rspec-mocks \
 		rubygem-rspec-support>=${PORTVERSION:R}.0:devel/rubygem-rspec-support
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

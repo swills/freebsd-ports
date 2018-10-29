@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/gnustep-base/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/lang/gnustep-base/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	gnustep-base
 PORTVERSION=	1.25.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang devel gnustep
 MASTER_SITES=	GNUSTEP/core
 

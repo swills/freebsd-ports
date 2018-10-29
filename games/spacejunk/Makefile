@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/spacejunk/Makefile 473561 2018-06-29 17:13:09Z amdmi3 $
+# $FreeBSD: head/games/spacejunk/Makefile 483328 2018-10-28 19:35:19Z linimon $
 
 PORTNAME=	spacejunk
 PORTVERSION=	1.0.5
@@ -16,11 +16,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BROKEN_aarch64=	Fails to compile: error: _compile_time_assert__ declared as an array with a negative size
 BROKEN_sparc64=	Doesn't compile on sparc64
 
-USES=		localbase
+USES=		dos2unix localbase
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl mixer image
 
-CXXFLAGS+=	-Wno-c++11-narrowing
 CXXFLAGS+=	-O0  # XXX: segfaults with optimization, need to investigate
 
 SUB_FILES=	spacejunk

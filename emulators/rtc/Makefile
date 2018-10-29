@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/emulators/rtc/Makefile 464924 2018-03-18 15:26:29Z linimon $
+# $FreeBSD: head/emulators/rtc/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	rtc
 PORTVERSION=	2004.02.24.1
@@ -12,6 +12,7 @@ MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Kernel module which provides /dev/rtc device support
 
 BROKEN_FreeBSD_12=	fails to compile: rtc.c:166:2: implicit declaration of function 'MALLOC' is invalid in C99
+BROKEN_FreeBSD_13=	fails to compile: rtc.c:166:2: implicit declaration of function 'MALLOC' is invalid in C99
 
 WRKSRC=		${WRKDIR}/files
 

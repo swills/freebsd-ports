@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 481176 2018-10-03 18:15:01Z brooks $
+# $FreeBSD: head/devel/llvm-devel/Makefile 482991 2018-10-25 20:32:12Z brooks $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.0.d${SNAPDATE}
@@ -338,6 +338,8 @@ _COMPILER_RT_LIBS= \
 	libclang_rt.cfi_diag-x86_64.a \
 	libclang_rt.dd-x86_64.a \
 	libclang_rt.dyndd-x86_64.so \
+	libclang_rt.esan-x86_64.a \
+	libclang_rt.esan-x86_64.a.syms \
 	libclang_rt.fuzzer-x86_64.a \
 	libclang_rt.fuzzer_no_main-x86_64.a \
 	libclang_rt.lsan-x86_64.a \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 482430 2018-10-19 14:34:16Z antoine $
+# $FreeBSD: head/sysutils/Makefile 482877 2018-10-24 00:55:35Z linimon $
 #
 
     COMMENT = System utilities
@@ -1000,6 +1000,7 @@
     SUBDIR += py-mqttwarn
     SUBDIR += py-nagiosplugin
     SUBDIR += py-nomad
+    SUBDIR += py-packet-python
     SUBDIR += py-pkginfo
     SUBDIR += py-ploy
     SUBDIR += py-ploy_ansible
@@ -1155,6 +1156,7 @@
     SUBDIR += rubygem-vagrant-bhyve
     SUBDIR += rubygem-vagrant-mutate
     SUBDIR += rubygem-vagrant-vbguest
+    SUBDIR += rubygem-vagrant_cloud
     SUBDIR += rubygem-vmstat
     SUBDIR += rubygem-win32-file
     SUBDIR += rubygem-win32-file-security

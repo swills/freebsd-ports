@@ -1,17 +1,22 @@
-# $FreeBSD: head/japanese/font-ipaex/Makefile 397899 2015-09-25 22:02:16Z hrs $
+# $FreeBSD: head/japanese/font-ipaex/Makefile 483373 2018-10-29 08:15:35Z meta $
 
 PORTNAME=	ipaex
-PORTVERSION=	00201
-PORTREVISION=	8
+PORTVERSION=	00301
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	http://info.openlab.ipa.go.jp/ipafont/fontdata/7bf84182a04a9632268dbcb03f100d05/
+MASTER_SITES=	https://oscdl.ipa.go.jp/IPAexfont/
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	IPAexfont${PORTVERSION}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	IPAex Japanese fonts
 
+LICENSE=	IPA_Font_License_Agreement_v1.0
+LICENSE_NAME=	IPA Font License Agreement v1.0
+LICENSE_FILE=	${WRKSRC}/IPA_Font_License_Agreement_v1.0.txt
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
 USES=		fonts:fc zip
+
 FONTNAME=	OTF
 NO_ARCH=	yes
 NO_BUILD=	yes

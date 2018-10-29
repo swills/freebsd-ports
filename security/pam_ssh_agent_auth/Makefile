@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/pam_ssh_agent_auth/Makefile 477670 2018-08-20 18:56:19Z pi $
+# $FreeBSD: head/security/pam_ssh_agent_auth/Makefile 482655 2018-10-21 08:29:04Z madpilot $
 
 PORTNAME=	pam_ssh_agent_auth
 PORTVERSION=	0.10.3
@@ -16,10 +16,12 @@ BROKEN_powerpc64=	fails to compile: ed25519-donna-portable.h: warning: ALIGN red
 
 USES=		perl5 ssl tar:bzip2
 USE_PERL5=	build
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_func_strnvis=no PERL=/usr/bin/false
 CONFIGURE_ARGS=	--libexecdir=${LOCALBASE}/lib \
-		--with-ssl-dir=${OPENSSLBASE}
+		--with-ssl-dir=${OPENSSLBASE} \
+		--without-openssl-header-check
 
 PLIST_FILES=	lib/pam_ssh_agent_auth.so \
 		man/man8/pam_ssh_agent_auth.8.gz

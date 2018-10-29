@@ -1,8 +1,9 @@
 # Created by: Jan-Peter Koopmann <j.koopmann@seceidos.de>
-# $FreeBSD: head/mail/mailscanner/Makefile 479484 2018-09-10 21:40:32Z crees $
+# $FreeBSD: head/mail/mailscanner/Makefile 483149 2018-10-27 16:55:44Z crees $
 
 PORTNAME=	MailScanner
-PORTVERSION=	5.1.1
+PORTVERSION=	5.1.2
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	https://s3.amazonaws.com/msv5/release/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-${PATCHLEVEL}.nix
@@ -160,6 +161,8 @@ do-build:
 
 	@${REINPLACE_CMD} -e 's,/usr/local,${LOCALBASE},g' \
 		${WRKSRC}/usr/lib/${PORTNAME}/wrapper/*
+	@${REINPLACE_CMD} -e 's,/usr$$,&/local,' \
+		${WRKSRC}/etc/${PORTNAME}/virus.scanners.conf
 	@${FIND} ${WRKSRC} \( -name "*.bak" -or -name "*.orig" \) -delete
 
 do-install:

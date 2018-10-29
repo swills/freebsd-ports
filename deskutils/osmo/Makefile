@@ -1,9 +1,9 @@
 # Created by: Charlie Kester <corky1951#comcast.net>
-# $FreeBSD: head/deskutils/osmo/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/deskutils/osmo/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	osmo
 PORTVERSION=	0.4.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/${PORTNAME}-pim/${PORTNAME}-pim/${PORTNAME}-${PORTVERSION}
 

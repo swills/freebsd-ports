@@ -1,8 +1,8 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/net/py-kafka-python/Makefile 466777 2018-04-08 08:21:34Z yuri $
+# $FreeBSD: head/net/py-kafka-python/Makefile 483070 2018-10-27 00:51:27Z swills $
 
 PORTNAME=	kafka-python
-DISTVERSION=	1.4.2
+DISTVERSION=	1.4.3
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,6 +14,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
+
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

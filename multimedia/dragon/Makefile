@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/dragon/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/multimedia/dragon/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	dragon
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KDE multimedia player with a focus on simplicity
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons crash \
 		dbusaddons doctools ecm  kio service sonnet textwidgets i18n \
 		iconthemes jobwidgets notifications parts solid widgetsaddons \

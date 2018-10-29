@@ -1,9 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/databases/py-aioredis/Makefile 474065 2018-07-07 09:10:19Z farrokhi $
+# $FreeBSD: head/databases/py-aioredis/Makefile 483006 2018-10-26 05:46:02Z farrokhi $
 
 PORTNAME=	aioredis
-PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTVERSION=	1.2.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

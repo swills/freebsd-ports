@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/glog/Makefile 450433 2017-09-23 14:09:55Z sunpoet $
+# $FreeBSD: head/devel/glog/Makefile 482706 2018-10-21 16:52:06Z sunpoet $
 
 PORTNAME=	glog
 PORTVERSION=	0.3.5
@@ -16,12 +16,14 @@ LIB_DEPENDS=	libgflags.so:devel/gflags
 
 OPTIONS_DEFINE=	DOCS
 
+USES=		compiler:c++11-lang libtool localbase pathfix
+
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 LDFLAGS+=	-lexecinfo
 TEST_TARGET=	check
+USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
-USES=		libtool localbase pathfix
 
 GH_ACCOUNT=	google
 USE_GITHUB=	yes

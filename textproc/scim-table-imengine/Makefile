@@ -1,5 +1,5 @@
 # Created by: Jie Gao <gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/textproc/scim-table-imengine/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/scim-table-imengine/Makefile 483257 2018-10-28 09:58:42Z linimon $
 
 PORTNAME=	scim-table-imengine
 PORTVERSION=	0.5.10
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	scim:textproc/scim
 RUN_DEPENDS=	scim:textproc/scim
 
 GNU_CONFIGURE=	yes
-USES=		gettext gmake libtool:keepla pkgconfig
+USES=		compiler:c++11-lang gettext gmake libtool:keepla pkgconfig
 
 CONFIGURE_ARGS=	--disable-skim-support
 CPPFLAGS+=	-I${LOCALBASE}/include -D__STDC_ISO_10646__

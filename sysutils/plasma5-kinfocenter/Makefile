@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/plasma5-kinfocenter/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/plasma5-kinfocenter/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PORTNAME=	kinfocenter
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -35,4 +34,3 @@ post-install:
 	${REINPLACE_CMD} -i "" -e "s#%%DATADIR%%#${DATADIR}#"  ${STAGEDIR}/${PREFIX}/etc/xdg/kcm-about-distrorc
 
 .include <bsd.port.mk>
-

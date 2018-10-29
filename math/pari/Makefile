@@ -1,5 +1,5 @@
 # Created by: Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
-# $FreeBSD: head/math/pari/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/math/pari/Makefile 482678 2018-10-21 14:43:53Z yuri $
 
 PORTNAME=	pari
 DISTVERSION=	2.11.0
@@ -16,7 +16,6 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_mips64=		fails to link: mpker.c:(.text+0x33bc): relocation truncated to fit: R_MIPS_TLS_GD against 'PARI_SIGINT_block'
-BROKEN_powerpc64=	fails to link: intnum.o: relocation truncated to fit: R_PPC64_GOT_TLSGD16 against symbol 'avma' defined in .tbss section in init.o
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 
@@ -24,6 +23,7 @@ USES=		perl5 readline
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 HAS_CONFIGURE=	yes
+CFLAGS_powerpc64=	-mminimal-toc
 CONFIGURE_SCRIPT=	Configure
 CONFIGURE_ARGS=	--mandir=${MANPREFIX}/man/man1 \
 		--prefix=${PREFIX} \

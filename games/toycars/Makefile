@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/toycars/Makefile 469960 2018-05-14 19:32:09Z amdmi3 $
+# $FreeBSD: head/games/toycars/Makefile 483330 2018-10-28 19:41:53Z linimon $
 
 PORTNAME=	toycars
 PORTVERSION=	0.3.10
@@ -15,12 +15,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 
-USES=		gmake localbase
+USES=		gl gmake localbase
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 USE_SDL=	image sdl
 USE_GL=		gl glu
-
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/toycars \
 		bin/toycars_track_editor \

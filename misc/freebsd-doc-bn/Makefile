@@ -1,5 +1,5 @@
 # Created by: Marc Fonvieille <blackend@FreeBSD.org>
-# $FreeBSD: head/misc/freebsd-doc-bn/Makefile 459649 2018-01-22 13:07:46Z blackend $
+# $FreeBSD: head/misc/freebsd-doc-bn/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 CATEGORIES=	misc docs
 PKGNAMEPREFIX=	bn-
@@ -17,4 +17,3 @@ DOCLANG=	bn_BD.UTF-8
 .if ${PORT_OPTIONS:MPDF} || ${PORT_OPTIONS:MPS}
 BUILD_DEPENDS+=	${LOCALBASE}/share/fonts/Lohit/Lohit-Bengali.ttf:x11-fonts/lohit
 .endif
-

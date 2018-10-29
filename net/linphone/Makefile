@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/linphone/Makefile 482377 2018-10-18 20:23:18Z tijl $
+# $FreeBSD: head/net/linphone/Makefile 482777 2018-10-22 19:23:52Z tijl $
 
 PORTNAME=	linphone
 PORTVERSION=	4.1.1
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox \
 		libbelcard.so:deskutils/belcard \
 		liblinphone++.so:net/liblinphone
 
-USES=		cmake:outsource pkgconfig qt:5
+USES=		cmake:outsource compiler:c++11-lib pkgconfig qt:5
 USE_QT= 	buildtools_build concurrent core gui linguisttools network \
 		qmake_build qml quick quickcontrols2 speech svg testlib widgets
 

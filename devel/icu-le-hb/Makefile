@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/icu-le-hb/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/icu-le-hb/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	icu-le-hb
 DISTVERSION=	1.0.3-3
 DISTVERSIONSUFFIX=	-gb8a3163
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel print
 
 MAINTAINER=	office@FreeBSD.org

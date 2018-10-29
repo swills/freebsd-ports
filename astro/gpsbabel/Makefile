@@ -1,5 +1,5 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/astro/gpsbabel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/gpsbabel/Makefile 483277 2018-10-28 11:21:16Z linimon $
 
 PORTNAME=	gpsbabel
 DISTVERSIONPREFIX=	${PORTNAME}_
@@ -19,10 +19,10 @@ USE_GITHUB=	yes
 
 CONFLICTS=	gpsbabel14-[0-9]*
 
+USES=		compiler:c++11-lang localbase qt:5 qt:5
 USE_QT=		core qmake_build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-zlib=system
-USES=		localbase qt:5 qt:5
 
 OPTIONS_DEFINE=	GUI
 OPTIONS_SUB=	yes

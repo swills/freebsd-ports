@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/relx/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/relx/Makefile 482794 2018-10-22 21:36:48Z olgeni $
 
 PORTNAME=	relx
-PORTVERSION=	3.26.0
+PORTVERSION=	3.27.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 MASTER_SITES+=	LOCAL/olgeni:deps \
@@ -27,10 +27,10 @@ PLIST_SUB=	VERSION="${PORTVERSION}"
 USE_GITHUB=	yes
 GH_ACCOUNT=	erlware
 
-CACHE_VERSION=	19
+CACHE_VERSION=	20
 # from rebar.config
-REBAR_DEPS=	bbmustache-1.0.4 \
-		cf-0.2.2 \
+REBAR_DEPS=	bbmustache-1.5.0 \
+		cf-0.3.1 \
 		erlware_commons-1.2.0 \
 		getopt-1.0.1 \
 		providers-1.7.0

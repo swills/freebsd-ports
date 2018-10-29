@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/lang/luajit/Makefile 479376 2018-09-10 09:08:19Z amdmi3 $
+# $FreeBSD: head/lang/luajit/Makefile 483372 2018-10-29 07:14:38Z linimon $
 
 PORTNAME=	luajit
 DISTVERSION=	2.0.5
@@ -15,8 +15,8 @@ LICENSE=	MIT PD
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-BROKEN_aarch64=		fails to compile: lj_arch.h:55:2: No support for this architecture (yet)
-BROKEN_powerpc64=	not ported to powerpc64 upstream
+IGNORE_aarch64=		fails to compile: lj_arch.h:55:2: No support for this architecture (yet)
+IGNORE_powerpc64=	fails to compile: lj_arch.h:346:2: No support for PowerPC 64 bit mode
 
 WRKSRC=		${WRKDIR}/LuaJIT-${DISTVERSION}
 USES=		gmake

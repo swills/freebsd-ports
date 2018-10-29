@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/libktorrent/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/libktorrent/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	libktorrent
 DISTVERSION=	2.1.0
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgmp.so:math/gmp \
 		libqca-qt5.so:devel/qca@qt5
 
-USES=		cmake:outsource gettext kde:5 qt:5
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5
 USE_KDE=	archive completion config coreaddons crash ecm i18n \
 		jobwidgets kio service solid widgetsaddons
 USE_QT=		core gui network testlib xml \

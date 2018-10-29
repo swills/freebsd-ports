@@ -1,8 +1,10 @@
 # Created by: Sergey Kozlov <skozlov@FreeBSD.org>
-# $FreeBSD: head/net/intel-ix-kmod/Makefile 481900 2018-10-12 13:12:52Z skozlov $
+# $FreeBSD: head/net/intel-ix-kmod/Makefile 483387 2018-10-29 14:58:44Z skozlov $
 
 PORTNAME=	ix
 PORTVERSION=	3.3.6
+PORTREVISION=	1
+PORTEPOCH=	0
 MASTER_SITE_SUBDIR=	14688/eng
 
 MAINTAINER=	freebsd@intel.com

@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/baikal/Makefile 438451 2017-04-13 15:44:36Z gahr $
+# $FreeBSD: head/www/baikal/Makefile 482896 2018-10-24 09:29:15Z gahr $
 
 PORTNAME=	baikal
 PORTVERSION=	0.4.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/fruux/Baikal/releases/download/${PORTVERSION}/
 

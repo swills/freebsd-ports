@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/libtheora/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/multimedia/libtheora/Makefile 482962 2018-10-25 09:30:12Z amdmi3 $
 
 PORTNAME=	libtheora
 PORTVERSION=	1.1.1
@@ -17,13 +17,12 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis
 
+USES=		libtool localbase pathfix tar:bzip2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-sdltest \
 		--disable-examples
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
-USES=		libtool pathfix tar:bzip2
+TEST_TARGET=	check
 USE_LDCONFIG=	yes
 
 .include <bsd.port.options.mk>

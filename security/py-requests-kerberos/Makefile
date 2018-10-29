@@ -1,9 +1,9 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/security/py-requests-kerberos/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-requests-kerberos/Makefile 482608 2018-10-20 17:51:36Z dvl $
 
 PORTNAME=	requests-kerberos
 PORTVERSION=	0.11.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +17,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>1.1.0:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}kerberos>1.1.1:security/py-kerberos@${PY_FLAVOR}
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	distutils autoplist
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

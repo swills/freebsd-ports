@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openlierox/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/openlierox/Makefile 483083 2018-10-27 01:10:05Z jbeich $
 
 PORTNAME=	openlierox
 DISTVERSION=	0.58_rc3
-PORTREVISION=	17
+PORTREVISION=	18
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/OpenLieroX%20${DISTVERSION:C/_/%20/}
@@ -12,8 +12,7 @@ DISTNAME=	OpenLieroX_${DISTVERSION}.src
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Extremely addictive realtime worms shoot-em-up
 
-LIB_DEPENDS=	libboost_signals.so:devel/boost-libs \
-		libcurl.so:ftp/curl
+LIB_DEPENDS=	libcurl.so:ftp/curl
 
 USES=		tar:bzip2 cmake localbase pkgconfig
 USE_SDL=	sdl image

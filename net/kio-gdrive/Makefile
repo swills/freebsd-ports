@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kio-gdrive/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/kio-gdrive/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PORTNAME=	kio-gdrive
 DISTVERSION=	1.2.1
@@ -26,4 +26,3 @@ USE_QT=		core dbus gui network widgets xml \
 		buildtools_build  qmake_build
 
 .include <bsd.port.mk>
-

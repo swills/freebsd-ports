@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql56-client/Makefile 481608 2018-10-09 07:49:27Z mmokhi $
+# $FreeBSD: head/databases/mysql56-client/Makefile 483357 2018-10-28 21:26:19Z mmokhi $
 
 PORTNAME=	mysql
-PORTREVISION=	1
+PORTREVISION=	0
 PKGNAMESUFFIX=	56-client
 
 COMMENT=	Multithreaded SQL database (client)

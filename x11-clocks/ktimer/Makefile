@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/ktimer/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/x11-clocks/ktimer/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	ktimer
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	x11-clocks kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Countdown launcher for KDE
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		dbusaddons doctools ecm i18n iconthemes jobwidgets kio \
 		notifications service widgetsaddons xmlgui

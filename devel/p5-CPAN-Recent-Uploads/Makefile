@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Recent-Uploads/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-CPAN-Recent-Uploads/Makefile 483198 2018-10-27 23:23:48Z sunpoet $
 
 PORTNAME=	CPAN-Recent-Uploads
-PORTVERSION=	0.14
+PORTVERSION=	0.16
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:BINGOS
@@ -19,10 +19,12 @@ BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-URI>=1.56:net/p5-URI \
 		p5-YAML-LibYAML>=0.64:textproc/p5-YAML-LibYAML
 TEST_DEPENDS=	p5-HTTP-Daemon>=0:www/p5-HTTP-Daemon \
-		p5-HTTP-Message>=0:www/p5-HTTP-Message
+		p5-HTTP-Message>=0:www/p5-HTTP-Message \
+		p5-Test-RequiresInternet>=0:devel/p5-Test-RequiresInternet
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

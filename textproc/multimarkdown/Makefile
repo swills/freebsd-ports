@@ -1,12 +1,12 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/multimarkdown/Makefile 481233 2018-10-04 16:22:30Z fernape $
+# $FreeBSD: head/textproc/multimarkdown/Makefile 482811 2018-10-23 06:59:48Z egypcio $
 
 PORTNAME=	multimarkdown
 DISTVERSION=	6.4.0
 CATEGORIES=	textproc
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@googlemail.com
 COMMENT=	Extended Markdown processor with more features, written in C
 
 LICENSE=	BSD3CLAUSE MIT GPLv2+ ZLIB
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl
 
 USES=		cmake compiler:c11 localbase:ldflags
 USE_GITHUB=	yes
+
 GH_ACCOUNT=	fletcher
 GH_PROJECT=	MultiMarkdown-6
 

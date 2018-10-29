@@ -1,8 +1,8 @@
 # Created by: Koichiro IWAO <meta@FreeBSD.org>
-# $FreeBSD: head/japanese/font-koruri/Makefile 465067 2018-03-20 06:16:18Z meta $
+# $FreeBSD: head/japanese/font-koruri/Makefile 482822 2018-10-23 09:27:15Z meta $
 
 PORTNAME=	koruri
-PORTVERSION=	20161105
+PORTVERSION=	20180915
 DISTVERSIONPREFIX=	Koruri-
 CATEGORIES=	japanese x11-fonts
 PKGNAMEPREFIX=	ja-font-

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-click-completion/Makefile 478833 2018-09-02 23:57:15Z sunpoet $
+# $FreeBSD: head/devel/py-click-completion/Makefile 483179 2018-10-27 22:51:41Z matthew $
 
 PORTNAME=	click-completion
-PORTVERSION=	0.4.1
+PORTVERSION=	0.5.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

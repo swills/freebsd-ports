@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio-client/Makefile 481403 2018-10-06 22:43:52Z amdmi3 $
+# $FreeBSD: head/www/minio-client/Makefile 482850 2018-10-23 17:37:14Z feld $
 
 PORTNAME=	minio-client
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -8,8 +8,6 @@ MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Replacement for ls, cp, mkdir, diff and rsync commands for filesystems
 
 LICENSE=	APACHE20
-
-BROKEN_amd64=	github.com/minio/mc/vendor/golang.org/x/crypto/blake2b.supportsAVX2: relocation target runtime.support_avx2 not defined
 
 BUILD_DEPENDS=	go>=1.9.4:lang/go \
 		bash:shells/bash
@@ -29,10 +27,10 @@ MC=	${PORTNAME}
 USE_GITHUB=	yes
 GH_ACCOUNT=	minio
 GH_PROJECT=	mc
-GH_TAGNAME=	RELEASE.2018-06-09T02-18-09Z
+GH_TAGNAME=	RELEASE.2018-10-18T00-40-05Z
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${GH_PROJECT}
 MAKE_ENV=	GOPATH=${WRKSRC} GOROOT=${LOCALBASE}/go
-COMMIT_ID=	8cf797da5fc629af4f7850858b611fc980478e2f
+COMMIT_ID=	0dd32c1b26f05e7f94f76f2ceb62b5229836b009
 
 PLIST_FILES=	bin/${MC}
 

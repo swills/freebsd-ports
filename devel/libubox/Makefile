@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/libubox/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/devel/libubox/Makefile 482806 2018-10-23 00:28:14Z mm $
 
 PORTNAME=	libubox
 PORTVERSION=	20180803
@@ -14,6 +14,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
 USES=		cmake pkgconfig lua:51
+USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	mmatuska
 GH_TAGNAME=	c83a84af

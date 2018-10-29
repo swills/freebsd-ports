@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 482343 2018-10-18 13:31:00Z tijl $
+# $FreeBSD: head/textproc/Makefile 482908 2018-10-24 14:10:56Z dbn $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -10,6 +10,7 @@
     SUBDIR += R-cran-XML
     SUBDIR += R-cran-bibtex
     SUBDIR += R-cran-brew
+    SUBDIR += R-cran-cellranger
     SUBDIR += R-cran-formatR
     SUBDIR += R-cran-highr
     SUBDIR += R-cran-htmltools
@@ -17,7 +18,10 @@
     SUBDIR += R-cran-openxlsx
     SUBDIR += R-cran-pystr
     SUBDIR += R-cran-readr
+    SUBDIR += R-cran-readxl
     SUBDIR += R-cran-rematch
+    SUBDIR += R-cran-rex
+    SUBDIR += R-cran-rio
     SUBDIR += R-cran-rmarkdown
     SUBDIR += R-cran-stringi
     SUBDIR += R-cran-stringr
@@ -248,10 +252,8 @@
     SUBDIR += hr-aspell
     SUBDIR += hs-Diff
     SUBDIR += hs-HStringTemplate
-    SUBDIR += hs-HaXml
     SUBDIR += hs-appar
     SUBDIR += hs-attoparsec
-    SUBDIR += hs-attoparsec-enumerator
     SUBDIR += hs-attoparsec-iso8601
     SUBDIR += hs-bencode
     SUBDIR += hs-blaze-html

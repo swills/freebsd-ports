@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/fractal/Makefile 481921 2018-10-12 19:01:02Z jbeich $
+# $FreeBSD: head/net-im/fractal/Makefile 482993 2018-10-25 21:59:37Z jbeich $
 
 PORTNAME=	fractal
 DISTVERSION=	3.30.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 MASTER_SITES=	https://gitlab.gnome.org/World/fractal/uploads/${GL_HASH}/
 

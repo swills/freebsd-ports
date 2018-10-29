@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/erlang-java/Makefile 480511 2018-09-23 14:55:00Z olgeni $
+# $FreeBSD: head/lang/erlang-java/Makefile 483029 2018-10-26 13:20:05Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	19.3.6.11
+PORTVERSION=	19.3.6.12
 PORTEPOCH=	1
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
@@ -20,7 +20,7 @@ PATCHFILES=	patch-otp-19.3.1 patch-otp-19.3.2 patch-otp-19.3.3 \
 		patch-otp-19.3.6.1 patch-otp-19.3.6.2 patch-otp-19.3.6.3 \
 		patch-otp-19.3.6.4 patch-otp-19.3.6.5 patch-otp-19.3.6.6 \
 		patch-otp-19.3.6.7 patch-otp-19.3.6.8 patch-otp-19.3.6.9 \
-		patch-otp-19.3.6.10 patch-otp-19.3.6.11
+		patch-otp-19.3.6.10 patch-otp-19.3.6.11 patch-otp-19.3.6.12
 
 MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang interface for Java

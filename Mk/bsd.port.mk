@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 481023 2018-10-01 09:53:10Z rene $
+# $FreeBSD: head/Mk/bsd.port.mk 482668 2018-10-21 12:02:35Z rene $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2191,7 +2191,6 @@ PLIST?=			${PKGDIR}/pkg-plist
 PKGHELP?=		${PKGDIR}/pkg-help
 PKGINSTALL?=	${PKGDIR}/pkg-install
 PKGDEINSTALL?=	${PKGDIR}/pkg-deinstall
-PKGREQ?=		${PKGDIR}/pkg-req
 PKGMESSAGE?=	${PKGDIR}/pkg-message
 _PKGMESSAGES+=	${PKGMESSAGE}
 
@@ -2202,7 +2201,7 @@ PKG_SUFX?=		.tar
 .else
 PKG_SUFX?=		.txz
 .endif
-# where pkg_add records its dirty deeds.
+# where pkg(8) stores its data
 PKG_DBDIR?=		/var/db/pkg
 
 ALL_TARGET?=		all

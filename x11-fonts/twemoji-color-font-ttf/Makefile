@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/twemoji-color-font-ttf/Makefile 482328 2018-10-18 07:13:32Z ehaupt $
+# $FreeBSD: head/x11-fonts/twemoji-color-font-ttf/Makefile 482907 2018-10-24 13:51:10Z ehaupt $
 
 PORTNAME=	twemoji-color-font-ttf
 PORTVERSION=	1.4
@@ -12,8 +12,8 @@ COMMENT=	Color emoji font using Twitter Unicode 10
 
 LICENSE=	CC-BY-4.0 MIT
 LICENSE_COMB=	multi
-LICENSE_FILE_CC-BY-4.0+=	${WRKSRC}/LICENSE-CC-BY.txt
-LICENSE_FILE_MIT+=		${WRKSRC}/LICENSE-MIT.txt
+LICENSE_FILE_CC-BY-4.0=		${WRKSRC}/LICENSE-CC-BY.txt
+LICENSE_FILE_MIT=		${WRKSRC}/LICENSE-MIT.txt
 
 USES=		fonts
 

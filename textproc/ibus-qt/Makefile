@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/textproc/ibus-qt/Makefile 482453 2018-10-19 19:44:06Z jbeich $
+# $FreeBSD: head/textproc/ibus-qt/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	ibus-qt
 PORTVERSION=	1.3.3
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/releases/download/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-Source

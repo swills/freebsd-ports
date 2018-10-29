@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/archivers/quazip/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/archivers/quazip/Makefile 482606 2018-10-20 17:01:44Z tcberner $
 
 PORTNAME=	quazip
 DISTVERSION=	0.7.3
@@ -24,7 +24,7 @@ USES+=		qt:4
 USE_QT=		corelib moc_build network_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DBUILD_WITH_QT4:BOOL=TRUE
 .  else
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=		core buildtools_build qmake_build
 CMAKE_ARGS=	-DBUILD_WITH_QT4:BOOL=FALSE
 QTVER_SUFFIX=	5

@@ -1,10 +1,10 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/websocat/Makefile 481921 2018-10-12 19:01:02Z jbeich $
+# $FreeBSD: head/www/websocat/Makefile 482993 2018-10-25 21:59:37Z jbeich $
 
 PORTNAME=	websocat
 DISTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 
 MAINTAINER=	osa@FreeBSD.org

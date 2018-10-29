@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/dee/Makefile 473551 2018-06-29 14:22:11Z jbeich $
+# $FreeBSD: head/devel/dee/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	dee
 PORTVERSION=	1.2.7
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	devel
 MASTER_SITES=	https://launchpadlibrarian.net/151383425/ \
 	https://launchpad.net/${PORTNAME}/1.0/${PORTVERSION}/+download/

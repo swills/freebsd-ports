@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/filelight/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/filelight/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	filelight
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,8 @@ BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-
 
 CONFLICTS_INSTALL=      ${PORTNAME}-kde4*
 
-USES=		cmake:outsource desktop-file-utils gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang desktop-file-utils gettext \
+		kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons doctools \
 		ecm i18n jobwidgets kio parts service solid sonnet textwidgets \
 		widgetsaddons xmlgui

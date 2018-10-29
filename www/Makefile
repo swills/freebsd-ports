@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 482552 2018-10-20 14:56:29Z zi $
+# $FreeBSD: head/www/Makefile 482825 2018-10-23 10:15:30Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -258,8 +258,6 @@
     SUBDIR += hs-cookie
     SUBDIR += hs-css-text
     SUBDIR += hs-fastcgi
-    SUBDIR += hs-gitit
-    SUBDIR += hs-happstack
     SUBDIR += hs-happstack-server
     SUBDIR += hs-heist
     SUBDIR += hs-hjsmin

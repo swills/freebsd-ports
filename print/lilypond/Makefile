@@ -1,5 +1,5 @@
 # Created by: patrick, trevor
-# $FreeBSD: head/print/lilypond/Makefile 470278 2018-05-18 08:34:09Z amdmi3 $
+# $FreeBSD: head/print/lilypond/Makefile 483269 2018-10-28 10:55:44Z linimon $
 
 PORTNAME=	lilypond
 PORTVERSION=	2.18.2
@@ -33,8 +33,8 @@ LIB_DEPENDS=	libguile.so:lang/guile \
 RUN_DEPENDS=	mftrace:print/mftrace \
 		${LOCALBASE}/share/fonts/dejavu/DejaVuSans-Bold.ttf:x11-fonts/dejavu
 
-USES=		bison:build gettext ghostscript gmake pkgconfig perl5 \
-		python:2.7
+USES=		bison:build compiler:c++11-lang gettext ghostscript gmake \
+		gnome pkgconfig perl5 python:2.7
 USE_TEX=	latex
 USE_PERL5=	build
 USE_GNOME=	pango

@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-themes/kf5-kiconthemes/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/x11-themes/kf5-kiconthemes/Makefile 483317 2018-10-28 16:46:58Z tcberner $
 
 PORTNAME=	kiconthemes
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	2
 CATEGORIES=	x11-themes kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,5 +13,10 @@ USE_KDE=	archive auth codecs config configwidgets coreaddons ecm \
 		i18n itemviews widgetsaddons
 USE_QT=		buildtools_build concurrent core dbus gui qmake_build \
 		script svg widgets xml
+
+OPTIONS_DEFINE=	ICONS
+OPTIONS_DEFAULT=	ICONS
+ICONS_DESC=	Install Breeze Icons
+ICONS_USE=	KDE=breeze-icons_run
 
 .include <bsd.port.mk>

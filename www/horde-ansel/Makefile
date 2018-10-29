@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/horde-ansel/Makefile 470973 2018-05-27 09:34:20Z amdmi3 $
+# $FreeBSD: head/www/horde-ansel/Makefile 482818 2018-10-23 09:12:50Z joneum $
 
 PORTNAME=	ansel
-PORTVERSION=	3.0.8
+PORTVERSION=	3.0.9
 CATEGORIES=	www pear graphics
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 

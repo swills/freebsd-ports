@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/libfilezilla/Makefile 478656 2018-09-01 07:21:14Z pi $
+# $FreeBSD: head/ftp/libfilezilla/Makefile 483127 2018-10-27 12:08:49Z linimon $
 
 PORTNAME=	libfilezilla
 PORTVERSION=	0.13.0
@@ -10,8 +10,6 @@ COMMENT=	C++ library for building platform-independent programs
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	does not compile: libfilezilla/string.hpp: error: to_wstring is not a member of std
 
 USES=		compiler:c++14-lang gmake iconv:wchar_t libtool localbase pathfix pkgconfig tar:bzip2
 USE_LDCONFIG=	yes

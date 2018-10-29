@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/klg/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net-mgmt/klg/Makefile 482613 2018-10-20 18:30:11Z mfechner $
 
 PORTNAME=	klg
 PORTVERSION=	1.5

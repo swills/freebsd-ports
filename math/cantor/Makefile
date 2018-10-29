@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cantor/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/math/cantor/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	cantor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -14,7 +14,8 @@ LIB_DEPENDS=	libAnalitza.so:math/analitza \
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		cmake:outsource gettext kde:5 pkgconfig python:3.4+ qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 pkgconfig \
+		python:3.4+ qt:5 tar:xz
 USE_KDE=	attica auth archive bookmarks codecs completion config \
 		configwidgets coreaddons crash ecm emoticons i18n iconthemes \
 		itemmodels itemviews init jobwidgets kdelibs4support kio \

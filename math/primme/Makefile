@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/primme/Makefile 481863 2018-10-12 01:11:47Z yuri $
+# $FreeBSD: head/math/primme/Makefile 483219 2018-10-28 04:32:44Z yuri $
 
 PORTNAME=	primme
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.20181011 # git describe doesn't identify the tag properly
+DISTVERSION=	2.2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,7 +15,6 @@ TEST_DEPENDS=	gfortran${GCC_DEFAULT}:lang/gcc${GCC_DEFAULT}
 
 USES=		gmake localbase:ldflags
 USE_GITHUB=	yes
-GH_TAGNAME=	6a0fa27
 MAKEFILE=	makefile
 ALL_TARGET=	solib
 USE_LDCONFIG=	yes
@@ -51,6 +50,6 @@ PLIST_FILES=	include/primme.h \
 		include/primme_svds_f77.h \
 		lib/libprimme.so \
 		lib/libprimme.so.2 \
-		lib/libprimme.so.2.1
+		lib/libprimme.so.2.2
 
 .include <bsd.port.mk>
