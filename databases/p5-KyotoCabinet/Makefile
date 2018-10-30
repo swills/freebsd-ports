@@ -1,11 +1,11 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/databases/p5-KyotoCabinet/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-KyotoCabinet/Makefile 483422 2018-10-29 22:14:39Z sunpoet $
 
 PORTNAME=	KyotoCabinet
 PORTVERSION=	1.20
 PORTREVISION=	2
 CATEGORIES=	databases perl5
-MASTER_SITES=	http://fallabs.com/kyotocabinet/perlpkg/
+MASTER_SITES=	https://fallabs.com/kyotocabinet/perlpkg/
 PKGNAMEPREFIX=	p5-
 DISTNAME=	kyotocabinet-perl-${PORTVERSION}
 

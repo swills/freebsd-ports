@@ -1,11 +1,11 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/textproc/estraier/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/estraier/Makefile 483431 2018-10-29 22:15:52Z sunpoet $
 
 PORTNAME=	estraier
 PORTVERSION=	1.2.30
 PORTREVISION=	4
 CATEGORIES=	textproc
-MASTER_SITES=	http://fallabs.com/estraier/
+MASTER_SITES=	https://fallabs.com/estraier/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Full-text search system for personal use

@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl-devel/Makefile 483302 2018-10-28 14:52:34Z brnrd $
+# $FreeBSD: head/security/openssl-devel/Makefile 483396 2018-10-29 18:38:55Z brnrd $
 
 PORTNAME=	openssl
 PORTVERSION=	1.1.0i
@@ -19,7 +19,7 @@ CONFLICTS_INSTALL=	libressl-[0-9]* \
 			openssl-[0-9]* \
 			openssl111-[0-9]*
 
-DEPRECATED=		Upstream support ends 2019-09-11
+DEPRECATED=		Upstream support ends 2019-09-11, use security/openssl111
 EXPIRATION_DATE=	2019-09-11
 
 HAS_CONFIGURE=	yes

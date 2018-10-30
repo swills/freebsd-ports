@@ -1,11 +1,11 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/databases/qdbm-plus/Makefile 452147 2017-10-15 14:05:04Z madpilot $
+# $FreeBSD: head/databases/qdbm-plus/Makefile 483426 2018-10-29 22:15:12Z sunpoet $
 
 PORTNAME=	qdbm
 PORTVERSION=	1.8.78
 PORTREVISION=	5
 CATEGORIES=	databases
-MASTER_SITES=	http://fallabs.com/qdbm/
+MASTER_SITES=	https://fallabs.com/qdbm/
 PKGNAMESUFFIX=	-plus
 
 MAINTAINER=	hrs@FreeBSD.org

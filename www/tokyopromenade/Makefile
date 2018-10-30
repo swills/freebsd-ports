@@ -1,10 +1,10 @@
 # Created by: Qing Feng <qingfeng@douban.com>
-# $FreeBSD: head/www/tokyopromenade/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/tokyopromenade/Makefile 483433 2018-10-29 22:16:09Z sunpoet $
 
 PORTNAME=	tokyopromenade
 PORTVERSION=	0.9.25
 CATEGORIES=	www
-MASTER_SITES=	http://fallabs.com/${PORTNAME}/pkg/
+MASTER_SITES=	https://fallabs.com/${PORTNAME}/pkg/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Content management system

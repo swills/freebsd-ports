@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 483369 2018-10-29 05:55:51Z yuri $
+# $FreeBSD: head/math/Makefile 483453 2018-10-30 06:18:48Z yuri $
 #
 
     COMMENT = Mathematics
@@ -744,6 +744,7 @@
     SUBDIR += py-pyodesys
     SUBDIR += py-pysparse
     SUBDIR += py-pysym
+    SUBDIR += py-python-louvain
     SUBDIR += py-pyvtk
     SUBDIR += py-random2
     SUBDIR += py-rapi

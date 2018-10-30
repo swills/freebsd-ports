@@ -1,7 +1,7 @@
-# $FreeBSD: head/polish/hunspell/Makefile 482858 2018-10-23 17:49:40Z sunpoet $
+# $FreeBSD: head/polish/hunspell/Makefile 483417 2018-10-29 22:13:58Z sunpoet $
 
 PORTNAME=	hunspell
-PORTVERSION=	20181021
+PORTVERSION=	20181025
 CATEGORIES=	polish textproc
 MASTER_SITES=	https://sjp.pl/slownik/ort/ \
 		LOCAL/sunpoet/${PORTNAME}

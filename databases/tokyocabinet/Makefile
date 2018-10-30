@@ -1,11 +1,11 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/tokyocabinet/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/databases/tokyocabinet/Makefile 483429 2018-10-29 22:15:36Z sunpoet $
 
 PORTNAME=	tokyocabinet
 PORTVERSION=	1.4.48
 CATEGORIES=	databases
 MASTER_SITES=	LOCAL/kuriyama \
-		http://fallabs.com/${PORTNAME}/
+		https://fallabs.com/${PORTNAME}/
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Modern implementation of DBM

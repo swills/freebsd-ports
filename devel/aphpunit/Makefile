@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/aphpunit/Makefile 477340 2018-08-16 13:34:11Z tz $
+# $FreeBSD: head/devel/aphpunit/Makefile 483468 2018-10-30 11:31:17Z tz $
 
 PORTNAME=	aphpunit
-DISTVERSION=	1.6
+DISTVERSION=	1.7
 CATEGORIES=	devel www
 MASTER_SITES=	http://phar.toco-domains.de/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}

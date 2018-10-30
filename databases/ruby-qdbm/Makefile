@@ -1,11 +1,11 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/databases/ruby-qdbm/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/ruby-qdbm/Makefile 483427 2018-10-29 22:15:20Z sunpoet $
 
 PORTNAME=	qdbm
 PORTVERSION=	1.8.78
 PORTREVISION=	4
 CATEGORIES=	databases
-MASTER_SITES=	http://fallabs.com/qdbm/
+MASTER_SITES=	https://fallabs.com/qdbm/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 
 MAINTAINER=	hrs@FreeBSD.org

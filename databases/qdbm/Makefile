@@ -1,11 +1,11 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/databases/qdbm/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/qdbm/Makefile 483425 2018-10-29 22:15:04Z sunpoet $
 
 PORTNAME=	qdbm
 PORTVERSION=	1.8.78
 PORTREVISION=	4
 CATEGORIES=	databases
-MASTER_SITES=	http://fallabs.com/qdbm/
+MASTER_SITES=	https://fallabs.com/qdbm/
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Quick Database Manager

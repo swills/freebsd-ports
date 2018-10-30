@@ -1,8 +1,8 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/devel/py-magic/Makefile 475382 2018-07-26 15:24:29Z lwhsu $
+# $FreeBSD: head/devel/py-magic/Makefile 483443 2018-10-30 02:37:45Z lwhsu $
 
 PORTNAME=	magic
-PORTVERSION=	5.34
+PORTVERSION=	5.35
 CATEGORIES=	devel python
 MASTER_SITES=	ftp://ftp.astron.com/pub/file/ \
 		ftp://ftp.gw.com/mirrors/pub/unix/file/ \

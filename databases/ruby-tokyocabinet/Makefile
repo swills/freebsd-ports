@@ -1,10 +1,10 @@
 # Created by: Damian Gerow <dgerow@afflictions.org>
-# $FreeBSD: head/databases/ruby-tokyocabinet/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/ruby-tokyocabinet/Makefile 483428 2018-10-29 22:15:28Z sunpoet $
 
 PORTNAME=	tokyocabinet
 PORTVERSION=	1.31
 CATEGORIES=	databases ruby
-MASTER_SITES=	http://fallabs.com/${PORTNAME}/rubypkg/
+MASTER_SITES=	https://fallabs.com/${PORTNAME}/rubypkg/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-ruby-${PORTVERSION}
 DIST_SUBDIR=	ruby

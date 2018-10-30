@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 482958 2018-10-25 07:36:58Z yuri $
+# $FreeBSD: head/science/Makefile 483445 2018-10-30 04:36:22Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -86,6 +86,7 @@
     SUBDIR += ghemical
     SUBDIR += ghmm
     SUBDIR += gnudatalanguage
+    SUBDIR += gpaw-setups
     SUBDIR += gramps
     SUBDIR += grib_api
     SUBDIR += gromacs

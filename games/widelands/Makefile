@@ -1,5 +1,5 @@
 # Created by: Bartosz Fabianowski <freebsd@chillt.de>
-# $FreeBSD: head/games/widelands/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/games/widelands/Makefile 483482 2018-10-30 12:11:58Z linimon $
 
 PORTNAME=	widelands
 DISTVERSION=	build19
@@ -28,6 +28,10 @@ CMAKE_ARGS=	-DWL_INSTALL_BASEDIR="${PREFIX}" \
 		-DWL_OPTIMIZE_FLAGS=""
 USE_GL=		gl glew
 USE_SDL=	sdl2 mixer2 image2 net2 ttf2
+CXXFLAGS_powerpc=	-Wno-maybe-uninitialized
+CXXFLAGS_powerpcspe=	-Wno-maybe-uninitialized
+CXXFLAGS_powerpc64=	-Wno-maybe-uninitialized
+CXXFLAGS_sparc64=	-Wno-maybe-uninitialized
 
 PORTDATA=	*
 PORTDOCS=	*

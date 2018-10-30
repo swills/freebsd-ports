@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/www/py-mechanize/Makefile 455224 2017-11-30 20:28:15Z antoine $
+# $FreeBSD: head/www/py-mechanize/Makefile 483444 2018-10-30 02:41:08Z lwhsu $
 
 PORTNAME=	mechanize
-PORTVERSION=	0.3.6
+PORTVERSION=	0.3.7
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		http://wwwsearch.sourceforge.net/mechanize/src/

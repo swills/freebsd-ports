@@ -1,5 +1,5 @@
 # Created by: Franco Fichtner <franco@opnsense.org>
-# $FreeBSD: head/net/intel-em-kmod/Makefile 483387 2018-10-29 14:58:44Z skozlov $
+# $FreeBSD: head/net/intel-em-kmod/Makefile 483462 2018-10-30 10:23:36Z skozlov $
 
 PORTNAME=	em
 PORTVERSION=	7.7.4
@@ -7,7 +7,7 @@ PORTREVISION=	1
 PORTEPOCH=	0
 MASTER_SITE_SUBDIR=	17509/eng
 
-MAINTAINER=	franco@opnsense.org
+MAINTAINER=	freebsd@intel.com
 COMMENT=	Gigabit FreeBSD Base Drivers for Intel(R) Ethernet
 
 BROKEN_armv6=		fails to compile: implicit declaration of function 'cp15_pmccntr_get' is invalid in C99

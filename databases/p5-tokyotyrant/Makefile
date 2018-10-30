@@ -1,11 +1,11 @@
 # Created by: Hiroyuki Hanai <hanai@FreeBSD.org>
-# $FreeBSD: head/databases/p5-tokyotyrant/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-tokyotyrant/Makefile 483424 2018-10-29 22:14:56Z sunpoet $
 
 PORTNAME=	tokyotyrant
 PORTVERSION=	1.16
 PORTREVISION=	3
 CATEGORIES=	databases perl5
-MASTER_SITES=	http://fallabs.com/${PORTNAME}/perlpkg/
+MASTER_SITES=	https://fallabs.com/${PORTNAME}/perlpkg/
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-perl-${PORTVERSION}
 

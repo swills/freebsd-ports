@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openlierox/Makefile 483083 2018-10-27 01:10:05Z jbeich $
+# $FreeBSD: head/games/openlierox/Makefile 483481 2018-10-30 12:09:01Z linimon $
 
 PORTNAME=	openlierox
 DISTVERSION=	0.58_rc3
@@ -14,7 +14,7 @@ COMMENT=	Extremely addictive realtime worms shoot-em-up
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		tar:bzip2 cmake localbase pkgconfig
+USES=		cmake compiler:c++11-lang gnome localbase pkgconfig tar:bzip2
 USE_SDL=	sdl image
 USE_GNOME=	libxml2
 

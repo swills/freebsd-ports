@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox-esr/Makefile 482993 2018-10-25 21:59:37Z jbeich $
+# $FreeBSD: head/www/firefox-esr/Makefile 483435 2018-10-29 22:32:17Z cmt $
 
 PORTNAME=	firefox
 DISTVERSION=	60.3.0
@@ -37,7 +37,6 @@ CONFLICTS_INSTALL=	firefox
 MOZ_PKGCONFIG_FILES=	# empty
 USE_MOZILLA=	-cairo -soundtouch
 
-USE_GL=		gl
 USES=		tar:xz
 
 FIREFOX_ICON=		${MOZILLA}.png

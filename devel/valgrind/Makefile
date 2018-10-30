@@ -1,10 +1,10 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/devel/valgrind/Makefile 453198 2017-10-30 17:13:31Z bdrewery $
+# $FreeBSD: head/devel/valgrind/Makefile 483449 2018-10-30 05:04:45Z yuri $
 
 PORTNAME=	valgrind
 PORTVERSION=	3.10.1.20160113
 DISTVERSIONPREFIX=	freebsd-
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/ \
@@ -38,7 +38,7 @@ DOCS_BUILD_DEPENDS=    docbook-xsl>=0:textproc/docbook-xsl \
                        xsltproc:textproc/libxslt
 MANPAGES_BUILD_DEPENDS=        docbook-xsl>=0:textproc/docbook-xsl \
                        xsltproc:textproc/libxslt
-MPI_LIB_DEPENDS=	libmpich.so:net/mpich2
+MPI_LIB_DEPENDS=	libmpich.so:net/mpich
 
 OPTIONS_SUB=	yes
 USES=		pathfix pkgconfig gmake perl5 shebangfix autoreconf

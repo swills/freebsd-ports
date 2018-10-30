@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/mail/thunderbird/Makefile 482993 2018-10-25 21:59:37Z jbeich $
+# $FreeBSD: head/mail/thunderbird/Makefile 483435 2018-10-29 22:32:17Z cmt $
 
 PORTNAME=	thunderbird
 DISTVERSION=	60.2.1
@@ -33,7 +33,6 @@ SSP_UNSAFE=	yes
 USE_GECKO=	gecko
 USE_MOZILLA=	-cairo -soundtouch
 
-USE_GL=		gl
 USES=		tar:xz
 
 MOZ_OPTIONS=	--enable-application=comm/mail --enable-official-branding

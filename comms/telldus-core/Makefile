@@ -1,5 +1,5 @@
 # Created by: Johan Strom <johna@stromnet.se>
-# $FreeBSD: head/comms/telldus-core/Makefile 478176 2018-08-27 05:31:21Z tobik $
+# $FreeBSD: head/comms/telldus-core/Makefile 483473 2018-10-30 11:49:32Z linimon $
 
 PORTNAME=	telldus-core
 PORTVERSION=	2.1.2
@@ -17,11 +17,8 @@ LIB_DEPENDS=	libftdi.so:devel/libftdi \
 		libconfuse.so:devel/libconfuse \
 		libargp.so:devel/argp-standalone
 
-BROKEN_powerpc64=	Does not build: error: strlen was not declared in this scope
-BROKEN_sparc64=		Does not build: error: strlen was not declared in this scope
-
-USE_LDCONFIG=	yes
 USES=		cmake compiler:c++11-lang iconv:wchar_t
+USE_LDCONFIG=	yes
 
 CMAKE_ARGS+=-DGENERATE_MAN=TRUE
 # Note: these are internal defines and shall NOT contain ${STAGEDIR}
@@ -50,7 +47,7 @@ post-patch:
 post-install:
 	cd ${STAGEDIR}${PREFIX}/etc && \
 		${MV} tellstick.conf tellstick.conf.sample
-	# This file is actually empty but allows us to simply use @sample to 
+	# This file is actually empty but allows us to simply use @sample to
 	# make sure it stays between upgrades if modified
 	cd ${STAGEDIR}/var/telldus && \
 		${MV} telldus-core.conf telldus-core.conf.sample

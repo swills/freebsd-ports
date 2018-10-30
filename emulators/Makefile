@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 477371 2018-08-16 20:28:32Z rene $
+# $FreeBSD: head/emulators/Makefile 483454 2018-10-30 06:44:55Z kbowling $
 #
 
     COMMENT = Emulators for other operating systems
@@ -68,6 +68,7 @@
     SUBDIR += libspectrum
     SUBDIR += linux-c6
     SUBDIR += linux-c7
+    SUBDIR += linux-power9-functional-sim
     SUBDIR += linux_base-c6
     SUBDIR += linux_base-c7
     SUBDIR += lisaem

@@ -1,8 +1,8 @@
 # Created by: Peter van Heusden <pvh@egenetics.com>
-# $FreeBSD: head/lang/p5-Error/Makefile 470745 2018-05-23 23:43:20Z wen $
+# $FreeBSD: head/lang/p5-Error/Makefile 483419 2018-10-29 22:14:14Z sunpoet $
 
 PORTNAME=	Error
-PORTVERSION=	0.17026
+PORTVERSION=	0.17027
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,9 +12,11 @@ COMMENT=	Error/exception handling in object-oriented programming style
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

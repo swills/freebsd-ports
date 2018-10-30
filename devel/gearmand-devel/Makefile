@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand-devel/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/gearmand-devel/Makefile 483474 2018-10-30 11:52:54Z linimon $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.1.8
@@ -11,9 +11,6 @@ PKGNAMESUFFIX=	-devel
 MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Gearman C Server and Library
 
-BROKEN_sparc64=		fails to build: cannot link with boost
-BROKEN_powerpc64=	fails to build: checking for the Boost program_options library... no
-
 BUILD_DEPENDS=	boost-libs>=0:devel/boost-libs \
 		${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
 LIB_DEPENDS=	libevent.so:devel/libevent \
@@ -24,7 +21,7 @@ CONFLICTS=	p5-Gearman-Server-1.* gearmand-1.0.*
 USERS=		gearmand
 GROUPS=		gearmand
 
-USES=		pathfix perl5 gmake gperf libtool python:build
+USES=		compiler:c++11-lang pathfix perl5 gmake gperf libtool python:build
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

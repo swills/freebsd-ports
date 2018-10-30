@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/linuxdcpp/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-p2p/linuxdcpp/Makefile 483480 2018-10-30 12:06:14Z linimon $
 
 PORTNAME=	linuxdcpp
 PORTVERSION=	1.1.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/License.txt
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/version.hpp:devel/boost-libs
 
-USES=		gettext iconv pkgconfig scons tar:bzip2 ssl
+USES=		compiler:c++11-lang gettext iconv pkgconfig scons tar:bzip2 ssl
 USE_GNOME=	libglade2
 PORTDOCS=	*
 DESTDIRNAME=	FAKE_ROOT
