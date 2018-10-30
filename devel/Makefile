@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 483382 2018-10-29 09:48:21Z rene $
+# $FreeBSD: head/devel/Makefile 483495 2018-10-30 16:11:10Z mfechner $
 #
 
     COMMENT = Development utilities
@@ -5691,6 +5691,7 @@
     SUBDIR += rubygem-git
     SUBDIR += rubygem-git-version-bump
     SUBDIR += rubygem-github_api
+    SUBDIR += rubygem-gitlab-sidekiq-fetcher
     SUBDIR += rubygem-gitlab-pygments.rb
     SUBDIR += rubygem-gitlab_git
     SUBDIR += rubygem-gitlab_meta

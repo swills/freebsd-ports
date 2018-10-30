@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/sysutils/liburcu/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/liburcu/Makefile 483487 2018-10-30 13:29:47Z linimon $
 
 PORTNAME=	liburcu
 PORTVERSION=	0.10.0
@@ -12,7 +12,6 @@ COMMENT=	Userspace read-copy-update (RCU) data synchronization library
 
 LICENSE=	LGPL21
 
-BROKEN_aarch64=	Fails to build: Cannot build: unrecognized architecture detected
 BROKEN_mips=	Fails to build: undefined reference to `__sync_bool_compare_and_swap_4
 BROKEN_mips64=	Fails to build: undefined reference to `__sync_bool_compare_and_swap_4
 

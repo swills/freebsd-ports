@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-fileinfo/Makefile 474124 2018-07-07 19:20:03Z amdmi3 $
+# $FreeBSD: head/deskutils/lumina-fileinfo/Makefile 483485 2018-10-30 12:26:42Z linimon $
 
 PORTNAME=	lumina-fileinfo
 PORTVERSION=	1.4.1
@@ -16,7 +16,7 @@ CONFLICTS_INSTALL=	lumina-1.2.*
 
 MAKE_JOBS_UNSAFE=yes
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core gui widgets network svg \
 		buildtools_build x11extras concurrent multimedia
 USE_GITHUB=	yes
