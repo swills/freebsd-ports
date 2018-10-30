@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 482597 2018-10-20 16:35:07Z tcberner $
 
 PORTNAME=	gstreamer1
 PORTVERSION=	1.2.0
@@ -19,7 +19,7 @@ FLAVOR?=	${FLAVORS:[1]}
 
 CONFLICTS_INSTALL=	gstreamer${PKGNAMESUFFIX}-*
 
-USES=		bison cmake:outsource pathfix pkgconfig tar:xz
+USES=		bison cmake:outsource gl gnome pathfix pkgconfig tar:xz
 USE_GSTREAMER1=	yes
 
 USE_GL=		gl
@@ -35,7 +35,7 @@ USE_QT=		corelib gui opengl declarative script \
 		qmake_build moc_build rcc_build uic_build qtestlib_build
 PLIST_SUB=	QT4_ONLY="" QT5_ONLY="@comment "
 .  else
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=		buildtools_build qmake_build core gui network opengl \
 		qml quick testlib widgets
 QTVER_SUFFIX=	5

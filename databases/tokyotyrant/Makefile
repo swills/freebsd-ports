@@ -1,11 +1,11 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/tokyotyrant/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/databases/tokyotyrant/Makefile 483430 2018-10-29 22:15:44Z sunpoet $
 
 PORTNAME=	tokyotyrant
 PORTVERSION=	1.1.41
 PORTREVISION=	2
 CATEGORIES=	databases
-MASTER_SITES=	http://fallabs.com/${PORTNAME}/
+MASTER_SITES=	https://fallabs.com/${PORTNAME}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network interface of Tokyo Cabinet

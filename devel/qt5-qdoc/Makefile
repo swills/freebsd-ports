@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-qdoc/Makefile 479286 2018-09-09 11:12:14Z tcberner $
+# $FreeBSD: head/devel/qt5-qdoc/Makefile 482595 2018-10-20 16:30:30Z tcberner $
 
 PORTNAME=	qdoc
 DISTVERSION=	${QT5_VERSION}
@@ -11,7 +11,7 @@ COMMENT=	Qt documentation generator
 BUILD_DEPENDS=	llvm60>=0:devel/llvm60
 RUN_DEPENDS=	llvm60>=0:devel/llvm60
 
-USES=		qmake qt-dist:5,tools
+USES=		compiler:c++11-lang qmake qt-dist:5,tools
 USE_QT=		core qml buildtools_build qdoc-data_run
 
 BUILD_WRKSRC=	${WRKSRC}/src/${PORTNAME}

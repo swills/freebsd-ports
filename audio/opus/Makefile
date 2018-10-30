@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/opus/Makefile 444834 2017-07-01 20:23:17Z naddy $
+# $FreeBSD: head/audio/opus/Makefile 482612 2018-10-20 18:17:09Z naddy $
 
 PORTNAME=	opus
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3
 CATEGORIES=	audio
 MASTER_SITES=	MOZILLA/opus
 

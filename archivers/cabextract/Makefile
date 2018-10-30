@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/archivers/cabextract/Makefile 475679 2018-07-29 19:09:07Z sunpoet $
+# $FreeBSD: head/archivers/cabextract/Makefile 482762 2018-10-22 19:08:17Z sunpoet $
 
 PORTNAME=	cabextract
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 CATEGORIES=	archivers
 MASTER_SITES=	https://www.cabextract.org.uk/
 

@@ -1,12 +1,12 @@
 # Created by: Christopher Elkins <chrise@scardini.com>
-# $FreeBSD: head/lang/nickle/Makefile 482393 2018-10-18 23:53:23Z swills $
+# $FreeBSD: head/lang/nickle/Makefile 483439 2018-10-30 00:40:02Z wen $
 
 PORTNAME=	nickle
-PORTVERSION=	2.82
+PORTVERSION=	2.84
 CATEGORIES=	lang
 MASTER_SITES=	http://www.nickle.org/release/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Numeric-oriented programming language
 
 LICENSE=	MIT

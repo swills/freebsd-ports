@@ -1,8 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/pam_p11/Makefile 482217 2018-10-16 10:30:43Z ale $
+# $FreeBSD: head/security/pam_p11/Makefile 482904 2018-10-24 12:48:46Z ale $
 
 PORTNAME=	pam_p11
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/OpenSC/pam_p11/releases/download/pam_p11-${PORTVERSION}/
 
@@ -13,11 +14,17 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libp11.so:security/libp11
 
-USES=		libtool pkgconfig ssl
+USES=		libtool pkgconfig ssl autoreconf
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS NLS
 
 GNU_CONFIGURE=	yes
+
+NLS_CONFIGURE_ENABLE=	nls
+NLS_USES=	gettext
+NLS_PLIST_FILES=share/locale/de/LC_MESSAGES/pam_p11.mo
+
+CONFIGURE_ARGS=	--with-libintl-prefix=${LOCALBASE}
 
 CONFIGURE_ENV=	OPENSSL_CFLAGS="-I${OPENSSLINC}" \
 		OPENSSL_LIBS="-L${OPENSSLLIB} -lcrypto"

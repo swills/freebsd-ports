@@ -1,5 +1,5 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-gcc-stage1/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/psptoolchain-gcc-stage1/Makefile 483158 2018-10-27 17:39:00Z linimon $
 
 PORTNAME=		gcc
 PORTVERSION=		4.6.2
@@ -12,13 +12,13 @@ PKGNAMESUFFIX?=		-stage1
 MAINTAINER=		tphilipp@potion-studios.com
 COMMENT=		PlayStation Portable development toolchain ${PORTNAME}
 
-ONLY_FOR_ARCHS=		amd64 i386
-
-PSP_GCC_STAGE_PREFIX=	psp/stage1
+ONLY_FOR_ARCHS=		amd64 i386 powerpc64
 
 LIB_DEPENDS=		libgmp.so:math/gmp \
 			libmpfr.so:math/mpfr \
 			libmpc.so:math/mpc
+
+PSP_GCC_STAGE_PREFIX=	psp/stage1
 
 BUILD_DEPENDS+=		psp-addr2line:devel/psptoolchain-binutils \
 			psp-ar:devel/psptoolchain-binutils \

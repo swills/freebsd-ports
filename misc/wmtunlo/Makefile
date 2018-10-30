@@ -1,12 +1,11 @@
 # Created by: Adam Weinberger <adam@vectors.cx>
-# $FreeBSD: head/misc/wmtunlo/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/misc/wmtunlo/Makefile 483376 2018-10-29 08:51:36Z ak $
 
 PORTNAME=	wmtunlo
 PORTVERSION=	0.1.3
 PORTREVISION=	4
 CATEGORIES=	misc windowmaker
-MASTER_SITES=	http://www.gnu-darwin.org/distfiles/ \
-		http://cvsup.theplanet.com/distfiles/
+MASTER_SITES=	http://www.gnu-darwin.org/distfiles/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Falling-down-a-tunnel dockapp

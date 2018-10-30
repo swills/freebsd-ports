@@ -1,5 +1,5 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/poco-ssl/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/devel/poco-ssl/Makefile 483265 2018-10-28 10:35:52Z linimon $
 
 PORTNAME=	poco
 # New version 1.4.6p4 is available; please use DISTVERSION upon updating
@@ -21,7 +21,11 @@ BROKEN_SSL_REASON_openssl-devel=	field has incomplete type 'EVP_CIPHER_CTX' (aka
 
 CONFLICTS=	poco-[0-9]*
 
-USES=		gmake tar:bzip2 ssl
+USES=		${USES_${ARCH}} gmake tar:bzip2 ssl
+USES_powerpc=	compiler:c++11-lang
+USES_powerpcspe=	compiler:c++11-lang
+USES_powerpc64=	compiler:c++11-lang
+USES_sparc64=	compiler:c++11-lang
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} --config=FreeBSD
 USE_LDCONFIG=	yes

@@ -1,9 +1,8 @@
 # Created by: Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
-# $FreeBSD: head/science/avogadro/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/science/avogadro/Makefile 482880 2018-10-24 06:03:32Z yuri $
 
 PORTNAME=	avogadro
-PORTVERSION=	1.1.1
-PORTREVISION=	16
+DISTVERSION=	1.2.0
 CATEGORIES=	science
 MASTER_SITES=	SF
 
@@ -13,6 +12,8 @@ COMMENT=	Advanced molecular editor and viewer
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+CONFLICTS_INSTALL=	libmsym
+
 BROKEN_armv6=		fails to compile: eigen2/Eigen/src/Core/Assign.h: you mixed different numeric types in 'Eigen::ei_static_assert<false>'
 BROKEN_armv7=		fails to compile: eigen2/Eigen/src/Core/Assign.h: you mixed different numeric types in 'Eigen::ei_static_assert<false>'
 
@@ -20,12 +21,13 @@ LIB_DEPENDS=	libopenbabel.so:science/openbabel
 
 # We need to add a RUN_DEPENDS on eigen2, as the cmake file shiped with
 # avogadro to use it, contains 'find_package(Eigen2 REQUIRED)'.
-USES=		cmake desktop-file-utils eigen:2,build,run pkgconfig qt:4 tar:bzip2
+USES=		cmake desktop-file-utils eigen:2,build,run gl pkgconfig qt:4
 USE_GL=		glu gl
-USE_QT=		gui network opengl \
+USE_QT=		corelib gui network opengl \
 		linguisttools_build moc_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DENABLE_GLSL=OFF \
 		-DQT_MKSPECS_RELATIVE=share/qt4/mkspecs
+USE_XORG=	x11
 USE_LDCONFIG=	yes
 
 CFLAGS+=	-idirafter ${LOCALBASE}/include/eigen2 \

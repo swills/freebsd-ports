@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-stomp/Makefile 443428 2017-06-12 10:22:04Z sunpoet $
+# $FreeBSD: head/devel/rubygem-stomp/Makefile 483343 2018-10-28 19:58:25Z sunpoet $
 
 PORTNAME=	stomp
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,9 +11,10 @@ COMMENT=	Streaming Text Orientated Messaging Protocol gem
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/catstomp bin/stompcat
 

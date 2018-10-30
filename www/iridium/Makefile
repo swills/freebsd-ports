@@ -1,9 +1,9 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/www/iridium/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	iridium
 PORTVERSION=	2018.5.67
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	https://downloads.iridiumbrowser.de/source/
 PKGNAMESUFFIX=	-browser

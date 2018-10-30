@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-sshkit/Makefile 475807 2018-07-29 19:23:01Z sunpoet $
+# $FreeBSD: head/security/rubygem-sshkit/Makefile 482769 2018-10-22 19:09:15Z sunpoet $
 
 PORTNAME=	sshkit
-PORTVERSION=	1.17.0
+PORTVERSION=	1.18.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 RUN_DEPENDS=	rubygem-net-scp>=1.1.2:security/rubygem-net-scp \
 		rubygem-net-ssh>=2.8.0:security/rubygem-net-ssh
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

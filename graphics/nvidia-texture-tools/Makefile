@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 483282 2018-10-28 11:37:47Z linimon $
 
 PORTNAME=	nvidia-texture-tools
 PORTVERSION=	2.0.8.1 # needed to not bump PORTEPOCH; remove on next update
@@ -12,21 +12,18 @@ COMMENT=	Texture Tools with support for DirectX 10 texture formats
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/NVIDIA_Texture_Tools_LICENSE.txt
 
+# see src/nvcore/nvcore.h
+ONLY_FOR_ARCHS=		amd64 i386 powerpc powerpc64
+
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
 		libIlmImf.so:graphics/openexr
-
-BROKEN_powerpc=		does not build
-BROKEN_sparc64=		does not build
-
-# see src/nvcore/nvcore.h
-ONLY_FOR_ARCHS=		amd64 i386 powerpc powerpc64
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	castano
 GH_TAGNAME=	${PORTVERSION:R}
 
-USES=		alias cmake jpeg
+USES=		alias cmake compiler:c++11-lang jpeg
 CMAKE_ARGS=	-DNVTT_SHARED=TRUE
 
 CFLAGS+=	-fPIC

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kdeconnect-kde/Makefile 480969 2018-09-30 19:22:44Z tcberner $
+# $FreeBSD: head/deskutils/kdeconnect-kde/Makefile 483377 2018-10-29 09:00:46Z ak $
 
 PORTNAME=	kdeconnect-kde
 DISTVERSION=	1.3.1
@@ -30,4 +30,3 @@ USE_XORG=	ice sm x11 xext xtst
 USE_LDCONFIG=	${QT_QMLDIR}/org/kde/kdeconnect
 
 .include <bsd.port.mk>
-

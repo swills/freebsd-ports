@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand/Makefile 480806 2018-09-27 16:55:05Z bdrewery $
+# $FreeBSD: head/devel/gearmand/Makefile 483475 2018-10-30 11:54:54Z linimon $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.0.6
@@ -9,8 +9,6 @@ MASTER_SITES=	http://launchpad.net/gearmand/1.0/${PORTVERSION}/+download/
 
 MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Gearman C Server and Library
-
-BROKEN_sparc64=		fails to build: cannot link with boost
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs \

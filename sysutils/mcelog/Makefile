@@ -1,8 +1,8 @@
 # Created by: Jeremy Chadwick <freebsd@jdc.parodius.com>
-# $FreeBSD: head/sysutils/mcelog/Makefile 477674 2018-08-20 21:20:26Z ultima $
+# $FreeBSD: head/sysutils/mcelog/Makefile 483144 2018-10-27 15:35:46Z ultima $
 
 PORTNAME=	mcelog
-PORTVERSION=	160
+PORTVERSION=	161
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

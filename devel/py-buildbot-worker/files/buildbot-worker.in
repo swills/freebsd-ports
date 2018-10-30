@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/devel/py-buildbot-worker/files/buildbot-worker.in 445207 2017-07-07 03:57:39Z asomers $
+# $FreeBSD: head/devel/py-buildbot-worker/files/buildbot-worker.in 483022 2018-10-26 12:40:24Z grembo $
 # PROVIDE: buildbot-worker
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
@@ -57,7 +57,7 @@ eval ": \${${name}_uid:=\"buildbot\"}"
 eval ": \${${name}_gid:=\"buildbot\"}"
 eval ": \${${name}_basedir:=\"%%PREFIX%%/etc/${name}\"}"
 
-command="%%PREFIX%%/bin/twistd"
+command="%%PREFIX%%/bin/twistd-%%PYTHON_VER%%"
 command_interpreter="%%PYTHON_CMD%%"
 pidfile="${buildbot_worker_basedir}/twistd.pid"
 

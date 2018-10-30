@@ -1,12 +1,12 @@
 # Created by: Diego Depaoli <trebestie@gmail.com> and Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/multimedia/smplayer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/smplayer/Makefile 482712 2018-10-21 17:33:58Z riggs $
 
 PORTNAME=	smplayer
-DISTVERSION=	18.1.0
+DISTVERSION=	18.9.0
 CATEGORIES=	multimedia audio kde
 MASTER_SITES=	SF/${PORTNAME}/SMPlayer/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	kikadf.01@gmail.com
 COMMENT=	Complete front-end based on Qt for mplayer
 
 LICENSE=	GPLv2+
@@ -14,9 +14,9 @@ LICENSE_FILE=	${WRKSRC}/Copying.txt
 
 USES=		cpe desktop-file-utils dos2unix gmake qmake tar:bzip2
 USE_XORG=	x11
+
 CPE_VENDOR=	ricardo_villalba
 DOS2UNIX_REGEX=	.*.[^p][^n][^g]$
-INSTALLS_ICONS=	yes
 
 ALL_TARGET=	src/smplayer
 CONFIGURE_WRKSRC=	${WRKSRC}/src
@@ -31,7 +31,7 @@ OPTIONS_SINGLE_TOOLKIT=	QT4 QT5
 OPTIONS_MULTI=		ENGINE
 OPTIONS_MULTI_ENGINE=	MPLAYER MPV
 OPTIONS_DEFINE=		DOCS DEBUG SKINS THEMES
-OPTIONS_DEFAULT=	QT4 MPLAYER SKINS THEMES
+OPTIONS_DEFAULT=	QT5 MPV SKINS THEMES
 
 TOOLKIT_DESC=	Qt toolkit version
 ENGINE_DESC=	Multimedia engine

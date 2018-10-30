@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/clanlib1/Makefile 474008 2018-07-06 12:07:59Z amdmi3 $
+# $FreeBSD: head/devel/clanlib1/Makefile 483262 2018-10-28 10:28:46Z linimon $
 
 PORTNAME=	clanlib
 PORTVERSION=	1.0.0
@@ -20,14 +20,13 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libvorbis.so:audio/libvorbis \
 		libogg.so:audio/libogg
 
-USES=		alias gmake jpeg libtool localbase:ldflags pathfix \
+USES=		alias gmake gl jpeg libtool localbase:ldflags pathfix \
 		pkgconfig tar:tgz
+USE_CXXSTD=	c++98
 USE_XORG=	x11 xi xxf86vm
 USE_LDCONFIG=	yes
 USE_SDL=	gfx
 USE_GL=		gl glu
-
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docs \

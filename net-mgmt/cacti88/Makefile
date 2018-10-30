@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/cacti88/Makefile 442731 2017-06-06 00:47:24Z dbaio $
+# $FreeBSD: head/net-mgmt/cacti88/Makefile 482665 2018-10-21 11:17:12Z antoine $
 
 PORTNAME=	cacti
 PORTVERSION=	0.8.8h
@@ -20,7 +20,7 @@ USE_PHP=	mysqli pcre session sockets snmp xml
 NO_ARCH=	yes
 NO_BUILD=	yes
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72 73
 
 SUB_FILES=	pkg-message
 

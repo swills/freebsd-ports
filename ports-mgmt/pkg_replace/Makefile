@@ -1,8 +1,8 @@
 # Created by: Securedog <securedog@users.sourceforge.jp>
-# $FreeBSD: head/ports-mgmt/pkg_replace/Makefile 481635 2018-10-09 13:57:34Z swills $
+# $FreeBSD: head/ports-mgmt/pkg_replace/Makefile 483065 2018-10-27 00:25:32Z swills $
 
 PORTNAME=	pkg_replace
-PORTVERSION=	20180927
+PORTVERSION=	20181024
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://member.tokoha-u.ac.jp/~kdeguchi/download/
 
@@ -12,6 +12,7 @@ COMMENT=	Utility for upgrading installed packages
 LICENSE=	PD
 
 USES=		tar:xz
+
 NO_ARCH=	yes
 NO_BUILD=	yes
 

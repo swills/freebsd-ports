@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/nss_wrapper/Makefile 473829 2018-07-03 13:09:10Z timur $
+# $FreeBSD: head/devel/nss_wrapper/Makefile 483241 2018-10-28 08:45:22Z linimon $
 
 PORTNAME=		nss_wrapper
 PORTVERSION=		1.1.3
@@ -10,7 +10,7 @@ COMMENT=		Wrapper for the user, group and hosts NSS API
 
 LICENSE=		GPLv3
 
-USES=			cmake:outsource perl5 shebangfix
+USES=			cmake:outsource compiler:c++11-lang perl5 shebangfix
 USE_PERL5=		run
 USE_LDCONFIG=		yes
 

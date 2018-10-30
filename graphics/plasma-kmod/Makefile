@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/graphics/plasma-kmod/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/graphics/plasma-kmod/Makefile 483228 2018-10-28 06:27:54Z linimon $
 
 PORTNAME=	plasma
 PORTVERSION=	0.1
@@ -12,8 +12,6 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Plasma-effect screensaver kernel module
 
 LICENSE=	BSD3CLAUSE
-
-BROKEN_powerpc64=	fails to compile: pcpu.h: size of array '__assert_0' is negative
 
 PLIST_FILES=	${KMODDIR}/plasma_saver.ko
 

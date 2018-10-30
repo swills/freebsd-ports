@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/net-im/telegram/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/telegram/Makefile 482679 2018-10-21 14:46:16Z cpm $
 
 PORTNAME=	telegram
 PORTVERSION=	1.4.1.g20161227
@@ -34,6 +34,12 @@ PLIST_FILES=	bin/telegram-cli \
 PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200085
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-openssl-1.1.0
+.endif
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/telegram-cli

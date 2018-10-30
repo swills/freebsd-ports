@@ -1,15 +1,16 @@
 # Created by: Andris Raugulis <moo@arthepsy.eu>
-# $FreeBSD: head/sysutils/s6-rc/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/sysutils/s6-rc/Makefile 482961 2018-10-25 09:29:59Z 0mp $
 
 PORTNAME=	s6-rc
-PORTVERSION=	0.4.0.0
+PORTVERSION=	0.4.1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.skarnet.org/software/${PORTNAME}/
 
 MAINTAINER=	moo@arthepsy.eu
-COMMENT=	skarnet.org service manager
+COMMENT=	Skarnet.org service manager
 
 LICENSE=	ISCL
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	execline>=2.1.4.5:lang/execline
 RUN_DEPENDS=	execlineb:lang/execline

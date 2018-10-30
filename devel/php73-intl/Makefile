@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/php73-intl/Makefile 481525 2018-10-08 08:52:51Z tz $
+# $FreeBSD: head/devel/php73-intl/Makefile 483012 2018-10-26 10:15:42Z joneum $
 
 CATEGORIES=	devel
 

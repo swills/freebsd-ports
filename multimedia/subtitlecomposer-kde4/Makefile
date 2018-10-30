@@ -1,16 +1,19 @@
-# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 482461 2018-10-20 00:44:19Z jbeich $
+# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 483118 2018-10-27 09:55:45Z makc $
 
 PORTNAME=	subtitlecomposer
 PORTVERSION=	0.5.7
 DISTVERSIONPREFIX=	v
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	multimedia kde
+PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Subtitle editor for KDE
 
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
+
+CONFLICTS_INSTALL=	subtitlecomposer-*
 
 LIB_DEPENDS=	libicui18n.so:devel/icu
 

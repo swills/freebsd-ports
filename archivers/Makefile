@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 481529 2018-10-08 09:31:09Z tz $
+# $FreeBSD: head/archivers/Makefile 482824 2018-10-23 10:14:09Z rene $
 #
 
     COMMENT = Archivers
@@ -48,7 +48,6 @@
     SUBDIR += hs-zip-archive
     SUBDIR += hs-zlib
     SUBDIR += hs-zlib-bindings
-    SUBDIR += hs-zlib-enum
     SUBDIR += innoextract
     SUBDIR += javatar
     SUBDIR += jzlib

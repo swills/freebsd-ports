@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/aster/Makefile 477484 2018-08-18 08:51:53Z thierry $
+# $FreeBSD: head/french/aster/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	aster
 DISTVERSION=	${ASTER_DISTVERSION}
@@ -12,6 +12,7 @@ COMMENT=	Code_Aster finite element method solver
 LICENSE=	GPLv2
 
 BROKEN_FreeBSD_12=	does not build (sed: ${STAGEDIR}${inst_dir}/${VE}/aster.conf: No such file or directory)
+BROKEN_FreeBSD_13=	does not build (sed: ${STAGEDIR}${inst_dir}/${VE}/aster.conf: No such file or directory)
 
 #-----------------------------------------------------------------------
 # You may define these options:

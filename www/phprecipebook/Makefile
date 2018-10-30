@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/phprecipebook/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/phprecipebook/Makefile 482665 2018-10-21 11:17:12Z antoine $
 
 PORTNAME=	phprecipebook
 PORTVERSION=	3.01
@@ -26,7 +26,7 @@ OPTIONS_DEFAULT=	MYSQL
 
 MYSQL_USE=	PHP=mysql
 MYSQL_USES=	mysql
-MYSQL_VARS=	IGNORE_WITH_PHP+="70 71"
+MYSQL_VARS=	IGNORE_WITH_PHP+="70 71 72 73"
 PGSQL_USE=	PHP=pgsql
 PGSQL_USES=	pgsql
 

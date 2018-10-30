@@ -1,8 +1,8 @@
 # Created by: J. Giovannangeli
-# $FreeBSD: head/devel/ocaml-opam/Makefile 480326 2018-09-21 23:02:59Z swills $
+# $FreeBSD: head/devel/ocaml-opam/Makefile 483093 2018-10-27 01:52:47Z swills $
 
 PORTNAME=	opam
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/ocaml/opam/releases/download/${DISTVERSION}/
 PKGNAMEPREFIX=	ocaml-

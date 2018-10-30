@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 483157 2018-10-27 17:36:20Z linimon $
 
 PORTNAME=	google-compute-engine-oslogin
 DISTVERSION=	1.3.0
@@ -10,10 +10,6 @@ COMMENT=	OS Login Guest Environment for Google Compute Engine
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/../LICENSE
-
-BROKEN_mips=		fails to compile: utils/oslogin_utils.cc:16:23: curl/curl.h: No such file or directory
-BROKEN_mips64=		fails to compile: utils/oslogin_utils.cc:16:23: curl/curl.h: No such file or directory
-BROKEN_powerpc64=	fails to compile: utils/oslogin_utils.cc:16:23: curl/curl.h: No such file or directory
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libjson-c.so:devel/json-c

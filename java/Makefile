@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/Makefile 481470 2018-10-07 18:16:38Z glewis $
+# $FreeBSD: head/java/Makefile 483171 2018-10-27 19:33:56Z pi $
 #
 
     COMMENT = Java language support
@@ -129,6 +129,9 @@
     SUBDIR += visualvm
     SUBDIR += wildfly10
     SUBDIR += wildfly11
+    SUBDIR += wildfly12
+    SUBDIR += wildfly13
+    SUBDIR += wildfly14
     SUBDIR += wildfly90
     SUBDIR += xdoclet
 

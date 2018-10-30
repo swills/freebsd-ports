@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/p5-TokyoCabinet/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-TokyoCabinet/Makefile 483423 2018-10-29 22:14:47Z sunpoet $
 
 PORTNAME=	TokyoCabinet
 PORTVERSION=	1.34
 PORTREVISION=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	LOCAL/kuriyama \
-		http://fallabs.com/tokyocabinet/perlpkg/
+		https://fallabs.com/tokyocabinet/perlpkg/
 PKGNAMEPREFIX=	p5-
 DISTNAME=	tokyocabinet-perl-${PORTVERSION}
 

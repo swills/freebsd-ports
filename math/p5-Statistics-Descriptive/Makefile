@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/math/p5-Statistics-Descriptive/Makefile 481605 2018-10-09 06:25:23Z wen $
+# $FreeBSD: head/math/p5-Statistics-Descriptive/Makefile 483200 2018-10-27 23:24:05Z sunpoet $
 
 PORTNAME=	Statistics-Descriptive
-PORTVERSION=	3.0701
+PORTVERSION=	3.0702
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,12 +12,14 @@ COMMENT=	Perl module that supplies statistical methods for perl5
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,12 +1,12 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-kyotocabinet/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-kyotocabinet/Makefile 483407 2018-10-29 22:12:33Z sunpoet $
 
 PORTNAME=	kyotocabinet
 PORTVERSION=	1.22
 DISTVERSIONPREFIX=	python-
 PORTREVISION=	1
 CATEGORIES=	databases python
-MASTER_SITES=	http://fallabs.com/${PORTNAME}/pythonpkg/ \
+MASTER_SITES=	https://fallabs.com/${PORTNAME}/pythonpkg/ \
 		LOCAL/sunpoet
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

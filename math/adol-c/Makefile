@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/adol-c/Makefile 481207 2018-10-04 07:23:06Z yuri $
+# $FreeBSD: head/math/adol-c/Makefile 483226 2018-10-28 05:42:13Z yuri $
 
 PORTNAME=	adol-c
 DISTVERSION=	2.6.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		gmake libtool tar:tgz
+USES=		compiler:c++11-lang gmake libtool tar:tgz
 GNU_CONFIGURE=	yes
 CONFIGURE_SHELL=	${LOCALBASE}/bin/bash
 USE_LDCONFIG=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cxxopts/Makefile 477135 2018-08-14 05:52:45Z yuri $
+# $FreeBSD: head/devel/cxxopts/Makefile 483263 2018-10-28 10:32:30Z linimon $
 
 PORTNAME=	cxxopts
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Lightweight C++ command line option parser
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	jarro2783
 NO_ARCH=	yes

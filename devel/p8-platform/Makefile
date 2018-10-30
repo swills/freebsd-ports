@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p8-platform/Makefile 473634 2018-06-30 19:34:07Z decke $
+# $FreeBSD: head/devel/p8-platform/Makefile 483239 2018-10-28 08:31:14Z linimon $
 
 PORTNAME=	p8-platform
 PORTVERSION=	2.1.0.1
@@ -10,7 +10,7 @@ COMMENT=	Platform support library used by libCEC and binary add-ons for Kodi
 
 LICENSE=	GPLv2+
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Pulse-Eight

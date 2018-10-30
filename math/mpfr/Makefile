@@ -1,8 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/math/mpfr/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/math/mpfr/Makefile 483463 2018-10-30 10:26:12Z ale $
 
 PORTNAME=	mpfr
 PORTVERSION=	4.0.1
+PORTREVISION=	1
 CATEGORIES=	math devel
 MASTER_SITES=	http://www.mpfr.org/mpfr-current/ \
 		GNU
@@ -17,12 +18,12 @@ COMMENT=	Library for multiple-precision floating-point computations
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
-#PATCH_DEPENDS=	gpatch:devel/patch
+PATCH_DEPENDS=	gpatch:devel/patch
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-#PATCHLEVEL=	2
-#PATCHFILES!=	/usr/bin/jot -s " " -w patch%02d ${PATCHLEVEL} 1 ${PATCHLEVEL}
-#PATCH=		${LOCALBASE}/bin/gpatch
+PATCHLEVEL=	13
+PATCHFILES!=	/usr/bin/jot -s " " -w patch%02d ${PATCHLEVEL} 1 ${PATCHLEVEL}
+PATCH=		${LOCALBASE}/bin/gpatch
 
 USES=		libtool tar:xz
 GNU_CONFIGURE=	yes

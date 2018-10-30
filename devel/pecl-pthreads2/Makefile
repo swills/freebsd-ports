@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-pthreads2/Makefile 445699 2017-07-13 18:12:39Z sunpoet $
+# $FreeBSD: head/devel/pecl-pthreads2/Makefile 482665 2018-10-21 11:17:12Z antoine $
 
 PORTNAME=	pthreads
 PORTVERSION=	2.0.10
@@ -16,7 +16,7 @@ PORTSCOUT=	limit:^2\.
 CFLAGS+=	-I${LOCALBASE}/include
 
 USES=		php:pecl
-IGNORE_WITH_PHP=70 71
+IGNORE_WITH_PHP=70 71 72 73
 
 .include <bsd.port.options.mk>
 

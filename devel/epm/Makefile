@@ -1,10 +1,10 @@
 # Created by: NAKATA Maho <maho@FreeBSD.org>
-# $FreeBSD: head/devel/epm/Makefile 438622 2017-04-16 09:02:18Z amdmi3 $
+# $FreeBSD: head/devel/epm/Makefile 483415 2018-10-29 22:13:42Z sunpoet $
 
 PORTNAME=	epm
 PORTVERSION=	4.3
 CATEGORIES=	devel
-MASTER_SITES=	http://www.msweet.org/files/project2/
+MASTER_SITES=	https://github.com/michaelrsweet/epm/releases/download/release-${PORTVERSION}/
 EXTRACT_SUFX=	-source.tar.bz2
 
 MAINTAINER=	office@FreeBSD.org

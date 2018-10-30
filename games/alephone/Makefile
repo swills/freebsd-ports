@@ -1,5 +1,5 @@
 # Created by: Michael Alyn Miller <malyn@strangeGizmo.com>
-# $FreeBSD: head/games/alephone/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/alephone/Makefile 483246 2018-10-28 09:12:04Z jbeich $
 
 PORTNAME=	alephone
 PORTVERSION=	20150620
@@ -14,6 +14,7 @@ COMMENT=	The open source version of Bungie's Marathon game
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/function.hpp:devel/boost-libs
 
 USES=		gmake localbase pkgconfig tar:bzip2
+USE_CXXSTD=	gnu++98
 USE_SDL=	image net sdl ttf
 USE_GL=		yes
 GNU_CONFIGURE=	yes

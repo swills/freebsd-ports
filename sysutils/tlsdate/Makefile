@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/tlsdate/Makefile 482230 2018-10-16 14:26:45Z sunpoet $
+# $FreeBSD: head/sysutils/tlsdate/Makefile 482621 2018-10-20 20:47:58Z antoine $
 
 PORTNAME=	tlsdate
 PORTVERSION=	0.0.13
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	sunpoet@FreeBSD.org

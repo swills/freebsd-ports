@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/plasma5-plasma-workspace/Makefile 479245 2018-09-08 10:28:11Z adridg $
+# $FreeBSD: head/x11/plasma5-plasma-workspace/Makefile 483271 2018-10-28 10:59:23Z tcberner $
 
 PORTNAME=	plasma-workspace
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	4
 CATEGORIES=	x11 kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -35,7 +34,7 @@ USE_KDE=	activities activitymanagerd attica auth baloo bookmarks \
 		texteditor textwidgets unitconversion wallet wayland \
 		widgetsaddons windowsystem xmlgui xmlrpcclient \
 		breeze_run breeze-icons_run oxygen-icons5_run \
-		kde-cli-tools_run kded_run milou_run
+		kded_run milou_run
 USE_QT=		concurrent core dbus graphicaleffects gui network phonon4 \
 		printsupport qdbus qml quick quickcontrols_run script sql \
 		testlib webkit widgets x11extras xml \

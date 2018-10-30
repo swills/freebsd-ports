@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind911/Makefile 480174 2018-09-20 14:12:09Z mat $
+# $FreeBSD: head/dns/bind911/Makefile 482890 2018-10-24 08:05:48Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libxml2.so:textproc/libxml2
 USES=	cpe libedit
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.11.4-P2
+ISCVERSION=	9.11.5
 
 CPE_VENDOR=	isc
 CPE_VERSION=	${ISCVERSION:C/-.*//}

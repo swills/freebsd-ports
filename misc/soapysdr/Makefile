@@ -1,9 +1,8 @@
-# $FreeBSD: head/misc/soapysdr/Makefile 480499 2018-09-23 12:32:19Z linimon $
+# $FreeBSD: head/misc/soapysdr/Makefile 483002 2018-10-26 03:54:35Z yuri $
 
 PORTNAME=	SoapySDR
 DISTVERSIONPREFIX=	soapy-sdr-
-DISTVERSION=	0.6.1-71
-DISTVERSIONSUFFIX=	-g69c16e9
+DISTVERSION=	0.7.0
 CATEGORIES=	misc hamradio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -16,5 +15,7 @@ USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	pothosware
 USE_LDCONFIG=	yes
+
+LDFLAGS+=	-pthread
 
 .include <bsd.port.mk>

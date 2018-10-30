@@ -1,9 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-patsy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-patsy/Makefile 483334 2018-10-28 19:57:09Z sunpoet $
 
 PORTNAME=	patsy
-PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTVERSION=	0.5.1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +19,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS EXAMPLES

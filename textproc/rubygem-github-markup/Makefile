@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-github-markup/Makefile 482545 2018-10-20 14:53:14Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-markup/Makefile 482705 2018-10-21 16:51:57Z sunpoet $
 
 PORTNAME=	github-markup
-PORTVERSION=	3.0.0
+PORTVERSION=	3.0.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

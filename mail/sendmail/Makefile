@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/sendmail/Makefile 477315 2018-08-16 08:56:17Z dinoex $
+# $FreeBSD: head/mail/sendmail/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	sendmail
 PORTVERSION=	8.15.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.sendmail.org/pub/sendmail/
 DISTNAME=	${PORTNAME}.${PORTVERSION}

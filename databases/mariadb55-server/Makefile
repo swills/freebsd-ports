@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/mariadb55-server/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/databases/mariadb55-server/Makefile 483172 2018-10-27 20:45:43Z brnrd $
 
 PORTNAME?=	mariadb
-PORTVERSION=	5.5.61
-PORTREVISION?=	1
+PORTVERSION=	5.5.62
+PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/mariadb/${PORTNAME}-${PORTVERSION}/source/ \
 		http://mirrors.supportex.net/mariadb/${PORTNAME}-${PORTVERSION}/source/ \
@@ -49,6 +49,7 @@ CMAKE_ARGS+=	-DINSTALL_DOCDIR="share/doc/mysql" \
 
 DATADIR=	${PREFIX}/share/mysql
 
+BROKEN_FreeBSD_12=	Does not support OpenSSL 1.1
 BROKEN_sparc64=		Does not compile: Unsupported platform
 BROKEN_SSL=		openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	incomplete definition of type 'struct dh_st'

@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng36/Makefile 481985 2018-10-13 14:04:00Z cy $
+# $FreeBSD: head/sysutils/syslog-ng36/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.6.4
@@ -56,6 +56,7 @@ CONFIGURE_ARGS=	--sysconfdir=${LOCALBASE}/etc --localstatedir=/var/db \
 
 .if ${PORT_OPTIONS:MOPENSSL}
 BROKEN_FreeBSD_12=	Fails to build with openssl111
+BROKEN_FreeBSD_13=	Fails to build with openssl111
 USES+=			ssl
 CONFIGURE_ARGS+=	--enable-ssl
 CONFIGURE_ENV+=		OPENSSL_CFLAGS="-I${OPENSSLINC}" \

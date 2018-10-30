@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-dri/Makefile 482192 2018-10-16 00:00:20Z jbeich $
+# $FreeBSD: head/graphics/mesa-dri/Makefile 483225 2018-10-28 05:04:41Z jbeich $
 
 PORTNAME=	mesa-dri
 PORTVERSION=	${MESAVERSION}
@@ -46,7 +46,11 @@ VULKAN_DRIVERS=		#
 .if ${ARCH} == amd64 || ${ARCH} == i386 \
  || ${ARCH} == powerpc || ${ARCH} == powerpc64
 DRI_DRIVERS+=		RADEON R200
-GALLIUM_DRIVERS+=	R300 R600
+GALLIUM_DRIVERS+=	R600
+. if "${MESA_LLVM_VER}" != "" && (${ARCH} == amd64 || ${ARCH} == i386)
+# https://cgit.freedesktop.org/mesa/mesa/commit/?id=58952675f6d4
+GALLIUM_DRIVERS+=	R300
+. endif
 . if "${MESA_LLVM_VER}" != ""	# until PPC gets LLVM in base
 GALLIUM_DRIVERS+=	RADEONSI
 VULKAN_DRIVERS+=	RADEON
@@ -80,11 +84,8 @@ LDFLAGS+=		-B${LOCALBASE}/bin
 .endif
 
 # enables VK_KHR_wayland_surface in Vulkan drivers
-.if ${PORT_OPTIONS:MWAYLAND}
+.if ${PORT_OPTIONS:MWAYLAND} && !empty(VULKAN_DRIVERS)
 CONFIGURE_ARGS+=	--with-platforms=x11,surfaceless,drm,wayland
-. if empty(VULKAN_DRIVERS)
-IGNORE=	option WAYLAND is only valid on platforms with Vulkan
-. endif
 .endif
 
 CONFIGURE_ARGS+=	--with-dri-drivers="${DRI_DRIVERS:tl}" \

@@ -1,5 +1,5 @@
 # Created by: Ruben <chromium@hybridsource.org>
-# $FreeBSD: head/lang/dmd2/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/dmd2/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	dmd
 PORTVERSION=	2.073.2
@@ -22,6 +22,7 @@ BROKEN_mips64=		fails to compile: cc1: unrecognized command line option -m32
 BROKEN_powerpc64=	fails to build: can't mangle function with unknown linkage (void*())
 BROKEN_sparc64=		fails to install: divide-by-zero error
 BROKEN_FreeBSD_12=	stack corruption in generated dmd tool caused by inode64 resulting in segfault
+BROKEN_FreeBSD_13=	stack corruption in generated dmd tool caused by inode64 resulting in segfault
 NOT_FOR_ARCHS=		aarch64
 NOT_FOR_ARCHS_REASON=	no cpu specified, assuming X86
 

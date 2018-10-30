@@ -1,11 +1,10 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/kyotocabinet/Makefile 473660 2018-07-01 09:17:45Z linimon $
+# $FreeBSD: head/databases/kyotocabinet/Makefile 483403 2018-10-29 22:12:03Z sunpoet $
 
 PORTNAME=	kyotocabinet
-PORTVERSION=	1.2.76
-PORTREVISION=	1
+PORTVERSION=	1.2.77
 CATEGORIES=	databases
-MASTER_SITES=	http://fallabs.com/${PORTNAME}/pkg/ \
+MASTER_SITES=	https://fallabs.com/${PORTNAME}/pkg/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -19,13 +18,14 @@ BROKEN_powerpc=		fails to link
 
 OPTIONS_DEFINE=	DOCS
 
+USES=		gmake
+
 CPPFLAGS+=	-fPIC
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 MAKE_ARGS=	PCDIR=${PREFIX}/libdata/pkgconfig
 REINPLACE_ARGS=	-i ''
 TEST_TARGET=	check
-USES=		gmake
 USE_LDCONFIG=	yes
 
 post-patch:

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/rhtvision/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/rhtvision/Makefile 483249 2018-10-28 09:36:56Z jbeich $
 
 PORTNAME=	rhtvision
 PORTVERSION=	2.2.1.1
@@ -29,7 +29,7 @@ CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 # The port does not build with C++11 or later (bug 219275).
-USE_CXXSTD=     gnu++03
+USE_CXXSTD=     gnu++98
 
 PLIST_SUB=	VERSION="${PORTVERSION:R}"
 

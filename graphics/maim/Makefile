@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/maim/Makefile 480451 2018-09-23 04:38:22Z linimon $
+# $FreeBSD: head/graphics/maim/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	maim
 PORTVERSION=	5.5.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	neel@neelc.org

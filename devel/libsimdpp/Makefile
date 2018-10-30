@@ -1,9 +1,13 @@
-# $FreeBSD: head/devel/libsimdpp/Makefile 472641 2018-06-17 21:48:45Z yuri $
+# $FreeBSD: head/devel/libsimdpp/Makefile 483448 2018-10-30 04:57:21Z yuri $
 
 PORTNAME=	libsimdpp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.1
+PORTREVISION=	1
 CATEGORIES=	devel
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/
+PATCHFILES=	e71d2ca2d445db627308167cd551d4934af5f4af.patch:-p1 # https://github.com/p12tic/libsimdpp/pull/129
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Header-only zero-overhead C++ wrapper of SIMD instructions

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kde-dev-utils/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/kde-dev-utils/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kde-dev-utils
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	devel kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE development utilities
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		compiler:c++11-lang cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n itemviews jobwidgets kio parts service \
 		solid sonnet textwidgets widgetsaddons xmlgui

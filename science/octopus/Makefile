@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/octopus/Makefile 481254 2018-10-04 21:10:42Z yuri $
+# $FreeBSD: head/science/octopus/Makefile 482633 2018-10-20 23:29:28Z yuri $
 
 PORTNAME=	octopus
 DISTVERSION=	8.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	http://www.tddft.org/programs/${PORTNAME}/download/${DISTVERSION}/
 

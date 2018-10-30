@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/libopusenc/Makefile 480812 2018-09-27 19:03:24Z naddy $
+# $FreeBSD: head/audio/libopusenc/Makefile 482611 2018-10-20 18:13:19Z naddy $
 
 PORTNAME=	libopusenc
-PORTVERSION=	0.2
+PORTVERSION=	0.2.1
 CATEGORIES=	audio
 MASTER_SITES=	MOZILLA/opus
 

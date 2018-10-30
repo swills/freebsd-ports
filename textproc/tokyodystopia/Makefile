@@ -1,10 +1,10 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/textproc/tokyodystopia/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/textproc/tokyodystopia/Makefile 483432 2018-10-29 22:16:00Z sunpoet $
 
 PORTNAME=	tokyodystopia
 PORTVERSION=	0.9.15
 CATEGORIES=	textproc
-MASTER_SITES=	http://fallabs.com/${PORTNAME}/
+MASTER_SITES=	https://fallabs.com/${PORTNAME}/
 
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Full-text search system based on Tokyo Cabinet

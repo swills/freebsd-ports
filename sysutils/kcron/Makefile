@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kcron/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/kcron/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kcron
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KDE task scheduler
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons ecm \
 		doctools i18n iconthemes jobwidgets kio service widgetsaddons \
 		xmlgui

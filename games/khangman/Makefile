@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/khangman/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/khangman/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	khangman
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	games kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Hangman game for KDE 4
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		crash doctools ecm i18n kdeclarative libkeduvocdocument \
 		newstuff notifications package service widgetsaddons xmlgui

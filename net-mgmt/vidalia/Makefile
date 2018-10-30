@@ -1,5 +1,5 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/net-mgmt/vidalia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-mgmt/vidalia/Makefile 482670 2018-10-21 12:53:22Z tobik $
 
 PORTNAME=	vidalia
 PORTVERSION=	0.2.21
@@ -8,6 +8,9 @@ MASTER_SITES=	TOR/vidalia
 
 MAINTAINER=	fk@fabiankeil.de
 COMMENT=	Graphical Tor controller based on Qt 4.x
+
+DEPRECATED=	outdated and unmaintained
+EXPIRATION_DATE=	2018-11-15
 
 USES=		cmake qt:4
 INSTALLS_ICONS=	yes

@@ -1,9 +1,8 @@
 # Created by: Gabor Pali <pgj@FreeBSD.org>
-# $FreeBSD: head/devel/cppcheck/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/cppcheck/Makefile 483043 2018-10-26 16:52:27Z amdmi3 $
 
 PORTNAME=	cppcheck
-PORTVERSION=	1.84
-PORTREVISION=	1
+PORTVERSION=	1.85
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org

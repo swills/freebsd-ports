@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/eduke32/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/eduke32/Makefile 483095 2018-10-27 01:59:28Z swills $
 
 PORTNAME=	eduke32
 PORTVERSION=	20180809
@@ -51,6 +51,8 @@ OPTIONS_DEFINE_i386=	ASM
 OPTIONS_DEFAULT_i386=	ASM
 OPTIONS_DEFAULT_amd64=	GCC
 OPTIONS_DEFAULT_powerpc=	GCC
+OPTIONS_DEFAULT_powerpcspe=	GCC
+OPTIONS_DEFAULT_powerpc64=	GCC
 OPTIONS_DEFAULT_sparc64=	GCC
 
 ASM_BUILD_DEPENDS=	nasm:devel/nasm

@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70-extensions/Makefile 469857 2018-05-14 08:08:47Z tz $
+# $FreeBSD: head/lang/php70-extensions/Makefile 482665 2018-10-21 11:17:12Z antoine $
 
 PORTNAME=	php70
 PORTVERSION=	1.1
@@ -11,7 +11,7 @@ COMMENT=	"meta-port" to install PHP extensions
 
 USES=		metaport php
 PHP_VER=	70
-IGNORE_WITH_PHP=	56
+IGNORE_WITH_PHP=	56 71 72 73
 
 OPTIONS_DEFINE=	BCMATH BZ2 CALENDAR CTYPE CURL DBA \
 		DOM ENCHANT EXIF FILEINFO FILTER FTP GD GETTEXT \

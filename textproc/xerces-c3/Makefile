@@ -1,9 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/textproc/xerces-c3/Makefile 451530 2017-10-08 13:47:16Z sunpoet $
+# $FreeBSD: head/textproc/xerces-c3/Makefile 483421 2018-10-29 22:14:31Z sunpoet $
 
 PORTNAME=	xerces-c
-PORTVERSION=	3.2.0
-PORTREVISION=	2
+PORTVERSION=	3.2.2
 CATEGORIES=	textproc
 MASTER_SITES=	APACHE/xerces/c/3/sources
 PKGNAMESUFFIX=	3
@@ -14,6 +13,8 @@ COMMENT=	Validating XML parser from the Apache XML Project
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		cpe gmake iconv libtool pathfix
+
 CONFIGURE_ARGS=	--enable-netaccessor-socket \
 		--enable-transcoder-iconv \
 		--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig
@@ -22,7 +23,6 @@ INSTALL_TARGET=	install-strip
 MAKE_ENV=	XERCESCROOT=${WRKSRC}
 TEST_TARGET=	check
 USE_LDCONFIG=	yes
-USES=		cpe gmake iconv libtool pathfix
 
 PLIST_SUB=	MAJOR_VER=${PORTVERSION:R}
 
@@ -30,7 +30,7 @@ CPE_PRODUCT=	xerces-c++
 CPE_VENDOR=	apache
 
 post-patch:
-	${REINPLACE_CMD} -e "s,@DEFS@,& -D__STDC_LIMIT_MACROS," ${WRKSRC}/src/Makefile.in
+	@${REINPLACE_CMD} -e "s,@DEFS@,& -D__STDC_LIMIT_MACROS," ${WRKSRC}/src/Makefile.in
 
 post-install:
 	${LN} -s libxerces-c-${PORTVERSION:R}.so ${STAGEDIR}${PREFIX}/lib/libxerces-c.so.${PORTVERSION:R:R}

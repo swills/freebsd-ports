@@ -1,16 +1,22 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/sysutils/ssid/Makefile 372709 2014-11-18 09:37:31Z bapt $
+# $FreeBSD: head/sysutils/ssid/Makefile 482969 2018-10-25 13:01:57Z tobik $
 
 PORTNAME=	ssid
 PORTVERSION=	0.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dl.suckless.org/tools/
 
-MAINTAINER=	ports@FreeBSD.org
-COMMENT=	Simple setsid replacement
+MAINTAINER=	tobik@FreeBSD.org
+COMMENT=	Run a command in a new session
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-PLIST_FILES=	bin/ssid
+PLIST_FILES=	bin/setsid bin/ssid
+
+post-install:
+	${LN} ${STAGEDIR}${PREFIX}/bin/ssid \
+		${STAGEDIR}${PREFIX}/bin/setsid
 
 .include <bsd.port.mk>

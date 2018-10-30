@@ -1,5 +1,5 @@
 # Created by: Sutra Zhou <zhoushuqun@gmail.com>
-# $FreeBSD: head/devel/libopkele/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/libopkele/Makefile 483472 2018-10-30 11:46:22Z linimon $
 
 PORTNAME=	libopkele
 PORTVERSION=	2.0.4
@@ -18,18 +18,15 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libtidy.so:www/tidy-lib \
 		libxslt.so:textproc/libxslt
 
-BROKEN_powerpc64=	fails to compile: iterator.h: error: invalid abstract return type
 BROKEN_SSL=	openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'DH' (aka 'dh_st')
 
+USES=		gmake libtool localbase:ldflags pathfix \
+		pkgconfig ssl
 USE_LDCONFIG=	yes
-USES=		libtool gmake pathfix pkgconfig compiler:c++11-lang ssl
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	"OPENSSL_CFLAGS=${CFLAGS} -l${OPENSSLINC}" \
 		OPENSSL_LIBS=-L${OPENSSLLIB}
-CPPFLAGS+=	-I${LOCALBASE}/include
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 .include <bsd.port.pre.mk>
 

@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/gflags/Makefile 462288 2018-02-19 10:29:04Z sunpoet $
+# $FreeBSD: head/devel/gflags/Makefile 482707 2018-10-21 16:52:14Z sunpoet $
 
 PORTNAME=	gflags
 PORTVERSION=	2.2.1
@@ -12,13 +12,15 @@ COMMENT=	Commandline flags module for C++
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
+USES=		cmake compiler:c++11-lang pathfix shebangfix
+
 CMAKE_ARGS=	-DGFLAGS_NAMESPACE:STRING=gflags
 CMAKE_OFF=	REGISTER_INSTALL_PREFIX
 CMAKE_ON=	BUILD_SHARED_LIBS BUILD_STATIC_LIBS BUILD_TESTING \
 		INSTALL_HEADERS INSTALL_SHARED_LIBS INSTALL_STATIC_LIBS
 TEST_TARGET=	test
+USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
-USES=		cmake pathfix shebangfix
 
 USE_GITHUB=	yes
 

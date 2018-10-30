@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70/Makefile 481525 2018-10-08 08:52:51Z tz $
+# $FreeBSD: head/lang/php70/Makefile 482677 2018-10-21 14:34:39Z joneum $
 
 PORTNAME=	php70
 PORTVERSION=	7.0.32
@@ -10,6 +10,9 @@ DISTNAME=	php-${PORTVERSION}
 
 MAINTAINER=	tz@FreeBSD.org
 COMMENT=	PHP Scripting Language
+
+DEPRECATED=	Security Support ends on 3 Dec 2018
+EXPIRATION_DATE=	2018-12-04
 
 LICENSE=	PHP301
 

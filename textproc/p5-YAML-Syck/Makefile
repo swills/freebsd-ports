@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-YAML-Syck/Makefile 481621 2018-10-09 10:52:38Z wen $
+# $FreeBSD: head/textproc/p5-YAML-Syck/Makefile 482995 2018-10-25 22:34:52Z adamw $
 
 PORTNAME=	YAML-Syck
-PORTVERSION=	1.30
+PORTVERSION=	1.31
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,6 +15,5 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		perl5
 USE_PERL5=	configure
-CONFIGURE_ARGS+=	< /dev/null
 
 .include <bsd.port.mk>

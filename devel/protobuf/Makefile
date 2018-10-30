@@ -1,10 +1,10 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/protobuf/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/protobuf/Makefile 483235 2018-10-28 08:07:37Z linimon $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.5.2
-PORTREVISION=	1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel
 
@@ -28,8 +28,8 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 TEST_ARGS=	${MAKE_ARGS} ${_MAKE_JOBS}
 TEST_TARGET=	check
-USE_LDCONFIG=	yes
 USES=		autoreconf compiler:c++11-lang gmake libtool localbase pathfix pkgconfig
+USE_LDCONFIG=	yes
 
 GH_ACCOUNT=	google
 USE_GITHUB=	yes

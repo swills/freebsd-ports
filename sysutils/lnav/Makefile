@@ -1,5 +1,5 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/sysutils/lnav/Makefile 472590 2018-06-17 02:29:05Z linimon $
+# $FreeBSD: head/sysutils/lnav/Makefile 483346 2018-10-28 20:03:03Z linimon $
 
 PORTNAME=	lnav
 PORTVERSION=	0.8.2
@@ -11,8 +11,6 @@ MAINTAINER=	tom@hur.st
 COMMENT=	Terminal based log file navigator
 
 LICENSE=	BSD2CLAUSE
-
-BROKEN_powerpc64=	fails to build: lnav.cc:(.text+0x509c): undefined reference to pcrecpp::RE::QuoteMeta[abi:cxx11](pcrecpp::StringPiece const&)
 
 LIB_DEPENDS=	libpcrecpp.so:devel/pcre
 

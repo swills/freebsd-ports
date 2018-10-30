@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/qoauth-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/qoauth-qt5/Makefile 482605 2018-10-20 17:00:28Z tcberner $
 
 PORTNAME=	qoauth
 PORTVERSION=	2.0.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
 
-USES=		qmake:outsource qt:5
+USES=		compiler:c++11-lang qmake:outsource qt:5
 USE_LDCONFIG=	yes
 USE_QT=		core network testlib buildtools_build qmake_build
 

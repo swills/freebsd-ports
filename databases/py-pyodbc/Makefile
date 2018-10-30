@@ -1,8 +1,8 @@
 # Created by: Robert Kruus <rob.kruus@gmail.com>
-# $FreeBSD: head/databases/py-pyodbc/Makefile 454367 2017-11-17 08:15:04Z wen $
+# $FreeBSD: head/databases/py-pyodbc/Makefile 483111 2018-10-27 06:00:24Z wen $
 
 PORTNAME=	pyodbc
-PORTVERSION=	4.0.21
+PORTVERSION=	4.0.24
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11/alacritty/Makefile 481969 2018-10-13 09:12:15Z jbeich $
+# $FreeBSD: head/x11/alacritty/Makefile 482993 2018-10-25 21:59:37Z jbeich $
 
 PORTNAME=	alacritty
 PORTVERSION=	0.2.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	zeising@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/hawk/Makefile 466796 2018-04-08 12:19:58Z brnrd $
+# $FreeBSD: head/net-mgmt/hawk/Makefile 482665 2018-10-21 11:17:12Z antoine $
 
 PORTNAME=	hawk
 PORTVERSION=	0.6
@@ -18,7 +18,7 @@ RUN_DEPENDS=	p5-Net-Netmask>=0:net-mgmt/p5-Net-Netmask \
 
 USES=		mysql:server php:mod perl5
 USE_PHP=	mysql
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72 73
 
 NO_BUILD=	yes
 USE_RC_SUBR=	hawk

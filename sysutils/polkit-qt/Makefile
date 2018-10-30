@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@Fluffy.Khv.RU>
-# $FreeBSD: head/sysutils/polkit-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/polkit-qt/Makefile 482866 2018-10-23 18:25:17Z tcberner $
 
 PORTNAME=	polkit-qt
 DISTVERSIONPREFIX=	1-
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libpolkit-agent-1.so:sysutils/polkit
 FLAVORS=	qt4 qt5
 FLAVOR?=	${FLAVORS:[1]}
 
-USES=		cmake:outsource pkgconfig tar:bzip2
+USES=		cmake:outsource gnome pkgconfig tar:bzip2
 USE_GNOME=	glib20
 CMAKE_OFF=	BUILD_EXAMPLES  \
 		BUILD_TEST
@@ -34,7 +34,7 @@ CMAKE_ON+=	USE_QT4
 CMAKE_OFF+=	USE_QT5
 QTVER_SUFFIX=	# empty
 .  else
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=		core dbus gui widgets buildtools_build qmake_build
 CMAKE_ON+=	USE_QT5
 CMAKE_OFF+=	USE_QT4

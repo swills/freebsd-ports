@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/spamilter/Makefile 482452 2018-10-19 19:27:11Z dinoex $
+# $FreeBSD: head/mail/spamilter/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	spamilter
 PORTVERSION=	0.60
@@ -49,6 +49,7 @@ IPFWMTAD_USES=	ssl
 
 .if ${PORT_OPTIONS:MIPFWMTAD}
 BROKEN_FreeBSD_12=	option IPFWMTAD needs old openssl
+BROKEN_FreeBSD_13=	option IPFWMTAD needs old openssl
 .endif
 
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"

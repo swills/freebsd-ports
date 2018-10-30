@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 477432 2018-08-17 14:50:17Z danfe $
+# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 483140 2018-10-27 14:46:07Z danfe $
 
 PORTNAME=	torrent-file-editor
-PORTVERSION=	0.3.12
+PORTVERSION=	0.3.13
 CATEGORIES=	net-p2p
 MASTER_SITES=	SF/${PORTNAME}/v${PORTVERSION}
 

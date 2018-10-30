@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/devel/objecthash/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/devel/objecthash/Makefile 483299 2018-10-28 14:20:43Z linimon $
 
 PORTNAME=	objecthash
 PORTVERSION=	20160802
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org
@@ -11,13 +11,10 @@ COMMENT=	Cross-language way to cryptographically hash JSON objects
 
 LICENSE=	APACHE20
 
-BROKEN_powerpc64=	Does not build: error: variably modified hash at file scope
-
 LIB_DEPENDS=	libicudata.so:devel/icu \
 		libjson-c.so:devel/json-c
 
 USES=		pkgconfig ssl
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	benlaurie
 GH_PROJECT=	objecthash

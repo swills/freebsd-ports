@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/plasma5-plasma-sdk/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/plasma5-plasma-sdk/Makefile 483271 2018-10-28 10:59:23Z tcberner $
 
 PORTNAME=	plasma-sdk
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

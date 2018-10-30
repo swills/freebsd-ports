@@ -1,5 +1,5 @@
 # Created by: Brian Handy <handy@physics.montana.edu>
-# $FreeBSD: head/sysutils/xosview/Makefile 477239 2018-08-15 16:42:37Z fernape $
+# $FreeBSD: head/sysutils/xosview/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	xosview
 DISTVERSION=	1.20
@@ -12,6 +12,7 @@ LICENSE=	BSD4CLAUSE GPLv2
 LICENSE_COMB=	multi
 
 BROKEN_FreeBSD_12=	Due to changes in sys/vmmeter.h (r328134)
+BROKEN_FreeBSD_13=	Due to changes in sys/vmmeter.h (r328134)
 ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	uses x86-specific hardware resources
 

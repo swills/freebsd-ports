@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/libqxp/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/textproc/libqxp/Makefile 482830 2018-10-23 11:35:03Z jbeich $
 
 PORTNAME=	libqxp
 PORTVERSION=	0.0.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	https://dev-www.libreoffice.org/src/${PORTNAME}/
 

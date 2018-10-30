@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/nnn/Makefile 476921 2018-08-11 14:28:16Z dbaio $
+# $FreeBSD: head/misc/nnn/Makefile 482632 2018-10-20 23:15:15Z yuri $
 
 PORTNAME=	nnn
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.9
+DISTVERSION=	2.0
 CATEGORIES=	misc shells
 
 MAINTAINER=	dg@syrec.org
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	bash:shells/bash \
 		xdg-open:devel/xdg-utils
 
-USES=		gmake localbase ncurses pkgconfig readline shebangfix
+USES=		gmake localbase ncurses pkgconfig shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	jarun
 SHEBANG_FILES=	nlay

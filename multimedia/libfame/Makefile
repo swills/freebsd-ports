@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libfame/Makefile 481465 2018-10-07 17:31:14Z riggs $
+# $FreeBSD: head/multimedia/libfame/Makefile 483116 2018-10-27 09:00:15Z amdmi3 $
 
 PORTNAME=	libfame
 PORTVERSION=	0.9.1
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/fame/${PORTNAME}/${PORTVERSION}
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Video encoding library
 
-LICENSE=	LGPL20
+LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		libtool

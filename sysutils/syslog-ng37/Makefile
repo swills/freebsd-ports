@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng37/Makefile 482037 2018-10-14 09:54:49Z mmokhi $
+# $FreeBSD: head/sysutils/syslog-ng37/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	syslog-ng
 PORTVERSION=	3.7.3
@@ -24,6 +24,7 @@ BUILD_DEPENDS=		xsltproc:textproc/libxslt
 DEPRECATED=		No longer officially supported by Balabit, does not support openssl111
 EXPIRATION_DATE=	2018-12-31
 BROKEN_FreeBSD_12=	fails to build with openssl111
+BROKEN_FreeBSD_13=	fails to build with openssl111
 BROKEN_powerpc64=	fails to link: Internal error: Segmentation fault (program ld)
 BROKEN_sparc64=		fails to link: Internal error: Segmentation fault (program ld)
 

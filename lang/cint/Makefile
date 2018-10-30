@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/lang/cint/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/lang/cint/Makefile 483249 2018-10-28 09:36:56Z jbeich $
 
 PORTNAME=	cint
 PORTVERSION=	5.18.00
@@ -24,7 +24,7 @@ ALL_TARGET=
 
 # The port does not build with C++11/C++14, so explicitly use an older
 # standard.
-USE_CXXSTD=	gnu++03
+USE_CXXSTD=	gnu++98
 
 INSTALL_ARGS=	--bindir=${STAGEDIR}${PREFIX}/bin\
 		--libdir=${STAGEDIR}${PREFIX}/lib/cint\

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qt5pas/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5pas/Makefile 483290 2018-10-28 12:58:11Z linimon $
 
 PORTNAME=	qt5pas
 PORTVERSION=	2.6
@@ -8,9 +8,9 @@ MASTER_SITES=	LOCAL/acm/
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Qt5 binding for FreePascal
 
-USE_LDCONFIG=	yes
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		buildtools_build core gui network printsupport x11extras
+USE_LDCONFIG=	yes
 
 QT5_VER_MIN=	5.6.1
 

@@ -1,22 +1,21 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/misc/exercism/Makefile 481658 2018-10-09 20:48:13Z antoine $
+# $FreeBSD: head/misc/exercism/Makefile 482963 2018-10-25 09:48:16Z 0mp $
 
 PORTNAME=	exercism
-PORTVERSION=	3.0.9
 DISTVERSIONPREFIX=	v
+DISTVERSION=	3.0.9
 CATEGORIES=	misc
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	CLI client for exercism.io
 
 LICENSE=	MIT
-LICENSE_FILE=	LICENSE
-
-BROKEN=		wrong LICENSE_FILE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
 
 USE_GITHUB=	yes
+
 GH_TUPLE=	\
 		exercism:cli:v${PORTVERSION}:DEFAULT/src/github.com/exercism/cli \
 		armon:consul-api:eb2c6b5:consulapi/src/github.com/armon/consul-api \

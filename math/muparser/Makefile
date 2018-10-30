@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/math/muparser/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/math/muparser/Makefile 483253 2018-10-28 09:45:57Z linimon $
 
 PORTNAME=	muparser
 PORTVERSION=	2.2.5
@@ -15,7 +15,11 @@ LICENSE_FILE=	${WRKSRC}/License.txt
 USE_GITHUB=	yes
 GH_ACCOUNT=	beltoforion
 
-USES=		dos2unix pathfix
+USES=		${USES_${ARCH}} dos2unix pathfix
+USES_powerpc64=	compiler:c++11-lang
+USES_powerpc=	compiler:c++11-lang
+USES_powerpcspe=	compiler:c++11-lang
+USES_sparc64=	compiler:c++11-lang
 USE_LDCONFIG=	yes
 
 ALL_TARGET=	lib

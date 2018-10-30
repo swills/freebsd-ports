@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/jdftx/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/science/jdftx/Makefile 482633 2018-10-20 23:29:28Z yuri $
 
 PORTNAME=	jdftx
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4.2-74
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-gba743849
 CATEGORIES=	science
 

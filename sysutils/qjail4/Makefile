@@ -1,5 +1,5 @@
 # Created by: Joe Barbish
-# $FreeBSD: head/sysutils/qjail4/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/sysutils/qjail4/Makefile 483326 2018-10-28 19:28:51Z rene $
 
 PORTNAME=	qjail
 PORTVERSION=	4.9
@@ -25,8 +25,12 @@ USES=		tar:bzip2
 NO_BUILD=	yes
 NO_ARCH=	yes
 
+DEPRECATED=	Only for FreeBSD 10.x , use sysutis/qjail instead
+EXPIRATION_DATE=2018-10-31
+
 IGNORE_FreeBSD_11=	Only for FreeBSD 10.x
 IGNORE_FreeBSD_12=	Only for FreeBSD 10.x
+IGNORE_FreeBSD_13=	Only for FreeBSD 10.x
 
 do-install:
 .for i in qjail qjail.vnet.be qjail.vnet.ng

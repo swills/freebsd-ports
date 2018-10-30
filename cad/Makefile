@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 482319 2018-10-18 00:40:18Z jrm $
+# $FreeBSD: head/cad/Makefile 482960 2018-10-25 09:27:47Z rene $
 #
 
     COMMENT = CAD tools
@@ -46,7 +46,6 @@
     SUBDIR += k40-whisperer
     SUBDIR += kicad
     SUBDIR += kicad-devel
-    SUBDIR += kicad-library
     SUBDIR += kicad-library-footprints
     SUBDIR += kicad-library-footprints-devel
     SUBDIR += kicad-library-packages3d

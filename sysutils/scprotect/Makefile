@@ -1,5 +1,5 @@
 # Created by: Denis Barov  <dindin@dindin.ru>
-# $FreeBSD: head/sysutils/scprotect/Makefile 479890 2018-09-16 11:44:37Z antoine $
+# $FreeBSD: head/sysutils/scprotect/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	scprotect
 PORTVERSION=	20091116
@@ -11,6 +11,7 @@ COMMENT=	Protect process from killing when the swap space is exhausted
 
 BROKEN_FreeBSD_11=	does not build on FreeBSD 11.x+
 BROKEN_FreeBSD_12=	does not build on FreeBSD 11.x+: scprotect.c: 'sysctl__' undeclared (first use in this function)
+BROKEN_FreeBSD_13=	does not build on FreeBSD 11.x+: scprotect.c: 'sysctl__' undeclared (first use in this function)
 DEPRECATED=	Does not build on FreeBSD 11+
 EXPIRATION_DATE=	2018-10-31
 

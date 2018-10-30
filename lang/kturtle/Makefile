@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/kturtle/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/lang/kturtle/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	kturtle
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	lang kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Educational programming environment for KDE
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	attica auth codecs config configwidgets coreaddons crash ecm \
 		emoticons i18n init itemmodels kdelibs4support kio newstuff \
 		service sonnet textwidgets widgetsaddons xmlgui

@@ -1,11 +1,11 @@
-# $FreeBSD: head/lang/php70/Makefile.ext 475982 2018-07-31 08:42:19Z tz $
+# $FreeBSD: head/lang/php70/Makefile.ext 482665 2018-10-21 11:17:12Z antoine $
 
 COMMENT=	The ${PHP_MODNAME} shared extension for php
 
 USES+=	php:ext,noflavors
 PHP_MODNAME=	${PKGNAMESUFFIX:S/-//}
 PHP_VER=	70
-IGNORE_WITH_PHP=	56
+IGNORE_WITH_PHP=	56 71 72 73
 
 EXTSUBDIR=	${DISTNAME}/ext/${PHP_MODNAME}
 WRKSRC=		${WRKDIR}/${EXTSUBDIR}

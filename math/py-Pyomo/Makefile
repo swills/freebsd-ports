@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-Pyomo/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-Pyomo/Makefile 483222 2018-10-28 04:37:14Z yuri $
 
 PORTNAME=	Pyomo
-DISTVERSION=	5.5.0
+DISTVERSION=	5.5.1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

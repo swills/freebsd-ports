@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdegraphics-svgpart/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/kdegraphics-svgpart/Makefile 483125 2018-10-27 11:50:58Z tcberner $
 
 PORTNAME=	svgpart
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	kdegraphics-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	SVG KPart
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons ecm \
 		i18n jobwidgets kio parts service sonnet textwidgets \
 		widgetsaddons xmlgui

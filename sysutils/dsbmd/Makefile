@@ -1,8 +1,8 @@
 # Created by: Marcel Kaiser <mk@nic-nac-project.org>
-# $FreeBSD: head/sysutils/dsbmd/Makefile 478803 2018-09-02 16:05:56Z swills $
+# $FreeBSD: head/sysutils/dsbmd/Makefile 483090 2018-10-27 01:43:21Z swills $
 
 PORTNAME=	dsbmd
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 

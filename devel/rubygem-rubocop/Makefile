@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rubocop/Makefile 480761 2018-09-26 19:18:57Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rubocop/Makefile 483203 2018-10-27 23:24:31Z sunpoet $
 
 PORTNAME=	rubocop
-PORTVERSION=	0.59.2
+PORTVERSION=	0.60.0
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 
@@ -17,7 +17,7 @@ RUN_DEPENDS=	rubygem-jaro_winkler>=1.5.1:devel/rubygem-jaro_winkler \
 		rubygem-powerpack>=0.1:devel/rubygem-powerpack \
 		rubygem-rainbow>=2.2.2:devel/rubygem-rainbow \
 		rubygem-ruby-progressbar>=1.7:devel/rubygem-ruby-progressbar \
-		rubygem-unicode-display_width>=1.0.1:devel/rubygem-unicode-display_width
+		rubygem-unicode-display_width>=1.4.0:devel/rubygem-unicode-display_width
 
 USES=		gem
 USE_RUBY=	yes

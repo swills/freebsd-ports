@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/stacks/Makefile 478697 2018-09-01 14:14:11Z jwb $
+# $FreeBSD: head/biology/stacks/Makefile 483245 2018-10-28 08:58:00Z linimon $
 
 PORTNAME=	stacks
 DISTVERSION=	1.48
@@ -18,4 +18,10 @@ GNU_CONFIGURE=	yes
 
 LDFLAGS+=	-lpthread
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} != amd64 && ${ARCH} != i386
+USE_GCC=        yes
+.endif
+
+.include <bsd.port.post.mk>

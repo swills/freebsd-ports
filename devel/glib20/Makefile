@@ -1,9 +1,9 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/devel/glib20/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/devel/glib20/Makefile 482846 2018-10-23 16:34:43Z jbeich $
 
 PORTNAME=	glib
 PORTVERSION=	2.56.1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
@@ -55,6 +55,7 @@ COLLATION_FIX_DESC=	Use ICU for UTF-8 string collation (if libc is broken)
 
 OPTIONS_EXCLUDE_FreeBSD_11=	COLLATION_FIX
 OPTIONS_EXCLUDE_FreeBSD_12=	COLLATION_FIX
+OPTIONS_EXCLUDE_FreeBSD_13=	COLLATION_FIX
 
 DEBUG_CONFIGURE_ON=	--enable-debug=yes
 

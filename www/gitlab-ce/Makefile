@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-ce/Makefile 481317 2018-10-06 05:29:33Z mfechner $
+# $FreeBSD: head/www/gitlab-ce/Makefile 483459 2018-10-30 09:27:24Z mfechner $
 
 PORTNAME=	gitlab-ce
 PORTVERSION=	11.4.3
@@ -20,7 +20,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-workhorse>=7.0.0:www/gitlab-workhorse \
 	gitaly>=0.125.1:devel/gitaly \
 	gitlab-pages>=1.1.0:www/gitlab-pages \
-	redis>=2.8.23:databases/redis \
+	redis>=3.2.12:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
 	rubygem-rails4>=4.2.10:www/rubygem-rails4 \

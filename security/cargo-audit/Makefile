@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/cargo-audit/Makefile 481921 2018-10-12 19:01:02Z jbeich $
+# $FreeBSD: head/security/cargo-audit/Makefile 482993 2018-10-25 21:59:37Z jbeich $
 
 PORTNAME=	cargo-audit
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.5.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	tobik@FreeBSD.org

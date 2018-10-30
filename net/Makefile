@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 482560 2018-10-20 15:26:26Z zi $
+# $FreeBSD: head/net/Makefile 482874 2018-10-23 22:32:09Z dch $
 #
 
     COMMENT = Networking tools
@@ -147,6 +147,7 @@
     SUBDIR += fiche
     SUBDIR += file2pcap
     SUBDIR += findmtu
+    SUBDIR += flent
     SUBDIR += flower
     SUBDIR += flowgrep
     SUBDIR += fonulator
@@ -166,6 +167,7 @@
     SUBDIR += frr3
     SUBDIR += frr4
     SUBDIR += frr5
+    SUBDIR += frr6
     SUBDIR += fspclient
     SUBDIR += fspd
     SUBDIR += fsplib
@@ -1183,6 +1185,7 @@
     SUBDIR += queso
     SUBDIR += quiterss
     SUBDIR += quoted
+    SUBDIR += rabbiteer
     SUBDIR += rabbitmq
     SUBDIR += rabbitmq-c
     SUBDIR += rabbitmq-c-devel
