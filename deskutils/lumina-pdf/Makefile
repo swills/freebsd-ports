@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/lumina-pdf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/lumina-pdf/Makefile 483485 2018-10-30 12:26:42Z linimon $
 
 PORTNAME=	lumina-pdf
 PORTVERSION=	1.4.1
@@ -25,7 +25,7 @@ MAKE_JOBS_UNSAFE=yes
 
 USE_QT=		core gui widgets network svg multimedia \
 		buildtools_build x11extras concurrent printsupport
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	trueos
 GH_PROJECT=	lumina

@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine312/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/sysutils/cfengine312/Makefile 483486 2018-10-30 12:37:15Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.12.0
@@ -14,11 +14,6 @@ COMMENT=	Systems administration tool for networks
 LICENSE=	GPLv3
 
 CPE_VENDOR=	gnu
-
-DEPRECATED=		OpenSSL 1.1.X is not supported.
-EXPIRATION_DATE=	2021-09-30
-BROKEN_FreeBSD_12=	openssl111 is not supported
-BROKEN_FreeBSD_13=	openssl111 is not supported
 
 CONFLICTS=	cfengine-2* cfengine3[0-9]-* cfengine31[013-9]-*
 .if !defined(MASTERDIR)

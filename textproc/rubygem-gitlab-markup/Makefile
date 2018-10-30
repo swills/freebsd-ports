@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 475374 2018-07-26 13:49:41Z mfechner $
+# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 483499 2018-10-30 16:17:41Z mfechner $
 
 PORTNAME=	gitlab-markup
 PORTVERSION=	1.6.4

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qhttpengine/Makefile 476339 2018-08-04 08:10:03Z yuri $
+# $FreeBSD: head/www/qhttpengine/Makefile 483484 2018-10-30 12:15:47Z linimon $
 
 PORTNAME=	qhttpengine
 DISTVERSION=	1.0.1-5
@@ -11,7 +11,7 @@ COMMENT=	HTTP server for Qt applications
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		cmake:outsource qt:5
+USES=		cmake:outsource compiler:c++11-lang qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	nitroshare
 USE_QT=		core network buildtools_build qmake_build

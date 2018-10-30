@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-calculator/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/lumina-calculator/Makefile 483485 2018-10-30 12:26:42Z linimon $
 
 PORTNAME=	lumina-calculator
 PORTVERSION=	1.4.1
@@ -27,7 +27,7 @@ I18N_DESC=	Install localization files
 
 MAKE_JOBS_UNSAFE=yes
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang gl qmake qt:5
 USE_GL=		gl
 USE_XORG=	x11 xdamage xcb
 USE_QT=		core gui widgets network svg \

@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <carpetsmoker@rwxrwxrwx.net>
-# $FreeBSD: head/graphics/geeqie/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/geeqie/Makefile 483483 2018-10-30 12:13:51Z linimon $
 
 PORTNAME=	geeqie
 PORTVERSION=	1.4
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		autoreconf gettext gmake jpeg localbase pkgconfig \
-		desktop-file-utils tar:xz lua:51
+USES=		autoreconf compiler:c++11-lang gettext gmake gnome jpeg \
+		localbase pkgconfig desktop-file-utils tar:xz lua:51
 USE_GNOME=	intltool
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-readmedir="${DOCSDIR}"
