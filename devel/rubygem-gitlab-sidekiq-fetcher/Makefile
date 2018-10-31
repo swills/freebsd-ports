@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-gitlab-sidekiq-fetcher/Makefile 483495 2018-10-30 16:11:10Z mfechner $
 
 PORTNAME=	gitlab-sidekiq-fetcher
 PORTVERSION=	0.3.0
