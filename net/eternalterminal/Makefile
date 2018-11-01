@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/eternalterminal/Makefile 463185 2018-02-28 08:01:17Z yuri $
+# $FreeBSD: head/net/eternalterminal/Makefile 483512 2018-10-30 19:05:06Z linimon $
 
 PORTNAME=	eternalterminal
 DISTVERSIONPREFIX=	et-v
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libgflags.so:devel/gflags \
 		libprotobuf.so:devel/protobuf \
 		libsodium.so:security/libsodium
 
-USES=		cmake:outsource ncurses
+USES=		cmake:outsource compiler:c++11-lang ncurses
 USE_GITHUB=	yes
 GH_ACCOUNT=	MisterTea
 GH_PROJECT=	EternalTerminal

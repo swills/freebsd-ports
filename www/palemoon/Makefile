@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/www/palemoon/Makefile 483509 2018-10-30 18:55:36Z cmt $
 
 PORTNAME=	palemoon
 DISTVERSION=	27.9.4
@@ -30,8 +30,6 @@ GH_PROJECT=	Pale-Moon
 USE_GECKO=	gecko
 MOZ_PKGCONFIG_FILES=	# empty
 USE_MOZILLA=	-soundtouch
-
-USE_GL=		gl
 
 PM_ICON=	${PORTNAME}.png
 PM_ICON_SRC=	${PREFIX}/lib/${PORTNAME}/browser/icons/mozicon128.png

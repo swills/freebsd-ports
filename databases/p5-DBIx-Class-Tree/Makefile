@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-Tree/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-Tree/Makefile 483647 2018-11-01 09:00:30Z amdmi3 $
 
 PORTNAME=	DBIx-Class-Tree
 PORTVERSION=	0.03003
@@ -10,13 +10,16 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to manipulate and analyze tree structured data
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	\
-	p5-DBIx-Class>=0.08100:databases/p5-DBIx-Class
+RUN_DEPENDS=	p5-DBIx-Class>=0.08100:databases/p5-DBIx-Class
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/archivers/quazip/Makefile 482606 2018-10-20 17:01:44Z tcberner $
+# $FreeBSD: head/archivers/quazip/Makefile 483633 2018-11-01 01:40:47Z linimon $
 
 PORTNAME=	quazip
 DISTVERSION=	0.7.3
@@ -16,7 +16,7 @@ LICENSE=	LGPL21
 FLAVORS=	qt4 qt5
 FLAVOR?=	${FLAVORS:[1]}
 
-USES=		cmake:outsource 
+USES=		cmake:outsource
 USE_LDCONFIG=	yes
 
 .  if ${FLAVOR} == qt4

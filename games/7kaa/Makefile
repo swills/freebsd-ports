@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/7kaa/Makefile 479998 2018-09-18 08:47:31Z linimon $
+# $FreeBSD: head/games/7kaa/Makefile 483636 2018-11-01 04:13:59Z linimon $
 
 PORTNAME=	7kaa
 PORTVERSION=	2.14.7
@@ -20,12 +20,13 @@ BROKEN_armv7=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates
 LIB_DEPENDS=	libenet.so:net/enet \
 		libcurl.so:ftp/curl
 
-USES=		compiler:c++11-lib gmake localbase openal:al pkgconfig tar:xz
+USES=		compiler:c++11-lang gmake localbase openal:al pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 LLD_UNSAFE=	yes
 CONFIGURE_ARGS=	--disable-nls # no translations ATM
 USE_SDL=	sdl2
 CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
+CXXFLAGS_powerpc64=	-Wno-error=narrowing
 CXXFLAGS_clang=		-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/${PORTNAME} \

@@ -1,5 +1,5 @@
 # Created by: Jeffrey Baitis <jeff@baitis.net>
-# $FreeBSD: head/comms/libsdr-gui/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/libsdr-gui/Makefile 483681 2018-11-01 15:34:46Z linimon $
 
 PORTNAME=	libsdr-gui
 PORTVERSION=	0.1.0
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	hmatuschek
 
 USE_QT=		core buildtools_build qmake widgets
-USES=		cmake pkgconfig qt:5
+USES=		cmake compiler:c++11-lang pkgconfig qt:5
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

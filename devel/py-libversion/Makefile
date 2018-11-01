@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-libversion/Makefile 483402 2018-10-29 20:02:30Z amdmi3 $
+# $FreeBSD: head/devel/py-libversion/Makefile 483600 2018-10-31 17:45:46Z amdmi3 $
 
 PORTNAME=	libversion
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.2
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

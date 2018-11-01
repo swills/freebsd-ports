@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-nsa-rails5/Makefile 458160 2018-01-05 18:17:17Z jrm $
+# $FreeBSD: head/devel/rubygem-nsa-rails5/Makefile 483724 2018-11-01 19:16:24Z sunpoet $
 
 PORTNAME=	nsa
 PORTVERSION=	0.2.4
@@ -17,6 +17,8 @@ RUN_DEPENDS=	rubygem-activesupport5>=4.2:devel/rubygem-activesupport5 \
 
 USES=		gem shebangfix
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 SHEBANG_FILES=	bin/setup
 

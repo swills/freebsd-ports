@@ -1,8 +1,8 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/bazel/Makefile 482397 2018-10-19 01:01:34Z swills $
+# $FreeBSD: head/devel/bazel/Makefile 483575 2018-10-31 13:33:11Z swills $
 
 PORTNAME=		bazel
-DISTVERSION=		0.18.0
+DISTVERSION=		0.19.0
 CATEGORIES=		devel java
 MASTER_SITES=		https://storage.googleapis.com/bazel/${PORTVERSION}/rc${FINALRC}/
 DISTNAME=		bazel-${PORTVERSION}rc${FINALRC}-dist

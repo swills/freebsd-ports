@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/devel/p5-App-perlbrew/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-App-perlbrew/Makefile 483719 2018-11-01 19:15:20Z sunpoet $
 
 PORTNAME=	App-perlbrew
 PORTVERSION=	0.84
@@ -24,7 +24,7 @@ TEST_DEPENDS=	p5-File-Which>=1.21:sysutils/p5-File-Which \
 		p5-Path-Class>=0.33:devel/p5-Path-Class \
 		p5-Test-Exception>=0.32:devel/p5-Test-Exception \
 		p5-Test-NoWarnings>=1.04:devel/p5-Test-NoWarnings \
-		p5-Test-Output>=1.03:devel/p5-Test-Output \
+		p5-Test-Output>=1.030:devel/p5-Test-Output \
 		p5-Test-Spec>=0.47:devel/p5-Test-Spec \
 		p5-Test-TempDir-Tiny>=0.016:devel/p5-Test-TempDir-Tiny
 

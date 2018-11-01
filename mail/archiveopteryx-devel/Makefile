@@ -1,8 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 483572 2018-10-31 12:59:11Z dvl $
 
 PORTNAME=	archiveopteryx
-PORTVERSION=	3.2.99.20180207
+PORTVERSION=	3.2.99.20181030
 PORTREVISION=	0
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-devel
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	jam:devel/jam
 USE_GITHUB=	yes
 GH_ACCOUNT=	aox
 GH_PROJECT=	aox
-GH_TAGNAME=	8a59400
+GH_TAGNAME=	96ab17e
 
 USES=		perl5 ssl
 USE_PERL5=	build

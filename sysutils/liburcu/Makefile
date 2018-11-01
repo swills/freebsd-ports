@@ -1,8 +1,8 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/sysutils/liburcu/Makefile 483487 2018-10-30 13:29:47Z linimon $
+# $FreeBSD: head/sysutils/liburcu/Makefile 483588 2018-10-31 14:44:27Z mmokhi $
 
 PORTNAME=	liburcu
-PORTVERSION=	0.10.0
+PORTVERSION=	0.10.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lttng.org/files/urcu/
 DISTNAME=	userspace-rcu-${PORTVERSION}

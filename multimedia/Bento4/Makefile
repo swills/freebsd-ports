@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/Bento4/Makefile 473012 2018-06-22 01:15:19Z linimon $
+# $FreeBSD: head/multimedia/Bento4/Makefile 483593 2018-10-31 15:27:48Z mmokhi $
 
 PORTNAME=	Bento4
 PORTVERSION=	1.5.1
 DISTVERSIONPREFIX=v
-DISTVERSIONSUFFIX=-622
+DISTVERSIONSUFFIX=-624
 CATEGORIES=	multimedia devel
 
 MAINTAINER=	mmokhi@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/zbackup/Makefile 473276 2018-06-24 21:11:14Z sunpoet $
+# $FreeBSD: head/sysutils/zbackup/Makefile 483513 2018-10-30 19:07:03Z linimon $
 
 PORTNAME=	zbackup
 PORTVERSION=	1.4.4
@@ -13,9 +13,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf \
 		liblzo2.so:archivers/lzo2
 
-BROKEN_powerpc64=	fails to compile: metadata_lite.h: class 'google::protobuf::internal::InternalMetadataWithArenaLite' does not have any field named 'InternalMetadataWithArenaBase'
-
-USES=		alias cmake ssl
+USES=		alias cmake compiler:c++11-lang ssl
 USE_GITHUB=	yes
 
 OPTIONS_DEFINE=	DOCS

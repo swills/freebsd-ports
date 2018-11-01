@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/include-what-you-use/Makefile 477079 2018-08-13 16:55:50Z rene $
+# $FreeBSD: head/devel/include-what-you-use/Makefile 483508 2018-10-30 18:34:38Z linimon $
 
 PORTNAME=	include-what-you-use
 PORTVERSION=	0.10
@@ -10,8 +10,6 @@ COMMENT=	Tool for use with clang to analyze #includes in C and C++ source files
 
 LICENSE=	NCSA
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
-
-BROKEN_powerpc64=	fails to compile: cc1plus: unrecognized command line option "-std=c++11"
 
 BUILD_DEPENDS=	clang60:devel/llvm60
 RUN_DEPENDS=	clang60:devel/llvm60

@@ -1,8 +1,8 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/archivers/unshield/Makefile 431653 2017-01-16 14:58:07Z sunpoet $
+# $FreeBSD: head/archivers/unshield/Makefile 483703 2018-11-01 19:13:07Z sunpoet $
 
 PORTNAME=	unshield
-PORTVERSION=	1.4.2
+PORTVERSION=	1.4.3
 CATEGORIES=	archivers
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -11,9 +11,10 @@ COMMENT=	Extract data from InstallShield CAB files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		cmake pathfix ssl
+
 CFLAGS+=	-fPIC
 USE_LDCONFIG=	yes
-USES=		cmake pathfix ssl
 
 GH_ACCOUNT=	twogood
 USE_GITHUB=	yes

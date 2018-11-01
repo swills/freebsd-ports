@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/waifu2x-converter-cpp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/waifu2x-converter-cpp/Makefile 483516 2018-10-30 19:15:45Z linimon $
 
 PORTNAME=	waifu2x-converter-cpp
 DISTVERSION=	1.0.0-410
@@ -13,8 +13,6 @@ LICENSE=	BSD2CLAUSE MIT
 LICENSE_COMB=	multi
 LICENSE_FILE_BSD2CLAUSE=${WRKSRC}/LICENSE
 LICENSE_FILE_MIT=	${WRKSRC}/LICENSE
-
-BROKEN_powerpc64=	fails to link: libw2xc.so: undefined reference to cv::imread
 
 BUILD_DEPENDS=	${LOCALBASE}/include/CL/opencl.h:devel/opencl
 LIB_DEPENDS=	libopencv_highgui.so:graphics/opencv \

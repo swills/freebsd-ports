@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 483445 2018-10-30 04:36:22Z yuri $
+# $FreeBSD: head/science/Makefile 483624 2018-10-31 23:05:37Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -108,6 +108,7 @@
     SUBDIR += kst2
     SUBDIR += lammps
     SUBDIR += lamprop
+    SUBDIR += latte
     SUBDIR += libaec
     SUBDIR += libccp4
     SUBDIR += libcint

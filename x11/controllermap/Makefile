@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/controllermap/Makefile 463647 2018-03-05 12:31:43Z jbeich $
+# $FreeBSD: head/x11/controllermap/Makefile 483650 2018-11-01 09:37:47Z jbeich $
 
 PORTNAME=	controllermap
-PORTVERSION=	2.0.8
+PORTVERSION=	2.0.9
 CATEGORIES=	x11
 MASTER_SITES=	http://www.libsdl.org/release/
 DISTNAME=	SDL2-${DISTVERSION}

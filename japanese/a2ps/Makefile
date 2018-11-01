@@ -1,5 +1,5 @@
 # Created by: SAITO Itsuro <saito@miv.t.u-tokyo.ac.jp>
-# $FreeBSD: head/japanese/a2ps/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/a2ps/Makefile 483502 2018-10-30 16:24:34Z meta $
 
 PORTNAME=	a2ps
 PORTVERSION=	1.45
@@ -13,20 +13,24 @@ EXTRACT_SUFX=	# empty
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Text file to postscript converter (with Japanese support)
 
-LICENSE=	BSD
+LICENSE=	A2PSJ
+LICENSE_NAME=	License of a2ps-j
+LICENSE_FILE=	${FILESDIR}/LICENSE
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 RUN_DEPENDS=	paperconf:print/libpaper
 
 USES=		perl5 shebangfix
 USE_PERL5=	run
+
 SHEBANG_FILES=	${WRKSRC}/a2ps-j
-perl_OLD_CMD=	/usr/local/bin/perl
 PLIST_FILES=	bin/a2ps-j
 EXTRACT_CMD=	${INSTALL_SCRIPT}
 EXTRACT_BEFORE_ARGS=	# empty
 EXTRACT_AFTER_ARGS=	a2ps-j
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 post-patch:
 	${REINPLACE_CMD} -e 's,%%LOCALBASE%%,${LOCALBASE},' ${WRKSRC}/a2ps-j

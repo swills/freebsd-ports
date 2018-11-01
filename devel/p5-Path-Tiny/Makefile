@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Path-Tiny/Makefile 479642 2018-09-12 22:56:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Path-Tiny/Makefile 483519 2018-10-30 19:53:27Z sunpoet $
 
 PORTNAME=	Path-Tiny
 PORTVERSION=	0.108
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DAGOLDEN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	File path utility
 
 LICENSE=	APACHE20

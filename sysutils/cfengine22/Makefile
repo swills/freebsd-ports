@@ -1,5 +1,5 @@
 # Created by: jseger@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine22/Makefile 481981 2018-10-13 13:33:54Z cy $
+# $FreeBSD: head/sysutils/cfengine22/Makefile 483547 2018-10-31 05:10:40Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	2.2.10
@@ -49,4 +49,11 @@ post-patch:
 				  ${WRKSRC}/inputs/Makefile.in \
 				  ${WRKSRC}/contrib/Makefile.in
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${SSL_DEFAULT} != "openssl"
+BROKEN_FreeBSD_12=	fails to build with openssl111, install security/openssl
+BROKEN_FreeBSD_13=	fails to build with openssl111, install security/openssl
+.endif
+
+.include <bsd.port.post.mk>

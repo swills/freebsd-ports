@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 483453 2018-10-30 06:18:48Z yuri $
+# $FreeBSD: head/math/Makefile 483620 2018-10-31 21:49:24Z yuri $
 #
 
     COMMENT = Mathematics
@@ -175,6 +175,7 @@
     SUBDIR += cryptominisat
     SUBDIR += cvc3
     SUBDIR += cvc4
+    SUBDIR += dbcsr
     SUBDIR += deal.ii
     SUBDIR += diehard
     SUBDIR += dieharder

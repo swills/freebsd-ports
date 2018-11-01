@@ -1,8 +1,9 @@
 # Created by: Alexander Sulfrian <alexander@sulfrian.net>
-# $FreeBSD: head/net-mgmt/nsca-ng/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/net-mgmt/nsca-ng/Makefile 483678 2018-11-01 15:24:14Z swills $
 
 PORTNAME=	nsca-ng
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://www.nsca-ng.org/download/ http://www.nsca-ng.org/download/
 

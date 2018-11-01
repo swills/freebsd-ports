@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/security/cryptopp/Makefile 477967 2018-08-24 17:22:01Z jhale $
+# $FreeBSD: head/security/cryptopp/Makefile 483628 2018-10-31 23:36:03Z jhale $
 
 PORTNAME=	cryptopp
 PORTVERSION=	7.0.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/License.txt
 
 BROKEN_powerpc=	does not compile; unrecognized C++ options
 
-USES=		cpe gmake zip
+USES=		cpe compiler:c++11-lang gmake zip
 USE_LDCONFIG=	yes
 CPE_PRODUCT=	crypto++
 CPE_VENDOR=	cryptopp

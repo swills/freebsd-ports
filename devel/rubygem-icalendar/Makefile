@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-icalendar/Makefile 479561 2018-09-11 19:01:10Z sunpoet $
+# $FreeBSD: head/devel/rubygem-icalendar/Makefile 483723 2018-11-01 19:15:54Z sunpoet $
 
 PORTNAME=	icalendar
-PORTVERSION=	2.5.0
+PORTVERSION=	2.5.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

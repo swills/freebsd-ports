@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 483454 2018-10-30 06:44:55Z kbowling $
+# $FreeBSD: head/emulators/Makefile 483701 2018-11-01 19:05:28Z rene $
 #
 
     COMMENT = Emulators for other operating systems
@@ -150,7 +150,6 @@
     SUBDIR += vgb-bin
     SUBDIR += vgba-bin
     SUBDIR += vice
-    SUBDIR += virtio-kmod
     SUBDIR += virtualbox-ose
     SUBDIR += virtualbox-ose-additions
     SUBDIR += virtualbox-ose-additions-nox11

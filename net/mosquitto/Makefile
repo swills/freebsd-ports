@@ -1,8 +1,9 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/net/mosquitto/Makefile 481153 2018-10-03 09:54:40Z lwhsu $
+# $FreeBSD: head/net/mosquitto/Makefile 483677 2018-11-01 15:16:52Z swills $
 
 PORTNAME=	mosquitto
 PORTVERSION=	1.5.3
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
 

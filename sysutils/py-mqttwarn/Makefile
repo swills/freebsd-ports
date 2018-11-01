@@ -1,9 +1,7 @@
-# $FreeBSD: head/sysutils/py-mqttwarn/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/py-mqttwarn/Makefile 483571 2018-10-31 12:55:54Z dvl $
 
 PORTNAME=	mqttwarn
-DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6-367
-DISTVERSIONSUFFIX=	-gc28e1d3
+DISTVERSION=	0.10.4
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -22,7 +20,6 @@ SHEBANG_REGEX=	'.*\.py$$'
 USE_GITHUB=	yes
 GH_ACCOUNT=	jpmens
 
-#NO_BUILD=	yes
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS EXAMPLES

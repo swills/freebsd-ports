@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/p5-DBD-CSV/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/databases/p5-DBD-CSV/Makefile 483526 2018-10-30 19:54:32Z sunpoet $
 
 PORTNAME=	DBD-CSV
-PORTVERSION=	0.53
+PORTVERSION=	0.54
 PORTEPOCH=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
@@ -20,6 +20,7 @@ RUN_DEPENDS=	p5-DBI>=1.636:databases/p5-DBI \
 
 USES=		perl5 tar:tgz
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

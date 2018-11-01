@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/py-pyparsing/Makefile 481343 2018-10-06 09:34:49Z sunpoet $
+# $FreeBSD: head/devel/py-pyparsing/Makefile 483710 2018-11-01 19:14:04Z sunpoet $
 
 PORTNAME=	pyparsing
-PORTVERSION=	2.2.2
+PORTVERSION=	2.3.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +11,7 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	General parsing module for Python
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-extensions/Makefile 474886 2018-07-18 16:44:43Z swills $
+# $FreeBSD: head/www/py-django-extensions/Makefile 483565 2018-10-31 12:17:30Z swills $
 
 PORTNAME=	django-extensions
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

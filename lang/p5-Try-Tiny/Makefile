@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Try-Tiny/Makefile 479645 2018-09-12 22:56:48Z sunpoet $
+# $FreeBSD: head/lang/p5-Try-Tiny/Makefile 483520 2018-10-30 19:53:36Z sunpoet $
 
 PORTNAME=	Try-Tiny
 PORTVERSION=	0.30
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ETHER
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Minimal try/catch with proper localization of $$@
 
 LICENSE=	MIT

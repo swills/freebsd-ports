@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-tidyr/Makefile 470527 2018-05-21 09:31:34Z tota $
+# $FreeBSD: head/devel/R-cran-tidyr/Makefile 483540 2018-10-31 01:22:03Z tota $
 
 PORTNAME=	tidyr
-PORTVERSION=	0.8.1
+PORTVERSION=	0.8.2
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -19,7 +19,7 @@ CRAN_DEPENDS=	R-cran-dplyr>=0.7.0:math/R-cran-dplyr \
 		R-cran-rlang>0:devel/R-cran-rlang \
 		R-cran-stringi>0:textproc/R-cran-stringi \
 		R-cran-tibble>0:devel/R-cran-tibble \
-		R-cran-tidyselect>0:devel/R-cran-tidyselect
+		R-cran-tidyselect>=0.2.5:devel/R-cran-tidyselect
 BUILD_DEPENDS=	${CRAN_DEPENDS}
 RUN_DEPENDS=	${CRAN_DEPENDS}
 

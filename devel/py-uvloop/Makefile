@@ -1,8 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/devel/py-uvloop/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/py-uvloop/Makefile 483555 2018-10-31 07:09:37Z farrokhi $
 
 PORTNAME=	uvloop
-PORTVERSION=	0.11.2
+PORTVERSION=	0.11.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

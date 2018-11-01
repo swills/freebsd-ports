@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/mp3plot/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/audio/mp3plot/Makefile 483507 2018-10-30 18:24:56Z linimon $
 
 PORTNAME=	mp3plot
 DISTVERSION=	0.6.0
@@ -13,8 +13,7 @@ COMMENT=	MP3 bitrate plot tool
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	fails to configure: C++ compiler cannot create executables
-
+USES=		compiler:c++11-lang
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
 USE_CXXSTD=	c++98

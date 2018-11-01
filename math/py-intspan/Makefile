@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/math/py-intspan/Makefile 483103 2018-10-27 02:52:14Z swills $
+# $FreeBSD: head/math/py-intspan/Makefile 483523 2018-10-30 19:54:04Z sunpoet $
 
 PORTNAME=	intspan
 PORTVERSION=	1.5.14
@@ -7,12 +7,14 @@ CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
-COMMENT=	FInite element Automatic Tabulator
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	Finite element automatic tabulator
 
 LICENSE=	APACHE20
 
 USES=		python zip
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

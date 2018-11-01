@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Utils/Makefile 473471 2018-06-27 23:34:05Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Utils/Makefile 483707 2018-11-01 19:13:42Z sunpoet $
 
 PORTNAME=	Math-Utils
-PORTVERSION=	1.12
+PORTVERSION=	1.13
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_PERL5=	modbuild
 USES=		dos2unix perl5
+USE_PERL5=	modbuild
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,14 +1,16 @@
 # Created by: Matthew George <mdg@secureworks.net>
-# $FreeBSD: head/net/ifstated/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/net/ifstated/Makefile 483683 2018-11-01 15:47:52Z tobik $
 
 PORTNAME=	ifstated
 PORTVERSION=	5.1
 PORTREVISION=	2
 PORTEPOCH=	3
 CATEGORIES=	net
-MASTER_SITES=	http://christianserving.org/ports/net/ifstated/
+MASTER_SITES=	LOCAL/tobik \
+		http://pkg.tobik.me/distfiles/ \
+		http://christianserving.org/ports/net/ifstated/
 
-MAINTAINER=	ports@christianserving.org
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Interface state daemon
 
 LIB_DEPENDS=	libevent.so:devel/libevent

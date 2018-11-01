@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine34/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/sysutils/cfengine34/Makefile 483549 2018-10-31 05:10:50Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.4.5
@@ -15,8 +15,6 @@ CPE_VENDOR=	gnu
 
 DEPRECATED=		OpenSSL 1.1.X is not supported.
 EXPIRATION_DATE=	2021-09-30
-BROKEN_FreeBSD_12=	openssl111 is not supported
-BROKEN_FreeBSD_13=	openssl111 is not supported
 
 CONFLICTS=	cfengine-2* cfengine3[0-35-9]-* cfengine31[0-9]-*
 .if !defined(MASTERDIR)
@@ -93,4 +91,13 @@ post-patch:
 		@${REINPLACE_CMD} -e '/^htmldir/s!=.*!= @htmldir@!'\
 				  ${WRKSRC}/docs/Makefile.in
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == "FreeBSD" && ${OSVERSION} >= 1200085
+.if ${SSL_DEFAULT} != "openssl"
+BROKEN_FreeBSD_12=	fails to build with openssl111, install security/openssl
+BROKEN_FreeBSD_13=	fails to build with openssl111, install security/openssl
+.endif
+.endif
+
+.include <bsd.port.post.mk>

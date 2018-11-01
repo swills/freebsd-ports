@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/security/subversion-gnome-keyring/Makefile 481744 2018-10-10 15:39:51Z lev $
+# $FreeBSD: head/security/subversion-gnome-keyring/Makefile 483685 2018-11-01 16:12:44Z lev $
 
 PKGNAMESUFFIX=	-gnome-keyring
 CATEGORIES=	security gnome
@@ -7,7 +7,7 @@ CATEGORIES=	security gnome
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Gnome Keyring integration for Version control system
 
-PORTREVISION_110=	0
+PORTREVISION_111=	0
 PORTREVISION_19=	0
 
 .include "${.CURDIR}/../../devel/subversion/Makefile.addons"

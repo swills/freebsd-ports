@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/sasm/Makefile 473526 2018-06-29 01:19:19Z yuri $
+# $FreeBSD: head/devel/sasm/Makefile 483544 2018-10-31 02:14:50Z wen $
 
 PORTNAME=	SASM
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.9.0
+DISTVERSION=	3.10.0
 CATEGORIES=	devel
 
 MAINTAINER=	martinfilla@post.cz
@@ -20,6 +20,6 @@ USE_GL=		gl
 DATADIR=	${PREFIX}/share/sasm
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|/usr/share|${PEFIX}/share|' ${WRKSRC}/Linux/share/applications/sasm.desktop
+	@${REINPLACE_CMD} -e 's|/usr/share|${PEFIX}/share|' ${WRKSRC}/BSD/share/applications/sasm.desktop
 
 .include <bsd.port.mk>
