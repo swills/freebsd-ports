@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-openstack/Makefile 482516 2018-10-20 14:48:54Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-openstack/Makefile 483525 2018-10-30 19:54:23Z sunpoet $
 
 PORTNAME=	fog-openstack
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

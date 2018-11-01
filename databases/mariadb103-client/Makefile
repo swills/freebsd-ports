@@ -1,7 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/databases/mariadb103-client/Makefile 483143 2018-10-27 15:06:54Z brnrd $
+# $FreeBSD: head/databases/mariadb103-client/Makefile 483598 2018-10-31 17:35:27Z brnrd $
 
 PORTNAME=	mariadb
+PORTREVISION=	2
 PKGNAMESUFFIX=	103-client
 
 COMMENT=	Multithreaded SQL database (client)
@@ -25,7 +26,7 @@ CONFLICTS_INSTALL=	databases/mytop
 
 post-configure:
 	${REINPLACE_CMD} -Ee 's|(#define INCLUDE.*)"$$|\1 -I${PREFIX}/include"|' \
-		-e 's|(#define LIBS.*)"\\ $$|\1 -L${PREFIX}/lib "\\|' \
+		-e 's|(#define LIBS .*)"$$|\1 -L${PREFIX}/lib"|' \
 		${WRKSRC}/libmariadb/mariadb_config/mariadb_config.c
 
 post-install:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gwenhywfar/Makefile 476244 2018-08-02 18:48:22Z jhale $
+# $FreeBSD: head/devel/gwenhywfar/Makefile 483627 2018-10-31 23:32:08Z jhale $
 
 PORTNAME=	gwenhywfar
 PORTVERSION=	4.20.0
@@ -66,7 +66,7 @@ CONFIGURE_ARGS+=--with-qt4-includes=${QT_INCDIR} \
 		--with-qt4-moc=${MOC} \
 		--with-qt4-uic=${UIC}
 .  elif ${SLAVEPORT}=="qt5"
-USES+=		qmake:no_env qt:5
+USES+=		compiler:c++11-lang qmake:no_env qt:5
 USE_GL=		gl
 USE_QT=		core gui widgets \
 		buildtools_build qmake_build

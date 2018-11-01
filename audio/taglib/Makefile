@@ -1,5 +1,5 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/audio/taglib/Makefile 471371 2018-06-02 14:52:48Z jhale $
+# $FreeBSD: head/audio/taglib/Makefile 483626 2018-10-31 23:26:38Z jhale $
 
 PORTNAME=	taglib
 PORTVERSION=	1.11.1
@@ -15,7 +15,7 @@ LICENSE_COMB=	dual
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 LICENSE_FILE_MPL11=	${WRKSRC}/COPYING.MPL
 
-USES=		cmake cpe pathfix
+USES=		cmake compiler:c++11-lang cpe pathfix
 USE_LDCONFIG=	yes
 
 CMAKE_ON=	CMAKE_DISABLE_FIND_PACKAGE_Boost \

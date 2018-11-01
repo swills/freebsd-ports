@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/textproc/rubygem-loofah/Makefile 465378 2018-03-23 16:45:34Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-loofah/Makefile 483728 2018-11-01 19:17:45Z sunpoet $
 
 PORTNAME=	loofah
-PORTVERSION=	2.2.2
+PORTVERSION=	2.2.3
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE.txt
 RUN_DEPENDS=	rubygem-crass>=1.0.2:www/rubygem-crass \
 		rubygem-nokogiri>=1.5.9:textproc/rubygem-nokogiri
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

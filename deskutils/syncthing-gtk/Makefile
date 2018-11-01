@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/syncthing-gtk/Makefile 480323 2018-09-21 22:37:51Z swills $
+# $FreeBSD: head/deskutils/syncthing-gtk/Makefile 483579 2018-10-31 14:03:48Z swills $
 
 PORTNAME=	syncthing-gtk
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.4.1
+DISTVERSION=	0.9.4.2
 CATEGORIES=	deskutils python
 
 MAINTAINER=	swills@FreeBSD.org
@@ -14,7 +14,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyinotify>0:devel/py-pyinotify@${PY_FLAVOR} \
 		libappindicator>=0:devel/libappindicator \
-		syncthing>=0.13:net/syncthing
+		syncthing>=0.14.50:net/syncthing
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

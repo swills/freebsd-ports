@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/relayd/Makefile 478106 2018-08-26 08:16:50Z delphij $
+# $FreeBSD: head/net/relayd/Makefile 483537 2018-10-30 20:51:48Z mm $
 
 PORTNAME=	relayd
 PORTVERSION=	5.5.20140810
@@ -24,7 +24,13 @@ MAKE_ARGS+=	BINDIR=${PREFIX}/sbin MANDIR=${PREFIX}/man/man
 USERS=		_relayd
 GROUPS=		_relayd
 
+BROKEN_FreeBSD_12=	does not build, OpenSSL 1.1 unsupported	
+
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 1300000
+BROKEN=	does not build, OpenSSL 1.1 unsupported	
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \

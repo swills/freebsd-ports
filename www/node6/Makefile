@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node6/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/www/node6/Makefile 483618 2018-10-31 21:03:48Z bhughes $
 
 PORTNAME=	node
 PORTVERSION=	6.14.4
@@ -46,7 +46,7 @@ USES=		compiler:c++11-lib gmake python:2.7,build pkgconfig \
 
 HAS_CONFIGURE=	yes
 
-CONFLICTS_INSTALL=	node[458]-[0-9]* node-[0-9]*
+CONFLICTS_INSTALL=	node8-[0-9]* node10-[0-9]* node-[0-9]*
 
 CONFIGURE_ARGS=	--prefix=${PREFIX_RELDEST} \
 		--without-npm \

@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rabl-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/devel/rubygem-rabl-rails50/Makefile 483726 2018-11-01 19:17:28Z sunpoet $
 
 PORTNAME=	rabl
-PORTVERSION=	0.13.1
-PORTREVISION=	1
+PORTVERSION=	0.14.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
@@ -13,11 +12,11 @@ COMMENT=	General ruby templating with json, bson, xml and msgpack support
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-RUN_DEPENDS=	rubygem-activesupport50>0:devel/rubygem-activesupport50
-
-NO_ARCH=	yes
+RUN_DEPENDS=	rubygem-activesupport50>=2.3.14:devel/rubygem-activesupport50
 
 USE_RUBY=	yes
 USES=		gem
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 482825 2018-10-23 10:15:30Z rene $
+# $FreeBSD: head/www/Makefile 483701 2018-11-01 19:05:28Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -527,6 +527,7 @@
     SUBDIR += node
     SUBDIR += node6
     SUBDIR += node8
+    SUBDIR += node10
     SUBDIR += nostromo
     SUBDIR += novnc
     SUBDIR += novnc-websockify
@@ -2413,7 +2414,6 @@
     SUBDIR += twiki-WysiwygPlugin
     SUBDIR += twill
     SUBDIR += twms
-    SUBDIR += typo3-7
     SUBDIR += typo3-8
     SUBDIR += uchiwa
     SUBDIR += udmsearch

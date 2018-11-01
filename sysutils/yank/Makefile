@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/yank/Makefile 483060 2018-10-26 21:56:10Z tobik $
+# $FreeBSD: head/sysutils/yank/Makefile 483689 2018-11-01 17:22:30Z tobik $
 
 PORTNAME=	yank
-DISTVERSION=	1.0.0
-PORTREVISION=	2
+DISTVERSION=	1.1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/mptre/yank/releases/download/v${DISTVERSION}/
 

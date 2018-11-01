@@ -1,9 +1,9 @@
 # Created by: Erik Greenwald <erik@smluc.org>
-# $FreeBSD: head/graphics/bugle/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/bugle/Makefile 483550 2018-10-31 05:31:45Z tobik $
 
 PORTNAME=	bugle
 PORTVERSION=	0.0.20100508
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libltdl.so:devel/libltdl
 
 USES=		libtool pathfix perl5
 USE_GL=		gl
-USE_GCC=	yes
+USE_GCC=	7
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-ltdl-install=no
 INSTALL_TARGET=	install-strip

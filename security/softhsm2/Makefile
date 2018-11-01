@@ -1,8 +1,8 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/security/softhsm2/Makefile 475432 2018-07-27 12:36:54Z pi $
+# $FreeBSD: head/security/softhsm2/Makefile 483671 2018-11-01 15:01:59Z swills $
 
 PORTNAME=	softhsm
-PORTVERSION=	2.4.0
+PORTVERSION=	2.5.0
 PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://dist.opendnssec.org/source/ \
@@ -57,6 +57,11 @@ CONFIGURE_ARGS+=	--disable-gost
 .endif
 
 .if ${SSL_DEFAULT:Mopenssl-devel}
+CONFIGURE_ARGS+=	--disable-gost
+.endif
+
+# openssl-1.1.1 (default after 1200080) doesn't  support GHOST (yet), punt for now. 
+.if ${OSVERSION}>=1200080
 CONFIGURE_ARGS+=	--disable-gost
 .endif
 

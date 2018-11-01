@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-ECDSA/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-ECDSA/Makefile 483652 2018-11-01 10:15:12Z mat $
 
 PORTNAME=	Crypt-OpenSSL-ECDSA
 PORTVERSION=	0.08
@@ -13,13 +13,16 @@ COMMENT=	Perl extension for OpenSSL ECDSA
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
+BROKEN_FreeBSD_12=	unknown type name 'ECDSA_METHOD'; did you mean 'DSA_METHOD'?
+BROKEN_FreeBSD_13=	unknown type name 'ECDSA_METHOD'; did you mean 'DSA_METHOD'?
+BROKEN_SSL=	openssl-devel
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Crypt-OpenSSL-EC>=0.05:security/p5-Crypt-OpenSSL-EC
 
-BROKEN_SSL=	openssl-devel
-
 USES=		perl5 ssl
-USE_PERL5=	5.18+ configure
+USE_PERL5=	configure
+
 CFLAGS+=	-I${OPENSSLINC}
 
 post-install:

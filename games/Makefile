@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 482490 2018-10-20 11:27:14Z amdmi3 $
+# $FreeBSD: head/games/Makefile 483701 2018-11-01 19:05:28Z rene $
 #
 
     COMMENT = Games and related software
@@ -96,7 +96,6 @@
     SUBDIR += blinken-kde4
     SUBDIR += blinkensisters
     SUBDIR += blobby
-    SUBDIR += bloboats
     SUBDIR += blobwars
     SUBDIR += block
     SUBDIR += blockade
@@ -1042,7 +1041,6 @@
     SUBDIR += toycars
     SUBDIR += trackballs
     SUBDIR += tractorgen
-    SUBDIR += traindirector
     SUBDIR += traingame
     SUBDIR += tremulous
     SUBDIR += trenchbroom

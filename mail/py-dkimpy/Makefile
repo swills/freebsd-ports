@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/mail/py-dkimpy/Makefile 476306 2018-08-03 16:27:03Z swills $
+# $FreeBSD: head/mail/py-dkimpy/Makefile 483570 2018-10-31 12:19:38Z swills $
 
 PORTNAME=	dkimpy
-DISTVERSION=	0.8.1
+DISTVERSION=	0.9.0
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 483382 2018-10-29 09:48:21Z rene $
+# $FreeBSD: head/audio/Makefile 483637 2018-11-01 05:08:53Z yuri $
 #
 
     COMMENT = Audio tools
@@ -686,6 +686,7 @@
     SUBDIR += py-karaoke
     SUBDIR += py-mpd
     SUBDIR += py-mpd2
+    SUBDIR += py-music21
     SUBDIR += py-musicbrainzngs
     SUBDIR += py-mutagen
     SUBDIR += py-ogg

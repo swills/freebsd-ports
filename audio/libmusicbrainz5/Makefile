@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libmusicbrainz5/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/audio/libmusicbrainz5/Makefile 483625 2018-10-31 23:13:08Z jhale $
 
 PORTNAME=	libmusicbrainz
 PORTVERSION=	5.1.0
@@ -14,7 +14,7 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libneon.so:www/neon
 
-USES=		cmake iconv:build pathfix
+USES=		cmake compiler:c++11-lang iconv:build pathfix
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 

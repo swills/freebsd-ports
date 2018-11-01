@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/www/mod_setenvifplus/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_setenvifplus/Makefile 483684 2018-11-01 15:53:53Z joneum $
 
 PORTNAME=	mod_setenvifplus
 PORTVERSION=	0.22
@@ -8,7 +8,7 @@ MASTER_SITES=	SF/modsetenvifplus
 EXTRACT_SUFX=	-src.tar.gz
 DIST_SUBDIR=	apache2
 
-MAINTAINER=	ports@christianserving.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Allows setting environment variables based on request attributes
 
 LICENSE=	APACHE20

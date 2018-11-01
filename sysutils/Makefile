@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 482877 2018-10-24 00:55:35Z linimon $
+# $FreeBSD: head/sysutils/Makefile 483701 2018-11-01 19:05:28Z rene $
 #
 
     COMMENT = System utilities
@@ -122,7 +122,6 @@
     SUBDIR += bsdhwmon
     SUBDIR += bsdinfo
     SUBDIR += bsdisks
-    SUBDIR += bsdmoted
     SUBDIR += bsdploy
     SUBDIR += bsdstats
     SUBDIR += bstack
@@ -1031,7 +1030,6 @@
     SUBDIR += qchroot
     SUBDIR += qdirstat
     SUBDIR += qjail
-    SUBDIR += qjail4
     SUBDIR += qlogtools
     SUBDIR += qpxtool
     SUBDIR += qsudo
@@ -1190,7 +1188,6 @@
     SUBDIR += scanbuttond
     SUBDIR += scct
     SUBDIR += schedutils
-    SUBDIR += scprotect
     SUBDIR += screen
     SUBDIR += screenfetch
     SUBDIR += screenie

@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-jaraco.itertools/Makefile 483410 2018-10-29 22:12:59Z sunpoet $
+# $FreeBSD: head/devel/py-jaraco.itertools/Makefile 483521 2018-10-30 19:53:45Z sunpoet $
 
 PORTNAME=	jaraco.itertools
-PORTVERSION=	2.5.2
+PORTVERSION=	3.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

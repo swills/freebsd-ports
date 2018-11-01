@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/asterisk-espeak/Makefile 467143 2018-04-12 11:07:19Z madpilot $
+# $FreeBSD: head/audio/asterisk-espeak/Makefile 483629 2018-10-31 23:42:52Z madpilot $
 
 PORTNAME=	espeak
 PORTVERSION=	4.0
@@ -14,18 +14,23 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libespeak.so:audio/espeak \
 		libsamplerate.so:audio/libsamplerate
 
-FLAVORS=			asterisk13 asterisk15
+FLAVORS=			asterisk13 asterisk15 asterisk16
 FLAVOR?=			${FLAVORS[1]}
 
 asterisk13_PKGNAMEPREFIX=	asterisk13-
-asterisk13_CONFLICTS_INSTALL=	asterisk15-espeak
+asterisk13_CONFLICTS_INSTALL=	asterisk15-espeak asterisk16-espeak
 asterisk13_BUILD_DEPENDS=	asterisk:net/asterisk13
 asterisk13_RUN_DEPENDS=		asterisk:net/asterisk13
 
 asterisk15_PKGNAMEPREFIX=	asterisk15-
-asterisk15_CONFLICTS_INSTALL=	asterisk13-espeak
+asterisk15_CONFLICTS_INSTALL=	asterisk13-espeak asterisk16-espeak
 asterisk15_BUILD_DEPENDS=	asterisk:net/asterisk15
 asterisk15_RUN_DEPENDS=		asterisk:net/asterisk15
+
+asterisk16_PKGNAMEPREFIX=	asterisk16-
+asterisk16_CONFLICTS_INSTALL=	asterisk13-espeak asterisk15-espeak
+asterisk16_BUILD_DEPENDS=	asterisk:net/asterisk16
+asterisk16_RUN_DEPENDS=		asterisk:net/asterisk16
 
 USES=		compiler gmake localbase
 INSTALL_TARGET=	install samples

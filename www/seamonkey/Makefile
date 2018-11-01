@@ -1,5 +1,5 @@
 # Created by: eivind/dima/jseger
-# $FreeBSD: head/www/seamonkey/Makefile 482993 2018-10-25 21:59:37Z jbeich $
+# $FreeBSD: head/www/seamonkey/Makefile 483509 2018-10-30 18:55:36Z cmt $
 
 PORTNAME=	seamonkey
 DISTVERSION=	2.49.4
@@ -33,7 +33,6 @@ LIB_DEPENDS=	libv4l2.so:multimedia/libv4l
 
 SSP_UNSAFE=	yes
 USE_GECKO=	gecko
-USE_GL=		gl
 USES=		tar:xz
 MOZ_PIS_SCRIPTS=	moz_pis_S50cleanhome
 

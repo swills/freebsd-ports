@@ -1,11 +1,11 @@
-# $FreeBSD: head/security/softether-devel/Makefile 475341 2018-07-26 01:03:40Z meta $
+# $FreeBSD: head/security/softether-devel/Makefile 483589 2018-10-31 15:03:19Z meta $
 
 PORTNAME=	softether-devel
 PORTVERSION=	4.21.9613
 PORTREVISION=	2
 CATEGORIES=	security
 
-MAINTAINER=	hrs@FreeBSD.org
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Cross-platform Multi-protocol VPN Software
 
 LICENSE=	GPLv2

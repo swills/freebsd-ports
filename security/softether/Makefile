@@ -1,12 +1,12 @@
-# $FreeBSD: head/security/softether/Makefile 463190 2018-02-28 08:48:40Z hrs $
+# $FreeBSD: head/security/softether/Makefile 483592 2018-10-31 15:21:45Z meta $
 
 PORTNAME=	softether
 PORTVERSION=	4.25.9656
 CATEGORIES=	security
-MASTER_SITES=	http://www.softether-download.com/files/softether/v4.25-9656-rtm-2018.01.15-tree/Source_Code/
+MASTER_SITES=	https://www.softether-download.com/files/softether/v4.25-9656-rtm-2018.01.15-tree/Source_Code/
 DISTNAME=	${PORTNAME}-src-v4.25-9656-rtm
 
-MAINTAINER=	hrs@FreeBSD.org
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Softether VPN solution
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
 # Created by: Sergey Golyashov <svvord@soft-wizard.ru>
-# $FreeBSD: head/devel/p5-Doxygen-Filter-Perl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Doxygen-Filter-Perl/Makefile 483719 2018-11-01 19:15:20Z sunpoet $
 
 PORTNAME=	Doxygen-Filter-Perl
 PORTVERSION=	1.61
@@ -16,7 +16,7 @@ LICENSE=	GPLv3
 RUN_DEPENDS=	doxygen:devel/doxygen \
 		p5-Pod-POM>=0.27:textproc/p5-Pod-POM \
 		p5-Log-Log4perl>=1.33:devel/p5-Log-Log4perl
-TEST_DEPENDS=	p5-Test-Output>=1.01:devel/p5-Test-Output
+TEST_DEPENDS=	p5-Test-Output>=1.010:devel/p5-Test-Output
 
 USES=		perl5
 USE_PERL5=	configure

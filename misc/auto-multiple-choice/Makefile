@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/auto-multiple-choice/Makefile 469466 2018-05-09 20:27:51Z swills $
+# $FreeBSD: head/misc/auto-multiple-choice/Makefile 483510 2018-10-30 19:00:18Z linimon $
 
 PORTNAME=	auto-multiple-choice
 PORTVERSION=	1.3.0
@@ -39,8 +39,9 @@ MANLANG=	"" fr ja
 SHARED_MIMEINFO_DIR=	${PREFIX}/share/mime/packages
 LANG_GTKSOURCEVIEW_DIR=	${PREFIX}/share/gtksourceview-2.0/language-specs
 
+USES+=		compiler:c++11-lang gettext gmake iconv:build perl5 \
+		pkgconfig shared-mime-info
 USE_TEX=	latex texhash
-USES+=		gettext gmake iconv:build perl5 pkgconfig shared-mime-info
 
 OPTIONS_DEFINE=	DOCS
 

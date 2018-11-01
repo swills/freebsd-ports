@@ -1,5 +1,5 @@
 # Created by: gpalmer
-# $FreeBSD: head/net-mgmt/net-snmp/Makefile 481776 2018-10-11 00:12:58Z zi $
+# $FreeBSD: head/net-mgmt/net-snmp/Makefile 483597 2018-10-31 17:25:55Z zi $
 
 PORTNAME=	snmp
 PORTVERSION=	5.7.3
@@ -76,6 +76,10 @@ CONFIGURE_ARGS+=--with-defaults
 TLS_CONFIGURE_ON=	--with-security-modules=tsm --with-transports=TLSTCP,DTLSUDP
 
 .include <bsd.port.options.mk>
+
+.if ${OSVERSION} >= 1200085
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-openssl11
+.endif
 
 .if ${PORT_OPTIONS:MPYTHON}
 PYDISTUTILS_PKGNAME?=		netsnmp-python
@@ -252,6 +256,8 @@ post-patch:
 	    ${WRKSRC}/agent/mibgroup/host/hr_system.c
 	@${REINPLACE_CMD} -E -e 's|return pci_lookup_name|disabled broken|g' \
 		${WRKSRC}/configure
+	@${CP} ${WRKSRC}/include/net-snmp/system/freebsd12.h \
+		${WRKSRC}/include/net-snmp/system/freebsd13.h
 
 post-configure:
 	@${FIND} ${WRKSRC} -name Makefile | \

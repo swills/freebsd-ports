@@ -1,5 +1,5 @@
 # Created by: Anish Mistry <amistry@am-productions.biz>
-# $FreeBSD: head/sysutils/atitvout/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/atitvout/Makefile 483591 2018-10-31 15:17:06Z ak $
 
 PORTNAME=	atitvout
 PORTVERSION=	0.4
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Toggle TV Out on Mach64 graphics cards
 
 LICENSE=	GPLv2
+
+ONLY_FOR_ARCHS=	i386
 
 LIB_DEPENDS=	liblrmi.so:devel/lrmi
 

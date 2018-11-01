@@ -1,5 +1,5 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 483249 2018-10-28 09:36:56Z jbeich $
+# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 483583 2018-10-31 14:23:31Z linimon $
 
 PORTNAME=	floodprotect
 PORTVERSION=	1.6
@@ -9,8 +9,6 @@ MASTER_SITES=	SF/verlihub/OldFiles
 DISTNAME=	${PLUGIN_NAME}
 
 MAINTAINER=	me@skylord.ru
-
-BROKEN_powerpc64=	fails to compile: thasharray.h:338:29: cast from 'std::nullptr_t' to 'short int' loses precision
 
 PLUGIN_NAME=	floodprot
 PLUGIN_DESC=	Floodprotect

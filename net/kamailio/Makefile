@@ -1,8 +1,8 @@
 # Created by: Oliver Mahmoudi <olivermahmoudi@gmail.com>
-# $FreeBSD: head/net/kamailio/Makefile 478698 2018-09-01 14:17:40Z pi $
+# $FreeBSD: head/net/kamailio/Makefile 483644 2018-11-01 08:15:59Z pi $
 
 PORTNAME=	kamailio
-PORTVERSION=	5.1.5
+PORTVERSION=	5.1.6
 
 CATEGORIES=	net
 MASTER_SITES=	http://www.kamailio.org/pub/kamailio/${PORTVERSION}/src/

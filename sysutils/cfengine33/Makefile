@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine33/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/sysutils/cfengine33/Makefile 483549 2018-10-31 05:10:50Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.3.8
@@ -16,8 +16,6 @@ CPE_VENDOR=	gnu
 
 DEPRECATED=		OpenSSL 1.1.X is not supported.
 EXPIRATION_DATE=	2021-09-30
-BROKEN_FreeBSD_12=	openssl111 is not supported
-BROKEN_FreeBSD_13=	openssl111 is not supported
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}
 
@@ -85,4 +83,13 @@ CONFIGURE_ARGS+=	--with-libvirt=${LOCALBASE}
 LIB_DEPENDS+=		libvirt.so:devel/libvirt
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == "FreeBSD" && ${OSVERSION} >= 1200085
+.if ${SSL_DEFAULT} != "openssl"
+BROKEN_FreeBSD_12=	fails to build with openssl111, install security/openssl
+BROKEN_FreeBSD_13=	fails to build with openssl111, install security/openssl
+.endif
+.endif
+
+.include <bsd.port.post.mk>

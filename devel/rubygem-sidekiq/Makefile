@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 480144 2018-09-20 00:23:34Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 483727 2018-11-01 19:17:37Z sunpoet $
 
 PORTNAME=	sidekiq
 PORTVERSION=	5.2.2
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +13,7 @@ COMMENT=	Simple, efficient background processing for Ruby
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0:devel/rubygem-concurrent-ruby \
-		rubygem-connection_pool>=2.2:net/rubygem-connection_pool \
+RUN_DEPENDS=	rubygem-connection_pool>=2.2:net/rubygem-connection_pool \
 		rubygem-rack-protection>=1.5.0:www/rubygem-rack-protection \
 		rubygem-redis>=3.3.5:databases/rubygem-redis
 

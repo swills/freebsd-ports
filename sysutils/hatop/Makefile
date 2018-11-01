@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/sysutils/hatop/Makefile 463041 2018-02-26 19:23:44Z amdmi3 $
+# $FreeBSD: head/sysutils/hatop/Makefile 483682 2018-11-01 15:42:21Z tobik $
 
 PORTNAME=	hatop
 PORTVERSION=	0.7.7
@@ -7,7 +7,7 @@ PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils net
 
-MAINTAINER=	ports@christianserving.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Interactive real-time monitoring tool for the HAProxy unix socket
 
 LICENSE=	GPLv3+

@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 483499 2018-10-30 16:17:41Z mfechner $
+# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 483733 2018-11-01 19:47:56Z mfechner $
 
 PORTNAME=	gitlab-markup
-PORTVERSION=	1.6.4
-PORTREVISION=	1
+PORTVERSION=	1.6.5
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -22,8 +21,5 @@ PLIST_FILES=	bin/gitlab-markup
 SHEBANG_FILES=	lib/github/commands/rest2html \
 		script/bootstrap \
 		script/cibuild
-
-post-patch:
-	${MV} ${WRKSRC}/bin/github-markup ${WRKSRC}/bin/gitlab-markup
 
 .include <bsd.port.mk>

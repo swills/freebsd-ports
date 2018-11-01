@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/maxr/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/maxr/Makefile 483731 2018-11-01 19:25:13Z amdmi3 $
 
 PORTNAME=	maxr
 PORTVERSION=	0.2.9
@@ -28,10 +28,4 @@ DESKTOP_ENTRIES="M.A.X.R." \
 		"Game;StrategyGame;" \
 		false
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-BROKEN=		does not build on 10.x
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

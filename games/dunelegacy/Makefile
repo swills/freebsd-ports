@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/games/dunelegacy/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/dunelegacy/Makefile 483515 2018-10-30 19:09:11Z linimon $
 
 PORTNAME=	dunelegacy
 PORTVERSION=	0.96.4
@@ -13,8 +13,6 @@ COMMENT=	Open source clone of Dune II
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to compile: functional.h: 'std::bind' has not been declared
 
 USES=		autoreconf compiler:c++11-lib tar:bzip2 pkgconfig
 GNU_CONFIGURE=	yes

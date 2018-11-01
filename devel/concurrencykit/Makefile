@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/concurrencykit/Makefile 481797 2018-10-11 09:15:41Z manu $
+# $FreeBSD: head/devel/concurrencykit/Makefile 483674 2018-11-01 15:08:38Z linimon $
 
 PORTNAME=	concurrencykit
 PORTVERSION=	0.6.0
@@ -15,9 +15,6 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386 powerpc powerpc64 sparc64
-BROKEN_armv6=		fails to configure: Finding suitable compiler........failed  [not found]
-BROKEN_armv7=		fails to configure: Finding suitable compiler........failed  [not found]
-BROKEN_powerpc64=	fails to link: skipping incompatible /usr/lib/libgcc.a when searching for -lgcc
 
 OPTIONS_DEFINE=		RTM VMAPACK
 OPTIONS_DEFAULT=	VMAPACK

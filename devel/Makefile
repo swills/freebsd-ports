@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 483495 2018-10-30 16:11:10Z mfechner $
+# $FreeBSD: head/devel/Makefile 483701 2018-11-01 19:05:28Z rene $
 #
 
     COMMENT = Development utilities
@@ -1758,7 +1758,6 @@
     SUBDIR += mcpp
     SUBDIR += mdb
     SUBDIR += mdds
-    SUBDIR += memleax
     SUBDIR += menhir
     SUBDIR += mercator
     SUBDIR += mercurial
@@ -4594,6 +4593,7 @@
     SUBDIR += py-futures
     SUBDIR += py-futurist
     SUBDIR += py-fuzzywuzzy
+    SUBDIR += py-fypp
     SUBDIR += py-game
     SUBDIR += py-game_sdl2
     SUBDIR += py-gamin
@@ -4846,6 +4846,7 @@
     SUBDIR += py-paver
     SUBDIR += py-pbr
     SUBDIR += py-pefile
+    SUBDIR += py-pendulum
     SUBDIR += py-pep8-naming
     SUBDIR += py-period
     SUBDIR += py-petname

@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/libversion/Makefile 483401 2018-10-29 19:36:05Z amdmi3 $
+# $FreeBSD: head/devel/libversion/Makefile 483599 2018-10-31 17:45:23Z amdmi3 $
 
 PORTNAME=	libversion
-PORTVERSION=	2.8.0
+PORTVERSION=	2.8.1
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org
