@@ -86,7 +86,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-seed-fu>=2.3.7:databases/rubygem-seed-fu \
 	rubygem-html-pipeline>=2.8:textproc/rubygem-html-pipeline \
 	rubygem-deckar01-task_list>=2.0.0:www/rubygem-deckar01-task_list \
-	rubygem-gitlab-markup>=1.6.4:textproc/rubygem-gitlab-markup \
+	rubygem-gitlab-markup>=1.6.5:textproc/rubygem-gitlab-markup \
 	rubygem-github-markup17>=1.7.0:textproc/rubygem-github-markup17 \
 	rubygem-redcarpet>=3.4:textproc/rubygem-redcarpet \
 	rubygem-commonmarker>=0.17:textproc/rubygem-commonmarker \
