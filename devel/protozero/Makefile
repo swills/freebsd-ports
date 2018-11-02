@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/protozero/Makefile 474896 2018-07-18 19:44:13Z amdmi3 $
+# $FreeBSD: head/devel/protozero/Makefile 483760 2018-11-02 01:39:56Z linimon $
 
 PORTNAME=	protozero
 PORTVERSION=	1.6.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 USE_GITHUB=	yes
 GH_ACCOUNT=	mapbox
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 TEST_TARGET=	test
 NO_ARCH=	yes  # header only library
 

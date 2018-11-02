@@ -1,8 +1,8 @@
 # Created by: Manuel Kasper <mk@neon1.net>
-# $FreeBSD: head/www/mod_auth_pubtkt/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_auth_pubtkt/Makefile 483747 2018-11-02 00:01:53Z swills $
 
 PORTNAME=	mod_auth_pubtkt
-PORTVERSION=	0.9
+PORTVERSION=	0.13
 CATEGORIES=	www
 MASTER_SITES=	https://neon1.net/mod_auth_pubtkt/
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}

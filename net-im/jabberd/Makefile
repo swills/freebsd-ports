@@ -1,9 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/net-im/jabberd/Makefile 482994 2018-10-25 22:07:59Z mm $
+# $FreeBSD: head/net-im/jabberd/Makefile 483751 2018-11-02 00:22:33Z mm $
 
 PORTNAME=	jabberd
-PORTVERSION=	2.6.1
-PORTREVISION=	7
+PORTVERSION=	2.7.0
 CATEGORIES=	net-im
 MASTER_SITES=	https://github.com/jabberd2/jabberd2/releases/download/${PORTNAME}-${DISTVERSION}/ \
 		LOCAL/matthew/${PORTNAME}
@@ -17,6 +16,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libgsasl.so:security/gsasl \
 		libidn.so:dns/libidn \
 		libudns.so:dns/udns
+
 USES=		autoreconf compiler:c11 iconv libtool perl5 pkgconfig \
 		ssl tar:xz
 

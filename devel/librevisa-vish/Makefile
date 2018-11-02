@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/librevisa-vish/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/librevisa-vish/Makefile 483759 2018-11-02 01:38:21Z linimon $
 
 PORTNAME=	librevisa-vish
 PORTVERSION=	0.0.20130714
@@ -12,9 +12,9 @@ COMMENT=	Open Source VISA shell for interfacing test and measurement equipment
 
 LIB_DEPENDS=	libvisa.so:devel/librevisa
 
+USES=		compiler:c++11-lang localbase:ldflags
 GNU_CONFIGURE=	yes
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lvisa
+LDFLAGS+=	-lvisa
 
 .include <bsd.port.mk>

@@ -1,10 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/buku/Makefile 478845 2018-09-03 07:27:21Z ehaupt $
+# $FreeBSD: head/www/buku/Makefile 483777 2018-11-02 07:49:09Z ehaupt $
 
 PORTNAME=	buku
-PORTVERSION=	3.9
+PORTVERSION=	4.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	www python
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -22,6 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.0:www/py-beautifulsoup@${PY
 USES=		python:3.4+
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 
 GH_ACCOUNT=	jarun

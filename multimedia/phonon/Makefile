@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/phonon/Makefile 481267 2018-10-05 09:38:36Z amdmi3 $
+# $FreeBSD: head/multimedia/phonon/Makefile 483765 2018-11-02 01:55:53Z linimon $
 
 PORTNAME=	phonon
 DISTVERSION=	4.10.1
@@ -22,7 +22,7 @@ qt5_PKGNAMESUFFIX=	-qt5
 qt4_PLIST=	${.CURDIR}/pkg-plist.qt4
 qt5_PLIST=	${.CURDIR}/pkg-plist.qt5
 
-USES=		cmake pathfix tar:xz
+USES=		cmake compiler:c++11-lang pathfix tar:xz
 CMAKE_ON=	PHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT \
 		PHONON_NO_PLATFORMPLUGIN
 CMAKE_OFF=	PHONON_BUILD_DESIGNER_PLUGIN:BOOL=OFF
