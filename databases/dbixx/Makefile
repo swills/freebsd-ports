@@ -1,5 +1,5 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/databases/dbixx/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/databases/dbixx/Makefile 483755 2018-11-02 01:31:06Z linimon $
 
 PORTNAME=	dbixx
 PORTVERSION=	0.0.4
@@ -17,7 +17,7 @@ LIB_DEPENDS+=	libdbi.so:databases/libdbi
 BUILD_DEPENDS=	libdbi-drivers>=0:databases/libdbi-drivers
 
 GNU_CONFIGURE=	yes
-USES=		libtool pathfix
+USES=		libtool localbase:ldflags pathfix
 USE_LDCONFIG=	yes
 USE_GCC=	any
 

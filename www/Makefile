@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 483701 2018-11-01 19:05:28Z rene $
+# $FreeBSD: head/www/Makefile 483742 2018-11-01 21:15:11Z mfechner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -2001,7 +2001,6 @@
     SUBDIR += rubygem-deckar01-task_list
     SUBDIR += rubygem-domainatrix
     SUBDIR += rubygem-dropzonejs-rails
-    SUBDIR += rubygem-dropzonejs-rails07
     SUBDIR += rubygem-em-http-request
     SUBDIR += rubygem-em-socksify
     SUBDIR += rubygem-em-twitter

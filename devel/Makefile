@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 483701 2018-11-01 19:05:28Z rene $
+# $FreeBSD: head/devel/Makefile 483740 2018-11-01 20:48:03Z mfechner $
 #
 
     COMMENT = Development utilities
@@ -5872,7 +5872,6 @@
     SUBDIR += rubygem-peek-rails4
     SUBDIR += rubygem-peek-rblineprof
     SUBDIR += rubygem-peek-redis
-    SUBDIR += rubygem-peek-sidekiq
     SUBDIR += rubygem-pkg-config
     SUBDIR += rubygem-platform
     SUBDIR += rubygem-pleaserun
@@ -6005,7 +6004,6 @@
     SUBDIR += rubygem-sidekiq-bulk-rails5
     SUBDIR += rubygem-sidekiq-cron
     SUBDIR += rubygem-sidekiq-cron0
-    SUBDIR += rubygem-sidekiq-limit_fetch
     SUBDIR += rubygem-sidekiq-scheduler
     SUBDIR += rubygem-sidekiq-unique-jobs
     SUBDIR += rubygem-sidetiq

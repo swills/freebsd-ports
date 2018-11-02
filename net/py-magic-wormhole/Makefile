@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/py-magic-wormhole/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-magic-wormhole/Makefile 483750 2018-11-02 00:13:54Z swills $
 
 PORTNAME=	magic-wormhole
-PORTVERSION=	0.10.5
-PORTREVISION=	1
+PORTVERSION=	0.11.0
 CATEGORIES=	net
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

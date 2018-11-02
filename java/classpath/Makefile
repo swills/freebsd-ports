@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/java/classpath/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/java/classpath/Makefile 483790 2018-11-02 09:04:04Z bapt $
 
 PORTNAME=	classpath
 PORTVERSION=	0.99
@@ -12,6 +12,9 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	java@FreeBSD.org
 COMMENT=	GNU project to create a free Java class library
+
+DEPRECATED=	Staled since 2012, OpenJDK is live now
+EXPIRATION_DATE=	2018-12-02
 
 LICENSE=	GPLv2
 

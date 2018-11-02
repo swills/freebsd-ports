@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-aiortc/Makefile 481785 2018-10-11 05:28:54Z swills $
+# $FreeBSD: head/devel/py-aiortc/Makefile 483756 2018-11-02 01:33:37Z swills $
 
 PORTNAME=	aiortc
-PORTVERSION=	0.9.9
+PORTVERSION=	0.9.12
 CATEGORIES=	devel multimedia python www
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

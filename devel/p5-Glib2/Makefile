@@ -1,8 +1,8 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/devel/p5-Glib2/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Glib2/Makefile 483753 2018-11-02 01:20:23Z swills $
 
 PORTNAME=	Glib
-PORTVERSION=	1.327
+PORTVERSION=	1.328
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN SF/gtk2-perl/${PORTNAME}/${PORTVERSION}
 MASTER_SITE_SUBDIR=	CPAN:XAOC

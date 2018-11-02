@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/blokish/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/blokish/Makefile 483761 2018-11-02 01:46:24Z linimon $
 
 PORTNAME=	blokish
 PORTVERSION=	0.9.4
@@ -15,7 +15,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
-USES=		gmake localbase tar:tgz
+USES=		compiler:c++11-lang gl gmake localbase tar:tgz
 USE_GL=		gl
 USE_WX=		2.8
 
