@@ -3,7 +3,7 @@
 
 PORTNAME=		hitch
 PORTVERSION=		1.4.8
-PORTREVISION=		2
+PORTREVISION=		3
 CATEGORIES=		security
 MASTER_SITES=		http://hitch-tls.org/source/ \
 			ZI
@@ -27,11 +27,15 @@ CONFIGURE_ENV=		CRYPTO_CFLAGS="-I${OPENSSLINC}" CRYPTO_LIBS="-L${OPENSSLLIB}" \
 USE_RC_SUBR=		${PORTNAME}
 CPPFLAGS+=		-I${LOCALBASE}/include
 LDFLAGS+=		-L${LOCALBASE}/lib -lcrypto -lssl
+OCSP_DIR=		/var/lib/hitch
 
 OPTIONS_DEFINE=	DOCS
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc
 	${INSTALL_DATA} ${FILESDIR}/${PORTNAME}.conf.sample ${STAGEDIR}${PREFIX}/etc/
+	${MKDIR} ${OCSP_DIR}
+	${CHOWN} hitch ${OCSP_DIR}
+	${CHGRP} hitch ${OCSP_DIR}
 
 .include <bsd.port.mk>
