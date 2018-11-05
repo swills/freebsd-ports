@@ -1,9 +1,10 @@
---- makerules/MeshTool.orig	2017-04-14 14:21:02 UTC
+--- makerules/MeshTool.orig	2018-11-05 18:31:44 UTC
 +++ makerules/MeshTool
-@@ -11,18 +11,20 @@
+@@ -10,19 +10,20 @@
+ 
  ifdef PLAT_LINUX
  LDFLAGS		+= -static
- LIBS		:= ./libs/local$(MULTI_SUFFIX)/lib/libCGAL.a
+-LIBS		:= ./libs/local$(MULTI_SUFFIX)/lib/libCGAL.a
 -LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libboost_thread.a
 -LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libboost_system.a
 -LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libsquish.a
@@ -14,7 +15,6 @@
 -LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libjpeg.a
 -LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libpng.a
 -LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libz.a
--LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libjasper.a
 +LIBS		+= ${PREFIX}/lib/libboost_thread.a
 +LIBS		+= ${PREFIX}/lib/libboost_system.a
 +LIBS		+= ${PREFIX}/lib/libsquish.a
@@ -26,7 +26,7 @@
 +LIBS		+= ${PREFIX}/lib/libjpeg.a
 +LIBS		+= ${PREFIX}/lib/libpng.a
 +LIBS		+= -lz -llzma
-+LIBS		+= ${PREFIX}/lib/libjasper.a
+ #LIBS		+= ./libs/local$(MULTI_SUFFIX)/lib/libjasper.a
  LIBS		+= -lpthread -lrt
 +LIBS		+= -lexecinfo -lelf
  endif #PLAT_LINUX

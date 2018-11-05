@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	xptools
-DISTVERSION=	wed_161r1
-PORTREVISION=	5
+DISTVERSION=	wed_171r2
 CATEGORIES=	games
 
 MAINTAINER=	mike.d.ft402@gmail.com
