@@ -93,7 +93,7 @@ PLIST_SUB=	ARCH=${KODI_ARCH_${ARCH}}
 
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	AIRPLAY AIRTUNES AVAHI CEC DOCS \
-		LIBBLURAY LIRC MYSQL NFS NONFREE PULSEAUDIO RTMP \
+		LCMS2 LIBBLURAY LIRC MYSQL NFS NONFREE PULSEAUDIO RTMP \
 		SFTP SNDIO SMB VAAPI VDPAU WEBSERVER
 OPTIONS_SINGLE=		RPI
 OPTIONS_SINGLE_RPI=	RPI1 RPI2
@@ -128,6 +128,9 @@ AVAHI_CONFIGURE_ENABLE=	avahi
 CEC_BUILD_DEPENDS=	libcec>=3.1.0:multimedia/libcec
 CEC_LIB_DEPENDS=	libcec.so:multimedia/libcec
 CEC_CONFIGURE_ENABLE=	libcec
+
+LCMS2_LIB_DEPENDS=	liblcms2.so.2:graphics/lcms2
+LCMS2_CONFIGURE_ENABLE=	lcms2
 
 LIBBLURAY_LIB_DEPENDS=	libbluray.so:multimedia/libbluray
 LIBBLURAY_CONFIGURE_ENABLE=	libbluray
@@ -173,7 +176,14 @@ SFTP_BUILD_DEPENDS=	${LOCALBASE}/lib/libssh.so:security/libssh
 SFTP_RUN_DEPENDS=	${LOCALBASE}/lib/libssh.so:security/libssh
 SFTP_CONFIGURE_ENABLE=	ssh
 
-CONFIGURE_ARGS+=	--disable-debug --disable-alsa --disable-texturepacker
+CONFIGURE_ARGS+=	--disable-debug --enable-gl --disable-gles \
+			--disable-openmax --disable-tegra \
+			--disable-profiling --enable-x11 --disable-alsa \
+			--enable-dbus --enable-upnp --disable-mid \
+			--disable-mdnsembedded --enable-libxslt \
+			--disable-texturepacker --disable-libusb \
+			--disable-libbluetooth --disable-libcap \
+			--disable-gtest --disable-libav-compat
 
 .include <bsd.port.pre.mk>
 
