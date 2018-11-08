@@ -47,8 +47,8 @@ INSTALL_TARGET=	install-strip
 GLIB_SCHEMAS=	org.gnome.system.gvfs.enums.xml
 
 OPTIONS_SUB=	yes
-OPTIONS_DEFINE=	AVAHI SAMBA GPHOTO2 CDDA HAL FUSE AFC GOOGLE
-OPTIONS_DEFAULT=AVAHI SAMBA GPHOTO2 CDDA HAL FUSE GOOGLE
+OPTIONS_DEFINE=	AVAHI SAMBA GPHOTO2 CDDA HAL FUSE AFC GOOGLE NFS
+OPTIONS_DEFAULT=AVAHI SAMBA GPHOTO2 CDDA HAL FUSE GOOGLE NFS
 CDDA_DESC=	CDDA (enables HAL)
 GPHOTO2_DESC=	Gphoto 2 camera support (enables HAL) for PTP support
 SAMBA_DESC=	Samba support
@@ -78,6 +78,9 @@ AFC_CONFIGURE_ENABLE=	afc
 GOOGLE_CONFIGURE_ENABLE=	google
 GOOGLE_LIB_DEPENDS=	libgdata.so:devel/libgdata \
 			libgoa-1.0.so:net/gnome-online-accounts
+
+NFS_CONFIGURE_ENABLE=	nfs
+NFS_LIB_DEPENDS=	libnfs.so:net/libnfs
 
 .include <bsd.port.options.mk>
 

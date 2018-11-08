@@ -39,6 +39,7 @@ libexec/gvfsd-ftp
 %%FUSE%%libexec/gvfsd-fuse
 %%GOOGLE%%libexec/gvfsd-google
 %%GPHOTO2%%libexec/gvfsd-gphoto2
+%%NFS%%libexec/gvfsd-nfs
 libexec/gvfsd-http
 libexec/gvfsd-localtest
 libexec/gvfsd-metadata
@@ -109,6 +110,7 @@ share/gvfs/mounts/afp.mount
 %%DATADIR%%/mounts/ftps.mount
 %%GOOGLE%%%%DATADIR%%/mounts/google.mount
 %%GPHOTO2%%%%DATADIR%%/mounts/gphoto2.mount
+%%NFS%%%%DATADIR%%/mounts/nfs.mount
 %%DATADIR%%/mounts/http.mount
 %%DATADIR%%/mounts/localtest.mount
 %%DATADIR%%/mounts/network.mount
