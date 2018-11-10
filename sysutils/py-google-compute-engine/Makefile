@@ -1,11 +1,14 @@
 # $FreeBSD$
 
 PORTNAME=	google-compute-engine
-DISTVERSION=	2.8.3
-PORTREVISION=	2
+DISTVERSION=	2.8.6
 CATEGORIES=	sysutils python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+USE_GITHUB=     yes
+GH_ACCOUNT=     GoogleCloudPlatform
+GH_PROJECT=     compute-image-packages
+GH_TAGNAME=     20181011
 
 MAINTAINER=	helen.koike@collabora.com
 COMMENT=	Guest Environment for Google Compute Engine
