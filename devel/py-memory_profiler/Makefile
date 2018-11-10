@@ -15,6 +15,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=0:sysutils/py-psutil@${PY_FLAVOR}
 
+OPTIONS_DEFINE=	MATPLOTLIB
+MATPLOTLIB_DESC=	Use matplotlib for `mprof plot` support
+MATPLOTLIB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${PY_FLAVOR}
+
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
