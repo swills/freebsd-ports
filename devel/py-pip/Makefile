@@ -2,8 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	pip
-PORTVERSION=	9.0.3
+PORTVERSION=	18.0
 CATEGORIES=	devel python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	python@FreeBSD.org
@@ -34,12 +35,7 @@ DOCS_VARS=	PYDISTUTILS_BUILD_TARGET=build_sphinx \
 
 NO_ARCH=	yes
 USES=		python shebangfix
-USE_GITHUB=	yes
 USE_PYTHON=	autoplist concurrent distutils
-
-SHEBANG_FILES=	pip/__init__.py
-
-GH_ACCOUNT=	pypa
 
 NO_ARCH=	yes
 
