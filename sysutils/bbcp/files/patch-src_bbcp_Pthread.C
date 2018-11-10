@@ -1,6 +1,6 @@
---- src/bbcp_Pthread.C.orig	2015-01-16 13:38:06.000000000 -0800
-+++ src/bbcp_Pthread.C	2015-01-16 13:39:48.000000000 -0800
-@@ -128,7 +128,7 @@
+--- src/bbcp_Pthread.C.orig	2018-06-18 04:40:04 UTC
++++ src/bbcp_Pthread.C
+@@ -128,7 +128,7 @@ int bbcp_CondVar::WaitMS(int msec)
  /*                              C o n d W a i t                               */
  /******************************************************************************/
  
@@ -9,7 +9,7 @@
  
  int bbcp_Semaphore::CondWait()
  {
-@@ -215,7 +215,7 @@
+@@ -215,7 +215,7 @@ int  bbcp_Thread_Start(void *(*proc)(void *), void *ar
  void *bbcp_Thread_Wait(pthread_t tid)
      {long retc;
       void *tstat;

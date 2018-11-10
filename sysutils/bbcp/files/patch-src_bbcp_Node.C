@@ -1,6 +1,6 @@
---- src/bbcp_Node.C.orig	2015-01-15 22:20:08.000000000 -0800
-+++ src/bbcp_Node.C	2015-01-15 22:31:02.000000000 -0800
-@@ -94,7 +94,7 @@
+--- src/bbcp_Node.C.orig	2018-06-18 04:30:55 UTC
++++ src/bbcp_Node.C
+@@ -94,7 +94,7 @@ void *bbcp_Connect(void *protp)
       bbcp_Link     *link;
       int            retc;
  
@@ -9,7 +9,7 @@
          {if ((retc = protocol->Login(link, 0)) < 0)
              {delete link; link = 0;}
          }
-@@ -354,8 +354,8 @@
+@@ -354,8 +354,8 @@ int bbcp_Node::RecvFile(bbcp_FileSpec *fp, bbcp_Node *
              oflag = O_WRONLY | O_CREAT | O_TRUNC;
             }
     else if (bbcp_Config.Options & bbcp_APPEND)
@@ -20,7 +20,7 @@
                 else oflag = O_CREAT | O_WRONLY;
             }
     else    oflag = O_WRONLY | O_CREAT | O_EXCL;
-@@ -368,7 +368,7 @@
+@@ -368,7 +368,7 @@ int bbcp_Node::RecvFile(bbcp_FileSpec *fp, bbcp_Node *
  
  // Tell the user what we are bout to do
  //
@@ -29,7 +29,7 @@
        if (bbcp_Config.Options & bbcp_APPEND)
           {char buff[32];
            sprintf(buff, "%lld", startoff);
-@@ -464,7 +464,7 @@
+@@ -464,7 +464,7 @@ int bbcp_Node::RecvFile(bbcp_FileSpec *fp, bbcp_Node *
  // Wait for the expansion thread to end
  //
     if (bbcp_Config.Options & bbcp_COMPRESS)
@@ -38,7 +38,7 @@
         DEBUG("File expansion ended; rc=" <<tretc);
        }
  
-@@ -478,7 +478,7 @@
+@@ -478,7 +478,7 @@ int bbcp_Node::RecvFile(bbcp_FileSpec *fp, bbcp_Node *
  // Make sure each thread has terminated normally
  //
     for (i = 0; i < dlcount; i++)
@@ -47,7 +47,7 @@
          DEBUG("Thread " <<link_tid[i] <<" stream " <<i <<" ended; rc=" <<tretc);
         }
  
-@@ -618,7 +618,7 @@
+@@ -618,7 +618,7 @@ int bbcp_Node::SendFile(bbcp_FileSpec *fp)
  // Wait for compression thread to end
  //
     if (bbcp_Config.Options & bbcp_COMPRESS)
@@ -56,7 +56,7 @@
         DEBUG("File compression ended; rc=" <<tretc);
         delete cxp;
        }
-@@ -626,7 +626,7 @@
+@@ -626,7 +626,7 @@ int bbcp_Node::SendFile(bbcp_FileSpec *fp)
  // Make sure each link thread has terminated normally.
  //
     for (i = 0; i < iocount; i++)
@@ -65,7 +65,7 @@
          DEBUG("Thread " <<link_tid[i] <<" stream " <<i <<" ended; rc=" <<tretc);
         }
  
-@@ -735,7 +735,7 @@
+@@ -735,7 +735,7 @@ int bbcp_Node::Outgoing(bbcp_Protocol *protocol)
  
  // Establish the control connection first
  //

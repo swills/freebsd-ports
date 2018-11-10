@@ -1,6 +1,6 @@
---- src/bbcp_System.C.orig	2015-01-16 11:58:47.000000000 -0800
-+++ src/bbcp_System.C	2015-01-16 12:01:30.000000000 -0800
-@@ -108,7 +108,7 @@
+--- src/bbcp_System.C.orig	2018-06-18 04:51:20 UTC
++++ src/bbcp_System.C
+@@ -108,7 +108,7 @@ gid_t bbcp_System::getGID(const char *group)
  // Convert the group name to a gid
  //
     Glookup.Lock();
@@ -9,7 +9,7 @@
        else gid = (gid_t)-1;
     Glookup.UnLock();
     return gid;
-@@ -126,7 +126,7 @@
+@@ -126,7 +126,7 @@ char *bbcp_System::getGNM(gid_t gid)
  // Get the group name
  //
     Glookup.Lock();
@@ -18,7 +18,7 @@
        else gnmp = (char *)"nogroup";
     Glookup.UnLock();
  
-@@ -151,7 +151,7 @@
+@@ -151,7 +151,7 @@ char *bbcp_System::getHomeDir()
  
  // Get the password entry for this uid
  //
@@ -27,7 +27,7 @@
        else homedir = (char *)"/tmp";
  
  // Return a copy of the directory
-@@ -170,7 +170,7 @@
+@@ -170,7 +170,7 @@ pid_t bbcp_System::getGrandP()
      int rc, grandpa;
  
      sprintf(cmd, PS_CMD, getppid());
@@ -36,7 +36,7 @@
         else if (!cmdstream.GetLine() || !(lp = cmdstream.GetLine())) rc = -33;
                 else {errno = 0;
                       grandpa = strtol(lp, (char **)NULL, 10);
-@@ -218,7 +218,7 @@
+@@ -218,7 +218,7 @@ char *bbcp_System::UserName()
  
  // Get the password entry for this uid
  //

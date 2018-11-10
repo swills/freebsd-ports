@@ -1,5 +1,5 @@
---- src/bbcp_BuffPool.C.orig	2015-01-16 13:30:31.000000000 -0800
-+++ src/bbcp_BuffPool.C	2015-01-16 13:33:14.000000000 -0800
+--- src/bbcp_BuffPool.C.orig	2018-06-18 04:18:26 UTC
++++ src/bbcp_BuffPool.C
 @@ -32,7 +32,7 @@
  #include <inttypes.h>
  #include <sys/mman.h>
@@ -9,7 +9,7 @@
  #define memalign(pgsz,amt) valloc(amt)
  #else
  #include <malloc.h>
-@@ -84,14 +84,14 @@
+@@ -84,14 +84,14 @@ bbcp_BuffPool::~bbcp_BuffPool()
  
  // Free all of the buffers in the empty queue
  //

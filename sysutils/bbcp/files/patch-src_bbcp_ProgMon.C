@@ -1,6 +1,6 @@
---- src/bbcp_ProgMon.C.orig	2015-01-15 22:47:57.000000000 -0800
-+++ src/bbcp_ProgMon.C	2015-01-15 22:49:27.000000000 -0800
-@@ -146,7 +146,7 @@
+--- src/bbcp_ProgMon.C.orig	2018-06-18 04:32:15 UTC
++++ src/bbcp_ProgMon.C
+@@ -146,7 +146,7 @@ void bbcp_ProgMon::Start(bbcp_File *fs_obj, bbcp_ZCX *
  
  // Run a thread to start the monitor
  //

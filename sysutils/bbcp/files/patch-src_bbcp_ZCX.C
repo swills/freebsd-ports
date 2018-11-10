@@ -1,6 +1,6 @@
---- src/bbcp_ZCX.C.orig	2015-01-16 12:06:04.000000000 -0800
-+++ src/bbcp_ZCX.C	2015-01-16 12:06:59.000000000 -0800
-@@ -144,7 +144,7 @@
+--- src/bbcp_ZCX.C.orig	2018-06-18 04:51:49 UTC
++++ src/bbcp_ZCX.C
+@@ -144,7 +144,7 @@ int bbcp_ZCX::Process()
  
  // If we have gotten here then all went well so far flush output
  //

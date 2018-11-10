@@ -1,6 +1,6 @@
---- src/bbcp_Protocol.C.orig	2015-01-16 11:37:43.000000000 -0800
-+++ src/bbcp_Protocol.C	2015-01-16 11:41:33.000000000 -0800
-@@ -86,7 +86,7 @@
+--- src/bbcp_Protocol.C.orig	2018-06-18 04:39:39 UTC
++++ src/bbcp_Protocol.C
+@@ -86,7 +86,7 @@ int bbcp_Protocol::Schedule(bbcp_Node *Fnode, bbcp_Fil
  
  // Start-up the first node
  //
@@ -9,7 +9,7 @@
        return retc;
  
  // Determine additional options
-@@ -101,15 +101,15 @@
+@@ -101,15 +101,15 @@ int bbcp_Protocol::Schedule(bbcp_Node *Fnode, bbcp_Fil
  
  // Send the arguments
  //
@@ -28,7 +28,7 @@
        return retc;
  
  // Compute callback hostname and reset callback port
-@@ -152,7 +152,7 @@
+@@ -152,7 +152,7 @@ int bbcp_Protocol::getCBPort(bbcp_Node *Node)
  
  // The remote program should hve started, get the call back port
  //
@@ -37,7 +37,7 @@
        {if ((wp = Node->GetToken()) && !strcmp(wp, "200")
         &&  (wp = Node->GetToken()) && !strcmp(wp, "Port:")
         &&  (wp = Node->GetToken())
-@@ -408,7 +408,7 @@
+@@ -408,7 +408,7 @@ int bbcp_Protocol::Process_get()
  
  // Get the optional offset
  //
@@ -46,7 +46,7 @@
        {if (bbcp_Config.a2ll("file offset", wp, foffset, 0, -1)) return 22;
         if (foffset > fp->Info.size)
            {char buff[128];
-@@ -447,7 +447,7 @@
+@@ -447,7 +447,7 @@ int bbcp_Protocol::Process_login(bbcp_Link *Net)
  // Get the first line of the login stream
  //
     if (!(np->GetLine()))
@@ -55,7 +55,7 @@
            return bbcp_Emsg("Process_Login", retc, "processing login from",
                                   Net->LinkName());
         return bbcp_Fmsg("Process_Login", "Bad login from", Net->LinkName());
-@@ -549,8 +549,8 @@
+@@ -549,8 +549,8 @@ int bbcp_Protocol::Request(bbcp_Node *Node)
     if (texists && bbcp_Config.snkSpec->Info.Otype == 'd')
         tdir = bbcp_Config.snkSpec->pathname;
        else {int plen;
@@ -66,7 +66,7 @@
                 strncpy(buff, bbcp_Config.snkSpec->pathname, plen-1);
                 else {buff[0] = '.'; plen = 2;}
              tdir = buff; buff[plen-1] = '\0';
-@@ -562,7 +562,7 @@
+@@ -562,7 +562,7 @@ int bbcp_Protocol::Request(bbcp_Node *Node)
        tdir_id = bbcp_Config.snkSpec->Info.fileid;
        else {bbcp_FileInfo Tinfo;
              if (!fs_obj || (!(retc = fs_obj->Stat(tdir, &Tinfo))

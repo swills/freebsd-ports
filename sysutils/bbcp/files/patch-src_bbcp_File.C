@@ -1,5 +1,5 @@
---- src/bbcp_File.C.orig	2015-01-15 18:41:10.000000000 -0800
-+++ src/bbcp_File.C	2015-01-15 18:43:04.000000000 -0800
+--- src/bbcp_File.C.orig	2018-06-18 04:19:20 UTC
++++ src/bbcp_File.C
 @@ -44,7 +44,7 @@
  
  #ifdef FREEBSD
@@ -9,7 +9,7 @@
  #endif
  
  /******************************************************************************/
-@@ -153,7 +153,7 @@
+@@ -153,7 +153,7 @@ bbcp_Buffer *bbcp_File::getBuffer(long long offset)
  
  // Find a buffer
  //

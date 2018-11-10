@@ -1,6 +1,6 @@
---- src/bbcp_ProcMon.C.orig	2015-01-15 22:40:09.000000000 -0800
-+++ src/bbcp_ProcMon.C	2015-01-15 22:41:33.000000000 -0800
-@@ -132,7 +132,7 @@
+--- src/bbcp_ProcMon.C.orig	2018-06-18 04:31:41 UTC
++++ src/bbcp_ProcMon.C
+@@ -132,7 +132,7 @@ void bbcp_ProcMon::Start(pid_t monit, bbcp_Node *Remot
  
  // Run a thread to start the monitor
  //
@@ -9,7 +9,7 @@
        {DEBUG("Error " <<retc <<" starting MonProc thread.");}
        else {DEBUG("Thread " <<mytid <<" monitoring process " <<monPID);}
     return;
-@@ -154,7 +154,7 @@
+@@ -154,7 +154,7 @@ void bbcp_ProcMon::Start(int seclim, bbcp_BuffPool *bu
  
  // Run a thread to start the monitor
  //

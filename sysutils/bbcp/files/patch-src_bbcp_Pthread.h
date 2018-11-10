@@ -1,6 +1,6 @@
---- src/bbcp_Pthread.h.orig	2015-01-16 13:41:31.000000000 -0800
-+++ src/bbcp_Pthread.h	2015-01-16 13:42:14.000000000 -0800
-@@ -108,7 +108,7 @@
+--- src/bbcp_Pthread.h.orig	2018-06-18 14:31:39 UTC
++++ src/bbcp_Pthread.h
+@@ -108,7 +108,7 @@ void    UnLock() {if (monMutex) {monMutex->UnLock(); m
  bbcp_Mutex *monMutex;
  };
  

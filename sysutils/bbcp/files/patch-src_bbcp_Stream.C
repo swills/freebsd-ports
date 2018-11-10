@@ -1,6 +1,6 @@
---- src/bbcp_Stream.C.orig	2015-01-16 11:52:58.000000000 -0800
-+++ src/bbcp_Stream.C	2015-01-16 11:55:23.000000000 -0800
-@@ -206,7 +206,7 @@
+--- src/bbcp_Stream.C.orig	2018-06-18 04:50:56 UTC
++++ src/bbcp_Stream.C
+@@ -206,7 +206,7 @@ int bbcp_Stream::Exec(char **parm, int inrd, int inerr
             return bbcp_Emsg("Exec",errno,"creating a pipe for",parm[0]);
          Child_In=fildes_In[0]; Child_Out=fildes_Out[1]; Child_Err=fildes_Err[1];
          fildes_Out[1] = (inrd ? fildes_In[1] : -1);
@@ -9,7 +9,7 @@
         }
  
      // Fork a process first so we can pick up the next request.
-@@ -436,7 +436,7 @@
+@@ -436,7 +436,7 @@ char *bbcp_Stream::GetWord(int lowcase)
       // If we have a token, return it
       //
       xline = 1;

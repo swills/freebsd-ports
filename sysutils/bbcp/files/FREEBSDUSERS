@@ -1,0 +1,58 @@
+First off a HUGE thanks go out to fjwcash@
+for his relentless, and tireless work with this. I can't thank you enough!
+
+That said, and for all others whom claim it doesn't work;
+The answer(s) are as follows:
+
+The following makes things work:
+
+On the receiving server:
+    sysctl net.inet6.ip6.v6only=0
+    install bbcp-20150116.txz
+
+On the sending server:
+    sysctl net.inet6.ip6.v6only=0
+    install bbcp-20150116.txz
+    add "-4 c" to the start of the bbcp command
+
+With the above, I am able to use the latest version of the bbcp package
+to send data between servers.
+
+Command-line used:
+
+bbcp -4 c -N io "zfs send -I ${localpool}/${localfs}/${site}@${lastsnap} \
+     ${localpool}/${localfs}/${site}@${yesterday}" \
+     ${user}@${remotehost}:"${zfs} recv ${recvopts} ${rempool}"
+
+
+Taken from the bbcp website (when in doubt, google it out):
+
+--ipv4 [who] | -4 [who]
+uses the IPv4 TCP stack for command processing and source-target connections.
+This option is incompatible with IPv6 addresses. The optional who argument
+restricts IPv4 mode to the command if c is specified, the source if s is
+specified or the target if t is specified. The default is cst (i.e. everywhere).
+If who is omitted and –-ipv4 is the last option on the command line it must
+be followed by the -- option (double dash). 
+
+So, it looks like the "-h" output should be updated to use:
+
+[-4 [cst]]
+
+Or similar, with an explanation of what c, s, and t stand for?
+
+  -c ( Compression )
+
+  -s ( Streams )
+
+  -t ( tlim - (timelimit) )
+
+On another note, "-4 s" and "-4 t" end with segmentation faults. 
+The only option that works is "-4 c".
+
+So, until, or unless I'm able to overcome the problems with the -s, and
+-t switches; don't use them.
+
+Thanks again, fjwcash@ !
+
+--Chris
