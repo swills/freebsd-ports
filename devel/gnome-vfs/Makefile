@@ -99,12 +99,6 @@ post-patch:
 	@${SED} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \
 		< ${MASTERDIR}/pkg-deinstall.in > ${PKGDEINSTALL}
 
-pre-configure:
-.if defined(WITHOUT_KERBEROS)
-	@${ECHO_CMD} "${PKGNAME}: KERBEROS is required."
-	@${FALSE}
-.endif
-
 .include <bsd.port.mk>
 
 .endif
