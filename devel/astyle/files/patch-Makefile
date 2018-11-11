@@ -1,0 +1,11 @@
+--- Makefile.orig	2018-10-27 00:13:24 UTC
++++ Makefile
+@@ -37,7 +37,7 @@ objdir = obj
+ ipath=$(prefix)/bin
+ CBASEFLAGS = -Wall -Wextra -fno-rtti -fno-exceptions -std=c++11
+ JAVAINCS   = -I$(JAVA_HOME)/include -I$(JAVA_HOME)/include/linux
+-CXX = g++
++CXX ?= g++
+ INSTALL=install -o $(USER) -g $(USER)
+ 
+ # Library's major version number -- Increment in case of incompatible API
