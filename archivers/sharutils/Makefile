@@ -1,9 +1,9 @@
 # Created by: ache
-# $FreeBSD: head/archivers/sharutils/Makefile 390163 2015-06-20 13:22:51Z bapt $
+# $FreeBSD: head/archivers/sharutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	sharutils
 PORTVERSION=	4.15.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	archivers
 MASTER_SITES=	GNU
 

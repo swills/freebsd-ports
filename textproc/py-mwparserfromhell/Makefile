@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/py-mwparserfromhell/Makefile 463619 2018-03-05 05:19:23Z yuri $
+# $FreeBSD: head/textproc/py-mwparserfromhell/Makefile 484123 2018-11-04 18:56:04Z yuri $
 
 PORTNAME=	mwparserfromhell
-DISTVERSION=	0.5.1
+DISTVERSION=	0.5.2
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

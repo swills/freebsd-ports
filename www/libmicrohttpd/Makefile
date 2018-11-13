@@ -1,9 +1,9 @@
 # Created by: David Barksdale <amatus@gnu.org>
-# $FreeBSD: head/www/libmicrohttpd/Makefile 458660 2018-01-10 17:06:48Z ale $
+# $FreeBSD: head/www/libmicrohttpd/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libmicrohttpd
 DISTVERSION=	0.9.58
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	GNU
 

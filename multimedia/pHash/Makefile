@@ -1,9 +1,9 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/multimedia/pHash/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/multimedia/pHash/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	pHash
 PORTVERSION=	0.9.6
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	multimedia devel
 MASTER_SITES=	http://phash.org/releases/ \
 		http://www.cyberbotx.com/pHash/

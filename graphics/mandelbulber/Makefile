@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/mandelbulber/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/mandelbulber/Makefile 484059 2018-11-04 14:08:00Z antoine $
 
 PORTNAME=	mandelbulber
 DISTVERSION=	1.13-1
@@ -13,6 +13,8 @@ COMMENT=	3D Mandelbrot fractal renderer
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 USES=		desktop-file-utils gmake pkgconfig
 USE_GNOME=	glib20 gtk20

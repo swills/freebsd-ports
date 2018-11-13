@@ -1,5 +1,5 @@
 # Created by: Diego Depaoli <trebestie@gmail.com> and Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/multimedia/smplayer/Makefile 482712 2018-10-21 17:33:58Z riggs $
+# $FreeBSD: head/multimedia/smplayer/Makefile 484657 2018-11-11 03:44:33Z linimon $
 
 PORTNAME=	smplayer
 DISTVERSION=	18.9.0
@@ -12,7 +12,8 @@ COMMENT=	Complete front-end based on Qt for mplayer
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/Copying.txt
 
-USES=		cpe desktop-file-utils dos2unix gmake qmake tar:bzip2
+USES=		cpe compiler:c++11-lang desktop-file-utils dos2unix gmake \
+		qmake tar:bzip2
 USE_XORG=	x11
 
 CPE_VENDOR=	ricardo_villalba

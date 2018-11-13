@@ -1,5 +1,5 @@
 # Created by: Marc Recht <marc@informatik.uni-bremen.de>
-# $FreeBSD: head/x11-toolkits/gtkglarea2/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/gtkglarea2/Makefile 483822 2018-11-02 16:36:00Z linimon $
 #    $MCom: ports/x11-toolkits/gtkglarea2/Makefile,v 1.2 2006/09/10 00:51:17 mezz Exp $
 
 PORTNAME=	gtkglarea
@@ -13,7 +13,7 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	OpenGL widget for the GTK+2 GUI toolkit
 
-USES=		libtool:keepla pathfix pkgconfig tar:bzip2
+USES=		compiler:c++11-lang libtool:keepla pathfix pkgconfig tar:bzip2
 USE_GNOME=	gtk20
 USE_GL=		yes
 USE_LDCONFIG=	yes

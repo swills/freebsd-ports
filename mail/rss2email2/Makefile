@@ -1,14 +1,14 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/rss2email2/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/mail/rss2email2/Makefile 484444 2018-11-08 11:55:58Z tobik $
 
 PORTNAME=	rss2email
 PORTVERSION=	2.71
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail python
 MASTER_SITES=	http://www.allthingsrss.com/rss2email/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	srg@guglielmo.us
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Emails posts from subscribed RSS/Atom newsfeeds
 
 LICENSE=	GPLv2 GPLv3
@@ -45,12 +45,4 @@ do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/config.py.example ${STAGEDIR}${EXAMPLESDIR}
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug.
-post-extract:
-	@${CHMOD} 0755 ${WRKSRC}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

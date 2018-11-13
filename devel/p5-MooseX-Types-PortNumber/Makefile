@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooseX-Types-PortNumber/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Types-PortNumber/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	MooseX-Types-PortNumber
 PORTVERSION=	0.03
@@ -6,7 +6,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Port number type for Moose classes by the IANA
 
 LICENSE=	ART10 GPLv1+

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34/Makefile 476993 2018-08-12 15:11:38Z joneum $
+# $FreeBSD: head/databases/mongodb34/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
@@ -17,8 +17,8 @@ COMMENT=	Distributed document-oriented "NoSQL" database
 LICENSE=	AGPLv3 APACHE20
 LICENSE_COMB=	multi
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	no member named 'SSLv2_method' in the global namespace
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	no member named 'SSLv2_method' in the global namespace
 ONLY_FOR_ARCHS=	amd64 aarch64
 ONLY_FOR_ARCHS_REASON=	"Only supported on amd64 and aarch64 (i386 deprecated in v3)"
 

@@ -1,8 +1,9 @@
-# $FreeBSD: head/multimedia/kodi-devel/Makefile 482839 2018-10-23 14:16:15Z tobik $
+# $FreeBSD: head/multimedia/kodi-devel/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	kodi
 CATEGORIES=	multimedia
-DISTVERSION=	18.0.g201810231420
+DISTVERSION=	18.0.g201811032038
+PORTREVISION=	1
 PKGNAMESUFFIX?=	-devel
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -54,7 +55,7 @@ USES=		autoreconf:build cmake:outsource,noninja compiler:c++11-lib \
 USE_GITHUB=	yes
 GH_ACCOUNT=	xbmc
 GH_PROJECT=	xbmc
-GH_TAGNAME=	18.0b4-Leia
+GH_TAGNAME=	18.0b5-Leia
 USE_GNOME=	libxslt libxml2
 USE_JAVA=	yes
 JAVA_BUILD=	yes
@@ -86,7 +87,6 @@ OPTIONS_SINGLE=	PLATFORM
 OPTIONS_SINGLE_PLATFORM=	GBM RPI WAYLAND X11
 OPTIONS_EXCLUDE_amd64=	RPI
 OPTIONS_EXCLUDE_i386=	RPI
-OPTIONS_EXCLUDE_FreeBSD_10=	GBM WAYLAND
 OPTIONS_SUB=	yes
 
 OPTIONS_GROUP=		SOUND

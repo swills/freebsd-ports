@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 482824 2018-10-23 10:14:09Z rene $
+# $FreeBSD: head/archivers/Makefile 484487 2018-11-08 23:19:03Z lwhsu $
 #
 
     COMMENT = Archivers
@@ -88,6 +88,7 @@
     SUBDIR += lzop
     SUBDIR += makeself
     SUBDIR += mar
+    SUBDIR += maxcso
     SUBDIR += minizip
     SUBDIR += mscompress
     SUBDIR += mtf

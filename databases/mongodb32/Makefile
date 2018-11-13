@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/databases/mongodb32/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/databases/mongodb32/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	mongodb32
 PORTVERSION=	3.2.11
@@ -18,8 +18,8 @@ COMMENT=	Distributed document-oriented "NoSQL" database
 LICENSE=	AGPLv3 APACHE20
 LICENSE_COMB=	multi
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	variable has incomplete type 'EVP_MD_CTX' (aka 'evp_md_ctx_st')
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	variable has incomplete type 'EVP_MD_CTX' (aka 'evp_md_ctx_st')
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libsnappy.so:archivers/snappy
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR} \

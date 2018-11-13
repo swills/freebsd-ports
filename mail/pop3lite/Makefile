@@ -1,9 +1,9 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/mail/pop3lite/Makefile 481888 2018-10-12 09:19:04Z antoine $
+# $FreeBSD: head/mail/pop3lite/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	pop3lite
 PORTVERSION=	0.2.4a
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail
 MASTER_SITES=	SF
 

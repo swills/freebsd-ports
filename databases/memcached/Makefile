@@ -1,5 +1,5 @@
 # Created by: Sean Chittenden <seanc@FreeBSD.org>
-# $FreeBSD: head/databases/memcached/Makefile 483577 2018-10-31 13:48:41Z swills $
+# $FreeBSD: head/databases/memcached/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	memcached
 PORTVERSION=	1.5.11
@@ -40,7 +40,6 @@ OPTIONS_DEFAULT=	SASL DTRACE
 OPTIONS_EXCLUDE+=	DTRACE
 .endif
 
-OPTIONS_EXCLUDE_FreeBSD_10+=	DTRACE
 OPTIONS_EXCLUDE_i386=		DTRACE
 # ld(1) fails to link probes: Relocations in generic ELF (EM: 0)
 OPTIONS_EXCLUDE_aarch64=	DTRACE

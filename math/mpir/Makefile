@@ -1,8 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/math/mpir/Makefile 472527 2018-06-16 08:34:33Z amdmi3 $
+# $FreeBSD: head/math/mpir/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mpir
 PORTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://mpir.org/
 

@@ -1,9 +1,9 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/dns/mydns/Makefile 469120 2018-05-05 15:09:22Z danfe $
+# $FreeBSD: head/dns/mydns/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mydns
 PORTVERSION=	1.1.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	dns databases
 MASTER_SITES=	http://mydns.bboy.net/download/
 

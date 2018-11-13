@@ -1,9 +1,9 @@
 # Created by: andrewb@cs.cmu.edu
-# $FreeBSD: head/lang/twelf/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/twelf/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	twelf
 PORTVERSION=	1.7.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	src-
 CATEGORIES=	lang math
 MASTER_SITES=	http://twelf.plparty.org/releases/ \
@@ -25,9 +25,9 @@ USES=		gmake
 ALL_TARGET=	mlton
 PLIST_FILES=	bin/${PORTNAME}-server
 PORTDATA=	emacs examples examples-clp examples-delphin tex vim README
-PORTDOCS=	dvi html info pdf ps
+PORTDOCS=	dvi html pdf ps
 WRKSRC=		${WRKDIR}/twelf
-INFO=		twelf
+DOCS_INFO=	twelf
 
 DOCS_USE=	TEX=dvipsk:build,tex:build
 DOCS_USES=	makeinfo
@@ -50,5 +50,6 @@ do-install:
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC}/doc && ${COPYTREE_SHARE} "${PORTDOCS}" ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/info/twelf.info* ${STAGEDIR}${PREFIX}/${INFO_PATH}
 
 .include <bsd.port.mk>

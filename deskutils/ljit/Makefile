@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/deskutils/ljit/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/deskutils/ljit/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	ljit
 PORTVERSION=	0.2.5
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	deskutils
 MASTER_SITES=	http://kir.vtx.ru/ljit/dl/ \
 		http://freebsd.nsu.ru/distfiles/
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
-RUN_DEPENDS=	convert:graphics/ImageMagick
+RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

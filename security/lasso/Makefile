@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/security/lasso/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/lasso/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	lasso
 PORTVERSION=	2.4.1
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://dev.entrouvert.org/releases/lasso/
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free Liberty Alliance Implementation
 
 LICENSE=	GPLv2

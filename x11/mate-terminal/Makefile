@@ -1,9 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-terminal/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/x11/mate-terminal/Makefile 483842 2018-11-02 20:12:14Z ericbsd $
 
 PORTNAME=	mate-terminal
-PORTVERSION=	1.20.0
-PORTREVISION=	1
+PORTVERSION=	1.20.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

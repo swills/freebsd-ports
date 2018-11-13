@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/openca-tools-forked/Makefile 483101 2018-10-27 02:42:27Z swills $
+# $FreeBSD: head/security/openca-tools-forked/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	openca-tools-forked
 PORTVERSION=	1.4.0
@@ -12,7 +12,7 @@ COMMENT=	Tools to deal with SCEP and PKCS7 messages
 
 LICENSE=	APACHE20
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USES=		gmake perl5 ssl
 

@@ -1,5 +1,5 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/devel/ruby-gems/Makefile 474771 2018-07-17 03:44:08Z miwi $
+# $FreeBSD: head/devel/ruby-gems/Makefile 484115 2018-11-04 17:54:48Z sunpoet $
 
 PORTNAME=	gems
 # Do not forget to update the following gemspec patches:
@@ -7,7 +7,7 @@ PORTNAME=	gems
 # - www/rubygem-gitlab-grack/files/patch-gemspec
 PORTVERSION=	2.7.7
 CATEGORIES=	devel ruby
-MASTER_SITES=	http://production.cf.rubygems.org/rubygems/
+MASTER_SITES=	https://production.cf.rubygems.org/rubygems/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby

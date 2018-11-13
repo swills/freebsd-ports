@@ -1,5 +1,5 @@
 # Created by: Mykola Dzham <freebsd@levsha.org.ua>
-# $FreeBSD: head/astro/qlandkartegt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/qlandkartegt/Makefile 484073 2018-11-04 14:24:34Z antoine $
 
 PORTNAME=	qlandkartegt
 PORTVERSION=	1.8.1
@@ -11,6 +11,8 @@ MAINTAINER=	i@levsha.me
 COMMENT=	The ultimate outdoor aficionado's tool
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libproj.so:graphics/proj \

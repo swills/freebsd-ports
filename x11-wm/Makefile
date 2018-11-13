@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 482283 2018-10-17 09:09:08Z danfe $
+# $FreeBSD: head/x11-wm/Makefile 484207 2018-11-05 18:49:23Z crees $
 #
 
     COMMENT = X11 window managers
@@ -15,7 +15,6 @@
     SUBDIR += blackbox
     SUBDIR += bspwm
     SUBDIR += ccsm
-    SUBDIR += cde
     SUBDIR += clementine-wm
     SUBDIR += compiz
     SUBDIR += compiz-fusion

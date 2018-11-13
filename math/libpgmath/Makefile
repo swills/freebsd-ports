@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/libpgmath/Makefile 479158 2018-09-06 20:06:40Z jmd $
+# $FreeBSD: head/math/libpgmath/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	libpgmath
 DISTVERSION=	g20180904
@@ -12,7 +12,6 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 ONLY_FOR_ARCHS=	amd64
-IGNORE_FreeBSD_10=	not supported on older than 12.0, no cpuid bit support
 IGNORE_FreeBSD_11=	not supported on older than 12.0, no cpuid bit support
 
 BUILD_DEPENDS=	llvm60>=0:devel/llvm60

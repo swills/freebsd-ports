@@ -1,8 +1,9 @@
 # Created by: Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
-# $FreeBSD: head/mail/mew/Makefile 475670 2018-07-29 18:41:19Z pi $
+# $FreeBSD: head/mail/mew/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mew
 PORTVERSION=	6.8
+PORTREVISION=	1
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www.mew.org/Release/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

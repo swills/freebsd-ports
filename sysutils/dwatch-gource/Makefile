@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/dwatch-gource/Makefile 471295 2018-06-01 21:25:06Z dteske $
+# $FreeBSD: head/sysutils/dwatch-gource/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	dwatch-gource
 DISTVERSION=	0.9
@@ -21,7 +21,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 
-.if ${OSVERSION} < 1101516 || (${OSVERSION} >= 1200000 && ${OSVERSION} < 1200065)
+.if ${OSVERSION} >= 1200000 && ${OSVERSION} < 1200065
 IGNORE=         requires dwatch available in recent FreeBSD 11 or 12
 .endif
 

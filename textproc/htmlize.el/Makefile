@@ -1,5 +1,5 @@
 # Created by: Marc van Woerkom <marc.vanwoerkom@fernuni-hagen.de>
-# $FreeBSD: head/textproc/htmlize.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/textproc/htmlize.el/Makefile 484328 2018-11-06 20:57:19Z rene $
 
 PORTNAME=	htmlize.el
 PORTVERSION=	1.39
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}.cgi
 EXTRACT_SUFX=
 DIST_SUBDIR=	repacked
 
-MAINTAINER=	dryice@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Emacs major mode to create HTML files from Emacs buffers (in colour!)
 
 USES=		emacs

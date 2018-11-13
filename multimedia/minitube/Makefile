@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/minitube/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/minitube/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	minitube
 DISTVERSION=	2.9
@@ -15,7 +15,7 @@ USES=		qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	flaviotordini
 USE_GL=		gl
-USE_QT=		core dbus gui network phonon4 qml script sql widgets \
+USE_QT=		core dbus declarative gui network phonon4 script sql widgets \
 		buildtools_build imageformats_run sql-sqlite3_run
 QMAKE_ARGS=	QMAKE_LRELEASE=${LRELEASE} \
 		DEFINES+=APP_GOOGLE_API_KEY="${MINITUBE_GOOGLE_API_KEY}"

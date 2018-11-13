@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/kf5-kwayland/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/x11/kf5-kwayland/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	kwayland
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

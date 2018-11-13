@@ -1,8 +1,9 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/graphics/pqiv/Makefile 480737 2018-09-26 13:13:48Z linimon $
+# $FreeBSD: head/graphics/pqiv/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	pqiv
 PORTVERSION=	2.10.4
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -53,7 +54,7 @@ SPECTRE_CONFIGURE_WITH=	spectre
 SPECTRE_LIB_DEPENDS=	libspectre.so:print/libspectre
 
 WAND_CONFIGURE_WITH=	wand
-WAND_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
+WAND_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
 
 WEBP_CONFIGURE_WITH=	webp
 WEBP_LIB_DEPENDS=	libwebp.so:graphics/webp

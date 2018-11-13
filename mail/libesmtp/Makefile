@@ -1,5 +1,5 @@
 # Created by: tobez@tobez.org
-# $FreeBSD: head/mail/libesmtp/Makefile 438653 2017-04-16 11:09:07Z sunpoet $
+# $FreeBSD: head/mail/libesmtp/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	libesmtp
 PORTVERSION=	1.0.6
@@ -16,7 +16,7 @@ COMMENT=	Library for posting electronic mail
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USES=		gmake libtool tar:bzip2
 GNU_CONFIGURE=	yes

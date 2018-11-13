@@ -1,5 +1,5 @@
 # Created by: Konstantin Saurbier <saurbier@math.uni-bielefeld.de>
-# $FreeBSD: head/dns/ldns/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/dns/ldns/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	ldns
 PORTVERSION=	1.7.0
@@ -101,7 +101,7 @@ INSTALL_TARGET=	install-lib install-h install-config
 
 .include <bsd.port.pre.mk>
 
-.if ${PORT_OPTIONS:MDANETAUSAGE} && ${SSL_DEFAULT} != openssl-devel
+.if ${PORT_OPTIONS:MDANETAUSAGE} && ${SSL_DEFAULT} != openssl111
 BROKEN=		this option requires openssl >= 1.1.0
 .endif
 

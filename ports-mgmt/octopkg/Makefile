@@ -1,9 +1,9 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/ports-mgmt/octopkg/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/ports-mgmt/octopkg/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	octopkg
 PORTVERSION=	0.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	ports-mgmt
 
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	aarnt
 
-USE_QT=		core concurrent gui network xml widgets quick concurrent \
+USE_QT=		core concurrent declarative gui network xml widgets concurrent \
 		buildtools_build
 USES=		qmake compiler:c++11-lib qt:5
 

@@ -1,9 +1,9 @@
 # Created by: Oliver Lehmann
-# $FreeBSD: head/security/courier-authlib/Makefile 481732 2018-10-10 11:54:58Z madpilot $
+# $FreeBSD: head/security/courier-authlib/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	courier-authlib
 PORTVERSION=	0.69.0
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	security mail
 .if defined(PKGNAMESUFFIX)
 MASTER_SITES=	SF/courier/authlib/${PORTVERSION}

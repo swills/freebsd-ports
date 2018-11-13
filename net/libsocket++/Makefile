@@ -1,9 +1,9 @@
 # Created by: Narvi <narvi@haldjas.folklore.ee>
-# $FreeBSD: head/net/libsocket++/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net/libsocket++/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libsocket++
 PORTVERSION=	1.12.13
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	http://src.linuxhacker.at/socket++/
 DISTNAME=	socket++-${PORTVERSION}

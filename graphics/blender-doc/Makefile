@@ -1,5 +1,5 @@
 # Created by: Alex Ivasyuv <siegerstein@pochta.ru>
-# $FreeBSD: head/graphics/blender-doc/Makefile 431354 2017-01-13 09:19:36Z amdmi3 $
+# $FreeBSD: head/graphics/blender-doc/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	blender
 PORTVERSION=	2.3
@@ -17,15 +17,6 @@ NO_ARCH=	yes
 
 SUB_FILES=	pkg-message
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-post-extract:
-# chmod -R bug.
-# Do not use "-exec ... +", because of the same bug, it will not work.
-	@${FIND} ${WRKSRC} -type d -exec ${CHMOD} 755 {} \;
-.endif
-
 pre-patch:
 	@cd ${WRKSRC}/htmlI/PartAT/volumetrics/gfx/ && \
 		${RM} -r  "Nuova cartella" "Nuova cartella (2)"
@@ -34,4 +25,4 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	@cd ${WRKSRC} && ${COPYTREE_SHARE} "htmlI htmlII" ${STAGEDIR}${DOCSDIR}/
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

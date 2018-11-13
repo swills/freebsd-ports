@@ -1,9 +1,9 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/graphics/zgv/Makefile 455214 2017-11-30 17:10:09Z amdmi3 $
+# $FreeBSD: head/graphics/zgv/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	zgv
 PORTVERSION=	5.9
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	SUNSITE/apps/graphics/viewers/svga
 

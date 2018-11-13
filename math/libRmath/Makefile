@@ -1,5 +1,5 @@
 # Created by: Eric van Gyzen <vangyzen@stat.duke.edu>
-# $FreeBSD: head/math/libRmath/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/libRmath/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	libRmath
 DISTVERSION=	3.5.1
@@ -13,7 +13,6 @@ COMMENT=	Standalone math library from R
 
 LICENSE=	GPLv2
 
-BROKEN_FreeBSD_10_armv6=	Fails to build
 ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \

@@ -1,5 +1,5 @@
 # Created by: Christian Gusenbauer
-# $FreeBSD: head/graphics/inventor/Makefile 475125 2018-07-22 20:33:42Z yuri $
+# $FreeBSD: head/graphics/inventor/Makefile 484052 2018-11-04 13:59:23Z antoine $
 
 PORTNAME=	inventor
 PORTVERSION=	2.1.5.p10
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SGI's Open Inventor (TM)
 
 LICENSE=	LGPL21
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libfreetype.so:print/freetype2
 

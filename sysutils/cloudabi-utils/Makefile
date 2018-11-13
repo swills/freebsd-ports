@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 460690 2018-02-02 10:05:07Z amdmi3 $
+# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	cloudabi-utils
 DISTVERSIONPREFIX=	v
@@ -14,8 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	CloudABI has not yet been ported to other architectures
-
-IGNORE_FreeBSD_10=	requires various C++17 features
 
 BUILD_DEPENDS=	${LOCALBASE}/include/cloudabi_types.h:devel/cloudabi \
 		${LOCALBASE}/include/flower/protocol/switchboard.ad.h:net/flower \

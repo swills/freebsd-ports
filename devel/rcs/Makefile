@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rcs/Makefile 441925 2017-05-28 21:18:04Z antoine $
+# $FreeBSD: head/devel/rcs/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	rcs
 PORTVERSION=	5.9.4
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

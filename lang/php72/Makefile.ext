@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/php72/Makefile.ext 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/lang/php72/Makefile.ext 483821 2018-11-02 16:12:05Z joneum $
 
 COMMENT=	The ${PHP_MODNAME} shared extension for php
 
@@ -131,6 +131,11 @@ CONFIGURE_ARGS+=--with-gmp=${LOCALBASE}
 .if ${PHP_MODNAME} == "hash"
 CONFIGURE_ARGS+=--enable-hash \
 		--with-mhash
+CFLAGS_mips64=		-DHAVE_SLOW_HASH3
+CFLAGS_powerpc64=	-DHAVE_SLOW_HASH3
+CFLAGS_powerpc=		-DHAVE_SLOW_HASH3
+CFLAGS_powerpcspe=	-DHAVE_SLOW_HASH3
+CFLAGS_sparc64=		-DHAVE_SLOW_HASH3
 .endif
 
 .if ${PHP_MODNAME} == "iconv"

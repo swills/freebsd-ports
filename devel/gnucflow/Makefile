@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/devel/gnucflow/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/gnucflow/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnucflow
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://download.gnu.org.ua/pub/release/cflow/ \
 		http://mirror.amdmi3.ru/distfiles/

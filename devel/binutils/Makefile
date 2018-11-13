@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/binutils/Makefile 477638 2018-08-20 09:17:45Z jhb $
+# $FreeBSD: head/devel/binutils/Makefile 484692 2018-11-11 13:33:22Z bapt $
 
 PORTNAME=	binutils
 PORTVERSION=	2.30
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH?=	1
 CATEGORIES?=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases
@@ -46,7 +46,7 @@ BUTARGET?=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}
 .endif
 PLIST_SUB=	BUTARGET=${BUTARGET}
 OPTIONS_EXCLUDE=	NLS
-INFO_PATH=	${PKGNAMEPREFIX:S/-$//}/info
+INFO_PATH=	${PKGNAMEPREFIX:S/-$//}/share/info
 CONFIGURE_ARGS+=	--disable-shared \
 			--target=${BUTARGET}
 .else
@@ -120,7 +120,7 @@ post-install:
 	${RM} -r ${STAGEDIR}${PREFIX}/${PKGNAMEPREFIX:S/-$//}
 .endif
 	${RM} ${STAGEDIR}${PREFIX}/${BUTARGET}/lib/ldscripts/i386bsd.*
-	@if [ -d ${STAGEDIR}${PREFIX}/${INFO_PATH} ] ; then rm -rf ${STAGEDIR}${PREFIX}/${INFO_PATH}; fi
+	@if [ -d ${STAGEDIR}${PREFIX}/${INFO_PATH:H} ] ; then rm -rf ${STAGEDIR}${PREFIX}/${INFO_PATH:H}; fi
 	${LN} -fs ../../bin/${BUTARGET}-size ${STAGEDIR}${PREFIX}/${BUTARGET}/bin/size
 .if defined(CROSS_TOOLCHAIN)
 	${MV} ${STAGEDIR}/usr/bin/as ${STAGEDIR}/usr/bin/${BUTARGET}-as

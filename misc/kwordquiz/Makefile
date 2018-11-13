@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kwordquiz/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/misc/kwordquiz/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	kwordquiz
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	misc kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Flash card trainer for KDE Applications
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
 		coreaddons crash doctools ecm emoticons guiaddons i18n \
 		iconthemes init itemmodels itemviews jobwidgets kdeclarative \

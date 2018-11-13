@@ -1,14 +1,17 @@
 # Created by: Michael L. Hostbaek (mich@freebsdcluster.org)
-# $FreeBSD: head/net/slurm/Makefile 361440 2014-07-10 12:13:11Z olgeni $
+# $FreeBSD: head/net/slurm/Makefile 484392 2018-11-07 10:02:00Z mich $
 
 PORTNAME=	slurm
 PORTVERSION=	0.3.3
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.wormulon.net/files/slurm/ \
 		http://www.raisdorf.net/files/slurm/
 
 MAINTAINER=	mich@FreeBSD.org
 COMMENT=	Generic network load monitor
+
+LICENSE=	GPLv2+
 
 LDFLAGS+=	-lncurses
 

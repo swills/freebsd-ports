@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis-devel/Makefile 482383 2018-10-18 22:20:51Z osa $
+# $FreeBSD: head/databases/redis-devel/Makefile 484480 2018-11-08 21:10:53Z osa $
 
 PORTNAME=	redis
-DISTVERSION=	5.0.0
+DISTVERSION=	5.0.1
 CATEGORIES=	databases
 MASTER_SITES=	http://download.redis.io/releases/
 PKGNAMESUFFIX=	-devel
@@ -34,7 +34,7 @@ CFLAGS+=	-march=i586
 .endif
 
 .if ${PORT_OPTIONS:MJEMALLOC}
-MAKE_ENV=	"USE_JEMALLOC=yes"
+MAKE_ENV+=	"USE_JEMALLOC=yes"
 .endif
 
 .if ${PORT_OPTIONS:MTRIB}

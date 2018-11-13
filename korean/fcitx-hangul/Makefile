@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/korean/fcitx-hangul/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/korean/fcitx-hangul/Makefile 484688 2018-11-11 11:47:33Z wen $
 
 PORTNAME=	fcitx-hangul
 PORTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	korean
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx
@@ -12,6 +13,7 @@ COMMENT=	Hangul support for Fcitx
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfcitx-config.so:chinese/fcitx \
 		libhangul.so:korean/libhangul
 

@@ -1,8 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/qmc2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/emulators/qmc2/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	qmc2
 PORTVERSION=	0.195
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF
 
@@ -19,8 +20,8 @@ NO_WRKSUBDIR=	yes
 USES=		gmake qt:5 tar:bzip2
 USE_XORG=	x11 xmu
 USE_GL=		gl glu
-USE_QT=		buildtools_build core gui multimedia \
-		network opengl quick qmake_build qml \
+USE_QT=		buildtools_build core declarative gui multimedia \
+		network opengl qmake_build \
 		testlib script scripttools sql svg \
 		webkit widgets xml xmlpatterns
 USE_SDL=	sdl

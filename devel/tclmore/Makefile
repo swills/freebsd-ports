@@ -1,9 +1,9 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/devel/tclmore/Makefile 453458 2017-11-04 13:07:41Z zi $
+# $FreeBSD: head/devel/tclmore/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	tclmore
 PORTVERSION=	0.7b1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel tcl
 MASTER_SITES=	http://download.gna.org/tclmore/0.7/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_src

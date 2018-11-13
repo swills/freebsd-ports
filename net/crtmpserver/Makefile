@@ -1,5 +1,5 @@
 # Created by: shiretu
-# $FreeBSD: head/net/crtmpserver/Makefile 472468 2018-06-15 17:37:51Z amdmi3 $
+# $FreeBSD: head/net/crtmpserver/Makefile 484033 2018-11-04 13:34:26Z antoine $
 
 PORTNAME=	crtmpserver
 PORTVERSION=	0.811
@@ -12,6 +12,8 @@ COMMENT=	C++ RTSP/RTMP/MPEG-TS Server
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build
 
 USES=		cmake:outsource lua ssl
 CMAKE_SOURCE_PATH=	${WRKSRC}/builders/cmake

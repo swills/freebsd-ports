@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node10/Makefile 483646 2018-11-01 08:18:46Z antoine $
+# $FreeBSD: head/www/node10/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	node
 PORTVERSION=	10.13.0
@@ -24,7 +24,6 @@ OPTIONS_SUB=		yes
 OPTIONS_EXCLUDE+=	DTRACE
 .endif
 
-OPTIONS_EXCLUDE_FreeBSD_10=	DTRACE
 OPTIONS_EXCLUDE_aarch64=	DTRACE
 # dt_modtext:/usr/src/cddl/contrib/opensolaris/lib/libdtrace/common/dt_link.c(820): arm not implemented
 OPTIONS_EXCLUDE_armv6=		DTRACE
@@ -68,8 +67,8 @@ LIB_DEPENDS+=	libcares.so:dns/c-ares\
 
 .if empty(PORT_OPTIONS:MBUNDLED_SSL)
 
-.if ${OPSYS} == FreeBSD && ${SSL_DEFAULT} != openssl-devel
-IGNORE=		node.js requires openssl 1.1.0, add DEFAULT_VERSIONS+=ssl=openssl-devel to /etc/make.conf or enable BUNDLED_SSL option
+.if ${OPSYS} == FreeBSD && ${SSL_DEFAULT} != openssl111
+IGNORE=		node.js requires openssl 1.1.0, add DEFAULT_VERSIONS+=ssl=openssl111 to /etc/make.conf or enable BUNDLED_SSL option
 .endif
 
 .if !empty(SSL_DEFAULT:Mlibressl*)

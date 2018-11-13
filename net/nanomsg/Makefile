@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/nanomsg/Makefile 453083 2017-10-28 20:14:29Z pi $
+# $FreeBSD: head/net/nanomsg/Makefile 484644 2018-11-10 21:14:11Z arved $
 
 PORTNAME=			nanomsg
-PORTVERSION=			1.1.0
+PORTVERSION=			1.1.5
 CATEGORIES=			net
 
 MAINTAINER=			crest@bultmann.eu
@@ -10,11 +10,10 @@ COMMENT=			Socket library that provides several common communication patterns
 LICENSE=			MIT
 LICENSE_FILE=			${WRKSRC}/COPYING
 
-USE_GITHUB=			yes
-GH_ACCOUNT=			nanomsg
-
 USES=				cmake pathfix
 USE_LDCONFIG=			yes
+USE_GITHUB=			yes
+GH_ACCOUNT=			nanomsg
 
 OPTIONS_DEFINE=			DOCS
 OPTIONS_SUB=			yes

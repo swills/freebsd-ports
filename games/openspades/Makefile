@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openspades/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/openspades/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	openspades
 PORTVERSION=	0.0.12
@@ -15,7 +15,7 @@ COMMENT=	Compatible client of Ace of Spades
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	convert:graphics/ImageMagick # for building icons
+BUILD_DEPENDS=	convert:graphics/ImageMagick6 # for building icons
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
 NOT_FOR_ARCHS=		aarch64 powerpc64

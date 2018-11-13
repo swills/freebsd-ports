@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/qore/Makefile 474058 2018-07-07 06:44:07Z linimon $
+# $FreeBSD: head/lang/qore/Makefile 484075 2018-11-04 14:26:43Z antoine $
 
 PORTNAME=	qore
 PORTVERSION=	0.8.12
@@ -10,9 +10,7 @@ COMMENT=	Qore Programming Language
 
 LICENSE=	MIT
 
-BROKEN_aarch64=		fails to compile: calling a private constructor of class 'ReferenceNode'
-BROKEN_armv6=		fails to compile: calling a private constructor of class 'ReferenceNode'
-BROKEN_armv7=		fails to compile: calling a private constructor of class 'ReferenceNode'
+BROKEN=		fails to compile: calling a private constructor of class 'ReferenceNode'
 BROKEN_mips=		fails to link: single-compilation-unit.cpp:(.text+0xdfc): relocation truncated to fit: R_MIPS_CALL16 against '__ltdf2@@FBSDprivate_1.0'
 BROKEN_mips64=		fails to link: single-compilation-unit.cpp:(.text+0xdfc): relocation truncated to fit: R_MIPS_CALL16 against '__ltdf2@@FBSDprivate_1.0'
 BROKEN_powerpc=		fails to build

@@ -1,24 +1,23 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pg_qualstats/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pg_qualstats/Makefile 484367 2018-11-06 23:46:05Z girgen $
 
 PORTNAME=	pg_qualstats
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.6
 CATEGORIES=	databases
 
 MAINTAINER=	girgen@FreeBSD.org
 COMMENT=	PostgreSQL extension for collecting statistics about predicates
 
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE=	PostgreSQL
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	dalibo
+GH_ACCOUNT=	powa-team
 
 USES=		gmake pgsql:9.4+
 LLD_UNSAFE=	yes
 WANT_PGSQL=	server
 
 pre-patch:
-	@${MV} ${BUILD_WRKSRC}/doc/README.md ${BUILD_WRKSRC}/doc/${PORTNAME}-README.md ;\
-	${MV} ${BUILD_WRKSRC}/LICENSE ${BUILD_WRKSRC}/${PORTNAME}-LICENSE
+	@${MV} ${BUILD_WRKSRC}/doc/README.md ${BUILD_WRKSRC}/doc/${PORTNAME}-README.md
 
 .include <bsd.port.mk>

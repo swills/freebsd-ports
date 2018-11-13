@@ -1,9 +1,9 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-CAD-Drawing/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/graphics/p5-CAD-Drawing/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	CAD-Drawing
 PORTVERSION=	0.26
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,7 +20,7 @@ RUN_DEPENDS=	p5-CAD-Calc>=0:math/p5-CAD-Calc \
 		p5-Math-MatrixReal>=0:math/p5-Math-MatrixReal \
 		p5-Math-Vec>=0:math/p5-Math-Vec \
 		p5-Stream>=0:devel/p5-Stream \
-		convert:graphics/ImageMagick
+		convert:graphics/ImageMagick6
 
 USES=		perl5
 USE_PERL5=	modbuild

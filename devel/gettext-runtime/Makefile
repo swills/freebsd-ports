@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/gettext-runtime/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/gettext-runtime/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 # NOTE: before committing to this port, contact portmgr to arrange for an
 # experimental ports run.  Untested commits may be backed out at portmgr's
 # discretion.
 
 PORTNAME=	gettext-runtime
-PORTREVISION=	1
+PORTREVISION=	2
 
 COMMENT=	GNU gettext runtime libraries and programs
 

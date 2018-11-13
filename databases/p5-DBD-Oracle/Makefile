@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBD-Oracle/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/databases/p5-DBD-Oracle/Makefile 483961 2018-11-04 06:07:45Z eugen $
 
 PORTNAME=	DBD-Oracle
 PORTVERSION=	1.19
@@ -19,6 +19,7 @@ OPTIONS_DEFINE=	EXAMPLES
 USES=		perl5 shebangfix
 USE_PERL5=	configure patch
 CONFIGURE_ENV=	ORACLE_HOME="${ORACLE_HOME}"
+LDFLAGS_i386=	-Wl,-znotext
 
 SHEBANG_FILES=	Oracle.ex/*
 
@@ -27,6 +28,11 @@ SHEBANG_FILES=	Oracle.ex/*
 ORACLE_HOME=	${LOCALBASE}/oracle8-client
 BUILD_DEPENDS+=	${ORACLE_HOME}/lib/libclntst8.a:databases/oracle8-client
 CONFIGURE_ARGS=	-V 8.1.7
+
+.if ${ARCH} == "i386"
+CONFIGURE_ARGS+= LDDLFLAGS="`${PERL} -MConfig -e 'print $$Config{lddlflags}'` \
+		${LDFLAGS_i386}"
+.endif
 
 post-patch:
 	@${MV} ${WRKSRC}/Oracle.ex/README ${WRKSRC}/Oracle.ex/Readme

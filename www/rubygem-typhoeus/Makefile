@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/www/rubygem-typhoeus/Makefile 450294 2017-09-21 17:22:04Z sunpoet $
+# $FreeBSD: head/www/rubygem-typhoeus/Makefile 484350 2018-11-06 21:12:15Z sunpoet $
 
 PORTNAME=	typhoeus
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-ethon>=0.9.0:www/rubygem-ethon
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

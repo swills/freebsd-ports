@@ -1,9 +1,9 @@
 # Created by: Ian Vaudrey <i.vaudrey@bigfoot.com>
-# $FreeBSD: head/textproc/texi2html/Makefile 363371 2014-07-29 18:41:15Z adamw $
+# $FreeBSD: head/textproc/texi2html/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	texi2html
 PORTVERSION=	5.0
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SAVANNAH

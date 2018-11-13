@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/shards/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/devel/shards/Makefile 484611 2018-11-10 13:36:56Z swills $
 
 PORTNAME=		shards
 DISTVERSIONPREFIX=	v
-DISTVERSION=		0.7.2
-PORTREVISION=		3
+DISTVERSION=		0.8.1
 CATEGORIES=		devel
 
 MAINTAINER=	greg@unrelenting.technology
@@ -21,16 +20,10 @@ RUN_DEPENDS=	git:devel/git
 USE_GITHUB=	yes
 GH_ACCOUNT=	crystal-lang
 
+MAKE_ARGS+=	CRFLAGS="--release --no-debug"
+
 PLIST_FILES=	bin/shards \
 		man/man1/shards.1.gz \
 		man/man5/shard.yml.5.gz
-
-do-build:
-	cd ${WRKSRC} && crystal build --release --no-debug -o bin/shards src/shards.cr
-
-do-install:
-	${INSTALL_PROGRAM} ${INSTALL_WRKSRC}/bin/shards ${STAGEDIR}${PREFIX}/bin/
-	${INSTALL_MAN} ${INSTALL_WRKSRC}/src/man/shards.1 ${STAGEDIR}${MANPREFIX}/man/man1/
-	${INSTALL_MAN} ${INSTALL_WRKSRC}/src/man/shard.yml.5 ${STAGEDIR}${MANPREFIX}/man/man5/
 
 .include <bsd.port.mk>

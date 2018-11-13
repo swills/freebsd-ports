@@ -1,8 +1,9 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/lang/slisp/Makefile 345787 2014-02-24 09:04:30Z gahr $
+# $FreeBSD: head/lang/slisp/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	slisp
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	lang lisp
 MASTER_SITES=	http://www.sigala.it/sandro/files/
 

@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/hiptext/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/hiptext/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	hiptext
 PORTVERSION=	0.0.s20160621
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

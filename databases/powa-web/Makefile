@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/powa-web/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/powa-web/Makefile 484253 2018-11-05 22:34:50Z girgen $
 
 PORTNAME=	powa-web
-PORTVERSION=	3.1.4
+PORTVERSION=	3.2.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,6 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2@${PY_FLAVOR
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 post-patch:
 		${REINPLACE_CMD} 's,/etc/powa-web.conf,${PREFIX}/etc/powa-web.conf,' ${WRKSRC}/powa/options.py

@@ -1,8 +1,9 @@
 # Created by: Harold Gutch <logix@foobar.franken.de>
-# $FreeBSD: head/multimedia/vcdimager/Makefile 466597 2018-04-05 20:13:33Z jhale $
+# $FreeBSD: head/multimedia/vcdimager/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	vcdimager
 PORTVERSION=	2.0.1
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	GNU
 

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-pry-rails/Makefile 436997 2017-03-26 21:24:29Z sunpoet $
+# $FreeBSD: head/devel/rubygem-pry-rails/Makefile 484740 2018-11-11 18:22:37Z sunpoet $
 
 PORTNAME=	pry-rails
-PORTVERSION=	0.3.6
+PORTVERSION=	0.3.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENCE
 
 RUN_DEPENDS=	rubygem-pry>=0.10.4:devel/rubygem-pry
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

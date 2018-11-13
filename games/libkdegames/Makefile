@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/libkdegames/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/games/libkdegames/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	libkdegames
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -16,7 +17,7 @@ USE_KDE=	archive attica auth bookmarks codecs completion config \
 		globalaccel guiaddons i18n iconthemes init itemmodels \
 		itemviews jobwidgets kdeclarative kdelibs4support kio newstuff \
 		package service textwidgets widgetsaddons xmlgui
-USE_QT=		core dbus gui network qml quick svg testlib widgets xml \
+USE_QT=		core dbus declarative gui network svg testlib widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

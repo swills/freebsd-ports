@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/net/wol/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/net/wol/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	wol
 PORTVERSION=	0.7.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	SF/ahh/OldFiles
 

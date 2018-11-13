@@ -1,9 +1,9 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/multimedia/m2tstoavi/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/m2tstoavi/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	m2tstoavi
 PORTVERSION=	2009121901
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.olmosconsulting.com/ http://meatwad.mouf.net/~steve/
 DISTNAME=	m2ts

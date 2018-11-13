@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/cln/Makefile 480717 2018-09-26 06:36:20Z wen $
+# $FreeBSD: head/math/cln/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cln
 PORTVERSION=	1.3.4
+PORTREVISION=	1
 CATEGORIES=	math devel
 MASTER_SITES=	http://www.ginac.de/CLN/ \
 		http://www.mirrors.wiretapped.net/security/cryptography/libraries/math/cln/ \

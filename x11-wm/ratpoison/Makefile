@@ -1,9 +1,9 @@
 # Created by: Gergely Nagy <8@free.bsd.hu>
-# $FreeBSD: head/x11-wm/ratpoison/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/x11-wm/ratpoison/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	ratpoison
 PORTVERSION=	1.4.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-wm
 MASTER_SITES=	SAVANNAH
 

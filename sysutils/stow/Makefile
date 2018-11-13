@@ -1,8 +1,9 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/sysutils/stow/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/stow/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	stow
 PORTVERSION=	2.2.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 

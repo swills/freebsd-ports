@@ -1,9 +1,9 @@
 # Created by: Christopher J. Ruwe
-# $FreeBSD: head/math/ess/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/math/ess/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	ess
 DISTVERSION=	17.11
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	http://ess.r-project.org/downloads/ess/ \
 		http://stat.ethz.ch/ESS/downloads/ess/
@@ -30,8 +30,8 @@ post-patch:
 	@${REINPLACE_CMD} -e \
 		's|^DESTDIR|#DESTDIR| ; \
 		 s|^PREFIX|#PREFIX| ; \
-		 s|=$$(PREFIX)|=$$(DESTDIR)$$(PREFIX)| ; \
-		 s|share/info|${INFO_PATH}|' ${WRKSRC}/Makeconf
+		 s|=$$(PREFIX)|=$$(DESTDIR)$$(PREFIX)|' \
+		 ${WRKSRC}/Makeconf
 	@${REINPLACE_CMD} -e \
 		'/^PDFs/s|=.*|=|' ${WRKSRC}/doc/Makefile
 

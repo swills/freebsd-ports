@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 482709 2018-10-21 17:10:01Z tobik $
+# $FreeBSD: head/editors/Makefile 484195 2018-11-05 15:04:14Z jsm $
 #
 
     COMMENT = Editors
@@ -39,6 +39,7 @@
     SUBDIR += emacs
     SUBDIR += emacs-devel
     SUBDIR += encryptpad
+    SUBDIR += featherpad 
     SUBDIR += fileobj
     SUBDIR += flim
     SUBDIR += focuswriter

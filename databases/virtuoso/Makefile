@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/databases/virtuoso/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/databases/virtuoso/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	virtuoso
 PORTVERSION=	7.2.4.2
@@ -68,7 +68,7 @@ check:
 
 .if ${PORT_OPTIONS:MIMAGEMAGICK}
 CONFIGURE_ARGS+=--enable-imagemagick=${LOCALBASE}
-LIB_DEPENDS+=	libMagickWand-6.so:graphics/ImageMagick
+LIB_DEPENDS+=	libMagickWand-6.so:graphics/ImageMagick6
 PLIST_SUB+=	WITH_IMAGEMAGICK=""
 .else
 CONFIGURE_ARGS+=--disable-imagemagick

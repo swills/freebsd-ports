@@ -1,9 +1,9 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/news/newscache/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/newscache/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	newscache
 PORTVERSION=	1.2.r.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	news
 MASTER_SITES=	http://src.linuxhacker.at/NewsCache/
 DISTNAME=	NewsCache-${PORTVERSION:S/.r./rc/}

@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-Hijk/Makefile 411879 2016-03-25 17:50:37Z tj $
+# $FreeBSD: head/www/p5-Hijk/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Hijk
 PORTVERSION=	0.26
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:AVAR
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fast & minimal low-level HTTP client
 
 LICENSE=	MIT

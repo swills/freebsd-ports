@@ -1,9 +1,8 @@
 # Created by: Brent J. Nordquist <bjn@visi.com>
-# $FreeBSD: head/databases/gdbm/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/gdbm/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	gdbm
-PORTVERSION=	1.13
-PORTREVISION=	1
+PORTVERSION=	1.18.1
 CATEGORIES=	databases
 MASTER_SITES=	GNU
 

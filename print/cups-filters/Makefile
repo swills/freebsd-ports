@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/cups-filters/Makefile 481734 2018-10-10 12:11:03Z tijl $
+# $FreeBSD: head/print/cups-filters/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	cups-filters
 PORTVERSION=	1.21.3
@@ -54,7 +54,7 @@ BRAILLE_DESC=			Braille embosser support
 BRAILLE_BUILD_DEPENDS=		bash:shells/bash
 BRAILLE_LIB_DEPENDS=		liblouis.so:devel/liblouis \
 #				liblouisutdml.so:devel/liblouisutdml
-BRAILLE_RUN_DEPENDS=		convert:graphics/ImageMagick \
+BRAILLE_RUN_DEPENDS=		convert:graphics/ImageMagick6 \
 				pdftotext:graphics/poppler-utils \
 				bash:shells/bash
 

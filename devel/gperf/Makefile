@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gperf/Makefile 469491 2018-05-09 21:40:17Z sunpoet $
+# $FreeBSD: head/devel/gperf/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gperf
 PORTVERSION=	3.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

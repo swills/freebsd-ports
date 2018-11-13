@@ -1,8 +1,8 @@
 # Created by: Tony Maher
-# $FreeBSD: head/security/apache-xml-security-c/Makefile 476595 2018-08-07 13:24:36Z girgen $
+# $FreeBSD: head/security/apache-xml-security-c/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	xml-security-c
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	security
 MASTER_SITES=	APACHE/santuario/c-library
 PKGNAMEPREFIX=	apache-
@@ -22,7 +22,7 @@ CONFIGURE_ENV+=	openssl_LIBS="-L${OPENSSLLIB} -lcrypto" openssl_CFLAGS=-I${OPENS
 
 CPE_PRODUCT=	xml_security_for_c\+\+
 CPE_VENDOR=	apache
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	field has incomplete type HMAC_CTX (aka hmac_ctx_st)
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	field has incomplete type HMAC_CTX (aka hmac_ctx_st)
 
 .include <bsd.port.mk>

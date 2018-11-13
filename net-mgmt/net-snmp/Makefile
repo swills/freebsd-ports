@@ -1,5 +1,5 @@
 # Created by: gpalmer
-# $FreeBSD: head/net-mgmt/net-snmp/Makefile 483597 2018-10-31 17:25:55Z zi $
+# $FreeBSD: head/net-mgmt/net-snmp/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	snmp
 PORTVERSION=	5.7.3
@@ -16,7 +16,7 @@ COMMENT=	Extendable SNMP implementation
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 LIB_DEPENDS=	libpkg.so:ports-mgmt/pkg
 
@@ -165,11 +165,7 @@ NET_SNMP_LOGFILE?=	/var/log/snmpd.log
 NET_SNMP_PERSISTENTDIR?=/var/net-snmp
 NET_SNMP_WITH_MIB_MODULE_LIST+=	host disman/event-mib mibII/mta_sendmail mibII/tcpTable ucd-snmp/diskio sctp-mib
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100062
-CFLAGS+=	-D_WANT_IFADDR
-.endif
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100062
+.if ${OPSYS} == FreeBSD
 NET_SNMP_WITHOUT_MIB_MODULE_LIST+=	mibII/ipv6
 .endif
 

@@ -1,9 +1,9 @@
 # Created by: alex
-# $FreeBSD: head/multimedia/libxine/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/libxine/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	xine
 PORTVERSION=	1.2.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-lib/${PORTVERSION}
 PKGNAMEPREFIX=	lib
@@ -91,7 +91,7 @@ ESOUND_CONFIGURE_WITH=		esound
 GNOMEVFS2_USE=			GNOME=glib20,gconf2,gnomevfs2
 GNOMEVFS2_CONFIGURE_ENABLE=	gnomevfs
 IMAGEMAGICK_CONFIGURE_WITH=	imagemagick
-IMAGEMAGICK_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
 IMAGEMAGICK_IMPLIES=		DMX_IMAGE
 IPV6_CONFIGURE_ENABLE=		ipv6
 JACK_LIB_DEPENDS=		libjack.so:audio/jack

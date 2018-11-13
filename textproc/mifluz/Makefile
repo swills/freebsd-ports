@@ -1,8 +1,9 @@
 # Created by: Frederic Dubuy <fdubuy@free.fr>
-# $FreeBSD: head/textproc/mifluz/Makefile 475651 2018-07-29 12:07:01Z tobik $
+# $FreeBSD: head/textproc/mifluz/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mifluz
 PORTVERSION=	0.26.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-qt5-webchannel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/py-qt5-webchannel/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	webchannel
 PORTREVISION=	4
@@ -12,7 +12,7 @@ COMMENT=	Python bindings for the Qt5 toolkit, QtWebChannel module
 USES=		python pyqt:5 qt:5
 USE_PYQT=	sip_build core_run gui_run network_run qml_run widgets_run
 USE_PYTHON=	flavors
-USE_QT=		core qmake_build gui network qml webchannel widgets
+USE_QT=		core declarative qmake_build gui network webchannel widgets
 
 CONFIGURE_ARGS=	--enable QtWebChannel \
 		--no-stubs

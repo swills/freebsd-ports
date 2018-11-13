@@ -1,8 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/dolphin-emu/Makefile 481268 2018-10-05 10:10:02Z martymac $
+# $FreeBSD: head/emulators/dolphin-emu/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	dolphin-emu
 PORTVERSION=	5.0.8715
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	martymac@FreeBSD.org
@@ -10,8 +11,6 @@ COMMENT=	Gamecube and Wii Emulator
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/license.txt
-
-BROKEN_FreeBSD_10=	conflicting types for '__hash_table<_Tp, _Hash, _Equal, _Alloc>'
 
 # Notes on dependencies:
 # - alsa support disabled (not optimal)

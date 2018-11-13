@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/knot2/Makefile 482411 2018-10-19 05:47:41Z pi $
+# $FreeBSD: head/dns/knot2/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	knot
 DISTVERSION=	2.7.3
@@ -13,6 +13,9 @@ MAINTAINER=	freebsd@dns.company
 COMMENT=	High performance authoritative-only DNS server
 
 LICENSE=	GPLv3
+
+NOT_FOR_ARCHS=	i386
+NOT_FOR_ARCHS_REASON_i386=Uses 64 bit atomics that clang cannot generate on i386 on FreeBSD >= 11.2
 
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
 		libidn2.so:dns/libidn2 \
@@ -59,13 +62,6 @@ FASTPARSER_CONFIGURE_ENABLE=	fastparser
 
 IDN_CONFIGURE_WITH=		libidn
 IDN_LIB_DEPENDS=		libidn.so:dns/libidn
-
-.include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1120000
-NOT_FOR_ARCHS=	i386
-NOT_FOR_ARCHS_REASON_i386=Uses 64 bit atomics that clang cannot generate on i386 on FreeBSD >= 11.2
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} 's|$$(INSTALL) -d $$(DESTDIR)/\@run_dir\@|#$$(INSTALL) -d $$(DESTDIR)/\@run_dir\@|' \

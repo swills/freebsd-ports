@@ -1,9 +1,9 @@
 # Created by: patrick, trevor
-# $FreeBSD: head/print/lilypond/Makefile 483269 2018-10-28 10:55:44Z linimon $
+# $FreeBSD: head/print/lilypond/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	lilypond
 PORTVERSION=	2.18.2
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	print audio
 MASTER_SITES=	http://download.linuxaudio.org/lilypond/sources/v${PORTVERSION:R}/
 
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	pdftexi2dvi:print/texinfo \
 		t1ascii:print/t1utils \
 		bash:shells/bash \
-		convert:graphics/ImageMagick \
+		convert:graphics/ImageMagick6 \
 		dblatex:textproc/dblatex \
 		fontforge:print/fontforge \
 		help2man:misc/help2man \

@@ -1,8 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/mail/libdomainkeys/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/libdomainkeys/Makefile 484222 2018-11-05 21:09:41Z tobik $
 
 PORTNAME=	libdomainkeys
 PORTVERSION=	0.69
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	SF/domainkeys/${PORTNAME}/${PORTVERSION}
 
@@ -14,13 +15,11 @@ USE_LDCONFIG=	yes
 SHLIB_MAJOR=	3
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"
 MAKE_ENV=	SHLIB_MAJOR="${SHLIB_MAJOR}"
-
-post-patch:
-	@${CP} ${FILESDIR}/Makefile ${WRKSRC}/Makefile
+MAKEFILE=	${FILESDIR}/Makefile
+TEST_TARGET=	check
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/dknewkey ${STAGEDIR}${DATADIR}
-	${INSTALL_SCRIPT} ${WRKSRC}/test ${STAGEDIR}${DATADIR}/dktest
 
 .include <bsd.port.mk>

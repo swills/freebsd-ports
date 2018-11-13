@@ -1,8 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-chewing/Makefile 481196 2018-10-04 01:48:10Z wen $
+# $FreeBSD: head/chinese/fcitx-chewing/Makefile 484688 2018-11-11 11:47:33Z wen $
 
 PORTNAME=	fcitx-chewing
 PORTVERSION=	0.2.3
+PORTREVISION=	1
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx
@@ -12,6 +13,7 @@ COMMENT=	Chewing support for Fcitx
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfcitx-config.so:chinese/fcitx \
 		libchewing.so:chinese/libchewing
 

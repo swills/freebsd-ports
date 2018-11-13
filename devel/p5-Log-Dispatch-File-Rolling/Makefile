@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Log-Dispatch-File-Rolling/Makefile 453867 2017-11-09 20:34:16Z feld $
+# $FreeBSD: head/devel/p5-Log-Dispatch-File-Rolling/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Log-Dispatch-File-Rolling
 PORTVERSION=	1.09
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Object for logging to date/time/pid stamped files
 
 LICENSE=	ART20

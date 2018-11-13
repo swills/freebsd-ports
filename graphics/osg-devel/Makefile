@@ -1,9 +1,9 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg-devel/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/osg-devel/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	osg
 PORTVERSION=	3.5.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://trac.openscenegraph.org/downloads/developer_releases/ \
 		http://mirror.amdmi3.ru/distfiles/

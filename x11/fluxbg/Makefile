@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/x11/fluxbg/Makefile 431279 2017-01-12 15:16:45Z amdmi3 $
+# $FreeBSD: head/x11/fluxbg/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	fluxbg
 PORTVERSION=	0.7
@@ -25,12 +25,4 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g ; \
 		s|/usr/X11R6|${LOCALBASE}|g' ${WRKSRC}/src/fluxbg_conf.cc
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug
-post-extract:
-	${CHMOD} +x ${WRKSRC}/autom4te.cache
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

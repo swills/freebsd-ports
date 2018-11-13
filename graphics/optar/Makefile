@@ -1,8 +1,9 @@
 # Created by: antonakis@gmail.com
-# $FreeBSD: head/graphics/optar/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/optar/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	optar
 PORTVERSION=	2015.02.09
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://ronja.twibright.com/
 DISTNAME=	${PORTNAME}
@@ -15,7 +16,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
-RUN_DEPENDS=	convert:graphics/ImageMagick
+RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 WRKSRC=		${WRKDIR}/optar_dist
 

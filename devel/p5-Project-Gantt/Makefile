@@ -1,9 +1,9 @@
 # Created by: clsung
-# $FreeBSD: head/devel/p5-Project-Gantt/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Project-Gantt/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	Project-Gantt
 PORTVERSION=	1.03
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,7 +13,7 @@ COMMENT=	Create Gantt charts to manage project scheduling
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Class-Date>=0:devel/p5-Class-Date \
-		convert:graphics/ImageMagick
+		convert:graphics/ImageMagick6
 
 USES=		perl5
 USE_PERL5=	configure

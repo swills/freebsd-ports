@@ -1,14 +1,15 @@
-# $FreeBSD: head/devel/qt5-location/Makefile 482034 2018-10-14 08:01:13Z tcberner $
+# $FreeBSD: head/devel/qt5-location/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	location
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt location module
 
-USE_QT=		concurrent core dbus gui network qml quick buildtools_build
+USE_QT=		concurrent core dbus declarative gui network buildtools_build
 USES=		compiler:c++11-lang qmake:norecursive qt-dist:5,location
 
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

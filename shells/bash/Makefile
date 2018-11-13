@@ -1,10 +1,10 @@
 # Created by: Oliver Eikemeier
-# $FreeBSD: head/shells/bash/Makefile 471342 2018-06-02 07:08:16Z ehaupt $
+# $FreeBSD: head/shells/bash/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=		bash
 PATCHLEVEL=		23
 PORTVERSION=		4.4.${PATCHLEVEL:S/^0//g}
-PORTREVISION?=		0
+PORTREVISION?=		1
 CATEGORIES=		shells
 MASTER_SITES=		GNU
 DISTNAME=		${PORTNAME}-${PORTVERSION:R}

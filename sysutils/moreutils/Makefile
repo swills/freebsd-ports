@@ -1,8 +1,9 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/sysutils/moreutils/Makefile 457800 2018-01-01 20:58:37Z sunpoet $
+# $FreeBSD: head/sysutils/moreutils/Makefile 483916 2018-11-03 22:16:15Z sunpoet $
 
 PORTNAME=	moreutils
 PORTVERSION=	0.62
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://git.joeyh.name/index.cgi/moreutils.git/snapshot/ \
 		LOCAL/sunpoet
@@ -19,9 +20,10 @@ OPTIONS_DEFINE=	MANPAGES
 OPTIONS_DEFAULT=MANPAGES
 OPTIONS_SUB=	yes
 
+USES=		gmake perl5 shebangfix
+
 ALL_TARGET=	errnos.h ${CANNED_MANPAGES:R}
 MAKE_JOBS_UNSAFE=	yes
-USES=		gmake perl5 shebangfix
 
 CANNED_MANPAGES=errno.1 \
 		ifdata.1 \

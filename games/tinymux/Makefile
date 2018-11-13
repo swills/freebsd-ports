@@ -1,5 +1,5 @@
 # Created by: cjohnson
-# $FreeBSD: head/games/tinymux/Makefile 436923 2017-03-25 23:25:25Z ak $
+# $FreeBSD: head/games/tinymux/Makefile 484094 2018-11-04 14:46:41Z antoine $
 
 PORTNAME=	tinymux
 PORTVERSION=	2.10.1.${PATCHLEVEL}
@@ -12,6 +12,8 @@ COMMENT=	Multi-Player FreeForm adventure Program
 
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/copyright.h
+
+BROKEN=		fails to build
 
 WRKSRC=		${WRKDIR}/mux2.10/src
 

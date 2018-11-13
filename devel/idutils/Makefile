@@ -1,9 +1,9 @@
 # Created by: pst@FreeBSD.org
-# $FreeBSD: head/devel/idutils/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/idutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	idutils
 PORTVERSION=	4.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

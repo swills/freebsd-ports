@@ -1,9 +1,9 @@
 # Created by: Lutz Boehne <lboehne@damogran.de>
-# $FreeBSD: head/devel/udis86/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/devel/udis86/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	udis86
 PORTVERSION=	1.7.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:R}
 

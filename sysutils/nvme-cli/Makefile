@@ -1,5 +1,5 @@
 # Created by: imp
-# $FreeBSD: head/sysutils/nvme-cli/Makefile 482025 2018-10-14 05:34:43Z imp $
+# $FreeBSD: head/sysutils/nvme-cli/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	nvme-cli
 PORTVERSION=	1.6
@@ -14,7 +14,6 @@ LICENSE=	GPLv2
 # And there's plenty in amd64 that compiles, but won't run (eg using /sys/, etc)
 ONLY_FOR_ARCHS=	amd64
 BROKEN_FreeBSD_11=	Uses newer API than in 11.x
-BROKEN_FreeBSD_10=	Uses newer API than in 10.x
 
 USES=		gmake
 

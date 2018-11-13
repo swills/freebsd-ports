@@ -1,8 +1,8 @@
 # Created by: Michael Gmelin <grembo@FreeBSD.org>
-# $FreeBSD: head/devel/py-jsonref/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-jsonref/Makefile 484604 2018-11-10 11:57:22Z grembo $
 
 PORTNAME=	jsonref
-PORTVERSION=	0.1
+PORTVERSION=	0.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

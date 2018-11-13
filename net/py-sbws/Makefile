@@ -1,9 +1,8 @@
-# $FreeBSD: head/net/py-sbws/Makefile 482878 2018-10-24 05:10:44Z egypcio $
+# $FreeBSD: head/net/py-sbws/Makefile 484792 2018-11-12 08:56:56Z egypcio $
 
 PORTNAME=		sbws
-PORTVERSION=		0.8.0
+PORTVERSION=		1.0.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=		1
 CATEGORIES=		net python
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 

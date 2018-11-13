@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-pycodestyle/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pycodestyle/Makefile 484815 2018-11-12 18:35:46Z amdmi3 $
 
 PORTNAME=	pycodestyle
-PORTVERSION=	2.3.1
+PORTVERSION=	2.4.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

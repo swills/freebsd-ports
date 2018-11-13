@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/net/vtun/Makefile 482121 2018-10-14 22:11:32Z dvl $
+# $FreeBSD: head/net/vtun/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	vtun
 PORTVERSION=	3.0.4
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 DEPRECATED=		No longer supported by upline
 EXPIRATION_DATE=	2021-09-30
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 LIB_DEPENDS=	liblzo2.so:archivers/lzo2
 

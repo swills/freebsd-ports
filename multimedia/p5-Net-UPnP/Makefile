@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/p5-Net-UPnP/Makefile 470643 2018-05-22 17:48:45Z sunpoet $
+# $FreeBSD: head/multimedia/p5-Net-UPnP/Makefile 484732 2018-11-11 18:21:28Z sunpoet $
 
 PORTNAME=	Net-UPnP
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 CATEGORIES=	multimedia devel
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/README
 
 PORTSCOUT=	skipv:1.41
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

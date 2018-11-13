@@ -1,8 +1,9 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/math/gnubc/Makefile 479351 2018-09-10 02:06:12Z linimon $
+# $FreeBSD: head/math/gnubc/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	bc
 DISTVERSION=	1.07.1
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu

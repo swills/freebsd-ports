@@ -1,9 +1,9 @@
 # Created by: Michael Nottebrock <michaelnottebrock@gmx.net>
-# $FreeBSD: head/multimedia/dvdrip/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/multimedia/dvdrip/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	dvdrip
 PORTVERSION=	0.98.11
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	multimedia
 MASTER_SITES=	CPAN http://www.exit1.org/dvdrip/dist/
 MASTER_SITE_SUBDIR=	CPAN:JRED
@@ -27,7 +27,7 @@ RUN_DEPENDS=	p5-Gtk2>=0:x11-toolkits/p5-Gtk2 \
 		p5-Event-RPC>=0:devel/p5-Event-RPC \
 		p5-Locale-libintl>=0:devel/p5-Locale-libintl \
 		cdrdao:sysutils/cdrdao \
-		convert:graphics/ImageMagick \
+		convert:graphics/ImageMagick6 \
 		mplayer:multimedia/mplayer \
 		pstree:sysutils/pstree \
 		transcode:multimedia/transcode \

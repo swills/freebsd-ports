@@ -1,5 +1,5 @@
 # Created by: Hendrik Scholz <hendrik@scholz.net>
-# $FreeBSD: head/multimedia/totem/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/multimedia/totem/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	totem
 PORTVERSION=	3.26.1
@@ -59,7 +59,7 @@ MAKE_JOBS_UNSAFE=yes
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} == i386 || ${OSVERSION} <= 1100000
+.if ${ARCH} == i386
 MESON_ARGS=	-Denable-vala=no
 PLIST_SUB+=	VALA="@comment "
 .else

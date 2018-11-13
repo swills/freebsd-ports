@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-recaptcha/Makefile 471381 2018-06-02 17:30:24Z miwi $
+# $FreeBSD: head/www/py-django-recaptcha/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	recaptcha
 PORTVERSION=	1.4.0
@@ -8,7 +8,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
 DISTNAME=	django-${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Django reCAPTCHA form field/widget integration app
 
 LICENSE=	BSD3CLAUSE

@@ -1,9 +1,10 @@
 # Created by: Kuang-che Wu <kcwu@csie.org>
-# $FreeBSD: head/chinese/libchewing/Makefile 433316 2017-02-04 15:05:56Z vanilla $
+# $FreeBSD: head/chinese/libchewing/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libchewing
 PORTVERSION=	0.5.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	chinese textproc
 
 MAINTAINER=	ports@FreeBSD.org

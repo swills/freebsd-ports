@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/freeradius3/Makefile 482748 2018-10-22 15:57:41Z zi $
+# $FreeBSD: head/net/freeradius3/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	freeradius
 DISTVERSION=	3.0.17
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/%SUBDIR%/ \
 		ftp://ftp.ntua.gr/pub/net/radius/freeradius/%SUBDIR%/ \

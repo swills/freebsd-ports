@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/epix/Makefile 461858 2018-02-15 06:51:02Z yuri $
+# $FreeBSD: head/graphics/epix/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	epix
 DISTVERSION=	1.2.18
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://mathcs.holycross.edu/~ahwang/epix/
 

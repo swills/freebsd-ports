@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand/Makefile 483475 2018-10-30 11:54:54Z linimon $
+# $FreeBSD: head/devel/gearmand/Makefile 484381 2018-11-07 03:30:51Z jbeich $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.0.6
@@ -21,7 +21,6 @@ USERS=		gearmand
 GROUPS=		gearmand
 
 USES=		compiler:c++11-lang pathfix gmake perl5 python:build libtool
-USE_CXXSTD=	c++11
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

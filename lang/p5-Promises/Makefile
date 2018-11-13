@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Promises/Makefile 378069 2015-01-28 16:28:06Z tj $
+# $FreeBSD: head/lang/p5-Promises/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Promises
 PORTVERSION=	0.94
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:STEVAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	An implementation of the Promise/A+ pattern
 
 USES=		perl5

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/percona55-server/Makefile 479333 2018-09-09 20:14:55Z flo $
+# $FreeBSD: head/databases/percona55-server/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME?=	percona
 DISTVERSION=	5.5.61-38.13
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://www.percona.com/downloads/Percona-Server-5.5/Percona-Server-${DISTVERSION}/source/tarball/
 PKGNAMESUFFIX?=	55-server
@@ -29,7 +29,7 @@ DATADIR=	${PREFIX}/share/mysql
 CMAKE_ARGS+=	-DINSTALL_DOCDIR="share/doc/mysql" \
 		-DINSTALL_DOCREADMEDIR="share/doc/mysql" \
 		-DINSTALL_INCLUDEDIR="include/mysql" \
-		-DINSTALL_INFODIR="info" \
+		-DINSTALL_INFODIR="${INFO_PATH}" \
 		-DINSTALL_LIBDIR="lib/mysql" \
 		-DINSTALL_MANDIR="man" \
 		-DINSTALL_MYSQLDATADIR="/var/db/mysql" \

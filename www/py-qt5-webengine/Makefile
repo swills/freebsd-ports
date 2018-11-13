@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-qt5-webengine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/py-qt5-webengine/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	webengine
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www devel python
 
 MAINTAINER=	kde@FreeBSD.org
@@ -13,7 +13,7 @@ USES=		python pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run gui_run network_run webchannel_run
 USE_PYTHON=	flavors
-USE_QT=		core gui location network printsupport qml quick webchannel \
+USE_QT=		core declarative gui location network printsupport webchannel \
 		webengine widgets qmake_build
 
 CONFIGURE_ARGS=	--enable QtWebEngine \

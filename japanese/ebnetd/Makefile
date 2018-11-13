@@ -1,9 +1,9 @@
 # Created by: Motoyuki Kasahara <m-kasahr@sra.co.jp>
-# $FreeBSD: head/japanese/ebnetd/Makefile 449884 2017-09-15 05:52:08Z sunpoet $
+# $FreeBSD: head/japanese/ebnetd/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	ebnetd
 PORTVERSION=	1.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	japanese ipv6
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/
 

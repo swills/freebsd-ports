@@ -1,10 +1,10 @@
 # Created by: Angel Carpintero <ack@telefonica.net>
-# $FreeBSD: head/multimedia/motion/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/motion/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	motion
 PORTVERSION=	4.0.1
 DISTVERSIONPREFIX=	release-
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org

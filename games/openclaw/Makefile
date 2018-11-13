@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/openclaw/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/openclaw/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	OpenClaw
 DISTVERSION=	0.0-51
@@ -28,7 +28,7 @@ OPTIONS_DEFAULT=	LAUNCHER
 
 LAUNCHER_DESC=	Install launcher to manage game settings
 LAUNCHER_USES=	mono
-LAUNCHER_BUILD_DEPENDS=	convert:graphics/ImageMagick
+LAUNCHER_BUILD_DEPENDS=	convert:graphics/ImageMagick6
 LAUNCHER_PLIST_FILES=	bin/ClawLauncher.exe bin/clawlauncher
 LAUNCHER_DESKTOP_ENTRIES=	\
 		"${GH_PROJECT}" \

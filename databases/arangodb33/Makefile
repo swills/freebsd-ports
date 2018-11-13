@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/arangodb33/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/arangodb33/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	arangodb
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only builds on amd64: https://github.com/arangodb/arangodb/issues/2334"
-BROKEN_FreeBSD_10=	libc++ is too old
 
 CONFLICTS_INSTALL=	arangodb32
 CONFLICTS_BUILD=	v8

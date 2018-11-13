@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/yank/Makefile 483689 2018-11-01 17:22:30Z tobik $
+# $FreeBSD: head/sysutils/yank/Makefile 484626 2018-11-10 17:22:18Z tobik $
 
 PORTNAME=	yank
 DISTVERSION=	1.1.0
@@ -11,8 +11,7 @@ COMMENT=	Yank terminal output to clipboard
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-
-MAKE_ARGS=	MANPREFIX=${PREFIX}/man
+MAKE_ARGS=	MANPREFIX=${PREFIX}/man PREFIX=${PREFIX}
 PLIST_FILES=	bin/yank \
 		man/man1/yank.1.gz
 

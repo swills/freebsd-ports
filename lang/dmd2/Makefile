@@ -1,5 +1,5 @@
 # Created by: Ruben <chromium@hybridsource.org>
-# $FreeBSD: head/lang/dmd2/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/lang/dmd2/Makefile 484039 2018-11-04 13:44:40Z antoine $
 
 PORTNAME=	dmd
 PORTVERSION=	2.073.2
@@ -16,6 +16,7 @@ LICENSE_NAME_DMD=	Digital Mars license
 LICENSE_FILE_DMD=	${WRKSRC}/dmd/src/backendlicense.txt
 LICENSE_PERMS_DMD=	no-dist-mirror no-dist-sell no-pkg-mirror no-pkg-sell auto-accept
 
+BROKEN=		fails to build
 BROKEN_armv6=		dumps core: Assertion failed: (!signbit(Port::ldbl_nan)), function PortInitializer, file port.c
 BROKEN_armv7=		dumps core: Assertion failed: (!signbit(Port::ldbl_nan)), function PortInitializer, file port.c
 BROKEN_mips64=		fails to compile: cc1: unrecognized command line option -m32

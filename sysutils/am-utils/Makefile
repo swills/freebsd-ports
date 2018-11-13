@@ -1,9 +1,9 @@
 # Created by: Jon Wilson <jon@phuq.co.uk>
-# $FreeBSD: head/sysutils/am-utils/Makefile 458935 2018-01-13 15:30:10Z cy $
+# $FreeBSD: head/sysutils/am-utils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	am-utils
 PORTVERSION=	6.2
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	sysutils net
 MASTER_SITES=	ftp://ftp.am-utils.org/pub/am-utils/ \

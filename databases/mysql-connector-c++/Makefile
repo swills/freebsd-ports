@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/databases/mysql-connector-c++/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/databases/mysql-connector-c++/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	mysql-connector-c++
 PORTVERSION=	1.1.9
@@ -17,18 +17,12 @@ LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 
 USES=		cmake:outsource compiler:c++11-lang mysql ssl
 USE_LDCONFIG=	yes
-CMAKE_ARGS=	-DDOC_DESTINATION="${DOCSDIR}"
+CMAKE_ARGS=	-DDOC_DESTINATION="${DOCSDIR}" -DCMAKE_ENABLE_C++11=ON 
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 PORTDOCS=	*
 OPTIONS_DEFINE=	DOCS
-
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1100000
-CMAKE_ARGS+=-DCMAKE_ENABLE_C++11=ON
-.endif
 
 post-install:
 	@${RM} ${STAGEDIR}${DOCSDIR}/INSTALL \
@@ -67,4 +61,4 @@ do-test:
 	test/unit/classes/statement )
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/math/prng/Makefile 458925 2018-01-13 10:13:48Z antoine $
+# $FreeBSD: head/math/prng/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	prng
 DISTVERSION=	3.0.2
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://statistik.wu-wien.ac.at/software/prng/
 

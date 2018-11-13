@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/zpu-gcc/Makefile 464632 2018-03-15 20:59:29Z bdrewery $
+# $FreeBSD: head/devel/zpu-gcc/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	zpu-gcc
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://opensource.zylin.com/zpudownload.html/
 MASTER_SITES=	LOCAL/db

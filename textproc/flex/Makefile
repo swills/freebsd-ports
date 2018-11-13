@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/flex/Makefile 473146 2018-06-23 17:48:52Z yuri $
+# $FreeBSD: head/textproc/flex/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	flex
 PORTVERSION=	2.6.4
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/westes/flex/releases/download/v${PORTVERSION}/
 

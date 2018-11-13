@@ -1,8 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/sysutils/libcdio/Makefile 466597 2018-04-05 20:13:33Z jhale $
+# $FreeBSD: head/sysutils/libcdio/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libcdio
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 

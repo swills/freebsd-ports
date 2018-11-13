@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/gtk3-oxygen-engine/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-themes/gtk3-oxygen-engine/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME=	oxygen
 PORTVERSION=	1.4.1
@@ -17,7 +17,7 @@ LICENSE=	LGPL21
 LIB_DEPENDS=	libcairo.so:graphics/cairo \
 		libdbus-glib-1.so:devel/dbus-glib
 
+USES=		cmake:outsource compiler:c++11-lang pkgconfig tar:bzip2
 USE_GNOME=	gtk30
-USES=		cmake:outsource pkgconfig tar:bzip2
 
 .include <bsd.port.mk>

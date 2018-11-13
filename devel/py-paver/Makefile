@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-paver/Makefile 438154 2017-04-10 12:01:49Z miwi $
+# $FreeBSD: head/devel/py-paver/Makefile 484441 2018-11-08 09:30:21Z amdmi3 $
 
 PORTNAME=	paver
 PORTVERSION=	1.2.4
@@ -11,7 +11,11 @@ DISTNAME=	Paver-${PORTVERSION}
 MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Easy build, distribution and deployment scripting
 
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
 USES=		python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

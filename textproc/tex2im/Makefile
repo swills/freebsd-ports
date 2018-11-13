@@ -1,16 +1,16 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/tex2im/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/textproc/tex2im/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	tex2im
 PORTVERSION=	1.8
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.nought.de/
 
 MAINTAINER=	TsurutaniNaoki@gmail.com
 COMMENT=	Converts LaTeX formulas into high resolution pixmap graphics
 
-RUN_DEPENDS=	convert:graphics/ImageMagick \
+RUN_DEPENDS=	convert:graphics/ImageMagick6 \
 		bash:shells/bash
 
 USE_TEX=	latex

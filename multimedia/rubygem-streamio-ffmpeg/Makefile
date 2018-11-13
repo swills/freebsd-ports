@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/rubygem-streamio-ffmpeg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/rubygem-streamio-ffmpeg/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	streamio-ffmpeg
 PORTVERSION=	3.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia rubygems
 MASTER_SITES=	RG
 

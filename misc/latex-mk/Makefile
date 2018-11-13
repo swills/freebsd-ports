@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/latex-mk/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/latex-mk/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	latex-mk
 PORTVERSION=	2.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	misc print
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

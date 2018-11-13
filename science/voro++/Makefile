@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/voro++/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/science/voro++/Makefile 484101 2018-11-04 15:52:42Z jwb $
 
 PORTNAME=	voro++
-PORTVERSION=	0.4.6
+DISTVERSION=	0.4.6
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	http://math.lbl.gov/voro++/download/dir/
 
@@ -12,18 +13,11 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		gmake
+USE_LDCONFIG=	yes
 
-post-patch:
-	${REINPLACE_CMD} \
-		-e 's|CXX=|CXX?=|g' \
-		-e 's|CFLAGS=|CFLAGS?=|g' \
-		-e 's|PREFIX=.*|PREFIX?=|g' \
-		${WRKSRC}/config.mk
-	${REINPLACE_CMD} \
-		-e 's|$$(PREFIX)|$$(DESTDIR)$$(PREFIX)|g' \
-		${WRKSRC}/Makefile
+CFLAGS+=	-fPIC
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/voro++
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/voro++
 
 .include <bsd.port.mk>

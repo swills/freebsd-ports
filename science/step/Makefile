@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/step/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/science/step/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	step
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	science kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -19,7 +20,7 @@ USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
 		kdelibs4support khtml kio newstuff notifications parts \
 		plotting service solid sonnet textwidgets unitconversion \
 		widgetsaddons windowsystem xmlgui
-USE_QT=		core dbus gui network opengl printsupport qml quick svg \
+USE_QT=		core dbus declarative gui network opengl printsupport svg \
 		widgets xml \
 		buildtools_build qmake_build
 CXXFLAGS_powerpc64=	-Wno-error=return-type

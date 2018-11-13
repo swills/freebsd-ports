@@ -1,8 +1,9 @@
 # Created by: Jerry Hicks
-# $FreeBSD: head/devel/bison/Makefile 480970 2018-09-30 19:40:42Z sunpoet $
+# $FreeBSD: head/devel/bison/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	bison
 PORTVERSION=	3.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU

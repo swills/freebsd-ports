@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kf5-kholidays/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/net/kf5-kholidays/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kholidays
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -11,7 +11,7 @@ LICENSE=	LGPL21
 
 USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm emoticons kdelibs4support init itemmodels itemviews
-USE_QT=		core gui qml buildtools_build qmake_build
+USE_QT=		core declarative gui buildtools_build qmake_build
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Joe Barbish
-# $FreeBSD: head/sysutils/qjail/Makefile 448797 2017-08-27 01:14:01Z adamw $
+# $FreeBSD: head/sysutils/qjail/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	qjail
 PORTVERSION=	5.4
@@ -23,8 +23,6 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 USES=		tar:bzip2
 NO_BUILD=	yes
 NO_ARCH=	yes
-
-IGNORE_FreeBSD_10=	This version only for FreeBSD 11+
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/qjail                      \

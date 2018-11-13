@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kolourpaint/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/kolourpaint/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	kolourpaint
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	graphics kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE paint program
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash ecm emoticons guiaddons i18n iconthemes init \
 		itemmodels itemviews jobwidgets kdelibs4support kio libkexiv2 \

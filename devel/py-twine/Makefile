@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/devel/py-twine/Makefile 470428 2018-05-19 19:28:15Z miwi $
+# $FreeBSD: head/devel/py-twine/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	twine
 DISTVERSION=	1.11.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Collection of utilities for interacting with PyPI
 
 LICENSE=	APACHE20

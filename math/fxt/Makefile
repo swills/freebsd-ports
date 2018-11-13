@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/fxt/Makefile 483441 2018-10-30 01:55:07Z wen $
+# $FreeBSD: head/math/fxt/Makefile 484173 2018-11-05 06:54:31Z jbeich $
 
 PORTNAME=	fxt
 DISTVERSION=	2018.07.03
@@ -11,8 +11,6 @@ COMMENT=	FFT code and related stuff
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
-
-BROKEN_FreeBSD_10=	Fails to build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

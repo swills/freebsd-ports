@@ -1,5 +1,5 @@
 # Created by: Janos.Mohacsi@bsd.hu
-# $FreeBSD: head/emulators/yape/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/emulators/yape/Makefile 484007 2018-11-04 12:37:44Z antoine $
 
 PORTNAME=	yape
 PORTVERSION=	0.32.5
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}SDL-${PORTVERSION}
 
 MAINTAINER=	jmohacsi@bsd.hu
 COMMENT=	Yet Another Commodore +4 Emulator
+
+BROKEN=		fails to build
 
 USE_SDL=	sdl
 USES=		compiler:features gmake

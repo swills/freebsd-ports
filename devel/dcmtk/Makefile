@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/devel/dcmtk/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/dcmtk/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	dcmtk
 DISTVERSION=	3.6.0
@@ -10,8 +10,8 @@ MASTER_SITES=	ftp://dicom.offis.de/pub/dicom/offis/software/${PORTNAME}/${PORTNA
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Toolkit to work with DICOM objects
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	use of undeclared identifier 'TLS1_TXT_RSA_EXPORT1024_WITH_DES_CBC_SHA'
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	use of undeclared identifier 'TLS1_TXT_RSA_EXPORT1024_WITH_DES_CBC_SHA'
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libpng.so:graphics/png

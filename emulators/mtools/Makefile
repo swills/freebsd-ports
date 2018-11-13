@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/emulators/mtools/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/emulators/mtools/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mtools
 PORTVERSION=	4.0.10
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	emulators
 MASTER_SITES=	GNU
 

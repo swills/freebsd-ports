@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/simplegroupware/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/deskutils/simplegroupware/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	simplegroupware
 PORTVERSION=	0.745
@@ -26,13 +26,4 @@ do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR})
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug.
-# Do not use "-exec ... +", because of the same bug, it will not work.
-post-extract:
-	@${FIND} ${WRKSRC} -type d -exec ${CHMOD} 755 {} \;
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

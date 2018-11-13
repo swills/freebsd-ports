@@ -1,16 +1,16 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/srd-fpw-package/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/srd-fpw-package/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	srd-fpw-package
 PORTVERSION=	1.0.8
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	japanese elisp
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/srd/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Supplement file for lookup to use "Random House"
 
-RUN_DEPENDS=	display:graphics/ImageMagick
+RUN_DEPENDS=	display:graphics/ImageMagick6
 # Your PC does not have an audio card always.
 #		realplay:multimedia/linux-realplayer
 

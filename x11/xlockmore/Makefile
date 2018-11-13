@@ -1,5 +1,5 @@
 # Created by: Scott Mace <smace@FreeBSD.org>
-# $FreeBSD: head/x11/xlockmore/Makefile 474899 2018-07-18 20:35:44Z jgh $
+# $FreeBSD: head/x11/xlockmore/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	xlockmore
 PORTVERSION=	5.55
@@ -134,7 +134,7 @@ CONFIGURE_ARGS+=	--enable-customization
 .endif
 
 .if ${PORT_OPTIONS:MMAGICK}
-LIB_DEPENDS+=	libMagickCore-6.so:graphics/ImageMagick
+LIB_DEPENDS+=	libMagickCore-6.so:graphics/ImageMagick6
 .else
 CONFIGURE_ARGS+=	--without-magick
 .endif
@@ -162,7 +162,7 @@ post-patch:
 	@${REINPLACE_CMD} -e '/xglockrc/ s|PROGRAM|DATA|' ${WRKSRC}/xglock/Makefile.in
 	@${REINPLACE_CMD} -e 's|$$(SOUNDPATH)|$$(DESTDIR)$$(SOUNDPATH)|g' ${WRKSRC}/modes/Makefile.in
 	@${REINPLACE_CMD} -e '/$$(ETCDIR)play.sh/ s|$$(INSTALL_PROGRAM)|$$(INSTALL_PROGRAM:N-s)|' ${WRKSRC}/modes/Makefile.in
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100000
+.if exists(/usr/bin/fortune)
 	@${REINPLACE_CMD} -e 's|/usr/games/fortune|/usr/bin/fortune|' ${WRKSRC}/modes/Makefile.in
 .endif
 

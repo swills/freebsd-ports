@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libcli/Makefile 401493 2015-11-13 09:25:50Z marino $
+# $FreeBSD: head/devel/libcli/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	libcli
 PORTVERSION=	1.9.6
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GHC
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Emulates a Cisco style command-line interface
 
 LICENSE=	LGPL21

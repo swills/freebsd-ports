@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python35/Makefile 482271 2018-10-17 06:23:59Z koobs $
+# $FreeBSD: head/lang/python35/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -119,15 +119,6 @@ PLIST_SUB+=	NO_NIS="@comment "
 DISABLED_EXTENSIONS+=	nis
 .else
 PLIST_SUB+=	NO_NIS=""
-.endif
-
-post-patch:
-# readline shared library is present on base before FreeBSD 11 - r268461
-# force setup.py ignore base and use readline from ports
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-	@${REINPLACE_CMD} -e \
-		"s|lib_dirs,\ \'readline\'|[\'${LOCALBASE}/lib\',\ \'.\'],\ \'readline\'|" \
-		${WRKSRC}/setup.py
 .endif
 
 post-install:

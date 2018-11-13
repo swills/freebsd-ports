@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/sysutils/and/Makefile 431288 2017-01-12 17:05:41Z amdmi3 $
+# $FreeBSD: head/sysutils/and/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	and
 PORTVERSION=	1.2.2
@@ -17,12 +17,8 @@ USES=		gmake
 ALL_TARGET=	default
 NOPRECIOUSMAKEVARS=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100095
 post-patch:
 	@${REINPLACE_CMD} "s,P_KTHREAD,P_KPROC,g" \
 		${WRKSRC}/Makefile ${WRKSRC}/and-OpenBSD.c
-.endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: frankch@waru.life.nthu.edu.tw
-# $FreeBSD: head/graphics/aview/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/aview/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	aview
 DISTVERSION=	1.3.0rc1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	SF/aa-project/${PORTNAME}/${DISTVERSION}
 
@@ -11,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Graphics viewer for viewing netpbm format on console or X using aalib
 
 RUN_DEPENDS=	anytopnm:graphics/netpbm \
-		convert:graphics/ImageMagick
+		convert:graphics/ImageMagick6
 LIB_DEPENDS=	libaa.so:graphics/aalib
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}

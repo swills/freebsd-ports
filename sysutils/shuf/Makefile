@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/sysutils/shuf/Makefile 468765 2018-05-01 16:00:12Z feld $
+# $FreeBSD: head/sysutils/shuf/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	shuf
 PORTVERSION=	1.8
@@ -10,8 +10,6 @@ MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Randomly permute input lines
 
 LICENSE=	ISCL
-
-BROKEN_FreeBSD_10=	Requires reallocarray
 
 GNU_CONFIGURE=	yes
 

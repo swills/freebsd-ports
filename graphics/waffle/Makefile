@@ -1,9 +1,9 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/waffle/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/waffle/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 
 PORTNAME=	waffle
 PORTVERSION=	1.5.2
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.waffle-gl.org/files/release/waffle-${PORTVERSION}/
 
@@ -25,6 +25,10 @@ CMAKE_ARGS+=	-Dwaffle_has_glx=ON \
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS WAYLAND
+OPTIONS_DEFAULT=WAYLAND
+
+WAYLAND_LIB_DEPENDS=	libwayland-egl.so:graphics/wayland
+WAYLAND_CMAKE_BOOL=	waffle_has_wayland
 
 .include <bsd.port.mk>

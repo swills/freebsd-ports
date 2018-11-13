@@ -1,10 +1,10 @@
 # Created by: jseger@FreeBSD.org
-# $FreeBSD: head/lang/guile/Makefile 459008 2018-01-14 22:18:54Z tijl $
+# $FreeBSD: head/lang/guile/Makefile 484628 2018-11-10 18:12:57Z bapt $
 #    $MCom: ports/lang/guile/Makefile,v 1.1 2006/09/12 14:57:06 ahze Exp $
 
 PORTNAME=	guile
 PORTVERSION=	1.8.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang scheme
 MASTER_SITES=	GNU
 

@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/x11-themes/cursor-crystal-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
+# $FreeBSD: head/x11-themes/cursor-crystal-theme/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	cursor-crystal-theme
 DISTVERSION=	1.1.1
@@ -14,7 +14,7 @@ COMMENT=	KDE Crystal style X cursor theme
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	convert:graphics/ImageMagick \
+BUILD_DEPENDS=	convert:graphics/ImageMagick6 \
 		xcursorgen:x11/xcursorgen
 
 USES=		gmake tar:bzip2

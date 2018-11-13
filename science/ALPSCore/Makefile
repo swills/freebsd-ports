@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/ALPSCore/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/ALPSCore/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	ALPSCore
 DISTVERSIONPREFIX=	v
@@ -11,8 +11,6 @@ COMMENT=	Generic algorithms and utilities for condensed matter physics
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
-
-BROKEN_FreeBSD_10=	error: no matching function for call to 'deserialize'
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libhdf5.so:science/hdf5 \

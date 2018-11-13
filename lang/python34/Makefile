@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python34/Makefile 475350 2018-07-26 08:58:50Z tobik $
+# $FreeBSD: head/lang/python34/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -15,7 +15,7 @@ COMMENT=	Interpreted object-oriented programming language
 
 LICENSE=	PSFL
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USES=		cpe ncurses pathfix pkgconfig readline:port shebangfix ssl tar:xz
 PATHFIX_MAKEFILEIN=	Makefile.pre.in
@@ -122,15 +122,6 @@ PLIST_SUB+=	NO_NIS="@comment "
 DISABLED_EXTENSIONS+=	nis
 .else
 PLIST_SUB+=	NO_NIS=""
-.endif
-
-post-patch:
-# readline shared library is present on base before FreeBSD 11 - r268461
-# force setup.py ignore base and use readline from ports
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-	@${REINPLACE_CMD} -e \
-		"s|lib_dirs,\ \'readline\'|[\'${LOCALBASE}/lib\',\ \'.\'],\ \'readline\'|" \
-		${WRKSRC}/setup.py
 .endif
 
 post-install:

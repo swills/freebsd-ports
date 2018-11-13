@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/cl-clx/Makefile 460956 2018-02-05 01:56:41Z jrm $
+# $FreeBSD: head/x11/cl-clx/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	clx
 DISTVERSION=	0.7.5
+PORTREVISION=	1
 CATEGORIES=	x11 lisp
 PKGNAMEPREFIX=	cl-
 

@@ -1,8 +1,8 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/x11-wm/i3/Makefile 478495 2018-08-30 20:50:29Z yuri $
+# $FreeBSD: head/x11-wm/i3/Makefile 484181 2018-11-05 09:14:08Z bapt $
 
 PORTNAME=	i3
-DISTVERSION=	4.15
+DISTVERSION=	4.16
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://i3wm.org/downloads/
 

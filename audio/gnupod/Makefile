@@ -1,9 +1,9 @@
 # Created by: David Le Brun <david@dyn-ns.net>
-# $FreeBSD: head/audio/gnupod/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/gnupod/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnupod
 PORTVERSION=	0.99.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio perl5
 MASTER_SITES=	SAVANNAH \
 		http://www.blinkenlights.ch/gnupod-dist/stable/

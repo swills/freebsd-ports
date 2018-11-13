@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/cronolog-devel/Makefile 408829 2016-02-13 21:48:14Z junovitch $
+# $FreeBSD: head/sysutils/cronolog-devel/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cronolog
 PORTVERSION=	1.7.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://BSDforge.com/projects/source/sysutils/cronolog-devel/
 PKGNAMESUFFIX=	-devel

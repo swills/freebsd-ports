@@ -1,9 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/devel/libassetml/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/libassetml/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libassetml
 PORTVERSION=	1.2.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	devel gnome
 MASTER_SITES=	SF/ofset/${PORTNAME}/${PORTVERSION}
 

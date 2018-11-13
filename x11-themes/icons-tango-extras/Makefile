@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/icons-tango-extras/Makefile 463723 2018-03-06 12:32:00Z tobik $
+# $FreeBSD: head/x11-themes/icons-tango-extras/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	icons-tango-extras
 PORTVERSION=	0.1.0
@@ -13,7 +13,7 @@ COMMENT=	Extra set of icons from the Tango project
 
 BUILD_DEPENDS=	${LOCALBASE}/libexec/icon-name-mapping:x11-themes/icon-naming-utils \
 		${LOCALBASE}/share/icons/Tango/16x16/actions/add.png:x11-themes/icons-tango \
-		Magick-config:graphics/ImageMagick
+		Magick-config:graphics/ImageMagick6
 RUN_DEPENDS=	${LOCALBASE}/share/icons/Tango/16x16/actions/add.png:x11-themes/icons-tango
 
 GNU_CONFIGURE=	yes

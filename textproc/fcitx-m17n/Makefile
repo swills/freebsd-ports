@@ -1,8 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/textproc/fcitx-m17n/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/fcitx-m17n/Makefile 484688 2018-11-11 11:47:33Z wen $
 
 PORTNAME=	fcitx-m17n
 PORTVERSION=	0.2.3
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx
@@ -12,6 +13,7 @@ COMMENT=	Multilingualization support for Fcitx
 
 LICENSE=	LGPL21
 
+BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfcitx-config.so:chinese/fcitx \
 		libm17n.so:devel/m17n-lib
 

@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/cpp-xmms2/Makefile 483091 2018-10-27 01:43:27Z jbeich $
+# $FreeBSD: head/audio/cpp-xmms2/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTREVISION=	18
 CATEGORIES=	audio
@@ -16,7 +16,7 @@ USES=		ssl
 USE_LDCONFIG=	yes
 USE_GNOME=	glib20
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 PLIST=		${.CURDIR}/pkg-plist
 

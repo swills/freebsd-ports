@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/cjdns/Makefile 474525 2018-07-12 17:13:49Z yuri $
+# $FreeBSD: head/net/cjdns/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	cjdns
 DISTVERSIONPREFIX=	cjdns-v
@@ -12,7 +12,6 @@ COMMENT=	Routing engine designed for security, scalability, speed
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_FreeBSD_10_i386=	fails CC_OUTPUT_921dbbb2_65ad290d=error: invalid value 'c++14' in '-std=c++14' yes
 BROKEN_armv6=		fails to build: Killing runaway build after 21600 seconds with no output
 BROKEN_armv7=		fails to build: Killing runaway build after 21600 seconds with no output
 

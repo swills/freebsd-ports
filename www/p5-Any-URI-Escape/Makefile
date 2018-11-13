@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-Any-URI-Escape/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Any-URI-Escape/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Any-URI-Escape
 PORTVERSION=	0.01
@@ -8,7 +8,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Load URI::Escape::XS preferentially over URI::Escape
 
 RUN_DEPENDS:=	p5-URI-Escape-XS>=0:www/p5-URI-Escape-XS

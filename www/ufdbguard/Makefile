@@ -1,5 +1,5 @@
 # Created by: Pavel Timofeev <timp87@gmail.com>
-# $FreeBSD: head/www/ufdbguard/Makefile 480444 2018-09-23 01:04:32Z swills $
+# $FreeBSD: head/www/ufdbguard/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	ufdbGuard
 PORTVERSION=	1.33.7
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=		fails to compile: error: regparm is not valid on this platform
-BROKEN_SSL=	openssl-devel libressl libressl-devel
+BROKEN_SSL=	openssl111 libressl libressl-devel
 
 USES=		perl5 shebangfix ssl
 SHEBANG_FILES=	samples/URLblocked.cgi

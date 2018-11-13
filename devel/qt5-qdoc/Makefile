@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-qdoc/Makefile 482595 2018-10-20 16:30:30Z tcberner $
+# $FreeBSD: head/devel/qt5-qdoc/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	qdoc
 DISTVERSION=	${QT5_VERSION}
@@ -12,7 +12,7 @@ BUILD_DEPENDS=	llvm60>=0:devel/llvm60
 RUN_DEPENDS=	llvm60>=0:devel/llvm60
 
 USES=		compiler:c++11-lang qmake qt-dist:5,tools
-USE_QT=		core qml buildtools_build qdoc-data_run
+USE_QT=		core declarative buildtools_build qdoc-data_run
 
 BUILD_WRKSRC=	${WRKSRC}/src/${PORTNAME}
 INSTALL_WRKSRC=	${BUILD_WRKSRC}

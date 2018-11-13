@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/cyrus-sasl2-saslauthd/Makefile 415058 2016-05-12 11:06:41Z ume $
+# $FreeBSD: head/security/cyrus-sasl2-saslauthd/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PKGNAMESUFFIX=	-saslauthd
-PORTREVISION=	3
+PORTREVISION=	4
 
 COMMENT=	SASL authentication server for cyrus-sasl2
 

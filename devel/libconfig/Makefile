@@ -1,9 +1,10 @@
 # Created by: Nikos Ntarmos <ntarmos@ceid.upatras.gr>
-# $FreeBSD: head/devel/libconfig/Makefile 476517 2018-08-06 17:22:36Z fernape $
+# $FreeBSD: head/devel/libconfig/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libconfig
 PORTVERSION=	1.7.2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	ntarmos@ceid.upatras.gr

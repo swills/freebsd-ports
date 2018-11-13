@@ -1,5 +1,5 @@
 # Created by: Craig Leres <leres@freebsd.org>
-# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 477534 2018-08-18 20:42:46Z sunpoet $
+# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 483956 2018-11-04 02:01:10Z leres $
 
 PORTNAME=	xtensa-esp32-elf
 DISTVERSION=	1.22.0.g20171219
@@ -55,7 +55,7 @@ BUILD_DEPENDS=	bash:shells/bash \
 
 NO_MTREE=	yes
 USES=		autoreconf:build bison gmake libtool python
-USE_GCC=	yes
+USE_GCC=	7
 USE_GITHUB=	yes
 USE_LDCONFIG=	${PREFIX}/${PORTNAME}/libexec/gcc/${PORTNAME}/5.2.0
 SUBDIR=		crosstool-NG

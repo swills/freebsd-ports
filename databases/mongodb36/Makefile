@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb36/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/databases/mongodb36/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
@@ -20,7 +20,6 @@ LICENSE_COMB=	multi
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only supported on amd64 (i386 deprecated in v3)"
-BROKEN_FreeBSD_10=	libc++ is too old
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>=2.4.4:devel/py-cheetah@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}typing>=3.6.2:devel/py-typing@${PY_FLAVOR} \

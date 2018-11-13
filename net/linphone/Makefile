@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/linphone/Makefile 482777 2018-10-22 19:23:52Z tijl $
+# $FreeBSD: head/net/linphone/Makefile 484629 2018-11-10 18:59:10Z tijl $
 
 PORTNAME=	linphone
 PORTVERSION=	4.1.1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	net
 MASTER_SITES=	https://www.linphone.org/releases/sources/linphoneqt/
@@ -15,8 +16,9 @@ LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox \
 		liblinphone++.so:net/liblinphone
 
 USES=		cmake:outsource compiler:c++11-lib pkgconfig qt:5
-USE_QT= 	buildtools_build concurrent core gui linguisttools network \
-		qmake_build qml quick quickcontrols2 speech svg testlib widgets
+USE_QT= 	buildtools_build concurrent core declarative \
+		graphicaleffects_run gui linguisttools network qmake_build \
+		quickcontrols_run quickcontrols2 speech svg testlib widgets
 
 post-patch:
 	@${REINPLACE_CMD} 's/LINPHONE_QT_GIT_VERSION/"${PORTVERSION}"/' \

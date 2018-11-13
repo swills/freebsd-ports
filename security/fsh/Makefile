@@ -1,9 +1,9 @@
 # Created by: sumikawa
-# $FreeBSD: head/security/fsh/Makefile 456126 2017-12-12 12:40:15Z antoine $
+# $FreeBSD: head/security/fsh/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	fsh
 PORTVERSION=	1.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	http://www.lysator.liu.se/fsh/ \
 		http://mirror2.unixfreunde.de/ \

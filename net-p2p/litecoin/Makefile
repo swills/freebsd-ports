@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net-p2p/litecoin/Makefile 480337 2018-09-22 01:31:31Z swills $
+# $FreeBSD: head/net-p2p/litecoin/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	litecoin
 PORTVERSION=	0.16.3
@@ -96,12 +96,6 @@ PLIST_FILES?=	bin/litecoin-qt man/man1/litecoin-qt.1.gz \
 		share/applications/litecoin-qt.desktop share/pixmaps/litecoin128.png
 
 .include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 1100000
-EXTRA_PATCHES=	${FILESDIR}/extra-patch-src_crypto_scrypt.cpp \
-		${FILESDIR}/extra-patch-src_crypto_scrypt.h
-CONFIGURE_ARGS+=--disable-asm
-.endif
 
 .if defined(SLAVE_PORT) && ${SLAVE_PORT} == "no"
 

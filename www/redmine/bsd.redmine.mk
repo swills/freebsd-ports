@@ -3,10 +3,10 @@
 # Date created:                      2010-09-12
 # Whom:                              Eygene Ryabinkin <rea-fbsd@codelabs.ru>
 #
-# $FreeBSD: head/www/redmine/bsd.redmine.mk 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/redmine/bsd.redmine.mk 484249 2018-11-05 21:46:27Z sunpoet $
 #
 # We're assuming standard plugin installation sequence that is described
-# in the http://www.redmine.org/wiki/redmine/Plugins
+# in the https://www.redmine.org/projects/redmine/wiki/Plugins
 #
 # Basically, we need the following variables to be defined:
 # - REDMINE_PLUGIN_NAME: the name of the plugin;

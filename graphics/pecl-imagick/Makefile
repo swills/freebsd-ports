@@ -1,9 +1,9 @@
 # Created by: Andrey Slusar <anray@FreeBSD.org>
-# $FreeBSD: head/graphics/pecl-imagick/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/pecl-imagick/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	imagick
 PORTVERSION=	3.4.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 
 MAINTAINER=	mm@FreeBSD.org
@@ -13,8 +13,8 @@ LICENSE=	PHP301
 
 OPTIONS_DEFINE=	X11
 
-X11_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
-X11_LIB_DEPENDS_OFF=	libMagickWand-6.so:graphics/ImageMagick-nox11
+X11_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
+X11_LIB_DEPENDS_OFF=	libMagickWand-6.so:graphics/ImageMagick6-nox11
 
 USES=		php:pecl pkgconfig localbase
 

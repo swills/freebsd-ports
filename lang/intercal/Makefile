@@ -1,8 +1,9 @@
 # Created by: Matthew Hunt <mph@FreeBSD.org>
-# $FreeBSD: head/lang/intercal/Makefile 399346 2015-10-15 14:55:14Z mat $
+# $FreeBSD: head/lang/intercal/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	intercal
 PORTVERSION=	0.30
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.catb.org/~esr/intercal/
 

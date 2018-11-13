@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/saaghar/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/saaghar/Makefile 484086 2018-11-04 14:37:45Z antoine $
 
 PORTNAME=	saaghar
 PORTVERSION=	2.5.0
@@ -14,6 +14,8 @@ MAINTAINER=	javad.kouhi@gmail.com
 COMMENT=	Persian poetry software
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to build
 
 EXTRACT_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
 

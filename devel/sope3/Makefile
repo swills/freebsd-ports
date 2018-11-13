@@ -1,5 +1,5 @@
 # Created by: Euan Thoms <euan@potensol.com>
-# $FreeBSD: head/devel/sope3/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/devel/sope3/Makefile 483909 2018-11-03 20:29:12Z emaste $
 
 PORTNAME=		sope3
 PORTVERSION=		3.2.10
@@ -32,6 +32,7 @@ MEMCACHED_DESC=		Install memcached
 USES=			gmake iconv gnustep
 USE_GNUSTEP=		base build
 USE_LDCONFIG=		${GNUSTEP_LOCAL_LIBRARIES}
+LLD_UNSAFE=		yes # PR 230608
 
 CONFLICTS=		sope2-[0-9]*
 

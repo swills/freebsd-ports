@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/okteta/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/devel/okteta/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	okteta
 DISTVERSION=	0.25.3
@@ -18,7 +18,7 @@ USE_KDE=	attica auth bookmarks codecs completion crash \
 		ecm i18n iconthemes itemviews jobwidgets kcmutils kio \
 		newstuff parts service solid sonnet textwidgets \
 		widgetsaddons xmlgui
-USE_QT=		concurrent core dbus designer gui network printsupport qml \
+USE_QT=		concurrent core dbus declarative designer gui network printsupport  \
 		script scripttools widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

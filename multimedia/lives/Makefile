@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/lives/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/lives/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	lives
 PORTVERSION=	2.8.7
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	http://lives-video.com/releases/
 DISTNAME=	LiVES-${PORTVERSION}
@@ -37,7 +37,7 @@ RUN_DEPENDS=	${LOCALBASE}/bin/analyseplugin:audio/ladspa \
 		mpg123:audio/mpg123 \
 		sox:audio/sox \
 		ogg123:audio/vorbis-tools \
-		convert:graphics/ImageMagick \
+		convert:graphics/ImageMagick6 \
 		sswf:graphics/sswf \
 		mencoder:multimedia/mencoder \
 		mplayer:multimedia/mplayer \

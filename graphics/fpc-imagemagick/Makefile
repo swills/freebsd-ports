@@ -1,5 +1,7 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 484640 2018-11-10 19:57:07Z kwm $
+
+PORTREVISION=	1
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-imagemagick
@@ -16,6 +18,6 @@ OPTIONS_DEFINE=	IMAGEMAGICK
 IMAGEMAGICK_DESC=	Install ImageMagick image proccesing tool
 OPTIONS_DEFAULT=	IMAGEMAGICK
 
-IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick6
 
 .include "${MASTERDIR}/Makefile"

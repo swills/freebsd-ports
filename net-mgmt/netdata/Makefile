@@ -1,8 +1,8 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/net-mgmt/netdata/Makefile 465801 2018-03-28 12:00:31Z mmokhi $
+# $FreeBSD: head/net-mgmt/netdata/Makefile 484100 2018-11-04 15:05:47Z mmokhi $
 
 PORTNAME=	netdata
-PORTVERSION=	1.10.0
+PORTVERSION=	1.11.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt
 
@@ -67,7 +67,8 @@ post-install:
 	${MKDIR} ${STAGEDIR}${NETDATA_CACHE}
 	${MKDIR} ${STAGEDIR}${NETDATA_LOG}
 	${MKDIR} ${STAGEDIR}${NETDATA_PERST}
-	(for file in ${STAGEDIR}${ETCDIR}/*.conf ${STAGEDIR}${ETCDIR}/*/*.conf; do \
+	(for file in ${STAGEDIR}${LOCALBASE}/lib/${PORTNAME}/conf.d/*.conf \
+			${STAGEDIR}${LOCALBASE}/lib/${PORTNAME}/conf.d/*/*.conf; do \
 		${MV} $$file $$file".sample"; \
 	done)
 

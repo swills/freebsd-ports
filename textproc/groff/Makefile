@@ -1,8 +1,9 @@
 # Created by: Ulrich Spoerlein <uqs@FreeBSD.org>
-# $FreeBSD: head/textproc/groff/Makefile 472296 2018-06-13 08:39:05Z tijl $
+# $FreeBSD: head/textproc/groff/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	groff
 PORTVERSION=	1.22.3
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 

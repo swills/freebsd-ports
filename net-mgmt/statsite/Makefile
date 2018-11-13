@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/statsite/Makefile 479293 2018-09-09 16:07:07Z tobik $
+# $FreeBSD: head/net-mgmt/statsite/Makefile 484501 2018-11-09 05:08:54Z tobik $
 
 PORTNAME=	statsite
 PORTVERSION=	0.8.0
@@ -14,6 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		autoreconf python:env
 GNU_CONFIGURE=	yes
+USE_CSTD=	gnu99
 USE_GITHUB=	yes
 GH_ACCOUNT=	armon
 

@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-configurations/Makefile 471382 2018-06-02 17:32:35Z miwi $
+# $FreeBSD: head/www/py-django-configurations/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	django-configurations
 PORTVERSION=	2.0
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Django project configuration using the composability of Python classes
 
 LICENSE=	BSD3CLAUSE

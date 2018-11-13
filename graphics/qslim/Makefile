@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/qslim/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/qslim/Makefile 484078 2018-11-04 14:29:16Z antoine $
 
 PORTNAME=	qslim
 PORTVERSION=	2.1
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SlimKit surface modeling tools
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to link
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \

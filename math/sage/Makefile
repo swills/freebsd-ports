@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/sage/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/math/sage/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	sage
 PORTVERSION=	6.7
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	http://boxen.math.washington.edu/home/sagemath/sage-mirror/src/ \
 		http://mirrors.xmission.com/sage/src/ \
@@ -19,7 +19,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 BUILD_DEPENDS=	bash:shells/bash \
-		convert:graphics/ImageMagick \
+		convert:graphics/ImageMagick6 \
 		ffmpeg:multimedia/ffmpeg \
 		automake:devel/automake \
 		autoconf:devel/autoconf

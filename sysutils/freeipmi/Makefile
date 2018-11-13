@@ -1,8 +1,9 @@
 # Created by: Dmitry Frolov <frol@nov.net>
-# $FreeBSD: head/sysutils/freeipmi/Makefile 478737 2018-09-01 22:51:15Z sunpoet $
+# $FreeBSD: head/sysutils/freeipmi/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	freeipmi
 PORTVERSION=	1.6.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU \
 		http://ftp.gluster.com/pub/${PORTNAME}/${PORTVERSION}/

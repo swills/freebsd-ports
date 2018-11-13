@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/graphics/apvlv/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/graphics/apvlv/Makefile 484005 2018-11-04 12:26:10Z antoine $
 
 PORTNAME=	apvlv
 PORTVERSION=	0.1.4
@@ -12,6 +12,8 @@ MAINTAINER=	xors@mailup.net
 COMMENT=	PDF/DJVU Viewer that behaves like Vim
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
 

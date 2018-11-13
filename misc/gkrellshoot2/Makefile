@@ -1,9 +1,9 @@
 # Created by: Andrew Stuart <elitetek@tekrealm.net>
-# $FreeBSD: head/misc/gkrellshoot2/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/misc/gkrellshoot2/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	gkrellshoot
 PORTVERSION=	0.4.4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	misc
 MASTER_SITES=	SF/${PORTNAME}/GkrellM2.0%20Port/${PORTVERSION}
 PKGNAMESUFFIX=	2
@@ -13,7 +13,7 @@ COMMENT=	Screen locking and screen capture plugin for GKrellM 2
 
 BUILD_DEPENDS=	${LOCALBASE}/include/gkrellm2/gkrellm.h:sysutils/gkrellm2
 RUN_DEPENDS=	gkrellm:sysutils/gkrellm2 \
-		import:graphics/ImageMagick
+		import:graphics/ImageMagick6
 
 USES=		pkgconfig
 

@@ -1,8 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/misc/teseq/Makefile 395346 2015-08-26 02:56:32Z danilo $
+# $FreeBSD: head/misc/teseq/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	teseq
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 

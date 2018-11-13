@@ -1,5 +1,5 @@
 # Created by: Charlie & <root@HellFire.BSD.org.pe>
-# $FreeBSD: head/games/chanta/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/chanta/Makefile 484029 2018-11-04 13:26:21Z antoine $
 
 PORTNAME=	chanta
 PORTVERSION=	0.15
@@ -12,6 +12,8 @@ COMMENT=	Free 2D jump and run game
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 USES=		gmake
 USE_SDL=	sdl image mixer

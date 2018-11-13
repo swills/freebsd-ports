@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/ksh93-devel/Makefile 483770 2018-11-02 05:54:53Z cy $
+# $FreeBSD: head/shells/ksh93-devel/Makefile 484498 2018-11-09 04:21:07Z cy $
 
 # Make sure that your configuration DOES NOT set ANY gcc-related
 # variables.  ksh93 will not compile if you set even the seemingly
@@ -14,8 +14,8 @@ PORTNAME=	ksh93
 PORTVERSION=	${AST_COMMIT_DATE}
 CATEGORIES=	shells
 PKGNAMESUFFIX=	-devel
-HASH=		3cf23b9
-AST_COMMIT_DATE=	2018.11.01
+HASH=		6bc588b
+AST_COMMIT_DATE=	2018.11.08
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Development branch of AT&T KornShell 93
@@ -52,14 +52,12 @@ KSH93_DESC=	Install to ${PREFIX}/bin/ksh93
 KSH_PLIST_SUB=		93=""
 KSH93_PLIST_SUB=	93="93"
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 post-patch:
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100093
 	@${REINPLACE_CMD} -e 's|SF_FLAGS|SFIO_FLAGS|g' ${WRKSRC}/src/lib/libast/include/sfio*.h ${WRKSRC}/src/lib/libast/sfio/*.c
-.endif
 .if ${PORT_OPTIONS:MKSH93}
 	@${MV} ${WRKSRC}/src/cmd/ksh93/ksh.1 ${WRKSRC}/src/cmd/ksh93/ksh93.1
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

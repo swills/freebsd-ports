@@ -1,9 +1,9 @@
 # Created by: David Sugar <dyfet@gnu.org>
-# $FreeBSD: head/devel/commoncpp/Makefile 478117 2018-08-26 10:04:47Z tobik $
+# $FreeBSD: head/devel/commoncpp/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	commoncpp
 PORTVERSION=	1.8.1
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU

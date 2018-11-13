@@ -1,9 +1,9 @@
 # Created by: patrick, trevor
-# $FreeBSD: head/print/lilypond-devel/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/print/lilypond-devel/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	lilypond
 DISTVERSION=	2.19.81
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print audio
 MASTER_SITES=	http://download.linuxaudio.org/lilypond/sources/v${DISTVERSION:R}/ \
 		http://lilypond.org/downloads/sources/v${DISTVERSION:R}/
@@ -17,7 +17,7 @@ LICENSE=	GPLv3
 BUILD_DEPENDS=	pdftexi2dvi:print/texinfo \
 		t1ascii:print/t1utils \
 		bash:shells/bash \
-		convert:graphics/ImageMagick \
+		convert:graphics/ImageMagick6 \
 		dblatex:textproc/dblatex \
 		fontforge:print/fontforge \
 		help2man:misc/help2man \

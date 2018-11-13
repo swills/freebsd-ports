@@ -1,10 +1,10 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/lang/yorick/Makefile 427486 2016-12-01 10:36:38Z amdmi3 $
+# $FreeBSD: head/lang/yorick/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	yorick
 DISTVERSIONPREFIX=	y_
 DISTVERSION=	2_2_04
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang math
 
 MAINTAINER=	johans@FreeBSD.org

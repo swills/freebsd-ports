@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/deadbeef/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/deadbeef/Makefile 484370 2018-11-06 23:52:17Z linimon $
 
 PORTNAME=	deadbeef
 PORTVERSION=	0.7.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/
 
@@ -26,6 +26,7 @@ CPPFLAGS+=	-I../dumb/dumb-kode54/include -I../../plugins/libmp4ff \
 		-I../../plugins/gme/game-music-emu-0.6pre \
 		-I./sidplay-libs/libsidplay/include/sidplay \
 		-I${LOCALBASE}/include
+CFLAGS+=	-Wno-narrowing
 LIBS+=		-L${LOCALBASE}/lib -lexecinfo -lintl
 USE_GNOME=	intltool
 INSTALLS_ICONS=	yes

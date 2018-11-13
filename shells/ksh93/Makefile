@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/ksh93/Makefile 480233 2018-09-21 07:41:56Z cy $
+# $FreeBSD: head/shells/ksh93/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 # Make sure that your configuration DOES NOT set ANY gcc-related
 # variables.  ksh93 will not compile if you set even the seemingly
@@ -40,12 +40,8 @@ STATIC_MAKE_ENV=	LDFLAGS+=-static
 
 BROKEN_aarch64=		Fails to compile: needs sbrk
 
-.include <bsd.port.pre.mk>
-
 post-patch:
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100093
 	@${REINPLACE_CMD} -e 's|SF_FLAGS|SFIO_FLAGS|g' ${WRKSRC}/src/lib/libast/include/sfio*.h ${WRKSRC}/src/lib/libast/sfio/*.c
-.endif
 
 do-build:
 	@cd ${WRKSRC}/ && ${SETENV} -i ${MAKE_ENV} ${SH} bin/package flat make
@@ -59,4 +55,4 @@ do-install:
 do-test:
 	cd ${WRKSRC}/src/cmd/ksh93/tests/ && ${SETENV} SHELL=${WRKSRC}/bin/ksh ${WRKSRC}/bin/ksh shtests
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/glgraph/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/math/glgraph/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	glgraph
 PORTVERSION=	0.2.6
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	math
 MASTER_SITES=	http://glgraph.kaosu.ch/downl/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	p5-OpenGL>=0:graphics/p5-OpenGL \
-		import:graphics/ImageMagick
+		import:graphics/ImageMagick6
 
 USES=		perl5 shebangfix tar:bzip2
 USE_PERL5=	run

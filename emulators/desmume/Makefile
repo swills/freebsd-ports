@@ -1,5 +1,5 @@
 # Created by: Stefan Sperling <stsp@stsp.in-berlin.de>
-# $FreeBSD: head/emulators/desmume/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/desmume/Makefile 484037 2018-11-04 13:40:09Z antoine $
 
 PORTNAME=	desmume
 PORTVERSION=	0.9.11
@@ -11,6 +11,8 @@ MAINTAINER=	hardy.schumacher@gmx.de
 COMMENT=	Nintendo DS emulator
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext \
 		libSoundTouch.so:audio/soundtouch

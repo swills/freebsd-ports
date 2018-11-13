@@ -1,5 +1,5 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/www/gitea/Makefile 483745 2018-11-01 22:02:20Z flo $
+# $FreeBSD: head/www/gitea/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	gitea
 DISTVERSIONPREFIX=	v
@@ -40,7 +40,7 @@ SQLITE_VARS=	GO_TAGS+=sqlite
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100513
+.if ${OPSYS} == FreeBSD
 DAEMONARGS=	-S -l \$${gitea_facility} -s \$${gitea_priority} -T \$${name}
 .else
 DAEMONARGS=	-f

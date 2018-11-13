@@ -1,10 +1,10 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/converters/recode/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/converters/recode/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	recode
 PORTVERSION=	3.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	converters
 
 MAINTAINER=	demon@FreeBSD.org

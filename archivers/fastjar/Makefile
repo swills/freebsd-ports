@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/archivers/fastjar/Makefile 464164 2018-03-11 11:20:43Z rene $
+# $FreeBSD: head/archivers/fastjar/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	fastjar
 PORTVERSION=	0.93.20060808
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	archivers java
 MASTER_SITES=	LOCAL/maho/fastjar
 

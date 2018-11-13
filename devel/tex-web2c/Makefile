@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/tex-web2c/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/tex-web2c/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	web2c
 PORTVERSION=	20150521
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	TEX_CTAN/systems/texlive/Source/
 PKGNAMEPREFIX=	tex-

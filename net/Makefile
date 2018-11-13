@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 483701 2018-11-01 19:05:28Z rene $
+# $FreeBSD: head/net/Makefile 484429 2018-11-08 06:51:51Z yuri $
 #
 
     COMMENT = Networking tools
@@ -373,6 +373,7 @@
     SUBDIR += libdmapsharing
     SUBDIR += libdnet
     SUBDIR += libexosip2
+    SUBDIR += libfabric
     SUBDIR += libfb
     SUBDIR += libfixbuf
     SUBDIR += libgnetwork

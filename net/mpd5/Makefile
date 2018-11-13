@@ -1,5 +1,5 @@
 # Created by: Archie Cobbs
-# $FreeBSD: head/net/mpd5/Makefile 482627 2018-10-20 21:41:05Z eugen $
+# $FreeBSD: head/net/mpd5/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	mpd
 DISTVERSION=	5.8
@@ -14,7 +14,7 @@ COMMENT=	Multi-link PPP daemon based on netgraph(4)
 
 LICENSE=	BSD3CLAUSE
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 BROKEN_SSL_REASON_openss-devel=	needs libfetch(3) linked with system libssl
 
 OPTIONS_DEFINE=	DOCS NG_IPACCT

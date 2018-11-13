@@ -1,9 +1,9 @@
 # Created by: Frank Behrens <frank@pinky.sax.de>
-# $FreeBSD: head/www/polipo/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/www/polipo/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	polipo
 PORTVERSION=	1.1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	http://www.pps.univ-paris-diderot.fr/~jch/software/files/polipo/
 

@@ -1,5 +1,5 @@
 # Created by: Vlad Galu <galu@packetdam.com>
-# $FreeBSD: head/databases/arangodb32/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/arangodb32/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	arangodb
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only builds on amd64"
-BROKEN_FreeBSD_10=	libc++ is too old
 USES=		gmake ssl cmake:outsource,noninja python:2.7 compiler
 USE_GITHUB=	yes
 

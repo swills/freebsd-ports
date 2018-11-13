@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/gtypist/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/games/gtypist/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gtypist
 PORTVERSION=	2.9.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	GNU
 

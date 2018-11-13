@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/umbrello/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/umbrello/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	umbrello
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	UML modeller for KDE
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gnome kde:5 qt:5 tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash ecm guiaddons i18n iconthemes itemviews \

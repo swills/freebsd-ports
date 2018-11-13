@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/blitz++/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/math/blitz++/Makefile 483825 2018-11-02 17:29:08Z antoine $
 
 PORTNAME=	blitz++
 PORTVERSION=	1.0.1
@@ -18,6 +18,7 @@ GNU_CONFIGURE=	yes
 USES=		gmake libtool pathfix python
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--enable-shared CXX_OPTIMIZE_FLAGS="${CFLAGS}"
+MAKE_JOBS_UNSAFE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	blitzpp
@@ -29,9 +30,13 @@ PORTDOCS=	AUTHORS ChangeLog* LEGAL README NEWS \
 OPTIONS_DEFINE=	DOCS
 OPTIONS_SUB=	yes
 DOCS_INFO=	blitz
-DOCS_SUB_PLIST=	""
+DOCS_USES=	makeinfo
+
+ALL_TARGET=	all
+DOCS_ALL_TARGET=	info
 
 INSTALL_TARGET=	install-strip
+DOCS_INSTALL_TARGET=	install-info
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|g++|\$${CXX}|g ; \

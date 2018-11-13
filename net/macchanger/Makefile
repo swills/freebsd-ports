@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/macchanger/Makefile 385640 2015-05-07 17:26:05Z mat $
+# $FreeBSD: head/net/macchanger/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	macchanger
 PORTVERSION=	1.7.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	clutton@zoho.com

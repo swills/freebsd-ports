@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/devel/libavl/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/libavl/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libavl
 PORTVERSION=	1.4.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU/avl
 DISTNAME=	avl-${PORTVERSION}

@@ -1,11 +1,11 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/py-psycopg2/Makefile 473229 2018-06-24 20:16:52Z sunpoet $
+# $FreeBSD: head/databases/py-psycopg2/Makefile 484831 2018-11-12 21:28:07Z sunpoet $
 
 PORTNAME=	psycopg2
-PORTVERSION=	2.7.5
+PORTVERSION=	2.7.6.1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP \
-		http://initd.org/psycopg/tarballs/PSYCOPG-${PORTVERSION:R:S|.|-|}/
+		http://initd.org/psycopg/tarballs/PSYCOPG-${PORTVERSION:R:R:S|.|-|}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -16,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/doc/COPYING.LESSER
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-USE_PYTHON=	autoplist concurrent distutils
 USES=		pgsql python
+USE_PYTHON=	autoplist concurrent distutils
 
 PORTDOCS=	AUTHORS INSTALL NEWS PKG-INFO README.rst
 PORTEXAMPLES=	*

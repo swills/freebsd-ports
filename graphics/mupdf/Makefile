@@ -1,5 +1,5 @@
 # Created by: Martin Dieringer <martin.dieringer@gmx.de>
-# $FreeBSD: head/graphics/mupdf/Makefile 481606 2018-10-09 07:01:53Z tobik $
+# $FreeBSD: head/graphics/mupdf/Makefile 484658 2018-11-11 03:49:19Z linimon $
 
 PORTNAME=	mupdf
 PORTVERSION=	1.13.0
@@ -15,8 +15,6 @@ COMMENT=	Lightweight PDF viewer and toolkit
 
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to compile: cmsmd5.c:36:51: 'ContextID' undeclared
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfreetype.so:print/freetype2 \

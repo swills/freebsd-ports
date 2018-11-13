@@ -1,9 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/deskutils/mate-utils/Makefile 480982 2018-09-30 20:27:44Z kwm $
+# $FreeBSD: head/deskutils/mate-utils/Makefile 484188 2018-11-05 12:32:12Z ericbsd $
 
 PORTNAME=	mate-utils
-PORTVERSION=	1.20.0
-PORTREVISION=	1
+PORTVERSION=	1.20.1
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

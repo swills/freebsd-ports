@@ -1,5 +1,5 @@
 # Created by: tcberner
-# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	kirigami2
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,8 +10,8 @@ COMMENT=	QtQuick based components set
 
 USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm kdeclarative
-USE_QT=		core dbus gui linguisttools network \
-		qml quick quickcontrols2 svg testlib widgets \
+USE_QT=		core dbus declarative gui linguisttools network \
+		quickcontrols2 svg testlib widgets \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

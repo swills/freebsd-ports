@@ -1,8 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-cloudpinyin/Makefile 480709 2018-09-25 23:37:21Z wen $
+# $FreeBSD: head/chinese/fcitx-cloudpinyin/Makefile 484688 2018-11-11 11:47:33Z wen $
 
 PORTNAME=	fcitx-cloudpinyin
 PORTVERSION=	0.3.6
+PORTREVISION=	1
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx
@@ -12,6 +13,7 @@ COMMENT=	Cloud-based Pinyin module for Fcitx
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfcitx-config.so:chinese/fcitx \
 		libcurl.so:ftp/curl
 

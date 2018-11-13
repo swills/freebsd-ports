@@ -1,16 +1,17 @@
-# $FreeBSD: head/games/bomber/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/bomber/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	bomber
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons crash dbusaddons \
 		ecm i18n kio libkdegames widgetsaddons xmlgui
-USE_QT=		core dbus gui network widgets phonon4 qml quick xml \
+USE_QT=		core dbus declarative gui network widgets phonon4 xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	DOCS

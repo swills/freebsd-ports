@@ -1,9 +1,9 @@
 # Created by: Joseph Koshy <koshy@india.hp.com>
-# $FreeBSD: head/graphics/xaos/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/graphics/xaos/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	xaos
 PORTVERSION=	3.6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics math
 MASTER_SITES=	SF/${PORTNAME}/XaoS/${PORTVERSION}
 

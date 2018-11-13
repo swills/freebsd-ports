@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/lightning/Makefile 464912 2018-03-18 14:06:09Z linimon $
+# $FreeBSD: head/devel/lightning/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	lightning
 PORTVERSION=	2.1.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

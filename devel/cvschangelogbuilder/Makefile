@@ -1,5 +1,5 @@
 # Created by: Matthew Will <mwill@spingen.com>
-# $FreeBSD: head/devel/cvschangelogbuilder/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/cvschangelogbuilder/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	cvschangelogbuilder
 PORTVERSION=	2.5
@@ -24,14 +24,6 @@ PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug.
-post-extract:
-	@${CHMOD} 755 ${WRKSRC}/docs/images
-.endif
-
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.pl \
 		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
@@ -41,4 +33,4 @@ do-install-DOCS-on:
 	${INSTALL_DATA} ${WRKSRC}/docs/*.* ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/docs/images/* ${STAGEDIR}${DOCSDIR}/images
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

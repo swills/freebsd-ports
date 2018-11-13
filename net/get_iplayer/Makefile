@@ -1,8 +1,9 @@
-# $FreeBSD: head/net/get_iplayer/Makefile 478327 2018-08-28 19:39:38Z crees $
+# $FreeBSD: head/net/get_iplayer/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	get_iplayer
 PORTVERSION=	3.17
 DISTVERSIONPREFIX=v
+PORTREVISION=	1
 CATEGORIES=	net multimedia
 
 MAINTAINER=	crees@FreeBSD.org

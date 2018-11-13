@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-osdpip/Makefile 478960 2018-09-04 13:42:13Z tobik $
+# $FreeBSD: head/multimedia/vdr-plugin-osdpip/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	vdr-plugin-osdpip
 PORTVERSION=	0.1.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/961/
 DISTNAME=	${PORTNAME:S/-plugin-/-/}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

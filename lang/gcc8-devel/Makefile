@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8-devel/Makefile 483352 2018-10-28 20:29:36Z gerald $
+# $FreeBSD: head/lang/gcc8-devel/Makefile 484803 2018-11-12 14:34:26Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	8.2.1.s20181026
+PORTVERSION=	8.2.1.s20181109
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -21,7 +21,6 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpc.so:math/mpc
 BUILD_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
 RUN_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
-
 .if defined(MAINTAINER_MODE)
 BUILD_DEPENDS+=	runtest:misc/dejagnu
 .endif

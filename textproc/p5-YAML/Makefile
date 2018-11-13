@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/p5-YAML/Makefile 479652 2018-09-12 22:57:26Z sunpoet $
+# $FreeBSD: head/textproc/p5-YAML/Makefile 484132 2018-11-04 18:57:26Z sunpoet $
 
 PORTNAME=	YAML
-PORTVERSION=	1.26
+PORTVERSION=	1.27
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

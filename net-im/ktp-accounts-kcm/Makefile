@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 481446 2018-10-07 13:43:14Z tcberner $
+# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	ktp-accounts-kcm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -23,7 +23,7 @@ USE_GNOME=	intltool
 USE_KDE=	auth codecs config configwidgets coreaddons ecm i18n \
 		iconthemes itemviews kcmutils kio notifications notifyconfig \
 		service texteditor wallet widgetsaddons windowsystem
-USE_QT=		core dbus gui network qml sql widgets xml \
+USE_QT=		core dbus declarative gui network sql widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 483009 2018-10-26 07:56:50Z joneum $
+# $FreeBSD: head/www/nginx/Makefile 484307 2018-11-06 16:59:03Z joneum $
 
 PORTNAME=	nginx
-PORTVERSION=	1.14.0
-PORTREVISION?=	13
+PORTVERSION=	1.14.1
+PORTREVISION?=	0
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/ \
@@ -217,10 +217,6 @@ CONFIGURE_ARGS+=	--${_addextmod}=${WRKDIR}/${moddir}
 .if empty(PORT_OPTIONS:MHTTP) && empty(PORT_OPTIONS:MMAIL)
 IGNORE=		requires at least HTTP or MAIL to \
 		be defined.  Please do 'make config' again
-.endif
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100085 && ${SSL_DEFAULT} == base && ${PORT_OPTIONS:MCT}
-IGNORE=		CT option requires OpenSSL 1.0.2, add DEFAULT_VERSIONS+=ssl=openssl to /etc/make.conf
 .endif
 
 .if !${PORT_OPTIONS:MHTTP_REWRITE} && !defined(USE_HTTP_REWRITE)

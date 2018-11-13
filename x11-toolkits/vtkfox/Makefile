@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/x11-toolkits/vtkfox/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/vtkfox/Makefile 483942 2018-11-03 22:38:59Z antoine $
 
 PORTNAME=	vtkfox
 PORTVERSION=	1.0.1
@@ -8,6 +8,9 @@ MASTER_SITES=	http://www.gahr.ch/vtkfox/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FOX/VTK Widget and Interactor
+
+DEPRECATED=	Depends on expiring vtk5
+EXPIRATION_DATE=	2018-12-04
 
 LIB_DEPENDS=	libvtkCommon.so.5:math/vtk5
 

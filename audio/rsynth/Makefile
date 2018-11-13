@@ -1,9 +1,9 @@
 # Created by: faulkner@mpd.tandem.com
-# $FreeBSD: head/audio/rsynth/Makefile 442097 2017-05-30 16:18:54Z tobik $
+# $FreeBSD: head/audio/rsynth/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	rsynth
 PORTVERSION=	2.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio accessibility
 MASTER_SITES=	ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/synthesis/ \
 		ftp://ftp.enst.fr/pub/unix/multimedia/

@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/finance/quantlib/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/finance/quantlib/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	quantlib
 PORTVERSION=	1.13
@@ -31,11 +31,6 @@ OPTIONS_DEFINE+=EXTRA_SAFETY_CHECKS SESSIONS INTRADAY
 OPTIONS_DEFINE+=THREAD_SAFE_OBSERVER_PATTERN
 OPTIONS_DEFINE+=THREAD_SAFE_SINGLETON_INIT
 OPTIONS_DEFINE+=${OPTIONS_DEFAULT}
-
-.if ${CC} == "cc"
-# The base cc/c++ on FreeBSD-10 is too old for OpenMP.
-OPTIONS_EXCLUDE_FreeBSD_10=OPENMP
-.endif
 
 BENCHMARK_DESC=		Install benchmark (it is always built)
 EXTRA_SAFETY_CHECKS_DESC=Trade performance for run-time checks

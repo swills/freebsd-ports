@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/sst/files/Makefile 398833 2015-10-08 15:12:22Z olgeni $
+# $FreeBSD: head/security/sst/files/Makefile 484158 2018-11-05 00:04:04Z mi $
 
 PROG=sst
 
@@ -6,7 +6,8 @@ BINDIR=${PREFIX}/sbin
 MANDIR=${PREFIX}/man/man
 
 CFLAGS+=	-DCONFDIR='"${OPENSSLDIR}"' -DCERTF='"certs/sst.pem"' \
-		-I${OPENSSLINC}
+		-I${OPENSSLINC} -Wno-comment
+# -Wno-dangling-else not available in gcc-4.2, which is still around...
 .if exists(/usr/bin/nc)
 CFLAGS+=	-DNETCAT='"/usr/bin/nc"'
 .else

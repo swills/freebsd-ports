@@ -1,9 +1,9 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/news/noffle/Makefile 443417 2017-06-12 09:01:22Z amdmi3 $
+# $FreeBSD: head/news/noffle/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	noffle
 PORTVERSION=	1.1.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	news
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28devel%29/${PORTVERSION}
 

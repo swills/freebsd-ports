@@ -1,8 +1,9 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/security/libtasn1/Makefile 459431 2018-01-19 15:44:49Z novel $
+# $FreeBSD: head/security/libtasn1/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libtasn1
 PORTVERSION=	4.13
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	GNU
 

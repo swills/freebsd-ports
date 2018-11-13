@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-django/Makefile 471388 2018-06-02 18:00:08Z miwi $
+# $FreeBSD: head/devel/py-pytest-django/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	pytest-django
 PORTVERSION=	3.2.1
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Django plugin for py.test
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Daniel O'Connor
-# $FreeBSD: head/audio/teamspeak3-server/Makefile 483551 2018-10-31 05:46:38Z ultima $
+# $FreeBSD: head/audio/teamspeak3-server/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	teamspeak3-server
 PORTVERSION=	3.5.0
@@ -56,11 +56,7 @@ MYSQL_VARS_OFF=	SUB_LIST+=MYSQL=
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100000 && ${OSVERSION} < 1100507
-SUB_LIST+=	CD="cd \$$db_dir"
-.else
 SUB_LIST+=	CD=
-.endif
 
 .if ${ARCH} == "i386"
 TEAMSPEAK_ARCH=	x86

@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/net-im/telegramqml/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/telegramqml/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	telegramqml
 PORTVERSION=	0.9.2
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im
 
@@ -20,7 +20,7 @@ GH_ACCOUNT=	Aseman-Land
 GH_PROJECT=	TelegramQML
 
 USES=		qmake:outsource qt:5 ssl
-USE_QT=		qmake_build buildtools_build core qml quick sql xml multimedia
+USE_QT=		qmake_build buildtools_build core declarative sql xml multimedia
 USE_LDCONFIG=	yes
 QMAKE_ARGS=	BUILD_MODE+=lib \
 		LIBQTELEGRAM_INCLUDE_PATH="${LOCALBASE}/include/libqtelegram-ae"

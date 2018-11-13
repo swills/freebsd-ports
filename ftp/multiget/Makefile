@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/ftp/multiget/Makefile 420335 2016-08-17 11:46:12Z amdmi3 $
+# $FreeBSD: head/ftp/multiget/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME=	multiget
 PORTVERSION=	1.1.3
@@ -14,7 +14,7 @@ LICENSE=	GPLv2+
 
 WRKSRC_SUBDIR=	src
 
-USES=		alias dos2unix
+USES=		alias compiler:c++11-lang dos2unix
 USE_WX=		2.8
 MAKEFILE=	makefile
 ALL_TARGET=	MultiGet

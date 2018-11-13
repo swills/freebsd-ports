@@ -1,5 +1,5 @@
 # Created by: James O'Gorman <james@netinertia.co.uk>
-# $FreeBSD: head/sysutils/boxbackup/Makefile 473497 2018-06-28 14:15:00Z tz $
+# $FreeBSD: head/sysutils/boxbackup/Makefile 484021 2018-11-04 13:09:11Z antoine $
 
 PORTNAME=	boxbackup
 PORTVERSION=	0.11.1
@@ -14,6 +14,8 @@ COMMENT=	Open source, completely automatic on-line backup system for Unix
 LICENSE=	BSD3CLAUSE GPLv2
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE-DUAL.txt
+
+BROKEN=		fails to build
 
 USES=		autoreconf perl5 ssl tar:tgz
 GNU_CONFIGURE=	yes

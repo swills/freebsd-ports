@@ -1,9 +1,9 @@
 # Created by: michaelnottebrock@gmx.net
-# $FreeBSD: head/security/dirmngr/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/dirmngr/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	dirmngr
 PORTVERSION=	1.1.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}${EXTRACT_SUFX}.sig

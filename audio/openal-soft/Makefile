@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 479520 2018-09-11 10:35:20Z tobik $
+# $FreeBSD: head/audio/openal-soft/Makefile 484447 2018-11-08 12:17:23Z tobik $
 
 PORTNAME=	openal-soft
-PORTVERSION=	1.19.0
+PORTVERSION=	1.19.1
 CATEGORIES=	audio
-MASTER_SITES=	http://kcat.strangesoft.net/openal-releases/
+MASTER_SITES=	http://openal-soft.org/openal-releases/
 
 MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Software implementation of the OpenAL specification
@@ -53,7 +53,6 @@ SDL_USES=		localbase
 SDL_USE=		SDL=sdl2
 
 SNDIO_CMAKE_BOOL=	ALSOFT_REQUIRE_SNDIO ALSOFT_BACKEND_SNDIO
-SNDIO_IMPLIES=		OSS # provide fallback for missing sndio capture support
 SNDIO_LIB_DEPENDS=	libsndio.so:audio/sndio
 
 post-patch:

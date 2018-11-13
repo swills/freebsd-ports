@@ -1,8 +1,8 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/misc/zoneinfo/Makefile 482998 2018-10-26 02:18:22Z skreuzer $
+# $FreeBSD: head/misc/zoneinfo/Makefile 484495 2018-11-09 02:38:04Z skreuzer $
 
 PORTNAME=	zoneinfo
-DISTVERSION=	2018f
+DISTVERSION=	2018g
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.iana.org/tz/releases/ \
 		ftp://munnari.oz.au/pub/

@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/mail/bogofilter/Makefile 474322 2018-07-10 04:21:17Z linimon $
+# $FreeBSD: head/mail/bogofilter/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	bogofilter
 PORTVERSION=	1.2.4
@@ -11,9 +11,6 @@ MAINTAINER?=	mandree@FreeBSD.org
 COMMENT=	Fast, teachable, learning spam detector
 
 LICENSE=	GPLv2
-
-BROKEN_FreeBSD_10_armv6=	fails to configure: Cannot open a shared environment in Berkeley DB
-BROKEN_FreeBSD_10_armv7=	fails to configure: Cannot open a shared environment in Berkeley DB
 
 .if !defined(MASTERDIR) || ${MASTERDIR} == ${.CURDIR}
 # building master port

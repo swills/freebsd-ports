@@ -1,9 +1,9 @@
 # Created by: allan@saddi.com
-# $FreeBSD: head/security/yafic/Makefile 421665 2016-09-10 05:08:59Z marino $
+# $FreeBSD: head/security/yafic/Makefile 484533 2018-11-09 17:39:20Z swills $
 
 PORTNAME=	yafic
 PORTVERSION=	1.2.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	SF
 

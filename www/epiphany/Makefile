@@ -1,9 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/www/epiphany/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/www/epiphany/Makefile 484768 2018-11-11 20:54:08Z kwm $
 
 PORTNAME=	epiphany
-PORTVERSION=	3.28.3.1
-PORTREVISION=	1
+PORTVERSION=	3.28.5
 CATEGORIES=	www gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -48,6 +47,7 @@ USE_XORG=	x11
 INSTALLS_ICONS=	yes
 USE_LDCONFIG=	yes
 MESON_ARGS=	-Ddistributor_name="GNOME Web by the FreeBSD GNOME Project" \
+		-Db_lundef=false \
 		-Dunit_tests=false
 GLIB_SCHEMAS=	org.gnome.Epiphany.enums.xml \
 		org.gnome.epiphany.gschema.xml

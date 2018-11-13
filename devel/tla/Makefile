@@ -1,5 +1,5 @@
 # Created by: Sean Chittenden <seanc@FreeBSD.org>
-# $FreeBSD: head/devel/tla/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/tla/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	tla
 PORTVERSION=	1.3.5
@@ -11,8 +11,8 @@ MASTER_SITES=	GNU/gnu-arch \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Original arch source control management CLI written in C
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	incomplete definition of type 'struct X509_name_entry_st'
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	incomplete definition of type 'struct X509_name_entry_st'
 
 BUILD_DEPENDS=	gpatch:devel/patch \
 		gdiff:textproc/diffutils \

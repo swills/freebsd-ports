@@ -1,8 +1,9 @@
 # Created by: Dmitri Nikulin <setagllib@optusnet.com.au>
-# $FreeBSD: head/sysutils/stress/Makefile 437657 2017-04-03 13:06:28Z skreuzer $
+# $FreeBSD: head/sysutils/stress/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	stress
 PORTVERSION=	1.0.4
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://people.seas.harvard.edu/~apw/stress/
 

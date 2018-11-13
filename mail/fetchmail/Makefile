@@ -1,9 +1,9 @@
 # Created by: Ville Eerola <ve@sci.fi>
-# $FreeBSD: head/mail/fetchmail/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/mail/fetchmail/Makefile 484295 2018-11-06 14:52:43Z roberto $
 
 PORTNAME=	fetchmail
 PORTVERSION=	6.3.26
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF/${PORTNAME}/branch_6.3/ \
 		http://mandree.home.pages.de/${PORTNAME}/

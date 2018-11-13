@@ -1,8 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/pcsxr/Makefile 481268 2018-10-05 10:10:02Z martymac $
+# $FreeBSD: head/emulators/pcsxr/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	pcsxr
 PORTVERSION=	1.9.95.20180604
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	martymac@FreeBSD.org

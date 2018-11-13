@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/supercollider/Makefile 483476 2018-10-30 11:56:35Z linimon $
+# $FreeBSD: head/audio/supercollider/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	supercollider
 DISTVERSION=	3.9.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/supercollider/supercollider/releases/download/Version-${PORTVERSION}/
 DISTNAME=	SuperCollider-${PORTVERSION}-Source-linux
@@ -22,8 +22,8 @@ LIB_DEPENDS=	libavahi-client.so:net/avahi-app \
 
 USES=		cmake:outsource compiler:c++11-lang iconv localbase pkgconfig \
 		qt:5 readline shared-mime-info tar:bzip2
-USE_QT=		buildtools_build concurrent core gui linguisttools location \
-		network opengl printsupport qmake_build qml quick sensors \
+USE_QT=		buildtools_build concurrent core declarative gui linguisttools location \
+		network opengl printsupport qmake_build sensors \
 		sql webkit widgets
 USE_XORG=	x11
 USE_LDCONFIG=	yes
@@ -40,8 +40,6 @@ DESKTOP_ENTRIES="SuperCollider IDE" "" "${LOCALBASE}/share/pixmaps/sc_ide.svg" \
 
 OPTIONS_DEFINE=		HELP SUPERNOVA
 OPTIONS_DEFAULT=	HELP SUPERNOVA
-# SUPERNOVA option BROKEN_FreeBSD_10: No viable conversion from 'boost::lockfree::detail::tagged_ptr<nova::freelist::freelist_node>'
-OPTIONS_EXCLUDE_FreeBSD_10=	SUPERNOVA
 OPTIONS_SUB=	yes
 
 HELP_DESC=	Install on-line help text

@@ -1,10 +1,10 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/lang/chicken5/Makefile 483398 2018-10-29 18:45:50Z tobik $
+# $FreeBSD: head/lang/chicken5/Makefile 484409 2018-11-07 20:57:51Z tobik $
 
 PORTNAME=	chicken
-DISTVERSION=	5.0.0rc4
+DISTVERSION=	5.0.0
 CATEGORIES=	lang scheme
-MASTER_SITES=	https://code.call-cc.org/dev-snapshots/2018/10/29/
+MASTER_SITES=	https://code.call-cc.org/releases/${DISTVERSION}/
 PKGNAMESUFFIX=	5
 
 MAINTAINER=	tobik@FreeBSD.org

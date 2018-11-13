@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/multimedia/mps-youtube/Makefile 477261 2018-08-15 19:31:06Z nivit $
+# $FreeBSD: head/multimedia/mps-youtube/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	mps-youtube
 PORTVERSION=	0.2.8
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	CHEESESHOP
 

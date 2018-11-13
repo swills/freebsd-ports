@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kitinerary/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/kitinerary/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kitinerary
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,7 +16,7 @@ USES=		cmake:outsource gettext kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	ecm i18n
 # Pim components
 USE_KDE+=	calendarcore contacts kpkpass mime
-USE_QT=		core qml \
+USE_QT=		core declarative \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

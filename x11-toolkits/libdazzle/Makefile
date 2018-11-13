@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/libdazzle/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11-toolkits/libdazzle/Makefile 484776 2018-11-11 21:49:15Z kwm $
 
 PORTNAME=	libdazzle
-PORTVERSION=	3.28.3
+PORTVERSION=	3.28.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome

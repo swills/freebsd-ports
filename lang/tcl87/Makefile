@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/lang/tcl87/Makefile 475997 2018-07-31 12:47:10Z gahr $
+# $FreeBSD: head/lang/tcl87/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	tcl
 DISTVERSION=	8.7a1
@@ -30,8 +30,6 @@ USES=		pathfix
 .if !exists(/usr/sbin/dtrace)
 OPTIONS_EXCLUDE+=	DTRACE
 .endif
-
-OPTIONS_EXCLUDE_FreeBSD_10=	DTRACE
 
 PATCH_WRKSRC=	${WRKDIR}/${PORTNAME}${DISTVERSION}
 WRKSRC=		${PATCH_WRKSRC}/unix

@@ -1,12 +1,12 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/devel/sigar/Makefile 436567 2017-03-21 07:36:38Z glebius $
+# $FreeBSD: head/devel/sigar/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	sigar
 PORTVERSION=	1.7.3
 PORTREVISION=	2
 CATEGORIES=	devel
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sigar system information API
 
 LICENSE=	APACHE20

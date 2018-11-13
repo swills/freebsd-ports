@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/coreutils/Makefile 480746 2018-09-26 16:07:26Z fernape $
+# $FreeBSD: head/sysutils/coreutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	coreutils
 PORTVERSION=	8.30
+PORTREVISION=	1
 CATEGORIES=	sysutils textproc
 MASTER_SITES=	GNU
 

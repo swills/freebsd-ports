@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/lang/gnu-cobol/Makefile 457215 2017-12-25 10:58:40Z johans $
+# $FreeBSD: head/lang/gnu-cobol/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnu-cobol
 PORTVERSION=	2.2
+PORTREVIISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	GNU/gnucobol
 DISTNAME=	gnucobol-${PORTVERSION}

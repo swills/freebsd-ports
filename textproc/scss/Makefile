@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/scss/Makefile 450190 2017-09-20 09:01:56Z amdmi3 $
+# $FreeBSD: head/textproc/scss/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	scss
 PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc scheme
 MASTER_SITES=	SAVANNAH \
 		http://www.c-s.li/ports/
@@ -28,6 +28,6 @@ do-install:
 .for f in ${FILES}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${PREFIX}/share/guile/scss
 .endfor
-	${INSTALL_DATA} ${WRKSRC}/scss.info ${STAGEDIR}${PREFIX}/info
+	${INSTALL_DATA} ${WRKSRC}/scss.info ${STAGEDIR}${PREFIX}/${INFO_PATH}
 
 .include <bsd.port.mk>

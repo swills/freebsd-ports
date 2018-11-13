@@ -1,10 +1,10 @@
 # Created by: Bert Burgemeister <trebbu@googlemail.com>
-# $FreeBSD: head/games/goldencheetah/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/games/goldencheetah/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	GoldenCheetah
 PORTVERSION=	3.2
 DISTVERSIONPREFIX=	V
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 
 MAINTAINER=	trebbu@googlemail.com
@@ -12,6 +12,8 @@ COMMENT=	Training software for cyclists
 
 LICENSE=	BSD3CLAUSE GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libical.so:devel/libical \
 		libqwtplot3d-qt4.so:math/qwtplot3d-qt4 \

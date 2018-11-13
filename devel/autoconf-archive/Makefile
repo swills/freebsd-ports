@@ -1,8 +1,9 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/devel/autoconf-archive/Makefile 452547 2017-10-20 18:13:57Z kwm $
+# $FreeBSD: head/devel/autoconf-archive/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	autoconf-archive
 PORTVERSION=	0.${DISTDATE:C/-/./g}
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 DISTNAME=	${PORTNAME}-${DISTDATE}

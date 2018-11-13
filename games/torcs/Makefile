@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/games/torcs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/torcs/Makefile 484220 2018-11-05 20:31:46Z linimon $
 
 PORTNAME=	torcs
 DISTVERSION=	1.3.7
@@ -19,7 +19,8 @@ RUN_DEPENDS=	bash:shells/bash
 
 MAKE_JOBS_UNSAFE=	yes
 
-USES=		compiler:c++11-lang cpe gmake openal:al,alut shebangfix tar:bzip2
+USES=		compiler:c++11-lang cpe gl gmake openal:al,alut shebangfix \
+		tar:bzip2
 CPE_VENDOR=	bernhard_wymann
 SHEBANG_FILES=	src/tools/accc/accc.in src/tools/nfsperf/nfsperf.in \
 		src/tools/texmapper/texmapper.in src/tools/nfs2ac/nfs2ac.in \

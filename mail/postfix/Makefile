@@ -1,5 +1,5 @@
 # Created by: Torsten Blum <torstenb@FreeBSD.org>
-# $FreeBSD: head/mail/postfix/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/mail/postfix/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	postfix
 DISTVERSION=	3.3.1
@@ -198,7 +198,7 @@ POSTFIX_AUXLIBS+=	-L${BDB_LIB_DIR} -l${BDB_LIB_NAME}
 .endif
 
 .if ${PORT_OPTIONS:MBLACKLISTD}
-. if ${OPSYS} == FreeBSD && (${OSVERSION} >= 1100122)
+. if ${OPSYS} == FreeBSD
 POSTFIX_AUXLIBS+=	-lblacklist
 . else
 IGNORE=	blacklistd is only supported on FreeBSD >= 11.0

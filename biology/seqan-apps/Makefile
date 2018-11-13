@@ -1,5 +1,5 @@
 # Created by: Hannes Hauswedell <h2+fbsdports@fsfe.org>
-# $FreeBSD: head/biology/seqan-apps/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/biology/seqan-apps/Makefile 484547 2018-11-09 21:37:01Z swills $
 
 PORTNAME=	seqan-apps
 DISTVERSIONPREFIX=	seqan-v
@@ -12,8 +12,6 @@ COMMENT=	Official bioinformatic applications based on the SeqAn library
 
 LICENSE=	BSD3CLAUSE LGPL3 GPLv3
 LICENSE_COMB=	multi
-
-BROKEN_powerpc64=	fails to build: requires 'c++14-lang' in USES (cf.)
 
 BUILD_DEPENDS=	boost-libs>0:devel/boost-libs
 
@@ -38,6 +36,10 @@ NATIVE_CMAKE_ON=	-DSEQAN_ARCH_NATIVE:BOOL=TRUE
 PLIST_SUB+=	RM_I386="@comment "
 .else
 PLIST_SUB+=	RM_I386=""
+.endif
+
+.if ${ARCH:Mmips*} || ${ARCH:Mpowerpc*} || ${ARCH} == sparc64
+USE_GCC=	yes
 .endif
 
 .include <bsd.port.post.mk>

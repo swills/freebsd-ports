@@ -1,10 +1,10 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/multimedia/nordlicht/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/multimedia/nordlicht/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	nordlicht
 PORTVERSION=	0.4.5
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 
 MAINTAINER=	tobik@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/accessibility/speech-dispatcher/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/accessibility/speech-dispatcher/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	speech-dispatcher
 PORTVERSION=	0.8.6
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	accessibility audio
 MASTER_SITES=	http://devel.freebsoft.org/pub/projects/speechd/
 

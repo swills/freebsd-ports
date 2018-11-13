@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat-native/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/www/tomcat-native/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	tomcat-native
 PORTVERSION=	1.2.16
@@ -34,10 +34,4 @@ PLIST_FILES=	lib/libtcnative-1.a \
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libtcnative-1.so.0.2.16
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT} == base
-IGNORE_FreeBSD_10=	Requires OpenSSL 1.0.2 (set DEFAULT_VERSIONS+=ssl=openssl)
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

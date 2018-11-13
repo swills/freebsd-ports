@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/asymptote/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/math/asymptote/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	asymptote
 PORTVERSION=	2.44
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
@@ -17,7 +17,7 @@ LICENSE_COMB=	dual
 ONLY_FOR_ARCHS=	amd64 i386
 
 LIB_DEPENDS=	libsigsegv.so:devel/libsigsegv
-RUN_DEPENDS=	animate:graphics/ImageMagick \
+RUN_DEPENDS=	animate:graphics/ImageMagick6 \
 		gv:print/gv \
 		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/husky-htick/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/news/husky-htick/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	husky-htick
 
@@ -22,6 +22,7 @@ INSTALL_TARGET+=	install-doc
 PORTDOCS=		htick.html
 DOCSDIR=		${PREFIX}/share/doc/husky
 INFO=			htick
+MAKE_ARGS=		INFODIR=${PREFIX}/${INFO_PATH}
 
 OPTIONS_DEFINE=	DOCS
 

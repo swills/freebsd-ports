@@ -1,5 +1,5 @@
 # Created by: Daniel O'Connor <darius@dons.net.au>
-# $FreeBSD: head/graphics/pfstools/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/pfstools/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	pfstools
 DISTVERSION=	2.1.0
@@ -56,7 +56,7 @@ OPENEXR_LIB_DEPENDS=	libIlmImf.so:graphics/openexr \
 			libIex.so:graphics/ilmbase
 
 IMAGEMAGICK_CMAKE_BOOL=	WITH_ImageMagick
-IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick6
 
 NETPBM_CMAKE_BOOL=	WITH_NetPBM
 NETPBM_LIB_DEPENDS=	libnetpbm.so:graphics/netpbm

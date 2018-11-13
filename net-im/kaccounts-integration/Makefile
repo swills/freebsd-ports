@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/kaccounts-integration/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/kaccounts-integration/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	kaccounts-integration
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -14,11 +14,12 @@ LIB_DEPENDS=	libaccounts-glib.so:net-im/libaccounts-glib \
 		libkeyring-kwallet.so:sysutils/signon-kwallet-extension
 RUN_DEPENDS=	signon-ui:sysutils/signon-ui
 
-USES=		cmake:outsource gettext pkgconfig kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext pkgconfig kde:5 \
+		qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons ecm \
 		i18n iconthemes kcmutils kio service wallet widgetsaddons \
 		akonadi
-USE_QT=		dbus core gui network qml widgets xml \
+USE_QT=		dbus core declarative gui network widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	DOCS

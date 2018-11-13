@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-3d/Makefile 482590 2018-10-20 16:20:27Z tcberner $
+# $FreeBSD: head/graphics/qt5-3d/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	3d
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 
@@ -11,7 +12,7 @@ COMMENT=	Qt3D module
 LIB_DEPENDS=	libassimp.so:multimedia/assimp
 
 USES=		compiler:c++11-lang pkgconfig qmake:norecursive qt-dist:5,3d
-USE_QT=		concurrent core gui network qml quick buildtools_build
+USE_QT=		concurrent core declarative gui network buildtools_build
 
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 

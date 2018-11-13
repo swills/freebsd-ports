@@ -1,9 +1,9 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/textproc/docbook2X/Makefile 441863 2017-05-27 19:30:24Z sunpoet $
+# $FreeBSD: head/textproc/docbook2X/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	docbook2X
 PORTVERSION=	0.8.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	SF
 

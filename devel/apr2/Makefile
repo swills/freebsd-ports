@@ -1,9 +1,9 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/devel/apr2/Makefile 465951 2018-03-30 08:33:25Z amdmi3 $
+# $FreeBSD: head/devel/apr2/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	apr
 PORTVERSION=	2.0.${SNAPDATE}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/ohauer
 PKGNAMESUFFIX=	2

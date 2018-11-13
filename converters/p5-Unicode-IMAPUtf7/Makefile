@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/converters/p5-Unicode-IMAPUtf7/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-Unicode-IMAPUtf7/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	Unicode-IMAPUtf7
 PORTVERSION=	2.01
@@ -22,14 +22,4 @@ USES=		perl5
 USE_PERL5=	configure
 NO_ARCH=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug
-post-extract:
-.for d in / /lib /lib/Unicode /t
-	@${CHMOD} 755 ${WRKSRC}${d}
-.endfor
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

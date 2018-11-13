@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/pyobd/Makefile 480535 2018-09-23 21:43:25Z yuri $
+# $FreeBSD: head/misc/pyobd/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	pyobd
 DISTVERSION=	0.9.3
@@ -12,7 +12,7 @@ COMMENT=	OBD-II compliant car diagnostic tool
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	convert:graphics/ImageMagick
+BUILD_DEPENDS=	convert:graphics/ImageMagick6
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}serial>0:comms/py-serial@${PY_FLAVOR}
 
 USES=		dos2unix gnome python:2.7 shebangfix

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/lua-sysctl/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/lua-sysctl/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	sysctl
 PORTVERSION=	2.0
@@ -10,8 +10,6 @@ MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Small sysctl(3) interface for lua
 
 LICENSE=	BSD2CLAUSE
-
-BROKEN_FreeBSD_10=	does not build (error: use of undeclared identifier 'CTLTYPE_S8')
 
 USES=		pkgconfig lua
 

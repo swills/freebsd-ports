@@ -1,8 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-linecache2/Makefile 481177 2018-10-03 18:17:29Z sunpoet $
+# $FreeBSD: head/devel/py-linecache2/Makefile 484717 2018-11-11 18:19:25Z sunpoet $
 
 PORTNAME=	linecache2
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,9 +14,10 @@ COMMENT=	New features in linecache backported to Python 2
 LICENSE=	PSFL
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

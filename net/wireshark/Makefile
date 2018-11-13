@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/wireshark/Makefile 481976 2018-10-13 11:01:33Z marcus $
+# $FreeBSD: head/net/wireshark/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME?=	wireshark
 PORTVERSION=	2.6.4
@@ -27,7 +27,8 @@ DATADIR_NAME=	wireshark
 DATADIR=	${PREFIX}/share/${DATADIR_NAME}
 
 GNU_CONFIGURE=	yes
-USES=		alias cpe gettext-runtime gmake libtool localbase pathfix \
+USES=		alias cpe compiler:c++11-lang gettext-runtime gmake \
+		libtool localbase pathfix \
 		perl5 pkgconfig python:build ssl tar:xz
 USE_PERL5=	build
 USE_GNOME=	glib20 libxml2

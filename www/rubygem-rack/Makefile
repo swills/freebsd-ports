@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-rack/Makefile 468377 2018-04-26 18:52:20Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack/Makefile 484752 2018-11-11 18:24:20Z sunpoet $
 
 PORTNAME=	rack
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.6
 PORTEPOCH=	3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
@@ -12,9 +12,10 @@ COMMENT=	Rack, a Ruby Webserver Interface
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/rackup
 

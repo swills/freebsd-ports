@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/john/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/john/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	john
 DISTVERSION=	1.8.0-jumbo-1
@@ -15,7 +15,7 @@ COMMENT=	Featureful Unix password cracker
 
 LICENSE=	GPLv2
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 

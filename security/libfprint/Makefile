@@ -1,8 +1,9 @@
 # Created by: barner
-# $FreeBSD: head/security/libfprint/Makefile 475404 2018-07-26 22:56:30Z garga $
+# $FreeBSD: head/security/libfprint/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	libfprint
 PORTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://people.freedesktop.org/~anarsoul/
 
@@ -12,7 +13,7 @@ COMMENT=	Library for fingerprint reader devices
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libMagickCore-6.so:graphics/ImageMagick \
+LIB_DEPENDS=	libMagickCore-6.so:graphics/ImageMagick6 \
 		libnss3.so:security/nss \
 		libnspr4.so:devel/nspr
 

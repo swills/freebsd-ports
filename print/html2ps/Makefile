@@ -1,9 +1,9 @@
 # Created by: Andreas Klemm <andreas@FreeBSD.org>
-# $FreeBSD: head/print/html2ps/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/html2ps/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	html2ps
 DISTVERSION=	1.0b7
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	print www perl5
 MASTER_SITES=	http://user.it.uu.se/~jan/ \
@@ -15,7 +15,7 @@ COMMENT=	HTML to PostScript converter
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	mogrify:graphics/ImageMagick \
+RUN_DEPENDS=	mogrify:graphics/ImageMagick6 \
 		p5-libwww>=0:www/p5-libwww \
 		weblint++:www/weblint++ \
 		paperconf:print/libpaper

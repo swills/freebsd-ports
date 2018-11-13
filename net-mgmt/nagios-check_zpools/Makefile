@@ -1,12 +1,12 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios-check_zpools/Makefile 416242 2016-06-01 13:15:36Z mat $
+# $FreeBSD: head/net-mgmt/nagios-check_zpools/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	check_zpools
 PORTVERSION=	1.0
 CATEGORIES=	net-mgmt
 PKGNAMEPREFIX=	nagios-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nagios plugin that checks zpool state
 
 RUN_DEPENDS=	bash:shells/bash

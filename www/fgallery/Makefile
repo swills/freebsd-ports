@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/fgallery/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/www/fgallery/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	fgallery
 PORTVERSION=	1.8.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www graphics
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 RUN_DEPENDS=	exiftool:graphics/p5-Image-ExifTool \
 		exiftran:graphics/exiftran \
 		p5-Cpanel-JSON-XS>=0:converters/p5-Cpanel-JSON-XS \
-		convert:graphics/ImageMagick
+		convert:graphics/ImageMagick6
 LIB_DEPENDS=	liblcms2.so:graphics/lcms2
 
 USE_GITHUB=	yes

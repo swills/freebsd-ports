@@ -1,9 +1,9 @@
 # Created by: jmacd@FreeBSD.org
-# $FreeBSD: head/lang/mit-scheme/Makefile 449180 2017-09-03 08:48:24Z olgeni $
+# $FreeBSD: head/lang/mit-scheme/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	mit-scheme
 PORTVERSION=	9.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang scheme
 MASTER_SITES=	GNU/mit-scheme/stable.pkg/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-${MIT_SCHEME_ARCH}

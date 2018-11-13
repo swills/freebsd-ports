@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/graphics/grx/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/grx/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	grx
 PORTVERSION=	2.4.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://grx.gnu.de/download/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
@@ -27,6 +27,7 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 PLIST_SUB=	VERSION="${PORTVERSION}"
+MAKE_ARGS=	infodir=${PREFIX}/${INFO_PATH}
 
 INFO=		grx
 

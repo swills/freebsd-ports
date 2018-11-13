@@ -1,9 +1,8 @@
 # Created by: torstenb
-# $FreeBSD: head/irc/ircII/Makefile 437479 2017-04-01 20:56:55Z adamw $
+# $FreeBSD: head/irc/ircII/Makefile 484635 2018-11-10 19:45:34Z joneum $
 
 PORTNAME=	ircii
-PORTVERSION=	20151120
-PORTREVISION=	3
+PORTVERSION=	20170704
 CATEGORIES=	irc ipv6
 MASTER_SITES=	http://ircii.warped.com/
 

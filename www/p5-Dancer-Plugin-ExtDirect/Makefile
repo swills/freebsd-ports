@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-Dancer-Plugin-ExtDirect/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Dancer-Plugin-ExtDirect/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Dancer-Plugin-ExtDirect
 PORTVERSION=	1.03
@@ -8,7 +8,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dancer plugin for implementing ExtDirect APIs
 
 LICENSE=	ART10 GPLv1+

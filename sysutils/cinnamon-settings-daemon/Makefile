@@ -1,9 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/sysutils/cinnamon-settings-daemon/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/sysutils/cinnamon-settings-daemon/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	cinnamon-settings-daemon
 PORTVERSION=	2.4.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils gnome
 DIST_SUBDIR=	gnome3
 

@@ -1,9 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/libadplug/Makefile 468095 2018-04-23 15:27:56Z ehaupt $
+# $FreeBSD: head/audio/libadplug/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	adplug
 PORTVERSION=	2.3.1
 DISTVERSIONPREFIX=	${PORTNAME}-
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMEPREFIX=	lib
 

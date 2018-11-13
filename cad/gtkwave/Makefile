@@ -1,8 +1,8 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/cad/gtkwave/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/cad/gtkwave/Makefile 483906 2018-11-03 17:56:58Z zeising $
 
 PORTNAME=	gtkwave
-PORTVERSION=	3.3.93
+PORTVERSION=	3.3.95
 CATEGORIES=	cad
 MASTER_SITES=	http://gtkwave.sourceforge.net/
 
@@ -15,7 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig
 
-USES=		desktop-file-utils gettext gmake gperf pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext gmake gnome gperf pkgconfig \
+		shared-mime-info
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-mime-update
 USE_GNOME=	cairo gtk20

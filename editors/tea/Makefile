@@ -1,8 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/editors/tea/Makefile 481055 2018-10-01 19:22:53Z danilo $
+# $FreeBSD: head/editors/tea/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	tea
 PORTVERSION=	46.3.0
+PORTREVISION=	1
 CATEGORIES=	editors
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -31,7 +32,7 @@ GH_PROJECT=	${PORTNAME}-qt
 QT4_USES=	qt:4
 QT4_USE=	qt=corelib,gui,moc_build,network,rcc_build
 QT5_USES=	qt:5
-QT5_USE=	qt=buildtools_build,core,gui,network,widgets,printsupport,qml,quick
+QT5_USE=	qt=buildtools_build,core,declarative,gui,network,widgets,printsupport
 
 LDFLAGS+=	-lz
 PLIST_FILES=	bin/tea share/pixmaps/tea_icon_v2.png

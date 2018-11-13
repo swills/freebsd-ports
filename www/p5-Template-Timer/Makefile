@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Template-Timer/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Template-Timer/Makefile 483967 2018-11-04 09:00:18Z amdmi3 $
 
 PORTNAME=	Template-Timer
 PORTVERSION=	1.00
@@ -11,10 +11,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Rudimentary profiling for Template Toolkit
 
+LICENSE=	ART20 GPLv3
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

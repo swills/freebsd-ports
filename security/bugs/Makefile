@@ -1,5 +1,5 @@
 # Created by: Stephane Legrand <stephane@lituus.fr>
-# $FreeBSD: head/security/bugs/Makefile 437932 2017-04-07 16:00:06Z amdmi3 $
+# $FreeBSD: head/security/bugs/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	bugs
 PORTVERSION=	4.1.1
@@ -53,12 +53,4 @@ post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	@(cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR})
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug
-post-extract:
-	${CHMOD} +x ${WRKSRC}/lib/unix ${WRKSRC}/lib/windows
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

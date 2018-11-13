@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/x11/simdock/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/x11/simdock/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME=	simdock
 PORTVERSION=	1.2
@@ -15,7 +15,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
-USES=		desktop-file-utils pathfix pkgconfig
+USES=		compiler:c++11-lang desktop-file-utils pathfix pkgconfig
 USE_GNOME=	gnomeprefix gconf2 libwnck
 USE_WX=		2.8
 USE_XORG=	x11

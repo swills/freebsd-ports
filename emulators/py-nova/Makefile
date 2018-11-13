@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/emulators/py-nova/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/emulators/py-nova/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	nova
 PORTVERSION=	14.0.3
@@ -112,10 +112,6 @@ GROUPS=		nova
 
 .if ${OPSYS} != FreeBSD
 IGNORE=		only supported on FreeBSD
-.endif
-
-.if ${OSVERSION} < 1100055
-IGNORE=		only supported on recent FreeBSD 11
 .endif
 
 post-extract:

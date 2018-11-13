@@ -1,9 +1,9 @@
 # Created by: mikael.urankar@gmail.com
-# $FreeBSD: head/multimedia/omxplayer/Makefile 483209 2018-10-28 00:52:30Z jbeich $
+# $FreeBSD: head/multimedia/omxplayer/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	omxplayer
 PORTVERSION=	20161004
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	multimedia
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

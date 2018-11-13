@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/gnubik/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/gnubik/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnubik
 PORTVERSION=	2.4.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	GNU
 

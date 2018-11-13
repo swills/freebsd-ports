@@ -1,8 +1,9 @@
 # Created by: Jeremy Shaffner <jeremy@external.org>
-# $FreeBSD: head/misc/gwhich/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/misc/gwhich/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gwhich
 PORTVERSION=	2.21
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	GNU/which
 DISTNAME=	which-${PORTVERSION}

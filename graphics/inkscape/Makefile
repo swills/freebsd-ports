@@ -1,9 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/graphics/inkscape/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/graphics/inkscape/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	inkscape
 PORTVERSION=	0.92.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics gnome
 MASTER_SITES=	https://inkscape.org/en/gallery/item/12187/
 
@@ -28,7 +28,7 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 		libfreetype.so:print/freetype2 \
 		libpotrace.so:graphics/libpotrace \
 		libpng.so:graphics/png \
-		libMagick++-6.so:graphics/ImageMagick
+		libMagick++-6.so:graphics/ImageMagick6
 
 USES=		compiler:c++11-lib cmake cpe desktop-file-utils gnome \
 		iconv:wchar_t jpeg pathfix pkgconfig python:2.7,build \

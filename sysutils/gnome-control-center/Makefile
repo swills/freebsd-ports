@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-control-center/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/sysutils/gnome-control-center/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 
 PORTNAME=	gnome-control-center
 PORTVERSION=	3.28.2
+PORTREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -54,6 +55,7 @@ GLIB_SCHEMAS=	org.gnome.ControlCenter.gschema.xml
 OPTIONS_SUB=	yes
 
 OPTIONS_DEFINE=	WAYLAND
+OPTIONS_DEFAULT=WAYLAND
 
 OPTIONS_DEFINE_i386=	CHEESE
 OPTIONS_DEFAULT_i386=	CHEESE

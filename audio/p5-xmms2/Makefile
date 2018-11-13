@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/audio/p5-xmms2/Makefile 470573 2018-05-21 20:00:48Z madpilot $
+# $FreeBSD: head/audio/p5-xmms2/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTREVISION=	3
 CATEGORIES=	audio perl5
@@ -14,7 +14,7 @@ MASTERDIR=	${.CURDIR}/../xmms2
 
 USES=		perl5 ssl
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 PLIST=		${.CURDIR}/pkg-plist
 

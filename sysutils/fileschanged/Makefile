@@ -1,9 +1,9 @@
 # Created by: Konstantin Reznichenko <kot@premierbank.dp.ua>
-# $FreeBSD: head/sysutils/fileschanged/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/fileschanged/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	fileschanged
 PORTVERSION=	0.6.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 

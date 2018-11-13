@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/ccextractor/Makefile 476802 2018-08-10 00:55:12Z jbeich $
+# $FreeBSD: head/multimedia/ccextractor/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	ccextractor
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.85
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia
 
 MAINTAINER=	oz@nixil.net

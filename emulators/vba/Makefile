@@ -1,5 +1,5 @@
 # Created by: Alexander Best <arundel@gmx.net>
-# $FreeBSD: head/emulators/vba/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/emulators/vba/Makefile 484096 2018-11-04 14:48:33Z antoine $
 
 PORTNAME=	vba
 PORTVERSION=	1.7.2
@@ -12,6 +12,8 @@ MAINTAINER=	arundel@h3c.de
 COMMENT=	Open source Gameboy Advance emulator
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	nasm:devel/nasm
 LIB_DEPENDS=	libpng.so:graphics/png

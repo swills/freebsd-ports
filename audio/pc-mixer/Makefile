@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/pc-mixer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/pc-mixer/Makefile 484205 2018-11-05 17:25:00Z linimon $
 
 PORTNAME=	pc-mixer
 PORTVERSION=	20171212
@@ -13,7 +13,7 @@ WRKSRC_SUBDIR=	src-qt5
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 MAKE_JOBS_UNSAFE=yes
-USES=		qmake qt:5 shebangfix tar:xz
+USES=		compiler:c++11-lang gl qmake qt:5 shebangfix tar:xz
 USE_LDCONFIG=	yes
 USE_QT=		core gui network svg linguist \
 		buildtools x11extras widgets multimedia

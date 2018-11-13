@@ -1,8 +1,8 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql10-server/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/databases/postgresql10-server/Makefile 484807 2018-11-12 15:54:19Z girgen $
 
 PORTNAME?=	postgresql
-DISTVERSION?=	10.5
+DISTVERSION?=	10.6
 PORTREVISION=	1
 CATEGORIES?=	databases
 MASTER_SITES=	PGSQL/source/v${DISTVERSION}
@@ -160,6 +160,10 @@ SUB_LIST+=	PG_GROUP=${PG_GROUP} \
 		PG_UID=${PG_UID}
 
 .include <bsd.port.options.mk>
+
+.if ${ARCH} == "i386"
+USES+=		compiler:gcc-c++11-lib
+.endif
 
 .if !defined(SLAVE_ONLY)
 .if ${DISTVERSION:C/([0-9]*).*/\1/} != 10

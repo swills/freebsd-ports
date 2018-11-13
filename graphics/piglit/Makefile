@@ -1,8 +1,9 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/piglit/Makefile 479512 2018-09-11 09:05:07Z dumbbell $
+# $FreeBSD: head/graphics/piglit/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 
 PORTNAME=	piglit
 PORTVERSION=	20180910
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	x11@FreeBSD.org
@@ -44,6 +45,14 @@ SUB_FILES=	pkg-message
 DATADIR=	${PREFIX}/lib/piglit
 PORTDATA=	*
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS WAYLAND
+OPTIONS_DEFAULT=WAYLAND
+
+WAYLAND_LIB_DEPENDS=	libwayland-egl.so:graphics/wayland \
+			libxkbcommon.so:x11/libxkbcommon
+
+post-patch-WAYLAND-off:
+	@${REINPLACE_CMD} -e '/pkg_check_modules.*wayland/d' \
+		${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

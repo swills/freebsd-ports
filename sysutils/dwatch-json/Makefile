@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/dwatch-json/Makefile 481138 2018-10-02 22:12:18Z dteske $
+# $FreeBSD: head/sysutils/dwatch-json/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	dwatch-json
 DISTVERSION=	0.4.1
@@ -22,7 +22,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 
-.if ${OSVERSION} < 1101516 || (${OSVERSION} >= 1200000 && ${OSVERSION} < 1200065)
+.if ${OSVERSION} >= 1200000 && ${OSVERSION} < 1200065
 IGNORE=		requires dwatch available in recent FreeBSD 11 or 12
 .endif
 

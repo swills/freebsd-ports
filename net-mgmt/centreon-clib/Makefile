@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net-mgmt/centreon-clib/Makefile 412342 2016-04-01 13:18:17Z mat $
+# $FreeBSD: head/net-mgmt/centreon-clib/Makefile 484027 2018-11-04 13:24:13Z antoine $
 
 PORTNAME=	centreon-clib
 PORTVERSION=	1.4.2
@@ -10,6 +10,8 @@ MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Common library of all Centreon projects written in C or C++
 
 LICENSE=	AGPLv3
+
+BROKEN=		fails to build
 
 USES=		cmake
 CMAKE_SOURCE_PATH=	${WRKSRC}/build

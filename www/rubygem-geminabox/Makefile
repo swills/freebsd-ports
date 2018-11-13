@@ -1,8 +1,8 @@
 # Created by: Philip M. Gollucci <pgollucci@p6m7g8.com>
-# $FreeBSD: head/www/rubygem-geminabox/Makefile 466753 2018-04-07 16:35:08Z sunpoet $
+# $FreeBSD: head/www/rubygem-geminabox/Makefile 484750 2018-11-11 18:24:03Z sunpoet $
 
 PORTNAME=	geminabox
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -19,8 +19,9 @@ RUN_DEPENDS=	rubygem-builder>=0:devel/rubygem-builder \
 		rubygem-reentrant_flock>=0:devel/rubygem-reentrant_flock \
 		rubygem-sinatra>=1.2.7:www/rubygem-sinatra
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

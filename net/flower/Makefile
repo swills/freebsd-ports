@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/net/flower/Makefile 483311 2018-10-28 16:08:49Z linimon $
+# $FreeBSD: head/net/flower/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	flower
 DISTVERSIONPREFIX=	v
@@ -21,14 +21,8 @@ GH_ACCOUNT=	NuxiNL
 
 CFLAGS+=	-I${LOCALBASE}/include/jsoncpp
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100511
-IGNORE=		requires various C++17 features
-.endif
-
 # Require the unit tests to pass prior to installing.
 post-build:
 	@trap '' PIPE && ${WRKSRC}/flower_unittests
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

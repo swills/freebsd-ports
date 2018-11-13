@@ -1,7 +1,8 @@
-# $FreeBSD: head/archivers/gcpio/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/archivers/gcpio/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cpio
 PORTVERSION=	2.12
+PORTREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	g

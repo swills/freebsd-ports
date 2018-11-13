@@ -1,9 +1,9 @@
 # Created by: kline
-# $FreeBSD: head/print/enscript-letter/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/print/enscript-letter/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	enscript
 PORTVERSION=	1.6.6
-PORTREVISION?=	2	# ?= for chinese/enscript
+PORTREVISION?=	3	# ?= for chinese/enscript
 CATEGORIES+=	print
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	-${PAPERSIZE}

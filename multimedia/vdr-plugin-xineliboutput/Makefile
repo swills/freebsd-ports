@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 478960 2018-09-04 13:42:13Z tobik $
+# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	vdr-plugin-xineliboutput
 PORTVERSION=	1.0.90s20120511
-PORTREVISION=	23
+PORTREVISION=	24
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/xineliboutput/files/xineliboutput/vdr-xineliboutput-${PORTVERSION}/:release \
 		LOCAL/nox:snapshot

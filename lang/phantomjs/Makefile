@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/phantomjs/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/lang/phantomjs/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	phantomjs
 PORTVERSION=	2.1.1
@@ -12,8 +12,8 @@ LICENSE=	BSD3CLAUSE
 
 BROKEN_powerpc64=	fails to build: g++48: not found
 BROKEN_sparc64=		does not link on sparc64
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'X509' (aka 'x509_st')
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	error: member access into incomplete type 'X509' (aka 'x509_st')
 
 BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \

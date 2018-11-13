@@ -1,9 +1,9 @@
 # Created by: Andrey Zakhvatov <andy@FreeBSD.org>
-# $FreeBSD: head/textproc/chpp/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/textproc/chpp/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	chpp
 PORTVERSION=	0.3.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.complang.tuwien.ac.at/schani/chpp/files/ \
 		http://freebsd.nsu.ru/distfiles/

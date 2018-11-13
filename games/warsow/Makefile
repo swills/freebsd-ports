@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/warsow/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/warsow/Makefile 483980 2018-11-04 09:46:05Z antoine $
 
 PORTNAME=	warsow
 PORTVERSION=	1.51
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Futuristic, fast-paced first person shooter
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 RUN_DEPENDS=	${LOCALBASE}/${DATADIR_REL}/basewsw/data1_15.pk3:games/warsow-data

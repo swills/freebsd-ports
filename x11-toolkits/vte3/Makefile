@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/vte3/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11-toolkits/vte3/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	vte
 PORTVERSION=	0.52.2
@@ -33,11 +33,5 @@ CONFIGURE_ARGS=	--enable-introspection \
 INSTALL_TARGET=	install-strip
 
 PLIST_SUB=	VERSION=2.91
-
-.include <bsd.port.options.mk>
-
-.if ${OSVERSION} <= 1100000
-EXTRA_PATCHES=	${FILESDIR}/extra-src_app_app.cc
-.endif
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Yukihiro Nakai <Nakai@technologist.com>
-# $FreeBSD: head/lang/slib/Makefile 482394 2018-10-19 00:07:01Z swills $
+# $FreeBSD: head/lang/slib/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	slib
 PORTVERSION=	3b5
+PORTREVISION=	1
 CATEGORIES=	lang scheme
 MASTER_SITES=	http://groups.csail.mit.edu/mac/ftpdir/scm/ \
 		http://groups.csail.mit.edu/mac/ftpdir/scm/OLD/
@@ -30,7 +31,7 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	(cd ${WRKSRC} ; ${INSTALL_DATA} *.scm *.init *.txt \
 		*.xyz *.ps ${STAGEDIR}${DATADIR})
-	${INSTALL_DATA} ${WRKSRC}/slib.info ${STAGEDIR}${PREFIX}/info
+	${INSTALL_DATA} ${WRKSRC}/slib.info ${STAGEDIR}${PREFIX}/${INFO_PATH}
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

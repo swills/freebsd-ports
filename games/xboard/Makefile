@@ -1,9 +1,9 @@
 # Created by: xaa@stack.nl
-# $FreeBSD: head/games/xboard/Makefile 459434 2018-01-19 16:10:20Z danfe $
+# $FreeBSD: head/games/xboard/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME?=	xboard
 PORTVERSION?=	4.9.1
-PORTREVISION?=	0
+PORTREVISION?=	1
 PORTEPOCH?=
 CATEGORIES?=	games
 MASTER_SITES?=	GNU

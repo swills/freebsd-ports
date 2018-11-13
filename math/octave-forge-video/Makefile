@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-video/Makefile 476952 2018-08-12 02:57:03Z stephen $
+# $FreeBSD: head/math/octave-forge-video/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	octave-forge-video
 PORTVERSION=	1.2.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

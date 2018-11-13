@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-rack16/Makefile 468378 2018-04-26 18:52:25Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack16/Makefile 484753 2018-11-11 18:24:28Z sunpoet $
 
 # XXX: If updating this port, please check compatibality with at least the following ports,
 # XXX: preferably, the full rubygem-* tree.  rack version requirements are specified with ~>
@@ -7,7 +7,7 @@
 # 	www/rubygem-actionpack4
 
 PORTNAME=	rack
-PORTVERSION=	1.6.10
+PORTVERSION=	1.6.11
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	16
@@ -18,9 +18,10 @@ COMMENT=	Rack, a Ruby Webserver Interface
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 SHEBANG_FILES=	test/cgi/test.ru
 SHEBANG_LANG=	rackup

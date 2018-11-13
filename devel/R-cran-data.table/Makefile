@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-data.table/Makefile 482816 2018-10-23 08:58:10Z tota $
+# $FreeBSD: head/devel/R-cran-data.table/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	data.table
 DISTVERSION=	1.11.8
@@ -12,9 +12,7 @@ COMMENT=	Extension of Data.frame
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_FreeBSD_11_i386=	unable to load datatable.so
-BROKEN_FreeBSD_12_i386=	unable to load datatable.so
-BROKEN_FreeBSD_13_i386=	unable to load datatable.so
+BROKEN_i386=	unable to load datatable.so
 
 USES=		cran:auto-plist,compiles
 

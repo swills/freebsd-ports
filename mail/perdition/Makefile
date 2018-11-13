@@ -1,8 +1,9 @@
 # Created by: Konstantinos Konstantinidis <kkonstan@daemon.gr>
-# $FreeBSD: head/mail/perdition/Makefile 443071 2017-06-10 07:20:42Z wen $
+# $FreeBSD: head/mail/perdition/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	perdition
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	mail net security
 MASTER_SITES=	http://horms.net/projects/perdition/download/${PORTVERSION}/
 

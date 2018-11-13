@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/kontact/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/kontact/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kontact
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,7 +16,7 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons crash \
 		service sonnet textwidgets widgetsaddons windowsystem xmlgui
 # pim components
 USE_KDE+=	akonadi grantleetheme kdepim-apps-libs kontactinterface libkdepim
-USE_QT=		core dbus gui location network qml quick webchannel webengine \
+USE_QT=		core dbus declarative gui location network webchannel webengine \
 		widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

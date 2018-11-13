@@ -1,8 +1,8 @@
 # Created by: Adrian Chadd
-# $FreeBSD: head/sysutils/intel-pcm-devel/Makefile 478815 2018-09-02 19:53:30Z swills $
+# $FreeBSD: head/sysutils/intel-pcm-devel/Makefile 484436 2018-11-08 07:46:29Z egypcio $
 
 PORTNAME=	intel-pcm
-DISTVERSION=	g20180717
+DISTVERSION=	g20181106
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-devel
@@ -15,14 +15,14 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	amd64 i386
 
-PORTSCOUT=	ignore
-
 USES=		gmake
-
 USE_GITHUB=	yes
+
 GH_ACCOUNT=	opcm
 GH_PROJECT=	pcm
-GH_TAGNAME=	e9b093b
+GH_TAGNAME=	11eacbf
+
+PORTSCOUT=	limit:^201812*
 
 CONFLICTS_INSTALL=	intel-pcm
 

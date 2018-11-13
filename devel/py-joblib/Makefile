@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-joblib/Makefile 482331 2018-10-18 07:44:36Z yuri $
+# $FreeBSD: head/devel/py-joblib/Makefile 484496 2018-11-09 02:47:40Z skreuzer $
 
 PORTNAME=	joblib
-PORTVERSION=	0.12.5
+PORTVERSION=	0.13.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

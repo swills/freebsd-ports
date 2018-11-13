@@ -1,9 +1,9 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/math/unuran/Makefile 472235 2018-06-12 08:34:34Z amdmi3 $
+# $FreeBSD: head/math/unuran/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	unuran
 PORTVERSION=	1.8.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://statmath.wu-wien.ac.at/unuran/ \
 		LOCAL/bf

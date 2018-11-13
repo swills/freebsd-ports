@@ -1,5 +1,5 @@
 # Created by: at@rominet.net
-# $FreeBSD: head/net/ssltunnel-server/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net/ssltunnel-server/Makefile 484122 2018-11-04 18:52:15Z crees $
 
 PORTNAME=	ssltunnel
 PORTVERSION=	1.18
@@ -10,6 +10,10 @@ PKGNAMESUFFIX=	-server
 
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	PPP over SSL virtual private networking (server part)
+
+BROKEN=		Does not build
+DEPRECATED=	Does not build, upstream disappeared
+EXPIRATION_DATE=	2019-01-04
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

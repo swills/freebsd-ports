@@ -1,8 +1,9 @@
 # Created by: Jason Harris <jharris@widomaker.com>
-# $FreeBSD: head/math/units/Makefile 472564 2018-06-16 19:04:49Z krion $
+# $FreeBSD: head/math/units/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	units
 PORTVERSION=	2.16
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	GNU
 

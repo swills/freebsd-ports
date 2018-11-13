@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/avr-gcc/Makefile 474039 2018-07-06 21:54:44Z cmt $
+# $FreeBSD: head/devel/avr-gcc/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gcc
 PORTVERSION=	5.4.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DIST_VERSION}
 PKGNAMEPREFIX=	avr-
@@ -30,7 +30,7 @@ DIST_VERSION=	${PORTVERSION:C/([0-9]+\.[0-9]+).*\.s([0-9]+)/\1-\2/}
 GCC_VERSION=	${PORTVERSION:C/(.+)\.s[0-9]{8}/\1/}
 SUFFIX=		${PORTVERSION:C/([0-9]+).([0-9]+).*/\1\2/}
 
-USES=		bison gmake perl5 tar:bzip2 libtool
+USES=		bison gmake libtool makeinfo perl5 tar:bzip2
 USE_PERL5=	build
 CPPFLAGS+=	-I${LOCALBASE}/include
 GNU_CONFIGURE=	yes

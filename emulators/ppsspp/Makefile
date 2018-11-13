@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/ppsspp/Makefile 483768 2018-11-02 03:06:30Z jbeich $
+# $FreeBSD: head/emulators/ppsspp/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 
 PORTNAME=	ppsspp
 DISTVERSIONPREFIX=	v
-DISTVERSION?=	1.7.1
-PORTREVISION?=	0
+DISTVERSION?=	1.7.2
+PORTREVISION?=	1
 CATEGORIES=	emulators
 # XXX Get from Debian once #697821 lands
 MASTER_SITES=	https://bazaar.launchpad.net/~sergio-br2/${PORTNAME}/debian-sdl/download/5/${PORTNAME}.1-20140802045408-dd26dik367ztj5xg-8/:manpage
@@ -69,8 +69,7 @@ SDL_BUILD_DEPENDS=	png>=1.6:graphics/png
 SDL_LIB_DEPENDS=	libpng.so:graphics/png
 SDL_VARS=	EXENAME=PPSSPPSDL
 VULKAN_DESC=		Vulkan renderer
-VULKAN_LIB_DEPENDS=	libvulkan.so:graphics/vulkan-loader
-VULKAN_CFLAGS=	-DSDL_VIDEO_DRIVER_WAYLAND # XXX bug 223018, bug 227509
+VULKAN_RUN_DEPENDS=	${LOCALBASE}/lib/libvulkan.so:graphics/vulkan-loader
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/Linux/${OPSYS}/' \

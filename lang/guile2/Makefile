@@ -1,9 +1,9 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/lang/guile2/Makefile 483240 2018-10-28 08:40:27Z linimon $
+# $FreeBSD: head/lang/guile2/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	guile
 PORTVERSION=	2.0.14
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang scheme
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	2

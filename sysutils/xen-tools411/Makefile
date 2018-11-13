@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/xen-tools411/Makefile 483377 2018-10-29 09:00:46Z ak $
+# $FreeBSD: head/sysutils/xen-tools411/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools411
@@ -12,8 +12,6 @@ COMMENT=	Xen management tools
 
 LICENSE=	GPLv2 LGPL3
 LICENSE_COMB=	multi
-
-BROKEN_FreeBSD_10=	does not build
 
 LIB_DEPENDS=	libyajl.so:devel/yajl \
 		liblzo2.so:archivers/lzo2 \

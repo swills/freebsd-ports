@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/deskutils/ganyremote/Makefile 477300 2018-08-16 00:36:38Z swills $
+# $FreeBSD: head/deskutils/ganyremote/Makefile 484478 2018-11-08 21:06:11Z kwm $
 
 PORTNAME=	ganyremote
 PORTVERSION=	7.0
@@ -25,7 +25,7 @@ PORTDOCS=	AUTHORS ChangeLog README
 OPTIONS_DEFINE=			DOCS IMAGEMAGICK NLS
 OPTIONS_SUB=			yes
 IMAGEMAGICK_DESC=		ImageMagick Support
-IMAGEMAGICK_RUN_DEPENDS=	ImageMagick>0:graphics/ImageMagick7
+IMAGEMAGICK_RUN_DEPENDS=	ImageMagick7>0:graphics/ImageMagick7
 IMAGEMAGICK_USES+=		gettext
 NLS_CONFIGURE_ENABLE=		nls
 

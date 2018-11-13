@@ -1,9 +1,9 @@
 # Created by: KANOU Hiroki <kanou@mil.allnet.ne.jp>
-# $FreeBSD: head/graphics/autotrace/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/autotrace/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	autotrace
 PORTVERSION=	0.31.1
-PORTREVISION=	31
+PORTREVISION=	32
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/AutoTrace/${PORTVERSION}
 
@@ -28,7 +28,7 @@ OPTIONS_DEFAULT=IMAGEMAGICK PSTOEDIT
 MING_DESC=	Enable swf interface
 PSTOEDIT_DESC=	Convert postscript to other formats
 
-IMAGEMAGICK_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
 IMAGEMAGICK_CONFIGURE_OFF=	--without-magick
 
 MING_LIB_DEPENDS=	libming.so:graphics/ming

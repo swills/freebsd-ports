@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/parley/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/misc/parley/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	parley
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	misc kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -17,7 +18,7 @@ USE_KDE=	attica auth codecs completion configwidgets coreaddons config \
 		notifications kross khtml service sonnet textwidgets \
 		widgetsaddons xmlgui \
 		libkeduvocdocument
-USE_QT=		concurrent core dbus gui location network multimedia qml quick \
+USE_QT=		concurrent core dbus declarative gui location network multimedia \
 		script svg webchannel webengine widgets xml \
 		buildtools_build qmake_build
 USE_XORG=	x11 xrender

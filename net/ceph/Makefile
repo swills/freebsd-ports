@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph/Makefile 478216 2018-08-27 16:09:21Z jhale $
+# $FreeBSD: head/net/ceph/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,6 @@ LICENSE_COMB=	dual
 
 # even though i386 will build, it is not really advised.
 ONLY_FOR_ARCHS=	amd64
-IGNORE_FreeBSD_10=	Does not build for FreeBSD 10.x
 
 BUILD_DEPENDS=	\
 	yasm:devel/yasm \

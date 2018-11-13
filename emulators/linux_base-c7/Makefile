@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/linux_base-c7/Makefile 472820 2018-06-19 20:30:59Z amdmi3 $
+# $FreeBSD: head/emulators/linux_base-c7/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	c7
 PORTVERSION=	${LINUX_DIST_VER}
@@ -125,7 +125,7 @@ REMOVE_FILES=	bin/df bin/su etc/exports etc/group etc/gshadow etc/motd \
 
 .include <bsd.port.pre.mk>
 
-.if ${LINUX_ARCH} == x86_64 && ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100105
+.if ${LINUX_ARCH} == x86_64
 SYSCTLMIB=	kern.features.linux64
 .else
 SYSCTLMIB=	compat.linux.osrelease

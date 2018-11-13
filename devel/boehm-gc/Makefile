@@ -1,8 +1,9 @@
 # Created by: Mike McGaughey <mmcg@cs.monash.edu.au>
-# $FreeBSD: head/devel/boehm-gc/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/devel/boehm-gc/Makefile 484314 2018-11-06 18:06:24Z yuri $
 
 PORTNAME=	gc
 PORTVERSION=	7.6.8
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.hboehm.info/gc/gc_source/ \
 		https://github.com/ivmai/bdwgc/releases/download/v${PORTVERSION}/
@@ -28,7 +29,8 @@ CPE_PRODUCT=	garbage_collector
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
-CONFIGURE_ARGS=	--enable-cplusplus --disable-static
+# NOTE: do not --disable-static, static is useful for e.g. lang/crystal
+CONFIGURE_ARGS=	--enable-cplusplus
 MAKE_JOBS_UNSAFE=	yes
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/[a-z]$//}
@@ -41,12 +43,15 @@ CORDLIBS=	cord
 GCLIBS=		gc
 GCCPPLIBS=	gccpp
 PLIST=		${NONEXISTENT}
-PLIST_FILES=	${CORDLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so,} \
+PLIST_FILES=	${CORDLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.a,} \
+		${CORDLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so,} \
 		${CORDLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1,} \
 		${CORDLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1.3.1,} \
+		${GCLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.a,} \
 		${GCLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so,} \
 		${GCLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1,} \
 		${GCLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1.3.4,} \
+		${GCCPPLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.a,} \
 		${GCCPPLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so,} \
 		${GCCPPLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1,} \
 		${GCCPPLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1.3.2,} \

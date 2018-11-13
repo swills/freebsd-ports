@@ -1,5 +1,5 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/deskutils/treesheets/Makefile 481634 2018-10-09 13:52:06Z swills $
+# $FreeBSD: head/deskutils/treesheets/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	treesheets
 PORTVERSION=	1.0.1
@@ -35,14 +35,6 @@ PLIST_FILES=	bin/${PORTNAME} \
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-.include <bsd.port.pre.mk>
-
-.if (${OPSYS} == FreeBSD && ${OSVERSION} < 1100000) || make(makesum)
-MASTER_SITES+=	http://releases.llvm.org/6.0.1/:llvm
-DISTFILES+=	libcxx-6.0.1.src.tar.xz:llvm
-CXXFLAGS+=	-isystem ${WRKDIR}/libcxx-6.0.1.src/include
-.endif
-
 post-patch: .SILENT
 	${REINPLACE_CMD} -e 's|sys->frame->GetPath(L"|(L"${DOCSDIR}/|' \
 		${BUILD_WRKSRC}/document.h
@@ -71,4 +63,4 @@ do-install-EXAMPLES-on:
 	(cd ${WRKSRC}/TS/examples && ${COPYTREE_SHARE} "${PORTEXAMPLES}" \
 		${STAGEDIR}${EXAMPLESDIR})
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

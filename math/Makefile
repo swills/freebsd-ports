@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 483620 2018-10-31 21:49:24Z yuri $
+# $FreeBSD: head/math/Makefile 484165 2018-11-05 02:13:10Z yuri $
 #
 
     COMMENT = Mathematics
@@ -353,6 +353,7 @@
     SUBDIR += miracl
     SUBDIR += mkl-dnn
     SUBDIR += mlpack
+    SUBDIR += moab
     SUBDIR += moo
     SUBDIR += mosesdecoder
     SUBDIR += mpc

@@ -1,11 +1,11 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/x11-toolkits/gtk30/Makefile 482634 2018-10-21 01:14:48Z jbeich $
+# $FreeBSD: head/x11-toolkits/gtk30/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 # Please keep gtk30 in sync with the following x11-themes ports:
 # adwaita-icon-theme, gnome-themes-standard and mate-themes
 
 PORTNAME=	gtk
 PORTVERSION=	3.22.30
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME/sources/gtk+/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMESUFFIX=	3
@@ -54,8 +54,7 @@ GLIB_SCHEMAS=	org.gtk.Demo.gschema.xml \
 		org.gtk.Settings.FileChooser.gschema.xml
 
 OPTIONS_DEFINE=	CUPS CLOUDPRINT COLORD DEBUG BROADWAY WAYLAND
-OPTIONS_DEFAULT=CUPS COLORD BROADWAY
-OPTIONS_EXCLUDE_FreeBSD_10=	WAYLAND
+OPTIONS_DEFAULT=CUPS COLORD BROADWAY WAYLAND
 OPTIONS_SUB=	yes
 
 BROADWAY_DESC=	Enable GDK Broadway backend for showing GTK+ in the webbrowser using HTML5 and web sockets.

@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/databases/kbibtex/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/databases/kbibtex/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kbibtex
 DISTVERSION=	0.8.1
@@ -23,8 +23,8 @@ USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash ecm i18n iconthemes itemviews jobwidgets \
 		kio parts service solid sonnet textwidgets wallet \
 		widgetsaddons xmlgui
-USE_QT=		concurrent core dbus gui location network printsupport qml \
-		quick webchannel webengine widgets xml xmlpatterns \
+USE_QT=		concurrent core dbus declarative gui location network printsupport \
+		webchannel webengine widgets xml xmlpatterns \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

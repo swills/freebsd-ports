@@ -1,10 +1,10 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/tovid/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/multimedia/tovid/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	tovid
 PORTVERSION=	0.35.2
 DISTVERSIONPREFIX=	tovid-
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	multimedia python
 
 MAINTAINER=	grepper@gmail.com
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libTix8.4.3.so:x11-toolkits/tix
 RUN_DEPENDS=	mplayer:multimedia/mplayer \
 		mplex:multimedia/mjpegtools \
 		ffmpeg:multimedia/ffmpeg \
-		composite:graphics/ImageMagick \
+		composite:graphics/ImageMagick6 \
 		dvdauthor:multimedia/dvdauthor \
 		growisofs:sysutils/dvd+rw-tools \
 		sox:audio/sox \

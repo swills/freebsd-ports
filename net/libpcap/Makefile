@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/libpcap/Makefile 478125 2018-08-26 13:10:35Z zi $
+# $FreeBSD: head/net/libpcap/Makefile 484311 2018-11-06 17:18:40Z garga $
 
 PORTNAME=	libpcap
 PORTVERSION=	1.9.0
@@ -13,8 +13,9 @@ LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex
 
-GNU_CONFIGURE=	yes
 USES=		bison gmake
+
+GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS+=--enable-dbus=no \
 		--with-pcap=bpf

@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/cad/openscad/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	openscad
 PORTVERSION=	2015.03
@@ -43,7 +43,7 @@ post-patch:
 
 #.include <bsd.port.options.mk>
 #
-#.if ${ARCH} == i386 && ${OSVERSION} >= 1100000
+#.if ${ARCH} == i386
 #USE_GCC=        yes
 #.endif
 

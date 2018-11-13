@@ -1,8 +1,9 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/math/numdiff/Makefile 434866 2017-02-26 12:46:29Z rakuco $
+# $FreeBSD: head/math/numdiff/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	numdiff
 PORTVERSION=	5.9.0
+PORTREVISION=	1
 CATEGORIES=	math textproc
 MASTER_SITES=	SAVANNAH
 

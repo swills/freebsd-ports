@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/bibutils/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/textproc/bibutils/Makefile 484327 2018-11-06 20:53:39Z rene $
 
 PORTNAME=	bibutils
 PORTVERSION=	5.0
@@ -6,7 +6,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_src
 
-MAINTAINER=	pgj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program set interconverts between various bibliography formats
 
 LICENSE=	GPLv2

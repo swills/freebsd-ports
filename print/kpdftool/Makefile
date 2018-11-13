@@ -1,9 +1,9 @@
 # Created by: Yuan, Jue <yuanjue@yuanjue.net>
-# $FreeBSD: head/print/kpdftool/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/print/kpdftool/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	kpdftool
 PORTVERSION=	0.23.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	print
 MASTER_SITES=	http://www.kde-apps.org/CONTENT/content-files/
 DISTFILES=	33194-${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
@@ -11,7 +11,7 @@ DISTFILES=	33194-${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple utility to manipulate PS and PDF files
 
-RUN_DEPENDS=	convert:graphics/ImageMagick
+RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 USE_QT=		qt3support moc_build porting_build uic3_build
 USES=		ghostscript:run qmake qt:4 zip

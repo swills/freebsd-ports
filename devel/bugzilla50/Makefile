@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/bugzilla50/Makefile 473836 2018-07-03 14:46:08Z rene $
+# $FreeBSD: head/devel/bugzilla50/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	bugzilla
 PORTVERSION=	5.0.4
@@ -71,7 +71,7 @@ MAIL_QUEUEING_RUN_DEPENDS=	p5-TheSchwartz>=1.10:devel/p5-TheSchwartz \
 				p5-Daemon-Generic>=0:net/p5-Daemon-Generic
 MOVE_BUGZ_RUN_DEPENDS=	p5-MIME-Tools>=5.406:mail/p5-MIME-Tools \
 			p5-XML-Twig>=0:textproc/p5-XML-Twig
-BMP2PNG_RUN_DEPENDS=	convert:graphics/ImageMagick
+BMP2PNG_RUN_DEPENDS=	convert:graphics/ImageMagick6
 # Note: XML-RPC and JSON-RPC are deprecated in favor of REST
 # and will likely be removed in the Bugzilla 7.0 release.
 # XXX SOAP::Lite can be removed if upstream officially depends on

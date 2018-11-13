@@ -1,8 +1,8 @@
-# $FreeBSD: head/astro/siril/Makefile 476517 2018-08-06 17:22:36Z fernape $
+# $FreeBSD: head/astro/siril/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	siril
 DISTVERSION=	0.9.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	astro graphics
 MASTER_SITES=	https://free-astro.org/download/
 

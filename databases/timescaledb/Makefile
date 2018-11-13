@@ -1,15 +1,15 @@
 # Created by: Kevin Bowling <kbowling@freebsd.org>
-# $FreeBSD: head/databases/timescaledb/Makefile 480662 2018-09-25 13:15:51Z kbowling $
+# $FreeBSD: head/databases/timescaledb/Makefile 483846 2018-11-02 20:25:49Z kbowling $
 
 PORTNAME=	timescaledb
-PORTVERSION=	0.12.1
+PORTVERSION=	1.0.0
 CATEGORIES=	databases
 
 MAINTAINER=	kbowling@FreeBSD.org
 COMMENT=	Time-series database built on PostgreSQL
 
 LICENSE=	APACHE20
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENSE-APACHE
 
 USES=		compiler:c11 cmake:outsource pgsql:9.6,10 ssl
 

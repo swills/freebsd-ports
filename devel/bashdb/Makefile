@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/bashdb/Makefile 483308 2018-10-28 16:03:53Z yuri $
+# $FreeBSD: head/devel/bashdb/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	bashdb
 DISTVERSION=	4.4-1.0.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTVERSION}/
 

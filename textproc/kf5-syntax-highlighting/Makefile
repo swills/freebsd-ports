@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/kf5-syntax-highlighting/Makefile 482342 2018-10-18 12:19:57Z adridg $
+# $FreeBSD: head/textproc/kf5-syntax-highlighting/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	syntax-highlighting
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	textproc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

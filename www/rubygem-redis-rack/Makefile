@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-redis-rack/Makefile 456757 2017-12-19 18:21:29Z sunpoet $
+# $FreeBSD: head/www/rubygem-redis-rack/Makefile 484754 2018-11-11 18:24:37Z sunpoet $
 
 PORTNAME=	redis-rack
-DISTVERSION=	2.0.4
+DISTVERSION=	2.0.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -20,7 +20,6 @@ USE_RUBY=	yes
 NO_ARCH=	yes
 
 post-install:
-	@${RM} ${STAGEDIR}${PREFIX}/bin/appraisal \
-		${STAGEDIR}${PREFIX}/bin/rake
+	${RM} ${STAGEDIR}${PREFIX}/bin/appraisal ${STAGEDIR}${PREFIX}/bin/rake
 
 .include <bsd.port.mk>

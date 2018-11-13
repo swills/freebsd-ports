@@ -1,10 +1,10 @@
-# $FreeBSD: head/games/aquaria/Makefile 458224 2018-01-06 05:58:42Z jbeich $
+# $FreeBSD: head/games/aquaria/Makefile 484189 2018-11-05 13:25:56Z jbeich $
 
 PORTNAME=	aquaria
 DISTVERSIONPREFIX=	OSE-v
 DISTVERSION=	1.002-22
 DISTVERSIONSUFFIX=	-g84366ad
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -26,7 +26,7 @@ USES=		cmake lua:51 openal pkgconfig
 EXCLUDE=	AL FTGL GL SDL* freetype2 glm glpng/png glpng/zlib \
 		libogg-* libvorbis-* lua-* tinyxml2*
 EXTRACT_AFTER_ARGS=${EXCLUDE:S,^,--exclude ExternalLibs/,}
-CMAKE_ARGS=	AQUARIA_DEFAULT_DATA_DIR:PATH="${DATADIR}"
+CMAKE_ARGS=	-DAQUARIA_DEFAULT_DATA_DIR:PATH="${DATADIR}"
 CMAKE_OFF=	AQUARIA_INTERNAL_FREETYPE \
 		AQUARIA_INTERNAL_FTGL \
 		AQUARIA_INTERNAL_LUA \

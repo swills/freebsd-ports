@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/skanlite/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/skanlite/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	skanlite
 DISTVERSION=	2.1.0.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/src/COPYING
 LIB_DEPENDS=	libKF5Sane.so:graphics/libksane \
 		libpng.so:graphics/png
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm auth config configwidgets codecs completion \
 		coreaddons doctools i18n jobwidgets kio \
 		service widgetsaddons xmlgui

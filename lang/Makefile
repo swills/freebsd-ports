@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 481529 2018-10-08 09:31:09Z tz $
+# $FreeBSD: head/lang/Makefile 484662 2018-11-11 08:04:06Z gerald $
 #
 
     COMMENT = Programming languages
@@ -104,7 +104,6 @@
     SUBDIR += gcc5
     SUBDIR += gcc6
     SUBDIR += gcc6-aux
-    SUBDIR += gcc6-devel
     SUBDIR += gcc7
     SUBDIR += gcc7-devel
     SUBDIR += gcc8
@@ -311,7 +310,6 @@
     SUBDIR += python37
     SUBDIR += qore
     SUBDIR += qscheme
-    SUBDIR += qt5-qml
     SUBDIR += quack
     SUBDIR += racket
     SUBDIR += racket-minimal

@@ -1,8 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/med/Makefile 477484 2018-08-18 08:51:53Z thierry $
+# $FreeBSD: head/french/med/Makefile 484476 2018-11-08 20:55:13Z thierry $
 
 PORTNAME=	med
 DISTVERSION=	3.3.1
+PORTREVISION=	1
 CATEGORIES=	french science
 
 MAINTAINER=	thierry@FreeBSD.org
@@ -12,8 +13,6 @@ LICENSE=	GPLv3
 
 BUILD_DEPENDS=	gsed:textproc/gsed
 LIB_DEPENDS=	libhdf5-18.so:science/hdf5-18
-
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
@@ -28,6 +27,8 @@ USE_LDCONFIG=	yes
 TEST_WRKSRC=	${WRKSRC}/tests
 TEST_TARGET=	check  # XXX: some fail
 TEST_ENV=	${MAKE_ENV} HDF5_DISABLE_VERSION_CHECK=1
+
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 LIBVER=		1.9.1
 PLIST_SUB+=	VE=${LIBVER}

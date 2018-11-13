@@ -1,9 +1,9 @@
 # Created by: Takumi Takahashi <takumiiinn@gmail.com>
-# $FreeBSD: head/audio/forked-daapd/Makefile 469019 2018-05-04 11:40:59Z jbeich $
+# $FreeBSD: head/audio/forked-daapd/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	forked-daapd
 PORTVERSION=	24.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	audio
 
 MAINTAINER=	takumiiinn@gmail.com

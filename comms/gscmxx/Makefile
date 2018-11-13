@@ -1,5 +1,5 @@
 # Created by: svmohr
-# $FreeBSD: head/comms/gscmxx/Makefile 481888 2018-10-12 09:19:04Z antoine $
+# $FreeBSD: head/comms/gscmxx/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	gscmxx
 PORTVERSION=	0.4.1
@@ -18,7 +18,7 @@ RUN_DEPENDS=	p5-Image-Size>=0:graphics/p5-Image-Size \
 BUILD_DEPENDS=	p5-Image-Size>=0:graphics/p5-Image-Size \
 		p5-Gtk-Perl>=0:x11-toolkits/p5-Gtk-Perl \
 		scmxx:comms/scmxx \
-		convert:graphics/ImageMagick
+		convert:graphics/ImageMagick6
 
 USES=		perl5
 USE_PERL5=	configure

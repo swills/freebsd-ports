@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-solid/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/devel/kf5-solid/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	solid
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -9,8 +9,8 @@ COMMENT=	KF5 hardware integration and detection
 
 USES=		bison cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT=		buildtools_build concurrent core dbus gui linguisttools \
-		network qmake_build qml testlib widgets xml
+USE_QT=		buildtools_build concurrent core dbus declarative gui linguisttools \
+		network qmake_build testlib widgets xml
 
 OPTIONS_DEFINE=		BSDISKS
 BSDISKS_DESC=		Use bsdisks instead of hald to mount drives

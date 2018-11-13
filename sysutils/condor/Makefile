@@ -1,5 +1,5 @@
 # Created by: Andy Pavlo
-# $FreeBSD: head/sysutils/condor/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/sysutils/condor/Makefile 484374 2018-11-07 00:28:16Z linimon $
 
 # Note: Make sure there are no other versions of HTCondor installed during
 #       build.  The build system may pick up incompatible headers and libs.
@@ -17,8 +17,6 @@ COMMENT=	High-throughput computing on distributively owned resources
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE-2.0.txt
 
-BROKEN_powerpc64=	fails to link: test_unit.hpp:249: undefined reference to boost::unit_test::ut_detail::normalize_test_case_name
-
 LIB_DEPENDS=	libkrb5support.so:security/krb5 \
 		libpcre.so:devel/pcre \
 		libcurl.so:ftp/curl \
@@ -26,7 +24,8 @@ LIB_DEPENDS=	libkrb5support.so:security/krb5 \
 		${PY_BOOST}
 
 # Does not work with Python 3
-USES=		cmake:noninja cpe perl5 pgsql python:2.7 shebangfix ssl
+USES=		cmake:noninja compiler:c++11-lang cpe perl5 pgsql \
+		python:2.7 shebangfix ssl
 USE_LDCONFIG=	yes
 CPE_VENDOR=	condor_project
 SHEBANG_FILES=	src/condor_scripts/condor_qsub \

@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/efl/Makefile 482189 2018-10-15 23:59:23Z jbeich $
+# $FreeBSD: head/devel/efl/Makefile 483990 2018-11-04 10:36:19Z jbeich $
 
 PORTNAME=	efl
 DISTVERSION=	1.20.7
@@ -85,7 +85,8 @@ PHYSICS_CONFIGURE_ENABLE=	physics
 PULSEAUDIO_LIB_DEPENDS=		libpulse.so:audio/pulseaudio
 PULSEAUDIO_CONFIGURE_ENABLE=	pulseaudio
 
-WAYLAND_BROKEN=			WAYLAND option is broken: https://phab.enlightenment.org/T7116
+WAYLAND_BROKEN=			ERROR: epoll_create() is deprecated, use epoll_create1(EPOLL_CLOEXEC).
+WAYLAND_BUILD_DEPENDS=		wayland-protocols>=1.7:graphics/wayland-protocols
 WAYLAND_LIB_DEPENDS=		libepoll-shim.so:devel/libepoll-shim \
 				libxkbcommon.so:x11/libxkbcommon \
 				libwayland-client.so:graphics/wayland \

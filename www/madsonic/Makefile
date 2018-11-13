@@ -1,9 +1,9 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/www/madsonic/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/www/madsonic/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	madsonic
 PORTVERSION=	6.2.9040
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www java
 MASTER_SITES=	http://madsonic.org/download/6.2/
 DISTFILES=	${DISTDATE}_${DISTNAME}-war-tomcat.zip \

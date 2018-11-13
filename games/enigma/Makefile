@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis
-# $FreeBSD: head/games/enigma/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/enigma/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	enigma
 PORTVERSION=	1.21
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libxerces-c.so.3:textproc/xerces-c3 \
 		libpng.so:graphics/png \
 		libenet.so:net/enet \
 		libcurl.so:ftp/curl
-BUILD_DEPENDS=	convert:graphics/ImageMagick
+BUILD_DEPENDS=	convert:graphics/ImageMagick6
 
 USES=		gmake localbase pkgconfig
 USE_SDL=	image mixer sdl ttf

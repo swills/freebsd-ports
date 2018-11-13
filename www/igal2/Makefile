@@ -1,8 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/www/igal2/Makefile 420297 2016-08-16 19:00:19Z pawel $
+# $FreeBSD: head/www/igal2/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	igal2
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	www graphics
 MASTER_SITES=	http://igal.trexler.at/
 
@@ -12,7 +13,7 @@ COMMENT=	Simple CLI image gallery generator
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	convert:graphics/ImageMagick
+RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 CONFLICTS=	igal-1.*
 USES=		perl5

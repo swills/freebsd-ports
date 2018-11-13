@@ -1,9 +1,9 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
-# $FreeBSD: head/editors/semi/Makefile 472141 2018-06-10 14:29:44Z nobutaka $
+# $FreeBSD: head/editors/semi/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	semi
 PORTVERSION=	${SEMI_VER}
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://git.chise.org/elisp/dist/semi/semi-1.14-for-flim-1.14/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
@@ -45,7 +45,7 @@ post-build:
 post-install:
 	@(cd ${WRKSRC} ; \
 	for i in mime-ui-en.info mime-ui-ja.info; do \
-		${INSTALL_DATA} ${WRKSRC}/$${i} ${STAGEDIR}${PREFIX}/info ; \
+		${INSTALL_DATA} ${WRKSRC}/$${i} ${STAGEDIR}${PREFIX}/${INFO_PATH} ; \
 	done)
 
 post-install-DOCS-on:

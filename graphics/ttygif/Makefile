@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/ttygif/Makefile 443873 2017-06-19 13:42:21Z olivier $
+# $FreeBSD: head/graphics/ttygif/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	ttygif
 PORTVERSION=	1.4.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -10,7 +11,7 @@ COMMENT=	Converts a ttyrec file into animated gif
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	convert:graphics/ImageMagick
+RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	icholy

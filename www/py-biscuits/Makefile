@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-biscuits/Makefile 482503 2018-10-20 14:47:04Z sunpoet $
+# $FreeBSD: head/www/py-biscuits/Makefile 484338 2018-11-06 21:10:32Z sunpoet $
 
 PORTNAME=	biscuits
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: roam@orbitel.bg
-# $FreeBSD: head/misc/bogosort/Makefile 365160 2014-08-17 08:25:51Z eadler $
+# $FreeBSD: head/misc/bogosort/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	bogosort
 PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.lysator.liu.se/~qha/bogosort/ \
 		ftp://l82.ryd.student.liu.se/pub/unix/bogosort/

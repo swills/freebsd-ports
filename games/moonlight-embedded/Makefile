@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/moonlight-embedded/Makefile 476985 2018-08-12 12:20:35Z tobik $
+# $FreeBSD: head/games/moonlight-embedded/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	moonlight-embedded
 DISTVERSION=	2.4.7
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	https://github.com/irtimmer/moonlight-embedded/releases/download/v${DISTVERSION}/
 

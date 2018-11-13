@@ -1,9 +1,9 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/mypaedia-fpw-package/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/japanese/mypaedia-fpw-package/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	mypaedia-fpw-package
 PORTVERSION=	1.0.7
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	japanese elisp
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/mypaedia/
 
@@ -13,7 +13,7 @@ COMMENT=	Supplement file to use "mypaedia" on lookup
 RUN_DEPENDS=	sox:audio/sox \
 		timidity:audio/timidity++ \
 		xanim:multimedia/xanim \
-		display:graphics/ImageMagick
+		display:graphics/ImageMagick6
 
 NO_BUILD=	yes
 PLIST_SUB=	PKGNAME=${PKGNAME}

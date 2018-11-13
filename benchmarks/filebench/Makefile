@@ -1,12 +1,12 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/benchmarks/filebench/Makefile 398062 2015-09-27 21:58:55Z jbeich $
+# $FreeBSD: head/benchmarks/filebench/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	filebench
 PORTVERSION=	1.4.9.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Model-based file system workload generator
 
 LICENSE=	CDDL

@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/net/hping/Makefile 476184 2018-08-01 16:33:11Z adamw $
+# $FreeBSD: head/net/hping/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	hping
 PORTVERSION=	2.0.0r3
@@ -29,11 +29,7 @@ PORTDOCS=	AS-BACKDOOR HPING2-HOWTO.txt HPING2-IS-OPEN \
 
 OPTIONS_DEFINE=	DOCS
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100030
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-sendip.c
-.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hping2 ${STAGEDIR}${PREFIX}/sbin/hping
@@ -44,4 +40,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/docs/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

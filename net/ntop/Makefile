@@ -1,9 +1,9 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/ntop/Makefile 473019 2018-06-22 08:04:38Z yuri $
+# $FreeBSD: head/net/ntop/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	ntop
 PORTVERSION=	5.0.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Stable
 

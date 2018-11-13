@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-gdbm/Makefile 456401 2017-12-15 15:22:29Z swills $
+# $FreeBSD: head/databases/ruby-gdbm/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	gdbm
 PORTVERSION=	${RUBY_PORTVERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	databases ruby
 MASTER_SITES=	# none

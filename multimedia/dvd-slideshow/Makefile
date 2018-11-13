@@ -1,10 +1,10 @@
 # Created by: Phil Oleson <oz@nixil.net>
-# $FreeBSD: head/multimedia/dvd-slideshow/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/multimedia/dvd-slideshow/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	dvd-slideshow
 PORTVERSION=	0.8.4
 DISTVERSIONSUFFIX=	-2
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}${DISTVERSIONSUFFIX} \
 		SF/${PORTNAME}/${PORTNAME}-themes/${THEMEVERSION}-1:themes
@@ -15,7 +15,7 @@ MAINTAINER=	oz@nixil.net
 COMMENT=	Script to create slideshow-style DVD with some simple menus
 
 RUN_DEPENDS=	bash:shells/bash \
-		identify:graphics/ImageMagick \
+		identify:graphics/ImageMagick6 \
 		mpeg2enc:multimedia/mjpegtools \
 		ffmpeg:multimedia/ffmpeg \
 		sox:audio/sox \

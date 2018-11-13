@@ -1,9 +1,9 @@
 # Created by: Ralf Becker <ralf@akk.org>
-# $FreeBSD: head/games/moon-buggy/Makefile 408105 2016-02-04 21:49:16Z marino $
+# $FreeBSD: head/games/moon-buggy/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	moon-buggy
 PORTVERSION=	1.0.51
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://seehuhn.de/media/programs/
 

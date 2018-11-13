@@ -1,8 +1,8 @@
-# $FreeBSD: head/finance/kmymoney/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/finance/kmymoney/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kmymoney
 PORTVERSION=	5.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	finance kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 
@@ -64,7 +64,7 @@ KBANKING_DESC=		Online banking via KBanking (AqBanking)
 KBANKING_LIB_DEPENDS=	libgwenhywfar.so:devel/gwenhywfar \
 			libgwengui-qt5.so:devel/gwenhywfar-qt5 \
 			libaqbanking.so:finance/aqbanking
-KBANKING_USE=		qt=qml,quick
+KBANKING_USE=		qt=declarative
 KBANKING_CMAKE_BOOL=	ENABLE_KBANKING
 
 KDEWEBKIT_DESC=		Web content rendering via KDEWebKit

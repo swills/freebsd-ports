@@ -1,5 +1,5 @@
 # Created by: Matthew Donovan <kitchetech@gmail.com>
-# $FreeBSD: head/x11/sterm/Makefile 472687 2018-06-18 13:08:35Z swills $
+# $FreeBSD: head/x11/sterm/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	sterm
 DISTVERSION=	0.8.1
@@ -40,8 +40,6 @@ SCROLLBACK_EXTRA_PATCHES=	${PATCHDIR}/extra-scrollback-patch-config.def.h \
 SOLARIZED_EXTRA_PATCHES=	${PATCHDIR}/extra-solarized-patch-config.def.h \
 		${PATCHDIR}/extra-solarized-patch-x.c \
 		${PATCHDIR}/extra-solarized-patch-st.h
-
-SUB_FILES=	pkg-message
 
 pre-everything::
 	@${ECHO_MSG} "You can build st with your own config.h using the ST_CONF knob:"

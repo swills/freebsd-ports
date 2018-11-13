@@ -1,9 +1,9 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
-# $FreeBSD: head/editors/flim/Makefile 472140 2018-06-10 14:27:53Z nobutaka $
+# $FreeBSD: head/editors/flim/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	flim
 PORTVERSION=	1.14.9
-PORTREVISION=	19
+PORTREVISION=	20
 PORTEPOCH=	1
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://git.chise.org/elisp/dist/${PORTNAME}/${PORTNAME}-${DISTVERSION:R}/
@@ -43,7 +43,7 @@ post-build:
 post-install:
 	@(cd ${WRKSRC} ; \
 	for i in mime-en.info mime-ja.info; do \
-		${INSTALL_DATA} ${WRKSRC}/$${i} ${STAGEDIR}${PREFIX}/info ; \
+		${INSTALL_DATA} ${WRKSRC}/$${i} ${STAGEDIR}${PREFIX}/${INFO_PATH} ; \
 	done)
 
 post-install-DOCS-on:

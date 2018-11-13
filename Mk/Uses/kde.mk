@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/kde.mk 483271 2018-10-28 10:59:23Z tcberner $
+# $FreeBSD: head/Mk/Uses/kde.mk 484814 2018-11-12 18:31:42Z tcberner $
 #
 # Provides support for KDE and KF5-based ports.
 #
@@ -70,12 +70,12 @@ KDE_PLASMA_VERSION?=		5.12.7
 KDE_PLASMA_BRANCH?=		stable
 
 # Current KDE frameworks.
-KDE_FRAMEWORKS_VERSION?=	5.51.0
+KDE_FRAMEWORKS_VERSION?=	5.52.0
 KDE_FRAMEWORKS_BRANCH?= 	stable
 
 # Current KDE applications.
-KDE_APPLICATIONS_VERSION?=	18.08.2
-KDE_APPLICATIONS_SHLIB_VER?=	5.9.2
+KDE_APPLICATIONS_VERSION?=	18.08.3
+KDE_APPLICATIONS_SHLIB_VER?=	5.9.3
 KDE_APPLICATIONS_BRANCH?=	stable
 # Upstream moves old software to Attic/. Specify the newest applications release there.
 # Only the major version is used for the comparison.

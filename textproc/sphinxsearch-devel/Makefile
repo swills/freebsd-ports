@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@FreeBSD.org>
-# $FreeBSD: head/textproc/sphinxsearch-devel/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/textproc/sphinxsearch-devel/Makefile 484088 2018-11-04 14:40:12Z antoine $
 
 # Note: the Sphinx Storage Engine MySQL plugin is not supported by
 # this port.  You need a patched version of mysql server for that.
@@ -20,6 +20,8 @@ MAINTAINER=	danger@FreeBSD.org
 COMMENT=	Sphinx Full-Text Search Engine
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 # If expat is present on the system and configure finds it, it will
 # unconditionally link the output binary against it.  There's no way

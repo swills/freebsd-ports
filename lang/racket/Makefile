@@ -1,5 +1,5 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/lang/racket/Makefile 483669 2018-11-01 14:42:57Z linimon $
+# $FreeBSD: head/lang/racket/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	racket
 PORTVERSION=	7.1
@@ -23,10 +23,7 @@ LIB_DEPENDS=	libffi.so:devel/libffi		\
 		libpng.so:graphics/png
 
 IGNORE_powerpc64=	./lightning/lightning.h:81:2: GNU lightning does not support the current target
-BROKEN_FreeBSD_10_i386=	segfaults during build
-BROKEN_FreeBSD_11_i386=	segfaults during build
-BROKEN_FreeBSD_12_i386=	segfaults during build
-BROKEN_FreeBSD_13_i386=	segfaults during build
+BROKEN_i386=		segfaults during build
 
 MAKE_JOBS_UNSAFE=yes
 

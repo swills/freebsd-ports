@@ -1,9 +1,9 @@
 # Created by: Arne Lundberg <arlu@telia.com>
-# $FreeBSD: head/net/qadsl/Makefile 458559 2018-01-09 19:06:33Z danfe $
+# $FreeBSD: head/net/qadsl/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	qadsl
 PORTVERSION=	1.3.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	SAVANNAH/alive
 

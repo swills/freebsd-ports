@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/p5-Pod-Readme/Makefile 483721 2018-11-01 19:15:36Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-Readme/Makefile 483933 2018-11-03 22:18:39Z sunpoet $
 
 PORTNAME=	Pod-Readme
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
@@ -24,7 +24,7 @@ RUN_DEPENDS=	p5-CPAN-Changes>=0.300000:devel/p5-CPAN-Changes \
 		p5-Path-Tiny>=0:devel/p5-Path-Tiny \
 		p5-Role-Tiny>=0:devel/p5-Role-Tiny \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny \
-		p5-Type-Tiny>=0:devel/p5-Type-Tiny \
+		p5-Type-Tiny>=1.000000:devel/p5-Type-Tiny \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
 TEST_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \

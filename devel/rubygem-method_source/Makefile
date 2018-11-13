@@ -1,8 +1,8 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/devel/rubygem-method_source/Makefile 450746 2017-09-27 13:24:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-method_source/Makefile 484837 2018-11-12 21:28:58Z sunpoet $
 
 PORTNAME=	method_source
-PORTVERSION=	0.9.0
+PORTVERSION=	0.9.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	Tool to retrieve the sourcecode for a method
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

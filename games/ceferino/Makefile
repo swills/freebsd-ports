@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/ceferino/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/games/ceferino/Makefile 484025 2018-11-04 13:20:50Z antoine $
 
 PORTNAME=	ceferino
 PORTVERSION=	0.97.8
@@ -11,6 +11,8 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Game similar to Super Pang
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 USE_SDL=	sdl mixer image
 GNU_CONFIGURE=	yes

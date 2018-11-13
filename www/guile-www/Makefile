@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/www/guile-www/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/guile-www/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	guile-www
 PORTVERSION=	1.1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www devel scheme
 MASTER_SITES=	GNU/guile
 

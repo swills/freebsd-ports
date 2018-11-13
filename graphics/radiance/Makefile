@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/radiance/Makefile 483364 2018-10-29 02:53:30Z yuri $
+# $FreeBSD: head/graphics/radiance/Makefile 484141 2018-11-04 19:04:26Z tcberner $
 
 PORTNAME=	radiance
 PORTVERSION=	g20181029
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -22,7 +23,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	zbanks
 GH_TAGNAME=	2b947cf
 GH_TUPLE=	zbanks:BTrack:1c5b72e:bt/BTrack
-USE_QT=		core graphicaleffects gui network qml quick quickcontrols widgets buildtools_build qmake_build
+USE_QT=		core declarative graphicaleffects gui network  quickcontrols widgets \
+		buildtools_build qmake_build
 USE_GL=		gl glu
 
 CMAKE_ARGS=	-DRADIANCE_SYSTEM_RESOURCES:STRING=${DATADIR}/

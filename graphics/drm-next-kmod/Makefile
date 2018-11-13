@@ -1,8 +1,9 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-next-kmod/Makefile 483129 2018-10-27 12:18:41Z zeising $
+# $FreeBSD: head/graphics/drm-next-kmod/Makefile 484354 2018-11-06 21:18:31Z zeising $
 
 PORTNAME=	drm-next-kmod
 PORTVERSION=	4.11.g20181027
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -29,9 +30,6 @@ GH_TAGNAME=	b545cc4
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101511
-IGNORE=		not supported on 11.1 or older, no kernel support
-.endif
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200000 && ${OSVERSION} < 1200058
 IGNORE=		not supported on older CURRENT, no kernel support
 .endif

@@ -1,9 +1,9 @@
 # Created by: Sebastian Yepes <esn@x123.info>
-# $FreeBSD: head/comms/hamlib/Makefile 456726 2017-12-19 15:35:41Z bapt $
+# $FreeBSD: head/comms/hamlib/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	hamlib
 PORTVERSION=	3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF
 

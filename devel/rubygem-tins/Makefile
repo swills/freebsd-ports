@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tins/Makefile 482538 2018-10-20 14:52:17Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tins/Makefile 484745 2018-11-11 18:23:21Z sunpoet $
 
 PORTNAME=	tins
-PORTVERSION=	1.17.0
+PORTVERSION=	1.19.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

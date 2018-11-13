@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/plasma5-discover/Makefile 483377 2018-10-29 09:00:46Z ak $
+# $FreeBSD: head/sysutils/plasma5-discover/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	discover
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -17,7 +18,7 @@ USE_KDE=	archive attica auth codecs completion config configwidgets \
 		itemviews jobwidgets kdeclarative kio kirigami2 newstuff \
 		notifications package plasma-framework service solid \
 		textwidgets wallet widgetsaddons xmlgui
-USE_QT=		concurrent core dbus gui network qml quick svg testlib widgets xml \
+USE_QT=		concurrent core dbus declarative gui network svg testlib widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

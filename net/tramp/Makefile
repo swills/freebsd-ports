@@ -1,9 +1,9 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/net/tramp/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/net/tramp/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	tramp
 PORTVERSION=	2.3.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net elisp
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

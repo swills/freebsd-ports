@@ -1,9 +1,9 @@
 # Created by: jseger@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine22/Makefile 483547 2018-10-31 05:10:40Z cy $
+# $FreeBSD: head/sysutils/cfengine22/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cfengine
 PORTVERSION=	2.2.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	https://s3.amazonaws.com/cfengine.package-repos/tarballs/
 PKGNAMESUFFIX=	22

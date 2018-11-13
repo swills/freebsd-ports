@@ -1,12 +1,12 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/security/clamtk/Makefile 471827 2018-06-06 05:30:57Z pi $
+# $FreeBSD: head/security/clamtk/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	clamtk
 PORTVERSION=	5.25
 DISTVERSIONPREFIX=v
 CATEGORIES=	security
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK front-end for Clam Antivirus
 
 LICENSE=	ART10 GPLv1+

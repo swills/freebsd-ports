@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	plasma-framework
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -14,8 +14,8 @@ USE_KDE=	activities archive auth codecs completion config \
 		guiaddons i18n iconthemes jobwidgets kirigami2 kio package \
 		notifications service wayland windowsystem xmlgui kdeclarative \
 		widgetsaddons
-USE_QT=		buildtools_build core dbus gui network qmake_build qml \
-		quick script sql svg widgets x11extras xml
+USE_QT=		buildtools_build core dbus declarative gui network qmake_build \
+		script sql svg widgets x11extras xml
 USE_XORG=	ice sm x11 xcb xext xrandr
 
 .include <bsd.port.mk>

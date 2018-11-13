@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JSON-Hyper/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-JSON-Hyper/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	JSON-Hyper
 PORTVERSION=	0.011
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extract links from JSON objects
 
 LICENSE=	MIT

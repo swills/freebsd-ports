@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/squid3/Makefile 480908 2018-09-29 14:39:16Z riggs $
+# $FreeBSD: head/www/squid3/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	squid
 PORTVERSION=	3.5.28
@@ -114,7 +114,7 @@ SSL_CONFIGURE_ON=		--with-openssl=${OPENSSLBASE} \
 				LIBOPENSSL_CFLAGS=-I${OPENSSLINC} \
 				LIBOPENSSL_LIBS="-lcrypto -lssl"
 SSL_USES=			ssl
-SSL_VARS=			BROKEN_SSL=openssl-devel
+SSL_VARS=			BROKEN_SSL=openssl111
 SSL_CRTD_CONFIGURE_ENABLE=	ssl-crtd
 SSL_CRTD_IMPLIES=		SSL
 STACKTRACES_CONFIGURE_ENABLE=	stacktraces

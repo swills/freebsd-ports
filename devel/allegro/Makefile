@@ -1,9 +1,9 @@
 # Created by: Jimmy Olgeni <olgeni@FreeBSD.org>
-# $FreeBSD: head/devel/allegro/Makefile 475552 2018-07-28 12:50:39Z tobik $
+# $FreeBSD: head/devel/allegro/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	allegro
 DISTVERSION=	4.4.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel
 MASTER_SITES=	SF/alleg/allegro/${PORTVERSION}
 
@@ -58,7 +58,7 @@ SNDIO_LIB_DEPENDS=	libsndio.so:audio/sndio
 SNDIO_CMAKE_BOOL=	WANT_SNDIO
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|/allegro-$${ALLEGRO_VERSION}||' \
+	@${REINPLACE_CMD} -e 's|/allegro-$${ALLEGRO_VERSION}|| ; s|"info"|"${INFO_PATH}"|g ' \
 		${WRKSRC}/docs/CMakeLists.txt
 	@${REINPLACE_CMD} -e 's|<X11/extensions/xf86dga.h>|<X11/extensions/Xxf86dga.h>|' \
 		${WRKSRC}/src/x/xdga2.c

@@ -1,9 +1,9 @@
 # Created by: Lev Serebryakov <lev@serebryakov.spb.ru>
-# $FreeBSD: head/devel/mingw32-gcc/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/mingw32-gcc/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gcc
 PORTVERSION=	${GCCVERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	GCC
@@ -76,7 +76,7 @@ CONFIGURE_ARGS=	--disable-nls --target=${GCC_TARG} \
 		--disable-bootstrap
 MAKE_ARGS+=	MAKEINFOFLAGS="--no-split"
 PLIST_SUB+=	GCC_TARG=${GCC_TARG} GCC_REV=${GCCVERSION}
-INFO_PATH=	${GCC_TARG}/info
+INFO_PATH=	${GCC_TARG}/share/info
 INFO=		cpp cppinternals gcc gccinstall gccint gfortran
 .if ${ARCH} == "i386" || ${ARCH} == "amd64"
 INFO+=		libquadmath

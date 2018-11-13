@@ -1,8 +1,8 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-App-Satpass2/Makefile 482315 2018-10-17 23:47:30Z wen $
+# $FreeBSD: head/astro/p5-Astro-App-Satpass2/Makefile 483875 2018-11-03 05:36:40Z wen $
 
 PORTNAME=	Astro-App-Satpass2
-PORTVERSION=	0.036
+PORTVERSION=	0.037
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

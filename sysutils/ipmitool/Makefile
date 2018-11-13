@@ -1,5 +1,5 @@
 # Created by: Dmitry Frolov <frol@nov.net>
-# $FreeBSD: head/sysutils/ipmitool/Makefile 481917 2018-10-12 18:20:35Z sbruno $
+# $FreeBSD: head/sysutils/ipmitool/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	ipmitool
 PORTVERSION=	1.8.18
@@ -13,7 +13,7 @@ COMMENT=	CLI to manage IPMI systems
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USES=		cpe tar:bzip2 gmake readline ssl
 CPE_VENDOR=	sun

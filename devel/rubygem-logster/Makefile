@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-logster/Makefile 455999 2017-12-11 10:43:21Z sunpoet $
+# $FreeBSD: head/devel/rubygem-logster/Makefile 484737 2018-11-11 18:22:10Z sunpoet $
 
 PORTNAME=	logster
-PORTVERSION=	1.2.9
+PORTVERSION=	1.2.11
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	UI for viewing logs in Rack
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

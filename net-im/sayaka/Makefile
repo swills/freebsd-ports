@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/sayaka/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/sayaka/Makefile 483948 2018-11-03 22:50:32Z sunpoet $
 
 PORTNAME=	sayaka
 PORTVERSION=	3.2.2
@@ -12,7 +12,7 @@ LICENSE=	BSD2CLAUSE
 BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		gettext-runtime pkgconfig
+USES=		gettext-runtime gnome pkgconfig
 USE_GNOME=	glib20 gdkpixbuf2
 
 USE_GITHUB=	yes

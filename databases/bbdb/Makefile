@@ -1,13 +1,14 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/databases/bbdb/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/databases/bbdb/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	bbdb
 DISTVERSION=	3.1.2
+PORTREVISION=	1
 CATEGORIES=	databases elisp
 MASTER_SITES=	SAVANNAH
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	dryice@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Big Brother Database
 
 LICENSE=	GPLv3+

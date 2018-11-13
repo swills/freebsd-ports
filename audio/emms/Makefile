@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@dryice.name>
-# $FreeBSD: head/audio/emms/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/audio/emms/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	emms
 DISTVERSION=	5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio elisp
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/emulators/fs-uae/Makefile 458378 2018-01-07 19:49:15Z krion $
+# $FreeBSD: head/emulators/fs-uae/Makefile 484048 2018-11-04 13:54:02Z antoine $
 
 PORTNAME=	fs-uae
 PORTVERSION=	2.4.1
@@ -12,6 +12,8 @@ COMMENT=	Amiga emulator
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libopenal.so:audio/openal-soft

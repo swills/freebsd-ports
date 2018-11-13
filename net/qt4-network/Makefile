@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/net/qt4-network/Makefile 483554 2018-10-31 06:54:14Z antoine $
+# $FreeBSD: head/net/qt4-network/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	network
 DISTVERSION=	${QT4_VERSION}
@@ -13,8 +13,8 @@ COMMENT=	Qt network module
 LICENSE=	GPLv3 LGPL21 LGPL3 GFDL
 LICENSE_COMB=	dual
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'RSA' (aka 'rsa_st')
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	error: member access into incomplete type 'RSA' (aka 'rsa_st')
 
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 

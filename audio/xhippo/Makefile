@@ -1,9 +1,9 @@
 # Created by: Rod Taylor <rod@zort.on.ca>
-# $FreeBSD: head/audio/xhippo/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/xhippo/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	xhippo
 PORTVERSION=	3.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	GNU
 

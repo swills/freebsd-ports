@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/ambit/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/math/ambit/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	ambit
 DISTVERSIONPREFIX=	v
@@ -27,14 +27,4 @@ CMAKE_ARGS+=	-DSHARED_ONLY:BOOL=ON
 CMAKE_ARGS+=	-DENABLE_OPENMP:BOOL=ON # bug#223678: find_package(OpenMP) doesn't find the openmp package
 CMAKE_ARGS+=	-DENABLE_TESTS:BOOL=OFF # https://github.com/jturney/ambit/issues/24
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-# It requires clang version >3.6
-BUILD_DEPENDS+=	clang60:devel/llvm60
-RUN_DEPENDS+=	clang60:devel/llvm60
-CC=		clang60
-CXX=		clang++60
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

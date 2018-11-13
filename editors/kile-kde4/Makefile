@@ -1,9 +1,9 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/editors/kile-kde4/Makefile 478462 2018-08-30 14:34:04Z adridg $
+# $FreeBSD: head/editors/kile-kde4/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	kile
 PORTVERSION=	2.1.3
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	editors kde
 MASTER_SITES=	SF/${PORTNAME}/stable/${PORTNAME}-${DISTVERSION}
 PKGNAMESUFFIX=	-kde4
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
 
-RUN_DEPENDS=	identify:graphics/ImageMagick
+RUN_DEPENDS=	identify:graphics/ImageMagick6
 
 USES=		cmake gettext-tools kde:4 qt:4 shared-mime-info tar:bzip2
 USE_QT=		qmake_build moc_build rcc_build uic_build

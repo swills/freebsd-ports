@@ -1,9 +1,9 @@
 # Created by: liamfoy@sepulcrum.org
-# $FreeBSD: head/mail/qsf/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/qsf/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	qsf
 PORTVERSION=	1.2.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	SF
 

@@ -1,9 +1,9 @@
 # Created by: Alan Eldridge <alane@geeksrus.net>
-# $FreeBSD: head/devel/cvsbook/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/cvsbook/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cvsbook
 PORTVERSION=	1.21
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://cvsbook.red-bean.com/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-all

@@ -1,5 +1,5 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 483517 2018-10-30 19:17:34Z jpaetzel $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
@@ -62,10 +62,6 @@ USE_RC_SUBR=		vmware-guestd vmware-kmod
 INSTALL_TARGET=		install-strip
 
 .include <bsd.port.options.mk>
-
-.if ${OSVERSION} < 1100000
-CFLAGS+=		-Wno-unknown-warning-option
-.endif
 
 .if ${PORT_OPTIONS:MX11}
 CONFLICTS=		open-vm-tools-nox11-[0-9]*

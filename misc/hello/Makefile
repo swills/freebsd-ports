@@ -1,8 +1,9 @@
 # Created by: shipley@dis.org
-# $FreeBSD: head/misc/hello/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/misc/hello/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	hello
 PORTVERSION=	2.10
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 

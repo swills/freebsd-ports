@@ -1,9 +1,9 @@
 # Created by: Geoffrey Mainland <mainland@apeiron.net>
-# $FreeBSD: head/net-im/pidgin-latex/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/pidgin-latex/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	latex
 PORTVERSION=	1.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	net-im
 MASTER_SITES=	SF/pidgin-${PORTNAME}/pidgin-${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	pidgin-
@@ -14,7 +14,7 @@ COMMENT=	Display LaTeX output in your IMs
 
 BUILD_DEPENDS=	${LOCALBASE}/include/pidgin/pidgin.h:net-im/pidgin
 RUN_DEPENDS=	pidgin:net-im/pidgin \
-		convert:graphics/ImageMagick
+		convert:graphics/ImageMagick6
 
 WRKSRC=		${WRKDIR}/${PKGNAMEPREFIX}${PORTNAME}
 

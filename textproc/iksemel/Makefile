@@ -1,9 +1,9 @@
 # Created by: trasz
-# $FreeBSD: head/textproc/iksemel/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/textproc/iksemel/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	iksemel
 PORTVERSION=	1.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	textproc
 
 MAINTAINER=	ports@FreeBSD.org

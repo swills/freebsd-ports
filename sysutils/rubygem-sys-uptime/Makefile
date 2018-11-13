@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/sysutils/rubygem-sys-uptime/Makefile 427968 2016-12-06 14:53:27Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-sys-uptime/Makefile 484248 2018-11-05 21:46:19Z sunpoet $
 
 PORTNAME=	sys-uptime
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,9 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	rubygem-ffi>=1.0.0:devel/rubygem-ffi
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

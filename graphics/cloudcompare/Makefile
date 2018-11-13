@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/cloudcompare/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/cloudcompare/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	cloudcompare
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,6 @@ COMMENT=	3D point cloud processing software
 LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi
 
-BROKEN_FreeBSD_10=	error: "SSE instruction set not enabled"
 BROKEN_aarch64=		fails to compile: mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
 USES=		cmake:outsource localbase:ldflags qt:5

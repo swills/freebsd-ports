@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/pulseaudio-module-xrdp/Makefile 480715 2018-09-26 06:12:03Z meta $
+# $FreeBSD: head/audio/pulseaudio-module-xrdp/Makefile 484520 2018-11-09 15:53:52Z tobik $
 
 PORTNAME=	pulseaudio-module-xrdp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	meta@FreeBSD.org

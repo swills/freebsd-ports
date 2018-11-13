@@ -1,8 +1,9 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/textproc/gnugrep/Makefile 429599 2016-12-27 11:08:52Z johans $
+# $FreeBSD: head/textproc/gnugrep/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	grep
 PORTVERSION=	2.27
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu

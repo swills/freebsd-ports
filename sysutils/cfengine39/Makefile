@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine39/Makefile 483549 2018-10-31 05:10:50Z cy $
+# $FreeBSD: head/sysutils/cfengine39/Makefile 483853 2018-11-02 23:02:51Z antoine $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.9.2
@@ -78,8 +78,6 @@ LIBVIRT_LIB_DEPENDS+=	libvirt.so:devel/libvirt
 BROKEN_FreeBSD_12=	fails to build with openssl111, install security/openssl
 BROKEN_FreeBSD_13=	fails to build with openssl111, install security/openssl
 .endif
-
-.include <bsd.port.pre.mk>
 
 .if ${OPSYS} == "FreeBSD" && ${OSVERSION} >= 1200085
 .if ${SSL_DEFAULT} != "openssl"

@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/security/gss/Makefile 455268 2017-12-01 11:17:29Z amdmi3 $
+# $FreeBSD: head/security/gss/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gss
 PORTVERSION=	1.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	GNU
 

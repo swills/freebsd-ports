@@ -1,8 +1,8 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/devel/elfutils/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/elfutils/Makefile 484412 2018-11-07 21:13:16Z cem $
 
 PORTNAME=	elfutils
-PORTVERSION=	0.172
+PORTVERSION=	0.174
 PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://sourceware.org/elfutils/ftp/${PORTVERSION}/
@@ -15,8 +15,6 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv3+ =	${WRKSRC}/COPYING
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING-GPLV2
 LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING-LGPLV3
-
-IGNORE_FreeBSD_10=	stable/10 base libelf.h lacks needed ELF types
 
 BROKEN_aarch64=		fails to build: fatal error: linux/uio.h: No such file or directory
 BROKEN_armv6=		fails to build: fails to compile i386_disasm.c
@@ -41,6 +39,8 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
 CFLAGS+=	-Wno-null-dereference -Wno-unused-value
+# For GCC8:
+CFLAGS+=	-Wno-cast-function-type
 # Give i386 a prayer of building, and we can fix the warnings later:
 CFLAGS_i386+=	-Wno-error
 

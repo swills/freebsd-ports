@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/husky-hpt/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/news/husky-hpt/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	husky-hpt
 
@@ -14,6 +14,7 @@ INFO=		hpt
 
 MASTERDIR=	${.CURDIR}/../husky
 COMPONENT_SUBDIR=       hpt
+MAKE_ARGS=	INFODIR=${PREFIX}/${INFO_PATH}
 
 OPTIONS_DEFINE=	DOCS
 

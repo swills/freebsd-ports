@@ -1,9 +1,12 @@
-# $FreeBSD: head/sysutils/bacula-client/Makefile 426080 2016-11-14 03:15:03Z danfe $
+# $FreeBSD: head/sysutils/bacula-client/Makefile 484470 2018-11-08 19:16:26Z dvl $
 
 PORTNAME=	bacula
 PKGNAMESUFFIX=	-client
 
 COMMENT=	Network backup solution (client)
+
+DEPRECATED=	Unsupported. Please migrate to bacula9-client
+EXPIRATION_DATE=	2019-03-01
 
 WITH_CLIENT_ONLY=yes
 USE_RC_SUBR=	bacula-fd

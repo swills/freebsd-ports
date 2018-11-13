@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/mgba/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/emulators/mgba/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	mgba
 DISTVERSION=	0.6.1
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	emulators
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
@@ -59,8 +59,8 @@ FFMPEG_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 			libswscale.so:multimedia/ffmpeg
 
 MAGICK_CMAKE_BOOL=	USE_MAGICK
-MAGICK_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick \
-			libMagickCore-6.so:graphics/ImageMagick
+MAGICK_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6 \
+			libMagickCore-6.so:graphics/ImageMagick6
 
 QT5_CMAKE_BOOL=	BUILD_QT
 QT5_USE=	qt=qmake_build,buildtools_build,core,gui,widgets,network,opengl,multimedia

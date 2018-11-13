@@ -1,8 +1,9 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/sysutils/screen/Makefile 458569 2018-01-09 20:41:44Z cy $
+# $FreeBSD: head/sysutils/screen/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	screen
 PORTVERSION=	4.6.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU \
 		ftp://ftp.gnu.org/gnu/screen/ \
@@ -61,6 +62,7 @@ PLIST_SUB+=	MAN="@comment"
 .if ${PORT_OPTIONS:MINFO}
 INFO=		screen
 MAKE_ARGS+=	WITH_INFO=1
+USES+=		makeinfo
 .endif
 
 # Enables support for 256 colour xterm.  Note that you may need to

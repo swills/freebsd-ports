@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/ntraceroute/Makefile 461589 2018-02-12 14:32:47Z zi $
+# $FreeBSD: head/net/ntraceroute/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	ntraceroute
 PORTVERSION=	6.4.2
@@ -21,11 +21,7 @@ EXTRACT_AFTER_ARGS=	.
 
 PLIST_FILES=	sbin/${PORTNAME}
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100030
 BUILD_FLAGS=	-DBYTESWAP_IP_FLAGS -DBYTESWAP_IP_LEN
-.endif
 
 do-build:
 	${CC} ${BUILD_FLAGS} -o ${WRKSRC}/${PORTNAME} -lm \
@@ -34,4 +30,4 @@ do-build:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/sbin
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

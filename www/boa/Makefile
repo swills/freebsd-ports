@@ -1,8 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/www/boa/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/www/boa/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	boa
 DISTVERSION=	0.94.14rc21
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.boa.org/

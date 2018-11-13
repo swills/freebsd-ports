@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/vtk8/Makefile 482050 2018-10-14 16:23:09Z yuri $
+# $FreeBSD: head/math/vtk8/Makefile 484766 2018-11-11 20:47:40Z yuri $
 
 PORTNAME=	vtk
-DISTVERSION=	8.1.1
-PORTREVISION=	1
+DISTVERSION=	8.1.2
 CATEGORIES=	math graphics
 MASTER_SITES=	http://www.vtk.org/files/release/${VTK_SHORT_VER}/
 PKGNAMESUFFIX=	8
@@ -40,7 +39,7 @@ DATADIR=	${PREFIX}/share/vtk-${VTK_SHORT_VER}
 
 # Options
 OPTIONS_DEFINE=	DESIGNER DOCS OSMESA EXAMPLES
-OPTIONS_DEFAULT=	QT5
+OPTIONS_DEFAULT=	MPI QT5
 OSMESA_DESC=	Use Mesa for off-screen rendering
 DESIGNER_DESC=	Build the Qt Designer plugin
 OPTIONS_SUB=	yes

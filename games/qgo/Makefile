@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/games/qgo/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/qgo/Makefile 484003 2018-11-04 12:15:56Z antoine $
 
 PORTNAME=	qgo
 PORTVERSION=	2.s764
@@ -9,6 +9,8 @@ DISTNAME=	${PORTNAME}_2~svn764.orig
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Go board and SGF editor written with the Qt library
+
+BROKEN=		fails to build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

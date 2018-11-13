@@ -1,10 +1,10 @@
 # Created by: Dominic Mitchell
-# $FreeBSD: head/editors/slime/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/editors/slime/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	slime
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.20
-PORTREVISION=   1
+PORTREVISION=   2
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

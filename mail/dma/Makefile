@@ -1,5 +1,5 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/mail/dma/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/dma/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	dma
 PORTVERSION=	0.11
@@ -36,14 +36,8 @@ EXTRA_PATCHES=	${FILESDIR}/fix-security-hole.patch:-p1
 # Allow subports to extend.
 CONFFILES+=	dma.conf auth.conf
 
-.include <bsd.port.pre.mk>
-
 # 11.x has dma imported into base and /var/spool/dma added to mtree
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100009
-PLIST_SUB+=	VARDIR=""
-.else
 PLIST_SUB+=	VARDIR="@comment "
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/etc/dma,${PREFIX}/etc/dma,g' \
@@ -59,4 +53,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/dma.conf ${STAGEDIR}${ETCDIR}/dma.conf.sample
 	${INSTALL_DATA} ${WRKSRC}/auth.conf ${STAGEDIR}${ETCDIR}/auth.conf.sample
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/sumo/Makefile 480700 2018-09-25 22:05:45Z brooks $
+# $FreeBSD: head/cad/sumo/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	sumo
 DISTVERSION=	0.31.0
@@ -44,12 +44,4 @@ do-install-DOCS-on:
 	@cd ${WRKSRC}/docs && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}
 	@${FIND} ${STAGEDIR}${DOCSDIR} -d -empty -delete
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-BUILD_DEPENDS+=	clang60:devel/llvm60
-CC=		clang60
-CXX=		clang++60 # fails to build with the default compiler on 10
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

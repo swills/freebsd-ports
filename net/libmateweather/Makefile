@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net/libmateweather/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/libmateweather/Makefile 483860 2018-11-02 23:54:25Z ericbsd $
 
 PORTNAME=	libmateweather
-PORTVERSION=	1.20.0
+PORTVERSION=	1.20.1
 CATEGORIES=	net mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

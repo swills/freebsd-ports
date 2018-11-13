@@ -1,8 +1,8 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-responses/Makefile 483193 2018-10-27 23:23:05Z sunpoet $
+# $FreeBSD: head/devel/py-responses/Makefile 484579 2018-11-10 07:57:26Z sunpoet $
 
 PORTNAME=	responses
-PORTVERSION=	0.10.2
+PORTVERSION=	0.10.3
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

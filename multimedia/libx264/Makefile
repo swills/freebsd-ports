@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/libx264/Makefile 480026 2018-09-18 14:48:48Z emaste $
+# $FreeBSD: head/multimedia/libx264/Makefile 484698 2018-11-11 15:39:57Z jbeich $
 #
 # Updating notes: see multimedia/x264/Makefile.
 
@@ -14,6 +14,8 @@ LIB_DEPENDS=	#
 
 USES=		pathfix
 LDFLAGS_i386=	-Wl,-znotext
+LDFLAGS_armv6=	-Wl,-znotext
+LDFLAGS_armv7=	-Wl,-znotext
 
 OPTIONS_DEFINE=		ASM OPENCL
 OPTIONS_DEFAULT=	ASM OPENCL

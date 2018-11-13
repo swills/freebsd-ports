@@ -1,5 +1,5 @@
 # Created by: rmallory@csusb.edu
-# $FreeBSD: head/audio/rplay/Makefile 419133 2016-07-26 16:51:15Z mat $
+# $FreeBSD: head/audio/rplay/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	rplay
 PORTVERSION=	3.3.2
@@ -22,6 +22,7 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 
 INFO=		RPLAY RPTP librplay rplayd
+MAKE_ARGS=	infodir=${PREFIX}/${INFO_PATH}
 
 .include <bsd.port.pre.mk>
 

@@ -1,8 +1,8 @@
 # Created by: Tony Maher <tonymaher@optusnet.com.au>
-# $FreeBSD: head/astro/wcslib/Makefile 476214 2018-08-02 03:53:40Z danilo $
+# $FreeBSD: head/astro/wcslib/Makefile 484769 2018-11-11 20:54:12Z danilo $
 
 PORTNAME=	wcslib
-PORTVERSION=	5.19.1
+PORTVERSION=	6.2
 CATEGORIES=	astro
 MASTER_SITES=	ftp://ftp.atnf.csiro.au/pub/software/wcslib/
 
@@ -11,8 +11,9 @@ COMMENT=	Library for parsing/generating FITS headers
 
 LICENSE=	GPLv3
 
-GNU_CONFIGURE=	yes
 USES=		tar:bzip2 gmake fortran
+
+GNU_CONFIGURE=	yes
 MAKEFILE=	GNUmakefile
 USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=yes

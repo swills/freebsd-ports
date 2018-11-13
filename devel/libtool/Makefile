@@ -1,8 +1,8 @@
 # Created by: Motoyuki Kasahara <m-kasahr@sra.co.jp>
-# $FreeBSD: head/devel/libtool/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/devel/libtool/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libtool
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	Generic shared library support script
 

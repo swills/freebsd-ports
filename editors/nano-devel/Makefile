@@ -1,7 +1,8 @@
-# $FreeBSD: head/editors/nano-devel/Makefile 474132 2018-07-07 19:57:40Z danilo $
+# $FreeBSD: head/editors/nano-devel/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	nano
 PORTVERSION=	2.5.3
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://www.nano-editor.org/dist/v${PORTVERSION:R}/ \
 		GNU

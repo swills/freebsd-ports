@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-graphicaleffects/Makefile 482599 2018-10-20 16:42:46Z tcberner $
+# $FreeBSD: head/graphics/qt5-graphicaleffects/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	graphicaleffects
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 
@@ -11,6 +12,6 @@ COMMENT=	Qt Quick graphical effects
 BROKEN_armv6=		fails to install: pkg-static: Unable to access file DropShadowBase.qmlc: No such file or directory
 
 USES=		compiler:c++11-lang qmake qt-dist:5,graphicaleffects
-USE_QT=		buildtools_build core gui quick qml
+USE_QT=		buildtools_build core declarative gui
 
 .include <bsd.port.mk>

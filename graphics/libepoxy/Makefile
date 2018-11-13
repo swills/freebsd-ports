@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libepoxy/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/graphics/libepoxy/Makefile 484475 2018-11-08 20:31:08Z zeising $
 
 PORTNAME=	libepoxy
 PORTVERSION=	1.5.2
@@ -13,18 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		localbase meson pkgconfig python:3.3+,build tar:xz
 USE_XORG=	x11
-USE_GL=		gl glesv2
+USE_GL=		gl glesv2 egl
 USE_LDCONFIG=	yes
-
-OPTIONS_SUB=	yes
-OPTIONS_DEFINE=	EGL
-OPTIONS_DEFAULT=EGL
-
-OPTIONS_EXCLUDE_sparc64=	EGL
-OPTIONS_EXCLUDE_mips=	EGL
-
-EGL_DESC=	Build EGL support
-EGL_USE=	GL=egl
-EGL_MESON_YES=	egl
 
 .include <bsd.port.mk>

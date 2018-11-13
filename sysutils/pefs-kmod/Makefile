@@ -1,5 +1,5 @@
 # Created by: Gleb Kurtsou <gleb@FreeBSD.org>
-# $FreeBSD: head/sysutils/pefs-kmod/Makefile 445555 2017-07-12 00:16:54Z kmoore $
+# $FreeBSD: head/sysutils/pefs-kmod/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	pefs
 DISTVERSION=	2017-06-20
@@ -40,11 +40,7 @@ MAKE_ENV+=	PEFS_AESNI=yes
 .endif
 
 .if ${OPSYS} == FreeBSD
-. if ${OSVERSION} >= 1100117
 PLIST_FILES+=	lib/pam_pefs.so.6
-. else
-PLIST_FILES+=	lib/pam_pefs.so.5
-. endif
 .endif
 
 .include <bsd.port.mk>

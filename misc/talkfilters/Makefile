@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/misc/talkfilters/Makefile 458101 2018-01-05 02:57:35Z jbeich $
+# $FreeBSD: head/misc/talkfilters/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	talkfilters
 PORTVERSION=	2.3.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.hyperrealm.com/talkfilters/ \
 		LOCAL/ehaupt

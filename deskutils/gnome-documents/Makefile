@@ -1,8 +1,8 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-documents/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/deskutils/gnome-documents/Makefile 484884 2018-11-13 17:44:13Z kwm $
 
 PORTNAME=	gnome-documents
-PORTVERSION=	3.28.1
+PORTVERSION=	3.28.2
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

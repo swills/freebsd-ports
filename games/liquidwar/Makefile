@@ -1,9 +1,9 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/games/liquidwar/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/liquidwar/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	liquidwar
 PORTVERSION=	5.6.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	http://liquidwar.sunsite.dk/archive/ \
 		SAVANNAH \

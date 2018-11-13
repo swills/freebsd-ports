@@ -1,13 +1,12 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/hdf5-18/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/hdf5-18/Makefile 484476 2018-11-08 20:55:13Z thierry $
 
 PORTNAME=	hdf5
-PORTVERSION=	1.8.20 # When PORTVERSION changes, please update french/med/files/patch-configure
-PORTREVISION=	2
+PORTVERSION=	1.8.21 # When PORTVERSION changes, please update french/med/files/patch-configure
 CATEGORIES=	science archivers graphics
-MASTER_SITES=	https://support.hdfgroup.org/ftp/HDF5/current18/src/	\
-		http://support.hdfgroup.org/ftp/HDF5/current18/src/	\
-		ftp://ftp.hdfgroup.org/HDF5/current18/src/
+MASTER_SITES=	https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/${PORTNAME}-${PORTVERSION}/src/	\
+		http://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/${PORTNAME}-${PORTVERSION}/src/	\
+		ftp://ftp.hdfgroup.org/HDF5/releases/hdf5-1.8/${PORTNAME}-${PORTVERSION}/src/
 PKGNAMESUFFIX=	-18
 
 MAINTAINER=	thierry@FreeBSD.org

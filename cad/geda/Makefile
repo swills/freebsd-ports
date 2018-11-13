@@ -1,10 +1,10 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/cad/geda/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/cad/geda/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	geda
 PORTVERSION=	1.8.2
 DISTVERSIONPREFIX=gaf-
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	cad
 MASTER_SITES=	http://ftp.geda-project.org/${PORTNAME}-gaf/stable/v${PORTVERSION:R}/${PORTVERSION}/

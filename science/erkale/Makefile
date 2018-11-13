@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/erkale/Makefile 482718 2018-10-21 17:56:11Z yuri $
+# $FreeBSD: head/science/erkale/Makefile 484691 2018-11-11 13:32:31Z danilo $
 
 PORTNAME=	erkale
 DISTVERSION=	g20181009
+PORTREVISION=	1
 CATEGORIES=	science
 DIST_SUBDIR=	${PORTNAME}${PKGNAMESUFFIX}
 

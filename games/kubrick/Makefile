@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/kubrick/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/kubrick/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kubrick
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,7 +12,7 @@ USES=		cmake:outsource kde:5 qt:5 tar:xz
 USE_GL=		gl glu
 USE_KDE=	auth codecs config configwidgets coreaddons crash ecm \
 		i18n kio libkdegames service widgetsaddons xmlgui
-USE_QT=		core dbus gui network opengl qml quick svg widgets xml \
+USE_QT=		core dbus declarative gui network opengl svg widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	DOCS

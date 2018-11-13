@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/heroes/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/games/heroes/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	heroes
 PORTVERSION=	0.21
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	games
 MASTER_SITES=	SF \
 		SF/${PORTNAME}/${PORTNAME}-data/${DATAVERSION}:data \

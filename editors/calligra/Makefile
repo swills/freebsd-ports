@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/calligra/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/editors/calligra/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	calligra
 DISTVERSION=	3.1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	editors kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}
@@ -47,9 +47,9 @@ USE_KDE=	activities archive auth bookmarks codecs completion config \
 		texteditor textwidgets threadweaver unitconversion wallet \
 		widgetsaddons windowsystem xmlgui \
 		calendarcore okular
-USE_QT=		buildtools_build core dbus gui network opengl \
-		phonon4 printsupport qmake_build qml \
-		quick script sql svg testlib webkit widgets x11extras xml
+USE_QT=		buildtools_build core dbus declarative gui network opengl \
+		phonon4 printsupport qmake_build \
+		script sql svg testlib webkit widgets x11extras xml
 USE_XORG=	ice sm x11 xext
 USE_LDCONFIG=	yes
 

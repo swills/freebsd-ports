@@ -1,9 +1,9 @@
 # Created by: Tim Bishop <tim@bishnet.net>
-# $FreeBSD: head/mail/gnubiff/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/mail/gnubiff/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnubiff
 PORTVERSION=	2.2.13
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	mail
 MASTER_SITES=	SF
 

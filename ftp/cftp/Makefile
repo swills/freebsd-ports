@@ -1,9 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/ftp/cftp/Makefile 450575 2017-09-25 09:01:58Z amdmi3 $
+# $FreeBSD: head/ftp/cftp/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cftp
 PORTVERSION=	0.12
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	ftp://ftp.giga.or.at/pub/nih/cftp/ \
 		ftp://sunsite.univie.ac.at/pub/nih/cftp/

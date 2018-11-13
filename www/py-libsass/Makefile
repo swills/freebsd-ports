@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-libsass/Makefile 480841 2018-09-28 05:54:28Z yuri $
+# $FreeBSD: head/www/py-libsass/Makefile 483815 2018-11-02 15:12:08Z linimon $
 
 PORTNAME=	libsass
 DISTVERSION=	0.15.1
@@ -13,12 +13,10 @@ COMMENT=	Straightforward binding of libsass for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option -std=c++0x
-
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 LIB_DEPENDS=	libsass.so:textproc/libsass
 
-USES=		localbase python
+USES=		compiler:c++11-lang localbase python
 USE_PYTHON=	autoplist distutils
 
 MAKE_ENV=	SYSTEM_SASS=1

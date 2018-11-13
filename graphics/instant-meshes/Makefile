@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/instant-meshes/Makefile 481833 2018-10-11 14:47:13Z martymac $
+# $FreeBSD: head/graphics/instant-meshes/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	instant-meshes
 DISTVERSION=	0.0-42
@@ -12,7 +12,7 @@ COMMENT=	Interactive field-aligned mesh generator
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	convert:graphics/ImageMagick
+BUILD_DEPENDS=	convert:graphics/ImageMagick6
 LIB_DEPENDS=	libglfw.so:graphics/glfw \
 		libtbb.so:devel/tbb
 RUN_DEPENDS=	zenity:x11/zenity

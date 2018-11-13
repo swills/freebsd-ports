@@ -1,5 +1,5 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/terminatorx/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/audio/terminatorx/Makefile 484092 2018-11-04 14:44:56Z antoine $
 #    $MCom: ports/audio/terminatorx/Makefile,v 1.6 2007/08/04 03:51:28 marcus Exp $
 
 PORTNAME=	terminatorx
@@ -14,6 +14,8 @@ COMMENT=	Realtime audio synthesizer that allows you to "scratch" on audio data
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${LOCALBASE}/include/ladspa.h:audio/ladspa \
 		rarian-sk-config:textproc/rarian

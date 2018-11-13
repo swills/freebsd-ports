@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/webhook/Makefile 465583 2018-03-26 12:24:18Z jrm $
+# $FreeBSD: head/www/webhook/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	webhook
 PORTVERSION=	2.6.8
@@ -20,7 +20,7 @@ PLIST_FILES=	"@sample etc/webhook.yaml.sample" sbin/webhook
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100513
+.if ${OPSYS} == FreeBSD
 DAEMONARGS=	-S -l \$${webhook_facility} -s \$${webhook_priority} -t \$${name}
 .else
 DAEMONARGS=	-f

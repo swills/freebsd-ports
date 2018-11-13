@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/security/git-crypt/Makefile 466642 2018-04-06 13:56:40Z ashish $
+# $FreeBSD: head/security/git-crypt/Makefile 484462 2018-11-08 16:00:12Z ashish $
 
 PORTNAME=	git-crypt
 PORTVERSION=	0.6.0
@@ -18,6 +18,7 @@ RUN_DEPENDS=	git:devel/git \
 
 OPTIONS_DEFINE=	MANPAGES
 
+CXXFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
 MAKE_ENV+=	PREFIX=${PREFIX} "CXXFLAGS=${CXXFLAGS}" \
 		"LDFLAGS=${LDFLAGS}"

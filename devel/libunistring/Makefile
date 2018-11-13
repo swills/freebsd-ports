@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libunistring/Makefile 472092 2018-06-09 21:19:07Z swills $
+# $FreeBSD: head/devel/libunistring/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libunistring
 PORTVERSION=	0.9.10
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-activeresource5/Makefile 440791 2017-05-13 12:11:14Z sunpoet $
+# $FreeBSD: head/www/rubygem-activeresource5/Makefile 484130 2018-11-04 18:57:09Z sunpoet $
 
 PORTNAME=	activeresource
-PORTVERSION=	5.0.0
+PORTVERSION=	5.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-activemodel5>=5.0:databases/rubygem-activemodel5 \
 		rubygem-activemodel-serializers-xml>=1.0:databases/rubygem-activemodel-serializers-xml \
 		rubygem-activesupport5>=5.0:devel/rubygem-activesupport5
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

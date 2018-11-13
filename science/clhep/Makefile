@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/science/clhep/Makefile 479992 2018-09-18 08:21:26Z linimon $
+# $FreeBSD: head/science/clhep/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	clhep
 PORTVERSION=	2.4.0.4
@@ -12,8 +12,6 @@ COMMENT=	Object-oriented toolkit for particle physics applications by CERN
 
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
-
-BROKEN_FreeBSD_10=	does not compile on clang3.4, requires 3.5+
 
 WRKSRC=		${WRKDIR}/${PORTVERSION}/${PORTNAME:tu}
 

@@ -1,9 +1,10 @@
 # Created by: Zastupov Stepan [RedChrom] <redchrom@mail.ru>
-# $FreeBSD: head/multimedia/audacious-plugins-gtk3/Makefile 480027 2018-09-18 14:50:27Z madpilot $
+# $FreeBSD: head/multimedia/audacious-plugins-gtk3/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	audacious-plugins
 PORTVERSION=	3.10
 DISTVERSIONSUFFIX=	-gtk3
+PORTREVISION=	1
 CATEGORIES=	multimedia audio
 #MASTER_SITES=	http://distfiles.audacious-media-player.org/
 PKGNAMESUFFIX=	${DISTVERSIONSUFFIX}

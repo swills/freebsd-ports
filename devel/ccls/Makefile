@@ -1,15 +1,13 @@
-# $FreeBSD: head/devel/ccls/Makefile 483304 2018-10-28 15:06:31Z tobik $
+# $FreeBSD: head/devel/ccls/Makefile 484790 2018-11-12 07:38:30Z tobik $
 
 PORTNAME=	ccls
-DISTVERSION=	0.20181024
+DISTVERSION=	0.20181111
 CATEGORIES=	devel
 
 MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	C/C++/ObjC language server
 
 LICENSE=	APACHE20
-
-IGNORE_FreeBSD_10=	needs newer libc++
 
 BUILD_DEPENDS=	llvm${LLVM_DEFAULT}>0:devel/llvm${LLVM_DEFAULT} \
 		rapidjson>=1.1.0_4:devel/rapidjson

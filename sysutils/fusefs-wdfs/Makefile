@@ -1,5 +1,5 @@
 # Created by: Gyorgy Teubel <tgyurci@freemail.hu>
-# $FreeBSD: head/sysutils/fusefs-wdfs/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/fusefs-wdfs/Makefile 483904 2018-11-03 17:44:51Z danfe $
 
 PORTNAME=	wdfs
 PORTVERSION=	1.4.2
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	fusefs-
 
 MAINTAINER=	silverless@gmx.com
 COMMENT=	Mount remote WebDAV directories with Fuse
+
+DEPRECATED=	Abandonware, functionally incomplete, has problems with caching
+EXPIRATION_DATE=	2019-02-03
 
 LICENSE=	GPLv2
 

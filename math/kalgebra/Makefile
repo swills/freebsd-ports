@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/kalgebra/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/math/kalgebra/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kalgebra
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -16,7 +17,7 @@ USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_GL=		glu
 USE_KDE=	auth codecs config configwidgets coreaddons doctools ecm i18n \
 		kio service widgetsaddons xmlgui
-USE_QT=		core dbus gui location network opengl printsupport qml quick \
+USE_QT=		core dbus declarative gui location network opengl printsupport \
 		svg testlib webchannel webengine widgets xml \
 		buildtools_build qmake_build
 

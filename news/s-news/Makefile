@@ -1,9 +1,9 @@
 # Created by: Andrey Slusar <anray@FreeBSD.org>
-# $FreeBSD: head/news/s-news/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/s-news/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	s-news
 PORTVERSION=	0.1.11
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	news
 MASTER_SITES=	http://www.lost.org.uk/
 

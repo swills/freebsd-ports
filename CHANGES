@@ -10,6 +10,11 @@ in the release notes and/or placed into UPDATING.
 
 All ports committers are allowed to commit to this file.
 
+20181110:
+AUTHOR: bapt@FreeBSD.org
+
+  texinfo files are now installed in ${PREFIX}/share/info
+
 20180630:
 AUTHOR: kde@FreeBSD.org
 
@@ -3602,4 +3607,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: head/CHANGES 473503 2018-06-28 17:39:53Z tcberner $
+$FreeBSD: head/CHANGES 484628 2018-11-10 18:12:57Z bapt $

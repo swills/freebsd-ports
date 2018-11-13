@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 483740 2018-11-01 20:48:03Z mfechner $
+# $FreeBSD: head/devel/Makefile 484707 2018-11-11 18:17:59Z sunpoet $
 #
 
     COMMENT = Development utilities
@@ -875,6 +875,7 @@
     SUBDIR += gradle
     SUBDIR += grantlee
     SUBDIR += grantlee5
+    SUBDIR += graphql.el
     SUBDIR += grpc
     SUBDIR += grumpy
     SUBDIR += grv
@@ -2779,6 +2780,7 @@
     SUBDIR += p5-IPC-ShellCmd
     SUBDIR += p5-IPC-Signal
     SUBDIR += p5-IPC-System-Simple
+    SUBDIR += p5-IRI
     SUBDIR += p5-Import-Base
     SUBDIR += p5-Import-Into
     SUBDIR += p5-Importer
@@ -6212,6 +6214,7 @@
     SUBDIR += spin
     SUBDIR += spirv-tools
     SUBDIR += splint
+    SUBDIR += spread-sheet-widget
     SUBDIR += srecord
     SUBDIR += st
     SUBDIR += stack
@@ -6298,6 +6301,7 @@
     SUBDIR += tortoisehg
     SUBDIR += tpasm
     SUBDIR += trac-bitten
+    SUBDIR += treepy.el
     SUBDIR += tradcpp
     SUBDIR += trio
     SUBDIR += truc

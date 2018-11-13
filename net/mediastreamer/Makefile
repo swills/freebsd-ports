@@ -1,8 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/mediastreamer/Makefile 482343 2018-10-18 13:31:00Z tijl $
+# $FreeBSD: head/net/mediastreamer/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	mediastreamer
 PORTVERSION=	2.16.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://www.linphone.org/releases/sources/mediastreamer/
 

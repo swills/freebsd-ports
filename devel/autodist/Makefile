@@ -1,8 +1,9 @@
 # Created by: Peter Johnson <johnson.peter@gmail.com>
-# $FreeBSD: head/devel/autodist/Makefile 341393 2014-01-27 12:57:39Z bapt $
+# $FreeBSD: head/devel/autodist/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	autodist
 PORTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://silcnet.org/download/autodist/sources/ \
 		http://public.planetmirror.com/pub/silcnet/autodist/sources/ \

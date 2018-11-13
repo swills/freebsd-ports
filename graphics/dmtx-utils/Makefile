@@ -1,9 +1,9 @@
 # Created by: johans
-# $FreeBSD: head/graphics/dmtx-utils/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/dmtx-utils/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	dmtx-utils
 PORTVERSION=	0.7.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	SF/libdmtx/libdmtx/${PORTVERSION}
 
@@ -13,8 +13,8 @@ COMMENT=	Software for reading and writing Data Matrix barcodes
 LICENSE=	LGPL21+
 
 LIB_DEPENDS=	libdmtx.so:graphics/libdmtx \
-		libMagickWand-6.so:graphics/ImageMagick \
-		libMagickCore-6.so:graphics/ImageMagick
+		libMagickWand-6.so:graphics/ImageMagick6 \
+		libMagickCore-6.so:graphics/ImageMagick6
 
 USES=		localbase tar:bzip2 pkgconfig
 GNU_CONFIGURE=	yes

@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 483435 2018-10-29 22:32:17Z cmt $
+# $FreeBSD: head/Mk/bsd.gecko.mk 483807 2018-11-02 13:32:34Z rene $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -163,8 +163,6 @@ RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/}
 MOZ_EXPORT+=	MOZ_JEMALLOC4=1
 .if ${MOZILLA_VER:R:R} >= 48
 MOZ_OPTIONS+=	--enable-jemalloc=4
-.elif ${OSVERSION} < 1100079
-MOZ_OPTIONS+=	--enable-jemalloc
 .endif # Mozilla >= 48
 .endif # Mozilla < 55
 
@@ -414,9 +412,6 @@ MOZ_OPTIONS+=	--enable-rust-simd
 .if ${PORT_OPTIONS:MDTRACE}
 MOZ_OPTIONS+=	--enable-dtrace \
 		--disable-gold
-. if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100061
-LIBS+=			-lelf
-. endif
 STRIP=
 .else
 MOZ_OPTIONS+=	--disable-dtrace

@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <jmd@freebsd.org>
-# $FreeBSD: head/devel/oclgrind/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/oclgrind/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	oclgrind
 PORTVERSION=	20180101
@@ -12,8 +12,6 @@ COMMENT=	SPIR interpreter and virtual OpenCL device simulator
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_FreeBSD_10=	oclgrind is only supported on FreeBSD 11.0 and newer, crashes LLVM 3.4
 
 BUILD_DEPENDS=	opencl>=0:devel/opencl \
 		llvm-config50:devel/llvm50

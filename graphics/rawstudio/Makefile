@@ -1,5 +1,5 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/graphics/rawstudio/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/rawstudio/Makefile 484082 2018-11-04 14:33:20Z antoine $
 
 PORTNAME=	rawstudio
 PORTVERSION=	2.0
@@ -11,6 +11,8 @@ MAINTAINER=	samm@os2.kiev.ua
 COMMENT=	Open-source program to read and manipulate RAW photo images
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		liblcms.so:graphics/lcms \

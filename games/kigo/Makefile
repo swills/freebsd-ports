@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/kigo/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/kigo/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kigo
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,7 +13,7 @@ USE_KDE=	attica auth codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm i18n jobwidgets kio \
 		libkdegames newstuff notifyconfig service sonnet textwidgets \
 		widgetsaddons xmlgui
-USE_QT=		core dbus gui network qml quick svg widgets xml \
+USE_QT=		core dbus declarative gui network svg widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	DOCS

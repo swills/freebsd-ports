@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/reaver/Makefile 480498 2018-09-23 12:28:37Z linimon $
+# $FreeBSD: head/net/reaver/Makefile 483805 2018-11-02 13:16:51Z 0mp $
 
 PORTNAME=	reaver
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.6.5
 CATEGORIES=	net
 
-MAINTAINER=	martinfilla@post.cz
+MAINTAINER=	freebsd@sysctl.cz
 COMMENT=	Reaver brute force attack against WPS (Wi-Fi Protected Setup)
 
 LICENSE=	GPLv2

@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/graphics/gauche-gl/Makefile 479979 2018-09-18 07:10:07Z linimon $
+# $FreeBSD: head/graphics/gauche-gl/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gl
 PORTVERSION=	0.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics scheme
 MASTER_SITES=	SF/gauche/Gauche-gl
 PKGNAMEPREFIX=	gauche-

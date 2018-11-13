@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/yarn/Makefile 483656 2018-11-01 11:50:48Z adamw $
+# $FreeBSD: head/www/yarn/Makefile 484828 2018-11-12 21:27:03Z pizzamig $
 
 PORTNAME=	yarn
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.10.1
+DISTVERSION=	1.12.3
 CATEGORIES=	www
 MASTER_SITES=	https://yarnpkg.com/downloads/${PORTVERSION}/
 

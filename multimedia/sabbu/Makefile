@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/sabbu/Makefile 479427 2018-09-10 14:40:53Z mat $
+# $FreeBSD: head/multimedia/sabbu/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	sabbu
 PORTVERSION=	0.3.0
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Sabbu%20${PORTVERSION}
 

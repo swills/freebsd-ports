@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/bitcoin/Makefile 481609 2018-10-09 07:56:25Z ale $
+# $FreeBSD: head/net-p2p/bitcoin/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	bitcoin
 PORTVERSION=	0.17.0
@@ -111,10 +111,6 @@ CONFIGURE_ARGS+=	--disable-wallet
 .if ${PORT_OPTIONS:MWALLET_BDB48} || ${PORT_OPTIONS:MWALLET_BDBMODERN}
 CPPFLAGS+=	-I${BDB_INCLUDE_DIR}
 LIBS+=		-L${BDB_LIB_DIR}
-.endif
-
-.if ${OSVERSION} < 1100000
-CONFIGURE_ARGS+=--disable-asm
 .endif
 
 .if defined(SLAVE_PORT) && ${SLAVE_PORT} == "no"

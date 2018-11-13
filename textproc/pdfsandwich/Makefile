@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/pdfsandwich/Makefile 476966 2018-08-12 05:49:24Z yuri $
+# $FreeBSD: head/textproc/pdfsandwich/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	pdfsandwich
 DISTVERSION=	0.1.7
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/pdfsandwich%20${DISTVERSION}/
 
@@ -12,7 +13,7 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	gawk:lang/gawk \
 		ocamlopt:lang/ocaml
-RUN_DEPENDS=	convert:graphics/ImageMagick \
+RUN_DEPENDS=	convert:graphics/ImageMagick6 \
 		tesseract:graphics/tesseract \
 		unpaper:graphics/unpaper
 

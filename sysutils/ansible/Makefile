@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/ansible/Makefile 482130 2018-10-15 00:58:09Z lifanov $
+# $FreeBSD: head/sysutils/ansible/Makefile 484164 2018-11-05 02:07:09Z lifanov $
 
 PORTNAME=	ansible
-PORTVERSION?=	2.7.0
+PORTVERSION?=	2.7.1
 PORTREVISION?=	0
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://releases.ansible.com/ansible/
@@ -60,7 +60,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	${FIND} ${WRKSRC} -type f -print0 | ${XARGS} -0 ${REINPLACE_CMD} \
-		-e 's|/etc/ansible|${ETCDIR}|g' \
+		-e 's|/etc/ansible|${ETCDIR:S/${PY_FLAVOR}-//}|g' \
 		-e 's|/usr/share/ansible|${DATADIR}|g'
 
 post-install:

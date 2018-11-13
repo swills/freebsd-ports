@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/elk/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/lang/elk/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	elk
 PORTVERSION=	3.99.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang scheme
 MASTER_SITES=	http://sam.zoy.org/elk/
 

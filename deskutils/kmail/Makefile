@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/kmail/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/kmail/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kmail
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -34,7 +35,7 @@ USE_KDE+=	akonadi akonadicontacts akonadimime akonadisearch calendarcore \
 		kontactinterface ldap mailcommon mailtransport messagelib \
 		mime pimcommon pimtextedit tnef \
 		kdepim-runtime5_run
-USE_QT=		core dbus gui location network printsupport qml quick \
+USE_QT=		core dbus declarative gui location network printsupport \
 		webchannel webengine widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

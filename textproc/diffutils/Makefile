@@ -1,8 +1,9 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/textproc/diffutils/Makefile 445098 2017-07-05 21:07:39Z johans $
+# $FreeBSD: head/textproc/diffutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	diffutils
 PORTVERSION=	3.6
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 

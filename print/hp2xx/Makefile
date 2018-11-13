@@ -1,9 +1,9 @@
 # Created by: Lars Koeller
-# $FreeBSD: head/print/hp2xx/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/hp2xx/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	hp2xx
 PORTVERSION=	3.4.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	print x11
 MASTER_SITES=	GNU
 
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 WRKSRC_SUBDIR=	sources
 
 USES=		makeinfo
+MAKE_ARGS=	infodir=${PREFIX}/${INFO_PATH}
 MAKE_ENV=	DEFINES="${CPPFLAGS}" ALL_LIBS="${LDFLAGS}"
 
 CPPFLAGS+=	-DUNIX -I${LOCALBASE}/include

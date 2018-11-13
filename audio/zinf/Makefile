@@ -1,9 +1,9 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/audio/zinf/Makefile 480747 2018-09-26 16:12:12Z emaste $
+# $FreeBSD: head/audio/zinf/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	zinf
 PORTVERSION=	2.2.5
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	audio ipv6
 MASTER_SITES=	SF
 

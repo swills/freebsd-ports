@@ -1,7 +1,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/net/avahi-gtk3/Makefile 477049 2018-08-13 02:18:28Z zi $
+# $FreeBSD: head/net/avahi-gtk3/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	net
 PKGNAMESUFFIX=	-gtk3
 

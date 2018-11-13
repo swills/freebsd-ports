@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/rubygem-rmagick/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/rubygem-rmagick/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	rmagick
 PORTVERSION=	2.16.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 
@@ -17,7 +17,7 @@ OPTIONS_DEFAULT=X11
 USE_RUBY=	yes
 USES=		gem pkgconfig
 
-X11_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
-X11_LIB_DEPENDS_OFF=	libMagickWand-6.so:graphics/ImageMagick-nox11
+X11_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
+X11_LIB_DEPENDS_OFF=	libMagickWand-6.so:graphics/ImageMagick6-nox11
 
 .include <bsd.port.mk>

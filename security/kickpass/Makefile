@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kickpass/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
+# $FreeBSD: head/security/kickpass/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	kickpass
 PORTVERSION=	0.2.0
@@ -17,8 +17,6 @@ BUILD_DEPENDS=	checkmk:devel/check
 
 USES=		cmake
 USE_XORG=	x11
-
-BROKEN_FreeBSD_10=	requires reallocarray(3)
 
 PLIST_FILES=	bin/kickpass \
 		lib/libkickpass.so \

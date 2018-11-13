@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <sergey.kozlov@intel.com>
-# $FreeBSD: head/net/intel-ixl-kmod/Makefile 482220 2018-10-16 12:02:50Z skozlov $
+# $FreeBSD: head/net/intel-ixl-kmod/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME?=	ixl
 PORTVERSION?=	1.9.13
@@ -55,7 +55,7 @@ ONLY_FOR_ARCHS=		amd64
 ONLY_FOR_ARCHS_REASON=	Not supported on other architectures, amd64 only.
 .endif
 
-.if ${PORT_OPTIONS:MNETMAP_AUTO} && ${OSVERSION} >= 1100000  && ${OSVERSION} <= ${MAX_NETMAP_OSVERSION}
+.if ${PORT_OPTIONS:MNETMAP_AUTO} && ${OSVERSION} <= ${MAX_NETMAP_OSVERSION}
 CFLAGS+=	-DDEV_NETMAP
 .endif
 

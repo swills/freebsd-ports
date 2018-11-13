@@ -1,9 +1,10 @@
 # Created by: se@FreeBSD.org
-# $FreeBSD: head/multimedia/dvbcut/Makefile 478793 2018-09-02 15:01:24Z mat $
+# $FreeBSD: head/multimedia/dvbcut/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	dvbcut
 PORTVERSION=	0.7.3
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	se@FreeBSD.org

@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/sysadm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/sysadm/Makefile 484224 2018-11-05 21:36:05Z kmoore $
 
 PORTNAME=	sysadm
-PORTVERSION=	1.0
-PORTREVISION=	1
+PORTVERSION=	1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

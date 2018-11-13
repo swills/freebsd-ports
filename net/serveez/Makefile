@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/net/serveez/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/net/serveez/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	serveez
 PORTVERSION=	0.2.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net devel
 MASTER_SITES=	GNU
 

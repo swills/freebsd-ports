@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/qt5-wayland/Makefile 482189 2018-10-15 23:59:23Z jbeich $
+# $FreeBSD: head/graphics/qt5-wayland/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	wayland
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 USES=		pkgconfig qmake:norecursive qt-dist:5,wayland
 USE_GL=		egl gl
 USE_GNOME=	glib20
-USE_QT=		core dbus gui qml quick \
+USE_QT=		core dbus gui declarative \
 		buildtools_build qmake_build
 USE_XORG=       x11 xcomposite
 

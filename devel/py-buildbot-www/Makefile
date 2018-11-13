@@ -1,16 +1,17 @@
 # Created by: Michael Gmelin <grembo@FreeBSD.org>
-# $FreeBSD: head/devel/py-buildbot-www/Makefile 474280 2018-07-09 18:50:28Z miwi $
+# $FreeBSD: head/devel/py-buildbot-www/Makefile 484380 2018-11-07 03:24:59Z koobs $
 
 PORTNAME=	buildbot-www
-PORTVERSION=	0.9.15
+PORTVERSION=	1.5.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	koobs@FreeBSD.org
-COMMENT=	Continuous Integration Framework (WWW)
+COMMENT=	Buildbot UI
 
 LICENSE=	GPLv2
+#LICENSE_FILE=	Not packaged in sdist
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot>=${PORTVERSION}:devel/py-buildbot@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg@${PY_FLAVOR} \

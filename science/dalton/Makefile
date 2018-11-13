@@ -1,8 +1,12 @@
-# $FreeBSD: head/science/dalton/Makefile 478767 2018-09-02 07:53:31Z yuri $
+# $FreeBSD: head/science/dalton/Makefile 484118 2018-11-04 18:15:36Z yuri $
 
 PORTNAME=	dalton
 DISTVERSION=	2016.2
+PORTREVISION=	1
 CATEGORIES=	science
+
+PATCH_SITES=	https://gitlab.com/${PORTNAME}/${PORTNAME}/commit/
+PATCHFILES=	b838ac7be3bba7fe9bc0fdf81b20cde37a38f3c0.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Powerful molecular electronic structure program for quantum chemistry

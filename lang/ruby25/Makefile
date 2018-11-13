@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby25/Makefile 482554 2018-10-20 14:57:33Z sunpoet $
+# $FreeBSD: head/lang/ruby25/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -85,7 +85,7 @@ _SUF2=	,${PORTEPOCH}
 .endif
 
 .if ${OPSYS} == "FreeBSD"
-.if exists(/usr/sbin/dtrace) && (${OSVERSION} > 1100032) && (${ARCH} == amd64 || ${ARCH} == i386)
+.if exists(/usr/sbin/dtrace) && (${ARCH} == amd64 || ${ARCH} == i386)
 CONFIGURE_ARGS+=--enable-dtrace
 .else
 CONFIGURE_ARGS+=--disable-dtrace

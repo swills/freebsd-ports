@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libcfu/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/libcfu/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libcfu
 DISTVERSION=	0.04a
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	crees@FreeBSD.org

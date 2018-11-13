@@ -1,9 +1,9 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/databases/couchdb/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/databases/couchdb/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	couchdb
 DISTVERSION=	1.7.2
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	2
 CATEGORIES=	databases
 MASTER_SITES=	APACHE/couchdb/source/${DISTVERSION}

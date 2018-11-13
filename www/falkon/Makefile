@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/falkon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/falkon/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	falkon
 DISTVERSION=	3.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	KDE/stable/falkon/${DISTVERSION:R}/src/
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cmake:outsource desktop-file-utils kde:5 qt:5 ssl tar:xz
 USE_KDE=	wallet
-USE_QT=		core dbus gui location network printsupport qml quick \
+USE_QT=		core dbus declarative gui location network printsupport \
 		sql webchannel webengine widgets x11extras \
 		buildtools_build qmake_build
 USE_XORG=	xcb

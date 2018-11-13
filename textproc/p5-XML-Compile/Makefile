@@ -1,8 +1,8 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/textproc/p5-XML-Compile/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-XML-Compile/Makefile 484557 2018-11-09 23:27:47Z sunpoet $
 
 PORTNAME=	XML-Compile
-PORTVERSION=	1.60
+PORTVERSION=	1.61
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,8 +20,9 @@ RUN_DEPENDS=	p5-Log-Report>=1.20:devel/p5-Log-Report \
 TEST_DEPENDS=	p5-Test-Deep>=0.095:devel/p5-Test-Deep \
 		p5-XML-Compile-Tester>=0.90:devel/p5-XML-Compile-Tester
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

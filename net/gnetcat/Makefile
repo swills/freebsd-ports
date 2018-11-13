@@ -1,9 +1,9 @@
 # Created by: liamfoy@sepulcrum.org
-# $FreeBSD: head/net/gnetcat/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/net/gnetcat/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnetcat
 PORTVERSION=	0.7.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	SF/netcat/netcat/${PORTVERSION}
 DISTNAME=	netcat-0.7.1
@@ -22,6 +22,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/netcat.1 \
 		${STAGEDIR}${MANPREFIX}/man/man1/gnetcat.1
 	${INSTALL_DATA} ${WRKSRC}/doc/netcat.info \
-		${STAGEDIR}${PREFIX}/info/gnetcat.info
+		${STAGEDIR}${PREFIX}/${INFO_PATH}/gnetcat.info
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp1/Makefile 480010 2018-09-18 11:01:50Z linimon $
+# $FreeBSD: head/net/freerdp1/Makefile 484298 2018-11-06 15:01:13Z amdmi3 $
 
 PORTNAME=	freerdp
 PORTVERSION=	1.2.0
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	net comms ipv6
 PKGNAMESUFFIX=	1
 
@@ -70,17 +70,6 @@ X11_CMAKE_BOOL=		WITH_X11
 X11_CMAKE_OFF=		-DWITH_XKBFILE=OFF
 X11_USE=		xorg=x11,xkbfile,xcursor,xorgproto,xv,xinerama,xext,xrandr,xi,xfixes,xrender
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && (${ARCH} == armv6 || ${ARCH} == armv7)
-.if ${OSVERSION} < 1100500 || \
-	(${OSVERSION} >= 1100500 && ${OSVERSION} < 1100504) || \
-	(${OSVERSION} >= 1200000 && ${OSVERSION} < 1200008)
-BROKEN=	Fails to build on ARMv6/7 (libm bug). See: r305380 (HEAD), r305971 (stable/11) [\#199422, \#211965] \
-	Please update to a later (fixed) version.
-.endif
-.endif
-
 post-patch:
 	@${FIND} ${WRKSRC} -name 'CMakeLists.txt' | ${XARGS} \
 		${REINPLACE_CMD} \
@@ -108,4 +97,4 @@ post-patch:
 		${WRKSRC}/winpr/CMakeLists.txt \
 		${WRKSRC}/CMakeLists.txt
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,10 +1,10 @@
 # Created by: Patrick Tracanelli <eksffa@freebsdbrasil.com.br>
-# $FreeBSD: head/security/suricata/Makefile 476305 2018-08-03 16:24:36Z swills $
+# $FreeBSD: head/security/suricata/Makefile 484525 2018-11-09 16:44:57Z swills $
 
 PORTNAME=	suricata
-DISTVERSION=	4.0.5
+DISTVERSION=	4.0.6
 CATEGORIES=	security
-MASTER_SITES=	http://www.openinfosecfoundation.org/download/
+MASTER_SITES=	https://www.openinfosecfoundation.org/download/
 
 MAINTAINER=	franco@opnsense.org
 COMMENT=	High Performance Network IDS, IPS and Security Monitoring engine

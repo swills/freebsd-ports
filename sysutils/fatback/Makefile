@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/sysutils/fatback/Makefile 428725 2016-12-17 12:31:49Z ehaupt $
+# $FreeBSD: head/sysutils/fatback/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	fatback
 PORTVERSION=	1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

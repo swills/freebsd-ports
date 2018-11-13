@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/www/rubygem-jekyll/Makefile 481152 2018-10-03 09:38:33Z amdmi3 $
+# $FreeBSD: head/www/rubygem-jekyll/Makefile 484751 2018-11-11 18:24:12Z sunpoet $
 
 PORTNAME=	jekyll
-PORTVERSION=	3.8.4
+PORTVERSION=	3.8.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -25,10 +25,9 @@ RUN_DEPENDS=	rubygem-addressable>=2.4:www/rubygem-addressable \
 		rubygem-rouge>=1.7:textproc/rubygem-rouge \
 		rubygem-safe_yaml>=1.0:devel/rubygem-safe_yaml
 
-CONFLICTS_INSTALL=	rubygem-jekyll2-*
-
 USES=		gem
 USE_RUBY=	yes
+
 NO_ARCH=	yes
 
 PLIST_FILES=	bin/jekyll

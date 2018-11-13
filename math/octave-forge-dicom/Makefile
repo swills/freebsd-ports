@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-dicom/Makefile 476952 2018-08-12 02:57:03Z stephen $
+# $FreeBSD: head/math/octave-forge-dicom/Makefile 484822 2018-11-12 20:47:18Z stephen $
 
 PORTNAME=	octave-forge-dicom
 PORTVERSION=	0.2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

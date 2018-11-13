@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-softhddevice/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/multimedia/vdr-plugin-softhddevice/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	vdr-plugin-softhddevice
 PORTVERSION=	0.5.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	multimedia
 MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/1000/
 DISTNAME=	${PORTNAME:S/-plugin-/-/}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

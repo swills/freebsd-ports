@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/p5-jmx4perl/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/net-mgmt/p5-jmx4perl/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	jmx4perl
 PORTVERSION=	1.11
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ROLAND
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	JMX access for Perl
 
 BUILD_DEPENDS=	${RUN_DEPENDS}

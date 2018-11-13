@@ -1,9 +1,9 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/graphics/driconf/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/driconf/Makefile 484376 2018-11-07 01:08:38Z cem $
 
 PORTNAME=	driconf
 PORTVERSION=	0.9.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	graphics
 MASTER_SITES=	DEBIAN
 DISTFILES=	${PORTNAME}_${PORTVERSION}.orig.tar.gz
@@ -11,7 +11,8 @@ DISTFILES=	${PORTNAME}_${PORTVERSION}.orig.tar.gz
 MAINTAINER=	lichray@gmail.com
 COMMENT=	Configuration program for DRI drivers
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/__init__.py:x11-toolkits/py-gtk2
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/__init__.py:x11-toolkits/py-gtk2 \
+		xdriinfo:x11/xdriinfo
 
 USE_GL=		glut
 USE_PYTHON=	distutils

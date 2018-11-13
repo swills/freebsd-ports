@@ -1,9 +1,10 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/editors/with-editor/Makefile 483672 2018-11-01 15:04:17Z swills $
+# $FreeBSD: head/editors/with-editor/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	with-editor
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.8.0
+PORTREVISION=	1
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

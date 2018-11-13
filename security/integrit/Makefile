@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
-# $FreeBSD: head/security/integrit/Makefile 425257 2016-11-03 16:33:34Z linimon $
+# $FreeBSD: head/security/integrit/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	integrit
 PORTVERSION=	4.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF
 

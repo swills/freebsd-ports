@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/supertux2/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/supertux2/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	supertux
 PORTVERSION=	0.4.0
@@ -14,8 +14,6 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/smart_ptr.hpp:devel/boost-libs
 LIB_DEPENDS=	libphysfs.so:devel/physfs \
 		libcurl.so:ftp/curl \
 		libvorbis.so:audio/libvorbis
-
-BROKEN_FreeBSD_10=	does not build on 10.x
 
 LLD_UNSAFE=	yes
 USE_SDL=	sdl2 image2

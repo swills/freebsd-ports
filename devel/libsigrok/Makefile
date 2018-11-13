@@ -1,9 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/libsigrok/Makefile 481952 2018-10-13 00:44:29Z amdmi3 $
+# $FreeBSD: head/devel/libsigrok/Makefile 483891 2018-11-03 12:34:51Z bsam $
 
 PORTNAME=	libsigrok
-PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTVERSION=	0.5.1
 CATEGORIES=	devel
 MASTER_SITES=	http://sigrok.org/download/source/libsigrok/
 
@@ -19,9 +18,9 @@ LIB_DEPENDS=	libftdi1.so:devel/libftdi1 \
 		libvisa.so:devel/librevisa \
 		libzip.so:archivers/libzip
 
+USES=		gnome pathfix libtool pkgconfig
+
 GNU_CONFIGURE=	yes
-USES=		pathfix libtool pkgconfig
-USE_GNOME=	glib20
 INSTALL_TARGET=	install-strip
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes

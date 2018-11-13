@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/logitechmediaserver/Makefile 469272 2018-05-07 08:11:06Z rodrigo $
+# $FreeBSD: head/audio/logitechmediaserver/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	logitechmediaserver
 PORTVERSION=	7.9.1.g2018.04.23
@@ -13,7 +13,6 @@ LICENSE_FILE=	${WRKSRC}/License.txt
 LICENSE_PERMS=	no-dist-mirror no-dist-sell no-pkg-mirror no-pkg-sell
 
 ONLY_FOR_ARCHS=	amd64 i386
-BROKEN_FreeBSD_10_i386= libmediascan does not compile
 
 BUILD_DEPENDS=	nasm:devel/nasm \
 		bash:shells/bash \

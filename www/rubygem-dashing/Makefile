@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-dashing/Makefile 458435 2018-01-08 16:32:05Z feld $
+# $FreeBSD: head/www/rubygem-dashing/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	dashing
 PORTVERSION=	1.3.7
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	www devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	HTML dashboard framwork based on sinatra
 
 LICENSE=	MIT

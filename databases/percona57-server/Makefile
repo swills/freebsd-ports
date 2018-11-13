@@ -1,9 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-server/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/databases/percona57-server/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME?=	percona
 DISTVERSION=	5.7.21-20
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://www.percona.com/downloads/Percona-Server-5.7/Percona-Server-${DISTVERSION}/source/tarball/:percona \
 		SF/boost/boost/1.59.0:boost
@@ -40,7 +40,7 @@ CMAKE_ARGS+=	-DINSTALL_LAYOUT=FREEBSD \
 		-DINSTALL_PKGCONFIGDIR="${LOCALBASE}/libdata/pkgconfig" \
 		-DINSTALL_DOCREADMEDIR="share/doc/mysql" \
 		-DINSTALL_INCLUDEDIR="include/mysql" \
-		-DINSTALL_INFODIR="info" \
+		-DINSTALL_INFODIR="${INFO_PATH}" \
 		-DINSTALL_LIBDIR="lib/mysql" \
 		-DINSTALL_MANDIR="man" \
 		-DINSTALL_MYSQLDATADIR="/var/db/mysql" \
@@ -126,6 +126,14 @@ CMAKE_ARGS+=	-DWITH_EMBEDDED_SERVER="ON"
 # issue 220865: Currently there's no source to be built with server-side support.
 # But this keeps the pkg-plist not overlaping
 CMAKE_ARGS+=	-DWITH_AUTHENTICATION_LDAP=0
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200057
+SUB_LIST+=	LEGACY_LIMITS="@comment " MODERN_LIMITS=""
+.else
+SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
+.endif
 
 post-install:
 	${MKDIR} ${STAGEDIR}/var/db/mysql

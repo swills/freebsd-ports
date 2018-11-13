@@ -1,8 +1,8 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/irc/polari/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/irc/polari/Makefile 484882 2018-11-13 17:39:45Z kwm $
 
 PORTNAME=	polari
-PORTVERSION=	3.28.0
+PORTVERSION=	3.28.1
 CATEGORIES=	irc gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webkit/Makefile 483164 2018-10-27 18:14:44Z tcberner $
+# $FreeBSD: head/www/qt5-webkit/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=		webkit
 DISTVERSION=		5.212.0-alpha2
@@ -24,8 +24,8 @@ USES=			bison cmake:outsource compiler:c++11-lang gperf jpeg \
 			tar:xz
 USE_GNOME=		glib20 libxml2 libxslt
 USE_GSTREAMER1=		core
-USE_QT=			core gui location network opengl printsupport \
-			qml quick sensors testlib webchannel widgets \
+USE_QT=			core declarative gui location network opengl printsupport \
+			sensors testlib webchannel widgets \
 			buildtools_build qmake_build
 USE_RUBY=		yes
 USE_XORG=		x11 xcomposite xrender

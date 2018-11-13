@@ -1,9 +1,9 @@
 # Created by: Chuck Robey <chuckr@FreeBSD.org>
-# $FreeBSD: head/graphics/plotutils/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/plotutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	plotutils
 PORTVERSION=	2.6
-PORTREVISION=	7
+PORTREVISION=	8
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	GNU

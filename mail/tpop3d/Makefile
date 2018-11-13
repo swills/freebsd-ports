@@ -1,9 +1,9 @@
 # Created by: chris@shagged.org
-# $FreeBSD: head/mail/tpop3d/Makefile 421746 2016-09-10 21:44:48Z marino $
+# $FreeBSD: head/mail/tpop3d/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	tpop3d
 PORTVERSION=	1.5.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	SAVANNAH
 

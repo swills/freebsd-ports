@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/libmatheval/Makefile 474200 2018-07-08 20:50:52Z yuri $
+# $FreeBSD: head/devel/libmatheval/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libmatheval
 PORTVERSION=	1.1.11
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel math
 MASTER_SITES=	GNU
 

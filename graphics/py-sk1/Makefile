@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-sk1/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/graphics/py-sk1/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	sk1
 DISTVERSION=	g20171127
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -13,7 +13,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
-		libMagickCore-6.so:graphics/ImageMagick
+		libMagickCore-6.so:graphics/ImageMagick6
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \

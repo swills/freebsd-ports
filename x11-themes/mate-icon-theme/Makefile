@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-themes/mate-icon-theme/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/x11-themes/mate-icon-theme/Makefile 483862 2018-11-03 00:00:28Z ericbsd $
 
 PORTNAME=	mate-icon-theme
-PORTVERSION=	1.20.0
+PORTVERSION=	1.20.2
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

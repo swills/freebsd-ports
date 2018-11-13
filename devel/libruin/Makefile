@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/libruin/Makefile 477867 2018-08-23 11:56:46Z swills $
+# $FreeBSD: head/devel/libruin/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libruin
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	devel scheme
 MASTER_SITES=	SAVANNAH
 

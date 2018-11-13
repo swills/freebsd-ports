@@ -1,8 +1,9 @@
 # Created by: R.I.Pienaar <rip@devco.net>
-# $FreeBSD: head/mail/msmtp/Makefile 481366 2018-10-06 13:50:14Z novel $
+# $FreeBSD: head/mail/msmtp/Makefile 484401 2018-11-07 15:47:14Z novel $
 
 PORTNAME=	msmtp
 PORTVERSION=	1.8.0
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	https://marlam.de/msmtp/releases/
 
@@ -40,10 +41,10 @@ MSMTPQ_RUN_DEPENDS=	bash:shells/bash
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=		gettext
 
-GNUTLS_CONFIGURE_ON=	--with-ssl=gnutls
+GNUTLS_CONFIGURE_ON=	--with-tls=gnutls
 GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls
 OPENSSL_USES=		ssl
-OPENSSL_CONFIGURE_ON=	--with-ssl=openssl
+OPENSSL_CONFIGURE_ON=	--with-tls=openssl
 OPENSSL_CONFIGURE_ENV=	libssl_CFLAGS="-I${OPENSSLINC}" \
 			libssl_LIBS="-L${OPENSSLLIB} -lssl -lcrypto"
 CERTSFILE=		${LOCALBASE}/share/certs/ca-root-nss.crt
@@ -53,7 +54,7 @@ CERTSFILE=		${LOCALBASE}/share/certs/ca-root-nss.crt
 .if ${PORT_OPTIONS:MGNUTLS} || ${PORT_OPTIONS:MOPENSSL}
 RUN_DEPENDS+=	${CERTSFILE}:security/ca_root_nss
 .else
-CONFIGURE_ARGS+=	--with-ssl=no
+CONFIGURE_ARGS+=	--with-tls=no
 .endif
 
 post-extract:

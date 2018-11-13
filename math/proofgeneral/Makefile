@@ -1,9 +1,9 @@
 # Created by: Timothy Bourke <timbob@bigpond.com>
-# $FreeBSD: head/math/proofgeneral/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/math/proofgeneral/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	proofgeneral
 PORTVERSION=	4.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	math elisp
 MASTER_SITES=	http://proofgeneral.inf.ed.ac.uk/releases/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
@@ -28,7 +28,7 @@ NO_ARCH=	yes
 MAKE_ARGS+=	PREFIX="${LOCALBASE}" DEST_PREFIX="${STAGEDIR}${PREFIX}" \
 	MAKE="${MAKE_CMD}" EMACS=emacs EMACS_NAME=emacs \
 	DOCDIR="${STAGEDIR}${DOCSDIR}" MANDIR="${STAGEDIR}${PREFIX}/man/man1" \
-	INFODIR="${STAGEDIR}${PREFIX}/info" \
+	INFODIR="${STAGEDIR}${PREFIX}/${INFO_PATH}" \
 	BINDIR="${STAGEDIR}${PREFIX}/bin" DESKTOP="${STAGEDIR}${PREFIX}/share" \
 	EMACS_SITE_LISPDIR="${EMACS_SITE_LISPDIR}" \
 	ELISPP="${EMACS_SITE_LISPDIR}/ProofGeneral" \

@@ -1,5 +1,5 @@
 # Created by: sumikawa
-# $FreeBSD: head/audio/raop_play/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/audio/raop_play/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	raop_play
 PORTVERSION=	0.5.1
@@ -13,8 +13,8 @@ COMMENT=	Music file player for Apple Airport Express
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	bin/raop_play:No such file or directory
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	bin/raop_play:No such file or directory
 
 LIB_DEPENDS=	libsamplerate.so:audio/libsamplerate \
 		libfltk.so:x11-toolkits/fltk \

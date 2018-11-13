@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 483363 2018-10-29 02:23:13Z yuri $
+# $FreeBSD: head/graphics/Makefile 484640 2018-11-10 19:57:07Z kwm $
 #
 
     COMMENT = Graphics tools and libraries
@@ -9,8 +9,8 @@
     SUBDIR += GraphicsMagick
     SUBDIR += Hermes
     SUBDIR += IPA
-    SUBDIR += ImageMagick
-    SUBDIR += ImageMagick-nox11
+    SUBDIR += ImageMagick6
+    SUBDIR += ImageMagick6-nox11
     SUBDIR += ImageMagick7
     SUBDIR += ImageMagick7-nox11
     SUBDIR += O2-tools
@@ -342,6 +342,7 @@
     SUBDIR += gstreamer1-plugins-openjpeg
     SUBDIR += gstreamer1-plugins-png
     SUBDIR += gstreamer1-plugins-rsvg
+    SUBDIR += gstreamer1-plugins-vulkan
     SUBDIR += gstreamer1-plugins-webp
     SUBDIR += gstreamer1-plugins-zbar
     SUBDIR += gthumb

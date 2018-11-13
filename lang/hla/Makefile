@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/lang/hla/Makefile 437931 2017-04-07 15:58:51Z amdmi3 $
+# $FreeBSD: head/lang/hla/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	hla
 PORTVERSION=	1.103
@@ -39,11 +39,6 @@ post-extract:
 	${MKDIR} ${WRKDIR}/stdlib && \
 	    ${TAR} -zxf ${_DISTDIR}/bsd.${PORTNAME}.tar.gz -C ${WRKDIR}/stdlib
 	${CP} ${_DISTDIR}/lex.yy.c ${WRKSRC}
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug.
-# Do not use "-exec ... +", because of the same bug, it will not work.
-	@${FIND} ${WRKDIR} -type d -exec ${CHMOD} 755 {} \;
-.endif
 
 post-extract-TEST-on:
 	${CP} ${_DISTDIR}/hello.hla ${WRKSRC}

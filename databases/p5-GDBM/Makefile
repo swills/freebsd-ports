@@ -1,9 +1,9 @@
 # Created by: Nick Sayer <nsayer@FreeBSD.org>
-# $FreeBSD: head/databases/p5-GDBM/Makefile 442545 2017-06-04 11:47:32Z sunpoet $
+# $FreeBSD: head/databases/p5-GDBM/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	GDBM
 PORTVERSION=	1.14
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN/../../src
 PKGNAMEPREFIX=	p5-

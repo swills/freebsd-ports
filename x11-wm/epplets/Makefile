@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/x11-wm/epplets/Makefile 477581 2018-08-19 16:24:02Z gblach $
+# $FreeBSD: head/x11-wm/epplets/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	epplets
 PORTVERSION=	0.14
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF/enlightenment/${PORTNAME}/${PORTVERSION}
 
@@ -13,7 +13,7 @@ COMMENT=	Collection of Enlightenment dock applications
 BUILD_DEPENDS=	e16:x11-wm/e16
 LIB_DEPENDS=	libcdaudio.so:audio/libcdaudio
 RUN_DEPENDS=	e16:x11-wm/e16 \
-		import:graphics/ImageMagick
+		import:graphics/ImageMagick6
 
 USES=		gmake libtool pkgconfig
 USE_XORG=	xext

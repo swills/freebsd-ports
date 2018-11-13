@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/luceneplusplus/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/textproc/luceneplusplus/Makefile 484379 2018-11-07 03:04:57Z jbeich $
 
 PORTNAME=	lucene++
 PORTVERSION=	3.0.7
@@ -14,12 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LGPL.license
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-BROKEN_powerpc64=	Does not build: Warning: end of file not at end of a line; newline inserted
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	luceneplusplus
 GH_PROJECT=	LucenePlusPlus
-USES=		cmake:outsource compiler
+USES=		cmake:outsource compiler:c++11-lang
 USE_LDCONFIG=	yes
 
 .include <bsd.port.pre.mk>

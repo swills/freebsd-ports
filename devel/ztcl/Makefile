@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/devel/ztcl/Makefile 465900 2018-03-29 15:02:05Z emaste $
+# $FreeBSD: head/devel/ztcl/Makefile 484286 2018-11-06 11:14:37Z bapt $
 
 PORTNAME=	ztcl
 DISTVERSION=	1.0b4
@@ -12,6 +12,10 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Zlib extension library for the Tcl
 
 LICENSE=	LGPL21
+
+DEPRECATED=	Unfetchable, unmaintained, info page unbuildable with recent makeinfo
+EXPIRATION_DATE=	2018-12-03
+BROKEN=		Does not build with recent texinfo
 
 LIB_DEPENDS=	libtclmore0.so:devel/tclmore
 

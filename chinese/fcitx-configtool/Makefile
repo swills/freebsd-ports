@@ -1,8 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-configtool/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/fcitx-configtool/Makefile 484684 2018-11-11 11:38:48Z wen $
 
 PORTNAME=	fcitx-configtool
-PORTVERSION=	0.4.8
+PORTVERSION=	0.4.9
 CATEGORIES=	chinese x11
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx

@@ -1,9 +1,9 @@
 # Created by: Tomasz "CeDeROM" CEDRO (http://www.tomek.cedro.info)
-# $FreeBSD: head/devel/openocd/Makefile 480826 2018-09-27 22:34:31Z linimon $
+# $FreeBSD: head/devel/openocd/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	openocd
 PORTVERSION=	0.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

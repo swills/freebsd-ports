@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/guile-lib/Makefile 477673 2018-08-20 21:03:09Z swills $
+# $FreeBSD: head/devel/guile-lib/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	guile-lib
 PORTVERSION=	0.2.6.1
+PORTREVISION=	1
 CATEGORIES=	devel scheme
 MASTER_SITES=	SAVANNAH
 

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/giflib/Makefile 447092 2017-08-02 09:01:11Z amdmi3 $
+# $FreeBSD: head/graphics/giflib/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	giflib
 PORTVERSION=	5.1.4
@@ -35,11 +35,7 @@ CONFIGURE_ENV+=	have_xmlto=no
 .endif
 
 .if ${OPSYS} == FreeBSD
-.  if ${OSVERSION} >= 1100072
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-unbundle-reallocarray
-.  else
-EXTRA_PATCHES=	${FILESDIR}/extra-patch-hide-reallocarray
-.  endif
 .elif ${OPSYS} == DragonFly
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-hide-reallocarray-dfly
 .endif

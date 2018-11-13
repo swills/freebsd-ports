@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-riscv/Makefile 473977 2018-07-05 16:36:53Z lwhsu $
+# $FreeBSD: head/emulators/qemu-riscv/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	qemu
 PORTVERSION=	2.13.0
@@ -50,14 +50,8 @@ CONFIGURE_ARGS=--target-list=riscv64-softmmu,riscv32-softmmu \
 PLIST_FILES=	bin/qemu-system-riscv32 \
 		bin/qemu-system-riscv64
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 1100000
-IGNORE=	does not build
-.endif
-
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/riscv32-softmmu/qemu-system-riscv32 ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/riscv64-softmmu/qemu-system-riscv64 ${STAGEDIR}${PREFIX}/bin
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/mp3plot/Makefile 483507 2018-10-30 18:24:56Z linimon $
+# $FreeBSD: head/audio/mp3plot/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	mp3plot
 DISTVERSION=	0.6.0
@@ -32,7 +32,7 @@ PLIST_FILES=	bin/${PORTNAME} man/man1/${PORTNAME}.1.gz
 GD_CONFIGURE_ENABLE=	gd
 GD_LIB_DEPENDS=		libgd.so:graphics/gd
 IMAGEMAGICK_CONFIGURE_ENABLE=	magick
-IMAGEMAGICK_LIB_DEPENDS=libMagick++-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=libMagick++-6.so:graphics/ImageMagick6
 
 post-patch:
 	@${REINPLACE_CMD} -e '/bldtype_/s|-O2||g; s|^extra_LD.*||g' ${WRKSRC}/configure

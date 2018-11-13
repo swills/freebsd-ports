@@ -1,9 +1,9 @@
 # Created by: matusita@jp.FreeBSD.org
-# $FreeBSD: head/net/jwhois/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/jwhois/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	jwhois
 PORTVERSION=	4.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	GNU
 

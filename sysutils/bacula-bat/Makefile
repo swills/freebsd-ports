@@ -1,10 +1,13 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/sysutils/bacula-bat/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/bacula-bat/Makefile 484470 2018-11-08 19:16:26Z dvl $
 
 PORTNAME=	bacula
 PKGNAMESUFFIX=	-bat
 
 COMMENT=	Network backup solution (GUI)
+
+DEPRECATED=	Unsupported. Please migrate to bacula9-bat
+EXPIRATION_DATE=	2019-03-01
 
 LIB_DEPENDS+=	libqwt.so:x11-toolkits/qwt5 \
 		libbac.so:sysutils/bacula-client

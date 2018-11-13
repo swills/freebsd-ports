@@ -1,9 +1,9 @@
 # Created by: Joachim Strombergson <watchman@ludd.ltu.se>
-# $FreeBSD: head/cad/dinotrace/Makefile 482213 2018-10-16 09:30:07Z amdmi3 $
+# $FreeBSD: head/cad/dinotrace/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	dinotrace
 PORTVERSION=	9.4c
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	cad
 MASTER_SITES=	http://www.veripool.org/ftp/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

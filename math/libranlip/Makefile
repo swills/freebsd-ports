@@ -1,9 +1,9 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/math/libranlip/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/math/libranlip/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libranlip
 DISTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	LOCAL/bf \
 		http://www.deakin.edu.au/~gleb/

@@ -1,9 +1,9 @@
 # Created by: Andrej Zverev <az@inec.ru>
-# $FreeBSD: head/editors/ne/Makefile 483122 2018-10-27 10:32:23Z tobik $
+# $FreeBSD: head/editors/ne/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	ne
 PORTVERSION=	3.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	http://ne.di.unimi.it/
 

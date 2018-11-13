@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/xapian-bindings/Makefile 483187 2018-10-27 23:22:14Z sunpoet $
+# $FreeBSD: head/databases/xapian-bindings/Makefile 484233 2018-11-05 21:44:13Z sunpoet $
 
 PORTNAME=	xapian-bindings
-PORTVERSION=	1.4.8
+PORTVERSION=	1.4.9
 CATEGORIES=	databases
 
 MAINTAINER=	sunpoet@FreeBSD.org

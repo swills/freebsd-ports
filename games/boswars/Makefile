@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/boswars/Makefile 447605 2017-08-09 09:01:19Z amdmi3 $
+# $FreeBSD: head/games/boswars/Makefile 484019 2018-11-04 13:04:26Z antoine $
 
 PORTNAME=	boswars
 PORTVERSION=	2.6.1
@@ -13,6 +13,8 @@ COMMENT=	Futuristic real-time strategy game
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtheora.so:multimedia/libtheora \

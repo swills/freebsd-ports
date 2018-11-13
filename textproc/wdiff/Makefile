@@ -1,9 +1,9 @@
 # Created by: Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
-# $FreeBSD: head/textproc/wdiff/Makefile 434805 2017-02-25 13:47:26Z amdmi3 $
+# $FreeBSD: head/textproc/wdiff/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	wdiff
 PORTVERSION=	1.2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 

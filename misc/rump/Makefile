@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/misc/rump/Makefile 455165 2017-11-30 05:55:17Z linimon $
+# $FreeBSD: head/misc/rump/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	rump
 PORTVERSION=	20170822
@@ -29,9 +29,7 @@ PLIST_SUB+=	X8664=""
 PLIST_SUB+=	X8664="@comment "
 .endif
 
-.if ${OSVERSION} >= 1100508
 CFLAGS+=	-Wno-address-of-packed-member
-.endif
 
 do-build:
 	cd ${WRKSRC}; ${SETENV} CC=${CC} AR=${AR} NM=${NM} OBJCOPY=${OBJCOPY} ./buildrump.sh -F CFLAGS="${CFLAGS}" -r fullbuild

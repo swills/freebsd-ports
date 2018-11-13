@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao
-# $FreeBSD: head/editors/hte/Makefile 464740 2018-03-16 21:29:02Z rene $
+# $FreeBSD: head/editors/hte/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	hte
 PORTVERSION=	2.1.1.g20161206
+PORTREVISION=	1
 CATEGORIES=	editors
 
 MAINTAINER=	rene@FreeBSD.org
@@ -10,8 +11,6 @@ COMMENT=	File editor/viewer/analyzer for executables
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_FreeBSD_10=	misgenerated yacc code
 
 USES=		autoreconf compiler:c++14-lang makeinfo ncurses tar:bzip2
 USE_GITHUB=	yes

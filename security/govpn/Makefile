@@ -1,8 +1,9 @@
 # Created by: Sergey Matveev <stargrave@stargrave.org>
-# $FreeBSD: head/security/govpn/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/govpn/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	govpn
 DISTVERSION=	7.5
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.govpn.info/download/
 

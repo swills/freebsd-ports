@@ -1,5 +1,5 @@
 # Created by: Christian Lackas
-# $FreeBSD: head/security/vpnc/Makefile 454173 2017-11-14 13:21:03Z ehaupt $
+# $FreeBSD: head/security/vpnc/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	vpnc
 PORTVERSION=	0.5.3
@@ -61,11 +61,9 @@ CFLAGS+=	-DCISCO_PATCH_VERSION
 .endif
 
 post-patch:
-.if ${OSVERSION} >= 1100042
 	@${REINPLACE_CMD} \
 		-e 's|.*%%FREEBSD_IPLEN_FIX%%.*|#define NEED_IPLEN_FIX 1|' \
 		${WRKSRC}/sysdep.h
-.endif
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|' ${WRKSRC}/config.c
 	@${REINPLACE_CMD} -e 's|\(/etc/vpnc\)|${PREFIX}\1|' \
 		${WRKSRC}/${MANPAGE8}.template

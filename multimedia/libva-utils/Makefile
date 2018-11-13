@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/libva-utils/Makefile 483325 2018-10-28 18:43:30Z madpilot $
+# $FreeBSD: head/multimedia/libva-utils/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 
 PORTNAME=	libva-utils
 PORTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -22,6 +23,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	intel
 
 OPTIONS_DEFINE=	DEBUG WAYLAND
+OPTIONS_DEFAULT=WAYLAND
 WAYLAND_DESC=	Support wayland protocol
 OPTIONS_SUB=	yes
 

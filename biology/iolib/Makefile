@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/iolib/Makefile 480878 2018-09-28 18:47:49Z danilo $
+# $FreeBSD: head/biology/iolib/Makefile 484209 2018-11-05 19:42:37Z linimon $
 
 PORTNAME=	io_lib
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -10,10 +10,6 @@ MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	General purpose trace file (and Experiment File) reading interface
 
 LICENSE=	BSD3CLAUSE
-
-BROKEN_mips=		fails to compile: bgzip.c: error: invalid operands to binary &
-BROKEN_mips64=		fails to compile: bgzip.c: error: invalid operands to binary &
-BROKEN_powerpc64=	fails to compile: bgzip.c: error: invalid operands to binary &
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

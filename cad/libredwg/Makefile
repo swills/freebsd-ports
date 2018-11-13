@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/cad/libredwg/Makefile 478428 2018-08-30 02:26:19Z danfe $
+# $FreeBSD: head/cad/libredwg/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libredwg
-PORTVERSION=	0.6
+PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	cad devel
 MASTER_SITES=	GNU
 
@@ -18,7 +19,15 @@ USE_LDCONFIG=	yes
 INFO=		LibreDWG
 PORTDOCS=	AUTHORS ChangeLog NEWS README TODO
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS PSLIB
+OPTIONS_DEFAULT=	PSLIB
+PSLIB_DESC=	PostScript export support (dwg2ps)
+
+PSLIB_LIB_DEPENDS=	libps.so:print/pslib
+# XXX: shall `localbase' be put on global USES, it would require explicit
+# PSLIB_CONFIGURE_ENV_OFF=	ac_cv_lib_ps_PS_open_file=no
+PSLIB_USES=		localbase
+PSLIB_PLIST_FILES=	bin/dwg2ps
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

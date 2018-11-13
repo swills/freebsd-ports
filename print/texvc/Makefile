@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/texvc/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/print/texvc/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	texvc
 PORTVERSION=	20050202
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	print
 MASTER_SITES=	SF/wikipedia/Support%20files/${PORTNAME}%20Linux-x86%20source%20%2B%20binary
 DISTNAME=	${PORTNAME}-linux-x86-${PORTVERSION}
@@ -23,7 +23,7 @@ OPTIONS_DEFAULT:=	${OPTIONS_DEFINE}
 RASTER_DESC=	rasterization support
 RASTER_USES=	ghostscript:run
 RASTER_USE=	TEX=latex,dvipsk
-RASTER_RUN_DEPENDS=	convert:graphics/ImageMagick
+RASTER_RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 MAKE_JOBS_UNSAFE=	yes
 

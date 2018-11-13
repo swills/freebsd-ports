@@ -1,9 +1,9 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/dns/mydns-ng/Makefile 469120 2018-05-05 15:09:22Z danfe $
+# $FreeBSD: head/dns/mydns-ng/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mydns-ng
 PORTVERSION=	1.2.8.31
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	dns databases
 MASTER_SITES=	SF/${PORTNAME}/mydns/${PORTVERSION}
 DISTNAME=	mydns-${PORTVERSION}

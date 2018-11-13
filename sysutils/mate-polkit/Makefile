@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/mate-polkit/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/sysutils/mate-polkit/Makefile 484153 2018-11-04 21:59:11Z ericbsd $
 
 PORTNAME=	mate-polkit
-PORTVERSION=	1.20.0
+PORTVERSION=	1.20.1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

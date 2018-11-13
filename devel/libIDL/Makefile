@@ -1,10 +1,10 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/libIDL/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/libIDL/Makefile 484628 2018-11-10 18:12:57Z bapt $
 #   $MCom: ports/devel/libIDL/Makefile,v 1.7 2010/04/02 17:27:42 kwm Exp $
 
 PORTNAME=	libIDL
 PORTVERSION=	0.8.14
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

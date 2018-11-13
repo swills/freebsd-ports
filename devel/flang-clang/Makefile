@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/flang-clang/Makefile 479487 2018-09-11 00:15:00Z jmd $
+# $FreeBSD: head/devel/flang-clang/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	flang-clang
 DISTVERSION=	6.0-g20180904
@@ -15,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 ONLY_FOR_ARCHS=	amd64
-IGNORE_FreeBSD_10=	base compiler too old
 
 BUILD_DEPENDS=	llvm60>=0:devel/llvm60
 RUN_DEPENDS=	llvm60>=0:devel/llvm60

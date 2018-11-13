@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/pingus/Makefile 483089 2018-10-27 01:35:50Z jbeich $
+# $FreeBSD: head/games/pingus/Makefile 484655 2018-11-11 03:33:50Z linimon $
 
 PORTNAME=	pingus
 PORTVERSION=	0.7.6
@@ -19,7 +19,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/signals2.hpp:devel/boost-libs
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		compiler:c++11-lib iconv scons tar:bzip2
+USES=		compiler:c++11-lib gl iconv scons tar:bzip2
 USE_GL=		gl
 USE_SDL=	sdl image mixer
 LIBS+=		${ICONV_LIB}

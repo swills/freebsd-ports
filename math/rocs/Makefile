@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/rocs/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/math/rocs/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	rocs
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,7 +16,7 @@ USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 		crash doctools ecm i18n itemviews jobwidgets kdeclarative \
 		kio package parts service sonnet texteditor textwidgets \
 		widgetsaddons xmlgui
-USE_QT=		core dbus gui network qml script quick scripttools svg webkit \
+USE_QT=		core dbus declarative gui network script scripttools svg webkit \
 		widgets xml xmlpatterns \
 		buildtools_build qmake_build
 

@@ -1,8 +1,9 @@
 # Created by: jseger@scds.com
-# $FreeBSD: head/games/gnugo/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/gnugo/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnugo
 PORTVERSION=	3.8
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	GNU
 

@@ -1,5 +1,5 @@
 # Created by: pb@FreeBSD.org
-# $FreeBSD: head/multimedia/dvdauthor/Makefile 440966 2017-05-15 19:30:58Z tcberner $
+# $FreeBSD: head/multimedia/dvdauthor/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	dvdauthor
 PORTVERSION=	0.7.2
@@ -37,7 +37,7 @@ VIDEO-FORMAT_DESC=	Use default video format
 NTSC_DESC=	Default video format NTSC
 PAL_DESC=	Default video format PAL
 
-IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick6
 
 NTSC_CONFIGURE_ON=	--enable-default-video-format=NTSC
 PAL_CONFIGURE_ON=	--enable-default-video-format=PAL

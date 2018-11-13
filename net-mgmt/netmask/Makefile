@@ -1,9 +1,9 @@
 # Created by: Mike Bristow <mike@urgle.com>
-# $FreeBSD: head/net-mgmt/netmask/Makefile 343882 2014-02-12 10:16:05Z miwi $
+# $FreeBSD: head/net-mgmt/netmask/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	netmask
 PORTVERSION=	2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://trap.mtview.ca.us/~talby/
 DISTNAME=	netmask_${PORTVERSION}

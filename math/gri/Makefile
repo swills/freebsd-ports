@@ -1,9 +1,9 @@
 # Created by: M. L. Dodson, <bdodson@scms.utmb.edu>
-# $FreeBSD: head/math/gri/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/math/gri/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	gri
 PORTVERSION=	2.12.23
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math
 MASTER_SITES=	SF
 
@@ -38,7 +38,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDOCS} || ${PORT_OPTIONS:MEXAMPLES}
-BUILD_DEPENDS+=	convert:graphics/ImageMagick
+BUILD_DEPENDS+=	convert:graphics/ImageMagick6
 .endif
 
 post-patch:

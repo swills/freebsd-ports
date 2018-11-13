@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-plugins-core/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-core/Makefile 483887 2018-11-03 11:58:10Z tijl $
 
 PORTNAME=	gstreamer1-plugins-core
-PORTVERSION=	1.12
+PORTVERSION=	1.14
 CATEGORIES=	multimedia audio
 MASTER_SITES=	# empty
 DISTFILES=	# empty

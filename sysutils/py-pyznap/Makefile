@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/py-pyznap/Makefile 481839 2018-10-11 16:58:32Z 0mp $
+# $FreeBSD: head/sysutils/py-pyznap/Makefile 483804 2018-11-02 13:05:25Z 0mp $
 
 PORTNAME=		pyznap
 DISTVERSIONPREFIX=	v
-DISTVERSION=		1.0.2
+DISTVERSION=		1.1.0
 CATEGORIES=		sysutils python
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 
@@ -13,18 +13,19 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configparser>3.5.0:devel/py-configparser@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}paramiko>=2.4.1:security/py-paramiko@${PY_FLAVOR} \
-		mbuffer:misc/mbuffer
+		${PYTHON_PKGNAMEPREFIX}paramiko>=2.4.2:security/py-paramiko@${PY_FLAVOR} \
+		mbuffer:misc/mbuffer \
+		pv:sysutils/pv
 
 USES=		python:3.5+
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	yboetz
 
 NO_ARCH=	yes
 SUB_FILES=	pkg-message
-SUB_LIST=	BINDIR=${PREFIX}/bin
+SUB_LIST=	BINDIR=${PREFIX}/bin ETCDIR=${PREFIX}/etc
 
 post-patch:
 	${REINPLACE_CMD} -e 's|/etc/pyznap/|${PREFIX}/etc/pyznap/|g' ${WRKSRC}/${PORTNAME}/main.py

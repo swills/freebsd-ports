@@ -1,9 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/mail/wanderlust/Makefile 472145 2018-06-10 16:01:17Z nobutaka $
+# $FreeBSD: head/mail/wanderlust/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	wanderlust
 PORTVERSION=	2.15.9.b.${SNAPDATE}
-PORTREVISION=	2
+PORTREVISION=	1
 CATEGORIES=	mail elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
@@ -21,10 +21,10 @@ RUN_DEPENDS=	emacs-w3m${EMACS_PKGNAMESUFFIX}>0:www/emacs-w3m@${EMACS_FLAVOR} \
 
 USES=		emacs
 USE_GITHUB=	yes
-GH_TAGNAME=	f0c8c4e
+GH_TAGNAME=	ebde9a4
 
 NO_ARCH=	yes
-SNAPDATE=	20180317
+SNAPDATE=	20180826
 
 MAKE_ARGS+=	EMACS=${EMACS_CMD} \
 		FLAGS="-batch -q -no-site-file" \

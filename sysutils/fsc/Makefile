@@ -1,13 +1,13 @@
 # Created by: Tom Rhodes <trhodes@FreeBSD.org>
-# $FreeBSD: head/sysutils/fsc/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/sysutils/fsc/Makefile 484445 2018-11-08 12:00:58Z tobik $
 
 PORTNAME=	fsc
 PORTVERSION=	1.0.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	LOCAL/trhodes
 
-MAINTAINER=	trhodes@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The FreeBSD Services Control family of utilities
 
 WRKSRC=		${WRKDIR}/fsc

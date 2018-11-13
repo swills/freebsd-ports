@@ -1,4 +1,4 @@
-# $FreeBSD: head/base/binutils/Makefile 477638 2018-08-20 09:17:45Z jhb $
+# $FreeBSD: head/base/binutils/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTEPOCH=	0
 CATEGORIES=	base
@@ -41,12 +41,8 @@ BUREMOVE=	addr2line \
 
 .include "${MASTERDIR}/Makefile"
 
-.if ${OSVERSION} >= 1100100
 PLIST_SUB+=	OBJCOPY="@comment "
 BUREMOVE+=	objcopy
-.else
-PLIST_SUB+=	OBJCOPY=""
-.endif
 
 .if ${ARCH} == "amd64" || ${ARCH} == "i386"
 PLIST_SUB+=	I386=""

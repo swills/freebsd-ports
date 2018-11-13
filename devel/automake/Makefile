@@ -1,8 +1,9 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/automake/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/automake/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	automake
 PORTVERSION=	1.16.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

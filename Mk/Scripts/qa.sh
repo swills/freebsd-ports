@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 480421 2018-09-22 16:45:47Z sunpoet $
+# $FreeBSD: head/Mk/Scripts/qa.sh 484599 2018-11-10 10:09:48Z mat $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -611,7 +611,7 @@ proxydeps_suggest_uses() {
 	elif [ ${pkg} = "devel/readline" ]; then
 		warn "you need USES+=readline"
 	# ssl
-	elif [ ${pkg} = "security/openssl" -o ${pkg} = "security/openssl-devel" \
+	elif [ ${pkg} = "security/openssl" -o ${pkg} = "security/openssl111" \
 	  -o ${pkg} = "security/libressl" -o ${pkg} = "security/libressl-devel" \
 	  ]; then
 		warn "you need USES=ssl"

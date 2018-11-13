@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/zapcc/Makefile 477134 2018-08-14 05:50:48Z yuri $
+# $FreeBSD: head/devel/zapcc/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	zapcc
 PORTVERSION=	g20180622
@@ -9,8 +9,6 @@ COMMENT=	C++ caching compiler based on clang
 
 LICENSE=	NCSA
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
-
-BROKEN_FreeBSD_10=	error: expected a class or namespace const NoneType None = NoneType::None
 
 BUILD_DEPENDS=	googletest>0:devel/googletest
 

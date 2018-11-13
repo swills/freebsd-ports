@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt/Makefile 481451 2018-10-07 15:55:14Z novel $
+# $FreeBSD: head/devel/libvirt/Makefile 484622 2018-11-10 16:31:59Z novel $
 
 PORTNAME=	libvirt
-PORTVERSION=	4.8.0
+PORTVERSION=	4.9.0
 CATEGORIES=	devel
 MASTER_SITES=	http://libvirt.org/sources/ \
 		ftp://libvirt.org/libvirt/
@@ -105,7 +105,7 @@ USE_PERL5=	build
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
-SHLIB_VER=	0.4008.0
+SHLIB_VER=	0.4009.0
 PLIST_SUB+=	PORTVERSION="-${PORTVERSION}" \
 		SHLIB_VER=${SHLIB_VER}
 PORTDOCS=	*

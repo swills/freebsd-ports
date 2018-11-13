@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/owncloudclient/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/owncloudclient/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	owncloudclient
 DISTVERSIONPREFIX=	v
@@ -39,17 +39,11 @@ DEBUG_CMAKE_ON=		-DCMAKE_BUILD_TYPE:STRING=Debug
 
 PLIST_SUB=	VERSION=${PORTVERSION}
 
-.include <bsd.port.pre.mk>
-
 post-patch:
 	@${REINPLACE_CMD} -e \
 		's|.lst |.lst.sample |' ${WRKSRC}/CMakeLists.txt
-.if ${OSVERSION} < 1100101
-	@${REINPLACE_CMD} -e 's/ -fstack-protector-strong//' \
-		${WRKSRC}/src/CMakeLists.txt
-.endif
 
 pre-configure:
 	@cd ${WRKSRC} && ${CP} -f sync-exclude.lst sync-exclude.lst.sample
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

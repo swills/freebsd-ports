@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/libdomainkeys/files/Makefile 409547 2016-02-25 18:11:37Z amdmi3 $
+# $FreeBSD: head/mail/libdomainkeys/files/Makefile 484222 2018-11-05 21:09:41Z tobik $
 
 LIB = 	domainkeys
 SRCS=	dns_txt.c domainkeys.c dktrace.c
@@ -10,6 +10,12 @@ CFLAGS+=	-DBIND_8_COMPAT -I${OPENSSLBASE}/include
 LDFLAGS+=	-lcrypto -L${OPENSSLBASE}/lib
 
 NO_PROFILE=
+
+dktest: dktest.c
+	${CC} ${CFLAGS} -I. dktest.c -o dktest libdomainkeys.a ${LDFLAGS}
+
+check: dktest
+	./test
 
 makeheader: makeheader.c
 	${CC} ${CFLAGS} makeheader.c -o makeheader

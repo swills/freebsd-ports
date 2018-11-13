@@ -1,9 +1,9 @@
 # Created by: Kapil Chowksey <kchowksey@hss.hns.com>
-# $FreeBSD: head/devel/gindent/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/gindent/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gindent
 PORTVERSION=	2.2.10
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	GNU/indent
 DISTNAME=	indent-${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/deskutils/notecase/Makefile 481492 2018-10-07 20:25:16Z antoine $
+# $FreeBSD: head/deskutils/notecase/Makefile 484443 2018-11-08 11:05:52Z martymac $
 
 PORTNAME=	notecase
 PORTVERSION=	1.9.8
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE
 DEPRECATED=	GNOME 2 application
 EXPIRATION_DATE=	2018-12-10
 
-USES=		dos2unix gmake desktop-file-utils gettext gnome pkgconfig shared-mime-info
+USES=		compiler:c++11-lang dos2unix gmake desktop-file-utils gettext gnome pkgconfig shared-mime-info
 USE_GNOME=	gtk20 gtksourceview2 gnomevfs2
 USE_XORG=	x11
 

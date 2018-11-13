@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-airbrussh/Makefile 443743 2017-06-17 10:01:07Z sunpoet $
+# $FreeBSD: head/security/rubygem-airbrussh/Makefile 484239 2018-11-05 21:45:04Z sunpoet $
 
 PORTNAME=	airbrussh
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -14,9 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-sshkit>=1.7.1:security/rubygem-sshkit
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 SHEBANG_FILES=	bin/setup
 

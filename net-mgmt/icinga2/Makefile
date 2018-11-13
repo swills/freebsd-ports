@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/icinga2/Makefile 482424 2018-10-19 12:11:32Z lme $
+# $FreeBSD: head/net-mgmt/icinga2/Makefile 484624 2018-11-10 16:56:08Z woodsb02 $
 
 PORTNAME=	icinga2
 DISTVERSIONPREFIX=	v
@@ -68,7 +68,7 @@ PLIST_SUB=	ICINGA2USER=${ICINGA2USER} \
 		ICINGA2GROUP=${ICINGA2GROUP} \
 		WWWGRP=${WWWGRP}
 
-SUB_FILES=	pkg-message ${PORTNAME}-newsyslog
+SUB_FILES=	pkg-message ${PORTNAME}-newsyslog.conf
 
 # Config files with references to "Linux"
 LINUX_CONFIG=	groups.conf services.conf hosts.conf
@@ -98,7 +98,7 @@ pre-install:
 
 post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/newsyslog/
-	${INSTALL_DATA} ${WRKDIR}/${PORTNAME}-newsyslog ${STAGEDIR}${EXAMPLESDIR}/newsyslog/${PORTNAME}
+	${INSTALL_DATA} ${WRKDIR}/${PORTNAME}-newsyslog.conf ${STAGEDIR}${EXAMPLESDIR}/newsyslog/${PORTNAME}.conf
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/vim/vimfiles
 	(cd ${WRKSRC}/tools/syntax/vim && ${COPYTREE_SHARE} . \
 		${STAGEDIR}${PREFIX}/share/vim/vimfiles)

@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/irssi/Makefile 482051 2018-10-14 16:24:07Z antoine $
+# $FreeBSD: head/irc/irssi/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	irssi
 PORTVERSION=	1.1.1
@@ -19,9 +19,6 @@ USE_GNOME=	glib20
 
 OPTIONS_DEFINE=	PERL PROXY SOCKS BOT DOCS TRUECOLOR CAPSICUM
 OPTIONS_DEFAULT=	PERL CAPSICUM
-
-# If we're on FreeBSD 10 don't offer the Capsicum option.
-OPTIONS_EXCLUDE_FreeBSD_10=	CAPSICUM
 
 OPTIONS_SUB=	yes
 SOCKS_DESC=	Socks proxy support

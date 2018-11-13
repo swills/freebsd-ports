@@ -1,9 +1,9 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/graphics/dcraw-m/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/graphics/dcraw-m/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	dcraw-m
 PORTVERSION=	9.22
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 
 MAINTAINER=	waitman@waitman.net
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libjasper.so:graphics/jasper \
 		liblcms2.so:graphics/lcms2 \
-		libMagickWand-6.so:graphics/ImageMagick
+		libMagickWand-6.so:graphics/ImageMagick6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	waitman

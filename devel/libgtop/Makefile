@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/libgtop/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/devel/libgtop/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libgtop
 PORTVERSION=	2.38.0
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

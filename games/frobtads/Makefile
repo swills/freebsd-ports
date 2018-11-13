@@ -1,5 +1,5 @@
 # Created by: Kai Wang <kaiwang27@gmail.com>
-# $FreeBSD: head/games/frobtads/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/games/frobtads/Makefile 484046 2018-11-04 13:51:46Z antoine $
 
 PORTNAME=	frobtads
 PORTVERSION=	1.2.3
@@ -10,6 +10,8 @@ MASTER_SITES=	http://www.tads.org/${PORTNAME}/ \
 
 MAINTAINER=	kaiwang27@gmail.com
 COMMENT=	TADS interpreter and the compilers for both TADS 2 and 3
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

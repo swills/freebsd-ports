@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/castxml/Makefile 476388 2018-08-05 04:16:28Z yuri $
+# $FreeBSD: head/textproc/castxml/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	castxml
 PORTVERSION=	g20180728
@@ -9,8 +9,6 @@ COMMENT=	C-family Abstract Syntax Tree XML Output
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_FreeBSD_10=	plist mismatch: extra items are installed for some reason
 
 BUILD_DEPENDS=	clang${LLVM_VERSION}:devel/llvm${LLVM_VERSION}
 RUN_DEPENDS=	clang${LLVM_VERSION}:devel/llvm${LLVM_VERSION}

@@ -1,5 +1,5 @@
 # Created by: Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
-# $FreeBSD: head/x11-toolkits/gtkmm20/Makefile 458456 2018-01-08 17:07:41Z jbeich $
+# $FreeBSD: head/x11-toolkits/gtkmm20/Makefile 483822 2018-11-02 16:36:00Z linimon $
 #    $MCom: ports/x11-toolkits/gtkmm20/Makefile,v 1.11 2006/09/10 00:51:17 mezz Exp $
 
 PORTNAME=	gtkmm
@@ -13,7 +13,7 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	C++ wrapper for Gtk+, Pango, Atk, and Glib
 
-USES+=		tar:bzip2
+USES+=		compiler:c++11-lang tar:bzip2
 
 PORTSCOUT=	ignore:1
 

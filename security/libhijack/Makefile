@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/libhijack/Makefile 455925 2017-12-11 05:22:21Z swills $
+# $FreeBSD: head/security/libhijack/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	libhijack
 DISTVERSIONPREFIX=	v
@@ -22,8 +22,6 @@ PLIST_FILES=	include/hijack.h \
 		lib/libhijack.so \
 		lib/libhijack.so.1 \
 		sbin/hijack
-
-BROKEN_FreeBSD_10=	Designed for 11.0 and newer
 
 do-install: # the original install fails: https://github.com/SoldierX/libhijack/issues/6
 	${INSTALL_DATA} ${WRKSRC}/include/hijack.h ${STAGEDIR}${PREFIX}/include

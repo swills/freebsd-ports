@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/py-xmms2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/py-xmms2/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTREVISION=	6
 
@@ -17,7 +17,7 @@ MASTERDIR=	${.CURDIR}/../xmms2
 USES=		python:2.7 ssl
 USE_PYTHON=	flavors
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 PLIST=		${.CURDIR}/pkg-plist
 

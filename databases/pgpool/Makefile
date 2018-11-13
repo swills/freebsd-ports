@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae <whitekid@gmail.com>
-# $FreeBSD: head/databases/pgpool/Makefile 475975 2018-07-31 08:14:08Z tz $
+# $FreeBSD: head/databases/pgpool/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	pgpool
 PORTVERSION=	3.4.19
@@ -13,8 +13,8 @@ COMMENT=	Connection pool server for PostgreSQL
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	library 'ssl' is required for OpenSSL
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	library 'ssl' is required for OpenSSL
 
 PORTSCOUT=	limit:^3.4.[0-9]*
 

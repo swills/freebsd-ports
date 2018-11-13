@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gdm/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11/gdm/Makefile 484889 2018-11-13 17:54:57Z kwm $
 
 PORTNAME=	gdm
-PORTVERSION=	3.28.1
+PORTVERSION=	3.28.4
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
@@ -15,6 +15,7 @@ BUILD_DEPENDS=	zenity>=3.0.0:x11/zenity \
 		iso-codes>=0:misc/iso-codes
 LIB_DEPENDS=	libck-connector.so:sysutils/consolekit2 \
 		libaccountsservice.so:sysutils/accountsservice \
+		libfribidi.so:converters/fribidi \
 		libcanberra.so:audio/libcanberra \
 		libcanberra-gtk3.so:audio/libcanberra-gtk3
 RUN_DEPENDS=	zenity>=3.0.0:x11/zenity \

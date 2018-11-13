@@ -1,5 +1,5 @@
 # Created by: Chess Griffin <chess@chessgriffin.com>
-# $FreeBSD: head/irc/bip/Makefile 462131 2018-02-17 12:00:03Z sunpoet $
+# $FreeBSD: head/irc/bip/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	bip
 PORTVERSION=	0.8.9
@@ -12,7 +12,7 @@ COMMENT=	Simple IRC proxy with SSL support
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib -L${OPENSSLLIB}

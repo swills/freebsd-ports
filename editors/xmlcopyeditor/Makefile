@@ -1,5 +1,5 @@
 # Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/editors/xmlcopyeditor/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/editors/xmlcopyeditor/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME=	xmlcopyeditor
 PORTVERSION=	1.2.1.3
@@ -20,10 +20,10 @@ LIB_DEPENDS=	libxerces-c.so.3:textproc/xerces-c3 \
 		libxml2.so:textproc/libxml2 \
 		libexpat.so:textproc/expat2
 
+USES=		compiler:c++11-lang dos2unix gettext gmake iconv libtool
 USE_WX=		2.8+
 WX_COMPS=	wx contrib
 WX_CONF_ARGS=	absolute
-USES=		dos2unix gettext gmake iconv libtool
 USE_GNOME=	intltool
 GNU_CONFIGURE=	yes
 

@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/games/pykawari/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/pykawari/Makefile 484069 2018-11-04 14:19:49Z antoine $
 
 PORTNAME=	pykawari
 PORTVERSION=	8.2.8
@@ -13,6 +13,8 @@ COMMENT=	Real kawari8 module for ninix-aya
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/license.txt
+
+BROKEN=		fails to build
 
 RUN_DEPENDS=	ninix:games/ninix-aya
 

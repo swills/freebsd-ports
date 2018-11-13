@@ -1,9 +1,9 @@
 # Created by: bacon@smithers.neuro.mcw.edu
-# $FreeBSD: head/science/InsightToolkit/Makefile 483381 2018-10-29 09:40:56Z linimon $
+# $FreeBSD: head/science/InsightToolkit/Makefile 484822 2018-11-12 20:47:18Z stephen $
 
 PORTNAME=	InsightToolkit
 PORTVERSION=	4.13.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science biology
 MASTER_SITES=	SF/itk/itk/${ITK_VER}
 

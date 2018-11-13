@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/prayer/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/mail/prayer/Makefile 484539 2018-11-09 19:24:37Z swills $
 
 PORTNAME=	prayer
 PORTVERSION=	1.3.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail www
 MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/email/prayer/
 

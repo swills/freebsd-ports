@@ -1,9 +1,9 @@
 # Created by: fenner
-# $FreeBSD: head/graphics/geomview/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/geomview/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	geomview
 PORTVERSION=	1.9.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

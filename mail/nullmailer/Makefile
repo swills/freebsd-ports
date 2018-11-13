@@ -1,5 +1,5 @@
 # Created by: clive
-# $FreeBSD: head/mail/nullmailer/Makefile 469111 2018-05-05 14:11:14Z danfe $
+# $FreeBSD: head/mail/nullmailer/Makefile 484453 2018-11-08 13:45:52Z tobik $
 
 PORTNAME=	nullmailer
 PORTVERSION=	1.13
@@ -28,6 +28,7 @@ NULLMAIL_GID=	522
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--localstatedir=${LOCALSTATEDIR}
 
+USE_CXXSTD=	gnu++98
 USE_SUBMAKE=	yes
 
 USE_RC_SUBR=	${PORTNAME}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-drivers/xf86-video-amdgpu/Makefile 481094 2018-10-02 01:25:49Z jmd $
+# $FreeBSD: head/x11-drivers/xf86-video-amdgpu/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 # this port is for future amdgpu kernel support testing.
 
@@ -21,12 +21,6 @@ ONLY_FOR_ARCHS=	i386 amd64
 ONLY_FOR_ARCHS_REASON=	KMS is required and currently only available on x86
 
 CONFIGURE_ARGS+=--disable-udev
-
-.include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101510
-IGNORE=		not supported on 11.1 or older, no kernel support
-.endif
 
 PLIST_FILES=	lib/xorg/modules/drivers/amdgpu_drv.so \
 		man/man4/amdgpu.4x.gz \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hwloc/Makefile 479911 2018-09-16 23:26:02Z sunpoet $
+# $FreeBSD: head/devel/hwloc/Makefile 483812 2018-11-02 14:33:29Z linimon $
 
 PORTNAME=	hwloc
 PORTVERSION=	1.11.11
@@ -12,7 +12,7 @@ COMMENT=	Portable Hardware Locality software package
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-ONLY_FOR_ARCHS=		amd64 aarch64 armv6 armv7 i386
+ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386 powerpc64
 ONLY_FOR_ARCHS_REASON=	has not been ported to this architecture
 
 LIB_DEPENDS=	libpciaccess.so:devel/libpciaccess

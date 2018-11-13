@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/shotcut/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/multimedia/shotcut/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	shotcut
 PORTVERSION=	${FULLVERSION:R}
 DISTVERSIONPREFIX=	v
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	multimedia
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
@@ -25,9 +25,9 @@ GH_ACCOUNT=	mltframework
 FULLVERSION=	17.02.01
 
 USES=		pkgconfig qmake qt:5
-USE_QT=		buildtools_build concurrent_build core \
+USE_QT=		buildtools_build concurrent_build core declarative \
 		graphicaleffects_run gui multimedia network opengl \
-		printsupport qml quick quickcontrols_run sql \
+		printsupport quickcontrols_run sql \
 		sql-sqlite3_run webkit websockets widgets x11extras xml
 USE_XORG=	x11
 QMAKE_ARGS=	${PORTNAME:tu}_VERSION="${FULLVERSION}"

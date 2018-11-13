@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/passwordsafe/Makefile 455928 2017-12-11 08:03:21Z brnrd $
+# $FreeBSD: head/sysutils/passwordsafe/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	passwordsafe
 DISTVERSION=	1.03BETA
@@ -66,10 +66,4 @@ post-install-NLS-on:
 		${STAGEDIR}${PREFIX}/locale/$l/LC_MESSAGES
 .endfor
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-BROKEN=	clang segfaults on 10.x
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

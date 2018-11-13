@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/x11-wm/sawfish/Makefile 420296 2016-08-16 18:39:44Z pawel $
+# $FreeBSD: head/x11-wm/sawfish/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	sawfish
 PORTVERSION=	1.12.0
-PORTEPOCH=	3
+PORTEPOCH=	4
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://download.tuxfamily.org/sawfish/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

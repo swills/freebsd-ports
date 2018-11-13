@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/lang/tcl86/Makefile 465706 2018-03-27 14:24:25Z gahr $
+# $FreeBSD: head/lang/tcl86/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	tcl
 PORTVERSION=	8.6.8
@@ -29,8 +29,6 @@ OPTIONS_SUB=	yes
 .if !exists(/usr/sbin/dtrace)
 OPTIONS_EXCLUDE+=	DTRACE
 .endif
-
-OPTIONS_EXCLUDE_FreeBSD_10=	DTRACE
 
 PATCH_WRKSRC=	${WRKDIR}/${PORTNAME}${PORTVERSION}
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}/unix

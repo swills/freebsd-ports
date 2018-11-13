@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-cffi/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-cffi/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	cffi
 PORTVERSION=	1.11.5
@@ -23,10 +23,8 @@ USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100000
 .if ${COMPILER_TYPE:Mclang}
 CFLAGS+=	-Wno-shift-negative-value
-.endif
 .endif
 
 post-install:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 483360 2018-10-29 00:04:39Z yuri $
+# $FreeBSD: head/misc/Makefile 484289 2018-11-06 13:51:55Z rene $
 #
 
     COMMENT = Miscellaneous utilities
@@ -491,7 +491,6 @@
     SUBDIR += rubygem-rabbit
     SUBDIR += rubygem-vpim
     SUBDIR += rump
-    SUBDIR += rumprun
     SUBDIR += saaghar
     SUBDIR += seabios
     SUBDIR += sent

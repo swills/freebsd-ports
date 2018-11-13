@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing
-# $FreeBSD: head/chinese/qterm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/chinese/qterm/Makefile 483993 2018-11-04 11:50:15Z antoine $
 
 PORTNAME=	qterm
 PORTVERSION=	0.5.12
@@ -9,6 +9,8 @@ MASTER_SITES=	SF/qterm/qterm/${PORTVERSION}
 
 MAINTAINER=	kaiwang27@gmail.com
 COMMENT=	BBS client for BSD/Linux
+
+BROKEN=		fails to build
 
 USES=		qt:4 tar:bzip2 cmake perl5
 USE_PERL5=	build

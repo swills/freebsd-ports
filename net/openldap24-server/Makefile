@@ -1,5 +1,5 @@
 # Created by: Xin LI <delphij@FreeBSD.org>
-# $FreeBSD: head/net/openldap24-server/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/net/openldap24-server/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=		openldap
 DISTVERSION=		2.4.46
@@ -201,10 +201,6 @@ CONFIGURE_ARGS=		--with-threads=posix \
 			--with-tls=openssl \
 			--disable-dependency-tracking \
 			--enable-dynamic
-
-.if ${OSVERSION} < 1101000
-CFLAGS+=		-DMDB_DSYNC=O_SYNC -Dfdatasync=fsync
-.endif
 
 .if ${PORT_OPTIONS:MSASL}
 LIB_DEPENDS+=		libsasl2.so:security/cyrus-sasl2

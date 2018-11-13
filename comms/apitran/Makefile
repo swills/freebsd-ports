@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/apitran/Makefile 481122 2018-10-02 18:40:54Z db $
+# $FreeBSD: head/comms/apitran/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	apitran
 PORTVERSION=	g20180926
+PORTREVISION=	1
 CATEGORIES=	comms astro hamradio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -16,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVO
 		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYNUMPY} \
 		sox:audio/sox \
-		display:graphics/ImageMagick
+		display:graphics/ImageMagick6
 
 USES=		python:run shebangfix
 USE_GITHUB=	yes

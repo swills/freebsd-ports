@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-STOMP-Client/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/net/p5-Net-STOMP-Client/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Net-STOMP-Client
 PORTVERSION=	2.3
@@ -6,7 +6,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Streaming Text Orientated Messaging Protocol Client
 
 LICENSE=	ART10 GPLv1+

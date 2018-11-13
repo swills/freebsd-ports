@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-ki18n/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/devel/kf5-ki18n/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	ki18n
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,6 +10,6 @@ COMMENT=	KF5 advanced internationalization framework
 USES=		cmake:outsource compiler:c++11-lib gettext-runtime \
 		gettext-tools:build,run kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT=		buildtools_build concurrent core qmake_build qml script testlib
+USE_QT=		buildtools_build concurrent core declarative qmake_build script testlib
 
 .include <bsd.port.mk>

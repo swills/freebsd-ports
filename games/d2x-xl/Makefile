@@ -1,5 +1,5 @@
 # Created by: Aragon Gouveia
-# $FreeBSD: head/games/d2x-xl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/d2x-xl/Makefile 484035 2018-11-04 13:36:33Z antoine $
 
 PORTNAME=	d2x-xl
 PORTVERSION=	1.14.121
@@ -14,6 +14,8 @@ DISTFILES=	${PORTNAME}-src-${PORTVERSION}.rar:source \
 
 MAINTAINER=	aragon@phat.za.net
 COMMENT=	Community Unix port of Descent 2 Game
+
+BROKEN=		fails to build
 
 EXTRACT_DEPENDS=	unrar:archivers/unrar
 RUN_DEPENDS=	unrar:archivers/unrar

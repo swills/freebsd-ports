@@ -1,5 +1,5 @@
 # Created by: cracauer@cons.org "Martin Cracauer"
-# $FreeBSD: head/sysutils/rdate/Makefile 386393 2015-05-15 09:40:37Z marino $
+# $FreeBSD: head/sysutils/rdate/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	rdate
 PORTVERSION=	20150501
@@ -18,7 +18,7 @@ PLIST_FILES=	sbin/rdate man/man8/${PORTNAME}.8.gz
 
 post-patch:
 	${REINPLACE_CMD} -e 's,/right,,' ${WRKSRC}/rdate.8
-.if ${OPSYS} == DragonFly || ${OSVERSION} < 1100072
+.if ${OPSYS} == DragonFly
 	${REINPLACE_CMD} -e '/^SRCS/s/$$/ reallocarray.c/' ${WRKSRC}/Makefile
 	${ECHO} 'void *reallocarray(void *optr, size_t nmemb, size_t size);' \
 		>> ${WRKSRC}/ntpleaps.h

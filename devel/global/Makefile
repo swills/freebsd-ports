@@ -1,8 +1,9 @@
 # Created by: chuckr@FreeBSD.org
-# $FreeBSD: head/devel/global/Makefile 461296 2018-02-09 14:07:31Z sunpoet $
+# $FreeBSD: head/devel/global/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	global
 PORTVERSION=	6.6.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

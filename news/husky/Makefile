@@ -1,8 +1,8 @@
-# $FreeBSD: head/news/husky/Makefile 431938 2017-01-20 09:07:38Z antoine $
+# $FreeBSD: head/news/husky/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME?=	husky
 PORTVERSION=	1.9.20140519
-PORTREVISION?=	2
+PORTREVISION?=	3
 PORTEPOCH?=	0
 CATEGORIES?=	news mail
 MASTER_SITES=	SF/husky/husky/1.9-current/2014.05.19

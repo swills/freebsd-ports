@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-openxpki/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/security/p5-openxpki/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	openxpki
 PORTVERSION=	2.0.3
@@ -13,7 +13,7 @@ COMMENT=	Perl based trustcenter for PKI: universal server building block
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	bash:shells/bash \

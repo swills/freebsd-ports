@@ -1,15 +1,15 @@
-# $FreeBSD: head/devel/py-knack/Makefile 479608 2018-09-12 14:58:32Z dbn $
+# $FreeBSD: head/devel/py-knack/Makefile 484459 2018-11-08 15:12:44Z dbn $
 
 PORTNAME=	knack
-DISTVERSION=	0.4.3
+DISTVERSION=	0.5.0
 CATEGORIES=	devel python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	dbn@FreeBSD.org
 COMMENT=	Command line interface framework
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argcomplete>0:devel/py-argcomplete@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}colorama>0:devel/py-colorama@${PY_FLAVOR} \
@@ -20,7 +20,5 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argcomplete>0:devel/py-argcomplete@${PY_FLAV
 
 USES=		python
 USE_PYTHON=	autoplist distutils concurrent
-USE_GITHUB=	yes
-GH_ACCOUNT=	Microsoft
 
 .include <bsd.port.mk>

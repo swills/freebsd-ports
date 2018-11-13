@@ -1,9 +1,9 @@
 # Created by: Oliver Fromme
-# $FreeBSD: head/devel/cssc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/cssc/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cssc
 PORTVERSION=	1.4.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 DISTNAME=	CSSC-${PORTVERSION}

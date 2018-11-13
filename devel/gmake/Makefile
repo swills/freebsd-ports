@@ -1,9 +1,9 @@
 # Created by: jkh
-# $FreeBSD: head/devel/gmake/Makefile 462385 2018-02-20 09:39:14Z tijl $
+# $FreeBSD: head/devel/gmake/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gmake
 PORTVERSION=	4.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNU/make
 DISTNAME=	make-${PORTVERSION}

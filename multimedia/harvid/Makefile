@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/harvid/Makefile 471491 2018-06-03 12:44:04Z antoine $
+# $FreeBSD: head/multimedia/harvid/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	harvid
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.8.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	marcelbonnet@gmail.com

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 483742 2018-11-01 21:15:11Z mfechner $
+# $FreeBSD: head/www/Makefile 484442 2018-11-08 10:31:08Z wen $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -534,6 +534,7 @@
     SUBDIR += npapi-xine
     SUBDIR += npc
     SUBDIR += npm
+    SUBDIR += npm-node10
     SUBDIR += npm-node6
     SUBDIR += npm-node8
     SUBDIR += nspluginwrapper
@@ -2414,6 +2415,7 @@
     SUBDIR += twill
     SUBDIR += twms
     SUBDIR += typo3-8
+    SUBDIR += typo3-9
     SUBDIR += uchiwa
     SUBDIR += udmsearch
     SUBDIR += ufdbguard

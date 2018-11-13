@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/tilp2/Makefile 472056 2018-06-09 15:31:35Z danfe $
+# $FreeBSD: head/comms/tilp2/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME=	tilp2
 PORTVERSION=	1.18
@@ -17,7 +17,8 @@ LIB_DEPENDS=	libticables2.so:comms/libticables2	\
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		autoreconf desktop-file-utils gettext gmake groff localbase \
+USES=		autoreconf compiler:c++11-lang desktop-file-utils gettext \
+		gmake groff localbase \
 		libtool pkgconfig shared-mime-info tar:bzip2
 USE_GNOME=	gtk20 intltool
 

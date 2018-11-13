@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/py-av/Makefile 481596 2018-10-09 04:19:08Z swills $
+# $FreeBSD: head/multimedia/py-av/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	av
 PORTVERSION=	0.5.3
+PORTREVISION=	1
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

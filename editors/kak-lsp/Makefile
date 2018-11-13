@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/kak-lsp/Makefile 483301 2018-10-28 14:45:03Z tobik $
+# $FreeBSD: head/editors/kak-lsp/Makefile 484423 2018-11-07 23:28:20Z tobik $
 
 PORTNAME=	kak-lsp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	5.9.0
+DISTVERSION=	5.9.1
 CATEGORIES=	editors
 
 MAINTAINER=	tobik@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Chuck Robey <chuckr@FreeBSD.org>
-# $FreeBSD: head/lang/mosml/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/lang/mosml/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	mosml
 PORTVERSION=	2.10.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	ver-
 CATEGORIES=	lang
 

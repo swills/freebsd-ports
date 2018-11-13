@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/kreport/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/kreport/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=		kreport
 DISTVERSION=		3.1.0
@@ -11,9 +11,10 @@ COMMENT=		Framework for creation of reports in multiple formats
 
 LIB_DEPENDS=		libKPropertyCore3.so:x11-toolkits/kproperty
 
-USES=			cmake:outsource gettext kde:5 python:2.7 qt:5 tar:xz
+USES=			cmake:outsource compiler:c++11-lang gettext kde:5 \
+			python:2.7 qt:5 tar:xz
 USE_KDE=		config coreaddons ecm marble widgetsaddons
-USE_QT=			core gui network qml webkit widgets xml \
+USE_QT=			core declarative gui network webkit widgets xml \
 			buildtools_build printsupport qmake_build
 
 CONFLICTS_INSTALL=	calligra-2*

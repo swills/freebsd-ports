@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/synergy/Makefile 465935 2018-03-29 23:06:10Z yuri $
+# $FreeBSD: head/sysutils/synergy/Makefile 484275 2018-11-06 05:19:29Z yuri $
 
 PORTNAME=	synergy
 DISTVERSIONPREFIX=	v
@@ -21,6 +21,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	symless
 GH_PROJECT=	synergy-core
 USE_XORG=	ice xtst x11 sm xext xinerama xrandr xi
+
+CONFLICTS=	synergy-1
 
 CMAKE_ARGS=	-DSYNERGY_REVISION:STRING=${PORTVERSION:S/.//g}00000 # it expects a 7-digit hash
 

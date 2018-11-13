@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-im/toxic/Makefile 483603 2018-10-31 18:49:19Z thierry $
+# $FreeBSD: head/net-im/toxic/Makefile 483799 2018-11-02 10:17:45Z thierry $
 
 PORTNAME=	toxic
 PORTVERSION=	0.8.3
@@ -27,7 +27,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/libtoxcore.a:net-im/tox
 USE_GITHUB=	yes
 GH_ACCOUNT=	JFreegman
 
-USES=		desktop-file-utils gettext-runtime gmake ncurses openal:al,alut pkgconfig
+USES=		desktop-file-utils gettext-runtime gmake ncurses:port openal:al,alut pkgconfig
 
 OPTIONS_DEFINE=	X11 PYTHON
 OPTIONS_DEFAULT=X11

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/embree/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/embree/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	embree
 PORTVERSION=	2.17.5
@@ -32,7 +32,7 @@ OPTIONS_DEFAULT=	ISPC
 OPTIONS_SUB=	yes
 
 IMAGEMAGICK_DESC=	BMP, GIF, PNG, TGA, TIFF image formats support
-IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick6
 IMAGEMAGICK_CMAKE_ON=	-DEMBREE_TUTORIALS_IMAGE_MAGICK:BOOL=ON
 
 ISPC_DESC=		ISPC applications support

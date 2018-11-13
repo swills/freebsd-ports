@@ -1,8 +1,9 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/lang/emacs-lisp-intro/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/lang/emacs-lisp-intro/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	emacs-lisp-intro
 PORTVERSION=	2.04
+PORTREVISION=	1
 CATEGORIES=	lang elisp
 MASTER_SITES=	GNU/emacs
 

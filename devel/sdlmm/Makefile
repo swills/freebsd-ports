@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/sdlmm/Makefile 374303 2014-12-08 16:48:38Z tijl $
+# $FreeBSD: head/devel/sdlmm/Makefile 484827 2018-11-12 21:25:02Z amdmi3 $
 
 PORTNAME=	sdlmm
 PORTVERSION=	0.1.8
@@ -11,12 +11,15 @@ DISTNAME=	SDLmm-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ Wrapper for the SDL (Simple DirectMedia Layer)
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 USES=		libtool
 USE_SDL=	sdl
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libSDLmm.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libSDLmm.so
 
 .include <bsd.port.mk>

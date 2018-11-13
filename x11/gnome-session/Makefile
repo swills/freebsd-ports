@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome-session/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11/gnome-session/Makefile 484597 2018-11-10 10:03:06Z kwm $
 
 PORTNAME=	gnome-session
 PORTVERSION=	3.28.1
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -15,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	xmlto:textproc/xmlto
 LIB_DEPENDS=	libjson-glib-1.0.so:devel/json-glib \
+		libdbus-glib-1.so:devel/dbus-glib \
 		libepoxy.so:graphics/libepoxy
 RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit2 \
 		dbus-daemon:devel/dbus

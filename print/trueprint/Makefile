@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/print/trueprint/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/print/trueprint/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	trueprint
 PORTVERSION=	5.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	GNU
 

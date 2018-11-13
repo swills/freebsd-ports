@@ -1,5 +1,5 @@
 # Created by: Alexander Brovikov <alexander@brovikov.ru>
-# $FreeBSD: head/net/libsrtp/Makefile 472170 2018-06-11 08:18:30Z tijl $
+# $FreeBSD: head/net/libsrtp/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	libsrtp
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ COMMENT=	Secure RTP (SRTP) Reference Implementation
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 PORTSCOUT=	limit:^1\.
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/openhpi/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/openhpi/Makefile 483978 2018-11-04 09:43:09Z antoine $
 
 PORTNAME=	openhpi
 PORTVERSION=	3.6.1
@@ -13,6 +13,8 @@ LICENSE=	OPENHPI
 LICENSE_NAME=	OpenHPI license
 LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid \
 		libnetsnmp.so:net-mgmt/net-snmp \

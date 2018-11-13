@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/lang/chicken/Makefile 477236 2018-08-15 15:26:13Z tobik $
+# $FreeBSD: head/lang/chicken/Makefile 484449 2018-11-08 12:52:23Z tobik $
 
 PORTNAME=	chicken
 DISTVERSION=	4.13.0
@@ -9,6 +9,9 @@ MASTER_SITES=	http://code.call-cc.org/releases/${DISTVERSION}/
 
 MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Scheme-to-C compiler
+
+DEPRECATED=	Old release; please migrate to lang/chicken5
+EXPIRATION_DATE=	2019-12-20
 
 USES=		cpe gmake
 CPE_VENDOR=	call-cc
@@ -25,6 +28,8 @@ MAKE_ARGS=	PLATFORM=bsd \
 		C_COMPILER_OPTIMIZATION_OPTIONS="${CFLAGS}" \
 		LINKER_OPTIONS="${LDFLAGS}"
 TEST_TARGET=	check
+
+PORTSCOUT=	ignore:1
 
 OPTIONS_DEFINE=	DOCS FEATHERS
 OPTIONS_SUB=	yes

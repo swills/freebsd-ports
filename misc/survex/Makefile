@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/survex/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/misc/survex/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	survex
 DISTVERSION=	1.2.36
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	https://survex.com/software/${DISTVERSION}/
 

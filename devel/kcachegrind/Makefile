@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kcachegrind/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/kcachegrind/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	kcachegrind
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,8 @@ CATEGORIES=	devel kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Profiler frontend for KDE
 
-USES=		cmake:outsource kde:5 python:run qt:5 shebangfix tar:xz
+USES=		cmake:outsource compiler:c++11-lang kde:5 python:run qt:5 \
+		shebangfix tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n itemviews jobwidgets kio service solid \
 		widgetsaddons xmlgui

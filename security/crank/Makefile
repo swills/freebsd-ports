@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/security/crank/Makefile 481888 2018-10-12 09:19:04Z antoine $
+# $FreeBSD: head/security/crank/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	crank
 PORTVERSION=	0.2.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	security
 MASTER_SITES=	SF
 

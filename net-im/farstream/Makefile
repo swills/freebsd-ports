@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net-im/farstream/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/farstream/Makefile 483887 2018-11-03 11:58:10Z tijl $
 
 PORTNAME=	farstream
-PORTVERSION=	0.2.7
+PORTVERSION=	0.2.8
 CATEGORIES=	net-im devel
 MASTER_SITES=	http://freedesktop.org/software/farstream/releases/farstream/
 

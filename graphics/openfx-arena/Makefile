@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/openfx-arena/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/graphics/openfx-arena/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	openfx-arena
 PORTVERSION=	2.3.14
 DISTVERSIONPREFIX=	Natron-
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libOpenColorIO.so:graphics/opencolorio \
 		librevenge-0.0.so:textproc/librevenge \
 		libpoppler-glib.so:graphics/poppler-glib \
 		liblcms2.so:graphics/lcms2 \
-		libMagick++-6.so:graphics/ImageMagick \
+		libMagick++-6.so:graphics/ImageMagick6 \
 		libzip.so:archivers/libzip \
 		libexpat.so:textproc/expat2 \
 		libfreetype.so:print/freetype2 \

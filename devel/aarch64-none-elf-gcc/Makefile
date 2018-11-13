@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/aarch64-none-elf-gcc/Makefile 478209 2018-08-27 14:29:15Z manu $
+# $FreeBSD: head/devel/aarch64-none-elf-gcc/Makefile 484562 2018-11-10 00:32:29Z linimon $
 
 PKGNAMEPREFIX=	aarch64-none-elf-
 COMMENT=	GNU Compiler Collection for bare metal arm cross-development
@@ -11,7 +11,6 @@ INSTALL_TARGET=	install-gcc install-target-libgcc
 
 BROKEN_mips=		configure: error: cannot compute suffix of object files: cannot compile
 BROKEN_mips64=		configure: error: cannot compute suffix of object files: cannot compile
-BROKEN_powerpc64=	fails to compile: libgcc2.c:1846:9: internal compiler error: Segmentation fault
 
 MASTERDIR=	${.CURDIR}/../powerpc64-gcc
 

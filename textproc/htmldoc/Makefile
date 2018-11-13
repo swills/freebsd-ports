@@ -1,5 +1,5 @@
 # Created by: Glenn Trewitt <glenn@trewitt.org>
-# $FreeBSD: head/textproc/htmldoc/Makefile 478107 2018-08-26 08:26:41Z delphij $
+# $FreeBSD: head/textproc/htmldoc/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	htmldoc
 PORTVERSION=	1.8.28
@@ -13,7 +13,7 @@ COMMENT=	Converts HTML to PDF and/or PostScript
 
 LICENSE=	GPLv2
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 LIB_DEPENDS=	libpng.so:graphics/png
 

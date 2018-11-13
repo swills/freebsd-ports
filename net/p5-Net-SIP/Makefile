@@ -1,8 +1,8 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-Net-SIP/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/net/p5-Net-SIP/Makefile 484836 2018-11-12 21:28:50Z sunpoet $
 
 PORTNAME=	Net-SIP
-PORTVERSION=	0.815
+PORTVERSION=	0.818
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,8 +16,9 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Net-DNS>=0.56:dns/p5-Net-DNS
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/pear.mk 468124 2018-04-23 18:18:20Z brnrd $
+# $FreeBSD: head/Mk/Uses/pear.mk 484589 2018-11-10 07:58:52Z sunpoet $
 #
 # Use the PHP Extension and Application Repository
 #
@@ -20,7 +20,7 @@ _valid_pear_ARGS=		env
 # Sanity check
 .  for arg in ${pear_ARGS}
 .    if empty(_valid_pear_ARGS:M${arg})
-IGNORE=	Incorrect 'USES+= pear:${cmake_ARGS}' usage: argument [${arg}] is not recognized
+IGNORE=	Incorrect 'USES+= pear:${pear_ARGS}' usage: argument [${arg}] is not recognized
 .    endif
 .  endfor
 

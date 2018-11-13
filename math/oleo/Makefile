@@ -1,9 +1,9 @@
 # Created by: mr
-# $FreeBSD: head/math/oleo/Makefile 420708 2016-08-23 16:25:35Z marino $
+# $FreeBSD: head/math/oleo/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	oleo
 PORTVERSION=	1.99.16
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math
 MASTER_SITES=	GNU
 

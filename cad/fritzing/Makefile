@@ -1,5 +1,5 @@
 # Created by: Sergio Lenzi <lenzi.sergio@gmail.com>
-# $FreeBSD: head/cad/fritzing/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/cad/fritzing/Makefile 484659 2018-11-11 03:52:09Z linimon $
 
 PORTNAME=	fritzing
 PORTVERSION=	0.9.2
@@ -14,7 +14,7 @@ LICENSE=	GPLv2+
 
 SUB_FILES+=	pkg-install
 
-USES=		dos2unix gmake python qmake qt:5 tar:bzip2
+USES=		compiler:c++11-lang dos2unix gmake python qmake qt:5 tar:bzip2
 USE_QT=		buildtools concurrent core dbus gui imageformats network printsupport qmake serialport sql-sqlite3 svg xml
 DOS2UNIX_REGEX=	.*pro
 INSTALLS_ICONS=	yes

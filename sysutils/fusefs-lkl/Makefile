@@ -1,5 +1,5 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-lkl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/fusefs-lkl/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	lkl
 DISTVERSION=	4.16.g20180628
@@ -28,8 +28,6 @@ GH_TAGNAME=	86dd3afb590eccc1903611bdaa8bac87757eb80d
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=No one has added other architecture ld formats yet
-
-IGNORE_FreeBSD_10=	requires FreeBSD 11 or newer
 
 WRKSRC_SUBDIR=	tools/lkl
 MAKE_JOBS_UNSAFE=yes

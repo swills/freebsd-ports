@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 482328 2018-10-18 07:13:32Z ehaupt $
+# $FreeBSD: head/x11-fonts/Makefile 484223 2018-11-05 21:22:54Z tobik $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -172,6 +172,7 @@
     SUBDIR += psftools
     SUBDIR += py-QtAwesome
     SUBDIR += py-bdflib
+    SUBDIR += raleway
     SUBDIR += roboto-fonts-ttf
     SUBDIR += sgifonts
     SUBDIR += sharefonts

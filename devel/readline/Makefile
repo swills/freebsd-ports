@@ -1,9 +1,9 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/devel/readline/Makefile 464407 2018-03-13 20:30:25Z sunpoet $
+# $FreeBSD: head/devel/readline/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	readline
 PORTVERSION=	7.0.${PATCHLEVEL}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}

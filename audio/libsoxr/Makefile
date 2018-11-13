@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/libsoxr/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/libsoxr/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	libsoxr
 PORTVERSION=	0.1.2.20160529
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	audio
 MASTER_SITES=	LOCAL/riggs/soxr/
 

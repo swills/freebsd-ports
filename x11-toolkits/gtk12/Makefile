@@ -1,10 +1,10 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/x11-toolkits/gtk12/Makefile 481899 2018-10-12 12:42:22Z antoine $
+# $FreeBSD: head/x11-toolkits/gtk12/Makefile 484628 2018-11-10 18:12:57Z bapt $
 #    $MCom: ports/x11-toolkits/gtk12/Makefile,v 1.3 2006/10/09 19:31:53 ahze Exp $
 
 PORTNAME=	gtk
 PORTVERSION=	1.2.10
-PORTREVISION=	27
+PORTREVISION=	28
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME/sources/gtk+/1.2
 PKGNAMESUFFIX=	12

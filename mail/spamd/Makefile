@@ -1,5 +1,5 @@
 # Created by: Max Laier <max@love2party.net>
-# $FreeBSD: head/mail/spamd/Makefile 462135 2018-02-17 12:00:23Z sunpoet $
+# $FreeBSD: head/mail/spamd/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	spamd
 PORTVERSION=	4.9.1
@@ -12,7 +12,7 @@ COMMENT=	Traps spammers with a very slow smtp-login and return 4xx error
 
 LICENSE=	BSD2CLAUSE
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USE_RC_SUBR?=	obspamd obspamlogd
 USES=		ssl

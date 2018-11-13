@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/www/xombrero/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/www/xombrero/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	xombrero
 PORTVERSION=	1.6.4
@@ -13,8 +13,6 @@ LICENSE=	ISCL
 
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
 		libsoup-2.4.so:devel/libsoup
-
-BROKEN_FreeBSD_10=	does not build
 
 USES=		desktop-file-utils groff pkgconfig perl5 tar:tgz
 USE_PERL5=	build

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/py-qt5-qml/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/lang/py-qt5-qml/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	qml
 PORTREVISION=	5
@@ -14,7 +14,7 @@ USES=		python pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run network_run
 USE_PYTHON=	flavors
-USE_QT=		core gui network qml buildtools_build qmake_build
+USE_QT=		core declarative gui network buildtools_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
 OPTIONS_DEFAULT=API

@@ -1,8 +1,8 @@
 # Created by: Rusty Nejdl
-# $FreeBSD: head/databases/py-apsw/Makefile 475729 2018-07-29 19:15:10Z sunpoet $
+# $FreeBSD: head/databases/py-apsw/Makefile 484235 2018-11-05 21:44:30Z sunpoet $
 
 PORTNAME=	apsw
-PORTVERSION=	3.24.0
+PORTVERSION=	3.25.2
 DISTVERSIONSUFFIX=	-r1
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	sqlite3>=${PORTVERSION:R}:databases/sqlite3
 
-USE_PYTHON=	autoplist concurrent distutils
 USES=		localbase python sqlite:3
+USE_PYTHON=	autoplist concurrent distutils
 
 GH_ACCOUNT=	rogerbinns
 USE_GITHUB=	yes

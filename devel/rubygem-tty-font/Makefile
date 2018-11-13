@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-font/Makefile 464286 2018-03-12 20:39:20Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-font/Makefile 483929 2018-11-03 22:18:05Z sunpoet $
 
 PORTNAME=	tty-font
-PORTVERSION=	0.2.0
+PORTVERSION=	0.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	Large stylized characters using terminal friendly fonts
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

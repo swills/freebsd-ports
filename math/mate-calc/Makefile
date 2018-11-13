@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/math/mate-calc/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/math/mate-calc/Makefile 483827 2018-11-02 17:51:55Z ericbsd $
 
 PORTNAME=	mate-calc
-PORTVERSION=	1.20.1
+PORTVERSION=	1.20.2
 CATEGORIES=	math mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

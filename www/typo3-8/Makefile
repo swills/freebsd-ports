@@ -1,5 +1,5 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-8/Makefile 483729 2018-11-01 19:17:56Z sunpoet $
+# $FreeBSD: head/www/typo3-8/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
@@ -60,9 +60,9 @@ ZLIB_USE=	PHP=zlib
 
 .if ${PORT_OPTIONS:MIMAGICK}
 .if ${PORT_OPTIONS:MX11}
-RUN_DEPENDS+=	convert:graphics/ImageMagick
+RUN_DEPENDS+=	convert:graphics/ImageMagick6
 .else
-RUN_DEPENDS+=	convert:graphics/ImageMagick-nox11
+RUN_DEPENDS+=	convert:graphics/ImageMagick6-nox11
 .endif
 .endif
 

@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/calculix/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/calculix/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	calculix
 PORTVERSION=	2.14
@@ -16,7 +16,6 @@ COMMENT=	Three-Dimensional Structural Finite Element Program
 LICENSE=	GPLv2
 
 BROKEN=		checksum and size mismatch
-BROKEN_FreeBSD_10=	Does not build with clang on FreeBSD 10, causes segfaults when built with gcc
 BROKEN_aarch64=		fails to link: shapeFunctions.c:(function attach_new): relocation R_AARCH64_CALL26 out of range
 
 RUN_DEPENDS=	ccx:cad/calculix-ccx

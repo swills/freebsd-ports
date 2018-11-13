@@ -1,9 +1,9 @@
 # Created by: Sascha Klauder <sklauder@trimind.de>
-# $FreeBSD: head/palm/jpilot-picsnvideos/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/palm/jpilot-picsnvideos/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	picsnvideos
 PORTVERSION=	0.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	palm comms graphics
 MASTER_SITES=	SF/${PORTNAME}/source%20code/${PORTVERSION}
 PKGNAMEPREFIX=	jpilot-

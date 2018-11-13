@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/cinelerra-gg/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/multimedia/cinelerra-gg/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	cinelerra-gg
 DISTVERSION=	5.1-20180714
 DISTVERSIONSUFFIX=	-${REV:C/(.......).*/\1/}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	https://git.cinelerra-cv.org/gitweb?p=goodguy/cinelerra.git;a=snapshot;h=${REV};sf=tgz;dummy=/ # tarballs are @ https://cinelerra-cv.org/five/pkgs/src/
 

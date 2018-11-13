@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/xen-kernel47/Makefile 475276 2018-07-24 20:26:10Z antoine $
+# $FreeBSD: head/emulators/xen-kernel47/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	xen
 PORTVERSION=	4.7.2
@@ -99,10 +99,6 @@ EXTRA_PATCHES=	${FILESDIR}/0001-xen-logdirty-prevent-preemption-if-finished.patc
 
 .if ${OPSYS} != FreeBSD
 IGNORE=		only supported on FreeBSD
-.endif
-
-.if ${OSVERSION} < 1100055
-IGNORE=		only supported on recent FreeBSD 11
 .endif
 
 pre-build:

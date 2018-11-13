@@ -1,8 +1,9 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/sqwebmail/Makefile 481732 2018-10-10 11:54:58Z madpilot $
+# $FreeBSD: head/mail/sqwebmail/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	sqwebmail
 PORTVERSION=	6.0.0
+PORTREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	SF/courier/webmail/${PORTVERSION}
 

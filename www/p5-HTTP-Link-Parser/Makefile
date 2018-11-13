@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Link-Parser/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-HTTP-Link-Parser/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	HTTP-Link-Parser
 PORTVERSION=	0.200
@@ -8,7 +8,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parse HTTP Link headers
 
 LICENSE=	MIT

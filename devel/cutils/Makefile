@@ -1,12 +1,13 @@
 # Created by: Sandro Sigala
-# $FreeBSD: head/devel/cutils/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/devel/cutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cutils
 PORTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.sigala.it/sandro/files/
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Miscellaneous C programmer's utilities
 
 USES=		makeinfo

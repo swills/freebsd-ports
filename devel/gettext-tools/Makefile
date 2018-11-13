@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/gettext-tools/Makefile 416967 2016-06-16 13:31:37Z tijl $
+# $FreeBSD: head/devel/gettext-tools/Makefile 484692 2018-11-11 13:33:22Z bapt $
 
 # NOTE: before committing to this port, contact portmgr to arrange for an
 # experimental ports run.  Untested commits may be backed out at portmgr's
 # discretion.
 
 PORTNAME=	gettext-tools
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	GNU gettext development and translation tools
 

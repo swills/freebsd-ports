@@ -1,9 +1,12 @@
-# $FreeBSD: head/sysutils/bacula-client-static/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/sysutils/bacula-client-static/Makefile 484470 2018-11-08 19:16:26Z dvl $
 
 PORTNAME=	bacula
 PKGNAMESUFFIX=	-client-static
 
 COMMENT=	Network backup solution (static client)
+
+DEPRECATED=	Unsupported. Please migrate to bacula9-client-static
+EXPIRATION_DATE=	2019-03-01
 
 PLIST=		${.CURDIR}/pkg-plist
 MASTERDIR=	${.CURDIR}/../../sysutils/bacula-server

@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/math/p5-Math-Polynomial-Solve/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/math/p5-Math-Polynomial-Solve/Makefile 483870 2018-11-03 02:53:00Z wen $
 
 PORTNAME=	Math-Polynomial-Solve
-PORTVERSION=	2.85
+PORTVERSION=	2.86
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

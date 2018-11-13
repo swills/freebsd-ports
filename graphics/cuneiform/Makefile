@@ -1,9 +1,9 @@
 # Created by: samm
-# $FreeBSD: head/graphics/cuneiform/Makefile 475272 2018-07-24 20:14:36Z tobik $
+# $FreeBSD: head/graphics/cuneiform/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	cuneiform
 PORTVERSION=	1.1.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	http://launchpadlibrarian.net/69906918/
 DISTNAME=	${PORTNAME}-linux-${PORTVERSION}
@@ -24,7 +24,7 @@ USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	IMAGEMAGICK
 
-IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
+IMAGEMAGICK_LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick6
 IMAGEMAGICK_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_ImageMagick
 
 post-patch:

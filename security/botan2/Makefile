@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/botan2/Makefile 481285 2018-10-05 16:42:24Z fernape $
+# $FreeBSD: head/security/botan2/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	botan
 DISTVERSION=	2.8.0
@@ -41,7 +41,7 @@ SQLITE3_CONFIGURE_WITH=	sqlite3
 
 SSL_USES=		ssl
 SSL_CONFIGURE_WITH=	openssl
-SSL_VARS=		BROKEN_SSL=	openssl-devel
+SSL_VARS=		BROKEN_SSL=	openssl111
 
 .include <bsd.port.options.mk>
 

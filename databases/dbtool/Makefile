@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/databases/dbtool/Makefile 472627 2018-06-17 19:06:51Z tobik $
+# $FreeBSD: head/databases/dbtool/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	dbtool
 PORTVERSION=	1.9.1
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://www.daemon.de/idisk/Apps/dbtool/
 

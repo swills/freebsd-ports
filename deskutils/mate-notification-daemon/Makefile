@@ -1,8 +1,8 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/deskutils/mate-notification-daemon/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
+# $FreeBSD: head/deskutils/mate-notification-daemon/Makefile 484152 2018-11-04 21:38:57Z ericbsd $
 
 PORTNAME=	mate-notification-daemon
-PORTVERSION=	1.20.0
+PORTVERSION=	1.20.1
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

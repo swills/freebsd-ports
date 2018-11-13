@@ -1,9 +1,9 @@
 # Created by: Boris Popov <bp@FreeBSD.org>
-# $FreeBSD: head/sysutils/nut/Makefile 482886 2018-10-24 07:17:08Z cy $
+# $FreeBSD: head/sysutils/nut/Makefile 484513 2018-11-09 13:47:51Z cy $
 
 PORTNAME=	nut
 PORTVERSION=	2.7.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.networkupstools.org/source/${PORTVERSION:R}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}

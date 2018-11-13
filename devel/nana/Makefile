@@ -1,8 +1,9 @@
 # Created by: Phil Maker <pjm@gnu.org>
-# $FreeBSD: head/devel/nana/Makefile 398832 2015-10-08 15:11:28Z olgeni $
+# $FreeBSD: head/devel/nana/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	nana
 PORTVERSION=	2.5
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://download.savannah.gnu.org/releases/nana/ \
 		ftp://download.savannah.gnu.org/releases/nana/

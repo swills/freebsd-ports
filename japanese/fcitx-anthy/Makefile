@@ -1,8 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/japanese/fcitx-anthy/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/fcitx-anthy/Makefile 484683 2018-11-11 11:19:39Z wen $
 
 PORTNAME=	fcitx-anthy
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.3
 CATEGORIES=	japanese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx
@@ -12,6 +12,7 @@ COMMENT=	Anthy support for Fcitx
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfcitx-config.so:chinese/fcitx \
 		libanthy.so:japanese/anthy
 

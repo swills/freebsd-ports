@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/www/mod_md-devel/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	mod_md
 PORTVERSION=	1.1.16
@@ -41,12 +41,6 @@ PORTDOCS=	README README.md
 
 OPTIONS_DEFINE=	DOCS
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100085 && ${SSL_DEFAULT} == base
-IGNORE=		port requires OpenSSL 1.0.2 or later, set DEFAULT_VERSIONS+= ssl=openssl
-.endif
-
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/share/doc/mod_md/LICENSE
 	${MKDIR} ${STAGEDIR}${PREFIX}/${APACHEETCDIR}/modules.d
@@ -58,4 +52,4 @@ post-install:
 	(cd ${STAGEDIR}${PREFIX}/${APACHEMODDIR} && \
 		${LN} mod_manageddomain.so.0.0.0 mod_manageddomain.so)
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

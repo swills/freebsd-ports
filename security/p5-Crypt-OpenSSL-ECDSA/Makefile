@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-ECDSA/Makefile 483652 2018-11-01 10:15:12Z mat $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-ECDSA/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	Crypt-OpenSSL-ECDSA
 PORTVERSION=	0.08
@@ -15,7 +15,7 @@ LICENSE_COMB=	dual
 
 BROKEN_FreeBSD_12=	unknown type name 'ECDSA_METHOD'; did you mean 'DSA_METHOD'?
 BROKEN_FreeBSD_13=	unknown type name 'ECDSA_METHOD'; did you mean 'DSA_METHOD'?
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Crypt-OpenSSL-EC>=0.05:security/p5-Crypt-OpenSSL-EC

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-http-prompt/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-http-prompt/Makefile 484365 2018-11-06 23:37:51Z dbaio $
 
 PORTNAME=	http-prompt
-PORTVERSION=	0.11.2
+PORTVERSION=	1.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,9 +19,11 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=5.0:devel/py-click@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}httpie>=0.9.2:www/py-httpie@${PY_FLAVOR}
 
-NO_ARCH=	yes
-SUB_FILES=	pkg-message
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
+
+SUB_FILES=	pkg-message
 
 .include <bsd.port.mk>

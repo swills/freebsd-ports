@@ -1,9 +1,9 @@
 # Created by: Josh Gilliam <josh@quick.net>
-# $FreeBSD: head/textproc/aspell/Makefile 458009 2018-01-04 02:20:59Z jbeich $
+# $FreeBSD: head/textproc/aspell/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	aspell
 PORTVERSION=	0.60.6.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	textproc
 MASTER_SITES=	GNU/aspell
 

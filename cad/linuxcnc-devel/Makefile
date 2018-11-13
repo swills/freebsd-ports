@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/cad/linuxcnc-devel/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/cad/linuxcnc-devel/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	linuxcnc
 PORTVERSION=	20170708
@@ -11,8 +11,6 @@ MAINTAINER=	trasz@FreeBSD.org
 COMMENT=	Open Source CNC machine controller
 
 LICENSE=	GPLv2
-
-BROKEN_FreeBSD_10=	use of undeclared identifier '__builtin_ia32_rdtsc'
 
 LIB_DEPENDS=	libBLT25.so:x11-toolkits/blt \
 		${PY_BOOST} \

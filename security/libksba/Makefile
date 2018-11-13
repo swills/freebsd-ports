@@ -1,8 +1,9 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/security/libksba/Makefile 426121 2016-11-14 16:18:44Z cmt $
+# $FreeBSD: head/security/libksba/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libksba
 PORTVERSION=	1.3.5
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	GNUPG/${PORTNAME}
 

@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/databases/cassandra-cpp-driver/Makefile 467130 2018-04-12 08:44:40Z gahr $
+# $FreeBSD: head/databases/cassandra-cpp-driver/Makefile 484180 2018-11-05 09:08:55Z gahr $
 
 PORTNAME=	cassandra-cpp-driver
-PORTVERSION=	2.9.0
+PORTVERSION=	2.10.0
 CATEGORIES=	databases
 
 MAINTAINER=	gahr@FreeBSD.org
@@ -12,17 +12,13 @@ LICENSE=	APACHE20
 
 LIB_DEPENDS=	libuv.so:devel/libuv
 
-BROKEN_powerpc64=	fails to compile: reader.h: warning: comparison is always true due to limited range of data type
-
+USES=		cmake:outsource compiler:c++11-lang pkgconfig pathfix ssl
+USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	datastax
 GH_PROJECT=	cpp-driver
 
-USES=		cmake:outsource pkgconfig pathfix ssl
-CMAKE_ARGS=	-DCMAKE_INSTALL_LIBDIR:STRING=lib \
-		-DCASS_BUILD_STATIC:BOOL=ON
-
-USE_LDCONFIG=	yes
+CMAKE_ARGS=	-DCMAKE_INSTALL_LIBDIR:STRING=lib -DCASS_BUILD_STATIC:BOOL=ON
 
 PLIST_FILES=	include/cassandra.h \
 		lib/libcassandra.so \

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-c21e/Makefile 481296 2018-10-05 21:06:50Z sunpoet $
+# $FreeBSD: head/devel/rubygem-c21e/Makefile 483926 2018-11-03 22:17:39Z sunpoet $
 
 PORTNAME=	c21e
-PORTVERSION=	1.1.5
+PORTVERSION=	1.1.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

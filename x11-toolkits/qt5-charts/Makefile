@@ -1,15 +1,16 @@
-# $FreeBSD: head/x11-toolkits/qt5-charts/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-charts/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	charts
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 5 charts module
 
-USES=		qmake qt-dist:5,charts tar:xz
-USE_QT=		core network gui widgets qml quick designer \
+USES=		compiler:c++11-lang qmake qt-dist:5,charts tar:xz
+USE_QT=		core declarative network gui widgets designer \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

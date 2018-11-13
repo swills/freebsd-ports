@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11/radare-cutter/Makefile 479966 2018-09-18 02:39:43Z swills $
+# $FreeBSD: head/x11/radare-cutter/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	radare-cutter
 PORTVERSION=	1.7.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	swills@FreeBSD.org
@@ -19,8 +20,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	radareorg
 GH_PROJECT=	cutter
 
-USE_QT=		buildtools_build core gui location network printsupport qml \
-		quick svg webchannel webengine widgets
+USE_QT=		buildtools_build core declarative gui location network printsupport \
+		svg webchannel webengine widgets
 USE_GL=		gl
 
 WRKSRC_SUBDIR=	src

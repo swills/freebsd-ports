@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/tex-kpathsea/Makefile 474568 2018-07-13 09:07:42Z amdmi3 $
+# $FreeBSD: head/devel/tex-kpathsea/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	kpathsea
 PORTVERSION=	6.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://tug.org/historic/systems/texlive/2015/
 PKGNAMEPREFIX=	tex-

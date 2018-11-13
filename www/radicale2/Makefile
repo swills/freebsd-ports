@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/radicale2/Makefile 480453 2018-09-23 05:08:21Z decke $
+# $FreeBSD: head/www/radicale2/Makefile 484859 2018-11-13 07:28:00Z decke $
 
 PORTNAME=	radicale2
-PORTVERSION=	2.1.10
+PORTVERSION=	2.1.11
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

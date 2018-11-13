@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/mosesdecoder/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/math/mosesdecoder/Makefile 484065 2018-11-04 14:14:45Z antoine $
 
 PORTNAME=	mosesdecoder
 PORTVERSION=	2.1.1
@@ -9,6 +9,8 @@ CATEGORIES=	math
 
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Statistical machine translation system
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	bash:shells/bash \
 		bjam:devel/boost-jam

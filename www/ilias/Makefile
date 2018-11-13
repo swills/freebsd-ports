@@ -1,8 +1,9 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/ilias/Makefile 481259 2018-10-05 04:52:55Z wen $
+# $FreeBSD: head/www/ilias/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	ilias
 PORTVERSION=	5.3.10
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -11,7 +12,7 @@ COMMENT=	Powerful, dynamic, PHP and MySQL based e-learning platform
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	convert:graphics/ImageMagick \
+RUN_DEPENDS=	convert:graphics/ImageMagick6 \
 		zip:archivers/zip \
 		${UNZIP_CMD}:archivers/unzip \
 		${LOCALBASE}/share/pear/PEAR.php:devel/pear@${PHP_FLAVOR} \

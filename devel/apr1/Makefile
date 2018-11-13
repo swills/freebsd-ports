@@ -1,8 +1,9 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/devel/apr1/Makefile 483173 2018-10-27 21:46:51Z brnrd $
+# $FreeBSD: head/devel/apr1/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	apr
 PORTVERSION=	${APR_VERSION}.${APU_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/apr
 DISTFILES=	apr-${APR_VERSION}.tar.gz \

@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/games/paintown/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/games/paintown/Makefile 484067 2018-11-04 14:17:18Z antoine $
 
 PORTNAME=	paintown
 PORTVERSION=	3.6.0
@@ -12,6 +12,8 @@ COMMENT=	Fighting game similar to Streets of Rage and TMNT
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	liballeg.so:devel/allegro \
 		libpng.so:graphics/png \

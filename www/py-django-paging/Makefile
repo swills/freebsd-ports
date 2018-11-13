@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-paging/Makefile 478046 2018-08-25 14:28:31Z rene $
+# $FreeBSD: head/www/py-django-paging/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	paging
 PORTVERSION=	0.2.5
@@ -9,7 +9,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
 DISTNAME=	django-${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Paging module for Django
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR}

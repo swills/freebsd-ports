@@ -1,8 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/misc/shc/Makefile 442744 2017-06-06 07:31:46Z ehaupt $
+# $FreeBSD: head/misc/shc/Makefile 484871 2018-11-13 10:53:03Z ehaupt $
 
 PORTNAME=	shc
-PORTVERSION=	3.9.6
+PORTVERSION=	3.9.8
 CATEGORIES=	misc
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -11,8 +11,9 @@ COMMENT=	Generic script compiler
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-GNU_CONFIGURE=	yes
 USES=		tar:tgz
+
+GNU_CONFIGURE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	neurobin

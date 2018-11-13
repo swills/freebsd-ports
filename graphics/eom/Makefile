@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/eom/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/eom/Makefile 483844 2018-11-02 20:21:07Z ericbsd $
 
 PORTNAME=	eom
-PORTVERSION=	1.20.0
+PORTVERSION=	1.20.1
 CATEGORIES=	graphics mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -21,8 +21,8 @@ LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake jpeg libtool localbase \
-		pathfix pkgconfig tar:xz
+USES=		compiler:c++11-lang desktop-file-utils gettext gmake jpeg \
+		libtool localbase pathfix pkgconfig tar:xz
 USE_MATE=	desktop icontheme
 USE_XORG=	x11
 USE_GNOME=	cairo gnomeprefix gtk30 intltool introspection \

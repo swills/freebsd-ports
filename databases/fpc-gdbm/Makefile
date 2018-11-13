@@ -1,6 +1,7 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/databases/fpc-gdbm/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/databases/fpc-gdbm/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
+PORTREVISION=	1
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-gdbm
 

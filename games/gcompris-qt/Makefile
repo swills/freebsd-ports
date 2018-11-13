@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/gcompris-qt/Makefile 480043 2018-09-18 17:39:39Z tcberner $
+# $FreeBSD: head/games/gcompris-qt/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	gcompris-qt
 DISTVERSION=	0.91
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games kde
 MASTER_SITES=	http://gcompris.net/download/qt/src/
 
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libBox2D.so:x11-toolkits/qml-box2d
 
 USES=		cmake:outsource kde:5 qt:5 tar:xz
 USE_KDE=	doctools
-USE_QT=		core graphicaleffects gui multimedia network qml quick quickcontrols \
+USE_QT=		core declarative graphicaleffects gui multimedia network quickcontrols \
 		sensors svg widgets xml xmlpatterns \
 		buildtools_build linguisttools_build qmake_build
 

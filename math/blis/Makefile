@@ -1,8 +1,8 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/blis/Makefile 476000 2018-07-31 13:12:19Z jmd $
+# $FreeBSD: head/math/blis/Makefile 484161 2018-11-05 01:09:48Z jmd $
 
 PORTNAME=	blis
-PORTVERSION=	0.4.0
+PORTVERSION=	0.5.0
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -51,11 +51,11 @@ CONFIGURE_ARGS+=	--enable-cblas
 .if ${ARCH} == amd64
 LIBNAME=	x86_64
 CONFIGURE_ARGS+=	x86_64
-PLIST_SUB+=	X8664=""
+PLIST_SUB+=	ARCH="x86_64"
 .else
 LIBNAME=	generic
 CONFIGURE_ARGS+=	generic
-PLIST_SUB+=	X8664="@comment "
+PLIST_SUB+=	ARCH="generic"
 .endif
 
 CC=	${LOCALBASE}/bin/clang60

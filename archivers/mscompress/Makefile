@@ -1,12 +1,12 @@
 # Created by: Patrick Seal <patseal@hyperhost.net>
-# $FreeBSD: head/archivers/mscompress/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/archivers/mscompress/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	mscompress
 PORTVERSION=	0.3
 CATEGORIES=	archivers
 MASTER_SITES=	SUNSITE/utils/compress
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Microsoft "compress.exe/expand.exe" compatible (de)compressor
 
 USES=		tar:bzip2

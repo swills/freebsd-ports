@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/security/botan110/Makefile 483489 2018-10-30 14:00:31Z fluffy $
+# $FreeBSD: head/security/botan110/Makefile 483852 2018-11-02 23:00:32Z antoine $
 
 PORTNAME=	botan
 DISTVERSION=	1.10.17
@@ -57,4 +57,4 @@ post-patch-DOCS-off:
 post-install:
 	@(cd "${STAGEDIR}${PREFIX}"; ${FIND} -s include/botan-1.10 -not -type d) >> ${TMPPLIST}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

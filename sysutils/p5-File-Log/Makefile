@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/sysutils/p5-File-Log/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/sysutils/p5-File-Log/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=		File-Log
 PORTVERSION=		1.05
@@ -8,7 +8,7 @@ CATEGORIES=		sysutils perl5
 MASTER_SITES=		CPAN
 PKGNAMEPREFIX=		p5-
 
-MAINTAINER=		tj@FreeBSD.org
+MAINTAINER=		perl@FreeBSD.org
 COMMENT=		Simple Object Orientated Logger
 
 USES=		perl5

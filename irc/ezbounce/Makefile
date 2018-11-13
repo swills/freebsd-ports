@@ -1,5 +1,5 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/irc/ezbounce/Makefile 483249 2018-10-28 09:36:56Z jbeich $
+# $FreeBSD: head/irc/ezbounce/Makefile 484370 2018-11-06 23:52:17Z linimon $
 
 PORTNAME=	ezbounce
 PORTVERSION=	1.99.15
@@ -9,8 +9,6 @@ MASTER_SITES=	http://BSDforge.com/projects/source/irc/ezbounce/
 
 MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Highly configurable IRC Proxy
-
-BROKEN_powerpc64=	fails to configure: checking for boostlib >= 1.33... not found
 
 OPTIONS_DEFINE=	DOCS SSL COMPRESS
 OPTIONS_DEFAULT=SSL COMPRESS
@@ -23,7 +21,7 @@ COMPRESS_CONFIGURE_WITH=boost
 COMPRESS_DESC=		Chat log compression (requires boost)
 
 GNU_CONFIGURE=	yes
-USES=		gmake
+USES=		compiler:c++0x gmake
 USE_GCC=	any
 
 # ezbounce 1.99.15 isn't compatible with C++11 and later, which some compilers

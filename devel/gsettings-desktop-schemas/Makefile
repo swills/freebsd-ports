@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/gsettings-desktop-schemas/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/devel/gsettings-desktop-schemas/Makefile 484779 2018-11-11 21:54:38Z kwm $
 
 PORTNAME=	gsettings-desktop-schemas
-PORTVERSION=	3.28.0
+PORTVERSION=	3.28.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

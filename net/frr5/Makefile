@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/frr5/Makefile 482740 2018-10-22 09:06:29Z olivier $
+# $FreeBSD: head/net/frr5/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	frr
 PORTVERSION=	5.0.1
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	frr-
 CATEGORIES=	net ipv6
 PKGNAMESUFFIX=	5

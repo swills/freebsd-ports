@@ -1,9 +1,9 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/games/xconq/Makefile 475869 2018-07-30 08:17:16Z tobik $
+# $FreeBSD: head/games/xconq/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	xconq
 DISTVERSION=	7.5.0-0pre.0.20050612
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games tcl tk
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME}
 

@@ -1,9 +1,8 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/wyrmgus/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/wyrmgus/Makefile 483849 2018-11-02 20:51:19Z amdmi3 $
 
 PORTNAME=	wyrmgus
-PORTVERSION=	3.3.1
-PORTREVISION=	4
+PORTVERSION=	3.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games devel
 
@@ -40,6 +39,7 @@ PLIST_FILES=	bin/${PORTNAME} \
 OPTIONS_DEFINE=	OPENGL DOCS
 OPTIONS_DEFAULT=OPENGL
 
+OPENGL_USES=		gl
 OPENGL_USE=		GL=gl,glu
 OPENGL_CMAKE_ON=	-DWITH_RENDERER="OpenGL"
 OPENGL_CMAKE_OFF=	-DWITH_RENDERER="NativeSDL"

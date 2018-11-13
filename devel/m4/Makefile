@@ -1,8 +1,9 @@
 # Created by: mr
-# $FreeBSD: head/devel/m4/Makefile 459001 2018-01-14 21:10:59Z antoine $
+# $FreeBSD: head/devel/m4/Makefile 484708 2018-11-11 18:18:08Z sunpoet $
 
 PORTNAME=	m4
 PORTVERSION=	1.4.18
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNU
@@ -27,7 +28,6 @@ USES=		makeinfo tar:xz
 
 EXAMPLESDIR=	${PREFIX}/share/examples/gm4
 INFO=		m4
-PORTEXAMPLES=	*
 
 LIBSIGSEGV_CONFIGURE_OFF=	--without-libsigsegv-prefix
 LIBSIGSEGV_CONFIGURE_ON=	--with-libsigsegv-prefix=${LOCALBASE}

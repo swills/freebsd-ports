@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-texttable/Makefile 473128 2018-06-23 12:45:30Z dbaio $
+# $FreeBSD: head/textproc/py-texttable/Makefile 484366 2018-11-06 23:39:03Z dbaio $
 
 PORTNAME=	texttable
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,8 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Module for creating simple ASCII tables
 
-LICENSE=	LGPL3+
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE=	MIT
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${PY_FLAVOR} \
@@ -21,6 +20,7 @@ CJKWRAP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cjkwrap>=0:textproc/py-cjkwrap@${PY_
 
 USES=	python
 USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	CJKWRAP

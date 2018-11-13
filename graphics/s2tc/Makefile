@@ -1,8 +1,9 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/graphics/s2tc/Makefile 440699 2017-05-12 18:46:53Z rezny $
+# $FreeBSD: head/graphics/s2tc/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	s2tc
 PORTVERSION=	1.0+20151228
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	dbn@FreeBSD.org
@@ -12,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	mesa-libs>=0:graphics/mesa-libs
-TEST_DEPENDS=	convert:graphics/ImageMagick \
+TEST_DEPENDS=	convert:graphics/ImageMagick6 \
 		nvcompress:graphics/nvidia-texture-tools \
 		wget:ftp/wget
 

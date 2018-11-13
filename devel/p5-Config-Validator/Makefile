@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-Validator/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Config-Validator/Makefile 484360 2018-11-06 21:57:34Z sunpoet $
 
 PORTNAME=	Config-Validator
 PORTVERSION=	1.3
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Schema based configuration validation
 
 LICENSE=	ART10 GPLv1+
@@ -20,5 +20,7 @@ RUN_DEPENDS=	p5-No-Worries>=1.0:devel/p5-No-Worries \
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

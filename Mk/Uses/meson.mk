@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/meson.mk 443540 2017-06-13 21:04:27Z kwm $
+# $FreeBSD: head/Mk/Uses/meson.mk 484505 2018-11-09 08:30:05Z koobs $
 #
 # Provide support for Meson based projects
 #
@@ -35,7 +35,8 @@ BUILD_DEPENDS+=		meson:devel/meson
 USE_LOCALE?=	en_US.UTF-8
 
 CONFIGURE_ARGS+=	--prefix ${PREFIX} \
-			--mandir man
+			--mandir man \
+			--infodir ${INFO_PATH}
 
 # meson has it own strip mechanic
 INSTALL_TARGET=		install

@@ -1,5 +1,5 @@
 # Created by: Nikolai Lifanov <lifanov@FreeBSD.org> and Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/sysutils/zrepl/Makefile 468408 2018-04-27 08:49:19Z woodsb02 $
+# $FreeBSD: head/sysutils/zrepl/Makefile 484309 2018-11-06 17:01:09Z amdmi3 $
 
 PORTNAME=	zrepl
 PORTVERSION=	0.0.3
@@ -40,7 +40,7 @@ GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
 .include <bsd.port.pre.mk>
 
-.if ${OPSYS} == "FreeBSD" && ((${OSVERSION} >= 1100513 && ${OSVERSION} < 1200000) || ${OSVERSION} >= 1200015)
+.if ${OPSYS} == "FreeBSD"
 SUB_LIST+=	DAEMON_LOGGING="-S -l \$${zrepl_facility} -s \$${zrepl_priority} -T \$${name}"
 .else
 SUB_LIST+=	DAEMON_LOGGING=""

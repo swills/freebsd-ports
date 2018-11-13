@@ -1,5 +1,5 @@
 # Created by: Robert Crossfield <robcrossfield@gmail.com>
-# $FreeBSD: head/games/drcreep/Makefile 385169 2015-05-02 09:49:35Z jbeich $
+# $FreeBSD: head/games/drcreep/Makefile 484042 2018-11-04 13:46:55Z antoine $
 
 PORTNAME=	drcreep
 PORTVERSION=	1.1
@@ -11,6 +11,8 @@ MAINTAINER=	robcrossfield@gmail.com
 COMMENT=	Castles of Dr. Creep
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to build
 
 USE_SDL=	sdl
 

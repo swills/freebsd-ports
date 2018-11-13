@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/rubber/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/textproc/rubber/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	rubber
 PORTVERSION=	1.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	http://launchpadlibrarian.net/53558954/
 

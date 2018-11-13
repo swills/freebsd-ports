@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/multimedia/gmerlin/Makefile 466597 2018-04-05 20:13:33Z jhale $
+# $FreeBSD: head/multimedia/gmerlin/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gmerlin
 PORTVERSION=	1.2.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 

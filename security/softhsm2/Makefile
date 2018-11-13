@@ -1,5 +1,5 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/security/softhsm2/Makefile 483671 2018-11-01 15:01:59Z swills $
+# $FreeBSD: head/security/softhsm2/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	softhsm
 PORTVERSION=	2.5.0
@@ -52,11 +52,7 @@ CRYP_OPEN_CONFIGURE_ON=	--with-crypto-backend=openssl
 
 .include <bsd.port.options.mk>
 
-.if ${SSL_DEFAULT:Mlibressl*} || ${SSL_DEFAULT:Mopenssl-devel}
-CONFIGURE_ARGS+=	--disable-gost
-.endif
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
+.if ${SSL_DEFAULT:Mlibressl*} || ${SSL_DEFAULT:Mopenssl111}
 CONFIGURE_ARGS+=	--disable-gost
 .endif
 

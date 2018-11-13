@@ -1,8 +1,8 @@
 # Created by: Jake Smith <jake@xz.cx>
-# $FreeBSD: head/net-mgmt/phpipam/Makefile 466362 2018-04-03 16:14:53Z wen $
+# $FreeBSD: head/net-mgmt/phpipam/Makefile 484669 2018-11-11 09:03:01Z joneum $
 
 PORTNAME=	phpipam
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/${PORTNAME}
 

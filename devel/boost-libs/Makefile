@@ -1,17 +1,14 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-libs/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/devel/boost-libs/Makefile 484377 2018-11-07 02:47:38Z jbeich $
 
 PORTNAME=	boost-libs
-PORTREVISION=	2
+PORTREVISION=	3
 
 COMMENT=	Free portable C++ libraries (without Boost.Python)
 
 BROKEN_sparc64=	https://github.com/boostorg/context/commit/f2ef6326b6ed
 
 BUILD_DEPENDS+=	bjam:devel/boost-jam
-
-# libs/config/test/boost_no_cxx11_thread_local.ipp fails (see base r303795)
-PLIST_SUB+=	FIBER="${"${OPSYS}"=="FreeBSD" && ${OSREL:R} < 11:?@comment :}"
 
 OPTIONS_DEFINE=		DEBUG OPTIMIZED_CFLAGS
 OPTIONS_MULTI=		LOCALE

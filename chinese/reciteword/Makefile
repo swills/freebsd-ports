@@ -1,5 +1,5 @@
 # Created by: hamigua <hamigua@cuc.cn>
-# $FreeBSD: head/chinese/reciteword/Makefile 474193 2018-07-08 19:29:48Z amdmi3 $
+# $FreeBSD: head/chinese/reciteword/Makefile 484654 2018-11-11 03:28:18Z linimon $
 
 PORTNAME=	reciteword
 PORTVERSION=	0.8.5
@@ -20,7 +20,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libespeak.so:audio/espeak
 
-USES=		tar:bzip2 gettext gmake localbase pkgconfig
+USES=		compiler:c++11-lang tar:bzip2 gettext gmake gnome localbase \
+		pkgconfig
 GNU_CONFIGURE=	yes
 USE_GNOME=	gtk20 intltool esound
 

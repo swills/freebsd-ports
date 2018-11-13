@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/libboard/Makefile 481642 2018-10-09 17:38:10Z thierry $
+# $FreeBSD: head/graphics/libboard/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	libboard
 DISTVERSION=	0.9.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 
 MAINTAINER=	thierry@FreeBSD.org
@@ -11,7 +11,7 @@ COMMENT=	Vector graphics C++ library
 
 LICENSE=	LGPL3
 
-LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick
+LIB_DEPENDS=	libMagick++-6.so:graphics/ImageMagick6
 
 USES=		cmake compiler:c++11-lang localbase
 

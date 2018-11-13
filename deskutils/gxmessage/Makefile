@@ -1,8 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/deskutils/gxmessage/Makefile 409747 2016-02-28 15:37:23Z rakuco $
+# $FreeBSD: head/deskutils/gxmessage/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gxmessage
 PORTVERSION=	3.4.3
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	GNU \
 		LOCAL/martymac

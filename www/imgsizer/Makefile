@@ -1,8 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/www/imgsizer/Makefile 423705 2016-10-10 20:27:09Z cs $
+# $FreeBSD: head/www/imgsizer/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	imgsizer
 PORTVERSION=	2.9
+PORTREVISION=	1
 CATEGORIES=	www textproc
 MASTER_SITES=	http://www.catb.org/~esr/imgsizer/
 
@@ -11,7 +12,7 @@ COMMENT=	Tool to autogenerate WIDTH and HEIGHT for IMG HTML tags
 
 LICENSE=	BSD4CLAUSE
 
-RUN_DEPENDS=	identify:graphics/ImageMagick
+RUN_DEPENDS=	identify:graphics/ImageMagick6
 
 USES=		jpeg:run python
 NO_BUILD=	yes

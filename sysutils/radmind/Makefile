@@ -1,11 +1,11 @@
 # Created by: Paul Dlug <paul@aps.org>
-# $FreeBSD: head/sysutils/radmind/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/sysutils/radmind/Makefile 484645 2018-11-10 21:28:05Z arved $
 
 PORTNAME=	radmind
-PORTVERSION=	1.14.1
-PORTREVISION=	2014052201
+PORTVERSION=	1.15.1
+PORTREVISION=	2019101801
 CATEGORIES=	sysutils
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
+MASTER_SITES=	https://github.com/voretaq7/${PORTNAME}/releases/download/${PORTNAME}-${PORTVERSION}/
 
 MAINTAINER=	mikeg@bsd-box.net
 COMMENT=	Utility for administering filesystem changes
@@ -31,7 +31,7 @@ SUB_LIST=	RADMIND_BASE_DIR=${RADMIND_BASE_DIR} RADMINUSER=${RADMINUSER}
 PLIST_SUB=	RADMIND_BASE_DIR=${RADMIND_BASE_DIR:S@/@@} RADMINUSER=${RADMINUSER}
 SUB_FILES+=	pkg-install pkg-message
 
-DOCS=		COPYRIGHT README SPEC
+DOCS=		COPYRIGHT SPEC README.md
 
 OPTIONS_DEFINE=	DOCS
 IGNORE_TIMESTAMPS_DESC=	Add '-t' option to fsdiff

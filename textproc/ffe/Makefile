@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/ffe/Makefile 478414 2018-08-29 20:19:32Z swills $
+# $FreeBSD: head/textproc/ffe/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	ffe
 DISTVERSION=	0.3.8
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/ff-extractor/ff-extractor/${DISTVERSION}
 

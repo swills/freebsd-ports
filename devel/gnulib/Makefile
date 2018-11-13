@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/gnulib/Makefile 437342 2017-03-31 09:02:06Z amdmi3 $
+# $FreeBSD: head/devel/gnulib/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnulib
 PORTVERSION=	20140202
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://erislabs.net/ianb/projects/gnulib/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-stable

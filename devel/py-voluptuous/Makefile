@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/py-voluptuous/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-voluptuous/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	voluptuous
 PORTVERSION=	0.9.3
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python data validation library
 
 LICENSE=	BSD3CLAUSE

@@ -1,21 +1,22 @@
-# $FreeBSD: head/games/ktuberling/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/ktuberling/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	ktuberling
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm emoticons guiaddons i18n \
 		iconthemes init itemmodels itemviews jobwidgets \
 		kdelibs4support kio libkdegames newstuff notifications \
 		notifyconfig parts service solid sonnet textwidgets \
 		unitconversion widgetsaddons windowsystem xmlgui
-USE_QT=		core dbus gui multimedia network phonon4 printsupport qml \
-		quick svg testlib widgets xml \
+USE_QT=		core dbus declarative gui multimedia network phonon4 printsupport \
+		svg testlib widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	DOCS

@@ -1,5 +1,5 @@
 # Created by: John Hein <jhein@symmetricom.com>
-# $FreeBSD: head/sysutils/bbcp/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/sysutils/bbcp/Makefile 484017 2018-11-04 12:57:57Z antoine $
 
 PORTNAME=	bbcp
 PORTVERSION=	20150116
@@ -11,6 +11,8 @@ COMMENT=	Secure, fast, and IPv6 capable Copy utility
 
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/src/COPYING.LESSER
+
+BROKEN=		fails to build
 
 USES=		tar:xz
 

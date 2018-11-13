@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/sysutils/osquery/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	osquery
 PORTVERSION=	3.3.1
@@ -66,12 +66,6 @@ LLDPD_LIB_DEPENDS=	liblldpctl.so:net-mgmt/lldpd
 LLDPD_CONFIGURE_ENV_OFF=SKIP_LLDPD=1
 
 .include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 1100000
-BUILD_DEPENDS+=	clang60:devel/llvm60
-CC=	clang60
-CXX=	clang++60
-.endif
 
 post-patch:
 	${REINPLACE_CMD} -e 's|/var/osquery/|/var/db/osquery/|g' \

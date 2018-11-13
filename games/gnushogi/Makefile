@@ -1,8 +1,9 @@
 # Created by: Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
-# $FreeBSD: head/games/gnushogi/Makefile 362015 2014-07-15 23:30:05Z adamw $
+# $FreeBSD: head/games/gnushogi/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gnushogi
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	GNU
 
@@ -36,7 +37,7 @@ do-install:
 	@${INSTALL_MAN} ${WRKSRC}/doc/gnushogi.6 ${STAGEDIR}${MANPREFIX}/man/man6
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	@${INSTALL_DATA} ${WRKSRC}/gnushogi/gnushogi.bbk ${STAGEDIR}${DATADIR}
-	@${INSTALL_DATA} ${WRKSRC}/doc/gnushogi.info ${STAGEDIR}${PREFIX}/info
+	@${INSTALL_DATA} ${WRKSRC}/doc/gnushogi.info ${STAGEDIR}${PREFIX}/${INFO_PATH}
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	@${INSTALL_DATA} ${WRKSRC}/doc/BOOKFILES ${STAGEDIR}${DOCSDIR}
 	@${INSTALL_DATA} ${WRKSRC}/doc/PORTING ${STAGEDIR}${DOCSDIR}

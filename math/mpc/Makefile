@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/mpc/Makefile 470764 2018-05-24 09:04:14Z amdmi3 $
+# $FreeBSD: head/math/mpc/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mpc
 PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math devel
 MASTER_SITES=	GNU
 

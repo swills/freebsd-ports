@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/razorback-api/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/security/razorback-api/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	api
 PORTVERSION=	0.5.0
@@ -8,7 +8,7 @@ MASTER_SITES=	SF/razorbacktm/API
 PKGNAMEPREFIX=	razorback-
 DIST_SUBDIR=	razorback
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Framework for an intelligence driven security solution - API
 
 LICENSE=	GPLv2

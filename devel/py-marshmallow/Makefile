@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-marshmallow/Makefile 483522 2018-10-30 19:53:54Z sunpoet $
+# $FreeBSD: head/devel/py-marshmallow/Makefile 483920 2018-11-03 22:16:49Z sunpoet $
 
 PORTNAME=	marshmallow
-DISTVERSION=	3.0.0b19
+DISTVERSION=	3.0.0b20
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

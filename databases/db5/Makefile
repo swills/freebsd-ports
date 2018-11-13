@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/databases/db5/Makefile 476241 2018-08-02 16:05:16Z mandree $
+# $FreeBSD: head/databases/db5/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	db5
 PORTVERSION=	5.3.28
@@ -74,11 +74,8 @@ DOCS_INSTALL_TARGET=	install_docs
 # db5 uses a deprecated instruction for mutexes on ARM, fbsd bug#197227
 # and also bug#205001
 CONFIGURE_ARGS+=	--enable-posixmutexes
-. if ${OSVERSION} > 1100100
-#                 ^ leave that as ">" it really is greater than but NOT equal
 # force POSIX mutexes - the OS supports PTHREAD_PROCESS_SHARED
 CONFIGURE_ARGS+=	--with-mutex=POSIX/pthreads
-. endif
 .endif
 
 post-patch:

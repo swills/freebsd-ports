@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	mongo-cxx-driver
 PORTVERSION=	1.1.2
@@ -13,9 +13,8 @@ COMMENT=	MongoDB Legacy C++ Driver
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/APACHE-2.0.txt
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	use of undeclared identifier 'BIO_s_file_internal'
-BROKEN_powerpc64=			fails to configure: Checking for C++ library boost_regex... no
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	use of undeclared identifier 'BIO_s_file_internal'
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
@@ -32,7 +31,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mongodb
 GH_PROJECT=	mongo-cxx-driver
 
-USES=		scons ssl
+USES=		compiler:c++11-lang scons ssl
 MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} \
 		--cc=${CC} \
 		--cxx=${CXX}

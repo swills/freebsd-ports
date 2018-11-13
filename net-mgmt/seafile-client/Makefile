@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/seafile-client/Makefile 460731 2018-02-02 19:50:08Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-client/Makefile 483949 2018-11-03 22:50:40Z sunpoet $
 
 PORTNAME=	seafile-client
 DISTVERSIONPREFIX=	v
@@ -23,7 +23,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} 
 		${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3@${PY_FLAVOR} \
 		bash:shells/bash
 
-USES=		autoreconf iconv libarchive libtool localbase mysql \
+USES=		autoreconf gnome iconv libarchive libtool localbase mysql \
 		pathfix pkgconfig python:-2.7 shebangfix sqlite ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	haiwen
@@ -46,13 +46,9 @@ OPTIONS_DEFINE=	NLS
 
 NLS_USES=	gettext
 
-.include <bsd.port.options.mk>
-
 post-patch:
 # Fix P_KTHREAD r295435
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100097
 	${REINPLACE_CMD} 's/P_KTHREAD/P_KPROC/' ${WRKSRC}/lib/utils.c
-.endif
 
 makesum-all:
 .for PORT in net-mgmt/ccnet-client net-mgmt/seafile-client net-mgmt/seafile-gui

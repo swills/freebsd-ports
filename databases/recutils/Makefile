@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/databases/recutils/Makefile 464772 2018-03-17 09:14:09Z antoine $
+# $FreeBSD: head/databases/recutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	recutils
 PORTVERSION=	1.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	GNU
 

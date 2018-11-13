@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/graphviz/Makefile 482210 2018-10-16 08:23:04Z tobik $
+# $FreeBSD: head/graphics/graphviz/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	graphviz
 PORTVERSION=	2.40.1
@@ -255,10 +255,8 @@ post-patch:
 	${REINPLACE_CMD} -e 's|GTS_LIBS)|GTS_LIBS) $$(MATH_LIBS)|' \
 		${WRKSRC}/cmd/smyrna/Makefile.in
 	${CP} ${WRKSRC}/lib/cgraph/cgraph.h ${WRKSRC}/plugin/ming/
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100093
 	${REINPLACE_CMD} -e 's|SF_FLAGS|SFIO_FLAGS|g' \
 		${WRKSRC}/lib/sfio/*.[ch]
-.endif
 
 post-patch-DOCS-off:
 	${REINPLACE_CMD} -e 's| install-txtDATA$$||' \

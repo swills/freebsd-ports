@@ -1,8 +1,9 @@
 # Created by: Cyrille Lefevre <cyrille.lefevre@laposte.net>
-# $FreeBSD: head/archivers/gzip/Makefile 461214 2018-02-08 12:05:05Z johans $
+# $FreeBSD: head/archivers/gzip/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gzip
 PORTVERSION=	1.9
+PORTREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	GNU
 

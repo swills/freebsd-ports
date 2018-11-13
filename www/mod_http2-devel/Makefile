@@ -1,12 +1,15 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_http2-devel/Makefile 481821 2018-10-11 12:50:35Z brnrd $
+# $FreeBSD: head/www/mod_http2-devel/Makefile 484467 2018-11-08 17:49:57Z brnrd $
 
 PORTNAME=	mod_http2
-PORTVERSION=	1.11.3
+PORTVERSION=	1.11.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	-devel
+
+DEPRECATED =	Use the module that is shipped with Apache 2.4
+EXPIRATION_DATE=2019-01-01
 
 MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Early experience HTTP/2 modules for Apache httpd

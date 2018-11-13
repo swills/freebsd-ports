@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kconfig/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/devel/kf5-kconfig/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	kconfig
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
 USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	ecm
-USE_QT=		buildtools_build concurrent core gui linguisttools \
+USE_QT=		buildtools_build concurrent core dbus gui linguisttools \
 		qmake_build testlib xml
 
 .include <bsd.port.mk>

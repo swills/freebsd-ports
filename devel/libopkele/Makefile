@@ -1,5 +1,5 @@
 # Created by: Sutra Zhou <zhoushuqun@gmail.com>
-# $FreeBSD: head/devel/libopkele/Makefile 483472 2018-10-30 11:46:22Z linimon $
+# $FreeBSD: head/devel/libopkele/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	libopkele
 PORTVERSION=	2.0.4
@@ -18,8 +18,8 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libtidy.so:www/tidy-lib \
 		libxslt.so:textproc/libxslt
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'DH' (aka 'dh_st')
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	member access into incomplete type 'DH' (aka 'dh_st')
 
 USES=		gmake libtool localbase:ldflags pathfix \
 		pkgconfig ssl

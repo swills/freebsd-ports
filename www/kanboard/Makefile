@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/kanboard/Makefile 477331 2018-08-16 13:03:36Z miwi $
+# $FreeBSD: head/www/kanboard/Makefile 484758 2018-11-11 18:41:51Z joneum $
 
 PORTNAME=	kanboard
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

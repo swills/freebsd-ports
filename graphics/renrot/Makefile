@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/renrot/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/renrot/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	renrot
 PORTVERSION=	1.2.0
@@ -23,7 +23,7 @@ PORTDOCS=	AUTHORS README README.russian ChangeLog NEWS TODO
 OPTIONS_DEFINE=	IMAGEMAGICK DOCS
 IMAGEMAGICK_DESC=	Image::Magick Perl module support
 
-IMAGEMAGICK_RUN_DEPENDS=	convert:graphics/ImageMagick
+IMAGEMAGICK_RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${ETCDIR}

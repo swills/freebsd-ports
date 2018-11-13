@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/databases/db6/Makefile 476241 2018-08-02 16:05:16Z mandree $
+# $FreeBSD: head/databases/db6/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	db6
 PORTVERSION=	6.2.32
@@ -67,11 +67,7 @@ DOCS_INSTALL_TARGET=	install_docs
 .include <bsd.port.options.mk>
 
 .if ${ARCH} == aarch64
-. if ${OSVERSION} > 1100100
 CONFIGURE_ARGS+=	--with-mutex=POSIX/pthreads
-. else
-CONFIGURE_ARGS+=	--enable-posixmutexes
-. endif
 .endif
 
 post-patch:

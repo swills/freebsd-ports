@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/kexi/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/databases/kexi/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=		kexi
 DISTVERSION=		3.1.0
@@ -21,8 +21,8 @@ USE_KDE=		auth bookmarks codecs completion config \
 			iconthemes itemviews jobwidgets kio parts service \
 			solid sonnet texteditor textwidgets widgetsaddons \
 			xmlgui breeze-icons_build
-USE_QT=			core dbus gui network printsupport webkit widgets xml \
-			buildtools_build qmake_build qml
+USE_QT=			core dbus declarative gui network printsupport webkit widgets xml \
+			buildtools_build qmake_build
 
 CONFLICTS_INSTALL=	calligra-2*
 

@@ -1,9 +1,9 @@
 # Created by: Xavier Beaudouin <kiwi@oav.net>
-# $FreeBSD: head/mail/gnarwl/Makefile 441694 2017-05-25 14:35:49Z bapt $
+# $FreeBSD: head/mail/gnarwl/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	gnarwl
 PORTVERSION=	3.6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail
 MASTER_SITES=	http://www.onyxbits.de/sites/default/files/download/15/
 

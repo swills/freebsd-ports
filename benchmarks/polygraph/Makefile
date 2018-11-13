@@ -1,5 +1,5 @@
 # Created by: Dima Sivachenko <dima@chg.ru>
-# $FreeBSD: head/benchmarks/polygraph/Makefile 483260 2018-10-28 10:08:17Z jbeich $
+# $FreeBSD: head/benchmarks/polygraph/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	polygraph
 DISTVERSION=	4.12.0
@@ -13,8 +13,8 @@ COMMENT=	Benchmarking tool for Web proxies
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	configure: error: OpenSSL libraries and/or directories were not found in /usr/local
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	configure: error: OpenSSL libraries and/or directories were not found in /usr/local
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

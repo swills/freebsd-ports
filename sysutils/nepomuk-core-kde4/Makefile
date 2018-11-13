@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/sysutils/nepomuk-core-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/sysutils/nepomuk-core-kde4/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	nepomuk-core
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	sysutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

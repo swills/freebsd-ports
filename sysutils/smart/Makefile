@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/smart/Makefile 481943 2018-10-12 22:19:30Z jrm $
+# $FreeBSD: head/sysutils/smart/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	smart
 DISTVERSION=	0.0.11
@@ -8,8 +8,6 @@ MAINTAINER=	jrm@FreeBSD.org
 COMMENT=	Output disk SMART values
 
 LICENSE=	ISCL
-
-IGNORE_FreeBSD_10=	Requires FreeBSD 11 or later
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ctuffli

@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/net/ptpd2/Makefile 473175 2018-06-24 03:17:45Z skreuzer $
+# $FreeBSD: head/net/ptpd2/Makefile 484497 2018-11-09 02:59:56Z skreuzer $
 
 PORTNAME=	ptpd
 DISTVERSION=	2.3.1
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ptpd
-GH_TAGNAME=	861c44f
+GH_TAGNAME=	d27a6e0
 
 CONFLICTS=	ptpd2-devel.*
 

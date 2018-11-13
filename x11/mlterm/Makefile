@@ -1,8 +1,8 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/x11/mlterm/Makefile 479815 2018-09-15 05:43:59Z nobutaka $
+# $FreeBSD: head/x11/mlterm/Makefile 484614 2018-11-10 14:38:32Z nobutaka $
 
 PORTNAME=	mlterm
-PORTVERSION=	3.8.6
+PORTVERSION=	3.8.7
 CATEGORIES=	x11
 MASTER_SITES=	SF/${PORTNAME}/01release/${PORTNAME}-${PORTVERSION}
 

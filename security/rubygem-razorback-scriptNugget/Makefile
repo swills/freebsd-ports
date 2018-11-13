@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/security/rubygem-razorback-scriptNugget/Makefile 432064 2017-01-21 17:29:23Z sunpoet $
+# $FreeBSD: head/security/rubygem-razorback-scriptNugget/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	razorback-scriptNugget
 PORTVERSION=	0.5.0
@@ -8,7 +8,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	SF/razorbacktm/Bindings
 DISTNAME=	scriptNugget-ruby-${PORTVERSION}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Framework for an intelligence driven security - Script Nugget Ruby
 
 NO_ARCH=	yes

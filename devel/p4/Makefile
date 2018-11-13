@@ -1,9 +1,9 @@
 # Created by: gordon@FreeBSD.org
-# $FreeBSD: head/devel/p4/Makefile 479351 2018-09-10 02:06:12Z linimon $
+# $FreeBSD: head/devel/p4/Makefile 484879 2018-11-13 17:15:09Z asomers $
 
 PORTNAME=	p4
 PORTVERSION=	${YEAR}.${MAJOR}.${MINOR}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 # Perforce stupidly rerolls their distfiles on a regular basis, updating the
 # files' timestamps when they do, which changes the zip file's checksum.  Work

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/analitza/Makefile 482596 2018-10-20 16:31:28Z tcberner $
+# $FreeBSD: head/math/analitza/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	analitza
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,7 +16,7 @@ LICENSE_FILE_GPLv2=	 ${WRKSRC}/COPYING
 USES=		cmake:outsource compiler:c++11-lang gl kde:5 qt:5 tar:xz
 USE_GL=		glu
 USE_KDE=	ecm
-USE_QT=		core gui network opengl printsupport qml quick svg widgets xml \
+USE_QT=		core declarative gui network opengl printsupport svg widgets xml \
 		buildtools_build linguisttools_build qmake_build
 
 USE_LDCONFIG=	yes

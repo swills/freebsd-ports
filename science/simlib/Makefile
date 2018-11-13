@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/science/simlib/Makefile 482410 2018-10-19 05:38:42Z yuri $
+# $FreeBSD: head/science/simlib/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	simlib
 DISTVERSION=	3.06
@@ -24,7 +24,7 @@ NOT_FOR_ARCHS_REASON=	contains not working ${ARCH}-dependent assembly code
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1101000
+.if ${OPSYS} == FreeBSD
 # nm crashes during the build:
 # Assertion failed: (ddata->output.size > 0), function cpp_demangle_read_sname, file /usr/src/contrib/elftoolchain/libelftc/libelftc_dem_gnu3.c, line 2137.
 USE_BINUTILS=	yes

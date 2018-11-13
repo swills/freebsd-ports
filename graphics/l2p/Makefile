@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/l2p/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/graphics/l2p/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	l2p
 PORTVERSION=	1.1.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics print perl5
 MASTER_SITES=	http://static.redsymbol.net/software/l2p/dist/ \
 		http://nivit.altervista.org/FreeBSD/ports/distfiles/
@@ -10,7 +10,7 @@ MASTER_SITES=	http://static.redsymbol.net/software/l2p/dist/ \
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Create PNG images from LaTeX math expressions
 
-RUN_DEPENDS=	convert:graphics/ImageMagick
+RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 NO_BUILD=	yes
 

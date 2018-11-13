@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/scim-bridge/Makefile 479238 2018-09-08 09:19:13Z tobik $
+# $FreeBSD: head/textproc/scim-bridge/Makefile 484308 2018-11-06 17:00:38Z amdmi3 $
 
 PORTNAME=	scim-bridge
 PORTVERSION=	0.4.16
@@ -13,6 +13,8 @@ LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	dual
 LICENSE_FILE_GPLv2=	${WRKSRC}/doc/LICENSE.GPL
 LICENSE_FILE_LGPL21=	${WRKSRC}/doc/LICENSE.LGPL
+
+BROKEN_FreeBSD=	fails to compile with clang6 or later
 
 LIB_DEPENDS=	libscim-1.0.so:textproc/scim
 
@@ -30,18 +32,10 @@ CONFIGURE_ARGS+=--with-libintl-prefix=${LOCALBASE} \
 
 PLIST_FILES=	bin/scim-bridge
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD
-.if ( ${OSVERSION} >= 1101513 && ${OSVERSION} < 1200000 ) || ${OSVERSION} >= 1200060
-BROKEN=	fails to compile with clang6 or later
-.endif
-.endif
-
 post-patch:
 	@${GREP} -lR "<malloc\.h>" ${WRKSRC} | ${XARGS} ${REINPLACE_CMD} -e \
 		's|<malloc\.h>|<stdlib.h>|g'
 	@${GREP} -lR "<alloca\.h>" ${WRKSRC} | ${XARGS} ${REINPLACE_CMD} -e \
 		's|<alloca\.h>|<stdlib.h>|g'
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

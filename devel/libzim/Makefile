@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libzim/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/devel/libzim/Makefile 483889 2018-11-03 12:17:58Z gerald $
 
 PORTNAME=	libzim
 PORTVERSION=	4.0.0
@@ -15,8 +15,6 @@ USES=		compiler:c++11-lang meson pkgconfig python:3.4+
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	openzim
-# Using gcc6 and libstdc++ leads to error because xapian-core is linked with libc++
-BROKEN_FreeBSD_10=	/usr/include/c++/v1/memory:4004:35: error: no viable overloaded '='
 
 BINARY_ALIAS=	python3=python${PYTHON_VER} python3-config=python${PYTHON_VER}-config
 

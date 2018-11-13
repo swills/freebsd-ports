@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-asset_sync/Makefile 456812 2017-12-20 14:37:58Z sunpoet $
+# $FreeBSD: head/net/rubygem-asset_sync/Makefile 484238 2018-11-05 21:44:56Z sunpoet $
 
 PORTNAME=	asset_sync
-PORTVERSION=	2.4.0
+PORTVERSION=	2.5.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-activemodel4>=4.1.0:databases/rubygem-activemodel4 \
 		rubygem-mime-types>=2.99:misc/rubygem-mime-types \
 		rubygem-unf>=0:textproc/rubygem-unf
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

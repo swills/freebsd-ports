@@ -1,9 +1,9 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/devel/gengetopt/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/gengetopt/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gengetopt
 PORTVERSION=	2.22.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-themes/plasma5-breeze/Makefile 483271 2018-10-28 10:59:23Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-breeze/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	breeze
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,7 +16,7 @@ USES=		cmake:outsource compiler:c++11-lib cpe \
 USE_KDE=	auth breeze-icons codecs config configwidgets coreaddons \
 		decoration ecm frameworkintegration guiaddons i18n kcmutils \
 		plasma-framework service wayland widgetsaddons windowsystem
-USE_QT=		core dbus gui network qml quick widgets x11extras xml \
+USE_QT=		core dbus declarative gui network widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	xcb
 

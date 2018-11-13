@@ -1,9 +1,9 @@
 # Created by: Brian Handy <handy@physics.montana.edu>
-# $FreeBSD: head/x11-wm/windowmaker/Makefile 463177 2018-02-28 04:58:15Z hrs $
+# $FreeBSD: head/x11-wm/windowmaker/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	windowmaker
 PORTVERSION=	0.95.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-wm windowmaker
 MASTER_SITES=	http://windowmaker.org/pub/source/release/
 DISTNAME=	WindowMaker-${PORTVERSION}
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libjbig.so:graphics/jbigkit \
 		libtiff.so:graphics/tiff \
 		libwebp.so:graphics/webp \
-		libMagickWand-6.so:graphics/ImageMagick \
+		libMagickWand-6.so:graphics/ImageMagick6 \
 		libwraster.so.6:x11-wm/libwraster \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \

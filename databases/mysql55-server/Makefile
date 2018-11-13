@@ -1,9 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql55-server/Makefile 483021 2018-10-26 12:18:20Z ale $
+# $FreeBSD: head/databases/mysql55-server/Makefile 483912 2018-11-03 21:54:52Z 0mp $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.5.62
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	MYSQL/MySQL-5.5
 PKGNAMESUFFIX?=	55-server
@@ -49,6 +49,12 @@ SHEBANG_FILES=	scripts/*.pl* scripts/*.sh
 .endif
 
 .include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200057
+SUB_LIST+=	LEGACY_LIMITS="@comment " MODERN_LIMITS=""
+.else
+SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
+.endif
 
 .if ${PORT_OPTIONS:MSSL}
 CMAKE_ARGS+=	-DWITH_SSL=bundled

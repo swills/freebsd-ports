@@ -1,8 +1,9 @@
 # Created by: Frerich Raabe <frerich.raabe@gmx.de>
-# $FreeBSD: head/devel/bnf/Makefile 359257 2014-06-25 16:10:36Z bapt $
+# $FreeBSD: head/devel/bnf/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	bnf
 PORTVERSION=	1.6.10
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SAVANNAH
 

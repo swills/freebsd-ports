@@ -1,8 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-sunpinyin/Makefile 480649 2018-09-25 07:58:06Z wen $
+# $FreeBSD: head/chinese/fcitx-sunpinyin/Makefile 484688 2018-11-11 11:47:33Z wen $
 
 PORTNAME=	fcitx-sunpinyin
 PORTVERSION=	0.4.2
+PORTREVISION=	1
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx
@@ -12,6 +13,7 @@ COMMENT=	SunPinyin support for Fcitx
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfcitx-config.so:chinese/fcitx \
 		libsunpinyin.so:chinese/sunpinyin
 

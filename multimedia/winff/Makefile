@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/multimedia/winff/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/multimedia/winff/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	WinFF
 PORTVERSION=	1.5.5
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	http://winff.org/docs/source/

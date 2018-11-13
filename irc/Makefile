@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/Makefile 475578 2018-07-28 14:47:41Z miwi $
+# $FreeBSD: head/irc/Makefile 484375 2018-11-07 00:53:41Z dbaio $
 #
 
     COMMENT = Internet Relay Chat utilities
@@ -67,7 +67,6 @@
     SUBDIR += minbif
     SUBDIR += muh
     SUBDIR += nethirc
-    SUBDIR += netwalker-ircc
     SUBDIR += ngircd
     SUBDIR += ninja
     SUBDIR += onis
@@ -126,5 +125,6 @@
     SUBDIR += weechat-otr
     SUBDIR += xaric
     SUBDIR += znc
+    SUBDIR += znc-push
 
 .include <bsd.port.subdir.mk>

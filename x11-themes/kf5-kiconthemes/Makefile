@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-themes/kf5-kiconthemes/Makefile 483317 2018-10-28 16:46:58Z tcberner $
+# $FreeBSD: head/x11-themes/kf5-kiconthemes/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	kiconthemes
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	x11-themes kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

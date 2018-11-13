@@ -1,8 +1,9 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/sysutils/xorriso/Makefile 480076 2018-09-18 20:08:00Z swills $
+# $FreeBSD: head/sysutils/xorriso/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	xorriso
 PORTVERSION=	1.5.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://files.libburnia-project.org/releases/
 DISTNAME=	libisoburn-${PORTVERSION}

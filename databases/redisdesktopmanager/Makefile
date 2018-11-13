@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/redisdesktopmanager/Makefile 480334 2018-09-22 00:35:16Z swills $
+# $FreeBSD: head/databases/redisdesktopmanager/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	redisdesktopmanager
 PORTVERSION=	0.9.6
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	swills@FreeBSD.org
@@ -32,7 +33,7 @@ GH_TUPLE=	\
 		uglide:qsshclient:6fa7fb7:qsshclient/3rdparty/qredisclient/3rdparty/qsshclient \
 		redis:hiredis:53c3243:hiredis/3rdparty/qredisclient/3rdparty/hiredis \
 		libssh2:libssh2:62b825c:libssh2/3rdparty/qredisclient/3rdparty/qsshclient/3rdparty/libssh2
-USE_QT=		buildtools_build charts concurrent core gui network qmake_build qml quick widgets
+USE_QT=		buildtools_build charts concurrent core declarative gui network qmake_build widgets
 
 post-patch:
 	@${REINPLACE_CMD} 's|%%PORTVERSION%%|${PORTVERSION}|g' ${WRKSRC}/src/version.h

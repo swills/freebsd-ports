@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <tthomas@mail.dotcom.fr>
-# $FreeBSD: head/news/newsx/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/newsx/Makefile 484894 2018-11-13 18:39:05Z thierry $
 
 PORTNAME=	newsx
 PORTVERSION=	1.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	news
 MASTER_SITES=	http://www.kvaleberg.org/pub/
 
@@ -15,7 +15,8 @@ LICENSE=	GPLv2
 .if defined(WITH_CNEWS)
 BUILD_DEPENDS=	${LOCALBASE}/news/lib/libcnews.a:news/cnews
 .elif !defined(WITHOUT_INN_2-X)
-BUILD_DEPENDS=	${LOCALBASE}/news/lib/libinn.a:news/inn
+BUILD_DEPENDS=	${LOCALBASE}/news/lib/libinn.so:news/inn
+RUN_DEPENDS=	${LOCALBASE}/news/lib/libinn.so:news/inn
 .endif
 
 GNU_CONFIGURE=	yes
@@ -26,7 +27,7 @@ OPTIONS_DEFINE=	DOCS
 
 .if !defined(WITH_CNEWS)
 .if !defined(WITHOUT_INN_2-X)
-CPPFLAGS+=	-I${LOCALBASE}/news/include
+CPPFLAGS+=	-I${LOCALBASE}/news/include/inn
 .endif
 .endif
 

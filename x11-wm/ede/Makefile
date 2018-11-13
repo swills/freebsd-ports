@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/x11-wm/ede/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/x11-wm/ede/Makefile 484044 2018-11-04 13:49:27Z antoine $
 
 PORTNAME=	ede
 PORTVERSION=	2.1
@@ -15,6 +15,8 @@ COMMENT=	Equinox Desktop Environment
 
 LICENSE=	GPLv2 LGPL20
 LICENSE_COMB=	multi
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	doxygen:devel/doxygen \
 		jam:devel/jam

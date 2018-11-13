@@ -1,5 +1,5 @@
 # Created by: Felix Hanley
-# $FreeBSD: head/net/nuster/Makefile 483679 2018-11-01 15:29:04Z swills $
+# $FreeBSD: head/net/nuster/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	nuster
 PORTVERSION=	2.0.3.18
@@ -53,8 +53,8 @@ PORTEXAMPLES=	*
 MAKE_ARGS+=	USE_REGPARM=1
 .endif
 
-.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=	Does not build with openssl-devel
+.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl111}
+BROKEN=	Does not build with openssl111
 .endif
 
 post-build:

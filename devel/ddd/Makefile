@@ -1,9 +1,9 @@
 # Created by: David O'Brien <obrien@NUXI.com>
-# $FreeBSD: head/devel/ddd/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/devel/ddd/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	ddd
 PORTVERSION=	3.3.12
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

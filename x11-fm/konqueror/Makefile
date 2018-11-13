@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fm/konqueror/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/x11-fm/konqueror/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	konqueror
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-fm www kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,7 +16,7 @@ USE_KDE=	activities  archive auth bookmarks codecs completion config configwidge
 		itemviews jobwidgets js kcmutils kdelibs4support \
 		kdesu khtml kio notifications parts pty service solid sonnet \
 		textwidgets unitconversion widgetsaddons windowsystem xmlgui
-USE_QT=		core dbus gui location network printsupport qml quick script \
+USE_QT=		core dbus declarative gui location network printsupport script \
 		speech webchannel webengine widgets x11extras xml \
 		buildtools_build qmake_build
 USE_XORG=	ice sm x11 xext

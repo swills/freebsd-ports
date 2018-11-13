@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-CommonNS/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-XML-CommonNS/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	XML-CommonNS
 PORTVERSION=	0.06
@@ -8,7 +8,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	List of commonly used namespaces
 
 LICENSE=	ART10 GPLv1+

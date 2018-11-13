@@ -1,7 +1,8 @@
-# $FreeBSD: head/print/print-manager/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/print/print-manager/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	print-manager
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	print kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -14,7 +15,7 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		dbusaddons ecm i18n iconthemes itemviews jobwidgets kcmutils \
 		kio notifications plasma-framework service widgetsaddons \
 		windowsystem
-USE_QT=		core dbus gui network qml quick widgets xml \
+USE_QT=		core dbus declarative gui network widgets xml \
 		buildtools_build qmake_build
 
 OPTIONS_DEFINE=	DOCS

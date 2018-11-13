@@ -1,9 +1,9 @@
 # Created by: mjhsieh
-# $FreeBSD: head/www/hypermail/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/www/hypermail/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	hypermail
 PORTVERSION=	2.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www mail
 MASTER_SITES=	SF
 

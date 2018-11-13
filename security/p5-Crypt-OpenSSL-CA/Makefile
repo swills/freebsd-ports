@@ -1,5 +1,5 @@
 # Created by: Mosconi <mosconi.rmg@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-CA/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-CA/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	Crypt-OpenSSL-CA
 PORTVERSION=	0.24
@@ -27,7 +27,7 @@ RUN_DEPENDS=	p5-Convert-ASN1>=0.02:converters/p5-Convert-ASN1 \
 TEST_DEPENDS=	p5-Test-Group>=0:devel/p5-Test-Group \
 		p5-Test-Taint>=0:devel/p5-Test-Taint
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USES=		perl5 ssl
 USE_PERL5=	modbuild

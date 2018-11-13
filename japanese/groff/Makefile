@@ -1,10 +1,10 @@
 # Created by: Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
-# $FreeBSD: head/japanese/groff/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/japanese/groff/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	groff
 PORTVERSION=	1.18.1
 DISTVERSIONSUFFIX=	.1
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	japanese print
 MASTER_SITES=	LOCAL/hrs
 DISTFILES=	${DISTNAME:S,-,_,}.orig${EXTRACT_SUFX} ${TMAC_DISTNAME}.tar.gz
@@ -19,6 +19,7 @@ COMMENT=	Japanese enhancement of GNU groff
 LICENSE=	GPLv2
 
 USES=		iconv:wchar_t cpe gmake makeinfo shebangfix
+
 SHEBANG_FILES=	src/utils/afmtodit/afmtodit.pl \
 		contrib/mm/mmroff.pl
 CPE_VENDOR=	gnu

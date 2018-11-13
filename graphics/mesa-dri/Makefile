@@ -1,9 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-dri/Makefile 483225 2018-10-28 05:04:41Z jbeich $
+# $FreeBSD: head/graphics/mesa-dri/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 
 PORTNAME=	mesa-dri
 PORTVERSION=	${MESAVERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 COMMENT=	OpenGL hardware acceleration drivers for DRI2+
@@ -11,7 +11,7 @@ COMMENT=	OpenGL hardware acceleration drivers for DRI2+
 USE_XORG=	xorgproto x11 xdamage xext xfixes xshmfence xv xvmc
 
 OPTIONS_DEFINE=	TEXTURE VAAPI VDPAU WAYLAND
-OPTIONS_DEFAULT=TEXTURE
+OPTIONS_DEFAULT=TEXTURE WAYLAND
 OPTIONS_SUB=	yes
 
 TEXTURE_DESC=	Enable texture-float support (patent encumbered)

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/fnccheck/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/fnccheck/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	fnccheck
 PORTVERSION=	3.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}
 DISTNAME=	FunctionCheck-${PORTVERSION}

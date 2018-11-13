@@ -1,9 +1,9 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/irc/riece/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/irc/riece/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	riece
 PORTVERSION=	9.0.0
-PORTREVISION=	8
+PORTREVISION=	9
 PORTEPOCH=	1
 CATEGORIES=	irc elisp
 MASTER_SITES=	SAVANNAH

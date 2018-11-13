@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/opendesktop-fonts/Makefile 452004 2017-10-13 14:23:31Z bapt $
+# $FreeBSD: head/chinese/opendesktop-fonts/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	opendesktop-fonts
 PORTVERSION=	1.4.2
@@ -19,12 +19,6 @@ TTF=		odokai-ExtB.ttf odokai.ttf odosung-ExtB.ttf odosung.ttc
 PLIST_FILES=	${FONTSDIR_REL}/local.conf-odo
 
 .include "${.CURDIR}/../ttfm/Makefile.ttf"
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100077
-# chmod -R bug
-post-extract:
-	@${CHMOD} 0755 ${WRKSRC}/license
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/usr,${LOCALBASE},; s,opendesktop,,g' \

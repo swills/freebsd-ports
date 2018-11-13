@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/rsyslog8/Makefile 483558 2018-10-31 07:56:43Z matthew $
+# $FreeBSD: head/sysutils/rsyslog8/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	rsyslog
 PORTVERSION=	8.39.0
@@ -145,9 +145,6 @@ post-patch:
 	@${GREP} -rl '/etc/rsyslog.conf' ${WRKSRC}|${XARGS} ${REINPLACE_CMD} -e\
 		's|/etc/rsyslog.conf|${PREFIX}/etc/rsyslog.conf|'
 	@${REINPLACE_CMD} -e 's,/lib/rsyslog,${PREFIX}/lib/rsyslog,' ${WRKSRC}/tools/syslogd.c
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100504
-	@${REINPLACE_CMD} -e 's,recvmmsg ,,' ${WRKSRC}/configure.ac
-.endif
 	@${FIND} ${WRKSRC} -name '*.bak' -delete
 
 post-install-DOCS-on:

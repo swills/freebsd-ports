@@ -1,5 +1,5 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/dns/validns/Makefile 462130 2018-02-17 11:59:59Z sunpoet $
+# $FreeBSD: head/dns/validns/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	validns
 PORTVERSION=	0.8
@@ -12,7 +12,7 @@ COMMENT=	High performance DNS/DNSSEC zone validator
 
 LICENSE=	BSD2CLAUSE
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 LIB_DEPENDS=	libJudy.so:devel/judy
 

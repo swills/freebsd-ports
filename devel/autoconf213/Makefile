@@ -1,9 +1,9 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/devel/autoconf213/Makefile 472048 2018-06-09 09:04:27Z amdmi3 $
+# $FreeBSD: head/devel/autoconf213/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	autoconf
 PORTVERSION=	2.13.000227
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/ade/gnu
 DISTNAME=	autoconf-000227

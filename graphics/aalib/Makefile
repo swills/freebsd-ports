@@ -1,9 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/graphics/aalib/Makefile 478952 2018-09-04 12:37:12Z amdmi3 $
+# $FreeBSD: head/graphics/aalib/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	aalib
 DISTVERSION=	1.4rc5
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF/aa-project/aa-lib/1.4rc5
 

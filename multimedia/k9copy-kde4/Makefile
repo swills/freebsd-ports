@@ -1,9 +1,9 @@
 # Created by: Alexander V. Ribchansky <triosoft@triosoft.com.ua>
-# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 478529 2018-08-31 08:16:18Z tobik $
+# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	k9copy
 PORTVERSION=	2.3.4
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	multimedia kde
 MASTER_SITES=	LOCAL/rakuco
 DISTNAME=	${PORTNAME}-${PORTVERSION}-Source

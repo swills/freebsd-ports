@@ -1,7 +1,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-plugins-bad/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-bad/Makefile 483887 2018-11-03 11:58:10Z tijl $
 
-PORTREVISION=	2
+PORTREVISION=	0
 CATEGORIES=	multimedia
 
 COMMENT=	GStreamer-plugins that need more quality, testing or documentation

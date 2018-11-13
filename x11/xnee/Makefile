@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@regency.nsu.ru>
-# $FreeBSD: head/x11/xnee/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/x11/xnee/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	xnee
 PORTVERSION=	3.19
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	GNU
 

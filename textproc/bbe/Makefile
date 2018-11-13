@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/textproc/bbe/Makefile 409062 2016-02-17 19:12:06Z amdmi3 $
+# $FreeBSD: head/textproc/bbe/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	bbe
 PORTVERSION=	0.2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}-/${PORTNAME}/${PORTVERSION}
 

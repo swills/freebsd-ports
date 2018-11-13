@@ -1,9 +1,9 @@
 # Created by: Balwinder S Dheeman <bdheeman@gmail.com>
-# $FreeBSD: head/devel/cvs-devel/Makefile 473866 2018-07-04 04:31:45Z swills $
+# $FreeBSD: head/devel/cvs-devel/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cvs
 PORTVERSION=	1.12.13
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	devel ipv6
 MASTER_SITES=	GNU/non-gnu/${PORTNAME}/source/feature/${PORTVERSION}
 PKGNAMESUFFIX=	-devel

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/anydesk/Makefile 465624 2018-03-26 19:04:41Z yuri $
+# $FreeBSD: head/deskutils/anydesk/Makefile 484672 2018-11-11 09:32:19Z sunpoet $
 
 PORTNAME=	anydesk
 DISTVERSION=	2.9.1
@@ -6,7 +6,7 @@ CATEGORIES=	deskutils
 MASTER_SITES=	https://download.anydesk.com/freebsd/
 DISTNAME=	${PORTNAME}-freebsd-${PORTVERSION}-${ARCH:S/amd64/x86_64/:S/i386/i386/}
 
-MAINTAINER=	martinfilla@post.cz
+MAINTAINER=	freebsd@sysctl.cz
 COMMENT=	Fast remote desktop
 
 LICENSE=	commercial

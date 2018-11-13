@@ -1,5 +1,5 @@
 # Created by: Jeremy C. Reed
-# $FreeBSD: head/dns/bundy/Makefile 481329 2018-10-06 08:45:55Z mat $
+# $FreeBSD: head/dns/bundy/Makefile 484183 2018-11-05 09:44:12Z mat $
 
 PORTNAME=	bundy
 PORTVERSION=	0.20170618
@@ -29,6 +29,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 BROKEN_armv6 =		fails to build: Child process terminated abnormally: Segmentation fault
 BROKEN_armv7 =		fails to build: Child process terminated abnormally: Segmentation fault
 BROKEN_powerpc64=	fails to configure: checking for botan/botan.h... no
+
+BROKEN_FreeBSD_12=	fails with sig11
+BROKEN_FreeBSD_13=	fails with sig11
 
 USES=	compiler:c++11-lang pathfix pkgconfig libtool python:3.4+ autoreconf ssl
 USE_CSTD=	gnu99

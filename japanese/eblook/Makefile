@@ -1,9 +1,9 @@
 # Created by: Shigeyuki Fukushima <shige@FreeBSD.org>
-# $FreeBSD: head/japanese/eblook/Makefile 449883 2017-09-15 05:52:02Z sunpoet $
+# $FreeBSD: head/japanese/eblook/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	eblook
 PORTVERSION=	1.6.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	japanese textproc
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/eblook/dist/
 DIST_SUBDIR=	eb

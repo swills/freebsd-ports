@@ -1,8 +1,8 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/archivers/file-roller/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/archivers/file-roller/Makefile 484773 2018-11-11 21:33:59Z kwm $
 
 PORTNAME=	file-roller
-PORTVERSION=	3.28.0
+PORTVERSION=	3.28.1
 PORTEPOCH=	1
 CATEGORIES=	archivers gnome
 MASTER_SITES=	GNOME
@@ -21,7 +21,7 @@ RUN_DEPENDS=	gtar:archivers/gtar
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext libarchive localbase \
+USES=		desktop-file-utils gettext gnome libarchive localbase \
 		meson pkgconfig python:3.5+,build tar:xz
 USE_GNOME=	cairo gtk30
 INSTALLS_ICONS=	yes
@@ -34,6 +34,27 @@ GLIB_SCHEMAS=	org.gnome.FileRoller.gschema.xml
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	NAUTILUS
 OPTIONS_DEFAULT=NAUTILUS
+
+OPTIONS_GROUP=	FORMATS
+OPTIONS_GROUP_FORMATS=	7ZIP ARJ LZO RAR ZIP
+
+FORMATS_DESC=	Additional compression formats support
+
+7ZIP_DESC=	7zip archive support
+7ZIP_RUN_DEPENDS=	7z:archivers/p7zip
+
+ARJ_DESC=	ARJ archive support
+ARJ_RUN_DEPENDS=	arj:archivers/arj
+
+LZO_DESC=	LZO compression support
+LZO_RUN_DEPENDS=	lzop:archivers/lzop
+
+RAR_DESC=	RAR archive support
+RAR_RUN_DEPENDS=	rar:archivers/rar \
+			unrar:archivers/unrar
+
+ZIP_DESC=	ZIP archive support
+ZIP_RUN_DEPENDS=	zip:archivers/zip
 
 NAUTILUS_DESC=	Nautilus context menu actions
 NAUTILUS_USE=	GNOME=nautilus3

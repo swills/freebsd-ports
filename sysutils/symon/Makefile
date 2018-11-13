@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <uspoerlein@gmail.com>
-# $FreeBSD: head/sysutils/symon/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/sysutils/symon/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	symon
 PORTVERSION=	2.87
@@ -62,7 +62,7 @@ post-extract:
 post-patch:
 # We need to teach symon about mbstat changes/removal in r253351 and r253361.
 	@${RM} ${WRKSRC}/platform/FreeBSD/sm_mbuf.c
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100070
+.if ${OPSYS} == FreeBSD
 	@${REINPLACE_CMD} 's|altq/|net/&|' ${WRKSRC}/platform/FreeBSD/sm_pfq.c
 .endif
 

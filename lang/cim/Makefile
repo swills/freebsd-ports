@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/cim/Makefile 457835 2018-01-02 08:49:35Z danfe $
+# $FreeBSD: head/lang/cim/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cim
 PORTVERSION=	3.37
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://simula67.at.ifi.uio.no/Cim/
 

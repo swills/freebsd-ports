@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-sympy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-sympy/Makefile 484852 2018-11-13 00:30:31Z wen $
 
 PORTNAME=	sympy
-PORTVERSION=	1.1.1
-PORTREVISION=	1
+PORTVERSION=	1.3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

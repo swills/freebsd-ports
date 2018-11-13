@@ -1,11 +1,11 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm-node6/Makefile 454518 2017-11-20 04:31:19Z sunpoet $
+# $FreeBSD: head/www/npm-node6/Makefile 483918 2018-11-03 22:16:33Z sunpoet $
 
 PKGNAMESUFFIX=	-node6
 
-CONFLICTS_INSTALL=	npm npm-node4 npm-node8 npm2 npm3 npm4
+CONFLICTS_INSTALL=	npm npm-node10 npm-node8
 
-OPTIONS_EXCLUDE=NODE NODE4 NODE8
+OPTIONS_EXCLUDE=NODE NODE10 NODE8
 OPTIONS_SLAVE=	NODE6
 
 MASTERDIR=	${.CURDIR}/../npm

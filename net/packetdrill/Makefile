@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/packetdrill/Makefile 479672 2018-09-13 12:01:24Z kbowling $
+# $FreeBSD: head/net/packetdrill/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	packetdrill
 PORTVERSION=	0.0.2018081901
@@ -8,9 +8,6 @@ MAINTAINER=	kbowling@FreeBSD.org
 COMMENT=	Network stack testing tool
 
 LICENSE=	GPLv2
-
-# Need SCTP_PR_SCTP_PRIO and pcap_set_immediate_mode
-IGNORE_FreeBSD_10=	not supported on 10.x or older
 
 USES=		bison uidfix
 USE_GITHUB=	yes

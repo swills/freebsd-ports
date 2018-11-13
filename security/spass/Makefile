@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/spass/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/security/spass/Makefile 484370 2018-11-06 23:52:17Z linimon $
 
 PORTNAME=	spass
 PORTVERSION=	3.0
@@ -11,9 +11,6 @@ COMMENT=	Secure password generator with a true random number generator
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_sparc64=		cannot link with boost
-BROKEN_powerpc64=	fails to link: main.cpp.o: undefined reference to boost::program_options::options_description::options_description
-
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/format.hpp:devel/boost-libs
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs
 
@@ -21,7 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	guyru
 GH_TAGNAME=	cb0de64
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 
 CMAKE_ARGS=	-DWITH_ALSA:BOOL=off -DWITH_OSS:BOOL=on
 

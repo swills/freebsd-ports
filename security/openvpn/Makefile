@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/security/openvpn/Makefile 479770 2018-09-14 12:04:53Z tijl $
+# $FreeBSD: head/security/openvpn/Makefile 484182 2018-11-05 09:30:18Z amdmi3 $
 
 PORTNAME=		openvpn
 DISTVERSION=		2.4.6
@@ -12,6 +12,7 @@ MAINTAINER=		mandree@FreeBSD.org
 COMMENT?=		Secure IP/Ethernet tunnel daemon
 
 LICENSE=		GPLv2
+LICENSE_FILE=		${WRKSRC}/COPYRIGHT.GPL
 
 CONFLICTS_INSTALL?=	openvpn-2.[!4].* openvpn-[!2].* openvpn-beta-[0-9]* openvpn-devel-[0-9]* openvpn-mbedtls-[0-9]*
 

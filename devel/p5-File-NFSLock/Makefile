@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-NFSLock/Makefile 479640 2018-09-12 22:56:21Z sunpoet $
+# $FreeBSD: head/devel/p5-File-NFSLock/Makefile 484243 2018-11-05 21:45:37Z sunpoet $
 
 PORTNAME=	File-NFSLock
-PORTVERSION=	1.27
+PORTVERSION=	1.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

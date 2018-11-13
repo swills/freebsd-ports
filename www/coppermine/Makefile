@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/coppermine/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/coppermine/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	coppermine
 PORTVERSION=	1.5.46
@@ -16,7 +16,7 @@ IGNORE_WITH_PHP=	70 71 72 73
 OPTIONS_DEFINE=	DOCS IMAGEMAGICK
 IMAGEMAGICK_DESC=	Use ImageMagick instead of PHP GD extension
 
-IMAGEMAGICK_RUN_DEPENDS+=	convert:graphics/ImageMagick
+IMAGEMAGICK_RUN_DEPENDS+=	convert:graphics/ImageMagick6
 
 USE_PHP=	mysql pcre ctype
 USES=		php zip

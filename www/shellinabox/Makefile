@@ -1,9 +1,10 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/www/shellinabox/Makefile 426817 2016-11-22 11:36:47Z olivier $
+# $FreeBSD: head/www/shellinabox/Makefile 484876 2018-11-13 15:00:25Z olivier $
 
 PORTNAME=	shellinabox
 PORTVERSION=	2.20
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	www
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -11,15 +12,14 @@ COMMENT=	Publish command line shell through AJAX interface
 
 LICENSE=	GPLv2
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	shellinabox
+USES=	autoreconf libtool
 
 OPTIONS_DEFINE=	CORES NOLOGIN
 CORES_DESC=	Patch shellinaboxd to enable core dumps
 NOLOGIN_DESC=	Login through ssh (not through login)
 
-USES=	autoreconf libtool
 GNU_CONFIGURE=	yes
+USE_GITHUB=	yes
 
 USE_RC_SUBR=	shellinaboxd
 USERS?=		shellinabox

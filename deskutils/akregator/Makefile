@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/akregator/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/akregator/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	akregator
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -23,7 +24,7 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons crash \
 # pim components
 USE_KDE+=	akonadi akonadimime contacts grantleetheme kontactinterface \
 		libkdepim libkleo messagelib mime pimcommon pimtextedit syndication
-USE_QT=		core dbus gui location network printsupport qml quick \
+USE_QT=		core dbus declarative gui location network printsupport \
 		webchannel webengine widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

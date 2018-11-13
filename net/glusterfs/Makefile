@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/glusterfs/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/glusterfs/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	glusterfs
 PORTVERSION=	3.11.1
@@ -56,11 +56,5 @@ PLIST_SUB=	GLUSTERLIBDIR="lib/${PORTNAME}/${PORTVERSION}"
 KMODDIR?=	/boot/modules
 
 OPTIONS_DEFINE=	DOCS
-
-.include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101001
-USE_GCC=	yes
-.endif
 
 .include <bsd.port.mk>

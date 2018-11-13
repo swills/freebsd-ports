@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/sysutils/mcron/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/mcron/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mcron
 PORTVERSION=	1.0.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 

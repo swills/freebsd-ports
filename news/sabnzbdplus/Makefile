@@ -1,7 +1,7 @@
-# $FreeBSD: head/news/sabnzbdplus/Makefile 471747 2018-06-05 08:08:27Z flo $
+# $FreeBSD: head/news/sabnzbdplus/Makefile 483816 2018-11-02 15:13:51Z flo $
 
 PORTNAME=	sabnzbdplus
-PORTVERSION=	2.3.4
+PORTVERSION=	2.3.5
 CATEGORIES=	news
 
 MAINTAINER=	joshruehlig@gmail.com

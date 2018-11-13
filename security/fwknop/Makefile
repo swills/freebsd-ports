@@ -1,8 +1,9 @@
 # Created by: Sean Greven <sean.greven@gmail.com>
-# $FreeBSD: head/security/fwknop/Makefile 480983 2018-09-30 20:54:01Z fernape $
+# $FreeBSD: head/security/fwknop/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	fwknop
 PORTVERSION=	2.6.10
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.cipherdyne.org/fwknop/download/
 

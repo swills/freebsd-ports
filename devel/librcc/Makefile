@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <uspoerlein@gmail.com>
-# $FreeBSD: head/devel/librcc/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/librcc/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME=	librcc
 PORTVERSION=	0.2.12
@@ -19,8 +19,9 @@ LIB_DEPENDS=	librcd.so:devel/librcd \
 		libaspell.so:textproc/aspell
 
 GNU_CONFIGURE=	yes
+USES=		compiler:c++11-lang gmake iconv libtool pathfix pkgconfig \
+		tar:bzip2
 USE_GNOME=	libxml2
-USES=		gmake iconv libtool pathfix pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 

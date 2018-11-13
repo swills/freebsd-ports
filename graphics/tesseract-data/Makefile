@@ -1,8 +1,8 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/graphics/tesseract-data/Makefile 469800 2018-05-13 15:04:49Z jbeich $
+# $FreeBSD: head/graphics/tesseract-data/Makefile 484531 2018-11-09 17:00:48Z swills $
 
 PORTNAME=	tesseract-data
-PORTVERSION=	3.04.00
+PORTVERSION=	4.0.0
 CATEGORIES=	graphics
 
 MAINTAINER=	pkubaj@anongoth.pl

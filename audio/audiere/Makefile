@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/audiere/Makefile 434057 2017-02-13 22:13:34Z tijl $
+# $FreeBSD: head/audio/audiere/Makefile 484015 2018-11-04 12:54:54Z antoine $
 
 PORTNAME=	audiere
 PORTVERSION=	1.9.4
@@ -12,6 +12,8 @@ COMMENT=	High-level audio API
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/doc/license.txt
+
+BROKEN=		fails to build
 
 GNU_CONFIGURE=	yes
 USES=		autoreconf gmake libtool

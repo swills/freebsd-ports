@@ -1,9 +1,9 @@
 # Created by: tg@FreeBSD.org
-# $FreeBSD: head/print/gv/Makefile 460182 2018-01-28 13:54:30Z gerald $
+# $FreeBSD: head/print/gv/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gv
 PORTVERSION=	3.7.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	print
 MASTER_SITES=	GNU
 

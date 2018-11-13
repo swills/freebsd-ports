@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby23/Makefile 482556 2018-10-20 14:58:37Z sunpoet $
+# $FreeBSD: head/lang/ruby23/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -18,8 +18,8 @@ LICENSE_COMB=	dual
 LICENSE_FILE_BSD2CLAUSE=${WRKSRC}/BSDL
 LICENSE_FILE_RUBY=	${WRKSRC}/COPYING
 
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=does not detect and buid the openssl*.rb bits
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=does not detect and buid the openssl*.rb bits
 
 # Using LIB_DEPENDS finds the libffi from gcc which causes problems
 BUILD_DEPENDS=	libffi>=0:devel/libffi
@@ -91,7 +91,7 @@ _SUF2=	,${PORTEPOCH}
 .endif
 
 .if ${OPSYS} == "FreeBSD"
-.if exists(/usr/sbin/dtrace) && (${OSVERSION} > 1100032) && (${ARCH} == amd64 || ${ARCH} == i386)
+.if exists(/usr/sbin/dtrace) && (${ARCH} == amd64 || ${ARCH} == i386)
 CONFIGURE_ARGS+=--enable-dtrace
 .else
 CONFIGURE_ARGS+=--disable-dtrace

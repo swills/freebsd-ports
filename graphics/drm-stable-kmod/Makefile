@@ -1,8 +1,9 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-stable-kmod/Makefile 477849 2018-08-23 03:48:12Z jmd $
+# $FreeBSD: head/graphics/drm-stable-kmod/Makefile 484354 2018-11-06 21:18:31Z zeising $
 
 PORTNAME=	drm-stable-kmod
 PORTVERSION=	g20180822
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -29,9 +30,6 @@ GH_TAGNAME=	ef4d156
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101510
-IGNORE=		not supported on 11.1 or older, no kernel support
-.endif
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200000 && ${OSVERSION} < 1200045
 IGNORE=		not supported on older CURRENT, no kernel support
 .endif

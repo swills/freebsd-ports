@@ -1,10 +1,10 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/wargus/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/games/wargus/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	wargus
 PORTVERSION=	2.4.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

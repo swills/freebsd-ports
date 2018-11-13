@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/plasma5-kdeplasma-addons/Makefile 483271 2018-10-28 10:59:23Z tcberner $
+# $FreeBSD: head/x11-toolkits/plasma5-kdeplasma-addons/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	kdeplasma-addons
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,8 +16,8 @@ USE_KDE=	activities archive attica auth bookmarks codecs completion \
 		kdelibs4support kio kross newstuff notifications package parts\
 		plasma-framework plasma-workspace runner service solid sonnet \
 		textwidgets unitconversion widgetsaddons windowsystem xmlgui
-USE_QT=		core dbus graphicaleffects gui location network printsupport \
-		qml quick script webchannel webengine widgets x11extras xml \
+USE_QT=		core dbus declarative  graphicaleffects gui location network \
+		printsupport script webchannel webengine widgets x11extras xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

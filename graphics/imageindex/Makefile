@@ -1,9 +1,9 @@
 # Created by: John Reynolds <johnjen@reynoldsnet.org>
-# $FreeBSD: head/graphics/imageindex/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/imageindex/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	imageindex
 PORTVERSION=	2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.edwinh.org/imageindex/release/ \
 		http://www.reynoldsnet.org/imageindex/release/
@@ -11,7 +11,7 @@ MASTER_SITES=	http://www.edwinh.org/imageindex/release/ \
 MAINTAINER=	johnjen@reynoldsnet.org
 COMMENT=	Digital photo gallery tool
 
-RUN_DEPENDS=	convert:graphics/ImageMagick \
+RUN_DEPENDS=	convert:graphics/ImageMagick6 \
 		mplayer:multimedia/mplayer \
 		p5-Image-Info>=0:graphics/p5-Image-Info
 

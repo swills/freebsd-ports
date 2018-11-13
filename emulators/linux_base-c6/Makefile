@@ -1,5 +1,5 @@
 # Created by: Svyatoslav Lempert <svyatoslav.lempert@gmail dot com>
-# $FreeBSD: head/emulators/linux_base-c6/Makefile 478165 2018-08-26 19:53:54Z pi $
+# $FreeBSD: head/emulators/linux_base-c6/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	c6
 PORTVERSION=	${LINUX_DIST_VER}
@@ -120,7 +120,7 @@ REMOVE_FILES=	bin/df bin/su etc/exports etc/group etc/gshadow etc/motd \
 
 .include <bsd.port.pre.mk>
 
-.if ${LINUX_ARCH} == x86_64 && ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100105
+.if ${LINUX_ARCH} == x86_64
 SYSCTLMIB=	kern.features.linux64
 .else
 SYSCTLMIB=	compat.linux.osrelease

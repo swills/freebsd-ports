@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/metisse/Makefile 456068 2017-12-11 21:48:32Z antoine $
+# $FreeBSD: head/x11/metisse/Makefile 484063 2018-11-04 14:12:29Z antoine $
 
 PORTNAME=	metisse
 PORTVERSION=	0.4.1
@@ -12,6 +12,8 @@ COMMENT=	Innovative X-based window system
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libNucleo.so:x11-toolkits/nucleo \
 		libpng.so:graphics/png

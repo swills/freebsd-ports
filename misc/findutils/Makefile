@@ -1,8 +1,9 @@
 # Created by: Robert Withrow <witr@rwwa.com>
-# $FreeBSD: head/misc/findutils/Makefile 405680 2016-01-10 09:29:05Z miwi $
+# $FreeBSD: head/misc/findutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	findutils
 PORTVERSION=	4.6.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}${EXTRACT_SUFX}.sig

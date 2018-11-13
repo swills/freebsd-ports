@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/pstoedit/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/pstoedit/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	pstoedit
 PORTVERSION=	3.70
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics print
 MASTER_SITES=	SF
 
@@ -33,7 +33,7 @@ EMF_DESC=		WMF/EMF support via libEMF
 EMF_LIB_DEPENDS=	libEMF.so:graphics/libemf
 EMF_CONFIGURE_ON=	--with-libemf-include=${LOCALBASE}/include/libEMF
 EMF_CONFIGURE_OFF=	--without-emf
-MAGICK_LIB_DEPENDS=	libMagick++-*.so:graphics/ImageMagick
+MAGICK_LIB_DEPENDS=	libMagick++-*.so:graphics/ImageMagick6
 MAGICK_CONFIGURE_ON=	--with-magick
 MAGICK_CONFIGURE_OFF=	--without-magick
 MING_DESC=		Flash support via Ming

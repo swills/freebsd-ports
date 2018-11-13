@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/festival-freebsoft-utils/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/audio/festival-freebsoft-utils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	festival-freebsoft-utils
 PORTVERSION=	0.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio accessibility
 MASTER_SITES=	http://www.freebsoft.org/pub/projects/${PORTNAME}/
 

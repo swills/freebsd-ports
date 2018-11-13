@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-stringex/Makefile 464524 2018-03-14 18:12:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-stringex/Makefile 484743 2018-11-11 18:23:05Z sunpoet $
 
 PORTNAME=	stringex
-PORTVERSION=	2.8.4
+PORTVERSION=	2.8.5
 PORTEPOCH=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG

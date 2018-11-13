@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/py-toronado/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-toronado/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	toronado
 PORTVERSION=	0.0.11
@@ -7,7 +7,7 @@ CATEGORIES=	textproc www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Fast lxml-based CSS stylesheet inliner
 
 RUN_DEPENDS:=	${PYTHON_PKGNAMEPREFIX}cssselect>=0:www/py-cssselect@${PY_FLAVOR} \

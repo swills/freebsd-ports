@@ -1,5 +1,5 @@
 # Created by: Bjoern Koenig <bkoenig@alpha-tierchen.de>
-# $FreeBSD: head/java/jamvm/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/java/jamvm/Makefile 483960 2018-11-04 06:06:27Z bapt $
 
 PORTNAME=	jamvm
 PORTVERSION=	1.5.4
@@ -7,10 +7,13 @@ PORTREVISION=	2
 CATEGORIES=	java devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/JamVM%20${PORTVERSION}
 
-MAINTAINER=	java@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Compact Java virtual machine
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Abandonware
+EXPIRATION_DATE=	2018-12-04
 
 RUN_DEPENDS=	${LOCALBASE}/share/classpath/glibj.zip:java/classpath
 

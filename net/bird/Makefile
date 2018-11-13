@@ -1,8 +1,9 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/net/bird/Makefile 465713 2018-03-27 15:09:22Z olivier $
+# $FreeBSD: head/net/bird/Makefile 484857 2018-11-13 05:36:53Z olivier $
 
 PORTNAME=	bird
 PORTVERSION=	1.6.4
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ftp://bird.network.cz/pub/bird/
 
@@ -21,6 +22,8 @@ CONFIGURE_ARGS=	--localstatedir=/var
 MAKE_JOBS_UNSAFE=	yes
 
 USE_RC_SUBR=	${PKGBASE}
+
+GROUPS=		birdvty
 
 .if ${FLAVOR:U} == ipv6
 CONFIGURE_ARGS+=	--enable-ipv6

@@ -1,9 +1,9 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/mail/mboxgrep/Makefile 425126 2016-11-02 09:04:20Z amdmi3 $
+# $FreeBSD: head/mail/mboxgrep/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mboxgrep
 PORTVERSION=	0.7.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	SF
 

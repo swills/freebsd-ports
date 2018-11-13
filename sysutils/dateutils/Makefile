@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/dateutils/Makefile 460010 2018-01-26 17:10:42Z danfe $
+# $FreeBSD: head/sysutils/dateutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	dateutils
 PORTVERSION=	0.4.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://bitbucket.org/hroptatyr/dateutils/downloads/
 

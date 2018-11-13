@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/devel/autogen/Makefile 471254 2018-06-01 10:16:41Z cpm $
+# $FreeBSD: head/devel/autogen/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	autogen
 PORTVERSION=	5.18.12
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNU/${PORTNAME}/rel${PORTVERSION}
 

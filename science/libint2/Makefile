@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/libint2/Makefile 478338 2018-08-29 03:54:05Z yuri $
+# $FreeBSD: head/science/libint2/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	libint
 DISTVERSIONPREFIX=	v
@@ -14,8 +14,6 @@ COMMENT=	Evaluate the integrals in modern atomic and molecular theory
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_FreeBSD_10=	/usr/include/c++/v1/memory:4004:35: error: no viable overloaded '=': __e->__weak_this_ = *this;
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libgmpxx.so:math/gmp

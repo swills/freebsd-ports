@@ -1,8 +1,9 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/devel/kaptain/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kaptain/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	kaptain
 PORTVERSION=	0.73
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

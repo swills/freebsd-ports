@@ -1,5 +1,5 @@
 # Created by: nadav@libagent.org
-# $FreeBSD: head/hebrew/he2/Makefile 434692 2017-02-24 01:52:10Z cpm $
+# $FreeBSD: head/hebrew/he2/Makefile 484055 2018-11-04 14:01:58Z antoine $
 
 PORTNAME=	he2
 PORTVERSION=	0.61
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Editor for editing (primarily LaTeX) Hebrew files
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 RUN_DEPENDS=	iw-elmar-fonts>0:hebrew/elmar-fonts
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-wand/Makefile 472735 2018-06-19 01:30:04Z yuri $
+# $FreeBSD: head/graphics/py-wand/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	Wand
 PORTVERSION=	0.4.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ COMMENT=	MagickWand Python binding
 
 LICENSE=	MIT
 
-LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
+LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
 
 USES=	python
 USE_PYTHON=	distutils autoplist

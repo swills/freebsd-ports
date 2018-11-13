@@ -1,8 +1,9 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/sysutils/xfburn/Makefile 456330 2017-12-14 18:15:58Z madpilot $
+# $FreeBSD: head/sysutils/xfburn/Makefile 484458 2018-11-08 15:00:34Z madpilot $
 
 PORTNAME=	xfburn
 PORTVERSION=	0.5.5
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	XFCE/src/apps/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4

@@ -1,9 +1,9 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/textproc/gsed/Makefile 465784 2018-03-28 09:03:24Z amdmi3 $
+# $FreeBSD: head/textproc/gsed/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	sed
 PORTVERSION=	4.2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	g

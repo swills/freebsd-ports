@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/keepassxc/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/security/keepassxc/Makefile 484259 2018-11-05 23:39:19Z linimon $
 
 PORTNAME=	keepassxc
 DISTVERSION=	2.3.4
@@ -24,7 +24,8 @@ LIB_DEPENDS=	libargon2.so:security/libargon2 \
 		libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error
 
-USES=		cmake:outsource desktop-file-utils qt:5 shared-mime-info tar:xz
+USES=		cmake:outsource compiler:c++11-lang desktop-file-utils qt:5 \
+		shared-mime-info tar:xz
 USE_QT=		buildtools_build concurrent core dbus gui linguisttools network \
 		qmake_build testlib widgets
 USE_XORG=	x11

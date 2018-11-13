@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cvs/Makefile 462776 2018-02-24 08:54:57Z riggs $
+# $FreeBSD: head/devel/cvs/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	cvs
 PORTVERSION=	1.20120905
-PORTREVISION?=	5
+PORTREVISION?=	6
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/eadler
 
@@ -39,6 +39,8 @@ INFO=		cvs cvsclient
 DESTDIRNAME=	NADA
 MAKE_ARGS=	DESTDIR=${STAGEDIR}${PREFIX}
 
+post-patch:
+	@${REINPLACE_CMD} -e "s,/info/,/${INFO_PATH}/,g" ${WRKSRC}/Makefile.inc
 pre-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/contrib
 

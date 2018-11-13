@@ -1,10 +1,11 @@
-# $FreeBSD: head/net/kea/Makefile 482813 2018-10-23 07:42:12Z meta $
+# $FreeBSD: head/net/kea/Makefile 484642 2018-11-10 20:46:36Z pi $
 
 PORTNAME=	kea
-PORTVERSION=	1.3.0
-PORTREVISION=	4
+PORTVERSION=	${ISCVERSION:S/-P/P/:S/b/.b/:S/a/.a/:S/rc/.rc/}
+PORTREVISION=	0
 CATEGORIES=	net ipv6
-MASTER_SITES=	ISC/kea/${PORTVERSION}
+MASTER_SITES=	ISC/kea/${ISCVERSION}
+DISTNAME=	${PORTNAME}-${ISCVERSION}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Alternative DHCP implementation by ISC
@@ -17,7 +18,16 @@ LIB_DEPENDS=	liblog4cplus.so:devel/log4cplus \
 
 BROKEN_powerpc64=	fails to configure: checking for log4cplus library... no
 
-USES=		autoreconf compiler:c++11-lang libtool pathfix ssl
+# ISC releases things like 1.4.0-P1, which our versioning doesn't like
+ISCVERSION=	1.4.0-P1
+
+CPE_VENDOR=	isc
+CPE_VERSION=	${ISCVERSION:C/-.*//}
+.if ${ISCVERSION:M*-*}
+CPE_UPDATE=	${ISCVERSION:C/.*-//:tl}
+.endif
+
+USES=		autoreconf compiler:c++11-lang libtool pathfix ssl cpe
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	${PORTNAME}
 GNU_CONFIGURE=	yes

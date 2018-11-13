@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-plugins-all/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-all/Makefile 483887 2018-11-03 11:58:10Z tijl $
 
 PORTNAME=	gstreamer1-plugins-all
-PORTVERSION=	1.12
+PORTVERSION=	1.14
 PORTREVISION=	0
 CATEGORIES=	multimedia
 

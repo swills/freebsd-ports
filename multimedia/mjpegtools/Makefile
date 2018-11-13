@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mjpegtools/Makefile 481478 2018-10-07 19:35:33Z riggs $
+# $FreeBSD: head/multimedia/mjpegtools/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	mjpegtools
 PORTVERSION=	2.1.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME:S/tools//}/${PORTNAME}/${PORTVERSION}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Rand/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-Rand/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Data-Rand
 PORTVERSION=	0.0.4
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for generating random strings or arrays
 
 LICENSE=	ART10 GPLv1+

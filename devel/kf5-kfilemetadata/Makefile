@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	kfilemetadata
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,6 +10,7 @@ COMMENT=	KF5 library for extracting file metadata
 LIB_DEPENDS=	libavutil.so:multimedia/ffmpeg \
 		libepub.so:textproc/ebook-tools \
 		libexiv2.so:graphics/exiv2 \
+		libpoppler.so:graphics/poppler \
 		libpoppler-qt5.so:graphics/poppler-qt5 \
 		libtag.so:audio/taglib
 # TODO: maybe depend on textproc/catdoc

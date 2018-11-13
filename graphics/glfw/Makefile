@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/graphics/glfw/Makefile 482624 2018-10-20 21:39:08Z jbeich $
+# $FreeBSD: head/graphics/glfw/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	glfw
 PORTVERSION=	3.2.1
@@ -26,7 +26,6 @@ OPTIONS_DEFAULT=X11
 PLATFORM_DESC=	Window creation platform
 OPTIONS_SINGLE=	PLATFORM
 OPTIONS_SINGLE_PLATFORM=	WAYLAND X11
-OPTIONS_EXCLUDE_FreeBSD_10=	WAYLAND # needs dev/evdev/input.h
 
 WAYLAND_BUILD_DEPENDS=	wayland-protocols>=0:graphics/wayland-protocols
 WAYLAND_CMAKE_BOOL=	GLFW_USE_WAYLAND

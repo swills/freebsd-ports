@@ -1,10 +1,10 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/www/redmine/Makefile 476463 2018-08-05 19:09:26Z sunpoet $
+# $FreeBSD: head/www/redmine/Makefile 484249 2018-11-05 21:46:27Z sunpoet $
 
 PORTNAME=	redmine
 PORTVERSION=	3.4.6
 CATEGORIES=	www
-MASTER_SITES=	http://www.redmine.org/releases/
+MASTER_SITES=	https://www.redmine.org/releases/
 
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Flexible project management web application

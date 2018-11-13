@@ -1,9 +1,9 @@
 # Created by: Chuck Robey <chuckr@FreeBSD.org>
-# $FreeBSD: head/print/a2ps/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/print/a2ps/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	a2ps
 PORTVERSION=	4.13b
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	print
 MASTER_SITES=	GNU LOCAL/hrs/a2ps/:i18n
 

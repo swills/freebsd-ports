@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@dryice.name>
-# $FreeBSD: head/textproc/muse/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/textproc/muse/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	muse
 PORTVERSION=	3.20
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://download.gna.org/muse-el/ \
 		LOCAL/dryice \

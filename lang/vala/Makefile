@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/lang/vala/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/lang/vala/Makefile 484880 2018-11-13 17:37:23Z kwm $
 
 PORTNAME=	vala
-PORTVERSION=	0.40.7
+PORTVERSION=	0.40.11
 PORTEPOCH=	1
 CATEGORIES=	lang gnome
 MASTER_SITES=	GNOME

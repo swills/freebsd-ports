@@ -1,5 +1,5 @@
 # Created by: Andrew Lewis <freeghb@gmail.com>
-# $FreeBSD: head/security/luasec/Makefile 462142 2018-02-17 12:00:58Z sunpoet $
+# $FreeBSD: head/security/luasec/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	luasec
 PORTVERSION=	0.6
@@ -12,7 +12,7 @@ COMMENT=	Lua binding for the OpenSSL library to provide TLS/SSL communication
 
 LICENSE=	MIT
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	brunoos

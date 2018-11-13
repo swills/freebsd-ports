@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/astro/libosmium/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/astro/libosmium/Makefile 483814 2018-11-02 15:07:09Z linimon $
 
 PORTNAME=	libosmium
 PORTVERSION=	2.14.2
@@ -13,8 +13,6 @@ COMMENT=	Fast and flexible C++ library for working with OpenStreetMap data
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to compile: types_from_string.hpp: error: 'strtoll' is not a member of 'std'
-
 LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libboost_regex.so:devel/boost-libs \
 		libgeos.so:graphics/geos \
@@ -23,10 +21,10 @@ BUILD_DEPENDS=	sparsehash>=0:devel/sparsehash \
 		${LOCALBASE}/include/protozero/version.hpp:devel/protozero
 RUN_DEPENDS=	${LOCALBASE}/include/protozero/version.hpp:devel/protozero
 
+USES=		cmake compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	osmcode
 
-USES=		cmake compiler:c++11-lib
 CMAKE_ARGS=	-DBUILD_EXAMPLES:BOOL=OFF
 
 # if/when corresponding port appears in the tree, this will need to

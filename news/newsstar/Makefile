@@ -1,9 +1,9 @@
 # Created by: Andrey Slusar <anray@FreeBSD.org>
-# $FreeBSD: head/news/newsstar/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/news/newsstar/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	newsstar
 PORTVERSION=	1.5.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	news
 MASTER_SITES=	SF
 

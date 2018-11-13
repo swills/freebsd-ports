@@ -1,8 +1,9 @@
 # Created by: Maxim Ignatenko <gelraen.ua@gmail.com>
-# $FreeBSD: head/sysutils/acpi_call/Makefile 426854 2016-11-22 18:47:53Z linimon $
+# $FreeBSD: head/sysutils/acpi_call/Makefile 484252 2018-11-05 22:32:41Z dumbbell $
 
 PORTNAME=	acpi_call
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://projects.ukrweb.net/files/ \
 		http://imax.in.ua/files/

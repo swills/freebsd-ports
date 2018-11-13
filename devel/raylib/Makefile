@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/raylib/Makefile 473134 2018-06-23 14:46:20Z yuri $
+# $FreeBSD: head/devel/raylib/Makefile 484675 2018-11-11 09:34:37Z pi $
 
 PORTNAME=	raylib
 DISTVERSION=	2.0.0
 DISTVERSIONSUFFIX=	-dev
 CATEGORIES=	devel
 
-MAINTAINER=	martinfilla@post.cz
+MAINTAINER=	freebsd@sysctl.cz
 COMMENT=	Library to learn videogames programming
 
 LICENSE=	ZLIB

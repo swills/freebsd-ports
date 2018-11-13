@@ -1,9 +1,9 @@
 # Created by: markm@FreeBSD.org
-# $FreeBSD: head/mail/exim/Makefile 479999 2018-09-18 08:58:46Z linimon $
+# $FreeBSD: head/mail/exim/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	exim
 PORTVERSION?=	${EXIM_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail ipv6
 MASTER_SITES=	EXIM:exim
 MASTER_SITE_SUBDIR=	/exim4/:exim \

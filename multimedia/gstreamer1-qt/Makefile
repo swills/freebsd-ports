@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 482597 2018-10-20 16:35:07Z tcberner $
+# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	gstreamer1
 PORTVERSION=	1.2.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/qt-gstreamer/
 PKGNAMESUFFIX=	-${FLAVOR}
@@ -36,8 +36,8 @@ USE_QT=		corelib gui opengl declarative script \
 PLIST_SUB=	QT4_ONLY="" QT5_ONLY="@comment "
 .  else
 USES+=		compiler:c++11-lang qt:5
-USE_QT=		buildtools_build qmake_build core gui network opengl \
-		qml quick testlib widgets
+USE_QT=		buildtools_build qmake_build core declarative gui network opengl \
+		testlib widgets
 QTVER_SUFFIX=	5
 PLIST_SUB=	QT4_ONLY="@comment " QT5_ONLY=""
 .  endif

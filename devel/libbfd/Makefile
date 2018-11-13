@@ -1,9 +1,9 @@
 # Created by: Joerg Wunsch <joerg@FreeBSD.org>
-# $FreeBSD: head/devel/libbfd/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/libbfd/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	libbfd
 PORTVERSION=	2.19.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases
 DISTNAME=	binutils-${PORTVERSION}

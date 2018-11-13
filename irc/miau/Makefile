@@ -1,9 +1,9 @@
 # Created by: Oliver Eikemeier
-# $FreeBSD: head/irc/miau/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/irc/miau/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	miau
 PORTVERSION=	0.6.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	irc ipv6
 MASTER_SITES=	SF
 

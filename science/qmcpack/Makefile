@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/qmcpack/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/science/qmcpack/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	qmcpack
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,6 @@ COMMENT=	Many-body ab initio Quantum Monte Carlo code for quantum chemstry
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_FreeBSD_10=	error: use of undeclared identifier '__builtin_assume_aligned'
 BROKEN_i386=	undefined reference to `__atomic_load'
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \

@@ -1,8 +1,9 @@
 # Created by: Goran Tal
-# $FreeBSD: head/net/gnu-dico/Makefile 481523 2018-10-08 08:10:38Z wen $
+# $FreeBSD: head/net/gnu-dico/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	dico
 PORTVERSION=	2.7
+PORTREVISION=	1
 CATEGORIES=	net textproc
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu-

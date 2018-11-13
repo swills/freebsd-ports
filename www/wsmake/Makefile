@@ -1,8 +1,9 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/www/wsmake/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/www/wsmake/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	wsmake
 PORTVERSION=	0.7.901
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME}/OldFiles
 

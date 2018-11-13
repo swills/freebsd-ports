@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/kf5-kio/Makefile 482610 2018-10-20 18:07:07Z tcberner $
+# $FreeBSD: head/devel/kf5-kio/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	kio
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

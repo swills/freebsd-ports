@@ -1,5 +1,5 @@
 # Created by: Thomas Dreibholz <dreibh@iem.uni-due.de>
-# $FreeBSD: head/net/rsplib/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/rsplib/Makefile 484084 2018-11-04 14:35:56Z antoine $
 
 PORTNAME=	rsplib
 PORTVERSION=	3.0.2
@@ -12,9 +12,7 @@ COMMENT=	RSerPool Framework and Example Applications
 
 LICENSE=	GPLv3
 
-BROKEN_aarch64=		fails to compile: fractalgeneratorservice.cc:353:12: expected unqualified-id
-BROKEN_armv6=		fails to compile: fractalgeneratorservice.cc:353:12: expected unqualified-id
-BROKEN_armv7=		fails to compile: fractalgeneratorservice.cc:353:12: expected unqualified-id
+BROKEN=		fails to compile: fractalgeneratorservice.cc:353:12: expected unqualified-id
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-maintainer-mode \

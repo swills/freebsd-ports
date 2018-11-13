@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/tex-dvipsk/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/print/tex-dvipsk/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	dvipsk
 PORTVERSION=	5.995
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	ftp://tug.org/historic/systems/texlive/2015/
 PKGNAMEPREFIX=	tex-

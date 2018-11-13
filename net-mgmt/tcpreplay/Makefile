@@ -1,10 +1,9 @@
 # Created by: cnh@ivmg.net
-# $FreeBSD: head/net-mgmt/tcpreplay/Makefile 461205 2018-02-08 09:02:48Z amdmi3 $
+# $FreeBSD: head/net-mgmt/tcpreplay/Makefile 484804 2018-11-12 14:48:37Z ehaupt $
 
 PORTNAME=	tcpreplay
-PORTVERSION=	4.2.6
+PORTVERSION=	4.3.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -16,8 +15,9 @@ LIB_DEPENDS=	libopts.so:devel/autogen \
 		libdnet.so:net/libdnet
 BUILD_DEPENDS=	pcapnav-config:net/libpcapnav
 
-USES=		autoreconf libtool pkgconfig
+USES=		autoreconf gmake libtool pkgconfig
 USE_GITHUB=	yes
+
 GNU_CONFIGURE=	yes
 TEST_TARGET=	test
 

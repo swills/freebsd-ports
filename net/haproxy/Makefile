@@ -1,5 +1,5 @@
 # Created by: Clement Laforet
-# $FreeBSD: head/net/haproxy/Makefile 480168 2018-09-20 12:45:16Z demon $
+# $FreeBSD: head/net/haproxy/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	haproxy
 DISTVERSION=	1.8.14
@@ -46,8 +46,8 @@ LUA_MAKE_ARGS=		USE_LUA=1 LUA_INC=${LUA_INCDIR} LUA_LIB=${LUA_LIBDIR} LUA_LIB_NA
 MAKE_ARGS+=     USE_REGPARM=1
 .endif
 
-.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=         Does not build with openssl-devel
+.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl111}
+BROKEN=         Does not build with openssl111
 .endif
 
 post-build:

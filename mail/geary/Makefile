@@ -1,8 +1,8 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/mail/geary/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/mail/geary/Makefile 484881 2018-11-13 17:38:52Z kwm $
 
 PORTNAME=	geary
-PORTVERSION=	0.12.2
+PORTVERSION=	0.12.4
 CATEGORIES=	mail gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -27,7 +27,7 @@ LIB_DEPENDS=	libgmime-2.6.so:mail/gmime26 \
 		libsoup-2.4.so:devel/libsoup \
 		libenchant.so:textproc/enchant
 
-USES=		cmake:outsource compiler:c11 desktop-file-utils gettext libtool \
+USES=		cmake:outsource compiler:c11 desktop-file-utils gettext gnome libtool \
 		localbase:ldflags pkgconfig shebangfix sqlite tar:xz
 USE_GNOME=	cairo gnomedocutils gnomeprefix gtk30 intlhack introspection
 SHEBANG_FILES=	desktop/geary-attach

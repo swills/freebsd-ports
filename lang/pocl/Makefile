@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/pocl/Makefile 467735 2018-04-18 20:54:46Z yuri $
+# $FreeBSD: head/lang/pocl/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	pocl
 PORTVERSION=	0.14
@@ -12,7 +12,6 @@ COMMENT=	POrtable Computing Language (POCL)
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_FreeBSD_10=	pocl is not supported on 10.x
 ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	only tested on x86
 

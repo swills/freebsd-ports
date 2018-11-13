@@ -1,8 +1,9 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/deskutils/gcal/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/deskutils/gcal/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gcal
 PORTVERSION=	4.1
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	GNU
 

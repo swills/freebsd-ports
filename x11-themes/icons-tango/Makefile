@@ -1,5 +1,5 @@
 # Created by: Phillip Neumann <pneumann@gmail.com>
-# $FreeBSD: head/x11-themes/icons-tango/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-themes/icons-tango/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	icons-tango
 PORTVERSION=	0.8.90
@@ -12,7 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Basic set of icons for the most common usage
 
 BUILD_DEPENDS=	${LOCALBASE}/libexec/icon-name-mapping:x11-themes/icon-naming-utils \
-		Magick-config:graphics/ImageMagick
+		Magick-config:graphics/ImageMagick6
 
 GNU_CONFIGURE=	yes
 USE_GNOME=	intlhack

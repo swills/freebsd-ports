@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/asdcplib/Makefile 421747 2016-09-10 21:50:12Z marino $
+# $FreeBSD: head/multimedia/asdcplib/Makefile 484013 2018-11-04 12:51:54Z antoine $
 
 PORTNAME=	asdcplib
 PORTVERSION=	1.11.49
@@ -8,6 +8,8 @@ MASTER_SITES=	http://download.cinecert.com/asdcplib/
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Open source implementation of SMPTE and the MXF Interop format
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 

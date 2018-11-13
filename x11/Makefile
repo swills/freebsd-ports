@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 482351 2018-10-18 18:52:17Z ericbsd $
+# $FreeBSD: head/x11/Makefile 484844 2018-11-12 22:16:26Z jsm $
 #
 
     COMMENT = Ports to support the X window system
@@ -29,6 +29,7 @@
     SUBDIR += bricons
     SUBDIR += brightside
     SUBDIR += brisk-menu
+    SUBDIR += cde
     SUBDIR += cinnamon
     SUBDIR += cinnamon-desktop
     SUBDIR += cinnamon-menus
@@ -36,6 +37,7 @@
     SUBDIR += cinnamon-session
     SUBDIR += cl-clx
     SUBDIR += cl-clx-sbcl
+    SUBDIR += compton-conf
     SUBDIR += controllermap
     SUBDIR += cool-retro-term
     SUBDIR += decurs

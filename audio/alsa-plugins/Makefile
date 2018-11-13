@@ -1,9 +1,9 @@
 # Created by: Aragon Gouveia <aragon@phat.za.net>
-# $FreeBSD: head/audio/alsa-plugins/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/audio/alsa-plugins/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	alsa-plugins
 PORTVERSION=	1.1.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.alsa-project.org/pub/plugins/ \
 		GENTOO

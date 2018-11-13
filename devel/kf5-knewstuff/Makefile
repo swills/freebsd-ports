@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-knewstuff/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/devel/kf5-knewstuff/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	knewstuff
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -12,7 +12,7 @@ USE_KDE=	archive attica5 auth codecs completion config \
 		configwidgets coreaddons ecm i18n iconthemes itemviews \
 		jobwidgets kio service sonnet textwidgets widgetsaddons \
 		xmlgui
-USE_QT=		buildtools_build core dbus gui network qmake_build \
-		quick widgets xml
+USE_QT=		buildtools_build core dbus declarative gui network qmake_build \
+		widgets xml
 
 .include <bsd.port.mk>

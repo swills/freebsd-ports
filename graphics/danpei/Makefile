@@ -1,9 +1,9 @@
 # Created by: Andrey V. Elsukov <bu7cher@yandex.ru>
-# $FreeBSD: head/graphics/danpei/Makefile 481888 2018-10-12 09:19:04Z antoine $
+# $FreeBSD: head/graphics/danpei/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	danpei
 PORTVERSION=	2.9.7
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libpng.so:graphics/png
 OPTIONS_DEFINE=	IMAGEMAGICK
 OPTIONS_DEFAULT=IMAGEMAGICK
 
-IMAGEMAGICK_RUN_DEPENDS=	convert:graphics/ImageMagick
+IMAGEMAGICK_RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 USES=		gettext
 USE_GNOME=	gtk12 gdkpixbuf

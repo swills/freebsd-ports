@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/ebook2cwgui/Makefile 455569 2017-12-05 09:00:27Z amdmi3 $
+# $FreeBSD: head/comms/ebook2cwgui/Makefile 483822 2018-11-02 16:36:00Z linimon $
 
 PORTNAME=	ebook2cwgui
 PORTVERSION=	0.1.2
@@ -14,6 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	ebook2cw:comms/ebook2cw
 
+USES=		compiler:c++11-lang
 USE_WX=		2.8
 
 PORTDOCS=	*

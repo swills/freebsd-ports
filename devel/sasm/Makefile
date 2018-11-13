@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/sasm/Makefile 483544 2018-10-31 02:14:50Z wen $
+# $FreeBSD: head/devel/sasm/Makefile 484677 2018-11-11 09:44:45Z sunpoet $
 
 PORTNAME=	SASM
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.10.0
 CATEGORIES=	devel
 
-MAINTAINER=	martinfilla@post.cz
+MAINTAINER=	freebsd@sysctl.cz
 COMMENT=	Simple IDE for NASM, MASM, GAS and FASM assembly languages
 
 LICENSE=	GPLv3

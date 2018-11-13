@@ -1,8 +1,8 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/gflags/Makefile 482707 2018-10-21 16:52:14Z sunpoet $
+# $FreeBSD: head/devel/gflags/Makefile 484829 2018-11-12 21:27:49Z sunpoet $
 
 PORTNAME=	gflags
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -22,8 +22,14 @@ TEST_TARGET=	test
 USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
+
 USE_GITHUB=	yes
 
 SHEBANG_FILES=	src/gflags_completions.sh
+
+post-install:
+	${LN} -s libgflags.so.${PORTVERSION} ${STAGEDIR}${PREFIX}/lib/libgflags.so.${PORTVERSION:R:R}
+	${LN} -s libgflags_nothreads.so.${PORTVERSION} ${STAGEDIR}${PREFIX}/lib/libgflags_nothreads.so.${PORTVERSION:R:R}
 
 .include <bsd.port.mk>

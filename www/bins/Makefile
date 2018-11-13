@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/www/bins/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/www/bins/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	bins
 PORTVERSION=	1.1.29
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	http://download.gna.org/bins/
 
@@ -12,7 +12,7 @@ COMMENT=	Tool to generate HTML photo albums with XML support
 
 RUN_DEPENDS=	\
 	p5-HTML-Parser>=0:www/p5-HTML-Parser \
-	convert:graphics/ImageMagick \
+	convert:graphics/ImageMagick6 \
 	p5-Text-Iconv>=0:converters/p5-Text-Iconv \
 	p5-Text-Unaccent>=0:textproc/p5-Text-Unaccent \
 	p5-TimeDate>=0:devel/p5-TimeDate \

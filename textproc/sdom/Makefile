@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/sdom/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/sdom/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	sdom
 PORTVERSION=	0.5.1
+PORTREVISION=	1
 CATEGORIES=	textproc scheme
 MASTER_SITES=	SAVANNAH
 

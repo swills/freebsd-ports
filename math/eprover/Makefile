@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/eprover/Makefile 479612 2018-09-12 16:01:03Z brooks $
+# $FreeBSD: head/math/eprover/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	eprover
 DISTVERSIONPREFIX=	E-
@@ -36,14 +36,4 @@ post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${f}
 .endfor
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-# the default compiler hangs on 10
-BUILD_DEPENDS+=	clang60:devel/llvm60
-RUN_DEPENDS+=	clang60:devel/llvm60
-CC=		clang60
-CXX=		clang++60
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

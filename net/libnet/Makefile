@@ -1,5 +1,5 @@
 # Created by: shipley@dis.org
-# $FreeBSD: head/net/libnet/Makefile 434089 2017-02-14 14:32:47Z sunpoet $
+# $FreeBSD: head/net/libnet/Makefile 483915 2018-11-03 22:16:06Z sunpoet $
 
 PORTNAME=	libnet
 PORTVERSION=	1.1.6
@@ -46,10 +46,4 @@ post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	${INSTALL_DATA} ${WRKSRC}/sample/*.c ${STAGEDIR}${EXAMPLESDIR}/
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100030
-EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-configure
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

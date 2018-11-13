@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/sfml/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/sfml/Makefile 483851 2018-11-02 21:02:29Z amdmi3 $
 
 PORTNAME=	sfml
-PORTVERSION=	2.5.0
-PORTREVISION=	1
+PORTVERSION=	2.5.1
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -36,6 +35,7 @@ MODULES_DESC=	SFML modules
 
 WINDOW_DESC=		SFML Window module
 WINDOW_CMAKE_BOOL=	SFML_BUILD_WINDOW
+WINDOW_USES=		gl
 WINDOW_USE=		XORG=x11,xrandr GL=gl
 
 GRAPHICS_DESC=		SFML Graphics module

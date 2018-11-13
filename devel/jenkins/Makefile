@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/jenkins/Makefile 483389 2018-10-29 16:49:22Z lwhsu $
+# $FreeBSD: head/devel/jenkins/Makefile 484809 2018-11-12 16:35:45Z lwhsu $
 
 PORTNAME=	jenkins
-PORTVERSION=	2.149
+PORTVERSION=	2.151
 CATEGORIES=	devel java
 MASTER_SITES=	http://mirrors.jenkins-ci.org/war/${PORTVERSION}/
 DISTNAME=	jenkins

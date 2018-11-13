@@ -1,9 +1,9 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/sysutils/filedupe/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/filedupe/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	filedupe
 PORTVERSION=	1.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://sammy.net/~sammy/hacks/
 

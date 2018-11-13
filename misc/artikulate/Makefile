@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/artikulate/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/misc/artikulate/Makefile 484140 2018-11-04 19:00:53Z tcberner $
 
 PORTNAME=	artikulate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	misc kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -14,7 +15,7 @@ USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive attica auth codecs config configwidgets coreaddons \
 		crash doctools ecm i18n kdeclarative newstuff service \
 		widgetsaddons xmlgui
-USE_QT=		core dbus gui multimedia network qml quick sql testlib widgets \
+USE_QT=		core dbus declarative gui multimedia network sql testlib widgets \
 		xml xmlpatterns \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

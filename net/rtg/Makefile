@@ -1,9 +1,9 @@
 # Created by: Brad Davis <so14k@so14k.com>
-# $FreeBSD: head/net/rtg/Makefile 438250 2017-04-11 07:17:49Z matthew $
+# $FreeBSD: head/net/rtg/Makefile 484408 2018-11-07 20:24:10Z mat $
 
 PORTNAME=	rtg
 PORTVERSION=	0.7.4
-PORTREVISION=	14
+PORTREVISION=	16
 CATEGORIES=	net
 MASTER_SITES=	SF \
 		ftp://ftpmirror.uk/freebsd-ports/rtg/

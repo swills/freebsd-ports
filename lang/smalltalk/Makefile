@@ -1,9 +1,9 @@
 # Created by: gpalmer
-# $FreeBSD: head/lang/smalltalk/Makefile 452515 2017-10-20 11:42:47Z gahr $
+# $FreeBSD: head/lang/smalltalk/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	smalltalk
 PORTVERSION=	3.2.5
-PORTREVISION=	10
+PORTREVISION=	12
 CATEGORIES=	lang
 MASTER_SITES=	GNU
 

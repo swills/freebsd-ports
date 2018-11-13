@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-stomp/Makefile 483343 2018-10-28 19:58:25Z sunpoet $
+# $FreeBSD: head/devel/rubygem-stomp/Makefile 484347 2018-11-06 21:11:48Z sunpoet $
 
 PORTNAME=	stomp
-PORTVERSION=	1.4.5
+PORTVERSION=	1.4.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

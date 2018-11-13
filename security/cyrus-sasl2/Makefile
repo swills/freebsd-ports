@@ -1,6 +1,6 @@
-# $FreeBSD: head/security/cyrus-sasl2/Makefile 458890 2018-01-13 05:57:26Z ume $
+# $FreeBSD: head/security/cyrus-sasl2/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
-PORTREVISION=	13
+PORTREVISION=	14
 
 COMMENT=	RFC 2222 SASL (Simple Authentication and Security Layer)
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/voxelands/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/voxelands/Makefile 484104 2018-11-04 16:09:54Z antoine $
 
 PORTNAME=		voxelands
 PORTVERSION=		1604.00
@@ -11,6 +11,8 @@ MAINTAINER=		dcmenche@gmail.com
 COMMENT?=		Fun-Focused voxel world game
 
 LICENSE=		GPLv3+
+
+BROKEN=			fails to build
 
 LIB_DEPENDS=		libIrrlicht.so:x11-toolkits/irrlicht \
 			libfreetype.so:print/freetype2

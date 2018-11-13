@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/security/gsasl/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/gsasl/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	gsasl
 PORTVERSION=	1.8.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	security
 MASTER_SITES=	GNU
 

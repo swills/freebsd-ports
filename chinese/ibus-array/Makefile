@@ -1,7 +1,7 @@
-# $FreeBSD: head/chinese/ibus-array/Makefile 477671 2018-08-20 20:36:35Z kwm $
+# $FreeBSD: head/chinese/ibus-array/Makefile 484540 2018-11-09 19:26:52Z swills $
 
 PORTNAME=	ibus-array
-PORTVERSION=	0.1.2
+PORTVERSION=	0.2.1
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	chinese
 

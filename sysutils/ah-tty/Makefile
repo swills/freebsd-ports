@@ -1,9 +1,9 @@
 # Created by: Michael L. Hostbaek <mich@freebsdcluster.org>
-# $FreeBSD: head/sysutils/ah-tty/Makefile 420715 2016-08-23 17:03:17Z marino $
+# $FreeBSD: head/sysutils/ah-tty/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	ah-tty
 PORTVERSION=	0.3.12
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 

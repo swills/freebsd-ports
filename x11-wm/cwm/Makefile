@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/cwm/Makefile 469955 2018-05-14 19:12:54Z tobik $
+# $FreeBSD: head/x11-wm/cwm/Makefile 483807 2018-11-02 13:32:34Z rene $
 
 PORTNAME=	cwm
 DISTVERSION=	6.3
@@ -28,7 +28,7 @@ post-patch:
 	@${REINPLACE_CMD} 's@/usr/X11R6@${LOCALBASE}@' ${WRKSRC}/cwmrc.5
 	@${REINPLACE_CMD} -e 's@strlcpy.o strlcat.o@@' \
 		-e 's@strtonum.o@@' ${WRKSRC}/Makefile
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100072
+.if ${OPSYS} == FreeBSD
 	@${REINPLACE_CMD} 's@reallocarray.o@@' ${WRKSRC}/Makefile
 .endif
 

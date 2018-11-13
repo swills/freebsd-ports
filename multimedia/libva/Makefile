@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/libva/Makefile 481144 2018-10-03 07:07:02Z madpilot $
+# $FreeBSD: head/multimedia/libva/Makefile 484788 2018-11-11 23:54:06Z jbeich $
 
 PORTNAME=	libva
 PORTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -30,6 +31,7 @@ LDFLAGS+=	-lpthread
 CFLAGS+=	-DHAVE_LINUX_INTEGER_TYPES
 
 OPTIONS_DEFINE=	DEBUG WAYLAND
+OPTIONS_DEFAULT=WAYLAND
 WAYLAND_DESC=	Support wayland protocol
 OPTIONS_SUB=	yes
 

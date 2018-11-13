@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/fdmf/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/fdmf/Makefile 484696 2018-11-11 15:38:50Z danfe $
 
 PORTNAME=	fdmf
 DISTVERSION=	0.0.9s
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	audio
 MASTER_SITES=	http://w140.com/audio/
 

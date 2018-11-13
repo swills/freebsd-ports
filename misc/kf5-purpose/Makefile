@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kf5-purpose/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/misc/kf5-purpose/Makefile 484814 2018-11-12 18:31:42Z tcberner $
 
 PORTNAME=	purpose
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -14,7 +14,7 @@ USES=		cmake:outsource compiler:c++11-lang gettext \
 		kde:5 pkgconfig qt:5 tar:xz
 USE_GNOME=	intltool
 USE_KDE=	config coreaddons ecm i18n kdeclarative kio service widgetsaddons
-USE_QT=		concurrent core dbus gui network qml widgets xml \
+USE_QT=		concurrent core dbus declarative gui network widgets xml \
 		buildtools_build qmake_build
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/pam-modules/Makefile 462333 2018-02-19 16:20:42Z mat $
+# $FreeBSD: head/security/pam-modules/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	pam-modules
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://download.gnu.org.ua/pub/release/pam-modules/
 

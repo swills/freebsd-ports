@@ -1,5 +1,5 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/dns/credns/Makefile 462129 2018-02-17 11:59:54Z sunpoet $
+# $FreeBSD: head/dns/credns/Makefile 484599 2018-11-10 10:09:48Z mat $
 
 PORTNAME=	credns
 PORTVERSION=	0.2.10
@@ -13,7 +13,7 @@ COMMENT=	Verifier performing validation in the DNS notify/transfer-chain
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_SSL=	openssl-devel
+BROKEN_SSL=	openssl111
 
 USE_RC_SUBR=	credns
 

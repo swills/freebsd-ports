@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/p5-Net-NSCA-Client/Makefile 451825 2017-10-12 08:10:57Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-Net-NSCA-Client/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	Net-NSCA-Client
 PORTVERSION=	0.009002
@@ -7,7 +7,7 @@ CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for sending passive service checks to nagios
 
 RUN_DEPENDS=	p5-Const-Fast>=0.013:devel/p5-Const-Fast \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/opendbviewer/Makefile 480165 2018-09-20 11:19:13Z tobik $
+# $FreeBSD: head/databases/opendbviewer/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	opendbviewer
 PORTVERSION=	1.1.0
@@ -10,7 +10,7 @@ COMMENT=	Simple database explorer
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	convert:graphics/ImageMagick
+BUILD_DEPENDS=	convert:graphics/ImageMagick6
 
 USES=		cmake:outsource compiler:c++11-lang qt:5
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/textproc/p5-XML-Entities/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-XML-Entities/Makefile 484353 2018-11-06 21:13:54Z rene $
 
 PORTNAME=	XML-Entities
 PORTVERSION=	1.0002
@@ -7,7 +7,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generic classes for simplistic and perlish handling of XML data
 
 BUILD_DEPENDS=	${RUN_DEPENDS}

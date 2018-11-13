@@ -1,9 +1,9 @@
 # Created by: Adrian Wontroba <aw1@stade.co.uk>
-# $FreeBSD: head/sysutils/xlogmaster/Makefile 481888 2018-10-12 09:19:04Z antoine $
+# $FreeBSD: head/sysutils/xlogmaster/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	xlogmaster
 PORTVERSION=	1.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 

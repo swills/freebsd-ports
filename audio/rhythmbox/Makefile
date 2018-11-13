@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/rhythmbox/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/audio/rhythmbox/Makefile 483887 2018-11-03 11:58:10Z tijl $
 
 PORTNAME=	rhythmbox
 PORTVERSION=	3.4.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

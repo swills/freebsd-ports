@@ -1,5 +1,5 @@
 # Created by: Nate Underwood <natey@natey.com>
-# $FreeBSD: head/mail/libpst/Makefile 476380 2018-08-04 21:42:59Z sunpoet $
+# $FreeBSD: head/mail/libpst/Makefile 484640 2018-11-10 19:57:07Z kwm $
 
 PORTNAME=	libpst
 PORTVERSION=	0.6.72
@@ -28,11 +28,11 @@ USES=		gmake iconv libtool pathfix pkgconfig
 
 PORTDOCS=	*
 
-PST2DII_BUILD_DEPENDS=	convert:graphics/ImageMagick
+PST2DII_BUILD_DEPENDS=	convert:graphics/ImageMagick6
 PST2DII_CONFIGURE_OFF=	--enable-dii=no
 PST2DII_CONFIGURE_ON=	--enable-dii=yes
 PST2DII_LIB_DEPENDS=	libgd.so:graphics/gd
-PST2DII_RUN_DEPENDS=	convert:graphics/ImageMagick
+PST2DII_RUN_DEPENDS=	convert:graphics/ImageMagick6
 
 post-patch:
 	@${GREP} -lr malloc.h ${WRKSRC}/ | ${XARGS} ${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|g'

@@ -1,9 +1,9 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/openshot/Makefile 481803 2018-10-11 09:38:40Z amdmi3 $
+# $FreeBSD: head/multimedia/openshot/Makefile 484273 2018-11-06 01:50:26Z jbeich $
 
 PORTNAME=	openshot
 PORTVERSION=	1.4.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	multimedia
 MASTER_SITES=	http://launchpad.net/openshot/${PORTVERSION:C/\.[0-9]+$//}/${PORTVERSION}/+download/
 

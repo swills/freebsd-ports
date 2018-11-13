@@ -1,8 +1,8 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/www/mod_setenvifplus/Makefile 483684 2018-11-01 15:53:53Z joneum $
+# $FreeBSD: head/www/mod_setenvifplus/Makefile 484689 2018-11-11 11:50:11Z joneum $
 
 PORTNAME=	mod_setenvifplus
-PORTVERSION=	0.22
+PORTVERSION=	0.37
 CATEGORIES=	www
 MASTER_SITES=	SF/modsetenvifplus
 EXTRACT_SUFX=	-src.tar.gz
@@ -12,8 +12,9 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Allows setting environment variables based on request attributes
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/doc/LICENSE.txt
 
-USES=		apache:2.2+
+USES=		apache:2.4
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SRC_FILE=	${WRKSRC}/apache2/${MODULENAME}.c

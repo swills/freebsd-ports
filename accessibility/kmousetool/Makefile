@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/kmousetool/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/accessibility/kmousetool/Makefile 484573 2018-11-10 07:22:09Z tcberner $
 
 PORTNAME=	kmousetool
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Automatic mouse click tool for KDE
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons \
 		ecm i18n iconthemes notifications widgetsaddons xmlgui
 USE_QT=		core dbus gui phonon4 widgets xml \

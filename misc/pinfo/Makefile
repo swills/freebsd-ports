@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/misc/pinfo/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/misc/pinfo/Makefile 484628 2018-11-10 18:12:57Z bapt $
 
 PORTNAME=	pinfo
 PORTVERSION=	0.6.10
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	misc
 MASTER_SITES=	GENTOO \
 		http://alioth.debian.org/frs/download.php/file/3351/
