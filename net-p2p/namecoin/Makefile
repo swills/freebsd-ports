@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	namecoin
-PORTVERSION=	0.16.2
+PORTVERSION=	0.17.0
 DISTVERSIONPREFIX=	nc
 PORTEPOCH=	1
 CATEGORIES=	net-p2p dns
@@ -102,10 +102,8 @@ PLIST_FILES?=	bin/namecoin-qt share/applications/namecoin-qt.desktop \
 .if defined(SLAVE_PORT) && ${SLAVE_PORT} == "no"
 
 post-install:
-	${REINPLACE_CMD} -e 's/bitcoin/namecoin/g;s/Bitcoin/Namecoin/g' \
-		${WRKSRC}/contrib/debian/bitcoin-qt.desktop
-	${INSTALL} ${WRKSRC}/contrib/debian/bitcoin-qt.desktop \
-		${STAGEDIR}${PREFIX}/share/applications/namecoin-qt.desktop
+	${INSTALL} ${FILESDIR}/namecoin-qt.desktop \
+		${STAGEDIR}${PREFIX}/share/applications/
 	${LOCALBASE}/bin/svg2png -w128 -h128 ${WRKSRC_graphics}/svg/namecoin-logo.svg \
 		${STAGEDIR}${PREFIX}/share/pixmaps/namecoin128.png
 
