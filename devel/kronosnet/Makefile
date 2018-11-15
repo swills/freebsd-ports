@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	kronosnet
-PORTVERSION=	1.3
-PORTREVISION=	2
+PORTVERSION=	1.5
 CATEGORIES=	devel
 MASTER_SITES=	https://kronosnet.org/releases/
 
@@ -38,8 +37,12 @@ MANPAGES_CONFIGURE_ENABLE=	man
 .include <bsd.port.options.mk>
 
 .if ${SSL_DEFAULT} == base
-EXTRA_PATCHES=	${.CURDIR}/files/extra-patch-ssl-base-configure.ac
 CONFIGURE_ENV=	openssl_CFLAGS=-I/usr/include openssl_LIBS=-lcrypto
+.if ${OSVERSION} >= 1200085
+EXTRA_PATCHES=	${.CURDIR}/files/extra-patch-ssl-openssl11-configure.ac
+.else
+EXTRA_PATCHES=	${.CURDIR}/files/extra-patch-ssl-base-configure.ac
+.endif
 .elif ${SSL_DEFAULT} == libressl
 EXTRA_PATCHES=	${.CURDIR}/files/extra-patch-ssl-libressl-configure.ac
 .endif
