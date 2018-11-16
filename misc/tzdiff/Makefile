@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	tzdiff
-PORTVERSION=	0.9
+PORTVERSION=	0.91
 CATEGORIES=	misc
 
 MAINTAINER=	naito.yuichiro@gmail.com
