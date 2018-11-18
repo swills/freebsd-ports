@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/ykpers/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/security/ykpers/Makefile 485085 2018-11-16 16:54:14Z philip $
 
 PORTNAME=	ykpers
-PORTVERSION=	1.18.0
-PORTREVISION=	2
+PORTVERSION=	1.19.0
 CATEGORIES=	security
 MASTER_SITES=	http://opensource.yubico.com/yubikey-personalization/releases/
 

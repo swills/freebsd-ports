@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-kafo_parsers/Makefile 430740 2017-01-06 20:02:31Z sunpoet $
+# $FreeBSD: head/devel/rubygem-kafo_parsers/Makefile 485172 2018-11-17 17:34:17Z sunpoet $
 
 PORTNAME=	kafo_parsers
-PORTVERSION=	0.1.6
+PORTVERSION=	1.0.0
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 
@@ -13,8 +13,9 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	rubygem-json>=0:devel/rubygem-json
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

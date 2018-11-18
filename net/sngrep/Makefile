@@ -1,8 +1,8 @@
 # Created by: Talal Al Dik (tad@vif.com)
-# $FreeBSD: head/net/sngrep/Makefile 460829 2018-02-03 17:22:30Z dbaio $
+# $FreeBSD: head/net/sngrep/Makefile 485183 2018-11-17 17:48:50Z riggs $
 
 PORTNAME=	sngrep
-PORTVERSION=	1.4.5
+PORTVERSION=	1.4.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

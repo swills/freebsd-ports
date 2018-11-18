@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/fasttracker2/Makefile 484861 2018-11-13 07:55:29Z ehaupt $
+# $FreeBSD: head/audio/fasttracker2/Makefile 485070 2018-11-16 09:59:49Z ehaupt $
 
 PORTNAME=	fasttracker2
-DISTVERSION=	0.1-b114
+DISTVERSION=	0.1-b115
 CATEGORIES=	audio
 MASTER_SITES=	https://16-bits.org/ \
 		LOCAL/ehaupt

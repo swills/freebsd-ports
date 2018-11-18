@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/zxing-cpp/Makefile 474236 2018-07-09 08:05:30Z yuri $
+# $FreeBSD: head/textproc/zxing-cpp/Makefile 485000 2018-11-15 04:04:44Z linimon $
 
 PORTNAME=	zxing-cpp
 DISTVERSION=	0.20180320
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libopencv_core.so:graphics/opencv-core \
 		libopencv_photo.so:graphics/opencv
 
-USES=		cmake:outsource iconv
+USES=		cmake:outsource compiler:c++11-lang iconv
 USE_GITHUB=	yes
 GH_ACCOUNT=	glassechidna
 GH_TAGNAME=	5aad474

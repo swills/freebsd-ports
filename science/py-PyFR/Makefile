@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-PyFR/Makefile 482276 2018-10-17 07:27:27Z yuri $
+# $FreeBSD: head/science/py-PyFR/Makefile 485001 2018-11-15 04:23:38Z yuri $
 
 PORTNAME=	PyFR
 DISTVERSION=	1.8.0
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	http://www.pyfr.org/download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

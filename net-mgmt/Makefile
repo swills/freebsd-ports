@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 481767 2018-10-10 21:01:09Z rene $
+# $FreeBSD: head/net-mgmt/Makefile 485099 2018-11-16 20:28:58Z rene $
 #
 
     COMMENT = Network management tools
@@ -389,7 +389,6 @@
     SUBDIR += unifi-lts
     SUBDIR += unifi5
     SUBDIR += victorops-nagios
-    SUBDIR += vidalia
     SUBDIR += virt-viewer
     SUBDIR += wdiag
     SUBDIR += weplab

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/liblas/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/devel/liblas/Makefile 485002 2018-11-15 06:10:03Z tobik $
 
 PORTNAME=	liblas
 PORTVERSION=	1.8.1
@@ -15,8 +15,6 @@ BROKEN_aarch64=		fails to compile: file liblas/detail/endian.hpp needs to be set
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libgeotiff.so:graphics/libgeotiff
-
-CONFLICTS=	liblas12-1.2*
 
 PORTSCOUT=	skipv:progress-20071229
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 484893 2018-11-13 18:35:02Z rm $
+# $FreeBSD: head/science/Makefile 485059 2018-11-16 02:55:54Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -164,6 +164,7 @@
     SUBDIR += openbabel
     SUBDIR += openkim
     SUBDIR += openmx
+    SUBDIR += opensim-core
     SUBDIR += openstructure
     SUBDIR += p5-Algorithm-SVMLight
     SUBDIR += p5-Chemistry-3DBuilder
@@ -279,6 +280,7 @@
     SUBDIR += sigrok-firmware-fx2lafw
     SUBDIR += sigrok-firmware-utils
     SUBDIR += silo
+    SUBDIR += simbody
     SUBDIR += simint
     SUBDIR += simlib
     SUBDIR += simsmith

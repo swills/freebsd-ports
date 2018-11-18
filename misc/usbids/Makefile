@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/misc/usbids/Makefile 478370 2018-08-29 19:08:06Z sunpoet $
+# $FreeBSD: head/misc/usbids/Makefile 485021 2018-11-15 19:06:07Z sunpoet $
 
 PORTNAME=	usbids
-PORTVERSION=	20180815
+PORTVERSION=	20181113
 CATEGORIES=	misc
 MASTER_SITES=	LOCAL/sunpoet
 

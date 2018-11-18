@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hyperrogue/Makefile 482936 2018-10-24 20:23:55Z amdmi3 $
+# $FreeBSD: head/games/hyperrogue/Makefile 485207 2018-11-17 23:30:04Z amdmi3 $
 
 PORTNAME=	hyperrogue
-PORTVERSION=	10.4w
+PORTVERSION=	10.4z
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

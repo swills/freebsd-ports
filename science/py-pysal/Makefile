@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/py-pysal/Makefile 475761 2018-07-29 19:17:58Z sunpoet $
+# $FreeBSD: head/science/py-pysal/Makefile 485157 2018-11-17 17:32:14Z sunpoet $
 
 PORTNAME=	pysal
 PORTVERSION=	1.14.4
@@ -14,14 +14,15 @@ COMMENT=	Cross-platform library of spatial analysis functions
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.3,1:math/py-numpy@${PY_FLAVOR} \
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.3,1:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scipy>=0.11:science/py-scipy@${PY_FLAVOR}
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USE_PYTHON=	autoplist concurrent distutils
 USES=		python
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e '/check_stable=/ s|True|False|' ${WRKSRC}/pysal/config.py

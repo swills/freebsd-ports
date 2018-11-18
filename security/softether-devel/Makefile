@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/softether-devel/Makefile 484276 2018-11-06 05:44:42Z meta $
+# $FreeBSD: head/security/softether-devel/Makefile 484921 2018-11-14 13:34:16Z meta $
 
 PORTNAME=	softether
-DISTVERSION=	4.27-9668-beta
+DISTVERSION=	4.28-9669-beta
 CATEGORIES=	security
-MASTER_SITES=	https://www.softether-download.com/files/softether/v${DISTVERSION}-2018.05.29-tree/Source_Code/
+MASTER_SITES=	https://www.softether-download.com/files/softether/v${DISTVERSION}-2018.09.11-tree/Source_Code/
 PKGNAMESUFFIX=	-devel
 DISTNAME=	${PORTNAME}-src-v${DISTVERSION}
 

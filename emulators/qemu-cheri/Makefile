@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-cheri/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/emulators/qemu-cheri/Makefile 484948 2018-11-14 21:41:14Z brooks $
 
 PORTNAME=	qemu
 PORTVERSION=	0.d${SNAPDATE}
@@ -22,10 +22,10 @@ GH_TAGNAME=	${QEMU_COMMIT}
 GH_TUPLE=	qemu:keycodemapdb:6b3d716:qemu/ui/keycodemapdb
 
 HAS_CONFIGURE=	yes
-USES=	gettext-runtime gmake libtool makeinfo pkgconfig python:2.7,build
+USES=	gettext-runtime gmake gnome libtool makeinfo pkgconfig python:2.7,build
 USE_XORG=	pixman
-USE_GNOME+=	glib20
-ONLY_FOR_ARCHS=	amd64 i386 powerpc powerpc64
+USE_GNOME+=	glib20 libxml2
+ONLY_FOR_ARCHS=	amd64 powerpc64
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Event/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Event/Makefile 485167 2018-11-17 17:33:36Z sunpoet $
 
 PORTNAME=	Event
-PORTVERSION=	1.26
+PORTVERSION=	1.27
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

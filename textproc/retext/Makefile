@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/retext/Makefile 475277 2018-07-24 20:31:48Z arved $
+# $FreeBSD: head/textproc/retext/Makefile 485193 2018-11-17 20:29:33Z arved $
 
 PORTNAME=	retext
 PORTVERSION=	7.0.0
@@ -18,7 +18,7 @@ USES=		python:3.2+ desktop-file-utils pyqt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	retext-project
 GH_PROJECT=	retext
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils noflavors
 USE_PYQT=	core_run sip_run gui_run widgets_run printsupport_run \
 		network_run
 

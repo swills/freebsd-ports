@@ -1,12 +1,12 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/math/clrng/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/math/clrng/Makefile 484988 2018-11-15 01:33:52Z jmd $
 
 PORTNAME=	clrng
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.0-beta
 CATEGORIES=	math
 
-MAINTAINER=	dieterich@ogolem.org
+MAINTAINER=	jmd@FreeBSD.org
 COMMENT=	Library for uniform random number generation in OpenCL
 
 LICENSE=	BSD2CLAUSE

@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/textproc/uncrustify/Makefile 470253 2018-05-18 00:31:29Z amdmi3 $
+# $FreeBSD: head/textproc/uncrustify/Makefile 485209 2018-11-17 23:32:03Z amdmi3 $
 
 PORTNAME=	uncrustify
-PORTVERSION=	0.67
+PORTVERSION=	0.68
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	textproc
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/sbcl/Makefile 483835 2018-11-02 19:19:52Z krion $
+# $FreeBSD: head/lang/sbcl/Makefile 484935 2018-11-14 17:58:42Z krion $
 
 # All *-sbcl ports and any other port [1] with SBCL fasl files must get a
 # PORTREVISION bump when lang/sbcl is updated.  The compiled fasl files are
@@ -18,10 +18,9 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	krion@FreeBSD.org
 COMMENT=	Common Lisp development system derived from the CMU CL system
 
-LICENSE=	${PORTNAME}
-LICENSE_NAME=	public domain | FreeBSD
+LICENSE=	PD BSD2CLAUSE
+LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/COPYING
-LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept dist-sell pkg-sell
 
 ONLY_FOR_ARCHS=	amd64 i386
 

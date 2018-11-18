@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/ansible/Makefile 484164 2018-11-05 02:07:09Z lifanov $
+# $FreeBSD: head/sysutils/ansible/Makefile 485109 2018-11-17 01:26:53Z lifanov $
 
 PORTNAME=	ansible
-PORTVERSION?=	2.7.1
+PORTVERSION?=	2.7.2
 PORTREVISION?=	0
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://releases.ansible.com/ansible/

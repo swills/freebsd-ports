@@ -1,15 +1,14 @@
-# $FreeBSD: head/security/cyrus-sasl2-ldapdb/Makefile 412277 2016-03-31 17:35:26Z ume $
+# $FreeBSD: head/security/cyrus-sasl2-ldapdb/Makefile 485191 2018-11-17 18:47:45Z ume $
 
 PKGNAMESUFFIX=	-ldapdb
-PORTREVISION=	5
 
 COMMENT=	SASL LDAPDB auxprop plugin
+
+CYRUS_CONFIGURE_ARGS=	--enable-ldapdb --with-ldap=${LOCALBASE}
 
 OPTIONS_DEFINE=		OPENLDAP_SASL
 OPENLDAP_SASL_DESC=	OpenLDAP client with SASL2 support
 OPENLDAP_SASL_VARS=	WANT_OPENLDAP_SASL=yes
-
-CYRUS_CONFIGURE_ARGS=	--enable-ldapdb --with-ldap=${LOCALBASE}
 
 USE_OPENLDAP=	yes
 .if defined(WITH_OPENLDAP_VER)

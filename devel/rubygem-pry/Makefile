@@ -1,8 +1,8 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/devel/rubygem-pry/Makefile 484246 2018-11-05 21:46:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-pry/Makefile 485163 2018-11-17 17:33:03Z sunpoet $
 
 PORTNAME=	pry
-PORTVERSION=	0.12.0
+PORTVERSION=	0.12.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

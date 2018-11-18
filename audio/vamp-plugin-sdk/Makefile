@@ -1,10 +1,10 @@
 # Created by: mathias.picker@gmx.de
-# $FreeBSD: head/audio/vamp-plugin-sdk/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/audio/vamp-plugin-sdk/Makefile 484943 2018-11-14 21:16:02Z acm $
 
 PORTNAME=	vamp-plugin-sdk
-PORTVERSION=	2.6
+PORTVERSION=	2.7.1
 CATEGORIES=	audio
-MASTER_SITES=	https://code.soundsoftware.ac.uk/attachments/download/1520/
+MASTER_SITES=	https://code.soundsoftware.ac.uk/attachments/download/2206/
 
 MAINTAINER=	uddka@student.kit.edu
 COMMENT=	Vamp audio analysis plugin SDK

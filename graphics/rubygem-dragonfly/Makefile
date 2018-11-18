@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/graphics/rubygem-dragonfly/Makefile 465478 2018-03-24 21:11:35Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-dragonfly/Makefile 485035 2018-11-15 19:08:06Z sunpoet $
 
 PORTNAME=	dragonfly
-PORTVERSION=	1.1.5
+PORTVERSION=	1.2.0
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 
@@ -16,9 +16,10 @@ RUN_DEPENDS=	rubygem-addressable>=2.3:www/rubygem-addressable \
 		rubygem-multi_json>=1.0:devel/rubygem-multi_json \
 		rubygem-rack>=1.3:www/rubygem-rack
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 SHEBANG_FILES=	dev/test_rails
 ruby_OLD_CMD=	"env ruby"

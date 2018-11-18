@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/pecl-gupnp/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net/pecl-gupnp/Makefile 485154 2018-11-17 17:31:49Z sunpoet $
 
 PORTNAME=	gupnp
 PORTVERSION=	1.0.0
@@ -10,6 +10,10 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	GUPnP wrapper extension
 
 LICENSE=	PHP301
+
+BROKEN=		does not build with latest gssdp and gupnp
+DEPRECATED=	does not build with latest gssdp and gupnp
+EXPIRATION_DATE=2018-11-30
 
 LIB_DEPENDS=	libgupnp-1.0.so:net/gupnp
 

@@ -1,8 +1,8 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/fpart/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/fpart/Makefile 485050 2018-11-15 21:31:52Z martymac $
 
 PORTNAME=	fpart
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION} \
 		http://contribs.martymac.org/fpart/

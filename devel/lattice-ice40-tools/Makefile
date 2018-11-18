@@ -1,8 +1,8 @@
 # Created by: Johnny Sorocil <jsorocil@gmail.com>
-# $FreeBSD: head/devel/lattice-ice40-tools/Makefile 471848 2018-06-06 14:52:57Z tobik $
+# $FreeBSD: head/devel/lattice-ice40-tools/Makefile 484933 2018-11-14 16:03:21Z tobik $
 
 PORTNAME=	lattice-ice40-tools
-PORTVERSION=	g20180310
+PORTVERSION=	g20181021
 CATEGORIES=	devel
 
 MAINTAINER=	jsorocil@gmail.com

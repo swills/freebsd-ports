@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-yaml/Makefile 482000 2018-10-13 17:50:36Z dbaio $
+# $FreeBSD: head/textproc/pecl-yaml/Makefile 484975 2018-11-14 23:29:38Z dbaio $
 
 PORTNAME=	yaml
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	textproc pear
 
 MAINTAINER=	dbaio@FreeBSD.org

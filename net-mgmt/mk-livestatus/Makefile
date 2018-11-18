@@ -1,8 +1,9 @@
 # Created by: Peter C. Lai <cowbert@gmail.com>
-# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 481085 2018-10-01 23:39:33Z swills $
+# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 485075 2018-11-16 12:49:05Z tobik $
 
 PORTNAME=	mk-livestatus
 PORTVERSION=	1.2.8p20
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://mathias-kettner.de/download/
 DIST_SUBDIR=	check_mk
@@ -38,7 +39,7 @@ EXAMPLES_USES=	python
 NAGIOS3_DESC=	build for nagios-3.x
 NAGIOS4_DESC=	build for nagios-4.x
 
-NAGIOS4_CONFIGURE_WITH=nagios4
+NAGIOS4_CONFIGURE_ON=	--with-nagios4
 
 # perl api is really outdated, do not install!
 # Actual version can be found on CPAN

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Prime-Util/Makefile 484712 2018-11-11 18:18:41Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Prime-Util/Makefile 485152 2018-11-17 17:31:33Z sunpoet $
 
 PORTNAME=	Math-Prime-Util
-PORTVERSION=	0.72
+PORTVERSION=	0.73
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

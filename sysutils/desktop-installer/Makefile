@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/desktop-installer/Makefile 482729 2018-10-22 02:29:03Z jwb $
+# $FreeBSD: head/sysutils/desktop-installer/Makefile 485206 2018-11-17 22:19:39Z swills $
 
 PORTNAME=	desktop-installer
-DISTVERSION=	0.6.2
+DISTVERSION=	0.6.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 
@@ -19,6 +19,7 @@ NO_ARCH=	yes
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/sbin
+	${INSTALL_SCRIPT} ${WRKSRC}/Scripts/battery_shutdown.sh ${STAGEDIR}${PREFIX}/sbin
 	${INSTALL_MAN} ${WRKSRC}/Doc/${PORTNAME}.man \
 		${STAGEDIR}${PREFIX}/man/man1/${PORTNAME}.1
 	@${MKDIR} ${STAGEDIR}${DATADIR}

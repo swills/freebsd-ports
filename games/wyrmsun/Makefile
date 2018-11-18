@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/wyrmsun/Makefile 483850 2018-11-02 20:51:26Z amdmi3 $
+# $FreeBSD: head/games/wyrmsun/Makefile 485135 2018-11-17 13:14:43Z amdmi3 $
 
 PORTNAME=	wyrmsun
-PORTVERSION=	3.4.0
+PORTVERSION=	3.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

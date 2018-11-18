@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/antlr4/Makefile 460883 2018-02-04 10:07:46Z pi $
+# $FreeBSD: head/devel/antlr4/Makefile 485123 2018-11-17 09:30:25Z amdmi3 $
 
 PORTNAME=	antlr4
 PORTVERSION=	4.7.1
@@ -14,6 +14,7 @@ COMMENT=	ANother Tool for Language Recognition
 LICENSE=	BSD3CLAUSE
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 USE_JAVA=	yes
 JAVA_VERSION=	1.8+
 INSTALL_JAR=	${DISTFILES}

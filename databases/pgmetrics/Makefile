@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pgmetrics/Makefile 483813 2018-11-02 14:54:56Z girgen $
+# $FreeBSD: head/databases/pgmetrics/Makefile 485058 2018-11-16 01:07:01Z girgen $
 
 PORTNAME=	pgmetrics
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.1
 DISTVERSIONPREFIX=v
 CATEGORIES=	databases
 

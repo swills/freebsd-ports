@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/libtorrent/Makefile 484489 2018-11-08 23:23:53Z dbaio $
+# $FreeBSD: head/net-p2p/libtorrent/Makefile 484974 2018-11-14 23:27:22Z dbaio $
 
 PORTNAME=	libtorrent
 PORTVERSION=	0.13.7
@@ -6,7 +6,7 @@ PORTREVISION=	2
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://rtorrent.net/downloads/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	BitTorrent Library written in C++
 
 LICENSE=	GPLv2+

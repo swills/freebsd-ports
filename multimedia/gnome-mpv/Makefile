@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/gnome-mpv/Makefile 480918 2018-09-29 20:35:03Z jbeich $
+# $FreeBSD: head/multimedia/gnome-mpv/Makefile 484946 2018-11-14 21:39:16Z jbeich $
 
 PORTNAME=	gnome-mpv
 PORTVERSION=	0.15
@@ -13,7 +13,7 @@ LICENSE=	GPLv3+
 LIB_DEPENDS=	libepoxy.so:graphics/libepoxy \
 		libmpv.so:multimedia/mpv
 
-USES=		desktop-file-utils gettext-tools gmake pkgconfig tar:xz
+USES=		compiler:c11 desktop-file-utils gettext-tools gmake pkgconfig tar:xz
 USE_GNOME=	cairo gtk30
 GNU_CONFIGURE=	yes
 GLIB_SCHEMAS=	io.github.GnomeMpv.gschema.xml \

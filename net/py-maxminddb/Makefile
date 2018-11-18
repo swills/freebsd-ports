@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbé <olivier@FreeBSD.org>
-# $FreeBSD: head/net/py-maxminddb/Makefile 479274 2018-09-09 07:11:25Z olivier $
+# $FreeBSD: head/net/py-maxminddb/Makefile 485181 2018-11-17 17:46:03Z sunpoet $
 
 PORTNAME=	maxminddb
 PORTVERSION=	1.4.1
@@ -23,9 +23,7 @@ GH_PROJECT=	MaxMind-DB-Reader-python
 
 USE_PYTHON=	autoplist distutils
 
-.include <bsd.port.pre.mk>
-
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/maxminddb/extension.so
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

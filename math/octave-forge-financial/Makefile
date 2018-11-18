@@ -1,8 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-financial/Makefile 480710 2018-09-26 00:59:08Z stephen $
+# $FreeBSD: head/math/octave-forge-financial/Makefile 485097 2018-11-16 19:49:50Z stephen $
 
 PORTNAME=	octave-forge-financial
-PORTVERSION=	0.5.2
+PORTVERSION=	0.5.3
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

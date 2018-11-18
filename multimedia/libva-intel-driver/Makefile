@@ -1,9 +1,9 @@
 # Created by: Manuel Creach <manuel.creach@me.com>
-# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 484415 2018-11-07 22:40:27Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 485140 2018-11-17 16:24:35Z madpilot $
 
 PORTNAME=	libva-intel-driver
 PORTVERSION=	2.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -31,7 +31,6 @@ ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	Driver for hardware present only on intel i386 and amd64 CPUs
 
 OPTIONS_DEFINE=	HYBRID
-OPTIONS_DEFAULT=HYBRID
 
 HYBRID_DESC=	Hybrid codec support (e.g., VP9 decoding on Skylake)
 HYBRID_RUN_DEPENDS=	${LOCALBASE}/lib/dri/hybrid_drv_video.so:multimedia/libva-intel-hybrid-driver

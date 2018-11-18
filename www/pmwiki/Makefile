@@ -1,8 +1,8 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/www/pmwiki/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/www/pmwiki/Makefile 485108 2018-11-17 01:20:05Z joneum $
 
 PORTNAME=	pmwiki
-PORTVERSION=	2.2.109
+PORTVERSION=	2.2.110
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.pmwiki.org/pub/pmwiki/

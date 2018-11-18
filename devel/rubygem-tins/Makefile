@@ -1,12 +1,12 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tins/Makefile 484745 2018-11-11 18:23:21Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tins/Makefile 485164 2018-11-17 17:33:11Z sunpoet $
 
 PORTNAME=	tins
-PORTVERSION=	1.19.0
+PORTVERSION=	1.20.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Useful tools library in Ruby
 
 LICENSE=	MIT

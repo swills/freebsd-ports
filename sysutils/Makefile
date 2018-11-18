@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 484800 2018-11-12 10:59:10Z dch $
+# $FreeBSD: head/sysutils/Makefile 485099 2018-11-16 20:28:58Z rene $
 #
 
     COMMENT = System utilities
@@ -321,7 +321,6 @@
     SUBDIR += facter
     SUBDIR += fanout
     SUBDIR += farbot
-    SUBDIR += fastest_cvsup
     SUBDIR += fatback
     SUBDIR += fcode-utils
     SUBDIR += fconfig

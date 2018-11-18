@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11/yelp/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11/yelp/Makefile 485089 2018-11-16 17:04:40Z amdmi3 $
 
 PORTNAME=	yelp
 PORTVERSION=	3.28.1
@@ -10,7 +10,7 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Help browser for the GNOME 3 desktop
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	yelp-xsl>=0:textproc/yelp-xsl \

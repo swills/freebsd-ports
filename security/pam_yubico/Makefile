@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/pam_yubico/Makefile 471126 2018-05-30 08:34:19Z amdmi3 $
+# $FreeBSD: head/security/pam_yubico/Makefile 485086 2018-11-16 16:55:28Z philip $
 
 PORTNAME=	pam_yubico
-PORTVERSION=	2.16
-PORTREVISION=	2
+PORTVERSION=	2.26
 CATEGORIES=	security
 MASTER_SITES=	http://opensource.yubico.com/yubico-pam/releases/
 

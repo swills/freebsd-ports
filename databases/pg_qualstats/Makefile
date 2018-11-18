@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pg_qualstats/Makefile 484367 2018-11-06 23:46:05Z girgen $
+# $FreeBSD: head/databases/pg_qualstats/Makefile 485068 2018-11-16 09:46:38Z girgen $
 
 PORTNAME=	pg_qualstats
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	databases
 
 MAINTAINER=	girgen@FreeBSD.org

@@ -1,11 +1,11 @@
-# $FreeBSD: head/net-p2p/radarr/Makefile 472190 2018-06-11 16:23:48Z feld $
+# $FreeBSD: head/net-p2p/radarr/Makefile 484968 2018-11-14 22:18:37Z feld $
 
 PORTNAME=	radarr
-PORTVERSION=	0.2.0.1120
+PORTVERSION=	0.2.0.1217
 PORTREVISION=	0
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Radarr/Radarr/releases/download/v${PORTVERSION}/
-DISTNAME=	Radarr.develop.${PORTVERSION}.linux
+DISTNAME=	Radarr.v${PORTVERSION}.linux
 
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Movie Library Manager for Usenet and BitTorrent users

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/rubygem-ruby-graphviz/Makefile 436744 2017-03-22 21:36:40Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-ruby-graphviz/Makefile 485036 2018-11-15 19:08:14Z sunpoet $
 
 PORTNAME=	ruby-graphviz
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.4
 CATEGORIES=	graphics ruby rubygems
 MASTER_SITES=	RG
 
@@ -11,12 +11,12 @@ COMMENT=	Ruby Interface to the GraphViz Graphing Tool
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${LOCALBASE}/bin/gxl2dot:graphics/graphviz
-
-NO_ARCH=	yes
+RUN_DEPENDS=	gxl2dot:graphics/graphviz
 
 USE_RUBY=	yes
 USES=		gem
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/dot2ruby bin/gem2gv bin/git2gv bin/ruby2gv bin/xml2gv
 

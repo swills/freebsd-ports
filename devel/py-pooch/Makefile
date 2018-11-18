@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pooch/Makefile 478368 2018-08-29 19:07:55Z sunpoet $
+# $FreeBSD: head/devel/py-pooch/Makefile 484952 2018-11-14 21:43:29Z sunpoet $
 
 PORTNAME=	pooch
 PORTVERSION=	0.1
@@ -14,6 +14,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}packaging>=0:devel/py-packaging@${PY_FLAVOR} \
+		${PY_PATHLIB} \
 		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
@@ -24,8 +25,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3500
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports.tempfile>=0:devel/py-backports.tempfile@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pathlib>=0:devel/py-pathlib@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports.tempfile>=0:devel/py-backports.tempfile@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

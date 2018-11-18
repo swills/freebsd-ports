@@ -1,9 +1,9 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/shells/jailkit/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/shells/jailkit/Makefile 485007 2018-11-15 08:56:15Z tobik $
 
 PORTNAME=	jailkit
 PORTVERSION=	2.19
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	shells
 MASTER_SITES=	http://olivier.sessink.nl/jailkit/ \
 		http://www.sfr-fresh.com/unix/privat/
@@ -19,7 +19,14 @@ CONFIGURE_ENV=	PYTHONINTERPRETER=${PYTHON_CMD}
 
 PORTDOCS=	COPYRIGHT README.txt
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS PROCMAIL
+OPTIONS_SUB=	yes
+
+PROCMAIL_DESC=	Build procmail(1) wrapper
+
+PROCMAIL_CONFIGURE_ENV_OFF=	ac_cv_path_PROCMAILPATH=no
+PROCMAIL_BUILD_DEPENDS=	procmail:mail/procmail
+PROCMAIL_RUN_DEPENDS=	procmail:mail/procmail
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
@@ -29,5 +36,8 @@ post-install:
 		${STAGEDIR}${PREFIX}/sbin/jk_chrootlaunch \
 		${STAGEDIR}${PREFIX}/sbin/jk_chrootsh \
 		${STAGEDIR}${PREFIX}/sbin/jk_lsh
+
+post-install-PROCMAIL-on:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/jk_procmailwrapper
 
 .include <bsd.port.mk>

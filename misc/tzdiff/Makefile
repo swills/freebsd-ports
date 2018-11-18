@@ -1,8 +1,8 @@
 # Created by: Naito Yuichiro <naito.yuichiro@gmail.com>
-# $FreeBSD: head/misc/tzdiff/Makefile 479008 2018-09-05 03:45:53Z swills $
+# $FreeBSD: head/misc/tzdiff/Makefile 485061 2018-11-16 07:31:17Z tobik $
 
 PORTNAME=	tzdiff
-PORTVERSION=	0.9
+PORTVERSION=	0.91
 CATEGORIES=	misc
 
 MAINTAINER=	naito.yuichiro@gmail.com
@@ -12,16 +12,11 @@ LICENSE=	BSD2CLAUSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	belgianbeer
-GH_PROJECT=	tzdiff
 
 PLIST_FILES=	bin/tzdiff
 
 NO_ARCH=	yes
 NO_BUILD=	yes
-
-do-patch:
-	${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \
-		${WRKSRC}/tzdiff
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tzdiff \

@@ -1,8 +1,8 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/sysutils/vmtouch/Makefile 436766 2017-03-23 12:46:16Z trociny $
+# $FreeBSD: head/sysutils/vmtouch/Makefile 485139 2018-11-17 15:54:16Z trociny $
 
 PORTNAME=	vmtouch
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

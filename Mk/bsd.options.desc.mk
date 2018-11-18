@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 480590 2018-09-24 11:13:36Z sunpoet $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 485166 2018-11-17 17:33:28Z sunpoet $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -506,6 +506,7 @@ UTF16_DESC?=		Unicode UTF-16 encoding support
 UTF8_DESC?=		Unicode UTF-8 encoding support
 V4L_DESC?=		Video 4 Linux support
 VAAPI_DESC?=		VAAPI (GPU video acceleration) support
+VAPI_DESC?=		Build VALA API files
 VDPAU_DESC?=		VDPAU (GPU video acceleration) support
 VIDEO_DESC?=		Video support
 VO_AACENC_DESC?=	AAC audio encoding via vo-aacenc

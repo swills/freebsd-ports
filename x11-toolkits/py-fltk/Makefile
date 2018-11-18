@@ -1,5 +1,5 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 479839 2018-09-15 16:13:49Z linimon $
+# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 485093 2018-11-16 17:26:15Z sunpoet $
 
 PORTNAME=	fltk
 PORTVERSION=	1.3.4.1
@@ -33,7 +33,7 @@ WRKSRC=		${WRKDIR}/pyFltk-${PORTVERSION}
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
-	@${REINPLACE_CMD} -e "s|/usr/X11R6|${LOCALBASE}|g;s|package_data.*},||g;s|sunos5|dragonfly4', 'freebsd8', 'freebsd9', 'freebsd10', 'freebsd11', 'freebsd12|g" ${WRKSRC}/setup.py
+	@${REINPLACE_CMD} -e 's|/usr/X11R6|${LOCALBASE}|g' ${WRKSRC}/setup.py
 
 post-build:
 	${REINPLACE_CMD} -e "s|\.\./docs|${DOCSDIR}/html|g" ${WRKSRC}/fltk/test/help.py

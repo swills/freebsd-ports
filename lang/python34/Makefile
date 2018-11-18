@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python34/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/lang/python34/Makefile 485119 2018-11-17 08:01:59Z antoine $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -15,6 +15,8 @@ COMMENT=	Interpreted object-oriented programming language
 
 LICENSE=	PSFL
 
+DEPRECATED=	Fails to build with recent OpenSSL
+EXPIRATION_DATE=	2018-12-17
 BROKEN_SSL=	openssl111
 
 USES=		cpe ncurses pathfix pkgconfig readline:port shebangfix ssl tar:xz

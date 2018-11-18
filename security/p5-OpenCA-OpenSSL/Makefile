@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/security/p5-OpenCA-OpenSSL/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/security/p5-OpenCA-OpenSSL/Makefile 484930 2018-11-14 15:37:17Z mat $
 
 PORTNAME=	OpenCA-OpenSSL
 PORTVERSION=	2.0.29
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl crypto extension to OpenSSL
+
+BROKEN_SSL=    openssl111
+BROKEN_SSL_REASON_openssl111=  incomplete definition of type 'struct x509_st'
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Locale-libintl>=0:devel/p5-Locale-libintl \

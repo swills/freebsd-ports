@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/ykclient/Makefile 461037 2018-02-06 09:02:49Z amdmi3 $
+# $FreeBSD: head/security/ykclient/Makefile 485084 2018-11-16 16:52:59Z philip $
 
 PORTNAME=	ykclient
-PORTVERSION=	2.12
-PORTREVISION=	2
+PORTVERSION=	2.15
 CATEGORIES=	security
 MASTER_SITES=	http://opensource.yubico.com/yubico-c-client/releases/
 
@@ -28,7 +27,7 @@ PLIST_FILES=	bin/ykclient \
 		include/ykclient_version.h \
 		lib/libykclient.so \
 		lib/libykclient.so.3 \
-		lib/libykclient.so.3.5.2 \
+		lib/libykclient.so.3.6.0 \
 		man/man1/ykclient.1.gz
 
 OPTIONS_DEFINE=	STATIC

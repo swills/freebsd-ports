@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-yamllint/Makefile 482480 2018-10-20 10:10:59Z matthew $
+# $FreeBSD: head/devel/py-yamllint/Makefile 485124 2018-11-17 09:40:03Z matthew $
 
 PORTNAME=	yamllint
-PORTVERSION=	1.12.1
+PORTVERSION=	1.13.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

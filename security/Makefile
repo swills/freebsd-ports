@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 484537 2018-11-09 18:52:21Z swills $
+# $FreeBSD: head/security/Makefile 485144 2018-11-17 17:30:29Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -800,6 +800,7 @@
     SUBDIR += pear-Auth_HTTP
     SUBDIR += pear-Auth_PrefManager
     SUBDIR += pear-Auth_SASL
+    SUBDIR += pear-Auth_SASL2
     SUBDIR += pear-Crypt_Blowfish
     SUBDIR += pear-Crypt_CBC
     SUBDIR += pear-Crypt_CHAP

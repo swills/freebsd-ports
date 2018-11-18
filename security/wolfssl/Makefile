@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/wolfssl/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/wolfssl/Makefile 485182 2018-11-17 17:46:11Z sunpoet $
 
 PORTNAME=	wolfssl
 PORTVERSION=	3.13.0
 CATEGORIES=	security devel
-MASTER_SITES=	http://www.wolfssl.com/
+MASTER_SITES=	https://www.wolfssl.com/
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Embedded SSL C-Library

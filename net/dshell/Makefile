@@ -1,8 +1,8 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/net/dshell/Makefile 467391 2018-04-15 13:12:04Z nobutaka $
+# $FreeBSD: head/net/dshell/Makefile 485117 2018-11-17 06:29:59Z nobutaka $
 
 PORTNAME=	dshell
-PORTVERSION=	3.0.20171116
+PORTVERSION=	3.0.20180914
 CATEGORIES=	net
 
 MAINTAINER=	nobutaka@FreeBSD.org
@@ -19,14 +19,15 @@ BUILD_DEPENDS=	bash:shells/bash \
 		${PYTHON_PKGNAMEPREFIX}pypcap>0:net/py-pypcap@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USE_GITHUB=	yes
 USES=		python:-2.7 shebangfix
+USE_GITHUB=	yes
+
 NO_ARCH=	yes
 SHEBANG_FILES=	bin/*.py
 
 GH_ACCOUNT=	USArmyResearchLab
 GH_PROJECT=	Dshell
-GH_TAGNAME=	5850adf
+GH_TAGNAME=	709d087
 
 OPTIONS_DEFINE=	DOCS
 

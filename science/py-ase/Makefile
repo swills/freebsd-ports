@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-ase/Makefile 479772 2018-09-14 12:19:48Z mat $
+# $FreeBSD: head/science/py-ase/Makefile 484983 2018-11-15 01:16:19Z yuri $
 
 PORTNAME=	ase
-DISTVERSION=	3.16.2
+DISTVERSION=	3.17.0
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

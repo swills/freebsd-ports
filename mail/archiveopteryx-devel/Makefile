@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 483572 2018-10-31 12:59:11Z dvl $
+# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 484995 2018-11-15 03:33:04Z linimon $
 
 PORTNAME=	archiveopteryx
 PORTVERSION=	3.2.99.20181030
@@ -11,10 +11,6 @@ MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Advanced PostgreSQL-based IMAP/POP server
 
 LICENSE=	MIT
-
-BROKEN_mips=		fails to build: /bin/sh: clang: not found
-BROKEN_mips64=		fails to build: /bin/sh: clang: not found
-BROKEN_powerpc64=	Does not build: /bin/sh: clang: not found
 
 BUILD_DEPENDS=	jam:devel/jam
 
@@ -46,9 +42,11 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 
-# force Clang when on FreeBSD
+# force Clang when on FreeBSD with clang in base
 .if ${OPSYS} == FreeBSD
-JAMARG=	"-sCLANG=1"
+.if ! ${ARCH:Mmips*} && ! ${ARCH:Mpowerpc*} && ! ${ARCH} == sparc64
+JAMARG+=	"-sCLANG=1"
+.endif
 .endif
 
 post-patch:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 484707 2018-11-11 18:17:59Z sunpoet $
+# $FreeBSD: head/devel/Makefile 485143 2018-11-17 17:29:47Z sunpoet $
 #
 
     COMMENT = Development utilities
@@ -468,6 +468,7 @@
     SUBDIR += dmake
     SUBDIR += dmalloc
     SUBDIR += dmucs
+    SUBDIR += docopt.cpp
     SUBDIR += doctorj
     SUBDIR += dolphin-plugins
     SUBDIR += dolphin-plugins-kde4
@@ -1512,6 +1513,7 @@
     SUBDIR += libmsocket
     SUBDIR += libmtdev
     SUBDIR += libmtrie
+    SUBDIR += libmustache
     SUBDIR += libnaji
     SUBDIR += libnfc
     SUBDIR += libnotify
@@ -4066,6 +4068,7 @@
     SUBDIR += pecl-memoize
     SUBDIR += pecl-msgpack
     SUBDIR += pecl-msgpack0
+    SUBDIR += pecl-mustache
     SUBDIR += pecl-ncurses
     SUBDIR += pecl-newt
     SUBDIR += pecl-params
@@ -5034,6 +5037,7 @@
     SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rcsparse
+    SUBDIR += py-readme_renderer
     SUBDIR += py-rebulk
     SUBDIR += py-rednose
     SUBDIR += py-rekall-efilter
@@ -5209,6 +5213,7 @@
     SUBDIR += py-virtualenv
     SUBDIR += py-virtualenv-clone
     SUBDIR += py-virtualenvwrapper
+    SUBDIR += py-visitor
     SUBDIR += py-voluptuous
     SUBDIR += py-warlock
     SUBDIR += py-watchdog
@@ -6003,7 +6008,7 @@
     SUBDIR += rubygem-shoulda-context
     SUBDIR += rubygem-shoulda-matchers
     SUBDIR += rubygem-sidekiq
-    SUBDIR += rubygem-sidekiq-bulk-rails5
+    SUBDIR += rubygem-sidekiq-bulk
     SUBDIR += rubygem-sidekiq-cron
     SUBDIR += rubygem-sidekiq-cron0
     SUBDIR += rubygem-sidekiq-scheduler

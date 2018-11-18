@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <rpsfa@rit.edu>
-# $FreeBSD: head/devel/rubygem-warden/Makefile 432505 2017-01-26 14:38:18Z sunpoet $
+# $FreeBSD: head/devel/rubygem-warden/Makefile 485174 2018-11-17 17:34:34Z sunpoet $
 
 PORTNAME=	warden
-PORTVERSION=	1.2.7
+PORTVERSION=	1.2.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,10 +12,11 @@ COMMENT=	Rack middleware that provides authentication for rack applications
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-rack>=1.0:www/rubygem-rack
+RUN_DEPENDS=	rubygem-rack>=2.0.6:www/rubygem-rack
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

@@ -1,7 +1,6 @@
-# $FreeBSD: head/security/cyrus-sasl2-gssapi/Makefile 410867 2016-03-12 02:58:46Z ume $
+# $FreeBSD: head/security/cyrus-sasl2-gssapi/Makefile 485191 2018-11-17 18:47:45Z ume $
 
 PKGNAMESUFFIX=	-gssapi
-PORTREVISION=	7
 
 COMMENT=	SASL GSSAPI authentication plugin
 

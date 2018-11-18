@@ -1,9 +1,8 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/graphics/librsvg2/Makefile 470310 2018-05-18 17:20:03Z kwm $
+# $FreeBSD: head/graphics/librsvg2/Makefile 484912 2018-11-14 03:56:41Z koobs $
 
 PORTNAME=	librsvg
 PORTVERSION=	2.40.20
-PORTREVISON=	1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	2

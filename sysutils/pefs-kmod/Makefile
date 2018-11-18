@@ -1,5 +1,5 @@
 # Created by: Gleb Kurtsou <gleb@FreeBSD.org>
-# $FreeBSD: head/sysutils/pefs-kmod/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/sysutils/pefs-kmod/Makefile 485210 2018-11-18 03:48:17Z kmoore $
 
 PORTNAME=	pefs
 DISTVERSION=	2017-06-20
@@ -12,16 +12,16 @@ COMMENT=	PEFS kernel level stacked cryptographic filesystem
 
 LICENSE=	BSD2CLAUSE
 
-MAKE_JOBS_UNSAFE=yes
-MAKE_ENV=	BINDIR="${PREFIX}/sbin" MANDIR="${MANPREFIX}/man/man" \
-		NO_MANCOMPRESS=
-
 BROKEN_armv6=		fails to compile: implicit declaration of function 'cp15_pmccntr_get' is invalid in C99
 BROKEN_DragonFly=	fails to build: don't know how to make vnode_if.h
 ONLY_FOR_ARCHS=		amd64 armv6 i386
 ONLY_FOR_ARCHS_REASON=	untested on any other arch
 
 USES=		kmod uidfix
+
+MAKE_JOBS_UNSAFE=yes
+MAKE_ENV=	BINDIR="${PREFIX}/sbin" MANDIR="${MANPREFIX}/man/man" \
+		NO_MANCOMPRESS=
 
 OPTIONS_DEFINE=	AESNI
 OPTIONS_DEFAULT=

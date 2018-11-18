@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/textproc/py-acora/Makefile 457471 2017-12-28 19:28:59Z antoine $
+# $FreeBSD: head/textproc/py-acora/Makefile 485203 2018-11-17 21:36:28Z antoine $
 
 PORTNAME=	acora
-PORTVERSION=	2.1
+PORTVERSION=	2.2
 CATEGORIES=	textproc devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

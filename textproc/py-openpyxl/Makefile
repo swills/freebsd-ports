@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/textproc/py-openpyxl/Makefile 481461 2018-10-07 16:39:55Z antoine $
+# $FreeBSD: head/textproc/py-openpyxl/Makefile 485202 2018-11-17 21:34:58Z antoine $
 
 PORTNAME=	openpyxl
-PORTVERSION=	2.5.8
+PORTVERSION=	2.5.10
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +11,6 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	Python library to read/write Excel 2007 xlsx/xlsm files
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENCE.rst
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jdcal>=0:devel/py-jdcal@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}et_xmlfile>=0:textproc/py-et_xmlfile@${PY_FLAVOR}

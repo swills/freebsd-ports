@@ -1,9 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/net/gupnp-av/Makefile 451542 2017-10-08 13:49:33Z sunpoet $
+# $FreeBSD: head/net/gupnp-av/Makefile 485147 2018-11-17 17:30:56Z sunpoet $
 
 PORTNAME=	gupnp-av
-PORTVERSION=	0.12.10
-PORTREVISION=	1
+PORTVERSION=	0.12.11
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 
@@ -15,20 +14,20 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	gobject-introspection>=0.9.5:devel/gobject-introspection
 
-OPTIONS_DEFINE=	VALA
+OPTIONS_DEFINE=	VAPI
 OPTIONS_SUB=	yes
-VALA_DESC=	Vala binding
+
+USES=		gmake gnome libtool pathfix pkgconfig tar:xz
+USE_GNOME=	glib20 introspection:build libxml2
 
 CONFIGURE_ARGS=	--enable-introspection=yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USE_GNOME=	glib20 introspection:build libxml2
 USE_LDCONFIG=	yes
-USES=		gmake gnome libtool pathfix pkgconfig tar:xz
 
-VALA_BUILD_DEPENDS=	vala>=0.22:lang/vala
-VALA_CONFIGURE_ENV=	ac_cv_path_VAPIGEN=${LOCALBASE}/bin/vapigen
-VALA_CONFIGURE_ENV_OFF=	ac_cv_path_VAPIGEN=""
+VAPI_BUILD_DEPENDS=	vala>=0.22:lang/vala
+VAPI_CONFIGURE_ENV=	ac_cv_path_VAPIGEN=${LOCALBASE}/bin/vapigen
+VAPI_CONFIGURE_ENV_OFF=	ac_cv_path_VAPIGEN=""
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-Wno-unused-parameters||' ${WRKSRC}/tests/Makefile.in
