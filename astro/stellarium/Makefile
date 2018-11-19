@@ -3,6 +3,7 @@
 
 PORTNAME=	stellarium
 PORTVERSION=	0.18.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	astro
 EXTRACT_ONLY=	${_DISTFILES:Nstars_*.cat:N*.pdf}
@@ -56,7 +57,7 @@ TELESCOPE_CMAKE_OFF=	-DUSE_PLUGIN_TELESCOPECONTROL:BOOL=OFF
 .  for i in 4 5 6 7 8
 MASTER_SITES+=	SF/${PORTNAME}/Extra-data-files/stars${i}:stars${i}
 .  endfor
-DISTFILES+=	stars_4_1v0_1.cat:stars4 stars_5_2v0_1.cat:stars5 \
+DISTFILES+=	stars_4_1v0_2.cat:stars4 stars_5_2v0_1.cat:stars5 \
 		stars_6_2v0_1.cat:stars6 stars_7_2v0_1.cat:stars7 \
 		stars_8_2v0_1.cat:stars8
 PLIST_SUB+=	MORE_STARS=""
@@ -88,7 +89,9 @@ post-patch:
 		${WRKSRC}/src/external/libindi/libs/indibase/baseclient.cpp
 
 post-install-MORE_STARS-on:
-	${INSTALL_DATA} ${DISTDIR}/stars_[45678]_[12]v0_1.cat \
+	${INSTALL_DATA} ${DISTDIR}/stars_4_1v0_2.cat \
+		${STAGEDIR}${DATADIR}/stars/default
+	${INSTALL_DATA} ${DISTDIR}/stars_[5678]_[12]v0_1.cat \
 		${STAGEDIR}${DATADIR}/stars/default
 
 post-install-TEXTURES-on:
