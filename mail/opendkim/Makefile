@@ -22,7 +22,7 @@ LICENSE_PERMS_SENDMAIL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 GNU_CONFIGURE=	yes
 NO_OPTIONS_SORT=yes
-USES=		autoreconf libtool perl5 pkgconfig shebangfix ssl
+USES=		autoreconf libtool lua:5[1-2] perl5 pkgconfig shebangfix ssl
 USE_PERL5=	run
 SHEBANG_FILES=	opendkim/opendkim-genkey* reputation/opendkim-* stats/opendkim-* \
 		reprrd/opendkim-reprrdimport*
@@ -38,7 +38,7 @@ OPTIONS_SINGLE=		RESOLV
 OPTIONS_SINGLE_RESOLV=	STOCK_RESOLVER UNBOUND
 OPTIONS_DEFINE=		FILTER CURL GNUTLS JANSSON LDNS LMDB LUA MEMCACHED \
 			BDB_BASE OPENDBX OPENLDAP POPAUTH QUERY_CACHE SASL DOCS
-OPTIONS_DEFAULT=	FILTER LUA UNBOUND
+OPTIONS_DEFAULT=	FILTER UNBOUND
 
 STOCK_RESOLVER_DESC=	Use the stock resolver library
 
