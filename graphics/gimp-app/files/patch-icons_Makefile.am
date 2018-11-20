@@ -1,0 +1,12 @@
+--- icons/Makefile.am.orig	2018-03-25 14:35:18.000000000 +0200
++++ icons/Makefile.am	2018-11-03 01:55:39.574541000 +0100
+@@ -1,8 +1,7 @@
+ SUBDIRS = \
+ 	Color		\
+ 	Legacy		\
+-	Symbolic	\
+-	Symbolic-Inverted
++	Symbolic	
+ 
+ iconsdir = $(gimpdatadir)/icons/hicolor
+ 

@@ -1,0 +1,36 @@
+--- tools/Makefile.in.orig	2018-08-19 18:48:48.000000000 +0200
++++ tools/Makefile.in	2018-11-03 01:51:56.207735000 +0100
+@@ -637,7 +637,6 @@
+ 	$(GTK_LIBS)
+ 
+ kernelgen_SOURCES = kernelgen.c
+-@ENABLE_VECTOR_ICONS_TRUE@DISTCLEANFILES = invert-svg$(BUILD_EXEEXT)
+ AM_CPPFLAGS = \
+ 	-DGIMP_APP_VERSION=\"@GIMP_APP_VERSION@\"		\
+ 	-DLOCALEDIR=\""$(gimplocaledir)"\"			\
+@@ -675,8 +674,7 @@
+ EXTRA_DIST = \
+ 	defcheck.py	\
+ 	gimp-mkenums	\
+-	gimppath2svg.py	\
+-	invert-svg.c
++	gimppath2svg.py
+ 
+ all: all-am
+ 
+@@ -1044,7 +1042,6 @@
+ .PRECIOUS: Makefile
+ 
+ 
+-@ENABLE_VECTOR_ICONS_TRUE@invert-svg$(BUILD_EXEEXT): invert-svg.c
+ @ENABLE_VECTOR_ICONS_TRUE@	$(CC_FOR_BUILD) -fPIC -o $@ $< $(NATIVE_GLIB_LIBS) $(CPPFLAGS_FOR_BUILD) $(CFLAGS_FOR_BUILD) $(LDFLAGS_FOR_BUILD) $(NATIVE_GLIB_CFLAGS)
+ 
+ # compute_svg_viewbox is not built or used because librsvg is just too buggy
+@@ -1058,7 +1055,6 @@
+ #compute_svg_viewbox_LDADD = $(SVG_LIBS)
+ 
+ # Build tools which must be built for the host platform.
+-@ENABLE_VECTOR_ICONS_TRUE@all-local: invert-svg$(BUILD_EXEEXT)
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.
