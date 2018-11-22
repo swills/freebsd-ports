@@ -11,9 +11,6 @@ DISTFILES=	# none
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Kernel module which provides /dev/rtc device support
 
-BROKEN_FreeBSD_12=	fails to compile: rtc.c:166:2: implicit declaration of function 'MALLOC' is invalid in C99
-BROKEN_FreeBSD_13=	fails to compile: rtc.c:166:2: implicit declaration of function 'MALLOC' is invalid in C99
-
 WRKSRC=		${WRKDIR}/files
 
 NO_FETCH=	yes

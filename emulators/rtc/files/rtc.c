@@ -163,7 +163,7 @@ rtc_attach(dev_t dev)
 		return dev->si_drv1;
 	}
 
-	MALLOC(sc, struct rtc_softc*, sizeof(*sc), M_DEVBUF, M_WAITOK);
+	sc = malloc(sizeof(*sc), M_DEVBUF, M_WAITOK);
 	if (sc==NULL)
 		return NULL;
 
@@ -196,7 +196,7 @@ rtc_detach(dev_t dev, struct rtc_softc *sc)
 	}
 
 	callout_stop(&sc->var.rtc_handle);
-	FREE(sc, M_DEVBUF);
+	free(sc, M_DEVBUF);
 	dev->si_drv1 = NULL;
 	return error;
 }
@@ -433,22 +433,36 @@ rtc_callback(void *xtp)
 restart:
 	increment.tv_sec = 0;
 	increment.tv_nsec = 1000000000 / sc->var.freq;
-	timespecadd(&sc->var.lasttime, &increment);
-	nexttime.tv_sec = sc->var.lasttime.tv_sec;
-	nexttime.tv_nsec = sc->var.lasttime.tv_nsec;
-	timespecadd(&nexttime, &increment);
+#if P_OSREL_MAJOR(__FreeBSD_version) >= 12
+	timespecadd(&sc->var.lasttime, &increment, &sc->var.lasttime);
+	timespecadd(&sc->var.lasttime, &increment, &nexttime);
+#else
+        timespecadd(&sc->var.lasttime, &increment);
+        nexttime.tv_sec = sc->var.lasttime.tv_sec;
+        nexttime.tv_nsec = sc->var.lasttime.tv_nsec;
+        timespecadd(&nexttime, &increment);
+#endif
 	if (timespeccmp(&nexttime, &curtime, <)) {
 		/* Catch up if we lag curtime */
-		sc->var.lasttime.tv_sec = curtime.tv_sec;
-		sc->var.lasttime.tv_nsec = curtime.tv_nsec;
-		timespecsub(&sc->var.lasttime, &increment);
-		timespecsub(&nexttime, &curtime);
+#if P_OSREL_MAJOR(__FreeBSD_version) >= 12
+               timespecsub(&curtime, &increment, &sc->var.lasttime);
+               timespecsub(&nexttime, &curtime, &nexttime);
+#else
+               sc->var.lasttime.tv_sec = curtime.tv_sec;
+               sc->var.lasttime.tv_nsec = curtime.tv_nsec;
+               timespecsub(&sc->var.lasttime, &increment);
+               timespecsub(&nexttime, &curtime);
+#endif
 #if 0
 		printf("lagging curtime by %d.%ld\n", nexttime.tv_sec, nexttime.tv_nsec);
 #endif
 		goto restart;
 	} else {
+#if P_OSREL_MAJOR(__FreeBSD_version) >= 12
+		timespecsub(&nexttime, &curtime, &nexttime);
+#else
 		timespecsub(&nexttime, &curtime);
+#endif
 		sleep = nexttime.tv_nsec / (1000000000 / hz);
 	}
 	callout_reset(&sc->var.rtc_handle, sleep, &rtc_callback, xtp);
