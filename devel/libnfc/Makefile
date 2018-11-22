@@ -30,6 +30,7 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 USES=		gmake libtool pathfix pkgconfig readline tar:bzip2
 MAKE_ENV=	INSTALL_STRIP_FLAG="${STRIP}"
+CFLAGS+= 	-D__BSD_VISIBLE
 
 # Restrict to stable (even) versions, indicated by the second component.
 PORTSCOUT=	limitw:1,even
