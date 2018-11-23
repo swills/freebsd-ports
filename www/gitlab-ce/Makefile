@@ -183,7 +183,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-gitaly-proto>=0.123.0:net/rubygem-gitaly-proto \
 	rubygem-grpc>=1.15.0:net/rubygem-grpc \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
-	rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351 \
+	rubygem-google-protobuf>=3.6:devel/rubygem-google-protobuf \
 	rubygem-toml-rb10>=1.0.0:www/rubygem-toml-rb10 \
 	rubygem-flipper013>=0.13.0:devel/rubygem-flipper013 \
 	rubygem-flipper-active_record013>=0.13.0:databases/rubygem-flipper-active_record013 \
