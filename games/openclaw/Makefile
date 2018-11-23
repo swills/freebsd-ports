@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/openclaw/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/games/openclaw/Makefile 485437 2018-11-20 16:56:57Z kwm $
 
 PORTNAME=	OpenClaw
 DISTVERSION=	0.0-51

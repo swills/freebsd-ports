@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/isfreedesktop/Makefile 472474 2018-06-15 18:04:40Z acm $
+# $FreeBSD: head/devel/isfreedesktop/Makefile 485391 2018-11-20 02:46:47Z acm $
 
 PORTNAME=	isfreedesktop
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

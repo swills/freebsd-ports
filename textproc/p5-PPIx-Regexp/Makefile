@@ -1,8 +1,8 @@
 # Created by: Ashish SHUKLA <wahjava@gmail.com>
-# $FreeBSD: head/textproc/p5-PPIx-Regexp/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-PPIx-Regexp/Makefile 485426 2018-11-20 10:34:57Z joneum $
 
 PORTNAME=	PPIx-Regexp
-PORTVERSION=	0.062
+PORTVERSION=	0.063
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:WYANT

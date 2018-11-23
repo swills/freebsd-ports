@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6-aux/Makefile 478204 2018-08-27 13:44:14Z ericbsd $
+# $FreeBSD: head/lang/gcc6-aux/Makefile 485323 2018-11-19 12:48:30Z ericbsd $
 
 PORTNAME=	gcc6-aux
 PORTVERSION=	${SNAPSHOT}
@@ -7,7 +7,7 @@ PORTREVISION=	${MAIN_PR}
 PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://downloads.dragonlace.net/src/:boot \
-		LOCAL/marino:boot GCC/${MS_SUBDIR}
+		LOCAL/marino:boot LOCAL/ericbsd:boot GCC/${MS_SUBDIR}
 DISTFILES=	${IDENTIFICATION}.tar.xz
 
 MAINTAINER=	ericbsd@FreeBSD.org

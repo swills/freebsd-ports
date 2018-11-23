@@ -1,5 +1,5 @@
 # Created by: roberto
-# $FreeBSD: head/devel/libdlmalloc/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/devel/libdlmalloc/Makefile 485591 2018-11-22 10:14:55Z rene $
 
 PORTNAME=	dlmalloc
 PORTVERSION=	2.8.6
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://gee.cs.oswego.edu/pub/misc/
 DISTFILES=	malloc-${PORTVERSION}.c malloc-${PORTVERSION}.h
 
-MAINTAINER=	roberto@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small, fast malloc library by Doug Lea
 
 NO_WRKSUBDIR=	yes

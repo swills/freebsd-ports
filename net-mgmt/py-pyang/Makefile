@@ -1,8 +1,8 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/net-mgmt/py-pyang/Makefile 468163 2018-04-24 00:26:05Z bofh $
+# $FreeBSD: head/net-mgmt/py-pyang/Makefile 485292 2018-11-19 00:26:45Z bofh $
 
 PORTNAME=	pyang
-PORTVERSION=	1.7.4
+PORTVERSION=	1.7.5
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,11 @@ COMMENT=	Validator and code generator for YANG (RFC 4741)
 
 LICENSE=	MIT
 
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR}
+
 USES=		python
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 
 DATADIR=	${PREFIX}/share/yang

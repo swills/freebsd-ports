@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/opencollada/Makefile 481897 2018-10-12 12:11:12Z fernape $
+# $FreeBSD: head/graphics/opencollada/Makefile 485492 2018-11-21 00:58:28Z wen $
 
 PORTNAME=	opencollada
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.6.65
+DISTVERSION=	1.6.67
 CATEGORIES=	graphics devel
 
 MAINTAINER=	ports@FreeBSD.org

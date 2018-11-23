@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/padthv1-lv2/Makefile 475331 2018-07-25 19:54:16Z yuri $
+# $FreeBSD: head/audio/padthv1-lv2/Makefile 485638 2018-11-23 05:41:42Z yuri $
 
 PORTNAME=	padthv1
 DISTVERSIONPREFIX=	${PORTNAME}_
-DISTVERSION=	0_9_2
+DISTVERSION=	0_9_3-7
+DISTVERSIONSUFFIX=	-g281c5b0
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -17,14 +18,12 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libjack.so:audio/jack \
 		liblo.so:audio/liblo
 
-USES=		autoreconf gmake pkgconfig qt:5 shared-mime-info
+USES=		autoreconf gl gmake pkgconfig qt:5 shared-mime-info
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	rncbc
 USE_GL=		gl
 USE_QT=		core gui widgets xml buildtools_build qmake_build
-
-PLIST_SUB=	SHL3=${PORTVERSION} SHL2=${PORTVERSION:R} SHL1=${PORTVERSION:R:R}
 
 CONFIGURE_ARGS=	--disable-alsa-midi
 

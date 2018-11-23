@@ -1,8 +1,8 @@
 # Created by: Ron van Daal
-# $FreeBSD: head/graphics/GraphicsMagick/Makefile 482063 2018-10-14 16:29:18Z sunpoet $
+# $FreeBSD: head/graphics/GraphicsMagick/Makefile 485259 2018-11-18 20:36:35Z sunpoet $
 
 PORTNAME=	GraphicsMagick
-PORTVERSION=	1.3.30
+PORTVERSION=	1.3.31
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF \
@@ -19,6 +19,8 @@ DPS_DESC=	Display Ghostscript support
 Q8BIT_DESC=	Use 8-bit pixels (speed) instead of 16-bit (quality)
 TEST_DESC=	Run bundled self-tests after build
 
+USES=		libtool localbase pathfix tar:bzip2
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-static \
 		--with-windows-font-dir=${WINDOWS_FONT_DIR} --without-perl
@@ -26,7 +28,6 @@ CONFIGURE_ENV=	PTHREAD_LIBS=-lpthread
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
 USE_LDCONFIG=	yes
-USES=		libtool localbase pathfix tar:bzip2
 
 # Use fonts installed by x11-fonts/webfonts by default
 WINDOWS_FONT_DIR?=	${LOCALBASE}/share/fonts/webfonts

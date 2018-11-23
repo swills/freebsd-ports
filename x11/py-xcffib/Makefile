@@ -1,5 +1,5 @@
 # Created by: Eric Turgeon <ericbsd@FreeBSD.org>
-# $FreeBSD: head/x11/py-xcffib/Makefile 482351 2018-10-18 18:52:17Z ericbsd $
+# $FreeBSD: head/x11/py-xcffib/Makefile 485330 2018-11-19 16:24:25Z ericbsd $
 
 PORTNAME=	xcffib
 PORTVERSION=	0.6.0
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libxcb.so:x11/libxcb
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.1.0:devel/py-cffi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

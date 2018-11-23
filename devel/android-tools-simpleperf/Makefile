@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-simpleperf/Makefile 484448 2018-11-08 12:32:17Z jbeich $
+# $FreeBSD: head/devel/android-tools-simpleperf/Makefile 485483 2018-11-20 20:31:35Z jbeich $
 
 PORTNAME=	android-tools-simpleperf
 DISTVERSIONPREFIX=	android-
@@ -29,8 +29,6 @@ ALL_TARGET=	all
 TEST_TARGET=	test
 LDFLAGS+=	-Wl,--as-needed # avoid overlinking (llvm deps)
 PLIST_FILES=	bin/simpleperf
-
-LLVM_DEFAULT?=	70
 
 OPTIONS_DEFINE=	TEST
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 485197 2018-11-17 21:07:15Z yuri $
+# $FreeBSD: head/audio/Makefile 485221 2018-11-18 09:35:41Z yuri $
 #
 
     COMMENT = Audio tools
@@ -94,6 +94,7 @@
     SUBDIR += creox
     SUBDIR += crip
     SUBDIR += csound
+    SUBDIR += csoundqt
     SUBDIR += ctronome
     SUBDIR += cue2toc
     SUBDIR += cueplayer

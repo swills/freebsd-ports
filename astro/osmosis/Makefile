@@ -1,8 +1,8 @@
 # Created by: Gleb Smirnoff <glebius@FreeBSD.org>
-# $FreeBSD: head/astro/osmosis/Makefile 451321 2017-10-05 16:14:42Z amdmi3 $
+# $FreeBSD: head/astro/osmosis/Makefile 485325 2018-11-19 15:09:35Z amdmi3 $
 
 PORTNAME=	osmosis
-PORTVERSION=	0.46
+PORTVERSION=	0.47
 CATEGORIES=	astro java
 MASTER_SITES=	http://bretth.dev.openstreetmap.org/osmosis-build/ \
 		http://mirror.amdmi3.ru/distfiles/

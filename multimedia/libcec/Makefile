@@ -1,5 +1,5 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/multimedia/libcec/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/multimedia/libcec/Makefile 485299 2018-11-19 02:11:22Z linimon $
 
 PORTNAME=	libcec
 PORTVERSION=	4.0.2
@@ -14,8 +14,6 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libp8-platform.so:devel/p8-platform
-
-BROKEN_powerpc64=	fails to compile: cecloader.h: converting to 'bool' from 'std::nullptr_t' requires direct-initialization
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Pulse-Eight

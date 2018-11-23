@@ -1,9 +1,8 @@
 # Created by: Quentin Stievenart <acieroid@awesom.eu>
-# $FreeBSD: head/graphics/zathura/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/zathura/Makefile 485553 2018-11-21 20:30:08Z joneum $
 
 PORTNAME=	zathura
-PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTVERSION=	0.4.1
 CATEGORIES=	graphics print
 MASTER_SITES=	https://pwmt.org/projects/zathura/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/

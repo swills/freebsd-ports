@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-webpack-rails/Makefile 479714 2018-09-13 21:53:45Z sunpoet $
+# $FreeBSD: head/www/rubygem-webpack-rails/Makefile 485626 2018-11-22 20:51:07Z sunpoet $
 
 PORTNAME=	webpack-rails
 PORTVERSION=	0.9.11
@@ -16,7 +16,7 @@ RUN_DEPENDS=	rubygem-railties4>=3.2.0:www/rubygem-railties4
 
 # www/gitlab-ce still depends on this port
 DEPRECATED=	Upstream no longer maintained, use devel/rubygem-webpacker-rails* instead
-EXPIRATION_DATE=2018-10-31
+EXPIRATION_DATE=2018-12-31
 
 NO_ARCH=	yes
 USE_RUBY=	yes

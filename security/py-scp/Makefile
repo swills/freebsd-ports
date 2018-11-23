@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-scp/Makefile 474357 2018-07-10 12:37:47Z joneum $
+# $FreeBSD: head/security/py-scp/Makefile 485532 2018-11-21 19:26:35Z swills $
 
 PORTNAME=	scp
-DISTVERSION=	0.11.0
+DISTVERSION=	0.13.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

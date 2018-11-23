@@ -1,5 +1,5 @@
 # Created by: stb
-# $FreeBSD: head/net/netatalk/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net/netatalk/Makefile 485528 2018-11-21 17:59:05Z marcus $
 
 PORTNAME=	netatalk
 PORTVERSION=	2.2.5
@@ -18,6 +18,10 @@ GNU_CONFIGURE=	yes
 CPPFLAGS+=	-D_IPP_PRIVATE_STRUCTURES
 INSTALL_TARGET=	install-strip
 USE_RC_SUBR=	netatalk
+
+BROKEN_FreeBSD_12=	does not build, OpenSSL 1.1 unsupported
+DEPRECATED=		Outdated branch of netatalk; use net/netatalk3 instead
+EXPIRATION_DATE=	2018-12-21
 
 CONFIGURE_ARGS+=	--with-tcp-wrappers \
 			--with-pkgconfdir=${PREFIX}/etc \

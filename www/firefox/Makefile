@@ -1,8 +1,9 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox/Makefile 485081 2018-11-16 15:09:56Z cmt $
+# $FreeBSD: head/www/firefox/Makefile 485463 2018-11-20 18:58:12Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	63.0.3
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
@@ -27,12 +28,11 @@ BUILD_DEPENDS=	nspr>=4.19:devel/nspr \
 		autoconf-2.13:devel/autoconf213 \
 		yasm:devel/yasm \
 		zip:archivers/zip
-#		soundtouch>=1.9.0:audio/soundtouch \
 
 USE_GECKO=	gecko
 CONFLICTS_INSTALL=	firefox-esr
 MOZ_PKGCONFIG_FILES=	# empty
-USE_MOZILLA=	-cairo -hunspell -soundtouch
+USE_MOZILLA=	-hunspell
 
 USES=		tar:xz
 
@@ -42,7 +42,7 @@ FIREFOX_DESKTOP=	${MOZSRC}/taskcluster/docker/${MOZILLA}-snap/${MOZILLA}.desktop
 MOZ_OPTIONS=	--enable-application=browser \
 		--enable-official-branding
 
-OPTIONS_EXCLUDE=	BUNDLED_CAIRO DTRACE
+OPTIONS_EXCLUDE=	DTRACE
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/metaphysicl/Makefile 484989 2018-11-15 02:02:14Z yuri $
+# $FreeBSD: head/science/metaphysicl/Makefile 485640 2018-11-23 05:57:25Z yuri $
 
 PORTNAME=	MetaPhysicL
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.2
+DISTVERSION=	0.3.3
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -17,8 +17,6 @@ GH_ACCOUNT=	roystgnr
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--disable-static
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmetaphysicl.so.0.0.0
+INSTALL_TARGET=	install-strip
 
 .include <bsd.port.mk>

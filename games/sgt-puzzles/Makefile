@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/sgt-puzzles/Makefile 484775 2018-11-11 21:47:27Z amdmi3 $
+# $FreeBSD: head/games/sgt-puzzles/Makefile 485560 2018-11-21 21:50:21Z amdmi3 $
 
 PORTNAME=	puzzles
-PORTVERSION=	20181108
+PORTVERSION=	20181114
 CATEGORIES=	games
 MASTER_SITES=	http://www.chiark.greenend.org.uk/~sgtatham/puzzles/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -15,7 +15,7 @@ COMMENT=	Simon Tatham's Portable Puzzle Collection
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-COMMITHASH=	b732fda
+COMMITHASH=	db3b531
 
 USES=		autoreconf gmake gnome pkgconfig
 GNU_CONFIGURE=	yes
@@ -68,5 +68,10 @@ post-install-DESKTOP_FILES-on:
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/puzzles.txt ${WRKSRC}/HACKING ${STAGEDIR}${DOCSDIR}/
+
+check-puzzle-list-completeness::
+	@${ECHO_CMD} ${PUZZLE_LIST} | ${FMT} -w 1 | ${SORT} > ${WRKDIR}/puzzle_list.port
+	@${LS} ${WRKSRC}/icons | ${GREP} 48d24.png | ${CUT} -f 1 -d- | ${SORT} > ${WRKDIR}/puzzle_list.upstream
+	@cmp ${WRKDIR}/puzzle_list.port ${WRKDIR}/puzzle_list.upstream
 
 .include <bsd.port.mk>

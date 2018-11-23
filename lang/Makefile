@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 484662 2018-11-11 08:04:06Z gerald $
+# $FreeBSD: head/lang/Makefile 485232 2018-11-18 16:20:20Z arrowd $
 #
 
     COMMENT = Programming languages
@@ -111,6 +111,7 @@
     SUBDIR += gcc9-devel
     SUBDIR += gforth
     SUBDIR += ghc
+    SUBDIR += ghc843
     SUBDIR += gjs
     SUBDIR += gnat_util
     SUBDIR += gnatcross-aarch64

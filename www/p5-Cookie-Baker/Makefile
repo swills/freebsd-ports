@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Cookie-Baker/Makefile 472105 2018-06-10 00:33:29Z wen $
+# $FreeBSD: head/www/p5-Cookie-Baker/Makefile 485625 2018-11-22 20:48:36Z sunpoet $
 
 PORTNAME=	Cookie-Baker
 PORTVERSION=	0.09
@@ -11,9 +11,10 @@ COMMENT=	Perl extension for cookie string generator/parser
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	p5-URI>0:net/p5-URI
 BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-URI>0:net/p5-URI
 TEST_DEPENDS=	p5-Test-Time>=0:devel/p5-Test-Time
 
 USES=		perl5

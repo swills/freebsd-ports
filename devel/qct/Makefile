@@ -1,9 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/qct/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/qct/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	qct
 PORTVERSION=	1.7
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel python
 MASTER_SITES=	http://qct.sourceforge.net/
 

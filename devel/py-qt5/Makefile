@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-qt5/Makefile 474468 2018-07-11 16:44:34Z novel $
+# $FreeBSD: head/devel/py-qt5/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	qt5
 PORTVERSION=	${PYQT5_VERSION}
-PORTREVISION=	4
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -18,7 +17,7 @@ OPTIONS_DEFINE=	core dbus dbussupport demo designer \
 		network opengl printsupport qml qscintilla2 quickwidgets \
 		sql serialport svg test webchannel webengine webkit \
 		webkitwidgets widgets xml xmlpatterns
-OPTIONS_DEFAULT=${OPTIONS_DEFINE}
+OPTIONS_DEFAULT=${OPTIONS_DEFINE:Nwebengine}
 
 .for opt in ${OPTIONS_DEFINE}
 ${opt}_USE=	PYQT=${opt}_run

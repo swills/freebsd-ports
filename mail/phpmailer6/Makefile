@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/phpmailer6/Makefile 471210 2018-05-31 14:05:05Z joneum $
+# $FreeBSD: head/mail/phpmailer6/Makefile 485563 2018-11-21 22:11:51Z joneum $
 
 PORTNAME=	phpmailer
-PORTVERSION=	6.0.5
+PORTVERSION=	6.0.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 PKGNAMESUFFIX=	6

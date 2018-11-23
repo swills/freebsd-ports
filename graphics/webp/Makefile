@@ -1,9 +1,8 @@
 # Created by: johans
-# $FreeBSD: head/graphics/webp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/webp/Makefile 485260 2018-11-18 20:36:44Z sunpoet $
 
 PORTNAME=	webp
-PORTVERSION=	1.0.0
-PORTREVISION=	1
+PORTVERSION=	1.0.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://downloads.webmproject.org/releases/webp/ \
 		https://storage.googleapis.com/downloads.webmproject.org/releases/webp/
@@ -24,6 +23,8 @@ OPTIONS_SUB=	yes
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
+USES=		compiler:c11 jpeg libtool localbase
+
 CONFIGURE_ARGS=	--enable-libwebpdecoder \
 		--enable-libwebpdemux  \
 		--enable-libwebpmux \
@@ -31,7 +32,6 @@ CONFIGURE_ARGS=	--enable-libwebpdecoder \
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		compiler:c11 jpeg libtool localbase
 
 X11_CONFIGURE_OFF=	build_vwebp=no
 X11_CONFIGURE_ON=	build_vwebp=yes

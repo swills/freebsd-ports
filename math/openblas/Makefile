@@ -1,9 +1,9 @@
 # Created by: Eijiro Shibusawa <ej-sib@ice.uec.ac.jp>
-# $FreeBSD: head/math/openblas/Makefile 479351 2018-09-10 02:06:12Z linimon $
+# $FreeBSD: head/math/openblas/Makefile 485641 2018-11-23 06:13:51Z yuri $
 
 PORTNAME=	openblas
 PORTVERSION=	0.2.20
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	math
@@ -58,7 +58,7 @@ AVX2_DESC=		Support Advanced Vector Extensions 2 (AVX2)
 BUILDFLAGS+=	TARGET=${TARGET_CPU_ARCH}
 .endif
 
-MAXTHREADS?=	8
+MAXTHREADS?=	64
 BUILDFLAGS_THREAD+=	NUM_THREADS=${MAXTHREADS} USE_THREAD=1
 
 .if ${ARCH:M*64} == ""

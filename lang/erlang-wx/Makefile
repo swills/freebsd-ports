@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/erlang-wx/Makefile 483028 2018-10-26 13:19:54Z olgeni $
+# $FreeBSD: head/lang/erlang-wx/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3.6.12
@@ -40,7 +40,8 @@ OPTIONS_DEFINE=	DOCS
 
 ERL_RELEASE=	19.3
 
-USES=		gmake
+USES=		gmake perl5
+USE_PERL5=	build
 USE_GL=		gl glu
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib

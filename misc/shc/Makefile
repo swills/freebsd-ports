@@ -1,8 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/misc/shc/Makefile 484871 2018-11-13 10:53:03Z ehaupt $
+# $FreeBSD: head/misc/shc/Makefile 485429 2018-11-20 14:05:01Z ehaupt $
 
 PORTNAME=	shc
-PORTVERSION=	3.9.8
+PORTVERSION=	4.0.1
 CATEGORIES=	misc
 
 MAINTAINER=	ehaupt@FreeBSD.org

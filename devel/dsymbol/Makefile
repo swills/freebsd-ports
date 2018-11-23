@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dsymbol/Makefile 471550 2018-06-04 14:46:41Z mat $
+# $FreeBSD: head/devel/dsymbol/Makefile 485387 2018-11-20 02:43:40Z acm $
 
 PORTNAME=	dsymbol
-PORTVERSION=	0.3.5
+PORTVERSION=	0.4.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -26,6 +26,8 @@ D_LIB_DIR=	${PREFIX}/lib/d
 
 post-patch:
 	${REINPLACE_CMD} -e '7,11d' ${WRKSRC}/dub.json
+	${REINPLACE_CMD} -e 's@cache.clear@cache.destroy@g' \
+		${WRKSRC}/src/dsymbol/modulecache.d
 
 do-build:
 	@cd ${WRKSRC} && ${DUB_CMD}

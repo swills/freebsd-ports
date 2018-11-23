@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/multimedia/bitstream/Makefile 473819 2018-07-03 12:10:24Z amdmi3 $
+# $FreeBSD: head/multimedia/bitstream/Makefile 485456 2018-11-20 18:15:56Z amdmi3 $
 
 PORTNAME=	bitstream
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	multimedia
 MASTER_SITES=	https://get.videolan.org/bitstream/${PORTVERSION}/ \
 		http://get.videolan.org/bitstream/${PORTVERSION}/

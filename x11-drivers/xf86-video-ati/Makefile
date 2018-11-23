@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-drivers/xf86-video-ati/Makefile 482322 2018-10-18 02:10:00Z jmd $
+# $FreeBSD: head/x11-drivers/xf86-video-ati/Makefile 485243 2018-11-18 18:36:28Z linimon $
 
 PORTNAME=	xf86-video-ati
 PORTVERSION=	18.1.0
@@ -11,6 +11,10 @@ COMMENT=	X.Org ati display driver
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+# No Radeon kernel driver on non-x86.
+ONLY_FOR_ARCHS=		amd64 i386 powerpc64
+ONLY_FOR_ARCHS_REASON=	KMS is required and currently only available on x86
+
 LIB_DEPENDS=	libpciaccess.so:devel/libpciaccess \
 		libdrm_radeon.so:graphics/libdrm
 
@@ -19,10 +23,6 @@ CONFLICTS_INSTALL=	xf86-video-ati-legacy
 USE_GL=		gl
 XORG_CAT=	driver
 USE_XORG=	pciaccess
-
-# No Radeon kernel driver on non-x86 and PC98.
-ONLY_FOR_ARCHS=	i386 amd64
-ONLY_FOR_ARCHS_REASON=	KMS is required and currently only available on x86
 
 CONFIGURE_ARGS+=--disable-udev
 

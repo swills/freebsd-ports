@@ -1,10 +1,10 @@
-# $FreeBSD: head/science/antioch/Makefile 484989 2018-11-15 02:02:14Z yuri $
+# $FreeBSD: head/science/antioch/Makefile 485640 2018-11-23 05:57:25Z yuri $
 
 PORTNAME=	antioch
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4.0-156
 DISTVERSIONSUFFIX=	-g90ffa43
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

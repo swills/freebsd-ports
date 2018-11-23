@@ -1,5 +1,5 @@
 # Created by: Lupe Christoph <lupe@lupe-christoph.de>
-# $FreeBSD: head/sysutils/munin-node/Makefile 480561 2018-09-24 09:31:09Z mat $
+# $FreeBSD: head/sysutils/munin-node/Makefile 485513 2018-11-21 13:50:41Z mat $
 
 PORTNAME=	munin
 PORTVERSION=	${MUNIN_VERSION}
@@ -57,6 +57,8 @@ JAVA_RUN=	yes
 
 SUB_FILES=	pkg-message plugins.conf
 USE_RC_SUBR=	munin-asyncd munin-node munin-sched
+
+PORTSCOUT=	ignore:1
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \

@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <sysadmin@alexdupre.com>
-# $FreeBSD: head/mail/nocc/Makefile 454684 2017-11-22 11:33:11Z ale $
+# $FreeBSD: head/mail/nocc/Makefile 485504 2018-11-21 09:16:50Z ale $
 
 PORTNAME=	nocc
-PORTVERSION=	1.9.7
+PORTVERSION=	1.9.8
 CATEGORIES=	mail www
 MASTER_SITES=	SF/${PORTNAME}/NOCC/${PORTVERSION}
 
@@ -11,9 +11,10 @@ COMMENT=	Webmail system which access POP3 and IMAP mail servers
 
 LICENSE=	GPLv2
 
+USES=		php:web
+
 OPTIONS_DEFINE=	DOCS
 
-USES=		php:web
 USE_PHP=	ctype iconv imap mbstring pcre session
 
 SUB_FILES=	pkg-message

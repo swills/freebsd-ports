@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/openstructure/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/science/openstructure/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	openstructure
 DISTVERSION=	1.7.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science
 MASTER_SITES=	https://git.scicore.unibas.ch/schwede/${PORTNAME}/repository/${DISTVERSION}/archive.tar.gz?dummy=/
 

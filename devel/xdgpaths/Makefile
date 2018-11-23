@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/xdgpaths/Makefile 472476 2018-06-15 18:09:04Z acm $
+# $FreeBSD: head/devel/xdgpaths/Makefile 485395 2018-11-20 02:49:23Z acm $
 
 PORTNAME=	xdgpaths
-PORTVERSION=	0.2.4
+PORTVERSION=	0.2.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

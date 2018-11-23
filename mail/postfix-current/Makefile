@@ -1,8 +1,8 @@
 # Created by: Torsten Blum <torstenb@FreeBSD.org>
-# $FreeBSD: head/mail/postfix-current/Makefile 484914 2018-11-14 09:28:57Z ohauer $
+# $FreeBSD: head/mail/postfix-current/Makefile 485499 2018-11-21 05:24:51Z ohauer $
 
 PORTNAME=	postfix
-DISTVERSION=	3.4-20181113
+DISTVERSION=	3.4-20181119
 PORTREVISION?=	0
 PORTEPOCH=	5
 CATEGORIES=	mail ipv6

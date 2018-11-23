@@ -1,8 +1,9 @@
 # Created by: Tobias Roth <ports@fsck.ch>
-# $FreeBSD: head/deskutils/treeline/Makefile 482840 2018-10-23 14:34:54Z jhale $
+# $FreeBSD: head/deskutils/treeline/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	treeline
 PORTVERSION=	3.0.2
+PORTREVISION=	1
 CATEGORIES=	deskutils python
 MASTER_SITES=	https://github.com/doug-101/TreeLine/releases/download/v${PORTVERSION}/ \
 		SF/${PORTNAME}/${PORTVERSION}

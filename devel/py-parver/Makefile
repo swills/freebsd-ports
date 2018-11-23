@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-parver/Makefile 478568 2018-08-31 14:41:55Z sunpoet $
+# $FreeBSD: head/devel/py-parver/Makefile 485544 2018-11-21 20:20:19Z sunpoet $
 
 PORTNAME=	parver
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

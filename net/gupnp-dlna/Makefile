@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net/gupnp-dlna/Makefile 485180 2018-11-17 17:45:55Z sunpoet $
+# $FreeBSD: head/net/gupnp-dlna/Makefile 485272 2018-11-18 20:38:19Z sunpoet $
 
 PORTNAME=	gupnp-dlna
 PORTVERSION=	0.10.3
@@ -21,7 +21,7 @@ RUN_DEPENDS=	gupnp>=0.19.0:net/gupnp
 CONFIGURE_ARGS=	--enable-introspection \
 		--enable-gstreamer-metadata-backend
 
-USES=		gmake libtool pathfix pkgconfig tar:xz
+USES=		gmake gnome libtool pathfix pkgconfig tar:xz
 USE_GNOME=	glib20 introspection:build libxml2
 USE_GSTREAMER1=	yes
 GNU_CONFIGURE=	yes

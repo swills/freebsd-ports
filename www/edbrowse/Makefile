@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/edbrowse/Makefile 481780 2018-10-11 02:23:26Z swills $
+# $FreeBSD: head/www/edbrowse/Makefile 485240 2018-11-18 18:28:13Z linimon $
 
 PORTNAME=	edbrowse
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libtidy5.so:www/tidy-html5 \
 		libduktape.so:lang/duktape-lib
 
-USES=		cmake perl5 readline
+USES=		cmake compiler:c11 perl5 readline
 USE_PERL5=	build
 USE_GITHUB=	yes
 

@@ -1,10 +1,10 @@
 # Created by: gahr
-# $FreeBSD: head/databases/casstcl/Makefile 424416 2016-10-21 13:36:14Z gahr $
+# $FreeBSD: head/databases/casstcl/Makefile 485420 2018-11-20 09:04:00Z gahr $
 
 PORTNAME=	casstcl
-PORTVERSION=	2.11
+PORTVERSION=	2.13.0
 DISTVERSIONPREFIX=v
-PORTREVISION=	3
+PORTREVISION=	0
 CATEGORIES=	databases
 
 MAINTAINER=	gahr@FreeBSD.org
@@ -20,6 +20,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	flightaware
 
 USE_LDCONFIG=	${PREFIX}/lib/casstcl${PORTVERSION}
-PLIST_SUB+=	PORTVERSION=${PORTVERSION}
+PLIST_SUB+=	PORTVERSION=${PORTVERSION:R}
 
 .include <bsd.port.mk>

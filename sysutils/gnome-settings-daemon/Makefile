@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-settings-daemon/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/sysutils/gnome-settings-daemon/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	gnome-settings-daemon
 PORTVERSION=	3.28.1
@@ -30,8 +30,9 @@ PORTSCOUT=	limitw:1,even
 
 USE_XORG=	x11 xext xi xtst
 USE_GNOME=	cairo gnomedesktop3 gtk30
-USES=		gettext gnome localbase:ldflags meson \
+USES=		gettext gnome localbase:ldflags meson perl5 \
 		pkgconfig python:3.6+,build tar:xz
+USE_PERL5=	build
 INSTALLS_ICONS=	yes
 #		-Dnssdb_dir=${LOCALBASE}/share/certs/ca-root-nss.crt
 MESON_ARGS=	-Dnssdb_dir=${LOCALBASE}/share/certs/ \

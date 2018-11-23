@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/py-cartopy/Makefile 479708 2018-09-13 21:53:13Z sunpoet $
+# $FreeBSD: head/graphics/py-cartopy/Makefile 485263 2018-11-18 20:37:11Z sunpoet $
 
 PORTNAME=	cartopy
-PORTVERSION=	0.16.0
+PORTVERSION=	0.17.0
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -24,7 +24,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}Shapely>=1.5.6:devel/py-shapely@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.3.0:devel/py-six@${PY_FLAVOR}
 
-USE_PYTHON=	autoplist concurrent cython distutils
 USES=		python
+USE_PYTHON=	autoplist concurrent cython distutils
 
 .include <bsd.port.mk>

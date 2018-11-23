@@ -1,11 +1,11 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-uv/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/devel/pecl-uv/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	uv
 PORTVERSION=	0.2.2
 CATEGORIES=	devel
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHP wrapper for libuv
 
 LICENSE=	PHP301

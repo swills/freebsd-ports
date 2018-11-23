@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-ace-rails-ap/Makefile 460491 2018-01-31 15:52:52Z sunpoet $
+# $FreeBSD: head/www/rubygem-ace-rails-ap/Makefile 485623 2018-11-22 20:48:20Z sunpoet $
 
 PORTNAME=	ace-rails-ap
-PORTVERSION=	4.1.4
+PORTVERSION=	4.1.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -12,9 +12,10 @@ COMMENT=	Ajax.org Cloud9 Editor (Ace) for the Rails 3.1 asset pipeline
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 SHEBANG_FILES=	update.sh
 

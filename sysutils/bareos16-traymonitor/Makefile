@@ -1,9 +1,8 @@
-# $FreeBSD: head/sysutils/bareos16-traymonitor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/bareos16-traymonitor/Makefile 485547 2018-11-21 20:20:41Z acm $
 
 PORTNAME=	bareos16
 
 PKGNAMESUFFIX=	-traymonitor
-PORTREVISION=	1
 
 COMMENT=	Backup archiving recovery open sourced (traymonitor)
 

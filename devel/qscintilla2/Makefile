@@ -1,9 +1,9 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/qscintilla2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/qscintilla2/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITES_QSCI2}

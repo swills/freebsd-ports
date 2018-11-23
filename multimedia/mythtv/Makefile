@@ -1,5 +1,5 @@
 # Created by: Stacey Son <mythdev@son.org>, Ari Maniatis <ari@ish.com.au>
-# $FreeBSD: head/multimedia/mythtv/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/multimedia/mythtv/Makefile 485246 2018-11-18 19:26:03Z antoine $
 
 PORTNAME=	mythtv
 DISTVERSIONPREFIX=	v
@@ -14,6 +14,7 @@ COMMENT?=	MythTV is a homebrew PVR project
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN=		fails to build
 ONLY_FOR_ARCHS=	amd64 i386
 
 LIB_DEPENDS=	libmp3lame.so:audio/lame \

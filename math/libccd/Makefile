@@ -1,0 +1,25 @@
+# $FreeBSD: head/math/libccd/Makefile 485411 2018-11-20 05:59:27Z yuri $
+
+PORTNAME=	libccd
+DISTVERSIONPREFIX=	v
+DISTVERSION=	2.0-49
+DISTVERSIONSUFFIX=	-g63d3a91
+CATEGORIES=	math
+
+MAINTAINER=	yuri@FreeBSD.org
+COMMENT=	Library for collision detection between two convex shapes
+
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/BSD-LICENSE
+
+USES=		cmake:outsource
+USE_GITHUB=	yes
+GH_ACCOUNT=	danfis
+USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	DOUBLE_PECISION
+
+DOUBLE_PECISION_DESC=		Enable double precision computations
+DOUBLE_PECISION_CMAKE_BOOL=	ENABLE_DOUBLE_PRECISION
+
+.include <bsd.port.mk>

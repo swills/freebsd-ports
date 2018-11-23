@@ -1,5 +1,5 @@
 # Created by: Thomas Quinot <thomas@cuivre.fr.eu.org>
-# $FreeBSD: head/security/calife/Makefile 447635 2017-08-09 18:23:48Z roberto $
+# $FreeBSD: head/security/calife/Makefile 485591 2018-11-22 10:14:55Z rene $
 
 PORTNAME=	calife
 PORTVERSION=	3.0.6
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://assets.keltia.net/calife/
 
-MAINTAINER=	roberto@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight alternative to sudo
 
 LICENSE=	GPLv2

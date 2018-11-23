@@ -1,9 +1,8 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl111/Makefile 483393 2018-10-29 18:07:39Z brnrd $
+# $FreeBSD: head/security/openssl111/Makefile 485516 2018-11-21 13:50:58Z mat $
 
 PORTNAME=	openssl
-DISTVERSION=	1.1.1
-PORTREVISION=	2
+PORTVERSION=	1.1.1a
 CATEGORIES=	security devel
 MASTER_SITES=	https://www.openssl.org/source/ \
 		ftp://ftp.cert.dfn.de/pub/tools/net/openssl/source/
@@ -17,13 +16,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFLICTS_INSTALL=	libressl-[0-9]* \
 			libressl-devel-[0-9]* \
-			openssl-[0-9]* \
-			openssl-devel-[0-9]*
+			openssl-[0-9]*
 
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	config
 CONFIGURE_ENV=	PERL="${PERL}"
-CONFIGURE_ARGS=	--openssldir=${OPENSSLDIR}
+CONFIGURE_ARGS=	--openssldir=${OPENSSLDIR} \
+		--prefix=${PREFIX}
 
 USES=		cpe perl5
 USE_PERL5=	build

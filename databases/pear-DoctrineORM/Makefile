@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/databases/pear-DoctrineORM/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/pear-DoctrineORM/Makefile 485421 2018-11-20 09:30:26Z amdmi3 $
 
 PORTNAME=	DoctrineORM
 PORTVERSION=	2.3.3
@@ -9,14 +9,16 @@ MASTER_SITES=	http://pear.doctrine-project.org/get/
 MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Primary package containing the Doctrine ORM
 
-LICENSE=	LGPL21
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PEARDIR}/Doctrine/Common/Version.php:databases/pear-DoctrineCommon@${PHP_FLAVOR} \
-	${PEARDIR}/Doctrine/DBAL/Version.php:databases/pear-DoctrineDBAL@${PHP_FLAVOR} \
-	${PEARDIR}/Symfony/Component/Console/Application.php:devel/pear-Symfony_Component_Console@${PHP_FLAVOR} \
-	${PEARDIR}/Symfony/Component/Yaml/Yaml.php:textproc/pear-Symfony_Component_Yaml@${PHP_FLAVOR}
+		${PEARDIR}/Doctrine/DBAL/Version.php:databases/pear-DoctrineDBAL@${PHP_FLAVOR} \
+		${PEARDIR}/Symfony/Component/Console/Application.php:devel/pear-Symfony_Component_Console@${PHP_FLAVOR} \
+		${PEARDIR}/Symfony/Component/Yaml/Yaml.php:textproc/pear-Symfony_Component_Yaml@${PHP_FLAVOR}
 
-USES=	pear
+USES=		pear
 PEAR_CHANNEL=	doctrine
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

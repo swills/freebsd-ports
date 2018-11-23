@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/games/crossfire-client/Makefile 450016 2017-09-17 18:09:18Z swills $
+# $FreeBSD: head/games/crossfire-client/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	crossfire-client
 PORTVERSION=	1.72.0
@@ -17,7 +17,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	vala:lang/vala
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		cmake pkgconfig tar:bzip2
+USES=		cmake perl5 pkgconfig tar:bzip2
+USE_PERL5=	build
 USE_GNOME=	gtk20
 USE_SDL=	sdl image mixer
 INSTALLS_ICONS=	YES

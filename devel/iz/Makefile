@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/iz/Makefile 471550 2018-06-04 14:46:41Z mat $
+# $FreeBSD: head/devel/iz/Makefile 485392 2018-11-20 02:47:14Z acm $
 
 PORTNAME=	iz
-PORTVERSION=	0.6.16
+PORTVERSION=	0.6.22
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

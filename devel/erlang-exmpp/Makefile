@@ -1,5 +1,5 @@
 # Created by: Maxim Ignatenko
-# $FreeBSD: head/devel/erlang-exmpp/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/erlang-exmpp/Makefile 485605 2018-11-22 18:06:57Z dumbbell $
 
 PORTNAME=	exmpp
 PORTVERSION=	0.9.9
@@ -10,6 +10,8 @@ PKGNAMEPREFIX=	erlang-
 
 MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Fast and scalable library for XMPP written in Erlang/OTP
+
+BROKEN_SSL=	openssl111 openssl-devel
 
 LICENSE=	EPL
 
@@ -41,6 +43,12 @@ OPTIONS_DEFINE=	DOCS
 DOCS_CONFIGURE_ENABLE=	documentation
 
 MAKE_JOBS_UNSAFE=	yes
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
+BROKEN=	Does not support OpenSSL 1.1
+.endif
 
 post-configure:
 	${REINPLACE_CMD}  's|\(-spec.*\)\/[0-9] ::\(.*\)|\1\2|g' ${WRKSRC}/src/network/*.erl

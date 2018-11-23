@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/hs-ShellCheck/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-ShellCheck/Makefile 485580 2018-11-22 04:36:53Z tobik $
 
 PORTNAME=	ShellCheck
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4.7-129
 DISTVERSIONSUFFIX=	-gb5e5d24
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -19,6 +19,10 @@ GH_ACCOUNT=	koalaman
 GH_PROJECT=	${PORTNAME:tl}
 
 EXECUTABLE=	shellcheck
+IGNORE_DOCS=	yes
+IGNORE_DYNAMIC=	yes
+IGNORE_PROFILE=	yes
+STANDALONE=	yes
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

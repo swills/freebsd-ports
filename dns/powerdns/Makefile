@@ -1,8 +1,7 @@
-# $FreeBSD: head/dns/powerdns/Makefile 481285 2018-10-05 16:42:24Z fernape $
+# $FreeBSD: head/dns/powerdns/Makefile 485423 2018-11-20 10:18:48Z krion $
 
 PORTNAME=	powerdns
-DISTVERSION=	4.1.4
-PORTREVISION=	1
+DISTVERSION=	4.1.5
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://downloads.powerdns.com/releases/
 DISTNAME=	pdns-${DISTVERSION}
@@ -19,6 +18,7 @@ LIB_DEPENDS=	libboost_serialization.so:devel/boost-libs
 
 USES=		compiler:c++11-lib cpe gmake libtool localbase:ldflags pathfix pkgconfig ssl \
 		tar:bzip2
+
 USE_LDCONFIG=	YES
 USE_SUBMAKE=	YES
 GNU_CONFIGURE=	YES

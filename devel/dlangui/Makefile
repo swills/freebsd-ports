@@ -1,8 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dlangui/Makefile 471469 2018-06-03 07:10:04Z acm $
+# $FreeBSD: head/devel/dlangui/Makefile 485405 2018-11-20 02:59:54Z acm $
 
 PORTNAME=	dlangui
 PORTVERSION=	0.9.178
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -10,6 +11,8 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Cross Platform GUI for D programming language
 
 LICENSE=	BSL
+
+BROKEN=		does not compile with latest version of ldc
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \

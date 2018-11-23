@@ -1,8 +1,9 @@
 # Created by: nbm
-# $FreeBSD: head/devel/py-sip/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-sip/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	sip
 PORTVERSION=	${SIP_VERSION}
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITES_SIP}

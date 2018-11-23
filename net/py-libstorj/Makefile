@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-libstorj/Makefile 476591 2018-08-07 12:13:47Z jhixson $
+# $FreeBSD: head/net/py-libstorj/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	libstoraj
 PORTVERSION=	1.0.2
@@ -12,6 +12,8 @@ COMMENT=	Python bindings for libstorj
 LICENSE=	LGPL21+
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libstorj.so:net/libstorj

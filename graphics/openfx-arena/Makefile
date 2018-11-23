@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/openfx-arena/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/openfx-arena/Makefile 485437 2018-11-20 16:56:57Z kwm $
 
 PORTNAME=	openfx-arena
 PORTVERSION=	2.3.14

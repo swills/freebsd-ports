@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 485059 2018-11-16 02:55:54Z yuri $
+# $FreeBSD: head/science/Makefile 485564 2018-11-21 22:34:45Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -32,6 +32,7 @@
     SUBDIR += avogadro2
     SUBDIR += avogadrolibs
     SUBDIR += bagel
+    SUBDIR += berkeleygw
     SUBDIR += bddsolve
     SUBDIR += bodr
     SUBDIR += brian
@@ -263,6 +264,7 @@
     SUBDIR += qmcpack
     SUBDIR += qtresistors
     SUBDIR += quantum-espresso
+    SUBDIR += quantum-espresso-pseudopotentials
     SUBDIR += qwalk
     SUBDIR += rdkit
     SUBDIR += rmf

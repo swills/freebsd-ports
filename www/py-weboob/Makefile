@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-weboob/Makefile 463855 2018-03-08 01:00:05Z jhale $
+# $FreeBSD: head/www/py-weboob/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	weboob
 DISTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

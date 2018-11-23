@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/audio/epos-devel/Makefile 475652 2018-07-29 12:15:10Z tobik $
+# $FreeBSD: head/audio/epos-devel/Makefile 485438 2018-11-20 16:58:15Z amdmi3 $
 
 PORTNAME=	epos
 PORTVERSION=	2.5.37
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-dev/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Language independent Text-to-Speech (TTS) system
 
-LICENSE=	GPLv2 LGPL20
+LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi
 
 USES=		gmake

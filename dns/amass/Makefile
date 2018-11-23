@@ -1,7 +1,8 @@
-# $FreeBSD: head/dns/amass/Makefile 482913 2018-10-24 17:07:29Z yuri $
+# $FreeBSD: head/dns/amass/Makefile 485351 2018-11-19 18:24:37Z yuri $
 
 PORTNAME=	amass
-DISTVERSION=	2.8.0
+DISTVERSION=	2.8.3-4
+DISTVERSIONSUFFIX=	-g935e6d5
 CATEGORIES=	dns
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -35,7 +36,7 @@ GH_TUPLE=	OWASP:Amass:${DISTVERSIONFULL}:main/src/github.com/OWASP/Amass \
 		golang:text:4ae1256:text/src/golang.org/x/text \
 		golang:tools:18207bb:tools/src/golang.org/x/tools
 
-PROGS=		${PORTNAME} ${PORTNAME}.db ${PORTNAME}.maltego ${PORTNAME}.netdomains ${PORTNAME}.viz
+PROGS=		${PORTNAME} ${PORTNAME}.db ${PORTNAME}.netdomains ${PORTNAME}.viz
 
 PLIST_FILES=	${PROGS:C/^/bin\//}
 

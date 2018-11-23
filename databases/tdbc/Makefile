@@ -1,10 +1,10 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/databases/tdbc/Makefile 457844 2018-01-02 10:49:42Z gahr $
+# $FreeBSD: head/databases/tdbc/Makefile 485318 2018-11-19 12:07:37Z gahr $
 
 PORTNAME=	tdbc
-DISTVERSION=	1.0.6
+DISTVERSION=	1.1.0
 CATEGORIES=	databases
-MASTER_SITES=	SF/tcl/TDBC/${DISTVERSION}
+MASTER_SITES=	SF/tcl/Tcl/8.6.9
 DISTFILES=	${PORTNAME}${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	tcltk@FreeBSD.org

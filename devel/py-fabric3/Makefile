@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-fabric3/Makefile 484923 2018-11-14 13:57:30Z egypcio $
+# $FreeBSD: head/devel/py-fabric3/Makefile 485249 2018-11-18 19:30:03Z antoine $
 
 PORTNAME=	fabric3
 DISTVERSION=	1.14
@@ -13,6 +13,8 @@ COMMENT=	Python tool for remote execution and deployment
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		unfetchable
 
 USES=		python
 USE_PYTHON=	autoplist distutils flavors

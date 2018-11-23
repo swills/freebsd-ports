@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/xscreensaver-gnome-hacks/Makefile 442278 2017-06-01 09:01:21Z amdmi3 $
+# $FreeBSD: head/x11/xscreensaver-gnome-hacks/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	xscreensaver-gnome-hacks
 PORTREVISION=	3
@@ -16,7 +16,8 @@ CONFLICTS=	xscreensaver-[0-9]* xscreensaver-gnome-[0-9]*
 OPTIONS_DEFINE=	ALL_FORTUNES
 ALL_FORTUNES_DESC=	Enable support for all fortunes
 
-USES=		shebangfix
+USES=		perl5 shebangfix
+USE_PERL5=	build
 SHEBANG_FILES=	${SS_SCRIPTS:S,^,driver/,}
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-nodriver
 

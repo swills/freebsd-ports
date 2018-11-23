@@ -1,5 +1,5 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/graphics/fotoxx/Makefile 466538 2018-04-05 07:22:32Z antoine $
+# $FreeBSD: head/graphics/fotoxx/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	fotoxx
 PORTVERSION=	15.05
@@ -14,6 +14,8 @@ COMMENT=	Application to organize and edit image collections
 LICENSE=	GPLv3
 
 BROKEN=		conflicting dependencies dcraw and ufraw
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 RUN_DEPENDS=	xdg-open:devel/xdg-utils \
 		dcraw:graphics/dcraw \

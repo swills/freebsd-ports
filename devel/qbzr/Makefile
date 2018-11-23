@@ -1,9 +1,9 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/qbzr/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qbzr/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	qbzr
 PORTVERSION=	0.23.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://launchpadlibrarian.net/109906138/ \
 		http://www.c-s.li/ports/

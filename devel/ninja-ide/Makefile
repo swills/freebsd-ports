@@ -1,10 +1,10 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/ninja-ide/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/ninja-ide/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	ninja-ide
 PORTVERSION=	2.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://nivit.altervista.org/FreeBSD/ports/distfiles/
 

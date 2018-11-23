@@ -1,11 +1,11 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/databases/pecl-couchbase/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/databases/pecl-couchbase/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	couchbase
 DISTVERSION=	2.4.2
 CATEGORIES=	databases
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Couchbase Server PHP extension
 
 LICENSE=	APACHE20

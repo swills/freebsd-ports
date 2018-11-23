@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/icontheme/Makefile 472477 2018-06-15 18:11:29Z acm $
+# $FreeBSD: head/devel/icontheme/Makefile 485397 2018-11-20 02:50:51Z acm $
 
 PORTNAME=	icontheme
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

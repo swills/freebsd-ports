@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/scribe/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/net/scribe/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
@@ -12,6 +12,8 @@ COMMENT=	Aggregating log data streamed in real time
 LICENSE=	APACHE20
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 BUILD_DEPENDS=	fb303>0:devel/fb303 \
 		thrift:devel/thrift

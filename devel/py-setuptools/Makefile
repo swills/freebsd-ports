@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-setuptools/Makefile 481238 2018-10-04 18:14:07Z sunpoet $
+# $FreeBSD: head/devel/py-setuptools/Makefile 485621 2018-11-22 20:48:04Z sunpoet $
 
 PORTNAME=	setuptools
-PORTVERSION=	40.4.3
+PORTVERSION=	40.6.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

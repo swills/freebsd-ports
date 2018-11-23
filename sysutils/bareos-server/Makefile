@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/bareos-server/Makefile 470319 2018-05-18 19:00:37Z acm $
+# $FreeBSD: head/sysutils/bareos-server/Makefile 485488 2018-11-20 21:49:17Z acm $
 
 PORTNAME=	bareos
 DISTVERSIONPREFIX=	Release/
-DISTVERSION=	17.2.5
-PORTREVISION?=	1
+DISTVERSION=	17.2.7
+PORTREVISION?=	0
 CATEGORIES?=	sysutils
 PKGNAMEPREFIX?=	#
 PKGNAMESUFFIX?=	-server
@@ -14,14 +14,13 @@ COMMENT?=	Backup archiving recovery open sourced (server)
 LICENSE=	AGPLv3 LGPL3
 LICENSE_COMB=	multi
 
-USE_GITHUB=	yes
-
-USES+=		libtool:keepla pkgconfig readline:port shebangfix
-
 CONFLICTS?=	bacula*-server-* bareos16-server-*
 
 LIB_DEPENDS+=	liblzo2.so:archivers/lzo2 \
 		libjansson.so:devel/jansson
+
+USES+=		libtool:keepla pkgconfig readline:port shebangfix
+USE_GITHUB=	yes
 
 USERS=		bareos
 GROUPS=		${USERS}

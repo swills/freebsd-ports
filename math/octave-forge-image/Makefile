@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-image/Makefile 476952 2018-08-12 02:57:03Z stephen $
+# $FreeBSD: head/math/octave-forge-image/Makefile 485435 2018-11-20 16:13:29Z stephen $
 
 PORTNAME=	octave-forge-image
-PORTVERSION=	2.8.0
-PORTREVISION=	2
+PORTVERSION=	2.8.1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

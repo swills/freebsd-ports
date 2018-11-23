@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dfmt/Makefile 471550 2018-06-04 14:46:41Z mat $
+# $FreeBSD: head/devel/dfmt/Makefile 485388 2018-11-20 02:44:44Z acm $
 
 PORTNAME=	dfmt
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -13,6 +13,7 @@ LICENSE=	BSL
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \
+		rdmd:lang/dlang-tools \
 		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 

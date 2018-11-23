@@ -1,11 +1,11 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-ev/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-ev/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	ev
 PORTVERSION=	1.0.4
 CATEGORIES=	devel
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Libev extension for PHP
 
 LICENSE=	PHP301

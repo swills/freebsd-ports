@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/qscintilla2-designerplugin-qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qscintilla2-designerplugin-qt5/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	designerplugin-qt5
 PORTVERSION=	${QSCI2_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITES_QSCI2}
 PKGNAMEPREFIX=	qscintilla2-

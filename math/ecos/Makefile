@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/ecos/Makefile 472010 2018-06-08 15:51:31Z yuri $
+# $FreeBSD: head/math/ecos/Makefile 485253 2018-11-18 19:59:45Z yuri $
 
 PORTNAME=	ecos
-DISTVERSIONPREFIX=	v
-DISTVERSION=	2.0.6
+DISTVERSION=	2.0.7
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -14,12 +13,28 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	embotech
-ALL_TARGET=	shared
 USE_LDCONFIG=	yes
+
+ALL_TARGET=	shared
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/include/ecos
 	${INSTALL_DATA} ${WRKSRC}/include/*.h ${STAGEDIR}${PREFIX}/include/ecos
 	${INSTALL_LIB} ${WRKSRC}/libecos.so ${STAGEDIR}${PREFIX}/lib
+
+do-test: # some tests are known to fail: https://github.com/embotech/ecos/issues/170
+	@cd ${WRKSRC} && \
+		${SETENV} ${MAKE_ENV} ${MAKE_CMD} test && \
+		${ECHO} "===> Running ${PORTNAME} tests: ecostester" && \
+		(./ecostester || true) && \
+		${ECHO} "===> Running ${PORTNAME} tests: ecos_bb_test" && \
+		./ecos_bb_test
+
+demos: build # runs the demo problems
+	@cd ${WRKSRC} && \
+		${SETENV} ${MAKE_ENV} ${MAKE_CMD} demo && \
+		./runecos && \
+		${SETENV} ${MAKE_ENV} ${MAKE_CMD} runecosexp && \
+		./runecosexp
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu4/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-APCu4/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	APCu
 PORTVERSION=	4.0.11
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	APC User Caching
 
 LICENSE=	PHP301

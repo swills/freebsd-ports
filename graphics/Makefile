@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/Makefile 485506 2018-11-21 09:22:38Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -815,6 +815,7 @@
     SUBDIR += pecl-qrencode
     SUBDIR += pecomato
     SUBDIR += pencil
+    SUBDIR += pencil2d
     SUBDIR += peps
     SUBDIR += perceptualdiff
     SUBDIR += pfstools

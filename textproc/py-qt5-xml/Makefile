@@ -1,7 +1,6 @@
-# $FreeBSD: head/textproc/py-qt5-xml/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/py-qt5-xml/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	xml
-PORTREVISION=	6
 CATEGORIES=	textproc devel python
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,7 +11,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:5 qt:5
 USE_PYQT=	sip_build core_run
-USE_PYTHON=	flavors py3kplist
+USE_PYTHON=	concurrent flavors py3kplist
 USE_QT=		core xml buildtools_build qmake_build
 
 OPTIONS_DEFINE=	API DEBUG
@@ -20,7 +19,7 @@ OPTIONS_DEFAULT=API
 OPTIONS_SUB=	yes
 
 API_DESC=		Install QtXml API for QScintilla2
-API_CONFIGURE_ON=	--qsci-api --qsci-api-destdir=${QSCIDIR}
+API_CONFIGURE_ON=	--qsci-api --qsci-api-destdir=${PYQT_APIDIR}
 API_CONFIGURE_OFF=	--no-qsci-api
 API_LIB_DEPENDS=	libqscintilla2_qt5.so:devel/qscintilla2-qt5
 DEBUG_CONFIGURE_ON=	--debug --trace

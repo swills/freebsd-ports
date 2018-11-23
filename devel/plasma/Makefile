@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/plasma/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/plasma/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	plasma
 DISTVERSION=	g20171121
+PORTREVISION=	1
 CATEGORIES=	devel python
 
 MAINTAINER=	freebsd_ports@k-worx.org
@@ -29,7 +30,7 @@ GH_ACCOUNT=	plasma-disassembler
 GH_PROJECT=	plasma
 GH_TAGNAME=	8ec3bb7
 
-USE_PYTHON=	distutils flavors autoplist
+USE_PYTHON=	distutils noflavors autoplist
 SHEBANG_FILES=	tests/analyzer/run.sh
 SHEBANG_GLOB=	*.py
 

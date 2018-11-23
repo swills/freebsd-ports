@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/libopenmpt/Makefile 482742 2018-10-22 11:32:12Z ehaupt $
+# $FreeBSD: head/audio/libopenmpt/Makefile 485305 2018-11-19 07:56:57Z ehaupt $
 
 PORTNAME=	libopenmpt
 PORTVERSION=	0.3.13
@@ -14,7 +14,7 @@ COMMENT=	Module music library based on OpenMPT
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake libtool pkgconfig
+USES=		compiler:c++11-lang gmake libtool pkgconfig
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/py-QSpectrumAnalyzer/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/misc/py-QSpectrumAnalyzer/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	QSpectrumAnalyzer
 DISTVERSION=	2.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc hamradio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

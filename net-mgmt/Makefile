@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 485099 2018-11-16 20:28:58Z rene $
+# $FreeBSD: head/net-mgmt/Makefile 485481 2018-11-20 20:29:41Z rene $
 #
 
     COMMENT = Network management tools
@@ -229,8 +229,6 @@
     SUBDIR += p5-Cisco-Reconfig
     SUBDIR += p5-Data-Validate-IP
     SUBDIR += p5-FusionInventory-Agent
-    SUBDIR += p5-FusionInventory-Agent-Task-NetDiscovery
-    SUBDIR += p5-FusionInventory-Agent-Task-SNMPQuery
     SUBDIR += p5-GRNOC-Config
     SUBDIR += p5-GRNOC-TL1
     SUBDIR += p5-MRTG-Parse

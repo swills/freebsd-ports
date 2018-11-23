@@ -1,9 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dlib/Makefile 471468 2018-06-03 07:07:22Z acm $
+# $FreeBSD: head/devel/dlib/Makefile 485389 2018-11-20 02:45:16Z acm $
 
 PORTNAME=	dlib
-PORTVERSION=	0.12.2
-PORTREVISION=	1
+PORTVERSION=	0.14.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

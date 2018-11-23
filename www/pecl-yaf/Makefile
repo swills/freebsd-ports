@@ -1,11 +1,11 @@
 # Created by: johnpupu <johnpupu@gmail.com>
-# $FreeBSD: head/www/pecl-yaf/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/www/pecl-yaf/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	yaf
 DISTVERSION=	3.0.6
 CATEGORIES=	www
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@freeBSD.org
 COMMENT=	MVC framework written as a C PHP extension
 
 LICENSE=	PHP301

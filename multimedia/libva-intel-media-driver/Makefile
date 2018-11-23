@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 484213 2018-11-05 19:58:46Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 485573 2018-11-22 00:08:50Z jbeich $
 
 PORTNAME=	media-driver
 DISTVERSIONPREFIX=	intel-media-
@@ -24,13 +24,19 @@ USES=		cmake:outsource compiler:c++11-lib pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	intel
 ARCH_SUFX=	${ARCH:S/i386/32/:S/amd//}
-CMAKE_OFF=	MEDIA_BUILD_FATAL_WARNINGS MEDIA_RUN_TEST_SUITE
+CMAKE_OFF=	MEDIA_BUILD_FATAL_WARNINGS
 CMAKE_ARGS=	-DBUILD_TYPE:STRING="${CMAKE_BUILD_TYPE}" \
 		-DARCH:STRING="${ARCH_SUFX}" \
 		-DUFO_MARCH:STRING="${CPUTYPE}"
 PLIST_FILES=	etc/profile.d/intel-media.sh \
 		lib/dri/iHD_drv_video.so \
 		lib/igfxcmrt${ARCH_SUFX}.so
+
+OPTIONS_DEFINE=	TEST
+
+# XXX Unbundle googletest
+TEST_CMAKE_BOOL=	MEDIA_RUN_TEST_SUITE
+TEST_TEST_TARGET=	RunULT
 
 post-patch:
 	@${REINPLACE_CMD} -e '/install.*igfxcmrt/s/64/${ARCH_SUFX}/' \

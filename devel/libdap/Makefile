@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/libdap/Makefile 480971 2018-09-30 19:41:36Z sunpoet $
+# $FreeBSD: head/devel/libdap/Makefile 485537 2018-11-21 20:19:20Z sunpoet $
 
 PORTNAME=	libdap
-PORTVERSION=	3.20.0
+PORTVERSION=	3.20.1
 CATEGORIES=	devel
 MASTER_SITES=	https://www.opendap.org/pub/source/ \
 		LOCAL/sunpoet
@@ -19,7 +19,8 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 
 USES=		bison charsetfix gmake libtool localbase pathfix ssl
 
-CONFIGURE_ARGS=	ac_cv_type_max_align_t=yes
+CONFIGURE_ARGS=	ac_cv_lib_crypto_OpenSSL_add_all_algorithms=yes \
+		ac_cv_type_max_align_t=yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes

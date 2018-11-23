@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hyperrogue/Makefile 485207 2018-11-17 23:30:04Z amdmi3 $
+# $FreeBSD: head/games/hyperrogue/Makefile 485561 2018-11-21 21:52:45Z amdmi3 $
 
 PORTNAME=	hyperrogue
-PORTVERSION=	10.4z
+PORTVERSION=	10.5
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libpng.so:graphics/png
 USE_GITHUB=	yes
 GH_ACCOUNT=	zenorogue
 
-USES=		autoreconf localbase
+USES=		autoreconf gl localbase
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl mixer gfx ttf
 USE_GL=		gl glew

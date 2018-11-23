@@ -1,5 +1,5 @@
 # Created by: Murilo Opsfelder <mopsfelder@gmail.com>
-# $FreeBSD: head/devel/p5-Data-Dumper-Perltidy/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Dumper-Perltidy/Makefile 485343 2018-11-19 18:20:07Z sunpoet $
 
 PORTNAME=	Data-Dumper-Perltidy
 PORTVERSION=	0.01
@@ -15,5 +15,7 @@ RUN_DEPENDS=	perltidy:devel/p5-Perl-Tidy
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

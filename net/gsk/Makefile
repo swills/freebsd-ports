@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/gsk/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net/gsk/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	gsk
 PORTVERSION=	1.0.63
@@ -13,7 +13,8 @@ COMMENT=	C library for writing servers
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		libtool pathfix pkgconfig ssl
+USES=		libtool pathfix perl5 pkgconfig ssl
+USE_PERL5=	build
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc

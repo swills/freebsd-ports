@@ -1,5 +1,5 @@
 # Created by: Mikael URANKAR and Loïc BARTOLETTI
-# $FreeBSD: head/databases/grass7/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/databases/grass7/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	grass
 PORTVERSION=	7.4.0
@@ -26,6 +26,8 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/GPL.TXT
 
 BROKEN=		fails to package
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2:math/py-numpy@${PY_FLAVOR}
 LIB_DEPENDS=	libgdal.so:graphics/gdal \

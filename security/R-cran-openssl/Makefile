@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/security/R-cran-openssl/Makefile 476864 2018-08-11 09:10:39Z tota $
+# $FreeBSD: head/security/R-cran-openssl/Makefile 485377 2018-11-20 02:09:47Z tota $
 
 PORTNAME=	openssl
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1
 CATEGORIES=	security
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -16,10 +16,5 @@ TEST_DEPENDS=	bash:shells/bash
 USES=		cran:auto-plist,compiles shebangfix ssl
 
 SHEBANG_FILES=	${WRKSRC}/tests/google.dk/generate.bash
-
-R_POSTCMD_INSTALL_OPTIONS+=	--configure-vars="INCLUDE_DIR=${OPENSSLINC} LIB_DIR=${OPENSSLLIB}"
-
-post-patch:
-	${REINPLACE_CMD} -e '1,5d' ${WRKSRC}/src/ssl.c
 
 .include <bsd.port.mk>

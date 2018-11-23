@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/meandmyshadow/Makefile 483319 2018-10-28 17:29:13Z amdmi3 $
+# $FreeBSD: head/games/meandmyshadow/Makefile 485559 2018-11-21 21:45:21Z amdmi3 $
 
 PORTNAME=	meandmyshadow
-PORTVERSION=	0.5
+PORTVERSION=	0.5a
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

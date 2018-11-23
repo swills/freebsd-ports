@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-sidekiq-unique-jobs/Makefile 448411 2017-08-20 12:30:05Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq-unique-jobs/Makefile 485450 2018-11-20 17:47:48Z sunpoet $
 
 PORTNAME=	sidekiq-unique-jobs
-PORTVERSION=	5.0.10
+PORTVERSION=	5.0.11
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,12 +11,14 @@ COMMENT=	Ensure only a single copy of a job is in Redis
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-sidekiq>=4.0:devel/rubygem-sidekiq \
+RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0.2:devel/rubygem-concurrent-ruby \
+		rubygem-sidekiq>=4.0:devel/rubygem-sidekiq \
 		rubygem-thor>=0:devel/rubygem-thor
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/jobs
 

@@ -1,5 +1,5 @@
 # Created by: gnn
-# $FreeBSD: head/net/py-pcs/Makefile 470143 2018-05-16 19:36:05Z jbeich $
+# $FreeBSD: head/net/py-pcs/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	pcs
 PORTVERSION=	0.6
@@ -15,6 +15,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 BROKEN=		fails to build with cython 0.28
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 PORTDOCS=	pcs.pdf
 PORTEXAMPLES=	*

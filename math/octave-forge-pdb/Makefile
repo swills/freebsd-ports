@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-pdb/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/octave-forge-pdb/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	octave-forge-pdb
 PORTVERSION=	1.0.7
@@ -13,6 +13,8 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		does not build with octave version >= 4.4.0
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 GNU_CONFIGURE=	yes
 

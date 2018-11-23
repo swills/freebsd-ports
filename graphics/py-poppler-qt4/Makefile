@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-poppler-qt4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/py-poppler-qt4/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	poppler-qt4
 PORTVERSION=	0.18.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

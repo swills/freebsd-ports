@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/x11-wm/i3/Makefile 484181 2018-11-05 09:14:08Z bapt $
+# $FreeBSD: head/x11-wm/i3/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	i3
 DISTVERSION=	4.16
@@ -32,7 +32,6 @@ USE_XORG=	xcb
 GNU_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes
 CONFIGURE_ENV=	ac_cv_path_PATH_ASCIIDOC=""
-USE_PERL5=	run
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
 INSTALL_TARGET=	install-strip
 

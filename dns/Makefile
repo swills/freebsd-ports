@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 480793 2018-09-27 09:00:13Z rene $
+# $FreeBSD: head/dns/Makefile 485536 2018-11-21 20:19:11Z sunpoet $
 #
 
     COMMENT = Domain Name Service tools
@@ -194,6 +194,7 @@
     SUBDIR += py-idna_ssl
     SUBDIR += py-idnkit2
     SUBDIR += py-ldns
+    SUBDIR += py-localzone
     SUBDIR += py-namebench
     SUBDIR += py-publicsuffix
     SUBDIR += py-publicsuffixlist

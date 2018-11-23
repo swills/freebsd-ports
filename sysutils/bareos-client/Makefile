@@ -1,7 +1,6 @@
-# $FreeBSD: head/sysutils/bareos-client/Makefile 470319 2018-05-18 19:00:37Z acm $
+# $FreeBSD: head/sysutils/bareos-client/Makefile 485488 2018-11-20 21:49:17Z acm $
 
 PORTNAME=	bareos
-PORTREVISION=	1
 PKGNAMESUFFIX=	-client
 
 COMMENT=	Backup archiving recovery open sourced (client)

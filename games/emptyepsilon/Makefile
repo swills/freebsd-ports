@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/emptyepsilon/Makefile 482278 2018-10-17 07:43:25Z yuri $
+# $FreeBSD: head/games/emptyepsilon/Makefile 485268 2018-11-18 20:37:52Z yuri $
 
 PORTNAME=	emptyepsilon
 DISTVERSIONPREFIX=	EE-
-DISTVERSION=	2018.09.06
+DISTVERSION=	2018.11.16
 CATEGORIES=	games
 
 MAINTAINER=	yuri@FreeBSD.org

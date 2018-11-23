@@ -1,8 +1,9 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/math/rpcalc/Makefile 475379 2018-07-26 14:47:23Z jhale $
+# $FreeBSD: head/math/rpcalc/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	rpcalc
 PORTVERSION=	0.8.2
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 

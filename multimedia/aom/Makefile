@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/aom/Makefile 485107 2018-11-17 00:58:27Z jbeich $
+# $FreeBSD: head/multimedia/aom/Makefile 485574 2018-11-22 00:53:52Z jbeich $
 
 PORTNAME=	aom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.0-941
-DISTVERSIONSUFFIX=	-gd2a592e1c
+DISTVERSION=	1.0.0-959
+DISTVERSIONSUFFIX=	-g89e832b90
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org

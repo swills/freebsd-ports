@@ -1,5 +1,5 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/x11/xpyb/Makefile 471180 2018-05-30 21:52:33Z antoine $
+# $FreeBSD: head/x11/xpyb/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	xpyb
 PORTVERSION=	1.3.1
@@ -12,6 +12,8 @@ MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Python bindings to access X Window System protocol via libxcb
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/xcb-proto.pc:x11/xcb-proto \
 		xcb-proto>=1.7.1:x11/xcb-proto

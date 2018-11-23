@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/x11/xscreensaver-gnome/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/xscreensaver-gnome/Makefile 485327 2018-11-19 15:57:08Z swills $
 #   $MCom: ports/x11/xscreensaver-gnome/Makefile,v 1.5 2007/08/15 18:29:16 mezz Exp $
 
 PORTNAME?=	xscreensaver-gnome
@@ -18,7 +18,6 @@ LIB_DEPENDS=	libgle.so:graphics/gle
 
 USE_XORG=	x11 xpm
 USE_GL=		gl
-USE_PERL5=	run
 USE_GNOME=	libglade2
 USES+=		dos2unix gettext gmake jpeg perl5 pathfix pkgconfig
 GNU_CONFIGURE=	yes

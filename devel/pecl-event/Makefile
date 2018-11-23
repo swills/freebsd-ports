@@ -1,11 +1,11 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-event/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-event/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	event
 PORTVERSION=	2.3.0
 CATEGORIES=	devel
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Provides interface to libevent library
 
 LICENSE=	PHP301

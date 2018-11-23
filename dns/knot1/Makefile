@@ -1,9 +1,9 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/knot1/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/dns/knot1/Makefile 485217 2018-11-18 08:01:37Z riggs $
 
 PORTNAME=	knot
 PORTVERSION=	1.6.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://secure.nic.cz/files/knot-dns/ \
 		http://dns-lab.com/downloads/knot-dns/
@@ -13,6 +13,9 @@ MAINTAINER=	freebsd@dns.company
 COMMENT=	High performance authoritative-only DNS server
 
 LICENSE=	GPLv3
+
+DEPRECATED=	EOL upstream; successor dns/knot2 is in place
+EXPIRATION_DATE=	2018-12-15
 
 BUILD_DEPENDS=	flex>=2.5.35_1:textproc/flex
 LIB_DEPENDS=	liburcu.so:sysutils/liburcu

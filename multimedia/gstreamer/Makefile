@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer/Makefile 433395 2017-02-05 11:14:37Z sunpoet $
+# $FreeBSD: head/multimedia/gstreamer/Makefile 485327 2018-11-19 15:57:08Z swills $
 #    $MCom: ports/multimedia/gstreamer/Makefile,v 1.74 2010/03/09 10:11:45 kwm Exp $
 
 PORTNAME=	gstreamer
@@ -17,7 +17,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 PORTSCOUT=	limit:0\.10\..*
 
 CFLAGS:=	${CFLAGS} -O2 -Wno-format
-USES=		bison gmake libtool:keepla pathfix pkgconfig tar:bzip2
+USES=		bison gmake libtool:keepla pathfix perl5 pkgconfig tar:bzip2
+USE_PERL5=	build
 USE_GNOME=	glib20 introspection libxml2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-tests \

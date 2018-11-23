@@ -1,8 +1,9 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	fs-uae-launcher
 PORTVERSION=	2.8.4
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://fs-uae.net/fs-uae/stable/${PORTVERSION}/
 
@@ -16,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		gettext gmake pathfix python:3.4+ pyqt:5
 
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist noflavors
 USE_PYQT=	core sip gui widgets opengl
 
 INSTALLS_ICONS=	yes

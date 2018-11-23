@@ -1,5 +1,5 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/www/rubygem-passenger/Makefile 481455 2018-10-07 16:18:58Z osa $
+# $FreeBSD: head/www/rubygem-passenger/Makefile 485348 2018-11-19 18:20:47Z sunpoet $
 
 PORTNAME=	passenger
 PORTVERSION=	5.3.5
@@ -24,6 +24,9 @@ FLAVOR?=	${FLAVORS:[1]}
 
 apache_PKGNAMESUFFIX=	-apache
 nginx_PKGNAMESUFFIX=	-nginx
+
+apache_CONFLICTS_INSTALL=	${PKGNAMEPREFIX}${PORTNAME}-nginx
+nginx_CONFLICTS_INSTALL=	${PKGNAMEPREFIX}${PORTNAME}-apache
 
 OPTIONS_DEFINE=	DEBUG SYMLINK
 OPTIONS_EXCLUDE=DOCS

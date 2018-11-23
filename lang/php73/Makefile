@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/php73/Makefile 484410 2018-11-07 21:05:55Z joneum $
+# $FreeBSD: head/lang/php73/Makefile 485615 2018-11-22 20:20:58Z emaste $
 
 PORTNAME=	php73
 DISTVERSION=	7.3.0RC5
@@ -32,6 +32,9 @@ CONFIGURE_ARGS+=--with-layout=GNU \
 		--program-prefix=""
 USES+=		autoreconf:build
 USE_GNOME=	libxml2
+
+# PR230207 Allow relocations against read-only segments (override lld default)
+LDFLAGS_i386=	-Wl,-z,notext
 
 OPTIONS_DEFINE+=CLI CGI FPM EMBED PHPDBG DEBUG DTRACE IPV6 LINKTHR ZTS
 OPTIONS_DEFAULT=CLI CGI FPM EMBED LINKTHR DTRACE

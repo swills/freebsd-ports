@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 483887 2018-11-03 11:58:10Z tijl $
+# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	gstreamer1-editing-services
 PORTVERSION=	1.14.4
@@ -12,8 +12,9 @@ COMMENT=	GStreamer editing services
 
 PORTSCOUT=	limitw:1,even
 
-USES=		compiler:c11 gmake gnome libtool pathfix python:3.6+ pkgconfig tar:xz
+USES=		compiler:c11 gmake gnome libtool pathfix perl5 python:3.6+ pkgconfig tar:xz
 USE_LDCONFIG=	yes
+USE_PERL5=	build
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20 introspection:build libxml2 pygobject3:build
 USE_GSTREAMER1=	good

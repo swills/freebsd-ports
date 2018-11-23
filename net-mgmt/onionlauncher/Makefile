@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/onionlauncher/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-mgmt/onionlauncher/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	onionlauncher
 PORTVERSION=	0.0.2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	neel@neelc.org

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/tortoisehg/Makefile 476747 2018-08-09 14:24:37Z arrowd $
+# $FreeBSD: head/devel/tortoisehg/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	tortoisehg
 DISTVERSION=	4.6
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/tortoisehg/targz/downloads/
 

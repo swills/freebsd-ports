@@ -1,9 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/embree/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/embree/Makefile 485414 2018-11-20 07:15:29Z danfe $
 
 PORTNAME=	embree
-PORTVERSION=	2.17.5
-PORTREVISION=	1
+PORTVERSION=	2.17.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

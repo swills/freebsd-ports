@@ -1,8 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/editors/dlangide/Makefile 472478 2018-06-15 18:15:28Z acm $
+# $FreeBSD: head/editors/dlangide/Makefile 485406 2018-11-20 03:00:51Z acm $
 
 PORTNAME=	dlangide
 PORTVERSION=	0.8.12
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
 
@@ -10,6 +11,8 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	D language IDE based on DlangUI
 
 LICENSE=	BSL
+
+BROKEN=		does not compile with latest version of ldc
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \

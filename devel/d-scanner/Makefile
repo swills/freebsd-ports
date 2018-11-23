@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/d-scanner/Makefile 472513 2018-06-16 01:44:27Z acm $
+# $FreeBSD: head/devel/d-scanner/Makefile 485400 2018-11-20 02:53:00Z acm $
 
 PORTNAME=	d-scanner
-PORTVERSION=	0.5.3
+PORTVERSION=	0.5.11
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -13,11 +13,13 @@ LICENSE=	BSL
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \
+		rdmd:lang/dlang-tools \
 		${LOCALBASE}/lib/d/libemsi_containers.a:devel/containers \
 		${LOCALBASE}/lib/d/libdsymbol.a:devel/dsymbol \
 		${LOCALBASE}/lib/d/libinifiled.a:devel/inifiled \
 		${LOCALBASE}/lib/d/libddoc.a:devel/libddoc \
 		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse \
+		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator \
 		rdmd:lang/dlang-tools
 

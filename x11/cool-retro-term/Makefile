@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/cool-retro-term/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/x11/cool-retro-term/Makefile 485517 2018-11-21 14:21:59Z linimon $
 
 PORTNAME=	cool-retro-term
 PORTVERSION=	1.0.0
@@ -23,7 +23,7 @@ USE_QT=		qmake_build buildtools_build core declarative gui widgets \
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == powerpc
+.if ${ARCH:Mmips*} || ${ARCH:Mpowerpc*} || ${ARCH} == sparc64
 USE_GCC=	yes
 .else
 CC=		clang

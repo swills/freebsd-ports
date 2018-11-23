@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/cmrt/Makefile 483899 2018-11-03 16:25:07Z jbeich $
+# $FreeBSD: head/multimedia/cmrt/Makefile 485568 2018-11-22 00:07:46Z jbeich $
 
 PORTNAME=	cmrt
 DISTVERSION=	1.0.6
@@ -26,5 +26,10 @@ INSTALL_TARGET=	install-strip
 post-patch:
 	@${REINPLACE_CMD} -e '/-g/d; /-O2/d' \
 		${WRKSRC}/src/Makefile.am
+# Silence -Wmacro-redefined
+	@${REINPLACE_CMD} -e '/__fastcall/d' \
+		${WRKSRC}/src/cm_mem.h
+	@${REINPLACE_CMD} -e '/#define UINT_MAX/d' \
+		${WRKSRC}/src/oscl_platform_def.h
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 484442 2018-11-08 10:31:08Z wen $
+# $FreeBSD: head/www/Makefile 485480 2018-11-20 20:10:31Z philip $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -87,6 +87,7 @@
     SUBDIR += claroline
     SUBDIR += clearsilver
     SUBDIR += clearsilver-python
+    SUBDIR += cliqz
     SUBDIR += closure-compiler
     SUBDIR += cmsmadesimple
     SUBDIR += cntlm

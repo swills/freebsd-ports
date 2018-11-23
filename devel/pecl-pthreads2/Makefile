@@ -1,12 +1,12 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-pthreads2/Makefile 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/devel/pecl-pthreads2/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	pthreads
 PORTVERSION=	2.0.10
 CATEGORIES=	devel
 PKGNAMESUFFIX=	2
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Compatible Threading API for PHP5.3+
 
 LICENSE=	PHP301

@@ -1,8 +1,8 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Locale-libintl/Makefile 484711 2018-11-11 18:18:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Locale-libintl/Makefile 485542 2018-11-21 20:20:03Z sunpoet $
 
 PORTNAME=	Locale-libintl
-PORTVERSION=	1.30
+PORTVERSION=	1.31
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

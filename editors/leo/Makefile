@@ -1,9 +1,9 @@
 # Created by: Alan Eldridge <ports@geeksrus.net>
-# $FreeBSD: head/editors/leo/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/editors/leo/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	leo
 PORTVERSION=	5.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	editors python
 MASTER_SITES=	SF/${PORTNAME}/Leo/${PORTVERSION}-final
 DISTNAME=	Leo-${PORTVERSION}-final

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 485018 2018-11-15 19:05:40Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 485326 2018-11-19 15:25:08Z 0mp $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -85,6 +85,7 @@
     SUBDIR += cdiff
     SUBDIR += cgrep
     SUBDIR += chpp
+    SUBDIR += chkascii
     SUBDIR += cl-meta
     SUBDIR += cl-meta-sbcl
     SUBDIR += cl-ppcre

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/ots/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/textproc/ots/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	ots
 PORTVERSION=	0.5.0
@@ -14,6 +14,8 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		unfetchable
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 LIB_DEPENDS=	libpopt.so:devel/popt
 

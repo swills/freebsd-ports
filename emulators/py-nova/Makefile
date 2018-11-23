@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/emulators/py-nova/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/emulators/py-nova/Makefile 485242 2018-11-18 18:35:38Z antoine $
 
 PORTNAME=	nova
 PORTVERSION=	14.0.3
@@ -14,6 +14,8 @@ COMMENT=	OpenStack compute service
 LICENSE=	APACHE20
 
 BROKEN=		depends on conflicting dependencies
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${PY_FLAVOR}
 

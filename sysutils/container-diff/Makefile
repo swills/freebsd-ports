@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/container-diff/Makefile 473519 2018-06-28 21:20:12Z sunpoet $
+# $FreeBSD: head/sysutils/container-diff/Makefile 485338 2018-11-19 18:19:25Z sunpoet $
 
 PORTNAME=	container-diff
-PORTVERSION=	0.11.0
+PORTVERSION=	0.13.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -12,8 +12,9 @@ COMMENT=	Diff your Docker containers
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 USES=		go
+
+GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
 PLIST_FILES=	bin/container-diff
 

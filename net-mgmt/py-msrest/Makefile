@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net-mgmt/py-msrest/Makefile 482367 2018-10-18 19:54:55Z sunpoet $
+# $FreeBSD: head/net-mgmt/py-msrest/Makefile 485545 2018-11-21 20:20:27Z sunpoet $
 
 PORTNAME=	msrest
-PORTVERSION=	0.6.1
+PORTVERSION=	0.6.2
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

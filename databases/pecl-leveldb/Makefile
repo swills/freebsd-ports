@@ -1,12 +1,12 @@
 # Created by: johnpupu <johnpupu@gmail.com>
-# $FreeBSD: head/databases/pecl-leveldb/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/pecl-leveldb/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	leveldb
 PORTVERSION=	0.1.5
 PORTREVISION=	1
 CATEGORIES=	databases
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	This extension is a PHP binding for Google LevelDB
 
 LICENSE=	PHP301

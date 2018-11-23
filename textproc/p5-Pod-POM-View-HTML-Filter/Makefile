@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-POM-View-HTML-Filter/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-Pod-POM-View-HTML-Filter/Makefile 485346 2018-11-19 18:20:31Z sunpoet $
 
 PORTNAME=	Pod-POM-View-HTML-Filter
 PORTVERSION=	0.09
@@ -19,5 +19,7 @@ RUN_DEPENDS=	p5-Pod-POM>=0:textproc/p5-Pod-POM \
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

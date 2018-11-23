@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/emulators/swine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/emulators/swine/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	swine
 PORTVERSION=	1.0.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	emulators deskutils python
 
 MAINTAINER=	koalative@gmail.com

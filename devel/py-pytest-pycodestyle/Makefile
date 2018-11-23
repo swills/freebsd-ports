@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pytest-pycodestyle/Makefile 479326 2018-09-09 18:11:17Z yuri $
+# $FreeBSD: head/devel/py-pytest-pycodestyle/Makefile 485336 2018-11-19 18:07:25Z yuri $
 
 PORTNAME=	pytest-pycodestyle
-DISTVERSION=	1.3.0
+DISTVERSION=	1.3.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

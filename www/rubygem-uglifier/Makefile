@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-uglifier/Makefile 479655 2018-09-12 22:57:43Z sunpoet $
+# $FreeBSD: head/www/rubygem-uglifier/Makefile 485271 2018-11-18 20:38:11Z sunpoet $
 
 PORTNAME=	uglifier
-PORTVERSION=	4.1.19
+PORTVERSION=	4.1.20
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

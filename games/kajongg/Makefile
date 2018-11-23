@@ -1,9 +1,12 @@
-# $FreeBSD: head/games/kajongg/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/kajongg/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 BROKEN=		Requires PyQt5 for python3 which is broken at the moment.
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-12-19
 
 PORTNAME=	kajongg
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

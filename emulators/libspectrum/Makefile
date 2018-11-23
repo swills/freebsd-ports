@@ -1,5 +1,5 @@
 # Created by: Alexey V. Antipovsky <kemm@in-line.ru>
-# $FreeBSD: head/emulators/libspectrum/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/emulators/libspectrum/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	libspectrum
 PORTVERSION=	1.4.4
@@ -15,8 +15,9 @@ LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libgcrypt.so:security/libgcrypt
 
 GNU_CONFIGURE=	yes
-USES=		gettext gmake libtool pkgconfig
+USES=		gettext gmake libtool pkgconfig perl5
 USE_GNOME=	glib20
+USE_PERL5=	build
 USE_LDCONFIG=	yes
 
 INSTALL_TARGET=	install-strip

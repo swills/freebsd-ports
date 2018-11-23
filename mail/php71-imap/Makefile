@@ -1,6 +1,7 @@
-# $FreeBSD: head/mail/php71-imap/Makefile 475229 2018-07-24 08:44:32Z tz $
+# $FreeBSD: head/mail/php71-imap/Makefile 485597 2018-11-22 11:53:53Z joneum $
 
 CATEGORIES=	mail
+PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
 

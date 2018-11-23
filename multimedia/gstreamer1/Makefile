@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1/Makefile 483887 2018-11-03 11:58:10Z tijl $
+# $FreeBSD: head/multimedia/gstreamer1/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	gstreamer
 PORTVERSION=	1.14.4
@@ -17,7 +17,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 PORTSCOUT=	limitw:1,even
 
 CFLAGS+=	-Wno-format
-USES=		bison gettext gmake gnome libtool pathfix pkgconfig python tar:xz
+USES=		bison gettext gmake gnome libtool pathfix perl5 pkgconfig python tar:xz
+USE_PERL5=	build
 USE_GNOME=	glib20 introspection:build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-tests \

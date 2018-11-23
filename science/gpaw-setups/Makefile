@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/gpaw-setups/Makefile 483445 2018-10-30 04:36:22Z yuri $
+# $FreeBSD: head/science/gpaw-setups/Makefile 485500 2018-11-21 06:01:05Z yuri $
 
 PORTNAME=	gpaw-setups
-DISTVERSION=	0.9.11271
+DISTVERSION=	0.9.20000
 CATEGORIES=	science
 MASTER_SITES=	https://wiki.fysik.dtu.dk/gpaw-files/
 

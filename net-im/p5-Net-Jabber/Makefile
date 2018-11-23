@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
-# $FreeBSD: head/net-im/p5-Net-Jabber/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/net-im/p5-Net-Jabber/Makefile 485220 2018-11-18 09:30:26Z amdmi3 $
 
 PORTNAME=	Net-Jabber
 PORTVERSION=	2.0
@@ -12,10 +12,14 @@ DIST_SUBDIR=	jabber
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Net::Jabber provides Perl Developer access to the Jabber protocol
 
+LICENSE=	LGPL20+
+LICENSE_FILE=	${WRKSRC}/LICENSE.LGPL
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Net-XMPP>=0:net-im/p5-Net-XMPP
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: TATEISHI Katsuyuki <katsu@iec.hiroshima-u.ac.jp>
-# $FreeBSD: head/graphics/gimageview/Makefile 478529 2018-08-31 08:16:18Z tobik $
+# $FreeBSD: head/graphics/gimageview/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	gimageview
 PORTVERSION=	0.2.27
@@ -15,9 +15,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		gmake jpeg libtool localbase pkgconfig
+USES=		gmake jpeg libtool localbase perl5 pkgconfig
 GNU_CONFIGURE=	yes
 USE_GNOME=	gtk20
+USE_PERL5=	build
 USE_XORG=	ice xinerama
 CONFIGURE_ARGS=	--with-gtk2
 INSTALL_TARGET=	install-strip

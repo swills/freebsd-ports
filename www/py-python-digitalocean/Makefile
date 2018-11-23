@@ -1,8 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/www/py-python-digitalocean/Makefile 485114 2018-11-17 03:29:58Z skreuzer $
+# $FreeBSD: head/www/py-python-digitalocean/Makefile 485502 2018-11-21 08:37:32Z mat $
 
 PORTNAME=	python-digitalocean
 PORTVERSION=	1.14.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -16,7 +17,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	koalalorenzo
-GH_TAGNAME=	v${PORTVERSION}
 
 USES=	python
 USE_PYTHON=	distutils autoplist

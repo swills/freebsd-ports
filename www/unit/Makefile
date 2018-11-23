@@ -1,8 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/unit/Makefile 485049 2018-11-15 21:30:08Z osa $
+# $FreeBSD: head/www/unit/Makefile 485364 2018-11-19 21:40:15Z osa $
 
 PORTNAME=	unit
 PORTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://unit.nginx.org/download/
 
@@ -13,6 +14,8 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to build: nxt_conf_validation.c:275: undefined reference to __builtin_popcount
+
+EXTRA_PATCHES=	${FILESDIR}/php_zts.patch:-p1
 
 USES+=		cpe
 

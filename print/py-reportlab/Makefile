@@ -1,8 +1,8 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/print/py-reportlab/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/print/py-reportlab/Makefile 485291 2018-11-19 00:10:48Z bofh $
 
 PORTNAME=	reportlab
-PORTVERSION=	3.2.0
+PORTVERSION=	3.5.9
 CATEGORIES=	print python
 MASTER_SITES=	CHEESESHOP \
 		http://www.reportlab.com/ftp/
@@ -24,9 +24,7 @@ USE_PYTHON=	distutils autoplist
 CONFLICTS=	py*-reportlab[^3]-[^3].* \
 		py*-reportlab-[^3].*
 
-PORTSCOUT=	limit:^3\.0\.
-
-PFBFER_VERSION=	20070710
+PFBFER_VERSION=	20180109
 PFBFER=	pfbfer-${PFBFER_VERSION}.zip
 
 MAKE_ENV=	PACKAGE_PATH="${REPORTLABDIR}"

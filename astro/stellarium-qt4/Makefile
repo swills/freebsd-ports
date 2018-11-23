@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/stellarium-qt4/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	stellarium
 PORTVERSION=	0.12.9
@@ -18,7 +18,8 @@ LICENSE=	GPLv2+
 CONFLICTS_INSTALL=	${PORTNAME}-0.17.*
 PORTSCOUT=	limit:^0\.12\.			# track only 0.12.x (legacy)
 
-USES=		cmake gettext iconv qt:4
+USES=		cmake gettext iconv perl5 qt:4
+USE_PERL5=	build
 USE_QT=		moc_build rcc_build uic_build qmake_build \
 		corelib gui network opengl
 

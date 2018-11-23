@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/x11/sakura/Makefile 473051 2018-06-22 18:01:59Z danilo $
+# $FreeBSD: head/x11/sakura/Makefile 485327 2018-11-19 15:57:08Z swills $
 
 PORTNAME=	sakura
 PORTVERSION=	3.6.0
@@ -20,7 +20,8 @@ OPTIONS_DEFINE=	DOCS
 
 USE_GNOME=	cairo gdkpixbuf2 vte3
 USE_XORG=	x11
-USES=		cmake pkgconfig gettext tar:bzip2
+USES=		cmake pkgconfig gettext perl5 tar:bzip2
+USE_PERL5=	build
 LDFLAGS+=	-lintl
 
 post-patch:

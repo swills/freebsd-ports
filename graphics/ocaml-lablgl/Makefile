@@ -1,9 +1,9 @@
 # Created by: Ronald Kuehn <rk@ronald.org>
-# $FreeBSD: head/graphics/ocaml-lablgl/Makefile 449393 2017-09-07 11:01:02Z gahr $
+# $FreeBSD: head/graphics/ocaml-lablgl/Makefile 485603 2018-11-22 15:49:46Z tobik $
 
 PORTNAME=	lablgl
 PORTVERSION=	1.05
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://wwwfun.kurims.kyoto-u.ac.jp/soft/lsl/dist/ \
@@ -17,7 +17,7 @@ LICENSE=	BSD3CLAUSE
 
 CONFLICTS=	ocaml-nox11-[0-9]*
 
-USES=		gmake tk:85
+USES=		gmake tk:85+
 USE_XORG=	x11 xext xmu
 USE_GL=		glut
 USE_OCAML=	yes

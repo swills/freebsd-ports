@@ -1,8 +1,9 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pg_stat_kcache/Makefile 484367 2018-11-06 23:46:05Z girgen $
+# $FreeBSD: head/databases/pg_stat_kcache/Makefile 485502 2018-11-21 08:37:32Z mat $
 
 PORTNAME=	pg_stat_kcache
-PORTVERSION=	2.1.1
+DISTVERSIONPREFIX=	REL
+DISTVERSION=	2_1_1
 CATEGORIES=	databases
 
 MAINTAINER=	girgen@FreeBSD.org
@@ -16,7 +17,6 @@ WANT_PGSQL=	server contrib
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	powa-team
-GH_TAGNAME=	REL${PORTVERSION:S/./_/g}
 
 pre-patch:
 	@${MV} ${BUILD_WRKSRC}/README.rst ${BUILD_WRKSRC}/${PORTNAME}-README.rst

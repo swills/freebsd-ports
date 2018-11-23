@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime15/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/lang/erlang-runtime15/Makefile 485606 2018-11-22 18:26:41Z dumbbell $
 
 PORTNAME=	erlang
 PORTVERSION=	15.b.03.1
@@ -125,4 +125,4 @@ post-stage:
 	@cd ${STAGEDIR}${PREFIX}; ${FIND} lib/${ERLANG_LIB}/* -type f -o -type l \
 		| ${SORT} >> ${TMPPLIST}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

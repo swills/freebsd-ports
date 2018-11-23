@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/audio/esperanza/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/esperanza/Makefile 485252 2018-11-18 19:32:55Z antoine $
 
 PORTNAME=	esperanza
 PORTVERSION=	0.4.0.20091017
@@ -13,6 +13,8 @@ COMMENT=	Advanced Qt4 XMMS2 client
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING.GPL
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libxmmsclient++.so:audio/cpp-xmms2
 

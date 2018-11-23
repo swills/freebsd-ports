@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/net-im/turpial/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-im/turpial/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	turpial
 PORTVERSION=	3.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-im python
 MASTER_SITES=	http://files.turpial.org.ve/sources/stable/
 

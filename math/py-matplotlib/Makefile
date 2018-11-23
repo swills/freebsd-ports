@@ -1,10 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/math/py-matplotlib/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/py-matplotlib/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	matplotlib
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.1.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch6/Makefile 484109 2018-11-04 16:58:30Z feld $
+# $FreeBSD: head/textproc/elasticsearch6/Makefile 485491 2018-11-20 22:51:17Z feld $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	6.4.2
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	textproc java devel
 MASTER_SITES=	https://artifacts.elastic.co/downloads/${PORTNAME}/ \
 		http://mirrors.rit.edu/zi/
@@ -27,6 +27,7 @@ NO_BUILD=	yes
 JAVA_VERSION=	1.8+
 USE_RC_SUBR=	${PORTNAME}
 SHEBANG_FILES=	bin/elasticsearch \
+		bin/elasticsearch-cli \
 		bin/elasticsearch-env \
 		bin/elasticsearch-plugin
 
@@ -36,6 +37,7 @@ OPTIONS_DEFINE=	DOCS
 
 CONFIG_FILES=	elasticsearch.yml log4j2.properties jvm.options
 BINS=		elasticsearch \
+		elasticsearch-cli \
 		elasticsearch-env \
 		elasticsearch-plugin
 

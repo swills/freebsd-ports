@@ -1,5 +1,5 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/irc/lostirc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/irc/lostirc/Makefile 485236 2018-11-18 18:19:40Z linimon $
 
 PORTNAME=	lostirc
 PORTVERSION=	0.4.6
@@ -14,8 +14,6 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgtkmm-2.4.so:x11-toolkits/gtkmm24
-
-BROKEN_powerpc64=	fails to build: Socket.cpp: 'strerror' was not declared in this scope
 
 USES=		compiler:c++11-lang pathfix pkgconfig gettext
 USE_CXXSTD=	c++11

@@ -1,11 +1,11 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-yaconf/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/devel/pecl-yaconf/Makefile 485511 2018-11-21 12:41:57Z joneum $
 
 PORTNAME=	yaconf
 DISTVERSION=	1.0.7
 CATEGORIES=	devel
 
-MAINTAINER=	johnpupu@gmail.com
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHP Persistent Configurations Container
 
 LICENSE=	PHP301

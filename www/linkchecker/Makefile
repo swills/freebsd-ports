@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/www/linkchecker/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/linkchecker/Makefile 485614 2018-11-22 20:18:37Z tcberner $
 
 PORTNAME=	linkchecker
 PORTVERSION=	9.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 DISTNAME=	LinkChecker-${PORTVERSION}

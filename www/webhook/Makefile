@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/webhook/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/www/webhook/Makefile 485534 2018-11-21 19:45:09Z swills $
 
 PORTNAME=	webhook
-PORTVERSION=	2.6.8
+PORTVERSION=	2.6.9
 CATEGORIES=	www
 
 MAINTAINER=	stb@lassitu.de

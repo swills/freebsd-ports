@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rust-bindgen/Makefile 484287 2018-11-06 11:44:43Z jbeich $
+# $FreeBSD: head/devel/rust-bindgen/Makefile 485482 2018-11-20 20:31:16Z jbeich $
 
 PORTNAME=	rust-bindgen
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,6 @@ USES=		cargo
 USE_GITHUB=	yes
 GH_ACCOUNT=	rust-lang-nursery
 PLIST_FILES=	bin/bindgen
-LLVM_DEFAULT?=	70 # Keep in sync with Mk/bsd.gecko.mk
 
 CARGO_CRATES=	aho-corasick-0.6.8 \
 		ansi_term-0.11.0 \

@@ -1,11 +1,11 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/x11-fonts/liberation-fonts-ttf/Makefile 482561 2018-10-20 15:30:28Z tobik $
+# $FreeBSD: head/x11-fonts/liberation-fonts-ttf/Makefile 485361 2018-11-19 20:42:05Z thierry $
 
 PORTNAME=	liberation-fonts-ttf
-PORTVERSION=	2.00.3
+PORTVERSION=	2.00.4
 PORTEPOCH=	2
 CATEGORIES=	x11-fonts
-MASTER_SITES=	https://github.com/liberationfonts/liberation-fonts/files/2012634/
+MASTER_SITES=	https://github.com/liberationfonts/liberation-fonts/files/2579281/
 
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Liberation fonts from Red Hat to replace MS TTF fonts
