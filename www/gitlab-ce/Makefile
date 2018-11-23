@@ -135,7 +135,6 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-licensee8>=8.9:devel/rubygem-licensee8 \
 	rubygem-rack-attack44>=4.4.1:www/rubygem-rack-attack44 \
 	rubygem-ace-rails-ap>=4.1.0:www/rubygem-ace-rails-ap \
-	rubygem-mousetrap-rails>=1.4.6:www/rubygem-mousetrap-rails \
 	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
 	rubygem-fast_blank>=0:devel/rubygem-fast_blank \
 	rubygem-chronic>=0.10.2:devel/rubygem-chronic \
