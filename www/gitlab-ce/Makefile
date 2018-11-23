@@ -105,6 +105,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
 	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
 	rubygem-puma>=3.12:www/rubygem-puma \
+	rubygem-puma_worker_killer>=0:www/rubygem-puma_worker_killer \
 	rubygem-state_machines-activerecord>=0.5.1:databases/rubygem-state_machines-activerecord \
 	rubygem-acts-as-taggable-on>=5.0:www/rubygem-acts-as-taggable-on \
 	rubygem-sidekiq>=5.2.1:devel/rubygem-sidekiq \
