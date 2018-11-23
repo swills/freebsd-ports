@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab-ce/Makefile 485436 2018-11-20 16:30:25Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.4.7
+PORTVERSION=	11.5.0
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -216,7 +216,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	98f84238230c94a46a9864a5a267becd67d30b50
+GL_COMMIT=	b7b1e8ecdf7407c8ec887a88a92c4a3eb57299d2
 
 USERS=	git
 GROUPS=	git
