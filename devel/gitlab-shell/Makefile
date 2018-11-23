@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/gitlab-shell/Makefile 480517 2018-09-23 18:15:25Z mfechner $
+# $FreeBSD: head/devel/gitlab-shell/Makefile 485671 2018-11-23 15:03:22Z mfechner $
 
 PORTNAME=	gitlab-shell
-PORTVERSION=	8.3.3
+PORTVERSION=	8.4.1
 CATEGORIES=	devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	gem:devel/ruby-gems \
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the commit hash here: https://gitlab.com/gitlab-org/gitlab-shell/tags
-GL_COMMIT=	4b19de3a1897d06c3e0d530f679c6f56e250ca41
+GL_COMMIT=	9cf3334cb5cdf871266a2b9538589e36efd788e1
 
 USERS=		git
 GROUPS=		git
@@ -37,8 +37,5 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR})
 	@${MKDIR} ${STAGEDIR}/var/log/gitlab-shell
-	${STRIP_CMD} ${STAGEDIR}${DATADIR}/bin/gitaly-upload-pack
-	${STRIP_CMD} ${STAGEDIR}${DATADIR}/bin/gitaly-receive-pack
-	${STRIP_CMD} ${STAGEDIR}${DATADIR}/bin/gitaly-upload-archive
 
 .include <bsd.port.mk>

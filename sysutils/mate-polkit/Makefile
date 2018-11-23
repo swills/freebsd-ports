@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/mate-polkit/Makefile 484153 2018-11-04 21:59:11Z ericbsd $
+# $FreeBSD: head/sysutils/mate-polkit/Makefile 485652 2018-11-23 12:54:42Z ericbsd $
 
 PORTNAME=	mate-polkit
 PORTVERSION=	1.20.1
@@ -8,7 +8,7 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	MATE frontend to the PolicKit framework
+COMMENT=	MATE frontend to the PolicyKit framework
 
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING

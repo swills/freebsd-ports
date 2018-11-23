@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/math/mprime/Makefile 454695 2017-11-22 17:40:24Z swills $
+# $FreeBSD: head/math/mprime/Makefile 485656 2018-11-23 13:04:12Z swills $
 
 PORTNAME=	mprime
-PORTVERSION=	28.10
+PORTVERSION=	29.4b7
 CATEGORIES=	math benchmarks net
 MASTER_SITES=	http://www.mersenne.org/ftp_root/gimps/ \
 		ftp://mersenne.org/gimps/
@@ -18,7 +18,9 @@ LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
 
 ONLY_FOR_ARCHS=	amd64 i386
 
-LIB_DEPENDS=	libcurl.so:ftp/curl
+LIB_DEPENDS=	libcurl.so:ftp/curl					\
+		libhwloc.so:devel/hwloc					\
+		libgmp.so:math/gmp
 
 USES=		zip
 NO_WRKSUBDIR=	yes

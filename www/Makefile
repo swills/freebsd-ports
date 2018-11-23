@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 485480 2018-11-20 20:10:31Z philip $
+# $FreeBSD: head/www/Makefile 485662 2018-11-23 14:51:28Z mfechner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -2120,6 +2120,7 @@
     SUBDIR += rubygem-pagerduty
     SUBDIR += rubygem-passenger
     SUBDIR += rubygem-puma
+    SUBDIR += rubygem-puma_worker_killer
     SUBDIR += rubygem-pusher-client
     SUBDIR += rubygem-rabbirack
     SUBDIR += rubygem-rack

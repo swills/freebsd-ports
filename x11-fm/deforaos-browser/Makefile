@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/x11-fm/deforaos-browser/Makefile 430363 2017-01-02 15:01:10Z olivier $
+# $FreeBSD: head/x11-fm/deforaos-browser/Makefile 485644 2018-11-23 09:30:28Z amdmi3 $
 
 PORTNAME=	deforaos-browser
 PORTVERSION=	0.5.1
@@ -10,7 +10,7 @@ DISTNAME=	Browser-${PORTVERSION}
 MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	DeforaOS desktop file browser
 
-LICENSE=	GPLv3
+LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem \
@@ -25,9 +25,9 @@ NLS_USES=		gettext
 DOCS_BUILD_DEPENDS=	xsltproc:textproc/libxslt \
     ${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl
 
+USES=		desktop-file-utils gnome pkgconfig
 USE_GNOME=	gtk20 cairo
 USE_XORG=	x11
-USES=		desktop-file-utils pkgconfig
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 MAKE_ARGS+=	PREFIX=${PREFIX}

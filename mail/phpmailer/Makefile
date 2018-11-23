@@ -1,8 +1,8 @@
 # Created by: Zhen REN <bg1tpt@gmail.com>
-# $FreeBSD: head/mail/phpmailer/Makefile 471220 2018-05-31 17:19:13Z joneum $
+# $FreeBSD: head/mail/phpmailer/Makefile 485661 2018-11-23 14:42:29Z joneum $
 
 PORTNAME=	phpmailer
-PORTVERSION=	5.2.26
+PORTVERSION=	5.2.27
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 
@@ -11,6 +11,8 @@ COMMENT=	Full Featured Email Transfer Class for PHP
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES=		cpe dos2unix php
 
 CONFLICTS_INSTALL=	phpmailer6
 
@@ -22,7 +24,6 @@ GH_PROJECT=	PHPMailer
 
 NO_BUILD=	yes
 NO_ARCH=	yes
-USES=		cpe dos2unix php
 
 CPE_VENDOR=	phpmailer_project
 SUB_FILES=	pkg-message

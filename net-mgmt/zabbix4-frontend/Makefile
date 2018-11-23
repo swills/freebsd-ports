@@ -1,7 +1,8 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix4-frontend/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net-mgmt/zabbix4-frontend/Makefile 485651 2018-11-23 12:33:18Z dbaio $
 
 PORTNAME=	zabbix4
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 PKGNAMESUFFIX=	-frontend
 
@@ -12,7 +13,7 @@ NO_ARCH=	yes
 PATCHDIR=
 PLIST=		${PKGDIR}/pkg-plist.frontend
 
-USE_PHP=	bcmath ctype dom gd gettext json ldap mbstring pcre \
+USE_PHP=	bcmath ctype dom filter gd gettext json ldap mbstring pcre \
 		session simplexml snmp sockets xml xmlreader xmlwriter
 USES+=		php:web
 
