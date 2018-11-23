@@ -189,8 +189,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-flipper-active_record013>=0.13.0:databases/rubygem-flipper-active_record013 \
 	rubygem-flipper-active_support_cache_store013>=0.13.0:devel/rubygem-flipper-active_support_cache_store013 \
 	rubygem-lograge>=0.5:www/rubygem-lograge \
-	rubygem-grape_logging>=1.7:devel/rubygem-grape_logging \
-	rubygem-asset_sync>=2.4:net/rubygem-asset_sync
+	rubygem-grape_logging>=1.7:devel/rubygem-grape_logging
 
 BUILD_DEPENDS=	gem:devel/ruby-gems \
 	${MY_DEPENDS}
