@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 # only rubygem-pg and rubygem-mysql are defined later as RUN_DEPENDS
 # for the options
 MY_DEPENDS=	git>=2.16.2:devel/git \
-	gitlab-shell>=8.3.3:devel/gitlab-shell \
+	gitlab-shell>=8.4.1:devel/gitlab-shell \
 	gitlab-workhorse>=7.0.0:www/gitlab-workhorse \
 	gitaly>=0.129.0:devel/gitaly \
 	gitlab-pages>=1.3.0:www/gitlab-pages \
