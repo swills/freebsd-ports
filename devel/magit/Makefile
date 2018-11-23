@@ -1,11 +1,10 @@
 # Created by: Jun Kuriyama <kuriyama@FreeBSD.org>
-# $FreeBSD: head/devel/magit/Makefile 484638 2018-11-10 19:54:46Z jrm $
+# $FreeBSD: head/devel/magit/Makefile 485663 2018-11-23 14:51:38Z swills $
 
 PORTNAME=	magit
-PORTVERSION=	2.90.0
-DISTVERSIONPREFIX=	v
+PORTVERSION=	2.90.1
 CATEGORIES=	devel elisp
-MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/${DISTVERSIONFULL}/
+MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	yasu@utahime.org

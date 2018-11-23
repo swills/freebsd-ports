@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/zapcc/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/devel/zapcc/Makefile 485653 2018-11-23 12:57:58Z swills $
 
 PORTNAME=	zapcc
 PORTVERSION=	g20180622
 CATEGORIES=	devel
 
-MAINTAINER=	martinfilla@post.cz
+MAINTAINER=	freebsd@sysctl.cz
 COMMENT=	C++ caching compiler based on clang
 
 LICENSE=	NCSA

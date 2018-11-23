@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 462178 2018-02-17 17:51:15Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 485667 2018-11-23 14:57:09Z mfechner $
 
 PORTNAME=	github-linguist
 PORTVERSION=	6.2.0

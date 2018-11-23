@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-puma_worker_killer/Makefile 485662 2018-11-23 14:51:28Z mfechner $
 
 PORTNAME=	puma_worker_killer
 PORTVERSION=	0.1.0

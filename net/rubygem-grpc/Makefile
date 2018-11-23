@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-grpc/Makefile 471208 2018-05-31 13:48:39Z mfechner $
+# $FreeBSD: head/net/rubygem-grpc/Makefile 485665 2018-11-23 14:54:27Z mfechner $
 
 PORTNAME=	grpc
 PORTVERSION=	1.15.0

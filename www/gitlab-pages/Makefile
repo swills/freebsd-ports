@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/gitlab-pages/Makefile 480520 2018-09-23 18:22:16Z mfechner $
+# $FreeBSD: head/www/gitlab-pages/Makefile 485668 2018-11-23 14:58:34Z mfechner $
 
 PORTNAME=	gitlab-pages
 PORTVERSION=	1.3.0
