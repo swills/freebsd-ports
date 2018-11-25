@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/libdparse/Makefile 485385 2018-11-20 02:42:15Z acm $
+# $FreeBSD: head/devel/libdparse/Makefile 485793 2018-11-24 21:18:01Z acm $
 
 PORTNAME=	libdparse
 PORTVERSION=	0.9.10
@@ -13,6 +13,7 @@ LICENSE=	BSL
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \
+		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 
 USE_GITHUB=	yes

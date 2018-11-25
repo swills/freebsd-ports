@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dsymbol/Makefile 485387 2018-11-20 02:43:40Z acm $
+# $FreeBSD: head/devel/dsymbol/Makefile 485842 2018-11-25 03:05:49Z acm $
 
 PORTNAME=	dsymbol
 PORTVERSION=	0.4.8
@@ -13,6 +13,7 @@ LICENSE=	BSL
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \
+		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
 		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse \
 		${LOCALBASE}/lib/d/libemsi_containers.a:devel/containers \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator

@@ -1,9 +1,9 @@
 # Created by: chuckr@FreeBSD.org
-# $FreeBSD: head/math/octave/Makefile 485464 2018-11-20 19:06:36Z stephen $
+# $FreeBSD: head/math/octave/Makefile 485844 2018-11-25 05:55:05Z stephen $
 
 PORTNAME=	octave
 PORTVERSION=	${OCTAVE_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math java
 MASTER_SITES=	GNU
 
@@ -67,7 +67,9 @@ CONFIGURE_ENV=	GPERF="${LOCALBASE}/bin/gperf" \
 		MOC_QTVER=${LOCALBASE}/bin/moc \
 		UIC_QTVER=${LOCALBASE}/bin/uic \
 		RCC_QTVER=${LOCALBASE}/bin/rcc \
-		ac_cv_type_max_align_t=yes
+		ac_cv_type_max_align_t=yes \
+		ac_cv_path_SED=${LOCALBASE}/bin/gsed
+
 CONFIGURE_ARGS=	--host=${GNU_HOST} \
 		--with-blas="-L${LOCALBASE}/lib ${BLASLIB}" \
 		--with-lapack="${LAPACKLIB}" \

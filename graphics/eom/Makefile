@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/eom/Makefile 483844 2018-11-02 20:21:07Z ericbsd $
+# $FreeBSD: head/graphics/eom/Makefile 485738 2018-11-24 09:11:01Z linimon $
 
 PORTNAME=	eom
 PORTVERSION=	1.20.1
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		compiler:c++11-lang desktop-file-utils gettext gmake jpeg \
+USES=		compiler:c11 desktop-file-utils gettext gmake jpeg \
 		libtool localbase pathfix pkgconfig tar:xz
 USE_MATE=	desktop icontheme
 USE_XORG=	x11

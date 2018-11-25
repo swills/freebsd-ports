@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/radiance/Makefile 484141 2018-11-04 19:04:26Z tcberner $
+# $FreeBSD: head/graphics/radiance/Makefile 485720 2018-11-24 01:18:57Z yuri $
 
 PORTNAME=	radiance
-PORTVERSION=	g20181029
-PORTREVISION=	1
+DISTVERSION=	0.6.0
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

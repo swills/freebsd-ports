@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/py-serverfiles/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/misc/py-serverfiles/Makefile 485749 2018-11-24 10:03:01Z yuri $
 
 PORTNAME=	serverfiles
-DISTVERSION=	0.2.1
+DISTVERSION=	0.3.0
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

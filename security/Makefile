@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 485144 2018-11-17 17:30:29Z sunpoet $
+# $FreeBSD: head/security/Makefile 485800 2018-11-24 22:28:15Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -1051,6 +1051,8 @@
     SUBDIR += py-sslstrip
     SUBDIR += py-stem
     SUBDIR += py-stix
+    SUBDIR += py-stix2
+    SUBDIR += py-stix2-patterns
     SUBDIR += py-tlslite
     SUBDIR += py-trezor
     SUBDIR += py-trustedpickle
@@ -1133,6 +1135,7 @@
     SUBDIR += rubygem-encryptor
     SUBDIR += rubygem-ezcrypto
     SUBDIR += rubygem-googleauth
+    SUBDIR += rubygem-googleauth06
     SUBDIR += rubygem-gpgme
     SUBDIR += rubygem-gpgr
     SUBDIR += rubygem-gssapi
@@ -1332,8 +1335,8 @@
     SUBDIR += unhide
     SUBDIR += unicornscan
     SUBDIR += unssh
-    SUBDIR += vault
     SUBDIR += vanguards-tor
+    SUBDIR += vault
     SUBDIR += veracrypt
     SUBDIR += vinetto
     SUBDIR += vlock

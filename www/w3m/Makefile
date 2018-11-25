@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/w3m/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/www/w3m/Makefile 485767 2018-11-24 12:09:55Z nobutaka $
 
 PORTNAME=	w3m
 PORTVERSION=	0.5.3.20180520
@@ -73,7 +73,7 @@ PKGMESSAGE=	${NONEXISTENT}
 
 post-patch:
 	@${REINPLACE_CMD} -e \
-		's|\`\(expr\) \(.*\) : \(.*\)`|`\1 \\( \2 : \3 \\)`|' \
+		's|`\(expr\) \(.*\) : \(.*\)`|`\1 \\( \2 : \3 \\)`|' \
 		-e 's|/usr/local|${LOCALBASE}|g' \
 		${WRKSRC}/configure
 	@${FIND} ${WRKSRC}/doc* -type f \! -name HISTORY \

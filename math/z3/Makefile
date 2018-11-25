@@ -1,9 +1,8 @@
-# $FreeBSD: head/math/z3/Makefile 480432 2018-09-22 20:31:22Z arrowd $
+# $FreeBSD: head/math/z3/Makefile 485759 2018-11-24 11:43:44Z arrowd $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
-DISTVERSION=	4.7.1
-PORTREVISION=	1
+DISTVERSION=	4.8.3
 CATEGORIES=	math
 
 MAINTAINER=	arrowd@FreeBSD.org
@@ -15,6 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 USES=		compiler:c++11-lang python:2.7,build
 USE_GITHUB=	yes
 GH_ACCOUNT=	Z3Prover
+
+HAS_CONFIGURE=		yes
+CONFIGURE_ARGS=		--prefix=${PREFIX}
+USE_LDCONFIG=		yes
 
 OPTIONS_DEFINE=		DEBUG STATIC GMP
 
@@ -28,13 +31,9 @@ STATIC_CONFIGURE_ON=	--staticlib
 
 GMP_DESC=		Use GMP library for AP arithmetic
 GMP_CONFIGURE_ON=	--gmp
-GMP_CXXFLAGS=		-I${LOCALBASE}/include
-GMP_LDFLAGS=		-L${LOCALBASE}/lib
+GMP_USES=		localbase:ldflags
 GMP_LIB_DEPENDS=	libgmp.so:math/gmp
 
-HAS_CONFIGURE=		yes
-CONFIGURE_ARGS=		--prefix=${PREFIX}
-USE_LDCONFIG=		yes
 LDFLAGS_i386=		-Wl,-znotext
 BUILD_WRKSRC=		${WRKSRC}/build
 INSTALL_WRKSRC=		${WRKSRC}/build

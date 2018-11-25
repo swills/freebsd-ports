@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-google-api-client/Makefile 484736 2018-11-11 18:22:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-google-api-client/Makefile 485823 2018-11-24 22:31:28Z sunpoet $
 
 PORTNAME=	google-api-client
 PORTVERSION=	0.25.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +13,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-addressable>=2.5.1:www/rubygem-addressable \
-		rubygem-googleauth>=0.5:security/rubygem-googleauth \
+		rubygem-googleauth06>=0.5:security/rubygem-googleauth06 \
 		rubygem-httpclient>=2.8.1:www/rubygem-httpclient \
 		rubygem-mime-types>=3.0:misc/rubygem-mime-types \
 		rubygem-representable>=3.0:textproc/rubygem-representable \

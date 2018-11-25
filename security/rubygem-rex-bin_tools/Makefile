@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-bin_tools/Makefile 444247 2017-06-24 21:26:45Z antoine $
+# $FreeBSD: head/security/rubygem-rex-bin_tools/Makefile 485744 2018-11-24 09:41:29Z antoine $
 
 PORTNAME=	rex-bin_tools
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.6
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

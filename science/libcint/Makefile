@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/libcint/Makefile 472436 2018-06-15 08:48:31Z yuri $
+# $FreeBSD: head/science/libcint/Makefile 485750 2018-11-24 10:05:18Z yuri $
 
 PORTNAME=	libcint
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.0.13
+DISTVERSION=	3.0.14
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

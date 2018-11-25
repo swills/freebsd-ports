@@ -1,9 +1,9 @@
 # Created by: Carsten Larsen <cs@innolan.dk>
-# $FreeBSD: head/net/ntpa/Makefile 479436 2018-09-10 16:04:12Z woodsb02 $
+# $FreeBSD: head/net/ntpa/Makefile 485725 2018-11-24 03:56:19Z woodsb02 $
 
 PORTNAME=	ntpa
 PORTVERSION=	0.8.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	http://dist1.innolan.net/ \
 		http://dist2.innolan.net/

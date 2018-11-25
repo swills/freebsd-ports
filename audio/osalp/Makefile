@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/osalp/Makefile 474087 2018-07-07 14:14:06Z amdmi3 $
+# $FreeBSD: head/audio/osalp/Makefile 485735 2018-11-24 08:58:51Z linimon $
 
 PORTNAME=	osalp
 PORTVERSION=	0.7.5
@@ -15,11 +15,11 @@ LIB_DEPENDS=	libmp3lame.so:audio/lame \
 		libvorbis.so:audio/libvorbis
 
 USES=		libtool localbase:ldflags
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-all
 
 CFLAGS+=	-fPIC -DPIC
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 USE_LDCONFIG=	yes
 

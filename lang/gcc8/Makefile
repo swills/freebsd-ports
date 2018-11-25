@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/lang/gcc8/Makefile 485839 2018-11-25 01:28:04Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	8.2.0
@@ -95,7 +95,7 @@ CONFIGURE_ARGS+=--disable-nls \
 		--with-system-zlib
 MAKE_ARGS+=	MAKEINFOFLAGS="--no-split"
 USE_LDCONFIG=	${TARGLIB}
-PLIST_SUB=	GCC_VERSION=${GCC_VERSION} \
+PLIST_SUB+=	GCC_VERSION=${GCC_VERSION} \
 		GNU_HOST=${CONFIGURE_TARGET} \
 		SUFFIX=${SUFFIX}
 INFO=		gcc${SUFFIX}/cpp \

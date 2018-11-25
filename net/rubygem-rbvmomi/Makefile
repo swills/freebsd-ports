@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-rbvmomi/Makefile 475805 2018-07-29 19:22:50Z sunpoet $
+# $FreeBSD: head/net/rubygem-rbvmomi/Makefile 485814 2018-11-24 22:30:07Z sunpoet $
 
 PORTNAME=	rbvmomi
-PORTVERSION=	1.13.0
+PORTVERSION=	2.0.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -15,11 +15,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-builder>=3.0:devel/rubygem-builder \
 		rubygem-json>=1.8:devel/rubygem-json \
 		rubygem-nokogiri>=1.5:textproc/rubygem-nokogiri \
-		rubygem-trollop>=2.1:devel/rubygem-trollop
+		rubygem-optimist>=3.0:devel/rubygem-optimist
+
+USES=		gem shebangfix
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem shebangfix
 
 PLIST_FILES=	bin/rbvmomish
 

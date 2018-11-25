@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/digikam-kde4-l10n/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/digikam-kde4-l10n/Makefile 485768 2018-11-24 12:34:46Z tcberner $
 
 PORTNAME=	digikam-l10n
 PORTVERSION=	${DIGIKAM_VER}
@@ -7,6 +7,9 @@ CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	l10n for digiKam, showFoto, and Kipi-plugins
+
+DEPRECATED=		KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 CONFLICTS_INSTALL=	digikam-2.* kipi-plugins-2.* libkgeomap-2.*
 

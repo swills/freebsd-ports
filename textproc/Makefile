@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 485326 2018-11-19 15:25:08Z 0mp $
+# $FreeBSD: head/textproc/Makefile 485802 2018-11-24 22:28:25Z sunpoet $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1566,7 +1566,6 @@
     SUBDIR += rubygem-gemoji
     SUBDIR += rubygem-gherkin
     SUBDIR += rubygem-github-linguist
-    SUBDIR += rubygem-github-linguist53
     SUBDIR += rubygem-github-markup
     SUBDIR += rubygem-github-markup17
     SUBDIR += rubygem-gitlab-grit
@@ -1716,6 +1715,7 @@
     SUBDIR += sgmls
     SUBDIR += sgrep
     SUBDIR += sgrep2
+    SUBDIR += sift
     SUBDIR += sigil
     SUBDIR += silvercity
     SUBDIR += simplexml

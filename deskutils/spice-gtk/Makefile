@@ -1,5 +1,5 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/deskutils/spice-gtk/Makefile 472422 2018-06-15 03:44:17Z swills $
+# $FreeBSD: head/deskutils/spice-gtk/Makefile 485791 2018-11-24 20:25:39Z linimon $
 
 PORTNAME=	spice-gtk
 PORTVERSION=	0.35
@@ -10,6 +10,9 @@ MAINTAINER=	xxjack12xx@gmail.com
 COMMENT=	Gtk client and libraries for SPICE remote desktop servers
 
 LICENSE=	GPLv2
+
+NOT_FOR_ARCHS=		powerpc powerpc64 powerpcspe sparc64
+NOT_FOR_ARCHS_REASON=	server only supports little-endian
 
 LIB_DEPENDS=	libepoxy.so:graphics/libepoxy \
 		libopus.so:audio/opus

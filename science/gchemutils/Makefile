@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/science/gchemutils/Makefile 473123 2018-06-23 10:41:05Z rene $
+# $FreeBSD: head/science/gchemutils/Makefile 485769 2018-11-24 13:08:12Z kwm $
 
 PORTNAME=	gchemutils
 PORTVERSION=	0.14.16
@@ -8,7 +8,7 @@ CATEGORIES=	science
 MASTER_SITES=	SAVANNAH/${PORTNAME}/${PORTVERSION:R}
 DISTNAME=	gnome-chemistry-utils-${PORTVERSION}
 
-MAINTAINER=	kwm@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ classes and Gtk3 widgets related to chemistry
 
 LICENSE=	GPLv3+

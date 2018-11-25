@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/go-ethereum/Makefile 480697 2018-09-25 21:35:40Z 0mp $
+# $FreeBSD: head/net-p2p/go-ethereum/Makefile 485676 2018-11-23 15:23:35Z swills $
 
 PORTNAME=	go-ethereum
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.16
+DISTVERSION=	1.8.18
 CATEGORIES=	net-p2p
 
 MAINTAINER=	me@enriquefynn.com
@@ -29,9 +29,8 @@ do-install-DEVTOOLS-on:
 	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/abigen ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/bootnode ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/evm ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/puppeth ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/rlpdump ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/swarm ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/wnode ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/puppeth ${STAGEDIR}${PREFIX}/bin
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-calendar/Makefile 485320 2018-11-19 12:46:07Z brnrd $
+# $FreeBSD: head/www/nextcloud-calendar/Makefile 485764 2018-11-24 11:53:38Z brnrd $
 
 PORTNAME=	calendar
-PORTVERSION=	1.6.3
+PORTVERSION=	1.6.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/

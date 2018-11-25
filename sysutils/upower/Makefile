@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/upower/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/sysutils/upower/Makefile 485727 2018-11-24 07:15:57Z linimon $
 
 PORTNAME=	upower
 PORTVERSION=	0.99.7
@@ -15,7 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpolkit-gobject-1.so:sysutils/polkit \
 		libdbus-glib-1.so:devel/dbus-glib
 
-USES=		gettext gmake libtool localbase pathfix pkgconfig tar:xz
+USES=		compiler:c11 gettext gmake gnome libtool localbase \
+		pathfix pkgconfig tar:xz
 USE_GNOME=	intlhack glib20 introspection:build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

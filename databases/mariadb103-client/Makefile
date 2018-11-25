@@ -1,8 +1,7 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/databases/mariadb103-client/Makefile 483598 2018-10-31 17:35:27Z brnrd $
+# $FreeBSD: head/databases/mariadb103-client/Makefile 485783 2018-11-24 19:17:05Z brnrd $
 
 PORTNAME=	mariadb
-PORTREVISION=	2
 PKGNAMESUFFIX=	103-client
 
 COMMENT=	Multithreaded SQL database (client)

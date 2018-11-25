@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kde4-l10n-bs/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/misc/kde4-l10n-bs/Makefile 485768 2018-11-24 12:34:46Z tcberner $
 
 PORTNAME=	kde-l10n
 PORTVERSION=	${KDE4_VERSION}
@@ -7,6 +7,9 @@ CATEGORIES=	misc kde
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Bosnian messages and documentation for KDE SC 4
+
+DEPRECATED=		KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
 
 KDE4_L10N=	bs
 

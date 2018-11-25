@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fog-json/Makefile 475771 2018-07-29 19:18:50Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fog-json/Makefile 485824 2018-11-24 22:31:36Z sunpoet $
 
 PORTNAME=	fog-json
 PORTVERSION=	1.2.0
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 RUN_DEPENDS=	rubygem-fog-core>=0:devel/rubygem-fog-core \
 		rubygem-multi_json>=1.10:devel/rubygem-multi_json
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

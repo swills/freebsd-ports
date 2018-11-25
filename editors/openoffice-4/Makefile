@@ -1,8 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-4/Makefile 485282 2018-11-18 22:08:20Z truckman $
+# $FreeBSD: head/editors/openoffice-4/Makefile 485699 2018-11-23 19:26:37Z truckman $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION}
+PORTREVISION=	1
 CATEGORIES=	editors java
 MASTER_SITES=	APACHE/openoffice/${PORTVERSION}/source \
 		http://tools.openoffice.org/unowinreg_prebuild/680/:unoreg \
@@ -191,6 +192,12 @@ WIKI_PUBLISHER_VARS=	BUNDLED_EXTENSIONS+=swext/wiki-publisher.oxt
 
 # Don't run gnome-post-icons until after post-install generates the plist
 TARGET_ORDER_OVERRIDE=	710:gnome-post-icons
+
+# Force the SDK option on for makesum to ensure that unowinreg.dll is
+# included in distinfo
+.if make(makesum) || make(distclean)
+WITH=	SDK
+.endif
 
 .include <bsd.port.pre.mk>
 

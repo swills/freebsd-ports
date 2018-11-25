@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Const-Exporter/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Const-Exporter/Makefile 485807 2018-11-24 22:29:08Z sunpoet $
 
 PORTNAME=	Const-Exporter
 PORTVERSION=	0.4.1
@@ -23,8 +23,9 @@ RUN_DEPENDS=	p5-Const-Fast>=0:devel/p5-Const-Fast \
 TEST_DEPENDS=	p5-Hash-Objectify>=0:devel/p5-Hash-Objectify \
 		p5-Test-Most>=0:devel/p5-Test-Most
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

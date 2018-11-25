@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/varnish6/Makefile 480668 2018-09-25 15:41:05Z feld $
+# $FreeBSD: head/www/varnish6/Makefile 485685 2018-11-23 15:52:13Z feld $
 
 PORTNAME=	varnish
-PORTVERSION=	6.0.1
+PORTVERSION=	6.1.1
 DISTVERSIONPREFIX=	varnish-
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	www
 PKGNAMESUFFIX=	6
 
@@ -13,7 +13,8 @@ COMMENT=	High-performance HTTP accelerator
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	rst2man:textproc/py-docutils
+BUILD_DEPENDS=	rst2man:textproc/py-docutils \
+		${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
 CONFLICTS=	varnish-2.* varnish-3.* varnish4-4.* varnish5-5.*

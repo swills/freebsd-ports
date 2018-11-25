@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kitinerary/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/net/kitinerary/Makefile 485713 2018-11-23 22:42:03Z tcberner $
 
 PORTNAME=	kitinerary
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,7 @@ LICENSE=	LGPL21
 LIB_DEPENDS=	libpoppler.so:graphics/poppler \
 		libzxing.so:textproc/zxing-cpp
 
-USES=		cmake:outsource gettext kde:5 pkgconfig qt:5 tar:xz
+USES=		compiler:c++11-lang cmake:outsource gettext kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	ecm i18n
 # Pim components
 USE_KDE+=	calendarcore contacts kpkpass mime

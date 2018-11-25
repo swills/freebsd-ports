@@ -1,5 +1,5 @@
 # Created by: Nagy, Attila <bra@fsn.hu>
-# $FreeBSD: head/mail/dovecot22/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/mail/dovecot22/Makefile 485704 2018-11-23 20:19:58Z ler $
 
 ######################################################################
 # Anytime PORTVERSION changes please bump PORTREVISION of            #
@@ -25,6 +25,9 @@ LICENSE=	LGPL21 MIT
 LICENSE_COMB=	dual
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 LICENSE_FILE_MIT=	${WRKSRC}/COPYING.MIT
+
+DEPRECATED=	End of Life upstream, use mail/dovecot instead
+EXPIRATION_DATE=	2019-01-31
 
 USES=		cpe iconv libtool ssl
 USE_RC_SUBR=	dovecot

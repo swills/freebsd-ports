@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 485490 2018-11-20 22:34:38Z yuri $
+# $FreeBSD: head/devel/Makefile 485792 2018-11-24 21:11:26Z antoine $
 #
 
     COMMENT = Development utilities
@@ -762,7 +762,6 @@
     SUBDIR += gettext-tools
     SUBDIR += gflags
     SUBDIR += ghub
-    SUBDIR += giggle
     SUBDIR += gindent
     SUBDIR += gio-sharp
     SUBDIR += git
@@ -4355,6 +4354,7 @@
     SUBDIR += py-amalgamate
     SUBDIR += py-aniso8601
     SUBDIR += py-anonfunc
+    SUBDIR += py-antlr4-python3-runtime
     SUBDIR += py-anyconfig
     SUBDIR += py-anyjson
     SUBDIR += py-apache_conf_parser
@@ -5709,15 +5709,14 @@
     SUBDIR += rubygem-git
     SUBDIR += rubygem-git-version-bump
     SUBDIR += rubygem-github_api
-    SUBDIR += rubygem-gitlab-sidekiq-fetcher
     SUBDIR += rubygem-gitlab-pygments.rb
+    SUBDIR += rubygem-gitlab-sidekiq-fetcher
     SUBDIR += rubygem-gitlab_git
     SUBDIR += rubygem-gitlab_meta
     SUBDIR += rubygem-glib2
     SUBDIR += rubygem-gobject-introspection
     SUBDIR += rubygem-google-api-client
     SUBDIR += rubygem-google-protobuf
-    SUBDIR += rubygem-google-protobuf351
     SUBDIR += rubygem-googleapis-common-protos
     SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf
@@ -6317,8 +6316,8 @@
     SUBDIR += tortoisehg
     SUBDIR += tpasm
     SUBDIR += trac-bitten
-    SUBDIR += treepy.el
     SUBDIR += tradcpp
+    SUBDIR += treepy.el
     SUBDIR += trio
     SUBDIR += truc
     SUBDIR += ua_parser-core
