@@ -1,8 +1,9 @@
 # Created by: Thinker K.F. Li <thinker@eeebox.branda.to>
-# $FreeBSD: head/devel/d-feet/Makefile 456048 2017-12-11 16:48:54Z antoine $
+# $FreeBSD: head/devel/d-feet/Makefile 485705 2018-11-23 20:29:25Z swills $
 
 PORTNAME=	d-feet
 PORTVERSION=	0.3.11
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
 
@@ -16,7 +17,7 @@ BUILD_DEPENDS=	itstool:textproc/itstool
 
 NO_ARCH=	yes
 USES=		gettext gmake gnome perl5 pkgconfig python tar:xz
-USE_GNOME=	gtk30 intlhack introspection:build libxml2:build libwnck3
+USE_GNOME=	gtk30 pygobject3 intlhack introspection:build libxml2:build libwnck3
 USE_PYTHON=	py3kplist
 GNU_CONFIGURE=	yes
 USE_PERL5=	build

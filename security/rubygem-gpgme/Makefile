@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-gpgme/Makefile 458065 2018-01-04 20:11:27Z sunpoet $
+# $FreeBSD: head/security/rubygem-gpgme/Makefile 485816 2018-11-24 22:30:23Z sunpoet $
 
 PORTNAME=	gpgme
-PORTVERSION=	2.0.16
+PORTVERSION=	2.0.18
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -16,9 +16,10 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpg-error.so:security/libgpg-error
 RUN_DEPENDS=	gpgme-config:security/gpgme
 
-CONFIGURE_ARGS=	--use-system-libraries
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+CONFIGURE_ARGS=	--use-system-libraries
 
 post-patch:
 	@${REINPLACE_CMD} -e '/mini_portile2/d' ${WRKSRC}/gpgme.gemspec ${WRKSRC}/ext/gpgme/extconf.rb

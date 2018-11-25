@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qscintilla2-qt5/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/qscintilla2-qt5/Makefile 485713 2018-11-23 22:42:03Z tcberner $
 
 PORTNAME=	qscintilla2-qt5
 PORTVERSION=	${QSCI2_VERSION}
@@ -10,7 +10,7 @@ DISTNAME=	${QSCI2_DISTNAME}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 5 port of the Scintilla C++ editor class
 
-USES=		qmake pyqt:5 qt:5
+USES=		compiler:c++11-lang qmake pyqt:5 qt:5
 USE_GL=		gl
 USE_PYQT=	#
 USE_QT=		buildtools_build core gui printsupport widgets

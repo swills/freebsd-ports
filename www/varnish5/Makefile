@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish5/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/www/varnish5/Makefile 485686 2018-11-23 15:53:44Z feld $
 
 PORTNAME=	varnish
 PORTVERSION=	5.2.1
@@ -12,6 +12,9 @@ COMMENT=	High-performance HTTP accelerator
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Varnish 5 is Retired
+EXPIRATION_DATE=2019-01-01
 
 BUILD_DEPENDS=	rst2man:textproc/py-docutils
 LIB_DEPENDS=	libpcre.so:devel/pcre

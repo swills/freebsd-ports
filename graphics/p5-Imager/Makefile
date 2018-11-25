@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/p5-Imager/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Imager/Makefile 485820 2018-11-24 22:30:56Z sunpoet $
 
 PORTNAME=	Imager
-PORTVERSION=	1.006
+PORTVERSION=	1.007
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -24,12 +24,12 @@ TEST_DEPENDS=	p5-Inline>=0:devel/p5-Inline \
 
 USES=		jpeg perl5
 USE_PERL5=	configure
+
 CONFIGURE_ENV=	IM_CFLAGS="${CFLAGS}" \
 		IM_INCPATH=${LOCALBASE}/include \
 		IM_LIBPATH=${LOCALBASE}/lib
 
 post-install:
-	@${FIND} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Imager \
-		-name "*.so" -exec ${STRIP_CMD} {} \;
+	${FIND} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Imager -name '*.so' -exec ${STRIP_CMD} {} +
 
 .include <bsd.port.mk>

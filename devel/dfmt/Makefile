@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dfmt/Makefile 485388 2018-11-20 02:44:44Z acm $
+# $FreeBSD: head/devel/dfmt/Makefile 485842 2018-11-25 03:05:49Z acm $
 
 PORTNAME=	dfmt
 PORTVERSION=	0.8.3
@@ -15,6 +15,7 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \
 		rdmd:lang/dlang-tools \
 		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse \
+		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 
 USE_GITHUB=	yes

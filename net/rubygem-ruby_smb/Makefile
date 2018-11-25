@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-ruby_smb/Makefile 480376 2018-09-22 10:31:00Z antoine $
+# $FreeBSD: head/net/rubygem-ruby_smb/Makefile 485742 2018-11-24 09:34:16Z antoine $
 
 PORTNAME=	ruby_smb
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

@@ -1,10 +1,9 @@
 # Created by: Viacheslav Mikerov <SlavaMikerov@gmail.com>
-# $FreeBSD: head/devel/nlohmann-json/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/nlohmann-json/Makefile 485707 2018-11-23 21:11:53Z yuri $
 
 PORTNAME=	json
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.1.2
-PORTREVISION=	1
+DISTVERSION=	3.3.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	nlohmann-
 
@@ -17,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.MIT
 USES=		cmake:outsource compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	nlohmann
+
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Mikhail T. <michael@fun-box.ru>
-# $FreeBSD: head/java/netty/Makefile 485586 2018-11-22 09:30:27Z amdmi3 $
+# $FreeBSD: head/java/netty/Makefile 485693 2018-11-23 17:26:20Z amdmi3 $
 
 PORTNAME=	netty
 PORTVERSION=	3.10.6
@@ -21,8 +21,8 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}.Final
 
-PLIST_FILES=	${JAVAJARDIR:S,^${PREFIX}/,,}/netty-${PORTVERSION}.jar \
-		${JAVAJARDIR:S,^${PREFIX}/,,}/netty.jar
+PLIST_FILES=	${JAVAJARDIR}/netty-${PORTVERSION}.jar \
+		${JAVAJARDIR}/netty.jar
 
 PORTDATA=	*
 PORTDOCS=	*

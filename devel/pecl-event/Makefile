@@ -1,8 +1,8 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-event/Makefile 485511 2018-11-21 12:41:57Z joneum $
+# $FreeBSD: head/devel/pecl-event/Makefile 485773 2018-11-24 13:52:26Z joneum $
 
 PORTNAME=	event
-PORTVERSION=	2.3.0
+PORTVERSION=	2.4.1
 CATEGORIES=	devel
 
 MAINTAINER=	joneum@FreeBSD.org

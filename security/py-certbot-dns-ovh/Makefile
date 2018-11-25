@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-certbot-dns-ovh/Makefile 475485 2018-07-28 02:54:19Z miwi $
+# $FreeBSD: head/security/py-certbot-dns-ovh/Makefile 485822 2018-11-24 22:31:18Z sunpoet $
 
 PORTNAME=	certbot-dns-ovh
 PORTVERSION=	${ACME_VERSION}
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}acme>=${ACME_VERSION},1:security/py-acme@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certbot>=${ACME_VERSION},1:security/py-certbot@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dns-lexicon>=2.2.1:dns/py-dns-lexicon@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dns-lexicon>=2.7.14:dns/py-dns-lexicon@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface@${PY_FLAVOR}
 

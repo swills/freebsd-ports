@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-sortedcontainers/Makefile 480368 2018-09-22 08:43:29Z antoine $
+# $FreeBSD: head/devel/py-sortedcontainers/Makefile 485801 2018-11-24 22:28:20Z antoine $
 
 PORTNAME=	sortedcontainers
-PORTVERSION=	2.0.5
+PORTVERSION=	2.1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

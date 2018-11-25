@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ignition-tools/Makefile 485527 2018-11-21 17:23:47Z yuri $
+# $FreeBSD: head/devel/ignition-tools/Makefile 485695 2018-11-23 17:46:11Z yuri $
 
 PORTNAME=	ignition-tools
 DISTVERSION=	0.1.0
@@ -11,7 +11,7 @@ COMMENT=	Ignition entry point (ign) for using all the suite of ignition tools
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource pkgconfig shebangfix
+USES=		cmake:outsource compiler:c++11-lang pkgconfig shebangfix
 SHEBANG_FILES=	src/ign.in
 USE_RUBY=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 484429 2018-11-08 06:51:51Z yuri $
+# $FreeBSD: head/net/Makefile 485799 2018-11-24 22:28:07Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -1284,7 +1284,6 @@
     SUBDIR += rubygem-geoip
     SUBDIR += rubygem-gitaly
     SUBDIR += rubygem-gitaly-proto
-    SUBDIR += rubygem-gitaly-proto094
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-gitlab_omniauth-ldap20
     SUBDIR += rubygem-google-cloud-core

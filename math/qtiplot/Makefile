@@ -1,5 +1,5 @@
 # Created by: Jie Gao <gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/math/qtiplot/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/math/qtiplot/Makefile 485789 2018-11-24 19:59:30Z linimon $
 
 PORTNAME=	qtiplot
 DISTVERSION=	0.9.8.9
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libgsl.so:math/gsl \
 #		qwt.5:x11-toolkits/qwt5 \
 #		qwtplot3d-qt4:math/qwtplot3d-qt4
 
-USES=		dos2unix gmake qmake qt:4 tar:bzip2
+USES=		compiler:c++11-lang dos2unix gmake qmake qt:4 tar:bzip2
 USE_QT=		gui opengl svg qt3support network assistantclient \
 		moc_build rcc_build
 USE_GL=		glu

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/libdazzle/Makefile 484776 2018-11-11 21:49:15Z kwm $
+# $FreeBSD: head/x11-toolkits/libdazzle/Makefile 485728 2018-11-24 07:20:56Z linimon $
 
 PORTNAME=	libdazzle
 PORTVERSION=	3.28.5
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	valac:lang/vala
 
-USES=		gnome meson pkgconfig tar:xz
+USES=		compiler:c11 gnome meson pkgconfig tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gtk30 introspection:build
 
 .include <bsd.port.mk>

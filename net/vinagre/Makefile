@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/vinagre/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/net/vinagre/Makefile 485791 2018-11-24 20:25:39Z linimon $
 
 PORTNAME=	vinagre
 PORTVERSION=	3.22.0
@@ -43,7 +43,12 @@ GLIB_SCHEMAS=	org.gnome.Vinagre.gschema.xml
 
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	AVAHI SPICE TELEPATHY RDP DOCS
-OPTIONS_DEFAULT=AVAHI SPICE TELEPATHY RDP
+OPTIONS_DEFAULT=		AVAHI TELEPATHY RDP
+OPTIONS_DEFAULT_aarch64=	SPICE
+OPTIONS_DEFAULT_amd64=		SPICE
+OPTIONS_DEFAULT_armv6=		SPICE
+OPTIONS_DEFAULT_armv7=		SPICE
+OPTIONS_DEFAULT_i386=		SPICE
 AVAHI_CONFIGURE_WITH=	avahi
 AVAHI_LIB_DEPENDS=	libavahi-ui-gtk3.so:net/avahi-gtk3
 SPICE_DESC=	SPICE protocol support

@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/grpc/Makefile 485629 2018-11-23 00:15:23Z vanilla $
+# $FreeBSD: head/devel/grpc/Makefile 485684 2018-11-23 15:51:30Z vanilla $
 
 PORTNAME=	grpc
 PORTVERSION=	1.15.1
@@ -13,9 +13,6 @@ COMMENT=	HTTP/2-based RPC framework
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_SSL=	openssl111
-BROKEN_SSL_REASON_openssl111=	use of undeclared identifier 'SSL_get0_next_proto_negotiated'
 
 BUILD_DEPENDS=	go:lang/go \
 		yasm:devel/yasm

@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/mariadb-connector-odbc/Makefile 461755 2018-02-13 22:36:59Z brnrd $
+# $FreeBSD: head/databases/mariadb-connector-odbc/Makefile 485795 2018-11-24 21:31:18Z brnrd $
 
 PORTNAME=	mariadb
-DISTVERSION=	3.0.3
+DISTVERSION=	3.0.7
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/${SITESDIR}/ \
 		http://mirrors.supportex.net/${SITESDIR}/ \
@@ -29,6 +29,8 @@ SITESDIR=	${PORTNAME}/${PKGNAMESUFFIX:S/^-//}-${PORTVERSION:S/.b$//}
 DOCSDIR=	${PREFIX}/share/doc/mysql
 
 CMAKE_ARGS+=	-DCOMPILATION_COMMENT="FreeBSD Ports"
+CFLAGS+=	-I${LOCALBASE}/include/mariadb
+LDFLAGS+=	-L${LOCALBASE}/lib/mariadb
 
 PLIST_FILES=	lib/libmaodbc.so
 

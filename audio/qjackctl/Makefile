@@ -1,10 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/qjackctl/Makefile 480620 2018-09-24 18:30:38Z yuri $
+# $FreeBSD: head/audio/qjackctl/Makefile 485694 2018-11-23 17:38:58Z yuri $
 
 PORTNAME=	qjackctl
 DISTVERSIONPREFIX=	qjackctl_
-DISTVERSION=	0_5_4-1
-DISTVERSIONSUFFIX=	-g75af70c # include the regression fix
+DISTVERSION=	0_5_5
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

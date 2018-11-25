@@ -1,5 +1,5 @@
 # Created by: Nils Vogels <nivo+kw+ports.bfa274@is-root.com>
-# $FreeBSD: head/mail/dovecot-pigeonhole04/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/mail/dovecot-pigeonhole04/Makefile 485704 2018-11-23 20:19:58Z ler $
 
 PORTNAME=	dovecot-pigeonhole
 PORTVERSION=	0.4.24
@@ -13,6 +13,9 @@ MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Sieve plugin for the Dovecot 'deliver' LDA and LMTP
 
 LICENSE=	LGPL21
+
+DEPRECATED=     End of Life upstream, use mail/dovecot-pigeonhole instead
+EXPIRATION_DATE=        2019-01-31
 
 BUILD_DEPENDS=	dovecot22>=2.2.31:mail/dovecot22
 RUN_DEPENDS=	dovecot22>=2.2.31:mail/dovecot22

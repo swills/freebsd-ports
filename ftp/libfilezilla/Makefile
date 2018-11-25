@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/libfilezilla/Makefile 483127 2018-10-27 12:08:49Z linimon $
+# $FreeBSD: head/ftp/libfilezilla/Makefile 485732 2018-11-24 08:44:45Z linimon $
 
 PORTNAME=	libfilezilla
 PORTVERSION=	0.13.0
@@ -11,7 +11,8 @@ COMMENT=	C++ library for building platform-independent programs
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		compiler:c++14-lang gmake iconv:wchar_t libtool localbase pathfix pkgconfig tar:bzip2
+USES=		compiler:c++14-lang gmake iconv:wchar_t libtool localbase \
+		pathfix pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

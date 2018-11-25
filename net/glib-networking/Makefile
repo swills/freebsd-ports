@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net/glib-networking/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/net/glib-networking/Makefile 485729 2018-11-24 08:25:54Z linimon $
 
 PORTNAME=	glib-networking
 PORTVERSION=	2.56.1
@@ -24,7 +24,7 @@ RUN_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gnome localbase meson pkgconfig \
+USES=		compiler:c11 gettext gnome localbase meson pkgconfig \
 		python:3.6+,build tar:xz
 USE_GNOME=	glib20
 MESON_ARGS=	-Dca_certificates_path="${LOCALBASE}/share/certs/ca-root-nss.crt"

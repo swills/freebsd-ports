@@ -1,5 +1,5 @@
 # Created by: Stefan Esser
-# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 484802 2018-11-12 12:46:48Z se $
+# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 485741 2018-11-24 09:24:41Z linimon $
 
 PORTNAME=	fusefs-libs3
 DISTVERSIONPREFIX=	fuse-
@@ -25,6 +25,11 @@ GH_TAGNAME=	11d9ed6
 
 .if ${OPSYS} == DragonFly
 IGNORE=	fusefs has not been implemented on DragonFly
+.endif
+
+post-patch:
+.if ${ARCH:Mmips*} || ${ARCH:Mpowerpc*} || ${ARCH} == sparc64
+	${REINPLACE_CMD} -e '/-Wno-unused-result/d' ${WRKSRC}/meson.build
 .endif
 
 .include <bsd.port.post.mk>

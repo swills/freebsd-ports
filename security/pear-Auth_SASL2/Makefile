@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/pear-Auth_SASL2/Makefile 485144 2018-11-17 17:30:29Z sunpoet $
+# $FreeBSD: head/security/pear-Auth_SASL2/Makefile 485754 2018-11-24 10:50:21Z sunpoet $
 
 PORTNAME=	Auth_SASL2
 PORTVERSION=	0.2.0

@@ -1,9 +1,9 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/lang/guile2/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/lang/guile2/Makefile 485846 2018-11-25 07:59:55Z antoine $
 
 PORTNAME=	guile
 PORTVERSION=	2.0.14
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	lang scheme
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	2
@@ -23,7 +23,7 @@ CONFLICTS_INSTALL=	guile-[0-9]*
 
 MAKE_JOBS_UNSAFE=	yes
 
-USES=		charsetfix ${USES_${ARCH}} gmake libtool makeinfo ncurses pathfix \
+USES=		charsetfix ${USES_${ARCH}} gmake iconv libtool makeinfo ncurses pathfix \
 		pkgconfig readline
 USES_powerpc64=	compiler:c11
 

@@ -1,9 +1,8 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/graphics/gegl/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/graphics/gegl/Makefile 485775 2018-11-24 14:01:25Z kwm $
 
 PORTNAME=	gegl
-PORTVERSION=	0.4.8
-PORTREVISION=	2
+PORTVERSION=	0.4.12
 CATEGORIES=	graphics
 MASTER_SITES=	GIMP
 
@@ -30,7 +29,7 @@ CONFIGURE_ARGS=	--without-vala --disable-docs
 CONFIGURE_ARGS+=--without-mrg --without-lensfun
 INSTALL_TARGET=	install-strip
 
-GEGL_MINOR=	408
+GEGL_MINOR=	412
 GEGL_VER=	0.4
 PLIST_SUB+=	GEGL_MINOR="${GEGL_MINOR}" GEGL_VER=${GEGL_VER}
 

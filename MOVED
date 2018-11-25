@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 485481 2018-11-20 20:29:41Z rene $
+# $FreeBSD: head/MOVED 485832 2018-11-24 22:32:41Z sunpoet $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -10636,3 +10636,7 @@ x11-fonts/emojione-color-font-ttf|x11-fonts/twemoji-color-font-ttf|2018-11-19|Ha
 editors/coedit|editors/dexed|2018-11-19|Project was renamed
 net-mgmt/p5-FusionInventory-Agent-Task-NetDiscovery||2018-11-20|Has expired: No longer needed
 net-mgmt/p5-FusionInventory-Agent-Task-SNMPQuery||2018-11-20|Removed, no longer needed
+textproc/rubygem-github-linguist53|textproc/rubygem-github-linguist|2018-11-23|Obsolete by www/gitlab-ce 11.5.x upgrade, please use textproc/rubygem-github-linguist
+devel/rubygem-google-protobuf351|devel/rubygem-google-protobuf|2018-11-23|Obsolete by www/gitlab-ce 11.5.x upgrade, please use devel/rubygem-google-protobuf
+devel/giggle|devel/gitg|2018-11-23|Has expired: Development stalled. Please switch to devel/gitg.
+net/rubygem-gitaly-proto094|net/rubygem-gitaly-proto|2018-11-24|Use net/rubygem-gitaly-proto instead
