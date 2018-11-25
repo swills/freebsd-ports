@@ -2,9 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	osgearth
-PORTVERSION=	2.9
+PORTVERSION=	2.10
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
 CATEGORIES=	graphics geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org
@@ -22,14 +21,13 @@ LIB_DEPENDS=	libosg.so:graphics/osg \
 		libprotoc.so:devel/protobuf \
 		librocksdb.so:databases/rocksdb
 
-USES=		cmake pkgconfig sqlite
+USES=		cmake pkgconfig gl sqlite
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	gwaldron
 
 USE_LDCONFIG=	yes
 USE_GL+=	gl glu
-PLIST_SUB=	OSGVERSION=3.4.0
 
 CMAKE_ARGS+=	-DCMAKE_INCLUDE_PATH:PATH=${LOCALBASE}/include \
 		-DCMAKE_LIBRARY_PATH:PATH=${LOCALBASE}/lib \
