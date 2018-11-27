@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	openxpki
-PORTVERSION=	2.0.3
+PORTVERSION=	2.2.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security perl5
 PKGNAMEPREFIX=	p5-
@@ -48,6 +48,7 @@ RUN_DEPENDS=	bash:shells/bash \
 		p5-LWP-Protocol-connect>=0:www/p5-LWP-Protocol-connect \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-Locale-libintl>=0:devel/p5-Locale-libintl \
+		p5-Log-Log4perl-Layout-JSON>=0:devel/p5-Log-Log4perl-Layout-JSON \
 		p5-Mail-RFC822-Address>=0:mail/p5-Mail-RFC822-Address \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-MooseX-Params-Validate>=0:devel/p5-MooseX-Params-Validate \
