@@ -91,6 +91,7 @@ share/icons/hicolor/64x64/apps/liteide.png
 %%DATADIR%%/liteeditor/color/cobalt black.xml
 %%DATADIR%%/liteeditor/color/cobalt blue.xml
 %%DATADIR%%/liteeditor/color/colorhelp.md
+%%DATADIR%%/liteeditor/color/dark.xml
 %%DATADIR%%/liteeditor/color/darktango.xml
 %%DATADIR%%/liteeditor/color/darkvim.xml
 %%DATADIR%%/liteeditor/color/default-func.xml
