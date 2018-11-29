@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/jenkins-lts/Makefile 481829 2018-10-11 13:50:58Z lwhsu $
+# $FreeBSD: head/devel/jenkins-lts/Makefile 485949 2018-11-26 17:38:02Z swills $
 
 PORTNAME=	jenkins
-PORTVERSION=	2.138.2
+PORTVERSION=	2.138.3
 CATEGORIES=	devel java
 MASTER_SITES=	http://mirrors.jenkins-ci.org/war-stable/${PORTVERSION}/
 PKGNAMESUFFIX=	-lts

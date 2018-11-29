@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 485802 2018-11-24 22:28:25Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 486104 2018-11-28 19:17:29Z sunpoet $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -745,6 +745,7 @@
     SUBDIR += p5-Pod-Perldoc
     SUBDIR += p5-Pod-ProjectDocs
     SUBDIR += p5-Pod-Readme
+    SUBDIR += p5-Pod-Section
     SUBDIR += p5-Pod-Simple
     SUBDIR += p5-Pod-Spell
     SUBDIR += p5-Pod-Strip

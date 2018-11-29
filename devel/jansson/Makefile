@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/jansson/Makefile 461567 2018-02-12 09:03:44Z vanilla $
+# $FreeBSD: head/devel/jansson/Makefile 486069 2018-11-27 22:50:16Z vanilla $
 
 PORTNAME=	jansson
-PORTVERSION=	2.11
+PORTVERSION=	2.12
 CATEGORIES=	devel
 MASTER_SITES=	http://www.digip.org/jansson/releases/
 

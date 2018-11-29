@@ -1,8 +1,8 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/py-selenium/Makefile 477004 2018-08-12 17:26:29Z pi $
+# $FreeBSD: head/www/py-selenium/Makefile 485896 2018-11-25 19:48:35Z swills $
 
 PORTNAME=	selenium
-PORTVERSION=	3.14.0
+PORTVERSION=	3.141.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,6 +14,7 @@ LICENSE=	APACHE20
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	FIREFOX

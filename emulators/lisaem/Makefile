@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/emulators/lisaem/Makefile 478754 2018-09-02 05:20:31Z tobik $
+# $FreeBSD: head/emulators/lisaem/Makefile 486164 2018-11-29 11:04:23Z linimon $
 
 PORTNAME=	lisaem
 PORTVERSION=	1.2.6.2
@@ -9,12 +9,12 @@ MASTER_SITES=	http://lisaem.sunder.net/downloads/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Apple Lisa 2 Emulator
 
-BUILD_DEPENDS=	pngtopnm:graphics/netpbm
-
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		compiler tar:bzip2
+BUILD_DEPENDS=	pngtopnm:graphics/netpbm
+
+USES=		compiler:c++11-lang tar:bzip2
 USE_WX=		2.8
 
 BINARY_ALIAS=	wx-config=${WX_CONFIG}

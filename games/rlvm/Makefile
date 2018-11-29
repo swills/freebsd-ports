@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/rlvm/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/rlvm/Makefile 486006 2018-11-27 13:14:03Z jbeich $
 
 PORTNAME=	rlvm
 DISTVERSIONPREFIX=	release-
@@ -6,6 +6,9 @@ DISTVERSION=	0.14-67
 DISTVERSIONSUFFIX=	-g9350209
 PORTREVISION=	16
 CATEGORIES=	games
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	fb627bad9129.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	RealLive virtual machine clone

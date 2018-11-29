@@ -1,11 +1,11 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit-gtk2/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/www/webkit-gtk2/Makefile 485881 2018-11-25 17:12:38Z sunpoet $
 
 PORTNAME=	webkit
 PORTVERSION=	2.4.11
 PORTREVISION=	18
 CATEGORIES=	www
-MASTER_SITES=	http://webkitgtk.org/releases/
+MASTER_SITES=	https://webkitgtk.org/releases/
 PKGNAMESUFFIX=	-gtk2
 DISTNAME=	${PORTNAME}gtk-${PORTVERSION}
 
@@ -35,7 +35,7 @@ PORTSCOUT=	limit:^2\.4\.
 BINARY_ALIAS=	python=${PYTHON_CMD}
 USE_GSTREAMER1=	yes
 USE_XORG=	x11 xcomposite xdamage xfixes xrender xt
-USES=		bison compiler:c++11-lib gettext gmake gperf jpeg libtool \
+USES=		bison compiler:c++11-lib gettext gl gmake gnome gperf jpeg libtool \
 		localbase pathfix perl5 pkgconfig python:build shebangfix sqlite tar:xz
 PATHFIX_MAKEFILEIN=	GNUmakefile.in
 USE_RUBY=	yes

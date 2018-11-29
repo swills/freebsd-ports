@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/sendmail/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/mail/sendmail/Makefile 485984 2018-11-27 05:28:06Z dinoex $
 
 PORTNAME=	sendmail
 PORTVERSION=	8.15.2
@@ -148,7 +148,7 @@ NO_PACKAGE=	GPLv3 license conflict
 SITE+=	${FILESDIR}/site.config.m4.gdbm
 .endif
 
-SED_SCRIPT=	-e "s|\`-O\'|\`${CFLAGS}\'|" \
+SED_SCRIPT=	-e "s|\`-O'|\`${CFLAGS}'|" \
 		-e 's|%%CC%%|${CC}|' -e 's|%%LD%%|${LD}|'
 
 .if ! ${PORT_OPTIONS:MNIS}

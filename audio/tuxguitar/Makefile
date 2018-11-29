@@ -1,5 +1,5 @@
 # Created by: Pietro Cerutti (gahr@gahr.ch)
-# $FreeBSD: head/audio/tuxguitar/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/audio/tuxguitar/Makefile 485884 2018-11-25 17:51:12Z yuri $
 
 PORTNAME=	tuxguitar
 PORTVERSION=	1.2
@@ -14,7 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:src \
 		8MBGMSFX.SF2:fluid
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Multitrack tablature editor and player
 
 LICENSE=	LGPL21

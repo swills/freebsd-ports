@@ -1,7 +1,7 @@
-# $FreeBSD: head/benchmarks/stress-ng/Makefile 484841 2018-11-12 21:48:58Z pizzamig $
+# $FreeBSD: head/benchmarks/stress-ng/Makefile 486095 2018-11-28 15:28:02Z pizzamig $
 
 PORTNAME=	stress-ng
-PORTVERSION=	0.09.45
+PORTVERSION=	0.09.47
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://kernel.ubuntu.com/~cking/tarballs/stress-ng/
 

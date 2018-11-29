@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.config/Makefile 485811 2018-11-24 22:29:42Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.config/Makefile 485870 2018-11-25 17:11:00Z sunpoet $
 
 PORTNAME=	oslo.config
-PORTVERSION=	6.4.1
+PORTVERSION=	6.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -29,11 +29,6 @@ USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|/etc|${PREFIX}/etc|g' \
-		${WRKSRC}/doc/source/reference/sphinxconfiggen.rst \
-		${WRKSRC}/oslo_config/_list_opts.py \
-		${WRKSRC}/oslo_config/cfg.py \
-		${WRKSRC}/oslo_config/tests/test_cfg.py \
-		${WRKSRC}/releasenotes/notes/add-default-config-dirs-03340ff6689afe94.yaml
+	@${GREP} -lr /etc ${WRKSRC} | ${XARGS} ${REINPLACE_CMD} -e 's|/etc|${PREFIX}&|g'
 
 .include <bsd.port.mk>

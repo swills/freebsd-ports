@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/rubygem-rgeo-geojson/Makefile 466738 2018-04-07 16:32:45Z sunpoet $
+# $FreeBSD: head/science/rubygem-rgeo-geojson/Makefile 486112 2018-11-28 19:18:38Z sunpoet $
 
 PORTNAME=	rgeo-geojson
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.0
 CATEGORIES=	science rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/science/hdf5/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/hdf5/Makefile 486038 2018-11-27 17:10:21Z sunpoet $
 
 PORTNAME=	hdf5
 PORTVERSION=	1.10.2
@@ -19,6 +19,8 @@ OPTIONS_DEFINE=	DEBUG EXAMPLES FORTRAN SZIP
 OPTIONS_DEFAULT=SZIP
 OPTIONS_SUB=	yes
 
+USES=		compiler:c11 libtool localbase tar:bzip2
+
 CONFIGURE_ARGS=	--enable-cxx \
 		--enable-hl \
 		--enable-instrument \
@@ -27,8 +29,8 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 MAKE_JOBS_UNSAFE=	yes
 TEST_TARGET=	check
+USE_CSTD=	c11
 USE_LDCONFIG=	yes
-USES=		libtool localbase tar:bzip2
 
 PORTEXAMPLES=	*
 

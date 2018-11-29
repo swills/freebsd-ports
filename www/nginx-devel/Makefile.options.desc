@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/nginx-devel/Makefile.options.desc 468061 2018-04-22 21:35:51Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile.options.desc 486012 2018-11-27 14:28:49Z des $
 
 AJP_DESC=			3rd party ajp module
 ARRAYVAR_DESC=			3rd party array_var module
@@ -84,7 +84,7 @@ MAIL_POP3_DESC=			Enable POP3 proxy module
 MAIL_SMTP_DESC=			Enable SMTP proxy module
 MAIL_SSL_DESC=			Enable mail_ssl module
 MEMC_DESC=			3rd party memc (memcached) module
-MODSECURITY3_DESC=		3rd party mod_security v3 module
+MODSECURITY3_DESC=		3rd party modsecurity3 module
 MODSECURITY_DESC=		3rd party mod_security module
 NAXSI_DESC=			3rd party naxsi module
 NJS_DESC=			Enable http_javascript module

@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@FreeBSD.org>
-# $FreeBSD: head/graphics/gnome-color-manager/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/graphics/gnome-color-manager/Makefile 486015 2018-11-27 16:00:47Z linimon $
 
 PORTNAME=	gnome-color-manager
 PORTVERSION=	3.28.0
@@ -26,7 +26,7 @@ LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gnome meson pkgconfig tar:xz
+USES=		compiler:c++11-lang gettext gnome meson pkgconfig tar:xz
 USE_GNOME=	cairo gtk30 vte3
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes

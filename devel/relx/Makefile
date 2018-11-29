@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/relx/Makefile 482794 2018-10-22 21:36:48Z olgeni $
+# $FreeBSD: head/devel/relx/Makefile 486070 2018-11-27 22:54:34Z olgeni $
 
 PORTNAME=	relx
 PORTVERSION=	3.27.0
@@ -27,7 +27,7 @@ PLIST_SUB=	VERSION="${PORTVERSION}"
 USE_GITHUB=	yes
 GH_ACCOUNT=	erlware
 
-CACHE_VERSION=	20
+CACHE_VERSION=	21
 # from rebar.config
 REBAR_DEPS=	bbmustache-1.5.0 \
 		cf-0.3.1 \

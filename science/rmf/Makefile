@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/rmf/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/rmf/Makefile 486045 2018-11-27 18:23:21Z yuri $
 
 PORTNAME=	rmf
 DISTVERSION=	1.1
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libhdf5.so:science/hdf5 \
 		libsz.so:science/szip
 
-USES=		cmake:outsource python:build shebangfix
+USES=		compiler:c++11-lang cmake:outsource python:build shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	salilab
 GH_TAGNAME=	f917cf2

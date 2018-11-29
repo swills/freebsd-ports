@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/nng/Makefile 474973 2018-07-19 19:45:05Z swills $
+# $FreeBSD: head/net/nng/Makefile 485981 2018-11-27 03:17:12Z swills $
 
 PORTNAME=	nng
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.1
+DISTVERSION=	1.1.1
 CATEGORIES=	net
 
 MAINTAINER=	swills@FreeBSD.org

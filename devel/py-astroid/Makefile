@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-astroid/Makefile 479627 2018-09-12 22:55:12Z sunpoet $
+# $FreeBSD: head/devel/py-astroid/Makefile 485952 2018-11-26 18:59:37Z sunpoet $
 
 PORTNAME=	astroid
-PORTVERSION=	2.0.4
+PORTVERSION=	2.1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 485564 2018-11-21 22:34:45Z yuri $
+# $FreeBSD: head/science/Makefile 485990 2018-11-27 08:15:20Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -306,5 +306,6 @@
     SUBDIR += xdrawchem
     SUBDIR += xfce4-equake-plugin
     SUBDIR += xmakemol
+    SUBDIR += yoda
 
 .include <bsd.port.subdir.mk>

@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11/nxcomp/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11/nxcomp/Makefile 485963 2018-11-26 19:01:12Z sunpoet $
 
 PORTNAME=	nxcomp
 PORTVERSION=	3.5.0.32
 PORTREVISION=	2
-MASTER_SITES=	http://code.x2go.org/releases/source/nx-libs/
+MASTER_SITES=	https://code.x2go.org/releases/source/nx-libs/
 CATEGORIES=	x11 devel
 DISTNAME=	nx-libs-${PORTVERSION}-lite
 

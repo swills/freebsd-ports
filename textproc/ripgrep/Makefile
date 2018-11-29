@@ -1,11 +1,11 @@
 # Created by: Petteri Valkonen <petteri.valkonen@iki.fi>
-# $FreeBSD: head/textproc/ripgrep/Makefile 482993 2018-10-25 21:59:37Z jbeich $
+# $FreeBSD: head/textproc/ripgrep/Makefile 485929 2018-11-26 08:34:51Z jbeich $
 
 # vim: ts=8 noet
 
 PORTNAME=	ripgrep
 DISTVERSION=	0.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 
 MAINTAINER=	petteri.valkonen@iki.fi
@@ -110,7 +110,8 @@ PLIST_FILES=	bin/rg \
 
 PORTDOCS=	CHANGELOG.md FAQ.md GUIDE.md
 
-OPTIONS_DEFINE=	DOCS SIMD
+OPTIONS_DEFINE=	DOCS PCRE2 SIMD
+OPTIONS_DEFAULT=PCRE2
 
 OPTIONS_DEFINE_amd64=	AVX
 OPTIONS_DEFINE_i386=	AVX
@@ -123,6 +124,10 @@ AVX_DESC=	${SSE_DESC:S/SSE/AVX/}
 
 AVX_VARS=	CARGO_FEATURES+=avx-accel RUSTFLAGS+="-C target-feature=+avx"
 AVX_IMPLIES=	SIMD
+
+PCRE2_DESC=	${PCRE_DESC} version 2
+PCRE2_LIB_DEPENDS=	libpcre2-8.so:devel/pcre2
+PCRE2_VARS=	CARGO_FEATURES+=pcre2
 
 # simd crate uses cfg_target_feature which isn't stable yet, so unlock
 # unstable features similar to how lang/rust bootstraps. www/firefox

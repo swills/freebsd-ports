@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/rubygem-clutter-gdk/Makefile 476774 2018-08-09 14:45:04Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-clutter-gdk/Makefile 486133 2018-11-28 19:21:33Z sunpoet $
 
 PORTNAME=	clutter-gdk
-PORTVERSION=	3.2.9
+PORTVERSION=	3.3.0
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE=	LGPL21+
 RUN_DEPENDS=	rubygem-clutter>=${PORTVERSION}:graphics/rubygem-clutter \
 		rubygem-gdk3>=${PORTVERSION}:x11-toolkits/rubygem-gdk3
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

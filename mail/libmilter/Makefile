@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/libmilter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
+# $FreeBSD: head/mail/libmilter/Makefile 485925 2018-11-26 07:03:47Z dinoex $
 
 PORTNAME=	libmilter
 PORTVERSION=	8.15.2
@@ -42,7 +42,7 @@ post-patch-MILTER_SHARED-on:
 		${WRKSRC}/libsharedmilter/Makefile.m4
 
 do-configure:
-	${REINPLACE_CMD} -e "s|\`-O\'|\`${CFLAGS}\'|" \
+	${REINPLACE_CMD} -e "s|\`-O'|\`${CFLAGS}'|" \
 		-e 's|%%CC%%|${CC}|' -e 's|%%LD%%|${LD}|' \
 		${WRKSRC}/devtools/OS/FreeBSD
 	${SED} -e "s=%%PREFIX%%=${PREFIX}=g" \

@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/devel/arpc/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/devel/arpc/Makefile 486022 2018-11-27 16:28:15Z linimon $
 
 PORTNAME=	arpc
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,8 @@ LIB_DEPENDS=	libargdata.so:devel/argdata
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyPEG2>=2.15.2:textproc/py-pyPEG2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}toposort>=1.5:devel/py-toposort@${PY_FLAVOR}
 
-USES=		cmake localbase:ldflags python:3.4+ shebangfix
+USES=		compiler:c++17-lang cmake localbase:ldflags python:3.4+ \
+		shebangfix
 SHEBANG_FILES=	scripts/aprotoc.py
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 485493 2018-11-21 02:16:51Z yuri $
+# $FreeBSD: head/misc/Makefile 485989 2018-11-27 08:05:36Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -507,6 +507,7 @@
     SUBDIR += sloccount
     SUBDIR += sls
     SUBDIR += smssend
+    SUBDIR += snakemake
     SUBDIR += soapysdr
     SUBDIR += solarized
     SUBDIR += spamcalc

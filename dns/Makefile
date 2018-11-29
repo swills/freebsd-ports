@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 485536 2018-11-21 20:19:11Z sunpoet $
+# $FreeBSD: head/dns/Makefile 485983 2018-11-27 05:21:23Z meta $
 #
 
     COMMENT = Domain Name Service tools
@@ -35,7 +35,6 @@
     SUBDIR += dns_balance
     SUBDIR += dnsblast
     SUBDIR += dnscap
-    SUBDIR += dnscheck
     SUBDIR += dnscheckengine
     SUBDIR += dnscrypt-proxy2
     SUBDIR += dnscrypt-wrapper

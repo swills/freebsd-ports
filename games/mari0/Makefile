@@ -1,8 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/games/mari0/Makefile 433834 2017-02-11 04:44:43Z mmokhi $
+# $FreeBSD: head/games/mari0/Makefile 486001 2018-11-27 12:23:12Z amdmi3 $
 
 PORTNAME=	mari0
 PORTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://stabyourself.net/dl.php?file=${PORTNAME}-${PORTVERSION:C/\./00/}/
 DISTNAME=	${PORTNAME}-source
@@ -13,7 +14,7 @@ COMMENT=	Nintendo\'s Super Mario Bros and Valve\'s Portal at same time
 
 LICENSE=	CC-BY-NC-SA-3.0
 
-RUN_DEPENDS=	love:devel/love
+RUN_DEPENDS=	love08:devel/love08
 
 USES=		zip
 NO_BUILD=	yes

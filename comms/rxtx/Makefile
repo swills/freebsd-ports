@@ -1,5 +1,5 @@
 # Created by: Jean-Baptiste Quenot <jb.quenot@caraldi.com>
-# $FreeBSD: head/comms/rxtx/Makefile 483470 2018-10-30 11:36:44Z linimon $
+# $FreeBSD: head/comms/rxtx/Makefile 486055 2018-11-27 19:53:11Z linimon $
 
 PORTNAME=	rxtx
 PORTVERSION=	2.2p2
@@ -30,13 +30,6 @@ INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 
 PLIST_SUB=	JAVA_HOME=${JAVA_HOME:S,^${PREFIX}/,,}
+PLIST_SUB+=	ARCH=${ARCH:C/armv.*/arm/:S/powerpc64/ppc64/}
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "powerpc64"
-PLIST_SUB+=	ARCH=ppc64
-.else
-PLIST_SUB+=	ARCH=${ARCH}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

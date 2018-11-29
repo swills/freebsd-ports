@@ -1,9 +1,8 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/misc/p5-Bot-Training-MegaHAL/Makefile 471653 2018-06-04 18:10:01Z sunpoet $
+# $FreeBSD: head/misc/p5-Bot-Training-MegaHAL/Makefile 486114 2018-11-28 19:18:55Z sunpoet $
 
 PORTNAME=	Bot-Training-MegaHAL
-PORTVERSION=	0.02
-PORTREVISION=	1
+PORTVERSION=	0.03
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:AVAR
@@ -17,11 +16,12 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-File-ShareDir-Install>=0:devel/p5-File-ShareDir-Install
-RUN_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \
-		p5-Bot-Training>=0:misc/p5-Bot-Training
+RUN_DEPENDS=	p5-Bot-Training>=0:misc/p5-Bot-Training \
+		p5-Moose>=0:devel/p5-Moose
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

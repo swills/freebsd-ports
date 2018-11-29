@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-auth-handler/Makefile 481446 2018-10-07 13:43:14Z tcberner $
+# $FreeBSD: head/net-im/ktp-auth-handler/Makefile 486084 2018-11-28 09:30:30Z amdmi3 $
 
 PORTNAME=	ktp-auth-handler
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -6,6 +6,9 @@ CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KWallet integration module for KDE Telepathy
+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5 \
 		libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/ignition-math/Makefile 485478 2018-11-20 19:49:49Z yuri $
+# $FreeBSD: head/math/ignition-math/Makefile 486016 2018-11-27 16:10:16Z linimon $
 
 PORTNAME=	ignition-math
 DISTVERSION=	6.0.0
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	ignition-cmake==2:devel/ignition-cmake
 
-USES=		cmake:outsource eigen:3
+USES=		compiler:c++17-lang cmake:outsource eigen:3
 USE_LDCONFIG=	yes
 
 CMAKE_OFF=	BUILD_TESTING

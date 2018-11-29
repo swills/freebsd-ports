@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/py-httpie/Makefile 483881 2018-11-03 09:15:18Z ale $
+# $FreeBSD: head/www/py-httpie/Makefile 486083 2018-11-28 09:26:05Z ale $
 
 PORTNAME=	httpie
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.2
 CATEGORIES=	www
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 484844 2018-11-12 22:16:26Z jsm $
+# $FreeBSD: head/x11/Makefile 485943 2018-11-26 14:08:20Z madpilot $
 #
 
     COMMENT = Ports to support the X window system
@@ -418,6 +418,7 @@
     SUBDIR += xfce4-embed-plugin
     SUBDIR += xfce4-goodies
     SUBDIR += xfce4-quicklauncher-plugin
+    SUBDIR += xfce4-screensaver
     SUBDIR += xfce4-screenshooter-plugin
     SUBDIR += xfce4-taskmanager
     SUBDIR += xfce4-terminal

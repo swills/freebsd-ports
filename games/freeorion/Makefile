@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeorion/Makefile 483087 2018-10-27 01:33:51Z jbeich $
+# $FreeBSD: head/games/freeorion/Makefile 486056 2018-11-27 19:56:43Z jbeich $
 
 PORTNAME=	freeorion
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,7 @@ CATEGORIES=	games
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
 PATCHFILES+=	fd05b34fcc68.patch:-p1
 PATCHFILES+=	35863f31210b.patch:-p1
+PATCHFILES+=	9313aa4b98cc.patch:-p1
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Turn-based space empire and galactic conquest game

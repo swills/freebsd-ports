@@ -1,8 +1,8 @@
 # Created by: "Mahdi Mokhtari <mokhi64@gmail.com>"
-# $FreeBSD: head/databases/mysql57-client/Makefile 476852 2018-08-10 21:45:08Z mmokhi $
+# $FreeBSD: head/databases/mysql57-client/Makefile 485868 2018-11-25 16:30:00Z mmokhi $
 
 PORTNAME=	mysql
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	57-client
 
 COMMENT=	Multithreaded SQL database (client)

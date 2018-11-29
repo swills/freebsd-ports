@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-poppler/Makefile 476771 2018-08-09 14:44:48Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-poppler/Makefile 486130 2018-11-28 19:21:08Z sunpoet $
 
 PORTNAME=	poppler
-PORTVERSION=	3.2.9
+PORTVERSION=	3.3.0
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +15,9 @@ LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
 RUN_DEPENDS=	rubygem-cairo-gobject>=${PORTVERSION}:devel/rubygem-cairo-gobject \
 		rubygem-gio2>=${PORTVERSION}:devel/rubygem-gio2
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>
