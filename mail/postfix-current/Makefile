@@ -1,9 +1,9 @@
 # Created by: Torsten Blum <torstenb@FreeBSD.org>
-# $FreeBSD: head/mail/postfix-current/Makefile 485499 2018-11-21 05:24:51Z ohauer $
+# $FreeBSD: head/mail/postfix-current/Makefile 486094 2018-11-28 14:34:44Z ohauer $
 
 PORTNAME=	postfix
-DISTVERSION=	3.4-20181119
-PORTREVISION?=	0
+DISTVERSION=	3.4-20181123
+PORTREVISION?=	1
 PORTEPOCH=	5
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/ \
@@ -45,7 +45,7 @@ OPTIONS_DEFINE=	BDB BLACKLISTD CDB DOCS EAI INST_BASE LDAP LDAP_SASL \
 
 OPTIONS_RADIO=		RG1
 OPTIONS_RADIO_RG1=	SASLKRB5 SASLKMIT
-OPTIONS_DEFAULT=	EAI PCRE TLS
+OPTIONS_DEFAULT?=	EAI PCRE TLS
 
 BDB_USES=		bdb
 BLACKLISTD_EXTRA_PATCHES=	${FILESDIR}/extra-patch-blacklistd

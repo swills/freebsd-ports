@@ -1,9 +1,8 @@
-# $FreeBSD: head/x11/radare-cutter/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/x11/radare-cutter/Makefile 486093 2018-11-28 14:23:18Z swills $
 
 PORTNAME=	radare-cutter
-PORTVERSION=	1.7.1
+PORTVERSION=	1.7.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	swills@FreeBSD.org

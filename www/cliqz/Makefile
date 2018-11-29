@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/cliqz/Makefile 485772 2018-11-24 13:35:42Z philip $
+# $FreeBSD: head/www/cliqz/Makefile 485999 2018-11-27 11:27:38Z philip $
 
 PORTNAME=	cliqz
 DISTVERSION=	1.23.3
@@ -96,7 +96,7 @@ post-patch:
 		${CLIQZ_DESKTOP}
 .if ${ARCH} == "i386"
 	# This prevents linker exhausting memory in i386 builds
-	@${ECHO_CMD} 'export LDFLAGS="-Wl,--no-keep-memory"' >> \
+	@${ECHO_CMD} 'export LDFLAGS="-Wl,--no-keep-memory -Wl,--as-needed"' >> \
 		${WRKSRC}/mozilla-release/browser/config/cliqz.mozconfig
 .endif
 

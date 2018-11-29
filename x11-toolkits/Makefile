@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/Makefile 486090 2018-11-28 13:23:36Z makc $
 #
 
     COMMENT = X11 toolkits
@@ -244,6 +244,7 @@
     SUBDIR += qtermwidget-l10n
     SUBDIR += qwt5
     SUBDIR += qwt5-designerplugin
+    SUBDIR += qwt5-qt5
     SUBDIR += qwt6
     SUBDIR += rep-gtk2
     SUBDIR += rubygem-gdk3

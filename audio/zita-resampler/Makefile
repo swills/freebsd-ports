@@ -1,9 +1,9 @@
 # Created by: Goran Mekić <meka@tilda.center>
-# $FreeBSD: head/audio/zita-resampler/Makefile 478813 2018-09-02 19:19:12Z swills $
+# $FreeBSD: head/audio/zita-resampler/Makefile 485914 2018-11-26 05:20:56Z linimon $
 
 PORTNAME=	zita-resampler
 PORTVERSION=	1.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/
 

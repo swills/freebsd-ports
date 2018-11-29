@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 483041 2018-10-26 16:18:28Z tobik $
+# $FreeBSD: head/Mk/Uses/cargo.mk 486165 2018-11-29 11:05:39Z tobik $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -167,6 +167,18 @@ LIB_DEPENDS+=	libssh2.so:security/libssh2
 # always use the system's libonig as returned by `pkg-config oniguruma`.
 CARGO_ENV+=	RUSTONIG_SYSTEM_LIBONIG=1
 LIB_DEPENDS+=	libonig.so:devel/oniguruma
+.endif
+
+.if ${CARGO_CRATES:Mopenssl-0.[0-9].*}
+# FreeBSD 12.0 updated base OpenSSL in r339270:
+# https://github.com/sfackler/rust-openssl/commit/276577553501
+. if !exists(${PATCHDIR}/patch-openssl-1.1.1) # skip if backported
+_openssl_VER=	${CARGO_CRATES:Mopenssl-0.[0-9].*:C/.*-//}
+.  if ${_openssl_VER:R:R} == 0 && (${_openssl_VER:R:E} < 10 || ${_openssl_VER:R:E} == 10 && ${_openssl_VER:E} < 4)
+DEV_WARNING+=	"CARGO_CRATES=openssl-0.10.3 or older do not support OpenSSL 1.1.1. Consider updating to the latest version."
+.  endif
+. endif
+.undef _openssl_VER
 .endif
 
 .if ${CARGO_CRATES:Mopenssl-sys-[0-9]*}

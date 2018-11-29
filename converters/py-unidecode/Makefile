@@ -1,8 +1,8 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/converters/py-unidecode/Makefile 466155 2018-04-01 13:42:55Z dbaio $
+# $FreeBSD: head/converters/py-unidecode/Makefile 485898 2018-11-25 19:51:37Z swills $
 
 PORTNAME=	unidecode
-PORTVERSION=	1.0.22
+PORTVERSION=	1.0.23
 CATEGORIES=	converters python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

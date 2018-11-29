@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/90secondportraits/Makefile 437800 2017-04-05 17:40:35Z amdmi3 $
+# $FreeBSD: head/games/90secondportraits/Makefile 486004 2018-11-27 12:40:40Z amdmi3 $
 
 PORTNAME=	90secondportraits
 PORTVERSION=	1.01b
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -12,7 +13,7 @@ LICENSE=	ZLIB MIT CC-BY-SA-4.0 CC-BY-3.0
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	love:devel/love
+RUN_DEPENDS=	love10:devel/love10
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	SimonLarsen:DEFAULT

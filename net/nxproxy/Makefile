@@ -1,10 +1,10 @@
 # Created by: arved
-# $FreeBSD: head/net/nxproxy/Makefile 461994 2018-02-16 09:11:26Z yuri $
+# $FreeBSD: head/net/nxproxy/Makefile 485962 2018-11-26 19:01:03Z sunpoet $
 
 PORTNAME=	nxproxy
 DISTVERSION=	3.5.0.33
 CATEGORIES=	net
-MASTER_SITES=	http://code.x2go.org/releases/source/nx-libs/
+MASTER_SITES=	https://code.x2go.org/releases/source/nx-libs/
 DISTNAME=	nx-libs-${PORTVERSION}-lite
 
 MAINTAINER=	ports@FreeBSD.org

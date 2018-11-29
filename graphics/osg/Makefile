@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/graphics/osg/Makefile 486168 2018-11-29 11:23:12Z linimon $
 
 PORTNAME=	osg
 PORTVERSION=	3.4.1
@@ -28,12 +28,8 @@ USES=		alias cmake:outsource compiler:c++11-lang jpeg pkgconfig
 USE_GL=		gl glu
 USE_XORG=	x11
 USE_LDCONFIG=	yes
-CXXFLAGS_mips=	-Wno-narrowing
-CXXFLAGS_mips64=	-Wno-narrowing
-CXXFLAGS_powerpc64=	-Wno-narrowing
-CXXFLAGS_powerpc=	-Wno-narrowing
-CXXFLAGS_powerpcspe=	-Wno-narrowing
-CXXFLAGS_sparc64=	-Wno-narrowing
+# needed to ensure build on gcc-based archs; harmless otherwise
+CXXFLAGS+=	-Wno-narrowing
 
 PLIST_SUB=	OSG_VERSION=${PORTVERSION} \
 		OSG_SHLIBVER=131 \

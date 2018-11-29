@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/textproc/ibus-typing-booster/Makefile 485558 2018-11-21 21:15:41Z thierry $
+# $FreeBSD: head/textproc/ibus-typing-booster/Makefile 486146 2018-11-28 20:06:07Z thierry $
 
 PORTNAME=	ibus-typing-booster
-PORTVERSION=	2.2.0
+PORTVERSION=	2.2.1
 CATEGORIES=	textproc
 
 MAINTAINER=	thierry@FreeBSD.org

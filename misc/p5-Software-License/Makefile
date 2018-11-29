@@ -1,14 +1,14 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Software-License/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/misc/p5-Software-License/Makefile 486116 2018-11-28 19:19:12Z sunpoet $
 
 PORTNAME=	Software-License
-PORTVERSION=	0.103013
+PORTVERSION=	0.103014
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:LEONT
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Packages that provide templated software licenses
 
 LICENSE=	ART10 GPLv1+
@@ -21,8 +21,9 @@ RUN_DEPENDS=	p5-Data-Section>=0:devel/p5-Data-Section \
 		p5-Text-Template>=0:textproc/p5-Text-Template
 TEST_DEPENDS=	p5-Try-Tiny>=0:lang/p5-Try-Tiny
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

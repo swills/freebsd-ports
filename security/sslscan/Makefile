@@ -1,9 +1,9 @@
 # Created by: Matthieu BOUTHORS <matthieu@labs.fr>
-# $FreeBSD: head/security/sslscan/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/security/sslscan/Makefile 486010 2018-11-27 13:49:50Z gavin $
 
 PORTNAME=	sslscan
-DISTVERSION=	1.11.11-16
-DISTVERSIONSUFFIX=  -g96ad4ff
+DISTVERSION=	1.11.12
+DISTVERSIONSUFFIX=	-${GH_ACCOUNT}
 CATEGORIES=	security
 
 MAINTAINER=	gavin@FreeBSD.org

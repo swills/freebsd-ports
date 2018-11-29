@@ -1,8 +1,8 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/ports-mgmt/portshaker/Makefile 471361 2018-06-02 10:56:11Z romain $
+# $FreeBSD: head/ports-mgmt/portshaker/Makefile 486047 2018-11-27 18:32:47Z romain $
 
 PORTNAME?=	portshaker
-PORTVERSION=	1.0.16
+PORTVERSION=	1.0.17
 DISTVERSIONPREFIX=	v
 PORTREVISION?=	0
 CATEGORIES?=	ports-mgmt

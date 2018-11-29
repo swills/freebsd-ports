@@ -1,9 +1,10 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_rpaf2/Makefile 479408 2018-09-10 13:16:16Z mat $
+# $FreeBSD: head/www/mod_rpaf2/Makefile 485948 2018-11-26 17:28:46Z joneum $
 
 PORTNAME=	mod_rpaf
 PORTVERSION=	0.8.4
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMESUFFIX=	2
 
@@ -12,12 +13,11 @@ COMMENT=	Make proxied requests appear with client IP
 
 LICENSE=	APACHE20
 
+USES=		apache:2.4+
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	gnif
 
-DOCS=	README.md
-
-USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 SHORTMODNAME=	rpaf
 
@@ -25,8 +25,8 @@ SRC_FILE=	mod_rpaf.c
 
 APMOD_FILE=	200_mod_rpaf.conf.sample
 PLIST_SUB+=	APMOD_FILE=${APMOD_FILE}
-PLIST_FILES=	@sample\ %%APACHEETCDIR%%/modules.d/200_${PORTNAME}.conf.sample \
-		%%APACHEMODDIR%%/${PORTNAME}.so
+PLIST_FILES=	@sample\ ${APACHEETCDIR}/modules.d/200_${PORTNAME}.conf.sample \
+		${APACHEMODDIR}/${PORTNAME}.so
 SUB_FILES=	${APMOD_FILE}
 
 PORTDOCS=	README.md

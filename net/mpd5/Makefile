@@ -1,5 +1,5 @@
 # Created by: Archie Cobbs
-# $FreeBSD: head/net/mpd5/Makefile 485845 2018-11-25 07:48:21Z eugen $
+# $FreeBSD: head/net/mpd5/Makefile 485853 2018-11-25 12:09:27Z eugen $
 
 PORTNAME=	mpd
 DISTVERSION=	5.8
@@ -14,10 +14,6 @@ COMMENT=	Multi-link PPP daemon based on netgraph(4)
 
 LICENSE=	BSD3CLAUSE
 
-BROKEN_SSL=	libressl libressl-devel
-BROKEN_SSL_REASON_libressl=		needs libfetch(3) linked with system libssl
-BROKEN_SSL_REASON_libressl-devel=	needs libfetch(3) linked with system libssl
-
 OPTIONS_DEFINE=	DOCS NG_IPACCT
 NG_IPACCT_DESC=	Use ng_ipacct kernel module from port
 
@@ -29,11 +25,6 @@ USES=		ssl
 .include <bsd.port.options.mk>
 
 MAKE_ARGS+=	OSVERSION=${OSVERSION}
-
-.if ${OPSYS} == "FreeBSD" && ${OSVERSION} < 1200085
-BROKEN_SSL+=	openssl111
-BROKEN_SSL_REASON_openssl111=	needs libfetch(3) linked with system libssl
-.endif
 
 .if ${PORT_OPTIONS:MNG_IPACCT}
 BUILD_DEPENDS+=	${LOCALBASE}/include/netgraph/ng_ipacct.h:net-mgmt/ng_ipacct

@@ -1,9 +1,8 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/misc/p5-Bot-Training-StarCraft/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Bot-Training-StarCraft/Makefile 486115 2018-11-28 19:19:03Z sunpoet $
 
 PORTNAME=	Bot-Training-StarCraft
-PORTVERSION=	0.02
-PORTREVISION=	1
+PORTVERSION=	0.03
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:AVAR
@@ -16,8 +15,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-ShareDir-Install>=0.03:devel/p5-File-ShareDir-Install
-RUN_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \
-		p5-Bot-Training>=0:misc/p5-Bot-Training
+RUN_DEPENDS=	p5-Bot-Training>=0:misc/p5-Bot-Training \
+		p5-Moose>=0:devel/p5-Moose
 
 USES=		perl5
 USE_PERL5=	configure

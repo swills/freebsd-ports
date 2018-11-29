@@ -1,5 +1,5 @@
 # Created by: ade, archie
-# $FreeBSD: head/x11-fm/caja/Makefile 485726 2018-11-24 07:06:27Z linimon $
+# $FreeBSD: head/x11-fm/caja/Makefile 486024 2018-11-27 16:36:14Z linimon $
 
 PORTNAME=	caja
 PORTVERSION=	1.20.2
@@ -22,8 +22,8 @@ LIB_DEPENDS=	libexif.so:graphics/libexif \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		compiler:c11 desktop-file-utils gettext gmake \
-		libtool localbase pathfix pkgconfig shared-mime-info tar:xz
+USES=		compiler:c11 desktop-file-utils gettext gmake gnome libtool \
+		localbase mate pathfix pkgconfig shared-mime-info tar:xz
 USE_MATE=	desktop icontheme:run
 USE_XORG=	ice sm x11
 USE_GNOME=	cairo gtk30 gnomeprefix intltool introspection:build libxml2

@@ -1,11 +1,10 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit2-gtk3/Makefile 484788 2018-11-11 23:54:06Z jbeich $
+# $FreeBSD: head/www/webkit2-gtk3/Makefile 486051 2018-11-27 19:30:47Z kwm $
 
 PORTNAME=	webkit
-PORTVERSION=	2.22.3
-PORTREVISION=	1
+PORTVERSION=	2.22.4
 CATEGORIES=	www
-MASTER_SITES=	http://webkitgtk.org/releases/
+MASTER_SITES=	https://webkitgtk.org/releases/
 PKGNAMESUFFIX=	2-gtk3
 DISTNAME=	${PORTNAME}gtk-${PORTVERSION}
 

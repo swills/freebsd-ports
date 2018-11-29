@@ -1,8 +1,8 @@
 # Created by: Karsten Pedersen <kpedersen@opencde.org>
-# $FreeBSD: head/devel/radare2/Makefile 479509 2018-09-11 08:01:28Z manu $
+# $FreeBSD: head/devel/radare2/Makefile 486091 2018-11-28 14:06:02Z swills $
 
 PORTNAME=	radare2
-DISTVERSION=	2.9.0
+DISTVERSION=	3.1.0
 CATEGORIES=	devel
 
 MAINTAINER=	mizhka@gmail.com

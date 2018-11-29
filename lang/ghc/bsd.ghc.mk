@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/ghc/bsd.ghc.mk 485229 2018-11-18 15:30:45Z arrowd $
+# $FreeBSD: head/lang/ghc/bsd.ghc.mk 486008 2018-11-27 13:41:27Z antoine $
 #
 # bsd.ghc.mk -- Common code for various versions of GHC ports.
 #
@@ -103,6 +103,9 @@ CONFIGURE_ARGS+=	--enable-dtrace=0
 .if ${OSVERSION} < 1200000
 USE_GCC=	yes
 .else
+.  if !exists(/usr/bin/ld.bfd)
+USE_BINUTILS=	yes
+.  endif
 LD=		ld.bfd
 .endif
 CONFIGURE_ENV+=		CC=${CC} LD=${LD}

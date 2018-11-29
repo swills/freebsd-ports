@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PerlX-Maybe/Makefile 481931 2018-10-12 19:59:34Z sunpoet $
+# $FreeBSD: head/devel/p5-PerlX-Maybe/Makefile 485959 2018-11-26 19:00:37Z sunpoet $
 
 PORTNAME=	PerlX-Maybe
-PORTVERSION=	1.200
+PORTVERSION=	1.201
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TOBYINK
@@ -17,9 +17,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 OPTIONS_DEFINE=	XS
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 XS_BUILD_DEPENDS=	p5-PerlX-Maybe-XS>=0:devel/p5-PerlX-Maybe-XS
 XS_RUN_DEPENDS=		p5-PerlX-Maybe-XS>=0:devel/p5-PerlX-Maybe-XS

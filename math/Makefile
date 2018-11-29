@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 485413 2018-11-20 07:10:02Z yuri $
+# $FreeBSD: head/math/Makefile 486088 2018-11-28 13:07:18Z makc $
 #
 
     COMMENT = Mathematics
@@ -789,6 +789,7 @@
     SUBDIR += qtiplot
     SUBDIR += qtiplot-doc
     SUBDIR += qtoctave
+    SUBDIR += qwtplot3d
     SUBDIR += qwtplot3d-qt4
     SUBDIR += randlib
     SUBDIR += rapid

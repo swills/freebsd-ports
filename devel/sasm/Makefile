@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/sasm/Makefile 484677 2018-11-11 09:44:45Z sunpoet $
+# $FreeBSD: head/devel/sasm/Makefile 486167 2018-11-29 11:11:40Z linimon $
 
 PORTNAME=	SASM
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Simple IDE for NASM, MASM, GAS and FASM assembly languages
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	Dman95
 USE_QT=		core gui network widgets buildtools_build

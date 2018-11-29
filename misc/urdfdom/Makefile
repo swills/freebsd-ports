@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/urdfdom/Makefile 485418 2018-11-20 07:52:45Z yuri $
+# $FreeBSD: head/misc/urdfdom/Makefile 486041 2018-11-27 17:16:44Z yuri $
 
 PORTNAME=	urdfdom
 DISTVERSION=	1.0.0-9
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libconsole_bridge.so:misc/console-bridge \
 		libtinyxml.so:textproc/tinyxml
 RUN_DEPENDS=	urdfdom-headers>0:misc/urdfdom-headers
 
-USES=		cmake:outsource
+USES=		compiler:c++11-lang cmake:outsource
 USE_GITHUB=	yes
 GH_ACCOUNT=	ros
 USE_LDCONFIG=	yes

@@ -1,9 +1,9 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/net/qt4-network/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/net/qt4-network/Makefile 485968 2018-11-26 21:35:49Z antoine $
 
 PORTNAME=	network
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	net ipv6
 PKGNAMEPREFIX=	qt4-
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/7kaa/Makefile 483636 2018-11-01 04:13:59Z linimon $
+# $FreeBSD: head/games/7kaa/Makefile 486059 2018-11-27 20:04:45Z linimon $
 
 PORTNAME=	7kaa
 PORTVERSION=	2.14.7
@@ -25,8 +25,7 @@ GNU_CONFIGURE=	yes
 LLD_UNSAFE=	yes
 CONFIGURE_ARGS=	--disable-nls # no translations ATM
 USE_SDL=	sdl2
-CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
-CXXFLAGS_powerpc64=	-Wno-error=narrowing
+CXXFLAGS+=		-Wno-error=narrowing
 CXXFLAGS_clang=		-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/${PORTNAME} \

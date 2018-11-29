@@ -1,12 +1,16 @@
 # Created by: alepulver
-# $FreeBSD: head/net/xrdp/Makefile 484515 2018-11-09 15:32:15Z swills $
+# $FreeBSD: head/net/xrdp/Makefile 486081 2018-11-28 08:12:18Z meta $
 
 PORTNAME=	xrdp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.8
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net
 DIST_SUBDIR?=	${PORTNAME}
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/
+PATCHFILES=	88f0d31.patch:-p1
 
 MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Open source Remote Desktop Protocol (RDP) server
@@ -34,7 +38,7 @@ CONFIGURE_ARGS=	--localstatedir=/var --enable-strict-locations \
 LDFLAGS+=	-lssl
 CONFLICTS=	xrdp-devel[0-9]*
 INSTALL_TARGET=	install-strip
-SUB_FILES=	pkg-install pkg-message
+SUB_FILES=	pkg-deinstall pkg-install pkg-message
 SUB_LIST=	OPENSSLBASE=${OPENSSLBASE}
 
 OPTIONS_DEFINE=	DEBUG FUSE IPV6

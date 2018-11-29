@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kitinerary/Makefile 485713 2018-11-23 22:42:03Z tcberner $
+# $FreeBSD: head/net/kitinerary/Makefile 485908 2018-11-26 01:28:37Z linimon $
 
 PORTNAME=	kitinerary
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -21,7 +21,6 @@ USE_QT=		core declarative \
 USE_LDCONFIG=	yes
 
 DESCR=		${.CURDIR:H:H}/deskutils/kdepim/pkg-descr
-
 
 OPTIONS_DEFINE=	DOCS
 

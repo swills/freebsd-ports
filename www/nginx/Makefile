@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 485016 2018-11-15 17:01:42Z joneum $
+# $FreeBSD: head/www/nginx/Makefile 486074 2018-11-28 00:06:34Z osa $
 
 PORTNAME=	nginx
 PORTVERSION=	1.14.1
-PORTREVISION?=	1
+PORTREVISION?=	5
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/ \
@@ -166,6 +166,7 @@ HTTP_REWRITE_CONFIGURE_OFF=	--without-http_rewrite_module
 HTTP_SECURE_LINK_CONFIGURE_ON=	--with-http_secure_link_module
 HTTP_SLICE_CONFIGURE_ON=	--with-http_slice_module
 HTTP_SSL_CONFIGURE_ON=		--with-http_ssl_module
+HTTP_SSL_USE=				openssl_rpath
 HTTP_SSL_USES=			ssl
 HTTP_STATUS_CONFIGURE_ON=	--with-http_stub_status_module
 HTTP_SUB_CONFIGURE_ON=		--with-http_sub_module

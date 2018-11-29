@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 485800 2018-11-24 22:28:15Z sunpoet $
+# $FreeBSD: head/security/Makefile 486012 2018-11-27 14:28:49Z des $
 #
 
     COMMENT = Security tools
@@ -423,6 +423,7 @@
     SUBDIR += mhash
     SUBDIR += mindterm-binary
     SUBDIR += minisign
+    SUBDIR += modsecurity3
     SUBDIR += monkeysphere
     SUBDIR += morphis
     SUBDIR += munge

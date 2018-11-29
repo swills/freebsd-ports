@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/wimlib/Makefile 472083 2018-06-09 19:27:31Z tobik $
+# $FreeBSD: head/sysutils/wimlib/Makefile 486098 2018-11-28 17:13:55Z pizzamig $
 
 PORTNAME=	wimlib
-PORTVERSION=	1.12.0
+PORTVERSION=	1.13.0
 CATEGORIES=	sysutils
 MASTER_SITES=	https://wimlib.net/downloads/
 

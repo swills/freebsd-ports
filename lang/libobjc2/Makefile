@@ -1,5 +1,5 @@
 # Created by: Pete French <pete@twisted.org.uk>
-# $FreeBSD: head/lang/libobjc2/Makefile 483764 2018-11-02 01:54:07Z linimon $
+# $FreeBSD: head/lang/libobjc2/Makefile 486025 2018-11-27 16:40:33Z linimon $
 
 PORTNAME=	libobjc2
 PORTVERSION=	1.8.1
@@ -29,12 +29,9 @@ CMAKE_ARGS+=	-DTESTS=OFF
 # This shouldn't be needed, but our llvm port installs llvm-config with a silly
 # name...
 CMAKE_ARGS+=	-DLLVM_OPTS=OFF
-CXXFLAGS_powerpc64=	-stdlib=libstdc++
-CXXFLAGS_powerpcspe=	-stdlib=libstdc++
-CXXFLAGS_powerpc=	-stdlib=libstdc++
-CXXFLAGS_sparc64=	-stdlib=libstdc++
-CXXFLAGS_mips=	-stdlib=libstdc++
-CXXFLAGS_mips64=	-stdlib=libstdc++
+.if exists(/usr/lib/libstdc++.so)
+CXXFLAGS+=	-stdlib=libstdc++
+.endif
 
 post-install:
 	${LN} -sf libobjc.so.${SHLIB_MAJOR}.${SHLIB_MINOR} ${STAGEDIR}${PREFIX}/lib/libobjc.so.${SHLIB_MAJOR}

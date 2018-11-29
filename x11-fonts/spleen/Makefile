@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/spleen/Makefile 481599 2018-10-09 05:48:20Z tobik $
+# $FreeBSD: head/x11-fonts/spleen/Makefile 485942 2018-11-26 14:02:29Z tobik $
 
 PORTNAME=	spleen
-DISTVERSION=	1.0.1
+DISTVERSION=	1.0.2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/fcambus/spleen/releases/download/${DISTVERSION}/
 PKGNAMESUFFIX=	-font

@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/science/py-scikit-learn/Makefile 483458 2018-10-30 09:00:15Z amdmi3 $
+# $FreeBSD: head/science/py-scikit-learn/Makefile 486042 2018-11-27 17:21:37Z yuri $
 
 PORTNAME=	scikit-learn
-PORTVERSION=	0.19.2
+DISTVERSION=	0.20.1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,11 +15,17 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYNUMPY} \
 		${PYTHON_SITELIBDIR}/scipy/version.py:science/py-scipy@${PY_FLAVOR}
+LIB_DEPENDS=	libcblas.so:math/cblas
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		fortran python
 USE_PYTHON=	distutils autoplist
 
 LDFLAGS+=	-shared
+
+POST_PLIST=	fix-plist
+
+fix-plist: # https://github.com/scikit-learn/scikit-learn/issues/12681
+	@${REINPLACE_CMD} -e "s|lib/python.*/sklearn/datasets/tests/data/openml$$||" ${TMPPLIST}
 
 .include <bsd.port.mk>

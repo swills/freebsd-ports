@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/py-dominate/Makefile 485018 2018-11-15 19:05:40Z sunpoet $
+# $FreeBSD: head/textproc/py-dominate/Makefile 486108 2018-11-28 19:18:04Z sunpoet $
 
 PORTNAME=	dominate
-PORTVERSION=	2.3.4
+PORTVERSION=	2.3.5
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

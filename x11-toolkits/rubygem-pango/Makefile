@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-pango/Makefile 476764 2018-08-09 14:44:12Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-pango/Makefile 486123 2018-11-28 19:20:10Z sunpoet $
 
 PORTNAME=	pango
-PORTVERSION=	3.2.9
+PORTVERSION=	3.3.0
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 
@@ -10,12 +10,11 @@ COMMENT=	Ruby binding for Pango
 
 LICENSE=	LGPL21+
 
-RUN_DEPENDS=	rubygem-cairo>=1.14.0:graphics/rubygem-cairo \
-		rubygem-cairo-gobject>=${PORTVERSION}:devel/rubygem-cairo-gobject \
+RUN_DEPENDS=	rubygem-cairo-gobject>=${PORTVERSION}:devel/rubygem-cairo-gobject \
 		rubygem-gobject-introspection>=${PORTVERSION}:devel/rubygem-gobject-introspection
 
+USES=		gem gnome
 USE_GNOME=	pango
 USE_RUBY=	yes
-USES=		gem gnome
 
 .include <bsd.port.mk>

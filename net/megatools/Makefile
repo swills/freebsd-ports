@@ -1,5 +1,5 @@
 # Created by: Max V. Kostikov <max@kostikov.co>
-# $FreeBSD: head/net/megatools/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/megatools/Makefile 486166 2018-11-29 11:07:58Z linimon $
 
 PORTNAME=	megatools
 PORTVERSION=	1.10.2
@@ -17,7 +17,8 @@ BUILD_DEPENDS=	asciidoc:textproc/asciidoc
 
 CONFIGURE_ENV=	OPENSSL_CFLAGS="-I${OPENSSLINC}" \
 		OPENSSL_LIBS="-L${OPENSSLLIB} -lcrypto -lssl"
-USES=		gettext-runtime gmake gnome libtool pathfix pkgconfig ssl
+USES=		compiler:c11 gettext-runtime gmake gnome libtool pathfix \
+		pkgconfig ssl
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20
 

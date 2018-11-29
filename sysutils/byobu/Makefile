@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/byobu/Makefile 485535 2018-11-21 20:13:22Z swills $
+# $FreeBSD: head/sysutils/byobu/Makefile 485912 2018-11-26 02:28:26Z meta $
 
 PORTNAME=	byobu
 PORTVERSION=	5.127
@@ -8,7 +8,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://launchpad.net/${PORTNAME}/trunk/${PORTVERSION}/+download/
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig
 
-MAINTAINER=	jcoffman@openfire.io
+MAINTAINER=	jcoffman@ipsecure.io
 COMMENT=	Profile and configuration utilities for GNU Screen and/or tmux
 
 LICENSE=	GPLv3

@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/math/secp256k1/Makefile 481792 2018-10-11 08:16:57Z ale $
+# $FreeBSD: head/math/secp256k1/Makefile 485928 2018-11-26 08:20:12Z ale $
 
 PORTNAME=	secp256k1
-PORTVERSION=	0.1.20180531
+PORTVERSION=	0.1.20181106
 CATEGORIES=	math security java
 
 MAINTAINER=	ale@FreeBSD.org
@@ -12,10 +12,11 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		autoreconf libtool gmake
+
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	bitcoin-core
-GH_TAGNAME=	1e6f1f5
+GH_TAGNAME=	314a61d
 
 OPTIONS_DEFINE=	GMP JAVA
 OPTIONS_DEFAULT=GMP JAVA
@@ -29,7 +30,8 @@ JAVA_DESC=	Build JNI bindings
 JAVA_CONFIGURE_ENABLE=jni
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-experimental --enable-module-ecdh
+CONFIGURE_ARGS=	--enable-experimental --enable-module-ecdh \
+		--enable-endomorphism --enable-module-recovery
 INSTALL_TARGET=	install-strip
 
 .include <bsd.port.options.mk>
@@ -43,5 +45,8 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 USE_JAVA=	yes
 CONFIGURE_ENV+=	JAVA_HOME="${JAVA_HOME}"
 .endif
+
+check regression-test test:	build
+	cd ${WRKSRC} && ./tests
 
 .include <bsd.port.mk>

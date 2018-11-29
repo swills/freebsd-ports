@@ -1,9 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/textproc/libextractor/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/textproc/libextractor/Makefile 486066 2018-11-27 21:47:52Z fernape $
 
 PORTNAME=	libextractor
-PORTVERSION=	1.7
-PORTREVISION=	1
+PORTVERSION=	1.8
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 

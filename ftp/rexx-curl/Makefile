@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/ftp/rexx-curl/Makefile 465964 2018-03-30 11:52:46Z krion $
+# $FreeBSD: head/ftp/rexx-curl/Makefile 485910 2018-11-26 01:48:42Z swills $
 
 PORTNAME=	curl
 PORTVERSION=	2.0.1
+PORTREVISION=	1
 CATEGORIES=	ftp
 MASTER_SITES=	SF/rexx${PORTNAME}/rexx${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	rexx-
@@ -40,7 +41,7 @@ do-extract:
 
 post-patch:
 	@${REINPLACE_CMD} -e "s| -lc | |g" \
-		-e "/\$.sharedir)\/images/d" \
+		-e "/$$.sharedir)\/images/d" \
 		-e "/index.html/d" \
 		-e "/rxcurl64.png/d" \
 		${WRKSRC}/Makefile.in

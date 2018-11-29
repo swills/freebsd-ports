@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/cbsd/Makefile 485130 2018-11-17 12:38:56Z novel $
+# $FreeBSD: head/sysutils/cbsd/Makefile 485917 2018-11-26 05:52:55Z novel $
 
 PORTNAME=	cbsd
-DISTVERSION=	12.0.1
+DISTVERSION=	12.0.2
 CATEGORIES=	sysutils
 
 MAINTAINER=	olevole@olevole.ru
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libssh2.so:security/libssh2 \
 
 USES=		libedit pkgconfig
 USE_GITHUB=	yes
-USE_RC_SUBR=	cbsdd cbsdrsyncd
+USE_RC_SUBR=	cbsdd cbsdrsyncd cbsd-statsd-bhyve cbsd-statsd-hoster cbsd-statsd-jail
 
 SUB_FILES=	pkg-message pkg-deinstall
 

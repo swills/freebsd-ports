@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/rubygem-clutter-gstreamer/Makefile 476773 2018-08-09 14:44:59Z sunpoet $
+# $FreeBSD: head/multimedia/rubygem-clutter-gstreamer/Makefile 486132 2018-11-28 19:21:25Z sunpoet $
 
 PORTNAME=	clutter-gstreamer
-PORTVERSION=	3.2.9
+PORTVERSION=	3.3.0
 CATEGORIES=	multimedia rubygems
 MASTER_SITES=	RG
 
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-clutter>=${PORTSVERSION}:graphics/rubygem-clutter \
 		rubygem-gdk_pixbuf2>=${PORTSVERSION}:graphics/rubygem-gdk_pixbuf2 \
 		rubygem-gstreamer>=${PORTVERSION}:multimedia/rubygem-gstreamer
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

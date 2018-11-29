@@ -1,11 +1,10 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 480018 2018-09-18 13:02:39Z manu $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 485932 2018-11-26 08:40:06Z manu $
 #
 # Common infrastructure for u-boot ports
 #
 
 PORTNAME=	u-boot
 PORTVERSION=	${UBOOT_VERSION}
-PORTREVISION=	3
 CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	-${MODEL}
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/
@@ -94,7 +93,7 @@ UBOOT_METADATA_IMX6_RAW_BS=	512
 .if !defined(UBOOT_VERSION) && defined(UBOOT_VERSION_${FAMILY:tu})
 UBOOT_VERSION=${UBOOT_VERSION_${FAMILY:tu}}
 .endif
-UBOOT_VERSION?=	2018.09
+UBOOT_VERSION?=	2018.11
 
 .if !defined(UBOOT_PLIST) && defined(UBOOT_PLIST_${FAMILY:tu})
 UBOOT_PLIST=${UBOOT_PLIST_${FAMILY:tu}}
