@@ -1,5 +1,5 @@
 # Created by: hsu
-# $FreeBSD: head/lang/scm/Makefile 485281 2018-11-18 22:06:44Z mi $
+# $FreeBSD: head/lang/scm/Makefile 486483 2018-12-02 20:27:18Z antoine $
 
 PORTNAME=	scm
 PORTVERSION=	5f2
@@ -14,6 +14,8 @@ MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Scheme interpreter
 
 LICENSE=	LGPL21
+
+BROKEN=		fails to stage
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

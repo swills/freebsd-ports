@@ -1,11 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-flask-apscheduler/Makefile 483413 2018-10-29 22:13:25Z sunpoet $
+# $FreeBSD: head/www/py-flask-apscheduler/Makefile 486422 2018-12-02 15:34:27Z sunpoet $
 
-PORTNAME=	Flask-APScheduler
-PORTVERSION=	1.10.1
+PORTNAME=	flask-apscheduler
+PORTVERSION=	1.11.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+DISTNAME=	Flask-APScheduler-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	APScheduler support for Flask

@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/devel/pecl-spl_types/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-spl_types/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	spl_types
 PORTVERSION=	0.4.0
@@ -9,6 +9,9 @@ DISTNAME=	SPL_Types-${PORTVERSION}
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	PECL extension of a collection of special typehandling classes
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

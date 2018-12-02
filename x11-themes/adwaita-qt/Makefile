@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-themes/adwaita-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-themes/adwaita-qt/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	adwaita-qt
 DISTVERSION=	1.0
@@ -16,6 +16,9 @@ FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 qt4_PKGNAMESUFFIX=	4
 qt5_PKGNAMESUFFIX=	5
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
+
 
 USES=		cmake:outsource compiler:c++11-lib localbase pkgconfig
 .  if ${FLAVOR} == qt4

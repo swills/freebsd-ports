@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-raphf/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-raphf/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	raphf
 PORTVERSION=	1.1.2
@@ -8,6 +8,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	Resource and persistent handles factory
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

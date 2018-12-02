@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/jag/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/jag/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	jag
 PORTVERSION=	0.3.2
@@ -13,6 +13,9 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	2D arcade-puzzle game like KDiamonds
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		dos2unix qmake qt:4 zip
 USE_SDL=	sdl mixer

@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/math/pecl-big_int/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/math/pecl-big_int/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	big_int
 PORTVERSION=	1.0.7
@@ -8,6 +8,9 @@ CATEGORIES=	math devel pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Functions for calculations with arbitrary length integers and bitsets
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BIG_INT
 LICENSE_NAME=	BIG_INT license

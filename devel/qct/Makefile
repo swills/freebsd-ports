@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/qct/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/qct/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qct
 PORTVERSION=	1.7
@@ -12,6 +12,9 @@ COMMENT=	QCT GUI commit tool
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		pyqt:4 python:2.7
 USE_PYQT=	gui

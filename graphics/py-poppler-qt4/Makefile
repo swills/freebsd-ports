@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-poppler-qt4/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/graphics/py-poppler-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	poppler-qt4
 PORTVERSION=	0.18.1
@@ -13,6 +13,9 @@ COMMENT=	Python bindings for the Poppler-Qt4 PDF rendering library
 
 LICENSE=	LGPL21 LGPL3
 LICENSE_COMB=	dual
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
 

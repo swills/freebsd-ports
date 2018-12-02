@@ -1,5 +1,5 @@
 # Created by: Prudhvi Krishna <prudhvikrishna@gmail.com>
-# $FreeBSD: head/www/entrans/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/entrans/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	entrans
 PORTVERSION=	0.3.3
@@ -8,6 +8,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	prudhvi-krishna-bsd@surapaneni.in
 COMMENT=	Entrans is an online, collaborative translation tool
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

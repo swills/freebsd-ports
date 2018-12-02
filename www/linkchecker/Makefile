@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/linkchecker/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/www/linkchecker/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	linkchecker
 PORTVERSION=	9.3
@@ -46,6 +46,11 @@ SYNTAX_RUN_DEPENDS=\
 		${PYTHON_PKGNAMEPREFIX}utidylib>=0.2:www/py-utidylib@${PY_FLAVOR}
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e \

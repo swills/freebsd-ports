@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/edb/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/edb/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	edb
 PORTVERSION=	0.9.18
@@ -11,6 +11,9 @@ MAINTAINER=	itechbear@gmail.com
 COMMENT=	Cross-platform x86/x86-64 debugger based on Qt 4
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 

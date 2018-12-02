@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/ninja-ide/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/ninja-ide/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ninja-ide
 PORTVERSION=	2.3
@@ -12,6 +12,9 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Cross-platform integrated development environment (IDE)
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		pyqt:4 python:2.7
 USE_PYQT=	declarative_run network  webkit

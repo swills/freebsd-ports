@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-rails5/Makefile 467969 2018-04-22 08:50:58Z sunpoet $
+# $FreeBSD: head/www/rubygem-rails5/Makefile 486438 2018-12-02 15:36:42Z sunpoet $
 
 PORTNAME=	rails
-PORTVERSION=	5.1.6
+PORTVERSION=	5.1.6.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5
@@ -51,10 +51,10 @@ RUN_DEPENDS=	rubygem-actioncable5>=${PORTVERSION}:www/rubygem-actioncable5 \
 
 PORTSCOUT=	limit:^5\.1\.
 
-NO_ARCH=	yes
-
 USES=		gem
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 CPE_VENDOR=	rubyonrails
 CPE_PRODUCT=	ruby_on_rails

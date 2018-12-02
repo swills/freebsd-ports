@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/aqsis/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/aqsis/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	aqsis
 PORTVERSION=	1.8.2
@@ -12,6 +12,9 @@ COMMENT=	Photorealistic rendering system
 
 LICENSE=	BSD3CLAUSE GPLv2
 LICENSE_COMB=	multi
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	bison:devel/bison \
 		xsltproc:textproc/libxslt

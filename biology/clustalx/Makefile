@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/clustalx/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/biology/clustalx/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	clustalx
 DISTVERSION=	2.1
@@ -11,6 +11,9 @@ COMMENT=	Multiple alignment of nucleic acid and protein sequences with GUI
 
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		corelib gui moc qmake_build xml

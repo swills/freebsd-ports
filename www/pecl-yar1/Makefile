@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/www/pecl-yar1/Makefile 485511 2018-11-21 12:41:57Z joneum $
+# $FreeBSD: head/www/pecl-yar1/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	yar
 PORTVERSION=	1.2.5
@@ -8,6 +8,9 @@ CATEGORIES=	www
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Yar (Yet another RPC framework) is a light, concurrent RPC framework
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

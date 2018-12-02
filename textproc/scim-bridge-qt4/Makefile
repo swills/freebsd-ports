@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/textproc/scim-bridge-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/scim-bridge-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	scim-bridge
 PORTVERSION=	0.4.16
@@ -13,6 +13,9 @@ COMMENT=	Qt4 client for Scim-bridge
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	dual
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 LICENSE_FILE_GPLv2=	${WRKSRC}/doc/LICENSE.GPL
 LICENSE_FILE_LGPL21=	${WRKSRC}/doc/LICENSE.LGPL
 

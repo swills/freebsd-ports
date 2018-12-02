@@ -1,5 +1,5 @@
 # Created by: Matt Tosto <datahead4@gmail.com>
-# $FreeBSD: head/audio/liblastfm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/liblastfm/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	liblastfm
 DISTVERSION=	1.0.9-5
@@ -13,13 +13,16 @@ COMMENT=	Qt C++ library for the Last.fm webservices
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake pkgconfig 
+USES=		cmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	lastfm
 USE_LDCONFIG=	yes
 
 SLAVE?=		qt4
 .if ${SLAVE} == qt4
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 USES+=		qt:4
 USE_QT=		corelib dbus network sql xml \
 		moc_build qmake_build rcc_build

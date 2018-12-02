@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/avidemux-qt4/Makefile 476029 2018-07-31 23:26:50Z bar $
+# $FreeBSD: head/multimedia/avidemux-qt4/Makefile 486489 2018-12-02 21:33:49Z antoine $
 
 PORTNAME=	avidemux
 PORTVERSION=	${AVIDEMUX_VERSION}
@@ -12,6 +12,7 @@ COMMENT=	Simple GUI based video editor (QT4 UI)
 LIB_DEPENDS=	libADM6avutil.so.54:multimedia/avidemux
 
 MASTERDIR=	${.CURDIR}/../avidemux
+OPTIONS_SLAVE=	QT4
 PLIST=		${.CURDIR}/pkg-plist
 
 .include "${MASTERDIR}/Makefile.common"

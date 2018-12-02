@@ -1,5 +1,5 @@
 # Created by: Marek Holienka <marekholienka@gmail.com>
-# $FreeBSD: head/databases/mysqldumper/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/mysqldumper/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	mysqldumper
 PORTVERSION=	1.24.4
@@ -9,6 +9,9 @@ DISTNAME=	MySQLDumper${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tool for backing up MySQL databases
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/ReadMe/license_english.txt

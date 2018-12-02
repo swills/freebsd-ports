@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu4/Makefile 485511 2018-11-21 12:41:57Z joneum $
+# $FreeBSD: head/devel/pecl-APCu4/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	APCu
 PORTVERSION=	4.0.11
@@ -9,6 +9,9 @@ DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	APC User Caching
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

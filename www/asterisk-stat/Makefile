@@ -1,5 +1,5 @@
 # Created by: Fumihiko Kimura <jfkimura@yahoo.com>
-# $FreeBSD: head/www/asterisk-stat/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/asterisk-stat/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	asterisk-stat
 PORTVERSION=	2.0.1
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION:S/./_/g}
 
 MAINTAINER=	jfkimura@yahoo.co.jp
 COMMENT=	ASTERISK call detail records analyzer
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 IGNORE_WITH_PHP=	70 71 72 73
 

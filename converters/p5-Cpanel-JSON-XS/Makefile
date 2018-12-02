@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Cpanel-JSON-XS/Makefile 484124 2018-11-04 18:56:18Z sunpoet $
+# $FreeBSD: head/converters/p5-Cpanel-JSON-XS/Makefile 486179 2018-11-29 16:44:00Z sunpoet $
 
 PORTNAME=	Cpanel-JSON-XS
-PORTVERSION=	4.07
+PORTVERSION=	4.08
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RURBAN
@@ -26,8 +26,8 @@ TEST_DEPENDS=	p5-JSON>=0:converters/p5-JSON \
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Cpanel/JSON/XS/XS.so

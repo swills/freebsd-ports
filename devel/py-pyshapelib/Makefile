@@ -1,11 +1,11 @@
 # Created by: TAOKA Fumiyoshi <fmysh@iijmio-mail.jp>
-# $FreeBSD: head/devel/py-pyshapelib/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/devel/py-pyshapelib/Makefile 486361 2018-12-01 13:08:14Z sunpoet $
 
 PORTNAME=	pyshapelib
 PORTVERSION=	1.0
 CATEGORIES=	devel python geography
 MASTER_SITES=	http://wald.intevation.org/frs/download.php/899/:py \
-		http://download.osgeo.org/shapelib/:c
+		https://download.osgeo.org/shapelib/:c
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:py ${SHAPELIB}${EXTRACT_SUFX}:c
 

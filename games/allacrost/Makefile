@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/allacrost/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/allacrost/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	allacrost
 PORTVERSION=	1.0.2
@@ -45,6 +45,13 @@ EDITOR_USES=		qmake:no_env qt:4
 EDITOR_USE=		QT=corelib,gui,moc_build,opengl,qt3support
 EDITOR_CONFIGURE_ON=	--enable-editor=yes
 EDITOR_CONFIGURE_OFF=	--enable-editor=no
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MEDITOR}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-I/usr/include/|-I${LOCALBASE}/include/|g' \

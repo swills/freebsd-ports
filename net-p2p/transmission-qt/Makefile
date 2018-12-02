@@ -1,16 +1,19 @@
-# $FreeBSD: head/net-p2p/transmission-qt/Makefile 483283 2018-10-28 11:41:45Z linimon $
+# $FreeBSD: head/net-p2p/transmission-qt/Makefile 486467 2018-12-02 15:41:47Z rene $
 
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-${FLAVOR}
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
-FLAVORS=	qt4 qt5
+FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
 qt4_CONFLICTS_INSTALL=	transmission-qt5
 qt5_CONFLICTS_INSTALL=	transmission-qt4
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 .if ${FLAVOR} == qt4
 USES=		qt:4

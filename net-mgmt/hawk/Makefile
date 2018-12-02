@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/hawk/Makefile 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/net-mgmt/hawk/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	hawk
 PORTVERSION=	0.6
@@ -8,6 +8,9 @@ MASTER_SITES=	SF/iphawk/iphawk/Hawk%20${PORTVERSION}/
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Track uptime and DNS status for machines on your networks
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 

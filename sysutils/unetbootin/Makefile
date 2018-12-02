@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/unetbootin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/unetbootin/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	unetbootin
 PORTVERSION=	661
@@ -11,6 +11,9 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Bootable Live USB creator for various Linux distributions
 
 LICENSE=	GPLv2+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	7z:archivers/p7zip \
 		syslinux:sysutils/syslinux \

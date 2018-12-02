@@ -1,8 +1,9 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/emulators/virtualbox-ose-additions/Makefile 484559 2018-11-09 23:54:01Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose-additions/Makefile 486210 2018-11-29 21:26:10Z jkim $
 
 PORTNAME=	virtualbox-ose
 PORTVERSION=	5.2.22
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
 PKGNAMESUFFIX?=	-additions
@@ -76,7 +77,7 @@ VBOX_SBINS=	VBoxControl \
 BUILD_WRKSRC=	${VBOX_BIN}/src
 
 KMK_BUILDTYPE=	release
-KMK_CONFIG=	VBOX_LIBPATH_X11=${LOCALBASE}
+KMK_CONFIG=	VBOX_LIBPATH_X11=${LOCALBASE} VBOX_FREEBSD_SRC=${SRC_BASE}/sys
 KMK_FLAGS=
 
 .if ${PORT_OPTIONS:MDEBUG}

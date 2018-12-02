@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/autoq3d/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/autoq3d/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	autoq3d
 PORTVERSION=	1.40
@@ -13,6 +13,9 @@ COMMENT=	Qt 4 quick 3D model editor
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/docs/license.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		dos2unix qmake qt:4 zip
 DOS2UNIX_FILES=	*.pro src/cmds/*.cpp src/fgui/*.cpp docs/*.txt

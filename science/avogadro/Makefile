@@ -1,5 +1,5 @@
 # Created by: Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
-# $FreeBSD: head/science/avogadro/Makefile 482880 2018-10-24 06:03:32Z yuri $
+# $FreeBSD: head/science/avogadro/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	avogadro
 DISTVERSION=	1.2.0
@@ -11,6 +11,9 @@ COMMENT=	Advanced molecular editor and viewer
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 CONFLICTS_INSTALL=	libmsym
 

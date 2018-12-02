@@ -1,5 +1,5 @@
 # Created by: shurd
-# $FreeBSD: head/comms/qtel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/qtel/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qtel
 PORTREVISION=	1
@@ -9,6 +9,9 @@ COMMENT=	Qtel Echolink client
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libecholib.so:comms/svxlink \
 		libgsm.so:audio/gsm

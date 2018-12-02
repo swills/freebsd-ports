@@ -1,5 +1,5 @@
 # Created by: alonso@
-# $FreeBSD: head/audio/simon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/simon/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	simon
 PORTVERSION=	0.4.1
@@ -10,6 +10,9 @@ DIST_SUBDIR=	KDE
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Speech recognition system using sphinx, ALSA and KDE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libsamplerate.so:audio/libsamplerate \

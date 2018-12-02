@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	bespin
 PORTVERSION=	201303202227
@@ -13,6 +13,9 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Configurable KDE4 style
 
 LICENSE=	LGPL21
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 WRKSRC=		${WRKDIR}/cloudcity
 

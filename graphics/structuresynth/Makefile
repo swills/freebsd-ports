@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/structuresynth/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/structuresynth/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	structuresynth
 PORTVERSION=	1.5.0
@@ -10,6 +10,9 @@ DISTNAME=	StructureSynth-Source-v${PORTVERSION}
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Rule-based 3D structure generator
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4 zip dos2unix
 USE_GL=		glu

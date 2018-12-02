@@ -1,4 +1,7 @@
-# $FreeBSD: head/multimedia/mlt-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/mlt-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 PORTREVISION=	0
 

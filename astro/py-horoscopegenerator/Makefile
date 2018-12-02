@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/py-horoscopegenerator/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/astro/py-horoscopegenerator/Makefile 486359 2018-12-01 13:08:00Z sunpoet $
 
 PORTNAME=	HoroscopeGenerator
 PORTVERSION=	0.1.8
@@ -12,10 +12,11 @@ COMMENT=	Generate horoscopes using context-free grammar
 
 LICENSE=	MIT
 
-NO_ARCH=	yes
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nltk>0:textproc/py-nltk@${PY_FLAVOR}
+
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nltk>0:textproc/py-nltk@${PY_FLAVOR}
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

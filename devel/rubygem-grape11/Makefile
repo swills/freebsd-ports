@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-grape/Makefile 476540 2018-08-06 19:54:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-grape11/Makefile 486196 2018-11-29 16:49:45Z mfechner $
 
 PORTNAME=	grape
 PORTVERSION=	1.1.0
@@ -23,5 +23,7 @@ USES=		gem
 USE_RUBY=	yes
 
 NO_ARCH=	yes
+
+PORTSCOUT=	limit: ^1\.1\.
 
 .include <bsd.port.mk>

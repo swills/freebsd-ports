@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/www/php-templates/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/php-templates/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	templates
 PORTVERSION=	1.7.2
@@ -14,6 +14,9 @@ DISTFILES+=	php_templates-doc-eng-1.1${EXTRACT_SUFX}:doc
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Template framework for PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 WRKSRC=		${WRKDIR}/templates
 USES=		dos2unix php:phpize

@@ -1,8 +1,8 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/sysutils/p5-BackupPC-XS/Makefile 455519 2017-12-04 15:31:47Z swills $
+# $FreeBSD: head/sysutils/p5-BackupPC-XS/Makefile 486256 2018-11-30 14:24:10Z swills $
 
 PORTNAME=	BackupPC-XS
-PORTVERSION=	0.57
+PORTVERSION=	0.58
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CBARRATT

@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/databases/pecl-pdo_user/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/pecl-pdo_user/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	pdo_user
 PORTVERSION=	0.3.0
@@ -9,6 +9,9 @@ DISTNAME=	PDO_USER-${PORTVERSION}
 
 MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw
 COMMENT=	PECL classes provides a Userspace interface for PDO drivers
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 WRKSRC=		${WRKDIR}/PDO_USER-${PORTVERSION}
 

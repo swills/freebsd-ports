@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsonnet/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-jsonnet/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	jsonnet
 PORTVERSION=	1.1.1
@@ -8,6 +8,9 @@ DISTNAME=	JsonNet-${PORTVERSION}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Google JsonNet for PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE

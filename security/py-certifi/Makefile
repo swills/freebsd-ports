@@ -1,19 +1,20 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/security/py-certifi/Makefile 467633 2018-04-17 19:15:50Z sunpoet $
+# $FreeBSD: head/security/py-certifi/Makefile 486421 2018-12-02 15:34:19Z sunpoet $
 
 PORTNAME=	certifi
-PORTVERSION=	2018.4.16
+PORTVERSION=	2018.11.29
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	python@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Mozilla SSL certificates
 
 LICENSE=	MPL20
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

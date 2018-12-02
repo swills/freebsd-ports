@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 485885 2018-11-25 18:00:43Z yuri $
+# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 486470 2018-12-02 16:51:12Z yuri $
 
 PORTNAME=	pcl
 DISTVERSIONPREFIX=	${PORTNAME}-
-DISTVERSION=	1.9.0
+DISTVERSION=	1.9.1
 CATEGORIES=	graphics math
 PKGNAMESUFFIX=	-pointclouds
 
@@ -11,6 +11,8 @@ COMMENT=	Point Cloud Library
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN_i386=	undefined reference to `__atomic_load'
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libexpat.so:textproc/expat2 \

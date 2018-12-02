@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer
-# $FreeBSD: head/security/rubygem-ezcrypto/Makefile 474771 2018-07-17 03:44:08Z miwi $
+# $FreeBSD: head/security/rubygem-ezcrypto/Makefile 486416 2018-12-02 15:24:15Z sunpoet $
 
 PORTNAME=	ezcrypto
 PORTVERSION=	0.7.2
@@ -13,8 +13,12 @@ COMMENT=	Wrapper for the poorly documented OpenSSL ruby library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|"test/store".freeze, ||' ${WRKSRC}/${GEMSPEC}
 
 .include <bsd.port.mk>

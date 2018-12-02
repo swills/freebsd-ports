@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/pylint/Makefile 486107 2018-11-28 19:17:56Z sunpoet $
+# $FreeBSD: head/devel/pylint/Makefile 486182 2018-11-29 16:44:26Z sunpoet $
 
 PORTNAME=	pylint
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}

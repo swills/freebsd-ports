@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/openstructure/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/science/openstructure/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	openstructure
 DISTVERSION=	1.7.1
@@ -11,6 +11,9 @@ COMMENT=	Molecular modelling and visualization environment
 
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	fftw3>0:math/fftw3
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \

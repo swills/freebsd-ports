@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/cbsd/Makefile 485917 2018-11-26 05:52:55Z novel $
+# $FreeBSD: head/sysutils/cbsd/Makefile 486392 2018-12-02 02:53:31Z linimon $
 
 PORTNAME=	cbsd
 DISTVERSION=	12.0.2
@@ -20,6 +20,8 @@ LIB_DEPENDS=	libssh2.so:security/libssh2 \
 USES=		libedit pkgconfig
 USE_GITHUB=	yes
 USE_RC_SUBR=	cbsdd cbsdrsyncd cbsd-statsd-bhyve cbsd-statsd-hoster cbsd-statsd-jail
+
+CFLAGS_powerpc64=	-mminimal-toc
 
 SUB_FILES=	pkg-message pkg-deinstall
 

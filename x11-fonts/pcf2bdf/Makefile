@@ -1,11 +1,11 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/x11-fonts/pcf2bdf/Makefile 396650 2015-09-11 06:38:46Z wen $
+# $FreeBSD: head/x11-fonts/pcf2bdf/Makefile 486401 2018-12-02 09:48:55Z tobik $
 
 PORTNAME=	pcf2bdf
 PORTVERSION=	1.05
 CATEGORIES=	x11-fonts
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Convert X font from PCF to BDF
 
 LICENSE=	MIT

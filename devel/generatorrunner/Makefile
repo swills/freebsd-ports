@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/generatorrunner/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/generatorrunner/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	generatorrunner
 PORTVERSION=	0.6.16
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool to create binding generators for C++ and Qt libraries
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
 LIB_DEPENDS=	libapiextractor.so:devel/apiextractor

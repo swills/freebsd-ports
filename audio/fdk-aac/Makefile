@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/audio/fdk-aac/Makefile 468140 2018-04-23 21:08:00Z bofh $
+# $FreeBSD: head/audio/fdk-aac/Makefile 486216 2018-11-29 22:55:19Z bofh $
 
 PORTNAME=	fdk-aac
-PORTVERSION=	0.1.6
+PORTVERSION=	2.0.0
 CATEGORIES=	audio
 MASTER_SITES=	SF/opencore-amr/${PORTNAME}
 
@@ -17,9 +17,10 @@ LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
 NOT_FOR_ARCHS=		sparc64
 NOT_FOR_ARCHS_REASON=	not yet ported to this architecture
 
+USES=		libtool pathfix
+
 LIBS+=		-lm
 GNU_CONFIGURE=	yes
-USES=		libtool pathfix
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/audio/libechonest/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/libechonest/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	libechonest
 PORTVERSION=	2.3.1
@@ -11,6 +11,9 @@ COMMENT=	Collection of C++/Qt classes designed to use the APIs of The Echo Nest
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 

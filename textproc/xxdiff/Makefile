@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/textproc/xxdiff/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/xxdiff/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	xxdiff
 PORTVERSION=	4.0.1
@@ -11,6 +11,9 @@ COMMENT=	Graphical file and directories comparator and merge tool
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		bison gmake qt:4 tar:bz2
 USE_QT=		gui moc_build qmake_build uic_build

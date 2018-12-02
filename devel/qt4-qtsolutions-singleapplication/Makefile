@@ -1,5 +1,5 @@
 # Created by: Yuri Momotiuk <yurkis@gmail.com>
-# $FreeBSD: head/devel/qt4-qtsolutions-singleapplication/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt4-qtsolutions-singleapplication/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qt4-qtsolutions-singleapplication
 PORTVERSION=	20110722
@@ -11,6 +11,9 @@ DISTNAME=	qt4-qtsolutions-singleinstance-${PORTVERSION}
 
 MAINTAINER=	yurkis@gmail.com
 COMMENT=	Qt 4 Solutions Single Application Framework
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT?=	moc_build rcc_build uic_build gui network

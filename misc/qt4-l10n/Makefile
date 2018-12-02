@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/qt4-l10n/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/qt4-l10n/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	l10n
 DISTVERSION=	${QT4_VERSION}
@@ -8,6 +8,9 @@ PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt localized messages
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_configure qt-dist:4
 USE_QT=		linguisttools_build

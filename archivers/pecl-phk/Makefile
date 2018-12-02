@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/archivers/pecl-phk/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/archivers/pecl-phk/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	phk
 PORTVERSION=	3.0.1
@@ -8,6 +8,9 @@ CATEGORIES=	archivers pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHK is a PHP-oriented package/archive system
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

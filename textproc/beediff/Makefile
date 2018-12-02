@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/beediff/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/beediff/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	beediff
 PORTVERSION=	1.9
@@ -12,6 +12,9 @@ COMMENT=	Qt 4 based diff frontend
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/licence.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		corelib gui moc_build rcc_build

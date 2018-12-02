@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/rubygem-test-unit/Makefile 469919 2018-05-14 16:32:08Z sunpoet $
+# $FreeBSD: head/devel/rubygem-test-unit/Makefile 486455 2018-12-02 15:39:05Z sunpoet $
 
 PORTNAME=	test-unit
-PORTVERSION=	3.2.8
+PORTVERSION=	3.2.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -17,8 +17,9 @@ LICENSE_FILE_RUBY=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	rubygem-power_assert>=0:devel/rubygem-power_assert
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

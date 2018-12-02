@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/finance/qhacc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/finance/qhacc/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qhacc
 PORTVERSION=	4.3
@@ -12,6 +12,9 @@ COMMENT=	Simple Qt-based financial manager
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libgpgme.so:security/gpgme \
 		libqwt6.so:x11-toolkits/qwt6@qt4

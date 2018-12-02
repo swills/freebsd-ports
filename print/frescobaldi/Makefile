@@ -1,5 +1,5 @@
 # Created by: martin.dieringer@gmx.de
-# $FreeBSD: head/print/frescobaldi/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/print/frescobaldi/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	frescobaldi
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,9 @@ COMMENT=	Music score editor for lilypond
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	KDE4 is end-of-life, upgrade this port to version 3.0.0
+EXPIRATION_DATE=2018-12-31
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}poppler-qt4>=0:graphics/py-poppler-qt4@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-ly>=0:print/py-python-ly@${PY_FLAVOR}

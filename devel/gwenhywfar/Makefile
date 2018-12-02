@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gwenhywfar/Makefile 483627 2018-10-31 23:32:08Z jhale $
+# $FreeBSD: head/devel/gwenhywfar/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gwenhywfar
 PORTVERSION=	4.20.0
@@ -59,6 +59,9 @@ USE_GNOME+=	cairo gdkpixbuf2 gtk20
 .  elif ${SLAVEPORT}=="gtk3"
 USE_GNOME+=	cairo gdkpixbuf2 gtk30
 .  elif ${SLAVEPORT}=="qt4"
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 USES+=		qmake:no_env qt:4
 USE_QT=		corelib gui moc_build uic_build
 CONFIGURE_ARGS+=--with-qt4-includes=${QT_INCDIR} \

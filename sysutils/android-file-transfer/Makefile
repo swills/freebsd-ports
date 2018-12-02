@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/android-file-transfer/Makefile 484846 2018-11-13 00:21:50Z jbeich $
+# $FreeBSD: head/sysutils/android-file-transfer/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	android-file-transfer
 DISTVERSIONPREFIX=	v
@@ -54,6 +54,13 @@ QT5_USES=	qt:5
 QT5_USE=	QT=qmake_build,buildtools_build,core,gui,widgets
 QT5_CMAKE_ON=	-DDESIRED_QT_VERSION:STRING=5
 QT5_IMPLIES=	QT
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} '/set.*AFT_VERSION/s/".*"/"${GH_TAGNAME}"/' \

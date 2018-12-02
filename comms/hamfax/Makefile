@@ -1,5 +1,5 @@
 # Created by: Carl Makin <carl@stagecraft.cx>
-# $FreeBSD: head/comms/hamfax/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/hamfax/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	hamfax
 PORTVERSION=	0.8.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 
 MAINTAINER=	carl@stagecraft.cx
 COMMENT=	QT application for sending and receiving facsimiles over radio
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile
 

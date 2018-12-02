@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/deskutils/plasma-applet-cwp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-cwp/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	cwp
 PORTVERSION=	1.12.1
@@ -13,6 +13,9 @@ MAINTAINER=	dbn@FreeBSD.org
 COMMENT=	Weather plasma applet for KDE4
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs

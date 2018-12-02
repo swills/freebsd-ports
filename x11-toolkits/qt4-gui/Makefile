@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/x11-toolkits/qt4-gui/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-toolkits/qt4-gui/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gui
 DISTVERSION=	${QT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt graphical user interface module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libfontconfig.so:x11-fonts/fontconfig

@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/plasma-applet-ftpmonitor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/ftp/plasma-applet-ftpmonitor/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ftpmonitor
 PORTVERSION=	1.1
@@ -12,6 +12,9 @@ COMMENT=	KDE4 Plasma applet, which monitors connections to ftp daemons
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4

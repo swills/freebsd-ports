@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	mogilefs
 PORTVERSION=	0.9.2
@@ -8,6 +8,9 @@ CATEGORIES=	sysutils pear
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP client library to communicate with the MogileFS storage
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD3CLAUSE
 

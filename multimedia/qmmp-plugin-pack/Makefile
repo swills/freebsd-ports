@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/qmmp-plugin-pack/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/qmmp-plugin-pack/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qmmp-plugin-pack
 PORTVERSION=	0.11.0
@@ -12,6 +12,9 @@ COMMENT=	Additional plug-ins for QMMP (Qt4)
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libqmmpui.so:multimedia/qmmp
 BUILD_DEPENDS=	qmmp>=0.11.0:multimedia/qmmp

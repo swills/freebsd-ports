@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/www/limesurvey/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/limesurvey/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	limesurvey
 PORTVERSION=	1.91
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S^.^^}plus-build10232-20110608
 
 MAINTAINER=	jmohacsi@bsd.hu
 COMMENT=	PHP-based survey building and runing system
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 

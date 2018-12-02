@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/sysutils/qpxtool/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/qpxtool/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qpxtool
 PORTVERSION=	0.7.2
@@ -12,6 +12,9 @@ COMMENT=	GUI for testing CD/DVD quality and transfer rate
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_aarch64=		fails to compile: qpx_mmc_defs.h:608:4: constant expression evaluates to -1 which cannot be narrowed to type 'char'
 BROKEN_armv6=		fails to compile: qpx_mmc_defs.h:608:4: constant expression evaluates to -1 which cannot be narrowed to type 'char'

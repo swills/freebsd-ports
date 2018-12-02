@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/www/py-python-digitalocean/Makefile 485502 2018-11-21 08:37:32Z mat $
+# $FreeBSD: head/www/py-python-digitalocean/Makefile 486480 2018-12-02 20:21:03Z antoine $
 
 PORTNAME=	python-digitalocean
 PORTVERSION=	1.14.0
@@ -11,6 +11,8 @@ MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	API to manage digitalocean.com droplets
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to configure, non ascii char in position 820 of long_description
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jsonpickle>0:devel/py-jsonpickle@${PY_FLAVOR}

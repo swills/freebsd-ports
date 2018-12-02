@@ -1,5 +1,5 @@
 # Created by: Bo-Yi Wu <appleboy.tw@gmail.com>
-# $FreeBSD: head/www/gallery3/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/www/gallery3/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	gallery3
 PORTVERSION=	3.0.9
@@ -10,6 +10,9 @@ DISTNAME=	gallery-${PORTVERSION}
 
 MAINTAINER=	appleboy.tw@gmail.com
 COMMENT=	Web based photo album organizer written in PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 IGNORE_WITH_PHP=	70 71 72 73
 

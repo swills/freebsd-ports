@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/textproc/goldendict/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/goldendict/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	goldendict
 PORTVERSION=	1.0.1
@@ -12,6 +12,9 @@ MAINTAINER=	bsam@FreeBSD.org
 COMMENT=	Feature-rich Qt4 based dictionary lookup program
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
 		libvorbis.so:audio/libvorbis

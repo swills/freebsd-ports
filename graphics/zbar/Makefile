@@ -1,5 +1,5 @@
 # Created by: Oliver Heesakkers <dev2@heesakkers.info>
-# $FreeBSD: head/graphics/zbar/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/zbar/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	zbar
 PORTVERSION=	0.10
@@ -52,6 +52,12 @@ QT4_CONFIGURE_OFF=	--with-qt=no
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+
+.include <bsd.port.options.mk>
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch-DOCS-off:
 	@${REINPLACE_CMD} '/^install-data-am: /s/install-dist_docDATA//' \

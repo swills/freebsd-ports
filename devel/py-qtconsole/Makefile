@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qtconsole/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-qtconsole/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qtconsole
 PORTVERSION=	4.3.1
@@ -11,6 +11,9 @@ COMMENT=	Qt-based console for Jupyter with support for rich media output
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING.md
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traitlets>=0:devel/py-traitlets@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jupyter_core>=0:devel/py-jupyter_core@${PY_FLAVOR} \

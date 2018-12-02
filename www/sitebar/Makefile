@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/sitebar/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/sitebar/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	sitebar
 PORTVERSION=	3.3.9
@@ -9,6 +9,9 @@ DISTNAME=	SiteBar-${PORTVERSION}
 
 MAINTAINER=	gunter@six-two.net
 COMMENT=	The Bookmark Server for Personal and Team Use
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 IGNORE_WITH_PHP=	70 71 72 73
 

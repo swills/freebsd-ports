@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/psimedia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/psimedia/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	psimedia
 PORTVERSION=	1.0.3
@@ -8,6 +8,9 @@ MASTER_SITES=	http://delta.affinix.com/download/psimedia/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Voice and video API for Psi-like IM clients
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	liboil-0.3.so:devel/liboil \
 		libspeexdsp.so:audio/speexdsp

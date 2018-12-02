@@ -1,10 +1,10 @@
-# $FreeBSD: head/databases/postgis22/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/databases/postgis22/Makefile 486292 2018-11-30 20:05:59Z sunpoet $
 
 PORTNAME=	postgis
 PORTVERSION=	2.2.6
 PORTREVISION=	2
 CATEGORIES=	databases geography
-MASTER_SITES=	http://download.osgeo.org/postgis/source/
+MASTER_SITES=	https://download.osgeo.org/postgis/source/
 PKGNAMESUFFIX=	22
 
 MAINTAINER=	rhurlin@gwdg.de

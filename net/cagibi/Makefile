@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/cagibi/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/cagibi/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	cagibi
 PORTVERSION=	0.2.0
@@ -9,6 +9,9 @@ MASTER_SITES=	KDE/stable/${PORTNAME}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE SSDP/uPNP proxy
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		cmake kde:4 qt:4 tar:bzip2
 USE_KDE=	automoc4

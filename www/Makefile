@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 486012 2018-11-27 14:28:49Z des $
+# $FreeBSD: head/www/Makefile 486333 2018-12-01 10:30:34Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -246,6 +246,7 @@
     SUBDIR += havp
     SUBDIR += helma
     SUBDIR += hiawatha
+    SUBDIR += hiawatha-monitor
     SUBDIR += horde-ansel
     SUBDIR += horde-base
     SUBDIR += horde-passwd
@@ -2052,7 +2053,6 @@
     SUBDIR += rubygem-http
     SUBDIR += rubygem-http-cookie
     SUBDIR += rubygem-http-form_data
-    SUBDIR += rubygem-http-form_data1
     SUBDIR += rubygem-http_router
     SUBDIR += rubygem-httparty
     SUBDIR += rubygem-httpclient

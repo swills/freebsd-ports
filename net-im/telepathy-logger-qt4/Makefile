@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/telepathy-logger-qt4/Makefile 481446 2018-10-07 13:43:14Z tcberner $
+# $FreeBSD: head/net-im/telepathy-logger-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	telepathy-logger-qt4
 PORTVERSION=	0.8.0
@@ -10,6 +10,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt binding for Telepathy Logger
 
 LICENSE=	LGPL21
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libdbus-glib-1.so:devel/dbus-glib \

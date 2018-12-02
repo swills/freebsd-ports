@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php56-extensions/Makefile 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/lang/php56-extensions/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	php56
 PORTVERSION=	1.0
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-extensions
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	"meta-port" to install PHP extensions
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 USES=		metaport php
 PHP_VER=	56

@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/editors/deforaos-editor/Makefile 431399 2017-01-13 15:46:42Z olivier $
+# $FreeBSD: head/editors/deforaos-editor/Makefile 486240 2018-11-30 09:31:23Z amdmi3 $
 
 PORTNAME=	editor
 PORTVERSION=	0.4.0
@@ -11,7 +11,8 @@ DISTNAME=	Editor-${PORTVERSION}
 MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	DeforaOS desktop text editor
 
-LICENSE=	GPLv3
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem \
 		libDesktop.so:x11/deforaos-libdesktop \
@@ -21,7 +22,7 @@ LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem \
 MAKE_ARGS+=	PREFIX=${PREFIX}
 MAKE_ENV+=	MANDIR=${STAGEDIR}${MANPREFIX}/man
 
-USES=		desktop-file-utils pkgconfig
+USES=		desktop-file-utils gnome pkgconfig
 USE_GNOME=	gtk20 cairo gdkpixbuf2
 
 OPTIONS_DEFINE=	DOCS NLS

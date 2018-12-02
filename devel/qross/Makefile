@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/qross/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qross/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qross
 PORTVERSION=	0.3.1
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt-only fork of Kross, the KDE scripting framework
 
 LICENSE=	LGPL20+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		cmake qt:4
 USE_LDCONFIG=	yes

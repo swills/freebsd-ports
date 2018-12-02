@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/liteide/Makefile 480302 2018-09-21 18:57:00Z yuri $
+# $FreeBSD: head/devel/liteide/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	liteide
 DISTVERSIONPREFIX=	x
@@ -21,6 +21,9 @@ FLAVOR?=	${FLAVORS:[1]}
 qt4_CONFLICTS_INSTALL=	${PORTNAME}
 qt4_PKGNAMESUFFIX=	-qt4
 qt5_CONFLICTS_INSTALL=	${PORTNAME}-qt4
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 USES=		gl qmake
 USE_GL=		gl

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/misc/qmetro/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/qmetro/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qmetro
 PORTVERSION=	0.6.5
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Map of the transport system for many city subways
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		dos2unix qmake qt:4 zip
 INSTALLS_ICONS=	yes

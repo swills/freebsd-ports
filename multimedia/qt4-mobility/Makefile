@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/multimedia/qt4-mobility/Makefile 485327 2018-11-19 15:57:08Z swills $
+# $FreeBSD: head/multimedia/qt4-mobility/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	mobility
 PORTVERSION=	1.2.2
@@ -14,6 +14,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt APIs for mobile devices and desktop platforms
 
 LICENSE=	LGPL21
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libblkid.so:misc/e2fsprogs-libblkid
 

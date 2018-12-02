@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/security/phpdeadlock/Makefile 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/security/phpdeadlock/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	phpdeadlock
 PORTVERSION=	1.01
@@ -10,6 +10,9 @@ DISTNAME=	Deadlock-${PORTVERSION}-Stable
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web-based user authentication/password protection system
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING.txt

@@ -1,5 +1,5 @@
 # Created by: Sverrir Valgeirsson <e96sv@yahoo.se>
-# $FreeBSD: head/net-p2p/valknut/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-p2p/valknut/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	valknut
 PORTVERSION=	0.4.9
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt-based Direct Connect client
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libdc.so:net-p2p/dclib \
 		libxml2.so:textproc/libxml2

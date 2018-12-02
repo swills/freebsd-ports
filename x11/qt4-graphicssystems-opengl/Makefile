@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/qt4-graphicssystems-opengl/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/qt4-graphicssystems-opengl/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	graphicssystems
 DISTVERSION=	${QT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-opengl
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt OpenGL rendering engine (experimental)
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_env qt-dist:4
 USE_QT=		opengl

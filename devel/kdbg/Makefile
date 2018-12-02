@@ -1,5 +1,5 @@
 # Created by: Chris D. Faulhaber <jedgar@fxp.org>
-# $FreeBSD: head/devel/kdbg/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kdbg/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kdbg
 PORTVERSION=	2.5.6
@@ -11,6 +11,9 @@ MAINTAINER=	thomas.sander@gmx.de
 COMMENT=	Graphical user interface around gdb using KDE
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake kde:4 qt:4
 USE_KDE=	kdelibs automoc4

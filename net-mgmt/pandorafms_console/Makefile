@@ -1,11 +1,14 @@
 # Created by: KIKUCHI Koichiro <koichiro@rworks.jp>
-# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	pandora_console
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	koichiro@rworks.jp
 COMMENT=	Pandora FMS console
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	${PANDORA_LICENSE}
 LICENSE_FILE=	${PANDORA_LICENSE_FILE}

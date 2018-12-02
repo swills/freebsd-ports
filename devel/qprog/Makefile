@@ -1,5 +1,5 @@
 # Created by: Brandon Fosdick <bfoz@bfoz.net>
-# $FreeBSD: head/devel/qprog/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qprog/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qprog
 PORTVERSION=	0.4
@@ -10,6 +10,9 @@ DISTNAME=	QProg_${PORTVERSION}
 
 MAINTAINER=	bfoz@bfoz.net
 COMMENT=	Cross-platform software for the DIY line of PIC programmers
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4 tar:tgz
 USE_QT=		moc_build gui network

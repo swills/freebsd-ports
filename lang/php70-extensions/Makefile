@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70-extensions/Makefile 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/lang/php70-extensions/Makefile 486472 2018-12-02 17:19:35Z antoine $
 
 PORTNAME=	php70
 PORTVERSION=	1.1
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	-extensions
 
 MAINTAINER=	tz@FreeBSD.org
 COMMENT=	"meta-port" to install PHP extensions
+
+DEPRECATED=	Works only with EOL php 7.0
+EXPIRATION_DATE=	2018-12-04
 
 USES=		metaport php
 PHP_VER=	70

@@ -1,5 +1,5 @@
 # Created by: Cristian KLEIN <cristi@net.utcluj.ro>
-# $FreeBSD: head/net-mgmt/nedi/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net-mgmt/nedi/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	nedi
 DISTVERSION=	1.0.w
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/w
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network discovery and monitoring tool
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 

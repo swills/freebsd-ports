@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/multimedia/clipgrab/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/clipgrab/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	clipgrab
 PORTVERSION=	3.4.11
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program to download videos from YouTube and etc
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4 tar:bzip2
 USE_QT=		gui xml uic_build moc_build \

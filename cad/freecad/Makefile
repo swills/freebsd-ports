@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/freecad/Makefile 483569 2018-10-31 12:19:21Z jbeich $
+# $FreeBSD: head/cad/freecad/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17-13541 # git rev-list --count
@@ -10,6 +10,9 @@ COMMENT=	General purpose 3D CAD modeller
 
 LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	pyside-rcc:devel/pyside-tools \
 		swig3.0:devel/swig30

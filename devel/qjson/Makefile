@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qjson/Makefile 481247 2018-10-04 20:22:56Z tcberner $
+# $FreeBSD: head/devel/qjson/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qjson
 DISTVERSION=	0.9.0
@@ -12,7 +12,7 @@ COMMENT=	Library to manage JSON objects with Qt
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING.lib
 
-FLAVORS=	qt4 qt5
+FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
 USES=		cmake pathfix
@@ -21,6 +21,9 @@ GH_ACCOUNT=	flavio
 USE_LDCONFIG=	yes
 
 .  if ${FLAVOR} == qt4
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 USES+=		qt:4
 USE_QT=		corelib moc_build qmake_build rcc_build uic_build
 CMAKE_ON=	QT4_BUILD

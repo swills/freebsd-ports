@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/finance/bitcoin-armory/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/finance/bitcoin-armory/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	BitcoinArmory
 PORTVERSION=	0.93.3
@@ -12,6 +12,9 @@ COMMENT=	Desktop bitcoin management system
 
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_aarch64=		fails to compile: c++: language not recognized: 'ar'
 BROKEN_armv6=		fails to compile: c++: language not recognized: 'ar'

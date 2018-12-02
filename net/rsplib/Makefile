@@ -1,5 +1,5 @@
 # Created by: Thomas Dreibholz <dreibh@iem.uni-due.de>
-# $FreeBSD: head/net/rsplib/Makefile 484084 2018-11-04 14:35:56Z antoine $
+# $FreeBSD: head/net/rsplib/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	rsplib
 PORTVERSION=	3.0.2
@@ -13,6 +13,9 @@ COMMENT=	RSerPool Framework and Example Applications
 LICENSE=	GPLv3
 
 BROKEN=		fails to compile: fractalgeneratorservice.cc:353:12: expected unqualified-id
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-maintainer-mode \

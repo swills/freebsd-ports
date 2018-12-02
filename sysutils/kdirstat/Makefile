@@ -1,5 +1,5 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/sysutils/kdirstat/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/kdirstat/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kdirstat
 PORTVERSION=	2.7.8
@@ -13,6 +13,9 @@ COMMENT=	KDE utility that sums up disk usage for directory trees
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 WRKSRC=		${WRKDIR}/jeromerobert-k4dirstat-3a4663ee20e7
 

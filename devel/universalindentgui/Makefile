@@ -1,5 +1,5 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/devel/universalindentgui/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/devel/universalindentgui/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	universalindentgui
 PORTVERSION=	1.2.0
@@ -12,6 +12,9 @@ COMMENT=	Graphical UI for multiple source code indent/format/beautify tools
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.GPL
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 

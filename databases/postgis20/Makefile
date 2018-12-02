@@ -1,10 +1,10 @@
-# $FreeBSD: head/databases/postgis20/Makefile 480485 2018-09-23 11:13:56Z sunpoet $
+# $FreeBSD: head/databases/postgis20/Makefile 486290 2018-11-30 20:05:40Z sunpoet $
 
 PORTNAME=	postgis
 PORTVERSION=	2.0.7
 PORTREVISION=	5
 CATEGORIES=	databases geography
-MASTER_SITES=	http://download.osgeo.org/postgis/source/
+MASTER_SITES=	https://download.osgeo.org/postgis/source/
 PKGNAMESUFFIX=	20
 
 MAINTAINER=	sunpoet@FreeBSD.org

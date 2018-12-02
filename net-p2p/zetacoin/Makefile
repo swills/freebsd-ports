@@ -1,10 +1,10 @@
 # Created by: Daniel Morante <daniel@morante.net>
-# $FreeBSD: head/net-p2p/zetacoin/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/zetacoin/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	zetacoin
 PORTVERSION=	0.11.2.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	daniel@morante.net
@@ -30,7 +30,7 @@ WALLET_DESC=	Build wallet or P2P server node only
 QRCODES_DESC=	Enable QR code display when building graphical interface
 CLI_DESC=		Build command line RPC client
 
-OPTIONS_DEFAULT=	X11 WALLET QRCODES
+OPTIONS_DEFAULT=	WALLET
 OPTIONS_GROUP=		X11
 OPTIONS_GROUP_X11=	QRCODES
 
@@ -89,6 +89,9 @@ SUB_LIST+=	PORTNAME=${PORTNAME}
 SUB_FILES=	pkg-message
 USERS=		${PORTNAME}
 GROUPS=		${PORTNAME}
+.else
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 .include <bsd.port.pre.mk>

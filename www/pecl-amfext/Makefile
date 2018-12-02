@@ -1,5 +1,5 @@
 # Created by: Piotr Rybicki <meritus@innervision.pl>
-# $FreeBSD: head/www/pecl-amfext/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/pecl-amfext/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	amfext
 PORTVERSION=	0.9.2
@@ -8,6 +8,9 @@ CATEGORIES=	www
 
 MAINTAINER=	meritus@innervision.pl
 COMMENT=	Implements encoding and decoding of AMF and AMF3 messages
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP30
 

@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/testlink/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/testlink/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	testlink
 PORTVERSION=	1.9.14
@@ -8,6 +8,9 @@ MASTER_SITES=	SF/${PORTNAME}/TestLink%201.9/TestLink%20${PORTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Web based test management and test execution system
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE

@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/textproc/py-qt4-xml/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/textproc/py-qt4-xml/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	xml
 PORTEPOCH=	1
@@ -8,6 +8,9 @@ CATEGORIES=	textproc devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt4 toolkit, QtXml module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 CONFIGURE_ARGS=	--enable QtXml
 PYQT_DIST=	yes

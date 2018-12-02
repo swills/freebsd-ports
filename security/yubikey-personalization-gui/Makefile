@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 481222 2018-10-04 13:43:48Z romain $
+# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	yubikey-personalization-gui
 PORTVERSION=	3.1.25
@@ -34,6 +34,13 @@ PLIST_FILES=	bin/yubikey-personalization-gui \
 		share/applications/yubikey-personalization-gui.desktop \
 		share/pixmaps/yubikey-personalization-gui.png \
 		share/pixmaps/yubikey-personalization-gui.xpm
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/build/release/${PORTNAME} \

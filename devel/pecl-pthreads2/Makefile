@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-pthreads2/Makefile 485511 2018-11-21 12:41:57Z joneum $
+# $FreeBSD: head/devel/pecl-pthreads2/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	pthreads
 PORTVERSION=	2.0.10
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	2
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Compatible Threading API for PHP5.3+
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

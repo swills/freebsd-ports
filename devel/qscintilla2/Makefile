@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/qscintilla2/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/qscintilla2/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
@@ -11,6 +11,9 @@ DISTNAME=	${QSCI2_DISTNAME}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4 port of the Scintilla C++ editor class
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		compiler:c++11-lib qmake pyqt:4 qt:4
 USE_PYQT=	#

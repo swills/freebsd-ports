@@ -1,8 +1,8 @@
 # Created by: Domas Mituzas <midom@dammit.lt>
-# $FreeBSD: head/databases/freetds-devel/Makefile 475165 2018-07-23 12:29:03Z bofh $
+# $FreeBSD: head/databases/freetds-devel/Makefile 486221 2018-11-30 00:49:13Z bofh $
 
 PORTNAME=	freetds
-PORTVERSION=	1.00.410
+PORTVERSION=	1.00.513
 PORTEPOCH=	1
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.freetds.org/pub/freetds/current/
@@ -14,9 +14,10 @@ COMMENT=	Sybase/Microsoft TDS protocol library
 
 LICENSE=	LGPL20
 
+USES=		autoreconf gettext-tools gmake iconv libtool:keepla pkgconfig tar:bzip2
+
 WRKSRC=		${WRKDIR}/${PORTNAME}-dev.${PORTVERSION}
 TDS_VER?=	7.4
-USES=		autoreconf gettext-tools gmake iconv libtool:keepla pkgconfig tar:bzip2
 GNU_GONFIGURE=	yes
 CPPFLAGS+=	"-I${LOCALBASE}/include"
 LDFLAGS+=	-L${LOCALBASE}/lib

@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/chinese/gcin-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/chinese/gcin-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gcin
 PORTVERSION=	2.8.6
@@ -12,6 +12,9 @@ MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	Traditional Chinese input utility in X
 
 LICENSE=	LGPL21
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libgcin-im-client.so:chinese/gcin
 

@@ -1,5 +1,5 @@
 # Created by: Bert Burgemeister <trebbu@googlemail.com>
-# $FreeBSD: head/games/goldencheetah/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/games/goldencheetah/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	GoldenCheetah
 PORTVERSION=	3.2
@@ -12,6 +12,9 @@ COMMENT=	Training software for cyclists
 
 LICENSE=	BSD3CLAUSE GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN=		fails to build
 

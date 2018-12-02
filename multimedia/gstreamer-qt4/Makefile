@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-qt4/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gstreamer
 PORTVERSION=	0.10.3
@@ -14,6 +14,9 @@ COMMENT=	Qt4 bindings for GStreamer multimedia library
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 

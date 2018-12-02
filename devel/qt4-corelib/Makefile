@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-corelib/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/devel/qt4-corelib/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	corelib
 DISTVERSION=	${QT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt core non-graphical module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libicui18n.so:devel/icu
 

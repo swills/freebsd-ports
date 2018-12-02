@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/audio/esperanza/Makefile 485252 2018-11-18 19:32:55Z antoine $
+# $FreeBSD: head/audio/esperanza/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	esperanza
 PORTVERSION=	0.4.0.20091017
@@ -13,6 +13,9 @@ COMMENT=	Advanced Qt4 XMMS2 client
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING.GPL
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN=		fails to build
 

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/py-matplotlib/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/math/py-matplotlib/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	matplotlib
 DISTVERSIONPREFIX=	v
@@ -82,6 +82,12 @@ QT4AGGBACKEND_BUILD_DEPENDS+=	Xvfb:x11-servers/xorg-vfbserver
 QT5AGGBACKEND_BUILD_DEPENDS+=	Xvfb:x11-servers/xorg-vfbserver
 TKAGGBACKEND_BUILD_DEPENDS+=	Xvfb:x11-servers/xorg-vfbserver
 WXAGGBACKEND_BUILD_DEPENDS=	Xvfb:x11-servers/xorg-vfbserver
+.endif
+
+.include <bsd.port.options.mk>
+.if ${PORT_OPTIONS:MQT4AGG_BACKEND}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 post-extract:

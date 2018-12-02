@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/lprof-devel/Makefile 483281 2018-10-28 11:32:32Z linimon $
+# $FreeBSD: head/graphics/lprof-devel/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	lprof
 PORTVERSION=	20080514
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	-devel
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Open source color profiler
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	liblcms.so:graphics/lcms \
 		libtiff.so:graphics/tiff \

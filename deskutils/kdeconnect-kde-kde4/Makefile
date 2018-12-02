@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kdeconnect-kde-kde4/Makefile 480969 2018-09-30 19:22:44Z tcberner $
+# $FreeBSD: head/deskutils/kdeconnect-kde-kde4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kdeconnect-kde
 PORTVERSION=	0.7.2
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Support for KDE to interface between your phone and your computer
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 CONFLICTS_INSTALL=	${PORTNAME}
 

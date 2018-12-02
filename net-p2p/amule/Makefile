@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net-p2p/amule/Makefile 477967 2018-08-24 17:22:01Z jhale $
+# $FreeBSD: head/net-p2p/amule/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	amule
 PORTVERSION=	2.3.2
@@ -106,6 +106,11 @@ XAS_CONFIGURE_ON=	--enable-xas
 XAS_USE=	PERL5+=run
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MPLASMA_MULE}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
+.endif
 
 .if ${PORT_OPTIONS:MED2K}
 CONFLICTS+=		ed2k-hash*

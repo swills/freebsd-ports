@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-actioncable50/Makefile 473662 2018-07-01 09:37:18Z amdmi3 $
+# $FreeBSD: head/www/rubygem-actioncable50/Makefile 486445 2018-12-02 15:37:41Z sunpoet $
 
 PORTNAME=	actioncable
-PORTVERSION=	5.0.7
+PORTVERSION=	5.0.7.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	50
@@ -20,7 +20,8 @@ RUN_DEPENDS=	rubygem-actionpack50>=${PORTVERSION}:www/rubygem-actionpack50 \
 PORTSCOUT=	limit:^5\.0\.
 
 USES=		gem
-NO_ARCH=	yes
 USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

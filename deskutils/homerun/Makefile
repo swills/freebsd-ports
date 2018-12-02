@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/homerun/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/homerun/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	homerun
 PORTVERSION=	0.2.3
@@ -8,6 +8,9 @@ MASTER_SITES=	KDE/unstable/${PORTNAME}/src/
 
 MAINTAINER=	yurkis@gmail.com
 COMMENT=	Fullscreen launcher with content organized in tabs
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource compiler:c++0x gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4 workspace

@@ -1,10 +1,10 @@
 # Created by: Richard Hwang <rhwang@bigpanda.com>, Mikhail Teterin <mi@aldan.algebra.com>, Jun-ichiro itojun Itoh <itojun@itojun.org>
-# $FreeBSD: head/graphics/tiff/Makefile 485196 2018-11-17 20:44:01Z antoine $
+# $FreeBSD: head/graphics/tiff/Makefile 486366 2018-12-01 13:08:56Z sunpoet $
 
 PORTNAME=	tiff
 PORTVERSION=	4.0.10
 CATEGORIES=	graphics
-MASTER_SITES=	http://download.osgeo.org/libtiff/
+MASTER_SITES=	https://download.osgeo.org/libtiff/
 
 MAINTAINER=	portmgr@FreeBSD.org
 COMMENT=	Tools and library routines for working with TIFF images

@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/virtualbox-ose-additions-nox11/Makefile 482272 2018-10-17 06:49:30Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose-additions-nox11/Makefile 486208 2018-11-29 21:14:25Z jkim $
 
 PKGNAMESUFFIX=	-additions-nox11
 
-OPTIONS_EXCLUDE=	DEBUG OPENGL X11
+OPTIONS_EXCLUDE=	DBUS DEBUG OPENGL X11
 
 MASTERDIR=	${.CURDIR}/../virtualbox-ose-additions
 

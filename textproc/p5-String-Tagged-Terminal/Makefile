@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Tagged-Terminal/Makefile 477519 2018-08-18 20:41:23Z sunpoet $
+# $FreeBSD: head/textproc/p5-String-Tagged-Terminal/Makefile 486276 2018-11-30 20:03:27Z sunpoet $
 
 PORTNAME=	String-Tagged-Terminal
-PORTVERSION=	0.03
+PORTVERSION=	0.04
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,7 +20,7 @@ RUN_DEPENDS=	p5-Convert-Color>=0:graphics/p5-Convert-Color \
 		p5-String-Tagged>=0:textproc/p5-String-Tagged
 
 USES=		perl5
-USE_PERL5=	configure
+USE_PERL5=	modbuild
 
 NO_ARCH=	yes
 

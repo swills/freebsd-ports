@@ -1,5 +1,5 @@
 # Created by: Heiner Eichmann <h.eichmann@gmx.de>
-# $FreeBSD: head/textproc/kdiff3/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/kdiff3/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kdiff3
 PORTVERSION=	0.9.98
@@ -12,6 +12,9 @@ COMMENT=	KDE4 graphical frontend for diff
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		cmake:outsource kde:4 qt:4
 USE_KDE=	kdelibs libkonq automoc4

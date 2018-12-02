@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/multimedia/umplayer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/umplayer/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	umplayer
 DISTVERSION=	0.97
@@ -12,6 +12,9 @@ COMMENT=	Modern front-end for MPlayer (fork of SMPlayer)
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/Copying.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	mplayer:multimedia/mplayer
 

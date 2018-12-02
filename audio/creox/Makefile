@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/creox/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/creox/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	creox
 PORTVERSION=	0.3
@@ -11,6 +11,9 @@ COMMENT=	Realtime sound processor
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libjack.so:audio/jack
 

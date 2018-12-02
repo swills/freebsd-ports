@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	eiskaltdcpp
 PORTREVISION=	9
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	EiskaltDC++ Direct Connect client Qt GUI
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	eiskaltdcpp-data>=0:net-p2p/eiskaltdcpp-data
 LIB_DEPENDS=	libeiskaltdcpp.so:net-p2p/eiskaltdcpp-lib

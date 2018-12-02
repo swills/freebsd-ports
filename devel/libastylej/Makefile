@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/libastylej/Makefile 447516 2017-08-07 19:57:28Z bsam $
+# $FreeBSD: head/devel/libastylej/Makefile 486484 2018-12-02 20:37:44Z bsam $
 
 PORTNAME=	libastylej
 PORTVERSION=	3.0.1
@@ -15,7 +15,7 @@ LICENSE=	LGPL3
 
 ALL_TARGET=	java
 LDFLAGS+=	-s
-USES=		compiler gmake
+USES=		compiler:c++11-lang gmake
 USE_JAVA=	yes
 USE_LDCONFIG=	yes
 MAKE_ARGS+=	JAVA_HOME=${JAVA_HOME}
@@ -27,6 +27,7 @@ PLIST_FILES=	lib/jni/libastylej${PKGNAMESUFFIX}.so lib/jni/libastylej${PKGNAMESU
 post-patch:
 	${REINPLACE_CMD} -e 's,\(JAVAINCS.*=.*\),\1 -I$(JAVA_HOME)/include/freebsd,' \
 		-e '176 s,libastylej\.so,libastylej${PKGNAMESUFFIX}\.so,2' \
+		-e 's/CXX = g++/CXX ?= g++/' \
 		${WRKSRC}/Makefile
 
 do-install:

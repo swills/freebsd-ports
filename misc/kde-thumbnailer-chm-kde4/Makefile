@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kde-thumbnailer-chm-kde4/Makefile 483134 2018-10-27 14:06:35Z makc $
+# $FreeBSD: head/misc/kde-thumbnailer-chm-kde4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kde-thumbnailer-chm
 PORTVERSION=	0.2
@@ -10,6 +10,9 @@ DISTNAME=	153410-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	KDE thumbnail generator for CHM files
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libchm.so:misc/chmlib
 

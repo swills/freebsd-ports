@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/mkl-dnn/Makefile 485523 2018-11-21 17:14:37Z yuri $
+# $FreeBSD: head/math/mkl-dnn/Makefile 486317 2018-12-01 05:50:49Z yuri $
 
 PORTNAME=	mkl-dnn
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.17
+DISTVERSION=	0.17.1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

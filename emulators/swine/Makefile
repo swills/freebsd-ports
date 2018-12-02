@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/emulators/swine/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/emulators/swine/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	swine
 PORTVERSION=	1.0.4
@@ -11,6 +11,9 @@ COMMENT=	Qt4 graphical Wine frontend
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	xterm:x11/xterm \
 		cabextract:archivers/cabextract \

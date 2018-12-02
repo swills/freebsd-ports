@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-actionview4/Makefile 450839 2017-09-28 11:02:05Z sunpoet $
+# $FreeBSD: head/devel/rubygem-actionview4/Makefile 486460 2018-12-02 15:39:47Z sunpoet $
 
 PORTNAME=	actionview
-PORTVERSION=	4.2.10
+PORTVERSION=	4.2.11
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4
@@ -19,8 +19,9 @@ RUN_DEPENDS=	rubygem-activesupport4>=${PORTVERSION}:devel/rubygem-activesupport4
 		rubygem-rails-dom-testing1>=1.0.5:textproc/rubygem-rails-dom-testing1 \
 		rubygem-rails-html-sanitizer>=1.0.3:textproc/rubygem-rails-html-sanitizer
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/aria2fe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/aria2fe/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	aria2fe
 DISTVERSION=	0.0.5
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Aria2 Qt front-end
 
 LICENSE=	GPLv3+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	aria2c:www/aria2 \
 		xterm:x11/xterm

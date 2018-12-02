@@ -1,8 +1,9 @@
 # Created by: mi
-# $FreeBSD: head/graphics/qtawesome/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/qtawesome/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qtawesome
 PORTVERSION=	20150319
+PORTREVISION=	1
 CATEGORIES=	graphics devel
 
 MAINTAINER=	mi@aldan.algebra.com
@@ -19,7 +20,7 @@ GH_TAGNAME=	d674aef
 
 OPTIONS_SINGLE=		GUI
 OPTIONS_SINGLE_GUI=	QT4 QT5
-OPTIONS_DEFAULT=	QT4
+OPTIONS_DEFAULT=	QT5
 
 QT4_USES=	qt:4
 QT4_USE=	qt=corelib,gui,qmake_build,moc_build
@@ -35,6 +36,13 @@ PLIST_FILES=	lib/libQtAwesome.so.1.0.0 lib/libQtAwesome.so.1.0 \
 		lib/libQtAwesome.so.1 lib/libQtAwesome.so	\
 		include/QtAwesome.h
 USE_LDCONFIG=	yes
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	${REINPLACE_CMD} -e 's,staticlib,sharedlib,'	\

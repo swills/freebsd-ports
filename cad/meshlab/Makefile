@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/cad/meshlab/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/cad/meshlab/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	meshlab
 PORTVERSION=	1.3.3
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	3D triangular meshes processing and editing tool
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_aarch64=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
 BROKEN_armv6=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char

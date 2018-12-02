@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/science/massxpert/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/massxpert/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	massxpert
 PORTVERSION=	3.4.0
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	massXpert software for (bio)chemists
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
 LIB_DEPENDS=	libpcre.so:devel/pcre \

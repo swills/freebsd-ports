@@ -1,5 +1,5 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 484822 2018-11-12 20:47:18Z stephen $
+# $FreeBSD: head/graphics/opencv/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	opencv
 PORTVERSION=	3.4.1
@@ -327,6 +327,13 @@ CMAKE_ARGS+=	-DBUILD_opencv_${module}:BOOL=OFF
 
 .if !defined(OCV_JAVA)
 CMAKE_ARGS+=	-DBUILD_JAVA:BOOL=OFF
+.endif
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 post-extract-EXTRA_MODULES-on:

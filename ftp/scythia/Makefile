@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/ftp/scythia/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/ftp/scythia/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	scythia
 DISTVERSION=	0.9.3
@@ -11,6 +11,9 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}-2-src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small ftp client unpretentious based on Qt4
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		gui network corelib uic_build moc_build rcc_build

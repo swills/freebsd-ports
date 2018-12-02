@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/flukz/Makefile 475867 2018-07-30 08:11:14Z tobik $
+# $FreeBSD: head/games/flukz/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	flukz
 PORTVERSION=	0.4
@@ -9,6 +9,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Vertically scrolling shoot'em up
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		corelib gui multimedia network moc_build rcc_build

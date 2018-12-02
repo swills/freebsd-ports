@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-im/ramblercontacts/Makefile 478687 2018-09-01 13:07:08Z tobik $
+# $FreeBSD: head/net-im/ramblercontacts/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ramblercontacts
 PORTVERSION=	0.3.2.1030
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free, multi-service communication client from Rambler
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake dos2unix qt:4
 DOS2UNIX_GLOB=	*

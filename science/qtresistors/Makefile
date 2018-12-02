@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/science/qtresistors/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/science/qtresistors/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qtresistors
 PORTVERSION=	0.1
@@ -10,6 +10,9 @@ DISTNAME=	118297-qtResistors-201001102229
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Calculate resistance of resistor by the colors on the resistor
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		gui uic_build moc_build

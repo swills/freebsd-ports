@@ -1,10 +1,13 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim-kde4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/uim-kde4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTREVISION=	1
 PKGNAMESUFFIX=	-kde4
 
 COMMENT=	KDE4 panel applet of uim input method
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	cmake:devel/cmake
 LIB_DEPENDS=	libuim.so:textproc/uim

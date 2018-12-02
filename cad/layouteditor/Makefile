@@ -1,5 +1,5 @@
 # Created by: Hiroki Sato <hrs@FreeBSD.org>
-# $FreeBSD: head/cad/layouteditor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/cad/layouteditor/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	layouteditor
 PORTVERSION=	0.0.20110614
@@ -10,6 +10,9 @@ DISTNAME=	LayoutEditor-${PORTVERSION:S,^0.0.,,}-gpl-src
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	IC/MEMS layout editor
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libttf.so:print/freetype
 

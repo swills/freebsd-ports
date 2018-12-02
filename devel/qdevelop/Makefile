@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <liu_yinghong@yahoo.com.cn>
-# $FreeBSD: head/devel/qdevelop/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qdevelop/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qdevelop
 PORTVERSION=	0.28
@@ -13,6 +13,9 @@ COMMENT=	Development environment entirely dedicated to Qt 4
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/copying
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	exctags:devel/ctags
 

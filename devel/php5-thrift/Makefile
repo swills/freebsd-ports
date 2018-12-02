@@ -1,5 +1,5 @@
 # Created by: Ilya Bakulin <webmaster@kibab.com>
-# $FreeBSD: head/devel/php5-thrift/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/php5-thrift/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION}
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	webmaster@kibab.com
 COMMENT=	PHP interface to Thrift
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 USES=		php:ext
 PHP_MODNAME=	thrift_protocol

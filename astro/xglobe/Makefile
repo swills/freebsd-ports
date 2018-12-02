@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/astro/xglobe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/xglobe/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	xglobe
 PORTVERSION=	0.5
@@ -12,6 +12,9 @@ COMMENT=	Displays a view of the Earth (like xearth) with a rendered photo map
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		gmake qt:4
 USE_QT=		corelib gui qt3support moc_build

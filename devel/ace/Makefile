@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/devel/ace/Makefile 481377 2018-10-06 16:24:26Z fernape $
+# $FreeBSD: head/devel/ace/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ace
 PORTVERSION=	6.5.2
@@ -58,6 +58,12 @@ X11_USE=		XORG=xt
 X11_MAKE_ENV=		xt=1
 
 CPPFLAGS+=	-D_WANT_SEMUN
+
+.include <bsd.port.options.mk>
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e \

@@ -1,5 +1,5 @@
 # Created by: <mark@goodstorm.com>
-# $FreeBSD: head/graphics/php-magickwand/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/php-magickwand/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	magickwand
 PORTVERSION=	1.0.9
@@ -11,6 +11,9 @@ DISTNAME=	MagickWandForPHP-${PORTVERSION}-2
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP extension to manipulate images
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
 

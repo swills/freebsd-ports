@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 486088 2018-11-28 13:07:18Z makc $
+# $FreeBSD: head/math/Makefile 486341 2018-12-01 13:05:31Z sunpoet $
 #
 
     COMMENT = Mathematics
@@ -778,6 +778,7 @@
     SUBDIR += py-theano
     SUBDIR += py-ufl
     SUBDIR += py-uncertainties
+    SUBDIR += py-vincenty
     SUBDIR += py-viper
     SUBDIR += py-yt
     SUBDIR += py-z3-solver

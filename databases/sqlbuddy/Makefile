@@ -1,5 +1,5 @@
 # Created by: Chenguang LI
-# $FreeBSD: head/databases/sqlbuddy/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/sqlbuddy/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	sqlbuddy
 PORTVERSION=	1.3.3
@@ -8,6 +8,9 @@ CATEGORIES=	databases www
 
 MAINTAINER=	horus.li@gmail.com
 COMMENT=	Web based MySQL administration with a set of PHP scripts
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

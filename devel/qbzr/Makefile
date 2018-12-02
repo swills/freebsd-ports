@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/qbzr/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/qbzr/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qbzr
 PORTVERSION=	0.23.0
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt interface for bzr
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	bzr:devel/bzr \
 		${PYTHON_PKGNAMEPREFIX}pygments>=0:textproc/py-pygments@${PY_FLAVOR} \

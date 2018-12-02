@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/darknock/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/darknock/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	darknock
 PORTVERSION=	0.3.0
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program that can detect edges in images
 
 LICENSE=	GPLv2+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

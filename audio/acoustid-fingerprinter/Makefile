@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/acoustid-fingerprinter/Makefile 484997 2018-11-15 03:39:45Z linimon $
+# $FreeBSD: head/audio/acoustid-fingerprinter/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	acoustid-fingerprinter
 PORTVERSION=	0.6
@@ -10,6 +10,9 @@ COMMENT=	AcoustID audio fingerprint submission tool
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_armv6=		fails to link: fingerprintcalculator.cpp: undefined reference to 'chromaprint_new'
 

@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <ports@geeksrus.net>
-# $FreeBSD: head/editors/leo/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/editors/leo/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	leo
 PORTVERSION=	5.3
@@ -14,6 +14,9 @@ COMMENT=	Advanced outline editor for programmers
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${PY_FLAVOR} \

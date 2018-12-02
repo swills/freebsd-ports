@@ -1,5 +1,5 @@
 # Created by: alonso@
-# $FreeBSD: head/graphics/libkscreen/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/libkscreen/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	libkscreen
 PORTVERSION=	1.0.5
@@ -9,6 +9,9 @@ MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE screen management library
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqjson.so:devel/qjson@qt4 \
 		libxcb.so:x11/libxcb \

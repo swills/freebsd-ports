@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/qtoctave/Makefile 484251 2018-11-05 22:07:08Z tobik $
+# $FreeBSD: head/math/qtoctave/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qtoctave
 PORTVERSION=	0.10.1
@@ -8,6 +8,9 @@ MASTER_SITES=	http://forja.rediris.es/frs/download.php/2054/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt 4 frontend for Octave
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	octave:math/octave
 

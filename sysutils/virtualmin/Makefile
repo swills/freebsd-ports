@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/virtualmin/Makefile 485976 2018-11-27 01:40:46Z olgeni $
+# $FreeBSD: head/sysutils/virtualmin/Makefile 486375 2018-12-01 15:45:02Z olgeni $
 
 PORTNAME=	virtualmin
-PORTVERSION=	6.04
+PORTVERSION=	6.05
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.webmin.com/download/virtualmin/

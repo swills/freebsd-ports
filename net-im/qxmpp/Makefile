@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/net-im/qxmpp/Makefile 483244 2018-10-28 08:56:24Z linimon $
+# $FreeBSD: head/net-im/qxmpp/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qxmpp
 PORTVERSION=	0.9.3
@@ -20,6 +20,9 @@ USES+=		compiler:c++11-lang qt:5
 USE_QT=		core gui network xml buildtools_build
 PLIST_SUB=	QDNS="@comment "
 .else
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 USES+=		qt:4
 USE_QT=		corelib gui network qtestlib xml uic_build moc_build \
 		rcc_build

@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/math/gambit/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/gambit/Makefile 486382 2018-12-01 17:37:57Z yuri $
 
 PORTNAME=	gambit
-DISTVERSION=	15.1.1
-PORTREVISION=	1
+DISTVERSION=	16.0.1
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}${PORTVERSION:R:R}/${PORTVERSION}
 
@@ -13,7 +12,7 @@ COMMENT=	Library of tools for doing computation in game theory
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		compiler:c++11-lib
+USES=		compiler:c++11-lib gnome
 GNU_CONFIGURE=	yes
 USE_GNOME=	gtk20
 USE_WX=		3.0

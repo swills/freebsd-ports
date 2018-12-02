@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/xapian-bindings12/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/xapian-bindings12/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	xapian-bindings
 PORTVERSION=	1.2.25
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=	12
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Bindings allowing Xapian to be used from various programming languages
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/qucs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/qucs/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qucs
 PORTVERSION=	0.0.19
@@ -11,6 +11,9 @@ COMMENT=	Graphical circuit design and simulation tool
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/qucs/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	gperf:devel/gperf \
 		admsXml:cad/adms

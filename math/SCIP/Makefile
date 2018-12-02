@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/SCIP/Makefile 473917 2018-07-04 19:44:10Z yuri $
+# $FreeBSD: head/math/SCIP/Makefile 486387 2018-12-01 21:06:48Z yuri $
 
 PORTNAME=	SCIP
 DISTVERSION=	6.0.0
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 
 CONFLICTS_BUILD=	Ipopt
 
-USES=		cmake:outsource readline tar:tgz
+USES=		compiler:c11 cmake:outsource readline tar:tgz
 EXTRACT_CMD=	gtar
 USE_LDCONFIG=	yes
 PLIST_SUB=	SHL4=${DISTVERSION}.0 SHL2=${DISTVERSION:R}

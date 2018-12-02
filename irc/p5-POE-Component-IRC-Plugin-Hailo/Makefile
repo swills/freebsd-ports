@@ -1,5 +1,5 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Hailo/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Hailo/Makefile 486190 2018-11-29 16:45:30Z sunpoet $
 
 PORTNAME=	POE-Component-IRC-Plugin-Hailo
 PORTVERSION=	0.18
@@ -25,5 +25,7 @@ TEST_DEPENDS=	p5-Test-Script>=1.07:devel/p5-Test-Script
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

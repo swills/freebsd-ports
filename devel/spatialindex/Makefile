@@ -1,10 +1,10 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/spatialindex/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/devel/spatialindex/Makefile 486362 2018-12-01 13:08:22Z sunpoet $
 
 PORTNAME=	spatialindex
 PORTVERSION=	1.8.5
 CATEGORIES=	devel
-MASTER_SITES=	http://download.osgeo.org/libspatialindex/
+MASTER_SITES=	https://download.osgeo.org/libspatialindex/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 
 MAINTAINER=	wen@FreeBSD.org

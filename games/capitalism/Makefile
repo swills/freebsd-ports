@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/capitalism/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/capitalism/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	capitalism
 PORTVERSION=	0.5.1
@@ -13,6 +13,9 @@ COMMENT=	Qt client for the Monopd server
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/copying.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
 LIB_DEPENDS=	libpcre.so:devel/pcre \

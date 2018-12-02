@@ -1,8 +1,7 @@
-# $FreeBSD: head/science/py-pyteomics/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-pyteomics/Makefile 486213 2018-11-29 21:58:21Z makc $
 
 PORTNAME=	pyteomics
-PORTVERSION=	3.4.2
-PORTREVISION=	1
+PORTVERSION=	3.5.1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${PY_FLAVOR} \
 		${PYNUMPY}
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

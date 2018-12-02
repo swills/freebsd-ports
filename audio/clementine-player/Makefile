@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/audio/clementine-player/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	clementine
 DISTVERSIONPREFIX=	v
@@ -14,6 +14,9 @@ COMMENT=	Cross-platform music player based on Amarok 1.4
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 LIB_DEPENDS=	libtag.so:audio/taglib \

@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/phonon-designerplugin/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/multimedia/phonon-designerplugin/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	phonon
 DISTVERSION=	4.10.1
+PORTREVISION=	1
 CATEGORIES=	multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}
 DIST_SUBDIR=	KDE/phonon
@@ -11,11 +12,14 @@ COMMENT=	Qt Designer plugin for Phonon
 
 LICENSE=	LGPL21
 
-FLAVORS=	qt4 qt5
+FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
 qt4_PKGNAMESUFFIX=	-designerplugin-qt4
 qt5_PKGNAMESUFFIX=	-designerplugin-qt5
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 USES=		cmake tar:xz
 

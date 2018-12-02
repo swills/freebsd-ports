@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/drumstick/Makefile 485918 2018-11-26 06:02:26Z yuri $
+# $FreeBSD: head/audio/drumstick/Makefile 486372 2018-12-01 15:13:06Z yuri $
 
 PORTNAME=	drumstick
 DISTVERSION=	1.1.2
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libfluidsynth.so:audio/fluidsynth
 RUN_DEPENDS=	${LOCALBASE}/share/sounds/sf2/FluidR3_GM.sf2:audio/fluid-soundfont
 
-USES=		cmake:outsource pkgconfig qt:5 shared-mime-info tar:bz2
+USES=		compiler:c++11-lang cmake:outsource pkgconfig qt:5 shared-mime-info tar:bz2
 USE_QT=		core gui network svg testlib widgets buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	cairo-dock-plugins
 PORTVERSION=	3.4.1
@@ -10,6 +10,7 @@ COMMENT=	Cairo-Dock-Plugins for Cairo-Dock
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
 
 RUN_DEPENDS=	wget:ftp/wget
 LIB_DEPENDS=	libgldi.so:deskutils/cairo-dock
@@ -138,6 +139,13 @@ XFCE_INTEGRATION_CMAKE_BOOL=	enable-xfce-integration
 
 ZEITGEIST_LIB_DEPENDS=	libzeitgeist-2.0.so:sysutils/zeitgeist
 ZEITGEIST_CMAKE_BOOL=	enable-recent-events
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MKDE_INTEGRATION}
+DEPRECATED=		KDE4 is EOL upstream
+EXPIRATION_DATE=	2018-12-31
+.endif
 
 post-patch:
 	@${FIND} ${WRKSRC} -type f \( -name "*.c" -o -name "*.conf" \

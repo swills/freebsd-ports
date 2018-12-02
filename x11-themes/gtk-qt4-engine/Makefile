@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kris@pcbsd.org>
-# $FreeBSD: head/x11-themes/gtk-qt4-engine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/gtk-qt4-engine/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gtk-qt-engine
 PORTVERSION=	1.1
@@ -11,6 +11,9 @@ COMMENT=	GTK+ 2.x theme engine allowing to use Qt/KDE styles
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2

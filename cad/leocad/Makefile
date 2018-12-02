@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/cad/leocad/Makefile 477998 2018-08-25 04:00:13Z tobik $
+# $FreeBSD: head/cad/leocad/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	leocad
 PORTVERSION=	0.80.3
@@ -14,6 +14,9 @@ MAINTAINER=	koalative@gmail.com
 COMMENT=	CAD program that uses bricks similar to those found in many toys
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libpng.so:graphics/png
 

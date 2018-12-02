@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kcm-polkit-kde/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/kcm-polkit-kde/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	polkit-kde
 DISTVERSION=	0.0-${PORTDATE}
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-kcmodules-1-${PORTDATE}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Polkit-KDE configuration module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libpolkit-qt-agent-1.so:sysutils/polkit-qt@qt4
 RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/libexec/polkit-kde-authentication-agent-1:sysutils/polkit-kde

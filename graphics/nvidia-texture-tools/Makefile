@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 483282 2018-10-28 11:37:47Z linimon $
+# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	nvidia-texture-tools
 PORTVERSION=	2.0.8.1 # needed to not bump PORTEPOCH; remove on next update
@@ -37,6 +37,13 @@ OPTIONS_SUB=	yes
 COMPRESSUI_DESC=Build compressor UI (requires Qt4)
 COMPRESSUI_USES=	qt:4
 COMPRESSUI_USE=	QT=qmake_build,moc_build,uic_build,rcc_build,corelib,gui,opengl
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MCOMPRESSUI}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch-COMPRESSUI-on:
 	@${REINPLACE_CMD} -e '/FIND_PACKAGE.*Qt4/ s|)$$| REQUIRED&|' \

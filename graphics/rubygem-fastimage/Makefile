@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/rubygem-fastimage/Makefile 479562 2018-09-11 19:01:15Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-fastimage/Makefile 486289 2018-11-30 20:05:31Z sunpoet $
 
 PORTNAME=	fastimage
-PORTVERSION=	2.1.4
+PORTVERSION=	2.1.5
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

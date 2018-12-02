@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/saaghar/Makefile 484086 2018-11-04 14:37:45Z antoine $
+# $FreeBSD: head/misc/saaghar/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	saaghar
 PORTVERSION=	2.5.0
@@ -16,6 +16,9 @@ COMMENT=	Persian poetry software
 LICENSE=	GPLv3
 
 BROKEN=		fails to build
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 EXTRACT_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
 

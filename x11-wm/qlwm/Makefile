@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/x11-wm/qlwm/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-wm/qlwm/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qlwm
 PORTVERSION=	4.3
@@ -12,6 +12,9 @@ COMMENT=	Qt-based window manager
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 MAKE_JOBS_UNSAFE= yes
 

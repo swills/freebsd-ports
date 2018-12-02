@@ -1,11 +1,11 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/py-game/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/py-game/Makefile 486360 2018-12-01 13:08:09Z sunpoet $
 
 PORTNAME=	game
 PORTVERSION=	1.9.1
 PORTREVISION=	7
 CATEGORIES=	devel python
-MASTER_SITES=	http://pygame.seul.org/ftp/
+MASTER_SITES=	https://www.pygame.org/ftp/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	py${PORTNAME}-${PORTVERSION}release
 

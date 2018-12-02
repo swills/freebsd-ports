@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/rubygem-rgeo-proj4/Makefile 466739 2018-04-07 16:33:14Z sunpoet $
+# $FreeBSD: head/science/rubygem-rgeo-proj4/Makefile 486282 2018-11-30 20:04:25Z sunpoet $
 
 PORTNAME=	rgeo-proj4
-PORTVERSION=	1.0.0
+PORTVERSION=	2.0.0
 CATEGORIES=	science rubygems
 MASTER_SITES=	RG
 
@@ -13,10 +13,11 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libproj.so:graphics/proj
-RUN_DEPENDS=	rubygem-rgeo>=1.0:science/rubygem-rgeo
+RUN_DEPENDS=	rubygem-rgeo>=2.0:science/rubygem-rgeo
+
+USES=		gem
+USE_RUBY=	yes
 
 CONFIGURE_ARGS=	--with-proj-dir=${LOCALBASE}
-USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

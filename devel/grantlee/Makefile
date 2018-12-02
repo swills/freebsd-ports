@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/devel/grantlee/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/grantlee/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	grantlee
 DISTVERSION=	${GRANTLEE_VERSION}
@@ -12,6 +12,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	String template engine for Qt 4
 
 LICENSE=	LGPL21
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 PORTSCOUT=	limit:^0\.
 

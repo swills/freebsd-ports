@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/math/pecl-stats/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/math/pecl-stats/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	stats
 PORTVERSION=	1.0.5
@@ -7,6 +7,9 @@ CATEGORIES=	math textproc pear
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PECL extension with routines for statistical computation
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE

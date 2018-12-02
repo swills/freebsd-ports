@@ -1,5 +1,5 @@
 # Created by: Andreev Maxim <andreevmaxim@gmail.com>
-# $FreeBSD: head/devel/qconf/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qconf/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qconf
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,9 @@ COMMENT=	Tool to create configure script for qmake-based project
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_env qt:4 tar:bzip2
 USE_QT=		corelib xml moc_build qmake_build rcc_build

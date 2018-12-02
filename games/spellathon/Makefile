@@ -1,5 +1,5 @@
 # Created by: Girish <girish.rao.dev@gmail.com>
-# $FreeBSD: head/games/spellathon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/spellathon/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	spellathon
 PORTVERSION=	6.0
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Word game to test your English vocabulary skills
 
 LICENSE=	BSD2CLAUSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
 LIB_DEPENDS=	libpcre.so:devel/pcre \

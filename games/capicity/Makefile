@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/capicity/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/capicity/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	capicity
 PORTVERSION=	1.0
@@ -13,6 +13,9 @@ COMMENT=	Qt client for the Monopd server
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/copying.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
 LIB_DEPENDS=	libpcre.so:devel/pcre \

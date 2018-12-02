@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/anki/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/games/anki/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	anki
 DISTVERSION=	2.0.52
@@ -14,6 +14,9 @@ COMMENT=	Flashcard trainer with spaced repetition
 
 LICENSE=	AGPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	lame:audio/lame \
 		mplayer:multimedia/mplayer \

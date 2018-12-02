@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/deskutils/launchy/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/launchy/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	launchy
 PORTVERSION=	2.5
@@ -12,6 +12,9 @@ COMMENT=	Open source keystroke launcher
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 RUN_DEPENDS=	${LOCALBASE}/bin/xdg-open:devel/xdg-utils

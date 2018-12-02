@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/magento/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/magento/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	magento
 PORTVERSION=	1.8.1.0
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.magentocommerce.com/downloads/assets/${PORTVERSION}/
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Feature-rich eCommerce platform
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 IGNORE_WITH_PHP=	70 71 72 73
 

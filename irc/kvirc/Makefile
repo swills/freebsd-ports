@@ -1,5 +1,5 @@
 # Created by: Michael Ranner
-# $FreeBSD: head/irc/kvirc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/irc/kvirc/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kvirc
 PORTVERSION=	4.2.0
@@ -17,6 +17,9 @@ MASTER_SITE_SUBDIR=	${PORTVERSION}/source
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT?=	IRC client for KDE 4
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_PERL5=	build
 USE_QT=		moc_build qmake_build rcc_build uic_build \

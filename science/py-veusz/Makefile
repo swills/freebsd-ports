@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/py-veusz/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/science/py-veusz/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	veusz
 PORTVERSION=	1.19.1
@@ -13,6 +13,9 @@ COMMENT=	Scientific plotting package
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	${PYNUMPY}

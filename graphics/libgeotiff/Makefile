@@ -1,11 +1,10 @@
 # Created by: Sam Lawrance
-# $FreeBSD: head/graphics/libgeotiff/Makefile 451540 2017-10-08 13:49:23Z sunpoet $
+# $FreeBSD: head/graphics/libgeotiff/Makefile 486264 2018-11-30 20:01:35Z sunpoet $
 
 PORTNAME=	libgeotiff
 PORTVERSION=	1.4.2
 CATEGORIES=	graphics
-MASTER_SITES=	http://download.osgeo.org/geotiff/libgeotiff/ \
-		ftp://ftp.remotesensing.org/geotiff/libgeotiff/ \
+MASTER_SITES=	https://download.osgeo.org/geotiff/libgeotiff/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org

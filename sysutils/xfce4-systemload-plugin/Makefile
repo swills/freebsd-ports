@@ -1,8 +1,8 @@
 # Created by: Thorsten Greiner <thorsten.greiner@web.de>
-# $FreeBSD: head/sysutils/xfce4-systemload-plugin/Makefile 480791 2018-09-27 08:53:03Z madpilot $
+# $FreeBSD: head/sysutils/xfce4-systemload-plugin/Makefile 486202 2018-11-29 18:18:43Z madpilot $
 
 PORTNAME=	xfce4-systemload-plugin
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	sysutils xfce
 MASTER_SITES=	XFCE/src/panel-plugins/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4

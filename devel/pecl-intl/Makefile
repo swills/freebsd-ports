@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/pecl-intl/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/devel/pecl-intl/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	intl
 PORTVERSION=	3.0.0
@@ -8,6 +8,9 @@ CATEGORIES=	devel pear
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PECL extension to support Internationalization(ICU)
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

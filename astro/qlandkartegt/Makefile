@@ -1,5 +1,5 @@
 # Created by: Mykola Dzham <freebsd@levsha.org.ua>
-# $FreeBSD: head/astro/qlandkartegt/Makefile 484073 2018-11-04 14:24:34Z antoine $
+# $FreeBSD: head/astro/qlandkartegt/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qlandkartegt
 PORTVERSION=	1.8.1
@@ -11,6 +11,9 @@ MAINTAINER=	i@levsha.me
 COMMENT=	The ultimate outdoor aficionado's tool
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN=		fails to build
 

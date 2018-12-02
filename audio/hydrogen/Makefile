@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/hydrogen/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/hydrogen/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	hydrogen
 PORTVERSION=	0.9.7
@@ -10,6 +10,9 @@ MAINTAINER=	FreeBSD@ShaneWare.Biz
 COMMENT=	Advanced drum machine
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 		liblo.so:audio/liblo

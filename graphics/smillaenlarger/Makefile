@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/smillaenlarger/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/smillaenlarger/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	smillaenlarger
 DISTVERSION=	0.9.0
@@ -11,6 +11,9 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Qt-based tool for high-quality image magnification/resizing
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4 zip
 USE_QT=		qmake_build moc_build rcc_build uic_build gui

@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org
-# $FreeBSD: head/net/avahi-qt4/Makefile 477046 2018-08-13 01:49:59Z zi $
+# $FreeBSD: head/net/avahi-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTREVISION=	0
 CATEGORIES=	net
@@ -7,6 +7,9 @@ PKGNAMESUFFIX=	-qt4
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Qt 4 bindings to the Avahi mDNS system
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libavahi-common.so:net/avahi-app
 

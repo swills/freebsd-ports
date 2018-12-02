@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-activejob4/Makefile 450840 2017-09-28 11:02:12Z sunpoet $
+# $FreeBSD: head/devel/rubygem-activejob4/Makefile 486457 2018-12-02 15:39:22Z sunpoet $
 
 PORTNAME=	activejob
-PORTVERSION=	4.2.10
+PORTVERSION=	4.2.11
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4
@@ -16,8 +16,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 RUN_DEPENDS=	rubygem-activesupport4>=${PORTVERSION}:devel/rubygem-activesupport4 \
 		rubygem-globalid>=0.3.0:databases/rubygem-globalid
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

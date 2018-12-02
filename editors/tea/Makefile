@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/editors/tea/Makefile 485736 2018-11-24 09:00:46Z linimon $
+# $FreeBSD: head/editors/tea/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	tea
 PORTVERSION=	46.3.0
@@ -18,7 +18,7 @@ OPTIONS_SINGLE_TOOLKITS=	QT4 QT5
 OPTIONS_DEFINE=		DOCS
 OPTIONS_GROUP=		SPELL
 OPTIONS_GROUP_SPELL=	ASPELL HUNSPELL
-OPTIONS_DEFAULT=	QT4 ASPELL HUNSPELL
+OPTIONS_DEFAULT=	QT5 ASPELL HUNSPELL
 
 USE_GL=		gl
 USE_LOCALE=	en_US.UTF-8
@@ -44,6 +44,13 @@ ASPELL_QMAKE_OFF=	CONFIG+=noaspell
 
 HUNSPELL_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 HUNSPELL_QMAKE_OFF=	CONFIG+=nohunspell
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/tea ${STAGEDIR}${PREFIX}/bin

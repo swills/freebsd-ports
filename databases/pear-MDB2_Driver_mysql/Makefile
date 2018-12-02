@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/databases/pear-MDB2_Driver_mysql/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/pear-MDB2_Driver_mysql/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	MDB2_Driver_mysql
 DISTVERSION=	1.5.0b4
@@ -7,6 +7,9 @@ CATEGORIES=	databases www pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR MySQL MDB2 driver
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD3CLAUSE
 

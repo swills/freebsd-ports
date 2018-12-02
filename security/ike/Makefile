@@ -1,5 +1,5 @@
 # Created by: mgrooms@shrew.net
-# $FreeBSD: head/security/ike/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/ike/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ike
 PORTVERSION=	2.2.1
@@ -39,6 +39,13 @@ NATT_CMAKE_ON=	-DNATT=YES
 QTGUI_CMAKE_ON=	-DQTGUI=YES
 QTGUI_USES=	qt:4
 QTGUI_USE=	QT=gui,moc_build,qmake_build,rcc_build,uic_build
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQTGUI}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-install:
 	@if ! ${SYSCTL} -a | ${GREP} -q ipsec; then \

@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/x11/py-qt4-opengl/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/x11/py-qt4-opengl/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	opengl
 PORTREVISION=	4
@@ -8,6 +8,9 @@ CATEGORIES=	x11 devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt4 toolkit, QtOpenGL module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 CONFIGURE_ARGS=	--enable QtOpenGL
 PYQT_DIST=	yes

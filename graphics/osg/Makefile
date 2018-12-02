@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg/Makefile 486168 2018-11-29 11:23:12Z linimon $
+# $FreeBSD: head/graphics/osg/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	osg
 PORTVERSION=	3.4.1
@@ -143,6 +143,11 @@ PLIST_SUB+=		QT=""
 .else
 CMAKE_ARGS+=		-DOSG_USE_QT:BOOL=OFF
 PLIST_SUB+=		QT="@comment "
+.endif
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 post-patch:

@@ -1,5 +1,5 @@
 # Created by: Axel Gonzalez <loox@e-shell.net>
-# $FreeBSD: head/www/cutycapt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/www/cutycapt/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	cutycapt
 PORTVERSION=	20100608
@@ -11,6 +11,9 @@ MAINTAINER=	loox@e-shell.net
 COMMENT=	Command-line utility to capture WebKit's rendering of a web page
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 WRKSRC=		${WRKDIR}/CutyCapt
 

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-scalar_objects/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/php-scalar_objects/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	scalar_objects
 PORTVERSION=	0.0.20140124
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Support method calls on primitive types in PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

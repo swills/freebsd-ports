@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-gearman/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-gearman/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	gearman
 PORTVERSION=	1.1.2
@@ -8,6 +8,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Gearman API
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openimageio/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/graphics/openimageio/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	openimageio
 PORTVERSION=	1.7.17
@@ -101,6 +101,11 @@ USES+=		python
 USE_PYTHON=	flavors
 CMAKE_ARGS+=	-DUSE_PYTHON:BOOL=ON -DUSE_PYTHON3:BOOL=OFF \
 		-DOIIO_BUILD_TOOLS:BOOL=OFF -DUSE_FFMPEG:BOOL=OFF
+.endif
+
+.if ${PORT_OPTIONS:MIMAGEVIEWER}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 post-patch:

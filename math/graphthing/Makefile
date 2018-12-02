@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/graphthing/Makefile 420272 2016-08-16 08:32:15Z amdmi3 $
+# $FreeBSD: head/math/graphthing/Makefile 486412 2018-12-02 12:49:53Z linimon $
 
 PORTNAME=	graphthing
 PORTVERSION=	1.3.2
@@ -13,8 +13,8 @@ COMMENT=	Tool that allows you to create, manipulate, and study graphs
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		bison compiler:c++11-lang gmake tar:bzip2
 USE_GNOME=	gtk20
-USES=		bison gmake tar:bzip2
 USE_WX=		2.8
 WX_CONF_ARGS=	absolute
 GNU_CONFIGURE=	yes

@@ -1,8 +1,7 @@
-# $FreeBSD: head/games/rubygem-lolcat/Makefile 479904 2018-09-16 23:25:26Z sunpoet $
+# $FreeBSD: head/games/rubygem-lolcat/Makefile 486428 2018-12-02 15:35:18Z sunpoet $
 
 PORTNAME=	lolcat
-PORTVERSION=	99.9.19
-PORTREVISION=	1
+PORTVERSION=	99.9.20
 CATEGORIES=	games
 MASTER_SITES=	RG
 

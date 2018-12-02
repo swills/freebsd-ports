@@ -1,9 +1,12 @@
 # Created by: Yamashiro Jun <yamajun@ofug.net>
-# $FreeBSD: head/textproc/uim-qt4/Makefile 474102 2018-07-07 15:56:01Z nobutaka $
+# $FreeBSD: head/textproc/uim-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PKGNAMESUFFIX=	-qt4
 
 COMMENT=	Qt4 modules of uim input method
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libuim.so:textproc/uim
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/textproc/uncrustify/Makefile 486048 2018-11-27 18:40:57Z amdmi3 $
+# $FreeBSD: head/textproc/uncrustify/Makefile 486260 2018-11-30 17:07:19Z amdmi3 $
 
 PORTNAME=	uncrustify
 PORTVERSION=	0.68.1
@@ -17,6 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 #BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option "-std=gnu++0x"
 
 USE_GITHUB=	yes
+GH_TAGNAME=	dbe32c0
 
 USES=		cmake:outsource
 CMAKE_ARGS=	-DNoGitVersionString:BOOL=TRUE

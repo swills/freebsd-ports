@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kactivities/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11/kactivities/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kactivities
 PORTVERSION=	${KDE4_ACTIVITIES_VERSION}
@@ -9,6 +9,9 @@ DIST_SUBDIR=	KDE/${PORTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Kactivities library
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource compiler:c++11-lib kde:4 qt:4 tar:xz
 USE_KDE=	automoc4 kdelibs soprano nepomuk-core

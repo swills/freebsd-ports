@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 486450 2018-12-02 15:38:22Z sunpoet $
 
 PORTNAME=	Pod-Tree
-PORTVERSION=	1.25
+PORTVERSION=	1.27
 CATEGORIES=	textproc devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,13 +16,15 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-HTML-Stream>=1.49:www/p5-HTML-Stream \
 		p5-IO-String>=1:devel/p5-IO-String \
-		p5-Path-Tiny>=0.068:devel/p5-Path-Tiny \
+		p5-Path-Tiny>=0.105:devel/p5-Path-Tiny \
 		p5-Text-Template>=1:textproc/p5-Text-Template
-TEST_DEPENDS=	p5-Path-Tiny>=0.068:devel/p5-Path-Tiny \
+TEST_DEPENDS=	p5-Path-Tiny>=0.105:devel/p5-Path-Tiny \
 		p5-Test-Compile>1.2.1:devel/p5-Test-Compile
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 # conflict with pod2html in perl 5.6 or above
 post-patch:

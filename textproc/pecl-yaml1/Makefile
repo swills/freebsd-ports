@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-yaml1/Makefile 485903 2018-11-25 21:49:18Z dbaio $
+# $FreeBSD: head/textproc/pecl-yaml1/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	yaml
 PORTVERSION=	1.3.2
@@ -7,6 +7,9 @@ CATEGORIES=	textproc pear
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	YAML-1.1 parser and emitter
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

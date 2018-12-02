@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-faraday/Makefile 480204 2018-09-20 19:28:10Z sunpoet $
+# $FreeBSD: head/www/rubygem-faraday/Makefile 486188 2018-11-29 16:45:16Z sunpoet $
 
 PORTNAME=	faraday
-PORTVERSION=	0.15.3
+PORTVERSION=	0.15.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	rubygem-multipart-post>=1.2:www/rubygem-multipart-post
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/deskutils/vym/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/vym/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	vym
 PORTVERSION=	2.2.4
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/vym/Archive/${PORTVERSION}
 
 MAINTAINER=	lichray@gmail.com
 COMMENT=	VYM is a tool to generate and manipulate mind maps
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4 shebangfix tar:bzip2
 SHEBANG_FILES=	scripts/makedist-vym scripts/vivym

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/textproc/soprano/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/soprano/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	soprano
 PORTVERSION=	2.9.4
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/Soprano/${PORTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt/C++ RDF framework
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libraptor2.so:textproc/raptor2 \
 		librdf.so:textproc/redland \

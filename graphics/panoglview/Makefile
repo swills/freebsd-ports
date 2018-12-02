@@ -1,5 +1,5 @@
 # Created by: argv[0] (Iouri V. Ivliev)
-# $FreeBSD: head/graphics/panoglview/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/graphics/panoglview/Makefile 486411 2018-12-02 12:47:37Z linimon $
 
 PORTNAME=	panoglview
 PORTVERSION=	0.2.2
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/hugin/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MAINTAINER=	ii@any.com.ru
 COMMENT=	Panorama viewer using OpenGL
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 USE_GL=		glu
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-unicode

@@ -1,5 +1,5 @@
 # Created by: Carsten Jensen <carsten@sitracker.org>
-# $FreeBSD: head/www/sit/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/sit/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	sit
 PORTVERSION=	3.67
@@ -10,6 +10,9 @@ DISTNAME=	sit_${PORTVERSION}p1
 
 MAINTAINER=	carsten@sitracker.org
 COMMENT=	PHP incident tracking system / Helpdesk
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 

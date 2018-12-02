@@ -1,5 +1,5 @@
 # Created by: Niclas Zeising <zeising@FreeBSD.org>
-# $FreeBSD: head/net/ostinato/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/ostinato/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ostinato
 PORTVERSION=	0.8
@@ -12,6 +12,9 @@ MAINTAINER=	zeising@FreeBSD.org
 COMMENT=	Packet crafter/generator and analyzer with friendly GUI
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 

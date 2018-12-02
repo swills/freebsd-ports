@@ -1,9 +1,8 @@
 # Created by: Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
-# $FreeBSD: head/math/pari/Makefile 482678 2018-10-21 14:43:53Z yuri $
+# $FreeBSD: head/math/pari/Makefile 486476 2018-12-02 18:26:17Z yuri $
 
 PORTNAME=	pari
-DISTVERSION=	2.11.0
-PORTREVISION=	1
+DISTVERSION=	2.11.1
 PORTEPOCH=	2
 CATEGORIES=	math
 MASTER_SITES=	http://pari.math.u-bordeaux.fr/pub/pari/unix/ \

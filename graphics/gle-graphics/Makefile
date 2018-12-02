@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/graphics/gle-graphics/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/gle-graphics/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gle-graphics
 DISTVERSION=	4.2.4cf
@@ -13,6 +13,9 @@ COMMENT=	Graphics language that produces images from script files
 
 LICENSE=	BSD3CLAUSE GPLv2
 LICENSE_COMB=	multi
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BITMAP_IMAGES_CONFIGURE_WITH=	jpeg=${LOCALBASE} tiff=${LOCALBASE} png=${LOCALBASE}
 BITMAP_IMAGES_DESC=	Support for including bitmap images

@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/editors/mp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/editors/mp/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	mp
 DISTVERSION=	5.2.13
@@ -83,6 +83,11 @@ CONFIGURE_ARGS+=	--without-gtk
 DESKTOP_ENTRIES="Minimum Profit" "" "mp" "mp-5" "Utility;TextEditor;Qt;" ""
 CONFIGURE_ARGS+=--with-moc=${MOC}
 CONFIGURE_ENV+=	CCLINK="${CXX}"
+.endif
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 post-patch:

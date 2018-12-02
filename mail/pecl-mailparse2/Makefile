@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/mail/pecl-mailparse2/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/mail/pecl-mailparse2/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	mailparse
 PORTVERSION=	2.1.6
@@ -8,6 +8,9 @@ CATEGORIES=	mail www
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PECL extension to create and decode MIME messages
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP202
 

@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/misc/py-qt4-demo/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/misc/py-qt4-demo/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	demo
 PORTVERSION=	${PYQT4_VERSION}
@@ -12,6 +12,9 @@ DISTNAME=	${PYQT4_DISTNAME}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt4 toolkit, Qt demo and examples
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 DISTINFO_FILE=	${PYQT4_DISTINFO_FILE}
 
