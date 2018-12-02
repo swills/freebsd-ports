@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-pry-rails/Makefile 484740 2018-11-11 18:22:37Z sunpoet $
+# $FreeBSD: head/devel/rubygem-pry-rails/Makefile 486452 2018-12-02 15:38:39Z sunpoet $
 
 PORTNAME=	pry-rails
-PORTVERSION=	0.3.7
+PORTVERSION=	0.3.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

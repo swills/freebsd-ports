@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 485355 2018-11-19 19:24:11Z rene $
+# $FreeBSD: head/x11-fonts/Makefile 486403 2018-12-02 10:10:58Z tobik $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -183,6 +183,7 @@
     SUBDIR += stix-fonts
     SUBDIR += suxus
     SUBDIR += symbola
+    SUBDIR += tamsyn
     SUBDIR += terminus-font
     SUBDIR += terminus-ttf
     SUBDIR += tkfont

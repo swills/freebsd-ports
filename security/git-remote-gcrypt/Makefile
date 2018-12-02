@@ -1,8 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/security/git-remote-gcrypt/Makefile 468619 2018-04-29 10:38:55Z ashish $
+# $FreeBSD: head/security/git-remote-gcrypt/Makefile 486178 2018-11-29 16:32:50Z ashish $
 
 PORTNAME=	git-remote-gcrypt
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	security
 
 MAINTAINER=	ashish@FreeBSD.org

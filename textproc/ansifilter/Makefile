@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/textproc/ansifilter/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/ansifilter/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ansifilter
 PORTVERSION=	2.10
@@ -31,6 +31,9 @@ QT4_DESKTOP_ENTRIES=	"ANSIFilter" "" "" "${PORTNAME}-gui" \
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 CONFIGURE_WRKSRC=	${WRKSRC}/src/qt-gui
 QMAKE_SOURCE_PATH=	${CONFIGURE_WRKSRC}/${PORTNAME}-gui.pro
 .endif

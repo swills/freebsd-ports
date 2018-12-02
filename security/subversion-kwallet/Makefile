@@ -1,11 +1,14 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/security/subversion-kwallet/Makefile 483685 2018-11-01 16:12:44Z lev $
+# $FreeBSD: head/security/subversion-kwallet/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PKGNAMESUFFIX=	-kwallet
 CATEGORIES=	security kde
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	KDE KWallet integration for Version control system
+
+DEPRECATED=	KDE4 is end-of-life
+EXPIRATION_DATE=2018-12-31
 
 USE_KDE=	kdelibs runtime
 USES+=		kde:4

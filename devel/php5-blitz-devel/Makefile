@@ -1,5 +1,5 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/php5-blitz-devel/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/php5-blitz-devel/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	blitz-devel
 PORTVERSION=	0.7.2
@@ -11,6 +11,9 @@ DISTNAME=	blitz-${PORTVERSION}-devel
 
 MAINTAINER=	komarov@valerka.net
 COMMENT=	PHP templating engine
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 CONFLICTS=	php5-blitz-0.6*
 

@@ -1,5 +1,5 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/devel/gecode/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/gecode/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gecode
 PORTVERSION=	5.1.0
@@ -52,6 +52,11 @@ GIST_CONFIGURE_ON=	--enable-gist --enable-qt
 GIST_CONFIGURE_OFF=	--disable-gist --disable-qt
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MGIST}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 .if ${ARCH} == "amd64"
 CFLAGS+=	-D__USE_ISOC99

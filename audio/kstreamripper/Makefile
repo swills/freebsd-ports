@@ -1,5 +1,5 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/audio/kstreamripper/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/kstreamripper/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kstreamripper
 PORTVERSION=	0.7.100
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 
 MAINTAINER=	syncer@gmail.com
 COMMENT=	Program for recording streams for KDE4
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	${LOCALBASE}/bin/streamripper:audio/streamripper
 

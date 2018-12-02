@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/shiboken/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/shiboken/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	shiboken
 PORTVERSION=	1.2.2
@@ -12,6 +12,9 @@ COMMENT=	C++ code generator for CPython extensions
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libxml2.so:textproc/libxml2 \
 		libxslt.so:textproc/libxslt

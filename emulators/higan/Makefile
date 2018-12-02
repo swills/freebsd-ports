@@ -1,5 +1,5 @@
 # Created by: elbarto
-# $FreeBSD: head/emulators/higan/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/emulators/higan/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	higan
 PORTVERSION=	106
@@ -75,6 +75,13 @@ INPUT_SDL_USE=	SDL=sdl
 INPUT_SDL_VARS=	INPUT_DRIVER+=input.sdl
 
 INPUT_X_VARS=	INPUT_DRIVER+=input.xlib
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	${REINPLACE_CMD} \

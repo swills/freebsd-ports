@@ -1,5 +1,5 @@
 # Created by: anders
-# $FreeBSD: head/databases/tora/Makefile 480498 2018-09-23 12:28:37Z linimon $
+# $FreeBSD: head/databases/tora/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	tora
 PORTVERSION=	2.1.3
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Toolkit for Oracle
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	cppunit-config:devel/cppunit
 LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2 \

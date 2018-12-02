@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-themes/Kvantum/Makefile 478124 2018-08-26 12:18:20Z tcberner $
+# $FreeBSD: head/x11-themes/Kvantum/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	Kvantum
 DISTVERSIONPREFIX=	V
 DISTVERSION=	0.10.7
+PORTREVISION=	1
 CATEGORIES=	x11-themes
 
 MAINTAINER=	rezny@FreeBSD.org
@@ -11,8 +12,11 @@ COMMENT=	SVG-based theme engine for Qt, KDE and LXQt
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-FLAVORS=	qt4 qt5
+FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 qt4_PKGNAMESUFFIX=	-qt4
 qt5_PKGNAMESUFFIX=	-qt5

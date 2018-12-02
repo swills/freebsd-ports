@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/attica/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/attica/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	attica
 PORTVERSION=	0.4.2
@@ -10,6 +10,9 @@ MASTER_SITES=	KDE/stable/${PORTNAME}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Open Collaboration Services API library
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_QT=		network qtestlib_build xml \
 		moc_build qmake_build rcc_build uic_build

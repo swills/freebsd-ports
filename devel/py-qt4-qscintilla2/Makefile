@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-qscintilla2/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/py-qt4-qscintilla2/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
@@ -12,6 +12,9 @@ DISTNAME=	${QSCI2_DISTNAME}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for QScintilla2 (PyQt4), QSci module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 

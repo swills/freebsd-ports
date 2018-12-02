@@ -1,5 +1,5 @@
 # Created by: Jie Gao <gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/math/qtiplot/Makefile 485789 2018-11-24 19:59:30Z linimon $
+# $FreeBSD: head/math/qtiplot/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qtiplot
 DISTVERSION=	0.9.8.9
@@ -9,6 +9,9 @@ MASTER_SITES=	BERLIOS http://soft.proindependent.com/src/
 
 MAINTAINER=	makc@FreeBSD.org
 COMMENT=	Data analysis and scientific plotting
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libgsl.so:math/gsl \
 		libmuparser.so:math/muparser \

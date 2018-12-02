@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/textproc/pecl-ctemplate/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/textproc/pecl-ctemplate/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	cTemplate
 PORTVERSION=	1.14
@@ -10,6 +10,9 @@ DIST_SUBDIR=	PECL
 
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	PECL extension for ctemplate library
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LIB_DEPENDS=	libctemplate.so:textproc/google-ctemplate
 

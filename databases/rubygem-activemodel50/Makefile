@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/databases/rubygem-activemodel50/Makefile 466994 2018-04-10 18:28:07Z sunpoet $
+# $FreeBSD: head/databases/rubygem-activemodel50/Makefile 486440 2018-12-02 15:36:59Z sunpoet $
 
 PORTNAME=	activemodel
-PORTVERSION=	5.0.7
+PORTVERSION=	5.0.7.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	50
@@ -17,8 +17,9 @@ RUN_DEPENDS=	rubygem-activesupport50>=${PORTVERSION}:devel/rubygem-activesupport
 
 PORTSCOUT=	limit:^5\.0\.
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

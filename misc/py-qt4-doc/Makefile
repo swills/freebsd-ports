@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/misc/py-qt4-doc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-qt4-doc/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	doc
 PORTVERSION=	${PYQT4_VERSION}
@@ -11,6 +11,9 @@ DISTNAME=	${PYQT4_DISTNAME}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt4 toolkit, documentation
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 DISTINFO_FILE=	${PYQT4_DISTINFO_FILE}
 NO_BUILD=	yes

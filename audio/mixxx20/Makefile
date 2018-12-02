@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/mixxx20/Makefile 484944 2018-11-14 21:19:37Z acm $
+# $FreeBSD: head/audio/mixxx20/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	mixxx
 PORTVERSION=	2.0.0
@@ -13,6 +13,9 @@ COMMENT=	DJ mixing application
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_aarch64=		fails to compile: Exception("invalid machine type")
 BROKEN_powerpc64=	fails to configure: unmet dependencies: Could not find libprotobuf, libchromaprint, libmp4, and libwavpack

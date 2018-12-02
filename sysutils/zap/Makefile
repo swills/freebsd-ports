@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/zap/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/zap/Makefile 486386 2018-12-01 20:39:16Z jrm $
 
 PORTNAME=	zap
-DISTVERSION=	0.7.4
+DISTVERSION=	0.8
 CATEGORIES=	sysutils
 
 MAINTAINER=	jrm@FreeBSD.org

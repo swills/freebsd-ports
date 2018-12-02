@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-qt4-phonon/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/multimedia/py-qt4-phonon/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	phonon
 PORTREVISION=	5
@@ -6,6 +6,9 @@ CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt4 toolkit, Phonon module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 CONFIGURE_ARGS=	--enable phonon
 PYQT_DIST=	yes

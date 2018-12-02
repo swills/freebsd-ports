@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish6/Makefile 485685 2018-11-23 15:52:13Z feld $
+# $FreeBSD: head/www/varnish6/Makefile 486390 2018-12-02 02:37:29Z linimon $
 
 PORTNAME=	varnish
 PORTVERSION=	6.1.1
@@ -46,9 +46,14 @@ EXTRA_PATCHES+=	${FILESDIR}/no-inet6.patch
 
 OPTIONS_DEFINE=	DOCS
 
-.if defined(BAD_TESTS)
+.include <bsd.port.pre.mk>
+
 post-patch:
+.if defined(BAD_TESTS)
 	${RM} ${BAD_TESTS:C|.+|${WRKSRC}/bin/varnishtest/tests/\0.vtc|}
 .endif
+.if ${ARCH:Mmips*} || ${ARCH:Mpowerpc*} || ${ARCH} == sparc64
+	${REINPLACE_CMD} -e '/-Wno-unknown-warning-option -Wno-implicit-fallthrough/d' ${WRKSRC}/configure.ac
+.endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

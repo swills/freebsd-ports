@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qwt6/Makefile 483291 2018-10-28 13:01:30Z linimon $
+# $FreeBSD: head/x11-toolkits/qwt6/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qwt
 PORTVERSION=	6.1.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	6-${FLAVOR}
@@ -10,8 +10,10 @@ PKGNAMESUFFIX=	6-${FLAVOR}
 MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Qt Widgets for Technical Applications
 
-FLAVORS=	qt4 qt5
+FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 USES=		gl gmake qmake tar:bzip2
 USE_GL=		gl

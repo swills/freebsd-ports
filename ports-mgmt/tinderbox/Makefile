@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/ports-mgmt/tinderbox/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/ports-mgmt/tinderbox/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	tinderbox
 PORTVERSION=	4.2.0
@@ -10,6 +10,9 @@ DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Port build tinderbox system
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 IGNORE_WITH_PHP=	70 71 72 73
 

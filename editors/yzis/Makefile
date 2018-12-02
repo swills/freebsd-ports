@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/editors/yzis/Makefile 479017 2018-09-05 10:05:29Z martymac $
+# $FreeBSD: head/editors/yzis/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	yzis
 PORTVERSION=	1.0.a.1
@@ -14,6 +14,9 @@ COMMENT=	Vi-like editor
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 

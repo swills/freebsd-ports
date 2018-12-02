@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/net-p2p/libktorrent-kde4/Makefile 486486 2018-12-02 21:24:46Z antoine $
 
 PORTNAME=	libktorrent
 DISTVERSION=	1.3.1
@@ -16,7 +16,7 @@ EXPIRATION_DATE=	2018-12-31
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/concept_check.hpp:devel/boost-libs
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgmp.so:math/gmp \
-		libqca.so:devel/qca
+		libqca.so:devel/qca@qt4
 
 USES=		cmake:outsource gettext kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4

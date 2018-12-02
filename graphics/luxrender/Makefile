@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/luxrender/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/luxrender/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	luxrender
 DISTVERSION?=	1.6
@@ -56,6 +56,13 @@ X11_DESC=	Build GUI executable (requires Qt 4)
 X11_USES=	qt:4
 X11_USE=	QT=moc_build,qmake_build,rcc_build,uic_build,corelib,gui
 X11_PLIST_FILES=	bin/luxrender
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MX11}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-extract:
 	@${LN} -sf ${PORTNAME}-luxrays-${LUXRAYS_REV} ${WRKDIR}/luxrays

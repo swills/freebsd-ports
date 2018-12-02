@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/pecl-xslcache/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/textproc/pecl-xslcache/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	xslcache
 PORTVERSION=	0.7.2
@@ -8,6 +8,9 @@ CATEGORIES=	textproc pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Caches the parsed XSL stylesheet between sessions
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

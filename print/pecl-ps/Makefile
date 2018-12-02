@@ -1,5 +1,5 @@
 # Created by: Alan Garfield <alan@fromorbit.com>
-# $FreeBSD: head/print/pecl-ps/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/print/pecl-ps/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	ps
 PORTVERSION=	1.3.7
@@ -8,6 +8,9 @@ CATEGORIES=	print pear
 
 MAINTAINER=	alan@fromorbit.com
 COMMENT=	PHP extension for pslib to generate postscript
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP202
 

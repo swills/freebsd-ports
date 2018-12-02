@@ -1,10 +1,13 @@
-# $FreeBSD: head/sysutils/bareos-traymonitor/Makefile 485488 2018-11-20 21:49:17Z acm $
+# $FreeBSD: head/sysutils/bareos-traymonitor/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	bareos
 
 PKGNAMESUFFIX=	-traymonitor
 
 COMMENT=	Backup archiving recovery open sourced (traymonitor)
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS+=	libqwt.so:x11-toolkits/qwt5 \
 		libbareos.so:sysutils/bareos-client

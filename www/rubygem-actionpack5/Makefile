@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/www/rubygem-actionpack5/Makefile 467967 2018-04-22 08:50:48Z sunpoet $
+# $FreeBSD: head/www/rubygem-actionpack5/Makefile 486434 2018-12-02 15:36:09Z sunpoet $
 
 PORTNAME=	actionpack
-PORTVERSION=	5.1.6
+PORTVERSION=	5.1.6.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5
@@ -22,8 +22,9 @@ RUN_DEPENDS=	rubygem-actionview5>=${PORTVERSION}:devel/rubygem-actionview5 \
 
 PORTSCOUT=	limit:^5\.1\.
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

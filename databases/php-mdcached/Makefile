@@ -1,5 +1,5 @@
 # Created by: Ivan Voras <ivoras@FreeBSD.org>
-# $FreeBSD: head/databases/php-mdcached/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/php-mdcached/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	mdcached
 PORTVERSION=	1.0.9
@@ -11,6 +11,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ivoras@FreeBSD.org
 COMMENT=	The PHP client library for Bullet Cache (mdcached)
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD2CLAUSE
 

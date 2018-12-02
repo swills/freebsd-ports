@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-test_helpers/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-test_helpers/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	test_helpers
 PORTVERSION=	1.1.0
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	pecl-
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Extension to ease testing of PHP code
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD3CLAUSE
 

@@ -1,10 +1,10 @@
 # Created by: jedgar@FreeBSD.org
-# $FreeBSD: head/graphics/proj/Makefile 474769 2018-07-17 03:15:18Z wen $
+# $FreeBSD: head/graphics/proj/Makefile 486295 2018-11-30 20:06:27Z sunpoet $
 
 PORTNAME=	proj
 PORTVERSION=	5.1.0
 CATEGORIES=	graphics geography
-MASTER_SITES=	http://download.osgeo.org/proj/
+MASTER_SITES=	https://download.osgeo.org/proj/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATUM_GRID_FILES}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 

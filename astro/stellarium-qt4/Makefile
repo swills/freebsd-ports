@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium-qt4/Makefile 485327 2018-11-19 15:57:08Z swills $
+# $FreeBSD: head/astro/stellarium-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	stellarium
 PORTVERSION=	0.12.9
@@ -14,6 +14,9 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	3D photo-realistic sky renderer (planetarium)
 
 LICENSE=	GPLv2+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 CONFLICTS_INSTALL=	${PORTNAME}-0.17.*
 PORTSCOUT=	limit:^0\.12\.			# track only 0.12.x (legacy)

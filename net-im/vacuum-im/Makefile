@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-im/vacuum-im/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/vacuum-im/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	vacuum
 PORTVERSION=	1.2.5
@@ -11,6 +11,9 @@ COMMENT=	Crossplatform Jabber client
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Vacuum-IM

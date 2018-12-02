@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/net-im/kmess-kde4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/kmess-kde4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kmess
 PORTVERSION=	2.0.6.2
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/Latest%20versions/${PORTVERSION}/
 
 MAINTAINER=	syncer@gmail.com
 COMMENT=	MSN Messenger client for KDE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libqca.so:devel/qca@qt4 \
 		libgif.so:graphics/giflib

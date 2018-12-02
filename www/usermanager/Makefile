@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@FreeBSD.org>
-# $FreeBSD: head/www/usermanager/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/usermanager/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	UserManager
 PORTVERSION=	2.1
@@ -9,6 +9,9 @@ DISTNAME=	ftp_v${PORTVERSION}
 
 MAINTAINER=	danger@FreeBSD.org
 COMMENT=	Easily create, change, or delete virtual PureFTPd users
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 IGNORE_WITH_PHP=	70 71 72 73
 

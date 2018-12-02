@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/photivo/Makefile 478853 2018-09-03 10:47:13Z jhale $
+# $FreeBSD: head/graphics/photivo/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	photivo
 PORTVERSION=	0.0.2015.03.21
@@ -34,6 +34,9 @@ FLAVORS=	qt5 qt4
 qt4_CONFLICTS_INSTALL=	${PORTNAME}
 qt4_PKGNAMESUFFIX=	-qt4
 qt5_CONFLICTS_INSTALL=	${PORTNAME}-qt4
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 .if ${FLAVOR:U} == qt4
 USES+=		qt:4

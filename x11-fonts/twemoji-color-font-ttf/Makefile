@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/twemoji-color-font-ttf/Makefile 482907 2018-10-24 13:51:10Z ehaupt $
+# $FreeBSD: head/x11-fonts/twemoji-color-font-ttf/Makefile 486261 2018-11-30 19:51:49Z ehaupt $
 
 PORTNAME=	twemoji-color-font-ttf
-PORTVERSION=	1.4
+PORTVERSION=	11.2.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/eosrei/twemoji-color-font/releases/download/v${PORTVERSION}/
 DISTNAME=	TwitterColorEmoji-SVGinOT-Linux-${PORTVERSION}

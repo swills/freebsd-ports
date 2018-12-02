@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qscintilla2-designerplugin-qt5/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/qscintilla2-designerplugin-qt5/Makefile 486419 2018-12-02 15:28:14Z tcberner $
 
 PORTNAME=	designerplugin-qt5
 PORTVERSION=	${QSCI2_VERSION}
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libqscintilla2_qt5.so:devel/qscintilla2-qt5
 
 DISTINFO_FILE=	${.CURDIR:H}/qscintilla2-qt5/distinfo
 USE_GL=		gl
-USES=		qmake pyqt:5 qt:5
+USES=		compiler:c++11-lang qmake pyqt:5 qt:5
 USE_QT=		core designer printsupport gui widgets xml \
 		buildtools_build qmake_build
 

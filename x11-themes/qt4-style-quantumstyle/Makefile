@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-themes/qt4-style-quantumstyle/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/qt4-style-quantumstyle/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	quantumstyle
 DISTVERSION=	rc6
@@ -15,6 +15,9 @@ COMMENT=	SVG themeable style for Qt 4 and KDE
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		corelib gui svg rcc_build uic_build moc_build

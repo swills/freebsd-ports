@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/devel/qt4-qmlviewer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt4-qmlviewer/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qmlviewer
 DISTVERSION=	${QT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 4 utility for QML application testing
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_env qt-dist:4
 USE_QT=		moc_build rcc_build uic_build declarative script \

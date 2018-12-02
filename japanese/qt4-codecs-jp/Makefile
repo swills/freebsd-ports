@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/japanese/qt4-codecs-jp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/japanese/qt4-codecs-jp/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	codecs
 DISTVERSION=	${QT4_VERSION}
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	-jp
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt EUC-JP/JIS codec plugins
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_env qt-dist:4
 USE_QT=		corelib

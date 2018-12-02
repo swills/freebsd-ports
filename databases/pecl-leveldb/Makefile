@@ -1,5 +1,5 @@
 # Created by: johnpupu <johnpupu@gmail.com>
-# $FreeBSD: head/databases/pecl-leveldb/Makefile 485511 2018-11-21 12:41:57Z joneum $
+# $FreeBSD: head/databases/pecl-leveldb/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	leveldb
 PORTVERSION=	0.1.5
@@ -8,6 +8,9 @@ CATEGORIES=	databases
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	This extension is a PHP binding for Google LevelDB
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

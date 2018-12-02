@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pecl-rrd1/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/pecl-rrd1/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	rrd
 DISTVERSION=	1.1.3
@@ -6,6 +6,9 @@ CATEGORIES=	databases pear
 
 MAINTAINER=	daniel@blodan.se
 COMMENT=	PHP bindings to rrd tool system
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

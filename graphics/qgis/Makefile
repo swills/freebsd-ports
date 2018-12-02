@@ -1,5 +1,5 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/graphics/qgis/Makefile 486082 2018-11-28 08:17:40Z wen $
+# $FreeBSD: head/graphics/qgis/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
@@ -10,6 +10,9 @@ MAINTAINER=	rhurlin@gwdg.de
 COMMENT=	Geographical Information System (GIS) data viewer
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	txt2tags:textproc/txt2tags
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \

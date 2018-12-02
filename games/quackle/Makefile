@@ -1,5 +1,5 @@
 # Created by: shoemaker@bluebottle.com (Jonathan Shoemaker)
-# $FreeBSD: head/games/quackle/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/quackle/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	quackle
 PORTVERSION=	1.0.3
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scrabble-like word game utilizing Qt4
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_GITHUB=	yes
 

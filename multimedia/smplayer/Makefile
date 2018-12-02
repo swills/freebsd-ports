@@ -1,5 +1,5 @@
 # Created by: Diego Depaoli <trebestie@gmail.com> and Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/multimedia/smplayer/Makefile 484657 2018-11-11 03:44:33Z linimon $
+# $FreeBSD: head/multimedia/smplayer/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	smplayer
 DISTVERSION=	18.9.0
@@ -62,6 +62,13 @@ THEMES_RUN_DEPENDS=	smplayer-themes>=0:multimedia/smplayer-themes
 PORTSCOUT=	site:http://sourceforge.net/projects/smplayer/files/Unstable/releases/
 
 SUB_FILES=	pkg-message
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|&& $$(QMAKE) $$(QMAKE_OPTS)||; \

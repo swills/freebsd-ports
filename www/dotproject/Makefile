@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/dotproject/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/dotproject/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	dotproject
 PORTVERSION=	2.1.8
@@ -7,6 +7,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/dotProject%20Version%20${PORTVERSION}
 
 MAINTAINER=	garga@FreeBSD.org
 COMMENT=	Open Source Project Management tool
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

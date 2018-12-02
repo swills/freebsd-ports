@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/net-mgmt/phpip/Makefile 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/net-mgmt/phpip/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	phpip
 PORTVERSION=	${SNAPSHOT}
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-4.3.2-build-${SNAPSHOT}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Complete IPv4 IPAM (IP address management) suite
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

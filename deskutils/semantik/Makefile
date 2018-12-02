@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/semantik/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/deskutils/semantik/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	semantik
 DISTVERSION=	0.9.5
@@ -11,6 +11,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE mind mapping tool
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		kde:4 pkgconfig python:2.7 qmake:no_env,no_configure qt:4 shebangfix tar:bzip2 waf \
 		gettext shared-mime-info

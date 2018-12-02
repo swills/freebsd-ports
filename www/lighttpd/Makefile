@@ -1,11 +1,10 @@
 # Created by: k@123.org
-# $FreeBSD: head/www/lighttpd/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/www/lighttpd/Makefile 486297 2018-11-30 20:06:45Z sunpoet $
 
 PORTNAME?=	lighttpd
-PORTVERSION=	1.4.51
-PORTREVISION=	1
+PORTVERSION=	1.4.52
 CATEGORIES?=	www
-MASTER_SITES?=	http://download.lighttpd.net/lighttpd/releases-1.4.x/
+MASTER_SITES?=	https://download.lighttpd.net/lighttpd/releases-1.4.x/
 
 MAINTAINER=	pkubaj@anongoth.pl
 COMMENT?=	Secure, fast, compliant, and flexible Web Server

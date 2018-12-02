@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/qt4pas/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt4pas/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qt4pas
 PORTVERSION=	2.5
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/^/V/}_Qt${QT4_VER_MIN}
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Qt4 binding for FreePascal
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_LDCONFIG=	yes
 USE_QT=		corelib gui network script webkit \

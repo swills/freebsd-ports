@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 485506 2018-11-21 09:22:38Z yuri $
+# $FreeBSD: head/graphics/Makefile 486333 2018-12-01 10:30:34Z rene $
 #
 
     COMMENT = Graphics tools and libraries
@@ -272,7 +272,6 @@
     SUBDIR += gimp-wavelet-decompose-plugin
     SUBDIR += gimp-wavelet-denoise-plugin
     SUBDIR += gimp-wavelet-sharpen-plugin
-    SUBDIR += gimpfx-foundry
     SUBDIR += giram
     SUBDIR += gkrellkam2
     SUBDIR += gle

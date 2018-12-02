@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.6.0.20120114
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	FFmpeg shared extension for php
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE

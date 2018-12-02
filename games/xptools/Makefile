@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/xptools/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/xptools/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	xptools
 DISTVERSION=	wed_161r1
@@ -9,6 +9,9 @@ MAINTAINER=	mike.d.ft402@gmail.com
 COMMENT=	X-Plane Scenery Tools
 
 LICENSE=	MIT
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 # Platform-specific defines in patch-src_XESCore_Airports.cpp.
 # Somewhere on FlightGear wiki it is said WED would only work for AMD64 anyway.

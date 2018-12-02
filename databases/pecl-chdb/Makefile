@@ -1,5 +1,5 @@
 # Created by: Evan Sarmiento <esarmiento@wayfair.com>
-# $FreeBSD: head/databases/pecl-chdb/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/pecl-chdb/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	chdb
 PORTVERSION=	1.0.3
@@ -9,6 +9,9 @@ DIST_SUBDIR=	PECL
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	CHDB extension
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

@@ -1,5 +1,5 @@
 # Created by: Bill Moran <wmoran@collaborativefusion.com>
-# $FreeBSD: head/security/pecl-crack/Makefile 481802 2018-10-11 09:38:34Z tobik $
+# $FreeBSD: head/security/pecl-crack/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	crack
 PORTVERSION=	0.4
@@ -9,6 +9,9 @@ CATEGORIES=	security www
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PECL extension to cracklib
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP30
 

@@ -1,5 +1,5 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/pecl-twig/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/pecl-twig/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	twig
 PORTVERSION=	1.29.0
@@ -10,6 +10,9 @@ DISTNAME=	CTwig-${PORTVERSION}
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Twig C extension to improve performance of the Twig template language
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD3CLAUSE
 

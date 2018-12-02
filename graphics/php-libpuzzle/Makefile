@@ -1,5 +1,5 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/graphics/php-libpuzzle/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/graphics/php-libpuzzle/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	libpuzzle
 PORTVERSION=	0.11
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	cyberbotx@cyberbotx.com
 COMMENT=	PHP extension for Puzzle library to find similar pictures
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC:H:H}/COPYING

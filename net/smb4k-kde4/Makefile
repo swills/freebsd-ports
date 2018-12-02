@@ -1,5 +1,5 @@
 # Created by: Josh Paetzel <jpaetzel@FreeBSD.org>
-# $FreeBSD: head/net/smb4k-kde4/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/net/smb4k-kde4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	smb4k-kde4
 PORTVERSION=	0.10.9
@@ -10,6 +10,9 @@ DISTNAME=	smb4k-${PORTVERSION}
 
 MAINTAINER=	jpaetzel@FreeBSD.org
 COMMENT=	KDE 4.x SMB Network browser and SMB shares mounting center
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	sudo:security/sudo
 

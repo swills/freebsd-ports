@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-railties50/Makefile 467001 2018-04-10 18:28:43Z sunpoet $
+# $FreeBSD: head/www/rubygem-railties50/Makefile 486447 2018-12-02 15:37:57Z sunpoet $
 
 PORTNAME=	railties
-PORTVERSION=	5.0.7
+PORTVERSION=	5.0.7.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	50
@@ -23,9 +23,10 @@ CONFLICTS_INSTALL=	rubygem-railties4 rubygem-railties5
 
 PORTSCOUT=	limit:^5\.0\.
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/rails
 

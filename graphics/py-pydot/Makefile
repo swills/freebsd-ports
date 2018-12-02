@@ -1,8 +1,8 @@
 # Created by: Stefan Walter <sw@gegenunendlich.de>
-# $FreeBSD: head/graphics/py-pydot/Makefile 485444 2018-11-20 17:46:56Z sunpoet $
+# $FreeBSD: head/graphics/py-pydot/Makefile 486420 2018-12-02 15:34:10Z sunpoet $
 
 PORTNAME=	pydot
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

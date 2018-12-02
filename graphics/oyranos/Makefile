@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/oyranos/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/oyranos/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	oyranos
 PORTVERSION=	0.9.6
@@ -9,6 +9,9 @@ MAINTAINER=	bsam@FreeBSD.org
 COMMENT=	Colour Management System (CMS)
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	${LOCALBASE}/share/color/icc/OpenICC/sRGB.icc:graphics/icc-profiles-openicc \
 		${LOCALBASE}/share/color/icc/basICColor/ISOcoated_v2_300_bas.ICC:graphics/icc-profiles-basiccolor \

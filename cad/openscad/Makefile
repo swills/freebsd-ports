@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/cad/openscad/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	openscad
 PORTVERSION=	2015.03
@@ -13,6 +13,9 @@ COMMENT=	Programmer's solid 3D CAD modeller
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		${LOCALBASE}/include/boost/tuple/tuple.hpp:devel/boost-libs

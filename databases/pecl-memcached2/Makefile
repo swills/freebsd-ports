@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/pecl-memcached2/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/databases/pecl-memcached2/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	memcached
 PORTVERSION=	2.2.0
@@ -8,6 +8,9 @@ CATEGORIES=	databases
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PHP extension for interfacing with memcached via libmemcached library
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP30
 LICENSE_FILE=	${WRKSRC}/LICENSE

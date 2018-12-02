@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/qwtplot3d-qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/qwtplot3d-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qwtplot3d
 PORTVERSION=	0.2.7
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	-qt4
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	3D plotting widgets for scientific data and math expressions
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		dos2unix qmake qt:4 tar:tgz
 USE_QT=		gui moc_build opengl

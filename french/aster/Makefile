@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/aster/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/french/aster/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	aster
 DISTVERSION=	${ASTER_DISTVERSION}
@@ -10,6 +10,9 @@ MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Code_Aster finite element method solver
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_FreeBSD_12=	does not build (sed: ${STAGEDIR}${inst_dir}/${VE}/aster.conf: No such file or directory)
 BROKEN_FreeBSD_13=	does not build (sed: ${STAGEDIR}${inst_dir}/${VE}/aster.conf: No such file or directory)

@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/security/pinentry/Makefile 484670 2018-11-11 09:08:07Z antoine $
+# $FreeBSD: head/security/pinentry/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	pinentry
 PORTVERSION=	1.1.0
@@ -62,6 +62,11 @@ GNOME3_RUN_DEPENDS=	${PINENTRY_GNOME3}:security/pinentry-gnome3
 PINENTRY_BIN=	${PINENTRY_${gui}}
 . endif
 .endfor
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 do-install:
 	${LN} -sf ${PINENTRY_BIN} ${STAGEDIR}${PREFIX}/bin/pinentry

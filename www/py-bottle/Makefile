@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-bottle/Makefile 477113 2018-08-13 20:41:57Z yuri $
+# $FreeBSD: head/www/py-bottle/Makefile 486376 2018-12-01 16:25:47Z nivit $
 
 PORTNAME=	bottle
-PORTVERSION=	0.12.13
-PORTREVISION=	1
+PORTVERSION=	0.12.14
+PORTREVISION=	0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

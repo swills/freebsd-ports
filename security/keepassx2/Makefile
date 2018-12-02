@@ -1,5 +1,5 @@
 # Created by: Eric Camachat <eric@camachat.org>
-# $FreeBSD: head/security/keepassx2/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/security/keepassx2/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	keepassx
 PORTVERSION=	2.0.3
@@ -20,6 +20,9 @@ LICENSE_FILE_BOOST-1.0=	${WRKSRC}/LICENSE.BOOST-1.0
 LICENSE_FILE_NOKIA-LGPL-EXCEPTION=	${WRKSRC}/LICENSE.NOKIA-LGPL-EXCEPTION
 LICENSE_PERMS_BOOST-1.0=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_PERMS_NOKIA-LGPL-EXCEPTION=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt
 

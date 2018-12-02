@@ -1,5 +1,5 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/php5-dav/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/php5-dav/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	dav
 PORTVERSION=	1.2
@@ -11,6 +11,9 @@ DISTNAME=	php-webdav-${PORTVERSION}
 
 MAINTAINER=	komarov@valerka.net
 COMMENT=	The PHP WebDAV extension
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	ISCL
 

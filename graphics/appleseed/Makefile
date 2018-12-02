@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/appleseed/Makefile 480797 2018-09-27 09:38:29Z amdmi3 $
+# $FreeBSD: head/graphics/appleseed/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	appleseed
 DISTVERSION=	1.7.1-beta
@@ -61,6 +61,13 @@ DISNEY_CMAKE_ON=	-DWITH_DISNEY_MATERIAL:BOOL=ON
 STUDIO_USES=	qt:4
 STUDIO_USE=	QT=moc_build,qmake_build,rcc_build,uic_build,opengl
 STUDIO_CMAKE_OFF=	-DWITH_STUDIO:BOOL=OFF
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MSTUDIO}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 .include <bsd.port.pre.mk>
 

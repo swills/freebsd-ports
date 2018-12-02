@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/devel/py-qt4/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/py-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qt4
 PORTVERSION=	${PYQT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt 4 toolkit (meta port)
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		metaport python pyqt:4
 USE_PYTHON=	concurrent flavors py3kplist

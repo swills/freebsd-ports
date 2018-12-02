@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-pathlib2/Makefile 474330 2018-07-10 05:11:08Z yuri $
+# $FreeBSD: head/devel/py-pathlib2/Makefile 486319 2018-12-01 06:58:11Z yuri $
 
 PORTNAME=	pathlib2
-PORTVERSION=	2.3.2
+PORTVERSION=	2.3.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

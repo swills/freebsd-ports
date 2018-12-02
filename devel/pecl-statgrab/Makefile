@@ -1,5 +1,5 @@
 # Created by: Tim Bishop <tim@bishnet.net>
-# $FreeBSD: head/devel/pecl-statgrab/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-statgrab/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	statgrab
 PORTVERSION=	0.6.0
@@ -9,6 +9,9 @@ DISTNAME=	Statgrab-${PORTVERSION}
 
 MAINTAINER=	tdb@FreeBSD.org
 COMMENT=	PECL extension to retrieve information from libstatgrab
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LIB_DEPENDS=	libstatgrab0.so:devel/libstatgrab0
 

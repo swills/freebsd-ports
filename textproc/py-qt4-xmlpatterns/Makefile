@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/textproc/py-qt4-xmlpatterns/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/textproc/py-qt4-xmlpatterns/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	xmlpatterns
 PORTREVISION=	4
@@ -7,6 +7,9 @@ CATEGORIES=	textproc devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt4 toolkit, QtXmlPatterns module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 CONFIGURE_ARGS=	--enable QtXmlPatterns
 PYQT_DIST=	yes

@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/py-metpy/Makefile 481339 2018-10-06 09:34:24Z sunpoet $
+# $FreeBSD: head/astro/py-metpy/Makefile 486346 2018-12-01 13:06:13Z sunpoet $
 
 PORTNAME=	metpy
 PORTVERSION=	0.9.2
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${ENUM34} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=1.4:math/py-matplotlib@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}numpy>=1.10.0:math/py-numpy@${PY_FLAVOR} \
+		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pint>=0.8:converters/py-pint@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pooch>=0.1:devel/py-pooch@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyproj>=1.9.4:graphics/py-pyproj@${PY_FLAVOR} \

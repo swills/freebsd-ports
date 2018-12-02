@@ -1,5 +1,5 @@
 # Created by: decept
-# $FreeBSD: head/x11-themes/kde4-windeco-crystal/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/kde4-windeco-crystal/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	crystal
 PORTVERSION=	2.2.1
@@ -13,6 +13,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Transparent KDE window decoration
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake:outsource,noninja kde:4 qt:4 tar:bzip2
 USE_KDE=	kdelibs automoc4 workspace

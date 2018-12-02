@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/graphics/yagf/Makefile 481619 2018-10-09 10:08:51Z bsam $
+# $FreeBSD: head/graphics/yagf/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	yagf
 PORTVERSION=	0.9.5
@@ -11,6 +11,9 @@ COMMENT=	Graphical interface for an OCR program (cuneiform and tesseract)
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 ONLY_FOR_ARCHS=	amd64 i386
 

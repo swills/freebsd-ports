@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/accessibility/qt4-accessible/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/accessibility/qt4-accessible/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	accessible
 DISTVERSION=	${QT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt accessibility widgets
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_env qt-dist:4
 USE_QT=		moc_build qt3support corelib gui network sql xml

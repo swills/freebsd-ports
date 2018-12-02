@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-libqtassistantclient/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt4-libqtassistantclient/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	libQtAssistantClient
 PORTVERSION=	4.6.3
@@ -12,6 +12,9 @@ DIST_SUBDIR=	KDE
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt documentation browser integration module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_QT=		moc_build rcc_build corelib gui network
 USES=		qmake qt:4

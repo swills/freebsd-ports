@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qzeitgeist/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/sysutils/qzeitgeist/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qzeitgeist
 PORTVERSION=	0.8.0
@@ -16,6 +16,9 @@ COMMENT=	Qt 4 wrapper library around the Zeitgeist D-Bus API
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	rapper:textproc/raptor2 \
 		${PYTHON_PKGNAMEPREFIX}rdflib>=0:textproc/py-rdflib@${PY_FLAVOR}

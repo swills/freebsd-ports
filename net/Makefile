@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 485799 2018-11-24 22:28:07Z sunpoet $
+# $FreeBSD: head/net/Makefile 486333 2018-12-01 10:30:34Z rene $
 #
 
     COMMENT = Networking tools
@@ -977,7 +977,6 @@
     SUBDIR += pecl-amqp
     SUBDIR += pecl-apn
     SUBDIR += pecl-geoip
-    SUBDIR += pecl-gupnp
     SUBDIR += pecl-ip2location
     SUBDIR += pecl-mosquitto
     SUBDIR += pecl-oauth

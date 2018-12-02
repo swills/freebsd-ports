@@ -1,5 +1,5 @@
 # Created by: Luke Jee
-# $FreeBSD: head/lang/pecl-perl/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/lang/pecl-perl/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	perl
 DISTVERSION=	1.0.1
@@ -8,6 +8,9 @@ CATEGORIES=	lang perl5
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Embedded Perl
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

@@ -1,10 +1,13 @@
-# $FreeBSD: head/devel/py-qt4-dbussupport/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/py-qt4-dbussupport/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	dbussupport
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt event loop support for dbus-python
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR}

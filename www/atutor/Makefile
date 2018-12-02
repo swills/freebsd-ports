@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/atutor/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/atutor/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	atutor
 PORTVERSION=	2.2.2
@@ -9,6 +9,9 @@ DISTNAME=	ATutor-${PORTVERSION}
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Open Source Web-based Learning Content Management System (LCMS)
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 

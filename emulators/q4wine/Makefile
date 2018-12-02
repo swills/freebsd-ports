@@ -1,5 +1,5 @@
 # Created by: Sergey V. Dyatko <sergey.dyatko@gmail.com>
-# $FreeBSD: head/emulators/q4wine/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/emulators/q4wine/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	q4wine
 DISTVERSION=	1.1-r2
@@ -12,6 +12,9 @@ COMMENT=	QT4 front-end for WINE
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	icotool:graphics/icoutils
 RUN_DEPENDS=	sudo:security/sudo \

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/lastfm-desktop/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/audio/lastfm-desktop/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	lastfm-desktop
 PORTVERSION=	2.1.36
@@ -11,6 +11,9 @@ COMMENT=	Official Last.fm desktop application suite
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	liblastfm.so:audio/liblastfm \
 		libavcodec.so:multimedia/ffmpeg \

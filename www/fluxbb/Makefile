@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/fluxbb/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/fluxbb/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	fluxbb
 PORTVERSION=	1.5.10
@@ -8,6 +8,9 @@ MASTER_SITES=	http://fluxbb.org/download/releases/${PORTVERSION}/
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Fast and lightweight PHP-powered discussion board
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

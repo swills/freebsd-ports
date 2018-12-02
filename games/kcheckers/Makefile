@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/games/kcheckers/Makefile 484057 2018-11-04 14:04:25Z antoine $
+# $FreeBSD: head/games/kcheckers/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kcheckers
 PORTVERSION=	0.8.1
@@ -11,6 +11,9 @@ MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Qt version of the classic boardgame checkers
 
 BROKEN=		fails to build
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		corelib gui moc_build rcc_build

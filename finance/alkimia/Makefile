@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/alkimia/Makefile 482152 2018-10-15 11:48:08Z jhale $
+# $FreeBSD: head/finance/alkimia/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	alkimia
 PORTVERSION=	7.0.2
@@ -20,6 +20,9 @@ USE_LDCONFIG=	yes
 
 SLAVE?=		qt5
 .if ${SLAVE} ==	qt4
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 USES+=		qt:4
 USE_QT=		corelib dbus \
 		moc_build qmake_build rcc_build

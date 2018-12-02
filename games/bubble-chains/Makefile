@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bubble-chains/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/bubble-chains/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	bubble-chains
 PORTVERSION=	0.1.1
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	2D arcade-puzzle game based on Qt/SDL
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	icotool:graphics/icoutils
 

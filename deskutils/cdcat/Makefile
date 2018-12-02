@@ -1,5 +1,5 @@
 # Created by: Aren Tyr <aren.tyr@gawab.com>
-# $FreeBSD: head/deskutils/cdcat/Makefile 477967 2018-08-24 17:22:01Z jhale $
+# $FreeBSD: head/deskutils/cdcat/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	cdcat
 PORTVERSION=	2.3.1
@@ -12,6 +12,9 @@ COMMENT=	Qt based tool for offline CD/DVD/disk catalogs
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libtar.so:devel/libtar \
 		libexif.so:graphics/libexif \

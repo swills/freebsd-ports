@@ -1,5 +1,5 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/net/kwooty/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/kwooty/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kwooty
 PORTVERSION=	0.8.3
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}
 
 MAINTAINER=	syncer@gmail.com
 COMMENT=	Usenet binary downloader for KDE4
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	${LOCALBASE}/bin/unrar:archivers/unrar \
 		${LOCALBASE}/bin/par2:archivers/par2cmdline \

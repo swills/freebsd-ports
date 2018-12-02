@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/misc/qt4-doc/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/misc/qt4-doc/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	doc
 DISTVERSION=	${QT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt documentation
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_configure qt-dist:4
 NO_BUILD=	yes

@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/libmusicxml/Makefile 483214 2018-10-28 02:39:44Z yuri $
+# $FreeBSD: head/audio/libmusicxml/Makefile 486381 2018-12-01 16:47:53Z yuri $
 
 PORTNAME=	libmusicxml
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.13
+DISTVERSION=	3.14-1
+DISTVERSIONSUFFIX=	-g52654a71
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

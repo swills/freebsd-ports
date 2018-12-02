@@ -1,5 +1,5 @@
 # Created by: andreas
-# $FreeBSD: head/mail/kbiff/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/mail/kbiff/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kbiff
 PORTVERSION=	4.0
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mail notification utility for KDE with nice features
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake gettext kde:4 perl5 qt:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs

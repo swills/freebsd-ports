@@ -1,5 +1,5 @@
 # Created by: Hakisho Nukama <nukama@gmail.com>
-# $FreeBSD: head/devel/fuel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/fuel/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	fuel
 DISTVERSION=	1.0.1
@@ -27,6 +27,13 @@ QT5_USE=	QT=core,gui,network,webkit,widgets,buildtools_build,linguisttools_build
 SHEBANG_FILES=	intl/convert.sh
 PLIST_FILES=	bin/fuel share/applications/fuel.desktop \
 		share/icons/hicolor/256x256/apps/fuel.png
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' \

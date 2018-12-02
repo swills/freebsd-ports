@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/devel/qt4-qtsolutions-soap/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt4-qtsolutions-soap/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 MASTERDIR=	${.CURDIR}/../qt4-qtsolutions-singleapplication
 
@@ -12,6 +12,9 @@ PORTNAME=	qt4-qtsolutions-soap
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	QT4 Solutions SOAP Component
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 DESCR=		${.CURDIR}/pkg-descr
 

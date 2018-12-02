@@ -1,8 +1,9 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-ce/Makefile 486173 2018-11-29 13:36:03Z mfechner $
+# $FreeBSD: head/www/gitlab-ce/Makefile 486197 2018-11-29 16:55:34Z mfechner $
 
 PORTNAME=	gitlab-ce
 PORTVERSION=	11.5.1
+PORTREVISION=	1
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -62,7 +63,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-gpgme>=2.0.13:security/rubygem-gpgme \
 	rubygem-gitlab_omniauth-ldap20>=2.0.4:net/rubygem-gitlab_omniauth-ldap20 \
 	rubygem-net-ldap>=0.16.0:net/rubygem-net-ldap \
-	rubygem-grape>=1.1:devel/rubygem-grape \
+	rubygem-grape11>=1.1:devel/rubygem-grape11 \
 	rubygem-grape-entity>=0.7.1:devel/rubygem-grape-entity \
 	rubygem-rack-cors>=1.0.0:www/rubygem-rack-cors \
 	rubygem-graphql>=1.8.0:devel/rubygem-graphql \

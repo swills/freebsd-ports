@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/sasm/Makefile 486167 2018-11-29 11:11:40Z linimon $
+# $FreeBSD: head/devel/sasm/Makefile 486225 2018-11-30 06:30:12Z wen $
 
 PORTNAME=	SASM
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.10.0
+DISTVERSION=	3.10.1
 CATEGORIES=	devel
 
 MAINTAINER=	freebsd@sysctl.cz
@@ -18,8 +18,9 @@ USE_QT=		core gui network widgets buildtools_build
 USE_GL=		gl
 
 DATADIR=	${PREFIX}/share/sasm
+DOCSDIR=	${PREFIX}/share/doc/sasm
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|/usr/share|${PEFIX}/share|' ${WRKSRC}/BSD/share/applications/sasm.desktop
+	@${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|' ${WRKSRC}/BSD/share/applications/sasm.desktop
 
 .include <bsd.port.mk>

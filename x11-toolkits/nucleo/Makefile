@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/nucleo/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/x11-toolkits/nucleo/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	nucleo
 PORTVERSION=	0.7.6
@@ -60,6 +60,11 @@ QT4_MAKE_ARGS=		QT4MOC="${MOC}"
 
 .if ! ${PORT_OPTIONS:MAVAHI} && ! ${PORT_OPTIONS:MMDNSRESPONDER}
 CONFIGURE_ARGS+=	--without-dns-sd
+.endif
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 post-install:

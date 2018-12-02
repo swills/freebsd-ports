@@ -1,5 +1,5 @@
 # Created by: Jeremy Norris <ishmael272home.com>
-# $FreeBSD: head/net-im/licq-qt-gui/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-im/licq-qt-gui/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qt4-gui
 PORTVERSION=	1.8.2
@@ -11,6 +11,9 @@ MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Qt plugin for licq
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 RUN_DEPENDS=	${LOCALBASE}/lib/licq/protocol_icq.so:${LICQ_PORT}-icq

@@ -1,5 +1,5 @@
 # Created by: amistry@am-productions.biz
-# $FreeBSD: head/print/hplip/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/print/hplip/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	hplip
 PORTVERSION=	3.17.11
@@ -71,6 +71,9 @@ XSANE_RUN_DEPENDS=	xsane:graphics/xsane
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MQT4} && ${PORT_OPTIONS:MX11}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 USES+=			pyqt:4
 USE_PYQT=		core_run dbussupport_run gui_run sip
 CONFIGURE_ARGS+=	--enable-qt4

@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/games/pokerth/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/pokerth/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	pokerth
 PORTVERSION=	1.1.2
@@ -12,6 +12,9 @@ COMMENT=	Poker game written in C++/Qt4
 
 LICENSE=	AGPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libmikmod.so:audio/libmikmod \

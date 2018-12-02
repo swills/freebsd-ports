@@ -1,5 +1,5 @@
 # Created by: Piotr Rybicki <meritus@innervision.pl>
-# $FreeBSD: head/www/revive-adserver/Makefile 482665 2018-10-21 11:17:12Z antoine $
+# $FreeBSD: head/www/revive-adserver/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	revive-adserver
 PORTVERSION=	3.0.5
@@ -9,6 +9,9 @@ MASTER_SITES=	http://download.revive-adserver.org/
 
 MAINTAINER=	meritus@innervision.pl
 COMMENT=	Free, opensource ad server in PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt

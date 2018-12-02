@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/gnuradio/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/comms/gnuradio/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gnuradio
 PORTVERSION=	3.7.13.4
@@ -11,6 +11,9 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio Software defined radio
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_aarch64=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 BROKEN_armv6=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?

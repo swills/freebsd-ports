@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/klatexformula/Makefile 484687 2018-11-11 11:47:09Z makc $
+# $FreeBSD: head/graphics/klatexformula/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	klatexformula
 PORTVERSION=	4.0.0
@@ -9,6 +9,9 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Convert LaTeX formula to image
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	help2man:misc/help2man
 

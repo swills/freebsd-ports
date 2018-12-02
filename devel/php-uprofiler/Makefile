@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-uprofiler/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/php-uprofiler/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Lightweight profiler for PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/../LICENSE

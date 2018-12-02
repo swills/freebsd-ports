@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/multimedia/smtube/Makefile 482013 2018-10-13 20:39:24Z riggs $
+# $FreeBSD: head/multimedia/smtube/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	smtube
 PORTVERSION=	18.9.0
@@ -47,6 +47,13 @@ MPLAYER_RUN_DEPENDS=		mplayer:multimedia/mplayer
 MPV_RUN_DEPENDS=		mpv:multimedia/mpv
 SMPLAYER_RUN_DEPENDS=		smplayer:multimedia/smplayer
 VLC_RUN_DEPENDS=		vlc:multimedia/vlc
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} 's|$$(QMAKE_OPTS)|${QMAKE_ARGS:S,\$,\$\$,g}|' \

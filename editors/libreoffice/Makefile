@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/libreoffice/Makefile 484970 2018-11-14 22:36:22Z cmt $
+# $FreeBSD: head/editors/libreoffice/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 .include "${.CURDIR}/Makefile.common"
 
@@ -276,6 +276,13 @@ MAKE_ENV+=	CXXFLAGS_WARN="${CXXFLAGS_WARN}"
 MAKE_ENV+=	GNUSED=${LOCALBASE}/bin/gsed
 MAKE_ENV+=	DISPLAY=
 MAKE_ENV+=	verbose=1
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MKDE4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
+.endif
 
 .include <bsd.port.pre.mk>
 

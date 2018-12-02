@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/comms/dabstick-radio/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/comms/dabstick-radio/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	dabstick-radio
 PORTVERSION=	0.96
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	DAB/DAB+ and wideband FM receiver for RTL2832-based USB sticks
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS+=	librtlsdr.so:comms/rtl-sdr \
 		libqwt.so:x11-toolkits/qwt5 \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-tilt/Makefile 446533 2017-07-24 15:59:51Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tilt/Makefile 486194 2018-11-29 16:46:04Z sunpoet $
 
 PORTNAME=	tilt
-PORTVERSION=	2.0.8
+PORTVERSION=	2.0.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,9 +11,10 @@ COMMENT=	Generic interface to multiple Ruby template engines
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/tilt
 

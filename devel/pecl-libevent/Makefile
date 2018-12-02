@@ -1,5 +1,5 @@
 # Created by: Ilya Bakulin <webmaster@kibab.com>
-# $FreeBSD: head/devel/pecl-libevent/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-libevent/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	libevent
 PORTVERSION=	0.1.0
@@ -8,6 +8,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	webmaster@kibab.com
 COMMENT=	Libevent extension for PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

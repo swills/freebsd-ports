@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@mnemosine.domo.sva>
-# $FreeBSD: head/devel/pyside-tools/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/pyside-tools/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	pyside-tools
 PORTVERSION=	0.2.15
@@ -12,6 +12,9 @@ COMMENT=	Utilities for creating PySide applications
 
 LICENSE=	BSD3CLAUSE GPLv2
 LICENSE_COMB=	multi
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	pyside${PYTHON_PKGNAMESUFFIX}>=1.0.9:devel/pyside
 LIB_DEPENDS=	libshiboken-${PYTHON_VERSION}.so:devel/shiboken

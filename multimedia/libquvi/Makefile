@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libquvi/Makefile 462903 2018-02-25 05:31:49Z sunpoet $
+# $FreeBSD: head/multimedia/libquvi/Makefile 486265 2018-11-30 20:01:45Z sunpoet $
 
 PORTNAME=	libquvi
 PORTVERSION=	0.4.1
@@ -14,18 +14,19 @@ COMMENT=	Cross-platform library for parsing flash media stream URLs
 LICENSE=	LGPL21+
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	libquvi-scripts>=0.4.0:multimedia/libquvi-scripts
+BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	libcurl.so:ftp/curl
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+RUN_DEPENDS=	libquvi-scripts>=0.4.0:multimedia/libquvi-scripts
 
 OPTIONS_DEFINE=	DOCS LUAJIT
 LUAJIT_DESC=	Use LuaJIT instead of Lua
 
 PORTSCOUT=	limit:^0\.4\.
 
+USES=		iconv libtool pathfix pkgconfig tar:xz
+
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		iconv libtool pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 
 PORTDOCS=	*

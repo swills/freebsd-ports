@@ -1,5 +1,5 @@
 # Created by: Larry Rosenman <ler@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-xdiff/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/textproc/pecl-xdiff/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	xdiff
 PORTVERSION=	1.5.2
@@ -8,6 +8,9 @@ CATEGORIES=	textproc pear
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PECL extension to create/apply binary and text patches
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

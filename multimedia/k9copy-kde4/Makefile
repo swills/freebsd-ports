@@ -1,5 +1,5 @@
 # Created by: Alexander V. Ribchansky <triosoft@triosoft.com.ua>
-# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	k9copy
 PORTVERSION=	2.3.4
@@ -12,6 +12,9 @@ MAINTAINER=	egoliveira@gmail.com
 COMMENT=	DVD-9 to DVD-5 shrinking application for KDE
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 LIB_DEPENDS=	libxine.so:multimedia/libxine \
 		libmpeg2.so:multimedia/libmpeg2 \

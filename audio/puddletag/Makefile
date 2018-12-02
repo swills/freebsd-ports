@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/puddletag/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/audio/puddletag/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	puddletag
 PORTVERSION=	1.2.0
@@ -11,6 +11,9 @@ COMMENT=	Audio tag editor
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	chromaprint>=0.4:audio/chromaprint \
 		${PYTHON_PKGNAMEPREFIX}mutagen>=1.14:audio/py-mutagen@${PY_FLAVOR} \

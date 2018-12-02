@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/sudoku-sensei/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/sudoku-sensei/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	sudoku-sensei
 PORTVERSION=	02.00
@@ -14,6 +14,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Enjoy playing with Sudoku boards designed by yourself
 
 LICENSE=	GPLv2+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 WRKSRC=		${WRKDIR}/SudokuSenseiSources
 

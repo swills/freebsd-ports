@@ -1,8 +1,9 @@
-# $FreeBSD: head/databases/cayley/Makefile 471559 2018-06-04 15:37:23Z yuri $
+# $FreeBSD: head/databases/cayley/Makefile 486315 2018-12-01 05:32:01Z yuri $
 
 PORTNAME=	cayley
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.7.4
+DISTVERSION=	0.7.5-2
+DISTVERSIONSUFFIX=	-gcf576ba
 CATEGORIES=	databases
 
 MAINTAINER=	yuri@FreeBSD.org

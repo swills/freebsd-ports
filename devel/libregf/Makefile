@@ -1,9 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libregf/Makefile 457031 2017-12-23 09:22:24Z antoine $
+# $FreeBSD: head/devel/libregf/Makefile 486368 2018-12-01 13:16:25Z antoine $
 
 PORTNAME=	libregf
-DISTVERSION=	alpha-20170130
-PORTREVISION=	1
+DISTVERSION=	alpha-20181129
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libregf/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

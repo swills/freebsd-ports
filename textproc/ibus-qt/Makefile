@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/textproc/ibus-qt/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/textproc/ibus-qt/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ibus-qt
 PORTVERSION=	1.3.3
@@ -13,6 +13,9 @@ COMMENT=	IBus input method module for Qt4
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	ibus>=1.3.7:textproc/ibus
 RUN_DEPENDS=	ibus>=1.3.7:textproc/ibus

@@ -1,5 +1,5 @@
 # Created by: Alexander Leidinger <netchild@FreeBSD.org>
-# $FreeBSD: head/security/pecl-ssh2-0/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/security/pecl-ssh2-0/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	ssh2
 PORTVERSION=	0.13
@@ -7,6 +7,9 @@ CATEGORIES=	security pear
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PECL extension to the libssh2 library
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE

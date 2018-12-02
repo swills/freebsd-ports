@@ -1,7 +1,8 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/net-mgmt/zabbix22-frontend/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net-mgmt/zabbix22-frontend/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	zabbix22
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 PKGNAMESUFFIX=	-frontend
 
@@ -17,7 +18,7 @@ USE_PHP=	bcmath ctype gd pcre snmp sockets mbstring session dom xml \
 USES+=		php:web
 
 OPTIONS_DEFINE=	MYSQL MYSQLI PGSQL SQLITE ORACLE
-OPTIONS_DEFAULT=	MYSQL MYSQLI
+OPTIONS_DEFAULT=	MYSQLI
 MYSQLI_DESC=	MySQLI backend
 
 MYSQL_VARS=	IGNORE_WITH_PHP+="70 71 72 73"

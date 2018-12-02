@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/synthpod-lv2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/synthpod-lv2/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	synthpod
 PORTVERSION=	g20170810
@@ -72,6 +72,11 @@ X11_LIB_DEPENDS=	libxcb-icccm.so:x11/xcb-util-wm
 X11_USE=	XORG=x11,xcb,xext GL=gl,glu
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 .if ${PORT_OPTIONS:MX11} || ${PORT_OPTIONS:MGTK2} || ${PORT_OPTIONS:MGTK3} || ${PORT_OPTIONS:MQT4} || ${PORT_OPTIONS:MQT5} || ${PORT_OPTIONS:MSHOW} || ${PORT_OPTIONS:MKX}
 PLIST_SUB+=	UI=""

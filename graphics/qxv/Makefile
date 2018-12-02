@@ -1,5 +1,5 @@
 # Created by: cy
-# $FreeBSD: head/graphics/qxv/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/qxv/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qxv
 PORTVERSION=	0.2
@@ -12,6 +12,9 @@ COMMENT=	Qt 4 program that displays images of various formats
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4 tar:bzip2
 USE_QT=		corelib gui moc_build uic_build rcc_build

@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/audio/lmms/Makefile 480865 2018-09-28 15:50:29Z rodrigo $
+# $FreeBSD: head/audio/lmms/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	lmms
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,9 @@ COMMENT=	All-in-one sequencer, drum machine, sampler, and more
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/include/ladspa.h:audio/ladspa
 LIB_DEPENDS=	libFLAC.so:audio/flac \

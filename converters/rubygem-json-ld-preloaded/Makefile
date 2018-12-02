@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/rubygem-json-ld-preloaded/Makefile 479474 2018-09-10 20:28:22Z sunpoet $
+# $FreeBSD: head/converters/rubygem-json-ld-preloaded/Makefile 486356 2018-12-01 13:07:35Z sunpoet $
 
 PORTNAME=	json-ld-preloaded
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 CATEGORIES=	converters rubygems
 MASTER_SITES=	RG
 

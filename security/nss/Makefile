@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/security/nss/Makefile 482911 2018-10-24 16:45:28Z jbeich $
+# $FreeBSD: head/security/nss/Makefile 486308 2018-12-01 00:33:45Z jbeich $
 
 PORTNAME=	nss
-PORTVERSION=	3.40
+PORTVERSION=	3.40.1
 CATEGORIES=	security
 MASTER_SITES=	MOZILLA/security/${PORTNAME}/releases/${DISTNAME:tu:C/[-.]/_/g}_RTM/src
 

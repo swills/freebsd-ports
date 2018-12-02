@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pear-phing/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/pear-phing/Makefile 486329 2018-12-01 09:31:35Z amdmi3 $
 
 PORTNAME=	phing
 PORTVERSION=	2.6.1
@@ -10,8 +10,9 @@ MAINTAINER=	mm@FreeBSD.org
 COMMENT=	PHP project build system based on Apache Ant
 
 LICENSE=	LGPL3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PEAR_CHANNEL=	phing
-USES=	pear
+USES=		pear
 
 .include <bsd.port.mk>

@@ -1,11 +1,11 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/print/py-reportlab/Makefile 486170 2018-11-29 13:26:51Z bofh $
+# $FreeBSD: head/print/py-reportlab/Makefile 486195 2018-11-29 16:46:12Z sunpoet $
 
 PORTNAME=	reportlab
 PORTVERSION=	3.5.11
 CATEGORIES=	print python
 MASTER_SITES=	CHEESESHOP \
-		http://www.reportlab.com/ftp/
+		https://www.reportlab.com/ftp/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PFBFER}

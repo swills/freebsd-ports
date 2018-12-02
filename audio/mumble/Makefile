@@ -1,5 +1,5 @@
 # Created by: marius nuennerich
-# $FreeBSD: head/audio/mumble/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/audio/mumble/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	mumble
 PORTVERSION=	1.2.19
@@ -11,6 +11,9 @@ COMMENT=	Voice chat software primarily intended for use while gaming
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS+=	libspeex.so:audio/speex \
 		libspeexdsp.so:audio/speexdsp \

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/seexpr/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/graphics/seexpr/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	seexpr
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,9 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Embeddable expression evaluation language
 
 LICENSE=	APACHE20
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	wdas

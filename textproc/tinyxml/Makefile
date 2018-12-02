@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/tinyxml/Makefile 477603 2018-08-19 21:14:12Z tobik $
+# $FreeBSD: head/textproc/tinyxml/Makefile 486391 2018-12-02 02:50:02Z linimon $
 
 PORTNAME=	tinyxml
 PORTVERSION=	2.6.2
@@ -13,7 +13,7 @@ COMMENT=	Small C++ XML parser
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		uidfix
+USES=		compiler:c++11-lang uidfix
 USE_LDCONFIG=	YES
 SHLIB_MAJOR=	3
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"

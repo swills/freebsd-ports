@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/qoauth/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/qoauth/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qoauth
 PORTVERSION=	2.0.0
@@ -12,6 +12,9 @@ COMMENT=	Qt 4 support for OAuth-powered network services
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libqca.so:devel/qca@qt4
 

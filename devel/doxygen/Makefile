@@ -1,5 +1,5 @@
 # Created by: Joep Grooten <joep@di.nl>
-# $FreeBSD: head/devel/doxygen/Makefile 480650 2018-09-25 08:26:39Z arved $
+# $FreeBSD: head/devel/doxygen/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	doxygen
 PORTVERSION=	1.8.14
@@ -62,6 +62,13 @@ SEARCH_CMAKE_BOOL=	build_search
 SEARCH_LIB_DEPENDS=	libxapian.so:databases/xapian-core
 SEARCH_PLIST_FILES=	bin/doxyindexer \
 			bin/doxysearch.cgi
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e '/PERL_PATH/ s|/usr/bin/perl|${perl_CMD}|' \

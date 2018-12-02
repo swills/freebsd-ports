@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/plume-creator-devel/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/plume-creator-devel/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	plume-creator-devel
 PORTVERSION=	${DATE}
@@ -9,6 +9,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open source tool for novelists
 
 LICENSE=	GPLv3+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 DATE=		20150510
 

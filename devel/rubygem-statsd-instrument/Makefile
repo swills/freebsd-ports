@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-statsd-instrument/Makefile 484742 2018-11-11 18:22:55Z sunpoet $
+# $FreeBSD: head/devel/rubygem-statsd-instrument/Makefile 486193 2018-11-29 16:45:56Z sunpoet $
 
 PORTNAME=	statsd-instrument
-PORTVERSION=	2.3.1
+PORTVERSION=	2.3.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

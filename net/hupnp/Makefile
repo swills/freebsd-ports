@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/hupnp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net/hupnp/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	hupnp
 PORTVERSION=	1.0.0
@@ -13,6 +13,9 @@ COMMENT=	Library for building UPnP devices and control points
 
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/hupnp/LICENSE_LGPLv3.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		gmake qmake qt:4 zip
 USE_QT=		corelib network xml dbus gui \

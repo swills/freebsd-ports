@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/fontmatrix/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-fonts/fontmatrix/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	fontmatrix
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,9 @@ COMMENT=	Graphical font manager
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_armv6=		fails to compile: src/fminfodisplay.cpp:155:17: no matching function for call to 'qMax'
 BROKEN_armv7=		fails to compile: src/fminfodisplay.cpp:155:17: no matching function for call to 'qMax'

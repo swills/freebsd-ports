@@ -1,5 +1,5 @@
 # Created by: Eugene Mychlo <myc@barev.net>
-# $FreeBSD: head/net-mgmt/nagiosagent/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-mgmt/nagiosagent/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	NagiosAgent
 PORTVERSION=	1.2.0.1
@@ -11,6 +11,9 @@ DISTNAME=	${PORTNAME}-${DISTVERSION}-src
 
 MAINTAINER=	myc@barev.net
 COMMENT=	Qt-based frontend to Nagios
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 PLIST_FILES=	bin/NagiosAgent \
 		share/pixmaps/NagiosAgent.png

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 485573 2018-11-22 00:08:50Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 486217 2018-11-30 00:15:07Z jbeich $
 
 PORTNAME=	media-driver
 DISTVERSIONPREFIX=	intel-media-
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libpciaccess.so:devel/libpciaccess \
 USES=		cmake:outsource compiler:c++11-lib pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	intel
-ARCH_SUFX=	${ARCH:S/i386/32/:S/amd//}
+ARCH_SUFX=	${ARCH:S/i386/32/:S/amd//:S/x86_//}
 CMAKE_OFF=	MEDIA_BUILD_FATAL_WARNINGS
 CMAKE_ARGS=	-DBUILD_TYPE:STRING="${CMAKE_BUILD_TYPE}" \
 		-DARCH:STRING="${ARCH_SUFX}" \

@@ -1,5 +1,5 @@
 # Created by: Florian Smeets <flo@smeets.im>
-# $FreeBSD: head/textproc/pecl-wbxml/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/textproc/pecl-wbxml/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	wbxml
 PORTVERSION=	1.0.3
@@ -8,6 +8,9 @@ CATEGORIES=	textproc pear
 
 MAINTAINER=	flo@FreeBSD.org
 COMMENT=	PECL extension that provides WBXML conversion capabilities
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LIB_DEPENDS=	libwbxml2.so:textproc/wbxml2
 

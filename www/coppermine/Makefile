@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/coppermine/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/www/coppermine/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	coppermine
 PORTVERSION=	1.5.46
@@ -8,6 +8,9 @@ DISTNAME=	cpg${PORTVERSION}
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Web picture gallery script
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv3
 

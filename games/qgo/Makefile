@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/games/qgo/Makefile 484003 2018-11-04 12:15:56Z antoine $
+# $FreeBSD: head/games/qgo/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qgo
 PORTVERSION=	2.s764
@@ -9,6 +9,9 @@ DISTNAME=	${PORTNAME}_2~svn764.orig
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Go board and SGF editor written with the Qt library
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN=		fails to build
 

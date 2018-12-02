@@ -1,8 +1,8 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/net/rsync-bpc/Makefile 460444 2018-01-30 22:10:53Z dbaio $
+# $FreeBSD: head/net/rsync-bpc/Makefile 486255 2018-11-30 14:22:23Z swills $
 
 PORTNAME=	rsync-bpc
-DISTVERSION=	3.0.9.12
+DISTVERSION=	3.0.9.13
 CATEGORIES=	net
 
 MAINTAINER=	moiseev@mezonplus.ru

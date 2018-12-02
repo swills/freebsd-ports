@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-p2p/bitmessage/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/net-p2p/bitmessage/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	bitmessage
 DISTVERSION=	0.6.3.2
@@ -11,6 +11,9 @@ COMMENT=	Secure P2P communications client
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}qt4-core>=${PYQT4_VERSION}:devel/py-qt4-core@${PY_FLAVOR} \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gstreamer1
 PORTVERSION=	1.2.0
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/qt-gstreamer/
 PKGNAMESUFFIX=	-${FLAVOR}
@@ -14,8 +14,11 @@ COMMENT=	Qt ${FLAVOR:C/qt//} bindings for GStreamer 1.x multimedia library
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libgstreamer-1.0.so:multimedia/gstreamer1
 
-FLAVORS=	qt4 qt5
+FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 CONFLICTS_INSTALL=	gstreamer${PKGNAMESUFFIX}-*
 

@@ -1,11 +1,11 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/solarwolf/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/solarwolf/Makefile 486364 2018-12-01 13:08:39Z sunpoet $
 
 PORTNAME=	solarwolf
 PORTVERSION=	1.5
 PORTREVISION=	11
 CATEGORIES=	games
-MASTER_SITES=	http://www.pygame.org/shredwheat/solarwolf/
+MASTER_SITES=	https://www.pygame.org/shredwheat/solarwolf/
 
 MAINTAINER=	mail@maxlor.com
 COMMENT=	Action/arcade game originally based of SolarFox on the Atari 2600

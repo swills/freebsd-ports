@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/pecl-stem/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/textproc/pecl-stem/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	stem
 PORTVERSION=	1.5.1
@@ -8,6 +8,9 @@ CATEGORIES=	textproc pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PECL extension which provides word stemming
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING

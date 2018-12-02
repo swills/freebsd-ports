@@ -1,5 +1,5 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/deskutils/silence/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/silence/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	silence
 PORTVERSION=	0.2
@@ -13,6 +13,9 @@ COMMENT=	Information management tool
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/katepart.so:editors/kate-kde4
 

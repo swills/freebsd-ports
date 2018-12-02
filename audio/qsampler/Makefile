@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@FreeBSD.org
-# $FreeBSD: head/audio/qsampler/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/qsampler/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qsampler
 DISTVERSIONPREFIX=	qsampler_
@@ -47,6 +47,13 @@ QT5_USES=	qmake:no_env qt:5
 QT5_USE=	qt=core,gui,widgets,x11extras \
 		qt=buildtools_build,linguisttools_build,qmake_build
 QT5_CONFIGURE_ENABLE=	qt5
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-configure:
 	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${QMAKE} -o ${PORTNAME}.mak \

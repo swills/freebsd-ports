@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/security/ophcrack/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/security/ophcrack/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	ophcrack
 PORTVERSION=	3.7.0
@@ -33,6 +33,13 @@ X11_CONFIGURE_OFF=	--disable-gui
 
 GRAPH_LIB_DEPENDS=	libqwt.so:x11-toolkits/qwt5
 GRAPH_CONFIGURE_OFF=	--disable-graph
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MX11}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -E '/#include <byteswap\.h>/d ; \

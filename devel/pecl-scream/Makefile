@@ -1,5 +1,5 @@
 # Created by: Volodymyr Kostyrko <c.kworr@gmail.com>
-# $FreeBSD: head/devel/pecl-scream/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-scream/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	scream
 DISTVERSION=	0.1.0
@@ -8,6 +8,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	c.kworr@gmail.com
 COMMENT=	Break the silence operator
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

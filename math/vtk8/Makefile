@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/vtk8/Makefile 485636 2018-11-23 05:23:04Z yuri $
+# $FreeBSD: head/math/vtk8/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	vtk
 DISTVERSION=	8.1.2
@@ -106,6 +106,11 @@ post-patch:
 		-E 's/[[:<:]]netcdf\.h[[:>:]]/xxxnetcdf.h/'
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 .for g in ${VTK_GROUPS}
 .  if ${PORT_OPTIONS:M${g}}

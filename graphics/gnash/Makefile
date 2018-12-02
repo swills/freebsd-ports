@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/gnash/Makefile 484370 2018-11-06 23:52:17Z linimon $
+# $FreeBSD: head/graphics/gnash/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	gnash
 PORTVERSION=	0.8.10
@@ -107,6 +107,8 @@ GNASH_GUIS+=	gtk
 .endif
 
 .if ${PORT_OPTIONS:MKDE4}
+DEPRECATED=	KDE4 is end-of-life
+EXPIRATION_DATE=2018-12-31
 GNASH_GUIS+=	kde4
 USE_QT=		moc_build
 USE_KDE=	kdelibs

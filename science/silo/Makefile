@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni <giffunip@tutopia.com>
-# $FreeBSD: head/science/silo/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/silo/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	silo
 PORTVERSION=	4.10.2
@@ -44,6 +44,13 @@ QT4_CONFIGURE_ON=		--with-Qt-dir=${PREFIX} \
 QT4_CONFIGURE_ENABLE=		silex
 QT4_DESKTOP_ENTRIES=		"Silex" "Silex browser for Silo files" \
 				"" "silex" "" true
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e \

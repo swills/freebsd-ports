@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/pecl-weakref/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-weakref/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	weakref
 PORTVERSION=	0.2.6
@@ -9,6 +9,9 @@ DISTNAME=	Weakref-${PORTVERSION}
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PECL Weakref extension
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE

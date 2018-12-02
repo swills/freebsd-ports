@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-virtualenv-clone/Makefile 465382 2018-03-23 16:45:55Z sunpoet $
+# $FreeBSD: head/devel/py-virtualenv-clone/Makefile 486334 2018-12-01 10:32:52Z nivit $
 
 PORTNAME=	virtualenv-clone
-PORTVERSION=	0.3.0
+PORTVERSION=	0.4.0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,9 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
-USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
+
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/devel/rubygem-activesupport50/Makefile 466993 2018-04-10 18:28:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-activesupport50/Makefile 486439 2018-12-02 15:36:50Z sunpoet $
 
 PORTNAME=	activesupport
-PORTVERSION=	5.0.7
+PORTVERSION=	5.0.7.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	50
@@ -20,8 +20,9 @@ RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0.2:devel/rubygem-concurrent-ruby \
 
 PORTSCOUT=	limit:^5\.0\.
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

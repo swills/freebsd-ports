@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 485989 2018-11-27 08:05:36Z yuri $
+# $FreeBSD: head/misc/Makefile 486474 2018-12-02 18:08:23Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -7,6 +7,7 @@
     SUBDIR += R-cran-xfun
     SUBDIR += achievo
     SUBDIR += aclgen
+    SUBDIR += actiona
     SUBDIR += amanda-client
     SUBDIR += amanda-perl-wrapper
     SUBDIR += amanda-server

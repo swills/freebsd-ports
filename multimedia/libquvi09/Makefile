@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libquvi09/Makefile 473062 2018-06-22 19:59:41Z tcberner $
+# $FreeBSD: head/multimedia/libquvi09/Makefile 486266 2018-11-30 20:01:54Z sunpoet $
 
 PORTNAME=	libquvi
 PORTVERSION=	0.9.4
@@ -15,19 +15,20 @@ COMMENT=	Cross-platform library for parsing flash media stream URLs
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	libquvi-scripts09>=0.9:multimedia/libquvi-scripts09
+BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libproxy.so:net/libproxy \
 		libgcrypt.so:security/libgcrypt
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+RUN_DEPENDS=	libquvi-scripts09>=0.9:multimedia/libquvi-scripts09
 
 OPTIONS_DEFINE=	DOCS
+
+USES=		gnome iconv libtool lua pathfix pkgconfig tar:xz
 
 CONFIGURE_ARGS=	--program-suffix=${PKGNAMESUFFIX}
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_GNOME=	glib20
-USES=		gnome iconv libtool lua pathfix pkgconfig tar:xz
 
 PLIST_SUB=	PKGNAMESUFFIX=${PKGNAMESUFFIX} PORTVERSION=${PORTVERSION} QUVIVERSION=${PORTVERSION:R}
 

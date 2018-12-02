@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/burplex/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/burplex/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	burplex
 PORTVERSION=	1.0.0
@@ -11,6 +11,9 @@ MAINTAINER=	waitman@waitman.net
 COMMENT=	Preview and select images for batch processing
 
 LICENSE=	BSD2CLAUSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	${LOCALBASE}/bin/dcraw:graphics/dcraw
 

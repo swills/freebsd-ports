@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libkolab/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/libkolab/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	libkolab
 PORTVERSION=	0.6.3
@@ -12,6 +12,9 @@ COMMENT=	Advanced Kolab Object Handling Library
 # The code in kolabformatV2 is LGPL21, but we consider the library
 # itself to be LGPL3-licensed (and so are all the installed headers).
 LICENSE=	LGPL3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 PORTSCOUT=	limit:^0\.
 

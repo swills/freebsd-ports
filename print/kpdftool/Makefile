@@ -1,5 +1,5 @@
 # Created by: Yuan, Jue <yuanjue@yuanjue.net>
-# $FreeBSD: head/print/kpdftool/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/print/kpdftool/Makefile 486469 2018-12-02 16:20:55Z antoine $
 
 PORTNAME=	kpdftool
 PORTVERSION=	0.23.1
@@ -10,6 +10,9 @@ DISTFILES=	33194-${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple utility to manipulate PS and PDF files
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	convert:graphics/ImageMagick6
 

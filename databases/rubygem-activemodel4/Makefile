@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/databases/rubygem-activemodel4/Makefile 450837 2017-09-28 11:01:51Z sunpoet $
+# $FreeBSD: head/databases/rubygem-activemodel4/Makefile 486458 2018-12-02 15:39:31Z sunpoet $
 
 PORTNAME=	activemodel
-PORTVERSION=	4.2.10
+PORTVERSION=	4.2.11
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4
@@ -16,8 +16,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 RUN_DEPENDS=	rubygem-activesupport4>=${PORTVERSION}:devel/rubygem-activesupport4 \
 		rubygem-builder>=3.2.2:devel/rubygem-builder
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

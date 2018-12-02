@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pecl-oauth/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/net/pecl-oauth/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
@@ -8,6 +8,9 @@ CATEGORIES=	net pear
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Php Interface to the OAuth Protocol
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

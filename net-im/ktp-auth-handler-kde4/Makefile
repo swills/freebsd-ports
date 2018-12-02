@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-auth-handler-kde4/Makefile 481446 2018-10-07 13:43:14Z tcberner $
+# $FreeBSD: head/net-im/ktp-auth-handler-kde4/Makefile 486488 2018-12-02 21:27:16Z antoine $
 
 PORTNAME=	ktp-auth-handler
 PORTVERSION=	${KTP_VERSION}
@@ -13,8 +13,8 @@ COMMENT=	KWallet integration module for KDE Telepathy
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
 
-LIB_DEPENDS=	libqjson.so:devel/qjson \
-		libqca.so:devel/qca \
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4 \
+		libqca.so:devel/qca@qt4 \
 		libtelepathy-qt4.so:net-im/telepathy-qt@qt4 \
 		libktpcommoninternalsprivate.so:net-im/ktp-common-internals-kde4
 

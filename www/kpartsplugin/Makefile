@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/kpartsplugin/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/www/kpartsplugin/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	kpartsplugin
 DISTVERSION=	0.0-${PORTDATE}
@@ -9,6 +9,9 @@ DISTNAME=	${PORTNAME}-${PORTDATE}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Browser file viewer using KDE technology
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2018-12-31
 
 USES=		cmake kde:4 qt:4 webplugin:native tar:bzip2
 USE_KDE=	kdelibs automoc4

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/editors/texmaker/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/texmaker/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	texmaker
 PORTVERSION=	4.5
@@ -37,5 +37,12 @@ QT4_LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4
 QT5_USES=	qt:5
 QT5_USE=	${_USE_QT5:S/^/QT=/}
 QT5_LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 .include <bsd.port.mk>

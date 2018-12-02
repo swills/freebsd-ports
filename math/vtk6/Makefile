@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk6/Makefile 474532 2018-07-12 19:05:30Z yuri $
+# $FreeBSD: head/math/vtk6/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	vtk
 PORTVERSION=	6.2.0
@@ -126,6 +126,9 @@ PLIST_SUB+=	MPI="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MQT4}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 USES+=		qt:4
 USE_QT=		gui_build gui_run network_build network_run sql_build sql_run \
 		moc_build uic_build qmake_build rcc_build opengl webkit_build \

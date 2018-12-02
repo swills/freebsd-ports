@@ -1,5 +1,5 @@
 # Created by: fluffy@
-# $FreeBSD: head/graphics/prison/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/prison/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	prison
 PORTVERSION=	1.1.1
@@ -13,6 +13,9 @@ COMMENT=	Barcode library for KDE
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libdmtx.so:graphics/libdmtx \
 		libqrencode.so:graphics/libqrencode

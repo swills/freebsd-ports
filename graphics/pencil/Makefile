@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/graphics/pencil/Makefile 481268 2018-10-05 10:10:02Z martymac $
+# $FreeBSD: head/graphics/pencil/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	pencil
 PORTVERSION=	0.4.4b
@@ -12,6 +12,9 @@ MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	Pencil - a traditional 2D animation software
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_armv6=		fails to compile: no matching function for call to 'qMax'
 BROKEN_armv7=		fails to compile: no matching function for call to 'qMax'

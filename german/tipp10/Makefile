@@ -1,5 +1,5 @@
 # Created by: Heiner <h.eichmann@gmx.de>
-# $FreeBSD: head/german/tipp10/Makefile 481328 2018-10-06 08:35:32Z tobik $
+# $FreeBSD: head/german/tipp10/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	tipp10
 DISTVERSION=	2-1-0
@@ -13,6 +13,9 @@ COMMENT=	10-finger touch typing learning program
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/license_en.txt
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake dos2unix qt:4 zip
 DOS2UNIX_GLOB=	*.pro *.cpp

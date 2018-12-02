@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing
-# $FreeBSD: head/chinese/qterm/Makefile 483993 2018-11-04 11:50:15Z antoine $
+# $FreeBSD: head/chinese/qterm/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qterm
 PORTVERSION=	0.5.12
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/qterm/qterm/${PORTVERSION}
 
 MAINTAINER=	kaiwang27@gmail.com
 COMMENT=	BBS client for BSD/Linux
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN=		fails to build
 

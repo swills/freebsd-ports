@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/searchmonkey/Makefile 478051 2018-08-25 15:31:48Z tobik $
+# $FreeBSD: head/sysutils/searchmonkey/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	searchmonkey
 PORTVERSION=	2.0.0
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Search using regexes for file names and text
 
 LICENSE=	GPLv3+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake dos2unix qt:4 zip
 USE_CXXSTD=	c++98

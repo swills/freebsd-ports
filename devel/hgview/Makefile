@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/hgview/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/hgview/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	hgview
 PORTVERSION=	1.9.0
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast Mercurial log navigator written in pyqt4
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN=		fails to configure
 

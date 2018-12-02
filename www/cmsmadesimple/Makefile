@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/cmsmadesimple/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/cmsmadesimple/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	cmsmadesimple
 PORTVERSION=	1.12
@@ -9,6 +9,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-full
 
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Simple Open Source CMS
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 

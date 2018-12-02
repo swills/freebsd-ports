@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/phonon-xine/Makefile 478529 2018-08-31 08:16:18Z tobik $
+# $FreeBSD: head/multimedia/phonon-xine/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	phonon
 PORTVERSION=	4.4.4
@@ -12,6 +12,9 @@ DIST_SUBDIR=	KDE
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	The xine backend for Phonon
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libxine.so:multimedia/libxine
 

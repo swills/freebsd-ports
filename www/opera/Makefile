@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/opera/Makefile 431251 2017-01-12 11:30:50Z amdmi3 $
+# $FreeBSD: head/www/opera/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	opera
 PORTVERSION=	${OPERA_VER}
@@ -65,6 +65,11 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 .if ${PORT_OPTIONS:MGTK2}
 INSTALLS_ICONS=	yes
+.endif
+
+.if ${PORT_OPTIONS:MKDE4}
+DEPRECATED=	KDE4 is end-of-life
+EXPIRATION_DATE=2018-12-31
 .endif
 
 OPERA_ARCH=	${ARCH:S,i386,intel,}

@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/graphics/easypaint/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/easypaint/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	easypaint
 PORTVERSION=	0.6.0
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Easy graphic editing program
 
 LICENSE=	GPLv3
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake qt:4
 USE_QT=		gui xml uic_build moc_build rcc_build

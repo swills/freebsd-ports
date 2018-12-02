@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 484447 2018-11-08 12:17:23Z tobik $
+# $FreeBSD: head/audio/openal-soft/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	openal-soft
 PORTVERSION=	1.19.1
@@ -54,6 +54,13 @@ SDL_USE=		SDL=sdl2
 
 SNDIO_CMAKE_BOOL=	ALSOFT_REQUIRE_SNDIO ALSOFT_BACKEND_SNDIO
 SNDIO_LIB_DEPENDS=	libsndio.so:audio/sndio
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MCONFIG}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} 's|/etc/openal|${ETCDIR}|' \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/sams2/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/www/sams2/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	sams2
 DISTVERSION=	2.0.0
@@ -8,6 +8,9 @@ MASTER_SITES=	http://sams.perm.ru/download/ http://razumit.ru/
 
 MAINTAINER=	roma.a.g@gmail.com
 COMMENT=	Squid Accounting Management System
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	BSD4CLAUSE
 

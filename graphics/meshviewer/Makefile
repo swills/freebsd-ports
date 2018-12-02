@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/meshviewer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/meshviewer/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	meshviewer
 PORTVERSION=	0.3.3
@@ -13,6 +13,9 @@ COMMENT=	Mesh viewer
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 WRKSRC=		${WRKDIR}/mview-${PORTVERSION}
 

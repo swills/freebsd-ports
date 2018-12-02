@@ -1,11 +1,10 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/devel/shapelib/Makefile 449923 2017-09-15 19:17:23Z sunpoet $
+# $FreeBSD: head/devel/shapelib/Makefile 486263 2018-11-30 20:01:27Z sunpoet $
 
 PORTNAME=	shapelib
 PORTVERSION=	1.4.1
 CATEGORIES=	devel geography
-MASTER_SITES=	http://download.osgeo.org/shapelib/ \
-		ftp://ftp.remotesensing.org/shapelib/ \
+MASTER_SITES=	https://download.osgeo.org/shapelib/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org

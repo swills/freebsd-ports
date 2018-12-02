@@ -1,5 +1,5 @@
 # Created by: Ayumi M <ayu@commun.jp>
-# $FreeBSD: head/audio/murmur/Makefile 478429 2018-08-30 04:05:07Z danfe $
+# $FreeBSD: head/audio/murmur/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	murmur
 PORTVERSION=	1.2.19
@@ -11,6 +11,9 @@ COMMENT=	Murmur is the server component of Mumble
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/function.hpp:devel/boost-libs
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf

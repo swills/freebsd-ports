@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/klayout/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/cad/klayout/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	klayout
 PORTVERSION=	0.24.9
@@ -10,6 +10,9 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Qt-based GDS2 Viewer
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		compiler:c++0x gmake python qt:4
 USE_RUBY=	yes

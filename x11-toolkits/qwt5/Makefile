@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qwt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/qwt5/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qwt
 PORTVERSION=	5.2.3
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	5
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt Widgets for Technical Applications
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		gmake qmake qt:4 tar:bzip2
 USE_QT=		gui svg moc_build

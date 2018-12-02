@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-judy/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/pecl-judy/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	judy
 PORTVERSION=	1.0.2
@@ -9,6 +9,9 @@ DISTNAME=	Judy-${PORTVERSION}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP Judy implements sparse dynamic arrays
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP301
 

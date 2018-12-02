@@ -1,5 +1,5 @@
 # Created by: Robert Nelson <robertn@the-nelsons.org>
-# $FreeBSD: head/mail/emailrelay/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/mail/emailrelay/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	emailrelay
 PORTVERSION=	1.9
@@ -38,6 +38,13 @@ OPENSSL_LDFLAGS=	-L${OPENSSLLIB}
 OPENSSL_CPPFLAGS=	-I${OPENSSLINC}
 
 IPV6_CONFIGURE_ENABLE=	ipv6
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MGUI}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+.endif
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/etc/emailrelay.auth.template \

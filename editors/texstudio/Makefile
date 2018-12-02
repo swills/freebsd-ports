@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/texstudio/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/texstudio/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	texstudio
 DISTVERSION=	2.12.8
@@ -18,6 +18,9 @@ LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
 
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 qt4_LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4 \
 			libquazip.so:archivers/quazip@qt4

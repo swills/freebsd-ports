@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-railties4/Makefile 456260 2017-12-13 20:51:20Z sunpoet $
+# $FreeBSD: head/www/rubygem-railties4/Makefile 486463 2018-12-02 15:40:13Z sunpoet $
 
 PORTNAME=	railties
-PORTVERSION=	4.2.10
+PORTVERSION=	4.2.11
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4
@@ -19,9 +19,10 @@ RUN_DEPENDS=	rubygem-actionpack4>=${PORTVERSION}:www/rubygem-actionpack4 \
 
 CONFLICTS_INSTALL=	rubygem-railties5 rubygem-railties50
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/rails
 

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/qxkb/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/qxkb/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qxkb
 PORTVERSION=	0.4.6
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt4-based advanced keyboard layout switcher
 
 LICENSE=	GPLv2+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libxkbfile.so:x11/libxkbfile
 

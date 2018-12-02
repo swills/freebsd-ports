@@ -1,5 +1,5 @@
 # Created by: Tim Niemueller <tim@niemueller.de>
-# $FreeBSD: head/devel/yaml-cpp03/Makefile 484214 2018-11-05 20:05:42Z linimon $
+# $FreeBSD: head/devel/yaml-cpp03/Makefile 486393 2018-12-02 03:01:44Z linimon $
 
 PORTNAME=	yaml-cpp
 PORTVERSION=	0.3.0
@@ -12,7 +12,7 @@ COMMENT=	YAML parser and emitter in C++ matching the YAML 1.2 spec
 
 LICENSE=	MIT
 
-USES=		cmake
+USES=		compiler:c++11-lang cmake
 USE_LDCONFIG=	yes
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS:BOOL=ON -DYAML_CPP_BUILD_TOOLS=0
 

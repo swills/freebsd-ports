@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fm/qtfm/Makefile 477170 2018-08-14 16:40:46Z swills $
+# $FreeBSD: head/x11-fm/qtfm/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qtfm
 DISTVERSION=	5.5
@@ -12,6 +12,9 @@ COMMENT=	Small, lightweight file manager based on pure Qt
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify
 

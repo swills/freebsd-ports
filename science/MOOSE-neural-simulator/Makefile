@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/science/MOOSE-neural-simulator/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/science/MOOSE-neural-simulator/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	MOOSE-neural-simulator
 DISTVERSION=	3.1.2
@@ -12,6 +12,9 @@ COMMENT=	Multiphysics Object Oriented Simulation Environment
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENCE
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libgsl.so:math/gsl \
 		libhdf5.so:science/hdf5 \

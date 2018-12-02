@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/security/fwbuilder/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/fwbuilder/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	fwbuilder
 PORTVERSION=	5.1.0
@@ -10,6 +10,9 @@ MASTER_SITES=	SF/${PORTNAME}/Current_Packages/${PORTVERSION}
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Firewall Builder GUI and policy compilers
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_powerpc64=	fails to configure: libz library not found
 

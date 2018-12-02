@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/korean/qt4-codecs-kr/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/korean/qt4-codecs-kr/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	codecs
 DISTVERSION=	${QT4_VERSION}
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	-kr
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt EUC-KR codec plugin
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USES=		qmake:no_env qt-dist:4
 USE_QT=		corelib

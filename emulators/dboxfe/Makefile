@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/dboxfe/Makefile 480947 2018-09-30 09:38:30Z amdmi3 $
+# $FreeBSD: head/emulators/dboxfe/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	dboxfe
 PORTVERSION=	0.1.3
@@ -11,6 +11,9 @@ COMMENT=	Qt4 based configuration manager for DOSBox
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE.GPL
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 RUN_DEPENDS=	dosbox:emulators/dosbox
 

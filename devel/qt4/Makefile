@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <lofi@kiste>
-# $FreeBSD: head/devel/qt4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	qt4
 DISTVERSION=	${QT4_VERSION}
@@ -8,6 +8,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Cross-platform application and UI framework (metaport)
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 USE_QT=		accessible clucene corelib dbus declarative designer \
 		graphicssystems-opengl gui help iconengines \

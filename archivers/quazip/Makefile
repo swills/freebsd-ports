@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/archivers/quazip/Makefile 483633 2018-11-01 01:40:47Z linimon $
+# $FreeBSD: head/archivers/quazip/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	quazip
 DISTVERSION=	0.7.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	archivers
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	-${FLAVOR}
@@ -13,8 +13,11 @@ COMMENT=	Qt/C++ wrapper for ZIP/UNZIP package
 
 LICENSE=	LGPL21
 
-FLAVORS=	qt4 qt5
+FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
+
+qt4_DEPRECATED=		Qt4 has been EOL since december 2015
+qt4_EXPIRATION_DATE=	2019-03-15
 
 USES=		cmake:outsource
 USE_LDCONFIG=	yes

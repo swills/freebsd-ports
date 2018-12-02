@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-HTTP-DAV/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-HTTP-DAV/Makefile 486191 2018-11-29 16:45:38Z sunpoet $
 
 PORTNAME=	HTTP-DAV
-PORTVERSION=	0.48
+PORTVERSION=	0.49
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,5 +20,7 @@ RUN_DEPENDS=	p5-URI>0:net/p5-URI \
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

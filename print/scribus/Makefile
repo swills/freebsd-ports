@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/scribus/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/print/scribus/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	scribus
 PORTVERSION=	1.4.7
@@ -12,6 +12,9 @@ MAINTAINER=	bsam@FreeBSD.org
 COMMENT=	Comprehensive desktop publishing program
 
 LICENSE=	GPLv2+
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BROKEN_armv6=		fails to build: scribus.cpp:6711:36: assigning to 'double *' from incompatible type 'qreal *'
 BROKEN_armv7=		fails to build: scribus.cpp:6711:36: assigning to 'double *' from incompatible type 'qreal *'

@@ -1,5 +1,5 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/luminance/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/luminance/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	luminance-hdr
 DISTVERSION=	2.3.1
@@ -11,6 +11,9 @@ MAINTAINER=	h2+fbsdports@fsfe.org
 COMMENT=	Complete open source solution for HDR photography
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/include/fftw3.h:math/fftw3
 LIB_DEPENDS=	libfftw3f.so:math/fftw3-float \

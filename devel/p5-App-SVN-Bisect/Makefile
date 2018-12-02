@@ -1,9 +1,9 @@
 # Created by: Rui Paulo <rpaulo@FreeBSD.org>
-# $FreeBSD: head/devel/p5-App-SVN-Bisect/Makefile 485280 2018-11-18 21:54:55Z bofh $
+# $FreeBSD: head/devel/p5-App-SVN-Bisect/Makefile 486222 2018-11-30 00:54:51Z bofh $
 
 PORTNAME=	App-SVN-Bisect
 PORTVERSION=	1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -25,6 +25,6 @@ USES=		perl5
 USE_PERL5=	configure shebangfix
 
 NO_ARCH=	yes
-SHEBANNG_FILES=	bin/svn-bisect
+SHEBANG_FILES=	bin/svn-bisect
 
 .include <bsd.port.mk>

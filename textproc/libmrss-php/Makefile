@@ -1,5 +1,5 @@
 # Created by: Rodrigo Osorio <rodrigo@FreeBSD.org>
-# $FreeBSD: head/textproc/libmrss-php/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/textproc/libmrss-php/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	libmrss
 PORTVERSION=	0.19.2
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP library for parsing, writing, and creating RSS
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/../COPYING

@@ -1,10 +1,10 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/graphics/mapserver/Makefile 481143 2018-10-03 07:01:54Z wen $
+# $FreeBSD: head/graphics/mapserver/Makefile 486365 2018-12-01 13:08:47Z sunpoet $
 
 PORTNAME=		mapserver
 PORTVERSION=		7.2.1
 CATEGORIES=		graphics www geography
-MASTER_SITES=		http://download.osgeo.org/mapserver/
+MASTER_SITES=		https://download.osgeo.org/mapserver/
 
 MAINTAINER=		wen@FreeBSD.org
 COMMENT=		System for developing web-based GIS applications

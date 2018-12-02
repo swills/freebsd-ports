@@ -1,5 +1,5 @@
 # Created by: raven428 <raven428@gmail.com>
-# $FreeBSD: head/devel/php5-pinba/Makefile 481545 2018-10-08 15:08:13Z antoine $
+# $FreeBSD: head/devel/php5-pinba/Makefile 486473 2018-12-02 17:43:33Z antoine $
 
 PORTNAME=	pinba
 PORTVERSION=	2012.03.20
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	komarov@valerka.net
 COMMENT=	PHP-extension part of statistics server for PHP
+
+DEPRECATED=	Works only with EOL php 5.6
+EXPIRATION_DATE=	2018-12-30
 
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 

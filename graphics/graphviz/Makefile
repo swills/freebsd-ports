@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/graphviz/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/graphics/graphviz/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	graphviz
 PORTVERSION=	2.40.1
@@ -210,6 +210,11 @@ CONFIGURE_ENV+=		SWIG="${LOCALBASE}/bin/swig3.0"
 .else
 CONFIGURE_ARGS+=	--disable-swig
 CONFIGURE_ENV+=		SWIG="/nonexistent"
+.endif
+
+.if ${PORT_OPTIONS:MGVEDIT}
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 .endif
 
 .include <bsd.port.pre.mk>

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/net/x2goclient/Makefile 484262 2018-11-05 23:52:30Z meta $
+# $FreeBSD: head/net/x2goclient/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	x2goclient
 PORTVERSION=	4.1.0.0
@@ -11,6 +11,11 @@ COMMENT=	Qt client for the X2Go system
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 # Avoid clash with libssh from base
 BUILD_DEPENDS=	${LOCALBASE}/lib/libssh.so:security/libssh

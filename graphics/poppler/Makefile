@@ -1,5 +1,5 @@
 # Created by: marcus@FreeBSD.org
-# $FreeBSD: head/graphics/poppler/Makefile 480003 2018-09-18 09:28:34Z linimon $
+# $FreeBSD: head/graphics/poppler/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	poppler
 PORTVERSION=	0.57.0
@@ -62,6 +62,9 @@ CONFIGURE_ARGS+=--disable-poppler-glib
 .endif
 
 .if ${SLAVEPORT}==qt4
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
+
 CONFIGURE_ARGS+=--enable-poppler-qt4
 CONFIGURE_ENV+=	MOCQT4=${MOC}
 USES+=		qt:4

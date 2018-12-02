@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/net/qt4-network/Makefile 485968 2018-11-26 21:35:49Z antoine $
+# $FreeBSD: head/net/qt4-network/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	network
 DISTVERSION=	${QT4_VERSION}
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	qt4-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt network module
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LICENSE=	GPLv3 LGPL21 LGPL3 GFDL
 LICENSE_COMB=	dual

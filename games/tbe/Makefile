@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/tbe/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/tbe/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	tbe
 PORTVERSION=	0.9.2.1
@@ -12,6 +12,9 @@ COMMENT=	The Butterfly Effect
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
 

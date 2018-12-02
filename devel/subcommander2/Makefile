@@ -1,5 +1,5 @@
 # Created by: Naram Qashat
-# $FreeBSD: head/devel/subcommander2/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/subcommander2/Makefile 486467 2018-12-02 15:41:47Z rene $
 
 PORTNAME=	subcommander
 PORTVERSION=	2.0.0.b5.2
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt4 based multiplatform subversion client, diff & merge tool
 
 LICENSE=	GPLv2
+
+DEPRECATED=		Qt4 has been EOL since december 2015
+EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libsvn_client-1.so:devel/subversion
