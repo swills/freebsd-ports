@@ -3,8 +3,7 @@
 
 PORTNAME=	racer
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.5
-PORTREVISION=	3
+DISTVERSION=	2.1.13
 CATEGORIES=	devel
 
 MAINTAINER=	beyert@cs.ucr.edu
@@ -44,15 +43,14 @@ CARGO_CRATES=	aho-corasick-0.6.6 \
 		crossbeam-deque-0.2.0 \
 		crossbeam-epoch-0.3.1 \
 		crossbeam-utils-0.2.2 \
-		derive_more-0.11.0 \
-		dtoa-0.4.3 \
+		derive_more-0.13.0 \
 		either-1.5.0 \
 		ena-0.9.3 \
 		env_logger-0.5.10 \
 		fuchsia-zircon-0.3.3 \
 		fuchsia-zircon-sys-0.3.3 \
 		humantime-1.1.1 \
-		itoa-0.4.2 \
+		itoa-0.4.3 \
 		lazy_static-1.0.1 \
 		lazycell-1.0.0 \
 		libc-0.2.42 \
@@ -64,10 +62,8 @@ CARGO_CRATES=	aho-corasick-0.6.6 \
 		owning_ref-0.3.3 \
 		parking_lot-0.5.5 \
 		parking_lot_core-0.2.14 \
-		proc-macro2-0.3.8 \
-		proc-macro2-0.4.6 \
+		proc-macro2-0.4.20 \
 		quick-error-1.2.2 \
-		quote-0.5.2 \
 		quote-0.6.3 \
 		rand-0.4.2 \
 		redox_syscall-0.1.40 \
@@ -88,18 +84,18 @@ CARGO_CRATES=	aho-corasick-0.6.6 \
 		rustc-rayon-0.1.1 \
 		rustc-rayon-core-0.1.1 \
 		rustc_version-0.2.2 \
+		ryu-0.2.6 \
 		scoped-tls-0.1.2 \
 		scopeguard-0.3.3 \
 		semver-0.9.0 \
 		semver-parser-0.7.0 \
-		serde-1.0.70 \
-		serde_derive-1.0.70 \
-		serde_json-1.0.22 \
+		serde-1.0.80 \
+		serde_derive-1.0.80 \
+		serde_json-1.0.32 \
 		smallvec-0.6.5 \
 		stable_deref_trait-1.1.0 \
 		strsim-0.7.0 \
-		syn-0.13.11 \
-		syn-0.14.4 \
+		syn-0.15.17 \
 		tempfile-3.0.2 \
 		termcolor-0.3.6 \
 		termion-1.5.1 \
