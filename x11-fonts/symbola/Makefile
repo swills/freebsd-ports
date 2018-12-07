@@ -1,11 +1,11 @@
 # $FreeBSD$
 
 PORTNAME=	symbola
-PORTVERSION=	7.19
-PORTREVISION=	1
+PORTVERSION=	11.00
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://users.teilar.gr/~g1951d/
 DISTNAME=	Symbola
+DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	elizabeth@interlinked.me
 COMMENT=	Basic Latin, Greek, Cyrillic and many Symbol blocks of Unicode
@@ -13,18 +13,13 @@ COMMENT=	Basic Latin, Greek, Cyrillic and many Symbol blocks of Unicode
 LICENSE=	PD
 LICENSE_FILE=	${FILESDIR}/COPYING
 
-NO_WRKSUBDIR=	yes
-NO_BUILD=	yes
 USES=		fonts zip
 
-OPTIONS_DEFINE=	DOCS
-
-PORTDOCS=	*
+NO_WRKSUBDIR=	yes
+NO_BUILD=	yes
+NO_ARCH=	yes
 
 do-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/*.htm ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/*.docx ${STAGEDIR}${DOCSDIR}
 	${MKDIR} ${STAGEDIR}${FONTSDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.ttf ${STAGEDIR}${FONTSDIR}
 
