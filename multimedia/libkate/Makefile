@@ -57,7 +57,7 @@ post-patch:
 .else
 	@${REINPLACE_CMD} -e \
 		"s|  HAVE_PYTHON_TRUE=$$|  HAVE_PYTHON_TRUE='#'|; \
-			s|  HAVE_PYTHON_FALSE=\'#\'$$|  HAVE_PYTHON_FALSE=|" \
+			s|  HAVE_PYTHON_FALSE='#'$$|  HAVE_PYTHON_FALSE=|" \
 		${WRKSRC}/configure
 .endif
 
