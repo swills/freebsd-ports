@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=		vmware-vsphere-cli
-PORTVERSION=		6.5.0
-PORTREVISION=		1
+PORTVERSION=		6.7.0
 CATEGORIES=		net perl5
 MASTER_SITES=		#http://communities.vmware.com/community/vmtn/developer/downloads
 DISTNAME=		VMware-vSphere-Perl-SDK-${PORTVERSION}-${DISTREL}.i386
@@ -31,7 +30,7 @@ NO_CDROM=		May not be redistributed.  Must accept license to download.
 NO_PACKAGE=		May not be redistributed.  Must accept license to download.
 SHEBANG_FILES=		apps/general/* apps/host/* apps/performance/* apps/session/* apps/vm/* bin/*
 
-DISTREL=		4566394
+DISTREL=		8156551
 
 .include <bsd.port.pre.mk>
 
