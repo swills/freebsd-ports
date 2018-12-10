@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <sergey.kozlov@intel.com>
-# $FreeBSD: head/sysutils/intel-nvmupdate/Makefile 487178 2018-12-10 15:16:16Z pi $
+# $FreeBSD: head/sysutils/intel-nvmupdate/Makefile 487198 2018-12-10 20:14:37Z skozlov $
 
 PORTNAME=	nvmupdate
 DISTVERSION=	6_80
@@ -38,12 +38,6 @@ SUB_LIST=	NVMUPDATE_DIR=${NVMUPDATE_DIR}
 NVMUPDATE_DIR=	intel-nvmupdate
 
 .include <bsd.port.pre.mk>
-
-# This is the workaround for directory permission issues for 10.x.
-# Remove this after the directory permissions are fixed upstream.
-post-extract:
-	${CHMOD} a+x ${WRKDIR}/XL710
-	${CHMOD} a+x ${WRKSRC}
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${NVMUPDATE_DIR}

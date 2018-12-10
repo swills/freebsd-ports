@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/taskcoach/Makefile 474656 2018-07-15 02:33:41Z yuri $
+# $FreeBSD: head/deskutils/taskcoach/Makefile 487196 2018-12-10 17:56:43Z fernape $
 
 PORTNAME=	taskcoach
-DISTVERSION=	1.4.3
+DISTVERSION=	1.4.4
 CATEGORIES=	deskutils python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Release-${PORTVERSION}
 DISTNAME=	TaskCoach-${PORTVERSION}
