@@ -1,12 +1,12 @@
-# $FreeBSD: head/security/py-asyncssh/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-asyncssh/Makefile 487009 2018-12-09 01:47:38Z swills $
 
 PORTNAME=	asyncssh
-PORTVERSION=	1.12.0
+PORTVERSION=	1.14.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=  	bartosz@ixsystems.com
+MAINTAINER=	bartosz@ixsystems.com
 COMMENT=	Python asnycio SSH protocol library
 
 LICENSE=	EPL
@@ -18,5 +18,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt@${PY_FLAVOR} \
 USES=		python:3.4+
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
+
+do-test:
+	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.mk>

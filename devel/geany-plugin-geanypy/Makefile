@@ -1,11 +1,16 @@
-# $FreeBSD: head/devel/geany-plugin-geanypy/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/geany-plugin-geanypy/Makefile 487062 2018-12-09 17:29:13Z madpilot $
 
 PORTNAME=	geany-plugin-geanypy
 PORTVERSION=	${GEANY_VER}
+PKGNAMESUFFIX=	-gtk2
 CATEGORIES=	devel
 
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Geany plugin: ${${GEANY_PLUGIN}_DESC}
+
+LIB_DEPENDS=	libgeany.so:devel/geany@gtk2
+
+FLAVORS=	# intentionally left empty
 
 USES=		python:2.7
 USE_GNOME=	pygtk2

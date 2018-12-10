@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-CSS-Compressor/Makefile 486275 2018-11-30 20:03:16Z sunpoet $
+# $FreeBSD: head/textproc/p5-CSS-Compressor/Makefile 486696 2018-12-05 18:47:34Z sunpoet $
 
 PORTNAME=	CSS-Compressor
-PORTVERSION=	0.03
+PORTVERSION=	0.05
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

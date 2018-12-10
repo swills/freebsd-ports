@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/simplegroupware/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/deskutils/simplegroupware/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	simplegroupware
 PORTVERSION=	0.745
@@ -13,7 +13,7 @@ COMMENT=	Simple Groupware is an open source enterprise application
 DEPRECATED=	Works only with EOL php 5.6
 EXPIRATION_DATE=	2018-12-30
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 NO_BUILD=	yes
 USES=		apache:run,2.2+

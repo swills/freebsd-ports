@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 486090 2018-11-28 13:23:36Z makc $
+# $FreeBSD: head/x11-toolkits/Makefile 486663 2018-12-05 10:07:28Z rene $
 #
 
     COMMENT = X11 toolkits
@@ -286,7 +286,6 @@
     SUBDIR += vte
     SUBDIR += vte-reference
     SUBDIR += vte3
-    SUBDIR += vtkfox
     SUBDIR += wlc
     SUBDIR += wmapp
     SUBDIR += wxgtk28

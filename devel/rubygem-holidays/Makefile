@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/rubygem-holidays/Makefile 482532 2018-10-20 14:51:28Z sunpoet $
+# $FreeBSD: head/devel/rubygem-holidays/Makefile 487127 2018-12-10 04:21:32Z sunpoet $
 
 PORTNAME=	holidays
-PORTVERSION=	6.6.1
+PORTVERSION=	7.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

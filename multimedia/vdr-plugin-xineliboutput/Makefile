@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 486516 2018-12-03 12:50:58Z linimon $
 
 PORTNAME=	vdr-plugin-xineliboutput
 PORTVERSION=	1.0.90s20120511
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libxine.so:multimedia/libxine \
 		libvdpau.so:multimedia/libvdpau
 
 PATCH_STRIP=	-p1
-USES=		pkgconfig tar:bzip2
+USES=		compiler:c++11-lang pkgconfig tar:bzip2
 USE_XORG=	xrandr xrender
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--cc="${CC}" --cxx="${CXX}" --add-cflags=-I${VDRDIR}

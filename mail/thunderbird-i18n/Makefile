@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/thunderbird-i18n/Makefile 486299 2018-11-30 20:39:51Z cmt $
+# $FreeBSD: head/mail/thunderbird-i18n/Makefile 486765 2018-12-06 15:50:59Z cmt $
 
 PORTNAME=	thunderbird-i18n
-PORTVERSION=	60.3.2
+PORTVERSION=	60.3.3
 CATEGORIES=	mail news net-im
 MASTER_SITES=	MOZILLA/${PORTNAME:S|-i18n||}/releases/${DISTVERSION}/linux-x86_64/xpi \
 		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build2/linux-x86_64/xpi

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 486399 2018-12-02 09:41:44Z pi $
+# $FreeBSD: head/devel/Makefile 487086 2018-12-09 20:42:40Z swills $
 #
 
     COMMENT = Development utilities
@@ -2198,6 +2198,7 @@
     SUBDIR += p5-Clone-More
     SUBDIR += p5-Clone-PP
     SUBDIR += p5-Code-Perl
+    SUBDIR += p5-Color-ANSI-Util
     SUBDIR += p5-Commandable
     SUBDIR += p5-Commands-Guarded
     SUBDIR += p5-CommitBit
@@ -2270,6 +2271,7 @@
     SUBDIR += p5-Data-Diver
     SUBDIR += p5-Data-Domain
     SUBDIR += p5-Data-Dump
+    SUBDIR += p5-Data-Dump-Color
     SUBDIR += p5-Data-Dump-Streamer
     SUBDIR += p5-Data-DumpXML
     SUBDIR += p5-Data-Dumper
@@ -4146,16 +4148,6 @@
     SUBDIR += php56-sysvsem
     SUBDIR += php56-sysvshm
     SUBDIR += php56-tokenizer
-    SUBDIR += php70-gettext
-    SUBDIR += php70-intl
-    SUBDIR += php70-json
-    SUBDIR += php70-pcntl
-    SUBDIR += php70-readline
-    SUBDIR += php70-shmop
-    SUBDIR += php70-sysvmsg
-    SUBDIR += php70-sysvsem
-    SUBDIR += php70-sysvshm
-    SUBDIR += php70-tokenizer
     SUBDIR += php71-gettext
     SUBDIR += php71-intl
     SUBDIR += php71-json
@@ -4209,6 +4201,7 @@
     SUBDIR += plasma5-plasma-sdk
     SUBDIR += pmccabe
     SUBDIR += pmd
+    SUBDIR += pmdk
     SUBDIR += poco
     SUBDIR += poco-ssl
     SUBDIR += popt
@@ -4664,13 +4657,13 @@
     SUBDIR += py-initgroups
     SUBDIR += py-instant
     SUBDIR += py-intbitset
-    SUBDIR += py-interface
     SUBDIR += py-intervaltree
     SUBDIR += py-invoke
     SUBDIR += py-ioflo
     SUBDIR += py-ipaddr
     SUBDIR += py-ipdb
     SUBDIR += py-ipykernel
+    SUBDIR += py-ipykernel5
     SUBDIR += py-ipyparallel
     SUBDIR += py-ipython_genutils
     SUBDIR += py-ipywidgets
@@ -4904,6 +4897,7 @@
     SUBDIR += py-prettytable
     SUBDIR += py-prioritized_methods
     SUBDIR += py-prompt_toolkit
+    SUBDIR += py-prompt_toolkit2
     SUBDIR += py-protobuf
     SUBDIR += py-protocols
     SUBDIR += py-ptable
@@ -4913,6 +4907,7 @@
     SUBDIR += py-pudb
     SUBDIR += py-py
     SUBDIR += py-py-ubjson
+    SUBDIR += py-py_interface
     SUBDIR += py-pyasn1
     SUBDIR += py-pyasn1-modules
     SUBDIR += py-pybind11
@@ -5233,6 +5228,7 @@
     SUBDIR += py-virtualenvwrapper
     SUBDIR += py-visitor
     SUBDIR += py-voluptuous
+    SUBDIR += py-vulture
     SUBDIR += py-warlock
     SUBDIR += py-watchdog
     SUBDIR += py-wcwidth
@@ -5879,6 +5875,7 @@
     SUBDIR += rubygem-omniauth_crowd22
     SUBDIR += rubygem-open3_backport
     SUBDIR += rubygem-open4
+    SUBDIR += rubygem-opt_parse_validator
     SUBDIR += rubygem-optimist
     SUBDIR += rubygem-orm_adapter
     SUBDIR += rubygem-os
@@ -6310,6 +6307,7 @@
     SUBDIR += thrift-c_glib
     SUBDIR += thrift-cpp
     SUBDIR += thunar-vcs-plugin
+    SUBDIR += ticcutils
     SUBDIR += tig
     SUBDIR += tigcc
     SUBDIR += tijmp
@@ -6425,7 +6423,6 @@
     SUBDIR += zookeeper
     SUBDIR += zpu-binutils
     SUBDIR += zpu-gcc
-    SUBDIR += ztcl
     SUBDIR += zthread
     SUBDIR += zziplib
 

@@ -1,10 +1,10 @@
 # Created by: Sutra Zhou <zhoushuqun@gmail.com>
-# $FreeBSD: head/www/mod_auth_openid/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_auth_openid/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	mod_auth_openid
 PORTVERSION=	0.8
-PORTREVISION=	1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 
@@ -13,8 +13,6 @@ COMMENT=	Authentication module for the Apache 2 webserver with OpenID
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	Does not build
 
 LIB_DEPENDS=	libopkele.so:devel/libopkele \
 		libsqlite3.so:databases/sqlite3

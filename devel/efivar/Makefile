@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/devel/efivar/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/efivar/Makefile 486797 2018-12-06 20:33:03Z sunpoet $
 
 PORTNAME=	efivar
 PORTVERSION=	0.15
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libpopt.so:devel/popt
 USES=		gmake localbase pkgconfig
 USE_GCC=	yes
 USE_GITHUB=	yes
-GH_ACCOUNT=	rhinstaller
+GH_ACCOUNT=	rhboot
 USE_LDCONFIG=	yes
 
 .include <bsd.port.pre.mk>

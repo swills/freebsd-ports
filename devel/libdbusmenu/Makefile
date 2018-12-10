@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/libdbusmenu/Makefile 440087 2017-05-04 05:23:46Z tcberner $
+# $FreeBSD: head/devel/libdbusmenu/Makefile 486809 2018-12-06 23:40:15Z linimon $
 
 PORTNAME=	libdbusmenu
 PORTVERSION=	16.04.0
@@ -22,7 +22,8 @@ BUILD_DEPENDS=	vapigen:lang/vala \
 LIB_DEPENDS=	libjson-glib-1.0.so:devel/json-glib
 
 GNU_CONFIGURE=	yes
-USES=		gmake libtool pathfix pkgconfig python:run shebangfix
+USES=		compiler gmake gnome libtool pathfix pkgconfig python:run \
+		shebangfix
 USE_GNOME=	gnomedocutils:build glib20 intltool intlhack libxslt \
 		introspection:build gtk30
 USE_XORG=	x11
@@ -43,4 +44,10 @@ CONFIGURE_ARGS=	--disable-static \
 	--enable-vala \
 	--with-gtk=3
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${CHOSEN_COMPILER_TYPE} == gcc
+CFLAGS+=	-Wno-unused-value
+.endif
+
+.include <bsd.port.post.mk>

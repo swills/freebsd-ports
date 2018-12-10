@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/sysutils/rubygem-chef-api/Makefile 463511 2018-03-03 16:31:26Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef-api/Makefile 486716 2018-12-05 18:50:20Z sunpoet $
 
 PORTNAME=	chef-api
-PORTVERSION=	0.8.0
+PORTVERSION=	0.9.0
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 
@@ -12,10 +12,12 @@ COMMENT=	Leightweight Chef API client
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-logify>=0.1:sysutils/rubygem-logify
+RUN_DEPENDS=	rubygem-logify>=0.1:sysutils/rubygem-logify \
+		rubygem-mime-types>=0:misc/rubygem-mime-types
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/ports-mgmt/porttree/Makefile 486485 2018-12-02 21:24:14Z swills $
+# $FreeBSD: head/ports-mgmt/porttree/Makefile 486613 2018-12-04 17:07:37Z swills $
 
 PORTNAME=	porttree
-PORTVERSION=	0.5.r${SVN_REV}
+PORTVERSION=	0.6.r${SVN_REV}
 CATEGORIES=	ports-mgmt python
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -21,7 +21,7 @@ FETCH_DEPENDS+=	svn:devel/subversion
 .endif
 
 SVNROOT?=	https://svn.code.sf.net/p/porttree/code/trunk
-SVN_REV=	66
+SVN_REV=	67
 NO_BUILD=	yes
 PLIST_FILES=	bin/porttree man/man1/porttree.1.gz
 NO_ARCH=	yes

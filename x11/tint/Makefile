@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/tint/Makefile 477185 2018-08-14 16:48:15Z swills $
+# $FreeBSD: head/x11/tint/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	tint2
 PORTVERSION=	16.6
@@ -9,8 +9,6 @@ COMMENT=	Lightweight freedesktop-compliant panel/taskbar/systray/clock
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to build: area.h: redefinition of typedef 'Area'
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \

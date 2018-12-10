@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/archivers/pecl-phk/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/archivers/pecl-phk/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	phk
 PORTVERSION=	3.0.1
@@ -16,7 +16,7 @@ LICENSE=	PHP301
 
 USES=		php:pecl
 USE_PHP=	hash:build
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CONFIGURE_ARGS=	--enable-phk
 

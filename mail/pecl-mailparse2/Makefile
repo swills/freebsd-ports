@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/mail/pecl-mailparse2/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/mail/pecl-mailparse2/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	mailparse
 PORTVERSION=	2.1.6
@@ -16,7 +16,7 @@ LICENSE=	PHP202
 
 USES=		php:pecl
 USE_PHP=	mbstring:build
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 PORTSCOUT=	limit:^2.*
 

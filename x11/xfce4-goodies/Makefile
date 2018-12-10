@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/x11/xfce4-goodies/Makefile 472679 2018-06-18 08:48:54Z madpilot $
+# $FreeBSD: head/x11/xfce4-goodies/Makefile 486928 2018-12-08 09:23:57Z antoine $
 
 PORTNAME=	xfce4-goodies
 PORTVERSION=	4.12
@@ -142,7 +142,7 @@ VOLUMEDPULSE_DESC=		Volume management daemon for Xfce using PulseAudio
 
 BSDCPUFREQ_RUN_DEPENDS=		xfce4-bsdcpufreq-plugin>=0:sysutils/xfce4-bsdcpufreq-plugin
 EQUAKE_RUN_DEPENDS=		xfce4-equake-plugin>=0:science/xfce4-equake-plugin
-MENULIBRE_RUN_DEPENDS=		py36-menulibre>=0:x11/menulibre
+MENULIBRE_RUN_DEPENDS=		py${PYTHON3_DEFAULT:S/.//}-menulibre>=0:x11/menulibre
 MIXER_RUN_DEPENDS=		xfce4-mixer>=0:audio/xfce4-mixer
 PRINT_RUN_DEPENDS=		xfce4-print>=0:print/xfce4-print
 THEMES_RUN_DEPENDS=		xfce4-wm-themes>=0:misc/xfce4-wm-themes

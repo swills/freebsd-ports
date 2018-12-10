@@ -1,5 +1,5 @@
 # Created by: Larry Rosenman <ler@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-xdiff/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/textproc/pecl-xdiff/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	xdiff
 PORTVERSION=	1.5.2
@@ -17,7 +17,7 @@ LICENSE=	PHP301
 LIB_DEPENDS=	libxdiff.so:textproc/libxdiff
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 LDFLAGS+=	-L${LOCALBASE}/lib
 

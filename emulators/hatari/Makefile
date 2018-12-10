@@ -1,12 +1,12 @@
 # Created by: Michael Neumann <mneumann@ntecs.de>
-# $FreeBSD: head/emulators/hatari/Makefile 484924 2018-11-14 14:01:50Z egypcio $
+# $FreeBSD: head/emulators/hatari/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	hatari
 PORTVERSION=	2.1.0
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.tuxfamily.org/hatari/${PORTVERSION}/
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Atari ST emulator
 
 LICENSE=	GPLv2+

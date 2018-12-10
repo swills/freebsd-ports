@@ -1,5 +1,5 @@
 # Created by: Tim Bishop <tim@bishnet.net>
-# $FreeBSD: head/sysutils/p5-Sys-Hostname-Long/Makefile 387934 2015-05-30 12:25:20Z amdmi3 $
+# $FreeBSD: head/sysutils/p5-Sys-Hostname-Long/Makefile 486744 2018-12-06 09:01:31Z amdmi3 $
 
 PORTNAME=	Sys-Hostname-Long
 PORTVERSION=	1.5
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tdb@FreeBSD.org
 COMMENT=	Try every conceivable way to get full hostname
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	testall.pl

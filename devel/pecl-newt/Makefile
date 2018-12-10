@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pecl-newt/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-newt/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	newt
 PORTVERSION=	1.2.9
@@ -16,7 +16,7 @@ LICENSE=	PHP301
 LIB_DEPENDS=	libnewt.so:devel/newt
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 post-patch:
 	@${REINPLACE_CMD} -e '/SEARCH_PATH/ s,=",="${LOCALBASE} ${PREFIX} ,' \

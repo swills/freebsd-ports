@@ -1,8 +1,8 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/net/grilo/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/net/grilo/Makefile 487053 2018-12-09 14:59:23Z kwm $
 
 PORTNAME=	grilo
-PORTVERSION=	0.3.4
+PORTVERSION=	0.3.7
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 
@@ -17,21 +17,17 @@ LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 		liboauth.so:net/liboauth \
 		libtotem-plparser.so:multimedia/totem-pl-parser
 
-USES=		gettext gmake gnome libtool localbase pathfix pkgconfig tar:xz
+USES=		gettext gnome localbase meson pathfix pkgconfig \
+		python:3.4+,build tar:xz
 USE_LDCONFIG=	yes
 USE_GNOME=	glib20 intlhack introspection:build libxml2
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--enable-vala -disable-debug
-INSTALL_TARGET=	install-strip
-
-#  --enable-debug include debug symbols
-CONFIGURE_ARGS+=--enable-tests #          build unit tests
+BINARY_ALIAS=	python=${PYTHON_VERSION}
 
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	UI
 
 UI_DESC=	Enable testing UI
-UI_CONFIGURE_ENABLE=test-ui
+UI_MESON_TRUE=	enable-test-ui
 UI_USE=		GNOME=cairo,gdkpixbuf2,gtk30
 
 .include <bsd.port.mk>

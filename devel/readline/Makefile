@@ -1,9 +1,8 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/devel/readline/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/devel/readline/Makefile 486528 2018-12-03 18:53:51Z sunpoet $
 
 PORTNAME=	readline
 PORTVERSION=	7.0.${PATCHLEVEL}
-PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}
@@ -31,7 +30,7 @@ CPE_VENDOR=	gnu
 CPE_VERSION=	${PORTVERSION:R}
 CPE_UPDATE=	${PATCHLEVEL}
 
-PATCHES=	1 2 3
+PATCHES=	1 2 3 4 5
 PATCHLEVEL=	${PATCHES:O:[-1]}
 .for patch in ${PATCHES}
 PATCHFILES+=	${PORTNAME}${PORTVERSION:R:S|.||}-${patch:S|^|00|:C|.*(...)$|\1|}

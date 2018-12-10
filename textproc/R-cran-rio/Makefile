@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/R-cran-rio/Makefile 482908 2018-10-24 14:10:56Z dbn $
+# $FreeBSD: head/textproc/R-cran-rio/Makefile 487150 2018-12-10 10:59:03Z dbn $
 
 PORTNAME=	rio
-DISTVERSION=	0.5.10
+DISTVERSION=	0.5.16
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

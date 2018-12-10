@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/py-google-api-python-client/Makefile 479771 2018-09-14 12:16:48Z mat $
+# $FreeBSD: head/www/py-google-api-python-client/Makefile 487148 2018-12-10 10:40:58Z nivit $
 
 PORTNAME=	google-api-python-client
-PORTVERSION=	1.7.4
-PORTREVISION=	1
+PORTVERSION=	1.7.5
+PORTREVISION=	0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,6 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}httplib2>=0.9.2:www/py-httplib2@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DJANGO GAE WEBTEST

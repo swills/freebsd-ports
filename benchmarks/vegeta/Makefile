@@ -1,11 +1,11 @@
-# $FreeBSD: head/benchmarks/vegeta/Makefile 484433 2018-11-08 07:41:34Z egypcio $
+# $FreeBSD: head/benchmarks/vegeta/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	vegeta
 DISTVERSIONPREFIX=	cli/v
 DISTVERSION=	12.1.0
 CATEGORIES=	benchmarks www
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	HTTP load testing tool and library
 
 LICENSE=	MIT

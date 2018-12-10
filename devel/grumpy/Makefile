@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/grumpy/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/devel/grumpy/Makefile 486904 2018-12-08 00:37:31Z swills $
 
 PORTNAME=	grumpy
-PORTVERSION=	0.0.0.2017020301
+PORTVERSION=	0.0.0.2017112101
 CATEGORIES=	devel
 
 MAINTAINER=	swills@FreeBSD.org
@@ -12,7 +12,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
-GH_TAGNAME=	348f038
+GH_TAGNAME=	3ec8795
 
 USES=		gmake python:2.7 shebangfix
 SHEBANG_FILES=	tools/benchcmp tools/coverparse tools/diffrange tools/grumpc

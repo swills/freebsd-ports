@@ -1,8 +1,8 @@
 # Created by: Sergey Kozlov <sergey.kozlov@intel.com>
-# $FreeBSD: head/sysutils/intel-nvmupdate/Makefile 454345 2017-11-16 21:54:19Z sbruno $
+# $FreeBSD: head/sysutils/intel-nvmupdate/Makefile 487178 2018-12-10 15:16:16Z pi $
 
 PORTNAME=	nvmupdate
-DISTVERSION=	6_01
+DISTVERSION=	6_80
 CATEGORIES=	sysutils
 MASTER_SITES=	https://downloadmirror.intel.com/${MASTER_SITE_SUBDIR}/ \
 		http://downloadmirror.intel.com/${MASTER_SITE_SUBDIR}/

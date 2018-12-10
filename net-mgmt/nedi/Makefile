@@ -1,5 +1,5 @@
 # Created by: Cristian KLEIN <cristi@net.utcluj.ro>
-# $FreeBSD: head/net-mgmt/nedi/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/net-mgmt/nedi/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	nedi
 DISTVERSION=	1.0.w
@@ -15,7 +15,7 @@ EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 RUN_DEPENDS=	p5-Net-SNMP>=0:net-mgmt/p5-Net-SNMP \
 		p5-Net-Telnet-Cisco>=0:net-mgmt/p5-Telnet-Cisco \

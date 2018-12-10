@@ -1,8 +1,8 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-Data-Types/Makefile 485448 2018-11-20 17:47:31Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Types/Makefile 486709 2018-12-05 18:49:21Z sunpoet $
 
 PORTNAME=	Data-Types
-PORTVERSION=	0.15
+PORTVERSION=	0.16
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

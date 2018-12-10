@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/cqrlog/Makefile 477436 2018-08-17 17:00:55Z shurd $
+# $FreeBSD: head/comms/cqrlog/Makefile 486863 2018-12-07 13:45:14Z db $
 
 PORTNAME=	cqrlog
 PORTVERSION=	2.3.0
@@ -19,6 +19,7 @@ USES=		fpc lazarus:flavors shebangfix ssl:run dos2unix mysql
 USE_GITHUB=	yes
 GH_ACCOUNT=	ok2cqr
 
+LLD_UNSAFE=	yes
 SHEBANG_FILES=	tools/cqrlog-apparmor-fix \
 		voice_keyer/voice_keyer.sh
 USE_FPC=	cairo fcl-base chm fcl-db fcl-image fcl-json fcl-net fcl-web \

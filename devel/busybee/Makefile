@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/busybee/Makefile 480448 2018-09-23 01:39:35Z swills $
+# $FreeBSD: head/devel/busybee/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=		busybee
 PORTVERSION=		0.7.0
 DISTVERSIONPREFIX=	releases/
 CATEGORIES=		devel
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	High-performance messaging layer
 
 LICENSE=	BSD3CLAUSE

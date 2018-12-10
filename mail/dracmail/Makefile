@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/mail/dracmail/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/mail/dracmail/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	dracmail
 PORTVERSION=	0.1.2
@@ -14,7 +14,7 @@ COMMENT=	DracMail is a webmail interface built using PHP
 DEPRECATED=	Works only with EOL php 5.6
 EXPIRATION_DATE=	2018-12-30
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 USE_PHP+=	mysql imap dom tidy iconv mbstring
 USE_MYSQL=	yes
 NO_BUILD=	yes

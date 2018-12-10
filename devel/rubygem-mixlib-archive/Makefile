@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-mixlib-archive/Makefile 479712 2018-09-13 21:53:35Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mixlib-archive/Makefile 486893 2018-12-07 21:34:31Z sunpoet $
 
 PORTNAME=	mixlib-archive
-PORTVERSION=	0.4.16
+PORTVERSION=	0.4.18
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-mixlib-log>=0:devel/rubygem-mixlib-log
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

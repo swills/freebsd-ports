@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/latte/Makefile 483624 2018-10-31 23:05:37Z yuri $
+# $FreeBSD: head/science/latte/Makefile 486735 2018-12-06 05:57:36Z yuri $
 
 PORTNAME=	latte
 DISTVERSIONPREFIX=	v
@@ -40,5 +40,7 @@ MPI_PLIST_FILES=	bin/LATTE_MPI_DOUBLE
 MPI_PLIST_FILES_OFF=	bin/LATTE_DOUBLE
 
 PLIST_FILES=	lib/liblatte.so
+
+CONFLICTS_INSTALL=	latte-integrale
 
 .include <bsd.port.mk>

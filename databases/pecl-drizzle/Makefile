@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/databases/pecl-drizzle/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/pecl-drizzle/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	drizzle
 PORTVERSION=	0.4.2
@@ -17,7 +17,7 @@ LICENSE=	PHP301
 LIB_DEPENDS=	libdrizzle.so:databases/libdrizzle
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

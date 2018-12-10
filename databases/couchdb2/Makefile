@@ -1,9 +1,8 @@
 # Created by: Dave Cottlehuber <dch@FreeBSD.org>
-# $FreeBSD: head/databases/couchdb2/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/databases/couchdb2/Makefile 487151 2018-12-10 11:01:34Z dch $
 
 PORTNAME=	couchdb2
-DISTVERSION=	2.2.0
-PORTREVISION=	1
+DISTVERSION=	2.3.0
 CATEGORIES=	databases
 MASTER_SITES=	APACHE/couchdb/source/${DISTVERSION}
 DISTNAME=	apache-couchdb-${DISTVERSION}
@@ -38,7 +37,7 @@ CONFIGURE_ARGS=	--skip-deps --user ${USERS} --disable-docs --disable-fauxton
 ALL_TARGET=	release
 
 OPTIONS_DEFINE=	DOCS
-OPTIONS_DEFAULT=OTP20
+OPTIONS_DEFAULT=OTP21
 OPTIONS_SUB=	yes
 
 OPTIONS_SINGLE=	ENV

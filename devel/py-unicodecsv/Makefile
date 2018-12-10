@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-unicodecsv/Makefile 423850 2016-10-12 10:21:17Z novel $
+# $FreeBSD: head/devel/py-unicodecsv/Makefile 486655 2018-12-05 09:09:51Z amdmi3 $
 
 PORTNAME=	unicodecsv
 PORTVERSION=	0.14.1
@@ -10,7 +10,10 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Drop-in replacement for Python 2.7 csv module
 
+LICENSE=	BSD
+
 USES=		python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

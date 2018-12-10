@@ -1,5 +1,5 @@
 # Created by: Piotr Rybicki <meritus@innervision.pl>
-# $FreeBSD: head/www/revive-adserver/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/www/revive-adserver/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	revive-adserver
 PORTVERSION=	3.0.5
@@ -27,7 +27,7 @@ PLIST_SUB+=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 .if !defined(WITHOUT_PHP_DEPENDS)
 USES+=		php
 USE_PHP=	xml pcre zlib mysql pgsql ftp
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 .endif
 
 do-install:

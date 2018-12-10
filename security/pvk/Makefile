@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/security/pvk/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/security/pvk/Makefile 487187 2018-12-10 16:50:08Z rene $
 
 PORTNAME=	pvk
 PORTVERSION=	20070406

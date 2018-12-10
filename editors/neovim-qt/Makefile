@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/neovim-qt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/editors/neovim-qt/Makefile 486616 2018-12-04 17:25:47Z swills $
 
 PORTNAME=	neovim-qt
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.2.8
+DISTVERSION=	0.2.10
 CATEGORIES=	editors
 
 MAINTAINER=	chuck@tuffli.net

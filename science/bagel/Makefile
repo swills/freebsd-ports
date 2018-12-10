@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/bagel/Makefile 484173 2018-11-05 06:54:31Z jbeich $
+# $FreeBSD: head/science/bagel/Makefile 486828 2018-12-07 07:44:46Z yuri $
 
 PORTNAME=	bagel
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.0
+DISTVERSION=	1.2.1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -47,5 +47,7 @@ SCALAPACK_IMPLIES=		MPI
 SMITH_DESC=			Compile SMITH generated code
 SMITH_CONFIGURE_ENABLE=		smith
 SMITH_IMPLIES=			MPI
+
+TEST_TARGET=			check # tests fail to build: https://github.com/nubakery/bagel/issues/145
 
 .include <bsd.port.mk>

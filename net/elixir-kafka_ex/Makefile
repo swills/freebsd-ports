@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/elixir-kafka_ex/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/elixir-kafka_ex/Makefile 486946 2018-12-08 13:04:01Z vanilla $
 
 PORTNAME=	kafka_ex
-PORTVERSION=	0.6.4
+PORTVERSION=	0.9.0
 CATEGORIES=	net
 PKGNAMEPREFIX=	elixir-
 

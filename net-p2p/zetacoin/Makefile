@@ -1,10 +1,10 @@
 # Created by: Daniel Morante <daniel@morante.net>
-# $FreeBSD: head/net-p2p/zetacoin/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/net-p2p/zetacoin/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	zetacoin
 PORTVERSION=	0.11.2.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	daniel@morante.net
@@ -14,7 +14,8 @@ LICENSE=	MIT
 
 LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs
 
-USES+=		autoreconf compiler:c++0x gmake libtool pkgconfig:build ssl
+USES+=		autoreconf compiler:c++11-lang gmake libtool pkgconfig:build ssl
+USE_CXXSTD=	c++11
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
 

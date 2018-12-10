@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 485700 2018-11-23 19:43:44Z swills $
+# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 486517 2018-12-03 12:53:45Z linimon $
 
 PORTNAME=	google-compute-engine-oslogin
 DISTVERSION=	1.3.1
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 RUN_DEPENDS=	gsed:textproc/gsed \
 		${LOCALBASE}/lib/pam_mkhomedir.so:security/pam_mkhomedir
 
-USES=		gmake localbase:ldflags
+USES=		compiler:c++11-lang gmake localbase:ldflags
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	GoogleCloudPlatform

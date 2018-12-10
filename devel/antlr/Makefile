@@ -1,5 +1,5 @@
 # Created by: Geoffrey Mainland <mainland@apeiron.net>
-# $FreeBSD: head/devel/antlr/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/antlr/Makefile 486590 2018-12-04 09:31:25Z amdmi3 $
 
 PORTNAME=	antlr
 PORTVERSION=	2.7.7
@@ -8,6 +8,9 @@ MASTER_SITES=	http://www.antlr2.org/download/
 
 MAINTAINER=	makc@FreeBSD.org
 COMMENT=	ANother Tool for Language Recognition
+
+LICENSE=	PD
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 CONFLICTS=	pccts-[0-9]*
 

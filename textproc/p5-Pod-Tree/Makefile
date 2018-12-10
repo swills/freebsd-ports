@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 486450 2018-12-02 15:38:22Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 486710 2018-12-05 18:49:30Z sunpoet $
 
 PORTNAME=	Pod-Tree
-PORTVERSION=	1.27
+PORTVERSION=	1.29
 CATEGORIES=	textproc devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

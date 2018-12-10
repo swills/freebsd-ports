@@ -1,5 +1,5 @@
 # Created by: arved@FreeBSD.org
-# $FreeBSD: head/x11/kdelibs-kde4/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/x11/kdelibs-kde4/Makefile 487048 2018-12-09 14:09:47Z adridg $
 
 PORTNAME=	kdelibs
 PORTVERSION=	${KDE4_KDELIBS_VERSION}
@@ -12,6 +12,9 @@ COMMENT=	Base set of libraries needed by KDE programs
 
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
+
+BROKEN_SSL=	openssl111
+BROKEN_SSL_REASON_openssl111=	error: member access into incomplete type 'RSA' (aka 'rsa_st')
 
 LIB_DEPENDS=	libImath.so:graphics/ilmbase \
 		libjasper.so:graphics/jasper \

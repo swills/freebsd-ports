@@ -1,5 +1,5 @@
 # Created by: Bill Moran <wmoran@collaborativefusion.com>
-# $FreeBSD: head/security/pecl-crack/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/security/pecl-crack/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	crack
 PORTVERSION=	0.4
@@ -18,7 +18,7 @@ LICENSE=	PHP30
 LIB_DEPENDS=	libcrack.so:security/cracklib
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 EXTRACT_AFTER_ARGS=--no-same-permissions --no-same-owner --exclude libcrack
 CONFIGURE_ARGS=	--with-crack=${LOCALBASE}

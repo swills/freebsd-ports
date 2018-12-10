@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/graphics/gauche-gl/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/graphics/gauche-gl/Makefile 486757 2018-12-06 13:51:07Z linimon $
 
 PORTNAME=	gl
 PORTVERSION=	0.6
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	gosh:lang/gauche
 RUN_DEPENDS=	gosh:lang/gauche
 
-USES=		localbase makeinfo tar:tgz
+USES=		gl localbase makeinfo tar:tgz
 USE_CSTD=	gnu99
 USE_XORG=	ice sm x11 xext xmu xi
 USE_GL=		gl glu glut

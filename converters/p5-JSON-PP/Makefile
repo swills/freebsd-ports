@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-PP/Makefile 457228 2017-12-25 13:53:34Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-PP/Makefile 486782 2018-12-06 20:30:51Z sunpoet $
 
 PORTNAME=	JSON-PP
 PORTVERSION=	2.97001
@@ -14,9 +14,12 @@ COMMENT=	JSON::XS compatible pure-Perl module
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-NO_ARCH=	yes
-USE_PERL5=	configure
+PORTSCOUT=	limit:^[0-9\.]*$$
+
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 pre-patch:
 	@${MV} ${WRKSRC}/bin/json_pp ${WRKSRC}/bin/p5json_pp

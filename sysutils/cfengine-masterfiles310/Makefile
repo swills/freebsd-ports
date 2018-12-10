@@ -1,5 +1,5 @@
 # Created by: cy@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine-masterfiles310/Makefile 482121 2018-10-14 22:11:32Z dvl $
+# $FreeBSD: head/sysutils/cfengine-masterfiles310/Makefile 486864 2018-12-07 14:36:45Z amdmi3 $
 
 PORTNAME=	cfengine-masterfiles
 PORTVERSION=	3.10.3
@@ -35,6 +35,8 @@ USES=		cpe gmake python:build shebangfix
 HAS_CONFIGURE=	yes
 EXAMPLESDIR=	${PREFIX}/share/examples/cfengine-masterfiles
 CONFIGURE_ARGS=	--prefix=${EXAMPLESDIR}
-SHEBANG_FILES=	modules/packages/yum
+SHEBANG_FILES=	modules/packages/yum \
+		modules/packages/zypper
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

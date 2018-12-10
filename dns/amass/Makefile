@@ -1,8 +1,7 @@
-# $FreeBSD: head/dns/amass/Makefile 485351 2018-11-19 18:24:37Z yuri $
+# $FreeBSD: head/dns/amass/Makefile 486917 2018-12-08 08:07:23Z yuri $
 
 PORTNAME=	amass
-DISTVERSION=	2.8.3-4
-DISTVERSIONSUFFIX=	-g935e6d5
+DISTVERSION=	2.8.5
 CATEGORIES=	dns
 
 MAINTAINER=	yuri@FreeBSD.org

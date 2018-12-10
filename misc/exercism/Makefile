@@ -1,9 +1,8 @@
-# Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/misc/exercism/Makefile 482963 2018-10-25 09:48:16Z 0mp $
+# $FreeBSD: head/misc/exercism/Makefile 486637 2018-12-04 23:46:20Z swills $
 
 PORTNAME=	exercism
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.0.9
+DISTVERSION=	3.0.11
 CATEGORIES=	misc
 
 MAINTAINER=	swills@FreeBSD.org

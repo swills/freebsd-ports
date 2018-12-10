@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 486474 2018-12-02 18:08:23Z yuri $
+# $FreeBSD: head/misc/Makefile 486677 2018-12-05 15:46:02Z rene $
 #
 
     COMMENT = Miscellaneous utilities
@@ -400,7 +400,6 @@
     SUBDIR += pecl-timezonedb
     SUBDIR += pfm
     SUBDIR += php56-calendar
-    SUBDIR += php70-calendar
     SUBDIR += php71-calendar
     SUBDIR += php72-calendar
     SUBDIR += php73-calendar

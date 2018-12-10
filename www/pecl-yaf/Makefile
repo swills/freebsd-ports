@@ -1,8 +1,8 @@
 # Created by: johnpupu <johnpupu@gmail.com>
-# $FreeBSD: head/www/pecl-yaf/Makefile 485511 2018-11-21 12:41:57Z joneum $
+# $FreeBSD: head/www/pecl-yaf/Makefile 487194 2018-12-10 17:32:15Z joneum $
 
 PORTNAME=	yaf
-DISTVERSION=	3.0.6
+DISTVERSION=	3.0.7
 CATEGORIES=	www
 
 MAINTAINER=	joneum@freeBSD.org

@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/astro/libosmpbf/Makefile 473276 2018-06-24 21:11:14Z sunpoet $
+# $FreeBSD: head/astro/libosmpbf/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	libosmpbf
 PORTVERSION=	1.3.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	astro geography devel
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -21,6 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	scrosby
 GH_PROJECT=	OSM-binary
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
+USE_CXXSTD=	c++11
 
 .include <bsd.port.mk>

@@ -1,11 +1,12 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/firefox-i18n/Makefile 485081 2018-11-16 15:09:56Z cmt $
+# $FreeBSD: head/www/firefox-i18n/Makefile 486823 2018-12-07 04:49:40Z jbeich $
 
 PORTNAME=	firefox-i18n
-PORTVERSION=	63.0.3
+PORTVERSION=	64.0
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	MOZILLA/${PORTNAME:S|-i18n||}/releases/${DISTVERSION}/linux-i686/xpi \
-		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build4/linux-i686/xpi
+		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build3/linux-i686/xpi
 PKGNAMEPREFIX=
 DISTFILES=	${FIREFOX_I18N_:S/$/.xpi/}
 DIST_SUBDIR=	xpi/${DISTNAME}
@@ -15,7 +16,7 @@ COMMENT=	Localized interface for Firefox
 
 EXTRACT_DEPENDS=	zip:archivers/zip
 
-USES=		zip:infozip gecko:firefox,63,build
+USES=		zip:infozip gecko:firefox,64,build
 USE_XPI=	firefox
 
 NO_ARCH=	yes

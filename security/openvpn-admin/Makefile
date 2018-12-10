@@ -1,5 +1,5 @@
 # Created by: Remington Lang <MrL0Lz@gmail.com>
-# $FreeBSD: head/security/openvpn-admin/Makefile 478828 2018-09-02 22:54:51Z swills $
+# $FreeBSD: head/security/openvpn-admin/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	openvpn-admin
 PORTVERSION=	1.9.4
@@ -8,7 +8,7 @@ PORTREVISION=	6
 CATEGORIES=	security gnome
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/release-${PORTVERSION}
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	GUI frontend to openvpn
 
 LICENSE=	LGPL21+

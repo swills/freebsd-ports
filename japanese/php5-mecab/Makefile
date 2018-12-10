@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/php5-mecab/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/japanese/php5-mecab/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	mecab
 PORTVERSION=	0.5.0
@@ -17,7 +17,7 @@ EXPIRATION_DATE=	2018-12-30
 LIB_DEPENDS=	libmecab.so:japanese/mecab
 
 USES=		php:ext
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 CONFIGURE_ARGS=	--with-mecab=${LOCALBASE}/bin/mecab-config
 
 .include <bsd.port.pre.mk>

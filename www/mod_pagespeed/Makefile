@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/mod_pagespeed/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/www/mod_pagespeed/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	mod_pagespeed
 PORTVERSION=	1.12.34.2
-PORTREVISION=	15
+PORTREVISION=	16
 PORTEPOCH=	1
 CATEGORIES=	www devel
 MASTER_SITES=	LOCAL/mmokhi:boringssl,chromium_base,chromium_build,googleurl,gflags_arch,gflags_src,libjpeg_turbo_src,yasm_patched,libwebp,modpb64 \

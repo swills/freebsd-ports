@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/irc/libircclient/Makefile 454226 2017-11-15 09:00:09Z amdmi3 $
+# $FreeBSD: head/irc/libircclient/Makefile 487026 2018-12-09 06:39:47Z tobik $
 
 PORTNAME=	libircclient
 PORTVERSION=	1.7
@@ -16,6 +16,7 @@ OPTIONS_DEFINE=	OPENSSL IPV6 EXAMPLES
 OPTIONS_DEFAULT=	OPENSSL
 
 OPENSSL_USES=			ssl
+OPENSSL_CONFIGURE_ENV=		ac_cv_lib_ssl_SSL_library_init=yes
 OPENSSL_CONFIGURE_ENABLE=	openssl
 OPENSSL_LDFLAGS=		-L${OPENSSLLIB}
 OPENSSL_CFLAGS=			-I${OPENSSLINC}

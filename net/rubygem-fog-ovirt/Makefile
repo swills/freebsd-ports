@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 478628 2018-08-31 23:48:04Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 486706 2018-12-05 18:48:59Z sunpoet $
 
 PORTNAME=	fog-ovirt
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -18,8 +18,9 @@ RUN_DEPENDS=	rubygem-fog-core>=0:devel/rubygem-fog-core \
 		rubygem-ovirt-engine-sdk>=4.1.3:net/rubygem-ovirt-engine-sdk \
 		rubygem-rbovirt>=0.1.5:www/rubygem-rbovirt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

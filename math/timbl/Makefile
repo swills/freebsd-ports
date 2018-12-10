@@ -1,23 +1,32 @@
 # Created by: Yuri Victorovich <yuri@tsoft.com>
-# $FreeBSD: head/math/timbl/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/math/timbl/Makefile 486903 2018-12-07 23:51:24Z yuri $
 
 PORTNAME=	timbl
-PORTVERSION=	6.4.2
-PORTREVISION=	2
+DISTVERSIONPREFIX=	v
+DISTVERSION=	6.4.13
 CATEGORIES=	math
-MASTER_SITES=	http://ilk.uvt.nl/downloads/pub/software/
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Tilburg Memory Based Learner
 
-LIB_DEPENDS=	libxml2.so:textproc/libxml2
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
+LIB_DEPENDS=	libomp.so:devel/openmp \
+		libticcutils.so:devel/ticcutils
+
+USES=		autoreconf gmake gnome libtool pathfix pkgconfig
+USE_GITHUB=	yes
+GH_ACCOUNT=	LanguageMachines
 GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
-USES=		gmake libtool pathfix pkgconfig
+CONFIGURE_ARGS=	--disable-static
+USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 
-post-patch:
-	@${REINPLACE_CMD} 's#doc/@PACKAGE@/examples#examples/@PACKAGE@#' ${WRKSRC}/demos/Makefile.in
+INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
+
+PORTDOCS=	*
 
 .include <bsd.port.mk>

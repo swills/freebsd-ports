@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/clementine-player/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	clementine
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.3.1-441
 DISTVERSIONSUFFIX=	-gc01b7bc
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-player
 
@@ -40,6 +40,7 @@ USES=		cmake \
 		gettext-tools \
 		pkgconfig \
 		qt:4 sqlite
+USE_CXXSTD=	c++11
 
 USE_GL=		gl glew glu
 USE_XORG=	x11

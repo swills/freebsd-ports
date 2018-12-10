@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <alex.deiter@gmail.com>
-# $FreeBSD: head/sysutils/openipmi/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/sysutils/openipmi/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	openipmi
 PORTVERSION=	2.0.25
@@ -8,7 +8,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/OpenIPMI%202.0%20Library
 DISTNAME=	OpenIPMI-${PORTVERSION}
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Complex IPMI management software
 
 LICENSE=	GPLv2

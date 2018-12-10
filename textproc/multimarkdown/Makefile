@@ -1,12 +1,12 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/multimarkdown/Makefile 482811 2018-10-23 06:59:48Z egypcio $
+# $FreeBSD: head/textproc/multimarkdown/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	multimarkdown
 DISTVERSION=	6.4.0
 CATEGORIES=	textproc
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Extended Markdown processor with more features, written in C
 
 LICENSE=	BSD3CLAUSE MIT GPLv2+ ZLIB

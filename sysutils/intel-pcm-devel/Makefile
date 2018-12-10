@@ -1,5 +1,5 @@
 # Created by: Adrian Chadd
-# $FreeBSD: head/sysutils/intel-pcm-devel/Makefile 484436 2018-11-08 07:46:29Z egypcio $
+# $FreeBSD: head/sysutils/intel-pcm-devel/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	intel-pcm
 DISTVERSION=	g20181106
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-devel
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Process Count Monitor (PCM) for Intel processors
 
 LICENSE=	BSD3CLAUSE

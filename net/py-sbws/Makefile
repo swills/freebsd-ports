@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-sbws/Makefile 484925 2018-11-14 14:04:02Z egypcio $
+# $FreeBSD: head/net/py-sbws/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=		sbws
 PORTVERSION=		1.0.2
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=		net python
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Tor network bandwidth scanner
 
 LICENSE=	CC0-1.0

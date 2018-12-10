@@ -1,5 +1,5 @@
 # Created by: Conor McDermottroe <ports@mcdermottroe.com>
-# $FreeBSD: head/devel/pecl-xhprof/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-xhprof/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	xhprof
 PORTVERSION=	0.9.4
@@ -18,6 +18,6 @@ WRKSRC_SUBDIR=		extension
 
 USES=		php:pecl
 ONLY_FOR_ARCHS=	i386 amd64
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

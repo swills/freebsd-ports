@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome-session/Makefile 484597 2018-11-10 10:03:06Z kwm $
+# $FreeBSD: head/x11/gnome-session/Makefile 486869 2018-12-07 16:05:57Z linimon $
 
 PORTNAME=	gnome-session
 PORTVERSION=	3.28.1
@@ -23,7 +23,8 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit2 \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gnome localbase:ldflags meson pkgconfig python:3.6+,build tar:xz
+USES=		compiler:c11 gettext gnome localbase:ldflags meson pkgconfig \
+		python:3.6+,build tar:xz
 USE_GNOME=	gnomedesktop3 gtk30
 USE_XORG=	ice sm x11 xcomposite xtrans
 USE_GL=		egl gl glesv2

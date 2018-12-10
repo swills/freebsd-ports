@@ -1,5 +1,5 @@
 # Created by: George Neville-Neil gnn@freebsd.org
-# $FreeBSD: head/sysutils/mbgtools/Makefile 458820 2018-01-12 11:48:59Z pi $
+# $FreeBSD: head/sysutils/mbgtools/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	mbgtools
 DISTVERSION=	fbsd-1.0.0
@@ -14,7 +14,6 @@ LICENSE=	BSD2CLAUSE
 BROKEN_aarch64=		fails to compile: unused variables
 BROKEN_armv6=		fails to compile: implicit declaration of function 'cp15_pmccntr_get' is invalid in C99
 BROKEN_mips64=		fails to compile: unused variables
-BROKEN_powerpc64=	fails to compile: warning: mbg_dbg_data defined but not used
 BROKEN_sparc64=		fails to compile: error in structure definitions
 
 USES=		kmod uidfix

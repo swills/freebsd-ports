@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/misc/gonvert/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/misc/gonvert/Makefile 486684 2018-12-05 16:39:45Z amdmi3 $
 
 PORTNAME=	gonvert
 PORTVERSION=	0.2.38
@@ -10,10 +10,12 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Conversion utility that allows conversion between many units
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/doc/COPYING
 
-USE_GNOME=	pygtk2
 USES=		python:2.7
+USE_GNOME=	pygtk2
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 PORTDOCS=	CHANGELOG FAQ README THANKS
 

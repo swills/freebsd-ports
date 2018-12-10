@@ -1,5 +1,5 @@
 # Created by: Elias Mandouvalos <ocean@mail.gr>
-# $FreeBSD: head/devel/pecl-runkit/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-runkit/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	runkit
 PORTVERSION=	1.0.4
@@ -15,7 +15,7 @@ EXPIRATION_DATE=	2018-12-30
 LICENSE=	PHP30
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CONFIGURE_ARGS=	--enable-runkit=classkit
 

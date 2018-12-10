@@ -1,5 +1,5 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/sysutils/graid5/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/sysutils/graid5/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	graid5
 PORTVERSION=	${MAINVERSION}.${VERSIONDATE}
@@ -10,8 +10,6 @@ MAINTAINER=	lev@FreeBSD.org
 COMMENT=	RAID5 geom class
 
 LICENSE=	BSD2CLAUSE
-
-BROKEN_powerpc64=	fails to compile: pcpu.h: size of array '__assert_0' is negative
 
 NO_PACKAGE=	should be recompiled for a particular FreeBSD kernel
 

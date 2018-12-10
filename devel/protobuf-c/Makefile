@@ -1,8 +1,9 @@
 # Created by: Aaron Hurt <ahurt@anbcs.com>
-# $FreeBSD: head/devel/protobuf-c/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/protobuf-c/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=		protobuf-c
 PORTVERSION=		1.3.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=		devel
 

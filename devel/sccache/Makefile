@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/sccache/Makefile 483581 2018-10-31 14:14:31Z pizzamig $
+# $FreeBSD: head/devel/sccache/Makefile 486770 2018-12-06 17:11:14Z jbeich $
 
 PORTNAME=	sccache
 DISTVERSION=	2.8.0.alpha0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	pizzamig@FreeBSD.org

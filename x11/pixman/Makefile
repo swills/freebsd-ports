@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/pixman/Makefile 451559 2017-10-08 18:57:09Z jbeich $
+# $FreeBSD: head/x11/pixman/Makefile 486511 2018-12-03 10:48:06Z jbeich $
 
 PORTNAME=	pixman
 PORTVERSION=	0.34.0
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
@@ -27,7 +28,8 @@ MAKE_ARGS=      SUBDIRS=pixman
 
 .if ${ARCH} == "armv6" || ${ARCH} == "armv7"
 BUILD_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
-CONFIGURE_ENV+=	CCASFLAGS="${CFLAGS} -no-integrated-as"
+CONFIGURE_ENV+=	CCASFLAGS="${CFLAGS} -B${LOCALBASE}/bin -no-integrated-as"
+LLD_UNSAFE=	yes
 .endif
 
 .if ${ARCH} == "powerpc64" || ${ARCH} == "powerpc"

@@ -1,9 +1,9 @@
 # Created by: Sean Bruno
-# $FreeBSD: head/games/cockatrice/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/cockatrice/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	Cockatrice
 PORTVERSION=	2.6.1.g2018.07.17
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	sbruno@FreeBSD.org

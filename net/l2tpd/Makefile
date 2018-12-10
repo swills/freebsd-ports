@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/l2tpd/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/l2tpd/Makefile 487187 2018-12-10 16:50:08Z rene $
 
 PORTNAME=	l2tpd
 PORTVERSION=	0.69

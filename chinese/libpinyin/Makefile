@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/libpinyin/Makefile 482136 2018-10-15 07:43:30Z wen $
+# $FreeBSD: head/chinese/libpinyin/Makefile 486553 2018-12-03 20:56:07Z linimon $
 
 PORTNAME=	libpinyin
 PORTVERSION=	2.2.0
@@ -11,8 +11,8 @@ COMMENT=	Library to deal with pinyin
 
 LICENSE=	GPLv2
 
+USES=		bdb compiler:c++11-lang gettext gmake libtool pathfix pkgconfig
 USE_GNOME=	glib20
-USES=		bdb gettext gmake libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/regex2dfa/Makefile 482835 2018-10-23 12:32:59Z egypcio $
+# $FreeBSD: head/textproc/regex2dfa/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	regex2dfa
 DISTVERSION=	0.1.6
 PORTREVISION=	1
 CATEGORIES=	textproc
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Command-line utility that converts regular expressions to DFA
 
 LICENSE=	APACHE20

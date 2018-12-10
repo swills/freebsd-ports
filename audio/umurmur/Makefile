@@ -1,5 +1,5 @@
 # Created by: Ayumi Mitsui <ayu@commun.jp>
-# $FreeBSD: head/audio/umurmur/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/audio/umurmur/Makefile 487025 2018-12-09 06:15:39Z tobik $
 
 PORTNAME=	umurmur
 DISTVERSION=	0.2.17
@@ -14,8 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_aarch64=		fails to compile: fatal error: byteswap.h file not found
 BROKEN_armv6=		fails to compile: fatal error: byteswap.h file not found
-BROKEN_SSL=		openssl111
-BROKEN_SSL_REASON_openssl111=	configure: error: could not find libcrypto
 
 LIB_DEPENDS=	libconfig.so:devel/libconfig \
 		libprotobuf-c.so:devel/protobuf-c

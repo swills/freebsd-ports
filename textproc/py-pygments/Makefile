@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pygments/Makefile 480898 2018-09-29 07:34:45Z yuri $
+# $FreeBSD: head/textproc/py-pygments/Makefile 486521 2018-12-03 16:57:49Z nivit $
 
 PORTNAME=	pygments
-PORTVERSION=	2.2.0
+PORTVERSION=	2.3.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,6 +15,7 @@ LICENSE=	BSD2CLAUSE
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>

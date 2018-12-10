@@ -1,5 +1,5 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-newlib/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/psptoolchain-newlib/Makefile 487017 2018-12-09 03:16:52Z swills $
 
 PORTNAME=		newlib
 PORTVERSION=		1.20.0
@@ -23,10 +23,12 @@ BUILD_DEPENDS+=		${LOCALBASE}/${PSP_SDK_STAGE_PREFIX}/sdk/include/pspsdk.h:devel
 
 USES=			gmake makeinfo
 HAS_CONFIGURE=		yes
-CONFIGURE_ENV=		PATH=${LOCALBASE}/${PSP_GCC_STAGE_PREFIX}/bin:${PATH}
+
+# psp-gcc doesn't need -march=... in CFLAGS (e.g. set by CPUTYPE in make.conf); also need -g on psp for some reason
+CONFIGURE_ENV=		PATH=${LOCALBASE}/${PSP_GCC_STAGE_PREFIX}/bin:${PATH} \
+			CFLAGS="${CFLAGS:C/(^|[[:space:]])-march=[^[:space:]]*//g} -g"
 MAKE_ENV=		PATH=${LOCALBASE}/${PSP_GCC_STAGE_PREFIX}/bin:${PATH}
 CONFIGURE_ARGS=		--prefix=${PREFIX} --target="psp"
-MAKE_ARGS+=		CC="${CC}" CFLAGS="${CFLAGS} -g" # Apparently, it doesn't work on the PSP without debug information
 
 # Disable installation of .info files and fix includedir reference.
 post-patch:

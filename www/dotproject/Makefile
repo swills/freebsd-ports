@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/dotproject/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/www/dotproject/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	dotproject
 PORTVERSION=	2.1.8
@@ -14,7 +14,7 @@ EXPIRATION_DATE=	2018-12-30
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 USES=		apache:run,2.2+ cpe shebangfix php:web
 SHEBANG_FILES=	misc/cvs2cl/cvs2cl.pl

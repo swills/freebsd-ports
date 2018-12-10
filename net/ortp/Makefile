@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/ortp/Makefile 482845 2018-10-23 15:53:39Z tijl $
+# $FreeBSD: head/net/ortp/Makefile 487187 2018-12-10 16:50:08Z rene $
 
 PORTNAME=	ortp
 PORTVERSION=	1.0.2

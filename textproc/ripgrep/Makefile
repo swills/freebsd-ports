@@ -1,11 +1,11 @@
 # Created by: Petteri Valkonen <petteri.valkonen@iki.fi>
-# $FreeBSD: head/textproc/ripgrep/Makefile 485929 2018-11-26 08:34:51Z jbeich $
+# $FreeBSD: head/textproc/ripgrep/Makefile 486770 2018-12-06 17:11:14Z jbeich $
 
 # vim: ts=8 noet
 
 PORTNAME=	ripgrep
 DISTVERSION=	0.10.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 
 MAINTAINER=	petteri.valkonen@iki.fi
@@ -133,7 +133,7 @@ PCRE2_VARS=	CARGO_FEATURES+=pcre2
 # unstable features similar to how lang/rust bootstraps. www/firefox
 # uses the same hack when building with --enable-rust-simd.
 SIMD_MAKE_ENV=	RUSTC_BOOTSTRAP=1
-SIMD_VARS=	CARGO_FEATURES+=simd-accel ${SIMD_VARS_${ARCH}}
+SIMD_VARS=	CARGO_FEATURES+=simd-accel ${SIMD_VARS_${ARCH}${PORT_OPTIONS:MAVX}}
 SIMD_VARS_i386=	RUSTFLAGS+="-C target-feature=+sse2"
 
 post-patch:

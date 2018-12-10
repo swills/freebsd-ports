@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/libzim/Makefile 483889 2018-11-03 12:17:58Z gerald $
+# $FreeBSD: head/devel/libzim/Makefile 486640 2018-12-05 00:05:50Z swills $
 
 PORTNAME=	libzim
-PORTVERSION=	4.0.0
-PORTREVISION=	2
+PORTVERSION=	4.0.4
 CATEGORIES=	devel
 
 MAINTAINER=	swills@FreeBSD.org
@@ -17,5 +16,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	openzim
 
 BINARY_ALIAS=	python3=python${PYTHON_VER} python3-config=python${PYTHON_VER}-config
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 .include <bsd.port.mk>

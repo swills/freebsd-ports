@@ -1,5 +1,5 @@
 # Created by: Chenguang LI
-# $FreeBSD: head/databases/sqlbuddy/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/sqlbuddy/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	sqlbuddy
 PORTVERSION=	1.3.3
@@ -15,7 +15,7 @@ EXPIRATION_DATE=	2018-12-30
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	deliciousbrains

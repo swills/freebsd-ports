@@ -1,5 +1,5 @@
 # Created by: Rodrigo Osorio <rodrigo@FreeBSD.org>
-# $FreeBSD: head/textproc/libmrss-php/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/textproc/libmrss-php/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	libmrss
 PORTVERSION=	0.19.2
@@ -27,7 +27,7 @@ USES=		libtool php:ext
 USE_LDCONFIG=	yes
 
 PHP_MODNAME=	mrss
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/phpmrss
 
 post-install:

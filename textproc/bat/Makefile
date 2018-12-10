@@ -1,8 +1,9 @@
-# $FreeBSD: head/textproc/bat/Makefile 484826 2018-11-12 21:24:57Z pizzamig $
+# $FreeBSD: head/textproc/bat/Makefile 486770 2018-12-06 17:11:14Z jbeich $
 
 PORTNAME=	bat
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	pizzamig@FreeBSD.org

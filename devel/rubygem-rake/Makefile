@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/devel/rubygem-rake/Makefile 465374 2018-03-23 16:45:13Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rake/Makefile 487113 2018-12-09 23:56:30Z sunpoet $
 
 PORTNAME=	rake
-PORTVERSION=	12.3.1
+PORTVERSION=	12.3.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,9 +12,10 @@ COMMENT=	Ruby Make
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/rake
 

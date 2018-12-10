@@ -1,12 +1,12 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net-p2p/libbt/Makefile 478718 2018-09-01 19:33:30Z yuri $
+# $FreeBSD: head/net-p2p/libbt/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	libbt
 DISTVERSION=	1.06
 CATEGORIES=	net-p2p devel
 MASTER_SITES=	SF
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	C library implementing the core BitTorrent protocol
 
 LICENSE=	GPLv2 LGPL21

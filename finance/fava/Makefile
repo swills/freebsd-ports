@@ -1,11 +1,9 @@
-# $FreeBSD: head/finance/fava/Makefile 478720 2018-09-01 19:41:21Z nivit $
+# $FreeBSD: head/finance/fava/Makefile 486603 2018-12-04 14:31:03Z nivit $
 
 PORTNAME=	fava
-PORTVERSION=	1.8
-DISTVERSIONPREFIX=	v
+PORTVERSION=	1.9
 CATEGORIES=	finance
-MASTER_SITES=	LOCAL/nivit/${PORTNAME}/:static
-DISTFILES=	${PORTNAME}-static-gen-${PORTVERSION}.tar.gz:static
+MASTER_SITES=	CHEESESHOP
 
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Web interface for Beancount
@@ -24,10 +22,7 @@ RUN_DEPENDS=	beancount>=2.1.2:finance/beancount \
 		${PYTHON_PKGNAMEPREFIX}ply>0:devel/py-ply@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR}
 
-GH_ACCOUNT=	beancount
-
 USES=		python:3.5+  # same as finance/beancount
-USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/phpgroupware/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/www/phpgroupware/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	phpgroupware
 PORTVERSION=	0.9.16.017
@@ -9,7 +9,6 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Web based GroupWare system
 
 USES=		php:mod tar:bzip2
-IGNORE_WITH_PHP=	70
 
 NO_BUILD=	yes
 NO_ARCH=	yes

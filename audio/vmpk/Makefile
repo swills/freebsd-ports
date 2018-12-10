@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/vmpk/Makefile 474992 2018-07-20 07:20:24Z yuri $
+# $FreeBSD: head/audio/vmpk/Makefile 486639 2018-12-04 23:59:47Z yuri $
 
 PORTNAME=	vmpk
-DISTVERSION=	0.7.0
+DISTVERSION=	0.7.1
 CATEGORIES=	audio
 MASTER_SITES=	https://phoenixnap.dl.sourceforge.net/project/vmpk/vmpk/${PORTVERSION}/
 

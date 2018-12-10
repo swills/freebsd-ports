@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/dexed/Makefile 485407 2018-11-20 03:05:14Z acm $
+# $FreeBSD: head/editors/dexed/Makefile 486685 2018-12-05 16:46:06Z acm $
 
 PORTNAME=	dexed
 PORTVERSION=	3.6.21
@@ -13,6 +13,7 @@ LICENSE=	BSL
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libiz.a:devel/iz \
+		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
 		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 RUN_DEPENDS=	ldmd2:lang/ldc \

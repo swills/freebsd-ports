@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/geany-plugin-webhelper/Makefile 446127 2017-07-18 07:18:28Z madpilot $
+# $FreeBSD: head/devel/geany-plugin-webhelper/Makefile 487062 2018-12-09 17:29:13Z madpilot $
 
 PORTNAME=	geany-plugin-webhelper
 PORTVERSION=	${GEANY_VER}
@@ -7,8 +7,10 @@ CATEGORIES=	devel
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Geany plugin: ${${GEANY_PLUGIN}_DESC}
 
-LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2 \
-		libsoup-2.4.so:devel/libsoup
+LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup
+
+gtk2_LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
+gtk3_LIB_DEPENDS=	libwebkitgtk-3.0.so:www/webkit-gtk3
 
 .include "${.CURDIR}/../geany-plugins/files/Makefile.common"
 .include <bsd.port.mk>

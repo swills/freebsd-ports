@@ -1,5 +1,5 @@
 # Created by: buganini@gmail.com
-# $FreeBSD: head/mail/pecl-pop3/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/mail/pecl-pop3/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	pop3
 PORTVERSION=	1.0.2
@@ -13,6 +13,6 @@ DEPRECATED=	Works only with EOL php 5.6
 EXPIRATION_DATE=	2018-12-30
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/databases/galera/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/databases/galera/Makefile 486522 2018-12-03 17:05:31Z vd $
 
 PORTNAME=	galera
-PORTVERSION?=	25.3.24
+PORTVERSION?=	25.3.25
 DISTVERSIONPREFIX?=	release_
 CATEGORIES=	databases
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/wolfssl/Makefile 485182 2018-11-17 17:46:11Z sunpoet $
+# $FreeBSD: head/security/wolfssl/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	wolfssl
 PORTVERSION=	3.13.0
@@ -10,11 +10,10 @@ COMMENT=	Embedded SSL C-Library
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	bash:shells/bash
-
 BROKEN_mips=		fails to package: pkg-static: Unable to access file libwolfssl.so.3: No such file or directory
 BROKEN_mips64=		fails to package: pkg-static: Unable to access file libwolfssl.so.3: No such file or directory
-BROKEN_powerpc64=	fails to package: pkg-static: Unable to access file libwolfssl.so.3: No such file or directory
+
+BUILD_DEPENDS=	bash:shells/bash
 
 USES=		libtool zip
 GNU_CONFIGURE=	yes

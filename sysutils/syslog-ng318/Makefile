@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng318/Makefile 482344 2018-10-18 14:03:43Z antoine $
+# $FreeBSD: head/sysutils/syslog-ng318/Makefile 486719 2018-12-05 19:36:04Z linimon $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.18.1
@@ -16,7 +16,6 @@ COMMENT=	Powerful syslogd replacement
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libuuid.so:misc/e2fsprogs-libuuid
 
-BROKEN_powerpc64=	fails to link: Internal error: Segmentation fault (program ld)
 BROKEN_sparc64=		fails to link: Internal error: Segmentation fault (program ld)
 
 CONFLICTS?=	syslog-ng-[0-9]* syslog-ng[0-9]-[0-9]* \

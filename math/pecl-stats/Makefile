@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/math/pecl-stats/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/math/pecl-stats/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	stats
 PORTVERSION=	1.0.5
@@ -15,7 +15,7 @@ LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 PORTSCOUT=	limit:^1.*
 

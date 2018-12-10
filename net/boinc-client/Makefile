@@ -1,10 +1,10 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/net/boinc-client/Makefile 480014 2018-09-18 12:04:35Z linimon $
+# $FreeBSD: head/net/boinc-client/Makefile 486598 2018-12-04 13:56:47Z ler $
 
 PORTNAME=	boinc-client
 PORTVERSION=	7.8.6
 DISTVERSIONPREFIX=	client_release/7.8/
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net
 
 MAINTAINER=	ler@FreeBSD.org
@@ -12,7 +12,7 @@ COMMENT=	Berkeley Open Infrastructure for Network Computing client
 
 LICENSE=	LGPL3
 
-USES=		autoreconf dos2unix gettext gmake \
+USES=		autoreconf compiler:c++11-lang dos2unix gettext gmake \
 		libtool pkgconfig ssl tar:xz
 INSTALL_TARGET=	install-strip
 GNU_CONFIGURE=	yes

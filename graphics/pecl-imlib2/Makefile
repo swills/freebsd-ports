@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/graphics/pecl-imlib2/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/graphics/pecl-imlib2/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	imlib2
 PORTVERSION=	0.1.00
@@ -17,7 +17,7 @@ LICENSE=	PHP202
 LIB_DEPENDS=	libImlib2.so:graphics/imlib2
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 # libImlib2 may or may not depend on X, however,
 # imlib2 extension doesn't need X related functions in libImlib2

@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/showbeastie/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/sysutils/showbeastie/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	showbeastie
 PORTVERSION=	0.3
@@ -15,7 +15,6 @@ LICENSE=	BSD2CLAUSE
 BROKEN_armv6=		fails to link: testmain uses VFP register arguments, dict.o does not
 BROKEN_armv7=		fails to link: testmain uses VFP register arguments, dict.o does not
 BROKEN_mips64=		fails to link: relocation truncated to fit: R_MIPS_26 against `__assert@@FBSD_1.0'
-BROKEN_powerpc64=	fails to build: ficl/Makefile line 25: Could not find bsd.stand.mk
 BROKEN_FreeBSD_12=	fails to build: ficl/Makefile line 13: Could not find bsd.stand.mk
 BROKEN_FreeBSD_13=	fails to build: ficl/Makefile line 13: Could not find bsd.stand.mk
 

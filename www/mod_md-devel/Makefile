@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/www/mod_md-devel/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	mod_md
 PORTVERSION=	1.1.16
@@ -16,7 +16,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_mips=		fails to compile: md_json.c:29: expected [error|warning|ignored] after pragma GCC diagnostic
 BROKEN_mips64=		fails to compile: md_json.c:29: expected [error|warning|ignored] after pragma GCC diagnostic
-BROKEN_powerpc64=	fails to compile: md_json.c:29: expected [error|warning|ignored] after pragma GCC diagnostic
 
 LIB_DEPENDS=	libaprutil-1.so:devel/apr1 \
 		libcurl.so:ftp/curl \

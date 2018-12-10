@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Term-Table/Makefile 483051 2018-10-26 21:19:39Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-Table/Makefile 486694 2018-12-05 18:47:17Z sunpoet $
 
 PORTNAME=	Term-Table
-PORTVERSION=	0.012
+PORTVERSION=	0.013
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

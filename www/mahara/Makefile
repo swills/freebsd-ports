@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/mahara/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/www/mahara/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	mahara
 PORTVERSION=	16.04.3
@@ -15,7 +15,7 @@ EXPIRATION_DATE=	2018-12-30
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/../COPYING
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 USES=		cpe php tar:bzip2
 USE_PHP=	dom gd session json curl xml xmlrpc openssl simplexml \

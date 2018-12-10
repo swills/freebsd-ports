@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/net/pear-Net_IPv4/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/net/pear-Net_IPv4/Makefile 487192 2018-12-10 17:18:12Z joneum $
 
 PORTNAME=	Net_IPv4
-DISTVERSION=	1.3.4
+DISTVERSION=	1.3.5
 CATEGORIES=	net pear
 
 MAINTAINER=	joneum@FreeBSD.org

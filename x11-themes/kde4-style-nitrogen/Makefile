@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-nitrogen/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/x11-themes/kde4-style-nitrogen/Makefile 486998 2018-12-08 23:34:47Z swills $
 
 PORTNAME=	nitrogen
 PORTVERSION=	1.0.5
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	kde4-style-
 DISTNAME=	112652-kde4-kstyle-nitrogen-${PORTVERSION}-Source
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	KDE style with animations
 
 LICENSE=	GPLv2

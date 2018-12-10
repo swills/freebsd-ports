@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/audio/flite/Makefile 468931 2018-05-03 14:47:57Z jbeich $
+# $FreeBSD: head/audio/flite/Makefile 487187 2018-12-10 16:50:08Z rene $
 
 PORTNAME=	flite
 PORTVERSION=	1.4

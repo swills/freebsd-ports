@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-httplib2/Makefile 467078 2018-04-11 15:16:06Z lwhsu $
+# $FreeBSD: head/www/py-httplib2/Makefile 486851 2018-12-07 10:03:38Z lwhsu $
 
 PORTNAME=	httplib2
-PORTVERSION=	0.11.3
+PORTVERSION=	0.12.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

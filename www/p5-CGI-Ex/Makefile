@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-CGI-Ex/Makefile 477531 2018-08-18 20:42:27Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Ex/Makefile 487110 2018-12-09 23:56:06Z sunpoet $
 
 PORTNAME=	CGI-Ex
-PORTVERSION=	2.47
+PORTVERSION=	2.48
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,13 +16,13 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-CGI>=0:www/p5-CGI \
 		p5-Template-Alloy>=1.004:www/p5-Template-Alloy
-TEST_DEPENDS=	p5-Test-Warn>=0:devel/p5-Test-Warn
 
 OPTIONS_DEFINE=	EXAMPLES
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 PORTEXAMPLES=	*
 

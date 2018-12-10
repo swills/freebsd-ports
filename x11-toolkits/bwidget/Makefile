@@ -1,8 +1,8 @@
 # Created by: Alexander Kabaev <ak03@gte.com>
-# $FreeBSD: head/x11-toolkits/bwidget/Makefile 459736 2018-01-23 09:53:49Z gahr $
+# $FreeBSD: head/x11-toolkits/bwidget/Makefile 486854 2018-12-07 10:38:27Z gahr $
 
 PORTNAME=	bwidget
-PORTVERSION=	1.9.12
+PORTVERSION=	1.9.13
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF/tcllib/BWidget/${PORTVERSION}
 
@@ -14,9 +14,10 @@ LICENSE_NAME=	Tcl/Tk License
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
+USES=		tk:run zip
+
 OPTIONS_DEFINE=	DOCS
 
-USES=		tk:run zip
 NO_BUILD=	yes
 NO_ARCH=	yes
 PORTDOCS=	*

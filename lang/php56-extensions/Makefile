@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php56-extensions/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/lang/php56-extensions/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	php56
 PORTVERSION=	1.0
@@ -14,7 +14,7 @@ EXPIRATION_DATE=	2018-12-30
 
 USES=		metaport php
 PHP_VER=	56
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 OPTIONS_DEFINE=	BCMATH BZ2 CALENDAR CTYPE CURL DBA \
 		DOM ENCHANT EXIF FILEINFO FILTER FTP GD GETTEXT \

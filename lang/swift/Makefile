@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/swift/Makefile 484106 2018-11-04 16:11:55Z antoine $
+# $FreeBSD: head/lang/swift/Makefile 486995 2018-12-08 23:27:48Z swills $
 
 PORTNAME=	swift
 PORTVERSION=	3.1.1
@@ -7,7 +7,7 @@ DISTVERSIONSUFFIX=	-RELEASE
 PORTREVISION=	8
 CATEGORIES=	lang
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Swift programing language
 
 LICENSE=	APACHE20

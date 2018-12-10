@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/devel/pecl-spl_types/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-spl_types/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	spl_types
 PORTVERSION=	0.4.0
@@ -21,7 +21,7 @@ RE2C_RUN_DEPENDS=	re2c:devel/re2c
 
 USE_PHP=	spl
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CONFIGURE_ARGS=	--enable-spl-types
 CFLAGS+=	-I${LOCALBASE}/include

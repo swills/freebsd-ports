@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 485990 2018-11-27 08:15:20Z yuri $
+# $FreeBSD: head/science/Makefile 486781 2018-12-06 20:30:42Z sunpoet $
 #
 
     COMMENT = Scientific ports
@@ -238,6 +238,7 @@
     SUBDIR += py-pupynere
     SUBDIR += py-pyaixi
     SUBDIR += py-pydicom
+    SUBDIR += py-pygeodesy
     SUBDIR += py-pymatgen
     SUBDIR += py-pymol
     SUBDIR += py-pyosf

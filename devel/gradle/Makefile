@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/gradle/Makefile 468432 2018-04-27 14:47:27Z meta $
+# $FreeBSD: head/devel/gradle/Makefile 486619 2018-12-04 17:53:46Z yuri $
 
 PORTNAME=	gradle
-PORTVERSION=	4.6
+PORTVERSION=	5.0
 CATEGORIES=	devel java
 MASTER_SITES=	https://downloads.gradle.org/distributions/
 EXTRACT_SUFX=	-bin.zip

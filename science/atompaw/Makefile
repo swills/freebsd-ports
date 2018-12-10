@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/atompaw/Makefile 480181 2018-09-20 15:00:46Z yuri $
+# $FreeBSD: head/science/atompaw/Makefile 486831 2018-12-07 07:50:57Z yuri $
 
 PORTNAME=	atompaw
-DISTVERSION=	4.1.0.4
+DISTVERSION=	4.1.0.5
 CATEGORIES=	science
-MASTER_SITES=	http://www.wfu.edu/~natalie/papers/pwpaw/
+MASTER_SITES=	http://users.wfu.edu/natalie/papers/pwpaw/
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Tool for projector augmented wave functions for molecular simulations
@@ -13,11 +13,11 @@ LICENSE=	BSD3CLAUSE
 LIB_DEPENDS=	liblapack.so:math/lapack \
 		libblas.so:math/blas
 
-OPTIONS_DEFINE=	DOCS
-
 USES=		fortran gmake libtool
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 PORTDOCS=	*
 

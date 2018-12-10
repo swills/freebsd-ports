@@ -1,16 +1,19 @@
 # Created by: chris@shagged.org
-# $FreeBSD: head/mail/tpop3d/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/mail/tpop3d/Makefile 487039 2018-12-09 11:48:24Z krion $
 
 PORTNAME=	tpop3d
 PORTVERSION=	1.5.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	SAVANNAH
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Virtual-domain capable POP3 server supporting MySQL, PgSQL etc auth
 
+LICENSE=	GPLv2
+
 USES=		ssl
+
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib -lcrypto
 CONFIGURE_ARGS=	--enable-auth-other \

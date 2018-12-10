@@ -1,8 +1,8 @@
 # Created by: Ruben van Staveren
-# $FreeBSD: head/devel/p5-threads-shared/Makefile 462496 2018-02-21 12:37:35Z culot $
+# $FreeBSD: head/devel/p5-threads-shared/Makefile 487065 2018-12-09 17:37:54Z culot $
 
 PORTNAME=	threads-shared
-PORTVERSION=	1.58
+PORTVERSION=	1.59
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JDHEDDEN

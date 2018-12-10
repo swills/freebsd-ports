@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/databases/pecl-memcache/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/pecl-memcache/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	memcache
 PORTVERSION=	3.0.8
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 OPTIONS_DEFINE=	EXAMPLES
 
 CONFIGURE_ARGS=	--with-zlib-dir=/usr
-IGNORE_WITH_PHP=70 71 72 73
+IGNORE_WITH_PHP=71 72 73
 USE_CSTD=	gnu89
 USE_PHP=	session:build zlib:build
 USES=		dos2unix php:pecl

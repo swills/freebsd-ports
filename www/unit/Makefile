@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/unit/Makefile 485364 2018-11-19 21:40:15Z osa $
+# $FreeBSD: head/www/unit/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	unit
 PORTVERSION=	1.6
@@ -12,8 +12,6 @@ COMMENT?=	Dynamic web application server
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_powerpc64=	fails to build: nxt_conf_validation.c:275: undefined reference to __builtin_popcount
 
 EXTRA_PATCHES=	${FILESDIR}/php_zts.patch:-p1
 

@@ -1,9 +1,7 @@
-# Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/security/py-gnutls/Makefile 438707 2017-04-17 15:58:03Z miwi $
+# $FreeBSD: head/security/py-gnutls/Makefile 486852 2018-12-07 10:06:27Z lwhsu $
 
 PORTNAME=	gnutls
-PORTVERSION=	3.1.1
-PORTREVISION=	1
+PORTVERSION=	3.1.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

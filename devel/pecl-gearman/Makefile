@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-gearman/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-gearman/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	gearman
 PORTVERSION=	1.1.2
@@ -18,6 +18,6 @@ LIB_DEPENDS=	libgearman.so:devel/gearmand
 
 USES=		php:pecl
 CONFIGURE_ARGS=	--with-gearman
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

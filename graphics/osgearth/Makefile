@@ -1,10 +1,10 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/graphics/osgearth/Makefile 464405 2018-03-13 20:10:33Z amdmi3 $
+# $FreeBSD: head/graphics/osgearth/Makefile 487028 2018-12-09 07:39:29Z riggs $
 
 PORTNAME=	osgearth
-PORTVERSION=	2.9
+PORTVERSION=	2.10
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
+CATEGORIES=	graphics geography
 CATEGORIES=	graphics geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org
@@ -22,17 +22,23 @@ LIB_DEPENDS=	libosg.so:graphics/osg \
 		libprotoc.so:devel/protobuf \
 		librocksdb.so:databases/rocksdb
 
-USES=		cmake pkgconfig sqlite
+USES=		cmake compiler:c++11-lang gl pkgconfig sqlite
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	gwaldron
 
+USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 USE_GL+=	gl glu
-PLIST_SUB=	OSGVERSION=3.4.0
 
 CMAKE_ARGS+=	-DCMAKE_INCLUDE_PATH:PATH=${LOCALBASE}/include \
 		-DCMAKE_LIBRARY_PATH:PATH=${LOCALBASE}/lib \
 		-DLIB_POSTFIX:STRING=""
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == i386
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-i386
+.endif
+
+.include <bsd.port.post.mk>
