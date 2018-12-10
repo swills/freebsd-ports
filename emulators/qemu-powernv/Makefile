@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-powernv/Makefile 486085 2018-11-28 09:37:30Z kbowling $
+# $FreeBSD: head/emulators/qemu-powernv/Makefile 487206 2018-12-10 22:19:04Z antoine $
 
 PORTNAME=	qemu-powernv
 PORTVERSION=	3.0.50
@@ -9,6 +9,8 @@ MAINTAINER=	kbowling@FreeBSD.org
 COMMENT=	Fork of QEMU with experimental PowerNV emulation support
 
 LICENSE=	GPLv2
+
+BROKEN=		unfetchable
 
 BUILD_DEPENDS=		${LOCALBASE}/lib/libfdt.so:sysutils/dtc
 

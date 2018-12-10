@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/sbsigntool/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/sbsigntool/Makefile 487205 2018-12-10 22:16:20Z antoine $
 
 PORTNAME=	sbsigntool
 PORTVERSION=	0.6
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Signing utility for UEFI secure boot
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgnuefi.a:devel/gnu-efi \
 		help2man:misc/help2man

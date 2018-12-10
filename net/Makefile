@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 486929 2018-12-08 09:24:43Z yuri $
+# $FreeBSD: head/net/Makefile 487201 2018-12-10 21:09:38Z zeising $
 #
 
     COMMENT = Networking tools
@@ -65,6 +65,7 @@
     SUBDIR += bosh-bootloader
     SUBDIR += bosh-cli
     SUBDIR += bounce
+    SUBDIR += bredbandskollen
     SUBDIR += bsdec2-image-upload
     SUBDIR += bsdproxy
     SUBDIR += bsdrcmds
