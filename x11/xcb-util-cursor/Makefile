@@ -2,6 +2,7 @@
 
 PORTNAME=	xcb-util-cursor
 PORTVERSION=	0.1.3
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://xcb.freedesktop.org/dist/
 
@@ -24,8 +25,9 @@ INSTALL_TARGET=	install-strip
 USES=		gmake gperf
 
 post-patch:
-	@${REINPLACE_CMD} -e \
-		's|$${libdir}/pkgconfig|$${prefix}/libdata/pkgconfig|' \
+	@${REINPLACE_CMD} \
+		-e 's|$${libdir}/pkgconfig|$${prefix}/libdata/pkgconfig|' \
+		-e '/^DEF_CURSORPATH/s|"$$|:${LOCALBASE}/share/icons"|' \
 		${WRKSRC}/configure
 
 .include <bsd.port.mk>
