@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/eog/Makefile 484780 2018-11-11 21:57:07Z kwm $
+# $FreeBSD: head/graphics/eog/Makefile 486515 2018-12-03 12:34:22Z linimon $
 
 PORTNAME=	eog
 PORTVERSION=	3.28.4
@@ -21,8 +21,8 @@ RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gnome jpeg localbase \
-		meson pkgconfig python:build,3.4+ shebangfix tar:xz
+USES=		compiler:c++11-lang desktop-file-utils gettext gnome jpeg \
+		localbase meson pkgconfig python:build,3.4+ shebangfix tar:xz
 USE_GNOME=	cairo librsvg2 gtk30 gnomedesktop3 introspection
 USE_XORG=	x11
 INSTALLS_ICONS=	yes

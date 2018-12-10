@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-certbot/Makefile 483535 2018-10-30 19:55:49Z sunpoet $
+# $FreeBSD: head/security/py-certbot/Makefile 486793 2018-12-06 20:32:26Z sunpoet $
 
 PORTNAME=	certbot
 PORTVERSION=	${ACME_VERSION}
@@ -41,6 +41,7 @@ post-patch:
 		-e 's|/etc/|${LOCALBASE}/etc/|' \
 		-e 's|/var/lib|/var/db|' \
 		${WRKSRC}/${PORTNAME}/constants.py
+
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 

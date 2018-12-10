@@ -1,9 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/cad/libredwg/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/cad/libredwg/Makefile 486754 2018-12-06 12:05:24Z danfe $
 
 PORTNAME=	libredwg
-PORTVERSION=	0.6.2
-PORTREVISION=	1
+PORTVERSION=	0.7
 CATEGORIES=	cad devel
 MASTER_SITES=	GNU
 

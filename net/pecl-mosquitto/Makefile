@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/pecl-mosquitto/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/net/pecl-mosquitto/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	mosquitto
 PORTVERSION=	0.3.0
@@ -18,6 +18,6 @@ LICENSE=	BSD3CLAUSE
 BUILD_DEPENDS=	mosquitto>=0:net/mosquitto
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

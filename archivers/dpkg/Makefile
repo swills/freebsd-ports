@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/archivers/dpkg/Makefile 486324 2018-12-01 07:47:06Z pi $
+# $FreeBSD: head/archivers/dpkg/Makefile 487014 2018-12-09 02:59:55Z swills $
 
 PORTNAME=	dpkg
 PORTVERSION=	1.19.2
@@ -19,7 +19,8 @@ BUILD_DEPENDS=	po4a:textproc/po4a \
 RUN_DEPENDS=	gtar:archivers/gtar \
 		gpatch:devel/patch
 
-USES=		cpe gmake iconv libtool ncurses perl5 pkgconfig tar:xz
+USES=		compiler:c11 cpe gmake iconv libtool ncurses perl5 pkgconfig \
+		tar:xz
 
 CPE_VENDOR=	debian
 WRKSRC=		${WRKDIR}/dpkg-${PORTVERSION}

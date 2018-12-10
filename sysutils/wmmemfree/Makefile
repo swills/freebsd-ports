@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@regency.nsu.ru>
-# $FreeBSD: head/sysutils/wmmemfree/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/sysutils/wmmemfree/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	wmmemfree
 PORTVERSION=	0.7
@@ -14,7 +14,6 @@ BROKEN_FreeBSD_12=	fails to compile: read_mem.c: invalid use of undefined type '
 BROKEN_FreeBSD_13=	fails to compile: read_mem.c: invalid use of undefined type 'struct vmmeter'
 BROKEN_mips=		fails to compile: mem_freebsd.c: storage size of 'vm' isn't known
 BROKEN_mips64=		fails to compile: mem_freebsd.c: storage size of 'vm' isn't known
-BROKEN_powerpc64=	fails to compile: mem_freebsd.c: storage size of 'vm' isn't known
 
 USES=		tar:bzip2
 USE_XORG=	xpm

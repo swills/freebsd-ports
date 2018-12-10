@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/databases/pecl-pdo_user/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/pecl-pdo_user/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	pdo_user
 PORTVERSION=	0.3.0
@@ -17,6 +17,6 @@ WRKSRC=		${WRKDIR}/PDO_USER-${PORTVERSION}
 
 USES=		php:pecl
 USE_PHP=	pdo:build
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

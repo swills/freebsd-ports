@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-chempy/Makefile 483367 2018-10-29 04:31:09Z yuri $
+# $FreeBSD: head/science/py-chempy/Makefile 486736 2018-12-06 06:46:08Z yuri $
 
 PORTNAME=	chempy
-DISTVERSION=	0.7.6
+DISTVERSION=	0.7.7
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

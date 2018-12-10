@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/x11/sakura/Makefile 485327 2018-11-19 15:57:08Z swills $
+# $FreeBSD: head/x11/sakura/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	sakura
 PORTVERSION=	3.6.0
@@ -14,13 +14,11 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
 		libpcre2-8.so:devel/pcre2
 
-BROKEN_powerpc64=	fails to build: sakura.c:1348: 'for' loop initial declaration used outside C99 mode
-
 OPTIONS_DEFINE=	DOCS
 
+USES=		cmake pkgconfig gettext perl5 tar:bzip2
 USE_GNOME=	cairo gdkpixbuf2 vte3
 USE_XORG=	x11
-USES=		cmake pkgconfig gettext perl5 tar:bzip2
 USE_PERL5=	build
 LDFLAGS+=	-lintl
 

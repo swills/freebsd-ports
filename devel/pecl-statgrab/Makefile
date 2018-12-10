@@ -1,5 +1,5 @@
 # Created by: Tim Bishop <tim@bishnet.net>
-# $FreeBSD: head/devel/pecl-statgrab/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-statgrab/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	statgrab
 PORTVERSION=	0.6.0
@@ -16,7 +16,7 @@ EXPIRATION_DATE=	2018-12-30
 LIB_DEPENDS=	libstatgrab0.so:devel/libstatgrab0
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CONFIGURE_ARGS=	--with-statgrab=${LOCALBASE}
 

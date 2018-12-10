@@ -14,9 +14,9 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: head/Tools/scripts/patchtool.py 448612 2017-08-23 13:59:41Z mat $
+# $FreeBSD: head/Tools/scripts/patchtool.py 486557 2018-12-03 21:38:04Z rene $
 #
-# MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
+# MAINTAINER= ports@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
 #
 

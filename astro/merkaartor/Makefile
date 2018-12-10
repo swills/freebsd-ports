@@ -1,9 +1,9 @@
 # Created by: Slaven Rezic <slaven@rezic.de>
-# $FreeBSD: head/astro/merkaartor/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/astro/merkaartor/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	merkaartor
 PORTVERSION=	0.18.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	astro
 
 MAINTAINER=	dev2@heesakkers.info

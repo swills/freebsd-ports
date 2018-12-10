@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-test_helpers/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-test_helpers/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	test_helpers
 PORTVERSION=	1.1.0
@@ -19,7 +19,7 @@ LICENSE=	BSD3CLAUSE
 CONFIGURE_ARGS=	--enable-test-helpers
 USES=		php:zend tar:tgz
 SUB_FILES=	pkg-message
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 # This needs to be loaded *after* devel/pecl-xdebug
 PHP_MOD_PRIO=	30
 

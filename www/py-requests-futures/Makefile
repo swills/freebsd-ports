@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-requests-futures/Makefile 482979 2018-10-25 19:33:10Z sunpoet $
+# $FreeBSD: head/www/py-requests-futures/Makefile 486538 2018-12-03 19:58:54Z sunpoet $
 
 PORTNAME=	requests-futures
-PORTVERSION=	0.9.8
+PORTVERSION=	0.9.9
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

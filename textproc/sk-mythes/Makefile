@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/sk-mythes/Makefile 485958 2018-11-26 19:00:28Z sunpoet $
+# $FreeBSD: head/textproc/sk-mythes/Makefile 487126 2018-12-10 04:21:24Z sunpoet $
 
 PORTNAME=	mythes
-PORTVERSION=	2018.11.25
+PORTVERSION=	2018.12.09
 CATEGORIES=	textproc
 MASTER_SITES=	LOCAL/sunpoet/${PORTNAME}/
 PKGNAMEPREFIX=	sk-
@@ -14,6 +14,7 @@ COMMENT=	Slovak thesaurus
 LICENSE=	MIT
 
 USES=		zip
+
 NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes

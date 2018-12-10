@@ -1,5 +1,5 @@
 # Created by: Julian Stecklina
-# $FreeBSD: head/lang/ecl/Makefile 478604 2018-08-31 18:27:13Z fernape $
+# $FreeBSD: head/lang/ecl/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	ecl
 PORTVERSION=	15.3.7
@@ -15,7 +15,6 @@ LICENSE=	LGPL20
 BROKEN_aarch64=		fails to compile: error: unknown type name AO_TS_t
 BROKEN_mips=		fails to build: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
 BROKEN_mips64=		fails to build: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
-BROKEN_powerpc64=	fails to link: undefined reference to fmodl
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 

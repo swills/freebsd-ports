@@ -1,9 +1,9 @@
 # Created by: Ayumi M <ayu@commun.jp>
-# $FreeBSD: head/audio/murmur/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/murmur/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	murmur
 PORTVERSION=	1.2.19
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	audio net
 
 MAINTAINER=	feld@FreeBSD.org
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 USERS=		murmur
 GROUPS=		murmur
 USES=		compiler:c++11-lang qmake pkgconfig qt:4 ssl
+USE_CXXSTD=	c++11
 USE_QT=		moc_build corelib network sql xml
 
 USE_GITHUB=	YES

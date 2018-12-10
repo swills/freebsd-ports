@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-grape/Makefile 486192 2018-11-29 16:45:47Z sunpoet $
+# $FreeBSD: head/devel/rubygem-grape/Makefile 487111 2018-12-09 23:56:14Z sunpoet $
 
 PORTNAME=	grape
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

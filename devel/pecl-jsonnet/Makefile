@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsonnet/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-jsonnet/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	jsonnet
 PORTVERSION=	1.1.1
@@ -20,6 +20,6 @@ LIB_DEPENDS=	libjsonnet.so:devel/jsonnet
 USES=		php:pecl
 USE_PHP=	json:build
 CONFIGURE_ARGS=	--with-jsonnet=${LOCALBASE}
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

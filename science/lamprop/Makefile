@@ -1,10 +1,9 @@
-# $FreeBSD: head/science/lamprop/Makefile 464350 2018-03-13 08:27:23Z yuri $
+# $FreeBSD: head/science/lamprop/Makefile 486683 2018-12-05 16:38:39Z amdmi3 $
 
 PORTNAME=	lamprop
 PORTVERSION=	3.4
 PORTREVISION=	1
 CATEGORIES=	science python
-MASTER_SITES=	GH
 
 MAINTAINER=	rsmith@xs4all.nl
 COMMENT=	Calculates properties of fiber reinforced composites

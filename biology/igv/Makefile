@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/igv/Makefile 485255 2018-11-18 20:02:40Z yuri $
+# $FreeBSD: head/biology/igv/Makefile 486619 2018-12-04 17:53:46Z yuri $
 
 PORTNAME=	igv
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/license.txt
 
 BUILD_DEPENDS=	openjfx8-devel>0:java/openjfx8-devel \
-		gradle:devel/gradle
+		gradle4:devel/gradle4
 RUN_DEPENDS=	openjfx8-devel>0:java/openjfx8-devel
 
 USES=		gettext-runtime
@@ -40,7 +40,7 @@ PLIST_FILES=	bin/${PORTNAME} \
 		share/pixmaps/igv.png
 
 do-build:
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} gradle createDist
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} gradle4 createDist
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME}.sh ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

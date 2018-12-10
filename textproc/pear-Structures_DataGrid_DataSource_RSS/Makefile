@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-Structures_DataGrid_DataSource_RSS/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/textproc/pear-Structures_DataGrid_DataSource_RSS/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	Structures_DataGrid_DataSource_RSS
 PORTVERSION=	0.1.1
@@ -16,6 +16,6 @@ RUN_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-
 
 USES=	pear
 USE_PHP=	mysql
-IGNORE_WITH_PHP=70 71 72 73
+IGNORE_WITH_PHP=71 72 73
 
 .include <bsd.port.mk>

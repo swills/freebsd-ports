@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 484487 2018-11-08 23:19:03Z lwhsu $
+# $FreeBSD: head/archivers/Makefile 486677 2018-12-05 15:46:02Z rene $
 #
 
     COMMENT = Archivers
@@ -156,10 +156,6 @@
     SUBDIR += php56-phar
     SUBDIR += php56-zip
     SUBDIR += php56-zlib
-    SUBDIR += php70-bz2
-    SUBDIR += php70-phar
-    SUBDIR += php70-zip
-    SUBDIR += php70-zlib
     SUBDIR += php71-bz2
     SUBDIR += php71-phar
     SUBDIR += php71-zip

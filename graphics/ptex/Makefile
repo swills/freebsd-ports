@@ -1,9 +1,8 @@
-# $FreeBSD: head/graphics/ptex/Makefile 454169 2017-11-14 09:00:09Z amdmi3 $
+# $FreeBSD: head/graphics/ptex/Makefile 486966 2018-12-08 17:17:38Z pi $
 
 PORTNAME=	ptex
-PORTVERSION=	2.1.28
+PORTVERSION=	2.3.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES?=	graphics
 
 MAINTAINER=	FreeBSD@Shaneware.biz

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 485032 2018-11-15 19:07:40Z sunpoet $
+# $FreeBSD: head/mail/Makefile 486677 2018-12-05 15:46:02Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -488,7 +488,6 @@
     SUBDIR += pflogsumm
     SUBDIR += pfqueue
     SUBDIR += php56-imap
-    SUBDIR += php70-imap
     SUBDIR += php71-imap
     SUBDIR += php72-imap
     SUBDIR += php73-imap

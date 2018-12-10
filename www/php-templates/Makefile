@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/www/php-templates/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/www/php-templates/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	templates
 PORTVERSION=	1.7.2
@@ -21,7 +21,7 @@ EXPIRATION_DATE=	2018-12-30
 WRKSRC=		${WRKDIR}/templates
 USES=		dos2unix php:phpize
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CONFIGURE_ARGS=	--enable-templates=shared
 

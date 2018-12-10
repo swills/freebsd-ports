@@ -1,5 +1,5 @@
 # Created by: Bas Kruit <baskruit@bsltwr.dhis.org>
-# $FreeBSD: head/dns/dhisd/Makefile 484793 2018-11-12 09:15:38Z egypcio $
+# $FreeBSD: head/dns/dhisd/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	dhisd
 PORTVERSION=	5.5
@@ -7,7 +7,7 @@ CATEGORIES=	dns
 MASTER_SITES=	ftp://ftp.dhis.org/pub/dhis/ \
 		LOCAL/meta
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	DHIS server for dynamic updates on the server using specific engines
 
 LICENSE=	BSD2CLAUSE

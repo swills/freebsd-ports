@@ -1,5 +1,5 @@
 # Created by: Javier Martin Rueda <jmrueda@diatel.upm.es>
-# $FreeBSD: head/www/moodle35/Makefile 484801 2018-11-12 11:00:36Z wen $
+# $FreeBSD: head/www/moodle35/Makefile 486726 2018-12-05 23:55:39Z wen $
 
 PORTNAME=	moodle
 PORTVERSION=	3.5.3
@@ -12,7 +12,8 @@ COMMENT=	Course management system based on social constructionism
 
 LICENSE=	GPLv3
 
-CONFLICTS=	moodle31-3.1.[0-9]* moodle33-3.3.[0-9]* moodle34-3.4.[0-9]*
+CONFLICTS=	moodle31-3.1.[0-9]* moodle33-3.3.[0-9]* moodle34-3.4.[0-9]* \
+		moodle36-3.6.[0-9]*
 
 IGNORE_WITH_PHP=	56
 

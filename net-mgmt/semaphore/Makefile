@@ -1,11 +1,11 @@
-# $FreeBSD: head/net-mgmt/semaphore/Makefile 447897 2017-08-13 16:30:58Z swills $
+# $FreeBSD: head/net-mgmt/semaphore/Makefile 486994 2018-12-08 23:26:42Z swills $
 
 PORTNAME=	semaphore
 PORTVERSION=	2.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open Source alternative to Ansible Tower
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go \

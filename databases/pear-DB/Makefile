@@ -1,13 +1,15 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/databases/pear-DB/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/databases/pear-DB/Makefile 486848 2018-12-07 09:50:54Z joneum $
 
 PORTNAME=	DB
-PORTVERSION=	1.9.2
+PORTVERSION=	1.9.3
 PORTEPOCH=	1
 CATEGORIES=	databases www pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR Database Abstraction Layer
+
+LICENSE=	PHP301
 
 USES=		pear
 

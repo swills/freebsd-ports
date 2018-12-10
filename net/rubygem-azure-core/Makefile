@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-azure-core/Makefile 457413 2017-12-27 19:53:34Z sunpoet $
+# $FreeBSD: head/net/rubygem-azure-core/Makefile 486715 2018-12-05 18:50:12Z sunpoet $
 
 PORTNAME=	azure-core
-PORTVERSION=	0.1.14
+PORTVERSION=	0.1.15
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +15,9 @@ RUN_DEPENDS=	rubygem-faraday>=0.9:www/rubygem-faraday \
 		rubygem-faraday_middleware>=0.10:www/rubygem-faraday_middleware \
 		rubygem-nokogiri>=1.6:textproc/rubygem-nokogiri
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

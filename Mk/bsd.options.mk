@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.mk 479428 2018-09-10 14:40:57Z mat $
+# $FreeBSD: head/Mk/bsd.options.mk 486799 2018-12-06 20:33:20Z sunpoet $
 #
 # These variables are used in port makefiles to define the options for a port.
 #
@@ -184,7 +184,7 @@ _OPTIONS_FLAGS=	ALL_TARGET BROKEN CATEGORIES CFLAGS CONFIGURE_ENV CONFLICTS \
 		MASTER_SITES PATCHFILES PATCH_SITES PLIST_DIRS PLIST_FILES \
 		PLIST_SUB PORTDOCS PORTEXAMPLES SUB_FILES SUB_LIST \
 		TEST_TARGET USES BINARY_ALIAS
-_OPTIONS_DEPENDS=	PKG FETCH EXTRACT PATCH BUILD LIB RUN
+_OPTIONS_DEPENDS=	PKG FETCH EXTRACT PATCH BUILD LIB RUN TEST
 
 # The format here is target_family:priority:target-type
 _OPTIONS_TARGETS=	fetch:300:pre fetch:500:do fetch:700:post \

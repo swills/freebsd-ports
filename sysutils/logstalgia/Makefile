@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/logstalgia/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/sysutils/logstalgia/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	logstalgia
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -12,8 +12,6 @@ COMMENT=	Website access log visualization tool
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to compile: custom.cpp: 'sscanf' was not declared in this scope
 
 BUILD_DEPENDS=	${LOCALBASE}/include/glm/glm.hpp:math/glm
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs \

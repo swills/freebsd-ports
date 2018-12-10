@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/netbox/Makefile 484863 2018-11-13 08:45:23Z miwi $
+# $FreeBSD: head/net-mgmt/netbox/Makefile 487038 2018-12-09 11:41:32Z miwi $
 
 PORTNAME=	netbox
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.4.7
+DISTVERSION=	2.4.9
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	freebsd_ports@k-worx.org
@@ -35,7 +35,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR
 		${PYTHON_PKGNAMEPREFIX}xmltodict>=0.11.0:devel/py-xmltodict@${PY_FLAVOR}
 
 USES=		pgsql:9.4+ python:3.5+
-WANT_PGSQL=	server
 USE_GITHUB=	yes
 GH_ACCOUNT=	digitalocean
 

@@ -1,5 +1,5 @@
 # Created by: maurice
-# $FreeBSD: head/net/radiusclient/Makefile 382771 2015-03-30 22:18:26Z demon $
+# $FreeBSD: head/net/radiusclient/Makefile 487187 2018-12-10 16:50:08Z rene $
 
 PORTNAME=	radiusclient
 PORTVERSION=	0.5.6

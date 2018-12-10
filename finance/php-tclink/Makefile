@@ -1,5 +1,5 @@
 # Created by: <mbowie@buzmo.com>
-# $FreeBSD: head/finance/php-tclink/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/finance/php-tclink/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	tclink
 PORTVERSION=	4.0.2
@@ -17,7 +17,7 @@ EXPIRATION_DATE=	2018-12-30
 
 USES=		php:ext ssl
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 post-patch:
 	# avoid name conflicts with libressl

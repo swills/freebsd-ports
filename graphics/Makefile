@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 486333 2018-12-01 10:30:34Z rene $
+# $FreeBSD: head/graphics/Makefile 487117 2018-12-10 03:02:11Z jmd $
 #
 
     COMMENT = Graphics tools and libraries
@@ -152,11 +152,11 @@
     SUBDIR += dmtx-utils
     SUBDIR += drawpile
     SUBDIR += driconf
-    SUBDIR += drm-devel-kmod
+    SUBDIR += drm-current-kmod
+    SUBDIR += drm-fbsd11.2-kmod
+    SUBDIR += drm-fbsd12.0-kmod
     SUBDIR += drm-kmod
     SUBDIR += drm-legacy-kmod
-    SUBDIR += drm-next-kmod
-    SUBDIR += drm-stable-kmod
     SUBDIR += dspdfviewer
     SUBDIR += duhdraw
     SUBDIR += dynamechs
@@ -675,6 +675,7 @@
     SUBDIR += openfx-io
     SUBDIR += openfx-misc
     SUBDIR += opengl-man
+    SUBDIR += opengv
     SUBDIR += openicc-config
     SUBDIR += openimageio
     SUBDIR += openjpeg
@@ -832,8 +833,6 @@
     SUBDIR += php5-ffmpeg
     SUBDIR += php56-exif
     SUBDIR += php56-gd
-    SUBDIR += php70-exif
-    SUBDIR += php70-gd
     SUBDIR += php71-exif
     SUBDIR += php71-gd
     SUBDIR += php72-exif

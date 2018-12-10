@@ -1,5 +1,5 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-9/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/www/typo3-9/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
@@ -13,7 +13,7 @@ COMMENT=	Typo3 content management system
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-IGNORE_WITH_PHP=56 70 71
+IGNORE_WITH_PHP=56 71
 
 USES=		cpe php:web,flavors shebangfix
 USE_PHP=	ctype dom fileinfo filter hash intl json openssl pcre session simplexml \

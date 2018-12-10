@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/x11/deforaos-keyboard/Makefile 430361 2017-01-02 14:58:29Z olivier $
+# $FreeBSD: head/x11/deforaos-keyboard/Makefile 486506 2018-12-03 09:31:25Z amdmi3 $
 
 PORTNAME=	keyboard
 PORTVERSION=	0.3.1
@@ -11,16 +11,16 @@ DISTNAME=	Keyboard-${PORTVERSION}
 MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	DeforaOS desktop virtual keyboard
 
-LICENSE=	GPLv3
+LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libDesktop.so:x11/deforaos-libdesktop \
-				libSystem.so:devel/deforaos-libsystem \
-				libfontconfig.so:x11-fonts/fontconfig \
-				libfreetype.so:print/freetype2
+		libSystem.so:devel/deforaos-libsystem \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 
+USES=		desktop-file-utils gnome pkgconfig
 USE_GNOME=	gtk20 cairo gdkpixbuf2
-USES=		desktop-file-utils pkgconfig
 USE_XORG=	x11 xtst
 MAKE_ARGS+=	PREFIX=${PREFIX}
 

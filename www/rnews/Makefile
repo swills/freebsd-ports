@@ -1,6 +1,6 @@
 
 # Created by: Vincent Tantardini <vinc@FreeBSD-fr.org>
-# $FreeBSD: head/www/rnews/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/www/rnews/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	rnews
 PORTVERSION=	1.01
@@ -14,7 +14,7 @@ COMMENT=	Server-side RSS aggregator written in PHP with MySQL
 DEPRECATED=	Works only with EOL php 5.6
 EXPIRATION_DATE=	2018-12-30
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 NO_BUILD=	yes
 

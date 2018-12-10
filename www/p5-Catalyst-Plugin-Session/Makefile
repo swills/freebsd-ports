@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Session/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Session/Makefile 486791 2018-12-06 20:32:07Z sunpoet $
 
 PORTNAME=	Catalyst-Plugin-Session
-PORTVERSION=	0.40
+PORTVERSION=	0.41
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,6 +16,7 @@ LICENSE_COMB=	dual
 # Do not add p5-Catalyst-Plugin-Session-State-Cookie to TEST_DEPENDS to avoid cyclic dependency
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Catalyst-Runtime>=5.71001:www/p5-Catalyst-Runtime \
+		p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-Moose>=0.76:devel/p5-Moose \
 		p5-MooseX-Emulate-Class-Accessor-Fast>=0.00801:devel/p5-MooseX-Emulate-Class-Accessor-Fast \

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ransack/Makefile 483338 2018-10-28 19:57:43Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ransack/Makefile 486787 2018-12-06 20:31:33Z sunpoet $
 
 PORTNAME=	ransack
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -17,8 +17,9 @@ RUN_DEPENDS=	rubygem-actionpack5>=5.0:www/rubygem-actionpack5 \
 		rubygem-activesupport5>=5.0:devel/rubygem-activesupport5 \
 		rubygem-i18n>=0:devel/rubygem-i18n
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

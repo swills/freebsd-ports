@@ -1,9 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/net/mosquitto/Makefile 483677 2018-11-01 15:16:52Z swills $
+# $FreeBSD: head/net/mosquitto/Makefile 486979 2018-12-08 18:48:41Z fernape $
 
 PORTNAME=	mosquitto
-PORTVERSION=	1.5.3
-PORTREVISION=	1
+PORTVERSION=	1.5.4
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
 
@@ -17,20 +16,21 @@ LIB_DEPENDS=	libcares.so:dns/c-ares \
 BUILD_DEPENDS=	xsltproc:textproc/libxslt
 
 USES=		cmake ssl
-NOCONFIGURE=	yes
 USE_RC_SUBR=	mosquitto
 USE_LDCONFIG=	yes
-PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 USERS=		nobody
 
-OPTIONS_DEFINE=	WS
+NOCONFIGURE=	yes
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
-CMAKE_ARGS+=	-DCMAKE_LIBDATADIR="${PREFIX}/libdata"
+OPTIONS_DEFINE=	WS
 
 WS_DESC=	MQTT over Websockets support
 WS_LIB_DEPENDS=	libwebsockets.so:net/libwebsockets
 WS_CMAKE_ON=	-DWITH_WEBSOCKETS=ON
+
+CMAKE_ARGS+=	-DCMAKE_LIBDATADIR="${PREFIX}/libdata"
 
 post-patch:
 # do not run ldconfig in stage dir

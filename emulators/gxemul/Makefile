@@ -1,8 +1,8 @@
 # Created by: Janni
-# $FreeBSD: head/emulators/gxemul/Makefile 485218 2018-11-18 08:51:08Z tobik $
+# $FreeBSD: head/emulators/gxemul/Makefile 486856 2018-12-07 11:38:02Z tobik $
 
 PORTNAME=	gxemul
-PORTVERSION=	0.6.0.2
+PORTVERSION=	0.6.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://gavare.se/gxemul/src/
 

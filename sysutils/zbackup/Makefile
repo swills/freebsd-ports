@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/zbackup/Makefile 483513 2018-10-30 19:07:03Z linimon $
+# $FreeBSD: head/sysutils/zbackup/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	zbackup
 PORTVERSION=	1.4.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org
@@ -14,6 +14,7 @@ LIB_DEPENDS=	libprotobuf.so:devel/protobuf \
 		liblzo2.so:archivers/lzo2
 
 USES=		alias cmake compiler:c++11-lang ssl
+USE_CXXSTD=	c++11
 USE_GITHUB=	yes
 
 OPTIONS_DEFINE=	DOCS

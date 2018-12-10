@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 486997 2018-12-08 23:34:27Z swills $
 
 PORTNAME=	bespin
 PORTVERSION=	201303202227
@@ -9,7 +9,7 @@ MASTER_SITES=	http://bsd.e-shell.net/local/
 PKGNAMEPREFIX=	kde4-style-
 DISTNAME=	cloudcity-${PORTVERSION}
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Configurable KDE4 style
 
 LICENSE=	LGPL21

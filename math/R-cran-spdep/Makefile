@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-spdep/Makefile 481688 2018-10-10 02:57:04Z tota $
+# $FreeBSD: head/math/R-cran-spdep/Makefile 486654 2018-12-05 08:48:33Z tota $
 
 PORTNAME=	spdep
-DISTVERSION=	0.7-9
+DISTVERSION=	0.8-1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

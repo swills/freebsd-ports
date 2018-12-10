@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 482400 2018-10-19 02:06:53Z yuri $
+# $FreeBSD: head/biology/Makefile 486814 2018-12-07 00:26:04Z yuri $
 #
 
     COMMENT = Biology
@@ -16,6 +16,7 @@
     SUBDIR += canu
     SUBDIR += cd-hit
     SUBDIR += cdbfasta
+    SUBDIR += checkm
     SUBDIR += chemeq
     SUBDIR += clustal-omega
     SUBDIR += clustalw
@@ -37,10 +38,12 @@
     SUBDIR += fluctuate
     SUBDIR += freebayes
     SUBDIR += garlic
+    SUBDIR += gatk
     SUBDIR += gff2ps
     SUBDIR += gmap
     SUBDIR += gperiodic
     SUBDIR += grappa
+    SUBDIR += groopm
     SUBDIR += hmmer
     SUBDIR += htslib
     SUBDIR += hyphy

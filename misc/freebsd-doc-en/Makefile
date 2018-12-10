@@ -1,5 +1,5 @@
 # Created by: Marc Fonvieille <blackend@FreeBSD.org>
-# $FreeBSD: head/misc/freebsd-doc-en/Makefile 480481 2018-09-23 10:33:21Z blackend $
+# $FreeBSD: head/misc/freebsd-doc-en/Makefile 486954 2018-12-08 15:03:44Z linimon $
 
 PORTNAME=	freebsd-doc
 PORTVERSION=	52287
@@ -14,7 +14,6 @@ COMMENT?=	Documentation from the FreeBSD Documentation Project
 LICENSE=	BSD2CLAUSE
 
 BROKEN_aarch64=		fails to build: Exception in thread "main" java.lang.StackOverflowError at org.apache.fop.hyphenation.TernaryTree.insert(TernaryTree.java:180)
-BROKEN_powerpc64=	fails to build: Java Runtime Environment: SIGSEGV happened inside stack but outside yellow and red zone.
 
 BUILD_DEPENDS=	docproj>=2.0_6:textproc/docproj
 

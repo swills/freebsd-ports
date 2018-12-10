@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/7kaa/Makefile 486059 2018-11-27 20:04:45Z linimon $
+# $FreeBSD: head/games/7kaa/Makefile 486756 2018-12-06 13:40:56Z linimon $
 
 PORTNAME=	7kaa
 PORTVERSION=	2.14.7
@@ -26,7 +26,6 @@ LLD_UNSAFE=	yes
 CONFIGURE_ARGS=	--disable-nls # no translations ATM
 USE_SDL=	sdl2
 CXXFLAGS+=		-Wno-error=narrowing
-CXXFLAGS_clang=		-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/${PORTNAME} \
 		share/pixmaps/${PORTNAME}.ico

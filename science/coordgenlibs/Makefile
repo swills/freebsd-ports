@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/coordgenlibs/Makefile 482958 2018-10-25 07:36:58Z yuri $
+# $FreeBSD: head/science/coordgenlibs/Makefile 486742 2018-12-06 08:06:49Z yuri $
 
 PORTNAME=	coordgenlibs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1
+DISTVERSION=	1.2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-Text-Trac/Makefile 482698 2018-10-21 16:51:01Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Trac/Makefile 487109 2018-12-09 23:55:57Z sunpoet $
 
 PORTNAME=	Text-Trac
-PORTVERSION=	0.19
+PORTVERSION=	0.23
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,8 +18,8 @@ RUN_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Class-Data-Inheritable>=0:devel/p5-Class-Data-Inheritable \
 		p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
-		p5-Tie-IxHash>=0:devel/p5-Tie-IxHash \
 		p5-Path-Tiny>=0:devel/p5-Path-Tiny \
+		p5-Tie-IxHash>=0:devel/p5-Tie-IxHash \
 		p5-UNIVERSAL-require>=0:devel/p5-UNIVERSAL-require
 TEST_DEPENDS=	p5-Test-Base>=0:devel/p5-Test-Base
 

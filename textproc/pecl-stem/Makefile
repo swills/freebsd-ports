@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/pecl-stem/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/textproc/pecl-stem/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	stem
 PORTVERSION=	1.5.1
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 post-configure:
 	echo "#define HAVE_XDL_ALLOCATOR_PRIV 1" >>${WRKSRC}/config.h

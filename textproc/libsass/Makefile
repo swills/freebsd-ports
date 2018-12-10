@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/textproc/libsass/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/libsass/Makefile 486678 2018-12-05 15:51:13Z nivit $
 
 PORTNAME=	libsass
-DISTVERSION=	3.5.4
-PORTREVISION=	1
+DISTVERSION=	3.5.5
+PORTREVISION=	0
 CATEGORIES=	textproc
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -13,14 +13,19 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		autoreconf compiler:c++11-lib gmake libtool pathfix
+USE_GITHUB=	yes
+USE_LDCONFIG=	yes
+
+CONFIGURE_ARGS=	--disable-static
+
 GH_ACCOUNT=	sass
 GNU_CONFIGURE=	yes
-USE_GITHUB=	yes
-PATHFIX_MAKEFILEIN=	GNUmakefile.am
-CONFIGURE_ARGS=	--disable-static
-MAKEFILE=	GNUmakefile
+
 INSTALL_TARGET=	install-strip
-USE_LDCONFIG=	yes
+
+MAKEFILE=	GNUmakefile
+
+PATHFIX_MAKEFILEIN=	GNUmakefile.am
 
 post-patch:
 	@${ECHO_CMD} "${ECHO_CMD} \"${PORTVERSION}\"" > ${WRKSRC}/version.sh

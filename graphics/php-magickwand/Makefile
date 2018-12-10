@@ -1,5 +1,5 @@
 # Created by: <mark@goodstorm.com>
-# $FreeBSD: head/graphics/php-magickwand/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/graphics/php-magickwand/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	magickwand
 PORTVERSION=	1.0.9
@@ -18,7 +18,7 @@ EXPIRATION_DATE=	2018-12-30
 LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
 
 USES=		php:ext pkgconfig
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CONFIGURE_ARGS=	--with-magickwand=${LOCALBASE}
 

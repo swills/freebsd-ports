@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/multimedia/linux-tsmuxer/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/multimedia/linux-tsmuxer/Makefile 486996 2018-12-08 23:31:48Z swills $
 
 PORTNAME=	tsmuxer
 PORTVERSION=	1.10.6
@@ -8,7 +8,7 @@ MASTER_SITES=	http://twocats.free.fr/pub/h264tobox/
 PKGNAMEPREFIX=	linux-
 DISTNAME=	tsMuxeR_${PORTVERSION}
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Utility to create TS and M2TS files for IP broadcasting
 
 USES=		linux

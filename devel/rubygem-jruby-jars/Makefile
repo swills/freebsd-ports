@@ -1,8 +1,8 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jruby-jars/Makefile 468373 2018-04-26 18:51:59Z sunpoet $
+# $FreeBSD: head/devel/rubygem-jruby-jars/Makefile 487098 2018-12-09 22:44:40Z swills $
 
 PORTNAME=	jruby-jars
-PORTVERSION=	9.1.17.0
+PORTVERSION=	9.2.5.0
 CATEGORIES=	devel rubygems java
 MASTER_SITES=	RG
 
@@ -12,9 +12,15 @@ COMMENT=	JAR files from the JRuby distribution
 LICENSE=	EPL GPLv2 LGPL21
 LICENSE_COMB=	dual
 
-NO_ARCH=	yes
+BUILD_DEPENDS=	jgem:lang/jruby
+RUN_DEPENDS=	jruby:lang/jruby
+
+USES=		gem
 USE_JAVA=	yes
 USE_RUBY=	yes
-USES=		gem
+
+RUBYGEMBIN=	${LOCALBASE}/bin/jgem
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

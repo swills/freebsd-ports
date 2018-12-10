@@ -1,8 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/mixxx/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/mixxx/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	mixxx
 DISTVERSION=	2.1.5
+PORTREVISION=	1
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	audio
 

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-asset_sync/Makefile 484238 2018-11-05 21:44:56Z sunpoet $
+# $FreeBSD: head/net/rubygem-asset_sync/Makefile 487107 2018-12-09 23:55:41Z sunpoet $
 
 PORTNAME=	asset_sync
-PORTVERSION=	2.5.0
+PORTVERSION=	2.6.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

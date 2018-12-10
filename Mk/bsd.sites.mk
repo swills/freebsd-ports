@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 482112 2018-10-14 20:17:25Z arved $
+# $FreeBSD: head/Mk/bsd.sites.mk 486800 2018-12-06 20:33:28Z sunpoet $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1029,7 +1029,7 @@ MASTER_SITE_SAMBA+= \
 	https://ftp.samba.org/pub/%SUBDIR%/
 .endif
 
-# List:	http://download.savannah.gnu.org/mirmon/
+# List:	https://download.savannah.gnu.org/mirmon/
 .if !defined(IGNORE_MASTER_SITE_SAVANNAH)
 MASTER_SITE_SAVANNAH+= \
 	https://download.savannah.gnu.org/releases/%SUBDIR%/ \

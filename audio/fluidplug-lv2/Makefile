@@ -1,8 +1,7 @@
-# $FreeBSD: head/audio/fluidplug-lv2/Makefile 472149 2018-06-10 17:17:38Z yuri $
+# $FreeBSD: head/audio/fluidplug-lv2/Makefile 487074 2018-12-09 19:06:04Z yuri $
 
 PORTNAME=	FluidPlug
-PORTVERSION=	g20161020
-PORTREVISION=	2
+PORTVERSION=	g20181209
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
@@ -19,7 +18,7 @@ LIB_DEPENDS=	libfluidsynth.so:audio/fluidsynth
 USES=		gmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	falkTX
-GH_TAGNAME=	889b256
+GH_TAGNAME=	8457f10
 
 SOUNDFONT_DIR=	${PREFIX}/share/sounds/sf2
 

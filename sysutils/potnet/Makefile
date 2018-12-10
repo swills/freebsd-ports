@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/potnet/Makefile 483983 2018-11-04 10:00:42Z pizzamig $
+# $FreeBSD: head/sysutils/potnet/Makefile 486770 2018-12-06 17:11:14Z jbeich $
 
 PORTNAME=	potnet
 DISTVERSION=	0.1.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	pizzamig@FreeBSD.org

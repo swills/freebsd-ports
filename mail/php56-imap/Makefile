@@ -1,8 +1,7 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/mail/php56-imap/Makefile 485585 2018-11-22 09:26:37Z ale $
+# $FreeBSD: head/mail/php56-imap/Makefile 487169 2018-12-10 14:19:22Z ale $
 
 CATEGORIES=	mail
-PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../../lang/php56
 

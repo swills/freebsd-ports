@@ -1,5 +1,5 @@
 # Created by: Frank Altpeter <frank@altpeter.de>
-# $FreeBSD: head/net-im/centerim/Makefile 479433 2018-09-10 15:32:24Z tobik $
+# $FreeBSD: head/net-im/centerim/Makefile 486673 2018-12-05 14:15:38Z amdmi3 $
 
 PORTNAME=	centerim
 PORTVERSION=	4.22.10
@@ -11,7 +11,7 @@ MASTER_SITES=	http://www.centerim.org/download/releases/ \
 MAINTAINER=	frank@altpeter.de
 COMMENT=	Text mode menu- and window-driven IM interface
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libassuan.so:security/libassuan \
@@ -27,6 +27,7 @@ CONFIGURE_ARGS=	--with-ssl --with-openssl
 CONFLICTS=	centericq-[0-9]* centerim-devel-[0-9]*
 
 SHEBANG_FILES=	misc/CenterIMLog2HTML.py misc/cimformathistory misc/cimextracthistory.pl
+SHEBANG_LANG=	gawk
 gawk_OLD_CMD=	/bin/gawk
 gawk_CMD=	/usr/bin/awk
 
@@ -69,6 +70,6 @@ post-patch:
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@(cd ${WRKSRC} ; ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/)
+	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

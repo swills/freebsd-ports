@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 485711 2018-11-23 22:25:09Z cy $
+# $FreeBSD: head/sysutils/Makefile 486677 2018-12-05 15:46:02Z rene $
 #
 
     COMMENT = System utilities
@@ -910,8 +910,6 @@
     SUBDIR += phantom
     SUBDIR += php56-fileinfo
     SUBDIR += php56-posix
-    SUBDIR += php70-fileinfo
-    SUBDIR += php70-posix
     SUBDIR += php71-fileinfo
     SUBDIR += php71-posix
     SUBDIR += php72-fileinfo

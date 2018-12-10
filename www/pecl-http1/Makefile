@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/pecl-http1/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/www/pecl-http1/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	http
 PORTVERSION=	1.7.6
@@ -20,7 +20,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 CONFLICTS=	pecl-http-*
 
 CONFIGURE_ARGS+=	--with-http-curl-requests \

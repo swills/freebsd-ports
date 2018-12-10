@@ -1,5 +1,5 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/php5-blitz-devel/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/php5-blitz-devel/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	blitz-devel
 PORTVERSION=	0.7.2
@@ -19,6 +19,6 @@ CONFLICTS=	php5-blitz-0.6*
 
 USES=		php:ext
 PHP_MODNAME=	blitz
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 486104 2018-11-28 19:17:29Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 487177 2018-12-10 15:11:22Z tobik $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -100,6 +100,7 @@
     SUBDIR += confetti
     SUBDIR += confget
     SUBDIR += consul-template
+    SUBDIR += crex
     SUBDIR += crimson
     SUBDIR += crunch
     SUBDIR += cs-aspell
@@ -422,6 +423,7 @@
     SUBDIR += libexttextcat
     SUBDIR += libflate
     SUBDIR += libfo
+    SUBDIR += libfolia
     SUBDIR += libgepub
     SUBDIR += libguess
     SUBDIR += libkmfl
@@ -1227,16 +1229,6 @@
     SUBDIR += php56-xmlreader
     SUBDIR += php56-xmlwriter
     SUBDIR += php56-xsl
-    SUBDIR += php70-ctype
-    SUBDIR += php70-dom
-    SUBDIR += php70-enchant
-    SUBDIR += php70-pspell
-    SUBDIR += php70-simplexml
-    SUBDIR += php70-wddx
-    SUBDIR += php70-xml
-    SUBDIR += php70-xmlreader
-    SUBDIR += php70-xmlwriter
-    SUBDIR += php70-xsl
     SUBDIR += php71-ctype
     SUBDIR += php71-dom
     SUBDIR += php71-enchant
@@ -1528,6 +1520,7 @@
     SUBDIR += rubygem-albino
     SUBDIR += rubygem-amatch
     SUBDIR += rubygem-asciidoctor
+    SUBDIR += rubygem-asciidoctor-diagram
     SUBDIR += rubygem-asciidoctor-plantuml
     SUBDIR += rubygem-autoprefixer-rails
     SUBDIR += rubygem-babel-source
@@ -1798,6 +1791,8 @@
     SUBDIR += txt2man
     SUBDIR += txt2tags
     SUBDIR += uchardet
+    SUBDIR += ucto
+    SUBDIR += uctodata
     SUBDIR += uim
     SUBDIR += uim-el
     SUBDIR += uim-gtk

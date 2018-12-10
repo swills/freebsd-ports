@@ -1,10 +1,11 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/devel/ncurses/Makefile 475966 2018-07-31 02:26:36Z swills $
+# $FreeBSD: head/devel/ncurses/Makefile 487056 2018-12-09 15:07:20Z swills $
 
 PORTNAME=	ncurses
 DISTVERSION=	6.1-${SNAPSHOT}
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.invisible-island.net/${PORTNAME}/current/
+MASTER_SITES=	ftp://ftp.invisible-island.net/${PORTNAME}/current/ \
+		https://invisible-mirror.net/archives/ncurses/current/
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	swills@FreeBSD.org
@@ -15,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_sparc64=	cannot build: coredump: illegal instruction
 
-SNAPSHOT=	20180728
+SNAPSHOT=	20181208
 GNU_CONFIGURE=	yes
 CONFIGURE_SCRIPT=../configure
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/misc --disable-overwrite \

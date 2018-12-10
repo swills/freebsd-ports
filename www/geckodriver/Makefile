@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/geckodriver/Makefile 482993 2018-10-25 21:59:37Z jbeich $
+# $FreeBSD: head/www/geckodriver/Makefile 486770 2018-12-06 17:11:14Z jbeich $
 
 PORTNAME=	geckodriver
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.23.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 
 MAINTAINER=	daniel@blodan.se

@@ -1,12 +1,12 @@
 # Created by: Simon Olofsson <simon@olofsson.de>
-# $FreeBSD: head/devel/hub/Makefile 484434 2018-11-08 07:42:58Z egypcio $
+# $FreeBSD: head/devel/hub/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	hub
 PORTVERSION=	2.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel sysutils
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Introduces git to GitHub
 
 LICENSE=	MIT

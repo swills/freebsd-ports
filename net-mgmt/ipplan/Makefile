@@ -1,5 +1,5 @@
 # Created by: Maxim Tuliuk <mt@primats.org.ua>
-# $FreeBSD: head/net-mgmt/ipplan/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/net-mgmt/ipplan/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	ipplan
 PORTVERSION=	4.92b
@@ -13,7 +13,7 @@ COMMENT=	IP address management and tracking
 DEPRECATED=	Works only with EOL php 5.6
 EXPIRATION_DATE=	2018-12-30
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 RUN_DEPENDS=	nmap:security/nmap
 

@@ -1,5 +1,5 @@
 # Created by: Eric Turgeon <ericturgeon.bsd@gmail.org>
-# $FreeBSD: head/net-mgmt/networkmgr/Makefile 480811 2018-09-27 19:00:27Z ericbsd $
+# $FreeBSD: head/net-mgmt/networkmgr/Makefile 486925 2018-12-08 09:17:35Z antoine $
 
 PORTNAME=	networkmgr
 DISTVERSION=	3.0
@@ -14,14 +14,14 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	doas:security/doas \
 		${LOCALBASE}/share/icons/hicolor/index.theme:misc/hicolor-icon-theme
 
-USES=		python:3.6 gnome shebangfix
+USES=		python:3.4+ gnome shebangfix
 SHEBANG_GLOB=	*.py
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	GhostBSD
 
 NO_ARCH=	yes
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils noflavors
 USE_GNOME=	pygobject3 gtk-update-icon-cache
 
 SUB_FILES=	pkg-message

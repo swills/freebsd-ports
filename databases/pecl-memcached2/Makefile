@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/pecl-memcached2/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/pecl-memcached2/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	memcached
 PORTVERSION=	2.2.0
@@ -24,7 +24,7 @@ IGBINARY_DESC=	Binary serializer support
 PORTSCOUT=	limit:^2\.
 
 CONFIGURE_ARGS=	--with-libmemcached-dir=${LOCALBASE}
-IGNORE_WITH_PHP=70 71 72 73
+IGNORE_WITH_PHP=71 72 73
 USE_PHP=	json:build session:build
 USES=		php:pecl pkgconfig
 

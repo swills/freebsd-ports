@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/sequeler/Makefile 482476 2018-10-20 09:19:51Z tobik $
+# $FreeBSD: head/databases/sequeler/Makefile 487140 2018-12-10 08:54:34Z tobik $
 
 PORTNAME=	sequeler
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.3
+DISTVERSION=	0.6.4
 CATEGORIES=	databases
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 		libgranite.so:x11-toolkits/granite \
 		libsecret-1.so:security/libsecret
 
-USES=		gettext gnome meson pkgconfig python:3.5+,build
+USES=		desktop-file-utils gettext gnome meson pkgconfig python:3.5+,build
 USE_GITHUB=	yes
 GH_ACCOUNT=	Alecaddd
 USE_GNOME=	glib20 gtk30 gtksourceview3 libgda5

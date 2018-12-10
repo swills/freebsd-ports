@@ -1,9 +1,8 @@
 # Created by: Alexey Bobkov <mr.deadlystorm@gmail.com>
-# $FreeBSD: head/net-mgmt/mysqld_exporter/Makefile 446130 2017-07-18 09:14:21Z bsam $
+# $FreeBSD: head/net-mgmt/mysqld_exporter/Makefile 487013 2018-12-09 02:56:18Z swills $
 
 PORTNAME=	mysqld_exporter
-PORTVERSION=	0.10.0
-PORTREVISION=	1
+PORTVERSION=	0.11.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt
 

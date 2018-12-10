@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/x11-wm/qtile/Makefile 486304 2018-11-30 21:36:11Z ericbsd $
+# $FreeBSD: head/x11-wm/qtile/Makefile 486927 2018-12-08 09:20:19Z antoine $
 
 PORTNAME=	qtile
 PORTVERSION=	0.12.0
@@ -27,8 +27,8 @@ GH_ACCOUNT=	qtile
 
 USE_GNOME=	pygobject3
 
-USES=		python:3.6
-USE_PYTHON=	distutils autoplist
+USES=		python:3.4+
+USE_PYTHON=	distutils autoplist noflavors
 NO_ARCH=	yes
 
 PORTDOCS=	CHANGELOG README.rst

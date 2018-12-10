@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-assistant-adp/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/qt4-assistant-adp/Makefile 487079 2018-12-09 20:11:52Z adridg $
 
 PORTNAME=	assistant
 PORTVERSION=	4.6.3
@@ -17,9 +17,9 @@ COMMENT=	Qt *.adp-compatible documentation browser
 DEPRECATED=		Qt4 has been EOL since december 2015
 EXPIRATION_DATE=	2019-03-15
 
+USES=		compiler:c++11-lang qmake qt:4
 USE_QT=		moc_build rcc_build uic_build corelib \
 		gui network xml doc dbus
-USES=		qmake qt:4
 QMAKE_ARGS=	QT_CONFIG+="dbus" QT_PRODUCT="OpenSource"
 
 ALL_TARGET=	first

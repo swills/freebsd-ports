@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 486165 2018-11-29 11:05:39Z tobik $
+# $FreeBSD: head/Mk/Uses/cargo.mk 486770 2018-12-06 17:11:14Z jbeich $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -46,7 +46,7 @@ DISTFILES+=	${CARGO_DIST_SUBDIR}/${_crate}.tar.gz:cargo_${_crate:S/-//g:S/.//g}
 
 CARGO_BUILDDEP?=	yes
 .if ${CARGO_BUILDDEP:tl} == "yes"
-BUILD_DEPENDS+=	 rust>=1.30.0:lang/rust
+BUILD_DEPENDS+=	 rust>=1.31.0:lang/rust
 .endif
 
 # Location of cargo binary (default to lang/rust's Cargo binary)
@@ -62,15 +62,13 @@ CARGO_TARGET_DIR?=	${WRKDIR}/target
 #  - RUSTC: path of rustc binary (default to lang/rust)
 #  - RUSTDOC: path of rustdoc binary (default to lang/rust)
 #  - RUSTFLAGS: custom flags to pass to all compiler invocations that Cargo performs
-#
-# XXX LDFLAGS => -C link-arg=$1 (via RUSTFLAGS)
 CARGO_ENV+= \
 	CARGO_HOME=${WRKDIR}/cargo-home \
 	CARGO_BUILD_JOBS=${MAKE_JOBS_NUMBER} \
 	CARGO_TARGET_DIR=${CARGO_TARGET_DIR} \
 	RUSTC=${LOCALBASE}/bin/rustc \
 	RUSTDOC=${LOCALBASE}/bin/rustdoc \
-	RUSTFLAGS="${RUSTFLAGS}"
+	RUSTFLAGS="${RUSTFLAGS} ${LDFLAGS:S/^/-C link-arg=/}"
 
 # Adjust -C target-cpu if -march/-mcpu is set by bsd.cpu.mk
 .if ${ARCH} == amd64 || ${ARCH} == i386

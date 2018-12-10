@@ -1,8 +1,9 @@
 # Created by: Matt Peterson <matt@peterson.org>
-# $FreeBSD: head/net-mgmt/collectd5/Makefile 484521 2018-11-09 16:05:53Z swills $
+# $FreeBSD: head/net-mgmt/collectd5/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	collectd
 PORTVERSION=	5.8.1
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://storage.googleapis.com/collectd-tarballs/
 PKGNAMESUFFIX=	5

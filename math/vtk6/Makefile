@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk6/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/math/vtk6/Makefile 486646 2018-12-05 01:28:06Z jbeich $
 
 PORTNAME=	vtk
 PORTVERSION=	6.2.0
@@ -220,6 +220,8 @@ PLIST_SUB+=	WRAP="@comment "
 .if ${PORT_OPTIONS:MDOCS}
 CMAKE_ARGS+=	-DBUILD_DOCUMENTATION:BOOL=ON
 BUILD_DEPENDS+=	doxygen:devel/doxygen
+USES+=		perl5
+USE_PERL5+=	build
 .else
 CMAKE_ARGS+=	-DBUILD_DOCUMENTATION:BOOL=OFF
 .endif

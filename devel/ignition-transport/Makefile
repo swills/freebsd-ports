@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/ignition-transport/Makefile 485490 2018-11-20 22:34:38Z yuri $
+# $FreeBSD: head/devel/ignition-transport/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	ignition-transport
 DISTVERSION=	6.0.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

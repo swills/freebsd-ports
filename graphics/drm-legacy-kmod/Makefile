@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-legacy-kmod/Makefile 484330 2018-11-06 21:08:29Z zeising $
+# $FreeBSD: head/graphics/drm-legacy-kmod/Makefile 487117 2018-12-10 03:02:11Z jmd $
 
 PORTNAME=	drm-legacy-kmod
 PORTVERSION=	g20181031
@@ -18,7 +18,7 @@ USES=		kmod uidfix
 
 OPTIONS_DEFINE=	DEBUG
 
-CONFLICTS_INSTALL=	drm-devel-kmod drm-stable-kmod drm-next-kmod
+CONFLICTS_INSTALL=	drm-fbsd11.2-kmod drm-fbsd12.0-kmod drm-current-kmod
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop

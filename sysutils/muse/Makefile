@@ -1,5 +1,5 @@
 # Created by: freebsd@spatula.net
-# $FreeBSD: head/sysutils/muse/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/sysutils/muse/Makefile 486720 2018-12-05 20:01:10Z linimon $
 
 PORTNAME=	muse
 PORTVERSION=	0.2
@@ -13,7 +13,6 @@ BROKEN_FreeBSD_12=	fails to compile: read_mem.c: invalid use of undefined type '
 BROKEN_FreeBSD_13=	fails to compile: read_mem.c: invalid use of undefined type 'struct vmmeter'
 BROKEN_mips=		fails to compile: muse.c: storage size of 'vmstats' isn't known
 BROKEN_mips64=		fails to compile: muse.c: storage size of 'vmstats' isn't known
-BROKEN_powerpc64=	fails to compile: muse.c: storage size of 'vmstats' isn't known
 
 USES=		uidfix
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/genact/Makefile 482993 2018-10-25 21:59:37Z jbeich $
+# $FreeBSD: head/games/genact/Makefile 486770 2018-12-06 17:11:14Z jbeich $
 
 PORTNAME=	genact
 DISTVERSION=	0.6.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 MAINTAINER=	0mp@FreeBSD.org

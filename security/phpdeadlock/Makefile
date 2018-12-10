@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/security/phpdeadlock/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/security/phpdeadlock/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	phpdeadlock
 PORTVERSION=	1.01
@@ -27,7 +27,7 @@ USE_PHP=	mysql session ctype pcre
 NO_BUILD=	yes
 NO_ARCH=	yes
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 SUB_FILES=	pkg-message
 SUB_LIST=	DLURL=${DLURL} DLDIR=${DLDIR}

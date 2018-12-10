@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libprojectm/Makefile 483108 2018-10-27 03:26:55Z swills $
+# $FreeBSD: head/graphics/libprojectm/Makefile 486584 2018-12-04 05:38:19Z yuri $
 
 PORTNAME=	libprojectM
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,8 @@ LIB_DEPENDS=	libftgl.so:graphics/ftgl \
 		libvisual-0.4.so:graphics/libvisual04
 RUN_DEPENDS=	${LOCALBASE}/include/glm/glm.hpp:math/glm
 
-USES=		autoreconf:build gl gmake libtool localbase:ldflags pkgconfig qt:5
+USES=		autoreconf:build compiler:c++11-lang gl gmake libtool \
+		localbase:ldflags pkgconfig qt:5
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	projectM-visualizer

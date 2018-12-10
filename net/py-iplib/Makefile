@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/py-iplib/Makefile 484437 2018-11-08 07:48:55Z egypcio $
+# $FreeBSD: head/net/py-iplib/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	iplib
 PORTVERSION=	1.2.1
@@ -7,7 +7,7 @@ CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Convert amongst many different IPv4 notations
 
 LICENSE=	BSD3CLAUSE

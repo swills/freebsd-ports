@@ -1,5 +1,5 @@
 # Created by: Alex Allan <alex@kamaz.org.uk>
-# $FreeBSD: head/audio/taglookup/Makefile 424762 2016-10-27 12:59:41Z amdmi3 $
+# $FreeBSD: head/audio/taglookup/Makefile 486872 2018-12-07 16:29:51Z linimon $
 
 PORTNAME=	taglookup
 PORTVERSION=	0.2
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libcddb.so:audio/libcddb \
 		libtag.so:audio/taglib
 
-USES=		pkgconfig tar:tgz
+USES=		compiler:c++11-lang pkgconfig tar:tgz
 
 PLIST_FILES=	bin/taglookup \
 		man/man1/taglookup.1.gz

@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/pam_ssh_agent_auth/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/security/pam_ssh_agent_auth/Makefile 487024 2018-12-09 06:10:49Z tobik $
 
 PORTNAME=	pam_ssh_agent_auth
 PORTVERSION=	0.10.3
@@ -10,7 +10,6 @@ MASTER_SITES=	SF/pamsshagentauth/${PORTNAME}/v${PORTVERSION}/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PAM module which permits authentication via ssh-agent
 
-BROKEN_SSL=	openssl111
 BROKEN_mips64=		fails to compile: ed25519-donna-portable.h:85:4: Need a uint128_t implementation!
 BROKEN_powerpc64=	fails to compile: ed25519-donna-portable.h: warning: ALIGN redefined
 

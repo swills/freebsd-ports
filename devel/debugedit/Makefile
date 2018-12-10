@@ -1,5 +1,5 @@
 # Created by: sobomax
-# $FreeBSD: head/devel/debugedit/Makefile 450036 2017-09-18 09:50:17Z amdmi3 $
+# $FreeBSD: head/devel/debugedit/Makefile 487187 2018-12-10 16:50:08Z rene $
 
 PORTNAME=	debugedit
 PORTVERSION=	20170411.1

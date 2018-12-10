@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-plugins-buzztard/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/multimedia/gstreamer-plugins-buzztard/Makefile 486936 2018-12-08 10:19:51Z tobik $
 
 PORTNAME=	buzztard
 PORTVERSION=	0.7.0
@@ -11,6 +11,9 @@ DISTNAME=	gst-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Buzztard gstreamer plugins
+
+DEPRECATED=	Unused in the ports tree and unmaintained upstream
+EXPIRATION_DATE=	2018-12-21
 
 OPTIONS_DEFINE=	DOCS
 

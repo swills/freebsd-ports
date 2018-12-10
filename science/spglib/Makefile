@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/spglib/Makefile 485471 2018-11-20 19:23:45Z yuri $
+# $FreeBSD: head/science/spglib/Makefile 486977 2018-12-08 18:47:16Z yuri $
 
 PORTNAME=	spglib
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.11.1.2
+DISTVERSION=	1.11.2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

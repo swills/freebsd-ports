@@ -1,9 +1,8 @@
 # Created by: Martin Wilke (miwi@FreeBSD.org)
-# $FreeBSD: head/audio/xfce4-mpc-plugin/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/xfce4-mpc-plugin/Makefile 486992 2018-12-08 23:20:30Z madpilot $
 
 PORTNAME=	xfce4-mpc-plugin
-PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTVERSION=	0.5.1
 CATEGORIES=	audio xfce
 MASTER_SITES=	XFCE/src/panel-plugins/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4
@@ -16,12 +15,18 @@ LICENSE=	ISCL
 LIB_DEPENDS=	libmpd.so:audio/libmpd
 RUN_DEPENDS=	musicpd:audio/musicpd
 
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
-USES=		gettext gmake libtool pkgconfig tar:bzip2 xfce:gtk3
+USES=		gettext-tools gmake libtool pkgconfig tar:bzip2 xfce:gtk3
 USE_GNOME=	gtk30 intltool cairo gdkpixbuf2
 USE_XFCE=	panel
 
+GNU_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
 CONFIGURE_ARGS+=	--with-libmpd=${LOCALBASE}
+
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	yes
+
+NLS_CONFIGURE_ENABLE=	nls
+NLS_USES=	gettext-runtime
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/Mk/bsd.port.mk 486551 2018-12-03 20:03:02Z sunpoet $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1421,7 +1421,7 @@ USES+=	mate
 .endif
 
 .if defined(USE_GL) && (!defined(USES) || !${USES:Mgl})
-DEV_WARNING+=	"Setting USE_GL without USES=gl is deprecated"
+DEV_WARNING+=	"Using USE_GL alone is deprecated, please add USES=gl."
 USES+=	gl
 .endif
 

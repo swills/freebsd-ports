@@ -1,5 +1,5 @@
 # Created by: Carsten Jensen <carsten@sitracker.org>
-# $FreeBSD: head/www/sit/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/www/sit/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	sit
 PORTVERSION=	3.67
@@ -16,7 +16,7 @@ EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	GPLv2
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 USES=		php:web
 USE_PHP=	pcre mysql session zlib mbstring

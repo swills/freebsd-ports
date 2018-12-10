@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-skulpture/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/x11-themes/kde4-style-skulpture/Makefile 486999 2018-12-08 23:35:27Z swills $
 
 PORTNAME=	skulpture
 PORTVERSION=	0.2.4
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	kde4-style-
 DISTFILES=	59031-${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	KDE style featuring 3D artwork and enhanced the visual experience
 
 LICENSE=	GPLv3

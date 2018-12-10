@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/iocage/Makefile 457437 2017-12-28 04:41:49Z araujo $
+# $FreeBSD: head/sysutils/iocage/Makefile 486926 2018-12-08 09:18:49Z antoine $
 
 PORTNAME=	iocage
 PORTVERSION=	0.9.10
@@ -25,7 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=6.7:devel/py-click@${PY_FLAVOR} \
 USE_GITHUB=	yes
 
 NO_ARCH=	yes
-USES=		python:3.6
+USES=		python:3.4+
 USE_PYTHON=	autoplist distutils
 
 CONFLICTS=	py27-iocage-[0-9]*

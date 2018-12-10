@@ -1,5 +1,5 @@
 # Created by: Evan Sarmiento <esarmiento@wayfair.com>
-# $FreeBSD: head/databases/pecl-chdb/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/pecl-chdb/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	chdb
 PORTVERSION=	1.0.3
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libcmph.so:devel/cmph
 RUN_DEPENDS=	${LOCALBASE}/lib/libcmph.so:devel/cmph
 
 USES=		php:ext
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CFLAGS+=	-L${LOCALBASE}/lib
 

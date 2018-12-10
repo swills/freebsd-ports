@@ -1,9 +1,8 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/net/py-netif/Makefile 481290 2018-10-05 18:24:01Z wg $
+# $FreeBSD: head/net/py-netif/Makefile 486884 2018-12-07 19:36:34Z wg $
 
 PORTNAME=	netif
-PORTVERSION=	1.0.20181005
-PORTREVISION=	1
+PORTVERSION=	1.0.20181207
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -18,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bsd>0:devel/py-bsd@${PY_FLAVOR} \
 USE_GITHUB=     yes
 GH_ACCOUNT=	freenas
 GH_PROJECT=	py-netif
-GH_TAGNAME=	ebffafe
+GH_TAGNAME=	5dce20c
 
 HAS_CONFIGURE=	yes
 USES=		python

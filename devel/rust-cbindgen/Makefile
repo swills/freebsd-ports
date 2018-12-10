@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/rust-cbindgen/Makefile 483566 2018-10-31 12:18:31Z jbeich $
+# $FreeBSD: head/devel/rust-cbindgen/Makefile 486770 2018-12-06 17:11:14Z jbeich $
 
 PORTNAME=	cbindgen
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.7
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	rust-
 

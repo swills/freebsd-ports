@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 481529 2018-10-08 09:31:09Z tz $
+# $FreeBSD: head/converters/Makefile 486677 2018-12-05 15:46:02Z rene $
 #
 
     COMMENT = Character code converters
@@ -143,9 +143,6 @@
     SUBDIR += php56-iconv
     SUBDIR += php56-mbstring
     SUBDIR += php56-recode
-    SUBDIR += php70-iconv
-    SUBDIR += php70-mbstring
-    SUBDIR += php70-recode
     SUBDIR += php71-iconv
     SUBDIR += php71-mbstring
     SUBDIR += php71-recode

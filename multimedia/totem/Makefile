@@ -1,8 +1,8 @@
 # Created by: Hendrik Scholz <hendrik@scholz.net>
-# $FreeBSD: head/multimedia/totem/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/multimedia/totem/Makefile 487055 2018-12-09 15:00:29Z kwm $
 
 PORTNAME=	totem
-PORTVERSION=	3.26.1
+PORTVERSION=	3.26.2
 CATEGORIES=	multimedia gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

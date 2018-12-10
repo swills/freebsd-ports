@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/devel/pecl-expect/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-expect/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	expect
 PORTVERSION=	0.3.3
@@ -17,7 +17,7 @@ LICENSE=	PHP301
 LIB_DEPENDS=	libexpect.so:lang/expect
 
 USES=		php:pecl tcl:86
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CFLAGS+=	-I${TCL_INCLUDEDIR}
 CONFIGURE_ARGS+=--with-expect=${LOCALBASE}

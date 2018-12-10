@@ -1,8 +1,8 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu/Makefile 485771 2018-11-24 13:35:19Z joneum $
+# $FreeBSD: head/devel/pecl-APCu/Makefile 487185 2018-12-10 16:41:43Z joneum $
 
 PORTNAME=	APCu
-PORTVERSION=	5.1.14
+PORTVERSION=	5.1.15
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
@@ -12,9 +12,10 @@ COMMENT=	APC User Caching
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+IGNORE_WITH_PHP=56
+
 CONFLICTS_INSTALL=	pecl-APC
 
-IGNORE_WITH_PHP=56
 USES=		localbase php:pecl
 PHP_MODNAME=	${PORTNAME:tl}
 

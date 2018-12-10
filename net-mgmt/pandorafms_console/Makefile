@@ -1,5 +1,5 @@
 # Created by: KIKUCHI Koichiro <koichiro@rworks.jp>
-# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	pandora_console
 CATEGORIES=	net-mgmt
@@ -13,7 +13,7 @@ EXPIRATION_DATE=	2018-12-30
 LICENSE=	${PANDORA_LICENSE}
 LICENSE_FILE=	${PANDORA_LICENSE_FILE}
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 RUN_DEPENDS=	${LOCALBASE}/bin/twopi:graphics/graphviz
 

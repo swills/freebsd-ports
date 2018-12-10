@@ -1,8 +1,9 @@
-# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 486217 2018-11-30 00:15:07Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 486821 2018-12-07 04:10:11Z jbeich $
 
 PORTNAME=	media-driver
 DISTVERSIONPREFIX=	intel-media-
 DISTVERSION=	18.3.0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 PKGNAMEPREFIX=	libva-intel-
 
@@ -24,12 +25,11 @@ USES=		cmake:outsource compiler:c++11-lib pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	intel
 ARCH_SUFX=	${ARCH:S/i386/32/:S/amd//:S/x86_//}
-CMAKE_OFF=	MEDIA_BUILD_FATAL_WARNINGS
+CMAKE_OFF=	MEDIA_BUILD_FATAL_WARNINGS INSTALL_DRIVER_SYSCONF
 CMAKE_ARGS=	-DBUILD_TYPE:STRING="${CMAKE_BUILD_TYPE}" \
 		-DARCH:STRING="${ARCH_SUFX}" \
 		-DUFO_MARCH:STRING="${CPUTYPE}"
-PLIST_FILES=	etc/profile.d/intel-media.sh \
-		lib/dri/iHD_drv_video.so \
+PLIST_FILES=	lib/dri/iHD_drv_video.so \
 		lib/igfxcmrt${ARCH_SUFX}.so
 
 OPTIONS_DEFINE=	TEST

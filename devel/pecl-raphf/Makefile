@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-raphf/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/devel/pecl-raphf/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	raphf
 PORTVERSION=	1.1.2
@@ -18,6 +18,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 PORTSCOUT=	limit:^1.*
 
 USES=		gmake php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

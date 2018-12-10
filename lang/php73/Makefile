@@ -1,10 +1,10 @@
-# $FreeBSD: head/lang/php73/Makefile 485647 2018-11-23 10:28:43Z joneum $
+# $FreeBSD: head/lang/php73/Makefile 486830 2018-12-07 07:50:31Z tz $
 
 PORTNAME=	php73
-DISTVERSION=	7.3.0RC6
+DISTVERSION=	7.3.0
 PORTREVISION?=	0
 CATEGORIES?=	lang devel www
-MASTER_SITES=	https://downloads.php.net/~cmb/
+MASTER_SITES=   PHP/distributions
 DISTNAME=	php-${DISTVERSION}
 
 MAINTAINER=	tz@FreeBSD.org

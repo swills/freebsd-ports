@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 485481 2018-11-20 20:29:41Z rene $
+# $FreeBSD: head/net-mgmt/Makefile 486677 2018-12-05 15:46:02Z rene $
 #
 
     COMMENT = Network management tools
@@ -288,7 +288,6 @@
     SUBDIR += percona-monitoring-plugins
     SUBDIR += pftabled
     SUBDIR += php56-snmp
-    SUBDIR += php70-snmp
     SUBDIR += php71-snmp
     SUBDIR += php72-snmp
     SUBDIR += php73-snmp

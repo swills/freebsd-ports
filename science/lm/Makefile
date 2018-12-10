@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/lm/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/science/lm/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	lm
 DISTVERSION=	2.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	science
 MASTER_SITES=	http://scs.illinois.edu/schulten/${PORTNAME}/download/${PORTNAME}${DISTVERSION:R:S/.//}/
@@ -21,11 +21,12 @@ LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		libprotobuf.so:devel/protobuf \
 		libsz.so:science/szip
 
-USES=		gettext-runtime gmake
+USES=		compiler:c++11-lang gettext-runtime gmake
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
 CXXFLAGS+=	-DLINUX
 MAKE_ENV=	BUILD_DIR=${WRKSRC} PROTOBUF_DIR=${LOCALBASE}
+USE_CXXSTD=	c++11
 
 OPTIONS_DEFINE=		MPI PYTHON VMD
 OPTIONS_DEFAULT=	MPI PYTHON # VMD can't be default because VMD requires manual tarball fetch

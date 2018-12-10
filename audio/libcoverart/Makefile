@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libcoverart/Makefile 459556 2018-01-20 23:06:41Z jhale $
+# $FreeBSD: head/audio/libcoverart/Makefile 486871 2018-12-07 16:25:37Z linimon $
 
 PORTNAME=	libcoverart
 PORTVERSION=	1.0.0
@@ -14,8 +14,12 @@ LICENSE=	LGPL20
 LIB_DEPENDS=	libjansson.so:devel/jansson \
 		libneon.so:www/neon
 
-USES=		cmake pathfix
+USES=		compiler:c11 cmake pathfix
+USE_CSTD=	c99
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
+
+CXXFLAGS+=	-Wno-implicit-fallthrough
 
 post-patch:
 	${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \

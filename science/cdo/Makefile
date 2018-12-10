@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/cdo/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/cdo/Makefile 486805 2018-12-06 23:06:49Z linimon $
 
 PORTNAME=	cdo
 PORTVERSION=	1.9.5
@@ -13,8 +13,6 @@ COMMENT=	Climate Data Operators
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to compile: remaplib.cc:1504:6: internal compiler error: in gsi_insert_seq_nodes_after, at gimple-iterator.c:283
 
 OPTIONS_DEFINE=	CGRIBEX HDF5 JASPER NETCDF PROJ SZIP UDUNITS UUID
 OPTIONS_DEFAULT=CGRIBEX HDF5 JASPER NETCDF PROJ SZIP UDUNITS UUID

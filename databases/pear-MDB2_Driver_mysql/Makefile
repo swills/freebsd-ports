@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/databases/pear-MDB2_Driver_mysql/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/pear-MDB2_Driver_mysql/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	MDB2_Driver_mysql
 DISTVERSION=	1.5.0b4
@@ -19,6 +19,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 NO_ARCH=	yes
 USES=		pear
 USE_PHP=	mysql
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

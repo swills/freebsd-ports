@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/databases/pecl-tokyo_tyrant/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/databases/pecl-tokyo_tyrant/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	tokyo_tyrant
 PORTVERSION=	0.7.0
@@ -19,6 +19,6 @@ LIB_DEPENDS=	libtokyotyrant.so:databases/tokyotyrant
 
 USES=		php:pecl pkgconfig
 USE_PHP=	session:build
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 .include <bsd.port.mk>

@@ -1,11 +1,11 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/shim/Makefile 485512 2018-11-21 13:27:07Z egypcio $
+# $FreeBSD: head/sysutils/shim/Makefile 486672 2018-12-05 14:09:12Z egypcio $
 
 PORTNAME=	shim
 PORTVERSION=	0.9
 CATEGORIES=	sysutils
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	UEFI Secure Boot shim loader
 
 LICENSE=	BSD2CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Alan Garfield <alan@fromorbit.com>
-# $FreeBSD: head/print/pecl-ps/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/print/pecl-ps/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	ps
 PORTVERSION=	1.3.7
@@ -14,7 +14,7 @@ EXPIRATION_DATE=	2018-12-30
 
 LICENSE=	PHP202
 
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 LIB_DEPENDS=	libps.so:print/pslib
 

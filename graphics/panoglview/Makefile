@@ -1,5 +1,5 @@
 # Created by: argv[0] (Iouri V. Ivliev)
-# $FreeBSD: head/graphics/panoglview/Makefile 486411 2018-12-02 12:47:37Z linimon $
+# $FreeBSD: head/graphics/panoglview/Makefile 486618 2018-12-04 17:46:22Z swills $
 
 PORTNAME=	panoglview
 PORTVERSION=	0.2.2
@@ -20,7 +20,7 @@ CFLAGS+=	-I${LOCALBASE}/include
 CXXFLAGS+=	-I${LOCALBASE}/include -ftemplate-depth-64
 LIBS+=		-L${LOCALBASE}/lib -lGLU -lGL
 
-USE_WX=		2.8
+USE_WX=		2.8 3.0
 WX_COMPS=	wx
 WX_CONF_ARGS=	relative
 

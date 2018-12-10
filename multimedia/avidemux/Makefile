@@ -1,5 +1,5 @@
 # Created by: Anish Mistry (with help from mean)
-# $FreeBSD: head/multimedia/avidemux/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/multimedia/avidemux/Makefile 486523 2018-12-03 17:12:56Z rene $
 # assuming freebsd always has 16 byte aligned malloc as macos does. is this true?
 # nls files not getting installed with nls=on. are they getting built?
 # sync port options with current software options
@@ -22,9 +22,6 @@ PLIST_FILES+=	${DATADIR}/${PORTNAME}.png
 PLIST_FILES+=	${DESKTOPDIR}/${PORTNAME}.desktop
 .endif
 .if ${PORT_OPTIONS:MQT4}
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
-
 PLIST_FILES+=	${DESKTOPDIR}/${PORTNAME}_qt4.desktop
 .endif
 

@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 485482 2018-11-20 20:31:16Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 486573 2018-12-04 00:54:38Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -115,6 +115,10 @@ BUILD_DEPENDS+=	rust-cbindgen>=0.6.2:devel/rust-cbindgen \
 				node:www/node
 .endif
 
+.if ${MOZILLA_VER:R:R} < 64
+MOZ_OPTIONS+=	--enable-pie
+.endif
+
 MOZILLA_SUFX?=	none
 MOZSRC?=	${WRKSRC}
 PLISTF?=	${WRKDIR}/plist_files
@@ -220,8 +224,7 @@ MOZ_OPTIONS+=	\
 		--enable-chrome-format=${MOZ_CHROME} \
 		--enable-default-toolkit=${MOZ_TOOLKIT} \
 		--enable-update-channel=${MOZ_CHANNEL} \
-		--disable-updater \
-		--enable-pie
+		--disable-updater
 # others
 MOZ_OPTIONS+=	--with-system-zlib		\
 		--with-system-bz2

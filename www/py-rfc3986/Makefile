@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-rfc3986/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/www/py-rfc3986/Makefile 486912 2018-12-08 06:03:24Z yuri $
 
 PORTNAME=	rfc3986
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

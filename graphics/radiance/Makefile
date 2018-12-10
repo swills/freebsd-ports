@@ -1,8 +1,10 @@
-# $FreeBSD: head/graphics/radiance/Makefile 485720 2018-11-24 01:18:57Z yuri $
+# $FreeBSD: head/graphics/radiance/Makefile 486974 2018-12-08 18:40:27Z yuri $
 
 PORTNAME=	radiance
 DISTVERSION=	0.6.0
+PORTREVISION=	1
 CATEGORIES=	graphics
+PKGNAMESUFFIX=	-video
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Video art software for VJs

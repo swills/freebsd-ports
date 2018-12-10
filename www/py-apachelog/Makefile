@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/py-apachelog/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/py-apachelog/Makefile 487070 2018-12-09 18:30:32Z joneum $
 
 PORTNAME=	apachelog
 PORTVERSION=	1.1
@@ -9,7 +9,7 @@ MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/co
 		http://freebsd.unixfreunde.de/sources/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Python access log parser
 
 LICENSE=	ART10 GPLv1+ # same as Perl

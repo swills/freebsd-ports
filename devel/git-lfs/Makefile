@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/git-lfs/Makefile 485012 2018-11-15 10:54:05Z egypcio $
+# $FreeBSD: head/devel/git-lfs/Makefile 486752 2018-12-06 11:34:14Z egypcio $
 
 PORTNAME=		git-lfs
 DISTVERSIONPREFIX=	v
-DISTVERSION=		2.6.0
+DISTVERSION=		2.6.1
 CATEGORIES=		devel
 
-MAINTAINER=	egypcio@googlemail.com
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Git extension for versioning large files
 
 LICENSE=	MIT

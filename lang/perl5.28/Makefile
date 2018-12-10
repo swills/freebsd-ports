@@ -1,9 +1,8 @@
 # Created by: mat
-# $FreeBSD: head/lang/perl5.28/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/lang/perl5.28/Makefile 486601 2018-12-04 14:30:52Z mat $
 
 PORTNAME=	perl
 DISTVERSION=	${PERL_VERSION}
-PORTREVISION=	2
 CATEGORIES=	lang devel perl5
 MASTER_SITES=	CPAN/../../src/5.0 CPAN/../../authors/id/X/XS/XSAWYERX/
 DIST_SUBDIR=	perl

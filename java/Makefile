@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/Makefile 483171 2018-10-27 19:33:56Z pi $
+# $FreeBSD: head/java/Makefile 486518 2018-12-03 13:36:05Z rene $
 #
 
     COMMENT = Java language support
@@ -11,9 +11,7 @@
     SUBDIR += bootstrap-openjdk8
     SUBDIR += bouncycastle
     SUBDIR += bouncycastle15
-    SUBDIR += cacao
     SUBDIR += castor
-    SUBDIR += classpath
     SUBDIR += cos
     SUBDIR += cryptix-jce
     SUBDIR += dbvis
@@ -53,7 +51,6 @@
     SUBDIR += jakarta-commons-primitives
     SUBDIR += jakarta-oro
     SUBDIR += jakarta-regexp
-    SUBDIR += jamvm
     SUBDIR += jasmin
     SUBDIR += jattach
     SUBDIR += java-checkstyle

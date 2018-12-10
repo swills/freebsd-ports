@@ -1,5 +1,5 @@
 # Created by: Loren M. Lang <lorenl@alzatex.com>
-# $FreeBSD: head/games/blobwars/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/games/blobwars/Makefile 486844 2018-12-07 09:31:28Z amdmi3 $
 
 PORTNAME=	blobwars
 PORTVERSION=	2.00
@@ -15,7 +15,6 @@ LICENSE_FILE_GPLv2+ =	${WRKSRC}/doc/license
 
 USES=		gmake pkgconfig
 USE_SDL=	image2 mixer2 net2 sdl2 ttf2
-WITH_ZLIB=	yes
 
 INSTALLS_ICONS=	yes
 
@@ -30,7 +29,6 @@ post-patch:
 	@${REINPLACE_CMD} \
 		-e 's|%%LOCALBASE%%|${LOCALBASE}|' \
 			${WRKSRC}/Makefile
-	${CHMOD} 664 ${WRKSRC}/icons/*
 
 post-patch-DOCS-off:
 	@${REINPLACE_CMD} \
@@ -43,8 +41,8 @@ post-patch-NLS-off:
 		${WRKSRC}/Makefile
 
 post-install:
-	${LN} -sf ${PREFIX}/share/icons/hicolor/48x48/apps/${PORTNAME}.png \
+	@${LN} -sf ../icons/hicolor/48x48/apps/${PORTNAME}.png \
 		${STAGEDIR}${PREFIX}/share/pixmaps/
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

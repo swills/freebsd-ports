@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-lava/Makefile 477057 2018-08-13 08:00:46Z tota $
+# $FreeBSD: head/math/R-cran-lava/Makefile 487118 2018-12-10 03:53:59Z tota $
 
 PORTNAME=	lava
-DISTVERSION=	1.6.3
+DISTVERSION=	1.6.4
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

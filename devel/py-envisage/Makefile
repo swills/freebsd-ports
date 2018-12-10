@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-envisage/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-envisage/Makefile 486497 2018-12-03 04:33:28Z swills $
 
 PORTNAME=	envisage
-PORTVERSION=	4.6.0
+PORTVERSION=	4.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,6 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=4.5.0:devel/py-traits@${PY_FLAVOR}
 
 USES=		python:-2.7
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

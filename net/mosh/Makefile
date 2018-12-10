@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/mosh/Makefile 473276 2018-06-24 21:11:14Z sunpoet $
+# $FreeBSD: head/net/mosh/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
 
 PORTNAME=	mosh
 PORTVERSION=	1.3.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://mosh.mit.edu/ \
 		ZI
@@ -23,7 +23,8 @@ CONFIGURE_ARGS=	--with-utempter --without-ncurses
 CONFIGURE_ENV+=	CRYPTO_CFLAGS="-I${OPENSSLINC}" CRYPTO_LIBS="-L${OPENSSLLIB} -lssl -lcrypto" \
 		TINFO_CFLAGS="-I/usr/include"
 INSTALL_TARGET=	install-strip
-USES=		autoreconf ncurses perl5 pkgconfig ssl
+USES=		autoreconf compiler:c++11-lang ncurses perl5 pkgconfig ssl
+USE_CXXSTD=	c++11
 
 CONFLICTS_INSTALL=	mosh-0.[2-9].*
 

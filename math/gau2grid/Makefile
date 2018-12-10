@@ -1,9 +1,12 @@
-# $FreeBSD: head/math/gau2grid/Makefile 482614 2018-10-20 18:36:24Z yuri $
+# $FreeBSD: head/math/gau2grid/Makefile 486581 2018-12-04 05:25:43Z yuri $
 
 PORTNAME=	gau2grid
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.0
+DISTVERSION=	1.3.0
 CATEGORIES=	math python
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	0deace28eaad3359a595e384daf7bb9dd157c0d6.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Fast computation of a gaussian and its derivative on a grid
@@ -16,7 +19,7 @@ ONLY_FOR_ARCHS_REASON=	BUG: ValueError: descr is not a valid dtype descriptor: '
 
 BUILD_DEPENDS=	${PYNUMPY}
 
-USES=		cmake:outsource python:build # C code build depends on python to generate some headers
+USES=		cmake:outsource compiler:c11 python:build # C code build depends on python to generate some headers
 USE_GITHUB=	yes
 GH_ACCOUNT=	dgasmith
 USE_LDCONFIG=	yes

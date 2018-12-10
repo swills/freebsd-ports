@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	mogilefs
 PORTVERSION=	0.9.2
@@ -17,7 +17,7 @@ LICENSE=	BSD3CLAUSE
 LIB_DEPENDS=	libneon.so:www/neon
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 post-extract:
 	@${REINPLACE_CMD} -e 's#/usr/local#${LOCALBASE}#g' ${WRKSRC}/config.m4

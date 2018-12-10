@@ -1,8 +1,8 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/flrig/Makefile 461451 2018-02-10 23:28:00Z db $
+# $FreeBSD: head/comms/flrig/Makefile 486641 2018-12-05 00:14:06Z db $
 
 PORTNAME=	flrig
-PORTVERSION=	1.3.39 
+PORTVERSION=	1.3.41
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/fldigi/${PORTNAME}
 
@@ -14,6 +14,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 
 USES=		gmake
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	FLTK_CONFIG="${LOCALBASE}/bin/fltk-config"
 PLIST_FILES=	bin/flrig share/applications/flrig.desktop \

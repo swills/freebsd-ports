@@ -1,12 +1,12 @@
-# $FreeBSD: head/www/trac-devel/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/trac-devel/Makefile 486935 2018-12-08 10:19:14Z joneum $
 
 PORTNAME=	trac
-DISTVERSION=	1.3.2
+DISTVERSION=	1.3.3
 CATEGORIES=	www devel python
 MASTER_SITES=	http://ftp.edgewall.com/pub/trac/ \
 		ftp://ftp.edgewall.com/pub/trac/
-DISTNAME=	Trac-${DISTVERSION}
 PKGNAMESUFFIX=	-devel
+DISTNAME=	Trac-${DISTVERSION}
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Enhanced wiki and issue tracking system for software projects
@@ -14,14 +14,14 @@ COMMENT=	Enhanced wiki and issue tracking system for software projects
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-CONFLICTS_INSTALL=	trac
-
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Genshi>=0.7:textproc/py-genshi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.10:devel/py-Jinja2@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Genshi>=0.7:textproc/py-genshi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.10:devel/py-Jinja2@${PY_FLAVOR}
+
+CONFLICTS_INSTALL=	trac
 
 USES=		python:-2.7 shebangfix
 SHEBANG_FILES=	trac/tests/functional/better_twill.py trac/tests/functional/tester.py \

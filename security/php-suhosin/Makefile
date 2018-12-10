@@ -1,5 +1,5 @@
 # Created by: ale
-# $FreeBSD: head/security/php-suhosin/Makefile 486473 2018-12-02 17:43:33Z antoine $
+# $FreeBSD: head/security/php-suhosin/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=	suhosin
 PORTVERSION=	0.9.38
@@ -20,7 +20,7 @@ OPTIONS_DEFINE=	EXAMPLES
 
 USES=		php:ext
 USE_PHP=	session:build
-IGNORE_WITH_PHP=	70 71 72 73
+IGNORE_WITH_PHP=	71 72 73
 
 CONFIGURE_ARGS=	--enable-suhosin
 

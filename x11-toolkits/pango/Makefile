@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/pango/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11-toolkits/pango/Makefile 486758 2018-12-06 14:01:15Z linimon $
 
 PORTNAME=	pango
 PORTVERSION=	1.42.4
@@ -23,7 +23,7 @@ RUN_DEPENDS=	xorg-fonts-truetype>0:x11-fonts/xorg-fonts-truetype \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gnome localbase meson pkgconfig tar:xz
+USES=		compiler:c11 gettext gnome localbase meson pkgconfig tar:xz
 USE_LDCONFIG=	yes
 USE_GNOME=	cairo glib20 introspection:build
 

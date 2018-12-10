@@ -1,9 +1,8 @@
 # Created by: Sergey Kozlov <sergey.kozlov@intel.com>
-# $FreeBSD: head/net/intel-ixl-kmod/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/net/intel-ixl-kmod/Makefile 486749 2018-12-06 10:48:46Z skozlov $
 
 PORTNAME?=	ixl
-PORTVERSION?=	1.9.13
-PORTREVISION?=	1
+PORTVERSION?=	1.10.4
 CATEGORIES=	net
 MASTER_SITES=	https://downloadmirror.intel.com/${MASTER_SITE_SUBDIR}/ \
 		http://downloadmirror.intel.com/${MASTER_SITE_SUBDIR}/

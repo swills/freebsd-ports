@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/databases/couchdb2/files/couchdb2.in 480279 2018-09-21 15:21:00Z dch $
+# $FreeBSD: head/databases/couchdb2/files/couchdb2.in 487151 2018-12-10 11:01:34Z dch $
 #
 # PROVIDE: couchdb2
 # REQUIRE: LOGIN
@@ -44,6 +44,8 @@ couchdb2_start()
         -c \
         -u ${couchdb2_user} \
         env ERL_FLAGS="${erl_flags}" \
+        COUCHDB_QUERY_SERVER_JAVASCRIPT="%%APPDIR%%/bin/couchjs %%APPDIR%%/share/server/main.js" \
+        COUCHDB_QUERY_SERVER_COFFEESCRIPT="%%APPDIR%%/bin/couchjs %%APPDIR%%/share/server/main-coffee.js" \
         ${command}
 }
 

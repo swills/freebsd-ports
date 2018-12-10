@@ -1,5 +1,5 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/graphics/mapserver/Makefile 486365 2018-12-01 13:08:47Z sunpoet $
+# $FreeBSD: head/graphics/mapserver/Makefile 486751 2018-12-06 11:22:12Z rene $
 
 PORTNAME=		mapserver
 PORTVERSION=		7.2.1
@@ -129,7 +129,6 @@ CMAKE_ARGS+=		-DWITH_POSTGIS=0
 
 .if ${PORT_OPTIONS:MPHP}
 USES+=			php:build
-IGNORE_WITH_PHP=	70
 CMAKE_ARGS+=		-DWITH_PHP=1
 PLIST_SUB+=		PHP=""
 .else

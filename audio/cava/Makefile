@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/cava/Makefile 486468 2018-12-02 16:10:33Z tobik $
+# $FreeBSD: head/audio/cava/Makefile 486512 2018-12-03 11:13:41Z tobik $
 
 PORTNAME=	cava
 DISTVERSION=	0.6.1
@@ -51,7 +51,8 @@ pre-configure:
 	@${ECHO_CMD} ${DISTVERSION} > ${WRKSRC}/version
 
 pre-build-VT-on:
-	psf2bdf ${WRKSRC}/cava.psf > ${WRKSRC}/cava.bdf
+	psf2bdf --fontname="-gnu-cava-medium-r-normal--16-160-75-75-c-80-iso10646-1" \
+		${WRKSRC}/cava.psf > ${WRKSRC}/cava.bdf
 	vtfontcvt ${WRKSRC}/cava.bdf ${WRKSRC}/cava.fnt
 
 post-install-DOCS-on:

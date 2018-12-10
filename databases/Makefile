@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 485048 2018-11-15 21:06:26Z joneum $
+# $FreeBSD: head/databases/Makefile 487050 2018-12-09 14:47:15Z kwm $
 #
 
     COMMENT = Databases and related software
@@ -98,6 +98,7 @@
     SUBDIR += gnats4
     SUBDIR += gnatsweb4
     SUBDIR += go-carbon
+    SUBDIR += gom
     SUBDIR += gomdb
     SUBDIR += gosqlite3
     SUBDIR += gqlplus
@@ -644,19 +645,6 @@
     SUBDIR += php56-sqlite3
     SUBDIR += php56-sybase_ct
     SUBDIR += php7-tarantool
-    SUBDIR += php70-dba
-    SUBDIR += php70-interbase
-    SUBDIR += php70-mysqli
-    SUBDIR += php70-odbc
-    SUBDIR += php70-pdo
-    SUBDIR += php70-pdo_dblib
-    SUBDIR += php70-pdo_firebird
-    SUBDIR += php70-pdo_mysql
-    SUBDIR += php70-pdo_odbc
-    SUBDIR += php70-pdo_pgsql
-    SUBDIR += php70-pdo_sqlite
-    SUBDIR += php70-pgsql
-    SUBDIR += php70-sqlite3
     SUBDIR += php71-dba
     SUBDIR += php71-interbase
     SUBDIR += php71-mysqli
