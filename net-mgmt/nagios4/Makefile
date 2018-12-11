@@ -20,7 +20,7 @@ LIB_DEPENDS=	libltdl.so:devel/libltdl \
 
 USES=		cpe gmake jpeg perl5
 USE_PERL5=	build
-USE_PHP=	xml
+USE_PHP=	xml filter
 USE_RC_SUBR=	nagios
 
 CONFLICTS=	nagios-[123].* nagios-devel-*
