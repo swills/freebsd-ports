@@ -20,7 +20,8 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 CONFLICTS=	gnome-utils-2.[0-9]*
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext localbase meson pkgconfig tar:xz
+USES=		compiler:c++11-lang desktop-file-utils gettext localbase meson \
+		pkgconfig tar:xz
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 USE_GNOME=	cairo gtk30 gnomedesktop3
