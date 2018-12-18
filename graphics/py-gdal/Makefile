@@ -18,11 +18,11 @@ LICENSE_FILE=	${WRKSRC}/../../LICENSE.TXT
 
 LIB_DEPENDS=	libgdal.so:graphics/gdal
 
+USES=		python shebangfix tar:xz
+USE_PYTHON=	autoplist concurrent distutils
+
 OPTIONS_DEFINE=	NUMPY
 NUMPY_DESC=	Enable array support via NumPy
-
-USE_PYTHON=	autoplist concurrent distutils
-USES=		python shebangfix tar:xz
 
 WRKSRC_SUBDIR=	swig/python
 
@@ -34,6 +34,6 @@ NUMPY_USES=		fortran
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/scripts/*.py ${STAGEDIR}${PREFIX}/bin/
-	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/osgeo/*.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/osgeo/*.so
 
 .include <bsd.port.mk>
