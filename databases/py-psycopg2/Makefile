@@ -15,16 +15,16 @@ COMMENT=	High performance Python adapter for PostgreSQL
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/doc/COPYING.LESSER
 
-OPTIONS_DEFINE=	DOCS EXAMPLES
-
 USES=		pgsql python
 USE_PYTHON=	autoplist concurrent distutils
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 PORTDOCS=	AUTHORS INSTALL NEWS PKG-INFO README.rst
 PORTEXAMPLES=	*
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/psycopg2/_psycopg.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/psycopg2/_psycopg.so
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/
