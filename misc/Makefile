@@ -172,7 +172,6 @@
     SUBDIR += gplink
     SUBDIR += granulate
     SUBDIR += grc
-    SUBDIR += gregexp
     SUBDIR += gtkfind
     SUBDIR += gwhich
     SUBDIR += hb
@@ -266,6 +265,7 @@
     SUBDIR += lc
     SUBDIR += lesspipe
     SUBDIR += libeatmydata
+    SUBDIR += libemos
     SUBDIR += libisocodes
     SUBDIR += libkdeedu-kde4
     SUBDIR += libkeduvocdocument
