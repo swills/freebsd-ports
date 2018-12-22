@@ -1,27 +1,23 @@
---- CMakeLists.txt.orig	2016-11-05 18:52:50 UTC
+--- CMakeLists.txt.orig	2017-11-21 17:47:16 UTC
 +++ CMakeLists.txt
-@@ -111,9 +111,9 @@ IF (NOT CMAKE_CXX_COMPILER_ID MATCHES "C
-     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-implement-inlines")
+@@ -195,6 +195,11 @@ ENDIF()
+ FIND_HELPER(LIBARCHIVE libarchive archive.h archive)
+ IF( WANT_LIBARCHIVE AND LIBARCHIVE_FOUND)
+     SET(WANT_LIBTAR FALSE)
++    SET(LIBTAR_LIBRARIES "")
++    SET(LIBTAR_INCLUDE_DIRS "")
++ELSE()
++    SET(LIBARCHIVE_LIBRARIES "")
++    SET(LIBARCHIVE_INCLUDE_DIRS "")
  ENDIF()
+ FIND_HELPER(LIBSNDFILE sndfile sndfile.h sndfile)
+ FIND_HELPER(ALSA alsa alsa/asoundlib.h asound )
+@@ -204,6 +204,8 @@ FIND_HELPER(OSC liblo lo/lo.h lo)
  
--SET(CMAKE_CXX_FLAGS_RELEASE "")
-+SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
- 
--SET(CMAKE_CXX_FLAGS_DEBUG "-g ")#-Winline")
-+SET(CMAKE_CXX_FLAGS_DEBUG "-g ${CMAKE_CXX_FLAGS_DEBUG}")#-Winline")
- 
- 
- IF(APPLE)
-@@ -201,7 +201,11 @@ FIND_HELPER(NSMSESSION liblo lo/lo.h lo)
  IF("${CMAKE_SYSTEM_NAME}" MATCHES "NetBSD")
  	FIND_HELPER(OSS oss sys/soundcard.h ossaudio )
++ELSEIF("${CMAKE_SYSTEM_NAME}" MATCHES "FreeBSD")
++	FIND_HELPER(OSS oss sys/soundcard.h c )
  ELSE()
--	FIND_HELPER(OSS oss sys/soundcard.h OSSlib )
-+    IF("${CMAKE_SYSTEM_NAME}" MATCHES "FreeBSD")
-+        FIND_HELPER(OSS oss sys/soundcard.h c )
-+    ELSE()
-+        FIND_HELPER(OSS oss sys/soundcard.h OSSlib )
-+    ENDIF()
+ 	FIND_HELPER(OSS oss sys/soundcard.h OSSlib )
  ENDIF()
- 
- FIND_HELPER(JACK jack jack/jack.h jack)

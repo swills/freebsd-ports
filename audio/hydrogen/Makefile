@@ -2,27 +2,24 @@
 # $FreeBSD$
 
 PORTNAME=	hydrogen
-PORTVERSION=	0.9.7
-PORTREVISION=	2
+DISTVERSION=	1.0.0.b1
 CATEGORIES=	audio
 
 MAINTAINER=	FreeBSD@ShaneWare.Biz
 COMMENT=	Advanced drum machine
 
-LICENSE=	GPLv2
-
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 		liblo.so:audio/liblo
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	hydrogen-music
+GH_TAGNAME=	538eaeb9f4e9 # master at 8/10
 
-USES=		cmake compiler:c++11-lang desktop-file-utils pkgconfig qt:4
-USE_QT=		qmake_build moc_build rcc_build uic_build corelib \
-		gui network xml xmlpatterns
+USES=		cmake desktop-file-utils pkgconfig localbase qt:5
+USE_QT=		qmake buildtools core gui linguisttools network widgets xml xmlpatterns
 
 OPTIONS_SINGLE=		EXPORT
 OPTIONS_SINGLE_EXPORT=	LIBARCHIVE LIBTAR
@@ -78,7 +75,7 @@ post-patch:
 	@${REINPLACE_CMD} 's|EXISTS(tar|EXISTS(${LOCALBASE}/lib/libtar.so|g' \
 		${WRKSRC}/CMakeLists.txt
 
-do-test-TEST-on:
+do-test:
 	cd ${WRKSRC} && ./src/tests/tests
 
 .include <bsd.port.mk>
