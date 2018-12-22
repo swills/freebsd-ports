@@ -126,6 +126,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-redis-rails>=5.0.1:www/rubygem-redis-rails \
 	rubygem-redis3>=3.2:databases/rubygem-redis3 \
 	rubygem-connection_pool>=2.0:net/rubygem-connection_pool \
+	rubygem-discordrb-webhooks-blackst0ne>=3.3.0:net-im/rubygem-discordrb-webhooks-blackst0ne \
 	rubygem-hipchat15>=1.5.0:net-im/rubygem-hipchat15 \
 	rubygem-jira-ruby>=1.4:devel/rubygem-jira-ruby \
 	rubygem-flowdock>=0.7:www/rubygem-flowdock \
