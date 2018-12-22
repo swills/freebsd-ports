@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/rubygem-gitlab-sidekiq-fetcher/Makefile 483495 2018-10-30 16:11:10Z mfechner $
 
 PORTNAME=	gitlab-sidekiq-fetcher
-PORTVERSION=	0.3.0
+PORTVERSION=	0.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,8 @@ LICENSE=	RUBY
 
 RUN_DEPENDS=	rubygem-sidekiq>=5:devel/rubygem-sidekiq
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
 
