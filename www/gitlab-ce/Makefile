@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab-ce/Makefile 488073 2018-12-22 07:54:36Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.5.5
+PORTVERSION=	11.6.0
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -102,6 +102,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-escape_utils>=1.1:textproc/rubygem-escape_utils \
 	rubygem-icalendar>=0:devel/rubygem-icalendar \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
+	rubygem-rack>=1.6.11:www/rubygem-rack16 \
 	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
 	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
 	rubygem-puma>=3.12:www/rubygem-puma \
@@ -215,7 +216,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	13c3b22c454950c2d9a65a1b5fcf8d29a4764fc2
+GL_COMMIT=	075f96092a74849cdfaacd6912fe66376599989d
 
 USERS=	git
 GROUPS=	git
