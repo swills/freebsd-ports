@@ -60,7 +60,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-u2f0>=0.2.1:net/rubygem-u2f0 \
 	rubygem-validates_hostname>=1.0.6:dns/rubygem-validates_hostname \
 	rubygem-browser>=2.5:www/rubygem-browser \
-	rubygem-gpgme>=2.0.13:security/rubygem-gpgme \
+	rubygem-gpgme>=2.0.18:security/rubygem-gpgme \
 	rubygem-gitlab_omniauth-ldap20>=2.0.4:net/rubygem-gitlab_omniauth-ldap20 \
 	rubygem-net-ldap>=0.16.0:net/rubygem-net-ldap \
 	rubygem-grape11>=1.1:devel/rubygem-grape11 \
