@@ -1,7 +1,7 @@
 # $FreeBSD: head/devel/rubygem-grape-path-helpers/Makefile 473950 2018-07-05 06:43:39Z mfechner $
 
 PORTNAME=	grape-path-helpers
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
