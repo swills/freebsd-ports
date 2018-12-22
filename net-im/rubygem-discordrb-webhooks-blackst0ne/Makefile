@@ -10,7 +10,6 @@ MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Discord API for Ruby
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-rest-client>=2.0:www/rubygem-rest-client
 
