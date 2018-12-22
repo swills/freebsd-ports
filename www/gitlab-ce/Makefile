@@ -25,6 +25,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	yarn>=0.17.0:www/yarn \
 	rubygem-rails4>=4.2.10:www/rubygem-rails4 \
 	rubygem-rails-deprecated_sanitizer>=1.0.3:devel/rubygem-rails-deprecated_sanitizer \
+	rubygem-nakayoshi_fork>=0.0.4:devel/rubygem-nakayoshi_fork \
 	rubygem-responders>=2.0:www/rubygem-responders \
 	rubygem-sprockets3>=3.7:devel/rubygem-sprockets3 \
 	rubygem-default_value_for30>=3.0.5:devel/rubygem-default_value_for30 \
