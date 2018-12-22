@@ -1,9 +1,9 @@
 # Created by: glewis@FreeBSD.org
-# $FreeBSD: head/games/ldmud/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/games/ldmud/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ldmud
 PORTVERSION=	3.3.720
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	games net
 MASTER_SITES=	http://www.bearnip.com/ftp/mud/ \

@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/devel/libtuntap/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/libtuntap/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libtuntap
 DISTVERSION=	0.3-23
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONSUFFIX=	-ga8bcade
 CATEGORIES=	devel net
 

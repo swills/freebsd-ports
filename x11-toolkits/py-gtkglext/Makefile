@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/x11-toolkits/py-gtkglext/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/x11-toolkits/py-gtkglext/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gtkglext
 PORTVERSION=	1.1.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	SF/${PORTNAME}/py${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

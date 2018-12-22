@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 486085 2018-11-28 09:37:30Z kbowling $
+# $FreeBSD: head/emulators/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Emulators for other operating systems
@@ -43,8 +43,6 @@
     SUBDIR += fuse-utils
     SUBDIR += gbe
     SUBDIR += gem5
-    SUBDIR += generator
-    SUBDIR += generator-cbiere
     SUBDIR += gens
     SUBDIR += gngb
     SUBDIR += gngeo
@@ -111,7 +109,6 @@
     SUBDIR += ppsspp
     SUBDIR += ppsspp-qt5
     SUBDIR += py-gns3-converter
-    SUBDIR += py-nova
     SUBDIR += py-unicorn
     SUBDIR += q4wine
     SUBDIR += qemu

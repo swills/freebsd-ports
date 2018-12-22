@@ -1,9 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/opencc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/chinese/opencc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	opencc
 PORTVERSION=	1.0.5
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	ver.
 CATEGORIES=	chinese converters
 

@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/postgresql-plruby/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/databases/postgresql-plruby/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	postgresql-plruby
 PORTVERSION=	0.5.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases ruby
 DIST_SUBDIR=	ruby
 

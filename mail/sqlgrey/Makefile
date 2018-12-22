@@ -1,9 +1,9 @@
 # Created by: mat
-# $FreeBSD: head/mail/sqlgrey/Makefile 414998 2016-05-11 14:36:55Z arved $
+# $FreeBSD: head/mail/sqlgrey/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sqlgrey
 PORTVERSION=	1.8.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-1.8%20%28stable%29
 

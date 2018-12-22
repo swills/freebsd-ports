@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/cryptominisat/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/math/cryptominisat/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cryptominisat
 DISTVERSION=	5.6.3
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	math
 
 MAINTAINER=	arrowd@FreeBSD.org

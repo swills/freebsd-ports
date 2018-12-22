@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/benchmarks/lzbench/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/benchmarks/lzbench/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lzbench
 PORTVERSION=	1.7.3
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	benchmarks
 

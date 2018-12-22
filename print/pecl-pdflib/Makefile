@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/print/pecl-pdflib/Makefile 448974 2017-08-30 12:18:53Z ale $
+# $FreeBSD: head/print/pecl-pdflib/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	pdflib
 PORTVERSION=	4.1.2
@@ -11,8 +11,6 @@ COMMENT=	PECL extension to create PDF on the fly
 LICENSE=	PHP30
 
 LIB_DEPENDS=	libpdf.so:print/pdflib
-
-BROKEN_powerpc64=	Does not build
 
 USES=		php:pecl
 USE_PHP=	gd:build

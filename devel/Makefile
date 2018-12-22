@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 487086 2018-12-09 20:42:40Z swills $
+# $FreeBSD: head/devel/Makefile 488008 2018-12-21 14:30:24Z rene $
 #
 
     COMMENT = Development utilities
@@ -185,6 +185,9 @@
     SUBDIR += avro-c
     SUBDIR += avro-cpp
     SUBDIR += awless
+    SUBDIR += aws-c-commons
+    SUBDIR += aws-c-event-stream
+    SUBDIR += aws-checksums
     SUBDIR += aws-sdk-cpp
     SUBDIR += aws-sdk-php
     SUBDIR += awscli
@@ -434,7 +437,6 @@
     SUBDIR += dbus-tcl
     SUBDIR += dcd-client
     SUBDIR += dcd-server
-    SUBDIR += dcmtk
     SUBDIR += dconf
     SUBDIR += dconf-editor
     SUBDIR += ddd
@@ -610,6 +612,7 @@
     SUBDIR += etcd33
     SUBDIR += etl
     SUBDIR += euca2ools
+    SUBDIR += evdev-proto
     SUBDIR += evemu
     SUBDIR += eventxx
     SUBDIR += evolution-gconf-tools
@@ -698,7 +701,6 @@
     SUBDIR += gconf2
     SUBDIR += gconf2-reference
     SUBDIR += gconfmm26
-    SUBDIR += gcvs
     SUBDIR += gdb
     SUBDIR += gdcm
     SUBDIR += geany
@@ -742,6 +744,7 @@
     SUBDIR += geany-plugin-treebrowser
     SUBDIR += geany-plugin-updatechecker
     SUBDIR += geany-plugin-utilslib
+    SUBDIR += geany-plugin-vimode
     SUBDIR += geany-plugin-vc
     SUBDIR += geany-plugin-webhelper
     SUBDIR += geany-plugin-workbench
@@ -798,7 +801,6 @@
     SUBDIR += glade2
     SUBDIR += glade3
     SUBDIR += glademm
-    SUBDIR += glib12
     SUBDIR += glib20
     SUBDIR += glib20-reference
     SUBDIR += glibmm
@@ -815,7 +817,6 @@
     SUBDIR += gnome-common
     SUBDIR += gnome-js-common
     SUBDIR += gnome-vfs
-    SUBDIR += gnome-vfs-monikers
     SUBDIR += gnome-vfs-reference
     SUBDIR += gnome-vfsmm
     SUBDIR += gnu-efi
@@ -1234,6 +1235,7 @@
     SUBDIR += ignition-plugin
     SUBDIR += ignition-tools
     SUBDIR += ignition-transport
+    SUBDIR += ikos
     SUBDIR += imake
     SUBDIR += inastemp
     SUBDIR += include-what-you-use
@@ -1452,6 +1454,7 @@
     SUBDIR += libfmt
     SUBDIR += libfortuna
     SUBDIR += libfreefare
+    SUBDIR += libfsapfs
     SUBDIR += libfsntfs
     SUBDIR += libftdi
     SUBDIR += libftdi1
@@ -1531,7 +1534,6 @@
     SUBDIR += libol
     SUBDIR += libolecf
     SUBDIR += liboobs
-    SUBDIR += liboop
     SUBDIR += libopenbsd
     SUBDIR += libopencm3
     SUBDIR += libopensync
@@ -4965,6 +4967,7 @@
     SUBDIR += py-pyrepl
     SUBDIR += py-pyrfc3339
     SUBDIR += py-pyro
+    SUBDIR += py-pyrsistent
     SUBDIR += py-pyshapelib
     SUBDIR += py-pyshp
     SUBDIR += py-pysparklines
@@ -5013,6 +5016,7 @@
     SUBDIR += py-pytrie
     SUBDIR += py-pytvmaze
     SUBDIR += py-pytz
+    SUBDIR += py-pyudev
     SUBDIR += py-pyutil
     SUBDIR += py-pyvalid
     SUBDIR += py-pyvisa
@@ -5107,6 +5111,7 @@
     SUBDIR += py-setuptools_darcs
     SUBDIR += py-setuptools_hg
     SUBDIR += py-setuptools_scm
+    SUBDIR += py-setuptools_scm_git_archive
     SUBDIR += py-sh
     SUBDIR += py-shapely
     SUBDIR += py-shellingham
@@ -5784,6 +5789,7 @@
     SUBDIR += rubygem-json1
     SUBDIR += rubygem-json_pure
     SUBDIR += rubygem-json_pure1
+    SUBDIR += rubygem-json-schema
     SUBDIR += rubygem-jsonapi-renderer
     SUBDIR += rubygem-kafo
     SUBDIR += rubygem-kafo_parsers
@@ -6420,6 +6426,7 @@
     SUBDIR += zanata-cli
     SUBDIR += zapcc
     SUBDIR += zeal
+    SUBDIR += zfp
     SUBDIR += zookeeper
     SUBDIR += zpu-binutils
     SUBDIR += zpu-gcc

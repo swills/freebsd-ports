@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/converters/R-cran-base64enc/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/converters/R-cran-base64enc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	base64enc
 DISTVERSION=	0.1-3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	converters
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

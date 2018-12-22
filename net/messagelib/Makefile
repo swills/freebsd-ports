@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/messagelib/Makefile 486149 2018-11-28 21:13:54Z tcberner $
+# $FreeBSD: head/net/messagelib/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	messagelib
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

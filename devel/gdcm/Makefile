@@ -1,8 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/devel/gdcm/Makefile 486662 2018-12-05 10:03:31Z rene $
+# $FreeBSD: head/devel/gdcm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gdcm
 PORTVERSION=	${GDCM_MAJOR}.${GDCM_MINOR}.${GDCM_PATCH}
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/gdcm/gdcm%202.x/GDCM%20${PORTVERSION}
 

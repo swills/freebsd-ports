@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/enchant2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/enchant2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	enchant
 PORTVERSION=	2.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc gnome
 MASTER_SITES=	https://github.com/AbiWord/enchant/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	2

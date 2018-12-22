@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/libmusicbrainz5/Makefile 483625 2018-10-31 23:13:08Z jhale $
+# $FreeBSD: head/audio/libmusicbrainz5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libmusicbrainz
 PORTVERSION=	5.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	audio
 PKGNAMESUFFIX=	5

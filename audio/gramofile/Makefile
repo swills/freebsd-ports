@@ -1,9 +1,9 @@
 # Created by: nox@jelal.kn-bremen.de
-# $FreeBSD: head/audio/gramofile/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/gramofile/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gramofile
 PORTVERSION=	1.6P
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	audio
 MASTER_SITES=	http://www.opensourcepartners.nl/~costar/gramofile/
 

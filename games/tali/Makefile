@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/tali/Makefile 441065 2017-05-17 08:44:31Z kwm $
+# $FreeBSD: head/games/tali/Makefile 487548 2018-12-15 21:43:49Z kwm $
 
 PORTNAME=	tali
 PORTVERSION=	3.22.0
@@ -24,5 +24,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share
 
 GLIB_SCHEMAS=	org.gnome.tali.gschema.xml
+
+post-install:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/games
 
 .include <bsd.port.mk>

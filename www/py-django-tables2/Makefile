@@ -1,8 +1,9 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-django-tables2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-tables2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	django-tables2
 DISTVERSION=	1.21.2
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

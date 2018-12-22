@@ -1,13 +1,13 @@
-# $FreeBSD: head/multimedia/aom/Makefile 486906 2018-12-08 00:39:17Z jbeich $
+# $FreeBSD: head/multimedia/aom/Makefile 487820 2018-12-20 00:46:32Z jbeich $
 
 PORTNAME=	aom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.0-1012
-DISTVERSIONSUFFIX=	-g98dae942e
+DISTVERSION=	1.0.0-1080
+DISTVERSIONSUFFIX=	-g54f971197
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
-COMMENT=	AV1 Codec Library
+COMMENT=	AV1 reference encoder/decoder
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

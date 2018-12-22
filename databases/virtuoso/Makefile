@@ -1,9 +1,9 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/databases/virtuoso/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/databases/virtuoso/Makefile 487355 2018-12-13 07:24:45Z fjoe $
 
 PORTNAME=	virtuoso
-PORTVERSION=	7.2.4.2
-PORTREVISION=	2
+PORTVERSION=	7.2.5
+PORTREVISION=	0
 CATEGORIES=	databases
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-opensource-${PORTVERSION}
@@ -40,6 +40,7 @@ CONFIGURE_ARGS=	--with-readline\
 		--with-layout=freebsd\
 		--datadir="${PREFIX}"\
 		--localstatedir="${PREFIX}"
+CONFIGURE_ENV=	ac_cv_header_sys_timeb_h=no
 CPPFLAGS+=	-std=gnu89 ${IODBC_CPPFLAGS}
 LDFLAGS+=	-lexecinfo
 MAKE_ENV=	PATH=${LOCALBASE}/bin:${PATH}\

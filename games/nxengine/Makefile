@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/nxengine/Makefile 482126 2018-10-15 00:13:06Z lifanov $
+# $FreeBSD: head/games/nxengine/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nxengine
 PORTVERSION=	2.6.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES+=	https://www.cavestory.org/downloads/:data \
 		SF/lifanov-ports-distfiles/games/${PORTNAME}/:icons

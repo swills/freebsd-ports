@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/goxel/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/goxel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	goxel
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.7.1-70
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-g193eded
 CATEGORIES=	graphics
 

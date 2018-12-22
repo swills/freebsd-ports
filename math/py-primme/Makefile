@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/py-primme/Makefile 483220 2018-10-28 04:33:28Z yuri $
+# $FreeBSD: head/math/py-primme/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	primme
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

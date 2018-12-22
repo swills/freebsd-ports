@@ -1,9 +1,9 @@
 # Created by: Allie Micka <allie@pajunas.com>
-# $FreeBSD: head/www/pglogd/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/www/pglogd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pglogd
 PORTVERSION=	2.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www databases
 MASTER_SITES=	http://digitalstratum.com/download/
 

@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/deskutils/taskd/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/taskd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	taskd
 PORTVERSION=	1.1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	deskutils
 MASTER_SITES=	http://taskwarrior.org/download/
 

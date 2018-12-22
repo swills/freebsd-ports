@@ -1,9 +1,9 @@
 # Created by: anarcat@anarcat.ath.cx
-# $FreeBSD: head/finance/ledgersmb/Makefile 469132 2018-05-05 17:13:42Z danfe $
+# $FreeBSD: head/finance/ledgersmb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ledger-smb
 PORTVERSION=	1.1.12
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	finance perl5
 MASTER_SITES=	SF/${PORTNAME}/Releases/archive-1.1/${PORTVERSION}
 

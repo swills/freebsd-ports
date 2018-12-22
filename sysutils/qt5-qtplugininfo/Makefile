@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/qt5-qtplugininfo/Makefile 482579 2018-10-20 16:00:36Z tcberner $
+# $FreeBSD: head/sysutils/qt5-qtplugininfo/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qtplugininfo
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	qt5-
 

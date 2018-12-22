@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/canu/Makefile 484077 2018-11-04 14:29:02Z jwb $
+# $FreeBSD: head/biology/canu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		canu
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.8
+PORTREVISION=		2
 CATEGORIES=		biology java perl5
 
 MAINTAINER=	jwb@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <pfg@FreeBSD.org>
-# $FreeBSD: head/graphics/py-pivy/Makefile 485734 2018-11-24 08:55:07Z linimon $
+# $FreeBSD: head/graphics/py-pivy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pivy
 PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics python
 MASTER_SITES=	https://bitbucket.org/Coin3D/pivy/get/
 DISTNAME=	8eab90908f2a

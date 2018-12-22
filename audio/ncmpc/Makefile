@@ -1,8 +1,9 @@
 # Created by: Mark Reidel <ports@mark.reidel.info>
-# $FreeBSD: head/audio/ncmpc/Makefile 486669 2018-12-05 13:54:15Z tobik $
+# $FreeBSD: head/audio/ncmpc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ncmpc
 PORTVERSION=	0.33
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.musicpd.org/download/ncmpc/0/
 

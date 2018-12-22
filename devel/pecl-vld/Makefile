@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/pecl-vld/Makefile 487189 2018-12-10 17:02:58Z joneum $
+# $FreeBSD: head/devel/pecl-vld/Makefile 487478 2018-12-15 01:19:02Z joneum $
 
 PORTNAME=	vld
 PORTVERSION=	0.15.0
@@ -10,6 +10,8 @@ COMMENT=	Dump the internal representation of PHP scripts
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+IGNORE_WITH_PHP=	56
 
 USES=		php:pecl
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/plutocracy/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/plutocracy/Makefile 487704 2018-12-17 18:51:22Z amdmi3 $
 
 PORTNAME=	plutocracy
 PORTVERSION=	0.0.20081229
@@ -12,6 +12,10 @@ COMMENT=	Multiplayer 3D economy/trade-based RTS
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		segfaults on startup
+DEPRECATED=	broken, upstream gone
+EXPIRATION_DATE=2019-02-17
 
 LIB_DEPENDS=	libpng.so:graphics/png
 

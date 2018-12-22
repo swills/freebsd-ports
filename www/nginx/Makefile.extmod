@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/nginx/Makefile.extmod 486475 2018-12-02 18:18:14Z osa $
+# $FreeBSD: head/www/nginx/Makefile.extmod 488085 2018-12-22 09:58:53Z joneum $
 
 ### External modules
 AJP_GH_TUPLE=		yaoweibin:nginx_ajp_module:bf6cd93:ajp
@@ -8,11 +8,11 @@ ARRAYVAR_IMPLIES=	DEVEL_KIT
 ARRAYVAR_GH_TUPLE=	openresty:array-var-nginx-module:v0.05:arrayvar
 ARRAYVAR_VARS=		DSO_EXTMODS+=arrayvar
 
-AWS_AUTH_GH_TUPLE=	anomalizer:ngx_aws_auth:1e62670:aws_auth
+AWS_AUTH_GH_TUPLE=	anomalizer:ngx_aws_auth:75c94e6:aws_auth
 AWS_AUTH_VARS=		DSO_EXTMODS+=aws_auth
 
 BROTLI_LIB_DEPENDS=	libbrotlicommon.so:archivers/brotli
-BROTLI_GH_TUPLE=	eustas:ngx_brotli:e26248e:brotli
+BROTLI_GH_TUPLE=	eustas:ngx_brotli:8104036:brotli
 BROTLI_VARS=		DSO_EXTMODS+=brotli
 
 CACHE_PURGE_MASTER_SITES=	http://labs.frickle.com/files/:cache_purge
@@ -216,14 +216,14 @@ MODSECURITY_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-nginx-modsecurity-configure
 MODSECURITY_VARS=		WRKSRC_modsecurity=${WRKDIR}/modsecurity-2.9.2
 
 MODSECURITY3_LIB_DEPENDS=	libmodsecurity.so:security/modsecurity3
-MODSECURITY3_GH_TUPLE=		SpiderLabs:ModSecurity-nginx:e4df1aa:modsec
+MODSECURITY3_GH_TUPLE=		SpiderLabs:ModSecurity-nginx:71ede63:modsec
 MODSECURITY3_CONFIGURE_ON=	--add-module=${WRKSRC_modsec}
 
 NAXSI_NGINX_VER=	0.56
 NAXSI_GH_TUPLE=		nbs-system:naxsi:${NAXSI_NGINX_VER}:naxsi
 NAXSI_VARS=		DSO_EXTMODS+=naxsi NAXSI_SUBDIR=/naxsi_src
 
-NJS_GH_TUPLE=		nginx:njs:992e93d:njs
+NJS_GH_TUPLE=		nginx:njs:36f1295:njs
 NJS_VARS=		DSO_EXTMODS+=njs NJS_SUBDIR=/nginx
 
 PASSENGER_NGINX_VER=	6.0.0
@@ -280,7 +280,13 @@ SRCACHE_GH_TUPLE=	openresty:srcache-nginx-module:v0.31:srcache
 #SRCACHE_CONFIGURE_ON=	--add-module=${WRKSRC_srcache}
 SRCACHE_VARS=		DSO_EXTMODS+=srcache
 
-VTS_GH_TUPLE=		vozlt:nginx-module-vts:v0.1.15:vts
+VOD_GH_TUPLE=		kaltura:nginx-vod-module:1.23:vod
+VOD_USE=		GNOME=libxml2
+VOD_VARS=		DSO_EXTMODS+=vod
+VOD_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-nginx-vod-module-config \
+			${PATCHDIR}/extra-patch-vod-filters-audio_encoder.c    
+
+VTS_GH_TUPLE=		vozlt:nginx-module-vts:v0.1.18:vts
 VTS_CONFIGURE_ON=	--add-module=${WRKSRC_vts}
 
 XSS_GH_TUPLE=		openresty:xss-nginx-module:v0.05:xss

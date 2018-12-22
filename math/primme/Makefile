@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/primme/Makefile 483219 2018-10-28 04:32:44Z yuri $
+# $FreeBSD: head/math/primme/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	primme
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

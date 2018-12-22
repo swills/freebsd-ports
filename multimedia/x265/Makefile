@@ -1,9 +1,9 @@
 # Created by: adamw
-# $FreeBSD: head/multimedia/x265/Makefile 480188 2018-09-20 18:33:21Z emaste $
+# $FreeBSD: head/multimedia/x265/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	x265
 PORTVERSION=	2.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	https://downloads.videolan.org/pub/videolan/x265/ \
 		https://mirror.leaseweb.com/videolan/x265/ \

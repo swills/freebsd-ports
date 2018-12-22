@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-NMF/Makefile 465347 2018-03-23 11:27:46Z tota $
+# $FreeBSD: head/math/R-cran-NMF/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	NMF
 PORTVERSION=	0.21.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

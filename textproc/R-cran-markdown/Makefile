@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-markdown/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/textproc/R-cran-markdown/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	markdown
 PORTVERSION=	0.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

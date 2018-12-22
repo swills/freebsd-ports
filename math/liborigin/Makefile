@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/liborigin/Makefile 486087 2018-11-28 12:46:46Z makc $
+# $FreeBSD: head/math/liborigin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	liborigin
 PORTVERSION=	3.0.0
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/3.0

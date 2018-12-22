@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/hexd/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/hexd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hexd
 DISTVERSIONPREFIX=v
 DISTVERSION=	1.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	mail@dbalan.in

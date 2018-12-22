@@ -1,9 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/editors/emacs/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/editors/emacs/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	emacs
 DISTVERSION=	${EMACS_VER}
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	3
 CATEGORIES=	editors ipv6
 MASTER_SITES=	GNU

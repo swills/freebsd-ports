@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-pyipopt/Makefile 467576 2018-04-17 08:07:38Z yuri $
+# $FreeBSD: head/math/py-pyipopt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyipopt
 DISTVERSION=	g20180409
+PORTREVISION=	1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

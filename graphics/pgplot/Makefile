@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/graphics/pgplot/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/pgplot/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgplot
 PORTVERSION=	5.2.2
-PORTREVISION=	24
+PORTREVISION=	25
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.astro.caltech.edu/pub/pgplot/
 DISTNAME=	${PORTNAME}${PORTVERSION:R}

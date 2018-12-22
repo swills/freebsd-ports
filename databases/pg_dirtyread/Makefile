@@ -1,8 +1,9 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_dirtyread/Makefile 475862 2018-07-30 06:11:54Z joneum $
+# $FreeBSD: head/databases/pg_dirtyread/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pg_dirtyread
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 

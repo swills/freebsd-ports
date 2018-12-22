@@ -1,5 +1,5 @@
 # Created by: Andrew Lewis <freeghb@gmail.com>
-# $FreeBSD: head/net-im/prosody/Makefile 479979 2018-09-18 07:10:07Z linimon $
+# $FreeBSD: head/net-im/prosody/Makefile 487809 2018-12-19 18:45:38Z lx $
 
 PORTNAME=	prosody
 PORTVERSION=	0.10.2
@@ -20,8 +20,7 @@ RUN_DEPENDS=	${LUA_MODLIBDIR}/socket/core.so:net/luasocket-51 \
 		${LUA_MODLIBDIR}/bit.so:devel/lua51-bitop
 LIB_DEPENDS=	libidn.so:dns/libidn
 
-USES=		cpe gmake lua:51 shebangfix ssl
-USE_CSTD=	c99
+USES=		compiler:c11 cpe gmake lua:51 shebangfix ssl
 SHEBANG_FILES=	prosody prosodyctl
 LUA_PREMK=	yes
 HAS_CONFIGURE=	yes

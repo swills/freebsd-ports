@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/ftp/multiget/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/ftp/multiget/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	multiget
 PORTVERSION=	1.1.3
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	ftp www
 MASTER_SITES=	SF/${PORTNAME}/OldFiles
 

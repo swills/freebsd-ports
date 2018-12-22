@@ -1,8 +1,8 @@
 # Created by: Gautam Mani <execve@gmail.com>
-# $FreeBSD: head/games/stockfish/Makefile 480003 2018-09-18 09:28:34Z linimon $
+# $FreeBSD: head/games/stockfish/Makefile 488019 2018-12-21 19:23:45Z fernape $
 
 PORTNAME=	stockfish
-DISTVERSION=	9
+DISTVERSION=	10
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	http://stockfish.s3.amazonaws.com/
@@ -24,8 +24,10 @@ USES=		compiler:c++11-lang gmake zip
 NO_WRKSUBDIR=	yes
 WRKSRC_SUBDIR=	src
 MYARCH=		${ARCH}
-MYCC=		${COMPILER_TYPE}
+MYCC=		${CHOSEN_COMPILER_TYPE}
 TGTBLD=		build
+
+LDFLAGS+=	-fuse-ld=lld
 
 PLIST_FILES=	bin/stockfish
 PORTDOCS=	Readme.md

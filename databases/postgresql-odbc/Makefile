@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/postgresql-odbc/Makefile 480010 2018-09-18 11:01:50Z linimon $
+# $FreeBSD: head/databases/postgresql-odbc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	postgresql
 PORTVERSION=	10.03.0000
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	PGSQL/odbc/versions/src
 PKGNAMESUFFIX=	-odbc

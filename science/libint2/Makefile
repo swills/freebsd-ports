@@ -1,11 +1,11 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/libint2/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/science/libint2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libint
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.5.0-beta.2-20
 DISTVERSIONSUFFIX=	-gc2e0a72
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	science
 PKGNAMESUFFIX=	2
 

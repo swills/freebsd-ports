@@ -1,9 +1,9 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/security/md5deep/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/md5deep/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	md5deep
 PORTVERSION=	4.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	nobutaka@FreeBSD.org

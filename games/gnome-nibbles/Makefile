@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/gnome-nibbles/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/gnome-nibbles/Makefile 487548 2018-12-15 21:43:49Z kwm $
 
 PORTNAME=	gnome-nibbles
 PORTVERSION=	3.24.0
@@ -38,5 +38,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share
 
 GLIB_SCHEMAS=	org.gnome.nibbles.gschema.xml
+
+post-install:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/games
 
 .include <bsd.port.mk>

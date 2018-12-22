@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-python-louvain/Makefile 483453 2018-10-30 06:18:48Z yuri $
+# $FreeBSD: head/math/py-python-louvain/Makefile 487952 2018-12-21 05:08:33Z yuri $
 
 PORTNAME=	python-louvain
-DISTVERSION=	0.11
+DISTVERSION=	0.12
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: Ulrich Spoerlein <uspoerlein@gmail.com>
-# $FreeBSD: head/devel/librcc/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/devel/librcc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	librcc
 PORTVERSION=	0.2.12
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel
 MASTER_SITES=	http://dside.dyndns.org/files/rusxmms/ \
 		LOCAL/fluffy

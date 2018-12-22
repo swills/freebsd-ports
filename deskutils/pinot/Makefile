@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/deskutils/pinot/Makefile 482166 2018-10-15 20:28:08Z thierry $
+# $FreeBSD: head/deskutils/pinot/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pinot
 PORTVERSION=	1.09
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	deskutils
 
 MAINTAINER=	thierry@FreeBSD.org

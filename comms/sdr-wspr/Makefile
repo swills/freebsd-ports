@@ -1,10 +1,10 @@
 # Created by: Jeffrey Baitis <jeff@baitis.net>
-# $FreeBSD: head/comms/sdr-wspr/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/comms/sdr-wspr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sdr-wspr
 PORTVERSION=	0.1.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	comms hamradio
 
 MAINTAINER=	jeff@baitis.net

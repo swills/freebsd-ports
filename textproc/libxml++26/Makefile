@@ -1,10 +1,10 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/textproc/libxml++26/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/libxml++26/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #   $MCom: ports/textproc/libxml++26/Makefile,v 1.43 2011/04/18 19:58:29 kwm Exp $
 
 PORTNAME=	libxml++
 PORTVERSION=	2.34.2
-PORTREVISION?=	2
+PORTREVISION?=	3
 PORTEPOCH=	1
 CATEGORIES=	textproc
 MASTER_SITES=	GNOME

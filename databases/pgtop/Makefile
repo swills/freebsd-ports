@@ -1,9 +1,9 @@
 # Created by: Bartek Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/databases/pgtop/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/pgtop/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgtop
 PORTVERSION=	0.05
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:COSIMO

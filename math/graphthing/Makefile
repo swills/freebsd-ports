@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/graphthing/Makefile 486412 2018-12-02 12:49:53Z linimon $
+# $FreeBSD: head/math/graphthing/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	graphthing
 PORTVERSION=	1.3.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	math
 MASTER_SITES=	http://graph.seul.org/
 

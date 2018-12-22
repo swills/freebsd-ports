@@ -1,8 +1,9 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/librevisa-vish/Makefile 483759 2018-11-02 01:38:21Z linimon $
+# $FreeBSD: head/devel/librevisa-vish/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	librevisa-vish
 PORTVERSION=	0.0.20130714
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.librevisa.org/download/
 DISTNAME=	vish-${PORTVERSION}

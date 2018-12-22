@@ -1,9 +1,9 @@
 # Created by: Max Khon
-# $FreeBSD: head/databases/pgagent/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/databases/pgagent/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgagent
 PORTVERSION=	3.4.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	PGSQL/pgadmin3/release/pgagent
 DISTNAME=	pgAgent-${PORTVERSION}-Source

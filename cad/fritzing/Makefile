@@ -1,10 +1,10 @@
 # Created by: Sergio Lenzi <lenzi.sergio@gmail.com>
-# $FreeBSD: head/cad/fritzing/Makefile 484659 2018-11-11 03:52:09Z linimon $
+# $FreeBSD: head/cad/fritzing/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fritzing
 PORTVERSION=	0.9.2
 DISTVERSIONSUFFIX=	b
-PORTREVISION=	11
+PORTREVISION=	13
 CATEGORIES=	cad
 
 MAINTAINER=	lenzi.sergio@gmail.com

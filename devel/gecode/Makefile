@@ -1,9 +1,9 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/devel/gecode/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/gecode/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gecode
 PORTVERSION=	5.1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.gecode.org/download/
 

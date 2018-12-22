@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 488069 2018-12-22 05:46:49Z linimon $
 
 PORTNAME=	gnustep-gui
 PORTVERSION=	0.25.1
@@ -12,8 +12,6 @@ COMMENT=	GNUstep GUI library
 
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
-
-BROKEN_powerpc64=	fails to build: Illegal instruction (core dumped)
 
 LIB_DEPENDS+=	libtiff.so:graphics/tiff
 LIB_DEPENDS+=	libpng.so:graphics/png

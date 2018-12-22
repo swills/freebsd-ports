@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/powerdxx/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
+# $FreeBSD: head/sysutils/powerdxx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	powerdxx
 DISTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	rigoletto@FreeBSD.org

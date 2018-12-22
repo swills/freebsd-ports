@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/R-cran-promises/Makefile 468190 2018-04-24 08:21:05Z tota $
+# $FreeBSD: head/devel/R-cran-promises/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	promises
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

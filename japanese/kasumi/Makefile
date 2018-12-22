@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/japanese/kasumi/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/kasumi/Makefile 487847 2018-12-20 06:31:15Z linimon $
 
 PORTNAME=	kasumi
 PORTVERSION=	2.5
@@ -10,14 +10,12 @@ MASTER_SITES=	OSDN/${PORTNAME}/41436
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT=	Dictionary management tool for anthy
 
-USES=		gmake pkgconfig
-USE_GNOME=	gtk20
 LIB_DEPENDS=	libanthy.so:japanese/anthy
 
-GNU_CONFIGURE=	yes
+USES=		compiler:c++11-lang gmake localbase:ldflags pkgconfig
+USE_GNOME=	gtk20
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+GNU_CONFIGURE=	yes
 
 OPTIONS_DEFINE=	NLS
 

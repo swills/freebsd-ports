@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-elasticsearch/Makefile 455058 2017-11-28 16:20:18Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-elasticsearch/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	icingaweb2-module-elasticsearch
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org

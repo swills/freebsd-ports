@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/net/opal/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/net/opal/Makefile 487845 2018-12-20 06:26:02Z linimon $
 
 PORTNAME=	opal
 PORTVERSION=	3.10.10
@@ -14,7 +14,7 @@ LICENSE=	MPL10
 
 LIB_DEPENDS=	libpt.so:devel/ptlib
 
-USES=		gmake pathfix pkgconfig tar:xz
+USES=		compiler:c11 gmake pathfix pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

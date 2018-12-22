@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/liblas/Makefile 485002 2018-11-15 06:10:03Z tobik $
+# $FreeBSD: head/devel/liblas/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	liblas
 PORTVERSION=	1.8.1
-PORTREVISION=	12
+PORTREVISION=	14
 CATEGORIES=	devel
 
 MAINTAINER=	wen@FreeBSD.org

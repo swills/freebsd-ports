@@ -1,9 +1,9 @@
 # Created by: Sevan Janiyan <venture37@geeklan.co.uk>
-# $FreeBSD: head/databases/hashtypes/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/hashtypes/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hashtypes
 PORTVERSION=	0.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases security
 MASTER_SITES=	http://api.pgxn.org/dist/hashtypes/${PORTVERSION}/ \
 		http://oss-files.dreamindustries.co/mirror/

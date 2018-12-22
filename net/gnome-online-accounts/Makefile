@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net/gnome-online-accounts/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/net/gnome-online-accounts/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnome-online-accounts
 PORTVERSION=	3.28.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 

@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/maxr/Makefile 483731 2018-11-01 19:25:13Z amdmi3 $
+# $FreeBSD: head/games/maxr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	maxr
 PORTVERSION=	0.2.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://www.maxr.org/downloads/ \
 		http://mirror.amdmi3.ru/distfiles/

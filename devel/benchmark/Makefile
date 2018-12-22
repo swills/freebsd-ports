@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/benchmark/Makefile 483259 2018-10-28 10:05:24Z linimon $
+# $FreeBSD: head/devel/benchmark/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	benchmark
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4.1-25
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-gaf441fc
 CATEGORIES=	devel
 

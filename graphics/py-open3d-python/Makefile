@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/py-open3d-python/Makefile 477557 2018-08-19 07:47:22Z yuri $
+# $FreeBSD: head/graphics/py-open3d-python/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	open3d-python
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

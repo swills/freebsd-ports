@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/dbcsr/Makefile 483620 2018-10-31 21:49:24Z yuri $
+# $FreeBSD: head/math/dbcsr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dbcsr
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.0-rc.0-40
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-gd9c0dd54
 CATEGORIES=	math
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/varnish5/Makefile 485686 2018-11-23 15:53:44Z feld $
+# $FreeBSD: head/www/varnish5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	varnish
 PORTVERSION=	5.2.1
 DISTVERSIONPREFIX=	varnish-
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 PKGNAMESUFFIX=	5
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/libcoverart/Makefile 486871 2018-12-07 16:25:37Z linimon $
+# $FreeBSD: head/audio/libcoverart/Makefile 488051 2018-12-22 02:24:22Z linimon $
 
 PORTNAME=	libcoverart
 PORTVERSION=	1.0.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/metabrainz/${PORTNAME}/releases/download/release-${PORTVERSION}/
 
@@ -20,6 +20,11 @@ USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 
 CXXFLAGS+=	-Wno-implicit-fallthrough
+
+.if exists(/usr/lib/libstdc++.so)
+CXXFLAGS+=	-Wno-unused-function -Wno-class-memaccess -Wno-catch-value
+CFLAGS+=	-Wno-format-overflow
+.endif
 
 post-patch:
 	${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \

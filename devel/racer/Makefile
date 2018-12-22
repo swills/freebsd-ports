@@ -1,10 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/devel/racer/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/devel/racer/Makefile 487300 2018-12-12 15:32:57Z jbeich $
 
 PORTNAME=	racer
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.14
-PORTREVISION=	1
+DISTVERSION=	2.1.16
 CATEGORIES=	devel
 
 MAINTAINER=	beyert@cs.ucr.edu

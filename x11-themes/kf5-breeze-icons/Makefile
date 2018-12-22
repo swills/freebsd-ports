@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/kf5-breeze-icons/Makefile 485713 2018-11-23 22:42:03Z tcberner $
+# $FreeBSD: head/x11-themes/kf5-breeze-icons/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	breeze-icons
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

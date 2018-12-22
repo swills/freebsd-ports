@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/plasma5-kmenuedit/Makefile 483271 2018-10-28 10:59:23Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-kmenuedit/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kmenuedit
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

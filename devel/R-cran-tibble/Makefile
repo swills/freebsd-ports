@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-tibble/Makefile 464669 2018-03-16 09:42:21Z tota $
+# $FreeBSD: head/devel/R-cran-tibble/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tibble
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

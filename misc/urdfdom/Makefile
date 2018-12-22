@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/urdfdom/Makefile 486041 2018-11-27 17:16:44Z yuri $
+# $FreeBSD: head/misc/urdfdom/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	urdfdom
 DISTVERSION=	1.0.0-9
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g1857a55
 CATEGORIES=	misc
 

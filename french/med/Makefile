@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/med/Makefile 484476 2018-11-08 20:55:13Z thierry $
+# $FreeBSD: head/french/med/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	med
 DISTVERSION=	3.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	french science
 
 MAINTAINER=	thierry@FreeBSD.org

@@ -1,11 +1,13 @@
 # Created by: M. L. Dodson, <bdodson@scms.utmb.edu>
-# $FreeBSD: head/math/gri/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/math/gri/Makefile 487629 2018-12-16 21:01:12Z yuri $
 
 PORTNAME=	gri
 PORTVERSION=	2.12.23
 PORTREVISION=	7
 CATEGORIES=	math
 MASTER_SITES=	SF
+
+LICENSE=	GPLv2
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extensible plotting language for producing scientific graphs
@@ -24,14 +26,6 @@ INFO=		gri
 USE_TEX=	formats:build dvipsk:build
 PORTDOCS=	*
 PORTEXAMPLES=	*
-PLIST_FILES=	bin/gri bin/gri_merge bin/gri_unpage \
-		man/man1/gri.1.gz man/man1/gri_merge.1.gz \
-		man/man1/gri_unpage.1.gz \
-		share/emacs/site-lisp/gri-mode.el \
-		%%DATADIR%%/gri.cmd \
-		%%DATADIR%%/logo.dat \
-		%%DATADIR%%/rgb.txt \
-		%%DATADIR%%/startup.msg
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

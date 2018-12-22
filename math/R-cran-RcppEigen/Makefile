@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-RcppEigen/Makefile 486834 2018-12-07 08:19:37Z tota $
+# $FreeBSD: head/math/R-cran-RcppEigen/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RcppEigen
 PORTVERSION=	0.3.3.5.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

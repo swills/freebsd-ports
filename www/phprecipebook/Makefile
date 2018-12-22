@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/phprecipebook/Makefile 486751 2018-12-06 11:22:12Z rene $
+# $FreeBSD: head/www/phprecipebook/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	phprecipebook
 PORTVERSION=	3.01
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www deskutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28stable%29/${PORTVERSION:C/\..*//}
 

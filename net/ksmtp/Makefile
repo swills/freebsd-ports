@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/ksmtp/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/ksmtp/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	ksmtp
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

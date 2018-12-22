@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/R-cran-rex/Makefile 482863 2018-10-23 18:05:36Z dbn $
+# $FreeBSD: head/textproc/R-cran-rex/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rex
 DISTVERSION=	1.1.2
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

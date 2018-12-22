@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/math/geogebra/Makefile 465745 2018-03-27 19:30:24Z yuri $
+# $FreeBSD: head/math/geogebra/Makefile 487683 2018-12-17 13:30:55Z wen $
 
 PORTNAME=	geogebra
-PORTVERSION=	5.0.449.0
+PORTVERSION=	5.0.513.0
 CATEGORIES=	math java
 MASTER_SITES=	http://download.geogebra.org/installers/5.0/ \
 		https://static.geogebra.org/images/ \

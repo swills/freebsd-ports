@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/libkvkontakte/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+# $FreeBSD: head/net/libkvkontakte/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libkvkontakte
 DISTVERSION=	5.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 DIST_SUBDIR=	KDE/digikam

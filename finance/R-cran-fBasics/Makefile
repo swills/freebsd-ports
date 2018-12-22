@@ -1,9 +1,9 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/finance/R-cran-fBasics/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/finance/R-cran-fBasics/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fBasics
 DISTVERSION=	3042.89
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/databases/pear-DB_Table/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/pear-DB_Table/Makefile 487961 2018-12-21 08:30:15Z joneum $
 
 PORTNAME=	DB_Table
 PORTVERSION=	1.5.6
@@ -9,6 +9,8 @@ CATEGORIES=	databases www pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR object-oriented interface to a database table
+
+LICENSE=	BSD2CLAUSE
 
 USES=		pear
 

@@ -1,9 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/misc/xdelta3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/misc/xdelta3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xdelta
 PORTVERSION=	3.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES?=	misc devel

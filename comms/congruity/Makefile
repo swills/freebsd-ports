@@ -1,9 +1,9 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/congruity/Makefile 472306 2018-06-13 12:05:32Z amdmi3 $
+# $FreeBSD: head/comms/congruity/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	congruity
 PORTVERSION=	18
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	comms
 MASTER_SITES=	SF
 

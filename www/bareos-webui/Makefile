@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/bareos-webui/Makefile 470292 2018-05-18 13:27:23Z acm $
+# $FreeBSD: head/www/bareos-webui/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bareos-webui
 PORTVERSION=	17.2.5
+PORTREVISION=	1
 DISTVERSIONPREFIX=	Release/
 CATEGORIES=	www sysutils
 

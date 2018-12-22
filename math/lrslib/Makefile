@@ -1,9 +1,10 @@
-# $FreeBSD: head/math/lrslib/Makefile 486653 2018-12-05 07:47:42Z yuri $
+# $FreeBSD: head/math/lrslib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lrslib
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	062
 DISTVERSIONSUFFIX=	+autotools-2017-03-03
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

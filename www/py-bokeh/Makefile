@@ -1,9 +1,9 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-bokeh/Makefile 480460 2018-09-23 08:13:44Z skozlov $
+# $FreeBSD: head/www/py-bokeh/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bokeh
 PORTVERSION=	0.12.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

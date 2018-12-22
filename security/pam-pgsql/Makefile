@@ -1,8 +1,9 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/security/pam-pgsql/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/pam-pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pam-pgsql
 PORTVERSION=	0.7.3.2
+PORTREVISION=	1
 CATEGORIES=	security databases
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/0.7/
 

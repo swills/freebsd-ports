@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/poxml/Makefile 482577 2018-10-20 15:56:08Z tcberner $
+# $FreeBSD: head/devel/poxml/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	poxml
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/libmustache/Makefile 485142 2018-11-17 17:28:24Z sunpoet $
+# $FreeBSD: head/devel/libmustache/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libmustache
 PORTVERSION=	0.5.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 #MASTER_SITES=	

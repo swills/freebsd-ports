@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/R-cran-numbers/Makefile 478557 2018-08-31 14:11:44Z wen $
+# $FreeBSD: head/math/R-cran-numbers/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	numbers
 DISTVERSION=	0.7-1
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

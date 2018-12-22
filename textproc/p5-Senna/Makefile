@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/p5-Senna/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-Senna/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Senna
 PORTVERSION=	0.51
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DMAKI

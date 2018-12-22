@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/py-molequeue/Makefile 482716 2018-10-21 17:49:53Z yuri $
+# $FreeBSD: head/misc/py-molequeue/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	molequeue
 DISTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	https://github.com/openchemistry/molequeue/releases/download/${DISTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

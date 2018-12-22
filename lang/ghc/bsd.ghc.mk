@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/ghc/bsd.ghc.mk 487190 2018-12-10 17:08:17Z arrowd $
+# $FreeBSD: head/lang/ghc/bsd.ghc.mk 487653 2018-12-17 06:04:49Z arrowd $
 #
 # bsd.ghc.mk -- Common code for various versions of GHC ports.
 #
@@ -297,3 +297,20 @@ create-bootstrap:
 		&& sha256 ghc-${GHC_VERSION}-boot-${ARCH}-freebsd.tar.xz \
 		&& ${ECHO} -n "SIZE (ghc-${GHC_VERSION}-boot-${ARCH}-freebsd.tar.xz) = " \
 		&& ${STAT} -f %z ghc-${GHC_VERSION}-boot-${ARCH}-freebsd.tar.xz
+
+# Much like create-bootstrap, just different naming and output format
+.PHONY: create-stack-bindist
+create-stack-bindist:
+	cd ${WRKSRC} \
+		&& gmake binary-dist TAR_COMP=xz \
+		&& ${MV} ${WRKSRC}/ghc-${GHC_VERSION}-${GHC_ARCH}-portbld-freebsd.tar.xz /tmp/
+
+	cd /tmp \
+		&& ${ECHO} "${GHC_VERSION}:" \
+		&& ${ECHO} "url: \"http://distcache.FreeBSD.org/local-distfiles/arrowd/stack-bindists/ghc-${GHC_VERSION}-${GHC_ARCH}-portbld-freebsd.tar.xz\"" \
+		&& ${ECHO} -n "content-length: " \
+		&& ${STAT} -f %z ghc-${GHC_VERSION}-${GHC_ARCH}-portbld-freebsd.tar.xz \
+		&& ${ECHO} -n "sha1: " \
+		&& sha1 -q ghc-${GHC_VERSION}-${GHC_ARCH}-portbld-freebsd.tar.xz \
+		&& ${ECHO} -n "sha256: " \
+		&& sha256 -q ghc-${GHC_VERSION}-${GHC_ARCH}-portbld-freebsd.tar.xz

@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/R-cran-xfun/Makefile 482898 2018-10-24 09:54:33Z tota $
+# $FreeBSD: head/misc/R-cran-xfun/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xfun
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	misc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

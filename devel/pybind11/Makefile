@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/pybind11/Makefile 481425 2018-10-07 05:13:14Z yuri $
+# $FreeBSD: head/devel/pybind11/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pybind11
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.4
+PORTREVISION=	1
 CATEGORIES=	devel python
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/biology/pyfasta/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/biology/pyfasta/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyfasta
 PORTVERSION=	0.5.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

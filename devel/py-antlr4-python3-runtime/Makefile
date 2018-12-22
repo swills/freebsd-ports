@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-antlr4-python3-runtime/Makefile 485792 2018-11-24 21:11:26Z antoine $
+# $FreeBSD: head/devel/py-antlr4-python3-runtime/Makefile 487913 2018-12-20 19:50:26Z antoine $
 
 PORTNAME=	antlr4-python3-runtime
-PORTVERSION=	4.7.1
+PORTVERSION=	4.7.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

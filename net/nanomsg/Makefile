@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/nanomsg/Makefile 484644 2018-11-10 21:14:11Z arved $
+# $FreeBSD: head/net/nanomsg/Makefile 487630 2018-12-16 21:23:57Z yuri $
 
 PORTNAME=			nanomsg
 PORTVERSION=			1.1.5
+PORTREVISION=			1
 CATEGORIES=			net
 
 MAINTAINER=			crest@bultmann.eu
@@ -22,5 +23,7 @@ DOCS_DESC=			Build and/or install HTML and manpages
 
 DOCS_BUILD_DEPENDS=		asciidoctor:textproc/rubygem-asciidoctor
 DOCS_CMAKE_BOOL=		NN_ENABLE_DOC
+
+PORTDOCS=			*
 
 .include <bsd.port.mk>

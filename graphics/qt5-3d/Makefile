@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/qt5-3d/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/graphics/qt5-3d/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	3d
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 

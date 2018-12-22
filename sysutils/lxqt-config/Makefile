@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/lxqt-config/Makefile 477653 2018-08-20 13:42:16Z jsm $
+# $FreeBSD: head/sysutils/lxqt-config/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lxqt-config
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	LXQT
 DIST_SUBDIR=	lxqt

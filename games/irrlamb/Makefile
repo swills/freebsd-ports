@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/irrlamb/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/irrlamb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	irrlamb
 PORTVERSION=	0.2.1
-PORTREVISION=	6
+PORTREVISION=	7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

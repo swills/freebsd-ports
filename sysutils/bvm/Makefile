@@ -1,8 +1,8 @@
 # Created by: Qiang Guo <guoqiang_cn@126.com>
-# $FreeBSD: head/sysutils/bvm/Makefile 485894 2018-11-25 19:44:45Z swills $
+# $FreeBSD: head/sysutils/bvm/Makefile 487353 2018-12-13 07:11:01Z wen $
 
 PORTNAME=	bvm
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.3
 CATEGORIES=	sysutils
 
 MAINTAINER=	guoqiang_cn@126.com

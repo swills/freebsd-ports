@@ -1,5 +1,5 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-8/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/www/typo3-8/Makefile 487467 2018-12-14 20:18:01Z joneum $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
@@ -21,12 +21,12 @@ USES=		cpe php:web,flavors shebangfix
 SHEBANG_GLOB=	*.sh *.php
 NO_BUILD=	yes
 NO_ARCH=	yes
-USE_PHP=	ctype fileinfo filter hash json mysqli openssl pcre session soap xml zip simplexml
+USE_PHP=	ctype fileinfo filter hash json mysqli openssl pcre session simplexml xml zip
 WRKSRC=		${WRKDIR}/${TYPO3SRC}
 
 PORT_V_MAJOR=	8
 PORT_V_MINOR=	7
-PORT_V_PATCH=	20
+PORT_V_PATCH=	22
 
 TYPO3WWW=	www
 TYPO3SRC=	${PORTNAME}_src-${PORTVERSION}

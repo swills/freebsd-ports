@@ -1,10 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/astro/libosmium/Makefile 483814 2018-11-02 15:07:09Z linimon $
+# $FreeBSD: head/astro/libosmium/Makefile 487879 2018-12-20 13:05:02Z amdmi3 $
 
 PORTNAME=	libosmium
-PORTVERSION=	2.14.2
+PORTVERSION=	2.15.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	astro geography devel
 
 MAINTAINER=	amdmi3@FreeBSD.org

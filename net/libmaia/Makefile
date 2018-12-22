@@ -1,10 +1,10 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/net/libmaia/Makefile 481245 2018-10-04 20:15:41Z tcberner $
+# $FreeBSD: head/net/libmaia/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libmaia
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	kde@FreeBSD.org

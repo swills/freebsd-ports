@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/openvas9-scanner/Makefile 447483 2017-08-07 03:48:23Z acm $
+# $FreeBSD: head/security/openvas9-scanner/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openvas9-scanner
 PORTVERSION=	5.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 MASTER_SITES=	http://wald.intevation.org/frs/download.php/2423/
 
 COMMENT=	OpenVAS 9 scanner

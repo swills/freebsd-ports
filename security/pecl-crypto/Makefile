@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/security/pecl-crypto/Makefile 485238 2018-11-18 18:24:44Z linimon $
+# $FreeBSD: head/security/pecl-crypto/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	crypto
 PORTVERSION=	0.3.1
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	gasol.wu@gmail.com

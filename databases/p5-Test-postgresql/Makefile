@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/p5-Test-postgresql/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/databases/p5-Test-postgresql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Test-postgresql
 PORTVERSION=	0.09
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-expm/Makefile 480716 2018-09-26 06:19:44Z tota $
+# $FreeBSD: head/math/R-cran-expm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	expm
 DISTVERSION=	0.999-3
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

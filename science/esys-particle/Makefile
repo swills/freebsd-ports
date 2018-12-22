@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/esys-particle/Makefile 484170 2018-11-05 05:16:35Z yuri $
+# $FreeBSD: head/science/esys-particle/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	esys-particle
 DISTVERSION=	2.3.5
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	https://launchpad.net/esys-particle/trunk/${DISTVERSION}/+download/
 DISTNAME=	ESyS-Particle-${DISTVERSION}

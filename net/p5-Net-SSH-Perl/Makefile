@@ -1,8 +1,9 @@
 # Created by: Jesper Skriver <jesper@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-SSH-Perl/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/net/p5-Net-SSH-Perl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Net-SSH-Perl
 PORTVERSION=	2.14
+PORTREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

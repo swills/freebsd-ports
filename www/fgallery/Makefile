@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/fgallery/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/www/fgallery/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fgallery
 PORTVERSION=	1.8.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www graphics
 
 MAINTAINER=	ehaupt@FreeBSD.org

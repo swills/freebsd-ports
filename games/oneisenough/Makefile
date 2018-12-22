@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/oneisenough/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/oneisenough/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	oneisenough
 PORTVERSION=	0.40
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games python
 MASTER_SITES=	http://hectigo.net/games/oneisenough/ \
 		SF/nemysisfreebsdp/games/:icons

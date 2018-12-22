@@ -1,9 +1,9 @@
 # Created by: Kurt Jaeger <fbsd-ports@opsec.eu>
-# $FreeBSD: head/math/p5-Math-Int128/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/p5-Math-Int128/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Math-Int128
 PORTVERSION=	0.22
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/flint2/Makefile 472032 2018-06-09 00:35:57Z linimon $
+# $FreeBSD: head/math/flint2/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	flint2
 DISTVERSION=	g20180323
@@ -19,7 +19,6 @@ BROKEN_armv6=		fails to compile: invokes x86 assembler
 BROKEN_armv7=		fails to compile: invokes x86 assembler
 BROKEN_mips=		fails to compile: invokes x86 assembler
 BROKEN_mips64=		fails to compile: invokes x86 assembler
-BROKEN_powerpc64=	fails to compile: invokes x86 assembler
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr

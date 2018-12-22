@@ -1,9 +1,9 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/emulators/pearpc/Makefile 483249 2018-10-28 09:36:56Z jbeich $
+# $FreeBSD: head/emulators/pearpc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pearpc
 PORTVERSION=	0.5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}.0
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-petsc4py/Makefile 481139 2018-10-02 23:11:15Z yuri $
+# $FreeBSD: head/math/py-petsc4py/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	petsc4py
 DISTVERSION=	3.10.0
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

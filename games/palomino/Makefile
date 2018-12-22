@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/palomino/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/palomino/Makefile 488050 2018-12-22 02:18:43Z linimon $
 
 PORTNAME=	palomino
 PORTVERSION=	20131231
@@ -20,7 +20,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE_GNU_GPL_2.txt
 
 LIB_DEPENDS=	libosg.so:graphics/osg
 
-USES=		alias cmake:noninja lua:51 tar:xz
+USES=		alias compiler:c++11-lang cmake:noninja gl lua:51 tar:xz
 USE_CXXSTD=	gnu++98
 USE_GL=		gl glu
 

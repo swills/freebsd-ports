@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/hamsterdb/Makefile 478689 2018-09-01 13:12:37Z jbeich $
+# $FreeBSD: head/databases/hamsterdb/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	hamsterdb
 PORTVERSION=	2.1.11
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	databases
 MASTER_SITES=	http://files.hamsterdb.com/dl/
 

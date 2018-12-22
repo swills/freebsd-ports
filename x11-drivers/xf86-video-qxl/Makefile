@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-video-qxl/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-qxl/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	xf86-video-qxl
 DISTVERSION=	0.1.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	ports@FreeBSD.org
@@ -11,7 +11,7 @@ COMMENT=	X.Org X server -- QXL display driver
 LICENSE=	MIT
 
 BUILD_DEPENDS=	spice-protocol>=0.12.10:devel/spice-protocol \
-		${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat
+		${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 LIB_DEPENDS=	libspice-server.so:devel/libspice-server
 
 USES=		localbase:ldflags pkgconfig python:2.7 shebangfix

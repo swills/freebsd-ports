@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/ddocent/Makefile 467808 2018-04-20 01:34:05Z jwb $
+# $FreeBSD: head/biology/ddocent/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dDocent
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.25
+PORTREVISION=	1
 CATEGORIES=	biology java
 
 MAINTAINER=	jwb@FreeBSD.org

@@ -1,15 +1,16 @@
-# $FreeBSD: head/x11/qt5-qev/Makefile 482584 2018-10-20 16:11:28Z tcberner $
+# $FreeBSD: head/x11/qt5-qev/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	qev
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt QWidget events introspection tool
 
-USE_QT=		core widgets
 USES=		compiler:c++11-lang qmake qt-dist:5,tools
+USE_QT=		core widgets
 
 WRKSRC_SUBDIR=	src/${PORTNAME}
 

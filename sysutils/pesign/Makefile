@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/pesign/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/pesign/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pesign
 PORTVERSION=	0.110
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org

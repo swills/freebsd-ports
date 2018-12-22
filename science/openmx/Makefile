@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/openmx/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/science/openmx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openmx
 DISTVERSION=	3.8.5 # the 18June12 patch upgrades 3.8 -> 3.8.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	http://www.openmx-square.org/ \
 		http://www.openmx-square.org/bugfixed/18June12/:patch

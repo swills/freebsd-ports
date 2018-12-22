@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/gbsplay/Makefile 475972 2018-07-31 06:43:53Z ehaupt $
+# $FreeBSD: head/audio/gbsplay/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gbsplay
 PORTVERSION=	0.0.93.20161217
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 
 MAINTAINER=	ehaupt@FreeBSD.org

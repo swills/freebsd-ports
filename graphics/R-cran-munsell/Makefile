@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-munsell/Makefile 472757 2018-06-19 05:49:52Z tota $
+# $FreeBSD: head/graphics/R-cran-munsell/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	munsell
 PORTVERSION=	0.5.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

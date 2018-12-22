@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-sf/Makefile 483000 2018-10-26 02:53:06Z tota $
+# $FreeBSD: head/math/R-cran-sf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sf
 DISTVERSION=	0.7-1
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

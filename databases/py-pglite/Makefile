@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/py-pglite/Makefile 479315 2018-09-09 16:59:31Z sunpoet $
+# $FreeBSD: head/databases/py-pglite/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pglite
 DISTVERSION=	1.0.10
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

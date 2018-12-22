@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/gamess-us/Makefile 482133 2018-10-15 06:12:03Z yuri $
+# $FreeBSD: head/science/gamess-us/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gamess
 DISTVERSION=	20181013
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 PKGNAMESUFFIX=	-us # "US" fork
 DISTNAME=	gamess-current

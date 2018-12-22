@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-filetransfer-handler/Makefile 486949 2018-12-08 13:20:36Z tcberner $
+# $FreeBSD: head/net-im/ktp-filetransfer-handler/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	ktp-filetransfer-handler
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

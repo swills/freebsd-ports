@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/beid/Makefile 481740 2018-10-10 14:46:36Z tijl $
+# $FreeBSD: head/security/beid/Makefile 487981 2018-12-21 10:50:47Z tijl $
 
 PORTNAME=	beid
-PORTVERSION=	4.4.9
+PORTVERSION=	4.4.13
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -19,7 +19,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Fedict
 GH_PROJECT=	eid-mw
 
-USES=		autoreconf gettext-tools gmake libtool pkgconfig ssl
+USES=		autoreconf compiler:c++11-lang gettext-tools gmake gnome \
+		libtool pkgconfig ssl
 USE_GNOME=	gtk30 libxml2
 GLIB_SCHEMAS=	eid-viewer.gschema.xml
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/tbe/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/games/tbe/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tbe
 PORTVERSION=	0.9.2.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	games
 

@@ -1,8 +1,9 @@
 # Created by: Tatsuki Makino <tatsuki_makino@hotmail.com>
-# $FreeBSD: head/astro/geographiclib/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/astro/geographiclib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	geographiclib
 PORTVERSION=	1.49
+PORTREVISION=	1
 CATEGORIES=	astro
 MASTER_SITES=	SF/geographiclib/distrib\
 		SF/geographiclib:geoids,gravity,magnetic

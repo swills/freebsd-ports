@@ -1,9 +1,9 @@
 # Created by: Ben Lavery <ben.lavery@hashbang0.com>
-# $FreeBSD: head/games/bunnysay/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/bunnysay/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bunnysay
 PORTVERSION=	1.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

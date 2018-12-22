@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/qt5-qmake/Makefile 482034 2018-10-14 08:01:13Z tcberner $
+# $FreeBSD: head/devel/qt5-qmake/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	qmake
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 
@@ -23,7 +24,7 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-no-accessibility -no-openssl -no-gui -no-cups \
 		-no-iconv -no-icu -no-dbus -no-xcb -no-opengl \
 		-no-glib -no-fontconfig \
-		-no-gtk -no-xinput2 \
+		-no-gtk \
 		-no-evdev -no-xkbcommon \
 		-no-freetype -no-gif -no-harfbuzz -no-libjpeg \
 		-no-libpng -no-widgets

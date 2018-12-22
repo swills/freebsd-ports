@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-SQUAREM/Makefile 467036 2018-04-11 08:48:37Z tota $
+# $FreeBSD: head/math/R-cran-SQUAREM/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	SQUAREM
 DISTVERSION=	2017.10-1
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

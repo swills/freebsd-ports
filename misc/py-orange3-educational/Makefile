@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/py-orange3-educational/Makefile 472359 2018-06-14 06:40:02Z yuri $
+# $FreeBSD: head/misc/py-orange3-educational/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	orange3-educational
 DISTVERSION=	0.1.8
+PORTREVISION=	1
 CATEGORIES=	misc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

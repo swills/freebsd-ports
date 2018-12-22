@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/scilab-toolbox-swt/Makefile 472035 2018-06-09 04:56:16Z rene $
+# $FreeBSD: head/math/scilab-toolbox-swt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	swt
 PORTVERSION=	0.1.20
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	http://atoms.scilab.org/toolboxes/swt/${PORTVERSION}/files/
 PKGNAMEPREFIX=	scilab-toolbox-

@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/R-cran-readxl/Makefile 482868 2018-10-23 18:29:23Z dbn $
+# $FreeBSD: head/textproc/R-cran-readxl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	readxl
 DISTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

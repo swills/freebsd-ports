@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina-core/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/lumina-core/Makefile 487843 2018-12-20 06:04:01Z linimon $
 
 PORTNAME=	lumina-core
 PORTVERSION=	1.4.1
@@ -39,7 +39,7 @@ RUN_DEPENDS+=	gstreamer1-plugins-core>=0:multimedia/gstreamer1-plugins-core
 
 MAKE_JOBS_UNSAFE=yes
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang gl qmake qt:5
 USE_GL=		gl
 USE_XORG=	x11 xdamage xcb
 USE_LDCONFIG=	yes

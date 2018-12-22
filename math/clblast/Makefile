@@ -1,9 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/clblast/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/clblast/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	clblast
 PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org

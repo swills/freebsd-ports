@@ -1,9 +1,9 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/mail/dbmail/Makefile 434749 2017-02-24 21:15:52Z bofh $
+# $FreeBSD: head/mail/dbmail/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dbmail
 PORTVERSION=	3.2.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://git.dbmail.eu/paul/dbmail/snapshot/ \
 		http://www.dbmail.org/download/3.2/

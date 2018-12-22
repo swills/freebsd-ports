@@ -1,9 +1,9 @@
 # Created by: okeeblow <root@cooltrainer.org>
-# $FreeBSD: head/sysutils/abgx360gui/Makefile 483236 2018-10-28 08:13:45Z linimon $
+# $FreeBSD: head/sysutils/abgx360gui/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	abgx360gui
 PORTVERSION=	1.0.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freebsd.unixfreunde.de/sources/ \
 		http://update.cooltrainer.org/abgx360/:png \

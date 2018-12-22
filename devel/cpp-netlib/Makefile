@@ -1,11 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/cpp-netlib/Makefile 480114 2018-09-19 21:38:38Z linimon $
+# $FreeBSD: head/devel/cpp-netlib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		cpp-netlib
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=		0.12.0
 DISTVERSIONSUFFIX=	-final
-PORTREVISION=		6
+PORTREVISION=		8
 CATEGORIES=		devel
 
 MAINTAINER=		zi@FreeBSD.org

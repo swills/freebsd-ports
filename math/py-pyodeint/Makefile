@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-pyodeint/Makefile 480148 2018-09-20 00:54:30Z yuri $
+# $FreeBSD: head/math/py-pyodeint/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyodeint
 DISTVERSION=	0.10.1
+PORTREVISION=	2
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

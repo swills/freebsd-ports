@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-ki18n/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/devel/kf5-ki18n/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	ki18n
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

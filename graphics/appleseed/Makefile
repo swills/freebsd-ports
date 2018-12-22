@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/appleseed/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/appleseed/Makefile 487777 2018-12-18 23:28:17Z antoine $
 
 PORTNAME=	appleseed
 DISTVERSION=	1.7.1-beta
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 
 MAINTAINER=	danfe@FreeBSD.org
@@ -11,6 +11,8 @@ COMMENT=	Modern, physically-based production renderer
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libpng.so:graphics/png \

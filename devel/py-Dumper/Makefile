@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-Dumper/Makefile 486399 2018-12-02 09:41:44Z pi $
+# $FreeBSD: head/devel/py-Dumper/Makefile 487539 2018-12-15 18:38:54Z pi $
 
 PORTNAME=	Dumper
-PORTVERSION=	1.0.4
+PORTVERSION=	1.1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

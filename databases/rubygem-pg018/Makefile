@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/rubygem-pg018/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/databases/rubygem-pg018/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pg
 PORTVERSION=	0.18.4
+PORTREVISION=	1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	018

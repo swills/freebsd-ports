@@ -1,8 +1,8 @@
 # Created by: Alexander Leidinger
-# $FreeBSD: head/misc/openhab2/Makefile 486962 2018-12-08 16:24:37Z netchild $
+# $FreeBSD: head/misc/openhab2/Makefile 487772 2018-12-18 21:01:08Z netchild $
 
 PORTNAME=	openhab2
-PORTVERSION=	2.3.0
+PORTVERSION=	2.4.0
 #PORTREVISION=	3
 CATEGORIES=	misc java
 MASTER_SITES=	https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F${PORTVERSION}/
@@ -34,6 +34,7 @@ do-build:
 .endfor
 	${RM} -r ${WRKSRC}/runtime/bin/contrib
 	${RM} ${WRKSRC}/*.ps1 ${WRKSRC}/*.bat ${WRKSRC}/runtime/bin/*.ps1 ${WRKSRC}/runtime/bin/*.bat \
+	    ${WRKSRC}/runtime/bin/*.psm1 \
 	    ${WRKSRC}/runtime/bin/setenv.bak \
 	    ${WRKSRC}/runtime/bin/setenv.orig
 

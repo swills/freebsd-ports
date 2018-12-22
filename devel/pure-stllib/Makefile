@@ -1,9 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/devel/pure-stllib/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/pure-stllib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pure-stllib
 PORTVERSION=	0.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/purelang/pure-lang/downloads/
 DIST_SUBDIR=	pure

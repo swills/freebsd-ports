@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/gutenmark/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/gutenmark/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gutenmark
 PORTVERSION=	20090510
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.sandroid.org/GutenMark/wasftp.GutenMark/SoftwareSnapshots/
 DISTNAME=	GutenMark_source_dev-${PORTVERSION}

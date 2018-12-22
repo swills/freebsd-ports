@@ -1,10 +1,10 @@
-# $FreeBSD: head/graphics/cloudcompare/Makefile 486668 2018-12-05 13:24:11Z pi $
+# $FreeBSD: head/graphics/cloudcompare/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cloudcompare
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.9.1-288
 DISTVERSIONSUFFIX=	-gb4d51361
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	graphics
 
 MAINTAINER=	neel@neelc.org

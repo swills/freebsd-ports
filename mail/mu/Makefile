@@ -1,8 +1,9 @@
 # Created by: rea@FreeBSD.org
-# $FreeBSD: head/mail/mu/Makefile 463617 2018-03-05 03:33:06Z hrs $
+# $FreeBSD: head/mail/mu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mu
 PORTVERSION=	1.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 

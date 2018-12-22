@@ -1,15 +1,14 @@
 # Created by: Camson Huynh <chuynh@biolateral.com.au>
-# $FreeBSD: head/biology/gff2ps/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/biology/gff2ps/Makefile 487807 2018-12-19 17:34:29Z egypcio $
 
 PORTNAME=	gff2ps
-PORTVERSION=	0.98d
-PORTREVISION=	2
+PORTVERSION=	0.98l
 CATEGORIES=	biology
 MASTER_SITES=	ftp://genome.crg.es/pub/gff_tools/gff2ps/ \
 		http://genome.crg.es/software/gfftools/gff2ps_docs/manual/:doc
 DISTFILES=	${PORTNAME}_v${PORTVERSION}.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Converts gff-formated genomic data-sets to PostScript
 
 LICENSE=	GPLv2+

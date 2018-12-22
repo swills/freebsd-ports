@@ -1,8 +1,9 @@
 # Created by: Felix Hanley <felix@userspace.com.au>
-# $FreeBSD: head/net/libnss-pgsql/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/libnss-pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libnss-pgsql
 PORTVERSION=	1.5.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	PGSQL/projects/pgFoundry/sysauth/NSS/nss1.5.0-beta
 DISTNAME=	${PORTNAME}-${PORTVERSION}-beta

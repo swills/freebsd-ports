@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libvmdk/Makefile 485855 2018-11-25 12:28:36Z antoine $
+# $FreeBSD: head/devel/libvmdk/Makefile 487910 2018-12-20 19:40:20Z antoine $
 
 PORTNAME=	libvmdk
-PORTVERSION=	20181124
+PORTVERSION=	20181216
 DISTVERSIONPREFIX=	alpha-
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libvmdk/releases/download/${PORTVERSION}/ \

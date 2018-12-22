@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 486677 2018-12-05 15:46:02Z rene $
+# $FreeBSD: head/mail/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -135,7 +135,6 @@
     SUBDIR += fetchmail
     SUBDIR += filtermail
     SUBDIR += findmaildirs
-    SUBDIR += gbuffy
     SUBDIR += geary
     SUBDIR += gensig
     SUBDIR += getmail
@@ -497,7 +496,6 @@
     SUBDIR += pine-pgp-filters
     SUBDIR += pm-lib
     SUBDIR += policyd2
-    SUBDIR += pop3lite
     SUBDIR += pop3proxy
     SUBDIR += popa3d
     SUBDIR += popa3d-before-sendmail

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 486747 2018-12-06 09:31:27Z amdmi3 $
+# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 487624 2018-12-16 19:20:32Z tcberner $
 
 PORTNAME=	ktp-accounts-kcm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -20,7 +20,8 @@ LIB_DEPENDS=	libaccounts-qt5.so:net-im/libaccounts-qt5 \
 RUN_DEPENDS=	${KDE_PREFIX}/bin/ktp-contactlist:net-im/ktp-contact-list  \
 		${QT_PLUGINDIR}/kaccounts/ui/owncloud_plugin_kaccounts.so:net-im/kaccounts-providers
 
-USES=		cmake:outsource gettext gnome kde:5 pkgconfig qt:5 tar:xz
+USES=		compiler:c++11-lang cmake:outsource gettext gnome kde:5 \
+		pkgconfig qt:5 tar:xz
 USE_GNOME=	intltool
 USE_KDE=	auth codecs config configwidgets coreaddons ecm i18n \
 		iconthemes itemviews kcmutils kio notifications notifyconfig \

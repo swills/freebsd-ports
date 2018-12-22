@@ -1,13 +1,15 @@
-# $FreeBSD: head/deskutils/lumina-pdf/Makefile 483485 2018-10-30 12:26:42Z linimon $
+# $FreeBSD: head/deskutils/lumina-pdf/Makefile 487970 2018-12-21 09:30:11Z amdmi3 $
 
 PORTNAME=	lumina-pdf
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com
 COMMENT=	PDF viewer from the Lumina Desktop
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../../LICENSE
 
 LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5
 

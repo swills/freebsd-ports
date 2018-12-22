@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/R-cran-DoE.base/Makefile 478653 2018-09-01 03:34:24Z wen $
+# $FreeBSD: head/math/R-cran-DoE.base/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	DoE.base
 DISTVERSION=	1.1-1
+PORTREVISION=	1
 CATEGORIES=	math devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

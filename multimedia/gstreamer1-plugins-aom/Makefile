@@ -1,6 +1,6 @@
-# $FreeBSD: head/multimedia/gstreamer1-plugins-aom/Makefile 483887 2018-11-03 11:58:10Z tijl $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-aom/Makefile 487820 2018-12-20 00:46:32Z jbeich $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 COMMENT=	GStreamer (libaom) plugin

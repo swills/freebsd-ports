@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/blaze/Makefile 478252 2018-08-27 20:38:50Z yuri $
+# $FreeBSD: head/math/blaze/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	blaze
 DISTVERSION=	3.4
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/downloads/
 

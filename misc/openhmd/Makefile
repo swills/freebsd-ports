@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/openhmd/Makefile 481376 2018-10-06 16:22:16Z yuri $
+# $FreeBSD: head/misc/openhmd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	OpenHMD
 DISTVERSION=	0.2.0-215
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g6f91c10
 CATEGORIES=	misc
 MASTER_SITES=	CHEESESHOP

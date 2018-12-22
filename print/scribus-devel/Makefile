@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/print/scribus-devel/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/print/scribus-devel/Makefile 487596 2018-12-16 15:10:42Z tcberner $
 
 PORTNAME=	scribus
 PORTVERSION=	1.5.4
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	print editors
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}${PKGNAMESUFFIX}/${PORTVERSION}/ \
 		http://www.scribus.net/downloads/${PORTVERSION}/
@@ -36,16 +36,20 @@ LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 		libharfbuzz.so:print/harfbuzz \
 		libicuuc.so:devel/icu
 
-USES=		cmake:outsource desktop-file-utils jpeg pkgconfig python qt:5 shared-mime-info ssl tar:xz
+USES=		cmake:outsource desktop-file-utils dos2unix jpeg pkgconfig python qt:5 shared-mime-info ssl tar:xz
 USE_QT=		buildtools_build core declarative gui linguisttools_build network opengl \
 		printsupport qmake_build widgets xml
 USE_GNOME=	libxml2
 INSTALLS_ICONS=	yes
 USE_LDCONFIG=	yes
 
-CMAKE_ARGS+=	-DWANT_HUNSPELL=YES -Wno-ferror-limit
+CMAKE_ARGS+=	-DWANT_HUNSPELL=YES -Wno-ferror-limit -DCMAKE_COLOR_MAKEFILE:BOOL=ON
 
 OPTIONS_DEFINE=	DOCS
+
+DOS2UNIX_FILE=	scribus/plugins/import/pdf/importpdf.cpp \
+		scribus/plugins/import/pdf/slaoutput.cpp \
+		scribus/plugins/import/pdf/slaoutput.h
 
 post-install:
 		${LN} -sf ../share/icons/1_5_1/scribus.png \

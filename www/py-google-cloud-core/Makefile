@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-google-cloud-core/Makefile 478642 2018-09-01 00:22:39Z dbaio $
+# $FreeBSD: head/www/py-google-cloud-core/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	google-cloud-core
 PORTVERSION=	0.28.1
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

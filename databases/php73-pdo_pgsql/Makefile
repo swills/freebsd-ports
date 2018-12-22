@@ -1,5 +1,6 @@
-# $FreeBSD: head/databases/php73-pdo_pgsql/Makefile 481525 2018-10-08 08:52:51Z tz $
+# $FreeBSD: head/databases/php73-pdo_pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MASTERDIR=	${.CURDIR}/../../lang/php73

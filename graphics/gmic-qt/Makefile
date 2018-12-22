@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/gmic-qt/Makefile 478988 2018-09-04 20:10:21Z jhale $
+# $FreeBSD: head/graphics/gmic-qt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gmic-qt
 DISTVERSIONPREFIX=	v.
 DISTVERSION=	2.3.6
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	graphics kde
 MASTER_SITES=	http://gmic.eu/:stdlib \

@@ -1,9 +1,9 @@
 # Created by: Tz-Huan Huang <tzhuan@gmail.com>
-# $FreeBSD: head/math/libtsnnls/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/libtsnnls/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libtsnnls
 PORTVERSION=	2.3.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math
 MASTER_SITES=	http://www.jasoncantarella.com/downloads/
 

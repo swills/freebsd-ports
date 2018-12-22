@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/bstone/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/bstone/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bstone
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.1.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	devel@stasyan.com

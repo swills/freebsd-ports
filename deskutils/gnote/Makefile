@@ -1,8 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnote/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/deskutils/gnote/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnote
 PORTVERSION=	3.28.0
+PORTREVISION=	1
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 

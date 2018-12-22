@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/www/libepc/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/www/libepc/Makefile 488060 2018-12-22 03:33:22Z linimon $
 
 PORTNAME=	libepc
 PORTVERSION=	0.4.6
@@ -24,5 +24,11 @@ USE_GNOME=	gnomeprefix cairo gdkpixbuf2 gtk30 intltool
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+
+post-patch:
+.if exists(/usr/lib/libstdc++.so)
+	${REINPLACE_CMD} -e '/#pragma GCC diagnostic/d' \
+		${WRKSRC}/examples/simple-publisher.c
+.endif
 
 .include <bsd.port.mk>

@@ -1,10 +1,10 @@
-# $FreeBSD: head/games/rlvm/Makefile 486006 2018-11-27 13:14:03Z jbeich $
+# $FreeBSD: head/games/rlvm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rlvm
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	0.14-67
 DISTVERSIONSUFFIX=	-g9350209
-PORTREVISION=	16
+PORTREVISION=	18
 CATEGORIES=	games
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

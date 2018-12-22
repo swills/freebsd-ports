@@ -1,9 +1,9 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/thrift-cpp/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/thrift-cpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION} # to keep in sync with thrift
-PORTREVISION=	3
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/thrift/${PORTVERSION}
@@ -63,7 +63,7 @@ EXPIRATION_DATE=	2019-03-15
 
 .include <bsd.port.pre.mk>
 
-.if ${COMPILER_TYPE} == clang
+.if ${CHOSEN_COMPILER_TYPE} == clang
 USE_CXXSTD=	c++11
 .endif
 

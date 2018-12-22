@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/linphone/Makefile 485509 2018-11-21 11:20:17Z tijl $
+# $FreeBSD: head/net/linphone/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	linphone
 PORTVERSION=	4.1.1
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	net
 MASTER_SITES=	https://www.linphone.org/releases/sources/linphoneqt/

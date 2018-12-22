@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/astro/celestia/Makefile 483276 2018-10-28 11:16:35Z linimon $
+# $FreeBSD: head/astro/celestia/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	celestia
 PORTVERSION=	1.6.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	astro
 MASTER_SITES=	SF/${PORTNAME}/Celestia-source/${PORTVERSION}
 PKGNAMESUFFIX=	-${CELESTIA_UI}

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/rubygem-peek-pg/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/databases/rubygem-peek-pg/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	peek-pg
 PORTVERSION=	1.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

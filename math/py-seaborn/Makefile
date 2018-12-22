@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-seaborn/Makefile 480067 2018-09-18 18:54:55Z swills $
+# $FreeBSD: head/math/py-seaborn/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	seaborn
 PORTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

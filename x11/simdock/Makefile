@@ -1,9 +1,9 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/x11/simdock/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/x11/simdock/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	simdock
 PORTVERSION=	1.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	x11
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION}

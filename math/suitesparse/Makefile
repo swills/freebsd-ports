@@ -1,9 +1,9 @@
 # Created by: Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: head/math/suitesparse/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/suitesparse/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	suitesparse
 DISTVERSION=	5.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://faculty.cse.tamu.edu/davis/SuiteSparse/
 DISTNAME=	SuiteSparse-${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gwenview/Makefile 486949 2018-12-08 13:20:36Z tcberner $
+# $FreeBSD: head/graphics/gwenview/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	gwenview
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

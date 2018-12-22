@@ -1,9 +1,9 @@
 # Created by: Michael Nottebrock <lofi@kiste>
-# $FreeBSD: head/devel/qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/qt4/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qt4
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	kde@FreeBSD.org

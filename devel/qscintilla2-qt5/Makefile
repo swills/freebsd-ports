@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/qscintilla2-qt5/Makefile 485713 2018-11-23 22:42:03Z tcberner $
+# $FreeBSD: head/devel/qscintilla2-qt5/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	qscintilla2-qt5
 PORTVERSION=	${QSCI2_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITES_QSCI2}
 DISTNAME=	${QSCI2_DISTNAME}

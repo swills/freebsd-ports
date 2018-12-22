@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-webassets/Makefile 420610 2016-08-22 13:15:15Z wg $
+# $FreeBSD: head/www/py-webassets/Makefile 487897 2018-12-20 18:04:03Z wg $
 
 PORTNAME=	webassets
-PORTVERSION=	0.12.0
+PORTVERSION=	0.12.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

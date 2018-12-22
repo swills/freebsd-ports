@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/py-PySceneDetect/Makefile 480183 2018-09-20 17:25:40Z swills $
+# $FreeBSD: head/multimedia/py-PySceneDetect/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	PySceneDetect
 PORTVERSION=	0.5
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

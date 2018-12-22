@@ -1,8 +1,8 @@
 # Created by: Clement Laforet
-# $FreeBSD: head/net/haproxy/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/net/haproxy/Makefile 488011 2018-12-21 15:56:39Z demon $
 
 PORTNAME=	haproxy
-DISTVERSION=	1.8.14
+DISTVERSION=	1.8.16
 CATEGORIES=	net www
 MASTER_SITES=	http://www.haproxy.org/download/1.8/src/
 
@@ -44,10 +44,6 @@ LUA_MAKE_ARGS=		USE_LUA=1 LUA_INC=${LUA_INCDIR} LUA_LIB=${LUA_LIBDIR} LUA_LIB_NA
 
 .if ${ARCH} == "amd64" || ${ARCH} == "i386"
 MAKE_ARGS+=     USE_REGPARM=1
-.endif
-
-.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl111}
-BROKEN=         Does not build with openssl111
 .endif
 
 post-build:

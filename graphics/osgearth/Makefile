@@ -1,8 +1,9 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/graphics/osgearth/Makefile 487028 2018-12-09 07:39:29Z riggs $
+# $FreeBSD: head/graphics/osgearth/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	osgearth
 PORTVERSION=	2.10
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	graphics geography
 CATEGORIES=	graphics geography

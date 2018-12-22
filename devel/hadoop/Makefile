@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/devel/hadoop/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/devel/hadoop/Makefile 487876 2018-12-20 11:12:31Z demon $
 
 PORTNAME=	hadoop
 PORTVERSION=	1.2.1
@@ -10,7 +10,7 @@ MASTER_SITES=	APACHE/${PORTNAME}/core/${PORTNAME}-${PORTVERSION} \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} jetty-6.1.14.zip:jetty
 DIST_SUBDIR=	hadoop
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Apache Map/Reduce framework
 
 LICENSE=	APACHE20

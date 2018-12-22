@@ -1,9 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/super_methane_brothers/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/games/super_methane_brothers/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	super_methane_brothers
 PORTVERSION=	1.5.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	SF/methane/Methane%20Stable/Methane%20V${PORTVERSION}
 DISTNAME=	methane-${PORTVERSION}

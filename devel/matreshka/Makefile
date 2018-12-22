@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/matreshka/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/matreshka/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	matreshka
 PORTVERSION=	0.7.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://forge.ada-ru.org/matreshka/downloads/
 

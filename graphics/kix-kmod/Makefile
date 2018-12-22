@@ -1,5 +1,5 @@
 # Created by: Jonathan Belson <jon@witchspace.com>
-# $FreeBSD: head/graphics/kix-kmod/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/graphics/kix-kmod/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	kix
 PORTVERSION=	1.0
@@ -11,8 +11,6 @@ PKGNAMESUFFIX=	-kmod
 
 MAINTAINER=	jon@witchspace.com
 COMMENT=	Graphical screensaver kernel module
-
-BROKEN_powerpc64=	fails to compile: pcpu.h: size of array '__assert_0' is negative
 
 USES=		kmod
 

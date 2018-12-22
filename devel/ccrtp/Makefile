@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/devel/ccrtp/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/devel/ccrtp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ccrtp
 PORTVERSION=	2.0.9
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

@@ -1,9 +1,9 @@
 # Created by: Henri Michelon
-# $FreeBSD: head/databases/pgworksheet/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/pgworksheet/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgworksheet
 PORTVERSION=	1.9
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	databases
 MASTER_SITES=	http://pgfoundry.org/frs/download.php/1695/
 

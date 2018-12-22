@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/py-ScientificPython/Makefile 473624 2018-06-30 16:49:08Z yuri $
+# $FreeBSD: head/science/py-ScientificPython/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ScientificPython
 DISTVERSION=	2.9.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

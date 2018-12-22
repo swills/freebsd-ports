@@ -1,9 +1,9 @@
 # Created by: Pierre-Emmanuel Andre
-# $FreeBSD: head/databases/pgloader/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/pgloader/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgloader
 PORTVERSION=	2.3.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases
 MASTER_SITES=	http://pgfoundry.org/frs/download.php/1814/
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/docopt.cpp/Makefile 485006 2018-11-15 08:17:31Z yuri $
+# $FreeBSD: head/devel/docopt.cpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	docopt.cpp
 DISTVERSION=	0.6.2-6
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g7476f8e
 CATEGORIES=	devel
 

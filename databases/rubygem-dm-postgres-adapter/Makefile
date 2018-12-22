@@ -1,8 +1,9 @@
 # Created by: stas
-# $FreeBSD: head/databases/rubygem-dm-postgres-adapter/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/databases/rubygem-dm-postgres-adapter/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dm-postgres-adapter
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

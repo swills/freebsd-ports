@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/glade/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/devel/glade/Makefile 488053 2018-12-22 02:48:54Z linimon $
 
 PORTNAME=	glade
 PORTVERSION=	3.22.1
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	itstool:textproc/itstool
 CONFLICTS=	glade3-3.*
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake libtool \
+USES=		compiler:c11 desktop-file-utils gettext gmake gnome libtool \
 		localbase:ldflags pathfix pkgconfig tar:xz
 USE_GNOME=	cairo gtk30 gnomedocutils intlhack \
 		introspection:build

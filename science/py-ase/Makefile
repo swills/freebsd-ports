@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-ase/Makefile 484983 2018-11-15 01:16:19Z yuri $
+# $FreeBSD: head/science/py-ase/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ase
 DISTVERSION=	3.17.0
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

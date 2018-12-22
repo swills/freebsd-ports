@@ -1,5 +1,5 @@
 # Created by: roland.jesse@gmx.net
-# $FreeBSD: head/graphics/Coin/Makefile 472637 2018-06-17 21:24:37Z adridg $
+# $FreeBSD: head/graphics/Coin/Makefile 487543 2018-12-15 20:21:07Z yuri $
 
 PORTNAME=	Coin
 PORTVERSION=	3.1.3
@@ -11,11 +11,12 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ 3D graphics library based on the Open Inventor 2.1 API
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE.GPL
 
 LIB_DEPENDS=	libsimage.so:graphics/simage
 
-USES=		openal:al libtool pathfix
-USE_GL=		yes
+USES=		gl openal:al libtool pathfix
+USE_GL=		gl
 USE_XORG=	ice sm x11 xext xt
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-pthread=yes --enable-threadsafe	\
@@ -32,7 +33,7 @@ pre-configure:
 		${REINPLACE_CMD} 's/<stdlib.h>/<cstdlib>/g'
 
 post-build:
-	${REINPLACE_CMD} -e '/^ldflags=/s|-R|-Wl,-rpath,|' \
+	@${REINPLACE_CMD} -e '/^ldflags=/s|-R|-Wl,-rpath,|' \
 		${WRKSRC}/coin-default.cfg
 
 .include <bsd.port.mk>

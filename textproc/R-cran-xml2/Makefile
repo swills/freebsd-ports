@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-xml2/Makefile 465172 2018-03-21 12:42:19Z tota $
+# $FreeBSD: head/textproc/R-cran-xml2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xml2
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/devel/grantlee5/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/grantlee5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	grantlee
 PORTVERSION=	${GRANTLEE_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.${PORTNAME}.org/
 PKGNAMESUFFIX=	5

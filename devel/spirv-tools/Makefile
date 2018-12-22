@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/spirv-tools/Makefile 478883 2018-09-03 17:43:50Z jbeich $
+# $FreeBSD: head/devel/spirv-tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	spirv-tools
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2018.4
+PORTREVISION=	1
 CATEGORIES=	devel graphics
 
 MAINTAINER=	greg@unrelenting.technology

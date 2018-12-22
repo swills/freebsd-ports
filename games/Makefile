@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 483701 2018-11-01 19:05:28Z rene $
+# $FreeBSD: head/games/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Games and related software
@@ -171,7 +171,6 @@
     SUBDIR += connectfive
     SUBDIR += conquest
     SUBDIR += construo
-    SUBDIR += corewars
     SUBDIR += corsix-th
     SUBDIR += cosmo
     SUBDIR += cosmosmash
@@ -222,7 +221,6 @@
     SUBDIR += doom-wolfendoom
     SUBDIR += doomlegacy
     SUBDIR += doomsday
-    SUBDIR += dopewars
     SUBDIR += drcreep
     SUBDIR += drm
     SUBDIR += duckmaze
@@ -326,12 +324,10 @@
     SUBDIR += galaxis
     SUBDIR += galaxyhack
     SUBDIR += garden-of-coloured-lights
-    SUBDIR += garith
     SUBDIR += gbottler
     SUBDIR += gbrainy
     SUBDIR += gcompris
     SUBDIR += gcompris-qt
-    SUBDIR += gdado
     SUBDIR += gemdropx
     SUBDIR += gemrb
     SUBDIR += genact
@@ -368,10 +364,6 @@
     SUBDIR += gnome-sudoku
     SUBDIR += gnome-taquin
     SUBDIR += gnome-tetravex
-    SUBDIR += gnomeattacks
-    SUBDIR += gnomebreakout
-    SUBDIR += gnomekiss
-    SUBDIR += gnono
     SUBDIR += gnubg
     SUBDIR += gnubik
     SUBDIR += gnuchess
@@ -395,21 +387,16 @@
     SUBDIR += granatier-kde4
     SUBDIR += greed
     SUBDIR += gretools
-    SUBDIR += grhino
     SUBDIR += griels-quest
     SUBDIR += gru
     SUBDIR += grubik
     SUBDIR += gshisen
-    SUBDIR += gtetrinet
     SUBDIR += gti
     SUBDIR += gtkatlantic
     SUBDIR += gtkballs
     SUBDIR += gtkevemon
-    SUBDIR += gtklife
     SUBDIR += gtkpool
     SUBDIR += gtkradiant
-    SUBDIR += gtktetcolor
-    SUBDIR += gturing
     SUBDIR += gtypist
     SUBDIR += gunfudeadlands
     SUBDIR += gzdoom
@@ -469,7 +456,6 @@
     SUBDIR += jvgs
     SUBDIR += jzip
     SUBDIR += kajaani-kombat
-    SUBDIR += kajongg
     SUBDIR += kajongg-kde4
     SUBDIR += kanagram
     SUBDIR += kanagram-kde4
@@ -647,7 +633,6 @@
     SUBDIR += meqcc
     SUBDIR += meritous
     SUBDIR += mindfocus
-    SUBDIR += mindguard
     SUBDIR += minecraft-client
     SUBDIR += minecraft-server
     SUBDIR += minerbold
@@ -659,7 +644,6 @@
     SUBDIR += mkgichessclub
     SUBDIR += mkhexgrid
     SUBDIR += moagg
-    SUBDIR += monkeybubble
     SUBDIR += monster-masher
     SUBDIR += monsterz
     SUBDIR += moon-buggy
@@ -695,7 +679,6 @@
     SUBDIR += netradiant
     SUBDIR += netrek-BRMH-bin
     SUBDIR += netrek-client-cow
-    SUBDIR += netspades
     SUBDIR += nettoe
     SUBDIR += netwalk
     SUBDIR += neverball
@@ -1016,7 +999,6 @@
     SUBDIR += tbe
     SUBDIR += tecnoballz
     SUBDIR += teeworlds
-    SUBDIR += teg
     SUBDIR += tenebrae
     SUBDIR += tesseract
     SUBDIR += tesseract-data
@@ -1111,7 +1093,6 @@
     SUBDIR += wmeyes
     SUBDIR += wmpuzzle
     SUBDIR += wmqstat
-    SUBDIR += wmquake
     SUBDIR += wmshuffle
     SUBDIR += wmtictactoe
     SUBDIR += wolfpack
@@ -1127,8 +1108,6 @@
     SUBDIR += xasteroids
     SUBDIR += xataxx
     SUBDIR += xbat
-    SUBDIR += xbattle
-    SUBDIR += xbill
     SUBDIR += xbl
     SUBDIR += xblackjack
     SUBDIR += xblast
@@ -1203,7 +1182,6 @@
     SUBDIR += xpipeman
     SUBDIR += xpired
     SUBDIR += xptools
-    SUBDIR += xpuyopuyo
     SUBDIR += xpuzzletama
     SUBDIR += xpyraminx
     SUBDIR += xqf
@@ -1250,7 +1228,6 @@
     SUBDIR += zdoom
     SUBDIR += zephulor
     SUBDIR += zhlt
-    SUBDIR += znibbles
     SUBDIR += zoom
     SUBDIR += ztrack
 

@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/games/freedoko/Makefile 475010 2018-07-20 12:19:30Z tobik $
+# $FreeBSD: head/games/freedoko/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	freedoko
 PORTVERSION=	0.7.16
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SF/free-doko/FreeDoko%20source
 DISTNAME=	FreeDoko_${PORTVERSION}.src

@@ -1,8 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/fiche/Makefile 481390 2018-10-06 19:51:28Z zi $
+# $FreeBSD: head/net/fiche/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fiche
 PORTVERSION=	0.9.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	GH
 

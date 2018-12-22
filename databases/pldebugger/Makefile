@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/databases/pldebugger/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pldebugger/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pldebugger
 PORTVERSION=	1.0
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	databases
 MASTER_SITES=	https://git.postgresql.org/gitweb/?p=pldebugger.git;a=snapshot;h=v${PORTVERSION};sf=tgz;dummy=/

@@ -1,9 +1,9 @@
 # Created by: Vladimir Kondratyev <wulf@FreeBSD.org>
-# $FreeBSD: head/devel/evemu/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/devel/evemu/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	evemu
 PORTVERSION=	2.6.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.freedesktop.org/software/${PORTNAME}/
 
@@ -12,7 +12,7 @@ COMMENT=	Records and replays EVDEV descriptions and events
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	v4l_compat>=0:multimedia/v4l_compat
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 LIB_DEPENDS=	libevdev.so:devel/libevdev
 
 USES=		tar:xz pathfix libtool pkgconfig localbase

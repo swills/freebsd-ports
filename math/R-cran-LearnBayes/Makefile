@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-LearnBayes/Makefile 465773 2018-03-28 02:23:13Z tota $
+# $FreeBSD: head/math/R-cran-LearnBayes/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	LearnBayes
 PORTVERSION=	2.15.1
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

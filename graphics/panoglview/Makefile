@@ -1,9 +1,9 @@
 # Created by: argv[0] (Iouri V. Ivliev)
-# $FreeBSD: head/graphics/panoglview/Makefile 486618 2018-12-04 17:46:22Z swills $
+# $FreeBSD: head/graphics/panoglview/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	panoglview
 PORTVERSION=	0.2.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	SF/hugin/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

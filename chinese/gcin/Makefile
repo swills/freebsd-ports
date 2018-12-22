@@ -1,8 +1,8 @@
 # Created by: Shen Chuan-Hsing
-# $FreeBSD: head/chinese/gcin/Makefile 471727 2018-06-04 22:58:16Z linimon $
+# $FreeBSD: head/chinese/gcin/Makefile 487745 2018-12-18 11:23:39Z vanilla $
 
 PORTNAME=	gcin
-PORTVERSION=	2.8.6
+PORTVERSION=	2.8.8
 CATEGORIES=	chinese textproc gnome
 MASTER_SITES=	http://hyperrate.com/gcin-source/
 EXTRACT_ONLY=	gcin-${PORTVERSION}.tar.xz

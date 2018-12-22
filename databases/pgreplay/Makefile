@@ -1,9 +1,10 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pgreplay/Makefile 434510 2017-02-21 08:43:49Z matthew $
+# $FreeBSD: head/databases/pgreplay/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgreplay
 DISTVERSIONPREFIX=	${PORTNAME:tu}_
 DISTVERSION=	1_3_0
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	matthew@FreeBSD.org

@@ -1,7 +1,8 @@
-# $FreeBSD: head/archivers/R-cran-zip/Makefile 480548 2018-09-24 06:28:21Z dbn $
+# $FreeBSD: head/archivers/R-cran-zip/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	zip
 DISTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	archivers
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

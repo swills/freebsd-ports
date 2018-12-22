@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc/Makefile 481964 2018-10-13 07:23:37Z gerald $
+# $FreeBSD: head/lang/gcc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	${GCC_DEFAULT}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	# not applicable
 DISTFILES=	# not applicable

@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 487837 2018-12-20 04:59:59Z linimon $
 
 PORTNAME=	lumina-mediaplayer
 PORTVERSION=	1.4.1
@@ -24,7 +24,7 @@ I18N_DESC=	Install localization files
 
 MAKE_JOBS_UNSAFE=yes
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core gui widgets network svg \
 		buildtools_build x11extras multimedia concurrent
 USE_GITHUB=	yes

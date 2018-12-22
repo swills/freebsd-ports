@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/gnome-builder/Makefile 484777 2018-11-11 21:50:45Z kwm $
+# $FreeBSD: head/devel/gnome-builder/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnome-builder
 PORTVERSION=	3.28.4
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

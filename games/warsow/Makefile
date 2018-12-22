@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/warsow/Makefile 483980 2018-11-04 09:46:05Z antoine $
+# $FreeBSD: head/games/warsow/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	warsow
 PORTVERSION=	1.51
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	http://update.warsow.net/mirror/ \
 		http://mirror.amdmi3.ru/distfiles/

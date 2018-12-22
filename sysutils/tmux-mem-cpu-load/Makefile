@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/sysutils/tmux-mem-cpu-load/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/tmux-mem-cpu-load/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tmux-mem-cpu-load
 PORTVERSION=	3.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

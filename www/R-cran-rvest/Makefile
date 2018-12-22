@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-rvest/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/www/R-cran-rvest/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rvest
 PORTVERSION=	0.3.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

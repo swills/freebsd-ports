@@ -1,8 +1,9 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/powa-web/Makefile 484253 2018-11-05 22:34:50Z girgen $
+# $FreeBSD: head/databases/powa-web/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	powa-web
 PORTVERSION=	3.2.0
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

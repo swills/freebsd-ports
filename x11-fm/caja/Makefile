@@ -1,8 +1,9 @@
 # Created by: ade, archie
-# $FreeBSD: head/x11-fm/caja/Makefile 486024 2018-11-27 16:36:14Z linimon $
+# $FreeBSD: head/x11-fm/caja/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	caja
 PORTVERSION=	1.20.2
+PORTREVISION=	1
 CATEGORIES=	x11-fm mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

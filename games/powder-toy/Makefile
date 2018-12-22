@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/powder-toy/Makefile 480451 2018-09-23 04:38:22Z linimon $
+# $FreeBSD: head/games/powder-toy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	powder-toy
 PORTVERSION=	93.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

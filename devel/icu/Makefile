@@ -1,9 +1,9 @@
 # Created by: dwm
-# $FreeBSD: head/devel/icu/Makefile 482832 2018-10-23 11:48:54Z jbeich $
+# $FreeBSD: head/devel/icu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	icu
 DISTVERSION=	63_1
-PORTREVISION?=	0 # keep for icu-lx
+PORTREVISION?=	1 # keep for icu-lx
 PORTEPOCH?=	1
 CATEGORIES?=	devel
 MASTER_SITES=	https://github.com/unicode-org/${PORTNAME}/releases/download/release-${DISTVERSION:S/_/-/g}/ \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/dft_tools/Makefile 480780 2018-09-27 05:26:32Z antoine $
+# $FreeBSD: head/science/dft_tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dft_tools
 DISTVERSION=	1.5
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

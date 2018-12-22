@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_DBQuery/Makefile 486751 2018-12-06 11:22:12Z rene $
+# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_DBQuery/Makefile 487975 2018-12-21 10:21:54Z joneum $
 
 PORTNAME=	Structures_DataGrid_DataSource_DBQuery
 PORTVERSION=	0.1.11
@@ -8,8 +8,9 @@ CATEGORIES=	databases www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	DataSource driver using PEAR::DB and an SQL query
 
-DEPRECATED=	Works only with EOL php 5.6
-EXPIRATION_DATE=	2018-12-30
+LICENSE=	BSD2CLAUSE
+
+IGNORE_WITH_PHP=	56
 
 BUILD_DEPENDS=	${PEARDIR}/Structures/DataGrid.php:devel/pear-Structures_DataGrid@${PHP_FLAVOR} \
 		${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
@@ -17,8 +18,8 @@ RUN_DEPENDS=	${PEARDIR}/Structures/DataGrid.php:devel/pear-Structures_DataGrid@$
 		${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
 
 USES=	pear
-USE_PHP=	mysql
-IGNORE_WITH_PHP=	71 72 73
+USE_PHP=	mysqli
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

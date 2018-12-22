@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/template-glib/Makefile 486554 2018-12-03 21:00:28Z linimon $
+# $FreeBSD: head/devel/template-glib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	template-glib
 PORTVERSION=	3.28.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
 

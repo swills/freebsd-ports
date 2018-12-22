@@ -1,12 +1,12 @@
 # Created by: Oleh Hushchenkov <gor@clogic.com.ua>
-# $FreeBSD: head/misc/unclutter-xfixes/Makefile 461100 2018-02-06 20:29:33Z dbaio $
+# $FreeBSD: head/misc/unclutter-xfixes/Makefile 487513 2018-12-15 14:35:19Z joneum $
 
 PORTNAME=	unclutter-xfixes
 PORTVERSION=	1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 
-MAINTAINER=	gor@clogic.com.ua
+MAINTAINER=	o.hushchenkov@gmail.com
 COMMENT=	Rewrite of unclutter using the x11-xfixes extension
 
 LICENSE=	MIT

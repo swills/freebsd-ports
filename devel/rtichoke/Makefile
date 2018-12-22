@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rtichoke/Makefile 478708 2018-09-01 15:43:31Z yuri $
+# $FreeBSD: head/devel/rtichoke/Makefile 487757 2018-12-18 17:37:24Z yuri $
 
 PORTNAME=	rtichoke
-DISTVERSION=	0.2.12
+DISTVERSION=	0.2.14
 CATEGORIES=	devel math python
 MASTER_SITES=	CHEESESHOP
 
@@ -15,6 +15,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lineedit>=0.1.1:devel/py-lineedit@${PY_FLAVO
 
 USES=		python
 USE_PYTHON=	distutils noflavors autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

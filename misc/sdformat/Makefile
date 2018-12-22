@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/sdformat/Makefile 485493 2018-11-21 02:16:51Z yuri $
+# $FreeBSD: head/misc/sdformat/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sdformat
 DISTVERSION=	8.0.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

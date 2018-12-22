@@ -1,8 +1,8 @@
-# $FreeBSD: head/astro/kstars-kde4/Makefile 484769 2018-11-11 20:54:12Z danilo $
+# $FreeBSD: head/astro/kstars-kde4/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kstars
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	astro kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

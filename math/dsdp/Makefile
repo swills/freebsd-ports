@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/dsdp/Makefile 483369 2018-10-29 05:55:51Z yuri $
+# $FreeBSD: head/math/dsdp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dsdp
 DISTVERSION=	5.8
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://www.mcs.anl.gov/hs/software/${PORTNAME:tu}/
 DISTNAME=	${PORTNAME:tu}${DISTVERSION}

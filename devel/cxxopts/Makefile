@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/cxxopts/Makefile 483263 2018-10-28 10:32:30Z linimon $
+# $FreeBSD: head/devel/cxxopts/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cxxopts
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.1.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

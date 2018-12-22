@@ -1,8 +1,9 @@
-# $FreeBSD: head/lang/chaiscript/Makefile 486496 2018-12-03 02:58:03Z yuri $
+# $FreeBSD: head/lang/chaiscript/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ChaiScript
 DISTVERSIONPREFIX=	v
 DISTVERSION=	6.1.0
+PORTREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Pawel Worach <pawel.worach@gmail.com>
-# $FreeBSD: head/x11-wm/mutter/Makefile 484887 2018-11-13 17:53:40Z kwm $
+# $FreeBSD: head/x11-wm/mutter/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mutter
 PORTVERSION=	3.28.3
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

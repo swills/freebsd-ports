@@ -1,18 +1,12 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/poppler-glib/Makefile 393431 2015-08-02 16:06:16Z kwm $
+# $FreeBSD: head/graphics/poppler-glib/Makefile 487596 2018-12-16 15:10:42Z tcberner $
 
 PORTREVISION=	0
-PKGNAMESUFFIX=	-glib
 
-MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GLib bindings to poppler
 
 MASTERDIR=	${.CURDIR}/../../graphics/poppler
-SLAVEPORT=	glib
+_SLAVE_PORT=	glib
 PLIST=		${.CURDIR}/pkg-plist
-
-pre-build:
-	@cd ${WRKSRC}/poppler && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} \
-		Makefile ${MAKE_ARGS} libpoppler-cairo.la
 
 .include "${MASTERDIR}/Makefile"

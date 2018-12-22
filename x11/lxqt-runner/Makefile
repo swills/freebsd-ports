@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/lxqt-runner/Makefile 477963 2018-08-24 14:28:39Z jsm $
+# $FreeBSD: head/x11/lxqt-runner/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lxqt-runner
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	LXQT
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-spectral/Makefile 472948 2018-06-21 02:59:06Z yuri $
+# $FreeBSD: head/math/py-spectral/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	spectral
 DISTVERSION=	0.19
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

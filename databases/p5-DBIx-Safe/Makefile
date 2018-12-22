@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Safe/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/databases/p5-DBIx-Safe/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	DBIx-Safe
 PORTVERSION=	1.2.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TURNSTEP

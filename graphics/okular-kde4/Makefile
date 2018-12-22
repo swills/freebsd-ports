@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/okular-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/graphics/okular-kde4/Makefile 487596 2018-12-16 15:10:42Z tcberner $
 
 PORTNAME=	okular
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,7 +15,6 @@ LIB_DEPENDS=	libdjvulibre.so:graphics/djvulibre \
 		libkscreen.so:graphics/libkscreen \
 		libqca.so:devel/qca@qt4 \
 		libtiff.so:graphics/tiff \
-		libpoppler-qt4.so:graphics/poppler-qt4 \
 		libspectre.so:print/libspectre \
 		libchm.so:misc/chmlib \
 		libfreetype.so:print/freetype2 \

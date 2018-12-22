@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-GridDataFormats/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-GridDataFormats/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	GridDataFormats
 DISTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

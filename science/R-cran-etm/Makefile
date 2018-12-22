@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-etm/Makefile 477639 2018-08-20 09:30:52Z tota $
+# $FreeBSD: head/science/R-cran-etm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	etm
 DISTVERSION=	1.0.4
+PORTREVISION=	1
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Kurt Kanzenbach <kurt@kmk-computers.de>
-# $FreeBSD: head/devel/libflatarray/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/libflatarray/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libflatarray
 PORTVERSION=	0.3.0
-PORTREVISION=	11
+PORTREVISION=	13
 CATEGORIES=	devel science
 MASTER_SITES=	http://www.libgeodecomp.org/archive/
 

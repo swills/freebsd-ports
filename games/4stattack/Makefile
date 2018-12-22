@@ -1,9 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/4stattack/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/4stattack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	4stattack
 PORTVERSION=	2.1.4
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	SF/forcedattack/4stAttack/${PORTVERSION}/
 DISTNAME=	4stAttack-${PORTVERSION}

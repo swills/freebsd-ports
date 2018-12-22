@@ -1,9 +1,9 @@
 # Created by: Alex Deiter <Alex.Deiter@Gmail.COM>
-# $FreeBSD: head/net/appkonference/Makefile 452780 2017-10-24 15:05:30Z madpilot $
+# $FreeBSD: head/net/appkonference/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	appkonference
 PORTVERSION=	2.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	SF
 

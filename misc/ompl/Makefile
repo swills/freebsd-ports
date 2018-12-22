@@ -1,8 +1,9 @@
-# $FreeBSD: head/misc/ompl/Makefile 486913 2018-12-08 06:29:58Z yuri $
+# $FreeBSD: head/misc/ompl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ompl
 DISTVERSION=	1.4.1
 DISTVERSIONSUFFIX=	-Source
+PORTREVISION=	2
 CATEGORIES=	misc comms
 MASTER_SITES=	http://cdn.bitbucket.org/${PORTNAME}/${PORTNAME}/downloads/
 

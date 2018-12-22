@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 486632 2018-12-04 19:40:28Z swills $
+# $FreeBSD: head/dns/Makefile 487552 2018-12-16 00:29:20Z rene $
 #
 
     COMMENT = Domain Name Service tools
@@ -91,7 +91,6 @@
     SUBDIR += kadnode
     SUBDIR += kf5-kdnssd
     SUBDIR += knot-resolver
-    SUBDIR += knot1
     SUBDIR += knot2
     SUBDIR += knot2-lib
     SUBDIR += ldapdns

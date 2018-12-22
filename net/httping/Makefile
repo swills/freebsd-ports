@@ -1,8 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/net/httping/Makefile 479590 2018-09-12 09:13:05Z ehaupt $
+# $FreeBSD: head/net/httping/Makefile 487365 2018-12-13 13:18:43Z ehaupt $
 
 PORTNAME=	httping
 PORTVERSION=	2.5
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://www.vanheusden.com/httping/ \
 		LOCAL/ehaupt
@@ -43,6 +44,10 @@ MAKE_ENV+=	SSL=yes
 USES+=		ssl
 .else
 MAKE_ENV+=	SSL=no
+.endif
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200000
+MAKE_ENV+=	TFO=yes
 .endif
 
 do-install:

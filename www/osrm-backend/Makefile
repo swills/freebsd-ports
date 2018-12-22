@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/osrm-backend/Makefile 481833 2018-10-11 14:47:13Z martymac $
+# $FreeBSD: head/www/osrm-backend/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		osrm-backend
 DISTVERSIONPREFIX=	v
 DISTVERSION=		5.17.2
-PORTREVISION=	3
+PORTREVISION=		5
 CATEGORIES=		www
 
 MAINTAINER=		a.andersson.thn@gmail.com

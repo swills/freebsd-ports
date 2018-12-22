@@ -1,9 +1,9 @@
 # Created by: Jacques Vidrine <nectar@FreeBSD.org>
-# $FreeBSD: head/emulators/stella/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/emulators/stella/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	stella
 PORTVERSION=	5.1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 
 MAINTAINER=	acm@FreeBSD.org

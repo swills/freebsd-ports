@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/radare-cutter/Makefile 486093 2018-11-28 14:23:18Z swills $
+# $FreeBSD: head/x11/radare-cutter/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	radare-cutter
 PORTVERSION=	1.7.2
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/../COPYING
 
 LIB_DEPENDS=	libr_bin.so:devel/radare2
 
-USES=		gl pkgconfig python:3.4+ qmake:outsource qt:5
+USES=		gl gmake pkgconfig python:3.4+ qmake:outsource qt:5
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	radareorg

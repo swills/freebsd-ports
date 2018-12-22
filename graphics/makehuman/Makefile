@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/makehuman/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/makehuman/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	makehuman
 DISTVERSION=	0.9.1-rc1a
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/MakeHuman%20Source/MakeHuman_091
 

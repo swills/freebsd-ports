@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/mmdb2/Makefile 474144 2018-07-07 23:40:51Z yuri $
+# $FreeBSD: head/science/mmdb2/Makefile 487545 2018-12-15 20:45:04Z yuri $
 
 PORTNAME=	mmdb2
-DISTVERSION=	2.0.16
+DISTVERSION=	2.0.19
 CATEGORIES=	science
 MASTER_SITES=	https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/dependencies/
 

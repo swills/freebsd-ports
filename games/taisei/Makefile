@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/taisei/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/games/taisei/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	taisei
 PORTVERSION=	1.1.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

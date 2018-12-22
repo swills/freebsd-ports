@@ -1,9 +1,9 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 487775 2018-12-18 23:22:59Z antoine $
 
 PORTNAME=	grub2-pcbsd
 PORTVERSION=	2.02q
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.pcbsd.org/~kris/software/ \
 		ftp://ftp.pcbsd.org/pub/software/
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multiboot boot loader
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		${LOCALBASE}/bin/bash:shells/bash \

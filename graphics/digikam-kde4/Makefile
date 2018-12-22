@@ -1,9 +1,9 @@
 # Created by: Arjan van Leeuwen <avleeuwen@piwebs.com>
-# $FreeBSD: head/graphics/digikam-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/graphics/digikam-kde4/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	digikam
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	16
+PORTREVISION=	17
 PORTEPOCH=	2
 CATEGORIES=	graphics kde
 PKGNAMESUFFIX=	-kde4

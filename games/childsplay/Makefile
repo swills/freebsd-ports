@@ -1,8 +1,9 @@
 # Created by: bruno
-# $FreeBSD: head/games/childsplay/Makefile 475625 2018-07-29 04:21:34Z yuri $
+# $FreeBSD: head/games/childsplay/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	childsplay
 DISTVERSION=	3.3
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SAVANNAH
 

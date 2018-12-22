@@ -1,9 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/flang/Makefile 479487 2018-09-11 00:15:00Z jmd $
+# $FreeBSD: head/devel/flang/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	flang
 DISTVERSION=	6.0-g20180904
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	jmd@FreeBSD.org

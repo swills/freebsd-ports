@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/flare-engine/Makefile 480566 2018-09-24 10:58:00Z amdmi3 $
+# $FreeBSD: head/games/flare-engine/Makefile 487444 2018-12-14 16:18:09Z amdmi3 $
 
 PORTNAME=	flare
-PORTVERSION=	1.08
+PORTVERSION=	1.09.01
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 PKGNAMESUFFIX=	-engine
@@ -14,7 +14,7 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	clintbellanger
+GH_ACCOUNT=	flareteam
 GH_PROJECT=	${PORTNAME}${PKGNAMESUFFIX}
 
 USES=		cmake compiler:env

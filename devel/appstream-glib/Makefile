@@ -1,8 +1,9 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/devel/appstream-glib/Makefile 486415 2018-12-02 13:05:43Z linimon $
+# $FreeBSD: head/devel/appstream-glib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	appstream-glib
 PORTVERSION=	0.7.8
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://people.freedesktop.org/~hughsient/appstream-glib/releases/
 DIST_SUBDIR=	gnome

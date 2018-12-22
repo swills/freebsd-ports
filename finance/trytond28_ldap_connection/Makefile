@@ -1,9 +1,9 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_ldap_connection/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/finance/trytond28_ldap_connection/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	trytond28_ldap_connection
 PORTVERSION=	2.8.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	finance python
 MASTER_SITES=	https://pypi.python.org/packages/source/t/trytond_ldap_connection/ \
 		http://downloads.tryton.org/${PORTVERSION:R}/

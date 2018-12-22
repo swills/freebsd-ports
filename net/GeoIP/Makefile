@@ -1,8 +1,9 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/net/GeoIP/Makefile 470315 2018-05-18 17:42:16Z adamw $
+# $FreeBSD: head/net/GeoIP/Makefile 487269 2018-12-12 00:28:52Z adamw $
 
 PORTNAME=	GeoIP
 PORTVERSION=	1.6.12
+PORTREVISION=	1
 CATEGORIES=	net geography
 MASTER_SITES=	https://github.com/maxmind/geoip-api-c/releases/download/v${PORTVERSION}/
 

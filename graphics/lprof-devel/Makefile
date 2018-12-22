@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/lprof-devel/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/lprof-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lprof
 PORTVERSION=	20080514
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/ \
 		LOCAL/amdmi3

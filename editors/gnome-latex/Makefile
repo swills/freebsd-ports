@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/editors/gnome-latex/Makefile 481286 2018-10-05 17:43:09Z kwm $
+# $FreeBSD: head/editors/gnome-latex/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnome-latex
 PORTVERSION=	3.28.1
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome

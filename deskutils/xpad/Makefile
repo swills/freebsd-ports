@@ -1,8 +1,9 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/deskutils/xpad/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/deskutils/xpad/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xpad
 PORTVERSION=	5.0.0
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/trunk/${PORTVERSION}/+download/
 

@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/cdf/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/cdf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cdf3
 PORTVERSION=	3.3.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	science
 MASTER_SITES=	LOCAL/thierry/${PORTNAME} \
 		ftp://cdaweb.gsfc.nasa.gov/pub/cdf/dist/cdf${VER}/unix/

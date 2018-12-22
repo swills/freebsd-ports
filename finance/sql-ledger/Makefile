@@ -1,8 +1,9 @@
 # Created by: lth@FreeBSD.org
-# $FreeBSD: head/finance/sql-ledger/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/finance/sql-ledger/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sql-ledger
 PORTVERSION=	3.2.6
+PORTREVISION=	1
 CATEGORIES=	finance perl5
 MASTER_SITES=	http://www.sql-ledger.com/source/
 

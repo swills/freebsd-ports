@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/p5-AnyEvent-DBD-Pg/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-AnyEvent-DBD-Pg/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	AnyEvent-DBD-Pg
 PORTVERSION=	0.03
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

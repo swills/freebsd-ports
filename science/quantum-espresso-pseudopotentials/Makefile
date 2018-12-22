@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/quantum-espresso-pseudopotentials/Makefile 485564 2018-11-21 22:34:45Z yuri $
+# $FreeBSD: head/science/quantum-espresso-pseudopotentials/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	quantum-espresso-pseudopotentials
 DISTVERSION=	g20180406
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

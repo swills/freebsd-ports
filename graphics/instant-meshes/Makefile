@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/instant-meshes/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/instant-meshes/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	instant-meshes
 DISTVERSION=	0.0-42
 DISTVERSIONSUFFIX=	-g4a083f4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 
 MAINTAINER=	greg@unrelenting.technology

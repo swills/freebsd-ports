@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/blazeiterative/Makefile 477587 2018-08-19 18:21:47Z yuri $
+# $FreeBSD: head/math/blazeiterative/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	blazeiterative
 PORTVERSION=	g20180409
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

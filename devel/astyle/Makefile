@@ -1,9 +1,9 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/devel/astyle/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/astyle/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	astyle
 PORTVERSION=	3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}%20${PORTVERSION}
 DISTNAME=	${PORTNAME}_${PORTVERSION}_linux
@@ -22,7 +22,7 @@ USES=		compiler:c++11-lang dos2unix gmake
 
 ALL_TARGET=	astyle
 DOS2UNIX_GLOB=	*.ini
-WRKSRC=		${WRKDIR}/astyle/build/${COMPILER_TYPE}
+WRKSRC=		${WRKDIR}/astyle/build/${CHOSEN_COMPILER_TYPE}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

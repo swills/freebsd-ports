@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-pycodeexport/Makefile 480126 2018-09-19 23:46:47Z yuri $
+# $FreeBSD: head/devel/py-pycodeexport/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pycodeexport
 DISTVERSION=	0.1.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

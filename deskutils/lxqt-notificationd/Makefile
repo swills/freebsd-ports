@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/deskutils/lxqt-notificationd/Makefile 477661 2018-08-20 16:49:50Z jsm $
+# $FreeBSD: head/deskutils/lxqt-notificationd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lxqt-notificationd
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	LXQT
 

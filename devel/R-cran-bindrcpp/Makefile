@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/R-cran-bindrcpp/Makefile 466140 2018-04-01 11:05:21Z wen $
+# $FreeBSD: head/devel/R-cran-bindrcpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bindrcpp
 DISTVERSION=	0.2.2
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

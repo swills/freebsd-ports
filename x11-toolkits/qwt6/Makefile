@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qwt6/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/x11-toolkits/qwt6/Makefile 487601 2018-12-16 16:49:17Z rene $
 
 PORTNAME=	qwt
 PORTVERSION=	6.1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	6-${FLAVOR}
@@ -12,8 +12,6 @@ COMMENT=	Qt Widgets for Technical Applications
 
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
-qt4_DEPRECATED=		Qt4 has been EOL since december 2015
-qt4_EXPIRATION_DATE=	2019-03-15
 
 USES=		gl gmake qmake tar:bzip2
 USE_GL=		gl
@@ -27,6 +25,8 @@ PLIST_SUB=	SHLIB_VER=${PORTVERSION} \
 QMAKE_ARGS+=	PLUGINDIR=${PREFIX}/${QT_PLUGINDIR_REL}
 
 .if ${FLAVOR} == qt4
+DEPRECATED=	Qt4 has been EOL since december 2015
+EXPIRATION_DATE=2019-03-15
 USES+=		qt:4
 USE_QT=		corelib designer gui opengl svg xml moc_build rcc_build script
 .else

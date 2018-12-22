@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/misc/iso-codes/Makefile 487057 2018-12-09 15:07:57Z kwm $
+# $FreeBSD: head/misc/iso-codes/Makefile 487633 2018-12-16 21:41:27Z kwm $
 
 PORTNAME=	iso-codes
 PORTVERSION=	4.1
+PORTREVISION=	1
 CATEGORIES=	misc
 
 MAINTAINER=	kwm@FreeBSD.org
@@ -10,7 +11,8 @@ COMMENT=	Lists of the country, language, and currency iso names
 
 LICENSE=	LGPL21
 
-USES=		gettext gmake pathfix python:3.4+,build tar:xz
+USES=		gettext-tools gmake pathfix python:3.4+,build tar:xz
+
 GNU_CONFIGURE=	yes
 NO_ARCH=	yes
 

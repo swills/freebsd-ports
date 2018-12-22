@@ -1,5 +1,5 @@
 # Created by: Tony Maher
-# $FreeBSD: head/security/apache-xml-security-c/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/security/apache-xml-security-c/Makefile 487344 2018-12-13 06:01:13Z tobik $
 
 PORTNAME=	xml-security-c
 PORTVERSION=	2.0.2
@@ -22,7 +22,5 @@ CONFIGURE_ENV+=	openssl_LIBS="-L${OPENSSLLIB} -lcrypto" openssl_CFLAGS=-I${OPENS
 
 CPE_PRODUCT=	xml_security_for_c\+\+
 CPE_VENDOR=	apache
-BROKEN_SSL=	openssl111
-BROKEN_SSL_REASON_openssl111=	field has incomplete type HMAC_CTX (aka hmac_ctx_st)
 
 .include <bsd.port.mk>

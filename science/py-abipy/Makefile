@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-abipy/Makefile 477977 2018-08-24 18:31:51Z yuri $
+# $FreeBSD: head/science/py-abipy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	abipy
 DISTVERSION=	0.6.0
+PORTREVISION=	1
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

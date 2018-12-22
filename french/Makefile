@@ -1,4 +1,4 @@
-# $FreeBSD: head/french/Makefile 461243 2018-02-08 15:11:50Z dbn $
+# $FreeBSD: head/french/Makefile 487994 2018-12-21 13:36:25Z rene $
 #
 
     COMMENT = French support
@@ -16,7 +16,6 @@
     SUBDIR += libreoffice
     SUBDIR += med
     SUBDIR += mythes
-    SUBDIR += php_doc
     SUBDIR += trytond28_account_fr
     SUBDIR += verbiste
     SUBDIR += wordpress

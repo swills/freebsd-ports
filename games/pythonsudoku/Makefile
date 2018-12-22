@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pythonsudoku/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/games/pythonsudoku/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pythonsudoku
 PORTVERSION=	0.13
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games python
 MASTER_SITES=	SF/${PORTNAME}/Python%20Sudoku/${PORTVERSION}/ \
 		SF/nemysisfreebsdp/games/:icons

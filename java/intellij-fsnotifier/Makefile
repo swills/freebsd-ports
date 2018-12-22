@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/intellij-fsnotifier/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/java/intellij-fsnotifier/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	intellij-fsnotifier
 PORTVERSION=	20160221
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	java devel
 
 MAINTAINER=	ports@FreeBSD.org

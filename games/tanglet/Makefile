@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/tanglet/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/tanglet/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tanglet
 PORTVERSION=	1.5.3
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/tanglet/

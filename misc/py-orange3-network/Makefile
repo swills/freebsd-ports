@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/py-orange3-network/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/misc/py-orange3-network/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	orange3-network
 DISTVERSION=	1.3.2
+PORTREVISION=	1
 CATEGORIES=	misc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

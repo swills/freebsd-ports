@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/blackshadeselite/Makefile 473755 2018-07-02 16:45:53Z amdmi3 $
+# $FreeBSD: head/games/blackshadeselite/Makefile 488049 2018-12-22 02:16:08Z linimon $
 
 PORTNAME=	blackshadeselite
 PORTVERSION=	0.0.1
@@ -16,15 +16,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libvorbis.so:audio/libvorbis
 
-USES=		tar:bzip2 gmake openal:al,alut
+USES=		gl gmake openal:al,alut tar:bzip2
+USE_CXXSTD=	c++98
 USE_SDL=	sdl
 USE_GL=		gl glu
 
 LLD_UNSAFE=	yes
 
 MAKE_ARGS=	CC="${CC}" CXX="${CXX}"
-
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

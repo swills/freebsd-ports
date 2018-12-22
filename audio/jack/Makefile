@@ -1,9 +1,9 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/jack/Makefile 481992 2018-10-13 15:53:56Z riggs $
+# $FreeBSD: head/audio/jack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	jackit
 PORTVERSION=	0.125.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 
 MAINTAINER=	multimedia@FreeBSD.org

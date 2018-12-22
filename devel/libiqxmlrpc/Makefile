@@ -1,9 +1,9 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/devel/libiqxmlrpc/Makefile 479408 2018-09-10 13:16:16Z mat $
+# $FreeBSD: head/devel/libiqxmlrpc/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	libiqxmlrpc
 PORTVERSION=	0.13.5
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel net
 MASTER_SITES=	SF
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/mate-applets/Makefile 480982 2018-09-30 20:27:44Z kwm $
+# $FreeBSD: head/x11/mate-applets/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mate-applets
 PORTVERSION=	1.20.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

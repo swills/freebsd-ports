@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/hfm/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/sysutils/hfm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hfm
 PORTVERSION=	1.2.3
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

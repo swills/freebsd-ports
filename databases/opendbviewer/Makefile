@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/opendbviewer/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/databases/opendbviewer/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	opendbviewer
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	lbartoletti@tuxfamily.org

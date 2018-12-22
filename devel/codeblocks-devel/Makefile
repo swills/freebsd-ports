@@ -1,9 +1,9 @@
 # Created by: Loïc Bartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/devel/codeblocks-devel/Makefile 480820 2018-09-27 21:10:13Z linimon $
+# $FreeBSD: head/devel/codeblocks-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	codeblocks
 PORTVERSION=	18.04
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://download.tuxfamily.org/bartcoding/FreeBSD/ \
 		${MASTER_SITE_LOCAL}

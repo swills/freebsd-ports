@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/py-music21/Makefile 483637 2018-11-01 05:08:53Z yuri $
+# $FreeBSD: head/audio/py-music21/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	music21
 DISTVERSION=	5.5.0
+PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-generictts/Makefile 435671 2017-03-08 11:49:40Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-generictts/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	icingaweb2-module-generictts
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org

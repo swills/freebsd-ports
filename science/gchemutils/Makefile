@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/science/gchemutils/Makefile 485769 2018-11-24 13:08:12Z kwm $
+# $FreeBSD: head/science/gchemutils/Makefile 488061 2018-12-22 03:44:01Z linimon $
 
 PORTNAME=	gchemutils
 PORTVERSION=	0.14.16
@@ -24,11 +24,12 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/bodr.pc:science/bodr \
 
 PORTSCOUT=	limitw:1,even
 
+USES=		compiler:c++11-lang desktop-file-utils gettext gl gmake gnome \
+		libtool:keepla localbase:ldflags pathfix pkgconfig \
+		shared-mime-info tar:xz
 USE_XORG=	x11
 USE_GNOME=	cairo gnomedocutils gtk30 intlhack libgsf libxml2
 USE_GL=		gl
-USES=		desktop-file-utils gettext gmake libtool:keepla localbase:ldflags \
-		pathfix pkgconfig shared-mime-info tar:xz
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-omf-dir=${PREFIX}/share/omf
@@ -47,7 +48,7 @@ OPTIONS_SUB=	yes
 GNUMERIC_DESC=	Build gnumeric plugin
 XUL_DESC=	Build browser plugin (requires libxul)
 
-XUL_BROKEN=	No gecko type specified (firefox, seamonkey, thunderbird)	
+XUL_BROKEN=	No gecko type specified (firefox, seamonkey, thunderbird)
 XUL_USES=	gecko
 XUL_CONFIGURE_ON=--enable-mozilla-plugin \
 		--with-mozilla-libdir=${PREFIX}/lib/xulrunner

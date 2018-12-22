@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 486814 2018-12-07 00:26:04Z yuri $
+# $FreeBSD: head/biology/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Biology
@@ -71,7 +71,6 @@
     SUBDIR += ncbi-cxx-toolkit
     SUBDIR += ncbi-toolkit
     SUBDIR += ngs-sdk
-    SUBDIR += njplot
     SUBDIR += p5-AcePerl
     SUBDIR += p5-Bio-ASN1-EntrezGene
     SUBDIR += p5-Bio-Coordinate
@@ -107,6 +106,7 @@
     SUBDIR += py-biopython
     SUBDIR += py-bx-python
     SUBDIR += py-cutadapt
+    SUBDIR += py-fastTSNE
     SUBDIR += py-gffutils
     SUBDIR += py-gtfparse
     SUBDIR += py-loompy
@@ -147,6 +147,5 @@
     SUBDIR += vcftools
     SUBDIR += velvet
     SUBDIR += wise
-    SUBDIR += xmolwt
 
 .include <bsd.port.subdir.mk>

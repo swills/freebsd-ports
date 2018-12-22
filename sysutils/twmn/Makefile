@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/twmn/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/sysutils/twmn/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	twmn
 PORTVERSION=	g20171216
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 
 MAINTAINER=	dg@syrec.org

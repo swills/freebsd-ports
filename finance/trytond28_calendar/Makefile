@@ -1,8 +1,9 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_calendar/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/finance/trytond28_calendar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	trytond28_calendar
 PORTVERSION=	2.8.2
+PORTREVISION=	1
 CATEGORIES=	finance python
 MASTER_SITES=	CHEESESHOP \
 		http://downloads.tryton.org/${PORTVERSION:R}/

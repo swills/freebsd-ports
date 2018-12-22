@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/multimc/Makefile 478704 2018-09-01 15:22:38Z jhale $
+# $FreeBSD: head/games/multimc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	multimc
 DISTVERSION=	0.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games java
 
 MAINTAINER=	me@tsundoku.ne.jp

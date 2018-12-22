@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/clipper/Makefile 480774 2018-09-27 03:50:55Z yuri $
+# $FreeBSD: head/science/clipper/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	clipper
 DISTVERSION=	2.1.20180802
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/dependencies/
 

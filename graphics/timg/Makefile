@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/timg/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/timg/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	timg
 PORTVERSION=	0.9.5
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 
 MAINTAINER=	uzsolt@uzsolt.hu

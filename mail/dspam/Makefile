@@ -1,5 +1,5 @@
 # Created by: Dominic Marks <dom@wirespeed.org.uk>
-# $FreeBSD: head/mail/dspam/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/mail/dspam/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 # Note to committers: If don't commit a maintainer patch and as a result PKGNAME
 # or user variables (WITH*) changes please add an entry in ${FILESDIR}/UPDATING
@@ -7,7 +7,7 @@
 
 PORTNAME=	dspam
 PORTVERSION=	3.10.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

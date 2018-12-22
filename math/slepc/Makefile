@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/slepc/Makefile 482956 2018-10-25 07:13:51Z yuri $
+# $FreeBSD: head/math/slepc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	slepc
 DISTVERSION=	3.10.1
+PORTREVISION=	1
 CATEGORIES=	math devel
 MASTER_SITES=	http://slepc.upv.es/download/distrib/
 

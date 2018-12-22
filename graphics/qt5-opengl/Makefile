@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-opengl/Makefile 482034 2018-10-14 08:01:13Z tcberner $
+# $FreeBSD: head/graphics/qt5-opengl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	opengl
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 

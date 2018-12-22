@@ -1,9 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/chinese/gcin-qt5/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/chinese/gcin-qt5/Makefile 487748 2018-12-18 11:24:48Z vanilla $
 
 PORTNAME=	gcin
-PORTVERSION=	2.8.6
-PORTREVISION=	2
+PORTVERSION=	2.8.8
 CATEGORIES=	chinese textproc gnome
 MASTER_SITES=	http://hyperrate.com/gcin-source/
 PKGNAMESUFFIX=	-qt5
@@ -25,18 +24,8 @@ MAKE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 
 PLIST_FILES=	${QT_PLUGINDIR}/platforminputcontexts/libgcinplatforminputcontextplugin.so
 
-.include <bsd.port.pre.mk>
-
-.if ${COMPILER_TYPE} == clang && ${COMPILER_VERSION} < 60
-BUILD_DEPENDS+=	${LOCALBASE}/bin/clang60:devel/llvm60
-CPP=		${LOCALBASE}/bin/clang-cpp60
-CC=		${LOCALBASE}/bin/clang60
-CXX=		${LOCALBASE}/bin/clang++60
-.endif
-
 post-patch:
 	@${REINPLACE_CMD} -e 's,%%PREFIX%%,${PREFIX},g; \
 		s,%%MOC%%,${MOC},;' ${WRKSRC}/Makefile
-	@${ECHO} "XXXX: ${COMPILER_VERSION}"
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

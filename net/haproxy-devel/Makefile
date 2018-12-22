@@ -1,10 +1,10 @@
 # Created by: Hugo Saro <hugo@barafranca.com>
-# $FreeBSD: head/net/haproxy-devel/Makefile 486980 2018-12-08 18:52:51Z demon $
+# $FreeBSD: head/net/haproxy-devel/Makefile 487875 2018-12-20 10:02:04Z demon $
 
 PORTNAME=	haproxy
-DISTVERSION=	1.9-dev10
+DISTVERSION=	1.9.0
 CATEGORIES=	net www
-MASTER_SITES=	http://www.haproxy.org/download/1.9/src/devel/
+MASTER_SITES=	http://www.haproxy.org/download/1.9/src/
 PKGNAMESUFFIX=	-devel
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 
@@ -46,10 +46,6 @@ LUA_MAKE_ARGS=		USE_LUA=1 LUA_INC=${LUA_INCDIR} LUA_LIB=${LUA_LIBDIR} LUA_LIB_NA
 
 .if ${ARCH} == "amd64" || ${ARCH} == "i386"
 MAKE_ARGS+=	USE_REGPARM=1
-.endif
-
-.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl111}
-BROKEN=		Does not build with openssl111
 .endif
 
 post-build:

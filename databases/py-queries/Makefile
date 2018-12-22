@@ -1,8 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/databases/py-queries/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-queries/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	queries
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/ftp/wxdfast/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/ftp/wxdfast/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	wxdfast
 PORTVERSION=	0.6.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	ftp www
 MASTER_SITES=	SF/dfast/wxDownload%20Fast/${PORTVERSION}
 DISTNAME=	${PORTNAME}_${PORTVERSION}

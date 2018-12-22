@@ -1,9 +1,9 @@
 # Created by: brett@peloton.physics.montana.edu
-# $FreeBSD: head/editors/cooledit/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/editors/cooledit/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cooledit
 DISTVERSION=	3.17.28
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	SUNSITE/apps/editors/X/cooledit
 

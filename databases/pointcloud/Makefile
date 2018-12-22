@@ -1,8 +1,9 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/pointcloud/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/databases/pointcloud/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pointcloud
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases geography
 

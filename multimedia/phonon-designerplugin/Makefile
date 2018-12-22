@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/phonon-designerplugin/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/multimedia/phonon-designerplugin/Makefile 487601 2018-12-16 16:49:17Z rene $
 
 PORTNAME=	phonon
 DISTVERSION=	4.10.1
@@ -18,12 +18,11 @@ FLAVOR?=	${FLAVORS:[1]}
 qt4_PKGNAMESUFFIX=	-designerplugin-qt4
 qt5_PKGNAMESUFFIX=	-designerplugin-qt5
 
-qt4_DEPRECATED=		Qt4 has been EOL since december 2015
-qt4_EXPIRATION_DATE=	2019-03-15
-
 USES=		cmake tar:xz
 
 .  if ${FLAVOR} == qt4
+DEPRECATED=	Qt4 has been EOL since december 2015
+EXPIRATION_DATE=2019-03-15
 USES+=		kde:4 qt:4
 USE_QT=		corelib designer gui phonon \
 		qmake_build moc_build rcc_build uic_build

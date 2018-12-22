@@ -1,9 +1,9 @@
 # Created by: ryo
-# $FreeBSD: head/net/nepenthes/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/nepenthes/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nepenthes
 PORTVERSION=	0.2.2
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/Nepenthes%20development/${PORTVERSION}
 

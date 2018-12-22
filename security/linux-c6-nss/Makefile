@@ -1,8 +1,9 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/security/linux-c6-nss/Makefile 478165 2018-08-26 19:53:54Z pi $
+# $FreeBSD: head/security/linux-c6-nss/Makefile 487589 2018-12-16 14:18:42Z tijl $
 
 PORTNAME=	nss
 PORTVERSION=	3.36.0
+PORTREVISION=	2
 CATEGORIES=	security linux
 LIB_DISTNAMES=	${DISTNAME} \
 		${PORTNAME}-util-${PORTVERSION}-1.el6 \
@@ -17,7 +18,7 @@ COMMENT=	Network Security Services (Linux CentOS ${LINUX_DIST_VER})
 LICENSE=	MPL20
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
-RPMVERSION=	8.el6
+RPMVERSION=	9.el6_10
 USES=		linux:c6
 USE_LDCONFIG=	yes
 USE_LINUX=	nspr sqlite3

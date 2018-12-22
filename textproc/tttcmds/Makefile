@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/tttcmds/Makefile 480241 2018-09-21 08:50:53Z daichi $
+# $FreeBSD: head/textproc/tttcmds/Makefile 487426 2018-12-14 12:08:26Z daichi $
 
 PORTNAME=	tttcmds
-PORTVERSION=	1.0.20180920
+PORTVERSION=	1.0.20181214
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 

@@ -1,8 +1,9 @@
 # Created by: wenheping@gmail.com
-# $FreeBSD: head/science/brian/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/brian/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	brian
 PORTVERSION=	1.4.4
+PORTREVISION=	1
 CATEGORIES=	science python
 
 MAINTAINER=	wen@FreeBSD.org

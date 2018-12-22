@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/caffe/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/graphics/caffe/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	caffe
 PORTVERSION=	1.0
-PORTREVISION=	16
+PORTREVISION=	18
 CATEGORIES=	graphics
 
 MAINTAINER=	eric@camachat.org

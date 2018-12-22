@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/nss_wrapper/Makefile 483241 2018-10-28 08:45:22Z linimon $
+# $FreeBSD: head/devel/nss_wrapper/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		nss_wrapper
 PORTVERSION=		1.1.3
+PORTREVISION=	1
 CATEGORIES=		devel
 MASTER_SITES=		SAMBA/cwrap
 

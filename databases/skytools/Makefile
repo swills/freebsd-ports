@@ -1,9 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/skytools/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/databases/skytools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	skytools
 PORTVERSION=	3.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://pgfoundry.org/frs/download.php/3622/
 

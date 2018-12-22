@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/cmrt/Makefile 485568 2018-11-22 00:07:46Z jbeich $
+# $FreeBSD: head/multimedia/cmrt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cmrt
 DISTVERSION=	1.0.6
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org

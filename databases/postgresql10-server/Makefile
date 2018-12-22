@@ -1,9 +1,9 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql10-server/Makefile 484807 2018-11-12 15:54:19Z girgen $
+# $FreeBSD: head/databases/postgresql10-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME?=	postgresql
 DISTVERSION?=	10.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	databases
 MASTER_SITES=	PGSQL/source/v${DISTVERSION}
 PKGNAMESUFFIX?= ${PORTVERSION:R}${COMPONENT}

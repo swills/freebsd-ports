@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Test-Parser/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/p5-Test-Parser/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Test-Parser
 PORTVERSION=	1.9
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

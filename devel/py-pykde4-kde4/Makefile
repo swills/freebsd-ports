@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	pykde4
 PORTVERSION=	${KDE4_VERSION}
@@ -32,7 +32,7 @@ CMAKE_ARGS+=	-DWITH_PolkitQt:BOOL=FALSE \
 SUB_FILES=	kdebindings4.pth
 SUB_LIST=	PYTHONPREFIX_SITELIBDIR=${PYTHONPREFIX_SITELIBDIR}
 
-PLIST_SUB+=	SIPDIR=share/sip
+PLIST_SUB+=	PYQT_SIPDIR=share/sip
 
 OPTIONS_DEFINE=	EXAMPLES
 

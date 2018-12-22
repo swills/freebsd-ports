@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/py-biom-format/Makefile 481369 2018-10-06 15:28:01Z jrm $
+# $FreeBSD: head/biology/py-biom-format/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	biom-format
 PORTVERSION=	2.1.7
+PORTREVISION=	1
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/qt5-qdoc/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/devel/qt5-qdoc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qdoc
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel textproc
 PKGNAMEPREFIX=	qt5-
 

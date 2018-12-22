@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-hms/Makefile 464465 2018-03-14 07:26:22Z tota $
+# $FreeBSD: head/devel/R-cran-hms/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hms
 PORTVERSION=	0.4.2
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

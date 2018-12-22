@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/science/py-scikit-sparse/Makefile 484784 2018-11-11 22:39:13Z yuri $
+# $FreeBSD: head/science/py-scikit-sparse/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scikit-sparse
 DISTVERSION=	0.4.4
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

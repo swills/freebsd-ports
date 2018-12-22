@@ -1,8 +1,9 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/security/cryptopp/Makefile 483628 2018-10-31 23:36:03Z jhale $
+# $FreeBSD: head/security/cryptopp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cryptopp
 PORTVERSION=	7.0.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.cryptopp.com/
 DISTNAME=	cryptopp${PORTVERSION:S/.//g}

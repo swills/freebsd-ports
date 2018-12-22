@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-astLib/Makefile 477887 2018-08-23 17:56:38Z sunpoet $
+# $FreeBSD: head/astro/py-astLib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	astLib
 PORTVERSION=	0.10.2
+PORTREVISION=	1
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

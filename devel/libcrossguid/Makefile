@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libcrossguid/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/libcrossguid/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libcrossguid
 PORTVERSION=	20150803
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 
 MAINTAINER=	mickael.maillot@gmail.com

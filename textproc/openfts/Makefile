@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/openfts/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/openfts/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openfts
 PORTVERSION=	0.40
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc perl5
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/OpenFTS-perl%2C%20v${PORTVERSION}
 DISTNAME=	Search-OpenFTS-${PORTVERSION}

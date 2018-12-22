@@ -1,9 +1,9 @@
 # Created by: peter.thoenen@yahoo.com
-# $FreeBSD: head/security/tor-devel/Makefile 485087 2018-11-16 17:03:00Z yuri $
+# $FreeBSD: head/security/tor-devel/Makefile 487764 2018-12-18 19:11:59Z yuri $
 
 PORTNAME=	tor
-DISTVERSION=	0.3.5.5
-DISTVERSIONSUFFIX=	-alpha
+DISTVERSION=	0.3.5.6
+DISTVERSIONSUFFIX=	-rc
 CATEGORIES=	security net ipv6
 MASTER_SITES=	TOR
 PKGNAMESUFFIX=	-devel

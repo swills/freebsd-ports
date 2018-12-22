@@ -1,10 +1,10 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/osg/Makefile 487466 2018-12-14 20:12:34Z yuri $
 
 PORTNAME=	osg
 PORTVERSION=	3.4.1
 DISTVERSIONPREFIX=	OpenSceneGraph-
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -22,9 +22,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	openscenegraph
 GH_PROJECT=	OpenSceneGraph
 
-CONFLICTS=	osg-devel-[0-9]*
+CONFLICTS=	osg-devel
 
-USES=		alias cmake:outsource compiler:c++11-lang jpeg pkgconfig
+USES=		alias cmake:outsource compiler:c++11-lang gl jpeg pkgconfig
 USE_GL=		gl glu
 USE_XORG=	x11
 USE_LDCONFIG=	yes

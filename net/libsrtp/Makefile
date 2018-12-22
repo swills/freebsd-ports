@@ -1,10 +1,10 @@
 # Created by: Alexander Brovikov <alexander@brovikov.ru>
-# $FreeBSD: head/net/libsrtp/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/net/libsrtp/Makefile 487600 2018-12-16 16:34:25Z tijl $
 
 PORTNAME=	libsrtp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	tijl@FreeBSD.org
@@ -13,7 +13,8 @@ COMMENT=	Secure RTP (SRTP) Reference Implementation
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_SSL=	openssl111
+DEPRECATED=	Superseded by libsrtp2
+EXPIRATION_DATE=2018-12-31
 
 PORTSCOUT=	limit:^1\.
 

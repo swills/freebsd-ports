@@ -1,8 +1,9 @@
 # Created by: sobomax
-# $FreeBSD: head/graphics/perceptualdiff/Makefile 487187 2018-12-10 16:50:08Z rene $
+# $FreeBSD: head/graphics/perceptualdiff/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	perceptualdiff
 PORTVERSION=	2.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

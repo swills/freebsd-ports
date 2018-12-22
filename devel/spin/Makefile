@@ -1,8 +1,9 @@
 # Created by: jhanna@home.com
-# $FreeBSD: head/devel/spin/Makefile 480346 2018-09-22 06:27:10Z yuri $
+# $FreeBSD: head/devel/spin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	spin
 PORTVERSION=	6.4.8
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://spinroot.com/spin/Src/
 DISTNAME=	spin${PORTVERSION:S/.//g}

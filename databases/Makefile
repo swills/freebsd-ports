@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 487050 2018-12-09 14:47:15Z kwm $
+# $FreeBSD: head/databases/Makefile 487459 2018-12-14 19:39:38Z dbn $
 #
 
     COMMENT = Databases and related software
@@ -710,6 +710,7 @@
     SUBDIR += postgresql-plproxy
     SUBDIR += postgresql-plruby
     SUBDIR += postgresql-plv8js
+    SUBDIR += postgresql-prefix
     SUBDIR += postgresql-relay
     SUBDIR += postgresql-repmgr
     SUBDIR += postgresql-tds_fdw

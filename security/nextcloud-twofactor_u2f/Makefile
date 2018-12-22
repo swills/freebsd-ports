@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-twofactor_u2f/Makefile 487174 2018-12-10 14:54:05Z brnrd $
+# $FreeBSD: head/security/nextcloud-twofactor_u2f/Makefile 487505 2018-12-15 11:49:26Z brnrd $
 
 PORTNAME=	twofactor_u2f
-PORTVERSION=	2.0.3
+PORTVERSION=	2.1.0
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
 PKGNAMEPREFIX=	nextcloud-

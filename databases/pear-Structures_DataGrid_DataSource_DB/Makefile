@@ -1,5 +1,5 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_DB/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_DB/Makefile 487971 2018-12-21 09:34:36Z joneum $
 
 PORTNAME=	Structures_DataGrid_DataSource_DB
 PORTVERSION=	0.1.1
@@ -7,6 +7,8 @@ CATEGORIES=	databases www pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	DB datasource driver for pear-Structures_DataGrid
+
+LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	${PEARDIR}/Structures/DataGrid.php:devel/pear-Structures_DataGrid@${PHP_FLAVOR} \
 		${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR} \

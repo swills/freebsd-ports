@@ -1,8 +1,9 @@
 # Created by: David Thiel <lx@freebsd.org>
-# $FreeBSD: head/devel/linenoise-ng/Makefile 483612 2018-10-31 20:38:12Z lx $
+# $FreeBSD: head/devel/linenoise-ng/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	linenoise-ng
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	devel
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/plasma5-drkonqi/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-drkonqi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	drkonqi
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

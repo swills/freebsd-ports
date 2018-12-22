@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 485943 2018-11-26 14:08:20Z madpilot $
+# $FreeBSD: head/x11/Makefile 488006 2018-12-21 14:22:17Z rene $
 #
 
     COMMENT = Ports to support the X window system
@@ -11,6 +11,7 @@
     SUBDIR += alltray
     SUBDIR += alttab
     SUBDIR += altyo
+    SUBDIR += aminal
     SUBDIR += antimicro
     SUBDIR += appres
     SUBDIR += apwal
@@ -27,7 +28,6 @@
     SUBDIR += blast
     SUBDIR += bmpanel2
     SUBDIR += bricons
-    SUBDIR += brightside
     SUBDIR += brisk-menu
     SUBDIR += cde
     SUBDIR += cinnamon
@@ -48,7 +48,6 @@
     SUBDIR += deforaos-panel
     SUBDIR += deskmenu
     SUBDIR += deskpaint
-    SUBDIR += dgs
     SUBDIR += dmenu
     SUBDIR += dmenu2
     SUBDIR += docker-tray
@@ -71,7 +70,6 @@
     SUBDIR += fpc-x11
     SUBDIR += fstobdf
     SUBDIR += gcb
-    SUBDIR += gdkxft
     SUBDIR += gdm
     SUBDIR += gmrun
     SUBDIR += gnome-clipboard-daemon
@@ -92,8 +90,6 @@
     SUBDIR += gstreamer1-plugins-x
     SUBDIR += gstreamer1-plugins-ximagesrc
     SUBDIR += gsynaptics
-    SUBDIR += gtk-launch
-    SUBDIR += gtk-theme-switch
     SUBDIR += gtk-theme-switch2
     SUBDIR += gtkchtheme
     SUBDIR += gtkterm2
@@ -104,6 +100,7 @@
     SUBDIR += hs-X11-xft
     SUBDIR += hs-xmobar
     SUBDIR += hsetroot
+    SUBDIR += i3blocks
     SUBDIR += i3lock
     SUBDIR += i3status
     SUBDIR += iceauth
@@ -401,7 +398,6 @@
     SUBDIR += xcursorgen
     SUBDIR += xcut
     SUBDIR += xdbedizzy
-    SUBDIR += xdialog
     SUBDIR += xditview
     SUBDIR += xdm
     SUBDIR += xdotool
@@ -480,12 +476,10 @@
     SUBDIR += xorgproto
     SUBDIR += xplsprinters
     SUBDIR += xpr
-    SUBDIR += xpra
     SUBDIR += xprehashprinterlist
     SUBDIR += xprintidle
     SUBDIR += xprompt
     SUBDIR += xprop
-    SUBDIR += xpyb
     SUBDIR += xrandr
     SUBDIR += xrdb
     SUBDIR += xrefresh

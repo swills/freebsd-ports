@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-nnls/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-nnls/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nnls
 PORTVERSION=	1.4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

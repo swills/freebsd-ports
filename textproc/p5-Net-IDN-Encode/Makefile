@@ -1,8 +1,8 @@
 # Created by: Timur Bakeyev <bat@cpan.org>
-# $FreeBSD: head/textproc/p5-Net-IDN-Encode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Net-IDN-Encode/Makefile 487576 2018-12-16 11:08:48Z bofh $
 
 PORTNAME=	Net-IDN-Encode
-PORTVERSION=	2.400
+PORTVERSION=	2.500
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

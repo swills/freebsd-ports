@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/games/monsterz/Makefile 474276 2018-07-09 17:40:13Z amdmi3 $
+# $FreeBSD: head/games/monsterz/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	monsterz
 PORTVERSION=	0.7.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	http://sam.zoy.org/monsterz/ \
 		SF/nemysisfreebsdp/:icons

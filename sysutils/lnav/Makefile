@@ -1,10 +1,10 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/sysutils/lnav/Makefile 483346 2018-10-28 20:03:03Z linimon $
+# $FreeBSD: head/sysutils/lnav/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lnav
 PORTVERSION=	0.8.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	tom@hur.st

@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/security/libressl-devel/Makefile 482420 2018-10-19 09:52:48Z brnrd $
+# $FreeBSD: head/security/libressl-devel/Makefile 487578 2018-12-16 11:29:02Z brnrd $
 
 PORTNAME=	libressl
-PORTVERSION=	2.8.2
+PORTVERSION=	2.9.0
 CATEGORIES=	security devel
 MASTER_SITES=	OPENBSD/LibreSSL
 PKGNAMESUFFIX=	-devel
@@ -22,7 +22,6 @@ NC_DESC=	Install TLS-enabled netcat
 
 CONFLICTS_INSTALL=	libressl-[0-9]* \
 			openssl-[0-9]* \
-			openssl-devel-[0-9]* \
 			openssl111-[0-9]*
 
 NC_CONFIGURE_ENABLE=	nc

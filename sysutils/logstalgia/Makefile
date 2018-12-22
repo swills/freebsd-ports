@@ -1,10 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/logstalgia/Makefile 486720 2018-12-05 20:01:10Z linimon $
+# $FreeBSD: head/sysutils/logstalgia/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	logstalgia
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	1.1.2
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	sysutils www
 
 MAINTAINER=	ehaupt@FreeBSD.org

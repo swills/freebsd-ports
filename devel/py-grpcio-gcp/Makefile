@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-grpcio-gcp/Makefile 479623 2018-09-12 22:54:50Z sunpoet $
+# $FreeBSD: head/devel/py-grpcio-gcp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	grpcio-gcp
 PORTVERSION=	0.2.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

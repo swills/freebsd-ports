@@ -1,10 +1,10 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/net-im/teamwords/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-im/teamwords/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	teamwords
 PORTVERSION=	0.2.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-im
 
 MAINTAINER=	kmoore@FreeBSD.org

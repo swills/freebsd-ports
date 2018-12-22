@@ -1,10 +1,10 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/owncloudclient/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/deskutils/owncloudclient/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	owncloudclient
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	yonas@fizk.net

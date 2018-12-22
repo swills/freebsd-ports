@@ -1,8 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey52/Makefile 484890 2018-11-13 18:08:44Z kwm $
+# $FreeBSD: head/lang/spidermonkey52/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	spidermonkey
 PORTVERSION=	52.9.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	MOZILLA/firefox/releases/${PORTVERSION}esr/source
 PKGNAMESUFFIX=	${SP_VER}

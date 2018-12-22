@@ -1,8 +1,9 @@
 # Created by: Pierre David <pdagog@gmail.com>, Jean Benoit <jean@unistra.fr>
-# $FreeBSD: head/net-mgmt/netmagis-common/Makefile 464190 2018-03-11 17:53:51Z riggs $
+# $FreeBSD: head/net-mgmt/netmagis-common/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME?=	netmagis
 PORTVERSION?=	2.3.4
+PORTREVISION=	1
 CATEGORIES?=	net-mgmt
 MASTER_SITES=	http://netmagis.org/files/
 PKGNAMESUFFIX?=	-common

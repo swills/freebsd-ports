@@ -1,8 +1,8 @@
-# $FreeBSD: head/ports-mgmt/portal/Makefile 480010 2018-09-18 11:01:50Z linimon $
+# $FreeBSD: head/ports-mgmt/portal/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	portal
 PORTVERSION=	0.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	culot@FreeBSD.org

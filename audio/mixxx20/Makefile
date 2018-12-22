@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/mixxx20/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/audio/mixxx20/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mixxx
 PORTVERSION=	2.0.0
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio
 MASTER_SITES=	http://downloads.mixxx.org/${PORTNAME}-${PORTVERSION}/
 PKGNAMESUFFIX=	20

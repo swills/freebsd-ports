@@ -1,9 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/databases/py-htsql-pgsql/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-htsql-pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	htsql-pgsql
 PORTVERSION=	2.3.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

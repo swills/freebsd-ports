@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/secrettower/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/secrettower/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	secrettower
 PORTVERSION=	0.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games python
 DIST_SUBDIR=	python
 

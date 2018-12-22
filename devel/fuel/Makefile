@@ -1,5 +1,5 @@
 # Created by: Hakisho Nukama <nukama@gmail.com>
-# $FreeBSD: head/devel/fuel/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/fuel/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	fuel
 DISTVERSION=	1.0.1
@@ -18,7 +18,7 @@ OPTIONS_SINGLE=		GUI
 OPTIONS_SINGLE_GUI=	QT4 QT5
 OPTIONS_DEFAULT=	QT5
 
-USES=		qmake shebangfix
+USES=		gmake qmake shebangfix
 QT4_USES=	qt:4
 QT4_USE=	QT=corelib,gui,webkit,linguisttools_build,moc_build,rcc_build,uic_build
 QT5_USES=	qt:5

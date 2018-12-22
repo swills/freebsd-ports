@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/liggghts/Makefile 483987 2018-11-04 10:25:39Z yuri $
+# $FreeBSD: head/science/liggghts/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	liggghts
 DISTVERSION=	3.8.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

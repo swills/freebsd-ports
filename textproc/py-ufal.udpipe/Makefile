@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/py-ufal.udpipe/Makefile 485577 2018-11-22 01:24:23Z linimon $
+# $FreeBSD: head/textproc/py-ufal.udpipe/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ufal.udpipe
 PORTVERSION=	1.2.0.1
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

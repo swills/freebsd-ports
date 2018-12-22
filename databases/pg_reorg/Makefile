@@ -1,8 +1,9 @@
 # Created by: Alexander Pyhalov <alp@sfedu.ru>
-# $FreeBSD: head/databases/pg_reorg/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pg_reorg/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pg_reorg
 PORTVERSION=	1.1.11
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://pgfoundry.org/frs/download.php/3821/ \
 		http://BSDforge.com/projects/source/databases/pg_reorg/

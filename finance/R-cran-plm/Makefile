@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-plm/Makefile 464352 2018-03-13 08:42:32Z tota $
+# $FreeBSD: head/finance/R-cran-plm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	plm
 DISTVERSION=	1.6-6
+PORTREVISION=	1
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/py-fastdtw/Makefile 480276 2018-09-21 15:11:39Z yuri $
+# $FreeBSD: head/math/py-fastdtw/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fastdtw
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.3.2
+PORTREVISION=	1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

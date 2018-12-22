@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/math/py-colormath/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-colormath/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	colormath
 PORTVERSION=	2.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

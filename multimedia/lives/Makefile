@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/lives/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/multimedia/lives/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	lives
 PORTVERSION=	2.8.7
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	multimedia
 MASTER_SITES=	http://lives-video.com/releases/
 DISTNAME=	LiVES-${PORTVERSION}
@@ -14,7 +14,7 @@ COMMENT=	Video editing system
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat \
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto \
 		${LOCALBASE}/bin/analyseplugin:audio/ladspa
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libjack.so:audio/jack \

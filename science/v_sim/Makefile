@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/v_sim/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/v_sim/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	v_sim
 PORTVERSION=	3.7.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	science
 MASTER_SITES=	http://inac.cea.fr/L_Sim/V_Sim/download/
 

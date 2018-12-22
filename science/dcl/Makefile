@@ -1,9 +1,9 @@
 # Created by: Shin'ya Murakami <murakami@ahs.scitec.kobe-u.ac.jp>
-# $FreeBSD: head/science/dcl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/dcl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dcl
 PORTVERSION=	5.4.8
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science graphics
 MASTER_SITES=	http://www.gfd-dennou.org/library/dcl/ \
 		http://dennou-h.gfd-dennou.org/library/dcl/ \

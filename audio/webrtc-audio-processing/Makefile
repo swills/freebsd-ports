@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/webrtc-audio-processing/Makefile 481919 2018-10-12 18:22:06Z jbeich $
+# $FreeBSD: head/audio/webrtc-audio-processing/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	webrtc-audio-processing
 PORTVERSION=	0.3.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://freedesktop.org/software/pulseaudio/${PORTNAME}/
 

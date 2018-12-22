@@ -1,9 +1,9 @@
 # Created by: Alexander Y. Grigoryev <alexander.4mail@gmail.com>
-# $FreeBSD: head/graphics/zathura-djvu/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/zathura-djvu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	zathura-djvu
 PORTVERSION=	0.2.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	https://pwmt.org/projects/zathura/plugins/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/

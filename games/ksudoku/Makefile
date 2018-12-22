@@ -1,8 +1,7 @@
-# $FreeBSD: head/games/ksudoku/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/games/ksudoku/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	ksudoku
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

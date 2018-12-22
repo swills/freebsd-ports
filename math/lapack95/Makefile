@@ -1,9 +1,9 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/lapack95/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/math/lapack95/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lapack95
 PORTVERSION=	1.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	math
 MASTER_SITES=	NL
 DISTNAME=	${PORTNAME}

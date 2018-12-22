@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-qt5-webchannel/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/www/py-qt5-webchannel/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	webchannel
 CATEGORIES=	www devel python
@@ -7,6 +7,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtWebChannel module
 
 # LICENSE set in Mk/Uses/pyqt.mk
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 USES=		python pyqt:5 qt:5
 USE_PYQT=	sip_build core_run gui_run network_run qml_run widgets_run

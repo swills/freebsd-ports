@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-molmod/Makefile 479756 2018-09-14 03:10:59Z yuri $
+# $FreeBSD: head/science/py-molmod/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	molmod
 DISTVERSION=	1.4.4
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

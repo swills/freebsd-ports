@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/farblazer/Makefile 486363 2018-12-01 13:08:31Z sunpoet $
+# $FreeBSD: head/games/farblazer/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	farblazer
 PORTVERSION=	0.7
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	https://www.pygame.org/gamelets/games/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

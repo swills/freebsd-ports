@@ -1,9 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/graphics/inkscape/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/inkscape/Makefile 487596 2018-12-16 15:10:42Z tcberner $
 
 PORTNAME=	inkscape
 PORTVERSION=	0.92.3
-PORTREVISION=	4
+PORTREVISION=	7
 CATEGORIES=	graphics gnome
 MASTER_SITES=	https://inkscape.org/en/gallery/item/12187/
 
@@ -82,5 +82,8 @@ USES+=			gettext
 post-patch:
 	@${REINPLACE_CMD} -e 's|COMMAND python|COMMAND ${PYTHON_VERSION}|g' \
 		${WRKSRC}/share/*/CMakeLists.txt
+	# Obtained from Arch Linux
+	@${REINPLACE_CMD} -e 's|gTrue|true|g' -e 's|gFalse|false|g' -e 's|GBool|bool|g' \
+		${WRKSRC}/src/extension/internal/pdfinput/pdf-parser.*
 
 .include <bsd.port.mk>

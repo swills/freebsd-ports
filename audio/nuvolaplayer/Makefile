@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/nuvolaplayer/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/audio/nuvolaplayer/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nuvolaplayer
 PORTVERSION=	3.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio www
 
 MAINTAINER=	multimedia@FreeBSD.org

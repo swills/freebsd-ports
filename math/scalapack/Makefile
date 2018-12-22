@@ -1,9 +1,9 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/scalapack/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/math/scalapack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scalapack
 PORTVERSION=	2.0.2
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	math
 MASTER_SITES=	NL
 DISTFILES=	scalapack-${PORTVERSION}.tgz manpages.tgz

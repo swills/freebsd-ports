@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/eom/Makefile 486023 2018-11-27 16:32:44Z linimon $
+# $FreeBSD: head/graphics/eom/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	eom
 PORTVERSION=	1.20.1
+PORTREVISION=	1
 CATEGORIES=	graphics mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

@@ -1,4 +1,4 @@
-# $FreeBSD: head/polish/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/polish/Makefile 487994 2018-12-21 13:36:25Z rene $
 #
 
     COMMENT = Polish language support
@@ -16,7 +16,6 @@
     SUBDIR += libreoffice
     SUBDIR += libtlen
     SUBDIR += mythes
-    SUBDIR += php_doc
     SUBDIR += qfaktury
     SUBDIR += qnapi
     SUBDIR += tleenx2

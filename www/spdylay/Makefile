@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/spdylay/Makefile 484710 2018-11-11 18:18:25Z sunpoet $
+# $FreeBSD: head/www/spdylay/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	spdylay
 PORTVERSION=	1.4.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	www net
 MASTER_SITES=	https://github.com/tatsuhiro-t/${PORTNAME}/releases/download/v${PORTVERSION}/ \
 		LOCAL/sunpoet

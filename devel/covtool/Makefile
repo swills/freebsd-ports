@@ -1,9 +1,9 @@
 # Created by: novator24 <novator24@gmail.com>
-# $FreeBSD: head/devel/covtool/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/covtool/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	covtool
 PORTVERSION=	2.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/rel_2.0
 

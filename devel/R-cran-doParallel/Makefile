@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-doParallel/Makefile 480775 2018-09-27 03:55:27Z tota $
+# $FreeBSD: head/devel/R-cran-doParallel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	doParallel
 PORTVERSION=	1.0.14
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/mailcommon/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/mailcommon/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	mailcommon
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

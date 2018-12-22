@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 482441 2018-10-19 17:59:02Z jsm $
+# $FreeBSD: head/deskutils/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -43,7 +43,6 @@
     SUBDIR += dlume
     SUBDIR += docear
     SUBDIR += dosage
-    SUBDIR += drivel
     SUBDIR += easystroke
     SUBDIR += egroupware
     SUBDIR += everygui
@@ -52,8 +51,8 @@
     SUBDIR += flameshot
     SUBDIR += freemind
     SUBDIR += freeplane
+    SUBDIR += fasd
     SUBDIR += fusenshi
-    SUBDIR += gaddr
     SUBDIR += ganttproject
     SUBDIR += ganyremote
     SUBDIR += gbirthday
@@ -95,7 +94,6 @@
     SUBDIR += gnome-utils
     SUBDIR += gnome-weather
     SUBDIR += gnote
-    SUBDIR += gnotime
     SUBDIR += gnustep-wrapper
     SUBDIR += go-for-it
     SUBDIR += gourmet
@@ -104,12 +102,9 @@
     SUBDIR += grantleetheme
     SUBDIR += griffith
     SUBDIR += growl-for-linux
-    SUBDIR += gruler
     SUBDIR += gsimplecal
     SUBDIR += gtg
     SUBDIR += gtimer
-    SUBDIR += gtodo
-    SUBDIR += gtweakui
     SUBDIR += gucharmap
     SUBDIR += gworkspace
     SUBDIR += gworkspace-gwmetadata
@@ -126,7 +121,6 @@
     SUBDIR += howm
     SUBDIR += hs-fdo-notify
     SUBDIR += ical
-    SUBDIR += ithought
     SUBDIR += jjclient
     SUBDIR += jlj
     SUBDIR += kaddressbook
@@ -185,16 +179,12 @@
     SUBDIR += menumaker
     SUBDIR += moregroupware
     SUBDIR += mozo
-    SUBDIR += multisync
-    SUBDIR += multisync-backup
-    SUBDIR += multisync-syncml
     SUBDIR += myitcrm
     SUBDIR += nautilus-actions
     SUBDIR += nautilus-sendto
     SUBDIR += nemo-extensions
     SUBDIR += nextcloudclient
     SUBDIR += note
-    SUBDIR += notecase
     SUBDIR += noti
     SUBDIR += notification-daemon
     SUBDIR += notify-osd
@@ -213,7 +203,6 @@
     SUBDIR += pim-sieve-editor
     SUBDIR += pinot
     SUBDIR += plan
-    SUBDIR += planner
     SUBDIR += plans
     SUBDIR += plasma-applet-cwp
     SUBDIR += plasma-applet-daisy

@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/belr/Makefile 482777 2018-10-22 19:23:52Z tijl $
+# $FreeBSD: head/textproc/belr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	belr
 PORTVERSION=	0.1.3
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	https://www.linphone.org/releases/sources/belr/
 

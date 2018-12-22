@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/supertuxkart/Makefile 486053 2018-11-27 19:33:22Z amdmi3 $
+# $FreeBSD: head/games/supertuxkart/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	supertuxkart
 PORTVERSION=	0.9.3
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/supertuxkart/SuperTuxKart/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

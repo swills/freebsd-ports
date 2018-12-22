@@ -1,8 +1,9 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios-check_postgres/Makefile 484605 2018-11-10 12:14:33Z matthew $
+# $FreeBSD: head/net-mgmt/nagios-check_postgres/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	check_postgres
 PORTVERSION=	2.24.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt databases perl5
 MASTER_SITES=	http://bucardo.org/downloads/
 PKGNAMEPREFIX=	nagios-

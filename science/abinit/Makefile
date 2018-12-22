@@ -1,9 +1,9 @@
 # Created by: NAKATA Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/abinit/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/abinit/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	abinit
 DISTVERSION=	8.8.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	https://www.abinit.org/sites/default/files/packages/
 

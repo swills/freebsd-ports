@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/editors/codelite/Makefile 477362 2018-08-16 16:38:36Z mmokhi $
+# $FreeBSD: head/editors/codelite/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	codelite
 PORTVERSION=	11.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	editors devel
 
 MAINTAINER=	mmokhi@FreeBSD.org

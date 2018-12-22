@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/print/R-cran-knitr/Makefile 465156 2018-03-21 08:10:01Z tota $
+# $FreeBSD: head/print/R-cran-knitr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	knitr
 PORTVERSION=	1.20
+PORTREVISION=	1
 CATEGORIES=	print
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

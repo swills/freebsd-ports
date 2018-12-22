@@ -1,9 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11/cinnamon/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11/cinnamon/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cinnamon
 PORTVERSION=	2.4.6
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	x11 gnome
 DIST_SUBDIR=	gnome3
 

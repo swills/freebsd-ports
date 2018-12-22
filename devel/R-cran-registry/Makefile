@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-registry/Makefile 464470 2018-03-14 08:20:37Z tota $
+# $FreeBSD: head/devel/R-cran-registry/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	registry
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

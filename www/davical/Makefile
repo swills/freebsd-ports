@@ -1,9 +1,10 @@
 # Created by: Maurice Castro <maurice@castro.aus.net>
-# $FreeBSD: head/www/davical/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
+# $FreeBSD: head/www/davical/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	davical
 DISTVERSIONPREFIX=	r
 DISTVERSION=	1.1.7
+PORTREVISION=	1
 CATEGORIES?=	www
 
 MAINTAINER=	rigoletto@FreeBSD.org

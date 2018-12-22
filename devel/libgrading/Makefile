@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libgrading/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/devel/libgrading/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libgrading
 PORTVERSION=	0.1.2
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

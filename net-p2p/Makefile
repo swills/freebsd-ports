@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 481392 2018-10-06 20:31:52Z yuri $
+# $FreeBSD: head/net-p2p/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -31,7 +31,6 @@
     SUBDIR += eiskaltdcpp-qt
     SUBDIR += frost
     SUBDIR += gkremldk
-    SUBDIR += gnewtellium
     SUBDIR += go-ethereum
     SUBDIR += gtk-gnutella
     SUBDIR += gtorrentviewer
@@ -62,7 +61,6 @@
     SUBDIR += namecoin
     SUBDIR += namecoin-daemon
     SUBDIR += namecoin-utils
-    SUBDIR += napshare
     SUBDIR += ncdc
     SUBDIR += opendchub
     SUBDIR += p5-Net-BitTorrent

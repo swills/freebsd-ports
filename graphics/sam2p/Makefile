@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/sam2p/Makefile 481276 2018-10-05 14:28:02Z des $
+# $FreeBSD: head/graphics/sam2p/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sam2p
 PORTVERSION=	0.49.4
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/releases/download/v${PORTVERSION}/

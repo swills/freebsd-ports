@@ -1,8 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-vcd/Makefile 478555 2018-08-31 13:36:25Z wen $
+# $FreeBSD: head/devel/R-cran-vcd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vcd
 DISTVERSION=	1.4-4
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

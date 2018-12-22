@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-hcluster/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-hcluster/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hcluster
 PORTVERSION=	0.2.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

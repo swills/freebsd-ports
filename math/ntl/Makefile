@@ -1,8 +1,9 @@
 # Created by: bauerm
-# $FreeBSD: head/math/ntl/Makefile 485349 2018-11-19 18:21:10Z fernape $
+# $FreeBSD: head/math/ntl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ntl
 PORTVERSION=	11.3.2
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.shoup.net/ntl/
 

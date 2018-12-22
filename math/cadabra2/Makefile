@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/cadabra2/Makefile 486825 2018-12-07 06:34:59Z yuri $
+# $FreeBSD: head/math/cadabra2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cadabra2
 DISTVERSION=	2.2.2
+PORTREVISION=	2
 CATEGORIES=	math
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

@@ -1,10 +1,10 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/lang/julia06/Makefile 485067 2018-11-16 09:30:21Z amdmi3 $
+# $FreeBSD: head/lang/julia06/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	julia
 PORTVERSION=	0.6.4
 DISTVERSIONSUFFIX=	-full
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang math
 MASTER_SITES=	https://github.com/JuliaLang/julia/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	06

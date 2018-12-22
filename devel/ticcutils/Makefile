@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/ticcutils/Makefile 487130 2018-12-10 07:01:06Z yuri $
+# $FreeBSD: head/devel/ticcutils/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ticcutils
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.20
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	devel textproc
 
 MAINTAINER=	yuri@FreeBSD.org

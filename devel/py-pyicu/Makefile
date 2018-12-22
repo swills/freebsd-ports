@@ -1,9 +1,9 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/devel/py-pyicu/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/devel/py-pyicu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyicu
 PORTVERSION=	1.9.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

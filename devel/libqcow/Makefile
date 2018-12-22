@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libqcow/Makefile 485856 2018-11-25 12:44:24Z antoine $
+# $FreeBSD: head/devel/libqcow/Makefile 487906 2018-12-20 19:36:43Z antoine $
 
 PORTNAME=	libqcow
-DISTVERSION=	alpha-20181124
+DISTVERSION=	alpha-20181216
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libqcow/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

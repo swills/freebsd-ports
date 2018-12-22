@@ -1,10 +1,10 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/poco-ssl/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/devel/poco-ssl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	poco
 # New version 1.4.6p4 is available; please use DISTVERSION upon updating
 PORTVERSION=	1.4.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel net
 MASTER_SITES=	SF/${PORTNAME}/sources/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	-ssl

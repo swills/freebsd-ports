@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/gtkpool/Makefile 477558 2018-08-19 08:13:51Z tobik $
+# $FreeBSD: head/games/gtkpool/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gtkpool
 PORTVERSION=	0.5.0
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.seul.org/pub/gtkpool/ \
 		http://www.sourcefiles.org/Games/Sports/Pool/

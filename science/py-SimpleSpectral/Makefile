@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-SimpleSpectral/Makefile 472666 2018-06-18 02:34:02Z yuri $
+# $FreeBSD: head/science/py-SimpleSpectral/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	SimpleSpectral
 DISTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

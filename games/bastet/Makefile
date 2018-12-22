@@ -1,9 +1,9 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/games/bastet/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/bastet/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	bastet
 PORTVERSION=	0.43
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	http://fph.altervista.org/prog/files/
 

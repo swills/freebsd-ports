@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-deap/Makefile 486829 2018-12-07 07:46:13Z yuri $
+# $FreeBSD: head/math/py-deap/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	deap
 DISTVERSION=	1.2.2
+PORTREVISION=	1
 CATEGORIES=	math biology science devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

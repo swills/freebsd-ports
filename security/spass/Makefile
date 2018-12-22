@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/spass/Makefile 484370 2018-11-06 23:52:17Z linimon $
+# $FreeBSD: head/security/spass/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	spass
 PORTVERSION=	3.0
-PORTREVISION=	11
+PORTREVISION=	13
 CATEGORIES=	security
 
 MAINTAINER=	ports@FreeBSD.org

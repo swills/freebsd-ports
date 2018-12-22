@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/evince/Makefile 484781 2018-11-11 21:58:50Z kwm $
+# $FreeBSD: head/graphics/evince/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	evince
 PORTVERSION=	3.28.5
+PORTREVISION=	1
 CATEGORIES=	graphics print gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

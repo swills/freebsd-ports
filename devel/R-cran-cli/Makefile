@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-cli/Makefile 480722 2018-09-26 08:43:28Z tota $
+# $FreeBSD: head/devel/R-cran-cli/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cli
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

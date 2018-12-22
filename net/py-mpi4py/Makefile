@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/py-mpi4py/Makefile 480224 2018-09-21 03:48:57Z yuri $
+# $FreeBSD: head/net/py-mpi4py/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mpi4py
 DISTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	net parallel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

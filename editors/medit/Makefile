@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/editors/medit/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/editors/medit/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	medit
 PORTVERSION=	1.2.92
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	SF/mooedit/${PORTNAME}/${PORTVERSION}
 PKGNAMESUFFIX=	-editor

@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/sherlock-lv2/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/audio/sherlock-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sherlock
 PORTVERSION=	0.14.0
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

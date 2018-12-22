@@ -1,9 +1,9 @@
 # Created by: Kirill Bezzubets <kirill@solaris.ru>
-# $FreeBSD: head/comms/gammu/Makefile 480259 2018-09-21 11:37:03Z linimon $
+# $FreeBSD: head/comms/gammu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gammu
 PORTVERSION=	1.39.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	http://dl.cihar.com/gammu/releases/
 

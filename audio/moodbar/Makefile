@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/moodbar/Makefile 483040 2018-10-26 16:03:12Z jhale $
+# $FreeBSD: head/audio/moodbar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	moodbar
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/exaile/${PORTNAME}/releases/download/v${PORTVERSION}/
 

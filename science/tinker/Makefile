@@ -1,8 +1,9 @@
 # Created by: Glenn Johnson
-# $FreeBSD: head/science/tinker/Makefile 481406 2018-10-07 00:19:22Z yuri $
+# $FreeBSD: head/science/tinker/Makefile 487934 2018-12-21 01:11:00Z yuri $
 
 PORTNAME=	tinker
 DISTVERSION=	8.4.4
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	https://dasher.wustl.edu/tinker/downloads/
 
@@ -15,6 +16,14 @@ LICENSE_FILE=	${WRKSRC}/doc/license.pdf
 LICENSE_PERMS=	auto-accept # internal academic purposes only, no commercial use
 
 OPTIONS_DEFINE=	OPTIMIZED_FFLAGS DOCS EXAMPLES
+
+OPTIONS_DEFINE_amd64=	SSE
+OPTIONS_DEFINE_i386=	SSE
+OPTIONS_DEFAULT_amd64=	SSE
+OPTIONS_DEFAULT_i386=	SSE
+
+SSE_MAKE_ARGS=	PORT_SIMD_FLAGS="-msse -msse2 -mfpmath=sse"
+
 OPTIMIZED_FFLAGS_DESC=	compilation optimizations
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

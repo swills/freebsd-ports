@@ -1,8 +1,9 @@
 # Created by: rossiya
-# $FreeBSD: head/math/ltl/Makefile 464240 2018-03-12 09:32:46Z yuri $
+# $FreeBSD: head/math/ltl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ltl
 DISTVERSION=	2.0.19
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.mpe.mpg.de/~drory/ltl/
 

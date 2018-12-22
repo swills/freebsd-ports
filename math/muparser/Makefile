@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/math/muparser/Makefile 483253 2018-10-28 09:45:57Z linimon $
+# $FreeBSD: head/math/muparser/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	muparser
 PORTVERSION=	2.2.5
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math devel
 

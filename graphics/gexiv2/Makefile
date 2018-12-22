@@ -1,8 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gexiv2/Makefile 485702 2018-11-23 20:10:23Z cmt $
+# $FreeBSD: head/graphics/gexiv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gexiv2
 PORTVERSION=	0.10.9
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 

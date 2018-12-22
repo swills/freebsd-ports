@@ -1,9 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/net/sobby/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/sobby/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sobby
 PORTVERSION=	0.4.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	http://releases.0x539.de/sobby/
 

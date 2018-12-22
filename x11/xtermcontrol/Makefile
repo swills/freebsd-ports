@@ -1,8 +1,8 @@
 # Created by: krion
-# $FreeBSD: head/x11/xtermcontrol/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/x11/xtermcontrol/Makefile 488029 2018-12-21 22:45:12Z olgeni $
 
 PORTNAME=	xtermcontrol
-PORTVERSION=	3.3
+PORTVERSION=	3.6
 CATEGORIES=	x11
 MASTER_SITES=	http://www.thrysoee.dk/xtermcontrol/ \
 		http://fossies.org/linux/privat/

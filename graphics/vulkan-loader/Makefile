@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/vulkan-loader/Makefile 482190 2018-10-15 23:59:54Z jbeich $
+# $FreeBSD: head/graphics/vulkan-loader/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vulkan-loader
 DISTVERSIONPREFIX=sdk-
 DISTVERSION=	1.1.82.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics devel
 
 MAINTAINER=	greg@unrelenting.technology

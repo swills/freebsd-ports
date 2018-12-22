@@ -1,8 +1,9 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_similarity/Makefile 475583 2018-07-28 14:57:52Z miwi $
+# $FreeBSD: head/databases/pg_similarity/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pg_similarity
 PORTVERSION=	20160917
+PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 

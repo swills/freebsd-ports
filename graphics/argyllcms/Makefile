@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/argyllcms/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/argyllcms/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	argyllcms
 PORTVERSION=	1.9.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.argyllcms.com/
 DISTNAME=	Argyll_V${PORTVERSION}_src

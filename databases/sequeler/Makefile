@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/sequeler/Makefile 487140 2018-12-10 08:54:34Z tobik $
+# $FreeBSD: head/databases/sequeler/Makefile 487585 2018-12-16 12:49:24Z tobik $
 
 PORTNAME=	sequeler
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.4
+DISTVERSION=	0.6.5
 CATEGORIES=	databases
 
 MAINTAINER=	tobik@FreeBSD.org

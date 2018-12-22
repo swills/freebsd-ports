@@ -1,8 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11/yelp/Makefile 485089 2018-11-16 17:04:40Z amdmi3 $
+# $FreeBSD: head/x11/yelp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	yelp
 PORTVERSION=	3.28.1
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/horde.mk 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/Mk/Uses/horde.mk 488016 2018-12-21 16:26:58Z joneum $
 #
 # Feature:	horde
 # Usage:	USES=horde
@@ -9,11 +9,9 @@
 .if !defined(_INCLUDE_USES_HORDE_MK)
 _INCLUDE_USES_HORDE_MK=	yes
 
-MASTER_SITES?=	http://pear.horde.org/get/
+MASTER_SITES?=	https://pear.horde.org/get/
 
 HORDE_DIR?=	www/horde
-
-CONFLICTS+=	horde3-*.[0-9]*
 
 CPE_VENDOR?=	horde
 

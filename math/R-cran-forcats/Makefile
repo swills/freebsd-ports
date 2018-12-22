@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/R-cran-forcats/Makefile 480552 2018-09-24 07:12:05Z dbn $
+# $FreeBSD: head/math/R-cran-forcats/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	forcats
 DISTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,10 +1,13 @@
-# $FreeBSD: head/multimedia/py-qt5-multimediawidgets/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/multimedia/py-qt5-multimediawidgets/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	multimediawidgets
 CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtMultimediaWidgets module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtMultimediaWidgets
 PYQT_DIST=	yes

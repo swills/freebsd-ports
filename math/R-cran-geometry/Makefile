@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-geometry/Makefile 467026 2018-04-11 05:53:33Z tota $
+# $FreeBSD: head/math/R-cran-geometry/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	geometry
 DISTVERSION=	0.3-6
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

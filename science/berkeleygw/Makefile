@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/berkeleygw/Makefile 485365 2018-11-19 21:56:09Z yuri $
+# $FreeBSD: head/science/berkeleygw/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	BerkeleyGW
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://berkeley.box.com/shared/static/
 DISTFILES=	wkqu37wu77tll53r8t1soe6ozqja67yy.gz

@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg-devel/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/osg-devel/Makefile 487466 2018-12-14 20:12:34Z yuri $
 
 PORTNAME=	osg
 PORTVERSION=	3.5.1
@@ -21,9 +21,9 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
-CONFLICTS=	osg-[0-9]*
+CONFLICTS=	osg
 
-USES=		alias cmake:outsource jpeg pkgconfig zip
+USES=		alias cmake:outsource jpeg gl pkgconfig zip
 USE_GL=		gl glu
 USE_XORG=	x11
 USE_LDCONFIG=	yes

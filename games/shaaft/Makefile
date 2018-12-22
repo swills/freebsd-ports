@@ -1,9 +1,9 @@
 # Created by: Kirill Ponomarew <krion@FreeBSD.org>
-# $FreeBSD: head/games/shaaft/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/shaaft/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	shaaft
 PORTVERSION=	0.5.0
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	games
 MASTER_SITES=	SF/criticalmass/OldFiles
 DISTNAME=	Shaaft-${PORTVERSION}

@@ -1,8 +1,9 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/databases/pgtcl/Makefile 477318 2018-08-16 09:38:04Z amdmi3 $
+# $FreeBSD: head/databases/pgtcl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgtcl
 PORTVERSION=	2.1.1
+PORTREVISION=	1
 CATEGORIES=	databases tcl
 MASTER_SITES=	SF/pgtclng/pgtclng/${PORTVERSION}
 DISTNAME=	${PORTNAME}${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-krunner/Makefile 484814 2018-11-12 18:31:42Z tcberner $
+# $FreeBSD: head/x11/kf5-krunner/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	krunner
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

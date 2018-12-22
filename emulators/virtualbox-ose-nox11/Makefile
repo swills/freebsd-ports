@@ -1,5 +1,6 @@
-# $FreeBSD: head/emulators/virtualbox-ose-nox11/Makefile 482272 2018-10-17 06:49:30Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose-nox11/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-nox11
 
 OPTIONS_EXCLUDE=	ALSA DBUS DEBUG GUESTADDITIONS MANUAL NLS PULSEAUDIO

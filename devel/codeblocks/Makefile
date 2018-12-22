@@ -1,9 +1,9 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/codeblocks/Makefile 484370 2018-11-06 23:52:17Z linimon $
+# $FreeBSD: head/devel/codeblocks/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	codeblocks
 PORTVERSION=	17.12
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/Sources/${PORTVERSION}
 DISTNAME=	${PORTNAME}_${PORTVERSION}

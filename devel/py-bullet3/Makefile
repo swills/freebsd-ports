@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-bullet3/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/devel/py-bullet3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bullet3
 DISTVERSION=	2.87
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

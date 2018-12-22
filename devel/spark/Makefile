@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/spark/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/spark/Makefile 487993 2018-12-21 13:28:06Z demon $
 
 PORTNAME=	spark
 PORTVERSION=	2.1.1
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	apache-
 DISTFILES=	${PORTNAME}-${PORTVERSION}.tgz FreeBSD-${PORTNAME}-${PORTVERSION}-maven-repository.tar.gz:maven
 DIST_SUBDIR=	hadoop
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast big data processing engine
 
 LICENSE=	APACHE20

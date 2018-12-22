@@ -1,8 +1,8 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/archivers/pecl-lzf/Makefile 442215 2017-05-31 15:10:21Z joneum $
+# $FreeBSD: head/archivers/pecl-lzf/Makefile 487890 2018-12-20 16:26:50Z joneum $
 
 PORTNAME=	lzf
-PORTVERSION=	1.6.6
+PORTVERSION=	1.6.7
 CATEGORIES=	archivers pear
 DISTNAME=	${PORTNAME:tu}-${PORTVERSION}
 

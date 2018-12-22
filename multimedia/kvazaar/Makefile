@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/kvazaar/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/multimedia/kvazaar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kvazaar
 DISTVERSIONPREFIX=	v
 DISTVERSION?=	1.2.0
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES=	multimedia
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

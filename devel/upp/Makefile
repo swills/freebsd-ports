@@ -1,9 +1,9 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/upp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/upp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	upp
 DISTVERSION=	11873
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel x11-toolkits
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/2018.1/
 DISTNAME=	${PORTNAME}-x11-src-${PORTVERSION}

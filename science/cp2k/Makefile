@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/cp2k/Makefile 480440 2018-09-23 00:25:19Z yuri $
+# $FreeBSD: head/science/cp2k/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cp2k
 DISTVERSION=	6.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 MASTER_SITES=	SF/${PORTNAME}/
 

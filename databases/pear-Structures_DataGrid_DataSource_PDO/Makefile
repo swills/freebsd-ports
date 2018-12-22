@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_PDO/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_PDO/Makefile 487980 2018-12-21 10:46:59Z joneum $
 
 PORTNAME=	Structures_DataGrid_DataSource_PDO
 PORTVERSION=	0.2.0
@@ -8,9 +8,13 @@ CATEGORIES=	databases www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	DataSource driver using PHP Data Objects (PDO) and an SQL query
 
+LICENSE=	BSD2CLAUSE
+
 BUILD_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array@${PHP_FLAVOR}
 RUN_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array@${PHP_FLAVOR}
 
 USES=		pear
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

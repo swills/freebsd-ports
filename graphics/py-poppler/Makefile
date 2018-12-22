@@ -1,9 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/graphics/py-poppler/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-poppler/Makefile 487596 2018-12-16 15:10:42Z tcberner $
 
 PORTNAME=	poppler
 PORTVERSION=	0.12.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	graphics python
 MASTER_SITES=	https://launchpad.net/poppler-python/trunk/development/+download/ \
 		http://launchpadlibrarian.net/30270080/ \

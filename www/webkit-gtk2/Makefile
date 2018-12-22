@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit-gtk2/Makefile 485881 2018-11-25 17:12:38Z sunpoet $
+# $FreeBSD: head/www/webkit-gtk2/Makefile 487702 2018-12-17 18:44:31Z linimon $
 
 PORTNAME=	webkit
 PORTVERSION=	2.4.11
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	www
 MASTER_SITES=	https://webkitgtk.org/releases/
 PKGNAMESUFFIX=	-gtk2
@@ -84,7 +84,7 @@ DEBUG_CONFIGURE_OFF=	--disable-debug-symbols
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} == powerpc64 || ${ARCH} == powerpc || ${ARCH} == sparc64
+.if ${ARCH:Mpowerpc*} || ${ARCH} == sparc64
 CONFIGURE_ARGS+=	--disable-jit
 CFLAGS+=		-DENABLE_YARR_JIT=0
 .endif

@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/coinutils/Makefile 487134 2018-12-10 07:50:44Z yuri $
+# $FreeBSD: head/math/coinutils/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	CoinUtils
 DISTVERSION=	2.10.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://www.coin-or.org/download/source/${PORTNAME}/
 PKGNAMEPREFIX=	coin-or-

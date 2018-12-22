@@ -1,9 +1,9 @@
 # Created by: lon_kamikaze@gmx.de
-# $FreeBSD: head/java/veditor/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/java/veditor/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	veditor
 PORTVERSION=	1.2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	java cad
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20runtime/VEditor%20${PORTVERSION}
 DISTNAME=	net.sourceforge.${PORTNAME}_${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 487117 2018-12-10 03:02:11Z jmd $
+# $FreeBSD: head/graphics/Makefile 488008 2018-12-21 14:30:24Z rene $
 #
 
     COMMENT = Graphics tools and libraries
@@ -45,7 +45,6 @@
     SUBDIR += agg
     SUBDIR += alembic
     SUBDIR += alpng
-    SUBDIR += amide
     SUBDIR += ampasACES-container
     SUBDIR += ampasCTL
     SUBDIR += animorph
@@ -87,14 +86,12 @@
     SUBDIR += cal3d
     SUBDIR += camera
     SUBDIR += camerakit
-    SUBDIR += cbrpager
     SUBDIR += cbview
     SUBDIR += cbviewer
     SUBDIR += cegui
     SUBDIR += cenon
     SUBDIR += cfdg
     SUBDIR += charls
-    SUBDIR += chbg
     SUBDIR += cimg
     SUBDIR += cinepaint
     SUBDIR += cloudcompare
@@ -115,14 +112,13 @@
     SUBDIR += cptutils
     SUBDIR += crw
     SUBDIR += cthumb
-    SUBDIR += cuneiform
     SUBDIR += curator
     SUBDIR += cuttlefish
-    SUBDIR += danpei
     SUBDIR += darknock
     SUBDIR += darktable
     SUBDIR += dataplot
     SUBDIR += dc20pack
+    SUBDIR += dcmtk
     SUBDIR += dcp2icc
     SUBDIR += dcraw
     SUBDIR += dcraw-m
@@ -198,7 +194,6 @@
     SUBDIR += fly
     SUBDIR += fortytwo
     SUBDIR += fotofix
-    SUBDIR += fotoxx
     SUBDIR += founts
     SUBDIR += fpc-cairo
     SUBDIR += fpc-graph
@@ -228,13 +223,11 @@
     SUBDIR += fyre
     SUBDIR += g2
     SUBDIR += gauche-gl
-    SUBDIR += gcolor
     SUBDIR += gcolor2
     SUBDIR += gcolor3
     SUBDIR += gd
     SUBDIR += gdal
     SUBDIR += gdchart
-    SUBDIR += gdk-pixbuf
     SUBDIR += gdk-pixbuf2
     SUBDIR += gdtclft
     SUBDIR += geeqie
@@ -313,7 +306,6 @@
     SUBDIR += grafx2
     SUBDIR += graphene
     SUBDIR += graphite2
-    SUBDIR += graphopt
     SUBDIR += graphos
     SUBDIR += graphviz
     SUBDIR += grx
@@ -353,7 +345,6 @@
     SUBDIR += guilib
     SUBDIR += gwenview
     SUBDIR += gwenview-kde4
-    SUBDIR += gx
     SUBDIR += hdr_tools
     SUBDIR += hiptext
     SUBDIR += hobbes-icons-xpm
@@ -386,6 +377,7 @@
     SUBDIR += imgv
     SUBDIR += imlib2
     SUBDIR += imlib2_loaders
+    SUBDIR += imlib2-webp
     SUBDIR += impressive
     SUBDIR += imv
     SUBDIR += inkscape
@@ -765,6 +757,7 @@
     SUBDIR += p5-Image-Math-Constrain
     SUBDIR += p5-Image-MetaData-GQview
     SUBDIR += p5-Image-MetaData-JPEG
+    SUBDIR += p5-Image-OCR-Tesseract
     SUBDIR += p5-Image-ObjectDetect
     SUBDIR += p5-Image-PBMlib
     SUBDIR += p5-Image-PNG-Libpng
@@ -866,7 +859,6 @@
     SUBDIR += poppler
     SUBDIR += poppler-data
     SUBDIR += poppler-glib
-    SUBDIR += poppler-qt4
     SUBDIR += poppler-qt5
     SUBDIR += poppler-utils
     SUBDIR += potrace
@@ -937,7 +929,6 @@
     SUBDIR += py-plotly
     SUBDIR += py-png
     SUBDIR += py-poppler
-    SUBDIR += py-poppler-qt4
     SUBDIR += py-pycha
     SUBDIR += py-pycollada
     SUBDIR += py-pydot
@@ -957,7 +948,6 @@
     SUBDIR += py-sane
     SUBDIR += py-scikit-image
     SUBDIR += py-seqdiag
-    SUBDIR += py-sk1
     SUBDIR += py-sorl-thumbnail
     SUBDIR += py-soya3d
     SUBDIR += py-stltools
@@ -988,6 +978,7 @@
     SUBDIR += qt5-svg
     SUBDIR += qt5-wayland
     SUBDIR += qtawesome
+    SUBDIR += qtpbfimageplugin
     SUBDIR += quat
     SUBDIR += quat-gui
     SUBDIR += quesa
@@ -1074,6 +1065,7 @@
     SUBDIR += silgraphite
     SUBDIR += simage
     SUBDIR += simpleviewer
+    SUBDIR += sk1
     SUBDIR += sk1libs
     SUBDIR += skanlite
     SUBDIR += skanlite-kde4
@@ -1110,7 +1102,6 @@
     SUBDIR += tinyows
     SUBDIR += tkpng
     SUBDIR += togl
-    SUBDIR += truevision
     SUBDIR += ttygif
     SUBDIR += tulip
     SUBDIR += tumble
@@ -1138,6 +1129,7 @@
     SUBDIR += wayland-protocols
     SUBDIR += waylandpp
     SUBDIR += webp
+    SUBDIR += webp-pixbuf-loader
     SUBDIR += wings
     SUBDIR += wmicons
     SUBDIR += wxsvg

@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/valentina/Makefile 482976 2018-10-25 17:17:48Z yuri $
+# $FreeBSD: head/misc/valentina/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	valentina
 DISTVERSION=	0.6.1
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

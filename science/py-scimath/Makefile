@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-scimath/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-scimath/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scimath
 PORTVERSION=	4.1.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science math python
 MASTER_SITES=	http://www.enthought.com/repo/ets/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/R-cran-RPostgreSQL/Makefile 468398 2018-04-27 05:51:41Z tota $
+# $FreeBSD: head/databases/R-cran-RPostgreSQL/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RPostgreSQL
 DISTVERSION=	0.6-2
+PORTREVISION=	1
 CATEGORIES=	databases
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_calendar_classification/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/finance/trytond28_calendar_classification/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	trytond28_calendar_classification
 PORTVERSION=	2.8.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	finance python
 MASTER_SITES=	https://pypi.python.org/packages/source/t/trytond_calendar_classification/ \
 		http://downloads.tryton.org/${PORTVERSION:R}/

@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/cool-retro-term/Makefile 485517 2018-11-21 14:21:59Z linimon $
+# $FreeBSD: head/x11/cool-retro-term/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	cool-retro-term
 PORTVERSION=	1.0.0
-PORTREVISION=	5
+PORTREVISION=	6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11
 
@@ -17,7 +17,7 @@ GH_ACCOUNT=	Swordfish90
 GH_PROJECT=	qmltermwidget:qtw
 GH_TAGNAME=	v0.1.0:qtw
 
-USES=		desktop-file-utils qmake qt:5
+USES=		gmake desktop-file-utils qmake qt:5
 USE_QT=		qmake_build buildtools_build core declarative gui widgets \
 		graphicaleffects_run quickcontrols_run
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/ice37/Makefile 478221 2018-08-27 16:37:53Z grembo $
+# $FreeBSD: head/devel/ice37/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		Ice
 PORTVERSION=		3.7.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=		devel
 PKGNAMESUFFIX?=		37

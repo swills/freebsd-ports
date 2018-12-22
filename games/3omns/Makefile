@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/3omns/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/3omns/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	3omns
 PORTVERSION=	0.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	SF/nemysisfreebsdp/${CATEGORIES}/:icons
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

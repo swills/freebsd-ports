@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/acalc/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/math/acalc/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	acalc
 PORTVERSION=	0.21
@@ -12,8 +12,6 @@ LICENSE=	BSD4CLAUSE
 
 DEPRECATED=		Qt4 has been EOL since december 2015
 EXPIRATION_DATE=	2019-03-15
-
-BROKEN_powerpc64=	fails to compile: cc1plus: unrecognized command line option "-std=c++11"
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	anpp

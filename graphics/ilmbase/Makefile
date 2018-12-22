@@ -1,8 +1,9 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/graphics/ilmbase/Makefile 486634 2018-12-04 22:36:34Z mandree $
+# $FreeBSD: head/graphics/ilmbase/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ilmbase
 PORTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	graphics devel
 MASTER_SITES=	https://github.com/openexr/openexr/releases/download/v${PORTVERSION}/
 

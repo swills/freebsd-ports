@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-rtiff/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/R-cran-rtiff/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rtiff
 PORTVERSION=	1.4.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

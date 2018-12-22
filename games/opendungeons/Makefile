@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/opendungeons/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/opendungeons/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	opendungeons
 PORTVERSION=	0.7.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 
 MAINTAINER=	ports@FreeBSD.org

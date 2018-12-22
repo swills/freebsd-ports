@@ -1,9 +1,9 @@
 # Created by: will
-# $FreeBSD: head/science/clhep/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/science/clhep/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	clhep
 PORTVERSION=	2.4.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	http://proj-clhep.web.cern.ch/proj-clhep/DISTRIBUTION/tarFiles/
 

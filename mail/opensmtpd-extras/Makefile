@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/mail/opensmtpd-extras/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/mail/opensmtpd-extras/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	opensmtpd-extras
 PORTVERSION=	201606230001
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES+=	mail
 MASTER_SITES=	http://www.opensmtpd.org/archives/
 

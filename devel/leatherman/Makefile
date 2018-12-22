@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/leatherman/Makefile 485609 2018-11-22 19:40:02Z romain $
+# $FreeBSD: head/devel/leatherman/Makefile 487824 2018-12-20 02:06:04Z romain $
 
 PORTNAME=	leatherman
-PORTVERSION=	1.5.3
+PORTVERSION=	1.5.4
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	puppet@FreeBSD.org
@@ -17,7 +18,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	puppetlabs
 
 USE_RUBY=	yes
-CMAKE_ARGS=	-DLEATHERMAN_SHARED:BOOL=ON
+CMAKE_ON=	LEATHERMAN_SHARED
+CMAKE_OFF=	ENABLE_CXX_WERROR
 USE_LDCONFIG=	yes
 TEST_TARGET=	test
 

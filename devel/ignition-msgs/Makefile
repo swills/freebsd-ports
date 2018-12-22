@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/ignition-msgs/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/devel/ignition-msgs/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ignition-msgs
 DISTVERSION=	3.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

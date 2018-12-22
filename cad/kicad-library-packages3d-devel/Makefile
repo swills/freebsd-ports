@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library-packages3d-devel/Makefile 474023 2018-07-06 17:43:22Z antoine $
+# $FreeBSD: head/cad/kicad-library-packages3d-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_P3D_DATE}
+PORTREVISION=	1
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-library-packages3d-devel
 

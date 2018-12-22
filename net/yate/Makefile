@@ -1,8 +1,9 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/net/yate/Makefile 479440 2018-09-10 16:51:53Z pi $
+# $FreeBSD: head/net/yate/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	yate
 PORTVERSION=	6.1.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://yate.null.ro/tarballs/yate6/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-1

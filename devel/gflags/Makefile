@@ -1,8 +1,9 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/gflags/Makefile 484829 2018-11-12 21:27:49Z sunpoet $
+# $FreeBSD: head/devel/gflags/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gflags
 PORTVERSION=	2.2.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

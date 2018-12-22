@@ -1,7 +1,7 @@
 # Created by: Yarema <yds@CoolRat.org>
-# $FreeBSD: head/databases/courier-authlib-pgsql/Makefile 481732 2018-10-10 11:54:58Z madpilot $
+# $FreeBSD: head/databases/courier-authlib-pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-pgsql
 
 COMMENT=	PostgreSQL support for the Courier authentication library

@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-magic/Makefile 479981 2018-09-18 07:38:01Z tota $
+# $FreeBSD: head/math/R-cran-magic/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	magic
 DISTVERSION=	1.5-9
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

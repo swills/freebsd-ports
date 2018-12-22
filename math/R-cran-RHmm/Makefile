@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-RHmm/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-RHmm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RHmm
 PORTVERSION=	2.0.3
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

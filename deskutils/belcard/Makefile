@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/belcard/Makefile 482777 2018-10-22 19:23:52Z tijl $
+# $FreeBSD: head/deskutils/belcard/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	belcard
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	https://www.linphone.org/releases/sources/belcard/
 

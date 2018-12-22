@@ -1,5 +1,6 @@
-# $FreeBSD: head/databases/postgresql93-pgtcl/Makefile 355673 2014-05-29 08:12:51Z antoine $
+# $FreeBSD: head/databases/postgresql93-pgtcl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-postgresql93
 
 CONFLICTS=	pgtcl-[0-9]* pgtcl-postgresql9[0124]-[0-9]*

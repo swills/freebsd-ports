@@ -1,8 +1,8 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-libzfs/Makefile 481901 2018-10-12 13:21:30Z tobik $
+# $FreeBSD: head/devel/py-libzfs/Makefile 487896 2018-12-20 18:02:58Z wg $
 
 PORTNAME=	libzfs
-PORTVERSION=	1.0.20181003
+PORTVERSION=	1.0.20181220
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PY_ENUM34}
 USE_GITHUB=     yes
 GH_ACCOUNT=	freenas
 GH_PROJECT=	py-libzfs
-GH_TAGNAME=	4cc2344
+GH_TAGNAME=	3362fd4
 
 HAS_CONFIGURE=	yes
 USES=		python

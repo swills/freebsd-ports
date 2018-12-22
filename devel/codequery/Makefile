@@ -1,8 +1,9 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/codequery/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/codequery/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	codequery
 PORTVERSION=	0.21.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

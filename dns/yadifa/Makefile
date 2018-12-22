@@ -1,8 +1,8 @@
-# $FreeBSD: head/dns/yadifa/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/dns/yadifa/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	yadifa
 DISTVERSION=	2.3.8
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-7713
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://cdn.yadifa.eu/sites/default/files/releases/

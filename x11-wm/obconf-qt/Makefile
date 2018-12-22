@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-wm/obconf-qt/Makefile 482157 2018-10-15 14:55:00Z jsm $
+# $FreeBSD: head/x11-wm/obconf-qt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	obconf-qt
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	LXQT/${PORTNAME}
 

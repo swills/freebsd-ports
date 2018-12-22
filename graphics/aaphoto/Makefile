@@ -1,10 +1,10 @@
 # Created by: Andras Horvath <han@log69.com>
-# $FreeBSD: head/graphics/aaphoto/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/aaphoto/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	aaphoto
 PORTVERSION=	0.43.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 
 MAINTAINER=	mail@log69.com
@@ -28,7 +28,7 @@ PLIST_FILES=	bin/aaphoto
 
 .include <bsd.port.pre.mk>
 
-.if (${ARCH} == "amd64" || ${ARCH} == "i386") && ${COMPILER_TYPE} == gcc
+.if (${ARCH} == amd64 || ${ARCH} == i386) && ${CHOSEN_COMPILER_TYPE} == gcc
 CFLAGS+=	-fopenmp -D__OPENMP__
 .endif
 

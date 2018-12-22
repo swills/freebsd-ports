@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/kcov/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/devel/kcov/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kcov
 DISTVERSIONPREFIX=	v
 DISTVERSION=	36
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	asomers@FreeBSD.org

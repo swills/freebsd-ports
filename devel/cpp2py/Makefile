@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/cpp2py/Makefile 472575 2018-06-16 23:20:55Z yuri $
+# $FreeBSD: head/devel/cpp2py/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cpp2py
 DISTVERSION=	1.5-19
 DISTVERSIONSUFFIX=	-g5fd079c
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

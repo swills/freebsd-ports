@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/seqtools/Makefile 456096 2017-12-12 03:38:56Z jbeich $
+# $FreeBSD: head/biology/seqtools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	seqtools
 PORTVERSION=	4.44.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.sanger.ac.uk/pub4/resources/software/seqtools/PRODUCTION/
 

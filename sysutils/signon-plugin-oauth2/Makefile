@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/signon-plugin-oauth2/Makefile 485713 2018-11-23 22:42:03Z tcberner $
+# $FreeBSD: head/sysutils/signon-plugin-oauth2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	signon-plugin-oauth2
 DISTVERSION=	0.24
+PORTREVISION=	1
 CATEGORIES=	sysutils kde
 DISTNAME=	archive
 DIST_SUBDIR=	KDE/${GL_ACCOUNT}

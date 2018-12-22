@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-highr/Makefile 472843 2018-06-20 03:59:09Z tota $
+# $FreeBSD: head/textproc/R-cran-highr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	highr
 PORTVERSION=	0.7
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

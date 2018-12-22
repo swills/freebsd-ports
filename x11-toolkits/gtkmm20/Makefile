@@ -1,10 +1,10 @@
 # Created by: Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
-# $FreeBSD: head/x11-toolkits/gtkmm20/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/x11-toolkits/gtkmm20/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #    $MCom: ports/x11-toolkits/gtkmm20/Makefile,v 1.11 2006/09/10 00:51:17 mezz Exp $
 
 PORTNAME=	gtkmm
 PORTVERSION=	2.2.12
-PORTREVISION?=	16
+PORTREVISION?=	17
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME/sources/${PORTNAME}/2.2
 PKGNAMESUFFIX=	20

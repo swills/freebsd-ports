@@ -1,6 +1,6 @@
-# $FreeBSD: head/science/fvcom-mpi/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/fvcom-mpi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=	11
+PORTREVISION=	12
 PKGNAMESUFFIX=	-openmpi
 
 MPIPREFIX=	mpi/openmpi/

@@ -1,9 +1,9 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/py-veusz/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/science/py-veusz/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	veusz
 PORTVERSION=	1.19.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science kde
 MASTER_SITES=	http://download.gna.org/veusz/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/irc/hexchat/Makefile 483063 2018-10-27 00:17:36Z swills $
+# $FreeBSD: head/irc/hexchat/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hexchat
 PORTVERSION=	2.14.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	irc gnome ipv6
 

@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeorion/Makefile 486056 2018-11-27 19:56:43Z jbeich $
+# $FreeBSD: head/games/freeorion/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	freeorion
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4.8
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	games
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

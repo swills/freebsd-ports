@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/xcwcp/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/xcwcp/Makefile 487933 2018-12-21 00:16:53Z yuri $
 
 PORTNAME=	xcwcp
 
@@ -11,10 +11,8 @@ LIB_DEPENDS=	libcw.so:comms/unixcw
 
 MASTERDIR=	${.CURDIR}/../unixcw
 
-PLIST=		${.CURDIR}/pkg-plist
-USE_QT=		buildtools gui widgets qmake_build
-USES=		gettext qt:5
-# Qt from 5.7.0 on requires c++11.
+USES=		compiler:c++11-lang gettext qt:5
+USE_QT=		gui widgets buildtools_build qmake_build
 USE_CXXSTD=	c++11
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-xcwcp
@@ -22,6 +20,8 @@ XCWCP=		yes
 PLIST_FILES=	bin/xcwcp \
 		man/man1/xcwcp.1.gz
 LDFLAGS+=	-L${LOCALBASE}/lib -lintl
+
+PLIST=		${.CURDIR}/pkg-plist
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/xcwcp/xcwcp ${STAGEDIR}${PREFIX}/bin/

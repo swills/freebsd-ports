@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/opensmtpd-devel/Makefile 484257 2018-11-05 23:28:55Z fluffy $
+# $FreeBSD: head/mail/opensmtpd-devel/Makefile 488062 2018-12-22 03:44:37Z fluffy $
 
 PORTNAME=	opensmtpd
 PORTVERSION=	201606220754
@@ -62,7 +62,9 @@ CONFIGURE_ARGS+=	--with-libasr=${LOCALBASE} \
 
 .include <bsd.port.pre.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1200084
+.if ${OPSYS} == FreeBSD && \
+    ((${OSVERSION} > 1200084 && ${SSL_DEFAULT} == "base") || \
+    (${SSL_DEFAULT} == "openssl111"))
 BROKEN=		Incompatible with Openssl 1.1.x yet
 .endif
 

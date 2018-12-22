@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/gnudoku/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/gnudoku/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	GNUDoku
 PORTVERSION=	0.93
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	http://offload2.icculus.org:9090/~jcspray/GNUDoku/ \
 		http://mirror.amdmi3.ru/distfiles/

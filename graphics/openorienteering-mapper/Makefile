@@ -1,8 +1,9 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 478129 2018-08-26 15:04:34Z riggs $
+# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	openorienteering-mapper
 PORTVERSION=	0.8.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics geography
 
@@ -25,7 +26,8 @@ GH_PROJECT=	mapper
 
 CMAKE_ARGS+=	-DLICENSING_PROVIDER=freebsd \
 		-DMapper_PACKAGE_NAME=${PORTNAME} \
-		-Wno-dev
+		-Wno-dev \
+		-DQt5Help_QCOLLECTIONGENERATOR_EXECUTABLE=${QT_BINDIR}/qhelpgenerator
 
 OPTIONS_DEFINE=	DOCS EXAMPLES GDAL NLS TEST TIFF
 OPTIONS_DEFAULT=	GDAL

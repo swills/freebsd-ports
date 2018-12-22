@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/tepl/Makefile 480965 2018-09-30 17:17:55Z kwm $
+# $FreeBSD: head/x11-toolkits/tepl/Makefile 487842 2018-12-20 05:50:15Z linimon $
 
 PORTNAME=	tepl
 PORTVERSION=	4.0.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libuchardet.so:textproc/uchardet
 
-USES=		gettext gmake gnome libtool pkgconfig tar:xz
+USES=		compiler:c11 gettext gmake gnome libtool pkgconfig tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gtksourceview4 libxml2
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

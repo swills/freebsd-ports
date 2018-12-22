@@ -1,11 +1,11 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/emulators/x49gp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/emulators/x49gp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 # Note: sdcard64.tar.gz contains just an empty 64MB FAT-16 disk image
 
 PORTNAME=	x49gp
 PORTVERSION=	20100425
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	emulators math
 MASTER_SITES=	LOCAL/shaun
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} sdcard64.tar.gz

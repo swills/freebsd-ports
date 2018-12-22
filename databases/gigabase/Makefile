@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org.ru>
-# $FreeBSD: head/databases/gigabase/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/databases/gigabase/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gigabase
 PORTVERSION=	3.91
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	databases
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-src/${PORTVERSION} \
 		http://www.garret.ru/

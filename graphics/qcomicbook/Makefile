@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/qcomicbook/Makefile 481442 2018-10-07 12:00:18Z tcberner $
+# $FreeBSD: head/graphics/qcomicbook/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	QComicBook
 PORTVERSION=	0.9.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org

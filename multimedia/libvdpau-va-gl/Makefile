@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/libvdpau-va-gl/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/multimedia/libvdpau-va-gl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libvdpau-va-gl
 PORTVERSION=	0.4.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

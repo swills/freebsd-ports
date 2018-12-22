@@ -1,9 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/math/stp/Makefile 484370 2018-11-06 23:52:17Z linimon $
+# $FreeBSD: head/math/stp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	stp
 DISTVERSION=	2.3.1
-PORTREVISION=	2
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	math
 

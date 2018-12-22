@@ -1,9 +1,9 @@
 # Created by: Sean Bruno <sbruno@freebsd.org>
-# $FreeBSD: head/audio/idjc/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/audio/idjc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	idjc
 PORTVERSION=	0.8.17
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio python
 MASTER_SITES=	SF/idjc
 

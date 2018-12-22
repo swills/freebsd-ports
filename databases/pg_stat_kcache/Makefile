@@ -1,9 +1,10 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pg_stat_kcache/Makefile 485502 2018-11-21 08:37:32Z mat $
+# $FreeBSD: head/databases/pg_stat_kcache/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pg_stat_kcache
 DISTVERSIONPREFIX=	REL
 DISTVERSION=	2_1_1
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	girgen@FreeBSD.org

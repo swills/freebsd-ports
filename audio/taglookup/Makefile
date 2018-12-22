@@ -1,9 +1,9 @@
 # Created by: Alex Allan <alex@kamaz.org.uk>
-# $FreeBSD: head/audio/taglookup/Makefile 486872 2018-12-07 16:29:51Z linimon $
+# $FreeBSD: head/audio/taglookup/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	taglookup
 PORTVERSION=	0.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://www.kamaz.org.uk/taglookup/
 

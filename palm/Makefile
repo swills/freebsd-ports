@@ -1,4 +1,4 @@
-# $FreeBSD: head/palm/Makefile 477371 2018-08-16 20:28:32Z rene $
+# $FreeBSD: head/palm/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Software support for handheld devices (Palm, PocketPC, ...)
@@ -15,7 +15,6 @@
     SUBDIR += palm-db-tools
     SUBDIR += pilot-link
     SUBDIR += pilot_makedoc
-    SUBDIR += pilrc
     SUBDIR += synce-libsynce
 
 .include <bsd.port.subdir.mk>

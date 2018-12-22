@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/nagios-check_postgres_replication/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/databases/nagios-check_postgres_replication/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	check_postgres_replication
 PORTVERSION=	2010.12.16
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases python
 MASTER_SITES=	https://gist.github.com/raw/743942/4b9454d6aaf919fe77d15ecea09c7a001ae83b59/ \
 		LOCAL/brooks

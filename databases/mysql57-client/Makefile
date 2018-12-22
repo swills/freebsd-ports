@@ -1,5 +1,5 @@
 # Created by: "Mahdi Mokhtari <mokhi64@gmail.com>"
-# $FreeBSD: head/databases/mysql57-client/Makefile 485868 2018-11-25 16:30:00Z mmokhi $
+# $FreeBSD: head/databases/mysql57-client/Makefile 488036 2018-12-22 01:06:06Z linimon $
 
 PORTNAME=	mysql
 PORTREVISION=	1
@@ -8,9 +8,6 @@ PKGNAMESUFFIX=	57-client
 COMMENT=	Multithreaded SQL database (client)
 
 LICENSE+=	LGPL21
-
-BROKEN_powerpc64=	does not build: reports unsupported compiler
-BROKEN_sparc64=		does not build: reports unsupported compiler
 
 MASTERDIR=	${.CURDIR}/../mysql57-server
 

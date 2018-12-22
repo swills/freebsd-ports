@@ -1,8 +1,8 @@
-# $FreeBSD: head/benchmarks/py-naarad/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/benchmarks/py-naarad/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	naarad
 PORTVERSION=	1.0.15
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	benchmarks python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/ponscripter-sekai/Makefile 478837 2018-09-03 00:21:45Z jbeich $
+# $FreeBSD: head/games/ponscripter-sekai/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ponscripter-sekai
 PORTVERSION=	0.0.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 
 MAINTAINER=	jbeich@FreeBSD.org

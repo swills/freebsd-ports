@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/midi-matrix-lv2/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/audio/midi-matrix-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	midi-matrix
 PORTVERSION=	0.20.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://gitlab.com/OpenMusicKontrollers/midi_matrix.lv2/repository/archive.tar.gz?ref=${PORTVERSION}&dummy=/
 PKGNAMESUFFIX=	-lv2

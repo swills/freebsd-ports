@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/elk/Makefile 480461 2018-09-23 08:43:32Z yuri $
+# $FreeBSD: head/science/elk/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	elk
 DISTVERSION=	5.2.14
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	SF/${PORTNAME}/
 PKGNAMESUFFIX=	-chemistry

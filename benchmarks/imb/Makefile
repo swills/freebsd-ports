@@ -1,9 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/benchmarks/imb/Makefile 480425 2018-09-22 18:00:24Z yuri $
+# $FreeBSD: head/benchmarks/imb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	imb
 PORTVERSION=	3.0
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	benchmarks parallel
 MASTER_SITES=	LOCAL/itetcu \
 		http://cache-www.intel.com/cd/00/00/32/71/

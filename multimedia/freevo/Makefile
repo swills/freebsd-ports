@@ -1,9 +1,9 @@
 # Created by: Lewis Thompson (purple@lewiz.net)
-# $FreeBSD: head/multimedia/freevo/Makefile 475617 2018-07-28 23:23:46Z yuri $
+# $FreeBSD: head/multimedia/freevo/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	freevo
 PORTVERSION=	1.9.0
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/Freevo%20releases/${PORTVERSION}
 

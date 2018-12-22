@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/sysadm-client/Makefile 484224 2018-11-05 21:36:05Z kmoore $
+# $FreeBSD: head/sysutils/sysadm-client/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	sysadm-client
 PORTVERSION=	1.1
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 WRKSRC_SUBDIR=	src-qt5
 USE_QT=		core buildtools_build gui network qmake websockets widgets svg concurrent
-USES=		pkgconfig qt:5 tar:xz qmake ssl
+USES=		gmake pkgconfig qt:5 tar:xz qmake ssl
 USE_GL+=	gl
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 

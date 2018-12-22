@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-jupyterlab_launcher/Makefile 477470 2018-08-18 01:03:19Z yuri $
+# $FreeBSD: head/devel/py-jupyterlab_launcher/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	jupyterlab_launcher
 DISTVERSION=	0.13.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

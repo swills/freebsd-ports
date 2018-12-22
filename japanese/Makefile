@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 471892 2018-06-07 00:34:18Z rene $
+# $FreeBSD: head/japanese/Makefile 488006 2018-12-21 14:22:17Z rene $
 #
 
     COMMENT = Japanese support
@@ -108,7 +108,6 @@
     SUBDIR += gd
     SUBDIR += gedy
     SUBDIR += gimp-help
-    SUBDIR += gjiten
     SUBDIR += groff
     SUBDIR += gskk
     SUBDIR += gsuica
@@ -127,8 +126,6 @@
     SUBDIR += jed
     SUBDIR += jishyo
     SUBDIR += jls
-    SUBDIR += jmode
-    SUBDIR += jmode-skk
     SUBDIR += jpilot
     SUBDIR += jstrings
     SUBDIR += jvim3
@@ -221,7 +218,6 @@
     SUBDIR += p5-nkf
     SUBDIR += pejv-fpw
     SUBDIR += php5-mecab
-    SUBDIR += php_doc
     SUBDIR += plain2
     SUBDIR += plan
     SUBDIR += prn

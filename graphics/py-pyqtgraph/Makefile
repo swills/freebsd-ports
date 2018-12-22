@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/py-pyqtgraph/Makefile 472174 2018-06-11 08:49:18Z yuri $
+# $FreeBSD: head/graphics/py-pyqtgraph/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyqtgraph
 DISTVERSION=	0.10.0
+PORTREVISION=	1
 CATEGORIES=	graphics science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

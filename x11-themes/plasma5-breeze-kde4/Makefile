@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-themes/plasma5-breeze-kde4/Makefile 483271 2018-10-28 10:59:23Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-breeze-kde4/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	breeze
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-plasma
 PKGNAMESUFFIX=	-kde4
 

@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/eog/Makefile 486515 2018-12-03 12:34:22Z linimon $
+# $FreeBSD: head/graphics/eog/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	eog
 PORTVERSION=	3.28.4
+PORTREVISION=	1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

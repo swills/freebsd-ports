@@ -1,9 +1,9 @@
 # Created by: eric
-# $FreeBSD: head/textproc/stardict3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/textproc/stardict3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	stardict
 PORTVERSION=	3.0.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	SF/stardict-4/${PORTVERSION}
 DIST_SUBDIR=	stardict

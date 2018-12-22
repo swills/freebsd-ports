@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/www/cssed/Makefile 483284 2018-10-28 11:44:51Z linimon $
+# $FreeBSD: head/www/cssed/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cssed
 PORTVERSION=	0.4.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	www
 MASTER_SITES=	SF
 

@@ -1,10 +1,10 @@
 # Created by: giffunip
-# $FreeBSD: head/devel/lasi/Makefile 480646 2018-09-25 07:53:26Z linimon $
+# $FreeBSD: head/devel/lasi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #    $MCom: ports/devel/lasi/Makefile,v 1.1 2006/10/04 20:25:40 ahze Exp $
 
 PORTNAME=	lasi
 PORTVERSION=	1.1.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}%20Source
 DISTNAME=	libLASi-${PORTVERSION}

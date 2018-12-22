@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-cube/Makefile 452978 2017-10-27 12:27:05Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-cube/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	icingaweb2-module-cube
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 487136 2018-12-10 07:59:42Z yuri $
+# $FreeBSD: head/math/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Mathematics
@@ -126,6 +126,7 @@
     SUBDIR += ann
     SUBDIR += antic
     SUBDIR += apc
+    SUBDIR += apron
     SUBDIR += arb
     SUBDIR += aribas
     SUBDIR += armadillo
@@ -174,6 +175,7 @@
     SUBDIR += coin-or-data-stochastic
     SUBDIR += coinmp
     SUBDIR += coinutils
+    SUBDIR += combblas
     SUBDIR += concorde
     SUBDIR += convertall
     SUBDIR += coq
@@ -229,8 +231,6 @@
     SUBDIR += gambit
     SUBDIR += gap
     SUBDIR += gau2grid
-    SUBDIR += gdcalc
-    SUBDIR += geg
     SUBDIR += geogebra
     SUBDIR += geogram
     SUBDIR += geonext
@@ -260,9 +260,9 @@
     SUBDIR += gretl
     SUBDIR += gri
     SUBDIR += gringo
-    SUBDIR += grpn
     SUBDIR += gsl
     SUBDIR += hexcalc
+    SUBDIR += hipmcl
     SUBDIR += hs-Agda
     SUBDIR += hs-Agda-stdlib
     SUBDIR += hs-NumInstances
@@ -378,7 +378,6 @@
     SUBDIR += mpir
     SUBDIR += mppp
     SUBDIR += mprime
-    SUBDIR += msieve
     SUBDIR += mtrxmath
     SUBDIR += multichoose
     SUBDIR += mumps
@@ -402,7 +401,6 @@
     SUBDIR += octave
     SUBDIR += octave-forge
     SUBDIR += octave-forge-actuarial
-    SUBDIR += octave-forge-audio
     SUBDIR += octave-forge-base
     SUBDIR += octave-forge-bim
     SUBDIR += octave-forge-bioinfo
@@ -417,11 +415,9 @@
     SUBDIR += octave-forge-divand
     SUBDIR += octave-forge-doctest
     SUBDIR += octave-forge-econometrics
-    SUBDIR += octave-forge-engine
     SUBDIR += octave-forge-fenv
     SUBDIR += octave-forge-financial
     SUBDIR += octave-forge-fits
-    SUBDIR += octave-forge-fl-core
     SUBDIR += octave-forge-fpl
     SUBDIR += octave-forge-fuzzy-logic-toolkit
     SUBDIR += octave-forge-ga
@@ -463,7 +459,6 @@
     SUBDIR += octave-forge-optiminterp
     SUBDIR += octave-forge-outliers
     SUBDIR += octave-forge-parallel
-    SUBDIR += octave-forge-pdb
     SUBDIR += octave-forge-plot
     SUBDIR += octave-forge-quaternion
     SUBDIR += octave-forge-queueing
@@ -691,6 +686,7 @@
     SUBDIR += py-CyLP
     SUBDIR += py-Diofant
     SUBDIR += py-GridDataFormats
+    SUBDIR += py-MutatorMath
     SUBDIR += py-PuLP
     SUBDIR += py-PyMetis
     SUBDIR += py-PySCIPOpt
@@ -755,6 +751,7 @@
     SUBDIR += py-pyFFTW
     SUBDIR += py-pyasp
     SUBDIR += py-pybloom
+    SUBDIR += py-pyclipper
     SUBDIR += py-pycosat
     SUBDIR += py-pygsl
     SUBDIR += py-pygslodeiv2
@@ -862,7 +859,6 @@
     SUBDIR += sundials
     SUBDIR += superlu
     SUBDIR += superlu_mt
-    SUBDIR += surf
     SUBDIR += symmetrica
     SUBDIR += tablix
     SUBDIR += taucs

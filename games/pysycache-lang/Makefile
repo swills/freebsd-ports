@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/pysycache-lang/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/pysycache-lang/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lang
 PORTVERSION=	2.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games python
 MASTER_SITES=	http://download.gna.org/py4childs/pysycache/v${PORTVERSION}/
 PKGNAMEPREFIX=	pysycache-

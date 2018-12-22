@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/apitran/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/comms/apitran/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	apitran
 PORTVERSION=	g20180926
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms astro hamradio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

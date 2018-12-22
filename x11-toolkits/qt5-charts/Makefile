@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/qt5-charts/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-charts/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	charts
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

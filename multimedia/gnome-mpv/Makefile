@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/gnome-mpv/Makefile 484946 2018-11-14 21:39:16Z jbeich $
+# $FreeBSD: head/multimedia/gnome-mpv/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnome-mpv
 PORTVERSION=	0.15
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/v${PORTVERSION}/
 

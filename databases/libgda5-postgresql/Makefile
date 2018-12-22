@@ -1,7 +1,7 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/databases/libgda5-postgresql/Makefile 393607 2015-08-05 19:13:24Z kwm $
+# $FreeBSD: head/databases/libgda5-postgresql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	databases gnome
 PKGNAMESUFFIX=	5-postgresql
 

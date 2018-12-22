@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/rmf/Makefile 486045 2018-11-27 18:23:21Z yuri $
+# $FreeBSD: head/science/rmf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rmf
 DISTVERSION=	1.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	science graphics
 
 MAINTAINER=	yuri@FreeBSD.org

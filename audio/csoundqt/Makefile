@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/csoundqt/Makefile 485221 2018-11-18 09:35:41Z yuri $
+# $FreeBSD: head/audio/csoundqt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	CsoundQt
 DISTVERSION=	0.9.5
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/namd/Makefile 479364 2018-09-10 06:59:36Z yuri $
+# $FreeBSD: head/science/namd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	namd
 DISTVERSION=	2.12
+PORTREVISION=	1
 CATEGORIES=	science
 DISTNAME=	${PORTNAME:tu}_${DISTVERSION}_Source
 

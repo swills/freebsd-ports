@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/fusefs-simple-mtpfs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/sysutils/fusefs-simple-mtpfs/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	simple-mtpfs
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	0.3.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
 

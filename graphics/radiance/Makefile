@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/radiance/Makefile 486974 2018-12-08 18:40:27Z yuri $
+# $FreeBSD: head/graphics/radiance/Makefile 487803 2018-12-19 17:15:23Z yuri $
 
 PORTNAME=	radiance
 DISTVERSION=	0.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 PKGNAMESUFFIX=	-video
 
@@ -29,5 +29,8 @@ USE_QT=		core declarative graphicaleffects gui network  quickcontrols widgets \
 USE_GL=		gl glu
 
 CMAKE_ARGS=	-DRADIANCE_SYSTEM_RESOURCES:STRING=${DATADIR}/
+
+post-patch:
+	@${REINPLACE_CMD} '/-march=native/d' ${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

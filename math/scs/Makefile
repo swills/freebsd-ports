@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/scs/Makefile 485283 2018-11-18 22:10:05Z yuri $
+# $FreeBSD: head/math/scs/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scs
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0.2-22
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-gb03e156
 CATEGORIES=	math
 

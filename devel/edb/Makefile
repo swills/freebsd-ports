@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/edb/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/edb/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	edb
 PORTVERSION=	0.9.18
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel
 MASTER_SITES=	http://codef00.com/projects/
 DISTNAME=	debugger-${PORTVERSION}

@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/astro/libosmpbf/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/astro/libosmpbf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libosmpbf
 PORTVERSION=	1.3.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	astro geography devel
 
 MAINTAINER=	amdmi3@FreeBSD.org

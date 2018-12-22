@@ -1,9 +1,9 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-assistant/Makefile 487079 2018-12-09 20:11:52Z adridg $
+# $FreeBSD: head/devel/qt4-assistant/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	assistant
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt4-
 

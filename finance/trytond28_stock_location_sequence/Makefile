@@ -1,8 +1,9 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_stock_location_sequence/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/finance/trytond28_stock_location_sequence/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	trytond28_stock_location_sequence
 PORTVERSION=	2.8.1
+PORTREVISION=	1
 CATEGORIES=	finance python
 MASTER_SITES=	CHEESESHOP \
 		http://downloads.tryton.org/${PORTVERSION:R}/

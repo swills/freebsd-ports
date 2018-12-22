@@ -1,9 +1,9 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/mail/trojita/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/mail/trojita/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	trojita
 PORTVERSION=	0.7
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/src/
 

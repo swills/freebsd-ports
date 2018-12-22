@@ -1,10 +1,13 @@
-# $FreeBSD: head/x11-toolkits/py-qt5-quickwidgets/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/x11-toolkits/py-qt5-quickwidgets/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	quickwidgets
 CATEGORIES=	x11-toolkits devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtQuickWidgets module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 USES=		python pyqt:5 qt:5
 USE_GL=		gl

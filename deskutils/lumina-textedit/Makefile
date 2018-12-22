@@ -1,9 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-textedit/Makefile 483485 2018-10-30 12:26:42Z linimon $
+# $FreeBSD: head/deskutils/lumina-textedit/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lumina-textedit
 PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com

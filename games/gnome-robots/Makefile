@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/gnome-robots/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/games/gnome-robots/Makefile 487548 2018-12-15 21:43:49Z kwm $
 
 PORTNAME=	gnome-robots
 PORTVERSION=	3.22.3
@@ -31,5 +31,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share
 
 GLIB_SCHEMAS=	org.gnome.robots.gschema.xml
+
+post-install:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/games
 
 .include <bsd.port.mk>

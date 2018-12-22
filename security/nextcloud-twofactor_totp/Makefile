@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-twofactor_totp/Makefile 487173 2018-12-10 14:52:40Z brnrd $
+# $FreeBSD: head/security/nextcloud-twofactor_totp/Makefile 487506 2018-12-15 11:50:31Z brnrd $
 
 PORTNAME=	twofactor_totp
-PORTVERSION=	2.0.1
+PORTVERSION=	2.1.0
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
 PKGNAMEPREFIX=	nextcloud-

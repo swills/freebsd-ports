@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/s/Makefile 482024 2018-10-14 05:29:32Z yuri $
+# $FreeBSD: head/www/s/Makefile 487483 2018-12-15 05:12:02Z yuri $
 
 PORTNAME=	s
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.5.13
+DISTVERSION=	0.5.14
 CATEGORIES=	www
 
 MAINTAINER=	yuri@FreeBSD.org

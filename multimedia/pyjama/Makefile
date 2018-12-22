@@ -1,5 +1,5 @@
 # Created by: Kjell Tore Ullavik <ktullavik@gmail.com>
-# $FreeBSD: head/multimedia/pyjama/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/multimedia/pyjama/Makefile 488009 2018-12-21 14:43:06Z tobik $
 
 PORTNAME=	pyjama
 PORTVERSION=	0.3.0.1
@@ -13,6 +13,10 @@ COMMENT=	Frontend to the Jamendo music network
 
 LICENSE=	GPLv2 CC-BY-NC-SA-3.0 PD
 LICENSE_COMB=	multi
+
+BROKEN=		Fetching Jamendo database dump is broken
+DEPRECATED=	Unmaintained upstream
+EXPIRATION_DATE=	2019-01-31
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lxml>=2.2:devel/py-lxml@${PY_FLAVOR} \

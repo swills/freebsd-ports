@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/ncmpcpp/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/audio/ncmpcpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ncmpcpp
 DISTVERSION=	0.8.2
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://ncmpcpp.rybczak.net/stable/
 
@@ -18,8 +18,6 @@ LIB_DEPENDS=	libmpdclient.so:audio/libmpdclient \
 		libicuuc.so:devel/icu \
 		libboost_filesystem.so:devel/boost-libs \
 		libcurl.so:ftp/curl
-
-BROKEN_powerpc64=	fails to compile: tags.cpp: undefined reference to TagLib::String::to8Bit
 
 USES=		compiler:c++14-lang iconv libtool localbase ncurses:port pkgconfig readline tar:bzip2
 GNU_CONFIGURE=	yes

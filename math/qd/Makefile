@@ -1,9 +1,9 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/qd/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/qd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qd
 PORTVERSION=	2.3.7
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math
 MASTER_SITES=	http://www.cs.berkeley.edu/~yozo/software/
 

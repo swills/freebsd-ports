@@ -1,9 +1,10 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/powa-archivist/Makefile 485502 2018-11-21 08:37:32Z mat $
+# $FreeBSD: head/databases/powa-archivist/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	powa-archivist
 DISTVERSIONPREFIX=	REL_
 DISTVERSION=	3_2_0
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	girgen@FreeBSD.org

@@ -1,9 +1,8 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-fbsd11.2-kmod/Makefile 487117 2018-12-10 03:02:11Z jmd $
+# $FreeBSD: head/graphics/drm-fbsd11.2-kmod/Makefile 487275 2018-12-12 02:26:56Z jmd $
 
 PORTNAME=	drm-fbsd11.2-kmod
-PORTVERSION=	g20180822
-PORTREVISION=	1
+PORTVERSION=	4.11g20181210
 CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -26,13 +25,10 @@ USES=		kmod uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-drm
-GH_TAGNAME=	ef4d156
+GH_TAGNAME=	b2e7de5
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200000 && ${OSVERSION} < 1200045
-IGNORE=		not supported on older CURRENT, no kernel support
-.endif
 .if ${OPSYS} != FreeBSD
 IGNORE=		not supported on anything but FreeBSD (missing linuxkpi functionality)
 .endif

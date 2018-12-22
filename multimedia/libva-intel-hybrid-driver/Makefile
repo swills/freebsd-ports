@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/libva-intel-hybrid-driver/Makefile 484268 2018-11-06 00:25:08Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-hybrid-driver/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	intel-hybrid-driver
 DISTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	multimedia
 PKGNAMEPREFIX=	libva-
 

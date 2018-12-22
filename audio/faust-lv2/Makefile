@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/faust-lv2/Makefile 476955 2018-08-12 04:02:04Z linimon $
+# $FreeBSD: head/audio/faust-lv2/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	faust
 DISTVERSION=	1.4.20180118
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 PKGNAMESUFFIX=	-lv2

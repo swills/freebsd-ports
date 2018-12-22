@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/analitza/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/math/analitza/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	analitza
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

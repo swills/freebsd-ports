@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/squid-devel/Makefile 478711 2018-09-01 17:05:47Z antoine $
+# $FreeBSD: head/www/squid-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	squid
 PORTVERSION=	4.0.25
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.squid-cache.org/Versions/v4/ \
 		http://www2.us.squid-cache.org/Versions/v4/ \

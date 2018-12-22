@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 486677 2018-12-05 15:46:02Z rene $
+# $FreeBSD: head/sysutils/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = System utilities
@@ -98,10 +98,8 @@
     SUBDIR += bareos16-server
     SUBDIR += bareos16-traymonitor
     SUBDIR += batmon
-    SUBDIR += battfink
     SUBDIR += battmond
     SUBDIR += battray
-    SUBDIR += bbapm
     SUBDIR += bbcp
     SUBDIR += bchunk
     SUBDIR += beadm
@@ -193,7 +191,6 @@
     SUBDIR += cmockery2
     SUBDIR += cmogstored
     SUBDIR += cmospwd
-    SUBDIR += cog
     SUBDIR += colorize
     SUBDIR += condor
     SUBDIR += confctl
@@ -386,7 +383,6 @@
     SUBDIR += fusefs-fusepak
     SUBDIR += fusefs-fusexmp_fh
     SUBDIR += fusefs-gitfs
-    SUBDIR += fusefs-gnome-vfs
     SUBDIR += fusefs-gstfs
     SUBDIR += fusefs-gunzip
     SUBDIR += fusefs-hfsfuse
@@ -416,14 +412,11 @@
     SUBDIR += fvcool
     SUBDIR += fwup
     SUBDIR += gaffitter
-    SUBDIR += gai-leds
     SUBDIR += ganglia-monitor-core
     SUBDIR += ganglia-webfrontend
     SUBDIR += gapcmon
     SUBDIR += garcon
     SUBDIR += gather
-    SUBDIR += gcdmaster
-    SUBDIR += gcombust
     SUBDIR += gconf-editor
     SUBDIR += gdisk
     SUBDIR += gdmap
@@ -443,18 +436,18 @@
     SUBDIR += gksu
     SUBDIR += glogg
     SUBDIR += gnome-control-center
-    SUBDIR += gnome-device-manager
     SUBDIR += gnome-mount
-    SUBDIR += gnome-pkgview
     SUBDIR += gnome-power-manager
     SUBDIR += gnome-schedule
     SUBDIR += gnome-settings-daemon
     SUBDIR += gnome-system-monitor
     SUBDIR += gnome_subr
     SUBDIR += goaccess
+    SUBDIR += goawk
     SUBDIR += gomplate
     SUBDIR += google-compute-engine-oslogin
     SUBDIR += goss
+    SUBDIR += gotop
     SUBDIR += gpart
     SUBDIR += gpte
     SUBDIR += graffer
@@ -735,7 +728,6 @@
     SUBDIR += moosefs3-netdump
     SUBDIR += moreutils
     SUBDIR += most
-    SUBDIR += mount.app
     SUBDIR += mountsmb2
     SUBDIR += mpiexec
     SUBDIR += mping
@@ -921,6 +913,7 @@
     SUBDIR += pick
     SUBDIR += pidof
     SUBDIR += pipemeter
+    SUBDIR += plasma-pass
     SUBDIR += plasma5-discover
     SUBDIR += plasma5-drkonqi
     SUBDIR += plasma5-kde-cli-tools
@@ -1279,6 +1272,7 @@
     SUBDIR += syslog-ng315
     SUBDIR += syslog-ng317
     SUBDIR += syslog-ng318
+    SUBDIR += syslog-ng319
     SUBDIR += syslog-ng36
     SUBDIR += syslog-ng37
     SUBDIR += syslog-ng39
@@ -1444,7 +1438,6 @@
     SUBDIR += wmbsdbatt
     SUBDIR += wmcpuload
     SUBDIR += wmcube
-    SUBDIR += wmcube-gdk
     SUBDIR += wmdiskmon
     SUBDIR += wmfire
     SUBDIR += wmflame
@@ -1483,7 +1476,6 @@
     SUBDIR += xfsprogs
     SUBDIR += xin
     SUBDIR += xjobs
-    SUBDIR += xlogmaster
     SUBDIR += xmbmon
     SUBDIR += xorriso
     SUBDIR += xosview

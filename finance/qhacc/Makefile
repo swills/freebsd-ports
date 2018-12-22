@@ -1,9 +1,9 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/finance/qhacc/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/finance/qhacc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qhacc
 PORTVERSION=	4.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	finance
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

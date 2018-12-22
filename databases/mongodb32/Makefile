@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/databases/mongodb32/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/databases/mongodb32/Makefile 487256 2018-12-11 20:32:05Z rene $
 
 PORTNAME=	mongodb32
 PORTVERSION=	3.2.11
@@ -17,6 +17,9 @@ COMMENT=	Distributed document-oriented "NoSQL" database
 # mongodb is AGPLv3, C++ driver is APACHE20
 LICENSE=	AGPLv3 APACHE20
 LICENSE_COMB=	multi
+
+DEPRECATED=	EOL upstream since September 2018
+EXPIRATION_DATE=2018-12-31
 
 BROKEN_SSL=	openssl111
 BROKEN_SSL_REASON_openssl111=	variable has incomplete type 'EVP_MD_CTX' (aka 'evp_md_ctx_st')

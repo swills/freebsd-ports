@@ -1,8 +1,9 @@
 # Created by: dikshie
-# $FreeBSD: head/math/py-networkx/Makefile 477632 2018-08-20 07:39:32Z yuri $
+# $FreeBSD: head/math/py-networkx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	networkx
 DISTVERSION=	2.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

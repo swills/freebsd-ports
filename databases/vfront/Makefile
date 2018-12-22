@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/vfront/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/databases/vfront/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vfront
 DISTVERSION=	0.96c
+PORTREVISION=	1
 CATEGORIES=	databases www
 MASTER_SITES=	SF/vfront/vfront/vfront-${DISTVERSION}
 

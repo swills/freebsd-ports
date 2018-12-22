@@ -1,11 +1,11 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/x11/sxhkd/Makefile 467286 2018-04-14 06:27:13Z riggs $
+# $FreeBSD: head/x11/sxhkd/Makefile 487513 2018-12-15 14:35:19Z joneum $
 
 PORTNAME=	sxhkd
 PORTVERSION=	0.5.9
 CATEGORIES=	x11
 
-MAINTAINER=	gor@clogic.com.ua
+MAINTAINER=	o.hushchenkov@gmail.com
 COMMENT=	Simple X hotkey daemon
 
 LICENSE=	BSD2CLAUSE

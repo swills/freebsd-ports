@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/deal.ii/Makefile 481957 2018-10-13 05:56:12Z yuri $
+# $FreeBSD: head/math/deal.ii/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	deal.II
 DISTVERSIONPREFIX=	v
 DISTVERSION=	9.0.1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

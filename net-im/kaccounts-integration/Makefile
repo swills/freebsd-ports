@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/kaccounts-integration/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+# $FreeBSD: head/net-im/kaccounts-integration/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	kaccounts-integration
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

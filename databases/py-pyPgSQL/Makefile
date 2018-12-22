@@ -1,9 +1,9 @@
 # Created by: Gerhard Haering <gerhard.haering@gmx.de>
-# $FreeBSD: head/databases/py-pyPgSQL/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/databases/py-pyPgSQL/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyPgSQL
 PORTVERSION=	2.5.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	databases python
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

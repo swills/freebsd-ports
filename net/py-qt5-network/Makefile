@@ -1,10 +1,13 @@
-# $FreeBSD: head/net/py-qt5-network/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/net/py-qt5-network/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	network
 CATEGORIES=	net devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtNetwork module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtNetwork
 PYQT_DIST=	yes

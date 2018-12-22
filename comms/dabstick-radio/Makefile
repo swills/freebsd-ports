@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/comms/dabstick-radio/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/comms/dabstick-radio/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dabstick-radio
 PORTVERSION=	0.96
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	comms audio hamradio
 MASTER_SITES=	http://www.sdr-j.tk/ \
 		LOCAL/nox/

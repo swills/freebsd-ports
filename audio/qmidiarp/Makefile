@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/qmidiarp/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/qmidiarp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qmidiarp
 DISTVERSIONPREFIX=	qmidiarp-
 DISTVERSION=	0.6.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/chilitags/Makefile 483511 2018-10-30 19:02:48Z linimon $
+# $FreeBSD: head/multimedia/chilitags/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	chilitags
 DISTVERSION=	2.0.0-169
 DISTVERSIONSUFFIX=	-g0d9854f
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@FreeBSD.org

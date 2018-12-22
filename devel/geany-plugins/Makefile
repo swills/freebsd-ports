@@ -1,9 +1,8 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/devel/geany-plugins/Makefile 487062 2018-12-09 17:29:13Z madpilot $
+# $FreeBSD: head/devel/geany-plugins/Makefile 487752 2018-12-18 14:34:34Z madpilot $
 
 PORTNAME=	geany-plugins
 PORTVERSION=	${GEANY_VER}
-PORTREVISION=	1
 CATEGORIES=	devel
 DISTFILES=	# none
 

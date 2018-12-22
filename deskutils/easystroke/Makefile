@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <tobias.kortkamp@gmail.com>
-# $FreeBSD: head/deskutils/easystroke/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/deskutils/easystroke/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	easystroke
 PORTVERSION=	0.6.0
-PORTREVISION=	14
+PORTREVISION=	16
 CATEGORIES=	deskutils
 MASTER_SITES=	SF
 

@@ -1,17 +1,18 @@
-# $FreeBSD: head/biology/diamond/Makefile 469925 2018-05-14 17:17:11Z jrm $
+# $FreeBSD: head/biology/diamond/Makefile 487707 2018-12-17 19:12:38Z jrm $
 
 PORTNAME=	diamond
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.22
+DISTVERSION=	0.9.23-6
+DISTVERSIONSUFFIX=	-gfecab3e
 CATEGORIES=	biology
 
 MAINTAINER=	jrm@FreeBSD.org
 COMMENT=	BLAST-compatible local sequence aligner
 
-LICENSE=	AGPLv3
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	amd64 i386
+ONLY_FOR_ARCHS=	amd64
 
 USES=		cmake:outsource
 USE_GITHUB=	yes

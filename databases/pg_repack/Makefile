@@ -1,8 +1,9 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_repack/Makefile 476359 2018-08-04 14:20:23Z farrokhi $
+# $FreeBSD: head/databases/pg_repack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pg_repack
 PORTVERSION=	1.4.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	ver_
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-

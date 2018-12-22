@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/plasma5-kgamma5/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/x11/plasma5-kgamma5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kgamma5
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

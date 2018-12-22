@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/openjdk8/Makefile 486983 2018-12-08 19:09:28Z glewis $
+# $FreeBSD: head/java/openjdk8/Makefile 487219 2018-12-11 03:23:57Z glewis $
 
 PORTNAME=	openjdk
 PORTVERSION=	${JDK_MAJOR_VERSION}.${JDK_UPDATE_VERSION}.${JDK_BUILD_NUMBER:S/^0//}
@@ -362,6 +362,7 @@ CONFIGURE_ENV+=	LIBCXX="-lc++"
 
 # GCC is broken with PCH: https://lists.freebsd.org/pipermail/svn-src-all/2015-March/101722.html
 .if ${COMPILER_TYPE} == gcc
+CONFIGURE_ARGS+=	--with-toolchain-type=gcc
 .if ${ARCH} == "powerpc64"
 MAKE_ARGS+=	USE_PRECOMPILED_HEADER=1
 .else

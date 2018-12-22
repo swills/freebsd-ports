@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/okteta/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/devel/okteta/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	okteta
 DISTVERSION=	0.25.3
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/src

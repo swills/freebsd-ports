@@ -1,7 +1,7 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/cpp-xmms2/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/audio/cpp-xmms2/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	audio
 PKGNAMEPREFIX=	cpp-
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/liblinphone/Makefile 482777 2018-10-22 19:23:52Z tijl $
+# $FreeBSD: head/net/liblinphone/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	linphone
 PORTVERSION=	3.12.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://www.linphone.org/releases/sources/linphone/
 PKGNAMEPREFIX=	lib

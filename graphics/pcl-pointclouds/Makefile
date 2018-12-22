@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 486470 2018-12-02 16:51:12Z yuri $
+# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	pcl
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	1.9.1
+PORTREVISION=	1
 CATEGORIES=	graphics math
 PKGNAMESUFFIX=	-pointclouds
 

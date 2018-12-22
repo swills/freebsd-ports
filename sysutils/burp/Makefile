@@ -1,9 +1,9 @@
 # Created by: Loic Pefferkorn <loic-freebsd@loicp.eu>
-# $FreeBSD: head/sysutils/burp/Makefile 476181 2018-08-01 13:39:36Z tobik $
+# $FreeBSD: head/sysutils/burp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	burp
 PORTVERSION=	1.4.40
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,9 +1,8 @@
-# $FreeBSD: head/audio/padthv1-lv2/Makefile 485638 2018-11-23 05:41:42Z yuri $
+# $FreeBSD: head/audio/padthv1-lv2/Makefile 487410 2018-12-14 08:09:22Z yuri $
 
 PORTNAME=	padthv1
 DISTVERSIONPREFIX=	${PORTNAME}_
-DISTVERSION=	0_9_3-7
-DISTVERSIONSUFFIX=	-g281c5b0
+DISTVERSION=	0_9_4
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

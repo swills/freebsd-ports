@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/vtk8/Makefile 486738 2018-12-06 07:28:23Z yuri $
+# $FreeBSD: head/math/vtk8/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vtk
 DISTVERSION=	8.1.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math graphics
 MASTER_SITES=	http://www.vtk.org/files/release/${VTK_SHORT_VER}/
 PKGNAMESUFFIX=	8

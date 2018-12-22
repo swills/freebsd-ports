@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/advancemame/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/emulators/advancemame/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	advancemame
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	https://github.com/amadvance/advancemame/releases/download/${DISTNAME}/
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/osi/Makefile 487144 2018-12-10 09:52:11Z yuri $
+# $FreeBSD: head/math/osi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Osi
 DISTVERSION=	0.107.9
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://www.coin-or.org/download/source/${PORTNAME}/
 PKGNAMEPREFIX=	coin-or-

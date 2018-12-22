@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/fretsonfire/Makefile 475617 2018-07-28 23:23:46Z yuri $
+# $FreeBSD: head/games/fretsonfire/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fretsonfire
 PORTVERSION=	1.3.110
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games python
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME_UCASE}-${PORTVERSION}

@@ -1,9 +1,9 @@
 # Created by: Euan Thoms <euan@potensol.com>
-# $FreeBSD: head/net/opensips/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/net/opensips/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		opensips
 DISTVERSION=		2.2.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=		net
 MASTER_SITES=		http://opensips.org/pub/opensips/${PORTVERSION}/
 

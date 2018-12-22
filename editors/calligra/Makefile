@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/calligra/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/editors/calligra/Makefile 487596 2018-12-16 15:10:42Z tcberner $
 
 PORTNAME=	calligra
 DISTVERSION=	3.1.0
-PORTREVISION=	5
+PORTREVISION=	8
 CATEGORIES=	editors kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}

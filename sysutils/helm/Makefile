@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/helm/Makefile 480706 2018-09-25 22:37:02Z danilo $
+# $FreeBSD: head/sysutils/helm/Makefile 487387 2018-12-13 21:07:48Z danilo $
 
 PORTNAME=	helm
-PORTVERSION=	2.11.0
+PORTVERSION=	2.12.0
 CATEGORIES=	sysutils
 MASTER_SITES=	LOCAL/danilo
 
@@ -30,7 +30,7 @@ do-build:
 	cd ${WRKDIR}/src/k8s.io/helm/cmd/${cmd} ; \
 		GOPATH=${WRKDIR} go build \
 		-ldflags="-X k8s.io/helm/pkg/version.Version=v${PORTVERSION} \
-		-X k8s.io/helm/pkg/version.GitCommit=2e55dbe1fdb5fdb96b75ff144a339489417b146b \
+		-X k8s.io/helm/pkg/version.GitCommit=d325d2a9c179b33af1a024cdb5a4472b6288016a \
 		-X k8s.io/helm/pkg/version.BuildMetadata="
 .endfor
 

@@ -1,9 +1,9 @@
 # Created by: Janni
-# $FreeBSD: head/devel/eris/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/eris/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	eris
 PORTVERSION=	1.3.23
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	SF/worldforge/Eris%201.4%20%28client%20lib%29/${PORTVERSION}/
 

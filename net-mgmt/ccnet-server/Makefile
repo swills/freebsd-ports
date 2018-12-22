@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/ccnet-server/Makefile 464709 2018-03-16 15:22:10Z sunpoet $
+# $FreeBSD: head/net-mgmt/ccnet-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ccnet-server
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAFILE_VER}
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-server
 CATEGORIES=	net-mgmt devel
 

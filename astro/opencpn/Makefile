@@ -1,9 +1,9 @@
-# $FreeBSD: head/astro/opencpn/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/astro/opencpn/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	opencpn
 PORTVERSION=	4.4.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	astro geography
 
 MAINTAINER=	ml@netfence.it

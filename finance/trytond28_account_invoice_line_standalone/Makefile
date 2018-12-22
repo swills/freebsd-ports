@@ -1,9 +1,9 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_account_invoice_line_standalone/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/finance/trytond28_account_invoice_line_standalone/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	trytond28_account_invoice_line_standalone
 PORTVERSION=	2.8.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	finance python
 MASTER_SITES=	https://pypi.python.org/packages/source/t/trytond_account_invoice_line_standalone/ \
 		http://downloads.tryton.org/${PORTVERSION:R}/

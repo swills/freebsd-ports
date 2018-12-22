@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/archivers/pear-File_Archive/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/archivers/pear-File_Archive/Makefile 487889 2018-12-20 16:18:08Z joneum $
 
 PORTNAME=	File_Archive
 PORTVERSION=	1.5.5
@@ -8,10 +8,13 @@ CATEGORIES=	archivers www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR class to manipulate tar, gz, tgz, bz2, tbz, zip, ar (deb) files
 
+LICENSE=	LGPL3
+
 BUILD_DEPENDS=	${PEARDIR}/MIME/Type.php:mail/pear-MIME_Type@${PHP_FLAVOR}
 RUN_DEPENDS=	${PEARDIR}/MIME/Type.php:mail/pear-MIME_Type@${PHP_FLAVOR}
 
 USES=		pear php
+
 NO_ARCH=	yes
 
 USE_PHP=	bz2 pcre zlib

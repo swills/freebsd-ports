@@ -1,8 +1,9 @@
-# $FreeBSD: head/editors/ghostwriter/Makefile 487135 2018-12-10 07:55:52Z tobik $
+# $FreeBSD: head/editors/ghostwriter/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ghostwriter
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.7.4
+PORTREVISION=	1
 CATEGORIES=	editors
 
 MAINTAINER=	tobik@FreeBSD.org

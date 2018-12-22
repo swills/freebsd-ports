@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/azpainter/Makefile 484875 2018-11-13 14:46:41Z danfe $
+# $FreeBSD: head/graphics/azpainter/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	azpainter
 PORTVERSION=	2.1.3
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	OSDN/${PORTNAME}/70132
 

@@ -1,9 +1,9 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/devel/embb/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/embb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	embb
 PORTVERSION=	1.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-algopy/Makefile 467660 2018-04-17 22:24:52Z yuri $
+# $FreeBSD: head/math/py-algopy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	algopy
 DISTVERSION=	0.5.7
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

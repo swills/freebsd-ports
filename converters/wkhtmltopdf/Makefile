@@ -1,10 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/converters/wkhtmltopdf/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/converters/wkhtmltopdf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	wkhtmltopdf
 PORTVERSION=	0.12.5
-PORTREVISION=	1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	converters
 
 MAINTAINER=	pi@FreeBSD.org

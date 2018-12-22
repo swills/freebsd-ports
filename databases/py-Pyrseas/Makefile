@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/py-Pyrseas/Makefile 473744 2018-07-02 14:28:58Z mat $
+# $FreeBSD: head/databases/py-Pyrseas/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Pyrseas
 PORTVERSION=	0.8.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

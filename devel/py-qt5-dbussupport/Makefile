@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-dbussupport/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/py-qt5-dbussupport/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	dbussupport
 CATEGORIES=	devel python
@@ -6,8 +6,10 @@ CATEGORIES=	devel python
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt event loop support for dbus-python
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR} \
+		${PY_ENUM34}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR} \
+		${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtCore
 PYQT_DIST=	yes

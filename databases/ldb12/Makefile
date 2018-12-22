@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/ldb12/Makefile 480451 2018-09-23 04:38:22Z linimon $
+# $FreeBSD: head/databases/ldb12/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		ldb
 PORTVERSION=		1.2.3
-PORTREVISION=		0
+PORTREVISION=		1
 PORTEPOCH=		0
 CATEGORIES=		databases
 MASTER_SITES=		SAMBA
@@ -133,7 +133,7 @@ BUILD_DEPENDS+=		${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/do
 			xsltproc:textproc/libxslt
 .endif
 # No fancy color error messages
-.if ${COMPILER_TYPE} == "clang"
+.if ${CHOSEN_COMPILER_TYPE} == clang
 CFLAGS+=		-fno-color-diagnostics
 .endif
 CONFIGURE_ENV+=		NOCOLOR=yes

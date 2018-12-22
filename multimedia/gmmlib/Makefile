@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/gmmlib/Makefile 485571 2018-11-22 00:08:23Z jbeich $
+# $FreeBSD: head/multimedia/gmmlib/Makefile 487475 2018-12-14 23:41:26Z jbeich $
 
 PORTNAME=	gmmlib
 DISTVERSIONPREFIX=	intel-${PORTNAME}-
-DISTVERSION=	18.3.0
+DISTVERSION=	18.4.1
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org

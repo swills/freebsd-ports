@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/pc-mixer/Makefile 484205 2018-11-05 17:25:00Z linimon $
+# $FreeBSD: head/audio/pc-mixer/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pc-mixer
 PORTVERSION=	20171212
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	jmaloney@ixsystems.com

@@ -1,8 +1,9 @@
-# $FreeBSD: head/databases/pgsanity/Makefile 465138 2018-03-20 23:22:30Z dbaio $
+# $FreeBSD: head/databases/pgsanity/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgsanity
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2.9
+PORTREVISION=	1
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

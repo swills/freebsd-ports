@@ -1,10 +1,10 @@
 # Created by: Alexander Nedotsukov <bland@mail.ru>
-# $FreeBSD: head/x11/libgnomemm26/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11/libgnomemm26/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #   $MCom: ports/x11/libgnomemm26/Makefile,v 1.24 2010/03/30 13:34:10 avl Exp $
 
 PORTNAME=	libgnomemm
 PORTVERSION=	2.30.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

@@ -1,10 +1,10 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-lib/Makefile 478097 2018-08-26 04:33:32Z fluffy $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-lib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	eiskaltdcpp
 PORTVERSION=	2.2.10
 DISTVERSIONPREFIX=	v
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX?=	-lib
 

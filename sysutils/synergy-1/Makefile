@@ -1,8 +1,9 @@
-# $FreeBSD: head/sysutils/synergy-1/Makefile 484275 2018-11-06 05:19:29Z yuri $
+# $FreeBSD: head/sysutils/synergy-1/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	synergy-1
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.10.1
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	sysutils
 

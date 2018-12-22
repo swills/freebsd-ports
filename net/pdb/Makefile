@@ -1,5 +1,5 @@
 # Created by: gnn
-# $FreeBSD: head/net/pdb/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/pdb/Makefile 487995 2018-12-21 13:44:17Z rene $
 
 PORTNAME=	pdb
 PORTVERSION=	0.1
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	gnn@FreeBSD.org
 COMMENT=	Packet Debugger
+
+DEPRECATED=	Depends on expired net/py-pcs
+EXPIRATION_DATE=2019-02-01
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pcs/__init__.py:net/py-pcs@${PY_FLAVOR}
 

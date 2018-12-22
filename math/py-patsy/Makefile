@@ -1,8 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-patsy/Makefile 483334 2018-10-28 19:57:09Z sunpoet $
+# $FreeBSD: head/math/py-patsy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	patsy
 PORTVERSION=	0.5.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

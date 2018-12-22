@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-rngtools/Makefile 470193 2018-05-17 03:34:54Z tota $
+# $FreeBSD: head/devel/R-cran-rngtools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rngtools
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

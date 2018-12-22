@@ -1,8 +1,8 @@
 # Created by: Simon Olofsson <simon@olofsson.de>
-# $FreeBSD: head/devel/hub/Makefile 486672 2018-12-05 14:09:12Z egypcio $
+# $FreeBSD: head/devel/hub/Makefile 487669 2018-12-17 09:55:07Z egypcio $
 
 PORTNAME=	hub
-PORTVERSION=	2.6.0
+PORTVERSION=	2.6.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel sysutils
 

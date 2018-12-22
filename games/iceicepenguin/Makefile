@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/iceicepenguin/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/iceicepenguin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	iceicepenguin
 PORTVERSION=	1.5.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	games python
 MASTER_SITES=	SF/${PORTNAME}/Default/Ice%20Ice%20Penguin/ \
 		SF/nemysisfreebsdp/games/:icons

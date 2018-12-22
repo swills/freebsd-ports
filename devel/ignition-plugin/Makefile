@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/ignition-plugin/Makefile 485477 2018-11-20 19:38:21Z yuri $
+# $FreeBSD: head/devel/ignition-plugin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ignition-plugin
 DISTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

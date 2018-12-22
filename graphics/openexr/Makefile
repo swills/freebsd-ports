@@ -1,8 +1,9 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/graphics/openexr/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/openexr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openexr
 PORTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	graphics devel
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/v${PORTVERSION}/:dist \
 		LOCAL/mandree/:test

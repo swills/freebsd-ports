@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-themes/gtk-oxygen-engine/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/x11-themes/gtk-oxygen-engine/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	oxygen
 PORTVERSION=	1.4.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-themes
 MASTER_SITES=	KDE/stable/${PORTNAME}-gtk2/${PORTVERSION}/src
 PKGNAMEPREFIX=	gtk-

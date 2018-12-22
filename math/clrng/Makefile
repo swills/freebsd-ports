@@ -1,9 +1,10 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/math/clrng/Makefile 484988 2018-11-15 01:33:52Z jmd $
+# $FreeBSD: head/math/clrng/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	clrng
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.0-beta
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org

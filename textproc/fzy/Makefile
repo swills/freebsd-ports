@@ -1,10 +1,10 @@
-# $FreeBSD: head/textproc/fzy/Makefile 481088 2018-10-01 23:59:58Z swills $
+# $FreeBSD: head/textproc/fzy/Makefile 487513 2018-12-15 14:35:19Z joneum $
 
 PORTNAME=	fzy
 DISTVERSION=	1.0
 CATEGORIES=	textproc
 
-MAINTAINER=	gor@clogic.com.ua
+MAINTAINER=	o.hushchenkov@gmail.com
 COMMENT=	Interactive fuzzy text selector for the terminal
 
 LICENSE=	MIT

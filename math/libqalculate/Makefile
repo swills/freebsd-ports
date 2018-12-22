@@ -1,9 +1,9 @@
 # Created by: Sergey Akifyev <asa@agava.com>
-# $FreeBSD: head/math/libqalculate/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/math/libqalculate/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libqalculate
 PORTVERSION=	2.6.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://github.com/Qalculate/${PORTNAME}/releases/download/v${PORTVERSION}/
 

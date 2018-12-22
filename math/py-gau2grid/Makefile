@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/py-gau2grid/Makefile 486582 2018-12-04 05:26:47Z yuri $
+# $FreeBSD: head/math/py-gau2grid/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gau2grid
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.3.0
+PORTREVISION=	1
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

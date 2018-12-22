@@ -1,10 +1,10 @@
 # Created by: wcarey
-# $FreeBSD: head/finance/ledger/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/finance/ledger/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ledger
 PORTVERSION=	3.1.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	12
+PORTREVISION=	14
 CATEGORIES=	finance
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

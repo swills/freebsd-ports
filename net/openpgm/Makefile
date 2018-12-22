@@ -1,10 +1,10 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net/openpgm/Makefile 480652 2018-09-25 08:38:15Z arved $
+# $FreeBSD: head/net/openpgm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openpgm
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	5-2-122
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net devel
 
 MAINTAINER=	ports@FreeBSD.org

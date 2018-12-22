@@ -1,9 +1,9 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/editors/mp/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/editors/mp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mp
 DISTVERSION=	5.2.13
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	http://triptico.com/download/mp/
 

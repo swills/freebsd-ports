@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-openpiv/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-openpiv/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openpiv
 PORTVERSION=	0.20.9
+PORTREVISION=	1
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

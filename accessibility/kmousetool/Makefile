@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/kmousetool/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+# $FreeBSD: head/accessibility/kmousetool/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	kmousetool
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

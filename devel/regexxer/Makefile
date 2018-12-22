@@ -1,9 +1,9 @@
 # Created by: Rui Lopes <rui@ruilopes.com>
-# $FreeBSD: head/devel/regexxer/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/regexxer/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	regexxer
 PORTVERSION=	0.10
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel textproc gnome
 MASTER_SITES=	GNOME
 

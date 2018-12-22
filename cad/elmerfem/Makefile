@@ -1,15 +1,17 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/elmerfem/Makefile 481250 2018-10-04 20:44:52Z yuri $
+# $FreeBSD: head/cad/elmerfem/Makefile 487778 2018-12-18 23:32:36Z antoine $
 
 PORTNAME=	elmerfem
 PORTVERSION=	8.3.20170524
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	cad science
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	ELMER FEM package
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libparpack.so:math/arpack-ng \
 		libmpich.so:net/mpich

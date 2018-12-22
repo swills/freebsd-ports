@@ -1,20 +1,20 @@
 # Created by: Devon H. O'Dell <devon.odell@coyotepoint.com>
-# $FreeBSD: head/comms/ser2net/Makefile 460876 2018-02-04 08:54:30Z danfe $
+# $FreeBSD: head/comms/ser2net/Makefile 487806 2018-12-19 17:32:27Z egypcio $
 
 PORTNAME=	ser2net
-PORTVERSION=	3.5
+PORTVERSION=	3.5.1
 CATEGORIES=	comms net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Allows to access serial ports over IP
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		libtool
 USE_RC_SUBR=	${PORTNAME}
 
-USES=		libtool
 GNU_CONFIGURE=	yes
 
 PORTDOCS=	AUTHORS ChangeLog NEWS README

@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby24/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/lang/ruby24/Makefile 488067 2018-12-22 05:37:10Z linimon $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -97,7 +97,7 @@ CONFIGURE_ARGS+=--disable-dtrace
 LIB_DEPENDS+=	libunwind.so:devel/libunwind
 .endif
 
-.if (${ARCH} == powerpc || ${ARCH} == powerpc64)
+.if ${ARCH:Mpowerpc*}
 USE_GCC=	yes
 .endif
 

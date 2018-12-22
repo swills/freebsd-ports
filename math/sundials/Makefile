@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/sundials/Makefile 481590 2018-10-09 01:26:30Z yuri $
+# $FreeBSD: head/math/sundials/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sundials
 DISTVERSION=	3.1.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	https://computation.llnl.gov/projects/sundials/download/
 

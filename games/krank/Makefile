@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/krank/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/krank/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	krank
 PORTVERSION=	07
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	games
 MASTER_SITES=	SF
 

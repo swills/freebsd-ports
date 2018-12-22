@@ -1,9 +1,9 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/john/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/security/john/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	john
 DISTVERSION=	1.8.0-jumbo-1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	http://www.openwall.com/john/j/ \
 		http://mirrors.kernel.org/openwall/projects/john/${DISTVERSION:C/-.*//}/ \

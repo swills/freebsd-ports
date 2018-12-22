@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-PyOpenGL-accelerate/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/py-PyOpenGL-accelerate/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	PyOpenGL
 PORTVERSION=	3.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

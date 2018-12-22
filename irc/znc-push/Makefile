@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/znc-push/Makefile 484522 2018-11-09 16:08:15Z swills $
+# $FreeBSD: head/irc/znc-push/Makefile 488037 2018-12-22 01:13:16Z linimon $
 
 PORTNAME=	znc-push
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	znc:irc/znc
 LIB_DEPENDS=	libicudata.so:devel/icu
 RUN_DEPENDS=	znc:irc/znc
 
-USES=	gmake ssl
+USES=	compiler:c++11-lang gmake ssl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jreese

@@ -1,8 +1,9 @@
 # Created by: Thomas-Martin Seck <tmseck@netcologne.de>
-# $FreeBSD: head/www/gatling/Makefile 485241 2018-11-18 18:32:57Z linimon $
+# $FreeBSD: head/www/gatling/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gatling
 PORTVERSION=	0.15
+PORTREVISION=	1
 CATEGORIES=	www benchmarks ftp ipv6
 MASTER_SITES=	http://www.fefe.de/gatling/
 

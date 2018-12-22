@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/eric6/Makefile 487220 2018-12-11 05:59:11Z dbn $
 
 PKGNAMESUFFIX=	-${FLAVOR:U:S/_/-/}
 DISTNAME=	${PORTNAME}-nolang-${DISTVERSION}
@@ -37,7 +37,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 PY_FLAVORS=	py${PYTHON_DEFAULT:S/.//} py${PYTHON2_DEFAULT:S/.//} py${PYTHON3_DEFAULT:S/.//}
 .for flavor in ${PY_FLAVORS}
 .  if empty(FLAVORS:Mqt4_${flavor})
-FLAVORS:=	${FLAVORS} qt4_${flavor} qt5_${flavor}
+FLAVORS:=	${FLAVORS} qt5_${flavor} qt4_${flavor}
 .  endif
 .endfor
 .if empty(FLAVOR)

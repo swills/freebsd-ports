@@ -1,7 +1,8 @@
- #$FreeBSD: head/net/libmediawiki/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+ #$FreeBSD: head/net/libmediawiki/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libmediawiki
 DISTVERSION=	5.37.0
+PORTREVISION=	1
 CATEGORIES=	net kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DIST_SUBDIR=	KDE/digikam

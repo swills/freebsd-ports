@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/math77/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/math77/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	math77
 PORTVERSION=	6.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	NL/math
 DISTNAME=	${PORTNAME}

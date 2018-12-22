@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-kded-module/Makefile 481446 2018-10-07 13:43:14Z tcberner $
+# $FreeBSD: head/net-im/ktp-kded-module/Makefile 487624 2018-12-16 19:20:32Z tcberner $
 
 PORTNAME=	ktp-kded-module
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Module for integration of instant messaging into KDE Workspaces
 LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		compiler:c++11-lang cmake:outsource gettext kde:5 qt:5 tar:xz
 USE_KDE=	activities auth codecs completion config configwidgets coreaddons \
 		dbusaddons i18n idletime jobwidgets kcmutils kio notifications \
 		service wallet widgetsaddons

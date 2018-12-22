@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/cpprestsdk/Makefile 479351 2018-09-10 02:06:12Z linimon $
+# $FreeBSD: head/devel/cpprestsdk/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cpprestsdk
 PORTVERSION=	2.9.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	devel
 
 MAINTAINER=	projects@phess.net

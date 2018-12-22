@@ -1,9 +1,9 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/games/monster-masher/Makefile 478530 2018-08-31 08:46:10Z tobik $
+# $FreeBSD: head/games/monster-masher/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	monster
 PORTVERSION=	1.8.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games gnome
 MASTER_SITES=	http://people.iola.dk/olau/monster-masher/source/
 PKGNAMESUFFIX=	-masher

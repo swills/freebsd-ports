@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/animorph/Makefile 483249 2018-10-28 09:36:56Z jbeich $
+# $FreeBSD: head/graphics/animorph/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	animorph
 PORTVERSION=	0.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	SF/makehuman/MakeHuman%20Source/MakeHuman_091
 

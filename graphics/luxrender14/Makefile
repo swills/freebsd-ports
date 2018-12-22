@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/luxrender14/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/luxrender14/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 DISTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 
 LUX_REV=	dfd211d6faa0
 LUXRAYS_REV=	7c7127ee1fa4

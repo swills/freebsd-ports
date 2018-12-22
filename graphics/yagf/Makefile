@@ -1,13 +1,14 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/graphics/yagf/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/yagf/Makefile 487550 2018-12-16 00:25:41Z rene $
 
 PORTNAME=	yagf
 PORTVERSION=	0.9.5
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF/yagf-ocr
 
 MAINTAINER=	bsam@FreeBSD.org
-COMMENT=	Graphical interface for an OCR program (cuneiform and tesseract)
+COMMENT=	Graphical interface for an OCR program (tesseract)
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
@@ -19,14 +20,9 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 LIB_DEPENDS=	libaspell.so:textproc/aspell
 
-OPTIONS_MULTI=		OCRENGINE
-OPTIONS_MULTI_OCRENGINE=CUNEIFORM TESSERACT
-CUNEIFORM_DESC=		Cuneiform OCR engine
-CUNEIFORM_RUN_DEPENDS=	cuneiform:graphics/cuneiform
+OPTIONS_DEFINE=TESSERACT
 TESSERACT_DESC=		Tesseract OCR engine
 TESSERACT_RUN_DEPENDS=	tesseract:graphics/tesseract
-
-OPTIONS_DEFAULT=	CUNEIFORM
 
 USES=		cmake desktop-file-utils pkgconfig qt:4
 USE_LDCONFIG=	yes

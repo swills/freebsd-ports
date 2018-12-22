@@ -1,10 +1,9 @@
 # Created by: Alan Eldridge <alane@geeksrus.net>
-# $FreeBSD: head/print/cups/Makefile 472496 2018-06-15 21:24:41Z tijl $
+# $FreeBSD: head/print/cups/Makefile 487450 2018-12-14 17:14:09Z tijl $
 
 PORTNAME=	cups
-PORTVERSION=	2.2.8
+PORTVERSION=	2.2.10
 DISTVERSIONPREFIX=v
-PORTREVISION=	1
 CATEGORIES=	print
 
 MAINTAINER=	tijl@FreeBSD.org

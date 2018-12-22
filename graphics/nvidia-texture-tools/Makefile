@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nvidia-texture-tools
 PORTVERSION=	2.0.8.1 # needed to not bump PORTEPOCH; remove on next update
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org

@@ -1,10 +1,10 @@
 # Created by: Eric Turgeon <ericbsd@FreeBSD.org>
-# $FreeBSD: head/x11/brisk-menu/Makefile 482009 2018-10-13 20:24:52Z kwm $
+# $FreeBSD: head/x11/brisk-menu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	brisk-menu
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.5.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	ericbsd@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-lmtest/Makefile 467284 2018-04-14 04:01:56Z wen $
+# $FreeBSD: head/finance/R-cran-lmtest/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lmtest
 DISTVERSION=	0.9-36
+PORTREVISION=	1
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

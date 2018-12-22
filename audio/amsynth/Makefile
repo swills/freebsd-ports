@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/amsynth/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/amsynth/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	amsynth
 DISTVERSION=	1.8.0.g20171103
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	hello@blubee.me

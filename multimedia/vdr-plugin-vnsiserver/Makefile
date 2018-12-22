@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-vnsiserver/Makefile 478960 2018-09-04 13:42:13Z tobik $
+# $FreeBSD: head/multimedia/vdr-plugin-vnsiserver/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vdr-plugin-vnsiserver
 PORTVERSION=	14.0.20150330
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org

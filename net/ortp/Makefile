@@ -1,8 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/ortp/Makefile 487187 2018-12-10 16:50:08Z rene $
+# $FreeBSD: head/net/ortp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ortp
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://www.linphone.org/releases/sources/ortp/
 

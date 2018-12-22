@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/xmlf90/Makefile 478964 2018-09-04 14:57:27Z yuri $
+# $FreeBSD: head/textproc/xmlf90/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xmlf90
 DISTVERSION=	1.5.4
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	https://launchpad.net/xmlf90/trunk/1.5/+download/
 

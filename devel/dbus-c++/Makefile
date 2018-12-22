@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/dbus-c++/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/dbus-c++/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dbus-c++
 PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	pw
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel gnome
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/databases/pgroonga/Makefile 475202 2018-07-23 20:51:16Z bofh $
+# $FreeBSD: head/databases/pgroonga/Makefile 487786 2018-12-19 08:30:04Z bofh $
 
 PORTNAME=	pgroonga
-PORTVERSION=	2.0.9
+PORTVERSION=	2.1.6
 CATEGORIES=	databases textproc
 MASTER_SITES=	http://packages.groonga.org/source/pgroonga/
 
@@ -14,6 +14,7 @@ LICENSE=	PostgreSQL
 LIB_DEPENDS=	libgroonga.so:textproc/groonga
 
 USES=		gmake pgsql pkgconfig
+
 LLD_UNSAFE=	yes
 SUB_FILES=	pkg-message
 

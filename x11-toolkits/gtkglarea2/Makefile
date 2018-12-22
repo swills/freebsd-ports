@@ -1,10 +1,10 @@
 # Created by: Marc Recht <marc@informatik.uni-bremen.de>
-# $FreeBSD: head/x11-toolkits/gtkglarea2/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/x11-toolkits/gtkglarea2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #    $MCom: ports/x11-toolkits/gtkglarea2/Makefile,v 1.2 2006/09/10 00:51:17 mezz Exp $
 
 PORTNAME=	gtkglarea
 PORTVERSION=	2.0.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME
 DISTNAME=	gtkglarea-${PORTVERSION}

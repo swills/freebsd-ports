@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/databases/mroonga/Makefile 473156 2018-06-23 19:43:24Z bofh $
+# $FreeBSD: head/databases/mroonga/Makefile 487737 2018-12-18 08:58:40Z bofh $
 
 PORTNAME=	mroonga
-PORTVERSION=	8.03
+PORTVERSION=	8.09
 CATEGORIES=	databases textproc
 MASTER_SITES=	http://packages.groonga.org/source/mroonga/
 

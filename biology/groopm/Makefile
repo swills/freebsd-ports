@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/groopm/Makefile 486812 2018-12-07 00:10:05Z yuri $
+# $FreeBSD: head/biology/groopm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	GroopM
 DISTVERSION=	0.3.4
+PORTREVISION=	1
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 

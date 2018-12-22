@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/licq-icq/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/net-im/licq-icq/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	icq
 PORTVERSION=	1.8.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	net-im
 
 MAINTAINER=	dinoex@FreeBSD.org

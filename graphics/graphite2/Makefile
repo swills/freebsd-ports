@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/graphite2/Makefile 477696 2018-08-21 00:43:37Z jbeich $
+# $FreeBSD: head/graphics/graphite2/Makefile 487989 2018-12-21 12:24:18Z jbeich $
 
 PORTNAME=	graphite2
-PORTVERSION=	1.3.12
+PORTVERSION=	1.3.13
 CATEGORIES=	graphics print
 
 MAINTAINER=	office@FreeBSD.org

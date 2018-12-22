@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-input-wacom/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/x11-drivers/xf86-input-wacom/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	xf86-input-wacom
 PORTVERSION=	0.36.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-drivers
 MASTER_SITES=	https://github.com/linuxwacom/${PORTNAME}/releases/download/${DISTNAME}/
 
@@ -11,7 +11,7 @@ COMMENT=	X.Org Wacom tablet driver
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	v4l_compat>=1.0.20110603:multimedia/v4l_compat
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 RUN_DEPENDS=	webcamd>=3.1.0.1:multimedia/webcamd
 
 USES=		gmake pathfix

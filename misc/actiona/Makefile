@@ -1,9 +1,10 @@
-# $FreeBSD: head/misc/actiona/Makefile 486474 2018-12-02 18:08:23Z yuri $
+# $FreeBSD: head/misc/actiona/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	actiona
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.10.0-4
 DISTVERSIONSUFFIX=	-gd8874a32
+PORTREVISION=	1
 CATEGORIES=	misc
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/hadoop2/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/devel/hadoop2/Makefile 487877 2018-12-20 11:13:34Z demon $
 
 # Please do not submit untested updates.  Be sure to start hadoop in
 # distributed mode and to run few map/reduce.  Be sure there are no exception
@@ -19,7 +19,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} FreeBSD-hadoop2-${PORTVERSION}-maven-repos
 DIST_SUBDIR=	hadoop
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} FreeBSD-hadoop2-${PORTVERSION}-maven-repository.tar.gz jetty-6.1.14.zip
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Apache Map/Reduce framework
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kmix/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/audio/kmix/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	kmix
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kpty/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/devel/kf5-kpty/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	kpty
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

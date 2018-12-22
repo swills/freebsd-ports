@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/charls/Makefile 479295 2018-09-09 16:57:52Z sunpoet $
+# $FreeBSD: head/graphics/charls/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	charls
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	sunpoet@FreeBSD.org

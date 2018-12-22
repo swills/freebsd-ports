@@ -1,8 +1,6 @@
-# $FreeBSD: head/devel/geany-plugins/files/Makefile.common 487062 2018-12-09 17:29:13Z madpilot $
+# $FreeBSD: head/devel/geany-plugins/files/Makefile.common 487752 2018-12-18 14:34:34Z madpilot $
 
 .include "${.CURDIR}/../../devel/geany-plugins/files/bsd.geany-plugins.mk"
-
-PORTREVISION=	1
 
 MASTER_SITES=	http://plugins.geany.org/geany-plugins/
 DISTNAME=	geany-plugins-${PORTVERSION}

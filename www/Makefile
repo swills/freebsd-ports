@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 486677 2018-12-05 15:46:02Z rene $
+# $FreeBSD: head/www/Makefile 487235 2018-12-11 13:02:50Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -237,7 +237,6 @@
     SUBDIR += gtkhtml4
     SUBDIR += guacamole-client
     SUBDIR += guile-www
-    SUBDIR += gurlchecker
     SUBDIR += h2o
     SUBDIR += h2o-devel
     SUBDIR += habari

@@ -1,5 +1,5 @@
 # Created by: Eric Turgeon <ericturgeon@ghostbsd.org>
-# $FreeBSD: head/deskutils/caja-extensions/Makefile 485179 2018-11-17 17:45:47Z sunpoet $
+# $FreeBSD: head/deskutils/caja-extensions/Makefile 488054 2018-12-22 02:51:51Z linimon $
 
 PORTNAME=	caja-extensions
 PORTVERSION=	1.20.1
@@ -20,8 +20,8 @@ LIB_DEPENDS=	libgupnp-1.2.so:net/gupnp \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool localbase pathfix \
-		pkgconfig tar:xz
+USES=		compiler:c11 gettext gmake gnome libtool localbase mate \
+		pathfix pkgconfig tar:xz
 USE_MATE=	caja desktop
 USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool
 USE_LDCONFIG=	yes

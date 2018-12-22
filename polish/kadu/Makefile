@@ -1,9 +1,9 @@
 # Created by: Jacek Pelka <jacek@combit.com.pl>
-# $FreeBSD: head/polish/kadu/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/polish/kadu/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kadu
 PORTVERSION=	4.3
-PORTREVISION=	8
+PORTREVISION=	9
 PORTEPOCH=	1
 CATEGORIES=	polish net-im
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}/:kadu \

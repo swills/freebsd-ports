@@ -1,11 +1,11 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/x11-wm/bspwm/Makefile 468605 2018-04-29 07:14:14Z riggs $
+# $FreeBSD: head/x11-wm/bspwm/Makefile 487513 2018-12-15 14:35:19Z joneum $
 
 PORTNAME=	bspwm
 PORTVERSION=	0.9.5
 CATEGORIES=	x11-wm
 
-MAINTAINER=	gor@clogic.com.ua
+MAINTAINER=	o.hushchenkov@gmail.com
 COMMENT=	Tiling window manager based on binary space partitioning
 
 LICENSE=	BSD2CLAUSE

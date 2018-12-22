@@ -1,9 +1,9 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-fastICA/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/R-cran-fastICA/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fastICA
 DISTVERSION=	1.2-1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/py-postgresql/Makefile 376731 2015-01-10 23:15:27Z demon $
+# $FreeBSD: head/databases/py-postgresql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	postgresql
 PORTVERSION=	1.1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP \
 		http://python.projects.postgresql.org/files/

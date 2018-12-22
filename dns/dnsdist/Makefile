@@ -1,9 +1,9 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/dns/dnsdist/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/dns/dnsdist/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dnsdist
 DISTVERSION=	1.3.3
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	dns net
 MASTER_SITES=	https://downloads.powerdns.com/releases/ \
 		LOCAL/cpm

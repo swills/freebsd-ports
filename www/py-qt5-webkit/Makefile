@@ -1,10 +1,13 @@
-# $FreeBSD: head/www/py-qt5-webkit/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/www/py-qt5-webkit/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	webkit
 CATEGORIES=	www devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtWebKit module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtWebKit
 PYQT_DIST=	yes

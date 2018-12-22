@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libfwnt/Makefile 459360 2018-01-18 16:11:16Z antoine $
+# $FreeBSD: head/devel/libfwnt/Makefile 487900 2018-12-20 19:29:43Z antoine $
 
 PORTNAME=	libfwnt
-PORTVERSION=	20180117
+PORTVERSION=	20181215
 DISTVERSIONPREFIX=	alpha-
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libfwnt/releases/download/${PORTVERSION}/ \

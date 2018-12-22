@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/lang/afnix/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/afnix/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	afnix
 PORTVERSION=	2.6.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	http://www.afnix.org/ftp/ \
 		ftp://ftp.stack.nl/pub/users/johans/afnix/

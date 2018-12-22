@@ -1,8 +1,9 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/mail/cone/Makefile 481732 2018-10-10 11:54:58Z madpilot $
+# $FreeBSD: head/mail/cone/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cone
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	mail
 # This is for beta versions, leave it in please:
 #MASTER_SITES=	http://www.courier-mta.org/beta/${PORTNAME}/ \

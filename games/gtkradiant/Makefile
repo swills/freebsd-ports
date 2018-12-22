@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alepulver@FreeBSD.org>
-# $FreeBSD: head/games/gtkradiant/Makefile 484217 2018-11-05 20:13:48Z linimon $
+# $FreeBSD: head/games/gtkradiant/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gtkradiant
 PORTVERSION=	1.5.0
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	games cad
 MASTER_SITES=	IDSOFTWARE/source/:id \
 		http://www.bsd-geek.de/FreeBSD/distfiles/:fb

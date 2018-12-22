@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/pbcopper/Makefile 479990 2018-09-18 08:14:23Z linimon $
+# $FreeBSD: head/biology/pbcopper/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pbcopper
 DISTVERSION=	g20180413
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	biology
 
 MAINTAINER=	jwb@FreeBSD.org

@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11-toolkits/wxgtk31/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-toolkits/wxgtk31/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	wx
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.1.1
-PORTREVISION=	4
+DISTVERSION=	3.1.2
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMESUFFIX=	31-gtk3
 
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libsoup-2.4.so:devel/libsoup \
 		libtiff.so:graphics/tiff \
 
-USES=		compiler:c++11-lib gmake iconv jpeg localbase pkgconfig
+USES=		compiler:c++11-lib gl gmake gnome iconv jpeg localbase pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	wxWidgets
 GH_PROJECT=	wxWidgets

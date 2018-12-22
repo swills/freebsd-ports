@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 487177 2018-12-10 15:11:22Z tobik $
+# $FreeBSD: head/textproc/Makefile 488006 2018-12-21 14:22:17Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -224,7 +224,6 @@
     SUBDIR += glark
     SUBDIR += gmetadom
     SUBDIR += gnome-doc-utils
-    SUBDIR += gnome-spell
     SUBDIR += gnugrep
     SUBDIR += go.text
     SUBDIR += goldendict
@@ -543,7 +542,6 @@
     SUBDIR += opentoken
     SUBDIR += openvanilla-framework
     SUBDIR += or-aspell
-    SUBDIR += ots
     SUBDIR += p5-AI-Categorizer
     SUBDIR += p5-Algorithm-CheckDigits
     SUBDIR += p5-Algorithm-RabinKarp
@@ -1677,7 +1675,6 @@
     SUBDIR += rxp
     SUBDIR += s5
     SUBDIR += sablotron
-    SUBDIR += sagasu
     SUBDIR += sansi
     SUBDIR += sarep
     SUBDIR += sary

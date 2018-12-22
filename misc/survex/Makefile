@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/survex/Makefile 485379 2018-11-20 02:11:21Z yuri $
+# $FreeBSD: head/misc/survex/Makefile 487814 2018-12-19 20:15:33Z yuri $
 
 PORTNAME=	survex
 DISTVERSION=	1.2.37
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libproj.so:graphics/proj
 
-USES=		desktop-file-utils gl gmake gnome pkgconfig shared-mime-info
+USES=		compiler:c++11-lang desktop-file-utils gl gmake gnome pkgconfig shared-mime-info
 GNU_CONFIGURE=	yes
 USE_WX=		3.0
 USE_XORG=	xxf86vm

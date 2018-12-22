@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 486677 2018-12-05 15:46:02Z rene $
+# $FreeBSD: head/security/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Security tools
@@ -101,7 +101,6 @@
     SUBDIR += cp2fwb
     SUBDIR += cracklib
     SUBDIR += crackpkcs12
-    SUBDIR += crank
     SUBDIR += create-cert
     SUBDIR += cryptlib
     SUBDIR += cryptopp
@@ -176,7 +175,6 @@
     SUBDIR += gcr
     SUBDIR += git-crypt
     SUBDIR += git-remote-gcrypt
-    SUBDIR += gnome-gpg
     SUBDIR += gnome-keyring
     SUBDIR += gnome-keyring-sharp
     SUBDIR += gnome-password-generator
@@ -192,8 +190,6 @@
     SUBDIR += gorilla
     SUBDIR += govpn
     SUBDIR += gpa
-    SUBDIR += gpasman
-    SUBDIR += gpass
     SUBDIR += gpgdir
     SUBDIR += gpgme
     SUBDIR += gpgme-cpp
@@ -205,7 +201,6 @@
     SUBDIR += gsasl
     SUBDIR += gss
     SUBDIR += gstreamer1-plugins-dtls
-    SUBDIR += gtk-knocker
     SUBDIR += gtkpasman
     SUBDIR += gwee
     SUBDIR += hackbot
@@ -343,7 +338,6 @@
     SUBDIR += libfprint
     SUBDIR += libgcrypt
     SUBDIR += libgnome-keyring
-    SUBDIR += libgnomesu
     SUBDIR += libgpg-error
     SUBDIR += libgringotts
     SUBDIR += libhijack
@@ -984,6 +978,7 @@
     SUBDIR += py-mhash
     SUBDIR += py-mixbox
     SUBDIR += py-mnemonic
+    SUBDIR += py-msoffcrypto-tool
     SUBDIR += py-netmiko
     SUBDIR += py-ntlm-auth
     SUBDIR += py-oauth2client
@@ -991,6 +986,7 @@
     SUBDIR += py-obfsproxy-tor
     SUBDIR += py-onetime
     SUBDIR += py-openssl
+    SUBDIR += py-ospd
     SUBDIR += py-paramiko
     SUBDIR += py-paramiko1
     SUBDIR += py-passlib
@@ -1081,6 +1077,7 @@
     SUBDIR += quantis
     SUBDIR += quantis-kmod
     SUBDIR += racoon2
+    SUBDIR += racoon2-legacy
     SUBDIR += radamsa
     SUBDIR += ranpwd
     SUBDIR += ratproxy
@@ -1286,7 +1283,6 @@
     SUBDIR += ssss
     SUBDIR += sst
     SUBDIR += starttls
-    SUBDIR += stegdetect
     SUBDIR += steghide
     SUBDIR += stoken
     SUBDIR += strobe

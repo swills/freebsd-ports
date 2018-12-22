@@ -1,8 +1,9 @@
 # Created by: Richard Gallamore <ultima@freebsd.org>
-# $FreeBSD: head/devel/youcompleteme/Makefile 478816 2018-09-02 20:09:59Z ultima $
+# $FreeBSD: head/devel/youcompleteme/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	YouCompleteMe
 DISTVERSION=	g20180819
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

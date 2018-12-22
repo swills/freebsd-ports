@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/R-cran-bibtex/Makefile 471021 2018-05-28 06:54:27Z tota $
+# $FreeBSD: head/textproc/R-cran-bibtex/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bibtex
 DISTVERSION=	0.4.2
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

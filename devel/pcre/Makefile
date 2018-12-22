@@ -1,8 +1,9 @@
 # Created by: dom
-# $FreeBSD: head/devel/pcre/Makefile 483248 2018-10-28 09:32:59Z linimon $
+# $FreeBSD: head/devel/pcre/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pcre
 PORTVERSION=	8.42
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://ftp.pcre.org/pub/pcre/ \
 		SF

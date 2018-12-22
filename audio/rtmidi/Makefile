@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/rtmidi/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/rtmidi/Makefile 487804 2018-12-19 17:18:36Z yuri $
 
 PORTNAME=	rtmidi
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE=	MIT
 
 LIB_DEPENDS=	libjack.so:audio/jack
 
-USES=		autoreconf libtool localbase
+USES=		autoreconf compiler:c11 libtool localbase
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	thestk

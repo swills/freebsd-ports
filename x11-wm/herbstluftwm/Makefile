@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-wm/herbstluftwm/Makefile 477342 2018-08-16 14:07:02Z swills $
+# $FreeBSD: head/x11-wm/herbstluftwm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	herbstluftwm
 PORTVERSION=	0.7.1
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://herbstluftwm.org/tarballs/
 

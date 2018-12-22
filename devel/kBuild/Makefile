@@ -1,9 +1,9 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/devel/kBuild/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/devel/kBuild/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kBuild
 DISTVERSION=	${KBUILD_VERSION}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/jkim
 DISTNAME=	${PORTNAME}-${DISTVERSION}r3127-src

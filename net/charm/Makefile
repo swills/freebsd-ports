@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/charm/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/net/charm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	charm
 DISTVERSION=	6.8.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://charm.cs.illinois.edu/distrib/
 PKGNAMESUFFIX=	-uiuc

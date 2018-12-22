@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/thundersnarf/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/thundersnarf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	thundersnarf
 PORTVERSION=	1.3
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.tracanelli.com.br/l/dev/thunder/ \

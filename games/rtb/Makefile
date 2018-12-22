@@ -1,10 +1,10 @@
 # Created by: Dishanker Rajakulendren <draj@oceanfree.net>
-# $FreeBSD: head/games/rtb/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/games/rtb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RealTimeBattle
 PORTVERSION=	1.0.8
 DISTVERSIONSUFFIX=	-Ext
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}-1.0.x/${PORTNAME}%20${PORTVERSION}
 

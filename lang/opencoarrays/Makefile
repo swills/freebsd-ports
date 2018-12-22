@@ -1,9 +1,9 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 479979 2018-09-18 07:10:07Z linimon $
+# $FreeBSD: head/lang/opencoarrays/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	opencoarrays
 DISTVERSION=	2.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang parallel
 
 MAINTAINER=	as@cmplx.uk

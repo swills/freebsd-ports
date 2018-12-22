@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Xapian/Makefile 484229 2018-11-05 21:43:40Z sunpoet $
+# $FreeBSD: head/databases/p5-Xapian/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Xapian
 PORTVERSION=	1.4.9.0
+PORTREVISION=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION:R}/ \
 		LOCAL/sunpoet

@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/calendarserver/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/calendarserver/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	calendarserver
 PORTVERSION=	9.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	CalendarServer-
 CATEGORIES=	    www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

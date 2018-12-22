@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-google-cloud-translate/Makefile 478645 2018-09-01 00:27:13Z dbaio $
+# $FreeBSD: head/www/py-google-cloud-translate/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	google-cloud-translate
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

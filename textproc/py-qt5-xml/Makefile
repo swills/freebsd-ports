@@ -1,10 +1,13 @@
-# $FreeBSD: head/textproc/py-qt5-xml/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/textproc/py-qt5-xml/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	xml
 CATEGORIES=	textproc devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtXml module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtXml
 PYQT_DIST=	yes

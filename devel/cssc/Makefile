@@ -1,9 +1,9 @@
 # Created by: Oliver Fromme
-# $FreeBSD: head/devel/cssc/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/devel/cssc/Makefile 488045 2018-12-22 01:52:08Z linimon $
 
 PORTNAME=	cssc
 PORTVERSION=	1.4.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 DISTNAME=	CSSC-${PORTVERSION}
@@ -15,11 +15,10 @@ LICENSE=	GPLv3
 
 BROKEN_mips=		fails to compile: ../gl/lib/unistd.h:135:3: "Please include config.h first."
 BROKEN_mips64=		fails to compile: ../gl/lib/unistd.h:135:3: "Please include config.h first."
-BROKEN_powerpc64=	does not build: undefined reference to fmax
 
 GNU_CONFIGURE=	yes
 INFO=		cssc
-USE_GCC=	any
+USES=		compiler:c11
 
 OPTIONS_DEFINE=			BINARY
 OPTIONS_DEFAULT=		BINARY

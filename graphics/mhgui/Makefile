@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/mhgui/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/mhgui/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mhgui
 PORTVERSION=	0.2
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	graphics
 MASTER_SITES=	SF/makehuman/MakeHuman%20Source/MakeHuman_091
 

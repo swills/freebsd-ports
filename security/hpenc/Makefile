@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/hpenc/Makefile 487067 2018-12-09 17:59:00Z vsevolod $
+# $FreeBSD: head/security/hpenc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hpenc
 PORTVERSION=	3.0
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	vsevolod@FreeBSD.org

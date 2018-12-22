@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/lordsawar/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/lordsawar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lordsawar
 PORTVERSION=	0.3.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	SAVANNAH
 

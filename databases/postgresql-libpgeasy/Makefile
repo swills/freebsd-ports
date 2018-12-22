@@ -1,10 +1,10 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql-libpgeasy/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/databases/postgresql-libpgeasy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PKGNAMEPREFIX=	postgresql-
 PORTNAME=	libpgeasy
 PORTVERSION=	3.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	PGSQL/projects/gborg/pgeasy/stable
 DIST_SUBDIR=	postgresql

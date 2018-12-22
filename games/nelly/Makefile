@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/nelly/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/nelly/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nelly
 PORTVERSION=	1.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games python
 MASTER_SITES=	http://www.partiallydisassembled.net/nelly/ \
 		http://media.pyweek.org/dl/2/rushed/ \

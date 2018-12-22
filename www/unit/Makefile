@@ -1,9 +1,8 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/unit/Makefile 486720 2018-12-05 20:01:10Z linimon $
+# $FreeBSD: head/www/unit/Makefile 487932 2018-12-21 00:09:17Z osa $
 
 PORTNAME=	unit
-PORTVERSION=	1.6
-PORTREVISION=	1
+PORTVERSION=	1.7
 CATEGORIES=	www
 MASTER_SITES=	https://unit.nginx.org/download/
 
@@ -13,9 +12,7 @@ COMMENT?=	Dynamic web application server
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-EXTRA_PATCHES=	${FILESDIR}/php_zts.patch:-p1
-
-USES+=		cpe
+USES+=		compiler:c11 cpe
 
 CPE_VENDOR=	nginx
 CPE_PRODUCT=	unit

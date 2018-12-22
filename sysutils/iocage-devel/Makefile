@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/iocage-devel/Makefile 486878 2018-12-07 18:13:20Z wg $
+# $FreeBSD: head/sysutils/iocage-devel/Makefile 487811 2018-12-19 19:31:08Z wg $
 
 PORTNAME=	iocage-devel
-PORTVERSION=	1.0.0.20181207
+PORTVERSION=	1.0.0.20181219
 PORTEPOCH=	1
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -28,7 +28,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}netifaces>0:net/py-netifaces@${PY_FLAVOR} \
 USE_GITHUB=	yes
 GH_ACCOUNT=	iocage
 GH_PROJECT=	iocage
-GH_TAGNAME=	704b5c2
+GH_TAGNAME=	7ce45da
 
 NO_ARCH=	yes
 USES=		python:3.6+

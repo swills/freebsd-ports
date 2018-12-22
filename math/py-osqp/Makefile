@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-osqp/Makefile 485278 2018-11-18 21:33:03Z yuri $
+# $FreeBSD: head/math/py-osqp/Makefile 487314 2018-12-12 18:35:00Z yuri $
 
 PORTNAME=	osqp
-DISTVERSION=	0.4.1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.5.0
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -21,7 +22,7 @@ USES=		python
 USE_GITHUB=	yes
 GH_ACCOUNT=	oxfordcontrol
 GH_PROJECT=	${PORTNAME}-python
-GH_TUPLE=	oxfordcontrol:${PORTNAME}:a5af44d:s/${PORTNAME}_sources \
+GH_TUPLE=	oxfordcontrol:${PORTNAME}:v${DISTVERSION}:s/${PORTNAME}_sources \
 		oxfordcontrol:qdldl:7ab0fca:q/${PORTNAME}_sources/lin_sys/direct/qdldl/qdldl_sources
 USE_PYTHON=	distutils autoplist
 

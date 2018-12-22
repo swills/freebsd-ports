@@ -1,9 +1,9 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/math/arpack-ng/Makefile 481314 2018-10-06 04:16:10Z yuri $
+# $FreeBSD: head/math/arpack-ng/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	arpack-ng
 DISTVERSION=	3.6.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

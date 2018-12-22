@@ -1,9 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/databases/mtools-mongodb/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/mtools-mongodb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mtools
 PORTVERSION=	1.2.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

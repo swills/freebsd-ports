@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/trustedqsl/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/comms/trustedqsl/Makefile 487319 2018-12-12 19:45:19Z tobik $
 
 PORTNAME=	trustedqsl
 DISTVERSION=	2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://www.arrl.org/files/file/LoTW%20Instructions/ \
 		LOCAL/shurd
@@ -15,9 +15,6 @@ LICENSE=	ARRL
 LICENSE_NAME=	American Radio Relay League, Inc. All rights reserved.
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
-
-BROKEN_SSL=	openssl111
-BROKEN_SSL_REASON_openssl111=	member access into incomplete type 'EVP_PKEY' (aka 'evp_pkey_st')
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libexpat.so:textproc/expat2 \

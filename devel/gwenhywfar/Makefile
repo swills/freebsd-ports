@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gwenhywfar/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/gwenhywfar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gwenhywfar
 PORTVERSION=	4.20.0
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	devel net security
 MASTER_SITES=	http://www.aquamaniac.de/sites/download/download.php?package=01&release=208&file=02&dummy=/
 

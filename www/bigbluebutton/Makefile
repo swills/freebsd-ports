@@ -1,9 +1,9 @@
 # Created by: alex.deiter@gmail.com
-# $FreeBSD: head/www/bigbluebutton/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/www/bigbluebutton/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bigbluebutton
 PORTVERSION=	0.71
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	www java
 MASTER_SITES=	http://bigbluebutton.org/downloads/${PORTVERSION}/ \
 		http://bigbluebutton.org/downloads/0.70/:2 \

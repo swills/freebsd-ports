@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/skanlite/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+# $FreeBSD: head/graphics/skanlite/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	skanlite
 DISTVERSION=	2.1.0.1
+PORTREVISION=	1
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION:R:R}/
 

@@ -1,15 +1,15 @@
 # Created by: Mitsuru YOSHIDA <mitsuru@riken.jp>
-# $FreeBSD: head/lang/scala/Makefile 470625 2018-05-22 16:41:21Z joneum $
+# $FreeBSD: head/lang/scala/Makefile 487762 2018-12-18 18:32:02Z joneum $
 
 PORTNAME=	scala
-PORTVERSION=	2.12.6
+PORTVERSION=	2.12.8
 CATEGORIES=	lang java
 MASTER_SITES=	http://www.scala-lang.org/files/archive/
 
 MAINTAINER=	jan0sch@mykolab.com
 COMMENT=	Scala Programming Language
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/doc/LICENSE.md
 
 RUN_DEPENDS=	bash:shells/bash

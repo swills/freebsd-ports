@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/rapidjson/Makefile 483266 2018-10-28 10:38:18Z linimon $
+# $FreeBSD: head/devel/rapidjson/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rapidjson
 PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel textproc
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -41,7 +41,7 @@ CXXFLAGS_powerpc=	-Wno-error
 CXXFLAGS_powerpcspe=	-Wno-error
 CXXFLAGS_powerpc64=	-Wno-error
 CXXFLAGS_sparc64=	-Wno-error
-.if ${COMPILER_TYPE} == clang && ${COMPILER_VERSION} >= 50
+.if ${CHOSEN_COMPILER_TYPE} == clang
 CXXFLAGS+=	-Wno-zero-as-null-pointer-constant
 .endif
 

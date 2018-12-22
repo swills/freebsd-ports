@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/R-cran-openxlsx/Makefile 480549 2018-09-24 06:59:56Z dbn $
+# $FreeBSD: head/textproc/R-cran-openxlsx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openxlsx
 DISTVERSION=	4.1.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

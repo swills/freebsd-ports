@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/Makefile 477371 2018-08-16 20:28:32Z rene $
+# $FreeBSD: head/x11-clocks/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = X11 clocks
@@ -8,7 +8,6 @@
     SUBDIR += alltraxclock
     SUBDIR += amor-kde4
     SUBDIR += asclock
-    SUBDIR += asclock-gtk
     SUBDIR += asclock-xlib
     SUBDIR += astime
     SUBDIR += astzclock
@@ -20,7 +19,6 @@
     SUBDIR += emiclock
     SUBDIR += eyeclock
     SUBDIR += glclock
-    SUBDIR += gtubeclock
     SUBDIR += intclock
     SUBDIR += kdetoys-kde4
     SUBDIR += kteatime
@@ -37,7 +35,6 @@
     SUBDIR += plasma-applet-adjustableclock
     SUBDIR += plasma-applet-geekclock
     SUBDIR += rclock
-    SUBDIR += sanduhr
     SUBDIR += stopwatch
     SUBDIR += t3d
     SUBDIR += tclock
@@ -47,7 +44,6 @@
     SUBDIR += wmblueclock
     SUBDIR += wmcalclock
     SUBDIR += wmclock
-    SUBDIR += wmclockmon
     SUBDIR += wmfishtime
     SUBDIR += wmfuzzy
     SUBDIR += wmtime

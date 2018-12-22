@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/py-loompy/Makefile 483451 2018-10-30 05:57:43Z yuri $
+# $FreeBSD: head/biology/py-loompy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	loompy
 DISTVERSION=	2.0.16
+PORTREVISION=	1
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

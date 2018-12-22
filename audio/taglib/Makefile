@@ -1,9 +1,9 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/audio/taglib/Makefile 483626 2018-10-31 23:26:38Z jhale $
+# $FreeBSD: head/audio/taglib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	taglib
 PORTVERSION=	1.11.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://taglib.github.io/releases/
 

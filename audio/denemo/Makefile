@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/denemo/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/audio/denemo/Makefile 488040 2018-12-22 01:25:02Z linimon $
 
 PORTNAME=	denemo
 PORTVERSION=	2.0.6
@@ -30,7 +30,8 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils
 EXTRACT_BEFORE_ARGS=\
 		-s '!\(/Clarinet in B\).*\(\.denemo\)$$!\1b\2!p' -xf
 
-USES=		bison desktop-file-utils gettext gmake pkgconfig
+USES=		bison compiler:c++11-lang desktop-file-utils gettext gmake \
+		pkgconfig
 USE_GNOME=	intltool librsvg2 libxml2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-jack \

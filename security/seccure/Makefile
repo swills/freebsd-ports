@@ -1,9 +1,9 @@
 # Created by: Lukasz Komsta
-# $FreeBSD: head/security/seccure/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/seccure/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	seccure
 PORTVERSION=	0.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	security
 MASTER_SITES=	http://point-at-infinity.org/seccure/ \
 		NETBSD

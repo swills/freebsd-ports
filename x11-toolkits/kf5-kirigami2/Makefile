@@ -1,5 +1,5 @@
 # Created by: tcberner
-# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 484814 2018-11-12 18:31:42Z tcberner $
+# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	kirigami2
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}

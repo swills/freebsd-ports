@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/pecl-mustache/Makefile 485143 2018-11-17 17:29:47Z sunpoet $
+# $FreeBSD: head/devel/pecl-mustache/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mustache
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org

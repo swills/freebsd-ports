@@ -1,8 +1,8 @@
 # Created by: Alexander Leidinger
-# $FreeBSD: head/misc/openhab2-addons/Makefile 486962 2018-12-08 16:24:37Z netchild $
+# $FreeBSD: head/misc/openhab2-addons/Makefile 487772 2018-12-18 21:01:08Z netchild $
 
 PORTNAME=	openhab2-addons
-PORTVERSION=	2.3.0
+PORTVERSION=	2.4.0
 CATEGORIES=	misc java
 MASTER_SITES=	https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab-addons%2F${PORTVERSION}/
 DISTNAME=	openhab-addons-${PORTVERSION}
@@ -24,7 +24,7 @@ EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS="-v"
 EXTRACT_AFTER_ARGS="${EXTRACT_WRKDIR}"
 
-PLIST_FILES=	libexec/openhab2/addons/openhab-addons-2.3.0.kar
+PLIST_FILES=	libexec/openhab2/addons/openhab-addons-${PORTVERSION}.kar
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/libexec/openhab2

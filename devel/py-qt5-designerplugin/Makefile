@@ -1,10 +1,13 @@
-# $FreeBSD: head/devel/py-qt5-designerplugin/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/py-qt5-designerplugin/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	designerplugin
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtDesigner plugin
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 BUILD_WRKSRC=	${WRKSRC}/designer
 INSTALL_WRKSRC=	${WRKSRC}/designer

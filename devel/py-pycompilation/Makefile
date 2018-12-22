@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-pycompilation/Makefile 482275 2018-10-17 07:07:58Z yuri $
+# $FreeBSD: head/devel/py-pycompilation/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pycompilation
 DISTVERSION=	0.4.4
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

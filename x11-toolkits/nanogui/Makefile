@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/nanogui/Makefile 481497 2018-10-07 22:07:51Z yuri $
+# $FreeBSD: head/x11-toolkits/nanogui/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nanogui
 DISTVERSION=	g20180413
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 
 MAINTAINER=	yuri@FreeBSD.org

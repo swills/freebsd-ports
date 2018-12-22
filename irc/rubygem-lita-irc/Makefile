@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/irc/rubygem-lita-irc/Makefile 442870 2017-06-07 19:11:17Z sunpoet $
+# $FreeBSD: head/irc/rubygem-lita-irc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lita-irc
 PORTVERSION=	2.2.0
+PORTREVISION=	1
 CATEGORIES=	irc rubygems
 MASTER_SITES=	RG
 

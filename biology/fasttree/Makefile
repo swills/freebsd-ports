@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/fasttree/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/biology/fasttree/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	FastTree
 DISTVERSION=	2.1.10
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	biology
 MASTER_SITES=	http://www.microbesonline.org/fasttree/
 EXTRACT_SUFX=	.c

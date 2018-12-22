@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/qbox/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/science/qbox/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qbox
 DISTVERSIONPREFIX=	rel
 DISTVERSION=	1_66_2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

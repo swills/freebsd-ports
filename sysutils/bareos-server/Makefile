@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/bareos-server/Makefile 485488 2018-11-20 21:49:17Z acm $
+# $FreeBSD: head/sysutils/bareos-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bareos
 DISTVERSIONPREFIX=	Release/
 DISTVERSION=	17.2.7
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	sysutils
 PKGNAMEPREFIX?=	#
 PKGNAMESUFFIX?=	-server

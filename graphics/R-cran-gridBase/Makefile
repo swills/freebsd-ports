@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-gridBase/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/R-cran-gridBase/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gridBase
 DISTVERSION=	0.4-7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

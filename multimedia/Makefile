@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 484316 2018-11-06 19:00:50Z eugen $
+# $FreeBSD: head/multimedia/Makefile 488006 2018-12-21 14:22:17Z rene $
 #
 
     COMMENT = Multimedia software
@@ -44,6 +44,7 @@
     SUBDIR += cmrt
     SUBDIR += cuse4bsd-kmod
     SUBDIR += cx88
+    SUBDIR += dav1d
     SUBDIR += deforaos-player
     SUBDIR += devede
     SUBDIR += din
@@ -52,7 +53,6 @@
     SUBDIR += dragon-kde4
     SUBDIR += dtv-scan-tables
     SUBDIR += dumpmpeg
-    SUBDIR += dv2jpg
     SUBDIR += dv2sub
     SUBDIR += dvb-apps
     SUBDIR += dvbcut
@@ -158,6 +158,7 @@
     SUBDIR += gstreamer1-plugins-x265
     SUBDIR += gstreamer1-qt
     SUBDIR += gstreamer1-rtsp-server
+    SUBDIR += gstreamer1-transcoder
     SUBDIR += gstreamer1-vaapi
     SUBDIR += gstreamer1-validate
     SUBDIR += gstreamermm
@@ -303,10 +304,7 @@
     SUBDIR += ogmtools
     SUBDIR += omxplayer
     SUBDIR += openh264
-    SUBDIR += openquicktime
     SUBDIR += openshot
-    SUBDIR += oqtencoder
-    SUBDIR += oqtplayer
     SUBDIR += oscam
     SUBDIR += p5-Audio-M4P
     SUBDIR += p5-FFmpeg-Command
@@ -317,7 +315,6 @@
     SUBDIR += p5-Net-UPnP
     SUBDIR += p5-Subtitles
     SUBDIR += p5-Umph-Prompt
-    SUBDIR += p5-Video-OpenQuicktime
     SUBDIR += pHash
     SUBDIR += phonon
     SUBDIR += phonon-designerplugin
@@ -373,11 +370,11 @@
     SUBDIR += qt4-mobility
     SUBDIR += qt4-multimedia
     SUBDIR += qt5-multimedia
-    SUBDIR += quark
     SUBDIR += quodlibet
     SUBDIR += quvi
     SUBDIR += quvi09
     SUBDIR += rage
+    SUBDIR += rav1e
     SUBDIR += recmpeg
     SUBDIR += recordmydesktop
     SUBDIR += replex
@@ -476,11 +473,7 @@
     SUBDIR += xawtv
     SUBDIR += xfce4-parole
     SUBDIR += xine
-    SUBDIR += xmms
-    SUBDIR += xmms-skins
-    SUBDIR += xmms-skins-huge
     SUBDIR += xporthdmv
-    SUBDIR += xtheater
     SUBDIR += xvid
     SUBDIR += yamdi
     SUBDIR += zoneminder

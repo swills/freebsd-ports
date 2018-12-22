@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/x11/wbar/Makefile 483258 2018-10-28 10:01:49Z linimon $
+# $FreeBSD: head/x11/wbar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	wbar
 PORTVERSION=	2.3.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/${PORTNAME}/
 

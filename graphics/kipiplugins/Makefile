@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kipiplugins/Makefile 478515 2018-08-31 04:14:48Z tcberner $
+# $FreeBSD: head/graphics/kipiplugins/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kipiplugins
 DISTVERSION=	5.9.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/digikam
 DIST_SUBDIR=	KDE/digikam/${PORTVERSION}

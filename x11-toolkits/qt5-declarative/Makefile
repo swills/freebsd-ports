@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/qt5-declarative/Makefile 484704 2018-11-11 17:32:11Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-declarative/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	declarative
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

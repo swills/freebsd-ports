@@ -1,9 +1,9 @@
 # Created by: Devon Ryan <dpryan@dpryan.com>
-# $FreeBSD: head/audio/libgpod/Makefile 486018 2018-11-27 16:18:56Z linimon $
+# $FreeBSD: head/audio/libgpod/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libgpod
 PORTVERSION=	0.8.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	SF/gtkpod/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 

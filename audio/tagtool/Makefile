@@ -1,5 +1,5 @@
 # Created by: Anthony Ginepro <anthony.ginepro@laposte.net>
-# $FreeBSD: head/audio/tagtool/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/tagtool/Makefile 488047 2018-12-22 02:01:40Z linimon $
 #    $MCom: ports/audio/tagtool/Makefile,v 1.1 2006/09/30 01:15:37 ahze Exp $
 
 PORTNAME=	tagtool
@@ -17,12 +17,12 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libid3.so:audio/id3lib \
 		libvorbis.so:audio/libvorbis
 
-USES=		tar:bzip2 gettext gmake pathfix pkgconfig
+USES=		compiler:c++11-lang gettext gmake localbase:ldflags pathfix \
+		pkgconfig tar:bzip2
 USE_GNOME=	intlhack libglade2
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lpthread -logg -lm
+LDFLAGS+=	-lpthread -logg -lm
 
 .include <bsd.port.mk>

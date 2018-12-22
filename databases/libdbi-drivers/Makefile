@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/databases/libdbi-drivers/Makefile 420925 2016-08-26 15:30:54Z pawel $
+# $FreeBSD: head/databases/libdbi-drivers/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libdbi-drivers
 PORTVERSION=	0.9.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${DISTVERSION}
 

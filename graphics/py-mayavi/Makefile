@@ -1,9 +1,9 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/graphics/py-mayavi/Makefile 470966 2018-05-27 08:22:14Z antoine $
+# $FreeBSD: head/graphics/py-mayavi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mayavi
 PORTVERSION=	4.5.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

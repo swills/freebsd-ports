@@ -1,9 +1,10 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/science/hypre/Makefile 482571 2018-10-20 15:47:07Z yuri $
+# $FreeBSD: head/science/hypre/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hypre
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.15.1
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

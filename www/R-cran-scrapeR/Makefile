@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-scrapeR/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/www/R-cran-scrapeR/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scrapeR
 PORTVERSION=	0.1.6
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

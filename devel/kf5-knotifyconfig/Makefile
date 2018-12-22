@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-knotifyconfig/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/devel/kf5-knotifyconfig/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	knotifyconfig
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

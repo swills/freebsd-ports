@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-data.table/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/devel/R-cran-data.table/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	data.table
 DISTVERSION=	1.11.8
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

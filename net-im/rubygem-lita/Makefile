@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net-im/rubygem-lita/Makefile 427846 2016-12-05 07:19:06Z sunpoet $
+# $FreeBSD: head/net-im/rubygem-lita/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lita
 PORTVERSION=	4.7.1
+PORTREVISION=	1
 CATEGORIES=	net-im rubygems
 MASTER_SITES=	RG
 

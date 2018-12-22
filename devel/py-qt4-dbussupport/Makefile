@@ -1,6 +1,7 @@
-# $FreeBSD: head/devel/py-qt4-dbussupport/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/py-qt4-dbussupport/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	dbussupport
+PORTREVISION=	1
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org
@@ -17,7 +18,7 @@ PYQT_DIST=	yes
 
 USES=		pkgconfig python pyqt:4 qt:4
 USE_PYQT=	sip_build
-USE_PYTHON=	flavors
+USE_PYTHON=	concurrent flavors py3kplist
 USE_QT=		corelib qmake_build moc_build
 
 OPTIONS_DEFINE=		DEBUG

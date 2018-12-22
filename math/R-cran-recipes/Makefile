@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-recipes/Makefile 486591 2018-12-04 09:40:32Z tota $
+# $FreeBSD: head/math/R-cran-recipes/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	recipes
 PORTVERSION=	0.1.4
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

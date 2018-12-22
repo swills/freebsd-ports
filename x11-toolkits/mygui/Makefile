@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/mygui/Makefile 480604 2018-09-24 12:26:06Z linimon $
+# $FreeBSD: head/x11-toolkits/mygui/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mygui
 PORTVERSION=	3.2.3.git20171212
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits graphics devel
 
 MAINTAINER=	amdmi3@FreeBSD.org

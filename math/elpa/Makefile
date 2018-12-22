@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/elpa/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/math/elpa/Makefile 487935 2018-12-21 01:43:39Z yuri $
 
 PORTNAME=	elpa
-DISTVERSION=	2018.05.001
-PORTREVISION=	1
+DISTVERSION=	2018.11.001
 CATEGORIES=	math
 MASTER_SITES=	http://elpa.mpcdf.mpg.de/html/Releases/${DISTVERSION}/
 

@@ -1,9 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/qscintilla2-designerplugin/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/qscintilla2-designerplugin/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	designerplugin
 PORTVERSION=	${QSCI2_VERSION}
-PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITES_QSCI2}

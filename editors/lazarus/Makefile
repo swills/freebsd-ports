@@ -1,9 +1,9 @@
-# $FreeBSD: head/editors/lazarus/Makefile 478173 2018-08-27 02:36:05Z acm $
+# $FreeBSD: head/editors/lazarus/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lazarus
 PORTVERSION=	1.8.4
 PKGNAMESUFFIX?=  -gtk2
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	editors devel
 MASTER_SITES=	SF/${PORTNAME}/Lazarus%20Zip%20_%20GZip/Lazarus%20${PORTVERSION} \
 		LOCAL/acm/freepascal

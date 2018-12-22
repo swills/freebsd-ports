@@ -1,8 +1,9 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/databases/pguri/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pguri/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pguri
 PORTVERSION=	1.20151224
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	tz@FreeBSD.org

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-gimmik/Makefile 480219 2018-09-20 21:48:56Z yuri $
+# $FreeBSD: head/math/py-gimmik/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gimmik
 DISTVERSION=	2.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

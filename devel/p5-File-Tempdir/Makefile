@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Tempdir/Makefile 396502 2015-09-09 14:14:40Z loader $
+# $FreeBSD: head/devel/p5-File-Tempdir/Makefile 487564 2018-12-16 09:00:09Z amdmi3 $
 
 PORTNAME=	File-Tempdir
 PORTVERSION=	0.02
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	loader@FreeBSD.org
 COMMENT=	Perl5 module to provide an object interface for File::Temp
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

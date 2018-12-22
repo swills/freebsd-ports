@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/ardour/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/audio/ardour/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	ardour
 PORTVERSION=	2.8.16
-PORTREVISION=	12
+PORTREVISION=	14
 CATEGORIES=	audio
 MASTER_SITES=	http://freebsd.nsu.ru/distfiles/
 
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_powerpc64=	Does not build
 
-BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 LIB_DEPENDS=	libaubio.so:audio/aubio \
 		libboost_date_time.so:devel/boost-libs \
 		libcurl.so:ftp/curl \

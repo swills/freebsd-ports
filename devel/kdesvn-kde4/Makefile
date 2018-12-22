@@ -1,9 +1,9 @@
 # Created by: Yuan Jue <yuanjue@yuanjue.net>
-# $FreeBSD: head/devel/kdesvn-kde4/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/devel/kdesvn-kde4/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kdesvn
 DISTVERSION=	1.7.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/
 PKGNAMESUFFIX=	-kde4

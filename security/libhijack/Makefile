@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/libhijack/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/security/libhijack/Makefile 487929 2018-12-21 00:00:51Z yuri $
 
 PORTNAME=	libhijack
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.8.0-1
-DISTVERSIONSUFFIX=	-g50804aa
+DISTVERSION=	0.8.0-2
+DISTVERSIONSUFFIX=	-g972534d
 CATEGORIES=	security
 
 MAINTAINER=	shawn.webb@hardenedbsd.org
@@ -20,7 +20,7 @@ USE_LDCONFIG=	yes
 
 PLIST_FILES=	include/hijack.h \
 		lib/libhijack.so \
-		lib/libhijack.so.1 \
+		lib/libhijack.so.2 \
 		sbin/hijack
 
 do-install: # the original install fails: https://github.com/SoldierX/libhijack/issues/6

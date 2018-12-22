@@ -1,9 +1,9 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/gtkmmorse/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/comms/gtkmmorse/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gtkmmorse
 PORTVERSION=	0.9.27
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SAVANNAH
 

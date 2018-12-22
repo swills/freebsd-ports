@@ -1,9 +1,9 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/devel/libspice-server/Makefile 480498 2018-09-23 12:28:37Z linimon $
+# $FreeBSD: head/devel/libspice-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libspice-server
 DISTVERSION=	0.14.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	https://www.spice-space.org/download/releases/
 DISTNAME=	spice-${PORTVERSION}

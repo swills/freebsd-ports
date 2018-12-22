@@ -1,8 +1,9 @@
 # Created by: Johnny Sorocil <jsorocil@gmail.com>
-# $FreeBSD: head/devel/arachne-pnr/Makefile 484932 2018-11-14 15:57:38Z tobik $
+# $FreeBSD: head/devel/arachne-pnr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	arachne-pnr
 PORTVERSION=	g20181021
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	jsorocil@gmail.com

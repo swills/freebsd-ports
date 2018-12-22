@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/tasksh/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/deskutils/tasksh/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tasksh
 PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	http://taskwarrior.org/download/
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/py-pretty_midi/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/multimedia/py-pretty_midi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pretty_midi
 DISTVERSION=	0.2.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

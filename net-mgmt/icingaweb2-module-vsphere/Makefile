@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-vsphere/Makefile 446773 2017-07-27 18:24:15Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-vsphere/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	icingaweb2-module-vsphere
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org

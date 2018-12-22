@@ -1,8 +1,9 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 481411 2018-10-07 03:08:23Z yuri $
+# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libtorrent-rasterbar
 DISTVERSION=	1.1.10
+PORTREVISION=	2
 CATEGORIES=	net-p2p ipv6
 MASTER_SITES=	https://github.com/arvidn/libtorrent/releases/download/libtorrent-${PORTVERSION:S/./_/g}/
 

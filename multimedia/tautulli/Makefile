@@ -1,12 +1,12 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/multimedia/tautulli/Makefile 482390 2018-10-18 23:15:06Z swills $
+# $FreeBSD: head/multimedia/tautulli/Makefile 487750 2018-12-18 11:35:44Z joneum $
 
 PORTNAME=	tautulli
-PORTVERSION=	2.1.22
+PORTVERSION=	2.1.26
 DISTVERSIONPREFIX=v
 CATEGORIES=	multimedia python
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	christer.edwards@gmail.com
 COMMENT=	Monitoring, analytics, and notifications for Plex Media Server
 
 LICENSE=	GPLv3

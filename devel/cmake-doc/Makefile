@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cmake-doc/Makefile 486323 2018-12-01 07:37:57Z tcberner $
+# $FreeBSD: head/devel/cmake-doc/Makefile 487871 2018-12-20 09:41:55Z tcberner $
 
 PORTNAME=	cmake
-DISTVERSION=	3.13.1
+DISTVERSION=	3.13.2
 CATEGORIES=	devel
 MASTER_SITES=	https://www.cmake.org/files/v${PORTVERSION:R}/
 PKGNAMESUFFIX=	-doc
@@ -23,7 +23,7 @@ USE_QT=		help_build
 CMAKE_OFF=	SPHINX_MAN
 CMAKE_ON=	SPHINX_HTML SPHINX_QTHELP
 CMAKE_ARGS=	-DCMAKE_DOC_DIR:STRING="${DOCSDIR_REL}" \
-		-DQCOLLECTIONGENERATOR_EXECUTABLE=${QT_BINDIR}/qcollectiongenerator
+		-DQCOLLECTIONGENERATOR_EXECUTABLE=${QT_BINDIR}/qhelpgenerator
 CMAKE_SOURCE_PATH=	${WRKSRC}/Utilities/Sphinx
 
 ALL_TARGET=	documentation

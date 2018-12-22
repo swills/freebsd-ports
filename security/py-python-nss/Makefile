@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/py-python-nss/Makefile 480707 2018-09-25 23:11:39Z jhale $
+# $FreeBSD: head/security/py-python-nss/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	python-nss
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/archivers/paq/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/archivers/paq/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	paq
 PORTVERSION=	20140131
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	archivers
 MASTER_SITES=	http://mattmahoney.net/dc/ LOCAL/bf/paq/
 DISTFILES=	wbpe110.zip zpaqd633.zip zpaq657.zip zpipe.201.zip

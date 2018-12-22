@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/intervaltree/Makefile 479987 2018-09-18 07:56:07Z linimon $
+# $FreeBSD: head/math/intervaltree/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	intervaltree
 DISTVERSION=	g20151213
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	jwb@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/sysutils/omnibackup/Makefile 474859 2018-07-18 12:48:33Z farrokhi $
+# $FreeBSD: head/sysutils/omnibackup/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	omnibackup
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	info@babaei.net

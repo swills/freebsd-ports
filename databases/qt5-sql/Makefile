@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/qt5-sql/Makefile 482034 2018-10-14 08:01:13Z tcberner $
+# $FreeBSD: head/databases/qt5-sql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sql
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	qt5-
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/py-orange3-associate/Makefile 472949 2018-06-21 04:44:03Z yuri $
+# $FreeBSD: head/misc/py-orange3-associate/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	orange3-associate
 DISTVERSION=	1.1.5-5
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-ge82d0db
 CATEGORIES=	misc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

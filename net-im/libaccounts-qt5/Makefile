@@ -1,9 +1,9 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/net-im/libaccounts-qt5/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net-im/libaccounts-qt5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libaccounts-qt5
 PORTVERSION=	1.13
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net-im
 MASTER_SITES=	https://drive.google.com/uc?export=download&id=0B8fX9XOwH_g4cTRCaktXNDRmMXM&dummy= \
 		LOCAL/rakuco

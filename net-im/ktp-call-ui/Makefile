@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-im/ktp-call-ui/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/net-im/ktp-call-ui/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	ktp-call-ui
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

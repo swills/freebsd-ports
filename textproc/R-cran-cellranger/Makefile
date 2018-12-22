@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/R-cran-cellranger/Makefile 482865 2018-10-23 18:13:04Z dbn $
+# $FreeBSD: head/textproc/R-cran-cellranger/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cellranger
 DISTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

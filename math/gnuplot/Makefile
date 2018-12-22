@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/gnuplot/Makefile 481456 2018-10-07 16:24:24Z glewis $
+# $FreeBSD: head/math/gnuplot/Makefile 487634 2018-12-16 21:47:29Z yuri $
 
 PORTNAME=	gnuplot
 PORTVERSION=	5.2.5
+PORTREVISION=	1
 CATEGORIES=	math graphics
 MASTER_SITES=	SF
 
@@ -98,5 +99,10 @@ post-install-DOCS-on:
 	cd ${WRKSRC}/docs && ${INSTALL_DATA} gnuplot.txt gnuplot.dvi \
 		gnuplot.ps ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC}/docs/psdoc && ${INSTALL_DATA} README ps_* ${STAGEDIR}${DOCSDIR}/psdoc
+
+.if defined(LITE)
+post-stage:
+	@cd ${STAGEDIR}${PREFIX} && ${RMDIR} libexec/gnuplot/5.2 libexec/gnuplot
+.endif
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 485289 2018-11-18 23:28:43Z danilo $
+# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 487525 2018-12-15 15:25:17Z danilo $
 
 PORTNAME=	aws-sdk-cpp
-PORTVERSION=	1.6.53
+PORTVERSION=	1.7.20
 CATEGORIES=	devel
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -16,7 +16,10 @@ BROKEN_armv7=		fails to build: runaway process
 BROKEN_powerpc64=	fails to build: runaway process
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
-		libpulse.so:audio/pulseaudio
+		libpulse.so:audio/pulseaudio \
+		libaws-c-common.so:devel/aws-c-commons \
+		libaws-checksums.so:devel/aws-checksums \
+		libaws-c-event-stream.so:devel/aws-c-event-stream
 
 USES=		cmake:noninja pkgconfig compiler:c++11-lib ssl
 
@@ -24,6 +27,8 @@ OPTIONS_DEFINE=	TEST
 OPTIONS_SUB=	yes
 
 TEST_CMAKE_OFF=	-DENABLE_TESTING=OFF
+
+CMAKE_ARGS+=	-DBUILD_DEPS=OFF
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	aws

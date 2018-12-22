@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/telepathy-logger-qt5/Makefile 482593 2018-10-20 16:26:07Z tcberner $
+# $FreeBSD: head/net-im/telepathy-logger-qt5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	telepathy-logger-qt
 DISTVERSION=	17.08.0
+PORTREVISION=	1
 CATEGORIES=	net-im
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTNAME}/${PORTVERSION:R}/src

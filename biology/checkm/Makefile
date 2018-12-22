@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/checkm/Makefile 486814 2018-12-07 00:26:04Z yuri $
+# $FreeBSD: head/biology/checkm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	CheckM
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.12
+PORTREVISION=	1
 CATEGORIES=	biology python
 
 MAINTAINER=	yuri@FreeBSD.org

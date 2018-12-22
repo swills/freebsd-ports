@@ -1,5 +1,5 @@
 # Created by: Glenn Trewitt <glenn@trewitt.org>
-# $FreeBSD: head/textproc/htmldoc/Makefile 487012 2018-12-09 02:48:31Z swills $
+# $FreeBSD: head/textproc/htmldoc/Makefile 487856 2018-12-20 08:30:51Z linimon $
 
 PORTNAME=		htmldoc
 PORTVERSION=		1.9.3
@@ -16,6 +16,7 @@ BROKEN_mips=	Complains of expecting ) before png_ptr
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
+USES=		compiler:c11
 USE_GITHUB=	yes
 GH_ACCOUNT=	michaelrsweet
 

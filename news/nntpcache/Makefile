@@ -1,5 +1,5 @@
 # Created by: proff@suburbia.net
-# $FreeBSD: head/news/nntpcache/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/news/nntpcache/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	nntpcache
 PORTVERSION=	3.0.2
@@ -12,7 +12,6 @@ COMMENT=	News caching/anti-spam/server-merging system
 
 BROKEN_aarch64=		fails to link: missing sbrk
 BROKEN_mips64=		fails to build: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
-BROKEN_powerpc64=	fails to install: ./mmap_tests: Quit (core dumped)
 
 NO_CDROM=	Free for individuals and non-military, non-profit organisations only
 

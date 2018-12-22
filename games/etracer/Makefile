@@ -1,8 +1,9 @@
 # Created by: Peter Dunning
-# $FreeBSD: head/games/etracer/Makefile 478756 2018-09-02 06:05:58Z tobik $
+# $FreeBSD: head/games/etracer/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	etr
 PORTVERSION=	0.7.5
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/extremetuxracer/releases/${PORTVERSION}
 PKGNAMESUFFIX=	acer

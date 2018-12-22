@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/z3/Makefile 485759 2018-11-24 11:43:44Z arrowd $
+# $FreeBSD: head/math/z3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	4.8.3
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	arrowd@FreeBSD.org

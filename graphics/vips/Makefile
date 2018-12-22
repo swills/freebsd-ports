@@ -1,8 +1,9 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/graphics/vips/Makefile 484596 2018-11-10 09:52:55Z danilo $
+# $FreeBSD: head/graphics/vips/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vips
 PORTVERSION=	8.7.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/libvips/libvips/releases/download/v${PORTVERSION}/
 

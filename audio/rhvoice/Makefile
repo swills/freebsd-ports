@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/rhvoice/Makefile 480891 2018-09-29 06:31:44Z yuri $
+# $FreeBSD: head/audio/rhvoice/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RHVoice
 DISTVERSION=	0.7.1-4
 DISTVERSIONSUFFIX=	-g1083ce5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

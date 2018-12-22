@@ -1,15 +1,16 @@
-# $FreeBSD: head/devel/qt5-qdbusviewer/Makefile 482575 2018-10-20 15:53:46Z tcberner $
+# $FreeBSD: head/devel/qt5-qdbusviewer/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	qdbusviewer
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 5 graphical interface to D-Bus
 
-USE_QT=		core dbus gui widgets xml buildtools_build
 USES=		compiler:c++11-lang qmake qt-dist:5,tools
+USE_QT=		core dbus gui widgets xml buildtools_build
 
 DESKTOP_ENTRIES="Qt 5 D-Bus Viewer" "" \
 		"${PREFIX}/share/pixmaps/qdbusviewer-qt5.png" \

@@ -1,6 +1,6 @@
-# $FreeBSD: head/audio/py-aubio/Makefile 480997 2018-10-01 03:13:59Z jhale $
+# $FreeBSD: head/audio/py-aubio/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	audio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

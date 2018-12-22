@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/pgbouncer/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/databases/pgbouncer/Makefile 487340 2018-12-13 04:53:29Z tobik $
 
 PORTNAME=	pgbouncer
 PORTVERSION=	1.8.1
@@ -11,9 +11,6 @@ MAINTAINER=	m.tsatsenko@gmail.com
 COMMENT=	Lightweight connection pooler for PostgreSQL
 
 LICENSE=	BSD2CLAUSE
-
-BROKEN_SSL=	openssl111
-BROKEN_SSL_REASON_openssl111=	variable has incomplete type 'X509_STORE_CTX' (aka 'struct x509_store_ctx_st')
 
 LIB_DEPENDS=	libevent.so:devel/libevent
 BUILD_DEPENDS+=	${LOCALBASE}/bin/gsed:textproc/gsed

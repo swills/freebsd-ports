@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/vitables/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/devel/vitables/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vitables
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0.0-55
 DISTVERSIONSUFFIX=	-gb064ad7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel science python
 
 MAINTAINER=	yuri@FreeBSD.org

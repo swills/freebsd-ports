@@ -1,8 +1,9 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-cstore_fdw/Makefile 478941 2018-09-04 09:43:56Z farrokhi $
+# $FreeBSD: head/databases/postgresql-cstore_fdw/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cstore_fdw
 PORTVERSION=	1.6.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-

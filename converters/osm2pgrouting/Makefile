@@ -1,9 +1,9 @@
-# $FreeBSD: head/converters/osm2pgrouting/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/converters/osm2pgrouting/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	osm2pgrouting
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.3.3
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	converters databases geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org

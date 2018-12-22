@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/R-cran-covr/Makefile 482864 2018-10-23 18:09:22Z dbn $
+# $FreeBSD: head/devel/R-cran-covr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	covr
 DISTVERSION=	3.2.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

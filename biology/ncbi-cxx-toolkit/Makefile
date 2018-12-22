@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/ncbi-cxx-toolkit/Makefile 481520 2018-10-08 07:54:49Z yuri $
+# $FreeBSD: head/biology/ncbi-cxx-toolkit/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ncbi-cxx-toolkit
 DISTVERSION=	21_0_0
+PORTREVISION=	1
 CATEGORIES=	biology science devel
 MASTER_SITES=	ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools++/2018/Apr_2_2018/
 DISTNAME=	ncbi_cxx--${DISTVERSION}

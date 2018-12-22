@@ -1,9 +1,9 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/devel/asmutils/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/asmutils/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	asmutils
 PORTVERSION=	0.18
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	http://asm.sourceforge.net/asmutils/
 

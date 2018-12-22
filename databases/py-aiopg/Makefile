@@ -1,8 +1,9 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/databases/py-aiopg/Makefile 477251 2018-08-15 18:32:55Z farrokhi $
+# $FreeBSD: head/databases/py-aiopg/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	aiopg
 PORTVERSION=	0.15.0
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

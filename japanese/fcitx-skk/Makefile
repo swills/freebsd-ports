@@ -1,7 +1,8 @@
-# $FreeBSD: head/japanese/fcitx-skk/Makefile 481592 2018-10-09 01:40:00Z wen $
+# $FreeBSD: head/japanese/fcitx-skk/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fcitx-skk
 PORTVERSION=	0.1.4
+PORTREVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/
 DIST_SUBDIR=	fcitx

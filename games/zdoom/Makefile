@@ -1,5 +1,5 @@
 # Created by: Kyle Evans <kevans@FreeBSD.org>
-# $FreeBSD: head/games/zdoom/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/games/zdoom/Makefile 487303 2018-12-12 16:42:54Z linimon $
 
 PORTNAME=	zdoom
 PORTVERSION=	2.8.1
@@ -19,8 +19,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libsndfile.so:audio/libsndfile
 
-NOT_FOR_ARCHS=		powerpc64
-NOT_FOR_ARCHS_REASON=	fails to compile: invokes x86 assembly
+BROKEN_powerpc64=	fails to compile: invokes x86 assembly
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	rheit

@@ -1,9 +1,9 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/sysutils/freefilesync/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/sysutils/freefilesync/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	freefilesync
 DISTVERSION=	9.8
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	https://www.freefilesync.org/download/ \
 		https://www.freefilesync.org/archive/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kf5-kholidays/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/net/kf5-kholidays/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	kholidays
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

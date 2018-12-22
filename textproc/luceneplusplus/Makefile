@@ -1,9 +1,9 @@
-# $FreeBSD: head/textproc/luceneplusplus/Makefile 484379 2018-11-07 03:04:57Z jbeich $
+# $FreeBSD: head/textproc/luceneplusplus/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lucene++
 PORTVERSION=	3.0.7
 DISTVERSIONPREFIX=	rel_
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	textproc
 
 MAINTAINER=	arved@FreeBSD.org

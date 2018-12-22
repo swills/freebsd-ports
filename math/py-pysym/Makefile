@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-pysym/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-pysym/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pysym
 DISTVERSION=	0.2.3
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

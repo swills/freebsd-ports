@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/scummvm-tools/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/games/scummvm-tools/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	scummvm-tools
 PORTVERSION=	2.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games emulators
 MASTER_SITES=	http://www.scummvm.org/frs/${PORTNAME}/${PORTVERSION}/
 

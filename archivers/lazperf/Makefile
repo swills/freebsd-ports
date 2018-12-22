@@ -1,8 +1,9 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/archivers/lazperf/Makefile 479316 2018-09-09 16:59:37Z sunpoet $
+# $FreeBSD: head/archivers/lazperf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lazperf
 DISTVERSION=	1.3.0
+PORTREVISION=	1
 CATEGORIES=	archivers databases geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org

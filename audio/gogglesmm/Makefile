@@ -1,9 +1,9 @@
 # Created by: Sascha Klauder <sklauder@trimind.de>
-# $FreeBSD: head/audio/gogglesmm/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/audio/gogglesmm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gogglesmm
 PORTVERSION=	1.2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 
 MAINTAINER=	jhale@FreeBSD.org

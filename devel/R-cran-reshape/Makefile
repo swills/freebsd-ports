@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-reshape/Makefile 482895 2018-10-24 08:56:40Z tota $
+# $FreeBSD: head/devel/R-cran-reshape/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	reshape
 PORTVERSION=	0.8.8
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

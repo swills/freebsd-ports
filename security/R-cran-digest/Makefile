@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/security/R-cran-digest/Makefile 481883 2018-10-12 08:08:24Z tota $
+# $FreeBSD: head/security/R-cran-digest/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	digest
 PORTVERSION=	0.6.18
+PORTREVISION=	1
 CATEGORIES=	security
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

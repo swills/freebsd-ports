@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-gmodels/Makefile 473702 2018-07-02 04:49:02Z tota $
+# $FreeBSD: head/devel/R-cran-gmodels/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gmodels
 DISTVERSION=	2.18.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

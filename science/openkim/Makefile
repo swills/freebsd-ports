@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/openkim/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/science/openkim/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openkim
 PORTVERSION=	1.1.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	science
 MASTER_SITES=	http://s3.openkim.org/openkim-api/
 DISTNAME=	${PORTNAME}-api-v${PORTVERSION}

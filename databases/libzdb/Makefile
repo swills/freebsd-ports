@@ -1,9 +1,9 @@
 # Created by: vanilla@
-# $FreeBSD: head/databases/libzdb/Makefile 419869 2016-08-08 17:40:33Z pi $
+# $FreeBSD: head/databases/libzdb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libzdb
 PORTVERSION=	3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://www.tildeslash.com/libzdb/dist/
 

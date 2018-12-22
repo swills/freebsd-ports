@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/marble/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/astro/marble/Makefile 487420 2018-12-14 10:19:10Z tcberner $
 
 PORTNAME=	marble
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -20,7 +20,7 @@ USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		plasma-framework runner service sonnet textwidgets wallet \
 		widgetsaddons xmlgui
 USE_QT=		concurrent core dbus declarative designer gui location network opengl \
-		phonon4 printsupport script sql svg webkit widgets xml \
+		phonon4 printsupport script sql svg webchannel webengine widgets xml \
 		buildtools_build qmake_build
 
 USE_LDCONFIG=	yes

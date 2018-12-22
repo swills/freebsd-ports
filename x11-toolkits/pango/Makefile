@@ -1,8 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/pango/Makefile 486758 2018-12-06 14:01:15Z linimon $
+# $FreeBSD: head/x11-toolkits/pango/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pango
 PORTVERSION=	1.42.4
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

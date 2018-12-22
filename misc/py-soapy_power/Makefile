@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/py-soapy_power/Makefile 473693 2018-07-02 01:09:27Z yuri $
+# $FreeBSD: head/misc/py-soapy_power/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	soapy_power
 DISTVERSION=	1.6.1
+PORTREVISION=	1
 CATEGORIES=	misc hamradio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,6 @@
-# $FreeBSD: head/www/fpc-googleapi/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/www/fpc-googleapi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
+PORTREVISION=	1
 CATEGORIES=	www lang
 PKGNAMESUFFIX=	-googleapi
 

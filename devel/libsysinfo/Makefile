@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/libsysinfo/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/devel/libsysinfo/Makefile 487244 2018-12-11 17:13:55Z lwhsu $
 
 PORTNAME=	libsysinfo
 PORTVERSION=	0.0.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	imp@bsdimp.com
@@ -11,10 +11,11 @@ COMMENT=	GNU libc's sysinfo port for FreeBSD
 
 LICENSE=	BSD3CLAUSE
 
+USES=		uidfix
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdimp
 
-USES=		uidfix
 USE_LDCONFIG=	yes
 
 LDFLAGS+=	-lkvm
@@ -23,6 +24,13 @@ PLIST_FILES=	include/sys/sysinfo.h \
 		lib/libsysinfo.a \
 		lib/libsysinfo.so \
 		lib/libsysinfo.so.0 \
+		libdata/pkgconfig/libsysinfo.pc \
 		man/man3/sysinfo.3.gz
+
+SUB_FILES=	libsysinfo.pc
+SUB_LIST=	PREFIX="${PREFIX}" PORTVERSION="${PORTVERSION}" COMMENT="${COMMENT}"
+
+post-install:
+	${INSTALL_DATA} ${WRKDIR}/libsysinfo.pc ${STAGEDIR}${PREFIX}/libdata/pkgconfig/
 
 .include <bsd.port.mk>

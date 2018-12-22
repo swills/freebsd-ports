@@ -1,9 +1,9 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/www/trytond28_google_maps/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/trytond28_google_maps/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	trytond28_google_maps
 PORTVERSION=	2.8.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www finance python
 MASTER_SITES=	https://pypi.python.org/packages/source/t/trytond_google_maps/ \
 		http://downloads.tryton.org/${PORTVERSION:R}/

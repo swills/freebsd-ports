@@ -1,10 +1,13 @@
-# $FreeBSD: head/comms/py-qt5-serialport/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/comms/py-qt5-serialport/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	serialport
 CATEGORIES=	comms devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtSerialPort module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtSerialPort
 PYQT_DIST=	yes

@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/deskutils/launchy/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/deskutils/launchy/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	launchy
 PORTVERSION=	2.5
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/${PORTNAME}/Launchy%20on%20Linux/${PORTVERSION}
 

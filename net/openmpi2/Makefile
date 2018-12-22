@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/openmpi2/Makefile 480703 2018-09-25 22:22:37Z danilo $
+# $FreeBSD: head/net/openmpi2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openmpi
 PORTVERSION=	2.1.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net parallel
 MASTER_SITES=	http://www.open-mpi.org/software/ompi/v${PORTVERSION:R}/downloads/
 PKGNAMESUFFIX=	2

@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-hiredis/Makefile 484734 2018-11-11 18:21:45Z sunpoet $
+# $FreeBSD: head/databases/rubygem-hiredis/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hiredis
 PORTVERSION=	0.6.3
+PORTREVISION=	1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

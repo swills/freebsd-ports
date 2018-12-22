@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/katawa-shoujo/Makefile 478837 2018-09-03 00:21:45Z jbeich $
+# $FreeBSD: head/games/katawa-shoujo/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	katawa-shoujo
 PORTVERSION=	1.3.1
 DISTVERSIONSUFFIX=-[linux-x86][18161880]
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	http://dl.katawa-shoujo.com/gold_${PORTVERSION}/:game \
 		http://dl.katawa-shoujo.com/patches/:patch \

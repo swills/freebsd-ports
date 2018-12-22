@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/ebook2cwgui/Makefile 483822 2018-11-02 16:36:00Z linimon $
+# $FreeBSD: head/comms/ebook2cwgui/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ebook2cwgui
 PORTVERSION=	0.1.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://fkurz.net/ham/ebook4cw/
 

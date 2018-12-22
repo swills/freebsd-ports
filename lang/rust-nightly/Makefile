@@ -1,7 +1,7 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/lang/rust-nightly/Makefile 480524 2018-09-23 18:53:49Z jbeich $
+# $FreeBSD: head/lang/rust-nightly/Makefile 487978 2018-12-21 10:37:45Z tobik $
 
-PORTVERSION=	1.25.0.${NIGHTLY_DATE:C,-,,g}
+PORTVERSION=	1.33.0.${NIGHTLY_DATE:C,-,,g}
 PKGNAMESUFFIX=	-nightly
 DISTNAME=	rustc-nightly-src
 
@@ -9,21 +9,27 @@ MASTERDIR=	${.CURDIR}/../rust
 PATCHDIR=	${.CURDIR}/files
 DISTINFO_FILE=	${.CURDIR}/distinfo
 
-CONFLICTS_BUILD=	rust # see FIXME in `pre-fetch` in lang/rust/Makefile
 CONFLICTS_INSTALL=	rust
 
 # Which source to pull:
 #   https://static.rust-lang.org/dist/${NIGHTLY_DATE}/rustc-nightly-src.tar.gz
-NIGHTLY_DATE=			2018-04-03
+#   https://static.rust-lang.org/dist/channel-rust-nightly.toml
+NIGHTLY_DATE=			2018-12-20
 NIGHTLY_SUBDIR=			${NIGHTLY_DATE}/
 
 # See WRKSRC/src/stage0.txt for this date
-BOOTSTRAPS_DATE=		2018-03-18
+BOOTSTRAPS_DATE=		2018-12-09
 RUST_BOOTSTRAP_VERSION=		beta
 CARGO_BOOTSTRAP_VERSION=	beta
 
+CARGO_VENDOR_DIR=	${WRKSRC}/vendor
+
+# Other bootstraps aren't provided by upstream yet
 ONLY_FOR_ARCHS=			amd64 i386
-IGNORE=				is older than stable version. Get nightly via rustup or \
-				use lang/rust and pass RUSTC_BOOTSTRAP=1 via environ(7)
+
+post-patch:	nightly-post-patch
+nightly-post-patch:
+# Work around unused_unsafe errors in libcore with stage0
+	@${REINPLACE_CMD} '/RUSTC_DENY_WARNINGS/d' ${WRKSRC}/src/bootstrap/builder.rs
 
 .include "${MASTERDIR}/Makefile"

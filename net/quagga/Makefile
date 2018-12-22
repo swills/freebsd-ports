@@ -1,9 +1,9 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/quagga/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/net/quagga/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	quagga
 PORTVERSION=	1.2.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net ipv6
 MASTER_SITES=	SAVANNAH
 

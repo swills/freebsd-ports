@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/clash/Makefile 486930 2018-12-08 09:30:10Z yuri $
+# $FreeBSD: head/net/clash/Makefile 487951 2018-12-21 05:04:00Z yuri $
 
 PORTNAME=	clash
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.10.1
+DISTVERSION=	0.10.2
 CATEGORIES=	net
 
 MAINTAINER=	yuri@FreeBSD.org

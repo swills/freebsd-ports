@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/chrono/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/science/chrono/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	chrono
 DISTVERSION=	2.0.0-9070
 DISTVERSIONSUFFIX=	-g57a828dc0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science devel
 
 MAINTAINER=	yuri@FreeBSD.org

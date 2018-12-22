@@ -1,8 +1,9 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/databases/slony1v2/Makefile 448857 2017-08-28 10:40:14Z olgeni $
+# $FreeBSD: head/databases/slony1v2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	slony1v2
 PORTVERSION=	2.2.6
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://main.slony.info/downloads/2.2/source/
 DISTNAME=	slony1-${PORTVERSION}

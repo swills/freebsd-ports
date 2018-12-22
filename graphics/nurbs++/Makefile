@@ -1,9 +1,9 @@
 # Created by: R Joseph Wright <rjoseph@mammalia.org>
-# $FreeBSD: head/graphics/nurbs++/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/nurbs++/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nurbs++
 PORTVERSION=	3.0.11
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	SF/libnurbs/nurbs%2B%2B/${PORTVERSION}
 

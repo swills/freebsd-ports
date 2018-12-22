@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/print/scribus/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/print/scribus/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	scribus
 PORTVERSION=	1.4.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print editors
 MASTER_SITES=	SF \
 		http://www.scribus.net/downloads/${PORTVERSION}/

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/xcrysden/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/science/xcrysden/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xcrysden
 DISTVERSION=	1.5.60
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	science
 MASTER_SITES=	http://www.xcrysden.org/download/
 

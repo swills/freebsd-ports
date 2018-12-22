@@ -1,5 +1,5 @@
 # Created by: 'Big Bad Bob' Frazier <bobf@mrp3.com>
-# $FreeBSD: head/comms/uarduno/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/comms/uarduno/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	uarduno
 PORTVERSION=	1.02
@@ -11,8 +11,6 @@ MAINTAINER=	bobf@mrp3.com
 COMMENT=	FreeBSD Kernel Driver for the Arduino Uno USB interface
 
 LICENSE=	BSD4CLAUSE
-
-BROKEN_powerpc64=	fails to compile: pcpu.h: error: size of array '__assert_0' is negative
 
 USES=		kmod uidfix
 

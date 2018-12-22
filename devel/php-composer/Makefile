@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 477819 2018-08-22 20:00:20Z swills $
+# $FreeBSD: head/devel/php-composer/Makefile 487392 2018-12-13 22:08:12Z madpilot $
 
 PORTNAME=	composer
-DISTVERSION=	1.7.2
+DISTVERSION=	1.8.0
 CATEGORIES=	devel
 MASTER_SITES=	http://getcomposer.org/download/${DISTVERSION}/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
-# $FreeBSD: head/math/fftw3/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/math/fftw3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fftw3
 DISTVERSION=	3.3.8
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES=	math
 MASTER_SITES=	http://www.fftw.org/ \
 		ftp://ftp.fftw.org/pub/fftw/

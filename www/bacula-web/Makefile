@@ -1,8 +1,9 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/www/bacula-web/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/bacula-web/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bacula-web
 DISTVERSION=	7.2.0
+PORTREVISION=	1
 CATEGORIES=	www sysutils
 MASTER_SITES=	http://www.bacula-web.org/files/bacula-web.org/downloads/
 

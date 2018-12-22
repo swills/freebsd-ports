@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/hypatia_engine/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/games/hypatia_engine/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hypatia_engine
 PORTVERSION=	0.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

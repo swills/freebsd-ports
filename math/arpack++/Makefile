@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/arpack++/Makefile 481261 2018-10-05 05:24:46Z yuri $
+# $FreeBSD: head/math/arpack++/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	arpack++
 PORTVERSION=	1.2
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	math
 MASTER_SITES=	http://www.ime.unicamp.br/%7echico/arpack++/
 DISTNAME=	${PORTNAME}

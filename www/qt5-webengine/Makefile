@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webengine/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/www/qt5-webengine/Makefile 487600 2018-12-16 16:34:25Z tijl $
 
 # QtWebEngine itself is a very thin layer of Qt code on top of a large part of
 # Chromium (everything up to the content/ layer). As such, most of the work in
@@ -20,7 +20,7 @@
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	10
+PORTREVISION=	12
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -45,7 +45,6 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libpng.so:graphics/png \
 		libre2.so:devel/re2 \
 		libsnappy.so:archivers/snappy \
-		libsrtp.so:net/libsrtp \
 		libwebp.so:graphics/webp
 
 DISTINFO_FILE=	${.CURDIR}/distinfo

@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/archivers/quazip/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/archivers/quazip/Makefile 487601 2018-12-16 16:49:17Z rene $
 
 PORTNAME=	quazip
 DISTVERSION=	0.7.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	archivers
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	-${FLAVOR}
@@ -16,13 +16,12 @@ LICENSE=	LGPL21
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
-qt4_DEPRECATED=		Qt4 has been EOL since december 2015
-qt4_EXPIRATION_DATE=	2019-03-15
-
 USES=		cmake:outsource
 USE_LDCONFIG=	yes
 
 .  if ${FLAVOR} == qt4
+DEPRECATED=	Qt4 has been EOL since december 2015
+EXPIRATION_DATE=2019-03-15
 USES+=		qt:4
 USE_QT=		corelib moc_build network_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DBUILD_WITH_QT4:BOOL=TRUE

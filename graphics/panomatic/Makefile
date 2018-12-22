@@ -1,9 +1,9 @@
 # Created by: argv[0] (Iouri V. Ivliev)
-# $FreeBSD: head/graphics/panomatic/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/graphics/panomatic/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	panomatic
 PORTVERSION=	0.9.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

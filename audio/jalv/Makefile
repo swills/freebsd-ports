@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/jalv/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/jalv/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	jalv
 PORTVERSION=	1.6.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 

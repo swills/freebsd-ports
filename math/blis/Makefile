@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/blis/Makefile 484161 2018-11-05 01:09:48Z jmd $
+# $FreeBSD: head/math/blis/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	blis
 PORTVERSION=	0.5.0
@@ -13,8 +13,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	bash:shells/bash \
 		llvm60>=0:devel/llvm60
-
-BROKEN_powerpc64=	fails to configure: common.mk:118: Unable to determine compiler vendor
 
 OPTIONS_DEFINE=	PARA CBLAS
 PARA_DESC=	use pthread parallelization

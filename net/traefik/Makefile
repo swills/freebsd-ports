@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/traefik/Makefile 486944 2018-12-08 12:35:17Z riggs $
+# $FreeBSD: head/net/traefik/Makefile 487625 2018-12-16 20:01:43Z riggs $
 
 PORTNAME=	traefik
-PORTVERSION=	1.7.5
+PORTVERSION=	1.7.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 MASTER_SITES=	LOCAL/riggs/${PORTNAME}:webui

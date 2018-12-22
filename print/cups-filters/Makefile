@@ -1,7 +1,7 @@
-# $FreeBSD: head/print/cups-filters/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/print/cups-filters/Makefile 487751 2018-12-18 13:18:41Z tijl $
 
 PORTNAME=	cups-filters
-PORTVERSION=	1.21.3
+PORTVERSION=	1.21.6
 CATEGORIES=	print
 MASTER_SITES=	http://www.openprinting.org/download/cups-filters/
 

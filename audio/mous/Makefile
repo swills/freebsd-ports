@@ -1,9 +1,10 @@
 # Created by: Yanhui Shen <shen.elf@gmail.com>
-# $FreeBSD: head/audio/mous/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/mous/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mous
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0.1
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	shen.elf@gmail.com

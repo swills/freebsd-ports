@@ -1,9 +1,9 @@
 # Created by: Cristiano Rolim Pereira <cristianorolim@outlook.com>
-# $FreeBSD: head/devel/vera++/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/devel/vera++/Makefile 487853 2018-12-20 07:55:58Z linimon $
 
 PORTNAME=	vera++
 PORTVERSION=	1.3.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/verateam/vera/downloads/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
 
 BUILD_DEPENDS=	boost-libs>=0:devel/boost-libs
 
-USES=		cmake:outsource tk
+USES=		compiler:c++11-lang cmake:outsource tk
 
 CMAKE_ARGS+=	-DTCL_INCLUDE_PATH=${TCL_INCLUDEDIR} \
 		-DTK_INCLUDE_PATH=${TK_INCLUDEDIR} \

@@ -1,9 +1,9 @@
 # Created by: Diederik de Groot
-# $FreeBSD: head/net/asterisk-chan_sccp/Makefile 452780 2017-10-24 15:05:30Z madpilot $
+# $FreeBSD: head/net/asterisk-chan_sccp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		chan_sccp
 PORTVERSION=		4.2.3
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		SF/chan-sccp-b
 PKGNAMEPREFIX=		asterisk-

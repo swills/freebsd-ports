@@ -1,10 +1,10 @@
 # Created by: Marc van Woerkom <3d@FreeBSD.org>
-# $FreeBSD: head/audio/audacity/Makefile 484944 2018-11-14 21:19:37Z acm $
+# $FreeBSD: head/audio/audacity/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	audacity
 PORTVERSION=	2.3.0
 DISTVERSIONPREFIX=	Audacity-
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	xxjack12xx@gmail.com

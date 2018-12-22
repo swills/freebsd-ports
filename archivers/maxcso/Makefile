@@ -1,8 +1,9 @@
-# $FreeBSD: head/archivers/maxcso/Makefile 484487 2018-11-08 23:19:03Z lwhsu $
+# $FreeBSD: head/archivers/maxcso/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		maxcso
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.10.0
+PORTREVISION=	1
 CATEGORIES=		archivers
 
 MAINTAINER=	greg@unrelenting.technology

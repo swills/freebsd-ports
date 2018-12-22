@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/qt5-qdbus/Makefile 482034 2018-10-14 08:01:13Z tcberner $
+# $FreeBSD: head/devel/qt5-qdbus/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qdbus
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 

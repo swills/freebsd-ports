@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/domoticz/Makefile 485239 2018-11-18 18:27:11Z linimon $
+# $FreeBSD: head/www/domoticz/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	domoticz
 PORTVERSION=	4.${DOMOTICZ_REL}
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	www
 
 MAINTAINER=	kiwi@oav.net

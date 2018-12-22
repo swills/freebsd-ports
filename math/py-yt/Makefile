@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-yt/Makefile 482404 2018-10-19 04:42:29Z yuri $
+# $FreeBSD: head/math/py-yt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	yt
 DISTVERSION=	3.5.0
+PORTREVISION=	1
 CATEGORIES=	math astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

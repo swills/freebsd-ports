@@ -1,7 +1,7 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/mupen64plus-rsp-cxd4/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/emulators/mupen64plus-rsp-cxd4/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=	3
+PORTREVISION=	4
 PKGNAMESUFFIX=	-rsp-cxd4
 DISTFILES=	${PORTNAME}${PKGNAMESUFFIX}-src-${PORTVERSION}${EXTRACT_SUFX}:plugin
 

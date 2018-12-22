@@ -1,5 +1,5 @@
 # Created by: keith@FreeBSD.org
-# $FreeBSD: head/math/gap/Makefile 461577 2018-02-12 11:42:15Z johans $
+# $FreeBSD: head/math/gap/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	gap
 PORTVERSION=	4.8.10.${GAP_DISTDATE}
@@ -14,10 +14,9 @@ COMMENT=	GAP is a system for computational discrete algebra
 
 LICENSE=	GPLv2+
 
-LIB_DEPENDS=	libgmp.so:math/gmp
-
 BROKEN_aarch64=		fails to link: undefined reference to SyAllocBags
-BROKEN_powerpc64=	fails to package: 2_manifolds_54.scb: No such file or directory
+
+LIB_DEPENDS=	libgmp.so:math/gmp
 
 USES=		gmake shebangfix tar:bzip2
 SHEBANG_FILES=	configure \

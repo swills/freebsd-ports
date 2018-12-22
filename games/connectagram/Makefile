@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/connectagram/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/connectagram/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	connectagram
 PORTVERSION=	1.2.9
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/connectagram/

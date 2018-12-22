@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/getdp/Makefile 487165 2018-12-10 13:42:52Z stephen $
+# $FreeBSD: head/science/getdp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	getdp
 PORTVERSION=	3.0.4
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	http://www.geuz.org/getdp/src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source

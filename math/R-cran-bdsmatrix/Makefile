@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-bdsmatrix/Makefile 464658 2018-03-16 07:34:26Z tota $
+# $FreeBSD: head/math/R-cran-bdsmatrix/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bdsmatrix
 DISTVERSION=	1.3-3
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

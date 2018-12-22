@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/ALPSCore/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/science/ALPSCore/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ALPSCore
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.0
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	science
 
 MAINTAINER=	mike.d.ft402@gmail.com

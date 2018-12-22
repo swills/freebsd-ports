@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/devel/svn2git/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/svn2git/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	svn2git
 PORTVERSION=	1.0.12
@@ -26,6 +26,7 @@ OPTIONS_DEFINE=	FREEBSD_REPO
 FREEBSD_REPO_DESC=	FreeBSD-repo only mode
 
 QMAKE_ARGS=	SVN_INCLUDE=${LOCALBASE}/include/subversion-1 \
+		SVN_LIBDIR=${LOCALBASE}/lib \
 		APR_INCLUDE=${LOCALBASE}/include/apr-1
 PLIST_FILES=	bin/svn2git
 

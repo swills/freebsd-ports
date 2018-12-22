@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/net-im/libqtelegram-ae/Makefile 483479 2018-10-30 12:02:51Z linimon $
+# $FreeBSD: head/net-im/libqtelegram-ae/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libqtelegram-ae
 PORTVERSION=	6.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	net-im

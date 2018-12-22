@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/p8-platform/Makefile 483239 2018-10-28 08:31:14Z linimon $
+# $FreeBSD: head/devel/p8-platform/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	p8-platform
 PORTVERSION=	2.1.0.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	devel
 

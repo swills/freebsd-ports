@@ -1,8 +1,9 @@
-# $FreeBSD: head/net/reaver/Makefile 483805 2018-11-02 13:16:51Z 0mp $
+# $FreeBSD: head/net/reaver/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	reaver
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.6.5
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	freebsd@sysctl.cz

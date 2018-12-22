@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/ga/Makefile 480395 2018-09-22 16:36:38Z yuri $
+# $FreeBSD: head/devel/ga/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ga
 DISTVERSIONPREFIX=	v
 DISTVERSION=	5.7
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

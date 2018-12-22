@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/openal-soft/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openal-soft
 PORTVERSION=	1.19.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://openal-soft.org/openal-releases/
 

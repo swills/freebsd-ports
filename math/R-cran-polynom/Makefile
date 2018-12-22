@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/R-cran-polynom/Makefile 478651 2018-09-01 02:25:22Z wen $
+# $FreeBSD: head/math/R-cran-polynom/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	polynom
 DISTVERSION=	1.3-9
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

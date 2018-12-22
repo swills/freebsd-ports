@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/qownnotes/Makefile 481500 2018-10-08 00:18:58Z ler $
+# $FreeBSD: head/deskutils/qownnotes/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	qownnotes
 DISTVERSION=	18.07.2
@@ -10,7 +10,7 @@ COMMENT=	Manage notes using nextcloud and markdown
 
 LICENSE=	GPLv2
 
-USES=		qmake qt:5 tar:xz
+USES=		gmake qmake qt:5 tar:xz
 USE_QT=		buildtools_build linguisttools_build core dbus gui network sql svg webkit xml
 
 .include <bsd.port.mk>

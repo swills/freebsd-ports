@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/R-cran-fansi/Makefile 481875 2018-10-12 05:57:52Z tota $
+# $FreeBSD: head/devel/R-cran-fansi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fansi
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

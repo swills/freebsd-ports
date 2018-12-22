@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11/sddm/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/x11/sddm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sddm
 PORTVERSION=	0.17.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/rocs/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/math/rocs/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	rocs
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

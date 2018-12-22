@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/R-cran-testthat/Makefile 482862 2018-10-23 17:55:45Z dbn $
+# $FreeBSD: head/devel/R-cran-testthat/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	testthat
 DISTVERSION=	2.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome-session/Makefile 486869 2018-12-07 16:05:57Z linimon $
+# $FreeBSD: head/x11/gnome-session/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnome-session
 PORTVERSION=	3.28.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

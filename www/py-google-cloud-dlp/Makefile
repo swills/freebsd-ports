@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-google-cloud-dlp/Makefile 482749 2018-10-22 16:04:29Z jpaetzel $
+# $FreeBSD: head/www/py-google-cloud-dlp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	google-cloud-dlp
 PORTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

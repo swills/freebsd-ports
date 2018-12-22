@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/retroarch/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/games/retroarch/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RetroArch
 PORTVERSION=	1.3.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 
 MAINTAINER=	yuri@FreeBSD.org

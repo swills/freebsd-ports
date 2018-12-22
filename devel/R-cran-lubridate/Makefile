@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-lubridate/Makefile 467205 2018-04-13 01:32:06Z tota $
+# $FreeBSD: head/devel/R-cran-lubridate/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lubridate
 PORTVERSION=	1.7.4
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

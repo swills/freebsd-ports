@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/timewarrior/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/deskutils/timewarrior/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	timewarrior
 PORTVERSION=	1.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	https://taskwarrior.org/download/
 DISTNAME=	timew-${PORTVERSION}

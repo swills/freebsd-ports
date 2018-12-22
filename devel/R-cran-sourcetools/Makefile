@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-sourcetools/Makefile 468332 2018-04-26 08:21:58Z tota $
+# $FreeBSD: head/devel/R-cran-sourcetools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sourcetools
 PORTVERSION=	0.1.7
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

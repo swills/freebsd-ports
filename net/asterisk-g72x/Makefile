@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/asterisk-g72x/Makefile 483629 2018-10-31 23:42:52Z madpilot $
+# $FreeBSD: head/net/asterisk-g72x/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	g72x
 PORTVERSION=	1.4.3
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://asterisk.hosting.lv/src/
 DISTNAME=	asterisk-${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

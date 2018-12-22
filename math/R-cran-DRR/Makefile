@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-DRR/Makefile 465160 2018-03-21 08:41:27Z tota $
+# $FreeBSD: head/math/R-cran-DRR/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	DRR
 PORTVERSION=	0.0.3
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/gdb/Makefile 487193 2018-12-10 17:23:19Z jhb $
+# $FreeBSD: head/devel/gdb/Makefile 487307 2018-12-12 17:34:57Z jhb $
 
 PORTNAME=	gdb
 PORTVERSION=	8.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libmpfr.so:math/mpfr
 TEST_DEPENDS=	runtest:misc/dejagnu
 
 USES=		compiler:c++11-lang cpe gmake libtool tar:xz
+USE_PYTHON=	py3kplist
 
 TEST_TARGET=	check
 
@@ -92,11 +93,11 @@ EXCLUDE+=	readline
 EXCLUDE+=	zlib
 .endif
 
-.if ${ARCH} == "amd64"
+.if ${ARCH} == amd64
 CONFIGURE_TARGET=	x86_64-portbld-freebsd${OSREL}
 .endif
 
-.if ${COMPILER_TYPE} == "clang"
+.if ${CHOSEN_COMPILER_TYPE} == clang
 CFLAGS+=	-Wno-extended-offsetof
 .endif
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/elisa/Makefile 484877 2018-11-13 15:34:47Z adridg $
+# $FreeBSD: head/audio/elisa/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	elisa
 PORTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	audio kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/stacks/Makefile 483245 2018-10-28 08:58:00Z linimon $
+# $FreeBSD: head/biology/stacks/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	stacks
 DISTVERSION=	1.48
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	biology
 MASTER_SITES=	http://catchenlab.life.illinois.edu/stacks/source/
 

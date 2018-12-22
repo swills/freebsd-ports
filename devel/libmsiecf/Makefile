@@ -1,9 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libmsiecf/Makefile 478015 2018-08-25 08:32:59Z antoine $
+# $FreeBSD: head/devel/libmsiecf/Makefile 487903 2018-12-20 19:32:49Z antoine $
 
 PORTNAME=	libmsiecf
-DISTVERSION=	alpha-20170116
-PORTREVISION=	1
+DISTVERSION=	alpha-20181215
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libmsiecf/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

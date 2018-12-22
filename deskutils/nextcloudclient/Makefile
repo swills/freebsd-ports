@@ -1,10 +1,10 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/nextcloudclient/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/deskutils/nextcloudclient/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nextcloudclient
 PORTVERSION=	0.0.0.20180323
 #DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	deskutils
 
 MAINTAINER=	mr@FreeBSD.org

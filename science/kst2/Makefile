@@ -1,8 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/science/kst2/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/science/kst2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kst
 DISTVERSION=	${KST_VERSION}.${KST_DATE}
+PORTREVISION=	1
 CATEGORIES=	science kde
 
 MAINTAINER=	makc@FreeBSD.org

@@ -1,10 +1,10 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/goocanvasmm2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/goocanvasmm2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #   $MCom: ports/trunk/graphics/goocanvasmm2/Makefile 17268 2013-04-01 05:13:11Z marcus $
 
 PORTNAME=	goocanvasmm
 PORTVERSION=	1.90.9
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	2

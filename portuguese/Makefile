@@ -1,4 +1,4 @@
-# $FreeBSD: head/portuguese/Makefile 461243 2018-02-08 15:11:50Z dbn $
+# $FreeBSD: head/portuguese/Makefile 487994 2018-12-21 13:36:25Z rene $
 #
 
     COMMENT = Portuguese language support
@@ -14,7 +14,6 @@
     SUBDIR += libreoffice
     SUBDIR += libreoffice-pt_BR
     SUBDIR += mythes
-    SUBDIR += php_doc-br
     SUBDIR += webalizer-pt_BR
     SUBDIR += webalizer-pt_PT
 

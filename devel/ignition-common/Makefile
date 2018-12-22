@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/ignition-common/Makefile 485525 2018-11-21 17:17:39Z yuri $
+# $FreeBSD: head/devel/ignition-common/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ignition-common
 DISTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

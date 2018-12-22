@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-Brew/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-Text-Brew/Makefile 487228 2018-12-11 09:01:31Z amdmi3 $
 
 PORTNAME=	Text-Brew
 PORTVERSION=	0.02
@@ -10,7 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for the Brew edit distance
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

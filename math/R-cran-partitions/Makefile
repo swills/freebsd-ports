@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/R-cran-partitions/Makefile 478652 2018-09-01 02:48:35Z wen $
+# $FreeBSD: head/math/R-cran-partitions/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	partitions
 DISTVERSION=	1.9-19
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

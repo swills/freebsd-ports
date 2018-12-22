@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 488048 2018-12-22 02:10:21Z linimon $
 
 PORTNAME=	lumina-xdg-entry
 DISTVERSIONPREFIX=	v
@@ -20,9 +20,9 @@ I18N_DESC=	Install localization files
 
 MAKE_JOBS_UNSAFE=yes
 
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core gui widgets network svg \
 		buildtools_build x11extras concurrent multimedia
-USES=		qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	trueos
 GH_PROJECT=	lumina

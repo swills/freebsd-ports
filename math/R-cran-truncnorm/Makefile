@@ -1,8 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/R-cran-truncnorm/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-truncnorm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	truncnorm
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSION=	1.0-8
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}

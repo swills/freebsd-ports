@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-viridisLite/Makefile 465167 2018-03-21 10:27:19Z tota $
+# $FreeBSD: head/graphics/R-cran-viridisLite/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	viridisLite
 PORTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

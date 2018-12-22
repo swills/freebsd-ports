@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-minqa/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-minqa/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	minqa
 PORTVERSION=	1.2.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

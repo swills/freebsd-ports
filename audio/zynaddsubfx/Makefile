@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/zynaddsubfx/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/audio/zynaddsubfx/Makefile 487571 2018-12-16 09:32:22Z yuri $
 
 PORTNAME=	zynaddsubfx
 PORTVERSION=	3.0.3
@@ -47,7 +47,7 @@ GUI_ON=				-DGuiModule:STRING=fltk
 GUI_CMAKE_OFF=			-DGuiModule:STRING=OFF
 GUI_USE+=			XORG=x11,xext,xfixes,xcursor,xrender,ice,sm,xpm,xinerama,xft
 GUI_USE+=			GL=gl,glu
-GUI_USES=			jpeg
+GUI_USES=			gl jpeg
 
 OSS_CMAKE_ON=			-DOssEnable:BOOL=ON
 OSS_CMAKE_OFF=			-DOssEnable:BOOL=OFF

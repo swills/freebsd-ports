@@ -1,8 +1,9 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/misc/py-qt4-doc/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/misc/py-qt4-doc/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	doc
 PORTVERSION=	${PYQT4_VERSION}
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	misc devel python
 MASTER_SITES=	${MASTER_SITES_PYQT4}
@@ -20,18 +21,16 @@ NO_BUILD=	yes
 
 USES=		python pyqt:4
 USE_PYQT=	#
-USE_PYTHON=	flavors
-
-DOCSDIR=	${PREFIX}/share/doc/py-qt4
+USE_PYTHON=	concurrent flavors py3kplist
 
 do-install:
 	cd ${WRKSRC} &&\
-		${MKDIR} ${STAGEDIR}${DOCSDIR} &&\
+		${MKDIR} ${STAGEDIR}${PYQT_DOCDIR} &&\
 		${INSTALL_DATA} LICENSE \
 				NEWS \
 				README \
 				THANKS\
-			${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC}/doc && ${COPYTREE_SHARE} html ${STAGEDIR}${DOCSDIR}
+			${STAGEDIR}${PYQT_DOCDIR}
+	cd ${WRKSRC}/doc && ${COPYTREE_SHARE} html ${STAGEDIR}${PYQT_DOCDIR}
 
 .include <bsd.port.mk>

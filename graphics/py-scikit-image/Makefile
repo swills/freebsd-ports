@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-scikit-image/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/graphics/py-scikit-image/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scikit-image
 PORTVERSION=	0.13.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

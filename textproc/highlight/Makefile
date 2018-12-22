@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/highlight/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/textproc/highlight/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	highlight
 PORTVERSION=	3.43
-PORTREVISION=	2
+PORTREVISION=	4
 PORTEPOCH=	3
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.andre-simon.de/zip/

@@ -1,9 +1,10 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/math/nlopt/Makefile 487051 2018-12-09 14:53:56Z riggs $
+# $FreeBSD: head/math/nlopt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nlopt
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.5.0
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	rhurlin@gwdg.de

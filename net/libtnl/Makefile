@@ -1,9 +1,9 @@
 # Created by: aaron@FreeBSD.org
-# $FreeBSD: head/net/libtnl/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/libtnl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libtnl
 PORTVERSION=	1.5.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net devel
 MASTER_SITES=	SF/opentnl/TNL%20Source/${PORTVERSION}
 DISTNAME=	tnl-${PORTVERSION}-source

@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Tie-LevelDB/Makefile 480084 2018-09-18 23:41:42Z sunpoet $
+# $FreeBSD: head/databases/p5-Tie-LevelDB/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Tie-LevelDB
 PORTVERSION=	0.07
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -26,7 +26,7 @@ MAKE_ARGS=	CC="${CXX}"
 
 .include <bsd.port.pre.mk>
 
-.if ${COMPILER_TYPE} == clang
+.if ${CHOSEN_COMPILER_TYPE} == clang
 CFLAGS+=	-Wno-reserved-user-defined-literal
 .endif
 

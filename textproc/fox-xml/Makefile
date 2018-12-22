@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/fox-xml/Makefile 478964 2018-09-04 14:57:27Z yuri $
+# $FreeBSD: head/textproc/fox-xml/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fox
 DISTVERSION=	4.1.2-91
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-g9c6716e
 CATEGORIES=	textproc
 PKGNAMESUFFIX=	-xml

@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/valyriatear/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/games/valyriatear/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	valyriatear
 PORTVERSION=	1.0.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

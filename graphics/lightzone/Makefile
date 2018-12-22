@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/lightzone/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/graphics/lightzone/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lightzone
 DISTVERSION=	4.1.8-3
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-g36e87773
 CATEGORIES=	graphics java
 DIST_SUBDIR=	${PORTNAME}

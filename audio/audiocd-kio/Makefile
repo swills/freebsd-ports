@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/audiocd-kio/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+# $FreeBSD: head/audio/audiocd-kio/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	audiocd-kio
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash guiaddons i18n iconthemes itemviews \
-		jobwidgets kdelibs4support kio notifications parts \
+		jobwidgets kcmutils kdelibs4support kio notifications parts \
 		service solid sonnet textwidgets unitconversion \
 		widgetsaddons windowsystem xmlgui
 USE_QT=		core dbus gui network phonon4 printsupport widgets xml \

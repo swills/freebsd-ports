@@ -1,9 +1,9 @@
 # Created by: Loïc BARTOLETTI <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/postgis23/Makefile 486293 2018-11-30 20:06:09Z sunpoet $
+# $FreeBSD: head/databases/postgis23/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	postgis
 PORTVERSION=	2.3.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases geography
 MASTER_SITES=	https://download.osgeo.org/postgis/source/
 PKGNAMESUFFIX=	23

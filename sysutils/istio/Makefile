@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/istio/Makefile 486212 2018-11-29 21:57:58Z danilo $
+# $FreeBSD: head/sysutils/istio/Makefile 487386 2018-12-13 21:03:11Z danilo $
 
 PORTNAME=	istio
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
 CATEGORIES=	sysutils
 
 MAINTAINER=	danilo@FreeBSD.org

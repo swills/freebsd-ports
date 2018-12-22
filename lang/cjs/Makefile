@@ -1,9 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/lang/cjs/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/cjs/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cjs
 PORTVERSION=	2.4.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	lang gnome
 DIST_SUBDIR=	gnome3
 

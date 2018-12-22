@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/beatslash-lv2/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/audio/beatslash-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	beatslash
 DISTVERSION=	1.0.5
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

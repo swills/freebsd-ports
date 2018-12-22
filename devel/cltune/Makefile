@@ -1,8 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/cltune/Makefile 484856 2018-11-13 04:14:35Z jmd $
+# $FreeBSD: head/devel/cltune/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cltune
 PORTVERSION=	2.7.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	jmd@FreeBSD.org

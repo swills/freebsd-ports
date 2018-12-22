@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-CVST/Makefile 471025 2018-05-28 07:37:24Z tota $
+# $FreeBSD: head/math/R-cran-CVST/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	CVST
 DISTVERSION=	0.2-2
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/cquery/Makefile 484446 2018-11-08 12:07:54Z tobik $
+# $FreeBSD: head/devel/cquery/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cquery
 PORTVERSION=	20180718
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	henry.hu.sh@gmail.com

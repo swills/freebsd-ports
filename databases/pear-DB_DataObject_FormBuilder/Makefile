@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@php.net>)
-# $FreeBSD: head/databases/pear-DB_DataObject_FormBuilder/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/pear-DB_DataObject_FormBuilder/Makefile 487957 2018-12-21 08:18:49Z joneum $
 
 PORTNAME=	DB_DataObject_FormBuilder
 PORTVERSION=	1.0.2
@@ -7,6 +7,8 @@ CATEGORIES=	databases www pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Automatically build HTML_QuickForm objects using DB_DataObject
+
+LICENSE=	LGPL3
 
 BUILD_DEPENDS=	${PEARDIR}/HTML/QuickForm.php:devel/pear-HTML_QuickForm@${PHP_FLAVOR} \
 		${PEARDIR}/DB/DataObject.php:databases/pear-DB_DataObject@${PHP_FLAVOR}

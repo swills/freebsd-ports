@@ -1,42 +1,29 @@
 # Created by: arved
-# $FreeBSD: head/games/qnetwalk/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/games/qnetwalk/Makefile 487378 2018-12-13 19:26:39Z amdmi3 $
 
 PORTNAME=	qnetwalk
-PORTVERSION=	1.4
-PORTREVISION=	2
+PORTVERSION=	1.5
 CATEGORIES=	games
-MASTER_SITES=	http://qt.osdn.org.ua/ \
-		http://mirror.amdmi3.ru/distfiles/
 
 MAINTAINER=	amdmi3@FreeBSD.org
-COMMENT=	Qt-version of the NetWalk game
+COMMENT=	Game for system administrators
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
+USE_GITHUB=	yes
+GH_ACCOUNT=	AMDmi3
 
-USES=		qmake qt:4
-USE_QT=		corelib gui moc_build rcc_build
-USE_SDL=	mixer
+USES=		cmake qt:5
+USE_QT=		core gui widgets qmake_build buildtools_build linguisttools_build
+USE_SDL=	mixer sdl
 
-PLIST_FILES=	bin/qnetwalk \
-		man/man6/qnetwalk.6.gz \
-		share/applications/qnetwalk.desktop \
-		share/pixmaps/qnetwalk.xpm
-
-PORTDOCS=	ChangeLog README
+PORTDOCS=	ChangeLog.md README.md
 PORTDATA=	*
 
 OPTIONS_DEFINE=	DOCS
 
-post-patch:
-	@${REINPLACE_CMD} -e 's|/usr/games|$$$${PREFIX}/bin|; \
-		s|/usr/share/man|$$$${PREFIX}/man|; \
-		s|/usr/share|$$$${PREFIX}/share|; \
-		/INSTALLS.*menu/ d' ${WRKSRC}/${PORTNAME}.pro
-
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}/
 

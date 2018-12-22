@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/voxelands/Makefile 484104 2018-11-04 16:09:54Z antoine $
+# $FreeBSD: head/games/voxelands/Makefile 487337 2018-12-13 02:43:34Z linimon $
 
 PORTNAME=		voxelands
 PORTVERSION=		1604.00
@@ -13,11 +13,10 @@ COMMENT?=		Fun-Focused voxel world game
 LICENSE=		GPLv3+
 
 BROKEN=			fails to build
+BROKEN_powerpc64=	fails to link: sibling call optimization does not allow automatic multiple TOCs
 
 LIB_DEPENDS=		libIrrlicht.so:x11-toolkits/irrlicht \
 			libfreetype.so:print/freetype2
-
-BROKEN_powerpc64=	fails to link: sibling call optimization does not allow automatic multiple TOCs
 
 USES=			cmake tar:bzip2
 LLD_UNSAFE=		yes

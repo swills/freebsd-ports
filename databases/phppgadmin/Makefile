@@ -1,9 +1,9 @@
 # Created by: nbm
-# $FreeBSD: head/databases/phppgadmin/Makefile 469190 2018-05-06 11:04:30Z dinoex $
+# $FreeBSD: head/databases/phppgadmin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	phppgadmin
 PORTVERSION=	5.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases www
 MASTER_SITES=	SF/${PORTNAME}/phpPgAdmin%20%5Bstable%5D/phpPgAdmin-5.1
 DISTNAME=	phpPgAdmin-${PORTVERSION}

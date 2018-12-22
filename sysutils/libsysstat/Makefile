@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/libsysstat/Makefile 483680 2018-11-01 15:29:53Z linimon $
+# $FreeBSD: head/sysutils/libsysstat/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libsysstat
 PORTVERSION=	0.4.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	LXQT/${PORTNAME}
 

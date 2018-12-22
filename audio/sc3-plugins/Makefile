@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/sc3-plugins/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/audio/sc3-plugins/Makefile 487930 2018-12-21 00:04:17Z yuri $
 
 PORTNAME=	sc3-plugins
 DISTVERSIONPREFIX=	Version-
 DISTVERSION=	3.9.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -23,7 +23,7 @@ OPTIONS_DEFAULT=	SUPERNOVA
 SUPERNOVA_DESC=	Build plugins for supernova
 OPTIONS_SUB=	yes
 
-USES=		cmake:outsource localbase pkgconfig
+USES=		compiler:c++11-lang cmake:outsource localbase pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	supercollider
 GH_TUPLE=	timblechmann:nova-simd:3140689:n/external_libraries/nova-simd

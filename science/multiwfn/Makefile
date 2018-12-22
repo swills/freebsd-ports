@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/multiwfn/Makefile 478207 2018-08-27 13:51:29Z mat $
+# $FreeBSD: head/science/multiwfn/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	multiwfn
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.4.1-0-14
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-ge873677
 CATEGORIES=	science
 

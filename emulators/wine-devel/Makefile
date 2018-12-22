@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 487184 2018-12-10 16:32:03Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 487706 2018-12-17 19:12:05Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	4.0-rc1
+DISTVERSION=	4.0-rc2
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/eq10q-lv2/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/audio/eq10q-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	eq10q
 DISTVERSION=	2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}
 PKGNAMESUFFIX=	-lv2

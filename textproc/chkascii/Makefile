@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/chkascii/Makefile 485326 2018-11-19 15:25:08Z 0mp $
+# $FreeBSD: head/textproc/chkascii/Makefile 487298 2018-12-12 14:33:43Z 0mp $
 
 PORTNAME=	chkascii
-DISTVERSION=	1.0
+DISTVERSION=	1.2
 CATEGORIES=	textproc
 
 MAINTAINER=	bourne.identity@hotmail.com

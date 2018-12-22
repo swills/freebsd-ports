@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-abind/Makefile 467023 2018-04-11 03:17:01Z tota $
+# $FreeBSD: head/devel/R-cran-abind/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	abind
 DISTVERSION=	1.4-5
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

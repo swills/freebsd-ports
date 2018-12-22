@@ -1,9 +1,9 @@
 # Created by: Joris Dedieu <joris.dedieu@gmail.com>
-# $FreeBSD: head/graphics/tinyows/Makefile 486367 2018-12-01 13:09:03Z sunpoet $
+# $FreeBSD: head/graphics/tinyows/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tinyows
 PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics www geography
 MASTER_SITES=	https://download.osgeo.org/mapserver/
 

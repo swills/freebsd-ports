@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/sysutils/p5-Sys-User-UIDhelper/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/sysutils/p5-Sys-User-UIDhelper/Makefile 487413 2018-12-14 09:00:11Z amdmi3 $
 
 PORTNAME=	Sys-User-UIDhelper
 PORTVERSION=	0.0.1
@@ -12,7 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Helps for locating free UIDs
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

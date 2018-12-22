@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/databases/pgsphere/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/pgsphere/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgsphere
 PORTVERSION=	1.1.5
+PORTREVISION=	1
 CATEGORIES=	databases geography
 
 MAINTAINER=	sunpoet@FreeBSD.org

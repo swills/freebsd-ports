@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/security/nettle/Makefile 486803 2018-12-06 20:33:44Z sunpoet $
+# $FreeBSD: head/security/nettle/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nettle
 PORTVERSION=	3.4.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	GNU \
 		https://www.lysator.liu.se/~nisse/archive/

@@ -1,9 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-certbot/Makefile 486793 2018-12-06 20:32:26Z sunpoet $
+# $FreeBSD: head/security/py-certbot/Makefile 487414 2018-12-14 09:18:33Z matthew $
 
 PORTNAME=	certbot
 PORTVERSION=	${ACME_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
@@ -38,9 +38,8 @@ NO_ARCH=	yes
 
 post-patch:
 	@${REINPLACE_CMD} \
-		-e 's|/etc/|${LOCALBASE}/etc/|' \
-		-e 's|/var/lib|/var/db|' \
-		${WRKSRC}/${PORTNAME}/constants.py
+		s,%%LOCALBASE%%,${LOCALBASE}, \
+		${WRKSRC}/${PORTNAME}/compat.py
 
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/glslang/Makefile 478883 2018-09-03 17:43:50Z jbeich $
+# $FreeBSD: head/devel/glslang/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	glslang
 DISTVERSION=	6.2.2596-248
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-ge0bc65b
 CATEGORIES=	devel graphics
 

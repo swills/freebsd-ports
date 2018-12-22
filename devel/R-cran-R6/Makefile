@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-R6/Makefile 481872 2018-10-12 04:02:06Z tota $
+# $FreeBSD: head/devel/R-cran-R6/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	R6
 PORTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

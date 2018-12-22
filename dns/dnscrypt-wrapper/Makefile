@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/dnscrypt-wrapper/Makefile 464425 2018-03-13 20:31:58Z sunpoet $
+# $FreeBSD: head/dns/dnscrypt-wrapper/Makefile 487213 2018-12-11 00:08:48Z swills $
 
 PORTNAME=	dnscrypt-wrapper
-PORTVERSION=	0.4.1
+PORTVERSION=	0.4.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	dns
 

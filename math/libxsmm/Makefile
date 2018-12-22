@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/libxsmm/Makefile 485001 2018-11-15 04:23:38Z yuri $
+# $FreeBSD: head/math/libxsmm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libxsmm
 DISTVERSION=	1.10
+PORTREVISION=	1
 CATEGORIES=	math science
 
 MAINTAINER=	yuri@FreeBSD.org

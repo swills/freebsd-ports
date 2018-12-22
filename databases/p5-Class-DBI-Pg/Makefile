@@ -1,9 +1,9 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/databases/p5-Class-DBI-Pg/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/databases/p5-Class-DBI-Pg/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Class-DBI-Pg
 PORTVERSION=	0.09
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN/Class/DMAKI
 PKGNAMEPREFIX=	p5-

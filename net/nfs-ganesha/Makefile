@@ -1,9 +1,9 @@
-# $FreeBSD: head/net/nfs-ganesha/Makefile 483268 2018-10-28 10:53:38Z linimon $
+# $FreeBSD: head/net/nfs-ganesha/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nfs-ganesha
 DISTVERSIONPREFIX=	V
 DISTVERSION=	2.7.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 
 MAINTAINER=	fatih@gandi.net

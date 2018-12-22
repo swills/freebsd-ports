@@ -1,9 +1,9 @@
 # Created by: Florent Thoumie <flz@FreeBSD.org>
-# $FreeBSD: head/www/chromium/Makefile 486198 2018-11-29 17:26:30Z manu $
+# $FreeBSD: head/www/chromium/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	chromium
 PORTVERSION=	68.0.3440.106
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES?=	www
 MASTER_SITES=	https://commondatastorage.googleapis.com/chromium-browser-official/ \
 		LOCAL/cpm/chromium/:fonts

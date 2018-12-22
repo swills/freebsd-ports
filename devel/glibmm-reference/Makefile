@@ -1,7 +1,7 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/devel/glibmm-reference/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/glibmm-reference/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=	1
+PORTREVISION=	2
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/glibmm-2.4.pc:devel/glibmm \
 		gm4:devel/m4

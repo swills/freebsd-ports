@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/net-mgmt/pmacct/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/net-mgmt/pmacct/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	pmacct
 DISTVERSION=	1.7.0
@@ -13,7 +13,6 @@ COMMENT=	Accounting and aggregation tool for IPv4 and IPv6 traffic
 LICENSE=	GPLv2
 
 BROKEN_aarch64=		fails to build: undefined reference to sbrk
-BROKEN_powerpc64=	fails to build: cc: Internal error: Segmentation fault (program ld)
 
 USE_RC_SUBR=	pmacctd nfacctd sfacctd
 SUB_FILES=	pkg-message

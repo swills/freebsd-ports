@@ -1,9 +1,9 @@
 # Created by: Ron van Daal
-# $FreeBSD: head/graphics/GraphicsMagick/Makefile 485830 2018-11-24 22:32:25Z sunpoet $
+# $FreeBSD: head/graphics/GraphicsMagick/Makefile 487998 2018-12-21 14:05:05Z rene $
 
 PORTNAME=	GraphicsMagick
 PORTVERSION=	1.3.31
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF \
@@ -27,18 +27,13 @@ USE_LDCONFIG=	yes
 # Use fonts installed by x11-fonts/webfonts by default
 WINDOWS_FONT_DIR?=	${LOCALBASE}/share/fonts/webfonts
 
-OPTIONS_DEFINE=	BZIP2 DOCS DPS FPX FREETYPE JASPER JBIG JPEG LCMS2 LZMA OPENMP Q8BIT PNG SSE TEST TIFF TRIO UMEM WEBP WMF X11 XML ZLIB ZSTD
+OPTIONS_DEFINE=	BZIP2 DOCS FPX FREETYPE JASPER JBIG JPEG LCMS2 LZMA OPENMP Q8BIT PNG SSE TEST TIFF TRIO UMEM WEBP WMF X11 XML ZLIB ZSTD
 OPTIONS_DEFAULT=BZIP2 FREETYPE JASPER JBIG JPEG LCMS2 LZMA OPENMP PNG TIFF WEBP WMF X11 XML ZLIB
-DPS_DESC=	Display Ghostscript support
 Q8BIT_DESC=	Use 8-bit pixels (speed) instead of 16-bit (quality)
 TRIO_DESC=	TRIO support
 UMEM_DESC=	UMEM memory allocation library support
 TEST_DESC=	Run bundled self-tests after build
 
-DPS_CONFIGURE_WITH=	dps
-DPS_IMPLIES=		X11
-DPS_LIB_DEPENDS=	libdps.so:x11/dgs
-DPS_USE=		XORG=xt
 BZIP2_CONFIGURE_WITH=	bzlib
 FPX_CONFIGURE_WITH=	fpx
 FPX_LIB_DEPENDS=	libfpx.so:graphics/libfpx

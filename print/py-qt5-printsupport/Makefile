@@ -1,10 +1,13 @@
-# $FreeBSD: head/print/py-qt5-printsupport/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/print/py-qt5-printsupport/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	printsupport
 CATEGORIES=	print python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtPrintSupport module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtPrintSupport
 PYQT_DIST=	yes

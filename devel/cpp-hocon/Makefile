@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/cpp-hocon/Makefile 480828 2018-09-27 22:44:49Z linimon $
+# $FreeBSD: head/devel/cpp-hocon/Makefile 487825 2018-12-20 02:06:59Z romain $
 
 PORTNAME=	cpp-hocon
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	puppet@FreeBSD.org
@@ -20,6 +21,7 @@ GH_ACCOUNT=	puppetlabs
 PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
 
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS=SHARED
+CMAKE_OFF=	ENABLE_CXX_WERROR
 TEST_TARGET=	test
 USE_LDCONFIG=	yes
 

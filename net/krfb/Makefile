@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/krfb/Makefile 481446 2018-10-07 13:43:14Z tcberner $
+# $FreeBSD: head/net/krfb/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	krfb
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

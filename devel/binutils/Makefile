@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/binutils/Makefile 484692 2018-11-11 13:33:22Z bapt $
+# $FreeBSD: head/devel/binutils/Makefile 487304 2018-12-12 16:55:07Z cracauer $
 
 PORTNAME=	binutils
 PORTVERSION=	2.30
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH?=	1
 CATEGORIES?=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases
@@ -63,7 +63,8 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS+=	--with-system-zlib \
 			--with-gmp=${LOCALBASE} \
 			--with-mpfr=${LOCALBASE} \
-			--enable-targets=all
+			--enable-targets=all \
+			--enable-threads=yes
 INFO=		as \
 		binutils \
 		gprof \

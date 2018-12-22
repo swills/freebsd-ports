@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-ipywidgets/Makefile 486643 2018-12-05 00:41:05Z swills $
+# $FreeBSD: head/devel/py-ipywidgets/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ipywidgets
 PORTVERSION=	7.4.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

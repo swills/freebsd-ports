@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/obs-studio/Makefile 486325 2018-12-01 08:31:08Z yuri $
+# $FreeBSD: head/multimedia/obs-studio/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	obs-studio
 DISTVERSION=	22.0.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

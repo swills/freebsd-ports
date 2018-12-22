@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/gnuspeechsa/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/gnuspeechsa/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnuspeechsa
 PORTVERSION=	0.1.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	GNU/gnuspeech
 

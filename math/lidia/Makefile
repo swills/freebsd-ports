@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/lidia/Makefile 486647 2018-12-05 01:51:44Z yuri $
+# $FreeBSD: head/math/lidia/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lidia
 DISTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://www.math.ucdavis.edu/~latte/software/packages/lidia/current/
 DISTNAME=	${PORTNAME}-${DISTVERSION}+latte-patches-2014-10-04

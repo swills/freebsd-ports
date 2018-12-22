@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfvfs/Makefile 481454 2018-10-07 16:12:09Z antoine $
+# $FreeBSD: head/security/py-dfvfs/Makefile 487916 2018-12-20 19:55:30Z antoine $
 
 PORTNAME=	dfvfs
-PORTVERSION=	20180831
+PORTVERSION=	20181215
 CATEGORIES=	security devel python
 MASTER_SITES=	https://github.com/log2timeline/dfvfs/releases/download/${PORTVERSION}/ \
 		LOCAL/antoine
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	libbde>=a:devel/libbde \
 		libewf>=0:devel/libewf \
+		libfsapfs>=e:devel/libfsapfs \
 		libfsntfs>=e:devel/libfsntfs \
 		libfvde>=0:sysutils/libfvde \
 		libfwnt>=e:devel/libfwnt \

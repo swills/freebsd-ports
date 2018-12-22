@@ -1,8 +1,9 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/databases/ip4r/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/ip4r/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ip4r
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	databases net
 
 MAINTAINER=	tobez@FreeBSD.org

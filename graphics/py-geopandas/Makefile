@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/py-geopandas/Makefile 477466 2018-08-18 00:14:34Z sunpoet $
+# $FreeBSD: head/graphics/py-geopandas/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	geopandas
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

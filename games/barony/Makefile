@@ -1,8 +1,9 @@
-# $FreeBSD: head/games/barony/Makefile 480962 2018-09-30 15:32:44Z wen $
+# $FreeBSD: head/games/barony/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	barony
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.2.2
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	devnexen@gmail.com

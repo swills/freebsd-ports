@@ -1,9 +1,9 @@
-# $FreeBSD: head/biology/bowtie/Makefile 483954 2018-11-03 23:24:29Z jwb $
+# $FreeBSD: head/biology/bowtie/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		bowtie
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.1.2
-PORTREVISION=		7
+PORTREVISION=		8
 CATEGORIES=		biology
 
 MAINTAINER=	jwb@FreeBSD.org

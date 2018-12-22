@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/zita-convolver/Makefile 478251 2018-08-27 20:38:13Z yuri $
+# $FreeBSD: head/audio/zita-convolver/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	zita-convolver
 DISTVERSION=	4.0.3
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/
 

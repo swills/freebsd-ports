@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-wm/lxqt-panel/Makefile 476292 2018-08-03 13:19:06Z jsm $
+# $FreeBSD: head/x11-wm/lxqt-panel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lxqt-panel
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	LXQT
 

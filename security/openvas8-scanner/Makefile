@@ -1,9 +1,9 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/security/openvas8-scanner/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/security/openvas8-scanner/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME?=	openvas8-scanner
 PORTVERSION?=	5.0.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES?=	http://wald.intevation.org/frs/download.php/2436/
 DISTNAME=	${PORTNAME:S/${OPENVAS_VER}//}-${PORTVERSION}

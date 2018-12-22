@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/colmap/Makefile 481770 2018-10-10 21:44:29Z jbeich $
+# $FreeBSD: head/graphics/colmap/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	colmap
 DISTVERSION=	3.5
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	graphics
 
 MAINTAINER=	jbeich@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Tim Bishop <tim@bishnet.net>
-# $FreeBSD: head/mail/gnubiff/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/mail/gnubiff/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnubiff
 PORTVERSION=	2.2.13
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	mail
 MASTER_SITES=	SF
 
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libpopt.so:devel/popt
 OPTIONS_DEFINE=	NLS
 
 USES=		compiler:c++11-lang cpe fam gmake pathfix pkgconfig
-USE_GNOME=	intlhack libglade2 esound
+USE_GNOME=	intlhack libglade2
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib -lX11

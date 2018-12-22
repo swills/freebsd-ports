@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/synthpod-lv2/Makefile 486737 2018-12-06 07:25:31Z yuri $
+# $FreeBSD: head/audio/synthpod-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	synthpod
 PORTVERSION=	g20170810
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

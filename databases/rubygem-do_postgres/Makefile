@@ -1,8 +1,9 @@
 # Created by: Espen Volden aka voldern <voldern@hoeggen.net>
-# $FreeBSD: head/databases/rubygem-do_postgres/Makefile 459047 2018-01-15 14:26:04Z swills $
+# $FreeBSD: head/databases/rubygem-do_postgres/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	do_postgres
 PORTVERSION=	0.10.17
+PORTREVISION=	1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

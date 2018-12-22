@@ -1,11 +1,12 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/pear/Makefile 485692 2018-11-23 17:21:14Z joneum $
+# $FreeBSD: head/devel/pear/Makefile 487424 2018-12-14 11:28:43Z joneum $
 
 PORTNAME=	pear
 PORTVERSION=	1.10.6
 PORTREVISION=	0
 CATEGORIES=	devel
-MASTER_SITES=	http://mirror.bsdproject.de/
+MASTER_SITES=	http://mirror.bsdproject.de/ \
+	LOCAL/joneum
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	joneum@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/kannel-sqlbox/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/www/kannel-sqlbox/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kannel-sqlbox
 PORTVERSION=	1.0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 
 MAINTAINER=	dbaio@FreeBSD.org

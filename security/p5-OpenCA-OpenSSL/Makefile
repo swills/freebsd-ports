@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/security/p5-OpenCA-OpenSSL/Makefile 486759 2018-12-06 14:07:31Z mat $
+# $FreeBSD: head/security/p5-OpenCA-OpenSSL/Makefile 487734 2018-12-18 08:39:29Z mat $
 
 PORTNAME=	OpenCA-OpenSSL
 PORTVERSION=	2.0.29
@@ -25,5 +25,11 @@ RUN_DEPENDS=	p5-Locale-libintl>=0:devel/p5-Locale-libintl \
 USES=		perl5 ssl
 USE_PERL5=	configure
 MAKE_ARGS+=	PASTHRU_INC=-I${OPENSSLINC}
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
+BROKEN=        Does not support OpenSSL 1.1
+.endif
 
 .include <bsd.port.mk>

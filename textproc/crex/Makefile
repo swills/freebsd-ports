@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/crex/Makefile 487177 2018-12-10 15:11:22Z tobik $
+# $FreeBSD: head/textproc/crex/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	crex
 DISTVERSION=	0.2.5
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	tobik@FreeBSD.org

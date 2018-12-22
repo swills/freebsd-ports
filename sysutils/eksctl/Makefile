@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/eksctl/Makefile 484595 2018-11-10 09:46:43Z danilo $
+# $FreeBSD: head/sysutils/eksctl/Makefile 487926 2018-12-20 22:41:28Z danilo $
 
 PORTNAME=	eksctl
-PORTVERSION=	0.1.11
+PORTVERSION=	0.1.13
 CATEGORIES=	sysutils
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -13,9 +13,9 @@ LICENSE=	APACHE20
 RUN_DEPENDS=	kubectl:sysutils/kubectl \
 		aws-iam-authenticator:security/aws-iam-authenticator
 
-PORTSCOUT=	limit:^[0-9\.]*$$
-
 USES=		go
+
+PORTSCOUT=	limit:^[0-9\.]*$$
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	weaveworks
@@ -24,7 +24,7 @@ PLIST_FILES=	bin/${PORTNAME}
 
 GO_PKGNAME=	github.com/weaveworks/${PORTNAME}
 GO_TARGET=	${GO_PKGNAME}/cmd/${PORTNAME}
-GO_BUILDFLAGS=	-ldflags="-X main.gitCommit=${PORTVERSION} \
-		-X main.builtAt=$$(date +'%s')"
+GO_BUILDFLAGS=	-ldflags="-X github.com/weaveworks/eksctl/pkg/version.gitCommit=${PORTVERSION} \
+		-X github.com/weaveworks/eksctl/pkg/version.builtAt=$$(date +'%s')"
 
 .include <bsd.port.mk>

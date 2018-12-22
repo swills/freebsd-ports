@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/keeperrl/Makefile 478239 2018-08-27 17:29:39Z jbeich $
+# $FreeBSD: head/games/keeperrl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	keeperrl
 PORTVERSION=	0.0.${ALPHA_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

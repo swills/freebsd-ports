@@ -1,10 +1,11 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/monero-cli/Makefile 483023 2018-10-26 12:54:26Z vd $
+# $FreeBSD: head/net-p2p/monero-cli/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	monero-cli
 # To build from an arbitrary git commit comment PORTVERSION and PORTREVISION (if present)
 PORTVERSION=	0.13.0.4
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 # and uncomment the following two lines
 #PORTVERSION=	0
 #PKGNAMESUFFIX=	-git-HEAD

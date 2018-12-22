@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/security/openvas9/Makefile 458754 2018-01-11 16:24:53Z danfe $
+# $FreeBSD: head/security/openvas9/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openvas9
 PORTVERSION=	9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	acm@FreeBSD.org

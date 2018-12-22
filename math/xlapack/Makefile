@@ -1,8 +1,8 @@
 # Created by: bf@FreeBSD.org
-# $FreeBSD: head/math/xlapack/Makefile 464164 2018-03-11 11:20:43Z rene $
+# $FreeBSD: head/math/xlapack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xlapack
-PORTREVISION=	4
+PORTREVISION=	5
 
 MAINTAINER=	fortran@FreeBSD.org
 COMMENT=	Extended Precision LAPACK

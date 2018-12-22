@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/simbody/Makefile 485003 2018-11-15 06:40:50Z yuri $
+# $FreeBSD: head/science/simbody/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	simbody
 DISTVERSIONPREFIX=	Simbody-
 DISTVERSION=	3.6.1
+PORTREVISION=	1
 CATEGORIES=	science biology
 
 PATCH_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/commit/

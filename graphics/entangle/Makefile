@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/entangle/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
+# $FreeBSD: head/graphics/entangle/Makefile 488063 2018-12-22 03:46:39Z linimon $
 
 PORTNAME=	entangle
 PORTVERSION=	0.7.2
@@ -23,7 +23,8 @@ LIB_DEPENDS=	libgphoto2.so:graphics/libgphoto2 \
 RUN_DEPENDS:=	${BUILD_DEPENDS:Nitstool*} \
 		${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py-libpeas@${PY_FLAVOR}
 
-USES=		gettext-tools gmake libtool pkgconfig python:3.4+
+USES=		compiler:c++11-lang gettext-tools gmake gnome libtool \
+		pkgconfig python:3.4+
 GNU_CONFIGURE=	yes
 USE_GNOME=	cairo gtk30 intltool introspection
 USE_GSTREAMER1=	core

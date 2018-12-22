@@ -1,10 +1,10 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/comms/gqrx/Makefile 481268 2018-10-05 10:10:02Z martymac $
+# $FreeBSD: head/comms/gqrx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gqrx
 PORTVERSION=	2.11.5
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	comms hamradio
 

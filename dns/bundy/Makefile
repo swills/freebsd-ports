@@ -1,9 +1,9 @@
 # Created by: Jeremy C. Reed
-# $FreeBSD: head/dns/bundy/Makefile 485335 2018-11-19 17:36:40Z tobik $
+# $FreeBSD: head/dns/bundy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bundy
 PORTVERSION=	0.20170618
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	dns
 MASTER_SITES=	LOCAL/mat/bundy SF/boost/boost/1.55.0:boost
 DISTFILES+=	boost_1_55_0.tar.bz2:boost

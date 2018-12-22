@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/console-bridge/Makefile 486379 2018-12-01 16:36:09Z yuri $
+# $FreeBSD: head/misc/console-bridge/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	console-bridge
 DISTVERSION=	0.4.2
+PORTREVISION=	1
 CATEGORIES=	misc
 
 MAINTAINER=	yuri@FreeBSD.org

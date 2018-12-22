@@ -1,8 +1,9 @@
 # Created by: Tony Maher
-# $FreeBSD: head/math/py-numpy/Makefile 486527 2018-12-03 18:52:09Z sunpoet $
+# $FreeBSD: head/math/py-numpy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	numpy
 PORTVERSION=	1.15.4
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP \

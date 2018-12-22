@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/graphics/ampasCTL/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/ampasCTL/Makefile 488035 2018-12-22 01:02:37Z linimon $
 
 PORTNAME=	ampasCTL
 PORTVERSION=	1.5.2
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libImath.so:graphics/ilmbase \
 		libtiff.so:graphics/tiff \
 		libAcesContainer.so:graphics/ampasACES-container
 
-USES=		cmake:outsource pathfix pkgconfig
+USES=		compiler:c++11-lang cmake:outsource pathfix pkgconfig
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 

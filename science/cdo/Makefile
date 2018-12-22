@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/cdo/Makefile 486805 2018-12-06 23:06:49Z linimon $
+# $FreeBSD: head/science/cdo/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cdo
 PORTVERSION=	1.9.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	https://code.mpimet.mpg.de/attachments/download/18264/ \
 		LOCAL/sunpoet

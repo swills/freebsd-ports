@@ -1,9 +1,9 @@
 # Created by: KOMATSU Shinichiro <koma2@jiro.c.u-tokyo.ac.jp>
-# $FreeBSD: head/japanese/skkinput3/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/japanese/skkinput3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	skkinput3
 PORTVERSION=	3.0.6
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	japanese x11
 MASTER_SITES=	OSDN/${PORTNAME}/2222
 DISTNAME=	skkinput-${PORTVERSION}

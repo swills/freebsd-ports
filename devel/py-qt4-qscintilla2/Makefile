@@ -1,9 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-qscintilla2/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/py-qt4-qscintilla2/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
-PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITES_QSCI2}

@@ -1,9 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/net/net6/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/net/net6/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	net6
 PORTVERSION=	1.3.14
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net devel
 MASTER_SITES=	http://releases.0x539.de/net6/
 

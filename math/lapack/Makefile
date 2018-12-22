@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/math/lapack/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/lapack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME?=	lapack
 PORTVERSION=	3.5.0
-PORTREVISION?=	5	# Never remove this line, keep PORTREVISION?=0 in case.
+PORTREVISION?=	6	# Never remove this line, keep PORTREVISION?=0 in case.
 CATEGORIES=	math
 MASTER_SITES=	NL/lapack/
 DISTFILES=	lapack-${PORTVERSION}.tgz

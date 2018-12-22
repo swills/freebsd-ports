@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 482824 2018-10-23 10:14:09Z rene $
+# $FreeBSD: head/net-im/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Instant messaging
@@ -25,7 +25,6 @@
     SUBDIR += freetalk
     SUBDIR += fugu
     SUBDIR += gajim
-    SUBDIR += gale
     SUBDIR += gitterdone
     SUBDIR += gloox
     SUBDIR += hotot
@@ -178,6 +177,7 @@
     SUBDIR += skype-devel
     SUBDIR += skype4
     SUBDIR += slack-term
+    SUBDIR += ssh-chat
     SUBDIR += talkatu
     SUBDIR += teamwords
     SUBDIR += telegram

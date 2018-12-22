@@ -1,8 +1,8 @@
-# $FreeBSD: head/cad/py-lcapy/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/cad/py-lcapy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lcapy
 DISTVERSION=	g20171202
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	cad python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

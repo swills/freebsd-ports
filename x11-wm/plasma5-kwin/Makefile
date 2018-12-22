@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-wm/plasma5-kwin/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/x11-wm/plasma5-kwin/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	kwin
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	x11-wm kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libXcursor.so:x11/libXcursor \
 		libxcb-image.so:x11/xcb-util-image \
 		libxcb-keysyms.so:x11/xcb-util-keysyms \
 		libxkbcommon.so:x11/libxkbcommon
-BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat \
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto \
 		Xwayland:x11-servers/xwayland
 RUN_DEPENDS=	Xwayland:x11-servers/xwayland
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/xeus/Makefile 485915 2018-11-26 05:22:52Z linimon $
+# $FreeBSD: head/devel/xeus/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xeus
 DISTVERSION=	0.13.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/misc/gnuit/Makefile 460166 2018-01-28 11:30:25Z gerald $
+# $FreeBSD: head/misc/gnuit/Makefile 487928 2018-12-20 22:47:20Z gerald $
 
 PORTNAME=	gnuit
 PORTVERSION=	4.9.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 
@@ -16,6 +16,7 @@ LICENSE_COMB=	multi
 USES=		ncurses
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--disable-transition
+INFO=		gnuit
 
 post-install:
 	# Clean stage from orphans.

@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/databases/R-cran-RSQLite.extfuns/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/databases/R-cran-RSQLite.extfuns/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RSQLite.extfuns
 PORTVERSION=	0.0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	databases
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

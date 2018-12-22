@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-scs/Makefile 485286 2018-11-18 22:31:48Z yuri $
+# $FreeBSD: head/math/py-scs/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scs
 DISTVERSION=	2.0.2
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

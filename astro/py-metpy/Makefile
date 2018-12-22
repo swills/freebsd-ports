@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/py-metpy/Makefile 486346 2018-12-01 13:06:13Z sunpoet $
+# $FreeBSD: head/astro/py-metpy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	metpy
 PORTVERSION=	0.9.2
+PORTREVISION=	1
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-rekall/Makefile 476507 2018-08-06 11:23:41Z antoine $
+# $FreeBSD: head/security/py-rekall/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rekall
 DISTVERSION=	1.7.2rc1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

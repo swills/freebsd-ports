@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/super_mario_bros_python/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/super_mario_bros_python/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	super_mario_bros_python
 PORTVERSION=	0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games python
 MASTER_SITES=	SF/supermariobrosp/ \
 		SF/nemysisfreebsdp/games/:icons

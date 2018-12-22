@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net-p2p/amule/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/net-p2p/amule/Makefile 487865 2018-12-20 08:51:35Z linimon $
 
 PORTNAME=	amule
 PORTVERSION=	2.3.2
@@ -17,8 +17,8 @@ LIB_DEPENDS=	libcryptopp.so:security/cryptopp
 
 CONFLICTS=	amule-devel-[0-9]*
 
-USES=		bison desktop-file-utils gmake perl5 pkgconfig shebangfix \
-		tar:xz
+USES=		bison compiler:c++11-lang desktop-file-utils gmake perl5 \
+		pkgconfig shebangfix tar:xz
 USE_PERL5=	build
 USE_WX=		2.8
 WX_CONF_ARGS=	absolute

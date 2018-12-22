@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/py-esptool/Makefile 475970 2018-07-31 06:33:03Z loader $
+# $FreeBSD: head/comms/py-esptool/Makefile 487944 2018-12-21 03:51:15Z loader $
 
 PORTNAME=	esptool
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.5.0
+DISTVERSION=	2.5.1
 CATEGORIES=	comms python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

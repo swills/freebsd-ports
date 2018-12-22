@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/libreoffice/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/editors/libreoffice/Makefile 487596 2018-12-16 15:10:42Z tcberner $
 
 .include "${.CURDIR}/Makefile.common"
 
-PORTREVISION=	1
+PORTREVISION=	4
 MASTER_SITES=	https://download.documentfoundation.org/libreoffice/src/${PORTVERSION}/ \
 		https://dev-www.libreoffice.org/src/:src \
 		https://dev-www.libreoffice.org/extern/:ext
@@ -286,11 +286,8 @@ EXPIRATION_DATE=	2018-12-31
 
 .include <bsd.port.pre.mk>
 
-.if ${COMPILER_TYPE} == "clang"
-CXXFLAGS_WARN=	-Woverloaded-virtual -Wno-unused-parameter
-.if ${COMPILER_VERSION} >= 36
-CXXFLAGS_WARN+=	-Wno-unused-local-typedefs
-.endif
+.if ${CHOSEN_COMPILER_TYPE} == clang
+CXXFLAGS_WARN=	-Woverloaded-virtual -Wno-unused-parameter -Wno-unused-local-typedefs
 .else
 CXXFLAGS_WARN=	-Wshadow -Woverloaded-virtual
 .endif

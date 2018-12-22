@@ -1,8 +1,8 @@
-# $FreeBSD: head/cad/py-pyfda/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/cad/py-pyfda/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyfda
 PORTVERSION=	0.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	rc6
 CATEGORIES=	cad python devel
 MASTER_SITES=	CHEESESHOP

@@ -1,9 +1,9 @@
 # Created by: Rob Evers <rob@debank.tv>
-# $FreeBSD: head/mail/postfixadmin/Makefile 479972 2018-09-18 04:03:27Z ler $
+# $FreeBSD: head/mail/postfixadmin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	postfixadmin
 PORTVERSION=	3.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

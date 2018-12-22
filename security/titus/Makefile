@@ -1,9 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/titus/Makefile 479980 2018-09-18 07:34:45Z linimon $
+# $FreeBSD: head/security/titus/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	titus
 PORTVERSION=	0.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 
 MAINTAINER=	feld@FreeBSD.org

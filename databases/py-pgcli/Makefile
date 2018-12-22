@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-pgcli/Makefile 480673 2018-09-25 16:08:45Z sunpoet $
+# $FreeBSD: head/databases/py-pgcli/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgcli
 PORTVERSION=	1.11.0
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

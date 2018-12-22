@@ -1,10 +1,10 @@
 # Created by: Charlie & <root@ws.ipfw.ru>
-# $FreeBSD: head/net-im/ekiga/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/net-im/ekiga/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #    $MCom: ports/trunk/net-im/ekiga/Makefile 19954 2014-10-15 10:03:57Z kwm $
 
 PORTNAME=	ekiga
 PORTVERSION=	4.0.1
-PORTREVISION=	22
+PORTREVISION=	24
 CATEGORIES=	net-im
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

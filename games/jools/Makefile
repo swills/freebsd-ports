@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/jools/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/jools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	jools
 PORTVERSION=	0.20
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	http://pessimization.com/software/jools/
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \

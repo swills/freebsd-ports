@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/nwchem/Makefile 486816 2018-12-07 00:41:35Z yuri $
+# $FreeBSD: head/science/nwchem/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nwchem
 PORTVERSION=	6.8.1.20181107
+PORTREVISION=	1
 CATEGORIES=	science
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/

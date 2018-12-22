@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/ng_mikrotik_eoip/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/net/ng_mikrotik_eoip/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	ng_mikrotik_eoip
 PORTVERSION=	1.0
@@ -10,8 +10,6 @@ MAINTAINER=	gelraen.ua@gmail.com
 COMMENT=	Netgraph node for Mikrotik EoIP tunneling
 
 LICENSE=	BSD2CLAUSE
-
-BROKEN_powerpc64=	fails to compile: pcpu.h: size of array '__assert_0' is negative
 
 SSP_UNSAFE=	kernel module does not support ssp
 

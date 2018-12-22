@@ -1,9 +1,9 @@
 # Created by: Michael Neumann <mneumann@ntecs.de>
-# $FreeBSD: head/math/algae/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/math/algae/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	algae
 PORTVERSION=	4.3.6
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

@@ -1,8 +1,9 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/audio/suil/Makefile 484208 2018-11-05 19:39:13Z linimon $
+# $FreeBSD: head/audio/suil/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	suil
 PORTVERSION=	0.10.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 

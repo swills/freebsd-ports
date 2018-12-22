@@ -1,9 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/snort3/Makefile 481130 2018-10-02 19:21:49Z feld $
+# $FreeBSD: head/security/snort3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	snort
 DISTVERSION=	3.0.0-a4.243
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 PKGNAMESUFFIX=	3
 

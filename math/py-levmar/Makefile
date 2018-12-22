@@ -1,9 +1,10 @@
-# $FreeBSD: head/math/py-levmar/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/math/py-levmar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 # levmar library (math/levmar) is bundled
 
 PORTNAME=	levmar
 DISTVERSION=	0.2.2
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

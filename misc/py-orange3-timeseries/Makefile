@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/py-orange3-timeseries/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/misc/py-orange3-timeseries/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	orange3-timeseries
 DISTVERSION=	0.3.3
+PORTREVISION=	1
 CATEGORIES=	misc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

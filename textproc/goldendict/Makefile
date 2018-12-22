@@ -1,9 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/textproc/goldendict/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/textproc/goldendict/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	goldendict
 PORTVERSION=	1.0.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:C|(.*)\.[0-9]*$|\1|}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

@@ -1,5 +1,5 @@
 # Created by: Marcello Coutinho
-# $FreeBSD: head/www/e2guardian/Makefile 484571 2018-11-10 04:19:24Z swills $
+# $FreeBSD: head/www/e2guardian/Makefile 488039 2018-12-22 01:21:01Z linimon $
 
 PORTNAME=	e2guardian
 PORTVERSION=	5.2.2
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	rst2man:textproc/py-docutils@${PY_FLAVOR}
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-USES=		autoreconf libtool pkgconfig python
+USES=		autoreconf compiler:c++11-lang libtool pkgconfig python
 USE_GITHUB=	yes
 
 USE_RC_SUBR=	e2guardian

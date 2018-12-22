@@ -1,9 +1,9 @@
 # Created by: shanee@augusta.de
-# $FreeBSD: head/audio/rosegarden/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/rosegarden/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rosegarden
 PORTVERSION=	17.04
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

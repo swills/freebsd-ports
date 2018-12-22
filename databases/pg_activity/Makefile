@@ -1,8 +1,9 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/databases/pg_activity/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/pg_activity/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pg_activity
 PORTVERSION=	1.4.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases python
 

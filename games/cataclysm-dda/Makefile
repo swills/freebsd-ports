@@ -1,8 +1,9 @@
 # Created by: Vladimir Kondratiev <wulf@cicgroup.ru>
-# $FreeBSD: head/games/cataclysm-dda/Makefile 480153 2018-09-20 05:04:03Z swills $
+# $FreeBSD: head/games/cataclysm-dda/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		cataclysm-dda
 DISTVERSION=		0.C-26605
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g2009bc2950
 PORTEPOCH=		1
 CATEGORIES=		games

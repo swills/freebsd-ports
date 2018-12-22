@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/hdf5-18/Makefile 484476 2018-11-08 20:55:13Z thierry $
+# $FreeBSD: head/science/hdf5-18/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hdf5
 PORTVERSION=	1.8.21 # When PORTVERSION changes, please update french/med/files/patch-configure
+PORTREVISION=	1
 CATEGORIES=	science archivers graphics
 MASTER_SITES=	https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/${PORTNAME}-${PORTVERSION}/src/	\
 		http://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/${PORTNAME}-${PORTVERSION}/src/	\

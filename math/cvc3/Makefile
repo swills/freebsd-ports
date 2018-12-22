@@ -1,9 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/math/cvc3/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/cvc3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cvc3
 PORTVERSION=	2.4.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	http://www.cs.nyu.edu/acsys/cvc3/download/${PORTVERSION}/
 

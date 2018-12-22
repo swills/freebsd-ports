@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/cuse4bsd-kmod/Makefile 441849 2017-05-27 15:33:43Z linimon $
+# $FreeBSD: head/multimedia/cuse4bsd-kmod/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	cuse4bsd-kmod
 PORTVERSION=	0.1.36
@@ -9,15 +9,15 @@ MASTER_SITES=	http://www.selasky.org/hans_petter/distfiles/ \
 MAINTAINER=	hselasky@FreeBSD.org
 COMMENT=	Cuse4BSD character device loopback driver for userspace
 
-CONFLICTS=	video4bsd-kmod*
-
 BROKEN_armv6=		fails to compile: implicit declaration of function 'cp15_pmccntr_get' is invalid in C99
-BROKEN_powerpc64=	fails to compile: pcpu.h: error: size of array '__assert_0' is negative
+
+CONFLICTS=	video4bsd-kmod*
 
 KMODNAME=	cuse4bsd
 LIBDIR=		${PREFIX}/lib
 INCLUDEDIR=	${PREFIX}/include
 MANDIR=		${PREFIX}/man/man
+USES=		kmod tar:bzip2 uidfix
 USE_LDCONFIG=	yes
 
 PLIST_SUB=	KMODNAME="${KMODNAME}" \
@@ -26,8 +26,6 @@ PLIST_SUB=	KMODNAME="${KMODNAME}" \
 		MANDIR="${MANDIR}"
 
 OPTIONS_DEFINE=	DEBUG
-
-USES=		kmod tar:bzip2 uidfix
 
 .include <bsd.port.options.mk>
 

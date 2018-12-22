@@ -1,10 +1,10 @@
 # Created by: Martin Matuska <martin@matuska.org>
-# $FreeBSD: head/databases/luasql-mysql/Makefile 435747 2017-03-09 06:51:22Z wen $
+# $FreeBSD: head/databases/luasql-mysql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	luasql
 PORTVERSION=	2.3.5
 DISTVERSIONPREFIX=	v
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	databases
 PKGNAMESUFFIX=	-${LUASQL_DRIVER}
 

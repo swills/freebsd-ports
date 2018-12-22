@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/cad/py-pycam/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/cad/py-pycam/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pycam
 PORTVERSION=	0.5.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad python
 MASTER_SITES=	SOURCEFORGE/pycam/${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

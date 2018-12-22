@@ -1,9 +1,8 @@
 # Created by: rfarmer@predatorlabs.net
-# $FreeBSD: head/math/matio/Makefile 479046 2018-09-05 22:05:23Z sunpoet $
+# $FreeBSD: head/math/matio/Makefile 488030 2018-12-21 23:06:29Z makc $
 
 PORTNAME=	matio
-PORTVERSION=	1.5.9
-PORTREVISION=	2
+PORTVERSION=	1.5.13
 CATEGORIES=	math
 MASTER_SITES=	SF
 

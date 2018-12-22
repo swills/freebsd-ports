@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/textproc/libebml/Makefile 483968 2018-11-04 09:11:40Z riggs $
+# $FreeBSD: head/textproc/libebml/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libebml
 PORTVERSION=	1.3.6
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	textproc
 

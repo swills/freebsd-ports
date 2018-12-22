@@ -1,9 +1,9 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/games/freedink-dfarc/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/freedink-dfarc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	freedink-dfarc
 PORTVERSION=	3.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	GNU/freedink
 DISTNAME=	dfarc-${PORTVERSION}

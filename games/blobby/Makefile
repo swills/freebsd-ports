@@ -1,9 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/blobby/Makefile 481268 2018-10-05 10:10:02Z martymac $
+# $FreeBSD: head/games/blobby/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	blobby
 PORTVERSION=	1.0
-PORTREVISION=	8
+PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Blobby%20Volley%202%20%28Linux%29/${PORTVERSION}

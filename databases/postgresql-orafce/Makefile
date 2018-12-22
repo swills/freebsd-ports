@@ -1,8 +1,9 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-orafce/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/postgresql-orafce/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	orafce
 PORTVERSION=	3.4.0
+PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 

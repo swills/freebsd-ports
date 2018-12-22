@@ -1,10 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libvslvm/Makefile 473872 2018-07-04 09:09:00Z antoine $
+# $FreeBSD: head/devel/libvslvm/Makefile 487912 2018-12-20 19:49:51Z antoine $
 
 PORTNAME=	libvslvm
 # If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
-DISTVERSION=	experimental-20160110
-PORTREVISION=	1
+DISTVERSION=	experimental-20181216
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libvslvm/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

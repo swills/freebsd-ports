@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 486821 2018-12-07 04:10:11Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 487294 2018-12-12 13:21:12Z jbeich $
 
 PORTNAME=	media-driver
 DISTVERSIONPREFIX=	intel-media-
 DISTVERSION=	18.3.0
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	multimedia
 PKGNAMEPREFIX=	libva-intel-
 

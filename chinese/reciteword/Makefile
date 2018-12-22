@@ -1,9 +1,9 @@
 # Created by: hamigua <hamigua@cuc.cn>
-# $FreeBSD: head/chinese/reciteword/Makefile 484654 2018-11-11 03:28:18Z linimon $
+# $FreeBSD: head/chinese/reciteword/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	reciteword
 PORTVERSION=	0.8.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	chinese
 MASTER_SITES=	SF \
 		SF/${PORTNAME}/${PORTNAME}-books/${PORTVERSION}:books \

@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/l2tpd/Makefile 487187 2018-12-10 16:50:08Z rene $
+# $FreeBSD: head/net/l2tpd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	l2tpd
 PORTVERSION=	0.69
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/L2TPd/${PORTVERSION}
 

@@ -1,6 +1,6 @@
-# $FreeBSD: head/www/sogo3-activesync/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/www/sogo3-activesync/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=		2
+PORTREVISION=		3
 PKGNAMESUFFIX=		-activesync
 
 MAINTAINER=		acm@FreeBSD.org

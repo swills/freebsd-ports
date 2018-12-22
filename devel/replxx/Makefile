@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/replxx/Makefile 471198 2018-05-31 08:42:29Z tobik $
+# $FreeBSD: head/devel/replxx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	replxx
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	0.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	meka@tilda.center

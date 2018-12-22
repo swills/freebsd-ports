@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11/slop/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/x11/slop/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	slop
 PORTVERSION=	7.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11
 
 MAINTAINER=	neel@neelc.org

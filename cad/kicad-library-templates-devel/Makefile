@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library-templates-devel/Makefile 475516 2018-07-28 09:49:26Z mr $
+# $FreeBSD: head/cad/kicad-library-templates-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_TMPL_DATE}
+PORTREVISION=	1
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-library-tmpl-devel
 

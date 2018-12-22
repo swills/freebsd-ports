@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/misc/kdeedu-kde4/Makefile 478480 2018-08-30 18:23:24Z adridg $
+# $FreeBSD: head/misc/kdeedu-kde4/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kdeedu
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	misc kde
 PKGNAMESUFFIX=	-kde4
 

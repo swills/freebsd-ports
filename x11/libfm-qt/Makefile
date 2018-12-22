@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/libfm-qt/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11/libfm-qt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libfm-qt
 PORTVERSION=	0.13.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	LXQT
 

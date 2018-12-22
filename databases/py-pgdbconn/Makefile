@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/py-pgdbconn/Makefile 473743 2018-07-02 14:28:50Z mat $
+# $FreeBSD: head/databases/py-pgdbconn/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pgdbconn
 PORTVERSION=	0.8.0
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

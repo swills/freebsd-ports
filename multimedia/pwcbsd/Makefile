@@ -1,5 +1,5 @@
 # Created by: Raaf <freebsd@luna.afraid.org>
-# $FreeBSD: head/multimedia/pwcbsd/Makefile 474998 2018-07-20 09:29:59Z 0mp $
+# $FreeBSD: head/multimedia/pwcbsd/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	pwcbsd
 PORTVERSION=	1.4.1
@@ -13,8 +13,6 @@ MAINTAINER=	lme@FreeBSD.org
 COMMENT=	The Linux pwc webcam driver ported to FreeBSD
 
 LICENSE=	GPLv2
-
-BROKEN_powerpc64=	fails to compile: pcpu.h:187: error: size of array '__assert_0' is negative
 
 CONFLICTS=	pwcview-[0-9]*
 

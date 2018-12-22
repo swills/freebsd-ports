@@ -1,8 +1,9 @@
-# $FreeBSD: head/www/edbrowse/Makefile 485240 2018-11-18 18:28:13Z linimon $
+# $FreeBSD: head/www/edbrowse/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	edbrowse
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.7.4
+PORTREVISION=	1
 CATEGORIES=	www editors
 
 MAINTAINER=	alfix86@gmail.com

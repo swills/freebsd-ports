@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/R-cran-gbm/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/R-cran-gbm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gbm
 DISTVERSION=	2.0-8
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

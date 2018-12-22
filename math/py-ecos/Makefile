@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-ecos/Makefile 485254 2018-11-18 20:01:29Z yuri $
+# $FreeBSD: head/math/py-ecos/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ecos
 DISTVERSION=	2.0.7
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	.post1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP

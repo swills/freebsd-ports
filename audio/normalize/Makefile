@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/audio/normalize/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/normalize/Makefile 488003 2018-12-21 14:18:06Z rene $
 
 PORTNAME=	normalize
 PORTVERSION=	0.7.7
@@ -20,13 +20,10 @@ CPPFLAGS+=		-I${LOCALBASE}/include
 LDFLAGS+=		-L${LOCALBASE}/lib
 MAKE_JOBS_UNSAFE=	yes
 
-OPTIONS_DEFINE=	XMMS MP3 OGG FLAC NLS
+OPTIONS_DEFINE=	MP3 OGG FLAC NLS
 OPTIONS_DEFAULT=	MP3
 OPTIONS_SUB=	yes
-XMMS_DESC=	XMMS plugin
 
-XMMS_LIB_DEPENDS=	libxmms.so:multimedia/xmms
-XMMS_CONFIGURE_ENABLE=	xmms
 MP3_RUN_DEPENDS+=	madplay:audio/madplay \
 			lame:audio/lame
 OGG_RUN_DEPENDS=	oggdec:audio/vorbis-tools

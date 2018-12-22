@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/photivo/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/photivo/Makefile 487601 2018-12-16 16:49:17Z rene $
 
 PORTNAME=	photivo
 PORTVERSION=	0.0.2015.03.21
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/${PORTNAME}/
 DISTNAME=	source-archive
@@ -35,10 +35,9 @@ qt4_CONFLICTS_INSTALL=	${PORTNAME}
 qt4_PKGNAMESUFFIX=	-qt4
 qt5_CONFLICTS_INSTALL=	${PORTNAME}-qt4
 
-qt4_DEPRECATED=		Qt4 has been EOL since december 2015
-qt4_EXPIRATION_DATE=	2019-03-15
-
 .if ${FLAVOR:U} == qt4
+DEPRECATED=	Qt4 has been EOL since december 2015
+EXPIRATION_DATE=2019-03-15
 USES+=		qt:4
 USE_QT=		qmake_build moc_build rcc_build uic_build corelib gui network
 CMAKE_ON=	FORCE_QT4

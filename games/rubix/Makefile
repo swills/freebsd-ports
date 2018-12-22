@@ -1,9 +1,9 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/games/rubix/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/rubix/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rubix
 PORTVERSION=	1.0.6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	http://sed.free.fr/rubix/ \
 		http://mirror.mcx2.org/
@@ -24,7 +24,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 
-.if (${ARCH} == mips || ${ARCH} == mips64 || ${ARCH} == powerpc || ${ARCH} == powerpc64) && ${COMPILER_TYPE} == gcc
+.if (${ARCH} == mips || ${ARCH} == mips64 || ${ARCH} == powerpc || ${ARCH} == powerpc64) && ${CHOSEN_COMPILER_TYPE} == gcc
 CFLAGS+=	-fnested-functions
 .endif
 

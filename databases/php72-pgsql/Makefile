@@ -1,5 +1,6 @@
-# $FreeBSD: head/databases/php72-pgsql/Makefile 475229 2018-07-24 08:44:32Z tz $
+# $FreeBSD: head/databases/php72-pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MASTERDIR=	${.CURDIR}/../../lang/php72

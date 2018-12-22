@@ -1,5 +1,5 @@
 # Created by: dgilbert@velocet.ca
-# $FreeBSD: head/print/gutenprint/Makefile 472156 2018-06-10 20:19:39Z cmt $
+# $FreeBSD: head/print/gutenprint/Makefile 487836 2018-12-20 04:55:49Z linimon $
 #    $MCom: ports/print/gutenprint-base/Makefile,v 1.8 2007/03/30 16:45:02 ahze Exp $
 
 PORTNAME=	gutenprint
@@ -19,7 +19,8 @@ CONFLICTS=	gimp-print-[0-9]*
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static --enable-simplified-cups-ppds DLOPEN_LIBS=" "
 INSTALL_TARGET=	install-strip
-USES=		gettext gmake libtool pathfix perl5 pkgconfig tar:bzip2
+USES=		compiler:c11 gettext gmake libtool pathfix perl5 pkgconfig \
+		tar:bzip2
 
 .if !defined(GUT_SLAVE)
 LIB_DEPENDS+=	libcupsimage.so:print/cups

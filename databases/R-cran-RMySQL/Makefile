@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/databases/R-cran-RMySQL/Makefile 469864 2018-05-14 08:59:54Z tota $
+# $FreeBSD: head/databases/R-cran-RMySQL/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	RMySQL
 DISTVERSION=	0.10.15
+PORTREVISION=	1
 CATEGORIES=	databases
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

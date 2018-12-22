@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library-packages3d/Makefile 487063 2018-12-09 17:30:09Z thierry $
+# $FreeBSD: head/cad/kicad-library-packages3d/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kicad
 PORTVERSION=	5.0.2
+PORTREVISION=	1
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-library-packages3d
 

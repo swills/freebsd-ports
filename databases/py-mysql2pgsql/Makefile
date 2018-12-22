@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/py-mysql2pgsql/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/databases/py-mysql2pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mysql2pgsql
 PORTVERSION=	0.1.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

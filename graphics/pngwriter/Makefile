@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/pngwriter/Makefile 485737 2018-11-24 09:04:17Z linimon $
+# $FreeBSD: head/graphics/pngwriter/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pngwriter
 PORTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	graphics devel
 
 MAINTAINER=	rakuco@FreeBSD.org

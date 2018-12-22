@@ -1,10 +1,10 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/plpgsql_check/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/plpgsql_check/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	plpgsql_check
 PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 

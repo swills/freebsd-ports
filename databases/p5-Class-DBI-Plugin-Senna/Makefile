@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/p5-Class-DBI-Plugin-Senna/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/databases/p5-Class-DBI-Plugin-Senna/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	Class-DBI-Plugin-Senna
 PORTVERSION=	0.01
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

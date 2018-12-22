@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/asterisk-espeak/Makefile 483629 2018-10-31 23:42:52Z madpilot $
+# $FreeBSD: head/audio/asterisk-espeak/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	espeak
 PORTVERSION=	4.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 
 MAINTAINER=	madpilot@FreeBSD.org

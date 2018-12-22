@@ -1,9 +1,9 @@
-# $FreeBSD: head/net/eternalterminal/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/net/eternalterminal/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	eternalterminal
 DISTVERSIONPREFIX=	et-v
 DISTVERSION=	4.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	trevis@silencedpoet.com

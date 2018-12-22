@@ -1,4 +1,4 @@
-# $FreeBSD: head/german/Makefile 485099 2018-11-16 20:28:58Z rene $
+# $FreeBSD: head/german/Makefile 487994 2018-12-21 13:36:25Z rene $
 #
 
     COMMENT = German support
@@ -22,9 +22,7 @@
     SUBDIR += mediathekview
     SUBDIR += mythes
     SUBDIR += phone
-    SUBDIR += php_doc
     SUBDIR += schwobifyer
-    SUBDIR += steak
     SUBDIR += tipp10
     SUBDIR += trytond28_account_de_skr03
     SUBDIR += unix-connect

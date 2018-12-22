@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/p5-transdecoder/Makefile 482836 2018-10-23 12:51:20Z jwb $
+# $FreeBSD: head/biology/p5-transdecoder/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	transdecoder
 DISTVERSIONPREFIX=	TransDecoder-v
 DISTVERSION=	5.4.0
+PORTREVISION=	1
 CATEGORIES=	biology perl5
 PKGNAMEPREFIX=	p5-
 

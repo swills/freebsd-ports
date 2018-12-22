@@ -1,9 +1,9 @@
 # Created by: Jie Gao	<gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/textproc/scim/Makefile 480829 2018-09-27 22:47:47Z linimon $
+# $FreeBSD: head/textproc/scim/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scim
 PORTVERSION=	1.4.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	SF
 

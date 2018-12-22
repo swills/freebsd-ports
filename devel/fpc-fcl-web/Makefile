@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-fcl-web/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/devel/fpc-fcl-web/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-web
-PORTREVISION=	1
+PORTREVISION=	2
 
 COMMENT=	Free Pascal web application libary (FCL)
 

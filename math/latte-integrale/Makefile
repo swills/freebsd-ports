@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/latte-integrale/Makefile 486735 2018-12-06 05:57:36Z yuri $
+# $FreeBSD: head/math/latte-integrale/Makefile 487833 2018-12-20 02:48:08Z yuri $
 
 PORTNAME=	latte-integrale
 DISTVERSIONPREFIX=	version_
 DISTVERSION=	1_7_5
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -20,7 +21,7 @@ LIB_DEPENDS=	lib4ti2util.so:math/4ti2 \
 RUN_DEPENDS=	lrs:math/lrslib \
 		points2triangs:math/topcom
 
-USES=		autoreconf gmake libtool localbase:ldflags
+USES=		autoreconf compiler:c++11-lang gmake libtool localbase:ldflags
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static \
 		--with-topcom=${LOCALBASE} --with-4ti2=${LOCALBASE} --with-cddlib=${LOCALBASE} --with-gmp=${LOCALBASE} --with-ntl=${LOCALBASE}

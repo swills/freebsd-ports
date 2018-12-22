@@ -1,8 +1,9 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/pulseview/Makefile 483893 2018-11-03 13:53:29Z bsam $
+# $FreeBSD: head/science/pulseview/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pulseview
 PORTVERSION=	0.4.1
+PORTREVISION=	2
 CATEGORIES=	science cad
 MASTER_SITES=	http://sigrok.org/download/source/pulseview/
 

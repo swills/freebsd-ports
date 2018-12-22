@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-businessprocess/Makefile 435689 2017-03-08 15:13:55Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-businessprocess/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	icingaweb2-module-businessprocess
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org

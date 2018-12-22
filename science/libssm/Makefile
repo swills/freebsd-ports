@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/libssm/Makefile 474183 2018-07-08 15:34:16Z yuri $
+# $FreeBSD: head/science/libssm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libssm
 DISTVERSION=	1.4.0
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	ftp://ftp.ccp4.ac.uk/opensource/
 DISTNAME=	ssm-${DISTVERSION}

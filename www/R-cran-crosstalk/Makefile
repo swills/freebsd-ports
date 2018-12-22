@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-crosstalk/Makefile 466313 2018-04-03 09:50:55Z tota $
+# $FreeBSD: head/www/R-cran-crosstalk/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	crosstalk
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

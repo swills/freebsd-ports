@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-widgetsnbextension/Makefile 486882 2018-12-07 19:03:53Z swills $
+# $FreeBSD: head/devel/py-widgetsnbextension/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	widgetsnbextension
 PORTVERSION=	3.4.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,15 +1,16 @@
-# $FreeBSD: head/x11-fm/rox-session/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/x11-fm/rox-session/Makefile 487237 2018-12-11 13:33:40Z amdmi3 $
 
 PORTNAME=	rox-session
 PORTVERSION=	0.40.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fm
 MASTER_SITES=	SF/rox/ROX-Session/${PORTVERSION}/
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Simple session manager for the ROX desktop
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/Help/COPYING
 
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
@@ -19,7 +20,8 @@ RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
 WRKSRC=		${WRKDIR}/ROX-Session
 DATADIR=	${PREFIX}/apps/ROX-Session
 
-USES=		gettext-tools pkgconfig python:2.7
+USES=		gettext-tools pkgconfig python:2.7 shebangfix
+SHEBANG_FILES=	AutoStart.py choose_wm.py interactive.py migrate.py
 USE_GNOME=	gtk20 libxml2
 USE_XORG=	x11 xext xtst xxf86vm
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 486403 2018-12-02 10:10:58Z tobik $
+# $FreeBSD: head/x11-fonts/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -103,7 +103,6 @@
     SUBDIR += geminifonts
     SUBDIR += gentium-basic
     SUBDIR += gentium-plus
-    SUBDIR += gfe
     SUBDIR += gnu-unifont
     SUBDIR += gnu-unifont-ttf
     SUBDIR += gofont-ttf
@@ -171,6 +170,15 @@
     SUBDIR += psftools
     SUBDIR += py-QtAwesome
     SUBDIR += py-bdflib
+    SUBDIR += py-booleanOperations
+    SUBDIR += py-compreffor
+    SUBDIR += py-cu2qu
+    SUBDIR += py-defcon
+    SUBDIR += py-fontMath
+    SUBDIR += py-fontmake
+    SUBDIR += py-glyphsLib
+    SUBDIR += py-ufo2ft
+    SUBDIR += py-ufoLib
     SUBDIR += raleway
     SUBDIR += roboto-fonts-ttf
     SUBDIR += sgifonts

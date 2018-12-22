@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/pavucontrol-qt/Makefile 482973 2018-10-25 15:47:05Z jsm $
+# $FreeBSD: head/audio/pavucontrol-qt/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pavucontrol-qt
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	LXQT/${PORTNAME}
 

@@ -1,8 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/lang/io-devel/Makefile 476631 2018-08-08 08:46:15Z gahr $
+# $FreeBSD: head/lang/io-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	io
 PORTVERSION=	20180807
+PORTREVISION=	1
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-devel
 

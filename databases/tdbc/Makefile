@@ -1,8 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/databases/tdbc/Makefile 485318 2018-11-19 12:07:37Z gahr $
+# $FreeBSD: head/databases/tdbc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tdbc
 DISTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	SF/tcl/Tcl/8.6.9
 DISTFILES=	${PORTNAME}${PORTVERSION}${EXTRACT_SUFX}

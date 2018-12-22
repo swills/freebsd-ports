@@ -1,9 +1,10 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/net/flower/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/net/flower/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	flower
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.10
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	ed@FreeBSD.org

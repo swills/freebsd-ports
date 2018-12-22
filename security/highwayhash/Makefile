@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/highwayhash/Makefile 481118 2018-10-02 14:47:51Z yuri $
+# $FreeBSD: head/security/highwayhash/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	highwayhash
 PORTVERSION=	g20181002
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	yuri@FreeBSD.org

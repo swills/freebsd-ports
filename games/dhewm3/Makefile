@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/dhewm3/Makefile 458388 2018-01-07 22:34:17Z krion $
+# $FreeBSD: head/games/dhewm3/Makefile 487711 2018-12-17 20:34:09Z amdmi3 $
 
 PORTNAME=	dhewm3
-PORTVERSION=	1.4.1
+PORTVERSION=	1.5.0
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-kactivities/Makefile 484814 2018-11-12 18:31:42Z tcberner $
+# $FreeBSD: head/x11/kf5-kactivities/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	kactivities
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

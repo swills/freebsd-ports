@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/dftbplus/Makefile 481254 2018-10-04 21:10:42Z yuri $
+# $FreeBSD: head/science/dftbplus/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dftbplus
 DISTVERSION=	18.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

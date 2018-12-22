@@ -1,8 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/shim/Makefile 486672 2018-12-05 14:09:12Z egypcio $
+# $FreeBSD: head/sysutils/shim/Makefile 487805 2018-12-19 17:30:22Z egypcio $
 
 PORTNAME=	shim
 PORTVERSION=	0.9
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	egypcio@FreeBSD.org
@@ -15,7 +16,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libgnuefi.a:devel/gnu-efi \
 		bash:shells/bash
 
 USES=		compiler gmake shebangfix
-USE_CSTD=	gnu89
+USE_CSTD=	gnu99
 USE_GCC=	yes
 
 SHEBANG_FILES=	make-certs

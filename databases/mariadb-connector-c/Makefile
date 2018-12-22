@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/mariadb-connector-c/Makefile 485794 2018-11-24 21:21:41Z brnrd $
+# $FreeBSD: head/databases/mariadb-connector-c/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mariadb-connector-c
 PORTVERSION=	3.0.7
+PORTREVISION=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/${SITESDIR}/ \
 		http://mirrors.supportex.net/${SITESDIR}/ \

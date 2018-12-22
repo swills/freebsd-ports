@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/chinese/gcin-qt4/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/chinese/gcin-qt4/Makefile 487747 2018-12-18 11:24:32Z vanilla $
 
 PORTNAME=	gcin
-PORTVERSION=	2.8.6
+PORTVERSION=	2.8.8
 CATEGORIES=	chinese textproc gnome
 MASTER_SITES=	http://hyperrate.com/gcin-source/
 PKGNAMESUFFIX=	-qt4

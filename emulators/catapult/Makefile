@@ -1,9 +1,9 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/emulators/catapult/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/emulators/catapult/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	catapult
 PORTVERSION=	0.13.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	emulators
 MASTER_SITES=	https://github.com/openMSX/openMSX/releases/download/RELEASE_${PORTVERSION:S/./_/g}/
 DISTNAME=	openmsx-${PORTNAME}-${PORTVERSION}

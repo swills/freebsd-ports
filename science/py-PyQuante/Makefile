@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-PyQuante/Makefile 473290 2018-06-25 04:54:53Z linimon $
+# $FreeBSD: head/science/py-PyQuante/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	PyQuante
 DISTVERSION=	1.6.5
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}-${DISTVERSION:R}/${PORTNAME}-${DISTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

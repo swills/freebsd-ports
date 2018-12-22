@@ -1,8 +1,9 @@
 # Created by: Dave Green <dg@fastmail.co.uk>
-# $FreeBSD: head/databases/libpqtypes/Makefile 381291 2015-03-14 18:16:05Z pawel $
+# $FreeBSD: head/databases/libpqtypes/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libpqtypes
 PORTVERSION=	1.5.1
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://pgfoundry.org/frs/download.php/3484/
 

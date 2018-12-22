@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 486677 2018-12-05 15:46:02Z rene $
+# $FreeBSD: head/misc/Makefile 487992 2018-12-21 13:19:02Z rene $
 #
 
     COMMENT = Miscellaneous utilities
@@ -172,8 +172,6 @@
     SUBDIR += gplink
     SUBDIR += granulate
     SUBDIR += grc
-    SUBDIR += gregexp
-    SUBDIR += gtkfind
     SUBDIR += gwhich
     SUBDIR += hb
     SUBDIR += hello
@@ -266,6 +264,7 @@
     SUBDIR += lc
     SUBDIR += lesspipe
     SUBDIR += libeatmydata
+    SUBDIR += libemos
     SUBDIR += libisocodes
     SUBDIR += libkdeedu-kde4
     SUBDIR += libkeduvocdocument

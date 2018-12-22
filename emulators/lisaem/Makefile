@@ -1,8 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/emulators/lisaem/Makefile 486164 2018-11-29 11:04:23Z linimon $
+# $FreeBSD: head/emulators/lisaem/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lisaem
 PORTVERSION=	1.2.6.2
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://lisaem.sunder.net/downloads/
 

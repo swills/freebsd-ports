@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/libnghttp2/Makefile 485805 2018-11-24 22:28:51Z sunpoet $
+# $FreeBSD: head/www/libnghttp2/Makefile 487439 2018-12-14 15:11:38Z lwhsu $
 
 PORTNAME=	nghttp2
-PORTVERSION=	1.35.0
+PORTVERSION=	1.35.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www net
 PKGNAMEPREFIX=	lib

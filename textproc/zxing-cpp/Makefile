@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/zxing-cpp/Makefile 485000 2018-11-15 04:04:44Z linimon $
+# $FreeBSD: head/textproc/zxing-cpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	zxing-cpp
 DISTVERSION=	0.20180320
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	yuri@FreeBSD.org

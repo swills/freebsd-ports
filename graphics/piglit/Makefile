@@ -1,9 +1,9 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/piglit/Makefile 484788 2018-11-11 23:54:06Z jbeich $
+# $FreeBSD: head/graphics/piglit/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	piglit
 PORTVERSION=	20180910
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	x11@FreeBSD.org

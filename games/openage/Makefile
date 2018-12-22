@@ -1,10 +1,10 @@
-# $FreeBSD: head/games/openage/Makefile 484674 2018-11-11 09:32:43Z sunpoet $
+# $FreeBSD: head/games/openage/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openage
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.3.0-1262
 DISTVERSIONSUFFIX=	-ga554ab49
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	freebsd@sysctl.cz

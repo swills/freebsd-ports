@@ -1,10 +1,10 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/devel/libsigc++20/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/libsigc++20/Makefile 487272 2018-12-12 01:35:33Z gerald $
 #   $MCom: ports/trunk/devel/libsigc++20/Makefile 19952 2014-10-15 08:11:00Z gusi $
 
 PORTNAME=	libsigc++
 PORTVERSION=	2.10.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
 

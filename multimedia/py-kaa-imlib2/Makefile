@@ -1,9 +1,9 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/multimedia/py-kaa-imlib2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/multimedia/py-kaa-imlib2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kaa-imlib2
 PORTVERSION=	0.2.3
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	multimedia python
 MASTER_SITES=	SF/freevo/${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

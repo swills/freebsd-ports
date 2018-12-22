@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/webvfx-qt5/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/multimedia/webvfx-qt5/Makefile 488055 2018-12-22 03:00:11Z linimon $
 
 PORTNAME=	webvfx
 DISTVERSION=	0.4.4-20160823
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-qt5
 
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mltframework
 GH_TAGNAME=	e918ce4
 
-USES=		pkgconfig qmake qt:5
+USES=		compiler:c++11-lang pkgconfig qmake qt:5
 USE_QT=		3d buildtools_build declarative opengl webkit
 USE_LDCONFIG=	yes
 

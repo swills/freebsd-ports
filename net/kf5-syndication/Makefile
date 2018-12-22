@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kf5-syndication/Makefile 479942 2018-09-17 18:45:07Z tcberner $
+# $FreeBSD: head/net/kf5-syndication/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	syndication
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

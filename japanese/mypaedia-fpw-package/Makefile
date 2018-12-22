@@ -1,9 +1,9 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/mypaedia-fpw-package/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/japanese/mypaedia-fpw-package/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mypaedia-fpw-package
 PORTVERSION=	1.0.7
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	japanese elisp
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/mypaedia/
 

@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/py-cartopy/Makefile 485263 2018-11-18 20:37:11Z sunpoet $
+# $FreeBSD: head/graphics/py-cartopy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	cartopy
 PORTVERSION=	0.17.0
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

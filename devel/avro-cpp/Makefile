@@ -1,10 +1,10 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-cpp/Makefile 482064 2018-10-14 16:29:26Z sunpoet $
+# $FreeBSD: head/devel/avro-cpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.2
 DISTVERSIONPREFIX=	release-
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-cpp
 

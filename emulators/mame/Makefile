@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/mame/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/emulators/mame/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME?=	mame
 PORTVERSION=	0.200
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/libpgmath/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/math/libpgmath/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libpgmath
 DISTVERSION=	g20180904
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org

@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/maeparser/Makefile 482957 2018-10-25 07:24:36Z yuri $
+# $FreeBSD: head/science/maeparser/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	maeparser
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

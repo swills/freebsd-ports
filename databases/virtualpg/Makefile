@@ -1,8 +1,9 @@
 # Created by: Loïc BARTOLETTI <coder@tuxfamily.org>
-# $FreeBSD: head/databases/virtualpg/Makefile 450502 2017-09-24 18:48:47Z sunpoet $
+# $FreeBSD: head/databases/virtualpg/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	virtualpg
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	databases geography
 MASTER_SITES=	http://www.gaia-gis.it/gaia-sins/
 

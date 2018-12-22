@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/regex2dfa/Makefile 486672 2018-12-05 14:09:12Z egypcio $
+# $FreeBSD: head/textproc/regex2dfa/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	regex2dfa
 DISTVERSION=	0.1.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 
 MAINTAINER=	egypcio@FreeBSD.org

@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/tsearch_extras/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/tsearch_extras/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tsearch_extras
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	rm@FreeBSD.org

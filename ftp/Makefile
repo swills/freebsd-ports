@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/Makefile 486677 2018-12-05 15:46:02Z rene $
+# $FreeBSD: head/ftp/Makefile 487235 2018-12-11 13:02:50Z rene $
 #
 
     COMMENT = FTP client and server utilities
@@ -30,7 +30,6 @@
     SUBDIR += gftp
     SUBDIR += gnustep-ftp
     SUBDIR += gstreamer1-plugins-curl
-    SUBDIR += gwget
     SUBDIR += horde-gollem
     SUBDIR += hs-curl
     SUBDIR += hsftp

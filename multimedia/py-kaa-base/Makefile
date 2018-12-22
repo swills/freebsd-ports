@@ -1,9 +1,9 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/multimedia/py-kaa-base/Makefile 475617 2018-07-28 23:23:46Z yuri $
+# $FreeBSD: head/multimedia/py-kaa-base/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kaa-base
 PORTVERSION=	0.6.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	multimedia python
 MASTER_SITES=	SF/freevo/${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

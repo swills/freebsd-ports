@@ -1,9 +1,9 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/irc/ircd-ratbox/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/irc/ircd-ratbox/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ircd-ratbox
 PORTVERSION=	3.0.10
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	irc ipv6
 MASTER_SITES=	http://www.ratbox.org/download/				\
 		http://www.ratbox.org/download/old/

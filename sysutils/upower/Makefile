@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/upower/Makefile 485727 2018-11-24 07:15:57Z linimon $
+# $FreeBSD: head/sysutils/upower/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	upower
 PORTVERSION=	0.99.7
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://upower.freedesktop.org/releases/
 

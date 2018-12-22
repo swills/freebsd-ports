@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/restbed/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/www/restbed/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	restbed
 DISTVERSION=	4.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 
 MAINTAINER=	yuri@FreeBSD.org

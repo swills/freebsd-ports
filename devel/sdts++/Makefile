@@ -1,9 +1,9 @@
 # Created by: erik@habatech.no
-# $FreeBSD: head/devel/sdts++/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/devel/sdts++/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	sdts++
 PORTVERSION=	1.5.1
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	devel
 MASTER_SITES=	http://thor-f5.er.usgs.gov/sdts/sdtsxx/ \
 		http://lychnobite.org/sdts/

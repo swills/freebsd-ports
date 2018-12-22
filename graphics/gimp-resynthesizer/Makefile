@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-resynthesizer/Makefile 460710 2018-02-02 16:13:39Z amdmi3 $
+# $FreeBSD: head/graphics/gimp-resynthesizer/Makefile 488018 2018-12-21 17:25:15Z amdmi3 $
 
 PORTNAME=	resynthesizer
 PORTVERSION=	2.0.3
@@ -20,7 +20,8 @@ LIB_DEPENDS=	libgimp-2.0.so:graphics/gimp-app
 USE_GITHUB=	yes
 GH_ACCOUNT=	bootchk
 
-USES=		autoreconf gettext gmake localbase pkgconfig python:2.7,run shebangfix
+USES=		autoreconf compiler:c++11-lang gettext gmake localbase \
+		pkgconfig python:2.7,run shebangfix
 SHEBANG_FILES=	PluginScripts/*.py
 GNU_CONFIGURE=	yes
 

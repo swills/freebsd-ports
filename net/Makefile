@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 487201 2018-12-10 21:09:38Z zeising $
+# $FreeBSD: head/net/Makefile 488006 2018-12-21 14:22:17Z rene $
 #
 
     COMMENT = Networking tools
@@ -18,6 +18,7 @@
     SUBDIR += akonadi-mime
     SUBDIR += akonadi-notes
     SUBDIR += akonadi-search
+    SUBDIR += aluminum
     SUBDIR += anet
     SUBDIR += aoe
     SUBDIR += apinger
@@ -67,7 +68,6 @@
     SUBDIR += bounce
     SUBDIR += bredbandskollen
     SUBDIR += bsdec2-image-upload
-    SUBDIR += bsdproxy
     SUBDIR += bsdrcmds
     SUBDIR += bwi-firmware-kmod
     SUBDIR += bwn-firmware-kmod
@@ -174,14 +174,12 @@
     SUBDIR += fspclient
     SUBDIR += fspd
     SUBDIR += fsplib
-    SUBDIR += g2ipmsg
     SUBDIR += gdrive
     SUBDIR += geoclue
     SUBDIR += geocode-glib
     SUBDIR += geoipupdate
     SUBDIR += get_iplayer
     SUBDIR += gfbgraph
-    SUBDIR += gini
     SUBDIR += gkrellmwireless2
     SUBDIR += glflow
     SUBDIR += glib-networking
@@ -212,7 +210,6 @@
     SUBDIR += gotthard
     SUBDIR += gq
     SUBDIR += graphpath
-    SUBDIR += grdesktop
     SUBDIR += grilo
     SUBDIR += grilo-plugins
     SUBDIR += grive2
@@ -294,7 +291,6 @@
     SUBDIR += ipdecap
     SUBDIR += ipgrab
     SUBDIR += iplog
-    SUBDIR += ipsorc
     SUBDIR += ipsumdump
     SUBDIR += ipsvd
     SUBDIR += ipxe
@@ -304,7 +300,6 @@
     SUBDIR += isc-dhcp44-relay
     SUBDIR += isc-dhcp44-server
     SUBDIR += istgt
-    SUBDIR += jags
     SUBDIR += jakarta-commons-net
     SUBDIR += java-beepcore
     SUBDIR += jcifs
@@ -383,6 +378,7 @@
     SUBDIR += libgrss
     SUBDIR += libgweather
     SUBDIR += libilbc
+    SUBDIR += libjson-rpc-cpp 
     SUBDIR += libkfbapi
     SUBDIR += libkgapi
     SUBDIR += libksieve
@@ -399,7 +395,6 @@
     SUBDIR += libmxp
     SUBDIR += libnatpmp
     SUBDIR += libnet
-    SUBDIR += libnetdude
     SUBDIR += libnfs
     SUBDIR += libnids
     SUBDIR += libnss-cache
@@ -511,12 +506,9 @@
     SUBDIR += ndpi
     SUBDIR += ndproxy
     SUBDIR += nepenthes
-    SUBDIR += nepim
     SUBDIR += net6
-    SUBDIR += netatalk
     SUBDIR += netatalk3
     SUBDIR += netcat
-    SUBDIR += netdude
     SUBDIR += netembryo
     SUBDIR += nethogs
     SUBDIR += netmap
@@ -539,7 +531,6 @@
     SUBDIR += nmsg
     SUBDIR += nncp
     SUBDIR += nng
-    SUBDIR += nocatsplash
     SUBDIR += norm
     SUBDIR += nph
     SUBDIR += ns3
@@ -550,7 +541,6 @@
     SUBDIR += nsscache
     SUBDIR += ntimed
     SUBDIR += ntlmaps
-    SUBDIR += ntop
     SUBDIR += ntopng
     SUBDIR += ntp
     SUBDIR += ntpa
@@ -1076,7 +1066,6 @@
     SUBDIR += py-libdnet
     SUBDIR += py-libfte
     SUBDIR += py-libnet
-    SUBDIR += py-libstorj
     SUBDIR += py-magic-wormhole
     SUBDIR += py-matrix-synapse-ldap3
     SUBDIR += py-maxminddb
@@ -1368,7 +1357,6 @@
     SUBDIR += scapy
     SUBDIR += scnc
     SUBDIR += scr_ipfm
-    SUBDIR += scribe
     SUBDIR += sdl2_net
     SUBDIR += sdl_net
     SUBDIR += seda
@@ -1531,7 +1519,6 @@
     SUBDIR += wireshark-qt5
     SUBDIR += wizd
     SUBDIR += wlan2eth
-    SUBDIR += wmlj
     SUBDIR += wmnd
     SUBDIR += wmnet
     SUBDIR += wmnet2
@@ -1548,7 +1535,6 @@
     SUBDIR += x11vnc
     SUBDIR += x2goclient
     SUBDIR += x2goclient-cli
-    SUBDIR += xferstats
     SUBDIR += xipmsg
     SUBDIR += xisp
     SUBDIR += xmlrpc-c

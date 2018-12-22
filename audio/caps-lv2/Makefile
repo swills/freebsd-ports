@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/caps-lv2/Makefile 472827 2018-06-19 22:30:07Z yuri $
+# $FreeBSD: head/audio/caps-lv2/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	caps-lv2
 PORTVERSION=	g20170626
@@ -11,8 +11,6 @@ COMMENT=	LV2 version of the C* Audio Plugin Suite
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to build: cc1plus: unrecognized command line option -std=c++11
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 

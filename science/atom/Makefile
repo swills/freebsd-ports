@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/atom/Makefile 482633 2018-10-20 23:29:28Z yuri $
+# $FreeBSD: head/science/atom/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	atom
 DISTVERSION=	4.2.7-100
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 MASTER_SITES=	https://departments.icmab.es/leem/siesta/Pseudopotentials/Code/ \
 		https://departments.icmab.es/leem/siesta/Pseudopotentials/:lic

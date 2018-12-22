@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/fsom/Makefile 480985 2018-09-30 21:41:44Z jwb $
+# $FreeBSD: head/science/fsom/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fsom
 DISTVERSION=	g20151117
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	jwb@FreeBSD.org

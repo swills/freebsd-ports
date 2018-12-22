@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/polybar/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
+# $FreeBSD: head/x11/polybar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	polybar
 DISTVERSION=	3.2.1
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	rigoletto@FreeBSD.org

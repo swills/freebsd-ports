@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-mlpy/Makefile 473116 2018-06-23 08:27:13Z tcberner $
+# $FreeBSD: head/science/py-mlpy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mlpy
 PORTVERSION=	3.5.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

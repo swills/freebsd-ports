@@ -1,9 +1,9 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql-libpqxx3/Makefile 458857 2018-01-12 16:26:29Z girgen $
+# $FreeBSD: head/databases/postgresql-libpqxx3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libpqxx
 PORTVERSION=	3.1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	http://pqxx.org/download/software/${PORTNAME}/
 PKGNAMEPREFIX=	postgresql-

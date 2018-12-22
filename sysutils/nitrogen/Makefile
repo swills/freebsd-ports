@@ -1,8 +1,9 @@
 # Created by: Jonathan Liu <Net147@hotmail.com>
-# $FreeBSD: head/sysutils/nitrogen/Makefile 487052 2018-12-09 14:56:27Z tobik $
+# $FreeBSD: head/sysutils/nitrogen/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nitrogen
 DISTVERSION=	1.6.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/l3ib/nitrogen/releases/download/${DISTVERSION}/
 

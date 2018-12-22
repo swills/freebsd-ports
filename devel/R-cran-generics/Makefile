@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/R-cran-generics/Makefile 485417 2018-11-20 07:46:36Z tota $
+# $FreeBSD: head/devel/R-cran-generics/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	generics
 PORTVERSION=	0.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

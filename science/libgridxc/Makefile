@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/libgridxc/Makefile 486638 2018-12-04 23:58:49Z yuri $
+# $FreeBSD: head/science/libgridxc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libgridxc
 DISTVERSION=	0.8.4
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/trunk/${DISTVERSION:R}/+download/
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/R-cran-rematch/Makefile 480551 2018-09-24 07:04:15Z dbn $
+# $FreeBSD: head/textproc/R-cran-rematch/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	rematch
 DISTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

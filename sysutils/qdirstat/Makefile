@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/qdirstat/Makefile 484439 2018-11-08 08:38:09Z kbowling $
+# $FreeBSD: head/sysutils/qdirstat/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qdirstat
 PORTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	kbowling@FreeBSD.org

@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/kreport/Makefile 484573 2018-11-10 07:22:09Z tcberner $
+# $FreeBSD: head/textproc/kreport/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		kreport
 DISTVERSION=		3.1.0
+PORTREVISION=	1
 CATEGORIES=		textproc kde
 MASTER_SITES=		KDE/stable/${PORTNAME}/src
 DIST_SUBDIR=		KDE/${PORTNAME}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/fcl/Makefile 485412 2018-11-20 06:01:18Z yuri $
+# $FreeBSD: head/math/fcl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fcl
 DISTVERSION=	0.5.0-304
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g16c193a
 CATEGORIES=	math
 

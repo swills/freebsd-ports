@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-wm/plasma5-kdecoration/Makefile 483271 2018-10-28 10:59:23Z tcberner $
+# $FreeBSD: head/x11-wm/plasma5-kdecoration/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kdecoration
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-wm kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

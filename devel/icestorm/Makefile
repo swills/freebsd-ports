@@ -1,8 +1,9 @@
 # Created by: Johnny Sorocil <jsorocil@gmail.com>
-# $FreeBSD: head/devel/icestorm/Makefile 484931 2018-11-14 15:50:09Z tobik $
+# $FreeBSD: head/devel/icestorm/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	icestorm
 PORTVERSION=	g20181021
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	jsorocil@gmail.com

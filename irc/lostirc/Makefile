@@ -1,9 +1,9 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/irc/lostirc/Makefile 485236 2018-11-18 18:19:40Z linimon $
+# $FreeBSD: head/irc/lostirc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lostirc
 PORTVERSION=	0.4.6
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	irc
 MASTER_SITES=	SF
 

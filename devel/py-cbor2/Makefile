@@ -1,8 +1,8 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/devel/py-cbor2/Makefile 476734 2018-08-09 10:42:42Z dvl $
+# $FreeBSD: head/devel/py-cbor2/Makefile 487240 2018-12-11 16:12:54Z dvl $
 
 PORTNAME=	cbor2
-PORTVERSION=	4.1.0
+PORTVERSION=	4.1.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

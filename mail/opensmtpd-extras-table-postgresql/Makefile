@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/mail/opensmtpd-extras-table-postgresql/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/mail/opensmtpd-extras-table-postgresql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PKGNAMESUFFIX=	-table-postgresql
-PORTREVISION=	2
+PORTREVISION=	3
 
 COMMENT=	PostgreSQL table support for OpenSMTPD
 

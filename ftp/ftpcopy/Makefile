@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/ftp/ftpcopy/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/ftp/ftpcopy/Makefile 487229 2018-12-11 09:31:31Z amdmi3 $
 
 PORTNAME=	ftpcopy
 PORTVERSION=	0.6.7
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.ohse.de/uwe/ftpcopy/
 
 MAINTAINER=	mandree@FreeBSD.org
 COMMENT=	Command line ftp tools for listing and mirroring
+
+LICENSE=	GPLv2
 
 BROKEN_aarch64=		fails to build: regparm is not valid on this platform
 BROKEN_armv6=		fails to build: regparm is not valid on this platform

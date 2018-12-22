@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/compton-conf/Makefile 484844 2018-11-12 22:16:26Z jsm $
+# $FreeBSD: head/x11/compton-conf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	compton-conf
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	LXQT/${PORTNAME}
 

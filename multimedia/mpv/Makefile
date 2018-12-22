@@ -1,10 +1,10 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpv/Makefile 484788 2018-11-11 23:54:06Z jbeich $
+# $FreeBSD: head/multimedia/mpv/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	mpv
 PORTVERSION=	0.29.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio
 MASTER_SITES=	https://waf.io/:waf
@@ -143,7 +143,8 @@ VAAPI_CONFIGURE_OFF=		--disable-vaapi
 VDPAU_LIB_DEPENDS=		libvdpau.so:multimedia/libvdpau
 VDPAU_CONFIGURE_OFF=		--disable-vdpau
 
-WAYLAND_BUILD_DEPENDS=		wayland-protocols>=1.14:graphics/wayland-protocols
+WAYLAND_BUILD_DEPENDS=		wayland-protocols>=1.14:graphics/wayland-protocols \
+				${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 WAYLAND_LIB_DEPENDS=		libwayland-client.so:graphics/wayland \
 				libwayland-cursor.so:graphics/wayland \
 				libxkbcommon.so:x11/libxkbcommon

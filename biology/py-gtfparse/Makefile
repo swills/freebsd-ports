@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/py-gtfparse/Makefile 482398 2018-10-19 02:03:40Z yuri $
+# $FreeBSD: head/biology/py-gtfparse/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gtfparse
 DISTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

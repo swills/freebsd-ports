@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-xts/Makefile 485063 2018-11-16 07:59:15Z tota $
+# $FreeBSD: head/math/R-cran-xts/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	xts
 DISTVERSION=	0.11-2
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

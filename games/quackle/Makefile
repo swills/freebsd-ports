@@ -1,9 +1,9 @@
 # Created by: shoemaker@bluebottle.com (Jonathan Shoemaker)
-# $FreeBSD: head/games/quackle/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/games/quackle/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	quackle
 PORTVERSION=	1.0.3
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

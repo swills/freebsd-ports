@@ -1,8 +1,9 @@
 # Created by: Tobias Rehbein <tobias.rehbein@web.de>
-# $FreeBSD: head/games/stonesoup/Makefile 480642 2018-09-25 07:29:25Z linimon $
+# $FreeBSD: head/games/stonesoup/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	stonesoup
 PORTVERSION=	0.22.1
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	lifanov@FreeBSD.org

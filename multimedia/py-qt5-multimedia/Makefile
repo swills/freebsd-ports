@@ -1,10 +1,13 @@
-# $FreeBSD: head/multimedia/py-qt5-multimedia/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/multimedia/py-qt5-multimedia/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	multimedia
 CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtMultimedia module
+
+BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 
 CONFIGURE_ARGS=	--enable QtMultimedia
 PYQT_DIST=	yes

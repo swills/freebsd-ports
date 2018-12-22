@@ -1,9 +1,9 @@
 # Created by: J.F. Dockes <jean-francois.dockes@wanadoo.fr>
-# $FreeBSD: head/deskutils/recoll/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/deskutils/recoll/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	recoll
 DISTVERSION=	1.23.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www.lesbonscomptes.com/recoll/
 

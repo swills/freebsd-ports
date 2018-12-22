@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/triceratops-lv2/Makefile 480666 2018-09-25 14:42:34Z emaste $
+# $FreeBSD: head/audio/triceratops-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	triceratops
 DISTVERSIONPREFIX=	lv2-v
 DISTVERSION=	0.3.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	SF/triceratops
 PKGNAMESUFFIX=	-lv2

@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/graphviz/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/graphviz/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	graphviz
 PORTVERSION=	2.40.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics tk
 MASTER_SITES=	https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/
 

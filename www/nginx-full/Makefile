@@ -1,7 +1,8 @@
 # Created by: Bartek Rutkowski <robak@FreeBSD.org>
-# $FreeBSD: head/www/nginx-full/Makefile 442588 2017-06-04 20:38:26Z robak $
+# $FreeBSD: head/www/nginx-full/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nginx
+PORTREVISION=	1
 PKGNAMESUFFIX=	-full
 
 MAINTAINER=	robak@FreeBSD.org

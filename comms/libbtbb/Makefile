@@ -1,8 +1,9 @@
 # Created by: George V. Neville-Neil <gnn@freebsd.org>
-# $FreeBSD: head/comms/libbtbb/Makefile 478962 2018-09-04 14:11:56Z gnn $
+# $FreeBSD: head/comms/libbtbb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libbtbb
 PORTVERSION=	201808R1
+PORTREVISION=	1
 CATEGORIES=	comms
 
 MAINTAINER=	gnn@FreeBSD.org

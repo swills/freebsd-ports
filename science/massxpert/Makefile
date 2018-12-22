@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/science/massxpert/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/science/massxpert/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	massxpert
 PORTVERSION=	3.4.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	science
 MASTER_SITES=	http://download.tuxfamily.org/massxpert/source/
 

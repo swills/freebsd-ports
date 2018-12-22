@@ -1,9 +1,9 @@
 # Created by: Alex Dupre <sysadmin@alexdupre.com>
-# $FreeBSD: head/irc/ircservices/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/irc/ircservices/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ircservices
 PORTVERSION=	5.1.18
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	irc
 MASTER_SITES=	http://www.ircservices.za.net/download/ \
 		http://banana.irc.gr/ircservices/ \

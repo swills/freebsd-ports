@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-google-cloud-vision/Makefile 486100 2018-11-28 17:42:11Z jpaetzel $
+# $FreeBSD: head/www/py-google-cloud-vision/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	google-cloud-vision
 PORTVERSION=	0.35.1
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

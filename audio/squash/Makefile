@@ -1,9 +1,9 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/audio/squash/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/squash/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	squash
 PORTVERSION=	1.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	audio
 MASTER_SITES=	SAVANNAH
 

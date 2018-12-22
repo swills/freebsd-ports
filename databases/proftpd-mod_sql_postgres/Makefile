@@ -1,7 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/databases/proftpd-mod_sql_postgres/Makefile 370463 2014-10-08 17:09:39Z bapt $
+# $FreeBSD: head/databases/proftpd-mod_sql_postgres/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mod_sql_postgres
+PORTREVISION=	1
 CATEGORIES=	databases ftp
 PKGNAMEPREFIX=	proftpd-
 

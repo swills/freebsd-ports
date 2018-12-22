@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kpkpass/Makefile 482598 2018-10-20 16:36:10Z tcberner $
+# $FreeBSD: head/security/kpkpass/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	kpkpass
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

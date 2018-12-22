@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/graphics/exiv2/Makefile 485731 2018-11-24 08:38:11Z riggs $
+# $FreeBSD: head/graphics/exiv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	exiv2
 DISTVERSION=	0.26
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-trunk
 PORTEPOCH=	1
 CATEGORIES=	graphics

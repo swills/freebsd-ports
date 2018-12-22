@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/R-cran-haven/Makefile 487149 2018-12-10 10:54:30Z dbn $
+# $FreeBSD: head/math/R-cran-haven/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	haven
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

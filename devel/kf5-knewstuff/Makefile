@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-knewstuff/Makefile 484814 2018-11-12 18:31:42Z tcberner $
+# $FreeBSD: head/devel/kf5-knewstuff/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	knewstuff
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

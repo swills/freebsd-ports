@@ -1,9 +1,9 @@
 # Created by: Ben Haga <tuximus@tuximus.mine.nu>
-# $FreeBSD: head/devel/tigcc/Makefile 486817 2018-12-07 00:48:20Z linimon $
+# $FreeBSD: head/devel/tigcc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tigcc
 PORTVERSION=	0.96.b8
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=		GCC/snapshots/4.1-20060728:gcc \
 			GNU/binutils:gas \

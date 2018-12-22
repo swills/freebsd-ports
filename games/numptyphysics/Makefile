@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/numptyphysics/Makefile 480003 2018-09-18 09:28:34Z linimon $
+# $FreeBSD: head/games/numptyphysics/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	numptyphysics
 DISTVERSION=	0.3.r20090104
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/
 

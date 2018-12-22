@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-folium/Makefile 485546 2018-11-21 20:20:36Z sunpoet $
+# $FreeBSD: head/www/py-folium/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	folium
 PORTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

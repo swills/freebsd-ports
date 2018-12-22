@@ -1,7 +1,8 @@
-# $FreeBSD: head/astro/py-pysofa/Makefile 475344 2018-07-26 03:12:23Z yuri $
+# $FreeBSD: head/astro/py-pysofa/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pysofa
 DISTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	astro devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

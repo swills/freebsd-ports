@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-keras/Makefile 481516 2018-10-08 07:30:31Z wen $
+# $FreeBSD: head/math/py-keras/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	keras
 DISTVERSION=	2.2.4
+PORTREVISION=	1
 CATEGORIES=	math
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

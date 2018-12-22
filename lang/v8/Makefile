@@ -1,9 +1,9 @@
 # Created by: siasia
-# $FreeBSD: head/lang/v8/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/lang/v8/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	v8
 PORTVERSION=	3.18.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang
 MASTER_SITES=	LOCAL/vanilla
 

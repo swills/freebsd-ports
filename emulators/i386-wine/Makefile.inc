@@ -1,8 +1,8 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/emulators/i386-wine/Makefile.inc 487147 2018-12-10 10:26:41Z dbn $
+# $FreeBSD: head/emulators/i386-wine/Makefile.inc 487342 2018-12-13 05:51:52Z dbn $
 
 PORTNAME=	wine
-PORTVERSION=	3.0.3
+PORTVERSION=	3.0.4
 PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	emulators
@@ -58,7 +58,7 @@ PLIST_SUB+=	OSREL${osrel}="@comment "
 .endif
 .endfor
 
-.if ${OPSYS} != FreeBSD || (!(${OSVERSION} >= 1102000 && ${OSVERSION} < 1200000) && !(${OSVERSION} >= 1200500 && ${OSVERSION} < 1300000) && !(${OSVERSION} >= 1300003 && ${OSVERSION} < 1400000))
+.if ${OPSYS} != FreeBSD || (!(${OSVERSION} >= 1102000 && ${OSVERSION} < 1200000) && !(${OSVERSION} >= 1200086 && ${OSVERSION} < 1300000) && !(${OSVERSION} >= 1300003 && ${OSVERSION} < 1400000))
 IGNORE=		binaries compiled for FreeBSD 11.2+, 12.0+ and -current only
 DISTFILES=
 .endif

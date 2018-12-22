@@ -1,9 +1,9 @@
 # Created by: Jie Gao <gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/textproc/scim-table-imengine/Makefile 483257 2018-10-28 09:58:42Z linimon $
+# $FreeBSD: head/textproc/scim-table-imengine/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scim-table-imengine
 PORTVERSION=	0.5.10
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	SF/scim/scim-tables/${PORTVERSION}
 DISTNAME=	scim-tables-${PORTVERSION}

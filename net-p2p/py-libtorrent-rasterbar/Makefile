@@ -1,9 +1,9 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/py-libtorrent-rasterbar/Makefile 481404 2018-10-06 23:18:17Z yuri $
+# $FreeBSD: head/net-p2p/py-libtorrent-rasterbar/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	libtorrent-rasterbar
 DISTVERSION=	1.1.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p ipv6 python
 MASTER_SITES=	https://github.com/arvidn/libtorrent/releases/download/libtorrent-${PORTVERSION:S/./_/g}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

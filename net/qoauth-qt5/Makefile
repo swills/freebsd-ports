@@ -1,10 +1,10 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/qoauth-qt5/Makefile 482605 2018-10-20 17:00:28Z tcberner $
+# $FreeBSD: head/net/qoauth-qt5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qoauth
 PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net devel security
 PKGNAMESUFFIX=	-qt5
 

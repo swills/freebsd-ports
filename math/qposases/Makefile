@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/qposases/Makefile 487090 2018-12-09 21:27:53Z yuri $
+# $FreeBSD: head/math/qposases/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qpOASES
 DISTVERSION=	3.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://www.coin-or.org/download/source/${PORTNAME}/
 PKGNAMEPREFIX=	coin-or-

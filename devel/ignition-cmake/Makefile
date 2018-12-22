@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ignition-cmake/Makefile 485476 2018-11-20 19:35:05Z yuri $
+# $FreeBSD: head/devel/ignition-cmake/Makefile 487263 2018-12-11 23:12:20Z antoine $
 
 PORTNAME=	ignition-cmake
 DISTVERSION=	2.0.0
@@ -10,10 +10,8 @@ COMMENT=	CMake modules to be used by the Ignition projects
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	ruby:lang/ruby24
-RUN_DEPENDS=	ruby:lang/ruby24
-
 USES=		cmake:outsource pkgconfig
+USE_RUBY=	yes
 
 CMAKE_OFF=	BUILD_TESTING
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/finance/kmymoney/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/finance/kmymoney/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kmymoney
 PORTVERSION=	5.0.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	finance kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 

@@ -1,9 +1,9 @@
 # Created by: Oliver Lehmann
-# $FreeBSD: head/devel/libwfut/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/libwfut/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libwfut
 PORTVERSION=	0.2.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	SF/worldforge/libwfut%20%28updates%20library%29/${PORTVERSION}
 

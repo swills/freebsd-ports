@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-ChangeAnomalyDetection/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-ChangeAnomalyDetection/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ChangeAnomalyDetection
 PORTVERSION=	0.1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

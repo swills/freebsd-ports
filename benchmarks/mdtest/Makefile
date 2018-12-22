@@ -1,9 +1,9 @@
 # Created by: Chao Shin <quakelee@cn.freebsd.org>
-# $FreeBSD: head/benchmarks/mdtest/Makefile 480425 2018-09-22 18:00:24Z yuri $
+# $FreeBSD: head/benchmarks/mdtest/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mdtest
 PORTVERSION=	1.9.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	benchmarks
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20latest/${PORTNAME}-${PORTVERSION}
 

@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/qt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt5/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	qt5
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	kde@FreeBSD.org

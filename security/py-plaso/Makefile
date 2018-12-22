@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-plaso/Makefile 481460 2018-10-07 16:33:55Z antoine $
+# $FreeBSD: head/security/py-plaso/Makefile 487917 2018-12-20 19:57:02Z antoine $
 
 PORTNAME=	plaso
-PORTVERSION=	20180930
+PORTVERSION=	20181219
 CATEGORIES=	security python
 MASTER_SITES=	https://github.com/log2timeline/plaso/releases/download/${PORTVERSION}/ \
 		LOCAL/antoine
@@ -46,7 +46,7 @@ RUN_DEPENDS=	libesedb>=e:devel/libesedb \
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${PY_FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7
+USES=		python
 USE_LOCALE=	en_US.UTF-8
 USE_PYTHON=	distutils autoplist
 

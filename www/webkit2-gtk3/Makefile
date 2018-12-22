@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit2-gtk3/Makefile 486051 2018-11-27 19:30:47Z kwm $
+# $FreeBSD: head/www/webkit2-gtk3/Makefile 488058 2018-12-22 03:24:36Z linimon $
 
 PORTNAME=	webkit
-PORTVERSION=	2.22.4
+PORTVERSION=	2.22.5
 CATEGORIES=	www
 MASTER_SITES=	https://webkitgtk.org/releases/
 PKGNAMESUFFIX=	2-gtk3
@@ -48,10 +48,10 @@ USE_XORG=	x11 xcomposite xdamage xext xrender xt ice
 BINARY_ALIAS=		python=${PYTHON_CMD}
 CXXFLAGS+=		-DFIXED_EXECUTABLE_MEMORY_POOL_SIZE_IN_MB=32
 CXXFLAGS_powerpc=	-DENABLE_YARR_JIT=0
-CXXFLAGS_powerpc64=	-DENABLE_YARR_JIT=0 \
-			-mminimal-toc
+CXXFLAGS_powerpc64=	-DENABLE_YARR_JIT=0
 CMAKE_ARGS=		-DPORT=GTK
-CMAKE_OFF=		USE_LD_GOLD ${CMAKE_OFF_${ARCH}:U}
+CMAKE_OFF=		USE_LD_GOLD ${CMAKE_OFF_${ARCH}:U} \
+			USE_SYSTEM_MALLOC
 CMAKE_ON=		ENABLE_GLES2 ENABLE_MINIBROWSER
 CMAKE_OFF_armv6=	ENABLE_JIT
 CMAKE_OFF_armv7=	ENABLE_JIT

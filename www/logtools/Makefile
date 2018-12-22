@@ -1,8 +1,9 @@
 # Created by: Mark Huizer; Eindhoven
-# $FreeBSD: head/www/logtools/Makefile 480340 2018-09-22 05:30:31Z linimon $
+# $FreeBSD: head/www/logtools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	logtools
 PORTVERSION=	0.13e
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.coker.com.au/logtools/
 

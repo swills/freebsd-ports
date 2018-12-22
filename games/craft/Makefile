@@ -1,11 +1,11 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/games/craft/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/games/craft/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	craft
 PORTVERSION=	1.0
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	fbsd
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 
 MAINTAINER=	danilo@FreeBSD.org

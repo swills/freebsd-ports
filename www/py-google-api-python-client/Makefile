@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-google-api-python-client/Makefile 487148 2018-12-10 10:40:58Z nivit $
+# $FreeBSD: head/www/py-google-api-python-client/Makefile 487289 2018-12-12 09:33:53Z nivit $
 
 PORTNAME=	google-api-python-client
-PORTVERSION=	1.7.5
+PORTVERSION=	1.7.6
 PORTREVISION=	0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP

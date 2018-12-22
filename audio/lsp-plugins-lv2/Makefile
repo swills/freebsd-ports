@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/lsp-plugins-lv2/Makefile 484759 2018-11-11 18:43:24Z yuri $
+# $FreeBSD: head/audio/lsp-plugins-lv2/Makefile 487947 2018-12-21 04:26:04Z yuri $
 
 PORTNAME=	lsp-plugins
 DISTVERSIONPREFIX=	${PORTNAME}-
-DISTVERSION=	1.1.4.0.20181111
+DISTVERSION=	1.1.5
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -18,10 +18,9 @@ ONLY_FOR_ARCHS_REASON=	assembly only for these architectures
 BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile
 
-USES=		gmake gnome iconv pkgconfig
+USES=		gmake gnome iconv:wchar_t pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	sadko4u
-GH_TAGNAME=	a90d634
 USE_GCC=	any # clang breaks: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=232911
 USE_GNOME=	cairo
 USE_XORG=	x11

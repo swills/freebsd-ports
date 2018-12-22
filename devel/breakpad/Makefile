@@ -1,9 +1,9 @@
 # Created by: Luca Pizzamiglio <luca.pizzamiglio@gmail.com>
-# $FreeBSD: head/devel/breakpad/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/breakpad/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	breakpad
 DISTVERSION=	g20170811
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	pizzamig@FreeBSD.org

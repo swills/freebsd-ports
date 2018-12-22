@@ -1,7 +1,7 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtkmm30-reference/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11-toolkits/gtkmm30-reference/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
-PORTREVISION=	1
+PORTREVISION=	2
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gtkmm-3.0.pc:x11-toolkits/gtkmm30 \
 		glibmm-reference>=0:devel/glibmm-reference

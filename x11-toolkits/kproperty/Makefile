@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/kproperty/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/x11-toolkits/kproperty/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		kproperty
 DISTVERSION=		3.1.0
+PORTREVISION=	1
 CATEGORIES=		x11-toolkits kde
 MASTER_SITES=		KDE/stable/${PORTNAME}/src
 DIST_SUBDIR=		KDE/${PORTNAME}

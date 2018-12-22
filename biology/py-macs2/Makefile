@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/py-macs2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/biology/py-macs2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	macs2
 PORTVERSION=	2.1.0.p20170505
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

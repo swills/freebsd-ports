@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/security/R-cran-openssl/Makefile 485377 2018-11-20 02:09:47Z tota $
+# $FreeBSD: head/security/R-cran-openssl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	openssl
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	security
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

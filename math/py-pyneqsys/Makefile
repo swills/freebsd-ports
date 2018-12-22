@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-pyneqsys/Makefile 485987 2018-11-27 07:52:42Z yuri $
+# $FreeBSD: head/math/py-pyneqsys/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyneqsys
 DISTVERSION=	0.5.6
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

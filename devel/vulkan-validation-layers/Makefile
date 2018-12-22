@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/vulkan-validation-layers/Makefile 478883 2018-09-03 17:43:50Z jbeich $
+# $FreeBSD: head/devel/vulkan-validation-layers/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vulkan-validation-layers
 DISTVERSIONPREFIX=	sdk-
 DISTVERSION=	1.1.82.0
+PORTREVISION=	1
 CATEGORIES=	devel graphics
 
 MAINTAINER=	greg@unrelenting.technology

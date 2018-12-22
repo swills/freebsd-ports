@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-pyqi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyqi/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyqi
 PORTVERSION=	0.3.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

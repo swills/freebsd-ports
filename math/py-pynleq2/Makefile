@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/py-pynleq2/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/py-pynleq2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pynleq2
 DISTVERSION=	0.0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

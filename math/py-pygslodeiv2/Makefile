@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-pygslodeiv2/Makefile 480306 2018-09-21 19:40:05Z yuri $
+# $FreeBSD: head/math/py-pygslodeiv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pygslodeiv2
 DISTVERSION=	0.9.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

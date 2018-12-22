@@ -1,8 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/sleef/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/math/sleef/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sleef
 DISTVERSION=	3.3-9
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g3998463
 CATEGORIES=	math
 

@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-lme4/Makefile 485300 2018-11-19 02:21:10Z tota $
+# $FreeBSD: head/math/R-cran-lme4/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	lme4
 DISTVERSION=	1.1-19
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

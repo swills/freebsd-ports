@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/security/gnome-keyring/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/security/gnome-keyring/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnome-keyring
 PORTVERSION=	3.28.2
+PORTREVISION=	1
 CATEGORIES=	security gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

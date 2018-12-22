@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-google-cloud-storage/Makefile 478644 2018-09-01 00:24:46Z dbaio $
+# $FreeBSD: head/www/py-google-cloud-storage/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	google-cloud-storage
 PORTVERSION=	1.10.0
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

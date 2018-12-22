@@ -1,8 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/libpinyin/Makefile 486553 2018-12-03 20:56:07Z linimon $
+# $FreeBSD: head/chinese/libpinyin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libpinyin
 PORTVERSION=	2.2.0
+PORTREVISION=	1
 CATEGORIES=	chinese textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 

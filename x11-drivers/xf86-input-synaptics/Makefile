@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-drivers/xf86-input-synaptics/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/x11-drivers/xf86-input-synaptics/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	xf86-input-synaptics
 PORTVERSION=	1.9.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org
@@ -19,7 +19,7 @@ OPTIONS_DEFINE=	EVDEV
 EVDEV_DESC=	Use evdev for input events (requires kernel support)
 
 EVDEV_CONFIGURE_ENV=	BUILD_EVENTCOMM=yes
-EVDEV_BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat
+EVDEV_BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 EVDEV_LIB_DEPENDS=	libevdev.so:devel/libevdev
 
 .include <bsd.port.mk>

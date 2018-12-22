@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/ocre/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/ocre/Makefile 488034 2018-12-22 00:57:53Z linimon $
 
 PORTNAME=	ocre
 PORTVERSION=	0.043
@@ -20,8 +20,8 @@ RUN_DEPENDS=	display:graphics/ImageMagick6 \
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/${PORTNAME}
 
+USES=		compiler:c11 gettext gmake pkgconfig tar:tgz
 USE_GNOME=	gtk20
-USES=		gettext gmake pkgconfig tar:tgz
 MAKE_ARGS=	CC="${CC}" CFLAGS1="${CFLAGS}"
 
 post-extract:

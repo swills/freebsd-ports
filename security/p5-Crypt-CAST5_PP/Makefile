@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/security/p5-Crypt-CAST5_PP/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/security/p5-Crypt-CAST5_PP/Makefile 487494 2018-12-15 09:00:09Z amdmi3 $
 
 PORTNAME=	Crypt-CAST5_PP
 PORTVERSION=	1.04
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	CAST5 block cipher in pure Perl
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/py-kinematics/Makefile 487103 2018-12-09 23:55:07Z sunpoet $
+# $FreeBSD: head/science/py-kinematics/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	kinematics
 PORTVERSION=	0.1.0
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

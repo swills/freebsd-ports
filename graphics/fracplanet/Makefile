@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/graphics/fracplanet/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/fracplanet/Makefile 487601 2018-12-16 16:49:17Z rene $
 
 PORTNAME=	fracplanet
 PORTVERSION=	0.5.1
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	SF \
 		SF/nemysisfreebsdp/:icons
@@ -22,14 +22,13 @@ FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 qt5_PKGNAMESUFFIX=	-${FLAVOR}
 
-qt4_DEPRECATED=		Qt4 has been EOL since december 2015
-qt4_EXPIRATION_DATE=	2019-03-15
-
 USES=		compiler:c++11-lang gl qmake:outsource
 USE_GL=		gl glu
 QMAKE_ARGS=	VERSION_NUMBER=${PORTVERSION}
 
 .if ${FLAVOR} == qt4
+DEPRECATED=	Qt4 has been EOL since december 2015
+EXPIRATION_DATE=2019-03-15
 USES+=	qt:4
 USE_QT=		corelib gui moc_build opengl
 .else

@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/mosh/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/net/mosh/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mosh
 PORTVERSION=	1.3.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	http://mosh.mit.edu/ \
 		ZI

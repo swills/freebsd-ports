@@ -1,9 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/databases/libgdamm5/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/databases/libgdamm5/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libgdamm
 PORTVERSION=	4.99.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

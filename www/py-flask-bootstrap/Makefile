@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-bootstrap/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-bootstrap/Makefile 487570 2018-12-16 09:30:08Z amdmi3 $
 
 PORTNAME=	Flask-Bootstrap
 PORTVERSION=	3.3.2.1
@@ -16,5 +16,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10.1:www/py-flask@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

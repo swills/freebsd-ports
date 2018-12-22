@@ -1,10 +1,10 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/aspcud/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/math/aspcud/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	aspcud
 PORTVERSION=	1.9.4
-PORTREVISION=	1
 DISTVERSIONPREFIX=     v
+PORTREVISION=	3
 CATEGORIES=	math ports-mgmt sysutils
 
 MAINTAINER=	vsevolod@FreeBSD.org

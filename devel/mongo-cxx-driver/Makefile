@@ -1,10 +1,10 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mongo-cxx-driver
 PORTVERSION=	1.1.2
 DISTVERSIONPREFIX=legacy-
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	devel
 
 MAINTAINER=	numisemis@yahoo.com

@@ -1,9 +1,9 @@
 # Created by: raven428 <raven428@gmail.com>
-# $FreeBSD: head/devel/php5-pinba/Makefile 486751 2018-12-06 11:22:12Z rene $
+# $FreeBSD: head/devel/php5-pinba/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pinba
 PORTVERSION=	2012.03.20
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 

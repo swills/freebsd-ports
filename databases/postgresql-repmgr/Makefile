@@ -1,8 +1,8 @@
 # Created by: alp@sfedu.ru
-# $FreeBSD: head/databases/postgresql-repmgr/Makefile 476215 2018-08-02 05:03:11Z bofh $
+# $FreeBSD: head/databases/postgresql-repmgr/Makefile 487607 2018-12-16 18:15:56Z bofh $
 
 PORTNAME=	postgresql-repmgr
-PORTVERSION=	4.1.0
+PORTVERSION=	4.2.0
 CATEGORIES=	databases
 MASTER_SITES=	http://www.repmgr.org/download/
 DISTNAME=	repmgr-${PORTVERSION}
@@ -14,8 +14,9 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	rsync:net/rsync
 
-GNU_CONFIGURE=	yes
 USES+=		gettext gmake pgsql:9.3+
+
+GNU_CONFIGURE=	yes
 LLD_UNSAFE=	yes
 USE_RC_SUBR=	repmgrd
 WANT_PGSQL=	server

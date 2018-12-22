@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/mbedtls/Makefile 479770 2018-09-14 12:04:53Z tijl $
+# $FreeBSD: head/security/mbedtls/Makefile 487430 2018-12-14 13:06:44Z tijl $
 
 PORTNAME=	mbedtls
-PORTVERSION=	2.13.0
+PORTVERSION=	2.14.1
 DISTVERSIONPREFIX=${PORTNAME}-
 CATEGORIES=	security devel
 

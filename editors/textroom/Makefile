@@ -1,9 +1,9 @@
 # Created by: admin@mjbrune.org
-# $FreeBSD: head/editors/textroom/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/editors/textroom/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	textroom
 PORTVERSION=	0.8.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	editors
 MASTER_SITES=	SF
 

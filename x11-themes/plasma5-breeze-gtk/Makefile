@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-themes/plasma5-breeze-gtk/Makefile 482586 2018-10-20 16:16:04Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-breeze-gtk/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	breeze-gtk
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

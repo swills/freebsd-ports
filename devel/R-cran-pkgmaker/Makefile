@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-pkgmaker/Makefile 471022 2018-05-28 06:56:11Z tota $
+# $FreeBSD: head/devel/R-cran-pkgmaker/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pkgmaker
 PORTVERSION=	0.27
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

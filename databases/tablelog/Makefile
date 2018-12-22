@@ -1,9 +1,9 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/databases/tablelog/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/tablelog/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tablelog
 PORTVERSION=	0.4.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://pgfoundry.org/frs/download.php/1387/
 

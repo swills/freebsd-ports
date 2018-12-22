@@ -1,9 +1,10 @@
 # Created by: Johnny Sorocil <jsorocil@gmail.com>
-# $FreeBSD: head/devel/yosys/Makefile 484926 2018-11-14 14:43:18Z tobik $
+# $FreeBSD: head/devel/yosys/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	yosys
 DISTVERSIONPREFIX=	yosys-
 DISTVERSION=	0.8
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	jsorocil@gmail.com

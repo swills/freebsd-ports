@@ -1,5 +1,5 @@
 # Created by: Philippe Lefebvre <nemesis@balistik.net>
-# $FreeBSD: head/editors/nano/Makefile 484757 2018-11-11 18:33:26Z danilo $
+# $FreeBSD: head/editors/nano/Makefile 487744 2018-12-18 11:19:54Z koobs $
 
 PORTNAME=	nano
 PORTVERSION=	3.2
@@ -25,8 +25,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 OPTIONS_DEFINE=	DOCS EXAMPLES NLS
 OPTIONS_SUB=	yes
 
-DOCS_USES=	groff
-
 NLS_USES=		gettext
 NLS_CONFIGURE_ENABLE=	nls
 
@@ -34,17 +32,21 @@ INFO=		nano
 
 PORTSCOUT=	limitw:1,even
 
-post-configure:
-	${REINPLACE_CMD} -e 's/update_revision//g' ${WRKSRC}/src/Makefile
+.ifdef QEMU_EMULATING
+# XXX bug 224740/231346: configure hangs
+CONFIGURE_ENV+=	gl_cv_func_printf_enomem=no
+.endif
 
-post-build:
-	cd ${WRKSRC}/doc; ${REINPLACE_CMD} \
-		-e 's:SYSCONFDIR:${PREFIX}/etc:g' \
-		-e 's:EXAMPLESDIR:${EXAMPLESDIR}:g' \
-		nano.1 rnano.1 nanorc.5 ${WRKSRC}/doc/${INFO:=.info}
+post-patch:
+	${REINPLACE_CMD} -e 's/^groff.*/false/' ${WRKSRC}/configure
 
-post-install:
+post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/sample.nanorc ${STAGEDIR}${EXAMPLESDIR}
+
+post-install-DOCS-on:
+.for doc in nano.1.html rnano.1.html nanorc.5.html
+	${INSTALL_DATA} ${WRKSRC}/doc/${doc} ${STAGEDIR}${DOCSDIR}
+.endfor
 
 .include <bsd.port.mk>

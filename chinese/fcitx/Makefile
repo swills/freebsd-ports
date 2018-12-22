@@ -1,8 +1,9 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/fcitx/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/chinese/fcitx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	fcitx
 PORTVERSION=	4.2.9.6
+PORTREVISION=	1
 CATEGORIES=	chinese x11
 MASTER_SITES=	http://download.fcitx-im.org/fcitx/:fcitx \
 		http://download.fcitx-im.org/data/:data

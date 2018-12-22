@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/tilp2/Makefile 484945 2018-11-14 21:31:28Z linimon $
+# $FreeBSD: head/comms/tilp2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tilp2
 PORTVERSION=	1.18
+PORTREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	SF/tilp/tilp2-linux/${DISTNAME}
 

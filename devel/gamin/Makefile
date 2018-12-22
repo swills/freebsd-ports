@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/gamin/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/gamin/Makefile 487659 2018-12-17 07:59:57Z ale $
 #    $MCom: ports/trunk/devel/gamin/Makefile 18634 2013-07-26 10:42:35Z kwm $
 
 PORTNAME=	gamin
 PORTVERSION=	0.1.10
-PORTREVISION?=	9
+PORTREVISION?=	10
 CATEGORIES?=	devel
 MASTER_SITES=	http://people.gnome.org/~veillard/gamin/sources/
 

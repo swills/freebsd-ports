@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/opengv/Makefile 487019 2018-12-09 04:07:40Z yuri $
+# $FreeBSD: head/graphics/opengv/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	opengv
 DISTVERSION=	g20181024
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/spooles/Makefile 480424 2018-09-22 17:40:41Z yuri $
+# $FreeBSD: head/math/spooles/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	spooles
 PORTVERSION=	2.2
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	math
 MASTER_SITES=	NETLIB/linalg/spooles
 .ifdef WITH_MPI

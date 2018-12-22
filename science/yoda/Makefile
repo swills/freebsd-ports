@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/yoda/Makefile 485992 2018-11-27 08:27:28Z yuri $
+# $FreeBSD: head/science/yoda/Makefile 487547 2018-12-15 21:26:37Z yuri $
 
 PORTNAME=	yoda
-DISTVERSION=	1.7.3
+DISTVERSION=	1.7.4
 CATEGORIES=	science
-MASTER_SITES=	http://www.hepforge.org/archive/${PORTNAME}/
+MASTER_SITES=	https://www.hepforge.org/archive/${PORTNAME}/
 DISTNAME=	${PORTNAME:tu}-${DISTVERSION}
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -12,7 +12,7 @@ COMMENT=	Particle physics package with classes for data analysis, histogramming
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake libtool
+USES=		compiler:c++11-lang gmake libtool
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

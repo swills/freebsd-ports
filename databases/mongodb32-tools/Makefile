@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/databases/mongodb32-tools/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/databases/mongodb32-tools/Makefile 487257 2018-12-11 20:33:27Z rene $
 
 PORTNAME=	mongodb32-tools
 PORTVERSION=	3.2.11
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tools for MongoDB
 
 LICENSE=	APACHE20
+
+DEPRECATED=	EOL upstream since September 2018
+EXPIRATION_DATE=2018-12-31
 
 BROKEN_SSL=	openssl111 libressl libressl-devel
 BROKEN_SSL_REASON_openssl111=	variable has incomplete type 'BIO_METHOD' (aka 'struct bio_method_st')

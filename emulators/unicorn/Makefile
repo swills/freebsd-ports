@@ -1,7 +1,8 @@
-# $FreeBSD: head/emulators/unicorn/Makefile 481042 2018-10-01 17:18:19Z antoine $
+# $FreeBSD: head/emulators/unicorn/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	unicorn
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	antoine@FreeBSD.org

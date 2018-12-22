@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pyspacewar/Makefile 484794 2018-11-12 09:30:23Z amdmi3 $
+# $FreeBSD: head/games/pyspacewar/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pyspacewar
 PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games python
 DIST_SUBDIR=	python
 

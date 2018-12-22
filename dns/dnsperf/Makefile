@@ -1,9 +1,9 @@
 # Created by: Edwin Groothuis (edwin@mavetju.org)
-# $FreeBSD: head/dns/dnsperf/Makefile 487204 2018-12-10 22:14:02Z antoine $
+# $FreeBSD: head/dns/dnsperf/Makefile 487232 2018-12-11 12:34:58Z decke $
 
 PORTNAME=	dnsperf
 PORTVERSION=	2.1.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns benchmarks net
 MASTER_SITES=	ftp://ftp.nominum.com/pub/nominum/${PORTNAME}/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}-1
@@ -12,8 +12,6 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Performance measurement of Domain Name System (DNS) servers
 
 LICENSE=	ISCL
-
-BROKEN=		fails to build
 
 BUILD_DEPENDS=	isc-config.sh:dns/bind912
 LIB_DEPENDS=	liblmdb.so:databases/lmdb \

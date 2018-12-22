@@ -1,10 +1,10 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/biology/t_coffee/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/biology/t_coffee/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	t_coffee
 PORTVERSION=	9.03
 DISTVERSIONSUFFIX=	.r1318
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	biology
 MASTER_SITES=	http://www.tcoffee.org/Packages/Stable/Version_${PORTVERSION}${DISTVERSIONSUFFIX}/
 DISTNAME=	T-COFFEE_distribution_Version_${PORTVERSION}${DISTVERSIONSUFFIX}

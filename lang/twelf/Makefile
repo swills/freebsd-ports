@@ -1,9 +1,9 @@
 # Created by: andrewb@cs.cmu.edu
-# $FreeBSD: head/lang/twelf/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/lang/twelf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	twelf
 PORTVERSION=	1.7.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	src-
 CATEGORIES=	lang math
 MASTER_SITES=	http://twelf.plparty.org/releases/ \

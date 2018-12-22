@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 481371 2018-10-06 15:59:34Z feld $
+# $FreeBSD: head/print/Makefile 488006 2018-12-21 14:22:17Z rene $
 #
 
     COMMENT = Desktop publishing
@@ -60,9 +60,7 @@
     SUBDIR += fpdf
     SUBDIR += freetype
     SUBDIR += freetype2
-    SUBDIR += frescobaldi
     SUBDIR += ft2demos
-    SUBDIR += ggv
     SUBDIR += ghostscript7-base
     SUBDIR += ghostscript7-commfont
     SUBDIR += ghostscript7-jpnfont
@@ -76,12 +74,8 @@
     SUBDIR += ghostscript9-x11
     SUBDIR += gimp-gutenprint
     SUBDIR += gl2ps
-    SUBDIR += gnome-cups-manager
-    SUBDIR += gnomephotoprinter
-    SUBDIR += gribouy
     SUBDIR += gsfonts
     SUBDIR += gspdf
-    SUBDIR += gsview
     SUBDIR += gtklp
     SUBDIR += gutenprint
     SUBDIR += gv
@@ -116,7 +110,6 @@
     SUBDIR += libotf
     SUBDIR += libpagemaker
     SUBDIR += libpaper
-    SUBDIR += libppd
     SUBDIR += libspectre
     SUBDIR += lilypond
     SUBDIR += lilypond-devel
@@ -124,7 +117,6 @@
     SUBDIR += linux-c7-cups-libs
     SUBDIR += linux-c7-harfbuzz
     SUBDIR += lout
-    SUBDIR += lpr-wrapper
     SUBDIR += lprps
     SUBDIR += lyx
     SUBDIR += magicfilter

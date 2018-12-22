@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-stringr/Makefile 469873 2018-05-14 10:02:38Z tota $
+# $FreeBSD: head/textproc/R-cran-stringr/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	stringr
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,8 +1,8 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-gitlab-sidekiq-fetcher/Makefile 483495 2018-10-30 16:11:10Z mfechner $
+# $FreeBSD: head/devel/rubygem-gitlab-sidekiq-fetcher/Makefile 488084 2018-12-22 09:56:14Z mfechner $
 
 PORTNAME=	gitlab-sidekiq-fetcher
-PORTVERSION=	0.3.0
+PORTVERSION=	0.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,8 @@ LICENSE=	RUBY
 
 RUN_DEPENDS=	rubygem-sidekiq>=5:devel/rubygem-sidekiq
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
 

@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/www/vdr-plugin-live/Makefile 478960 2018-09-04 13:42:13Z tobik $
+# $FreeBSD: head/www/vdr-plugin-live/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vdr-plugin-live
 PORTVERSION=	0.3.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www multimedia
 MASTER_SITES=	http://live.vdr-developer.org/downloads/:release \
 		LOCAL/nox/:snapshot

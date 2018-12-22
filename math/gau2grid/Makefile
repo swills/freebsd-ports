@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/gau2grid/Makefile 486581 2018-12-04 05:25:43Z yuri $
+# $FreeBSD: head/math/gau2grid/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gau2grid
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.3.0
+PORTREVISION=	1
 CATEGORIES=	math python
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

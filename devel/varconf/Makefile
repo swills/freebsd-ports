@@ -1,9 +1,9 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/devel/varconf/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/varconf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	varconf
 PORTVERSION=	1.0.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	SF/worldforge/${PORTNAME}%20%28config%20lib%29/${PORTVERSION}
 

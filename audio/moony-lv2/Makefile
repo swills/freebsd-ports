@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/moony-lv2/Makefile 481453 2018-10-07 16:05:50Z yuri $
+# $FreeBSD: head/audio/moony-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	moony
 PORTVERSION=	0.22.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://gitlab.com/OpenMusicKontrollers/moony.lv2/repository/archive.tar.gz?ref=${PORTVERSION}&dummy=/
 PKGNAMESUFFIX=	-lv2

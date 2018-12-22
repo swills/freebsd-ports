@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/py-transpopy/Makefile 478646 2018-09-01 00:28:41Z dbaio $
+# $FreeBSD: head/textproc/py-transpopy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	transpopy
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/games/dunelegacy/Makefile 483515 2018-10-30 19:09:11Z linimon $
+# $FreeBSD: head/games/dunelegacy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	dunelegacy
 PORTVERSION=	0.96.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

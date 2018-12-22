@@ -1,10 +1,10 @@
 # Created by: Daniel Morante <daniel@morante.net>
-# $FreeBSD: head/net-p2p/zetacoin/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/net-p2p/zetacoin/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	zetacoin
 PORTVERSION=	0.11.2.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	23
+PORTREVISION=	25
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	daniel@morante.net

@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/deskutils/qlipper/Makefile 482441 2018-10-19 17:59:02Z jsm $
+# $FreeBSD: head/deskutils/qlipper/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qlipper
 PORTVERSION=	5.1.1
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	jsm@FreeBSD.org

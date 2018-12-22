@@ -1,8 +1,9 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/net-mgmt/aircrack-ng/Makefile 481039 2018-10-01 14:52:07Z lme $
+# $FreeBSD: head/net-mgmt/aircrack-ng/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	aircrack-ng
 DISTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	net-mgmt security
 MASTER_SITES=	http://download.aircrack-ng.org/
 

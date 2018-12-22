@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/hyphy/Makefile 482495 2018-10-20 12:21:15Z jrm $
+# $FreeBSD: head/biology/hyphy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hyphy
 DISTVERSION=	2.3.14-16
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g3d88d3e6
 CATEGORIES=	biology
 

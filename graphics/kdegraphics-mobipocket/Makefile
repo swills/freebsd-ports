@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kdegraphics-mobipocket/Makefile 483125 2018-10-27 11:50:58Z tcberner $
+# $FreeBSD: head/graphics/kdegraphics-mobipocket/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	kdegraphics-mobipocket
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

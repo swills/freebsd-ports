@@ -1,13 +1,13 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/net/anet/Makefile 466217 2018-04-02 11:44:13Z wen $
+# $FreeBSD: head/net/anet/Makefile 487670 2018-12-17 09:57:50Z egypcio $
 
 PORTNAME=	anet
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.codelabs.ch/download/
 DISTNAME=	libanet-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Networking library for Ada
 
 LICENSE=	GPLv2 GMGPL
@@ -16,6 +16,7 @@ LICENSE_COMB=	multi
 BUILD_DEPENDS=	gprbuild:devel/gprbuild
 
 USES=		ada tar:bzip2
+
 ALL_TARGET=	build_lib
 MAKE_ARGS+=	NUM_CPUS=${MAKE_JOBS_NUMBER} \
 		LIBRARY_KIND=static \

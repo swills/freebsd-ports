@@ -1,7 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-designerplugin/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/py-qt4-designerplugin/Makefile 487597 2018-12-16 15:25:40Z tcberner $
 
 PORTNAME=	designerplugin
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel python
 
@@ -20,7 +21,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:4 qt:4
 USE_PYQT=	sip_build
-USE_PYTHON=	flavors
+USE_PYTHON=	concurrent flavors py3kplist
 USE_QT=		corelib designer gui script xml moc_build qmake_build
 
 OPTIONS_DEFINE=		DEBUG

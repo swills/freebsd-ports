@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-sspir/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-sspir/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	sspir
 PORTVERSION=	0.2.10
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	http://cran.r-project.org/src/contrib/Archive/sspir/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

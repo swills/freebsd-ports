@@ -1,9 +1,9 @@
 # Created by: Mike Heffner <mikeh@FreeBSD.org>
-# $FreeBSD: head/comms/lirc/Makefile 480899 2018-09-29 08:04:27Z riggs $
+# $FreeBSD: head/comms/lirc/Makefile 487789 2018-12-19 09:09:11Z zeising $
 
 PORTNAME=	lirc
 PORTVERSION=	0.9.0
-PORTREVISION=	9
+PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	comms
 MASTER_SITES=	SF/${PORTNAME}/LIRC/${PORTVERSION}
@@ -11,7 +11,7 @@ MASTER_SITES=	SF/${PORTNAME}/LIRC/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Linux Infrared Remote Control
 
-BUILD_DEPENDS=	v4l_compat>=1.0.20110603:multimedia/v4l_compat
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 
 USES=		alias autoreconf gmake libtool localbase python tar:bzip2
 USE_XORG=	sm x11 ice

@@ -1,8 +1,8 @@
 # Created by: Alexander Timoshenko <gonzo@univ.kiev.ua>
-# $FreeBSD: head/misc/libpri/Makefile 423281 2016-10-04 16:51:16Z fjoe $
+# $FreeBSD: head/misc/libpri/Makefile 487335 2018-12-13 02:21:31Z fjoe $
 
 PORTNAME=	libpri
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	misc
 MASTER_SITES=	http://downloads.asterisk.org/pub/telephony/libpri/releases/
 

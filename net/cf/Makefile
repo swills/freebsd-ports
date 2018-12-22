@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/cf/Makefile 484255 2018-11-05 23:23:55Z dumbbell $
+# $FreeBSD: head/net/cf/Makefile 487666 2018-12-17 09:45:41Z dumbbell $
 
 PORTNAME=	cf
-PORTVERSION=	6.40.1
+PORTVERSION=	6.41.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

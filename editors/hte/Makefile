@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao
-# $FreeBSD: head/editors/hte/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/editors/hte/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hte
 PORTVERSION=	2.1.1.g20161206
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 
 MAINTAINER=	rene@FreeBSD.org

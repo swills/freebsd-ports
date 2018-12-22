@@ -1,8 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/net-im/qxmpp/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/net-im/qxmpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qxmpp
 PORTVERSION=	0.9.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im
 

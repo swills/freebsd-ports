@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/signon-ui/Makefile 482567 2018-10-20 15:43:10Z tcberner $
+# $FreeBSD: head/sysutils/signon-ui/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	signon-ui
 PORTVERSION=	0.17
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils kde
 DIST_SUBDIR=	KDE/${GL_ACCOUNT}
 

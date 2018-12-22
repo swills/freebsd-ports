@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/mpich/Makefile 485788 2018-11-24 19:45:14Z linimon $
+# $FreeBSD: head/net/mpich/Makefile 487710 2018-12-17 19:45:06Z yuri $
 
 PORTNAME=	mpich
 PORTVERSION=	3.2.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	net parallel
 MASTER_SITES=	http://www.mpich.org/static/downloads/${DISTVERSION}/
 

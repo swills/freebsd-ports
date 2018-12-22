@@ -1,5 +1,5 @@
 # Created by: Felix Hanley
-# $FreeBSD: head/devel/capnproto/Makefile 486371 2018-12-01 13:28:53Z pi $
+# $FreeBSD: head/devel/capnproto/Makefile 488042 2018-12-22 01:31:58Z linimon $
 
 PORTNAME=	capnproto
 PORTVERSION=	0.7.0
@@ -12,7 +12,7 @@ COMMENT=	Serialization/RPC system
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
-USES=		autoreconf gmake libtool ssl
+USES=		autoreconf compiler:c++14-lang gmake libtool ssl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	capnproto

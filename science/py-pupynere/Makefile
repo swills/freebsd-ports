@@ -1,9 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/science/py-pupynere/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/py-pupynere/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pupynere
 PORTVERSION=	1.0.15
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

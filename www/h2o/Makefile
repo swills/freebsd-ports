@@ -1,10 +1,10 @@
 # Created by: Dave Cottlehuber <dch@FreeBSD.org>
-# $FreeBSD: head/www/h2o/Makefile 481989 2018-10-13 14:55:19Z dch $
+# $FreeBSD: head/www/h2o/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	h2o
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 
 MAINTAINER=	dch@FreeBSD.org

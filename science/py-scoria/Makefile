@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/py-scoria/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/science/py-scoria/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scoria
 DISTVERSION=	1.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/mswebrtc/Makefile 482777 2018-10-22 19:23:52Z tijl $
+# $FreeBSD: head/multimedia/mswebrtc/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	mswebrtc
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	multimedia net
 MASTER_SITES=	https://www.linphone.org/releases/sources/plugins/mswebrtc/
 

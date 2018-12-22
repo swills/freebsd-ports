@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/musescore/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/audio/musescore/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	musescore
 PORTVERSION=	2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://ftp.osuosl.org/pub/musescore/releases/MuseScore-${PORTVERSION}/
 DISTNAME=	MuseScore-${PORTVERSION}

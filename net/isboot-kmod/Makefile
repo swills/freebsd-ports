@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/isboot-kmod/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net/isboot-kmod/Makefile 487243 2018-12-11 17:03:52Z linimon $
 
 PORTNAME=	isboot-kmod
 PORTVERSION=	0.2.13
@@ -15,7 +15,6 @@ LICENSE=	BSD2CLAUSE
 BROKEN_aarch64=		fails to compile: /usr/src/sys/sys/bus.h:724:10: fatal error: 'device_if.h' file not found
 BROKEN_armv6=		fails to compile: implicit declaration of function 'cp15_pmccntr_get' is invalid in C99
 BROKEN_armv7=		fails to compile: /usr/src/sys/sys/bus.h:724:10: fatal error: 'device_if.h' file not found
-BROKEN_powerpc64=	fails to compile: pcpu.h: size of array '__assert_0' is negative
 
 USES=		kmod uidfix
 SUB_FILES=	pkg-message

@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/py-tablib/Makefile 466637 2018-04-06 10:47:03Z wen $
+# $FreeBSD: head/textproc/py-tablib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tablib
 DISTVERSION=	0.12.1
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

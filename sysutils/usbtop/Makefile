@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/sysutils/usbtop/Makefile 476723 2018-08-09 06:58:30Z jbeich $
+# $FreeBSD: head/sysutils/usbtop/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	usbtop
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	0.2
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org

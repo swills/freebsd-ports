@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-imageformats/Makefile 482034 2018-10-14 08:01:13Z tcberner $
+# $FreeBSD: head/graphics/qt5-imageformats/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	imageformats
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 
@@ -13,7 +14,7 @@ LIB_DEPENDS=	libjasper.so:graphics/jasper \
 		libtiff.so:graphics/tiff \
 		libwebp.so:graphics/webp
 
-USE_QT=		core gui buildtools_build
 USES=		compiler:c++11-lang localbase qmake qt-dist:5,imageformats
+USE_QT=		core gui buildtools_build
 
 .include <bsd.port.mk>

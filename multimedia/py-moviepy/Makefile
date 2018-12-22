@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/py-moviepy/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/multimedia/py-moviepy/Makefile 487621 2018-12-16 18:59:06Z yuri $
 
 PORTNAME=	moviepy
 PORTVERSION=	0.2.3.5
+PORTREVISION=	2
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,8 @@ LICENSE_FILE=	${WRKSRC}/LICENCE.txt
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}decorator>=4.0.2:devel/py-decorator@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}imageio>=2.1.2:graphics/py-imageio@${PY_FLAVOR} \
 		${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}tqdm>=4.11.2:misc/py-tqdm@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}tqdm>=4.11.2:misc/py-tqdm@${PY_FLAVOR} \
+		ffmpeg:multimedia/ffmpeg
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

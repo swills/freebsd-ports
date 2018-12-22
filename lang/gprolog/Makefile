@@ -1,9 +1,9 @@
 # Created by: Douglas Anestad <yotta@dougdidit.com>
-# $FreeBSD: head/lang/gprolog/Makefile 483898 2018-11-03 14:42:22Z gerald $
+# $FreeBSD: head/lang/gprolog/Makefile 487501 2018-12-15 09:35:04Z antoine $
 
 PORTNAME=	gprolog
 PORTVERSION=	1.4.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	lang
 MASTER_SITES=	http://www.gprolog.org/
 
@@ -12,6 +12,7 @@ COMMENT=	Free Prolog compiler
 
 LICENSE=	GPLv2
 
+BROKEN=		fails to build
 DEPRECATED=		Abandonware upstream (more than five years), fails in various ways with remotely recent compilers
 EXPIRATION_DATE=	2018-12-18
 

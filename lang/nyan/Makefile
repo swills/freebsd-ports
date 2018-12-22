@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/nyan/Makefile 484673 2018-11-11 09:32:27Z sunpoet $
+# $FreeBSD: head/lang/nyan/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	nyan
 PORTVERSION=	g20180708
+PORTREVISION=	1
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-lang
 

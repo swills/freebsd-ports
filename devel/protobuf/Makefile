@@ -1,8 +1,9 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/protobuf/Makefile 486802 2018-12-06 20:33:36Z sunpoet $
+# $FreeBSD: head/devel/protobuf/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.6.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	devel

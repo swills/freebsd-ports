@@ -1,9 +1,9 @@
 # Created by: Boris Kochergin <spawk@acm.poly.edu>
-# $FreeBSD: head/security/arpCounterattack/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/security/arpCounterattack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	arpCounterattack
 PORTVERSION=	1.2.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	http://isis.poly.edu/~bk/${PORTNAME}/ \
 		http://bk.macroblock.net/${PORTNAME}/

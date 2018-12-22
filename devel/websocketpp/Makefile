@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/websocketpp/Makefile 476503 2018-08-06 11:12:32Z arved $
+# $FreeBSD: head/devel/websocketpp/Makefile 487716 2018-12-17 21:23:21Z yuri $
 
 PORTNAME=	websocketpp
 PORTVERSION=	0.8.1
@@ -14,6 +14,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	zaphoyd
+
 NO_ARCH=	yes
+
+post-stage: # https://github.com/zaphoyd/websocketpp/issues/781
+	@${RMDIR} ${STAGEDIR}${PREFIX}/include/websocketpp/CMakeFiles
 
 .include <bsd.port.mk>

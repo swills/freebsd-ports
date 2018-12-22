@@ -1,9 +1,9 @@
 # Created by: Nikos Ntarmos <ntarmos@ceid.upatras.gr>
-# $FreeBSD: head/x11-wm/awesome/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/x11-wm/awesome/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	awesome
 PORTVERSION=	4.2
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	x11-wm

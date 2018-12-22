@@ -1,8 +1,9 @@
 # Created by: Sevan Janiyan <venture37@geeklan.co.uk>
-# $FreeBSD: head/databases/iplike/Makefile 364025 2014-08-04 16:16:27Z danilo $
+# $FreeBSD: head/databases/iplike/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	iplike
 PORTVERSION=	2.0.6
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	SF/opennms/IPLIKE/stable-2.0/
 

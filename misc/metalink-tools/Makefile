@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/misc/metalink-tools/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/misc/metalink-tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	metalink
 PORTVERSION=	0.3.6
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	misc
 MASTER_SITES=	SF/metalinks/Metalink%20commandline/${PORTVERSION}
 PKGNAMESUFFIX?=	-tools

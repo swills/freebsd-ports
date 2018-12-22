@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/clanlib/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/clanlib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	clanlib
 PORTVERSION=	2.3.7
-PORTREVISION=	16
+PORTREVISION=	17
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.clanlib.org/download/releases-2.0/

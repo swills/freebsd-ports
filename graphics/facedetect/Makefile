@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/graphics/facedetect/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/graphics/facedetect/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	facedetect
 PORTVERSION=	0.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

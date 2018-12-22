@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/french/homard/Makefile 477484 2018-08-18 08:51:53Z thierry $
+# $FreeBSD: head/french/homard/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	homard
 DISTVERSION=	11.10-1
+PORTREVISION=	1
 CATEGORIES=	french cad linux
 
 MAINTAINER=	thierry@FreeBSD.org

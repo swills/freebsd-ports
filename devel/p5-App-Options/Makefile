@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-App-Options/Makefile 374450 2014-12-10 12:05:15Z mat $
+# $FreeBSD: head/devel/p5-App-Options/Makefile 487358 2018-12-13 09:01:37Z amdmi3 $
 
 PORTNAME=	App-Options
 PORTVERSION=	1.12
@@ -11,8 +11,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Combine command line options, environment vars, and option file values
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5 shebangfix
 USE_PERL5=	configure
 SHEBANG_FILES=	bin/*
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

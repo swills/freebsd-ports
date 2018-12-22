@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/freebayes/Makefile 480003 2018-09-18 09:28:34Z linimon $
+# $FreeBSD: head/biology/freebayes/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=		freebayes
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.2.0
+PORTREVISION=	1
 CATEGORIES=		biology
 
 MAINTAINER=	jwb@FreeBSD.org

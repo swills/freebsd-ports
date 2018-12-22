@@ -1,8 +1,8 @@
 # Created by: Andrew Lewis <freeghb@gmail.com>
-# $FreeBSD: head/security/luasec/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/security/luasec/Makefile 487393 2018-12-13 22:27:09Z lx $
 
 PORTNAME=	luasec
-PORTVERSION=	0.6
+PORTVERSION=	0.7
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	security
 PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}
@@ -11,8 +11,6 @@ MAINTAINER=	lx@FreeBSD.org
 COMMENT=	Lua binding for the OpenSSL library to provide TLS/SSL communication
 
 LICENSE=	MIT
-
-BROKEN_SSL=	openssl111
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	brunoos

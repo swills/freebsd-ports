@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/gnutls/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/security/gnutls/Makefile 487793 2018-12-19 09:32:32Z tijl $
 
 PORTNAME=	gnutls
-PORTVERSION=	3.5.19
-PORTREVISION=	1
+PORTVERSION=	3.6.5
 CATEGORIES=	security net
 MASTER_SITES=	GNUPG/gnutls/v${PORTVERSION:R}
 
@@ -21,7 +20,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 BUILD_DEPENDS+=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 RUN_DEPENDS+=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
-USES=		cpe gmake iconv libtool localbase makeinfo \
+USES=		compiler:c11 cpe gmake iconv libtool localbase makeinfo \
 		pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

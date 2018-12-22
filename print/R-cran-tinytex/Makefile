@@ -1,7 +1,8 @@
-# $FreeBSD: head/print/R-cran-tinytex/Makefile 482899 2018-10-24 10:35:53Z tota $
+# $FreeBSD: head/print/R-cran-tinytex/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tinytex
 DISTVERSION=	0.9
+PORTREVISION=	1
 CATEGORIES=	print
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

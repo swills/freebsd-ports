@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/qterminal/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/x11/qterminal/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	qterminal
 PORTVERSION=	0.9.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	LXQT
 

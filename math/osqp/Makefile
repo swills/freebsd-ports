@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/osqp/Makefile 485275 2018-11-18 21:08:40Z yuri $
+# $FreeBSD: head/math/osqp/Makefile 487247 2018-12-11 18:08:52Z yuri $
 
 PORTNAME=	osqp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.1
+DISTVERSION=	0.5.0
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

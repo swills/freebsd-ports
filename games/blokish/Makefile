@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/blokish/Makefile 483761 2018-11-02 01:46:24Z linimon $
+# $FreeBSD: head/games/blokish/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	blokish
 PORTVERSION=	0.9.4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/v${PORTVERSION}
 DISTNAME=	${PORTNAME}_v${PORTVERSION}

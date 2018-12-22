@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/schiff/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/schiff/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	schiff
 PORTVERSION=	16
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games python
 MASTER_SITES=	SF/pygamebook/${PORTNAME:S/s/S/}/${PORTNAME}${PORTVERSION}.py/ \
 		SF/nemysisfreebsdp/games/:icons

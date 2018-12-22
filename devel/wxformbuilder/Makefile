@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/wxformbuilder/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/devel/wxformbuilder/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	wxformbuilder
 DISTVERSION=	3.5.0-beta
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-nightly/${DISTVERSION}
 DISTNAME=	wxFormBuilder_v${DISTVERSION}-source

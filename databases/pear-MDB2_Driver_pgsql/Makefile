@@ -1,8 +1,9 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/databases/pear-MDB2_Driver_pgsql/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/pear-MDB2_Driver_pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	MDB2_Driver_pgsql
 DISTVERSION=	1.5.0b4
+PORTREVISION=	1
 CATEGORIES=	databases www pear
 
 MAINTAINER=	joneum@FreeBSD.org

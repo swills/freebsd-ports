@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/ignition-fuel-tools/Makefile 485485 2018-11-20 20:52:04Z yuri $
+# $FreeBSD: head/misc/ignition-fuel-tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ignition-fuel-tools
 DISTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

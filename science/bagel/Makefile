@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/bagel/Makefile 486828 2018-12-07 07:44:46Z yuri $
+# $FreeBSD: head/science/bagel/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	bagel
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.2.1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

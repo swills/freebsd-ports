@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-microbenchmark/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/R-cran-microbenchmark/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	microbenchmark
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSION=	1.4-2
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}

@@ -1,9 +1,9 @@
 # Created by: Ryo MIYAMOTO
-# $FreeBSD: head/biology/psi88/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/biology/psi88/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	psi88
 PORTVERSION=	1.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	biology
 MASTER_SITES=	http://www.ccl.net/cca/software/SOURCES/FORTRAN/psi88/
 DISTNAME=	${PORTNAME}

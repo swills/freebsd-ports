@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/msgpack/Makefile 479291 2018-09-09 13:41:08Z adamw $
+# $FreeBSD: head/devel/msgpack/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	msgpack
 PORTVERSION=	3.1.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	cpp-
 CATEGORIES=	devel
 

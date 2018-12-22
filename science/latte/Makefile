@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/latte/Makefile 486735 2018-12-06 05:57:36Z yuri $
+# $FreeBSD: head/science/latte/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	latte
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

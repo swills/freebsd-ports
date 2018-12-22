@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/wannier90/Makefile 478841 2018-09-03 04:09:00Z yuri $
+# $FreeBSD: head/science/wannier90/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	wannier90
 DISTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	http://www.wannier.org/code/
 

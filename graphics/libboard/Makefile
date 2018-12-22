@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/libboard/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/libboard/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	libboard
 DISTVERSION=	0.9.4
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 
 MAINTAINER=	thierry@FreeBSD.org

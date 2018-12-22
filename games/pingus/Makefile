@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/pingus/Makefile 485455 2018-11-20 18:15:27Z amdmi3 $
+# $FreeBSD: head/games/pingus/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	pingus
 PORTVERSION=	0.7.6
-PORTREVISION=	16
+PORTREVISION=	18
 CATEGORIES=	games
 MASTER_SITES=	https://mirror.amdmi3.ru/distfiles/
 

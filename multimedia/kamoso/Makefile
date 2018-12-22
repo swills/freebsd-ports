@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/kamoso/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/multimedia/kamoso/Makefile 487405 2018-12-14 05:07:04Z tcberner $
 
 PORTNAME=	kamoso
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	multimedia kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

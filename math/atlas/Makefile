@@ -1,9 +1,9 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/atlas/Makefile 482101 2018-10-14 18:07:46Z yuri $
+# $FreeBSD: head/math/atlas/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	atlas
 PORTVERSION=	3.8.4
-PORTREVISION=	15
+PORTREVISION=	16
 PORTEPOCH=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/math-${PORTNAME}/Stable/${PORTVERSION}

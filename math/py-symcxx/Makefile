@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/py-symcxx/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/math/py-symcxx/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	symcxx
 DISTVERSION=	0.1.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

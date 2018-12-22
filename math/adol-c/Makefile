@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/adol-c/Makefile 483226 2018-10-28 05:42:13Z yuri $
+# $FreeBSD: head/math/adol-c/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	adol-c
 DISTVERSION=	2.6.3
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://www.coin-or.org/download/source/${PORTNAME:tu}/
 DISTNAME=	${PORTNAME:tu}-${DISTVERSION}

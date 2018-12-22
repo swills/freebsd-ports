@@ -1,8 +1,9 @@
 # Created by: Oleg Alexeenkov
-# $FreeBSD: head/games/astromenace/Makefile 482490 2018-10-20 11:27:14Z amdmi3 $
+# $FreeBSD: head/games/astromenace/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	astromenace
 PORTVERSION=	1.4.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

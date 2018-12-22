@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-DT/Makefile 485073 2018-11-16 10:45:29Z tota $
+# $FreeBSD: head/textproc/R-cran-DT/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	DT
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

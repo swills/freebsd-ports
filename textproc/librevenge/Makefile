@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/librevenge/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/textproc/librevenge/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	librevenge
 PORTVERSION=	0.0.4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	textproc
 MASTER_SITES=	SF/libwpd/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

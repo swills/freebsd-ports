@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/munin-contrib/Makefile 485514 2018-11-21 13:50:52Z mat $
+# $FreeBSD: head/sysutils/munin-contrib/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	contrib
 DISTVERSION=	git.2018-11-20
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	munin-
 

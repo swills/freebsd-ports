@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql96-docs/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/databases/postgresql96-docs/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	postgresql
-PORTREVISION=	0
+PORTREVISION=	2
 PKGNAMESUFFIX?=	${WANT_PGSQL_VER:S,.,,}-docs
 
 MAINTAINER=	pgsql@FreeBSD.org

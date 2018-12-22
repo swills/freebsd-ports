@@ -1,16 +1,15 @@
-# $FreeBSD: head/www/qt5-webchannel/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/www/qt5-webchannel/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	webchannel
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 5 library for integration of C++/QML with HTML/js clients
 
-USE_QT=		buildtools_build core declarative
 USES=		compiler:c++11-lang qmake:norecursive qt-dist:5,webchannel
+USE_QT=		buildtools_build core declarative
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 # The default EXTRACT_AFTER_ARGS value excludes examples/ from the extracted

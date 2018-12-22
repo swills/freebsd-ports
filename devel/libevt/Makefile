@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libevt/Makefile 464937 2018-03-18 17:19:06Z antoine $
+# $FreeBSD: head/devel/libevt/Makefile 487904 2018-12-20 19:34:10Z antoine $
 
 PORTNAME=	libevt
-DISTVERSION=	alpha-20180317
+DISTVERSION=	alpha-20181216
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libevt/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

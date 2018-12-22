@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-utf8/Makefile 471019 2018-05-28 05:22:22Z tota $
+# $FreeBSD: head/textproc/R-cran-utf8/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	utf8
 PORTVERSION=	1.1.4
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

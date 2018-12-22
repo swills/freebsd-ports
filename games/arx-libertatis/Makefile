@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/arx-libertatis/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/games/arx-libertatis/Makefile 487266 2018-12-12 00:15:49Z jbeich $
 
 PORTNAME=	arx-libertatis
 PORTVERSION=	1.1.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	http://downloads.sourceforge.net/arx/ \
 		http://arx-libertatis.org/files/

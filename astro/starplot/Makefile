@@ -1,9 +1,9 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/astro/starplot/Makefile 483278 2018-10-28 11:23:17Z linimon $
+# $FreeBSD: head/astro/starplot/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	starplot
 PORTVERSION=	0.95.5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	astro
 MASTER_SITES=	http://starplot.org/downloads/
 

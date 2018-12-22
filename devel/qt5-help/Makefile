@@ -1,19 +1,26 @@
-# $FreeBSD: head/devel/qt5-help/Makefile 482034 2018-10-14 08:01:13Z tcberner $
+# $FreeBSD: head/devel/qt5-help/Makefile 487594 2018-12-16 14:49:16Z tcberner $
 
 PORTNAME=	help
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt online help integration module
 
+USES=		compiler:c++11-lang qmake qt-dist:5,tools
 USE_QT=		core gui network sql widgets \
 		buildtools_build sql-sqlite3_run
-USES=		compiler:c++11-lang qmake qt-dist:5,tools
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 BUILD_WRKSRC=	${WRKSRC}/src/assistant
 INSTALL_WRKSRC=	${WRKSRC}/src/assistant
+
+post-install:
+# qcollectiongenerator was integrated into qhelpgenerator.
+# Instead of fixing 20 ports, simply provide it.
+	${RLN} ${STAGEDIR}${QT_BINDIR}/qhelpgenerator \
+		${STAGEDIR}${QT_BINDIR}/qcollectiongenerator
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/x11-wm/metacity/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11-wm/metacity/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	metacity
 PORTVERSION=	3.18.3
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

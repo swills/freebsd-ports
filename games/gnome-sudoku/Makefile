@@ -1,8 +1,9 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/gnome-sudoku/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/games/gnome-sudoku/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	gnome-sudoku
 PORTVERSION=	3.28.0
+PORTREVISION=	1
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome

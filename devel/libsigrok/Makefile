@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/libsigrok/Makefile 483891 2018-11-03 12:34:51Z bsam $
+# $FreeBSD: head/devel/libsigrok/Makefile 487862 2018-12-20 08:43:24Z linimon $
 
 PORTNAME=	libsigrok
 PORTVERSION=	0.5.1
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libftdi1.so:devel/libftdi1 \
 		libvisa.so:devel/librevisa \
 		libzip.so:archivers/libzip
 
-USES=		gnome pathfix libtool pkgconfig
+USES=		compiler:c11 gnome pathfix libtool pkgconfig
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

@@ -1,8 +1,9 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/postgresql-tds_fdw/Makefile 473169 2018-06-24 00:54:27Z linimon $
+# $FreeBSD: head/databases/postgresql-tds_fdw/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	tds_fdw
 PORTVERSION=	1.0.8
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-

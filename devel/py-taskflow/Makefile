@@ -1,9 +1,9 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-taskflow/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-taskflow/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	taskflow
 PORTVERSION=	2.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

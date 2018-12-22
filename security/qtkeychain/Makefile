@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/qtkeychain/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/security/qtkeychain/Makefile 487601 2018-12-16 16:49:17Z rene $
 
 PORTNAME=	qtkeychain
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 PKGNAMESUFFIX=	-${FLAVOR}
 
@@ -16,9 +16,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
-qt4_DEPRECATED=		Qt4 has been EOL since december 2015
-qt4_EXPIRATION_DATE=	2019-03-15
-
 USES=		cmake localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	frankosterfeld
@@ -26,6 +23,8 @@ USE_LDCONFIG=	yes
 PLIST_SUB+=	VERSION=${PORTVERSION}
 
 .  if ${FLAVOR} == qt4
+DEPRECATED=	Qt4 has been EOL since december 2015
+EXPIRATION_DATE=2019-03-15
 USES+=		qt:4
 CMAKE_ON=	BUILD_WITH_QT4
 USE_QT=		corelib dbus linguisttools_build moc_build rcc_build qmake_build

@@ -1,9 +1,10 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/OpenTomb/Makefile 480003 2018-09-18 09:28:34Z linimon $
+# $FreeBSD: head/games/OpenTomb/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	OpenTomb
 DISTVERSIONPREFIX=	win32-
 DISTVERSION=	2018-02-03_alpha
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	pkubaj@anongoth.pl

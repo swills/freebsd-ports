@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/science/py-scikit-fuzzy/Makefile 482405 2018-10-19 04:43:52Z yuri $
+# $FreeBSD: head/science/py-scikit-fuzzy/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	scikit-fuzzy
 DISTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

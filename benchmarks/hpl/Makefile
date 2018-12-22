@@ -1,8 +1,9 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/benchmarks/hpl/Makefile 482027 2018-10-14 06:02:08Z yuri $
+# $FreeBSD: head/benchmarks/hpl/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	hpl
 DISTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	benchmarks
 MASTER_SITES=	NETLIB/benchmark/hpl
 

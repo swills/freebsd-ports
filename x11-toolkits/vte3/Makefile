@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/vte3/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/x11-toolkits/vte3/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vte
 PORTVERSION=	0.52.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	3

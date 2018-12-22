@@ -1,8 +1,8 @@
 # Created by: Gregory Edigarov <greg@bestnet.kharkov.ua>
-# $FreeBSD: head/net/sflowtool/Makefile 479408 2018-09-10 13:16:16Z mat $
+# $FreeBSD: head/net/sflowtool/Makefile 487662 2018-12-17 08:44:18Z ohauer $
 
 PORTNAME=	sflowtool
-PORTVERSION=	3.41
+PORTVERSION=	5.02
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
@@ -18,8 +18,7 @@ GH_ACCOUNT=	sflow
 
 PLIST_FILES=	bin/sflowtool
 PORTDOCS=	README
-PORTEXAMPLES=	README ipTopTalkers ipTrafficMatrix sflowRRDChart.cgi \
-		sflowRRDLoad sflowenable
+PORTEXAMPLES=	sflowenable
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

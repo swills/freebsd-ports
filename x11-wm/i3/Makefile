@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/x11-wm/i3/Makefile 485327 2018-11-19 15:57:08Z swills $
+# $FreeBSD: head/x11-wm/i3/Makefile 487859 2018-12-20 08:37:23Z linimon $
 
 PORTNAME=	i3
 DISTVERSION=	4.16
@@ -27,7 +27,7 @@ RUN_DEPENDS=	p5-IPC-Run>=0:devel/p5-IPC-Run \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny \
 		p5-AnyEvent-I3>=0:devel/p5-AnyEvent-I3
 
-USES=		pkgconfig gmake iconv perl5 tar:bzip2
+USES=		compiler:c11 pkgconfig gmake iconv perl5 tar:bzip2
 USE_XORG=	xcb
 GNU_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes

@@ -1,9 +1,9 @@
-# $FreeBSD: head/math/g2o/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/math/g2o/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	g2o
 DISTVERSION=	20170730_git-87
 DISTVERSIONSUFFIX=	-gbbe3c2b
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

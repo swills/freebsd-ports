@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/uhd/Makefile 482846 2018-10-23 16:34:43Z jbeich $
+# $FreeBSD: head/comms/uhd/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	uhd
 PORTVERSION=	3.10.3.0
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://files.ettus.com/binaries/images/
 DISTFILES=	${IMAGE_FILE}

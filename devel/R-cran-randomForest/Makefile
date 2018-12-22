@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/R-cran-randomForest/Makefile 465698 2018-03-27 12:47:15Z skreuzer $
+# $FreeBSD: head/devel/R-cran-randomForest/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	randomForest
 DISTVERSION=	4.6-14
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

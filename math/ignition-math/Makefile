@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/ignition-math/Makefile 486016 2018-11-27 16:10:16Z linimon $
+# $FreeBSD: head/math/ignition-math/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	ignition-math
 DISTVERSION=	6.0.0
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

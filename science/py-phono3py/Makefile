@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-phono3py/Makefile 479760 2018-09-14 05:37:12Z yuri $
+# $FreeBSD: head/science/py-phono3py/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	phono3py
 DISTVERSION=	1.13.3.27
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

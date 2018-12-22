@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/opensim-core/Makefile 485059 2018-11-16 02:55:54Z yuri $
+# $FreeBSD: head/science/opensim-core/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	OpenSim
 DISTVERSION=	4.0
+PORTREVISION=	1
 CATEGORIES=	science
 PKGNAMESUFFIX=	-core
 

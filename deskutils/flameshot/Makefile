@@ -1,8 +1,9 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/deskutils/flameshot/Makefile 486471 2018-12-02 17:01:45Z nivit $
+# $FreeBSD: head/deskutils/flameshot/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	flameshot
 PORTVERSION=	0.6.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	deskutils
 

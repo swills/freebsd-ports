@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kf5-kplotting/Makefile 477922 2018-08-23 18:49:16Z adridg $
+# $FreeBSD: head/graphics/kf5-kplotting/Makefile 487595 2018-12-16 14:59:10Z tcberner $
 
 PORTNAME=	kplotting
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

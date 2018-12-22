@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/soundtouch/Makefile 475857 2018-07-29 22:18:44Z gerald $
+# $FreeBSD: head/audio/soundtouch/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	soundtouch
 PORTVERSION=	1.9.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://www.surina.net/soundtouch/
 

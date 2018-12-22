@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-reelchannelscan/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/multimedia/vdr-plugin-reelchannelscan/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	vdr-plugin-reelchannelscan
 PORTVERSION=	0.6.1b1.7.15
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	multimedia
 MASTER_SITES=	LOCAL/nox \
 		http://ppa.launchpad.net/yavdr/stable-vdr/ubuntu/pool/main/v/vdr-plugin-reelchannelscan/

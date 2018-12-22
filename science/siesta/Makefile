@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/siesta/Makefile 478886 2018-09-03 17:51:32Z yuri $
+# $FreeBSD: head/science/siesta/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	siesta
 DISTVERSION=	4.0.2
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${DISTVERSION:R}/${DISTVERSION}/+download/
 

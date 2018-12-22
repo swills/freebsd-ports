@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-VGAM/Makefile 477856 2018-08-23 07:09:31Z wen $
+# $FreeBSD: head/math/R-cran-VGAM/Makefile 487272 2018-12-12 01:35:33Z gerald $
 
 PORTNAME=	VGAM
 DISTVERSION=	1.0-6
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
