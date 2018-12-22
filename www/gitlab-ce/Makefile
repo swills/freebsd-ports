@@ -113,6 +113,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-sidekiq>=5.2.1:devel/rubygem-sidekiq \
 	rubygem-sidekiq-cron0>=0.6.0:devel/rubygem-sidekiq-cron0 \
 	rubygem-redis-namespace>=1.6.0:databases/rubygem-redis-namespace \
+	rubygem-gitlab-sidekiq-fetcher>0.1.0:devel/rubygem-gitlab-sidekiq-fetcher \
 	rubygem-rufus-scheduler342>=3.4.0:devel/rubygem-rufus-scheduler342 \
 	rubygem-httparty>=0.13.3:www/rubygem-httparty \
 	rubygem-rainbow>=3.0:devel/rubygem-rainbow \
@@ -168,7 +169,6 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-peek-gc>=0.0.2:devel/rubygem-peek-gc \
 	rubygem-peek-rblineprof>=0.2.0:devel/rubygem-peek-rblineprof \
 	rubygem-peek-redis>=1.2.0:devel/rubygem-peek-redis \
-	rubygem-gitlab-sidekiq-fetcher>0:devel/rubygem-gitlab-sidekiq-fetcher \
 	rubygem-prometheus-client-mmap>=0.9.4:devel/rubygem-prometheus-client-mmap \
 	rubygem-octokit>=4.9:net/rubygem-octokit \
 	rubygem-mail_room>=0.9.1:mail/rubygem-mail_room \
