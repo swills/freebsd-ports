@@ -94,7 +94,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-org-ruby>=0.9.12:textproc/rubygem-org-ruby \
 	rubygem-creole>=0.5.0:textproc/rubygem-creole \
 	rubygem-wikicloth081>=0.8.1:textproc/rubygem-wikicloth081 \
-	rubygem-asciidoctor>=1.5.6:textproc/rubygem-asciidoctor \
+	rubygem-asciidoctor>=1.5.8:textproc/rubygem-asciidoctor \
 	rubygem-asciidoctor-plantuml>=0.0.8:textproc/rubygem-asciidoctor-plantuml \
 	rubygem-rouge>=3.1:textproc/rubygem-rouge \
 	rubygem-truncato>=0.7.9:textproc/rubygem-truncato \
