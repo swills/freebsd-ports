@@ -103,7 +103,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-escape_utils>=1.1:textproc/rubygem-escape_utils \
 	rubygem-icalendar>=0:devel/rubygem-icalendar \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
-	rubygem-rack>=1.6.11:www/rubygem-rack16 \
+	rubygem-rack16>=1.6.11:www/rubygem-rack16 \
 	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
 	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
 	rubygem-puma>=3.12:www/rubygem-puma \
@@ -142,6 +142,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-rack-attack44>=4.4.1:www/rubygem-rack-attack44 \
 	rubygem-ace-rails-ap>=4.1.0:www/rubygem-ace-rails-ap \
 	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
+	rubygem-mimemagic>=0.3.2:misc/rubygem-mimemagic \
 	rubygem-fast_blank>=0:devel/rubygem-fast_blank \
 	rubygem-chronic>=0.10.2:devel/rubygem-chronic \
 	rubygem-chronic_duration>=0.10.6:devel/rubygem-chronic_duration \
