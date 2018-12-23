@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-kubeclient/Makefile 477029 2018-08-12 17:35:02Z sunpoet $
+# $FreeBSD: head/www/rubygem-kubeclient/Makefile 488214 2018-12-23 12:47:34Z mfechner $
 
 PORTNAME=	kubeclient
 PORTVERSION=	4.0.0

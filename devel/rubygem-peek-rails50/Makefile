@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-peek-rails50/Makefile 448876 2017-08-28 19:18:05Z sunpoet $
+# $FreeBSD: head/devel/rubygem-peek-rails50/Makefile 488207 2018-12-23 12:39:43Z mfechner $
 
 PORTNAME=	peek
 PORTVERSION=	1.0.1

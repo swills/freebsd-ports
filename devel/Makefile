@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 488203 2018-12-23 12:15:30Z mfechner $
+# $FreeBSD: head/devel/Makefile 488207 2018-12-23 12:39:43Z mfechner $
 #
 
     COMMENT = Development utilities
@@ -5899,6 +5899,7 @@
     SUBDIR += rubygem-patch_finder
     SUBDIR += rubygem-pathutil
     SUBDIR += rubygem-peek
+    SUBDIR += rubygem-peek-rails50
     SUBDIR += rubygem-peek-gc-rails50
     SUBDIR += rubygem-peek-host
     SUBDIR += rubygem-peek-performance_bar

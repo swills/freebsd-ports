@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/net-im/rubygem-discordrb-webhooks-blackst0ne/Makefile 488207 2018-12-23 12:39:43Z mfechner $
 
 PORTNAME=	discordrb-webhooks-blackst0ne
 PORTVERSION=	3.3.0

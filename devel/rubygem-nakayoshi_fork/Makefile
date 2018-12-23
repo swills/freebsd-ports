@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-nakayoshi_fork/Makefile 488207 2018-12-23 12:39:43Z mfechner $
 
 PORTNAME=	nakayoshi_fork
 PORTVERSION=	0.0.4

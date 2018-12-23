@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 487992 2018-12-21 13:19:02Z rene $
+# $FreeBSD: head/net-im/Makefile 488207 2018-12-23 12:39:43Z mfechner $
 #
 
     COMMENT = Instant messaging

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-asana/Makefile 461409 2018-02-10 16:21:52Z sunpoet $
+# $FreeBSD: head/www/rubygem-asana/Makefile 488213 2018-12-23 12:46:24Z mfechner $
 
 PORTNAME=	asana
 PORTVERSION=	0.8.1
