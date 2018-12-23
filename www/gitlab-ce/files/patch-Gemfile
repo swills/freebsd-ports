@@ -1,5 +1,14 @@
 --- Gemfile.orig	2018-12-21 14:23:37 UTC
 +++ Gemfile
+@@ -5,7 +5,7 @@ end
+ 
+ gem_versions = {}
+ gem_versions['activerecord_sane_schema_dumper'] = rails5? ? '1.0'    : '0.2'
+-gem_versions['rails']                           = rails5? ? '5.0.7'  : '4.2.11'
++gem_versions['rails']                           = rails5? ? '5.0.7.1'  : '4.2.11'
+ gem_versions['rails-i18n']                      = rails5? ? '~> 5.1' : '~> 4.0.9'
+ 
+ # The 2.0.6 version of rack requires monkeypatch to be present in
 @@ -35,7 +35,7 @@ else
  end
  
@@ -9,7 +18,14 @@
  gem 'pg', '~> 0.18.2', group: :postgres
  
  gem 'rugged', '~> 0.27'
-@@ -187,7 +187,7 @@ gem 'gitlab-sidekiq-fetcher', '~> 0.1.0', require: 'si
+@@ -181,13 +181,13 @@ gem 'acts-as-taggable-on', '~> 5.0'
+ gem 'sidekiq', '~> 5.2.1'
+ gem 'sidekiq-cron', '~> 0.6.0'
+ gem 'redis-namespace', '~> 1.6.0'
+-gem 'gitlab-sidekiq-fetcher', '~> 0.1.0', require: 'sidekiq-reliable-fetch'
++gem 'gitlab-sidekiq-fetcher', '~> 0.4.0', require: 'sidekiq-reliable-fetch'
+ 
+ # Cron Parser
  gem 'rufus-scheduler', '~> 3.4'
  
  # HTTP requests
