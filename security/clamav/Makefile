@@ -15,6 +15,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libltdl.so:devel/libltdl \
 		libcurl.so:ftp/curl
 
+.if !exists(/usr/lib/libmilter.so)
+LIB_DEPENDS+=	libmilter.so:mail/libmilter
+.endif
+
 USES=		cpe gmake gnome libtool ncurses pathfix pkgconfig ssl
 USE_RC_SUBR=	clamav-clamd clamav-freshclam
 USE_LDCONFIG=	yes
