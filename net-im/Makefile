@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 487992 2018-12-21 13:19:02Z rene $
+# $FreeBSD: head/net-im/Makefile 488207 2018-12-23 12:39:43Z mfechner $
 #
 
     COMMENT = Instant messaging
@@ -165,6 +165,7 @@
     SUBDIR += qxmpp-qt5
     SUBDIR += ramblercontacts
     SUBDIR += ricochet
+    SUBDIR += rubygem-discordrb-webhooks-blackst0ne
     SUBDIR += rubygem-hipchat
     SUBDIR += rubygem-hipchat15
     SUBDIR += rubygem-lita
