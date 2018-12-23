@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	mfechner@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Make gettext_i18n_rails .po files as JSON
 
 LICENSE=	MIT
