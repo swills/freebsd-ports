@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/xtensor/Makefile 478810 2018-09-02 17:34:08Z yuri $
+# $FreeBSD: head/math/xtensor/Makefile 488149 2018-12-22 23:22:49Z yuri $
 
 PORTNAME=	xtensor
-DISTVERSION=	0.17.3
+DISTVERSION=	0.19.1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -21,6 +21,7 @@ TEST_DEPENDS=	nlohmann-json>0:devel/nlohmann-json \
 USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	QuantStack
+
 NO_BUILD=	yes
 NO_ARCH=	yes
 

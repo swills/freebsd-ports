@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-peek-rblineprof-rails50/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-peek-rblineprof-rails50/Makefile 488199 2018-12-23 11:55:07Z mfechner $
 
 PORTNAME=	peek-rblineprof
 PORTVERSION=	0.2.0

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/antlr4/Makefile 485123 2018-11-17 09:30:25Z amdmi3 $
+# $FreeBSD: head/devel/antlr4/Makefile 488171 2018-12-23 09:00:01Z pi $
 
 PORTNAME=	antlr4
-PORTVERSION=	4.7.1
+PORTVERSION=	4.7.2
 CATEGORIES=	devel java
 MASTER_SITES=	http://www.antlr.org/download/
 DISTNAME=	antlr-${PORTVERSION}-complete

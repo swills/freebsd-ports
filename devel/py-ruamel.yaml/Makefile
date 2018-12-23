@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-ruamel.yaml/Makefile 478160 2018-08-26 18:59:24Z pi $
+# $FreeBSD: head/devel/py-ruamel.yaml/Makefile 488176 2018-12-23 09:14:40Z pi $
 
 PORTNAME=	ruamel.yaml
-DISTVERSION=	0.15.61
+DISTVERSION=	0.15.81
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

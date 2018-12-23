@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js-rails50/Makefile 442048 2017-05-30 01:49:29Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js-rails50/Makefile 488203 2018-12-23 12:15:30Z mfechner $
 
 PORTNAME=	gettext_i18n_rails_js
 PORTVERSION=	1.3.0
@@ -18,8 +18,9 @@ RUN_DEPENDS=	rubygem-gettext>=3.0.2:devel/rubygem-gettext \
 		rubygem-po_to_json>=1.0.0:converters/rubygem-po_to_json \
 		rubygem-rails50>=5.0.7:www/rubygem-rails50
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

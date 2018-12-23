@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/mail/claws-mail-bogofilter/Makefile 459117 2018-01-15 21:17:21Z pawel $
+# $FreeBSD: head/mail/claws-mail-bogofilter/Makefile 488194 2018-12-23 11:29:55Z joneum $
 
 PORTNAME=	bogofilter
-PORTREVISION=	1
+PORTREVISION=	0
 
 COMMENT=	Spam filtering plugin for Claws Mail
 

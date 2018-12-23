@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-lifelines/Makefile 487391 2018-12-13 21:49:44Z rm $
+# $FreeBSD: head/science/py-lifelines/Makefile 488094 2018-12-22 13:53:10Z rm $
 
 PORTNAME=	lifelines
-DISTVERSION=	0.15.3
+DISTVERSION=	0.15.4
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

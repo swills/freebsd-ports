@@ -1,10 +1,10 @@
 # Created by: Philip Stoev <philip.stoev@galeracluster.com>
-# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 488127 2018-12-22 20:45:43Z vd $
 
 PORTNAME=	mysqlwsrep
-PORTVERSION?=	5.6.41
+PORTVERSION?=	5.6.42
 DISTVERSIONPREFIX?=	wsrep_
-DISTVERSIONSUFFIX?=	-25.23
+DISTVERSIONSUFFIX?=	-25.24
 CATEGORIES=	databases ipv6
 PKGNAMESUFFIX=	56-server
 

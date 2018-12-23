@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-font-awesome-rails-rails50/Makefile 467097 2018-04-11 19:39:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-font-awesome-rails-rails50/Makefile 488192 2018-12-23 11:21:51Z mfechner $
 
 PORTNAME=	font-awesome-rails
 PORTVERSION=	4.7.0.4

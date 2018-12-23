@@ -1,6 +1,6 @@
-# $FreeBSD: head/mail/claws-mail/Makefile.claws 485106 2018-11-17 00:57:35Z joneum $
+# $FreeBSD: head/mail/claws-mail/Makefile.claws 488194 2018-12-23 11:29:55Z joneum $
 
-PORTVERSION=	3.17.1
+PORTVERSION=	3.17.3
 CATEGORIES?=	mail
 MASTER_SITES=	http://www.claws-mail.org/download.php?file=releases/
 

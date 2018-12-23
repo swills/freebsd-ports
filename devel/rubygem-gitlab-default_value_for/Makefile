@@ -1,12 +1,12 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-gitlab-default_value_for/Makefile 488202 2018-12-23 12:09:55Z mfechner $
 
 PORTNAME=	gitlab-default_value_for
 PORTVERSION=	3.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Define default values for ActiveRecord models in a declarative manner
 
 LICENSE=	MIT

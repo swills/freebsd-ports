@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-peek-pg-rails50/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/rubygem-peek-pg-rails50/Makefile 488191 2018-12-23 11:15:16Z mfechner $
 
 PORTNAME=	peek-pg
 PORTVERSION=	1.3.0

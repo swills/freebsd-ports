@@ -1,15 +1,14 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/sysutils/asmctl/Makefile 464040 2018-03-10 01:16:20Z dbaio $
+# $FreeBSD: head/sysutils/asmctl/Makefile 488097 2018-12-22 15:53:06Z joneum $
 
 PORTNAME=	asmctl
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	sysutils
 
 MAINTAINER=	naito.yuichiro@gmail.com
 COMMENT=	Apple System Management Controller
 
 LICENSE=	BSD2CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	yuichiro-naito

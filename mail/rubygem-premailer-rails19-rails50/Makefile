@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/rubygem-premailer-rails19-rails50/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/mail/rubygem-premailer-rails19-rails50/Makefile 488196 2018-12-23 11:37:45Z mfechner $
 
 PORTNAME=	premailer-rails
 PORTVERSION=	1.9.7

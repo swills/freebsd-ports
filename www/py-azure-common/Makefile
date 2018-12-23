@@ -1,12 +1,12 @@
-# $FreeBSD: head/www/py-azure-common/Makefile 467235 2018-04-13 11:44:09Z wg $
+# $FreeBSD: head/www/py-azure-common/Makefile 488093 2018-12-22 13:11:57Z dbaio $
 
 PORTNAME=	azure-common
-PORTVERSION=	1.1.9
+PORTVERSION=	1.1.16
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	vladimirv@ixsystems.com
+MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Microsoft Azure common code
 
 LICENSE=	APACHE20

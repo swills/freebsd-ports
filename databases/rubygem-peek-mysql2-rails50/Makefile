@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-peek-mysql2-rails50/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/databases/rubygem-peek-mysql2-rails50/Makefile 488190 2018-12-23 11:08:24Z mfechner $
 
 PORTNAME=	peek-mysql2
 PORTVERSION=	1.2.0

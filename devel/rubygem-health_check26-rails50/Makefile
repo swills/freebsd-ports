@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-health_check26-rails50/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-health_check26-rails50/Makefile 488200 2018-12-23 12:00:34Z mfechner $
 
 PORTNAME=	health_check
 PORTVERSION=	2.6.0

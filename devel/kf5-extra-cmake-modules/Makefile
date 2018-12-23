@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/kf5-extra-cmake-modules/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/kf5-extra-cmake-modules/Makefile 488174 2018-12-23 09:04:14Z tcberner $
 
 PORTNAME=	extra-cmake-modules
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,18 +13,15 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING-CMAKE-SCRIPTS
 
 USES=		cmake:outsource kde:5 qt:5 tar:xz
-USE_QT=		#
+USE_QT=		buildtools_build linguisttools_build qmake_build
 
-HELP_USES=	qt:5
 HELP_USE=	QT=help_build  # qt5-help is only used to build a .qch file.
-TEST_USES=	qt:5
-TEST_USE=	QT=buildtools_build,linguisttools_build,qmake_build
 NO_ARCH=	yes
 
 ## options
 
-OPTIONS_DEFINE=	DOCS HELP MANPAGES TEST
-OPTIONS_DEFAULT=HELP MANPAGES TEST # TEST=off fails: https://bugs.kde.org/show_bug.cgi?id=366110
+OPTIONS_DEFINE=	DOCS HELP MANPAGES
+OPTIONS_DEFAULT=HELP MANPAGES
 OPTIONS_SUB=	yes
 
 HELP_DESC=		Generate QtHelp documentation for installed modules
@@ -35,7 +33,6 @@ MANPAGES_BUILD_DEPENDS=	${SPHINX_DEP}
 DOCS_CMAKE_BOOL=	BUILD_HTML_DOCS
 HELP_CMAKE_BOOL=	BUILD_QTHELP_DOCS
 MANPAGES_CMAKE_BOOL=	BUILD_MAN_DOCS
-TEST_CMAKE_BOOL=	BUILD_TESTING
 
 CONFIGURE_ENV+=	CMAKE_PROGRAM_PATH="${LOCALBASE}/bin:${LOCALBASE}/lib/qt5/bin"
 INSTALL_TARGET=	install # does not have install/strip target

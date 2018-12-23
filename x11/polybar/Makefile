@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/polybar/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11/polybar/Makefile 488169 2018-12-23 07:35:20Z linimon $
 
 PORTNAME=	polybar
 DISTVERSION=	3.2.1
@@ -10,10 +10,6 @@ COMMENT=	Fast and easy-to-use status bar
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_aarch64=	fails to build: KeyError: 'eventstruct'
-BROKEN_armv6=	fails to build: KeyError: 'eventstruct'
-BROKEN_armv7=	fails to build: KeyError: 'eventstruct'
 
 BUILD_DEPENDS=	xcb-proto>=1.9:x11/xcb-proto
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \

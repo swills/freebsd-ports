@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/xeus-cling/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/xeus-cling/Makefile 488151 2018-12-22 23:25:36Z yuri $
 
 PORTNAME=	xeus-cling
-DISTVERSION=	0.4.6
-PORTREVISION=	3
+DISTVERSION=	0.4.10
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

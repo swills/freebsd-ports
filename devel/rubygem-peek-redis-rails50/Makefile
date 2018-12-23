@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-peek-redis-rails50/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-peek-redis-rails50/Makefile 488197 2018-12-23 11:41:56Z mfechner $
 
 PORTNAME=	peek-redis
 PORTVERSION=	1.2.0

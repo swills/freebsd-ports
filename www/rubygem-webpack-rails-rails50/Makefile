@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-webpack-rails-rails50/Makefile 485626 2018-11-22 20:51:07Z sunpoet $
+# $FreeBSD: head/www/rubygem-webpack-rails-rails50/Makefile 488193 2018-12-23 11:27:32Z mfechner $
 
 PORTNAME=	webpack-rails
 PORTVERSION=	0.9.11

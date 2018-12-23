@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 488006 2018-12-21 14:22:17Z rene $
+# $FreeBSD: head/net/Makefile 488134 2018-12-22 21:22:56Z kwm $
 #
 
     COMMENT = Networking tools
@@ -44,6 +44,7 @@
     SUBDIR += avahi-header
     SUBDIR += avahi-libdns
     SUBDIR += avahi-qt4
+    SUBDIR += avahi-qt5
     SUBDIR += avahi-sharp
     SUBDIR += axa
     SUBDIR += babeld

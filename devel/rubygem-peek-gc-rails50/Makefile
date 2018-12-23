@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-peek-gc/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-peek-gc-rails50/Makefile 488198 2018-12-23 11:51:56Z mfechner $
 
 PORTNAME=	peek-gc
 PORTVERSION=	0.0.2

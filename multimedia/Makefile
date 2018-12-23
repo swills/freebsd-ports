@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 488006 2018-12-21 14:22:17Z rene $
+# $FreeBSD: head/multimedia/Makefile 488118 2018-12-22 17:57:16Z rene $
 #
 
     COMMENT = Multimedia software
@@ -103,7 +103,6 @@
     SUBDIR += gstreamer-plugins-all
     SUBDIR += gstreamer-plugins-annodex
     SUBDIR += gstreamer-plugins-bad
-    SUBDIR += gstreamer-plugins-buzztard
     SUBDIR += gstreamer-plugins-bz2
     SUBDIR += gstreamer-plugins-core
     SUBDIR += gstreamer-plugins-dts
