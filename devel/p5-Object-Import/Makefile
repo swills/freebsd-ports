@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Object-Import/Makefile 376152 2015-01-03 18:50:15Z pi $
+# $FreeBSD: head/devel/p5-Object-Import/Makefile 488173 2018-12-23 09:03:27Z pi $
 
 PORTNAME=	Object-Import
-PORTVERSION=	1.004
+PORTVERSION=	1.005
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

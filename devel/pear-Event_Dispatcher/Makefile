@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/devel/pear-Event_Dispatcher/Makefile 443196 2017-06-11 07:31:47Z sunpoet $
+# $FreeBSD: head/devel/pear-Event_Dispatcher/Makefile 488152 2018-12-22 23:27:01Z joneum $
 
 PORTNAME=	Event_Dispatcher
 PORTVERSION=	1.1.0
@@ -7,6 +7,8 @@ CATEGORIES=	devel pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR dispatch notifications using PHP callbacks
+
+LICENSE=	BSD2CLAUSE
 
 USES=		pear
 

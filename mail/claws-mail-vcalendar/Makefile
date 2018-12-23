@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/mail/claws-mail-vcalendar/Makefile 465061 2018-03-20 02:54:23Z truckman $
+# $FreeBSD: head/mail/claws-mail-vcalendar/Makefile 488194 2018-12-23 11:29:55Z joneum $
 
 PORTNAME=	vcalendar
-PORTREVISION=	1
+PORTREVISION=	0
 
 COMMENT=	vCalendar plugin for Claws Mail
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-stdnum/Makefile 467431 2018-04-15 20:03:57Z pi $
+# $FreeBSD: head/devel/py-stdnum/Makefile 488178 2018-12-23 09:17:20Z pi $
 
 PORTNAME=	stdnum
-PORTVERSION=	1.9
+PORTVERSION=	1.10
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

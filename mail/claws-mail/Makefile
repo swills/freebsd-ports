@@ -1,8 +1,7 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/mail/claws-mail/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/mail/claws-mail/Makefile 488096 2018-12-22 15:39:42Z joneum $
 
 PORTNAME=	claws-mail
-PORTREVISION=	1
 CATEGORIES=	mail news ipv6
 
 COMMENT=	Lightweight and featureful GTK+ based e-mail and news client

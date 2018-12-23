@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/Makefile 484375 2018-11-07 00:53:41Z dbaio $
+# $FreeBSD: head/irc/Makefile 488136 2018-12-22 21:48:45Z tcberner $
 #
 
     COMMENT = Internet Relay Chat utilities
@@ -60,7 +60,6 @@
     SUBDIR += keitairc2
     SUBDIR += konversation
     SUBDIR += kvirc
-    SUBDIR += kvirc-qt4
     SUBDIR += libircclient
     SUBDIR += lostirc
     SUBDIR += miau

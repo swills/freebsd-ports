@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-graphiql-rails/Makefile 473897 2018-07-04 16:04:02Z mfechner $
+# $FreeBSD: head/devel/rubygem-graphiql-rails/Makefile 488204 2018-12-23 12:19:59Z mfechner $
 
 PORTNAME=	graphiql-rails
-PORTVERSION=	1.4.10
+PORTVERSION=	1.4.11
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,8 +10,8 @@ COMMENT=	Use the GraphiQL IDE for GraphQL with Ruby on Rails
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	rubygem-sprockets-rails>=0:devel/rubygem-sprockets-rails \
-		rubygem-railties4>=0:www/rubygem-railties4
+RUN_DEPENDS=	rubygem-sprockets-rails-rails50>=0:devel/rubygem-sprockets-rails-rails50 \
+		rubygem-railties50>=0:www/rubygem-railties50
 
 USES=		gem
 USE_RUBY=	yes

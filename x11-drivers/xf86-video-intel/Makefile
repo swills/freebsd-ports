@@ -1,8 +1,8 @@
 # Created by: lesi@FreeBSD.org
-# $FreeBSD: head/x11-drivers/xf86-video-intel/Makefile 483350 2018-10-28 20:20:27Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-intel/Makefile 488160 2018-12-23 00:56:25Z jbeich $
 
 PORTNAME=	xf86-video-intel
-PORTVERSION=	2.99.917.20180906
+PORTVERSION=	2.99.917.20181203
 CATEGORIES=	x11-drivers
 MASTER_SITES=	http://cgit.freedesktop.org/xorg/${XORG_CAT}/${PORTNAME}/snapshot/
 DISTNAME=	${PORTNAME}-${COMMIT_ID}
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libxcb-util.so:x11/xcb-util \
 		libdrm.so:graphics/libdrm
 
-COMMIT_ID=	25c9a2fcc83ae7252a178b42262da383e59df744
+COMMIT_ID=	e5ff8e1828f97891c819c919d7115c6e18b2eb1f
 
 ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	Intel integrated GPU only exists in Intel x86 processors/chipsets

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-Selenium-Remote-Driver/Makefile 478158 2018-08-26 18:46:27Z pi $
+# $FreeBSD: head/www/p5-Selenium-Remote-Driver/Makefile 488184 2018-12-23 10:13:16Z pi $
 
 PORTNAME=	Selenium-Remote-Driver
-PORTVERSION=	1.29
+PORTVERSION=	1.30
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TEODESIAN

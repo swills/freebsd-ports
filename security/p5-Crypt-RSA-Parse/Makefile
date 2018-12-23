@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/p5-Crypt-RSA-Parse/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-RSA-Parse/Makefile 488182 2018-12-23 10:04:12Z pi $
 
 PORTNAME=	Crypt-RSA-Parse
-PORTVERSION=	0.043
-PORTREVISION=	1
+PORTVERSION=	0.044
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

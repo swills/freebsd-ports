@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/ctm/Makefile 483288 2018-10-28 12:24:02Z se $
+# $FreeBSD: head/misc/ctm/Makefile 488168 2018-12-23 07:19:01Z se $
 
 PORTNAME=	ctm
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	misc
 
 MAINTAINER=	se@FreeBSD.org

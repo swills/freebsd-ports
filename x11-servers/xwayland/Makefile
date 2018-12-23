@@ -1,8 +1,10 @@
-# $FreeBSD: head/x11-servers/xwayland/Makefile 487789 2018-12-19 09:09:11Z zeising $
+# $FreeBSD: head/x11-servers/xwayland/Makefile 488181 2018-12-23 09:57:29Z zeising $
 
 PORTNAME=	xwayland
 PORTVERSION=	1.19.1
-PORTREVISION=	1
+# This is inherited from x11-servers/xorg-server
+# Ensure it does not go backwards when bumping
+PORTREVISION=	11
 
 COMMENT=	X Clients under Wayland
 
