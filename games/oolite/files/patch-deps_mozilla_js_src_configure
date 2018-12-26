@@ -1,6 +1,6 @@
---- deps/mozilla/js/src/configure.orig	2014-06-30 08:54:39 UTC
+--- deps/mozilla/js/src/configure.orig	2014-05-17 17:57:43 UTC
 +++ deps/mozilla/js/src/configure
-@@ -9547,7 +9547,8 @@
+@@ -9547,7 +9547,8 @@ fi
  
  echo "$ac_t""$ac_cv_have_visibility_builtin_bug" 1>&6
          if test "$ac_cv_have_visibility_builtin_bug" = "no" -a \
@@ -10,3 +10,12 @@
            VISIBILITY_FLAGS='-I$(DIST)/system_wrappers_js -include $(topsrcdir)/config/gcc_hidden.h'
            WRAP_SYSTEM_INCLUDES=1
            STL_FLAGS='-I$(DIST)/stl_wrappers'
+@@ -13517,7 +13518,7 @@ rm -f conftest*
+ fi
+ 
+ if test -z "$MOZ_OPTIMIZE_FLAGS"; then
+-	MOZ_OPTIMIZE_FLAGS="-O"
++	MOZ_OPTIMIZE_FLAGS="-O2"
+ fi
+ 
+ # Check whether --enable-optimize or --disable-optimize was given.
