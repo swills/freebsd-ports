@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	fluentd
-PORTVERSION=	0.12.42
+PORTVERSION=	0.12.43
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
