@@ -1,8 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	kea
-PORTVERSION=	${ISCVERSION:S/-P/P/:S/b/.b/:S/a/.a/:S/rc/.rc/}
-PORTREVISION=	2
+PORTVERSION=	${ISCVERSION:S/-P/P/:S/-beta/b/:S/a/.a/:S/rc/.rc/}
+PORTREVISION=	0
 CATEGORIES=	net ipv6
 MASTER_SITES=	ISC/kea/${ISCVERSION}
 DISTNAME=	${PORTNAME}-${ISCVERSION}
@@ -19,7 +19,7 @@ LIB_DEPENDS=	liblog4cplus.so:devel/log4cplus \
 BROKEN_powerpc64=	fails to configure: checking for log4cplus library... no
 
 # ISC releases things like 1.4.0-P1, which our versioning doesn't like
-ISCVERSION=	1.4.0-P1
+ISCVERSION=	1.5.0
 
 CPE_VENDOR=	isc
 CPE_VERSION=	${ISCVERSION:C/-.*//}
