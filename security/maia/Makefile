@@ -2,10 +2,14 @@
 # $FreeBSD$
 
 PORTNAME=	maia
-DISTVERSION=	1.0.4
-PORTREVISION=	3
+DISTVERSION=	1.0.4-g20181202
 CATEGORIES=	security
-MASTER_SITES=	http://www.purplehat.org/downloads/maia/
+DISTNAME=	maia_mailguard
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	technion
+GH_PROJECT=	maia_mailguard
+GH_TAGNAME=	09eb7e5
 
 MAINTAINER=	ek@purplehat.org
 COMMENT=	Web-based management system based on amavisd-new and SpamAssassin
@@ -24,7 +28,7 @@ RUN_DEPENDS=	p5-Unix-Syslog>=0.94:sysutils/p5-Unix-Syslog \
 		p5-Template-Toolkit>=2.13:www/p5-Template-Toolkit \
 		p5-Net-Server>=0.93:net/p5-Net-Server
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
+WRKSRC=		${WRKDIR}/${GH_PROJECT}-${GH_TAGNAME}
 USES=		perl5 shebangfix
 USE_PERL5=	run
 NO_BUILD=	yes
@@ -40,7 +44,7 @@ PEAR_DIR?=	${LOCALBASE}/share/pear
 PLIST_SUB+=	USERS="${USERS}" GROUPS="${GROUPS}" WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 
 OPTIONS_DEFINE=	APACHE LIGHTTPD WEBHOST MYSQL MYSQLSERVER PGSQL PGSQLSERVER DOVECOT2 \
-		POSTFIX PFA FUZZYOCR CLAMAV SPAMASSASSIN BDB ALTERMIME CRYPT \
+		POSTFIX PFA CLAMAV SPAMASSASSIN BDB ALTERMIME CRYPT \
 		IPCOUNTRY DOMAINKEYS SPF DKIM FILE RAR ARJ UNARJ LHA ARC NOMARCH CAB \
 		RPM ZOO UNZOO LZOP P7ZIP TNEF DOCS
 
@@ -57,7 +61,6 @@ PGSQLSERVER_DESC=	Install PGSQL Server
 DOVECOT2_DESC=		Use Dovecot 2.x IMAP/POP3
 POSTFIX_DESC=		Use Postfix MTA
 PFA_DESC=		Use Postfixadmin
-FUZZYOCR_DESC=		Use FuzzyOcr
 CLAMAV_DESC=		Use ClamAV anti-virus
 SPAMASSASSIN_DESC=	Use SpamAssassin
 BDB_DESC=		Use BerkeleyDB
@@ -124,8 +127,8 @@ RUN_DEPENDS+=	${PEAR_DIR}/Mail/mime.php:mail/pear-Mail_Mime@${PHP_FLAVOR} \
 		${PEAR_DIR}/Numbers/Roman.php:textproc/pear-Numbers_Roman@${PHP_FLAVOR} \
 		${PEAR_DIR}/Numbers/Words.php:textproc/pear-Numbers_Words@${PHP_FLAVOR} \
 		${PEAR_DIR}/MDB2.php:databases/pear-MDB2@${PHP_FLAVOR} \
-		${PEAR_DIR}/MDB2/Driver/mysql.php:databases/pear-MDB2_Driver_mysql@${PHP_FLAVOR} \
-		${LOCALBASE}/share/smarty/Smarty.class.php:www/smarty2@${PHP_FLAVOR} \
+		${PEAR_DIR}/MDB2/Driver/mysqli.php:databases/pear-MDB2_Driver_mysqli@${PHP_FLAVOR} \
+		${LOCALBASE}/share/smarty3-${PHP_FLAVOR}/Smarty.class.php:www/smarty3@${PHP_FLAVOR} \
 		${LOCALBASE}/lib/php/${PHP_EXT_DIR}/scrypt.so:security/pecl-scrypt@${PHP_FLAVOR}
 PLIST_SUB+=     WEBHOST=""
 .else
@@ -136,7 +139,7 @@ PLIST_SUB+=     WEBHOST="@comment "
 USE_MYSQL=	yes
 .endif
 .if ${PORT_OPTIONS:MMYSQL} && ${PORT_OPTIONS:MWEBHOST}
-USE_PHP+=	mysql mysqli
+USE_PHP+=	mysqli
 .endif
 
 .if ${PORT_OPTIONS:MPGSQL}
@@ -177,10 +180,6 @@ RUN_DEPENDS+=	postfix:mail/postfix
 
 .if ${PORT_OPTIONS:MPFA}
 RUN_DEPENDS+=	${LOCALBASE}/www/postfixadmin/config.inc.php:mail/postfixadmin
-.endif
-
-.if ${PORT_OPTIONS:MFUZZYOCR}
-RUN_DEPENDS+=	p5-FuzzyOcr-devel>=0:mail/p5-FuzzyOcr-devel
 .endif
 
 .if ${PORT_OPTIONS:MCLAMAV}
@@ -323,11 +322,12 @@ post-patch:
 		-e "s@'zoo'\]@['zoo','unzoo'] ]@" ${WRKSRC}/maiad
 
 	@${FIND} -E ${WRKSRC} -iregex '.*(bak|~)$$' -delete
+	@${FIND} -E ${WRKSRC} -iregex '.*(gitkeep|~)$$' -delete
 
 do-install:
-	${MKDIR} ${STAGEDIR}${WWWDIR}
+	${MKDIR} ${STAGEDIR}${WWWDIR} ${STAGEDIR}${WWWDIR}/web
 	@cd ${WRKSRC}/php && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR}
-	${LN} -s ${PREFIX}/share/smarty ${STAGEDIR}${WWWDIR}/libs/Smarty
+	${LN} -s ${PREFIX}/share/smarty3-${PHP_FLAVOR} ${STAGEDIR}${WWWDIR}/libs/Smarty
 	${MKDIR} -p ${STAGEDIR}${DATADIR}
 	@cd ${WRKSRC}/scripts && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}/scripts
 	${MKDIR} -p ${STAGEDIR}${ETCDIR}/templates
