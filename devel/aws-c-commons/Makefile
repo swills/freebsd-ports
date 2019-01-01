@@ -10,7 +10,7 @@ COMMENT=	Core c99 package for AWS SDK for C
 
 LICENSE=	APACHE20
 
-USES=		cmake
+USES=		compiler:c11 cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	awslabs
