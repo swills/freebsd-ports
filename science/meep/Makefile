@@ -3,7 +3,7 @@
 
 PORTNAME=	meep
 PORTVERSION=	1.2.1
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	science
 MASTER_SITES=	http://ab-initio.mit.edu/meep/
 
@@ -33,32 +33,31 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 MAKE_ARGS+=	CC="${CC}" CXX="${CXX}"
 
 OPTIONS_RADIO=		MPI
-OPTIONS_RADIO_MPI=	OPENMPI MPICH2
+OPTIONS_RADIO_MPI=	OPENMPI MPICH
 OPTIONS_DEFAULT=	${OPTIONS_DEFAULT_${OPSYS}}
-OPTIONS_DEFAULT_FreeBSD=	MPICH2
+OPTIONS_DEFAULT_FreeBSD=	MPICH
 OPENMPI_DESC=		MPI support (with OpenMPI)
+
+MPICH_VARS=		CONFIGURE_ARGS=--with-mpi
+MPICH_LIB_DEPENDS=	libmpich.so:net/mpich
+MPICH_CONFIGURE_ENV=	MPICXX=${LOCALBASE}/bin/mpicc
+MPICH_CFLAGS=		-I${LOCALBASE}/include
+MPICH_LDFLAGS=		${LOCALBASE}/lib/libmpi.so
+
+OPENMPI_VARS=		CONFIGURE_ARGS=--with-mpi
+OPENMPI_BUILD_DEPENDS=	${LOCALBASE}/mpi/openmpi/bin/mpiCC:net/openmpi
+OPENMPI_RUN_DEPENDS=	${LOCALBASE}/mpi/openmpi/bin/mpirun:net/openmpi
+OPENMPI_CONFIGURE_ENV=	MPICXX=${LOCALBASE}/mpi/openmpi/bin/mpiCC
+OPENMPI_CFLAGS=		-I${LOCALBASE}/mpi/openmpi/include
+OPENMPI_LDFLAGS=	${LOCALBASE}/mpi/openmpi/lib/libmpi.so
 
 .include <bsd.port.pre.mk>
 
-.if ${PORT_OPTIONS:MMPICH2} || ${PORT_OPTIONS:MOPENMPI}
-CONFIGURE_ARGS+=	--with-mpi
+.if ${PORT_OPTIONS:MMPICH} || ${PORT_OPTIONS:MOPENMPI}
 PLIST_SUB+=		MPI="" NOMPI="@comment "
 .else
 CONFIGURE_ARGS+=	--without-mpi
 PLIST_SUB+=		MPI="@comment " NOMPI=""
-.endif
-
-.if ${PORT_OPTIONS:MMPICH2}
-LIB_DEPENDS+=	libmpich.so:net/mpich2
-CONFIGURE_ENV+=	MPICXX=${LOCALBASE}/bin/mpicc
-CFLAGS+=	-I${LOCALBASE}/include
-.endif
-
-.if ${PORT_OPTIONS:MOPENMPI}
-BUILD_DEPENDS+=	${LOCALBASE}/mpi/openmpi/bin/mpiCC:net/openmpi
-RUN_DEPENDS+=	${LOCALBASE}/mpi/openmpi/bin/mpirun:net/openmpi
-CONFIGURE_ENV+=	MPICXX=${LOCALBASE}/mpi/openmpi/bin/mpiCC
-CFLAGS+=	-I${LOCALBASE}/mpi/openmpi/include
 .endif
 
 .include <bsd.port.post.mk>
