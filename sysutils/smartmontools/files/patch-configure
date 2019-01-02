@@ -1,0 +1,11 @@
+--- configure.orig	2019-01-02 11:04:33.405401000 +0100
++++ configure	2019-01-02 11:04:52.511236000 +0100
+@@ -6891,7 +6891,7 @@
+   *-*-freebsd*|*-*-dragonfly*|*-*-kfreebsd*-gnu*)
+     os_deps='os_freebsd.o cciss.o dev_areca.o'
+     os_libs='-lcam -lsbuf'
+-    os_dltools='curl wget lynx fetch svn'
++    os_dltools='fetch curl wget lynx svn'
+     { $as_echo "$as_me:${as_lineno-$LINENO}: checking for libusb20_dev_get_device_desc in -lusb" >&5
+ $as_echo_n "checking for libusb20_dev_get_device_desc in -lusb... " >&6; }
+ if ${ac_cv_lib_usb_libusb20_dev_get_device_desc+:} false; then :
