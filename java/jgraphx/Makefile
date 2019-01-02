@@ -1,9 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	jgraphx
-PORTVERSION=	2.5.1.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+DISTVERSION=	3.9.12
 CATEGORIES=	java graphics
 
 MAINTAINER=	makc@FreeBSD.org
@@ -15,19 +14,15 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 USE_GITHUB=	yes
 GH_ACCOUNT=	jgraph
 USE_JAVA=	yes
+USE_ANT=	yes
 
 PLIST_FILES=	%%JAVAJARDIR%%/${PORTNAME}.jar
+
 PORTDOCS=	*
 
-OPTIONS_DEFINE=	COMPILE DOCS
-
-COMPILE_DESC=	Compile from source instead of using provided binary
-COMPILE_USE=	ANT=yes
+OPTIONS_DEFINE=	DOCS
 
 do-build:
-	@${DO_NADA}
-
-do-build-COMPILE-on:
 	@(cd ${BUILD_WRKSRC}; \
 		${SETENV} ${MAKE_ENV} ${ANT} ${MAKE_ARGS} ${ALL_TARGET})
 
