@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/emulators/joytran/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/emulators/joytran/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	joytran
 PORTVERSION=	0.9.5.2
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 USE_SDL=	sdl2
-USES=		tar:bzip2 cmake pkgconfig
+USES=		tar:bzip2 cmake:insource pkgconfig
 CMAKE_ARGS=	-DLOCALBASE="${LOCALBASE}" -DPREFIX="${PREFIX}"
 USE_XORG=	x11 xtst
 

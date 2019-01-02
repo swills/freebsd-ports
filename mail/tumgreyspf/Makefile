@@ -1,12 +1,12 @@
 # Created by: Marcus Alves Grando <mnag@FreeBSD.org>
-# $FreeBSD: head/mail/tumgreyspf/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/mail/tumgreyspf/Makefile 488948 2019-01-01 20:31:43Z sunpoet $
 
 PORTNAME=	tumgreyspf
 PORTVERSION=	1.38
 PORTREVISION=	2
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.tummy.com/pub/tummy/tumgreyspf/ \
-		ftp://ftp.tummy.com/pub/tummy/tumgreyspf/old-releases/ \
+MASTER_SITES=	http://ftp.tummy.com/pub/tummy/tumgreyspf/ \
+		http://ftp.tummy.com/pub/tummy/tumgreyspf/old-releases/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -19,9 +19,10 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyspf>=0:mail/py-pyspf@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 
+USES=		python shebangfix
+
 NO_ARCH=	yes
 NO_BUILD=	yes
-USES=		python shebangfix
 
 PKGMESSAGE=	${WRKSRC}/pkg-message
 PLIST_SUB=	TUMGREYSPF_DIR=${TUMGREYSPF_DIR} \

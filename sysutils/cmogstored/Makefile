@@ -1,8 +1,8 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/sysutils/cmogstored/Makefile 473699 2018-07-02 04:00:29Z linimon $
+# $FreeBSD: head/sysutils/cmogstored/Makefile 488409 2018-12-26 17:47:18Z trociny $
 
 PORTNAME=	cmogstored
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://bogomips.org/cmogstored/files/
 

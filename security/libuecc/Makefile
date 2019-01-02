@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/libuecc/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
+# $FreeBSD: head/security/libuecc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libuecc
 PORTVERSION=	7
@@ -17,6 +17,6 @@ LIB_DEPENDS=	libsodium.so:security/libsodium
 
 USE_LDCONFIG=	yes
 
-USES=		cmake:outsource pkgconfig tar
+USES=		cmake pkgconfig tar
 
 .include <bsd.port.mk>

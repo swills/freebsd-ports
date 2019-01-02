@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/libemos/Makefile 487696 2018-12-17 17:20:18Z yuri $
+# $FreeBSD: head/misc/libemos/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libemos
 DISTVERSION=	4.5.9
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libeccodes.so:science/eccodes \
 		libfftw3.so:math/fftw3 \
 		libpng16.so:graphics/png
 
-USES=		cmake:outsource,noninja fortran
+USES=		cmake:noninja fortran
 
 CMAKE_ON=	BUILD_SHARED_LIBS # not respected: https://jira.ecmwf.int/browse/SUP-2691
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/chaiscript/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/chaiscript/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ChaiScript
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Embedded scripting language designed for C++
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource localbase:ldflags readline
+USES=		cmake localbase:ldflags readline
 USE_GITHUB=	yes
 USE_LDCONFIG=	${PREFIX}/lib/chaiscript
 

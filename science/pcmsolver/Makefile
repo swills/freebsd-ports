@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/pcmsolver/Makefile 488077 2018-12-22 08:30:19Z yuri $
+# $FreeBSD: head/science/pcmsolver/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pcmsolver
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to compile: SphericalDiffuse.cpp:182: invalid initialization of non-const reference
 
-USES=		cmake:outsource,noninja fortran python
+USES=		cmake:noninja fortran python
 USE_GITHUB=	yes
 GH_ACCOUNT=	PCMSolver
 USE_LDCONFIG=	yes

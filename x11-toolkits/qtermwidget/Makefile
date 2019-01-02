@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/qtermwidget/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/qtermwidget/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qtermwidget
 PORTVERSION=	0.9.0
@@ -12,7 +12,7 @@ COMMENT=	Terminal widget for QTerminal
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	cmake:outsource compiler:c++11-lang gettext-runtime lxqt \
+USES=	cmake compiler:c++11-lang gettext-runtime lxqt \
 	pkgconfig qt:5 tar:xz
 USE_LDCONFIG=	yes
 USE_QT=		buildtools_build core gui qmake_build linguisttools widgets

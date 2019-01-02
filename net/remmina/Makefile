@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/net/remmina/Makefile 483100 2018-10-27 02:27:20Z woodsb02 $
+# $FreeBSD: head/net/remmina/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	remmina
 DISTVERSION=	1.2.31.4
@@ -20,7 +20,7 @@ GL_ACCOUNT=	Remmina
 GL_PROJECT=	Remmina
 GL_COMMIT=	65d552c9becc957cae124ab5c26562cf22c052b9
 
-USES=		cmake:outsource desktop-file-utils gettext localbase:ldflags pathfix \
+USES=		cmake desktop-file-utils gettext localbase:ldflags pathfix \
 		pkgconfig shared-mime-info ssl
 USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk30 pango
 USE_XORG=	ice sm x11 xext xkbfile

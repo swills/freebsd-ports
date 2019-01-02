@@ -1,9 +1,9 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/www/phalcon/Makefile 488495 2018-12-27 00:19:17Z swills $
 
 PORTNAME=	phalcon
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.4.1
+DISTVERSION=	3.4.2
 CATEGORIES=	www
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
@@ -32,7 +32,7 @@ WRKSRC_SUBDIR=	build/php${PHP_VER:C/.$//}/${PBITS}bits
 
 post-patch:
 .if ${PHP_VER} >= 70 && ${PBITS} == 32
-	@${REINPLACE_CMD} -e 's| ZEPHIR_FASTCALL | |' ${WRKSRC}/phalcon.zep.c
+	@${REINPLACE_CMD} -e 's|ZEPHIR_FASTCALL| |' ${WRKSRC}/phalcon.zep.c
 .endif
 
 .include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Green Dog <fiziologus@gmail.com>
-# $FreeBSD: head/devel/fifechan/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/fifechan/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	fifechan
 PORTVERSION=	0.1.4
@@ -12,7 +12,7 @@ COMMENT=	Small, efficient C++ GUI library designed for games
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-USES=	cmake:outsource
+USES=	cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	fifengine

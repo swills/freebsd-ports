@@ -1,8 +1,8 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/www/rubygem-sinatra/Makefile 479907 2018-09-16 23:25:41Z sunpoet $
+# $FreeBSD: head/www/rubygem-sinatra/Makefile 489043 2019-01-01 20:40:17Z sunpoet $
 
 PORTNAME=	sinatra
-PORTVERSION=	2.0.4
+PORTVERSION=	2.0.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

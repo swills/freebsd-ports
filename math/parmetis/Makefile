@@ -1,5 +1,5 @@
 # Created by: Eoin Lawless (eoin@maths.tcd.ie)
-# $FreeBSD: head/math/parmetis/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/parmetis/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ParMetis
 PORTVERSION=	4.0.3
@@ -16,7 +16,7 @@ LICENSE_NAME=	University of Minnesota METIS License
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	auto-accept
 
-USES=		cmake:noninja gmake
+USES=		cmake:insource,noninja gmake
 USE_LDCONFIG=	${PREFIX}/lib/parmetis
 
 OPTIONS_DEFINE=	OPENMPI DOCS STATIC

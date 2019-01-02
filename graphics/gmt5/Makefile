@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gmt5/Makefile 482829 2018-10-23 11:00:20Z wen $
+# $FreeBSD: head/graphics/gmt5/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gmt5
 DISTVERSION=	5.4.4
@@ -32,7 +32,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/dcw-gmt/dcw-gmt.nc:graphics/gmt5-dcw \
 
 WRKSRC=		${WRKDIR}/gmt-${PORTVERSION}
 
-USES=		shebangfix cmake:outsource
+USES=		shebangfix cmake
 SHEBANG_GLOB=	*.sh *.in
 SHEBANG_FILES=	share/tools/ncdeflate src/img/img2google src/gmtswitch
 

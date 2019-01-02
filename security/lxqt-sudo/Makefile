@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/security/lxqt-sudo/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/security/lxqt-sudo/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lxqt-sudo
 PORTVERSION=	0.13.0
@@ -14,7 +14,7 @@ LICENSE=	LGPL21+
 
 RUN_DEPENDS=	sudo:security/sudo
 
-USES=	cmake:outsource compiler:c++11-lib gettext kde:5 lxqt qt:5 \
+USES=	cmake compiler:c++11-lib gettext kde:5 lxqt qt:5 \
 	pkgconfig tar:xz
 USE_QT=	buildtools_build qmake_build core dbus gui svg widgets \
 	x11extras xml

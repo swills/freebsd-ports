@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/security/libssh/Makefile 487022 2018-12-09 06:08:11Z tobik $
+# $FreeBSD: head/security/libssh/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libssh
 DISTVERSION=	0.8.4
@@ -18,7 +18,7 @@ OPTIONS_RADIO_CRYPTO=	GCRYPT OPENSSL
 OPTIONS_DEFAULT=	OPENSSL STATIC
 OPTIONS_SUB=	yes
 
-USES=		cmake:outsource cpe tar:xz
+USES=		cmake cpe tar:xz
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DWITH_EXAMPLES:BOOL=OFF \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libksane/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/graphics/libksane/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libksane
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	SANE library interface for KDE
 
 LIB_DEPENDS=	libsane.so:graphics/sane-backends
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	config ecm i18n sonnet textwidgets wallet widgetsaddons
 USE_QT=		core gui testlib widgets \
 		buildtools_build qmake_build

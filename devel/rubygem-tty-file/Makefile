@@ -1,9 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-file/Makefile 476530 2018-08-06 19:53:06Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-file/Makefile 489027 2019-01-01 20:38:53Z sunpoet $
 
 PORTNAME=	tty-file
-PORTVERSION=	0.6.0
-PORTREVISION=	1
+PORTVERSION=	0.7.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,12 +12,13 @@ COMMENT=	File and directory manipulation utility methods
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-diff-lcs>=1.3.0:textproc/rubygem-diff-lcs \
+RUN_DEPENDS=	rubygem-diff-lcs>=1.3:textproc/rubygem-diff-lcs \
 		rubygem-pastel>=0.7.2:devel/rubygem-pastel \
-		rubygem-tty-prompt>=0.16.1:devel/rubygem-tty-prompt
+		rubygem-tty-prompt>=0.18:devel/rubygem-tty-prompt
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

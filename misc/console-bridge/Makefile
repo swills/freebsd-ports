@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/console-bridge/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/misc/console-bridge/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	console-bridge
 DISTVERSION=	0.4.2
@@ -10,7 +10,7 @@ COMMENT=	Package for logging that seamlessly pipes into rosconsole
 
 LICENSE=	BSD3CLAUSE
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	ros
 GH_PROJECT=	${PORTNAME:S/-/_/}

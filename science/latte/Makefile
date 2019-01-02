@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/latte/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/latte/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	latte
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Quantum chemistry: Density functional tight binding molecular dynamics
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE_GPL-2.0
 
-USES=		blaslapack:openblas cmake:outsource,noninja fortran shebangfix
+USES=		blaslapack:openblas cmake:noninja fortran shebangfix
 SHEBANG_FILES=	tests/run_test.sh
 USE_GITHUB=	yes
 GH_ACCOUNT=	lanl

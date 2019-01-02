@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/apitrace/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/apitrace/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	apitrace
 DISTVERSION=	7.1-455
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake:outsource compiler:c++11-lang pkgconfig python:2.7 shebangfix
+USES=		cmake compiler:c++11-lang pkgconfig python:2.7 shebangfix
 USE_GITHUB=	yes
 USE_XORG=	x11
 

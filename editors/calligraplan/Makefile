@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/calligraplan/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/editors/calligraplan/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	calligraplan
 DISTVERSION=	3.1.0
@@ -12,7 +12,7 @@ COMMENT=	KDE Calligra project management application
 
 LIB_DEPENDS=	libKChart.so:graphics/kdiagram
 
-USES=		cmake:outsource cpe compiler:c++11-lib desktop-file-utils kde:5 \
+USES=		cmake cpe compiler:c++11-lib desktop-file-utils kde:5 \
 		qt:5 tar:xz
 USE_KDE=	activities akonadi archive auth bookmarks codecs completion config \
 		configwidgets coreaddons dbusaddons ecm guiaddons holidays i18n \

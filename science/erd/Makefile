@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/erd/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/erd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	erd
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	AcesIII electron repulsion integrals
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource fortran
+USES=		cmake fortran
 USE_GITHUB=	yes
 GH_ACCOUNT=	psi4
 USE_LDCONFIG=	yes

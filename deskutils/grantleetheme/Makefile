@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/grantleetheme/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/grantleetheme/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	grantleetheme
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KDE PIM grantleetheme
 
 LICENSE=	LGPL21
 
-USES=		cmake:outsource compiler:c++11-lib gettext grantlee:5 kde:5 \
+USES=		cmake compiler:c++11-lib gettext grantlee:5 kde:5 \
 		pkgconfig qt:5 tar:xz
 USE_KDE=	attica auth codecs config configwidgets coreaddons ecm i18n \
 		iconthemes newstuff service widgetsaddons xmlgui

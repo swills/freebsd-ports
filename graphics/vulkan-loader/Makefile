@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/vulkan-loader/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/vulkan-loader/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vulkan-loader
 DISTVERSIONPREFIX=sdk-
@@ -13,7 +13,7 @@ LICENSE=	APACHE20
 
 BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:devel/vulkan-headers
 
-USES=		cmake:outsource compiler:c++11-lib pkgconfig python:3.4+,build
+USES=		cmake compiler:c++11-lib pkgconfig python:3.4+,build
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/corsix-th/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/corsix-th/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	corsixth
 PORTVERSION=	0.62
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2
 RUN_DEPENDS=	${LUA_MODLIBDIR}/lfs.so:devel/luafilesystem \
 		${LUA_MODLIBDIR}/lpeg.so:devel/lua-lpeg
 
-USES=		cmake compiler:c++11-lib desktop-file-utils dos2unix iconv \
+USES=		cmake:insource compiler:c++11-lib desktop-file-utils dos2unix iconv \
 		lua pkgconfig
 USE_SDL=	mixer2
 DOS2UNIX_FILES=	CMake/FindFFmpeg.cmake \

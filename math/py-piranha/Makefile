@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-piranha/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/py-piranha/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	piranha
 DISTVERSIONPREFIX=	v
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs \
 		libmpfr.so:math/mpfr \
 		${PY_BOOST}
 
-USES=		cmake:outsource compiler:c++14-lang python
+USES=		cmake compiler:c++14-lang python
 USE_GITHUB=	yes
 GH_ACCOUNT=	bluescarni
 USE_PYTHON=	flavors

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/octomap/Makefile 485505 2018-11-21 09:21:40Z yuri $
+# $FreeBSD: head/math/octomap/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	octomap
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,7 @@ LICENSE_FILE_GPLv2=	${WRKSRC}/octovis/LICENSE.txt
 
 BUILD_DEPENDS=		libQGLViewer>0:graphics/libQGLViewer # otherwise it doesn't build, see https://github.com/OctoMap/octomap/issues/225
 
-USES=		cmake:outsource localbase:ldflags
+USES=		cmake localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	OctoMap
 USE_LDCONFIG=	yes

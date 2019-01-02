@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/openclaw/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/openclaw/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	OpenClaw
 DISTVERSION=	0.0-51
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libtinyxml.so:textproc/tinyxml
 
-USES=		cmake:outsource compiler:c++11-lib pkgconfig localbase:ldflags
+USES=		cmake compiler:c++11-lib pkgconfig localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	pjasicek
 USE_SDL=	gfx2 image2 mixer2 ttf2

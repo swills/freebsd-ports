@@ -1,5 +1,5 @@
 # Created by: Michael Ranner
-# $FreeBSD: head/irc/kvirc/Makefile 488136 2018-12-22 21:48:45Z tcberner $
+# $FreeBSD: head/irc/kvirc/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	KVIrc
 DISTVERSION=	5.0.0-beta1
@@ -11,8 +11,8 @@ COMMENT=	IRC client for KDE
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libenchant.so:textproc/enchant
 
-USES=		cmake cpe desktop-file-utils gettext gnome kde:5 perl5 \
-		pkgconfig python qt:5 ssl tar:bzip2
+USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext gnome \
+		kde:5 perl5 pkgconfig python qt:5 ssl tar:bzip2
 USE_GNOME=	glib20
 USE_PERL5=	build
 USE_KDE=	auth codecs config configwidgets coreaddons i18n notifications \

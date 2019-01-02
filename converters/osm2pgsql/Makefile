@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/converters/osm2pgsql/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/converters/osm2pgsql/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	osm2pgsql
 PORTVERSION=	0.96.0
@@ -21,7 +21,7 @@ BROKEN_powerpc64=	fails to compile: node-ram-cache.hpp: cstdint: No such file or
 USE_GITHUB=	yes
 GH_ACCOUNT=	openstreetmap
 
-USES=		cmake:outsource lua:53 pgsql
+USES=		cmake lua:53 pgsql
 
 PLIST_FILES=	bin/osm2pgsql \
 		man/man1/osm2pgsql.1.gz

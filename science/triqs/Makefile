@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/triqs/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/triqs/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	triqs
 DISTVERSION=	2.0
@@ -28,7 +28,7 @@ RUN_DEPENDS=	${PYNUMPY}
 
 PORTSCOUT=	limit:^[0-9]+\.[0-9].*$$
 
-USES=		cmake:outsource,noninja fortran gettext-runtime python:2.7 # python:2.7 matches that in devel/cpp2py
+USES=		cmake:noninja fortran gettext-runtime python:2.7 # python:2.7 matches that in devel/cpp2py
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:tu}
 USE_LDCONFIG=	yes

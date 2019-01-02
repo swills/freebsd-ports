@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/dolphin/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/x11-fm/dolphin/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dolphin
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -14,7 +14,7 @@ RUN_DEPENDS=	${QT_PLUGINDIR}/ffmpegthumbs.so:multimedia/kdemultimedia-ffmpegthum
 		${QT_PLUGINDIR}/gsthumbnail.so:graphics/kdegraphics-thumbnailers \
 		${QT_PLUGINDIR}/audiothumbnail.so:devel/kio-extras
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	activities attica auth baloo baloo-widgets bookmarks codecs \
 		completion config configwidgets coreaddons crash dbusaddons \
 		doctools ecm emoticons filemetadata i18n iconthemes init \

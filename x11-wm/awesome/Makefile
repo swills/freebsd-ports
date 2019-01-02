@@ -1,5 +1,5 @@
 # Created by: Nikos Ntarmos <ntarmos@ceid.upatras.gr>
-# $FreeBSD: head/x11-wm/awesome/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-wm/awesome/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	awesome
 PORTVERSION=	4.2
@@ -30,7 +30,7 @@ LIB_DEPENDS=	libcairo.so:graphics/cairo \
 
 CONFLICTS_INSTALL=	awesome3-[0-9]*
 
-USES=		cmake:outsource compiler:c11 gettext iconv pkgconfig lua shebangfix
+USES=		cmake compiler:c11 gettext iconv pkgconfig lua shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	awesomewm
 SHEBANG_FILES=	utils/awesome-client

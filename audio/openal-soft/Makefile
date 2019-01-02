@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/openal-soft/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openal-soft
 PORTVERSION=	1.19.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS=	openal-200[0-9]*
 
-USES=		cmake:outsource compiler:c11 tar:bzip2
+USES=		cmake compiler:c11 tar:bzip2
 USE_LDCONFIG=	yes
 LLD_UNSAFE=	yes
 CMAKE_ARGS=	-DCMAKE_INSTALL_DATADIR:STRING="${PREFIX}/etc"

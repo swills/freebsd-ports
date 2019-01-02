@@ -1,5 +1,5 @@
 # Created by: Gabor Zahemszky <Gabor@Zahemszky.HU>
-# $FreeBSD: head/audio/aften/Makefile 415452 2016-05-18 14:11:33Z amdmi3 $
+# $FreeBSD: head/audio/aften/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	aften
 PORTVERSION=	0.0.8
@@ -9,7 +9,7 @@ MASTER_SITES=	SF
 MAINTAINER=	Gabor@Zahemszky.HU
 COMMENT=	ATSC A/52 audio encoder
 
-USES=		tar:bzip2 cmake:outsource
+USES=		tar:bzip2 cmake
 
 OPTIONS_DEFINE=		SHARED_LIB CXX_BINDINGS DOUBLE
 OPTIONS_DEFAULT=

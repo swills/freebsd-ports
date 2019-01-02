@@ -1,5 +1,5 @@
 # Created by: Haowu Ge <ghw@7axu.com>
-# $FreeBSD: head/net/remotebox/Makefile 468770 2018-05-01 17:42:03Z krion $
+# $FreeBSD: head/net/remotebox/Makefile 488761 2018-12-31 10:09:48Z rene $
 
 PORTNAME=	remotebox
 DISTVERSION=	2.5
@@ -21,23 +21,19 @@ SHEBANG_FILES=	remotebox
 NO_BUILD=	yes
 NO_ARCH=	yes
 
-OPTIONS_DEFINE=		DOCS
+OPTIONS_DEFINE=		DOCS KRDC
 OPTIONS_DEFAULT=	FREERDP TIGERVNC
 OPTIONS_MULTI=		VIEWER
 OPTIONS_MULTI_VIEWER=	FREERDP RDESKTOP TIGERVNC VINAGRE
-OPTIONS_RADIO=		KDE
-OPTIONS_RADIO_KDE=	KRDC KRDC4
 
 FREERDP_DESC=		RDP client (fork of rdesktop with more features)
 KRDC_DESC=		RDP/VNC client for KDE5
-KRDC4_DESC=		RDP/VNC client for KDE4
 RDESKTOP_DESC=		RDP client (less features than freerdp)
 TIGERVNC_DESC=		VNC client (desktop neutral)
 VINAGRE_DESC=		VNC client for GNOME
 
 FREERDP_RUN_DEPENDS=	xfreerdp:net/freerdp
 KRDC_RUN_DEPENDS=	krdc:net/krdc
-KRDC4_RUN_DEPENDS=	krdc:net/krdc-kde4
 RDESKTOP_RUN_DEPENDS=	rdesktop:net/rdesktop
 TIGERVNC_RUN_DEPENDS=	vncviewer:net/tigervnc
 VINAGRE_RUN_DEPENDS=	vinagre:net/vinagre

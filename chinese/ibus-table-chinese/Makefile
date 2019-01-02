@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/ibus-table-chinese/Makefile 473298 2018-06-25 06:59:17Z delphij $
+# $FreeBSD: head/chinese/ibus-table-chinese/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ibus-table-chinese
 PORTVERSION=	1.8.2
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/cmake/Modules/ManageEnvironment.cmake:devel/cm
 RUN_DEPENDS=	ibus-daemon:textproc/ibus \
 		${LOCALBASE}/libexec/ibus-engine-table:textproc/ibus-table
 
-USES=		cmake:noninja pkgconfig
+USES=		cmake:insource,noninja pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	definite

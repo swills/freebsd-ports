@@ -1,5 +1,5 @@
 # Created by: Randall Hopper
-# $FreeBSD: head/graphics/gdal/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/graphics/gdal/Makefile 488740 2018-12-30 21:51:45Z rene $
 
 PORTNAME=	gdal
 PORTVERSION=	2.2.4
@@ -56,7 +56,7 @@ USES=		gmake iconv jpeg localbase tar:xz
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
-SLAVEDIRS=	graphics/p5-Geo-GDAL graphics/php-gdal graphics/py-gdal
+SLAVEDIRS=	graphics/p5-Geo-GDAL graphics/py-gdal
 
 ARMADILLO_CONFIGURE_WITH=	armadillo
 ARMADILLO_LIB_DEPENDS=	libarmadillo.so:math/armadillo

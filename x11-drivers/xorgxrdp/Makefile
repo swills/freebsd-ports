@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 487351 2018-12-13 07:06:02Z meta $
+# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 488301 2018-12-25 08:24:15Z meta $
 
 PORTNAME=	xorgxrdp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2.9
+PORTREVISION=	1
 CATEGORIES=	x11-drivers
 DIST_SUBDIR=	xrdp
 
@@ -21,7 +22,7 @@ USE_GITHUB=	yes
 
 GH_ACCOUNT=	neutrinolabs
 GH_PROJECT=	xrdp:xrdp
-GH_TAGNAME=	v0.9.8:xrdp
+GH_TAGNAME=	v0.9.9:xrdp
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 

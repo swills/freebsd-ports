@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/nestopia/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/emulators/nestopia/Makefile 488378 2018-12-26 12:23:44Z linimon $
 
 PORTNAME=	nestopia
 DISTVERSION=	1.49
@@ -14,9 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	autoconf-archive>=0:devel/autoconf-archive
 LIB_DEPENDS=	libao.so:audio/libao libepoxy.so:graphics/libepoxy
 
-CXXFLAGS+=	-Wno-narrowing
-
-USES=		autoreconf desktop-file-utils libarchive localbase:ldflags pkgconfig
+USES=		autoreconf desktop-file-utils gl gnome libarchive \
+		localbase:ldflags pkgconfig
+USE_CXXSTD=	c++98
 USE_GITHUB=	yes
 GH_ACCOUNT=	rdanbrook
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/pocl/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/lang/pocl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pocl
 PORTVERSION=	0.14
@@ -24,7 +24,7 @@ RUN_DEPENDS=	llvm${LLVM_VERSION}>=0:devel/llvm${LLVM_VERSION}
 
 LLVM_VERSION=	${MESA_LLVM_VER:U40}
 
-USES=		cmake:outsource localbase:ldflags ncurses pkgconfig
+USES=		cmake localbase:ldflags ncurses pkgconfig
 USE_CXXSTD=	gnu++11
 USE_LDCONFIG=	yes
 

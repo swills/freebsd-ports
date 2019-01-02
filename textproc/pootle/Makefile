@@ -1,11 +1,11 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/textproc/pootle/Makefile 481439 2018-10-07 10:58:42Z rene $
+# $FreeBSD: head/textproc/pootle/Makefile 488661 2018-12-29 10:56:09Z rene $
 
 PORTNAME=	pootle
 DISTVERSION=	2.8.2
 CATEGORIES=	textproc
 
-MAINTAINER=	rene@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	User-friendly web portal for simple translation process
 
 LICENSE=	GPLv3

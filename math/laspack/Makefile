@@ -1,5 +1,5 @@
 # Created by: giffunip
-# $FreeBSD: head/math/laspack/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/math/laspack/Makefile 488536 2018-12-27 12:52:48Z amdmi3 $
 
 PORTNAME=	laspack
 PORTVERSION=	1.12.2
@@ -9,6 +9,11 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Package for solving large sparse systems of linear equations
+
+LICENSE=	LASPACK
+LICENSE_FILE=	${WRKSRC}/copyrght.h
+LICENSE_NAME=	LASPack license
+LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
 USES=		tar:tgz
 WRKSRC=		${WRKDIR}/${PORTNAME}
@@ -20,14 +25,13 @@ OPTIONS_DEFINE=	DOCS
 post-patch:
 	@${REINPLACE_CMD} -e 's+/usr/local+${LOCALBASE}+g' ${WRKSRC}/${MAKEFILE}
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.ps ${STAGEDIR}${DOCSDIR}
 
-.ifdef MAINTAINER_MODE
-regression-test:
-	@cd ${WRKDIR} && ${SETENV} HOME=${WRKDIR} ./install
-	@cd ${WRKSRC}/check && ${SETENV} HOME=${WRKDIR} ./check
-.endif
+# XXX: test does not work properly (see work/laspack/check/diffs)
+do-test:
+	cd ${WRKDIR} && ${SETENV} HOME=${WRKDIR} ./install
+	cd ${WRKSRC}/check && ${SETENV} HOME=${WRKDIR} ./check
 
 .include <bsd.port.mk>

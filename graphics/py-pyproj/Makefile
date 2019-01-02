@@ -1,5 +1,5 @@
 # Created by: TAOKA Fumiyoshi
-# $FreeBSD: head/graphics/py-pyproj/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/graphics/py-pyproj/Makefile 488493 2018-12-27 00:02:35Z swills $
 
 PORTNAME=	pyproj
 PORTVERSION=	1.9.5.1
@@ -28,7 +28,7 @@ PORTEXAMPLES=	datum_shift.py geodtest.py sample.out \
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/${PORTNAME}/_proj.so
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/${PORTNAME}/_proj.so
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

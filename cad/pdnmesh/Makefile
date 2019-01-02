@@ -1,5 +1,5 @@
 # Created by: Sarod Yatawatta <sarod@cs.pdn.ac.lk>
-# $FreeBSD: head/cad/pdnmesh/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/cad/pdnmesh/Makefile 488469 2018-12-26 22:15:45Z linimon $
 
 PORTNAME=	pdnmesh
 PORTVERSION=	0.2.2
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
 OPTIONS_DEFINE=	ATLAS DOCS EXAMPLES
 ATLAS_DESC=	Enable ATLAS support
 
-USES=		fortran pkgconfig
+USES=		compiler:c++11-lang fortran gl gnome pkgconfig
 USE_GL=		glu
 USE_GNOME=	gtk20
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
 # Created by: Stanislav Sedov <stas@FreeBSD.org>
-# $FreeBSD: head/devel/libatomic_ops/Makefile 466509 2018-04-04 21:06:57Z rodrigo $
+# $FreeBSD: head/devel/libatomic_ops/Makefile 488395 2018-12-26 14:59:34Z rodrigo $
 
 PORTNAME=	libatomic_ops
-PORTVERSION=	7.6.4
+PORTVERSION=	7.6.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

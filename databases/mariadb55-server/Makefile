@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb55-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/mariadb55-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=	mariadb
 PORTVERSION=	5.5.62
@@ -23,7 +23,7 @@ LICENSE=	GPLv2
 SUB_FILES=	pkg-message
 
 SLAVEDIRS=	databases/mariadb55-client
-USES+=		cmake:noninja shebangfix ssl
+USES+=		cmake:insource,noninja shebangfix ssl
 USE_LDCONFIG=	${PREFIX}/lib/mysql
 SHEBANG_FILES=	scripts/*.sh sql-bench/[a-km-z]*
 

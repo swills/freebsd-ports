@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/lxqt-globalkeys-l10n/Makefile 474842 2018-07-18 08:45:40Z jsm $
+# $FreeBSD: head/x11/lxqt-globalkeys-l10n/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	globalkeys
 PORTVERSION=	0.13.0
@@ -14,7 +14,7 @@ COMMENT=	Translations of lxqt-globalkeys
 
 LICENSE=	LGPL21+
 
-USES=	cmake:outsource lxqt pkgconfig tar:xz qt:5
+USES=	cmake lxqt pkgconfig tar:xz qt:5
 USE_QT=	buildtools_build qmake_build linguisttools
 USE_LXQT=	buildtools
 

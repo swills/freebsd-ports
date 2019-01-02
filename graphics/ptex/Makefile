@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/ptex/Makefile 486966 2018-12-08 17:17:38Z pi $
+# $FreeBSD: head/graphics/ptex/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ptex
 PORTVERSION=	2.3.0
@@ -10,7 +10,7 @@ COMMENT=	Per face texture library
 
 LICENSE=	BSD3CLAUSE
 
-USES=		cmake
+USES=		cmake:insource
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

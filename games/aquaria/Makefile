@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/aquaria/Makefile 485262 2018-11-18 20:37:02Z sunpoet $
+# $FreeBSD: head/games/aquaria/Makefile 488561 2018-12-27 19:45:18Z jbeich $
 
 PORTNAME=	aquaria
 DISTVERSIONPREFIX=	OSE-v
@@ -22,7 +22,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	AquariaOSE
 GH_PROJECT=	Aquaria
 
-USES=		cmake lua:51 openal pkgconfig
+USES=		cmake:insource compiler:c++11-lang lua:51 openal pkgconfig
 EXCLUDE=	AL FTGL GL SDL* freetype2 glm glpng/png glpng/zlib \
 		libogg-* libvorbis-* lua-* tinyxml2*
 EXTRACT_AFTER_ARGS=${EXCLUDE:S,^,--exclude ExternalLibs/,}

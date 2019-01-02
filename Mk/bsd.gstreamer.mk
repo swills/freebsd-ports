@@ -5,7 +5,7 @@
 #
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gstreamer.mk 483887 2018-11-03 11:58:10Z tijl $
+# $FreeBSD: head/Mk/bsd.gstreamer.mk 488337 2018-12-25 19:43:19Z kwm $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.56 2013/01/15 21:43:45 kwm Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -161,6 +161,7 @@ _GSTREAMER_PLUGINS+= \
 		kms \
 		libav \
 		libde265 \
+		lv2 \
 		modplug \
 		mpg123 \
 		mplex \
@@ -178,11 +179,12 @@ _GSTREAMER_PLUGINS+= \
 		vpx \
 		vulkan \
 		webp \
+		webrtcdsp \
 		x \
 		x265 \
 		ximagesrc \
 		zbar
-# vaapi webrtcdsp
+# vaapi
 .endif # USE_GSTREAMER1
 
 # other plugins
@@ -261,6 +263,9 @@ ladspa_IMPL=	bad
 lame_DEPENDS=	audio/gstreamer-plugins-lame
 lame_IMPL=	ugly
 
+lv2_DEPENDS=	audio/gstreamer-plugins-lv2
+lv2_IMPL=	bad
+
 mad_DEPENDS=	audio/gstreamer-plugins-mad
 mad_IMPL=	ugly
 
@@ -323,6 +328,9 @@ vorbis_IMPL=	#
 
 wavpack_DEPENDS=	audio/gstreamer-plugins-wavpack
 wavpack_IMPL=		good
+
+webrtcdsp_DEPENDS=	audio/gstreamer-plugins-webrtcdsp
+webrtcdsp_IMPL=		bad
 
 #-- comms plugin section --------------------------------------------------#
 
@@ -544,9 +552,6 @@ ugly_IMPL=	#
 
 vdpau_DEPENDS=	multimedia/gstreamer-plugins-vdpau
 vdpau_IMPL=	bad
-
-webrtcdsp_DEPENDS=	multimedia/gstreamer-plugins-webrtcdsp
-webrtcdsp_IMPL=		bad
 
 x264_DEPENDS=	multimedia/gstreamer-plugins-x264
 x264_IMPL=	ugly

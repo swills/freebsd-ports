@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <pfg@FreeBSD.org>
-# $FreeBSD: head/math/viennacl/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/viennacl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	viennacl
 PORTVERSION=	1.7.1
@@ -18,6 +18,6 @@ BUILD_DEPENDS=	${LOCALBASE}/include/CL/opencl.h:devel/opencl
 LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd
 RUN_DEPENDS=	${LOCALBASE}/include/CL/opencl.h:devel/opencl
 
-USES=		cmake:outsource compiler:openmp localbase
+USES=		cmake compiler:openmp localbase
 
 .include <bsd.port.mk>

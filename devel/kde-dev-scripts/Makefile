@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kde-dev-scripts/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/kde-dev-scripts/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kde-dev-scripts
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	devel kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE development scripts
 
-USES=		cmake:outsource kde:5 perl5 python:run qt:5 shebangfix tar:xz
+USES=		cmake kde:5 perl5 python:run qt:5 shebangfix tar:xz
 USE_KDE=	doctools ecm
 USE_QT=		buildtools_build qmake_build
 

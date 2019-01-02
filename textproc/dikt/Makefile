@@ -1,5 +1,5 @@
 # Created by: Goran Tal <goran.tal@gmail.com>
-# $FreeBSD: head/textproc/dikt/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/textproc/dikt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dikt
 PORTVERSION=	2s1
@@ -13,7 +13,7 @@ COMMENT=	Dictionary for KDE
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource kde:5 qt:5 tar:txz
+USES=		cmake kde:5 qt:5 tar:txz
 USE_KDE=	auth bookmarks codecs completion config configwidgets coreaddons dbusaddons guiaddons i18n \
 		iconthemes itemviews jobwidgets kio service solid widgetsaddons xmlgui
 USE_QT=		concurrent core dbus gui network printsupport svg widgets xml \

@@ -1,8 +1,9 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/audio/sratom/Makefile 480651 2018-09-25 08:34:35Z arved $
+# $FreeBSD: head/audio/sratom/Makefile 488738 2018-12-30 20:56:50Z kwm $
 
 PORTNAME=	sratom
 PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 
@@ -12,8 +13,9 @@ COMMENT=	Sratom is a library for serialising LV2 atoms to/from RDF
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libserd-0.so:devel/serd libsord-0.so:devel/sord
 BUILD_DEPENDS=	lv2>=1.14.0:audio/lv2
+LIB_DEPENDS=	libserd-0.so:devel/serd libsord-0.so:devel/sord
+RUN_DEPENDS=	lv2>=1.14.0:audio/lv2
 
 USES=		pkgconfig python:build tar:bzip2 waf
 USE_CSTD=	c99

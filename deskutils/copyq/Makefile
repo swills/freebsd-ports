@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/copyq/Makefile 483047 2018-10-26 20:00:42Z jhale $
+# $FreeBSD: head/deskutils/copyq/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	copyq
 PORTVERSION=	3.6.1
@@ -11,7 +11,7 @@ COMMENT=	Qt5 based clipboard manager
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource qt:5
+USES=		cmake qt:5
 USE_XORG=	ice sm x11 xext xfixes xtst
 USE_QT=		core gui network script svg widgets x11extras xml \
 		buildtools_build linguist_build qmake_build \

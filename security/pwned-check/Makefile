@@ -1,8 +1,9 @@
 # Created by: Charlie Root <se@FreeBSD.org>
-# $FreeBSD: head/security/pwned-check/Makefile 475648 2018-07-29 11:52:42Z se $
+# $FreeBSD: head/security/pwned-check/Makefile 488522 2018-12-27 09:50:56Z tobik $
 
 PORTNAME=	pwned-check
 PORTVERSION=	2.2
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	security
 MASTER_SITES=	#

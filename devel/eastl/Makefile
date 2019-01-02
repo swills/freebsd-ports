@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/eastl/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/eastl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	eastl
 DISTVERSION=	3.12.07
@@ -11,7 +11,7 @@ COMMENT=	Electronic Arts Standard Template Library
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource compiler:c++14-lang
+USES=		cmake compiler:c++14-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	electronicarts
 GH_PROJECT=	${PORTNAME:tu}

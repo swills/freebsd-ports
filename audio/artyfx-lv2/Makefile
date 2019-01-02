@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/artyfx-lv2/Makefile 473179 2018-06-24 04:44:56Z yuri $
+# $FreeBSD: head/audio/artyfx-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	artyfx
 DISTVERSIONPREFIX=	release-
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile
 
-USES=		cmake:outsource localbase:ldflags pkgconfig
+USES=		cmake localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	openAVproductions
 GH_PROJECT=	openAV-ArtyFX

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/mail/libetpan/Makefile 479916 2018-09-17 07:53:36Z wen $
+# $FreeBSD: head/mail/libetpan/Makefile 488254 2018-12-24 04:34:15Z linimon $
 
 PORTNAME=	libetpan
 PORTVERSION=	1.9.1
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
-USES=		autoreconf gmake iconv libtool localbase
+USES=		autoreconf compiler:c++11-lang gmake iconv libtool localbase
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	dinhviethoa

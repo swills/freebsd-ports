@@ -1,5 +1,5 @@
 # Created by: Jimmy Olgeni <olgeni@uli.it>
-# $FreeBSD: head/graphics/blender/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/blender/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	blender
 PORTVERSION=	2.79b
@@ -25,7 +25,7 @@ RUN_DEPENDS=	${PYNUMPY}
 # are set. We will pull boost in just to be on the safe side.
 
 # USES=compiler is needed to support gcc built archs
-USES=		cmake:outsource compiler:c++14-lang desktop-file-utils \
+USES=		cmake compiler:c++14-lang desktop-file-utils \
 		jpeg python:3.5 shebangfix
 USE_XORG=	x11 xext xfixes xmu xrender
 USE_GL=		gl glu glew

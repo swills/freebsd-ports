@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/neko/Makefile 479770 2018-09-14 12:04:53Z tijl $
+# $FreeBSD: head/lang/neko/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	neko
 DISTVERSIONPREFIX=	v
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libgc-threaded.so:devel/boehm-gc-threaded \
 		libmbedtls.so:security/mbedtls libmbedcrypto.so:security/mbedtls libmbedx509.so:security/mbedtls \
 		libfontconfig.so:x11-fonts/fontconfig libfreetype.so:print/freetype2
 
-USES=		cmake:outsource mysql pkgconfig sqlite:3
+USES=		cmake mysql pkgconfig sqlite:3
 USE_GITHUB=	yes
 GH_ACCOUNT=	HaxeFoundation
 USE_LDCONFIG=	${PREFIX}/lib ${PREFIX}/lib/neko

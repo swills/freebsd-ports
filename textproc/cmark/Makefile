@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/textproc/cmark/Makefile 472898 2018-06-20 18:51:27Z yuri $
+# $FreeBSD: head/textproc/cmark/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	cmark
 PORTVERSION=	0.28.3
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS_INSTALL=	py[2-3][0-9]-CommonMark
 
-USES=		cmake:outsource python:3.4+,test
+USES=		cmake python:3.4+,test
 USE_GITHUB=	yes
 GH_ACCOUNT=	commonmark
 USE_LDCONFIG=	yes

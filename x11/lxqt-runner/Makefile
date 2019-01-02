@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/lxqt-runner/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11/lxqt-runner/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lxqt-runner
 PORTVERSION=	0.13.0
@@ -14,7 +14,7 @@ LICENSE=	LGPL21+
 
 LIB_DEPENDS=	libmuparser.so:math/muparser
 
-USES=	cmake:outsource compiler:c++11-lib gettext-runtime kde:5 qt:5 \
+USES=	cmake compiler:c++11-lib gettext-runtime kde:5 qt:5 \
 	localbase lxqt pkgconfig tar:xz
 USE_QT=	buildtools_build qmake_build core dbus gui linguisttools \
 	script svg widgets x11extras xml

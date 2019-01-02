@@ -1,5 +1,5 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-binutils/Makefile 485733 2018-11-24 08:52:36Z linimon $
+# $FreeBSD: head/devel/psptoolchain-binutils/Makefile 488659 2018-12-29 09:00:22Z amdmi3 $
 
 PORTNAME=	binutils
 PORTVERSION=	2.22
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	psptoolchain-
 
 MAINTAINER=	tphilipp@potion-studios.com
 COMMENT=	PlayStation Portable development toolchain ${PORTNAME}
+
+LICENSE=	GPLv3 LGPL3
+LICENSE_COMB=	multi
 
 BROKEN_aarch64=		fails to package: ansidecl.h: No such file or directory
 BROKEN_mips64=		fails to package: ansidecl.h: No such file or directory

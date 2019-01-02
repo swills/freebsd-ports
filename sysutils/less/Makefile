@@ -1,8 +1,8 @@
 # Created by: Andrey A. Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/sysutils/less/Makefile 408040 2016-02-04 14:48:06Z marino $
+# $FreeBSD: head/sysutils/less/Makefile 488497 2018-12-27 00:26:31Z swills $
 
 PORTNAME=	less
-PORTVERSION=	458
+PORTVERSION=	530
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.greenwoodsoftware.com/less/ \
 		http://bitrote.org/distfiles/

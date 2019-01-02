@@ -1,4 +1,4 @@
-# $FreeBSD: head/arabic/Makefile 323748 2013-07-26 19:19:20Z rene $
+# $FreeBSD: head/arabic/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Arabic language support
@@ -8,7 +8,6 @@
     SUBDIR += arabtex
     SUBDIR += aspell
     SUBDIR += kacst_fonts
-    SUBDIR += kde4-l10n
     SUBDIR += khotot
     SUBDIR += libitl
     SUBDIR += libreoffice

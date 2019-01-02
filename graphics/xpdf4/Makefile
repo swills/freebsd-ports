@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/xpdf4/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/xpdf4/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xpdf
 PORTVERSION=	4.00
@@ -26,7 +26,7 @@ CONFLICTS_INSTALL=	xpdf
 MANPREFIX=	${PREFIX}/share/xpdf
 SUB_FILES=	xpdf-man.conf
 
-USES=		cmake:outsource localbase
+USES=		compiler:c++11-lang cmake localbase:ldflags
 CMAKE_ARGS+=	-DOPI_SUPPORT:BOOL=ON -DCMAKE_DISABLE_FIND_PACKAGE_Qt4:BOOL=ON \
 		-DUSE_LCMS:BOOL=OFF -DSYSTEM_XPDFRC=${PREFIX}/etc/xpdfrc
 

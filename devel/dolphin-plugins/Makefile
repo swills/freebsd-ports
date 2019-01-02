@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/dolphin-plugins/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/dolphin-plugins/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	dolphin-plugins
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Plugins for Dolphin file manager
 BUILD_DEPENDS=	dolphin:x11-fm/dolphin
 RUN_DEPENDS=	dolphin:x11-fm/dolphin
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash guiaddons i18n iconthemes itemviews jobwidgets \
 		kdelibs4support kio notifications parts service solid sonnet \

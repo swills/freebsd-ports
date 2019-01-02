@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kf5-kdesu/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/security/kf5-kdesu/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdesu
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	security kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 integration with su for elevated privileges
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons dbusaddons ecm i18n pty service
 USE_QT=		buildtools_build core dbus qmake_build xml
 USE_XORG=	ice sm x11 xext

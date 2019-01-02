@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/woff2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/woff2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	woff2
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libbrotlidec.so:archivers/brotli
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
 USE_LDCONFIG=	yes

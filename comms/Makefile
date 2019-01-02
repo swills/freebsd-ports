@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 488066 2018-12-22 05:27:32Z loader $
+# $FreeBSD: head/comms/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Communication utilities
@@ -73,7 +73,6 @@
     SUBDIR += kb
     SUBDIR += kermit
     SUBDIR += klog
-    SUBDIR += kremotecontrol-kde4
     SUBDIR += libbtbb
     SUBDIR += libconcord
     SUBDIR += libfap

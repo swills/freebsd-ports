@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/wesnoth/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/wesnoth/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wesnoth
 PORTVERSION=	1.14.5
@@ -26,7 +26,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib -lboost_system
 
 PORTSCOUT=	limitw:1,even
 
-USES=		cmake:outsource compiler:c++11-lang cpe pkgconfig \
+USES=		cmake compiler:c++11-lang cpe pkgconfig \
 		python:2.7,run readline:port shebangfix ssl tar:bzip2
 USE_SDL=	image2 mixer2 ttf2
 USE_LDCONFIG=	yes

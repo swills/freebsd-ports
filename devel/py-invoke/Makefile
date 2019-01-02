@@ -1,9 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-invoke/Makefile 483192 2018-10-27 23:22:56Z sunpoet $
+# $FreeBSD: head/devel/py-invoke/Makefile 488992 2019-01-01 20:35:36Z sunpoet $
 
 PORTNAME=	invoke
-PORTVERSION=	0.23.0
-PORTREVISION=	1
+PORTVERSION=	1.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

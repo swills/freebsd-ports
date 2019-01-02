@@ -1,5 +1,5 @@
 # Created by: Dierk Sacher <dierk@blaxxtarz.de>
-# $FreeBSD: head/multimedia/ffmpegthumbnailer/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/ffmpegthumbnailer/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ffmpegthumbnailer
 PORTVERSION=	2.2.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 USE_GITHUB=	yes
 GH_ACCOUNT=	dirkvdb
 
-USES=		cmake:outsource compiler:c++11-lib jpeg localbase pathfix pkgconfig
+USES=		cmake compiler:c++11-lib jpeg localbase pathfix pkgconfig
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 

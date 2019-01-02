@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/ortp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/ortp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ortp
 PORTVERSION=	1.0.2
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox
 
-USES=		cmake:outsource compiler:c11
+USES=		cmake compiler:c11
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DENABLE_DOC=NO -DENABLE_STATIC=NO -DENABLE_STRICT=NO

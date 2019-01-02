@@ -1,9 +1,9 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/multimedia/libkate/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/libkate/Makefile 488422 2018-12-26 19:54:04Z bar $
 
 PORTNAME=	libkate
 PORTVERSION=	0.4.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.xiph.org/releases/kate/
 
@@ -57,7 +57,7 @@ post-patch:
 .else
 	@${REINPLACE_CMD} -e \
 		"s|  HAVE_PYTHON_TRUE=$$|  HAVE_PYTHON_TRUE='#'|; \
-			s|  HAVE_PYTHON_FALSE=\'#\'$$|  HAVE_PYTHON_FALSE=|" \
+			s|  HAVE_PYTHON_FALSE='#'$$|  HAVE_PYTHON_FALSE=|" \
 		${WRKSRC}/configure
 .endif
 

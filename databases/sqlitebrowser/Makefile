@@ -1,5 +1,5 @@
 # Created by: loïc bartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/sqlitebrowser/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/databases/sqlitebrowser/Makefile 488226 2018-12-23 17:07:47Z linimon $
 
 PORTNAME=	sqlitebrowser
 PORTVERSION=	3.10.1
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	${LOCALBASE}/lib/libantlr.a:devel/antlr
 LIB_DEPENDS=	libqscintilla2_qt5.so:devel/qscintilla2-qt5
 
-USES=		cmake desktop-file-utils qt:5 sqlite
+USES=		compiler:c++11-lang cmake desktop-file-utils gnome qt:5 sqlite
 CMAKE_ARGS+=	-DQT_INCLUDE_DIR=${QT_INCDIR} -DQT_LIBRARY_DIR=${QT_LIBDIR}
 USE_QT=		core gui network printsupport testlib widgets \
 		buildtools_build linguisttools_build qmake_build

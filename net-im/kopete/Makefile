@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/kopete/Makefile 481851 2018-10-11 20:23:50Z tcberner $
+# $FreeBSD: head/net-im/kopete/Makefile 488361 2018-12-26 08:39:24Z tcberner $
 
 PORTNAME=	kopete
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -14,7 +14,8 @@ LIB_DEPENDS=    libidn.so:dns/libidn \
 		libqca-qt5.so:devel/qca@qt5 \
 		libv4l2.so:multimedia/libv4l
 
-USES=		cmake:outsource jpeg kde:5 qt:5 shebangfix tar:xz
+USES=		cmake compiler:c++11-lang jpeg kde:5 qt:5 shebangfix \
+		tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons dnssd ecm emoticons guiaddons i18n \

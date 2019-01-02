@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/opendbviewer/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/opendbviewer/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	opendbviewer
 PORTVERSION=	1.1.0
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	convert:graphics/ImageMagick6
 
-USES=		cmake:outsource compiler:c++11-lang qt:5
+USES=		cmake compiler:c++11-lang qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	Jet1oeil
 USE_QT=		core gui network sql sql-sqlite3 testlib widgets \

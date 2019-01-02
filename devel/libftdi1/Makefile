@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libftdi1/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/libftdi1/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libftdi1
 PORTVERSION=	1.4
@@ -22,7 +22,7 @@ OPTIONS_SUB=		yes
 BOOST_DESC=	Build with boost
 PYTHON_DESC=	Build Python bindings
 
-USES=		cmake compiler:c++11-lang gettext-runtime pkgconfig tar:bzip2
+USES=		cmake:insource compiler:c++11-lang gettext-runtime pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 
 PORTDOCS=	COPYING.LIB ChangeLog README

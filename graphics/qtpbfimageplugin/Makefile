@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/qtpbfimageplugin/Makefile 487438 2018-12-14 14:25:11Z tcberner $
+# $FreeBSD: head/graphics/qtpbfimageplugin/Makefile 488916 2019-01-01 15:55:56Z linimon $
 
 PORTNAME=	qtpbfimageplugin
 DISTVERSION=	1.1
@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libprotobuf-lite.so:devel/protobuf
 
-USES=		gl qmake qt:5
+USES=		compiler:c++11-lang gl qmake qt:5
 USE_QT=		core gui buildtools_build
 USE_GL=		gl
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

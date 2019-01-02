@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/pavucontrol-qt/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/pavucontrol-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pavucontrol-qt
 PORTVERSION=	0.4.0
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 
-USES=	cmake:outsource compiler:c++11-lang gettext-runtime localbase:ldflags qt:5 \
+USES=	cmake compiler:c++11-lang gettext-runtime localbase:ldflags qt:5 \
 	lxqt pkgconfig tar:xz gnome
 USE_QT=	buildtools_build qmake_build core dbus gui linguisttools \
 	widgets

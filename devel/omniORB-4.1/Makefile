@@ -1,5 +1,5 @@
 # Created by: ejc@bazzle.com
-# $FreeBSD: head/devel/omniORB-4.1/Makefile 461695 2018-02-13 11:03:14Z antoine $
+# $FreeBSD: head/devel/omniORB-4.1/Makefile 488930 2019-01-01 19:54:38Z bofh $
 
 PORTNAME=	omniORB
 PORTVERSION=	4.1.7
@@ -8,17 +8,21 @@ CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	41
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Robust high performance CORBA ORB for C++ and Python
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+DEPRECATED=	Legacy version please consider using devel/omniORB
+EXPIRATION_DATE=2019-02-15
+
+USES=		gmake pkgconfig python:2.7 shebangfix ssl tar:bzip2
+
 CONFLICTS=	omniORB-4.2.*
 
 PLIST_SUB+=	SONUM=${PORTVERSION:C/.*\.//}
 GNU_CONFIGURE=	yes
-USES=		gmake pkgconfig python:2.7 shebangfix ssl tar:bzip2
 SHEBANG_FILES=	src/tool/omniidl/python/scripts/omniidlrun.py
 USE_LDCONFIG=	yes
 MAKEFILE=	GNUmakefile

@@ -1,12 +1,9 @@
-# $FreeBSD: head/devel/amd64-gcc/Makefile 468277 2018-04-25 13:17:10Z kan $
+# $FreeBSD: head/devel/amd64-gcc/Makefile 488642 2018-12-29 00:44:12Z jhb $
 
 PKGNAMEPREFIX=	amd64-
 PLIST=	${.CURDIR}/pkg-plist
 
 MASTERDIR=	${.CURDIR}/../powerpc64-gcc
-GCC_TARGET=	x86_64-unknown-${OPSYS:tl}${OSREL}
-BU_PREFIX=	x86_64-unknown-${OPSYS:tl}${OSREL}
-FREEBSD_EXTENSION=	yes
 
 BROKEN_aarch64=		invalid output constraint '=a' in assembler
 BROKEN_armv6=		invalid output constraint '=a' in assembler

@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/flang/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/flang/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	flang
 DISTVERSION=	6.0-g20180904
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libpgmath.so:math/libpgmath
 OPTIONS_DEFINE=	TESTS
 TESTS_DESC=	build unit tests for flang
 
-USES=		cmake:outsource,noninja compiler:c++11-lib libedit perl5 tar:xz \
+USES=		cmake:noninja compiler:c++11-lib libedit perl5 tar:xz \
 		shebangfix
 _USES_PYTHON?=	python:build
 USES+=		${_USES_PYTHON}

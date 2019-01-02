@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 488006 2018-12-21 14:22:17Z rene $
+# $FreeBSD: head/print/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Desktop publishing
@@ -60,6 +60,7 @@
     SUBDIR += fpdf
     SUBDIR += freetype
     SUBDIR += freetype2
+    SUBDIR += frescobaldi
     SUBDIR += ft2demos
     SUBDIR += ghostscript7-base
     SUBDIR += ghostscript7-commfont
@@ -91,7 +92,6 @@
     SUBDIR += indexinfo
     SUBDIR += jabref
     SUBDIR += kde_poster
-    SUBDIR += kover
     SUBDIR += kpdftool
     SUBDIR += latex-beamer
     SUBDIR += latex-biber
@@ -158,9 +158,7 @@
     SUBDIR += pdfstitch
     SUBDIR += pdftk
     SUBDIR += pear-File_PDF
-    SUBDIR += pecl-haru
     SUBDIR += pecl-pdflib
-    SUBDIR += pecl-ps
     SUBDIR += pfbtopfa
     SUBDIR += photoprint
     SUBDIR += pic2fig
@@ -176,7 +174,6 @@
     SUBDIR += pnm2ppa
     SUBDIR += poster
     SUBDIR += print-manager
-    SUBDIR += print-manager-kde4
     SUBDIR += ps2eps
     SUBDIR += pscal
     SUBDIR += psdim

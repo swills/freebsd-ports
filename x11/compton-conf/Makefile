@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/compton-conf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11/compton-conf/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	compton-conf
 PORTVERSION=	0.4.0
@@ -14,7 +14,7 @@ LICENSE=	LGPL21+
 LIB_DEPENDS=	libconfig.so:devel/libconfig
 RUN_DEPENDS=	compton:x11-wm/compton
 
-USES=	cmake:outsource compiler:c++11-lib localbase:ldflags lxqt qt:5 \
+USES=	cmake compiler:c++11-lib localbase:ldflags lxqt qt:5 \
 	pkgconfig tar:xz
 USE_QT=	buildtools_build qmake_build core dbus gui linguisttools \
 	widgets

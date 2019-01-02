@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/benchmarks/clpeak/Makefile 479383 2018-09-10 10:29:06Z mat $
+# $FreeBSD: head/benchmarks/clpeak/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	clpeak
 PORTVERSION=	1.0g20170524
@@ -23,7 +23,7 @@ GH_TAGNAME=	75c8746
 
 USE_LDCONFIG=	yes
 USE_GL=		gl
-USES=		cmake
+USES=		cmake:insource
 
 CXXFLAGS+=	-std=c++11
 

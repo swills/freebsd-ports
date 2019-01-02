@@ -1,8 +1,8 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/archivers/zstd/Makefile 482504 2018-10-20 14:47:12Z sunpoet $
+# $FreeBSD: head/archivers/zstd/Makefile 488939 2019-01-01 20:30:54Z sunpoet $
 
 PORTNAME=	zstd
-PORTVERSION=	1.3.7
+PORTVERSION=	1.3.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	archivers
 

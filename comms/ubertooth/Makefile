@@ -1,5 +1,5 @@
 # Created by: George V. Neville-Neil <gnn@freebsd.org>
-# $FreeBSD: head/comms/ubertooth/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/comms/ubertooth/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ubertooth
 PORTVERSION=	201808R1
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libpyside-python2.7.so:devel/pyside \
 
 BUILD_DEPENDS=	${PYNUMPY}
 
-USES=		cmake:outsource \
+USES=		cmake \
 		python
 
 USE_GITHUB=	yes

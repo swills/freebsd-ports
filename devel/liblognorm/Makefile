@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/liblognorm/Makefile 475307 2018-07-25 12:35:09Z bofh $
+# $FreeBSD: head/devel/liblognorm/Makefile 488841 2018-12-31 22:07:13Z bofh $
 
 PORTNAME=	liblognorm
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.6
 CATEGORIES=	devel net security
 MASTER_SITES=	http://www.liblognorm.com/download/files/download/
 
@@ -15,6 +15,7 @@ LIB_DEPENDS=	libfastjson.so:devel/libfastjson \
 BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
 
 USES=		libtool pathfix pkgconfig
+
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

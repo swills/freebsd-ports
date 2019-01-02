@@ -1,5 +1,5 @@
 # Created by: Takumi Takahashi <takumiiinn@gmail.com>
-# $FreeBSD: head/devel/antlr3/Makefile 399598 2015-10-17 18:19:14Z pi $
+# $FreeBSD: head/devel/antlr3/Makefile 488591 2018-12-28 09:30:23Z amdmi3 $
 
 PORTNAME=	antlr3
 PORTVERSION=	3.5.2
@@ -15,6 +15,7 @@ COMMENT=	ANother Tool for Language Recognition
 LICENSE=	BSD3CLAUSE
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 USE_JAVA=	yes
 JAVA_VERSION=	1.7+
 INSTALL_JAR=	${DISTFILES}
@@ -22,8 +23,6 @@ SUB_LIST=	INSTALL_JAR=${INSTALL_JAR}
 SUB_FILES=	antlr.sh
 PLIST_FILES=	bin/${PORTNAME} \
 		${JAVAJARDIR}/${INSTALL_JAR}
-
-.include <bsd.port.options.mk>
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${JAVAJARDIR}

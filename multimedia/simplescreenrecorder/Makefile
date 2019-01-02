@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	simplescreenrecorder
 DISTVERSION=	0.3.11
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libavformat.so:multimedia/ffmpeg
 
-USES=		cmake:outsource pkgconfig qt:5
+USES=		cmake pkgconfig qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	MaartenBaert
 GH_PROJECT=	ssr

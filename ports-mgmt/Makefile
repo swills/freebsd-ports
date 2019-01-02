@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/Makefile 464994 2018-03-19 07:45:25Z yuri $
+# $FreeBSD: head/ports-mgmt/Makefile 488749 2018-12-30 23:30:55Z rene $
 #
 
     COMMENT = Ports for managing, installing, and developing FreeBSD ports and packages
@@ -71,7 +71,6 @@
     SUBDIR += py-skog
     SUBDIR += symports
     SUBDIR += synth
-    SUBDIR += tinderbox
     SUBDIR += wanted-ports
 
 .include <bsd.port.subdir.mk>

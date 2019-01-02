@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rundeck/Makefile 482305 2018-10-17 21:30:04Z joneum $
+# $FreeBSD: head/sysutils/rundeck/Makefile 488451 2018-12-26 21:21:18Z swills $
 
 PORTNAME=	rundeck
-DISTVERSION=	2.11.7
+DISTVERSION=	2.11.8
 CATEGORIES=	sysutils java
 MASTER_SITES=	http://dl.bintray.com/rundeck/rundeck-maven/
 DISTNAME=	rundeck-launcher-${PORTVERSION}

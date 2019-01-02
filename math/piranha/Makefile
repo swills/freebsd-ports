@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/piranha/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/piranha/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	piranha
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,7 @@ LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING.lgpl3
 BUILD_DEPENDS=	${HEADER_DEPENDS}
 RUN_DEPENDS=	${HEADER_DEPENDS}
 
-USES=		cmake:outsource compiler:c++14-lang
+USES=		cmake compiler:c++14-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	bluescarni
 NO_BUILD=	yes

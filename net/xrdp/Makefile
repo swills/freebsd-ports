@@ -1,16 +1,14 @@
 # Created by: alepulver
-# $FreeBSD: head/net/xrdp/Makefile 486081 2018-11-28 08:12:18Z meta $
+# $FreeBSD: head/net/xrdp/Makefile 488300 2018-12-25 08:14:27Z meta $
 
 PORTNAME=	xrdp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.8
-PORTREVISION=	1
+DISTVERSION=	0.9.9
 PORTEPOCH=	1
 CATEGORIES=	net
 DIST_SUBDIR?=	${PORTNAME}
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/
-PATCHFILES=	88f0d31.patch:-p1
 
 MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Open source Remote Desktop Protocol (RDP) server

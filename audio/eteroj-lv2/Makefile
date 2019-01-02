@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/eteroj-lv2/Makefile 474218 2018-07-09 02:21:45Z yuri $
+# $FreeBSD: head/audio/eteroj-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	eteroj
 DISTVERSION=	0.4.0
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libsratom-0.so:audio/sratom \
 		libsord-0.so:devel/sord \
 		libuv.so:devel/libuv
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenMusicKontrollers
 GH_PROJECT=	eteroj.lv2

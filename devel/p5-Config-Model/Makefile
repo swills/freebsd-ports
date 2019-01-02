@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-Config-Model/Makefile 487108 2018-12-09 23:55:49Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-Model/Makefile 488253 2018-12-24 03:03:14Z wen $
 
 PORTNAME=	Config-Model
-PORTVERSION=	2.130
+PORTVERSION=	2.132
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

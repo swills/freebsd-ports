@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kbackup/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/kbackup/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	kbackup
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Backup program with an easy to use user interface
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n iconthemes itemviews jobwidgets kio \
 		notifications service solid widgetsaddons xmlgui

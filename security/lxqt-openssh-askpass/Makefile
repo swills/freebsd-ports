@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/security/lxqt-openssh-askpass/Makefile 478475 2018-08-30 17:44:06Z jsm $
+# $FreeBSD: head/security/lxqt-openssh-askpass/Makefile 488454 2018-12-26 21:27:04Z linimon $
 
 PORTNAME=	lxqt-openssh-askpass
 PORTVERSION=	0.13.0
@@ -11,7 +11,8 @@ COMMENT=	LXQt GUI dialog for OpenSSH authentication
 
 LICENSE=	LGPL21+
 
-USES=	cmake:outsource gettext-runtime kde:5 lxqt pkgconfig tar:xz qt:5
+USES=	cmake compiler:c++11-lang gettext-runtime kde:5 lxqt \
+	pkgconfig qt:5 tar:xz
 USE_QT=	buildtools_build qmake_build core dbus gui linguisttools \
 	svg widgets x11extras xml
 USE_KDE=	windowsystem

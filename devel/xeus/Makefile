@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/xeus/Makefile 488150 2018-12-22 23:24:50Z yuri $
+# $FreeBSD: head/devel/xeus/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xeus
 DISTVERSION=	0.18.1
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libcryptopp.so:security/cryptopp \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libzmq.so:net/libzmq4
 
-USES=		cmake:outsource compiler:c++14-lang localbase:ldflags pkgconfig
+USES=		cmake compiler:c++14-lang localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	QuantStack
 USE_LDCONFIG=	yes

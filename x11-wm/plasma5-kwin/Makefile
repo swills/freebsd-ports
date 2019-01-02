@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-wm/plasma5-kwin/Makefile 487789 2018-12-19 09:09:11Z zeising $
+# $FreeBSD: head/x11-wm/plasma5-kwin/Makefile 488757 2018-12-31 06:38:42Z tcberner $
 
 PORTNAME=	kwin
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	3
 CATEGORIES=	x11-wm kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -28,7 +27,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto \
 		Xwayland:x11-servers/xwayland
 RUN_DEPENDS=	Xwayland:x11-servers/xwayland
 
-USES=		cmake:outsource compiler:c++11-lib cpe gettext \
+USES=		cmake compiler:c++11-lib cpe gettext \
 		kde:5 pkgconfig qt:5 tar:xz
 USE_GL=		egl
 USE_KDE=	activities activities attica auth breeze codecs \

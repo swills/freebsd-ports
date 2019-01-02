@@ -1,4 +1,4 @@
-# $FreeBSD: head/russian/Makefile 478775 2018-09-02 10:09:54Z rene $
+# $FreeBSD: head/russian/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Russian support
@@ -14,7 +14,6 @@
     SUBDIR += hunspell
     SUBDIR += hyphen
     SUBDIR += ircd-hybrid
-    SUBDIR += kde4-l10n
     SUBDIR += koi2koi
     SUBDIR += koi8r-ps
     SUBDIR += libreoffice

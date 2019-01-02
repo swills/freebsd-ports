@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/vmpk/Makefile 486639 2018-12-04 23:59:47Z yuri $
+# $FreeBSD: head/audio/vmpk/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vmpk
 DISTVERSION=	0.7.1
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libdrumstick-rt.so:audio/drumstick
 
-USES=		cmake:outsource pkgconfig qt:5 tar:bz2
+USES=		compiler:c++11-lang cmake pkgconfig qt:5 tar:bz2
 USE_QT=		core gui network svg widgets x11extras \
 		buildtools_build linguisttools_build qmake_build
 USE_XORG=	xcb

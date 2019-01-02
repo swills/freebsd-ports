@@ -1,9 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Calendar-Julian/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-DateTime-Calendar-Julian/Makefile 488260 2018-12-24 07:51:55Z wen $
 
 PORTNAME=	DateTime-Calendar-Julian
-PORTVERSION=	0.04
-PORTREVISION=	1
+PORTVERSION=	0.100
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

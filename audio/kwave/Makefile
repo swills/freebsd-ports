@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kwave/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/audio/kwave/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	kwave
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libsamplerate.so:audio/libsamplerate \
 		libvorbisenc.so:audio/libvorbis
 
-USES=		cmake:outsource desktop-file-utils gettext kde:5 \
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext kde:5 \
 		localbase:ldflags pkgconfig qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm i18n iconthemes itemviews \

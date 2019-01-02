@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 486677 2018-12-05 15:46:02Z rene $
+# $FreeBSD: head/converters/Makefile 488895 2019-01-01 14:17:46Z rene $
 #
 
     COMMENT = Character code converters
@@ -137,12 +137,8 @@
     SUBDIR += p5-bsdconv
     SUBDIR += p5-plutil
     SUBDIR += pear-Services_JSON
-    SUBDIR += pecl-fribidi
     SUBDIR += pecl-igbinary
     SUBDIR += php-bsdconv
-    SUBDIR += php56-iconv
-    SUBDIR += php56-mbstring
-    SUBDIR += php56-recode
     SUBDIR += php71-iconv
     SUBDIR += php71-mbstring
     SUBDIR += php71-recode

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/liblxqt-l10n/Makefile 474277 2018-07-09 18:03:14Z jsm $
+# $FreeBSD: head/devel/liblxqt-l10n/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	liblxqt
 PORTVERSION=	0.13.0
@@ -13,7 +13,7 @@ COMMENT=	Translations of liblxqt
 
 LICENSE=	LGPL21+
 
-USES=		cmake:outsource lxqt pkgconfig qt:5 tar:xz
+USES=		cmake lxqt pkgconfig qt:5 tar:xz
 USE_QT=		buildtools_build qmake_build linguisttools
 USE_LXQT=	buildtools
 

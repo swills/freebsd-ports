@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kgpg/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/kgpg/Makefile 488361 2018-12-26 08:39:24Z tcberner $
 
 PORTNAME=	kgpg
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,8 @@ COMMENT=	Encryption tool for KDE
 
 RUN_DEPENDS=	gpg2:security/gnupg
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 \
+		tar:xz
 USE_KDE=	akonadi akonadicontacts archive auth bookmarks codecs \
 		completion config configwidgets contacts coreaddons crash \
 		dbusaddons doctools ecm i18n iconthemes itemmodels itemviews \

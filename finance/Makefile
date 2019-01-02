@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 483365 2018-10-29 03:58:14Z yuri $
+# $FreeBSD: head/finance/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -40,7 +40,6 @@
     SUBDIR += homebank
     SUBDIR += jgnash
     SUBDIR += kmymoney
-    SUBDIR += kmymoney-kde4
     SUBDIR += ktoblzcheck
     SUBDIR += ledger
     SUBDIR += ledgersmb
@@ -95,7 +94,6 @@
     SUBDIR += p5-Math-Financial
     SUBDIR += p5-PayflowPro
     SUBDIR += pear_Payment_DTA
-    SUBDIR += php-tclink
     SUBDIR += prestashop
     SUBDIR += py-bitcoin
     SUBDIR += py-python-obelisk

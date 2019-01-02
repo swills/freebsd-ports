@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/konqueror/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/x11-fm/konqueror/Makefile 488361 2018-12-26 08:39:24Z tcberner $
 
 PORTNAME=	konqueror
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,8 @@ COMMENT=	KDE system log application
 
 LIB_DEPENDS=	libtidy.so:www/tidy-lib
 
-USES=		cmake:outsource desktop-file-utils gettext kde:5 pkgconfig qt:5 tar:xz
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext \
+		kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	activities  archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons guiaddons i18n iconthemes \
 		itemviews jobwidgets js kcmutils kdelibs4support \

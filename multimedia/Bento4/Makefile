@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Bento4/Makefile 483593 2018-10-31 15:27:48Z mmokhi $
+# $FreeBSD: head/multimedia/Bento4/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	Bento4
 PORTVERSION=	1.5.1
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 BROKEN_aarch64=		fails to compile: Ap4AesBlockCipher.cpp:93:4: AP4_PLATFORM_BYTE_ORDER is not set
 
-USES=		cmake:outsource,noninja
+USES=		cmake:noninja
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	axiomatic-systems

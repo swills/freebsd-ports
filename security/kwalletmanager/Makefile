@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kwalletmanager/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/security/kwalletmanager/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kwalletmanager
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	security kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Password manager for KDE
 
-USES=		cmake:outsource compiler:c++11-lang desktop-file-utils gettext \
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext \
 		kde:5 qt:5 tar:xz
 USE_KDE=	archive auth codecs config configwidgets coreaddons crash \
 		dbusaddons doctools ecm emoticons i18n iconthemes init \

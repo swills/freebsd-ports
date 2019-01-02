@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-contact-list/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/net-im/ktp-contact-list/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ktp-contact-list
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
 		libtelepathy-logger-qt.so:net-im/telepathy-logger-qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 
-USES=		compiler:c++11-lang cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		compiler:c++11-lang cmake gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		dbusaddons ecm i18n iconthemes jobwidgets kcmutils kio \
 		notifications notifyconfig people service wallet widgetsaddons \

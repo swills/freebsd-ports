@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/frei0r/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/graphics/frei0r/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	frei0r
 PORTVERSION=	1.6.1
@@ -15,7 +15,7 @@ COMMENT?=	Minimalistic plugin API for video effects
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-USES=	cmake:outsource pkgconfig
+USES=	cmake pkgconfig
 
 .if defined(BUILDING_FREI0R_OPENCV) && defined(BUILDING_FREI0R_GAVL)
 IGNORE=		cannot build OpenCV and gavl plugins simultaneously

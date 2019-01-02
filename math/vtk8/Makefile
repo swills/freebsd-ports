@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/vtk8/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/vtk8/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vtk
 DISTVERSION=	8.1.2
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff \
 
 CONFLICTS=	vtk5 vtk6
 
-USES=		alias cmake:outsource compiler:c++11-lang gl jpeg localbase
+USES=		alias cmake compiler:c++11-lang gl jpeg localbase
 USE_LDCONFIG=	${PREFIX}/lib/vtk-${VTK_SHORT_VER}
 USE_XORG=	ice x11 xt xext sm
 

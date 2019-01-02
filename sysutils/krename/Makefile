@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/krename/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/krename/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	krename
 PORTVERSION=	5.0.0
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libtag.so:audio/taglib \
 		libpodofo.so:graphics/podofo \
 		libfreetype.so:print/freetype2
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash i18n iconthemes itemviews jobwidgets \
 		js kio service solid widgetsaddons xmlgui

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/davix/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/davix/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	davix
 DISTVERSION=	0.7.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
 
-USES=		cmake:outsource compiler:c++11-lang gnome localbase:ldflags python:build shebangfix ssl
+USES=		cmake compiler:c++11-lang gnome localbase:ldflags python:build shebangfix ssl
 SHEBANG_GLOB=	*.py
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	visualboyadvance-m
 PORTVERSION=	2.0.0b2
@@ -41,7 +41,7 @@ DOS2UNIX_REGEX=	.*\.(c|cpp|h|ypp)
 USE_XORG=	x11 xext
 USE_GL=		gl glu
 USE_SDL=	sdl
-USES=		cmake dos2unix pkgconfig
+USES=		cmake:insource dos2unix pkgconfig
 INSTALLS_ICONS=	yes
 CMAKE_ARGS=	-DVERSION:STRING="${PORTVERSION}" \
 		-DSYSCONFDIR:STRING="${PREFIX}/etc"  \

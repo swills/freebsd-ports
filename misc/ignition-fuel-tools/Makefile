@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/ignition-fuel-tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/misc/ignition-fuel-tools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ignition-fuel-tools
 DISTVERSION=	1.2.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libyaml.so:textproc/libyaml \
 		libzip.so:archivers/libzip
 
-USES=		cmake:outsource compiler:c++17-lang pkgconfig
+USES=		cmake compiler:c++17-lang pkgconfig
 USE_LDCONFIG=	yes
 
 CMAKE_OFF=	BUILD_TESTING

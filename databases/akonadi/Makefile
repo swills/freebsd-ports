@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/akonadi/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/databases/akonadi/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	akonadi
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	xsltproc:textproc/libxslt
 
 CONFLICTS=	akonadi-[0-9]* akonadi-kf5-git-[0-9]*
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 \
+USES=		cmake compiler:c++11-lib gettext kde:5 \
 		qt:5 shared-mime-info tar:xz
 USE_GNOME=	libxml2
 USE_KDE=	auth codecs completion config configwidgets coreaddons crash \

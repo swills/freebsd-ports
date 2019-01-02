@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/baloo-widgets/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/sysutils/baloo-widgets/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	baloo-widgets
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	BalooWidgets library
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	baloo completion config coreaddons ecm emoticons filemetadata \
 		i18n init itemmodels jobwidgets kdelibs4support kio service \
 		widgetsaddons

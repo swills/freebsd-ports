@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/devel/catch/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/catch/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	catch
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ COMMENT=	Header-only test framework for C++
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		compiler:c++14-lang cmake:outsource pathfix
+USES=		compiler:c++14-lang cmake pathfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	catchorg
 GH_PROJECT=	Catch2

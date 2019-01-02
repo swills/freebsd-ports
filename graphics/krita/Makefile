@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/krita/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/graphics/krita/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	krita
 DISTVERSION=	4.1.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}
@@ -31,7 +31,7 @@ LIB_DEPENDS=	libImath.so:graphics/ilmbase \
 		libxcb.so:x11/libxcb \
 		libxcb-util.so:x11/xcb-util
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
+USES=		cmake compiler:c++11-lib desktop-file-utils \
 		eigen:3 gettext jpeg kde:5 pkgconfig python:3.4+ qt:5 \
 		shared-mime-info
 USE_KDE=	archive completion config coreaddons crash guiaddons i18n \

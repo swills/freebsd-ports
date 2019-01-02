@@ -1,5 +1,5 @@
 # Created by: Alberto Villa <avilla@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-qt/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/net-im/telepathy-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	telepathy-qt
 PORTVERSION=	0.9.7
@@ -22,7 +22,7 @@ FLAVOR?=	${FLAVORS:[1]}
 qt4_PKGNAMESUFFIX=	4
 qt5_PKGNAMESUFFIX=	5
 
-USES=		cmake:outsource gettext gnome localbase:ldflags pathfix pkgconfig python:2.7,build
+USES=		cmake gettext gnome localbase:ldflags pathfix pkgconfig python:2.7,build
 USE_GNOME=	glib20 libxslt:build
 USE_GSTREAMER=	yes
 USE_LDCONFIG=	yes

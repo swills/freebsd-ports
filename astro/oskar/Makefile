@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/oskar/Makefile 476964 2018-08-12 05:47:55Z yuri $
+# $FreeBSD: head/astro/oskar/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	OSKAR
 DISTVERSION=	2.7.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcfitsio.so:astro/cfitsio
 
-USES=		cmake:outsource localbase:ldflags python qt:5 shebangfix
+USES=		cmake localbase:ldflags python qt:5 shebangfix
 SHEBANG_FILES=	apps/oskar_convert_cst_to_scalar.py
 USE_GITHUB=	yes
 GH_ACCOUNT=	OxfordSKA

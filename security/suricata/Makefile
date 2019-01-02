@@ -1,8 +1,8 @@
 # Created by: Patrick Tracanelli <eksffa@freebsdbrasil.com.br>
-# $FreeBSD: head/security/suricata/Makefile 487848 2018-12-20 06:37:02Z joneum $
+# $FreeBSD: head/security/suricata/Makefile 488865 2019-01-01 11:17:53Z joneum $
 
 PORTNAME=	suricata
-DISTVERSION=	4.1.1
+DISTVERSION=	4.1.2
 CATEGORIES=	security
 MASTER_SITES=	https://www.openinfosecfoundation.org/download/
 

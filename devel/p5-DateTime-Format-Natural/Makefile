@@ -1,8 +1,8 @@
 # Created by: Timur I. Bakeyev <bat@cpan.org>
-# $FreeBSD: head/devel/p5-DateTime-Format-Natural/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-DateTime-Format-Natural/Makefile 488822 2018-12-31 19:11:57Z bofh $
 
 PORTNAME=	DateTime-Format-Natural
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -25,6 +25,7 @@ TEST_DEPENDS=	p5-Test-MockTime>=0:devel/p5-Test-MockTime
 
 USES=		perl5
 USE_PERL5=	modbuild
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

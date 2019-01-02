@@ -1,5 +1,5 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/security/broccoli/Makefile 456782 2017-12-20 11:09:19Z bapt $
+# $FreeBSD: head/security/broccoli/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	broccoli
 PORTVERSION=	1.97
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 
 EXTRACT_AFTER_ARGS=	${DISTNAME}/aux/broccoli
 
-USES=		cmake:outsource ssl bison
+USES=		cmake ssl bison
 USE_LDCONFIG=	yes
 CMAKE_SOURCE_PATH=	${WRKSRC}/aux/broccoli
 BINARY_ALIAS=	swig=swig3.0

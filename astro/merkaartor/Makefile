@@ -1,5 +1,5 @@
 # Created by: Slaven Rezic <slaven@rezic.de>
-# $FreeBSD: head/astro/merkaartor/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/astro/merkaartor/Makefile 488425 2018-12-26 20:06:14Z linimon $
 
 PORTNAME=	merkaartor
 PORTVERSION=	0.18.2
@@ -16,9 +16,9 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libproj.so:graphics/proj \
 		libquazip5.so:archivers/quazip@qt5
 
+USES=		compiler:c++11-lang pkgconfig qmake qt:5 sqlite:3
 USE_GITHUB=	yes
 GH_ACCOUNT=	openstreetmap
-USES=		pkgconfig qt:5 sqlite:3 qmake
 USE_LDCONFIG=	yes
 
 QMAKE_ARGS=	SYSTEM_QUAZIP=1

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/archivers/p5-IO-Compress-Lzma/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/archivers/p5-IO-Compress-Lzma/Makefile 488969 2019-01-01 20:33:33Z sunpoet $
 
 PORTNAME=	IO-Compress-Lzma
-PORTVERSION=	2.081
+PORTVERSION=	2.083
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,8 +20,9 @@ TEST_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
 		p5-Test-Pod>=1:devel/p5-Test-Pod \
 		p7zip>=0:archivers/p7zip
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

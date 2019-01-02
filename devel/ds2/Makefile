@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ds2/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/devel/ds2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ds2
 PORTVERSION=	20151028
@@ -17,7 +17,7 @@ GH_TAGNAME=	52c45f3
 ONLY_FOR_ARCHS=		amd64
 ONLY_FOR_ARCHS_REASON=	the ptrace code only has an amd64 backend
 
-USES=		cmake compiler
+USES=		cmake:insource compiler
 
 PLIST_FILES=	bin/ds2
 

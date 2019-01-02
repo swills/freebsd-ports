@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/digikam/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/digikam/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	digikam
 DISTVERSION=	5.9.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DIST_SUBDIR=	KDE/digikam/${PORTVERSION}
@@ -30,7 +30,7 @@ LIB_DEPENDS=	libKF5KGeoMap.so:astro/libkgeomap \
 		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
-USES=		cmake:outsource compiler:c++11-lib eigen:3 jpeg kde:5 pkgconfig \
+USES=		cmake compiler:c++11-lib eigen:3 jpeg kde:5 pkgconfig \
 		qt:5 shebangfix tar:xz
 USE_GNOME=	glib20 libxml2 libxslt
 USE_KDE=	archive auth bookmarks calendarcore codecs completion config \

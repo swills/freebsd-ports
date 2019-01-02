@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/audio/gnome-music/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/audio/gnome-music/Makefile 488391 2018-12-26 14:21:04Z amdmi3 $
 
 PORTNAME=	gnome-music
 PORTVERSION=	3.28.2.1
@@ -10,7 +10,7 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GNOME music playing application
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	itstool:textproc/itstool \

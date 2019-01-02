@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/nxengine/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/nxengine/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	nxengine
 PORTVERSION=	2.6.3
@@ -25,7 +25,7 @@ LICENSE_DISTFILES_FREEWARE=	${DISTFILES:[2]:S/:data//}
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 
 USE_SDL=	mixer2 sdl2
 SUB_FILES=	${PORTNAME}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kde-thumbnailer-fb2/Makefile 483137 2018-10-27 14:09:10Z makc $
+# $FreeBSD: head/misc/kde-thumbnailer-fb2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kde-thumbnailer-fb2
 PORTVERSION=	0.3.1
@@ -11,7 +11,7 @@ COMMENT=	KDE thumbnail generator for fb2 files
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource kde:5 qt:5
+USES=		cmake kde:5 qt:5
 USE_KDE=	archive ecm_build kio
 USE_QT=		buildtools_build qmake_build gui
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/multimedia/gstreamer1-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gstreamer1
 PORTVERSION=	1.2.0
@@ -19,7 +19,7 @@ FLAVOR?=	${FLAVORS:[1]}
 
 CONFLICTS_INSTALL=	gstreamer${PKGNAMESUFFIX}-*
 
-USES=		bison cmake:outsource gl gnome pathfix pkgconfig tar:xz
+USES=		bison cmake gl gnome pathfix pkgconfig tar:xz
 USE_GSTREAMER1=	yes
 
 USE_GL=		gl

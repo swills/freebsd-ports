@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/libkdepim/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/libkdepim/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libkdepim
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		cmake:outsource gettext compiler:c++11-lib kde:5 qt:5 tar:xz
+USES=		cmake gettext compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons ecm \
 		i18n iconthemes itemmodels itemviews jobwidgets kcmutils \
 		kio service wallet widgetsaddons

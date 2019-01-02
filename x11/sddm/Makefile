@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/sddm/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11/sddm/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	sddm
 PORTVERSION=	0.17.0
@@ -20,7 +20,7 @@ LICENSE_FILE_CC-BY-3.0=	${WRKSRC}/LICENSE.CC-BY-3.0
 
 RUN_DEPENDS=	dbus-run-session:devel/dbus
 
-USES=		cmake:outsource compiler:c++11-lang kde:5 qt:5
+USES=		cmake compiler:c++11-lang kde:5 qt:5
 USE_GITHUB=	yes
 USE_KDE=	ecm
 USE_QT=		core declarative dbus gui network \

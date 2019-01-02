@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdesvn/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/devel/kdesvn/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	kdesvn
 DISTVERSION=	2.0.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libapr-1.so:devel/apr1 \
 CONFLICTS_INSTALL=	kdesvn-kde4 \
 			qsvn-[0-9]*
 
-USES=		bdb cmake:outsource kde:5 qt:5 tar:xz
+USES=		bdb cmake compiler:c++11-lang kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons dbusaddons ecm i18n iconthemes itemviews jobwidgets \
 		kio notifications parts service sonnet texteditor textwidgets \

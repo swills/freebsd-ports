@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/games/doomsday/Makefile 487470 2018-12-14 21:15:16Z danilo $
+# $FreeBSD: head/games/doomsday/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	doomsday
 PORTVERSION=	2.1.0
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfluidsynth.so:audio/fluidsynth
 RUN_DEPENDS=	timidity:audio/timidity
 
-USES=		cmake:outsource compiler:c++11-lib gl localbase:ldflags ninja openal pkgconfig python:2.7,build qt:5
+USES=		cmake compiler:c++11-lib gl localbase:ldflags ninja openal pkgconfig python:2.7,build qt:5
 
 USE_GL=		gl glu
 USE_LDCONFIG=	yes

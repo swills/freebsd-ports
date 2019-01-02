@@ -1,5 +1,5 @@
 # Created by: Yashin Dmitry <yashin.dm@gmail.com>
-# $FreeBSD: head/net-p2p/uhub/Makefile 461870 2018-02-15 09:02:57Z amdmi3 $
+# $FreeBSD: head/net-p2p/uhub/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	uhub
 PORTVERSION=	0.5.0
@@ -17,7 +17,7 @@ BROKEN_aarch64=	fails to compile: CPUINFO not defined
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		cmake perl5 sqlite
+USES=		cmake:insource perl5 sqlite
 USE_RC_SUBR=	uhub
 USE_PERL5=	build
 

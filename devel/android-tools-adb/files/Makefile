@@ -1,10 +1,11 @@
-# $FreeBSD: head/devel/android-tools-adb/files/Makefile 477244 2018-08-15 17:32:28Z jbeich $
+# $FreeBSD: head/devel/android-tools-adb/files/Makefile 488821 2018-12-31 19:02:47Z jbeich $
 
 PROG_CXX=adb
-NO_MAN=
+NOMAN= # DragonFly, NetBSD, OpenBSD
+NO_MAN= # FreeBSD
 BINDIR?=/usr/bin
 FILESDIR?=${DOCDIR}/${PROG}
-VERSION?= 0.0.0-0
+VERSION?=	28.0.0-0 ${VEREXT}
 
 FILES= *.[Tt][Xx][Tt]
 

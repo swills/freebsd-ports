@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/movit/Makefile 487835 2018-12-20 04:53:24Z linimon $
+# $FreeBSD: head/graphics/movit/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	movit
 PORTVERSION=	1.6.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://${PORTNAME}.sesse.net/
 

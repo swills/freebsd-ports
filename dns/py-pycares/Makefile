@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/dns/py-pycares/Makefile 416959 2016-06-16 11:54:23Z demon $
+# $FreeBSD: head/dns/py-pycares/Makefile 488609 2018-12-28 15:54:43Z 0mp $
 
 PORTNAME=	pycares
-PORTVERSION=	2.1.0
+PORTVERSION=	2.3.0
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,11 +11,18 @@ MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Python interface to c-ares
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent
 
 PYDISTUTILS_BUILD_TARGET=	build_ext
 PYDISTUTILS_BUILDARGS=		--inplace --force
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/${PORTNAME}/_core.so
+
+do-test:
+	cd ${WRKSRC} && ${SETENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR} ${PYTHON_CMD} tests/tests.py
 
 .include <bsd.port.mk>

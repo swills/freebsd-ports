@@ -1,5 +1,5 @@
 # Created by: Samy Al Bahra <samy@kerneled.org>
-# $FreeBSD: head/arabic/libitl/Makefile 455868 2017-12-09 17:35:51Z cpm $
+# $FreeBSD: head/arabic/libitl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libitl
 PORTVERSION=	0.8.0
@@ -12,7 +12,7 @@ COMMENT=	API abstraction to common Islamic calculations
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake pkgconfig
+USES=		cmake:insource pkgconfig
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

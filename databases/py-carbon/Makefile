@@ -1,8 +1,8 @@
 # Created by: Evan Sarmiento <bsdports@wayfair.com>
-# $FreeBSD: head/databases/py-carbon/Makefile 480339 2018-09-22 01:50:56Z swills $
+# $FreeBSD: head/databases/py-carbon/Makefile 488550 2018-12-27 16:58:08Z swills $
 
 PORTNAME=	carbon
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.5
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

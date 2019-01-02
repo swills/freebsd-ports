@@ -1,10 +1,10 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/multimedia/libvpx/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/libvpx/Makefile 489061 2019-01-02 08:10:07Z jbeich $
 
 PORTNAME=	libvpx
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.7.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -24,7 +24,6 @@ HAS_CONFIGURE=	yes
 USE_PERL5=	build
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	build/make/ads2gas.pl
-CONFIGURE_ENV=	ASFLAGS="${ASFLAGS}"
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--disable-install-docs \
 		--disable-install-srcs \
@@ -32,8 +31,6 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--enable-vp8 \
 		--enable-vp9
 MAKE_ARGS+=	verbose=yes
-ASFLAGS+=	${ASFLAGS_${MACHINE}}
-ASFLAGS_arm=	-meabi=5
 ALL_TARGET=	# empty
 
 OPTIONS_DEFINE=	DEBUG MULTIRES POSTPROC RTCPU SHARED SIZE_LIMIT TEST THREADS

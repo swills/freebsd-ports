@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/qmmp/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/multimedia/qmmp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qmmp
 PORTVERSION=	0.11.0
@@ -19,7 +19,7 @@ EXPIRATION_DATE=	2019-03-15
 CONFLICTS=	${PORTNAME}-qt5-1.*
 PORTSCOUT=	limit:^0.*
 
-USES=		cmake:outsource localbase pathfix pkgconfig qt:4 tar:bzip2
+USES=		cmake localbase pathfix pkgconfig qt:4 tar:bzip2
 USE_QT=		corelib gui network xml \
 		linguisttools_build moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes

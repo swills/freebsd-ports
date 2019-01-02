@@ -27,7 +27,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: head/Mk/bsd.gcc.mk 476413 2018-08-05 13:30:30Z gerald $
+# $FreeBSD: head/Mk/bsd.gcc.mk 488673 2018-12-29 15:38:30Z andreast $
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
 
@@ -150,9 +150,16 @@ CC:=			gcc${V}
 CXX:=			g++${V}
 CPP:=			cpp${V}
 _GCC_RUNTIME:=		${LOCALBASE}/lib/gcc${V}
+.   if ${PORTNAME} == gcc
+# We don't want the rpath stuff while building GCC itself
+# so we do not set the FLAGS as done in the else part.
+# When building a GCC, we want the target libraries to be used and not the
+# host GCC libraries.
+.   else
 CFLAGS+=		-Wl,-rpath=${_GCC_RUNTIME}
 CXXFLAGS+=		-Wl,-rpath=${_GCC_RUNTIME}
 LDFLAGS+=		-Wl,-rpath=${_GCC_RUNTIME} -L${_GCC_RUNTIME}
+.   endif
 .  else # Use GCC in base.
 CC:=			gcc
 CXX:=			g++

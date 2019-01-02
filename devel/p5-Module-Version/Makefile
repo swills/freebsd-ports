@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/devel/p5-Module-Version/Makefile 478377 2018-08-29 19:08:43Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Version/Makefile 488977 2019-01-01 20:34:17Z sunpoet $
 
 PORTNAME=	Module-Version
-PORTVERSION=	0.13
+PORTVERSION=	0.200
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,13 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_PERL5=	configure
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-local-lib>=0:${PORTSDIR}/devel/p5-local-lib
+TEST_DEPENDS=	p5-Test-Output>=0:${PORTSDIR}/devel/p5-Test-Output
+
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/mdb/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/devel/mdb/Makefile 488620 2018-12-28 19:23:54Z jhb $
 
 PORTNAME=	mdb
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	jhb@FreeBSD.org
@@ -25,6 +26,8 @@ MAKE_ARGS+=	FREEBSD_SRC_DIR=${SRC_BASE}
 WRKSRC_SUBDIR=	freebsd/cddl/usr.bin/mdb
 CFLAGS+=	-DMDB_PREFIX=\\\"${PREFIX}\\\" -g
 
+.include <bsd.port.pre.mk>
+
 .if !exists(${SRC_BASE}/cddl/compat) || !exists(${SRC_BASE}/sys/cddl/compat)
 IGNORE=		requires full source tree with CDDL sources
 .endif
@@ -32,4 +35,4 @@ IGNORE=		requires full source tree with CDDL sources
 pre-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/lib/mdb/kvm/${MACHINE_ARCH}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

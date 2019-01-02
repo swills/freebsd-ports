@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/molsketch/Makefile 482879 2018-10-24 05:36:11Z yuri $
+# $FreeBSD: head/science/molsketch/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	molsketch
 DISTVERSION=	0.5.2
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libopenbabel.so:science/openbabel
 
-USES=		cmake:outsource desktop-file-utils localbase:ldflags pkgconfig qt:5 shared-mime-info
+USES=		cmake desktop-file-utils localbase:ldflags pkgconfig qt:5 shared-mime-info
 USE_QT=		core gui network printsupport svg widgets buildtools_build qmake_build
 USE_LDCONFIG=	${PREFIX}/lib/molsketch
 

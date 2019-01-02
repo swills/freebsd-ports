@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/net/ceph/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
@@ -45,7 +45,7 @@ RUN_DEPENDS=	\
 CONFLICTS_INSTALL=	ceph-devel
 PORTSCOUT=	limit:^v12\.
 
-USES=		cmake:outsource,noninja fuse gettext-runtime gmake \
+USES=		cmake:noninja fuse gettext-runtime gmake \
 		pkgconfig python:2.7 shebangfix ssl
 USE_PYTHON=	cython
 USE_OPENLDAP=	yes

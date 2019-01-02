@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-flask-admin/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-admin/Makefile 488477 2018-12-26 22:36:51Z robak $
 
 PORTNAME=	Flask-Admin
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

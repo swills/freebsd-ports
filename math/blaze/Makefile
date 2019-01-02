@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/blaze/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/blaze/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	blaze
 DISTVERSION=	3.4
@@ -19,7 +19,7 @@ RUN_DEPENDS=	boost-libs>0:devel/boost-libs \
 		openblas>0:math/openblas \
 		openmp>0:devel/openmp
 
-USES=		cmake:outsource compiler:c++14-lang fortran localbase:ldflags
+USES=		cmake compiler:c++14-lang fortran localbase:ldflags
 NO_ARCH=	yes
 
 BB_ACCOUNT=	${PORTNAME}-lib

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/mppp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/mppp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mppp
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/gmp.h:math/gmp \
 RUN_DEPENDS=	${LOCALBASE}/include/gmp.h:math/gmp \
 		${LOCALBASE}/include/mpfr.h:math/mpfr
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	bluescarni
 NO_BUILD=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/qmmp-plugin-pack/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/multimedia/qmmp-plugin-pack/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qmmp-plugin-pack
 PORTVERSION=	0.11.0
@@ -22,7 +22,7 @@ BUILD_DEPENDS=	qmmp>=0.11.0:multimedia/qmmp
 CONFLICTS=	${PORTNAME}-qt5-1.*
 PORTSCOUT=	limit:^0.*
 
-USES=		cmake:outsource localbase pkgconfig qt:4 tar:bzip2
+USES=		cmake localbase pkgconfig qt:4 tar:bzip2
 USE_QT=		corelib gui linguisttools_build moc_build qmake_build rcc_build
 USE_LDCONFIG=	yes
 

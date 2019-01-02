@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	pcl
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	1.9.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics math
 PKGNAMESUFFIX=	-pointclouds
 
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libpcap.so:net/libpcap \
 		libtiff.so:graphics/tiff
 
-USES=		cmake:outsource eigen:3 jpeg python
+USES=		cmake eigen:3 jpeg python
 USE_GITHUB=	yes
 GH_ACCOUNT=	PointCloudLibrary
 USE_XORG=	x11 xext xt ice sm

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kf5-baloo/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/sysutils/kf5-baloo/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	baloo
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KF5 Framework for searching and managing user metadata
 LIB_DEPENDS=	liblmdb.so:databases/lmdb \
 		libinotify.so:devel/libinotify
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pathfix qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 pathfix qt:5 tar:xz
 USE_KDE=	auth completion config coreaddons crash dbusaddons \
 		filemetadata i18n idletime jobwidgets kio service \
 		solid widgetsaddons

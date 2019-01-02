@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openshadinglanguage/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/openshadinglanguage/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openshadinglanguage
 PORTVERSION=	1.10.2
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libpugixml.so:textproc/pugixml
 RUN_DEPENDS=	llvm-config60:devel/llvm60
 
-USES=		bison cmake:outsource compiler:c++11-lang ncurses python:build
+USES=		bison cmake compiler:c++11-lang ncurses python:build
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

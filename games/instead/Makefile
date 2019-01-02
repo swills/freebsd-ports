@@ -1,5 +1,5 @@
 # Created by: neuroworker@gmail.com
-# $FreeBSD: head/games/instead/Makefile 479033 2018-09-05 18:13:14Z amdmi3 $
+# $FreeBSD: head/games/instead/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	instead
 PORTVERSION=	3.2.2
@@ -13,7 +13,7 @@ COMMENT=	Simple Text Adventure, The Interpreter
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource iconv lua:51 pkgconfig
+USES=		cmake iconv lua:51 pkgconfig
 CMAKE_ARGS=	-DMANDIR=man
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

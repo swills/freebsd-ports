@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/zfp/Makefile 487779 2018-12-19 00:15:45Z yuri $
+# $FreeBSD: head/devel/zfp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	zfp
 DISTVERSION=	0.5.4
@@ -11,7 +11,7 @@ COMMENT=	High throughput library for compressed floating-point arrays
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 LDFLAGS+=	-lm

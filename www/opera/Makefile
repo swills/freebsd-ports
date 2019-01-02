@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/opera/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/www/opera/Makefile 488767 2018-12-31 12:20:01Z rene $
 
 PORTNAME=	opera
 PORTVERSION=	${OPERA_VER}
@@ -36,7 +36,7 @@ REINPLACE_ARGS=	-i '' # no .bak files
 
 WEBPLUGIN_SUBDIR=	${LOCALBASE}/lib/browser_plugins/symlinks/opera
 
-OPTIONS_DEFINE=	CUPS VIDEO GTK2 KDE4
+OPTIONS_DEFINE=	CUPS VIDEO GTK2
 OPTIONS_DEFAULT=	CUPS VIDEO
 NO_OPTIONS_SORT=yes
 
@@ -47,8 +47,6 @@ CUPS_LIB_DEPENDS=	libcups.so:print/cups
 
 VIDEO_USE=	gstreamer=vorbis,ogg,theora,vp8,good
 GTK2_USE=	gnome=gtk20,libxml2
-KDE4_USES=	kde:4
-KDE4_USE=	KDE=kdelibs
 
 .include <bsd.port.options.mk>
 
@@ -65,11 +63,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 .if ${PORT_OPTIONS:MGTK2}
 INSTALLS_ICONS=	yes
-.endif
-
-.if ${PORT_OPTIONS:MKDE4}
-DEPRECATED=	KDE4 is end-of-life
-EXPIRATION_DATE=2018-12-31
 .endif
 
 OPERA_ARCH=	${ARCH:S,i386,intel,}

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/science/hdf5/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/hdf5/Makefile 488222 2018-12-23 16:54:24Z linimon $
 
 PORTNAME=	hdf5
 PORTVERSION=	1.10.2
@@ -30,7 +30,6 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 MAKE_JOBS_UNSAFE=	yes
 TEST_TARGET=	check
-USE_CSTD=	c11
 USE_LDCONFIG=	yes
 
 PORTEXAMPLES=	*

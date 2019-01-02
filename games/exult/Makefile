@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <tiamat@telegraph.spb.ru>
-# $FreeBSD: head/games/exult/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/exult/Makefile 488438 2018-12-26 20:51:56Z linimon $
 
 PORTNAME=	exult
 PORTVERSION=	1.5.0.20160514
@@ -22,13 +22,13 @@ LIB_DEPENDS=	libvorbis.so:audio/libvorbis \
 USE_GITHUB=	yes
 GH_TAGNAME=	b15afba
 
-USES=		autoreconf compiler:c++11-lib gmake libtool localbase pkgconfig
+USES=		autoreconf compiler:c++11-lib gmake gnome libtool localbase \
+		pkgconfig
+USE_CXXSTD=	c++98
 USE_XORG=	xext
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-alsa \
 		--with-icondir=${PREFIX}/share/pixmaps
-CFLAGS+=	-Wno-c++11-narrowing
-
 SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=		DOCS FLUIDSYNTH GIMP STUDIO THUMBNAILER

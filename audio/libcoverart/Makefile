@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libcoverart/Makefile 488051 2018-12-22 02:24:22Z linimon $
+# $FreeBSD: head/audio/libcoverart/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libcoverart
 PORTVERSION=	1.0.0
@@ -14,7 +14,7 @@ LICENSE=	LGPL20
 LIB_DEPENDS=	libjansson.so:devel/jansson \
 		libneon.so:www/neon
 
-USES=		compiler:c11 cmake pathfix
+USES=		compiler:c11 cmake:insource pathfix
 USE_CSTD=	c99
 USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes

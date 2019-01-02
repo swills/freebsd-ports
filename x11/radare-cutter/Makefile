@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/radare-cutter/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/x11/radare-cutter/Makefile 488549 2018-12-27 16:57:38Z swills $
 
 PORTNAME=	radare-cutter
-PORTVERSION=	1.7.2
+PORTVERSION=	1.7.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11
 
@@ -26,8 +26,8 @@ USE_GL=		gl
 WRKSRC_SUBDIR=	src
 
 PLIST_FILES=	bin/Cutter \
-		share/appdata/Cutter.appdata.xml \
-		share/applications/Cutter.desktop \
+		share/metainfo/org.radare.Cutter.appdata.xml \
+		share/applications/org.radare.Cutter.desktop \
 		share/pixmaps/cutter.svg
 
 post-patch:

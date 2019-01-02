@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/avogadro2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/avogadro2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	avogadro2
 DISTVERSION=	1.91.0
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	hdf5>0:science/hdf5
 LIB_DEPENDS=	libAvogadroCore.so:science/avogadrolibs \
 		libMoleQueueClient.so:misc/molequeue
 
-USES=		cmake:outsource compiler:c++11-lang desktop-file-utils gl libarchive qt:5
+USES=		cmake compiler:c++11-lang desktop-file-utils gl libarchive qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenChemistry
 GH_PROJECT=	avogadroapp

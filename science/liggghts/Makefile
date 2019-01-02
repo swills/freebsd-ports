@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/liggghts/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/liggghts/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	liggghts
 DISTVERSION=	3.8.0
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libtiff.so:graphics/tiff \
 		libvtkViewsCore-8.1.so:math/vtk8
 
-USES=		compiler:c++17-lang cmake:outsource fortran jpeg qt:5
+USES=		compiler:c++17-lang cmake fortran jpeg qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	CFDEMproject
 GH_PROJECT=	${PORTNAME:tu}-PUBLIC

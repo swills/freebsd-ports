@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg/Makefile 487466 2018-12-14 20:12:34Z yuri $
+# $FreeBSD: head/graphics/osg/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	osg
 PORTVERSION=	3.4.1
@@ -24,7 +24,7 @@ GH_PROJECT=	OpenSceneGraph
 
 CONFLICTS=	osg-devel
 
-USES=		alias cmake:outsource compiler:c++11-lang gl jpeg pkgconfig
+USES=		alias cmake compiler:c++11-lang gl jpeg pkgconfig
 USE_GL=		gl glu
 USE_XORG=	x11
 USE_LDCONFIG=	yes

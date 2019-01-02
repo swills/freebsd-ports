@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/vtkmpeg2encode/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/multimedia/vtkmpeg2encode/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vtkmpeg2encode
 PORTVERSION=	${VTK_VERSION}
@@ -16,7 +16,7 @@ LICENSE_NAME=	MPEG-2 license
 LICENSE_FILE=	${WRKSRC}/mpeg2enc.h
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-USES=		cmake
+USES=		cmake:insource
 USE_LDCONFIG=	yes
 CMAKE_ARGS?=	-DBUILD_SHARED_LIBS:BOOL=ON
 VTK_VERSION=	5.10.1

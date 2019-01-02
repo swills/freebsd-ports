@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/xtl-quant-stack/Makefile 488148 2018-12-22 23:22:01Z yuri $
+# $FreeBSD: head/devel/xtl-quant-stack/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xtl
 DISTVERSION=	0.5.2
@@ -16,7 +16,7 @@ RUN_DEPENDS=	nlohmann-json>0:devel/nlohmann-json
 TEST_DEPENDS=	nlohmann-json>0:devel/nlohmann-json \
 		googletest>0:devel/googletest
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	QuantStack
 

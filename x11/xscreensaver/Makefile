@@ -1,9 +1,8 @@
 # Created by: dom@myrddin.demon.co.uk
-# $FreeBSD: head/x11/xscreensaver/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11/xscreensaver/Makefile 489049 2019-01-01 20:52:03Z zeising $
 
 PORTNAME=	xscreensaver
-PORTVERSION=	5.40
-PORTREVISION=	1
+PORTVERSION=	5.42
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
@@ -20,7 +19,8 @@ LIB_DEPENDS=	libgle.so:graphics/gle \
 
 CONFLICTS=	xscreensaver-gnome-[0-9]* xscreensaver-gnome-hacks-[0-9]*
 
-USES=		autoreconf gettext gmake jpeg localbase:ldflags perl5 pkgconfig
+USES=		autoreconf gettext gl gmake gnome jpeg localbase:ldflags perl5 \
+		pkgconfig
 USE_GL=		gl glu
 USE_GNOME=	cairo gdkpixbuf2 gtk20 intltool libglade2 libxml2
 USE_PERL5=	run

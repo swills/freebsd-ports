@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/libdazzle/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/libdazzle/Makefile 488394 2018-12-26 14:54:38Z amdmi3 $
 
 PORTNAME=	libdazzle
 PORTVERSION=	3.28.5
@@ -8,7 +8,7 @@ MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	Staging and stabilizing for facy Glib and Gtk+ features
+COMMENT=	Companion library to GObject and Gtk+
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING

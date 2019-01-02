@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/graphics/apvlv/Makefile 484005 2018-11-04 12:26:10Z antoine $
+# $FreeBSD: head/graphics/apvlv/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	apvlv
 PORTVERSION=	0.1.4
@@ -18,7 +18,7 @@ BROKEN=		fails to build
 LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
 
 USE_GNOME=	gtk20
-USES=		cmake pkgconfig
+USES=		cmake:insource pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	naihe2010
 CMAKE_ARGS+=	-DSYSCONFDIR=${PREFIX}/etc \

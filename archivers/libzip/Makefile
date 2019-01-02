@@ -1,5 +1,5 @@
 # Created by: Alexander Zhuravlev <zaa@zaa.pp.ru>
-# $FreeBSD: head/archivers/libzip/Makefile 472400 2018-06-14 21:18:54Z rakuco $
+# $FreeBSD: head/archivers/libzip/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libzip
 PORTVERSION=	1.5.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CPE_VENDOR=	nih
 
-USES=		cmake:outsource cpe perl5 ssl tar:xz
+USES=		cmake cpe perl5 ssl tar:xz
 USE_LDCONFIG=	yes
 USE_PERL5=	test
 TEST_TARGET=	test

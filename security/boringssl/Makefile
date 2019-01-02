@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/boringssl/Makefile 483494 2018-10-30 15:45:32Z swills $
+# $FreeBSD: head/security/boringssl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	boringssl
 PORTVERSION=	0.0.0.0.2018.10.30.01
@@ -12,7 +12,7 @@ BUILD_DEPENDS=	go:lang/go
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
 GH_TAGNAME=	144d924
-USES=		cmake localbase perl5
+USES=		cmake:insource localbase perl5
 CMAKE_ARGS+=	-DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=1
 USE_LDCONFIG=	yes
 LDFLAGS+=	-Wl,-rpath,${PREFIX}/lib

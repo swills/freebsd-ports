@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/poxml/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/devel/poxml/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	poxml
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	devel kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Tools to translate Docbook XML using gettext
 
-USES=		cmake:outsource compiler:c++11-lang gettext-tools:build,run \
+USES=		cmake compiler:c++11-lang gettext-tools:build,run \
 		kde:5 qt:5 tar:xz
 USE_KDE=	doctools ecm
 USE_QT=		core xml \

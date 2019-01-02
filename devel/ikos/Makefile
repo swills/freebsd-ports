@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ikos/Makefile 487461 2018-12-14 19:54:47Z yuri $
+# $FreeBSD: head/devel/ikos/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ikos
 DISTVERSIONPREFIX=	v
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libapron.so:math/apron \
 		libgmp.so:math/gmp \
 		libppl.so:devel/ppl
 
-USES=		cmake:outsource ncurses python sqlite
+USES=		cmake ncurses python sqlite
 USE_GITHUB=	yes
 GH_ACCOUNT=	NASA-SW-VnV
 

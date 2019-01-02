@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/leatherman/Makefile 487824 2018-12-20 02:06:04Z romain $
+# $FreeBSD: head/devel/leatherman/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	leatherman
 PORTVERSION=	1.5.4
@@ -13,7 +13,7 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libcurl.so:ftp/curl
 
-USES=		compiler:c++11-lang cmake:outsource gettext
+USES=		compiler:c++11-lang cmake gettext
 USE_GITHUB=	yes
 GH_ACCOUNT=	puppetlabs
 

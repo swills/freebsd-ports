@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-command/Makefile 476701 2018-08-08 23:28:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-command/Makefile 489024 2019-01-01 20:38:37Z sunpoet $
 
 PORTNAME=	tty-command
 PORTVERSION=	0.8.2
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-pastel>=0.7.0:devel/rubygem-pastel
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

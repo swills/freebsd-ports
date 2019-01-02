@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/print/gl2ps/Makefile 453669 2017-11-07 17:12:06Z tijl $
+# $FreeBSD: head/print/gl2ps/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gl2ps
 PORTVERSION=	1.4.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LGPL
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake:outsource tar:tgz
+USES=		cmake tar:tgz
 USE_GL=		gl
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-source

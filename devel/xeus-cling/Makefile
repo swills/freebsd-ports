@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/xeus-cling/Makefile 488151 2018-12-22 23:25:36Z yuri $
+# $FreeBSD: head/devel/xeus-cling/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xeus-cling
 DISTVERSION=	0.4.10
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libclingInterpreter.so:lang/cling \
 		libxeus.so:devel/xeus \
 		libzmq.so:net/libzmq4
 
-USES=		cmake:outsource compiler:c++14-lang pkgconfig
+USES=		cmake compiler:c++14-lang pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	QuantStack
 

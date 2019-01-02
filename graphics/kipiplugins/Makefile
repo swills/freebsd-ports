@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kipiplugins/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/kipiplugins/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kipiplugins
 DISTVERSION=	5.9.0
@@ -10,7 +10,7 @@ DIST_SUBDIR=	KDE/digikam/${PORTVERSION}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plugins for digikam
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig \
+USES=		cmake compiler:c++11-lib gettext kde:5 pkgconfig \
 		qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n itemviews jobwidgets kio libkipi service \

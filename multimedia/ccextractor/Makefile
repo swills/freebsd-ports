@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/ccextractor/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/ccextractor/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ccextractor
 DISTVERSIONPREFIX=	v
@@ -29,7 +29,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libx265.so:multimedia/x265 \
 		libxvidcore.so:multimedia/xvid
 
-USES=		cmake:outsource iconv localbase:ldflags pkgconfig
+USES=		cmake iconv localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	CCExtractor
 USE_XORG=	x11

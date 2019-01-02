@@ -1,5 +1,5 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openorienteering-mapper
 PORTVERSION=	0.8.2
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpolyclipping.so:graphics/polyclipping \
 		libproj.so:graphics/proj
 
-USES=		cmake:outsource,noninja compiler:c++14-lang \
+USES=		cmake:noninja compiler:c++14-lang \
 		desktop-file-utils gmake qt:5 shared-mime-info
 USE_QT=		buildtools_build help qmake_build core gui \
 		location network printsupport sensors widgets

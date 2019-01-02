@@ -1,5 +1,5 @@
 # Created by: Daniel O'Connor <darius@dons.net.au>
-# $FreeBSD: head/graphics/pfstools/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/pfstools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pfstools
 DISTVERSION=	2.1.0
@@ -19,7 +19,7 @@ CONFLICTS=	pfstmo-1.* pfscalibration-1.*
 
 LDFLAGS+=	-lthr
 
-USES=		cmake:outsource tar:tgz dos2unix jpeg perl5
+USES=		cmake tar:tgz dos2unix jpeg perl5
 USE_PERL5=	run
 USE_LDCONFIG=	yes
 

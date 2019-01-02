@@ -1,5 +1,5 @@
 # Created by: mgrooms@shrew.net
-# $FreeBSD: head/security/ike/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/security/ike/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ike
 PORTVERSION=	2.2.1
@@ -14,7 +14,7 @@ COMMENT=	Shrew Soft IKE daemon and client tools
 ONLY_FOR_ARCHS=	i386 amd64
 
 USE_RC_SUBR=	iked
-USES=		bison cmake libedit localbase:ldflags tar:tbz2 ssl
+USES=		bison cmake:insource libedit localbase:ldflags tar:tbz2 ssl
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

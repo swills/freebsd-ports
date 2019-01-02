@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/keditbookmarks/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/keditbookmarks/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	keditbookmarks
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	deskutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Bookmark Organizer and Editor
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n iconthemes jobwidgets kio parts service \
 		sonnet textwidgets widgetsaddons windowsystem xmlgui

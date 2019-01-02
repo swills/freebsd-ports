@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/net-mgmt/ettercap/Makefile 482293 2018-10-17 13:14:17Z sunpoet $
+# $FreeBSD: head/net-mgmt/ettercap/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ettercap
 PORTVERSION=	0.8.2
@@ -33,7 +33,7 @@ CMAKE_ON=	HAVE_DLOPEN
 LDFLAGS+=	${ICONV_LIB} -lnet -lpcap
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
-USES=		bison cmake:outsource cpe iconv localbase:ldflags pkgconfig
+USES=		bison cmake cpe iconv localbase:ldflags pkgconfig
 
 DOCS=		AUTHORS CHANGELOG README README.BINARIES README.BUGS \
 		README.GIT README.PLATFORMS THANKS TODO TODO.TESTING \

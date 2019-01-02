@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/osqp/Makefile 487247 2018-12-11 18:08:52Z yuri $
+# $FreeBSD: head/math/osqp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	osqp
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Operator Splitting QP Solver
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	oxfordcontrol
 GH_TUPLE=	oxfordcontrol:qdldl:7ab0fca:q/lin_sys/direct/qdldl/qdldl_sources

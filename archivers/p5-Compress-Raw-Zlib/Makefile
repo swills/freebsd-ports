@@ -1,8 +1,8 @@
 # Created by: Thomas Abthorpe <thomas@goodking.ca>
-# $FreeBSD: head/archivers/p5-Compress-Raw-Zlib/Makefile 466889 2018-04-09 18:50:59Z sunpoet $
+# $FreeBSD: head/archivers/p5-Compress-Raw-Zlib/Makefile 488966 2019-01-01 20:33:18Z sunpoet $
 
 PORTNAME=	Compress-Raw-Zlib
-PORTVERSION=	2.081
+PORTVERSION=	2.083
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,8 +15,8 @@ LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Pod>=1:devel/p5-Test-Pod
 
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
 
 post-patch:
 	@${REINPLACE_CMD} -e '/^BUILD_ZLIB/ s|True|False|; /^INCLUDE/ s|= .*$$|= ${INCLUDEDIR}|; /^LIB/ s|= .*$$|= ${LIBDIR}|' ${WRKSRC}/config.in

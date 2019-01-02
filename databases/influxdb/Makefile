@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/influxdb/Makefile 479937 2018-09-17 16:44:13Z fernape $
+# $FreeBSD: head/databases/influxdb/Makefile 488334 2018-12-25 19:01:08Z amdmi3 $
 
 PORTNAME=	influxdb
 DISTVERSIONPREFIX=	v
@@ -103,8 +103,7 @@ PLIST_SUB=	INFLUXD_USER=${INFLUXD_USER} \
 
 .include <bsd.port.pre.mk>
 
-.if ${OPSYS} == "FreeBSD" && ((${OSVERSION} >= 1100513 && ${OSVERSION} < 1200000) || \
-	${OSVERSION} >= 1200015)
+.if ${OPSYS} == "FreeBSD"
 SUB_LIST+=	INFLUXD_LOGCMD="daemon"
 .else
 SUB_LIST+=	INFLUXD_LOGCMD="logger"

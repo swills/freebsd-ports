@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/phonon/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/multimedia/phonon/Makefile 488883 2019-01-01 13:15:23Z tcberner $
 
 PORTNAME=	phonon
 DISTVERSION=	4.10.1
@@ -17,6 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
+qt4_BUILD_DEPENDS=	automoc4:devel/automoc4
 qt4_LIB_DEPENDS=	libqzeitgeist.so:sysutils/qzeitgeist
 qt4_PKGNAMESUFFIX=	-qt4
 qt5_PKGNAMESUFFIX=	-qt5
@@ -32,8 +33,7 @@ USE_LDCONFIG=	yes
 .  if ${FLAVOR} == qt4
 DEPRECATED=	Qt4 has been EOL since december 2015
 EXPIRATION_DATE=2019-03-15
-USES+=		kde:4 qt:4
-USE_KDE=	automoc4
+USES+=		qt:4
 USE_QT=		corelib dbus declarative gui testlib \
 		qmake_build moc_build rcc_build uic_build
 .  else

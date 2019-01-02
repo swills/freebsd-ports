@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 488134 2018-12-22 21:22:56Z kwm $
+# $FreeBSD: head/net/Makefile 488895 2019-01-01 14:17:46Z rene $
 #
 
     COMMENT = Networking tools
@@ -322,19 +322,14 @@
     SUBDIR += kdav
     SUBDIR += kdenetwork
     SUBDIR += kdenetwork-filesharing
-    SUBDIR += kdenetwork-filesharing-kde4
-    SUBDIR += kdenetwork-kde4
-    SUBDIR += kdenetwork-strigi-analyzers-kde4
     SUBDIR += kea
     SUBDIR += kf5-kholidays
     SUBDIR += kf5-kxmlrpcclient
     SUBDIR += kf5-syndication
     SUBDIR += kget
-    SUBDIR += kget-kde4
     SUBDIR += kidentitymanagement
     SUBDIR += kimap
     SUBDIR += kio-gdrive
-    SUBDIR += kio-upnp-ms
     SUBDIR += kippo
     SUBDIR += kissd
     SUBDIR += kitinerary
@@ -346,12 +341,9 @@
     SUBDIR += kontactinterface
     SUBDIR += kpimtextedit
     SUBDIR += krdc
-    SUBDIR += krdc-kde4
     SUBDIR += krfb
-    SUBDIR += krfb-kde4
     SUBDIR += ksmtp
     SUBDIR += ktnef
-    SUBDIR += kwooty
     SUBDIR += l2tpd
     SUBDIR += ladvd
     SUBDIR += lambdamoo
@@ -380,18 +372,15 @@
     SUBDIR += libgweather
     SUBDIR += libilbc
     SUBDIR += libjson-rpc-cpp 
-    SUBDIR += libkfbapi
     SUBDIR += libkgapi
     SUBDIR += libksieve
     SUBDIR += libkvkontakte
-    SUBDIR += libkvkontakte-kde4
     SUBDIR += liblinphone
     SUBDIR += libmaia
     SUBDIR += libmateweather
     SUBDIR += libmaxminddb
     SUBDIR += libmdf
     SUBDIR += libmediawiki
-    SUBDIR += libmediawiki-kde4
     SUBDIR += libmms
     SUBDIR += libmxp
     SUBDIR += libnatpmp
@@ -422,7 +411,6 @@
     SUBDIR += librsync2
     SUBDIR += libsignal
     SUBDIR += libsocket++
-    SUBDIR += libsrtp
     SUBDIR += libsrtp2
     SUBDIR += libstorj
     SUBDIR += libtnl
@@ -968,25 +956,16 @@
     SUBDIR += pear-XML_RPC
     SUBDIR += pear-XML_RPC2
     SUBDIR += pecl-amqp
-    SUBDIR += pecl-apn
     SUBDIR += pecl-geoip
-    SUBDIR += pecl-ip2location
-    SUBDIR += pecl-mosquitto
-    SUBDIR += pecl-oauth
     SUBDIR += pecl-oauth2
     SUBDIR += pecl-radius
     SUBDIR += pecl-rdkafka
     SUBDIR += pecl-smbclient
     SUBDIR += pecl-yaz
-    SUBDIR += pecl-yp
     SUBDIR += pecl-zmq
     SUBDIR += pen
     SUBDIR += pfinger
     SUBDIR += phamm
-    SUBDIR += php56-ldap
-    SUBDIR += php56-soap
-    SUBDIR += php56-sockets
-    SUBDIR += php56-xmlrpc
     SUBDIR += php71-ldap
     SUBDIR += php71-soap
     SUBDIR += php71-sockets
@@ -1033,6 +1012,7 @@
     SUBDIR += pxe-pdhcp
     SUBDIR += py-GeoIP
     SUBDIR += py-GeoIP2
+    SUBDIR += py-aiohttp-socks
     SUBDIR += py-amqp
     SUBDIR += py-amqplib
     SUBDIR += py-avahi
@@ -1136,6 +1116,7 @@
     SUBDIR += py-socketio-client
     SUBDIR += py-softlayer
     SUBDIR += py-speedtest-cli
+    SUBDIR += py-sshtunnel
     SUBDIR += py-sshuttle
     SUBDIR += py-stomp.py
     SUBDIR += py-suds
@@ -1167,6 +1148,7 @@
     SUBDIR += qoauth-qt5
     SUBDIR += qt4-network
     SUBDIR += qt5-network
+    SUBDIR += qt5-networkauth
     SUBDIR += qtweetlib
     SUBDIR += quagga
     SUBDIR += queso
@@ -1380,7 +1362,6 @@
     SUBDIR += skstream
     SUBDIR += sl2tps
     SUBDIR += slurm
-    SUBDIR += smb4k-kde4
     SUBDIR += smbldap-tools
     SUBDIR += smcroute
     SUBDIR += smm++
@@ -1555,7 +1536,6 @@
     SUBDIR += zebra
     SUBDIR += zebra-server
     SUBDIR += zeroconf-ioslave
-    SUBDIR += zeroconf-ioslave-kde4
     SUBDIR += zerotier
     SUBDIR += zillion
     SUBDIR += zmap

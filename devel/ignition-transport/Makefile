@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ignition-transport/Makefile 486531 2018-12-03 19:41:32Z sunpoet $
+# $FreeBSD: head/devel/ignition-transport/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ignition-transport
 DISTVERSION=	6.0.0
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libignition-math6.so:math/ignition-math \
 		libzmq.so:net/libzmq4
 RUN_DEPENDS=	ignition-tools>0:devel/ignition-tools
 
-USES=		cmake:outsource pkgconfig sqlite
+USES=		cmake pkgconfig sqlite
 USE_LDCONFIG=	yes
 
 CMAKE_OFF=	BUILD_TESTING

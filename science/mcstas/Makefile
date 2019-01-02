@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/mcstas/Makefile 455658 2017-12-06 16:18:35Z swills $
+# $FreeBSD: head/science/mcstas/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mcstas
 PORTVERSION=	2.2a
@@ -11,7 +11,7 @@ COMMENT=	Monte Carlo neutron ray tracing package
 
 LICENSE=	LGPL21+
 
-USES=		bison:build cmake:outsource
+USES=		bison:build cmake
 CMAKE_ARGS=	"-Denable_mcstas=1"
 
 MANDIRS=	${PREFIX}/${PORTNAME}/${DISTVERSION}/doc/man/man1

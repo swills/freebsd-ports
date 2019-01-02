@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/net/flower/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/flower/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	flower
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libarpc.so:devel/arpc \
 		libjsoncpp.so:devel/jsoncpp
 
-USES=		cmake compiler:c++17-lang localbase:ldflags tar:xz
+USES=		cmake:insource compiler:c++17-lang localbase:ldflags tar:xz
 USE_GITHUB=	yes
 GH_ACCOUNT=	NuxiNL
 

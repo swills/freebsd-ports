@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/mcxtrace-comps/Makefile 469327 2018-05-07 19:43:04Z pi $
+# $FreeBSD: head/science/mcxtrace-comps/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mcxtrace-comps
 DISTVERSION=	1.2
@@ -13,7 +13,7 @@ LICENSE=	LGPL21+
 
 RUN_DEPENDS=	${LOCALBASE}/mcxtrace/${DISTVERSION}/bin/mcxtrace:science/mcxtrace
 
-USES=		cmake:outsource
+USES=		cmake
 # Apparently cmake does not generate an install/strip target if nothing
 # is supposed to be stripped, so override the cmake-default install
 # target of install/strip by resetting STRIP

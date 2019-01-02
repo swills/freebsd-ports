@@ -1,5 +1,5 @@
 # Created by: Hugo Leisink
-# $FreeBSD: head/www/hiawatha/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/hiawatha/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	hiawatha
 PORTVERSION=	10.8.3
@@ -13,7 +13,7 @@ COMMENT=	Advanced and secure webserver for Unix
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake compiler:c11
+USES=		cmake:insource compiler:c11
 USE_RC_SUBR=	hiawatha
 
 CMAKE_ARGS=	-DCMAKE_INSTALL_LOCALSTATEDIR=/var \

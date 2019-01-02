@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-erubi/Makefile 463747 2018-03-06 20:31:25Z sunpoet $
+# $FreeBSD: head/www/rubygem-erubi/Makefile 489040 2019-01-01 20:40:01Z sunpoet $
 
 PORTNAME=	erubi
-PORTVERSION=	1.7.1
+PORTVERSION=	1.8.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	ERB template engine for Ruby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

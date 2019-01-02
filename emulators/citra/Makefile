@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/citra/Makefile 488155 2018-12-23 00:54:44Z jbeich $
+# $FreeBSD: head/emulators/citra/Makefile 488851 2019-01-01 00:00:52Z jbeich $
 
 PORTNAME=	citra
-PORTVERSION=	s20181221
+PORTVERSION=	s20181228
 PORTREVISION?=	0
 CATEGORIES=	emulators
 
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	boost-libs>=1.66:devel/boost-libs
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	citra-emu
-GH_TAGNAME=	3ede43605
+GH_TAGNAME=	fbd0944a5
 GH_TUPLE=	citra-emu:ext-libressl-portable:7d01cb0:libressl/externals/libressl \
 		citra-emu:ext-soundtouch:060181e:soundtouch/externals/soundtouch \
 		MerryMage:dynarmic:r1-992-g4e6848d1:dynarmic/externals/dynarmic \
@@ -38,7 +38,7 @@ GH_TUPLE=	citra-emu:ext-libressl-portable:7d01cb0:libressl/externals/libressl \
 		zeromq:cppzmq:v4.2.3:cppzmq/externals/cppzmq \
 		zeromq:libzmq:v4.2.5:libzmq/externals/libzmq
 
-USES=		cmake:outsource compiler:c++17-lang iconv localbase:ldflags
+USES=		cmake compiler:c++17-lang iconv localbase:ldflags
 USE_SDL=	sdl2
 LDFLAGS+=	-Wl,--as-needed # Qt5Network
 TEST_TARGET=	test

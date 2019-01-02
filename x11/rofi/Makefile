@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/rofi/Makefile 465139 2018-03-21 00:01:40Z tobik $
+# $FreeBSD: head/x11/rofi/Makefile 488731 2018-12-30 18:27:32Z tobik $
 
 PORTNAME=	rofi
-DISTVERSION=	1.5.1
-PORTREVISION=	1
+DISTVERSION=	1.5.2
 CATEGORIES=	x11
 MASTER_SITES=	https://github.com/DaveDavenport/rofi/releases/download/${PORTVERSION}/
 
@@ -21,7 +20,7 @@ LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 		libxcb-xrm.so:x11/xcb-util-xrm \
 		libxkbcommon-x11.so:x11/libxkbcommon
 
-USES=		bison gmake libtool pkgconfig shebangfix
+USES=		bison gmake gnome libtool pkgconfig shebangfix
 USE_GNOME=	cairo gdkpixbuf2 librsvg2 pango
 USE_XORG=	xcb
 

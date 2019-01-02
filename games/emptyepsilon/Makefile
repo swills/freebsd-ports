@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/emptyepsilon/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/emptyepsilon/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	emptyepsilon
 DISTVERSIONPREFIX=	EE-
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libsfml-system.so:devel/sfml
 
-USES=		cmake:outsource compiler:c++11-lib gl
+USES=		cmake compiler:c++11-lib gl
 USE_GITHUB=	yes
 GH_ACCOUNT=	daid
 GH_PROJECT=	EmptyEpsilon SeriousProton:sproton

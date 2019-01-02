@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kcoreaddons/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/devel/kf5-kcoreaddons/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kcoreaddons
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -12,7 +12,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_LGPL21+=	${WRKSRC}/COPYING.LIB
 LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/COPYING-CMAKE-SCRIPTS
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5 shared-mime-info tar:xz
+USES=		cmake compiler:c++11-lib kde:5 qt:5 shared-mime-info tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build core linguisttools qmake_build
 

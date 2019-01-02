@@ -1,8 +1,8 @@
 # Created by: Daniel O'Connor
-# $FreeBSD: head/audio/teamspeak3-server/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/audio/teamspeak3-server/Makefile 488347 2018-12-25 21:33:59Z ultima $
 
 PORTNAME=	teamspeak3-server
-PORTVERSION=	3.5.0
+PORTVERSION=	3.5.1
 PORTEPOCH=	1
 CATEGORIES=	audio net
 MASTER_SITES=	http://dl.4players.de/ts/releases/${PORTVERSION}/ \

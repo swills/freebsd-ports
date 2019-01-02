@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/fabla2-lv2/Makefile 471081 2018-05-29 07:06:15Z yuri $
+# $FreeBSD: head/audio/fabla2-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	fabla2
 DISTVERSION=	g20180331
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libsamplerate.so:audio/libsamplerate \
 		libsndfile.so:audio/libsndfile
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	openAVproductions
 GH_PROJECT=	openAV-Fabla2

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/nanoflann/Makefile 481201 2018-10-04 03:53:55Z yuri $
+# $FreeBSD: head/math/nanoflann/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	nanoflann
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Header-only library for Nearest Neighbor (NN) search with KD-trees
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	jlblancoc
 

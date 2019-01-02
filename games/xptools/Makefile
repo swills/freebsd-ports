@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/xptools/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/games/xptools/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	xptools
 DISTVERSION=	wed_161r1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 
 MAINTAINER=	mike.d.ft402@gmail.com

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/klee/Makefile 475146 2018-07-23 05:28:54Z yuri $
+# $FreeBSD: head/security/klee/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	klee
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	llvm-config${LLVM_VERSION}:devel/llvm${LLVM_VERSION} \
 
 LLVM_VERSION=	38 # the latest llvm version that the master branch (79ac709) currently supports
 
-USES=		cmake:outsource localbase pkgconfig python:run shebangfix
+USES=		cmake localbase pkgconfig python:run shebangfix
 USE_GITHUB=	yes
 SHEBANG_FILES=	tools/klee-stats/klee-stats tools/ktest-tool/ktest-tool
 USE_LDCONFIG=	yes

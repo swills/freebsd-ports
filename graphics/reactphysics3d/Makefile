@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/reactphysics3d/Makefile 477368 2018-08-16 19:03:31Z yuri $
+# $FreeBSD: head/graphics/reactphysics3d/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	reactphysics3d
 DISTVERSION=	0.7.0
@@ -11,7 +11,7 @@ COMMENT=	C++ physics engine library in 3D
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	DanielChappuis
 GH_TAGNAME=	f3be5384997da7ddeccc526036985a80de660bae  # branch 'fix37'

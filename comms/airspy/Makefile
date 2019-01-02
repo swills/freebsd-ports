@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/airspy/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/comms/airspy/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	airspy
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/airspy-tools/LICENSE.md
 BROKEN_aarch64=		fails to compile: invalid conversion between vector type '__m64' and integer type 'int'
 BROKEN_powerpc64=	fails to build: iqconverter_float.c:45:23: error: immintrin.h: No such file or directory
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake pkgconfig
 USE_GITHUB=	yes
 GH_PROJECT=	airspyone_host
 USE_LDCONFIG=	yes

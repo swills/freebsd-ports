@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/py-compreffor/Makefile 487614 2018-12-16 18:33:37Z lwhsu $
+# $FreeBSD: head/x11-fonts/py-compreffor/Makefile 488223 2018-12-23 16:59:05Z linimon $
 
 PORTNAME=	compreffor
 PORTVERSION=	0.4.6
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fonttools>=3.1:print/py-fonttools@${PY_FLAVOR}
 
-USES=		python zip
+USES=		compiler:c++11-lang python zip
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 
 # Created by: David Shane Holden <dpejesh@yahoo.com>
-# $FreeBSD: head/net/pacemaker1/Makefile 470799 2018-05-24 18:24:50Z flo $
+# $FreeBSD: head/net/pacemaker1/Makefile 488465 2018-12-26 21:59:59Z flo $
 
-PORTVERSION=		1.1.18
+PORTVERSION=		1.1.19
 PKGNAMESUFFIX=		1
 
 .include "${.CURDIR}/Makefile.common"

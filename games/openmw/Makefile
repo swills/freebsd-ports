@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/games/openmw/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/openmw/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openmw
 DISTVERSIONPREFIX=	openmw-
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenMW
 
-USES=		cmake:outsource compiler:c++14-lang openal pkgconfig qt:5
+USES=		cmake compiler:c++14-lang openal pkgconfig qt:5
 USE_GL=		gl
 USE_QT=		qmake_build buildtools_build core gui network opengl \
 		printsupport widgets

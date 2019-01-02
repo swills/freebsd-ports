@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/sysutils/usbtop/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/usbtop/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	usbtop
 DISTVERSIONPREFIX=	release-
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	aguinet
 

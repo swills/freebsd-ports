@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kcov/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/kcov/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kcov
 DISTVERSIONPREFIX=	v
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libdw.so:devel/elfutils \
 		libelf.so:devel/elfutils
 
-USES=		cmake:outsource shebangfix python:build gettext-runtime
+USES=		cmake shebangfix python:build gettext-runtime
 
 # Remove -DPORTVERSION (and associated patch) when basing the port on an
 # official release

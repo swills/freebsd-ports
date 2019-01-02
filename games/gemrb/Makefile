@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/games/gemrb/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/gemrb/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gemrb
 PORTVERSION=	0.8.5
@@ -23,7 +23,7 @@ OPENGL_USE=	gl=gl,glu,glew
 OPENGL_CMAKE_ON=-DOPENGL_BACKEND=OpenGL
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
-USES=		cmake:outsource openal:al,alut python:2.7 shebangfix iconv localbase
+USES=		cmake openal:al,alut python:2.7 shebangfix iconv localbase
 SHEBANG_FILES=	admin/extend2da.py
 USE_SDL=	sdl2
 USE_LDCONFIG=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kf5-prison/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/graphics/kf5-prison/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	prison
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	API to produce barcodes
 LIB_DEPENDS=	libdmtx.so:graphics/libdmtx \
 		libqrencode.so:graphics/libqrencode
 
-USES=		cmake:outsource compiler:c++11-lang kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build core gui qmake_build testlib widgets
 

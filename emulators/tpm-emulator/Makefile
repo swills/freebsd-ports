@@ -1,5 +1,5 @@
 # Created by: Sebastian Schuetz <sschuetz@fhm.edu>
-# $FreeBSD: head/emulators/tpm-emulator/Makefile 442522 2017-06-03 21:56:25Z ler $
+# $FreeBSD: head/emulators/tpm-emulator/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	tpm-emulator
 PORTVERSION=	0.7.4
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-USES=		cmake:outsource
+USES=		cmake
 USE_RC_SUBR=	tpmd
 CONFIGURE_ENV=	PREFIX="${PREFIX}"
 CMAKE_ARGS=	-DTPM_INCLUDE_DIRS:STRING="${LOCALBASE}/include" \

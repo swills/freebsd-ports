@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/check_ssl_cert/Makefile 487448 2018-12-14 16:48:04Z cmt $
+# $FreeBSD: head/net-mgmt/check_ssl_cert/Makefile 488593 2018-12-28 10:43:39Z cmt $
 
 PORTNAME=	check_ssl_cert
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.79.0
+DISTVERSION=	1.80.0
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	cmt@FreeBSD.org

@@ -1,9 +1,8 @@
 # Created by: Neil Booth
-# $FreeBSD: head/finance/electrum/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/finance/electrum/Makefile 488284 2018-12-24 23:26:21Z ehaupt $
 
 PORTNAME=	electrum
-PORTVERSION=	3.2.3
-PORTREVISION=	1
+PORTVERSION=	3.3.2
 CATEGORIES=	finance python
 MASTER_SITES=	https://download.electrum.org/${PORTVERSION}/ \
 		http://download.electrum.org/${PORTVERSION}/
@@ -15,7 +14,10 @@ COMMENT=	Easy to use Bitcoin client
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiohttp-socks>=0.2:net/py-aiohttp-socks@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}aiohttp>0:www/py-aiohttp@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}aiorpcX>0:devel/py-aiorpcX@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}httplib2>=0:www/py-httplib2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jsonrpclib-pelix>0:devel/py-jsonrpclib-pelix@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pbkdf2>=1.3:security/py-pbkdf2@${PY_FLAVOR} \

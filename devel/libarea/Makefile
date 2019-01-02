@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/devel/libarea/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/devel/libarea/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libarea
 PORTVERSION=	20160313
@@ -17,7 +17,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Heeks
 GH_TAGNAME=	f1986ac
 
-USES=		cmake:outsource python
+USES=		cmake python
 USE_LDCONFIG=	yes
 
 post-patch:

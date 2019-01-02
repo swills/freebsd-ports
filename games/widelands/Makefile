@@ -1,5 +1,5 @@
 # Created by: Bartosz Fabianowski <freebsd@chillt.de>
-# $FreeBSD: head/games/widelands/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/widelands/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	widelands
 DISTVERSION=	build19
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libicuuc.so:devel/icu \
 		libboost_regex.so:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++11-lib gettext \
+USES=		cmake compiler:c++11-lib gettext \
 		tar:bzip2 python:build
 CMAKE_ARGS=	-DWL_INSTALL_BASEDIR="${PREFIX}" \
 		-DWL_INSTALL_DATADIR="${DATADIR}" \

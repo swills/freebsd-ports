@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/otter-browser/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/otter-browser/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	otter-browser
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils qt:5
+USES=		cmake compiler:c++11-lib desktop-file-utils qt:5
 USE_QT=		concurrent core dbus declarative gui multimedia network printsupport \
 		script sql sql-sqlite3 svg widgets xmlpatterns \
 		buildtools_build qmake_build

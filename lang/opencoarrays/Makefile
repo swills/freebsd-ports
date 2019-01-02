@@ -1,5 +1,5 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/opencoarrays/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	opencoarrays
 DISTVERSION=	2.2.0
@@ -17,7 +17,7 @@ BROKEN_aarch64=		fails to build: Can't open module file 'ieee_arithmetic.mod' fo
 BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		cmake:outsource fortran
+USES=		cmake fortran
 USE_CSTD=	gnu99
 USE_GITHUB=	yes
 GH_ACCOUNT=	sourceryinstitute

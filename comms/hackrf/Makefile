@@ -1,5 +1,5 @@
 # Created by: Tomasz "CeDeROM" CEDRO (http://www.tomek.cedro.info)
-# $FreeBSD: head/comms/hackrf/Makefile 458672 2018-01-10 18:51:08Z swills $
+# $FreeBSD: head/comms/hackrf/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	hackrf
 PORTVERSION=	2017.02.1
@@ -14,7 +14,7 @@ USE_GITHUB=	YES
 GH_ACCOUNT=	mossmann
 GH_TAGNAME=	31a37bd
 
-USES=		cmake:outsource
+USES=		cmake
 CMAKE_SOURCE_PATH=	${WRKSRC}/host
 CMAKE_ARGS=	-DLIBUSB_LIBRARIES=/usr/lib/libusb.so
 

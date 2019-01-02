@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/trenchbroom/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/trenchbroom/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	trenchbroom
 PORTVERSION=	2.0.0.b
@@ -18,7 +18,7 @@ GH_ACCOUNT=	kduske
 GH_PROJECT=	TrenchBroom
 GH_TAGNAME=	ed46601
 
-USES=		cmake compiler:c++11-lib pkgconfig
+USES=		cmake:insource compiler:c++11-lib pkgconfig
 USE_GL=		glew
 USE_WX=		3.0+
 CMAKE_ARGS=	-DAPP_BUILD_CHANNEL:STRING="Beta for ${OPSYS}/${ARCH}"

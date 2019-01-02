@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/math/stp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/stp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	stp
 DISTVERSION=	2.3.1
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs \
 		libminisat.so:math/minisat \
 		libcryptominisat5.so:math/cryptominisat
 
-USES=		bison:build compiler:c++11-lang cmake:outsource perl5 python
+USES=		bison:build compiler:c++11-lang cmake perl5 python
 USE_GITHUB=	yes
 USE_PERL5=	build
 USE_LDCONFIG=	yes

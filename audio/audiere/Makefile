@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/audiere/Makefile 484015 2018-11-04 12:54:54Z antoine $
+# $FreeBSD: head/audio/audiere/Makefile 488326 2018-12-25 16:09:14Z amdmi3 $
 
 PORTNAME=	audiere
 PORTVERSION=	1.9.4
@@ -13,11 +13,9 @@ COMMENT=	High-level audio API
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/doc/license.txt
 
-BROKEN=		fails to build
-
-GNU_CONFIGURE=	yes
 USES=		autoreconf gmake libtool
-WANT_WX=	yes
+GNU_CONFIGURE=	yes
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 
 CONFIGURE_ENV=	PTHREAD_LIBS="-lpthread"

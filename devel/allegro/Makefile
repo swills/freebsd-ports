@@ -1,5 +1,5 @@
 # Created by: Jimmy Olgeni <olgeni@FreeBSD.org>
-# $FreeBSD: head/devel/allegro/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/devel/allegro/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	allegro
 DISTVERSION=	4.4.2
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	png>0:graphics/png \
 LIB_DEPENDS=	libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis
 
-USES=		cmake makeinfo pkgconfig
+USES=		cmake:insource makeinfo pkgconfig
 USE_XORG=	ice sm x11 xpm xext xcursor xxf86vm xxf86dga
 USE_LDCONFIG=	yes
 

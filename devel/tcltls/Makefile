@@ -1,8 +1,8 @@
 # Created by: mi@aldan.algebra.com
-# $FreeBSD: head/devel/tcltls/Makefile 454338 2017-11-16 20:30:44Z mi $
+# $FreeBSD: head/devel/tcltls/Makefile 488274 2018-12-24 16:08:12Z mi $
 
 PORTNAME=	tcltls
-PORTVERSION=	1.7.14
+PORTVERSION=	1.7.16
 CATEGORIES=	devel security tcl
 MASTER_SITES=	http://core.tcl.tk/tcltls/uv/ \
 		http://tcltls.rkeene.org/uv/

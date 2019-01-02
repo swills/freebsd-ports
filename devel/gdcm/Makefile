@@ -1,5 +1,5 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/devel/gdcm/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/gdcm/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gdcm
 PORTVERSION=	${GDCM_MAJOR}.${GDCM_MINOR}.${GDCM_PATCH}
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	pkgconf:devel/pkgconf
 LIB_DEPENDS=	libopenjp2.so:graphics/openjpeg \
 		libexpat.so:textproc/expat2
 
-USES=		alias cmake:outsource compiler:c++11-lang tar:bzip2 ssl
+USES=		alias cmake compiler:c++11-lang tar:bzip2 ssl
 
 OPTIONS_DEFINE=		VTK6
 OPTIONS_SUB=		yes
@@ -34,6 +34,7 @@ GDCM_PATCH=	8
 # Change this whenever VTK is updated
 VTK6_VERSION=	6.2
 
+USES=		alias cmake tar:bzip2 ssl
 USE_LDCONFIG=	yes
 CFLAGS+=	-I${LOCALBASE}/include
 CMAKE_ARGS=	-DGDCM_USE_SYSTEM_OPENSSL:BOOL=ON \

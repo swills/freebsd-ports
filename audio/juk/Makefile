@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/juk/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/audio/juk/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	juk
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libtag.so:audio/taglib
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash globalaccel i18n iconthemes itemviews \
 		jobwidgets kio notifications service solid sonnet textwidgets \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kio-gdrive/Makefile 483377 2018-10-29 09:00:46Z ak $
+# $FreeBSD: head/net/kio-gdrive/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kio-gdrive
 DISTVERSION=	1.2.1
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain@qt5 \
 		libkaccounts.so:net-im/kaccounts-integration
 RUN_DEPENDS=	kaccounts-providers>=0:net-im/kaccounts-providers
 
-USES=		cmake:outsource gettext kde:5 pkgconfig qt:5 tar:xz
+USES=		cmake gettext kde:5 pkgconfig qt:5 tar:xz
 USE_GNOME=	intltool
 USE_KDE=	completion config coreaddons ecm i18n jobwidgets kio \
 		notifications service widgetsaddons \

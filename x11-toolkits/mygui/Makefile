@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/mygui/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/mygui/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mygui
 PORTVERSION=	3.2.3.git20171212
@@ -28,7 +28,7 @@ GH_TAGNAME=	b1e4bc8
 
 MYGUI_RENDERSYSTEM?=	0
 
-USES=		cmake compiler:c++11-lib pkgconfig
+USES=		cmake:insource compiler:c++11-lib pkgconfig
 CMAKE_ARGS=	-DMYGUI_BUILD_DEMOS=FALSE \
 		-DMYGUI_BUILD_TOOLS=FALSE \
 		-DMYGUI_BUILD_DOCS=FALSE \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/plasma-pass/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/plasma-pass/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	plasma-pass
 DISTVERSION=	0.1.a.20181210
@@ -10,7 +10,7 @@ COMMENT=	Plasma applet for Pass password manager
 
 RUN_DEPENDS=	pass:sysutils/password-store
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5
+USES=		cmake compiler:c++11-lib kde:5 qt:5
 USE_KDE=	config coreaddons i18n itemmodels package plasma-framework service \
 		ecm_build
 USE_QT=		core dbus declarative gui network \

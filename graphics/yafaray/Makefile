@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/yafaray/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/graphics/yafaray/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	yafaray
 DISTVERSIONPREFIX=	v
@@ -28,7 +28,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libpng16.so:graphics/png \
 		libtiff.so:graphics/tiff
 
-USES=		cmake:outsource gnome jpeg
+USES=		cmake gnome jpeg
 USE_GITHUB=	yes
 GH_ACCOUNT=	YafaRay
 GH_PROJECT=	Core

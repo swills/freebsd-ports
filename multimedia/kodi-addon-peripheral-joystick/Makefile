@@ -1,5 +1,5 @@
 # Created by: Rozhuk Ivan 2018 <rozhuk.im@gmail.com>
-# $FreeBSD: head/multimedia/kodi-addon-peripheral-joystick/Makefile 484316 2018-11-06 19:00:50Z eugen $
+# $FreeBSD: head/multimedia/kodi-addon-peripheral-joystick/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kodi-addon-peripheral-joystick
 PORTVERSION=	1.3.4
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libp8-platform.so:devel/p8-platform \
 		libudev.so:devel/libudev-devd
 RUN_DEPENDS=	kodi:multimedia/kodi
 
-USES=		cmake:outsource,noninja
+USES=		cmake:noninja
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	xbmc

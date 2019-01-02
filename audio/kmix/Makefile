@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/kmix/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/audio/kmix/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kmix
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libasound.so:audio/alsa-lib
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons ecm \
 		emoticons globalaccel i18n iconthemes init itemmodels \
 		itemviews kcmutils kdelibs4support notifications package \

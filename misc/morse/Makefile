@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/morse/Makefile 476378 2018-08-04 19:23:26Z yuri $
+# $FreeBSD: head/misc/morse/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	morse
 DISTVERSION=	1.4-154
@@ -12,7 +12,7 @@ COMMENT=	Modular OpenRobots Simulation Engine
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource pkgconfig python:3.4+ shebangfix
+USES=		cmake pkgconfig python:3.4+ shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME}-simulator
 SHEBANG_FILES=	bin/morse_inspector

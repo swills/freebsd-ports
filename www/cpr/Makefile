@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/cpr/Makefile 475967 2018-07-31 03:55:19Z yuri $
+# $FreeBSD: head/www/cpr/Makefile 488713 2018-12-30 12:46:28Z linimon $
 
 PORTNAME=	cpr
 DISTVERSION=	1.3.0-57
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		cmake:outsource
+USES=		compiler:c++11-lang cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	whoshuu
 GH_TUPLE=	whoshuu:mongoose:df9f7a7:mongoose/opt/mongoose

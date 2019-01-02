@@ -1,8 +1,8 @@
 # Created by: proler@gmail.com
-# $FreeBSD: head/databases/clickhouse/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/clickhouse/Makefile 488473 2018-12-26 22:27:25Z swills $
 
 PORTNAME=	clickhouse
-PORTVERSION=	18.14.11
+PORTVERSION=	18.14.18
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
 PORTREVISION=	2
@@ -35,7 +35,7 @@ LIB_DEPENDS=	libtcmalloc.so:devel/google-perftools \
 		libcpuid.so:sysutils/libcpuid \
 		libgtest.so:devel/googletest
 
-USES=		compiler:c++14-lang cmake iconv mysql ssl readline shebangfix
+USES=		compiler:c++14-lang cmake:insource iconv mysql ssl readline shebangfix
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DUNBUNDLED=1 \

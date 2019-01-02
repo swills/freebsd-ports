@@ -1,10 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/mixxx/Makefile 487956 2018-12-21 07:31:30Z yuri $
+# $FreeBSD: head/audio/mixxx/Makefile 488506 2018-12-27 04:17:44Z acm $
 
 PORTNAME=	mixxx
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	2.1.5
-PORTREVISION=	3
+DISTVERSION=	2.2.0
 CATEGORIES=	audio
 
 MAINTAINER=	acm@FreeBSD.org
@@ -32,7 +31,8 @@ LIB_DEPENDS=	libchromaprint.so:audio/chromaprint \
 		libogg.so:audio/libogg \
 		libvorbisfile.so:audio/libvorbis \
 		libtag.so:audio/taglib \
-		libprotobuf.so:devel/protobuf
+		libprotobuf.so:devel/protobuf \
+		liblilv-0.so:audio/lilv
 
 USES=		compiler:c++11-lang gl iconv qt:5 pkgconfig scons
 USE_XORG=	x11
@@ -43,7 +43,7 @@ USE_QT=		buildtools concurrent core dbus gui network opengl script scripttools \
 		sql sql-sqlite3 svg testlib xml xmlpatterns linguisttools_build \
 		qmake_build widgets
 
-CONFLICTS=	mixxx20*
+CONFLICTS=	mixxx20* mixxx21*
 
 MAKE_ARGS=	qtdir="${PREFIX}" install_root="${PREFIX}" \
 		build=release optimize=native ${GUI} battery=0 vamp=1 modplug=1

@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Unicode-Normalize/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Unicode-Normalize/Makefile 488263 2018-12-24 08:38:55Z wen $
 
 PORTNAME=	Unicode-Normalize
-PORTVERSION=	1.25
+PORTVERSION=	1.26
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

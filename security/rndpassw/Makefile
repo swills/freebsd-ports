@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rndpassw/Makefile 425966 2016-11-12 16:28:08Z amdmi3 $
+# $FreeBSD: head/security/rndpassw/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	rndpassw
 PORTVERSION=	0.2.2
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	melanhit
 
-USES=		cmake:outsource
+USES=		cmake
 
 PLIST_FILES=	bin/rndpassw \
 		man/man1/rndpassw.1.gz

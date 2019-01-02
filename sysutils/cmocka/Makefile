@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/cmocka/Makefile 465409 2018-03-23 21:20:04Z dteske $
+# $FreeBSD: head/sysutils/cmocka/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	cmocka
 PORTVERSION=	1.1.1
@@ -12,7 +12,7 @@ COMMENT=	Unit testing framework for C with support for mock objects
 
 LICENSE=	APACHE20
 
-USES=		cmake:outsource tar:xz
+USES=		cmake tar:xz
 USE_LDCONFIG=	yes
 
 PLIST_FILES=	include/cmocka.h \

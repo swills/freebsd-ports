@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/mydumper/Makefile 469197 2018-05-06 12:49:12Z sunpoet $
+# $FreeBSD: head/databases/mydumper/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mydumper
 PORTVERSION=	0.9.5
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre
 
 CMAKE_OFF=	BUILD_DOCS WITH_BINLOG
 USE_GNOME=	glib20
-USES=		cmake gnome mysql pkgconfig
+USES=		cmake:insource gnome mysql pkgconfig
 
 PLIST_FILES=	sbin/mydumper sbin/myloader
 

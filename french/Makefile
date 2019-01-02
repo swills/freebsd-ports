@@ -1,4 +1,4 @@
-# $FreeBSD: head/french/Makefile 487994 2018-12-21 13:36:25Z rene $
+# $FreeBSD: head/french/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = French support
@@ -12,7 +12,6 @@
     SUBDIR += hunspell
     SUBDIR += hyphen
     SUBDIR += jdictionary-fre-hun
-    SUBDIR += kde4-l10n
     SUBDIR += libreoffice
     SUBDIR += med
     SUBDIR += mythes

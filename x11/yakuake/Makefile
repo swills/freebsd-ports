@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/yakuake/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/yakuake/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	yakuake
 DISTVERSION=	3.0.5
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	konsole:x11/konsole
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake gettext kde:5 qt:5 tar:xz
 USE_KDE=	attica auth archive codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm globalaccel i18n iconthemes \
 		jobwidgets kio newstuff notifications notifyconfig parts \

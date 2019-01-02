@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-flask-api/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-api/Makefile 488596 2018-12-28 11:26:20Z joneum $
 
 PORTNAME=	flask-api
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

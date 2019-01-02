@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-prompt/Makefile 485872 2018-11-25 17:11:15Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-prompt/Makefile 489030 2019-01-01 20:39:08Z sunpoet $
 
 PORTNAME=	tty-prompt
-PORTVERSION=	0.18.0
+PORTVERSION=	0.18.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

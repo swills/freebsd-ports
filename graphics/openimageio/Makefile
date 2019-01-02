@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openimageio/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/openimageio/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openimageio
 PORTVERSION=	1.8.17
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libwebp.so:graphics/webp \
 		libhdf5.so:science/hdf5
 
-USES=		cmake:outsource jpeg compiler:c++11-lib
+USES=		cmake jpeg compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenImageIO
 GH_PROJECT=	oiio

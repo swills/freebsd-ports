@@ -1,5 +1,5 @@
 # Created by: fluffy@
-# $FreeBSD: head/graphics/prison/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/prison/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	prison
 PORTVERSION=	1.1.1
@@ -20,7 +20,7 @@ EXPIRATION_DATE=	2019-03-15
 LIB_DEPENDS=	libdmtx.so:graphics/libdmtx \
 		libqrencode.so:graphics/libqrencode
 
-USES=		cmake:outsource qt:4 tar:xz
+USES=		cmake qt:4 tar:xz
 USE_QT=		corelib gui qmake_build moc_build rcc_build uic_build
 
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/synthpod-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/synthpod-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	synthpod
 PORTVERSION=	g20170810
@@ -19,7 +19,7 @@ LIB_DEPENDS=	liblilv-0.so:audio/lilv \
 		libsord-0.so:devel/sord \
 		libsratom-0.so:audio/sratom
 
-USES=		cmake:outsource compiler:c++11-lib pkgconfig localbase
+USES=		cmake:insource compiler:c++11-lib pkgconfig localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenMusicKontrollers
 GH_TAGNAME=	07cae54

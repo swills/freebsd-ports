@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/julius/Makefile 485682 2018-11-23 15:45:28Z swills $
+# $FreeBSD: head/games/julius/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	julius
 PORTVERSION=	1.0.0
@@ -13,7 +13,7 @@ COMMENT=	Open source re-implementation of Caesar III
 
 LICENSE=	GPLv3
 
-USES=		cmake:outsource
+USES=		cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	bvschaik

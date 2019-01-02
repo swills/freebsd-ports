@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kfind/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/kfind/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	kfind
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	deskutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Find files and folders
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash ecm filemetadata guiaddons i18n iconthemes itemviews \
 		jobwidgets kdelibs4support kio notifications parts service \

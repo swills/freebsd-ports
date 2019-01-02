@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb-connector-odbc/Makefile 485795 2018-11-24 21:31:18Z brnrd $
+# $FreeBSD: head/databases/mariadb-connector-odbc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mariadb
 DISTVERSION=	3.0.7
@@ -23,7 +23,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libodbc.so:databases/unixODBC \
 		libmariadb.so:databases/mariadb-connector-c
 
-USES=		cmake
+USES=		cmake:insource
 USE_LDCONFIG=	${PREFIX}/lib/mariadbconnector-odbc
 SITESDIR=	${PORTNAME}/${PKGNAMESUFFIX:S/^-//}-${PORTVERSION:S/.b$//}
 DOCSDIR=	${PREFIX}/share/doc/mysql

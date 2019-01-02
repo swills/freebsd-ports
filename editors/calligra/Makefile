@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/calligra/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/editors/calligra/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	calligra
 DISTVERSION=	3.1.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	editors kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}
@@ -36,7 +36,7 @@ LIB_DEPENDS=	libImath.so:graphics/ilmbase \
 BUILD_DEPENDS=	pstoedit:graphics/pstoedit
 RUN_DEPENDS=	pstoedit:graphics/pstoedit
 
-USES=		cmake:outsource cpe compiler:c++11-lib desktop-file-utils eigen:3 \
+USES=		cmake cpe compiler:c++11-lib desktop-file-utils eigen:3 \
 		gettext iconv:translit jpeg kde:5 localbase:ldflags perl5 pkgconfig \
 		qt:5 shared-mime-info sqlite tar:xz
 USE_KDE=	activities archive auth bookmarks codecs completion config \

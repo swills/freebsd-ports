@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/nng/Makefile 485981 2018-11-27 03:17:12Z swills $
+# $FreeBSD: head/net/nng/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	nng
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Lightweight, broker-less messaging
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	nanomsg
 

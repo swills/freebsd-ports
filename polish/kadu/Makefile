@@ -1,5 +1,5 @@
 # Created by: Jacek Pelka <jacek@combit.com.pl>
-# $FreeBSD: head/polish/kadu/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/polish/kadu/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kadu
 PORTVERSION=	4.3
@@ -36,7 +36,7 @@ LIB_DEPENDS=	libmpdclient.so:audio/libmpdclient \
 GG6_EMOTS_DISTFILE=	kompatybilne_z_GG6.tar.gz
 GG7_EMOTS_DISTFILE=	dodatkowe_emoty_GG7.tar.gz
 
-USES=		cmake compiler:c++11-lib gettext-runtime \
+USES=		cmake:insource compiler:c++11-lib gettext-runtime \
 		libarchive pkgconfig qt:5 readline tar:bzip2
 USE_XORG=	x11 xext xfixes xscrnsaver
 USE_GNOME=	glib20

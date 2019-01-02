@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/sorcer-lv2/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/audio/sorcer-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	Sorcer
 DISTVERSIONPREFIX=	release-
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/include/boost/circular_buffer.hpp:devel/boost-libs
 LIB_DEPENDS=	libntk.so:x11-toolkits/ntk
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	openAVproductions
 GH_PROJECT=	openAV-${PORTNAME}

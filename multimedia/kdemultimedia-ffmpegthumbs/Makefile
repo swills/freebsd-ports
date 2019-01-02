@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ffmpegthumbs
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libswscale.so:multimedia/ffmpeg
 
-USES=		cmake:outsource compiler:c++11-lang kde:5 pkgconfig qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	completion config coreaddons i18n jobwidgets kio service widgetsaddons
 USE_QT=		core dbus gui network widgets xml \
 		buildtools_build qmake_build

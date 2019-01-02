@@ -1,8 +1,9 @@
 # Created by: jeff@cetlink.net
-# $FreeBSD: head/graphics/gd/Makefile 475415 2018-07-27 07:39:13Z tz $
+# $FreeBSD: head/graphics/gd/Makefile 488716 2018-12-30 14:00:46Z dinoex $
 
 PORTNAME=	libgd
 PORTVERSION=	2.2.5
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES+=	graphics
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/gd-${PORTVERSION}/

@@ -1,21 +1,22 @@
-# $FreeBSD: head/net/akonadi-contacts/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/net/akonadi-contacts/Makefile 488728 2018-12-30 17:59:52Z tcberner $
 
 PORTNAME=	akonadi-contacts
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Libraries and daemons to implement Contact Management in Akonadi
 LICENSE=	LGPL21
 
-USES=		cmake:outsource compiler:c++11-lib gettext grantlee:5 kde:5 \
+USES=		cmake compiler:c++11-lib gettext grantlee:5 kde:5 \
 		qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		dbusaddons ecm i18n iconthemes itemmodels jobwidgets kio \
 		prison service sonnet textwidgets widgetsaddons xmlgui
 # pim components
 USE_KDE+=	akonadi akonadimime calendarcore contacts mime
-USE_QT=		dbus core gui network testlib webengine widgets xml \
+USE_QT=		dbus core gui network testlib widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/security/openvas8-libraries/Makefile 447289 2017-08-03 22:25:19Z acm $
+# $FreeBSD: head/security/openvas8-libraries/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=	openvas8-libraries
 PORTVERSION?=	8.0.9
@@ -25,7 +25,7 @@ LIB_DEPENDS=	libhiredis.so:databases/hiredis \
 
 CONFLICTS?=	${PORTNAME:S/${OPENVAS_VER}/9/}-*
 
-USES=		bison cmake:outsource gnome pkgconfig
+USES=		bison cmake gnome pkgconfig
 USE_LDCONFIG=	yes
 USE_GNOME=	glib20
 

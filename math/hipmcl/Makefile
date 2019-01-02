@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/hipmcl/Makefile 487567 2018-12-16 09:07:17Z yuri $
+# $FreeBSD: head/math/hipmcl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	HipMCL
 DISTVERSION=	g20180814
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libCombBLAS.so:math/combblas \
 		libomp.so:devel/openmp
 RUN_DEPENDS=	${LOCALBASE}/lib/gcc${GCC_DEFAULT}/libgcc_s.so.1:lang/gcc${GCC_DEFAULT} # because of the link flags induced by mpich
 
-USES=		cmake:outsource compiler:c++14-lang dos2unix localbase:ldflags
+USES=		cmake compiler:c++14-lang dos2unix localbase:ldflags
 DOS2UNIX_FILES=	CMakeLists.txt
 
 BB_ACCOUNT=	azadcse

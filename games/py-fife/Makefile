@@ -1,5 +1,5 @@
 # Created by: GreenDog <fiziologus@gmail.com>
-# $FreeBSD: head/games/py-fife/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/games/py-fife/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		fife
 PORTVERSION=		0.4.1
@@ -19,7 +19,7 @@ LIB_DEPENDS=		libvorbisfile.so:audio/libvorbis \
 
 BROKEN_powerpc64=	fails to compile: fifePYTHON_wrap.cxx: relocation truncated to fit
 
-USES=			openal:al pkgconfig cmake:outsource
+USES=			openal:al pkgconfig cmake
 USE_GL=			gl
 USE_SDL=		sdl2 ttf2 image2
 USE_XORG=		xcursor

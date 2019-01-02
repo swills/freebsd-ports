@@ -1,5 +1,5 @@
 # Created by: Philip Stoev <philip.stoev@galeracluster.com>
-# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 488127 2018-12-22 20:45:43Z vd $
+# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION?=	5.6.42
@@ -30,7 +30,7 @@ DATADIR=	${PREFIX}/share/mysql
 ETCDIR=		${PREFIX}/etc/mysql
 
 USES=		bison \
-		cmake:outsource,noninja \
+		cmake:noninja \
 		compiler:c++11-lib \
 		compiler:c11 \
 		libedit \

@@ -1,9 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-peek-rails50/Makefile 488207 2018-12-23 12:39:43Z mfechner $
+# $FreeBSD: head/devel/rubygem-peek-rails50/Makefile 489064 2019-01-02 08:50:14Z mfechner $
 
 PORTNAME=	peek
 PORTVERSION=	1.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
@@ -18,7 +18,7 @@ RUN_DEPENDS?=	rubygem-concurrent-ruby>=0.9.0:devel/rubygem-concurrent-ruby \
 		rubygem-concurrent-ruby-ext>=0.9.0:devel/rubygem-concurrent-ruby-ext
 
 OPTIONS_RADIO=	RAILS
-OPTIONS_RADIO_RAILS=	RAILS4 RAILS5
+OPTIONS_RADIO_RAILS=	RAILS4 RAILS5 RAILS50
 OPTIONS_DEFAULT=RAILS50
 RAILS4_DESC=	Use Rails 4
 RAILS5_DESC=	Use Rails 5

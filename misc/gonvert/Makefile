@@ -1,8 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/misc/gonvert/Makefile 486684 2018-12-05 16:39:45Z amdmi3 $
+# $FreeBSD: head/misc/gonvert/Makefile 488690 2018-12-29 22:45:16Z cs $
 
 PORTNAME=	gonvert
-PORTVERSION=	0.2.38
+PORTVERSION=	0.2.39
 CATEGORIES=	misc python gnome
 MASTER_SITES=	http://www.unihedron.com/projects/gonvert/downloads/
 
@@ -12,8 +12,9 @@ COMMENT=	Conversion utility that allows conversion between many units
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/doc/COPYING
 
-USES=		python:2.7
+USES=		python:2.7, gnome
 USE_GNOME=	pygtk2
+
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/gstreamer1-editing-services/Makefile 488335 2018-12-25 19:14:27Z kwm $
 
 PORTNAME=	gstreamer1-editing-services
 PORTVERSION=	1.14.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gstreamer-editing-services/
 DISTNAME=	gstreamer-editing-services-${PORTVERSION}

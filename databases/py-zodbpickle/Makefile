@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/py-zodbpickle/Makefile 483408 2018-10-29 22:12:41Z sunpoet $
+# $FreeBSD: head/databases/py-zodbpickle/Makefile 488990 2019-01-01 20:35:26Z sunpoet $
 
 PORTNAME=	zodbpickle
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

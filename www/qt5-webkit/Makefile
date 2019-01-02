@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webkit/Makefile 487658 2018-12-17 06:45:48Z tcberner $
+# $FreeBSD: head/www/qt5-webkit/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		webkit
 DISTVERSION=		5.212.0-alpha2
@@ -19,7 +19,7 @@ LIB_DEPENDS=		libfontconfig.so:x11-fonts/fontconfig \
 			libpng.so:graphics/png \
 			libwebp.so:graphics/webp
 
-USES=			bison cmake:outsource compiler:c++11-lang gperf jpeg \
+USES=			bison cmake compiler:c++11-lang gperf jpeg \
 			pathfix perl5 pkgconfig python:2.7,build qt:5 sqlite:3 \
 			tar:xz
 USE_GNOME=		glib20 libxml2 libxslt

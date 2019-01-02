@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gwenview/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/graphics/gwenview/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gwenview
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -13,7 +13,7 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 		liblcms2.so:graphics/lcms2 \
 		libpng.so:graphics/png
 
-USES=		compiler:c++11-lang cmake:outsource gettext jpeg pkgconfig \
+USES=		compiler:c++11-lang cmake gettext jpeg pkgconfig \
 		kde:5 qt:5 tar:xz
 USE_KDE=	activities auth baloo bookmarks codecs completion config \
 		configwidgets coreaddons ecm emoticons filemetadata i18n \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/Makefile 486518 2018-12-03 13:36:05Z rene $
+# $FreeBSD: head/java/Makefile 488796 2018-12-31 15:24:22Z kwm $
 #
 
     COMMENT = Java language support
@@ -100,7 +100,6 @@
     SUBDIR += mmake
     SUBDIR += mx4j
     SUBDIR += netbeans
-    SUBDIR += netbeans-devel
     SUBDIR += netcomponents
     SUBDIR += netrexx
     SUBDIR += netty

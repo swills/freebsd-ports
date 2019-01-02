@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/drawpile/Makefile 477411 2018-08-17 08:09:00Z yuri $
+# $FreeBSD: head/graphics/drawpile/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	Drawpile
 DISTVERSION=	2.0.11
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libminiupnpc.so:net/miniupnpc \
 		libsodium.so:security/libsodium
 
-USES=		cmake:outsource desktop-file-utils kde:5 pkgconfig qt:5 shared-mime-info
+USES=		cmake desktop-file-utils kde:5 pkgconfig qt:5 shared-mime-info
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:tl}
 USE_QT=		core gui multimedia network sql svg widgets buildtools_build linguisttools_build qmake_build

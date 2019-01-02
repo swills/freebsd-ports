@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/xfce4-parole/Makefile 467156 2018-04-12 13:51:13Z madpilot $
+# $FreeBSD: head/multimedia/xfce4-parole/Makefile 488313 2018-12-25 11:15:44Z linimon $
 
 PORTNAME=	parole
 PORTVERSION=	1.0.1
@@ -27,13 +27,13 @@ CONFIGURE_ARGS=	--enable-notify-plugin \
 		--disable-mpris2-plugin \
 		--without-html-dir \
 		--with-gstreamer=1.0
+USES=		compiler:c++11-lang desktop-file-utils gettext-tools \
+		gmake libtool pkgconfig tar:bzip2 xfce:gtk3
 USE_GNOME=	cairo gtk30 glib20 intltool intlhack
 USE_GSTREAMER1=	core faad flac wavpack rtmp x
 USE_XFCE=	panel
 USE_XORG=	ice sm x11
 USE_LDCONFIG=	yes
-USES=		desktop-file-utils gettext-tools gmake libtool pkgconfig \
-		tar:bzip2 xfce:gtk3
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=		NLS

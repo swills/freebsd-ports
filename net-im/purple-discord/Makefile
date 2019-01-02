@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/purple-discord/Makefile 461284 2018-02-09 02:38:59Z swills $
+# $FreeBSD: head/net-im/purple-discord/Makefile 488420 2018-12-26 19:11:56Z swills $
 
 PORTNAME=	purple-discord
-PORTVERSION=	g20171227
+PORTVERSION=	g20181219
 CATEGORIES=	net-im
 
 MAINTAINER=	swills@FreeBSD.org
@@ -18,7 +18,7 @@ USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	EionRobb
-GH_TAGNAME=	9b7c3ad
+GH_TAGNAME=	95d247c
 
 DOS2UNIX_FILES=	Makefile
 

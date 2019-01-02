@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/zmap/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/net/zmap/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	zmap
 PORTVERSION=	2.1.1
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libdnet.so:net/libdnet \
 
 USE_GITHUB=	yes
 
-USES=		cmake pkgconfig
+USES=		cmake:insource pkgconfig
 
 MANPAGE=	zblacklist.1 zmap.1 ztee.1
 

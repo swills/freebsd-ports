@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/geomorph/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/geomorph/Makefile 488607 2018-12-28 15:45:33Z amdmi3 $
 
 PORTNAME=	geomorph
 PORTVERSION=	0.60.1
@@ -13,7 +13,8 @@ COMMENT=	Height field generator and editor
 LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext \
 		libpng.so:graphics/png
 
-USES=		desktop-file-utils gmake pkgconfig shebangfix
+USES=		compiler:c++11-lang desktop-file-utils gmake pkgconfig \
+		shebangfix
 SHEBANG_FILES=	update-rc
 USE_GL=		yes
 GNU_CONFIGURE=	yes

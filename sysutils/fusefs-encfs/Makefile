@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/sysutils/fusefs-encfs/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/fusefs-encfs/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	encfs
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ COMMENT=	Encrypted pass-through FUSE filesystem
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource compiler:c++11-lib fuse ssl
+USES=		cmake compiler:c++11-lib fuse ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	vgough
 

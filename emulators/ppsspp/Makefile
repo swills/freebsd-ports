@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/ppsspp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/emulators/ppsspp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ppsspp
 DISTVERSIONPREFIX=	v
@@ -32,7 +32,7 @@ GH_TUPLE?=	hrydgard:glslang:29619b23:glslang/ext/glslang \
 
 CONFLICTS_INSTALL=	${PORTNAME}-*
 
-USES=		cmake:outsource compiler:c++11-lib localbase:ldflags pkgconfig
+USES=		cmake compiler:c++11-lib localbase:ldflags pkgconfig
 EXCLUDE=	libzip zlib
 EXTRACT_AFTER_ARGS=${EXCLUDE:S,^,--exclude ,}
 USE_GL=		gl glew glu

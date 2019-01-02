@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kde-thumbnailer-chm/Makefile 483135 2018-10-27 14:08:57Z makc $
+# $FreeBSD: head/misc/kde-thumbnailer-chm/Makefile 488462 2018-12-26 21:55:55Z linimon $
 
 PORTNAME=	kde-thumbnailer-chm
 PORTVERSION=	0.2.1
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libchm.so:misc/chmlib
 
-USES=		cmake:outsource kde:5 qt:5
+USES=		cmake compiler:c++11-lang kde:5 qt:5
 USE_KDE=	ecm_build kio
 USE_QT=		buildtools_build qmake_build gui
 

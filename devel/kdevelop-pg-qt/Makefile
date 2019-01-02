@@ -1,5 +1,5 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/devel/kdevelop-pg-qt/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/kdevelop-pg-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdevelop-pg-qt
 DISTVERSION=	2.1.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex
 
-USES=		bison cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
+USES=		bison cmake compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		core testlib \
 		buildtools_build qmake_build

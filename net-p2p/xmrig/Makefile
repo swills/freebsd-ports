@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-p2p/xmrig/Makefile 482415 2018-10-19 08:39:13Z ehaupt $
+# $FreeBSD: head/net-p2p/xmrig/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xmrig
 PORTVERSION=	2.8.3
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to configure: Target "xmrig" requires the language dialect "CXX11", but CMake does not know the compile flags to use to enable it.
 
-USES=		cmake:outsource ssl
+USES=		cmake ssl
 USE_GITHUB=	yes
 USE_RC_SUBR=	${PORTNAME}
 

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/appleseed/Makefile 487777 2018-12-18 23:28:17Z antoine $
+# $FreeBSD: head/graphics/appleseed/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	appleseed
 DISTVERSION=	1.7.1-beta
@@ -26,7 +26,7 @@ GH_ACCOUNT=	${PORTNAME}hq
 ONLY_FOR_ARCHS=	i386 amd64
 ONLY_FOR_ARCHS_REASON=	not ported to it yet
 
-USES=		cmake:outsource compiler:env
+USES=		cmake compiler:env
 
 LDFLAGS+=	-lboost_atomic
 CMAKE_ARGS=	-DUSE_STATIC_BOOST:BOOL=OFF -DUSE_STATIC_OIIO:BOOL=OFF \

@@ -1,5 +1,5 @@
 # Created by: Clemens Zauner <czauner+ports@onlineloop.com>
-# $FreeBSD: head/textproc/wbxml2/Makefile 456480 2017-12-16 18:11:23Z flo $
+# $FreeBSD: head/textproc/wbxml2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wbxml2
 PORTVERSION=	0.11.6
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
-USES=		cmake:outsource iconv tar:bzip2
+USES=		cmake iconv tar:bzip2
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/libwbxml-${PORTVERSION}
 

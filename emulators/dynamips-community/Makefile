@@ -1,5 +1,5 @@
 # Created by: Pavel I Volkov <pavelivolkov@googlemail.com>
-# $FreeBSD: head/emulators/dynamips-community/Makefile 450356 2017-09-22 11:43:13Z bofh $
+# $FreeBSD: head/emulators/dynamips-community/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dynamips
 PORTVERSION=	0.2.17
@@ -21,7 +21,7 @@ CFLAGS+=	-I${PREFIX}/include/libelf
 
 CONFLICTS=	dynamips-[0-9]* dynamips-devel-[0-9]*
 
-USES=		cmake
+USES=		cmake:insource
 USE_GITHUB=	yes
 
 OPTIONS_DEFINE=	DOCS

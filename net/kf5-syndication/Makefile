@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kf5-syndication/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/net/kf5-syndication/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	syndication
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KDE RSS feed handling library
 
 LICENSE=	LGPL21
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	codecs config coreaddons ecm kio service
 USE_QT=		core gui xml \
 		buildtools_build qmake_build

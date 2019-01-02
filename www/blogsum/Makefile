@@ -1,5 +1,5 @@
 # Created by: jhuldtgren
-# $FreeBSD: head/www/blogsum/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/blogsum/Makefile 488584 2018-12-28 07:30:21Z tobik $
 
 PORTNAME=	blogsum
 PORTVERSION=	1.1
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	http://www.dixongroup.net/
 
-MAINTAINER=	jhuldtgren@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple weblog
 
 RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \

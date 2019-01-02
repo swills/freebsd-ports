@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/xxhash/Makefile 433659 2017-02-08 17:56:23Z rezny $
+# $FreeBSD: head/devel/xxhash/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xxhash
 PORTVERSION=	0.6.2
@@ -15,7 +15,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Cyan4973
 GH_PROJECT=	xxHash
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 CMAKE_SOURCE_PATH=	${WRKSRC}/cmake_unofficial
 

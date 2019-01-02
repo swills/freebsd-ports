@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-memory_profiler/Makefile 484590 2018-11-10 07:59:00Z sunpoet $
+# $FreeBSD: head/devel/py-memory_profiler/Makefile 488995 2019-01-01 20:36:02Z sunpoet $
 
 PORTNAME=	memory_profiler
-PORTVERSION=	0.54.0
+PORTVERSION=	0.55.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

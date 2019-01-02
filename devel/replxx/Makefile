@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/replxx/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/replxx/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	replxx
 DISTVERSIONPREFIX=	release-
@@ -12,7 +12,7 @@ COMMENT=	Portable readline library capable of handling UTF-8
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-USES=		cmake:outsource compiler:c++14-lang
+USES=		cmake compiler:c++14-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	AmokHuginnsson
 

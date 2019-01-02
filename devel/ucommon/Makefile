@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/devel/ucommon/Makefile 487347 2018-12-13 06:34:18Z tobik $
+# $FreeBSD: head/devel/ucommon/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ucommon
 PORTVERSION=	7.0.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 BROKEN_SSL=	openssl111
 BROKEN_SSL_REASON_openssl111=	error: allocation of incomplete type 'EVP_CIPHER_CTX'
 
-USES=		compiler:c++11-lib cmake:outsource pathfix pkgconfig ssl
+USES=		compiler:c++11-lib cmake pathfix pkgconfig ssl
 CMAKE_ARGS=	-DBUILD_TESTING:BOOL=ON \
 		-DCMAKE_INSTALL_BINDIR:STRING=bin/${PORTNAME}
 USE_LDCONFIG=	yes

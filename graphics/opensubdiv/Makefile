@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/opensubdiv/Makefile 486967 2018-12-08 17:20:36Z pi $
+# $FreeBSD: head/graphics/opensubdiv/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	opensubdiv
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	glfw>2.7.0:graphics/glfw
 
-USES=		cmake:outsource
+USES=		cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	PixarAnimationStudios

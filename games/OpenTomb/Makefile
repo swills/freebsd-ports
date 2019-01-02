@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/OpenTomb/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/OpenTomb/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	OpenTomb
 DISTVERSIONPREFIX=	win32-
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake compiler:c++11-lang lua openal
+USES=		cmake:insource compiler:c++11-lang lua openal
 USE_GITHUB=	yes
 USE_SDL=	sdl2
 LLD_UNSAFE=	yes

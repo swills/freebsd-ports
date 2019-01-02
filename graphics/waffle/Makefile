@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/waffle/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/waffle/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	waffle
 PORTVERSION=	1.5.2
@@ -12,7 +12,7 @@ COMMENT=	Library that allows to defer selection of an OpenGL API until runtime
 
 LICENSE=	BSD2CLAUSE
 
-USES=		cmake:outsource compiler:c11 localbase pathfix pkgconfig tar:xz
+USES=		cmake compiler:c11 localbase pathfix pkgconfig tar:xz
 USE_GL=		egl gl
 USE_LDCONFIG=	yes
 USE_XORG=	x11 xcb

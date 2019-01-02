@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/erkale/Makefile 488078 2018-12-22 08:33:27Z yuri $
+# $FreeBSD: head/science/erkale/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	erkale
 DISTVERSION=	g20181121
@@ -26,7 +26,7 @@ FLAVORS=	serial parallel
 FLAVOR?=	${FLAVORS:[1]}
 serial_PKGNAMESUFFIX=	-serial
 
-USES=		cmake:outsource,noninja fortran pkgconfig
+USES=		cmake:noninja fortran pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	susilehtola
 GH_TAGNAME=	0927d8c

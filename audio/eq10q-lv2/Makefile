@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/eq10q-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/eq10q-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	eq10q
 DISTVERSION=	2.2
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
-USES=		cmake:outsource compiler:c++11-lang dos2unix localbase:ldflags pkgconfig
+USES=		cmake compiler:c++11-lang dos2unix localbase:ldflags pkgconfig
 USE_GNOME=	glib20 gtk20 gtkmm24 gdkpixbuf2 atkmm cairo cairomm pangomm
 DOS2UNIX_FILES=	dsp/vu.h
 

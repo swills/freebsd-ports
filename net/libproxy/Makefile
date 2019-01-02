@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/libproxy/Makefile 473062 2018-06-22 19:59:41Z tcberner $
+# $FreeBSD: head/net/libproxy/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libproxy
 PORTVERSION=	0.4.15
@@ -12,7 +12,7 @@ COMMENT?=	Library that provides automatic proxy configuration management
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES+=		cmake:outsource cpe pathfix pkgconfig
+USES+=		cmake cpe pathfix pkgconfig
 CPE_VENDOR=	libproxy_project
 PATHFIX_CMAKELISTSTXT=	devfiles.cmk
 USE_GITHUB=	yes

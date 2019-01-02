@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kbreakout/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/games/kbreakout/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kbreakout
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	games kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons crash \
 		dbusaddons ecm guiaddons i18n iconthemes jobwidgets kio libkdegames \
 		service widgetsaddons xmlgui

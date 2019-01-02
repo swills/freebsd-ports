@@ -1,5 +1,5 @@
 # Created by: Kurt Kanzenbach <kurt@kmk-computers.de>
-# $FreeBSD: head/science/libgeodecomp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/libgeodecomp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		libgeodecomp
 PORTVERSION=		0.4.0
@@ -16,7 +16,7 @@ LICENSE_FILE=		${WRKSRC}/LICENSE
 LIB_DEPENDS=		libboost_system.so:devel/boost-libs libboost_date_time.so:devel/boost-libs \
 			libboost_filesystem.so:devel/boost-libs
 
-USES=			cmake:outsource compiler:c++11-lib
+USES=			cmake compiler:c++11-lib
 USE_GCC=		yes
 USE_LDCONFIG=		yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/flann/Makefile 486021 2018-11-27 16:24:14Z linimon $
+# $FreeBSD: head/math/flann/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	flann
 DISTVERSION=	1.9.1-19
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		libsz.so:science/szip
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	mariusmuja
 USE_LDCONFIG=	yes

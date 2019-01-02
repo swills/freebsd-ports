@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/signon-kwallet-extension/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/sysutils/signon-kwallet-extension/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	signon-kwallet-extension
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KWallet integration for signon framework
 
 LIB_DEPENDS=	libsignon-qt5.so:sysutils/signon-qt5
 
-USES=		cmake:outsource compiler:c++11-lang kde:5 pkgconfig qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	ecm wallet
 USE_QT=		core dbus gui \
 		buildtools_build qmake_build

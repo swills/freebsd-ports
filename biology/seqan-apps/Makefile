@@ -1,5 +1,5 @@
 # Created by: Hannes Hauswedell <h2+fbsdports@fsfe.org>
-# $FreeBSD: head/biology/seqan-apps/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/seqan-apps/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	seqan-apps
 DISTVERSIONPREFIX=	seqan-v
@@ -15,7 +15,7 @@ LICENSE_COMB=	multi
 
 BUILD_DEPENDS=	boost-libs>0:devel/boost-libs
 
-USES=		cmake:outsource compiler:openmp # once #199603 is resolved, add c++14-lang
+USES=		cmake compiler:openmp # once #199603 is resolved, add c++14-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	seqan
 GH_PROJECT=	seqan

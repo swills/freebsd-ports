@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpp2py/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/cpp2py/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	cpp2py
 DISTVERSION=	1.5-19
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	${PY_DEPENDS} \
 RUN_DEPENDS=	${PY_DEPENDS} \
 		llvm${LLVM_VER}>0:devel/llvm${LLVM_VER}
 
-USES=		cmake:outsource compiler:c++14-lang python:2.7 shebangfix
+USES=		cmake compiler:c++14-lang python:2.7 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	TRIQS
 SHEBANG_FILES=	bin/c*

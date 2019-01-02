@@ -1,5 +1,5 @@
 # Created by: Andrew Baznikin <dikiy@scn.ru>
-# $FreeBSD: head/devel/raknet/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/raknet/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	raknet
 PORTVERSION=	3.9.2
@@ -30,7 +30,7 @@ LEGAL_TEXT=	Special authorization granted to distribute version 3.x under GPLv3
 
 NO_WRKSUBDIR=	yes
 
-USES=		dos2unix cmake zip
+USES=		dos2unix cmake:insource zip
 
 USE_LDCONFIG=	yes
 USE_GCC=	any

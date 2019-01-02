@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libuvc/Makefile 455908 2017-12-10 19:55:16Z yuri $
+# $FreeBSD: head/multimedia/libuvc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libuvc
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Cross-platform library for USB video devices
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		cmake:outsource jpeg pkgconfig
+USES=		cmake jpeg pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	ktossell
 

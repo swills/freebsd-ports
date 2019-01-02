@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/kf5-oxygen-icons5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/kf5-oxygen-icons5/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	oxygen-icons5
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	x11-themes kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	The Oxygen icon theme for KDE
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake kde:5 qt:5 tar:xz
 USE_KDE=	ecm_build  # We only install icons.
 
 # The qmake dependency is only needed so that kf5-e-c-m can query qmake for

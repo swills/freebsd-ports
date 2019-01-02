@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/audio/ccaudio2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/ccaudio2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ccaudio2
 PORTVERSION=	2.2.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libccgnu2.so:devel/commoncpp \
 		libgsm.so:audio/gsm \
 		libspeex.so:audio/speex
 
-USES=		cmake:outsource compiler:c++11-lib pathfix pkgconfig
+USES=		cmake compiler:c++11-lib pathfix pkgconfig
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DWITH_INCLUDES:PATH=${LOCALBASE}/include

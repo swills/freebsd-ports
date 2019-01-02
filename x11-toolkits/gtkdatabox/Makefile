@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/x11-toolkits/gtkdatabox/Makefile 452976 2017-10-27 12:24:20Z vanilla $
+# $FreeBSD: head/x11-toolkits/gtkdatabox/Makefile 488610 2018-12-28 16:45:23Z fernape $
 
 PORTNAME=	gtkdatabox
-PORTVERSION=	0.9.3.0
+PORTVERSION=	0.9.3.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF
 DIST_SUBDIR=	gnome2
@@ -13,12 +13,16 @@ COMMENT=	GTK+2 widget to display large amounts of numerical data
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		libtool pathfix pkgconfig
-USE_GNOME=	gtk20
+LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
+
+USES=		gnome libtool pathfix pkgconfig
+USE_GNOME=	cairo gdkpixbuf2 gtk20
+USE_LDCONFIG=	yes
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--includedir="${PREFIX}/include/${PORTNAME}" \
 		--with-html-dir="${PREFIX}/share/doc"
-USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 PORTDOCS=	*

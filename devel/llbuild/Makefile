@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llbuild/Makefile 473009 2018-06-21 23:52:37Z linimon $
+# $FreeBSD: head/devel/llbuild/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		llbuild
 DISTVERSIONPREFIX=	swift-DEVELOPMENT-
@@ -18,7 +18,7 @@ BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wdocument
 
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3
 
-USES=		cmake:outsource
+USES=		cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	apple

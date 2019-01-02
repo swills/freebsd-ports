@@ -1,8 +1,8 @@
 # Created by: mm
-# $FreeBSD: head/devel/orc/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/devel/orc/Makefile 488336 2018-12-25 19:19:54Z kwm $
 
 PORTNAME=	orc
-PORTVERSION=	0.4.25
+PORTVERSION=	0.4.28
 CATEGORIES=	devel
 MASTER_SITES=	http://gstreamer.freedesktop.org/data/src/orc/
 

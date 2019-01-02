@@ -1,5 +1,5 @@
 # Created by: bart <coder@tuxfamily.org>
-# $FreeBSD: head/math/pdal/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/pdal/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pdal
 DISTVERSION=	1.7.2
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		liblaszip.so:archivers/laszip \
 		libjsoncpp.so:devel/jsoncpp
 
-USES=		cmake:outsource compiler:c++11-lib pathfix pkgconfig
+USES=		cmake compiler:c++11-lib pathfix pkgconfig
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:tu}

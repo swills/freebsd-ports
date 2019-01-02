@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/graphics/glfw/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/graphics/glfw/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	glfw
 PORTVERSION=	3.2.1
@@ -13,7 +13,7 @@ COMMENT=	Portable framework for OpenGL development
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-USES=		cmake localbase zip
+USES=		cmake:insource localbase zip
 USE_GL=		glu
 USE_LDCONFIG=	yes
 CMAKE_ON=	BUILD_SHARED_LIBS

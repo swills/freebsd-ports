@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webengine/Makefile 487600 2018-12-16 16:34:25Z tijl $
+# $FreeBSD: head/www/qt5-webengine/Makefile 488741 2018-12-30 21:55:00Z adridg $
 
 # QtWebEngine itself is a very thin layer of Qt code on top of a large part of
 # Chromium (everything up to the content/ layer). As such, most of the work in
@@ -20,7 +20,7 @@
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -56,7 +56,10 @@ OPTIONS_DEFAULT=	ALSA
 
 AUDIO_DESC=		Audio backend
 
+# Need the alsa plugins to get sound at runtime, otherwise messages
+# that the pcm_oss plugin can't be opened.
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
+ALSA_RUN_DEPENDS=	alsa-plugins>=0:audio/alsa-plugins
 ALSA_VARS=		QMAKE_CONFIGURE_ARGS+=-alsa
 ALSA_VARS_OFF=		QMAKE_CONFIGURE_ARGS+=-no-alsa
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio

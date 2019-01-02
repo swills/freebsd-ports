@@ -1,5 +1,6 @@
-# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 474727 2018-07-16 11:08:17Z tcberner $
-PORTREVISION=	1
+# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 488657 2018-12-29 07:18:50Z rigoletto $
+
+PORTREVISION=	2
 
 PKGNAMESUFFIX=	-gtk
 

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/qxkb/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/x11/qxkb/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qxkb
 PORTVERSION=	0.4.6
@@ -16,7 +16,7 @@ EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libxkbfile.so:x11/libxkbfile
 
-USES=		cmake qt:4
+USES=		cmake:insource qt:4
 USE_QT=		linguisttools_build moc_build qmake_build rcc_build uic_build \
 		corelib gui svg
 

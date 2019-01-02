@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/graphics/exiv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/exiv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	exiv2
 DISTVERSION=	0.26
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
-USES=		cmake:outsource compiler:c++11-lang cpe gettext iconv pathfix localbase:ldflags
+USES=		cmake compiler:c++11-lang cpe gettext iconv pathfix localbase:ldflags
 USE_LDCONFIG=	yes
 
 LDFLAGS+=	-lintl

@@ -1,4 +1,4 @@
-# $FreeBSD: head/korean/Makefile 459893 2018-01-25 00:39:44Z jkim $
+# $FreeBSD: head/korean/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Korean support
@@ -23,7 +23,6 @@
     SUBDIR += imhangul-gtk2
     SUBDIR += imhangul-gtk3
     SUBDIR += kaistfonts
-    SUBDIR += kde4-l10n
     SUBDIR += ko.TeX
     SUBDIR += ko.TeX-fonts-base
     SUBDIR += ko.TeX-fonts-extra

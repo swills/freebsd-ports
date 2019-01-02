@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/py-khard/Makefile 481769 2018-10-10 21:36:03Z rigoletto $
+# $FreeBSD: head/deskutils/py-khard/Makefile 488400 2018-12-26 15:26:13Z rigoletto $
 
 PORTNAME=	khard
-DISTVERSION=	0.12.2
+DISTVERSION=	0.13.0
 CATEGORIES=	deskutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -25,6 +25,7 @@ USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 
 PLIST_FILES=	share/zsh/site-functions/_khard \
+		share/zsh/site-functions/_email-khard \
 		${EXAMPLESDIR}/khard.conf.example \
 		${EXAMPLESDIR}/template_for_contact_creation.yaml
 
@@ -33,6 +34,8 @@ SUB_FILES=	pkg-message
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/zsh/site-functions
 	${INSTALL_DATA} ${WRKSRC}/misc/zsh/_khard \
+		${STAGEDIR}${PREFIX}/share/zsh/site-functions
+	${INSTALL_DATA} ${WRKSRC}/misc/zsh/_email-khard \
 		${STAGEDIR}${PREFIX}/share/zsh/site-functions
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	(cd ${WRKSRC}/misc/khard/ && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})

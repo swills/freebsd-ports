@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/mkl-dnn/Makefile 487936 2018-12-21 01:50:48Z yuri $
+# $FreeBSD: head/math/mkl-dnn/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mkl-dnn
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,7 @@ BROKEN_i386=	error: shift count >= width of type (and other errors), see https:/
 
 TEST_DEPENDS=	bash:shells/bash
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	intel
 USE_LDCONFIG=	yes

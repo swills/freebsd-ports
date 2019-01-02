@@ -1,8 +1,8 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/net/usbredir/Makefile 430669 2017-01-05 22:58:02Z jbeich $
+# $FreeBSD: head/net/usbredir/Makefile 489063 2019-01-02 08:16:38Z bofh $
 
 PORTNAME=	usbredir
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.0
 CATEGORIES=	net devel
 MASTER_SITES=	http://spice-space.org/download/usbredir/
 
@@ -13,8 +13,12 @@ LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	dual
 
 USES=		gmake libtool pathfix pkgconfig tar:bzip2
+
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
+post-patch:
+	@${REINPLACE_CMD} 's|SOL_TCP|IPPROTO_TCP|' \
+	       ${WRKSRC}/usbredirserver/usbredirserver.c
 .include <bsd.port.mk>

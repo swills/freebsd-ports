@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/go-for-it/Makefile 487003 2018-12-09 00:50:56Z swills $
+# $FreeBSD: head/deskutils/go-for-it/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	go-for-it
 DISTVERSION=	1.6.9
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libnotify.so:devel/libnotify
 
-USES=		cmake:outsource gettext pkgconfig
+USES=		cmake gettext pkgconfig
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	JMoerman

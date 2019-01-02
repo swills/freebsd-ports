@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/R-cran-readxl/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/textproc/R-cran-readxl/Makefile 488365 2018-12-26 09:30:18Z amdmi3 $
 
 PORTNAME=	readxl
 DISTVERSION=	1.1.0
@@ -9,7 +9,9 @@ DISTNAME=	${PORTNAME}_${DISTVERSION}
 MAINTAINER=	dbn@FreeBSD.org
 COMMENT=	Read Excel Files
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3 BSD2CLAUSE
+LICENSE_COMB=	multi
+LICENSE_FILE_BSD2CLAUSE=	${WRKSRC}/LICENSE.note
 
 BUILD_DEPENDS=	R-cran-knitr>0:print/R-cran-knitr
 RUN_DEPENDS=	R-cran-Rcpp>=0.12.12:devel/R-cran-Rcpp \

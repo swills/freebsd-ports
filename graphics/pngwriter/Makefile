@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/pngwriter/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/pngwriter/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pngwriter
 PORTVERSION=	0.7.0
@@ -19,7 +19,7 @@ OPTIONS_DEFINE=	DOCS
 
 PORTDOCS=	CHANGES EXAMPLES README PNGwriterQuickReference.pdf
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 CMAKE_ON=	BUILD_SHARED_LIBS PNGwriter_USE_FREETYPE
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes

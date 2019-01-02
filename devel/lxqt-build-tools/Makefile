@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/lxqt-build-tools/Makefile 474277 2018-07-09 18:03:14Z jsm $
+# $FreeBSD: head/devel/lxqt-build-tools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lxqt-build-tools
 PORTVERSION=	0.5.0
@@ -12,7 +12,7 @@ COMMENT=	Helpers CMake modules for LXQt
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/BSD-3-Clause
 
-USES=		cmake:outsource lxqt pkgconfig qt:5 tar:xz
+USES=		cmake lxqt pkgconfig qt:5 tar:xz
 USE_QT=		qmake_build buildtools_build core
 USE_GNOME=	glib20
 

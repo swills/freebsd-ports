@@ -1,5 +1,5 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/science/paraview/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/paraview/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	paraview
 DISTVERSION=	5.5.1
@@ -35,7 +35,7 @@ LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 RUN_DEPENDS=	bash:shells/bash	\
 		${PYTHON_SITELIBDIR}/matplotlib/pyplot.py:math/py-matplotlib@${PY_FLAVOR}
 
-USES=		alias cmake:outsource jpeg localbase python:2.7 qt:5 shebangfix
+USES=		alias cmake jpeg localbase python:2.7 qt:5 shebangfix
 USE_QT=		core gui help network sql widgets x11extras xmlpatterns buildtools_build qmake_build
 USE_GL=		gl glu
 USE_XORG=	x11 xt xext ice xdmcp xau xcb xfixes xdamage xxf86vm xrender sm xorgproto

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/jdftx/Makefile 487813 2018-12-19 20:06:22Z yuri $
+# $FreeBSD: head/science/jdftx/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	jdftx
 DISTVERSIONPREFIX=	v
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 RUN_DEPENDS=	bash:shells/bash
 TEST_DEPENDS=	bash:shells/bash
 
-USES=		compiler:c++11-lang cmake:outsource fortran localbase:ldflags shebangfix
+USES=		compiler:c++11-lang cmake fortran localbase:ldflags shebangfix
 SHEBANG_GLOB=	*.sh
 SHEBANG_FILES=	scripts/*
 SHEBANG_LANG=	octave

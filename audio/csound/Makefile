@@ -1,9 +1,10 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound/Makefile 487326 2018-12-12 21:49:33Z yuri $
+# $FreeBSD: head/audio/csound/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	csound
 DISTVERSION=	6.12.2-83
 DISTVERSIONSUFFIX=	-gdf2edd269
+PORTREVISION=	1
 CATEGORIES=	audio lang
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -18,7 +19,7 @@ BUILD_DEPENDS=	boost-libs>0:devel/boost-libs \
 LIB_DEPENDS=	libsamplerate.so:audio/libsamplerate \
 		libsndfile.so:audio/libsndfile
 
-USES=		alias bison cmake:outsource compiler:c++11-lib eigen:3 localbase ncurses python:2.7
+USES=		alias bison cmake compiler:c++11-lib eigen:3 localbase ncurses python:2.7
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/aom/Makefile 488157 2018-12-23 00:55:36Z jbeich $
+# $FreeBSD: head/multimedia/aom/Makefile 488635 2018-12-29 00:03:44Z jbeich $
 
 PORTNAME=	aom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.0-1103
-DISTVERSIONSUFFIX=	-g9a48f9ca5
+DISTVERSION=	1.0.0-1115
+DISTVERSIONSUFFIX=	-ga1ebb57ec
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${BUILD_DEPENDS_${ARCH}}
 BUILD_DEPENDS_amd64=	nasm:devel/nasm
 BUILD_DEPENDS_i386=	nasm:devel/nasm
 
-USES=		cmake:outsource compiler:c++11-lib perl5
+USES=		cmake compiler:c++11-lib perl5
 USE_GITHUB=	yes
 USE_PERL5=	build
 USE_LDCONFIG=	yes

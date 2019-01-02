@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/chilitags/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/chilitags/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	chilitags
 DISTVERSION=	2.0.0-169
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/gpl.txt
 LIB_DEPENDS=	libopencv_imgproc.so:graphics/opencv-core \
 		libopencv_video.so:graphics/opencv
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	chili-epfl
 USE_LDCONFIG=	yes

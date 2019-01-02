@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/osm2pgrouting/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/converters/osm2pgrouting/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	osm2pgrouting
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libexpat.so:textproc/expat2 \
 		libpqxx.so:databases/postgresql-libpqxx
 
-USES=		cmake:outsource compiler:c++11-lang pgsql
+USES=		cmake compiler:c++11-lang pgsql
 USE_GITHUB=	yes
 GH_ACCOUNT=	pgRouting
 WANT_PGSQL=	client

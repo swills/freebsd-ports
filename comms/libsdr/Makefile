@@ -1,5 +1,5 @@
 # Created by: Jeffrey Baitis <jeff@baitis.net>
-# $FreeBSD: head/comms/libsdr/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/comms/libsdr/Makefile 488710 2018-12-30 12:37:02Z linimon $
 
 PORTNAME=	libsdr
 PORTVERSION=	0.1.0
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	hmatuschek
 
 MAKE_JOBS_UNSAFE=	yes
-USES=		cmake pkgconfig
+USES=		compiler:c++11-lang cmake pkgconfig
 CMAKE_ARGS+=-DCMAKE_BUILD_TYPE=RELEASE
 USE_LDCONFIG=	yes
 

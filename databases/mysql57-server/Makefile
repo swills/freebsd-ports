@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql57-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/mysql57-server/Makefile 488374 2018-12-26 12:08:25Z mmokhi $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.7.24
-PORTREVISION?=	3
+PORTREVISION?=	4
 CATEGORIES=	databases ipv6
 MASTER_SITES=	MYSQL/MySQL-5.7
 PKGNAMESUFFIX?=	57-server
@@ -17,7 +17,7 @@ LICENSE=	GPLv2
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 SLAVEDIRS=	databases/mysql57-client
-USES=		bison:build cmake:outsource,noninja compiler:c11 compiler:c++11-lib \
+USES=		bison:build cmake:noninja compiler:c11 compiler:c++11-lib \
 		cpe libedit localbase perl5 shebangfix ssl
 
 USE_PERL5=	run

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/lxqt-admin/Makefile 479617 2018-09-12 17:51:34Z jsm $
+# $FreeBSD: head/sysutils/lxqt-admin/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lxqt-admin
 PORTVERSION=	0.13.0
@@ -11,7 +11,8 @@ COMMENT=	System administration tool for the LXQt desktop
 
 LICENSE=	LGPL21+
 
-USES=	cmake:outsource kde:5 localbase lxqt pkgconfig gnome tar:xz qt:5
+USES=	cmake compiler:c++11-lang gnome kde:5 localbase \
+	lxqt pkgconfig tar:xz qt:5
 USE_QT=	buildtools_build qmake_build core dbus gui svg \
 	widgets x11extras xml
 USE_KDE=	windowsystem

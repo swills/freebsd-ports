@@ -1,8 +1,8 @@
 # Created by: Nicolas de Bari Embriz Garcia Rojas <nbari@tequila.io>
-# $FreeBSD: head/www/go-www/Makefile 483107 2018-10-27 03:14:07Z swills $
+# $FreeBSD: head/www/go-www/Makefile 488250 2018-12-24 02:08:40Z wen $
 
 PORTNAME=	www
-PORTVERSION=	1.1.2
+PORTVERSION=	2.0.0
 CATEGORIES=	www
 PKGNAMEPREFIX=	go-
 
@@ -16,7 +16,7 @@ USES=		go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nbari:DEFAULT
-GH_TUPLE=	golang:crypto:e363607:crypto/src/golang.org/x/crypto
+GH_TUPLE=	golang:crypto:505ab14:crypto/src/golang.org/x/crypto
 GH_SUBDIR=	src/github.com/nbari/${PORTNAME}
 
 PLIST_FILES=	bin/www

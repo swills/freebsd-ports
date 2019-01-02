@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/mmtf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/mmtf/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mmtf
 DISTVERSION=	g20180730
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${LOCALBASE}/include/msgpack.hpp:devel/msgpack
 
-USES=		cmake:outsource compiler:c++11-lang localbase:ldflags
+USES=		cmake compiler:c++11-lang localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	rcsb
 GH_PROJECT=	mmtf-cpp

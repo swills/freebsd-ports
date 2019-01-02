@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/eigen3/Makefile 476182 2018-08-01 14:20:32Z tcberner $
+# $FreeBSD: head/math/eigen3/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	eigen
-DISTVERSION=	3.3.5
+DISTVERSION=	3.3.7
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${PORTNAME}/${PORTNAME}/get/
 DISTNAME=	${PORTVERSION}
@@ -16,10 +16,10 @@ LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 LICENSE_FILE_MPL20=	${WRKSRC}/COPYING.MPL2
 
 CMAKE_ARGS=	-DPKGCONFIG_INSTALL_DIR:PATH="${PREFIX}/libdata/pkgconfig"
-USES=		cmake:outsource tar:bzip2
+USES=		cmake tar:bzip2
 NO_BUILD=	yes
 NO_ARCH=	yes
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTNAME}-b3f3d4950030
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTNAME}-323c052e1731
 
 .include <bsd.port.mk>

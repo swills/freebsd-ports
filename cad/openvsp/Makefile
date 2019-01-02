@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/openvsp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/cad/openvsp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openvsp
 DISTVERSIONPREFIX=	${GH_PROJECT}_
@@ -30,9 +30,8 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libopenNURBS.a:graphics/opennurbs \
 		${LOCALBASE}/include/glm/glm.hpp:math/glm \
 		${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
 
-USES=		compiler:c++11-lang cmake:outsource,noninja localbase\
+USES=		compiler:c++11-lang cmake:noninja localbase\
 		gl gnome jpeg
-
 USE_GITHUB=	yes
 GH_PROJECT=	OpenVSP
 GH_ACCOUNT=	${GH_PROJECT}

@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/x11/rsibreak/Makefile 481653 2018-10-09 20:07:26Z tcberner $
+# $FreeBSD: head/x11/rsibreak/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	rsibreak
 PORTVERSION=	0.12.9
@@ -12,7 +12,7 @@ COMMENT=	KDE RSI prevention tool
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons crash dbusaddons doctools ecm \
 		iconthemes i18n idletime notifications notifyconfig \
 		sonnet textwidgets xmlgui widgetsaddons windowsystem

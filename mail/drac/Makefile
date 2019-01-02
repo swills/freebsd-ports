@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/mail/drac/Makefile 479426 2018-09-10 14:40:42Z mat $
+# $FreeBSD: head/mail/drac/Makefile 488296 2018-12-25 07:22:49Z tobik $
 
 PORTNAME=	drac
 PORTVERSION=	1.12
@@ -13,6 +13,9 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dynamic Relay Authorization Control, a POP-before-SMTP implementation
+
+DEPRECATED=	Unmaintained upstream since 2003
+EXPIRATION_DATE=	2019-01-15
 
 PLIST_FILES=	sbin/rpc.dracd include/drac.h lib/libdrac.a \
 		etc/dracd.allow-sample

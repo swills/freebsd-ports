@@ -1,5 +1,5 @@
 # Created by: Ryan Melcer <rmelcer@iteris.com>
-# $FreeBSD: head/graphics/mapcache/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/graphics/mapcache/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		mapcache
 DISTVERSION=		1.4.0-94
@@ -21,7 +21,7 @@ LIB_DEPENDS=		libpng.so:graphics/png \
 USE_GITHUB=		yes
 GH_ACCOUNT=		mapserver
 
-USES=			cmake:outsource jpeg localbase
+USES=			cmake jpeg localbase
 USE_LDCONFIG=		yes
 CMAKE_ARGS+=		-DWITH_OGR=1 -DWITH_PIXMAN=1 -DWITH_BERKELEY_DB=0
 

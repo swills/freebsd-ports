@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/qmdnsengine/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/dns/qmdnsengine/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qmdnsengine
 DISTVERSION=	0.1.0-13
@@ -12,7 +12,7 @@ COMMENT=	Multicast DNS library for Qt applications
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		cmake:outsource compiler:c++11-lang qt:5
+USES=		cmake compiler:c++11-lang qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	nitroshare
 USE_QT=		core network buildtools_build qmake_build

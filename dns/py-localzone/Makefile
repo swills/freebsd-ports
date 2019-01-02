@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/py-localzone/Makefile 485536 2018-11-21 20:19:11Z sunpoet $
+# $FreeBSD: head/dns/py-localzone/Makefile 489004 2019-01-01 20:36:52Z sunpoet $
 
 PORTNAME=	localzone
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.5
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

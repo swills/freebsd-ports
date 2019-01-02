@@ -1,10 +1,9 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/editors/neovim/Makefile 475435 2018-07-27 12:45:29Z adamw $
+# $FreeBSD: head/editors/neovim/Makefile 488755 2018-12-31 04:03:59Z adamw $
 
 PORTNAME=	neovim
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.1
-PORTREVISION=	1
+DISTVERSION=	0.3.2
 CATEGORIES=	editors
 
 MAINTAINER=	adamw@FreeBSD.org
@@ -22,7 +21,7 @@ LIB_DEPENDS=	libluajit-5.1.so:lang/luajit \
 		libuv.so:devel/libuv \
 		libvterm.so:devel/libvterm
 
-USES=		cmake:outsource iconv lua:build pathfix pkgconfig
+USES=		cmake iconv lua:build pathfix pkgconfig
 USE_GITHUB=	yes
 GH_TUPLE=	libmpack:libmpack:1.0.5:libmpack \
 		libmpack:libmpack-lua:1.0.7:libmpack_lua

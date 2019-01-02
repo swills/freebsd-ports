@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/libgpkg/Makefile 462290 2018-02-19 10:29:25Z sunpoet $
+# $FreeBSD: head/devel/libgpkg/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libgpkg
 PORTVERSION=	0.9.18
@@ -20,7 +20,7 @@ OPTIONS_DEFINE=	GEOS
 OPTIONS_DEFAULT=GEOS
 
 USE_LDCONFIG=	yes
-USES=		cmake tar:bzip2
+USES=		cmake:insource tar:bzip2
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 WRKSRC=		${WRKDIR}/luciad-libgpkg-c56e3708453e

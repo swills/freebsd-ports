@@ -1,5 +1,5 @@
 # Created by: Denis Podolskiy <bytestore@yandex.ru>
-# $FreeBSD: head/graphics/jpeg-turbo/Makefile 486203 2018-11-29 18:59:57Z antoine $
+# $FreeBSD: head/graphics/jpeg-turbo/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	jpeg-turbo
 PORTVERSION=	2.0.1
@@ -20,7 +20,7 @@ LICENSE_FILE_IJG=	${WRKSRC}/README.ijg
 LICENSE_FILE_ZLIB=	${WRKSRC}/LICENSE.md
 LICENSE_PERMS_IJG=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-USES=		cmake:outsource cpe
+USES=		cmake cpe
 USE_LDCONFIG=	yes
 CMAKE_ON=	WITH_JPEG8
 CPE_VENDOR=	d.r.commander

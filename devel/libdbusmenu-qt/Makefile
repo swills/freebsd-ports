@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/devel/libdbusmenu-qt/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/devel/libdbusmenu-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libdbusmenu-qt
 PORTVERSION=	${MAJOR_VER}.${SNAPSHOT_VER:S/.//g}
@@ -18,7 +18,7 @@ LICENSE=	LGPL20
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
-USES=		compiler:c++11-lib cmake:outsource
+USES=		compiler:c++11-lib cmake
 USE_LDCONFIG=	yes
 
 .  if ${FLAVOR} == qt4

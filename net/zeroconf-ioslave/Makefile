@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/zeroconf-ioslave/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/zeroconf-ioslave/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	zeroconf-ioslave
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	net kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Network monitor for DNS-SD services (Zeroconf)
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons dbusaddons dnssd i18n kio service
 USE_QT=		core dbus network \
 		buildtools_build qmake_build

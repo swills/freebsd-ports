@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/unanimity/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/unanimity/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		unanimity
 DISTVERSIONPREFIX=	v
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	pbseqan>=g20171002:biology/pbseqan \
 LIB_DEPENDS=	libhts.so:biology/htslib \
 		libboost_regex.so:devel/boost-libs
 
-USES=		cmake compiler:c++14-lang pkgconfig python
+USES=		cmake:insource compiler:c++14-lang pkgconfig python
 USE_GITHUB=	yes
 GH_ACCOUNT=	PacificBiosciences
 

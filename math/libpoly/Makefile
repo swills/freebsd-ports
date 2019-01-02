@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/libpoly/Makefile 475052 2018-07-21 08:30:08Z yuri $
+# $FreeBSD: head/math/libpoly/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libpoly
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENCE
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	SRI-CSL
 USE_LDCONFIG=	yes

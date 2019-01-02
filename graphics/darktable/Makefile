@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/darktable/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/darktable/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	darktable
 PORTVERSION=	2.4.4
@@ -28,7 +28,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 ONLY_FOR_ARCHS=		amd64
 ONLY_FOR_ARCHS_REASON=	uses SSE instructions and 64-bit address space
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils	\
+USES=		cmake compiler:c++11-lib desktop-file-utils	\
 		jpeg pkgconfig sqlite tar:xz
 USE_GL=		glu
 USE_GNOME=	cairo gtk30 intltool librsvg2 libxml2

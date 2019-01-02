@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-pycryptodome/Makefile 477598 2018-08-19 20:32:47Z sunpoet $
+# $FreeBSD: head/security/py-pycryptodome/Makefile 488457 2018-12-26 21:37:51Z swills $
 
 PORTNAME=	pycryptodome
-DISTVERSION=	3.6.6
+DISTVERSION=	3.7.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,10 +13,10 @@ COMMENT=	Cryptographic library for Python
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}pycrypto
-
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}pycrypto
 
 NAMESPACE?=	Crypto
 

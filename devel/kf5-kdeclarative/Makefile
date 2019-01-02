@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kdeclarative/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/devel/kf5-kdeclarative/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdeclarative
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KF5 library providing integration of QML and KDE Frameworks
 
 LIB_DEPENDS=	libepoxy.so:graphics/libepoxy
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig \
+USES=		cmake compiler:c++11-lib gettext kde:5 pkgconfig \
 		qt:5 tar:xz
 USE_KDE=	completion config coreaddons globalaccel guiaddons i18n \
 		iconthemes jobwidgets kio package service widgetsaddons \

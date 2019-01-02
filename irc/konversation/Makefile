@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/irc/konversation/Makefile 474651 2018-07-14 22:27:10Z rakuco $
+# $FreeBSD: head/irc/konversation/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	konversation
 PORTVERSION=	1.7.5
@@ -14,7 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
 
-USES=		cmake:outsource desktop-file-utils gettext kde:5 python:run qt:5 shebangfix tar:xz
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext kde:5 \
+		python:run qt:5 shebangfix tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config \
 		configwidgets coreaddons crash dbusaddons doctools ecm \
 		emoticons globalaccel i18n iconthemes idletime itemviews \

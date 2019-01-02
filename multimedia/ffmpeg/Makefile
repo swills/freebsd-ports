@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/multimedia/ffmpeg/Makefile 487820 2018-12-20 00:46:32Z jbeich $
+# $FreeBSD: head/multimedia/ffmpeg/Makefile 488630 2018-12-29 00:02:31Z jbeich $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	4.1
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	https://ffmpeg.org/releases/
@@ -18,6 +18,7 @@ BUILD_DEPENDS=	nasm:devel/nasm \
 		${LOCALBASE}/bin/as:devel/binutils
 
 HAS_CONFIGURE=	yes
+CONFIGURE_LOG=	ffbuild/config.log
 USES=		compiler:c11 cpe gmake localbase:ldflags perl5 \
 		pkgconfig shebangfix tar:xz
 USE_LDCONFIG=	yes

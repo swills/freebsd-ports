@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/agrum/Makefile 487857 2018-12-20 08:34:08Z yuri $
+# $FreeBSD: head/science/agrum/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	agrum
 DISTVERSION=	0.13.4
@@ -11,7 +11,7 @@ COMMENT=	Graphical modeler for Bayesian networks, influence diagrams, etc
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITLAB=	yes
 GL_ACCOUNT=	agrumery
 GL_PROJECT=	aGrUM

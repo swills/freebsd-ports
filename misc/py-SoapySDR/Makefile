@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-SoapySDR/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/misc/py-SoapySDR/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	SoapySDR
 DISTVERSIONPREFIX=	soapy-sdr-
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE_1_0.txt
 BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libSoapySDR.so:misc/soapysdr
 
-USES=		cmake:outsource compiler:c++11-lang gettext-runtime python
+USES=		cmake compiler:c++11-lang gettext-runtime python
 USE_GITHUB=	yes
 GH_ACCOUNT=	pothosware
 USE_PYTHON=	flavors

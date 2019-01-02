@@ -1,5 +1,5 @@
 # Created by: Brooks Davis
-# $FreeBSD: head/devel/compiler-rt/Makefile 470760 2018-05-24 08:34:15Z amdmi3 $
+# $FreeBSD: head/devel/compiler-rt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	compiler-rt
 DISTVERSION=	0.r${SVN_REV}
@@ -25,7 +25,7 @@ TEST_TARGET=		test
 
 CMAKE_SOURCE_PATH=	${WRKSRC}
 
-USES=		cmake tar:bzip2
+USES=		cmake:insource tar:bzip2
 USE_LDCONFIG=	yes
 
 LLVM_SVN=	http://llvm.org/svn/llvm-project

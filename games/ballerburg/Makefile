@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/games/ballerburg/Makefile 445211 2017-07-07 07:51:52Z ehaupt $
+# $FreeBSD: head/games/ballerburg/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ballerburg
 PORTVERSION=	1.2.0
@@ -16,7 +16,7 @@ LICENSE=	GPLv3+
 
 GNU_CONFIGURE=	yes
 NLS_USES=	gettext
-USES=		cmake
+USES=		cmake:insource
 USE_SDL=	sdl
 
 OPTIONS_DEFINE=	DOCS NLS

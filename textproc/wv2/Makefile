@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/textproc/wv2/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/textproc/wv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wv2
 PORTVERSION=	0.4.2
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
 USE_GNOME=	libgsf
 GNU_CONFIGURE=	yes
-USES=		cmake:outsource iconv libtool pkgconfig tar:bzip2
+USES=		cmake iconv libtool pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 
 post-patch:

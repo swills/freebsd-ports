@@ -1,5 +1,5 @@
 # Created by: Viacheslav Mikerov <SlavaMikerov@gmail.com>
-# $FreeBSD: head/devel/nlohmann-json/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/nlohmann-json/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	json
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ COMMENT=	JSON library for Modern C++
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.MIT
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	nlohmann
 

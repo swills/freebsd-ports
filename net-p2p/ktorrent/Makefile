@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/ktorrent/Makefile 480066 2018-09-18 18:54:50Z tcberner $
+# $FreeBSD: head/net-p2p/ktorrent/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 # TODO: once plasma5 ports are in, re-add dependency on workspace.
 
@@ -10,7 +10,7 @@ MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	BitTorrent client for KDE
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake gettext kde:5 qt:5 tar:xz
 
 LIB_DEPENDS=	libKF5Torrent.so:net-p2p/libktorrent \
 		libgcrypt.so:security/libgcrypt \

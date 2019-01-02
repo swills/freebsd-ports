@@ -1,10 +1,10 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/math/clrng/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/clrng/Makefile 488629 2018-12-28 21:32:12Z jmd $
 
 PORTNAME=	clrng
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.0-beta
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -34,4 +34,10 @@ CMAKE_ARGS+=	-DBUILD_CLIENT=OFF \
 
 CMAKE_SOURCE_PATH=	${WRKSRC}/src
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${CHOSEN_COMPILER_TYPE} == gcc
+CFLAGS+= -Wno-expansion-to-defined
+.endif
+
+.include <bsd.port.post.mk>

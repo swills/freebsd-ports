@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/games/vavoom/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/games/vavoom/Makefile 488446 2018-12-26 21:12:17Z bar $
 
 PORTNAME=	vavoom
 PORTVERSION=	1.33
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Vavoom-source/${PORTVERSION}
 
@@ -72,13 +72,6 @@ post-patch:
 		${WRKSRC}/utils/acc/parse.c
 	@${REINPLACE_CMD} -e 's/<malloc.h>/<stdlib.h>/' \
 		${WRKSRC}/utils/acc/strlist.c
-
-post-configure:
-.if ${PORT_OPTIONS:MLAUNCHER}
-	@${REINPLACE_CMD} -e 's/-pthread;-D_THREAD_SAFE //; \
-			s/-isystem /-I/g' \
-		${WRKSRC}/utils/vlaunch/CMakeFiles/vlaunch.dir/flags.make
-.endif
 
 post-install:
 .if ${PORT_OPTIONS:MDOCS}

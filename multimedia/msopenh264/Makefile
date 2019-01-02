@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/msopenh264/Makefile 482343 2018-10-18 13:31:00Z tijl $
+# $FreeBSD: head/multimedia/msopenh264/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	msopenh264
 PORTVERSION=	1.2.1
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libmediastreamer_base.so:net/mediastreamer \
 		libopenh264.so:multimedia/openh264 \
 		libortp.so:net/ortp
 
-USES=		cmake:outsource
+USES=		cmake
 
 CMAKE_ARGS=	-DENABLE_STATIC=NO
 PLIST_FILES=	lib/mediastreamer/plugins/libmsopenh264.so

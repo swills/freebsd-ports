@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 487992 2018-12-21 13:19:02Z rene $
+# $FreeBSD: head/audio/Makefile 488808 2018-12-31 18:01:50Z rene $
 #
 
     COMMENT = Audio tools
@@ -23,7 +23,7 @@
     SUBDIR += alsa-sndio
     SUBDIR += alsa-utils
     SUBDIR += alure
-    SUBDIR += amarok-kde4
+    SUBDIR += amarok
     SUBDIR += amb-plugins
     SUBDIR += ample
     SUBDIR += amsynth
@@ -43,7 +43,6 @@
     SUBDIR += aubio
     SUBDIR += aucatctl
     SUBDIR += audacity
-    SUBDIR += audex
     SUBDIR += audiere
     SUBDIR += audiocd-kio
     SUBDIR += audiotag
@@ -91,7 +90,6 @@
     SUBDIR += cpige
     SUBDIR += cplay
     SUBDIR += cpp-xmms2
-    SUBDIR += creox
     SUBDIR += crip
     SUBDIR += csound
     SUBDIR += csoundqt
@@ -297,6 +295,7 @@
     SUBDIR += gstreamer1-plugins-jack
     SUBDIR += gstreamer1-plugins-ladspa
     SUBDIR += gstreamer1-plugins-lame
+    SUBDIR += gstreamer1-plugins-lv2
     SUBDIR += gstreamer1-plugins-modplug
     SUBDIR += gstreamer1-plugins-mpg123
     SUBDIR += gstreamer1-plugins-musepack
@@ -333,6 +332,7 @@
     SUBDIR += hs-OpenAL
     SUBDIR += hs-libmpd
     SUBDIR += hts_engine-API
+    SUBDIR += hvl2wav
     SUBDIR += hydrogen
     SUBDIR += icecast
     SUBDIR += icecast-kh
@@ -363,20 +363,13 @@
     SUBDIR += jmusic
     SUBDIR += jokosher
     SUBDIR += juk
-    SUBDIR += juk-kde4
     SUBDIR += juke
     SUBDIR += julius
     SUBDIR += kexis
-    SUBDIR += kid3-kde4
     SUBDIR += kid3-kf5
-    SUBDIR += kid3-qt4
     SUBDIR += kid3-qt5
-    SUBDIR += kio-audiocd-kde4
     SUBDIR += kmix
-    SUBDIR += kmix-kde4
-    SUBDIR += kscd-kde4
     SUBDIR += ksmp3play
-    SUBDIR += kstreamripper
     SUBDIR += kwave
     SUBDIR += ladspa
     SUBDIR += lame
@@ -414,9 +407,7 @@
     SUBDIR += libid3tag
     SUBDIR += libinstpatch
     SUBDIR += libkcddb
-    SUBDIR += libkcddb-kde4
     SUBDIR += libkcompactdisc
-    SUBDIR += libkcompactdisc-kde4
     SUBDIR += liblastfm
     SUBDIR += liblastfm-qt5
     SUBDIR += liblo
@@ -524,6 +515,7 @@
     SUBDIR += mixmos
     SUBDIR += mixxx
     SUBDIR += mixxx20
+    SUBDIR += mixxx21
     SUBDIR += mma
     SUBDIR += moc
     SUBDIR += modplugplay
@@ -762,11 +754,9 @@
     SUBDIR += shorten
     SUBDIR += shout
     SUBDIR += shout-idjc
-    SUBDIR += shoutcast
     SUBDIR += sidplay
     SUBDIR += sidplay2
     SUBDIR += sidplayer
-    SUBDIR += simon
     SUBDIR += simplemod
     SUBDIR += siren
     SUBDIR += skype-call-recorder
@@ -823,7 +813,6 @@
     SUBDIR += tcd
     SUBDIR += teamspeak3-server
     SUBDIR += tempest_for_eliza
-    SUBDIR += terminatorx
     SUBDIR += thunar-media-tags-plugin
     SUBDIR += timemachine
     SUBDIR += timidity

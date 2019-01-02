@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openspades/Makefile 487302 2018-12-12 16:40:05Z linimon $
+# $FreeBSD: head/games/openspades/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openspades
 PORTVERSION=	0.0.12
@@ -24,7 +24,7 @@ BROKEN_powerpc64=	fails to compile: uses x86 assembly
 USE_GITHUB=	yes
 GH_ACCOUNT=	yvt
 
-USES=		cmake compiler:c++11-lib desktop-file-utils
+USES=		cmake:insource compiler:c++11-lib desktop-file-utils
 CMAKE_ARGS=	-DOPENSPADES_RESOURCES=OFF \
 		-DOPENSPADES_INSTALL_MAN="man/man6" \
 		-DOPENSPADES_INSTALL_BINARY="bin" \

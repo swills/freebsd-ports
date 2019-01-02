@@ -1,5 +1,5 @@
 # Created by: Brad Allen <braddo@tranceaddict.net>
-# $FreeBSD: head/games/stepmania-devel/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/games/stepmania-devel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	stepmania
 PORTVERSION=	5.0.11
@@ -24,7 +24,7 @@ BROKEN_powerpc64=	fails to compile: cc1plus: unrecognized command line option "-
 
 USE_GITHUB=	yes
 
-USES=		cmake:outsource iconv jpeg perl5 pkgconfig shebangfix
+USES=		cmake:insource iconv jpeg perl5 pkgconfig shebangfix
 SHEBANG_FILES=	Utils/*.pl extern/zlib/zlib2ansi
 USE_XORG=	x11 xrandr xtst
 USE_GL=		glew

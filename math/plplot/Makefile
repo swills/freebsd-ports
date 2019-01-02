@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/plplot/Makefile 487839 2018-12-20 05:05:38Z linimon $
+# $FreeBSD: head/math/plplot/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	plplot
 PORTVERSION=	5.12.0
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libLASi.so:devel/lasi \
 RUN_DEPENDS=	bash:shells/bash \
 		${FREEFONT_DIR}/FreeMono.ttf:x11-fonts/freefont-ttf
 
-USES=		compiler:c11 cmake:outsource gettext-runtime ghostscript gnome \
+USES=		compiler:c11 cmake gettext-runtime ghostscript gnome \
 		localbase perl5 pathfix pkgconfig
 USE_GNOME=	cairo pango
 USE_PERL5=	build

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/xfce4-whiskermenu-plugin/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11/xfce4-whiskermenu-plugin/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xfce4-whiskermenu-plugin
 PORTVERSION=	2.3.0
@@ -14,7 +14,7 @@ COMMENT=	Alternate menu for the Xfce Desktop
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource compiler:c++14-lang gettext-tools localbase pkgconfig \
+USES=		cmake compiler:c++14-lang gettext-tools localbase pkgconfig \
 		tar:bzip2 xfce:gtk3
 USE_GNOME=	gtk30 cairo
 USE_XFCE=	panel

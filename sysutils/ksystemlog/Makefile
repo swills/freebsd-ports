@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ksystemlog/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/sysutils/ksystemlog/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ksystemlog
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE system log application
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 pkgconfig \
+USES=		cmake compiler:c++11-lang gettext kde:5 pkgconfig \
 		qt:5 tar:xz
 USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 		doctools ecm i18n iconthemes itemviews jobwidgets kio \

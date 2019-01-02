@@ -1,14 +1,13 @@
-# $FreeBSD: head/devel/plasma5-khotkeys/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/plasma5-khotkeys/Makefile 488757 2018-12-31 06:38:42Z tcberner $
 
 PORTNAME=	khotkeys
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 library for hotkeys
 
-USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib cpe gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm emoticons globalaccel \
 		guiaddons i18n iconthemes init itemmodels itemviews jobwidgets \

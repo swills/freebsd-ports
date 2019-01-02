@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-tree/Makefile 478904 2018-09-03 19:04:22Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-tree/Makefile 489033 2019-01-01 20:39:24Z sunpoet $
 
 PORTNAME=	tty-tree
 PORTVERSION=	0.2.0
@@ -12,8 +12,9 @@ COMMENT=	Print directory or structured data in tree like format
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

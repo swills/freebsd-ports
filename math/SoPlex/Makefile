@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/SoPlex/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/SoPlex/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	SoPlex
 DISTVERSION=	4.0.0
@@ -18,7 +18,7 @@ LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-USES=		cmake:outsource compiler:c++11-lang tar:tgz
+USES=		cmake compiler:c++11-lang tar:tgz
 USE_LDCONFIG=	yes
 PLIST_SUB=	SHL4=${DISTVERSION}.0 SHL2=${DISTVERSION:R}
 

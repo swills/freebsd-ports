@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-fm/wcmcommander/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-fm/wcmcommander/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wcmcommander
 PORTVERSION=	0.20.0
@@ -17,7 +17,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	corporateshark
 GH_PROJECT=	WCMCommander
 
-USES=		compiler:c++11-lib cmake:outsource
+USES=		compiler:c++11-lib cmake
 CMAKE_ARGS=	-DDATADIR="${DATADIR_REL}"
 USE_XORG=	x11
 

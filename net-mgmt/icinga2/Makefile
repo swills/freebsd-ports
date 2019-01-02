@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/icinga2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-mgmt/icinga2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	icinga2
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libyajl.so:devel/yajl
 RUN_DEPENDS=	${LOCALBASE}/bin/bash:shells/bash
 
-USES=		alias bison cmake compiler:c++0x libedit ssl
+USES=		alias bison cmake:insource compiler:c++0x libedit ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	icinga
 

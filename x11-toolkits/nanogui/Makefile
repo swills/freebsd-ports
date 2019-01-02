@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/nanogui/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/nanogui/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	nanogui
 DISTVERSION=	g20180413
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libglfw.so:graphics/glfw
 
-USES=		cmake:outsource compiler:c++14-lang eigen:3,build,run
+USES=		cmake compiler:c++14-lang eigen:3,build,run
 USE_GITHUB=	yes
 GH_ACCOUNT=	wjakob
 GH_TAGNAME=	885e4fc

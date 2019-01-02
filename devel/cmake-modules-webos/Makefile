@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cmake-modules-webos/Makefile 385521 2015-05-06 15:16:53Z mat $
+# $FreeBSD: head/devel/cmake-modules-webos/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	cmake-modules-webos
 DISTVERSION=	1.0b
@@ -13,7 +13,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	FreeWebOS
 GH_TAGNAME=	submissions/19
 
-USES=		cmake:outsource
+USES=		cmake
 INSTALL_TARGET=	install
 
 .include <bsd.port.mk>

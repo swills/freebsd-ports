@@ -1,8 +1,8 @@
 # Created by: Andrej Zverev <andrey.zverev@electro-com.ru>
-# $FreeBSD: head/www/p5-HTML-FormFu/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-HTML-FormFu/Makefile 488262 2018-12-24 08:32:56Z wen $
 
 PORTNAME=	HTML-FormFu
-PORTVERSION=	2.06
+PORTVERSION=	2.07
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/stratagus/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/stratagus/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	stratagus
 PORTVERSION=	2.4.1
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 USE_GITHUB=	yes
 GH_ACCOUNT=	Wargus
 
-USES=		cmake:outsource compiler:c++11-lang gl lua:51 pkgconfig sqlite
+USES=		cmake compiler:c++11-lang gl lua:51 pkgconfig sqlite
 USE_GL=		gl glu
 USE_SDL=	sdl
 CMAKE_ARGS=	-DGAMEDIR:STRING="bin" \

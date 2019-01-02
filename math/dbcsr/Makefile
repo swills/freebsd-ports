@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/dbcsr/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/dbcsr/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dbcsr
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	fypp:devel/py-fypp@${PY_FLAVOR}
 
-USES=		blaslapack:openblas cmake:outsource,noninja fortran python:build
+USES=		blaslapack:openblas cmake:noninja fortran python:build
 USE_GITHUB=	yes
 GH_ACCOUNT=	cp2k
 USE_LDCONFIG=	yes

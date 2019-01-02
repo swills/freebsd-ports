@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/librolegen/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/librolegen/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	librolegen
 PORTVERSION=	1.0b
@@ -14,7 +14,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/cmake/Modules/webOS/webOS.cmake:devel/cmake-mo
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeWebOS
 
-USES=		cmake:outsource
+USES=		cmake
 
 USE_LDCONFIG=	yes
 

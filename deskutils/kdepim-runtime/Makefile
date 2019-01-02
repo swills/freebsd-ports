@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kdepim-runtime/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/kdepim-runtime/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdepim-runtime
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs \
 		libsasl2.so:security/cyrus-sasl2 \
 		libxerces-c-3.2.so:textproc/xerces-c3
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons guiaddons holidays i18n iconthemes \
 		itemmodels itemviews jobwidgets kcmutils kdelibs4support kio \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/clojure-cider/Makefile 475305 2018-07-25 12:11:32Z bofh $
+# $FreeBSD: head/devel/clojure-cider/Makefile 488828 2018-12-31 20:13:20Z bofh $
 
 PORTNAME=	clojure-cider
-PORTVERSION=	0.17.0
+PORTVERSION=	0.18.0
 DISTVERSIONPREFIX=	v
 PORTREVISION=	2
 CATEGORIES=	devel elisp
@@ -28,7 +28,6 @@ NO_ARCH=	yes
 PLIST_FILES=	${EMACS_SITE_LISPDIR}/cider-client.el \
 		${EMACS_SITE_LISPDIR}/cider-eldoc.el \
 		${EMACS_SITE_LISPDIR}/cider-inspector.el \
-		${EMACS_SITE_LISPDIR}/cider-interaction.el \
 		${EMACS_SITE_LISPDIR}/cider-macroexpansion.el \
 		${EMACS_SITE_LISPDIR}/cider-mode.el \
 		${EMACS_SITE_LISPDIR}/cider-repl.el \

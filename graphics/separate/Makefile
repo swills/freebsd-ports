@@ -1,5 +1,5 @@
 # Created by: Pietro Cerutti <gahr@gahr.ch>
-# $FreeBSD: head/graphics/separate/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/graphics/separate/Makefile 488424 2018-12-26 20:02:59Z linimon $
 
 PORTNAME=	separate
 PORTVERSION=	0.5.8
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	gccmakedep:devel/gccmakedep
 LIB_DEPENDS=	liblcms.so.1:graphics/lcms \
 		libgimp-2.0.so:graphics/gimp-app
 
-USES=		gettext-tools gmake pkgconfig zip
+USES=		compiler:c++11-lang gettext-tools gmake pkgconfig zip
 
 BIN_TARGETS=	separate separate_import icc_colorspace
 L10N_TARGETS=	cs es fr ja ko pl ru

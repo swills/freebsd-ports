@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/mlpack/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/mlpack/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mlpack
 DISTVERSION=	3.0.1
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs \
 		libboost_serialization.so:devel/boost-libs \
 		libarmadillo.so:math/armadillo
 
-USES=		cmake:outsource compiler:c++14-lang
+USES=		cmake compiler:c++14-lang
 CMAKE_ARGS+=	-DBUILD_TESTS:BOOL=false -DBUILD_CLI_EXECUTABLES=false -DBUILD_PYTHON_BINDINGS=false
 USE_LDCONFIG=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/www/wt/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/wt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wt
 PORTVERSION=	3.3.7
@@ -25,7 +25,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	kdeforche
 USE_LDCONFIG=	yes
 USE_XORG+=x11
-USES=		cmake:outsource pkgconfig ssl
+USES=		cmake pkgconfig ssl
 CMAKE_ARGS+=	-DCONFIGDIR:STRING=${LOCALBASE}/etc/wt \
 	-DGM_PREFIX:STRING=${LOCALBASE} \
 	-DPNG_PREFIX:STRING=${LOCALBASE} \

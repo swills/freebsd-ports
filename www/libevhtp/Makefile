@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/libevhtp/Makefile 464983 2018-03-19 06:03:16Z yuri $
+# $FreeBSD: head/www/libevhtp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libevhtp
 PORTVERSION=	1.2.16
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libevent.so:devel/libevent
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	criticalstack

@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/freeglut/Makefile 482977 2018-10-25 18:48:23Z zeising $
+# $FreeBSD: head/graphics/freeglut/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	freeglut
 PORTVERSION=	3.0.0
@@ -13,7 +13,7 @@ COMMENT=	open source implementation of the GLUT library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake pathfix
+USES=		cmake:insource pathfix
 USE_LDCONFIG=	yes
 USE_XORG=	ice x11 xi xrandr
 USE_GL=		gl glu

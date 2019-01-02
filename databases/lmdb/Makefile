@@ -1,10 +1,9 @@
 # Created by: Xin Li <delphij@FreeBSD.org>
-# $FreeBSD: head/databases/lmdb/Makefile 478856 2018-09-03 12:08:40Z jbeich $
+# $FreeBSD: head/databases/lmdb/Makefile 488700 2018-12-30 06:29:34Z delphij $
 
 PORTNAME=	lmdb
-PORTVERSION=	0.9.22
+PORTVERSION=	0.9.23
 DISTVERSIONPREFIX=	${PORTNAME:tu}_
-PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	databases
 

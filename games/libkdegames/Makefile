@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/libkdegames/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/games/libkdegames/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libkdegames
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	Libraries used by KDE games
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 openal qt:5 \
+USES=		cmake compiler:c++11-lang gettext kde:5 openal qt:5 \
 		tar:xz
 USE_KDE=	archive attica auth bookmarks codecs completion config \
 		configwidgets coreaddons crash dbusaddons dnssd ecm emoticons \

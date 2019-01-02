@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/supercollider/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/supercollider/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	supercollider
 DISTVERSION=	3.9.3
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libavahi-client.so:net/avahi-app \
 		libsndfile.so:audio/libsndfile \
 		libfftw3f.so:math/fftw3-float
 
-USES=		cmake:outsource compiler:c++11-lang iconv localbase pkgconfig \
+USES=		cmake compiler:c++11-lang iconv localbase pkgconfig \
 		qt:5 readline shared-mime-info tar:bzip2
 USE_QT=		buildtools_build concurrent core declarative gui linguisttools location \
 		network opengl printsupport qmake_build sensors \

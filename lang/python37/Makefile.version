@@ -1,4 +1,4 @@
 # Mk/Uses/python.mk includes this file, don't remove it!
-# $FreeBSD: head/lang/python37/Makefile.version 482664 2018-10-21 11:13:17Z wen $
+# $FreeBSD: head/lang/python37/Makefile.version 488355 2018-12-26 02:24:32Z wen $
 
-PYTHON_PORTVERSION=	3.7.1
+PYTHON_PORTVERSION=	3.7.2

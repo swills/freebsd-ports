@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libkolabxml/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/textproc/libkolabxml/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libkolabxml
 PORTVERSION=	1.1.6
@@ -27,7 +27,7 @@ CMAKE_ARGS=	-DBUILD_TESTS:BOOL=OFF \
 		-DJAVA_BINDINGS:BOOL=OFF \
 		-DPHP_BINDINGS:BOOL=OFF \
 		-DPYTHON_BINDINGS:BOOL=OFF
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 PLIST_SUB=	SHLIB_VER=${PORTVERSION}

@@ -1,11 +1,11 @@
-# $FreeBSD: head/graphics/wayland-protocols/Makefile 482193 2018-10-16 00:00:33Z jbeich $
+# $FreeBSD: head/graphics/wayland-protocols/Makefile 488342 2018-12-25 20:28:30Z kwm $
 
 PORTNAME=	wayland-protocols
 PORTVERSION=	1.16
 CATEGORIES=	graphics wayland
 MASTER_SITES=	https://wayland.freedesktop.org/releases/
 
-MAINTAINER=	kwm@FreeBSD.org
+MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Wayland protocols
 
 LICENSE=	MIT

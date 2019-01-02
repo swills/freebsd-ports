@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/inastemp/Makefile 457842 2018-01-02 10:41:23Z yuri $
+# $FreeBSD: head/devel/inastemp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	inastemp
 DISTVERSION=	0.2.4
@@ -11,7 +11,7 @@ COMMENT=	C++ library to use SIMD vectorization
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 NO_ARCH=	yes
 CMAKE_ARGS=	-DINASTEMP_DO_INSTALL:BOOL=ON \
 		-DINASTEMP_JUST_LIB:BOOL=ON

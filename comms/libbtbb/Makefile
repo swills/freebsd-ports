@@ -1,5 +1,5 @@
 # Created by: George V. Neville-Neil <gnn@freebsd.org>
-# $FreeBSD: head/comms/libbtbb/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/comms/libbtbb/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libbtbb
 PORTVERSION=	201808R1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYNUMPY}
 
-USES=		cmake:outsource \
+USES=		cmake \
 		python:2.7,build
 
 USE_GITHUB=	yes

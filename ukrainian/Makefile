@@ -1,4 +1,4 @@
-# $FreeBSD: head/ukrainian/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/ukrainian/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Ukrainian support
@@ -8,7 +8,6 @@
     SUBDIR += gd
     SUBDIR += hunspell
     SUBDIR += hyphen
-    SUBDIR += kde4-l10n
     SUBDIR += libreoffice
     SUBDIR += monacofonts
     SUBDIR += mythes

@@ -1,9 +1,8 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/archivers/laszip/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/archivers/laszip/Makefile 488643 2018-12-29 01:46:21Z swills $
 
 PORTNAME=	laszip
-PORTVERSION=	3.2.2
-PORTREVISION=	1
+PORTVERSION=	3.2.9
 CATEGORIES=	archivers
 
 MAINTAINER=	rhurlin@gwdg.de

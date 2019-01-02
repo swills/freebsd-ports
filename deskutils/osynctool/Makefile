@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/deskutils/osynctool/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/deskutils/osynctool/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	osynctool
 PORTVERSION=	0.39
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libopensync.so:devel/libopensync
 
 CONFLICTS=	msynctool-0.2*
 
-USES=		cmake:outsource pkgconfig tar:bzip2
+USES=		cmake pkgconfig tar:bzip2
 
 PLIST_FILES=	bin/${PORTNAME} \
 		etc/bash_completion.d/${PORTNAME}.sh

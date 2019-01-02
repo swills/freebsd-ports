@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/graphics/dcmtk/Makefile 487623 2018-12-16 19:13:22Z yuri $
+# $FreeBSD: head/graphics/dcmtk/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dcmtk
 DISTVERSIONPREFIX=	${PORTNAME:tu}-
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libicuuc.so:devel/icu \
 		libpng16.so:graphics/png \
 		libtiff.so:graphics/tiff
 
-USES=		compiler:c++11-lang cmake:outsource gnome jpeg ssl
+USES=		compiler:c++11-lang cmake gnome jpeg ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:tu}
 USE_GNOME=	libxml2

@@ -1,8 +1,8 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/devel/jech-dht/Makefile 352975 2014-05-05 01:48:38Z mi $
+# $FreeBSD: head/devel/jech-dht/Makefile 488494 2018-12-27 00:07:25Z swills $
 
 PORTNAME=	dht
-PORTVERSION=	0.22
+PORTVERSION=	0.25
 CATEGORIES=	devel
 MASTER_SITES=	http://www.pps.univ-paris-diderot.fr/~jch/software/files/
 

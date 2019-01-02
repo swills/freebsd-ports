@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-daemon/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-daemon/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	eiskaltdcpp
 PORTREVISION=	11
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libeiskaltdcpp.so:net-p2p/eiskaltdcpp-lib
 
 MASTERDIR=	${.CURDIR}/../eiskaltdcpp-lib
 
-USES=		cmake gettext compiler:c++11-lib ssl
+USES=		cmake:insource gettext compiler:c++11-lib ssl
 
 OPTIONS_SINGLE=	UI
 OPTIONS_SINGLE_UI=	NOUI XMLRPC JSONRPC

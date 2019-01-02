@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/science/kst2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/kst2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kst
 DISTVERSION=	${KST_VERSION}.${KST_DATE}
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libgsl.so:math/gsl \
 KST_VERSION=	2.0.8
 KST_DATE=	20181123
 
-USES=		cmake:outsource desktop-file-utils pkgconfig \
+USES=		cmake desktop-file-utils pkgconfig \
 		shared-mime-info
 _USE_QT4=	corelib gui xml designer network svg linguisttools_build \
 		qmake_build moc_build rcc_build uic_build

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/ghub/Makefile 484637 2018-11-10 19:54:36Z jrm $
+# $FreeBSD: head/devel/ghub/Makefile 488556 2018-12-27 17:14:45Z swills $
 
 PORTNAME=	ghub
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.0.0
+DISTVERSION=	3.2.0
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

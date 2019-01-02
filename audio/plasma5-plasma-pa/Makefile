@@ -1,8 +1,7 @@
-# $FreeBSD: head/audio/plasma5-plasma-pa/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/plasma5-plasma-pa/Makefile 488757 2018-12-31 06:38:42Z tcberner $
 
 PORTNAME=	plasma-pa
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	2
 CATEGORIES=	audio kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,7 +10,7 @@ COMMENT=	Plasma5 Plasma pulse audio mixer
 LIB_DEPENDS=	libcanberra.so:audio/libcanberra \
 		libpulse.so:audio/pulseaudio
 
-USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 \
+USES=		cmake compiler:c++11-lib cpe gettext kde:5 \
 		pkgconfig qt:5 shebangfix tar:xz
 USE_GNOME=	gconf2
 USE_KDE=	config configwidgets coreaddons ecm globalaccel i18n \

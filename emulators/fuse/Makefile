@@ -1,5 +1,5 @@
 # Created by: Alexey V. Antipovsky <kemm@in-line.ru>
-# $FreeBSD: head/emulators/fuse/Makefile 487380 2018-12-13 20:00:12Z rene $
+# $FreeBSD: head/emulators/fuse/Makefile 488618 2018-12-28 19:01:43Z rene $
 
 PORTNAME=	fuse
 PORTVERSION=	1.5.7
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libpng.so:graphics/png \
 		libspectrum.so:emulators/libspectrum
 
-USES=		gettext gmake gnome localbase perl5 pkgconfig
+USES=		compiler:c++11-lang gettext gmake gnome localbase perl5 pkgconfig
 USE_PERL5=	build
 USE_GNOME=	cairo libxml2 glib20
 USE_XORG=	x11

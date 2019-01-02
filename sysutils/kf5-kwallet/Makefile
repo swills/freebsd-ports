@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/kf5-kwallet/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/sysutils/kf5-kwallet/Makefile 488719 2018-12-30 14:15:54Z adridg $
 
 PORTNAME=	kwallet
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -15,10 +16,16 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libqgpgme.so:security/gpgme-qt5 \
 		libgpgmepp.so:security/gpgme-cpp
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons \
 		doctools ecm i18n iconthemes notifications service \
 		widgetsaddons windowsystem
 USE_QT=		buildtools_build core dbus gui qmake_build widgets xml
+
+OPTIONS_DEFINE=	PINENTRY
+OPTIONS_DEFAULT= PINENTRY
+
+PINENTRY_DESC=	Include pinentry-qt, for wallet passwords
+PINENTRY_RUN_DEPENDS=	pinentry-qt5:security/pinentry-qt5
 
 .include <bsd.port.mk>

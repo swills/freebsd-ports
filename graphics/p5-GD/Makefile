@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/p5-GD/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/graphics/p5-GD/Makefile 488655 2018-12-29 06:25:44Z wen $
 
 PORTNAME=	GD
-PORTVERSION=	2.68
+PORTVERSION=	2.69
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

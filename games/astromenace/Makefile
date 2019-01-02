@@ -1,5 +1,5 @@
 # Created by: Oleg Alexeenkov
-# $FreeBSD: head/games/astromenace/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/astromenace/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	astromenace
 PORTVERSION=	1.4.0
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libogg.so:audio/libogg \
 USE_GITHUB=	yes
 GH_ACCOUNT=	viewizard
 
-USES=		cmake compiler:c++11-lib dos2unix gl openal:al,alut
+USES=		cmake:insource compiler:c++11-lib dos2unix gl openal:al,alut
 DOS2UNIX_FILES=	CMakeLists.txt src/config/config.cpp
 USE_GL=		gl glu
 USE_SDL=	sdl2

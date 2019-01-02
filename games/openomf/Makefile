@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/games/openomf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/openomf/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openomf
 PORTVERSION=	0.6.5
@@ -27,7 +27,7 @@ GH_TAGNAME=	c36c421
 GH_TUPLE=	omf2097:libShadowDive:b2c34a6:shadow \
 		kode54:dumb:238f23c:libdumb
 
-USES=		cmake compiler:c++11-lang gettext openal
+USES=		cmake:insource compiler:c++11-lang gettext openal
 USE_SDL=	sdl2
 LLD_UNSAFE=	yes
 

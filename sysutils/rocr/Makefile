@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/sysutils/rocr/Makefile 485302 2018-11-19 04:05:31Z jmd $
+# $FreeBSD: head/sysutils/rocr/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	rocr
 PORTVERSION=	1.9.1
@@ -15,7 +15,7 @@ ONLY_FOR_ARCHS=	amd64
 
 LIB_DEPENDS=	libhsakmt.so:sysutils/roct
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

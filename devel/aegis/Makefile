@@ -1,10 +1,10 @@
 # Created by: alepulver
-# $FreeBSD: head/devel/aegis/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/aegis/Makefile 488492 2018-12-26 23:46:13Z swills $
 
 PORTNAME=	aegis
 PORTVERSION=	4.25
 DISTVERSIONSUFFIX=	.D510
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
@@ -25,10 +25,6 @@ CONFIGURE_ARGS=	--with-nlsdir="${PREFIX}/share/locale"
 CONFIGURE_ENV=	WISH="${WISH}"
 LDFLAGS+=	-L${LOCALBASE}/lib
 MAKE_JOBS_UNSAFE=	yes
-
-# GCC 6 switched to -std=gnu++14 by default, which breaks the port (bug
-# 219284). Explicitly use the previous default to keep things going.
-USE_CXXSTD=	gnu++98
 
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes

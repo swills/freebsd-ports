@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/dspdfviewer/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/graphics/dspdfviewer/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
@@ -19,7 +19,7 @@ BUILD_WRKSRC=		${WRKSRC}/build
 CONFIGURE_WRKSRC=	${WRKSRC}/build
 INSTALL_WRKSRC=		${WRKSRC}/build
 
-USES=		cmake pkgconfig qt:5
+USES=		cmake:insource pkgconfig qt:5
 USE_QT=		buildtools_build core gui qmake_build linguisttools widgets xml
 CMAKE_ARGS=	-DPOPPLER_LIBRARIES=${LOCALBASE}/lib/libpoppler-qt5.so -DBuildTests=OFF
 USE_LDCONFIG=	yes

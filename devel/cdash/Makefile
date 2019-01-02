@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/devel/cdash/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/cdash/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	cdash
 PORTVERSION=	2.2.3
@@ -14,7 +14,7 @@ COMMENT=	Web-based software testing server
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/License.txt
 
-USES=		dos2unix cmake:outsource zip
+USES=		dos2unix cmake zip
 DOS2UNIX_GLOB=	*.php *.xml *.xsl *.txt
 CMAKE_ARGS=	-DCDASH_DB_NAME:STRING=cdash \
 		-DCDASH_DB_LOGIN:STRING=cdash \

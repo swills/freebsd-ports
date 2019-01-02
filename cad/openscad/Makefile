@@ -1,9 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/cad/openscad/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	openscad
 PORTVERSION=	2015.03
-PORTREVISION=	24
+PORTREVISION=	25
 CATEGORIES=	cad
 MASTER_SITES=	http://files.openscad.org/
 DISTNAME=	openscad-${PORTVERSION}.src

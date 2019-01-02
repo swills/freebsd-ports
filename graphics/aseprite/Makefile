@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/aseprite/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/aseprite/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		aseprite
 DISTVERSIONPREFIX=	v
@@ -35,7 +35,7 @@ LIB_DEPENDS=		liballeg.so:devel/allegro \
 			libtinyxml.so:textproc/tinyxml \
 			libzstd.so:archivers/zstd
 
-USES=			cmake:outsource compiler:c++11-lib iconv:wchar_t jpeg localbase:ldflags pkgconfig ssl
+USES=			cmake compiler:c++11-lib iconv:wchar_t jpeg localbase:ldflags pkgconfig ssl
 USE_GITHUB=		yes
 GH_TUPLE=		aseprite:libarchive:c51dbfc:libarchive/third_party/libarchive
 GH_TUPLE+=		aseprite:clip:964a64a:clip/src/clip

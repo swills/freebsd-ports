@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/gravity/Makefile 487443 2018-12-14 16:06:20Z yuri $
+# $FreeBSD: head/lang/gravity/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gravity
 DISTVERSION=	0.6.1
@@ -11,7 +11,7 @@ COMMENT=	Embeddable programming language
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	marcobambini
 

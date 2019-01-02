@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/print/scribus-devel/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/print/scribus-devel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	scribus
 PORTVERSION=	1.5.4
@@ -36,7 +36,7 @@ LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 		libharfbuzz.so:print/harfbuzz \
 		libicuuc.so:devel/icu
 
-USES=		cmake:outsource desktop-file-utils dos2unix jpeg pkgconfig python qt:5 shared-mime-info ssl tar:xz
+USES=		cmake desktop-file-utils dos2unix jpeg pkgconfig python qt:5 shared-mime-info ssl tar:xz
 USE_QT=		buildtools_build core declarative gui linguisttools_build network opengl \
 		printsupport qmake_build widgets xml
 USE_GNOME=	libxml2

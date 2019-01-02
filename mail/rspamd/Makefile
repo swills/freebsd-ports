@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/rspamd/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/mail/rspamd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	rspamd
 PORTVERSION=	1.8.3
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 BUILD_DEPENDS=	ragel:devel/ragel
 RUN_DEPENDS=	ca_root_nss>=3.*:security/ca_root_nss
 
-USES=		cmake:outsource compiler:c11 gnome perl5 pkgconfig \
+USES=		cmake compiler:c11 gnome perl5 pkgconfig \
 		sqlite ssl
 USE_LDCONFIG=	yes
 USE_PERL5=	build run

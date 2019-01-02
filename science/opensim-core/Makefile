@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/opensim-core/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/opensim-core/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	OpenSim
 DISTVERSION=	4.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LIB_DEPENDS=	libdocopt.so:devel/docopt.cpp \
 		libSimTKcommon.so:science/simbody
 
-USES=		blaslapack:openblas cmake:outsource compiler:c++11-lib fortran gl # fortran only for simbody/openblas
+USES=		blaslapack:openblas cmake compiler:c++11-lib fortran gl # fortran only for simbody/openblas
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:tl}-org
 GH_PROJECT=	${PORTNAME:tl}-core

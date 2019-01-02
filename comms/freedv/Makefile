@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/freedv/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/comms/freedv/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	freedv
 DISTVERSION=	1.3.1
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libcodec2.so:audio/codec2 \
 		libspeex.so:audio/speex \
 		libspeexdsp.so:audio/speexdsp
 
-USES=		cmake:outsource compiler:c++11-lib tar:xz
+USES=		cmake compiler:c++11-lib tar:xz
 USE_WX=		3.0+
 CMAKE_ARGS+=	-DCODEC2_INCLUDE_DIRS=${LOCALBASE}/include/codec2 \
 		-DCODEC2_LIBRARY=${LOCALBASE}/lib/libcodec2.so \

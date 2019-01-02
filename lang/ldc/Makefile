@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/ldc/Makefile 485381 2018-11-20 02:37:19Z acm $
+# $FreeBSD: head/lang/ldc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ldc
 PORTVERSION=	1.12.0
@@ -19,7 +19,7 @@ BROKEN_armv6=		fails to compile: Error: undefined identifier _jmp_buf, did you m
 BROKEN_armv7=		fails to compile: Error: undefined identifier _jmp_buf, did you mean alias jmp_buf?
 BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option "-std=c++11"
 
-USES=		cmake
+USES=		cmake:insource
 USE_GITHUB=     yes
 GH_ACCOUNT=     ldc-developers
 GH_PROJECT=     ldc

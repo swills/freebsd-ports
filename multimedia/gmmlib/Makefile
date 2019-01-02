@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/gmmlib/Makefile 487475 2018-12-14 23:41:26Z jbeich $
+# $FreeBSD: head/multimedia/gmmlib/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gmmlib
 DISTVERSIONPREFIX=	intel-${PORTNAME}-
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	Only Intel GPUs on x86 are supported
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 GH_ACCOUNT=	intel

@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/audio/lmms/Makefile 487366 2018-12-13 14:18:00Z tobik $
+# $FreeBSD: head/audio/lmms/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lmms
 DISTVERSIONPREFIX=	v
@@ -30,7 +30,7 @@ RUN_DEPENDS=	${LOCALBASE}/share/ladspa/rdf/caps.rdf:audio/caps-plugins \
 		${LOCALBASE}/share/ladspa/rdf/swh-plugins.rdf:audio/swhplugins \
 		${LOCALBASE}/share/ladspa/rdf/tap-plugins.rdf:audio/tap-plugins
 
-USES=		cmake:outsource desktop-file-utils localbase:ldflags pkgconfig \
+USES=		cmake desktop-file-utils localbase:ldflags pkgconfig \
 		qt:5 shared-mime-info
 USE_GITHUB=	yes
 GH_ACCOUNT=	LMMS

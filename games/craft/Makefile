@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/games/craft/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/craft/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	craft
 PORTVERSION=	1.0
@@ -22,7 +22,7 @@ SERVER_DESC=		Install the craft server
 OPTIONS_DEFAULT=	SERVER
 OPTIONS_SUB=		yes
 
-USES=		cmake compiler:c11
+USES=		cmake:insource compiler:c11
 USE_XORG=	x11 xi xrandr
 USE_GL=		gl glu
 

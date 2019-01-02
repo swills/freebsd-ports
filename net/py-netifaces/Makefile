@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/net/py-netifaces/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-netifaces/Makefile 489059 2019-01-02 07:43:05Z bofh $
 
 PORTNAME=	netifaces
-PORTVERSION=	0.10.6
+PORTVERSION=	0.10.7
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

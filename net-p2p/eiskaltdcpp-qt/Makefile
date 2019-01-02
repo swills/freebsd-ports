@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	eiskaltdcpp
 PORTREVISION=	11
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libeiskaltdcpp.so:net-p2p/eiskaltdcpp-lib
 
 MASTERDIR=	${.CURDIR}/../eiskaltdcpp-lib
 
-USES=		cmake gettext compiler:c++11-lib desktop-file-utils qt:4 ssl
+USES=		cmake:insource gettext compiler:c++11-lib desktop-file-utils qt:4 ssl
 USE_QT=		gui xml network qmake_build uic_build \
 		moc_build rcc_build linguisttools_build
 

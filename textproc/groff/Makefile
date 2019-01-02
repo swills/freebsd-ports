@@ -1,9 +1,8 @@
 # Created by: Ulrich Spoerlein <uqs@FreeBSD.org>
-# $FreeBSD: head/textproc/groff/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/textproc/groff/Makefile 488516 2018-12-27 08:54:55Z bapt $
 
 PORTNAME=	groff
-PORTVERSION=	1.22.3
-PORTREVISION=	1
+PORTVERSION=	1.22.4
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 
@@ -18,7 +17,7 @@ RUN_DEPENDS:=	psselect:print/psutils
 
 MAKE_JOBS_UNSAFE=	yes
 
-USES=		cpe ghostscript gmake perl5 shebangfix
+USES=		cpe ghostscript gmake perl5 shebangfix makeinfo
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-awk=/usr/bin/awk
 CONFIGURE_ENV+=	PERLPATH=${perl_CMD} # shebangfix
@@ -70,23 +69,6 @@ CONFIGURE_ARGS+=--with-x --with-appresdir=${PREFIX}/lib/X11/app-defaults
 PLIST_SUB+=	X11=""
 PLIST_SUB+=	HTMLDOCS=""
 .endif
-
-# Run in src/libs/gnulib subdir, too
-post-configure:
-	@(cd ${WRKSRC}/src/libs/gnulib && \
-	    ${SET_LATE_CONFIGURE_ARGS} \
-	    if ! ${SETENV} CC="${CC}" CPP="${CPP}" CXX="${CXX}" \
-	    CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" \
-	    INSTALL="/usr/bin/install -c" \
-	    INSTALL_DATA="${INSTALL_DATA}" \
-	    INSTALL_LIB="${INSTALL_LIB}" \
-	    INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-	    INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
-	    ${CONFIGURE_ENV} ${CONFIGURE_CMD} ${CONFIGURE_ARGS}; then \
-		 ${ECHO_MSG} "===>  Script \"${CONFIGURE_SCRIPT}\" failed unexpectedly."; \
-		 (${ECHO_CMD} ${CONFIGURE_FAIL_MESSAGE}) | ${FMT} 75 79 ; \
-		 ${FALSE}; \
-	    fi)
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/mdoc.local ${STAGEDIR}/${PREFIX}/share/groff/site-tmac
