@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/tigervnc/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/net/tigervnc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	tigervnc
 PORTVERSION=	1.9.0
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libunwind.so:devel/libunwind \
 RUN_DEPENDS=	${LOCALBASE}/share/X11/xkb/rules/base:x11/xkeyboard-config \
 		xkbcomp:x11/xkbcomp
 
-USES=		autoreconf:build cmake:noninja cpe gl iconv jpeg libtool \
+USES=		autoreconf:build cmake:insource,noninja cpe gl iconv jpeg libtool \
 		pkgconfig python ssl
 USE_GL=		gl
 USE_LDCONFIG=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/plasma5-kwallet-pam/Makefile 483271 2018-10-28 10:59:23Z tcberner $
+# $FreeBSD: head/security/plasma5-kwallet-pam/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kwallet-pam
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Plasma5 KWallet PAM Integration
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error
 
-USES=		cmake:outsource cpe gettext kde:5 qt:5 tar:xz
+USES=		cmake cpe gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build qmake_build
 

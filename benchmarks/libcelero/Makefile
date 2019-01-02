@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/libcelero/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/benchmarks/libcelero/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libcelero
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 
 BUILD_DEPENDS=	${LOCALBASE}/include/sys/sysinfo.h:devel/libsysinfo
 
-USES=		cmake:outsource compiler:c++11-lang localbase:ldflags
+USES=		cmake compiler:c++11-lang localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	DigitalInBlue
 GH_PROJECT=	Celero

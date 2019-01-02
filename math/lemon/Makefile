@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/lemon/Makefile 487085 2018-12-09 20:35:33Z yuri $
+# $FreeBSD: head/math/lemon/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lemon
 DISTVERSION=	1.3.1
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libCbc.so:math/coinmp \
 		libglpk.so:math/glpk
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 CMAKE_ON=	BUILD_SHARED_LIBS

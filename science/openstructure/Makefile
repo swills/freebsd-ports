@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/openstructure/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/openstructure/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	openstructure
 DISTVERSION=	1.7.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	science
 MASTER_SITES=	https://git.scicore.unibas.ch/schwede/${PORTNAME}/repository/${DISTVERSION}/archive.tar.gz?dummy=/
 
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 RUN_DEPENDS=	${PYNUMPY} \
 		bash:shells/bash
 
-USES=		cmake:outsource eigen:3 python pyqt:4 qt:4 shebangfix
+USES=		cmake eigen:3 python pyqt:4 qt:4 shebangfix
 SHEBANG_FILES=	scripts/dng.in scripts/ost.in scripts/ost_config.in
 USE_QT=		corelib gui network opengl xml qmake_build moc_build rcc_build uic_build
 USE_PYQT=	core gui

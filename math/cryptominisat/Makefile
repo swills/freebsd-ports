@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cryptominisat/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/cryptominisat/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	cryptominisat
 DISTVERSION=	5.6.3
@@ -15,7 +15,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

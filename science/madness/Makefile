@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/madness/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/madness/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	madness
 DISTVERSION=	0.10.1.20180823
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libtcmalloc.so:devel/google-perftools \
 		libxc.so:science/libxc
 
-USES=		cmake:outsource compiler:c++14-lang fortran localbase:ldflags python:build
+USES=		cmake compiler:c++14-lang fortran localbase:ldflags python:build
 USE_GITHUB=	yes
 GH_ACCOUNT=	m-a-d-n-e-s-s
 GH_TAGNAME=	ebb3fd7

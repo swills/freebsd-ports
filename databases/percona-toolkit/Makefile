@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/percona-toolkit/Makefile 462589 2018-02-22 14:06:51Z amdmi3 $
+# $FreeBSD: head/databases/percona-toolkit/Makefile 488412 2018-12-26 18:05:34Z flo $
 
 PORTNAME=	percona-toolkit
-PORTVERSION=	3.0.5
+PORTVERSION=	3.0.12
 CATEGORIES=	databases
 MASTER_SITES=	https://www.percona.com/downloads/${PORTNAME}/${PORTVERSION}/source/tarball/
 
@@ -18,6 +18,7 @@ RUN_DEPENDS=	bash:shells/bash \
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

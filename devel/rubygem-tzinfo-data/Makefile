@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tzinfo-data/Makefile 483339 2018-10-28 19:57:52Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tzinfo-data/Makefile 489034 2019-01-01 20:39:29Z sunpoet $
 
 PORTNAME=	tzinfo-data
-PORTVERSION=	1.2018.7
+PORTVERSION=	1.2018.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libpillowfight/Makefile 475973 2018-07-31 07:18:40Z yuri $
+# $FreeBSD: head/graphics/libpillowfight/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libpillowfight
 DISTVERSION=	0.2.4
@@ -14,7 +14,7 @@ BUILD_DEPENDS=	gmake:devel/gmake
 TEST_DEPENDS=	gmake:devel/gmake \
 		tox:devel/py-tox@${PY_FLAVOR}
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITLAB=	yes
 GL_SITE=	https://gitlab.gnome.org/World
 GL_ACCOUNT=	OpenPaperwork

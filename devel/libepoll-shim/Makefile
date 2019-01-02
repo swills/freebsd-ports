@@ -1,8 +1,8 @@
 # Created by: Johannes Lundberg <johalun0@gmail.com>
-# $FreeBSD: head/devel/libepoll-shim/Makefile 487796 2018-12-19 11:42:50Z zeising $
+# $FreeBSD: head/devel/libepoll-shim/Makefile 488686 2018-12-29 20:49:16Z zeising $
 
 PORTNAME=	libepoll-shim
-PORTVERSION=	0.0.20180530
+PORTVERSION=	0.0.20181229
 CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org
@@ -13,7 +13,7 @@ LICENSE=	MIT
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	epoll-shim
-GH_TAGNAME=	385633e
+GH_TAGNAME=	212c17b
 
 USE_LDCONFIG=	yes
 

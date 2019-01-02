@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/osd-lyrics/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/audio/osd-lyrics/Makefile 488478 2018-12-26 22:39:27Z linimon $
 
 PORTNAME=	osdlyrics
 PORTVERSION=	0.4.3
@@ -16,7 +16,8 @@ LIB_DEPENDS=	libnotify.so:devel/libnotify \
 		libdbus-glib-1.so:devel/dbus-glib \
 		libcurl.so:ftp/curl
 
-USES=		desktop-file-utils gettext gmake iconv localbase pkgconfig sqlite
+USES=		compiler:c++11-lang desktop-file-utils gettext gmake gnome \
+		iconv localbase pkgconfig sqlite
 USE_GNOME=	gtk20 intltool
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

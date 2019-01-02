@@ -1,5 +1,5 @@
 # Created by: Dan Pelleg <daniel+mdnsd@pelleg.org>
-# $FreeBSD: head/dns/mdnsd/Makefile 483267 2018-10-28 10:45:44Z linimon $
+# $FreeBSD: head/dns/mdnsd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mdnsd
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,7 @@ COMMENT=	Advertise a service via Rendezvous
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	Pro
 USE_LDCONFIG=	yes

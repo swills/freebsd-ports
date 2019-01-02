@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/mswebrtc/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/mswebrtc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mswebrtc
 PORTVERSION=	1.1.1
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox \
 		libmediastreamer_base.so:net/mediastreamer \
 		libortp.so:net/ortp
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 
 CMAKE_ARGS=	-DENABLE_STATIC=NO
 PLIST_FILES=	lib/mediastreamer/plugins/libmswebrtc.so

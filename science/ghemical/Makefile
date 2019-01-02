@@ -1,5 +1,5 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/ghemical/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/ghemical/Makefile 488233 2018-12-23 18:08:26Z yuri $
 
 PORTNAME=	ghemical
 PORTVERSION=	3.0.0
@@ -27,7 +27,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libmpqc.so:science/mpqc
 RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
-USES=		fortran gettext gmake pathfix pkgconfig
+USES=		compiler:c++11-lang fortran gettext gl gmake gnome pathfix pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-gtk --enable-threads --enable-openbabel
 USE_GNOME=	cairo gdkpixbuf2 gtk20 libglade2 intltool pangox-compat

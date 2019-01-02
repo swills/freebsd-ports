@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kapptemplate/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/devel/kapptemplate/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kapptemplate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KDE template generator
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth archive codecs completion config configwidgets coreaddons \
 		doctools ecm i18n jobwidgets kio newstuff service widgetsaddons
 USE_QT=		core dbus gui network testlib widgets xml \

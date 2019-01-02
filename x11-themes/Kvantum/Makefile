@@ -1,12 +1,11 @@
-# $FreeBSD: head/x11-themes/Kvantum/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/x11-themes/Kvantum/Makefile 488692 2018-12-29 22:46:46Z rigoletto $
 
 PORTNAME=	Kvantum
 DISTVERSIONPREFIX=	V
-DISTVERSION=	0.10.7
-PORTREVISION=	2
+DISTVERSION=	0.10.8
 CATEGORIES=	x11-themes
 
-MAINTAINER=	rezny@FreeBSD.org
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	SVG-based theme engine for Qt, KDE and LXQt
 
 LICENSE=	GPLv3+

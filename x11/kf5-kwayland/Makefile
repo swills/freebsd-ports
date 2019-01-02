@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-kwayland/Makefile 487789 2018-12-19 09:09:11Z zeising $
+# $FreeBSD: head/x11/kf5-kwayland/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kwayland
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -15,7 +15,7 @@ LICENSE=	LGPL21 LGPL3
 LICENSE_COMB=	dual
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LIB
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig \
+USES=		cmake compiler:c++11-lib gettext kde:5 pkgconfig \
 		qt:5 tar:xz
 USE_GL=		egl
 USE_KDE=	ecm

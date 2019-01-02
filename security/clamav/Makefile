@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/clamav/Makefile 487145 2018-12-10 10:18:30Z antoine $
+# $FreeBSD: head/security/clamav/Makefile 488541 2018-12-27 13:17:39Z swills $
 
 PORTNAME=	clamav
 PORTVERSION=	0.100.2
@@ -95,6 +95,9 @@ LDAP_USE=		OPENLDAP=yes
 LHA_RUN_DEPENDS=	lha:archivers/lha
 MILTER_CONFIGURE_WITH=	sendmail=/usr/sbin/sendmail
 MILTER_CONFIGURE_ENABLE=milter
+.if !exists(/usr/lib/libmilter.so)
+MILTER_LIB_DEPENDS+=	libmilter.so:mail/libmilter
+.endif
 MILTER_USE=		RC_SUBR=clamav-milter
 MSPACK_CONFIGURE_WITH=	system-libmspack=${LOCALBASE}/lib/libmspack.so
 MSPACK_LIB_DEPENDS=	libmspack.so:archivers/libmspack

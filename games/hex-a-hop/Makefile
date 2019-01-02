@@ -1,5 +1,5 @@
 # Created by: jamie
-# $FreeBSD: head/games/hex-a-hop/Makefile 473072 2018-06-22 20:55:12Z amdmi3 $
+# $FreeBSD: head/games/hex-a-hop/Makefile 488616 2018-12-28 18:20:13Z amdmi3 $
 
 PORTNAME=	hex-a-hop
 PORTVERSION=	1.1.0
@@ -15,9 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		iconv localbase
 USE_SDL=	sdl
+USE_CXXSTD=	c++98
 GNU_CONFIGURE=	yes
-
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 OPTIONS_DEFINE=	PANGO SOUND NLS DEBUG
 OPTIONS_DEFAULT=	SOUND

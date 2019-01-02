@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/gau2grid/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/gau2grid/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gau2grid
 DISTVERSIONPREFIX=	v
@@ -20,7 +20,7 @@ ONLY_FOR_ARCHS_REASON=	BUG: ValueError: descr is not a valid dtype descriptor: '
 
 BUILD_DEPENDS=	${PYNUMPY}
 
-USES=		cmake:outsource compiler:c11 python:build # C code build depends on python to generate some headers
+USES=		cmake compiler:c11 python:build # C code build depends on python to generate some headers
 USE_GITHUB=	yes
 GH_ACCOUNT=	dgasmith
 USE_LDCONFIG=	yes

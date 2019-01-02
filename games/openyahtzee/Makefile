@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/openyahtzee/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/openyahtzee/Makefile 488317 2018-12-25 12:14:18Z danilo $
 
 PORTNAME=	openyahtzee
-PORTVERSION=	1.9.2
-PORTREVISION=	14
+PORTVERSION=	1.9.3
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Open%20Yahtzee/Open%20Yahtzee%20${PORTVERSION}
 
@@ -15,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/scoped_ptr.hpp:devel/boost-libs
 
-USES=		compiler:c++11-lib localbase:ldflags tar:bzip2
+USES=		compiler:c++11-lib localbase:ldflags tar:xz
 USE_CXXSTD=	c++11
 USE_WX=		2.8
 WX_CONF_ARGS=	absolute

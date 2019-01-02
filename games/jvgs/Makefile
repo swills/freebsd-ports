@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/jvgs/Makefile 456735 2017-12-19 16:16:47Z bapt $
+# $FreeBSD: head/games/jvgs/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	jvgs
 PORTVERSION=	0.5.1
@@ -14,7 +14,7 @@ COMMENT=	Minimalistic platform game
 BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libfreetype.so:print/freetype2
 
-USES=		cmake lua:51
+USES=		cmake:insource lua:51
 USE_SDL=	sdl mixer
 USE_GL=		gl glu
 

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python37/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/lang/python37/Makefile 488798 2018-12-31 16:03:41Z amdmi3 $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -113,6 +113,12 @@ DISABLED_EXTENSIONS+=	nis
 .else
 PLIST_SUB+=	NO_NIS=""
 .endif
+
+post-patch:
+# disable the detection of includes and library from e2fsprogs-libuuid,
+# which introduces hidden dependency and breaks build
+	@${REINPLACE_CMD} -e 's|uuid/uuid.h|ignore_&|' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -e '/find_library_file/ s|uuid|ignore_&|' ${WRKSRC}/setup.py
 
 post-install:
 .if ! ${PORT_OPTIONS:MDEBUG}

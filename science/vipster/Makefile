@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/vipster/Makefile 487955 2018-12-21 07:09:28Z yuri $
+# $FreeBSD: head/science/vipster/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vipster
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Crystalline and molecular structure visualisation program
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource compiler:c++17-lang
+USES=		cmake compiler:c++17-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	sgsaenger
 USE_LDCONFIG=	yes

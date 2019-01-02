@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/radiance/Makefile 487803 2018-12-19 17:15:23Z yuri $
+# $FreeBSD: head/graphics/radiance/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	radiance
 DISTVERSION=	0.6.0
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		librtmidi.so:audio/rtmidi \
 		libsamplerate.so:audio/libsamplerate
 
-USES=		cmake:outsource compiler:c++14-lang gl localbase:ldflags qt:5
+USES=		cmake compiler:c++14-lang gl localbase:ldflags qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	zbanks
 GH_TAGNAME=	2b947cf

@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 488048 2018-12-22 02:10:21Z linimon $
+# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 488305 2018-12-25 09:30:19Z amdmi3 $
 
 PORTNAME=	lumina-xdg-entry
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,7 @@ MAINTAINER=	kmoore@FreeBSD.org
 COMMENT=	XDG desktop entry creator from the Lumina Desktop
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../../LICENSE
 
 OPTIONS_DEFINE=	I18N
 OPTIONS_DEFAULT=I18N

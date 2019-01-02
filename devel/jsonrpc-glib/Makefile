@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/jsonrpc-glib/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/devel/jsonrpc-glib/Makefile 488392 2018-12-26 14:33:45Z amdmi3 $
 
 PORTNAME=	jsonrpc-glib
 PORTVERSION=	3.28.1
@@ -6,9 +6,9 @@ CATEGORIES=	devel
 MASTER_SITES=	GNOME
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	Staging and stabilizing for facy Glib and Gtk+ features
+COMMENT=	Library to communicate using the JSON-RPC 2.0 specification
 
-LICENSE=	LGPL21
+LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	valac:lang/vala

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/uid_wrapper/Makefile 473829 2018-07-03 13:09:10Z timur $
+# $FreeBSD: head/devel/uid_wrapper/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		uid_wrapper
 PORTVERSION=		1.2.4
@@ -10,7 +10,7 @@ COMMENT=		Wrapper to fake privilege separation
 
 LICENSE=		GPLv3
 
-USES=			cmake:outsource
+USES=			cmake
 USE_LDCONFIG=		yes
 
 CMAKE_ARGS=		-DMAN_INSTALL_DIR:PATH="${PREFIX}/man"

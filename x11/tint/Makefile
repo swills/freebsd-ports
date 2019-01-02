@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/tint/Makefile 486720 2018-12-05 20:01:10Z linimon $
+# $FreeBSD: head/x11/tint/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	tint2
 PORTVERSION=	16.6
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libImlib2.so:graphics/imlib2 \
 		libstartup-notification-1.so:x11/startup-notification
 
-USES=		alias cmake:outsource desktop-file-utils gettext-runtime \
+USES=		alias cmake desktop-file-utils gettext-runtime \
 		pkgconfig shared-mime-info
 USE_GNOME=	cairo glib20 gtk20 librsvg2 pango
 USE_XORG=	x11 xcomposite xdamage xext xfixes xinerama xrandr xrender

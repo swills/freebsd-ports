@@ -1,5 +1,5 @@
 # Created by: torstenb
-# $FreeBSD: head/x11-wm/ctwm/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/x11-wm/ctwm/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ctwm
 DISTVERSION=	4.0.2
@@ -13,7 +13,7 @@ COMMENT=	Extension to twm, with support for multiple virtual screens
 
 LICENSE=	MIT
 
-USES=		cmake:outsource jpeg tar:xz
+USES=		cmake jpeg tar:xz
 USE_XORG=	x11 xext xt ice sm xpm xmu
 
 OPTIONS_DEFINE=	DOCS EXAMPLES

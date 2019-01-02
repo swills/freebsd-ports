@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/spirv-tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/spirv-tools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	spirv-tools
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Tools for processing SPIR-V intermediate shader language modules
 
 LICENSE=	APACHE20
 
-USES=		cmake:outsource compiler:c++11-lib python:build shebangfix
+USES=		cmake compiler:c++11-lib python:build shebangfix
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	tools/lesspipe/spirv-lesspipe.sh
 

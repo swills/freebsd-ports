@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/konquest/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/games/konquest/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	konquest
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	games kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons crash \
 		dbusaddons ecm guiaddons i18n libkdegames widgetsaddons \
 		xmlgui

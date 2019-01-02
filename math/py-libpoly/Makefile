@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-libpoly/Makefile 475056 2018-07-21 09:00:06Z yuri $
+# $FreeBSD: head/math/py-libpoly/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libpoly
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENCE
 
 LIB_DEPENDS=	libpoly.so:math/libpoly
 
-USES=		cmake:outsource localbase:ldflags python:2.7
+USES=		cmake localbase:ldflags python:2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	SRI-CSL
 USE_LDCONFIG=	yes

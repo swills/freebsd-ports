@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/container-diff/Makefile 485338 2018-11-19 18:19:25Z sunpoet $
+# $FreeBSD: head/sysutils/container-diff/Makefile 488958 2019-01-01 20:32:36Z sunpoet $
 
 PORTNAME=	container-diff
-PORTVERSION=	0.13.1
+PORTVERSION=	0.14.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

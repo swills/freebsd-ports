@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/belr/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/textproc/belr/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	belr
 PORTVERSION=	0.1.3
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DENABLE_STATIC=NO -DENABLE_STRICT=NO

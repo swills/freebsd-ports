@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/www/pear-Horde_Browser/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/www/pear-Horde_Browser/Makefile 488678 2018-12-29 17:25:56Z joneum $
 
 PORTNAME=	Horde_Browser
-PORTVERSION=	2.0.15
+PORTVERSION=	2.0.16
 CATEGORIES=	www pear
 
 MAINTAINER=	horde@FreeBSD.org

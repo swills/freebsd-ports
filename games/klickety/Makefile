@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/klickety/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/games/klickety/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	klickety
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	games kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 \
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 \
 		shebangfix tar:xz
 SHEBANG_FILES=	klickety-2.0-inherit-ksame-highscore.pl
 USE_KDE=	auth bookmarks codecs completion config configwidgets \

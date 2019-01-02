@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/sdl20/Makefile 487789 2018-12-19 09:09:11Z zeising $
+# $FreeBSD: head/devel/sdl20/Makefile 488333 2018-12-25 18:47:31Z amdmi3 $
 
 PORTNAME=	sdl2
 PORTVERSION=	2.0.9
@@ -120,6 +120,7 @@ SDL_TIMERS_CONFIGURE_ENABLE=	timers
 SDL_VIDEO_CONFIGURE_ENABLE=	video
 UDEV_CONFIGURE_ENABLE=		libudev
 UDEV_LIB_DEPENDS=		libudev.so:devel/libudev-devd
+UDEV_BUILD_DEPENDS=		${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 
 .include <bsd.port.options.mk>
 

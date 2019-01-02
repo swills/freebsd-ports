@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/www/trafficserver/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/www/trafficserver/Makefile 488769 2018-12-31 12:25:42Z rene $
 
 PORTNAME=	trafficserver
 PORTVERSION=	6.2.0
@@ -43,14 +43,11 @@ CONFIGURE_ARGS=	--with-libxml2=${LOCALBASE} \
 		--with-user=${USERS} \
 		--with-group=${GROUPS}
 
-OPTIONS_DEFINE=	DOCS WCCP SPDY
+OPTIONS_DEFINE=	DOCS WCCP
 
 WCCP_DESC=	Enable WCCPv2 protocol
-SPDY_DESC=	Enable SPDY
 
 WCCP_CONFIGURE_ENABLE=	wccp
-SPDY_CONFIGURE_ENABLE=	spdy
-SPDY_LIB_DEPENDS=	libspdylay.so:www/spdylay
 
 post-patch:
 	@${REINPLACE_CMD} \

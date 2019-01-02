@@ -1,5 +1,5 @@
 # Created by: Frank Steinborn <steinex@nognu.de>
-# $FreeBSD: head/irc/minbif/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/irc/minbif/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	minbif
 PORTVERSION=	1.0.5
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpurple.so:net-im/libpurple
 
-USES=		cmake pkgconfig
+USES=		cmake:insource pkgconfig
 USE_GNOME=	glib20
 USE_RC_SUBR=	${PORTNAME}
 

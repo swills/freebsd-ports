@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/libcint/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/libcint/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libcint
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libopenblas.so:math/openblas
 
-USES=		cmake:outsource blaslapack:openblas
+USES=		cmake blaslapack:openblas
 USE_GITHUB=	yes
 GH_ACCOUNT=	sunqm
 USE_LDCONFIG=	yes

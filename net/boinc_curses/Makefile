@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/net/boinc_curses/Makefile 448591 2017-08-23 06:30:12Z vanilla $
+# $FreeBSD: head/net/boinc_curses/Makefile 488254 2018-12-24 04:34:15Z linimon $
 
 PORTNAME=	boinc_curses
 PORTVERSION=	0.2.3
@@ -13,7 +13,7 @@ LICENSE=	LGPL21+
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libboinc.a:net/boinc-client
 
-USES=		ncurses tar:bzip2
+USES=		compiler:c++11-lang ncurses tar:bzip2
 MAKE_ENV=	BOINCLIBDIR=${LOCALBASE}/lib BOINCINCDIR=${LOCALBASE}/include/boinc
 
 PLIST_FILES=	bin/boinc_curses

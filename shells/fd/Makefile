@@ -1,8 +1,8 @@
 # Created by: Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
-# $FreeBSD: head/shells/fd/Makefile 471341 2018-06-02 06:05:16Z knu $
+# $FreeBSD: head/shells/fd/Makefile 488294 2018-12-25 07:12:34Z knu $
 
 PORTNAME=	fd
-PORTVERSION=	3.01g
+PORTVERSION=	3.01h
 CATEGORIES=	shells net
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA012337/soft/fd/ \
 		ftp://ftp.unixusers.net/src/fdclone/

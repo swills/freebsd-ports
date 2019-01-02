@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/opencolorio/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/opencolorio/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	opencolorio
 PORTVERSION=	1.1.0
@@ -12,7 +12,7 @@ COMMENT?=	Complete color management solution
 
 LICENSE=	BSD3CLAUSE
 
-USES=		alias cmake:outsource compiler:c++11-lang pkgconfig shebangfix
+USES=		alias cmake compiler:c++11-lang pkgconfig shebangfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	imageworks

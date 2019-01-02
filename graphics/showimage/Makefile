@@ -1,5 +1,5 @@
 # Created by: Rusty Nejdl <rnejdl@ringofsaturn.com>
-# $FreeBSD: head/graphics/showimage/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/showimage/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	showimage
 PORTVERSION=	1.10
@@ -13,7 +13,7 @@ COMMENT=	Simple KDE based image viewer
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource kde:5 qt:5 tar:bzip2
+USES=		cmake kde:5 qt:5 tar:bzip2
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons ecm i18n itemviews jobwidgets kio service solid \
 		widgetsaddons xmlgui

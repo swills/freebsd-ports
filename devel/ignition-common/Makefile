@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ignition-common/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/ignition-common/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ignition-common
 DISTVERSION=	3.0.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libignition-math6.so:math/ignition-math
 
-USES=		cmake:outsource compiler:c++17-lang gnome pkgconfig
+USES=		cmake compiler:c++17-lang gnome pkgconfig
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 

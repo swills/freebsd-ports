@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/qmmp-qt5/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/qmmp-qt5/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qmmp
 PORTVERSION=	1.2.0
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 CONFLICTS=	${PORTNAME}-0.*
 PORTSCOUT=	limit:^1\..*
 
-USES=		cmake:outsource pathfix pkgconfig qt:5 tar:bzip2
+USES=		cmake pathfix pkgconfig qt:5 tar:bzip2
 USE_QT=		core gui network widgets xml \
 		buildtools_build linguisttools_build qmake_build
 USE_LDCONFIG=	yes

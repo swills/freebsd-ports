@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kde-thumbnailer-epub/Makefile 483136 2018-10-27 14:09:03Z makc $
+# $FreeBSD: head/misc/kde-thumbnailer-epub/Makefile 488379 2018-12-26 12:27:10Z linimon $
 
 PORTNAME=	kde-thumbnailer-epub
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	KDE thumbnail generator for ePub files
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource kde:5 qt:5
+USES=		cmake compiler:c++11-lang kde:5 qt:5
 USE_KDE=	archive ecm_build kio
 USE_QT=		buildtools_build qmake_build gui xmlpatterns
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/luscus/Makefile 482330 2018-10-18 07:30:25Z yuri $
+# $FreeBSD: head/science/luscus/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	luscus
 DISTVERSION=	0.8.6
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 RUN_DEPENDS=	bash:shells/bash \
 		babel:science/openbabel
 
-USES=		cmake:outsource gettext-runtime pkgconfig shebangfix
+USES=		cmake gettext-runtime pkgconfig shebangfix
 SHEBANG_GLOB=	*.sh
 USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk20 pango pangox-compat
 USE_GL=		gl glu

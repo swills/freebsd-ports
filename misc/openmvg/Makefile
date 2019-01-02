@@ -1,8 +1,9 @@
-# $FreeBSD: head/misc/openmvg/Makefile 478166 2018-08-26 20:20:32Z yuri $
+# $FreeBSD: head/misc/openmvg/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	openmvg
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	misc science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -18,7 +19,7 @@ LIB_DEPENDS=	libflann_cpp.so:math/flann \
 		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
-USES=		cmake:outsource eigen:3 jpeg qt:5
+USES=		cmake eigen:3 jpeg qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	openMVG
 GH_PROJECT=	openMVG

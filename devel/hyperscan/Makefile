@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hyperscan/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/hyperscan/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	hyperscan
 PORTVERSION=	4.7.0
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	ragel:devel/ragel
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	intel
-USES=	compiler:c++11-lib cmake:outsource pathfix python:build
+USES=	compiler:c++11-lib cmake pathfix python:build
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	SSSE3 is required for work
 

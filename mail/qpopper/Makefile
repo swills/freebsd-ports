@@ -1,5 +1,5 @@
 # Created by: pst
-# $FreeBSD: head/mail/qpopper/Makefile 484939 2018-11-14 18:20:42Z eugen $
+# $FreeBSD: head/mail/qpopper/Makefile 488295 2018-12-25 07:16:02Z tobik $
 
 PORTNAME=	qpopper
 PORTVERSION=	4.1.0
@@ -10,7 +10,7 @@ MASTER_SITES=	http://core.ring.gr.jp/archives/net/mail/qpopper/ \
 		LOCAL/eugen
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	bc979@lafn.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Berkeley POP 3 server (now maintained by Qualcomm)
 
 # BSD-style license

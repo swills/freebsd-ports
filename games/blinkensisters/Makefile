@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/blinkensisters/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/blinkensisters/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	blinkensisters
 PORTVERSION=	0.5.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/DOC/LICENSE
 
 BROKEN_sparc64=	does not compile on sparc64
 
-USES=		cmake compiler:c++11-lang localbase perl5 # actually, old gcc fails in theora.h
+USES=		cmake:insource compiler:c++11-lang localbase perl5 # actually, old gcc fails in theora.h
 USE_SDL=	sdl image ttf
 USE_PERL5=	build
 

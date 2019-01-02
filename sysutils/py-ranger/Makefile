@@ -1,8 +1,8 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/sysutils/py-ranger/Makefile 472288 2018-06-13 05:58:35Z pi $
+# $FreeBSD: head/sysutils/py-ranger/Makefile 488312 2018-12-25 11:05:18Z tobik $
 
 PORTNAME=	ranger
-PORTVERSION=	1.9.1
+PORTVERSION=	1.9.2
 CATEGORIES=	sysutils python
 MASTER_SITES=	https://ranger.github.io/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/ImageMagick6/Makefile 487309 2018-12-12 18:00:13Z kwm $
+# $FreeBSD: head/graphics/ImageMagick6/Makefile 488735 2018-12-30 20:49:47Z kwm $
 
 PORTNAME=	ImageMagick
-DISTVERSION=	6.9.10-16
+DISTVERSION=	6.9.10-22
 PORTEPOCH=	1
 CATEGORIES=	graphics perl5
 MASTER_SITES=	http://www.imagemagick.org/download/ \

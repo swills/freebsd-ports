@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 488135 2018-12-22 21:45:26Z vd $
+# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION?=	5.7.24
@@ -23,7 +23,7 @@ RUN_DEPENDS=	bash:shells/bash \
 LIB_DEPENDS=	libevent.so:devel/libevent liblz4.so:archivers/liblz4
 
 USES=		bison \
-		cmake:outsource,noninja \
+		cmake:noninja \
 		compiler:c++11-lib \
 		compiler:c11 \
 		libedit \

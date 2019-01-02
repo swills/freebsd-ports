@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/flatbuffers/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/flatbuffers/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	flatbuffers
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ COMMENT=	Memory efficient serialization library
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	google

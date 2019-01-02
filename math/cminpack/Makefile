@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cminpack/Makefile 464438 2018-03-13 22:24:58Z fernape $
+# $FreeBSD: head/math/cminpack/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	cminpack
 PORTVERSION=	1.3.6
@@ -10,7 +10,7 @@ COMMENT=	Solving nonlinear equations and nonlinear least squares problems
 
 LICENSE_FILE=	${WRKSRC}/CopyrightMINPACK.txt
 
-USES=		cmake:outsource
+USES=		cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	devernay

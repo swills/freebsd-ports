@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/audio/libgroove/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/audio/libgroove/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libgroove
 PORTVERSION=	4.3.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 USE_GITHUB=	yes
 GH_ACCOUNT=	andrewrk
 
-USES=		cmake:outsource
+USES=		cmake
 USE_SDL=	sdl2
 USE_LDCONFIG=	yes
 CFLAGS+=	-Wno-error=deprecated-declarations # ffmpeg 3.1

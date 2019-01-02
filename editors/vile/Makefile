@@ -1,12 +1,12 @@
 # Created by: pgf
-# $FreeBSD: head/editors/vile/Makefile 446109 2017-07-17 19:41:10Z cpm $
+# $FreeBSD: head/editors/vile/Makefile 488831 2018-12-31 20:18:25Z swills $
 
 PORTNAME=	vile
-PORTVERSION=	9.8s
+PORTVERSION=	9.8t
 CATEGORIES=	editors
 MASTER_SITES=	ftp://dickey.his.com/vile/current/ \
-		ftp://invisible-island.net/vile/current/ \
-		http://invisible-mirror.net/archives/vile/current/
+		ftp://ftp.invisible-island.net/vile/current/ \
+		https://invisible-mirror.net/archives/vile/current/
 
 PATCH_SITES=	${MASTER_SITES:S,vile/current/,vile/patches/,g}
 #PATCHFILES=

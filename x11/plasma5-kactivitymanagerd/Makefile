@@ -1,14 +1,13 @@
-# $FreeBSD: head/x11/plasma5-kactivitymanagerd/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11/plasma5-kactivitymanagerd/Makefile 488757 2018-12-31 06:38:42Z tcberner $
 
 PORTNAME=	kactivitymanagerd
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	System service to manage user's activities, track the usage patterns
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons dbusaddons ecm \
 		globalaccel i18n kio service widgetsaddons windowsystem xmlgui
 USE_QT=		concurrent core dbus gui network sql widgets xml \

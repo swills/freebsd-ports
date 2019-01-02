@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/openrct2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/openrct2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openrct2
 DISTVERSIONPREFIX=	v
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libcurl.so:ftp/curl \
 		libfreetype.so:print/freetype2
 
-USES=		compiler:c++14-lang cmake:outsource desktop-file-utils iconv localbase:ldflags pkgconfig shared-mime-info ssl
+USES=		compiler:c++14-lang cmake desktop-file-utils iconv localbase:ldflags pkgconfig shared-mime-info ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenRCT2
 GH_PROJECT=	OpenRCT2

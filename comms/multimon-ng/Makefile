@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/multimon-ng/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/comms/multimon-ng/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	multimon-ng
 PORTVERSION=	1.1.0
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USE_GITHUB=	yes
 GH_ACCOUNT=	EliasOenal
 
-USES=		cmake
+USES=		cmake:insource
 
 OPTIONS_DEFINE=	PULSEAUDIO X11
 

@@ -1,9 +1,9 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/finance/gnucash-docs/Makefile 481104 2018-10-02 08:42:56Z madpilot $
+# $FreeBSD: head/finance/gnucash-docs/Makefile 488771 2018-12-31 12:40:47Z madpilot $
 #   $MCom: ports/finance/gnucash-docs/Makefile,v 1.7 2007/08/04 03:51:29 marcus Exp $
 
 PORTNAME=	gnucash-docs
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/gnucash/gnucash%20%28stable%29/${PORTVERSION}
 
@@ -13,9 +13,10 @@ COMMENT=	Documentation for gnucash
 LIB_DEPENDS=	librarian.so:textproc/rarian
 RUN_DEPENDS=	yelp:x11/yelp
 
-INSTALLS_OMF=	yes
-USES=		autoreconf localbase gmake
+USES=		autoreconf localbase gmake gnome
 USE_GNOME=	libxml2
+
+INSTALLS_OMF=	yes
 GNU_CONFIGURE=	yes
 NO_ARCH=	yes
 

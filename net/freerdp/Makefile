@@ -1,11 +1,12 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp/Makefile 487838 2018-12-20 05:04:33Z meta $
+# $FreeBSD: head/net/freerdp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	freerdp
 DISTVERSION=	2.0.0-rc4
 CATEGORIES=	net comms ipv6
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	649f49f.patch:-p1 effa8b8.patch:-p1
 
 MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Free implementation of Remote Desktop Protocol
@@ -15,9 +16,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libepoll-shim.so:devel/libepoll-shim
 
-USES=		alias cmake:outsource compiler:c++11-lib cpe gettext localbase pathfix pkgconfig ssl
+USES=		alias cmake compiler:c++11-lib cpe gettext localbase pathfix pkgconfig ssl
 USE_LDCONFIG=	yes
 CPE_VENDOR=	freerdp_project
+
+BROKEN_SSL=	libressl-devel
+BROKEN_SSL_REASON_libressl-devel=	fails to compile: no member named 'alert_dispatch' in 'struct ssl3_state_st'
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeRDP

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/cad/qcad/Makefile 486950 2018-12-08 13:57:40Z mr $
+# $FreeBSD: head/cad/qcad/Makefile 488380 2018-12-26 12:29:28Z linimon $
 
 PORTNAME=	qcad
 PORTVERSION=	3.21.3.11
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libquazip5.so:archivers/quazip@qt5
 
 MAKE_JOBS_UNSAFE=yes
 
-USES=		gmake qmake qt:5
+USES=		compiler:c++11-lang gmake qmake qt:5
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 USE_QT=		buildtools qmake_build \

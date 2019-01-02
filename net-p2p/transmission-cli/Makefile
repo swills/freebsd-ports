@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-p2p/transmission-cli/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
+# $FreeBSD: head/net-p2p/transmission-cli/Makefile 488657 2018-12-29 07:18:50Z rigoletto $
 
 PORTNAME=	transmission
 DISTVERSION=	2.94
+PORTREVISION?=	1
 CATEGORIES+=	net-p2p
 SLAVEPORT?=	cli
 PKGNAMESUFFIX?=	-cli
@@ -26,7 +27,7 @@ LIB_DEPENDS+=	libcurl.so:ftp/curl \
 		libutp.so:net/libutp \
 		libminiupnpc.so:net/miniupnpc
 
-USES+=		cmake:outsource cpe iconv libtool localbase pkgconfig
+USES+=		cmake cpe iconv libtool localbase pkgconfig
 
 .  if ${SLAVEPORT:Mcli}
 USES+=		ssl

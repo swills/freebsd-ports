@@ -1,5 +1,5 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/opencv/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	opencv
 PORTVERSION=	3.4.1
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libprotobuf.so:devel/protobuf \
 		libtesseract.so:graphics/tesseract
 .endif
 
-USES=		cmake:outsource compiler:c++14-lang localbase:ldflags pkgconfig
+USES=		cmake compiler:c++14-lang localbase:ldflags pkgconfig
 
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes

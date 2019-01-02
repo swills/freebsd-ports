@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@FreeBSD.org>
-# $FreeBSD: head/multimedia/kodi-addon-pvr-iptvsimple/Makefile 478793 2018-09-02 15:01:24Z mat $
+# $FreeBSD: head/multimedia/kodi-addon-pvr-iptvsimple/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kodi-addon-pvr-iptvsimple
 PORTVERSION=	2.4.14
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libp8-platform.so:devel/p8-platform \
 		libkodiplatform.so:devel/kodi-platform
 RUN_DEPENDS=	kodi:multimedia/kodi
 
-USES=		cmake:outsource,noninja
+USES=		cmake:noninja
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kodi-pvr

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/stxxl/Makefile 390422 2015-06-23 16:09:53Z amdmi3 $
+# $FreeBSD: head/devel/stxxl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	stxxl
 PORTVERSION=	1.4.1
@@ -12,7 +12,7 @@ COMMENT=	Standard Template Library for Extra Large Data Sets
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
 
-USES=		cmake:outsource
+USES=		cmake
 CMAKE_ARGS=	-DINSTALL_PKGCONFIG_DIR:STRING="libdata/pkgconfig" \
 		-DUSE_GNU_PARALLEL:BOOL=OFF # may be enabled for future versions of clang with openmp support
 

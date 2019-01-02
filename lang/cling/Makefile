@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/lang/cling/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/cling/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		cling
 DISTVERSION=		0.5-2018-08-13
@@ -30,7 +30,7 @@ LLVM_RELEASE=	5.0.0
 LLVM_SUFFIX=	50_cern-root
 LLVM_PREFIX=	${PREFIX}/llvm${LLVM_SUFFIX}
 
-USES=		cmake:outsource compiler:c11 compiler:c++11-lib cpe \
+USES=		cmake compiler:c11 compiler:c++11-lib cpe \
 		libedit ncurses python:build shebangfix tar:bzip2
 USE_GNOME=	libxml2
 USE_LDCONFIG=	${LLVM_PREFIX}/lib

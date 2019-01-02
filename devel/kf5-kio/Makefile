@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kio/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/devel/kf5-kio/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kio
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	devel kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 resource and network access abstraction
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
+USES=		cmake compiler:c++11-lib desktop-file-utils \
 		gettext kde:5 qt:5 ssl tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	archive auth bookmarks codecs completion config \

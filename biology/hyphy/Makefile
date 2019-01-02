@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/hyphy/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/hyphy/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	hyphy
 DISTVERSION=	2.3.14-16
@@ -16,7 +16,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		compiler:c++14-lang cmake:outsource localbase:ldflags ssl
+USES=		compiler:c++14-lang cmake localbase:ldflags ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	veg
 

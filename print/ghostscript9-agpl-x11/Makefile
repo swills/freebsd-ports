@@ -1,7 +1,7 @@
-# $FreeBSD: head/print/ghostscript9-agpl-x11/Makefile 480373 2018-09-22 09:53:10Z tijl $
+# $FreeBSD: head/print/ghostscript9-agpl-x11/Makefile 488238 2018-12-23 19:41:19Z tijl $
 
 PORTNAME=	ghostscript
-PORTVERSION=	9.25
+PORTVERSION=	9.26
 CATEGORIES=	print
 MASTER_SITES=	https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${PORTVERSION:S/.//}/
 PKGNAMESUFFIX=	9-agpl-x11
@@ -29,11 +29,11 @@ CONFIGURE_ARGS=	--disable-compile-inits \
 		--disable-cups \
 		--disable-dbus \
 		--disable-gtk \
+		--disable-openjpeg \
 		--enable-contrib \
 		--enable-dynamic \
 		--enable-fontconfig \
 		--enable-freetype \
-		--enable-openjpeg \
 		--with-drivers=ALL \
 		--with-fontpath=${LOCALBASE}/share/fonts \
 		--with-jbig2dec \

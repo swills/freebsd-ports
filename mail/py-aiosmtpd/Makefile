@@ -1,8 +1,7 @@
-# $FreeBSD: head/mail/py-aiosmtpd/Makefile 448957 2017-08-30 03:04:08Z acm $
+# $FreeBSD: head/mail/py-aiosmtpd/Makefile 488236 2018-12-23 19:21:13Z decke $
 
 PORTNAME=	aiosmtpd
-PORTVERSION=	1.1
-PORTREVISION=	1
+PORTVERSION=	1.2
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +10,8 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Asyncio based SMTP server
 
 LICENSE=	APACHE20
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}atpublic>=0:devel/py-atpublic@${PY_FLAVOR}
 
 USES=		python:3.5+
 USE_PYTHON=	autoplist distutils

@@ -1,9 +1,10 @@
 # Created by: Alejandro Pulver <alepulver@FreeBSD.org>
-# $FreeBSD: head/x11-wm/stumpwm/Makefile 487822 2018-12-20 01:18:30Z jrm $
+# $FreeBSD: head/x11-wm/stumpwm/Makefile 488874 2019-01-01 12:44:21Z krion $
 
 PORTNAME=	stumpwm
 DISTVERSION=	18.11-2
 DISTVERSIONSUFFIX=	-g84f093e
+PORTREVISION=	1
 CATEGORIES=	x11-wm lisp
 
 MAINTAINER=	jrm@FreeBSD.org

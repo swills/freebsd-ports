@@ -1,8 +1,8 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/elgg/Makefile 485978 2018-11-27 02:27:18Z wen $
+# $FreeBSD: head/www/elgg/Makefile 488646 2018-12-29 02:25:34Z wen $
 
 PORTNAME=	elgg
-PORTVERSION=	2.3.9
+PORTVERSION=	2.3.10
 CATEGORIES=	www
 MASTER_SITES=	http://elgg.org/download/
 

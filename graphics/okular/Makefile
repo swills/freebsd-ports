@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/okular/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/graphics/okular/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	okular
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libchm.so:misc/chmlib \
 		libtiff.so:graphics/tiff \
 		libzip.so:archivers/libzip
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
+USES=		cmake compiler:c++11-lib desktop-file-utils \
 		gettext jpeg kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	activities archive auth bookmarks codecs completion config \
 		configwidgets coreaddons dbusaddons ecm emoticons i18n \

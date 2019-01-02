@@ -1,5 +1,5 @@
 # Created by: Jesper Schmitz Mouridsen
-# $FreeBSD: head/x11-themes/lxqt-themes/Makefile 475459 2018-07-27 19:01:18Z jsm $
+# $FreeBSD: head/x11-themes/lxqt-themes/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lxqt-themes
 PORTVERSION=	0.13.0
@@ -11,7 +11,7 @@ COMMENT=	Themes for the LXQt desktop
 
 LICENSE=	LGPL21+
 
-USES=		lxqt cmake:outsource tar:xz
+USES=		lxqt cmake tar:xz
 USE_LXQT=	buildtools
 
 .include <bsd.port.mk>

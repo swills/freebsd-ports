@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/libsbml/Makefile 477994 2018-08-25 03:31:43Z tobik $
+# $FreeBSD: head/biology/libsbml/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libsbml
 PORTVERSION=	5.17.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		cmake:outsource iconv:build
+USES=		cmake iconv:build
 USE_CXXSTD=	c++98
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes

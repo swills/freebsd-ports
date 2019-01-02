@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/bctoolbox/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/bctoolbox/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	bctoolbox
 PORTVERSION=	0.6.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	mbedtls>=2.3.0_2:security/mbedtls
 LIB_DEPENDS=	libmbedtls.so:security/mbedtls
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_LDCONFIG=	yes
 
 CFLAGS+=	-DHAVE_ARC4RANDOM

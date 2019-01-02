@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-FFI-Platypus/Makefile 485541 2018-11-21 20:19:54Z sunpoet $
+# $FreeBSD: head/devel/p5-FFI-Platypus/Makefile 488974 2019-01-01 20:34:01Z sunpoet $
 
 PORTNAME=	FFI-Platypus
-PORTVERSION=	0.58
+PORTVERSION=	0.59
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

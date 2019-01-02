@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/partio/Makefile 480080 2018-09-18 20:22:21Z fernape $
+# $FreeBSD: head/graphics/partio/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	partio
 PORTVERSION=	1.5.5
@@ -12,7 +12,7 @@ LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	swig3.0:devel/swig30
 
-USES=		cmake:outsource gl python shebangfix
+USES=		cmake gl python shebangfix
 SHEBANG_FILES=	src/tools/partedit.py src/tools/partjson.py
 USE_GL=		gl glu glut
 USE_LDCONFIG=	yes

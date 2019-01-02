@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-IO-Compress/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/archivers/p5-IO-Compress/Makefile 488967 2019-01-01 20:33:23Z sunpoet $
 
 PORTNAME=	IO-Compress
-PORTVERSION=	2.081
+PORTVERSION=	2.083
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,9 +18,10 @@ RUN_DEPENDS=	p5-Compress-Raw-Bzip2>=${PORTVERSION}:archivers/p5-Compress-Raw-Bzi
 		p5-Compress-Raw-Zlib>=${PORTVERSION}:archivers/p5-Compress-Raw-Zlib
 TEST_DEPENDS=	p5-Test-Pod>=1:devel/p5-Test-Pod
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e '/EXE_FILES/d' ${WRKSRC}/Makefile.PL

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/sayonara/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/sayonara/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	sayonara
 DISTVERSIONPREFIX=	player-
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libtag.so:audio/taglib \
 		libmtp.so:multimedia/libmtp
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
+USES=		cmake compiler:c++11-lib desktop-file-utils \
 		pkgconfig qt:5
 USE_GNOME=	glib20
 USE_GSTREAMER1=	flac libav mpg123 ogg opus vorbis

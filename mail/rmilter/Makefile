@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/rmilter/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/mail/rmilter/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	rmilter
 PORTVERSION=	1.10.0
@@ -18,7 +18,7 @@ NOT_FOR_ARCHS_REASON=	fails to compile: error: Unsupported word size
 USE_GITHUB=	yes
 GH_ACCOUNT=	vstakhov
 
-USES=		cmake:outsource bison pkgconfig ssl
+USES=		cmake bison pkgconfig ssl
 USE_GNOME=	glib20
 
 USERS=		_rmilter

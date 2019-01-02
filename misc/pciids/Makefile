@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/misc/pciids/Makefile 485020 2018-11-15 19:05:59Z sunpoet $
+# $FreeBSD: head/misc/pciids/Makefile 488949 2019-01-01 20:31:48Z sunpoet $
 
 PORTNAME=	pciids
-PORTVERSION=	20181113
+PORTVERSION=	20181228
 CATEGORIES=	misc
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -17,7 +17,7 @@ NO_BUILD=	yes
 PORTDATA=	pci.ids
 
 GH_ACCOUNT=	pciutils
-GH_TAGNAME=	6528d11
+GH_TAGNAME=	80bd718
 USE_GITHUB=	yes
 
 do-install:

@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/irc/anope/Makefile 487581 2018-12-16 11:59:49Z egypcio $
+# $FreeBSD: head/irc/anope/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	anope
 PORTVERSION=	2.0.6
@@ -11,7 +11,7 @@ COMMENT=	Set of IRC services for IRC networks
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/docs/COPYING
 
-USES=		cmake:outsource localbase:ldflags shebangfix
+USES=		cmake localbase:ldflags shebangfix
 USE_GITHUB=	yes
 USE_RC_SUBR=	anope
 

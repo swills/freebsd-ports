@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/math/speedcrunch/Makefile 477580 2018-08-19 14:38:46Z swills $
+# $FreeBSD: head/math/speedcrunch/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	speedcrunch
 PORTVERSION=	0.12.0
@@ -13,7 +13,7 @@ COMMENT=	Keyboard-oriented desktop scientific calculator
 
 LICENSE=	GPLv2+
 
-USES=		cmake:outsource qt:5
+USES=		cmake qt:5
 
 BB_ACCOUNT=	heldercorreia
 BB_PROJECT=	${PORTNAME}

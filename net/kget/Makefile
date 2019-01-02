@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kget/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net/kget/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	kget
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -17,7 +17,7 @@ LIB_DEPENDS=    libKF5Torrent.so:net-p2p/libktorrent  \
 		libqca-qt5.so:devel/qca@qt5 \
 		libqgpgme.so:security/gpgme-qt5
 
-USES=		cmake:outsource kde:5 qt:5 shebangfix sqlite tar:xz
+USES=		cmake compiler:c++11-lang kde:5 qt:5 shebangfix sqlite tar:xz
 
 USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons emoticons guiaddons i18n \

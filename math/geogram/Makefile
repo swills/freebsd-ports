@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/geogram/Makefile 487093 2018-12-09 21:49:39Z yuri $
+# $FreeBSD: head/math/geogram/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	geogram
 DISTVERSION=	1.6.9
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/doc/devkit/license.dox
 
 LIB_DEPENDS=	libglfw.so:graphics/glfw
 
-USES=		cmake:outsource gl localbase:ldflags
+USES=		cmake gl localbase:ldflags
 USE_XORG=	x11 xcursor xi xinerama xrandr xxf86vm
 USE_GL=		gl glu
 USE_LDCONFIG=	yes

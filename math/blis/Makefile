@@ -1,8 +1,8 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/blis/Makefile 487243 2018-12-11 17:03:52Z linimon $
+# $FreeBSD: head/math/blis/Makefile 488291 2018-12-25 05:17:34Z jmd $
 
 PORTNAME=	blis
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.1
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org

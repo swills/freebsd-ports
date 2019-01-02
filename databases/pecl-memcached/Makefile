@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/pecl-memcached/Makefile 482055 2018-10-14 16:28:10Z sunpoet $
+# $FreeBSD: head/databases/pecl-memcached/Makefile 488985 2019-01-01 20:35:00Z sunpoet $
 
 PORTNAME=	memcached
-PORTVERSION=	3.0.4
+PORTVERSION=	3.1.3
 CATEGORIES=	databases
 
 MAINTAINER=	sunpoet@FreeBSD.org

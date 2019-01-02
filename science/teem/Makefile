@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/teem/Makefile 478759 2018-09-02 06:43:29Z yuri $
+# $FreeBSD: head/science/teem/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	teem
 DISTVERSION=	1.11.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libpng16.so:graphics/png
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 CMAKE_ON=	BUILD_SHARED_LIBS

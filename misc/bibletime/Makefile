@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/bibletime/Makefile 479100 2018-09-06 13:52:15Z ericbsd $
+# $FreeBSD: head/misc/bibletime/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	bibletime
 PORTVERSION=	2.11.2
@@ -15,7 +15,7 @@ BROKEN_powerpc64=	fails to compile: btosismorphsegmentation.cpp.o: undefined ref
 LIB_DEPENDS=	libclucene-core.so:textproc/clucene \
 		libsword.so:misc/sword
 
-USES=		cmake:outsource qt:5 tar:xz ssl
+USES=		cmake qt:5 tar:xz ssl
 USE_QT=		buildtools core dbus gui linguist_build network script svg \
 		webkit xml qmake_build
 .include <bsd.port.mk>

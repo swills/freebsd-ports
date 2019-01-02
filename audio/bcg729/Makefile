@@ -1,5 +1,5 @@
 # Created by: sobomax
-# $FreeBSD: head/audio/bcg729/Makefile 482343 2018-10-18 13:31:00Z tijl $
+# $FreeBSD: head/audio/bcg729/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	bcg729
 PORTVERSION=	1.0.4
@@ -13,7 +13,7 @@ COMMENT=	Software G729A encoder and decoder library written in C
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DENABLE_STATIC=NO

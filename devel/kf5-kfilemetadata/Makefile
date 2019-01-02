@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kfilemetadata
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libavutil.so:multimedia/ffmpeg \
 		libtag.so:audio/taglib
 # TODO: maybe depend on textproc/catdoc
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig \
+USES=		cmake compiler:c++11-lib gettext kde:5 pkgconfig \
 		qt:5 tar:xz
 USE_KDE=	archive ecm i18n
 USE_QT=		buildtools_build core qmake_build xml

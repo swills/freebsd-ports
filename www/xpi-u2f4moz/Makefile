@@ -1,5 +1,5 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/xpi-u2f4moz/Makefile 434355 2017-02-18 14:37:31Z nivit $
+# $FreeBSD: head/www/xpi-u2f4moz/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	u2f4moz
 DISTVERSION=	v1.0.1
@@ -22,7 +22,7 @@ PLIST_SUB=	SYSTEM_PROCESSOR=${SYSTEM_PROCESSOR}
 SYSTEM_PROCESSOR=	x86
 
 USE_GITHUB=	yes
-USES=		cmake iconv pkgconfig
+USES=		cmake:insource iconv pkgconfig
 
 XPI_DIR=	lib/xpi
 XPI_ID=		u2f4moz@prefiks.org

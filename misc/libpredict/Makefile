@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/libpredict/Makefile 458476 2018-01-08 20:22:43Z yuri $
+# $FreeBSD: head/misc/libpredict/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libpredict
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Satellite orbit prediction library
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	la1k
 USE_LDCONFIG=	yes

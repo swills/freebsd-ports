@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/waylandpp/Makefile 482189 2018-10-15 23:59:23Z jbeich $
+# $FreeBSD: head/graphics/waylandpp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	waylandpp
 DISTVERSION=	0.2.3
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libwayland-egl.so:graphics/wayland
 
-USES=		cmake:outsource localbase pkgconfig
+USES=		cmake localbase pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	NilsBrause
 USE_GL=		egl

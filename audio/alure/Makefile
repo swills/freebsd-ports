@@ -1,5 +1,5 @@
 # Created by: nemysis <nemysis@gmx.ch>
-# $FreeBSD: head/audio/alure/Makefile 475354 2018-07-26 09:12:28Z tobik $
+# $FreeBSD: head/audio/alure/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	alure
 PORTVERSION=	1.2
@@ -13,7 +13,7 @@ COMMENT=	Utility library to help manage common tasks with OpenAL
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource openal:soft pkgconfig
+USES=		cmake openal:soft pkgconfig
 USE_LDCONFIG=	yes
 LLD_UNSAFE=	yes	# lld disallows preemption of protected visibility syms
 CMAKE_OFF=	BUILD_DOCS BUILD_STATIC

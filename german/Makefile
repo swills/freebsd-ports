@@ -1,4 +1,4 @@
-# $FreeBSD: head/german/Makefile 487994 2018-12-21 13:36:25Z rene $
+# $FreeBSD: head/german/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = German support
@@ -17,7 +17,6 @@
     SUBDIR += hyphen
     SUBDIR += jdictionary-eng-ger
     SUBDIR += jdictionary-ger-hun
-    SUBDIR += kde4-l10n
     SUBDIR += libreoffice
     SUBDIR += mediathekview
     SUBDIR += mythes

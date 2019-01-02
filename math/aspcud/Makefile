@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/aspcud/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/aspcud/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	aspcud
 PORTVERSION=	1.9.4
@@ -18,7 +18,7 @@ RUN_DEPENDS=	gringo:math/gringo \
 		clasp:math/clasp \
 		bash:shells/bash
 
-USES=		compiler:c++11-lang cmake:outsource python:run
+USES=		compiler:c++11-lang cmake python:run
 USE_GITHUB=	yes
 GH_ACCOUNT=	potassco
 

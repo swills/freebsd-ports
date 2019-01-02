@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dkh/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/dkh/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dkh
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Wolf, Reiher, and Hess's Douglas-Kroll-Hess relativistic correction
 
 LICENSE=	GPLv3
 
-USES=		cmake:outsource fortran
+USES=		cmake fortran
 USE_GITHUB=	yes
 GH_ACCOUNT=	psi4
 USE_LDCONFIG=	yes

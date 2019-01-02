@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pam_wrapper/Makefile 473829 2018-07-03 13:09:10Z timur $
+# $FreeBSD: head/devel/pam_wrapper/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		pam_wrapper
 PORTVERSION=		1.0.6
@@ -13,7 +13,7 @@ LICENSE=		GPLv3
 
 EXTRA_PATCHES=		${PATCHDIR}/python-detection.patch:-p1
 
-USES=			cmake:outsource python:2.7+
+USES=			cmake python:2.7+
 USE_LDCONFIG=		yes
 
 CMAKE_ARGS=		-DMAN_INSTALL_DIR:PATH="${PREFIX}/man"

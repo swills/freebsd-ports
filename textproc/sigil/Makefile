@@ -1,5 +1,5 @@
 # Created by: Jonathan Chen <jonc@chen.org.nz>
-# $FreeBSD: head/textproc/sigil/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/textproc/sigil/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	sigil
 PORTVERSION=	0.9.10
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Sigil-Ebook
 GH_PROJECT=	Sigil
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
+USES=		cmake compiler:c++11-lib desktop-file-utils \
 		pkgconfig python:3.4+ qt:5 shebangfix
 SHEBANG_FILES=	src/Resource_Files/plugin_launchers/python/*.py \
 		src/Resource_Files/python3lib/*.py

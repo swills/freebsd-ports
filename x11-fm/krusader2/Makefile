@@ -1,5 +1,5 @@
 # Created by: Heiner <h.eichmann@gmx.de>
-# $FreeBSD: head/x11-fm/krusader2/Makefile 477214 2018-08-15 05:06:05Z tcberner $
+# $FreeBSD: head/x11-fm/krusader2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	krusader
 DISTVERSION=	2.7.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS_INSTALL=	krusader2-kde4
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive auth auth bookmarks codecs completion config \
 		configwidgets coreaddons doctools ecm guiaddons i18n \
 		iconthemes itemviews jobwidgets kio notifications parts \

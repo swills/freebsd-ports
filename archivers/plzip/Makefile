@@ -1,9 +1,8 @@
 # Created by: Albert Vernon <f3cun3c02@sneakemail.com>
-# $FreeBSD: head/archivers/plzip/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/archivers/plzip/Makefile 488845 2018-12-31 23:09:48Z delphij $
 
 PORTNAME=	plzip
-PORTVERSION=	1.6
-PORTREVISION=	1
+PORTVERSION=	1.7
 CATEGORIES=	archivers
 MASTER_SITES=	SAVANNAH/lzip/${PORTNAME}
 

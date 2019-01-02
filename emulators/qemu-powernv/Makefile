@@ -1,7 +1,8 @@
-# $FreeBSD: head/emulators/qemu-powernv/Makefile 487206 2018-12-10 22:19:04Z antoine $
+# $FreeBSD: head/emulators/qemu-powernv/Makefile 488292 2018-12-25 06:46:57Z linimon $
 
 PORTNAME=	qemu-powernv
 PORTVERSION=	3.0.50
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://people.freebsd.org/~kbowling/distfiles/
 
@@ -10,11 +11,10 @@ COMMENT=	Fork of QEMU with experimental PowerNV emulation support
 
 LICENSE=	GPLv2
 
-BROKEN=		unfetchable
-
 BUILD_DEPENDS=		${LOCALBASE}/lib/libfdt.so:sysutils/dtc
 
-USES=		bison:build gmake libtool makeinfo pkgconfig python:2.7,build
+USES=		bison:build gmake gnome libtool makeinfo pkgconfig \
+		python:2.7,build tar:bz2
 USE_XORG=	pixman
 USE_GNOME=	glib20
 

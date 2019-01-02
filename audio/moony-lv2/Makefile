@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/moony-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/moony-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	moony
 PORTVERSION=	0.22.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 
-USES=		cmake:outsource compiler:c++11-lang gl pkgconfig
+USES=		cmake compiler:c++11-lang gl pkgconfig
 USE_XORG=	x11 xext
 USE_GL=		gl glu
 

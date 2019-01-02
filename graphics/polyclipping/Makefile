@@ -1,5 +1,5 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/polyclipping/Makefile 435189 2017-03-01 18:16:03Z olivierd $
+# $FreeBSD: head/graphics/polyclipping/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	polyclipping
 PORTVERSION=	6.4.2
@@ -13,7 +13,7 @@ COMMENT=	Polygon and line clipping and offsetting library
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/License.txt
 
-USES=		cmake:outsource zip
+USES=		cmake zip
 USE_LDCONFIG=	yes
 
 NO_WRKSUBDIR=	yes

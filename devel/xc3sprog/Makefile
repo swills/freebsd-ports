@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/xc3sprog/Makefile 423625 2016-10-09 22:01:34Z bsam $
+# $FreeBSD: head/devel/xc3sprog/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	xc3sprog
 PORTVERSION=	r769
@@ -11,7 +11,7 @@ COMMENT=	Free programmer for Xilinx Spartan S3E Starter Kit
 LIB_DEPENDS=	libftdi.so:devel/libftdi
 RUN_DEPENDS=	${LOCALBASE}/sbin/fxload:misc/fxload
 
-USES=		tar:xz cmake
+USES=		tar:xz cmake:insource
 ALL_TARGET=	xc3sprog
 
 PLIST_FILES=	bin/xc3sprog

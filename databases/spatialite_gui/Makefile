@@ -1,5 +1,5 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/databases/spatialite_gui/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/databases/spatialite_gui/Makefile 488376 2018-12-26 12:17:25Z linimon $
 
 PORTNAME=	spatialite_gui
 PORTVERSION=	1.7.1
@@ -17,14 +17,14 @@ LIB_DEPENDS=	libgaiagraphics.so:graphics/libgaiagraphics \
 		libfreexl.so:textproc/freexl \
 		libspatialite.so:databases/spatialite
 
+USES=		compiler:c++11-lang gmake gnome iconv localbase:ldflags \
+		pkgconfig
 USE_WX=		2.8
 GNU_CONFIGURE=	yes
 USE_GNOME=	libxml2
-USES=		gmake pkgconfig iconv
 
-CFLAGS+=	-I${LOCALBASE}/include
-CPPFLAGS+=	-I${LOCALBASE}/include `${WX_CONFIG} --cppflags`
-LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB} `${WX_CONFIG} --libs` -lsqlite3
+CPPFLAGS+=	`${WX_CONFIG} --cppflags`
+LDFLAGS+=	${ICONV_LIB} `${WX_CONFIG} --libs` -lsqlite3
 CONFIGURE_ARGS=	CFLAGS="${CFLAGS} ${CPPFLAGS}" LDFLAGS="${LDFLAGS}"
 USE_LDCONFIG=	yes
 

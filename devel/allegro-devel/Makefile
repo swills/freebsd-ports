@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/devel/allegro-devel/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/allegro-devel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	allegro
 DISTVERSION=	5.0.9
@@ -23,7 +23,7 @@ LIB_DEPENDS+=	libjack.so:audio/jack \
 		libFLAC.so:audio/flac \
 		libphysfs.so:devel/physfs
 
-USES=		cmake jpeg openal:soft pkgconfig
+USES=		cmake:insource jpeg openal:soft pkgconfig
 USE_XORG=	x11 xpm xext xcursor xxf86vm xxf86dga
 USE_GL=		glu
 USE_GNOME=	gtk20

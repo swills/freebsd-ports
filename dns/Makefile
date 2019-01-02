@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 487552 2018-12-16 00:29:20Z rene $
+# $FreeBSD: head/dns/Makefile 488786 2018-12-31 13:37:58Z rene $
 #
 
     COMMENT = Domain Name Service tools
@@ -179,7 +179,6 @@
     SUBDIR += pear-Net_DNS2
     SUBDIR += powerdns
     SUBDIR += powerdns-recursor
-    SUBDIR += powerdns-recursor40
     SUBDIR += public_suffix_list
     SUBDIR += py-adns
     SUBDIR += py-aiodns

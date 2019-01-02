@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/stepcode/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/cad/stepcode/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	stepcode
 PORTVERSION=	0.8
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_powerpc64=	fails to configure: Schema scan for 15926-0002-lifecycle_integration.exp exited with error code 1
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 CMAKE_ARGS+=	-DSC_INSTALL_PREFIX=${PREFIX} \

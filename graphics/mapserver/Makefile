@@ -1,5 +1,5 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/graphics/mapserver/Makefile 486751 2018-12-06 11:22:12Z rene $
+# $FreeBSD: head/graphics/mapserver/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		mapserver
 PORTVERSION=		7.2.1
@@ -20,7 +20,7 @@ LIB_DEPENDS=		libgd.so:graphics/gd \
 			libfreetype.so:print/freetype2 \
 			libprotobuf-c.so:devel/protobuf-c
 
-USES=			cpe cmake:outsource jpeg
+USES=			cpe cmake jpeg
 CPE_VENDOR=		umn
 USE_GNOME=		libxml2
 LDFLAGS+=		-L${LOCALBASE} -pthread

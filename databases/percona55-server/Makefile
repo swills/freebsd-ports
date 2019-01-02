@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/percona55-server/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/databases/percona55-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=	percona
 DISTVERSION=	5.5.61-38.13
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 SLAVEDIRS=	databases/percona55-client
-USES=		bison cmake:noninja readline shebangfix
+USES=		bison cmake:insource,noninja readline shebangfix
 USE_CXXSTD=	gnu++98
 
 CXXFLAGS+=	${CPPFLAGS}

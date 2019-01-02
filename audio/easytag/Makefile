@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/audio/easytag/Makefile 456029 2017-12-11 13:27:27Z novel $
+# $FreeBSD: head/audio/easytag/Makefile 488369 2018-12-26 11:49:05Z linimon $
 
 PORTNAME=	easytag
 PORTVERSION=	2.4.3
@@ -23,13 +23,13 @@ LIB_DEPENDS=	libid3.so:audio/id3lib \
 		libtag.so:audio/taglib \
 		libogg.so:audio/libogg
 
-USES=		desktop-file-utils gettext-tools gmake pkgconfig tar:xz
+USES=		compiler:c++11-lang desktop-file-utils gettext-tools gmake \
+		gnome localbase pkgconfig tar:xz
 USE_GNOME=	cairo dconf:run gtk30 intlhack libxslt
 GLIB_SCHEMAS=	org.gnome.EasyTAG.gschema.xml org.gnome.EasyTAG.enums.xml
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include -DHAVE_GTK
-LIBS+=		-L${LOCALBASE}/lib
+CPPFLAGS+=	-DHAVE_GTK
 
 CONFIGURE_ARGS=	--disable-appdata-validate \
 	--without-help-dir \
@@ -38,7 +38,7 @@ CONFIGURE_ARGS=	--disable-appdata-validate \
 PORTDOCS=	HACKING THANKS TODO
 
 OPTIONS_DEFINE=	WAVPACK NLS OPUS SPEEX DOCS
-OPTIONS_DEFAULT=	WAVPACK OPUS SPEEX	
+OPTIONS_DEFAULT=	WAVPACK OPUS SPEEX
 OPTIONS_SUB=	yes
 
 WAVPACK_LIB_DEPENDS=	libwavpack.so:audio/wavpack

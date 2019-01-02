@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/deal.ii/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/deal.ii/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	deal.II
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libgoto2.so:math/gotoblas \
 		libmetis.so:math/metis \
 		libtbb.so:devel/tbb
 
-USES=		cmake:outsource compiler:c++17-lang localbase:ldflags
+USES=		cmake compiler:c++17-lang localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:tl:S/.//}
 GH_PROJECT=	${PORTNAME:tl:S/.//}

@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-themes/plasma5-kde-gtk-config/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-themes/plasma5-kde-gtk-config/Makefile 488757 2018-12-31 06:38:42Z tcberner $
 
 PORTNAME=	kde-gtk-config
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -16,7 +15,7 @@ LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LIB
 BUILD_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 
-USES=		cmake:outsource compiler:c++11-lib cpe gettext \
+USES=		cmake compiler:c++11-lib cpe gettext \
 		kde:5 pkgconfig qt:5 tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gtk20 gtk30 glib20
 USE_KDE=	archive attica auth codecs completion config configwidgets \

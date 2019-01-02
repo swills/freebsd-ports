@@ -1,8 +1,8 @@
 # Created by: Oleh Hushchenkov <gor@clogic.com.ua>
-# $FreeBSD: head/misc/unclutter-xfixes/Makefile 487513 2018-12-15 14:35:19Z joneum $
+# $FreeBSD: head/misc/unclutter-xfixes/Makefile 488441 2018-12-26 21:00:40Z swills $
 
 PORTNAME=	unclutter-xfixes
-PORTVERSION=	1.3
+PORTVERSION=	1.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 
@@ -27,7 +27,6 @@ CONFLICTS_INSTALL=	unclutter-8*
 PLIST_FILES=	bin/unclutter \
 		man/man1/unclutter.1.gz
 
-MAKE_ENV+=	UNCLUTTER_VERSION=${PORTVERSION}
 MAKE_ARGS=	CC=${CC}
 
 CFLAGS+=	-I${LOCALBASE}/include

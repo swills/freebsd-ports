@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/kf5-khtml/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/www/kf5-khtml/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	khtml
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KF5 KTHML rendering engine
 LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libpng.so:graphics/png
 
-USES=		cmake:outsource compiler:c++11-lib gettext gperf jpeg kde:5 \
+USES=		cmake compiler:c++11-lib gettext gperf jpeg kde:5 \
 		qt:5 tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config \
 		configwidgets coreaddons ecm globalaccel i18n iconthemes \

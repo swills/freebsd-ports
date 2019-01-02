@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/vulkan-headers/Makefile 478883 2018-09-03 17:43:50Z jbeich $
+# $FreeBSD: head/devel/vulkan-headers/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vulkan-headers
 DISTVERSIONPREFIX=sdk-
@@ -10,7 +10,7 @@ COMMENT=	Headers for the Vulkan graphics API
 
 LICENSE=	APACHE20
 
-USES=		cmake:outsource
+USES=		cmake
 STRIP=		# nothing to strip
 
 USE_GITHUB=	yes

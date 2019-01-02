@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/zynaddsubfx/Makefile 487571 2018-12-16 09:32:22Z yuri $
+# $FreeBSD: head/audio/zynaddsubfx/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	zynaddsubfx
 PORTVERSION=	3.0.3
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libmxml.so:textproc/mxml \
 		liblo.so:audio/liblo
 
-USES=		tar:bzip2 cmake pkgconfig
+USES=		tar:bzip2 cmake:insource pkgconfig
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=		OSS JACK GUI PORTAUDIO LASH DOCS EXAMPLES

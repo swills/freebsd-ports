@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/pecl-smbclient/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/net/pecl-smbclient/Makefile 488986 2019-01-01 20:35:05Z sunpoet $
 
 PORTNAME=	smbclient
-PORTVERSION=	0.9.0
-PORTREVISION=	4
+PORTVERSION=	1.0.0
 CATEGORIES=	net pear
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -12,7 +11,6 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		php:pecl samba:lib
-IGNORE_WITH_PHP=	73
 
 CONFIGURE_ARGS=	--with-libsmbclient=${LOCALBASE}
 CPPFLAGS+=	-I${SAMBAINCLUDES}

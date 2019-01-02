@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/parley/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/misc/parley/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	parley
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Vocabulary trainer for KDE
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		cmake:outsource gettext kde:5 qt:5 tar:xz
+USES=		cmake gettext kde:5 qt:5 tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	attica auth codecs completion configwidgets coreaddons config \
 		crash doctools ecm i18n jobwidgets kcmutils kio newstuff \

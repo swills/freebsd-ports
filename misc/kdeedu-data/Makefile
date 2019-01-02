@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kdeedu-data/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/misc/kdeedu-data/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdeedu-data
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	misc kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE edu data files
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake kde:5 qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build qmake_build
 

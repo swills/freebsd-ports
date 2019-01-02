@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/websocketpp/Makefile 487716 2018-12-17 21:23:21Z yuri $
+# $FreeBSD: head/devel/websocketpp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	websocketpp
 PORTVERSION=	0.8.1
@@ -11,7 +11,7 @@ LICENSE=	MIT BSD3CLAUSE ZLIB
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake
+USES=		cmake:insource
 USE_GITHUB=	yes
 GH_ACCOUNT=	zaphoyd
 

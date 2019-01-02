@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/mcxtrace/Makefile 455608 2017-12-05 19:15:49Z yuri $
+# $FreeBSD: head/science/mcxtrace/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mcxtrace
 DISTVERSION=	1.2
@@ -12,7 +12,7 @@ COMMENT=	Monte Carlo X-ray tracing package
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/lib/LGPL
 
-USES=		bison:build cmake:outsource
+USES=		bison:build cmake
 
 PLIST_SUB=	DISTVERSION=${DISTVERSION}
 

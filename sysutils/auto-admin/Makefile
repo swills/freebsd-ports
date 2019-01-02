@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/auto-admin/Makefile 485194 2018-11-17 20:33:27Z jwb $
+# $FreeBSD: head/sysutils/auto-admin/Makefile 488601 2018-12-28 14:06:04Z jwb $
 
 PORTNAME=	auto-admin
-DISTVERSION=	0.4.5
+DISTVERSION=	0.4.6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 

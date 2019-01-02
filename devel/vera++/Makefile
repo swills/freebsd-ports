@@ -1,5 +1,5 @@
 # Created by: Cristiano Rolim Pereira <cristianorolim@outlook.com>
-# $FreeBSD: head/devel/vera++/Makefile 487853 2018-12-20 07:55:58Z linimon $
+# $FreeBSD: head/devel/vera++/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vera++
 PORTVERSION=	1.3.0
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
 
 BUILD_DEPENDS=	boost-libs>=0:devel/boost-libs
 
-USES=		compiler:c++11-lang cmake:outsource tk
+USES=		compiler:c++11-lang cmake tk
 
 CMAKE_ARGS+=	-DTCL_INCLUDE_PATH=${TCL_INCLUDEDIR} \
 		-DTK_INCLUDE_PATH=${TK_INCLUDEDIR} \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/uim-qt5/Makefile 474693 2018-07-15 13:51:49Z nobutaka $
+# $FreeBSD: head/textproc/uim-qt5/Makefile 488436 2018-12-26 20:43:03Z linimon $
 
 PKGNAMESUFFIX=	-qt5
 
@@ -10,7 +10,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libuim.so:textproc/uim
 
-USES=		iconv libtool qt:5
+USES=		compiler:c++11-lang gl iconv libtool qt:5
 USE_GL=		gl
 USE_QT=		buildtools_build core gui qmake_build widgets x11extras
 

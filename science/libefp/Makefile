@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/libefp/Makefile 457098 2017-12-23 18:19:11Z yuri $
+# $FreeBSD: head/science/libefp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libefp
 DISTVERSION=	1.5.0
@@ -10,7 +10,7 @@ COMMENT=	Effective fragment potential method in quantum chemistry
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	ilyak
 USE_LDCONFIG=	yes

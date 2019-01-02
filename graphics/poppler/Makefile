@@ -1,5 +1,5 @@
 # Created by: marcus@FreeBSD.org
-# $FreeBSD: head/graphics/poppler/Makefile 487654 2018-12-17 06:06:23Z tcberner $
+# $FreeBSD: head/graphics/poppler/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	poppler
 DISTVERSION=	0.72.0
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libnspr4.so:devel/nspr \
 		libfontconfig.so:x11-fonts/fontconfig
 RUN_DEPENDS=	poppler-data>0:graphics/poppler-data
 
-USES=		compiler:c++11-lang cpe cmake gnome jpeg libtool \
+USES=		compiler:c++11-lang cpe cmake:insource gnome jpeg libtool \
 		localbase pathfix pkgconfig tar:xz
 CPE_VENDOR=	freedesktop
 USE_GNOME=	cairo libxml2

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libmusicxml/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/libmusicxml/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libmusicxml
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ COMMENT=	Library and tools for the MusicXML format
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/license.txt
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	grame-cncm
 USE_LDCONFIG=	yes

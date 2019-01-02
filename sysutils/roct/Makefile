@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/sysutils/roct/Makefile 485302 2018-11-19 04:05:31Z jmd $
+# $FreeBSD: head/sysutils/roct/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	roct
 PORTVERSION=	1.9.1
@@ -15,7 +15,7 @@ ONLY_FOR_ARCHS=	amd64
 
 LIB_DEPENDS=	libpci.so:devel/libpci
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake pkgconfig
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

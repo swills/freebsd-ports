@@ -1,9 +1,9 @@
-# $FreeBSD: head/comms/vrflash/Makefile 394778 2015-08-19 13:29:59Z mat $
+# $FreeBSD: head/comms/vrflash/Makefile 488933 2019-01-01 20:13:42Z dinoex $
 
 PORTNAME=	vrflash
-PORTVERSION=	0.20
+PORTVERSION=	0.24
 CATEGORIES=	comms
-MASTER_SITES=	LOCAL/dinoex
+MASTER_SITES=	SF/agos/vrflash/${PORTVERSION}
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Flash kernels and romdisks to the Agenda VR3

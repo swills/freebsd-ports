@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/luceneplusplus/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/textproc/luceneplusplus/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lucene++
 PORTVERSION=	3.0.7
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 USE_GITHUB=	yes
 GH_ACCOUNT=	luceneplusplus
 GH_PROJECT=	LucenePlusPlus
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_LDCONFIG=	yes
 
 .include <bsd.port.pre.mk>

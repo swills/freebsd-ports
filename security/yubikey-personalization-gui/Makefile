@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 488428 2018-12-26 20:18:53Z linimon $
 
 PORTNAME=	yubikey-personalization-gui
 PORTVERSION=	3.1.25
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libykpers-1.so:security/ykpers \
 		libyubikey.so:security/libyubikey
 
-USES=		pkgconfig qmake
+USES=		compiler:c++11-lang pkgconfig qmake
 USE_GITHUB=	yes
 
 GH_ACCOUNT=	Yubico

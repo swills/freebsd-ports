@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/RStudio/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/RStudio/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 # This port opens too many files during build, more than the default setting.
 # Its build is known to succeed with MAX_FILES_RStudio=2048 in poudriere.conf when ports-mgmt/poudriere-devel is used.
@@ -29,7 +29,7 @@ LIB_DEPENDS=	libR.so:math/R \
 		libinotify.so:devel/libinotify \
 		libuuid.so:misc/e2fsprogs-libuuid
 
-USES=		cmake:outsource desktop-file-utils fortran pkgconfig qt:5 shared-mime-info ssl
+USES=		cmake desktop-file-utils fortran pkgconfig qt:5 shared-mime-info ssl
 USE_QT=		core dbus declarative gui location network opengl printsupport sensors \
 		sql svg webchannel webengine webkit widgets xml xmlpatterns buildtools_build qmake_build
 USE_JAVA=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/rkr-lv2/Makefile 474061 2018-07-07 07:20:08Z yuri $
+# $FreeBSD: head/audio/rkr-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	rkr
 DISTVERSIONPREFIX=	beta_
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libsamplerate.so:audio/libsamplerate
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	ssj71
 GH_PROJECT=	${PORTNAME}lv2

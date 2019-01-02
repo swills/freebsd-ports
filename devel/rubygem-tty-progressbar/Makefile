@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-progressbar/Makefile 478399 2018-08-29 19:10:40Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-progressbar/Makefile 489029 2019-01-01 20:39:03Z sunpoet $
 
 PORTNAME=	tty-progressbar
 PORTVERSION=	0.16.0
@@ -17,8 +17,9 @@ RUN_DEPENDS=	rubygem-strings-ansi>=0.1.0:devel/rubygem-strings-ansi \
 		rubygem-tty-screen>=0.6.4:devel/rubygem-tty-screen \
 		rubygem-unicode-display_width>=1.3:devel/rubygem-unicode-display_width
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

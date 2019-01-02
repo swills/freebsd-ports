@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/infamous-plugins-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
+# $FreeBSD: head/audio/infamous-plugins-lv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	infamous-plugins
 DISTVERSIONPREFIX=	v
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libfftw3f.so:math/fftw3-float \
 		libntk.so:x11-toolkits/ntk \
 		libzita-resampler.so:audio/zita-resampler
 
-USES=		cmake:outsource localbase pkgconfig
+USES=		cmake localbase pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	ssj71
 GH_PROJECT=	infamousPlugins

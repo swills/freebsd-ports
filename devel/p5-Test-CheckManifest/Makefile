@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-CheckManifest/Makefile 460203 2018-01-28 14:09:01Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-CheckManifest/Makefile 488358 2018-12-26 07:23:59Z wen $
 
 PORTNAME=	Test-CheckManifest
-PORTVERSION=	1.33
+PORTVERSION=	1.38
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

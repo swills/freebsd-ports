@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/security/openvas8-scanner/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/security/openvas8-scanner/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=	openvas8-scanner
 PORTVERSION?=	5.0.8
@@ -25,7 +25,7 @@ RUN_DEPENDS=	redis-server:databases/redis \
 
 CONFLICTS?=	${PORTNAME:S/${OPENVAS_VER}/9/}-*
 
-USES=		cmake:outsource gettext-runtime gnome pkgconfig
+USES=		cmake gettext-runtime gnome pkgconfig
 USE_GNOME=	glib20
 USE_RC_SUBR=	openvassd
 DOCSDIR=	${PREFIX}/share/doc/${PORTNAME:S/${OPENVAS_VER}//}

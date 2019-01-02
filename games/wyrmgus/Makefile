@@ -1,5 +1,5 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/wyrmgus/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/wyrmgus/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wyrmgus
 PORTVERSION=	3.4.1
@@ -22,7 +22,7 @@ USE_GITHUB=     yes
 GH_ACCOUNT=     Andrettin
 GH_PROJECT=     Wyrmgus
 
-USES=		compiler:c++11-lib cmake:outsource lua:51 pkgconfig sqlite
+USES=		compiler:c++11-lib cmake lua:51 pkgconfig sqlite
 USE_SDL=	sdl
 CMAKE_ARGS=	-DGAMEDIR:STRING="bin" \
 		-DTOLUA++_APP:STRING="tolua++-${LUA_VER}" \

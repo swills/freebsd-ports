@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/simbody/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/simbody/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	simbody
 DISTVERSIONPREFIX=	Simbody-
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libopenblas.so:math/openblas
 
-USES=		blaslapack:openblas cmake:outsource compiler:c++11-lang fortran # fortran only for openblas
+USES=		blaslapack:openblas cmake compiler:c++11-lang fortran # fortran only for openblas
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/libhpack/Makefile 462295 2018-02-19 10:30:08Z sunpoet $
+# $FreeBSD: head/www/libhpack/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libhpack
 PORTVERSION=	0.0.20140710
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libcheck.so:devel/check
 CMAKE_OFF=	BUILD_DOCS BUILD_TESTS ENABLE_GCOV USE_VALGRIND
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
-USES=		cmake pathfix pkgconfig python:2.7,build shebangfix
+USES=		cmake:insource pathfix pkgconfig python:2.7,build shebangfix
 
 GH_ACCOUNT=	alobbs
 GH_TAGNAME=	b0ade19

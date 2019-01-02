@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11/pantheon-terminal/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11/pantheon-terminal/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pantheon-terminal
 PORTVERSION=	0.4.3
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 BUILD_DEPENDS=	valac:lang/vala
 RUN_DEPENDS=	dbus-send:devel/dbus
 
-USES=		cmake:outsource desktop-file-utils gettext pkgconfig
+USES=		cmake desktop-file-utils gettext pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	elementary
 GH_PROJECT=	terminal

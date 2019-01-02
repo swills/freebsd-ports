@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/easyrpg-player/Makefile 487442 2018-12-14 15:49:57Z amdmi3 $
+# $FreeBSD: head/games/easyrpg-player/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	easyrpg-player
 PORTVERSION=	0.5.4
@@ -35,7 +35,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	EasyRPG
 GH_PROJECT=	Player
 
-USES=		cmake compiler:c++11-lib localbase:ldflags pkgconfig
+USES=		cmake:insource compiler:c++11-lib localbase:ldflags pkgconfig
 CMAKE_ARGS=	-DCMAKE_INSTALL_MANDIR=man \
 		-DPLAYER_AUDIO_BACKEND=SDL2_mixer
 USE_XORG=	pixman

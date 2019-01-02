@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/esys-particle/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/esys-particle/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	esys-particle
 DISTVERSION=	2.3.5
@@ -15,7 +15,7 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libmpi.so:net/mpich
 
-USES=		cmake:outsource fortran
+USES=		cmake fortran
 USE_LDCONFIG=	yes
 
 LDFLAGS+=	${LOCALBASE}/lib/libboost_filesystem.so

@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/archivers/snappy/Makefile 457139 2017-12-24 10:48:23Z danfe $
+# $FreeBSD: head/archivers/snappy/Makefile 488463 2018-12-26 21:58:28Z linimon $
 
 PORTNAME=	snappy
 PORTVERSION=	1.1.6
@@ -10,7 +10,7 @@ COMMENT=	Fast compressor/decompressor library
 
 LICENSE=	BSD3CLAUSE
 
-USES=		autoreconf libtool pathfix pkgconfig
+USES=		autoreconf compiler:c++11-lang libtool pathfix pkgconfig
 CONFIGURE_ARGS=	--disable-gtest
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

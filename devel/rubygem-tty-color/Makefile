@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-color/Makefile 475784 2018-07-29 19:21:13Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-color/Makefile 489023 2019-01-01 20:38:32Z sunpoet $
 
 PORTNAME=	tty-color
 PORTVERSION=	0.4.3
@@ -12,8 +12,9 @@ COMMENT=	Terminal color capabilities detection
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Donald Burr <dburr@FreeBSD.org>
-# $FreeBSD: head/irc/iroffer/Makefile 398803 2015-10-08 04:32:29Z dinoex $
+# $FreeBSD: head/irc/iroffer/Makefile 488923 2019-01-01 18:59:09Z dinoex $
 
 PORTNAME=	iroffer
 PORTVERSION=	1.4.3
@@ -11,6 +11,9 @@ MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	IRC "bot" that makes sharing files via DCC extremely easy
 
 LICENSE=	GPLv2
+
+EXPIRATION_DATE=	2019-02-01
+DEPRECATED=		Abandoned upstream
 
 CONFLICTS=	iroffer-lamm-1.* iroffer-dinoex-3.*
 

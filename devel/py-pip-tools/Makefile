@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pip-tools/Makefile 481484 2018-10-07 20:02:01Z sunpoet $
+# $FreeBSD: head/devel/py-pip-tools/Makefile 488999 2019-01-01 20:36:25Z sunpoet $
 
 PORTNAME=	pip-tools
-PORTVERSION=	3.1.0
+PORTVERSION=	3.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

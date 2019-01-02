@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/mgba/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/emulators/mgba/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mgba
 DISTVERSION=	0.6.1
@@ -21,7 +21,7 @@ LICENSE_FILE_MPL20=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libepoxy.so:graphics/libepoxy \
 		libpng.so:graphics/png
 
-USES=		cmake:outsource compiler:c++11-lang localbase:ldflags pkgconfig sqlite:3
+USES=		cmake compiler:c++11-lang localbase:ldflags pkgconfig sqlite:3
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mgba-emu

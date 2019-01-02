@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/urdfdom-headers/Makefile 485416 2018-11-20 07:37:37Z yuri $
+# $FreeBSD: head/misc/urdfdom-headers/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	urdfdom-headers
 DISTVERSION=	1.0.2
@@ -10,7 +10,7 @@ COMMENT=	Unified Robot Description Format (URDF) parser headers
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	ros
 GH_PROJECT=	${PORTNAME:S/-/_/}

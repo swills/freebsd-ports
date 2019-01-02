@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/llvm-devel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.0.d${SNAPDATE}
@@ -19,7 +19,7 @@ DATADIR=	${PREFIX}/share/${PORTNAME}${LLVM_SUFFIX}
 
 BUILD_DEPENDS=
 
-USES=		cmake:outsource compiler:c++11-lib libedit perl5 \
+USES=		cmake compiler:c++11-lib libedit perl5 \
 		shebangfix
 USE_LDCONFIG=	${LLVM_PREFIX}/lib
 _USES_PYTHON?=	python:build:2.7

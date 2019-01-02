@@ -1,5 +1,5 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/games/freesynd/Makefile 414536 2016-05-03 16:05:19Z madpilot $
+# $FreeBSD: head/games/freesynd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	freesynd
 PORTVERSION=	0.7.5
@@ -11,7 +11,7 @@ COMMENT=	Reimplementation of the classic Bullfrog game Syndicate
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake
+USES=		cmake:insource
 USE_SDL=	sdl image mixer
 
 SUB_FILES=	pkg-message

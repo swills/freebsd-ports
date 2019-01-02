@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kcontacts/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/net/kcontacts/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kcontacts
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KDE api to manage contact information
 
 LICENSE=	LGPL21
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	ecm codecs config coreaddons i18n
 USE_QT=		core dbus gui \
 		buildtools_build qmake_build

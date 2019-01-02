@@ -1,9 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Algorithm-Dependency/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Algorithm-Dependency/Makefile 488252 2018-12-24 02:50:14Z wen $
 
 PORTNAME=	Algorithm-Dependency
-PORTVERSION=	1.110
-PORTREVISION=	1
+PORTVERSION=	1.111
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

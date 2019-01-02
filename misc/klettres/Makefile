@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/klettres/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/misc/klettres/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	klettres
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	misc kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Alphabet learning tool for KDE
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		crash doctools ecm emoticons i18n init itemmodels \
 		kdelibs4support newstuff service widgetsaddons xmlgui

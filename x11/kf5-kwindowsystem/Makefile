@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-kwindowsystem/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/x11/kf5-kwindowsystem/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kwindowsystem
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KF5 library for access to the windowing system
 
 LIB_DEPENDS=	libxcb-keysyms.so:x11/xcb-util-keysyms
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 pkgconfig qt:5 tar:xz
+USES=		cmake compiler:c++11-lib kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build core gui linguisttools qmake_build \
 		testlib widgets x11extras

@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/kmag/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/accessibility/kmag/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kmag
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KDE Screen magnifier
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons ecm \
 		i18n kio service widgetsaddons xmlgui
 USE_QT=		core dbus gui printsupport widgets xml \

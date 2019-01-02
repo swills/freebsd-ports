@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/divide-and-succeed/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/games/divide-and-succeed/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	divide-and-succeed
 PORTVERSION=	0.9.4
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_powerpc64=	fails to compile: Polygone.h: 'vector' was not declared in this scope
 
-USES=		cmake
+USES=		cmake:insource
 USE_SDL=	sdl ttf
 DATADIR=	${PREFIX}/share/divideandsucceed
 INSTALLS_ICONS=	yes

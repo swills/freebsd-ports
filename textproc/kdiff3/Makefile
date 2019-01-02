@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/kdiff3/Makefile 487264 2018-12-11 23:18:13Z tcberner $
+# $FreeBSD: head/textproc/kdiff3/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	kdiff3
 DISTVERSION=	1.7.90.20181029
@@ -10,7 +10,7 @@ COMMENT=	KDE graphical frontend for diff
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource kde:5 qt:5
+USES=		cmake compiler:c++11-lang kde:5 qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	KDE
 GH_TAGNAME=	42403aa

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/deskutils/qlipper/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/qlipper/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qlipper
 PORTVERSION=	5.1.1
@@ -11,7 +11,7 @@ COMMENT=	Lightweight clipboard history applet
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource compiler:c++11-lang gettext qt:5
+USES=		cmake compiler:c++11-lang gettext qt:5
 USE_GITHUB=	yes
 
 GH_ACCOUNT=	pvanek

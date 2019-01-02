@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/irc/quassel/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/irc/quassel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	quassel
 PORTVERSION=	0.13.0
@@ -13,7 +13,7 @@ COMMENT?=	Qt 5 based distributed IRC client (client and monolithic binary)
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource compiler:c++11-lib cpe pkgconfig qt:5 tar:bzip2
+USES=		cmake compiler:c++11-lib cpe pkgconfig qt:5 tar:bzip2
 
 CPE_VENDOR=	quassel-irc
 CPE_PRODUCT=	quassel_irc

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/qmcpack/Makefile 487940 2018-12-21 02:14:45Z yuri $
+# $FreeBSD: head/science/qmcpack/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qmcpack
 DISTVERSIONPREFIX=	v
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libopenblas.so:math/openblas \
 		libsz.so:science/szip
 
-USES=		cmake:outsource compiler:c++11-lang fortran gnome localbase:ldflags pkgconfig
+USES=		cmake compiler:c++11-lang fortran gnome localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:tu}
 USE_GNOME=	libxml2

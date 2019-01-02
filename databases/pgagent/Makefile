@@ -1,5 +1,5 @@
 # Created by: Max Khon
-# $FreeBSD: head/databases/pgagent/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/pgagent/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pgagent
 PORTVERSION=	3.4.0
@@ -11,7 +11,7 @@ DISTNAME=	pgAgent-${PORTVERSION}-Source
 MAINTAINER=	fjoe@FreeBSD.org
 COMMENT=	Job scheduler for PostgreSQL
 
-USES=		cmake dos2unix pgsql
+USES=		cmake:insource dos2unix pgsql
 DOS2UNIX_GLOB=	*.txt
 CMAKE_ARGS=	-DSTATIC_BUILD:BOOL=NO -DWX_CONFIG_PATH:FILEPATH="${WX_CONFIG}"
 USE_WX=		2.8

@@ -1,5 +1,5 @@
 # Created by: buganini@gmail.com
-# $FreeBSD: head/textproc/libcue/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/textproc/libcue/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libcue
 PORTVERSION=	2.1.0
@@ -18,6 +18,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	lipnitsk
 
 USE_LDCONFIG=	yes
-USES=		bison cmake:outsource pathfix
+USES=		bison cmake pathfix
 
 .include <bsd.port.mk>

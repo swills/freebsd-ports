@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/net-mgmt/netdata/files/netdata.in 454856 2017-11-24 23:17:50Z dbaio $
+# $FreeBSD: head/net-mgmt/netdata/files/netdata.in 488332 2018-12-25 17:16:06Z mmokhi $
 #
 
 # PROVIDE: netdata
@@ -23,8 +23,8 @@ rcvar=netdata_enable
 load_rc_config $name
 
 : ${netdata_enable="NO"}
+: ${netdata_user="netdata"}
 
-netdata_user="netdata"
 pidfile="%%NETDATA_PERST%%/${name}.pid"
 procname="%%PREFIX%%/sbin/${name}"
 command="/usr/sbin/daemon"

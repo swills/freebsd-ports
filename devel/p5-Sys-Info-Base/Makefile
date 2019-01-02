@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sys-Info-Base/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Sys-Info-Base/Makefile 488980 2019-01-01 20:34:33Z sunpoet $
 
 PORTNAME=	Sys-Info-Base
-PORTVERSION=	0.7804
+PORTVERSION=	0.7807
 CATEGORIES=	devel sysutils perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,10 +13,12 @@ COMMENT=	Base class for Sys::Info
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-TEST_DEPENDS=	p5-Test-Pod>=0:devel/p5-Test-Pod \
-		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-Text-Template-Simple>=0:textproc/p5-Text-Template-Simple
 
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

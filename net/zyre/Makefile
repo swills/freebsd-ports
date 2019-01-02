@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/zyre/Makefile 476859 2018-08-11 06:22:47Z yuri $
+# $FreeBSD: head/net/zyre/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	zyre
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libczmq.so:net/czmq \
 		libzmq.so:net/libzmq4
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	zeromq
 USE_LDCONFIG=	yes

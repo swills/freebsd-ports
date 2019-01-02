@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/tilda/Makefile 473049 2018-06-22 17:18:45Z danilo $
+# $FreeBSD: head/x11/tilda/Makefile 488397 2018-12-26 15:11:24Z rodrigo $
 
 PORTNAME=	tilda
-PORTVERSION=	1.3.3
+PORTVERSION=	1.4.1
 DISTVERSIONPREFIX=	${PORTNAME}-
 PORTREVISION=	2
 CATEGORIES=	x11
@@ -17,8 +17,9 @@ LIB_DEPENDS=	libconfuse.so:devel/libconfuse
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-rpath
-USE_GNOME=	gtk30
-USES=		gmake gettext pkgconfig autoreconf pathfix libtool
+USE_XORG+=	x11
+USE_GNOME+=	glib20 gtk30 gdkpixbuf2 pango
+USES=		gmake gettext gnome pkgconfig autoreconf pathfix libtool
 INSTALL_TARGET=	install-strip
 USE_GITHUB=	yes
 GH_ACCOUNT=	lanoxx

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/kf5-breeze-icons/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/x11-themes/kf5-breeze-icons/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	breeze-icons
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Breeze icon theme for KDE
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING-ICONS
 
-USES=		compiler:c++11-lang cmake:outsource kde:5 qt:5 tar:xz
+USES=		compiler:c++11-lang cmake kde:5 qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build core qmake_build testlib
 

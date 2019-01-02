@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/audiocd-kio/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/audio/audiocd-kio/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	audiocd-kio
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libKF5Cddb.so:audio/libkcddb \
 		libKF5CompactDisc.so:audio/libkcompactdisc
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash guiaddons i18n iconthemes itemviews \
 		jobwidgets kcmutils kdelibs4support kio notifications parts \

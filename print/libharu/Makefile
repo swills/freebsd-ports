@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/libharu/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/libharu/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libharu
 DISTVERSIONPREFIX=	RELEASE_
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libpng.so:graphics/png
 OPTIONS_DEFINE=	EXAMPLES
 
 USE_LDCONFIG=	yes
-USES+=		cmake:outsource
+USES+=		cmake
 
 USE_GITHUB=	yes
 

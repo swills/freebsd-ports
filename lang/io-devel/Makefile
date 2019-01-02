@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/lang/io-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/io-devel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	io
 PORTVERSION=	20180807
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 CONFLICTS=	io-[0-9]*
 
-USES=		cmake:outsource,noninja compiler:c11
+USES=		cmake:noninja compiler:c11
 
 USE_LDCONFIG=	yes
 

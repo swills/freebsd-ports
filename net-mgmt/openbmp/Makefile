@@ -1,5 +1,5 @@
 # Created by: Luca Pizzamiglio <pizzamig@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/openbmp/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/net-mgmt/openbmp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openbmp
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,7 @@ LIB_DEPENDS=	librdkafka.so:net/librdkafka \
 				libsasl2.so:security/cyrus-sasl2 \
 				libyaml-cpp.so:devel/yaml-cpp
 
-USES=		cmake:outsource ssl
+USES=		cmake ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenBMP
 

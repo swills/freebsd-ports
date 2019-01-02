@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/codec2/Makefile 478929 2018-09-04 06:34:50Z yuri $
+# $FreeBSD: head/audio/codec2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	codec2
 DISTVERSION=	0.8.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libspeexdsp.so:audio/speexdsp
 
 CONFLICTS=	libcodec2-[0-9]*
-USES=		cmake:outsource pathfix pkgconfig shebangfix tar:xz
+USES=		cmake pathfix pkgconfig shebangfix tar:xz
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	EXAMPLES TEST

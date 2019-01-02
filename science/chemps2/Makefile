@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/chemps2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/chemps2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	CheMPS2
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		libsz.so:science/szip
 
-USES=		blaslapack:openblas cmake:outsource fortran
+USES=		blaslapack:openblas cmake fortran
 USE_GITHUB=	yes
 GH_ACCOUNT=	SebWouters
 USE_LDCONFIG=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-opendht/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/py-opendht/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	opendht
 DISTVERSION=	1.8.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/../COPYING
 LIB_DEPENDS=	libopendht.so:devel/opendht \
 		libgnutls.so:security/gnutls
 
-USES=		cmake:outsource compiler:c++11-lib localbase python:3.4+
+USES=		cmake compiler:c++11-lib localbase python:3.4+
 USE_GITHUB=	yes
 GH_ACCOUNT=	savoirfairelinux
 USE_PYTHON=	distutils cython autoplist

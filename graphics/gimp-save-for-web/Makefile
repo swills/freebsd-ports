@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-save-for-web/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/graphics/gimp-save-for-web/Makefile 488712 2018-12-30 12:43:42Z linimon $
 
 PORTNAME=	gimp-save-for-web
 PORTVERSION=	0.29.3
@@ -14,9 +14,8 @@ LIB_DEPENDS=	libgimp-2.0.so:graphics/gimp-app
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
-USES=		gettext gmake perl5 pkgconfig tar:bzip2
+USES=		compiler:c++11-lang gettext gmake gnome localbase perl5 \
+		pkgconfig tar:bzip2
 USE_PERL5=	build
 USE_GNOME=	intltool
 

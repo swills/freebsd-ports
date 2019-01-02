@@ -1,5 +1,5 @@
 # Created by: Sven Moeller <smoeller@nichthelfer.de>
-# $FreeBSD: head/games/megaglest/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/megaglest/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	megaglest
 PORTVERSION=	3.13.0
@@ -29,7 +29,7 @@ GH_PROJECT=	megaglest-source
 
 SUB_FILES=	pkg-message
 
-USES=		cmake compiler:c++11-lib display:build dos2unix jpeg lua \
+USES=		cmake:insource compiler:c++11-lib display:build dos2unix jpeg lua \
 		openal:al,alut pkgconfig
 USE_GL=		glew gl glu
 USE_SDL=	sdl2

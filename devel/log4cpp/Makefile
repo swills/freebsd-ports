@@ -1,5 +1,5 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/log4cpp/Makefile 480225 2018-09-21 05:11:36Z linimon $
+# $FreeBSD: head/devel/log4cpp/Makefile 488431 2018-12-26 20:27:22Z linimon $
 
 PORTNAME=	log4cpp
 PORTVERSION=	1.1.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		gmake libtool pathfix
+USES=		compiler:c++11-lang gmake libtool pathfix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-html-docs
 REINPLACE_ARGS=	-i ""

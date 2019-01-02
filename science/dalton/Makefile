@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dalton/Makefile 487650 2018-12-17 04:30:01Z yuri $
+# $FreeBSD: head/science/dalton/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dalton
 DISTVERSION=	2018.0
@@ -13,7 +13,7 @@ LIB_DEPENDS=	liblapack.so:math/lapack \
 		libopenblas.so:math/openblas
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		cmake:outsource,noninja fortran python:build shebangfix
+USES=		cmake:noninja fortran python:build shebangfix
 SHEBANG_FILES=	dalton.in
 USE_GITLAB=	yes
 GL_COMMIT=	d16802317e0785578e491e600c73cfb6bfb70ff0

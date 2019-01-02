@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-archiver/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/lumina-archiver/Makefile 488265 2018-12-24 09:30:16Z amdmi3 $
 
 PORTNAME=	lumina-archiver
 PORTVERSION=	1.4.1
@@ -10,6 +10,7 @@ MAINTAINER=	jt@ixsystems.com
 COMMENT=	Archive manager from the Lumina Desktop
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../../LICENSE
 
 CONFLICTS_INSTALL=	lumina-1.2.*
 

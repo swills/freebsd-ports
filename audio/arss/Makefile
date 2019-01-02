@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/audio/arss/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/arss/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	arss
 PORTVERSION=	0.2.3
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3
 
 WRKSRC=	${WRKDIR}/${DISTNAME}/src
 
-USES=		cmake
+USES=		cmake:insource
 USE_LDCONFIG=	${PREFIX}/lib
 CFLAGS+=	-L${LOCALBASE}/lib -I${LOCALBASE}/include
 CMAKE_C_FLAGS=	${CFLAGS}

@@ -1,5 +1,5 @@
 # Created by: Geoffrey Mainland <mainland@apeiron.net>
-# $FreeBSD: head/devel/antlr/Makefile 486590 2018-12-04 09:31:25Z amdmi3 $
+# $FreeBSD: head/devel/antlr/Makefile 488224 2018-12-23 17:03:29Z linimon $
 
 PORTNAME=	antlr
 PORTVERSION=	2.7.7
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 CONFLICTS=	pccts-[0-9]*
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 USE_JAVA=	yes
 
 HAS_CONFIGURE=	yes

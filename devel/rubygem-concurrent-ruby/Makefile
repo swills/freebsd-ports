@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-concurrent-ruby/Makefile 484726 2018-11-11 18:20:40Z sunpoet $
+# $FreeBSD: head/devel/rubygem-concurrent-ruby/Makefile 489020 2019-01-01 20:38:15Z sunpoet $
 
 PORTNAME=	concurrent-ruby
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

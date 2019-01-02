@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/semantik/Makefile 487882 2018-12-20 14:00:47Z adridg $
+# $FreeBSD: head/deskutils/semantik/Makefile 488268 2018-12-24 12:25:57Z adridg $
 
 PORTNAME=	semantik
-DISTVERSION=	1.1.0
+DISTVERSION=	1.2.0
 CATEGORIES=	deskutils kde
 MASTER_SITES=	https://waf.io/
 
@@ -11,7 +11,7 @@ COMMENT=	Mind mapping tool
 LICENSE=	GPLv3
 
 USES=		kde:5 pkgconfig python:3.6 qt:5 shebangfix tar:bzip2 waf \
-		gettext shared-mime-info
+		desktop-file-utils gettext shared-mime-info
 USE_KDE=	auth config configwidgets coreaddons i18n iconthemes \
 		kdelibs4support kio sonnet widgetsaddons xmlgui
 USE_QT=		core dbus declarative gui location network printsupport \

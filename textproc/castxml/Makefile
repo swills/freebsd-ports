@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/castxml/Makefile 485848 2018-11-25 08:55:31Z yuri $
+# $FreeBSD: head/textproc/castxml/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	castxml
 PORTVERSION=	g20181115
@@ -14,7 +14,7 @@ BUILD_DEPENDS=	clang${LLVM_VERSION}:devel/llvm${LLVM_VERSION}
 RUN_DEPENDS=	clang${LLVM_VERSION}:devel/llvm${LLVM_VERSION}
 TEST_DEPENDS=	${LOCALBASE}/lib/libxml2.so:textproc/libxml2
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	CastXML
 GH_PROJECT=	CastXML

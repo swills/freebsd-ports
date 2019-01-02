@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/opendht/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/opendht/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	opendht
 DISTVERSION=	1.8.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libargon2.so:security/libargon2 \
 		libnettle.so:security/nettle \
 		libgnutls.so:security/gnutls
 
-USES=		cmake:outsource compiler:c++11-lib pathfix pkgconfig readline:port
+USES=		cmake compiler:c++11-lib pathfix pkgconfig readline:port
 USE_GITHUB=	yes
 GH_ACCOUNT=	savoirfairelinux
 USE_LDCONFIG=	yes

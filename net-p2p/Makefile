@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 487992 2018-12-21 13:19:02Z rene $
+# $FreeBSD: head/net-p2p/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -38,11 +38,9 @@
     SUBDIR += jackett
     SUBDIR += jigdo
     SUBDIR += ktorrent
-    SUBDIR += ktorrent-kde4
     SUBDIR += libbt
     SUBDIR += liberator
     SUBDIR += libktorrent
-    SUBDIR += libktorrent-kde4
     SUBDIR += libpdtp
     SUBDIR += libswift
     SUBDIR += libtorrent

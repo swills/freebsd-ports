@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/percona56-server/Makefile 487860 2018-12-20 08:39:45Z linimon $
+# $FreeBSD: head/databases/percona56-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=	percona
 DISTVERSION=	5.6.41-84.1
@@ -19,7 +19,7 @@ BROKEN_armv7=		fails to compile: sql/mysqld.cc:198:19: error: cannot combine wit
 
 SLAVEDIRS=	databases/percona56-client \
 		databases/percona-pam-for-mysql
-USES=		bison compiler:c++11-lang cmake:noninja perl5 shebangfix
+USES=		bison compiler:c++11-lang cmake:insource,noninja perl5 shebangfix
 
 OPTIONS_DEFINE=	OPENSSL FASTMTX INNODBMEMCACHED TOKUDB
 OPTIONS_DEFAULT=	OPENSSL INNODBMEMCACHED

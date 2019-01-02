@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/flint2/Makefile 487243 2018-12-11 17:03:52Z linimon $
+# $FreeBSD: head/math/flint2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	flint2
 DISTVERSION=	g20180323
@@ -23,7 +23,7 @@ BROKEN_mips64=		fails to compile: invokes x86 assembler
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr
 
-USES=		cmake:outsource
+USES=		cmake
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 USE_GITHUB=	yes

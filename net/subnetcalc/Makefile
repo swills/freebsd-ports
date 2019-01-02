@@ -1,5 +1,5 @@
 # Created by: Thomas Dreibholz <dreibh@iem.uni-due.de>
-# $FreeBSD: head/net/subnetcalc/Makefile 473848 2018-07-03 17:20:45Z fernape $
+# $FreeBSD: head/net/subnetcalc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	subnetcalc
 DISTVERSION=	2.4.9
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 
-USES=		cmake:outsource
+USES=		cmake
 CMAKE_ARGS=	-DCMAKE_INSTALL_MANDIR:PATH="man"
 
 PLIST_FILES=	bin/subnetcalc \

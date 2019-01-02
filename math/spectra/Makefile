@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/spectra/Makefile 470677 2018-05-23 06:44:01Z yuri $
+# $FreeBSD: head/math/spectra/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	spectra
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

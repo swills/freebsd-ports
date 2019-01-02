@@ -1,14 +1,13 @@
-# $FreeBSD: head/deskutils/plasma5-sddm-kcm/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/plasma5-sddm-kcm/Makefile 488757 2018-12-31 06:38:42Z tcberner $
 
 PORTNAME=	sddm-kcm
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	2
 CATEGORIES=	deskutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 config module for SDDM
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 cpe pkgconfig \
+USES=		cmake compiler:c++11-lib gettext kde:5 cpe pkgconfig \
 		qt:5 tar:xz
 USE_KDE=	auth archive attica codecs completion config configwidgets \
 		coreaddons ecm i18n jobwidgets kio newstuff service \

@@ -1,9 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/net/gupnp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/gupnp/Makefile 488955 2019-01-01 20:32:19Z sunpoet $
 
 PORTNAME=	gupnp
-PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTVERSION=	1.1.1
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 

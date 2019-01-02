@@ -1,5 +1,5 @@
 # Created by: michael johnson <ahze@ahze.net>
-# $FreeBSD: head/net/minisapserver/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/net/minisapserver/Makefile 488388 2018-12-26 13:29:31Z tobik $
 
 PORTNAME=	minisapserver
 PORTVERSION=	0.3.8
@@ -36,7 +36,6 @@ post-patch:
 		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e 's|/etc/sap.cfg|${PREFIX}/etc/sap.cfg|' \
 		${WRKSRC}/sapserver.h
-	@${REINPLACE_CMD} -e 's|a6->sin_len|a6->sin6_len|g' ${WRKSRC}/broadcast.cpp
 	@${CP} -f ${WRKSRC}/sap.cfg ${WRKSRC}/sap.cfg-dist
 
 .include <bsd.port.mk>

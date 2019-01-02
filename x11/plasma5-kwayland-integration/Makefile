@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/plasma5-kwayland-integration/Makefile 487789 2018-12-19 09:09:11Z zeising $
+# $FreeBSD: head/x11/plasma5-kwayland-integration/Makefile 488757 2018-12-31 06:38:42Z tcberner $
 
 PORTNAME=	kwayland-integration
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	2
 CATEGORIES=	x11 kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,7 +11,7 @@ LIB_DEPENDS=	libepoxy.so:graphics/libepoxy \
 		libwayland-client.so:graphics/wayland
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 
-USES=		cmake:outsource compiler:c++11-lib cpe kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib cpe kde:5 qt:5 tar:xz
 USE_KDE=	ecm idletime wayland windowsystem
 USE_QT=		core gui widgets \
 		buildtools_build qmake_build

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libinstpatch/Makefile 486395 2018-12-02 04:01:06Z yuri $
+# $FreeBSD: head/audio/libinstpatch/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libinstpatch
 DISTVERSION=	1.0.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile
 
-USES=		cmake:outsource gettext-runtime gnome localbase:ldflags pkgconfig tar:bz2
+USES=		cmake gettext-runtime gnome localbase:ldflags pkgconfig tar:bz2
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 

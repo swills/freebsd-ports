@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/konsole/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/x11/konsole/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	konsole
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-
 		docbook-xml>0:textproc/docbook-xml
 RUN_DEPENDS=	keditbookmarks:deskutils/keditbookmarks
 
-USES=		cmake:outsource compiler:c++11-lang gettext pkgconfig kde:5 \
+USES=		cmake compiler:c++11-lang gettext pkgconfig kde:5 \
 		qt:5 tar:xz
 USE_KDE=	auth attica bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm emoticons globalaccel guiaddons i18n \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/combblas/Makefile 487565 2018-12-16 09:01:08Z yuri $
+# $FreeBSD: head/math/combblas/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	CombBLAS
 DISTVERSION=	1.6.2
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libmpi.so:net/mpich \
 		libomp.so:devel/openmp
 RUN_DEPENDS=	${LOCALBASE}/lib/gcc${GCC_DEFAULT}/libgcc_s.so.1:lang/gcc${GCC_DEFAULT} # because of the link flags induced by mpich
 
-USES=		cmake:outsource compiler:c++14-lang localbase:ldflags tar:tgz
+USES=		cmake compiler:c++14-lang localbase:ldflags tar:tgz
 USE_LDCONFIG=	yes
 
 CMAKE_ON=	BUILD_SHARED_LIBS

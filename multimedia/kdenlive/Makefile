@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kdenlive/Makefile 487789 2018-12-19 09:09:11Z zeising $
+# $FreeBSD: head/multimedia/kdenlive/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdenlive
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 RUN_DEPENDS=	ffmpeg${FFMPEG_SUFX}:multimedia/ffmpeg${FFMPEG_SUFX} \
 		${LOCALBASE}/lib/mlt/libmltqt.so:multimedia/mlt-qt5
 
-USES=		cmake:outsource desktop-file-utils gettext-tools pkgconfig \
+USES=		cmake desktop-file-utils gettext-tools pkgconfig \
 		qt:5 shared-mime-info kde:5 tar:xz
 USE_GL=		gl glu
 USE_KDE=	archive attica auth bookmarks codecs completion config \

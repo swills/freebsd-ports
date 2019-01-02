@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ttyd/Makefile 479872 2018-09-16 00:08:17Z sunpoet $
+# $FreeBSD: head/sysutils/ttyd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ttyd
 PORTVERSION=	1.4.2
@@ -14,7 +14,7 @@ BUILD_DEPENDS=	xxd:editors/vim-console
 LIB_DEPENDS=	libjson-c.so:devel/json-c \
 		libwebsockets.so:net/libwebsockets
 
-USES=		cmake pkgconfig ssl
+USES=		cmake:insource pkgconfig ssl
 USE_CSTD=	c99
 USE_GITHUB=	yes
 GH_ACCOUNT=	tsl0922

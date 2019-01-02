@@ -1,5 +1,5 @@
 # Created by: Kurt Kanzenbach <kurt@kmk-computers.de>
-# $FreeBSD: head/devel/libflatarray/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/libflatarray/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libflatarray
 PORTVERSION=	0.3.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	boost-libs>=1.48:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 
 CMAKE_ARGS=	-DWITH_CUDA:BOOL=FALSE
 

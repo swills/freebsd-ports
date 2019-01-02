@@ -1,5 +1,5 @@
 # Created by: Diego Depaoli <trebestie@gmail.com>
-# $FreeBSD: head/editors/texworks/Makefile 482233 2018-10-16 15:17:33Z rigoletto $
+# $FreeBSD: head/editors/texworks/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	texworks
 DISTVERSIONPREFIX=	release-
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
 		libpoppler.so:graphics/poppler \
 		libpoppler-qt5.so:graphics/poppler-qt5
 
-USES=		cmake:outsource desktop-file-utils pkgconfig qt:5
+USES=		cmake desktop-file-utils pkgconfig qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	TeXworks
 USE_QT=		buildtools_build designer_build qmake_build \

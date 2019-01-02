@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/multimedia/nordlicht/Makefile 487243 2018-12-11 17:03:52Z linimon $
+# $FreeBSD: head/multimedia/nordlicht/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	nordlicht
 PORTVERSION=	0.4.5
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 
 USE_GITHUB=	yes
 
-USES=		cmake:outsource pkgconfig shebangfix
+USES=		cmake pkgconfig shebangfix
 USE_LDCONFIG=	yes
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}

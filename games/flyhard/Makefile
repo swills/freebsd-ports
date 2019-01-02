@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/flyhard/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/games/flyhard/Makefile 488615 2018-12-28 18:20:03Z amdmi3 $
 
 PORTNAME=	flyhard
 PORTVERSION=	0.42
@@ -22,9 +22,8 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 
 USES=		gmake localbase
 GNU_CONFIGURE=	yes
+USE_CXXSTD=	c++98
 USE_SDL=	sdl mixer
-
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	AUTHORS ChangeLog README

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/kile/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/editors/kile/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	kile
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpoppler.so:graphics/poppler \
 		libpoppler-qt5.so:graphics/poppler-qt5
 
-USES=		cmake:outsource desktop-file-utils kde:5 \
+USES=		cmake compiler:c++11-lang desktop-file-utils kde:5 \
 		qt:5 shared-mime-info shebangfix
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm guiaddons i18n iconthemes \

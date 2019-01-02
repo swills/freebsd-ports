@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/k3b/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/k3b/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	k3b
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -21,8 +21,8 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 RUN_DEPENDS=	cdrecord:sysutils/cdrtools
 BUILD_DEPENDS=	cdrecord:sysutils/cdrtools
 
-USES=		cmake:outsource desktop-file-utils gettext iconv kde:5 pkgconfig \
-		qt:5 shared-mime-info tar:xz
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext iconv \
+		kde:5 pkgconfig qt:5 shared-mime-info tar:xz
 
 USE_KDE=	archive attica auth bookmarks codecs completion config \
 		configwidgets coreaddons ecm filemetadata i18n iconthemes \

@@ -1,8 +1,8 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/ckeditor/Makefile 478374 2018-08-29 19:08:27Z sunpoet $
+# $FreeBSD: head/www/ckeditor/Makefile 488960 2019-01-01 20:32:46Z sunpoet $
 
 PORTNAME=	ckeditor
-PORTVERSION=	4.10.0
+PORTVERSION=	4.11.1
 CATEGORIES=	www
 MASTER_SITES=	https://download.cksource.com/CKEditor/CKEditor/CKEditor%20${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_full
@@ -14,10 +14,11 @@ LICENSE=	GPLv2+ LGPL21+ MPL11 MPL20
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
+USES=		zip
+
 NO_ARCH=	yes
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
-USES=		zip
 
 do-install:
 	cd ${WRKSRC}/ && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR}

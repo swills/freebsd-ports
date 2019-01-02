@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/kate/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/editors/kate/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-
 		docbook-xml>0:textproc/docbook-xml
 LIB_DEPENDS=	libgit2.so:devel/libgit2
 
-USES=		cmake:outsource compiler:c++11-lang desktop-file-utils gettext \
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext \
 		pkgconfig kde:5 qt:5 tar:xz
 USE_KDE=	activities attica auth bookmarks codecs completion config \
 		configwidgets coreaddons crash dbusaddons doctools ecm \

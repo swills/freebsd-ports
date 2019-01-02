@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/docopt.cpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/docopt.cpp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	docopt.cpp
 DISTVERSION=	0.6.2-6
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE-MIT
 
 TEST_DEPENDS=	python${PYTHON_DEFAULT}:lang/python${PYTHON_DEFAULT:S/.//}
 
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	docopt
 USE_LDCONFIG=	yes

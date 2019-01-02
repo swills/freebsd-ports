@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/bstone/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/bstone/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	bstone
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Source port of Blake Stone
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
-USES=		cmake:outsource compiler:c++11-lang localbase:ldflags pkgconfig
+USES=		cmake compiler:c++11-lang localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	bibendovsky
 USE_SDL=	sdl2

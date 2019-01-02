@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/graphics/yagf/Makefile 487550 2018-12-16 00:25:41Z rene $
+# $FreeBSD: head/graphics/yagf/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	yagf
 PORTVERSION=	0.9.5
@@ -24,7 +24,7 @@ OPTIONS_DEFINE=TESSERACT
 TESSERACT_DESC=		Tesseract OCR engine
 TESSERACT_RUN_DEPENDS=	tesseract:graphics/tesseract
 
-USES=		cmake desktop-file-utils pkgconfig qt:4
+USES=		cmake:insource desktop-file-utils pkgconfig qt:4
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 USE_QT=		corelib gui imageformats linguist_build \

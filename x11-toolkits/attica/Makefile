@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/attica/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/x11-toolkits/attica/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	attica
 PORTVERSION=	0.4.2
@@ -17,7 +17,7 @@ EXPIRATION_DATE=	2019-03-15
 USE_QT=		network qtestlib_build xml \
 		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes
-USES=		cmake:outsource qt:4 tar:bzip2
+USES=		cmake qt:4 tar:bzip2
 CMAKE_ARGS=	-DATTICA_ENABLE_TESTS:BOOL=OFF \
 		-DQT4_BUILD:BOOL=ON
 USE_CXXSTD=	gnu++98

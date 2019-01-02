@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/clasp/Makefile 422376 2016-09-18 11:48:46Z linimon $
+# $FreeBSD: head/math/clasp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	clasp
 PORTVERSION=	3.1.3
@@ -12,7 +12,7 @@ COMMENT=	Answer set solver for (extended) normal logic programs
 
 BROKEN_sparc64=	Fails to build: internal compiler error
 
-USES=	cmake:outsource
+USES=	cmake
 
 PLIST_FILES=	bin/${PORTNAME}
 

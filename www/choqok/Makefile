@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/choqok/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/choqok/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	choqok
 DISTVERSION=	1.6.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libqjson-qt5.so:devel/qjson@qt5 \
 		libqoauth-qt5.so:net/qoauth-qt5 \
 		libtelepathy-qt5.so:net-im/telepathy-qt@qt5
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
 		coreaddons doctools ecm emoticons globalaccel guiaddons i18n \
 		itemviews jobwidgets kcmutils kdewebkit kio notifications \

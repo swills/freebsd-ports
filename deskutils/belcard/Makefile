@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/belcard/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/belcard/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	belcard
 PORTVERSION=	1.0.2
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox \
 		libbelr.so:textproc/belr
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake compiler:c++11-lib
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DENABLE_STATIC=NO -DENABLE_STRICT=NO -DENABLE_UNIT_TESTS=NO

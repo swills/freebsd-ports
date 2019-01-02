@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libsimdpp/Makefile 483448 2018-10-30 04:57:21Z yuri $
+# $FreeBSD: head/devel/libsimdpp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libsimdpp
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
 
 PORTSCOUT=	limit:^[v1-9]
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	p12tic
 NO_BUILD=	yes

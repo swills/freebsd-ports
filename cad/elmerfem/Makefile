@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/elmerfem/Makefile 487778 2018-12-18 23:32:36Z antoine $
+# $FreeBSD: head/cad/elmerfem/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	elmerfem
 PORTVERSION=	8.3.20170524
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ElmerCSC
 GH_TAGNAME=	release-8.3
 
-USES=		blaslapack:netlib cmake:outsource fortran gmake tcl
+USES=		blaslapack:netlib cmake fortran gmake tcl
 
 USE_LDCONFIG=	${PREFIX}/lib/elmersolver
 ALL_TARGET=	# empty

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/libmsym/Makefile 482264 2018-10-16 22:58:17Z yuri $
+# $FreeBSD: head/science/libmsym/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libmsym
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Molecular point group symmetry library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	mcodev31
 USE_LDCONFIG=	yes

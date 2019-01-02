@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/traingame/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/traingame/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	traingame
 PORTVERSION=	0.3
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	nickg
 GH_TAGNAME=	cb6513e
 
-USES=		cmake compiler:c++11-lib dos2unix pkgconfig
+USES=		cmake:insource compiler:c++11-lib dos2unix pkgconfig
 DOS2UNIX_GLOB=	*.mtl *.obj
 USE_CXXSTD=	c++11
 USE_SDL=	sdl image

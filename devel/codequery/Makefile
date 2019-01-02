@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/codequery/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/codequery/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	codequery
 PORTVERSION=	0.21.1
@@ -18,7 +18,7 @@ EXPIRATION_DATE=	2019-03-15
 LICENSE_FILE_MPL20=	${WRKSRC}/LICENSE.md
 LICENSE_FILE_MIT=	${WRKSRC}/querylib/README.txt
 
-USES=		cmake compiler:c++11-lang ninja qt:4 sqlite
+USES=		cmake:insource compiler:c++11-lang ninja qt:4 sqlite
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ruben2020

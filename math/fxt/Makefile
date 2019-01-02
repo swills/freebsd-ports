@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/fxt/Makefile 484173 2018-11-05 06:54:31Z jbeich $
+# $FreeBSD: head/math/fxt/Makefile 488377 2018-12-26 12:21:18Z linimon $
 
 PORTNAME=	fxt
 DISTVERSION=	2018.07.03
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 MAKE_ENV=	FXT_INSTALL="${INSTALL_DATA}"
 MAKEFILE=	makefile
 

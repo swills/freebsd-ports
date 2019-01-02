@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/sysutils/pacman/Makefile 476002 2018-07-31 14:28:24Z amdmi3 $
+# $FreeBSD: head/sysutils/pacman/Makefile 488695 2018-12-29 23:13:15Z amdmi3 $
 
 PORTNAME=	pacman
-PORTVERSION=	5.1.1
+PORTVERSION=	5.1.2
 CATEGORIES=	sysutils
 MASTER_SITES=	https://sources.archlinux.org/other/${PORTNAME}/ \
 		https://mirror.amdmi3.ru/distfiles/

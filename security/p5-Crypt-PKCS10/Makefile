@@ -1,8 +1,8 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 488486 2018-12-26 22:58:13Z swills $
 
 PORTNAME=	Crypt-PKCS10
-PORTVERSION=	1.10
+PORTVERSION=	2.001
 PORTEPOCH=	1
 CATEGORIES=	security perl5
 PKGNAMEPREFIX=	p5-

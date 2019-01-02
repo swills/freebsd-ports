@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/rapidjson/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/rapidjson/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	rapidjson
 PORTVERSION=	1.1.0
@@ -48,7 +48,7 @@ CXXFLAGS+=	-Wno-zero-as-null-pointer-constant
 post-patch:
 	@${REINPLACE_CMD} -e 's|DOC_INSTALL_DIR}/examples"|CMAKE_INSTALL_PREFIX}/share/examples/${PORTNAME}"| ; s| -march=native||' ${WRKSRC}/CMakeLists.txt
 	@${REINPLACE_CMD} -e 's|-Werror||' ${WRKSRC}/example/CMakeLists.txt ${WRKSRC}/test/unittest/CMakeLists.txt
-	@${REINPLACE_CMD} -e 's|.*travis.*||' ${WRKSRC}/CMakeLists.txt   # travis_doc breaks cmake, see https://github.com/miloyip/rapidjson/issues/715
+	@${REINPLACE_CMD} -e 's|.*travis.*||' ${WRKSRC}/CMakeLists.txt   # travis_doc breaks cmake: see https://github.com/miloyip/rapidjson/issues/715
 	@${REINPLACE_CMD} -e 's|add_subdirectory.*googletest.*|link_directories(${LOCALBASE}/lib)|' ${WRKSRC}/test/CMakeLists.txt
 
 post-install:

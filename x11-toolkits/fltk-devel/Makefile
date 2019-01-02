@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 474519 2018-07-12 14:11:30Z amdmi3 $
+# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	fltk
 DISTVERSION=	1.3.x-r${SNAPSHOT_VERS}
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig
 
-USES=		cmake:outsource jpeg
+USES=		cmake jpeg
 USE_XORG=	xft
 USE_GL=		glu
 USE_LDCONFIG=	${PREFIX}/lib/fltk-devel

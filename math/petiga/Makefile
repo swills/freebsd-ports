@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/petiga/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/petiga/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	petiga
 DISTVERSION=	g20180518
@@ -23,7 +23,7 @@ BB_COMMIT=	e2a59b1ba054
 
 WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
 
-USES=		cmake:outsource compiler:c++14-lang fortran
+USES=		cmake compiler:c++14-lang fortran
 USE_XORG=	x11
 USE_LDCONFIG=	yes
 

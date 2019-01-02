@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/gnustep-base/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/lang/gnustep-base/Makefile 488709 2018-12-30 12:34:09Z linimon $
 
 PORTNAME=	gnustep-base
 PORTVERSION=	1.25.0
@@ -12,8 +12,6 @@ COMMENT=	GNUstep Foundation library
 
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
-
-BROKEN_aarch64=		fails to compile: <inline asm>:1:27: unexpected token in argument list
 
 LIB_DEPENDS+=	libffi.so:devel/libffi
 LIB_DEPENDS+=	libxml2.so:textproc/libxml2

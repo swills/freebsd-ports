@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/caf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/caf/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	caf
 PORTVERSION=	0.15.3
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CXXFLAGS+=	-std=c++11 -Wextra -Wall -pedantic
 LDFLAGS+=	-pthread
-USES=		cmake:outsource compiler:c++11-lang
+USES=		cmake compiler:c++11-lang
 USE_LDCONFIG=	yes
 TEST_TARGET=	test
 USE_GITHUB=	yes

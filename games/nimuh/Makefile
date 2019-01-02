@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/nimuh/Makefile 473071 2018-06-22 20:50:27Z amdmi3 $
+# $FreeBSD: head/games/nimuh/Makefile 488327 2018-12-25 16:11:45Z amdmi3 $
 
 PORTNAME=	nimuh
 PORTVERSION=	1.02
@@ -15,12 +15,11 @@ LICENSE=	CC-BY-NC-SA-2.0
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
+USES=		gl gmake localbase
 GNU_CONFIGURE=	yes
-USES=		gmake localbase
+USE_CXXSTD=	c++98
 USE_SDL=	sdl image mixer
 USE_GL=		gl glu
-
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 DATA_WRKSRC=	${WRKDIR}/${PORTNAME}-data-${PORTVERSION}
 

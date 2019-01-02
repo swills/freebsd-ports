@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/zoneminder/Makefile 487076 2018-12-09 19:52:30Z pi $
+# $FreeBSD: head/multimedia/zoneminder/Makefile 488890 2019-01-01 13:37:08Z rene $
 
 PORTNAME=	zoneminder
 PORTVERSION=	1.32.3
@@ -35,7 +35,7 @@ RUN_DEPENDS=	${ZM_DEPENDS} \
 		p5-Device-SerialPort>=0:comms/p5-Device-SerialPort \
 		zip:archivers/zip
 
-USES=		cmake:noninja jpeg mysql perl5 php shebangfix ssl
+USES=		cmake:insource,noninja jpeg mysql perl5 php shebangfix ssl
 USE_GITHUB=	yes
 GH_PROJECT=	zoneminder
 GH_TUPLE=	zoneminder:crud:0bd63fb:crud \
@@ -89,11 +89,7 @@ CMAKE_ARGS+=	-DZM_PERL_MM_PARMS=INSTALLDIRS=site \
 
 .include <bsd.port.pre.mk>
 
-.if ${PHP_VER} >= 71
 RUN_DEPENDS+=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/apcu.so:devel/pecl-APCu@${PHP_FLAVOR}
-.else
-RUN_DEPENDS+=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/apcu.so:devel/pecl-APCu4@${PHP_FLAVOR}
-.endif
 
 PKGMESSAGE=	${WRKDIR}/pkg-message
 

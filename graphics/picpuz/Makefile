@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/graphics/picpuz/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/graphics/picpuz/Makefile 488427 2018-12-26 20:13:40Z linimon $
 
 PORTNAME=	picpuz
 PORTVERSION=	2.1.1
@@ -14,7 +14,7 @@ COMMENT=	Jigsaw puzzle program
 BROKEN_armv6=		fails to compile: use of undeclared identifier __NR_SYSCALL_BASE
 BROKEN_armv7=		fails to compile: use of undeclared identifier __NR_SYSCALL_BASE
 
-USES=		dos2unix gmake pkgconfig
+USES=		compiler:c++11-lang dos2unix gmake gnome pkgconfig
 DOS2UNIX_GLOB=	*.h
 USE_GNOME=	gtk20
 

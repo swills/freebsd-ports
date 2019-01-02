@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/vulkan-tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/vulkan-tools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vulkan-tools
 DISTVERSIONPREFIX=	sdk-
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libvulkan.so:graphics/vulkan-loader \
 		libXrandr.so:x11/libXrandr \
 		libxcb.so:x11/libxcb
 
-USES=		cmake:outsource compiler:c++11-lib pkgconfig python:3.4+,build
+USES=		cmake compiler:c++11-lib pkgconfig python:3.4+,build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	KhronosGroup

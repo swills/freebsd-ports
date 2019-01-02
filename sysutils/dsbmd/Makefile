@@ -1,8 +1,8 @@
 # Created by: Marcel Kaiser <mk@nic-nac-project.org>
-# $FreeBSD: head/sysutils/dsbmd/Makefile 483090 2018-10-27 01:43:21Z swills $
+# $FreeBSD: head/sysutils/dsbmd/Makefile 488308 2018-12-25 10:33:30Z tobik $
 
 PORTNAME=	dsbmd
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 
@@ -19,17 +19,19 @@ USE_RC_SUBR=	dsbmd
 PORTDOCS=	readme.mdoc
 PLIST_FILES=	libexec/dsbmd "@sample etc/dsbmd.conf.sample"
 
-OPTIONS_DEFINE=		DOCS EXFAT EXT4 LKL MTP NTFS PTP
+OPTIONS_DEFINE=		DOCS EXFAT EXT4 HFS LKL MTP NTFS PTP
 OPTIONS_DEFAULT=	EXT4 MTP NTFS PTP
 
 EXFAT_DESC=		exFAT filesystem support
 EXT4_DESC=		Ext4 filesystem support
+HFS_DESC=		HFS+ support
 LKL_DESC=		Btrfs and XFS support through Linux Kernel Library
 NTFS_DESC=		Mount NTFS filesystems with read and write support
 PTP_DESC=		Picture Transfer Protocol support
 
 EXFAT_RUN_DEPENDS=	mount.exfat:sysutils/fusefs-exfat
 EXT4_RUN_DEPENDS=	fuse-ext2:sysutils/fusefs-ext2
+HFS_RUN_DEPENDS=	hfsfuse:sysutils/fusefs-hfsfuse
 LKL_RUN_DEPENDS=	lklfuse:sysutils/fusefs-lkl
 MTP_RUN_DEPENDS=	simple-mtpfs:sysutils/fusefs-simple-mtpfs
 NTFS_RUN_DEPENDS=	ntfs-3g:sysutils/fusefs-ntfs

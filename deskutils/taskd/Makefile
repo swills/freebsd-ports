@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/deskutils/taskd/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/taskd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	taskd
 PORTVERSION=	1.1.0
@@ -15,7 +15,7 @@ LICENSE=	MIT
 LIB_DEPENDS=	libgnutls.so:security/gnutls
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		cmake:outsource compiler:c++11-lib shebangfix
+USES=		cmake compiler:c++11-lib shebangfix
 USE_RC_SUBR=	taskd
 
 USERS=		taskd

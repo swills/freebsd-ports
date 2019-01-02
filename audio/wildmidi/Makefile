@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/wildmidi/Makefile 455007 2017-11-28 00:07:16Z dbaio $
+# $FreeBSD: head/audio/wildmidi/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wildmidi
 PORTVERSION=	0.4.2
@@ -11,7 +11,7 @@ COMMENT=	Simple software midi player and core softsynth library
 # player: GPLv3, library: LGPL3
 LICENSE=	LGPL3
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

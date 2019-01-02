@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/uTox/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-im/uTox/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	uTox
 DISTVERSION=	0.17.0
@@ -26,7 +26,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libopus.so:audio/opus \
 		libtoxcore.so:net-im/tox
 
-USES=		cmake:outsource compiler:c11 desktop-file-utils dos2unix \
+USES=		cmake compiler:c11 desktop-file-utils dos2unix \
 		openal pkgconfig
 USE_XORG=	ice sm x11 xext xrender
 CMAKE_OFF=	ENABLE_LTO

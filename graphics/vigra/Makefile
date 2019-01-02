@@ -1,5 +1,5 @@
 # Created by: cartola (Carlos E. G. Carvalho)
-# $FreeBSD: head/graphics/vigra/Makefile 487603 2018-12-16 17:01:42Z pi $
+# $FreeBSD: head/graphics/vigra/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vigra
 DISTVERSIONPREFIX=v
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LIB_DEPENDS=	libHalf.so:graphics/ilmbase \
 		libsz.so:science/szip
 
-USES=		cmake:outsource compiler:c++14-lang python:2.7,run shebangfix
+USES=		cmake compiler:c++14-lang python:2.7,run shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	ukoethe
 GH_TAGNAME=	8acd73a

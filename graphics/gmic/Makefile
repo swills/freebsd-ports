@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gmic/Makefile 487758 2018-12-18 17:39:12Z yuri $
+# $FreeBSD: head/graphics/gmic/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gmic
 DISTVERSION=	2.4.3
@@ -28,7 +28,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 
 PORTSCOUT=	limit:[0-9]\..* # not v.220 and similar
 
-USES=		cmake:outsource compiler:c++11-lang jpeg pkgconfig
+USES=		cmake compiler:c++11-lang jpeg pkgconfig
 USE_LDCONFIG=	yes
 
 CMAKE_OFF=	BUILD_LIB_STATIC

@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/superlu/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/superlu/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	superlu
 PORTVERSION=	5.2.1
@@ -16,7 +16,7 @@ COMMENT=	Library of routines for performing sparse factorization
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/License.txt
 
-USES=		cmake:outsource fortran
+USES=		cmake fortran
 USE_LDCONFIG=	yes
 
 WRKSRC=		${WRKDIR}/SuperLU_${PORTVERSION}

@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/rdkit/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/rdkit/Makefile 488363 2018-12-26 09:06:34Z tcberner $
 
 PORTNAME=	rdkit
 DISTVERSIONPREFIX=	Release_
 DISTVERSION=	2018_09_1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	catch>0:devel/catch \
 		rapidjson>=0:devel/rapidjson
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		bison:build cmake:outsource eigen:3 python
+USES=		bison:build cmake eigen:3 python
 USE_GITHUB=	yes
 GH_TUPLE=	schrodinger:maeparser:1.0.0:maeparser/External/CoordGen/maeparser \
 		schrodinger:coordgenlibs:ede3191:coordgenlibs/External/CoordGen/coordgenlibs

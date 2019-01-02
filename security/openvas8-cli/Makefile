@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/openvas8-cli/Makefile 447290 2017-08-03 22:25:52Z acm $
+# $FreeBSD: head/security/openvas8-cli/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=	openvas8-cli
 PORTVERSION?=	1.4.5
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libgnutls.so:security/gnutls \
 CONFLICTS?=	${PORTNAME:S/${OPENVAS_VER}/9/}-*
 
 CFLAGS+=	-Wno-missing-field-initializers
-USES=		cmake:outsource gnome pkgconfig shebangfix
+USES=		cmake gnome pkgconfig shebangfix
 SHEBANG_FILES=	dialog/omp-dialog
 USE_GNOME=	glib20 libxslt:run
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/binaryen/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/binaryen/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	binaryen
 DISTVERSION=	1.38.8
@@ -11,7 +11,7 @@ COMMENT=	Compiler infrastructure and toolchain library for WebAssembly
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource python:2.7,build compiler:c++11-lang
+USES=		cmake python:2.7,build compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	WebAssembly
 USE_LDCONFIG=	yes

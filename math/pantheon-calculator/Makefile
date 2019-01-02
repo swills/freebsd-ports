@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/math/pantheon-calculator/Makefile 465149 2018-03-21 05:52:33Z yuri $
+# $FreeBSD: head/math/pantheon-calculator/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	pantheon-calculator
 PORTVERSION=	0.1.2
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libgranite.so:x11-toolkits/granite \
 		libgee-0.8.so:devel/libgee
 
-USES=	cmake:outsource pkgconfig gettext tar:xz
+USES=	cmake pkgconfig gettext tar:xz
 USE_GNOME=	glib20 gtk30 cairo gdkpixbuf2 intltool
 
 GLIB_SCHEMAS=	org.pantheon.calculator.gschema.xml

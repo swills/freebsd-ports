@@ -1,4 +1,4 @@
-# $FreeBSD: head/hungarian/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/hungarian/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Hungarian language support
@@ -10,7 +10,6 @@
     SUBDIR += hyphen
     SUBDIR += jdictionary-eng-hun
     SUBDIR += jdictionary-eng-hun-expr
-    SUBDIR += kde4-l10n
     SUBDIR += libreoffice
     SUBDIR += mythes
 

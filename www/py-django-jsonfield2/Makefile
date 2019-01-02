@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-django-jsonfield2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-jsonfield2/Makefile 489012 2019-01-01 20:37:33Z sunpoet $
 
 PORTNAME=	jsonfield2
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
 
@@ -14,9 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
 USES=		python:3.4+
+USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 GH_ACCOUNT=	rpkilby
 USE_GITHUB=	yes

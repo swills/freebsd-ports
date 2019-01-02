@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/yajl/Makefile 462613 2018-02-22 15:39:25Z pizzamig $
+# $FreeBSD: head/devel/yajl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	yajl
 PORTVERSION=	2.1.0
@@ -15,7 +15,7 @@ GH_ACCOUNT=	lloyd
 CFLAGS+=	-g -O0
 
 USE_LDCONFIG=	yes
-USES=		cmake:outsource
+USES=		cmake
 
 PLIST_SUB=	VERSION=${PORTVERSION}
 

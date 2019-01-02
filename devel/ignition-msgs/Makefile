@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ignition-msgs/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/ignition-msgs/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ignition-msgs
 DISTVERSION=	3.0.0
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	ignition-cmake==2:devel/ignition-cmake \
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf \
 		libignition-math6.so:math/ignition-math
 
-USES=		compiler:c++11-lang cmake:outsource
+USES=		compiler:c++11-lang cmake
 USE_RUBY=	yes
 USE_LDCONFIG=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-transcoder/Makefile 487253 2018-12-11 20:28:12Z kwm $
+# $FreeBSD: head/multimedia/gstreamer1-transcoder/Makefile 488714 2018-12-30 12:56:28Z linimon $
 
 PORTNAME=	gstreamer1-transcoder
 PORTVERSION=	1.14.1
@@ -24,5 +24,11 @@ BINARY_ALIAS=	python3=${PYTHON_VERSION}
 USE_GITHUB=	yes
 GH_ACCOUNT=	pitivi
 GH_PROJECT=	gst-transcoder
+
+post-patch:
+.if exists(/usr/lib/libstdc++.so)
+	${REINPLACE_CMD} -e '/-Wno-pedantic/d' \
+		${WRKSRC}/meson.build
+.endif
 
 .include <bsd.port.mk>

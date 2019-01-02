@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/greenbone-security-assistant8/Makefile 461045 2018-02-06 13:22:05Z amdmi3 $
+# $FreeBSD: head/security/greenbone-security-assistant8/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=	greenbone-security-assistant8
 PORTVERSION?=	6.0.12
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libgnutls.so:security/gnutls \
 
 CONFLICTS?=	${PORTNAME:S/${OPENVAS_VER}/9/}-*
 
-USES=		cmake:outsource gettext gnome pkgconfig
+USES=		cmake gettext gnome pkgconfig
 USE_GNOME=	glib20 libxml2 libxslt
 USE_RC_SUBR=	gsad
 ETCDIR=		${PREFIX}/etc/openvas

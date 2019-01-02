@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/devel/qca/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/devel/qca/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qca
 PORTVERSION=	2.1.3
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
-USES=		cmake:outsource tar:xz
+USES=		cmake tar:xz
 CMAKE_ARGS=	-DBUILD_PLUGINS=none -DBUILD_TESTS=no \
 		-DPKGCONFIG_INSTALL_PREFIX=${PREFIX}/libdata/pkgconfig \
 		-DQCA_FEATURE_INSTALL_DIR=${QT_MKSPECDIR}/features \

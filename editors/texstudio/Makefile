@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/texstudio/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/editors/texstudio/Makefile 488368 2018-12-26 11:42:38Z linimon $
 
 PORTNAME=	texstudio
 DISTVERSION=	2.12.10
@@ -17,8 +17,8 @@ LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
 		libpoppler-qt5.so:graphics/poppler-qt5 \
 		libquazip5.so:archivers/quazip@qt5
 
-USES=		desktop-file-utils dos2unix ghostscript:run \
-		pkgconfig qmake qt:5
+USES=		compiler:c++11-lang desktop-file-utils dos2unix \
+		ghostscript:run gl pkgconfig qmake qt:5
 USE_QT	=	core gui network script svg widgets xml \
 		printsupport concurrent uitools buildtools_build
 QMAKE_ARGS=	QUAZIP_INCLUDE="${LOCALBASE}/include/quazip5" \

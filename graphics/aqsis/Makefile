@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/aqsis/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/aqsis/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	aqsis
 PORTVERSION=	1.8.2
@@ -29,7 +29,7 @@ LDFLAGS+=	-lpthread # Boost.Thread 1.67+
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 USE_LDCONFIG=	yes
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
+USES=		cmake compiler:c++11-lib desktop-file-utils \
 		qt:4 shared-mime-info shebangfix
 USE_CXXSTD=	gnu++11
 SHEBANG_FILES=	examples/*/*/*.sh \

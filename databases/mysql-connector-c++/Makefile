@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/databases/mysql-connector-c++/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/mysql-connector-c++/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mysql-connector-c++
 PORTVERSION=	1.1.9
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++11-lang mysql ssl
+USES=		cmake compiler:c++11-lang mysql ssl
 USE_LDCONFIG=	yes
 CMAKE_ARGS=	-DDOC_DESTINATION="${DOCSDIR}" -DCMAKE_ENABLE_C++11=ON 
 

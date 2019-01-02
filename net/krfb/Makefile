@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/krfb/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/net/krfb/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	krfb
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	VNC server for KDE
 LIB_DEPENDS=	libvncserver.so:net/libvncserver \
 		libxcb-image.so:x11/xcb-util-image
 
-USES=		alias cmake:outsource compiler:c++11-lib gettext jpeg \
+USES=		alias cmake compiler:c++11-lib gettext jpeg \
 		kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		crash dbusaddons dnssd doctools ecm i18n notifications \

@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/din/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/multimedia/din/Makefile 488470 2018-12-26 22:17:56Z swills $
 
 PORTNAME=	din
-PORTVERSION=	38
-PORTREVISION=	1
+PORTVERSION=	38a
 CATEGORIES=	multimedia
 MASTER_SITES=	https://archive.org/download/dinisnoise_source_code/
 
@@ -20,7 +19,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libSDL.so:devel/sdl12 \
 		libGL.so:graphics/mesa-libs
 
-USES=		autoreconf tcl:86+
+USES=		autoreconf tcl:86+ gnome
 
 GNU_CONFIGURE=	yes
 

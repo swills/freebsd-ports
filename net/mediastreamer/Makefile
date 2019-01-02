@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/mediastreamer/Makefile 486020 2018-11-27 16:21:00Z linimon $
+# $FreeBSD: head/net/mediastreamer/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mediastreamer
 PORTVERSION=	2.16.1
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox \
 		libsrtp2.so:net/libsrtp2 \
 		libbzrtp.so:security/bzrtp
 
-USES=		cmake:outsource compiler python:build
+USES=		cmake compiler python:build
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DENABLE_ALSA=NO -DENABLE_BV16=NO -DENABLE_DOC=NO \

@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libtorrent-rasterbar
 DISTVERSION=	1.1.10
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libboost_chrono.so:devel/boost-libs \
 		libboost_random.so:devel/boost-libs \
 		libboost_system.so:devel/boost-libs
 
-USES=		cmake:outsource compiler:c++14-lang iconv:wchar_t libtool pathfix pkgconfig ssl
+USES=		cmake compiler:c++14-lang iconv:wchar_t libtool pathfix pkgconfig ssl
 USE_LDCONFIG=	yes
 
 SHLIB_VER=	9

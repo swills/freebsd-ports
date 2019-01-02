@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/benchmarks/nosqlbench/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/benchmarks/nosqlbench/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	nosqlbench
 PORTVERSION=	0.0.${DATE}
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libleveldb.so:databases/leveldb
 
 DATE=		20151214
-USES=		cmake tar:bzip2
+USES=		cmake:insource tar:bzip2
 
 CONFLICTS=	tarantool-c
 

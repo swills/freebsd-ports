@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/kproperty/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/kproperty/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		kproperty
 DISTVERSION=		3.1.0
@@ -10,7 +10,7 @@ DIST_SUBDIR=		KDE/${PORTNAME}
 MAINTAINER=		kde@FreeBSD.org
 COMMENT=		Property editing framwork
 
-USES=			cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 \
+USES=			cmake compiler:c++11-lang gettext kde:5 qt:5 \
 			tar:xz
 USE_KDE=		ecm config coreaddons guiaddons i18n widgetsaddons
 USE_QT=			core declarative gui widgets xml \

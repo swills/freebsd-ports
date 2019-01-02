@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/liborigin/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/liborigin/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	liborigin
 PORTVERSION=	3.0.0
@@ -13,7 +13,7 @@ COMMENT=	Library and utility for reading OriginLab project files
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING # GPLv3
 
-USES=		compiler:c++11-lang cmake:outsource pathfix
+USES=		compiler:c++11-lang cmake pathfix
 
 CMAKE_ARGS=	-DLIB_SUFFIX=""
 USE_LDCONFIG=	yes

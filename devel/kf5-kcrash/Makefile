@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kcrash/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/devel/kf5-kcrash/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kcrash
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	devel kde kde-frameworks
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 library to handle crash analysis and bug report from apps
 
-USES=		cmake:outsource compiler:c++11-lib kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib kde:5 qt:5 tar:xz
 USE_KDE=	coreaddons ecm windowsystem
 USE_QT=		buildtools_build core gui qmake_build widgets x11extras
 USE_XORG=	ice sm x11 xext

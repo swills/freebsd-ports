@@ -1,5 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/graphics/rawtherapee/Makefile 488088 2018-12-22 10:38:15Z mandree $
+# $FreeBSD: head/graphics/rawtherapee/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	rawtherapee
 PORTVERSION=	5.5
@@ -27,7 +27,7 @@ LIB_DEPENDS=	\
 		libsigc-2.0.so:devel/libsigc++20 \
 		libtiff.so:graphics/tiff
 
-USES=		cmake:outsource desktop-file-utils gnome dos2unix \
+USES=		cmake desktop-file-utils gnome dos2unix \
 		jpeg localbase:ldflags pkgconfig tar:xz
 DOS2UNIX_REGEX=	.*\.(cc|h)
 LDFLAGS+=	-Wl,--as-needed # fontconfig, freetype, gettext, libX11

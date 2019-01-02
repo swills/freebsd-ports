@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/plasma5-plasma-workspace-wallpapers/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-plasma-workspace-wallpapers/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	plasma-workspace-wallpapers
 DISTVERSION=	${KDE_PLASMA_VERSION}
@@ -12,7 +12,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING.LGPL3
 
-USES=		cmake:outsource cpe kde:5 qt:5 tar:xz
+USES=		cmake cpe kde:5 qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		buildtools_build qmake_build
 

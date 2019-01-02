@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/aluminum/Makefile 487781 2018-12-19 01:33:39Z yuri $
+# $FreeBSD: head/net/aluminum/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	Aluminum
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	libhwloc.so:devel/hwloc \
 		libmpi.so:net/openmpi
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	LLNL
 USE_LDCONFIG=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/ecrire/Makefile 479318 2018-09-09 16:59:45Z yuri $
+# $FreeBSD: head/editors/ecrire/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ecrire
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libefl.so:devel/efl
 
-USES=		cmake:outsource desktop-file-utils pkgconfig
+USES=		cmake desktop-file-utils pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	Obsidian-StudiosInc
 

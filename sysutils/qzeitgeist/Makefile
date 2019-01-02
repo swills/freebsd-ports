@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qzeitgeist/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/sysutils/qzeitgeist/Makefile 488893 2019-01-01 13:50:55Z tcberner $
 
 PORTNAME=	qzeitgeist
 PORTVERSION=	0.8.0
@@ -20,11 +20,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 DEPRECATED=		Qt4 has been EOL since december 2015
 EXPIRATION_DATE=	2019-03-15
 
-BUILD_DEPENDS=	rapper:textproc/raptor2 \
+BUILD_DEPENDS=	automoc4:devel/automoc4 \
+		rapper:textproc/raptor2 \
 		${PYTHON_PKGNAMEPREFIX}rdflib>=0:textproc/py-rdflib@${PY_FLAVOR}
 
-USES=		cmake kde:4 python:2.7,build qt:4 tar:bzip2
-USE_KDE=	automoc4
+USES=		cmake python:2.7,build qt:4 tar:bzip2
 USE_QT=		corelib dbus declarative qtestlib \
 		moc_build qmake_build rcc_build uic_build
 USE_LDCONFIG=	yes

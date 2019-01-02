@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/unit-go/Makefile 480821 2018-09-27 21:40:07Z osa $
+# $FreeBSD: head/www/unit-go/Makefile 488339 2018-12-25 20:03:34Z osa $
 
 PKGNAMESUFFIX=	-go
 
@@ -25,7 +25,7 @@ post-configure:
 	cd ${WRKSRC} && ${SETENV} ${GO_ENV} ./configure go --go-path=${WRKDIR}
 
 pre-build:
-	cd ${WRKSRC} && ${MAKE} go-install
+	cd ${WRKSRC} && ${MAKE} && ${MAKE} go-install
 
 post-install:
 	@true # override master's

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-mixlib-archive/Makefile 486893 2018-12-07 21:34:31Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mixlib-archive/Makefile 489022 2019-01-01 20:38:26Z sunpoet $
 
 PORTNAME=	mixlib-archive
-PORTVERSION=	0.4.18
+PORTVERSION=	0.4.19
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

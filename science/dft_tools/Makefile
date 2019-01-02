@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dft_tools/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/dft_tools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	dft_tools
 DISTVERSION=	1.5
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libcpp2py.so:devel/cpp2py \
 		libsz.so:science/szip \
 		libtriqs.so:science/triqs
 
-USES=		cmake:outsource,noninja fortran gettext-runtime python:-2.7
+USES=		cmake:noninja fortran gettext-runtime python:-2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	TRIQS
 

@@ -1,5 +1,5 @@
 # Created by: Nicolas Herry <nicolasherry@gmail.com>
-# $FreeBSD: head/audio/wmmp/Makefile 466174 2018-04-01 17:36:45Z tobik $
+# $FreeBSD: head/audio/wmmp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	wmmp
 PORTVERSION=	0.12.4
@@ -11,7 +11,7 @@ COMMENT=	Dockable musicpd client applet for Window Maker
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake
+USES=		cmake:insource
 USE_GITHUB=	yes
 GH_ACCOUNT=	yogsothoth
 USE_XORG=	xpm x11 xext

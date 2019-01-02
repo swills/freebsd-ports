@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libkexiv2/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/graphics/libkexiv2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	libkexiv2
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	Exiv2 library interface for KDE
 
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2
 
-USES=		cmake:outsource compiler:c++11-lang kde:5 pkgconfig qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 pkgconfig qt:5 tar:xz
 USE_KDE=	ecm
 USE_QT=		core gui \
 		buildtools_build qmake_build

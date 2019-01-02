@@ -1,5 +1,5 @@
 # Created by: pjm <pierrejacqes.mimifir@gmail.com>
-# $FreeBSD: head/audio/bristol/Makefile 472231 2018-06-12 04:23:29Z linimon $
+# $FreeBSD: head/audio/bristol/Makefile 488390 2018-12-26 14:15:44Z amdmi3 $
 
 PORTNAME=	bristol
 PORTVERSION=	0.60.10
@@ -15,11 +15,12 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libjack.so:audio/jack \
 		libfluidsynth.so:audio/fluidsynth
 
-USES=		libtool
+USES=		cpe libtool
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 QT_COMPONENTS=	gui qmake_build moc_build uic_build rcc_build linguist_build
+CPE_VENDOR=	nick_copeland
 
 CONFIGURE_ARGS+=	--disable-alsa --enable-oss \
 			--enable-jack-default-audio \

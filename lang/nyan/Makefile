@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/nyan/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/nyan/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	nyan
 PORTVERSION=	g20180708
@@ -12,7 +12,7 @@ COMMENT=	Data description language designed for openage
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/legal/LGPLv3
 
-USES=		cmake:outsource compiler:c++17-lang
+USES=		cmake compiler:c++17-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	SFTtech
 GH_TAGNAME=	3c263e2

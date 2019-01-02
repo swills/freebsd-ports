@@ -1,8 +1,8 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible/Makefile 472975 2018-06-21 14:57:00Z mat $
+# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible/Makefile 488267 2018-12-24 11:53:37Z wen $
 
 PORTNAME=	Dancer2-Plugin-Auth-Extensible
-PORTVERSION=	0.705
+PORTVERSION=	0.706
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

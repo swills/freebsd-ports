@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql80-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/mysql80-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME?=		mysql
 PORTVERSION=		8.0.12
@@ -17,7 +17,7 @@ LICENSE=		GPLv2
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}${DISTVERSIONSUFFIX}
 
 SLAVEDIRS=	databases/mysql80-client
-USES=		bison:build cmake:outsource,noninja compiler:c++14-lang \
+USES=		bison:build cmake:noninja compiler:c++14-lang \
 		compiler:c++14-lib cpe libedit localbase perl5 shebangfix ssl
 
 USE_PERL5=	run

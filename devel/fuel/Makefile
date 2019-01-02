@@ -1,5 +1,5 @@
 # Created by: Hakisho Nukama <nukama@gmail.com>
-# $FreeBSD: head/devel/fuel/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/devel/fuel/Makefile 488432 2018-12-26 20:31:08Z linimon $
 
 PORTNAME=	fuel
 DISTVERSION=	1.0.1
@@ -21,7 +21,7 @@ OPTIONS_DEFAULT=	QT5
 USES=		gmake qmake shebangfix
 QT4_USES=	qt:4
 QT4_USE=	QT=corelib,gui,webkit,linguisttools_build,moc_build,rcc_build,uic_build
-QT5_USES=	qt:5
+QT5_USES=	compiler:c++11-lang qt:5
 QT5_USE=	QT=core,gui,network,webkit,widgets,buildtools_build,linguisttools_build
 
 SHEBANG_FILES=	intl/convert.sh

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 487992 2018-12-21 13:19:02Z rene $
+# $FreeBSD: head/editors/Makefile 488807 2018-12-31 17:55:45Z rene $
 #
 
     COMMENT = Editors
@@ -72,11 +72,7 @@
     SUBDIR += kak-lsp
     SUBDIR += kakoune
     SUBDIR += kate
-    SUBDIR += kate-kde4
-    SUBDIR += kate-plugin-pate-kde4
     SUBDIR += kile
-    SUBDIR += kile-kde4
-    SUBDIR += klat4
     SUBDIR += komodo-edit
     SUBDIR += lazarus
     SUBDIR += lazarus-qt4

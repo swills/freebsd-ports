@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kruler/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/kruler/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kruler
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	deskutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE screen ruler
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth codecs config configwidgets coreaddons ecm doctools i18n \
 		notifications widgetsaddons windowsystem xmlgui
 USE_QT=		core dbus gui widgets x11extras xml \

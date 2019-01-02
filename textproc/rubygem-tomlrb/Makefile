@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-tomlrb/Makefile 475810 2018-07-29 19:23:16Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-tomlrb/Makefile 489039 2019-01-01 20:39:55Z sunpoet $
 
 PORTNAME=	tomlrb
-PORTVERSION=	1.2.7
+PORTVERSION=	1.2.8
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -12,10 +12,9 @@ COMMENT=	Racc-based TOML parser
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-NO_ARCH=	yes
+USES=		gem
 USE_RUBY=	yes
-USES=		gem shebangfix
 
-SHEBANG_FILES=	bin/setup
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

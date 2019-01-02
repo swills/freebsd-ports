@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/lsyncd/Makefile 472128 2018-06-10 10:30:14Z tobik $
+# $FreeBSD: head/sysutils/lsyncd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lsyncd
 DISTVERSIONPREFIX=	release-
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify
 
-USES=		cmake:outsource localbase lua
+USES=		cmake localbase lua
 USE_GITHUB=	yes
 GH_ACCOUNT=	axkibe
 USE_RC_SUBR=	lsyncd

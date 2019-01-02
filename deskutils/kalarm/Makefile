@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kalarm/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/kalarm/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kalarm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	Personal alarm scheduler
 
 LIB_DEPENDS=	libical.so:devel/libical
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 shebangfix tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 shebangfix tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm guiaddons i18n iconthemes \
 		itemmodels itemviews jobwidgets kcmutils kdelibs4support kio \

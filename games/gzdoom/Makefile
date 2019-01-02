@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/gzdoom/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/games/gzdoom/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gzdoom
 PORTVERSION=	3.3.2
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 
 DATADIR=	${DMDIR}/${PORTNAME}
 
-USES=		cmake:outsource	gettext jpeg openal pkgconfig
+USES=		cmake	gettext jpeg openal pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	coelckers

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/osquery/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	osquery
 PORTVERSION=	3.3.1
@@ -30,7 +30,7 @@ LIB_DEPENDS=	libaugeas.so:textproc/augeas \
 		libzstd.so:archivers/zstd
 RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
 
-USES=		cmake:outsource libtool python:build compiler:c++11-lib \
+USES=		cmake libtool python:build compiler:c++11-lib \
 		libarchive ssl
 USE_GNOME=	libxml2
 CONFIGURE_ENV+=	OSQUERY_BUILD_VERSION="${PORTVERSION}" HOME="${WRKDIR}" \

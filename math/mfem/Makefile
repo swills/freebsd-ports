@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/mfem/Makefile 481699 2018-10-10 07:28:57Z yuri $
+# $FreeBSD: head/math/mfem/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mfem
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Lightweight, general, scalable C++ library for finite element methods
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 

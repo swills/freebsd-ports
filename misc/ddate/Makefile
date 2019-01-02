@@ -1,10 +1,11 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/misc/ddate/Makefile 420159 2016-08-13 11:08:48Z ehaupt $
+# $FreeBSD: head/misc/ddate/Makefile 488590 2018-12-28 09:17:10Z ehaupt $
 
 PORTNAME=	ddate
-PORTVERSION=	0.2.2.2016062701
 DISTVERSIONPREFIX=	v
-PORTEPOCH=	2
+DISTVERSION=	0.2.2-6
+DISTVERSIONSUFFIX=	-g899ca66
+PORTEPOCH=	3
 CATEGORIES=	misc
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -14,7 +15,6 @@ LICENSE=	GPLv2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	bo0ts
-GH_TAGNAME=	899ca66
 
 OPTIONS_DEFINE=	USFORMAT PRAISEBOB KILLBOB
 

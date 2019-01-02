@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/sundials/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/sundials/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	sundials
 DISTVERSION=	3.1.2
@@ -12,7 +12,7 @@ COMMENT=	SUite of Nonlinear and DIfferential/ALgebraic Equation Solvers
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource,noninja python:build # ninja doesn't support fortran
+USES=		cmake:noninja python:build # ninja doesn't support fortran
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DPTHREAD_ENABLE:BOOL=ON \

@@ -1,5 +1,5 @@
 # Created by: Yanhui Shen <shen.elf@gmail.com>
-# $FreeBSD: head/audio/mous/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/mous/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	mous
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_aarch64=		fails to compile: mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
-USES=		cmake:outsource compiler:c++14-lang
+USES=		cmake compiler:c++14-lang
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdelf

@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/spc2it/Makefile 479691 2018-09-13 19:20:05Z ehaupt $
+# $FreeBSD: head/audio/spc2it/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	spc2it
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Convert SPC files to IT (Impulse Tracker) files
 
 LICENSE=	GPLv2
 
-USES=		cmake
+USES=		cmake:insource
 USE_GITHUB=	yes
 
 GH_ACCOUNT=	uyjulian

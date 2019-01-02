@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-molequeue/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/misc/py-molequeue/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	molequeue
 DISTVERSION=	0.9.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyzmq>0:net/py-pyzmq@${PY_FLAVOR}
 
-USES=		cmake:outsource compiler:c++11-lang python
+USES=		cmake compiler:c++11-lang python
 USE_PYTHON=	flavors
 
 WRKSRC_SUBDIR=	python

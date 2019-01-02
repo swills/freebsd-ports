@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/openobex/Makefile 425484 2016-11-06 11:42:12Z madpilot $
+# $FreeBSD: head/comms/openobex/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	openobex
 PORTVERSION=	1.7.2
@@ -10,7 +10,7 @@ MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Open source implementation of the OBEX protocol
 
 USE_LDCONFIG=	yes
-USES=		cmake dos2unix
+USES=		cmake:insource dos2unix
 DOS2UNIX_FILES=	CMakeLists.txt
 CMAKE_ARGS+=	-DPKGCONFIG_INSTALL_DIR:STRING="${PREFIX}/libdata/pkgconfig"
 

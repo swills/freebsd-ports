@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net/ntopng/Makefile 488131 2018-12-22 21:05:01Z madpilot $
+# $FreeBSD: head/net/ntopng/Makefile 488707 2018-12-30 11:24:57Z madpilot $
 
 PORTNAME=	ntopng
 PORTVERSION=	3.8.d20181221
@@ -22,8 +22,8 @@ LIB_DEPENDS=	librrd.so:databases/rrdtool \
 		libmaxminddb.so:net/libmaxminddb
 BUILD_DEPENDS=  bash:shells/bash
 
-USES=		autoreconf cpe gmake libtool localbase mysql pathfix pkgconfig \
-		shebangfix sqlite ssl
+USES=		autoreconf compiler:c++11-lang cpe gmake libtool localbase \
+		mysql pathfix pkgconfig shebangfix sqlite ssl
 
 SUB_FILES=	ntopng-geoipupdate.sh pkg-deinstall
 SHEBANG_FILES=	httpdocs/misc/ntopng-add-user.sh \

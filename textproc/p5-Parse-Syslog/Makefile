@@ -1,5 +1,5 @@
 # Created by: Stephen Roznowski (sjr@home.com)
-# $FreeBSD: head/textproc/p5-Parse-Syslog/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Parse-Syslog/Makefile 488759 2018-12-31 09:00:23Z amdmi3 $
 
 PORTNAME=	Parse-Syslog
 PORTVERSION=	1.10
@@ -11,9 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 routines that present a simple interface to parse syslog files
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-text-ui/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/net-im/ktp-text-ui/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ktp-text-ui
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,7 +12,7 @@ LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 RUN_DEPENDS=	${KDE_PREFIX}/bin/ktp-contactlist:net-im/ktp-contact-list
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive auth codecs completion config configwidgets coreaddons \
 		dbusaddons ecm emoticons i18n iconthemes itemviews jobwidgets \
 		kcmutils kdewebkit kio notifications notifyconfig people \

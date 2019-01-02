@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kphotoalbum/Makefile 482038 2018-10-14 10:38:59Z tcberner $
+# $FreeBSD: head/graphics/kphotoalbum/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kphotoalbum
 DISTVERSION=	5.4
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 		libKF5KGeoMap.so:astro/libkgeomap \
 		libKF5Kipi.so:graphics/libkipi
 
-USES=		cmake:outsource jpeg kde:5 pkgconfig qt:5 shebangfix tar:xz
+USES=		cmake jpeg kde:5 pkgconfig qt:5 shebangfix tar:xz
 USE_KDE=	archive auth codecs completion config \
 		configwidgets coreaddons ecm i18n \
 		iconthemes jobwidgets kio marble service \

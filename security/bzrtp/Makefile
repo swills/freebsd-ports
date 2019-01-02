@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/bzrtp/Makefile 482343 2018-10-18 13:31:00Z tijl $
+# $FreeBSD: head/security/bzrtp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	bzrtp
 PORTVERSION=	1.0.6
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox
 
-USES=		cmake:outsource sqlite
+USES=		cmake sqlite
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 

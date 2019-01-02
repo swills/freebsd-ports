@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/raylib/Makefile 484675 2018-11-11 09:34:37Z pi $
+# $FreeBSD: head/devel/raylib/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	raylib
 DISTVERSION=	2.0.0
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 LIB_DEPENDS=	libglfw.so:graphics/glfw
 
-USES=		cmake:outsource localbase:ldflags
+USES=		cmake localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	raysan5
 USE_LDCONFIG=	yes

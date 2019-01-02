@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/urbackup-client/Makefile 478639 2018-09-01 00:17:07Z swills $
+# $FreeBSD: head/archivers/urbackup-client/Makefile 488440 2018-12-26 20:55:27Z linimon $
 
 PORTNAME=	urbackup-client
 DISTVERSION=	2.2.6
@@ -14,7 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcryptopp.so:security/cryptopp
 
-USES=		autoreconf dos2unix gettext localbase pkgconfig
+USES=		autoreconf compiler:c++11-lang dos2unix gettext localbase \
+		pkgconfig
 USE_RC_SUBR=	urbackup_client
 
 USERS=		urbackup

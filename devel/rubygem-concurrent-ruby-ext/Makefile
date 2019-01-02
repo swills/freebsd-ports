@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-concurrent-ruby-ext/Makefile 484728 2018-11-11 18:20:58Z sunpoet $
+# $FreeBSD: head/devel/rubygem-concurrent-ruby-ext/Makefile 489021 2019-01-01 20:38:21Z sunpoet $
 
 PORTNAME=	concurrent-ruby-ext
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

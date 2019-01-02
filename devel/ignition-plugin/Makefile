@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ignition-plugin/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/ignition-plugin/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ignition-plugin
 DISTVERSION=	1.0.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	ignition-cmake==2:devel/ignition-cmake
 
-USES=		cmake:outsource compiler:c++17-lang
+USES=		cmake compiler:c++17-lang
 USE_LDCONFIG=	yes
 
 BB_ACCOUNT=	ignitionrobotics

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/restbed/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/restbed/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	restbed
 DISTVERSION=	4.6
@@ -11,7 +11,7 @@ COMMENT=	Asynchronous RESTful functionality to C++11 applications
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource compiler:c++11-lib ssl
+USES=		cmake compiler:c++11-lib ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	Corvusoft
 GH_TUPLE=	Corvusoft:asio-dependency:f5c5708:a/dependency/asio \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-aws-sdk-resources/Makefile 487121 2018-12-10 04:20:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-aws-sdk-resources/Makefile 489018 2019-01-01 20:38:05Z sunpoet $
 
 PORTNAME=	aws-sdk-resources
-DISTVERSION=	2.11.188
+DISTVERSION=	2.11.197
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/vexcl/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/devel/vexcl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	vexcl
 DISTVERSION=	1.4.1
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	boost-libs>0:devel/boost-libs \
 		opencl>0:devel/opencl \
 		ocl-icd>0:devel/ocl-icd
 
-USES=		cmake:outsource localbase:ldflags
+USES=		cmake localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	ddemidov
 NO_ARCH=	yes

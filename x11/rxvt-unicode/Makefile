@@ -1,8 +1,9 @@
 # Created by: gpalmer@FreeBSD.org
-# $FreeBSD: head/x11/rxvt-unicode/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/x11/rxvt-unicode/Makefile 488515 2018-12-27 08:51:36Z novel $
 
 PORTNAME=	rxvt-unicode
 PORTVERSION=	9.22
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://dist.schmorp.de/rxvt-unicode/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. Attic

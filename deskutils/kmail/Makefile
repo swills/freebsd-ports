@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/kmail/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/deskutils/kmail/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kmail
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -20,7 +20,7 @@ RUN_DEPENDS=	accountwizard:deskutils/kmail-account-wizard \
 		mboximporter:deskutils/mbox-importer \
 		sieveeditor:deskutils/pim-sieve-editor
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons ecm guiaddons i18n iconthemes \
 		itemmodels itemviews jobwidgets kcmutils kdelibs4support kio \

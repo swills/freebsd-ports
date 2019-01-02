@@ -1,12 +1,12 @@
-# $FreeBSD: head/net-p2p/jackett/Makefile 485331 2018-11-19 16:27:33Z joneum $
+# $FreeBSD: head/net-p2p/jackett/Makefile 488826 2018-12-31 19:41:56Z swills $
 
 PORTNAME=	jackett
-PORTVERSION=	0.10.420
+PORTVERSION=	0.10.566
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Jackett/Jackett/releases/download/
 DISTNAME=	v${PORTVERSION}/Jackett.Binaries.Mono
 
-MAINTAINER=	kiwi@oav.net
+MAINTAINER=	michiel@vanbaak.eu
 COMMENT=	Torznab proxy implementation of the Newznab API
 
 LICENSE=	GPLv2
@@ -23,6 +23,9 @@ USERS=	jackett
 GROUPS=	jackett
 
 .include <bsd.port.options.mk>
+
+post-patch:
+	@${RM} ${WRKSRC}/install_service_macos ${WRKSRC}/install_service_systemd.sh
 
 do-install:
 	${INSTALL} -d -m 755 ${STAGEDIR}/${DATADIR}

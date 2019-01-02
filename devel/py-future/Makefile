@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman<5u623l20@gmail.com>
-# $FreeBSD: head/devel/py-future/Makefile 476454 2018-08-05 19:08:44Z sunpoet $
+# $FreeBSD: head/devel/py-future/Makefile 488843 2018-12-31 22:36:14Z bofh $
 
 PORTNAME=	future
-PORTVERSION=	0.16.0
+PORTVERSION=	0.17.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
 
 do-test:

@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/brlcad/Makefile 484023 2018-11-04 13:13:17Z antoine $
+# $FreeBSD: head/cad/brlcad/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	brlcad
 PORTVERSION=	7.24.0
@@ -28,7 +28,7 @@ LIB_DEPENDS=	libdrm.so:graphics/libdrm \
 
 CONFLICTS_INSTALL=	py[23][0-9]-epsilon
 
-USES=		bison cmake:outsource pathfix pkgconfig python:env shebangfix \
+USES=		bison cmake:insource pathfix pkgconfig python:env shebangfix \
 		tar:bzip2 tk:85
 USE_GL=		gl glu
 USE_XORG=	ice sm x11 xau xcb xdamage xdmcp xext xfixes xft xi \

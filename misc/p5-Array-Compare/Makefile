@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Array-Compare/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/misc/p5-Array-Compare/Makefile 488359 2018-12-26 07:26:03Z wen $
 
 PORTNAME=	Array-Compare
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN

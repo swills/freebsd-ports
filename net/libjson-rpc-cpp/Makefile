@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libjson-rpc-cpp/Makefile 487279 2018-12-12 06:17:31Z lwhsu $
+# $FreeBSD: head/net/libjson-rpc-cpp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=		libjson-rpc-cpp
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libjsoncpp.so:devel/jsoncpp \
 		libargtable2.so:devel/argtable
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake pkgconfig
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

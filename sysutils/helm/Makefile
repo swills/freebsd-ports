@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/helm/Makefile 487387 2018-12-13 21:07:48Z danilo $
+# $FreeBSD: head/sysutils/helm/Makefile 488243 2018-12-23 21:13:12Z danilo $
 
 PORTNAME=	helm
-PORTVERSION=	2.12.0
+PORTVERSION=	2.12.1
 CATEGORIES=	sysutils
 MASTER_SITES=	LOCAL/danilo
 

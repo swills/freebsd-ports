@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/fossology-nomos-standalone/Makefile 486611 2018-12-04 16:13:26Z amdmi3 $
+# $FreeBSD: head/devel/fossology-nomos-standalone/Makefile 488671 2018-12-29 15:23:38Z amdmi3 $
 
 PORTNAME=	fossology
 PORTVERSION=	3.4.0
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-nomos-standalone
 
@@ -16,7 +17,7 @@ BUILD_DEPENDS=	gawk:lang/gawk
 
 USE_GITHUB=	yes
 
-USES=		gmake gettext pkgconfig
+USES=		gnome gmake gettext pkgconfig
 USE_GNOME=	glib20
 
 BUILD_WRKSRC=	${WRKSRC}/src/nomos/agent

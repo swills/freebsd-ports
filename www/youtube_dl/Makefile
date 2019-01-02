@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/youtube_dl/Makefile 486589 2018-12-04 09:18:36Z araujo $
+# $FreeBSD: head/www/youtube_dl/Makefile 488257 2018-12-24 06:07:01Z araujo $
 
 PORTNAME=	youtube_dl
-PORTVERSION=	2018.12.03
+PORTVERSION=	2018.12.17
 CATEGORIES=	www
 MASTER_SITES=	https://yt-dl.org/downloads/${PORTVERSION}/
 DISTNAME=	youtube-dl-${PORTVERSION}

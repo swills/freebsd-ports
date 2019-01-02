@@ -1,5 +1,5 @@
 # Created by: Vlad Galu <galu@packetdam.com>
-# $FreeBSD: head/databases/arangodb32/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/databases/arangodb32/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	arangodb
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only builds on amd64"
-USES=		gmake ssl cmake:outsource,noninja python:2.7 compiler
+USES=		gmake ssl cmake:noninja python:2.7 compiler
 USE_GITHUB=	yes
 
 CMAKE_ARGS=	-DUSE_JEMALLOC:BOOL=off \

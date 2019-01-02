@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/odamex/Makefile 475497 2018-07-28 06:33:37Z tobik $
+# $FreeBSD: head/games/odamex/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	odamex
 PORTVERSION=	0.7.0
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libpng.so:graphics/png
 
 USE_SDL=	sdl mixer
-USES=		cmake compiler dos2unix tar:bzip2
+USES=		cmake:insource compiler dos2unix tar:bzip2
 DOS2UNIX_FILES=	CMakeLists.txt odalaunch/CMakeLists.txt common/d_main.cpp
 
 CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}

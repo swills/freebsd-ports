@@ -1,5 +1,5 @@
 # Created by: shiretu
-# $FreeBSD: head/net/crtmpserver/Makefile 484033 2018-11-04 13:34:26Z antoine $
+# $FreeBSD: head/net/crtmpserver/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	crtmpserver
 PORTVERSION=	0.811
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN=		fails to build
 
-USES=		cmake:outsource lua ssl
+USES=		cmake lua ssl
 CMAKE_SOURCE_PATH=	${WRKSRC}/builders/cmake
 CMAKE_ARGS=	-DCRTMPSERVER_INSTALL_PREFIX:STRING=${PREFIX} -DTEMP_FRAMEWORK_VER=${PORTVERSION}
 MAKE_JOBS_UNSAFE=	yes

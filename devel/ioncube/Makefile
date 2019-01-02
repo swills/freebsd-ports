@@ -1,8 +1,8 @@
 # Created by: Svyatoslav Lempert <svyatoslav.lempert@gmail.com>
-# $FreeBSD: head/devel/ioncube/Makefile 488072 2018-12-22 07:48:22Z tobik $
+# $FreeBSD: head/devel/ioncube/Makefile 488756 2018-12-31 05:43:52Z tobik $
 
 PORTNAME=	ioncube
-DISTVERSION=	10.3.0
+DISTVERSION=	10.3.1
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.ioncube.com/loader_downloads/ \
 		http://downloads2.ioncube.com/loader_downloads/ \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/fleur/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/fleur/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	fleur
 DISTVERSION=	0.27-3 # Release 3 of Version 0.27
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libopenblas.so:math/openblas
 
-USES=		cmake:outsource,noninja fortran gnome localbase:ldflags tar:tgz
+USES=		cmake:noninja fortran gnome localbase:ldflags tar:tgz
 USE_GNOME=	libxml2
 
 FFLAGS=		-I${LOCALBASE}/include

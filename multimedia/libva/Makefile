@@ -1,9 +1,12 @@
-# $FreeBSD: head/multimedia/libva/Makefile 487267 2018-12-12 00:18:41Z jbeich $
+# $FreeBSD: head/multimedia/libva/Makefile 488413 2018-12-26 18:07:34Z jbeich $
 
 PORTNAME=	libva
 PORTVERSION=	2.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES+=	cf11abe5e1b9.patch:-p1 # for media-driver 18.4+
 
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	VAAPI wrapper and dummy driver

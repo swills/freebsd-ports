@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kdebugsettings/Makefile 487405 2018-12-14 05:07:04Z tcberner $
+# $FreeBSD: head/sysutils/kdebugsettings/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdebugsettings
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE application to enable/disable qCDebug
 
-USES=		cmake:outsource compiler:c++11-lang gettext kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	completion config configwidgets coreaddons dbusaddons \
 		ecm guiaddons i18n iconthemes itemviews kio widgetsaddons
 USE_QT=		core dbus gui testlib widgets \

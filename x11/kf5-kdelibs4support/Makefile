@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-kdelibs4support/Makefile 487595 2018-12-16 14:59:10Z tcberner $
+# $FreeBSD: head/x11/kf5-kdelibs4support/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	kdelibs4support
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -9,7 +9,7 @@ COMMENT=	KF5 porting aid from KDELibs4
 
 BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
 
-USES=		cmake:outsource compiler:c++11-lib gettext kde:5 qt:5 shebangfix \
+USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 shebangfix \
 		tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash dbusaddons doctools emoticons globalaccel guiaddons \

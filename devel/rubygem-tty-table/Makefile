@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-table/Makefile 464299 2018-03-12 20:43:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-table/Makefile 489032 2019-01-01 20:39:19Z sunpoet $
 
 PORTNAME=	tty-table
 PORTVERSION=	0.10.0
@@ -18,8 +18,9 @@ RUN_DEPENDS=	rubygem-equatable>=0.5.0:devel/rubygem-equatable \
 		rubygem-strings>=0.1.0:devel/rubygem-strings \
 		rubygem-tty-screen>=0.6.4:devel/rubygem-tty-screen
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

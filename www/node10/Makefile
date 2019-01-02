@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/node10/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/node10/Makefile 488625 2018-12-28 20:47:14Z bhughes $
 
 PORTNAME=	node
-PORTVERSION=	10.14.1
-PORTREVISION=	1
+PORTVERSION=	10.15.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/

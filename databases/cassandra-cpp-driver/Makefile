@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/databases/cassandra-cpp-driver/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/cassandra-cpp-driver/Makefile 488730 2018-12-30 18:18:17Z tcberner $
 
 PORTNAME=	cassandra-cpp-driver
 PORTVERSION=	2.10.0
@@ -13,13 +13,14 @@ LICENSE=	APACHE20
 
 LIB_DEPENDS=	libuv.so:devel/libuv
 
-USES=		cmake:outsource compiler:c++11-lang pkgconfig pathfix ssl
+USES=		cmake compiler:c++11-lang pkgconfig pathfix ssl
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	datastax
 GH_PROJECT=	cpp-driver
 
-CMAKE_ARGS=	-DCMAKE_INSTALL_LIBDIR:STRING=lib -DCASS_BUILD_STATIC:BOOL=ON
+CMAKE_ARGS=	-DCMAKE_INSTALL_LIBDIR:STRING=lib \
+		-DCASS_BUILD_STATIC:BOOL=ON
 
 PLIST_FILES=	include/cassandra.h \
 		lib/libcassandra.so \

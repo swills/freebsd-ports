@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/graphics/ogre3d/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/ogre3d/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	ogre3d
 PORTVERSION=	1.9.0
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libzzip.so:devel/zziplib \
 		libfreeimage.so:graphics/freeimage
 
 USE_LDCONFIG=	yes
-USES=		tar:bzip2 cmake:outsource pkgconfig compiler:c++11-lib
+USES=		tar:bzip2 cmake pkgconfig compiler:c++11-lib
 USE_SDL=	sdl
 USE_XORG=	xaw xrandr
 WRKSRC=		${WRKDIR}/sinbad-ogre-dd30349ea667

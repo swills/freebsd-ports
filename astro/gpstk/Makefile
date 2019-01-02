@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/astro/gpstk/Makefile 482357 2018-10-18 19:33:24Z swills $
+# $FreeBSD: head/astro/gpstk/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	gpstk
 PORTVERSION=	2.10.6
@@ -12,7 +12,7 @@ COMMENT=	Toolkit for developing GPS applications
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Kyle Evans <kevans@FreeBSD.org>
-# $FreeBSD: head/games/zdoom/Makefile 487303 2018-12-12 16:42:54Z linimon $
+# $FreeBSD: head/games/zdoom/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	zdoom
 PORTVERSION=	2.8.1
@@ -28,7 +28,7 @@ PORTSCOUT=	limit:^.+\.[1-9]{1,3}[1-8]?$$
 
 DATADIR=	${DMDIR}/${PORTNAME}
 
-USES=		cmake:outsource	gettext jpeg openal pkgconfig
+USES=		cmake	gettext jpeg openal pkgconfig
 USE_GNOME=	atk cairo gdkpixbuf2 gtk20 pango
 USE_SDL=	sdl2
 CMAKE_ARGS=	-DNO_FMOD:BOOL=ON

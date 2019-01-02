@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/sweeper/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/sweeper/Makefile 488723 2018-12-30 17:15:06Z tcberner $
 
 PORTNAME=	sweeper
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils kde kde-applications
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Cleans temporal files for KDE
 
-USES=		cmake:outsource kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 qt:5 tar:xz
 USE_KDE=	activities-stats auth bookmarks codecs config configwidgets \
 		coreaddons crash i18n kio service sonnet textwidgets \
 		widgetsaddons xmlgui

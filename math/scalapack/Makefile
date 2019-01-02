@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/scalapack/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/scalapack/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	scalapack
 PORTVERSION=	2.0.2
@@ -19,7 +19,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 CONFLICTS=	elmer-mathlibs-1*
 
 USE_LDCONFIG=	yes
-USES=		cmake fortran pathfix
+USES=		cmake:insource fortran pathfix
 CMAKE_ARGS_ST=	-DBUILD_STATIC_LIBS:BOOL=ON
 CMAKE_ARGS_SH=	-DBUILD_SHARED_LIBS:BOOL=ON
 CMAKE_ARGS=	${CMAKE_ARGS_ST}

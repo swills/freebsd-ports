@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pructl/Makefile 448365 2017-08-20 10:42:45Z rene $
+# $FreeBSD: head/devel/pructl/Makefile 488448 2018-12-26 21:13:42Z linimon $
 
 PORTNAME=	pructl
 PORTVERSION=	0.2
@@ -14,6 +14,7 @@ LICENSE=	BSD2CLAUSE
 LIB_DEPENDS=	libpru.so:devel/libpru
 
 USES=		cmake libedit
+USE_CSTD=	c99
 
 WRKSRC=		${WRKDIR}/rpaulo-pructl-ef9fa544e6a3
 

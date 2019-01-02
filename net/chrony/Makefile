@@ -1,8 +1,9 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/net/chrony/Makefile 485706 2018-11-23 20:46:27Z swills $
+# $FreeBSD: head/net/chrony/Makefile 488567 2018-12-27 20:41:54Z decke $
 
 PORTNAME=	chrony
 PORTVERSION=	3.4
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.tuxfamily.org/chrony/
 

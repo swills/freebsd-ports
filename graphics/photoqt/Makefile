@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/photoqt/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/photoqt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	photoqt
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Simple, powerful and good looking QT5 image viewer
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource compiler:c++11-lib desktop-file-utils \
+USES=		cmake compiler:c++11-lib desktop-file-utils \
 		localbase:ldflags qt:5
 USE_QT=		core declarative graphicaleffects gui multimedia network \
 		quickcontrols sql svg widgets xml \

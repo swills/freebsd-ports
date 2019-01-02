@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/qtoctave/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/qtoctave/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	qtoctave
 PORTVERSION=	0.10.1
@@ -17,7 +17,7 @@ RUN_DEPENDS=	octave:math/octave
 USE_QT=		designer gui network script svg xml \
 		qmake_build moc_build rcc_build uic_build \
 		linguisttools_build
-USES=		cmake qt:4
+USES=		cmake:insource qt:4
 CMAKE_ARGS+=	-DWITH_UseRPMTools:Bool=Off
 
 post-patch:

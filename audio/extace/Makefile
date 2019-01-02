@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/audio/extace/Makefile 466258 2018-04-02 20:04:07Z bapt $
+# $FreeBSD: head/audio/extace/Makefile 488429 2018-12-26 20:21:28Z linimon $
 
 PORTNAME=	extace
 PORTVERSION=	1.9.9
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libesd.so:audio/esound
 
-USES=		localbase libtool pkgconfig
+USES=		compiler:c++11-lang gnome libtool localbase pkgconfig
 USE_GNOME=	gtk20
 GNU_CONFIGURE=	yes
 LIBS+=		-lm

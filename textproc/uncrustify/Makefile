@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/textproc/uncrustify/Makefile 486260 2018-11-30 17:07:19Z amdmi3 $
+# $FreeBSD: head/textproc/uncrustify/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	uncrustify
 PORTVERSION=	0.68.1
@@ -19,7 +19,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USE_GITHUB=	yes
 GH_TAGNAME=	dbe32c0
 
-USES=		cmake:outsource
+USES=		cmake
 CMAKE_ARGS=	-DNoGitVersionString:BOOL=TRUE
 TEST_TARGET=	test
 

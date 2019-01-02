@@ -1,5 +1,5 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/deskutils/charmtimetracker/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/charmtimetracker/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	charmtimetracker
 DISTVERSION=	1.12.0
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain@qt5
 
-USES=		cmake:outsource compiler:c++11-lib pkgconfig qt:5
+USES=		cmake compiler:c++11-lib pkgconfig qt:5
 CMAKE_ARGS=	-DCharm_VERSION:STRING=${PORTVERSION}
 
 USE_GITHUB=	yes

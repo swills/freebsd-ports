@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@rtfm.jp>
-# $FreeBSD: head/devel/silentbob/Makefile 432760 2017-01-29 15:42:46Z tota $
+# $FreeBSD: head/devel/silentbob/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	silentbob
 PORTVERSION=	3.0
@@ -12,7 +12,7 @@ COMMENT=	Yet another sourcecode indexing tool
 
 LICENSE=	GPLv2
 
-USES=		cmake:outsource
+USES=		cmake
 
 PORTDOCS=	README
 PLIST_FILES=	bin/silentbob

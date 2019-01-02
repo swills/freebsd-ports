@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/bamtools/Makefile 465808 2018-03-28 13:26:31Z jwb $
+# $FreeBSD: head/biology/bamtools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	bamtools
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ LICENSE=	MIT
 
 LIB_DEPENDS+=	libjsoncpp.so:devel/jsoncpp
 
-USES=		cmake:outsource
+USES=		cmake
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	pezmaster31

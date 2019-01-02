@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/lxqt-policykit/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/lxqt-policykit/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	lxqt-policykit
 PORTVERSION=	0.13.0
@@ -15,7 +15,7 @@ LICENSE=	LGPL21+
 LIB_DEPENDS=	libpolkit-qt5-agent-1.so:sysutils/polkit-qt@qt5 \
 		libpolkit-agent-1.so:sysutils/polkit
 
-USES=	cmake:outsource compiler:c++11-lib gettext-runtime kde:5 qt:5 \
+USES=	cmake compiler:c++11-lib gettext-runtime kde:5 qt:5 \
 	localbase:ldflags lxqt pkgconfig tar:xz
 USE_QT=	buildtools_build qmake_build core dbus gui linguisttools \
 	svg widgets x11extras xml

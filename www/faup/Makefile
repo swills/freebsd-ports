@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/www/faup/Makefile 440611 2017-05-11 05:59:35Z antoine $
+# $FreeBSD: head/www/faup/Makefile 488341 2018-12-25 20:25:39Z tcberner $
 
 PORTNAME=	faup
 PORTVERSION=	1.5
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	stricaud
 
-USES=		cmake:outsource lua
+USES=		cmake lua
 USE_LDCONFIG=	yes
 
 PORTDOCS=	*
