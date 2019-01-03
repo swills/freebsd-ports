@@ -3,7 +3,7 @@
 
 PORTNAME=	mythtv
 DISTVERSIONPREFIX=	v
-DISTVERSION=	29.1
+DISTVERSION=	29.1-1088
 PORTREVISION?=	2
 PORTEPOCH=	1
 CATEGORIES=	multimedia
@@ -14,7 +14,7 @@ COMMENT?=	MythTV is a homebrew PVR project
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN=		fails to build
+#BROKEN=		fails to build
 ONLY_FOR_ARCHS=	amd64 i386
 
 LIB_DEPENDS=	libmp3lame.so:audio/lame \
@@ -26,11 +26,13 @@ LIB_DEPENDS=	libmp3lame.so:audio/lame \
 		libfftw3f.so:math/fftw3-float \
 		libfreetype.so:print/freetype2 \
 		libxml2.so:textproc/libxml2
-BUILD_DEPENDS=	yasm:devel/yasm
+BUILD_DEPENDS=	yasm:devel/yasm \
+                /usr/local/include/linux/input.h:devel/evdev-proto
 
 USES=		gmake iconv libtool pkgconfig pathfix qmake:no_env qt:5 ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	MythTV
+GH_TAGNAME=     cc25495 # master has v30-Pre compile fixes
 USE_GL=		gl
 USE_LDCONFIG=	yes
 USE_QT=		buildtools_build core dbus gui imageformats_run \
@@ -42,8 +44,8 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix="${PREFIX}" --cc="${CC}" --cxx="${CXX}" \
 		--libxml2-path="${LOCALBASE}/include/libxml2" \
 		--enable-opengl-video \
-		--disable-audio-alsa --disable-indev=alsa --disable-outdev=alsa \
-		--disable-mythlogserver
+		--disable-audio-alsa --disable-indev=alsa \
+                --disable-outdev=alsa
 CONFIGURE_ENV=	QMAKESPEC="${QMAKESPEC}" MOC="${MOC}" \
 		QTDIR="${PREFIX}" PKG_CONFIG_PATH="${LOCALBASE}/libdata/pkgconfig"
 MAKE_ENV=	QTDIR="${PREFIX}" \
