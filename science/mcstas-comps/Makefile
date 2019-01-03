@@ -1,10 +1,9 @@
-# Created by: Erik B Knudsen
 # $FreeBSD$
 
 PORTNAME=	mcstas-comps
-PORTVERSION=	2.2a
+PORTVERSION=	2.5
 CATEGORIES=	science
-MASTER_SITES=	http://download.mcstas.org/mcstas-${PORTVERSION}/unix/McStas-${PORTVERSION}-UNIX-src/
+MASTER_SITES=	http://download.mcstas.org/${PORTNAME}-${PORTVERSION}/unix/
 DISTNAME=	mcstas-comps-${PORTVERSION}-src
 
 MAINTAINER=	erkn@fysik.dtu.dk
@@ -14,10 +13,8 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	${LOCALBASE}/mcstas/${PORTVERSION}/bin/mcstas:science/mcstas
 
-USES=		cmake
-# Apparently cmake does not generate an install/strip target if nothing
-# is supposed to be stripped, so override the cmake-default install
-# target of install/strip by resetting STRIP
+USES=		cmake:noninja fortran shebangfix
+
 STRIP=		#none
 CMAKE_ARGS=	"-Denable_mcstas=1"
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
