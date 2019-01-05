@@ -537,6 +537,7 @@
     SUBDIR += nuvolaplayer-yandex-music
     SUBDIR += nuvolaplayer-youtube
     SUBDIR += obhttpd
+    SUBDIR += onionbalance
     SUBDIR += onionshare
     SUBDIR += opencart
     SUBDIR += opera
@@ -1503,6 +1504,7 @@
     SUBDIR += py-collective.easytemplate
     SUBDIR += py-collective.templateengines
     SUBDIR += py-cookies
+    SUBDIR += py-css-parser
     SUBDIR += py-cssmin
     SUBDIR += py-cssselect
     SUBDIR += py-cssutils
