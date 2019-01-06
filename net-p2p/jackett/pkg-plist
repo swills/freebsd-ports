@@ -1,3 +1,5 @@
+/you/have/to/check/what/makeplist/gives/you
+etc/rc.d/jackett
 %%DATADIR%%/AngleSharp.dll
 %%DATADIR%%/AutoMapper.dll
 %%DATADIR%%/Autofac.Extensions.DependencyInjection.dll
@@ -63,6 +65,7 @@
 %%DATADIR%%/Definitions/arabafenice.yml
 %%DATADIR%%/Definitions/archetorrent.yml
 %%DATADIR%%/Definitions/arenabg.yml
+%%DATADIR%%/Definitions/asiancinema.yml
 %%DATADIR%%/Definitions/asiandvdclub.yml
 %%DATADIR%%/Definitions/ast4u.yml
 %%DATADIR%%/Definitions/audiobookbay.yml
