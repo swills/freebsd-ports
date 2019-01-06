@@ -52,6 +52,10 @@ post-patch:
 		${FIREFOX_DESKTOP}
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \
 		${WRKSRC}/browser/app/nsBrowserApp.cpp
+# Disable vendor checksums
+	@${REINPLACE_CMD} -e \
+		's/"files":{[^}]*}/"files":{}/' \
+		${WRKSRC}/third_party/rust/*/.cargo-checksum.json
 
 pre-configure:
 	(cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf-2.13)
