@@ -1,10 +1,9 @@
 # Created by: Alexander Matey <matey@cis.ohio-state.edu>
-# $FreeBSD: head/x11/xxkb/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xxkb/Makefile 489498 2019-01-06 15:08:46Z tobik $
 
 PORTNAME=	xxkb
 PORTVERSION=	1.11.1
 CATEGORIES=	x11
-MASTER_SITES=	SF
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 

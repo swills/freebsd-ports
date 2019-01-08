@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-setlocale/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-setlocale/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	setlocale
-PORTVERSION=	1.0.0.6
+PORTVERSION=	1.0.0.8
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

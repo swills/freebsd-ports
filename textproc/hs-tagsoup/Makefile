@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/textproc/hs-tagsoup/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-tagsoup/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	tagsoup
 PORTVERSION=	0.14.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

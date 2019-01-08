@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 488808 2018-12-31 18:01:50Z rene $
+# $FreeBSD: head/audio/Makefile 489191 2019-01-03 17:18:18Z ehaupt $
 #
 
     COMMENT = Audio tools
@@ -52,6 +52,7 @@
     SUBDIR += autozen
     SUBDIR += avldrums-lv2
     SUBDIR += aylet
+    SUBDIR += bambootracker
     SUBDIR += baresip
     SUBDIR += baudline
     SUBDIR += bcg729

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/goonies/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/goonies/Makefile 489440 2019-01-06 07:56:48Z amdmi3 $
 
 PORTNAME=	goonies
 PORTVERSION=	1.4.1528
@@ -17,6 +17,7 @@ LICENSE=	NONE
 USES=		gmake tar:tgz
 USE_SDL=	sdl mixer image
 USE_GL=		gl glu
+USE_CXXSTD=	c++98
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

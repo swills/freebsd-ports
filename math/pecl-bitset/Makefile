@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/math/pecl-bitset/Makefile 451436 2017-10-07 09:12:52Z sunpoet $
+# $FreeBSD: head/math/pecl-bitset/Makefile 489108 2019-01-02 23:58:11Z sunpoet $
 
 PORTNAME=	bitset
 PORTVERSION=	3.0.1
@@ -11,7 +11,6 @@ COMMENT=	PECL extension for manipulating bitsets
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-IGNORE_WITH_PHP=56
 USES=		php:pecl
 
 .include <bsd.port.mk>

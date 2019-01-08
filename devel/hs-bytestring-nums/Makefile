@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-bytestring-nums/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-bytestring-nums/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	bytestring-nums
 PORTVERSION=	0.3.6
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

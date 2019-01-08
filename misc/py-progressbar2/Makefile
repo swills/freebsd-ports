@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/py-progressbar2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/misc/py-progressbar2/Makefile 489570 2019-01-07 10:33:38Z makc $
 
 PORTNAME=	progressbar2
-PORTVERSION=	3.36.0
+PORTVERSION=	3.39.2
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

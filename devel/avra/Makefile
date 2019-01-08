@@ -1,5 +1,5 @@
 # Created by: Wes Peters <@FreeBSD.org>
-# $FreeBSD: head/devel/avra/Makefile 398771 2015-10-07 16:35:55Z amdmi3 $
+# $FreeBSD: head/devel/avra/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	avra
 PORTVERSION=	1.3.0
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Macro Assembler for Atmel AVR microcontrollers
 
 LICENSE=	GPLv2 GPLv3

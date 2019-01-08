@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-streaming-commons/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-streaming-commons/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	streaming-commons
 PORTVERSION=	0.2.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

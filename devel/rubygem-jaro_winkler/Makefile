@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jaro_winkler/Makefile 476030 2018-07-31 23:42:59Z sunpoet $
+# $FreeBSD: head/devel/rubygem-jaro_winkler/Makefile 489407 2019-01-05 22:46:24Z sunpoet $
 
 PORTNAME=	jaro_winkler
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,7 +11,7 @@ COMMENT=	Jaro-Winkler distance algorithm implementation
 
 LICENSE=	MIT
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

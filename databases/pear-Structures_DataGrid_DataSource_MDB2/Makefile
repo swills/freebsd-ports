@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_MDB2/Makefile 487979 2018-12-21 10:40:39Z joneum $
+# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_MDB2/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	Structures_DataGrid_DataSource_MDB2
 PORTVERSION=	0.1.11
@@ -9,8 +9,6 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	DataSource driver using PEAR::MDB2 and an SQL query
 
 LICENSE=	BSD2CLAUSE
-
-IGNORE_WITH_PHP=	56
 
 BUILD_DEPENDS=	${PEARDIR}/Structures/DataGrid.php:devel/pear-Structures_DataGrid@${PHP_FLAVOR} \
 		${PEARDIR}/MDB2.php:databases/pear-MDB2@${PHP_FLAVOR}

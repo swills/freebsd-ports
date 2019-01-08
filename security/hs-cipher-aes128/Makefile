@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cipher-aes128/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/security/hs-cipher-aes128/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	cipher-aes128
-PORTVERSION=	0.7.0.3
-PORTREVISION=	3
+PORTVERSION=	0.7.0.4
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

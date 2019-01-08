@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/pecl-xdiff2/Makefile 465055 2018-03-20 02:20:07Z dbaio $
+# $FreeBSD: head/textproc/pecl-xdiff2/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	xdiff
 PORTVERSION=	2.0.1
@@ -13,7 +13,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libxdiff.so:textproc/libxdiff
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	56
 CONFLICTS=	pecl-xdiff-1*
 
 LDFLAGS+=	-L${LOCALBASE}/lib

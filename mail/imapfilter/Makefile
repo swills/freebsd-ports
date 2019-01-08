@@ -1,9 +1,8 @@
 # Created by: Lefteris Chatzibarbas <lefcha@hellug.gr>
-# $FreeBSD: head/mail/imapfilter/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/mail/imapfilter/Makefile 489223 2019-01-03 21:05:47Z bofh $
 
 PORTNAME=	imapfilter
-PORTVERSION=	2.6.11
-PORTREVISION=	1
+PORTVERSION=	2.6.12
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 
@@ -15,6 +14,7 @@ LICENSE=	MIT
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
 USES=		lua ssl
+
 CPPFLAGS+=	-I${LOCALBASE}/include -I${LUA_INCDIR}
 LDFLAGS+=	-L${LOCALBASE}/lib -L${LUA_LIBDIR}
 

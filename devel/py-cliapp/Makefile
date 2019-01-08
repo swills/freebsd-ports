@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-cliapp/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-cliapp/Makefile 489152 2019-01-03 09:57:41Z bapt $
 
 PORTNAME=	cliapp
-PORTVERSION=	1.20160724
-PORTREVISION=	1
+PORTVERSION=	1.20180812.1
 CATEGORIES=	devel
 MASTER_SITES=	http://git.liw.fi/cgi-bin/cgit/cgit.cgi/cliapp/snapshot/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

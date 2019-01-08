@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Lite/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/databases/p5-DBIx-Lite/Makefile 489134 2019-01-03 06:29:59Z wen $
 
 PORTNAME=	DBIx-Lite
-PORTVERSION=	0.31
+PORTVERSION=	0.32
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

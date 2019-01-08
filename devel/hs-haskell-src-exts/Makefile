@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-haskell-src-exts/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-haskell-src-exts/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	haskell-src-exts
-PORTVERSION=	1.20.2
+PORTVERSION=	1.21.0
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

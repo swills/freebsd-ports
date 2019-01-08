@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/pear-Horde_Image/Makefile 473560 2018-06-29 17:08:00Z joneum $
+# $FreeBSD: head/graphics/pear-Horde_Image/Makefile 489142 2019-01-03 09:05:15Z joneum $
 
 PORTNAME=	Horde_Image
-PORTVERSION=	2.5.3
+PORTVERSION=	2.5.4
 CATEGORIES=	graphics www pear
 PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 

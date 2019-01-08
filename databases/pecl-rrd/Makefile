@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pecl-rrd/Makefile 449402 2017-09-07 14:48:40Z jrm $
+# $FreeBSD: head/databases/pecl-rrd/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	rrd
 DISTVERSION=	2.0.1
@@ -10,7 +10,6 @@ COMMENT=	PHP bindings to rrd tool system
 
 LICENSE=	PHP301
 
-IGNORE_WITH_PHP=56
 LIB_DEPENDS=	librrd.so:databases/rrdtool
 USES=		php:pecl localbase pkgconfig
 

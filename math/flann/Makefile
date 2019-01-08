@@ -1,9 +1,9 @@
-# $FreeBSD: head/math/flann/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/flann/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	flann
 DISTVERSION=	1.9.1-19
 DISTVERSIONSUFFIX=	-gf3a17cd
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

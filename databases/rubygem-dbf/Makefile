@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-dbf/Makefile 481351 2018-10-06 09:35:55Z sunpoet $
+# $FreeBSD: head/databases/rubygem-dbf/Makefile 489597 2019-01-07 18:12:24Z sunpoet $
 
 PORTNAME=	dbf
-PORTVERSION=	3.1.3
+PORTVERSION=	4.0.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

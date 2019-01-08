@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/cinelerra-gg/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/cinelerra-gg/Makefile 489586 2019-01-07 17:02:15Z antoine $
 
 PORTNAME=	cinelerra-gg
 DISTVERSION=	5.1-20180714
@@ -49,7 +49,7 @@ EXTRA_PATCHES=	${BUILD_WRKSRC}/blds/bsd.patch:-p1
 
 REV=		502b6f3b6fd04f6b01c6d70dcb81aa304dd0db1c # git revision
 
-USES=		autoreconf gettext-runtime gettext-tools gmake iconv:wchar_t jpeg localbase makeinfo shebangfix
+USES=		autoreconf gettext-runtime gettext-tools gmake iconv:wchar_t jpeg localbase makeinfo python:2.7,build shebangfix
 SHEBANG_GLOB=	*.sh *.bld
 GNU_CONFIGURE=	yes
 USE_XORG=	x11 xau xdmcp xext xfixes xft xinerama xv

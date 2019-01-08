@@ -1,8 +1,8 @@
 # Created by: mainland@apeiron.net
-# $FreeBSD: head/textproc/hs-lhs2tex/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-lhs2tex/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	lhs2tex
-PORTVERSION=	1.20
+PORTVERSION=	1.22
 PORTREVISION=	1
 CATEGORIES=	textproc haskell
 

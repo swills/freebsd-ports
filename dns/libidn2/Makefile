@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/libidn2/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/dns/libidn2/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
 
 PORTNAME=	libidn2
-PORTVERSION=	2.0.5
-PORTREVISION=	1
+PORTVERSION=	2.1.0
 CATEGORIES=	dns
 MASTER_SITES=	GNU/libidn
 
@@ -15,13 +14,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libunistring.so:devel/libunistring
 
+USES=		charsetfix gmake iconv libtool localbase pathfix
+
 CONFIGURE_ARGS=	--disable-nls \
 		--with-libunistring-prefix=${LOCALBASE} \
 		ac_cv_prog_RONN=${TRUE}
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		charsetfix gmake iconv libtool localbase pathfix
 
 INFO=		libidn2
 

@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-IO-Compress/Makefile 488967 2019-01-01 20:33:23Z sunpoet $
+# $FreeBSD: head/archivers/p5-IO-Compress/Makefile 489534 2019-01-06 20:40:14Z sunpoet $
 
 PORTNAME=	IO-Compress
-PORTVERSION=	2.083
+PORTVERSION=	2.084
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

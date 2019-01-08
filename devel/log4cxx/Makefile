@@ -1,5 +1,5 @@
 # Created by: Thaddeus Covert <tcovert@grimmy.sahuagin.net>
-# $FreeBSD: head/devel/log4cxx/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/devel/log4cxx/Makefile 489181 2019-01-03 14:57:25Z linimon $
 
 PORTNAME=	log4cxx
 PORTVERSION=	0.10.0
@@ -18,11 +18,10 @@ LIB_DEPENDS=	libapr-1.so:devel/apr1
 
 GNU_CONFIGURE=	yes
 USES=		pathfix libtool
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 MAKE_JOBS_UNSAFE=	yes
-
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 OPTIONS_DEFINE=	BOOST DOXYGEN
 

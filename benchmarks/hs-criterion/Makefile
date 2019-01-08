@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/benchmarks/hs-criterion/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/benchmarks/hs-criterion/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	criterion
-PORTVERSION=	1.4.1.0
+PORTVERSION=	1.5.3.0
 PORTREVISION=	1
 CATEGORIES=	benchmarks haskell
 
@@ -12,9 +12,10 @@ COMMENT=	Robust, reliable performance measurement and analysis
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	aeson ansi-wl-pprint base-compat base-compat-batteries \
-		cassava code-page exceptions Glob js-flot js-jquery \
-		microstache mtl mwc-random optparse-applicative statistics \
-		transformers-compat vector vector-algorithms
+		cassava code-page criterion-measurement exceptions Glob \
+		js-flot js-jquery microstache mtl mwc-random \
+		optparse-applicative statistics transformers-compat vector \
+		vector-algorithms
 
 INSTALL_PORTEXAMPLES=	\
 	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}

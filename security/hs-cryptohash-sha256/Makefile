@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cryptohash-sha256/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/security/hs-cryptohash-sha256/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=      cryptohash-sha256
 PORTVERSION=   0.11.101.0
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=    security haskell
 
 MAINTAINER=    haskell@FreeBSD.org

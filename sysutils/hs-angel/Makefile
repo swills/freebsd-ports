@@ -1,14 +1,18 @@
-# $FreeBSD: head/sysutils/hs-angel/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/sysutils/hs-angel/Makefile 489492 2019-01-06 13:22:02Z arrowd $
 
 PORTNAME=	angel
 PORTVERSION=	0.6.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	sysutils haskell
 
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Process management and supervision daemon
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	No releases since 2016
+BROKEN=		Doesn't build with recent GHC
+EXPIRATION_DATE=	2019-01-31
 
 USE_CABAL=	configurator>=0.1 mtl old-locale optparse-applicative \
 		unordered-containers>=0.1.4

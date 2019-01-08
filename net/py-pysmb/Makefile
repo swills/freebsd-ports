@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-pysmb/Makefile 474385 2018-07-10 16:58:02Z rm $
+# $FreeBSD: head/net/py-pysmb/Makefile 489200 2019-01-03 19:02:16Z rm $
 
 PORTNAME=	pysmb
-PORTVERSION=	1.1.23
+PORTVERSION=	1.1.25
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP \
 		http://miketeo.net/files/Projects/${PORTNAME}/

@@ -1,8 +1,8 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-hangouts-chat/Makefile 479102 2018-09-06 15:25:09Z mfechner $
+# $FreeBSD: head/net/rubygem-hangouts-chat/Makefile 489252 2019-01-04 09:38:09Z mfechner $
 
 PORTNAME=	hangouts-chat
-PORTVERSION=	0.0.5
+PORTVERSION=	0.0.6
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

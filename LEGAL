@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: head/LEGAL 488786 2018-12-31 13:37:58Z rene $
+# $FreeBSD: head/LEGAL 489578 2019-01-07 15:01:42Z 0mp $
 #
 #    **********************************************************************
 #    ***                      NOTE TO COMMITTERS                        ***
@@ -243,3 +243,4 @@ charm-uiuc-*		net/charm		No commercial use: commercial use requires a commercial
 namd-*			science/namd		No commercial use: commercial use requires a commercial license
 vmd-*			science/vmd		No commercial use: commercial use requires a commercial license
 msms-*			science/msms		No commercial use, only for use by individuals in scientific research
+unifi-devel-*		net-mgmt/unifi-devel	License restrictions, see https://www.ubnt.com/eula/

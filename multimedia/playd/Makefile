@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <killasmurf86@gmail.com>
-# $FreeBSD: head/multimedia/playd/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/playd/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	playd
 PORTVERSION=	1.22.3
@@ -8,7 +8,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	http://files.bsdroot.lv/my/FreeBSD/distfiles/
 DISTNAME=	playd.sh-${PORTVERSION}
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Very easy-to-use mplayer sh wrapper script (supports playlists)
 
 LICENSE=	BSD3CLAUSE

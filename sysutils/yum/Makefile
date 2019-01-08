@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@rpm5.org>
-# $FreeBSD: head/sysutils/yum/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/yum/Makefile 489310 2019-01-05 09:13:17Z antoine $
 
 PORTNAME=	yum
 PORTVERSION=	3.4.3
@@ -12,6 +12,9 @@ COMMENT=	Installer/updater for rpm
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Abandoned upstream, does not work with python3
+EXPIRATION_DATE=	2019-02-06
 
 BUILD_DEPENDS=	bash:shells/bash \
 		intltool-update:textproc/intltool

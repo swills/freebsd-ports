@@ -1,15 +1,18 @@
 # Created by: Ville Eerola <ve@sci.fi>
-# $FreeBSD: head/mail/fetchmail/Makefile 485579 2018-11-22 01:52:39Z meta $
+# $FreeBSD: head/mail/fetchmail/Makefile 489439 2019-01-06 07:21:24Z cem $
 
 PORTNAME=	fetchmail
 PORTVERSION=	6.3.26
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF/${PORTNAME}/branch_6.3/ \
 		http://mandree.home.pages.de/${PORTNAME}/
 
-PATCH_SITES=	https://gitlab.com/fetchmail/fetchmail/commit/
-PATCHFILES=	9b8b634.patch:-p1
+PATCH_SITES=	https://gitlab.com/fetchmail/fetchmail/commit/:gitlab
+PATCH_SITES+=   https://src.fedoraproject.org/rpms/fetchmail/raw/master/f/:fedora
+PATCHFILES=	9b8b634.patch:-p1:gitlab  # SNI fix
+PATCHFILES+=    fetchmail-6.3.26-ssl-backport.patch:-p1:fedora
+
 
 MAINTAINER=	chalpin@cs.wisc.edu
 COMMENT=	Batch mail retrieval utility for IMAP/POP3/ETRN/ODMR

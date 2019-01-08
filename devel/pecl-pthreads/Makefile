@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-pthreads/Makefile 485511 2018-11-21 12:41:57Z joneum $
+# $FreeBSD: head/devel/pecl-pthreads/Makefile 489319 2019-01-05 10:21:56Z joneum $
 
 PORTNAME=	pthreads
 PORTVERSION=	3.1.6
@@ -13,7 +13,7 @@ LICENSE=	PHP301
 CFLAGS+=	-I${LOCALBASE}/include
 
 USES=		php:pecl
-IGNORE_WITH_PHP=56 71
+IGNORE_WITH_PHP=	71
 
 .include <bsd.port.options.mk>
 

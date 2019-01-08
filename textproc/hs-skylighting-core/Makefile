@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/hs-skylighting-core/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-skylighting-core/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	skylighting-core
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.5
 PORTREVISION=	1
 CATEGORIES=	textproc haskell
 

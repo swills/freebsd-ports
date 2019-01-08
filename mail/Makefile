@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 488895 2019-01-01 14:17:46Z rene $
+# $FreeBSD: head/mail/Makefile 489262 2019-01-04 19:02:36Z dvl $
 #
 
     COMMENT = Electronic mail utilities
@@ -316,6 +316,7 @@
     SUBDIR += p5-Email-Address
     SUBDIR += p5-Email-Address-List
     SUBDIR += p5-Email-Address-Loose
+    SUBDIR += p5-Email-Address-UseXS
     SUBDIR += p5-Email-Address-XS
     SUBDIR += p5-Email-AddressParser
     SUBDIR += p5-Email-Date

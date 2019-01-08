@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/devel/violet/Makefile 387370 2015-05-25 08:45:17Z wen $
+# $FreeBSD: head/devel/violet/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	violet
 PORTVERSION=	2.1.0
@@ -9,7 +9,7 @@ DISTNAME=	violetumleditor-${PORTVERSION}
 EXTRACT_SUFX=	.jar
 EXTRACT_ONLY=
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Violet is a easy to learn and use UML editor
 
 LICENSE=	GPLv2

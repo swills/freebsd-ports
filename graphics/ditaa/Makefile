@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/graphics/ditaa/Makefile 415371 2016-05-17 02:45:35Z amdmi3 $
+# $FreeBSD: head/graphics/ditaa/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	ditaa
 DISTVERSION=	0_9
@@ -7,7 +7,7 @@ CATEGORIES=	graphics java
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}${DISTVERSION}
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convert ASCII art diagrams into proper bitmap graphics
 
 LICENSE=	GPLv2

@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/hs-persistent/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/databases/hs-persistent/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	persistent
-PORTVERSION=	2.8.2
+PORTVERSION=	2.9.0
 PORTREVISION=	1
 CATEGORIES=	databases haskell
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-base-compat/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-base-compat/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	base-compat
-PORTVERSION=	0.10.1
+PORTVERSION=	0.10.5
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

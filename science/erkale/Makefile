@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/erkale/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/erkale/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	erkale
 DISTVERSION=	g20181121
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

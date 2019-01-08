@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/blitz++/Makefile 483825 2018-11-02 17:29:08Z antoine $
+# $FreeBSD: head/math/blitz++/Makefile 489574 2019-01-07 13:17:17Z antoine $
 
 PORTNAME=	blitz++
 PORTVERSION=	1.0.1
@@ -15,7 +15,7 @@ BROKEN_FreeBSD_12=	fails to compile: ../blitz/blitz.h:58:12: 'iostream.h' file n
 BROKEN_FreeBSD_13=	fails to compile: ../blitz/blitz.h:58:12: 'iostream.h' file not found
 
 GNU_CONFIGURE=	yes
-USES=		gmake libtool pathfix python
+USES=		gmake libtool pathfix python:2.7
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--enable-shared CXX_OPTIMIZE_FLAGS="${CFLAGS}"
 MAKE_JOBS_UNSAFE=	yes

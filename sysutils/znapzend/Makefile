@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/znapzend/Makefile 475581 2018-07-28 14:53:38Z miwi $
+# $FreeBSD: head/sysutils/znapzend/Makefile 489251 2019-01-04 09:30:23Z amdmi3 $
 
 PORTNAME=		znapzend
 PORTVERSION=		0.18.0
@@ -8,7 +8,8 @@ CATEGORIES=		sysutils
 MAINTAINER=	skalmanman@gmail.com
 COMMENT=	ZnapZend is a ZFS centric backup tool
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Pod-Simple>=0:textproc/p5-Pod-Simple \
 			p5-IO-Pipely>=0:devel/p5-IO-Pipely \
@@ -32,6 +33,7 @@ GH_ACCOUNT=	oetiker
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} --libdir=${SITE_PERL}
 CONFIGURE_ENV=	PERL5LIB=${SITE_PERL}
+NO_ARCH=	yes
 
 USE_RC_SUBR=	znapzend
 

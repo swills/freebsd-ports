@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/security/py-htpasswd/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/security/py-htpasswd/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	htpasswd
 PORTVERSION=	2008.03.05
@@ -8,7 +8,7 @@ CATEGORIES=	security python
 MASTER_SITES=	http://files.bsdroot.lv/my/FreeBSD/distfiles/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Replacement for htpasswd
 
 USES=		python shebangfix tar:xz

@@ -1,19 +1,20 @@
-# $FreeBSD: head/devel/cpptest/Makefile 464438 2018-03-13 22:24:58Z fernape $
+# $FreeBSD: head/devel/cpptest/Makefile 489606 2019-01-07 18:57:24Z fernape $
 
 PORTNAME=	cpptest
-PORTVERSION=	1.1.2
+PORTVERSION=	2.0.0
 CATEGORIES=	devel
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Unit testing framework for handling automated tests in C++
 
 LICENSE=	LGPL3
 
-GNU_CONFIGURE=	yes
-USES=		gmake libtool pathfix
-INSTALL_TARGET=	install-strip
+USES=		autoreconf gmake libtool pathfix
+USE_GITHUB=	yes
 USE_LDCONFIG=	yes
+
+GNU_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
 MAKE_ARGS=	CC=${CC} CCC=${CXX}
 
 .include <bsd.port.mk>

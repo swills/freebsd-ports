@@ -1,10 +1,9 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/sysutils/conky/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/conky/Makefile 489621 2019-01-07 23:27:11Z madpilot $
 
 PORTNAME=	conky
-PORTVERSION=	1.10.8
+PORTVERSION=	1.11.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -16,17 +15,17 @@ BUILD_DEPENDS=	db2x_xsltproc:textproc/docbook2X \
 		docbook-xsl>=0:textproc/docbook-xsl \
 		xsltproc:textproc/libxslt
 
-CONFLICTS?=	conky-awesome-[0-9]*
-SLAVEDIRS=	sysutils/conky-awesome
-
 USES=		cpe cmake:noninja compiler:c++11-lib gettext-runtime iconv \
 		localbase lua:51 pkgconfig tar:bzip2
+
 CMAKE_ARGS+=	-DBUILD_PORT_MONITORS:BOOL=false \
 		-DBUILD_IBM:BOOL=false \
 		-DBUILD_HDDTEMP:BOOL=false \
 		-DBUILD_IOSTATS:BOOL=false \
 		-DBUILD_AUDACIOUS:BOOL=false
+CONFLICTS?=	conky-awesome-[0-9]*
 
+SLAVEDIRS=	sysutils/conky-awesome
 PLIST_FILES=	bin/conky man/man1/conky.1.gz
 PORTEXAMPLES=	conky.conf conky_no_x11.conf convert.lua
 PORTDOCS=	html/config_settings.html html/docs.html html/lua.html html/variables.html

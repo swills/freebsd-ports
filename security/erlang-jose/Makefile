@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/erlang-jose/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/erlang-jose/Makefile 489301 2019-01-05 03:40:58Z vanilla $
 
 PORTNAME=	jose
-PORTVERSION=	1.8.4
+PORTVERSION=	1.9.0
 CATEGORIES=	security
 PKGNAMEPREFIX=	erlang-
 

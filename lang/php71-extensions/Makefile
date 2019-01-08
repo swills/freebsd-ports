@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/php71-extensions/Makefile 486751 2018-12-06 11:22:12Z rene $
+# $FreeBSD: head/lang/php71-extensions/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	php71
 PORTVERSION=	1.0
@@ -10,7 +10,7 @@ COMMENT=	"meta-port" to install PHP extensions
 
 USES=		metaport php
 PHP_VER=	71
-IGNORE_WITH_PHP=	56 72 73
+IGNORE_WITH_PHP=	72 73
 
 OPTIONS_DEFINE=	BCMATH BZ2 CALENDAR CTYPE CURL DBA \
 		DOM ENCHANT EXIF FILEINFO FILTER FTP GD GETTEXT \

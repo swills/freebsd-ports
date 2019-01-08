@@ -1,9 +1,8 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/mail/gnumail/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/mail/gnumail/Makefile 489394 2019-01-05 22:23:24Z swills $
 
 PORTNAME=	gnumail
-PORTVERSION=	1.2.3
-PORTREVISION=	2
+PORTVERSION=	1.3.0
 CATEGORIES=	mail gnustep
 MASTER_SITES=	SAVANNAH/gnustep-nonfsf/
 DISTNAME=	GNUMail-${PORTVERSION}
@@ -13,11 +12,13 @@ COMMENT=	GNUstep mail client
 
 LICENSE=	GPLv2
 
-USES=		cpe gnustep
-CPE_VENDOR=	gnu
-USE_GNUSTEP=	back build
 LIB_DEPENDS=	libPantomime.so:mail/pantomime \
 		libAddresses.so:mail/addresses
+
+USES=		cpe gnustep
+
+CPE_VENDOR=	gnu
+USE_GNUSTEP=	back build gui base
 USE_LDCONFIG=	${GNUSTEP_SYSTEM_LIBRARIES}
 
 .include <bsd.port.mk>

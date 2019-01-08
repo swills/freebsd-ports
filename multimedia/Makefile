@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 488894 2019-01-01 13:52:46Z rene $
+# $FreeBSD: head/multimedia/Makefile 489653 2019-01-08 08:29:44Z yuri $
 #
 
     COMMENT = Multimedia software
@@ -284,6 +284,7 @@
     SUBDIR += msdl
     SUBDIR += msopenh264
     SUBDIR += mswebrtc
+    SUBDIR += musikcube
     SUBDIR += mxflib
     SUBDIR += mythtv
     SUBDIR += mythtv-frontend
@@ -450,8 +451,6 @@
     SUBDIR += vdr-plugins
     SUBDIR += vid.stab
     SUBDIR += vlc
-    SUBDIR += vlc-qt4
-    SUBDIR += vlc3
     SUBDIR += vtkmpeg2encode
     SUBDIR += w_scan
     SUBDIR += webcamd

@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/hs-network-info/Makefile 476817 2018-08-10 09:15:15Z arrowd $
+# $FreeBSD: head/net/hs-network-info/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	network-info
 PORTVERSION=	0.2.0.10
+PORTREVISION=	1
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

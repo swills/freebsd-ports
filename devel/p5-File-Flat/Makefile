@@ -1,9 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-File-Flat/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-File-Flat/Makefile 489127 2019-01-03 02:51:37Z wen $
 
 PORTNAME=	File-Flat
-PORTVERSION=	1.04
-PORTREVISION=	3
+PORTVERSION=	1.05
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

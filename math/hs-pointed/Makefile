@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/hs-pointed/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/math/hs-pointed/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	pointed
-PORTVERSION=	5
-PORTREVISION=	3
+PORTVERSION=	5.0.1
+PORTREVISION=	1
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

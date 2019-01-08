@@ -1,8 +1,8 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django21/Makefile 486578 2018-12-04 02:33:14Z wen $
+# $FreeBSD: head/www/py-django21/Makefile 489305 2019-01-05 08:20:25Z wen $
 
 PORTNAME=	django
-PORTVERSION=	2.1.4
+PORTVERSION=	2.1.5
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		https://www.djangoproject.com/m/releases/${PORTVERSION}/
@@ -25,8 +25,7 @@ USE_PYTHON=	autoplist distutils
 SHEBANG_FILES=	django/bin/django-admin.py \
 		django/conf/project_template/manage.py-tpl
 
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}django18 ${PYTHON_PKGNAMEPREFIX}django11[01] \
-			${PYTHON_PKGNAMEPREFIX}django20
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}django111 ${PYTHON_PKGNAMEPREFIX}django20
 CPE_VENDOR=		djangoproject
 
 DOCSDIR=		${PREFIX}/share/doc/py-django

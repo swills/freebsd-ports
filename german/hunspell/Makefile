@@ -1,10 +1,10 @@
-# $FreeBSD: head/german/hunspell/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/german/hunspell/Makefile 489546 2019-01-06 20:41:16Z sunpoet $
 
 PORTNAME=	hunspell
 PORTVERSION=	20161207
 PORTREVISION=	1
 CATEGORIES=	german textproc
-MASTER_SITES=	http://www.j3e.de/ispell/igerman98/dict/ \
+MASTER_SITES=	https://www.j3e.de/ispell/igerman98/dict/ \
 		LOCAL/sunpoet/${PORTNAME}
 DISTNAME=	igerman98-${PORTVERSION}
 DIST_SUBDIR=	${PORTNAME}

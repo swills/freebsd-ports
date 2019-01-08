@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libsmdev/Makefile 487908 2018-12-20 19:38:48Z antoine $
+# $FreeBSD: head/devel/libsmdev/Makefile 489473 2019-01-06 12:17:57Z antoine $
 
 PORTNAME=	libsmdev
-DISTVERSION=	alpha-20181215
+DISTVERSION=	alpha-20181227
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libsmdev/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

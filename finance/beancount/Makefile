@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/beancount/Makefile 486600 2018-12-04 14:27:13Z nivit $
+# $FreeBSD: head/finance/beancount/Makefile 489488 2019-01-06 13:08:02Z tcberner $
 
 PORTNAME=	beancount
 PORTVERSION=	2.1.3
@@ -29,7 +29,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:www/py-beautifulsoup@${PY_F
 		${PYTHON_PKGNAMEPREFIX}python-magic>=0:devel/py-python-magic@${PY_FLAVOR}
 
 USES=		python:3.5+
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils noflavors
 
 # Project hosted on Bitbucket
 BB_ACCOUNT=	blais

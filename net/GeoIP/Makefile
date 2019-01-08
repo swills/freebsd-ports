@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/net/GeoIP/Makefile 487269 2018-12-12 00:28:52Z adamw $
+# $FreeBSD: head/net/GeoIP/Makefile 489642 2019-01-08 04:43:45Z adamw $
 
 PORTNAME=	GeoIP
 PORTVERSION=	1.6.12
@@ -13,6 +13,9 @@ COMMENT=	Find the country that any IP address or hostname originates from
 LICENSE=	GPLv2
 
 USES=		libtool pathfix
+
+DEPRECATED=	Legacy databases no longer available. Switch to GeoIP2 instead
+EXPIRATION_DATE=2019-02-01
 
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

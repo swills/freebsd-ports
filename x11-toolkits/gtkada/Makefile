@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtkada/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/x11-toolkits/gtkada/Makefile 489348 2019-01-05 15:34:06Z antoine $
 
 PORTNAME=	gtkada
 PORTVERSION=	2.24.4.0
@@ -34,7 +34,8 @@ OPTIONS_DEFINE=		DOCS NLS EXAMPLES
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDOCS}
-BUILD_DEPENDS+=	sphinx-build:textproc/py-sphinx
+BUILD_DEPENDS+=	sphinx-build-2.7:textproc/py-sphinx@py27
+BINARY_ALIAS+=	sphinx-build=sphinx-build-2.7
 .endif
 
 .if ${PORT_OPTIONS:MNLS}

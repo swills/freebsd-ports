@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/pecl-http/Makefile 486720 2018-12-05 20:01:10Z linimon $
+# $FreeBSD: head/www/pecl-http/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	http
 PORTVERSION=	3.2.0
@@ -14,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_mips=		fails to compile: pecl_http-3.1.0/src/php_http_etag.c:63:20: \#if with no expression
 BROKEN_mips64=		fails to compile: pecl_http-3.1.0/src/php_http_etag.c:63:20: \#if with no expression
-IGNORE_WITH_PHP=	56
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/pecl-raphf2@${PHP_FLAVOR} \
 		${LOCALBASE}/lib/php/${PHP_EXT_DIR}/propro.so:devel/pecl-propro2@${PHP_FLAVOR} \

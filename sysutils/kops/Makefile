@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/kops/Makefile 488320 2018-12-25 12:33:48Z danilo $
+# $FreeBSD: head/sysutils/kops/Makefile 489230 2019-01-03 22:17:21Z danilo $
 
 PORTNAME=	kops
-PORTVERSION=	1.10.1
+PORTVERSION=	1.11.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	danilo@FreeBSD.org

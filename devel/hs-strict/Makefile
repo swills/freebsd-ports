@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-strict/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-strict/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	strict
 PORTVERSION=	0.3.2
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

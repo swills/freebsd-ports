@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/pecl-oauth2/Makefile 482001 2018-10-13 17:51:22Z dbaio $
+# $FreeBSD: head/net/pecl-oauth2/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	oauth
 PORTVERSION=	2.0.3
@@ -14,7 +14,6 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpcre.so:devel/pcre
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	56
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

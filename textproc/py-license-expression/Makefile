@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/py-license-expression/Makefile 475534 2018-07-28 12:08:13Z miwi $
+# $FreeBSD: head/textproc/py-license-expression/Makefile 489382 2019-01-05 21:03:57Z swills $
 
 PORTNAME=	license-expression
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.98
+DISTVERSION=	0.99
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -12,7 +12,7 @@ COMMENT=	Parses, normalizes and compares license expressions
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/NOTICE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}boolean.py>=3.5:devel/py-boolean.py@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}boolean.py>=3.6:devel/py-boolean.py@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

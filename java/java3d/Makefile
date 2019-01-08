@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/java/java3d/Makefile 484256 2018-11-05 23:27:49Z linimon $
+# $FreeBSD: head/java/java3d/Makefile 489072 2019-01-02 09:32:49Z linimon $
 
 PORTNAME=	java3d
 PORTVERSION=	1.5.2
@@ -60,12 +60,10 @@ do-install:
 		${WRKSRC}/j3d-core/build/default/opt/lib/ext/j3dcore.jar \
 		${WRKSRC}/j3d-core/build/default/opt/lib/ext/j3dutils.jar \
 		${STAGEDIR}${JAVA_HOME}/jre/lib/ext
-.if ${ARCH} != powerpc64
 	@${MKDIR} ${STAGEDIR}${JAVA_HOME}/jre/lib/${ARCH}
 	${INSTALL} \
 		${WRKSRC}/j3d-core/build/default/opt/native/libj3dcore-ogl.so \
 		${STAGEDIR}${JAVA_HOME}/jre/lib/${ARCH}
-.endif
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

@@ -1,5 +1,5 @@
 # Created by: Patrick Tracanelli <eksffa@freebsdbrasil.com.br>
-# $FreeBSD: head/security/suricata/Makefile 488865 2019-01-01 11:17:53Z joneum $
+# $FreeBSD: head/security/suricata/Makefile 489241 2019-01-04 04:00:39Z jbeich $
 
 PORTNAME=	suricata
 DISTVERSION=	4.1.2
@@ -112,7 +112,7 @@ REDIS_CONFIGURE_ON=		--enable-hiredis \
 				--with-libhiredis-includes=${LOCALBASE}/include \
 				--with-libhiredis-libraries=${LOCALBASE}/lib
 
-RUST_BUILD_DEPENDS=		rustc:lang/rust
+RUST_BUILD_DEPENDS=		rustc:lang/${RUST_DEFAULT}
 RUST_CONFIGURE_ENABLE=		rust
 
 TESTS_CONFIGURE_ENABLE=		unittests

@@ -1,5 +1,5 @@
 # Created by: Lin, Cheng-Tao <b89605222@ntu.edu.tw>
-# $FreeBSD: head/x11/lxpanel/Makefile 460966 2018-02-05 09:02:15Z amdmi3 $
+# $FreeBSD: head/x11/lxpanel/Makefile 489579 2019-01-07 15:08:08Z rigoletto $
 
 PORTNAME=	lxpanel
 PORTVERSION=	0.9.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libmenu-cache.so:x11/menu-cache \
 		libkeybinder.so:x11/keybinder \
-		libfm-gtk.so:x11/libfm \
+		libfm-gtk.so:x11/libfm@gtk2 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 RUN_DEPENDS=	${LOCALBASE}/etc/xdg/menus/lxde-applications.menu:x11/lxmenu-data

@@ -1,9 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libsigscan/Makefile 487907 2018-12-20 19:37:23Z antoine $
+# $FreeBSD: head/devel/libsigscan/Makefile 489472 2019-01-06 12:16:56Z antoine $
 
 PORTNAME=	libsigscan
 # If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
-DISTVERSION=	experimental-20181215
+DISTVERSION=	experimental-20190103
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libsigscan/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

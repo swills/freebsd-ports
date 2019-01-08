@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/groopm/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/groopm/Makefile 489569 2019-01-07 09:44:42Z antoine $
 
 PORTNAME=	GroopM
 DISTVERSION=	0.3.4
@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}scipy>=0.10.1:science/py-scipy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tables>=2.3:devel/py-tables@${PY_FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils noflavors autoplist
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/libfm-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11/libfm-qt/Makefile 489579 2019-01-07 15:08:08Z rigoletto $
 
 PORTNAME=	libfm-qt
 PORTVERSION=	0.13.0
@@ -12,7 +12,7 @@ COMMENT=	Qt port of libfm
 
 LICENSE=	LGPL21+
 
-LIB_DEPENDS=	libfm.so:x11/libfm \
+LIB_DEPENDS=	libfm.so:x11/libfm@gtk2 \
 	libmenu-cache.so:x11/menu-cache \
 	libexif.so:graphics/libexif
 

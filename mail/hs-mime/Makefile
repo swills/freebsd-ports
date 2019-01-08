@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/mail/hs-mime/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/mail/hs-mime/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	mime
 PORTVERSION=	0.4.0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail haskell
 
 MAINTAINER=	haskell@FreeBSD.org

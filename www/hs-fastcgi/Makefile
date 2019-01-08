@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/www/hs-fastcgi/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-fastcgi/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	fastcgi
 PORTVERSION=	3001.0.2.4
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

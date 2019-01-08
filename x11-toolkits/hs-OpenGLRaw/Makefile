@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/hs-OpenGLRaw/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/x11-toolkits/hs-OpenGLRaw/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	OpenGLRaw
-PORTVERSION=	3.3.0.0
+PORTVERSION=	3.3.1.0
 PORTREVISION=	1
 CATEGORIES=	x11-toolkits haskell
 

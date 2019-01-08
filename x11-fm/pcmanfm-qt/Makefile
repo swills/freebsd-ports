@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-fm/pcmanfm-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11-fm/pcmanfm-qt/Makefile 489579 2019-01-07 15:08:08Z rigoletto $
 
 PORTNAME=	pcmanfm-qt
 PORTVERSION=	0.13.0
@@ -13,7 +13,7 @@ COMMENT=	LXQt file manager
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libmenu-cache.so:x11/menu-cache \
-		libfm.so:x11/libfm \
+		libfm.so:x11/libfm@gtk2 \
 		libexif.so:graphics/libexif
 
 USES=		cmake compiler:c++11-lib desktop-file-utils \

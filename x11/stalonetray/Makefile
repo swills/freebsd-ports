@@ -1,12 +1,12 @@
 # Created by: Stepan Zastupov [RedChrom] <redchrom@gmail.com>
-# $FreeBSD: head/x11/stalonetray/Makefile 388053 2015-05-31 09:36:08Z pawel $
+# $FreeBSD: head/x11/stalonetray/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	stalonetray
 PORTVERSION=	0.8.3
 CATEGORIES=	x11
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	STAnd-aLONE system tray
 
 LICENSE=	GPLv2

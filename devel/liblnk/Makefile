@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/liblnk/Makefile 487902 2018-12-20 19:31:31Z antoine $
+# $FreeBSD: head/devel/liblnk/Makefile 489459 2019-01-06 11:49:05Z antoine $
 
 PORTNAME=	liblnk
-PORTVERSION=	20181120
+PORTVERSION=	20181227
 DISTVERSIONPREFIX=	alpha-
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/liblnk/releases/download/${PORTVERSION}/ \

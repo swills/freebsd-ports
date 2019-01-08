@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/textproc/emacs-wiki/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/textproc/emacs-wiki/Makefile 489592 2019-01-07 17:48:36Z tobik $
 
 PORTNAME=	emacs-wiki
 PORTVERSION=	2.72
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://www.mwolson.org/static/dist/emacs-wiki/ \
 		http://dryice.name/computer/FreeBSD/distfiles/
@@ -12,8 +12,8 @@ PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Create and use hyperlinks and simple formatting in plain text files
 
-RUN_DEPENDS=	xml-parse.el${EMACS_PKGNAMESUFFIX}>0:textproc/xml-parse.el@${EMACS_FLAVOR}
-RUN_DEPENDS=	htmlize.el${EMACS_PKGNAMESUFFIX}>0:textproc/htmlize.el@${EMACS_FLAVOR}
+RUN_DEPENDS=	xml-parse.el${EMACS_PKGNAMESUFFIX}>0:textproc/xml-parse.el@${EMACS_FLAVOR} \
+		htmlize.el${EMACS_PKGNAMESUFFIX}>0:textproc/htmlize.el@${EMACS_FLAVOR}
 
 USES=		emacs makeinfo
 

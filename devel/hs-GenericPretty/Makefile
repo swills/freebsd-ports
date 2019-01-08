@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-GenericPretty/Makefile 476202 2018-08-01 21:53:17Z arrowd $
+# $FreeBSD: head/devel/hs-GenericPretty/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	GenericPretty
 DISTVERSION=	1.2.2
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	hello@blubee.me

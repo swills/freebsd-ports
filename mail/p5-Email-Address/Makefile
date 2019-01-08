@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Address/Makefile 463752 2018-03-06 20:31:51Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Address/Makefile 489261 2019-01-04 19:00:01Z pi $
 
 PORTNAME=	Email-Address
-PORTVERSION=	1.909
+PORTVERSION=	1.912
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,10 +13,6 @@ COMMENT=	RFC 2822 Address Parsing and Creation
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-# This port is still used by many ports
-DEPRECATED=	Deprecated by upstream
-EXPIRATION_DATE=2018-12-31
 
 USES=		perl5
 USE_PERL5=	configure

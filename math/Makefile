@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 488895 2019-01-01 14:17:46Z rene $
+# $FreeBSD: head/math/Makefile 489486 2019-01-06 12:48:28Z tcberner $
 #
 
     COMMENT = Mathematics
@@ -270,6 +270,7 @@
     SUBDIR += hs-contravariant
     SUBDIR += hs-data-lens
     SUBDIR += hs-data-lens-template
+    SUBDIR += hs-dense-linear-algebra
     SUBDIR += hs-distributive
     SUBDIR += hs-erf
     SUBDIR += hs-fixed

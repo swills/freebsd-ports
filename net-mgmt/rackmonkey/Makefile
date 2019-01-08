@@ -1,9 +1,8 @@
 # Created by: Eric F Crist <ecrist@secure-computing.net>
-# $FreeBSD: head/net-mgmt/rackmonkey/Makefile 469808 2018-05-13 19:02:18Z zi $
+# $FreeBSD: head/net-mgmt/rackmonkey/Makefile 489522 2019-01-06 19:26:03Z tobik $
 
 PORTNAME=	rackmonkey
 PORTVERSION=	1.2.5
-PORTREVISION=	1
 DISTVERSIONSUFFIX=	-1
 PORTREVISION=	5
 CATEGORIES=	net-mgmt www

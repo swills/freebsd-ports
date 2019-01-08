@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-hashdiff/Makefile 451592 2017-10-09 10:37:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-hashdiff/Makefile 489113 2019-01-02 23:58:37Z sunpoet $
 
 PORTNAME=	hashdiff
-PORTVERSION=	0.3.7
+PORTVERSION=	0.3.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	Diff lib to compute the smallest difference between two hashes
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

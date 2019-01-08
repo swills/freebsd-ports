@@ -1,10 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libfsntfs/Makefile 473872 2018-07-04 09:09:00Z antoine $
+# $FreeBSD: head/devel/libfsntfs/Makefile 489468 2019-01-06 12:11:23Z antoine $
 
 PORTNAME=	libfsntfs
 # If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
-DISTVERSION=	experimental-20170315
-PORTREVISION=	1
+DISTVERSION=	experimental-20190103
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libfsntfs/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

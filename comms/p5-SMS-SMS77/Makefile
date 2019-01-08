@@ -1,5 +1,5 @@
 # Created by: Frank Steinborn <steinex@nognu.de>
-# $FreeBSD: head/comms/p5-SMS-SMS77/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/comms/p5-SMS-SMS77/Makefile 489217 2019-01-03 20:11:39Z miwi $
 
 PORTNAME=	SMS-SMS77
 PORTVERSION=	0.01
@@ -8,7 +8,7 @@ CATEGORIES=	comms net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	steinex@nognu.de
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface and script to send SMS via SMS77.de
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/pecl-stats2/Makefile 465055 2018-03-20 02:20:07Z dbaio $
+# $FreeBSD: head/math/pecl-stats2/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	stats
 PORTVERSION=	2.0.3
@@ -11,7 +11,6 @@ LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	56
 CONFLICTS=	pecl-stats-1*
 
 PORTSCOUT=	limit:^2.*

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-vector-binary-instances/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-vector-binary-instances/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	vector-binary-instances
-PORTVERSION=	0.2.4
+PORTVERSION=	0.2.5.1
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

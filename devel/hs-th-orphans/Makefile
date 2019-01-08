@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-th-orphans/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-th-orphans/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	th-orphans
-PORTVERSION=	0.13.5
+PORTVERSION=	0.13.6
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

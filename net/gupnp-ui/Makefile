@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/net/gupnp-ui/Makefile 486270 2018-11-30 20:02:28Z sunpoet $
+# $FreeBSD: head/net/gupnp-ui/Makefile 489115 2019-01-02 23:58:48Z sunpoet $
 
 PORTNAME=	gupnp-ui
 PORTVERSION=	0.1.1
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libgupnp-1.2.so:net/gupnp \
 		libsoup-2.4.so:devel/libsoup
 RUN_DEPENDS=	gupnp>=0.3:net/gupnp
 
-USES=		gnome libtool pathfix pkgconfig python
+USES=		compiler:c++11-lang gnome libtool pathfix pkgconfig python
 USE_GNOME=	gtk20
 
 GNU_CONFIGURE=	yes

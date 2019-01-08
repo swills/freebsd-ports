@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/py-buildbot/Makefile 484380 2018-11-07 03:24:59Z koobs $
+# $FreeBSD: head/devel/py-buildbot/Makefile 489253 2019-01-04 10:16:00Z koobs $
 
 PORTNAME=	buildbot
 PORTVERSION=	1.5.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -29,7 +30,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}treq>0:www/py-treq@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}boto3>0:www/py-boto3@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>=2.0.0:devel/py-mock@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lz4>=0:archivers/py-lz4@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}buildbot-pkg>0:devel/py-buildbot-pkg@${PY_FLAVOR} 
+		${PYTHON_PKGNAMEPREFIX}buildbot-pkg>0:devel/py-buildbot-pkg@${PY_FLAVOR}
 # to be ported	${PYTHON_PKGNAMEPREFIX}pyjade>0:www/py-pyjade@${PY_FLAVOR}
 # to be ported  ${PYTHON_PKGNAMEPREFIX}moto>0:www/py-moto@${PY_FLAVOR}
 
@@ -37,7 +38,7 @@ USES=		python
 USE_RC_SUBR=	buildbot
 USE_PYTHON=	autoplist concurrent distutils
 
-SUB_LIST=	PYTHON_CMD=${PYTHON_CMD}
+SUB_LIST=	PYTHON_CMD=${PYTHON_CMD} PYTHON_VER=${PYTHON_VER}
 
 NO_ARCH=	yes
 

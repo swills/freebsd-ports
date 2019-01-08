@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/hs-aws/Makefile 475642 2018-07-29 10:40:28Z arrowd $
+# $FreeBSD: head/net/hs-aws/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	aws
 PORTVERSION=	0.20
+PORTREVISION=	1
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

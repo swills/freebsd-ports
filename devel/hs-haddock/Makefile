@@ -1,8 +1,8 @@
 # Created by: Oliver Braun <obraun@informatik.unibw-muenchen.de>
-# $FreeBSD: head/devel/hs-haddock/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-haddock/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	haddock
-PORTVERSION=	2.19.0.1
+PORTVERSION=	2.21.0
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

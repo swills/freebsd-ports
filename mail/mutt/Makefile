@@ -1,9 +1,9 @@
 # Created by: Udo Schweigert
-# $FreeBSD: head/mail/mutt/Makefile 488491 2018-12-26 23:46:01Z swills $
+# $FreeBSD: head/mail/mutt/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
 
 PORTNAME=	mutt
 DISTVERSION=	1.11.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES+=	mail ipv6
 MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/ \
 		ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/ \

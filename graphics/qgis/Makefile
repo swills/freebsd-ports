@@ -1,5 +1,5 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/graphics/qgis/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/qgis/Makefile 489603 2019-01-07 18:31:52Z antoine $
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
@@ -38,6 +38,7 @@ USE_QT=		corelib designer doc gui linguist_build moc_build \
 		network qmake_build rcc_build script sql sql-pgsql \
 		sql-sqlite3 svg testlib uic_build webkit xml
 USE_LDCONFIG=	yes
+BINARY_ALIAS=	pyrcc4=pyrcc4-${PYTHON_VER}
 
 ICON_SIZES=	8 16 22 24 32 36 42 48 64 72 80 96 128 192 256 512
 

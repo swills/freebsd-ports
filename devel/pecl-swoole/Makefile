@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-swoole/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/pecl-swoole/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	swoole
 PORTVERSION=	4.2.8
@@ -15,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USES=		compiler:c11 localbase:ldflags php:pecl ssl
 USE_PHP=	hash:build pcre
 
-IGNORE_WITH_PHP=	56
 CONFIGURE_ARGS+=	--enable-mysqlnd
 
 OPTIONS_DEFINE=	HTTP2 SOCKETS PGSQL

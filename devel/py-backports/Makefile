@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-backports/Makefile 455585 2017-12-05 15:00:03Z lifanov $
+# $FreeBSD: head/devel/py-backports/Makefile 489344 2019-01-05 14:44:20Z antoine $
 
 PORTNAME=	backports
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,7 +22,7 @@ USE_PYTHON=	flavors
 .if ${PYTHON_MAJOR_VER} == 2
 PLIST_FILES=	${PYTHON_SITELIBDIR}/backports/__init__.py \
 		${PYTHON_SITELIBDIR}/backports/__init__.pyc \
-		${PYTHON_SITELIBDIR}/backports/__init__.${PYTHON_PYOEXTENSION}
+		${PYTHON_SITELIBDIR}/backports/__init__.pyo
 .else
 PLIST_FILES=	${PYTHON_SITELIBDIR}/backports/__init__.py \
 		${PYTHON_SITELIBDIR}/backports/__pycache__/__init__.cpython-${PYTHON_SUFFIX}.pyc \

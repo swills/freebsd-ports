@@ -1,11 +1,10 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/security/libassuan/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/security/libassuan/Makefile 489180 2019-01-03 14:28:11Z jhale $
 
 PORTNAME=	libassuan
-PORTVERSION=	2.5.1
-PORTREVISION=	1
+PORTVERSION=	2.5.2
 CATEGORIES=	security devel
-MASTER_SITES=	GNUPG/${PORTNAME}
+MASTER_SITES=	GNUPG
 
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	IPC library used by GnuPG and gpgme
@@ -20,6 +19,7 @@ USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 INFO=		assuan
 

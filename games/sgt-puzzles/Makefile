@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/sgt-puzzles/Makefile 485560 2018-11-21 21:50:21Z amdmi3 $
+# $FreeBSD: head/games/sgt-puzzles/Makefile 489624 2019-01-08 00:24:54Z amdmi3 $
 
 PORTNAME=	puzzles
-PORTVERSION=	20181114
+PORTVERSION=	20181213
 CATEGORIES=	games
 MASTER_SITES=	http://www.chiark.greenend.org.uk/~sgtatham/puzzles/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -15,7 +15,7 @@ COMMENT=	Simon Tatham's Portable Puzzle Collection
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-COMMITHASH=	db3b531
+COMMITHASH=	ced51ad
 
 USES=		autoreconf gmake gnome pkgconfig
 GNU_CONFIGURE=	yes

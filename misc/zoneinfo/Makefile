@@ -1,11 +1,11 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/misc/zoneinfo/Makefile 484495 2018-11-09 02:38:04Z skreuzer $
+# $FreeBSD: head/misc/zoneinfo/Makefile 489506 2019-01-06 16:36:01Z skreuzer $
 
 PORTNAME=	zoneinfo
-DISTVERSION=	2018g
+DISTVERSION=	2018i
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.iana.org/tz/releases/ \
-		ftp://munnari.oz.au/pub/
+MASTER_SITES=	https://data.iana.org/time-zones/releases/ \
+		ftp://ftp.iana.org/tz/releases/
 DISTNAME=	tzdata${DISTVERSION}
 
 MAINTAINER=	skreuzer@FreeBSD.org

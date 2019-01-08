@@ -1,8 +1,8 @@
 # Created by: Michael Hsin <mhsin@mhsin.org>
-# $FreeBSD: head/x11-fonts/terminus-font/Makefile 454292 2017-11-15 20:54:46Z zeising $
+# $FreeBSD: head/x11-fonts/terminus-font/Makefile 489099 2019-01-02 22:58:59Z zeising $
 
 PORTNAME=	terminus-font
-PORTVERSION=	4.46
+PORTVERSION=	4.47
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}-${PORTVERSION}
 
@@ -13,7 +13,7 @@ LICENSE=	OFL11
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf
 
-USES=		gmake fonts python:build,3.4+ shebangfix
+USES=		gmake fonts python:build,3.5+ shebangfix
 NO_ARCH=	yes
 
 SHEBANG_FILES=	bin/*.py

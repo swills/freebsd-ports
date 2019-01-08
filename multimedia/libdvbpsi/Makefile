@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libdvbpsi/Makefile 464234 2018-03-12 08:33:11Z amdmi3 $
+# $FreeBSD: head/multimedia/libdvbpsi/Makefile 489179 2019-01-03 14:25:26Z bapt $
 
 PORTNAME=	libdvbpsi
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.videolan.org/pub/libdvbpsi/${PORTVERSION}/
 

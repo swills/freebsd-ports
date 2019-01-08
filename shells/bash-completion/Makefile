@@ -1,5 +1,5 @@
 # Created by: kirk@strauser.com
-# $FreeBSD: head/shells/bash-completion/Makefile 486143 2018-11-28 19:22:56Z sunpoet $
+# $FreeBSD: head/shells/bash-completion/Makefile 489413 2019-01-05 22:47:11Z sunpoet $
 
 PORTNAME=	bash-completion
 PORTVERSION=	2.8
@@ -14,6 +14,9 @@ LICENSE=	GPLv2+
 
 BROKEN_armv6=	fails to build: gmake: install-recursive: Error 1
 BROKEN_armv7=	fails to build: gmake: install-recursive: Error 1
+
+TEST_DEPENDS=	runtest:misc/dejagnu \
+		${LOCALBASE}/lib/tcllib/cmdline/cmdline.tcl:devel/tcllib
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
@@ -69,5 +72,10 @@ post-install-DOCS-on:
 
 post-install-FREEBSD-on:
 	cd ${WRKSRC}/freebsd/ && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_ARGS}
+
+do-test:
+.for test in runCompletion runInstall runUnit
+	-cd ${WRKSRC}/test && bash ${test}
+.endfor
 
 .include <bsd.port.mk>

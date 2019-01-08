@@ -1,8 +1,7 @@
-# $FreeBSD: head/science/py-openpiv/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/py-openpiv/Makefile 489571 2019-01-07 10:36:38Z makc $
 
 PORTNAME=	openpiv
-PORTVERSION=	0.20.9
-PORTREVISION=	1
+PORTVERSION=	0.21.0
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -30,6 +29,7 @@ GH_PROJECT=	openpiv-python
 post-patch:
 # Do not install supplementing data to allow concurrent installion
 	${REINPLACE_CMD} -e '/data_files = data_files,/d' ${WRKSRC}/setup.py
+	${REINPLACE_CMD} -e '/version/s,0.20.9,0.21.0,' ${WRKSRC}/setup.py
 
 .include <bsd.port.pre.mk>
 

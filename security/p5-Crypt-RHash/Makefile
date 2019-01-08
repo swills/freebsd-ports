@@ -1,8 +1,8 @@
 # Created by: perl@FreeBSD.org
-# $FreeBSD: head/security/p5-Crypt-RHash/Makefile 449465 2017-09-08 21:52:05Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-RHash/Makefile 489163 2019-01-03 11:21:01Z wen $
 
 PORTNAME=	Crypt-RHash
-PORTVERSION=	0.94
+PORTVERSION=	0.96
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/hs-heist/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-heist/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	heist
-PORTVERSION=	1.1
+PORTVERSION=	1.1.0.1
 PORTREVISION=	1
 CATEGORIES=	www haskell
 

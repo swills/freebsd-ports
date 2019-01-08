@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/ipfs-go/Makefile 480304 2018-09-21 19:16:11Z yuri $
+# $FreeBSD: head/sysutils/ipfs-go/Makefile 489638 2019-01-08 02:11:53Z jhixson $
 
 PORTNAME=	ipfs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.17
+DISTVERSION=	0.4.18
 PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/ipfs/go-ipfs/releases/download/v${DISTVERSION}/

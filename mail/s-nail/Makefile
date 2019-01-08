@@ -1,7 +1,8 @@
-# $FreeBSD: head/mail/s-nail/Makefile 488512 2018-12-27 08:10:32Z meta $
+# $FreeBSD: head/mail/s-nail/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
 
 PORTNAME=	s-nail
 PORTVERSION=	14.9.11
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	https://www.sdaoden.eu/downloads/
 

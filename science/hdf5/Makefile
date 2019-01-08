@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/science/hdf5/Makefile 488222 2018-12-23 16:54:24Z linimon $
+# $FreeBSD: head/science/hdf5/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	hdf5
-PORTVERSION=	1.10.2
-PORTREVISION=	1
+PORTVERSION=	1.10.4
 CATEGORIES=	science archivers graphics
 MASTER_SITES=	https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-${PORTVERSION:R}/${DISTNAME}/src/ \
 		LOCAL/sunpoet

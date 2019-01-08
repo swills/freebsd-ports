@@ -1,8 +1,8 @@
 # Created by: krion
-# $FreeBSD: head/x11/xterm/Makefile 488299 2018-12-25 08:09:41Z ehaupt $
+# $FreeBSD: head/x11/xterm/Makefile 489246 2019-01-04 07:04:44Z ehaupt $
 
 PORTNAME=	xterm
-PORTVERSION=	341
+PORTVERSION=	342
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.invisible-island.net/xterm/:src1 \
 		https://invisible-mirror.net/archives/xterm/:src1 \

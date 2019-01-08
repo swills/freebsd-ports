@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/moab/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/math/moab/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	moab
 DISTVERSION=	5.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

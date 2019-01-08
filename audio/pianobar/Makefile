@@ -1,14 +1,10 @@
 # Created by: John Hixson <john@pcbsd.org>
-# $FreeBSD: head/audio/pianobar/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/audio/pianobar/Makefile 489590 2019-01-07 17:37:07Z jhixson $
 
 PORTNAME=	pianobar
-PORTVERSION=	2017.08.30
-PORTREVISION=	3
+PORTVERSION=	2018.06.22
 CATEGORIES=	audio
 MASTER_SITES=	https://6xq.net/${PORTNAME}/
-
-PATCH_SITES=	https://github.com/PromyLOPh/${PORTNAME}/commit/
-PATCHFILES=	38b16f9957a7.patch:-p1
 
 MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Command-line Pandora online radio player

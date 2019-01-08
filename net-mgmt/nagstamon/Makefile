@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagstamon/Makefile 488234 2018-12-23 18:38:25Z ehaupt $
+# $FreeBSD: head/net-mgmt/nagstamon/Makefile 489616 2019-01-07 20:22:23Z ehaupt $
 
 PORTNAME=	nagstamon
-PORTVERSION=	3.2
+PORTVERSION=	3.2.1
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	https://nagstamon.ifw-dresden.de/files/stable/ \
 		LOCAL/ehaupt

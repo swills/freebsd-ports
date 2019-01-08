@@ -1,12 +1,12 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/lang/fasm/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/lang/fasm/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	fasm
 PORTVERSION=	1.73.02
 CATEGORIES=	lang devel
 MASTER_SITES=	http://flatassembler.net/
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Flat, multiple-pass assembler for IA-32 & x86-64 architectures
 
 LICENSE=	BSD2CLAUSE

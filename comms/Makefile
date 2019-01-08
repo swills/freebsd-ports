@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/comms/Makefile 489494 2019-01-06 13:33:31Z pi $
 #
 
     COMMENT = Communication utilities
@@ -164,6 +164,7 @@
     SUBDIR += seyon
     SUBDIR += sms_client
     SUBDIR += smstools3
+    SUBDIR += snap7
     SUBDIR += spandsp
     SUBDIR += splat
     SUBDIR += sredird

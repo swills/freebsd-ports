@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pooch/Makefile 484952 2018-11-14 21:43:29Z sunpoet $
+# $FreeBSD: head/devel/py-pooch/Makefile 489540 2019-01-06 20:40:45Z sunpoet $
 
 PORTNAME=	pooch
-PORTVERSION=	0.1
+PORTVERSION=	0.2.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

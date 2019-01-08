@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-RT-Client-REST/Makefile 485332 2018-11-19 17:17:38Z joneum $
+# $FreeBSD: head/www/p5-RT-Client-REST/Makefile 489133 2019-01-03 06:27:01Z wen $
 
 PORTNAME=	RT-Client-REST
-PORTVERSION=	0.54
+PORTVERSION=	0.55
 PORTEPOCH=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN

@@ -1,8 +1,7 @@
-# Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 475228 2018-07-24 07:29:42Z wen $
+# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 489435 2019-01-06 03:16:50Z swills $
 
 PORTNAME=	pysmi
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.3
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP \
 		SF/pysmi/pysmi/${PORTVERSION}
@@ -17,9 +16,10 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}snmp4>=0:net-mgmt/py-snmp4@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

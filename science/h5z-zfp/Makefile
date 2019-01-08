@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/h5z-zfp/Makefile 487783 2018-12-19 02:19:38Z yuri $
+# $FreeBSD: head/science/h5z-zfp/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	h5z-zfp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

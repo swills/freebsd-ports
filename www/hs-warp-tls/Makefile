@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-warp-tls/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-warp-tls/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	warp-tls
 PORTVERSION=	3.2.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

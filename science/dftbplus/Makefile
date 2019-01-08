@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dftbplus/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/dftbplus/Makefile 489347 2019-01-05 15:14:26Z antoine $
 
 PORTNAME=	dftbplus
 DISTVERSION=	18.2
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libomp.so:devel/openmp
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		fortran gmake python shebangfix
+USES=		fortran gmake python:2.7 shebangfix
 SHEBANG_FILES=	tools/dptools/bin/* tools/misc/* utils/srcmanip/* utils/build/* external/fypp/bin/* utils/get_opt_externals \
 		external/fypp/bin/fypp utils/test/testlist_to_fypp test/prog/dftb+/bin/tagdiff
 SHEBANG_GLOB=	*.py

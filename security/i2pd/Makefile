@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/security/i2pd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/security/i2pd/Makefile 489584 2019-01-07 16:48:26Z tobik $
 
 PORTNAME=	i2pd
 PORTVERSION=	2.22.0
@@ -40,7 +40,6 @@ AVX_CMAKE_BOOL=		WITH_AVX
 UPNP_DESC=		Include support for UPnP client
 UPNP_CMAKE_BOOL=	WITH_UPNP
 UPNP_LIB_DEPENDS=	libminiupnpc.so:net/miniupnpc
-UPNP_DESC=		Include support for UPnP client
 HARDENING_CMAKE_BOOL=	WITH_HARDENING
 HARDENING_DESC=		Use hardening compiler flags
 

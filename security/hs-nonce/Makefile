@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-nonce/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/security/hs-nonce/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	nonce
 PORTVERSION=	1.0.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

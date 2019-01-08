@@ -1,9 +1,9 @@
 # Created by: fabian.freyer@physik.tu-berlin.de
-# $FreeBSD: head/www/caddy/Makefile 469642 2018-05-11 14:45:34Z swills $
+# $FreeBSD: head/www/caddy/Makefile 489328 2019-01-05 12:05:12Z swills $
 
 PORTNAME=	caddy
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.11.0
+DISTVERSION=	0.11.1
 CATEGORIES=	www
 
 MAINTAINER=	fabian.freyer@physik.tu-berlin.de

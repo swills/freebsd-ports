@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-ce/Makefile 488215 2018-12-23 12:49:25Z mfechner $
+# $FreeBSD: head/www/gitlab-ce/Makefile 489075 2019-01-02 10:47:00Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.6.0
+PORTVERSION=	11.6.1
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -219,7 +219,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	075f96092a74849cdfaacd6912fe66376599989d
+GL_COMMIT=	598c5a7b9ddc0afbd0890d79c82088b80d706483
 
 USERS=	git
 GROUPS=	git

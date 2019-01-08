@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_DataObject/Makefile 487976 2018-12-21 10:31:30Z joneum $
+# $FreeBSD: head/databases/pear-Structures_DataGrid_DataSource_DataObject/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	Structures_DataGrid_DataSource_DataObject
 PORTVERSION=	0.2.1
@@ -9,8 +9,6 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	DataSource driver using PEAR::DB_DataObject
 
 LICENSE=	BSD2CLAUSE
-
-IGNORE_WITH_PHP=	56
 
 BUILD_DEPENDS=	${PEARDIR}/Structures/DataGrid.php:devel/pear-Structures_DataGrid@${PHP_FLAVOR} \
 		${PEARDIR}/DB/DataObject.php:databases/pear-DB_DataObject@${PHP_FLAVOR}

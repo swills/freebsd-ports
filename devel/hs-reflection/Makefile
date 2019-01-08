@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-reflection/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-reflection/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	reflection
-PORTVERSION=	2.1.3
+PORTVERSION=	2.1.4
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

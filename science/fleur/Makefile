@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/fleur/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/fleur/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	fleur
 DISTVERSION=	0.27-3 # Release 3 of Version 0.27
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science
 MASTER_SITES=	http://www.flapw.de/pm/uploads/FLEUR/
 DISTNAME=	fleurMaXR${DISTVERSION:C/.*-//}

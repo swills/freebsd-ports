@@ -1,8 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-hint/Makefile 475642 2018-07-29 10:40:28Z arrowd $
+# $FreeBSD: head/devel/hs-hint/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	hint
-PORTVERSION=	0.8.0
+PORTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

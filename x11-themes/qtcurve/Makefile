@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/qtcurve/Makefile 488805 2018-12-31 17:35:59Z rene $
+# $FreeBSD: head/x11-themes/qtcurve/Makefile 489100 2019-01-02 23:30:55Z adridg $
 
 PORTNAME=	qtcurve
 DISTVERSION=	1.9.0-rc1
@@ -43,6 +43,7 @@ WITH_${QTCURVE_SLAVE}=	On
 CMAKE_ARGS+=	-DENABLE_GTK2=${WITH_gtk2} \
 		-DENABLE_QT4=${WITH_qt4} \
 		-DENABLE_QT5=${WITH_qt5} \
+		-DQTC_QT4_ENABLE_KDE=Off \
 		-DQTC_QT5_ENABLE_KDE=${WITH_kf5}
 LDFLAGS+=	-L${LOCALBASE}/lib
 

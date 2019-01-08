@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/hs-parsec-numbers/Makefile 481625 2018-10-09 12:03:07Z arrowd $
+# $FreeBSD: head/textproc/hs-parsec-numbers/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	parsec-numbers
 PORTVERSION=	0.1.0
+PORTREVISION=	1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

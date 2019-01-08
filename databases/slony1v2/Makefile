@@ -1,5 +1,5 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/databases/slony1v2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/slony1v2/Makefile 489584 2019-01-07 16:48:26Z tobik $
 
 PORTNAME=	slony1v2
 PORTVERSION=	2.2.6
@@ -32,7 +32,6 @@ CONFLICTS?=	slony1-1*
 
 CONFIGURE_ENV+=	FLEX=${LOCALBASE}/bin/flex
 
-PERLTOOLS_DESC=	Install perl configuration tools
 PERLTOOLS_USES=	perl5
 PERLTOOLS_CONFIGURE_ENV=	PERL=${PERL}
 PERLTOOLS_CONFIGURE_ON=		--with-perltools=${LOCALBASE}/sbin

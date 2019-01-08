@@ -1,11 +1,10 @@
 # Created by: joes@seaport.net
-# $FreeBSD: head/comms/qpage/Makefile 468307 2018-04-25 22:00:04Z mat $
+# $FreeBSD: head/comms/qpage/Makefile 489498 2019-01-06 15:08:46Z tobik $
 
 PORTNAME=	qpage
 PORTVERSION=	3.3
 PORTREVISION=	8
 CATEGORIES=	comms
-MASTER_SITES=	http://www.qpage.org/download/
 MASTER_SITES=	http://tomiii.com/qpage/qpage.org/download/
 
 MAINTAINER=	rand@iteris.com

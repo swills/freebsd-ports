@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/avogadro2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/avogadro2/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	avogadro2
 DISTVERSION=	1.91.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

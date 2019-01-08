@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/lximage-qt/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/lximage-qt/Makefile 489579 2019-01-07 15:08:08Z rigoletto $
 
 PORTNAME=	lximage-qt
 PORTVERSION=	0.7.0
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libexif.so:graphics/libexif \
 	libmenu-cache.so:x11/menu-cache \
-	libfm.so:x11/libfm
+	libfm.so:x11/libfm@gtk2
 
 USES=	cmake compiler:c++11-lib desktop-file-utils gettext-runtime \
 	localbase:ldflags lxqt pkgconfig qt:5 tar:xz

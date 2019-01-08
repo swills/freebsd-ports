@@ -1,5 +1,5 @@
 # Created by: Javier Martin Rueda <jmrueda@diatel.upm.es>
-# $FreeBSD: head/www/moodle34/Makefile 486726 2018-12-05 23:55:39Z wen $
+# $FreeBSD: head/www/moodle34/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	moodle
 PORTVERSION=	3.4.6
@@ -17,8 +17,6 @@ EXPIRATION_DATE=2019-03-03
 
 CONFLICTS=	moodle31-3.1.[0-9]* moodle33-3.3.[0-9]* moodle35-3.5.[0-9]* \
 		moodle36-3.6.[0-9]*
-
-IGNORE_WITH_PHP=	56
 
 USES=		cpe php:flavors tar:tgz
 USE_PHP=	ctype curl dom fileinfo gd hash iconv intl json mbstring \

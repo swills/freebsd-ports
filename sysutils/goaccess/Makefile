@@ -1,8 +1,8 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/sysutils/goaccess/Makefile 480854 2018-09-28 12:00:33Z adamw $
+# $FreeBSD: head/sysutils/goaccess/Makefile 489227 2019-01-03 21:40:51Z adamw $
 
 PORTNAME=	goaccess
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://tar.goaccess.io/
@@ -23,17 +23,20 @@ LDFLAGS+=	-L${NCURSESLIB} -L${LOCALBASE}/lib
 
 PORTDOCS=	AUTHORS COPYING ChangeLog NEWS README TODO
 
-OPTIONS_DEFINE=	DOCS DEBUG UTF8
+OPTIONS_DEFINE=	DOCS DEBUG NLS UTF8
 OPTIONS_DEFAULT=	GEOIP UTF8
 OPTIONS_RADIO=	GEOIPDB TOKYOCABINET
 OPTIONS_RADIO_GEOIPDB=	GEOIP GEOIP2
 OPTIONS_RADIO_TOKYOCABINET=	TOKYOCABINET_BTREE TOKYOCABINET_MHASH
+OPTIONS_SUB=	yes
 
 GEOIPDB_DESC=	GeoIP IP location support
 GEOIP_DESC=	Legacy/free database format
 GEOIP2_DESC=	New/paid database format
 
 DEBUG_CONFIGURE_ON=	--enable-debug
+NLS_CONFIGURE_ENABLE=	nls
+NLS_USES=		gettext-runtime
 UTF8_CONFIGURE_ON=	--enable-utf8
 
 GEOIP_CONFIGURE_ON=	--enable-geoip=legacy
@@ -54,7 +57,7 @@ do-install-DOCS-on:
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 post-install:
-	${MV} ${STAGEDIR}${PREFIX}/etc/${PORTNAME}.conf \
-		${STAGEDIR}${PREFIX}/etc/${PORTNAME}.conf.sample
+	${MV} ${STAGEDIR}${ETCDIR}/${PORTNAME}.conf \
+		${STAGEDIR}${ETCDIR}/${PORTNAME}.conf.sample
 
 .include <bsd.port.mk>

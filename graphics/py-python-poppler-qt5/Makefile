@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-python-poppler-qt5/Makefile 488564 2018-12-27 20:10:30Z tcberner $
+# $FreeBSD: head/graphics/py-python-poppler-qt5/Makefile 489069 2019-01-02 09:20:02Z linimon $
 
 PORTNAME=	python-poppler-qt5
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5
 
-USES=		pkgconfig pyqt:5 python:3.4+ qmake qt:5
+USES=		compiler:c++11-lang pkgconfig pyqt:5 python:3.4+ qmake qt:5
 USE_PYQT=	gui xml sip_build
 USE_PYTHON=	distutils autoplist
 USE_GITHUB=	yes

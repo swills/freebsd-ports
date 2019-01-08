@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <graudeejs@gmail.com>
-# $FreeBSD: head/databases/sql-workbench/Makefile 435642 2017-03-07 19:24:22Z rene $
+# $FreeBSD: head/databases/sql-workbench/Makefile 489346 2019-01-05 14:46:29Z zi $
 
 PORTNAME=	sql-workbench
 PORTVERSION=	118
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.sql-workbench.net/ \
 	http://www.sql-workbench.net/archive/
 DISTNAME=	Workbench-Build${PORTVERSION}
 
-MAINTAINER=	graudeejs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	DBMS-independent, cross-platform SQL query tool
 
 LICENSE=	APACHE20

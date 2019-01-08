@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-xml-hamlet/Makefile 476586 2018-08-07 09:37:58Z amdmi3 $
+# $FreeBSD: head/textproc/hs-xml-hamlet/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	xml-hamlet
 PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

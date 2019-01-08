@@ -1,7 +1,8 @@
-# $FreeBSD: head/finance/fava/Makefile 486603 2018-12-04 14:31:03Z nivit $
+# $FreeBSD: head/finance/fava/Makefile 489504 2019-01-06 16:29:22Z nivit $
 
 PORTNAME=	fava
 PORTVERSION=	1.9
+PORTREVISION=	1
 CATEGORIES=	finance
 MASTER_SITES=	CHEESESHOP
 
@@ -20,9 +21,10 @@ RUN_DEPENDS=	beancount>=2.1.2:finance/beancount \
 		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}markdown2>0:textproc/py-markdown2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ply>0:devel/py-ply@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python:3.5+  # same as finance/beancount
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils noflavors
 
 .include <bsd.port.mk>

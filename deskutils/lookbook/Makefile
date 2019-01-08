@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/lookbook/Makefile 477948 2018-08-24 08:59:53Z tobik $
+# $FreeBSD: head/deskutils/lookbook/Makefile 489174 2019-01-03 13:49:07Z tobik $
 
 PORTNAME=	lookbook
 DISTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	greg@unrelenting.technology

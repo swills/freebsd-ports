@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/kile/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/editors/kile/Makefile 489226 2019-01-03 21:20:10Z adridg $
 
 PORTNAME=	kile
 DISTVERSIONPREFIX=	v
@@ -27,8 +27,6 @@ SHEBANG_FILES=	*.pl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kde
-
-CONFLICTS_INSTALL=	kile-kde4
 
 OPTIONS_DEFINE=	DOCS
 
