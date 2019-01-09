@@ -24,7 +24,7 @@
        default:
 -        path: /home/git/repositories/
 -        gitaly_address: unix:/home/git/gitlab/tmp/sockets/private/gitaly.socket # TCP connections are supported too (e.g. tcp://host:port)
-+        path: /usr/home/git/repositories/
++        path: /usr/local/git/repositories/
 +        gitaly_address: unix:%%PREFIX%%/www/gitlab-ce/tmp/sockets/private/gitaly.socket # TCP connections are supported too (e.g. tcp://host:port)
          # gitaly_token: 'special token' # Optional: override global gitaly.token for this storage.
  

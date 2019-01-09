@@ -3,6 +3,7 @@
 
 PORTNAME=	gitlab-shell
 PORTVERSION=	8.4.3
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	mfechner@FreeBSD.org

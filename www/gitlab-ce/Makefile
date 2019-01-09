@@ -3,6 +3,7 @@
 
 PORTNAME=	gitlab-ce
 PORTVERSION=	11.6.1
+PORTREVISION=	3
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -201,6 +202,11 @@ BUILD_DEPENDS=	gem:devel/ruby-gems \
 	${MY_DEPENDS}
 
 RUN_DEPENDS=	${MY_DEPENDS}
+
+CONFLICTS_INSTALL=	gitolite-* \
+			gitolite2-* \
+			gogs-* \
+			${PYTHON_PKGNAMEPREFIX}-gitosis-*
 
 OPTIONS_SINGLE=	DATABASE
 OPTIONS_SINGLE_DATABASE=	PGSQL MYSQL
