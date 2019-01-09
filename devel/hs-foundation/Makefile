@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-foundation/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-foundation/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	foundation
-PORTVERSION=	0.0.20
+PORTVERSION=	0.0.21
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 
@@ -11,6 +11,10 @@ COMMENT=	A custom prelude with no dependencies apart from base
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	basement
+
+post-extract:
+	${ECHO} "import Distribution.Simple" > ${WRKSRC}/Setup.hs
+	${ECHO} "main = defaultMain" >>  ${WRKSRC}/Setup.hs
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

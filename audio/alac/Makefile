@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/alac/Makefile 434860 2017-02-26 11:38:45Z ehaupt $
+# $FreeBSD: head/audio/alac/Makefile 489481 2019-01-06 12:26:02Z tobik $
 
 PORTNAME=	alac
 PORTVERSION=	0.0.7
@@ -20,7 +20,6 @@ OPTIONS_SUB=	yes
 
 GH_ACCOUNT=	mikebrady
 
-OPTIONS_DEFINE=	CONVERTER
 OPTIONS_DEFINE=	CONVERTER
 CONVERTER_DESC=	Build with command-line utility to read and write audio data
 OPTIONS_DEFAULT=CONVERTER

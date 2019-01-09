@@ -1,18 +1,21 @@
 # Created by: Michael Ranner
-# $FreeBSD: head/irc/kvirc/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/irc/kvirc/Makefile 489165 2019-01-03 11:37:38Z adridg $
 
 PORTNAME=	KVIrc
-DISTVERSION=	5.0.0-beta1
+DISTVERSION=	5.0.0
 CATEGORIES=	irc kde
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	IRC client for KDE
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/doc/ABOUT-LICENSE
+
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libenchant.so:textproc/enchant
 
 USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext gnome \
-		kde:5 perl5 pkgconfig python qt:5 ssl tar:bzip2
+		kde:5 perl5 pkgconfig python:2.7 qt:5 ssl tar:bzip2
 USE_GNOME=	glib20
 USE_PERL5=	build
 USE_KDE=	auth codecs config configwidgets coreaddons i18n notifications \
@@ -26,6 +29,6 @@ USE_GITHUB=	yes
 
 CMAKE_ARGS=	-DMANDIR:STRING=man
 
-PLIST_SUB=	VER=4.9
+PLIST_SUB=	VER=5.0
 
 .include <bsd.port.mk>

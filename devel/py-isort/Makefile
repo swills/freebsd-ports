@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-isort/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-isort/Makefile 489399 2019-01-05 22:45:41Z sunpoet $
 
 PORTNAME=	isort
 PORTVERSION=	4.3.4
@@ -16,8 +16,9 @@ RUN_DEPENDS=	${PY_FUTURES}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USE_PYTHON=	autoplist concurrent distutils
 USES=		python
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

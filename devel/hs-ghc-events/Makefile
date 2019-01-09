@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-ghc-events/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-ghc-events/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	ghc-events
-PORTVERSION=	0.7.2
+PORTVERSION=	0.8.0.1
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

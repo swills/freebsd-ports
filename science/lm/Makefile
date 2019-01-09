@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/lm/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/lm/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	lm
 DISTVERSION=	2.3.0
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	science
 MASTER_SITES=	http://scs.illinois.edu/schulten/${PORTNAME}/download/${PORTNAME}${DISTVERSION:R:S/.//}/

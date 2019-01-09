@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/hs-uri-bytestring/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-uri-bytestring/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	uri-bytestring
-PORTVERSION=	0.3.1.1
+PORTVERSION=	0.3.2.1
 PORTREVISION=	1
 CATEGORIES=	textproc haskell
 

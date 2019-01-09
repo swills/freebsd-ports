@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/phpunit7/Makefile 487572 2018-12-16 10:20:14Z joneum $
+# $FreeBSD: head/devel/phpunit7/Makefile 489322 2019-01-05 10:33:49Z joneum $
 
 PORTNAME=	phpunit
 DISTVERSION=	7.5.1
@@ -11,8 +11,6 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Testing framework for unit tests
 
 LICENSE=	BSD3CLAUSE
-
-IGNORE_WITH_PHP=	56
 
 CONFLICTS_INSTALL=	phpunit
 

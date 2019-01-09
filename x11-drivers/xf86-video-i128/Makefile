@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-drivers/xf86-video-i128/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-i128/Makefile 489156 2019-01-03 10:46:55Z zeising $
 
 PORTNAME=	xf86-video-i128
-PORTVERSION=	1.3.6
-PORTREVISION=	9
+PORTVERSION=	1.4.0
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

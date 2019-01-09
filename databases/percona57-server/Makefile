@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/databases/percona57-server/Makefile 489085 2019-01-02 15:47:29Z linimon $
 
 PORTNAME?=	percona
 DISTVERSION=	5.7.21-20
@@ -19,8 +19,6 @@ LICENSE?=	GPLv2+
 
 LIB_DEPENDS=	libevent.so:devel/libevent \
 		liblz4.so:archivers/liblz4
-
-BROKEN_powerpc64=	Does not build
 
 SLAVEDIRS=	databases/percona57-client \
 		databases/percona57-pam-for-mysql
@@ -84,6 +82,9 @@ USES+=		libedit
 USES+=		libedit
 .else
 LIB_DEPENDS+=	libcurl.so:ftp/curl
+
+BROKEN_powerpc64=	Does not configure: CMake Error at cmake/os/FreeBSD.cmake:34 (MESSAGE): Unsupported compiler!
+
 # MySQL-Server part
 OPTIONS_DEFINE=	OPENSSL FASTMTX INNODBMEMCACHED TOKUDB
 OPTIONS_DEFAULT=	OPENSSL INNODBMEMCACHED

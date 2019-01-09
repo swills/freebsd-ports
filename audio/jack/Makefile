@@ -1,9 +1,9 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/jack/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/jack/Makefile 489219 2019-01-03 20:24:30Z riggs $
 
 PORTNAME=	jackit
 PORTVERSION=	0.125.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 
 MAINTAINER=	multimedia@FreeBSD.org
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 
 USES=		autoreconf compiler:c11 gmake pathfix pkgconfig libtool localbase bdb
 USE_GITHUB=	yes
+
 GH_ACCOUNT=	jackaudio
 GH_PROJECT=	jack1
 GH_TAGNAME=	90f9dd3

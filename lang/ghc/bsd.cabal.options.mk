@@ -1,5 +1,5 @@
 #
-# $FreeBSD: head/lang/ghc/bsd.cabal.options.mk 485229 2018-11-18 15:30:45Z arrowd $
+# $FreeBSD: head/lang/ghc/bsd.cabal.options.mk 489474 2019-01-06 12:18:06Z arrowd $
 #
 # bsd.cabal.options.mk -- Support options for ports based on Haskell Cabal.
 #
@@ -18,7 +18,7 @@ GHC_CMD?=	${LOCALBASE}/bin/ghc
 HADDOCK_CMD?=	${LOCALBASE}/bin/haddock
 HSCOLOUR_CMD?=	${LOCALBASE}/bin/HsColour
 
-GHC_VERSION?=	8.4.4
+GHC_VERSION?=	8.6.3
 
 HSCOLOUR_VERSION=	1.24.4
 

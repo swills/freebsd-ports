@@ -1,13 +1,13 @@
 # Created by: Anish Mistry
-# $FreeBSD: head/sysutils/fusefs-libs/Makefile 469733 2018-05-12 14:47:36Z jbeich $
+# $FreeBSD: head/sysutils/fusefs-libs/Makefile 489420 2019-01-05 23:44:33Z se $
 
 PORTNAME=	fusefs
 DISTVERSIONPREFIX=	fuse-
-DISTVERSION=	2.9.7
+DISTVERSION=	2.9.9
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-libs
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	se@FreeBSD.org
 COMMENT=	FUSE allows filesystem implementation in userspace
 
 LICENSE=	LGPL21

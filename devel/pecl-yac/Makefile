@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/devel/pecl-yac/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/devel/pecl-yac/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	yac
 PORTVERSION=	2.0.2
@@ -12,7 +12,7 @@ COMMENT=	Yac is a shared memory user data cache for PHP
 LICENSE=	PHP301
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	56 73
+IGNORE_WITH_PHP=	73
 
 OPTIONS_DEFINE=	MSGPACK
 MSGPACK_DESC=	Enable MSGPACK module

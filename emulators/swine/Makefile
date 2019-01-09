@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/emulators/swine/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/emulators/swine/Makefile 489607 2019-01-07 19:03:08Z antoine $
 
 PORTNAME=	swine
 PORTVERSION=	1.0.4
@@ -30,6 +30,9 @@ SHEBANG_FILES=	*.py
 NO_BUILD=	yes
 USE_PYQT=	gui_run xml_build
 USE_QT=		linguist_build
+BINARY_ALIAS=	pyrcc4=pyrcc4-${PYTHON_VER} \
+		pyuic4=pyuic4-${PYTHON_VER} \
+		pylupdate4=pylupdate4-${PYTHON_VER}
 ONLY_FOR_ARCHS=	i386 amd64
 NO_ARCH=	yes
 

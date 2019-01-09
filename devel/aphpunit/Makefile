@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/aphpunit/Makefile 483468 2018-10-30 11:31:17Z tz $
+# $FreeBSD: head/devel/aphpunit/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	aphpunit
 DISTVERSION=	1.7
@@ -11,8 +11,6 @@ MAINTAINER=	tz@FreeBSD.org
 COMMENT=	Testing framework for unit tests
 
 LICENSE=	BSD2CLAUSE
-
-IGNORE_WITH_PHP=	56
 
 USES=		php:flavors
 USE_PHP=	mbstring pcntl phar posix sysvmsg

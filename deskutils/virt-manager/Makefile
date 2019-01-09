@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/virt-manager/Makefile 484811 2018-11-12 17:23:17Z novel $
+# $FreeBSD: head/deskutils/virt-manager/Makefile 489487 2019-01-06 13:06:44Z tcberner $
 
 PORTNAME=	virt-manager
 PORTVERSION=	2.0.0
@@ -29,7 +29,7 @@ PYDISTUTILS_CONFIGURE_TARGET=	configure
 PYDISTUTILS_CONFIGUREARGS=	--prefix=${PREFIX}
 INSTALLS_ICONS=	yes
 USES=		python:3.3+ gettext shebangfix
-USE_PYTHON=	noegginfo autoplist distutils
+USE_PYTHON=	noegginfo autoplist distutils noflavors
 
 NO_ARCH=	yes
 

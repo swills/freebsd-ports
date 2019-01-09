@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pg_partman/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/pg_partman/Makefile 489481 2019-01-06 12:26:02Z tobik $
 
 PORTNAME=	pg_partman
 DISTVERSIONPREFIX=	v
@@ -22,8 +22,6 @@ GH_ACCOUNT=	keithf4
 
 WANT_PGSQL=	server
 SHEBANG_GLOB=	*.py
-
-OPTIONS_DEFINE=	DOCS
 
 OPTIONS_DEFINE=	DOCS
 

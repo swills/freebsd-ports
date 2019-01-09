@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/textproc/hs-feed/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-feed/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	feed
-PORTVERSION=	1.0.0.0
+PORTVERSION=	1.0.1.0
 PORTREVISION=	1
 CATEGORIES=	textproc haskell
 

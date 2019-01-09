@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/mail/pecl-mailparse/Makefile 481999 2018-10-13 17:48:38Z dbaio $
+# $FreeBSD: head/mail/pecl-mailparse/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	mailparse
 PORTVERSION=	3.0.2
@@ -13,6 +13,5 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		php:pecl
 USE_PHP=	mbstring:build
-IGNORE_WITH_PHP=	56
 
 .include <bsd.port.mk>

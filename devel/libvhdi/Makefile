@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libvhdi/Makefile 486339 2018-12-01 12:58:56Z antoine $
+# $FreeBSD: head/devel/libvhdi/Makefile 489476 2019-01-06 12:19:56Z antoine $
 
 PORTNAME=	libvhdi
-PORTVERSION=	20181125
+PORTVERSION=	20181227
 DISTVERSIONPREFIX=	alpha-
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libvhdi/releases/download/${PORTVERSION}/ \

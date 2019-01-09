@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-threadscope/Makefile 475642 2018-07-29 10:40:28Z arrowd $
+# $FreeBSD: head/devel/hs-threadscope/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	threadscope
 PORTVERSION=	0.2.11.1
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

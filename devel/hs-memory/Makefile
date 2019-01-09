@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-memory/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-memory/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	memory
-PORTVERSION=	0.14.16
+PORTVERSION=	0.14.18
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

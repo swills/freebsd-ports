@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/kr/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/security/kr/Makefile 489241 2019-01-04 04:00:39Z jbeich $
 
 PORTNAME=	kr
 PORTVERSION=	2.3.1
@@ -13,7 +13,7 @@ BROKEN=		fails to build
 NOT_FOR_ARCHS=	i386
 NOT_FOR_ARCHS_REASON=	Uses 64bit types
 
-BUILD_DEPENDS=	rust>=1.19.0_2:lang/rust \
+BUILD_DEPENDS=	${RUST_DEFAULT}>=1.19.0_2:lang/${RUST_DEFAULT} \
 		bash>0:shells/bash
 
 USES=		gmake go shebangfix

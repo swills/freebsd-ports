@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Object/Makefile 488259 2018-12-24 07:27:17Z wen $
+# $FreeBSD: head/devel/p5-Data-Object/Makefile 489126 2019-01-03 02:49:20Z wen $
 
 PORTNAME=	Data-Object
-PORTVERSION=	0.60
+PORTVERSION=	0.61
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-attoparsec-iso8601/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-attoparsec-iso8601/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	attoparsec-iso8601
-PORTVERSION=	1.0.0.0
-PORTREVISION=	3
+PORTVERSION=	1.0.1.0
+PORTREVISION=	1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

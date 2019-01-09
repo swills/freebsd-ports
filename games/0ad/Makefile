@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/0ad/Makefile 488278 2018-12-24 17:05:13Z madpilot $
+# $FreeBSD: head/games/0ad/Makefile 489466 2019-01-06 12:06:39Z antoine $
 
 PORTNAME=	0ad
 PORTVERSION=	0.0.23b
@@ -27,7 +27,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libsodium.so:security/libsodium
 
 USES=		compiler:c++11-lib desktop-file-utils dos2unix gmake iconv jpeg openal:al \
-		pkgconfig python:build tar:xz
+		pkgconfig python:2.7,build tar:xz
 USE_GNOME=	libxml2 gtk20
 USE_GL=		gl
 USE_SDL=	sdl2

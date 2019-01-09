@@ -1,8 +1,8 @@
-# $FreeBSD: head/archivers/hs-tar/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/archivers/hs-tar/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	tar
 PORTVERSION=	0.5.1.0
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	archivers haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,14 +1,14 @@
 # Created by: Marcin Jessa <yazzy@yazzy.org>
-# $FreeBSD: head/net/py-impacket/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-impacket/Makefile 489388 2019-01-05 21:50:36Z swills $
 
 PORTNAME=	impacket
-PORTVERSION=	0.9.15
+PORTVERSION=	0.9.17
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/CoreSecurity/impacket/releases/download/impacket_${PORTVERSION:S,.,_,g}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	contato@kanazuchi.com
 COMMENT=	Collection of Python classes providing access to network packets
 
 LICENSE=	APACHE11 ZLIB
@@ -30,6 +30,6 @@ OPTIONS_DEFINE=	DOCS
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC}/impacket && ${COPYTREE_SHARE} testcases ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC} && ${COPYTREE_SHARE} tests ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

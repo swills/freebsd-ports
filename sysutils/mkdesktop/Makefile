@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/mkdesktop/Makefile 489052 2019-01-01 22:06:53Z swills $
+# $FreeBSD: head/sysutils/mkdesktop/Makefile 489436 2019-01-06 03:19:04Z swills $
 
 PORTNAME=	mkdesktop
-PORTVERSION=	3.0
+PORTVERSION=	3.3
 CATEGORIES=	sysutils
 
 MAINTAINER=	bourne.identity@hotmail.com

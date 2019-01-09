@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/p5-App-RunCron/Makefile 472958 2018-06-21 07:29:20Z pi $
+# $FreeBSD: head/sysutils/p5-App-RunCron/Makefile 489455 2019-01-06 10:58:53Z mat $
 
 PORTNAME=	App-RunCron
 PORTVERSION=	0.08
@@ -12,7 +12,6 @@ COMMENT=	Making wrapper scripts for cron tasks
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Module-Build>=0.38:devel/p5-Module-Build
 RUN_DEPENDS=	p5-Class-Accessor-Lite>=0:devel/p5-Class-Accessor-Lite \
 		p5-YAML-Tiny>=0:textproc/p5-YAML-Tiny
 TEST_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \

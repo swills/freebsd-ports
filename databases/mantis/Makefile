@@ -1,8 +1,9 @@
 # Created by: Rozhuk Ivan <rozhuk.im@gmail.com>
-# $FreeBSD: head/databases/mantis/Makefile 482335 2018-10-18 09:02:44Z tobik $
+# $FreeBSD: head/databases/mantis/Makefile 489441 2019-01-06 08:04:45Z tobik $
 
 PORTNAME=	mantis
-PORTVERSION=	2.18.0
+PORTVERSION=	2.19.0
+PORTREVSION=	1
 PORTEPOCH=	1
 CATEGORIES=	databases www
 MASTER_SITES=	SF/mantisbt/mantis-stable/${PORTVERSION}
@@ -17,7 +18,7 @@ LICENSE=	GPLv2
 
 USES=		php:flavors
 USE_GITHUB=	nodefault
-USE_PHP=	fileinfo filter hash pcre session xml
+USE_PHP=	fileinfo filter hash json mbstring pcre session xml
 
 NO_ARCH=	yes
 NO_BUILD=	yes

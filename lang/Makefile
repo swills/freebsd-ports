@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 488894 2019-01-01 13:52:46Z rene $
+# $FreeBSD: head/lang/Makefile 489339 2019-01-05 14:00:38Z rene $
 #
 
     COMMENT = Programming languages
@@ -33,7 +33,6 @@
     SUBDIR += chibi-scheme
     SUBDIR += chicken
     SUBDIR += chicken5
-    SUBDIR += cilkplus
     SUBDIR += cim
     SUBDIR += cint
     SUBDIR += cjs
@@ -113,6 +112,7 @@
     SUBDIR += gforth
     SUBDIR += ghc
     SUBDIR += ghc843
+    SUBDIR += ghc844
     SUBDIR += ghc862
     SUBDIR += gjs
     SUBDIR += gnat_util

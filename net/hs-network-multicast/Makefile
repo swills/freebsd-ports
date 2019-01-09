@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-network-multicast/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/net/hs-network-multicast/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	network-multicast
 PORTVERSION=	0.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

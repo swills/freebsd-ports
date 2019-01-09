@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/html-xml-utils/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/textproc/html-xml-utils/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
 
 PORTNAME=	html-xml-utils
 PORTVERSION=	7.7
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.w3.org/Tools/HTML-XML-utils/
 

@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libscca/Makefile 486369 2018-12-01 13:19:03Z antoine $
+# $FreeBSD: head/devel/libscca/Makefile 489471 2019-01-06 12:15:25Z antoine $
 
 PORTNAME=	libscca
-DISTVERSION=	alpha-20181128
+DISTVERSION=	alpha-20181227
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libscca/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

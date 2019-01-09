@@ -1,5 +1,5 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/mail/enma/Makefile 484900 2018-11-13 21:35:30Z arved $
+# $FreeBSD: head/mail/enma/Makefile 489481 2019-01-06 12:26:02Z tobik $
 
 PORTNAME=	enma
 PORTVERSION=	1.2.0
@@ -13,8 +13,6 @@ COMMENT=	Sender authentication milter supporting SPF and Sender ID
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-OPTIONS_DEFINE=	LIBBIND
-LIBBIND_DESC=	Link against dns/libbind instead of dns/ldns
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ssl-incdir=${OPENSSLINC} \
@@ -29,7 +27,9 @@ MANLANG=	"" ja_JP.UTF-8
 PORTDOCS=	ChangeLog INSTALL LICENSE README
 SUB_FILES=	milter-enma
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS LIBBIND
+
+LIBBIND_DESC=	Link against dns/libbind instead of dns/ldns
 
 .if defined(WITH_POSTFIX_MILTER) || defined(WITH_POSTFIX) || defined(WITH_POSTFIX_CURRENT)
 CONF_SUB=	${REINPLACE_CMD} -e '/milter\.postfix/s/false/true/' ${WRKSRC}/enma/etc/enma.conf.sample

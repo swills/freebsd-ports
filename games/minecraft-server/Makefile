@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/minecraft-server/Makefile 476836 2018-08-10 14:51:27Z miwi $
+# $FreeBSD: head/games/minecraft-server/Makefile 489389 2019-01-05 21:56:05Z swills $
 
 PORTNAME=	minecraft-server
-PORTVERSION=	1.13
+PORTVERSION=	1.13.2
 CATEGORIES=	games java
-MASTER_SITES=	https://launcher.mojang.com/mc/game/1.13/server/d0caafb8438ebd206f99930cfaecfa6c9a13dca0/
+MASTER_SITES=	https://launcher.mojang.com/v1/objects/3737db93722a9e39eeada7c27e7aca28b144ffa7/
 DISTFILES=	server.jar
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 EXTRACT_ONLY=

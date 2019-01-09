@@ -1,5 +1,5 @@
 # Created by: Jochen Neumeister (<joneum@bsdproject.de>)
-# $FreeBSD: head/devel/phpunit6/Makefile 479414 2018-09-10 13:21:43Z joneum $
+# $FreeBSD: head/devel/phpunit6/Makefile 489326 2019-01-05 10:55:23Z joneum $
 
 PORTNAME=	phpunit
 DISTVERSION=	6.5.13
@@ -12,8 +12,6 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Testing framework for unit tests
 
 LICENSE=	BSD3CLAUSE
-
-IGNORE_WITH_PHP=	56
 
 CONFLICTS_INSTALL=	phpunit
 

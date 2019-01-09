@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-validators/Makefile 484976 2018-11-14 23:37:32Z dbaio $
+# $FreeBSD: head/devel/py-validators/Makefile 489229 2019-01-03 21:59:11Z dbaio $
 
 PORTNAME=	validators
-DISTVERSION=	0.12.3
+DISTVERSION=	0.12.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

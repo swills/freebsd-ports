@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-th-abstraction/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-th-abstraction/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	th-abstraction
-PORTVERSION=	0.2.6.0
+PORTVERSION=	0.2.10.0
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

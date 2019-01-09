@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/spirv-tools/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/spirv-tools/Makefile 489243 2019-01-04 04:40:19Z jbeich $
 
 PORTNAME=	spirv-tools
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2018.4
-PORTREVISION=	1
+DISTVERSION=	2018.6
 CATEGORIES=	devel graphics
 
 MAINTAINER=	greg@unrelenting.technology
@@ -18,7 +17,7 @@ SHEBANG_FILES=	tools/lesspipe/spirv-lesspipe.sh
 USE_GITHUB=	yes
 GH_ACCOUNT=	KhronosGroup
 GH_PROJECT=	SPIRV-Tools
-GH_TUPLE=	KhronosGroup:SPIRV-Headers:ff684ff:headers/external/spirv-headers
+GH_TUPLE=	KhronosGroup:SPIRV-Headers:4618b86e9e4b0:headers/external/spirv-headers
 
 CMAKE_ON=	SPIRV_SKIP_TESTS
 CMAKE_OFF=	SPIRV_WERROR

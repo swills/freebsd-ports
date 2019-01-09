@@ -1,8 +1,8 @@
 # Created by: Sir l33tname <sirl33tname@gmail.com>
-# $FreeBSD: head/devel/lua51-libevent/Makefile 434554 2017-02-21 20:51:06Z feld $
+# $FreeBSD: head/devel/lua51-libevent/Makefile 489507 2019-01-06 16:39:41Z swills $
 
 PORTNAME=	lua51
-PORTVERSION=	0.4.4
+PORTVERSION=	0.4.6
 DISTVERSIONPREFIX=v
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-libevent
@@ -15,11 +15,11 @@ LICENSE=	MIT
 LIB_DEPENDS=	libevent.so:devel/libevent
 RUN_DEPENDS=	${LUA_MODLIBDIR}/socket/core.so:net/luasocket-51
 
+USES=		gmake pkgconfig lua:51
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	harningt
 GH_PROJECT=	luaevent
-
-USES=		gmake pkgconfig lua:51
 
 MAKE_ENV+=	INSTALL_DIR_LUA=${LUA_MODSHAREDIR}
 MAKE_ENV+=	INSTALL_DIR_BIN=${LUA_MODLIBDIR}

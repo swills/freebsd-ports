@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libolecf/Makefile 486340 2018-12-01 13:01:40Z antoine $
+# $FreeBSD: head/devel/libolecf/Makefile 489460 2019-01-06 11:50:42Z antoine $
 
 PORTNAME=	libolecf
-DISTVERSION=	alpha-20181125
+DISTVERSION=	alpha-20181231
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libolecf/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

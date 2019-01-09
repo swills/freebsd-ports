@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 488895 2019-01-01 14:17:46Z rene $
+# $FreeBSD: head/net/Makefile 489339 2019-01-05 14:00:38Z rene $
 #
 
     COMMENT = Networking tools
@@ -1388,8 +1388,6 @@
     SUBDIR += sshping
     SUBDIR += ssldump
     SUBDIR += sslh
-    SUBDIR += ssltunnel-client
-    SUBDIR += ssltunnel-server
     SUBDIR += ssmping
     SUBDIR += ssspl
     SUBDIR += ssvnc

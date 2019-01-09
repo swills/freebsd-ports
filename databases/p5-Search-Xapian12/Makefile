@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Search-Xapian12/Makefile 480472 2018-09-23 09:47:25Z sunpoet $
+# $FreeBSD: head/databases/p5-Search-Xapian12/Makefile 489397 2019-01-05 22:45:31Z sunpoet $
 
 PORTNAME=	Search-Xapian
 PORTVERSION=	1.2.25.2
@@ -23,10 +23,11 @@ TEST_DEPENDS=	p5-Devel-Leak>=0:devel/p5-Devel-Leak \
 
 PORTSCOUT=	limit:^1\.2\.
 
+USES=		perl5
+USE_PERL5=	configure
+
 CC=		${CXX}
 CONFIGURE_ARGS=	XAPIAN_CONFIG=${LOCALBASE}/bin/xapian-config
-USE_PERL5=	configure
-USES=		perl5
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|^if (defined $$builddir) {|if (0) {|' ${WRKSRC}/Makefile.PL

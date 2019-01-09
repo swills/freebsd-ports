@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/arcanist/Makefile 488751 2018-12-31 00:13:24Z grembo $
+# $FreeBSD: head/devel/arcanist/Makefile 489236 2019-01-04 00:30:45Z grembo $
 
 PORTNAME=	arcanist
 PORTVERSION=	20181231
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
@@ -18,7 +19,7 @@ CONFLICTS=	arc-*
 PHP_DESTDIR=	lib/php/arcanist
 USES=		php:flavors python:2.7,env shebangfix
 SHEBANG_FILES=	scripts/breakout.py
-USE_PHP=	curl dom hash json simplexml
+USE_PHP=	curl dom hash json simplexml zlib
 USE_GITHUB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes

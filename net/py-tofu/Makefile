@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/net/py-tofu/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-tofu/Makefile 489481 2019-01-06 12:26:02Z tobik $
 
 PORTNAME=	tofu
 PORTVERSION=	0.5
@@ -16,8 +16,6 @@ COMMENT=	Practical high-level network game engine
 LICENSE=	GPLv2+
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
-
-OPTIONS_DEFINE=	EXAMPLES
 
 NO_ARCH=	yes
 USES=		python tar:bzip2

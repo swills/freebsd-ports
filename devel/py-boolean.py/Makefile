@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/py-boolean.py/Makefile 475527 2018-07-28 12:00:34Z miwi $
+# $FreeBSD: head/devel/py-boolean.py/Makefile 489381 2019-01-05 20:59:33Z swills $
 
 PORTNAME=	boolean.py
-DISTVERSION=	3.5
+DISTVERSIONPREFIX=	v
+DISTVERSION=	3.6
 CATEGORIES=	devel python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	freebsd_ports@k-worx.org
@@ -14,6 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist
+USE_GITHUB=	yes
+GH_ACCOUNT=	bastikr
 
 NO_ARCH=	yes
 PORTDOCS=	*

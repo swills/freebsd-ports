@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-warp/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/www/hs-warp/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	warp
 PORTVERSION=	3.2.22
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

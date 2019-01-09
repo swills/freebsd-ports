@@ -1,8 +1,9 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/mtr/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/net/mtr/Makefile 489206 2019-01-03 19:57:16Z sunpoet $
 
 PORTNAME=	mtr
 PORTVERSION=	0.92
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://www.bitwizard.nl/mtr/files/ \
 		LOCAL/sunpoet
@@ -19,9 +20,10 @@ OPTIONS_DEFINE=	IPV6 X11
 OPTIONS_DEFAULT=X11
 X11_DESC=	Build X11-enabled mtr
 
+USES=		autoreconf ncurses pkgconfig
+
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-lncurses
-USES=		autoreconf ncurses pkgconfig
 
 IPV6_CATEGORIES=	ipv6
 IPV6_CONFIGURE_ENABLE=	ipv6
@@ -31,6 +33,7 @@ X11_USES=		gnome
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|getopt.*$$(OBJEXT)||g; s|getopt.*[ch]||g; /getopt.*Po/d' ${WRKSRC}/Makefile.in
+	@${REINPLACE_CMD} -e 's|m4_esyscmd(\[build-aux/git-version-gen \.tarball-version\])|${PORTVERSION}|' ${WRKSRC}/configure.ac
 	@${REINPLACE_CMD} -e 's|"getopt\.h"|<getopt.h>|g' ${WRKSRC}/ui/mtr.c
 
 post-install:

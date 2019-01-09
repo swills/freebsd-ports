@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-toolkits/granite/Makefile 465149 2018-03-21 05:52:33Z yuri $
+# $FreeBSD: head/x11-toolkits/granite/Makefile 489174 2019-01-03 13:49:07Z tobik $
 #
 
 PORTNAME=	granite
-DISTVERSION=	0.5
+DISTVERSION=	5.2.2
 CATEGORIES=	x11-toolkits
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Extensions of GTK+3 toolkit
 
 LICENSE=	LGPL3
@@ -14,9 +14,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libgee-0.8.so:devel/libgee
-RUN_DEPENDS=	contractor:sysutils/contractor
+RUN_DEPENDS=	contractor:sysutils/contractor \
+		gsettings-desktop-schemas>=3.28.1:devel/gsettings-desktop-schemas
 
-USES=	cmake gettext pkgconfig tar:xz
+USES=		cmake gettext gnome pkgconfig tar:xz
 USE_GITHUB=	yes
 GH_ACCOUNT=	elementary
 USE_GNOME=	glib20 gtk30 cairo introspection:build
@@ -24,8 +25,5 @@ INSTALLS_ICONS=	yes
 USE_LDCONFIG=	yes
 
 CFLAGS+=	-Wno-return-type
-
-post-patch:
-	${REINPLACE_CMD} -e 's|FFREE_|FREE_|' ${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

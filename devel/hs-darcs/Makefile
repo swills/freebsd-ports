@@ -1,15 +1,17 @@
 # Created by: Oliver Braun <obraun@FreeBSD.org>
-# $FreeBSD: head/devel/hs-darcs/Makefile 477219 2018-08-15 10:51:55Z arrowd $
+# $FreeBSD: head/devel/hs-darcs/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	darcs
 PORTVERSION=	2.14.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Distributed, interactive, smart revision control system
 
 LICENSE=	GPLv2
+
+BROKEN=		Doesn't build with recent GHC
 
 USE_CABAL=	async attoparsec base16-bytestring cryptohash \
 		data-ordlist fgl graphviz hashable html HTTP \

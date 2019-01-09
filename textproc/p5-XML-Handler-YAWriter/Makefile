@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-Handler-YAWriter/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-XML-Handler-YAWriter/Makefile 489250 2019-01-04 09:00:24Z amdmi3 $
 
 PORTNAME=	XML-Handler-YAWriter
 PORTVERSION=	0.23
@@ -11,10 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Yet another Perl SAX XML Writer
 
+LICENSE=	GPLv1+  # exact version not specified
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-libxml>=0:textproc/p5-libxml
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

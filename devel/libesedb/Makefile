@@ -1,10 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libesedb/Makefile 473872 2018-07-04 09:09:00Z antoine $
+# $FreeBSD: head/devel/libesedb/Makefile 489462 2019-01-06 11:57:25Z antoine $
 
 PORTNAME=	libesedb
 # If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
-DISTVERSION=	experimental-20170121
-PORTREVISION=	1
+DISTVERSION=	experimental-20181229
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libesedb/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

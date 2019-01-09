@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/mattermost-server/Makefile 483573 2018-10-31 13:07:57Z swills $
+# $FreeBSD: head/www/mattermost-server/Makefile 489300 2019-01-05 03:03:21Z swills $
 
 PORTNAME=	mattermost-server
-PORTVERSION=	5.4.0
+PORTVERSION=	5.6.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/pecl-stomp2/Makefile 473788 2018-07-03 00:49:20Z dbaio $
+# $FreeBSD: head/net-im/pecl-stomp2/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	stomp
 PORTVERSION=	2.0.2
@@ -11,7 +11,6 @@ LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	56
 CONFLICTS=	pecl-stomp-1*
 
 PORTSCOUT=	limit:^2.*

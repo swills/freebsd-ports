@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/lxhotkey/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/x11/lxhotkey/Makefile 489579 2019-01-07 15:08:08Z rigoletto $
 
 PORTNAME=	lxhotkey
 PORTVERSION=	0.1.0
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfm-extra.so:x11/libfm-extra \
-	libfm.so:x11/libfm \
+	libfm.so:x11/libfm@gtk2 \
 	libfontconfig.so:x11-fonts/fontconfig \
 	libfreetype.so:print/freetype2 \
 	libunistring.so:devel/libunistring

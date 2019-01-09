@@ -1,5 +1,5 @@
 # Created by: giffunip
-# $FreeBSD: head/devel/lasi/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/lasi/Makefile 489151 2019-01-03 09:50:58Z lme $
 #    $MCom: ports/devel/lasi/Makefile,v 1.1 2006/10/04 20:25:40 ahze Exp $
 
 PORTNAME=	lasi
@@ -9,7 +9,7 @@ CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}%20Source
 DISTNAME=	libLASi-${PORTVERSION}
 
-MAINTAINER=	lme@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ stream output interface for creating Postscript documents
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl

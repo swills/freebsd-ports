@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-html/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-html/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	html
 PORTVERSION=	1.0.1.2
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

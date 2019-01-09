@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/hs-regex-tdfa/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-regex-tdfa/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	regex-tdfa
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.3.1
 PORTREVISION=	1
 CATEGORIES=	textproc haskell
 

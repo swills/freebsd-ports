@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/tt-rss/Makefile 485696 2018-11-23 17:49:33Z thierry $
+# $FreeBSD: head/www/tt-rss/Makefile 489077 2019-01-02 12:03:36Z thierry $
 
 PORTNAME=	tt-rss
-PORTVERSION=	g20181122
+PORTVERSION=	g20181226
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	https://git.tt-rss.org/git/tt-rss/archive/
@@ -21,7 +21,7 @@ REINPLACE_ARGS=	-i ""
 SHEBANG_FILES=	lib/dojo-src/rebuild-dojo.sh utils/extract-i18n-js.pl
 WRKSRC=		${WRKDIR}/tt-rss
 
-GIT_TAGNAME=	bc42dfb790
+GIT_TAGNAME=	734af3357d
 
 NO_BUILD=	yes
 NO_ARCH=	yes

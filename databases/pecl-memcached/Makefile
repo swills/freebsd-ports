@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/pecl-memcached/Makefile 488985 2019-01-01 20:35:00Z sunpoet $
+# $FreeBSD: head/databases/pecl-memcached/Makefile 489104 2019-01-02 23:57:51Z sunpoet $
 
 PORTNAME=	memcached
 PORTVERSION=	3.1.3
@@ -22,7 +22,6 @@ USES=		php:pecl pkgconfig
 USE_PHP=	json:build session:build
 
 CONFIGURE_ARGS=	--with-libmemcached-dir=${LOCALBASE}
-IGNORE_WITH_PHP=56
 
 IGBINARY_CONFIGURE_ENABLE=	memcached-igbinary
 IGBINARY_USE=		PHP=igbinary:build

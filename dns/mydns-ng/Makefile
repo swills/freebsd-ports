@@ -1,5 +1,5 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/dns/mydns-ng/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/dns/mydns-ng/Makefile 489593 2019-01-07 18:04:34Z tobik $
 
 PORTNAME=	mydns-ng
 PORTVERSION=	1.2.8.31
@@ -25,9 +25,9 @@ OPTIONS_DEFINE=		DOCS ALIAS SSL NLS
 OPTIONS_SINGLE=		DATABASE
 OPTIONS_SINGLE_DATABASE=	PGSQL MYSQL
 OPTIONS_DEFAULT=	ALIAS MYSQL
-ALIAS_DESC=	Server side aliasas
-ALIAS_CONFIGURE_ENABLE=	alias
 OPTIONS_SUB=	yes
+
+ALIAS_DESC=	Server side aliasas
 
 ALIAS_CONFIGURE_ENABLE=	alias
 

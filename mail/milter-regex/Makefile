@@ -1,11 +1,10 @@
 # Created by: trevor
-# $FreeBSD: head/mail/milter-regex/Makefile 473663 2018-07-01 10:17:18Z dinoex $
+# $FreeBSD: head/mail/milter-regex/Makefile 489555 2019-01-07 01:08:08Z dinoex $
 
 PORTNAME=	milter-regex
-PORTVERSION=	2.0
-PORTREVISION=	4
+PORTVERSION=	2.2
 CATEGORIES=	mail
-MASTER_SITES=	http://www.benzedrine.cx/
+MASTER_SITES=	https://www.benzedrine.ch/
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Milter plugin to sendmail for regular expression filtering

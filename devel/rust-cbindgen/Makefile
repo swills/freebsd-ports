@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rust-cbindgen/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/devel/rust-cbindgen/Makefile 489241 2019-01-04 04:00:39Z jbeich $
 
 PORTNAME=	cbindgen
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Generate C bindings from Rust code
 
 LICENSE=	MPL20
 
-RUN_DEPENDS=	cargo:lang/rust
+RUN_DEPENDS=	cargo:lang/${RUST_DEFAULT}
 
 USES=		cargo
 USE_GITHUB=	yes

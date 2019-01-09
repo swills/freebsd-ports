@@ -1,8 +1,8 @@
 # Created by: Murray Stokely <murray@cdrom.com>
-# $FreeBSD: head/devel/nasm/Makefile 475358 2018-07-26 09:37:50Z amdmi3 $
+# $FreeBSD: head/devel/nasm/Makefile 489320 2019-01-05 10:28:40Z zeising $
 
 PORTNAME=	nasm
-PORTVERSION=	2.13.03
+PORTVERSION=	2.14.02
 PORTEPOCH=	1
 CATEGORIES=	devel lang
 MASTER_SITES=	http://www.nasm.us/pub/nasm/releasebuilds/${PORTVERSION}/ \

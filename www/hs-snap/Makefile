@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/hs-snap/Makefile 475642 2018-07-29 10:40:28Z arrowd $
+# $FreeBSD: head/www/hs-snap/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	snap
 PORTVERSION=	1.1.1.0
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

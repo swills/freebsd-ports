@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/fractal/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/net-im/fractal/Makefile 489241 2019-01-04 04:00:39Z jbeich $
 
 PORTNAME=	fractal
 DISTVERSION=	3.30.0
@@ -13,7 +13,7 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 # gmake for the backtrace-sys crate
-BUILD_DEPENDS=	cargo:lang/rust \
+BUILD_DEPENDS=	cargo:lang/${RUST_DEFAULT} \
 		gmake:devel/gmake
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libgmp.so:math/gmp \

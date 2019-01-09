@@ -1,10 +1,8 @@
-# $FreeBSD: head/print/pdf-tools/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/print/pdf-tools/Makefile 489623 2019-01-07 23:36:07Z jrm $
 
 PORTNAME=	pdf-tools
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.80-133
-DISTVERSIONSUFFIX=	-gb6c0e4f
-PORTREVISION=	1
+DISTVERSION=	0.90
 CATEGORIES=	print elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

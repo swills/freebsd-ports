@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/hs-svgcairo/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/graphics/hs-svgcairo/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	svgcairo
 PORTVERSION=	0.13.1.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics haskell
 
 MAINTAINER=	haskell@FreeBSD.org

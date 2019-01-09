@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/py-mdv/Makefile 480155 2018-09-20 08:04:38Z ehaupt $
+# $FreeBSD: head/devel/py-mdv/Makefile 489508 2019-01-06 16:50:00Z ehaupt $
 
 PORTNAME=	mdv
 PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/editors/medit/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/editors/medit/Makefile 489587 2019-01-07 17:15:19Z antoine $
 
 PORTNAME=	medit
 PORTVERSION=	1.2.92
@@ -14,7 +14,7 @@ COMMENT=	Programming and around-programming text editor
 
 LICENSE=	LGPL21
 
-USES=		compiler:c++11-lang gmake localbase pkgconfig tar:bzip2
+USES=		compiler:c++11-lang gmake localbase pkgconfig python:2.7,build tar:bzip2
 GNU_CONFIGURE=	yes
 USE_GNOME=	gtk20
 INSTALLS_ICONS=	yes

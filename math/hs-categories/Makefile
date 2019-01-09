@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/hs-categories/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/math/hs-categories/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	categories
 PORTVERSION=	1.0.7
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

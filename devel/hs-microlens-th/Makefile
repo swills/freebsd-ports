@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-microlens-th/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-microlens-th/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	microlens-th
-PORTVERSION=	0.4.2.1
+PORTVERSION=	0.4.2.3
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

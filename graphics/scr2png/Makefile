@@ -1,5 +1,5 @@
 # Created by: nik
-# $FreeBSD: head/graphics/scr2png/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/graphics/scr2png/Makefile 489446 2019-01-06 09:00:26Z amdmi3 $
 
 PORTNAME=	scr2png
 PORTVERSION=	1.2
@@ -9,6 +9,8 @@ MASTER_SITES=	LOCAL/nik
 
 MAINTAINER=	eadler@FreeBSD.org
 COMMENT=	Converts the output of "vidcontrol -p" to PNG
+
+LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libgd.so:graphics/gd
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-threads/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-threads/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	threads
 PORTVERSION=	0.5.1.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

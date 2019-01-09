@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/databases/php-memcache/Makefile 482056 2018-10-14 16:28:19Z sunpoet $
+# $FreeBSD: head/databases/php-memcache/Makefile 489105 2019-01-02 23:57:56Z sunpoet $
 
 PORTNAME=	memcache
 PORTVERSION=	3.0.9
@@ -20,7 +20,6 @@ USES=		dos2unix php:ext
 USE_PHP=	session:build zlib:build
 
 CONFIGURE_ARGS=	--with-zlib-dir=/usr
-IGNORE_WITH_PHP=56
 USE_CSTD=	gnu89
 
 GH_ACCOUNT=	websupport-sk

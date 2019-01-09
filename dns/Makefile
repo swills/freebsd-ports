@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 488786 2018-12-31 13:37:58Z rene $
+# $FreeBSD: head/dns/Makefile 489656 2019-01-08 08:51:57Z jhixson $
 #
 
     COMMENT = Domain Name Service tools
@@ -113,6 +113,7 @@
     SUBDIR += namesilo_ddns
     SUBDIR += noip
     SUBDIR += nsd
+    SUBDIR += nsec3walker
     SUBDIR += nslint
     SUBDIR += nsnotifyd
     SUBDIR += nsping
@@ -182,6 +183,7 @@
     SUBDIR += public_suffix_list
     SUBDIR += py-adns
     SUBDIR += py-aiodns
+    SUBDIR += py-bonjour
     SUBDIR += py-cloudflare
     SUBDIR += py-dns
     SUBDIR += py-dns-lexicon

@@ -1,9 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libfwsi/Makefile 487901 2018-12-20 19:30:25Z antoine $
+# $FreeBSD: head/devel/libfwsi/Makefile 489457 2019-01-06 11:39:07Z antoine $
 
 PORTNAME=	libfwsi
 # If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
-DISTVERSION=	experimental-20181215
+DISTVERSION=	experimental-20181227
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libfwsi/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

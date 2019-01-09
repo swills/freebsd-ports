@@ -1,5 +1,5 @@
 # Created by: Simon Marlow <simonmar@microsoft.com>
-# $FreeBSD: head/lang/ghc/Makefile 487653 2018-12-17 06:04:49Z arrowd $
+# $FreeBSD: head/lang/ghc/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	ghc
 PORTVERSION=	${GHC_VERSION}
@@ -18,11 +18,11 @@ COMMENT=	Compiler for the functional language Haskell
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-GHC_VERSION=		8.4.4
+GHC_VERSION=		8.6.3
 HSCOLOUR_VERSION=	1.24.4
-LLVM_VERSION=		50
+LLVM_VERSION=		60
 
-CONFLICTS_INSTALL=	ghc-7.4.* ghc-7.6.* ghc-7.8.* ghc-7.10.* ghc-8.0.* ghc-8.4.3
+CONFLICTS_INSTALL=	ghc-7.4.* ghc-7.6.* ghc-7.8.* ghc-7.10.* ghc-8.0.* ghc-8.4.* ghc-8.6.2
 
 .include "${.CURDIR}/../../lang/ghc/bsd.ghc.mk"
 

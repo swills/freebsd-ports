@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-x509-system/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/security/hs-x509-system/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	x509-system
 PORTVERSION=	1.6.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Luca Pizzamiglio <luca.pizzamiglio@trivago.com>
-# $FreeBSD: head/devel/pecl-xdebug-devel/Makefile 488670 2018-12-29 15:16:31Z pizzamig $
+# $FreeBSD: head/devel/pecl-xdebug-devel/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	xdebug
 DISTVERSION=	2.7.0beta1
@@ -12,7 +12,7 @@ COMMENT=	Xdebug extension for PHP
 LICENSE=	PHP30
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-IGNORE_WITH_PHP=	56 71
+IGNORE_WITH_PHP=	71
 
 USES=		php:pecl,zend tar:tgz
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/snmp_exporter/Makefile 472549 2018-06-16 14:21:11Z krion $
+# $FreeBSD: head/sysutils/snmp_exporter/Makefile 489327 2019-01-05 12:03:52Z swills $
 
 PORTNAME=	snmp_exporter
-PORTVERSION=	0.11.0
+PORTVERSION=	0.13.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 

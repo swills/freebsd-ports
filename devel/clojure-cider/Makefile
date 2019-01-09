@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/clojure-cider/Makefile 488828 2018-12-31 20:13:20Z bofh $
+# $FreeBSD: head/devel/clojure-cider/Makefile 489260 2019-01-04 18:40:38Z bofh $
 
 PORTNAME=	clojure-cider
-PORTVERSION=	0.18.0
+PORTVERSION=	0.19.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

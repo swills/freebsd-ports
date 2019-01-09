@@ -1,9 +1,9 @@
 # Created by: smace@FreeBSD.org
-# $FreeBSD: head/print/pnm2ppa/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/pnm2ppa/Makefile 489591 2019-01-07 17:38:24Z tobik $
 
 PORTNAME=	pnm2ppa
 PORTVERSION=	1.13
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	print
 MASTER_SITES=	SF
 
@@ -19,9 +19,9 @@ GNU_CONFIGURE=	yes
 .include <bsd.port.pre.mk>
 
 .if defined(A4) || !empty(PORT_OPTIONS:MA4SIZE)
-RUN_DEPENDS=	enscript:print/enscript-a4
+RUN_DEPENDS+=	enscript:print/enscript-a4
 .else
-RUN_DEPENDS=	enscript:print/enscript-letter
+RUN_DEPENDS+=	enscript:print/enscript-letter
 .endif
 
 post-patch:

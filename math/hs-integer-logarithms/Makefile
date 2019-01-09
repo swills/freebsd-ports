@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/hs-integer-logarithms/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/math/hs-integer-logarithms/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	integer-logarithms
-PORTVERSION=	1.0.2.1
+PORTVERSION=	1.0.2.2
 PORTREVISION=	1
 CATEGORIES=	math haskell
 

@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/devel/pear-PEAR_Info/Makefile 473885 2018-07-04 13:50:16Z rene $
+# $FreeBSD: head/devel/pear-PEAR_Info/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	PEAR_Info
 PORTVERSION=	1.9.2
@@ -8,8 +8,6 @@ CATEGORIES=	devel www pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Show Information about your PEAR install and its packages
-
-IGNORE_WITH_PHP=	56
 
 BUILD_DEPENDS=	${PEARDIR}/Console/Getargs.php:devel/pear-Console_Getargs@${PHP_FLAVOR}
 RUN_DEPENDS=	${PEARDIR}/Console/Getargs.php:devel/pear-Console_Getargs@${PHP_FLAVOR}

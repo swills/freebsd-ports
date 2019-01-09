@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/audio/py-pyliblo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/py-pyliblo/Makefile 489485 2019-01-06 12:39:48Z tobik $
 
 PORTNAME=	pyliblo
 DISTVERSION=	0.10.0
@@ -16,7 +16,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblo.so:audio/liblo
 
-USES=		localbase:ldflags python
 USES=		python
 USE_PYTHON=	distutils cython
 MAKE_ENV+=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE}

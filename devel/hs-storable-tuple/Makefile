@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-storable-tuple/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-storable-tuple/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	storable-tuple
 PORTVERSION=	0.0.3.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

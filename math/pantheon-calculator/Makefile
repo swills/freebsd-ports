@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/math/pantheon-calculator/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/pantheon-calculator/Makefile 489174 2019-01-03 13:49:07Z tobik $
 
 PORTNAME=	pantheon-calculator
 PORTVERSION=	0.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://launchpadlibrarian.net/303135059/ \
 	https://launchpad.net/${PORTNAME}/0.4-loki/${PORTVERSION}/+download/

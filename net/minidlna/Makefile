@@ -1,14 +1,14 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/net/minidlna/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/net/minidlna/Makefile 489641 2019-01-08 04:14:51Z glebius $
 
 PORTNAME=	minidlna
 PORTVERSION=	1.2.1
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	net multimedia www
-MASTER_SITES=	SF
+MASTER_SITES=	GH
 
-MAINTAINER=	sunpoet@FreeBSD.org
+MAINTAINER=	glebius@FreeBSD.org
 COMMENT=	Media-server compatible with "Digital Life Network Alliance"
 
 LICENSE=	GPLv2
@@ -26,6 +26,10 @@ CONFIGURE_ARGS=	--with-db-path=/var/db/minidlna \
 		--with-os-url="http://www.FreeBSD.org"
 USES=		autoreconf gettext-tools iconv jpeg localbase
 
+USE_GITHUB=	yes
+GH_ACCOUNT=	glebius
+GH_TAGNAME=	4357325
+
 PKGMESSAGE=	${WRKSRC}/pkg-message
 SUB_FILES+=	pkg-message
 USE_RC_SUBR=	minidlna
@@ -34,15 +38,11 @@ SUB_LIST+=	USER=${USERS}
 USERS=	dlna
 GROUPS=	dlna
 
-OPTIONS_DEFINE=	DEBUG KQUEUE NLS
-OPTIONS_DEFAULT=KQUEUE
+OPTIONS_DEFINE=	DEBUG NLS
 OPTIONS_SUB=	yes
 
 DEBUG_CFLAGS=	-DDEBUG
-KQUEUE_DESC=	Experimental patch for automatic rescan using kqueue(2)
 NLS_USES=	gettext-runtime
-
-KQUEUE_EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-kqueue
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/*.5 ${STAGEDIR}${MANPREFIX}/man/man5/

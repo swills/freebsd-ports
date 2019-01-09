@@ -1,8 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/multimedia/gtk-youtube-viewer/Makefile 480128 2018-09-19 23:48:57Z swills $
+# $FreeBSD: head/multimedia/gtk-youtube-viewer/Makefile 489178 2019-01-03 14:14:49Z riggs $
 
 PORTNAME=	gtk-youtube-viewer
 PORTVERSION=	3.5.0
+PORTREVISION=	1
 CATEGORIES=	multimedia perl5
 
 MAINTAINER=	ndowens@yahoo.com

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-sendfile/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/net/hs-sendfile/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	sendfile
 PORTVERSION=	0.7.9
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

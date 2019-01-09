@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/hs-kan-extensions/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/math/hs-kan-extensions/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	kan-extensions
 PORTVERSION=	5.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,8 +10,7 @@ COMMENT=	Kan extensions, Kan lifts, various forms of the Yoneda lemma, and (co)d
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	adjunctions comonad contravariant distributive free mtl \
-		semigroupoids tagged
+USE_CABAL=	adjunctions comonad distributive free mtl semigroupoids tagged
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

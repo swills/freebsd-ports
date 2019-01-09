@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/x11/Makefile 489559 2019-01-07 06:41:41Z jbeich $
 #
 
     COMMENT = Ports to support the X window system
@@ -367,6 +367,7 @@
     SUBDIR += xcb-proto
     SUBDIR += xcb-util
     SUBDIR += xcb-util-cursor
+    SUBDIR += xcb-util-errors
     SUBDIR += xcb-util-image
     SUBDIR += xcb-util-keysyms
     SUBDIR += xcb-util-renderutil

@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSDD.org>
-# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 487540 2018-12-15 19:05:16Z bsam $
+# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 489589 2019-01-07 17:31:23Z tobik $
 
 PORTNAME=	blackbox_exporter
 PORTVERSION=	0.13.0
@@ -22,8 +22,6 @@ GROUPS=		prometheus
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 GO_TARGET=	github.com/${GH_ACCOUNT}/${PORTNAME}
-
-USE_RC_SUBR=	${PORTNAME}
 
 PORTEXAMPLES=	${WRKSRC}/*.yml
 

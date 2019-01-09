@@ -1,11 +1,11 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-pytsk/Makefile 464938 2018-03-18 17:25:13Z antoine $
+# $FreeBSD: head/sysutils/py-pytsk/Makefile 489482 2019-01-06 12:27:38Z antoine $
 
 PORTNAME=	pytsk
-PORTVERSION=	20180225
+PORTVERSION=	20190103
 CATEGORIES=	sysutils security devel python
-MASTER_SITES=	CHEESESHOP \
-		https://github.com/py4n6/pytsk/releases/download/${PORTVERSION}/
+MASTER_SITES=	CHEESESHOP
+#		https://github.com/py4n6/pytsk/releases/download/${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}3-${PORTVERSION}
 

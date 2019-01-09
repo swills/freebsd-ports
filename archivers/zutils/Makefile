@@ -1,9 +1,8 @@
 # Created by: Albert Vernon <f3cun3c02@sneakemail.com>
-# $FreeBSD: head/archivers/zutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/archivers/zutils/Makefile 489553 2019-01-06 23:35:44Z danilo $
 
 PORTNAME=	zutils
-PORTVERSION=	1.7
-PORTREVISION=	1
+PORTVERSION=	1.8
 CATEGORIES=	archivers
 MASTER_SITES=	SAVANNAH/zutils
 EXTRACT_SUFX=	.tar.lz

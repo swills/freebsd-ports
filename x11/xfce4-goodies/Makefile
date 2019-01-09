@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/x11/xfce4-goodies/Makefile 486928 2018-12-08 09:23:57Z antoine $
+# $FreeBSD: head/x11/xfce4-goodies/Makefile 489584 2019-01-07 16:48:26Z tobik $
 
 PORTNAME=	xfce4-goodies
 PORTVERSION=	4.12
@@ -138,7 +138,6 @@ THEMES_DESC=			Additional themes for xfwm4
 VALA_DESC=			Vala binding for the Xfce core libraries
 VFS_DESC=			The virtual filesystem for Thunar
 VOLUMED_DESC=			Volume management daemon for the Xfce desktop
-VOLUMEDPULSE_DESC=		Volume management daemon for Xfce using PulseAudio
 
 BSDCPUFREQ_RUN_DEPENDS=		xfce4-bsdcpufreq-plugin>=0:sysutils/xfce4-bsdcpufreq-plugin
 EQUAKE_RUN_DEPENDS=		xfce4-equake-plugin>=0:science/xfce4-equake-plugin

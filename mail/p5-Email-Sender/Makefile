@@ -1,8 +1,9 @@
 # Created by: Bill Brinzer <bill.brinzer@gmail.com>
-# $FreeBSD: head/mail/p5-Email-Sender/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/mail/p5-Email-Sender/Makefile 489265 2019-01-04 19:27:36Z pi $
 
 PORTNAME=	Email-Sender
 PORTVERSION=	1.300031
+PORTREVISION=	2
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RJBS

@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/www/pecl-yar/Makefile 488706 2018-12-30 11:18:31Z joneum $
+# $FreeBSD: head/www/pecl-yar/Makefile 489317 2019-01-05 10:13:15Z joneum $
 
 PORTNAME=	yar
 DISTVERSION=	2.0.5
@@ -10,8 +10,6 @@ COMMENT=	Yar (Yet another RPC framework) is a light, concurrent RPC framework
 
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-IGNORE_WITH_PHP=	56
 
 USES=		localbase php:pecl
 USE_PHP=	json:build curl:build

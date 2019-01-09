@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/converters/wkhtmltopdf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/converters/wkhtmltopdf/Makefile 489390 2019-01-05 22:03:28Z pi $
 
 PORTNAME=	wkhtmltopdf
 PORTVERSION=	0.12.5
@@ -50,7 +50,7 @@ CONFIGURE_ARGS=	-prefix ${WRKSRC}/build/qt \
 	-no-sql-sqlite -no-sql-sqlite2 -no-mmx -no-3dnow -no-sse -no-sse2 \
 	-no-multimedia -nomake demos -nomake docs -nomake examples \
 	-nomake tools -nomake tests -nomake translations -xrender -largefile \
-	-iconv -openssl -no-rpath -no-dbus -no-nis -no-cups -no-pch \
+	-iconv -openssl-linked -no-rpath -no-dbus -no-nis -no-cups -no-pch \
 	-no-gtkstyle -no-nas-sound -no-sm -no-xshape -no-xinerama -no-xcursor \
 	-no-xfixes -no-xrandr -no-mitshm -no-xinput -no-xkb -no-glib \
 	-no-gstreamer -D ENABLE_VIDEO=0 -no-openvg -no-xsync \

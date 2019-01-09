@@ -1,10 +1,10 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/cgnslib/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/cgnslib/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
 
 PORTNAME=	cgnslib
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	science
 

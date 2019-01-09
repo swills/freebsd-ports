@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/graphics/gauche-gl/Makefile 486757 2018-12-06 13:51:07Z linimon $
+# $FreeBSD: head/graphics/gauche-gl/Makefile 489276 2019-01-04 20:57:21Z antoine $
 
 PORTNAME=	gl
 PORTVERSION=	0.6
@@ -14,6 +14,8 @@ COMMENT=	OpenGL binding for Gauche
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to stage
 
 BUILD_DEPENDS=	gosh:lang/gauche
 RUN_DEPENDS=	gosh:lang/gauche

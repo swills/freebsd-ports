@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/copyq/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/deskutils/copyq/Makefile 489502 2019-01-06 15:41:07Z fernape $
 
 PORTNAME=	copyq
-PORTVERSION=	3.6.1
+PORTVERSION=	3.7.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	deskutils
 
@@ -12,6 +12,7 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		cmake qt:5
+USE_LDCONFIG=	yes
 USE_XORG=	ice sm x11 xext xfixes xtst
 USE_QT=		core gui network script svg widgets x11extras xml \
 		buildtools_build linguist_build qmake_build \

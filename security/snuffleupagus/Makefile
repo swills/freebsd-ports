@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/snuffleupagus/Makefile 488765 2018-12-31 11:47:05Z joneum $
+# $FreeBSD: head/security/snuffleupagus/Makefile 489349 2019-01-05 15:47:56Z rene $
 
 PORTNAME=	snuffleupagus
 DISTVERSIONPREFIX=v
@@ -11,8 +11,6 @@ COMMENT=	Security module for PHP 7+
 
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/../LICENSE
-
-IGNORE_WITH_PHP=	56
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 

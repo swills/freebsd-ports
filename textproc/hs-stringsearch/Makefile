@@ -1,9 +1,9 @@
 # Created by: Samy Al Bahra <sbahra@kerneled.org>
-# $FreeBSD: head/textproc/hs-stringsearch/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-stringsearch/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	stringsearch
 PORTVERSION=	0.3.6.6
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

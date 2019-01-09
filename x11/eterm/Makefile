@@ -1,5 +1,5 @@
 # Created by: Murray Stokely <murray@FreeBSD.org>
-# $FreeBSD: head/x11/eterm/Makefile 449115 2017-09-02 09:38:21Z nobutaka $
+# $FreeBSD: head/x11/eterm/Makefile 489258 2019-01-04 18:15:39Z linimon $
 
 PORTNAME=	eterm
 PORTVERSION=	0.9.6
@@ -14,11 +14,6 @@ COMMENT?=	X11 terminal emulator based on rxvt/xterm
 BUILD_DEPENDS=	man2html:textproc/man2html
 LIB_DEPENDS=	libast.so:devel/libast \
 		libImlib2.so:graphics/imlib2
-
-BROKEN_aarch64=		fails to package: gdb.scr: no such file or directory
-BROKEN_mips=		fails to package: gdb.scr: no such file or directory
-BROKEN_mips64=		fails to package: gdb.scr: no such file or directory
-BROKEN_powerpc64=	fails to package: gdb.scr: no such file or directory
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS?=--enable-trans --enable-utmp \

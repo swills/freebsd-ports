@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@rpm5.org>
-# $FreeBSD: head/sysutils/createrepo/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/sysutils/createrepo/Makefile 489310 2019-01-05 09:13:17Z antoine $
 
 PORTNAME=	createrepo
 PORTVERSION=	0.10.4
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Utility to create and manage RPM metadata repositories
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Abandoned upstream, does not work with python3
+EXPIRATION_DATE=	2019-02-06
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sqlitecachec.py:devel/py-yum-metadata-parser@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2@${PY_FLAVOR} \

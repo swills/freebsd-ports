@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/elixir-jose/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/elixir-jose/Makefile 489302 2019-01-05 03:41:42Z vanilla $
 
 PORTNAME=	jose
-PORTVERSION=	1.8.4
+PORTVERSION=	1.9.0
 CATEGORIES=	security
 PKGNAMEPREFIX=	elixir-
 

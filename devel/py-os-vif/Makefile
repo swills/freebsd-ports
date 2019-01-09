@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-os-vif/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-os-vif/Makefile 489454 2019-01-06 10:18:42Z tobik $
 
 PORTNAME=	os-vif
-PORTVERSION=	1.4.0
+PORTVERSION=	1.11.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,6 +12,7 @@ MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Library for plugging and unplugging virtual interfaces in openstack
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stevedore>=1.17.1:devel/py-stevedore@${PY_FLAVOR} \

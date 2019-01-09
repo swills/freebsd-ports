@@ -1,9 +1,8 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/wyrmgus/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/games/wyrmgus/Makefile 489383 2019-01-05 21:05:00Z amdmi3 $
 
 PORTNAME=	wyrmgus
-PORTVERSION=	3.4.1
-PORTREVISION=	1
+PORTVERSION=	3.5.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games devel
 
@@ -44,6 +43,11 @@ OPENGL_USES=		gl
 OPENGL_USE=		GL=gl,glu
 OPENGL_CMAKE_ON=	-DWITH_RENDERER="OpenGL"
 OPENGL_CMAKE_OFF=	-DWITH_RENDERER="NativeSDL"
+
+post-patch:
+# fix debug build
+	@${REINPLACE_CMD} -e 's|OAML_LIBRARIES_SHARED_DEBUG|OAML_LIBRARIES_SHARED|' ${WRKSRC}/CMakeLists.txt
+	@${REINPLACE_CMD} -e '/stratagus-dbg/ d' ${WRKSRC}/CMakeLists.txt
 
 do-install:
 	${INSTALL_PROGRAM} ${CONFIGURE_WRKSRC}/stratagus ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

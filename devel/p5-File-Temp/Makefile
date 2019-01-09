@@ -1,8 +1,8 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/devel/p5-File-Temp/Makefile 475709 2018-07-29 19:11:45Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Temp/Makefile 489595 2019-01-07 18:12:14Z sunpoet $
 
 PORTNAME=	File-Temp
-PORTVERSION=	0.2308
+PORTVERSION=	0.2309
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

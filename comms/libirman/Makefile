@@ -1,24 +1,30 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/comms/libirman/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/comms/libirman/Makefile 489453 2019-01-06 10:06:28Z tobik $
 
 PORTNAME=	libirman
-PORTVERSION=	0.4.6
+PORTVERSION=	0.5.2
 CATEGORIES=	comms
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	rand@iteris.com
+MAINTAINER=	ndowens@yahoo.com
 COMMENT=	Library for Evation's Irman infrared receiver
 
 LICENSE=	LGPL20
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake libtool pathfix
+USES=		gmake libtool pkgconfig pathfix
+
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
 INSTALL_TARGET=	install-strip
 
-PORTDOCS=	README TECHNICAL
+DOCS=	AUTHORS ChangeLog README TECHNICAL TODO
 
 OPTIONS_DEFINE=	DOCS
+
+do-install-DOCS-on:
+	${MKDIR} ${STAGEDIR}${DOCSDIR}
+	(cd ${WRKSRC} && ${INSTALL_DATA} ${DOCS} ${STAGEDIR}${DOCSDIR})
 
 .include <bsd.port.mk>

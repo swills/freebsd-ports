@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 488895 2019-01-01 14:17:46Z rene $
+# $FreeBSD: head/graphics/Makefile 489518 2019-01-06 18:35:39Z pi $
 #
 
     COMMENT = Graphics tools and libraries
@@ -670,6 +670,7 @@
     SUBDIR += p5-Graphics-Color
     SUBDIR += p5-Graphics-ColorNames
     SUBDIR += p5-Graphics-ColorNames-WWW
+    SUBDIR += p5-Graphics-ColorUtils
     SUBDIR += p5-Graphics-GnuplotIF
     SUBDIR += p5-Graphics-Primitive
     SUBDIR += p5-Graphics-Primitive-Driver-Cairo
@@ -775,6 +776,7 @@
     SUBDIR += png2ico
     SUBDIR += pngcheck
     SUBDIR += pngcrush
+    SUBDIR += pnglite
     SUBDIR += pngnq
     SUBDIR += pngquant
     SUBDIR += pngrewrite
@@ -1089,6 +1091,7 @@
     SUBDIR += xv
     SUBDIR += xv-m17n
     SUBDIR += xwpick
+    SUBDIR += xzgv
     SUBDIR += yafaray
     SUBDIR += yagf
     SUBDIR += yed

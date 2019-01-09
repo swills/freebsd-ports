@@ -1,8 +1,8 @@
 # Created by: Damian Gerow <dgerow@afflictions.org>
-# $FreeBSD: head/security/openconnect/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/security/openconnect/Makefile 489284 2019-01-05 00:38:38Z zi $
 
 PORTNAME=	openconnect
-PORTVERSION=	7.08
+PORTVERSION=	8.00
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.infradead.org/pub/openconnect/ \
 		ZI
@@ -21,10 +21,12 @@ CONFIGURE_ARGS=	--disable-nls --with-vpnc-script=${LOCALBASE}/sbin/vpnc-script \
 		--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig \
 		--without-openssl-version-check --without-libpcsclite \
 		--without-libpskc
-USES=		cpe gmake iconv libtool pkgconfig python:build ssl
+USES=		cpe gmake iconv libtool pkgconfig python:build ssl shebangfix
 CPE_VENDOR=	infradead
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
+SHEBANG_FILES=	trojans/csd-post.sh trojans/csd-wrapper.sh \
+		trojans/tncc-wrapper.py
 PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS PROXY GNUTLS GSSAPI LZ4 P11 STOKEN

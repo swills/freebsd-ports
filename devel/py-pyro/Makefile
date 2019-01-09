@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-pyro/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/py-pyro/Makefile 489271 2019-01-04 20:34:57Z rm $
 
 PORTNAME=	pyro
-PORTVERSION=	4.73
+PORTVERSION=	4.74
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,10 +16,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}serpent>=1.24:devel/py-serpent@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USES=		dos2unix python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
+NO_ARCH=	yes
 PORTDOCS=	*
 PORTEXAMPLES=	*
 

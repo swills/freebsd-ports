@@ -1,9 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/graphics/openjpeg/Makefile 480624 2018-09-24 18:54:18Z sunpoet $
+# $FreeBSD: head/graphics/openjpeg/Makefile 489415 2019-01-05 22:47:22Z sunpoet $
 
 PORTNAME=	openjpeg
 PORTVERSION=	2.3.0
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

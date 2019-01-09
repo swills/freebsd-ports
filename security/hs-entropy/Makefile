@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-entropy/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/security/hs-entropy/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	entropy
-PORTVERSION=	0.3.8
-PORTREVISION=	3
+PORTVERSION=	0.4.1.4
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

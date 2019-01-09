@@ -1,9 +1,8 @@
 # Created by: Fred Cox
-# $FreeBSD: head/www/p5-WWW-Contact/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-WWW-Contact/Makefile 489353 2019-01-05 16:29:02Z swills $
 
 PORTNAME=	WWW-Contact
-PORTVERSION=	0.47
-PORTREVISION=	1
+PORTVERSION=	0.51
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:FAYLAND

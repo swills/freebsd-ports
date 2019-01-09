@@ -1,10 +1,9 @@
-# $FreeBSD: head/audio/drumkv1-lv2/Makefile 487409 2018-12-14 08:03:41Z yuri $
+# $FreeBSD: head/audio/drumkv1-lv2/Makefile 489498 2019-01-06 15:08:46Z tobik $
 
 PORTNAME=	drumkv1
 DISTVERSION=	0.9.4
 CATEGORIES=	audio multimedia
-MASTER_SITES=	SF/${PORTNAME}/
-MASTER_SITES=	http://download.sourceforge.net/${PORTNAME}/
+MASTER_SITES=	SF
 PKGNAMESUFFIX=	-lv2
 
 MAINTAINER=	yuri@FreeBSD.org

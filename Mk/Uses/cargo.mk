@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 487583 2018-12-16 12:08:32Z tobik $
+# $FreeBSD: head/Mk/Uses/cargo.mk 489241 2019-01-04 04:00:39Z jbeich $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -46,7 +46,7 @@ DISTFILES+=	${CARGO_DIST_SUBDIR}/${_crate}.tar.gz:cargo_${_crate:S/-//g:S/.//g}
 
 CARGO_BUILDDEP?=	yes
 .if ${CARGO_BUILDDEP:tl} == "yes"
-BUILD_DEPENDS+=	 rust>=1.31.0:lang/rust
+BUILD_DEPENDS+=	${RUST_DEFAULT}>=1.31.0:lang/${RUST_DEFAULT}
 .endif
 
 # Location of cargo binary (default to lang/rust's Cargo binary)

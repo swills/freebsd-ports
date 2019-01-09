@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/seqtools/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/seqtools/Makefile 489613 2019-01-07 19:54:40Z pi $
 
 PORTNAME=	seqtools
 PORTVERSION=	4.44.1
@@ -21,6 +21,7 @@ GNU_CONFIGURE=	yes
 USE_GNOME=	cairo gdkpixbuf2 gtk20
 USE_XORG=	x11
 CFLAGS+=	-I${LOCALBASE}/include
+LLD_UNSAFE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib -lexecinfo -lcurl -lsqlite3 -lm
 MAKE_JOBS_UNSAFE=	yes
 

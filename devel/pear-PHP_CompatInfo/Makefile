@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/devel/pear-PHP_CompatInfo/Makefile 473885 2018-07-04 13:50:16Z rene $
+# $FreeBSD: head/devel/pear-PHP_CompatInfo/Makefile 489325 2019-01-05 10:44:56Z joneum $
 
 PORTNAME=	PHP_CompatInfo
 PORTVERSION=	1.9.0
@@ -8,8 +8,6 @@ CATEGORIES=	devel pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR class to find out the minimum version and extensions required
-
-IGNORE_WITH_PHP=	56
 
 RUN_DEPENDS=	${PEARDIR}/Console/Table.php:devel/pear-Console_Table@${PHP_FLAVOR} \
 		${PEARDIR}/Console/Getargs.php:devel/pear-Console_Getargs@${PHP_FLAVOR} \

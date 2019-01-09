@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/net-im/mikutter/Makefile 486500 2018-12-03 07:47:38Z meta $
+# $FreeBSD: head/net-im/mikutter/Makefile 489562 2019-01-07 07:48:12Z meta $
 
 PORTNAME=	mikutter
-PORTVERSION=	3.8.3
+PORTVERSION=	3.8.4
 CATEGORIES=	net-im ruby
 MASTER_SITES=	http://mikutter.hachune.net/bin/ \
 		LOCAL/tota/${PORTNAME}
@@ -14,7 +14,7 @@ COMMENT=	Simple, powerful, and moeful Twitter client
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-gtk2>=3.2.9:x11-toolkits/rubygem-gtk2 \
+RUN_DEPENDS=	rubygem-gtk2>=3.3.0:x11-toolkits/rubygem-gtk2 \
 		rubygem-cairo>=1.12.9:graphics/rubygem-cairo \
 		rubygem-addressable>=2.5.2:www/rubygem-addressable \
 		rubygem-delayer>=0.0.2:devel/rubygem-delayer \

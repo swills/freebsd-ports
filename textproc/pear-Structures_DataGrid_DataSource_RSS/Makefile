@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-Structures_DataGrid_DataSource_RSS/Makefile 487985 2018-12-21 11:17:59Z joneum $
+# $FreeBSD: head/textproc/pear-Structures_DataGrid_DataSource_RSS/Makefile 489315 2019-01-05 09:59:31Z joneum $
 
 PORTNAME=	Structures_DataGrid_DataSource_RSS
 PORTVERSION=	0.1.1
@@ -9,8 +9,6 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	DataSource driver using RSS files
 
 LICENSE=	BSD2CLAUSE
-
-IGNORE_WITH_PHP=	56
 
 BUILD_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array@${PHP_FLAVOR}
 RUN_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array@${PHP_FLAVOR}

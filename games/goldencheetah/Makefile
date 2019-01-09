@@ -1,10 +1,10 @@
 # Created by: Bert Burgemeister <trebbu@googlemail.com>
-# $FreeBSD: head/games/goldencheetah/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/games/goldencheetah/Makefile 489081 2019-01-02 13:21:44Z riggs $
 
 PORTNAME=	GoldenCheetah
 PORTVERSION=	3.2
 DISTVERSIONPREFIX=	V
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 
 MAINTAINER=	trebbu@googlemail.com
@@ -20,8 +20,9 @@ BROKEN=		fails to build
 
 LIB_DEPENDS=	libical.so:devel/libical \
 		libqwtplot3d-qt4.so:math/qwtplot3d-qt4 \
-		libkqoauth.so:security/kqoauth \
-		libvlc.so:multimedia/vlc-qt4
+		libkqoauth.so:security/kqoauth
+		#vlc-qt4 is deprecated and has been removed
+		#libvlc.so:multimedia/vlc-qt4
 
 USE_GITHUB=	yes
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-hspec-expectations/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/devel/hs-hspec-expectations/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	hspec-expectations
 PORTVERSION=	0.8.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

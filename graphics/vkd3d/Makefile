@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/vkd3d/Makefile 482194 2018-10-16 00:00:46Z jbeich $
+# $FreeBSD: head/graphics/vkd3d/Makefile 489243 2019-01-04 04:40:19Z jbeich $
 
 PORTNAME=	vkd3d
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://dl.winehq.org/${PORTNAME}/source/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -27,7 +28,7 @@ TEST_TARGET=	check
 # XXX Move to a separate port (a la devel/vulkan-headers) and maybe make
 #     devel/spirv-tools depend on it as well
 USE_GITHUB=	nodefault
-GH_TUPLE=	KhronosGroup:SPIRV-Headers:ff684ff:headers/external/spirv-headers
+GH_TUPLE=	KhronosGroup:SPIRV-Headers:4618b86e9e4b0:headers/external/spirv-headers
 CPPFLAGS+=	-isystem${WRKSRC}/external/spirv-headers/include
 
 post-patch:

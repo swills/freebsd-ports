@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/hs-graphviz/Makefile 475642 2018-07-29 10:40:28Z arrowd $
+# $FreeBSD: head/graphics/hs-graphviz/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	graphviz
 PORTVERSION=	2999.20.0.2
+PORTREVISION=	2
 CATEGORIES=	graphics haskell
 
 MAINTAINER=	haskell@FreeBSD.org

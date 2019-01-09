@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/mirmon/Makefile 419503 2016-08-03 09:31:15Z jadawin $
+# $FreeBSD: head/misc/mirmon/Makefile 489484 2019-01-06 12:36:42Z tobik $
 
 PORTNAME=	mirmon
 PORTVERSION=	2.11
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.staff.science.uu.nl/~penni101/mirmon/
 
@@ -10,10 +11,9 @@ MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Monitor the status of mirrors
 
 NO_BUILD=	yes
-USES=		perl5
+USES=		perl5 shebangfix
 USE_PERL5=	run
 
-USES=		shebangfix
 SHEBANG_FILES=	${WRKSRC}/mirmon ${WRKSRC}/probe
 
 SUB_FILES=	pkg-message

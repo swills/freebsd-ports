@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-zookeeper/Makefile 477015 2018-08-12 17:33:47Z sunpoet $
+# $FreeBSD: head/devel/pecl-zookeeper/Makefile 489107 2019-01-02 23:58:06Z sunpoet $
 
 PORTNAME=	zookeeper
 PORTVERSION=	0.6.2
@@ -13,9 +13,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libzookeeper_mt.so:devel/libzookeeper
 
-IGNORE_WITH_PHP=56
-USE_PHP=	session:build
 USES=		php:pecl
+USE_PHP=	session:build
 
 PORTDATA=	zookeeper-api.php
 

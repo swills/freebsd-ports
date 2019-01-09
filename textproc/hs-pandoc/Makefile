@@ -1,8 +1,8 @@
 # Created by: John MacFarlane <jgm@berkeley.edu>
-# $FreeBSD: head/textproc/hs-pandoc/Makefile 473611 2018-06-30 09:57:59Z arrowd $
+# $FreeBSD: head/textproc/hs-pandoc/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	pandoc
-PORTVERSION=	2.2
+PORTVERSION=	2.5
 PORTREVISION=	1
 CATEGORIES=	textproc haskell
 
@@ -11,14 +11,14 @@ COMMENT=	Conversion between markup formats
 
 LICENSE=	GPLv2
 
-USE_CABAL=	Glob aeson aeson-pretty base64-bytestring blaze-html \
+USE_CABAL=	aeson aeson-pretty base64-bytestring blaze-html \
 		blaze-markup cmark cmark-gfm data-default \
 		deepseq-generics doctemplates extensible-exceptions  \
-		filemanip haddock-library \
-		hslua hslua-module-text HTTP JuicyPixels mtl  \
+		filemanip Glob haddock-library \
+		hslua hslua-module-text HsYAML HTTP JuicyPixels mtl  \
 		network network-uri pandoc-types \
 		random scientific SHA skylighting syb tagsoup\
-		temporary texmath \
+		temporary texmath unicode-transforms \
 		unordered-containers vector xml \
 		yaml zip-archive zlib
 

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/pacpl/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/audio/pacpl/Makefile 489600 2019-01-07 18:15:31Z tobik $
 
 PORTNAME=	pacpl
 PORTVERSION=	5.1.0
@@ -48,7 +48,6 @@ OPTIMFROG_RUN_DEPENDS=	ofr:audio/optimfrog
 OPUS_DESC=		Ogg Opus audio codec support
 OPUS_RUN_DEPENDS=	opusenc:audio/opus-tools
 SNDFILE_RUN_DEPENDS=	sndfile-convert:audio/libsndfile
-VORBIS_RUN_DEPENDS=	oggenc:audio/vorbis-tools
 SHORTEN_DESC=		Shorten audio support
 SHORTEN_RUN_DEPENDS=	shorten:audio/shorten
 SOX_DESC=		Audio conversion support via SoX

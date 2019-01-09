@@ -1,5 +1,5 @@
 # Created by: Philip Stoev <philip.stoev@galeracluster.com>
-# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 489273 2019-01-04 20:55:15Z antoine $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION?=	5.6.42
@@ -13,6 +13,7 @@ COMMENT=	MySQL database enhanced with Galera replication (server package)
 
 LICENSE=	GPLv2
 
+BROKEN=		checksum and size mismatch
 NOT_FOR_ARCHS=		aarch64 armv6 armv7 powerpc64
 NOT_FOR_ARCHS_REASON=	error: Unsupported platform
 

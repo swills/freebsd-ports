@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/guitarix-lv2/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/audio/guitarix-lv2/Makefile 489588 2019-01-07 17:23:25Z antoine $
 
 PORTNAME=	guitarix
 DISTVERSION=	0.37.3
@@ -41,7 +41,7 @@ LIB_DEPENDS=	libavahi-common.so:net/avahi-app \
 RUN_DEPENDS=	roboto-fonts-ttf>0:x11-fonts/roboto-fonts-ttf
 
 USES=		eigen:3 libarchive localbase:ldflags pkgconfig \
-		python:build readline waf tar:xz
+		python:2.7,build readline waf tar:xz
 USE_GNOME=	atkmm cairo gtk20 gtkmm24 pangomm
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes

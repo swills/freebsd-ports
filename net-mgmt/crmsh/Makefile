@@ -1,5 +1,5 @@
 # Created by: David Shane Holden <dpejesh@yahoo.com>
-# $FreeBSD: head/net-mgmt/crmsh/Makefile 470421 2018-05-19 16:35:48Z miwi $
+# $FreeBSD: head/net-mgmt/crmsh/Makefile 489585 2019-01-07 16:57:00Z tobik $
 
 PORTNAME=		crmsh
 PORTVERSION=		3.0.1
@@ -25,8 +25,6 @@ USE_GITHUB=		yes
 GH_ACCOUNT=		ClusterLabs
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--with-ocf-root=${PREFIX}/lib/ocf
-USE_GITHUB=		yes
-GH_ACCOUNT=		ClusterLabs
 
 NO_ARCH=		yes
 

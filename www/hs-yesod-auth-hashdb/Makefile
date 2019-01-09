@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/hs-yesod-auth-hashdb/Makefile 479016 2018-09-05 09:38:15Z amdmi3 $
+# $FreeBSD: head/www/hs-yesod-auth-hashdb/Makefile 489474 2019-01-06 12:18:06Z arrowd $
 
 PORTNAME=	yesod-auth-hashdb
-PORTVERSION=	1.7
+PORTVERSION=	1.7.1
 PORTREVISION=	1
 CATEGORIES=	www haskell
 

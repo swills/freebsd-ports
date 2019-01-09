@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/py-hared/Makefile 470219 2018-05-17 14:12:18Z dvl $
+# $FreeBSD: head/sysutils/py-hared/Makefile 489522 2019-01-06 19:26:03Z tobik $
 
 PORTNAME=	hared
 PORTVERSION=	1.0
-PORTREVISION=	1
 PORTREVISION=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
