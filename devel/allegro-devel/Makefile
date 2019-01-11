@@ -2,11 +2,14 @@
 # $FreeBSD$
 
 PORTNAME=	allegro
-DISTVERSION=	5.0.9
+DISTVERSION=	5.2.4
 PORTREVISION=	5
 CATEGORIES=	devel
-MASTER_SITES=	SF/alleg/allegro/${PORTVERSION}
 PKGNAMESUFFIX=	-devel
+USE_GITHUB=     yes
+GH_ACCOUNT=	liballeg
+GH_PROJECT=	allegro5
+GH_TAGNAME=	5.2.4.0
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
@@ -102,7 +105,7 @@ post-install:
 .if ${PORT_OPTIONS:MEXAMPLES}
 	@(cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
 . for l in ex_acodec ex_acodec_multi ex_audio_chain ex_audio_props ex_audio_simple \
-	ex_bitmap ex_bitmap_flip ex_bitmap_target ex_blend ex_blend2 \
+	ex_bitmap ex_bitmap_flip ex_blend ex_blend2 \
 	ex_blend_bench ex_blend_test ex_blit ex_clip ex_color ex_config ex_convert \
 	ex_dir ex_disable_screensaver ex_display_events ex_display_options \
 	ex_draw ex_draw_bitmap ex_drawpixels ex_dualies ex_expose ex_file_slice \
