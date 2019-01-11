@@ -1,15 +1,18 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
 # $FreeBSD$
 
-PORTNAME=	go-sql-driver
-PORTVERSION=	1.1
+PORTNAME=		go-sql-driver
+PORTVERSION=		1.4.0
 DISTVERSIONPREFIX=	v
-CATEGORIES=	devel
-MASTER_SITES=	GH \
-		http://mirrors.rit.edu/zi/
+CATEGORIES=		devel
+MASTER_SITES=		GH \
+			http://mirrors.rit.edu/zi/
 
 MAINTAINER=	lattera@gmail.com
 COMMENT=	Lightweight and fast MySQL driver for go
+
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go
 USE_GITHUB=	yes
