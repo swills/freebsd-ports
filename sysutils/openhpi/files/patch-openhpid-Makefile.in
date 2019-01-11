@@ -1,0 +1,15 @@
+--- openhpid/Makefile.in.orig	2018-09-03 22:08:46.366880000 +0200
++++ openhpid/Makefile.in	2018-09-03 22:08:58.462763000 +0200
+@@ -944,9 +944,9 @@
+ 
+ .NOTPARALLEL:
+ 
+-install-data-local:
+-	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/init.d
+-	$(INSTALL) -m 0755 openhpid.sh $(DESTDIR)$(sysconfdir)/init.d/openhpid
++#install-data-local:
++#	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/init.d
++#	$(INSTALL) -m 0755 openhpid.sh $(DESTDIR)$(sysconfdir)/init.d/openhpid
+ 
+ uninstall-local:
+ 	rm -f $(DESTDIR)$(sysconfdir)/init.d/openhpid

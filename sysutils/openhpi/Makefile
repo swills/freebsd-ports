@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	openhpi
-PORTVERSION=	3.6.1
-PORTREVISION=	1
+PORTVERSION=	3.8.0
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/openhpi/openhpi-stable/${PORTVERSION}/
 
@@ -34,12 +33,12 @@ USE_RC_SUBR=	openhpid
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	@${REINPLACE_CMD} 's/-lstdc++//' \
+	${REINPLACE_CMD} 's/-lstdc++//' \
 		${WRKSRC}/baselib/Makefile.in \
 		${WRKSRC}/openhpid/Makefile.in \
 		${WRKSRC}/plugins/dynamic_simulator/Makefile.in \
 		${WRKSRC}/plugins/ipmidirect/Makefile.in
-	@${REINPLACE_CMD} '/XML2_INCLUDE=/s|=.*|=-I${LOCALBASE}/include/libxml2|' \
+	${REINPLACE_CMD} '/XML2_INCLUDE=/s|=.*|=-I${LOCALBASE}/include/libxml2|' \
 		${WRKSRC}/configure
 
 post-install:
