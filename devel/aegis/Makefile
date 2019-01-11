@@ -18,7 +18,6 @@ RUN_DEPENDS=	tkdiff:textproc/tkdiff
 
 USES=		gettext ghostscript groff perl5 tk
 USE_GNOME=	libxml2
-USE_GCC=	any
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	"-I${LOCALBASE}/include"
 CONFIGURE_ARGS=	--with-nlsdir="${PREFIX}/share/locale"
