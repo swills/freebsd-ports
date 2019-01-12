@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gollum
-PORTVERSION=	4.1.2
+PORTVERSION=	4.1.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -20,10 +20,11 @@ RUN_DEPENDS=	git:devel/git \
 		rubygem-sinatra1>=1.4.4:www/rubygem-sinatra1 \
 		rubygem-useragent>=0.16.2:devel/rubygem-useragent
 
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
 USE_RC_SUBR=	${PORTNAME}
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/gollum
 PLIST_DIRS=     %%WWWDIR%%
