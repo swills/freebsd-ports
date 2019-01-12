@@ -1270,6 +1270,7 @@
     SUBDIR += jech-dht
     SUBDIR += jenkins
     SUBDIR += jenkins-lts
+    SUBDIR += jetbrains-phpstorm
     SUBDIR += jfrog-cli
     SUBDIR += jiic
     SUBDIR += jiri
@@ -5828,6 +5829,7 @@
     SUBDIR += rubygem-parser
     SUBDIR += rubygem-pastel
     SUBDIR += rubygem-patch_finder
+    SUBDIR += rubygem-pathspec
     SUBDIR += rubygem-pathutil
     SUBDIR += rubygem-peek
     SUBDIR += rubygem-peek-rails50
