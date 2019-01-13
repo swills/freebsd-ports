@@ -4687,6 +4687,7 @@
     SUBDIR += py-logutils
     SUBDIR += py-louie
     SUBDIR += py-lxml
+    SUBDIR += py-macholib
     SUBDIR += py-magic
     SUBDIR += py-mailcap-fix
     SUBDIR += py-manuel
@@ -5372,6 +5373,7 @@
     SUBDIR += qt5-qdoc
     SUBDIR += qt5-qdoc-data
     SUBDIR += qt5-qmake
+    SUBDIR += qt5-remoteobjects
     SUBDIR += qt5-script
     SUBDIR += qt5-scripttools
     SUBDIR += qt5-scxml
@@ -5417,6 +5419,7 @@
     SUBDIR += root-doc
     SUBDIR += rote
     SUBDIR += rpc2
+    SUBDIR += rpclib
     SUBDIR += rpm-spec-mode.el
     SUBDIR += rsvndump
     SUBDIR += rth
