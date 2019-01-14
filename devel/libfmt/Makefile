@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	libfmt
-DISTVERSION=	4.1.0
-PORTREVISION=	2
+DISTVERSION=	5.3.0
 CATEGORIES=	devel
 
 MAINTAINER=	SlavaMikerov@gmail.com
