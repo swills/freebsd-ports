@@ -4283,6 +4283,7 @@
     SUBDIR += py-XStatic-tv4
     SUBDIR += py-ZopeUndo
     SUBDIR += py-adb
+    SUBDIR += py-aenum
     SUBDIR += py-aioice
     SUBDIR += py-aiorpcX
     SUBDIR += py-aiortc
@@ -4635,6 +4636,7 @@
     SUBDIR += py-json-py
     SUBDIR += py-json-sempai
     SUBDIR += py-json_tricks
+    SUBDIR += py-jsonform
     SUBDIR += py-jsonlib
     SUBDIR += py-jsonlib2
     SUBDIR += py-jsonlines
