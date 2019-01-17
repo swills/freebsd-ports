@@ -780,6 +780,7 @@
     SUBDIR += git-lite
     SUBDIR += git-merge-changelog
     SUBDIR += git-modes
+    SUBDIR += git-remote-hg
     SUBDIR += git-review
     SUBDIR += git-subversion
     SUBDIR += git-town
@@ -5142,6 +5143,7 @@
     SUBDIR += py-typechecks
     SUBDIR += py-typed-ast
     SUBDIR += py-typing
+    SUBDIR += py-typing-extensions
     SUBDIR += py-tzlocal
     SUBDIR += py-u-msgpack-python
     SUBDIR += py-ua_parser
