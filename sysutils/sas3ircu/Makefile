@@ -1,12 +1,12 @@
 # $FreeBSD$
 
 PORTNAME=	sas3ircu
-PORTVERSION=	11.00.00.00
+PORTVERSION=	17.00.00.00
 CATEGORIES=	sysutils
 MASTER_SITES=
-DISTNAME=	SAS3IRCU_P10
+DISTNAME=	SAS3IRCU_P16
 
-LSI_SITES=	http://docs.avagotech.com/docs-and-downloads/host-bus-adapters/host-bus-adapters-common-files/sas_sata_12g_p10/
+LSI_SITES=	https://docs.broadcom.com/docs/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SAS-3 Integrated RAID Configuration Utility
@@ -24,8 +24,8 @@ RESTRICTED=	May not be redistributed. Must accept license to download.
 OPTIONS_DEFINE=	DOCS
 
 PLIST_FILES=	sbin/sas3ircu
-PORTDOCS=	IRCU_MPT_GEN3_Phase10.0-11.00.00.00.pdf \
-		README_SAS3IRCU_P10.txt
+PORTDOCS=	IRCU_MPT_GEN3_Phase16.0-17.00.00.00.pdf \
+		README_SAS3IRCU_P16.txt
 
 DISTFILE_INSTRUCTIONS=	\n\
 Due to licensing restrictions, certain files must be fetched manually.\n\
@@ -46,12 +46,12 @@ pre-fetch:
 .endif
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME}_${OPSYS:tl}_${ARCH:tl}_rel/${PORTNAME} \
+	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME}_rel/${PORTNAME}/${PORTNAME}_${OPSYS:tl}_${ARCH:tl}_rel/${PORTNAME} \
 		${STAGEDIR}${PREFIX}/sbin
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/IRCU_MPT_GEN3_Phase10.0-${PORTVERSION}.pdf \
-		${WRKSRC}/README_SAS3IRCU_P10.txt ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/IRCU_MPT_GEN3_Phase16.0-${PORTVERSION}.pdf \
+		${WRKSRC}/README_SAS3IRCU_P16.txt ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.post.mk>
