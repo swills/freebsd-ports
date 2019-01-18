@@ -2,14 +2,15 @@
 # $FreeBSD$
 
 PORTNAME=	webtrees
-PORTVERSION=	1.7.9
+PORTVERSION=	1.7.12
 CATEGORIES=	www
-MASTER_SITES=	http://launchpad.net/${PORTNAME}/${PORTVERSION:R}/${PORTVERSION}/+download/
+
+MASTER_SITES=	http://github.com/fisharebest/${PORTNAME}/releases/download/${PORTVERSION}/
 
 MAINTAINER=	fbsd@opal.com
 COMMENT=	Online genealogy viewer
 
-EXTRACT_AFTER_ARGS=	-d ${WRKSRC}
+EXTRACT_AFTER_ARGS=    -d ${WRKSRC}
 
 USES=		cpe php shebangfix zip
 SHEBANG_FILES=	webtrees/vendor/ezyang/htmlpurifier/maintenance/*.php \
