@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	postsrsd
-PORTVERSION=	1.4
-PORTREVISION=	1
+PORTVERSION=	1.5
 CATEGORIES=	mail
 
 MAINTAINER=	ports@bsdserwis.com
