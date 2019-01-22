@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	tpm-tools
-PORTVERSION=	1.3.8
+PORTVERSION=	1.3.9.1
 CATEGORIES=	security
 MASTER_SITES=	SF/trousers/${PORTNAME}/${PORTVERSION}
 
@@ -19,11 +19,12 @@ BUILD_DEPENDS=	pkcsconf:security/opencryptoki
 RUN_DEPENDS=	${LOCALBASE}/sbin/tcsd:security/trousers \
 		${LOCALBASE}/lib/pkcs11/libopencryptoki.so:security/opencryptoki
 
-USES=		gettext gmake iconv libtool
+USES=		gettext gmake iconv libtool perl5
 USE_LDCONFIG=	YES
 GNU_CONFIGURE=	YES
 LIBS+=		-L${LOCALBASE}/lib -lintl
 INSTALL_TARGET=	install-strip
+WRKSRC=		${WRKDIR}
 
 post-patch:
 	@${REINPLACE_CMD} '/^libtpm_unseal_la_LIBADD =/s/$$/ -lcrypto/' \

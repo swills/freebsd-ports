@@ -1,11 +1,11 @@
---- src/data_mgmt/Makefile.am.orig	2012-05-17 17:50:29 UTC
-+++ src/data_mgmt/Makefile.am
-@@ -38,7 +38,7 @@ noinst_HEADERS =	data_common.h \
+--- src/data_mgmt/Makefile.am.orig	2017-02-21 04:23:57.000000000 +0300
++++ src/data_mgmt/Makefile.am	2018-11-18 13:07:05.984702000 +0300
+@@ -38,7 +38,7 @@
  # Common build flags
  AM_CPPFLAGS	=	-I$(top_srcdir)/include -D_LINUX
  
--LDADD		=	$(top_builddir)/lib/libtpm_pkcs11.la -ltspi -ldl
-+LDADD		=	$(top_builddir)/lib/libtpm_pkcs11.la -ltspi
+-LDADD		=	$(top_builddir)/lib/libtpm_pkcs11.la -ltspi -ldl @INTLLIBS@
++LDADD		=	$(top_builddir)/lib/libtpm_pkcs11.la -ltspi @INTLLIBS@
  
  
  #

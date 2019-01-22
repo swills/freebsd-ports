@@ -1,6 +1,6 @@
---- src/tpm_mgmt/tpm_takeownership.c.orig	2010-09-30 17:28:09 UTC
-+++ src/tpm_mgmt/tpm_takeownership.c
-@@ -77,6 +77,7 @@ int main(int argc, char **argv)
+--- src/tpm_mgmt/tpm_takeownership.c.orig	2017-02-21 04:23:57.000000000 +0300
++++ src/tpm_mgmt/tpm_takeownership.c	2018-11-18 13:21:03.885587000 +0300
+@@ -77,6 +77,7 @@
  	{"srk-well-known", no_argument, NULL, 'z'},
  	};
  
