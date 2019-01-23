@@ -1,0 +1,34 @@
+before_script:
+   - sudo rm -rf /usr/local/etc/poudriere.d/ports/swills-freebsd-ports
+   - sudo poudriere ports -c -m null -p swills-freebsd-ports -f none -M ${CI_PROJECT_DIR}
+   - PORT_LIST=$(mktemp) ; git diff --name-only $(git merge-base origin/${CI_COMMIT_REF_NAME} origin/master) origin/${CI_COMMIT_REF_NAME} | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST} ; cat ${PORT_LIST}
+
+head-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j head-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+  - cd /usr/local/poudriere/data/packages/head-amd64-swills-freebsd-ports/.real_* ; env JFROG_CLI_LOG_LEVEL=ERROR jfrog rt u --build-name=head-amd64 --build-number=${CI_PIPELINE_ID} --include-dirs --symlinks --flat=false '*' pkgs-head-amd64-swills-freebsd-ports/${CI_PIPELINE_ID}/ ; rm -rf /tmp/jfrog
+
+120-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 120-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+  - cd /usr/local/poudriere/data/packages/120-amd64-swills-freebsd-ports/.real_* ; env JFROG_CLI_LOG_LEVEL=ERROR jfrog rt u --build-name=120-amd64 --build-number=${CI_PIPELINE_ID} --include-dirs --symlinks --flat=false '*' pkgs-120-amd64-swills-freebsd-ports/${CI_PIPELINE_ID}/ ; rm -rf /tmp/jfrog
+
+112-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 112-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+  - cd /usr/local/poudriere/data/packages/112-amd64-swills-freebsd-ports/.real_* ; env JFROG_CLI_LOG_LEVEL=ERROR jfrog rt u --build-name=112-amd64 --build-number=${CI_PIPELINE_ID} --include-dirs --symlinks --flat=false '*' pkgs-112-amd64-swills-freebsd-ports/${CI_PIPELINE_ID}/ ; rm -rf /tmp/jfrog
+
+take_bug:
+  tags:
+    - FreeBSD
+  script:
+  - /usr/home/jenkins-builder/workspace/test-build-pr-patch/take_bug 235163
