@@ -71,7 +71,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-hashie-forbidden_attributes>=0:devel/rubygem-hashie-forbidden_attributes \
 	rubygem-kaminari-rails50>=1.0:www/rubygem-kaminari-rails50 \
 	rubygem-hamlit>=2.8.8:www/rubygem-hamlit \
-	rubygem-carrierwave>=1.2.3:www/rubygem-carrierwave \
+	rubygem-carrierwave>=1.3.0:www/rubygem-carrierwave \
 	rubygem-mini_magick>=0:graphics/rubygem-mini_magick \
 	rubygem-fog-aws2>=2.0.1:net/rubygem-fog-aws2 \
 	rubygem-fog-core1>=1.44:devel/rubygem-fog-core1 \
