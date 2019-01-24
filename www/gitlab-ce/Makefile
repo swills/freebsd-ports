@@ -163,7 +163,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-sentry-raven>=2.7:devel/rubygem-sentry-raven \
 	rubygem-premailer-rails19-rails50>=1.9.7:mail/rubygem-premailer-rails19-rails50 \
 	rubygem-ruby_parser>=3.8.4:devel/rubygem-ruby_parser \
-	rubygem-rails-i18n-rails50>=4.0.9:devel/rubygem-rails-i18n-rails50 \
+	rubygem-rails-i18n-rails50>=5.1.0:devel/rubygem-rails-i18n-rails50 \
 	rubygem-gettext_i18n_rails>=1.8.0:devel/rubygem-gettext_i18n_rails \
 	rubygem-gettext_i18n_rails_js-rails50>=1.3:devel/rubygem-gettext_i18n_rails_js-rails50 \
 	rubygem-gettext>=3.2.2:devel/rubygem-gettext \
