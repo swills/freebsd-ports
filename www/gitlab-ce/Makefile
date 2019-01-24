@@ -149,6 +149,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-webpack-rails-rails50>=0.9.10:www/rubygem-webpack-rails-rails50 \
 	rubygem-rack-proxy>=0.6.0:www/rubygem-rack-proxy \
 	rubygem-sass-rails-rails50>=5.0.6:textproc/rubygem-sass-rails-rails50 \
+	rubygem-sass>=3.5.0:textproc/rubygem-sass \
 	rubygem-uglifier27>=2.7.2:www/rubygem-uglifier27 \
 	rubygem-addressable>=2.5.2:www/rubygem-addressable \
 	rubygem-font-awesome-rails-rails50>=4.7:devel/rubygem-font-awesome-rails-rails50 \
