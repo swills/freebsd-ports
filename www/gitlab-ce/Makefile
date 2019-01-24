@@ -51,7 +51,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-omniauth_crowd22>=2.2.0:devel/rubygem-omniauth_crowd22 \
 	rubygem-omniauth-authentiq>=0.3.3:net/rubygem-omniauth-authentiq \
 	rubygem-rack-oauth212>=1.2.1:security/rubygem-rack-oauth212 \
-	rubygem-jwt1>=1.5.6:www/rubygem-jwt1 \
+	rubygem-jwt>=2.1.0:www/rubygem-jwt \
 	rubygem-recaptcha3>=3.0:devel/rubygem-recaptcha3 \
 	rubygem-akismet>=2.0:devel/rubygem-akismet \
 	rubygem-devise-two-factor-rails50>=3.0.0:security/rubygem-devise-two-factor-rails50 \
