@@ -255,7 +255,6 @@ do-install:
 	${FIND} ${WRKSRC} -name '*.gitkeep' -delete
 	${FIND} ${WRKSRC} -name '*.gitignore' -delete
 	${FIND} ${WRKSRC} -name "Gemfile.lock" -delete
-	${FIND} ${WRKSRC} -name "Gemfile.rail5.lock" -delete
 	${MV} ${WRKSRC}/config/gitlab.yml.example ${WRKSRC}/config/gitlab.yml.sample
 	${MV} ${WRKSRC}/config/unicorn.rb.example ${WRKSRC}/config/unicorn.rb.sample
 	${MV} ${WRKSRC}/config/resque.yml.example ${WRKSRC}/config/resque.yml.sample
