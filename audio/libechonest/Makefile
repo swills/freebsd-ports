@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/audio/libechonest/Makefile 489228 2019-01-03 21:43:57Z sbruno $
+# $FreeBSD: head/audio/libechonest/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	libechonest
 PORTVERSION=	2.3.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libqjson-qt5.so:devel/qjson@qt5
 
-USES=		cmake qt:5 pkgconfig
+USES=		cmake compiler:c++11-lang pkgconfig qt:5
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	lfranchi

@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/kf5-krunner/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11/kf5-krunner/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	krunner
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

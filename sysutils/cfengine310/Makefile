@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine310/Makefile 485214 2018-11-18 05:56:27Z cy $
+# $FreeBSD: head/sysutils/cfengine310/Makefile 489751 2019-01-09 03:53:25Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.10.5
@@ -18,7 +18,7 @@ CPE_VENDOR=	gnu
 DEPRECATED=		OpenSSL 1.1.X is not supported.
 EXPIRATION_DATE=	2021-09-30
 
-CONFLICTS=	cfengine-2* cfengine3[0-9]-* cfengine31[1-9]-*
+CONFLICTS=	cfengine3[0-9]-* cfengine31[1-9]-*
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=	310
 CONFLICTS+=	cfengine-3.*

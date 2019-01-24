@@ -1,5 +1,5 @@
 # Created by: Gautam Mani <execve@gmail.com>
-# $FreeBSD: head/games/stockfish/Makefile 488019 2018-12-21 19:23:45Z fernape $
+# $FreeBSD: head/games/stockfish/Makefile 490272 2019-01-14 15:44:21Z swills $
 
 PORTNAME=	stockfish
 DISTVERSION=	10
@@ -61,6 +61,8 @@ ALL_TARGET=	${TGTBLD} ARCH=${MYARCH} COMP=${MYCC}
 
 post-patch:
 	@${REINPLACE_CMD} -e "s/^PREFIX =/PREFIX ?=/" ${WRKSRC}/Makefile
+	@${REINPLACE_CMD} -e "s/CXX=g++/CXX=g++${GCC_DEFAULT}/" \
+		${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/stockfish ${STAGEDIR}${PREFIX}/bin

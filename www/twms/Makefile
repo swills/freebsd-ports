@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/twms/Makefile 473581 2018-06-29 21:28:59Z antoine $
+# $FreeBSD: head/www/twms/Makefile 489861 2019-01-10 13:01:00Z amdmi3 $
 
 PORTNAME=	twms
 PORTVERSION=	0.06y
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyproj>0:graphics/py-pyproj@${PY_FLAVOR} \
 USE_GITHUB=	yes
 GH_ACCOUNT=	Komzpa
 
-USES=		python:2.7
+USES=		python:2.7  # 2.7 only because of webpy dependency
 USE_PYTHON=	distutils py3kplist optsuffix
 NO_ARCH=	yes
 

@@ -1,8 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina/Makefile 456961 2017-12-22 02:40:39Z araujo $
+# $FreeBSD: head/x11/lumina/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 PORTEPOCH=	3
 CATEGORIES=	x11
 

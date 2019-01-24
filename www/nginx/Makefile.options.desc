@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/nginx/Makefile.options.desc 487508 2018-12-15 12:45:51Z joneum $
+# $FreeBSD: head/www/nginx/Makefile.options.desc 490368 2019-01-15 12:35:35Z joneum $
 
 AJP_DESC=			3rd party ajp module
 ARRAYVAR_DESC=			3rd party array_var module

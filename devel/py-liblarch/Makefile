@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-liblarch/Makefile 477795 2018-08-22 16:04:13Z rm $
+# $FreeBSD: head/devel/py-liblarch/Makefile 490166 2019-01-13 18:20:38Z rm $
 
 PORTNAME=	liblarch
 PORTVERSION=	2.1.0
@@ -17,6 +17,8 @@ USES=		python:2.7
 USE_GITHUB=	yes
 USE_GNOME=	pygobject
 USE_PYTHON=	distutils autoplist
+
 NO_ARCH=	yes
+PORTSCOUT=	ignore:v3.0
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm-cheri/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/llvm-cheri/Makefile 489658 2019-01-08 09:06:37Z tobik $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.0.d${SNAPDATE}
@@ -69,8 +69,6 @@ LLDB_BUILD_DEPENDS=	swig3.0:devel/swig30
 LLDB_BINARY_ALIAS=	swig=swig3.0
 LLDB_GH_PROJECT=	lldb:lldb
 LLDB_GH_TAGNAME=	${LLDB_COMMIT}:lldb
-
-OPTIONS_SUB=	yes
 
 DOCS_BUILD_DEPENDS=		sphinx-build:textproc/py-sphinx
 

@@ -1,9 +1,10 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 489520 2019-01-06 18:57:47Z swills $
+# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	openorienteering-mapper
 PORTVERSION=	0.8.4
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	graphics geography
 
 MAINTAINER=	sikmir@gmail.com

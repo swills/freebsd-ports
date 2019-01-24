@@ -1,14 +1,14 @@
-# $FreeBSD: head/www/mod_security/Makefile 484696 2018-11-11 15:38:50Z danfe $
+# $FreeBSD: head/www/mod_security/Makefile 490715 2019-01-19 08:30:21Z joneum $
 
 PORTNAME=	mod_security
-PORTVERSION=	2.9.2
-PORTREVISION=	3
+PORTVERSION=	2.9.3
+PORTREVISION=	0
 CATEGORIES=	www security
 MASTER_SITES=	http://www.modsecurity.org/tarball/${PORTVERSION}/
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME:S/_//:S/2//}-${PORTVERSION}
 
-MAINTAINER=	walter@lifeforms.nl
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Intrusion detection and prevention engine
 
 LICENSE=	APACHE20
@@ -20,7 +20,7 @@ LIB_DEPENDS+=	libpcre.so:devel/pcre \
 		libgdbm.so:databases/gdbm \
 		libexpat.so:textproc/expat2
 
-USES=		apache:2.2+ perl5 pkgconfig shebangfix bdb
+USES=		apache:2.4+ perl5 pkgconfig shebangfix bdb
 USE_GNOME=	libxml2
 GNU_CONFIGURE=	yes
 SHEBANG_FILES=	tools/rules-updater.pl.in mlogc/mlogc-batch-load.pl.in

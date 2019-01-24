@@ -1,9 +1,9 @@
 # Created by: Jeffrey Baitis <jeff@baitis.net>
-# $FreeBSD: head/comms/libsdr-gui/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/comms/libsdr-gui/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	libsdr-gui
 PORTVERSION=	0.1.0
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	comms hamradio
 

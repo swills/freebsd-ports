@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/qownnotes/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/deskutils/qownnotes/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qownnotes
 DISTVERSION=	18.07.2
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	https://download.tuxfamily.org/qownnotes/src/
 

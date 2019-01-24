@@ -1,9 +1,9 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/polish/qnapi/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/polish/qnapi/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qnapi
 PORTVERSION=	0.2.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	polish multimedia
 
 MAINTAINER=	ports@FreeBSD.org

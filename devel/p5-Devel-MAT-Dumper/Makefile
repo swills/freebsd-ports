@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-MAT-Dumper/Makefile 475673 2018-07-29 19:05:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-MAT-Dumper/Makefile 490592 2019-01-17 19:21:59Z sunpoet $
 
 PORTNAME=	Devel-MAT-Dumper
-PORTVERSION=	0.37
+PORTVERSION=	0.39
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_PERL5=	modbuild
 USES=		perl5
+USE_PERL5=	modbuild
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Devel/MAT/Dumper/Dumper.so

@@ -1,5 +1,5 @@
 # Created by: Bill Cadwallader <hurbold@yahoo.com>
-# $FreeBSD: head/net-p2p/verlihub/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net-p2p/verlihub/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	verlihub
 DISTVERSION=	0.9.8e-r2
@@ -17,6 +17,9 @@ BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP \
 		libpcre.so:devel/pcre
 RUN_DEPENDS=	bash:shells/bash
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 LIBS+=		-L${LOCALBASE}/lib
 USE_RC_SUBR=	verlihub

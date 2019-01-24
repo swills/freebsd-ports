@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/yakuake/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11/yakuake/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	yakuake
 DISTVERSION=	3.0.5
+PORTREVISION=	1
 CATEGORIES=	x11 kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 DIST_SUBDIR=	KDE/${PORTNAME}

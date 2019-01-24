@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/jiri/Makefile 489286 2019-01-05 01:13:55Z swills $
+# $FreeBSD: head/devel/jiri/Makefile 490573 2019-01-17 16:19:18Z swills $
 
 PORTNAME=	jiri
 PORTVERSION=	g2019.01.03.01
 CATEGORIES=	devel
-MASTER_SITES=	https://fuchsia.googlesource.com/jiri/+archive/
+MASTER_SITES=	LOCAL/swills
 DISTNAME=	${GITHASH}
 DIST_SUBDIR=	jiri
 

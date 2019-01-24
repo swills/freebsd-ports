@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/graphics/libQGLViewer/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/libQGLViewer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	libQGLViewer
 DISTVERSION=	2.7.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics devel
 MASTER_SITES=	http://www.libqglviewer.com/src/
 

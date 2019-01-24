@@ -1,8 +1,8 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/ilias/Makefile 485973 2018-11-27 01:10:03Z wen $
+# $FreeBSD: head/www/ilias/Makefile 489849 2019-01-10 07:33:17Z wen $
 
 PORTNAME=	ilias
-PORTVERSION=	5.3.11
+PORTVERSION=	5.3.12
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -27,7 +27,6 @@ GH_PROJECT=	ILIAS
 USES=		cpe jpeg php
 NO_BUILD=	yes
 PLIST=		${WRKDIR}/plist
-SUB_FILES=	pkg-message
 USE_PHP=	pdo_mysql session zlib gd pdf dom xsl pcre simplexml
 ILIASDIR=	www/ilias
 ILIASDATADIR=	www/iliasdata

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/libsodium/Makefile 464534 2018-03-14 22:39:11Z vsevolod $
+# $FreeBSD: head/security/libsodium/Makefile 489687 2019-01-08 13:31:51Z tobik $
 
 PORTNAME=	libsodium
 PORTVERSION=	1.0.16
@@ -13,7 +13,6 @@ LICENSE=	ISCL
 GNU_CONFIGURE=	yes
 USES=		libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
-TEST_TARGET=	check
 
 CONFIGURE_ARGS+=	--enable-blocking-random
 INSTALL_TARGET?=	install-strip

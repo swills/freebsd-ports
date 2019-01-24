@@ -1,9 +1,9 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/audio/quimup/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/quimup/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	quimup
 PORTVERSION=	1.4.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}
 DISTNAME=	${PORTNAME}_${PORTVERSION}_source

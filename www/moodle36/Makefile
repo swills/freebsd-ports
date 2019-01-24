@@ -1,8 +1,8 @@
 # Created by: Javier Martin Rueda <jmrueda@diatel.upm.es>
-# $FreeBSD: head/www/moodle36/Makefile 489349 2019-01-05 15:47:56Z rene $
+# $FreeBSD: head/www/moodle36/Makefile 490321 2019-01-14 23:40:03Z wen $
 
 PORTNAME=	moodle
-PORTVERSION=	3.6.1
+PORTVERSION=	3.6.2
 CATEGORIES=	www
 MASTER_SITES=	SF/moodle/Moodle/stable36/
 PKGNAMESUFFIX=	${PKGORIGIN:T:S/moodle//}${PHP_PKGNAMESUFFIX}

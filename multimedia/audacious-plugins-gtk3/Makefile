@@ -1,5 +1,5 @@
 # Created by: Zastupov Stepan [RedChrom] <redchrom@mail.ru>
-# $FreeBSD: head/multimedia/audacious-plugins-gtk3/Makefile 488573 2018-12-27 21:36:10Z fernape $
+# $FreeBSD: head/multimedia/audacious-plugins-gtk3/Makefile 490151 2019-01-13 16:08:40Z tobik $
 
 PORTNAME=	audacious-plugins
 PORTVERSION=	3.10.1
@@ -112,9 +112,9 @@ SAMPLERATE_LIB_DEPENDS=	libsamplerate.so:audio/libsamplerate
 SAMPLERATE_CONFIGURE_ENABLE=	resample
 SCROBBLER_LIB_DEPENDS=	libcurl.so:ftp/curl
 SCROBBLER_CONFIGURE_ENABLE=	scrobbler2
-SDL_LIB_DEPENDS=	libSDL2.so:devel/sdl20
 SDL_CONFIGURE_ON=	--enable-sdlout --with-libsdl=2
 SDL_CONFIGURE_OFF=	--disable-sdlout
+SDL_USE=		SDL=sdl2
 SID_LIB_DEPENDS=	libsidplayfp.so:audio/libsidplayfp
 SID_CONFIGURE_ENABLE=	sid
 SNDFILE_LIB_DEPENDS=	libsndfile.so:audio/libsndfile

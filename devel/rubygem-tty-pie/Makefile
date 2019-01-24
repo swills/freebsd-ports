@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-pie/Makefile 488938 2019-01-01 20:29:36Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-pie/Makefile 490081 2019-01-12 21:18:07Z sunpoet $
 
 PORTNAME=	tty-pie
-PORTVERSION=	0.1.0
+PORTVERSION=	0.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

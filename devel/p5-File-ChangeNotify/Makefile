@@ -1,8 +1,8 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/devel/p5-File-ChangeNotify/Makefile 481569 2018-10-08 21:41:08Z sunpoet $
+# $FreeBSD: head/devel/p5-File-ChangeNotify/Makefile 489931 2019-01-11 02:04:16Z wen $
 
 PORTNAME=	File-ChangeNotify
-PORTVERSION=	0.29
+PORTVERSION=	0.31
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

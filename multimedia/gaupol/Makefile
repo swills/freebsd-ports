@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/gaupol/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/multimedia/gaupol/Makefile 489979 2019-01-11 15:09:16Z mat $
 
 PORTNAME=	gaupol
 DISTVERSION=	1.4-3
@@ -20,7 +20,7 @@ USES=		desktop-file-utils python:3.2+
 USE_GITHUB=	yes
 GH_ACCOUNT=	otsaloma
 USE_GNOME=	gtk30 pygobject3 intltool
-USE_PYTHON=	distutils autoplist py3kplist
+USE_PYTHON=	distutils autoplist py3kplist noflavors
 INSTALLS_ICONS=	yes
 NO_ARCH=	yes
 

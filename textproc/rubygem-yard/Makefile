@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-yard/Makefile 477092 2018-08-13 18:20:20Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-yard/Makefile 491053 2019-01-23 17:35:13Z sunpoet $
 
 PORTNAME=	yard
-PORTVERSION=	0.9.16
+PORTVERSION=	0.9.18
 CATEGORIES=	textproc devel rubygems
 MASTER_SITES=	RG
 
@@ -10,10 +10,12 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Documentation generation tool for Ruby
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 PLIST_FILES=	bin/yard \
 		bin/yardoc \

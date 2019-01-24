@@ -1,9 +1,9 @@
 # Created by: eivind/dima/jseger
-# $FreeBSD: head/www/seamonkey/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/www/seamonkey/Makefile 490910 2019-01-21 23:03:45Z jbeich $
 
 PORTNAME=	seamonkey
 DISTVERSION=	2.49.4
-PORTREVISION=	19
+PORTREVISION=	21
 MOZILLA_VER=	52 # above + 3
 CATEGORIES?=	www mail news editors irc ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
@@ -37,7 +37,7 @@ MOZ_PIS_SCRIPTS=	moz_pis_S50cleanhome
 
 MOZ_OPTIONS+=	--enable-application=suite
 
-USE_MOZILLA=	# empty
+USE_MOZILLA=	-webp
 MOZ_PKGCONFIG_FILES=
 
 OPTIONS_DEFINE=	LDAP LIGHTNING RUST

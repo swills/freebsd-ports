@@ -1,11 +1,11 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/net-im/cutegram/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/net-im/cutegram/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	cutegram
 PORTVERSION=	2.7.1
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 
 MAINTAINER=	henry.hu.sh@gmail.com

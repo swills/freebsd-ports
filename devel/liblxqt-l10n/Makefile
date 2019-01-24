@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/liblxqt-l10n/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/liblxqt-l10n/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	liblxqt
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	LXQT/lxqt-l10n
 PKGNAMESUFFIX=	-l10n

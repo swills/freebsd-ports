@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/cairo/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/graphics/cairo/Makefile 489671 2019-01-08 11:23:34Z tobik $
 
 PORTNAME=	cairo
 PORTVERSION=	1.15.12
@@ -22,16 +22,13 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 
 PORTSCOUT=	skipv:5c-1.1,5c-1.2,5c-1.5
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-html-dir=${DOCSDIR} \
-		--disable-directfb \
-		--enable-tee
 USES=		cpe gnome libtool pathfix pkgconfig tar:xz
 CPE_VENDOR=	cairographics
 USE_XORG=	pixman
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-html-dir=${DOCSDIR} \
 		--disable-directfb \
 		--disable-gallium \

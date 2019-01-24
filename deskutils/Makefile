@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/deskutils/Makefile 490961 2019-01-22 16:26:49Z mat $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -46,12 +46,12 @@
     SUBDIR += easystroke
     SUBDIR += egroupware
     SUBDIR += everygui
+    SUBDIR += fasd
     SUBDIR += fbreader
     SUBDIR += fet
     SUBDIR += flameshot
     SUBDIR += freemind
     SUBDIR += freeplane
-    SUBDIR += fasd
     SUBDIR += fusenshi
     SUBDIR += ganttproject
     SUBDIR += ganyremote
@@ -202,9 +202,11 @@
     SUBDIR += py-bugwarrior
     SUBDIR += py-khal
     SUBDIR += py-khard
+    SUBDIR += py-py3status
     SUBDIR += py-pystash
     SUBDIR += py-send2trash
     SUBDIR += py-taskw
+    SUBDIR += py-todoman
     SUBDIR += py-vdirsyncer
     SUBDIR += py-vobject
     SUBDIR += pybookreader

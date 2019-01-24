@@ -1,9 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/multimedia/mediadownloader/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/multimedia/mediadownloader/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	mediadownloader
 PORTVERSION=	1.5.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia www
 MASTER_SITES=	SF/googleimagedown/project/${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}-src

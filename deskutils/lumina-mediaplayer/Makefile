@@ -1,9 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 487837 2018-12-20 04:59:59Z linimon $
+# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-mediaplayer
 PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com

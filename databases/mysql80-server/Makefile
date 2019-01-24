@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql80-server/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/databases/mysql80-server/Makefile 490218 2019-01-13 23:24:27Z mmokhi $
 
 PORTNAME?=		mysql
-PORTVERSION=		8.0.12
-PORTREVISION?=		3
+PORTVERSION=		8.0.13
+PORTREVISION?=		0
 CATEGORIES=		databases ipv6
 MASTER_SITES=		MYSQL/MySQL-8.0
 PKGNAMESUFFIX?=		80-server
@@ -17,8 +17,8 @@ LICENSE=		GPLv2
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}${DISTVERSIONSUFFIX}
 
 SLAVEDIRS=	databases/mysql80-client
-USES=		bison:build cmake:noninja compiler:c++14-lang \
-		compiler:c++14-lib cpe libedit localbase perl5 shebangfix ssl
+USES=		bison:build cmake:noninja compiler:c++14-lang cpe \
+		libedit localbase perl5 shebangfix ssl
 
 USE_PERL5=	run
 
@@ -41,7 +41,7 @@ CMAKE_ARGS+=	-DINSTALL_LAYOUT=FREEBSD \
 		-DINSTALL_DOCDIR="share/doc/mysql" \
 		-DINSTALL_DOCREADMEDIR="share/doc/mysql" \
 		-DINSTALL_INCLUDEDIR="include/mysql" \
-		-DINSTALL_INFODIR="info" \
+		-DINSTALL_INFODIR="${INFO_PATH}" \
 		-DINSTALL_LIBDIR="lib/mysql" \
 		-DINSTALL_MANDIR="man" \
 		-DINSTALL_MYSQLDATADIR="${MY_DBDIR}" \
@@ -63,6 +63,7 @@ CMAKE_ARGS+=	-DINSTALL_LAYOUT=FREEBSD \
 		-DWITH_ICU=system \
 		-DWITH_RE2=system \
 		-DWITH_PROTOBUF=system \
+		-DBUILD_BUNDLED_ZLIB=0 \
 		-DINSTALL_MYSQLTESTDIR=0
 
 SHEBANG_FILES=	scripts/*.pl* scripts/*.sh

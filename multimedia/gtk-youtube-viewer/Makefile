@@ -1,12 +1,11 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/multimedia/gtk-youtube-viewer/Makefile 489178 2019-01-03 14:14:49Z riggs $
+# $FreeBSD: head/multimedia/gtk-youtube-viewer/Makefile 489715 2019-01-08 15:41:43Z swills $
 
 PORTNAME=	gtk-youtube-viewer
-PORTVERSION=	3.5.0
-PORTREVISION=	1
+PORTVERSION=	3.5.1
 CATEGORIES=	multimedia perl5
 
-MAINTAINER=	ndowens@yahoo.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK Search and play YouTube videos streaming in MPlayer
 
 LICENSE=	ART10 GPLv3

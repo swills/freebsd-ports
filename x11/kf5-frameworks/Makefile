@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/kf5-frameworks/Makefile 474977 2018-07-19 20:45:03Z tcberner $
+# $FreeBSD: head/x11/kf5-frameworks/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	frameworks
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde
 PKGNAMEPREFIX=	kf5-
 

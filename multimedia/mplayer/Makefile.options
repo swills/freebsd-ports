@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/mplayer/Makefile.options 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/multimedia/mplayer/Makefile.options 490727 2019-01-19 17:45:14Z riggs $
 #
 # Non-helper handling of option variables and build environment.
 # Include after bsd.port.pre.mk
@@ -50,6 +50,12 @@ CFLAGS_i386+=	-mstack-alignment=16 -mstackrealign
 
 CFLAGS_armv6+=	-no-integrated-as
 CFLAGS_armv7+=	-no-integrated-as
+
+LDFLAGS_i386+=	-Wl,-z,notext
+
+.if ${OSVERSION} >= 1300000 #Hopefully transient linker issue on head
+LLD_UNSAFE=	yes
+.endif
 
 # Extra build options for debugging
 # =================================

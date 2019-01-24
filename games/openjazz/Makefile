@@ -1,8 +1,8 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/openjazz/Makefile 472863 2018-06-20 10:08:09Z martymac $
+# $FreeBSD: head/games/openjazz/Makefile 489744 2019-01-08 21:58:57Z martymac $
 
 PORTNAME=	openjazz
-PORTVERSION=	20180522
+PORTVERSION=	20190106
 CATEGORIES=	games
 
 MAINTAINER=	martymac@FreeBSD.org

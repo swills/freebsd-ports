@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/gcc-arm-embedded/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/gcc-arm-embedded/Makefile 491032 2019-01-23 11:18:07Z lev $
 
 PORTNAME=	gcc-arm-embedded
-PORTVERSION=	7.3.20180627
-PORTREVISION=	1
+PORTVERSION=	8.2.20181220
+PORTREVISION=	0
 CATEGORIES=	devel
-MASTER_SITES=	https://developer.arm.com/-/media/Files/downloads/gnu-rm/7-2018q2/
+MASTER_SITES=	https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/
 DISTNAME=	${ORIGINAL_PACKAGE_NAME}-src
 
 MAINTAINER=	lev@FreeBSD.org
@@ -45,8 +45,8 @@ GNU_CONFIGURE=	yes
 PATCH_WRKSRC=	${WRKDIR}/${ORIGINAL_PACKAGE_NAME}
 BUILD_WRKSRC=	${WRKDIR}
 
-GCC_VERSION=		7.3.1
-FULL_VERSION=		7-2018-q2-update
+GCC_VERSION=		8.2.1
+FULL_VERSION=		8-2018-q4-major
 TARGET=			arm-none-eabi
 ORIGINAL_PACKAGE_NAME=	gcc-${TARGET}-${FULL_VERSION}
 

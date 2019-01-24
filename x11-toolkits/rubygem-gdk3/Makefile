@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-gdk3/Makefile 486126 2018-11-28 19:20:35Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-gdk3/Makefile 490287 2019-01-14 15:46:22Z sunpoet $
 
 PORTNAME=	gdk3
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.1
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,6 @@ LICENSE=	LGPL21+
 BUILD_DEPENDS=	rubygem-rake>=0:devel/rubygem-rake
 RUN_DEPENDS=	rubygem-cairo-gobject>=${PORTVERSION}:devel/rubygem-cairo-gobject \
 		rubygem-gdk_pixbuf2>=${PORTVERSION}:graphics/rubygem-gdk_pixbuf2 \
-		rubygem-gobject-introspection>=${PORTVERSION}:devel/rubygem-gobject-introspection \
 		rubygem-pango>=${PORTVERSION}:x11-toolkits/rubygem-pango
 
 USES=		gem gnome

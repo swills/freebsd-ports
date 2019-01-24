@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/kmix/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/audio/kmix/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kmix
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	audio kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -31,6 +32,7 @@ OPTIONS_DEFINE=	PULSEAUDIO DOCS
 PULSEAUDIO_LIB_DEPENDS=	libcanberra.so:audio/libcanberra \
 			libpulse.so:audio/pulseaudio
 PULSEAUDIO_USE=		GNOME=glib20
-PULSEAUDIO_CMAKE_BOOL=	WITH_Canberra WITH_PulseAudio
+PULSEAUDIO_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_Canberra \
+				CMAKE_DISABLE_FIND_PACKAGE_PulseAudio
 
 .include <bsd.port.mk>

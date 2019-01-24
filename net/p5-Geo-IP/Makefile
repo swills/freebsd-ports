@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/net/p5-Geo-IP/Makefile 451890 2017-10-12 15:09:28Z sunpoet $
+# $FreeBSD: head/net/p5-Geo-IP/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	Geo-IP
 PORTVERSION=	1.51
@@ -15,6 +15,9 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 CONFIGURE_ARGS=	INC="-I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib"
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: paulo@isr.uc.pt
-# $FreeBSD: head/graphics/povray36/Makefile 461943 2018-02-15 18:37:42Z tcberner $
+# $FreeBSD: head/graphics/povray36/Makefile 489671 2019-01-08 11:23:34Z tobik $
 
 PORTNAME=	povray
 PORTVERSION=	3.6.1
@@ -46,7 +46,7 @@ CXXFLAGS+=	-mfancy-math-387 -mpreferred-stack-boundary=3 -malign-double
 CONFIGURE_ARGS=	--disable-optimiz
 .endif
 
-CONFIGURE_ARGS=	--x-includes="${LOCALBASE}/include" --includedir=${LOCALBASE} \
+CONFIGURE_ARGS+=	--x-includes="${LOCALBASE}/include" --includedir=${LOCALBASE} \
 		CXXFLAGS="${CXXFLAGS} -L${LOCALBASE}/lib" \
 		CFLAGS="${CFLAGS} -L${LOCALBASE}/lib" \
 		LDFLAGS="-L${LOCALBASE}/lib" COMPILED_BY=${MAINTAINER} \

@@ -1,8 +1,7 @@
-# $FreeBSD: head/science/py-gpaw/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/py-gpaw/Makefile 490398 2019-01-15 18:29:45Z yuri $
 
 PORTNAME=	gpaw
-DISTVERSION=	1.4.0
-PORTREVISION=	3
+DISTVERSION=	1.5.0
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

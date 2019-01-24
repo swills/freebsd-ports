@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 488895 2019-01-01 14:17:46Z rene $
+# $FreeBSD: head/net-mgmt/Makefile 490387 2019-01-15 16:44:30Z egypcio $
 #
 
     COMMENT = Network management tools
@@ -126,6 +126,7 @@
     SUBDIR += mbrowse
     SUBDIR += mdata-client
     SUBDIR += metronome
+    SUBDIR += midpoint
     SUBDIR += mk-livestatus
     SUBDIR += monitoring-plugins
     SUBDIR += mrtg
@@ -229,6 +230,7 @@
     SUBDIR += p5-GRNOC-TL1
     SUBDIR += p5-MRTG-Parse
     SUBDIR += p5-Mon
+    SUBDIR += p5-Monitoring-Livestatus
     SUBDIR += p5-Monitoring-Plugin
     SUBDIR += p5-NSNMP
     SUBDIR += p5-Nagios-Object

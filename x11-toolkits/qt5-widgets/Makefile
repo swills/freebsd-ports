@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5-widgets/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/qt5-widgets/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	widgets
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

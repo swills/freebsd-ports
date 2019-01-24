@@ -1,11 +1,11 @@
-# $FreeBSD: head/lang/phantomjs/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/phantomjs/Makefile 490391 2019-01-15 17:16:05Z feld $
 
 PORTNAME=	phantomjs
 PORTVERSION=	2.1.1
 PORTREVISION=	12
 CATEGORIES=	lang
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Minimalistic, headless, WebKit-based, JavaScript-driven tool
 
 LICENSE=	BSD3CLAUSE

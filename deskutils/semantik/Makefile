@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/semantik/Makefile 489166 2019-01-03 12:09:03Z adridg $
+# $FreeBSD: head/deskutils/semantik/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	semantik
 DISTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	deskutils kde
 MASTER_SITES=	https://waf.io/
 

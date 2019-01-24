@@ -1,9 +1,8 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-libs/Makefile 484788 2018-11-11 23:54:06Z jbeich $
+# $FreeBSD: head/graphics/mesa-libs/Makefile 490569 2019-01-17 15:34:37Z jbeich $
 
 PORTNAME=	mesa-libs
 PORTVERSION=	${MESAVERSION}
-PORTREVISION=	4
 CATEGORIES=	graphics
 
 COMMENT=	OpenGL libraries that support GLX and EGL clients
@@ -17,8 +16,7 @@ OPTIONS_SUB=	yes
 
 WAYLAND_DESC=		Enable support for the Wayland platform in EGL
 WAYLAND_BUILD_DEPENDS=	wayland-protocols>=1.8:graphics/wayland-protocols
-WAYLAND_LIB_DEPENDS=	libwayland-client.so:graphics/wayland \
-			libwayland-server.so:graphics/wayland
+WAYLAND_LIB_DEPENDS=	libwayland-egl.so:graphics/wayland
 
 .include <bsd.port.options.mk>
 .include "${.CURDIR:H:H}/graphics/mesa-dri/Makefile.common"
@@ -33,8 +31,7 @@ MESA_BUILD_WRKSRC=	src/mapi src/util
 MESA_INSTALL_WRKSRC=	src/mapi
 
 .if ${PORT_OPTIONS:MWAYLAND}
-MESA_BUILD_WRKSRC+=	src/egl/wayland/wayland-drm src/egl/wayland/wayland-egl
-MESA_INSTALL_WRKSRC+=	src/egl/wayland/wayland-egl
+MESA_BUILD_WRKSRC+=	src/egl/wayland/wayland-drm
 .endif
 
 MESA_BUILD_WRKSRC+=	src/gbm src/glx

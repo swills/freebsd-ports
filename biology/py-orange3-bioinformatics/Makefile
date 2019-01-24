@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/py-orange3-bioinformatics/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/py-orange3-bioinformatics/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	orange3-bioinformatics
 DISTVERSION=	3.2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

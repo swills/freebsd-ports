@@ -1,8 +1,8 @@
 # Created by: Eugene Grosbein <eugen@FreeBSD.org>
-# $FreeBSD: head/net-im/pidgin-icyque/Makefile 488307 2018-12-25 10:19:38Z eugen $
+# $FreeBSD: head/net-im/pidgin-icyque/Makefile 490388 2019-01-15 16:49:19Z eugen $
 
 PORTNAME=	pidgin-icyque
-DISTVERSION=	g20181222
+DISTVERSION=	g20181229
 CATEGORIES=	net-im
 
 MAINTAINER=	eugen@FreeBSD.org
@@ -23,7 +23,7 @@ PLIST_FILES=	lib/purple-2/libicyque.so
 USE_GITHUB=	yes
 GH_ACCOUNT=	EionRobb
 GH_PROJECT=	icyque
-GH_TAGNAME=	c70f9f8
+GH_TAGNAME=	21ca718
 
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Engine/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-HTTP-Engine/Makefile 490531 2019-01-17 09:00:30Z amdmi3 $
 
 PORTNAME=	HTTP-Engine
 PORTVERSION=	0.03005
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for HTTP Server Engine Drivers
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
@@ -28,5 +31,6 @@ TEST_DEPENDS=	\
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

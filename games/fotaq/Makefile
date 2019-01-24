@@ -1,5 +1,5 @@
 # Created by: Alex Trull <freebsd.alex@trull.org>
-# $FreeBSD: head/games/fotaq/Makefile 449619 2017-09-11 09:01:51Z amdmi3 $
+# $FreeBSD: head/games/fotaq/Makefile 489661 2019-01-08 09:30:28Z amdmi3 $
 
 PORTNAME=	fotaq
 PORTVERSION=	1.1
@@ -12,6 +12,11 @@ MAINTAINER=	lme@FreeBSD.org
 COMMENT=	Flight of the Amazon Queen: a classic graphical adventure
 
 RUN_DEPENDS=	scummvm:games/scummvm
+
+LICENSE=	FOTAQ
+LICENSE_TEXT=	See ${DOCSDIR}/readme.txt
+LICENSE_NAME=	Flight of the Amazon Queen license
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		zip
 NO_BUILD=	yes

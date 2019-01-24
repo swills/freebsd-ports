@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-sseclient/Makefile 484984 2018-11-15 01:19:11Z yuri $
+# $FreeBSD: head/www/py-sseclient/Makefile 490923 2019-01-22 02:05:21Z yuri $
 
 PORTNAME=	sseclient
-DISTVERSION=	0.0.20
+DISTVERSION=	0.0.22
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

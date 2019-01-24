@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/radiance/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/radiance/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	radiance
 DISTVERSION=	0.6.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 PKGNAMESUFFIX=	-video
 

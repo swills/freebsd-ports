@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/py-iptools/Makefile 462674 2018-02-23 06:31:21Z yuri $
+# $FreeBSD: head/net/py-iptools/Makefile 489718 2019-01-08 15:49:42Z swills $
 
 PORTNAME=	iptools
-DISTVERSION=	0.6.1
+DISTVERSION=	0.7.0
 CATEGORIES=	net
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

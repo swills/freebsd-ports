@@ -1,10 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/bambootracker/Makefile 489247 2019-01-04 07:44:52Z ehaupt $
+# $FreeBSD: head/audio/bambootracker/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	bambootracker
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	LOCAL/ehaupt:extras
 DISTFILES=	${PORTNAME}-extras-${EXTRASVERSION}${EXTRACT_SUFX}:extras

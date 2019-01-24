@@ -1,9 +1,10 @@
-# $FreeBSD: head/audio/amarok/Makefile 488627 2018-12-28 21:00:55Z tcberner $
+# $FreeBSD: head/audio/amarok/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	amarok
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.9.0-277
 DISTVERSIONSUFFIX=	-gd50ecc430c
+PORTREVISION=	1
 CATEGORIES=	audio kde
 
 MAINTAINER=	kde@FreeBSD.org

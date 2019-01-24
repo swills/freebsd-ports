@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/qwtplot3d/Makefile 488382 2018-12-26 12:36:53Z linimon $
+# $FreeBSD: head/math/qwtplot3d/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qwtplot3d
 PORTVERSION=	0.2.7
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	-qt5

@@ -1,9 +1,9 @@
 # Created by: Manuel Giraud <manuel.giraud@gmail.com>
-# $FreeBSD: head/x11-fonts/profont/Makefile 486404 2018-12-02 10:19:13Z tobik $
+# $FreeBSD: head/x11-fonts/profont/Makefile 491083 2019-01-24 09:10:14Z tobik $
 
 PORTNAME=	profont
 PORTVERSION=	400
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	LOCAL/tobik \
 		http://tobiasjung.name/downloadfile.php?file=profont-x11.zip?dummy/
@@ -31,7 +31,8 @@ TYPE_DESC=		Font type
 VT_DESC=		Install vt(4) fonts
 X11_DESC=		Install Xorg bitmap fonts
 
-VT_BUILD_DEPENDS=	pcf2bdf:x11-fonts/pcf2bdf
+VT_BUILD_DEPENDS=	pcf2bdf:x11-fonts/pcf2bdf \
+			vtfontcvt-ng:x11-fonts/vtfontcvt-ng
 
 X11_USES=		fonts
 X11_USES_OFF=		fonts:none
@@ -43,8 +44,7 @@ do-build-VT-on:
 .for h in 10 11 12 15 17 22 29
 	pcf2bdf -o ${WRKSRC}/ProFont_r400-${h}.bdf \
 		${WRKSRC}/ProFont_r400-${h}.pcf
-	vtfontcvt -h ${h} -w $$(${AWK} '$$1 == "FONTBOUNDINGBOX" { print $$2 }' ${WRKSRC}/ProFont_r400-${h}.bdf) \
-		${WRKSRC}/ProFont_r400-${h}.bdf \
+	vtfontcvt-ng ${WRKSRC}/ProFont_r400-${h}.bdf \
 		${WRKSRC}/ProFont_r400-${h}.fnt
 .endfor
 

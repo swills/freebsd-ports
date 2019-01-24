@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/puppetdb-terminus5/Makefile 483018 2018-10-26 10:27:40Z romain $
+# $FreeBSD: head/databases/puppetdb-terminus5/Makefile 491067 2019-01-24 00:09:00Z romain $
 
 PORTNAME=	puppetdb-terminus
-PORTVERSION=	5.2.6
+PORTVERSION=	5.2.7
 CATEGORIES=	databases ruby
 MASTER_SITES=	https://downloads.puppetlabs.com/puppetdb/
 PKGNAMESUFFIX=	5

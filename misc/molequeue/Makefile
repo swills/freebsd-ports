@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/molequeue/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/misc/molequeue/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	molequeue
 DISTVERSION=	0.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	https://github.com/openchemistry/molequeue/releases/download/${DISTVERSION}/
 

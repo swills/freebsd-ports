@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-zeromq/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/octave-forge-zeromq/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	octave-forge-zeromq
 PORTVERSION=	1.3.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

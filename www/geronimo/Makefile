@@ -1,5 +1,5 @@
 # Created by: Nemo Liu <nemoliu@FreeBSD.org>
-# $FreeBSD: head/www/geronimo/Makefile 450664 2017-09-26 14:14:49Z mat $
+# $FreeBSD: head/www/geronimo/Makefile 489824 2019-01-09 19:58:49Z tobik $
 
 PORTNAME=	geronimo
 DISTVERSION=	3.0-beta-1
@@ -12,7 +12,6 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open-source Java EE 5 application server
 
 USES=		cpe
-CPE_VENDOR=	apache
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
 NO_BUILD=	yes

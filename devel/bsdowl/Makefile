@@ -1,9 +1,9 @@
 # Created by: Michael Le Barbier GrÃ¼newald <michipili@gmail.com>
-# $FreeBSD: head/devel/bsdowl/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/bsdowl/Makefile 489869 2019-01-10 16:25:58Z tobik $
 
 PORTNAME=	bsdowl
 PORTVERSION=	2.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/michipili/bsdowl/releases/download/v${PORTVERSION}/
 
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BUILD_DEPENDS=	gm:graphics/GraphicsMagick
-BUILD_DEPENDS=	gm:graphics/GraphicsMagick
+RUN_DEPENDS=	gm:graphics/GraphicsMagick
 
 USES=		tar:xz uidfix
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/misc/crosti/Makefile 478525 2018-08-31 07:24:05Z jhale $
+# $FreeBSD: head/misc/crosti/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	crosti
 DISTVERSION=	1.13.3
 DISTVERSIONSUFFIX=	-source
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	SF/crosti/crosti%20${DISTVERSION}/
 

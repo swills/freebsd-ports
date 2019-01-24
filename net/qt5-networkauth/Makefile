@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/qt5-networkauth/Makefile 488421 2018-12-26 19:34:59Z tcberner $
+# $FreeBSD: head/net/qt5-networkauth/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	networkauth
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net ipv6
 PKGNAMEPREFIX=	qt5-
 

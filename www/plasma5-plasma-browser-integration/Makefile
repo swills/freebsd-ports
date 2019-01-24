@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/plasma5-plasma-browser-integration/Makefile 488757 2018-12-31 06:38:42Z tcberner $
+# $FreeBSD: head/www/plasma5-plasma-browser-integration/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	plasma-browser-integration
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

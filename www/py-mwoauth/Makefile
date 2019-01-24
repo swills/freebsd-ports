@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-mwoauth/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-mwoauth/Makefile 490875 2019-01-21 18:28:27Z yuri $
 
 PORTNAME=	mwoauth
-DISTVERSION=	0.3.2
+DISTVERSION=	0.3.3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/devel/synfig/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/synfig/Makefile 490052 2019-01-12 12:56:35Z pi $
 
 PORTNAME=	synfig
 PORTVERSION=	1.2.1
@@ -12,7 +12,8 @@ COMMENT=	Vector based 2D animation package
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	etl>=1.2.1:devel/etl
+BUILD_DEPENDS=	etl>=1.2.1:devel/etl \
+		gsed:textproc/gsed
 LIB_DEPENDS=	libHalf.so:graphics/ilmbase \
 		libIlmImf.so:graphics/openexr \
 		libMagickWand-6.so:graphics/ImageMagick6 \
@@ -33,6 +34,7 @@ USE_CXXSTD=	c++11
 USE_GNOME=	cairo glibmm intltool libxml++26 pango
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG}
+CONFIGURE_ENV+=	ac_cv_path_SED=${LOCALBASE}/bin/gsed
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 

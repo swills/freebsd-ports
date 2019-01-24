@@ -1,8 +1,9 @@
-# $FreeBSD: head/security/yubioath-desktop/Makefile 488574 2018-12-27 21:42:39Z tcberner $
+# $FreeBSD: head/security/yubioath-desktop/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	yubioath-desktop
 DISTVERSIONPREFIX=	yubioath-desktop-
 DISTVERSION=	4.3.4
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	daniel@shafer.cc

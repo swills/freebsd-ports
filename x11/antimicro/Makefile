@@ -1,9 +1,9 @@
 # Created by: Anton Toernqvist <antont@inbox.lv>
-# $FreeBSD: head/x11/antimicro/Makefile 488375 2018-12-26 12:12:50Z linimon $
+# $FreeBSD: head/x11/antimicro/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	antimicro
 PORTVERSION=	2.23
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	ports@FreeBSD.org

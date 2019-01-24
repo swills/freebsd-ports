@@ -1,8 +1,8 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/print/py-reportlab/Makefile 489057 2019-01-02 06:46:40Z bofh $
+# $FreeBSD: head/print/py-reportlab/Makefile 490968 2019-01-22 18:35:27Z bofh $
 
 PORTNAME=	reportlab
-PORTVERSION=	3.5.12
+PORTVERSION=	3.5.13
 CATEGORIES=	print python
 MASTER_SITES=	CHEESESHOP \
 		https://www.reportlab.com/ftp/

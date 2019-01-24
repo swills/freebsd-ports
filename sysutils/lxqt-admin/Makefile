@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/lxqt-admin/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/sysutils/lxqt-admin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lxqt-admin
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	LXQT
 

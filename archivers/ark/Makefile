@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/ark/Makefile 488656 2018-12-29 06:43:53Z tcberner $
+# $FreeBSD: head/archivers/ark/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	ark
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

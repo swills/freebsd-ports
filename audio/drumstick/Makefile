@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/drumstick/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/audio/drumstick/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	drumstick
 DISTVERSION=	1.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}/
 

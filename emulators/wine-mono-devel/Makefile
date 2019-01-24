@@ -1,8 +1,8 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/emulators/wine-mono-devel/Makefile 475073 2018-07-21 20:10:38Z gerald $
+# $FreeBSD: head/emulators/wine-mono-devel/Makefile 490678 2019-01-18 22:52:54Z gerald $
 
 PORTNAME=	wine-mono
-DISTVERSION=	4.7.3
+DISTVERSION=	4.7.5
 CATEGORIES=	emulators
 MASTER_SITES=	http://dl.winehq.org/wine/wine-mono/${DISTVERSION}/
 PKGNAMESUFFIX=	-devel

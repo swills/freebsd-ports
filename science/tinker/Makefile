@@ -1,9 +1,8 @@
 # Created by: Glenn Johnson
-# $FreeBSD: head/science/tinker/Makefile 487934 2018-12-21 01:11:00Z yuri $
+# $FreeBSD: head/science/tinker/Makefile 490442 2019-01-16 04:36:12Z yuri $
 
 PORTNAME=	tinker
-DISTVERSION=	8.4.4
-PORTREVISION=	2
+DISTVERSION=	8.5.3
 CATEGORIES=	science
 MASTER_SITES=	https://dasher.wustl.edu/tinker/downloads/
 

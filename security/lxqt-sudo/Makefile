@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/security/lxqt-sudo/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/security/lxqt-sudo/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lxqt-sudo
 PORTVERSION=	0.13.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	LXQT
 

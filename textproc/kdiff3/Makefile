@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/kdiff3/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/textproc/kdiff3/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdiff3
 DISTVERSION=	1.7.90.20181029
+PORTREVISION=	1
 CATEGORIES=	textproc kde
 
 MAINTAINER=	kde@FreeBSD.org

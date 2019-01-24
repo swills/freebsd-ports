@@ -1,9 +1,7 @@
-# $FreeBSD: head/science/py-OpenFermion/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/py-OpenFermion/Makefile 490527 2019-01-17 06:31:46Z yuri $
 
 PORTNAME=	OpenFermion
-DISTVERSIONPREFIX=	v
-DISTVERSION=	0.8
-PORTREVISION=	1
+DISTVERSION=	0.9.0
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cmake-doc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/cmake-doc/Makefile 490732 2019-01-19 20:02:45Z tcberner $
 
 PORTNAME=	cmake
-DISTVERSION=	3.13.2
+DISTVERSION=	3.13.3
 CATEGORIES=	devel
 MASTER_SITES=	https://www.cmake.org/files/v${PORTVERSION:R}/
 PKGNAMESUFFIX=	-doc

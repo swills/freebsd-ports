@@ -1,9 +1,8 @@
 # Created by: jmz
-# $FreeBSD: head/lang/p5-ExtUtils-F77/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/p5-ExtUtils-F77/Makefile 490191 2019-01-13 20:09:07Z sunpoet $
 
 PORTNAME=	ExtUtils-F77
-PORTVERSION=	1.22
-PORTREVISION=	1
+PORTVERSION=	1.23
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,6 +12,9 @@ COMMENT=	Helps link C programs with Fortran subroutines
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which
 
 USES=		fortran perl5
 USE_PERL5=	configure

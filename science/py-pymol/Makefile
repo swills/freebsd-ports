@@ -1,10 +1,10 @@
 # Created by: Nakata Maho <chat95@mbox.kyoto-inet.or.jp>
-# $FreeBSD: head/science/py-pymol/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/py-pymol/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	pymol
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science biology python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

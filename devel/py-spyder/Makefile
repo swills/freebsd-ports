@@ -1,10 +1,10 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/devel/py-spyder/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/py-spyder/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	spyder
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.2.7
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,8 +1,9 @@
 # Created by: Hannes Hauswedell <h2+fbsdports@fsfe.org>
-# $FreeBSD: head/biology/ugene/Makefile 478818 2018-09-02 20:47:15Z jhale $
+# $FreeBSD: head/biology/ugene/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	ugene
 DISTVERSION=	1.31.0
+PORTREVISION=	1
 CATEGORIES=	biology science
 MASTER_SITES=	http://ugene.unipro.ru/downloads/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} QueryDesigner_UserManual.pdf \

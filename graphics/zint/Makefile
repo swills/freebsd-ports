@@ -1,8 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/graphics/zint/Makefile 479372 2018-09-10 08:17:46Z danfe $
+# $FreeBSD: head/graphics/zint/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	zint
 DISTVERSION=	2.6.3_rc2	# NOT a "release candidate", fixup for 2.6.3
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/2.6.3
 DISTNAME=	${PORTNAME}-${DISTVERSION}.src

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/zapcc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/zapcc/Makefile 490944 2019-01-22 12:45:35Z linimon $
 
 PORTNAME=	zapcc
 PORTVERSION=	g20180622
@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 
 BUILD_DEPENDS=	googletest>0:devel/googletest
 
-USES=		cmake libedit python:3.4+ shebangfix
+USES=		cmake compiler:c++11-lang libedit python:3.4+ shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	yrnkrn
 GH_PROJECT=	zapcc

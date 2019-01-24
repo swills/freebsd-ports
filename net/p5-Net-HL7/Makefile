@@ -1,5 +1,5 @@
 # Created by: Brent B. Powers <bbp2006@columbia.edu>
-# $FreeBSD: head/net/p5-Net-HL7/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net/p5-Net-HL7/Makefile 489683 2019-01-08 13:19:05Z tobik $
 
 PORTNAME=	Net-HL7
 PORTVERSION=	0.75
@@ -10,8 +10,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bbp2006@columbia.edu
 COMMENT=	Net::HL7 - A simple yet flexible API for non-XML HL7 applications
-
-PORTDOCS=	README
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,8 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/gnu-ipcalc/Makefile 471020 2018-05-28 05:40:25Z ehaupt $
+# $FreeBSD: head/net-mgmt/gnu-ipcalc/Makefile 490211 2019-01-13 20:58:36Z adamw $
 
 PORTNAME=	ipcalc
 PORTVERSION=	0.2.3
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 PKGNAMEPREFIX=	gnu-
 
@@ -18,12 +19,7 @@ USES=		gmake localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	nmav
 
-OPTIONS_DEFINE=	GEOIP
-OPTIONS_DEFAULT=GEOIP
-
-GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
-GEOIP_MAKE_ENV=		LIBPATH=${LOCALBASE}/lib
-GEOIP_MAKE_ENV_OFF=	USE_GEOIP=no USE_DYN_GEOIP=no
+MAKE_ENV+=	USE_GEOIP=no USE_DYN_GEOIP=no
 
 PLIST_FILES=	bin/ipcalc man/man1/ipcalc.1.gz
 

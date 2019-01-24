@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/fluent-bit/Makefile 489620 2019-01-07 23:25:33Z girgen $
+# $FreeBSD: head/sysutils/fluent-bit/Makefile 490059 2019-01-12 14:35:23Z girgen $
 
 PORTNAME=	fluent-bit
-DISTVERSION=	1.0.1
+DISTVERSION=	1.0.2
 CATEGORIES=	sysutils
 MASTER_SITES=   http://fluentbit.io/releases/${DISTVERSION:R}/
 

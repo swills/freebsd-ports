@@ -1,5 +1,5 @@
 # Created by: cy@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine-masterfiles313/Makefile 485710 2018-11-23 22:07:04Z cy $
+# $FreeBSD: head/sysutils/cfengine-masterfiles313/Makefile 489751 2019-01-09 03:53:25Z cy $
 
 PORTNAME=	cfengine-masterfiles
 PORTVERSION=	3.13.0
@@ -24,8 +24,6 @@ CONFLICTS+=	cfengine-masterfiles-3.*
 RUN_DEPENDS=	cf-agent:sysutils/cfengine${PKGNAMESUFFIX}
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}
-
-CONFLICTS=	cfengine-masterfiles[6-9]*
 
 MAKE_JOBS_UNSAFE=	yes
 USES=		cpe gmake python:build shebangfix

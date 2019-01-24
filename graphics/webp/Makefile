@@ -1,9 +1,8 @@
 # Created by: johans
-# $FreeBSD: head/graphics/webp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/webp/Makefile 490739 2019-01-19 20:40:48Z sunpoet $
 
 PORTNAME=	webp
-PORTVERSION=	1.0.1
-PORTREVISION=	1
+PORTVERSION=	1.0.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://downloads.webmproject.org/releases/webp/ \
 		https://storage.googleapis.com/downloads.webmproject.org/releases/webp/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/cde/Makefile 484207 2018-11-05 18:49:23Z crees $
+# $FreeBSD: head/x11/cde/Makefile 489982 2019-01-11 16:12:13Z amdmi3 $
 
 PORTNAME=	cde
 DISTVERSION=	2.3.0
@@ -50,13 +50,12 @@ post-patch:
 	    ${WRKSRC}/programs/dtmail/libDtMail/Common/Session.C \
 	    ${WRKSRC}/programs/dtmail/libDtMail/RFC/RFCBodyPart.C; \
 	fi
+
 # From shells/ksh93
-.if ${OSVERSION} >= 1100093
 	@${REINPLACE_CMD} -e 's|SF_FLAGS|SFIO_FLAGS|g' \
 		${WRKSRC}/programs/dtksh/ksh93/src/lib/libast/include/sfio*.h  \
 		${WRKSRC}/programs/dtksh/ksh93/src/lib/libast/sfio/*.c \
 		${WRKSRC}/programs/dtksh/ksh93/src/lib/libast/sfio/*.h
-.endif
 
 # Speed up poudriere + qemu + native-xtools
 	@${REINPLACE_CMD} \

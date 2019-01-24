@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/archivers/p5-Compress-Raw-Lzma/Makefile 489532 2019-01-06 20:40:04Z sunpoet $
+# $FreeBSD: head/archivers/p5-Compress-Raw-Lzma/Makefile 490183 2019-01-13 20:08:25Z sunpoet $
 
 PORTNAME=	Compress-Raw-Lzma
-PORTVERSION=	2.084
+PORTVERSION=	2.085
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

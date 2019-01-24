@@ -1,6 +1,6 @@
-# $FreeBSD: head/graphics/poppler-qt5/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/graphics/poppler-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-qt5
 
 COMMENT=	Qt 5 bindings to poppler

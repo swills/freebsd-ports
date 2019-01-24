@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-vagrant_cloud/Makefile 482721 2018-10-21 19:28:54Z cmt $
+# $FreeBSD: head/sysutils/rubygem-vagrant_cloud/Makefile 489968 2019-01-11 13:13:08Z cmt $
 
 PORTNAME=	vagrant_cloud
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	sysutils rubygems devel
 MASTER_SITES=	RG
 

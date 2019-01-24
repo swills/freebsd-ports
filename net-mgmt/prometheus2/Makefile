@@ -1,9 +1,8 @@
-# $FreeBSD: head/net-mgmt/prometheus2/Makefile 488453 2018-12-26 21:25:49Z swills $
+# $FreeBSD: head/net-mgmt/prometheus2/Makefile 490579 2019-01-17 17:32:35Z joneum $
 
 PORTNAME=	prometheus
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.6.0
-PORTREVISION=	1
+DISTVERSION=	2.6.1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	dor.bsd@xm0.uk

@@ -1,18 +1,20 @@
-# $FreeBSD: head/textproc/py-sphinxcontrib-websupport/Makefile 448958 2017-08-30 03:40:04Z araujo $
+# $FreeBSD: head/textproc/py-sphinxcontrib-websupport/Makefile 489793 2019-01-09 14:52:27Z sunpoet $
 
 PORTNAME=	sphinxcontrib-websupport
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	textproc
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	araujo@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Sphinx API for Web Apps
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

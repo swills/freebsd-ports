@@ -1,9 +1,9 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/injeqt/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/injeqt/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	injeqt
 PORTVERSION=	1.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	kde@FreeBSD.org

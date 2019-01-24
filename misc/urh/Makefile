@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/urh/Makefile 487949 2018-12-21 04:53:12Z yuri $
+# $FreeBSD: head/misc/urh/Makefile 490833 2019-01-21 08:34:32Z yuri $
 
 PORTNAME=	urh
-DISTVERSION=	2.5.3
+DISTVERSION=	2.5.5
 CATEGORIES=	misc hamradio python
 MASTER_SITES=	CHEESESHOP
 

@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/graphics/fracplanet/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/graphics/fracplanet/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	fracplanet
 PORTVERSION=	0.5.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	SF \
 		SF/nemysisfreebsdp/:icons

@@ -1,10 +1,8 @@
-# $FreeBSD: head/graphics/cloudcompare/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/graphics/cloudcompare/Makefile 490634 2019-01-18 11:44:27Z swills $
 
 PORTNAME=	cloudcompare
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.9.1-288
-DISTVERSIONSUFFIX=	-gb4d51361
-PORTREVISION=	7
+DISTVERSION=	2.10.1
 CATEGORIES=	graphics
 
 MAINTAINER=	neel@neelc.org
@@ -19,8 +17,7 @@ USES=		cmake localbase:ldflags qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	CloudCompare
 GH_PROJECT=	${GH_ACCOUNT}
-GH_TAGNAME=	5d41227deb30c445ccbaa2d789a4363b57948a5d
-USE_QT=		concurrent core gui opengl printsupport widgets buildtools_build qmake_build
+USE_QT=		concurrent core gui opengl printsupport widgets buildtools_build qmake_build svg linguisttools_build
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	DXFLIB GAMEPAD GDAL PDAL SHAPELIB PLUGINS
@@ -35,7 +32,6 @@ SHAPELIB_DESC=	Enable shape file support
 
 DXFLIB_CMAKE_BOOL=	OPTION_USE_DXF_LIB
 
-GAMEPAD_USES=	qt:5
 GAMEPAD_USE=		QT=gamepad
 GAMEPAD_CMAKE_BOOL=	OPTION_SUPPORT_GAMEPADS
 

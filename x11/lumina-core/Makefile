@@ -1,8 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina-core/Makefile 487843 2018-12-20 06:04:01Z linimon $
+# $FreeBSD: head/x11/lumina-core/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-core
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	jt@ixsystems.com

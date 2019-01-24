@@ -1,8 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/kore/Makefile 488091 2018-12-22 11:58:09Z tobik $
+# $FreeBSD: head/devel/kore/Makefile 490926 2019-01-22 05:42:15Z tobik $
 
 PORTNAME=	kore
-PORTVERSION=	3.2.1
+PORTVERSION=	3.2.2
 CATEGORIES=	devel www
 MASTER_SITES=	https://kore.io/releases/
 

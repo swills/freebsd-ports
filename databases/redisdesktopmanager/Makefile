@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/redisdesktopmanager/Makefile 486631 2018-12-04 19:22:07Z swills $
+# $FreeBSD: head/databases/redisdesktopmanager/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	redisdesktopmanager
 PORTVERSION=	0.9.9
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	swills@FreeBSD.org

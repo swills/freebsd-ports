@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/kgraphviewer/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/graphics/kgraphviewer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kgraphviewer
 DISTVERSION=	2.4.3
+PORTREVISION=	1
 CATEGORIES=	graphics kde
 MASTER_SITES=   KDE/stable/${PORTNAME}/${PORTVERSION}/
 DIST_SUBDIR=    KDE/${PORTNAME}

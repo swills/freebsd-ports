@@ -1,11 +1,10 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/devel/marisa-trie/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/marisa-trie/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	marisa-tire
 PORTVERSION=	0.24
 PORTREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	GH
 
 MAINTAINER=	iblis@hs.ntnu.edu.tw
 COMMENT=	MARISA: Matching Algorithm with Recursively Implemented StorAge

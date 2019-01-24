@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/retext/Makefile 487671 2018-12-17 10:04:16Z yuri $
+# $FreeBSD: head/textproc/retext/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	retext
 PORTVERSION=	7.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 
 MAINTAINER=	arved@FreeBSD.org

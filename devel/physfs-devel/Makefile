@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/devel/physfs-devel/Makefile 488560 2018-12-27 18:47:42Z amdmi3 $
+# $FreeBSD: head/devel/physfs-devel/Makefile 490017 2019-01-11 21:09:02Z amdmi3 $
 
 PORTNAME=	physfs
 PORTVERSION=	3.0.1
@@ -12,6 +12,10 @@ MAINTAINER=	oliver@FreeBSD.org
 COMMENT=	Library to provide abstract access to various archives
 
 CONFLICTS_INSTALL=	physfs-[0-9]*
+
+IGNORE=		use devel/physfs
+DEPRECATED=	is the same as devel/physfs, serving no purpose
+EXPIRATION_DATE=2019-03-12
 
 USES=		cmake:insource readline tar:bzip2
 USE_LDCONFIG=	yes

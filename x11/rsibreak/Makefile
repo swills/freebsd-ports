@@ -1,8 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/x11/rsibreak/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/x11/rsibreak/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	rsibreak
 PORTVERSION=	0.12.9
+PORTREVISION=	1
 CATEGORIES=	x11 kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION:R}/
 

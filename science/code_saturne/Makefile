@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/code_saturne/Makefile 489601 2019-01-07 18:27:48Z antoine $
+# $FreeBSD: head/science/code_saturne/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	code_saturne
 PORTVERSION=	5.3.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	science parallel
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 488304 2018-12-25 09:14:06Z tobik $
+# $FreeBSD: head/x11-fonts/Makefile 490695 2019-01-19 02:05:38Z tobik $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -205,6 +205,7 @@
     SUBDIR += urwfonts-ttf
     SUBDIR += uw-ttyp0
     SUBDIR += vollkorn-ttf
+    SUBDIR += vtfontcvt-ng
     SUBDIR += webfonts
     SUBDIR += wqy
     SUBDIR += xfontsel

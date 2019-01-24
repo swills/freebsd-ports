@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/geoip-java/Makefile 415884 2016-05-26 09:03:46Z amdmi3 $
+# $FreeBSD: head/devel/geoip-java/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	geoip
 PORTVERSION=	1.2.8
@@ -15,6 +15,9 @@ LICENSE=	LGPL20+ # source sayas LGPL20+, LICENSE saya LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	GeoIP>=1.4.8:net/GeoIP
+
+DEPRECATED=	Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 USES=		zip
 

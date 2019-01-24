@@ -1,9 +1,9 @@
 # Created by: Loïc Bartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/devel/codeblocks-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/codeblocks-devel/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	codeblocks
 PORTVERSION=	18.04
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://download.tuxfamily.org/bartcoding/FreeBSD/ \
 		${MASTER_SITE_LOCAL}
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	zip:archivers/zip
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
-		libhunspell-1.6.so:textproc/hunspell
+		libhunspell-1.7.so:textproc/hunspell
 
 USES=		autoreconf compiler:c++11-lang desktop-file-utils fam:gamin localbase \
 		gettext-runtime libtool pathfix pkgconfig shared-mime-info

@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime21/Makefile 487873 2018-12-20 09:43:30Z dch $
+# $FreeBSD: head/lang/erlang-runtime21/Makefile 490940 2019-01-22 12:30:21Z linimon $
 
 PORTNAME=	erlang
 PORTVERSION=	21.2
@@ -41,6 +41,7 @@ MAKE_JOBS_UNSAFE=yes
 
 OPTIONS_DEFINE=	DIRTY DTRACE GS HIPE JAVA KQUEUE NATIVE ODBC OPENSSL SCTP THREADS WX
 OPTIONS_DEFAULT=DIRTY DTRACE HIPE KQUEUE OPENSSL SCTP THREADS
+OPTIONS_EXCLUDE_powerpc64=	HIPE
 
 DIRTY_DESC=	Enable Dirty schedulers
 GS_DESC=	Enable GS application (deprecated)

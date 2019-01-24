@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/kf5-kwallet/Makefile 488719 2018-12-30 14:15:54Z adridg $
+# $FreeBSD: head/sysutils/kf5-kwallet/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kwallet
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

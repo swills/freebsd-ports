@@ -1,8 +1,8 @@
 # Created by: gpalmer
-# $FreeBSD: head/x11-clocks/xdaliclock/Makefile 464165 2018-03-11 11:21:23Z rene $
+# $FreeBSD: head/x11-clocks/xdaliclock/Makefile 489781 2019-01-09 13:31:10Z tz $
 
 PORTNAME=	xdaliclock
-PORTVERSION=	2.43
+PORTVERSION=	2.44
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.jwz.org/xdaliclock/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 489191 2019-01-03 17:18:18Z ehaupt $
+# $FreeBSD: head/audio/Makefile 490765 2019-01-20 00:07:28Z tobik $
 #
 
     COMMENT = Audio tools
@@ -790,6 +790,7 @@
     SUBDIR += spiralsynthmodular
     SUBDIR += splay
     SUBDIR += splaytk
+    SUBDIR += spotifyd
     SUBDIR += squash
     SUBDIR += sratom
     SUBDIR += stk
@@ -841,6 +842,7 @@
     SUBDIR += umurmur
     SUBDIR += vagalume
     SUBDIR += vamp-plugin-sdk
+    SUBDIR += vgmplay
     SUBDIR += virtual_oss
     SUBDIR += virtual_oss_ctl
     SUBDIR += vitunes

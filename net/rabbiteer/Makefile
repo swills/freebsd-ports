@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/rabbiteer/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/net/rabbiteer/Makefile 490600 2019-01-17 19:50:38Z jbeich $
 
 PORTNAME=	rabbiteer
 DISTVERSION=	1.4.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 
 MAINTAINER=	dch@FreeBSD.org

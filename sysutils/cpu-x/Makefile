@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/cpu-x/Makefile 473818 2018-07-03 11:41:54Z danfe $
+# $FreeBSD: head/sysutils/cpu-x/Makefile 490538 2019-01-17 10:02:46Z danfe $
 
 PORTNAME=	cpu-x
-PORTVERSION=	3.2.3
+PORTVERSION=	3.2.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -22,6 +22,7 @@ GH_ACCOUNT=	X0rg
 GH_PROJECT=	${PORTNAME:tu}
 
 USES=		cmake gettext ncurses pkgconfig
+CMAKE_ARGS=	-DWITH_LIBJSONC:BOOL=OFF
 
 PORTDOCS=	ChangeLog README.md
 

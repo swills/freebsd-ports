@@ -1,9 +1,8 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net/ntopng/Makefile 488707 2018-12-30 11:24:57Z madpilot $
+# $FreeBSD: head/net/ntopng/Makefile 490396 2019-01-15 18:16:34Z madpilot $
 
 PORTNAME=	ntopng
-PORTVERSION=	3.8.d20181221
-PORTREVISION=	1
+PORTVERSION=	3.8.d20190111
 PORTEPOCH=	1
 CATEGORIES=	net
 
@@ -25,7 +24,7 @@ BUILD_DEPENDS=  bash:shells/bash
 USES=		autoreconf compiler:c++11-lang cpe gmake libtool localbase \
 		mysql pathfix pkgconfig shebangfix sqlite ssl
 
-SUB_FILES=	ntopng-geoipupdate.sh pkg-deinstall
+SUB_FILES=	ntopng-geoip2update.sh pkg-deinstall
 SHEBANG_FILES=	httpdocs/misc/ntopng-add-user.sh \
 		httpdocs/misc/ntopng-utils-manage-config.in
 GNU_CONFIGURE=	yes
@@ -37,16 +36,13 @@ PLIST_SUB=	NTOPNGUSER="${USERS}" NTOPNGROUP="${GROUPS}"
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ntop
-GH_TAGNAME=	e7503c7
+GH_TAGNAME=	3c2d3bf
 
 CPE_VENDOR=	ntop
 
-OPTIONS_DEFINE=		GEOIP NLS
-OPTIONS_DEFAULT=	GEOIP
+OPTIONS_DEFINE=	NLS
 
 OPTIONS_SUB=	yes
-
-GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 
 NLS_USES=	gettext
 
@@ -60,8 +56,6 @@ post-patch:
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/ntopng
 	${MKDIR} ${STAGEDIR}/var/db/ntopng
-
-post-install-GEOIP-on:
-	${INSTALL_SCRIPT} ${WRKDIR}/ntopng-geoipupdate.sh ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKDIR}/ntopng-geoip2update.sh ${STAGEDIR}${PREFIX}/bin
 
 .include <bsd.port.mk>

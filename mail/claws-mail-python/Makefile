@@ -1,12 +1,10 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/mail/claws-mail-python/Makefile 489278 2019-01-04 20:59:10Z antoine $
+# $FreeBSD: head/mail/claws-mail-python/Makefile 489852 2019-01-10 08:35:25Z joneum $
 
 PORTNAME=	python
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	Python scripting plugin for Claws Mail
-
-BROKEN=		fails to stage
 
 USE_GNOME=	pygtk2
 

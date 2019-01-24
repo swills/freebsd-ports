@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/onionshare/Makefile 486672 2018-12-05 14:09:12Z egypcio $
+# $FreeBSD: head/www/onionshare/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	onionshare
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python security
 
 MAINTAINER=	egypcio@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Dispatch-ArrayWithLimits/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Log-Dispatch-ArrayWithLimits/Makefile 489903 2019-01-10 21:21:40Z sunpoet $
 
 PORTNAME=	Log-Dispatch-ArrayWithLimits
-PORTVERSION=	0.04
+PORTVERSION=	0.050
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,11 +13,13 @@ COMMENT=	Log to array, with some limits applied
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Log-Dispatch>=0:devel/p5-Log-Dispatch \
-		p5-Perl-osnames>=0.09:devel/p5-Perl-osnames
+BUILD_DEPENDS=	p5-Perl-osnames>=0.09:devel/p5-Perl-osnames \
+		${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Log-Dispatch>=0:devel/p5-Log-Dispatch
 
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

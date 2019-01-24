@@ -1,8 +1,9 @@
-# $FreeBSD: head/misc/kde-thumbnailer-epub/Makefile 488379 2018-12-26 12:27:10Z linimon $
+# $FreeBSD: head/misc/kde-thumbnailer-epub/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kde-thumbnailer-epub
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.1.9b
+PORTREVISION=	1
 CATEGORIES=	misc kde
 
 MAINTAINER=	makc@FreeBSD.org

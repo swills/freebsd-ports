@@ -1,8 +1,9 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/bro/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/security/bro/Makefile 490306 2019-01-14 17:51:27Z leres $
 
 PORTNAME=	bro
 PORTVERSION=	2.6.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.bro.org/downloads/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -13,8 +14,6 @@ COMMENT=	System for detecting network intruders in real-time
 LICENSE=	BSD3CLAUSE
 
 BROKEN_powerpc64=	Does not build: error: zero-size array 'names'
-
-LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 
 USES=		bison cmake compiler:c++11-lang gettext-runtime ninja perl5 python shebangfix ssl
 

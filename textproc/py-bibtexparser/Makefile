@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-bibtexparser/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-bibtexparser/Makefile 490844 2019-01-21 09:28:59Z yuri $
 
 PORTNAME=	bibtexparser
-DISTVERSION=	1.0.1
+DISTVERSION=	1.1.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

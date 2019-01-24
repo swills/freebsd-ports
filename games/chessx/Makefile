@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/chessx/Makefile 475118 2018-07-22 19:38:32Z fernape $
+# $FreeBSD: head/games/chessx/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	chessx
 PORTVERSION=	1.4.6
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF
 

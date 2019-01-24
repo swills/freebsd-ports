@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/google-perftools/Makefile 480734 2018-09-26 13:04:20Z linimon $
+# $FreeBSD: head/devel/google-perftools/Makefile 491080 2019-01-24 05:09:48Z linimon $
 
 PORTNAME=	google-perftools
 DISTVERSIONPREFIX=	gperftools-
@@ -17,8 +17,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BROKEN_powerpc=		fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
 BROKEN_powerpc64=	fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
 BROKEN_sparc64=		fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
-
-LIB_DEPENDS=	libunwind.so:devel/libunwind
 
 DOCSDIR=	${PREFIX}/share/doc/gperftools
 
@@ -62,6 +60,11 @@ CXXFLAGS+=	-fno-builtin
 
 .if ${ARCH} == "amd64"
 CONFIGURE_ARGS+=--enable-frame-pointers
+.endif
+
+# keep in sync with all platforms where libunwind is available
+.if (${ARCH} == amd64 || ${ARCH} == i386)
+LIB_DEPENDS+=	libunwind.so:devel/libunwind
 .endif
 
 post-build:

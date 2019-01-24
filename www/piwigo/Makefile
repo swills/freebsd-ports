@@ -1,11 +1,11 @@
 # Created by: Goran Lowkrantz <glz@hidden-powers.com>
-# $FreeBSD: head/www/piwigo/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/www/piwigo/Makefile 490761 2019-01-19 20:42:45Z sunpoet $
 
 PORTNAME=	piwigo
 DISTVERSION=	2.9.4
 PORTREVISION=	2
 CATEGORIES=	www
-MASTER_SITES=	http://piwigo.org/download/dlcounter.php?code=${PORTVERSION}&/
+MASTER_SITES=	https://piwigo.org/download/dlcounter.php?code=${PORTVERSION}&/
 
 MAINTAINER=	tremere@cainites.net
 COMMENT=	PHP based Web Gallery

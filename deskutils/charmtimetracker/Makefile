@@ -1,9 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/deskutils/charmtimetracker/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/deskutils/charmtimetracker/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	charmtimetracker
 DISTVERSION=	1.12.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 # PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

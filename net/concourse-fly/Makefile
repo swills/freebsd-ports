@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/concourse-fly/Makefile 480281 2018-09-21 15:26:20Z dumbbell $
+# $FreeBSD: head/net/concourse-fly/Makefile 489672 2019-01-08 11:46:19Z tobik $
 
 PORTNAME=	concourse
 PORTVERSION=	4.2.1
@@ -10,8 +10,6 @@ MAINTAINER=	dumbbell@FreeBSD.org
 COMMENT=	CLI for Concourse
 
 LICENSE=	APACHE20
-
-CONFLICTS_INSTALL=	fly
 
 GO_CMD=		${LOCALBASE}/bin/go
 GO_PKGNAME=	github.com/concourse/fly

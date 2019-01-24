@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/py-pyparsing/Makefile 483710 2018-11-01 19:14:04Z sunpoet $
+# $FreeBSD: head/devel/py-pyparsing/Makefile 490265 2019-01-14 15:39:03Z sunpoet $
 
 PORTNAME=	pyparsing
-PORTVERSION=	2.3.0
+PORTVERSION=	2.3.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

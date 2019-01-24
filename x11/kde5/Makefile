@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/kde5/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/x11/kde5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kde5
 DISTVERSION=	${KDE_PLASMA_VERSION}.${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde # kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,6 +1,7 @@
-# $FreeBSD: head/comms/xcwcp/Makefile 487933 2018-12-21 00:16:53Z yuri $
+# $FreeBSD: head/comms/xcwcp/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	xcwcp
+PORTREVISION=	1
 
 COMMENT=	X11 CW Tutor using unixcw
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-z3-solver/Makefile 475913 2018-07-30 20:17:04Z yuri $
+# $FreeBSD: head/math/py-z3-solver/Makefile 490085 2019-01-12 23:11:23Z linimon $
 
 PORTNAME=	z3-solver
 DISTVERSIONPREFIX=	z3-
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/../../../LICENSE.txt
 
 # CAVEAT: It should have LIB_DEPENDS=libz3.so:math/z3, but currently it rebuilds all code, see https://github.com/Z3Prover/z3/issues/1767
 
-USES=		python
+USES=		compiler:c++11-lang python
 USE_GITHUB=	yes
 GH_ACCOUNT=	Z3Prover
 GH_PROJECT=	z3

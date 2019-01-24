@@ -1,9 +1,10 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/hydrogen/Makefile 488293 2018-12-25 06:58:13Z tobik $
+# $FreeBSD: head/audio/hydrogen/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	hydrogen
 DISTVERSION=	1.0.0-beta1-325
 DISTVERSIONSUFFIX=	-g538eaeb9
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	FreeBSD@ShaneWare.Biz

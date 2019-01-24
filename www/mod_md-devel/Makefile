@@ -1,12 +1,15 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 486720 2018-12-05 20:01:10Z linimon $
+# $FreeBSD: head/www/mod_md-devel/Makefile 490055 2019-01-12 13:47:15Z brnrd $
 
 PORTNAME=	mod_md
-PORTVERSION=	1.1.16
+PORTVERSION=	1.1.17
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	-devel
+
+DEPRECATED=	Use the module that is shipped with Apache 2.4
+EXPIRATION_DATE=2019-03-24
 
 MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Early experience LetsEncrypt module for Apache httpd

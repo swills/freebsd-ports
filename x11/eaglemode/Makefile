@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/x11/eaglemode/Makefile 488614 2018-12-28 18:17:12Z amdmi3 $
+# $FreeBSD: head/x11/eaglemode/Makefile 489713 2019-01-08 15:34:32Z amdmi3 $
 
 PORTNAME=	eaglemode
 PORTVERSION=	0.94.0
@@ -20,6 +20,8 @@ USES=		compiler:features jpeg gnome perl5 \
 USE_PERL5=	build
 USE_XORG=	x11 xext xxf86vm
 SUB_FILES=	eaglemode.sh
+
+LLD_UNSAFE=	yes
 
 BUILD_ARGS=	continue=no
 

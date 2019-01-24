@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/abgate-lv2/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/abgate-lv2/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	abGate
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.1.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

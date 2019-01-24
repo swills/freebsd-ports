@@ -1,10 +1,10 @@
 # Created by: alepulver
-# $FreeBSD: head/devel/aegis/Makefile 488492 2018-12-26 23:46:13Z swills $
+# $FreeBSD: head/devel/aegis/Makefile 490145 2019-01-13 15:25:51Z swills $
 
 PORTNAME=	aegis
 PORTVERSION=	4.25
 DISTVERSIONSUFFIX=	.D510
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
@@ -18,7 +18,6 @@ RUN_DEPENDS=	tkdiff:textproc/tkdiff
 
 USES=		gettext ghostscript groff perl5 tk
 USE_GNOME=	libxml2
-USE_GCC=	any
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	"-I${LOCALBASE}/include"
 CONFIGURE_ARGS=	--with-nlsdir="${PREFIX}/share/locale"

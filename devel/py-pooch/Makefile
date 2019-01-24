@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pooch/Makefile 489540 2019-01-06 20:40:45Z sunpoet $
+# $FreeBSD: head/devel/py-pooch/Makefile 489685 2019-01-08 13:24:33Z sunpoet $
 
 PORTNAME=	pooch
 PORTVERSION=	0.2.1
@@ -21,6 +21,7 @@ USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
+USE_LOCALE=	en_US.UTF-8
 
 .include <bsd.port.pre.mk>
 

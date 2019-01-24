@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/bingrep/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/devel/bingrep/Makefile 490600 2019-01-17 19:50:38Z jbeich $
 
 PORTNAME=	bingrep
 PORTVERSION=	g20171111
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Evgeniy Kosov <evgeniy@kosov.su>
-# $FreeBSD: head/devel/p5-Log-Any-App/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Log-Any-App/Makefile 490186 2019-01-13 20:08:40Z sunpoet $
 
 PORTNAME=	Log-Any-App
-PORTVERSION=	0.53
+PORTVERSION=	0.540
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -27,8 +27,9 @@ RUN_DEPENDS=	p5-File-HomeDir>=0:devel/p5-File-HomeDir \
 		p5-Log-Dispatch-FileWriteRotate>=0.04:devel/p5-Log-Dispatch-FileWriteRotate
 TEST_DEPENDS=	p5-File-Slurper>=0:devel/p5-File-Slurper
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

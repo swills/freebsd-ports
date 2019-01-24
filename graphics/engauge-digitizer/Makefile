@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/engauge-digitizer/Makefile 483309 2018-10-28 16:05:07Z yuri $
+# $FreeBSD: head/graphics/engauge-digitizer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	engauge-digitizer
 DISTVERSIONPREFIX=	v
 DISTVERSION=	10.11
+PORTREVISION=	1
 CATEGORIES=	graphics math science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -16,7 +17,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libopenjp2.so:graphics/openjpeg \
 		libpoppler-qt5.so:graphics/poppler-qt5
 
-USES=		desktop-file-utils gl qmake qt:5
+USES=		compiler:c++11-lang desktop-file-utils gl qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	markummitchell
 USE_QT=		core gui printsupport sql xml widgets buildtools_build

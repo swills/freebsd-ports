@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/latte-dock/Makefile 488667 2018-12-29 14:08:17Z tcberner $
+# $FreeBSD: head/deskutils/latte-dock/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	latte-dock
 DISTVERSION=	0.8.4
+PORTREVISION=	1
 CATEGORIES=	deskutils kde
 MASTER_SITES=	KDE/stable/latte-dock
 

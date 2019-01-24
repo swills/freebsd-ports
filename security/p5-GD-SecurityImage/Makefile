@@ -1,8 +1,8 @@
 # Created by: ports@rbt.ca
-# $FreeBSD: head/security/p5-GD-SecurityImage/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/security/p5-GD-SecurityImage/Makefile 490195 2019-01-13 20:09:28Z sunpoet $
 
 PORTNAME=	GD-SecurityImage
-PORTVERSION=	1.73
+PORTVERSION=	1.75
 PORTEPOCH=	1
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
@@ -13,9 +13,10 @@ COMMENT=	Perl5 module for creating CAPTCHA security images
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	p5-GD>=0:graphics/p5-GD
+RUN_DEPENDS=	p5-GD>=2.45:graphics/p5-GD
 
 OPTIONS_DEFINE=	IMAGEMAGICK X11
 OPTIONS_DEFAULT=X11
@@ -25,6 +26,8 @@ PORTSCOUT=	skipv:1.581
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.options.mk>
 

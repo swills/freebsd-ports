@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/reduce-psl/Makefile 486054 2018-11-27 19:34:29Z swills $
+# $FreeBSD: head/math/reduce-psl/Makefile 489704 2019-01-08 15:22:52Z tobik $
 
 PORTNAME=	reduce
 PORTVERSION=	20181123
@@ -20,8 +20,6 @@ USES=		autoreconf:build libtool gmake ncurses
 SFSUBDIR=	snapshot_2018-11-23
 
 TARGET_SDIR=	${ARCH:S/amd64/x86_64/}-unknown-${OPSYS:tl}${OSREL}
-CONFIGURE_ARGS=	--build=${TARGET_SDIR}
-WRKSRC=		${WRKDIR}/${DISTNAME}
 CPPFLAGS+=	-I${NCURSESINC}
 
 # Avoid GNU_CONFIGURE as it breaks staging

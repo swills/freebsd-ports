@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/cretan-hubris/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/cretan-hubris/Makefile 490014 2019-01-11 20:56:25Z amdmi3 $
 
 PORTNAME=	cretan-hubris
 PORTVERSION=	0.2
@@ -17,7 +17,7 @@ LICENSE_FILE_GPLv2+ =	${WRKSRC}/License.txt
 BUILD_DEPENDS=	${LOCALBASE}/lib/libradius-engine.a:graphics/radius-engine
 LIB_DEPENDS=	liblua-5.1.so:lang/lua51 \
 		libpng.so:graphics/png \
-		libphysfs.so.1:devel/physfs
+		libphysfs.so:devel/physfs
 RUN_DEPENDS=	zip:archivers/zip
 
 USES=		pkgconfig

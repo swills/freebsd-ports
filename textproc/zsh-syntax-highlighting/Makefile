@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/zsh-syntax-highlighting/Makefile 482498 2018-10-20 13:57:40Z jrm $
+# $FreeBSD: head/textproc/zsh-syntax-highlighting/Makefile 490520 2019-01-16 21:18:49Z jrm $
 
 PORTNAME=	zsh-syntax-highlighting
-DISTVERSION=	0.6.0-186
-DISTVERSIONSUFFIX=	-gdf8b2fb
+DISTVERSION=	0.6.0-231
+DISTVERSIONSUFFIX=	-g2f3b98f
 PORTEPOCH=	1
 CATEGORIES=	textproc
 

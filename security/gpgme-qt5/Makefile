@@ -1,6 +1,6 @@
-# $FreeBSD: head/security/gpgme-qt5/Makefile 476015 2018-07-31 19:05:35Z jhale $
+# $FreeBSD: head/security/gpgme-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-${SLAVEPORT}
 
 MAINTAINER=	jhale@FreeBSD.org

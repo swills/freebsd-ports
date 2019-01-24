@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/yabause/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/emulators/yabause/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	yabause
 PORTVERSION=	0.9.14
-PORTREVISION=	1	
+PORTREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	SF
 

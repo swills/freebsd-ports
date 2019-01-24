@@ -1,12 +1,11 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/net/minidlna/Makefile 489641 2019-01-08 04:14:51Z glebius $
+# $FreeBSD: head/net/minidlna/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	minidlna
 PORTVERSION=	1.2.1
 PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	net multimedia www
-MASTER_SITES=	GH
 
 MAINTAINER=	glebius@FreeBSD.org
 COMMENT=	Media-server compatible with "Digital Life Network Alliance"

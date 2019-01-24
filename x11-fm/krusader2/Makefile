@@ -1,8 +1,9 @@
 # Created by: Heiner <h.eichmann@gmx.de>
-# $FreeBSD: head/x11-fm/krusader2/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11-fm/krusader2/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	krusader
 DISTVERSION=	2.7.1
+PORTREVISION=	1
 CATEGORIES=	x11-fm kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/
 

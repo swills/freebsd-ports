@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-bulk-update/Makefile 481636 2018-10-09 14:27:40Z rene $
+# $FreeBSD: head/www/py-django-bulk-update/Makefile 490747 2019-01-19 20:41:31Z sunpoet $
 
 PORTNAME=	django-bulk-update
 PORTVERSION=	2.2.0
@@ -7,12 +7,12 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	rene@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Bulk update using a single query over Django ORM
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.11:www/py-django@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${PY_FLAVOR}
 
 USES=		python:-3.4
 USE_PYTHON=	autoplist distutils

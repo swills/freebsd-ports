@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/musikcube/Makefile 489653 2019-01-08 08:29:44Z yuri $
+# $FreeBSD: head/multimedia/musikcube/Makefile 490443 2019-01-16 04:47:27Z yuri $
 
 PORTNAME=	musikcube
-DISTVERSION=	0.60.1
+DISTVERSION=	0.61.0-1
+DISTVERSIONSUFFIX=	-g987e4d7c
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -23,7 +24,7 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libtag.so:audio/taglib \
 		libvorbis.so:audio/libvorbis
 
-USES=		cmake:outsource,noninja compiler:c++14-lang ncurses ssl
+USES=		cmake:noninja compiler:c++14-lang ncurses ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	clangen
 USE_LDCONFIG=	yes

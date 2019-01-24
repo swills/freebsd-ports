@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/bibutils/Makefile 489449 2019-01-06 09:16:32Z tobik $
+# $FreeBSD: head/textproc/bibutils/Makefile 490226 2019-01-14 03:17:23Z wen $
 
 PORTNAME=	bibutils
-PORTVERSION=	6.6
+PORTVERSION=	6.7
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

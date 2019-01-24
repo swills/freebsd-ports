@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/libksane/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/libksane/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	libksane
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

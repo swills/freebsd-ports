@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/audio/gradio/Makefile 484147 2018-11-04 20:51:36Z arved $
+# $FreeBSD: head/audio/gradio/Makefile 489850 2019-01-10 08:26:20Z cpm $
 
 PORTNAME=	gradio
 PORTVERSION=	7.2
@@ -26,9 +26,7 @@ INSTALLS_ICONS=	yes
 WRKSRC=		${WRKDIR}/Gradio-${PORTVERSION}
 GLIB_SCHEMAS=	de.haeckerfelix.gradio.gschema.xml
 
-.include <bsd.port.pre.mk>
-
 post-patch:
 	${REINPLACE_CMD} -e "s,python3,${PYTHON_CMD}," ${WRKSRC}/meson_post_install.sh
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

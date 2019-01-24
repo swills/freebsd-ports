@@ -1,8 +1,9 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-Any/Makefile 476978 2018-08-12 08:06:23Z antoine $
+# $FreeBSD: head/converters/p5-JSON-Any/Makefile 490810 2019-01-20 20:50:05Z sunpoet $
 
 PORTNAME=	JSON-Any
 PORTVERSION=	1.39
+PORTREVISION=	1
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -31,9 +32,10 @@ JSON_DWIW_DESC=	Use JSON::DWIW
 JSON_PP_DESC=	Use JSON::PP
 JSON_XS_DESC=	Use JSON::XS
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 CPANEL_BUILD_DEPENDS=	p5-Cpanel-JSON-XS>=0:converters/p5-Cpanel-JSON-XS
 CPANEL_RUN_DEPENDS=	p5-Cpanel-JSON-XS>=0:converters/p5-Cpanel-JSON-XS
@@ -41,8 +43,6 @@ JSON_BUILD_DEPENDS=	p5-JSON>=0:converters/p5-JSON
 JSON_RUN_DEPENDS=	p5-JSON>=0:converters/p5-JSON
 JSON_DWIW_BUILD_DEPENDS=p5-JSON-DWIW>=0:converters/p5-JSON-DWIW
 JSON_DWIW_RUN_DEPENDS=	p5-JSON-DWIW>=0:converters/p5-JSON-DWIW
-JSON_PP_BUILD_DEPENDS=	p5-JSON-PP>=0:converters/p5-JSON-PP
-JSON_PP_RUN_DEPENDS=	p5-JSON-PP>=0:converters/p5-JSON-PP
 JSON_XS_BUILD_DEPENDS=	p5-JSON-XS>=0:converters/p5-JSON-XS
 JSON_XS_RUN_DEPENDS=	p5-JSON-XS>=0:converters/p5-JSON-XS
 

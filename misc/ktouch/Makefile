@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/ktouch/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/misc/ktouch/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	ktouch
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	misc kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

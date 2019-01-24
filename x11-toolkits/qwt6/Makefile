@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qwt6/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/x11-toolkits/qwt6/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qwt
 PORTVERSION=	6.1.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	6-${FLAVOR}

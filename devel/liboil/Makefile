@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/liboil/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/liboil/Makefile 490214 2019-01-13 21:35:53Z linimon $
 #    $MCom: ports/devel/liboil/Makefile,v 1.7 2008/03/23 06:57:57 marcus Exp $
 
 PORTNAME=	liboil
@@ -13,8 +13,6 @@ COMMENT=	Library of optimized inner loops
 
 LICENSE=	BSD2CLAUSE BSD3CLAUSE MIT
 LICENSE_COMB=	multi
-
-BROKEN_powerpc64=	fails to compile vec_memcpy.S
 
 USES=		libtool pathfix pkgconfig
 PATHFIX_MAKEFILEIN=	configure

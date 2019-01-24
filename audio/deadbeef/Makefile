@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/deadbeef/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/deadbeef/Makefile 489690 2019-01-08 14:06:17Z emaste $
 
 PORTNAME=	deadbeef
 PORTVERSION=	0.7.2
@@ -27,6 +27,7 @@ CPPFLAGS+=	-I../dumb/dumb-kode54/include -I../../plugins/libmp4ff \
 		-I./sidplay-libs/libsidplay/include/sidplay \
 		-I${LOCALBASE}/include
 CFLAGS+=	-Wno-narrowing
+LDFLAGS_i386=	-Wl,-z,notext
 LIBS+=		-L${LOCALBASE}/lib -lexecinfo -lintl
 USE_GNOME=	intltool
 INSTALLS_ICONS=	yes

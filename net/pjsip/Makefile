@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/pjsip/Makefile 487324 2018-12-12 20:48:30Z madpilot $
+# $FreeBSD: head/net/pjsip/Makefile 490460 2019-01-16 09:30:34Z amdmi3 $
 
 PORTNAME=	pjsip
 PORTVERSION=	2.8
@@ -10,6 +10,7 @@ MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Multimedia communication library written in C language
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libportaudio.so:audio/portaudio
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/xfce4-netload-plugin/Makefile 434829 2017-02-25 17:26:38Z olivierd $
+# $FreeBSD: head/sysutils/xfce4-netload-plugin/Makefile 490953 2019-01-22 14:44:38Z madpilot $
 
 PORTNAME=	xfce4-netload-plugin
 PORTVERSION=	1.3.1
@@ -13,26 +13,24 @@ COMMENT=	Network Load plugin for Xfce4
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-GNU_CONFIGURE=	yes
-USE_GNOME=	gtk30 intltool cairo
+USES=		gettext-tools gmake gnome libtool pkgconfig tar:bzip2 xfce:gtk3
+USE_GNOME=	cairo gtk30 intltool
 USE_XFCE=	panel
-USES=		gettext-tools gmake libtool pkgconfig tar:bzip2 xfce:gtk3
+
+GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 
-OPTIONS_DEFINE=	NLS
-OPTIONS_SUB=	yes
+OPTIONS_DEFINE=		NLS
+OPTIONS_SUB=		yes
 
 NLS_CONFIGURE_ENABLE=	nls
-NLS_USES=	gettext-runtime
+NLS_USES=		gettext-runtime
 
 post-patch:
 	@${REINPLACE_CMD} -e 's, || __FreeBSD_kernel__,,' \
 		${WRKSRC}/panel-plugin/net.c \
 		${WRKSRC}/panel-plugin/net.h \
 		${WRKSRC}/panel-plugin/os.h
-
-post-patch-NLS-off:
-	${REINPLACE_CMD} -e 's|po ||' ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>

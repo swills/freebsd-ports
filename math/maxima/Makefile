@@ -1,8 +1,9 @@
 # Created by: Scott Flatman <sf@dsinw.com>
-# $FreeBSD: head/math/maxima/Makefile 489434 2019-01-06 03:13:28Z swills $
+# $FreeBSD: head/math/maxima/Makefile 490170 2019-01-13 19:23:25Z swills $
 
 PORTNAME=	maxima
 PORTVERSION=	5.42.1
+PORTREVISION=	1
 CATEGORIES=	math lisp tk
 MASTER_SITES=	SF/maxima/Maxima-source/${PORTVERSION}-source
 
@@ -17,7 +18,6 @@ LICENSE_PERMS_MAXIMAEXTRACLAUSE=	dist-mirror dist-sell pkg-mirror pkg-sell auto-
 
 RUN_DEPENDS=	gnuplot:math/gnuplot \
 		rlwrap:devel/rlwrap
-PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
 USES=		autoreconf gmake shared-mime-info tk:85+
 
@@ -25,6 +25,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	PYTHON=dummy
 
 INFO=		imaxima maxima xmaxima abs_integrate drawutils kovacicODE logic
+
+PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
 OPTIONS_DEFINE=		EXAMPLES DOCS MANPAGES TEST
 OPTIONS_SINGLE=		LISP
@@ -73,9 +75,8 @@ post-build-MANPAGES-on:
 post-build-TEST-on: do-test
 
 post-install:
-	for x in "" "-1" "-2" "-3"; do ${INSTALL_MAN} ${WRKSRC}/doc/info/maxima.info$x ${STAGEDIR}${PREFIX}/${INFO_PATH}; done
-	@${MKDIR} ${STAGEDIR}${PREFIX}/info
-	${INSTALL_MAN} ${WRKSRC}/doc/info/maxima-index.lisp ${STAGEDIR}${PREFIX}/info
+	for x in "" "-1" "-2" "-3"; do ${INSTALL_MAN} ${WRKSRC}/doc/info/maxima.info$$x ${STAGEDIR}${PREFIX}/${INFO_PATH}; done
+	${INSTALL_MAN} ${WRKSRC}/doc/info/maxima-index.lisp ${STAGEDIR}${PREFIX}/${INFO_PATH}
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

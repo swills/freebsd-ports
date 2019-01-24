@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/zygrib-maps/Makefile 474646 2018-07-14 18:45:43Z yuri $
+# $FreeBSD: head/misc/zygrib-maps/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	zygrib-maps
 DISTVERSION=	2.4
+PORTREVISION=	1
 MASTER_SITES=	http://www.zygrib.org/getfile.php?file=
 CATEGORIES=	misc
 DISTNAME=	zyGrib_maps${DISTVERSION}

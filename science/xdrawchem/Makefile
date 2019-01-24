@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/xdrawchem/Makefile 487931 2018-12-21 00:06:34Z yuri $
+# $FreeBSD: head/science/xdrawchem/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	xdrawchem
 DISTVERSION=	1.10.2-1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

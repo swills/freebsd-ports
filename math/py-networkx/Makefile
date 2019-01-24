@@ -1,5 +1,5 @@
 # Created by: dikshie
-# $FreeBSD: head/math/py-networkx/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/py-networkx/Makefile 490159 2019-01-13 17:36:49Z miwi $
 
 PORTNAME=	networkx
 DISTVERSION=	2.1
@@ -22,6 +22,8 @@ USES=		python shebangfix zip
 USE_PYTHON=	autoplist concurrent distutils
 SHEBANG_GLOB=	*.py
 NO_ARCH=	yes
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}networkx1
 
 PLIST_SUB+=	PYTHON_MAJOR_VER=${PYTHON_MAJOR_VER}
 

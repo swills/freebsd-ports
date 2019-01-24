@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/security/py-txtorcon/Makefile 481960 2018-10-13 06:36:09Z yuri $
+# $FreeBSD: head/security/py-txtorcon/Makefile 490874 2019-01-21 18:26:02Z yuri $
 
 PORTNAME=	txtorcon
-DISTVERSION=	18.3.0
+DISTVERSION=	19.0.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

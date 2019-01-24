@@ -1,9 +1,9 @@
-# $FreeBSD: head/net/nitroshare/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/net/nitroshare/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	nitroshare
 DISTVERSION=	0.3.4-642
 DISTVERSIONSUFFIX=	-g2046ccb
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LIB_DEPENDS=	libqhttpengine.so:www/qhttpengine \
 		libqmdnsengine.so:dns/qmdnsengine
 
-USES=		cmake qt:5
+USES=		cmake compiler:c++11-lang qt:5
 USE_GITHUB=	yes
 GH_PROJECT=	${PORTNAME}-desktop
 USE_QT=		core gui network widgets buildtools_build qmake_build

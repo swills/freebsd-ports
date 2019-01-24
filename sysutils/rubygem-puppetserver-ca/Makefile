@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-puppetserver-ca/Makefile 487830 2018-12-20 02:12:12Z romain $
+# $FreeBSD: head/sysutils/rubygem-puppetserver-ca/Makefile 491066 2019-01-24 00:08:20Z romain $
 
 PORTNAME=	puppetserver-ca
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

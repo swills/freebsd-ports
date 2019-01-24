@@ -1,8 +1,8 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/converters/p5-Encode/Makefile 468441 2018-04-27 15:55:18Z sunpoet $
+# $FreeBSD: head/converters/p5-Encode/Makefile 490885 2019-01-21 19:53:12Z sunpoet $
 
 PORTNAME=	Encode
-PORTVERSION=	2.98
+PORTVERSION=	2.99
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DANKOGAI
@@ -14,12 +14,11 @@ COMMENT=	Provides interfaces between strings and the rest of the system
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|bin/enc2xs||; s|bin/piconv||' ${WRKSRC}/Makefile.PL
-	@${REINPLACE_CMD} -e 's|bin/encguess||' ${WRKSRC}/Makefile.PL
+	@${REINPLACE_CMD} -e 's|bin/enc2xs||; s|bin/piconv||; s|bin/encguess||' ${WRKSRC}/Makefile.PL
 
 post-install:
 	${FIND} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Encode/ -name '*.so' -exec ${STRIP_CMD} {} +

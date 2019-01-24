@@ -1,5 +1,5 @@
 # Created by: "Mahdi Mokhtari <mokhi64@gmail.com>"
-# $FreeBSD: head/databases/mysql80-client/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/databases/mysql80-client/Makefile 490801 2019-01-20 17:14:19Z mmokhi $
 
 PORTNAME=	mysql
 PORTREVISION=	1

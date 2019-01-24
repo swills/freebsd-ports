@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/qupzilla-qt5/Makefile 488313 2018-12-25 11:15:44Z linimon $
+# $FreeBSD: head/www/qupzilla-qt5/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	qupzilla
 PORTVERSION=	1.8.9
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/QupZilla/${PORTNAME}/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	-qt5
@@ -13,7 +13,7 @@ COMMENT=	Web browser based on WebKit engine and Qt Framework
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
+LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 
 CONFLICTS_INSTALL=	${PORTNAME}-qt4*
 

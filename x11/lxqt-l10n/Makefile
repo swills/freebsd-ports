@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/lxqt-l10n/Makefile 474277 2018-07-09 18:03:14Z jsm $
+# $FreeBSD: head/x11/lxqt-l10n/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lxqt-l10n
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	jsm@FreeBSD.org

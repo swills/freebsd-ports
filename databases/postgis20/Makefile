@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/postgis20/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/postgis20/Makefile 490508 2019-01-16 20:10:39Z sunpoet $
 
 PORTNAME=	postgis
 PORTVERSION=	2.0.7
@@ -7,7 +7,7 @@ CATEGORIES=	databases geography
 MASTER_SITES=	https://download.osgeo.org/postgis/source/
 PKGNAMESUFFIX=	20
 
-MAINTAINER=	sunpoet@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Geographic objects support for PostgreSQL databases
 
 LICENSE=	GPLv2

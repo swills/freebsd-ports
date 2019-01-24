@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/signify/Makefile 468685 2018-04-30 09:41:04Z tobik $
+# $FreeBSD: head/security/signify/Makefile 490860 2019-01-21 13:25:56Z tobik $
 
 PORTNAME=	signify
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.7
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	security
 

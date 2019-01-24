@@ -1,9 +1,9 @@
 # Created by: Jung-uk Kim <jkim@FreeBSD.org>
-# $FreeBSD: head/korean/xpdf/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/korean/xpdf/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	xpdf
 PORTVERSION=	3.03
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	korean
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
 PKGNAMESUFFIX=	-kofont

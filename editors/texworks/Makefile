@@ -1,9 +1,10 @@
 # Created by: Diego Depaoli <trebestie@gmail.com>
-# $FreeBSD: head/editors/texworks/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/editors/texworks/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	texworks
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	0.6.2
+PORTREVISION=	2
 CATEGORIES=	editors
 
 MAINTAINER=	hrs@FreeBSD.org
@@ -13,7 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	hunspell:textproc/hunspell
-LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
+LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell \
 		libpoppler.so:graphics/poppler \
 		libpoppler-qt5.so:graphics/poppler-qt5
 

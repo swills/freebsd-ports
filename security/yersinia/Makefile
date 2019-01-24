@@ -1,10 +1,9 @@
 # Created by: se
-# $FreeBSD: head/security/yersinia/Makefile 462337 2018-02-19 17:32:14Z pi $
+# $FreeBSD: head/security/yersinia/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	yersinia
 PORTVERSION=	0.8.2
 CATEGORIES=	security
-MASTER_SITES=	GH
 # MASTER_SITES=	http://www.yersinia.net/download/
 
 MAINTAINER=	ayu@commun.jp

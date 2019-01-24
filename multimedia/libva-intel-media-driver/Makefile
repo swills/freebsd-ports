@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 488788 2018-12-31 13:43:36Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-media-driver/Makefile 491071 2019-01-24 00:14:35Z jbeich $
 
 PORTNAME=	media-driver
 DISTVERSIONPREFIX=	intel-media-
-DISTVERSION=	18.4.pre4-79
-DISTVERSIONSUFFIX=	-g89684719
+DISTVERSION=	18.4.pre5-41
+DISTVERSIONSUFFIX=	-gd31ce0b9
 CATEGORIES=	multimedia
 PKGNAMEPREFIX=	libva-intel-
 
@@ -18,7 +18,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	Only Intel GPUs on x86 are supported
 
 BUILD_DEPENDS=	gmmlib>=${PORTVERSION:C/([^.]*\.[^.]).*/\1/}:multimedia/gmmlib \
-		libva>=2.3.0_2:multimedia/libva
+		libva>=2.3.0_3:multimedia/libva
 LIB_DEPENDS=	libpciaccess.so:devel/libpciaccess \
 		libigdgmm.so:multimedia/gmmlib \
 		libva.so:multimedia/libva

@@ -1,5 +1,5 @@
 # Created by: Stefan Zehl <sec@42.org>
-# $FreeBSD: head/x11/xmove/Makefile 328723 2013-09-29 18:19:03Z ak $
+# $FreeBSD: head/x11/xmove/Makefile 489664 2019-01-08 10:26:42Z tobik $
 
 PORTNAME=	xmove
 PORTVERSION=	2.0b2
@@ -10,8 +10,6 @@ DISTNAME=	${PORTNAME}.${PORTVERSION:S/b/beta/}
 
 MAINTAINER=	sec@42.org
 COMMENT=	Pseudoserver to support mobile X11 clients
-
-WRKSRC=		${WRKDIR}/xmove
 
 USES=		imake
 USE_XORG=	x11

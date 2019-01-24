@@ -1,9 +1,9 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	fs-uae-launcher
 PORTVERSION=	2.8.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	http://fs-uae.net/fs-uae/stable/${PORTVERSION}/
 

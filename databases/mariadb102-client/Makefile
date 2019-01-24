@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb102-client/Makefile 470246 2018-05-17 18:57:17Z brnrd $
+# $FreeBSD: head/databases/mariadb102-client/Makefile 490065 2019-01-12 17:05:50Z brnrd $
 
 PORTNAME=	mariadb
 PKGNAMESUFFIX=	102-client
@@ -23,7 +23,7 @@ CLIENT_ONLY=	yes
 post-configure:
 	${REINPLACE_CMD} -Ee 's|(#define INCLUDE.*)"$$|\1 -I${PREFIX}/include"|' \
 		-e 's|(#define LIBS .*)"$$|\1 -L${PREFIX}/lib"|' \
-		${WRKSRC}/libmariadb/mariadb_config/mariadb_config.c
+		${WRKDIR}/.build/libmariadb/mariadb_config/mariadb_config.c
 
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/share/aclocal/mysql.m4 \

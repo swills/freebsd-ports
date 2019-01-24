@@ -1,9 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/spdlog/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/spdlog/Makefile 490622 2019-01-18 03:00:22Z vanilla $
 
 PORTNAME=	spdlog
-PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -13,9 +12,10 @@ COMMENT=	Super fast C++ logging library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		cmake compiler:c++11-lib pathfix
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	gabime
-
-USES=		cmake compiler:c++11-lib pathfix
+CMAKE_ARGS=	-DSPDLOG_BUILD_BENCH=off
 
 .include <bsd.port.mk>

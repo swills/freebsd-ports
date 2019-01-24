@@ -1,8 +1,9 @@
 # Created by: Hakisho Nukama <nukama@gmail.com>
-# $FreeBSD: head/devel/fuel/Makefile 488432 2018-12-26 20:31:08Z linimon $
+# $FreeBSD: head/devel/fuel/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	fuel
 DISTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://fuel-scm.org/files/releases/
 

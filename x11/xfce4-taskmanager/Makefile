@@ -1,5 +1,5 @@
 # Created by: DaJoob
-# $FreeBSD: head/x11/xfce4-taskmanager/Makefile 488075 2018-12-22 08:26:21Z madpilot $
+# $FreeBSD: head/x11/xfce4-taskmanager/Makefile 490953 2019-01-22 14:44:38Z madpilot $
 
 PORTNAME=	xfce4-taskmanager
 PORTVERSION=	1.2.2
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
 USES=		gettext-tools gmake gnome localbase pkgconfig tar:bzip2
-USE_GNOME=	gtk30 glib20 cairo gdkpixbuf2 intltool libwnck
+USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 intltool libwnck
 USE_XORG=	ice sm x11 xmu xt
 
 GNU_CONFIGURE=	yes

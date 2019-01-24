@@ -1,8 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/mathmod/Makefile 487808 2018-12-19 17:37:43Z thierry $
+# $FreeBSD: head/math/mathmod/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	MathMod
 PORTVERSION=	9.0
+PORTREVISION=	1
 CATEGORIES=	math graphics
 
 MAINTAINER=	thierry@FreeBSD.org

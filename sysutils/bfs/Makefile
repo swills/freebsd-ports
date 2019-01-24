@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/bfs/Makefile 489249 2019-01-04 08:49:56Z tobik $
+# $FreeBSD: head/sysutils/bfs/Makefile 490025 2019-01-12 05:46:12Z tobik $
 
 PORTNAME=	bfs
-DISTVERSION=	1.3.1
+DISTVERSION=	1.3.2
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org

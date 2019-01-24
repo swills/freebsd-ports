@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/auralquiz/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/auralquiz/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	auralquiz
 PORTVERSION=	1.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SAVANNAH
 

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/py-smart_open/Makefile 480197 2018-09-20 19:27:34Z sunpoet $
+# $FreeBSD: head/net/py-smart_open/Makefile 490593 2019-01-17 19:22:04Z sunpoet $
 
 PORTNAME=	smart_open
-PORTVERSION=	1.7.1
+PORTVERSION=	1.8.0
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

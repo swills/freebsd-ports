@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/molsketch/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/molsketch/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	molsketch
 DISTVERSION=	0.5.2
 DISTVERSIONSUFFIX=	-src
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	SF/${PORTNAME}/Molsketch/Boron-11%20${DISTVERSION}/
 DISTNAME=	Molsketch-${DISTVERSIONFULL}
@@ -15,7 +16,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libopenbabel.so:science/openbabel
 
-USES=		cmake desktop-file-utils localbase:ldflags pkgconfig qt:5 shared-mime-info
+USES=		cmake compiler:c++11-lang desktop-file-utils localbase:ldflags \
+		pkgconfig qt:5 shared-mime-info
 USE_QT=		core gui network printsupport svg widgets buildtools_build qmake_build
 USE_LDCONFIG=	${PREFIX}/lib/molsketch
 

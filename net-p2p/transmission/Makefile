@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/transmission/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
+# $FreeBSD: head/net-p2p/transmission/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	transmission
 DISTVERSION=	2.94
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p
 
 MAINTAINER=	rigoletto@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/graphics/p5-GD-Thumbnail/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/graphics/p5-GD-Thumbnail/Makefile 490189 2019-01-13 20:08:56Z sunpoet $
 
 PORTNAME=	GD-Thumbnail
-PORTVERSION=	1.42
+PORTVERSION=	1.44
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,6 +15,7 @@ RUN_DEPENDS=	p5-GD>=0:graphics/p5-GD
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

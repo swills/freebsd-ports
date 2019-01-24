@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/dsbautostart/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11/dsbautostart/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	dsbautostart
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://freeshell.de/~mk/download/
 

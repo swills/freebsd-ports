@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-p2p/awgg/Makefile 476574 2018-08-07 07:39:47Z acm $
+# $FreeBSD: head/net-p2p/awgg/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	awgg
 PORTVERSION=	0.5.1
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 
@@ -43,6 +44,7 @@ USE_GNOME+=	${USE_GNOME_${FLAVOR}}
 
 LAZBUILD_ARGS=	-d
 LAZARUS_PROJECT_FILES=	src/awgg.lpi
+LLD_UNSAFE=	yes
 
 post-patch:
 	${REINPLACE_CMD} 's|/usr/bin/shutdown|/sbin/shutdown|g' ${WRKSRC}/src/fmain.pas

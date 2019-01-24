@@ -1,8 +1,9 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pgbadger/Makefile 488662 2018-12-29 11:36:56Z girgen $
+# $FreeBSD: head/databases/pgbadger/Makefile 490862 2019-01-21 13:35:02Z danfe $
 
 PORTNAME=	pgbadger
 PORTVERSION=	10.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	databases
 
@@ -16,7 +17,7 @@ BUILD_DEPENDS=	gsed:textproc/gsed
 USE_GITHUB=	yes
 GH_ACCOUNT=	darold
 
-USES=		perl5
+USES=		gmake perl5
 USE_PERL5=	configure
 
 NO_ARCH=	yes

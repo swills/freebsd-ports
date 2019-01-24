@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/nomacs/Makefile 481833 2018-10-11 14:47:13Z martymac $
+# $FreeBSD: head/graphics/nomacs/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	nomacs
 PORTVERSION=	3.6.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 
 MAINTAINER=	bsd@tuxproject.de

@@ -1,10 +1,11 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/math/speedcrunch/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/speedcrunch/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	speedcrunch
 PORTVERSION=	0.12.0
 PORTRVISION=	1
 DISTVERSIONSUFFIX=	-${BB_COMMIT}
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 

@@ -1,9 +1,8 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/www/guacamole-client/Makefile 459479 2018-01-19 22:46:55Z ultima $
+# $FreeBSD: head/www/guacamole-client/Makefile 490440 2019-01-16 01:19:21Z ultima $
 
 PORTNAME=	guacamole-client
-DISTVERSION=	0.9.14
-PORTREVISION=	1
+DISTVERSION=	1.0.0
 CATEGORIES=	www java
 MASTER_SITES+=	https://sourceforge.net/projects/distfiles/files/${PORTNAME}/:repo \
 		http://sourceforge.net/projects/distfiles/files/${PORTNAME}/:repo
@@ -41,7 +40,7 @@ TOMCAT_DESC=		Use Tomcat as your servlet
 TOMCAT_RUN_DEPENDS=	${LOCALBASE}/apache-tomcat-8.0/bin/bootstrap.jar:www/tomcat8
 SERVER_RUN_DEPENDS=	guacd:net/guacamole-server
 
-AUTH_EXTENSION=	cas duo header ldap noauth openid
+AUTH_EXTENSION=	cas duo header ldap openid quickconnect totp
 
 post-patch:
 		@${REINPLACE_CMD} 's|/etc/guacamole|${ETCDIR}| ; \

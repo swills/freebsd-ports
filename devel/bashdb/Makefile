@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/bashdb/Makefile 485642 2018-11-23 06:56:09Z yuri $
+# $FreeBSD: head/devel/bashdb/Makefile 490233 2019-01-14 09:12:30Z ehaupt $
 
 PORTNAME=	bashdb
 DISTVERSION=	4.4-1.0.1
@@ -15,6 +15,7 @@ BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash
 
 USES=		gmake python shebangfix
+
 SHEBANG_FILES=	lib/term-highlight.py
 GNU_CONFIGURE=	yes
 NO_BUILD=	yes

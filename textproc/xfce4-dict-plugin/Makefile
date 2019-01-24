@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann (oliver@FreeBSD.org)
-# $FreeBSD: head/textproc/xfce4-dict-plugin/Makefile 486160 2018-11-29 09:58:05Z madpilot $
+# $FreeBSD: head/textproc/xfce4-dict-plugin/Makefile 490953 2019-01-22 14:44:38Z madpilot $
 
 PORTNAME=	xfce4-dict
 PORTVERSION=	0.8.2
@@ -14,8 +14,8 @@ COMMENT=	Xfce4 plugin to query different dictionaries
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext-tools gmake libtool pkgconfig tar:bzip2 xfce:gtk3
-USE_GNOME=	glib20 gtk30 intltool cairo
+USES=		gettext-tools gmake gnome libtool pkgconfig tar:bzip2 xfce:gtk3
+USE_GNOME=	cairo glib20 gtk30 intltool
 USE_XFCE=	panel
 USE_XORG=	x11
 USE_LDCONFIG=	yes

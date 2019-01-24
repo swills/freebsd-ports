@@ -1,8 +1,8 @@
 # Created by: jmz
-# $FreeBSD: head/benchmarks/iozone/Makefile 482300 2018-10-17 16:35:30Z jpaetzel $
+# $FreeBSD: head/benchmarks/iozone/Makefile 490901 2019-01-21 21:22:56Z jpaetzel $
 
 PORTNAME=	iozone
-DISTVERSION=	3_484
+DISTVERSION=	3_487
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.iozone.org/src/current/
 DISTNAME=	${PORTNAME}${DISTVERSION}
@@ -10,9 +10,10 @@ DISTNAME=	${PORTNAME}${DISTVERSION}
 MAINTAINER=	jpaetzel@FreeBSD.org
 COMMENT=	Performance Test of Sequential File I/O
 
+USES=		gmake tar
+
 WRKSRC=		${WRKDIR}/${DISTNAME}/src/current
 
-USES=		tar
 MAKEFILE=	makefile
 MAKE_ARGS=	${MAKE_ENV}
 ALL_TARGET=	freebsd

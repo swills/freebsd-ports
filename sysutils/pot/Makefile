@@ -1,8 +1,8 @@
 # Created by: Luca Pizzamiglio <pizzamig@FreeBSD.org>
-# $FreeBSD: head/sysutils/pot/Makefile 487679 2018-12-17 12:49:01Z pizzamig $
+# $FreeBSD: head/sysutils/pot/Makefile 490484 2019-01-16 15:07:21Z pizzamig $
 
 PORTNAME=	pot
-PORTVERSION=	0.5.9
+PORTVERSION=	0.5.10
 CATEGORIES=	sysutils
 
 MAINTAINER=	pizzamig@FreeBSD.org

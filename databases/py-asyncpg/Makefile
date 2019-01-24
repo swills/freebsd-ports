@@ -1,9 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/databases/py-asyncpg/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/py-asyncpg/Makefile 489741 2019-01-08 21:07:52Z farrokhi $
 
 PORTNAME=	asyncpg
-PORTVERSION=	0.18.2
-PORTREVISION=	1
+PORTVERSION=	0.18.3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

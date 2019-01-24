@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/luckybackup/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/luckybackup/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	luckybackup
 PORTVERSION=	0.4.9
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}/source
 

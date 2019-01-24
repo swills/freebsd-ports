@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-term-ansicolor/Makefile 484129 2018-11-04 18:57:01Z sunpoet $
+# $FreeBSD: head/devel/rubygem-term-ansicolor/Makefile 490661 2019-01-18 18:43:57Z sunpoet $
 
 PORTNAME=	term-ansicolor
-PORTVERSION=	1.7.0
+PORTVERSION=	1.7.1
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

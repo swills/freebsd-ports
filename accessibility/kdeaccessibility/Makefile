@@ -1,7 +1,8 @@
-# $FreeBSD: head/accessibility/kdeaccessibility/Makefile 468533 2018-04-28 10:22:20Z tcberner $
+# $FreeBSD: head/accessibility/kdeaccessibility/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdeaccessibility
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	accessibility kde
 
 MAINTAINER=	kde@FreeBSD.org

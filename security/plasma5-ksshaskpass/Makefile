@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/plasma5-ksshaskpass/Makefile 488757 2018-12-31 06:38:42Z tcberner $
+# $FreeBSD: head/security/plasma5-ksshaskpass/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	ksshaskpass
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	security kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

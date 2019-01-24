@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/xcursorgen/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11/xcursorgen/Makefile 489739 2019-01-08 20:34:50Z zeising $
 
 PORTNAME=	xcursorgen
-PORTVERSION=	1.0.6
-PORTREVISION=	3
+PORTVERSION=	1.0.7
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

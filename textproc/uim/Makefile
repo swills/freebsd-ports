@@ -1,8 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim/Makefile 477478 2018-08-18 06:05:09Z nobutaka $
+# $FreeBSD: head/textproc/uim/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	uim
 PORTVERSION=	1.8.8
+PORTREVISION?=	0
 CATEGORIES?=	textproc
 MASTER_SITES=	https://github.com/uim/uim/releases/download/${PORTVERSION}/
 .if !defined(UIM_SLAVE) && defined(WITHOUT_X11)

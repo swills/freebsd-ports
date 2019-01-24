@@ -1,9 +1,10 @@
 # Created by: Chris D. Faulhaber <jedgar@fxp.org>
-# $FreeBSD: head/devel/kdbg/Makefile 488773 2018-12-31 12:47:31Z tcberner $
+# $FreeBSD: head/devel/kdbg/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdbg
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	devel kde
 
 MAINTAINER=	thomas.sander@gmx.de

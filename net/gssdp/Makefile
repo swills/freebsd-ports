@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/net/gssdp/Makefile 488954 2019-01-01 20:32:14Z sunpoet $
+# $FreeBSD: head/net/gssdp/Makefile 489900 2019-01-10 21:21:23Z sunpoet $
 
 PORTNAME=	gssdp
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 

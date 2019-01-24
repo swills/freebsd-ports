@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/kbfs/Makefile 486691 2018-12-05 18:46:52Z sunpoet $
+# $FreeBSD: head/security/kbfs/Makefile 490588 2019-01-17 19:21:36Z sunpoet $
 
 PORTNAME=	kbfs
-PORTVERSION=	2.11.0
+PORTVERSION=	2.13.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -16,11 +16,12 @@ PORTSCOUT=	skipv:initial-git-on-android
 USES=		go
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
-GO_TARGET=	-tags production ${GO_PKGNAME}/kbfsfuse ${GO_PKGNAME}/kbfsgit/git-remote-keybase ${GO_PKGNAME}/kbfstool
+GO_TARGET=	-tags production ${GO_PKGNAME}/go/kbfs/kbfsfuse ${GO_PKGNAME}/go/kbfs/kbfsgit/git-remote-keybase ${GO_PKGNAME}/go/kbfs/kbfstool
 
 PLIST_FILES=	bin/git-remote-keybase bin/kbfsfuse bin/kbfstool
 
 GH_ACCOUNT=	keybase
+GH_PROJECT=	client
 USE_GITHUB=	yes
 
 .include <bsd.port.mk>

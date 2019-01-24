@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/www/linkchecker/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/www/linkchecker/Makefile 490211 2019-01-13 20:58:36Z adamw $
 
 PORTNAME=	linkchecker
 PORTVERSION=	9.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 DISTNAME=	LinkChecker-${PORTVERSION}
@@ -24,14 +24,13 @@ CPE_VENDOR=	bastian_kleineidam
 USE_PYTHON=	distutils autoplist
 INSTALLS_ICONS=	yes
 
-OPTIONS_DEFINE=		CLAMAV EXAMPLES GEOIP GTK2 LOGIN NLS QT4 \
+OPTIONS_DEFINE=		CLAMAV EXAMPLES GTK2 LOGIN NLS QT4 \
 			SQLITE3 SYNTAX
 OPTIONS_DEFAULT=	SQLITE3 SYNTAX
 OPTIONS_SUB=		yes
 
 CLAMAV_DESC=		Clam Antivirus
 CLAMAV_RUN_DEPENDS=	clamscan:security/clamav
-GEOIP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}GeoIP>0:net/py-GeoIP@${PY_FLAVOR}
 GTK2_USE=		gnome=pygtk2
 LOGIN_DESC=		Login form submission
 LOGIN_RUN_DEPENDS=	twill>=0:www/twill

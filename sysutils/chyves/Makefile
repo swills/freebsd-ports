@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/chyves/Makefile 421920 2016-09-12 12:01:36Z lme $
+# $FreeBSD: head/sysutils/chyves/Makefile 489777 2019-01-09 13:05:31Z lme $
 
 PORTNAME=	chyves
 DISTVERSIONPREFIX=	v
@@ -15,6 +15,8 @@ USE_GITHUB=	yes
 
 NO_BUILD=	yes
 NO_ARCH=	yes
+
+MAKE_ARGS+=	-e
 
 do-patch:
 	${REINPLACE_CMD} 's%\$$(PREFIX)%${STAGEDIR}/$$(PREFIX)%g' ${WRKSRC}/Makefile

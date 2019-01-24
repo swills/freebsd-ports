@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Skinny/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Skinny/Makefile 490776 2019-01-20 09:00:32Z amdmi3 $
 
 PORTNAME=	DBIx-Skinny
 PORTVERSION=	0.0742
@@ -11,6 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for simple DBI wrapper/ORMapper
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-DBI>0:databases/p5-DBI \
@@ -22,5 +26,6 @@ RUN_DEPENDS=	\
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

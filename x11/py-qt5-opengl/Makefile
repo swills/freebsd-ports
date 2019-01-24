@@ -1,6 +1,7 @@
-# $FreeBSD: head/x11/py-qt5-opengl/Makefile 487597 2018-12-16 15:25:40Z tcberner $
+# $FreeBSD: head/x11/py-qt5-opengl/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	opengl
+PORTREVISION=	1
 CATEGORIES=	x11 devel python
 
 MAINTAINER=	kde@FreeBSD.org

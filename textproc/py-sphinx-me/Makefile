@@ -1,5 +1,5 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/textproc/py-sphinx-me/Makefile 414125 2016-04-27 18:16:26Z rene $
+# $FreeBSD: head/textproc/py-sphinx-me/Makefile 490724 2019-01-19 16:48:20Z rene $
 
 PORTNAME=	sphinx-me
 PORTVERSION=	0.3
@@ -7,7 +7,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	rene@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Wrap README-only projects in a dynamic Sphinx shell
 
 LICENSE=	BSD2CLAUSE

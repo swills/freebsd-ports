@@ -1,9 +1,8 @@
-# $FreeBSD: head/audio/gmsynth-lv2/Makefile 485886 2018-11-25 18:10:14Z yuri $
+# $FreeBSD: head/audio/gmsynth-lv2/Makefile 490834 2019-01-21 08:53:28Z yuri $
 
 PORTNAME=	gmsynth
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.0-5
-DISTVERSIONSUFFIX=	-g84f6379
+DISTVERSION=	0.3.1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

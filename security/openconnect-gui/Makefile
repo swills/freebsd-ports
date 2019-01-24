@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/openconnect-gui/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/security/openconnect-gui/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	openconnect-gui
 PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=v
 CATEGORIES=	security
 

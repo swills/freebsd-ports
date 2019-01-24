@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qwt5-qt5/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/qwt5-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qwt5-qt5
 PORTVERSION=	5.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 
 MAINTAINER=	makc@FreeBSD.org

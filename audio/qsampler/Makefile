@@ -1,9 +1,10 @@
 # Created by: trasz <trasz@FreeBSD.org
-# $FreeBSD: head/audio/qsampler/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/qsampler/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qsampler
 DISTVERSIONPREFIX=	qsampler_
 DISTVERSION=	0_5_0
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	ports@FreeBSD.org

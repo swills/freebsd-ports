@@ -1,8 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/x11-fm/ultracopier/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-fm/ultracopier/Makefile 490947 2019-01-22 12:55:06Z linimon $
 
 PORTNAME=	ultracopier
 PORTVERSION=	1.2.1.0
+PORTREVISION=	1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://files.first-world.info/ultracopier/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
@@ -13,7 +14,7 @@ COMMENT=	Advanced file copier
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		qmake qt:5 tar:xz
+USES=		compiler:c++11-lang qmake qt:5 tar:xz
 USE_QT=		buildtools_build linguisttools_build \
 		core gui network widgets xml
 QMAKE_ARGS=	LRELEASE="${LRELEASE}" ultracopier-core.pro

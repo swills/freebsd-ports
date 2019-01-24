@@ -1,8 +1,9 @@
 # Created by: Hans Petter Selasky <hselasky@FreeBSD.org>
-# $FreeBSD: head/audio/midipp/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/midipp/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	midipp
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.selasky.org/hans_petter/distfiles/ \
 		http://home.selasky.org:8192/distfiles/

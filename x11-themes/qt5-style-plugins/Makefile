@@ -1,10 +1,10 @@
 # Created by: Marie Loise Nolden <loise@kde.org>
-# $FreeBSD: head/x11-themes/qt5-style-plugins/Makefile 487874 2018-12-20 09:51:35Z tcberner $
+# $FreeBSD: head/x11-themes/qt5-style-plugins/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qt5-style-plugins
 DISTVERSIONPREFIX=	v
 DISTVERSION=	5.0.0-23
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-g335dbe
 CATEGORIES=	x11-themes
 DIST_SUBDIR=	KDE/Qt/addons

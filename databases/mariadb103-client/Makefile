@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/databases/mariadb103-client/Makefile 485783 2018-11-24 19:17:05Z brnrd $
+# $FreeBSD: head/databases/mariadb103-client/Makefile 490140 2019-01-13 14:43:08Z brnrd $
 
 PORTNAME=	mariadb
 PKGNAMESUFFIX=	103-client
@@ -22,11 +22,6 @@ USE_LDCONFIG=	${PREFIX}/lib/mysql
 CLIENT_ONLY=	yes
 
 CONFLICTS_INSTALL=	databases/mytop
-
-post-configure:
-	${REINPLACE_CMD} -Ee 's|(#define INCLUDE.*)"$$|\1 -I${PREFIX}/include"|' \
-		-e 's|(#define LIBS .*)"$$|\1 -L${PREFIX}/lib"|' \
-		${WRKSRC}/libmariadb/mariadb_config/mariadb_config.c
 
 post-install:
 	${RM} -r ${STAGEDIR}${DATADIR}

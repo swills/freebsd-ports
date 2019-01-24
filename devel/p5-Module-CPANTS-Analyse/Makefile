@@ -1,9 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-CPANTS-Analyse/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Module-CPANTS-Analyse/Makefile 490424 2019-01-15 21:20:10Z sunpoet $
 
 PORTNAME=	Module-CPANTS-Analyse
-PORTVERSION=	0.96
-PORTREVISION=	3
+PORTVERSION=	0.99
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,18 +19,16 @@ RUN_DEPENDS=	p5-Archive-Any-Lite>=0.06:archivers/p5-Archive-Any-Lite \
 		p5-Array-Diff>=0.04:misc/p5-Array-Diff \
 		p5-CPAN-DistnameInfo>=0.06:devel/p5-CPAN-DistnameInfo \
 		p5-Class-Accessor>=0.19:devel/p5-Class-Accessor \
-		p5-IO-Capture>=0.05:devel/p5-IO-Capture \
-		p5-JSON-MaybeXS>0:converters/p5-JSON-MaybeXS \
+		p5-Data-Binary>=0:devel/p5-Data-Binary \
 		p5-File-Find-Object>=0.2.1:devel/p5-File-Find-Object \
 		p5-Module-ExtractUse>=0.330:devel/p5-Module-ExtractUse \
-		p5-Module-Pluggable>=2.96:devel/p5-Module-Pluggable \
-		p5-Set-Scalar>=0:devel/p5-Set-Scalar \
-		p5-Software-License>=0.103008:misc/p5-Software-License \
-		p5-Software-License-CCpack>=0:misc/p5-Software-License-CCpack
+		p5-Module-Find>=0:devel/p5-Module-Find \
+		p5-Software-License>=0.103012:misc/p5-Software-License
 TEST_DEPENDS=	p5-Test-FailWarnings>=0:devel/p5-Test-FailWarnings
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

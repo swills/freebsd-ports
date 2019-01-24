@@ -1,6 +1,6 @@
-# $FreeBSD: head/net-p2p/transmission-daemon/Makefile 488657 2018-12-29 07:18:50Z rigoletto $
+# $FreeBSD: head/net-p2p/transmission-daemon/Makefile 491047 2019-01-23 17:07:22Z rigoletto $
 
-PORTREVISION=	1
+PORTREVISION=	3
 PKGNAMESUFFIX=	-daemon
 
 USES=		ssl

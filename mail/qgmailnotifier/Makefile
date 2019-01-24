@@ -1,10 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/mail/qgmailnotifier/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/mail/qgmailnotifier/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	qgmailnotifier
 DISTVERSION=	2014.2
 CATEGORIES=	mail
-MASTER_SITES=	GH
 
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Portable Qt 4 based GMail notifier

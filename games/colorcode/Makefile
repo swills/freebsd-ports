@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/colorcode/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/games/colorcode/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	colorcode
 PORTVERSION=	0.8.5
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://colorcode.laebisch.com/download/
 DISTNAME=	ColorCode-${PORTVERSION}

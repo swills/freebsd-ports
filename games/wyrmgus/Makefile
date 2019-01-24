@@ -1,8 +1,8 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/wyrmgus/Makefile 489383 2019-01-05 21:05:00Z amdmi3 $
+# $FreeBSD: head/games/wyrmgus/Makefile 490558 2019-01-17 13:15:18Z amdmi3 $
 
 PORTNAME=	wyrmgus
-PORTVERSION=	3.5.1
+PORTVERSION=	3.5.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games devel
 
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libtolua++-${LUA_VER}.so:lang/tolua++ \
 		libogg.so:audio/libogg \
 		liboaml.so:audio/oaml
+BUILD_DEPENDS=	${LOCALBASE}/include/boost/tokenizer.hpp:devel/boost-libs
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     Andrettin

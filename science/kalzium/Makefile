@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/kalzium/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/kalzium/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kalzium
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	science kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

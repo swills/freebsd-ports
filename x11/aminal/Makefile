@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/aminal/Makefile 487479 2018-12-15 01:55:43Z yuri $
+# $FreeBSD: head/x11/aminal/Makefile 490877 2019-01-21 18:37:39Z yuri $
 
 PORTNAME=	aminal
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.7.12
+DISTVERSION=	0.8.7
 CATEGORIES=	x11
 
 MAINTAINER=	yuri@FreeBSD.org

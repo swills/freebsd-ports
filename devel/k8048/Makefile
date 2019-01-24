@@ -1,5 +1,5 @@
 # Created by: Bruce M. Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/devel/k8048/Makefile 456901 2017-12-21 10:23:19Z linimon $
+# $FreeBSD: head/devel/k8048/Makefile 490114 2019-01-13 06:26:33Z bofh $
 
 PORTNAME=	k8048
 PORTVERSION=	3.05
@@ -19,11 +19,13 @@ BROKEN_mips64=		invokes x86 assembler
 BROKEN_sparc64=		invokes x86 assembler
 BROKEN_powerpc64=	invokes x86 assembler
 
+USES=		gmake
+
 WRKSRC=		${WRKDIR}/${PORTNAME}/Src
 
-USES=		gmake
 ALL_TARGET=	build
 
+BINARY_ALIAS=	gcc=${CC}
 PLIST_FILES=	bin/${PORTNAME} bin/kio ${BIN_SYMLINKS}
 
 BIN_SYMLINKS=	bin/k12 bin/k14 bin/k16 bin/ktest

@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/amavisd-new/Makefile 482297 2018-10-17 15:09:47Z flo $
+# $FreeBSD: head/security/amavisd-new/Makefile 490317 2019-01-14 22:08:45Z flo $
 
 PORTNAME=	amavisd-new
 PORTVERSION=	2.11.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.ijs.si/software/amavisd/ \

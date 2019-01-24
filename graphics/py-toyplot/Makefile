@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/graphics/py-toyplot/Makefile 489640 2019-01-08 03:18:51Z skreuzer $
+# $FreeBSD: head/graphics/py-toyplot/Makefile 490104 2019-01-13 02:05:12Z skreuzer $
 
 PORTNAME=	toyplot
 PORTVERSION=	0.18.0
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.8:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}reportlab>=3.2.0:print/py-reportlab@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}custom_inherit>=2.2.0:textproc/py-custom_inherit@${PY_FLAVOR}
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

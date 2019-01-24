@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libquicktime/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/libquicktime/Makefile 489663 2019-01-08 09:49:52Z tobik $
 
 PORTNAME=	libquicktime
 PORTVERSION=	1.2.4
-PORTREVISION?=	23
+PORTREVISION?=	24
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 
@@ -58,7 +58,7 @@ CONFIGURE_ARGS+=	--without-gtk
 .endif
 
 .if ${PORT_OPTIONS:MALSA}
-LIB_DEPENDS=	libasound.so:audio/alsa-lib
+LIB_DEPENDS+=	libasound.so:audio/alsa-lib
 .else
 CONFIGURE_ARGS+=	--without-alsa
 .endif

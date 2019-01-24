@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/deadbeef-mpris2-plugin/Makefile 473494 2018-06-28 09:44:20Z danfe $
+# $FreeBSD: head/audio/deadbeef-mpris2-plugin/Makefile 490550 2019-01-17 12:17:26Z danfe $
 
 PORTNAME=	deadbeef-mpris2-plugin
+PORTVERSION=	1.12
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.11
 CATEGORIES=	audio
 
 MAINTAINER=	danfe@FreeBSD.org

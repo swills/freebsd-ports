@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/py-lifelines/Makefile 489201 2019-01-03 19:02:46Z rm $
+# $FreeBSD: head/science/py-lifelines/Makefile 490163 2019-01-13 18:19:07Z rm $
 
 PORTNAME=	lifelines
-DISTVERSION=	0.16.1
+DISTVERSION=	0.17.0
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,8 +17,9 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}scipy>1.0:science/py-scipy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>2.0:math/py-matplotlib@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

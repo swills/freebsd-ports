@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/vpnc-scripts/Makefile 466156 2018-04-01 13:50:52Z zi $
+# $FreeBSD: head/sysutils/vpnc-scripts/Makefile 491094 2019-01-24 13:58:29Z zi $
 
 PORTNAME=	vpnc-scripts
-PORTVERSION=	20180227
+PORTVERSION=	20190117
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.infradead.org/pub/${PORTNAME}/ \
 		ZI

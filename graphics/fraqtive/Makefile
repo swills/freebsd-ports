@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/graphics/fraqtive/Makefile 483153 2018-10-27 17:15:13Z makc $
+# $FreeBSD: head/graphics/fraqtive/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	fraqtive
 PORTVERSION=	0.4.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	SF/fraqtive/Fraqtive/Fraqtive%20${PORTVERSION}/
 

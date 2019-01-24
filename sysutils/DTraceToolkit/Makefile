@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <steven@exit2shell.com>
-# $FreeBSD: head/sysutils/DTraceToolkit/Makefile 468285 2018-04-25 17:57:30Z skreuzer $
+# $FreeBSD: head/sysutils/DTraceToolkit/Makefile 490256 2019-01-14 14:05:39Z tobik $
 
 PORTNAME=	dtrace-toolkit
 PORTVERSION=	1.0
@@ -81,10 +81,10 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	(cd ${WRKSRC} && ${TAR} --exclude '*.orig' -cf - . ) | \
 		(cd ${STAGEDIR}${DATADIR}/ && ${TAR} xvf -)
-	${RLN} -s ${STAGEDIR}${DATADIR}/hotkernel ${STAGEDIR}${PREFIX}/bin/hotkernel
-	${RLN} -s ${STAGEDIR}${DATADIR}/procsystime ${STAGEDIR}${PREFIX}/bin/procsystime
-	${RLN} -s ${STAGEDIR}${DATADIR}/opensnoop ${STAGEDIR}${PREFIX}/bin/opensnoop
-	${RLN} -s ${STAGEDIR}${DATADIR}/Apps/shellsnoop ${STAGEDIR}${PREFIX}/bin/shellsnoop
+	${RLN} ${STAGEDIR}${DATADIR}/hotkernel ${STAGEDIR}${PREFIX}/bin/hotkernel
+	${RLN} ${STAGEDIR}${DATADIR}/procsystime ${STAGEDIR}${PREFIX}/bin/procsystime
+	${RLN} ${STAGEDIR}${DATADIR}/opensnoop ${STAGEDIR}${PREFIX}/bin/opensnoop
+	${RLN} ${STAGEDIR}${DATADIR}/Apps/shellsnoop ${STAGEDIR}${PREFIX}/bin/shellsnoop
 
 .for MANPAGE in hotkernel procsystime opensnoop shellsnoop
 	${INSTALL_MAN} ${WRKSRC}/Man/man1m/${MANPAGE}.1m \

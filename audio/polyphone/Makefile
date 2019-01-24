@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/polyphone/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/polyphone/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	polyphone
 DISTVERSION=	1.9
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://polyphone-soundfonts.com/en/download/file/76-polyphone-1-8-src-zip/latest/download?ae95d968569b61bc77f7b8559a14db4d=1/
 

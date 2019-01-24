@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qtpbfimageplugin/Makefile 489294 2019-01-05 02:23:11Z swills $
+# $FreeBSD: head/graphics/qtpbfimageplugin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtpbfimageplugin
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	sikmir@gmail.com

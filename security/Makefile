@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 488895 2019-01-01 14:17:46Z rene $
+# $FreeBSD: head/security/Makefile 490698 2019-01-19 03:01:19Z ler $
 #
 
     COMMENT = Security tools
@@ -174,6 +174,7 @@
     SUBDIR += gcr
     SUBDIR += git-crypt
     SUBDIR += git-remote-gcrypt
+    SUBDIR += git-secret
     SUBDIR += gnome-keyring
     SUBDIR += gnome-keyring-sharp
     SUBDIR += gnome-password-generator
@@ -314,6 +315,7 @@
     SUBDIR += krb5
     SUBDIR += krb5-115
     SUBDIR += krb5-116
+    SUBDIR += krb5-117
     SUBDIR += krb5-appl
     SUBDIR += krb5-devel
     SUBDIR += kripp

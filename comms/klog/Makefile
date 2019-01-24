@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/klog/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/klog/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	klog
 PORTVERSION=	0.9.3
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SAVANNAH
 

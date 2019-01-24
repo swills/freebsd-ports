@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/gotop/Makefile 487489 2018-12-15 08:05:15Z yuri $
+# $FreeBSD: head/sysutils/gotop/Makefile 490824 2019-01-21 07:38:20Z yuri $
 
 PORTNAME=	gotop
-DISTVERSION=	1.7.1
+DISTVERSION=	2.0.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org

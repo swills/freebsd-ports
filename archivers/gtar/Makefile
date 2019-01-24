@@ -1,9 +1,8 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/archivers/gtar/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/archivers/gtar/Makefile 490146 2019-01-13 15:33:22Z naddy $
 
 PORTNAME=	tar
-PORTVERSION=	1.30
-PORTREVISION=	1
+PORTVERSION=	1.31
 CATEGORIES=	archivers sysutils
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	g
@@ -16,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 INFO=		tar
 
-USES=		charsetfix cpe iconv:${STATIC_ARGS} localbase makeinfo tar:xz
+USES=		charsetfix cpe iconv:${STATIC_ARGS} localbase tar:xz
 CPE_VENDOR=	gnu
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g

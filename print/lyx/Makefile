@@ -1,8 +1,9 @@
 # Created by: Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/lyx/Makefile 489255 2019-01-04 12:19:20Z rakuco $
+# $FreeBSD: head/print/lyx/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	lyx
 PORTVERSION=	${MAJOR_VERSION}.${MINOR_VERSION}
+PORTREVISION=	2
 CATEGORIES=	print editors
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/${MAJOR_VERSION}.x/ \
 		http://www-ftp.lip6.fr/ftp/pub/lyx/stable/${MAJOR_VERSION}.x/ \
@@ -50,7 +51,7 @@ ASPELL_LIB_DEPENDS=	libaspell.so:textproc/aspell
 ENCHANT_CONFIGURE_OFF=	--without-enchant
 ENCHANT_LIB_DEPENDS=	libenchant.so:textproc/enchant
 HUNSPELL_CONFIGURE_OFF=	--without-hunspell
-HUNSPELL_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
+HUNSPELL_LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 NLS_CONFIGURE_OFF=	--disable-nls
 NLS_USES=		gettext
 

@@ -1,5 +1,5 @@
 # Created by: netchild@FreeBSD.org
-# $FreeBSD: head/net-im/skype-devel/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/skype-devel/Makefile 489672 2019-01-08 11:46:19Z tobik $
 
 PORTNAME=	skype
 PORTVERSION=	2.2.0.35
@@ -11,8 +11,6 @@ DISTNAME=	skype_static-${DISTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	P2P VoIP software, development version
-
-CONFLICTS=	skype-[0-9]*
 
 OPTIONS_DEFINE=	DOCS VIDEO
 OPTIONS_DEFAULT=VIDEO

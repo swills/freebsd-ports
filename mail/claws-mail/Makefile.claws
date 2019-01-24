@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/claws-mail/Makefile.claws 488194 2018-12-23 11:29:55Z joneum $
+# $FreeBSD: head/mail/claws-mail/Makefile.claws 489852 2019-01-10 08:35:25Z joneum $
 
 PORTVERSION=	3.17.3
 CATEGORIES?=	mail
@@ -8,7 +8,7 @@ MAINTAINER=	joneum@FreeBSD.org
 
 LICENSE=	GPLv3
 
-USES+=		gettext-runtime gmake iconv libtool pkgconfig tar:xz
+USES+=		autoreconf gettext-tools gmake iconv libtool pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG} --disable-dbus --disable-static

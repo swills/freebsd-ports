@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libdill/Makefile 489647 2019-01-08 07:47:10Z yuri $
+# $FreeBSD: head/devel/libdill/Makefile 490360 2019-01-15 10:49:22Z yuri $
 
 PORTNAME=	libdill
 DISTVERSION=	2.13
@@ -9,6 +9,8 @@ COMMENT=	Structured concurrency library in C
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_i386=	error: this directive must appear between .cfi_startproc and .cfi_endproc directives
 
 USES=		autoreconf gmake libtool
 GNU_CONFIGURE=	yes

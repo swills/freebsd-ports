@@ -1,5 +1,5 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/devel/liballium/Makefile 460705 2018-02-02 15:24:51Z amdmi3 $
+# $FreeBSD: head/devel/liballium/Makefile 489809 2019-01-09 15:26:55Z amdmi3 $
 
 PORTNAME=	liballium
 PORTVERSION=	0.0.1
@@ -7,6 +7,10 @@ CATEGORIES=	devel security
 
 MAINTAINER=	fk@fabiankeil.de
 COMMENT=	Tor pluggable transports utility library
+
+LICENSE=	BSD2CLAUSE BSD3CLAUSE PD
+LICENSE_COMB=	multi
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Yawning

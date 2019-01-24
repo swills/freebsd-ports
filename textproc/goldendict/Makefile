@@ -1,9 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/textproc/goldendict/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/textproc/goldendict/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	goldendict
 PORTVERSION=	1.0.1
-PORTREVISION=	14
+PORTREVISION=	16
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:C|(.*)\.[0-9]*$|\1|}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -16,7 +16,7 @@ LICENSE=	GPLv3
 DEPRECATED=		Qt4 has been EOL since december 2015
 EXPIRATION_DATE=	2019-03-15
 
-LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
+LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell \
 		libvorbis.so:audio/libvorbis
 
 NO_WRKSUBDIR=	yes

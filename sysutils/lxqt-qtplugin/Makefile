@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/lxqt-qtplugin/Makefile 489579 2019-01-07 15:08:08Z rigoletto $
+# $FreeBSD: head/sysutils/lxqt-qtplugin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lxqt-qtplugin
 PORTVERSION=	0.13.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	LXQT
 

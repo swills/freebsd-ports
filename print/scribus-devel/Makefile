@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/print/scribus-devel/Makefile 489547 2019-01-06 21:05:32Z antoine $
+# $FreeBSD: head/print/scribus-devel/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	scribus
 PORTVERSION=	1.5.4
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	print editors
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}${PKGNAMESUFFIX}/${PORTVERSION}/ \
 		http://www.scribus.net/downloads/${PORTVERSION}/
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 		libboost_thread.so:devel/boost-libs \
-		libhunspell-1.6.so:textproc/hunspell \
+		libhunspell-1.7.so:textproc/hunspell \
 		libcairo.so:graphics/cairo \
 		librevenge-0.0.so:textproc/librevenge \
 		libcups.so:print/cups \

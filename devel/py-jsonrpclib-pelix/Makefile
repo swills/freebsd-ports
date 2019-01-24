@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/py-jsonrpclib-pelix/Makefile 483131 2018-10-27 12:28:52Z ehaupt $
+# $FreeBSD: head/devel/py-jsonrpclib-pelix/Makefile 490229 2019-01-14 08:01:02Z ehaupt $
 
 PORTNAME=	jsonrpclib-pelix
-PORTVERSION=	0.3.2
+PORTVERSION=	0.4.0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

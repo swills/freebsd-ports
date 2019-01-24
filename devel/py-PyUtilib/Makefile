@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-PyUtilib/Makefile 487946 2018-12-21 04:16:42Z yuri $
+# $FreeBSD: head/devel/py-PyUtilib/Makefile 490880 2019-01-21 18:49:15Z yuri $
 
 PORTNAME=	PyUtilib
-DISTVERSION=	5.6.4
+DISTVERSION=	5.6.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

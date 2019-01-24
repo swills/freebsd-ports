@@ -1,9 +1,9 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/vuxml/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/security/vuxml/Makefile 491045 2019-01-23 16:03:33Z zi $
 
 PORTNAME=	vuxml
 PORTVERSION=	1.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security textproc
 MASTER_SITES=	http://www.vuxml.org/dtd/vuxml-1/
 DISTFILES=	vuxml-10.dtd  vuxml-model-10.mod \

@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/graphics/librsvg2/Makefile 484912 2018-11-14 03:56:41Z koobs $
+# $FreeBSD: head/graphics/librsvg2/Makefile 490439 2019-01-16 01:11:59Z tobik $
 
 PORTNAME=	librsvg
 PORTVERSION=	2.40.20
@@ -11,6 +11,7 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Library for parsing and rendering SVG vector-graphic files
 
+CONFLICTS_INSTALL=	librsvg2-rust
 # librsvg2 2.42+ needs rust to build, which is not available on all
 # FreeBSD archs. So limit pure C version 2.40.x.
 PORTSCOUT=	limit:^2\.40\.

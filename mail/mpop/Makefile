@@ -1,9 +1,8 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/mail/mpop/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
+# $FreeBSD: head/mail/mpop/Makefile 490390 2019-01-15 17:02:06Z jbeich $
 
 PORTNAME=	mpop
-DISTVERSION=	1.4.1
-PORTREVISION=	1
+DISTVERSION=	1.4.2
 CATEGORIES=	mail
 MASTER_SITES=	https://marlam.de/mpop/releases/
 

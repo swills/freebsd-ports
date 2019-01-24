@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/krb5/Makefile 488834 2018-12-31 20:26:37Z cy $
+# $FreeBSD: head/security/krb5/Makefile 489737 2019-01-08 20:29:34Z cy $
 
-VERSIONS=		115 116
-KRB5_VERSION?=		116
+VERSIONS=		115 116 117
+KRB5_VERSION?=		117
 
 MASTERDIR=		${.CURDIR}/../krb5-${KRB5_VERSION}
 

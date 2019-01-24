@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gitolite/Makefile 481211 2018-10-04 08:45:35Z mat $
+# $FreeBSD: head/devel/gitolite/Makefile 490256 2019-01-14 14:05:39Z tobik $
 
 PORTNAME=	gitolite
 DISTVERSIONPREFIX=v
-DISTVERSION=	3.6.10
+DISTVERSION=	3.6.11
 PORTEPOCH=	1
 CATEGORIES=	devel
 
@@ -54,7 +54,7 @@ do-build:
 do-install:
 	(cd ${WRKSRC}/src && ${COPYTREE_BIN} \* ${STAGEDIR}${PREFIX}/libexec/gitolite)
 	(cd ${WRKSRC}/lib && ${COPYTREE_SHARE} Gitolite ${STAGEDIR}${PREFIX}/${SITE_PERL_REL}/)
-	${RLN} -s ${STAGEDIR}${PREFIX}/libexec/gitolite/gitolite ${STAGEDIR}${PREFIX}/bin/gitolite
+	${RLN} ${STAGEDIR}${PREFIX}/libexec/gitolite/gitolite ${STAGEDIR}${PREFIX}/bin/gitolite
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

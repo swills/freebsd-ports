@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qml-box2d/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/qml-box2d/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qml-box2d
 DISTVERSION=	2.0.20180109
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-toolkits
 
 MAINTAINER=	kde@FreeBSD.org

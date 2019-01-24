@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-Mock-Redis/Makefile 481756 2018-10-10 19:10:42Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Mock-Redis/Makefile 490362 2019-01-15 11:38:48Z swills $
 
 PORTNAME=	Test-Mock-Redis
-PORTVERSION=	0.20
+PORTVERSION=	0.21
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

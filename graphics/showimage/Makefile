@@ -1,8 +1,9 @@
 # Created by: Rusty Nejdl <rnejdl@ringofsaturn.com>
-# $FreeBSD: head/graphics/showimage/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/showimage/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	showimage
 PORTVERSION=	1.10
+PORTREVISION=	1
 CATEGORIES=	graphics kde
 MASTER_SITES=	https://dl.opendesktop.org/api/files/download/id/1482097460/ \
 		LOCAL/tcberner/showimage-0.10/

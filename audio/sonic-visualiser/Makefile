@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/sonic-visualiser/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/audio/sonic-visualiser/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	sonic-visualiser
 PORTVERSION=	2.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	https://code.soundsoftware.ac.uk/attachments/download/1675/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/xfce4-screensaver/Makefile 486013 2018-11-27 14:58:16Z madpilot $
+# $FreeBSD: head/x11/xfce4-screensaver/Makefile 490953 2019-01-22 14:44:38Z madpilot $
 
 PORTNAME=	xfce4-screensaver
 PORTVERSION=	0.1.3
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libstartup-notification-1.so:x11/startup-notification \
 		libxklavier.so:x11/libxklavier
 
-USES=		gettext-tools gmake pkgconfig tar:bzip2 xfce:gtk3
+USES=		gettext-tools gmake gnome pkgconfig tar:bzip2 xfce:gtk3
 USE_GL=		gl
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 intltool
 USE_XFCE=	garcon libexo libutil

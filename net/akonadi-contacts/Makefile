@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/akonadi-contacts/Makefile 488728 2018-12-30 17:59:52Z tcberner $
+# $FreeBSD: head/net/akonadi-contacts/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	akonadi-contacts
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

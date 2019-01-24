@@ -1,8 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/devel/py-icalendar/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-icalendar/Makefile 489954 2019-01-11 12:39:23Z miwi $
 
 PORTNAME=	icalendar
-PORTVERSION=	3.11.7
+PORTVERSION=	4.0.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,8 +18,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
-NO_ARCH=	yes
 
+NO_ARCH=	yes
 PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS

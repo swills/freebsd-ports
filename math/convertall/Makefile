@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/math/convertall/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/math/convertall/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	convertall
 PORTVERSION=	0.7.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 

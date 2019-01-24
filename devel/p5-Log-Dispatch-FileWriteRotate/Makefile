@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Dispatch-FileWriteRotate/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Log-Dispatch-FileWriteRotate/Makefile 489904 2019-01-10 21:21:46Z sunpoet $
 
 PORTNAME=	Log-Dispatch-FileWriteRotate
-PORTVERSION=	0.05
+PORTVERSION=	0.060
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,8 +18,9 @@ BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-File-Write-Rotate>=0.29:devel/p5-File-Write-Rotate \
 		p5-Log-Dispatch>=0:devel/p5-Log-Dispatch
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

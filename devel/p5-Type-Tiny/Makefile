@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Type-Tiny/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Type-Tiny/Makefile 489784 2019-01-09 14:51:39Z sunpoet $
 
 PORTNAME=	Type-Tiny
-PORTVERSION=	1.004002
+PORTVERSION=	1.004004
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TOBYINK
@@ -16,7 +16,7 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	p5-Exporter-Tiny>=0.026:devel/p5-Exporter-Tiny
+RUN_DEPENDS=	p5-Exporter-Tiny>=0.040:devel/p5-Exporter-Tiny
 TEST_DEPENDS=	p5-Class-InsideOut>=0:devel/p5-Class-InsideOut \
 		p5-Function-Parameters>=0:devel/p5-Function-Parameters \
 		p5-JSON>=0:converters/p5-JSON \
@@ -40,9 +40,10 @@ RECOMMENDED_DESC=	Recommended dependencies by upstream
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 RECOMMENDED_BUILD_DEPENDS=	p5-Devel-StackTrace>=0:devel/p5-Devel-StackTrace \
 				p5-Ref-Util-XS>=0.100:devel/p5-Ref-Util-XS \

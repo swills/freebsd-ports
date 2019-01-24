@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/plasma-pass/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/sysutils/plasma-pass/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	plasma-pass
 DISTVERSION=	0.1.a.20181210
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils kde
 
 MAINTAINER=	kde@FreeBSD.org

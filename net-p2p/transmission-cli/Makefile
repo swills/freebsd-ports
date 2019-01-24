@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/transmission-cli/Makefile 488657 2018-12-29 07:18:50Z rigoletto $
+# $FreeBSD: head/net-p2p/transmission-cli/Makefile 491047 2019-01-23 17:07:22Z rigoletto $
 
 PORTNAME=	transmission
 DISTVERSION=	2.94
-PORTREVISION?=	1
+PORTREVISION?=	3
 CATEGORIES+=	net-p2p
 SLAVEPORT?=	cli
 PKGNAMESUFFIX?=	-cli

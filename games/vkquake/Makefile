@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/vkquake/Makefile 478885 2018-09-03 17:48:23Z jbeich $
+# $FreeBSD: head/games/vkquake/Makefile 490151 2019-01-13 16:08:40Z tobik $
 
 PORTNAME=	vkquake
 DISTVERSION=	1.00.0
@@ -11,13 +11,13 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/../LICENSE.txt
 
 BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:devel/vulkan-headers
-LIB_DEPENDS=	libSDL2.so:devel/sdl20 \
-		libX11-xcb.so:x11/libX11 \
+LIB_DEPENDS=	libX11-xcb.so:x11/libX11 \
 		libvulkan.so:graphics/vulkan-loader
 
 WRKSRC_SUBDIR=	Quake
 
 USES=		desktop-file-utils gmake pkgconfig
+USE_SDL=	sdl2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Novum

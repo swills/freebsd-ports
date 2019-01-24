@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/kde-telepathy/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/net-im/kde-telepathy/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kde-telepathy
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net-im kde
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-im/libjreen/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/net-im/libjreen/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	libjreen
 PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 
 MAINTAINER=	akuz84@gmail.com

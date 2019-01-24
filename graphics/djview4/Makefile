@@ -1,9 +1,9 @@
 # Created by: Stanislav Sedov <stas@FreeBSD.org>
-# $FreeBSD: head/graphics/djview4/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/djview4/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	djview
 PORTVERSION=	4.10.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	SF/djvu/DjView/${PORTVERSION:R}
 

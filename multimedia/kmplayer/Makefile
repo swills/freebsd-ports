@@ -1,8 +1,9 @@
 # Created by: Kris Moore
-# $FreeBSD: head/multimedia/kmplayer/Makefile 488820 2018-12-31 19:01:09Z rene $
+# $FreeBSD: head/multimedia/kmplayer/Makefile 490942 2019-01-22 12:36:06Z linimon $
 
 PORTNAME=	kmplayer
 PORTVERSION=	0.12.0b
+PORTREVISION=	1
 PORTEPOCH=	3
 CATEGORIES=	multimedia audio kde
 
@@ -28,7 +29,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libxcb-util.so:x11/xcb-util
 RUN_DEPENDS=	mplayer:multimedia/mplayer
 
-USES=		cmake desktop-file-utils gettext-runtime \
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext-runtime \
 		kde:5 pkgconfig qt:5
 USE_GNOME=	cairo gdkpixbuf2 gtk20
 USE_QT=		concurrent core dbus gui network phonon4 printsupport \

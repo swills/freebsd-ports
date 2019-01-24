@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/baka-mplayer/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/baka-mplayer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	baka-mplayer
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	jbeich@FreeBSD.org

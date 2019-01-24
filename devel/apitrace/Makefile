@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/apitrace/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/apitrace/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	apitrace
 DISTVERSION=	7.1-455
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-g7c76b90
 CATEGORIES=	devel
 

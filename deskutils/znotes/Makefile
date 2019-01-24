@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/deskutils/znotes/Makefile 487601 2018-12-16 16:49:17Z rene $
+# $FreeBSD: head/deskutils/znotes/Makefile 491046 2019-01-23 17:05:05Z rigoletto $
 
 PORTNAME=	znotes
 PORTVERSION=	0.4.5.20150825
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 PKGNAMESUFFIX=	-${FLAVOR}
 
@@ -30,7 +30,7 @@ EXPIRATION_DATE=2019-03-15
 USES+=		qt:4
 USE_QT=		uic_build moc_build rcc_build linguisttools_build corelib gui network xml
 . else
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=		buildtools_build linguisttools_build core gui network printsupport widgets xml
 . endif
 

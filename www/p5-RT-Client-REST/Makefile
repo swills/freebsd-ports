@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-RT-Client-REST/Makefile 489133 2019-01-03 06:27:01Z wen $
+# $FreeBSD: head/www/p5-RT-Client-REST/Makefile 489972 2019-01-11 14:03:50Z joneum $
 
 PORTNAME=	RT-Client-REST
-PORTVERSION=	0.55
+PORTVERSION=	0.56
 PORTEPOCH=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
@@ -29,6 +29,7 @@ TEST_DEPENDS=	p5-HTTP-Server-Simple>=0:www/p5-HTTP-Server-Simple \
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

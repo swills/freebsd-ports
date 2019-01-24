@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/robocode/Makefile 479753 2018-09-14 00:26:39Z dbaio $
+# $FreeBSD: head/games/robocode/Makefile 489835 2019-01-09 22:22:42Z dbaio $
 
 PORTNAME=	robocode
-PORTVERSION=	1.9.3.3
+PORTVERSION=	1.9.3.4
 CATEGORIES=	games java
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${DISTVERSION}-setup.jar

@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/pc-mixer/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/pc-mixer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	pc-mixer
 PORTVERSION=	20171212
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 
 MAINTAINER=	jmaloney@ixsystems.com
@@ -10,7 +10,6 @@ COMMENT=	QT5 based audio mixer for FreeBSD
 
 LICENSE=	BSD2CLAUSE
 
-WRKSRC_SUBDIR=	src-qt5
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 MAKE_JOBS_UNSAFE=yes

@@ -1,8 +1,9 @@
 # Created by: amistry@am-productions.biz
-# $FreeBSD: head/print/hplip-plugin/Makefile 457127 2017-12-24 07:10:45Z woodsb02 $
+# $FreeBSD: head/print/hplip-plugin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	hplip-plugin
 PORTVERSION=	3.17.11
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/
 DISTNAME=	hplip-${DISTVERSION}-plugin

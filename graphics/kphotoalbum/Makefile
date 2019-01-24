@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/kphotoalbum/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/kphotoalbum/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kphotoalbum
 DISTVERSION=	5.4
+PORTREVISION=	1
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/
 DIST_SUBDIR=	KDE

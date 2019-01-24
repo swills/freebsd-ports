@@ -1,8 +1,8 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-recaptcha/Makefile 484353 2018-11-06 21:13:54Z rene $
+# $FreeBSD: head/www/py-django-recaptcha/Makefile 490991 2019-01-22 23:06:44Z wen $
 
 PORTNAME=	recaptcha
-PORTVERSION=	1.4.0
+PORTVERSION=	2.0.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-

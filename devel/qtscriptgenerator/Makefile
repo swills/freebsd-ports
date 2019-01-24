@@ -1,9 +1,9 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/devel/qtscriptgenerator/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/qtscriptgenerator/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtscriptgenerator
 PORTVERSION=	0.2.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 
 MAINTAINER=	syncer@gmail.com

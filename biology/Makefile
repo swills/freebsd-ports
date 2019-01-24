@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 487992 2018-12-21 13:19:02Z rene $
+# $FreeBSD: head/biology/Makefile 490961 2019-01-22 16:26:49Z mat $
 #
 
     COMMENT = Biology
@@ -44,6 +44,7 @@
     SUBDIR += gperiodic
     SUBDIR += grappa
     SUBDIR += groopm
+    SUBDIR += hisat2
     SUBDIR += hmmer
     SUBDIR += htslib
     SUBDIR += hyphy

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/py-openlp/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/multimedia/py-openlp/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	OpenLP
 PORTVERSION=	2.4.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia python
 MASTER_SITES=	https://get.openlp.org/${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

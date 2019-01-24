@@ -1,14 +1,14 @@
 # Created by: stas
-# $FreeBSD: head/sysutils/devcpu-data/Makefile 478330 2018-08-28 21:51:59Z markj $
+# $FreeBSD: head/sysutils/devcpu-data/Makefile 490487 2019-01-16 15:37:07Z sbruno $
 
 PORTNAME=	data
-PORTVERSION=	1.20
+PORTVERSION=	1.21
 CATEGORIES=	sysutils
 MASTER_SITES=	https://downloadmirror.intel.com/28039/eng/:intel \
 		LOCAL/sbruno:amd
 PKGNAMEPREFIX=	devcpu-
 DISTFILES=	microcode-20180807.tgz:intel \
-		amd64-microcode.20180525.tar.xz:amd
+		amd64-microcode.20181214.tar.xz:amd
 
 MAINTAINER=	sbruno@FreeBSD.org
 COMMENT=	Intel and AMD CPUs microcode updates

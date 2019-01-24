@@ -1,9 +1,9 @@
 # Created by: lazyklimm <lazyklimm@gmail.com>
-# $FreeBSD: head/audio/qsynth/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/qsynth/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qsynth
 PORTVERSION=	0.5.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

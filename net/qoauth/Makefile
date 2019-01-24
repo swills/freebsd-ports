@@ -1,10 +1,10 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/qoauth/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/net/qoauth/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qoauth
 PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net devel security
 
 MAINTAINER=	kde@FreeBSD.org

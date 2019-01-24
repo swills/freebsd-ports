@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/qt5-websockets-qml/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/www/qt5-websockets-qml/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	websockets-qml
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 

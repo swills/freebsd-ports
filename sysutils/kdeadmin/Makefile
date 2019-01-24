@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/kdeadmin/Makefile 468499 2018-04-27 21:47:35Z tcberner $
+# $FreeBSD: head/sysutils/kdeadmin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdeadmin
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}$
+PORTREVISION=	1
 CATEGORIES=	sysutils kde
 
 MAINTAINER=	kde@FreeBSD.org

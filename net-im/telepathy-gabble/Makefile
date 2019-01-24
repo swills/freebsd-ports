@@ -1,5 +1,5 @@
 # Created by:  Florent Thoumie <flz@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-gabble/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-im/telepathy-gabble/Makefile 489680 2019-01-08 13:13:50Z tobik $
 
 PORTNAME=	telepathy-gabble
 PORTVERSION=	0.18.3
@@ -36,7 +36,6 @@ INSTALL_TARGET=	install-strip
 SHEBANG_FILES=	plugins/telepathy-gabble-xmpp-console
 
 PLIST_SUB=	PVERSION=${PORTVERSION}
-SHEBANG_FILES=	plugins/telepathy-gabble-xmpp-console
 
 .include <bsd.port.pre.mk>
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/kdeedu/Makefile 468499 2018-04-27 21:47:35Z tcberner $
+# $FreeBSD: head/misc/kdeedu/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdeedu
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	misc kde
 
 MAINTAINER=	kde@FreeBSD.org

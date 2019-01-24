@@ -1,9 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/math/py-colormath/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/py-colormath/Makefile 490103 2019-01-13 02:03:38Z skreuzer $
 
 PORTNAME=	colormath
-PORTVERSION=	2.1.1
-PORTREVISION=	2
+PORTVERSION=	3.0.0
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +15,7 @@ LICENSE=	BSD2CLAUSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.9.2,1:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}networkx>=1.9.1:math/py-networkx@${PY_FLAVOR}
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

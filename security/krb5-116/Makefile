@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-116/Makefile 489636 2019-01-08 01:41:04Z cy $
+# $FreeBSD: head/security/krb5-116/Makefile 490150 2019-01-13 15:57:20Z cy $
 
 PORTNAME=		krb5
 PORTVERSION=		1.16.3
@@ -17,7 +17,7 @@ COMMENT=		MIT implementation of RFC 4120 network authentication service
 
 LICENSE=		MIT
 
-CONFLICTS=		heimdal-[0-9]* srp-[0-9]* krb5-11[34]-[0-9]* \
+CONFLICTS=		heimdal-[0-9]* srp-[0-9]* krb5-11[3457]-[0-9]* \
 			krb5-1.[0-9]* krb5-devel-*
 CONFLICTS_BUILD=	boringssl-*
 
@@ -27,7 +27,7 @@ USE_LDCONFIG=		yes
 USE_CSTD=		gnu99
 GNU_CONFIGURE=		yes
 USES=			cpe gmake localbase perl5 libtool:build \
-			gssapi:bootstrap,mit pkgconfig:run ssl \
+			gssapi:bootstrap,mit pkgconfig ssl \
 			gettext-runtime
 CONFIGURE_ARGS?=	--enable-shared --without-system-verto \
 			--disable-rpath --localstatedir="${PREFIX}/var" \

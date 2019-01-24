@@ -1,5 +1,5 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/security/afl/Makefile 484450 2018-11-08 13:00:34Z tobik $
+# $FreeBSD: head/security/afl/Makefile 490543 2019-01-17 10:47:48Z tobik $
 
 PORTNAME=	afl
 PORTVERSION=	2.52
@@ -29,11 +29,6 @@ OPTIONS_DEFAULT=	LLVM
 OPTIONS_SUB=	yes
 
 LLVM_DESC=	LLVM-based instrumentation
-
-# You have implicit approval to bump the LLVM version here as long as
-# it builds WITH=LLVM and `make test` passes on all supported
-# releases.
-LLVM_DEFAULT?= 70
 
 LLVM_ALL_TARGET=	llvm_mode
 LLVM_BUILD_DEPENDS=	clang${LLVM_DEFAULT}:devel/llvm${LLVM_DEFAULT}

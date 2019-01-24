@@ -1,5 +1,5 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/devel/py-django-rq/Makefile 487801 2018-12-19 14:57:33Z rene $
+# $FreeBSD: head/devel/py-django-rq/Makefile 490744 2019-01-19 20:41:15Z sunpoet $
 
 PORTNAME=	django-rq
 PORTVERSION=	1.3
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	rene@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Provides Django integration for RQ (Redis Queue)
 
 LICENSE=	MIT

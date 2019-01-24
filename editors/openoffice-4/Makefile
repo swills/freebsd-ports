@@ -1,9 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-4/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/editors/openoffice-4/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	editors java
 MASTER_SITES=	APACHE/openoffice/${PORTVERSION}/source \
 		http://tools.openoffice.org/unowinreg_prebuild/680/:unoreg \
@@ -81,7 +81,7 @@ LIB_DEPENDS=								\
 		libfreetype.so:print/freetype2				\
 		libnss3.so:security/nss					\
 		libexpat.so:textproc/expat2				\
-		libhunspell-1.6.so:textproc/hunspell			\
+		libhunspell-1.7.so:textproc/hunspell			\
 		libhyphen.so:textproc/hyphen				\
 		libtextcat.so:textproc/libtextcat			\
 		libmythes-1.2.so:textproc/mythes			\

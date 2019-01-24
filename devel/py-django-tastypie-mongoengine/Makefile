@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/devel/py-django-tastypie-mongoengine/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-django-tastypie-mongoengine/Makefile 489708 2019-01-08 15:25:16Z sunpoet $
 
 PORTNAME=		django-tastypie-mongoengine
 PORTVERSION=		0.4.6
@@ -15,7 +15,7 @@ LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}django-tastypie>=0.9.12:www/py-django-tastypie@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mongoengine>=0.8.7:devel/py-mongoengine@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mongoengine>=0.8.7:databases/py-mongoengine@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 USE_GITHUB=		yes

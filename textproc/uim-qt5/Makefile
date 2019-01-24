@@ -1,5 +1,6 @@
-# $FreeBSD: head/textproc/uim-qt5/Makefile 488436 2018-12-26 20:43:03Z linimon $
+# $FreeBSD: head/textproc/uim-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-qt5
 
 COMMENT=	Qt5 modules of uim input method

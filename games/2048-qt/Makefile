@@ -1,9 +1,9 @@
-# $FreeBSD: head/games/2048-qt/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/games/2048-qt/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	2048-qt
 PORTVERSION=	0.1.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	swills@FreeBSD.org

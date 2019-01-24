@@ -1,8 +1,9 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/irc/konversation/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/irc/konversation/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	konversation
 PORTVERSION=	1.7.5
+PORTREVISION=	1
 CATEGORIES=	irc kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/src
 

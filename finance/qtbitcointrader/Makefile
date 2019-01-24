@@ -1,8 +1,7 @@
-# $FreeBSD: head/finance/qtbitcointrader/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/finance/qtbitcointrader/Makefile 490882 2019-01-21 19:04:05Z yuri $
 
 PORTNAME=	QtBitcoinTrader
-DISTVERSION=	1.40.30
-PORTREVISION=	1
+DISTVERSION=	1.40.40
 CATEGORIES=	finance
 MASTER_SITES=	SF/bitcointrader/SRC/
 

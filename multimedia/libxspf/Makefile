@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/multimedia/libxspf/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/multimedia/libxspf/Makefile 489670 2019-01-08 10:45:40Z tobik $
 
 PORTNAME=	libxspf
 PORTVERSION=	1.2.0
@@ -20,7 +20,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-expat=${LOCALBASE} --disable-test
 
 USES=		libtool pkgconfig tar:bzip2
-GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 LIBS+=		-L${LOCALBASE}/lib -luriparser
 

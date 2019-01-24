@@ -1,9 +1,9 @@
 # Created by: George V. Neville-Neil <gnn@freebsd.org>
-# $FreeBSD: head/comms/ubertooth/Makefile 489083 2019-01-02 14:16:07Z gnn $
+# $FreeBSD: head/comms/ubertooth/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	ubertooth
 PORTVERSION=	201812R1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms
 
 MAINTAINER=	gnn@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/print/qpdfview/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/print/qpdfview/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qpdfview
 DISTVERSION=	0.4.17beta1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	print
 MASTER_SITES=	https://launchpadlibrarian.net/294276875/ \
 		https://launchpad.net/${PORTNAME}/trunk/${DISTVERSION}/+download/

@@ -1,5 +1,5 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/science/rubygem-ruby-dcl/Makefile 474375 2018-07-10 15:12:47Z swills $
+# $FreeBSD: head/science/rubygem-ruby-dcl/Makefile 491080 2019-01-24 05:09:48Z linimon $
 
 PORTNAME=	ruby-dcl
 PORTVERSION=	1.8.1
@@ -15,15 +15,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	rubygem-narray>=0.5.5:math/rubygem-narray
 LIB_DEPENDS=	libcdcl.so:science/cdcl \
 		libfontconfig.so:x11-fonts/fontconfig \
-		libfreetype.so:print/freetype2 \
-		libunwind.so:devel/libunwind
+		libfreetype.so:print/freetype2
 RUN_DEPENDS=	rubygem-narray>=0.5.5:math/rubygem-narray \
 		rubygem-narray_miss>0:math/rubygem-narray_miss
 
+USES=		gem gettext-runtime
 USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk20 pango
 USE_XORG=	ice sm x11
-
 USE_RUBY=	yes
-USES=		gem gettext-runtime
 
 .include <bsd.port.mk>

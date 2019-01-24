@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/libsignon-glib/Makefile 482602 2018-10-20 16:48:13Z tcberner $
+# $FreeBSD: head/net-im/libsignon-glib/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	libsignon-glib
 PORTVERSION=	1.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 DIST_SUBDIR=	KDE/${GL_ACCOUNT}
 

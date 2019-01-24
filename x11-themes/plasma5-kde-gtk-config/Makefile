@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-themes/plasma5-kde-gtk-config/Makefile 488757 2018-12-31 06:38:42Z tcberner $
+# $FreeBSD: head/x11-themes/plasma5-kde-gtk-config/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kde-gtk-config
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

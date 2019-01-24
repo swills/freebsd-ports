@@ -1,11 +1,11 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/agedu/Makefile 478372 2018-08-29 19:08:17Z sunpoet $
+# $FreeBSD: head/sysutils/agedu/Makefile 490999 2019-01-23 00:00:51Z sunpoet $
 
 PORTNAME=	agedu
-PORTVERSION=	20180522
-DISTVERSIONSUFFIX=	.5b12791
+PORTVERSION=	20180918
+DISTVERSIONSUFFIX=	.80c7beb
 CATEGORIES=	sysutils
-MASTER_SITES=	https://www.chiark.greenend.org.uk/~sgtatham/${PORTNAME}/ \
+MASTER_SITES=	https://www.chiark.greenend.org.uk/~sgtatham/agedu/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -16,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/LICENCE
 
 GNU_CONFIGURE=	yes
 
-PLIST_FILES=	bin/${PORTNAME} \
-		man/man1/${PORTNAME}.1.gz
+PLIST_FILES=	bin/agedu \
+		man/man1/agedu.1.gz
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|HOST_NAME_MAX|_POSIX_&|' ${WRKSRC}/httpd.c

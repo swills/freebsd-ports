@@ -1,8 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/www/c-icap-modules/Makefile 480944 2018-09-30 09:07:17Z rodrigo $
+# $FreeBSD: head/www/c-icap-modules/Makefile 490966 2019-01-22 18:24:52Z rodrigo $
 
 PORTNAME=	c-icap
-PORTVERSION=	0.5.2
+PORTVERSION=	0.5.3
+PORTREVISION=	1
 CATEGORIES=	www security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}${PKGNAMESUFFIX}/0.5.x/
 PKGNAMESUFFIX=	-modules

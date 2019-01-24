@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/routinator/Makefile 489290 2019-01-05 01:33:18Z swills $
+# $FreeBSD: head/net/routinator/Makefile 490600 2019-01-17 19:50:38Z jbeich $
 
 PORTNAME=	routinator
 PORTVERSION=	0.2.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

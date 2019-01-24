@@ -1,8 +1,8 @@
 # Created by: Roderick van Domburg <r.s.a.vandomburg@student.utwente.nl>
-# $FreeBSD: head/security/rubygem-net-ssh/Makefile 476095 2018-07-31 23:52:35Z sunpoet $
+# $FreeBSD: head/security/rubygem-net-ssh/Makefile 489993 2019-01-11 19:50:19Z mfechner $
 
 PORTNAME=	net-ssh
-PORTVERSION=	5.0.2
+PORTVERSION=	5.1.0
 PORTEPOCH=	2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
@@ -17,10 +17,11 @@ OPTIONS_DEFINE=	PROMPT_PASSPHRASES
 OPTIONS_DEFAULT=PROMPT_PASSPHRASES
 PROMPT_PASSPHRASES_DESC=	Prompt for passphrases on keys
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem shebangfix
+USE_RUBY=	yes
 SHEBANG_FILES=	support/ssh_tunnel_bug.rb
+
+NO_ARCH=	yes
 
 PROMPT_PASSPHRASES_RUN_DEPENDS=	rubygem-ruby-termios>=0:comms/rubygem-ruby-termios
 

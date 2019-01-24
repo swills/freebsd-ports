@@ -1,8 +1,9 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/devel/svn2git/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/devel/svn2git/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	svn2git
 PORTVERSION=	1.0.12
+PORTREVISION=	1
 CATEGORIES=	devel kde
 
 MAINTAINER=	dbn@FreeBSD.org

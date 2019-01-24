@@ -1,9 +1,9 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge/Makefile 488032 2018-12-22 00:17:14Z stephen $
+# $FreeBSD: head/math/octave-forge/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	octave-forge
 PORTVERSION=	20180409
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

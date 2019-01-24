@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/diffpdf/Makefile 487375 2018-12-13 17:11:27Z dinoex $
+# $FreeBSD: head/graphics/diffpdf/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	diffpdf
 PORTVERSION=	2.1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.qtrac.eu/
 

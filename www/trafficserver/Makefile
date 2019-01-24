@@ -1,8 +1,8 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/www/trafficserver/Makefile 488769 2018-12-31 12:25:42Z rene $
+# $FreeBSD: head/www/trafficserver/Makefile 489946 2019-01-11 06:15:32Z pi $
 
 PORTNAME=	trafficserver
-PORTVERSION=	6.2.0
+PORTVERSION=	6.2.3
 CATEGORIES=	www
 MASTER_SITES=	APACHE/${PORTNAME}
 

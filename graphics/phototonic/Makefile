@@ -1,10 +1,10 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/phototonic/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/graphics/phototonic/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	phototonic
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org

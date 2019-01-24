@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/falkon/Makefile 488741 2018-12-30 21:55:00Z adridg $
+# $FreeBSD: head/www/falkon/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	falkon
 DISTVERSION=	3.0.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	KDE/stable/falkon/${DISTVERSION:R}/src/
 

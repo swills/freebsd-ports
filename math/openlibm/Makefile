@@ -1,11 +1,10 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/math/openlibm/Makefile 474527 2018-07-12 17:31:03Z yuri $
+# $FreeBSD: head/math/openlibm/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	openlibm
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.0
 CATEGORIES=	math
-MASTER_SITES=	GH
 
 MAINTAINER=	iblis@hs.ntnu.edu.tw
 COMMENT=	High quality system independent, portable, open source libm

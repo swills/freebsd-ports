@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 489358 2019-01-05 17:49:15Z swills $
+# $FreeBSD: head/sysutils/Makefile 490961 2019-01-22 16:26:49Z mat $
 #
 
     COMMENT = System utilities
@@ -476,6 +476,7 @@
     SUBDIR += heirloom
     SUBDIR += helm
     SUBDIR += hextools
+    SUBDIR += hexyl
     SUBDIR += hfm
     SUBDIR += hfsexplorer
     SUBDIR += hfsutils
@@ -542,6 +543,7 @@
     SUBDIR += jkill
     SUBDIR += jobd
     SUBDIR += jps
+    SUBDIR += jruls
     SUBDIR += jstest-gtk
     SUBDIR += jtop
     SUBDIR += jtopen
@@ -621,6 +623,7 @@
     SUBDIR += lsof
     SUBDIR += lsop
     SUBDIR += lsyncd
+    SUBDIR += ltfs
     SUBDIR += ltrace
     SUBDIR += lttng-tools
     SUBDIR += lttng-ust
@@ -1069,13 +1072,13 @@
     SUBDIR += rubygem-capistrano-ext
     SUBDIR += rubygem-capistrano-harrow
     SUBDIR += rubygem-chef
-    SUBDIR += rubygem-chef12
     SUBDIR += rubygem-chef-api
     SUBDIR += rubygem-chef-config
     SUBDIR += rubygem-chef-config12
     SUBDIR += rubygem-chef-dk
     SUBDIR += rubygem-chef-zero
     SUBDIR += rubygem-chef-zero5
+    SUBDIR += rubygem-chef12
     SUBDIR += rubygem-facter
     SUBDIR += rubygem-fluent-mixin-plaintextformatter
     SUBDIR += rubygem-fluent-plugin-config-expander
@@ -1332,9 +1335,9 @@
     SUBDIR += u-boot-pinebook
     SUBDIR += u-boot-riotboard
     SUBDIR += u-boot-rpi
+    SUBDIR += u-boot-rpi-0-w
     SUBDIR += u-boot-rpi2
     SUBDIR += u-boot-rpi3
-    SUBDIR += u-boot-rpi-0-w
     SUBDIR += u-boot-sinovoip-bpi-m3
     SUBDIR += u-boot-sopine
     SUBDIR += u-boot-tools

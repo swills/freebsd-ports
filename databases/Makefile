@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 489395 2019-01-05 22:45:20Z sunpoet $
+# $FreeBSD: head/databases/Makefile 490961 2019-01-22 16:26:49Z mat $
 #
 
     COMMENT = Databases and related software
@@ -215,6 +215,7 @@
     SUBDIR += mysql-connector-c
     SUBDIR += mysql-connector-c++
     SUBDIR += mysql-connector-java
+    SUBDIR += mysql-connector-java51
     SUBDIR += mysql-connector-odbc
     SUBDIR += mysql-q4m
     SUBDIR += mysql-udf
@@ -689,14 +690,6 @@
     SUBDIR += postgresql-repmgr
     SUBDIR += postgresql-tds_fdw
     SUBDIR += postgresql-zhparser
-    SUBDIR += postgresql11-client
-    SUBDIR += postgresql11-contrib
-    SUBDIR += postgresql11-docs
-    SUBDIR += postgresql11-pgtcl
-    SUBDIR += postgresql11-plperl
-    SUBDIR += postgresql11-plpython
-    SUBDIR += postgresql11-pltcl
-    SUBDIR += postgresql11-server
     SUBDIR += postgresql10-client
     SUBDIR += postgresql10-contrib
     SUBDIR += postgresql10-docs
@@ -705,14 +698,14 @@
     SUBDIR += postgresql10-plpython
     SUBDIR += postgresql10-pltcl
     SUBDIR += postgresql10-server
-    SUBDIR += postgresql93-client
-    SUBDIR += postgresql93-contrib
-    SUBDIR += postgresql93-docs
-    SUBDIR += postgresql93-pgtcl
-    SUBDIR += postgresql93-plperl
-    SUBDIR += postgresql93-plpython
-    SUBDIR += postgresql93-pltcl
-    SUBDIR += postgresql93-server
+    SUBDIR += postgresql11-client
+    SUBDIR += postgresql11-contrib
+    SUBDIR += postgresql11-docs
+    SUBDIR += postgresql11-pgtcl
+    SUBDIR += postgresql11-plperl
+    SUBDIR += postgresql11-plpython
+    SUBDIR += postgresql11-pltcl
+    SUBDIR += postgresql11-server
     SUBDIR += postgresql94-client
     SUBDIR += postgresql94-contrib
     SUBDIR += postgresql94-docs
@@ -796,6 +789,7 @@
     SUBDIR += py-leveldb
     SUBDIR += py-lmdb
     SUBDIR += py-marshmallow-sqlalchemy
+    SUBDIR += py-mongoengine
     SUBDIR += py-motor
     SUBDIR += py-mycli
     SUBDIR += py-mysql-connector-python
@@ -809,6 +803,7 @@
     SUBDIR += py-pg_pqueue
     SUBDIR += py-pgcli
     SUBDIR += py-pgdbconn
+    SUBDIR += py-pglast
     SUBDIR += py-pglite
     SUBDIR += py-pgspecial
     SUBDIR += py-pgxnclient

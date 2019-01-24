@@ -1,9 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/audio/minitunes/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/minitunes/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	minitunes
 PORTVERSION=	0.1.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://flavio.tordini.org/files/${PORTNAME}/
 

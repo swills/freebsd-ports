@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/x11-fm/Makefile 490772 2019-01-20 05:11:48Z swills $
 #
 
     COMMENT = X11 file managers
@@ -11,6 +11,7 @@
     SUBDIR += emelfm2
     SUBDIR += ezfm
     SUBDIR += filerunner
+    SUBDIR += fsv2
     SUBDIR += gentoo
     SUBDIR += gprename
     SUBDIR += konqueror

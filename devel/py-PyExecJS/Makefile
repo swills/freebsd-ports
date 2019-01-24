@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-PyExecJS/Makefile 441246 2017-05-19 15:55:35Z tcberner $
+# $FreeBSD: head/devel/py-PyExecJS/Makefile 490169 2019-01-13 19:00:13Z tcberner $
 
 PORTNAME=	PyExecJS
-PORTVERSION=	1.4.0
+DISTVERSION=	1.5.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ COMMENT=	Run JavaScript code from Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python zip
+USES=		python
 USE_PYTHON=     distutils autoplist
 
 OPTIONS_GROUP=		RUNTIME

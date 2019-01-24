@@ -1,19 +1,20 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/net-mgmt/cowpatty/Makefile 421751 2016-09-10 22:08:49Z marino $
+# $FreeBSD: head/net-mgmt/cowpatty/Makefile 491037 2019-01-23 13:58:02Z rodrigo $
 
 PORTNAME=	cowpatty
-PORTVERSION=	4.6
+PORTVERSION=	4.8
 CATEGORIES=	net-mgmt security
-MASTER_SITES=	http://www.willhackforsushi.com/code/cowpatty/${PORTVERSION}/ \
-		http://mcx2.org/files/
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	Brute-force dictionary attack against WPA-PSK
 
-LICENSE=	GPLv2
+LICENSE=	BSD3CLAUSE
 
 USES=		ssl
+
+USE_GITHUB=	YES
+GH_ACCOUNT=	joswr1ght
+
 PORTDOCS=	FAQ README
 SUB_FILES=	pkg-message
 MAKE_JOBS_UNSAFE=	yes

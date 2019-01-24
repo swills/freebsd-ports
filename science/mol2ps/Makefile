@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/science/mol2ps/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/science/mol2ps/Makefile 490348 2019-01-15 05:44:58Z acm $
 
 PORTNAME=	mol2ps
 PORTVERSION=	0.4b
@@ -25,6 +25,8 @@ USES=		fpc
 USE_FPC=	rtl-objpas
 
 PLIST_FILES=	bin/mol2eps bin/mol2ps bin/mol2svg %%DATADIR%%/color.conf
+
+LLD_UNSAFE=	yes
 
 do-build:
 	(cd ${WRKSRC} && ${LOCALBASE}/bin/fpc mol2ps -S2 -O3)

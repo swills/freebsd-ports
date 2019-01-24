@@ -1,5 +1,5 @@
 # Created by: Matt Lancereau <ports@FreeBSD.org>
-# $FreeBSD: head/sysutils/xfce4-genmon-plugin/Makefile 453143 2017-10-29 22:37:40Z madpilot $
+# $FreeBSD: head/sysutils/xfce4-genmon-plugin/Makefile 490953 2019-01-22 14:44:38Z madpilot $
 
 PORTNAME=	xfce4-genmon-plugin
 PORTVERSION=	4.0.1
@@ -12,10 +12,18 @@ COMMENT=	Generic Monitor Xfce4 panel plugin
 
 LICENSE=	LGPL21
 
+USES=		gettext-tools gmake gnome libtool pkgconfig \
+		tar:bzip2 xfce:gtk3
+USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 intltool
+USE_XFCE=	panel
+
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		gettext gmake libtool pkgconfig tar:bzip2 xfce:gtk3
-USE_GNOME=	glib20 gtk30 intltool cairo gdkpixbuf2
-USE_XFCE=	panel
+
+OPTIONS_DEFINE=		NLS
+OPTIONS_SUB=		yes
+
+NLS_CONFIGURE_ENABLE=	nls
+NLS_USES=		gettext-runtime
 
 .include <bsd.port.mk>

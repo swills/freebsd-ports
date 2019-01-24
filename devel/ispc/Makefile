@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/ispc/Makefile 481833 2018-10-11 14:47:13Z martymac $
+# $FreeBSD: head/devel/ispc/Makefile 490733 2019-01-19 20:07:13Z antoine $
 
 PORTNAME=	ispc
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,8 @@ COMMENT=	Intel's compiler for high-performance SIMD programming
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN=		fails to link
 
 ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	only available for x86 architectures

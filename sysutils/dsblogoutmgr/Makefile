@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/dsblogoutmgr/Makefile 488487 2018-12-26 23:01:47Z swills $
+# $FreeBSD: head/sysutils/dsblogoutmgr/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	dsblogoutmgr
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 

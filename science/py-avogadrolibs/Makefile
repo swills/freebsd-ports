@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/py-avogadrolibs/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/science/py-avogadrolibs/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	avogadrolibs
 DISTVERSION=	1.91.0-107
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-g60c69b0
 CATEGORIES=	science
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

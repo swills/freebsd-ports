@@ -1,8 +1,8 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/py-botocore/Makefile 489560 2019-01-07 07:33:42Z bhughes $
+# $FreeBSD: head/devel/py-botocore/Makefile 490978 2019-01-22 20:49:39Z bhughes $
 
 PORTNAME=	botocore
-PORTVERSION=	1.12.74
+PORTVERSION=	1.12.83
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

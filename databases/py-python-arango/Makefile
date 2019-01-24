@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-python-arango/Makefile 487312 2018-12-12 18:31:48Z yuri $
+# $FreeBSD: head/databases/py-python-arango/Makefile 490878 2019-01-21 18:39:37Z yuri $
 
 PORTNAME=	python-arango
-DISTVERSION=	4.3.0
+DISTVERSION=	4.4.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

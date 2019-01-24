@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/dsbmixer/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/audio/dsbmixer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	dsbmixer
 PORTVERSION=	1.3.2
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://freeshell.de/~mk/download/
 

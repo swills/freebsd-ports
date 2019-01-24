@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/security/lxqt-openssh-askpass/Makefile 488454 2018-12-26 21:27:04Z linimon $
+# $FreeBSD: head/security/lxqt-openssh-askpass/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lxqt-openssh-askpass
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	LXQT
 

@@ -1,8 +1,9 @@
-# $FreeBSD: head/www/cutelyst/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/www/cutelyst/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	cutelyst
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.4.0
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	adridg@FreeBSD.org

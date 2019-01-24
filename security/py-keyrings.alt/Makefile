@@ -1,8 +1,8 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/security/py-keyrings.alt/Makefile 489245 2019-01-04 05:46:45Z koobs $
+# $FreeBSD: head/security/py-keyrings.alt/Makefile 490215 2019-01-13 21:42:30Z pi $
 
 PORTNAME=	keyrings.alt
-PORTVERSION=	3.0
+PORTVERSION=	3.1.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

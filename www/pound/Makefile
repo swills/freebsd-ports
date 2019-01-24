@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/www/pound/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/www/pound/Makefile 490983 2019-01-22 22:07:59Z joneum $
 
 PORTNAME=	pound
 PORTVERSION=	2.7
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.apsis.ch/pound/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
 DISTNAME=	Pound-${PORTVERSION}
 
-MAINTAINER=	ncrogers@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Reverse proxy, load balancer and HTTP(S) frontend for web servers
 
 LICENSE=	GPLv3

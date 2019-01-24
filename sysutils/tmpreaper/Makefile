@@ -1,25 +1,28 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/sysutils/tmpreaper/Makefile 376408 2015-01-06 09:40:16Z ehaupt $
+# $FreeBSD: head/sysutils/tmpreaper/Makefile 490731 2019-01-19 18:25:09Z ehaupt $
 
 PORTNAME=	tmpreaper
-PORTVERSION=	1.6.13
+PORTVERSION=	1.6.14
 CATEGORIES=	sysutils
-MASTER_SITES=	LOCAL/ehaupt
+MASTER_SITES=	DEBIAN_POOL
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Cleans up files in directories based on their age
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
-USES=		gmake
 
 PLIST_FILES=	sbin/tmpreaper man/man8/tmpreaper.8.gz
 PORTDOCS=	README
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 

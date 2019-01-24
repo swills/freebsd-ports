@@ -1,9 +1,9 @@
 # Created by: Shen Chuan-Hsing
-# $FreeBSD: head/chinese/qterm/Makefile 488868 2019-01-01 12:20:47Z tcberner $
+# $FreeBSD: head/chinese/qterm/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qterm
 PORTVERSION=	0.5.12
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	chinese
 MASTER_SITES=	SF/qterm/qterm/${PORTVERSION}
 

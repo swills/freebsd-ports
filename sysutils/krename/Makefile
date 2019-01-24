@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/krename/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/sysutils/krename/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	krename
 PORTVERSION=	5.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 

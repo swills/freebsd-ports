@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/loemu/Makefile 476308 2018-08-03 16:33:52Z acm $
+# $FreeBSD: head/emulators/loemu/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	loemu
 PORTVERSION=	0.3.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	emulators python
 MASTER_SITES=	http://loemu.pegueroles.com/dists/
 

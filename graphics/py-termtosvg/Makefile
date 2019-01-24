@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-termtosvg/Makefile 487159 2018-12-10 12:12:55Z lwhsu $
+# $FreeBSD: head/graphics/py-termtosvg/Makefile 491020 2019-01-23 07:11:07Z lwhsu $
 
 PORTNAME=	termtosvg
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

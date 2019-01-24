@@ -1,6 +1,6 @@
 #	$FreeBSD: head/ports-mgmt/pkg_jail/files/pkg_update 411390 2016-03-19 11:00:57Z dinoex 2
 # Created by: Brian Feldman & Matt Heckaman
-# $FreeBSD: head/net-im/licq/Makefile 489554 2019-01-07 01:02:34Z dinoex $
+# $FreeBSD: head/net-im/licq/Makefile 489664 2019-01-08 10:26:42Z tobik $
 
 PORTNAME=	base
 PORTVERSION=	1.9.0
@@ -20,7 +20,6 @@ BROKEN_sparc64=		Does not build: fails to link
 
 USES=		cmake:noninja iconv ssl
 USE_CXXSTD=	c++98
-WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_GITHUB=	yes
 GH_ACCOUNT=	licq-im
 GH_PROJECT=	licq

@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/net-im/gajim/Makefile 474392 2018-07-10 17:06:52Z rm $
+# $FreeBSD: head/net-im/gajim/Makefile 489979 2019-01-11 15:09:16Z mat $
 
 PORTNAME=	gajim
 DISTVERSION=	1.0.3
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nbxmpp>=0.6.5:net-im/py-nbxmpp@${PY_FLAVOR} 
 
 NO_ARCH=	yes
 USES=		cpe dos2unix python:3.5+ tar:bzip2
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils noflavors
 USE_GNOME=	intltool pygobject3
 USE_XORG=	x11 xext xscrnsaver
 

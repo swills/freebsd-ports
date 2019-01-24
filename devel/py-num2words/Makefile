@@ -1,8 +1,8 @@
 # Created by: Jonas Palm <jonaspalm@posteo.de>
-# $FreeBSD: head/devel/py-num2words/Makefile 486482 2018-12-02 20:22:57Z antoine $
+# $FreeBSD: head/devel/py-num2words/Makefile 490636 2019-01-18 11:55:42Z swills $
 
 PORTNAME=	num2words
-PORTVERSION=	0.5.8
+PORTVERSION=	0.5.9
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,8 +11,6 @@ MAINTAINER=	jonaspalm@posteo.de
 COMMENT=	Library to convert numbers to words in multiple languages
 
 LICENSE=	LGPL21
-
-BROKEN=		fails to configure, non ascii char in position 1557 of LONG_DESC
 
 USES=		python
 USE_PYTHON=	distutils autoplist

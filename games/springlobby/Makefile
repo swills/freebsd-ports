@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/springlobby/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/springlobby/Makefile 491038 2019-01-23 14:01:52Z amdmi3 $
 
 PORTNAME=	springlobby
 PORTVERSION=	0.180
@@ -22,6 +22,7 @@ USES=		cmake compiler:c++11-lib pkgconfig tar:bzip2
 CMAKE_ARGS=	-DwxWidgets_CONFIG_EXECUTABLE="${WX_CONFIG}" \
 		-DENABLE_DEBUG_REPORT=FALSE
 USE_WX=		2.8+
+LLD_UNSAFE=	yes
 
 PORTDOCS=	*
 

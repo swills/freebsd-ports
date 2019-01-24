@@ -1,9 +1,9 @@
 # Created by: Miguel Mendez <flynn@energyhq.es.eu.org>
-# $FreeBSD: head/games/adonthell/Makefile 477590 2018-08-19 19:27:52Z tobik $
+# $FreeBSD: head/games/adonthell/Makefile 489821 2019-01-09 19:11:20Z tobik $
 #    $MCom: ports/games/adonthell/Makefile,v 1.1 2006/10/04 20:13:33 ahze Exp $
 
 PORTNAME=	adonthell
-PORTVERSION=	0.3.7
+PORTVERSION=	0.3.8
 CATEGORIES=	games
 MASTER_SITES=	SAVANNAH
 DISTFILES=	${PORTNAME}-src-${PORTVERSION}${EXTRACT_SUFX}

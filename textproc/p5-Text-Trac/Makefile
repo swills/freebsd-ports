@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-Text-Trac/Makefile 487109 2018-12-09 23:55:57Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Trac/Makefile 490197 2019-01-13 20:09:38Z sunpoet $
 
 PORTNAME=	Text-Trac
-PORTVERSION=	0.23
+PORTVERSION=	0.24
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

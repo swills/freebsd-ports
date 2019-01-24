@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/kio-gdrive/Makefile 489341 2019-01-05 14:20:50Z tcberner $
+# $FreeBSD: head/net/kio-gdrive/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kio-gdrive
-DISTVERSION=	1.2.3
+DISTVERSION=	1.2.5
+PORTREVISION=	1
 CATEGORIES=	net kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 DIST_SUBDIR=	KDE/${PORTNAME}

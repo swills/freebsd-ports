@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/mono-addins/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/devel/mono-addins/Makefile 489658 2019-01-08 09:06:37Z tobik $
 
 PORTNAME=	mono-addins
 PORTVERSION=	1.3
@@ -20,14 +20,13 @@ USES=		autoreconf gmake mono pkgconfig
 
 OPTIONS_DEFINE=	GTK2 GTK3
 OPTIONS_DEFAULT=GTK2
+OPTIONS_SUB=	yes
 
 GTK2_USE=	GNOME=gtksharp20
 GTK2_CONFIGURE_ENABLE=	gui
-OPTIONS_SUB=	yes
 
 #GTK3_USE=	GNOME=gtksharp30
 GTK3_CONFIGURE_ENABLE=	gui-gtk3
-OPTIONS_SUB=	yes
 
 PLIST_SUB+=	VER=1.0.0
 

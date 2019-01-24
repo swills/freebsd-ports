@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/rkward-kde/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/rkward-kde/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	rkward
 DISTVERSION=	0.7.0b
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION:C/b//}/src
 PKGNAMESUFFIX=	-kde

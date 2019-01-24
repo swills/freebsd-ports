@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@geeksrus.net>
-# $FreeBSD: head/print/cups/Makefile 487450 2018-12-14 17:14:09Z tijl $
+# $FreeBSD: head/print/cups/Makefile 490938 2019-01-22 12:00:40Z tijl $
 
 PORTNAME=	cups
 PORTVERSION=	2.2.10
@@ -82,6 +82,10 @@ PLIST_SUB+=	OVERWRITE="@comment "
 PLIST_SUB+=	USB=""
 .else
 PLIST_SUB+=	USB="@comment "
+.endif
+
+.if defined(WITH_DEBUG)
+CONFIGURE_ARGS+=--enable-debug --enable-debug-printfs
 .endif
 
 .include <bsd.port.pre.mk>

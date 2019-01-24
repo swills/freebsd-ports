@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/okular/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/okular/Makefile 490791 2019-01-20 14:06:31Z tcberner $
 
 PORTNAME=	okular
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,6 +11,8 @@ COMMENT=	KDE universal document viewer
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BUILD_DEPENDS=	markdown:textproc/discount
+RUN_DEPENDS=	markdown:textproc/discount
 LIB_DEPENDS=	libchm.so:misc/chmlib \
 		libdjvulibre.so:graphics/djvulibre \
 		libepub.so:textproc/ebook-tools \
@@ -35,6 +37,11 @@ USE_QT=		core dbus declarative gui network phonon4 printsupport speech \
 		svg widgets xml \
 		buildtools_build qmake_build
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS PURPOSE
+OPTIONS_DEFAULT=	PURPOSE
+
+PURPOSE_DESC=	Enable 'Share' menu
+PURPOSE_USE=	KDE=purpose
+PURPOSE_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_KDEExperimentalPurpose
 
 .include <bsd.port.mk>

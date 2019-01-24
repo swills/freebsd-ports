@@ -1,9 +1,8 @@
-# $FreeBSD: head/math/py-pymc3/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/py-pymc3/Makefile 490529 2019-01-17 06:52:17Z yuri $
 
 PORTNAME=	pymc3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.5
-PORTREVISION=	1
+DISTVERSION=	3.6
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/editors/texmaker/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/editors/texmaker/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	texmaker
 PORTVERSION=	4.5
-PORTREVISION=	11
+PORTREVISION=	13
 PORTEPOCH=	3
 CATEGORIES=	editors
 MASTER_SITES=	http://www.xm1math.net/texmaker/
@@ -13,7 +13,7 @@ COMMENT=	LaTeX Development Environment
 
 LICENSE=	GPLv2+
 
-LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
+LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell \
 		libpoppler.so:graphics/poppler
 
 USES=		desktop-file-utils ghostscript:x11,run pkgconfig qmake tar:bzip2

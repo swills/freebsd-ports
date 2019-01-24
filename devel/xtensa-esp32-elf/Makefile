@@ -1,5 +1,5 @@
 # Created by: Craig Leres <leres@freebsd.org>
-# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 483956 2018-11-04 02:01:10Z leres $
+# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 490078 2019-01-12 19:52:11Z leres $
 
 PORTNAME=	xtensa-esp32-elf
 DISTVERSION=	1.22.0.g20171219
@@ -53,11 +53,12 @@ BUILD_DEPENDS=	bash:shells/bash \
 		makeinfo:print/texinfo \
 		wget:ftp/wget
 
-NO_MTREE=	yes
 USES=		autoreconf:build bison gmake libtool python
 USE_GCC=	7
 USE_GITHUB=	yes
 USE_LDCONFIG=	${PREFIX}/${PORTNAME}/libexec/gcc/${PORTNAME}/5.2.0
+
+NO_MTREE=	yes
 SUBDIR=		crosstool-NG
 TAGNAME=	1.22.0-80-g6c4433a5
 GH_TUPLE=	espressif:${SUBDIR}:${TAGNAME}
@@ -74,6 +75,10 @@ post-extract:
 .endfor
 	echo CT_LOG_PROGRESS_BAR=n >> \
 	    ${BUILD_WRKSRC}/samples/${PORTNAME}/crosstool.config
+
+post-patch:
+	@${REINPLACE_CMD} -e 's/\(GNU bash, version.*4\)/\1|5/' \
+		${WRKSRC}/configure.ac
 
 do-configure:
 	cd ${BUILD_WRKSRC} && ./bootstrap

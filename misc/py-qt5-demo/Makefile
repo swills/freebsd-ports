@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/py-qt5-demo/Makefile 485614 2018-11-22 20:18:37Z tcberner $
+# $FreeBSD: head/misc/py-qt5-demo/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	demo
 PORTVERSION=	${PYQT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	misc devel python
 MASTER_SITES=	${MASTER_SITES_PYQT5}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}qt5-

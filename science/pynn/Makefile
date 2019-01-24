@@ -1,15 +1,14 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/science/pynn/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/pynn/Makefile 490227 2019-01-14 03:26:29Z wen $
 
 PORTNAME=	pynn
-PORTVERSION=	0.9.2
-PORTREVISION=	2
+PORTVERSION=	0.9.3
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	PyNN-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Simulator-independent language for building neuronal network models
 
 LICENSE=	CeCILL

@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/phonon-xine/Makefile 488883 2019-01-01 13:15:23Z tcberner $
+# $FreeBSD: head/multimedia/phonon-xine/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	phonon
 PORTVERSION=	4.4.4
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTNAME}-backend${PKGNAMESUFFIX}/${PORTVERSION}/src
 PKGNAMESUFFIX=	-xine

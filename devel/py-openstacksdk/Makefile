@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-openstacksdk/Makefile 478834 2018-09-02 23:57:38Z sunpoet $
+# $FreeBSD: head/devel/py-openstacksdk/Makefile 489970 2019-01-11 13:19:43Z miwi $
 
 PORTNAME=	openstacksdk
-PORTVERSION=	0.11.3
+PORTVERSION=	0.17.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

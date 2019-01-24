@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-opt_parse_validator/Makefile 487086 2018-12-09 20:42:40Z swills $
+# $FreeBSD: head/devel/rubygem-opt_parse_validator/Makefile 489725 2019-01-08 17:09:19Z swills $
 
 PORTNAME=	opt_parse_validator
-PORTVERSION=	0.0.16.1
+PORTVERSION=	0.0.16.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

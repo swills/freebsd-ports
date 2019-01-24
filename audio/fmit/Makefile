@@ -1,9 +1,10 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/fmit/Makefile 488406 2018-12-26 17:01:58Z danilo $
+# $FreeBSD: head/audio/fmit/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	fmit
 PORTVERSION=	1.2.6
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	danilo@FreeBSD.org

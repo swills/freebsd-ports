@@ -1,8 +1,9 @@
 # Created by: kwm@FreeBSD.org
-# $FreeBSD: head/graphics/wayland/Makefile 482258 2018-10-16 20:05:43Z sunpoet $
+# $FreeBSD: head/graphics/wayland/Makefile 490980 2019-01-22 20:51:38Z zeising $
 
 PORTNAME=	wayland
 PORTVERSION=	1.16.0
+PORTREVISION=	1
 CATEGORIES=	graphics wayland
 MASTER_SITES=	https://wayland.freedesktop.org/releases/
 
@@ -17,8 +18,6 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libepoll-shim.so:devel/libepoll-shim
 
 CFLAGS+=	"-I${LOCALBASE}/include/libepoll-shim"
-
-WITH_DEBUG=	1
 
 USES=		autoreconf gmake gnome libtool localbase pathfix pkgconfig tar:xz
 USE_GNOME=	libxslt:build

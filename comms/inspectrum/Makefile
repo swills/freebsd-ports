@@ -1,8 +1,9 @@
 # Created by: <mr@freebsd.org>
-# $FreeBSD: head/comms/inspectrum/Makefile 488433 2018-12-26 20:34:47Z linimon $
+# $FreeBSD: head/comms/inspectrum/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	inspectrum
 PORTVERSION=	g20180708
+PORTREVISION=	1
 #PORTREVISION=	1
 #DISTVERSIONPREFIX=	v
 CATEGORIES=	comms hamradio

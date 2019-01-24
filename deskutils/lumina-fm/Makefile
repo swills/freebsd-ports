@@ -1,9 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-fm/Makefile 488519 2018-12-27 09:30:21Z amdmi3 $
+# $FreeBSD: head/deskutils/lumina-fm/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-fm
 PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com

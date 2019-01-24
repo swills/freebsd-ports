@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-themes/qtcurve-kf5/Makefile 464075 2018-03-10 14:07:27Z jhale $
+# $FreeBSD: head/x11-themes/qtcurve-kf5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtcurve
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	QtCurve KDE Frameworks 5 widget style and window decoration
 

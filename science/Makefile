@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/science/Makefile 490961 2019-01-22 16:26:49Z mat $
 #
 
     COMMENT = Scientific ports
@@ -33,8 +33,8 @@
     SUBDIR += avogadro2
     SUBDIR += avogadrolibs
     SUBDIR += bagel
-    SUBDIR += berkeleygw
     SUBDIR += bddsolve
+    SUBDIR += berkeleygw
     SUBDIR += bodr
     SUBDIR += brian
     SUBDIR += buddy
@@ -72,6 +72,7 @@
     SUBDIR += epte
     SUBDIR += erd
     SUBDIR += erkale
+    SUBDIR += erkale-pseudopotentials
     SUBDIR += esys-particle
     SUBDIR += fastcap
     SUBDIR += fasthenry
@@ -208,15 +209,15 @@
     SUBDIR += py-DendroPy
     SUBDIR += py-GPy
     SUBDIR += py-GPyOpt
-    SUBDIR += py-PyFR
-    SUBDIR += py-lifelines
     SUBDIR += py-MDAnalysis
     SUBDIR += py-MDAnalysisTests
     SUBDIR += py-OpenFermion
+    SUBDIR += py-PyFR
     SUBDIR += py-PyQuante
     SUBDIR += py-ScientificPython
     SUBDIR += py-SimpleSpectral
     SUBDIR += py-abipy
+    SUBDIR += py-asdf
     SUBDIR += py-ase
     SUBDIR += py-avogadrolibs
     SUBDIR += py-cdo
@@ -228,6 +229,7 @@
     SUBDIR += py-h5py
     SUBDIR += py-hcluster
     SUBDIR += py-kinematics
+    SUBDIR += py-lifelines
     SUBDIR += py-mdp
     SUBDIR += py-mlpy
     SUBDIR += py-mmtf-python
@@ -252,6 +254,7 @@
     SUBDIR += py-qspin
     SUBDIR += py-quantities
     SUBDIR += py-rmf
+    SUBDIR += py-rmsd
     SUBDIR += py-scikit-fuzzy
     SUBDIR += py-scikit-learn
     SUBDIR += py-scikit-sparse

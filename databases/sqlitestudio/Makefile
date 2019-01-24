@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/sqlitestudio/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/sqlitestudio/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	sqlitestudio
 DISTVERSION=	3.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	http://sqlitestudio.pl/files/sqlitestudio3/complete/tar/
 

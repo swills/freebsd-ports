@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/stack/Makefile 489474 2019-01-06 12:18:06Z arrowd $
+# $FreeBSD: head/devel/stack/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 # To update this port first go to
 # https://github.com/arrowd/stack-dependencies, change the
@@ -12,8 +12,7 @@ PORTNAME=	stack
 PORTVERSION=	1.9.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel haskell
-MASTER_SITES=	GH \
-		https://github.com/arrowd/stack-dependencies/releases/download/v${PORTVERSION}/:deps
+MASTER_SITES=	https://github.com/arrowd/stack-dependencies/releases/download/v${PORTVERSION}/:deps
 DISTFILES=	stack-dependencies-${PORTVERSION}${EXTRACT_SUFX}:deps
 
 MAINTAINER=	ports@FreeBSD.org

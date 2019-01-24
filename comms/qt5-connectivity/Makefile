@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/qt5-connectivity/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/comms/qt5-connectivity/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	connectivity
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	comms
 PKGNAMEPREFIX=	qt5-
 

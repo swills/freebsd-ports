@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-Pint/Makefile 452738 2017-10-23 20:27:28Z swills $
+# $FreeBSD: head/devel/py-Pint/Makefile 489967 2019-01-11 13:11:29Z miwi $
 
 PORTNAME=	Pint
-PORTVERSION=	0.7.2
+PORTVERSION=	0.8.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

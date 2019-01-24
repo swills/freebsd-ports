@@ -1,10 +1,10 @@
-# $FreeBSD: head/audio/cadence/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/cadence/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	cadence
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.0-7
 DISTVERSIONSUFFIX=	-g4a5f5b4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

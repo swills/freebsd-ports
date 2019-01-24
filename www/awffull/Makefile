@@ -1,9 +1,9 @@
 # Created by: Chadwick Sorrell chad@wickdev.com
-# $FreeBSD: head/www/awffull/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/www/awffull/Makefile 490211 2019-01-13 20:58:36Z adamw $
 
 PORTNAME=	awffull
 PORTVERSION=	3.10.2
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES?=	www
 MASTER_SITES=	https://launchpadlibrarian.net/20395993/
 
@@ -24,7 +24,7 @@ CONFLICTS?=	ja-awffull-[0-9]*
 FONTDEFAULT?=	${LOCALBASE}/share/fonts/bitstream-vera/VeraBd.ttf
 FONTLABEL?=	${LOCALBASE}/share/fonts/bitstream-vera/Vera.ttf
 
-OPTIONS_DEFINE=	GEOIP DOCS EXAMPLES NLS
+OPTIONS_DEFINE=	DOCS EXAMPLES NLS
 OPTIONS_SUB=	yes
 
 USES=		gettext iconv localbase shebangfix
@@ -35,9 +35,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-font-default=${FONTDEFAULT} \
 		--with-font-label=${FONTLABEL} \
 		--with-etcdir=${PREFIX}/etc
-
-GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
-GEOIP_CONFIGURE_ENABLE=	geoip
 
 NLS_CONFIGURE_ENABLE=	nls
 

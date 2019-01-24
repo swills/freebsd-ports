@@ -1,10 +1,9 @@
-# $FreeBSD: head/audio/ympd/Makefile 474524 2018-07-12 15:44:24Z dch $
+# $FreeBSD: head/audio/ympd/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	ympd
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.3.0
 CATEGORIES=	audio www
-MASTER_SITES=	GH
 
 MAINTAINER=	dch@FreeBSD.org
 COMMENT=	Stand-alone lightweight web UI controller for audio/musicpd

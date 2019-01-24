@@ -1,5 +1,5 @@
 # Created by: Hendrik Scholz <hendrik@scholz.net>
-# $FreeBSD: head/multimedia/transcode/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/multimedia/transcode/Makefile 490725 2019-01-19 17:15:53Z riggs $
 
 PORTNAME=	transcode
 PORTVERSION=	1.1.7
@@ -112,6 +112,8 @@ V4L_BUILD_DEPENDS=		${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 V4L_CONFIGURE_ENABLE=		v4l
 
 .include <bsd.port.pre.mk>
+
+LDFLAGS_i386+=	-Wl,-z,notext
 
 .if empty(ICONV_LIB)
 CONFIGURE_ARGS+=ac_cv_lib_iconv_iconv_open=no \

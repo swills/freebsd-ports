@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/x11-wm/openbox/Makefile 459581 2018-01-21 09:59:14Z novel $
+# $FreeBSD: head/x11-wm/openbox/Makefile 490492 2019-01-16 16:45:09Z novel $
 
 PORTNAME=	openbox
 PORTVERSION=	3.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://openbox.org/dist/openbox/
 
@@ -23,6 +23,7 @@ USE_XORG=	ice sm x11 xcursor xext xft xinerama xrandr \
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 SHEBANG_FILES=	data/autostart/openbox-xdg-autostart
+ETCDIR=		${PREFIX}/etc/xdg/${PORTNAME}
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -lXext
@@ -56,5 +57,11 @@ PATCHES_EXTRA_PATCHES=	${PATCHDIR}/openbox-3.5.0-title-matching.patch:-p1 \
 
 post-configure:
 	@${CHMOD} +x ${WRKSRC}/install-sh
+
+post-install:
+.for config_file in autostart environment menu.xml rc.xml
+	@${MV} ${STAGEDIR}${ETCDIR}/${config_file} \
+		${STAGEDIR}${ETCDIR}/${config_file}.sample
+.endfor
 
 .include <bsd.port.mk>

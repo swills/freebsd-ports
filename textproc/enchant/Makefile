@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/enchant/Makefile 466176 2018-04-01 18:50:52Z kwm $
+# $FreeBSD: head/textproc/enchant/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	enchant
 PORTVERSION=	1.6.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	textproc gnome
 MASTER_SITES=	http://www.abisource.com/downloads/${PORTNAME}/${PORTVERSION}/
 DIST_SUBDIR=	gnome2
@@ -39,7 +39,7 @@ HSPELL_BUILD_DEPENDS=	${LOCALBASE}/lib/libhspell.a:hebrew/hspell
 HSPELL_CONFIGURE_ENABLE=	hspell
 HSPELL_CONFIGURE_ON=	--with-hspell-prefix=${LOCALBASE}
 
-HUNSPELL_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
+HUNSPELL_LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 HUNSPELL_CONFIGURE_ENABLE=	myspell
 HUNSPELL_CONFIGURE_ON=	--with-system-myspell=yes \
 			--with-myspell-dir=${LOCALBASE}/share/hunspell

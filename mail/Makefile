@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 489262 2019-01-04 19:02:36Z dvl $
+# $FreeBSD: head/mail/Makefile 490780 2019-01-20 11:25:07Z mandree $
 #
 
     COMMENT = Electronic mail utilities
@@ -99,7 +99,6 @@
     SUBDIR += dovecot-pigeonhole
     SUBDIR += dovecot-pigeonhole04
     SUBDIR += dovecot22
-    SUBDIR += drac
     SUBDIR += dspam
     SUBDIR += ecartis
     SUBDIR += elm
@@ -132,6 +131,7 @@
     SUBDIR += fastforward
     SUBDIR += fdm
     SUBDIR += fetchmail
+    SUBDIR += fetchmailconf
     SUBDIR += filtermail
     SUBDIR += findmaildirs
     SUBDIR += geary
@@ -654,6 +654,7 @@
     SUBDIR += smtpfeed
     SUBDIR += smtpmail
     SUBDIR += smtprc
+    SUBDIR += smtprelay
     SUBDIR += smtptrapd
     SUBDIR += sortmail
     SUBDIR += spamass-ixhash

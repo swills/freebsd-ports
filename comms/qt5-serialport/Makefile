@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/qt5-serialport/Makefile 487594 2018-12-16 14:49:16Z tcberner $
+# $FreeBSD: head/comms/qt5-serialport/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	serialport
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms
 PKGNAMEPREFIX=	qt5-
 

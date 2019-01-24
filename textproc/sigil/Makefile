@@ -1,9 +1,9 @@
 # Created by: Jonathan Chen <jonc@chen.org.nz>
-# $FreeBSD: head/textproc/sigil/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/textproc/sigil/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	sigil
 PORTVERSION=	0.9.10
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	textproc
 
 MAINTAINER=	ports@FreeBSD.org
@@ -13,7 +13,7 @@ LICENSE=	GPLv3+
 
 LIB_DEPENDS=	libminizip.so:archivers/minizip \
 		libpcre.so:devel/pcre \
-		libhunspell-1.6.so:textproc/hunspell
+		libhunspell-1.7.so:textproc/hunspell
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR}
 
 USE_GITHUB=	yes
@@ -32,7 +32,7 @@ CMAKE_ARGS=	-DUSE_SYSTEM_LIBS:BOOL=1 \
 		-DINSTALL_BUNDLED_DICTS:BOOL=0
 USE_LDCONFIG=	${PREFIX}/lib/sigil
 
-# Upstream uses pkg-config output to pass libhunspell-1.6.so and
+# Upstream uses pkg-config output to pass libhunspell-1.7.so and
 # libpcre16.so to the linker. pkg-config output does not include full
 # paths, so add a workaround to keep the port linking for now.
 LDFLAGS+=	-L${LOCALBASE}/lib

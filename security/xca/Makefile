@@ -1,9 +1,9 @@
 # Created by: Valentin Zahariev <curly@e-card.bg>
-# $FreeBSD: head/security/xca/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/security/xca/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	xca
 PORTVERSION=	2.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	RELEASE.
 CATEGORIES=	security
 

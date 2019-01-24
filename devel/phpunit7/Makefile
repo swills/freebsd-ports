@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/phpunit7/Makefile 489322 2019-01-05 10:33:49Z joneum $
+# $FreeBSD: head/devel/phpunit7/Makefile 490714 2019-01-19 08:22:15Z joneum $
 
 PORTNAME=	phpunit
-DISTVERSION=	7.5.1
+DISTVERSION=	7.5.2
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/
 PKGNAMESUFFIX=	7${PHP_PKGNAMESUFFIX}
@@ -12,7 +12,7 @@ COMMENT=	Testing framework for unit tests
 
 LICENSE=	BSD3CLAUSE
 
-CONFLICTS_INSTALL=	phpunit
+CONFLICTS_INSTALL=	phpunit6
 
 USES=		cpe php:flavors
 CPE_VENDOR=	phpunit_project

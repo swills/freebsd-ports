@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/dsc/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/dns/dsc/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	dsc
 PORTVERSION=	2.7.0
@@ -18,6 +18,9 @@ RUN_DEPENDS=	libpcap>=1.8.1:net/libpcap			\
 		p5-Proc-PID-File>=1.28:devel/p5-Proc-PID-File	\
 		p5-XML-Simple>=2.24:textproc/p5-XML-Simple	\
 		dsp>=2.0.0:dns/dsp
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-extra-cflags=-I${LOCALBASE}/include

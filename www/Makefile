@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 489375 2019-01-05 20:04:29Z swills $
+# $FreeBSD: head/www/Makefile 490961 2019-01-22 16:26:49Z mat $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -382,6 +382,7 @@
     SUBDIR += mediawiki127
     SUBDIR += mediawiki130
     SUBDIR += mediawiki131
+    SUBDIR += mediawiki132
     SUBDIR += mergelog
     SUBDIR += mgstat
     SUBDIR += mhonarc
@@ -507,9 +508,9 @@
     SUBDIR += nginx-prometheus-exporter
     SUBDIR += nibbleblog
     SUBDIR += node
+    SUBDIR += node10
     SUBDIR += node6
     SUBDIR += node8
-    SUBDIR += node10
     SUBDIR += nostromo
     SUBDIR += novnc
     SUBDIR += novnc-websockify
@@ -1314,9 +1315,9 @@
     SUBDIR += p5-WWW-Shorten-isgd
     SUBDIR += p5-WWW-SourceForge
     SUBDIR += p5-WWW-Spinn3r
-    SUBDIR += p5-WWW-Telegram-BotAPI
     SUBDIR += p5-WWW-TV
     SUBDIR += p5-WWW-TWSMS
+    SUBDIR += p5-WWW-Telegram-BotAPI
     SUBDIR += p5-WWW-TinySong
     SUBDIR += p5-WWW-Tumblr
     SUBDIR += p5-WWW-VenusEnvy
@@ -1894,6 +1895,7 @@
     SUBDIR += qt5-webkit
     SUBDIR += qt5-websockets
     SUBDIR += qt5-websockets-qml
+    SUBDIR += qt5-webview
     SUBDIR += quark
     SUBDIR += qupzilla-qt4
     SUBDIR += qupzilla-qt5
@@ -2439,6 +2441,7 @@
     SUBDIR += webtrees
     SUBDIR += wgetpaste
     SUBDIR += wikicalc
+    SUBDIR += wml
     SUBDIR += woof
     SUBDIR += wordpress
     SUBDIR += wsdlpull

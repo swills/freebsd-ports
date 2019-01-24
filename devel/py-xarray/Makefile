@@ -1,9 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-xarray/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/py-xarray/Makefile 489789 2019-01-09 14:52:06Z sunpoet $
 
 PORTNAME=	xarray
-PORTVERSION=	0.11.0
-PORTREVISION=	1
+PORTVERSION=	0.11.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

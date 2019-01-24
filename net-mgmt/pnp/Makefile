@@ -1,8 +1,9 @@
 # Created by: rea-fbsd@codelabs.ru
-# $FreeBSD: head/net-mgmt/pnp/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/net-mgmt/pnp/Makefile 490480 2019-01-16 13:37:50Z lme $
 
 PORTNAME=	pnp
 PORTVERSION=	0.6.26
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/pnp4nagios/PNP-0.6
 DISTNAME=	pnp4nagios-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

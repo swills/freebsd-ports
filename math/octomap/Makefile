@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/octomap/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/octomap/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	octomap
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.9.0
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

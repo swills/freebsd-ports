@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 487685 2018-12-17 14:29:41Z mat $
+# $FreeBSD: head/Mk/Scripts/qa.sh 489958 2019-01-11 12:50:51Z mat $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -654,7 +654,7 @@ proxydeps() {
 				# If we don't already depend on it, and we don't provide it
 				if ! listcontains ${dep_file_pkg} "${LIB_RUN_DEPENDS} ${PKGORIGIN}"; then
 					# If the package has a flavor, check that the dependency is not on that particular flavor.
-					flavor=$(pkg annotate -q -S "${dep_file_pkg}" flavor)
+					flavor=$(pkg annotate -q -S "$(pkg which -q "${dep_file}")" flavor)
 					if [ -n "${flavor}" ]; then
 						if listcontains ${dep_file_pkg}@${flavor} "${LIB_RUN_DEPENDS} ${PKGORIGIN}"; then
 							continue

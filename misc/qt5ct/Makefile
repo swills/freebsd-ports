@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/qt5ct/Makefile 487918 2018-12-20 20:24:08Z tcberner $
+# $FreeBSD: head/misc/qt5ct/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qt5ct
 DISTVERSION=	0.37
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	SF/${PORTNAME}
 

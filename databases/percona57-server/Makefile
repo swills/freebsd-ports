@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-server/Makefile 489085 2019-01-02 15:47:29Z linimon $
+# $FreeBSD: head/databases/percona57-server/Makefile 490083 2019-01-12 23:05:00Z linimon $
 
 PORTNAME?=	percona
 DISTVERSION=	5.7.21-20
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libevent.so:devel/libevent \
 
 SLAVEDIRS=	databases/percona57-client \
 		databases/percona57-pam-for-mysql
-USES=		bison:build cmake:insource,noninja compiler:c11 compiler:c++11-lib \
+USES=		bison:build cmake:insource,noninja compiler:c11 \
 		cpe libedit localbase perl5 shebangfix
 
 MY_DBDIR=	/var/db/mysql
@@ -82,8 +82,6 @@ USES+=		libedit
 USES+=		libedit
 .else
 LIB_DEPENDS+=	libcurl.so:ftp/curl
-
-BROKEN_powerpc64=	Does not configure: CMake Error at cmake/os/FreeBSD.cmake:34 (MESSAGE): Unsupported compiler!
 
 # MySQL-Server part
 OPTIONS_DEFINE=	OPENSSL FASTMTX INNODBMEMCACHED TOKUDB
@@ -150,6 +148,10 @@ post-patch:
 	${WRKSRC}/configure.cmake
 
 .include <bsd.port.pre.mk>
+
+.if ${CHOSEN_COMPILER_TYPE} == gcc
+CXXFLAGS+=	-fpermissive
+.endif
 
 .if ${ARCH} == "arm"
 BROKEN=		Does not compile on arm

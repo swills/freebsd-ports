@@ -1,10 +1,10 @@
 # Created by: Dima Panov <fluffy@Fluffy.Khv.RU>
-# $FreeBSD: head/sysutils/polkit-qt/Makefile 488876 2019-01-01 12:50:05Z tcberner $
+# $FreeBSD: head/sysutils/polkit-qt/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	polkit-qt
 DISTVERSIONPREFIX=	1-
 DISTVERSION=	0.112.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	KDE/stable/apps/KDE4.x/admin/
 PKGNAMESUFFIX=	${FLAVOR:C/qt//}

@@ -1,8 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/games/qnetwalk/Makefile 487378 2018-12-13 19:26:39Z amdmi3 $
+# $FreeBSD: head/games/qnetwalk/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qnetwalk
 PORTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-aioice/Makefile 483754 2018-11-02 01:24:15Z swills $
+# $FreeBSD: head/devel/py-aioice/Makefile 490341 2019-01-15 03:08:14Z swills $
 
 PORTNAME=	aioice
-PORTVERSION=	0.6.10
+PORTVERSION=	0.6.12
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

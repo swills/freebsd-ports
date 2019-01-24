@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/yubikey-piv-manager/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/yubikey-piv-manager/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	yubikey-piv-manager
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 #PORTREVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	https://developers.yubico.com/yubikey-piv-manager/Releases/

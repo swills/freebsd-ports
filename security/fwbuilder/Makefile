@@ -1,8 +1,9 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/security/fwbuilder/Makefile 488651 2018-12-29 04:14:03Z cy $
+# $FreeBSD: head/security/fwbuilder/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	fwbuilder
 PORTVERSION=	5.3.7
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -29,6 +30,7 @@ USE_GITHUB=     yes
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 USE_QT=		buildtools gui \
 		linguist_build \
+		printsupport \
 		qmake_build \
 		svg \
 		xml

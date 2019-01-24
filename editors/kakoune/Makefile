@@ -1,8 +1,7 @@
-# $FreeBSD: head/editors/kakoune/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/editors/kakoune/Makefile 490815 2019-01-20 23:47:35Z tobik $
 
 PORTNAME=	kakoune
-DISTVERSION=	2018.10.27
-PORTREVISION=	1
+DISTVERSION=	2019.01.20
 CATEGORIES=	editors
 MASTER_SITES=	https://github.com/mawww/kakoune/releases/download/v${DISTVERSION}/
 

@@ -1,5 +1,5 @@
 # Created by: Andrea Venturoli <freebsd@netfence.it>
-# $FreeBSD: head/security/snortreport/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/security/snortreport/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	snortreport
 PORTVERSION=	1.3.4
@@ -28,6 +28,12 @@ USES=		php:web
 
 MYSQL_USE=	php=mysql
 PGSQL_USE=	php=pgsql
+
+.include <bsd.port.options.mk>
+.if ${PORT_OPTIONS:MBARNYARD}
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
+.endif
 
 pre-everything::
 	@${ECHO} ""

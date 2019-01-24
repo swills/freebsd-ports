@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/openh264/Makefile 480034 2018-09-18 16:06:56Z emaste $
+# $FreeBSD: head/multimedia/openh264/Makefile 490638 2019-01-18 14:06:34Z jbeich $
 
 PORTNAME=	openh264
 PORTVERSION=	1.8.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	cisco
 
-USES=		compiler cpe gmake
+USES=		cpe gmake
 CPE_VENDOR=	cisco
 USE_LDCONFIG=	yes
 MAKE_ARGS=	PREFIX="${PREFIX}" \

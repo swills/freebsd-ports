@@ -1,7 +1,8 @@
-# $FreeBSD: head/archivers/kf5-karchive/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/archivers/kf5-karchive/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	karchive
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	archivers kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

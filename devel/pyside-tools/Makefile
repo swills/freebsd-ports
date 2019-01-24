@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@mnemosine.domo.sva>
-# $FreeBSD: head/devel/pyside-tools/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/pyside-tools/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	pyside-tools
 PORTVERSION=	0.2.15
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 482960 2018-10-25 09:27:47Z rene $
+# $FreeBSD: head/cad/Makefile 490609 2019-01-17 23:27:11Z swills $
 #
 
     COMMENT = CAD tools
@@ -101,8 +101,10 @@
     SUBDIR += tochnog
     SUBDIR += transcalc
     SUBDIR += varkon
+    SUBDIR += verilator
     SUBDIR += verilog-mode.el
     SUBDIR += xcircuit
+    SUBDIR += xtrkcad
     SUBDIR += z88
     SUBDIR += zcad
 

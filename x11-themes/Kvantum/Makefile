@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-themes/Kvantum/Makefile 488692 2018-12-29 22:46:46Z rigoletto $
+# $FreeBSD: head/x11-themes/Kvantum/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	Kvantum
 DISTVERSIONPREFIX=	V
 DISTVERSION=	0.10.8
+PORTREVISION=	1
 CATEGORIES=	x11-themes
 
 MAINTAINER=	rigoletto@FreeBSD.org

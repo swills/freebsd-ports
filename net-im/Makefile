@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/net-im/Makefile 490580 2019-01-17 17:34:17Z swills $
 #
 
     COMMENT = Instant messaging
@@ -71,6 +71,7 @@
     SUBDIR += licq-qt-gui
     SUBDIR += linux-telegram-desktop
     SUBDIR += loudmouth
+    SUBDIR += matterbridge
     SUBDIR += matterircd
     SUBDIR += mbpurple
     SUBDIR += mcabber

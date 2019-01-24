@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/orange3/Makefile 487500 2018-12-15 09:34:25Z yuri $
+# $FreeBSD: head/misc/orange3/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	orange3
 DISTVERSION=	3.19.0
+PORTREVISION=	1
 CATEGORIES=	misc python
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -31,7 +32,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 USES=		python:3.4+ pyqt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	biolab
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist noflavors
 USE_PYQT=	core_run gui_run printsupport_run widgets_run webengine_run
 
 CFLAGS+=	-DQSORT_R_STYLE_BSD=yes

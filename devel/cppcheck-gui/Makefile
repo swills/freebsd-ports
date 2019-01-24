@@ -1,5 +1,7 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/cppcheck-gui/Makefile 445071 2017-07-05 10:45:42Z amdmi3 $
+# $FreeBSD: head/devel/cppcheck-gui/Makefile 490472 2019-01-16 11:13:44Z tijl $
+
+PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../cppcheck
 

@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/lxqt-about/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11/lxqt-about/Makefile 490946 2019-01-22 12:52:49Z linimon $
 
 PORTNAME=	lxqt-about
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	LXQT
 DIST_SUBDIR=	lxqt
@@ -12,7 +13,7 @@ COMMENT=	About dialog of LXQt
 
 LICENSE=	LGPL21+
 
-USES=	cmake kde:5 lxqt pkgconfig tar:xz qt:5
+USES=	cmake compiler:c++11-lang kde:5 lxqt pkgconfig tar:xz qt:5
 USE_QT=	buildtools_build qmake_build core dbus gui svg widgets \
 	x11extras xml
 USE_KDE=	windowsystem

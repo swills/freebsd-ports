@@ -1,8 +1,9 @@
-# $FreeBSD: head/sysutils/vzvol/Makefile 472332 2018-06-13 16:12:35Z pi $
+# $FreeBSD: head/sysutils/vzvol/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=		vzvol
 DISTVERSIONPREFIX=	v
 DISTVERSION=		0.7.0
+PORTREVISION=	1
 CATEGORIES=		sysutils
 
 MAINTAINER=		rainbow@sanitylinux.org

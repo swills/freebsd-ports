@@ -1,5 +1,5 @@
 # Created by: Milan Obuch
-# $FreeBSD: head/security/clamcour/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/clamcour/Makefile 490703 2019-01-19 07:15:06Z antoine $
 
 PORTNAME=	clamcour
 PORTVERSION=	0.3.8
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.becrux.com/pages/projects/clamcour/
 
 MAINTAINER=	bsd@dino.sk
 COMMENT=	ClamAV courier filter
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	courier-config:mail/courier
 LIB_DEPENDS=	libclamav.so:security/clamav

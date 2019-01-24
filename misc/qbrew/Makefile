@@ -1,9 +1,9 @@
 # Created by: David Johnson <david@usermode.org>
-# $FreeBSD: head/misc/qbrew/Makefile 485966 2018-11-26 21:20:37Z adridg $
+# $FreeBSD: head/misc/qbrew/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qbrew
 PORTVERSION=	0.4.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	misc
 MASTER_SITES=	http://www.usermode.org/code/
 

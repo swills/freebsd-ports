@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/jalv-select/Makefile 480844 2018-09-28 07:05:04Z yuri $
+# $FreeBSD: head/audio/jalv-select/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	jalv-select
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

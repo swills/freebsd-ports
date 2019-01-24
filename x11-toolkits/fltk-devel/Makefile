@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 490446 2019-01-16 05:04:54Z linimon $
 
 PORTNAME=	fltk
 DISTVERSION=	1.3.x-r${SNAPSHOT_VERS}
@@ -17,7 +17,8 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig
 
-USES=		cmake jpeg
+USES=		cmake gl jpeg localbase:ldflags
+USE_CXXSTD=	c++98
 USE_XORG=	xft
 USE_GL=		glu
 USE_LDCONFIG=	${PREFIX}/lib/fltk-devel
@@ -27,9 +28,6 @@ CMAKE_ARGS=	-DOPTION_BUILD_SHARED_LIBS:BOOL=ON \
 		-DPREFIX_DOC:PATH=${PREFIX}/share/examples/fltk-devel \
 		-DPREFIX_INCLUDE:PATH=${PREFIX}/include/fltk-devel \
 		-DPREFIX_LIB:PATH=${PREFIX}/lib/fltk-devel
-
-CXXFLAGS+=	-Wno-c++11-narrowing
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 SNAPSHOT_VERS=	10370
 PORTEXAMPLES=	*

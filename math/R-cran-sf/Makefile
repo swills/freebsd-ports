@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-sf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/R-cran-sf/Makefile 489995 2019-01-11 20:16:50Z sunpoet $
 
 PORTNAME=	sf
 DISTVERSION=	0.7-1
@@ -24,6 +24,6 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal \
 BUILD_DEPENDS=	${CRAN_DEPENDS}
 RUN_DEPENDS=	${CRAN_DEPENDS}
 
-USES=		cran:auto-plist,compiles
+USES=		compiler:c++11-lang cran:auto-plist,compiles
 
 .include <bsd.port.mk>

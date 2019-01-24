@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/math/geogebra/Makefile 487683 2018-12-17 13:30:55Z wen $
+# $FreeBSD: head/math/geogebra/Makefile 489669 2019-01-08 10:44:23Z tobik $
 
 PORTNAME=	geogebra
 PORTVERSION=	5.0.513.0
@@ -21,7 +21,6 @@ LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
 ONLY_FOR_ARCHS=	amd64 i386
 
-SUB_FILES=	geogebra.desktop
 CONFLICTS=	math/geogebra-i18n-[0-9]*
 NO_BUILD=	yes
 NO_ARCH=	yes

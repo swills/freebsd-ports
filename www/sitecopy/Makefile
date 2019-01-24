@@ -1,9 +1,9 @@
 # Created by: nik
-# $FreeBSD: head/www/sitecopy/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/www/sitecopy/Makefile 490075 2019-01-12 19:34:15Z pi $
 
 PORTNAME=	sitecopy
 PORTVERSION=	0.16.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	http://www.manyfish.co.uk/${PORTNAME}/ \
 		GENTOO
@@ -43,5 +43,9 @@ post-patch:
 		${WRKSRC}/src/sitestore.c
 	@${REINPLACE_CMD} -e 's|25 26 27 28|& 29 30|g' \
 		${WRKSRC}/configure
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200072
+	@${REINPLACE_CMD} -e '/#define ksize_t /d' \
+		${WRKSRC}/configure
+.endif
 
 .include <bsd.port.mk>

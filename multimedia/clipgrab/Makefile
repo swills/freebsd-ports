@@ -1,8 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/multimedia/clipgrab/Makefile 487078 2018-12-09 20:03:02Z tobik $
+# $FreeBSD: head/multimedia/clipgrab/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	clipgrab
 PORTVERSION=	3.7.2
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	https://download.clipgrab.org/
 

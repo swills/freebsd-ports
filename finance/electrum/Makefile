@@ -1,8 +1,9 @@
 # Created by: Neil Booth
-# $FreeBSD: head/finance/electrum/Makefile 488284 2018-12-24 23:26:21Z ehaupt $
+# $FreeBSD: head/finance/electrum/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	electrum
 PORTVERSION=	3.3.2
+PORTREVISION=	1
 CATEGORIES=	finance python
 MASTER_SITES=	https://download.electrum.org/${PORTVERSION}/ \
 		http://download.electrum.org/${PORTVERSION}/
@@ -30,7 +31,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiohttp-socks>=0.2:net/py-aiohttp-socks@${PY
 
 CONFLICTS_INSTALL=	electrum2-*
 
-USES=		desktop-file-utils pyqt:5 python:3.4+
+# Supports 3.4+ but aiorpcX is 3.6+
+USES=		desktop-file-utils pyqt:5 python:3.6+
 USE_PYQT=	gui_run sip widgets
 USE_PYTHON=	autoplist distutils optsuffix
 PYDISTUTILS_PKGNAME=	Electrum

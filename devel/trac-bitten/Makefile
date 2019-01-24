@@ -1,5 +1,5 @@
 # Created by: Tim Niemueller <tim@niemueller.de>
-# $FreeBSD: head/devel/trac-bitten/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/trac-bitten/Makefile 490575 2019-01-17 16:31:28Z rene $
 
 PORTNAME=	bitten
 PORTVERSION=	0.6
@@ -10,7 +10,7 @@ MASTER_SITES=	http://ftp.edgewall.com/pub/bitten/ \
 PKGNAMEPREFIX=	trac-
 DISTNAME=	Bitten-${PORTVERSION}
 
-MAINTAINER=	tim@niemueller.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Continuous integration for Trac
 
 LICENSE=	BSD3CLAUSE

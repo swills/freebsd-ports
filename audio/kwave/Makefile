@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/kwave/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/audio/kwave/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kwave
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	audio kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,9 +1,9 @@
-# $FreeBSD: head/editors/xi-core/Makefile 486770 2018-12-06 17:11:14Z jbeich $
+# $FreeBSD: head/editors/xi-core/Makefile 490600 2019-01-17 19:50:38Z jbeich $
 
 PORTNAME=	xi-core
 PORTVERSION=	g20170612
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	editors
 
 MAINTAINER=	ports@FreeBSD.org

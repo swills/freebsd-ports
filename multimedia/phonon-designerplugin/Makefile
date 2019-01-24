@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/phonon-designerplugin/Makefile 488883 2019-01-01 13:15:23Z tcberner $
+# $FreeBSD: head/multimedia/phonon-designerplugin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	phonon
-DISTVERSION=	4.10.1
+DISTVERSION=	4.10.2
 PORTREVISION=	1
 CATEGORIES=	multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}

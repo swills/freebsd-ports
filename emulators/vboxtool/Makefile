@@ -1,9 +1,9 @@
 # Created by: pjm
-# $FreeBSD: head/emulators/vboxtool/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/vboxtool/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	vboxtool
 PORTVERSION=	0.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	emulators
 MASTER_SITES=	SF
 

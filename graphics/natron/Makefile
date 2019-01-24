@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/natron/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/graphics/natron/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	natron
 PORTVERSION=	2.3.14
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 
 MAINTAINER=	olivier@FreeBSD.org

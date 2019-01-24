@@ -1,9 +1,8 @@
 # Created by: R.I.Pienaar <rip@devco.net>
-# $FreeBSD: head/mail/msmtp/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
+# $FreeBSD: head/mail/msmtp/Makefile 490377 2019-01-15 14:31:48Z novel $
 
 PORTNAME=	msmtp
-PORTVERSION=	1.8.1
-PORTREVISION=	1
+PORTVERSION=	1.8.2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	https://marlam.de/msmtp/releases/
 

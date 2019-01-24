@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 489474 2019-01-06 12:18:06Z arrowd $
+# $FreeBSD: head/benchmarks/Makefile 490786 2019-01-20 12:54:30Z egypcio $
 #
 
     COMMENT = Benchmarking tools
@@ -65,6 +65,7 @@
     SUBDIR += polygraph
     SUBDIR += postal
     SUBDIR += postmark
+    SUBDIR += py-locust
     SUBDIR += py-naarad
     SUBDIR += py-throughpy
     SUBDIR += py-zopkio

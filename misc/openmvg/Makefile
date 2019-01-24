@@ -1,9 +1,9 @@
-# $FreeBSD: head/misc/openmvg/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/misc/openmvg/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	openmvg
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc science
 
 MAINTAINER=	yuri@FreeBSD.org

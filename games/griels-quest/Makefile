@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/griels-quest/Makefile 406038 2016-01-13 12:46:11Z amdmi3 $
+# $FreeBSD: head/games/griels-quest/Makefile 489810 2019-01-09 15:33:12Z amdmi3 $
 
 PORTNAME=	griels-quest
 PORTVERSION=	git20150512
@@ -21,6 +21,6 @@ USE_SDL=	sdl mixer image ttf gfx
 DATADIR=	${PREFIX}/share/griels
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/griels
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/griels
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/signon-qt5/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/signon-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	signon
 PORTVERSION=	8.58
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils kde
 PKGNAMESUFFIX=	-qt5
 DIST_SUBDIR=	KDE/${GL_ACCOUNT}

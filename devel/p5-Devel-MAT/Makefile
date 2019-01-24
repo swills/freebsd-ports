@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-MAT/Makefile 479458 2018-09-10 20:26:58Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-MAT/Makefile 490407 2019-01-15 21:18:36Z sunpoet $
 
 PORTNAME=	Devel-MAT
-PORTVERSION=	0.40
+PORTVERSION=	0.41
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,7 +15,7 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	p5-Commandable>=0.02:devel/p5-Commandable \
+RUN_DEPENDS=	p5-Commandable>=0.03:devel/p5-Commandable \
 		p5-Devel-MAT-Dumper>=0.35:devel/p5-Devel-MAT-Dumper \
 		p5-File-ShareDir>=0:devel/p5-File-ShareDir \
 		p5-Heap>=0:devel/p5-Heap \

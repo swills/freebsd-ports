@@ -1,8 +1,9 @@
-# $FreeBSD: head/security/qtkeychain/Makefile 489094 2019-01-02 19:57:05Z mmokhi $
+# $FreeBSD: head/security/qtkeychain/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtkeychain
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.1
+PORTREVISION=	1
 CATEGORIES=	security
 PKGNAMESUFFIX=	-${FLAVOR}
 

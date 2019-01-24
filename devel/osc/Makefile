@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/osc/Makefile 478202 2018-08-27 13:04:00Z amdmi3 $
+# $FreeBSD: head/devel/osc/Makefile 490640 2019-01-18 15:58:12Z amdmi3 $
 
 PORTNAME=	osc
-PORTVERSION=	0.163.0
+PORTVERSION=	0.164.1
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -11,20 +11,18 @@ COMMENT=	Command Line Interface to work with an openSUSE Build Service
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}m2crypto>0:security/py-m2crypto@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}urlgrabber>0:www/py-urlgrabber@${PY_FLAVOR}
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urlgrabber>0:www/py-urlgrabber@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}m2crypto>0:security/py-m2crypto@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	openSUSE
-
-CPE_VENDOR=	suse
-CPE_PRODUCT=	opensuse_osc
 
 USES=		cpe python:2.7
 USE_PYTHON=	autoplist distutils
 PLIST_FILES=	bin/osc
 NO_ARCH=	yes
+
+CPE_VENDOR=	suse
+CPE_PRODUCT=	opensuse_osc
 
 PORTDOCS=	*
 

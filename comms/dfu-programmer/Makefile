@@ -1,12 +1,12 @@
 # Created by: elbarto@ArcadeBSD.org
-# $FreeBSD: head/comms/dfu-programmer/Makefile 430671 2017-01-05 22:58:30Z jbeich $
+# $FreeBSD: head/comms/dfu-programmer/Makefile 490831 2019-01-21 08:19:26Z tobik $
 
 PORTNAME=	dfu-programmer
-PORTVERSION=	0.5.5
+PORTVERSION=	0.7.2
 CATEGORIES=	comms
 MASTER_SITES=	SF
 
-MAINTAINER=	byu17@uclive.ac.nz
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Device Firmware Update based USB programmer for Atmel chips
 
 LICENSE=	GPLv2

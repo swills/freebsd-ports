@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/py-python-poppler-qt5/Makefile 489069 2019-01-02 09:20:02Z linimon $
+# $FreeBSD: head/graphics/py-python-poppler-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	python-poppler-qt5
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.24.2
+PORTREVISION=	1
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

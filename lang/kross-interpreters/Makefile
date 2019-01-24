@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/kross-interpreters/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/lang/kross-interpreters/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kross-interpreters
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	lang kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

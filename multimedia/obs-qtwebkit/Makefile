@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/obs-qtwebkit/Makefile 478871 2018-09-03 13:17:06Z swills $
+# $FreeBSD: head/multimedia/obs-qtwebkit/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	obs-qtwebkit
 PORTVERSION=	g2018090201
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	swills@FreeBSD.org

@@ -1,8 +1,9 @@
-# $FreeBSD: head/editors/dexed/Makefile 486685 2018-12-05 16:46:06Z acm $
+# $FreeBSD: head/editors/dexed/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	dexed
 PORTVERSION=	3.6.21
 DISTVERSIONPREFIX=v
+PORTREVISION=	1
 CATEGORIES=	editors
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 

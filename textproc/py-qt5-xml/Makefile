@@ -1,6 +1,7 @@
-# $FreeBSD: head/textproc/py-qt5-xml/Makefile 487597 2018-12-16 15:25:40Z tcberner $
+# $FreeBSD: head/textproc/py-qt5-xml/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	xml
+PORTREVISION=	1
 CATEGORIES=	textproc devel python
 
 MAINTAINER=	kde@FreeBSD.org

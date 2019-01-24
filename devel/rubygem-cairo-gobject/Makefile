@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-cairo-gobject/Makefile 486121 2018-11-28 19:19:53Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cairo-gobject/Makefile 490274 2019-01-14 15:45:14Z sunpoet $
 
 PORTNAME=	cairo-gobject
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,7 +10,7 @@ COMMENT=	Ruby binding for cairo-gobject
 
 LICENSE=	LGPL21+
 
-RUN_DEPENDS=	rubygem-cairo>=1.16.1:graphics/rubygem-cairo \
+RUN_DEPENDS=	rubygem-cairo>=1.16.2:graphics/rubygem-cairo \
 		rubygem-glib2>=${PORTVERSION}:devel/rubygem-glib2
 
 USES=		gem gnome

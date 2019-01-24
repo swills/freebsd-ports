@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/fluidplug-lv2/Makefile 487074 2018-12-09 19:06:04Z yuri $
+# $FreeBSD: head/audio/fluidplug-lv2/Makefile 490093 2019-01-12 23:34:27Z linimon $
 
 PORTNAME=	FluidPlug
 PORTVERSION=	g20181209
@@ -27,7 +27,7 @@ OPTIONS_DEFINE_i386=	SSE
 OPTIONS_DEFAULT_amd64=	SSE
 OPTIONS_DEFAULT_i386=	SSE
 
-SSE_MAKE_ARGS=	PORT_SIMD_FLAGS="-msse -msse2 -mfpmath=sse"
+SSE_MAKE_ARGS=	PORT_SIMD_FLAGS="-mtune=generic -msse -msse2 -mfpmath=sse"
 
 post-patch:
 	@${REINPLACE_CMD} -e ' \

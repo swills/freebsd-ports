@@ -1,9 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/fcitx-libpinyin/Makefile 484430 2018-11-08 07:04:15Z wen $
+# $FreeBSD: head/chinese/fcitx-libpinyin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	fcitx-libpinyin
 PORTVERSION=	0.5.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	chinese
 MASTER_SITES=	http://download.fcitx-im.org/${PORTNAME}/:body \
 		http://download.fcitx-im.org/data/:data

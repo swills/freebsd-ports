@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-mgmt/cacti/Makefile 489505 2019-01-06 16:32:03Z swills $
+# $FreeBSD: head/net-mgmt/cacti/Makefile 490477 2019-01-16 12:59:37Z swills $
 
 PORTNAME=	cacti
 PORTVERSION=	1.2.0
+PORTREVISION=	2
 CATEGORIES=	net-mgmt www
 MASTER_SITES=	http://www.cacti.net/downloads/ \
 		ftp://ftpmirror.uk/freebsd-ports/cacti/
@@ -45,6 +46,11 @@ SUB_LIST+=	CACTIDIR=${CACTIDIR} CACTIUSER=${CACTIUSER} \
 		CACTIGROUP=${CACTIGROUP}
 
 CONFLICTS_INSTALL=	cacti88
+
+OPTIONS_DEFINE=		SNMPBIN
+OPTIONS_DEFAULT=	SNMPBIN
+SNMPBIN_DESC=		Force use of SNMP binary instead of phpXX-snmp functions
+SNMPBIN_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-lib_snmp.php
 
 post-patch:
 	@${FIND} ${WRKSRC} -name \*.orig -delete; \

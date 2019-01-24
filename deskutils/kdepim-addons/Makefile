@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/kdepim-addons/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/deskutils/kdepim-addons/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdepim-addons
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -9,6 +10,8 @@ COMMENT=	KDE PIM addons
 
 LICENSE=	LGPL21
 
+BUILD_DEPENDS=	markdown:textproc/discount
+RUN_DEPENDS=	markdown:textproc/discount
 LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpg-error.so:security/libgpg-error \
 		libgpgme.so:security/gpgme \

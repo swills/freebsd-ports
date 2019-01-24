@@ -1,8 +1,9 @@
-# $FreeBSD: head/security/yubikey-manager-qt/Makefile 488733 2018-12-30 19:43:00Z tcberner $
+# $FreeBSD: head/security/yubikey-manager-qt/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	yubikey-manager-qt
 DISTVERSIONPREFIX=	yubikey-manager-qt-
 DISTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	daniel@shafer.cc

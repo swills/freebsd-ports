@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/urbackup-server/Makefile 477967 2018-08-24 17:22:01Z jhale $
+# $FreeBSD: head/archivers/urbackup-server/Makefile 490930 2019-01-22 07:39:47Z linimon $
 
 PORTNAME=	urbackup-server
 DISTVERSION=	2.2.11
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/server-license.txt
 LIB_DEPENDS=	libcryptopp.so:security/cryptopp \
 		libcurl.so:ftp/curl
 
-USES=		fakeroot pkgconfig
+USES=		compiler:c++11-lang fakeroot pkgconfig
 USE_RC_SUBR=	urbackup_server
 
 USERS=		urbackup

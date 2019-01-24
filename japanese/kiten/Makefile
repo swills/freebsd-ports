@@ -1,7 +1,8 @@
-# $FreeBSD: head/japanese/kiten/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/japanese/kiten/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kiten
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	japanese kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/qsudo/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/qsudo/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qsudo
 DISTVERSION=	201711240000
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils security
 
 MAINTAINER=	jt@ixsystems.com

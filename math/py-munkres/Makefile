@@ -1,10 +1,10 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/math/py-munkres/Makefile 483524 2018-10-30 19:54:13Z sunpoet $
+# $FreeBSD: head/math/py-munkres/Makefile 491007 2019-01-23 00:01:34Z sunpoet $
 
 PORTNAME=	munkres
-PORTVERSION=	1.0.11
+PORTVERSION=	1.0.12
+DISTVERSIONPREFIX=	release-
 CATEGORIES=	math python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -16,5 +16,8 @@ USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
+
+GH_ACCOUNT=	bmc
+USE_GITHUB=	yes
 
 .include <bsd.port.mk>

@@ -1,10 +1,11 @@
-# $FreeBSD: head/comms/unixcw/Makefile 478429 2018-08-30 04:05:07Z danfe $
+# $FreeBSD: head/comms/unixcw/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 # NOTE: comms/xcwcp is a sub-port of this.  When making changes, ensure
 #       it still works as well.
 
 PORTNAME?=	unixcw
 PORTVERSION=	3.5.1
+PORTREVISION?=	0
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/unixcw/unixcw-${PORTVERSION}
 DISTNAME=	unixcw_${PORTVERSION}.orig

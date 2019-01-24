@@ -1,9 +1,8 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/SCIP/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/SCIP/Makefile 490873 2019-01-21 18:19:30Z yuri $
 
 PORTNAME=	SCIP
-DISTVERSION=	6.0.0
-PORTREVISION=	1
+DISTVERSION=	6.0.1
 CATEGORIES=	math science
 MASTER_SITES=	http://scip.zib.de/download/release/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}

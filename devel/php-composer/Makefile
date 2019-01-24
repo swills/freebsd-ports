@@ -1,10 +1,10 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 487392 2018-12-13 22:08:12Z madpilot $
+# $FreeBSD: head/devel/php-composer/Makefile 490813 2019-01-20 20:50:20Z sunpoet $
 
 PORTNAME=	composer
 DISTVERSION=	1.8.0
 CATEGORIES=	devel
-MASTER_SITES=	http://getcomposer.org/download/${DISTVERSION}/
+MASTER_SITES=	https://getcomposer.org/download/${DISTVERSION}/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	composer
 EXTRACT_SUFX=	.phar

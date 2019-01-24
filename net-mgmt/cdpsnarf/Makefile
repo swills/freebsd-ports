@@ -1,11 +1,10 @@
-# $FreeBSD: head/net-mgmt/cdpsnarf/Makefile 419597 2016-08-04 06:16:18Z pi $
+# $FreeBSD: head/net-mgmt/cdpsnarf/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	cdpsnarf
 PORTVERSION=	0.1.6
 PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt
-MASTER_SITES=	GH
 
 MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	Tool to extract information from CDP packets

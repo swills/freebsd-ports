@@ -1,9 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-screenshot/Makefile 489450 2019-01-06 09:30:25Z amdmi3 $
+# $FreeBSD: head/deskutils/lumina-screenshot/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-screenshot
 PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com

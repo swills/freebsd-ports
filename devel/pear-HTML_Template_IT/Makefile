@@ -1,5 +1,5 @@
 # Created by: Alex Miller (<asm@asm.kiev.ua>)
-# $FreeBSD: head/devel/pear-HTML_Template_IT/Makefile 459954 2018-01-25 19:07:10Z joneum $
+# $FreeBSD: head/devel/pear-HTML_Template_IT/Makefile 489877 2019-01-10 17:20:25Z joneum $
 
 PORTNAME=	HTML_Template_IT
 DISTVERSION=	1.3.1
@@ -8,6 +8,9 @@ CATEGORIES=	devel www pear
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR Integrated template API
+
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		pear
 

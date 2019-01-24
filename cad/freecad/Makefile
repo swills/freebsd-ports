@@ -1,9 +1,9 @@
-# $FreeBSD: head/cad/freecad/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/cad/freecad/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17-13541 # git rev-list --count
 DISTVERSIONSUFFIX=	-g9948ee4f1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	cad
 
 MAINTAINER=	ports@FreeBSD.org

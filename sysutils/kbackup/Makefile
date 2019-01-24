@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/kbackup/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/sysutils/kbackup/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kbackup
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gdm/Makefile 484889 2018-11-13 17:54:57Z kwm $
+# $FreeBSD: head/x11/gdm/Makefile 491030 2019-01-23 10:29:53Z tobik $
 
 PORTNAME=	gdm
 PORTVERSION=	3.28.4
@@ -42,7 +42,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		cpe gettext gmake gnome libtool pathfix pkgconfig tar:xz
 CPE_VENDOR=	gnome
-CPE_VENDOR=	gnome_display_manager
+CPE_PRODUCT=	gnome_display_manager
 USE_GNOME=	cairo dconf gtk30 intltool introspection
 USE_LDCONFIG=	yes
 USE_XORG=	x11 xau xcb xdmcp xorgproto

@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/frr6/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/frr6/Makefile 489703 2019-01-08 15:21:59Z olivier $
 
 PORTNAME=	frr
-PORTVERSION=	6.0
-PORTREVISION=	2
+PORTVERSION=	6.0.2
 DISTVERSIONPREFIX=	frr-
 CATEGORIES=	net ipv6
 PKGNAMESUFFIX=	6
@@ -50,7 +49,6 @@ GROUPS=	frr frrvty
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-INSTALL_TARGET=	install-strip
 
 # PIM compile but didn't work on FreeBSD
 CONFIGURE_ARGS=	--enable-user=frr \

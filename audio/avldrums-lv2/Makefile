@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/avldrums-lv2/Makefile 485637 2018-11-23 05:32:41Z yuri $
+# $FreeBSD: head/audio/avldrums-lv2/Makefile 489948 2019-01-11 07:23:28Z yuri $
 
 PORTNAME=	avldrums
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.1
+DISTVERSION=	0.3.2
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

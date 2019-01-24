@@ -1,8 +1,8 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/security/libgpg-error/Makefile 487590 2018-12-16 14:22:09Z novel $
+# $FreeBSD: head/security/libgpg-error/Makefile 490566 2019-01-17 15:10:26Z novel $
 
 PORTNAME=	libgpg-error
-PORTVERSION=	1.33
+PORTVERSION=	1.34
 CATEGORIES=	security devel
 MASTER_SITES=	GNUPG
 
@@ -14,10 +14,11 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LIB
 
+USES=		gmake libtool tar:bzip2
+
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes
 
-USES=		gmake libtool tar:bzip2
 USE_LDCONFIG=		yes
 GNU_CONFIGURE=		yes
 MAKE_JOBS_UNSAFE=	yes

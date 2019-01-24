@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/rubygem-tk/Makefile 481383 2018-10-06 18:05:01Z swills $
+# $FreeBSD: head/x11-toolkits/rubygem-tk/Makefile 491080 2019-01-24 05:09:48Z linimon $
 
 PORTNAME=	tk
 PORTVERSION=	0.2.0
@@ -9,8 +9,6 @@ MAINTAINER=	nmingotti@gmail.com
 COMMENT=	Ruby interface to TclTk-8.6
 
 LICENSE=	BSD2CLAUSE
-
-LIB_DEPENDS=	libunwind.so:devel/libunwind
 
 CONFIGURE_ARGS=--with-tcltkversion=8.6,8.6 \
 		--with-tk-include=${LOCALBASE}/include/tk8.6 \

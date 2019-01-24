@@ -1,7 +1,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org
-# $FreeBSD: head/net/avahi-qt5/Makefile 488134 2018-12-22 21:22:56Z kwm $
+# $FreeBSD: head/net/avahi-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	net
 PKGNAMESUFFIX=	-qt5
 

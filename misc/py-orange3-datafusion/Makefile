@@ -1,9 +1,9 @@
-# $FreeBSD: head/misc/py-orange3-datafusion/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/misc/py-orange3-datafusion/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	orange3-datafusion
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.1.11-7
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-g69aa51c
 CATEGORIES=	misc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

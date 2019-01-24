@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/rubygem-gnome2/Makefile 486142 2018-11-28 19:22:48Z sunpoet $
+# $FreeBSD: head/x11/rubygem-gnome2/Makefile 490426 2019-01-15 21:20:20Z sunpoet $
 
 PORTNAME=	gnome2
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.1
 CATEGORIES=	x11 gnome rubygems
 PKGNAMEPREFIX=	rubygem-
 
@@ -36,6 +36,5 @@ RUN_DEPENDS=	rubygem-atk>=${PORTVERSION}:accessibility/rubygem-atk \
 		rubygem-webkit-gtk2>=${PORTVERSION}:www/rubygem-webkit-gtk2
 
 USES=		metaport
-USE_RUBY=	yes
 
 .include <bsd.port.mk>

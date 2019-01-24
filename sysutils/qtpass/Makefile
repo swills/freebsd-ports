@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/qtpass/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/qtpass/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtpass
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	brouwer@annejan.com

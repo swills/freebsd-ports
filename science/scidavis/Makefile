@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/scidavis/Makefile 489371 2019-01-05 19:35:21Z antoine $
+# $FreeBSD: head/science/scidavis/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	scidavis
 PORTVERSION=	1.23.4
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	makc@FreeBSD.org

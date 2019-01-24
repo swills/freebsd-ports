@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/archivers/quazip/Makefile 489340 2019-01-05 14:10:17Z tcberner $
+# $FreeBSD: head/archivers/quazip/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	quazip
 DISTVERSION=	0.7.6
+PORTREVISION=	1
 CATEGORIES=	archivers
 PKGNAMESUFFIX=	-${FLAVOR}
 

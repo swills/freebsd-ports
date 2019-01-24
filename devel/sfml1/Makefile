@@ -1,13 +1,13 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/sfml1/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/sfml1/Makefile 490357 2019-01-15 09:30:29Z amdmi3 $
 
 PORTNAME=	sfml
 PORTVERSION=	1.6
 PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	SF
-DISTNAME=	SFML-${PORTVERSION}-sdk-linux-32
 PKGNAMESUFFIX=	1
+DISTNAME=	SFML-${PORTVERSION}-sdk-linux-32
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Simple and Fast Multimedia Library

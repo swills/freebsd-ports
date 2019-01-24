@@ -1,9 +1,9 @@
 # Created by: David Le Brun <david@trucs.org>
-# $FreeBSD: head/astro/viking/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/astro/viking/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	viking
 PORTVERSION=	1.6.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	astro
 MASTER_SITES=	SF/${PORTNAME}/
 

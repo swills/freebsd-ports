@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-url/Makefile 475530 2018-07-28 12:04:22Z miwi $
+# $FreeBSD: head/www/py-url/Makefile 490950 2019-01-22 13:32:50Z linimon $
 
 PORTNAME=	url
 DISTVERSION=	0.4.2
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +14,10 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
-USES=		python
+USES=		compiler:c++11-lang python
 USE_PYTHON=	cython distutils autoplist
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/url/url.so
 
 .include <bsd.port.mk>

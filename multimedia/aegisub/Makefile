@@ -1,9 +1,9 @@
 # Created by: Leinier Cruz Salfran <salfrancl@yahoo.es>
-# $FreeBSD: head/multimedia/aegisub/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/aegisub/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	aegisub
 PORTVERSION=	3.2.2
-PORTREVISION=	34
+PORTREVISION=	35
 CATEGORIES=	multimedia
 MASTER_SITES=	http://ftp.aegisub.org/pub/archives/releases/source/ \
 		ftp://ftp.aegisub.org/pub/archives/releases/source/ \
@@ -54,7 +54,7 @@ FFMPEG_LIB_DEPENDS=	libffms2.so:multimedia/ffms2
 FFMPEG_CONFIGURE_OFF=	--without-ffms
 FFTW_LIB_DEPENDS=	libfftw3.so:math/fftw3
 FFTW_CONFIGURE_OFF=	--without-fftw3
-HUNSPELL_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
+HUNSPELL_LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 HUNSPELL_CONFIGURE_OFF=	--without-hunspell
 OPENAL_USES=		openal
 OPENAL_CONFIGURE_OFF=	--without-openal

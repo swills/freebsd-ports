@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/kalgebra/Makefile 488727 2018-12-30 17:56:59Z tcberner $
+# $FreeBSD: head/math/kalgebra/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kalgebra
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

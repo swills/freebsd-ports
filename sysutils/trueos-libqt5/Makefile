@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/trueos-libqt5/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/trueos-libqt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	trueos-libqt5
 PORTVERSION=	20171003
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	jt@ixsystems.com
@@ -11,7 +12,6 @@ LICENSE=	BSD2CLAUSE
 
 ONLY_FOR_ARCHS=	amd64
 
-WRKSRC_SUBDIR=	src-qt5
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 MAKE_JOBS_UNSAFE=	yes

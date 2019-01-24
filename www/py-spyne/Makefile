@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-spyne/Makefile 489015 2019-01-01 20:37:49Z sunpoet $
+# $FreeBSD: head/www/py-spyne/Makefile 490752 2019-01-19 20:41:57Z sunpoet $
 
 PORTNAME=	spyne
-PORTVERSION=	2.12.15
+PORTVERSION=	2.12.16
 CATEGORIES=	www devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

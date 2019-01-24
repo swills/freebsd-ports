@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/rubygem-cld3/Makefile 487243 2018-12-11 17:03:52Z linimon $
+# $FreeBSD: head/textproc/rubygem-cld3/Makefile 490034 2019-01-12 09:19:22Z sunpoet $
 
 PORTNAME=	cld3
 DISTVERSION=	3.2.2
+PORTREVISION=	1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -27,6 +28,7 @@ do-install:
 	${FIND} ${STAGEDIR}${PREFIX}/${GEMS_BASE_DIR} -type f \
 		\( -name mkmf.log -or -name gem_make.out \) -delete
 	${RM} -r ${STAGEDIR}${PREFIX}/${CACHE_DIR} 2> /dev/null || ${TRUE}
+	${RMDIR} ${STAGEDIR}${PREFIX}/${DOC_DIR} 2> /dev/null || ${TRUE}
 	${RMDIR} ${STAGEDIR}${PREFIX}/${EXT_DIR} 2> /dev/null || ${TRUE}
 
 .include <bsd.port.mk>

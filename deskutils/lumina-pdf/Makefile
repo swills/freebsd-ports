@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/lumina-pdf/Makefile 487970 2018-12-21 09:30:11Z amdmi3 $
+# $FreeBSD: head/deskutils/lumina-pdf/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-pdf
 PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com

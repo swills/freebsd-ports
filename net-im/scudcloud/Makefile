@@ -1,9 +1,10 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net-im/scudcloud/Makefile 463117 2018-02-27 12:24:42Z amdmi3 $
+# $FreeBSD: head/net-im/scudcloud/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	scudcloud
 PORTVERSION=	1.65
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	nivit@FreeBSD.org

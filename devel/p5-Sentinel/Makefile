@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sentinel/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Sentinel/Makefile 490409 2019-01-15 21:18:48Z sunpoet $
 
 PORTNAME=	Sentinel
-PORTVERSION=	0.05
-PORTREVISION=	2
+PORTVERSION=	0.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PEVANS
@@ -18,8 +17,8 @@ LICENSE_COMB=	dual
 TEST_DEPENDS=	p5-Test-Pod>=1:devel/p5-Test-Pod \
 		p5-Test-Refcount>=0:devel/p5-Test-Refcount
 
-USE_PERL5=	modbuild
 USES=		perl5
+USE_PERL5=	modbuild
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Sentinel/Sentinel.so

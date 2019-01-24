@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/basic256/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/lang/basic256/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	basic256
 PORTVERSION=	1.1.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	SF/kidbasic/${PORTNAME}
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig

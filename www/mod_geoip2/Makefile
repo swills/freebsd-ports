@@ -1,5 +1,5 @@
 # Created by: Jukka A. Ukkonen <jau@iki.fi>
-# $FreeBSD: head/www/mod_geoip2/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/www/mod_geoip2/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	mod_geoip2
 PORTVERSION=	1.2.10
@@ -12,6 +12,9 @@ LICENSE=	APACHE20
 
 BUILD_DEPENDS=	GeoIP>=1.4.4:net/GeoIP
 RUN_DEPENDS=	GeoIP>=1.4.4:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	maxmind

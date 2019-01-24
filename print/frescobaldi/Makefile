@@ -1,9 +1,10 @@
 # Created by: martin.dieringer@gmx.de
-# $FreeBSD: head/print/frescobaldi/Makefile 488566 2018-12-27 20:37:29Z tcberner $
+# $FreeBSD: head/print/frescobaldi/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	frescobaldi
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	print kde
 
 MAINTAINER=	m.ne@gmx.net

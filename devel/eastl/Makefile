@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/eastl/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/eastl/Makefile 490830 2019-01-21 08:00:43Z yuri $
 
 PORTNAME=	eastl
-DISTVERSION=	3.12.07
-PORTREVISION=	1
+DISTVERSION=	3.12.08
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: mi
-# $FreeBSD: head/graphics/qtawesome/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/graphics/qtawesome/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtawesome
 PORTVERSION=	20150319
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics devel
 
 MAINTAINER=	mi@aldan.algebra.com

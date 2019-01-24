@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/kdeconnect-kde/Makefile 489332 2019-01-05 13:16:05Z tcberner $
+# $FreeBSD: head/deskutils/kdeconnect-kde/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdeconnect-kde
 DISTVERSION=	1.3.3
+PORTREVISION=	1
 CATEGORIES=	deskutils kde
 MASTER_SITES=	KDE/stable/kdeconnect/${DISTVERSION}/src/
 DIST_SUBDIR=	KDE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/krdc/Makefile 488345 2018-12-25 21:26:12Z adridg $
+# $FreeBSD: head/net/krdc/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	krdc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

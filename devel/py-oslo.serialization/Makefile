@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-oslo.serialization/Makefile 473237 2018-06-24 20:17:35Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.serialization/Makefile 490417 2019-01-15 21:19:32Z sunpoet $
 
 PORTNAME=	oslo.serialization
-PORTVERSION=	2.27.0
+PORTVERSION=	2.28.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,8 +18,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.5.2:devel/py-msgpack@${PY_FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}pytz>=2013.6:devel/py-pytz@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

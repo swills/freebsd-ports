@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-docker-pycreds/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-docker-pycreds/Makefile 489921 2019-01-10 21:47:21Z zi $
 
 PORTNAME=	docker-pycreds
-PORTVERSION=	0.2.1
+PORTVERSION=	0.4.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

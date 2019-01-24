@@ -1,5 +1,5 @@
 # Created by: jasone
-# $FreeBSD: head/devel/libedit/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/devel/libedit/Makefile 490853 2019-01-21 11:58:40Z bapt $
 
 PORTNAME=	libedit
 PORTVERSION=	${EDITVERSION}.${EDITDATE}
@@ -16,7 +16,7 @@ LICENSE=	BSD2CLAUSE
 
 USES=		libtool ncurses pathfix
 EDITVERSION=	3.1
-EDITDATE=	20170329
+EDITDATE=	20181209
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

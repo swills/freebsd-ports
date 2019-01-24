@@ -1,19 +1,20 @@
-# $FreeBSD: head/misc/rubygem-dotenv/Makefile 475792 2018-07-29 19:21:50Z sunpoet $
+# $FreeBSD: head/misc/rubygem-dotenv/Makefile 489916 2019-01-10 21:22:50Z sunpoet $
 
 PORTNAME=	dotenv
-PORTVERSION=	2.5.0
+PORTVERSION=	2.6.0
 CATEGORIES=	misc rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	Loads environment variables from `.env`
+COMMENT=	Loads environment variables from .env
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/dotenv
 

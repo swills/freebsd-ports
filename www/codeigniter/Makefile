@@ -1,11 +1,11 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/codeigniter/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/codeigniter/Makefile 490808 2019-01-20 20:49:55Z sunpoet $
 
 PORTNAME=	codeigniter
 PORTVERSION=	3.1.6
 CATEGORIES=	www
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Framework for developing PHP web applications
 
 LICENSE=	MIT

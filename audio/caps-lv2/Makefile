@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/caps-lv2/Makefile 487243 2018-12-11 17:03:52Z linimon $
+# $FreeBSD: head/audio/caps-lv2/Makefile 490351 2019-01-15 07:49:07Z yuri $
 
 PORTNAME=	caps-lv2
 PORTVERSION=	g20170626
@@ -25,6 +25,11 @@ BUILD_DEPENDS+=	clang${LLVM_VER}:devel/llvm${LLVM_VER}
 CPP=		clang-cpp${LLVM_VER}
 CC=		clang${LLVM_VER}
 CXX=		clang++${LLVM_VER}
+
+.if exists(/usr/lib/libstdc++.so)
+CXXFLAGS+=	-stdlib=libstdc++
+LDFLAGS+=	-stdlib=libstdc++
+.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|__APPLE__|__FreeBSD__|" \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/ompl/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/misc/ompl/Makefile 490107 2019-01-13 02:31:41Z linimon $
 
 PORTNAME=	ompl
 DISTVERSION=	1.4.1
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		cmake eigen:3 pkgconfig zip
+USES=		cmake compiler:c++11-lang eigen:3 pkgconfig zip
 USE_LDCONFIG=	yes
 
 CMAKE_OFF=	OMPL_REGISTRATION OMPL_BUILD_TESTS OMPL_BUILD_DEMOS

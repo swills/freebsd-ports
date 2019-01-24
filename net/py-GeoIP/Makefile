@@ -1,5 +1,5 @@
 # Created by: Stefan Walter <sw@gegenunendlich.de>
-# $FreeBSD: head/net/py-GeoIP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-GeoIP/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	GeoIP
 PORTVERSION=	1.3.2
@@ -14,6 +14,9 @@ COMMENT=	Mapping of IP addresses/hostnames to country names in Python
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 OPTIONS_DEFINE=	EXAMPLES
 

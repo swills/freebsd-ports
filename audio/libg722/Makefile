@@ -1,10 +1,10 @@
 # Created by: sobomax
-# $FreeBSD: head/audio/libg722/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/audio/libg722/Makefile 490561 2019-01-17 13:48:46Z tobik $
 
 PORTNAME=	libg722
 DISTVERSIONPREFIX=	v_
 DISTVERSION=	1_0_2
-#PORTREVISION=	1
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	ports@sippysoft.com
@@ -27,7 +27,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/g722_decoder.h ${STAGEDIR}${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/g722_encoder.h ${STAGEDIR}${PREFIX}/include
 	${INSTALL_DATA} ${WRKDIR}/libg722.a ${STAGEDIR}${PREFIX}/lib
-	${INSTALL_PROGRAM} ${WRKDIR}/libg722.so.0 ${STAGEDIR}${PREFIX}/lib
+	${INSTALL_LIB} ${WRKDIR}/libg722.so.0 ${STAGEDIR}${PREFIX}/lib
 	${LN} -sf libg722.so.0 ${STAGEDIR}${PREFIX}/lib/libg722.so
 
 .include <bsd.port.mk>

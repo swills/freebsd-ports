@@ -1,10 +1,11 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/deskutils/basket/Makefile 488132 2018-12-22 21:07:55Z tcberner $
+# $FreeBSD: head/deskutils/basket/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	basket
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.49a-46
 DISTVERSIONSUFFIX=	-g60e38c6
+PORTREVISION=	1
 CATEGORIES=	deskutils kde
 
 MAINTAINER=	ports@FreeBSD.org

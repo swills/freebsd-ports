@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/print/scribus/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/print/scribus/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	scribus
 PORTVERSION=	1.4.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	print editors
 MASTER_SITES=	SF \
 		http://www.scribus.net/downloads/${PORTVERSION}/
@@ -26,7 +26,7 @@ LIB_DEPENDS=	liblcms.so:graphics/lcms \
 		libfreetype.so:print/freetype2 \
 		libpodofo.so:graphics/podofo \
 		libboost_thread.so:devel/boost-libs \
-		libhunspell-1.6.so:textproc/hunspell \
+		libhunspell-1.7.so:textproc/hunspell \
 		libcairo.so:graphics/cairo \
 		libhyphen.so:textproc/hyphen \
 		libfontconfig.so:x11-fonts/fontconfig

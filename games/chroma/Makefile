@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/chroma/Makefile 422278 2016-09-16 22:49:33Z amdmi3 $
+# $FreeBSD: head/games/chroma/Makefile 490992 2019-01-22 23:46:12Z amdmi3 $
 
 PORTNAME=	chroma
-PORTVERSION=	1.15
+PORTVERSION=	1.16
 CATEGORIES=	games
 MASTER_SITES=	http://www.level7.org.uk/chroma/download/ \
 		http://mirror.amdmi3.ru/distfiles/

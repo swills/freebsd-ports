@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/saaghar/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/misc/saaghar/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	saaghar
 PORTVERSION=	2.5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	SF/saaghar/Source%20Code/:saaghar \
 		SF/ganjoor/s3db:ganjoor

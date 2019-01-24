@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/step/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/science/step/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	step
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}

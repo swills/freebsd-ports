@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5-uiplugin/Makefile 488361 2018-12-26 08:39:24Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-uiplugin/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	uiplugin
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits devel
 PKGNAMEPREFIX=	qt5-
 

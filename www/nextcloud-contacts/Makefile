@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-contacts/Makefile 489089 2019-01-02 16:34:53Z brnrd $
+# $FreeBSD: head/www/nextcloud-contacts/Makefile 490870 2019-01-21 17:13:59Z brnrd $
 
 PORTNAME=	contacts
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/

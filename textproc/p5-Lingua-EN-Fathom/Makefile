@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Fathom/Makefile 483720 2018-11-01 19:15:28Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Fathom/Makefile 490516 2019-01-16 20:11:22Z sunpoet $
 
 PORTNAME=	Lingua-EN-Fathom
-PORTVERSION=	1.19
+PORTVERSION=	1.22
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,9 +14,12 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	p5-Lingua-EN-Syllable>=0:textproc/p5-Lingua-EN-Syllable
+RUN_DEPENDS=	p5-Lingua-EN-Sentence>=0.28:textproc/p5-Lingua-EN-Sentence \
+		p5-Lingua-EN-Syllable>=0:textproc/p5-Lingua-EN-Syllable
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

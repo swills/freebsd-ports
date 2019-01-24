@@ -1,5 +1,5 @@
 # Created by: Patrice Clement <monsieurp@gentoo.org>
-# $FreeBSD: head/sysutils/hstr/Makefile 485524 2018-11-21 17:17:06Z fernape $
+# $FreeBSD: head/sysutils/hstr/Makefile 490144 2019-01-13 15:23:01Z tobik $
 
 PORTNAME=	hstr
 DISTVERSION=	2.0
@@ -11,12 +11,9 @@ COMMENT=	Bash and Zsh shell history suggest box
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	pkg-config:devel/pkgconf
-
-USES=	autoreconf ncurses readline
+USES=		autoreconf ncurses pkgconfig readline
 USE_GITHUB=	yes
 GH_ACCOUNT=	dvorka
-GH_PROJECT=	hstr
 
 GNU_CONFIGURE=	yes
 

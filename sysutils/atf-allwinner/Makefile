@@ -1,10 +1,9 @@
-# $FreeBSD: head/sysutils/atf-allwinner/Makefile 487437 2018-12-14 14:13:11Z manu $
+# $FreeBSD: head/sysutils/atf-allwinner/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	atf-allwinner
 PORTVERSION=	2.0.20181123
 PORTREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	GH
 
 MAINTAINER=	manu@FreeBSD.org
 COMMENT=	Arm Trusted Framework for Allwinner SoCs

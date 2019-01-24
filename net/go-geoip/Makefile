@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/go-geoip/Makefile 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/net/go-geoip/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	geoip
 PORTVERSION=	0.0.0.20131016
@@ -12,6 +12,9 @@ COMMENT=	Go library to wrap the libgeoip C library
 LICENSE=	MIT
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 USES=		compiler go
 USE_GITHUB=	yes

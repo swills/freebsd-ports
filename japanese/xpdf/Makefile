@@ -1,9 +1,9 @@
 # Created by: MITA Yoshio <mita@FreeBSD.org>
-# $FreeBSD: head/japanese/xpdf/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/xpdf/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	xpdf
 PORTVERSION=	3.03
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
 PKGNAMESUFFIX=	-jafont

@@ -1,8 +1,7 @@
-# $FreeBSD: head/astro/siril/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/astro/siril/Makefile 490828 2019-01-21 07:54:23Z yuri $
 
 PORTNAME=	siril
-DISTVERSION=	0.9.9
-PORTREVISION=	3
+DISTVERSION=	0.9.10
 CATEGORIES=	astro graphics
 MASTER_SITES=	https://free-astro.org/download/
 
@@ -28,10 +27,12 @@ LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg \
 		libtiff.so:graphics/tiff
 LIB_DEPENDS+=	libopencv_photo.so:graphics/opencv # for some reason, configure fails without opencv, but executable only links to opencv-core
 
-USES=		autoreconf desktop-file-utils gettext gmake localbase pkgconfig jpeg shared-mime-info tar:bz2
+USES=		autoreconf desktop-file-utils gettext gmake gnome localbase pkgconfig jpeg shared-mime-info tar:bz2
 GNU_CONFIGURE=	yes
 USE_GNOME=	atk cairo gdkpixbuf2 gtk30 intltool pango
 INSTALLS_ICONS=	yes
+
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 OPTIONS_DEFINE=			OPENMP
 OPTIONS_DEFAULT=		OPENMP

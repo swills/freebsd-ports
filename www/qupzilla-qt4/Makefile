@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/qupzilla-qt4/Makefile 488877 2019-01-01 12:51:45Z tcberner $
+# $FreeBSD: head/www/qupzilla-qt4/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	qupzilla
 PORTVERSION=	1.8.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/QupZilla/${PORTNAME}/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	-qt4
@@ -16,7 +16,7 @@ LICENSE=	GPLv3
 DEPRECATED=		Qt4 has been EOL since december 2015
 EXPIRATION_DATE=	2019-03-15
 
-LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
+LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 
 CONFLICTS_INSTALL=	${PORTNAME}-qt5*
 

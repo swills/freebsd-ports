@@ -1,10 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/archivers/libdeflate/Makefile 488366 2018-12-26 09:34:28Z danfe $
+# $FreeBSD: head/archivers/libdeflate/Makefile 490540 2019-01-17 10:21:06Z danfe $
 
 PORTNAME=	libdeflate
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	archivers
 
 MAINTAINER=	danfe@FreeBSD.org

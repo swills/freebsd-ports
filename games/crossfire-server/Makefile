@@ -1,5 +1,5 @@
 # Created by: Jasper Jongmans <j.jongmans@aprogas.net>
-# $FreeBSD: head/games/crossfire-server/Makefile 456181 2017-12-12 18:35:32Z antoine $
+# $FreeBSD: head/games/crossfire-server/Makefile 489984 2019-01-11 16:23:18Z tobik $
 
 PORTNAME=	crossfire
 PORTVERSION=	1.71.0
@@ -49,7 +49,6 @@ CFLOGGER_DESC=		SQLite logging plugin
 CFLOGGER_USES=		sqlite:3
 CFLOGGER_CONFIGURE_ON=	--enable-logger=yes
 CFNEWSPAPER_DESC=	Newspaper plugin
-CFLOGGER_USES=		sqlite:3
 CFNEWSPAPER_CONFIGURE_ON=	--enable-newspaper=yes
 CFRHG_DESC=		Random house genetor plugin
 CFRHG_CONFIGURE_ON=	--enable-cfrhg=yes

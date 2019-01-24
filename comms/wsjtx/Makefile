@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/wsjtx/Makefile 488507 2018-12-27 04:46:45Z shurd $
+# $FreeBSD: head/comms/wsjtx/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	wsjtx
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/wsjt/${PORTNAME}-${PORTVERSION}${DISTVERSIONSUFFIX}
 

@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Term-Menus/Makefile 482760 2018-10-22 17:46:54Z culot $
+# $FreeBSD: head/devel/p5-Term-Menus/Makefile 490376 2019-01-15 14:28:56Z culot $
 
 PORTNAME=	Term-Menus
-PORTVERSION=	3.016
+PORTVERSION=	3.019
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:REEDFISH

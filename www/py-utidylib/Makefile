@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/www/py-utidylib/Makefile 442919 2017-06-08 13:30:18Z rene $
+# $FreeBSD: head/www/py-utidylib/Makefile 490724 2019-01-19 16:48:20Z rene $
 
 PORTNAME=	utidylib
 PORTVERSION=	0.2
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	rene@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python interface to tidy-lib
 
 LICENSE=	MIT

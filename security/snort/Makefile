@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/snort/Makefile 489611 2019-01-07 19:40:53Z zi $
+# $FreeBSD: head/security/snort/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	snort
 PORTVERSION=	2.9.12
@@ -84,6 +84,11 @@ APPID_CONFIGURE_ENV+=	luajit_CFLAGS="-I${LOCALBASE}/include/luajit-2.0" \
 			luajit_LIBS="-L${LOCALBASE}/lib -lluajit-5.1"
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MBARNYARD}
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
+.endif
 
 CONFIG_FILES=	classification.config gen-msg.map reference.config \
 		snort.conf threshold.conf unicode.map file_magic.conf

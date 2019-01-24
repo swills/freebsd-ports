@@ -1,9 +1,9 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/net/GeoIP/Makefile 489642 2019-01-08 04:43:45Z adamw $
+# $FreeBSD: head/net/GeoIP/Makefile 490212 2019-01-13 21:00:50Z adamw $
 
 PORTNAME=	GeoIP
 PORTVERSION=	1.6.12
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	net geography
 MASTER_SITES=	https://github.com/maxmind/geoip-api-c/releases/download/v${PORTVERSION}/
 
@@ -14,8 +14,8 @@ LICENSE=	GPLv2
 
 USES=		libtool pathfix
 
-DEPRECATED=	Legacy databases no longer available. Switch to GeoIP2 instead
-EXPIRATION_DATE=2019-02-01
+DEPRECATED=	Legacy databases no longer available. Switch to net/libmaxminddb instead
+EXPIRATION_DATE=2019-02-15
 
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

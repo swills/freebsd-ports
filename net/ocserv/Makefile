@@ -1,9 +1,8 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/net/ocserv/Makefile 483447 2018-10-30 04:45:20Z yuri $
+# $FreeBSD: head/net/ocserv/Makefile 489983 2019-01-11 16:20:18Z cpm $
 
 PORTNAME=	ocserv
-PORTVERSION=	0.12.1
-PORTREVISION=	1
+PORTVERSION=	0.12.2
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.infradead.org/pub/ocserv/ \
 		LOCAL/cpm
@@ -29,9 +28,9 @@ LIB_DEPENDS=	liblz4.so:archivers/liblz4 \
 
 USES=		autoreconf cpe gperf libtool localbase ncurses \
 		pathfix pkgconfig readline tar:xz
+
 CPE_VENDOR=	infradead
 GNU_CONFIGURE=	yes
-
 CONFIGURE_ARGS=	--without-geoip \
 		--without-http-parser
 

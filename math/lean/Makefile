@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/lean/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/lean/Makefile 491029 2019-01-23 09:59:54Z yuri $
 
 PORTNAME=	lean
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.4.1
+DISTVERSION=	3.4.2
 CATEGORIES=	math
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -21,6 +21,6 @@ USE_LDCONFIG=	yes
 
 WRKSRC_SUBDIR=	src
 
-PORTSCOUT=	limit:.*[0-9]*\.[0-9]*$$
+PORTSCOUT=	limit:.*[0-9]+\.[0-9]+$$
 
 .include <bsd.port.mk>

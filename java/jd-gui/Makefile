@@ -1,14 +1,12 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/jd-gui/Makefile 434159 2017-02-15 12:28:29Z tobik $
+# $FreeBSD: head/java/jd-gui/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	jd-gui
 PORTVERSION=	1.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	java devel
-MASTER_SITES=	GH:src \
-		https://github.com/java-decompiler/jd-gui/releases/download/v${PORTVERSION}/:jar
-DISTFILES=	${DISTNAME}.tar.gz:src \
-		jd-gui-${PORTVERSION}.jar:jar
+MASTER_SITES=	https://github.com/java-decompiler/jd-gui/releases/download/v${PORTVERSION}/:jar
+DISTFILES=	jd-gui-${PORTVERSION}.jar:jar
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
 
 MAINTAINER=	tobik@FreeBSD.org

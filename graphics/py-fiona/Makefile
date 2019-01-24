@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-fiona/Makefile 477791 2018-08-22 14:38:43Z swills $
+# $FreeBSD: head/graphics/py-fiona/Makefile 490449 2019-01-16 05:19:13Z linimon $
 
 PORTNAME=	Fiona
 DISTVERSION=	1.7.13
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cligj>=0.4:devel/py-cligj@${PY_FLAVOR} \
 		${PY_ENUM34}
 LIB_DEPENDS+=	libgdal.so:graphics/gdal
 
-USES=		python
+USES=		compiler:c++11-lang python
 USE_PYTHON=	autoplist distutils cython
 
 .include <bsd.port.mk>

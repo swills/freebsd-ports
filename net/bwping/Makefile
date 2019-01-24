@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/bwping/Makefile 477565 2018-08-19 10:30:34Z wen $
+# $FreeBSD: head/net/bwping/Makefile 489828 2019-01-09 20:58:19Z tobik $
 
 PORTNAME=	bwping
-PORTVERSION=	1.9
+PORTVERSION=	1.10
 CATEGORIES=	net
 MASTER_SITES=	SF
 
@@ -18,13 +18,8 @@ PLIST_FILES=	sbin/bwping man/man8/bwping.8.gz
 
 OPTIONS_DEFINE=	IPV6
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MIPV6}
-CONFIGURE_ENV+=	ac_cv_ipv6=yes
-PLIST_FILES+=	sbin/bwping6 man/man8/bwping6.8.gz
-.else
-CONFIGURE_ENV+=	ac_cv_ipv6=no
-.endif
+IPV6_CONFIGURE_ENV=	ac_cv_ipv6=yes
+IPV6_CONFIGURE_ENV_OFF=	ac_cv_ipv6=no
+IPV6_PLIST_FILES=	sbin/bwping6 man/man8/bwping6.8.gz
 
 .include <bsd.port.mk>

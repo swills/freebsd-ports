@@ -1,6 +1,7 @@
-# $FreeBSD: head/x11-toolkits/py-qt5-widgets/Makefile 487597 2018-12-16 15:25:40Z tcberner $
+# $FreeBSD: head/x11-toolkits/py-qt5-widgets/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	widgets
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits devel python
 
 MAINTAINER=	kde@FreeBSD.org

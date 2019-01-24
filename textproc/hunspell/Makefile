@@ -1,9 +1,8 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/textproc/hunspell/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/textproc/hunspell/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	hunspell
-PORTVERSION=	1.6.2
-PORTREVISION=	2
+PORTVERSION=	1.7.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 DIST_SUBDIR=	${PORTNAME}

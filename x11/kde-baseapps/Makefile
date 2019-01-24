@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/kde-baseapps/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/x11/kde-baseapps/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kde-baseapps
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde
 
 MAINTAINER=	kde@FreeBSD.org

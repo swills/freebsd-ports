@@ -1,7 +1,7 @@
-# $FreeBSD: head/finance/cointop/Makefile 488824 2018-12-31 19:25:00Z swills $
+# $FreeBSD: head/finance/cointop/Makefile 489716 2019-01-08 15:45:35Z swills $
 
 PORTNAME=	cointop
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	finance
 
 MAINTAINER=	ndowens@yahoo.com

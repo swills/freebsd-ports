@@ -1,11 +1,10 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-jsonfield/Makefile 472346 2018-06-13 22:05:51Z ultima $
+# $FreeBSD: head/www/py-django-jsonfield/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	jsonfield
 PORTVERSION=	2.0.2
 PORTREVISION=	1
 CATEGORIES=	www python
-MASTER_SITES=	GH
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
 
 MAINTAINER=	ultima@FreeBSD.org

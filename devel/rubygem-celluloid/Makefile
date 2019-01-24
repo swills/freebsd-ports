@@ -1,12 +1,12 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-celluloid/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-celluloid/Makefile 489797 2019-01-09 14:52:49Z sunpoet $
 
 PORTNAME=	celluloid
-PORTVERSION=	0.17.3
+PORTVERSION=	0.17.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Build concurrent programs out of concurrent objects
 
 LICENSE=	MIT
@@ -19,8 +19,9 @@ RUN_DEPENDS=	rubygem-celluloid-essentials>=0:devel/rubygem-celluloid-essentials 
 		rubygem-celluloid-supervision>=0:devel/rubygem-celluloid-supervision \
 		rubygem-timers>=4.1.1:devel/rubygem-timers
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

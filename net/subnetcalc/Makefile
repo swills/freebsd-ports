@@ -1,5 +1,5 @@
 # Created by: Thomas Dreibholz <dreibh@iem.uni-due.de>
-# $FreeBSD: head/net/subnetcalc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/net/subnetcalc/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	subnetcalc
 DISTVERSION=	2.4.9
@@ -13,6 +13,9 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 USES=		cmake
 CMAKE_ARGS=	-DCMAKE_INSTALL_MANDIR:PATH="man"

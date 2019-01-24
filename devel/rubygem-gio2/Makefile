@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-gio2/Makefile 486127 2018-11-28 19:20:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gio2/Makefile 490275 2019-01-14 15:45:19Z sunpoet $
 
 PORTNAME=	gio2
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,8 +10,7 @@ COMMENT=	Ruby binding for gio 2.x
 
 LICENSE=	LGPL21+
 
-RUN_DEPENDS=	rubygem-glib2>=${PORTVERSION}:devel/rubygem-glib2 \
-		rubygem-gobject-introspection>=${PORTVERSION}:devel/rubygem-gobject-introspection
+RUN_DEPENDS=	rubygem-gobject-introspection>=${PORTVERSION}:devel/rubygem-gobject-introspection
 
 USES=		gem
 USE_RUBY=	yes

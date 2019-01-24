@@ -1,9 +1,9 @@
-# $FreeBSD: head/math/zegrapher/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/math/zegrapher/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	ZeGrapher
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math graphics
 
 MAINTAINER=	yuri@FreeBSD.org

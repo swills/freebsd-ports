@@ -1,9 +1,9 @@
 # Created by: Diego Depaoli <trebestie@gmail.com> and Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/multimedia/smplayer/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/smplayer/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	smplayer
 DISTVERSION=	18.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia audio kde
 MASTER_SITES=	SF/${PORTNAME}/SMPlayer/${PORTVERSION}
 

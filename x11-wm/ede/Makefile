@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/x11-wm/ede/Makefile 484044 2018-11-04 13:49:27Z antoine $
+# $FreeBSD: head/x11-wm/ede/Makefile 489807 2019-01-09 15:21:37Z amdmi3 $
 
 PORTNAME=	ede
 PORTVERSION=	2.1
@@ -13,8 +13,10 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Equinox Desktop Environment
 
-LICENSE=	GPLv2 LGPL20
+LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
+LICENSE_FILE_LGPL20+ =	${EDELIB_WRKSRC}/COPYING
 
 BROKEN=		fails to build
 
@@ -25,8 +27,8 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libstartup-notification-1.so:x11/startup-notification \
 		libfltk.so:x11-toolkits/fltk
 
-USES=		fam gettext iconv:translit pathfix pkgconfig python:2.7 \
-		shared-mime-info shebangfix
+USES=		fam gettext iconv:translit localbase:ldflags pathfix \
+		pkgconfig python:2.7 shared-mime-info shebangfix
 SHEBANG_FILES=	doc/asciidoc/asciidoc.py
 USE_XORG=	xcomposite xft xinerama xkbfile xpm xrandr
 USE_CSTD=	gnu89
@@ -37,9 +39,6 @@ CONFIGURE_ARGS=	--with-edelib-path=${EDELIB_WRKSRC} \
 		--with-fltk-path=${LOCALBASE}
 INSTALLS_ICONS=	yes
 MAKE_JOBS_UNSAFE=	yes
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 CONFLICTS_INSTALL=	pekwm-[0-9]*
 

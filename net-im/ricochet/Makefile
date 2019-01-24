@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ricochet/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-im/ricochet/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	ricochet
 PORTVERSION=	1.1.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	net-im net-p2p
 
 MAINTAINER=	yuri@FreeBSD.org

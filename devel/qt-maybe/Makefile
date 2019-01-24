@@ -1,8 +1,9 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/qt-maybe/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/devel/qt-maybe/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qt-maybe
 PORTVERSION=	0.0.20151227
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	kde@FreeBSD.org

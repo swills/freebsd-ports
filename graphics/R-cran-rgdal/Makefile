@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-rgdal/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/R-cran-rgdal/Makefile 489995 2019-01-11 20:16:50Z sunpoet $
 
 PORTNAME=	rgdal
 DISTVERSION=	1.3-6
@@ -18,6 +18,6 @@ CRAN_DEPENDS=	R-cran-sp>=1.1.0:math/R-cran-sp
 BUILD_DEPENDS=	${CRAN_DEPENDS}
 RUN_DEPENDS=	${CRAN_DEPENDS}
 
-USES=	cran:auto-plist,compiles pkgconfig
+USES=		compiler:c++11-lang cran:auto-plist,compiles pkgconfig
 
 .include <bsd.port.mk>

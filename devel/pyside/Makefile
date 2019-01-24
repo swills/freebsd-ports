@@ -1,10 +1,10 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/pyside/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/pyside/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	pyside
 PORTVERSION=	1.2.2
 DISTVERSIONPREFIX=	qt4.8+
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	https://download.qt-project.org/official_releases/pyside/
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}

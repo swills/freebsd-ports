@@ -1,10 +1,9 @@
-# $FreeBSD: head/net/h323plus/Makefile 471130 2018-05-30 11:18:44Z tobik $
+# $FreeBSD: head/net/h323plus/Makefile 490248 2019-01-14 12:38:19Z swills $
 
 PORTNAME=	h323plus
-DISTVERSIONPREFIX=	v
-DISTVERSION=	1_26_8
+DISTVERSIONPREFIX=      v
+DISTVERSION=    1_27_0
 CATEGORIES=	net multimedia
-MASTER_SITES=	http://www.h323plus.org/source/download/
 
 MAINTAINER=	koue@chaosophia.net
 COMMENT=	H323 Video Conferencing library
@@ -14,13 +13,16 @@ LICENSE_COMB=	multi
 
 LIB_DEPENDS=	libpt.so:devel/ptlib
 
+USE_GITHUB=	yes
+GH_ACCOUNT=	willamowius
+GH_PROJECT=	h323plus
+
 USES=		gmake ssl
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
 # ptlib-config --libs returns bogus dependencies on expat and SDL-1.2
 LDFLAGS+=	-Wl,--as-needed
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 MAKE_JOBS_UNSAFE=yes
 

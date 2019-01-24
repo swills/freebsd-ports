@@ -1,6 +1,6 @@
-# $FreeBSD: head/net-mgmt/pnp-icinga2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-mgmt/pnp-icinga2/Makefile 490480 2019-01-16 13:37:50Z lme $
 
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-icinga2
 
 MAINTAINER=	lme@FreeBSD.org

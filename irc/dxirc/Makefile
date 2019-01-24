@@ -1,7 +1,8 @@
-# $FreeBSD: head/irc/dxirc/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/irc/dxirc/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	dxirc
 PORTVERSION=	1.30.0
+PORTREVISION=	1
 CATEGORIES=	irc ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 

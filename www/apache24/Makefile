@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/apache24/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/www/apache24/Makefile 491041 2019-01-23 14:40:53Z joneum $
 
 PORTNAME=	apache24
-PORTVERSION=	2.4.37
+PORTVERSION=	2.4.38
 CATEGORIES=	www ipv6
 MASTER_SITES=	APACHE_HTTPD
 DISTNAME=	httpd-${PORTVERSION}

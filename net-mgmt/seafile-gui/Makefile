@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-mgmt/seafile-gui/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-mgmt/seafile-gui/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	seafile-gui
 DISTVERSIONPREFIX=	v
 DISTVERSION=	6.1.7
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-mgmt devel
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

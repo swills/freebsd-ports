@@ -1,10 +1,9 @@
 # Created by: Miroslav Lachman
-# $FreeBSD: head/mail/ratelimit-policyd/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/mail/ratelimit-policyd/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	ratelimit-policyd
 PORTVERSION=	1.0.1
 CATEGORIES=	mail
-MASTER_SITES=	GH
 
 MAINTAINER=	000.fbsd@quip.cz
 COMMENT=	Sender rate limit policy daemon for Postfix

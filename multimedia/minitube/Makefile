@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/minitube/Makefile 484140 2018-11-04 19:00:53Z tcberner $
+# $FreeBSD: head/multimedia/minitube/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	minitube
 DISTVERSION=	2.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia www
 
 MAINTAINER=	ports@FreeBSD.org

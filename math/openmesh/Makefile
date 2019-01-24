@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/openmesh/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/openmesh/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	openmesh
 DISTVERSION=	7.1
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.openmesh.org/media/Releases/${DISTVERSION}/
 DISTNAME=	OpenMesh-${DISTVERSION}

@@ -1,8 +1,8 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/metasploit/Makefile 488024 2018-12-21 20:32:04Z antoine $
+# $FreeBSD: head/security/metasploit/Makefile 490049 2019-01-12 11:49:32Z antoine $
 
 PORTNAME=	metasploit
-PORTVERSION=	4.17.32
+PORTVERSION=	4.17.35
 CATEGORIES=	security
 
 MAINTAINER=	tanawts@gmail.com
@@ -28,8 +28,8 @@ RUN_DEPENDS=	nmap:security/nmap \
 		rubygem-metasploit-credential>=0:security/rubygem-metasploit-credential \
 		rubygem-metasploit_data_models>=0:security/rubygem-metasploit_data_models \
 		rubygem-metasploit-model>=0:security/rubygem-metasploit-model \
-		rubygem-metasploit-payloads>=1.3.56:security/rubygem-metasploit-payloads \
-		rubygem-metasploit_payloads-mettle>=0.5.0:security/rubygem-metasploit_payloads-mettle \
+		rubygem-metasploit-payloads>=1.3.58:security/rubygem-metasploit-payloads \
+		rubygem-metasploit_payloads-mettle>=0.5.1:security/rubygem-metasploit_payloads-mettle \
 		rubygem-msgpack1>=0:devel/rubygem-msgpack1 \
 		rubygem-network_interface>=0:net/rubygem-network_interface \
 		rubygem-rubyntlm>=0:net/rubygem-rubyntlm \

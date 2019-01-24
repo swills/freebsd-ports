@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/python.mk 487739 2018-12-18 09:19:03Z rene $
+# $FreeBSD: head/Mk/Uses/python.mk 490485 2019-01-16 15:13:51Z mat $
 #
 # Provide support for Python related ports. This includes detecting Python
 # interpreters, ports providing package and modules for python as well as
@@ -40,13 +40,10 @@
 # dependency.
 # env or PYTHON_NO_DEPENDS can be set to not add any dependencies.
 #
-# Variables, which can be set by a user:
+# Exported variables:
 #
 # PYTHON_VERSION	- The chosen Python interpreter including the version,
-#			  e.g. python2.7, python3.3, etc. This allows the user
-#			  to override the currently chosen default version and
-#			  to install the port for a specific Python version.
-#			  It must not be set by a port.
+#			  e.g. python2.7, python3.3, etc.
 #
 # Variables, which can be set by the port:
 #

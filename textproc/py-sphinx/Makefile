@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/textproc/py-sphinx/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-sphinx/Makefile 489666 2019-01-08 10:33:24Z antoine $
 
 PORTNAME=	sphinx
 PORTVERSION=	1.6.5
@@ -11,7 +11,10 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Sphinx-${PORTVERSION}
 DIST_SUBDIR=	python
 
-MAINTAINER=	araujo@FreeBSD.org
+# NOTE: before committing to this port, contact portmgr to arrange for an
+# experimental ports run.  Untested commits may be backed out at portmgr's
+# discretion.
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python documentation generator
 
 LICENSE=	BSD2CLAUSE

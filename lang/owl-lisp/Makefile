@@ -1,12 +1,12 @@
 # Created by: rene@FreeBSD.org
-# $FreeBSD: head/lang/owl-lisp/Makefile 455761 2017-12-07 21:43:52Z rene $
+# $FreeBSD: head/lang/owl-lisp/Makefile 490729 2019-01-19 17:55:45Z rene $
 
 PORTNAME=	owl-lisp
 PORTVERSION=	0.1.14
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 
-MAINTAINER=	rene@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Functional dialect of Scheme
 
 LICENSE=	MIT

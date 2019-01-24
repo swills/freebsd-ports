@@ -1,10 +1,10 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/astro/gpsbabel/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/astro/gpsbabel/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	gpsbabel
 DISTVERSIONPREFIX=	${PORTNAME}_
 DISTVERSION=	1_5_4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	astro geography
 
 MAINTAINER=	dev2@heesakkers.info

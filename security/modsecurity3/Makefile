@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/modsecurity3/Makefile 487396 2018-12-14 00:37:36Z osa $
+# $FreeBSD: head/security/modsecurity3/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	modsecurity
 DISTVERSIONPREFIX=	v
@@ -13,6 +13,9 @@ COMMENT=	Intrusion detection and prevention engine
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpcre.so:devel/pcre \

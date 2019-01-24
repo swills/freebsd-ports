@@ -1,9 +1,8 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/net/bird/Makefile 484857 2018-11-13 05:36:53Z olivier $
+# $FreeBSD: head/net/bird/Makefile 489702 2019-01-08 15:20:10Z olivier $
 
 PORTNAME=	bird
-PORTVERSION=	1.6.4
-PORTREVISION=	2
+PORTVERSION=	1.6.5
 CATEGORIES=	net
 MASTER_SITES=	ftp://bird.network.cz/pub/bird/
 

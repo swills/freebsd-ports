@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/pinentry-qt5/Makefile 415872 2016-05-26 03:24:23Z pi $
+# $FreeBSD: head/security/pinentry-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	pinentry
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	Qt 5 version of the GnuPG password dialog
 

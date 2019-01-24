@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/font-mona-ipa/Makefile 397899 2015-09-25 22:02:16Z hrs $
+# $FreeBSD: head/japanese/font-mona-ipa/Makefile 489689 2019-01-08 13:47:08Z tobik $
 
 PORTNAME=	mona-ipa
 PORTVERSION=	1.0.8
@@ -22,7 +22,6 @@ DATADIR=	${PREFIX}/share/font-${PORTNAME}
 PORTDOCS=	COPYING.font.ja README_ipamona.txt
 
 OPTIONS_DEFINE=	DOCS
-FONTNAME=	TTF
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}

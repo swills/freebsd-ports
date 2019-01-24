@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/kf5-extra-cmake-modules/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/kf5-extra-cmake-modules/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	extra-cmake-modules
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

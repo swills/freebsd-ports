@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-qt5-core/Makefile 489087 2019-01-02 16:00:00Z adridg $
+# $FreeBSD: head/devel/py-qt5-core/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	core
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org

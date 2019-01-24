@@ -1,8 +1,9 @@
 # Created by: Allan Jude <allanjude@freebsd.org>
-# $FreeBSD: head/dns/gdnsd2/Makefile 486723 2018-12-05 22:37:07Z zi $
+# $FreeBSD: head/dns/gdnsd2/Makefile 490503 2019-01-16 19:27:36Z zi $
 
 PORTNAME=	gdnsd
-PORTVERSION=	2.4.0
+PORTVERSION=	2.4.1
+PORTREVISION=	2
 CATEGORIES=	dns
 MASTER_SITES=	https://github.com/gdnsd/gdnsd/releases/download/v${PORTVERSION}/ \
 		ZI \
@@ -33,15 +34,8 @@ USE_RC_SUBR=	gdnsd
 USERS?=		gdnsd
 GROUPS?=	gdnsd
 
-OPTIONS_DEFINE=	DOCS URCU
+OPTIONS_DEFINE=	DOCS MAXMINDDB URCU
 OPTIONS_DEFAULT=MAXMINDDB
-
-OPTIONS_RADIO=		GEOLIB
-OPTIONS_RADIO_GEOLIB=	GEOIP MAXMINDDB
-GEOLIB_DESC=		GeoIP backend
-
-GEOIP_DESC=		Enable GeoIP1 Support
-GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 
 MAXMINDDB_DESC=		Enable GeoIP1 + GeoIP2 Support
 MAXMINDDB_LIB_DEPENDS=	libmaxminddb.so:net/libmaxminddb

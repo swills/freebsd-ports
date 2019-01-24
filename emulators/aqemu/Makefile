@@ -1,8 +1,9 @@
-# $FreeBSD: head/emulators/aqemu/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/emulators/aqemu/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	aqemu
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.2
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	ports@FreeBSD.org

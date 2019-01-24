@@ -1,12 +1,9 @@
-# $FreeBSD: head/x11-toolkits/wlroots/Makefile 489559 2019-01-07 06:41:41Z jbeich $
+# $FreeBSD: head/x11-toolkits/wlroots/Makefile 491073 2019-01-24 00:14:46Z jbeich $
 
 PORTNAME=	wlroots
-DISTVERSION=	0.2
-PORTREVISION=	2
+DISTVERSION=	0.2-154
+DISTVERSIONSUFFIX=	-gc41d0130
 CATEGORIES=	x11-toolkits
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	92e39b586c0e.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Modular Wayland compositor library

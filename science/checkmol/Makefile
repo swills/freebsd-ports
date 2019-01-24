@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/science/checkmol/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/science/checkmol/Makefile 490347 2019-01-15 05:43:59Z acm $
 
 PORTNAME=	checkmol
 PORTVERSION=	0.5
@@ -22,6 +22,8 @@ EXTRACT_AFTER_ARGS=	${WRKSRC}
 USES=		fpc
 
 PLIST_FILES=	bin/checkmol bin/matchmol
+
+LLD_UNSAFE=	yes
 
 do-build:
 	(cd ${WRKSRC} && ${LOCALBASE}/bin/fpc ${EXTRACT_ONLY} -S2 -O3)

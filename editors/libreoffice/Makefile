@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/libreoffice/Makefile 488776 2018-12-31 13:03:59Z rene $
+# $FreeBSD: head/editors/libreoffice/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 .include "${.CURDIR}/Makefile.common"
 
-PORTREVISION=	4
+PORTREVISION=	5
 MASTER_SITES=	https://download.documentfoundation.org/libreoffice/src/${PORTVERSION}/ \
 		https://dev-www.libreoffice.org/src/:src \
 		https://dev-www.libreoffice.org/extern/:ext
@@ -60,7 +60,7 @@ LIB_DEPENDS=	libapr-1.so:devel/apr1 \
 		libxmlsec1-nss.so:security/xmlsec1 \
 		libclucene-core.so:textproc/clucene \
 		libexpat.so:textproc/expat2 \
-		libhunspell-1.6.so:textproc/hunspell \
+		libhunspell-1.7.so:textproc/hunspell \
 		libhyphen.so:textproc/hyphen \
 		libabw-0.1.so:textproc/libabw \
 		libe-book-0.1.so:textproc/libe-book \

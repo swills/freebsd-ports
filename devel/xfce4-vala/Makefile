@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau <olivierd@FreeBSD.org>
-# $FreeBSD: head/devel/xfce4-vala/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/devel/xfce4-vala/Makefile 490953 2019-01-22 14:44:38Z madpilot $
 
 PORTNAME=	xfce4-vala
 PORTVERSION=	4.10.3
@@ -15,10 +15,10 @@ LICENSE=	LGPL21
 
 BUILD_DEPENDS=	valac:lang/vala
 
-GNU_CONFIGURE=	yes
-USES=	pkgconfig gmake pathfix xfce tar:bzip2
+USES=		gmake gnome pathfix pkgconfig tar:bzip2 xfce
 USE_XFCE=	panel
 
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-vala-api=0.40
 
 .include <bsd.port.mk>

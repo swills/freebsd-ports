@@ -1,9 +1,8 @@
 # Created by: Peter C. Lai <cowbert@gmail.com>
-# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 490060 2019-01-12 15:20:14Z ehaupt $
 
 PORTNAME=	mk-livestatus
-PORTVERSION=	1.2.8p20
-PORTREVISION=	2
+PORTVERSION=	1.2.8p22
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://mathias-kettner.de/download/
 DIST_SUBDIR=	check_mk

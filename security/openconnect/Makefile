@@ -1,8 +1,8 @@
 # Created by: Damian Gerow <dgerow@afflictions.org>
-# $FreeBSD: head/security/openconnect/Makefile 489284 2019-01-05 00:38:38Z zi $
+# $FreeBSD: head/security/openconnect/Makefile 490507 2019-01-16 20:08:10Z zi $
 
 PORTNAME=	openconnect
-PORTVERSION=	8.00
+PORTVERSION=	8.02
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.infradead.org/pub/openconnect/ \
 		ZI

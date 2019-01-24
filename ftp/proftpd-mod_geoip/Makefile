@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/ftp/proftpd-mod_geoip/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/ftp/proftpd-mod_geoip/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	mod_geoip
 CATEGORIES=	ftp
@@ -11,6 +11,9 @@ COMMENT=	GeoIP ProFTPD module
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 DESCR=		${.CURDIR}/pkg-descr
 

@@ -1,8 +1,8 @@
 # Created by: Jakub Kruszona-Zawadzki <acid@moosefs.com> ; Based on port created by: Chifeng Qu <chifeng@gmail.com>
-# $FreeBSD: head/sysutils/moosefs3-master/Makefile 475223 2018-07-24 03:44:25Z lifanov $
+# $FreeBSD: head/sysutils/moosefs3-master/Makefile 490839 2019-01-21 09:12:16Z pizzamig $
 
 PORTNAME=		moosefs3
-PORTVERSION=		3.0.101
+PORTVERSION=		3.0.103
 CATEGORIES=		sysutils
 MASTER_SITES=		http://ppa.moosefs.com/src/
 PKGNAMESUFFIX?=		-master
@@ -74,7 +74,8 @@ CONFIGURE_ARGS+=	--disable-mfscli
 .endif
 
 .if ${MFS_COMPONENT} == client
-USES=			fuse pkgconfig
+USES=			fuse pkgconfig libtool
+USE_LDCONFIG=		yes
 CONFIGURE_ARGS+=	--enable-mfsmount
 .else
 CONFIGURE_ARGS+=	--disable-mfsmount

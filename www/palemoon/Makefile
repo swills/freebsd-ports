@@ -1,10 +1,10 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 485463 2018-11-20 18:58:12Z jbeich $
+# $FreeBSD: head/www/palemoon/Makefile 490910 2019-01-21 23:03:45Z jbeich $
 
 PORTNAME=	palemoon
 DISTVERSION=	27.9.4
 DISTVERSIONSUFFIX=_Release
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www ipv6
 
 MAINTAINER=	lichray@gmail.com
@@ -29,7 +29,7 @@ GH_PROJECT=	Pale-Moon
 
 USE_GECKO=	gecko
 MOZ_PKGCONFIG_FILES=	# empty
-USE_MOZILLA=	# empty
+USE_MOZILLA=	-webp
 
 PM_ICON=	${PORTNAME}.png
 PM_ICON_SRC=	${PREFIX}/lib/${PORTNAME}/browser/icons/mozicon128.png

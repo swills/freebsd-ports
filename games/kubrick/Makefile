@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/kubrick/Makefile 488723 2018-12-30 17:15:06Z tcberner $
+# $FreeBSD: head/games/kubrick/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kubrick
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

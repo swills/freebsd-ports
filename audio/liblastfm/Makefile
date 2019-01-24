@@ -1,5 +1,5 @@
 # Created by: Matt Tosto <datahead4@gmail.com>
-# $FreeBSD: head/audio/liblastfm/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/liblastfm/Makefile 490445 2019-01-16 04:59:46Z linimon $
 
 PORTNAME=	liblastfm
 DISTVERSION=	1.0.9-5
@@ -28,7 +28,7 @@ USE_QT=		corelib dbus network sql xml \
 		moc_build qmake_build rcc_build
 CMAKE_ON+=	BUILD_WITH_QT4
 .else
-USES+=		qt:5
+USES+=		compiler:c++11-lang qt:5
 USE_QT=		core dbus network sql xml \
 		buildtools_build qmake_build
 CMAKE_OFF+=	BUILD_WITH_QT4

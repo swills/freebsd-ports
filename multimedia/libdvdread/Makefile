@@ -1,8 +1,9 @@
 # Created by: Marc van Woerkom <3d@FreeBSD.org>
-# $FreeBSD: head/multimedia/libdvdread/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/multimedia/libdvdread/Makefile 489743 2019-01-08 21:50:21Z martymac $
 
 PORTNAME=	libdvdread
 PORTVERSION=	6.0.0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.videolan.org/pub/videolan/libdvdread/${PORTVERSION}/ \
 		http://dvdnav.mplayerhq.hu/releases/ \

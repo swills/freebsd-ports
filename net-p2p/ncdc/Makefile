@@ -1,8 +1,9 @@
 # Created by: Dmitriy Limonov
-# $FreeBSD: head/net-p2p/ncdc/Makefile 477374 2018-08-16 20:44:45Z swills $
+# $FreeBSD: head/net-p2p/ncdc/Makefile 490211 2019-01-13 20:58:36Z adamw $
 
 PORTNAME=	ncdc
 PORTVERSION=	1.20
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://dev.yorhel.nl/download/
 
@@ -27,12 +28,5 @@ PLIST_FILES=	bin/ncdc \
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-
-OPTIONS_DEFINE=	GEOIP
-
-GEOIP_CONFIGURE_WITH=	geoip
-GEOIP_CONFIGURE_ENV=	GEOIP_CFLAGS="-I${LOCALBASE}/include" \
-			GEOIP_LIBS="-L${LOCALBASE}/lib -lGeoIP"
-GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/vipster/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/vipster/Makefile 490499 2019-01-16 18:22:23Z yuri $
 
 PORTNAME=	vipster
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.14a
+DISTVERSION=	1.14.1a
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

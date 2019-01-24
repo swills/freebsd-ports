@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-themes/lumina-themes/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/x11-themes/lumina-themes/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-themes
 PORTVERSION=	201710311100
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-themes
 
 MAINTAINER=	jt@ixsystems.com

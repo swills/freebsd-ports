@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/qtoctave/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/qtoctave/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtoctave
 PORTVERSION=	0.10.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	http://forja.rediris.es/frs/download.php/2054/
 

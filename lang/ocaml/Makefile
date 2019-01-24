@@ -1,5 +1,5 @@
 # Created by: Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
-# $FreeBSD: head/lang/ocaml/Makefile 480033 2018-09-18 16:05:15Z emaste $
+# $FreeBSD: head/lang/ocaml/Makefile 489683 2019-01-08 13:19:05Z tobik $
 # for committer: bump PORTREVISION for math/facile whenever ocaml gets updated
 
 PORTNAME=	ocaml
@@ -43,8 +43,6 @@ CONFIGURE_ARGS=	-verbose -prefix "${PREFIX}" \
 OPTIONS_DEFINE=	X11 THREADS DOCS EXAMPLES
 OPTIONS_DEFAULT=X11 THREADS
 CMP_LIB_DESC=	Install compiler libraries
-PORTDOCS=	htmlman ${DOCSDISTNAME}-refman.ps.gz \
-		${DOCSDISTNAME}-refman.pdf
 
 MODOPT=		camlp4o camlp4r ocamlc ocamldep ocamldoc ocamllex ocamlopt
 PATTERN=	[[:space:]]*(do|then)?[[:space:]]*)(\$$\(CP\)|cp)([[:space:]]

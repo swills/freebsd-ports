@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 484648 2018-11-10 23:02:44Z olivier $
+# $FreeBSD: head/GIDs 490301 2019-01-14 16:27:39Z novel $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -460,7 +460,7 @@ pwhois:*:512:
 # free: 517
 # free: 518
 # free: 519
-# free: 520
+libvirtdbus:*:520:
 davmail:*:521:
 nullmail:*:522:
 freevo:*:523:
@@ -822,7 +822,7 @@ _geodns:*:853:
 # free: 879
 # free: 880
 # free: 881
-# free: 882
+midpoint:*:882:
 ipfs-go:*:883:
 telegraf:*:884:
 tcpdump:*:885:

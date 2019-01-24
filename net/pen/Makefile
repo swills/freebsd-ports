@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/pen/Makefile 434421 2017-02-19 23:01:06Z danilo $
+# $FreeBSD: head/net/pen/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	pen
 PORTVERSION=	0.34.1
@@ -12,6 +12,9 @@ COMMENT=	Load balancer for UDP and TCP based protocols
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 GNU_CONFIGURE=	yes
 USES=		ssl

@@ -1,10 +1,11 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 488305 2018-12-25 09:30:19Z amdmi3 $
+# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-xdg-entry
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.3.0
 DISTVERSIONSUFFIX=	-p1
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	kmoore@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/games/knights/Makefile 488696 2018-12-29 23:36:20Z tcberner $
+# $FreeBSD: head/games/knights/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	knights
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

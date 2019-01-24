@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/telepathy-accounts-signon/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/net-im/telepathy-accounts-signon/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	telepathy-accounts-signon
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	net-im
 DIST_SUBDIR=	KDE/${GL_ACCOUNT}
 

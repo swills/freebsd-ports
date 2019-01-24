@@ -1,8 +1,9 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/pcbsd-appweb/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/sysutils/pcbsd-appweb/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	pcbsd-appweb
 PORTVERSION=	1441129621
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	kmoore@FreeBSD.org

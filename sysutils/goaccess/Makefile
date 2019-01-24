@@ -1,9 +1,9 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/sysutils/goaccess/Makefile 489227 2019-01-03 21:40:51Z adamw $
+# $FreeBSD: head/sysutils/goaccess/Makefile 490211 2019-01-13 20:58:36Z adamw $
 
 PORTNAME=	goaccess
 PORTVERSION=	1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://tar.goaccess.io/
 
@@ -23,24 +23,19 @@ LDFLAGS+=	-L${NCURSESLIB} -L${LOCALBASE}/lib
 
 PORTDOCS=	AUTHORS COPYING ChangeLog NEWS README TODO
 
-OPTIONS_DEFINE=	DOCS DEBUG NLS UTF8
-OPTIONS_DEFAULT=	GEOIP UTF8
-OPTIONS_RADIO=	GEOIPDB TOKYOCABINET
-OPTIONS_RADIO_GEOIPDB=	GEOIP GEOIP2
+OPTIONS_DEFINE=	DOCS DEBUG GEOIP2 NLS UTF8
+OPTIONS_DEFAULT=	GEOIP2 UTF8
+OPTIONS_RADIO=	TOKYOCABINET
 OPTIONS_RADIO_TOKYOCABINET=	TOKYOCABINET_BTREE TOKYOCABINET_MHASH
 OPTIONS_SUB=	yes
 
-GEOIPDB_DESC=	GeoIP IP location support
-GEOIP_DESC=	Legacy/free database format
-GEOIP2_DESC=	New/paid database format
 
 DEBUG_CONFIGURE_ON=	--enable-debug
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=		gettext-runtime
 UTF8_CONFIGURE_ON=	--enable-utf8
 
-GEOIP_CONFIGURE_ON=	--enable-geoip=legacy
-GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
+GEOIP2_DESC=	IP location support
 GEOIP2_CONFIGURE_ON=	--enable-geoip=mmdb
 GEOIP2_LIB_DEPENDS=	libmaxminddb.so:net/libmaxminddb
 

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/p5-Imager/Makefile 485820 2018-11-24 22:30:56Z sunpoet $
+# $FreeBSD: head/graphics/p5-Imager/Makefile 490190 2019-01-13 20:09:02Z sunpoet $
 
 PORTNAME=	Imager
-PORTVERSION=	1.007
+PORTVERSION=	1.009
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

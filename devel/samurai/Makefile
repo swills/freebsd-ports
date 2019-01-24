@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/samurai/Makefile 478343 2018-08-29 09:07:01Z tobik $
+# $FreeBSD: head/devel/samurai/Makefile 490856 2019-01-21 13:11:19Z tobik $
 
 PORTNAME=	samurai
-DISTVERSION=	0.4
+DISTVERSION=	0.5
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/michaelforney/samurai/releases/download/${DISTVERSION}/
 

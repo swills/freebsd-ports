@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/lang/php-mode.el/Makefile 489235 2019-01-04 00:02:36Z zeising $
+# $FreeBSD: head/lang/php-mode.el/Makefile 490044 2019-01-12 11:28:00Z joneum $
 
 PORTNAME=	php-mode.el
-PORTVERSION=	1.20.0
+PORTVERSION=	1.21.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

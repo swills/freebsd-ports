@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/devel/p5-Term-ReadLine-Perl/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Term-ReadLine-Perl/Makefile 490717 2019-01-19 09:00:32Z amdmi3 $
 
 PORTNAME=	Term-ReadLine-Perl
 PORTVERSION=	1.0303
@@ -11,10 +11,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Quick implementation of the minimal interface to Readline libraries
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Term-ReadKey>=0:devel/p5-Term-ReadKey
 
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

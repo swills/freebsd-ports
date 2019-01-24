@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 489559 2019-01-07 06:41:41Z jbeich $
+# $FreeBSD: head/x11/Makefile 490329 2019-01-15 00:52:45Z jbeich $
 #
 
     COMMENT = Ports to support the X window system
@@ -85,6 +85,7 @@
     SUBDIR += gnustep-app
     SUBDIR += gpctool
     SUBDIR += grabc
+    SUBDIR += grim
     SUBDIR += gromit
     SUBDIR += gskrab
     SUBDIR += gstreamer1-plugins-x
@@ -303,6 +304,7 @@
     SUBDIR += slim
     SUBDIR += slock
     SUBDIR += slop
+    SUBDIR += slurp
     SUBDIR += smproxy
     SUBDIR += sselp
     SUBDIR += stalonetray
@@ -310,6 +312,8 @@
     SUBDIR += sterm
     SUBDIR += stjerm
     SUBDIR += swarp
+    SUBDIR += swayidle
+    SUBDIR += swaylock
     SUBDIR += sxhkd
     SUBDIR += sxpc
     SUBDIR += tabbed

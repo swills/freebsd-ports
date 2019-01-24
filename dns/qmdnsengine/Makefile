@@ -1,9 +1,9 @@
-# $FreeBSD: head/dns/qmdnsengine/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/dns/qmdnsengine/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qmdnsengine
 DISTVERSION=	0.1.0-13
 DISTVERSIONSUFFIX=	-gbac0431
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	dns
 
 MAINTAINER=	yuri@FreeBSD.org

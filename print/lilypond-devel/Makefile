@@ -1,12 +1,10 @@
 # Created by: patrick, trevor
-# $FreeBSD: head/print/lilypond-devel/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/print/lilypond-devel/Makefile 489855 2019-01-10 09:03:48Z meta $
 
 PORTNAME=	lilypond
-DISTVERSION=	2.19.81
-PORTREVISION=	3
+DISTVERSION=	2.19.82
 CATEGORIES=	print audio
-MASTER_SITES=	http://download.linuxaudio.org/lilypond/sources/v${DISTVERSION:R}/ \
-		http://lilypond.org/downloads/sources/v${DISTVERSION:R}/
+MASTER_SITES=	http://lilypond.org/download/source/v${DISTVERSION:R}/
 PKGNAMESUFFIX=	-devel
 
 MAINTAINER=	m.ne@gmx.net

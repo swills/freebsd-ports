@@ -1,8 +1,9 @@
-# $FreeBSD: head/misc/kde-thumbnailer-chm/Makefile 488462 2018-12-26 21:55:55Z linimon $
+# $FreeBSD: head/misc/kde-thumbnailer-chm/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kde-thumbnailer-chm
 PORTVERSION=	0.2.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	misc kde
 
 MAINTAINER=	makc@FreeBSD.org

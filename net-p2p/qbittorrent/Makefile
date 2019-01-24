@@ -1,8 +1,9 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qbittorrent/Makefile 489649 2019-01-08 07:49:16Z yuri $
+# $FreeBSD: head/net-p2p/qbittorrent/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qbittorrent
 DISTVERSION=	4.1.5
+PORTREVISION=	1
 CATEGORIES=	net-p2p ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -28,6 +29,9 @@ CONFIGURE_ARGS=		CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}"
 DESTDIRNAME=		INSTALL_ROOT
 
 .if ${FLAVOR} == default
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
+
 USES+=			desktop-file-utils gl
 USE_QT+=		concurrent gui svg widgets
 USE_GL=			gl

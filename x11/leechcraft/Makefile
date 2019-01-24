@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/x11/leechcraft/Makefile 489178 2019-01-03 14:14:49Z riggs $
+# $FreeBSD: head/x11/leechcraft/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	leechcraft
 PORTVERSION=	0.6.70
-PORTREVISION=	39
+PORTREVISION=	41
 CATEGORIES=	x11
 MASTER_SITES=	http://dist.leechcraft.org/LeechCraft/0.6.70/
 
@@ -254,7 +254,7 @@ OORONEE_CMAKE_ON=	-DENABLE_OORONEE:BOOL=true
 OORONEE_CMAKE_OFF=	-DENABLE_OORONEE:BOOL=false
 
 OTLOZHU_DESC=		(BROKEN) Otlozhu, a GTD-inspired ToDo manager
-OTLOZHU_CMAKE_OFF=	-DENABLE_OTLOZHU:BOOL=true
+OTLOZHU_CMAKE_ON=	-DENABLE_OTLOZHU:BOOL=true
 OTLOZHU_CMAKE_OFF=	-DENABLE_OTLOZHU:BOOL=false
 
 PINTAB_DESC=		Provides support for pinning tabs
@@ -286,7 +286,7 @@ QROSP_LIB_DEPENDS=	libqrosscore.so:devel/qross
 ROSENTHAL_DESC=		Spellchecking support
 ROSENTHAL_CMAKE_ON=	-DENABLE_ROSENTHAL:BOOL=true
 ROSENTHAL_CMAKE_OFF=	-DENABLE_ROSENTHAL:BOOL=false
-ROSENTHAL_LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
+ROSENTHAL_LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 
 SB2_DESC=		Sidebar for LeechCraft with combined launcher and tab switcher
 SB2_CMAKE_ON=		-DENABLE_SB2:BOOL=true

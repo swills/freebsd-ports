@@ -1,5 +1,5 @@
 # Created by: Elisey Savateev <b3k@mail.ru>
-# $FreeBSD: head/www/havp/Makefile 473439 2018-06-27 13:55:56Z mat $
+# $FreeBSD: head/www/havp/Makefile 490705 2019-01-19 07:16:21Z antoine $
 
 PORTNAME=	havp
 PORTVERSION=	0.91
@@ -11,6 +11,8 @@ MASTER_SITES=	http://www.server-side.de/download/ \
 
 MAINTAINER=	ayu@commun.jp
 COMMENT=	HTTP Antivirus Proxy
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libclamav.so:security/clamav
 

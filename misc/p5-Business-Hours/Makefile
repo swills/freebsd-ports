@@ -1,9 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/misc/p5-Business-Hours/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/misc/p5-Business-Hours/Makefile 490119 2019-01-13 09:20:15Z matthew $
 
 PORTNAME=	Business-Hours
-PORTVERSION=	0.12
-PORTREVISION=	2
+PORTVERSION=	0.13
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/kdegraphics/Makefile 478003 2018-08-25 05:15:02Z tcberner $
+# $FreeBSD: head/graphics/kdegraphics/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kdegraphics
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org

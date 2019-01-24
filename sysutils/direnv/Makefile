@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/direnv/Makefile 486044 2018-11-27 17:34:07Z swills $
+# $FreeBSD: head/sysutils/direnv/Makefile 490336 2019-01-15 01:27:57Z swills $
 
 PORTNAME=	direnv
-PORTVERSION=	2.18.2
+PORTVERSION=	2.19.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

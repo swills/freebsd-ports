@@ -1,6 +1,7 @@
-# $FreeBSD: head/lang/py-qt5-qml/Makefile 487597 2018-12-16 15:25:40Z tcberner $
+# $FreeBSD: head/lang/py-qt5-qml/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qml
+PORTREVISION=	1
 CATEGORIES=	lang devel python
 
 MAINTAINER=	kde@FreeBSD.org

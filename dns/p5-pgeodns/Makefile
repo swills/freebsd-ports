@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/p5-pgeodns/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/dns/p5-pgeodns/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	pgeodns
 PORTVERSION=	1.41
@@ -15,6 +15,9 @@ RUN_DEPENDS=	p5-Geo-IP>=0:net/p5-Geo-IP \
 		p5-JSON>=0:converters/p5-JSON \
 		p5-Net-DNS>=0:dns/p5-Net-DNS
 TEST_DEPENDS=	p5-Test-Warn>=0:devel/p5-Test-Warn
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 USES=		perl5
 USE_PERL5=	configure

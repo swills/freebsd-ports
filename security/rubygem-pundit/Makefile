@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-pundit/Makefile 475806 2018-07-29 19:22:55Z sunpoet $
+# $FreeBSD: head/security/rubygem-pundit/Makefile 490757 2019-01-19 20:42:24Z sunpoet $
 
 PORTNAME=	pundit
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

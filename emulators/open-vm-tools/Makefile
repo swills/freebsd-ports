@@ -1,5 +1,5 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 489672 2019-01-08 11:46:19Z tobik $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
@@ -64,9 +64,9 @@ INSTALL_TARGET=		install-strip
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MX11}
-CONFLICTS=		open-vm-tools-nox11-[0-9]*
+CONFLICTS+=		open-vm-tools-nox11-[0-9]*
 .else
-CONFLICTS=		open-vm-tools-[0-9]*
+CONFLICTS+=		open-vm-tools-[0-9]*
 .endif
 
 CONFIGURE_ENV+=		SYSDIR=${SRC_BASE}/sys

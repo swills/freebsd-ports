@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/deskutils/gnome-font-viewer/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/deskutils/gnome-font-viewer/Makefile 490221 2019-01-14 01:10:29Z linimon $
 
 PORTNAME=	gnome-font-viewer
 PORTVERSION=	3.28.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 CONFLICTS=	gnome-utils-2.[0-9]*
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext localbase meson pkgconfig tar:xz
+USES=		compiler:c11 desktop-file-utils gettext localbase meson pkgconfig tar:xz
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 USE_GNOME=	cairo gtk30 gnomedesktop3

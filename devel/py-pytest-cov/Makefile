@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pytest-cov/Makefile 479752 2018-09-14 00:25:38Z dbaio $
+# $FreeBSD: head/devel/py-pytest-cov/Makefile 489834 2019-01-09 22:21:27Z dbaio $
 
 PORTNAME=	pytest-cov
-PORTVERSION=	2.6.0
+PORTVERSION=	2.6.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

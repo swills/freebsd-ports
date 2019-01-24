@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kdenlive/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/multimedia/kdenlive/Makefile 490778 2019-01-20 10:26:48Z tcberner $
 
 PORTNAME=	kdenlive
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,8 @@ COMMENT=	KDE professional quality non-linear video editing suite
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libmlt.so:multimedia/mlt
-BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto \
+		${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 RUN_DEPENDS=	ffmpeg${FFMPEG_SUFX}:multimedia/ffmpeg${FFMPEG_SUFX} \
 		${LOCALBASE}/lib/mlt/libmltqt.so:multimedia/mlt-qt5
 

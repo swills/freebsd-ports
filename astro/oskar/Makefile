@@ -1,21 +1,23 @@
-# $FreeBSD: head/astro/oskar/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/astro/oskar/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	OSKAR
 DISTVERSION=	2.7.0
+PORTREVISION=	1
 CATEGORIES=	astro
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	SKA Radio telescope simulator
 
-ONLY_FOR_ARCHS=		amd64 i386 powerpc powerpc64
-ONLY_FOR_ARCHS_REASON=	gccfeatures.h:54:4: This code has only been tested on x86 and powerpc platforms
-
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+ONLY_FOR_ARCHS=		amd64 i386 powerpc powerpc64
+ONLY_FOR_ARCHS_REASON=	gccfeatures.h:54:4: This code has only been tested on x86 and powerpc platforms
+
 LIB_DEPENDS=	libcfitsio.so:astro/cfitsio
 
-USES=		cmake localbase:ldflags python qt:5 shebangfix
+USES=		cmake compiler:c++11-lang localbase:ldflags python qt:5 \
+		shebangfix
 SHEBANG_FILES=	apps/oskar_convert_cst_to_scalar.py
 USE_GITHUB=	yes
 GH_ACCOUNT=	OxfordSKA

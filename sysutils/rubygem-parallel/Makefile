@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-parallel/Makefile 456501 2017-12-16 20:55:51Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-parallel/Makefile 490598 2019-01-17 19:22:31Z sunpoet $
 
 PORTNAME=	parallel
-PORTVERSION=	1.12.1
+PORTVERSION=	1.13.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -10,9 +10,11 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Run any kind of code in parallel processes
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/MIT-LICENSE.txt
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

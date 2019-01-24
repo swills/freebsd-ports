@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Module-Versions/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Module-Versions/Makefile 490117 2019-01-13 09:00:30Z amdmi3 $
 
 PORTNAME=	Module-Versions
 PORTVERSION=	0.02
@@ -10,7 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to handle versions of loaded modules
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5 zip
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/cquery/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/cquery/Makefile 490544 2019-01-17 11:00:23Z tobik $
 
 PORTNAME=	cquery
 PORTVERSION=	20180718
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	henry.hu.sh@gmail.com
@@ -26,8 +26,6 @@ GH_TUPLE=	miloyip:rapidjson:daabb88:rapidjson/third_party/rapidjson \
 		msgpack:msgpack-c:208595b:msgpack/third_party/msgpack-c \
 		emilk:loguru:6bf94c:loguru/third_party/loguru \
 		zeux:pugixml:24a7064:pugixml/third_party/pugixml
-
-LLVM_DEFAULT?=	60
 
 PLIST_FILES=	bin/cquery
 

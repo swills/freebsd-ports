@@ -1,8 +1,8 @@
-# $FreeBSD: head/ports-mgmt/portrac/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/ports-mgmt/portrac/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	portrac
 PORTVERSION=	0.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://e-soul.org/distfiles/ \
 		http://home.e-soul.org/~mgp/distfiles/

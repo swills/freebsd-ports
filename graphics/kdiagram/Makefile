@@ -1,10 +1,9 @@
-# $FreeBSD: head/graphics/kdiagram/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/kdiagram/Makefile 490716 2019-01-19 08:36:37Z tcberner $
 
 PORTNAME=	kdiagram
-PORTVERSION=	2.6.0
-PORTREVISION=	1
+DISTVERSION=	2.6.1
 CATEGORIES=	graphics kde
-MASTER_SITES=   KDE/stable/${PORTNAME}/${PORTVERSION}/src
+MASTER_SITES=   KDE/stable/${PORTNAME}/${DISTVERSION}/
 DIST_SUBDIR=    KDE/${PORTNAME}
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-rmf/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/py-rmf/Makefile 490089 2019-01-12 23:32:09Z linimon $
 
 PORTNAME=	rmf
 DISTVERSION=	1.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libRMF.so:science/rmf
 
-USES=		cmake python shebangfix
+USES=		cmake compiler:c++11-lang python shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	salilab
 GH_TAGNAME=	f917cf2

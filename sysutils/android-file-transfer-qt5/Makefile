@@ -1,6 +1,6 @@
-# $FreeBSD: head/sysutils/android-file-transfer-qt5/Makefile 423675 2016-10-10 16:22:04Z jbeich $
+# $FreeBSD: head/sysutils/android-file-transfer-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-qt5
 
 MASTERDIR=	${.CURDIR}/../android-file-transfer

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-geoip/Makefile 465222 2018-03-21 19:03:45Z sunpoet $
+# $FreeBSD: head/net/rubygem-geoip/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	geoip
 PORTVERSION=	1.6.4
@@ -12,6 +12,9 @@ LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	geoiplookup:net/GeoIP
+
+DEPRECATED=     Uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 REINPLACE_ARGS=	-i ''
 NO_ARCH=	yes

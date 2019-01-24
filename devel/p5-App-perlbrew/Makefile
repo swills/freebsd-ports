@@ -1,8 +1,8 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/devel/p5-App-perlbrew/Makefile 488971 2019-01-01 20:33:44Z sunpoet $
+# $FreeBSD: head/devel/p5-App-perlbrew/Makefile 490742 2019-01-19 20:41:04Z sunpoet $
 
 PORTNAME=	App-perlbrew
-PORTVERSION=	0.85
+PORTVERSION=	0.86
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:GUGOD

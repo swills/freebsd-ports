@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/xpdf4/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/xpdf4/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	xpdf
 PORTVERSION=	4.00
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	graphics print
 MASTER_SITES=	https://xpdfreader-dl.s3.amazonaws.com/

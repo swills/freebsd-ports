@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/kpkpass/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/security/kpkpass/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kpkpass
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	security kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

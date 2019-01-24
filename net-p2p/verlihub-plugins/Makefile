@@ -1,5 +1,5 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-p2p/verlihub-plugins/Makefile 490213 2019-01-13 21:22:06Z adamw $
 
 PORTNAME=	verlihub
 PORTVERSION=	1.0
@@ -19,6 +19,9 @@ RUN_DEPENDS=	\
 		${LOCALBASE}/lib/liblua_pi.so:net-p2p/verlihub-plugins-luascript \
 		${LOCALBASE}/lib/libmessanger_pi.so:net-p2p/verlihub-plugins-messanger \
 		${LOCALBASE}/lib/libstats_pi.so:net-p2p/verlihub-plugins-stats
+
+DEPRECATED=     Verlihub uses legacy GeoIP 1 format which no longer works; switch to GeoIP 2 where possible
+EXPIRATION_DATE=2019-02-15
 
 USES=		metaport
 

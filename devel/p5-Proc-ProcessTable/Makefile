@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/p5-Proc-ProcessTable/Makefile 460744 2018-02-02 19:55:09Z sunpoet $
+# $FreeBSD: head/devel/p5-Proc-ProcessTable/Makefile 489710 2019-01-08 15:32:00Z swills $
 
 PORTNAME=	Proc-ProcessTable
 PORTVERSION=	0.55
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JWB

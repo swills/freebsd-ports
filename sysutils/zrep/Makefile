@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/zrep/Makefile 479871 2018-09-16 00:08:12Z sunpoet $
+# $FreeBSD: head/sysutils/zrep/Makefile 489719 2019-01-08 15:51:45Z swills $
 
 PORTNAME=	zrep
-PORTVERSION=	1.7.4
+PORTVERSION=	1.7.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

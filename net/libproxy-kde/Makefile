@@ -1,7 +1,7 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/libproxy-kde/Makefile 488396 2018-12-26 15:09:13Z kwm $
+# $FreeBSD: head/net/libproxy-kde/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net devel
 PKGNAMESUFFIX=	-${LIBPROXY_SLAVE}
 

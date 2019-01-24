@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-p2p/xmrig/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/net-p2p/xmrig/Makefile 491089 2019-01-24 10:29:04Z ehaupt $
 
 PORTNAME=	xmrig
-PORTVERSION=	2.8.3
+PORTVERSION=	2.10.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-p2p
 
@@ -33,10 +33,6 @@ MICROHTTPD_LIB_DEPENDS+=	libmicrohttpd.so:www/libmicrohttpd \
 				libuv.so:devel/libuv
 
 STATIC_BUILD_DEPENDS+=	${LOCALBASE}/lib/libuv.a:devel/libuv
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|\(set.*EXTRA_LIBS.*\) dl|\1|' \
-		${WRKSRC}/CMakeLists.txt
 
 post-patch-MICROHTTPD-off:
 	@${REINPLACE_CMD} -e 's|\(.*WITH_HTTPD.*\)\(ON\)|\1OFF|' \

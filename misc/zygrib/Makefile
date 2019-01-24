@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/zygrib/Makefile 474666 2018-07-15 06:59:18Z yuri $
+# $FreeBSD: head/misc/zygrib/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	zygrib
 DISTVERSION=	8.0.1
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.zygrib.org/getfile.php?file=
 DISTNAME=	zyGrib-${DISTVERSION}

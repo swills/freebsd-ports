@@ -1,5 +1,5 @@
 # Created by: Erik B Knudsen
-# $FreeBSD: head/science/mcstas-comps/Makefile 428340 2016-12-11 08:25:56Z antoine $
+# $FreeBSD: head/science/mcstas-comps/Makefile 490719 2019-01-19 09:48:16Z tcberner $
 
 PORTNAME=	mcstas-comps
 PORTVERSION=	2.2a
@@ -12,7 +12,9 @@ COMMENT=	Component Library for the McStas neutron ray tracing package
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${LOCALBASE}/mcstas/${PORTVERSION}/bin/mcstas:science/mcstas
+BROKEN=		missing RUN_DEPENDS
+
+RUN_DEPENDS=	mcstas:science/mcstas
 
 USES=		cmake
 # Apparently cmake does not generate an install/strip target if nothing

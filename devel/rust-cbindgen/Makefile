@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/rust-cbindgen/Makefile 489241 2019-01-04 04:00:39Z jbeich $
+# $FreeBSD: head/devel/rust-cbindgen/Makefile 490600 2019-01-17 19:50:38Z jbeich $
 
 PORTNAME=	cbindgen
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.7
+DISTVERSION=	0.6.8
 PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	rust-
@@ -45,7 +45,7 @@ CARGO_CRATES=	ansi_term-0.11.0 \
 		serde_json-1.0.19 \
 		strsim-0.7.0 \
 		syn-0.13.11 \
-		syn-0.14.1 \
+		syn-0.15.23 \
 		tempfile-3.0.3 \
 		termion-1.5.1 \
 		textwrap-0.9.0 \

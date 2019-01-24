@@ -1,9 +1,9 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/docker-freebsd/Makefile 489312 2019-01-05 09:17:28Z joneum $
+# $FreeBSD: head/sysutils/docker-freebsd/Makefile 490308 2019-01-14 18:09:20Z joneum $
 
 PORTNAME=	docker-freebsd
 PORTVERSION=	20150625
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	joneum@FreeBSD.org

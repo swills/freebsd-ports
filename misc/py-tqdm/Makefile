@@ -1,9 +1,9 @@
-# $FreeBSD: head/misc/py-tqdm/Makefile 484527 2018-11-09 16:49:05Z swills $
+# $FreeBSD: head/misc/py-tqdm/Makefile 490063 2019-01-12 16:36:16Z sunpoet $
 
 PORTNAME=	tqdm
-DISTVERSIONPREFIX=	v
-DISTVERSION=	4.28.1
+DISTVERSION=	4.29.1
 CATEGORIES=	misc
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	neel@neelc.org
@@ -14,8 +14,8 @@ LICENSE_COMB=	multi
 LICENSE_FILE_MIT=	${WRKSRC}/LICENCE
 
 USES=		python
-USE_GITHUB=	yes
 USE_PYTHON=	distutils autoplist concurrent
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

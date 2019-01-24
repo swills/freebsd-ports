@@ -1,9 +1,8 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/comms/cutecom/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/comms/cutecom/Makefile 490790 2019-01-20 14:00:42Z jwb $
 
 PORTNAME=		cutecom
-DISTVERSIONPREFIX=	v
-DISTVERSION=		0.45.0
+DISTVERSION=		0.51.0
 CATEGORIES=		comms
 
 MAINTAINER=	jwb@FreeBSD.org
@@ -14,12 +13,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	lsz:comms/lrzsz
 
-USE_QT=		qt3support qmake_build moc_build rcc_build uic_build
-USES=		cmake qt:5
-USE_QT=		buildtools_build core gui qmake_build serialport widgets
-USE_GITHUB=	yes
-GH_ACCOUNT=	neundorf
-GH_PROJECT=	CuteCom
+USES=		cmake compiler:c++11-lang qt:5
+USE_QT=		buildtools_build core gui network qmake_build serialport widgets
+USE_GITLAB=	yes
+
+GL_COMMIT=	cce2e5ec01df09ca4b05f055f21942e0de7eb7dd
 
 PLIST_FILES=	bin/cutecom
 

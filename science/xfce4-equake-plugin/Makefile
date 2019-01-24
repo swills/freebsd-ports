@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/science/xfce4-equake-plugin/Makefile 435455 2017-03-05 08:09:35Z olivierd $
+# $FreeBSD: head/science/xfce4-equake-plugin/Makefile 490953 2019-01-22 14:44:38Z madpilot $
 
 PORTNAME=	xfce4-equake-plugin
 PORTVERSION=	1.3.8.1
@@ -14,14 +14,15 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
-	libfreetype.so:print/freetype2 \
-	libcurl.so:ftp/curl
+		libfreetype.so:print/freetype2 \
+		libcurl.so:ftp/curl
 
-GNU_CONFIGURE=	yes
-USES=	gettext gmake libtool pkgconfig tar:bzip2 xfce
-USE_GNOME=	glib20 gtk20 intltool cairo
+USES=		gettext-tools gmake gnome libtool pkgconfig tar:bzip2 xfce
+USE_GNOME=	cairo glib20 gtk20 intltool
 USE_XFCE=	panel
 USE_XORG=	x11
+
+GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 
 .include <bsd.port.mk>

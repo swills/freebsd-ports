@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/pc-networkmanager/Makefile 473503 2018-06-28 17:39:53Z tcberner $
+# $FreeBSD: head/sysutils/pc-networkmanager/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	pc-networkmanager
 PORTVERSION=	201710031301
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	jt@ixsystems.com

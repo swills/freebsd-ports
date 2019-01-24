@@ -1,6 +1,7 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile 487220 2018-12-11 05:59:11Z dbn $
+# $FreeBSD: head/devel/eric6/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-${FLAVOR:U:S/_/-/}
 DISTNAME=	${PORTNAME}-nolang-${DISTVERSION}
 CATEGORIES=	devel python

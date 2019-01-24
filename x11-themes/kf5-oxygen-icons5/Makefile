@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-themes/kf5-oxygen-icons5/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11-themes/kf5-oxygen-icons5/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	oxygen-icons5
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

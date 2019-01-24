@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/mandelbulber/Makefile 489370 2019-01-05 19:35:19Z amdmi3 $
+# $FreeBSD: head/graphics/mandelbulber/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	mandelbulber
 PORTVERSION=	2.16
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -20,7 +21,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	buddhi1980
 GH_PROJECT=	${PORTNAME}2
 
-USES=		cmake gnome jpeg localbase:ldflags pkgconfig qt:5
+USES=		cmake compiler:c++11-lang gnome jpeg localbase:ldflags \
+		pkgconfig qt:5
 USE_QT=		core widgets network gui multimedia testlib \
 		qmake_build buildtools_build uitools_build
 INSTALLS_ICONS=	yes

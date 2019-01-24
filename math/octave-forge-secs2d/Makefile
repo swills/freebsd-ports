@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-secs2d/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/octave-forge-secs2d/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	octave-forge-secs2d
 PORTVERSION=	0.0.8
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

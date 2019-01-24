@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/net-p2p/tribler/Makefile 489178 2019-01-03 14:14:49Z riggs $
+# $FreeBSD: head/net-p2p/tribler/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	tribler
 PORTVERSION=	6.5.2
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Tribler/tribler/releases/download/v${PORTVERSION}/
 DISTNAME=	Tribler-v${PORTVERSION}

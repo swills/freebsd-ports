@@ -1,8 +1,8 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/deskutils/zim/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/deskutils/zim/Makefile 490160 2019-01-13 18:17:30Z rm $
 
 PORTNAME=	zim
-PORTVERSION=	0.68
+PORTVERSION=	0.69
 CATEGORIES=	deskutils python
 MASTER_SITES=	http://www.zim-wiki.org/downloads/
 
@@ -17,11 +17,12 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xdg>0:devel/py-xdg@${PY_FLAVOR} \
 		xdg-open:devel/xdg-utils \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		desktop-file-utils gettext python:-2.7 shared-mime-info
 USE_GNOME=	pygtk2
 USE_PYTHON=	autoplist distutils
+
 INSTALLS_ICONS=	yes
+NO_ARCH=	yes
 
 OPTIONS_DEFINE=		BZR DITAA GIT GNUPLOT GNUR GRAPHVIZ LATEX \
 			MERCURIAL SCROT

@@ -1,19 +1,35 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/devel/py-mongokit/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-mongokit/Makefile 489977 2019-01-11 14:54:49Z miwi $
 
-PORTNAME=	mongokit
-PORTVERSION=	0.8.3
-PORTREVISION=	2
-CATEGORIES=	devel python
-MASTER_SITES=	CHEESESHOP
-PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+PORTNAME=		mongokit
+PORTVERSION=		0.9.1.1
+DISTVERSIONPREFIX=	v
+CATEGORIES=		devel python
+PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	mail@derzinn.de
 COMMENT=	Python ORM-like layer on top of pymongo
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=2.0.1:databases/pymongo@${PY_FLAVOR}
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:2.7
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=2.5:databases/pymongo@${PY_FLAVOR}
+
+USES=		python
 USE_PYTHON=	distutils autoplist
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	namlook
+
+NO_ARCH=	yes
+PORTDOCS=	*.txt
+
+OPTIONS_DEFINE=	DOCS
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	# Remove introduction.txt, soft-link causes issue
+	${RM} ${WRKSRC}/doc/introduction.txt
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/doc/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

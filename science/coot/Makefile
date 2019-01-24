@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/coot/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/coot/Makefile 490524 2019-01-17 05:59:38Z yuri $
 
 PORTNAME=	coot
 DISTVERSION=	0.8.9.1
@@ -28,10 +28,9 @@ LIB_DEPENDS=	libccp4c.so:science/libccp4 \
 		libssm.so:science/libssm
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		desktop-file-utils fortran gettext-runtime gmake libtool localbase:ldflags pkgconfig python:2.7 shebangfix sqlite
+USES=		desktop-file-utils fortran gettext-runtime gl gmake gnome libtool localbase:ldflags pkgconfig python:2.7 shebangfix sqlite
 SHEBANG_FILES=	src/coot.in
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-python
 CONFIGURE_ARGS=	--enable-shared --disable-static
 USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk20 libartlgpl2 libgnomecanvas pango pangox-compat
 USE_GL=		gl glu glut

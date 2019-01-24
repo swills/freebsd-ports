@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/gcompris-qt/Makefile 488364 2018-12-26 09:09:48Z tcberner $
+# $FreeBSD: head/games/gcompris-qt/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	gcompris-qt
 DISTVERSION=	0.95
+PORTREVISION=	1
 CATEGORIES=	games kde
 MASTER_SITES=	http://gcompris.net/download/qt/src/
 

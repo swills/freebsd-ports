@@ -1,7 +1,8 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/mail/claws-mail/Makefile 488096 2018-12-22 15:39:42Z joneum $
+# $FreeBSD: head/mail/claws-mail/Makefile 489852 2019-01-10 08:35:25Z joneum $
 
 PORTNAME=	claws-mail
+PORTREVISION=	1
 CATEGORIES=	mail news ipv6
 
 COMMENT=	Lightweight and featureful GTK+ based e-mail and news client
@@ -20,8 +21,8 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libnettle.so:security/nettle
 RUN_DEPENDS=	mime-support>0:misc/mime-support
 
-USES=		compiler:c++11-lang cpe desktop-file-utils gnome pathfix \
-		python:2.7 shebangfix ssl
+USES=		autoreconf gettext-tools compiler:c++11-lang cpe desktop-file-utils gettext gnome pathfix \
+		python:3.6 shebangfix ssl
 USE_XORG=	ice sm
 USE_GNOME=	cairo gtk20 librsvg2
 SHEBANG_FILES=	tools/*.pl tools/*.py tools/tb2claws-mail

@@ -1,10 +1,10 @@
 # Created by: glocke@bsdstammtisch.at
-# $FreeBSD: head/net-p2p/retroshare/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/net-p2p/retroshare/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	retroshare
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

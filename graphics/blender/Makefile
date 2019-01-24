@@ -1,5 +1,5 @@
 # Created by: Jimmy Olgeni <olgeni@uli.it>
-# $FreeBSD: head/graphics/blender/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/graphics/blender/Makefile 491080 2019-01-24 05:09:48Z linimon $
 
 PORTNAME=	blender
 PORTVERSION=	2.79b
@@ -46,6 +46,14 @@ PLIST_SUB+=	VER=2.79
 OPTIONS_SUB=	yes
 
 .include "${.CURDIR}/Makefile.options"
+
+# libunwind is specific to amd64/i386
+OPTIONS_EXCLUDE_aarch64=	CAMERATRACK
+OPTIONS_EXCLUDE_armv6=		CAMERATRACK
+OPTIONS_EXCLUDE_armv7=		CAMERATRACK
+OPTIONS_EXCLUDE_powerpc=	CAMERATRACK
+OPTIONS_EXCLUDE_powerpc64=	CAMERATRACK
+OPTIONS_EXCLUDE_powerpcspe=	CAMERATRACK
 
 ALEMBIC_CMAKE_BOOL=		WITH_ALEMBIC
 ALEMBIC_LIB_DEPENDS=		libAlembic.so:graphics/alembic

@@ -1,6 +1,7 @@
-# $FreeBSD: head/comms/py-qt5-serialport/Makefile 487597 2018-12-16 15:25:40Z tcberner $
+# $FreeBSD: head/comms/py-qt5-serialport/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	serialport
+PORTREVISION=	1
 CATEGORIES=	comms devel python
 
 MAINTAINER=	kde@FreeBSD.org

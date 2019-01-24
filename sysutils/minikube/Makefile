@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/minikube/Makefile 488351 2018-12-25 22:04:20Z danilo $
+# $FreeBSD: head/sysutils/minikube/Makefile 490907 2019-01-21 22:18:58Z danilo $
 
 PORTNAME=	minikube
-PORTVERSION=	0.32.0
+PORTVERSION=	0.33.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -22,7 +22,7 @@ GH_ACCOUNT=	kubernetes
 GO_PKGNAME=	k8s.io/${PORTNAME}
 GO_TARGET=	${GO_PKGNAME}/cmd/${PORTNAME}
 GO_BUILDFLAGS=	-ldflags="-X k8s.io/minikube/pkg/version.version=v${PORTVERSION} \
-		-X k8s.io/minikube/pkg/version.isoVersion=v0.32.0 \
+		-X k8s.io/minikube/pkg/version.isoVersion=v0.33.1 \
 		-X k8s.io/minikube/pkg/version.isoPath=minikube/iso"
 
 PLIST_FILES=	bin/${PORTNAME}

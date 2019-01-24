@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/print/texinfo/Makefile 489288 2019-01-05 01:27:52Z stephen $
+# $FreeBSD: head/print/texinfo/Makefile 490179 2019-01-13 20:08:00Z sunpoet $
 
 PORTNAME=	texinfo
 PORTVERSION=	6.5
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	print
 MASTER_SITES=	GNU \
@@ -24,10 +24,10 @@ RUN_DEPENDS=	p5-Locale-libintl>=0:devel/p5-Locale-libintl \
 		p5-Text-Unidecode>=0:converters/p5-Text-Unidecode \
 		p5-Unicode-EastAsianWidth>=0:textproc/p5-Unicode-EastAsianWidth
 
-USES=		charsetfix cpe gmake iconv libtool ncurses perl5 tar:xz
-
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
+
+USES=		charsetfix cpe gmake iconv libtool ncurses perl5 tar:xz
 
 CONFIGURE_ARGS=	--with-external-libintl-perl \
 		--with-external-Text-Unidecode \

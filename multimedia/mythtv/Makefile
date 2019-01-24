@@ -1,10 +1,10 @@
 # Created by: Stacey Son <mythdev@son.org>, Ari Maniatis <ari@ish.com.au>
-# $FreeBSD: head/multimedia/mythtv/Makefile 485246 2018-11-18 19:26:03Z antoine $
+# $FreeBSD: head/multimedia/mythtv/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	mythtv
 DISTVERSIONPREFIX=	v
 DISTVERSION=	29.1
-PORTREVISION?=	2
+PORTREVISION?=	3
 PORTEPOCH=	1
 CATEGORIES=	multimedia
 

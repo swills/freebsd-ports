@@ -1,11 +1,10 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/fiche/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/fiche/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	fiche
 PORTVERSION=	0.9.1
 PORTREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	GH
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Command line pastebin for sharing terminal output

@@ -1,9 +1,8 @@
-# $FreeBSD: head/net/rdapper/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/rdapper/Makefile 489684 2019-01-08 13:20:19Z mat $
 
 PORTNAME=	rdapper
 PORTVERSION=	20150326
 CATEGORIES=	net
-MASTER_SITES=	GH
 
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Command-line Registration Data Access Protocol (RDAP) client

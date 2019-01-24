@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/qhttpengine/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/www/qhttpengine/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qhttpengine
 DISTVERSION=	1.0.1-5
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-g43f55df
 CATEGORIES=	www
 

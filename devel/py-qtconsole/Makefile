@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-qtconsole/Makefile 487021 2018-12-09 05:43:01Z swills $
+# $FreeBSD: head/devel/py-qtconsole/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	qtconsole
 PORTVERSION=	4.4.3
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

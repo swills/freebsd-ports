@@ -1,10 +1,10 @@
-# $FreeBSD: head/graphics/vv/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/graphics/vv/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	vv
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4.0-271
 DISTVERSIONSUFFIX=	-g24b75af3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

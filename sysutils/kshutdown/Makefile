@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/kshutdown/Makefile 488383 2018-12-26 12:52:23Z tcberner $
+# $FreeBSD: head/sysutils/kshutdown/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kshutdown
 DISTVERSION=	4.99-beta
+PORTREVISION=	1
 CATEGORIES=	sysutils kde
 MASTER_SITES=	SF/${PORTNAME}/KShutdown/4.99%20Beta/
 DISTNAME=	${PORTNAME}-source-${DISTVERSION}

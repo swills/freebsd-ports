@@ -1,9 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-archiver/Makefile 488265 2018-12-24 09:30:16Z amdmi3 $
+# $FreeBSD: head/deskutils/lumina-archiver/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	lumina-archiver
 PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com

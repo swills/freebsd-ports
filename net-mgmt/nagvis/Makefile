@@ -1,12 +1,12 @@
 # Created by: Andrew 'derfi' Sidorov <derfi@vei.ru>
-# $FreeBSD: head/net-mgmt/nagvis/Makefile 480215 2018-09-20 21:22:40Z swills $
+# $FreeBSD: head/net-mgmt/nagvis/Makefile 490548 2019-01-17 12:06:38Z egypcio $
 
 PORTNAME=	nagvis
-PORTVERSION=	1.9.10
+PORTVERSION=	1.9.11
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.nagvis.org/share/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Visualization addon for Nagios
 
 LICENSE=	GPLv2

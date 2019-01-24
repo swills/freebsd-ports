@@ -1,6 +1,7 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/ibus-mozc/Makefile 469110 2018-05-05 13:59:47Z danfe $
+# $FreeBSD: head/japanese/ibus-mozc/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
+PORTREVISION=	15
 PKGNAMEPREFIX=	ja-ibus-
 
 COMMENT=	Mozc engine for IBus

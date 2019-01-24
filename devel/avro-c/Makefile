@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-c/Makefile 476784 2018-08-09 14:45:57Z sunpoet $
+# $FreeBSD: head/devel/avro-c/Makefile 489802 2019-01-09 14:53:15Z sunpoet $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.2
@@ -19,7 +19,8 @@ BROKEN_sparc64=	fails to build
 LIB_DEPENDS=	libjansson.so:devel/jansson \
 		libsnappy.so:archivers/snappy
 
-USES=		cmake pkgconfig
+USES=		cmake compiler:c++11-lang pkgconfig
+
 USE_LDCONFIG=	yes
 WRKSRC_SUBDIR=	lang/c
 

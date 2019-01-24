@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Table-Any/Makefile 480571 2018-09-24 11:11:59Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Table-Any/Makefile 489999 2019-01-11 20:17:13Z sunpoet $
 
 PORTNAME=	Text-Table-Any
-PORTVERSION=	0.093
+PORTVERSION=	0.094
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

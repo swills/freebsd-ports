@@ -1,17 +1,18 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/security/autossh/Makefile 473607 2018-06-30 08:52:48Z fernape $
+# $FreeBSD: head/security/autossh/Makefile 490547 2019-01-17 12:04:53Z egypcio $
 
 PORTNAME=	autossh
-PORTVERSION=	1.4f
+PORTVERSION=	1.4g
 CATEGORIES=	security
 MASTER_SITES=	http://www.harding.motd.ca/autossh/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Automatically restart SSH sessions and tunnels
 
 LICENSE=	BSD3CLAUSE
 
 USES=		tar:tgz
+
 GNU_CONFIGURE=	yes
 
 PORTDOCS=	CHANGES README

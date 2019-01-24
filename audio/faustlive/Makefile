@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/faustlive/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/faustlive/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	faustlive
 PORTVERSION=	g20171205
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org

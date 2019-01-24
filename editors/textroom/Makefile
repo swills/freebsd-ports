@@ -1,9 +1,9 @@
 # Created by: admin@mjbrune.org
-# $FreeBSD: head/editors/textroom/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/editors/textroom/Makefile 490671 2019-01-18 21:14:41Z jbeich $
 
 PORTNAME=	textroom
 PORTVERSION=	0.8.2
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	editors
 MASTER_SITES=	SF
 
@@ -16,7 +16,7 @@ DEPRECATED=		Qt4 has been EOL since december 2015
 EXPIRATION_DATE=	2019-03-15
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
-		libhunspell-1.6.so:textproc/hunspell \
+		libhunspell-1.7.so:textproc/hunspell \
 		libxml++-2.6.so:textproc/libxml++26
 
 USES=		compiler:c++11-lang desktop-file-utils pkgconfig qmake qt:4

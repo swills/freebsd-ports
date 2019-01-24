@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/metisse/Makefile 484063 2018-11-04 14:12:29Z antoine $
+# $FreeBSD: head/x11/metisse/Makefile 490562 2019-01-17 13:53:43Z danfe $
 
 PORTNAME=	metisse
 PORTVERSION=	0.4.1
@@ -12,8 +12,6 @@ COMMENT=	Innovative X-based window system
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to build
 
 LIB_DEPENDS=	libNucleo.so:x11-toolkits/nucleo \
 		libpng.so:graphics/png
@@ -75,6 +73,12 @@ GTK2_USE=	GNOME=gtk20
 GCONF_USE=	GNOME=gconf2,libglade2
 
 post-patch:
+	@${REINPLACE_CMD} -e '/foldable/s,false),0x0),' \
+		${WRKSRC}/FvwmCompositor/desktop/MetisseDesktop.cxx
+	@${REINPLACE_CMD} -e '1296s,opt ==,*&,' \
+		${WRKSRC}/FvwmCompositor/fvwmmodule/FvwmModule.cxx
+	@${REINPLACE_CMD} -e 's,1<<31,1l<<31,' \
+		${WRKSRC}/fvwm-insitu/libs/Module.h
 # Catch up with new <fribidi-types.h> header name
 	@${REINPLACE_CMD} -e 's,fribidi_types\.h,fribidi-types.h,' \
 		${WRKSRC}/fvwm-insitu/libs/FBidi.c

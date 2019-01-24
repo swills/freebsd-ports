@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/kimagemapeditor/Makefile 488878 2019-01-01 12:53:07Z tcberner $
+# $FreeBSD: head/graphics/kimagemapeditor/Makefile 490472 2019-01-16 11:13:44Z tijl $
 
 PORTNAME=	kimagemapeditor
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
