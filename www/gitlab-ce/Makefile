@@ -42,7 +42,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-omniauth-facebook4>=4.0.0:net/rubygem-omniauth-facebook4 \
 	rubygem-omniauth-github>=1.3.0:net/rubygem-omniauth-github \
 	rubygem-omniauth-gitlab>=1.0.2:security/rubygem-omniauth-gitlab \
-	rubygem-omniauth-google-oauth2>=0.5.3:net/rubygem-omniauth-google-oauth2 \
+	rubygem-omniauth-google-oauth2>=0.6.0:net/rubygem-omniauth-google-oauth2 \
 	rubygem-omniauth-kerberos>=0.3.0:net/rubygem-omniauth-kerberos \
 	rubygem-omniauth-oauth2-generic>=0.2.2:security/rubygem-omniauth-oauth2-generic \
 	rubygem-omniauth-saml>=1.10:security/rubygem-omniauth-saml \
