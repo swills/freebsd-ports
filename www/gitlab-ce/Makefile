@@ -22,7 +22,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-pages>=1.3.1:www/gitlab-pages \
 	redis>=3.2.12:databases/redis \
 	npm>=4.3.0:www/npm \
-	yarn>=0.17.0:www/yarn \
+	yarn>=1.10.0:www/yarn \
 	rubygem-rails50>=5.0.7.1:www/rubygem-rails50 \
 	rubygem-rails-deprecated_sanitizer-rails50>=1.0.3:devel/rubygem-rails-deprecated_sanitizer-rails50 \
 	rubygem-nakayoshi_fork>=0.0.4:devel/rubygem-nakayoshi_fork \
