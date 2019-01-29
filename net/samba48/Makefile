@@ -13,7 +13,6 @@ COMMENT=			Free SMB/CIFS and AD/DC server and client for Unix
 
 LICENSE=			GPLv3
 
-BROKEN_powerpc64=		fails to compile: auth.idl:107: Unable to determine origin of type struct cli_credentials
 IGNORE_NONTHREAD_PYTHON=	needs port lang/python${PYTHON_SUFFIX} to be build with THREADS support
 
 CONFLICTS_INSTALL?=		samba4-4.0.* samba4[1-79]-4.* p5-Parse-Pidl-4.*
@@ -69,11 +68,9 @@ CONFIGURE_ARGS+=		--mandir="${MANPREFIX}/man" \
 				--with-logfilebase="${SAMBA4_LOGDIR}"
 # XXX: Flags
 CONFIGURE_ENV+=			PTHREAD_LDFLAGS="-lpthread"
-CPPFLAGS+=			-I${LOCALBASE}/include
-LDFLAGS+=			-L${LOCALBASE}/lib
 
-USES=				cpe compiler waf pkgconfig perl5 \
-				iconv shebangfix
+USES=				compiler:c++11-lang cpe iconv \
+				localbase:ldflags perl5 pkgconfig shebangfix waf
 USE_PERL5=			build
 USE_LDCONFIG=			${SAMBA4_LIBDIR}
 WAF_CMD=			buildtools/bin/waf
