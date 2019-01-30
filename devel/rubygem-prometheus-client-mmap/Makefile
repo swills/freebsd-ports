@@ -1,14 +1,14 @@
 # $FreeBSD: head/devel/rubygem-prometheus-client-mmap/Makefile 479132 2018-09-06 18:55:36Z mfechner $
 
 PORTNAME=	prometheus-client-mmap
-DISTVERSION=	0.9.4
+DISTVERSION=	0.9.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Suite of instrumentation metric primitives
 
-LICENSE=	RUBY
+LICENSE=	APACHE20
 
 USES=		gem
 USE_RUBY=	yes
