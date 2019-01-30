@@ -1,9 +1,9 @@
-# $FreeBSD: head/textproc/sk-mythes/Makefile 490891 2019-01-21 19:53:44Z sunpoet $
+# $FreeBSD: head/textproc/sk-mythes/Makefile 491508 2019-01-28 18:58:25Z sunpoet $
 
 PORTNAME=	mythes
-PORTVERSION=	2019.01.20
+PORTVERSION=	2019.01.27
 CATEGORIES=	textproc
-MASTER_SITES=	LOCAL/sunpoet/${PORTNAME}/
+MASTER_SITES=	LOCAL/sunpoet/${PORTNAME}
 PKGNAMEPREFIX=	sk-
 DISTNAME=	OOo-Thesaurus2-sk_SK-${PORTVERSION:C/\.//g}
 DIST_SUBDIR=	${PORTNAME}

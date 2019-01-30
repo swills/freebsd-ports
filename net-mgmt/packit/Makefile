@@ -1,8 +1,8 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/net-mgmt/packit/Makefile 432481 2017-01-26 10:49:07Z ehaupt $
+# $FreeBSD: head/net-mgmt/packit/Makefile 491298 2019-01-26 15:51:51Z ehaupt $
 
 PORTNAME=	packit
-PORTVERSION=	1.5
+PORTVERSION=	1.6.1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -13,10 +13,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libnet.so:net/libnet
 
+USES=		autoreconf
 USE_GITHUB=	yes
 GH_ACCOUNT=	eribertomota
 
-USES=		autoreconf
 GNU_CONFIGURE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include

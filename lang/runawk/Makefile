@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/lang/runawk/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/runawk/Makefile 491394 2019-01-27 19:58:13Z sunpoet $
 
 PORTNAME=	runawk
 PORTVERSION=	1.6.0
@@ -13,19 +13,20 @@ LICENSE=	MIT
 
 BUILD_DEPENDS=	mk-configure>=0.26.0:devel/mk-configure
 
-MAKE_ENV=	DESTDIR="${STAGEDIR}" EGDIR="${EXAMPLESDIR}"
-INSTALL_TARGET=	install install-doc install-examples
+USES=		localbase
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+MAKE_ENV=	DESTDIR="${STAGEDIR}" EGDIR="${EXAMPLESDIR}"
+INSTALL_TARGET=	install
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
+
+DOCS_INSTALL_TARGET=	install-doc
+EXAMPLES_INSTALL_TARGET=install-examples
 
 do-build:
 	@${SETENV} ${MAKE_ENV} ${LOCALBASE}/bin/mkcmake -C ${WRKSRC}
 
 do-install:
-	@${SETENV} ${MAKE_ENV} ${LOCALBASE}/bin/mkcmake -C ${WRKSRC} \
-		${INSTALL_TARGET}
+	@${SETENV} ${MAKE_ENV} ${LOCALBASE}/bin/mkcmake -C ${WRKSRC} ${INSTALL_TARGET}
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/devel/py-libtmux/Makefile 464311 2018-03-12 21:16:38Z sunpoet $
+# $FreeBSD: head/devel/py-libtmux/Makefile 491388 2019-01-27 19:57:42Z sunpoet $
 
 PORTNAME=	libtmux
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

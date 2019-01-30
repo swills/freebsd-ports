@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/puppetserver/Makefile 480787 2018-09-27 07:59:11Z romain $
+# $FreeBSD: head/sysutils/puppetserver/Makefile 491169 2019-01-25 18:08:56Z romain $
 
 PORTNAME=	puppetserver
 PORTVERSION=	2.8.0
@@ -10,6 +10,9 @@ MAINTAINER=	freebsd@zleslie.info
 COMMENT=	Puppet Server running in the JVM
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Puppet 4 has reached EOL
+EXPIRATION_DATE=2019-02-28
 
 RUN_DEPENDS=	bash>=0:shells/bash \
 		puppet4>=0:sysutils/puppet4

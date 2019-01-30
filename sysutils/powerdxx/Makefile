@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/powerdxx/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/powerdxx/Makefile 491364 2019-01-27 16:16:31Z rigoletto $
 
 PORTNAME=	powerdxx
-DISTVERSION=	0.3.0
-PORTREVISION=	1
+DISTVERSION=	0.4.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	rigoletto@FreeBSD.org
@@ -13,7 +12,7 @@ LICENSE=	ISCL
 USES=		compiler:c++14-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	lonkamikaze
-GH_TUPLE=	lonkamikaze:powerdxx:6845b0e:powerdxx/gh-pages
+GH_TUPLE=	lonkamikaze:powerdxx:43c0db7:powerdxx/gh-pages
 
 USE_LDCONFIG=	yes
 MAKE_ARGS=	DOCSDIR="${DOCSDIR}"

@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/puckman/Makefile 472062 2018-06-09 16:11:23Z amdmi3 $
+# $FreeBSD: head/games/puckman/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	puckman
 PORTVERSION=	1.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	SF/nemysisfreebsdp/${CATEGORIES}/:icons
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

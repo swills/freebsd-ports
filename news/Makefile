@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/Makefile 454648 2017-11-21 18:50:58Z rene $
+# $FreeBSD: head/news/Makefile 491596 2019-01-29 20:14:34Z tcberner $
 #
 
     COMMENT = Network news
@@ -46,6 +46,7 @@
     SUBDIR += nntpcache
     SUBDIR += noffle
     SUBDIR += nzbget
+    SUBDIR += nzbhydra2
     SUBDIR += nzbperl
     SUBDIR += p5-NNTPClient
     SUBDIR += p5-News-Article

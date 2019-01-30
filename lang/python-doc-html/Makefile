@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/python-doc-html/Makefile 404970 2016-01-01 06:35:50Z sunpoet $
+# $FreeBSD: head/lang/python-doc-html/Makefile 491392 2019-01-27 19:58:03Z sunpoet $
 
 PORTNAME=	python-doc-${DOCFORMAT}
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -14,9 +14,10 @@ COMMENT=	Documentation for the Python programming language
 
 PORTSCOUT=	ignore:1
 
+USES=		python:env tar:bzip2
+
 NO_ARCH=	yes
 NO_BUILD=	yes
-USES=		python:build tar:bzip2
 
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_VERSION}
 PLIST=		${WRKDIR}/pkg-plist.${DOCFORMAT}

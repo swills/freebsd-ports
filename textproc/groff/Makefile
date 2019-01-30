@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <uqs@FreeBSD.org>
-# $FreeBSD: head/textproc/groff/Makefile 488516 2018-12-27 08:54:55Z bapt $
+# $FreeBSD: head/textproc/groff/Makefile 491535 2019-01-29 02:02:19Z jbeich $
 
 PORTNAME=	groff
 PORTVERSION=	1.22.4
@@ -29,6 +29,11 @@ SHEBANG_FILES=	src/utils/afmtodit/afmtodit.pl \
 SHEBANG_LANG=	sed
 sed_OLD_CMD=	/bin/sed
 sed_CMD=	/usr/bin/sed
+
+.ifdef QEMU_EMULATING
+# XXX bug 224740: configure hangs: GSlice: failed to allocate 496 bytes (alignment: 512)
+CONFIGURE_ENV+=	gl_cv_func_printf_enomem=no
+.endif
 
 # Canonicalize to A4 if set.
 .if defined(A4) || (defined(PAPERSIZE) && ${PAPERSIZE:tu} == "A4")

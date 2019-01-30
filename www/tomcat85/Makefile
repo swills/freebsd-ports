@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat85/Makefile 485960 2018-11-26 19:00:45Z sunpoet $
+# $FreeBSD: head/www/tomcat85/Makefile 491372 2019-01-27 17:49:16Z swills $
 
 PORTNAME=	tomcat
-PORTVERSION=	8.5.35
+PORTVERSION=	8.5.37
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/${PORTNAME}/${PORTNAME}-${PORTVERSION:C/([0-9])(.*)/\1/}/v${PORTVERSION}/bin
 PKGNAMESUFFIX=	85
@@ -45,6 +45,8 @@ TOMCAT_HOME=	${PREFIX}/${TOMCAT_SUBDIR}
 
 post-patch:
 	@${RM} ${WRKSRC}/bin/commons-daemon-native.tar.gz ${WRKSRC}/bin/commons-daemon.jar ${WRKSRC}/bin/tomcat-native.tar.gz
+	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g; s|%%JAVAJARDIR%%|${JAVAJARDIR}|g' ${WRKSRC}/bin/daemon.sh
+	@${FIND} ${WRKSRC} -name '*.bak' -delete -o -name '*.orig' -delete
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${TOMCAT_HOME}/logs

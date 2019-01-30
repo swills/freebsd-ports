@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/editors/featherpad/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/editors/featherpad/Makefile 491113 2019-01-24 19:52:29Z jsm $
 
 PORTNAME=		featherpad
-PORTVERSION=		0.9.1
+PORTVERSION=		0.9.2
 PORTREVISION=	2
 DISTVERSIONPREFIX=	V
 CATEGORIES=		editors

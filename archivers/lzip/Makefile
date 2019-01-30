@@ -1,8 +1,8 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/archivers/lzip/Makefile 487787 2018-12-19 08:41:53Z gerald $
+# $FreeBSD: head/archivers/lzip/Makefile 491373 2019-01-27 17:57:42Z gerald $
 
 PORTNAME=	lzip
-PORTVERSION=	1.20
+PORTVERSION=	1.21
 CATEGORIES=	archivers
 MASTER_SITES=	SAVANNAH/lzip
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 490698 2019-01-19 03:01:19Z ler $
+# $FreeBSD: head/security/Makefile 491641 2019-01-30 19:06:55Z swills $
 #
 
     COMMENT = Security tools
@@ -61,6 +61,7 @@
     SUBDIR += bugs
     SUBDIR += bzrtp
     SUBDIR += ca_root_nss
+    SUBDIR += caesarcipher
     SUBDIR += calife
     SUBDIR += cardpeek
     SUBDIR += cargo-audit
@@ -185,6 +186,7 @@
     SUBDIR += gnutls
     SUBDIR += go-cve-dictionary
     SUBDIR += go.crypto
+    SUBDIR += gonepass
     SUBDIR += gopass
     SUBDIR += goptlib
     SUBDIR += gorilla
@@ -1010,10 +1012,13 @@
     SUBDIR += py-pysaml2
     SUBDIR += py-pyscard
     SUBDIR += py-pysha3
+    SUBDIR += py-python-axolotl
+    SUBDIR += py-python-axolotl-curve25519
     SUBDIR += py-python-gnupg
     SUBDIR += py-python-jose
     SUBDIR += py-python-nss
     SUBDIR += py-python-openid
+    SUBDIR += py-python-pam
     SUBDIR += py-python-registry
     SUBDIR += py-python3-openid
     SUBDIR += py-pywinrm

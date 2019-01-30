@@ -1,8 +1,8 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/net/uriparser/Makefile 487592 2018-12-16 14:31:41Z riggs $
+# $FreeBSD: head/net/uriparser/Makefile 491262 2019-01-26 10:52:44Z riggs $
 
 PORTNAME=	uriparser
-DISTVERSION=	0.9.0
+DISTVERSION=	0.9.1
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/Sources/${PORTVERSION}
 

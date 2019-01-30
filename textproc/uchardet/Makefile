@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/uchardet/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/textproc/uchardet/Makefile 491374 2019-01-27 18:06:21Z yuri $
 
 PORTNAME=	uchardet
 PORTVERSION=	0.0.6
@@ -17,5 +17,11 @@ USES=		cmake pathfix tar:xz
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DCMAKE_INSTALL_MANDIR:PATH=${MANPREFIX}/man
+
+.if defined(WITH_DEBUG)
+PLIST_SUB+=	VERSION_SIFFIX=".debug"
+.else
+PLIST_SUB+=	VERSION_SIFFIX=""
+.endif
 
 .include <bsd.port.mk>

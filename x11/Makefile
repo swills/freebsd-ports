@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 490329 2019-01-15 00:52:45Z jbeich $
+# $FreeBSD: head/x11/Makefile 491348 2019-01-27 13:31:26Z tobik $
 #
 
     COMMENT = Ports to support the X window system
@@ -335,6 +335,7 @@
     SUBDIR += wbar
     SUBDIR += wbarconf
     SUBDIR += wdm
+    SUBDIR += wl-clipboard
     SUBDIR += wmappl
     SUBDIR += wmblob
     SUBDIR += wmbutton
@@ -493,6 +494,7 @@
     SUBDIR += xsetmode
     SUBDIR += xsetpointer
     SUBDIR += xsetroot
+    SUBDIR += xsettingsd
     SUBDIR += xskyroot
     SUBDIR += xsm
     SUBDIR += xsnow

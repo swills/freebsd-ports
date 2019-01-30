@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/brainparty/Makefile 473500 2018-06-28 16:26:34Z amdmi3 $
+# $FreeBSD: head/games/brainparty/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	brainparty
 PORTVERSION=	0.61
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	https://launchpad.net/brainparty/trunk/${PORTVERSION}/+download/ \
 		http://mirror.amdmi3.ru/distfiles/

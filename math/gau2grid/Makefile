@@ -1,13 +1,9 @@
-# $FreeBSD: head/math/gau2grid/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/gau2grid/Makefile 491241 2019-01-26 06:07:05Z yuri $
 
 PORTNAME=	gau2grid
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.0
-PORTREVISION=	1
+DISTVERSION=	1.3.1
 CATEGORIES=	math python
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	0deace28eaad3359a595e384daf7bb9dd157c0d6.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Fast computation of a gaussian and its derivative on a grid

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 490614 2019-01-18 00:01:55Z jbeich $
+# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 491214 2019-01-26 00:43:01Z jbeich $
 
 PORTNAME=	libva-intel-driver
 PORTVERSION=	2.3.0
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	Only Intel GPUs on x86 are supported
 
-BUILD_DEPENDS=	libva>=2.3.0_3:multimedia/libva
+BUILD_DEPENDS=	libva>=2.4.0:multimedia/libva
 LIB_DEPENDS=	libdrm_intel.so:graphics/libdrm \
 		libva.so:multimedia/libva
 

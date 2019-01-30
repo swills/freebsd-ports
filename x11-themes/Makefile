@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 488882 2019-01-01 13:14:02Z makc $
+# $FreeBSD: head/x11-themes/Makefile 491459 2019-01-28 07:39:37Z tobik $
 #
 
     COMMENT = X11 themes
@@ -51,6 +51,7 @@
     SUBDIR += gnome-icons-iris
     SUBDIR += gnome-icons-jini
     SUBDIR += gnome-icons-lila
+    SUBDIR += gnome-icons-luv
     SUBDIR += gnome-icons-noia-full
     SUBDIR += gnome-icons-noia-warm
     SUBDIR += gnome-icons-refined

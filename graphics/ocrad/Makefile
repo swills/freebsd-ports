@@ -1,9 +1,8 @@
 # Created by: Ulrich Spoerlein <q@uni.de>
-# $FreeBSD: head/graphics/ocrad/Makefile 470593 2018-05-22 04:46:00Z yuri $
+# $FreeBSD: head/graphics/ocrad/Makefile 491242 2019-01-26 06:22:04Z yuri $
 
 PORTNAME=	ocrad
-PORTVERSION=	0.26
-PORTREVISION=	1
+DISTVERSION=	0.27
 CATEGORIES=	graphics
 MASTER_SITES=	GNU
 EXTRACT_SUFX=	.tar.lz

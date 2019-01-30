@@ -1,5 +1,5 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-9/Makefile 489349 2019-01-05 15:47:56Z rene $
+# $FreeBSD: head/www/typo3-9/Makefile 491200 2019-01-25 20:00:21Z sunpoet $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
@@ -27,7 +27,7 @@ PORTSCOUT=	limit:^${PORT_V_MAJOR}\.${PORT_V_MINOR}\.
 
 PORT_V_MAJOR=	9
 PORT_V_MINOR=	5
-PORT_V_PATCH=	3
+PORT_V_PATCH=	4
 
 TYPO3WWW=	www
 TYPO3SRC=	${PORTNAME}_src-${PORTVERSION}

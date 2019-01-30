@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/baudline/Makefile 455501 2017-12-04 09:00:26Z amdmi3 $
+# $FreeBSD: head/audio/baudline/Makefile 491323 2019-01-27 04:15:45Z yuri $
 
 PORTNAME=	baudline
 PORTVERSION=	1.08
@@ -28,6 +28,7 @@ OPTIONS_DEFAULT=	MPG123
 
 MMPG123_RUN_DEPENDS=	mpg123:audio/mpg123
 
+.include <bsd.port.pre.mk>
 .if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}) && !defined(PACKAGE_BUILDING)
 IGNORE=		may not be automatically fetched due to licensing\
 		restrictions. You must manually fetch ${DISTFILES} from\
@@ -46,4 +47,4 @@ do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

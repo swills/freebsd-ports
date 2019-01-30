@@ -1,5 +1,5 @@
 # Created by: Eivind Eklund <eivind@FreeBSD.org>
-# $FreeBSD: head/devel/re2c/Makefile 410256 2016-03-06 06:19:32Z sunpoet $
+# $FreeBSD: head/devel/re2c/Makefile 491548 2019-01-29 09:00:37Z amdmi3 $
 
 PORTNAME=	re2c
 PORTVERSION=	0.14.3
@@ -8,6 +8,8 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	chalpin@cs.wisc.edu
 COMMENT=	Compile regular expression to C (much faster final code than flex)
+
+LICENSE=	PD
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/goawk/Makefile 491027 2019-01-23 09:37:07Z yuri $
+# $FreeBSD: head/sysutils/goawk/Makefile 491237 2019-01-26 05:26:14Z yuri $
 
 PORTNAME=	goawk
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.4.0
+DISTVERSION=	1.4.1
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org

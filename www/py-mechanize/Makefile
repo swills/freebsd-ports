@@ -1,11 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/www/py-mechanize/Makefile 483444 2018-10-30 02:41:08Z lwhsu $
+# $FreeBSD: head/www/py-mechanize/Makefile 491292 2019-01-26 13:42:33Z lwhsu $
 
 PORTNAME=	mechanize
-PORTVERSION=	0.3.7
+PORTVERSION=	0.4.0
 CATEGORIES=	www python
-MASTER_SITES=	CHEESESHOP \
-		http://wwwsearch.sourceforge.net/mechanize/src/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	lwhsu@FreeBSD.org
@@ -13,7 +12,7 @@ COMMENT=	Stateful programmatic web browsing in Python
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

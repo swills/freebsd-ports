@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jsonpickle/Makefile 481431 2018-10-07 06:24:19Z yuri $
+# $FreeBSD: head/devel/py-jsonpickle/Makefile 491230 2019-01-26 04:09:04Z yuri $
 
 PORTNAME=	jsonpickle
-DISTVERSION=	1.0
+DISTVERSION=	1.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

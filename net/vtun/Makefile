@@ -1,9 +1,9 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/net/vtun/Makefile 488419 2018-12-26 18:35:26Z mat $
+# $FreeBSD: head/net/vtun/Makefile 491100 2019-01-24 17:00:00Z mat $
 
 PORTNAME=	vtun
 PORTVERSION=	3.0.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	SF
 

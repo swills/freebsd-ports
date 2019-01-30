@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/databases/py-python-swiftclient/Makefile 479879 2018-09-16 08:23:41Z trociny $
+# $FreeBSD: head/databases/py-python-swiftclient/Makefile 491467 2019-01-28 09:30:37Z amdmi3 $
 
 PORTNAME=	python-swiftclient
 PORTVERSION=	3.6.0
@@ -11,6 +11,7 @@ MAINTAINER=	trociny@FreeBSD.org
 COMMENT=	Python client library for OpenStack Object Storage (Swift)
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.5.21:devel/py-pbr@${PY_FLAVOR}
 
@@ -21,6 +22,7 @@ RUN_DEPENDS+=	${PY_FUTURES} \
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/manpages/swift.1 \

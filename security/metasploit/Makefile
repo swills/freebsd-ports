@@ -1,8 +1,8 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/metasploit/Makefile 490049 2019-01-12 11:49:32Z antoine $
+# $FreeBSD: head/security/metasploit/Makefile 491437 2019-01-27 21:32:03Z antoine $
 
 PORTNAME=	metasploit
-PORTVERSION=	4.17.35
+PORTVERSION=	4.17.37
 CATEGORIES=	security
 
 MAINTAINER=	tanawts@gmail.com

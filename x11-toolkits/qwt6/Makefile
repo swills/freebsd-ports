@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/qwt6/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11-toolkits/qwt6/Makefile 491327 2019-01-27 08:40:08Z pi $
 
 PORTNAME=	qwt
-PORTVERSION=	6.1.3
-PORTREVISION=	6
+PORTVERSION=	6.1.4
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	6-${FLAVOR}
@@ -32,6 +31,7 @@ USE_QT=		corelib designer gui opengl svg xml moc_build rcc_build script
 .else
 USES+=		compiler:c++11-lang qt:5
 USE_QT=		buildtools_build widgets gui core designer gui opengl svg xml printsupport concurrent
+PLIST_FILES=	${PREFIX}/${QT_PLUGINDIR_REL}/designer/libqwt6_designer_plugin.so
 .endif
 
 OPTIONS_DEFINE=	DOCS

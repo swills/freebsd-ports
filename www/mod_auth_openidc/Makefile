@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/mod_auth_openidc/Makefile 481449 2018-10-07 15:31:04Z zi $
+# $FreeBSD: head/www/mod_auth_openidc/Makefile 491585 2019-01-29 17:16:56Z zi $
 
 PORTNAME=	mod_auth_openidc
-PORTVERSION=	2.3.8
+PORTVERSION=	2.3.10.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/freedroidrpg/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/games/freedroidrpg/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	freedroidrpg
 PORTVERSION=	0.16.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.osuosl.org/pub/freedroid/freedroidRPG-${PORTVERSION:R}/ \
 		http://mirror.amdmi3.ru/distfiles/

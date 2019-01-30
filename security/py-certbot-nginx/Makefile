@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-certbot-nginx/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-certbot-nginx/Makefile 491198 2019-01-25 20:00:07Z sunpoet $
 
 PORTNAME=	certbot-nginx
 PORTVERSION=	${ACME_VERSION}
@@ -31,7 +31,7 @@ DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAV
 			${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme@${PY_FLAVOR}
 
 post-patch:
-	@${REINPLACE_CMD} -e '/server_root=/ s|/etc/nginx|${LOCALBASE}&|' ${WRKSRC}/certbot_nginx/constants.py
+	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' ${WRKSRC}/certbot_nginx/constants.py
 
 .include "${.CURDIR}/../py-acme/version.mk"
 .include <bsd.port.mk>

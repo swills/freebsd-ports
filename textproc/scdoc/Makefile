@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/scdoc/Makefile 490847 2019-01-21 09:59:38Z jbeich $
+# $FreeBSD: head/textproc/scdoc/Makefile 491529 2019-01-29 00:46:58Z jbeich $
 
 PORTNAME=	scdoc
-DISTVERSION=	1.6.1
+DISTVERSION=	1.8.0
 CATEGORIES=	textproc
 MASTER_SITES=	https://git.sr.ht/~sircmpwn/${PORTNAME}/archive/
 DISTFILES=	${DISTVERSIONFULL}${EXTRACT_SUFX}

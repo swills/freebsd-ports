@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/py-nbxmpp/Makefile 474391 2018-07-10 17:05:45Z rm $
+# $FreeBSD: head/net-im/py-nbxmpp/Makefile 491267 2019-01-26 11:06:36Z rm $
 
 PORTNAME=	nbxmpp
-PORTVERSION=	0.6.6
+PORTVERSION=	0.6.9
 CATEGORIES=	net-im devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

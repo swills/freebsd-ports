@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/qonk/Makefile 426724 2016-11-21 14:52:46Z amdmi3 $
+# $FreeBSD: head/games/qonk/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	qonk
 PORTVERSION=	0.3.1
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

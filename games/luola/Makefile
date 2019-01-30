@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/luola/Makefile 472065 2018-06-09 16:13:21Z amdmi3 $
+# $FreeBSD: head/games/luola/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	luola
 PORTVERSION=	1.3.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/${DIST_SUBDIR}/ # master site gone
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/httpclient/Makefile 475246 2018-07-24 12:45:51Z ale $
+# $FreeBSD: head/www/httpclient/Makefile 491626 2019-01-30 13:18:24Z ale $
 
 PORTNAME=	httpclient
-DISTVERSION=	4.5.6
+DISTVERSION=	4.5.7
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/httpcomponents/${PORTNAME}/binary
 DISTNAME=	httpcomponents-client-${DISTVERSION}-bin

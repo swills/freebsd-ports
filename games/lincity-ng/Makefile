@@ -1,9 +1,9 @@
 # Created by: Andrej Zverev
-# $FreeBSD: head/games/lincity-ng/Makefile 489092 2019-01-02 17:09:05Z mmokhi $
+# $FreeBSD: head/games/lincity-ng/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	lincity-ng
 PORTVERSION=	2.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	games
 MASTER_SITES=	BERLIOS
 

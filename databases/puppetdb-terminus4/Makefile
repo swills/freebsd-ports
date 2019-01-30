@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb-terminus4/Makefile 480788 2018-09-27 08:06:17Z romain $
+# $FreeBSD: head/databases/puppetdb-terminus4/Makefile 491169 2019-01-25 18:08:56Z romain $
 
 PORTNAME=	puppetdb-terminus
 PORTVERSION=	4.4.0
@@ -11,6 +11,9 @@ MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	PuppetDB storeconfigs backend terminus module
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Puppet 4 has reached EOL
+EXPIRATION_DATE=2019-02-28
 
 BUILD_DEPENDS=	puppet4>=0:sysutils/puppet4
 

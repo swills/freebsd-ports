@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/aster/Makefile 489501 2019-01-06 15:33:44Z tobik $
+# $FreeBSD: head/french/aster/Makefile 491307 2019-01-26 18:12:23Z thierry $
 
 PORTNAME=	aster
 DISTVERSION=	${ASTER_DISTVERSION}
@@ -14,8 +14,8 @@ LICENSE=	GPLv2
 DEPRECATED=		Qt4 has been EOL since december 2015
 EXPIRATION_DATE=	2019-03-15
 
-BROKEN_FreeBSD_12=	does not build (sed: ${STAGEDIR}${inst_dir}/${VE}/aster.conf: No such file or directory)
-BROKEN_FreeBSD_13=	does not build (sed: ${STAGEDIR}${inst_dir}/${VE}/aster.conf: No such file or directory)
+BROKEN_FreeBSD_12=	does not build (conflicting types for 'WritePermutation' ibc/renum/onmetl.c vs /usr/local/include/programs/proto.h)
+BROKEN_FreeBSD_13=	does not build (conflicting types for 'WritePermutation' ibc/renum/onmetl.c vs /usr/local/include/programs/proto.h)
 
 #-----------------------------------------------------------------------
 # You may define these options:

@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-sqlalchemy12/Makefile 490030 2019-01-12 09:18:59Z sunpoet $
+# $FreeBSD: head/databases/py-sqlalchemy12/Makefile 491277 2019-01-26 12:43:10Z sunpoet $
 
 PORTNAME=	sqlalchemy
-PORTVERSION=	1.2.16
+PORTVERSION=	1.2.17
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

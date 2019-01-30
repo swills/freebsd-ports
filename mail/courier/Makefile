@@ -1,5 +1,5 @@
 # Created by: Yarema <yds@CoolRat.org>
-# $FreeBSD: head/mail/courier/Makefile 473439 2018-06-27 13:55:56Z mat $
+# $FreeBSD: head/mail/courier/Makefile 491312 2019-01-26 20:58:01Z tobik $
 
 PORTNAME=	courier
 PORTVERSION=	0.65.3
@@ -24,7 +24,7 @@ RUN_DEPENDS=	courierauthconfig:security/courier-authlib-base \
 
 CONFLICTS=	courier-imap-2.* couriermlm-0.* \
 		exim-4.* maildrop-1.* \
-		postfix-1.* postfix-2.* \
+		panda-imap-201* postfix-1.* postfix-2.* \
 		qmail-*-1.* qmail-1.* \
 		sendmail-*-8.* sendmail-8.* \
 		smail-3.* sqwebmail-3.* \

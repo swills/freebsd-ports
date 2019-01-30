@@ -1,8 +1,9 @@
 # Created by: Marko Njezic <sf@maxempire.com>
-# $FreeBSD: head/security/clamav-unofficial-sigs/Makefile 465959 2018-03-30 11:08:35Z pi $
+# $FreeBSD: head/security/clamav-unofficial-sigs/Makefile 491514 2019-01-28 19:37:02Z tobik $
 
 PORTNAME=	clamav-unofficial-sigs
 PORTVERSION=	5.6.2
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	sf@maxempire.com

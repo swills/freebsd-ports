@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/cad/gerbv/Makefile 458279 2018-01-06 15:07:06Z wen $
+# $FreeBSD: head/cad/gerbv/Makefile 491120 2019-01-24 21:49:48Z fernape $
 
 PORTNAME=	gerbv
-PORTVERSION=	2.6.2
+PORTVERSION=	2.7.0
 CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -12,11 +12,16 @@ COMMENT=	Gerber file viewer
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		autoreconf desktop-file-utils gmake libtool localbase pathfix pkgconfig
-USE_GNOME=	gtk20
+LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
+
+USES=		autoreconf desktop-file-utils gmake gnome \
+		libtool localbase pathfix pkgconfig
+USE_GNOME=	cairo gtk20
+USE_LDCONFIG=	yes
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_aux_dir="."
-USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 

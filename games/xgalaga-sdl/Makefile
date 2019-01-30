@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/xgalaga-sdl/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/games/xgalaga-sdl/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	xgalaga-sdl
 PORTVERSION=	2.1.1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

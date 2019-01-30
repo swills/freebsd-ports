@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-config/Makefile 482690 2018-10-21 16:49:57Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-config/Makefile 491193 2019-01-25 19:59:38Z sunpoet $
 
 PORTNAME=	tty-config
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

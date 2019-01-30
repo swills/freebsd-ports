@@ -1,9 +1,8 @@
 # Created by: elvstone@gmail.com
-# $FreeBSD: head/databases/py-sqlalchemy-migrate/Makefile 490061 2019-01-12 15:39:59Z pi $
+# $FreeBSD: head/databases/py-sqlalchemy-migrate/Makefile 491305 2019-01-26 17:49:04Z lwhsu $
 
 PORTNAME=	sqlalchemy-migrate
-PORTVERSION=	0.11.0
-PORTREVISION=	1
+PORTVERSION=	0.12.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

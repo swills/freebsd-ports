@@ -1,9 +1,8 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/dns/knot-resolver/Makefile 487015 2018-12-09 03:11:21Z swills $
+# $FreeBSD: head/dns/knot-resolver/Makefile 491115 2019-01-24 20:07:22Z tcberner $
 
 PORTNAME=	knot-resolver
-DISTVERSION=	3.1.0
-PORTREVISION=	2
+DISTVERSION=	3.2.1
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://secure.nic.cz/files/knot-resolver/ \
 		https://dns.company/downloads/knot-resolver/

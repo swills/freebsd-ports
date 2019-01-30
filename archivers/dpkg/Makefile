@@ -1,9 +1,8 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/archivers/dpkg/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/archivers/dpkg/Makefile 491244 2019-01-26 06:49:36Z tcberner $
 
 PORTNAME=	dpkg
-PORTVERSION=	1.19.2
-PORTREVISION=	1
+PORTVERSION=	1.19.4
 CATEGORIES=	archivers sysutils
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	dpkg_${PORTVERSION}

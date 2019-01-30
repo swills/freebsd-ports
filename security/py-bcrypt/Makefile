@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/py-bcrypt/Makefile 487394 2018-12-13 23:08:40Z dbaio $
+# $FreeBSD: head/security/py-bcrypt/Makefile 491297 2019-01-26 15:10:08Z dbaio $
 
 PORTNAME=	bcrypt
-PORTVERSION=	3.1.5
+PORTVERSION=	3.1.6
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

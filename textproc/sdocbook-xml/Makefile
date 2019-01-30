@@ -1,5 +1,5 @@
 # Created by: KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
-# $FreeBSD: head/textproc/sdocbook-xml/Makefile 472907 2018-06-20 19:35:30Z sunpoet $
+# $FreeBSD: head/textproc/sdocbook-xml/Makefile 491328 2019-01-27 09:00:37Z amdmi3 $
 
 PORTNAME=	sdocbook-xml
 PORTVERSION=	1.1
@@ -11,6 +11,11 @@ DISTNAME=	docbook-simple-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	"Simplified" DocBook XML DTD
+
+LICENSE=	OASIS
+LICENSE_NAME=	OASIS License
+LICENSE_TEXT=	License text is available in all files installed by this port
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 RUN_DEPENDS+=	xmlcatmgr:textproc/xmlcatmgr
 

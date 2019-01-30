@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 489653 2019-01-08 08:29:44Z yuri $
+# $FreeBSD: head/multimedia/Makefile 491259 2019-01-26 10:48:48Z tobik $
 #
 
     COMMENT = Multimedia software
@@ -92,6 +92,7 @@
     SUBDIR += gnome-mplayer
     SUBDIR += gnome-mpv
     SUBDIR += gnome-subtitles
+    SUBDIR += gnome-twitch
     SUBDIR += gpac-libgpac
     SUBDIR += gpac-mp4box
     SUBDIR += gpodder

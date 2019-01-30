@@ -1,8 +1,7 @@
-# $FreeBSD: head/science/py-pymatgen/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/py-pymatgen/Makefile 491243 2019-01-26 06:27:42Z yuri $
 
 PORTNAME=	pymatgen
-DISTVERSION=	2018.9.30
-PORTREVISION=	1
+DISTVERSION=	2018.10.18
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

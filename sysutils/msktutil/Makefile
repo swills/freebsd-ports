@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/msktutil/Makefile 459280 2018-01-17 18:52:58Z zi $
+# $FreeBSD: head/sysutils/msktutil/Makefile 491505 2019-01-28 18:37:25Z tobik $
 
 PORTNAME=	msktutil
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME} \
 		ZI
@@ -13,6 +13,8 @@ COMMENT=	Utility to manage Active Directory interoperability
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	libudns.so:dns/udns
 
 USES=		gmake ssl tar:bzip2
 USE_OPENLDAP=	yes

@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-stix2/Makefile 487915 2018-12-20 19:53:55Z antoine $
+# $FreeBSD: head/security/py-stix2/Makefile 491438 2019-01-27 21:37:34Z antoine $
 
 PORTNAME=	stix2
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

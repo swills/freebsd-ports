@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/pecl-mcrypt/Makefile 489349 2019-01-05 15:47:56Z rene $
+# $FreeBSD: head/security/pecl-mcrypt/Makefile 491469 2019-01-28 09:33:56Z pizzamig $
 
 PORTNAME=	mcrypt
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	security pear
 
 MAINTAINER=	pizzamig@FreeBSD.org

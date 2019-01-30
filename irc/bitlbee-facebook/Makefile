@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/irc/bitlbee-facebook/Makefile 449019 2017-08-31 09:49:36Z gahr $
+# $FreeBSD: head/irc/bitlbee-facebook/Makefile 491143 2019-01-25 09:54:00Z gahr $
 
 PORTNAME=	bitlbee-facebook
-PORTVERSION=	1.1.2
+PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=v
 PORTEPOCH=	1
 CATEGORIES=	irc

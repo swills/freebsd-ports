@@ -1,12 +1,12 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-current-kmod/Makefile 487273 2018-12-12 02:13:56Z jmd $
+# $FreeBSD: head/graphics/drm-current-kmod/Makefile 491609 2019-01-30 07:58:00Z zeising $
 
 PORTNAME=	drm-current-kmod
 PORTVERSION=	4.16.g20181210
 CATEGORIES=	graphics kld
 
 MAINTAINER=	jmd@FreeBSD.org
-COMMENT=	DRM modules for the linuxkpi-based KMS components (development version)
+COMMENT=	DRM modules for the linuxkpi-based KMS components
 
 LICENSE=	BSD2CLAUSE MIT GPLv2
 LICENSE_COMB=	multi

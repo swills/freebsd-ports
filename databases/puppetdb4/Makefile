@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb4/Makefile 480788 2018-09-27 08:06:17Z romain $
+# $FreeBSD: head/databases/puppetdb4/Makefile 491169 2019-01-25 18:08:56Z romain $
 
 PORTNAME=	puppetdb
 PORTVERSION=	4.4.0
@@ -10,6 +10,9 @@ MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	PuppetDB storeconfigs backend
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Puppet 4 has reached EOL
+EXPIRATION_DATE=2019-02-28
 
 RUN_DEPENDS=	bash:shells/bash \
 		puppet:sysutils/puppet4

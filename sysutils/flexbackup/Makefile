@@ -1,9 +1,9 @@
 # Created by: John Reynolds <johnjen@reynoldsnet.org>
-# $FreeBSD: head/sysutils/flexbackup/Makefile 434924 2017-02-27 12:18:35Z amdmi3 $
+# $FreeBSD: head/sysutils/flexbackup/Makefile 491550 2019-01-29 09:31:38Z tobik $
 
 PORTNAME=	flexbackup
 PORTVERSION=	1.2.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.edwinh.org/flexbackup/tarball/ \
 		http://www.reynoldsnet.org/flexbackup/tarball/

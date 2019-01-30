@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/x11-fonts/droid-fonts-ttf/Makefile 490663 2019-01-18 18:48:41Z sunpoet $
+# $FreeBSD: head/x11-fonts/droid-fonts-ttf/Makefile 491181 2019-01-25 19:58:35Z sunpoet $
 
 PORTNAME=	droid-fonts-ttf
 PORTVERSION=	20131024
@@ -8,13 +8,14 @@ CATEGORIES=	x11-fonts
 MASTER_SITES=	LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	The Droid typeface family
+COMMENT=	Droid typeface family
 
 LICENSE=	APACHE20
 
+USES=		fonts tar:xz
+
 NO_ARCH=	yes
 NO_BUILD=	yes
-USES=		fonts tar:xz
 
 FONTNAME=	Droid
 

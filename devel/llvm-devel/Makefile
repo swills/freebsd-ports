@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 490683 2019-01-19 00:05:09Z brooks $
+# $FreeBSD: head/devel/llvm-devel/Makefile 491521 2019-01-28 23:32:45Z brooks $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.0.d${SNAPDATE}
@@ -11,6 +11,10 @@ MAINTAINER=	brooks@FreeBSD.org
 COMMENT=	LLVM and Clang
 
 .include "Makefile.LICENSE"
+LICENSE+=	LLVM2
+LICENSE_FILE_LLVM2=	${WRKSRC}/LICENSE.TXT
+LICENSE_NAME_LLVM2= 	Apache License 2.0 with LLVM Exceptions
+LICENSE_PERMS_LLVM2=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 LLVM_SUFFIX=	-devel
 LLVM_PREFIX=	${PREFIX}/llvm${LLVM_SUFFIX}
@@ -420,10 +424,6 @@ post-patch-CLANG-on:
 	    ${PATCH_WRKSRC}/tools/clang/tools/clang-format/clang-format.py \
 	    ${PATCH_WRKSRC}/tools/clang/tools/clang-format/clang-format-sublime.py \
 	    ${PATCH_WRKSRC}/tools/clang/tools/clang-format/git-clang-format
-
-post-patch-COMPILER_RT-on:
-	cd ${WRKSRC_compiler_rt} && \
-	${PATCH} -p0 < ${PATCHDIR}/compiler-rt-safestack_platform.h
 
 post-build-COMPILER_RT-on:
 	${MKDIR} ${WRKDIR}/compiler-rt-build

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 490961 2019-01-22 16:26:49Z mat $
+# $FreeBSD: head/math/Makefile 491519 2019-01-28 21:59:41Z se $
 #
 
     COMMENT = Mathematics
@@ -235,6 +235,7 @@
     SUBDIR += geonext
     SUBDIR += gexpr
     SUBDIR += ggobi
+    SUBDIR += gh-bc
     SUBDIR += giacxcas
     SUBDIR += givaro
     SUBDIR += gkmap

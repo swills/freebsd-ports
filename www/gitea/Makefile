@@ -1,9 +1,9 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/www/gitea/Makefile 490635 2019-01-18 11:46:26Z swills $
+# $FreeBSD: head/www/gitea/Makefile 491299 2019-01-26 16:25:36Z joneum $
 
 PORTNAME=	gitea
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.6.4
+DISTVERSION=	1.7.0
 CATEGORIES=	www
 
 MAINTAINER=	stb@lassitu.de
@@ -36,7 +36,7 @@ OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
 
 CERT_VARS=	GO_TAGS+=cert
 PAM_VARS=	GO_TAGS+=pam
-SQLITE_VARS=	GO_TAGS+=sqlite
+SQLITE_VARS=	GO_TAGS+="sqlite sqlite_unlock_notify"
 
 .include <bsd.port.options.mk>
 

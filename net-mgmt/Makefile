@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 490387 2019-01-15 16:44:30Z egypcio $
+# $FreeBSD: head/net-mgmt/Makefile 491486 2019-01-28 13:48:10Z 0mp $
 #
 
     COMMENT = Network management tools
@@ -40,6 +40,7 @@
     SUBDIR += centreon-clib
     SUBDIR += check_ipmi_sensor
     SUBDIR += check_logfiles
+    SUBDIR += check_mk_agent
     SUBDIR += check_multi
     SUBDIR += check_mysql_health
     SUBDIR += check_ssl_cert
@@ -208,6 +209,7 @@
     SUBDIR += nsca27-client
     SUBDIR += nstat
     SUBDIR += nstreams
+    SUBDIR += nvidia_gpu_prometheus_exporter
     SUBDIR += observium
     SUBDIR += ocsinventory-agent
     SUBDIR += ocsinventory-ocsreports

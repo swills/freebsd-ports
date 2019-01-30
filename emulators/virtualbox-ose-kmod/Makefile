@@ -1,10 +1,10 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/emulators/virtualbox-ose-kmod/Makefile 490486 2019-01-16 15:19:45Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose-kmod/Makefile 491592 2019-01-29 19:24:30Z jkim $
 
 PORTNAME=	virtualbox-ose
-PORTVERSION=	5.2.24
+PORTVERSION=	5.2.26
 CATEGORIES=	emulators
-MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
+MASTER_SITES=	https://download.virtualbox.org/virtualbox/${PORTVERSION}/
 PKGNAMESUFFIX=	-kmod
 DISTNAME=	VirtualBox-${PORTVERSION}
 

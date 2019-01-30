@@ -1,9 +1,8 @@
-# $FreeBSD: head/multimedia/cmrtlib/Makefile 491071 2019-01-24 00:14:35Z jbeich $
+# $FreeBSD: head/multimedia/cmrtlib/Makefile 491603 2019-01-30 05:28:56Z jbeich $
 
 PORTNAME=	cmrtlib
 DISTVERSIONPREFIX=	intel-media-
-DISTVERSION=	18.4.pre5-41
-DISTVERSIONSUFFIX=	-gd31ce0b9
+DISTVERSION=	18.4.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org

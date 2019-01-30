@@ -1,5 +1,5 @@
 # Created by: pst
-# $FreeBSD: head/audio/gsm/Makefile 451965 2017-10-13 08:58:28Z bapt $
+# $FreeBSD: head/audio/gsm/Makefile 491462 2019-01-28 09:00:35Z amdmi3 $
 
 PORTNAME=	gsm
 PORTVERSION=	1.0.13
@@ -11,6 +11,11 @@ MASTER_SITES=	ftp://ftp.dvo.ru/pub/Gentoo/distfiles/ \
 
 MAINTAINER=	m.tsatsenko@gmail.com
 COMMENT=	Audio converter and library for converting u-law to gsm encoding
+
+LICENSE=	TU-BERLIN
+LICENSE_NAME=	Technische Universitaet Berlin copyright
+LICENSE_FILE=	${WRKSRC}/COPYRIGHT
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 WRKSRC=		${WRKDIR}/gsm-1.0-pl13
 

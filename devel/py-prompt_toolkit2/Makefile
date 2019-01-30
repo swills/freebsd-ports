@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-prompt_toolkit2/Makefile 486676 2018-12-05 14:34:29Z swills $
+# $FreeBSD: head/devel/py-prompt_toolkit2/Makefile 491479 2019-01-28 12:32:37Z swills $
 
 PORTNAME=	prompt_toolkit
-PORTVERSION=	2.0.7
+PORTVERSION=	2.0.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

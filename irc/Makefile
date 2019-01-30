@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/Makefile 488136 2018-12-22 21:48:45Z tcberner $
+# $FreeBSD: head/irc/Makefile 491132 2019-01-25 08:04:01Z tobik $
 #
 
     COMMENT = Internet Relay Chat utilities
@@ -8,6 +8,7 @@
     SUBDIR += bip
     SUBDIR += bitchx
     SUBDIR += bitlbee
+    SUBDIR += bitlbee-discord
     SUBDIR += bitlbee-facebook
     SUBDIR += bitlbee-steam
     SUBDIR += bnc

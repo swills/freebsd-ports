@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 489493 2019-01-06 13:28:24Z jbeich $
+# $FreeBSD: head/x11-wm/Makefile 491571 2019-01-29 15:12:52Z jsm $
 #
 
     COMMENT = X11 window managers
@@ -73,7 +73,9 @@
     SUBDIR += lwm
     SUBDIR += lxappearance-obconf
     SUBDIR += lxmed
+    SUBDIR += lxqt
     SUBDIR += lxqt-panel
+    SUBDIR += lxqt-session
     SUBDIR += lxsession
     SUBDIR += marco
     SUBDIR += matwm2

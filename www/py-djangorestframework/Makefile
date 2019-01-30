@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-djangorestframework/Makefile 467652 2018-04-17 19:25:05Z pi $
+# $FreeBSD: head/www/py-djangorestframework/Makefile 491584 2019-01-29 16:36:53Z miwi $
 
 PORTNAME=	djangorestframework
-DISTVERSION=	3.8.2
+DISTVERSION=	3.9.0
 PORTEPOCH=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP

@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 490961 2019-01-22 16:26:49Z mat $
+# $FreeBSD: head/biology/Makefile 491546 2019-01-29 07:56:30Z yuri $
 #
 
     COMMENT = Biology
@@ -25,6 +25,7 @@
     SUBDIR += cytoscape
     SUBDIR += ddocent
     SUBDIR += diamond
+    SUBDIR += dsr-pdb
     SUBDIR += emboss
     SUBDIR += exonerate
     SUBDIR += fasta

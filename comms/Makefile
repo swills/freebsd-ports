@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 489494 2019-01-06 13:33:31Z pi $
+# $FreeBSD: head/comms/Makefile 491334 2019-01-27 09:32:14Z tcberner $
 #
 
     COMMENT = Communication utilities
@@ -158,6 +158,7 @@
     SUBDIR += rubygem-serialport
     SUBDIR += rxtx
     SUBDIR += scmxx
+    SUBDIR += scrcpy
     SUBDIR += sdr-wspr
     SUBDIR += ser2net
     SUBDIR += serialoverip
