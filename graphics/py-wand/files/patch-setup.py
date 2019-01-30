@@ -1,9 +1,9 @@
---- setup.py.orig	2016-10-22 05:27:48 UTC
+--- setup.py.orig	2018-12-11 11:37:54 UTC
 +++ setup.py
-@@ -35,7 +35,6 @@ else:
+@@ -40,7 +40,6 @@ test_requires = [
  setup(
      name='Wand',
-     packages=['wand'],
+     packages=['wand', 'wand.cdefs'],
 -    data_files=[('', ['README.rst'])],
      version=VERSION,
      description='Ctypes-based simple MagickWand API binding for Python',

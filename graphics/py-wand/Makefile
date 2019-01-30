@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	Wand
-PORTVERSION=	0.4.5
+PORTVERSION=	0.5.0
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ COMMENT=	MagickWand Python binding
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
+LIB_DEPENDS=	libMagickWand-7.so:graphics/ImageMagick7
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
