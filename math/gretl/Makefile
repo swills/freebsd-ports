@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/math/gretl/Makefile 488122 2018-12-22 18:46:57Z yuri $
+# $FreeBSD: head/math/gretl/Makefile 491233 2019-01-26 05:19:20Z yuri $
 
 PORTNAME=	gretl
-DISTVERSION=	2018d
+DISTVERSION=	2019a
 CATEGORIES=	math finance
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTVERSIONFULL}/
 

@@ -1,5 +1,5 @@
 # Created by: David
-# $FreeBSD: head/comms/ncid/Makefile 490459 2019-01-16 09:26:04Z egypcio $
+# $FreeBSD: head/comms/ncid/Makefile 491610 2019-01-30 08:56:13Z egypcio $
 
 PORTNAME=	ncid
 PORTVERSION=	1.10
@@ -59,6 +59,10 @@ post-patch:
 		-e 's|$$(prefix)/share|$${PREFIX}/share|g' \
 		-e 's|$$(SHARE)/man|$${MANPREFIX}/man/|g' \
 		-e 's|$$(SHARE)/ncid|$${DATADIR}|g' ${WRKSRC}/Makefile
+.if exists(/usr/lib/libstdc++.so)
+	@${REINPLACE_CMD} -e 's|-Wno-stringop-truncation||g' \
+		${WRKSRC}/Makefile ${WRKSRC}/server/Makefile
+.endif
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${ETCDIR}

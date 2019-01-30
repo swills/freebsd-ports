@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/math/gnubc/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/math/gnubc/Makefile 491519 2019-01-28 21:59:41Z se $
 
 PORTNAME=	bc
 DISTVERSION=	1.07.1
@@ -31,6 +31,8 @@ PORTEXAMPLES=	ckbook.b \
 		twins.b
 
 OPTIONS_DEFINE=	EXAMPLES
+
+CONFLICTS_INSTALL=	gh-bc-[0-9]*
 
 post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

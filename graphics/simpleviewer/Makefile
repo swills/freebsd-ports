@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/simpleviewer/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/simpleviewer/Makefile 491246 2019-01-26 08:01:17Z tobik $
 
 PORTNAME=	simpleviewer
 PORTVERSION=	2.92
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	https://bitbucket.org/andreyu/simple-viewer-gl/get/
 DISTNAME=	v${PORTVERSION}	# version tag, thus no embedded ${PORTNAME}
@@ -32,8 +32,16 @@ USE_XORG=	ice sm x11 xcursor xext xinerama xrandr xxf86vm
 WRKSRC=		${WRKDIR}/andreyu-simple-viewer-gl-b3bd8710e176
 
 PLIST_FILES=	bin/sviewgl
+PORTEXAMPLES=	config.example
+SUB_FILES=	pkg-message
+
+OPTIONS_DEFINE=	EXAMPLES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sviewgl ${STAGEDIR}${PREFIX}/bin
+
+do-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/config.example ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

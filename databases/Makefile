@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 490961 2019-01-22 16:26:49Z mat $
+# $FreeBSD: head/databases/Makefile 491455 2019-01-28 06:12:18Z yuri $
 #
 
     COMMENT = Databases and related software
@@ -28,6 +28,7 @@
     SUBDIR += buzhug
     SUBDIR += c3p0
     SUBDIR += cassandra-cpp-driver
+    SUBDIR += cassandra3
     SUBDIR += casstcl
     SUBDIR += cayley
     SUBDIR += cdb

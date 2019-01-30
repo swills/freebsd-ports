@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 490961 2019-01-22 16:26:49Z mat $
+# $FreeBSD: head/science/Makefile 491468 2019-01-28 09:33:12Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -102,6 +102,7 @@
     SUBDIR += hdf
     SUBDIR += hdf5
     SUBDIR += hdf5-18
+    SUBDIR += healpix
     SUBDIR += hypre
     SUBDIR += iboview
     SUBDIR += isaac-cfd
@@ -163,6 +164,7 @@
     SUBDIR += netcdf-fortran
     SUBDIR += nifticlib
     SUBDIR += nwchem
+    SUBDIR += nwchem-data
     SUBDIR += octopus
     SUBDIR += openbabel
     SUBDIR += openkim

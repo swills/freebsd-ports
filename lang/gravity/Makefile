@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/gravity/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/lang/gravity/Makefile 491542 2019-01-29 04:58:45Z yuri $
 
 PORTNAME=	gravity
-DISTVERSION=	0.6.1
+DISTVERSION=	0.6.3
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-lang
 

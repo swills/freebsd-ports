@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-ddtrace/Makefile 490651 2019-01-18 18:42:09Z sunpoet $
+# $FreeBSD: head/devel/py-ddtrace/Makefile 491645 2019-01-30 19:22:01Z sunpoet $
 
 PORTNAME=	ddtrace
-PORTVERSION=	0.20.1
+PORTVERSION=	0.20.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

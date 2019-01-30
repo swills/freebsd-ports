@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-livereload/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-livereload/Makefile 491576 2019-01-29 16:15:26Z miwi $
 
 PORTNAME=	livereload
-DISTVERSION=	2.5.2
+DISTVERSION=	2.6.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,6 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

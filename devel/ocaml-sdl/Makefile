@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/ocaml-sdl/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/devel/ocaml-sdl/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	sdl
 PORTVERSION=	0.9.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	SF/ocaml${PORTNAME}/OCamlSDL/ocaml${PORTNAME}-${PORTVERSION}
 PKGNAMEPREFIX=	ocaml-

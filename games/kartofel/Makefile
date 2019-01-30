@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/kartofel/Makefile 479998 2018-09-18 08:47:31Z linimon $
+# $FreeBSD: head/games/kartofel/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	kartofel
 PORTVERSION=	1.2
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	games
 MASTER_SITES=	http://kartofel.jfedor.org/downloads/ \
 		http://mirror.amdmi3.ru/distfiles/

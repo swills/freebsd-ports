@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 490963 2019-01-22 18:02:49Z amdmi3 $
+# $FreeBSD: head/graphics/Makefile 491381 2019-01-27 19:56:04Z sunpoet $
 #
 
     COMMENT = Graphics tools and libraries
@@ -890,6 +890,7 @@
     SUBDIR += py-traitsui
     SUBDIR += py-wand
     SUBDIR += py-webcolors
+    SUBDIR += py-willow
     SUBDIR += py-yaswfp
     SUBDIR += pygts
     SUBDIR += pymorph

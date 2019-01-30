@@ -1,7 +1,8 @@
-# $FreeBSD: head/java/jattach/Makefile 453008 2017-10-27 15:55:38Z tobik $
+# $FreeBSD: head/java/jattach/Makefile 491140 2019-01-25 09:09:46Z mizhka $
 
 PORTNAME=	jattach
-DISTVERSION=	g20170928
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.4
 CATEGORIES=	java devel
 
 MAINTAINER=	mizhka@gmail.com
@@ -14,7 +15,6 @@ USES=	gmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	apangin
-GH_TAGNAME=	ccc2f05
 
 PLIST_FILES=	bin/jattach
 

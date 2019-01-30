@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/openbubbles/Makefile 438829 2017-04-19 09:05:03Z amdmi3 $
+# $FreeBSD: head/games/openbubbles/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	openbubbles
 PORTVERSION=	1.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	SF/nemysisfreebsdp/${CATEGORIES}/${PORTNAME}/
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \

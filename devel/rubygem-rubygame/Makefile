@@ -1,9 +1,9 @@
 # Created by: ws	Christoph Kick
-# $FreeBSD: head/devel/rubygem-rubygame/Makefile 445528 2017-07-11 17:03:09Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rubygame/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	rubygame
 PORTVERSION=	2.6.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-texttable/Makefile 484366 2018-11-06 23:39:03Z dbaio $
+# $FreeBSD: head/textproc/py-texttable/Makefile 491296 2019-01-26 15:09:14Z dbaio $
 
 PORTNAME=	texttable
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,10 +11,6 @@ MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Module for creating simple ASCII tables
 
 LICENSE=	MIT
-
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cjkwrap>=0:textproc/py-cjkwrap@${PY_FLAVOR}
 
 CJKWRAP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cjkwrap>=0:textproc/py-cjkwrap@${PY_FLAVOR}
 
@@ -26,8 +22,5 @@ NO_ARCH=	yes
 OPTIONS_DEFINE=	CJKWRAP
 
 CJKWRAP_DESC=	Text Wrapping with better CJK text support
-
-do-test:
-	@cd ${WRKSRC} && pytest -v --cov-report=term-missing --cov=texttable tests.py
 
 .include <bsd.port.mk>

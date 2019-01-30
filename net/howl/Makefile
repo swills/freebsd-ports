@@ -1,9 +1,9 @@
 # Created by: David Magda <dmagda+howl@ee.ryerson.ca>
-# $FreeBSD: head/net/howl/Makefile 361811 2014-07-14 18:41:39Z tijl $
+# $FreeBSD: head/net/howl/Makefile 491350 2019-01-27 13:50:11Z swills $
 
 PORTNAME=	howl
 PORTVERSION=	1.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES?=	net devel
 MASTER_SITES=	http://www.porchdogsoft.com/download/
 

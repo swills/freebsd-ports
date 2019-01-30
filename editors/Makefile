@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/editors/Makefile 491303 2019-01-26 17:03:48Z tobik $
 #
 
     COMMENT = Editors
@@ -207,6 +207,7 @@
     SUBDIR += p5-Proc-InvokeEditor
     SUBDIR += p5-Vimana
     SUBDIR += paredit-mode.el
+    SUBDIR += parinfer-rust
     SUBDIR += pdfedit
     SUBDIR += pico-alpine
     SUBDIR += picpas

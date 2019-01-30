@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MCE/Makefile 478150 2018-08-26 18:42:03Z sunpoet $
+# $FreeBSD: head/devel/p5-MCE/Makefile 491108 2019-01-24 17:50:18Z sunpoet $
 
 PORTNAME=	MCE
-PORTVERSION=	1.837
+PORTVERSION=	1.838
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MARIOROY
@@ -18,8 +18,9 @@ LICENSE_FILE_GPLv1+ =	${WRKSRC}/Copying
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

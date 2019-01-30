@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/griels-quest/Makefile 489810 2019-01-09 15:33:12Z amdmi3 $
+# $FreeBSD: head/games/griels-quest/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	griels-quest
 PORTVERSION=	git20150512
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

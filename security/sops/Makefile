@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/sops/Makefile 479971 2018-09-18 03:27:39Z swills $
+# $FreeBSD: head/security/sops/Makefile 491203 2019-01-25 20:31:21Z swills $
 
 PORTNAME=	sops
-DISTVERSION=	3.1.0
+DISTVERSION=	3.2.0
 CATEGORIES=	security editors
 
 MAINTAINER=	dg@syrec.org
@@ -22,7 +22,7 @@ OPTIONS_DEFINE=	DOCS
 PORTDOCS=	README.rst CHANGELOG.rst
 
 do-build:
-	@cd ${WRKSRC}/${GH_SUBDIR} && \
+	cd ${WRKSRC}/${GH_SUBDIR} && \
 		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -o ${PORTNAME} ./cmd/sops
 
 do-install:

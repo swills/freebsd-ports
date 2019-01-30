@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/wlroots/Makefile 491073 2019-01-24 00:14:46Z jbeich $
+# $FreeBSD: head/x11-toolkits/wlroots/Makefile 491634 2019-01-30 17:17:59Z jbeich $
 
 PORTNAME=	wlroots
-DISTVERSION=	0.2-154
-DISTVERSIONSUFFIX=	-gc41d0130
+DISTVERSION=	0.2-193
+DISTVERSIONSUFFIX=	-g41af8d84
 CATEGORIES=	x11-toolkits
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -12,13 +12,12 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	evdev-proto>0:devel/evdev-proto \
-		wayland-protocols>=1.15:graphics/wayland-protocols
+		wayland-protocols>=1.16:graphics/wayland-protocols
 LIB_DEPENDS=	libudev.so:devel/libudev-devd \
 		libdrm.so:graphics/libdrm \
 		libwayland-egl.so:graphics/wayland \
 		libinput.so:x11/libinput \
 		libxkbcommon.so:x11/libxkbcommon
-RUN_DEPENDS=	xkeyboard-config>0:x11/xkeyboard-config
 
 USES=		compiler:c11 gl meson pkgconfig
 USE_GITHUB=	yes

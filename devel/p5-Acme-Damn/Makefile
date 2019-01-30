@@ -1,5 +1,5 @@
 # Created by: Warner Losh <imp@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Acme-Damn/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/devel/p5-Acme-Damn/Makefile 491611 2019-01-30 09:00:36Z amdmi3 $
 
 PORTNAME=	Acme-Damn
 PORTVERSION=	0.06
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	imp@FreeBSD.org
 COMMENT=	Unblessing perl objects
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Test-Exception>=0.29:devel/p5-Test-Exception

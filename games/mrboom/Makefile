@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/games/mrboom/Makefile 490455 2019-01-16 07:36:50Z ehaupt $
+# $FreeBSD: head/games/mrboom/Makefile 491617 2019-01-30 10:35:47Z ehaupt $
 
 PORTNAME=	mrboom
-PORTVERSION=	4.6
+PORTVERSION=	4.7
 CATEGORIES=	games
 
 MAINTAINER=	ehaupt@FreeBSD.org

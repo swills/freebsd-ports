@@ -1,9 +1,9 @@
 # Created by: se
-# $FreeBSD: head/games/xblast/Makefile 472069 2018-06-09 16:31:29Z amdmi3 $
+# $FreeBSD: head/games/xblast/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	xblast
 PORTVERSION=	2.10.4
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Sources/${PORTVERSION} \
 		SF/${PORTNAME}/Images/${IMAGES_DATE}:images \

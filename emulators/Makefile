@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 487992 2018-12-21 13:19:02Z rene $
+# $FreeBSD: head/emulators/Makefile 491326 2019-01-27 05:55:04Z tobik $
 #
 
     COMMENT = Emulators for other operating systems
@@ -33,6 +33,7 @@
     SUBDIR += dynagui
     SUBDIR += dynamips-community
     SUBDIR += e-uae
+    SUBDIR += emulationstation
     SUBDIR += fceux
     SUBDIR += fmsx
     SUBDIR += frodo

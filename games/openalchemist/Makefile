@@ -1,9 +1,9 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/openalchemist/Makefile 481268 2018-10-05 10:10:02Z martymac $
+# $FreeBSD: head/games/openalchemist/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	openalchemist
 PORTVERSION=	0.3
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

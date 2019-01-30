@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-commonmarker/Makefile 479462 2018-09-10 20:27:20Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-commonmarker/Makefile 491195 2019-01-25 19:59:48Z sunpoet $
 
 PORTNAME=	commonmarker
-PORTVERSION=	0.17.13
+PORTVERSION=	0.18.2
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

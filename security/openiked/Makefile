@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/openiked/Makefile 454989 2017-11-27 19:55:06Z marcel $
+# $FreeBSD: head/security/openiked/Makefile 491318 2019-01-26 23:48:07Z marcel $
 
 PORTNAME=	openiked
-PORTVERSION=	1.10
+PORTVERSION=	2.1
 CATEGORIES=	security net ipv6
 
 MAINTAINER=	marcel@FreeBSD.org
@@ -11,6 +11,8 @@ LICENSE=	ISCL
 
 LIB_DEPENDS=	libevent.so:devel/libevent
 
+USES=		autoreconf libtool ssl
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	xcllnt
 
@@ -18,10 +20,9 @@ USE_RC_SUBR=	iked
 USERS=		_iked
 GROUPS=		_iked
 
-USES=		autoreconf groff libtool ssl
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-CONFIGURE_ARGS=	--with-libevent-dir=${PREFIX}
+CONFIGURE_ARGS=	--with-libevent-dir=${PREFIX} --with-mantype=man
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/etc/ikeca.cnf \

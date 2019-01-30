@@ -1,8 +1,8 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/textproc/py-parso/Makefile 474584 2018-07-13 13:17:44Z ultima $
+# $FreeBSD: head/textproc/py-parso/Makefile 491502 2019-01-28 18:19:53Z ultima $
 
 PORTNAME=	parso
-DISTVERSION=	0.3.1
+DISTVERSION=	0.3.2
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

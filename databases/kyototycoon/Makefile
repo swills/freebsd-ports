@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/kyototycoon/Makefile 483404 2018-10-29 22:12:08Z sunpoet $
+# $FreeBSD: head/databases/kyototycoon/Makefile 491644 2019-01-30 19:21:56Z sunpoet $
 
 PORTNAME=	kyototycoon
 PORTVERSION=	0.9.56
@@ -63,7 +63,7 @@ post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libkyototycoon.so.2.19.0 ${STAGEDIR}${PREFIX}/libexec/*.so
 
 post-install-DOCS-on:
-	${FIND} ${STAGEDIR}${DOCSDIR}/ -type d -exec ${CHMOD} ${BINMODE} {} \;
-	${FIND} ${STAGEDIR}${DOCSDIR}/ -type f -exec ${CHMOD} ${DOCMODE} {} \;
+	${FIND} ${STAGEDIR}${DOCSDIR}/ -type d -exec ${CHMOD} ${BINMODE} {} +
+	${FIND} ${STAGEDIR}${DOCSDIR}/ -type f -exec ${CHMOD} ${DOCMODE} {} +
 
 .include <bsd.port.mk>

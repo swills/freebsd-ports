@@ -1,11 +1,11 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/exact-image/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/graphics/exact-image/Makefile 491393 2019-01-27 19:58:08Z sunpoet $
 
 PORTNAME=	exact-image
 PORTVERSION=	0.9.1
 PORTREVISION=	2
 CATEGORIES=	graphics perl5 python
-MASTER_SITES=	http://dl.exactcode.de/oss/${PORTNAME}/ LOCAL/bf
+MASTER_SITES=	https://dl.exactcode.de/oss/exact-image/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast image processing library

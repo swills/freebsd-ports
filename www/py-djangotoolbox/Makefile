@@ -1,9 +1,8 @@
 # Created by: John Hixson <john@ixsystems.com>
-# $FreeBSD: head/www/py-djangotoolbox/Makefile 478048 2018-08-25 14:31:23Z rene $
+# $FreeBSD: head/www/py-djangotoolbox/Makefile 491496 2019-01-28 17:22:43Z jhixson $
 
 PORTNAME=	djangotoolbox
-PORTVERSION=	1.6.1
-PORTREVISION=	2
+PORTVERSION=	1.8.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

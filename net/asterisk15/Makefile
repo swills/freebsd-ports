@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/asterisk15/Makefile 490667 2019-01-18 20:10:14Z madpilot $
+# $FreeBSD: head/net/asterisk15/Makefile 491510 2019-01-28 19:00:15Z madpilot $
 
 PORTNAME=	asterisk
 PORTVERSION=	15.7.1
@@ -24,7 +24,7 @@ EXPIRATION_DATE=2019-10-03
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid \
 		libjansson.so:devel/jansson
 
-ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386 powerpc sparc64
+ONLY_FOR_ARCHS=	amd64 armv6 armv7 i386 powerpc sparc64
 
 EXTRACT_ONLY:=	${DISTNAME}${EXTRACT_SUFX}
 
@@ -37,18 +37,18 @@ USE_RC_SUBR=	asterisk
 USE_GITHUB=	nodefault
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--datarootdir=${DATADIR} \
-			--with-ilbc=internal \
-			--with-crypto=${OPENSSLBASE} \
-			--with-pjproject-bundled=no \
-			--with-ssl=${OPENSSLBASE}
+CONFIGURE_ARGS=	--datarootdir=${DATADIR} \
+		--with-ilbc=internal \
+		--with-crypto=${OPENSSLBASE} \
+		--with-pjproject-bundled=no \
+		--with-ssl=${OPENSSLBASE}
 
 CPE_VENDOR=	digium
 
 SHEBANG_FILES=	agi/agi-test.agi \
 		agi/jukebox.agi \
 		contrib/scripts/astversion
-
+LDFLAGS=	-L.
 MAKE_ENV=	PTHREAD_LIBS="-lpthread" \
 		MKDIR="${MKDIR}" \
 		PWLIBDIR=${LOCALBASE}/share/pwlib \

@@ -1,21 +1,22 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/archivers/rubygem-minitar/Makefile 442642 2017-06-05 14:51:05Z sunpoet $
+# $FreeBSD: head/archivers/rubygem-minitar/Makefile 491187 2019-01-25 19:59:06Z sunpoet $
 
 PORTNAME=	minitar
-PORTVERSION=	0.6.1
+PORTVERSION=	0.8
 CATEGORIES=	archivers rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Library and command-line utility for tar archives
 
-LICENSE=	BSD3CLAUSE RUBY
+LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
-LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/docs/bsdl.txt
+LICENSE_FILE_BSD2CLAUSE=${WRKSRC}/docs/bsdl.txt
 LICENSE_FILE_RUBY=	${WRKSRC}/docs/ruby.txt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

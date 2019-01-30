@@ -1,5 +1,5 @@
 # Created by: Konstantin Lepa <konstantin.lepa@gmail.com>
-# $FreeBSD: head/textproc/simplexml/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/simplexml/Makefile 491375 2019-01-27 18:19:01Z yuri $
 
 PORTNAME=	simplexml
 PORTVERSION=	1.0.1
@@ -20,10 +20,6 @@ USE_LDCONFIG=	yes
 CMAKE_ARGS=	-DIconv_LIBRARY=${ICONV_LIB_PATH}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-
-.if defined(WITH_DEBUG)
-CMAKE_ARGS+=	-DDEBUG_MODE:BOOL=ON
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|; \

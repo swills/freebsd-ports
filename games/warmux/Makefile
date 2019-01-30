@@ -1,9 +1,9 @@
 # Created by: Anton Yudin <toha@FreeBSD.org>
-# $FreeBSD: head/games/warmux/Makefile 475879 2018-07-30 11:05:18Z tobik $
+# $FreeBSD: head/games/warmux/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	warmux
 DISTVERSION=	11.04.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	http://download.gna.org/${PORTNAME}/ \
 		http://download.gna.org/${PORTNAME}/archive/

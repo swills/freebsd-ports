@@ -1,9 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/libpgmath/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/libpgmath/Makefile 491451 2019-01-28 03:12:12Z jmd $
 
 PORTNAME=	libpgmath
 DISTVERSION=	g20180904
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -26,9 +26,10 @@ GH_ACCOUNT=	flang-compiler
 GH_PROJECT=	flang
 GH_TAGNAME=	53e368b
 
-CMAKE_ARGS+=	-DLLVM_CONFIG=${LOCALBASE}/bin/llvm-config60 \
-		-DCMAKE_CXX_COMPILER=${LOCALBASE}/llvm60/bin/clang++ \
-		-DCMAKE_C_COMPILER=${LOCALBASE}/llvm60/bin/clang
+CC=		${LOCALBASE}/llvm60/bin/clang
+CXX=		${LOCALBASE}/llvm60/bin/clang++
+
+CMAKE_ARGS+=	-DLLVM_CONFIG=${LOCALBASE}/bin/llvm-config60
 
 WRKSRC_SUBDIR=	runtime/libpgmath
 

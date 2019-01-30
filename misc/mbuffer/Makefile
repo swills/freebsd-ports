@@ -1,8 +1,8 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/misc/mbuffer/Makefile 490855 2019-01-21 12:55:07Z tobik $
+# $FreeBSD: head/misc/mbuffer/Makefile 491559 2019-01-29 13:05:55Z tobik $
 
 PORTNAME=	mbuffer
-PORTVERSION=	20190119
+PORTVERSION=	20190127
 CATEGORIES=	misc
 MASTER_SITES=	http://www.maier-komor.de/software/mbuffer/
 

@@ -1,9 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/editors/scite/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/editors/scite/Makefile 491445 2019-01-27 23:57:42Z swills $
 
 PORTNAME=	scite
-DISTVERSION=	4.0.2
-PORTREVISION=	1
+DISTVERSION=	4.1.0
 CATEGORIES=	editors gnome
 MASTER_SITES=	SF/scintilla/SciTE/${PORTVERSION}
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
@@ -19,11 +18,14 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LIB_DEPENDS=	libscintilla.so:x11-toolkits/scintilla
 RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
+USES=		compiler:c++17-lang desktop-file-utils gmake pkgconfig tar:tgz
+
 OPTIONS_DEFINE=	DOCS
 
+PATCH_WRKSRC=	${WRKDIR}/${PORTNAME}
 WRKSRC=		${WRKDIR}/${PORTNAME}/gtk
 
-USES=		compiler:c++14-lang desktop-file-utils gmake pkgconfig tar:tgz
+CXXSTD=		c++17
 USE_GNOME=	cairo gdkpixbuf2 gtk20
 MAKEFILE=	makefile
 

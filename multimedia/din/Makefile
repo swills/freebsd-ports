@@ -1,13 +1,12 @@
-# $FreeBSD: head/multimedia/din/Makefile 490157 2019-01-13 17:08:26Z tobik $
+# $FreeBSD: head/multimedia/din/Makefile 491606 2019-01-30 07:48:30Z danfe $
 
 PORTNAME=	din
-PORTVERSION=	38a
+PORTVERSION=	39.0.1
 CATEGORIES=	multimedia
 MASTER_SITES=	https://archive.org/download/dinisnoise_source_code/
 
 MAINTAINER=	santhosh.raju@gmail.com
-COMMENT=	DIN Is Noise is an open source, cross-platform sound \
-		synthesizer
+COMMENT=	Open source, cross-platform sound synthesizer
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

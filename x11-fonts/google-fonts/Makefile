@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/google-fonts/Makefile 480318 2018-09-21 22:01:53Z swills $
+# $FreeBSD: head/x11-fonts/google-fonts/Makefile 491163 2019-01-25 17:42:16Z swills $
 
 PORTNAME=	google-fonts
-DISTVERSION=	0.0.0.20180913
+DISTVERSION=	0.0.0.20190118
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	dg@syrec.org
@@ -29,7 +29,7 @@ NO_BUILD=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
 GH_PROJECT=	fonts
-GH_TAGNAME=	c9d3903
+GH_TAGNAME=	1ebe5dc
 
 SUB_FILES=	pkg-message
 

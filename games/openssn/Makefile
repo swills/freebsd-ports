@@ -1,9 +1,9 @@
 # Created by: Jesse Smith <jessefrgsmith@yahoo.ca>
-# $FreeBSD: head/games/openssn/Makefile 377040 2015-01-14 19:06:33Z amdmi3 $
+# $FreeBSD: head/games/openssn/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	openssn
 PORTVERSION=	1.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

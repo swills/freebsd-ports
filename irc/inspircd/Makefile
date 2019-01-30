@@ -1,9 +1,8 @@
 # Created by: Craig Edwards <brain@mail1.chatspike.net>
-# $FreeBSD: head/irc/inspircd/Makefile 490211 2019-01-13 20:58:36Z adamw $
+# $FreeBSD: head/irc/inspircd/Makefile 491168 2019-01-25 17:57:01Z swills $
 
 PORTNAME=	inspircd
-PORTVERSION=	2.0.26
-PORTREVISION=	1
+PORTVERSION=	2.0.27
 DISTVERSIONPREFIX=	v
 CATEGORIES=	irc
 
@@ -11,14 +10,15 @@ MAINTAINER=	dg@syrec.org
 COMMENT=	Modular C++ IRC daemon
 
 LICENSE=	GPLv2
-LICENSE_FILE=	${WRKSRC}/docs/COPYING
+LICENSE_FILE=	${WRKSRC}/docs/LICENSE.txt
 
 # Configure script is written in perl
 USES=		cpe perl5
+USE_GITHUB=	yes
 USE_PERL5=	build
+
 CPE_VENDOR=	inspire_ircd
 CPE_PRODUCT=	inspircd
-USE_GITHUB=	yes
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-cc=${CXX} \

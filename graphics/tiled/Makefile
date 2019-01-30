@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/tiled/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/tiled/Makefile 491489 2019-01-28 14:47:06Z amdmi3 $
 
 PORTNAME=	tiled
-PORTVERSION=	1.2.1
-PORTREVISION=	2
+PORTVERSION=	1.2.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics editors games
 
@@ -16,7 +15,7 @@ LICENSE_COMB=	multi
 USE_GITHUB=	yes
 GH_ACCOUNT=	bjorn
 
-USES=		compiler:c++11-lib desktop-file-utils qmake qt:5 shared-mime-info
+USES=		compiler:c++11-lib desktop-file-utils gl qmake qt:5 shared-mime-info
 USE_QT=		core gui widgets opengl network \
 		buildtools_build linguisttools_build
 USE_GL=		gl

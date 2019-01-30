@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/misc/py-cinder/files/cinder-api.in 454856 2017-11-24 23:17:50Z dbaio $
+# $FreeBSD: head/misc/py-cinder/files/cinder-api.in 491564 2019-01-29 14:05:58Z miwi $
 #
 
 # PROVIDE: cinder_api
@@ -33,7 +33,7 @@ rcvar=cinder_api_enable
 PATH=%%PREFIX%%/bin:%%PREFIX%%/sbin:$PATH
 
 pidfile="/var/run/cinder-api.pid"
-procname="%%PREFIX%%/bin/python2.7"
+procname="%%PREFIX%%/bin/python%%PYTHON_VER%%"
 
 start_precmd=cinder_precmd
 

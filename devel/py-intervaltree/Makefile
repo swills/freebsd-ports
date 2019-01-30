@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-intervaltree/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-intervaltree/Makefile 491441 2019-01-27 22:02:01Z antoine $
 
 PORTNAME=	intervaltree
-PORTVERSION=	2.1.0
+PORTVERSION=	3.0.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-cvxpy/Makefile 491028 2019-01-23 09:40:12Z yuri $
+# $FreeBSD: head/math/py-cvxpy/Makefile 491231 2019-01-26 04:09:44Z yuri $
 
 PORTNAME=	cvxpy
-DISTVERSION=	1.0.13
+DISTVERSION=	1.0.14
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

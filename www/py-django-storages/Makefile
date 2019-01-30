@@ -1,8 +1,7 @@
-# Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/py-django-storages/Makefile 425950 2016-11-12 13:09:30Z lwhsu $
+# $FreeBSD: head/www/py-django-storages/Makefile 491306 2019-01-26 17:57:36Z lwhsu $
 
 PORTNAME=	django-storages
-PORTVERSION=	1.5.1
+PORTVERSION=	1.7.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

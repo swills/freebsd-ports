@@ -1,6 +1,7 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-sdl/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/devel/fpc-sdl/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
+PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-sdl
 

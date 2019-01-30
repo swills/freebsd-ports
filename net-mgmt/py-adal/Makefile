@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net-mgmt/py-adal/Makefile 482509 2018-10-20 14:47:55Z sunpoet $
+# $FreeBSD: head/net-mgmt/py-adal/Makefile 491184 2019-01-25 19:58:50Z sunpoet $
 
 PORTNAME=	adal
-DISTVERSION=	1.2.0
+DISTVERSION=	1.2.1
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: Sébastien Santoro <dereckson@gmail.com>
-# $FreeBSD: head/astro/astrometry/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/astro/astrometry/Makefile 491605 2019-01-30 06:01:20Z tobik $
 
 PORTNAME=	astrometry
 PORTVERSION=	0.65
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	astro
 MASTER_SITES=	http://www.astrometry.net/downloads/
 DISTNAME=	${PORTNAME}.net-${PORTVERSION}

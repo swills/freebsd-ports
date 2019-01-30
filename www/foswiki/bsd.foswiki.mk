@@ -5,7 +5,7 @@
 # Whom:			Greg Larkin <glarkin@FreeBSD.org>
 # Copied From Whom:	Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: head/www/foswiki/bsd.foswiki.mk 431954 2017-01-20 13:02:33Z mat $
+# $FreeBSD: head/www/foswiki/bsd.foswiki.mk 491274 2019-01-26 12:40:44Z swills $
 #
 
 #
@@ -39,6 +39,7 @@ PLIST_SUB+=	FWDIR=${FWDIR:S|^${PREFIX}/||}
 SUB_LIST+=	FWDIR=${FWDIR} FIND=${FIND} CHMOD=${CHMOD} CHOWN=${CHOWN} \
 		TOUCH=${TOUCH} WWWOWN=${WWWOWN} WWWGRP=${WWWGRP} \
 		CONFDIR=${CONFDIR}
+SUB_FILES+=	pkg-install
 MAINTAINER?=	glarkin@FreeBSD.org
 RUN_DEPENDS+=	${FWDEP:C/([^=<>]*)([=<>]*)(.*)/foswiki-\1\20.0.\3:www\/foswiki-\1/}
 

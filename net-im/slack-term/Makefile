@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/slack-term/Makefile 467565 2018-04-17 07:09:30Z joneum $
+# $FreeBSD: head/net-im/slack-term/Makefile 491207 2019-01-25 21:55:35Z swills $
 
 PORTNAME=	slack-term
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.0
+DISTVERSION=	0.4.1
 CATEGORIES=	net-im
 
 MAINTAINER=	dg@syrec.org
@@ -27,7 +27,7 @@ PLIST_FILES=	bin/slack-term
 OPTIONS_DEFINE=	DOCS
 
 do-build:
-	@cd ${WRKSRC}/${GH_SUBDIR} && \
+	cd ${WRKSRC}/${GH_SUBDIR} && \
 		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -o ${PORTNAME}
 
 do-install:

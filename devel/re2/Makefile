@@ -1,9 +1,8 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/devel/re2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/re2/Makefile 491179 2019-01-25 19:58:24Z sunpoet $
 
 PORTNAME=	re2
-PORTVERSION=	20180901
-PORTREVISION=	1
+PORTVERSION=	20190101
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -12,9 +11,10 @@ COMMENT=	Fast C++ regex library
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		compiler:c++11-lang gmake pathfix
+
 MAKE_ARGS=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" SED_INPLACE="${SED} -i ''" prefix=${PREFIX}
 USE_LDCONFIG=	yes
-USES=		compiler:c++11-lang gmake pathfix
 
 PATHFIX_MAKEFILEIN=	Makefile
 

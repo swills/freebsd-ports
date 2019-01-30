@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-wm/i3-gaps/Makefile 488372 2018-12-26 12:02:34Z linimon $
+# $FreeBSD: head/x11-wm/i3-gaps/Makefile 491515 2019-01-28 19:45:23Z swills $
 
 PORTNAME=	i3
-DISTVERSION=	4.15.0.1
+DISTVERSION=	4.16.1
 CATEGORIES=	x11-wm
 PKGNAMESUFFIX=	-gaps
 
@@ -37,6 +37,7 @@ GH_ACCOUNT=	Airblader
 USE_PERL5=	run
 USE_GNOME=	glib20
 USE_XORG=	xcb
+
 GNU_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes
 

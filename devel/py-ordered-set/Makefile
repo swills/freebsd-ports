@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-ordered-set/Makefile 480366 2018-09-22 08:38:05Z antoine $
+# $FreeBSD: head/devel/py-ordered-set/Makefile 491442 2019-01-27 22:03:56Z antoine $
 
 PORTNAME=	ordered-set
-PORTVERSION=	3.0.2
+PORTVERSION=	3.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,6 @@ COMMENT=	MutableSet that remembers its order, so that every entry has an index
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR}
 
 NO_ARCH=	yes

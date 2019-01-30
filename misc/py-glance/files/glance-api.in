@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/misc/py-glance/files/glance-api.in 454856 2017-11-24 23:17:50Z dbaio $
+# $FreeBSD: head/misc/py-glance/files/glance-api.in 491563 2019-01-29 14:03:30Z miwi $
 #
 
 # PROVIDE: glance_api
@@ -34,7 +34,7 @@ required_files=%%PREFIX%%/etc/glance/glance-api.conf
 PATH=%%PREFIX%%/bin:%%PREFIX%%/sbin:$PATH
 
 pidfile="/var/run/glance-api.pid"
-procname="%%PREFIX%%/bin/python2.7"
+procname="%%PREFIX%%/bin/python%%PYTHON_VER%%"
 
 start_precmd=glance_precmd
 stop_postcmd=glance_postcmd

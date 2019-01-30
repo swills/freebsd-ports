@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-pymysql/Makefile 486849 2018-12-07 09:52:09Z lwhsu $
+# $FreeBSD: head/databases/py-pymysql/Makefile 491304 2019-01-26 17:33:06Z lwhsu $
 
 PORTNAME=	pymysql
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

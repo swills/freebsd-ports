@@ -1,8 +1,8 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/sysutils/py-tmuxp/Makefile 481348 2018-10-06 09:35:30Z sunpoet $
+# $FreeBSD: head/sysutils/py-tmuxp/Makefile 491390 2019-01-27 19:57:53Z sunpoet $
 
 PORTNAME=	tmuxp
-DISTVERSION=	1.4.2
+DISTVERSION=	1.5.0
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

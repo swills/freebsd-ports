@@ -1,8 +1,8 @@
 # Created by: nbm
-# $FreeBSD: head/databases/phpmyadmin/Makefile 487282 2018-12-12 07:24:04Z matthew $
+# $FreeBSD: head/databases/phpmyadmin/Makefile 491332 2019-01-27 09:27:21Z matthew $
 
 PORTNAME=	phpMyAdmin
-DISTVERSION=	4.8.4
+DISTVERSION=	4.8.5
 CATEGORIES=	databases www
 MASTER_SITES=	https://files.phpmyadmin.net/${PORTNAME}/${DISTVERSION}/
 DISTNAME=	${PORTNAME}-${DISTVERSION}-all-languages

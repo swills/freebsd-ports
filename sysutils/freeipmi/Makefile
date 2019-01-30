@@ -1,12 +1,10 @@
 # Created by: Dmitry Frolov <frol@nov.net>
-# $FreeBSD: head/sysutils/freeipmi/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/sysutils/freeipmi/Makefile 491275 2019-01-26 12:42:59Z sunpoet $
 
 PORTNAME=	freeipmi
-PORTVERSION=	1.6.2
-PORTREVISION=	1
+PORTVERSION=	1.6.3
 CATEGORIES=	sysutils
-MASTER_SITES=	GNU \
-		http://ftp.gluster.com/pub/${PORTNAME}/${PORTVERSION}/
+MASTER_SITES=	GNU
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Library and tools to support IPMI-capable hardware

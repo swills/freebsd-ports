@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7-devel/Makefile 491019 2019-01-23 05:27:00Z gerald $
+# $FreeBSD: head/lang/gcc7-devel/Makefile 491511 2019-01-28 19:03:41Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	7.4.1.s20190117
+PORTVERSION=	7.4.1.s20190124
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel

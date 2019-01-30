@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/kyotocabinet/Makefile 483403 2018-10-29 22:12:03Z sunpoet $
+# $FreeBSD: head/databases/kyotocabinet/Makefile 491643 2019-01-30 19:21:51Z sunpoet $
 
 PORTNAME=	kyotocabinet
 PORTVERSION=	1.2.77
@@ -33,7 +33,9 @@ post-patch:
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libkyotocabinet.so.16.13.0
-	${FIND} ${STAGEDIR}${DOCSDIR}/ -type d -exec ${CHMOD} ${BINMODE} {} \;
-	${FIND} ${STAGEDIR}${DOCSDIR}/ -type f -exec ${CHMOD} ${DOCMODE} {} \;
+
+post-install-DOCS-on:
+	${FIND} ${STAGEDIR}${DOCSDIR}/ -type d -exec ${CHMOD} ${BINMODE} {} +
+	${FIND} ${STAGEDIR}${DOCSDIR}/ -type f -exec ${CHMOD} ${DOCMODE} {} +
 
 .include <bsd.port.mk>

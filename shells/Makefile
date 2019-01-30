@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/Makefile 480231 2018-09-21 07:20:43Z cy $
+# $FreeBSD: head/shells/Makefile 491382 2019-01-27 19:56:10Z sunpoet $
 #
 
     COMMENT = Shells
@@ -51,6 +51,7 @@
     SUBDIR += xonsh
     SUBDIR += zsh
     SUBDIR += zsh-antigen
+    SUBDIR += zsh-completions
     SUBDIR += zsh-navigation-tools
 
 .include <bsd.port.subdir.mk>

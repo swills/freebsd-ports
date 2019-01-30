@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/patapizza-tetris/Makefile 441567 2017-05-24 09:00:37Z amdmi3 $
+# $FreeBSD: head/games/patapizza-tetris/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	patapizza-tetris
 PORTVERSION=	1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	SF/nemysisfreebsdp/${CATEGORIES}/:icons
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

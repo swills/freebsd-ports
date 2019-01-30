@@ -1,8 +1,8 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/www/drupal7/Makefile 485057 2018-11-16 00:24:26Z joneum $
+# $FreeBSD: head/www/drupal7/Makefile 491133 2019-01-25 08:08:14Z joneum $
 
 PORTNAME=	drupal7
-DISTVERSION=	7.61
+DISTVERSION=	7.63
 CATEGORIES=	www
 MASTER_SITES=	http://ftp.drupal.org/files/projects/
 DISTNAME=	drupal-${PORTVERSION}
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		drupal:7 php:web shebangfix
 USE_PHP=	dom filter gd hash json mbstring pcre pdo session simplexml xml
+
 SHEBANG_FILES=	scripts/password-hash.sh
 
 NO_ARCH=	yes

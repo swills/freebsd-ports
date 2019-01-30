@@ -1,8 +1,8 @@
 # Created by: Stanislav Sedov <stas@FreeBSD.org>
-# $FreeBSD: head/net/enet/Makefile 473398 2018-06-26 17:06:33Z ehaupt $
+# $FreeBSD: head/net/enet/Makefile 491632 2019-01-30 17:17:19Z fernape $
 
 PORTNAME=	enet
-PORTVERSION=	1.3.13
+PORTVERSION=	1.3.14
 PORTEPOCH=	1
 CATEGORIES=	net
 MASTER_SITES=	http://enet.bespin.org/download/

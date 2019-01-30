@@ -1,13 +1,8 @@
-# $FreeBSD: head/multimedia/libva/Makefile 490616 2019-01-18 00:24:41Z jbeich $
+# $FreeBSD: head/multimedia/libva/Makefile 491214 2019-01-26 00:43:01Z jbeich $
 
 PORTNAME=	libva
-PORTVERSION=	2.3.0
-PORTREVISION=	5
+PORTVERSION=	2.4.0
 CATEGORIES=	multimedia
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES+=	cf11abe5e1b9.patch:-p1 # for media-driver 18.4+
-PATCHFILES+=	62bad1239d8e.patch:-p1 # for mesa-libs 18.3+
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	VAAPI wrapper and dummy driver

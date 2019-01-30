@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/chapping/Makefile 479998 2018-09-18 08:47:31Z linimon $
+# $FreeBSD: head/games/chapping/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
 
 PORTNAME=	chapping
 PORTVERSION=	0.43
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	http://forja.rediris.es/frs/download.php/760/ \
 		http://mirror.amdmi3.ru/distfiles/
