@@ -1,8 +1,9 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 482478 2018-10-20 09:30:10Z amdmi3 $
+# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	jira-ruby
 PORTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,12 +13,13 @@ COMMENT=	API for JIRA
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-activesupport4>=4.0:devel/rubygem-activesupport4 \
+RUN_DEPENDS=	rubygem-activesupport50>=4.0:devel/rubygem-activesupport50 \
 		rubygem-multipart-post>=0:www/rubygem-multipart-post \
 		rubygem-oauth>=0.5.0:net/rubygem-oauth
 
 USES=		gem
 USE_RUBY=	yes
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

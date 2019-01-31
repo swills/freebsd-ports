@@ -1,5 +1,5 @@
 # Created by: SADA Kenji <sada@FreeBSD.org>
-# $FreeBSD: head/devel/cvsweb3/Makefile 479407 2018-09-10 13:15:47Z mat $
+# $FreeBSD: head/devel/cvsweb3/Makefile 491719 2019-01-31 13:46:21Z tobik $
 
 PORTNAME=	cvsweb
 PORTVERSION=	3.0.6
@@ -32,10 +32,24 @@ CONFLICTS=	cvsweb-2.*
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	cvsweb.cgi
+
 NO_BUILD=	yes
 NO_ARCH=	yes
 
+PLIST_SUB=	CGIDIR="${CGIDIR}" ICONSDIR="${ICONSDIR}" CSSDIR="${CSSDIR}" \
+		DIRPREFIX="${DIRPREFIX}"
+SUB_FILES=	pkg-message
+
 OPTIONS_DEFINE=	DOCS EXAMPLES
+
+CONFFILES=	cvsweb.conf \
+		cvsweb.conf-freebsd \
+		cvsweb.conf-openbsd \
+		cvsweb.conf-netbsd \
+		cvsweb.conf-ruby
+
+# Specify the title of your cvsweb site.
+TITLE?=		My CVS Repository
 
 .include <bsd.port.pre.mk>
 
@@ -44,9 +58,6 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 .if defined(PACKAGE_BUILDING) || !defined(CVSROOT) || empty(CVSROOT)
 CVSROOT=	/home/cvs
 .endif
-
-# Specify the title of your cvsweb site.
-TITLE?=		My CVS Repository
 
 # Specify these directories in relative paths to ${PREFIX}.
 .if exists(${PREFIX}/www/cgi-bin)
@@ -61,18 +72,6 @@ DIRPREFIX=	share/apache
 CGIDIR?=	${DIRPREFIX}/cgi-bin
 ICONSDIR?=	${DIRPREFIX}/icons
 CSSDIR?=	${DIRPREFIX}/data/css
-
-CONFFILES=	cvsweb.conf \
-		cvsweb.conf-freebsd \
-		cvsweb.conf-openbsd \
-		cvsweb.conf-netbsd \
-		cvsweb.conf-ruby
-
-PLIST_SUB+=	CGIDIR="${CGIDIR}" ICONSDIR="${ICONSDIR}" CSSDIR="${CSSDIR}" \
-		DIRPREFIX="${DIRPREFIX}"
-
-SUB_FILES=	pkg-message
-SUB_LIST=	PREFIX="${PREFIX}" DOCSDIR="${DOCSDIR}"
 
 post-patch:
 	@${SED} -i '' -e 's,/usr/local/etc/,${PREFIX}/etc/,' \

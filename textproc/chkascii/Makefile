@@ -1,13 +1,13 @@
-# $FreeBSD: head/textproc/chkascii/Makefile 490364 2019-01-15 12:07:01Z swills $
+# $FreeBSD: head/textproc/chkascii/Makefile 491668 2019-01-31 01:23:06Z swills $
 
 PORTNAME=	chkascii
-DISTVERSION=	1.3
+DISTVERSION=	1.4
 CATEGORIES=	textproc
 
 MAINTAINER=	bourne.identity@hotmail.com
 COMMENT=	Check an ASCII text file for invalid characters
 
-LICENSE=	GPLv2+
+LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes

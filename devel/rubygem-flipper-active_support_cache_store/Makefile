@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store/Makefile 476263 2018-08-02 23:42:45Z sunpoet $
+# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	flipper-active_support_cache_store
 PORTVERSION=	0.16.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,11 +12,12 @@ COMMENT=	ActiveSupport::Cache store adapter for Flipper
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	rubygem-activesupport4>=3.2:devel/rubygem-activesupport4 \
+RUN_DEPENDS=	rubygem-activesupport50>=3.2:devel/rubygem-activesupport50 \
 		rubygem-flipper>=${PORTVERSION}:devel/rubygem-flipper
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/devel/libosinfo/Makefile 472879 2018-06-20 16:29:06Z novel $
+# $FreeBSD: head/devel/libosinfo/Makefile 491704 2019-01-31 11:12:24Z novel $
 
 PORTNAME=	libosinfo
-PORTVERSION=	1.2.0
+PORTVERSION=	1.3.0
 CATEGORIES=	devel
 MASTER_SITES=	https://releases.pagure.org/libosinfo/
 

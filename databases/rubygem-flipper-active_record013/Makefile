@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-flipper-active_record013/Makefile 466580 2018-04-05 19:11:27Z sunpoet $
+# $FreeBSD: head/databases/rubygem-flipper-active_record013/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	flipper-active_record
 PORTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	013
@@ -12,13 +13,14 @@ COMMENT=	ActiveRecord adapter for Flipper
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	rubygem-activerecord4>=3.2:databases/rubygem-activerecord4 \
+RUN_DEPENDS=	rubygem-activerecord50>=3.2:databases/rubygem-activerecord50 \
 		rubygem-flipper013>=${PORTVERSION}:devel/rubygem-flipper013
 
-PORTSCOUT=	limit:^0\.13\.
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
+
+PORTSCOUT=	limit:^0\.13\.
 
 .include <bsd.port.mk>

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-omniauth_crowd22/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-omniauth_crowd22/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	omniauth_crowd
 PORTVERSION=	2.2.3
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	22
@@ -12,14 +13,15 @@ COMMENT=	OmniAuth provider for Atlassian Crowds REST API
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS?=	rubygem-activesupport4>=0:devel/rubygem-activesupport4 \
+RUN_DEPENDS?=	rubygem-activesupport50>=0:devel/rubygem-activesupport50 \
 		rubygem-nokogiri>=1.4.4:textproc/rubygem-nokogiri \
 		rubygem-omniauth>=1.0:security/rubygem-omniauth
 
-PORTSCOUT=	limit:^2\.2
-
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
+
+NO_ARCH=	yes
+
+PORTSCOUT=	limit:^2\.2
 
 .include <bsd.port.mk>

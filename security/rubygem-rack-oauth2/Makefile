@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rack-oauth2/Makefile 483533 2018-10-30 19:55:33Z sunpoet $
+# $FreeBSD: head/security/rubygem-rack-oauth2/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	rack-oauth2
 PORTVERSION=	1.9.3
@@ -11,7 +11,7 @@ COMMENT=	OAuth 2.0 Server & Client Library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-activesupport4>=0:devel/rubygem-activesupport4 \
+RUN_DEPENDS=	rubygem-activesupport50>=0:devel/rubygem-activesupport50 \
 		rubygem-attr_required>=0:devel/rubygem-attr_required \
 		rubygem-httpclient>=0:www/rubygem-httpclient \
 		rubygem-json-jwt>=1.9.0:www/rubygem-json-jwt \

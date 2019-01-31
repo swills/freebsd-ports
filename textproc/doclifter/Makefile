@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/doclifter/Makefile 462316 2018-02-19 13:18:57Z antoine $
+# $FreeBSD: head/textproc/doclifter/Makefile 491672 2019-01-31 01:38:50Z araujo $
 
 PORTNAME=	doclifter
-PORTVERSION=	2.17
-PORTREVISION=	1
+PORTVERSION=	2.18
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.catb.org/~esr/doclifter/
 

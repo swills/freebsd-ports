@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/python-gdsii/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/cad/python-gdsii/Makefile 491698 2019-01-31 09:30:37Z amdmi3 $
 
 PORTNAME=	python-gdsii
 PORTVERSION=	0.2.1
@@ -9,11 +9,13 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	GDSII manipulation library
 
-LICENSE=	LGPL3
+LICENSE=	LGPL3+
+LICENSE_FILE=	${WRKSRC}/LGPL-3
 
 RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

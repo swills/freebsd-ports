@@ -1,8 +1,7 @@
-# $FreeBSD: head/science/py-spglib/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/py-spglib/Makefile 491680 2019-01-31 04:47:08Z yuri $
 
 PORTNAME=	spglib
-DISTVERSION=	1.11.1
-PORTREVISION=	1
+DISTVERSION=	1.12.0
 DISTVERSIONSUFFIX=	.post3
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP

@@ -1,9 +1,8 @@
-# $FreeBSD: head/misc/py-SoapySDR/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/misc/py-SoapySDR/Makefile 491685 2019-01-31 05:03:35Z yuri $
 
 PORTNAME=	SoapySDR
 DISTVERSIONPREFIX=	soapy-sdr-
-DISTVERSION=	0.7.0
-PORTREVISION=	1
+DISTVERSION=	0.7.1
 CATEGORIES=	misc hamradio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

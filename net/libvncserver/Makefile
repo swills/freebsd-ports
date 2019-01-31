@@ -1,9 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/net/libvncserver/Makefile 491456 2019-01-28 06:51:58Z araujo $
+# $FreeBSD: head/net/libvncserver/Makefile 491673 2019-01-31 01:47:01Z araujo $
 
 PORTNAME=	libvncserver
 PORTVERSION=	0.9.12
 DISTVERSIONPREFIX=	LibVNCServer-
+PORTREVISION=	1
 CATEGORIES=	net devel
 
 MAINTAINER=	araujo@FreeBSD.org
@@ -17,14 +18,29 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 USES=		cmake jpeg libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
 
+CMAKE_ON=	WITH_24BPP WITH_JPEG WITH_LZO WITH_PNG \
+		WITH_THREADS WITH_TIGHTVNC_FILETRANSFER \
+		WITH_WEBSOCKETS WITH_ZLIB
+CMAKE_OFF=	WITH_FFMPEG WITH_SDL WITH_SDL WITH_SYSTEMD
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	LibVNC
 
-OPTIONS_DEFINE=		GCRYPT IPV6
+OPTIONS_DEFINE=		GCRYPT IPV6 SASL
 OPTIONS_SINGLE=		SSL
 OPTIONS_SINGLE_SSL=	GNUTLS OPENSSL
 OPTIONS_DEFAULT=	OPENSSL
 GCRYPT_DESC=		libgcrypt support
+SASL_DESC=		SASL support
+
+GCRYPT_CMAKE_BOOL=	WITH_GCRYPT
+GCRYPT_LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
+			libgpg-error.so:security/libgpg-error
+
+IPV6_CMAKE_BOOL=	WITH_IPv6
+
+SASL_CMAKE_BOOL=	WITH_SASL
+SASL_LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 
 GNUTLS_IMPLIES=		GCRYPT
 GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls
@@ -32,12 +48,6 @@ GNUTLS_CMAKE_BOOL=	WITH_GNUTLS
 
 OPENSSL_CMAKE_BOOL=	WITH_OPENSSL
 OPENSSL_USES=		ssl
-
-GCRYPT_LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
-			libgpg-error.so:security/libgpg-error
-GCRYPT_CMAKE_BOOL=	WITH_GCRYPT
-
-IPV6_CMAKE_BOOL=	WITH_IPv6
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/rfb/default8x16.h ${STAGEDIR}${PREFIX}/include/rfb

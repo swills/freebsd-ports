@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/rubygem-omniauth-authentiq/Makefile 471002 2018-05-27 20:17:50Z sunpoet $
+# $FreeBSD: head/net/rubygem-omniauth-authentiq/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	omniauth-authentiq
 PORTVERSION=	0.3.3
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -11,11 +12,12 @@ COMMENT=	Authentiq OAuth2 Strategy for OmniAuth
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-jwt1>=1.5:www/rubygem-jwt1 \
+RUN_DEPENDS=	rubygem-jwt>=1.5:www/rubygem-jwt \
 		rubygem-omniauth-oauth2>=1.5:net/rubygem-omniauth-oauth2
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

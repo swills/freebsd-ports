@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-grape11/Makefile 486196 2018-11-29 16:49:45Z mfechner $
+# $FreeBSD: head/devel/rubygem-grape11/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	grape
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	11
@@ -12,7 +13,7 @@ COMMENT=	Framework for rapid API development with great conventions
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-activesupport4>=0:devel/rubygem-activesupport4 \
+RUN_DEPENDS=	rubygem-activesupport50>=0:devel/rubygem-activesupport50 \
 		rubygem-builder>=0:devel/rubygem-builder \
 		rubygem-mustermann-grape>=1.0.0:devel/rubygem-mustermann-grape \
 		rubygem-rack>=1.3.0:www/rubygem-rack \
