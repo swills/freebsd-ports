@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-html-pipeline/Makefile 485037 2018-11-15 19:08:22Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-html-pipeline/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	html-pipeline
 PORTVERSION=	2.10.0

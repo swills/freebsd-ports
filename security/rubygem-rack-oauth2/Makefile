@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rack-oauth2/Makefile 483533 2018-10-30 19:55:33Z sunpoet $
+# $FreeBSD: head/security/rubygem-rack-oauth2/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	rack-oauth2
 PORTVERSION=	1.9.3

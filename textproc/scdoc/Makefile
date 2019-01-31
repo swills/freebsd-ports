@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/scdoc/Makefile 491529 2019-01-29 00:46:58Z jbeich $
+# $FreeBSD: head/textproc/scdoc/Makefile 491721 2019-01-31 13:51:58Z jbeich $
 
 PORTNAME=	scdoc
 DISTVERSION=	1.8.0
@@ -18,6 +18,8 @@ TEST_TARGET=	check
 PLIST_FILES=	bin/scdoc \
 		man/man1/scdoc.1.gz \
 		man/man5/scdoc.5.gz
+
+PORTSCOUT=	skipv:1.8.1 # https://github.com/swaywm/sway/issues/3544
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,share/man,man,' \

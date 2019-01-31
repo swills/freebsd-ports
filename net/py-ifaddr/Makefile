@@ -1,5 +1,5 @@
 # Created by: John Hixson<jhixson@FreeBSD.org>
-# $FreeBSD: head/net/py-ifaddr/Makefile 491567 2019-01-29 14:52:08Z jhixson $
+# $FreeBSD: head/net/py-ifaddr/Makefile 491684 2019-01-31 05:00:05Z jhixson $
 
 PORTNAME=	ifaddr
 PORTVERSION=	0.1.6
@@ -10,18 +10,15 @@ MAINTAINER=	jhixson@FreeBSD.org
 COMMENT=	Python Library to enumerate all network interfaces
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python:2.7+
+RUN_DEPENDS=	${PY_IPADDRESS}
+
+USES=		python
 
 USE_PYTHON=	autoplist distutils
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	pydron
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_MAJOR_VER} < 3
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipaddress>0:net/py-ipaddress
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

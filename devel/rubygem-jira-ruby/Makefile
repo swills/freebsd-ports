@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 482478 2018-10-20 09:30:10Z amdmi3 $
+# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	jira-ruby
 PORTVERSION=	1.6.0

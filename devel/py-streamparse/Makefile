@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-streamparse/Makefile 491560 2019-01-29 13:22:35Z egypcio $
+# $FreeBSD: head/devel/py-streamparse/Makefile 491701 2019-01-31 10:43:14Z egypcio $
 
 PORTNAME=	streamparse
-PORTVERSION=	3.15.0
+PORTVERSION=	3.15.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

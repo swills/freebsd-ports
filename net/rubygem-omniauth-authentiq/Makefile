@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-omniauth-authentiq/Makefile 471002 2018-05-27 20:17:50Z sunpoet $
+# $FreeBSD: head/net/rubygem-omniauth-authentiq/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	omniauth-authentiq
 PORTVERSION=	0.3.3

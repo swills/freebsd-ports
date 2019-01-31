@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-flipper-active_record013/Makefile 466580 2018-04-05 19:11:27Z sunpoet $
+# $FreeBSD: head/databases/rubygem-flipper-active_record013/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	flipper-active_record
 PORTVERSION=	0.13.0

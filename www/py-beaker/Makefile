@@ -1,8 +1,9 @@
 # Created by: Dryice Liu <dryice@FreeBSD.org>
-# $FreeBSD: head/www/py-beaker/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-beaker/Makefile 491707 2019-01-31 11:49:18Z tobik $
 
 PORTNAME=	beaker
 PORTVERSION=	1.10.0
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,7 +21,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} <= 3200
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}funcsigs>=1.0.2:devel/py-funcsigs@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}funcsigs>=1.0.2:devel/py-funcsigs@${PY_FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

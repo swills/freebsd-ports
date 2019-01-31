@@ -1,8 +1,8 @@
 # Created by: Remington Lang <MrL0Lz@gmail.com>
-# $FreeBSD: head/devel/geany/Makefile 487752 2018-12-18 14:34:34Z madpilot $
+# $FreeBSD: head/devel/geany/Makefile 491660 2019-01-30 22:31:12Z madpilot $
 
 PORTNAME=	geany
-PORTVERSION=	1.34
+PORTVERSION=	1.34.1
 CATEGORIES=	devel editors
 MASTER_SITES=	http://download.geany.org/ SF
 

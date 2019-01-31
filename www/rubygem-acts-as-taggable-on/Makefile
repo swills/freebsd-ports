@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-acts-as-taggable-on/Makefile 469935 2018-05-14 17:52:54Z mfechner $
+# $FreeBSD: head/www/rubygem-acts-as-taggable-on/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	acts-as-taggable-on
 PORTVERSION=	5.0.0

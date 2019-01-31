@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-json-jwt/Makefile 489041 2019-01-01 20:40:06Z sunpoet $
+# $FreeBSD: head/www/rubygem-json-jwt/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	json-jwt
 PORTVERSION=	1.10.0

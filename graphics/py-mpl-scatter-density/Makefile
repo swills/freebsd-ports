@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-mpl-scatter-density/Makefile 490896 2019-01-21 20:30:49Z yuri $
+# $FreeBSD: head/graphics/py-mpl-scatter-density/Makefile 491690 2019-01-31 05:24:25Z yuri $
 
 PORTNAME=	mpl-scatter-density
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-state_machines-activerecord/Makefile 482854 2018-10-23 17:49:06Z sunpoet $
+# $FreeBSD: head/databases/rubygem-state_machines-activerecord/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	state_machines-activerecord
 PORTVERSION=	0.5.2

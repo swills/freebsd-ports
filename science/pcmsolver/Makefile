@@ -1,9 +1,8 @@
-# $FreeBSD: head/science/pcmsolver/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/pcmsolver/Makefile 491682 2019-01-31 04:57:30Z yuri $
 
 PORTNAME=	pcmsolver
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.1
-PORTREVISION=	4
+DISTVERSION=	1.2.2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

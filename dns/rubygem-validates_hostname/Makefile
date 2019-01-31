@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/rubygem-validates_hostname/Makefile 454210 2017-11-14 22:51:02Z sunpoet $
+# $FreeBSD: head/dns/rubygem-validates_hostname/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	validates_hostname
 PORTVERSION=	1.0.8

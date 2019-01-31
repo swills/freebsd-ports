@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-seed-fu/Makefile 455477 2017-12-03 20:38:07Z sunpoet $
+# $FreeBSD: head/databases/rubygem-seed-fu/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	seed-fu
 PORTVERSION=	2.3.9

@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/novnc/Makefile 450315 2017-09-22 04:56:37Z araujo $
+# $FreeBSD: head/www/novnc/Makefile 491670 2019-01-31 01:37:39Z araujo $
 
 PORTNAME=	novnc
-PORTVERSION=	0.6.2
-PORTREVISION=	1
+PORTVERSION=	1.0.0
 CATEGORIES=	www
 
 MAINTAINER=	araujo@FreeBSD.org

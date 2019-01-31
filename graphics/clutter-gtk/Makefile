@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/graphics/clutter-gtk/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/clutter-gtk/Makefile 491713 2019-01-31 12:46:53Z tobik $
 
 PORTNAME=	clutter-gtk
 PORTVERSION=	0.10.8
@@ -9,6 +9,9 @@ MASTER_SITES=	GNOME
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GTK+ Integration library for Clutter
+
+DEPRECATED=	0.10.x is unmaintained upstream and unused in the ports tree
+EXPIRATION_DATE=	2019-02-28
 
 LIB_DEPENDS=	libclutter-glx-1.0.so:graphics/clutter
 

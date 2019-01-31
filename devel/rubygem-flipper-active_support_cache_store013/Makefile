@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store013/Makefile 466581 2018-04-05 19:11:55Z sunpoet $
+# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store013/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	flipper-active_support_cache_store
 PORTVERSION=	0.13.0

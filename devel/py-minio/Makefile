@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-minio/Makefile 491537 2019-01-29 03:40:10Z jhixson $
+# $FreeBSD: head/devel/py-minio/Makefile 491695 2019-01-31 07:55:08Z mat $
 
 PORTNAME=	minio
 DISTVERSION=	4.0.10
@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>=0:security/py-certifi@${PY_FLAVOR} 
 		${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3@${PY_FLAVOR}
 
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes

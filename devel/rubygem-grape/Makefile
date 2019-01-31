@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-grape/Makefile 487111 2018-12-09 23:56:14Z sunpoet $
+# $FreeBSD: head/devel/rubygem-grape/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	grape
 PORTVERSION=	1.2.2

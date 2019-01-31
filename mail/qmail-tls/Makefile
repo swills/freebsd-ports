@@ -1,9 +1,9 @@
 # Created by: Mario S F Ferreira <lioux@linf.unb.br>
-# $FreeBSD: head/mail/qmail-tls/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/qmail-tls/Makefile 491703 2019-01-31 10:59:22Z pi $
 
 PORTNAME=	qmail
 PORTVERSION=	${QMAIL_VERSION}.${TLS_PATCH_DATE}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-tls
 

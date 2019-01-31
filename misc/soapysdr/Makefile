@@ -1,9 +1,8 @@
-# $FreeBSD: head/misc/soapysdr/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/misc/soapysdr/Makefile 491683 2019-01-31 05:00:03Z yuri $
 
 PORTNAME=	SoapySDR
 DISTVERSIONPREFIX=	soapy-sdr-
-DISTVERSION=	0.7.0
-PORTREVISION=	1
+DISTVERSION=	0.7.1
 CATEGORIES=	misc hamradio
 
 MAINTAINER=	yuri@FreeBSD.org

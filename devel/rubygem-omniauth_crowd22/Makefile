@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-omniauth_crowd22/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-omniauth_crowd22/Makefile 491723 2019-01-31 14:05:37Z mfechner $
 
 PORTNAME=	omniauth_crowd
 PORTVERSION=	2.2.3
