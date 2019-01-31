@@ -1,10 +1,10 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rugged/Makefile 482159 2018-10-15 16:14:51Z mfechner $
+# $FreeBSD: head/devel/rubygem-rugged/Makefile 491724 2019-01-31 14:13:42Z mfechner $
 
 # Also update devel/libgit2, devel/libgit2-glib, devel/py-pygit2
 
 PORTNAME=	rugged
-PORTVERSION=	0.27.5
+PORTVERSION=	0.27.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
