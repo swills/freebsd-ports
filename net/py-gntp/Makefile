@@ -1,9 +1,9 @@
-# $FreeBSD: head/net/py-gntp/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net/py-gntp/Makefile 491754 2019-01-31 18:39:52Z tobik $
 
 PORTNAME=	gntp
 PORTVERSION=	0.8
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,25 +11,22 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Growl Notification Transport Protocol for Python
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		python:2.7
+USE_GITHUB=	yes
 GH_ACCOUNT=	kfdm
+USE_PYTHON=	distutils autoplist
+
+DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS
 
-USE_GITHUB=	yes
-USES=		python:2.7
-USE_PYTHON=	distutils autoplist
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
+DOCS_VARS=		PYDISTUTILS_BUILD_TARGET+=build_sphinx
 
-.include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MDOCS}
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
-DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
-PYDISTUTILS_BUILD_TARGET+=	build_sphinx
-
-post-install:
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC}/build/sphinx/html && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}
-.endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

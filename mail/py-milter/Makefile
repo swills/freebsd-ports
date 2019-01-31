@@ -1,5 +1,5 @@
 # Created by: Vsevolod Lobko <seva@sevasoft.kiev.ua>
-# $FreeBSD: head/mail/py-milter/Makefile 473663 2018-07-01 10:17:18Z dinoex $
+# $FreeBSD: head/mail/py-milter/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	milter
 PORTVERSION=	1.0.2
@@ -32,7 +32,7 @@ post-install:
 .include <bsd.port.pre.mk>
 
 .if ${FLAVOR:Upy27:Mpy3*}
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-miltermodule.c
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-miltermodule.c
 .endif
 
 .include <bsd.port.post.mk>

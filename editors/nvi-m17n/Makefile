@@ -1,5 +1,5 @@
 # Created by: Jun-ichiro itojun Itoh <itojun@itojun.org>
-# $FreeBSD: head/editors/nvi-m17n/Makefile 472573 2018-06-16 22:47:21Z swills $
+# $FreeBSD: head/editors/nvi-m17n/Makefile 491746 2019-01-31 18:08:31Z tobik $
 
 PORTNAME=	nvi
 PORTVERSION=	1.79.20040608
@@ -101,7 +101,7 @@ CONFIGURE_ARGS+=	--enable-multibyte
 
 .if ${PORT_OPTIONS:MCANNA}
 CONFIGURE_ARGS+=	--enable-canna=${PREFIX}
-LIB_DEPENDS=	libcanna.so:japanese/canna-lib
+LIB_DEPENDS+=	libcanna.so:japanese/canna-lib
 .endif
 
 post-patch:

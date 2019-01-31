@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Devel-BeginLift/Makefile 481262 2018-10-05 05:56:39Z des $
+# $FreeBSD: head/devel/p5-Devel-BeginLift/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	Devel-BeginLift
 PORTVERSION=	0.001003
@@ -21,7 +21,7 @@ USE_PERL5=	configure
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} >= 502501
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-BeginLift.xs
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-BeginLift.xs
 .endif
 
 .include <bsd.port.post.mk>

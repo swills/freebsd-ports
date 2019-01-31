@@ -1,5 +1,5 @@
 # Created by: Peter Jeremy <peterjeremy@optushome.com.au>
-# $FreeBSD: head/graphics/jogl/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/graphics/jogl/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	jogl
 PORTVERSION=	1.1.1
@@ -65,7 +65,7 @@ PLIST_SUB+=	JDK7="@comment "
 .endif
 
 .if ${JAVA_PORT_VERSION:M1.8.*}
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-build.xml
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-build.xml
 .endif
 
 post-patch:

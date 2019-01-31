@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/kiki/Makefile 456736 2017-12-19 16:23:37Z bapt $
+# $FreeBSD: head/games/kiki/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	kiki
 PORTVERSION=	1.0.2
@@ -40,7 +40,7 @@ CXXFLAGS+=	-Werror=tautological-constant-out-of-range-compare
 .endif
 
 .if ${OSVERSION} > 1200031
-EXTRA_PATCHES=	${FILESDIR}/extra-patch-ino64
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-ino64
 .endif
 
 post-patch:

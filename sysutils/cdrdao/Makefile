@@ -1,5 +1,5 @@
 # Created by: futatuki
-# $FreeBSD: head/sysutils/cdrdao/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/cdrdao/Makefile 491748 2019-01-31 18:19:05Z tobik $
 
 PORTNAME?=	cdrdao
 PORTVERSION=	1.2.4
@@ -69,7 +69,7 @@ CONFIGURE_ARGS+=	--with-mp3-support=no --with-ogg-support=no
 
 CONFIGURE_ARGS+=	--without-pcctsbin --without-pcctsinc \
 			--with-posix-threads=no --with-scglib
-MAKE_ENV=		CCOM=cc
+MAKE_ENV+=		CCOM=cc
 SCSILIBXARCH!=		${UNAME} -m
 
 post-extract:

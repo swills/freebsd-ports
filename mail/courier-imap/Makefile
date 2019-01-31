@@ -1,8 +1,8 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/courier-imap/Makefile 487753 2018-12-18 14:35:48Z madpilot $
+# $FreeBSD: head/mail/courier-imap/Makefile 491747 2019-01-31 18:15:45Z madpilot $
 
 PORTNAME=	courier-imap
-PORTVERSION=	5.0.5
+PORTVERSION=	5.0.6
 PORTEPOCH=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF/courier/imap/${PORTVERSION}

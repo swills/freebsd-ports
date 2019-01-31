@@ -1,5 +1,5 @@
 # Created by: Thomas Spreng <spreng@socket.ch>
-# $FreeBSD: head/net-mgmt/kismet/Makefile 483399 2018-10-29 19:12:28Z pi $
+# $FreeBSD: head/net-mgmt/kismet/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	kismet
 DISTVERSION=	2016-07-R1
@@ -67,7 +67,7 @@ PLIST_SUB+=	PLUGINS="@comment "
 .include <bsd.port.pre.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200000
-EXTRA_PATCHES=${FILESDIR}/extra-patch-restricted-plugin-ptw_aircrack-crypto.cc
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-restricted-plugin-ptw_aircrack-crypto.cc
 .endif
 
 post-patch:

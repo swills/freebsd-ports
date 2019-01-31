@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/www/vdr-plugin-live/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/vdr-plugin-live/Makefile 491739 2019-01-31 17:28:51Z tobik $
 
 PORTNAME=	vdr-plugin-live
 PORTVERSION=	0.3.0
@@ -33,7 +33,6 @@ OPTIONS_DEFINE=	DOCS
 
 .if ${COMPILER_FEATURES:Mlibc++}
 EXTRA_PATCHES+=		${FILESDIR}/extra-patch-libcxx
-EXTRA_PATCH_STRIP=	-p1
 .endif
 
 post-patch: post-patch-plugin
