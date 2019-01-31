@@ -1,5 +1,5 @@
 # Created by: Klaus Goger <klaus.goger@reflex.at>
-# $FreeBSD: head/games/frozen-bubble/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/games/frozen-bubble/Makefile 491753 2019-01-31 18:32:03Z tobik $
 
 PORTNAME=	frozen-bubble
 DISTVERSION=	2.2.1-beta1
@@ -26,15 +26,15 @@ USES=		compiler:features perl5 pkgconfig tar:bzip2
 USE_PERL5=	modbuild
 USE_SDL=	mixer pango sdl ttf
 
+DESKTOP_ENTRIES=	"Frozen Bubble" "" \
+			"${PREFIX}/share/pixmaps/frozen-bubble.png" \
+			"${PORTNAME}" "ArcadeGame;Game;" true
+
 .include <bsd.port.pre.mk>
 
 .if ${CHOSEN_COMPILER_TYPE:Mclang}
 CFLAGS+=	-Qunused-arguments
 .endif
-
-DESKTOP_ENTRIES=	"Frozen Bubble" "" \
-			"${PREFIX}/share/pixmaps/frozen-bubble.png" \
-			"${PORTNAME}" "ArcadeGame;Game;" true
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/share/icons/frozen-bubble-icon-64x64.png \

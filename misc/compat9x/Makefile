@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/compat9x/Makefile 442942 2017-06-08 17:24:01Z des $
+# $FreeBSD: head/misc/compat9x/Makefile 491740 2019-01-31 17:35:26Z tobik $
 
 PORTNAME=	compat9x
 PORTVERSION=	9.3.903000.20170608
@@ -21,7 +21,7 @@ USE_LDCONFIG=	${TARGET_DIR}
 .include <bsd.port.pre.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100000
-RUN_DEPENDS=	compat10x-${ARCH}>=0:misc/compat10x
+RUN_DEPENDS+=	compat10x-${ARCH}>=0:misc/compat10x
 .endif
 
 .if ${ARCH} == amd64

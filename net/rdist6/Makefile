@@ -1,5 +1,5 @@
 # Created by: peter
-# $FreeBSD: head/net/rdist6/Makefile 453116 2017-10-29 13:38:19Z cy $
+# $FreeBSD: head/net/rdist6/Makefile 491740 2019-01-31 17:35:26Z tobik $
 
 PORTNAME=	rdist
 PORTVERSION=	6.1.5
@@ -22,7 +22,7 @@ PLIST_SUB=	RDIST_NAME=${RDIST_NAME}
 .include <bsd.port.pre.mk>
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200050
-RUN_DEPENDS=	rsh:net/bsdrcmds
+RUN_DEPENDS+=	rsh:net/bsdrcmds
 .endif
 
 post-install:

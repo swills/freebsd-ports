@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/graphics/svgalib/Makefile 474721 2018-07-16 09:07:44Z amdmi3 $
+# $FreeBSD: head/graphics/svgalib/Makefile 491748 2019-01-31 18:19:05Z tobik $
 
 PORTNAME=	svgalib
 PORTVERSION=	1.4.3
@@ -25,7 +25,7 @@ ALL_TARGET=	shared static
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} != "i386"
-MAKE_ENV=	NO_ASM=y
+MAKE_ENV+=	NO_ASM=y
 .endif
 
 post-patch: .SILENT

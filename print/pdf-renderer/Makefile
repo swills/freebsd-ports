@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/print/pdf-renderer/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/print/pdf-renderer/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	pdf-renderer
 PORTVERSION=	0.9.1
@@ -40,7 +40,7 @@ ALL_TARGET+=	javadoc
 .include <bsd.port.pre.mk>
 
 .if ${JAVA_PORT_VERSION:M1.8.*}
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-swinglabs-build-impl.xml
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-swinglabs-build-impl.xml
 .endif
 
 do-install:

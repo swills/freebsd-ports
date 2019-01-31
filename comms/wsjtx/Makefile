@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/wsjtx/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/comms/wsjtx/Makefile 491743 2019-01-31 17:47:17Z tobik $
 
 PORTNAME=	wsjtx
 PORTVERSION=	2.0.0
@@ -39,13 +39,17 @@ BROKEN_i386=	does not build on i386 due to openmp
 # as well as wsjtx
 #
 .include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1200000
+EXTRA_PATCHES+=	${FILESDIR}/add_clogf
+.endif
+
 do-extract:
 # clogf is only present in FreeBSD 12
 	${TAR} xf ${DISTDIR}/${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} -C${WRKDIR}
 	${TAR} xf ${WRKDIR}/${PORTNAME}-${PORTVERSION}/src/wsjtx.tgz -C${WRKDIR}
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1200000
-	${CP}  ${FILESDIR}/clogf.c ${WRKDIR}/wsjtx
-EXTRA_PATCHES=	${FILESDIR}/add_clogf
+	${CP} ${FILESDIR}/clogf.c ${WRKDIR}/wsjtx
 .endif
 
 .include <bsd.port.post.mk>

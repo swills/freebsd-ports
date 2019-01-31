@@ -1,5 +1,5 @@
 # Created by: marius@alchemy.franken.de
-# $FreeBSD: head/sysutils/sformat/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/sysutils/sformat/Makefile 491748 2019-01-31 18:19:05Z tobik $
 
 PORTNAME=	sformat
 PORTVERSION=	3.5
@@ -26,7 +26,7 @@ USES=		gmake
 .include <bsd.port.pre.mk>
 
 CCOM!=		${BASENAME} ${CC}
-MAKE_ENV=	CCOM=${CCOM}
+MAKE_ENV+=	CCOM=${CCOM}
 SFMTTARGET=	${ARCH:S/powerpc64/powerpc/}-freebsd-${CCOM}
 
 post-extract:

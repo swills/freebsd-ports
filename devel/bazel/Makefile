@@ -1,5 +1,5 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/bazel/Makefile 491491 2019-01-28 15:17:39Z swills $
+# $FreeBSD: head/devel/bazel/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=		bazel
 DISTVERSION=		0.22.0
@@ -41,7 +41,7 @@ STRIP=	# The bazel binary is also a zip archive (extracted by the elf part), it 
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "i386"
-EXTRA_PATCHES=	${FILESDIR}/extra-i386_src_BUILD ${FILESDIR}/extra-i386_tools_cpp_BUILD.static.freebsd
+EXTRA_PATCHES+=	${FILESDIR}/extra-i386_src_BUILD ${FILESDIR}/extra-i386_tools_cpp_BUILD.static.freebsd
 .endif
 
 # Have the location of the system-wide rc file reside ${ETCDIR}.

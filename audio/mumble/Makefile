@@ -1,5 +1,5 @@
 # Created by: marius nuennerich
-# $FreeBSD: head/audio/mumble/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/mumble/Makefile 491742 2019-01-31 17:45:34Z tobik $
 
 PORTNAME=	mumble
 PORTVERSION=	1.2.19
@@ -43,6 +43,8 @@ MAKE_JOBS_UNSAFE=yes
 CONFIG=		no-server no-alsa no-speechd no-bundled-speex no-bundled-opus no-update \
 		bundled-celt no-g15 no-pulseaudio no-xevie no-embed-qt-translations
 
+EXTRA_PATCHES=	${FILESDIR}/extrapatch-fix-build-boost-1.66:-p1
+
 QMAKE_ARGS=	"CONFIG+=${CONFIG}"
 
 OPTIONS_DEFINE=	DBUS BONJOUR PORTAUDIO
@@ -65,8 +67,6 @@ PORTAUDIO_LIB_DEPENDS=	libportaudio.so:audio/portaudio
 .if ${CHOSEN_COMPILER_TYPE} == gcc
 CONFIG+=	no-pch
 .endif
-
-EXTRA_PATCHES=	${FILESDIR}/extrapatch-fix-build-boost-1.66:-p1
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-ldl||' ${WRKSRC}/overlay_gl/overlay_gl.pro

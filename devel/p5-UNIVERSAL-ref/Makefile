@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-UNIVERSAL-ref/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-UNIVERSAL-ref/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	UNIVERSAL-ref
 PORTVERSION=	0.14
@@ -20,7 +20,7 @@ USE_PERL5=	configure
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} >= 502501
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ref.xs
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ref.xs
 .endif
 
 .include <bsd.port.post.mk>

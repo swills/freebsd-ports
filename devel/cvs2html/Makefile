@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/devel/cvs2html/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/cvs2html/Makefile 491740 2019-01-31 17:35:26Z tobik $
 
 PORTNAME=	cvs2html
 PORTVERSION=	1.98
@@ -26,7 +26,7 @@ SHEBANG_FILES=	${PORTNAME}
 
 .if ${OPSYS} == FreeBSD
 # DragonFly has CVS in base and devel/cvs doesn't build there
-RUN_DEPENDS=	cvs:devel/cvs
+RUN_DEPENDS+=	cvs:devel/cvs
 .endif
 
 do-extract:

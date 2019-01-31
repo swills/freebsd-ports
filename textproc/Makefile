@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 491597 2019-01-29 20:16:20Z mat $
+# $FreeBSD: head/textproc/Makefile 491737 2019-01-31 15:29:58Z ehaupt $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1263,6 +1263,7 @@
     SUBDIR += py-Chameleon
     SUBDIR += py-CommonMark
     SUBDIR += py-MarkupSafe
+    SUBDIR += py-QDarkStyle
     SUBDIR += py-Tempita
     SUBDIR += py-acora
     SUBDIR += py-agate

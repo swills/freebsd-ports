@@ -1,5 +1,5 @@
 # Created by: vanhu
-# $FreeBSD: head/security/ipsec-tools/Makefile 485900 2018-11-25 20:35:22Z olivier $
+# $FreeBSD: head/security/ipsec-tools/Makefile 491745 2019-01-31 17:59:50Z tobik $
 
 # TODO: - libipsec issue ?
 #       - cleanup...
@@ -86,7 +86,7 @@ NATT_EXTRA_PATCHES=		${FILESDIR}/natt.diff
 # Need to be patched for openssl-1.1.1 (default after 1200080)
 .if ${OPSYS} == FreeBSD
 .  if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
-BUILD_DEPENDS=	automake>=0:devel/automake
+BUILD_DEPENDS+=	automake>=0:devel/automake
 .  endif
 .endif
 

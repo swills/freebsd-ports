@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kodi/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/kodi/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	kodi
 DISTVERSION=	17.6
@@ -202,7 +202,7 @@ PLIST_SUB+=	ARM="@comment "
 PLIST_SUB+=	X86=""
 .else
 # armv6 || armv7 (rpi1 and rpi2 only)
-EXTRA_PATCHES=	${FILESDIR}/extra-armv6_hal
+EXTRA_PATCHES+=	${FILESDIR}/extra-armv6_hal
 CONFIGURE_ARGS+=	--enable-player=omxplayer
 LIB_DEPENDS+=	libEGL.so:misc/raspberrypi-userland \
 		libhal.so:sysutils/hal \

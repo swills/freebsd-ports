@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-workhorse/Makefile 491732 2019-01-31 14:24:53Z mfechner $
+# $FreeBSD: head/www/gitlab-workhorse/Makefile 491750 2019-01-31 18:23:35Z mfechner $
 
 PORTNAME=	gitlab-workhorse
-PORTVERSION=	8.0.0
+PORTVERSION=	8.0.1
 CATEGORIES=	www
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -19,7 +19,7 @@ USES=	gmake
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the commit hash here: https://gitlab.com/gitlab-org/gitlab-workhorse/tags
-GL_COMMIT=	1788824b16499c9e543fbfacd1cbd12f281f6e50
+GL_COMMIT=	eb1b22da6321d6388f34b712a86b80f09b498564
 
 PLIST_FILES=	bin/gitlab-workhorse \
 		bin/gitlab-zip-cat \

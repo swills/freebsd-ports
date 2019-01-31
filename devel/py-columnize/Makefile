@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-columnize/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-columnize/Makefile 491744 2019-01-31 17:51:39Z tobik $
 
 PORTNAME=	columnize
 PORTVERSION=	0.3.9
@@ -22,7 +22,7 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_MAJOR_VER} == "3"
-EXTRA_PATCHES=      ${FILESDIR}/extra-patch-____pkginfo____.py
+EXTRA_PATCHES+=      ${FILESDIR}/extra-patch-____pkginfo____.py
 .else
 MY_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports.shutil_get_terminal_size>=1.0:devel/py-backports.shutil_get_terminal_size@${PY_FLAVOR}
 .endif
