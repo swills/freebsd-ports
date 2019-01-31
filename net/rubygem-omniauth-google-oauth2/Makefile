@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-omniauth-google-oauth2/Makefile 487114 2018-12-09 23:56:39Z sunpoet $
+# $FreeBSD: head/net/rubygem-omniauth-google-oauth2/Makefile 491727 2019-01-31 14:17:57Z mfechner $
 
 PORTNAME=	omniauth-google-oauth2
 PORTVERSION=	0.6.0

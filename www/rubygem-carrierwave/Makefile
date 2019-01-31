@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-carrierwave/Makefile 476121 2018-07-31 23:54:47Z sunpoet $
+# $FreeBSD: head/www/rubygem-carrierwave/Makefile 491728 2019-01-31 14:19:08Z mfechner $
 
 PORTNAME=	carrierwave
 PORTVERSION=	1.3.1
