@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	vether-kmod
-DISTVERSION=	g20190128
+DISTVERSION=	g20190201
 CATEGORIES=	net
 
 MAINTAINER=	henning.matyschok@outlook.com
@@ -15,7 +15,7 @@ USES=		kmod uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	hmatyschok
 GH_PROJECT=	if_vether
-GH_TAGNAME=	1b2c04f9ea7ea0eda85ee23c04c51491ed710e84
+GH_TAGNAME=	80680158073ad832a7726d5d6f5e22855af9ba6f
 
 PLIST_FILES=	${KMODDIR}/if_vether.ko \
 		man/man4/if_vether.4.gz \
