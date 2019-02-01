@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	cbsd
-DISTVERSION=	12.0.3
+DISTVERSION=	12.0.4
 CATEGORIES=	sysutils
 
 MAINTAINER=	olevole@olevole.ru
@@ -10,7 +10,8 @@ COMMENT=	Yet another FreeBSD Jail and Bhyve Management Utility
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rsync:net/rsync \
+RUN_DEPENDS=	pkgconf:devel/pkgconf \
+		rsync:net/rsync \
 		sudo:security/sudo \
 		sqlite3:databases/sqlite3 \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
