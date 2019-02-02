@@ -44,3 +44,12 @@
  	$(QUIET_GEN)$(RM) $@ $@+ && \
  	sed -e '1s|#!.*/sh|#!$(SHELL_PATH_SQ)|' \
  	    -e 's|@@REASON@@|NO_PERL=$(NO_PERL)|g' \
+@@ -2208,7 +2208,7 @@ ifndef NO_PYTHON
+ $(SCRIPT_PYTHON_GEN): GIT-CFLAGS GIT-PREFIX GIT-PYTHON-VARS
+ $(SCRIPT_PYTHON_GEN): % : %.py
+ 	$(QUIET_GEN)$(RM) $@ $@+ && \
+-	sed -e '1s|#!.*python|#!$(PYTHON_PATH_SQ)|' \
++	sed -e '1s|#!.*python.*|#!$(PYTHON_PATH_SQ)|' \
+ 	    $< >$@+ && \
+ 	chmod +x $@+ && \
+ 	mv $@+ $@
