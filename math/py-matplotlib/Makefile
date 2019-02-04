@@ -111,7 +111,7 @@ post-patch:
 		${WRKSRC}/setup.cfg
 
 post-install:
-	@${FIND} ${STAGEDIR}${PYTHON_SITELIBDIR}/matplotlib -name '*.so' \
+	@${FIND} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/matplotlib -name '*.so' \
 		| ${XARGS} ${STRIP_CMD}
 
 post-install-EXAMPLES-on:
