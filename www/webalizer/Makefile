@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/webalizer/Makefile 490710 2019-01-19 07:38:59Z dinoex $
+# $FreeBSD: head/www/webalizer/Makefile 492140 2019-02-04 15:18:05Z dinoex $
 
 PORTNAME=	webalizer
 PORTVERSION=	2.23.8
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES+=	www
 MASTER_SITES=	ftp://ftp.mrunix.net/pub/webalizer/:main \
 		ftp://ftp.mrunix.net/pub/webalizer/geodb/:geodb \
@@ -71,7 +71,7 @@ IP_AS_HOSTNAME_CFLAGS=		-DUSE_IP_AS_HOSTNAME
 DISTFILES+=	webalizer-flags.tgz:main
 .endif
 .if ${PORT_OPTIONS:MGEODB} || make(makesum) || defined(FETCH_ALL)
-DISTFILES+=	webalizer-geodb-20190101.tgz:geodb
+DISTFILES+=	webalizer-geodb-20190201.tgz:geodb
 .endif
 
 # slave ports override with languages specific gd

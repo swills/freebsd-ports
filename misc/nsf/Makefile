@@ -1,5 +1,5 @@
 # Created by: kaz
-# $FreeBSD: head/misc/nsf/Makefile 407924 2016-02-03 00:14:24Z marino $
+# $FreeBSD: head/misc/nsf/Makefile 491958 2019-02-02 13:48:07Z tobik $
 
 PORTNAME=	nsf
 PORTVERSION=	1.0
@@ -10,13 +10,14 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	NAKAMURA's Shell Form input
 
 USES=		ncurses
-WRKSRC=		${WRKDIR}
+
 MAKE_ARGS=	LIBS="${LDFLAGS} -lncurses"
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/nsf man/man1/nsf.1.gz
 ALL_TARGET=
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKDIR}/nsf ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_MAN} ${WRKDIR}/nsf.1 ${STAGEDIR}${PREFIX}/man/man1
+	${INSTALL_PROGRAM} ${WRKSRC}/nsf ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/nsf.1 ${STAGEDIR}${PREFIX}/man/man1
 
 .include <bsd.port.mk>

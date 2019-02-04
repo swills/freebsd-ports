@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/p5-Algorithm-Munkres/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/math/p5-Algorithm-Munkres/Makefile 491796 2019-02-01 09:00:38Z amdmi3 $
 
 PORTNAME=	Algorithm-Munkres
 PORTVERSION=	0.08
@@ -11,7 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Extension for Munkres' Solution to Classical Assignment Problem
 
+LICENSE=	GPLv2+
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

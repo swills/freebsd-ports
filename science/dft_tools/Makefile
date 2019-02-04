@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dft_tools/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/science/dft_tools/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	dft_tools
 DISTVERSION=	1.5
@@ -11,6 +11,8 @@ COMMENT=	Interface to DFT codes in TRIQS
 LICENSE=	GPLv3
 
 BROKEN=		wrong LIB_DEPENDS
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 BUILD_DEPENDS=	boost-libs>=1.53:devel/boost-libs \
 		googletest>0:devel/googletest # not needed: https://github.com/TRIQS/dft_tools/issues/95

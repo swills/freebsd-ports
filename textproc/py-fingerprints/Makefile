@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-fingerprints/Makefile 475546 2018-07-28 12:24:26Z miwi $
+# $FreeBSD: head/textproc/py-fingerprints/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	fingerprints
 DISTVERSION=	0.5.4
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Easy comparing and cross-referencing of companies and people
 
 LICENSE=	MIT

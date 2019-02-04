@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openbgpd/Makefile 458810 2018-01-12 09:03:49Z pi $
+# $FreeBSD: head/net/openbgpd/Makefile 491929 2019-02-02 09:43:44Z tobik $
 
 PORTNAME=	openbgpd
 PORTVERSION=	5.2.20121209
@@ -16,9 +16,10 @@ LICENSE_FILE=	${FILESDIR}/COPYING
 
 CONFLICTS=	zebra-[0-9]* quagga-[0-9]*
 
-WRKSRC=		${WRKDIR}
 USES=		tar:tgz uidfix
 USE_RC_SUBR=	${PORTNAME}
+
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	sbin/bgpctl sbin/bgpd man/man5/bgpd.conf.5.gz \
 		man/man8/bgpctl.8.gz man/man8/bgpd.8.gz
 SUB_FILES=	pkg-message

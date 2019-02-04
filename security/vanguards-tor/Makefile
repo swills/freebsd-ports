@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/vanguards-tor/Makefile 478471 2018-08-30 16:32:07Z yuri $
+# $FreeBSD: head/security/vanguards-tor/Makefile 492019 2019-02-02 21:57:27Z yuri $
 
 PORTNAME=	vanguards
-DISTVERSION=	0.2.2
+DISTVERSION=	0.3.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMESUFFIX=	-tor
@@ -21,6 +21,6 @@ USE_PYTHON=	distutils autoplist noflavors
 NO_ARCH=	yes
 
 do-test: # 3 testcases are known to fail: https://github.com/mikeperry-tor/vanguards/issues/27
-	@cd ${WRKSRC} && ${SETENV} PYTHONPATH=${WRKSRC}/src ${PYTHON_CMD} -m pytest -rs tests
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} PYTHONPATH=${WRKSRC}/src ${PYTHON_CMD} -m pytest -rs tests
 
 .include <bsd.port.mk>

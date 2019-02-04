@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/misc/p5-Array-FileReader/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/misc/p5-Array-FileReader/Makefile 491922 2019-02-02 09:00:42Z amdmi3 $
 
 PORTNAME=	Array-FileReader
 PORTVERSION=	0.03
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lazily tie files to arrays for reading
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

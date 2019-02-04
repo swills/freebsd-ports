@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-role/Makefile 491428 2019-01-27 21:11:17Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-role/Makefile 491781 2019-01-31 22:26:04Z dbaio $
 
 PORTNAME=	azure-cli-role
-PORTVERSION=	2.3.0
+PORTVERSION=	2.3.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

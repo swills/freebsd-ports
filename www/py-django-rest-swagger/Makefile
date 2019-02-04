@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-rest-swagger/Makefile 468800 2018-05-01 19:51:16Z sunpoet $
+# $FreeBSD: head/www/py-django-rest-swagger/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	django-rest-swagger
 DISTVERSION=	2.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Swagger UI for Django REST framework
 
 LICENSE=	BSD2CLAUSE

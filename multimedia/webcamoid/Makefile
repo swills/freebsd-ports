@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/webcamoid/Makefile 490771 2019-01-20 04:46:55Z jbeich $
+# $FreeBSD: head/multimedia/webcamoid/Makefile 492074 2019-02-03 20:32:31Z yuri $
 
 PORTNAME=	webcamoid
 DISTVERSION=	8.1.0
@@ -11,7 +11,7 @@ COMMENT=	Full featured webcam suite
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPEDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libavcodec.so:multimedia/ffmpeg \
 		libjack.so:audio/jack \

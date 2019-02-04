@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-FFI-Platypus/Makefile 490806 2019-01-20 20:49:44Z sunpoet $
+# $FreeBSD: head/devel/p5-FFI-Platypus/Makefile 492090 2019-02-04 00:00:02Z sunpoet $
 
 PORTNAME=	FFI-Platypus
-PORTVERSION=	0.74
+PORTVERSION=	0.80
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -33,5 +33,6 @@ RUN_DEPENDS+=	p5-ExtUtils-MakeMaker>=7.12:devel/p5-ExtUtils-MakeMaker \
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/FFI/Platypus/Platypus.so
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/share/dist/FFI-Platypus/lib/libplfill.so
 
 .include <bsd.port.post.mk>

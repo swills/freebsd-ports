@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-ptyprocess/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/py-ptyprocess/Makefile 491943 2019-02-02 10:43:30Z robak $
 
 PORTNAME=	ptyprocess
-PORTVERSION=	0.5.1
+PORTVERSION=	0.6.0
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

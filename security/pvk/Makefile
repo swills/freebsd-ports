@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/security/pvk/Makefile 487187 2018-12-10 16:50:08Z rene $
+# $FreeBSD: head/security/pvk/Makefile 491925 2019-02-02 09:36:08Z tobik $
 
 PORTNAME=	pvk
 PORTVERSION=	20070406
@@ -12,9 +12,10 @@ MAINTAINER=	sobomax@FreeBSD.org
 COMMENT=	Tool to convert a RSA key in PEM format into a PVK file and vice versa
 
 USES=		ssl
-WRKSRC=		${WRKDIR}
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
+
+NO_WRKSUBDIR=	yes
 
 post-patch:
 	${REINPLACE_CMD} -e 's|\(-lcrypto\)|$$(LDFLAGS) \1|g' \

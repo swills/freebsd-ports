@@ -1,5 +1,5 @@
 # Created by: Tim Welch <ports@thepentagon.org>
-# $FreeBSD: head/news/nzbperl/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/nzbperl/Makefile 491928 2019-02-02 09:42:06Z tobik $
 
 PORTNAME=	nzbperl
 PORTVERSION=	0.6.8
@@ -18,21 +18,21 @@ RUN_DEPENDS=	p5-XML-DOM>=0:textproc/p5-XML-DOM \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		uudeview:converters/uudeview
 
-PLIST_FILES=	bin/${PORTNAME}
-NO_BUILD=	yes
 USES=		perl5 shebangfix
 USE_PERL5=	run
 SHEBANG_FILES=	${DISTNAME}
-WRKSRC=		${WRKDIR}
+
+PLIST_FILES=	bin/${PORTNAME}
+NO_BUILD=	yes
 
 OPTIONS_DEFINE=	SSL
 SSL_RUN_DEPENDS=p5-Net-SSLeay>=0:security/p5-Net-SSLeay
 
 do-extract:
-	@${MKDIR} ${WRKDIR}
-	${CP} ${DISTDIR}/${DISTNAME} ${WRKDIR}
+	@${MKDIR} ${WRKSRC}
+	${CP} ${DISTDIR}/${DISTNAME} ${WRKSRC}
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

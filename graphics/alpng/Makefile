@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/graphics/alpng/Makefile 415452 2016-05-18 14:11:33Z amdmi3 $
+# $FreeBSD: head/graphics/alpng/Makefile 491936 2019-02-02 10:10:15Z tobik $
 
 PORTNAME=	alpng
 PORTVERSION=	1.3
@@ -13,12 +13,14 @@ COMMENT=	Library for display PNG images in programs
 
 LIB_DEPENDS=	liballeg.so:devel/allegro
 
-HAS_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}
-MAKEFILE=	makefile
 USES=		gmake
+
+HAS_CONFIGURE=	yes
+MAKEFILE=	makefile
 MAKE_ARGS=	CC="${CC}"
 CFLAGS+=	-I${LOCALBASE}/include
+
+NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	include/alpng.h \
 		lib/libalpng.a

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-djangocms-admin-style/Makefile 469566 2018-05-10 16:25:56Z miwi $
+# $FreeBSD: head/www/py-djangocms-admin-style/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	djangocms-admin-style
 DISTVERSION=	1.2.8
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Pretty CSS styles for the django CMS admin interface
 
 LICENSE=	BSD3CLAUSE

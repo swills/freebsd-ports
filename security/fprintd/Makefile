@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/fprintd/Makefile 489978 2019-01-11 15:02:43Z miwi $
+# $FreeBSD: head/security/fprintd/Makefile 492127 2019-02-04 13:08:16Z mat $
 
 PORTNAME=	fprintd
-PORTVERSION=	0.8.1
+DISTVERSIONPREFIX=	V_
+DISTVERSION=	0_8_1
 CATEGORIES=	security
 
 MAINTAINER=	la5lbtyi@aon.at
@@ -21,7 +22,6 @@ USE_GNOME=	intltool glib20
 USE_GITHUB=	yes
 GH_ACCOUNT=	freedesktop
 GH_PROJECT=	libfprint-${PORTNAME}
-GH_TAGNAME=	V_${PORTVERSION:S|.|_|g}
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 485932 2018-11-26 08:40:06Z manu $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 492147 2019-02-04 18:22:06Z manu $
 #
 # Common infrastructure for u-boot ports
 #
@@ -93,7 +93,7 @@ UBOOT_METADATA_IMX6_RAW_BS=	512
 .if !defined(UBOOT_VERSION) && defined(UBOOT_VERSION_${FAMILY:tu})
 UBOOT_VERSION=${UBOOT_VERSION_${FAMILY:tu}}
 .endif
-UBOOT_VERSION?=	2018.11
+UBOOT_VERSION?=	2019.01
 
 .if !defined(UBOOT_PLIST) && defined(UBOOT_PLIST_${FAMILY:tu})
 UBOOT_PLIST=${UBOOT_PLIST_${FAMILY:tu}}

@@ -1,5 +1,5 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/www/rubygem-rack-cors0/Makefile 463215 2018-02-28 15:12:23Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-cors0/Makefile 492006 2019-02-02 21:55:41Z sunpoet $
 
 PORTNAME=	rack-cors
 PORTVERSION=	0.4.1
@@ -12,6 +12,9 @@ COMMENT=	Middleware that will make Rack-based apps CORS compatible
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Use www/rubygem-rack-cors instead
+EXPIRATION_DATE=2019-02-28
 
 PORTSCOUT=	limit:^0\.
 

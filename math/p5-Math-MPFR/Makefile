@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/p5-Math-MPFR/Makefile 491650 2019-01-30 19:22:29Z sunpoet $
+# $FreeBSD: head/math/p5-Math-MPFR/Makefile 491861 2019-02-01 21:42:13Z sunpoet $
 
 PORTNAME=	Math-MPFR
-PORTVERSION=	4.07
+PORTVERSION=	4.08
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

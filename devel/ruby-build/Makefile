@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/ruby-build/Makefile 488311 2018-12-25 10:54:15Z meta $
+# $FreeBSD: head/devel/ruby-build/Makefile 491865 2019-02-01 21:42:34Z sunpoet $
 
 PORTNAME=	ruby-build
-PORTVERSION=	20181225
+PORTVERSION=	20190130
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel ruby
 
@@ -20,8 +20,8 @@ RUN_DEPENDS=	autoconf>0:devel/autoconf \
 USE_GITHUB=	yes
 GH_ACCOUNT=	rbenv
 
-NO_BUILD=	yes
 NO_ARCH=	yes
+NO_BUILD=	yes
 
 PLIST_FILES=	bin/ruby-build \
 		libexec/rbenv-install \
@@ -29,8 +29,8 @@ PLIST_FILES=	bin/ruby-build \
 PORTDATA=	*
 
 OPTIONS_DEFINE=	RBENV
+OPTIONS_DEFAULT=RBENV
 RBENV_DESC=	Install rbenv for installation support
-OPTIONS_DEFAULT=	RBENV
 RBENV_RUN_DEPENDS=	rbenv:devel/rbenv
 
 do-install:

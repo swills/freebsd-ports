@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-djangorestframework/Makefile 491584 2019-01-29 16:36:53Z miwi $
+# $FreeBSD: head/www/py-djangorestframework/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	djangorestframework
 DISTVERSION=	3.9.0
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Django REST framework
 
 LICENSE=	BSD2CLAUSE

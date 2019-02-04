@@ -1,5 +1,5 @@
 # Created by: Per Otterstr=F6m <pelle@fukt.bth.se>
-# $FreeBSD: head/x11/temperature.app/Makefile 429503 2016-12-26 12:33:16Z amdmi3 $
+# $FreeBSD: head/x11/temperature.app/Makefile 491964 2019-02-02 17:34:27Z tobik $
 
 PORTNAME=	temperature.app
 PORTVERSION=	1.4
@@ -8,7 +8,7 @@ CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://www.fukt.bsnet.se/~per/temperature/
 DISTNAME=	Temperature.app-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Dockable WindowMaker applet which displays the local temperature
 
 LICENSE=	GPLv2+

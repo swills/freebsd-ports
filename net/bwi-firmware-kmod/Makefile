@@ -1,5 +1,5 @@
 # Created by: Andrew Thompson <thompsa@FreeBSD.org>
-# $FreeBSD: head/net/bwi-firmware-kmod/Makefile 473307 2018-06-25 12:33:25Z tobik $
+# $FreeBSD: head/net/bwi-firmware-kmod/Makefile 491929 2019-02-02 09:43:44Z tobik $
 
 PORTNAME=	bwi-firmware
 PORTVERSION=	${FWVERSION}
@@ -24,7 +24,7 @@ FIRMWARES=	ucode ucode11 ucode2 ucode4 ucode5 \
 		b0g0bsinitvals2 b0g0bsinitvals5 b0g0initvals2 b0g0initvals5 \
 		pcm4 pcm5
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 FWNAME=		bwi_v3
 FWFILE=		wl_apsta-${FWVERSION}.0.o
 FWVERSION=	3.130.20

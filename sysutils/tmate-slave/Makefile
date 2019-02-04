@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/tmate-slave/Makefile 482345 2018-10-18 15:06:29Z swills $
+# $FreeBSD: head/sysutils/tmate-slave/Makefile 491907 2019-02-02 00:54:26Z swills $
 
 PORTNAME=	tmate-slave
-PORTVERSION=	g20171113
+PORTVERSION=	g2018112801
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libevent.so:devel/libevent \
 USES=		autoreconf ncurses pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	tmate-io
-GH_TAGNAME=	d6a76e0
+GH_TAGNAME=	8b294f3
 
 GNU_CONFIGURE=	yes
 INSTALL_ARGET=	install-strip

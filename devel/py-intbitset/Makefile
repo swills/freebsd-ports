@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-intbitset/Makefile 476961 2018-08-12 05:00:27Z koobs $
+# $FreeBSD: head/devel/py-intbitset/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	intbitset
 DISTVERSION=	2.3.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	C-based extension implementing fast integer bit sets
 
 LICENSE=	LGPL3

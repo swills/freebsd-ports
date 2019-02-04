@@ -1,8 +1,8 @@
-# $FreeBSD: head/finance/expense/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/finance/expense/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	expense
 PORTVERSION=	0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	finance gnustep
 MASTER_SITES=	http://www.eskimo.com/~pburns/Expense/files/
 DISTNAME=	Expense-${PORTVERSION}

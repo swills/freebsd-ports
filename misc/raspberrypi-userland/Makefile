@@ -1,11 +1,11 @@
 # Created by: Mikael Urankar <mikael.urankar@gmail.com>
-# $FreeBSD: head/misc/raspberrypi-userland/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/misc/raspberrypi-userland/Makefile 491963 2019-02-02 17:23:48Z tobik $
 
 PORTNAME=	raspberrypi-userland
 PORTVERSION=	20161026
 CATEGORIES=	misc
 
-MAINTAINER=	mikael.urankar@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Various libraries for the Raspberry Pi
 
 LICENSE=	BSD3CLAUSE

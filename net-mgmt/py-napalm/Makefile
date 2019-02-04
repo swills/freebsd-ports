@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-napalm/Makefile 489380 2019-01-05 20:50:08Z swills $
+# $FreeBSD: head/net-mgmt/py-napalm/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	napalm
 DISTVERSION=	2.3.3
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Net Automation and Progr. Abstraction Layer with Multivendor support
 
 LICENSE=	APACHE20

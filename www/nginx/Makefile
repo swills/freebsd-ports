@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 490368 2019-01-15 12:35:35Z joneum $
+# $FreeBSD: head/www/nginx/Makefile 492082 2019-02-03 22:40:52Z joneum $
 
 PORTNAME=	nginx
 PORTVERSION=	1.14.2
@@ -14,6 +14,7 @@ MAINTAINER?=	joneum@FreeBSD.org
 COMMENT?=	Robust and small WWW server
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_mips=	error ngx_spinlock() or ngx_atomic_cmp_set() are not defined
 BROKEN_mips64=	error ngx_spinlock() or ngx_atomic_cmp_set() are not defined

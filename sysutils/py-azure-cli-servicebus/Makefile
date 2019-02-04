@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-servicebus/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-servicebus/Makefile 491782 2019-01-31 22:26:43Z dbaio $
 
 PORTNAME=	azure-cli-servicebus
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

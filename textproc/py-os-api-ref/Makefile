@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-os-api-ref/Makefile 474025 2018-07-06 17:49:21Z miwi $
+# $FreeBSD: head/textproc/py-os-api-ref/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	os-api-ref
 DISTVERSION=	1.5.0
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Sphinx Extensions to support API reference sites in OpenStack
 
 LICENSE=	APACHE20

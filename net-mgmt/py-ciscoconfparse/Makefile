@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-ciscoconfparse/Makefile 474278 2018-07-09 18:36:11Z miwi $
+# $FreeBSD: head/net-mgmt/py-ciscoconfparse/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	ciscoconfparse
 DISTVERSION=	1.3.20
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Parse, audit, query, build and modify Cisco IOS-style configurations
 
 LICENSE=	GPLv3+

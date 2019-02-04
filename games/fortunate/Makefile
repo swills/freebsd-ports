@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/fortunate/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/games/fortunate/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	fortunate
 PORTVERSION=	3.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games gnustep
 MASTER_SITES=	GNUSTEP_CH
 

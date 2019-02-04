@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-openapi-codec/Makefile 465750 2018-03-27 20:47:48Z yuri $
+# $FreeBSD: head/devel/py-openapi-codec/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	openapi-codec
 DISTVERSION=	1.3.2
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	OpenAPI codec for Core API
 
 LICENSE=	BSD2CLAUSE

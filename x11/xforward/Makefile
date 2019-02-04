@@ -1,5 +1,5 @@
 # Created by: Cy Schubert <cy@FreeBSD.org>
-# $FreeBSD: head/x11/xforward/Makefile 414578 2016-05-04 03:12:35Z cy $
+# $FreeBSD: head/x11/xforward/Makefile 491917 2019-02-02 06:57:27Z tobik $
 
 PORTNAME=	xforward
 PORTVERSION=	1.0
@@ -8,23 +8,25 @@ MASTER_SITES=	http://komquats.com/distfiles/ \
 		http://people.freebsd.org/~cy/distfiles/
 DISTNAME=	${PORTNAME}
 
-WRKSRC=		${WRKDIR}
-
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Provide user-level X forwarding service
 
 LICENSE_FILE=	${WRKSRC}/NOTICE
 
-MAKE_ARGS+=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE}
-USE_XORG=	x11 xt xaw xmu xt xext sm ice xp xft xau xcb xdmcp xrender
-USES=		motif
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libexpat.so:textproc/expat2 \
 		libfreetype.so:print/freetype2
+		
+USES=		motif
+USE_XORG=	x11 xt xaw xmu xt xext sm ice xp xft xau xcb xdmcp xrender
+
+MAKE_ARGS=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE}
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/xforward man/man1/xforward.1.gz
 
 OPTIONS_DEFINE=		STATIC
+
 STATIC_ALL_TARGET=	all-static
 STATIC_INSTALL_TARGET=	install-static
 STATIC_PLIST_FILES=	bin/xforward-static

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-MAT-Dumper/Makefile 490592 2019-01-17 19:21:59Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-MAT-Dumper/Makefile 492089 2019-02-03 23:59:56Z sunpoet $
 
 PORTNAME=	Devel-MAT-Dumper
-PORTVERSION=	0.39
+PORTVERSION=	0.40
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

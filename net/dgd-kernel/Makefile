@@ -1,5 +1,5 @@
 # Created by: glewis
-# $FreeBSD: head/net/dgd-kernel/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/net/dgd-kernel/Makefile 491929 2019-02-02 09:43:44Z tobik $
 
 PORTNAME=	dgd-kernel
 PORTVERSION=	1.3.4
@@ -8,15 +8,15 @@ CATEGORIES=	net games
 MASTER_SITES=	http://ftp.dworkin.nl/kernellib/ \
 		http://ftp.dworkin.nl/kernellib/patches/
 DISTNAME=	kernellib-${PORTVERSION}
+DIST_SUBDIR=	dgd
 
 MAINTAINER=	glewis@FreeBSD.org
 COMMENT=	Kernel mudlib, for use with DGD
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/dgd:net/dgd
 
-DIST_SUBDIR=	dgd
-WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS

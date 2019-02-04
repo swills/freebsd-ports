@@ -1,9 +1,9 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/graphics/stamp/Makefile 428135 2016-12-08 16:39:11Z tijl $
+# $FreeBSD: head/graphics/stamp/Makefile 491830 2019-02-01 15:32:12Z tobik $
 
 PORTNAME=	stamp
 PORTVERSION=	2.0.8
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
@@ -14,10 +14,6 @@ USES=		jpeg
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
-
-OPTIONS_DEFINE=	X11
-OPTIONS_SUB=	yes
-X11_USE=	GNOME=gtk12
 
 post-patch:
 	@${REINPLACE_CMD} -e 's#/usr/local/share/stamp#${DATADIR}#' \

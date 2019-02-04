@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/remotedesk/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/net/remotedesk/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	remotedesk
 PORTVERSION=	0.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	net gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	RemoteDesk-${PORTVERSION}

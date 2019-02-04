@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-coreapi/Makefile 465633 2018-03-26 19:49:46Z yuri $
+# $FreeBSD: head/devel/py-coreapi/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	coreapi
 DISTVERSION=	2.3.3
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Python client library for Core API
 
 LICENSE=	BSD2CLAUSE

@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/preview/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/graphics/preview/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	preview
 PORTVERSION=	0.8.5
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://download.gna.org/gsimageapps/
 PKGNAMEPREFIX=	gnustep-

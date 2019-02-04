@@ -1,5 +1,5 @@
 # Created by: buganini@gmail.com
-# $FreeBSD: head/graphics/c-a-i-r/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/graphics/c-a-i-r/Makefile 491936 2019-02-02 10:10:15Z tobik $
 
 PORTNAME=	c-a-i-r
 PORTVERSION=	2.19
@@ -13,9 +13,8 @@ COMMENT=	Content Aware Image Resizer is an implementation of seam carving
 USES=		dos2unix gmake zip
 DOS2UNIX_GLOB=	*.cpp
 
-MAKE_ARGS+=	CC="${CXX}"
-
-WRKSRC=		${WRKDIR}
+MAKE_ARGS=	CC="${CXX}"
+NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	bin/cair
 

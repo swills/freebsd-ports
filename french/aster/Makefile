@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/aster/Makefile 491307 2019-01-26 18:12:23Z thierry $
+# $FreeBSD: head/french/aster/Makefile 491960 2019-02-02 14:06:49Z thierry $
 
 PORTNAME=	aster
 DISTVERSION=	${ASTER_DISTVERSION}
@@ -45,7 +45,7 @@ BUILD_DEPENDS+=	astk-serveur>0:cad/astk-serveur	\
 		bash:shells/bash				\
 		${PYNUMPY}
 LIB_DEPENDS+=	libhdf5-18.so:science/hdf5-18			\
-		libmetis.so:math/metis			\
+		libmetis.so:math/metis				\
 		libomp.so:devel/openmp				\
 		libmed.so:french/med
 #		libAsterInterface.so:science/mfront
@@ -54,7 +54,7 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}gnuplot>0:math/py-gnuplot@${PY_FLAVOR} \
 		${SHELL_INSTALL_ASTER}:shells/${SHIADEP}	\
 		astk-serveur>0:cad/astk-serveur
 
-USES=		bison fortran gettext python:2.7 qt:4 tk
+USES=		bison fortran gettext python:2.7 qt:5 tk
 USE_BINUTILS=	yes
 USE_QT=		linguisttools_build
 

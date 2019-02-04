@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-itypes/Makefile 465632 2018-03-26 19:42:16Z yuri $
+# $FreeBSD: head/devel/py-itypes/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	itypes
 DISTVERSION=	1.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Simple immutable types for Python
 
 LICENSE=	BSD2CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/x11-fm/worker/Makefile 490952 2019-01-22 14:11:19Z danfe $
+# $FreeBSD: head/x11-fm/worker/Makefile 492118 2019-02-04 11:52:13Z linimon $
 
 PORTNAME=	worker
 PORTVERSION=	3.15.3
@@ -45,5 +45,9 @@ LUA_USES=	lua:51
 
 XFT_CONFIGURE_OFF=	--disable-xft
 XFT_USE=	xorg=xft
+
+.if exists(/usr/lib/libstdc++.so)
+CXXFLAGS+=	-Wno-error=narrowing
+.endif
 
 .include <bsd.port.mk>

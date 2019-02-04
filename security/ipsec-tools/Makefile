@@ -1,5 +1,5 @@
 # Created by: vanhu
-# $FreeBSD: head/security/ipsec-tools/Makefile 491745 2019-01-31 17:59:50Z tobik $
+# $FreeBSD: head/security/ipsec-tools/Makefile 492078 2019-02-03 21:04:24Z olivier $
 
 # TODO: - libipsec issue ?
 #       - cleanup...
@@ -85,7 +85,7 @@ NATT_EXTRA_PATCHES=		${FILESDIR}/natt.diff
 
 # Need to be patched for openssl-1.1.1 (default after 1200080)
 .if ${OPSYS} == FreeBSD
-.  if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
+.  if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} != openssl
 BUILD_DEPENDS+=	automake>=0:devel/automake
 .  endif
 .endif
@@ -95,7 +95,7 @@ post-patch:
 
 # Need to be patched for openssl-1.1.1 (default after 1200080)
 .if ${OPSYS} == FreeBSD
-.  if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
+.  if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} != openssl
 post-configure:
 	@${REINPLACE_CMD} -e "s/automake-1.14/automake-1.16/g" ${WRKSRC}/Makefile ${WRKSRC}/*/Makefile \
 				${WRKSRC}/*/*/Makefile
@@ -121,7 +121,7 @@ post-install-DOCS-on:
 	${INSTALL_DATA} ${WRKSRC}/src/racoon/doc/* ${STAGEDIR}/${DOCSDIR}
 
 .if ${OPSYS} == FreeBSD
-.  if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
+.  if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} != openssl
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-aclocal.m4
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-ipsec-tools
 PLIST_FILES+=	include/racoon/openssl_compat.h

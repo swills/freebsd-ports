@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/games/gomoku/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/games/gomoku/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	gomoku
 PORTVERSION=	1.2.9
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games gnustep
 MASTER_SITES=	http://www.gnustep.it/nicola/Applications/Gomoku/
 DISTNAME=	Gomoku-${PORTVERSION}

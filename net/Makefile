@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 491630 2019-01-30 16:34:36Z swills $
+# $FreeBSD: head/net/Makefile 491818 2019-02-01 14:42:16Z swills $
 #
 
     COMMENT = Networking tools
@@ -345,6 +345,7 @@
     SUBDIR += ksmtp
     SUBDIR += ktnef
     SUBDIR += kube-controller-manager
+    SUBDIR += kube-scheduler
     SUBDIR += l2tpd
     SUBDIR += ladvd
     SUBDIR += lambdamoo

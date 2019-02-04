@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/archivers/unarchiver/Makefile 482830 2018-10-23 11:35:03Z jbeich $
+# $FreeBSD: head/archivers/unarchiver/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	unar
 PORTVERSION=	1.10.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	archivers gnustep
 MASTER_SITES=	http://wakaba.c3.cx/releases/TheUnarchiver/
 DISTNAME=	${PORTNAME}${PORTVERSION}_src

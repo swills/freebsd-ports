@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 491597 2019-01-29 20:16:20Z mat $
+# $FreeBSD: head/x11-fonts/Makefile 491959 2019-02-02 13:54:05Z tobik $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -114,6 +114,7 @@
     SUBDIR += google-fonts
     SUBDIR += hack-font
     SUBDIR += hanazono-fonts-ttf
+    SUBDIR += hermit
     SUBDIR += inconsolata-lgc-ttf
     SUBDIR += inconsolata-ttf
     SUBDIR += indic-ttf

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-spdx-tools/Makefile 475528 2018-07-28 12:01:50Z miwi $
+# $FreeBSD: head/misc/py-spdx-tools/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	spdx-tools
 DISTVERSION=	0.5.4
@@ -6,7 +6,7 @@ CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Parses, validates and creates SPDX documents
 
 LICENSE=	APACHE20

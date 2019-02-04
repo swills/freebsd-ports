@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/math/speedcrunch/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/math/speedcrunch/Makefile 491963 2019-02-02 17:23:48Z tobik $
 
 PORTNAME=	speedcrunch
 PORTVERSION=	0.12.0
@@ -9,7 +9,7 @@ PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 
-MAINTAINER=	mikael.urankar@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Keyboard-oriented desktop scientific calculator
 
 LICENSE=	GPLv2+

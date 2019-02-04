@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libav/Makefile 487203 2018-12-10 22:00:22Z fernape $
+# $FreeBSD: head/multimedia/libav/Makefile 491976 2019-02-02 19:15:15Z riggs $
 
 PORTNAME=	libav
 PORTVERSION=	12.3
@@ -181,6 +181,7 @@ CONFIGURE_ENV+=	ASFLAGS=-no-integrated-as
 
 .if ${ARCH} == "i386"
 CONFIGURE_ARGS+=	--extra-cflags=-m32
+LLD_UNSAFE=	yes
 .endif
 
 # License definitions

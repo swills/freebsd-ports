@@ -1,9 +1,8 @@
-# $FreeBSD: head/sysutils/u-boot-rpi-0-w/Makefile 477233 2018-08-15 15:06:15Z manu $
+# $FreeBSD: head/sysutils/u-boot-rpi-0-w/Makefile 492147 2019-02-04 18:22:06Z manu $
 
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
-PATCHFILES+=	937869/raw	\
-		939129/raw
+PATCHFILES+=	939129/raw
 
 MODEL=		rpi-0-w
 BOARD_CONFIG=	rpi_0_w_defconfig

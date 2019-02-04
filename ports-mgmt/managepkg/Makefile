@@ -1,5 +1,5 @@
 # Created by: Andreas Fehlner <fehlner@gmx.de>
-# $FreeBSD: head/ports-mgmt/managepkg/Makefile 398833 2015-10-08 15:12:22Z olgeni $
+# $FreeBSD: head/ports-mgmt/managepkg/Makefile 491926 2019-02-02 09:37:11Z tobik $
 
 PORTNAME=	managepkg
 PORTVERSION=	1.1
@@ -16,8 +16,8 @@ COMMENT=	Script for maintaining ports
 EXTRACT_CMD=	${GZCAT}
 EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=	> ${WRKSRC}/${PORTNAME}
-WRKSRC=	${WRKDIR}
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	sbin/managepkg
 
 do-install:

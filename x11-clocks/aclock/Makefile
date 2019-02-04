@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/x11-clocks/aclock/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/x11-clocks/aclock/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	aclock
 PORTVERSION=	0.4.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11-clocks gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	AClock-${PORTVERSION}

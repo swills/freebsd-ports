@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/scancode-toolkit/Makefile 489386 2019-01-05 21:30:53Z swills $
+# $FreeBSD: head/textproc/scancode-toolkit/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	scancode-toolkit
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.9.7
 CATEGORIES=	textproc python
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Scans code for license, copyright, package and documented dependencies
 
 LICENSE=	APACHE20 CC0-1.0

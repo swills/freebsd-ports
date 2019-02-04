@@ -1,9 +1,8 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/nyx/Makefile 481841 2018-10-11 18:21:44Z cs $
+# $FreeBSD: head/security/nyx/Makefile 491760 2019-01-31 20:27:11Z cs $
 
 PORTNAME=	nyx
-PORTVERSION=	2.0.4
-PORTREVISION=	1
+PORTVERSION=	2.1.0
 CATEGORIES=	security net
 MASTER_SITES=	CHEESESHOP
 
@@ -13,7 +12,7 @@ COMMENT=	Command-line monitor for Tor
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=1.6.0:security/py-stem@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=1.7.1:security/py-stem@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		python

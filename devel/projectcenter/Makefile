@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/devel/projectcenter/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/devel/projectcenter/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	projectcenter
 PORTVERSION=	0.6.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel gnustep
 MASTER_SITES=	GNUSTEP/dev-apps
 DISTNAME=	ProjectCenter-${PORTVERSION}

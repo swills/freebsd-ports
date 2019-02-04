@@ -1,5 +1,5 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/astro/wmsun/Makefile 383467 2015-04-06 18:50:50Z bapt $
+# $FreeBSD: head/astro/wmsun/Makefile 491964 2019-02-02 17:34:27Z tobik $
 
 PORTNAME=	wmsun
 PORTVERSION=	1.12
@@ -7,7 +7,7 @@ CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://linux-bsd-unix.strefa.pl/
 DISTNAME=	wmSun-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Dockapp that displays the rise and set times of the Sun
 
 WRKSRC_SUBDIR=	wmSun

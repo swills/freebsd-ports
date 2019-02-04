@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/benchmarks/netio/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/benchmarks/netio/Makefile 491940 2019-02-02 10:30:05Z tobik $
 
 PORTNAME=	netio
 PORTVERSION=	1.32
@@ -10,14 +10,15 @@ DISTNAME=	netio132
 MAINTAINER=	arved@FreeBSD.org
 COMMENT=	Network benchmark
 
-WRKSRC=		${WRKDIR}
 USES=		dos2unix gmake zip
 DOS2UNIX_FILES=	Makefile netio.c
+
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/netio
 
 CFLAGS+=	-DUNIX -DSOCKLEN_T
 LIBS+=		-pthread
-MAKE_ENV+=	OUT=-o
+MAKE_ENV=	OUT=-o
 
 OPTIONS_DEFINE=	IPV6
 IPV6_PLIST_FILES=	bin/netio6

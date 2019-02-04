@@ -1,9 +1,8 @@
-# $FreeBSD: head/deskutils/copyq/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/copyq/Makefile 492143 2019-02-04 17:16:06Z fernape $
 
 PORTNAME=	copyq
-PORTVERSION=	3.7.2
+PORTVERSION=	3.7.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	ports@FreeBSD.org

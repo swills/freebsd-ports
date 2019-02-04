@@ -1,5 +1,5 @@
 # Created by: Anton Shterenlikht <mexas@bris.ac.uk>
-# $FreeBSD: head/math/cmlib/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/cmlib/Makefile 491932 2019-02-02 09:46:25Z tobik $
 
 PORTNAME=	cmlib
 PORTVERSION=	3.0
@@ -17,14 +17,15 @@ COMMENT=	NIST Core math library (CMLIB)
 
 USES=		fortran uidfix
 USE_LDCONFIG=	yes
-WRKSRC=		${WRKDIR}
 SHLIB_MAJOR=	1
 
 LDFLAGS+=	${FFLAGS}
 LDADD ?=	-lgfortran -lm
 SRCCONF=	/dev/null
-MAKE_ENV+=	LDADD="${LDADD}" SHLIB_MAJOR="${SHLIB_MAJOR}" \
+MAKE_ENV=	LDADD="${LDADD}" SHLIB_MAJOR="${SHLIB_MAJOR}" \
 		SRCCONF="${SRCCONF}"
+
+NO_WRKSUBDIR=	yes
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/gnome-icons-jini/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/x11-themes/gnome-icons-jini/Makefile 491917 2019-02-02 06:57:27Z tobik $
 
 PORTNAME=	jini
 PORTVERSION=	0.8
@@ -10,20 +10,22 @@ DISTNAME=	jini-icon-theme-${PORTVERSION}
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Jini Icons for Gnome
 
-NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
+USES=		gnome
 INSTALLS_ICONS=	yes
 
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
+
 post-extract:
-	@for FILE in ${WRKDIR}/JiniOrange/scalable/apps/haansoft-hwp.svg \
-		${WRKDIR}/JiniYellowishGreen/scalable/apps/haansoft-hwp.svg \
-		${WRKDIR}/JiniBrown/scalable/apps/haansoft-hwp.svg \
-		${WRKDIR}/JiniOrange/scalable/apps/haansoft-hwp.svg \
-		${WRKDIR}/JiniYellowishGreen/scalable/apps/haansoft-hwp.svg; do \
+	@for FILE in ${WRKSRC}/JiniOrange/scalable/apps/haansoft-hwp.svg \
+		${WRKSRC}/JiniYellowishGreen/scalable/apps/haansoft-hwp.svg \
+		${WRKSRC}/JiniBrown/scalable/apps/haansoft-hwp.svg \
+		${WRKSRC}/JiniOrange/scalable/apps/haansoft-hwp.svg \
+		${WRKSRC}/JiniYellowishGreen/scalable/apps/haansoft-hwp.svg; do \
 		${LN} -sf ../../../JiniBlueSky/scalable/apps/haansoft-hwp.svg $${FILE}; \
 	done
 
 do-install:
-	cd ${WRKDIR} && ${FIND} Jini* | ${CPIO} -pdu ${STAGEDIR}${PREFIX}/share/icons
+	cd ${WRKSRC} && ${FIND} Jini* | ${CPIO} -pdu ${STAGEDIR}${PREFIX}/share/icons
 
 .include <bsd.port.mk>

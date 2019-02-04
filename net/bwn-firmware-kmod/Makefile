@@ -1,5 +1,5 @@
 # Created by: Weongyo Jeong <weongyo@FreeBSD.org>
-# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 473307 2018-06-25 12:33:25Z tobik $
+# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 491929 2019-02-02 09:43:44Z tobik $
 
 PORTNAME=	bwn-firmware
 PORTVERSION=	0.1.2
@@ -41,7 +41,7 @@ FIRMWARES_N=								\
 	n0initvals16 n0initvals24					\
 	n0bsinitvals16 n0bsinitvals24					\
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 FWNAME=		bwn_v4
 FWFILE=		broadcom-wl-${FWVERSION}.tar.bz2
 FWVERSION=	4.150.10.5

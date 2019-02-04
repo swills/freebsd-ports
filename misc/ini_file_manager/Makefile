@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/misc/ini_file_manager/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/misc/ini_file_manager/Makefile 491930 2019-02-02 09:44:41Z tobik $
 
 PORTNAME=	ini_file_manager
 PORTVERSION=	03
@@ -14,8 +14,10 @@ COMMENT=	Ini configuration file reader and manipulator package for Ada
 LICENSE=	MIT
 
 USES=		ada zip dos2unix
+
+NO_WRKSUBDIR=	yes
+
 SFPATH=		ini-files/files/ini-files/ini-files-${PORTVERSION}
-WRKSRC=		${WRKDIR}
 PORTDOCS=	ini_file_manager.txt
 PORTEXAMPLES=	example.gpr test_config.adb runme.sh
 

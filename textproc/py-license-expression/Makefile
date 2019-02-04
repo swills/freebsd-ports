@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-license-expression/Makefile 489382 2019-01-05 21:03:57Z swills $
+# $FreeBSD: head/textproc/py-license-expression/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	license-expression
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	0.99
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Parses, normalizes and compares license expressions
 
 LICENSE=	APACHE20

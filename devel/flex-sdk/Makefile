@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/flex-sdk/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/devel/flex-sdk/Makefile 491958 2019-02-02 13:48:07Z tobik $
 
 PORTNAME=	flex-sdk
 PORTVERSION=	4.6.0.23201
@@ -13,10 +13,10 @@ CONFLICTS=	ja-flex-sdk-2.* flex-sdk2-2.* flex-sdk3-3.*
 USES=		zip
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
-WRKSRC=		${WRKDIR}
 SUB_FILES=	${SCRIPTS:C/\$/.sh/g}
-NO_BUILD=	YES
 NO_ARCH=	yes
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 PLIST_SUB=	PORTNAME=${PORTNAME}
 SUB_LIST=	PORTNAME=${PORTNAME}
 SCRIPTS=	aasdoc acompc amxmlc asdoc compc copylocale digest \
@@ -28,7 +28,7 @@ post-extract:
 
 do-install:
 .for i in ${SCRIPTS}
-	${INSTALL_SCRIPT} ${WRKSRC}/${i}.sh ${STAGEDIR}${PREFIX}/bin/${i}
+	${INSTALL_SCRIPT} ${WRKDIR}/${i}.sh ${STAGEDIR}${PREFIX}/bin/${i}
 .endfor
 
 	${MKDIR} ${STAGEDIR}${JAVAJARDIR}/${PORTNAME}

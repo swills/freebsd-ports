@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-schematics-patched/Makefile 475541 2018-07-28 12:15:39Z miwi $
+# $FreeBSD: head/devel/py-schematics-patched/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	schematics-patched
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	1.1.2-patch
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Patched version of schematics that can pickle with multiprocessing
 
 LICENSE=	BSD3CLAUSE

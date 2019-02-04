@@ -1,5 +1,5 @@
 # Created by: dterry@digifonica.com
-# $FreeBSD: head/net/sip_scenario/Makefile 357068 2014-06-08 19:05:27Z pi $
+# $FreeBSD: head/net/sip_scenario/Makefile 491929 2019-02-02 09:43:44Z tobik $
 
 PORTNAME=	sip_scenario
 PORTVERSION=	1.2.7
@@ -14,9 +14,9 @@ LICENSE=	APACHE20
 
 USES=		perl5 zip shebangfix
 USE_PERL5=	run
-NO_BUILD=	yes
 
-WRKSRC=		${WRKDIR}
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 # TODO: there are two documents available at
 # http://www.abptech.com/support/resources/SIP_scen_generator_v1.2.7/index/SipScenario.pdf

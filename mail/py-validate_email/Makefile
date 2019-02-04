@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/py-validate_email/Makefile 465936 2018-03-29 23:15:20Z cpm $
+# $FreeBSD: head/mail/py-validate_email/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	validate_email
 DISTVERSION=	1.3
@@ -6,7 +6,7 @@ CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Verifies if an email address is valid and really exists
 
 LICENSE=	LGPL3+

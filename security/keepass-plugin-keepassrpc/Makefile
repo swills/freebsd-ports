@@ -1,10 +1,9 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/security/keepass-plugin-keepassrpc/Makefile 460865 2018-02-04 03:18:01Z woodsb02 $
+# $FreeBSD: head/security/keepass-plugin-keepassrpc/Makefile 492130 2019-02-04 13:36:29Z woodsb02 $
 
 PORTNAME=	keepassrpc
-PORTVERSION=	1.7.3.1
+PORTVERSION=	1.8.0
 DISTVERSIONPREFIX=v
-PORTREVISION=	1
 CATEGORIES=	security
 PKGNAMEPREFIX=	keepass-plugin-
 

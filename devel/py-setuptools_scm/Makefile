@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-setuptools_scm/Makefile 491581 2019-01-29 16:30:32Z miwi $
+# $FreeBSD: head/devel/py-setuptools_scm/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	setuptools_scm
 PORTVERSION=	3.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Setuptools plugin to manage your versions by scm tags
 
 LICENSE=	MIT

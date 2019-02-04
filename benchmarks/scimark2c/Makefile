@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/benchmarks/scimark2c/Makefile 350259 2014-04-05 19:16:48Z thierry $
+# $FreeBSD: head/benchmarks/scimark2c/Makefile 491940 2019-02-02 10:30:05Z tobik $
 
 PORTNAME=	scimark2c
 DISTVERSION=	2_1
@@ -12,8 +12,8 @@ COMMENT=	ANSI C version of the SciMark2 benchmark
 
 USES=		zip
 
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/scimark2
-WRKSRC=		${WRKDIR}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/scimark2 ${STAGEDIR}${PREFIX}/bin

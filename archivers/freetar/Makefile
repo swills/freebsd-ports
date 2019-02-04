@@ -1,8 +1,8 @@
-# $FreeBSD: head/archivers/freetar/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/archivers/freetar/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	freetar
 PORTVERSION=	0.9
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	archivers gnustep
 MASTER_SITES=	http://download.gna.org/freetar/
 DISTNAME=	FreeTar-${PORTVERSION}

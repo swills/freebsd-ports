@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 491686 2019-01-31 05:03:36Z jhixson $
+# $FreeBSD: head/sysutils/Makefile 492149 2019-02-04 18:25:40Z manu $
 #
 
     COMMENT = System utilities
@@ -607,6 +607,7 @@
     SUBDIR += linux-crashplan
     SUBDIR += linuxfdisk
     SUBDIR += livecd
+    SUBDIR += lizardfs
     SUBDIR += lmmon
     SUBDIR += lmon
     SUBDIR += lnav
@@ -692,6 +693,7 @@
     SUBDIR += mkntpwd
     SUBDIR += mksunbootcd
     SUBDIR += mmc-utils
+    SUBDIR += mmve
     SUBDIR += mnrpes
     SUBDIR += modman
     SUBDIR += modules
@@ -752,6 +754,7 @@
     SUBDIR += npadmin
     SUBDIR += nq
     SUBDIR += nrg2iso
+    SUBDIR += ntfy
     SUBDIR += nut
     SUBDIR += nvclock
     SUBDIR += nvme-cli
@@ -1389,6 +1392,7 @@
     SUBDIR += u-boot-pandaboard
     SUBDIR += u-boot-pcduino3
     SUBDIR += u-boot-pine64
+    SUBDIR += u-boot-pine64-lts
     SUBDIR += u-boot-pinebook
     SUBDIR += u-boot-riotboard
     SUBDIR += u-boot-rpi

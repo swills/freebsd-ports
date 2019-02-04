@@ -1,5 +1,5 @@
 # Created by: Stefan Eggers <seggers@semyam.dinoco.de>
-# $FreeBSD: head/games/crafty/Makefile 473660 2018-07-01 09:17:45Z linimon $
+# $FreeBSD: head/games/crafty/Makefile 491937 2019-02-02 10:11:49Z tobik $
 
 PORTNAME=	crafty
 PORTVERSION=	25.2
@@ -22,11 +22,10 @@ BROKEN_armv7=		fails to compile: invokes x86 assembler
 BROKEN_mips=		fails to compile: unrecognized command line option "-mpopcnt"
 BROKEN_mips64=		fails to compile: unrecognized command line option "-mpopcnt"
 
-WRKSRC=		${WRKDIR}
-
 USES=		gmake zip
 
 ALL_TARGET=	unix-gcc
+NO_WRKSUBDIR=	yes
 
 WITH_BOOKDIR?=	${PREFIX}/lib/crafty
 WITH_LOGDIR?=	/tmp

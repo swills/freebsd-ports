@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-netmiko/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-netmiko/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	netmiko
 DISTVERSION=	2.1.1
@@ -6,7 +6,7 @@ CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Multi-vendor library to simplify SSH connections to network devices
 
 LICENSE=	MIT

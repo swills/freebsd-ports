@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/games/gnustep-ladder/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/games/gnustep-ladder/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	ladder
 PORTVERSION=	1.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games gnustep
 MASTER_SITES=	SAVANNAH/gap
 PKGNAMEPREFIX=	gnustep-

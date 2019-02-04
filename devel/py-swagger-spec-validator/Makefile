@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-swagger-spec-validator/Makefile 473513 2018-06-28 21:00:58Z swills $
+# $FreeBSD: head/devel/py-swagger-spec-validator/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	swagger-spec-validator
 DISTVERSION=	2.3.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Validation of Swagger specifications
 
 LICENSE=	APACHE20

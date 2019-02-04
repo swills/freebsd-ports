@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-flake8/Makefile 490266 2019-01-14 15:39:08Z sunpoet $
+# $FreeBSD: head/devel/py-pytest-flake8/Makefile 491856 2019-02-01 21:41:47Z sunpoet $
 
 PORTNAME=	pytest-flake8
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

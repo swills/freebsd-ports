@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-botservice/Makefile 491419 2019-01-27 21:05:47Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-botservice/Makefile 491769 2019-01-31 22:17:58Z dbaio $
 
 PORTNAME=	azure-cli-botservice
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Frank Wall <fw@moov.de>
-# $FreeBSD: head/www/mod_backtrace/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_backtrace/Makefile 491915 2019-02-02 06:47:15Z tobik $
 
 PORTNAME=	mod_backtrace
 PORTVERSION=	1.0
@@ -25,7 +25,7 @@ AP_EXTRAS+=	-lexecinfo
 AP_LIB+=	${LOCALBASE}/lib
 SHORTMODNAME=	backtrace
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 
 pre-everything::
 	@${ECHO_MSG} "*********************** PLEASE NOTE! ***********************"

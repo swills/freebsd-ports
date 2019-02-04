@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/zenxml/Makefile 461456 2018-02-11 03:18:01Z yuri $
+# $FreeBSD: head/textproc/zenxml/Makefile 491918 2019-02-02 07:07:17Z tobik $
 
 PORTNAME=	zenxml
 PORTVERSION=	2.4
@@ -12,9 +12,10 @@ COMMENT=	Simple XML processing using C++
 LICENSE=	GPLv3
 
 USES=		dos2unix zip
-NO_BUILD=	yes
+
 NO_ARCH=	yes
-WRKSRC=		${WRKDIR}
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 ZENINC=		${PREFIX}/include/${PORTNAME:S/xml//}
 

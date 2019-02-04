@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-pyIOSXR/Makefile 467603 2018-04-17 13:40:44Z krion $
+# $FreeBSD: head/net-mgmt/py-pyIOSXR/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pyIOSXR
 DISTVERSION=	0.53
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Python API to interact with network devices running IOS-XR
 
 LICENSE=	APACHE20

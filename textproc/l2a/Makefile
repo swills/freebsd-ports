@@ -1,5 +1,5 @@
 # Created by: James Flemer <jflemer@alum.rpi.edu>
-# $FreeBSD: head/textproc/l2a/Makefile 359028 2014-06-24 02:22:13Z jhale $
+# $FreeBSD: head/textproc/l2a/Makefile 491918 2019-02-02 07:07:17Z tobik $
 
 PORTNAME=	l2a
 PORTVERSION=	1.2
@@ -12,7 +12,7 @@ COMMENT=	L2a - LaTeX to ASCII converter
 
 USES=		zip
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	bin/l2a \
 		man/man1/l2a.1.gz

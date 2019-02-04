@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-patch/Makefile 475542 2018-07-28 12:16:30Z miwi $
+# $FreeBSD: head/devel/py-patch/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	patch
 DISTVERSION=	1.16
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Cross-platform alternative to the UNIX patch utility
 
 LICENSE=	MIT

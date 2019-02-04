@@ -1,19 +1,6 @@
-# $FreeBSD: head/sysutils/u-boot-pinebook/Makefile 485932 2018-11-26 08:40:06Z manu $
+# $FreeBSD: head/sysutils/u-boot-pinebook/Makefile 492147 2019-02-04 18:22:06Z manu $
 
 MASTERDIR=	${.CURDIR}/../u-boot-master
-
-PATCHFILES+=	990016/raw      \
-		990030/raw      \
-		990031/raw      \
-		990032/raw      \
-		990033/raw      \
-		993502/raw      \
-		993503/raw      \
-		993504/raw      \
-		993505/raw      \
-		994067/raw      \
-		994070/raw      \
-		994068/raw
 
 MODEL=		pinebook
 BOARD_CONFIG=	pinebook_defconfig

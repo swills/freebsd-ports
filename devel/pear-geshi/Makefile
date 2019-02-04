@@ -1,0 +1,19 @@
+# $FreeBSD: head/devel/pear-geshi/Makefile 492023 2019-02-03 01:38:47Z jmd $
+
+PORTNAME=	geshi
+PORTVERSION=	1.0.9.0
+CATEGORIES=	devel pear www
+MASTER_SITES=	http://pear.geshi.org/get/
+
+MAINTAINER=	michael.osipov@siemens.com
+COMMENT=	GeSHi - generic syntax highlighter written in PHP
+
+LICENSE=	GPLv2
+
+USES=		pear
+
+PEAR_CHANNEL=	geshi
+
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

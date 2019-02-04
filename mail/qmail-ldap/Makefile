@@ -1,5 +1,5 @@
 # Created by: Mario S F Ferreira <lioux@linf.unb.br>
-# $FreeBSD: head/mail/qmail-ldap/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/qmail-ldap/Makefile 492067 2019-02-03 19:58:57Z antoine $
 
 PORTNAME=	qmail
 PORTVERSION=	${QMAIL_VERSION}.${LDAP_PATCH_DATE}
@@ -8,6 +8,8 @@ CATEGORIES=	mail
 PKGNAMESUFFIX=	-ldap
 
 COMMENT=	Secure, reliable, and fast MTA for UNIX systems with LDAP support
+
+BROKEN=		fails to package
 
 RUN_DEPENDS=	${LOCALBASE}/bin/svscan:sysutils/daemontools \
 		${LOCALBASE}/bin/tcprules:sysutils/ucspi-tcp

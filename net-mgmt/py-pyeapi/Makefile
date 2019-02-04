@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-pyeapi/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/net-mgmt/py-pyeapi/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pyeapi
 DISTVERSION=	0.8.2
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Python client for Arista eAPI
 
 LICENSE=	BSD3CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/popup-stacks/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/textproc/popup-stacks/Makefile 491918 2019-02-02 07:07:17Z tobik $
 
 PORTNAME=	popup
 PORTVERSION=	1.0
@@ -13,7 +13,8 @@ COMMENT=	Stacks for use with Popup
 LICENSE=	GPLv2
 
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
+
 STACKS=		English-German.cstack German-French.cstack
 .for i in ${STACKS}
 PLIST_FILES+=	${EXAMPLESDIR}/${i}

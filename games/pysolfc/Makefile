@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/pysolfc/Makefile 473211 2018-06-24 19:22:02Z swills $
+# $FreeBSD: head/games/pysolfc/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pysolfc
 DISTVERSION=	2.4.0
@@ -9,7 +9,7 @@ DISTFILES=	${PYSOLFCDIST} \
 		${CARDSETDIST}:cardsets
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Solitaire game, written in Python and the successor of PySol
 
 LICENSE=	GPLv2+ GPLv3+ MIT PCW PD UCP UCJ ULG

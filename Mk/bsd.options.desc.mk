@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 485166 2018-11-17 17:33:28Z sunpoet $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 491828 2019-02-01 15:27:35Z tobik $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -144,7 +144,6 @@ GSSAPI_MIT_DESC?=	GSSAPI support via security/krb5
 GSSAPI_NONE_DESC?=	Disable GSSAPI support
 GSTREAMER_DESC?=	Multimedia support via GStreamer
 GTA_DESC?=		Generic Tagged Array (GTA) support
-GTK1_DESC?=		GTK+ 1 GUI toolkit support
 GTK2_DESC?=		GTK+ 2 GUI toolkit support
 GTK3_DESC?=		GTK+ 3 GUI toolkit support
 GUI_DESC?=		GUI (Graphical User Interface) support

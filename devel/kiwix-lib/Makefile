@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kiwix-lib/Makefile 491471 2019-01-28 10:13:49Z tz $
+# $FreeBSD: head/devel/kiwix-lib/Makefile 492113 2019-02-04 11:43:30Z linimon $
 
 PORTNAME=	kiwix-lib
 DISTVERSION=	3.1.1
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libzim.so:devel/libzim \
 		libctpp2.so:textproc/ctpp2 \
 		libcurl.so:ftp/curl
 
-USES=		meson pkgconfig python:3.6+ shebangfix
+USES=		compiler:c++11-lang meson pkgconfig python:3.6+ shebangfix
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	kiwix

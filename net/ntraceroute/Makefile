@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/ntraceroute/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/net/ntraceroute/Makefile 491929 2019-02-02 09:43:44Z tobik $
 
 PORTNAME=	ntraceroute
 PORTVERSION=	6.4.2
@@ -13,12 +13,11 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Ubiquitous network routing analysis tool
 
-WRKSRC=		${WRKDIR}
-
 EXTRACT_CMD=		${CP}
 EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=	.
 
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	sbin/${PORTNAME}
 
 BUILD_FLAGS=	-DBYTESWAP_IP_FLAGS -DBYTESWAP_IP_LEN

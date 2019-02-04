@@ -1,5 +1,5 @@
 # Created by: Andrew J. Caines <A.J.Caines@halplant.com>
-# $FreeBSD: head/mail/postfinger/Makefile 386097 2015-05-11 18:34:57Z mat $
+# $FreeBSD: head/mail/postfinger/Makefile 491958 2019-02-02 13:48:07Z tobik $
 
 PORTNAME=	postfinger
 PORTVERSION=	1.30
@@ -13,9 +13,9 @@ COMMENT=	Postfix Configuration Summary Reporter
 
 EXTRACT_CMD=		${CP}
 EXTRACT_BEFORE_ARGS=
-EXTRACT_AFTER_ARGS=	${WRKDIR}
+EXTRACT_AFTER_ARGS=	${WRKSRC}
 NO_BUILD=		yes
-WRKSRC=			${WRKDIR}
+NO_WRKSUBDIR=		yes
 
 PLIST_FILES=	bin/postfinger
 PORTDOCS=	README

@@ -1,5 +1,5 @@
 # Created by: jfitz
-# $FreeBSD: head/www/analog/Makefile 469836 2018-05-13 22:55:34Z dbaio $
+# $FreeBSD: head/www/analog/Makefile 492097 2019-02-04 05:52:44Z meta $
 
 PORTNAME=	analog
 PORTVERSION=	6.0
@@ -9,7 +9,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://analog.gsp.com/ \
 		http://fossies.org/unix/www/old/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	john@essenz.com
 COMMENT=	Fast program for analysing WWW logfiles
 
 LICENSE=	GPLv2

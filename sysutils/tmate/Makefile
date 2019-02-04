@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/tmate/Makefile 482320 2018-10-18 01:28:48Z swills $
+# $FreeBSD: head/sysutils/tmate/Makefile 491908 2019-02-02 00:54:40Z swills $
 
 PORTNAME=	tmate
 PORTVERSION=	2.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	swills@FreeBSD.org

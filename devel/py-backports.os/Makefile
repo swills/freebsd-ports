@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-backports.os/Makefile 475539 2018-07-28 12:13:55Z miwi $
+# $FreeBSD: head/devel/py-backports.os/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	backports.os
 DISTVERSION=	0.1.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Backport of new features in Python's os module
 
 LICENSE=	PSFL

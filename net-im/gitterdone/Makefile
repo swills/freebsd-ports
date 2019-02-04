@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/gitterdone/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/net-im/gitterdone/Makefile 492112 2019-02-04 11:39:45Z linimon $
 
 PORTNAME=	gitterdone
 PORTVERSION=	201710031257
@@ -10,15 +10,15 @@ COMMENT=	Gitter Client based on Qt5
 
 LICENSE=	BSD2CLAUSE
 
-MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
-
-MAKE_JOBS_UNSAFE=	yes
-USE_LDCONFIG=	yes
-
-USES=		qmake qt:5 shebangfix tar:xz
+USES=		compiler:c++11-lang qmake qt:5 shebangfix tar:xz
 USE_QT=		core gui network linguist_build \
 		buildtools_build widgets webkit svg
 USE_GL+=	gl
+
+MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
+MAKE_JOBS_UNSAFE=	yes
+
+USE_LDCONFIG=	yes
 
 WRKSRC_SUBDIR=	src-qt5
 

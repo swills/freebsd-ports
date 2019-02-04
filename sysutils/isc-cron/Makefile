@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/sysutils/isc-cron/Makefile 426930 2016-11-23 14:45:54Z amdmi3 $
+# $FreeBSD: head/sysutils/isc-cron/Makefile 491919 2019-02-02 07:24:52Z tobik $
 
 PORTNAME=	isc-cron
 PORTVERSION=	4.1
@@ -14,7 +14,7 @@ COMMENT=	ISC Cron, former Vixie Cron
 
 LICENSE=	ISCL
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 SUB_FILES=	pkg-message
 PLIST_FILES=	sbin/cron \
 		"@(root,wheel,4755) bin/crontab" \

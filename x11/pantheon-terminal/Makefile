@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11/pantheon-terminal/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/x11/pantheon-terminal/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	pantheon-terminal
 PORTVERSION=	0.4.3
@@ -13,6 +13,8 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		Doesn't build with vala 0.40+
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 		libgnutls.so:security/gnutls \

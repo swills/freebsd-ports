@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <martin@matuska.org>
-# $FreeBSD: head/databases/luasql-mysql/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/luasql-mysql/Makefile 491964 2019-02-02 17:34:27Z tobik $
 
 PORTNAME=	luasql
 PORTVERSION=	2.3.5
@@ -8,7 +8,7 @@ PORTREVISION?=	1
 CATEGORIES=	databases
 PKGNAMESUFFIX=	-${LUASQL_DRIVER}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	LuaSQL driver
 
 LICENSE=	MIT

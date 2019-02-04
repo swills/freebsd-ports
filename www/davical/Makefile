@@ -1,10 +1,9 @@
 # Created by: Maurice Castro <maurice@castro.aus.net>
-# $FreeBSD: head/www/davical/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/davical/Makefile 492050 2019-02-03 14:17:06Z rigoletto $
 
 PORTNAME=	davical
 DISTVERSIONPREFIX=	r
-DISTVERSION=	1.1.7
-PORTREVISION=	1
+DISTVERSION=	1.1.8
 CATEGORIES?=	www
 
 MAINTAINER=	rigoletto@FreeBSD.org
@@ -23,7 +22,7 @@ RUN_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg \
 USES=		pgsql php shebangfix
 USE_GITLAB=	yes
 GL_ACCOUNT=	davical-project
-GL_COMMIT=	05397d635c3f218b850775223aa5dd705da9f91c
+GL_COMMIT=	4af9595f4d0530268ac1289ba4ab2adb4890802e
 USE_PHP=	calendar curl gettext iconv pcre pdo pdo_pgsql pgsql xml
 SHEBANG_FILES=	scripts/sync-remote-caldav.php
 SUB_FILES=	pkg-message httpd-davical.conf

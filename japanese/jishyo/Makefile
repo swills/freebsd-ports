@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/japanese/jishyo/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/japanese/jishyo/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	jishyo
 PORTVERSION=	0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	japanese gnustep
 MASTER_SITES=	http://www.eskimo.com/~pburns/Dictionaries/files/
 DISTNAME=	Jishyo-${PORTVERSION}

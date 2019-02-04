@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 491546 2019-01-29 07:56:30Z yuri $
+# $FreeBSD: head/biology/Makefile 492079 2019-02-03 21:14:38Z yuri $
 #
 
     COMMENT = Biology
@@ -36,6 +36,7 @@
     SUBDIR += fastqc
     SUBDIR += fasttree
     SUBDIR += fastx-toolkit
+    SUBDIR += figtree
     SUBDIR += fluctuate
     SUBDIR += freebayes
     SUBDIR += garlic
@@ -43,6 +44,7 @@
     SUBDIR += gff2ps
     SUBDIR += gmap
     SUBDIR += gperiodic
+    SUBDIR += graphlan
     SUBDIR += grappa
     SUBDIR += groopm
     SUBDIR += hisat2
@@ -101,6 +103,8 @@
     SUBDIR += phyml
     SUBDIR += plinkseq
     SUBDIR += primer3
+    SUBDIR += prodigal
+    SUBDIR += prodigy-lig
     SUBDIR += protomol
     SUBDIR += psi88
     SUBDIR += py-Genesis-PyAPI

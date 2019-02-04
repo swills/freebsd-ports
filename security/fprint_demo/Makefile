@@ -1,5 +1,5 @@
 # Created by: barner
-# $FreeBSD: head/security/fprint_demo/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/security/fprint_demo/Makefile 491925 2019-02-02 09:36:08Z tobik $
 
 PORTNAME=	fprint_demo
 PORTVERSION=	20080303
@@ -13,15 +13,16 @@ COMMENT=	Demo and test application for libfprint
 
 LIB_DEPENDS=	libfprint.so:security/libfprint
 
-GNU_CONFIGURE=	yes
 USES=		autoreconf pkgconfig desktop-file-utils
 USE_GNOME=	atk glib20 gtk20 pango
 INSTALLS_ICONS=	yes
 
-WRKSRC=	${WRKDIR}
+NO_WRKSUBDIR=	yes
 
-CONFIGURE_ENV+=	CRYPTO_CFLAGS=-I${OPENSSLINC} \
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CRYPTO_CFLAGS=-I${OPENSSLINC} \
 		CRYPTO_LIBS=-lcrypto
+
 CFLAGS+=	-DHAVE_MEMMEM
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Raymond Pasco <ray@cultofray.net>
-# $FreeBSD: head/games/kevedit/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/kevedit/Makefile 492151 2019-02-04 18:37:46Z amdmi3 $
 
 PORTNAME=	kevedit
 PORTVERSION=	0.5.1
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	cdrecord:sysutils/cdrtools
 RUN_DEPENDS=	cdrecord:sysutils/cdrtools
 
-USE_SDL=	yes
+USE_SDL=	sdl
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

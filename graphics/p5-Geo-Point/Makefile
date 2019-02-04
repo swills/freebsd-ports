@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/p5-Geo-Point/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/graphics/p5-Geo-Point/Makefile 492010 2019-02-02 21:56:03Z sunpoet $
 
 PORTNAME=	Geo-Point
-PORTVERSION=	0.97
+PORTVERSION=	0.98
 CATEGORIES=	graphics devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,8 +18,9 @@ RUN_DEPENDS=	p5-Geo-Distance>=0.06:math/p5-Geo-Distance \
 		p5-Geo-Proj4>=1.01:graphics/p5-Geo-Proj4 \
 		p5-Math-Polygon>=1.01:math/p5-Math-Polygon
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

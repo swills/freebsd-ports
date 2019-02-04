@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-taggit-serializer/Makefile 480868 2018-09-28 16:35:29Z miwi $
+# $FreeBSD: head/www/py-django-taggit-serializer/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	django-taggit-serializer
 DISTVERSION=	0.1.7
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Django Taggit serializer for the Django REST Framework
 
 LICENSE=	BSD3CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-ldappool/Makefile 474026 2018-07-06 17:50:13Z miwi $
+# $FreeBSD: head/net/py-ldappool/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	ldappool
 DISTVERSION=	2.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Simple connector pool for py-ldap
 
 LICENSE=	MPL20

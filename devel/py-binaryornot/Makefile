@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-binaryornot/Makefile 475526 2018-07-28 11:59:35Z miwi $
+# $FreeBSD: head/devel/py-binaryornot/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	binaryornot
 DISTVERSION=	0.4.4
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Lightweight pure Python package to check if a file is binary or text
 
 LICENSE=	BSD3CLAUSE

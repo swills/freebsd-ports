@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-pynxos/Makefile 474187 2018-07-08 16:19:05Z swills $
+# $FreeBSD: head/net-mgmt/py-pynxos/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pynxos
 DISTVERSION=	0.0.4
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Python client for managing Cisco NX-OS devices through NX-API
 
 LICENSE=	UNKNOWN

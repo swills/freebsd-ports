@@ -1,9 +1,8 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Address-List/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/mail/p5-Email-Address-List/Makefile 491757 2019-01-31 19:37:48Z matthew $
 
 PORTNAME=	Email-Address-List
-PORTVERSION=	0.05
-PORTREVISION=	1
+PORTVERSION=	0.06
 CATEGORIES=	mail perl5
 MASTER_SITES=	http://download.bestpractical.com/mirror/ \
 		CPAN

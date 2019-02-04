@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/aphpbreakdown/Makefile 478326 2018-08-28 16:40:58Z joneum $
+# $FreeBSD: head/devel/aphpbreakdown/Makefile 491924 2019-02-02 09:30:38Z amdmi3 $
 
 PORTNAME=	aphpbreakdown
 DISTVERSION=	2.2.2
@@ -12,7 +12,7 @@ COMMENT=	Code-Analyzer for PHP for Compatibility Check-UP
 
 LICENSE=	BSD2CLAUSE
 
-USES=	php:flavors
+USES=		php:flavors
 USE_PHP=	tokenizer phar hash
 
 NO_ARCH=	yes

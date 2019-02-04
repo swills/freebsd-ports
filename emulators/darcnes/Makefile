@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/emulators/darcnes/Makefile 446041 2017-07-16 18:06:45Z pawel $
+# $FreeBSD: head/emulators/darcnes/Makefile 491825 2019-02-01 15:09:02Z tobik $
 
 PORTNAME=	darcnes
 PORTVERSION=	9b0401
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.dridus.com/~nyef/darcnes/download/ \
 		LOCAL/grembo
@@ -25,13 +25,9 @@ PORTDOCS=	readme
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_SINGLE=	BACKEND
-OPTIONS_SINGLE_BACKEND=	X11 GTK1 SVGALIB
+OPTIONS_SINGLE_BACKEND=	X11 SVGALIB
 OPTIONS_DEFAULT=X11
 BACKEND_DESC=	GUI backend
-
-GTK1_USES=	gettext-runtime
-GTK1_USE=	GNOME=gtk12  XORG=x11,xext,xi
-GTK1_VARS=	MAKE_ARGS+=TARGET=Linux_GTK
 
 SVGALIB_LIB_DEPENDS=	libvga.so:graphics/svgalib
 SVGALIB_VARS=		MAKE_ARGS+=TARGET=Linux_svgalib

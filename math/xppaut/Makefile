@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/xppaut/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/math/xppaut/Makefile 491932 2019-02-02 09:46:25Z tobik $
 
 PORTNAME=	xppaut
 PORTVERSION=	7.0
@@ -16,8 +16,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_XORG=	x11 xbitmaps xorgproto
 CFLAGS+=	-w -Wno-return-type
-WRKSRC=		${WRKDIR}
 ALL_TARGET=	xppaut
+
+NO_WRKSUBDIR=	yes
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

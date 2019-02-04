@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/fortytwo/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/graphics/fortytwo/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	fortytwo
 PORTVERSION=	0.2.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	SF/${PORTNAME}/FT%20%2842%29/${PORTVERSION}
 DISTFILES=	FT-${PORTVERSION}-src.tgz \

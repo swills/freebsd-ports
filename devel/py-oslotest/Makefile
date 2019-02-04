@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-oslotest/Makefile 474020 2018-07-06 17:33:27Z miwi $
+# $FreeBSD: head/devel/py-oslotest/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	oslotest
 DISTVERSION=	3.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Oslo test framework
 
 LICENSE=	APACHE20

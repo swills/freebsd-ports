@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/finance/Makefile 491950 2019-02-02 11:58:13Z ehaupt $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -96,6 +96,7 @@
     SUBDIR += pear_Payment_DTA
     SUBDIR += prestashop
     SUBDIR += py-bitcoin
+    SUBDIR += py-pycoin
     SUBDIR += py-python-obelisk
     SUBDIR += py-stripe
     SUBDIR += py-ta-lib

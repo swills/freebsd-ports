@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-reno/Makefile 471392 2018-06-02 18:47:06Z miwi $
+# $FreeBSD: head/textproc/py-reno/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	reno
 DISTVERSION=	2.9.2
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	RElease NOtes manager
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-treebeard/Makefile 468673 2018-04-30 07:30:59Z wen $
+# $FreeBSD: head/www/py-django-treebeard/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	django-treebeard
 DISTVERSION=	4.3
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Efficient tree implementations for Django
 
 LICENSE=	APACHE20

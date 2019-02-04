@@ -1,13 +1,12 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/security/broccoli/Makefile 490305 2019-01-14 17:50:45Z leres $
+# $FreeBSD: head/security/broccoli/Makefile 491991 2019-02-02 21:22:58Z leres $
 
 PORTNAME=	broccoli
-PORTVERSION=	1.97
-PORTREVISION=	1
+PORTVERSION=	1.101
 PORTEPOCH=	1
 CATEGORIES=	security
-MASTER_SITES=	https://www.bro.org/downloads/release/
-DISTNAME=	bro-2.4.1
+MASTER_SITES=	https://www.zeek.org/downloads/
+DISTNAME=	bro-2.6.1
 
 MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Bro Client Communications Library

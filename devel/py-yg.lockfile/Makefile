@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-yg.lockfile/Makefile 475543 2018-07-28 12:20:29Z miwi $
+# $FreeBSD: head/devel/py-yg.lockfile/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	yg.lockfile
 PORTVERSION=	2.3
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Provides lockfile objects with timeouts and context manager
 
 LICENSE=	MIT

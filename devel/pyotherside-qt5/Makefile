@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/pyotherside-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/pyotherside-qt5/Makefile 492043 2019-02-03 10:14:18Z tcberner $
 
 PORTNAME=	pyotherside
-DISTVERSION=	1.5.3
-PORTREVISION=	1
+DISTVERSION=	1.5.4
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-qt5
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-azure-common/Makefile 491433 2019-01-27 21:14:25Z dbaio $
+# $FreeBSD: head/www/py-azure-common/Makefile 491788 2019-01-31 22:30:08Z dbaio $
 
 PORTNAME=	azure-common
-PORTVERSION=	1.1.17
+PORTVERSION=	1.1.18
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

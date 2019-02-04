@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina-coreutils/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11/lumina-coreutils/Makefile 491797 2019-02-01 09:30:37Z amdmi3 $
 
 PORTNAME=	lumina-coreutils
 PORTVERSION=	1.4.1
@@ -10,6 +10,7 @@ MAINTAINER=	jt@ixsystems.com
 COMMENT=	Lumina Desktop Environment
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../LICENSE
 
 RUN_DEPENDS=	xrandr:x11/xrandr
 

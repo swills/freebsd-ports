@@ -1,5 +1,5 @@
 # Created by: kbyanc
-# $FreeBSD: head/www/fcgi/Makefile 438923 2017-04-20 03:31:48Z adamw $
+# $FreeBSD: head/www/fcgi/Makefile 491965 2019-02-02 17:37:42Z tobik $
 
 PORTNAME=	fcgi
 PORTVERSION=	2.4.0
@@ -8,7 +8,7 @@ CATEGORIES=	www
 MASTER_SITES=	LOCAL/adamw
 PKGNAMESUFFIX=	-devkit
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	john@essenz.com
 COMMENT=	FastCGI Development Kit
 
 LICENSE=	Open_Market_FastCGI_license

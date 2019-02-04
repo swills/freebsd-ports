@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/py-pypa-docs-theme/Makefile 475454 2018-07-27 18:31:16Z miwi $
+# $FreeBSD: head/textproc/py-pypa-docs-theme/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pypa-docs-theme
 DISTVERSION=	g20180622
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Common base Sphinx theme for PyPA projects
 
 LICENSE=	PSFL

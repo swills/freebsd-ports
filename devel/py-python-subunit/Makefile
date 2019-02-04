@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-python-subunit/Makefile 489568 2019-01-07 09:30:24Z amdmi3 $
+# $FreeBSD: head/devel/py-python-subunit/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	python-subunit
 DISTVERSION=	1.3.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Python implementation of subunit test streaming protocol
 
 LICENSE=	BSD3CLAUSE APACHE20

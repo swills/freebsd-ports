@@ -1,5 +1,5 @@
 # Created by: kaz
-# $FreeBSD: head/mail/vrfy/Makefile 337727 2013-12-27 13:08:28Z jadawin $
+# $FreeBSD: head/mail/vrfy/Makefile 491958 2019-02-02 13:48:07Z tobik $
 
 PORTNAME=	vrfy
 PORTVERSION=	1.0
@@ -11,11 +11,11 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Verify mail address
 
-WRKSRC=		${WRKDIR}
 MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}" RES=""
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/vrfy
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKDIR}/vrfy ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/vrfy ${STAGEDIR}${PREFIX}/bin
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/netbox/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net-mgmt/netbox/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	netbox
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	2.4.9
 PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	IP address management tool
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-js-asset/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-js-asset/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	django-js-asset
 DISTVERSION=	1.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Insert script tags with additional attributes for django.forms.Media
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Nikola Lecic <nikola.lecic@anthesphoria.net>
-# $FreeBSD: head/textproc/kmfl-sil-yi/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/kmfl-sil-yi/Makefile 491918 2019-02-02 07:07:17Z tobik $
 
 PORTNAME=	kmfl-sil-yi
 PORTVERSION=	20020903
@@ -15,10 +15,11 @@ COMMENT=	KMFL Unicode keyboard for standardized Yi script
 
 RUN_DEPENDS=	kmflcomp:textproc/kmflcomp
 
-WRKSRC=		${WRKDIR}
 USES=		dos2unix zip
 DOS2UNIX_FILES=	SourceFiles/Yi7.kmn
+
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 KMFL_DIR=	share/kmfl
 KMFL_ICONS_DIR=	share/kmfl/icons
