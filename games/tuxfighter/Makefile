@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/tuxfighter/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/tuxfighter/Makefile 491958 2019-02-02 13:48:07Z tobik $
 
 PORTNAME=	tuxfighter
 PORTVERSION=	54
@@ -19,8 +19,6 @@ LICENSE_FILE=	${WRKSRC}/GPL.txt
 
 RUN_DEPENDS=	${PYGAME}
 
-WRKSRC=		${WRKDIR}
-
 USES=		python:2.7 shebangfix
 SHEBANG_FILES=	TuxFighter54.py
 
@@ -33,6 +31,8 @@ SUB_FILES=	${PORTNAME} pkg-message
 
 DESKTOP_ENTRIES="TuxFighter" "" "${PORTNAME}" \
 		"${PORTNAME}" "Game;ArcadeGame;" ""
+
+NO_WRKSUBDIR=	yes
 
 OPTIONS_DEFINE=	DOCS
 
@@ -52,7 +52,7 @@ do-install:
 
 .for s in ${ICON_SIZES}
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/${s}/apps/
-	${INSTALL_DATA} ${WRKDIR}/${PORTNAME}_${s}.png \
+	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}_${s}.png \
 		${STAGEDIR}${PREFIX}/share/icons/hicolor/${s}/apps/${PORTNAME}.png
 .endfor
 	${LN} -sf ${PREFIX}/share/icons/hicolor/48x48/apps/${PORTNAME}.png \

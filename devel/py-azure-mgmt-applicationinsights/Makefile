@@ -1,0 +1,22 @@
+# $FreeBSD: head/devel/py-azure-mgmt-applicationinsights/Makefile 491762 2019-01-31 22:13:14Z dbaio $
+
+PORTNAME=	azure-mgmt-applicationinsights
+PORTVERSION=	0.1.1
+CATEGORIES=	devel python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	dbaio@FreeBSD.org
+COMMENT=	Microsoft Azure Application Insights Management Cli Library for Python
+
+LICENSE=	MIT
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msrestazure>=0.4.20:net-mgmt/py-msrestazure@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}azure-common>=1.1:www/py-azure-common@${PY_FLAVOR}
+
+USES=		azurepy python zip
+USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

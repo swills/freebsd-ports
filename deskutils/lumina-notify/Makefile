@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-notify/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/lumina-notify/Makefile 492105 2019-02-04 09:30:47Z amdmi3 $
 
 PORTNAME=	lumina-notify
 PORTVERSION=	1.4.1
@@ -10,6 +10,7 @@ MAINTAINER=	jt@ixsystems.com
 COMMENT=	Alarm/notification utility from the Lumina Desktop
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../../LICENSE
 
 OPTIONS_DEFINE=	I18N
 OPTIONS_DEFAULT=	I18N

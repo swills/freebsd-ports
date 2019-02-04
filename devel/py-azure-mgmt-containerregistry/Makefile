@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-mgmt-containerregistry/Makefile 491402 2019-01-27 20:55:00Z dbaio $
+# $FreeBSD: head/devel/py-azure-mgmt-containerregistry/Makefile 491984 2019-02-02 21:10:35Z dbaio $
 
 PORTNAME=	azure-mgmt-containerregistry
-PORTVERSION=	2.6.0
+PORTVERSION=	2.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/games/oolite/Makefile 489363 2019-01-05 18:46:31Z antoine $
+# $FreeBSD: head/games/oolite/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=		oolite
 PORTVERSION=		1.88
+PORTREVISION=	1
 CATEGORIES=		games gnustep
 MASTER_SITES=		https://github.com/OoliteProject/oolite/releases/download/1.88/
 DISTNAME=		${PORTNAME}-source-${PORTVERSION}

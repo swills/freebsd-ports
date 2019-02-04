@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-openstackdocstheme/Makefile 473041 2018-06-22 13:43:05Z miwi $
+# $FreeBSD: head/textproc/py-openstackdocstheme/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	openstackdocstheme
 DISTVERSION=	1.21.0
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	OpenStack Docs Theme
 
 LICENSE=	APACHE20

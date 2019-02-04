@@ -1,8 +1,8 @@
 # Created by: Emmanuel Vadot <manu@freebsd.org>
-# $FreeBSD: head/sysutils/u-boot-tools/Makefile 465693 2018-03-27 11:42:38Z manu $
+# $FreeBSD: head/sysutils/u-boot-tools/Makefile 492150 2019-02-04 18:26:34Z manu $
 
 PORTNAME=	u-boot-tools
-DISTVERSION=	2018.03
+DISTVERSION=	2019.01
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/
 DISTNAME=	u-boot-${PORTVERSION}
@@ -12,7 +12,7 @@ COMMENT=	U-boot related tools
 
 LICENSE=	GPLv2
 
-USES=	tar:bzip2 gmake python:2.7,build ssl
+USES=	bison tar:bzip2 gmake python:2.7,build ssl
 
 CONFLICTS=	uboot-mkimage
 ALL_TARGET=	tools-only

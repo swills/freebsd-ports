@@ -1,8 +1,8 @@
 # Created by: Alex Varju <freebsd-ports@varju.ca>
-# $FreeBSD: head/devel/pmd/Makefile 487526 2018-12-15 15:26:08Z danilo $
+# $FreeBSD: head/devel/pmd/Makefile 491891 2019-02-01 23:37:02Z danilo $
 
 PORTNAME=	pmd
-PORTVERSION=	6.10.0
+PORTVERSION=	6.11.0
 CATEGORIES=	devel java
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-bin-${PORTVERSION}
@@ -14,6 +14,7 @@ LICENSE=	APACHE20 BSD4CLAUSE
 LICENSE_COMB=	dual
 
 USES=		zip
+
 USE_JAVA=	yes
 JAVA_VERSION=	1.7+
 NO_BUILD=	yes
@@ -21,7 +22,7 @@ DATADIR=	${JAVASHAREDIR}/${PORTNAME}
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|#!/bin/bash|#!/bin/sh|' \
+	@${REINPLACE_CMD} -e 's|#!/bin/bash|#!/bin/sh|' -e 's|function||' \
 		-e 's|LIB_DIR=$$(pwd -P)|LIB_DIR=${DATADIR}|' ${WRKSRC}/bin/run.sh
 
 do-install:

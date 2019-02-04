@@ -1,10 +1,10 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/graphics/qgis/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/qgis/Makefile 491916 2019-02-02 06:48:37Z danfe $
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
 DISTVERSION=	3_4_3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics geography
 
 MAINTAINER=	rhurlin@gwdg.de
@@ -112,7 +112,7 @@ NO_OPTIONS_SORT=	yes
 OPTIONS_SUB=		yes
 SERVER_DESC=		Enable QGIS server
 
-GRASS_BUILD_DEPENDS=	grass74:databases/grass7
+GRASS_BUILD_DEPENDS=	grass7:databases/grass7
 GRASS_RUN_DEPENDS=	${GRASS_BUILD_DEPENDS}
 GRASS_CMAKE_BOOL=	WITH_GRASS7
 GRASS_FORCE_MAKE_JOBS=	NO

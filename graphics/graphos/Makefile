@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/graphos/Makefile 481216 2018-10-04 11:31:26Z danfe $
+# $FreeBSD: head/graphics/graphos/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	graphos
 PORTVERSION=	0.7
+PORTREVISION=	1
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	Graphos-${PORTVERSION}

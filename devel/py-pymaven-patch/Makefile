@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pymaven-patch/Makefile 475540 2018-07-28 12:14:51Z miwi $
+# $FreeBSD: head/devel/py-pymaven-patch/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pymaven-patch
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	0.2.5.patch
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Library for interfacing with maven
 
 LICENSE=	APACHE20

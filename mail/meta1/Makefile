@@ -1,11 +1,11 @@
-# $FreeBSD: head/mail/meta1/Makefile 487331 2018-12-13 00:09:47Z dinoex $
+# $FreeBSD: head/mail/meta1/Makefile 492141 2019-02-04 15:51:24Z dinoex $
 
 PORTNAME=	meta1
-PORTVERSION=	1.1.0a.11.0
+PORTVERSION=	1.1.0a.12.0
 CATEGORIES=	mail ipv6
-MASTER_SITES=	http://www.MeTA1.org/download/.alpha/mstack/
+MASTER_SITES=	http://www.MeTA1.org/download/.alpha/edns0/
 PKGNAMESUFFIX?=	${TLS_SUFFIX}${SASL_SUFFIX}${BERKELEYDB_SUFFIX}${PMILTER_SUFFIX}${PKGNAMESUFFIX2}
-DISTNAME=	${PORTNAME}-1.1.Alpha11.0
+DISTNAME=	${PORTNAME}-1.1.Alpha12.0
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Secure and efficient mail gateway

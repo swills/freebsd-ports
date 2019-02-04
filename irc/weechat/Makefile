@@ -1,5 +1,5 @@
 # Created by: clement
-# $FreeBSD: head/irc/weechat/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/irc/weechat/Makefile 492031 2019-02-03 09:30:38Z amdmi3 $
 
 PORTNAME=	weechat
 PORTVERSION=	2.3
@@ -9,7 +9,7 @@ MASTER_SITES=	https://weechat.org/files/src/
 MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Lightweight and user friendly ncurses based IRC client
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS+=	libcurl.so:ftp/curl \

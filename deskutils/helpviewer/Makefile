@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/helpviewer/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/deskutils/helpviewer/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	helpviewer
 PORTVERSION=	0.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	http://www.roard.com/helpviewer/download/
 DISTNAME=	HelpViewer-${PORTVERSION}

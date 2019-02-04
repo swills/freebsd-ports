@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/colorcode/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/games/colorcode/Makefile 492116 2019-02-04 11:49:35Z linimon $
 
 PORTNAME=	colorcode
 PORTVERSION=	0.8.5
@@ -13,8 +13,8 @@ COMMENT=	Advanced MasterMind game and solver
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core gui widgets buildtools_build
-USES=		qmake qt:5
 WRKSRC=		${WRKDIR}/ColorCode-${PORTVERSION}
 
 DESKTOP_ENTRIES=ColorCode \

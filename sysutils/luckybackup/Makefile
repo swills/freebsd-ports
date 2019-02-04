@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/luckybackup/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/sysutils/luckybackup/Makefile 492119 2019-02-04 11:55:12Z linimon $
 
 PORTNAME=	luckybackup
 PORTVERSION=	0.4.9
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/license/gpl.txt
 
 RUN_DEPENDS=	rsync:net/rsync
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 
 USE_GL=		gl
 USE_QT=		core gui network widgets buildtools_build

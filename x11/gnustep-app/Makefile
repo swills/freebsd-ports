@@ -1,9 +1,9 @@
 # Created by: dirk.meyer@dinoex.sub.org
-# $FreeBSD: head/x11/gnustep-app/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11/gnustep-app/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	gnustep-app
 PORTVERSION=	2.0.0
-PORTREVISION=	12
+PORTREVISION=	14
 CATEGORIES=	x11 gnustep
 
 MAINTAINER=	theraven@FreeBSD.org
@@ -65,6 +65,7 @@ RUN_DEPENDS=	aclock>0:x11-clocks/aclock \
 		nextgo>0:games/nextgo \
 		paje>0:science/paje \
 		pantomime>0:mail/pantomime \
+		pikopixel>0:graphics/pikopixel \
 		pixen>0:graphics/pixen \
 		plopfolio>0:deskutils/plopfolio \
 		poe>0:multimedia/poe \

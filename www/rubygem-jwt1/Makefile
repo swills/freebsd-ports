@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-jwt1/Makefile 457873 2018-01-02 15:33:07Z sunpoet $
+# $FreeBSD: head/www/rubygem-jwt1/Makefile 492005 2019-02-02 21:55:36Z sunpoet $
 
 PORTNAME=	jwt
 PORTVERSION=	1.5.6
@@ -12,6 +12,9 @@ COMMENT=	JSON Web Token implementation in Ruby
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use www/rubygem-jwt instead
+EXPIRATION_DATE=2019-02-28
 
 PORTSCOUT=	limit:^1\.
 

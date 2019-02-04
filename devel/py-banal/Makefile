@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-banal/Makefile 475544 2018-07-28 12:21:38Z miwi $
+# $FreeBSD: head/devel/py-banal/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	banal
 DISTVERSION=	0.3.7
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Commons of banal micro-functions for Python
 
 LICENSE=	MIT

@@ -1,11 +1,10 @@
 # Created by: Pete French <pete@twisted.org.uk>
-# $FreeBSD: head/lang/libobjc2/Makefile 486025 2018-11-27 16:40:33Z linimon $
+# $FreeBSD: head/lang/libobjc2/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	libobjc2
-PORTVERSION=	1.8.1
-DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTVERSION=	2.0
 CATEGORIES=	lang devel gnustep
+LICENSE=	MIT
 
 MAINTAINER=	theraven@FreeBSD.org
 COMMENT=	Replacement Objective-C runtime supporting modern Objective-C features
@@ -16,6 +15,7 @@ USES=		cmake objc:compiler
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	gnustep
+GH_TAGNAME=	effdd15
 
 SSP_UNSAFE=	yes
 
@@ -26,9 +26,6 @@ PLIST_SUB+=	SHLIB_MAJOR=${SHLIB_MAJOR} SHLIB_MINOR=${SHLIB_MINOR}
 
 CMAKE_ARGS+=	-DLIB_INSTALL_PATH=lib
 CMAKE_ARGS+=	-DTESTS=OFF
-# This shouldn't be needed, but our llvm port installs llvm-config with a silly
-# name...
-CMAKE_ARGS+=	-DLLVM_OPTS=OFF
 .if exists(/usr/lib/libstdc++.so)
 CXXFLAGS+=	-stdlib=libstdc++
 .endif

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-mkdocs/Makefile 476925 2018-08-11 14:36:16Z miwi $
+# $FreeBSD: head/textproc/py-mkdocs/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	mkdocs
 DISTVERSION=	1.0
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Project documentation with Markdown
 
 LICENSE=	BSD2CLAUSE

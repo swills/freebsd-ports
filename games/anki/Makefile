@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/anki/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/games/anki/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	anki
 DISTVERSION=	2.0.52
@@ -9,7 +9,7 @@ MASTER_SITES=	https://apps.ankiweb.net/downloads/current/
 DISTNAME=	anki-${PORTVERSION}-source
 DIST_SUBDIR=	python
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Flashcard trainer with spaced repetition
 
 LICENSE=	AGPLv3+

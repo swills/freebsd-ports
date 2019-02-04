@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-coreschema/Makefile 465629 2018-03-26 19:32:08Z yuri $
+# $FreeBSD: head/devel/py-coreschema/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	coreschema
 DISTVERSION=	0.0.4
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Core schema for the Core API
 
 LICENSE=	BSD2CLAUSE

@@ -1,9 +1,8 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/x11/lightdm-gtk-greeter/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/x11/lightdm-gtk-greeter/Makefile 492123 2019-02-04 12:45:47Z woodsb02 $
 
 PORTNAME=	lightdm-gtk-greeter
-PORTVERSION=	2.0.2
-PORTREVISION=	2
+PORTVERSION=	2.0.6
 CATEGORIES=	x11
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${PORTVERSION:R}/${PORTVERSION}/+download/
 
@@ -15,11 +14,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblightdm-gobject-1.so:x11/lightdm
 
-USES=		gettext gmake localbase pkgconfig xfce
-GNU_CONFIGURE=	yes
+USES=		gettext gmake gnome localbase pkgconfig xfce
 USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool
 USE_XFCE=	libexo
 USE_XORG=	x11
+
+GNU_CONFIGURE=	yes
+INSTALLS_ICONS=	yes
 
 OPTIONS_DEFINE=	DOCS
 

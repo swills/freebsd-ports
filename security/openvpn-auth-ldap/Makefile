@@ -1,9 +1,9 @@
 # Created by: Nick Barkas <snb@threerings.net>
-# $FreeBSD: head/security/openvpn-auth-ldap/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/security/openvpn-auth-ldap/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	openvpn-auth-ldap
 PORTVERSION=	2.0.4.0.s1379
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	LOCAL/mandree # figure out proper GitHub commit and use that.
 # https://github.com/threerings/openvpn-auth-ldap/

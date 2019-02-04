@@ -1,10 +1,14 @@
-# $FreeBSD: head/devel/gorm/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/devel/gorm/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	gorm
 PORTVERSION=	1.2.23
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel gnustep
-MASTER_SITES=	GNUSTEP/dev-apps
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	gnustep
+GH_PROJECT=	apps-gorm
+GH_TAGNAME=	04554d2
 
 MAINTAINER=	theraven@FreeBSD.org
 COMMENT=	Graphical Object Relationship Modeller

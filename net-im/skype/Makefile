@@ -1,5 +1,5 @@
 # Created by: netchild@FreeBSD.org
-# $FreeBSD: head/net-im/skype/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-im/skype/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	skype
 PORTVERSION=	2.1.0.81
@@ -23,6 +23,8 @@ USES=		cpe linux tar:bzip2
 USE_LINUX=	alsalib alsa-plugins-oss dri expat fontconfig libasyncns \
 		libsigcpp20 xorglibs
 BROKEN=		uses non existing libsigcpp20
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 RESTRICTED=	Redistribution prohibited.
 
 WRKSRC=		${WRKDIR}/${PORTNAME}_static-${DISTVERSION}

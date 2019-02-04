@@ -1,5 +1,5 @@
 # Created by: Jeremy Norris <ishmael27@home.com>
-# $FreeBSD: head/graphics/gliv/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/gliv/Makefile 492120 2019-02-04 11:58:20Z linimon $
 
 PORTNAME=	gliv
 PORTVERSION=	1.9.7
@@ -15,15 +15,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
 
+USES=		compiler:c11 desktop-file-utils gettext gl gmake \
+		localbase:ldflags pathfix pkgconfig tar:bzip2
 USE_GNOME=	gnomeprefix gtk20
 USE_GL=		yes
-USES=		desktop-file-utils gettext gmake pkgconfig tar:bzip2 pathfix
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	ACLOCAL="${TRUE}" AUTOCONF="${TRUE}" AUTOMAKE="${TRUE}" \
 		AUTOHEADER="${TRUE}"
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/gliv.desktop \

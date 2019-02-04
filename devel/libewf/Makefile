@@ -1,8 +1,8 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/devel/libewf/Makefile 473873 2018-07-04 09:20:14Z antoine $
+# $FreeBSD: head/devel/libewf/Makefile 492029 2019-02-03 09:27:36Z antoine $
 
 PORTNAME=	libewf
-PORTVERSION=	20140804
+PORTVERSION=	20140806
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libewf-legacy/releases/download/${PORTVERSION}/ \
 		LOCAL/antoine

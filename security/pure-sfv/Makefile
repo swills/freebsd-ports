@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/security/pure-sfv/Makefile 348550 2014-03-18 14:26:57Z ehaupt $
+# $FreeBSD: head/security/pure-sfv/Makefile 491925 2019-02-02 09:36:08Z tobik $
 
 PORTNAME=	pure-sfv
 PORTVERSION=	0.3
@@ -14,8 +14,7 @@ LICENSE=	GPLv2
 
 USES=		gmake
 
-WRKSRC=		${WRKDIR}
-
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/pure-sfv
 PORTDOCS=	ReadMe.txt
 

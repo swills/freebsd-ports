@@ -1,12 +1,12 @@
 # Created by: bsdx
-# $FreeBSD: head/sysutils/bchunk/Makefile 461759 2018-02-13 23:49:51Z yuri $
+# $FreeBSD: head/sysutils/bchunk/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	bchunk
 DISTVERSION=	1.2.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://he.fi/bchunk/
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Converts .bin/.cue files to .iso/audio
 
 LICENSE=	GPLv2

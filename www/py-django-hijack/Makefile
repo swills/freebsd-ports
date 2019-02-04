@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-hijack/Makefile 476309 2018-08-03 16:37:15Z swills $
+# $FreeBSD: head/www/py-django-hijack/Makefile 491870 2019-02-01 21:43:00Z sunpoet $
 
 PORTNAME=	django-hijack
-PORTVERSION=	2.1.9
+PORTVERSION=	2.1.10
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

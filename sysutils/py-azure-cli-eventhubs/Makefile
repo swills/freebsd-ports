@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-eventhubs/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-eventhubs/Makefile 491772 2019-01-31 22:20:04Z dbaio $
 
 PORTNAME=	azure-cli-eventhubs
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

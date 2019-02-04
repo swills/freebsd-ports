@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/stepsync/Makefile 481140 2018-10-03 00:55:28Z danfe $
+# $FreeBSD: head/sysutils/stepsync/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	stepsync
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	sysutils gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	StepSync-${PORTVERSION}

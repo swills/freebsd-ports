@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-strict-rfc3339/Makefile 465937 2018-03-29 23:22:59Z cpm $
+# $FreeBSD: head/devel/py-strict-rfc3339/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	strict-rfc3339
 DISTVERSION=	0.7
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Strict, simple, lightweight RFC3339 functions
 
 LICENSE=	GPLv3

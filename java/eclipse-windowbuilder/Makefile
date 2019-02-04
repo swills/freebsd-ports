@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/java/eclipse-windowbuilder/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/java/eclipse-windowbuilder/Makefile 491953 2019-02-02 12:34:13Z tobik $
 
 PORTNAME=	windowbuilder
 PORTVERSION=	1.6.1
@@ -21,7 +21,7 @@ LICENSE=	EPL
 
 RUN_DEPENDS=	eclipse:java/eclipse
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 
 .include "${.CURDIR}/../eclipse/Makefile.plugins"
 

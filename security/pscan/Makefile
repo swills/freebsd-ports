@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/security/pscan/Makefile 357526 2014-06-11 18:55:29Z marino $
+# $FreeBSD: head/security/pscan/Makefile 491925 2019-02-02 09:36:08Z tobik $
 
 PORTNAME=	pscan
 PORTVERSION=	1.3
@@ -11,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Security C code scanner for misuse of format strings
 
 ALL_TARGET=	#empty
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	bin/pscan bin/find_formats
 

@@ -1,9 +1,9 @@
 # Created by: Euan Thoms <euan@potensol.com>
-# $FreeBSD: head/www/sogo3/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/sogo3/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=		sogo3
 PORTVERSION=		3.2.10
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=		www gnustep
 MASTER_SITES=		http://www.sogo.nu/files/downloads/SOGo/Sources/
 DISTNAME=		SOGo-${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-pdfminer.six/Makefile 475531 2018-07-28 12:05:28Z miwi $
+# $FreeBSD: head/textproc/py-pdfminer.six/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pdfminer.six
 PORTVERSION=	20170720
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	PDF parser and analyzer
 
 LICENSE=	MIT

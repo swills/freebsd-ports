@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/devel/autogen/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/devel/autogen/Makefile 491997 2019-02-02 21:54:54Z sunpoet $
 
 PORTNAME=	autogen
 PORTVERSION=	5.18.12
@@ -12,9 +12,9 @@ COMMENT=	Tool designed to simplify the creation and maintenance of programs
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	bash:shells/bash
+BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	libguile-2.0.so:lang/guile2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+RUN_DEPENDS=	bash:shells/bash
 
 # bin/columns
 CONFLICTS_INSTALL=	columns

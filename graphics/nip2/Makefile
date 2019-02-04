@@ -1,9 +1,8 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/graphics/nip2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/nip2/Makefile 491889 2019-02-01 23:29:15Z danilo $
 
 PORTNAME=	nip2
-PORTVERSION=	8.7.0
-PORTREVISION=	2
+PORTVERSION=	8.7.1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/libvips/${PORTNAME}/releases/download/v${PORTVERSION}/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-os-service-types/Makefile 471398 2018-06-02 19:24:45Z miwi $
+# $FreeBSD: head/devel/py-os-service-types/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	os-service-types
 DISTVERSION=	1.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Python library for consuming OpenStack service-types-authority data
 
 LICENSE=	APACHE20

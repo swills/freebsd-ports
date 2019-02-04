@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-normality/Makefile 475545 2018-07-28 12:22:52Z miwi $
+# $FreeBSD: head/textproc/py-normality/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	normality
 DISTVERSION=	0.6.1
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Micro-library to normalize text strings
 
 LICENSE=	MIT

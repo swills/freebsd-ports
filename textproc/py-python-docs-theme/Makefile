@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-python-docs-theme/Makefile 475453 2018-07-27 18:29:59Z miwi $
+# $FreeBSD: head/textproc/py-python-docs-theme/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	python-docs-theme
 DISTVERSION=	2018.2
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Sphinx theme for the CPython docs and related projects
 
 LICENSE=	PSFL

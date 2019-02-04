@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/nextgo/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/games/nextgo/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	nextgo
 PORTVERSION=	3.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	NeXTGo-${PORTVERSION}

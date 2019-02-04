@@ -1,8 +1,8 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-distro/Makefile 457960 2018-01-03 12:31:27Z woodsb02 $
+# $FreeBSD: head/sysutils/py-distro/Makefile 492135 2019-02-04 14:08:01Z woodsb02 $
 
 PORTNAME=	distro
-PORTVERSION=	1.2.0
+PORTVERSION=	1.4.0
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python shebangfix
 USE_PYTHON=	autoplist concurrent distutils
+
 SHEBANG_FILES=	query_local_distro.py
 NO_ARCH=	yes
 

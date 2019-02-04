@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-inflection/Makefile 465767 2018-03-27 22:04:53Z yuri $
+# $FreeBSD: head/devel/py-inflection/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	inflection
 DISTVERSION=	0.3.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Ruby on Rails' inflector ported to Python
 
 LICENSE=	MIT

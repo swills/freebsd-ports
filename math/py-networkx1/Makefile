@@ -1,5 +1,5 @@
 # Created by: dikshie
-# $FreeBSD: head/math/py-networkx1/Makefile 490159 2019-01-13 17:36:49Z miwi $
+# $FreeBSD: head/math/py-networkx1/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	networkx
 PORTVERSION=	1.11
@@ -9,7 +9,7 @@ MASTER_SITES=	http://networkx.lanl.gov/download/networkx/ \
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	1
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Tools for complex networks / Backported version
 
 LICENSE=	BSD3CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-ranged-response/Makefile 469672 2018-05-11 16:54:44Z sunpoet $
+# $FreeBSD: head/www/py-django-ranged-response/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	django-ranged-response
 DISTVERSION=	0.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Modified Django FileResponse that adds Content-Range headers
 
 LICENSE=	MIT

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-boolean.py/Makefile 489381 2019-01-05 20:59:33Z swills $
+# $FreeBSD: head/devel/py-boolean.py/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	boolean.py
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	3.6
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Create and parse boolean expressions and create custom boolean DSL
 
 LICENSE=	BSD2CLAUSE

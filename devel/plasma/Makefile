@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/plasma/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/plasma/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	plasma
 DISTVERSION=	g20171121
 PORTREVISION=	1
 CATEGORIES=	devel python
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Interactive disassembler for x86/ARM/MIPS
 
 LICENSE=	GPLv3

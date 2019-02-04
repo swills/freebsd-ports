@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/triqs/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/science/triqs/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	triqs
 DISTVERSION=	2.0
@@ -12,6 +12,8 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 BROKEN=		wrong LIB_DEPENDS
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 BROKEN_i386=		error: no matching function for call to 'max': https://github.com/TRIQS/triqs/issues/596
 
 BUILD_DEPENDS=	boost-libs>=1.53:devel/boost-libs \

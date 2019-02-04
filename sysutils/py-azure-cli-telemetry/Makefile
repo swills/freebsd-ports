@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-telemetry/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-telemetry/Makefile 491786 2019-01-31 22:29:03Z dbaio $
 
 PORTNAME=	azure-cli-telemetry
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

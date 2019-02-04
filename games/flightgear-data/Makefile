@@ -1,8 +1,8 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear-data/Makefile 487291 2018-12-12 11:02:44Z martymac $
+# $FreeBSD: head/games/flightgear-data/Makefile 491850 2019-02-01 21:22:18Z martymac $
 
 PORTNAME=	flightgear-data
-PORTVERSION=	2018.3.1
+PORTVERSION=	2018.3.2
 CATEGORIES=	games
 MASTER_SITES=	SF/flightgear/release-${PORTVERSION:R}
 DISTNAME=	FlightGear-${PORTVERSION}-data
@@ -15,8 +15,9 @@ LICENSE=	GPLv2
 BROKEN_aarch64=		Fails to install: runaway process
 BROKEN_mips64=		Fails to install: runaway process
 
-NO_BUILD=	yes
 USES=		tar:bzip2
+
+NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/fgdata
 DATADIR=	${PREFIX}/share/flightgear
 

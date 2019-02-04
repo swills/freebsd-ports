@@ -1,8 +1,8 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/devel/libvshadow/Makefile 487911 2018-12-20 19:49:07Z antoine $
+# $FreeBSD: head/devel/libvshadow/Makefile 492032 2019-02-03 09:32:18Z antoine $
 
 PORTNAME=	libvshadow
-PORTVERSION=	20181216
+PORTVERSION=	20190127
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libvshadow/releases/download/${PORTVERSION}/ \
 		LOCAL/antoine

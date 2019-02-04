@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/asc/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/asc/Makefile 492063 2019-02-03 19:45:09Z antoine $
 
 PORTNAME=	asc
 PORTVERSION=	2.6.1.0
@@ -16,6 +16,8 @@ COMMENT=	Turn based, multiplayer strategic game with nice graphics
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	zip:archivers/zip
 RUN_DEPENDS:=	${BUILD_DEPENDS}

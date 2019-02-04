@@ -1,8 +1,8 @@
 # Created by: dmitry@karasik.eu.org
-# $FreeBSD: head/x11-toolkits/p5-Prima/Makefile 482257 2018-10-16 20:05:35Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Prima/Makefile 492013 2019-02-02 21:56:18Z sunpoet $
 
 PORTNAME=	Prima
-PORTVERSION=	1.53
+PORTVERSION=	1.54
 CATEGORIES=	x11-toolkits graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -44,7 +44,6 @@ XFT_USE=		XORG=xft
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Prima/Prima.so
-	@${REINPLACE_CMD} -e 's|${STAGEDIR}||' \
-		${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/Prima/Config.pm
+	@${REINPLACE_CMD} -e 's|${STAGEDIR}||' ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/Prima/Config.pm
 
 .include <bsd.port.mk>

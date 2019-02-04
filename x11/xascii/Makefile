@@ -1,5 +1,5 @@
 # Created by: Cy Schubert <cy@FreeBSD.org>
-# $FreeBSD: head/x11/xascii/Makefile 364347 2014-08-08 08:42:44Z olgeni $
+# $FreeBSD: head/x11/xascii/Makefile 491917 2019-02-02 06:57:27Z tobik $
 
 PORTNAME=	xascii
 PORTVERSION=	1.0
@@ -7,14 +7,14 @@ CATEGORIES=	x11
 MASTER_SITES=	http://komquats.com/distfiles/ \
 		http://people.freebsd.org/~cy/distfiles/
 
-WRKSRC=		${WRKDIR}
-
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Display an ASCII table in decimal, octal, and hexadecimal
 
-MAKE_ARGS+=	PREFIX=${PREFIX}
 USES=		imake
 USE_XORG=	x11 xt xaw
+
+MAKE_ARGS=	PREFIX=${PREFIX}
+NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/xascii man/man1/xascii.1.gz
 
 .include <bsd.port.mk>

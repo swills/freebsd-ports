@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-url/Makefile 490950 2019-01-22 13:32:50Z linimon $
+# $FreeBSD: head/www/py-url/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	url
 DISTVERSION=	0.4.2
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	URL parsing, sanitizing and normalizing
 
 LICENSE=	MIT

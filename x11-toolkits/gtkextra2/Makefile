@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtkextra2/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11-toolkits/gtkextra2/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	gtkextra
 PORTVERSION=	2.1.2
@@ -15,6 +15,8 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		Does not build: libgtkextra-x11-2.0.so: undefined reference to `gtkextra_BOOLEAN__BOXED_BOXED'
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 USES=		gmake libtool pathfix pkgconfig
 USE_GNOME=	gtk20

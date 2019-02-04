@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/py-text-unidecode/Makefile 475529 2018-07-28 12:03:06Z miwi $
+# $FreeBSD: head/converters/py-text-unidecode/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	text-unidecode
 DISTVERSION=	1.2
@@ -6,7 +6,7 @@ CATEGORIES=	converters python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Most basic port of Perl's Text::Unidecode module
 
 LICENSE=	ART10

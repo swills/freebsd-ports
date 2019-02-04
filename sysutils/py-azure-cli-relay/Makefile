@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-relay/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-relay/Makefile 491779 2019-01-31 22:24:50Z dbaio $
 
 PORTNAME=	azure-cli-relay
-PORTVERSION=	0.1.2
+PORTVERSION=	0.1.3
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

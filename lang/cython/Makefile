@@ -1,11 +1,10 @@
 # Created by: Wen Heping <wenhping@gmail.com>
-# $FreeBSD: head/lang/cython/Makefile 484187 2018-11-05 11:49:43Z wen $
+# $FreeBSD: head/lang/cython/Makefile 492015 2019-02-02 21:56:28Z sunpoet $
 
 PORTNAME=	cython
 PORTVERSION=	0.29
 CATEGORIES=	lang python
-MASTER_SITES=	http://www.cython.org/release/ \
-		CHEESESHOP
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Cython-${PORTVERSION}
 

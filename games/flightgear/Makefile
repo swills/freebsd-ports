@@ -1,9 +1,8 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/games/flightgear/Makefile 491850 2019-02-01 21:22:18Z martymac $
 
 PORTNAME=	flightgear
-PORTVERSION=	2018.3.1
-PORTREVISION=	2
+PORTVERSION=	2018.3.2
 CATEGORIES=	games
 MASTER_SITES=	SF/flightgear/release-${PORTVERSION:R}
 
@@ -28,11 +27,12 @@ RUN_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \
 		${LOCALBASE}/lib/libSimGearCore.a:devel/simgear \
 		${LOCALBASE}/share/flightgear/version:games/flightgear-data
 
-LLD_UNSAFE=	yes
 USES=		alias cmake compiler cpe dos2unix gl jpeg openal:al,alut \
 		sqlite tar:bzip2
 USE_XORG=	ice sm x11 xext xft xi xinerama xmu xt
 USE_GL=		gl glew glu glut
+
+LLD_UNSAFE=	yes
 
 DOS2UNIX_REGEX=	.*\.(c|h|cxx|cpp|hxx|hpp)
 CMAKE_ARGS+=	-DSYSTEM_SQLITE:BOOL=ON \

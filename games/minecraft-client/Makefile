@@ -1,5 +1,5 @@
 # Created by: Martin Kropfinger
-# $FreeBSD: head/games/minecraft-client/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/minecraft-client/Makefile 491937 2019-02-02 10:11:49Z tobik $
 
 PORTNAME=	minecraft-client
 PORTVERSION=	1.7.9
@@ -17,20 +17,22 @@ COMMENT=	Client for the block building game
 
 RUN_DEPENDS=	${JAVALIBDIR}/lwjgl/lwjgl.jar:games/lwjgl
 
-WRKSRC=		${WRKDIR}
 USES=		openal
-NO_ARCH=	yes
-NO_BUILD=	yes
 USE_JAVA=	yes
 JAVA_OS=	native
 JAVA_VENDOR=	openjdk
 JAVA_VERSION=	1.8+
+
 DESKTOP_ENTRIES="Minecraft" \
 		"Block building game" \
 		"${PREFIX}/share/pixmaps/minecraft-client.png" \
 		"${PORTNAME}" \
 		"Game;Java;" \
 		false
+
+NO_ARCH=	yes
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

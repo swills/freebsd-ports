@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/gmines/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/games/gmines/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	gmines
 PORTVERSION=	0.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	GMines-${PORTVERSION}

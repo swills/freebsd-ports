@@ -1,8 +1,8 @@
 # Created by: J.F. Dockes <jean-francois.dockes@wanadoo.fr>
-# $FreeBSD: head/deskutils/recoll/Makefile 491301 2019-01-26 16:38:14Z yuri $
+# $FreeBSD: head/deskutils/recoll/Makefile 491977 2019-02-02 19:21:28Z fernape $
 
 PORTNAME=	recoll
-DISTVERSION=	1.24.3
+DISTVERSION=	1.24.5
 CATEGORIES=	deskutils
 MASTER_SITES=	https://www.lesbonscomptes.com/recoll/
 
@@ -23,10 +23,10 @@ USES=		bison gmake gnome iconv libtool localbase python:2.7 shebangfix
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	filters/*.py filters/rcl7z filters/rclaudio \
 		filters/rclchm filters/rcldia filters/rclepub \
-		filters/rclepub1 filters/rclics filters/rclinfo \
-		filters/rclkar filters/rclpython filters/rclrar \
-		filters/rcltar filters/rclwar filters/rclzip \
-		desktop/hotrecoll.py
+		filters/rclepub1 filters/rclics filters/rclimg \
+		filters/rclinfo filters/rclkar filters/rclpython \
+		filters/rclrar filters/rcltar filters/rclwar \
+		filters/rclzip desktop/hotrecoll.py 
 USE_PYTHON=	py3kplist
 USE_GNOME=	libxslt:run
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/multimedia/libcec/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/libcec/Makefile 491963 2019-02-02 17:23:48Z tobik $
 
 PORTNAME=	libcec
 PORTVERSION=	4.0.2
@@ -7,7 +7,7 @@ PORTREVISION=	6
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	multimedia
 
-MAINTAINER=	mikael.urankar@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library to control Pulse-Eight's HDMI-CEC adapter
 
 LICENSE=	GPLv2

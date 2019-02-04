@@ -1,5 +1,5 @@
 # Created by: Charles Swiger <chuck@pkix.net>
-# $FreeBSD: head/sysutils/dvd+rw-tools/Makefile 476826 2018-08-10 10:05:19Z koobs $
+# $FreeBSD: head/sysutils/dvd+rw-tools/Makefile 491964 2019-02-02 17:34:27Z tobik $
 
 PORTNAME=	dvd+rw-tools
 PORTVERSION=	7.1
@@ -8,7 +8,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://www.pkix.net/mirror/fy.chalmers.se/ \
 		http://fy.chalmers.se/~appro/linux/DVD+RW/tools/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	DVD burning software
 
 LICENSE=	GPLv2

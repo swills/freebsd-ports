@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-drf-yasg/Makefile 491583 2019-01-29 16:33:57Z miwi $
+# $FreeBSD: head/www/py-drf-yasg/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	drf-yasg
 DISTVERSION=	1.11.1
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Yet Another Swagger Generator
 
 LICENSE=	BSD3CLAUSE

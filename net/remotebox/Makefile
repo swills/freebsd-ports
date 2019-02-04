@@ -1,5 +1,5 @@
 # Created by: Haowu Ge <ghw@7axu.com>
-# $FreeBSD: head/net/remotebox/Makefile 488761 2018-12-31 10:09:48Z rene $
+# $FreeBSD: head/net/remotebox/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	remotebox
 DISTVERSION=	2.5
@@ -7,7 +7,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://remotebox.knobgoblin.org.uk/downloads/
 DISTNAME=	RemoteBox-${DISTVERSION}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Open Source VirtualBox Client with Remote Management
 
 LICENSE=	GPLv2

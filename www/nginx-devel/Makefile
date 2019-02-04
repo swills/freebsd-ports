@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx-devel/Makefile 490211 2019-01-13 20:58:36Z adamw $
+# $FreeBSD: head/www/nginx-devel/Makefile 492083 2019-02-03 23:34:54Z osa $
 
 PORTNAME=	nginx
 PORTVERSION=	1.15.8
@@ -14,6 +14,7 @@ MAINTAINER?=	osa@FreeBSD.org
 COMMENT?=	Robust and small WWW server
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFLICTS_INSTALL=	nginx
 

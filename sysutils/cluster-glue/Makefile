@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/cluster-glue/Makefile 478730 2018-09-01 21:18:14Z antoine $
+# $FreeBSD: head/sysutils/cluster-glue/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	cluster-glue
 PORTVERSION=	1.0.12
@@ -17,6 +17,8 @@ LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
 LICENSE_FILE_LGPL21+ =	${WRKSRC}/COPYING.LIB
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl \
 		libuuid.so:misc/e2fsprogs-libuuid \

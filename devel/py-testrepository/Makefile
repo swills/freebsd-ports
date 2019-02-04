@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-testrepository/Makefile 472825 2018-06-19 21:46:32Z sunpoet $
+# $FreeBSD: head/devel/py-testrepository/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	testrepository
 DISTVERSION=	0.0.20
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Repository of test results
 
 LICENSE=	APACHE20 BSD3CLAUSE

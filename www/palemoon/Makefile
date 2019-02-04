@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 490910 2019-01-21 23:03:45Z jbeich $
+# $FreeBSD: head/www/palemoon/Makefile 491972 2019-02-02 18:37:49Z jbeich $
 
 PORTNAME=	palemoon
 DISTVERSION=	27.9.4
@@ -40,7 +40,7 @@ MOZ_OPTIONS=	--enable-application=browser \
 		--enable-jemalloc-lib
 
 OPTIONS_DEFAULT=	GTK2
-OPTIONS_EXCLUDE=	DTRACE JACK TEST WAYLAND
+OPTIONS_EXCLUDE=	JACK TEST WAYLAND
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 

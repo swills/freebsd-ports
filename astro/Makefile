@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 491271 2019-01-26 12:11:15Z tobik $
+# $FreeBSD: head/astro/Makefile 491912 2019-02-02 05:55:13Z sunpoet $
 #
 
     COMMENT = Astronomical ports
@@ -115,7 +115,6 @@
     SUBDIR += viking
     SUBDIR += wcslib
     SUBDIR += weather
-    SUBDIR += weatherspect
     SUBDIR += wmglobe
     SUBDIR += wmjupiter
     SUBDIR += wmmoonclock

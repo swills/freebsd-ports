@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/appwrapper/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/deskutils/appwrapper/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	appwrapper
 PORTVERSION=	0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/AppWrapper%20${PORTVERSION}
 DISTNAME=	AppWrapper.${PORTVERSION}

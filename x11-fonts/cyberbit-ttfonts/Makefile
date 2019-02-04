@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/cyberbit-ttfonts/Makefile 469164 2018-05-05 19:51:58Z danfe $
+# $FreeBSD: head/x11-fonts/cyberbit-ttfonts/Makefile 491917 2019-02-02 06:57:27Z tobik $
 
 PORTNAME=	cyberbit-ttfonts
 PORTVERSION=	2.0.20050220
@@ -17,9 +17,9 @@ COMMENT=	Bitstream Cyberbit TrueType font that covers Unicode 2.0
 RESTRICTED=	Redistribution not permitted; single user license only
 
 USES=		fonts zip
-NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
 
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 SUB_FILES=	pkg-message
 
 PORTDOCS=	97CyberBase.Doc 97CyberBit.Doc 97CyberCJK.Doc \

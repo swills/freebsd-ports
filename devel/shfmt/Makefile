@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/shfmt/Makefile 490773 2019-01-20 06:47:13Z tobik $
+# $FreeBSD: head/devel/shfmt/Makefile 491947 2019-02-02 11:47:32Z tobik $
 
 PORTNAME=	shfmt
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	Format shell scripts
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	go>=1.10:lang/go
+BUILD_DEPENDS=	go>=1.10,1:lang/go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mvdan

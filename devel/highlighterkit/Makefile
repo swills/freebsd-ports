@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/highlighterkit/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/devel/highlighterkit/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	highlighterkit
 PORTVERSION=	0.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel gnustep
 MASTER_SITES=	http://download.gna.org/pmanager/0.2/
 DISTNAME=	HighlighterKit-${PORTVERSION}

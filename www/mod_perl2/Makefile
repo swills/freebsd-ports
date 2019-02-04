@@ -1,5 +1,5 @@
 # Created by: Lars Eggert <larse@isi.edu>
-# $FreeBSD: head/www/mod_perl2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_perl2/Makefile 491809 2019-02-01 13:52:35Z brnrd $
 
 PORTNAME=	mod_perl
 PORTVERSION=	2.0.10
@@ -31,13 +31,6 @@ APMOD_FILE=	260_${PORTNAME}.conf.sample
 PLIST_SUB+=	APMOD_FILE=${APMOD_FILE}
 
 .include <bsd.port.pre.mk>
-
-# Provider is built if apache24 is in use
-.if ${APACHE_VERSION:M2.2}
-PLIST_SUB+=	AP22="@comment "
-.else
-PLIST_SUB+=	AP22=""
-.endif
 
 CONFIGURE_ARGS=	PREFIX=${PREFIX} MP_APXS=${APXS} \
 		MP_APR_CONFIG=${LOCALBASE}/bin/apr-1-config

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-napalm-logs/Makefile 491575 2019-01-29 16:14:30Z miwi $
+# $FreeBSD: head/net-mgmt/py-napalm-logs/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	napalm-logs
 DISTVERSION=	0.7.0
@@ -6,7 +6,7 @@ CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Cross-vendor normalisation for network syslog messages
 
 LICENSE=	APACHE20

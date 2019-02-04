@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 490780 2019-01-20 11:25:07Z mandree $
+# $FreeBSD: head/mail/Makefile 492091 2019-02-04 00:01:11Z sunpoet $
 #
 
     COMMENT = Electronic mail utilities
@@ -534,6 +534,7 @@
     SUBDIR += py-flufl.bounce
     SUBDIR += py-fuglu
     SUBDIR += py-libgmail
+    SUBDIR += py-mail-parser
     SUBDIR += py-managesieve3
     SUBDIR += py-milter
     SUBDIR += py-notmuch

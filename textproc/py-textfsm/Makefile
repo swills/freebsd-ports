@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-textfsm/Makefile 466963 2018-04-10 13:59:38Z krion $
+# $FreeBSD: head/textproc/py-textfsm/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	textfsm
 DISTVERSION=	0.4.1
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Parses semi-structured text into Python tables
 
 LICENSE=	APACHE20

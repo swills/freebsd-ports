@@ -1,9 +1,8 @@
 # Created by: Holger Lamm <holger@eit.uni-kl.de>
-# $FreeBSD: head/net-mgmt/etherape/Makefile 465601 2018-03-26 14:45:02Z woodsb02 $
+# $FreeBSD: head/net-mgmt/etherape/Makefile 492134 2019-02-04 14:01:59Z woodsb02 $
 
 PORTNAME=	etherape
-PORTVERSION=	0.9.16
-PORTREVISION=	1
+PORTVERSION=	0.9.18
 CATEGORIES=	net-mgmt gnome
 MASTER_SITES=	SF
 
@@ -17,12 +16,13 @@ BUILD_DEPENDS=	itstool:textproc/itstool \
 		yelp-tools>=0:textproc/yelp-tools
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
+		libgoocanvas-2.0.so:graphics/goocanvas2 \
 		libpopt.so:devel/popt
 
-USES=		gettext gmake iconv localbase pathfix pkgconfig
-USE_GNOME=	cairo gdkpixbuf2 libglade2 libgnomecanvas libgnomeui
-GNU_CONFIGURE=	yes
+USES=		gettext gmake gnome iconv localbase pathfix pkgconfig
+USE_GNOME=	atk cairo gdkpixbuf2 gtk30 pango
 
+GNU_CONFIGURE=	yes
 PORTDOCS=	AUTHORS ChangeLog FAQ NEWS README README.bugs TODO
 
 OPTIONS_DEFINE=	DOCS

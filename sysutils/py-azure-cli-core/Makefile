@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-core/Makefile 491434 2019-01-27 21:14:56Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-core/Makefile 491987 2019-02-02 21:13:15Z dbaio $
 
 PORTNAME=	azure-cli-core
-PORTVERSION=	2.0.55
+PORTVERSION=	2.0.57
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -30,8 +30,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}adal>=1.2.0:net-mgmt/py-adal@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tabulate>=0.7.7:devel/py-tabulate@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0.30.0:devel/py-wheel@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}azure-mgmt-resource>=2.0.0:devel/py-azure-mgmt-resource@${PY_FLAVOR} \
-		${PY_ENUM34}
+		${PYTHON_PKGNAMEPREFIX}azure-mgmt-resource>=2.1.0:devel/py-azure-mgmt-resource@${PY_FLAVOR} \
+		${PY_ENUM34} \
+		${PY_FUTURES}
 
 USES=		azurepy python
 USE_PYTHON=	autoplist concurrent distutils

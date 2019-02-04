@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/ignition-transport/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/ignition-transport/Makefile 492066 2019-02-03 19:54:38Z antoine $
 
 PORTNAME=	ignition-transport
 DISTVERSION=	6.0.0
@@ -10,6 +10,8 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Ignition transport classes and functions for robot applications
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	ignition-cmake==2:devel/ignition-cmake \
 		ignition-tools>0:devel/ignition-tools \

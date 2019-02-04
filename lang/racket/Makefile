@@ -1,8 +1,8 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/lang/racket/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/lang/racket/Makefile 492104 2019-02-04 09:18:50Z olgeni $
 
 PORTNAME=	racket
-PORTVERSION=	7.1
+PORTVERSION=	7.2
 CATEGORIES=	lang scheme
 MASTER_SITES=	http://mirror.racket-lang.org/installers/${PORTVERSION}/ \
 		http://www.cs.utah.edu/plt/installers/${PORTVERSION}/ \
@@ -30,7 +30,7 @@ MAKE_JOBS_UNSAFE=yes
 CONFLICTS=	racket-minimal-[0-9]*
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	-enable-libffi --enable-pthread --enable-places --enable-shared
+CONFIGURE_ARGS=	-enable-libffi --enable-pthread --enable-places --enable-shared --mandir=${MANDIRS}
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 WRKSRC=		${WRKDIR}/racket-${PORTVERSION}/src

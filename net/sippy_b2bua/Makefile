@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/sippy_b2bua/Makefile 486556 2018-12-03 21:20:17Z rene $
+# $FreeBSD: head/net/sippy_b2bua/Makefile 492017 2019-02-02 21:56:39Z sunpoet $
 
 PORTNAME=	sippy_b2bua
 PORTVERSION=	1.0.2
@@ -23,7 +23,7 @@ DOCS=		COPYING README
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} ${DOCS} ${STAGEDIR}${DOCSDIR}
 

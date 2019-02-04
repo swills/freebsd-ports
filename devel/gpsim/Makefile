@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/devel/gpsim/Makefile 478164 2018-08-26 19:25:48Z tobik $
+# $FreeBSD: head/devel/gpsim/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	gpsim
 PORTVERSION=	0.29.0
@@ -12,6 +12,9 @@ COMMENT=	Software simulator for Microchip PIC microcontrollers
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 BUILD_DEPENDS=	gpasm:devel/gputils
 LIB_DEPENDS=	libpopt.so:devel/popt

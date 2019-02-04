@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-grape0/Makefile 447644 2017-08-09 19:35:30Z sunpoet $
+# $FreeBSD: head/devel/rubygem-grape0/Makefile 492004 2019-02-02 21:55:31Z sunpoet $
 
 PORTNAME=	grape
 PORTVERSION=	0.19.2
@@ -11,6 +11,9 @@ COMMENT=	Framework for rapid API development with great conventions
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use devel/rubygem-grape instead
+EXPIRATION_DATE=2019-02-28
 
 RUN_DEPENDS=	rubygem-activesupport4>=0:devel/rubygem-activesupport4 \
 		rubygem-builder>=0:devel/rubygem-builder \

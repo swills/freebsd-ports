@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/bingo/Makefile 491614 2019-01-30 10:10:50Z tobik $
+# $FreeBSD: head/devel/bingo/Makefile 491948 2019-02-02 11:48:21Z tobik $
 
 PORTNAME=	bingo
 DISTVERSIONPREFIX=	v
@@ -12,7 +12,7 @@ COMMENT=	Go language server
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	go>=1.11:lang/go
+BUILD_DEPENDS=	go>=1.11,1:lang/go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	saibing

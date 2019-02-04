@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/x11/terminal.app/Makefile 480741 2018-09-26 15:23:37Z brooks $
+# $FreeBSD: head/x11/terminal.app/Makefile 492056 2019-02-03 15:37:58Z theraven $
 
 PORTNAME=	terminal.app
 PORTVERSION=	0.9.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11 gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	Terminal-${PORTVERSION}

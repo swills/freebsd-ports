@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8/Makefile 490521 2019-01-16 22:34:49Z gerald $
+# $FreeBSD: head/lang/gcc8/Makefile 492106 2019-02-04 09:40:33Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	8.2.0
@@ -65,7 +65,7 @@ USE_GCC=	5	# This port requires at least GCC 4.9, and we need
 			# USE_GCC=yes or USE_GCC=X+ are not an option).
 
 .elif ${ARCH} == powerpcspe
-CONFIGURE_ARGS+=	--with-cpu=8540 --enable-e500_double --without-fp
+CONFIGURE_ARGS+=	--with-cpu=8548 --enable-e500_double --without-fp
 .endif
 
 LANGUAGES:=	c,c++,objc,fortran

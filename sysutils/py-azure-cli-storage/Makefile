@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-storage/Makefile 491431 2019-01-27 21:13:10Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-storage/Makefile 491785 2019-01-31 22:28:30Z dbaio $
 
 PORTNAME=	azure-cli-storage
-PORTVERSION=	2.3.0
+PORTVERSION=	2.3.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-filter/Makefile 465765 2018-03-27 21:50:51Z yuri $
+# $FreeBSD: head/www/py-django-filter/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	django-filter
 DISTVERSION=	1.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Dynamic filtering for querysets with Django
 
 LICENSE=	BSD3CLAUSE

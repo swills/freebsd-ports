@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 489958 2019-01-11 12:50:51Z mat $
+# $FreeBSD: head/Mk/Scripts/qa.sh 491833 2019-02-01 16:43:37Z tobik $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -366,11 +366,9 @@ proxydeps_suggest_uses() {
 		${pkg} = "audio/esound" -o \
 		${pkg} = "devel/gconf2" -o \
 		${pkg} = "devel/gconfmm26" -o \
-		${pkg} = "devel/glib12" -o \
 		${pkg} = "devel/glib20" -o \
 		${pkg} = "devel/glibmm" -o \
 		${pkg} = "audio/gsound" -o \
-		${pkg} = "x11-toolkits/gtk12" -o \
 		${pkg} = "x11-toolkits/gtk20" -o \
 		${pkg} = "x11-toolkits/gtk30" -o \
 		${pkg} = "www/gtkhtml3" -o \

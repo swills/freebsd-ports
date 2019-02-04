@@ -1,15 +1,15 @@
-# $FreeBSD: head/x11/wl-clipboard/Makefile 491348 2019-01-27 13:31:26Z tobik $
+# $FreeBSD: head/x11/wl-clipboard/Makefile 491990 2019-02-02 21:16:47Z jbeich $
 
 PORTNAME=	wl-clipboard
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.0-40
-DISTVERSIONSUFFIX=	-g46f21d2
+DISTVERSION=	1.0.0-43
+DISTVERSIONSUFFIX=	-g7f36466
 CATEGORIES=	x11 wayland
 
 MAINTAINER=	greg@unrelenting.technology
 COMMENT=	Command-line copy/paste utilities for Wayland
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	wayland-protocols>=1.12:graphics/wayland-protocols

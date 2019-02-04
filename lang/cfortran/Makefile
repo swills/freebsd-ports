@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/lang/cfortran/Makefile 374492 2014-12-10 22:29:14Z gahr $
+# $FreeBSD: head/lang/cfortran/Makefile 491933 2019-02-02 09:47:28Z tobik $
 
 PORTNAME=	cfortran
 PORTVERSION=	4.3
@@ -18,7 +18,7 @@ COMMENT=	Easy-to-use powerful bridge between C and FORTRAN
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	include/cfortran.h
 PORTDOCS=	*

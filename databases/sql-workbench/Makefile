@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <graudeejs@gmail.com>
-# $FreeBSD: head/databases/sql-workbench/Makefile 489346 2019-01-05 14:46:29Z zi $
+# $FreeBSD: head/databases/sql-workbench/Makefile 491939 2019-02-02 10:29:24Z tobik $
 
 PORTNAME=	sql-workbench
 PORTVERSION=	118
@@ -14,12 +14,11 @@ COMMENT=	DBMS-independent, cross-platform SQL query tool
 LICENSE=	APACHE20
 
 USES=		desktop-file-utils zip
-
 USE_JAVA=	yes
 JAVA_VERSION=	1.8+
-NO_BUILD=	yes
 
-WRKSRC=		${WRKDIR}
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 OPTIONS_DEFINE=	DOCS MYSQL_JDBC PGSQL_JDBC
 MYSQL_JDBC_RUN_DEPENDS=	${JAVALIBDIR}/mysql-connector-java.jar:databases/mysql-connector-java

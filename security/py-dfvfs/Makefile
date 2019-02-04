@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfvfs/Makefile 487916 2018-12-20 19:55:30Z antoine $
+# $FreeBSD: head/security/py-dfvfs/Makefile 492041 2019-02-03 09:57:47Z antoine $
 
 PORTNAME=	dfvfs
-PORTVERSION=	20181215
+PORTVERSION=	20190128
 CATEGORIES=	security devel python
 MASTER_SITES=	https://github.com/log2timeline/dfvfs/releases/download/${PORTVERSION}/ \
 		LOCAL/antoine

@@ -1,8 +1,7 @@
-# $FreeBSD: head/biology/py-loompy/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/py-loompy/Makefile 491995 2019-02-02 21:38:48Z yuri $
 
 PORTNAME=	loompy
-DISTVERSION=	2.0.16
-PORTREVISION=	1
+DISTVERSION=	2.0.17
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +19,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 
 USES=		python:3.6+
 USE_PYTHON=	distutils autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

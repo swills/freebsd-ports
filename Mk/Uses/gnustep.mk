@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/gnustep.mk 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/Mk/Uses/gnustep.mk 492056 2019-02-03 15:37:58Z theraven $
 #
 # Handle GNUstep related ports
 #
@@ -40,6 +40,14 @@ MAKE_ENV+=	ADDITIONAL_${a}="${ADDITIONAL_${a}} ${${a}}"
 MAKE_ENV+=	ADDITIONAL_${a}="${ADDITIONAL_${a}}"
 .endfor
 MAKE_ARGS+=messages=yes
+# BFD ld can't link Objective-C programs for some reason.  Most things are fine
+# with LLD, but the things that don't (e.g. sope) need gold.
+.if defined(LLD_UNSAFE)
+MAKE_ARGS+=LDFLAGS='-fuse-ld=gold'
+BUILD_DEPENDS+=         ${LOCALBASE}/bin/ld.gold:devel/binutils
+.else
+MAKE_ARGS+=LDFLAGS='-fuse-ld=${OBJC_LLD}'
+.endif
 
 MAKEFILE=	GNUmakefile
 #MAKE_ENV+=	GNUSTEP_CONFIG_FILE=${PORTSDIR}/devel/gnustep-make/files/GNUstep.conf

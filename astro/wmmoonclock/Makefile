@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kkennawa@physics.adelaide.edu.au>
-# $FreeBSD: head/astro/wmmoonclock/Makefile 429499 2016-12-26 11:59:12Z rene $
+# $FreeBSD: head/astro/wmmoonclock/Makefile 491964 2019-02-02 17:34:27Z tobik $
 
 PORTNAME=	wmMoonClock
 PORTVERSION=	1.27
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/files/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Displays the phase of the moon, plus orbital data
 
 LICENSE=	GPLv2

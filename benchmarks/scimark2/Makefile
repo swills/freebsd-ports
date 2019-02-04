@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/benchmarks/scimark2/Makefile 350258 2014-04-05 19:05:58Z thierry $
+# $FreeBSD: head/benchmarks/scimark2/Makefile 491940 2019-02-02 10:30:05Z tobik $
 
 PORTNAME=	scimark2
 PORTVERSION=	2.0
@@ -12,8 +12,6 @@ DISTNAME=	${PORTNAME}src
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Java benchmark for scientific and numerical computing
 
-WRKSRC=		${WRKDIR}
-
 USES=		zip
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
@@ -25,6 +23,7 @@ SMDIR=		${PREFIX}/${LSMDIR}
 
 SMSH=		${PORTNAME}${PKGNAMESUFFIX}
 
+NO_WRKSUBDIR=	yes
 PLIST_SUB=	SMDIR=${LSMDIR}
 SUB_FILES=	pkg-message
 SUB_LIST=	SMSH=${SMSH}

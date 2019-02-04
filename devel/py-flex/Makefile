@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-flex/Makefile 472752 2018-06-19 02:29:18Z yuri $
+# $FreeBSD: head/devel/py-flex/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	flex
 DISTVERSION=	6.13.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Swagger schema validation
 
 LICENSE=	MIT

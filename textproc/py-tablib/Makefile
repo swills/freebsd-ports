@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-tablib/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/textproc/py-tablib/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	tablib
 DISTVERSION=	0.12.1
@@ -7,7 +7,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Format agnostic tabular data library (XLS, JSON, YAML, CSV)
 
 LICENSE=	MIT

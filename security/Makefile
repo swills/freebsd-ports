@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 491641 2019-01-30 19:06:55Z swills $
+# $FreeBSD: head/security/Makefile 492047 2019-02-03 11:15:42Z tcberner $
 #
 
     COMMENT = Security tools
@@ -926,6 +926,7 @@
     SUBDIR += py-certbot-nginx
     SUBDIR += py-certifi
     SUBDIR += py-certstream
+    SUBDIR += py-ckcc-protocol
     SUBDIR += py-cpe
     SUBDIR += py-cracklib
     SUBDIR += py-cryptkit
@@ -959,6 +960,7 @@
     SUBDIR += py-htpasswd
     SUBDIR += py-itsdangerous
     SUBDIR += py-josepy
+    SUBDIR += py-keepkey
     SUBDIR += py-kerberos
     SUBDIR += py-keyczar
     SUBDIR += py-keyring
@@ -982,6 +984,7 @@
     SUBDIR += py-ospd
     SUBDIR += py-paramiko
     SUBDIR += py-paramiko1
+    SUBDIR += py-pass-audit
     SUBDIR += py-passlib
     SUBDIR += py-pbkdf2
     SUBDIR += py-pgpdump

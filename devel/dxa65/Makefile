@@ -1,8 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/dxa65/Makefile 444874 2017-07-02 09:00:17Z amdmi3 $
+# $FreeBSD: head/devel/dxa65/Makefile 491979 2019-02-02 19:44:13Z fernape $
 
 PORTNAME=	dxa
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.floodgap.com/retrotech/xa/dists/
 PKGNAMESUFFIX=	65

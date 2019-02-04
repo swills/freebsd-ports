@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-keystone-engine/Makefile 480010 2018-09-18 11:01:50Z linimon $
+# $FreeBSD: head/devel/py-keystone-engine/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	keystone-engine
 DISTVERSION=	0.9.1-3
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Keystone Assembler Engine with Python bindings
 
 LICENSE=	BSD3CLAUSE

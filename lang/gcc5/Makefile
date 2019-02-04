@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/lang/gcc5/Makefile 492106 2019-02-04 09:40:33Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	5.5.0
@@ -68,7 +68,7 @@ MAKE_ARGS+=STAGE1_CXXFLAGS=-fbracket-depth=512
 CONFIGURE_ENV+=	UNAME_m="powerpc64"
 
 .elif ${ARCH} == powerpcspe
-CONFIGURE_ARGS+=	--with-cpu=8540 --enable-e500_double --without-fp
+CONFIGURE_ARGS+=	--with-cpu=8548 --enable-e500_double --without-fp
 .endif
 
 LANGUAGES:=	c,c++,objc,fortran

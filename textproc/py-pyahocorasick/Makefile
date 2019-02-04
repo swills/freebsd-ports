@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-pyahocorasick/Makefile 475537 2018-07-28 12:11:27Z miwi $
+# $FreeBSD: head/textproc/py-pyahocorasick/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	pyahocorasick
 DISTVERSION=	1.1.8
@@ -6,7 +6,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Python and C implementation of the Aho-Corasick algorithm
 
 LICENSE=	BSD3CLAUSE

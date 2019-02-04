@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/sysutils/screen/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/sysutils/screen/Makefile 492098 2019-02-04 06:10:03Z cy $
 
 PORTNAME=	screen
 PORTVERSION=	4.6.2
@@ -56,6 +56,7 @@ LDFLAGS+=	-L${NCURSESLIB}
 .if ${PORT_OPTIONS:MMAN}
 MAKE_ARGS+=	WITH_MAN=1
 PLIST_SUB+=	MAN=""
+USES+=		groff
 .else
 PLIST_SUB+=	MAN="@comment"
 .endif

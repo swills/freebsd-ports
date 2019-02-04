@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-taggit/Makefile 491578 2019-01-29 16:18:37Z miwi $
+# $FreeBSD: head/www/py-django-taggit/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	django-taggit
 PORTVERSION=	0.23.0
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Reusable Django application for simple tagging
 
 LICENSE=	BSD3CLAUSE

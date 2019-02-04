@@ -1,5 +1,5 @@
 # Created by: Shawn Bell <decept@gmail.com>
-# $FreeBSD: head/x11-themes/cursor-polar-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
+# $FreeBSD: head/x11-themes/cursor-polar-theme/Makefile 491917 2019-02-02 06:57:27Z tobik $
 
 PORTNAME=	polar-theme
 PORTVERSION=	1.4
@@ -12,10 +12,10 @@ DISTNAME=	27913-PolarCursorThemes
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Polar is a smooth and simple cursor set
 
-NO_BUILD=	yes
 USES=	tar:bzip2
 
-WRKSRC=		${WRKDIR}
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/polar/cursors

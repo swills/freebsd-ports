@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/materialdesign-ttf/Makefile 490066 2019-01-12 17:16:07Z miwi $
+# $FreeBSD: head/x11-fonts/materialdesign-ttf/Makefile 492131 2019-02-04 13:38:15Z miwi $
 
 PORTNAME=	materialdesign
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.3.92
+DISTVERSION=	3.4.93
 CATEGORIES=	x11-fonts
 PKGNAMESUFFIX=	-ttf
 

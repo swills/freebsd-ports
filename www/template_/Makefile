@@ -1,5 +1,5 @@
 # Created by: Mun-Kyo Seo <munggo@pmy.lv>
-# $FreeBSD: head/www/template_/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/www/template_/Makefile 491915 2019-02-02 06:47:15Z tobik $
 
 PORTNAME=	template_
 PORTVERSION=	2.2.3
@@ -12,7 +12,6 @@ COMMENT=	High performance PHP compiling template engine
 
 LICENSE=	LGPL20+
 
-WRKSRC=		${WRKDIR}
 FETCH_ARGS+=	-o ${DISTNAME}.tar.gz
 
 USES=		php:web

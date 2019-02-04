@@ -1,5 +1,5 @@
 # Created by: Lapo Luchini <lapo@lapo.it>
-# $FreeBSD: head/security/hamachi/Makefile 480383 2018-09-22 13:09:51Z riggs $
+# $FreeBSD: head/security/hamachi/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	hamachi
 DISTVERSION=	0.9.9.9-20
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast, secure, simple VPN software with NAT-traversal
 
 BROKEN=		fails to patch with upx 3.94
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 ONLY_FOR_ARCHS=	amd64 i386
 
 PATCH_DEPENDS=	upx:archivers/upx

@@ -1,24 +1,23 @@
-# $FreeBSD: head/x11-fonts/comic-neue/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/x11-fonts/comic-neue/Makefile 491806 2019-02-01 13:04:31Z swills $
 
 PORTNAME=	comic-neue
-PORTVERSION=	1.1
-PORTREVISION=	2
+PORTVERSION=	2.4
 CATEGORIES=	x11-fonts
-MASTER_SITES=	http://comicneue.com/
+MASTER_SITES=	https://github.com/crozynski/comicneue/archive/v${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free Comic Sans alternative
 
-LICENSE=	CC0-1.0
+LICENSE=	OFL11
+LICENSE_FILE=	${WRKDIR}/comicneue-${PORTVERSION}/SIL-License.txt
 
 USES=		fonts zip
-NO_BUILD=	yes
 
-SUB_FILES=	pkg-message
-WRKSRC=		${WRKDIR}/${DISTNAME}
+NO_BUILD=	yes
+WRKSRC=		${WRKDIR}/comicneue-${PORTVERSION}/OTF
 
 do-install:
 	${MKDIR} ${STAGEDIR}${FONTSDIR}
-	${INSTALL_DATA} ${WRKSRC}/*.ttf ${STAGEDIR}${FONTSDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.otf ${STAGEDIR}${FONTSDIR}
 
 .include <bsd.port.mk>

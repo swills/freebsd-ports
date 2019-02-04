@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/clisp-hyperspec/Makefile 357013 2014-06-08 13:14:42Z olgeni $
+# $FreeBSD: head/devel/clisp-hyperspec/Makefile 491938 2019-02-02 10:28:35Z tobik $
 
 PORTNAME=	clisp-hyperspec
 PORTVERSION=	7.0
@@ -11,8 +11,8 @@ COMMENT=	Common Lisp reference in HTML format, from LispWorks Ltd
 
 NO_CDROM=	Commercial redistribution prohibited
 
-WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

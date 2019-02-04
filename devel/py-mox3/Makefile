@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-mox3/Makefile 471391 2018-06-02 18:45:34Z miwi $
+# $FreeBSD: head/devel/py-mox3/Makefile 491837 2019-02-01 18:55:18Z kai $
 
 PORTNAME=	mox3
 DISTVERSION=	0.25.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	freebsd_ports@k-worx.org
+MAINTAINER=	kai@FreeBSD.org
 COMMENT=	Fork of mox with Python 3 support
 
 LICENSE=	APACHE20

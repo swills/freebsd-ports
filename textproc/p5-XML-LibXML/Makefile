@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-LibXML/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-XML-LibXML/Makefile 492011 2019-02-02 21:56:08Z sunpoet $
 
 PORTNAME=	XML-LibXML
-PORTVERSION=	2.0132
+PORTVERSION=	2.0133
 PORTEPOCH=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
@@ -20,14 +20,14 @@ RUN_DEPENDS=	p5-XML-NamespaceSupport>=1.07:textproc/p5-XML-NamespaceSupport \
 TEST_DEPENDS=	p5-Test-LeakTrace>=0:devel/p5-Test-LeakTrace \
 		p5-URI>=0:net/p5-URI
 
-USES=		perl5
+USES=		gnome perl5
 USE_GNOME=	libxml2
 USE_PERL5=	configure
-CONFIGURE_ENV=	XMLPREFIX=${LOCALBASE}
 
+CONFIGURE_ENV=	XMLPREFIX=${LOCALBASE}
 PKGDEINSTALL=	${PKGINSTALL}
 
-CONFLICTS=	p5-XML-LibXML-XPathContext-[0-9]* p5-XML-LibXML-Common-[0-9]*
+CONFLICTS_INSTALL=	p5-XML-LibXML-XPathContext p5-XML-LibXML-Common
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/XML/LibXML/LibXML.so

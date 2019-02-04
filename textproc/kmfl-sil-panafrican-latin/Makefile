@@ -1,5 +1,5 @@
 # Created by: Nikola Lecic <nikola.lecic@anthesphoria.net>
-# $FreeBSD: head/textproc/kmfl-sil-panafrican-latin/Makefile 417110 2016-06-19 11:25:29Z mat $
+# $FreeBSD: head/textproc/kmfl-sil-panafrican-latin/Makefile 491918 2019-02-02 07:07:17Z tobik $
 
 PORTNAME=	kmfl-sil-panafrican-latin
 PORTVERSION=	20090831
@@ -16,11 +16,12 @@ COMMENT=	KMFL keyboard for African Latin writing systems
 
 RUN_DEPENDS=	kmflcomp:textproc/kmflcomp
 
-WRKSRC=		${WRKDIR}
 USES=		dos2unix zip
 DOS2UNIX_FILES=	PanAfricaMnemonic/AfricaDeadKey.kmn \
 		PanAfricaUSlayout/AfricaUS.kmn
+
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 
 OPTIONS_DEFINE=	DOCS
 DOCSDIR=	share/doc/kmfl/${PORTNAME}

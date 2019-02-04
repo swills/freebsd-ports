@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/mail/ez-pine-gpg/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/mail/ez-pine-gpg/Makefile 491964 2019-02-02 17:34:27Z tobik $
 
 PORTNAME=	ez-pine-gpg
 DISTVERSION=	0.4h
@@ -8,7 +8,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://business-php.com/opensource/ez-pine-gpg/
 DISTNAME=	${PORTNAME}_v${DISTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Set of scripts to use gpg with Pine
 
 LICENSE=	GPLv2+

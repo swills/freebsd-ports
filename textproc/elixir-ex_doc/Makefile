@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	ex_doc
 PORTVERSION=	0.18.4
@@ -13,6 +13,8 @@ LICENSE=	APACHE20 MIT
 LICENSE_COMB=	multi
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 USES=		elixir
 USE_GITHUB=	yes

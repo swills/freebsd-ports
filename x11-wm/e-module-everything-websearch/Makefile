@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11-wm/e-module-everything-websearch/Makefile 474410 2018-07-10 20:42:59Z gblach $
+# $FreeBSD: head/x11-wm/e-module-everything-websearch/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	e-module-everything-websearch
 PORTVERSION=	20140818
@@ -12,6 +12,8 @@ MAINTAINER=	enlightenment@FreeBSD.org
 COMMENT=	Enlightenment websearch plugin for the "everything" module
 
 BROKEN=		Not compatible with Enlightenment 0.22
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 BUILD_DEPENDS=	enlightenment:x11-wm/enlightenment
 RUN_DEPENDS=	enlightenment:x11-wm/enlightenment

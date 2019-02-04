@@ -1,5 +1,5 @@
 # Created by: mandree@FreeBSD.org
-# $FreeBSD: head/net-im/pidgin-skype/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/pidgin-skype/Makefile 492077 2019-02-03 20:46:35Z antoine $
 
 PORTNAME=	pidgin-skype
 PORTVERSION=	0.0.0.664
@@ -12,6 +12,9 @@ MAINTAINER=	mandree@FreeBSD.org
 COMMENT=	Plugin to use Skype chat from Pidgin (with Skype running)
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-03-05
 
 BUILD_DEPENDS=	${LOCALBASE}/include/pidgin/pidgin.h:net-im/pidgin \
     ${LOCALBASE}/bin/skype:net-im/skype
