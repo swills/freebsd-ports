@@ -36,6 +36,7 @@
     SUBDIR += fastqc
     SUBDIR += fasttree
     SUBDIR += fastx-toolkit
+    SUBDIR += figtree
     SUBDIR += fluctuate
     SUBDIR += freebayes
     SUBDIR += garlic
@@ -43,6 +44,7 @@
     SUBDIR += gff2ps
     SUBDIR += gmap
     SUBDIR += gperiodic
+    SUBDIR += graphlan
     SUBDIR += grappa
     SUBDIR += groopm
     SUBDIR += hisat2
