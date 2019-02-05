@@ -3,7 +3,6 @@
 
 PORTNAME=	pioneer
 DISTVERSION=	0.0.${GH_TAGNAME}
-PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	lightside@gmx.com
@@ -34,42 +33,30 @@ LIB_DEPENDS=	libsigc-2.0.so:devel/libsigc++20 \
 		libpng.so:graphics/png \
 		libassimp.so:multimedia/assimp
 
-USES=		autoreconf compiler:c++11-lib gmake pkgconfig
+USES=		cmake compiler:c++11-lib gl localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	pioneerspacesim
-GH_TAGNAME=	20180203
+GH_TAGNAME=	20190203
 USE_GL=		gl
 USE_SDL=	image2 sdl2
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	PIONEER_DATA_DIR="${DATADIR}/data"
-CONFIGURE_ARGS=	--with-version="${GH_TAGNAME}"
+CMAKE_ARGS=	-DPIONEER_DATA_DIR:PATH="${DATADIR}/data"
 EXTRACT_AFTER_ARGS=	--no-same-owner --no-same-permissions --exclude .gitignore
+INSTALLS_ICONS=	yes
 
 PORTDATA=	data
 PORTDOCS=	AUTHORS.txt Changelog.txt Modelviewer.txt Quickstart.txt README.md
 
-PLIST_FILES=	bin/${PORTNAME} \
-		share/pixmaps/${PORTNAME}.png
-
-DESKTOP_ENTRIES="Pioneer" "${COMMENT}" \
-		"${PORTNAME}" "${PORTNAME}" \
-		"Game;Simulation;" false
-
 SUB_FILES=	pkg-message
 
-OPTIONS_DEFINE=		DOCS MODELCOMPILER NOGPUJOBS PROFILER SERVERAGENT
-OPTIONS_DEFAULT=	MODELCOMPILER
+OPTIONS_DEFINE=		DOCS NOGPUJOBS OPTMODELS PROFILER
+OPTIONS_DEFAULT=	OPTMODELS
 DOCS_SUB_LIST=		QUICKSTART_PATH="${DOCSDIR}"
 DOCS_SUB_LIST_OFF=	QUICKSTART_PATH="https://raw.githubusercontent.com/${GH_ACCOUNT}/${GH_PROJECT}/${GH_TAGNAME}"
-MODELCOMPILER_DESC=	Build/install modelcompiler tool
-MODELCOMPILER_PLIST_FILES=	bin/${PORTNAME}-modelcompiler
 NOGPUJOBS_DESC=		Disable EnableGPUJobs for config.ini by default
+OPTMODELS_DESC=		Build/install optimized models (*.sgm files)
 PROFILER_DESC=		Build with internal profiler
-PROFILER_CONFIGURE_ON=	--enable-profiler
-SERVERAGENT_DESC=	Build with server agent
-SERVERAGENT_CONFIGURE_WITH=	server-agent
-SERVERAGENT_LIB_DEPENDS=	libcurl.so:ftp/curl
+PROFILER_CXXFLAGS=	-DPIONEER_PROFILER
 
 .include <bsd.port.pre.mk>
 
@@ -79,12 +66,12 @@ CXXFLAGS+=	-D_GLIBCXX_USE_C99
 .endif
 
 post-patch: .SILENT
-	${REINPLACE_CMD} -e '/^OPTIMISE=/d' \
-		${WRKSRC}/configure.ac
-
-post-patch-MODELCOMPILER-off: .SILENT
-	${REINPLACE_CMD} -e 's/pioneer modelcompiler/pioneer/' \
-		${WRKSRC}/src/Makefile.am
+	${REINPLACE_CMD} -e '/^target_link_libraries(/,/)$$/d' \
+		${WRKSRC}/contrib/imgui/CMakeLists.txt
+	${REINPLACE_CMD} -e '/^include(FindGit/d ; \
+		/TIMESTAMP/s|.*|set(PROJECT_VERSION "${GH_TAGNAME}")| ; \
+		s|$${OPENGL_LIBRARIES}|OpenGL::GL|' \
+		${WRKSRC}/CMakeLists.txt
 
 post-patch-NOGPUJOBS-on: .SILENT
 # Revert 41272a856d9072404efbfdb10f0e3c9e4f96bb4d commit, in case of
@@ -92,24 +79,26 @@ post-patch-NOGPUJOBS-on: .SILENT
 	${REINPLACE_CMD} -e '/EnableGPUJobs/s|1|0|' \
 		 ${WRKSRC}/src/GameConfig.cpp
 
+post-patch-OPTMODELS-off: .SILENT
+	${REINPLACE_CMD} -i '.optmodels' -e '/modelcompiler POST_BUILD$$/,/)$$/d' \
+		${WRKSRC}/CMakeLists.txt
+
 post-patch-PROFILER-off: .SILENT
-	${REINPLACE_CMD} -e '/^SUBDIRS/s/ profiler//' \
-		${WRKSRC}/contrib/Makefile.am
-	${REINPLACE_CMD} -i '.p.bak' -e \
-		'/libprofiler.a/d; $$!N; /libprofiler.a$$/s| \\||; P; D' \
-		${WRKSRC}/src/Makefile.am
-	${REINPLACE_CMD} -i '.p.bak' -e '/contrib\/profiler/d' \
-		${WRKSRC}/configure.ac
+	${REINPLACE_CMD} -i '.profiler' -e '/contrib\/profiler/d ; /profiler$$/d' \
+		${WRKSRC}/CMakeLists.txt
+
+post-patch-PROFILER-on: .SILENT
+	${REINPLACE_CMD} -i '.profiler' -e '\
+		/^target_link_libraries(savegamedump/s|LINK_PRIVATE |&profiler |' \
+		${WRKSRC}/CMakeLists.txt
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/application-icon/pngs/pioneer-256x256.png \
-		${STAGEDIR}${PREFIX}/share/pixmaps/${PORTNAME}.png
+.for f in modelcompiler savegamedump
+	${MV} ${STAGEDIR}${PREFIX}/bin/${f} \
+		${STAGEDIR}${PREFIX}/bin/${PORTNAME}-${f}
+.endfor
 
 post-install-DOCS-on:
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} "${PORTDOCS}" ${STAGEDIR}${DOCSDIR})
-
-post-install-MODELCOMPILER-on:
-	${MV} ${STAGEDIR}${PREFIX}/bin/modelcompiler \
-		${STAGEDIR}${PREFIX}/bin/${PORTNAME}-modelcompiler
 
 .include <bsd.port.post.mk>
