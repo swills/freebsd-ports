@@ -693,6 +693,7 @@
     SUBDIR += mkntpwd
     SUBDIR += mksunbootcd
     SUBDIR += mmc-utils
+    SUBDIR += mmve
     SUBDIR += mnrpes
     SUBDIR += modman
     SUBDIR += modules
@@ -753,6 +754,7 @@
     SUBDIR += npadmin
     SUBDIR += nq
     SUBDIR += nrg2iso
+    SUBDIR += ntfy
     SUBDIR += nut
     SUBDIR += nvclock
     SUBDIR += nvme-cli
