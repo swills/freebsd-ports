@@ -4,7 +4,7 @@
 PORTNAME=	wmsun
 PORTVERSION=	1.12
 CATEGORIES=	astro windowmaker
-MASTER_SITES=	http://linux-bsd-unix.strefa.pl/
+MASTER_SITES=	http://ponce.cc/slackware/sources/repo/
 DISTNAME=	wmSun-${PORTVERSION}
 
 MAINTAINER=	mbeis@xs4all.nl
