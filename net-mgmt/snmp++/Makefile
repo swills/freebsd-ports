@@ -1,5 +1,5 @@
 # Created by: nicolai@catpipe.net
-# $FreeBSD: head/net-mgmt/snmp++/Makefile 461551 2018-02-12 04:54:25Z yuri $
+# $FreeBSD: head/net-mgmt/snmp++/Makefile 492281 2019-02-06 00:25:29Z linimon $
 
 PORTNAME=	snmp++
 PORTVERSION=	3.3.0
@@ -15,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 MAKEFILE=	Makefile.FreeBSD
 WRKSRC=		${WRKDIR}/${PORTNAME}/src
 
-USES=		gmake ssl:build
+USES=		compiler:c++11-lang gmake ssl:build
 USE_LDCONFIG=	yes
 MAKE_ARGS=	CC="${CXX}" PORTOPTS="-I${OPENSSLINC} -L${OPENSSLLIB}"
 

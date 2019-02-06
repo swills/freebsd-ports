@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/swayidle/Makefile 491530 2019-01-29 00:47:06Z jbeich $
+# $FreeBSD: head/x11/swayidle/Makefile 492204 2019-02-05 12:51:56Z jbeich $
 
 PORTNAME=	swayidle
-DISTVERSION=	1.1-18
-DISTVERSIONSUFFIX=	-gd18c7cb
+DISTVERSION=	1.2
 CATEGORIES=	x11
 
 MAINTAINER=	jbeich@FreeBSD.org

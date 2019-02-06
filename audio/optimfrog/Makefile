@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/optimfrog/Makefile 434816 2017-02-25 14:50:28Z rezny $
+# $FreeBSD: head/audio/optimfrog/Makefile 492170 2019-02-04 21:44:58Z rene $
 
 PORTNAME=	optimfrog
 PORTVERSION=	5.100
@@ -6,7 +6,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://losslessaudio.org/Downloads/A1C0/${DISTVERSION:S/.//}/FreeBSD/
 DISTNAME=	# OptimFROG_FreeBSD_${ARCH}_${DISTVERSION:S/.//}
 
-MAINTAINER=	rezny@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT?=	Best-ratio lossless audio codec
 
 LICENSE=	OptimFROG

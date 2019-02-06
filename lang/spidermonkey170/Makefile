@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey170/Makefile 469096 2018-05-05 08:33:58Z amdmi3 $
+# $FreeBSD: head/lang/spidermonkey170/Makefile 492251 2019-02-05 15:42:54Z tobik $
 
 PORTNAME=		spidermonkey170
 PORTVERSION=		17.0.0
@@ -37,7 +37,6 @@ OPTIONS_EXCLUDE_armv7=	DTRACE
 OPTIONS_SUB=		yes
 
 DEBUG_CONFIGURE_ENABLE=	debug debug-symbols
-DEBUG_CONFIGURE_DISABLE=debug
 DTRACE_DESC=		Build with DTrace probes # move to bsd.options.desc.mk
 DTRACE_CONFIGURE_ENABLE=dtrace profiling
 DTRACE_LIBS=		-lelf

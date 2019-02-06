@@ -1,9 +1,10 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-im/tox/Makefile 490135 2019-01-13 14:03:42Z thierry $
+# $FreeBSD: head/net-im/tox/Makefile 492305 2019-02-06 13:33:13Z jbeich $
 
 PORTNAME=	toxcore
 PORTVERSION=	0.2.9
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net-im net-p2p
 

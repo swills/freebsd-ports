@@ -1,10 +1,9 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/sysutils/lnav/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/lnav/Makefile 492176 2019-02-04 22:51:52Z swills $
 
 PORTNAME=	lnav
-PORTVERSION=	0.8.2
+PORTVERSION=	0.8.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	tom@hur.st
@@ -14,10 +13,11 @@ LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libpcrecpp.so:devel/pcre
 
+USES=		autoreconf compiler:c++14-lang gmake ncurses sqlite readline
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	tstack
 
-USES=		autoreconf compiler:c++14-lang gmake ncurses sqlite readline
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 

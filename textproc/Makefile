@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 492093 2019-02-04 00:06:11Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 492236 2019-02-05 14:26:41Z sunpoet $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -435,6 +435,7 @@
     SUBDIR += liblrdf
     SUBDIR += libmrss
     SUBDIR += libmwaw03
+    SUBDIR += libnumbertext
     SUBDIR += libnxml
     SUBDIR += libodfgen01
     SUBDIR += libparsifal
@@ -1370,6 +1371,7 @@
     SUBDIR += py-pygtail
     SUBDIR += py-pyhamcrest
     SUBDIR += py-pyhwp
+    SUBDIR += py-pyjade
     SUBDIR += py-pylons-sphinx-themes
     SUBDIR += py-pypa-docs-theme
     SUBDIR += py-pypandoc

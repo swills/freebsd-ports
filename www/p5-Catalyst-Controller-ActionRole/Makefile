@@ -1,5 +1,5 @@
 # Created by: mons
-# $FreeBSD: head/www/p5-Catalyst-Controller-ActionRole/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Catalyst-Controller-ActionRole/Makefile 492293 2019-02-06 09:00:44Z amdmi3 $
 
 PORTNAME=	Catalyst-Controller-ActionRole
 PORTVERSION=	0.15
@@ -11,6 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mons@cpan.org
 COMMENT=	Apply roles to action instances
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Catalyst-Runtime>=5.71001:www/p5-Catalyst-Runtime \
 		p5-Moose>=2:devel/p5-Moose \
@@ -20,5 +24,6 @@ RUN_DEPENDS=	p5-Catalyst-Runtime>=5.71001:www/p5-Catalyst-Runtime \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 491568 2019-01-29 14:56:44Z jhixson $
+# $FreeBSD: head/dns/Makefile 492267 2019-02-05 18:24:07Z pi $
 #
 
     COMMENT = Domain Name Service tools
@@ -72,6 +72,7 @@
     SUBDIR += ez-ipupdate
     SUBDIR += fastresolve
     SUBDIR += firedns
+    SUBDIR += flamethrower
     SUBDIR += fpdns
     SUBDIR += gdnsd
     SUBDIR += gdnsd2

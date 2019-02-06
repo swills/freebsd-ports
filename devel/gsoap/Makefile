@@ -1,8 +1,8 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/devel/gsoap/Makefile 488838 2018-12-31 20:55:35Z bofh $
+# $FreeBSD: head/devel/gsoap/Makefile 492287 2019-02-06 06:59:38Z bofh $
 
 PORTNAME=	gsoap
-PORTVERSION=	2.8.74
+PORTVERSION=	2.8.78
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}2/gsoap-2.8
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -12,7 +12,7 @@ COMMENT=	Generator Tools for Coding SOAP/XML Web Services in C and C++
 
 LICENSE=	GPLv2
 
-USES=		autoreconf pathfix zip
+USES=		autoreconf pathfix ssl zip
 
 CONFIGURE_ENV=	LEX=flex YACC=yacc
 GNU_CONFIGURE=	yes

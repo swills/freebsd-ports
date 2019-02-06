@@ -1,7 +1,8 @@
 # Created by: ports@nicandneal.net
-# $FreeBSD: head/devel/nimble/Makefile 483803 2018-11-02 13:01:46Z 0mp $
+# $FreeBSD: head/devel/nimble/Makefile 492201 2019-02-05 12:46:16Z swills $
 
 PORTNAME=	nimble
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.0
 CATEGORIES=	devel
@@ -21,7 +22,7 @@ GH_ACCOUNT=	nim-lang
 PLIST_FILES=	bin/nimble
 
 do-build:
-	@cd ${WRKSRC} && nim c --parallelBuild=${MAKE_JOBS_NUMBER} --path:${LOCALBASE}/nim src/nimble
+	@cd ${WRKSRC} && nim c --parallelBuild=${MAKE_JOBS_NUMBER} --path:${LOCALBASE}/nim --nimcache:${WRKSRC}/nimcache src/nimble
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/nimble ${STAGEDIR}${PREFIX}/bin

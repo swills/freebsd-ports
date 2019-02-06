@@ -1,8 +1,8 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/dns/unbound/Makefile 488471 2018-12-26 22:20:22Z swills $
+# $FreeBSD: head/dns/unbound/Makefile 492239 2019-02-05 14:27:03Z sunpoet $
 
 PORTNAME=	unbound
-PORTVERSION=	1.8.3
+PORTVERSION=	1.9.0
 CATEGORIES=	dns
 MASTER_SITES=	https://www.nlnetlabs.nl/downloads/unbound/ \
 		https://distfiles.crux.guru/
@@ -13,8 +13,7 @@ COMMENT=	Validating, recursive, and caching DNS resolver
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libexpat.so:textproc/expat2 \
-		libldns.so:dns/ldns
+LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 USES=		autoreconf cpe libtool pkgconfig ssl
 

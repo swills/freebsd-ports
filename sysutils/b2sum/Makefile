@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/b2sum/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/b2sum/Makefile 492170 2019-02-04 21:44:58Z rene $
 
 PORTNAME=	b2sum
 PORTVERSION=	0.0.d${B2VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils security
 MASTER_SITES=	http://blake2.net/
 DISTNAME=	blake2_code_${B2VERSION}${EXTRACT_SUFFX}
 
-MAINTAINER=	rezny@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast secure hashing
 
 LICENSE=	CC0-1.0

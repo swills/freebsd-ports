@@ -1,5 +1,5 @@
 # Created by: Matt Peterson <matt@peterson.org>
-# $FreeBSD: head/net-mgmt/collectd5/Makefile 488005 2018-12-21 14:21:26Z rene $
+# $FreeBSD: head/net-mgmt/collectd5/Makefile 492251 2019-02-05 15:42:54Z tobik $
 
 PORTNAME=	collectd
 PORTVERSION=	5.8.1
@@ -201,7 +201,6 @@ OPENLDAP_CONFIGURE_WITH=	libldap=${LOCALBASE}
 
 PERL_USES=			perl5
 PERL_CONFIGURE_ENABLE=		perl
-PERL_CONFIGURE_DISABLE=		perl
 PERL_CONFIGURE_WITH=		perl=${PERL} perl-bindings libperl
 
 PGSQL_USES=			pgsql

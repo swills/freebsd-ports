@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/py-pass-audit/Makefile 492047 2019-02-03 11:15:42Z tcberner $
+# $FreeBSD: head/security/py-pass-audit/Makefile 492193 2019-02-05 07:42:19Z tobik $
 
 PORTNAME=	pass-audit
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/roddhjav/${PORTNAME}/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -25,6 +26,9 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 
 SHEBANG_FILES=	${WRKSRC}/pass_audit.py
+
+post-patch:
+	@${REINPLACE_CMD} -e 's:\<python3\>:${PYTHON_CMD}:g' ${WRKSRC}/audit.bash
 
 pre-install:
 	${INSTALL_MAN} ${WRKSRC}/pass-audit.1 \

@@ -1,5 +1,5 @@
 # Created by: Heiner Strauss <heiner@bilch.com>
-# $FreeBSD: head/finance/aqmoney/Makefile 483999 2018-11-04 12:02:29Z antoine $
+# $FreeBSD: head/finance/aqmoney/Makefile 492282 2019-02-06 00:27:17Z meta $
 
 PORTNAME=	aqmoney
 PORTVERSION=	0.6.3
@@ -10,6 +10,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Manage your credit institute accounts using openhbci
 
 BROKEN=		fails to build
+DEPRECATED=	no longer maintained upstream
+EXPIRATION_DATE=	2019-03-31
 
 LIB_DEPENDS=	libopenhbci.so:finance/openhbci
 

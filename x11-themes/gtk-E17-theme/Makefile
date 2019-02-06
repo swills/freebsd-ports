@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/gtk-E17-theme/Makefile 439206 2017-04-23 08:35:28Z kwm $
+# $FreeBSD: head/x11-themes/gtk-E17-theme/Makefile 492170 2019-02-04 21:44:58Z rene $
 
 PORTNAME=	E17
 PORTVERSION=	3.22.1
@@ -8,7 +8,7 @@ CATEGORIES=	x11-themes enlightenment
 PKGNAMEPREFIX=	gtk-
 PKGNAMESUFFIX=	-theme
 
-MAINTAINER=	rezny@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dark GTK theme for Enlightenment
 
 LICENSE=	GPLv3+

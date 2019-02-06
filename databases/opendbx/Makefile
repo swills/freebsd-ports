@@ -1,5 +1,5 @@
 # Created by: tremere@cainites.net
-# $FreeBSD: head/databases/opendbx/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/opendbx/Makefile 492294 2019-02-06 09:05:03Z mat $
 
 PORTNAME=	opendbx
 PORTVERSION=	1.4.6
@@ -45,7 +45,6 @@ MSSQL_LIB_DEPENDS=	libsybdb.so:databases/freetds
 SYBASE_LIB_DEPENDS=	libct.so:databases/freetds
 
 NLS_USES=		gettext
-NLS_CONFIGURE_DISABLE=	nls
 
 .include <bsd.port.options.mk>
 

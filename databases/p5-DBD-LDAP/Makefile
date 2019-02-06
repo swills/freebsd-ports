@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/databases/p5-DBD-LDAP/Makefile 492092 2019-02-04 00:04:41Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-LDAP/Makefile 492221 2019-02-05 13:48:57Z sunpoet $
 
 PORTNAME=	DBD-LDAP
-PORTVERSION=	0.24
+PORTVERSION=	1.00
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

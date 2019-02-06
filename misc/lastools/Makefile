@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/lastools/Makefile 483360 2018-10-29 00:04:39Z yuri $
+# $FreeBSD: head/misc/lastools/Makefile 492279 2019-02-06 00:10:49Z linimon $
 
 PORTNAME=	LAStools
 DISTVERSION=	g20181019
@@ -9,7 +9,7 @@ COMMENT=	Efficient tools for LiDAR processing
 
 LICENSE=	LGPL21
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 USE_GITHUB=	yes
 GH_TAGNAME=	8ff2694
 

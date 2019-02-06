@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 491892 2019-02-01 23:43:30Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 492180 2019-02-05 00:50:03Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.6-7776 # git rev-list --count HEAD
-DISTVERSIONSUFFIX=	-g8920eda32
+DISTVERSION=	0.0.6-7788 # git rev-list --count HEAD
+DISTVERSIONSUFFIX=	-g4c593959f
 CATEGORIES=	emulators
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

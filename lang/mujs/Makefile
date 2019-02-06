@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/mujs/Makefile 479989 2018-09-18 08:03:24Z yuri $
+# $FreeBSD: head/lang/mujs/Makefile 492286 2019-02-06 05:46:55Z yuri $
 
 PORTNAME=	mujs
 DISTVERSION=	1.0.5
+PORTREVISION=	1
 CATEGORIES=	lang devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -10,7 +11,7 @@ COMMENT=	Embeddable Javascript interpreter in C
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake
+USES=		gmake localbase:ldflags readline
 USE_GITHUB=	yes
 GH_ACCOUNT=	ccxvii
 USE_LDCONFIG=	yes

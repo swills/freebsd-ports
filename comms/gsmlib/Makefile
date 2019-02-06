@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/comms/gsmlib/Makefile 473851 2018-07-03 19:11:51Z amdmi3 $
+# $FreeBSD: head/comms/gsmlib/Makefile 492280 2019-02-06 00:14:18Z linimon $
 
 PORTNAME=	gsmlib
 PORTVERSION=	1.10
@@ -17,13 +17,13 @@ LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gmake libtool
+USE_CXXSTD=	c++98
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
 CPPFLAGS+=	-DBROKEN_STRFTIME -DHAVE_DECL_GETOPT
 LDFLAGS+=	-lpthread
-CXXFLAGS+=	-Wno-c++11-narrowing
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/google-perftools/Makefile 491080 2019-01-24 05:09:48Z linimon $
+# $FreeBSD: head/devel/google-perftools/Makefile 492292 2019-02-06 08:02:43Z yuri $
 
 PORTNAME=	google-perftools
 DISTVERSIONPREFIX=	gperftools-
@@ -14,13 +14,9 @@ COMMENT=	Fast, multi-threaded malloc() and nifty performance analysis tools
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc=		fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
-BROKEN_powerpc64=	fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
-BROKEN_sparc64=		fails to build: assembly not supported, see PR\#94: http://code.google.com/p/google-perftools/issues/detail?id=94&can=1
-
 DOCSDIR=	${PREFIX}/share/doc/gperftools
 
-USES=		compiler gmake libtool
+USES=		compiler:c11 gmake libtool
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 TEST_TARGET=	check

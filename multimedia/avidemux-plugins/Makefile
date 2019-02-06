@@ -1,9 +1,9 @@
 # Created by: Anish Mistry (with help from mean)
-# $FreeBSD: head/multimedia/avidemux-plugins/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/avidemux-plugins/Makefile 492305 2019-02-06 13:33:13Z jbeich $
 
 PORTNAME=	avidemux
 PORTVERSION=	${AVIDEMUX_VERSION}
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-plugins
 

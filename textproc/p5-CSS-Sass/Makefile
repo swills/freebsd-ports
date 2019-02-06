@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-CSS-Sass/Makefile 490994 2019-01-22 23:59:49Z sunpoet $
+# $FreeBSD: head/textproc/p5-CSS-Sass/Makefile 492224 2019-02-05 13:49:13Z sunpoet $
 
 PORTNAME=	CSS-Sass
 PORTVERSION=	3.4.10
@@ -22,7 +22,7 @@ TEST_DEPENDS=	p5-File-chdir>=0.01:devel/p5-File-chdir \
 		p5-Test-Differences>=0.01:devel/p5-Test-Differences \
 		p5-YAML-LibYAML>=0.01:textproc/p5-YAML-LibYAML
 
-USES=		gmake perl5
+USES=		compiler:c++11-lang gmake perl5
 USE_PERL5=	configure
 
 .include <bsd.port.pre.mk>

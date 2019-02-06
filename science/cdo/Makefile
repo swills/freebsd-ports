@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/cdo/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/science/cdo/Makefile 492214 2019-02-05 13:48:20Z sunpoet $
 
 PORTNAME=	cdo
 PORTVERSION=	1.9.5
@@ -22,7 +22,9 @@ HDF5_IMPLIES=	SZIP
 NETCDF_IMPLIES=	HDF5
 UUID_DESC=	UUID support
 
-PORTSCOUT=	site:https://code.zmaw.de/projects/cdo/files
+PORTSCOUT=	site:https://code.mpimet.mpg.de/projects/cdo/files
+
+USES=		compiler:c++11-lib gmake libtool localbase pathfix
 
 CONFIGURE_ARGS=	--disable-data \
 		--disable-extra \
@@ -37,7 +39,6 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 MAKE_JOBS_UNSAFE=	yes
 TEST_TARGET=	check
-USES=		compiler:c++11-lib gmake libtool localbase pathfix
 USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 
