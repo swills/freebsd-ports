@@ -1,5 +1,5 @@
 # Created by: Thomas Vogt <thomas.vogt@bsdunix.ch>
-# $FreeBSD: head/games/foobillard/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/foobillard/Makefile 492258 2019-02-05 17:38:06Z amdmi3 $
 
 PORTNAME=	foobillard
 PORTVERSION=	3.0a
@@ -39,7 +39,7 @@ DESKTOP_ENTRIES=	"Foobillard" \
 			false
 
 .if ${PORT_OPTIONS:MSDL}
-USE_SDL=	yes
+USE_SDL=	sdl
 CONFIGURE_ARGS+=	--enable-SDL
 .else
 USE_GL=		glut

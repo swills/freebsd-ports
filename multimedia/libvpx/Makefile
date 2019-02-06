@@ -1,10 +1,9 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/multimedia/libvpx/Makefile 489061 2019-01-02 08:10:07Z jbeich $
+# $FreeBSD: head/multimedia/libvpx/Makefile 492309 2019-02-06 15:57:26Z jbeich $
 
 PORTNAME=	libvpx
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.7.0
-PORTREVISION=	4
+DISTVERSION=	1.8.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -64,6 +63,9 @@ THREADS_CONFIGURE_OFF=	--disable-multithread
 post-patch:
 	@${REINPLACE_CMD} -E '/gcctarget|link_with_cc/s/gcc[[:>:]]/$${CC}/' \
 		${WRKSRC}/build/make/configure.sh
+# Extract (snapshot) version from the port instead of CHANGELOG
+	@${REINPLACE_CMD} '/^git_version_id/s/""/"${DISTVERSIONFULL}"/' \
+		${WRKSRC}/build/make/version.sh
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/vpx*

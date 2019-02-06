@@ -1,5 +1,5 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/audio/mp3blaster/Makefile 473176 2018-06-24 04:06:02Z novel $
+# $FreeBSD: head/audio/mp3blaster/Makefile 492171 2019-02-04 21:50:50Z amdmi3 $
 
 PORTNAME=	mp3blaster
 PORTVERSION=	3.2.6
@@ -32,7 +32,7 @@ VORBIS_LIB_DEPENDS=		libvorbisfile.so:audio/libvorbis
 VORBIS_CONFIGURE_WITH=		oggvorbis
 
 SDL_CONFIGURE_WITH=	sdl
-SDL_USE=		SDL=yes
+SDL_USE=		SDL=sdl
 
 NAS_CONFIGURE_WITH=	nas
 NAS_LIB_DEPENDS=	libaudio.so:audio/nas

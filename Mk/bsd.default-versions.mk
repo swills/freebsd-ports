@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.default-versions.mk 490437 2019-01-16 00:54:39Z tobik $
+# $FreeBSD: head/Mk/bsd.default-versions.mk 492225 2019-02-05 13:49:18Z sunpoet $
 #
 # MAINTAINER:	ports@FreeBSD.org
 #
@@ -29,7 +29,7 @@ _l=		${lang:C/=.*//g}
 ${_l:tu}_DEFAULT=	${lang:C/.*=//g}
 .endfor
 
-# Possible values: 2.2, 2.4
+# Possible values: 2.4
 APACHE_DEFAULT?=	2.4
 # Possible values: 48, 5, 6
 BDB_DEFAULT?=		5

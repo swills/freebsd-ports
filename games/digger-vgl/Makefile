@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/digger-vgl/Makefile 458646 2018-01-10 15:08:51Z danfe $
+# $FreeBSD: head/games/digger-vgl/Makefile 492211 2019-02-05 13:47:24Z amdmi3 $
 
 PORTNAME=	digger
 PORTVERSION=	20020314
@@ -16,12 +16,9 @@ MAKEFILE=	Makefile.fbsd
 
 OPTIONS_DEFINE=	SOUND DOCS
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MSOUND}
-USE_SDL=	yes
-MAKE_ENV=	SOUND=yes
-.endif
+SOUND_USE=	SDL=sdl
+SOUND_MAKE_ENV= SOUND=yes
+SOUND_VARS=	PKGMESSAGE=${PKGDIR}/pkg-message.sound
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|Software|Software\\n\\|g' ${WRKSRC}/alpha.c
@@ -29,12 +26,9 @@ post-patch:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/digger ${STAGEDIR}${PREFIX}/bin
 	@${MKDIR} ${STAGEDIR}/var/games/digger
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/digger.txt ${STAGEDIR}${DOCSDIR}
-.if ${PORT_OPTIONS:MSOUND}
-	@${ECHO_MSG}
-	@${ECHO_MSG} "Use \"digger /A\" command to run Digger with sound enabled."
-	@${ECHO_MSG}
-.endif
 
 .include <bsd.port.mk>

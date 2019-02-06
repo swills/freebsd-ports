@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/news/pan/Makefile 484568 2018-11-10 03:38:37Z swills $
+# $FreeBSD: head/news/pan/Makefile 492251 2019-02-05 15:42:54Z tobik $
 
 PORTNAME=	pan
 PORTVERSION=	0.145
@@ -46,7 +46,6 @@ GTK3_PREVENTS=		GTKSPELL
 
 NLS_USES=	gettext-runtime
 NLS_CONFIGURE_ENABLE=	nls
-NLS_CONFIGURE_DISABLE=	nls
 
 post-patch:
 	${REINPLACE_CMD} -e 's|noinst_PROGRAMS = |noinst_PROGRAMS = #|g' \

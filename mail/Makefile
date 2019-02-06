@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 492091 2019-02-04 00:01:11Z sunpoet $
+# $FreeBSD: head/mail/Makefile 492154 2019-02-04 19:31:35Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -97,8 +97,6 @@
     SUBDIR += dot-forward
     SUBDIR += dovecot
     SUBDIR += dovecot-pigeonhole
-    SUBDIR += dovecot-pigeonhole04
-    SUBDIR += dovecot22
     SUBDIR += dspam
     SUBDIR += ecartis
     SUBDIR += elm

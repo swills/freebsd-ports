@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/xxhash/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/xxhash/Makefile 492170 2019-02-04 21:44:58Z rene $
 
 PORTNAME=	xxhash
 PORTVERSION=	0.6.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	rezny@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extremely fast non-cryptographic hash algorithm
 
 LICENSE=	BSD2CLAUSE

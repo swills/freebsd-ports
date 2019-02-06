@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/xmms2/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/audio/xmms2/Makefile 492169 2019-02-04 21:42:58Z amdmi3 $
 
 PORTNAME?=	xmms2
 PORTVERSION=	0.8
@@ -137,7 +137,7 @@ SPEEX_CONFIGURE_OFF=	--without-plugins="speex"
 TREMOR_LIB_DEPENDS=	libvorbisidec.so:audio/libtremor
 TREMOR_CONFIGURE_OFF=	--without-plugins="tremor"
 
-VISUAL_USE=		SDL=yes
+VISUAL_USE=		SDL=sdl
 VISUAL_LIB_DEPENDS=	libvisual-0.4.so:graphics/libvisual04
 VISUAL_CONFIGURE_OFF=	--without-optionals="vistest"
 VISUAL_CONFIGURE_ON=	--with-vis-reference-clients

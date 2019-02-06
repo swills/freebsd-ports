@@ -1,10 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/math/form/Makefile 447345 2017-08-04 15:22:12Z ehaupt $
+# $FreeBSD: head/math/form/Makefile 492291 2019-02-06 07:58:35Z ehaupt $
 
 PORTNAME=	form
-PORTVERSION=	4.2.0
+PORTVERSION=	4.2.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -17,6 +16,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp
 
 USES=		autoreconf gmake localbase
 USE_GITHUB=	yes
+
 GNU_CONFIGURE=	yes
 
 GH_ACCOUNT=	vermaseren
@@ -26,7 +26,8 @@ OPTIONS_SUB=	yes
 
 CONFIGURE_ARGS+=	--enable-scalar \
 			--enable-largefile \
-			--with-api=posix
+			--with-api=posix \
+			--disable-native
 
 MPICC?=			${LOCALBASE}/mpi/openmpi/bin/mpicc
 MPICXX?=		${LOCALBASE}/mpi/openmpi/bin/mpic++
@@ -39,6 +40,9 @@ OPENMPI_CONFIGURE_ENV+=	MPICC="${MPICC}" MPICXX="${MPICXX}"
 
 OPENMPI_LIB_DEPENDS=	libmpi.so:net/openmpi \
 			libgcc_s.so.1:lang/gcc5
+
+post-patch:
+	@${REINPLACE_CMD} -e 's| -O3||' ${WRKSRC}/configure.ac
 
 post-build-DOXYGEN-on:
 	(cd ${WRKSRC}/doc/manual; ${MAKE_CMD} html pdf)

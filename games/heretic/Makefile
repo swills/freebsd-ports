@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/games/heretic/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/games/heretic/Makefile 492256 2019-02-05 16:19:13Z amdmi3 $
 
 PORTNAME=	heretic
 PORTVERSION=	1.2
@@ -38,7 +38,7 @@ BINARY=		xaheretic
 .endif
 
 .if ${PORT_OPTIONS:MSDL}
-USE_SDL=	yes
+USE_SDL=	sdl
 ALL_TARGET=	sdl
 BINARY=		sdlheretic
 CFLAGS+=	`${SDL_CONFIG} --cflags`

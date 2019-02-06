@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/Makefile 488749 2018-12-30 23:30:55Z rene $
+# $FreeBSD: head/ports-mgmt/Makefile 492154 2019-02-04 19:31:35Z rene $
 #
 
     COMMENT = Ports for managing, installing, and developing FreeBSD ports and packages
@@ -14,7 +14,6 @@
     SUBDIR += freebsd-bugzilla-cli
     SUBDIR += genpatch
     SUBDIR += genplist
-    SUBDIR += hs-porte
     SUBDIR += jailaudit
     SUBDIR += lsknobs
     SUBDIR += managepkg

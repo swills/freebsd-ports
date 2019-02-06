@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey38/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/spidermonkey38/Makefile 492251 2019-02-05 15:42:54Z tobik $
 
 PORTNAME=	spidermonkey38
 PORTVERSION=	38.8.0
@@ -41,7 +41,6 @@ OPTIONS_EXCLUDE_armv7=	DTRACE
 OPTIONS_SUB=	yes
 
 DEBUG_CONFIGURE_ENABLE=	debug debug-symbols
-DEBUG_CONFIGURE_DISABLE=debug
 
 DTRACE_CONFIGURE_ENABLE=dtrace profiling
 DTRACE_LIBS=	-lelf

@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/games/gillo/Makefile 478634 2018-08-31 23:51:02Z tobik $
+# $FreeBSD: head/games/gillo/Makefile 492228 2019-02-05 13:52:07Z amdmi3 $
 
 PORTNAME=	gillo
 DISTVERSION=	1.0beta1
@@ -18,12 +18,12 @@ BUILD_DEPENDS=	${JAM}:devel/jam \
 		${LOCALBASE}/lib/libplibsg.a:x11-toolkits/plib
 LIB_DEPENDS=	libode.so:devel/ode
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
-
-USES=		tar:bzip2
+USES=		gl tar:bzip2
 USE_CXXSTD=	c++98
-USE_GL=		glu
-USE_SDL=	yes
+USE_GL=		gl glu
+USE_SDL=	sdl
+
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 JAM?=		${LOCALBASE}/bin/jam
 

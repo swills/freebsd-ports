@@ -1,5 +1,5 @@
 # Created by: Randall Hopper
-# $FreeBSD: head/graphics/gdal/Makefile 489995 2019-01-11 20:16:50Z sunpoet $
+# $FreeBSD: head/graphics/gdal/Makefile 492159 2019-02-04 20:07:06Z sunpoet $
 
 PORTNAME=	gdal
 PORTVERSION=	2.4.0
@@ -137,6 +137,7 @@ post-patch:
 	@${REINPLACE_CMD} -e '/^#GDAL_SLIB_SONAME/ s|^#||' ${WRKSRC}/GDALmake.opt.in
 	@${REINPLACE_CMD} -e 's|$$(INST_LIB)/pkgconfig|${PREFIX}/libdata/pkgconfig|; s| LICENSE.TXT||' ${WRKSRC}/GNUmakefile
 	@${REINPLACE_CMD} -e 's|-lminizip|-lkmlminizip|' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's|getCString()|c_str()|' ${WRKSRC}/frmts/pdf/pdfdataset.cpp ${WRKSRC}/frmts/pdf/pdfobject.cpp
 # Clean up bundled libraries
 	@${RM} -r ${WRKSRC}/frmts/gif/giflib/
 	@${RM} -r ${WRKSRC}/frmts/gtiff/libgeotiff/

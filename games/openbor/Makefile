@@ -1,10 +1,10 @@
-# $FreeBSD: head/games/openbor/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
+# $FreeBSD: head/games/openbor/Makefile 492305 2019-02-06 13:33:13Z jbeich $
 
 PORTNAME=	openbor
 # Hint: svn revision is git rev-list --count ${GH_TAGNAME}
 PORTVERSION?=	6662
 .ifndef PKGNAMESUFFIX
-PORTREVISION=	1
+PORTREVISION=	2
 .endif
 CATEGORIES=	games
 

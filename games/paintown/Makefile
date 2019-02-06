@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/games/paintown/Makefile 484067 2018-11-04 14:17:18Z antoine $
+# $FreeBSD: head/games/paintown/Makefile 492241 2019-02-05 14:34:26Z amdmi3 $
 
 PORTNAME=	paintown
 PORTVERSION=	3.6.0
@@ -22,7 +22,7 @@ LIB_DEPENDS=	liballeg.so:devel/allegro \
 BROKEN_aarch64=	Fails to link: missing sbrk
 
 USES=		dos2unix scons tar:bzip2
-USE_SDL=	yes
+USE_SDL=	sdl
 INSTALLS_ICONS=	yes
 DOS2UNIX_REGEX=	.*\.(c|cpp|h)
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/Makefile 491132 2019-01-25 08:04:01Z tobik $
+# $FreeBSD: head/irc/Makefile 492154 2019-02-04 19:31:35Z rene $
 #
 
     COMMENT = Internet Relay Chat utilities
@@ -47,7 +47,6 @@
     SUBDIR += ircd-ru
     SUBDIR += ircproxy
     SUBDIR += ircservices
-    SUBDIR += iroffer
     SUBDIR += iroffer-dinoex
     SUBDIR += iroffer-lamm
     SUBDIR += irssi

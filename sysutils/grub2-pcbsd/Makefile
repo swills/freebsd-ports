@@ -1,9 +1,9 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 491749 2019-01-31 18:22:16Z tobik $
+# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 492271 2019-02-05 19:19:29Z rene $
 
 PORTNAME=	grub2-pcbsd
 PORTVERSION=	2.02q
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.pcbsd.org/~kris/software/ \
 		ftp://ftp.pcbsd.org/pub/software/
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		help2man:misc/help2man
 
 WRKSRC=		${WRKDIR}/grub-2.02
-CONFLICTS=	grub-0* grub2-2*
+CONFLICTS=	grub2-2*
 SSP_UNSAFE=	yes
 USE_GCC=	yes
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina-core/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11/lumina-core/Makefile 492296 2019-02-06 09:30:41Z amdmi3 $
 
 PORTNAME=	lumina-core
 PORTVERSION=	1.4.1
@@ -10,6 +10,7 @@ MAINTAINER=	jt@ixsystems.com
 COMMENT=	Lumina Desktop Environment
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../LICENSE
 
 RUN_DEPENDS=	fluxbox>=0:x11-wm/fluxbox \
 		xscreensaver>=0:x11/xscreensaver \

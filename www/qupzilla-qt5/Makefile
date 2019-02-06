@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qupzilla-qt5/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/www/qupzilla-qt5/Makefile 492170 2019-02-04 21:44:58Z rene $
 
 PORTNAME=	qupzilla
 PORTVERSION=	1.8.9
@@ -8,7 +8,7 @@ MASTER_SITES=	https://github.com/QupZilla/${PORTNAME}/releases/download/v${PORTV
 PKGNAMESUFFIX=	-qt5
 DISTNAME=	QupZilla-${PORTVERSION}
 
-MAINTAINER=	rezny@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web browser based on WebKit engine and Qt Framework
 
 LICENSE=	GPLv3

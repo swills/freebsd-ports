@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/swaylock/Makefile 491634 2019-01-30 17:17:59Z jbeich $
+# $FreeBSD: head/x11/swaylock/Makefile 492205 2019-02-05 12:52:03Z jbeich $
 
 PORTNAME=	swaylock
-DISTVERSION=	1.2-46
-DISTVERSIONSUFFIX=	-geffdea5
+DISTVERSION=	1.3
 CATEGORIES=	x11
 
 MAINTAINER=	jbeich@FreeBSD.org

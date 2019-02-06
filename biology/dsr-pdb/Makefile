@@ -1,7 +1,8 @@
-# $FreeBSD: head/biology/dsr-pdb/Makefile 491546 2019-01-29 07:56:30Z yuri $
+# $FreeBSD: head/biology/dsr-pdb/Makefile 492270 2019-02-05 19:01:59Z yuri $
 
 PORTNAME=	dsr-pdb
 DISTVERSION=	1.0.3
+PORTREVISION=	1
 CATEGORIES=	biology
 MASTER_SITES=	https://graphics.stanford.edu/~drussel/
 DISTNAME=	${PORTNAME}
@@ -13,12 +14,14 @@ COMMENT=	Simple C++ PDB reader (reads the protein description format)
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-USES=		gmake libtool tar:tgz
+LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs
+
+USES=		compiler:c++11-lang gmake libtool localbase:ldflags tar:tgz
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
-CXXFLAGS+=	-fPIC
+CXXFLAGS+=	-fPIC --std=c++11 # libboost_program_options.so isn't found without --std=c++11
 
 post-patch:
 .for dir in lib tools test

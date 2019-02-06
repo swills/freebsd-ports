@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-xxhash/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-xxhash/Makefile 492170 2019-02-04 21:44:58Z rene $
 
 PORTNAME=	xxhash
 PORTVERSION=	1.0.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	rezny@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python bindings for the xxHash library
 
 LICENSE=	BSD2CLAUSE

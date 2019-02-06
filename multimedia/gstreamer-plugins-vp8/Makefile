@@ -1,7 +1,7 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-plugins-vp8/Makefile 459963 2018-01-25 21:20:12Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer-plugins-vp8/Makefile 492305 2019-02-06 13:33:13Z jbeich $
 
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 
 COMMENT=	Gstreamer vp8 codec plugin

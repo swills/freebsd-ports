@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 492128 2019-02-04 13:12:35Z swills $
+# $FreeBSD: head/graphics/Makefile 492206 2019-02-05 12:57:58Z tobik $
 #
 
     COMMENT = Graphics tools and libraries
@@ -836,6 +836,7 @@
     SUBDIR += py-gimp
     SUBDIR += py-gizeh
     SUBDIR += py-glewpy
+    SUBDIR += py-glfw
     SUBDIR += py-goocanvas
     SUBDIR += py-gphoto2
     SUBDIR += py-graph-core

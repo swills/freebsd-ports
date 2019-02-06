@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/py-marshmallow-sqlalchemy/Makefile 484336 2018-11-06 21:10:15Z sunpoet $
+# $FreeBSD: head/databases/py-marshmallow-sqlalchemy/Makefile 492161 2019-02-04 20:07:17Z sunpoet $
 
 PORTNAME=	marshmallow-sqlalchemy
-PORTVERSION=	0.15.0
+PORTVERSION=	0.16.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

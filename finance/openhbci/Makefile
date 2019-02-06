@@ -1,5 +1,5 @@
 # Created by: Heiner Strauss <heiner@bilch.com>
-# $FreeBSD: head/finance/openhbci/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/finance/openhbci/Makefile 492210 2019-02-05 13:41:36Z meta $
 
 PORTNAME=	openhbci
 PORTVERSION=	0.9.17.2
@@ -10,6 +10,9 @@ DISTNAME=	openhbci-0.9.17-2
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	HBCI is a bank-independent homebanking standard
+
+DEPRECATED=	no longer maintained upstream
+EXPIRATION_DATE=	2019-03-31
 
 USES=		libtool ssl
 GNU_CONFIGURE=	yes

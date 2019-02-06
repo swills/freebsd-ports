@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/net-im/py-toxcore-c/Makefile 473381 2018-06-26 10:10:03Z thierry $
+# $FreeBSD: head/net-im/py-toxcore-c/Makefile 492305 2019-02-06 13:33:13Z jbeich $
 
 PORTNAME=	toxcore-c
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	net-im net-p2p python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

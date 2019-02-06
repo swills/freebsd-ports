@@ -1,10 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/cgribex/Makefile 433931 2017-02-12 08:20:20Z sunpoet $
+# $FreeBSD: head/science/cgribex/Makefile 492215 2019-02-05 13:48:25Z sunpoet $
 
 PORTNAME=	cgribex
-PORTVERSION=	1.7.5
+PORTVERSION=	1.9.0
 CATEGORIES=	science
-MASTER_SITES=	https://code.zmaw.de/attachments/download/12689/ \
+MASTER_SITES=	https://code.mpimet.mpg.de/attachments/download/15629/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -16,11 +16,12 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 OPTIONS_DEFINE=	GRIB_API JASPER SZIP
 OPTIONS_DEFAULT=JASPER SZIP
 
+USES=		libtool
+
 CPPFLAGS+=	-DgFortran
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		libtool
 
 GRIB_API_CONFIGURE_OFF=	--without-grib_api
 GRIB_API_CONFIGURE_ON=	--with-grib_api=${LOCALBASE}

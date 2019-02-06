@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alepulver@FreeBSD.org>
-# $FreeBSD: head/games/quake2max/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/quake2max/Makefile 492244 2019-02-05 14:49:44Z amdmi3 $
 
 PORTNAME=	quake2max
 PORTVERSION=	0.45
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	http://www.bfeared.com/library/quake/archive/quakedev/qudos/quake2/engines/Quake2MaX/:src \
 		LOCAL/alepulver/:data
@@ -14,12 +14,13 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	OpenGL-only Quake II engine modification
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/gnu.txt
 
 EXTRACT_DEPENDS=	unrar:archivers/unrar
 
 USES=		gmake tar:bzip2
-USE_XORG=	xxf86dga
+USE_XORG=	x11 xext xxf86vm xxf86dga
 ALL_TARGET=	release
 WRKSRC=		${WRKDIR}/${DISTNAME:S/quake2max/Quake2maX/}
 
@@ -48,7 +49,7 @@ USE_GL=		glu
 .endif
 
 .if ${PORT_OPTIONS:MSDLCLIENT} || ${PORT_OPTIONS:MSDLGL}
-USE_SDL=	yes
+USE_SDL=	sdl
 .endif
 
 .if ${PORT_OPTIONS:MCLIENT}

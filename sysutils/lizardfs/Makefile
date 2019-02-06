@@ -1,5 +1,5 @@
 # Created by: John Hixson <jhixson@FreeBSD.org>
-# $FreeBSD: head/sysutils/lizardfs/Makefile 491834 2019-02-01 17:12:54Z jhixson $
+# $FreeBSD: head/sysutils/lizardfs/Makefile 492277 2019-02-06 00:04:13Z linimon $
 
 PORTNAME=	lizardfs
 PORTVERSION=	3.12.0
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	a2x:textproc/asciidoc \
 	spdlog>=1.3.0:devel/spdlog
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=	cmake fuse python shebangfix
+USES=	cmake compiler:c11 fuse python shebangfix
 USE_RC_SUBR=	mfscgiserv \
 	mfschunkserver \
 	mfsmaster \

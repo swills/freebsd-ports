@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-configparser/Makefile 445861 2017-07-15 09:38:06Z koobs $
+# $FreeBSD: head/devel/py-configparser/Makefile 492315 2019-02-06 16:49:59Z robak $
 
 PORTNAME=	configparser
-PORTVERSION=	3.5.0
-PORTREVISION=	1
+PORTVERSION=	3.5.3
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP

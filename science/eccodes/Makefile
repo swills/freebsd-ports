@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/eccodes/Makefile 488956 2019-01-01 20:32:25Z sunpoet $
+# $FreeBSD: head/science/eccodes/Makefile 492216 2019-02-05 13:48:30Z sunpoet $
 
 PORTNAME=	eccodes
 PORTVERSION=	2.10.0
@@ -23,7 +23,7 @@ OPTIONS_SINGLE_JPEG=	JASPER OPENJPEG
 OPTIONS_DEFAULT=OPENJPEG
 AEC_DESC=	Adaptive Entropy Coding support
 
-PORTSCOUT=	site:https://software.ecmwf.int/wiki/display/ECC/Releases
+PORTSCOUT=	site:https://confluence.ecmwf.int/display/ECC/Releases
 
 USES=		cmake shebangfix
 

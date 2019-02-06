@@ -1,9 +1,9 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox/Makefile 491972 2019-02-02 18:37:49Z jbeich $
+# $FreeBSD: head/www/firefox/Makefile 492305 2019-02-06 13:33:13Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	65.0
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
@@ -32,7 +32,7 @@ BUILD_DEPENDS=	nspr>=4.19:devel/nspr \
 USE_GECKO=	gecko
 CONFLICTS_INSTALL=	firefox-esr
 MOZ_PKGCONFIG_FILES=	# empty
-USE_MOZILLA=	-hunspell
+USE_MOZILLA=	-hunspell -vpx
 
 USES=		tar:xz
 

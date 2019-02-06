@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey52/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/lang/spidermonkey52/Makefile 492251 2019-02-05 15:42:54Z tobik $
 
 PORTNAME=	spidermonkey
 PORTVERSION=	52.9.0
@@ -45,7 +45,6 @@ OPTIONS_DEFAULT=METHODJIT OPTIMIZE READLINE
 OPTIONS_SUB=	yes
 
 DEBUG_CONFIGURE_ENABLE=	debug debug-symbols
-DEBUG_CONFIGURE_DISABLE=debug
 
 DTRACE_CONFIGURE_ENABLE=dtrace profiling
 DTRACE_LIBS=	-lelf

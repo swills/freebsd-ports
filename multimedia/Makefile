@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 491259 2019-01-26 10:48:48Z tobik $
+# $FreeBSD: head/multimedia/Makefile 492154 2019-02-04 19:31:35Z rene $
 #
 
     COMMENT = Multimedia software
@@ -355,7 +355,6 @@
     SUBDIR += py-soco
     SUBDIR += py-subliminal
     SUBDIR += py-tvnamer
-    SUBDIR += pyjama
     SUBDIR += pymp
     SUBDIR += qmmp
     SUBDIR += qmmp-plugin-pack

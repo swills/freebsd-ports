@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/libmaxminddb/Makefile 459856 2018-01-24 18:45:01Z sunpoet $
+# $FreeBSD: head/net/libmaxminddb/Makefile 492238 2019-02-05 14:26:57Z sunpoet $
 
 PORTNAME=	libmaxminddb
 PORTVERSION=	1.3.2
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/maxmind/libmaxminddb/releases/download/${PORTVERSION}/
 
@@ -11,10 +12,11 @@ COMMENT=	Library for the MaxMind DB file format used for GeoIP2
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		gmake libtool
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		gmake libtool
 
 .include <bsd.port.mk>

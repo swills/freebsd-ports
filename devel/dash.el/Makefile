@@ -1,12 +1,11 @@
-# $FreeBSD: head/devel/dash.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/devel/dash.el/Makefile 492178 2019-02-05 00:32:29Z meta $
 
 PORTNAME=	dash.el
-PORTVERSION=	2.14.1
-PORTREVISION=   1
+PORTVERSION=	2.15.0
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	hrs@FreeBSD.org
+MAINTAINER=	yasu@utahime.org
 COMMENT=	Modern list library for Emacs
 
 LICENSE=	GPLv3

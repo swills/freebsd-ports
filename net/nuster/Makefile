@@ -1,8 +1,8 @@
 # Created by: Felix Hanley
-# $FreeBSD: head/net/nuster/Makefile 488481 2018-12-26 22:46:31Z swills $
+# $FreeBSD: head/net/nuster/Makefile 492207 2019-02-05 13:09:05Z swills $
 
 PORTNAME=	nuster
-PORTVERSION=	2.0.5.18
+PORTVERSION=	2.0.7.18
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net www
 

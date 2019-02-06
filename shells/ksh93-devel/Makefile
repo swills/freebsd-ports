@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/ksh93-devel/Makefile 491319 2019-01-27 00:47:17Z cy $
+# $FreeBSD: head/shells/ksh93-devel/Makefile 492272 2019-02-05 21:01:12Z cy $
 
 # Make sure that your configuration DOES NOT set ANY gcc-related
 # variables.  ksh93 will not compile if you set even the seemingly
@@ -30,7 +30,7 @@ GH_TAGNAME=	${HASH}
 KSH93_CONFLICTS=	ksh93-*
 KSH_CONFLICTS=		pdksh-*
 
-USES=		meson ninja
+USES=		compiler:c11 meson ninja
 FETCH_ENV=	HTTP_AUTH=basic:*:I\ accept\ www.opensource.org/licenses/cpl:.
 LDFLAGS+=	-lm 
 MESON_BUILD_DIR=	build

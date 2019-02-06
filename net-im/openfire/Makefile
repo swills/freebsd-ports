@@ -1,5 +1,5 @@
 # Created by: Nikolay Pavlov <qpadla@gmail.com>
-# $FreeBSD: head/net-im/openfire/Makefile 472859 2018-06-20 09:17:38Z gahr $
+# $FreeBSD: head/net-im/openfire/Makefile 492302 2019-02-06 13:20:08Z gahr $
 
 PORTNAME=	openfire
 PORTVERSION=	4.2.3
@@ -9,7 +9,7 @@ CATEGORIES=	net-im java
 MASTER_SITES=	https://github.com/igniterealtime/${PORTNAME}/releases/download/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}_src_${PORTVERSION:S/./_/g}
 
-MAINTAINER=	gahr@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Enterprise instant messaging server
 
 LICENSE=	APACHE20
