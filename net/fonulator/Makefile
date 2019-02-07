@@ -14,10 +14,10 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libargtable2.a:devel/argtable\
 		${LOCALBASE}/lib/libfb.a:net/libfb
 LIB_DEPENDS=	libnet.so:net/libnet
 
+USES=		localbase
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
 CONFIGURE_ARGS=	--disable-shared
+LDFLAGS_powerpc64=	-libverbs
 
 PLIST_FILES=	bin/fonulator \
 		man/man1/fonulator.1.gz
