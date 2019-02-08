@@ -45,6 +45,7 @@ take_bug:
   tags:
     - FreeBSD
   allow_failure: true
+  stage: assign
   script:
   - /usr/home/jenkins-builder/workspace/test-build-pr-patch/take_bug 235599
 
