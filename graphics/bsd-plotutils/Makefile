@@ -1,7 +1,5 @@
-# $FreeBSD$
-
 PORTNAME=	bsd-plotutils
-DISTVERSION=	1.4
+DISTVERSION=	1.4.1
 CATEGORIES=	graphics
 
 MAINTAINER=	toranktto@gmail.com
