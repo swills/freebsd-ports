@@ -3,7 +3,7 @@
 
 PORTNAME=	phpsysinfo
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.2.10
+DISTVERSION=	3.3.0
 CATEGORIES=	www
 
 MAINTAINER=	tremere@cainites.net
