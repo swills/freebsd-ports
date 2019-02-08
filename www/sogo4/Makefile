@@ -43,7 +43,7 @@ CONFIGURE_ARGS=		--disable-debug --enable-strip
 post-patch:
 	@${GREP} -rlF '/etc/sogo' ${WRKSRC} \
 		| ${XARGS} ${REINPLACE_CMD} 's#/etc/sogo#${PREFIX}/etc/sogo#g'
-	@${REINPLACE_CMD} -e 's|/usr/|/usr/local/|g' ${WRKSRC}/Apache/SOGo.conf
+	@${REINPLACE_CMD} -e 's|/usr/lib/GNUstep/|/usr/local/GNUstep/Local/Library/|g' ${WRKSRC}/Apache/SOGo.conf
 
 post-patch-ACTIVESYNC-on:
 	@${REINPLACE_CMD} -e 's/Tools/Tools ActiveSync/' ${WRKSRC}/GNUmakefile
