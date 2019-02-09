@@ -1,6 +1,5 @@
 stages:
    - build
-   - script_fetch
    - assign
    - upload
 
@@ -30,23 +29,17 @@ head-amd64:
   script:
   - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 112-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
 
-gitlab-script-fetch:
-  tags:
-    - FreeBSD
-  stage: script_fetch
-  script:
-  - BASE_URL=`echo $CI_REPOSITORY_URL | sed "s;\/*$CI_PROJECT_PATH.*;;"`
-  - REPO_URL="$BASE_URL/swills/test-build-pr-patch.git"
-  - REPO_DIR=test-build-pr-patch
-  - rm -fr $REPO_DIR
-  - git clone $REPO_URL $REPO_DIR
-
 take_bug:
   tags:
     - FreeBSD
   allow_failure: true
   stage: assign
   script:
+  - BASE_URL=`echo $CI_REPOSITORY_URL | sed "s;\/*$CI_PROJECT_PATH.*;;"`
+  - REPO_URL="$BASE_URL/swills/test-build-pr-patch.git"
+  - REPO_DIR=test-build-pr-patch
+  - rm -fr $REPO_DIR
+  - git clone $REPO_URL $REPO_DIR
   - ./test-build-pr-patch/take_bug 235207
 
 jfrog-upload:
@@ -55,6 +48,11 @@ jfrog-upload:
   stage: upload
   allow_failure: true
   script:
+  - BASE_URL=`echo $CI_REPOSITORY_URL | sed "s;\/*$CI_PROJECT_PATH.*;;"`
+  - REPO_URL="$BASE_URL/swills/test-build-pr-patch.git"
+  - REPO_DIR=test-build-pr-patch
+  - rm -fr $REPO_DIR
+  - git clone $REPO_URL $REPO_DIR
   - ./test-build-pr-patch/jfrog-upload
 
 ipfs-upload:
@@ -63,4 +61,9 @@ ipfs-upload:
   stage: upload
   allow_failure: true
   script:
+  - BASE_URL=`echo $CI_REPOSITORY_URL | sed "s;\/*$CI_PROJECT_PATH.*;;"`
+  - REPO_URL="$BASE_URL/swills/test-build-pr-patch.git"
+  - REPO_DIR=test-build-pr-patch
+  - rm -fr $REPO_DIR
+  - git clone $REPO_URL $REPO_DIR
   - ./test-build-pr-patch/ipfs-upload
