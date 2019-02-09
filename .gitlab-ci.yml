@@ -39,7 +39,7 @@ gitlab-script-fetch:
   - REPO_URL="$BASE_URL/swills/test-build-pr-patch.git"
   - REPO_DIR=test-build-pr-patch
   - rm -fr $REPO_DIR
-  - echo git clone $REPO_URL $REPO_DIR
+  - git clone $REPO_URL $REPO_DIR
 
 take_bug:
   tags:
