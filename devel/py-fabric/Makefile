@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	fabric
-PORTVERSION=	1.13.2
+PORTVERSION=	1.14.1
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
@@ -20,7 +20,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}fudge>0:devel/py-fudge@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=0.6:devel/py-Jinja2@${PY_FLAVOR}
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes
