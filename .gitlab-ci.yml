@@ -47,7 +47,7 @@ take_bug:
   allow_failure: true
   stage: assign
   script:
-  - /usr/home/jenkins-builder/workspace/test-build-pr-patch/take_bug 235207
+  - ./test-build-pr-patch/take_bug 235207
 
 jfrog-upload:
   tags:
@@ -55,7 +55,7 @@ jfrog-upload:
   stage: upload
   allow_failure: true
   script:
-  - /usr/home/jenkins-builder/workspace/test-build-pr-patch/jfrog-upload
+  - ./test-build-pr-patch/jfrog-upload
 
 ipfs-upload:
   tags:
@@ -63,4 +63,4 @@ ipfs-upload:
   stage: upload
   allow_failure: true
   script:
-  - /usr/home/jenkins-builder/workspace/test-build-pr-patch/ipfs-upload
+  - ./test-build-pr-patch/ipfs-upload
