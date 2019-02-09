@@ -26,6 +26,7 @@ USE_GNOME=	glib20 intlhack introspection:build \
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-more-warnings \
+		--with-ntlm-auth=${LOCALBASE}/bin/ntlm_auth	\
 		--disable-vala
 INSTALL_TARGET=	install-strip
 
