@@ -1,11 +1,11 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/reduce/Makefile 490153 2019-01-13 16:12:54Z swills $
+# $FreeBSD: head/math/reduce/Makefile 492413 2019-02-08 08:47:42Z tobik $
 
 PORTNAME=	reduce
-PORTVERSION=	20181123
+PORTVERSION=	20190120
 CATEGORIES=	math lang
 MASTER_SITES=	SF/${PORTNAME}-algebra/${SFSUBDIR}/
-DISTNAME=	Reduce-svn4829-src
+DISTNAME=	Reduce-svn4868-src
 
 MAINTAINER=	pfg@FreeBSD.org
 COMMENT=	REDUCE Codemist Standard Lisp general-purpose computer system
@@ -26,7 +26,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 USES=		autoreconf:build libtool gmake ncurses jpeg
 USE_XORG=	x11 xcursor xext xorgproto xft xrandr xrender
 
-SFSUBDIR=	snapshot_2018-11-23
+SFSUBDIR=	snapshot_2019-01-20
 
 TARGET_SDIR=	${ARCH:S/amd64/x86_64/}-unknown-${OPSYS:tl}${OSREL}
 CPPFLAGS+=	-I${NCURSESINC}

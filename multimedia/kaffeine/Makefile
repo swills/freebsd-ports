@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/multimedia/kaffeine/Makefile 490626 2019-01-18 05:18:34Z tcberner $
+# $FreeBSD: head/multimedia/kaffeine/Makefile 492466 2019-02-08 22:50:23Z tcberner $
 
 PORTNAME=	kaffeine
 DISTVERSION=	2.0.16-2
@@ -16,8 +16,8 @@ BUILD_DEPENDS=	v4l_compat>0:multimedia/v4l_compat
 LIB_DEPENDS=	libvlc.so:multimedia/vlc \
 		libdvbv5.so:multimedia/libv4l
 
-USES=		cmake cpe desktop-file-utils gettext pkgconfig \
-		kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext \
+		pkgconfig kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons i18n itemviews kio solid dbusaddons jobwidgets \
 		service widgetsaddons windowsystem xmlgui

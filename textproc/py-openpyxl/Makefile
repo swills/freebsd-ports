@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/textproc/py-openpyxl/Makefile 486336 2018-12-01 12:48:47Z antoine $
+# $FreeBSD: head/textproc/py-openpyxl/Makefile 492594 2019-02-10 10:01:12Z antoine $
 
 PORTNAME=	openpyxl
-PORTVERSION=	2.5.12
+PORTVERSION=	2.5.14
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

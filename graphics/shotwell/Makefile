@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org> et al.
-# $FreeBSD: head/graphics/shotwell/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/shotwell/Makefile 492433 2019-02-08 13:06:13Z cmt $
 
 PORTNAME=	shotwell
-PORTVERSION=	0.30.1
-PORTREVISION=	1
+PORTVERSION=	0.30.2
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 
@@ -61,6 +60,8 @@ FACED_LIB_DEPENDS=	libopencv_core.so:graphics/opencv-core \
 			libopencv_photo.so:graphics/opencv
 OPENMP_USES=		compiler:openmp
 OPENMP_USES_OFF=	compiler:c++11-lib
+
+PLIST_SUB=	DISTVERSION=${DISTVERSION}
 
 GLIB_SCHEMAS=	org.yorba.shotwell.gschema.xml org.yorba.shotwell-extras.gschema.xml
 

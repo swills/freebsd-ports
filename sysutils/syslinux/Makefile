@@ -1,12 +1,12 @@
 # Created by: luigi@FreeBSD.org
-# $FreeBSD: head/sysutils/syslinux/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/sysutils/syslinux/Makefile 492501 2019-02-09 14:49:00Z meta $
 
 PORTNAME=	syslinux
 PORTVERSION=	6.03
 CATEGORIES=	sysutils
 MASTER_SITES=	KERNEL_ORG/linux/utils/boot/syslinux
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	beastieboy@beastieboy.net
 COMMENT=	Boot loader for the Linux operating system
 
 LICENSE=	GPLv2

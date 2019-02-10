@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 489493 2019-01-06 13:28:24Z jbeich $
+# $FreeBSD: head/x11-toolkits/Makefile 492519 2019-02-09 20:48:10Z cmt $
 #
 
     COMMENT = X11 toolkits
@@ -263,6 +263,7 @@
     SUBDIR += skinlf
     SUBDIR += slingshot
     SUBDIR += soqt
+    SUBDIR += soqt-devel
     SUBDIR += swt
     SUBDIR += swt-devel
     SUBDIR += tepl

@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/p5-WWW-Telegram-BotAPI/Makefile 489364 2019-01-05 18:51:59Z swills $
+# $FreeBSD: head/www/p5-WWW-Telegram-BotAPI/Makefile 492573 2019-02-10 00:08:26Z sunpoet $
 
 PORTNAME=	WWW-Telegram-BotAPI
 PORTVERSION=	0.10
+PORTREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ROBERTOF
@@ -14,14 +15,11 @@ LICENSE=	ART20 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	p5-Carp>=0:devel/p5-Carp \
-		p5-URI-Encode>0:www/p5-URI-Encode \
-		p5-JSON-MaybeXS>=0:converters/p5-JSON-MaybeXS \
+RUN_DEPENDS=	p5-JSON-MaybeXS>=0:converters/p5-JSON-MaybeXS \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
-		p5-ExtUtils-MakeMaker>=0:devel/p5-ExtUtils-MakeMaker
+		p5-URI-Encode>0:www/p5-URI-Encode
 
 USES=		perl5
-
 USE_PERL5=	configure
 
 .include <bsd.port.mk>

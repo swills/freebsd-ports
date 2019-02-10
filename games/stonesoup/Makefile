@@ -1,9 +1,8 @@
 # Created by: Tobias Rehbein <tobias.rehbein@web.de>
-# $FreeBSD: head/games/stonesoup/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/stonesoup/Makefile 492410 2019-02-08 07:06:23Z lifanov $
 
 PORTNAME=	stonesoup
-PORTVERSION=	0.22.1
-PORTREVISION=	1
+PORTVERSION=	0.23.0
 CATEGORIES=	games
 
 MAINTAINER=	lifanov@FreeBSD.org
@@ -15,8 +14,10 @@ LICENSE_FILE=	${WRKSRC}/../../LICENSE
 NOT_FOR_ARCHS=		armv6
 NOT_FOR_ARCHS_REASON=	missing platform \#define or unsupported compiler
 
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
+
 USES=		bison compiler:c++11-lib gmake lua:51 perl5 pkgconfig \
-		shebangfix sqlite tar:xz
+		python:build shebangfix sqlite tar:xz
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	crawl
@@ -24,7 +25,9 @@ GH_PROJECT=	crawl
 
 USE_PERL5=	build
 SHEBANG_FILES=	util/gen-mi-enum \
-		util/good-depfile
+		util/good-depfile \
+		util/species-gen.py \
+		util/txc
 
 SAVEDIR=	\~/.stonesoup
 WRKSRC_SUBDIR=	crawl-ref/source

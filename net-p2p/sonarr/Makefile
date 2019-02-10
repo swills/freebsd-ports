@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/sonarr/Makefile 481580 2018-10-08 23:41:25Z feld $
+# $FreeBSD: head/net-p2p/sonarr/Makefile 492482 2019-02-09 01:03:36Z feld $
 
 PORTNAME=	sonarr
-PORTVERSION=	2.0.0.5252
+PORTVERSION=	2.0.0.5301
 PORTREVISION=	0
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://download.sonarr.tv/v2/master/mono/

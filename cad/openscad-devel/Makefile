@@ -1,9 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad-devel/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/cad/openscad-devel/Makefile 492332 2019-02-06 20:35:21Z mr $
 
 PORTNAME=	openscad
-PORTVERSION=	2018.10.22
-PORTREVISION=	4
+PORTVERSION=	2019.02.05
+PORTREVISION=	1
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-devel
 
@@ -34,7 +34,7 @@ USE_GL=		gl glu glew
 USE_GNOME=	glib20 libxml2
 USE_QT=		buildtools_build core concurrent_build dbus gui multimedia widgets
 USE_XORG=	x11
-GH_TAGNAME=	b8160eac0cca045e091fa65c3f7fbe68fdfada59
+GH_TAGNAME=	8ab3f307378613a5edd6440d948bdb80428ae33d
 QMAKE_ARGS=	CONFIG+="experimental" VERSION=${PORTVERSION}
 # Avoid overlinking: kvm, procstat, boost(thread, system), Qt5(concurrent, network, printsupport)
 LDFLAGS+=	-Wl,--as-needed

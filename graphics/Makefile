@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 492206 2019-02-05 12:57:58Z tobik $
+# $FreeBSD: head/graphics/Makefile 492520 2019-02-09 20:53:33Z cmt $
 #
 
     COMMENT = Graphics tools and libraries
@@ -844,6 +844,7 @@
     SUBDIR += py-graphy
     SUBDIR += py-gvgen
     SUBDIR += py-imageio
+    SUBDIR += py-imageio-ffmpeg
     SUBDIR += py-imagesize
     SUBDIR += py-imgurpython
     SUBDIR += py-leather
@@ -861,6 +862,7 @@
     SUBDIR += py-photocollage
     SUBDIR += py-pillow
     SUBDIR += py-pivy
+    SUBDIR += py-pivy-devel
     SUBDIR += py-plotly
     SUBDIR += py-png
     SUBDIR += py-poppler
@@ -1089,6 +1091,7 @@
     SUBDIR += xnview
     SUBDIR += xoris
     SUBDIR += xournal
+    SUBDIR += xournalpp
     SUBDIR += xpaint
     SUBDIR += xpdf
     SUBDIR += xpdf3

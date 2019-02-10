@@ -1,8 +1,7 @@
-# $FreeBSD: head/misc/kdeutils/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/misc/kdeutils/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	kdeutils
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	misc kde
 
 MAINTAINER=	kde@FreeBSD.org

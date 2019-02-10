@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ddtrace/Makefile 491051 2019-01-23 17:35:03Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ddtrace/Makefile 492454 2019-02-08 20:54:45Z sunpoet $
 
 PORTNAME=	ddtrace
-PORTVERSION=	0.19.0
+PORTVERSION=	0.19.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-msgpack1>=0:devel/rubygem-msgpack1 \
-		rubygem-opentracing>=0:devel/rubygem-opentracing
+		rubygem-opentracing>=0.4.1:devel/rubygem-opentracing
 
 USES=		gem
 USE_RUBY=	yes

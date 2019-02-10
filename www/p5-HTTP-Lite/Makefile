@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/www/p5-HTTP-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTTP-Lite/Makefile 492331 2019-02-06 20:28:40Z sunpoet $
 
 PORTNAME=	HTTP-Lite
 PORTVERSION=	2.44
@@ -12,6 +12,9 @@ COMMENT=	Perl5 modules for Lightweight HTTP implementation
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+TEST_DEPENDS=	p5-CGI>=0:www/p5-CGI
 
 USES=		perl5
 USE_PERL5=	configure

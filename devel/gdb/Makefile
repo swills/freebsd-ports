@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/gdb/Makefile 490337 2019-01-15 01:42:19Z jhb $
+# $FreeBSD: head/devel/gdb/Makefile 492373 2019-02-07 16:26:24Z pizzamig $
 
 PORTNAME=	gdb
-PORTVERSION=	8.2
-PORTREVISION=	3
+PORTVERSION=	8.2.1
+PORTREVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

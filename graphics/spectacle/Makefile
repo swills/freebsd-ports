@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/spectacle/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/spectacle/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	spectacle
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

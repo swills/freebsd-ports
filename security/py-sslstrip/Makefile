@@ -1,9 +1,9 @@
 # Created by: User & <dragon@njord.localdomain>
-# $FreeBSD: head/security/py-sslstrip/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/security/py-sslstrip/Makefile 492365 2019-02-07 13:23:51Z egypcio $
 
 PORTNAME=	sslstrip
 PORTVERSION=	0.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security python
 MASTER_SITES=	http://www.thoughtcrime.org/software/sslstrip/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,6 +12,7 @@ MAINTAINER=	kitchetech@gmail.com
 COMMENT=	Python program for SSL stripping
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}service_identity>=0:security/py-service_identity@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 NO_ARCH=	yes

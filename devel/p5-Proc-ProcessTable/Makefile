@@ -1,9 +1,8 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/p5-Proc-ProcessTable/Makefile 489710 2019-01-08 15:32:00Z swills $
+# $FreeBSD: head/devel/p5-Proc-ProcessTable/Makefile 492458 2019-02-08 20:55:07Z sunpoet $
 
 PORTNAME=	Proc-ProcessTable
-PORTVERSION=	0.55
-PORTREVISION=	1
+PORTVERSION=	0.56
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JWB
@@ -28,6 +27,8 @@ SHEBANG_FILES=	example.pl
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Proc/ProcessTable/ProcessTable.so
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 

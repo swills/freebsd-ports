@@ -1,5 +1,5 @@
 # Created by: gno@yahoo-inc.com
-# $FreeBSD: head/devel/json-c/Makefile 479045 2018-09-05 22:01:55Z sunpoet $
+# $FreeBSD: head/devel/json-c/Makefile 492533 2019-02-09 23:25:27Z sunpoet $
 
 PORTNAME=	json-c
 PORTVERSION=	0.13.1
@@ -11,12 +11,14 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	JSON (JavaScript Object Notation) implementation in C
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		autoreconf cpe gmake libtool pathfix pkgconfig
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
 USE_LDCONFIG=	yes
-USES=		autoreconf cpe gmake libtool pathfix pkgconfig
 
 CPE_VENDOR=	json-c_project
 

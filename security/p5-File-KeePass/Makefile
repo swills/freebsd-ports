@@ -1,9 +1,9 @@
 # Created by: Alexander Y. Grigoryev <alexander.4mail@gmail.com>
-# $FreeBSD: head/security/p5-File-KeePass/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/security/p5-File-KeePass/Makefile 492566 2019-02-10 00:07:56Z sunpoet $
 
 PORTNAME=	File-KeePass
 PORTVERSION=	2.03
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,7 +16,6 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Crypt-Rijndael>=1.0:security/p5-Crypt-Rijndael \
-		p5-MIME-Base64>=1.0:converters/p5-MIME-Base64 \
 		p5-XML-Parser>=0:textproc/p5-XML-Parser
 
 USES=		perl5

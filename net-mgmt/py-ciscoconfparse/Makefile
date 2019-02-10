@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-ciscoconfparse/Makefile 491837 2019-02-01 18:55:18Z kai $
+# $FreeBSD: head/net-mgmt/py-ciscoconfparse/Makefile 492443 2019-02-08 18:32:52Z kai $
 
 PORTNAME=	ciscoconfparse
-DISTVERSION=	1.3.20
+DISTVERSION=	1.3.29
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>0:devel/py-colorama@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 492299 2019-02-06 10:27:27Z tobik $
+# $FreeBSD: head/sysutils/Makefile 492408 2019-02-08 03:43:06Z yuri $
 #
 
     COMMENT = System utilities
@@ -218,10 +218,10 @@
     SUBDIR += cpupdate
     SUBDIR += cramfs
     SUBDIR += crashme
-    SUBDIR += createrepo
     SUBDIR += cronic
     SUBDIR += cronolog
     SUBDIR += cronolog-devel
+    SUBDIR += ctop
     SUBDIR += curly
     SUBDIR += currtime
     SUBDIR += cw
@@ -1524,7 +1524,6 @@
     SUBDIR += xvidcap
     SUBDIR += yadm
     SUBDIR += yank
-    SUBDIR += yum
     SUBDIR += zap
     SUBDIR += zbackup
     SUBDIR += zeitgeist

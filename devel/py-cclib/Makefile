@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-cclib/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/py-cclib/Makefile 492358 2019-02-07 10:55:09Z robak $
 
 PORTNAME=	cclib
-PORTVERSION=	1.5.3
-PORTREVISION=	1
+PORTVERSION=	1.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

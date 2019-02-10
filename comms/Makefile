@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 491334 2019-01-27 09:32:14Z tcberner $
+# $FreeBSD: head/comms/Makefile 492518 2019-02-09 20:36:10Z yuri $
 #
 
     COMMENT = Communication utilities
@@ -14,6 +14,7 @@
     SUBDIR += bfhist
     SUBDIR += bforce-kst
     SUBDIR += birda
+    SUBDIR += bladerf
     SUBDIR += bluegps
     SUBDIR += bluez-firmware
     SUBDIR += bpl+
@@ -166,6 +167,13 @@
     SUBDIR += sms_client
     SUBDIR += smstools3
     SUBDIR += snap7
+    SUBDIR += soapyairspy
+    SUBDIR += soapybladerf
+    SUBDIR += soapyplutosdr
+    SUBDIR += soapyredpitaya
+    SUBDIR += soapyremote
+    SUBDIR += soapysdrhackrf
+    SUBDIR += soapyuhd
     SUBDIR += spandsp
     SUBDIR += splat
     SUBDIR += sredird

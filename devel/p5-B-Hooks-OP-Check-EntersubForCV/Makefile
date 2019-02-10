@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-B-Hooks-OP-Check-EntersubForCV/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-B-Hooks-OP-Check-EntersubForCV/Makefile 492349 2019-02-07 09:00:44Z amdmi3 $
 
 PORTNAME=	B-Hooks-OP-Check-EntersubForCV
 PORTVERSION=	0.09
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to invoke callback on construction of entersub OPs
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\
 	p5-B-Hooks-OP-Check>=0.19:devel/p5-B-Hooks-OP-Check \

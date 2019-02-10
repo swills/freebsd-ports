@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb-cli/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/databases/puppetdb-cli/Makefile 492432 2019-02-08 12:23:26Z tobik $
 
 PORTNAME=	puppetdb-cli
 PORTVERSION=	1.2.5
@@ -16,7 +16,7 @@ BROKEN_SSL_REASON_libressl=		Needs an old version of OpenSSL (older than 1.1)
 BROKEN_SSL_REASON_libressl-devel=	Needs an old version of OpenSSL (older than 1.1)
 BROKEN_SSL_REASON_openssl111=		Needs an older version of OpenSSL (older than 1.1)
 
-USES=		cargo perl5 ssl
+USES=		cargo perl5
 USE_GITHUB=	yes
 USE_PERL5=	build
 

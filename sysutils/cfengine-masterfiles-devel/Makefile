@@ -1,5 +1,5 @@
 # Created by: cy@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine-masterfiles-devel/Makefile 490629 2019-01-18 05:30:08Z cy $
+# $FreeBSD: head/sysutils/cfengine-masterfiles-devel/Makefile 492513 2019-02-09 20:18:26Z cy $
 
 PORTNAME=	cfengine-masterfiles
 PORTVERSION=	3.${CFENGINE_COMMIT_DATE}
@@ -7,8 +7,8 @@ PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://cfengine-package-repos.s3.amazonaws.com/tarballs/
 PKGNAMESUFFIX=	-devel
-HASH=		5d505fd
-CFENGINE_COMMIT_DATE=	2019.01.17
+HASH=		027dcf0
+CFENGINE_COMMIT_DATE=	2019.02.09
 
 MAINTAINER=	cy@FreeBSD.org
 #		gjb@FreeBSD.org is also committer for this port

@@ -1,9 +1,9 @@
-# $FreeBSD: head/net/get_iplayer/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/net/get_iplayer/Makefile 492551 2019-02-10 00:06:43Z sunpoet $
 
 PORTNAME=	get_iplayer
 PORTVERSION=	3.17
 DISTVERSIONPREFIX=v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net multimedia
 
 MAINTAINER=	crees@FreeBSD.org
@@ -14,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML \
 		p5-Mojolicious>=0:www/p5-Mojolicious \
-		p5-JSON-PP>=0:converters/p5-JSON-PP \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-CGI>=0:www/p5-CGI
 

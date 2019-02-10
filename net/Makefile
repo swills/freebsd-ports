@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 492262 2019-02-05 18:01:36Z pi $
+# $FreeBSD: head/net/Makefile 492354 2019-02-07 09:43:16Z tobik $
 #
 
     COMMENT = Networking tools
@@ -470,6 +470,7 @@
     SUBDIR += miruo
     SUBDIR += mlvpn
     SUBDIR += mobile-broadband-provider-info
+    SUBDIR += mod_amd
     SUBDIR += mono-zeroconf
     SUBDIR += mopd
     SUBDIR += morebalance

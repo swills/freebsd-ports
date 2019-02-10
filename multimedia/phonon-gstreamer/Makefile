@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/phonon-gstreamer/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/multimedia/phonon-gstreamer/Makefile 492466 2019-02-08 22:50:23Z tcberner $
 
 PORTNAME=	phonon
 PORTVERSION=	4.9.0
@@ -35,7 +35,7 @@ USES+=		qt:4
 USE_QT=		corelib gui opengl phonon \
 		qmake_build moc_build rcc_build uic_build
 .  else
-USES+=		kde:5 qt:5
+USES+=		compiler:c++11-lang kde:5 qt:5
 USE_KDE=	ecm
 USE_QT=		core gui opengl phonon4 widgets x11extras \
 		buildtools_build qmake_build

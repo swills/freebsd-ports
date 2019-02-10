@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-msoffcrypto-tool/Makefile 487325 2018-12-12 21:01:51Z antoine $
+# $FreeBSD: head/security/py-msoffcrypto-tool/Makefile 492593 2019-02-10 09:54:59Z antoine $
 
 PORTNAME=	msoffcrypto-tool
-PORTVERSION=	4.6.3
+PORTVERSION=	4.6.4
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

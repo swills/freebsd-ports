@@ -1,5 +1,5 @@
 # Created by: Olexander Melnyk <olexander.v.melnyk@gmail.com>
-# $FreeBSD: head/databases/luadbi/Makefile 448847 2017-08-28 02:56:49Z vanilla $
+# $FreeBSD: head/databases/luadbi/Makefile 492355 2019-02-07 09:59:42Z mfechner $
 
 PORTNAME=	luadbi
 PORTVERSION=	0.6
@@ -48,7 +48,7 @@ MYSQL_PLIST_FILES=	%%LUA_MODLIBDIR%%/dbd/mysql.so
 MYSQL_MAKE_ENV+=	MYSQL_LDFLAGS="-L${LOCALBASE}/lib/mysql -lmysqlclient"
 MYSQL_MAKE_ENV+=	MYSQL_INC="-I${LOCALBASE}/include/mysql"
 
-SQLITE3_USES=		sqlite:3
+SQLITE3_USES=		localbase:ldflags sqlite:3
 SQLITE3_ALL_TARGET=	sqlite3
 SQLITE3_PLIST_FILES=	%%LUA_MODLIBDIR%%/dbd/sqlite3.so
 SQLITE3_MAKE_ENV+=	SQLITE3_INC=""

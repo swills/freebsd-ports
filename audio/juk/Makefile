@@ -1,8 +1,7 @@
-# $FreeBSD: head/audio/juk/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/audio/juk/Makefile 492466 2019-02-08 22:50:23Z tcberner $
 
 PORTNAME=	juk
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	audio kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,7 +11,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libtag.so:audio/taglib
 
-USES=		cmake kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 qt:5 tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		coreaddons crash globalaccel i18n iconthemes itemviews \
 		jobwidgets kio notifications service solid sonnet textwidgets \

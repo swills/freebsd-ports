@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/libfec/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/comms/libfec/Makefile 492337 2019-02-06 23:49:11Z db $
 
 PORTNAME=	libfec
 PORTVERSION=	3.0.1
@@ -14,12 +14,10 @@ COMMENT=	Several forward error correction (FEC) decoders
 
 LICENSE=	LGPL21
 
-BROKEN_powerpc64=	fails to compile: cc1: error: unrecognized command line option -faltivec
-
 MAKEFILE=	makefile
 
 GNU_CONFIGURE=	yes
-USES=		autoreconf gmake tar:bzip2
+USES=		autoreconf compiler:c11 gmake tar:bzip2
 USE_LDCONFIG=	yes
 PLIST_FILES=	include/fec.h		\
 		lib/libfec.so		\

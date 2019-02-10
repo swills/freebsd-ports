@@ -1,8 +1,9 @@
 # Created by: John D. "Trix" Farrar <trix@basement.net>
-# $FreeBSD: head/sysutils/logwatch/Makefile 423012 2016-09-30 19:08:22Z pawel $
+# $FreeBSD: head/sysutils/logwatch/Makefile 492569 2019-02-10 00:08:11Z sunpoet $
 
 PORTNAME=	logwatch
 PORTVERSION=	7.4.3
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -11,8 +12,6 @@ COMMENT=	Log file analysis program
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-RUN_DEPENDS=	p5-MIME-Base64>=0:converters/p5-MIME-Base64
 
 USES=		perl5 shebangfix
 USE_PERL5=	run

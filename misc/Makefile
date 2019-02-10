@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 491026 2019-01-23 09:31:55Z yuri $
+# $FreeBSD: head/misc/Makefile 492510 2019-02-09 20:06:26Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -216,6 +216,7 @@
     SUBDIR += lesspipe
     SUBDIR += libeatmydata
     SUBDIR += libemos
+    SUBDIR += libiio
     SUBDIR += libisocodes
     SUBDIR += libkeduvocdocument
     SUBDIR += liblxi
@@ -457,6 +458,7 @@
     SUBDIR += smssend
     SUBDIR += snakemake
     SUBDIR += soapysdr
+    SUBDIR += soapysdr-rtlsdr
     SUBDIR += solarized
     SUBDIR += spamcalc
     SUBDIR += sshbuddy

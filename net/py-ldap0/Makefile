@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-ldap0/Makefile 469253 2018-05-06 21:39:24Z girgen $
+# $FreeBSD: head/net/py-ldap0/Makefile 492575 2019-02-10 00:08:37Z sunpoet $
 
 PORTNAME=	ldap0
 PORTVERSION=	0.0.60
@@ -18,6 +18,7 @@ MAKE_ENV+=	INCLUDES=${LOCALBASE}/include
 WANT_OPENLDAP_SASL=yes
 
 USES=		python:2.7
+USE_LOCALE=	en_US.UTF-8
 USE_OPENLDAP=	yes
 USE_PYTHON=	autoplist distutils
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 491455 2019-01-28 06:12:18Z yuri $
+# $FreeBSD: head/databases/Makefile 492606 2019-02-10 12:13:07Z antoine $
 #
 
     COMMENT = Databases and related software
@@ -137,6 +137,7 @@
     SUBDIR += ldb
     SUBDIR += ldb12
     SUBDIR += ldb13
+    SUBDIR += ldb14
     SUBDIR += leo_center
     SUBDIR += leofs
     SUBDIR += leveldb
