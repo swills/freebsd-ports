@@ -56,7 +56,9 @@
     SUBDIR += asmem
     SUBDIR += asmon
     SUBDIR += asusoled
-    SUBDIR += atf-allwinner
+    SUBDIR += atf-master
+    SUBDIR += atf-sun50i_a64
+    SUBDIR += atf-rk3399
     SUBDIR += atitvout
     SUBDIR += atop
     SUBDIR += auto-admin
@@ -216,10 +218,10 @@
     SUBDIR += cpupdate
     SUBDIR += cramfs
     SUBDIR += crashme
-    SUBDIR += createrepo
     SUBDIR += cronic
     SUBDIR += cronolog
     SUBDIR += cronolog-devel
+    SUBDIR += ctop
     SUBDIR += curly
     SUBDIR += currtime
     SUBDIR += cw
@@ -396,6 +398,7 @@
     SUBDIR += fusefs-rar2fs
     SUBDIR += fusefs-s3backer
     SUBDIR += fusefs-s3fs
+    SUBDIR += fusefs-sandboxfs
     SUBDIR += fusefs-simple-mtpfs
     SUBDIR += fusefs-smbnetfs
     SUBDIR += fusefs-sqlfs
@@ -1371,6 +1374,7 @@
     SUBDIR += u-boot-cubox-hummingboard
     SUBDIR += u-boot-duovero
     SUBDIR += u-boot-imx-serial-loader
+    SUBDIR += u-boot-firefly-rk3399
     SUBDIR += u-boot-master
     SUBDIR += u-boot-nanopi-a64
     SUBDIR += u-boot-nanopi-m1plus
@@ -1520,7 +1524,6 @@
     SUBDIR += xvidcap
     SUBDIR += yadm
     SUBDIR += yank
-    SUBDIR += yum
     SUBDIR += zap
     SUBDIR += zbackup
     SUBDIR += zeitgeist
