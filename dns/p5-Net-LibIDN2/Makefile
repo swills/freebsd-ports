@@ -1,9 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Net-LibIDN2/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-LibIDN2/Makefile 492534 2019-02-09 23:25:36Z sunpoet $
 
 PORTNAME=	Net-LibIDN2
 PORTVERSION=	1.00
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Olexander Melnyk <olexander.v.melnyk@gmail.com>
-# $FreeBSD: head/databases/luadbi/Makefile 448847 2017-08-28 02:56:49Z vanilla $
+# $FreeBSD: head/databases/luadbi/Makefile 492355 2019-02-07 09:59:42Z mfechner $
 
 PORTNAME=	luadbi
 PORTVERSION=	0.6

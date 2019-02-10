@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 492250 2019-02-05 15:30:29Z manu $
+# $FreeBSD: head/MOVED 492600 2019-02-10 11:26:24Z pi $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -11588,3 +11588,7 @@ net-mgmt/icli||2019-02-04|Removed, depends on expired net-mgmt/icinga-core
 net-mgmt/icinga-classicweb||2019-02-04|Has expired: Upstream EOLed Icinga 1.x from 2018-12-31
 net-mgmt/pnp-icinga||2019-02-04|Removed, depends on expired net-mgmt/icinga-classicweb
 sysutils/atf-allwinner|devel/atf-sun50i_a64|2019-02-05|Respect the ARM TF-A platform name
+sysutils/yum||2019-02-07|Has expired: Abandoned upstream, does not work with python3
+sysutils/createrepo||2019-02-07|Has expired: Abandoned upstream, does not work with python3
+misc/soapysdr-hackrf|comms/soapysdrhackrf|2019-02-09|Move to the proper category/name
+math/wxMaxima|math/wxmaxima|2019-02-10|rename for consistency

@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-gollum-lib/Makefile 460492 2018-01-31 15:52:57Z sunpoet $
+# $FreeBSD: head/www/rubygem-gollum-lib/Makefile 492370 2019-02-07 15:56:02Z mfechner $
 
 PORTNAME=	gollum-lib
 PORTVERSION=	4.2.10

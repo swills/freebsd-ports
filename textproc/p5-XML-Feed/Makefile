@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/p5-XML-Feed/Makefile 492222 2019-02-05 13:49:03Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Feed/Makefile 492399 2019-02-07 23:14:41Z sunpoet $
 
 PORTNAME=	XML-Feed
-PORTVERSION=	0.57
+PORTVERSION=	0.59
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

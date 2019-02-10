@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/lokalize/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/devel/lokalize/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	lokalize
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	devel kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

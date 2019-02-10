@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Perl-PrereqScanner-NotQuiteLite/Makefile 492213 2019-02-05 13:48:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Perl-PrereqScanner-NotQuiteLite/Makefile 492392 2019-02-07 23:14:03Z sunpoet $
 
 PORTNAME=	Perl-PrereqScanner-NotQuiteLite
-PORTVERSION=	0.9903
+PORTVERSION=	0.9904
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

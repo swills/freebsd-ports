@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 491571 2019-01-29 15:12:52Z jsm $
+# $FreeBSD: head/x11-wm/Makefile 492352 2019-02-07 09:21:51Z tobik $
 #
 
     COMMENT = X11 window managers
@@ -8,6 +8,7 @@
     SUBDIR += afterstep-stable
     SUBDIR += amiwm
     SUBDIR += antiwm
+    SUBDIR += aphelia
     SUBDIR += awesome
     SUBDIR += awesome-vicious
     SUBDIR += bbkeys

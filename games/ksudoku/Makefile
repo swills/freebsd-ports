@@ -1,14 +1,13 @@
-# $FreeBSD: head/games/ksudoku/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/games/ksudoku/Makefile 492466 2019-02-08 22:50:23Z tcberner $
 
 PORTNAME=	ksudoku
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-USES=		cmake kde:5 qt:5 tar:xz
+USES=		cmake compiler:c++11-lang kde:5 qt:5 tar:xz
 USE_GL=		gl glu
 USE_KDE=	archive auth codecs completion config configwidgets \
 		coreaddons crash ecm guiaddons i18n jobwidgets kio \

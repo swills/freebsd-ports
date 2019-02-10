@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/databases/rubygem-globalid-rails5/Makefile 452880 2017-10-25 18:29:09Z sunpoet $
+# $FreeBSD: head/databases/rubygem-globalid-rails5/Makefile 492460 2019-02-08 20:55:18Z sunpoet $
 
 PORTNAME=	globalid
-PORTVERSION=	0.4.1
+PORTVERSION=	0.4.2
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-activesupport5>0:devel/rubygem-activesupport5
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/fricas/Makefile 473491 2018-06-28 08:41:53Z yuri $
+# $FreeBSD: head/math/fricas/Makefile 492527 2019-02-09 22:31:58Z yuri $
 
 PORTNAME=	fricas
-DISTVERSION=	1.3.4
-PORTREVISION=	1
+DISTVERSION=	1.3.5
 DISTVERSIONSUFFIX=	-full
 CATEGORIES=	math
 MASTER_SITES=	SF

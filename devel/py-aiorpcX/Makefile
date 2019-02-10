@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/py-aiorpcX/Makefile 488758 2018-12-31 07:40:38Z ehaupt $
+# $FreeBSD: head/devel/py-aiorpcX/Makefile 492604 2019-02-10 12:00:06Z ehaupt $
 
 PORTNAME=	aiorpcX
-PORTVERSION=	0.10.2
+PORTVERSION=	0.10.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

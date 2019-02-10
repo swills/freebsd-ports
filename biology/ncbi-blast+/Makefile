@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/ncbi-blast+/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
+# $FreeBSD: head/biology/ncbi-blast+/Makefile 492534 2019-02-09 23:25:36Z sunpoet $
 
 PORTNAME=	ncbi-blast+
 DISTVERSION=	2.8.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology perl5 python
 MASTER_SITES=	https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ \
 		https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/${PORTVERSION}/

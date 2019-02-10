@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/games/dunelegacy/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/dunelegacy/Makefile 492446 2019-02-08 20:26:06Z amdmi3 $
 
 PORTNAME=	dunelegacy
 PORTVERSION=	0.96.4
@@ -18,5 +18,9 @@ USES=		autoreconf compiler:c++11-lib tar:bzip2 pkgconfig
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl2 mixer2
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|MIX_INIT_FLUIDSYNTH|MIX_INIT_MID|g' \
+		${WRKSRC}/src/FileClasses/music/*.cpp
 
 .include <bsd.port.mk>

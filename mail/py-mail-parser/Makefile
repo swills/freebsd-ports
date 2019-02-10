@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/mail/py-mail-parser/Makefile 492091 2019-02-04 00:01:11Z sunpoet $
+# $FreeBSD: head/mail/py-mail-parser/Makefile 492322 2019-02-06 20:27:51Z sunpoet $
 
 PORTNAME=	mail-parser
-PORTVERSION=	3.9.1
+PORTVERSION=	3.9.2
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,5 +19,7 @@ RUN_DEPENDS=	msgconvert:mail/p5-Email-Outlook-Message \
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

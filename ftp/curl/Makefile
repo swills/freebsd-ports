@@ -1,8 +1,8 @@
 # Created by: Neil Blakey-Milner <nbm@rucus.ru.ac.za>
-# $FreeBSD: head/ftp/curl/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
+# $FreeBSD: head/ftp/curl/Makefile 492534 2019-02-09 23:25:36Z sunpoet $
 
 PORTNAME=	curl
-PORTVERSION=	7.63.0
+PORTVERSION=	7.64.0
 PORTREVISION=	1
 CATEGORIES=	ftp net www
 MASTER_SITES=	https://curl.haxx.se/download/ \
@@ -47,8 +47,7 @@ USES=		cpe gmake libtool localbase pathfix perl5 shebangfix tar:xz
 USE_PERL5=	build
 
 CONFIGURE_ARGS=	--disable-werror \
-		--with-zsh-functions-dir=${LOCALBASE}/share/zsh/site-functions \
-		--without-axtls
+		--with-zsh-functions-dir=${LOCALBASE}/share/zsh/site-functions
 CONFIGURE_ENV=	LOCALBASE=${LOCALBASE} \
 		ac_cv_func_SSLv2_client_method=no
 GNU_CONFIGURE=	yes

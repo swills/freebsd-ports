@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-MaxMind-DB-Reader-XS/Makefile 488984 2019-01-01 20:34:55Z sunpoet $
+# $FreeBSD: head/net/p5-MaxMind-DB-Reader-XS/Makefile 492579 2019-02-10 00:09:36Z sunpoet $
 
 PORTNAME=	MaxMind-DB-Reader-XS
 PORTVERSION=	1.000007
@@ -29,7 +29,7 @@ TEST_DEPENDS=	p5-Module-Implementation>=0:devel/p5-Module-Implementation \
 		p5-Test-Number-Delta>=0:devel/p5-Test-Number-Delta \
 		p5-Test-Requires>=0:devel/p5-Test-Requires
 
-USES=		perl5
+USES=		compiler:c11 perl5
 USE_PERL5=	modbuild
 
 post-install:

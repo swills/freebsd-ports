@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 491468 2019-01-28 09:33:12Z yuri $
+# $FreeBSD: head/science/Makefile 492529 2019-02-09 22:51:25Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -238,6 +238,7 @@
     SUBDIR += py-molmod
     SUBDIR += py-netCDF4
     SUBDIR += py-obspy
+    SUBDIR += py-oddt
     SUBDIR += py-openpiv
     SUBDIR += py-paida
     SUBDIR += py-paramz

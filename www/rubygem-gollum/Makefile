@@ -1,5 +1,5 @@
 # Created by: Sir l33tname <sirl33tname@gmail.com>
-# $FreeBSD: head/www/rubygem-gollum/Makefile 452121 2017-10-15 00:38:39Z sunpoet $
+# $FreeBSD: head/www/rubygem-gollum/Makefile 492371 2019-02-07 16:01:30Z mfechner $
 
 PORTNAME=	gollum
 PORTVERSION=	4.1.4

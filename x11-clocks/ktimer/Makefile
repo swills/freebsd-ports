@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-clocks/ktimer/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11-clocks/ktimer/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	ktimer
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-clocks kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

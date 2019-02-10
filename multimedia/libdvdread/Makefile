@@ -1,9 +1,8 @@
 # Created by: Marc van Woerkom <3d@FreeBSD.org>
-# $FreeBSD: head/multimedia/libdvdread/Makefile 489743 2019-01-08 21:50:21Z martymac $
+# $FreeBSD: head/multimedia/libdvdread/Makefile 492386 2019-02-07 21:48:34Z martymac $
 
 PORTNAME=	libdvdread
-PORTVERSION=	6.0.0
-PORTREVISION=	1
+PORTVERSION=	6.0.1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.videolan.org/pub/videolan/libdvdread/${PORTVERSION}/ \
 		http://dvdnav.mplayerhq.hu/releases/ \
@@ -15,10 +14,11 @@ COMMENT=	Videolan version of the libdvdread project
 
 LICENSE=	GPLv2
 
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
 USES=		tar:bz2 gmake libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
+
+GNU_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
 
 PORTDOCS=	AUTHORS COPYING ChangeLog NEWS README TODO
 

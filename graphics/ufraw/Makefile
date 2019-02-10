@@ -1,9 +1,9 @@
 # Created by: Mark Murray <markm@FreeBSD.org>
-# $FreeBSD: head/graphics/ufraw/Makefile 487840 2018-12-20 05:08:48Z linimon $
+# $FreeBSD: head/graphics/ufraw/Makefile 492491 2019-02-09 11:04:39Z tobik $
 
 PORTNAME=	ufraw
 PORTVERSION=	0.22
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 
 MAINTAINER=	rodrigo@FreeBSD.org
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff \
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-extras
-USES=		compiler:c++11-lang gettext gmake jpeg pkgconfig autoreconf
+USES=		compiler:c++11-lang gettext gmake jpeg pkgconfig autoreconf gnome
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib

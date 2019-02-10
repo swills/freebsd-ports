@@ -1,9 +1,9 @@
 # Created by: Bartek Rutkowski <robak@FreeBSD.org>
-# $FreeBSD: head/devel/b2/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/b2/Makefile 492465 2019-02-08 22:46:11Z robak $
 
 PORTNAME=	b2
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1.0
+DISTVERSION=	1.3.8
 CATEGORIES=	devel
 
 MAINTAINER=	robak@FreeBSD.org

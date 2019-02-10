@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kodi/Makefile 491744 2019-01-31 17:51:39Z tobik $
+# $FreeBSD: head/multimedia/kodi/Makefile 492470 2019-02-08 23:33:11Z amdmi3 $
 
 PORTNAME=	kodi
 DISTVERSION=	17.6
@@ -187,7 +187,7 @@ CONFIGURE_ARGS+=	--disable-debug --enable-gl --disable-gles \
 			--disable-libbluetooth --disable-libcap \
 			--disable-gtest --disable-libav-compat
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 .if ${ARCH} != armv6 && ${ARCH} != armv7
 BUILD_DEPENDS+=	gtk-update-icon-cache:x11-toolkits/gtk20
@@ -233,4 +233,4 @@ post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/kodi/kodi-xrandr
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	ktp-accounts-kcm
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

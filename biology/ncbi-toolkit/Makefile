@@ -1,9 +1,9 @@
 # Created by: tonym
-# $FreeBSD: head/biology/ncbi-toolkit/Makefile 489529 2019-01-06 20:39:43Z sunpoet $
+# $FreeBSD: head/biology/ncbi-toolkit/Makefile 492534 2019-02-09 23:25:36Z sunpoet $
 
 PORTNAME=	ncbi-toolkit
 DISTVERSION=	2017.01.06	# containing BLAST v2.2.27 (? is this true)
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools/old/${PORTVERSION:S/.//g}/
 DISTNAME=	ncbi

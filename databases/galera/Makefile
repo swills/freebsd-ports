@@ -1,5 +1,5 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/databases/galera/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/databases/galera/Makefile 492320 2019-02-06 19:46:15Z vd $
 
 PORTNAME=	galera
 PORTVERSION?=	25.3.25
@@ -12,8 +12,6 @@ COMMENT=	Synchronous multi-master replication engine
 
 LICENSE=	GPLv2
 
-BROKEN_SSL=		openssl111
-BROKEN_SSL_REASON_openssl111=	check that SSL devel headers are installed and usable
 BROKEN_aarch64=		fails to compile: gu_int128.h: use of undeclared identifier '__bswap64_var'
 BROKEN_armv6=		fails to compile: gu_int128.h: use of undeclared identifier '__bswap64_var'
 BROKEN_armv7=		fails to compile: gu_int128.h: use of undeclared identifier '__bswap64_var'

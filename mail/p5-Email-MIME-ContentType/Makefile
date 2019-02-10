@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-MIME-ContentType/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Email-MIME-ContentType/Makefile 492548 2019-02-10 00:06:28Z sunpoet $
 
 PORTNAME=	Email-MIME-ContentType
 PORTVERSION=	1.022
@@ -13,9 +13,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 

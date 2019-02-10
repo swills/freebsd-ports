@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-fm/konqueror/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11-fm/konqueror/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	konqueror
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-fm www kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

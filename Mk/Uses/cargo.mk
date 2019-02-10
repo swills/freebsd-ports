@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/Mk/Uses/cargo.mk 492431 2019-02-08 12:19:30Z tobik $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -184,6 +184,8 @@ DEV_WARNING+=	"CARGO_CRATES=openssl-0.10.3 or older do not support OpenSSL 1.1.1
 .include "${USESDIR}/ssl.mk"
 CARGO_ENV+=	OPENSSL_LIB_DIR=${OPENSSLLIB} \
 		OPENSSL_INCLUDE_DIR=${OPENSSLINC}
+# Silence bogus QA warning about needing USES=ssl
+QA_ENV+=	USESSSL=yes
 .endif
 
 .if ${CARGO_CRATES:Mpkg-config-[0-9]*}

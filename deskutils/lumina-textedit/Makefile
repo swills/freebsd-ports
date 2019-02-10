@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-textedit/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/lumina-textedit/Makefile 492488 2019-02-09 09:30:41Z amdmi3 $
 
 PORTNAME=	lumina-textedit
 PORTVERSION=	1.4.1
@@ -10,6 +10,7 @@ MAINTAINER=	jt@ixsystems.com
 COMMENT=	Plaintext editor from the Lumina Desktop
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../../LICENSE
 
 CONFLICTS_INSTALL=	lumina-1.2.*
 

@@ -1,8 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/mail/delatt/Makefile 428106 2016-12-08 08:35:03Z ehaupt $
+# $FreeBSD: head/mail/delatt/Makefile 492555 2019-02-10 00:07:03Z sunpoet $
 
 PORTNAME=	delatt
 DISTVERSION=	1.1.3
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	LOCAL/ehaupt
 
@@ -10,8 +11,6 @@ MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Strip attachments from email
 
 LICENSE=	GPLv2
-
-RUN_DEPENDS=	p5-MIME-Base64>=0:converters/p5-MIME-Base64
 
 USES=		shebangfix perl5
 USE_PERL5=	run

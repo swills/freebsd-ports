@@ -1,8 +1,7 @@
-# $FreeBSD: head/games/kdegames/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/games/kdegames/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	kdegames
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	games kde
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/krdc/Makefile 491457 2019-01-28 06:56:31Z araujo $
+# $FreeBSD: head/net/krdc/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	krdc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

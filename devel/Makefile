@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 492235 2019-02-05 14:26:35Z sunpoet $
+# $FreeBSD: head/devel/Makefile 492517 2019-02-09 20:35:14Z cmt $
 #
 
     COMMENT = Development utilities
@@ -771,6 +771,7 @@
     SUBDIR += gindent
     SUBDIR += gio-sharp
     SUBDIR += git
+    SUBDIR += git-absorb
     SUBDIR += git-bzr-ng
     SUBDIR += git-cinnabar
     SUBDIR += git-codereview
@@ -5392,6 +5393,8 @@
     SUBDIR += pyrex
     SUBDIR += pyside
     SUBDIR += pyside-tools
+    SUBDIR += pyside2
+    SUBDIR += pyside2-tools
     SUBDIR += pyst
     SUBDIR += pysvn
     SUBDIR += pythk
@@ -6232,6 +6235,7 @@
     SUBDIR += shflags
     SUBDIR += shfmt
     SUBDIR += shiboken
+    SUBDIR += shiboken2
     SUBDIR += shmap
     SUBDIR += shtk
     SUBDIR += shtool

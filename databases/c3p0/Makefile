@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/c3p0/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/databases/c3p0/Makefile 492503 2019-02-09 16:35:43Z olgeni $
 
 PORTNAME=	c3p0
-PORTVERSION=	0.9.5.2
+PORTVERSION=	0.9.5.3
 CATEGORIES=	databases java
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-bin/${PORTNAME}-${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.bin

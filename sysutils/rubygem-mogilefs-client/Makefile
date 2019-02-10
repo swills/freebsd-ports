@@ -1,8 +1,8 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-mogilefs-client/Makefile 436768 2017-03-23 12:48:32Z trociny $
+# $FreeBSD: head/sysutils/rubygem-mogilefs-client/Makefile 492500 2019-02-09 14:35:38Z trociny $
 
 PORTNAME=	mogilefs-client
-PORTVERSION=	3.11.1
+PORTVERSION=	3.12.0
 CATEGORIES=	sysutils
 MASTER_SITES=	RG
 

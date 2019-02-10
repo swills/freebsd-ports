@@ -1,9 +1,9 @@
 # Created by: Oliver Eikemeier <eikemeier@fillmore-labs.com>
-# $FreeBSD: head/databases/gnatsweb4/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/databases/gnatsweb4/Makefile 492553 2019-02-10 00:06:53Z sunpoet $
 
 PORTNAME=	gnatsweb
 PORTVERSION=	4.00
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	databases devel www
 MASTER_SITES=	GNU
 
@@ -12,8 +12,6 @@ COMMENT=	Gnatsweb, a GNATS web interface
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-RUN_DEPENDS=	p5-MIME-Base64>=0:converters/p5-MIME-Base64
 
 USES=		apache:run,2.2+ perl5 shebangfix
 SHEBANG_FILES=	gnatsweb.pl

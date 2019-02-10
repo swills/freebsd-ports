@@ -1,10 +1,9 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/nextcloudclient/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/nextcloudclient/Makefile 492351 2019-02-07 09:07:01Z mr $
 
 PORTNAME=	nextcloudclient
-PORTVERSION=	0.0.0.20181226
+PORTVERSION=	0.0.0.20190207
 PORTREVISION=	1
-#PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	mr@FreeBSD.org
@@ -29,7 +28,7 @@ DEBUG=		yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	nextcloud
 GH_PROJECT=	desktop
-GH_TAGNAME=	9cea77b0fbc7130134a02475ade3392c402ae1ce
+GH_TAGNAME=	ca624def40d5e431bc84a157ffba1bc187d5ecee
 
 #OPTIONS_DEFINE=		DEBUG DOCS
 OPTIONS_DEFINE=		DEBUG # DOCS doesn't build currently

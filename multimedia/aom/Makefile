@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/aom/Makefile 492183 2019-02-05 00:50:21Z jbeich $
+# $FreeBSD: head/multimedia/aom/Makefile 492477 2019-02-09 00:36:57Z jbeich $
 
 PORTNAME=	aom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.0-1297
-DISTVERSIONSUFFIX=	-g52ea88fd1
+DISTVERSION=	1.0.0-1318
+DISTVERSIONSUFFIX=	-g4f1f181cc
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -25,8 +25,8 @@ CMAKE_ON=	BUILD_SHARED_LIBS
 CMAKE_OFF=	ENABLE_DOCS ENABLE_TESTS
 
 post-patch:
-# Extract (snapshot) version from GH_TAGNAME instead of CHANGELOG
-	@${REINPLACE_CMD} 's,$${AOM_ROOT}/CHANGELOG,${GH_TAGNAME:S/^v//},' \
+# Extract (snapshot) version from the port instead of CHANGELOG
+	@${REINPLACE_CMD} 's,$${AOM_ROOT}/CHANGELOG,${DISTVERSIONFULL:S/^v//},' \
 		${WRKSRC}/build/cmake/version.cmake
 
 .include <bsd.port.mk>

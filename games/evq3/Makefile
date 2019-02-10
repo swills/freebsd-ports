@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/evq3/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/evq3/Makefile 492471 2019-02-08 23:33:15Z amdmi3 $
 
 PORTNAME=	evq3
 PORTVERSION=	1.3.20080810
@@ -46,7 +46,7 @@ VM_ARCHS=	amd64 i386
 
 .include "${.CURDIR}/../quake3-data/Makefile.include"
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 .for i in ${ARCH}
 .   if ${VM_ARCHS:M${i}} != ""
@@ -156,4 +156,4 @@ maint-gen-distfile:
 	tar cjf ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ${PORTNAME}
 	${RM} -r ${PORTNAME}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 491326 2019-01-27 05:55:04Z tobik $
+# $FreeBSD: head/emulators/Makefile 492411 2019-02-08 07:44:45Z tobik $
 #
 
     COMMENT = Emulators for other operating systems
@@ -135,6 +135,7 @@
     SUBDIR += stella
     SUBDIR += stonx
     SUBDIR += swine
+    SUBDIR += teo
     SUBDIR += tiemu3
     SUBDIR += tilem
     SUBDIR += tme

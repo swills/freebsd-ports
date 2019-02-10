@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/print/rubygem-pdf-reader/Makefile 461913 2018-02-15 12:47:48Z sunpoet $
+# $FreeBSD: head/print/rubygem-pdf-reader/Makefile 492601 2019-02-10 11:27:11Z antoine $
 
 PORTNAME=	pdf-reader
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	print rubygems
 MASTER_SITES=	RG
 

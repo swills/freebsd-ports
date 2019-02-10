@@ -1,5 +1,5 @@
 # Created by: nsayer@FreeBSD.org
-# $FreeBSD: head/security/libmcrypt/Makefile 393429 2015-08-02 15:03:19Z tijl $
+# $FreeBSD: head/security/libmcrypt/Makefile 492442 2019-02-08 18:19:10Z kai $
 
 PORTNAME=	libmcrypt
 PORTVERSION=	2.5.8
@@ -7,15 +7,17 @@ PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	SF/mcrypt/Libmcrypt/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	john@essenz.com
 COMMENT=	Multi-cipher cryptographic library (used in PHP)
 
-LICENSE=	LGPL21
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING.LIB
+
+USES=		libtool
+USE_LDCONFIG=	yes
 
 CONFIGURE_ARGS=	--enable-static
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USE_LDCONFIG=	yes
-USES=		libtool
 
 .include <bsd.port.mk>

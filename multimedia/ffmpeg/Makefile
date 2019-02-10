@@ -1,9 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/multimedia/ffmpeg/Makefile 492305 2019-02-06 13:33:13Z jbeich $
+# $FreeBSD: head/multimedia/ffmpeg/Makefile 492528 2019-02-09 22:44:38Z jbeich $
 
 PORTNAME=	ffmpeg
-PORTVERSION=	4.1
-PORTREVISION=	5
+PORTVERSION=	4.1.1
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	https://ffmpeg.org/releases/

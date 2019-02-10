@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 491519 2019-01-28 21:59:41Z se $
+# $FreeBSD: head/math/Makefile 492600 2019-02-10 11:26:24Z pi $
 #
 
     COMMENT = Mathematics
@@ -234,6 +234,8 @@
     SUBDIR += geogram
     SUBDIR += geonext
     SUBDIR += gexpr
+    SUBDIR += gfan
+    SUBDIR += gfanlib
     SUBDIR += ggobi
     SUBDIR += gh-bc
     SUBDIR += giacxcas
@@ -717,6 +719,8 @@
     SUBDIR += py-igraph
     SUBDIR += py-intspan
     SUBDIR += py-keras
+    SUBDIR += py-keras-applications
+    SUBDIR += py-keras-preprocessing
     SUBDIR += py-levmar
     SUBDIR += py-libpoly
     SUBDIR += py-luminol
@@ -878,7 +882,7 @@
     SUBDIR += wfmath
     SUBDIR += why3
     SUBDIR += wingz3
-    SUBDIR += wxMaxima
+    SUBDIR += wxmaxima
     SUBDIR += x12arima
     SUBDIR += xblas
     SUBDIR += xfce4-calculator-plugin

@@ -1,9 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pgbarman/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/pgbarman/Makefile 492348 2019-02-07 07:42:09Z matthew $
 
 PORTNAME=	barman
-DISTVERSION=	2.5
-PORTREVISION=	1
+DISTVERSION=	2.6
 CATEGORIES=	databases
 MASTER_SITES=	SF/${PKGNAMEPREFIX}${PORTNAME}/${DISTVERSION}
 PKGNAMEPREFIX=	pg
@@ -21,14 +20,14 @@ RUN_DEPENDS=	rsync:net/rsync						\
 		${PYTHON_PKGNAMEPREFIX}argh>=0.21.2:devel/py-argh@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}argcomplete>0:devel/py-argcomplete@${PY_FLAVOR}
 
+USES=		pgsql python
+USE_PYTHON=	autoplist distutils concurrent optsuffix
+
+WANT_PGSQL=	client
 NO_ARCH=	yes
 
 USERS=		barman
 GROUPS=		barman
-
-USES=		pgsql python
-WANT_PGSQL=	client
-USE_PYTHON=	autoplist distutils concurrent optsuffix
 
 PORTDOCS=	tutorial.pdf
 

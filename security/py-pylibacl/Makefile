@@ -1,5 +1,5 @@
 # Created by: joris
-# $FreeBSD: head/security/py-pylibacl/Makefile 370148 2014-10-06 09:17:39Z robak $
+# $FreeBSD: head/security/py-pylibacl/Makefile 492592 2019-02-10 09:30:44Z amdmi3 $
 
 PORTNAME=	pylibacl
 PORTVERSION=	0.5.2
@@ -10,18 +10,18 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	joris.dedieu@gmail.com
 COMMENT=	Manipulate ACL with Python
 
-LICENSE=	LGPL21 LGPL3
-LICENSE_COMB=	dual
-
-OPTIONS_DEFINE=	DOCS
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
-PORTDOCS=	COPYING NEWS README
+PORTDOCS=	NEWS README
 
-post-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}/
+OPTIONS_DEFINE=	DOCS
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}/
 	cd ${WRKSRC}/ && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

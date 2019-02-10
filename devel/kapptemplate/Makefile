@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/kapptemplate/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/kapptemplate/Makefile 492409 2019-02-08 05:11:13Z tcberner $
 
 PORTNAME=	kapptemplate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

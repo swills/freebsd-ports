@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-openssl-ccm/Makefile 415213 2016-05-15 07:08:37Z antoine $
+# $FreeBSD: head/security/rubygem-openssl-ccm/Makefile 492602 2019-02-10 11:30:35Z antoine $
 
 PORTNAME=	openssl-ccm
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

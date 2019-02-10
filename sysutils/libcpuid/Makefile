@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/libcpuid/Makefile 431970 2017-01-20 16:44:13Z danfe $
+# $FreeBSD: head/sysutils/libcpuid/Makefile 492356 2019-02-07 10:30:04Z danfe $
 
 PORTNAME=	libcpuid
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

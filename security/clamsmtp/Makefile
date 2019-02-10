@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/security/clamsmtp/Makefile 451343 2017-10-05 19:44:15Z cs $
+# $FreeBSD: head/security/clamsmtp/Makefile 492347 2019-02-07 07:33:28Z tobik $
 
 PORTNAME=	clamsmtp
 PORTVERSION=	1.10
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	http://thewalter.net/stef/software/clamsmtp/
 
-MAINTAINER=	yasu@utahime.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	ClamAV anti-virus SMTP Filter
 
 LICENSE=	BSD3CLAUSE
