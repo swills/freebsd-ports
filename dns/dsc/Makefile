@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	dsc
-PORTVERSION=	2.7.0
-PORTREVISION=	1
+PORTVERSION=	2.8.0
 CATEGORIES=	dns
 MASTER_SITES=	https://www.dns-oarc.net/files/dsc/ \
 		https://dns.company/files/dsc/
@@ -27,7 +26,7 @@ CONFIGURE_ARGS=	--with-extra-cflags=-I${LOCALBASE}/include
 
 SUB_FILES=	pkg-message
 
-USE_RC_SUBR=    dsc
+USE_RC_SUBR=	dsc
 
 OPTIONS_DEFINE=	DOCS
 
