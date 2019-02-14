@@ -40,7 +40,7 @@ OPENSSL_CONFIGURE_WITH=	ssl
 WRKSRC_SUBDIR=		open-vm-tools
 
 GNU_CONFIGURE=		yes
-USES=			autoreconf fuse gettext-runtime kmod libtool localbase pathfix pkgconfig gnome
+USES=			autoreconf fuse gettext-runtime kmod libtool localbase pathfix pkgconfig gnome python:build
 USE_GNOME=		glib20
 
 USE_GITHUB=		yes
