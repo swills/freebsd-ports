@@ -1,4 +1,4 @@
---- libnss_cache_oslogin/nss_cache_oslogin.c.orig	2018-10-11 16:53:23 UTC
+--- libnss_cache_oslogin/nss_cache_oslogin.c.orig	2019-01-24 19:28:43 UTC
 +++ libnss_cache_oslogin/nss_cache_oslogin.c
 @@ -16,6 +16,7 @@
  
@@ -13,7 +13,7 @@
  static FILE *p_file = NULL;
  static char p_filename[NSS_CACHE_OSLOGIN_PATH_LENGTH] =
 -    "/etc/oslogin_passwd.cache";
-+    "%%PREFIX%%/etc/oslogin_passwd.cache";
++    "/usr/local/etc/oslogin_passwd.cache";
  #ifdef BSD
  extern int fgetpwent_r(FILE *, struct passwd *, char *, size_t,
                         struct passwd **);

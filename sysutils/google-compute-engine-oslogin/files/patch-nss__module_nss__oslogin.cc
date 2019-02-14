@@ -1,4 +1,4 @@
---- nss_module/nss_oslogin.cc.orig	2018-10-11 16:53:23 UTC
+--- nss_module/nss_oslogin.cc.orig	2019-01-24 19:28:43 UTC
 +++ nss_module/nss_oslogin.cc
 @@ -16,6 +16,7 @@
  #include <errno.h>
