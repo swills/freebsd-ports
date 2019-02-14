@@ -107,6 +107,7 @@
     SUBDIR += iboview
     SUBDIR += isaac-cfd
     SUBDIR += jdftx
+    SUBDIR += jmol
     SUBDIR += jstrack
     SUBDIR += kalzium
     SUBDIR += kst2
@@ -153,6 +154,7 @@
     SUBDIR += mmtf
     SUBDIR += mol2ps
     SUBDIR += molgif
+    SUBDIR += molscript
     SUBDIR += molsketch
     SUBDIR += mpb
     SUBDIR += mpqc
