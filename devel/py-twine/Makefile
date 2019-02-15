@@ -1,8 +1,8 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/devel/py-twine/Makefile 484961 2018-11-14 21:44:44Z sunpoet $
+# $FreeBSD: head/devel/py-twine/Makefile 492947 2019-02-14 22:41:17Z sunpoet $
 
 PORTNAME=	twine
-DISTVERSION=	1.12.1
+DISTVERSION=	1.13.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pkginfo>=1.4.2:sysutils/py-pkginfo@${PY_FLAV
 		${PYTHON_PKGNAMEPREFIX}tqdm>=4.14:misc/py-tqdm@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils concurrent autoplist
+USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
 

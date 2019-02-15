@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/py-certbot-dns-ovh/Makefile 485822 2018-11-24 22:31:18Z sunpoet $
+# $FreeBSD: head/security/py-certbot-dns-ovh/Makefile 492730 2019-02-11 19:00:28Z sunpoet $
 
 PORTNAME=	certbot-dns-ovh
 PORTVERSION=	${ACME_VERSION}
-PORTREVISION=	0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

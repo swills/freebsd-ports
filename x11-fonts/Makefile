@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-fonts/Makefile 491959 2019-02-02 13:54:05Z tobik $
+# $FreeBSD: head/x11-fonts/Makefile 492915 2019-02-14 11:51:25Z 0mp $
 #
 
     COMMENT = X11 fonts and font utilities
 
+    SUBDIR += 3270font
     SUBDIR += Hasklig
     SUBDIR += alef
     SUBDIR += alegreya

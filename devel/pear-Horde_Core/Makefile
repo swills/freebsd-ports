@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/pear-Horde_Core/Makefile 490665 2019-01-18 19:59:26Z joneum $
+# $FreeBSD: head/devel/pear-Horde_Core/Makefile 492664 2019-02-11 01:54:58Z joneum $
 
 PORTNAME=	Horde_Core
-DISTVERSION=	2.31.7
+DISTVERSION=	2.31.8
 CATEGORIES=	devel www pear
 
 MAINTAINER=	horde@FreeBSD.org

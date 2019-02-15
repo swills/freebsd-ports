@@ -1,9 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/efl/Makefile 491080 2019-01-24 05:09:48Z linimon $
+# $FreeBSD: head/devel/efl/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	efl
 DISTVERSION=	1.20.7
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/libs/${PORTNAME}/
 DIST_SUBDIR=	enlightenment

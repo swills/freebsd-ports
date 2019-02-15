@@ -1,9 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/www/newsboat/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/www/newsboat/Makefile 492653 2019-02-10 21:59:58Z tobik $
 
 PORTNAME=	newsboat
-PORTVERSION=	2.14
-PORTREVISION=	1
+PORTVERSION=	2.14.1
 CATEGORIES=	www
 MASTER_SITES=	https://newsboat.org/releases/${PORTVERSION}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -93,6 +92,7 @@ CARGO_CRATES=	aho-corasick-0.6.9 \
 		ucd-util-0.1.3 \
 		unicode-bidi-0.3.4 \
 		unicode-normalization-0.1.7 \
+		unicode-width-0.1.5 \
 		unicode-xid-0.1.0 \
 		unreachable-1.0.0 \
 		url-1.7.2 \

@@ -1,11 +1,11 @@
 # Created by: risner@stdio.com
-# $FreeBSD: head/textproc/2bsd-diff/Makefile 489572 2019-01-07 11:16:54Z fernape $
+# $FreeBSD: head/textproc/2bsd-diff/Makefile 492630 2019-02-10 19:13:11Z tobik $
 
 PORTNAME=	diff
 PORTVERSION=	2.11
 PORTREVISION=	1
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.tribug.org/pub/tuhs/PDP-11/Distributions/ucb/2.11BSD/ \
+MASTER_SITES=	https://www.tuhs.org/Archive/Distributions/UCB/2.11BSD/ \
 		http://www.d20hobbies.com/2.11BSD/
 PKGNAMEPREFIX=	2bsd-
 DISTNAME=	file8

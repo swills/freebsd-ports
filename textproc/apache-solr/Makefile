@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/apache-solr/Makefile 492314 2019-02-06 16:32:21Z mfechner $
+# $FreeBSD: head/textproc/apache-solr/Makefile 492990 2019-02-15 11:06:02Z mfechner $
 
 PORTNAME=	apache-solr
 PORTVERSION=	7.7.0

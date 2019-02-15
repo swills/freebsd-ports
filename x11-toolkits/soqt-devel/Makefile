@@ -1,5 +1,5 @@
 # Created by: roland.jesse@gmx.net
-# $FreeBSD: head/x11-toolkits/soqt-devel/Makefile 492519 2019-02-09 20:48:10Z cmt $
+# $FreeBSD: head/x11-toolkits/soqt-devel/Makefile 492692 2019-02-11 12:53:31Z cmt $
 
 PORTNAME=	SoQt
 PORTVERSION=	1.6.0a
@@ -18,14 +18,15 @@ LIB_DEPENDS=	libCoin.so:graphics/Coin
 
 CONFLICTS_INSTALL=	SoQt
 
-USES=		cmake dos2unix gl libtool pathfix pkgconfig qmake:no_env qt:5
+USES=		cmake compiler:c++11-lang dos2unix gl libtool \
+		localbase:ldflags pathfix pkgconfig qmake:no_env qt:5
 USE_QT=		buildtools core gui opengl qmake widgets
 USE_GL=		gl
 USE_XORG=	ice sm x11 xext xi
 USE_LDCONFIG=	yes
 
-CPPFLAGS+=	-I${QT_INCDIR}/QtCore -I${QT_INCDIR} -I${LOCALBASE}/include
-LDFLAGS+=	-L${QT_LIBDIR} -L${LOCALBASE}/lib
+CPPFLAGS+=	-I${QT_INCDIR}/QtCore -I${QT_INCDIR}
+LDFLAGS+=	-L${QT_LIBDIR}
 
 WRKSRC=		${WRKDIR}/soqt
 

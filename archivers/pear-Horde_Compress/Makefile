@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/pear-Horde_Compress/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/archivers/pear-Horde_Compress/Makefile 492776 2019-02-12 11:32:09Z joneum $
 
 PORTNAME=	Horde_Compress
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	archivers www pear
 
 MAINTAINER=	horde@FreeBSD.org

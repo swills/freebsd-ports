@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-taggit/Makefile 491837 2019-02-01 18:55:18Z kai $
+# $FreeBSD: head/www/py-django-taggit/Makefile 492690 2019-02-11 12:00:30Z kai $
 
 PORTNAME=	django-taggit
 PORTVERSION=	0.23.0
@@ -18,6 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-NO_ARCH=	yes
+NO_ARCH=		yes
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-django-taggit
 
 .include <bsd.port.mk>

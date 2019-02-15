@@ -1,17 +1,16 @@
-# $FreeBSD: head/sysutils/plasma5-libksysguard/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/sysutils/plasma5-libksysguard/Makefile 492811 2019-02-12 21:40:13Z tcberner $
 
 PORTNAME=	libksysguard
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 library to track and control running processes
 
 USES=		cmake compiler:c++11-lib cpe gettext kde:5 qt:5 tar:xz
-USE_KDE=	auth codecs completion config configwidgets coreaddons i18n \
-		iconthemes package plasma-framework service widgetsaddons \
-		windowsystem
+USE_KDE=	auth codecs completion config configwidgets coreaddons \
+		globalaccel i18n iconthemes jobwidgets kio package \
+		plasma-framework service widgetsaddons windowsystem
 USE_QT=		core dbus gui network script webkit widgets x11extras xml \
 		buildtools_build qmake_build
 

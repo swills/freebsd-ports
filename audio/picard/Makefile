@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/audio/picard/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/audio/picard/Makefile 492903 2019-02-14 07:38:29Z jhale $
 
 PORTNAME=	picard
-PORTVERSION=	2.1
+PORTVERSION=	2.1.2
 PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	http://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
@@ -23,7 +23,7 @@ USE_LOCALE=	en_US.UTF-8
 USE_PYQT=	core_run gui_run network_run widgets_run sip
 USE_PYTHON=	autoplist distutils noflavors
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-release-${PORTVERSION}.0
+WRKSRC=		${WRKDIR}/${PORTNAME}-release-${PORTVERSION}
 
 OPTIONS_DEFINE=		ACOUSTID PLUGINS
 OPTIONS_DEFAULT=	PLUGINS

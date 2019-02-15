@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/qt5-x11extras/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11/qt5-x11extras/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	x11extras
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	2
 CATEGORIES=	x11
 PKGNAMEPREFIX=	qt5-
 

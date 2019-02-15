@@ -1,8 +1,9 @@
 # Created by: Pete French <pete@twisted.org.uk>
-# $FreeBSD: head/lang/libobjc2/Makefile 492056 2019-02-03 15:37:58Z theraven $
+# $FreeBSD: head/lang/libobjc2/Makefile 492624 2019-02-10 18:08:12Z theraven $
 
 PORTNAME=	libobjc2
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	lang devel gnustep
 LICENSE=	MIT
 
@@ -15,7 +16,7 @@ USES=		cmake objc:compiler
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	gnustep
-GH_TAGNAME=	effdd15
+GH_TAGNAME=	0db500a
 
 SSP_UNSAFE=	yes
 

@@ -1,9 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/owncloud/Makefile 491651 2019-01-30 19:22:34Z sunpoet $
+# $FreeBSD: head/www/owncloud/Makefile 492935 2019-02-14 22:40:14Z sunpoet $
 
 PORTNAME=	owncloud
-PORTVERSION=	10.0.10
-PORTREVISION=	1
+PORTVERSION=	10.1.0
 CATEGORIES=	www
 MASTER_SITES=	https://download.owncloud.org/community/
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}

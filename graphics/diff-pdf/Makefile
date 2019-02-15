@@ -1,10 +1,10 @@
-# $FreeBSD: head/graphics/diff-pdf/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/graphics/diff-pdf/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	diff-pdf
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2-27
 DISTVERSIONSUFFIX=	-gc4d6722
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	uzsolt@uzsolt.hu

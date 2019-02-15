@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/protracker/Makefile 490779 2019-01-20 11:13:11Z ehaupt $
+# $FreeBSD: head/audio/protracker/Makefile 492986 2019-02-15 09:18:41Z ehaupt $
 
 PORTNAME=	protracker
 PORTVERSION=	2.3d.r${SVN_REV}
@@ -13,11 +13,11 @@ COMMENT=	Amiga ProTracker clone
 LICENSE=	WTFPL
 LICENSE_FILE=	${WRKSRC}/src/COPYING.txt
 
-USES=		localbase:ldflags
+USES=		localbase:ldflags sdl
 USE_SDL=	sdl2
 
 SVN_URL=	https://svn.code.sf.net/p/protracker/code/trunk
-SVN_REV=	155
+SVN_REV=	162
 
 LDFLAGS+=	-lSDL2 -lm
 
@@ -44,5 +44,10 @@ dist:
 	svn checkout -r ${SVN_REV} ${SVN_URL} ${WRKSRC}
 	${TAR} -C ${WRKDIR} -czpf ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} \
 		--exclude .svn ${DISTNAME}
+
+cklatest:
+	@${ECHO_CMD} "We got: ${SVN_REV}"
+	@${ECHO_CMD} -n "There is: "
+	@svn info ${SVN_URL} | ${SED} -n 's|^Revision:\ \([0-9]*\)|\1|p'
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node10/Makefile 491622 2019-01-30 11:24:29Z bhughes $
+# $FreeBSD: head/www/node10/Makefile 492706 2019-02-11 18:24:42Z bhughes $
 
 PORTNAME=	node
 PORTVERSION=	10.15.1
@@ -73,11 +73,11 @@ LIB_DEPENDS+=	libcares.so:dns/c-ares\
 BROKEN_SSL+=	base
 .endif
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} != amd64 && ${ARCH} != i386
+.if ${PORT_OPTIONS:MBUNDLED_SSL} && ${ARCH} != amd64 && ${ARCH} != i386
 CONFIGURE_ARGS+=--openssl-no-asm
 .endif
+
+.include <bsd.port.pre.mk>
 
 .if ${CHOSEN_COMPILER_TYPE} == gcc
 # GCC does not expose std::snprintf() without this define

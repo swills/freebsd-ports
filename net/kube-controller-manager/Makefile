@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/kube-controller-manager/Makefile 491640 2019-01-30 18:54:26Z swills $
+# $FreeBSD: head/net/kube-controller-manager/Makefile 492975 2019-02-15 08:00:51Z joneum $
 
 PORTNAME=	kube-controller-manager
-PORTVERSION=	1.13.2
-PORTREVISION=	1
+PORTVERSION=	1.13.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/fdm/Makefile 481691 2018-10-10 06:10:46Z dinoex $
+# $FreeBSD: head/mail/fdm/Makefile 492971 2019-02-15 06:03:52Z dinoex $
 
 PORTNAME=	fdm
-PORTVERSION=	1.9
-PORTREVISION=	2
+PORTVERSION=	2.0
 CATEGORIES=	mail
 
 MAINTAINER=	dinoex@FreeBSD.org
@@ -13,9 +12,10 @@ LICENSE=	ISCL
 
 LIB_DEPENDS=	libtdb.so:databases/tdb
 
+USES=		autoreconf:build ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	nicm
-USES=		autoreconf:build ssl
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc
 

@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/lang/rust-nightly/Makefile 492582 2019-02-10 00:43:54Z jbeich $
+# $FreeBSD: head/lang/rust-nightly/Makefile 492891 2019-02-14 00:29:20Z jbeich $
 
 PORTVERSION=	1.34.0.${NIGHTLY_DATE:C,-,,g}
 PKGNAMESUFFIX=	-nightly
@@ -14,7 +14,7 @@ CONFLICTS_INSTALL=	rust
 # Which source to pull:
 #   https://static.rust-lang.org/dist/${NIGHTLY_DATE}/rustc-nightly-src.tar.gz
 #   https://static.rust-lang.org/dist/channel-rust-nightly.toml
-NIGHTLY_DATE=			2019-02-10
+NIGHTLY_DATE=			2019-02-14
 NIGHTLY_SUBDIR=			${NIGHTLY_DATE}/
 
 # See WRKSRC/src/stage0.txt for this date

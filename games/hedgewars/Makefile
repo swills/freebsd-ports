@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hedgewars/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/games/hedgewars/Makefile 492715 2019-02-11 18:54:44Z amdmi3 $
 
 PORTNAME=	hedgewars
 PORTVERSION=	0.9.25
@@ -39,6 +39,7 @@ PORTDATA=	*
 
 OPTIONS_DEFINE=	SERVER VIDEOREC
 OPTIONS_DEFAULT=SERVER VIDEOREC
+OPTIONS_EXCLUDE_i386=	VIDEOREC  # some pascal issues preventing to use it
 
 SERVER_DESC=	Build server (requires haskell)
 VIDEOREC_DESC=	Enable video recording (requires ffmpeg)

@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/qt5-virtualkeyboard/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/x11-toolkits/qt5-virtualkeyboard/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	virtualkeyboard
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

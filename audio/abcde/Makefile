@@ -1,9 +1,8 @@
 # Created by: Munish Chopra <mchopra@engmail.uwaterloo.ca>
-# $FreeBSD: head/audio/abcde/Makefile 476581 2018-08-07 09:07:07Z arved $
+# $FreeBSD: head/audio/abcde/Makefile 492735 2019-02-11 20:24:59Z arved $
 
 PORTNAME=	abcde
-DISTVERSION=	2.9.2
-PORTREVISION=	1
+DISTVERSION=	2.9.3
 CATEGORIES=	audio
 MASTER_SITES=	http://abcde.einval.com/download/
 
@@ -20,10 +19,10 @@ RUN_DEPENDS=	cd-discid:audio/cd-discid \
 		oggenc:audio/vorbis-tools \
 		bash:shells/bash
 
+USES=		shebangfix
+
 NO_ARCH=	yes
 NO_BUILD=	yes
-
-USES=		shebangfix
 SHEBANG_FILES=	abcde abcde-musicbrainz-tool cddb-tool
 
 SUB_FILES=	pkg-message

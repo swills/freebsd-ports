@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/py-z3-solver/Makefile 490085 2019-01-12 23:11:23Z linimon $
+# $FreeBSD: head/math/py-z3-solver/Makefile 492625 2019-02-10 18:17:14Z yuri $
 
 PORTNAME=	z3-solver
 DISTVERSIONPREFIX=	z3-
-DISTVERSION=	4.7.1
+DISTVERSION=	4.8.4
 CATEGORIES=	math
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -21,5 +21,8 @@ GH_PROJECT=	z3
 USE_PYTHON=	distutils autoplist
 
 WRKSRC_SUBDIR=	src/api/python
+
+post-patch: # https://github.com/Z3Prover/z3/issues/2131
+	@${REINPLACE_CMD} 's|…|...|' ${WRKSRC}/../../ast/recfun_decl_plugin.h
 
 .include <bsd.port.mk>

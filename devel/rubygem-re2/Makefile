@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-re2/Makefile 472117 2018-06-10 08:08:26Z antoine $
+# $FreeBSD: head/devel/rubygem-re2/Makefile 492608 2019-02-10 13:34:30Z mfechner $
 
 PORTNAME=	re2
 PORTVERSION=	1.1.1

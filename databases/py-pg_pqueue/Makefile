@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/py-pg_pqueue/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-pg_pqueue/Makefile 492897 2019-02-14 02:22:48Z wen $
 
 PORTNAME=	pg_pqueue
 PORTVERSION=	1.0.2
@@ -13,6 +13,9 @@ MAINTAINER=	wenheping@gmail.com
 COMMENT=	PostgreSQL PQ Protocol Modules
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Upstream no longer maintained
+EXPIRATION_DATE=2019-05-14
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

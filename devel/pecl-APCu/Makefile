@@ -1,8 +1,8 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu/Makefile 489324 2019-01-05 10:43:43Z joneum $
+# $FreeBSD: head/devel/pecl-APCu/Makefile 492977 2019-02-15 08:16:36Z joneum $
 
 PORTNAME=	APCu
-PORTVERSION=	5.1.16
+PORTVERSION=	5.1.17
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 

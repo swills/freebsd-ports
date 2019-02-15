@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/kf5-ktexteditor/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/kf5-ktexteditor/Makefile 492794 2019-02-12 17:48:25Z tcberner $
 
 PORTNAME=	ktexteditor
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

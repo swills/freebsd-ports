@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Array-PrintCols/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/misc/p5-Array-PrintCols/Makefile 492834 2019-02-13 09:00:44Z amdmi3 $
 
 PORTNAME=	Array-PrintCols
 PORTVERSION=	2.6
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module to print arrays of elements in sorted columns
 
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/GNU-LICENSE
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

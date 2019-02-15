@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/bsd-plotutils/Makefile 492128 2019-02-04 13:12:35Z swills $
+# $FreeBSD: head/graphics/bsd-plotutils/Makefile 492648 2019-02-10 21:17:34Z swills $
 
 PORTNAME=	bsd-plotutils
-DISTVERSION=	1.4
+DISTVERSION=	1.4.2
 CATEGORIES=	graphics
 
 MAINTAINER=	toranktto@gmail.com

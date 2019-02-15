@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.sanity.mk 480426 2018-09-22 18:08:12Z adamw $
+# $FreeBSD: head/Mk/bsd.sanity.mk 492696 2019-02-11 15:21:25Z amdmi3 $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -84,6 +84,10 @@ DEV_ERROR+=	"USE_GNOME=pkgconfig is unsupported, please use USES=pkgconfig"
 
 .if defined(USE_ZOPE) && ${USE_ZOPE} == yes
 DEV_ERROR+=	"USE_ZOPE=yes is unsupported, please use USES=zope instead"
+.endif
+
+.if defined(USE_SDL) && ${USE_SDL} == yes
+DEV_ERROR+=	"USE_SDL=yes is unsupported, please use USE_SDL=sdl instead"
 .endif
 
 .if defined(USE_GITHUB) && defined(GH_COMMIT)

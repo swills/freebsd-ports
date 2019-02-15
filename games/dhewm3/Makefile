@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/dhewm3/Makefile 487711 2018-12-17 20:34:09Z amdmi3 $
+# $FreeBSD: head/games/dhewm3/Makefile 492784 2019-02-12 15:20:28Z amdmi3 $
 
 PORTNAME=	dhewm3
 PORTVERSION=	1.5.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 USE_GITHUB=	yes
 GH_ACCOUNT=	dhewm
 
-USES=		cmake jpeg openal:al
+USES=		cmake compiler:c++11-lang jpeg openal:al
 USE_SDL=	sdl2
 LLD_UNSAFE=	yes
 

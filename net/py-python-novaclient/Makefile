@@ -1,8 +1,8 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/net/py-python-novaclient/Makefile 490002 2019-01-11 20:17:29Z sunpoet $
+# $FreeBSD: head/net/py-python-novaclient/Makefile 492949 2019-02-14 22:41:28Z sunpoet $
 
 PORTNAME=	python-novaclient
-PORTVERSION=	11.1.0
+PORTVERSION=	12.0.0
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

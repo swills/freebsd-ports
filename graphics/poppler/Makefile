@@ -1,8 +1,8 @@
 # Created by: marcus@FreeBSD.org
-# $FreeBSD: head/graphics/poppler/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/poppler/Makefile 492702 2019-02-11 17:10:05Z tcberner $
 
 PORTNAME=	poppler
-DISTVERSION=	0.72.0
+DISTVERSION=	0.74.0
 CATEGORIES=	graphics print
 MASTER_SITES=	http://poppler.freedesktop.org/
 
@@ -29,7 +29,7 @@ USE_LDCONFIG=	yes
 CMAKE_ON=	ENABLE_LIBJPEG  \
 		ENABLE_LIBPNG \
 		ENABLE_LIBTIFF \
-		ENABLE_XPDF_HEADERS \
+		ENABLE_UNSTABLE_API_ABI_HEADERS \
 		ENABLE_ZLIB \
 		ENABLE_NSS \
 		ENABLE_SPLASH

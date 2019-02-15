@@ -1,9 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/ruby-xapian/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/ruby-xapian/Makefile 492941 2019-02-14 22:40:46Z sunpoet $
 
 PORTNAME=	xapian
-PORTVERSION=	1.4.9
-PORTREVISION=	1
+PORTVERSION=	1.4.10
 DISTVERSIONPREFIX=	bindings-
 CATEGORIES=	databases ruby
 MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
@@ -28,10 +27,20 @@ PORTSCOUT=	limitw:1,even
 USES=		compiler:c++11-lang libtool tar:xz
 USE_RUBY=	yes
 
-CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
-		--enable-static --with-ruby \
-		--without-csharp --without-java --without-lua --without-perl \
-		--without-php --without-python --without-python3 --without-tcl
+CONFIGURE_ARGS=	--datarootdir=${DATADIR} \
+		--docdir=${DOCSDIR} \
+		--enable-shared \
+		--enable-static \
+		--with-ruby \
+		--without-csharp \
+		--without-java \
+		--without-lua \
+		--without-perl \
+		--without-php \
+		--without-php7 \
+		--without-python \
+		--without-python3 \
+		--without-tcl
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_CXXSTD=	c++11

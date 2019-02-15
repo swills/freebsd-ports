@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/plasma5-khotkeys/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/plasma5-khotkeys/Makefile 492811 2019-02-12 21:40:13Z tcberner $
 
 PORTNAME=	khotkeys
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

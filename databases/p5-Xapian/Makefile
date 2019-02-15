@@ -1,9 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Xapian/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/p5-Xapian/Makefile 492938 2019-02-14 22:40:30Z sunpoet $
 
 PORTNAME=	Xapian
-PORTVERSION=	1.4.9.0
-PORTREVISION=	1
+PORTVERSION=	1.4.10.0
 CATEGORIES=	databases perl5
 MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION:R}/ \
 		LOCAL/sunpoet
@@ -25,11 +24,20 @@ PORTSCOUT=	limitw:1,even
 
 USES=		compiler:c++11-lang libtool perl5 tar:xz
 
-CONFIGURE_ARGS=	--datarootdir=${DATADIR} --docdir=${DOCSDIR} \
+CONFIGURE_ARGS=	--datarootdir=${DATADIR} \
+		--docdir=${DOCSDIR} \
+		--enable-shared \
 		--enable-static \
 		--with-perl \
-		--without-csharp --without-java --without-lua --without-php \
-		--without-python --without-python3 --without-ruby --without-tcl
+		--without-csharp \
+		--without-java \
+		--without-lua \
+		--without-php \
+		--without-php7 \
+		--without-python \
+		--without-python3 \
+		--without-ruby \
+		--without-tcl
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 LDFLAGS+=	-L${LOCALBASE}/lib/perl5/${PERL_VER}/mach/CORE -lperl

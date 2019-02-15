@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/kitinerary/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/net/kitinerary/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	kitinerary
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

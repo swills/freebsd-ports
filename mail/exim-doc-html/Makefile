@@ -1,8 +1,8 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/mail/exim-doc-html/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/mail/exim-doc-html/Makefile 492994 2019-02-15 13:00:11Z vsevolod $
 
 PORTNAME=	exim
-PORTVERSION=	4.91
+PORTVERSION=	4.92
 CATEGORIES=	mail
 MASTER_SITES=	EXIM
 MASTER_SITE_SUBDIR=	/exim4/ \
@@ -56,7 +56,7 @@ pre-everything::
 do-install:
 	@ ${MKDIR} ${STAGEDIR}${DOCSDIR}
 .if ${DOCFORMAT} == "html"
-	${TAR} -C ${WRKSRC}/doc -cf - html | \
+	${TAR} -C ${WRKSRC}/exim-html-current/doc -cf - html | \
 		${TAR} --unlink -C ${STAGEDIR}${DOCSDIR} -xf -
 .elif ${DOCFORMAT} == "pdf"
 	@ ${INSTALL_DATA} ${WRKSRC}/doc/*.pdf ${STAGEDIR}${DOCSDIR}

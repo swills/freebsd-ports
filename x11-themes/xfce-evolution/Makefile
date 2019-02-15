@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-themes/xfce-evolution/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11-themes/xfce-evolution/Makefile 492708 2019-02-11 18:33:35Z swills $
 
 PORTNAME=	xfce-evolution
-DISTVERSION=	5.6.2
-PORTREVISION=	1
+DISTVERSION=	5.6.6
 CATEGORIES=	x11-themes
 MASTER_SITES=	SF/${PORTNAME}
 

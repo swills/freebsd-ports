@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/qt5-webview/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/www/qt5-webview/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	webview
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 

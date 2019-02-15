@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/bladerf/Makefile 492514 2019-02-09 20:22:00Z yuri $
+# $FreeBSD: head/comms/bladerf/Makefile 492752 2019-02-12 05:40:20Z yuri $
 
 PORTNAME=	bladeRF
 DISTVERSION=	2018.12
@@ -11,7 +11,7 @@ COMMENT=	BladeRF USB 3.0 Superspeed software defined radio
 LICENSE=	MIT LGPL20 GPLv2
 LICENSE_COMB=	multi
 
-USES=		cmake libedit
+USES=		cmake compiler:c11 libedit
 USE_GITHUB=	yes
 GH_ACCOUNT=	Nuand
 GH_TUPLE=	analogdevicesinc:no-OS:0bba46e:x/thirdparty/analogdevicesinc/no-OS

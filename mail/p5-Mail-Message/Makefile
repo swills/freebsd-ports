@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-Message/Makefile 482359 2018-10-18 19:49:41Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-Message/Makefile 492874 2019-02-13 23:52:30Z sunpoet $
 
 PORTNAME=	Mail-Message
-PORTVERSION=	3.007
+PORTVERSION=	3.008
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

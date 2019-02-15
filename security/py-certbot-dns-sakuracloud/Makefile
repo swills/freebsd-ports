@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/py-certbot-dns-sakuracloud/Makefile 475484 2018-07-28 02:53:30Z miwi $
+# $FreeBSD: head/security/py-certbot-dns-sakuracloud/Makefile 492730 2019-02-11 19:00:28Z sunpoet $
 
 PORTNAME=	certbot-dns-sakuracloud
 PORTVERSION=	${ACME_VERSION}
-PORTREVISION=	0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

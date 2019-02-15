@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-opengrok-tools/Makefile 491488 2019-01-28 14:29:40Z swills $
+# $FreeBSD: head/devel/py-opengrok-tools/Makefile 492900 2019-02-14 06:58:58Z antoine $
 
 PORTNAME=	opengrok-tools
 PORTVERSION=	1.1.2
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonschema>=2.6.0:devel/py-jsonschema@${PY_F
 		${PYTHON_PKGNAMEPREFIX}filelock>0:sysutils/py-filelock@${PY_FLAVOR}
 
 # According to the vendor, Python3 is required
-USES=		python:3.6
+USES=		python:3.5+
 USE_PYTHON=	autoplist distutils noflavors
 
 USE_GITHUB=	yes

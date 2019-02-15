@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/databases/kbibtex/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/databases/kbibtex/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	kbibtex
 DISTVERSION=	0.8.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases kde
 MASTER_SITES=	KDE/stable/KBibTeX/${DISTVERSION}/
 

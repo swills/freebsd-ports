@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-cors-headers/Makefile 478799 2018-09-02 15:45:39Z swills $
+# $FreeBSD: head/www/py-django-cors-headers/Makefile 492690 2019-02-11 12:00:30Z kai $
 
 PORTNAME=	django-cors-headers
 PORTVERSION=	2.4.0
@@ -15,5 +15,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-django-cors-headers
 
 .include <bsd.port.mk>

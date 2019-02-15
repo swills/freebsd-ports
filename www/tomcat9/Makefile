@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat9/Makefile 491397 2019-01-27 19:58:32Z sunpoet $
+# $FreeBSD: head/www/tomcat9/Makefile 492973 2019-02-15 07:30:23Z joneum $
 
 PORTNAME=	tomcat
-PORTVERSION=	9.0.14
+PORTVERSION=	9.0.16
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/${PORTNAME}/${PORTNAME}-${PORTVERSION:C/([0-9])(.*)/\1/}/v${PORTVERSION}/bin
 PKGNAMESUFFIX=	9

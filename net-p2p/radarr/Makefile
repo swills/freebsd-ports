@@ -1,10 +1,11 @@
-# $FreeBSD: head/net-p2p/radarr/Makefile 492483 2019-02-09 01:39:34Z feld $
+# $FreeBSD: head/net-p2p/radarr/Makefile 492662 2019-02-11 00:53:12Z feld $
 
 PORTNAME=	radarr
 PORTVERSION=	0.2.0.1293
 DISTVERSIONPREFIX=v
 PORTREVISION=	0
 CATEGORIES=	net-p2p
+MASTER_SITES=	https://github.com/Radarr/Radarr/releases/download/v${PORTVERSION}/
 DISTNAME=	Radarr.develop.${PORTVERSION}.linux
 
 MAINTAINER=	feld@FreeBSD.org
@@ -25,14 +26,12 @@ NO_BUILD=	YES
 USERS=	radarr
 GROUPS=	radarr
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	Radarr
-GH_PROJECT=	Radarr
-
 OPTIONS_DEFINE=	X11
 
 # Permits image resizing
 X11_LIB_DEPENDS+=libgdiplus.so:x11-toolkits/libgdiplus
+
+WRKSRC=	${WRKDIR}/Radarr
 
 .include <bsd.port.options.mk>
 

@@ -1,7 +1,6 @@
-# $FreeBSD: head/databases/qt5-sqldrivers-sqlite3/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/databases/qt5-sqldrivers-sqlite3/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	sqlite3
-PORTREVISION=	1
 
 DB=		SQLite
 DB_DESC=	SQLite 3

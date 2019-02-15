@@ -1,8 +1,9 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/libserialport/Makefile 423801 2016-10-11 21:56:59Z bsam $
+# $FreeBSD: head/devel/libserialport/Makefile 492865 2019-02-13 21:56:10Z bsam $
 
 PORTNAME=	libserialport
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://sigrok.org/download/source/libserialport/
 

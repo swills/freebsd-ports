@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 491664 2019-01-31 00:33:41Z swills $
+# $FreeBSD: head/www/Makefile 492985 2019-02-15 09:18:37Z egypcio $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1517,6 +1517,17 @@
     SUBDIR += py-cssselect
     SUBDIR += py-cssutils
     SUBDIR += py-ddgr
+    SUBDIR += py-dj21-django-cors-headers
+    SUBDIR += py-dj21-django-debug-toolbar
+    SUBDIR += py-dj21-django-filter
+    SUBDIR += py-dj21-django-js-asset
+    SUBDIR += py-dj21-django-mptt
+    SUBDIR += py-dj21-django-tables2
+    SUBDIR += py-dj21-django-taggit
+    SUBDIR += py-dj21-django-taggit-serializer
+    SUBDIR += py-dj21-django-timezone-field
+    SUBDIR += py-dj21-djangorestframework
+    SUBDIR += py-dj21-drf-yasg
     SUBDIR += py-django
     SUBDIR += py-django-allauth
     SUBDIR += py-django-annotations
@@ -1627,6 +1638,7 @@
     SUBDIR += py-drf-yasg
     SUBDIR += py-dtflickr
     SUBDIR += py-evernote
+    SUBDIR += py-fake-useragent
     SUBDIR += py-falcon
     SUBDIR += py-fcgi
     SUBDIR += py-fedex
@@ -2448,7 +2460,6 @@
     SUBDIR += webtrees
     SUBDIR += wgetpaste
     SUBDIR += wikicalc
-    SUBDIR += wml
     SUBDIR += woof
     SUBDIR += wordpress
     SUBDIR += wsdlpull

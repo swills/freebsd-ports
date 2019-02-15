@@ -1,10 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/sysutils/UEFITool/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/sysutils/UEFITool/Makefile 492799 2019-02-12 19:15:25Z joneum $
 
 PORTNAME=	UEFITool
 DISTVERSIONPREFIX=	A
-DISTVERSION=	54
-PORTREVISION=	1
+DISTVERSION=	55
 CATEGORIES=	sysutils
 
 MAINTAINER=	pkubaj@anongoth.pl
@@ -13,7 +12,7 @@ COMMENT=	UEFI images parser
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/../LICENSE.md
 
-USES=		compiler:c++11-lang qmake:outsource qt:5
+USES=		compiler:c++11-lang gl qmake:outsource qt:5
 USE_GITHUB=	yes
 USE_GL=		gl
 USE_QT=		core gui widgets buildtools_build qmake_build

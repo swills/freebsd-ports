@@ -1,8 +1,8 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/opencart/Makefile 456882 2017-12-21 03:22:17Z wen $
+# $FreeBSD: head/www/opencart/Makefile 492895 2019-02-14 02:00:45Z wen $
 
 PORTNAME=	opencart
-PORTVERSION=	3.0.2.0
+PORTVERSION=	3.0.3.1
 CATEGORIES=	www misc
 
 MAINTAINER=	wen@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jupyter_client/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-jupyter_client/Makefile 492633 2019-02-10 19:44:52Z sunpoet $
 
 PORTNAME=	jupyter_client
-PORTVERSION=	5.2.3
+PORTVERSION=	5.2.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,8 +18,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil@${PY_FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}tornado>=4.1:www/py-tornado@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}traitlets>=0:devel/py-traitlets@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

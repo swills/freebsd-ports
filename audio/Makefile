@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 492126 2019-02-04 12:59:23Z kwm $
+# $FreeBSD: head/audio/Makefile 492751 2019-02-12 05:21:56Z yuri $
 #
 
     COMMENT = Audio tools
@@ -245,6 +245,7 @@
     SUBDIR += gqradio
     SUBDIR += gradio
     SUBDIR += gramofile
+    SUBDIR += gsequencer
     SUBDIR += gsm
     SUBDIR += gsound
     SUBDIR += gstreamer-plugins-a52dec
@@ -706,6 +707,7 @@
     SUBDIR += pytone
     SUBDIR += qjackctl
     SUBDIR += qmidiarp
+    SUBDIR += qmidictl
     SUBDIR += qmpdclient
     SUBDIR += qsampler
     SUBDIR += qsynth

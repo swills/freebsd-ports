@@ -1,8 +1,9 @@
 # Created by: Daniel Gerzo <danger@rulez.sk>
-# $FreeBSD: head/security/bruteforceblocker/Makefile 484142 2018-11-04 19:09:42Z danger $
+# $FreeBSD: head/security/bruteforceblocker/Makefile 492796 2019-02-12 18:26:19Z pi $
 
 PORTNAME=	bruteforceblocker
 PORTVERSION=	1.2.6
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	danger@FreeBSD.org
@@ -15,11 +16,12 @@ RUN_DEPENDS=	p5-Unix-Syslog>=0:sysutils/p5-Unix-Syslog \
 		p5-libwww>=0:www/p5-libwww \
 		p5-Net-DNS>=0:dns/p5-Net-DNS
 
+USES=		perl5 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	dgerzo
-NO_BUILD=	yes
-USES=		perl5 shebangfix
 USE_PERL5=	run
+
+NO_BUILD=	yes
 
 OPTIONS_DEFINE=	DOCS
 

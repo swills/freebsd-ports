@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/avogadrolibs/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/science/avogadrolibs/Makefile 492755 2019-02-12 06:18:05Z yuri $
 
 PORTNAME=	avogadrolibs
 DISTVERSION=	1.92.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/

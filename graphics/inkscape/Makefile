@@ -1,9 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/graphics/inkscape/Makefile 487596 2018-12-16 15:10:42Z tcberner $
+# $FreeBSD: head/graphics/inkscape/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	inkscape
 PORTVERSION=	0.92.3
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics gnome
 MASTER_SITES=	https://inkscape.org/en/gallery/item/12187/
 
@@ -85,5 +85,8 @@ post-patch:
 	# Obtained from Arch Linux
 	@${REINPLACE_CMD} -e 's|gTrue|true|g' -e 's|gFalse|false|g' -e 's|GBool|bool|g' \
 		${WRKSRC}/src/extension/internal/pdfinput/pdf-parser.*
+	# Fix with poppler 0.73
+	@${REINPLACE_CMD} -E '/#include "goo\/gtypes.h"/d' \
+		${WRKSRC}/src/extension/internal/pdfinput/pdf-parser.h
 
 .include <bsd.port.mk>

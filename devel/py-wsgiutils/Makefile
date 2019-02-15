@@ -1,8 +1,9 @@
 # Created by: Jordi Haarman
-# $FreeBSD: head/devel/py-wsgiutils/Makefile 489402 2019-01-05 22:45:57Z sunpoet $
+# $FreeBSD: head/devel/py-wsgiutils/Makefile 492721 2019-02-11 18:59:37Z sunpoet $
 
 PORTNAME=	wsgiutils
 PORTVERSION=	0.7.1
+PORTREVISION=	1
 CATEGORIES=	devel textproc www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,5 +19,8 @@ USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes
+
+post-patch:
+	@${REINPLACE_CMD} -e '/data_files/d' ${WRKSRC}/setup.py
 
 .include <bsd.port.mk>

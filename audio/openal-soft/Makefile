@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/audio/openal-soft/Makefile 492771 2019-02-12 10:39:39Z tobik $
 
 PORTNAME=	openal-soft
 PORTVERSION=	1.19.1
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 CONFLICTS=	openal-200[0-9]*
 
 USES=		cmake compiler:c11 tar:bzip2
+USE_BINUTILS=	yes
 USE_LDCONFIG=	yes
-LLD_UNSAFE=	yes
+
 CMAKE_ARGS=	-DCMAKE_INSTALL_DATADIR:STRING="${PREFIX}/etc"
 CMAKE_OFF=	ALSOFT_BACKEND_ALSA \
 		ALSOFT_DLOPEN \
@@ -25,7 +26,12 @@ CMAKE_OFF=	ALSOFT_BACKEND_ALSA \
 		ALSOFT_REQUIRE_QSA
 CMAKE_ON=	ALSOFT_BACKEND_WAVE \
 		ALSOFT_UTILS
-LDFLAGS+=	-Wl,--as-needed # do not link with librt and libdl
+
+# use gold linker due to some problems with ld.bfd on 12-STABLE,
+# cf. PR 235603
+# do not link with librt and libdl.
+LDFLAGS+=	-fuse-ld=gold \
+		-Wl,--as-needed
 
 OPTIONS_DEFINE=		EXAMPLES CONFIG JACK OSS PORTAUDIO PULSEAUDIO SDL SNDIO
 OPTIONS_DEFAULT=	OSS

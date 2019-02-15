@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/xen-kernel411/Makefile 485430 2018-11-20 14:17:07Z royger $
+# $FreeBSD: head/emulators/xen-kernel411/Makefile 492704 2019-02-11 17:38:13Z royger $
 
 PORTNAME=	xen
 PORTVERSION=	4.11.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	emulators
 MASTER_SITES=	http://downloads.xenproject.org/release/xen/${PORTVERSION}/
 PKGNAMESUFFIX=	-kernel411
@@ -117,7 +117,7 @@ IGNORE=		only supported on recent FreeBSD HEAD
 # The ports native 'build' target cannot be used because it sets
 # CFLAGS, and that breaks the Xen build system.
 do-build:
-	${MAKE_CMD} -j${MAKE_JOBS_NUMBER} -C ${WRKSRC} xen ${MAKE_ARGS}
+	${MAKE_CMD} -j${MAKE_JOBS_NUMBER} -C ${WRKSRC} build-xen ${MAKE_ARGS}
 
 do-install:
 	${MKDIR} ${STAGEDIR}/boot

@@ -1,5 +1,5 @@
 # Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/www/py-django-tables2/Makefile 491837 2019-02-01 18:55:18Z kai $
+# $FreeBSD: head/www/py-django-tables2/Makefile 492690 2019-02-11 12:00:30Z kai $
 
 PORTNAME=	django-tables2
 DISTVERSION=	1.21.2
@@ -19,6 +19,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils autoplist
-NO_ARCH=	yes
+
+NO_ARCH=		yes
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-django-tables2
 
 .include <bsd.port.mk>

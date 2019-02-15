@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/kf5-kio/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/kf5-kio/Makefile 492794 2019-02-12 17:48:25Z tcberner $
 
 PORTNAME=	kio
-DISTVERSION=	5.54.1 # Respin for bug 402665
-PORTREVISION=	1
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

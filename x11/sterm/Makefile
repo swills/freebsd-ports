@@ -1,8 +1,8 @@
 # Created by: Matthew Donovan <kitchetech@gmail.com>
-# $FreeBSD: head/x11/sterm/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/x11/sterm/Makefile 492707 2019-02-11 18:31:23Z swills $
 
 PORTNAME=	sterm
-DISTVERSION=	0.8.1
+DISTVERSION=	0.8.2
 CATEGORIES=	x11
 MASTER_SITES=	http://dl.suckless.org/st/
 DISTNAME=	st-${PORTVERSION}
