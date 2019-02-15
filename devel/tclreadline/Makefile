@@ -1,8 +1,8 @@
 # Created by: darius@dons.net.au
-# $FreeBSD: head/devel/tclreadline/Makefile 472376 2018-06-14 12:47:58Z tijl $
+# $FreeBSD: head/devel/tclreadline/Makefile 492671 2019-02-11 07:39:41Z gahr $
 
 PORTNAME=	tclreadline
-PORTVERSION=	2.3.1
+PORTVERSION=	2.3.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel tcl
 
@@ -16,7 +16,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-tcl=${TCL_LIBDIR} \
 		--with-tcl-includes=${TCL_INCLUDEDIR} \
 		--with-readline-includes=${LOCALBASE}/include \
-		--with-readline-library="-L${LOCALBASE}/lib -lreadline"
+		--with-readline-library="-L${LOCALBASE}/lib -lreadline" \
+		--with-tk=no
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	flightaware

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/lang/clojure/Makefile 475015 2018-07-20 13:53:46Z tobik $
+# $FreeBSD: head/lang/clojure/Makefile 492628 2019-02-10 18:49:20Z tobik $
 
 PORTNAME=	clojure
-PORTVERSION=	1.9.0.381
+PORTVERSION=	1.10.0.411
 CATEGORIES=	lang lisp java
 MASTER_SITES=	https://download.clojure.org/install/
 DISTNAME=	clojure-tools-${PORTVERSION}

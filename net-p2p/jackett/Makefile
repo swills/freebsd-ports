@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/jackett/Makefile 490242 2019-01-14 12:12:43Z swills $
+# $FreeBSD: head/net-p2p/jackett/Makefile 492678 2019-02-11 09:18:01Z kai $
 
 PORTNAME=	jackett
-PORTVERSION=	0.10.611
+PORTVERSION=	0.10.733
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Jackett/Jackett/releases/download/
 DISTNAME=	v${PORTVERSION}/Jackett.Binaries.Mono
@@ -10,6 +10,7 @@ MAINTAINER=	michiel@vanbaak.eu
 COMMENT=	Torznab proxy implementation of the Newznab API
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	mono>0:lang/mono
 LIB_DEPENDS=	libcurl.so:ftp/curl

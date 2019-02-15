@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-httmock/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-httmock/Makefile 492642 2019-02-10 21:01:52Z swills $
 
 PORTNAME=	httmock
-PORTVERSION=	1.2.6
+PORTVERSION=	1.3.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		https://raw.githubusercontent.com/patrys/${PORTNAME}/${PORTVERSION}/:tests

@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/kf5-sonnet/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/textproc/kf5-sonnet/Makefile 492794 2019-02-12 17:48:25Z tcberner $
 
 PORTNAME=	sonnet
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	textproc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

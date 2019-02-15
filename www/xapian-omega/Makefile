@@ -1,9 +1,8 @@
 # Created by: Henrik Brix Andersen <brix@FreeBSD.org>
-# $FreeBSD: head/www/xapian-omega/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/xapian-omega/Makefile 492943 2019-02-14 22:40:55Z sunpoet $
 
 PORTNAME=	xapian-omega
-PORTVERSION=	1.4.9
-PORTREVISION=	1
+PORTVERSION=	1.4.10
 CATEGORIES=	www
 MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet

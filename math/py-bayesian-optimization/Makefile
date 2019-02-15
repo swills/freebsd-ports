@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/py-bayesian-optimization/Makefile 490584 2019-01-17 19:20:56Z sunpoet $
+# $FreeBSD: head/math/py-bayesian-optimization/Makefile 492948 2019-02-14 22:41:23Z sunpoet $
 
 PORTNAME=	bayesian-optimization
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

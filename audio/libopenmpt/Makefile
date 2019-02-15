@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/libopenmpt/Makefile 491088 2019-01-24 10:23:59Z ehaupt $
+# $FreeBSD: head/audio/libopenmpt/Makefile 492767 2019-02-12 09:45:56Z ehaupt $
 
 PORTNAME=	libopenmpt
-PORTVERSION=	0.4.2
+PORTVERSION=	0.4.3
 DISTVERSIONSUFFIX=	+release.autotools
 CATEGORIES=	audio
 MASTER_SITES=	https://lib.openmpt.org/files/libopenmpt/src/ \

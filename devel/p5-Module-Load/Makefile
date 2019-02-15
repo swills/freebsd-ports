@@ -1,9 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Load/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-Load/Makefile 492726 2019-02-11 19:00:04Z sunpoet $
 
 PORTNAME=	Module-Load
-PORTVERSION=	0.32
-PORTREVISION=	1
+PORTVERSION=	0.34
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,5 +15,7 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

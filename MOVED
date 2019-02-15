@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 492600 2019-02-10 11:26:24Z pi $
+# $FreeBSD: head/MOVED 492985 2019-02-15 09:18:37Z egypcio $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -8355,7 +8355,6 @@ irc/slirc||2016-07-04|Has expired: Broken for more than 6 months
 irc/qwebirc||2016-07-04|Has expired: Broken for more than 6 months
 biology/platon||2016-07-04|Has expired: Broken for more than 6 months
 news/slnr||2016-07-04|Has expired: Broken for more than 6 months
-science/jmol||2016-07-04|Has expired: Broken for more than 6 months
 net/nstxd||2016-07-04|Has expired: Broken for more than 6 months
 net/sprinkle||2016-07-04|Has expired: Broken for more than 6 months
 editors/ssam||2016-07-04|Has expired: Broken for more than 6 months
@@ -11590,5 +11589,9 @@ net-mgmt/pnp-icinga||2019-02-04|Removed, depends on expired net-mgmt/icinga-clas
 sysutils/atf-allwinner|devel/atf-sun50i_a64|2019-02-05|Respect the ARM TF-A platform name
 sysutils/yum||2019-02-07|Has expired: Abandoned upstream, does not work with python3
 sysutils/createrepo||2019-02-07|Has expired: Abandoned upstream, does not work with python3
+www/wml||2019-02-08|Removing to be properly added back with svn copy
 misc/soapysdr-hackrf|comms/soapysdrhackrf|2019-02-09|Move to the proper category/name
 math/wxMaxima|math/wxmaxima|2019-02-10|rename for consistency
+net-mgmt/py-snmp4|net-mgmt/py-pysnmp|2019-02-11|Renamed to match upstream naming
+net-mgmt/py-snmp4-apps|net-mgmt/py-pysnmp-apps|2019-02-11|Renamed to match upstream naming
+net-mgmt/py-snmp4-mibs|net-mgmt/py-pysnmp-mibs|2019-02-11|Renamed to match upstream naming

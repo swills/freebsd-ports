@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/print/scribus-devel/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/print/scribus-devel/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	scribus
 PORTVERSION=	1.5.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	print editors
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}${PKGNAMESUFFIX}/${PORTVERSION}/ \
 		http://www.scribus.net/downloads/${PORTVERSION}/

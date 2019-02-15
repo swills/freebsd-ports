@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql94-client/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/postgresql94-client/Makefile 492989 2019-02-15 11:02:22Z girgen $
 
 PORTNAME=	postgresql
-PORTREVISION=	1
+PORTREVISION=	0
 
 COMMENT=	PostgreSQL database (client)
 

@@ -1,8 +1,7 @@
-# $FreeBSD: head/deskutils/plasma5-sddm-kcm/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/plasma5-sddm-kcm/Makefile 492811 2019-02-12 21:40:13Z tcberner $
 
 PORTNAME=	sddm-kcm
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	deskutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,9 +1,9 @@
-# $FreeBSD: head/editors/kile/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/editors/kile/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	kile
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0b2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors kde
 
 MAINTAINER=	kde@FreeBSD.org

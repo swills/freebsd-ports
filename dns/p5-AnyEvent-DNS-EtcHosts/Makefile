@@ -1,8 +1,9 @@
 # Created by: Geoffroy Desvernay <dgeo@centrale-marseille.fr>
-# $FreeBSD: head/dns/p5-AnyEvent-DNS-EtcHosts/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/dns/p5-AnyEvent-DNS-EtcHosts/Makefile 492637 2019-02-10 19:45:22Z sunpoet $
 
 PORTNAME=	AnyEvent-DNS-EtcHosts
 PORTVERSION=	0.0103
+PORTREVISION=	1
 CATEGORIES=	dns perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DEXTER
@@ -13,6 +14,9 @@ COMMENT=	AnyEvent::DNS::EtcHosts - Use /etc/hosts before DNS
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+
+BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	p5-AnyEvent>=7:devel/p5-AnyEvent
 
 USES=		perl5
 USE_PERL5=	configure

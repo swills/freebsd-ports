@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-css_parser/Makefile 449546 2017-09-10 13:09:09Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-css_parser/Makefile 492809 2019-02-12 21:03:59Z sunpoet $
 
 PORTNAME=	css_parser
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	textproc www rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-addressable>=0:www/rubygem-addressable
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

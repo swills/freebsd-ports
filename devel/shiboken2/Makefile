@@ -1,10 +1,9 @@
-# $FreeBSD: head/devel/shiboken2/Makefile 492517 2019-02-09 20:35:14Z cmt $
+# $FreeBSD: head/devel/shiboken2/Makefile 492770 2019-02-12 10:25:44Z tobik $
 
 PORTNAME=	shiboken2
 DISTVERSION=	5.12.1
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_QT}
-MASTER_SITE_SUBDIR=	official_releases/QtForPython/shiboken2/PySide2-${DISTVERSION}-src
+MASTER_SITES=	QT/official_releases/QtForPython/shiboken2/PySide2-${DISTVERSION}-src
 DISTNAME=	pyside-setup-everywhere-src-${DISTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -31,11 +30,19 @@ python_OLD_COMMAND=	"/usr/bin/env python"
 CONFIGURE_ENV+=	LLVM_CONFIG=${LOCALBASE}/bin/llvm-config${LLVM_DEFAULT}
 CMAKE_ARGS+=	"-DCMAKE_CXX_FLAGS=-lexecinfo" \
 		"-DCMAKE_STANDARD_LIBRARIES=-lexecinfo" \
-		"-DCMAKE_CXX_STANDARD_LIBRARIES=-lexecinfo"
+		"-DCMAKE_CXX_STANDARD_LIBRARIES=-lexecinfo" \
+		"-DUSE_PYTHON_VERSION=${PYTHON_VER}"
 
-PLIST_SUB=	DISTVERSION=${DISTVERSION} \
-		PYTHON_VERSION=${PYTHON_VERSION}
+.include <bsd.port.pre.mk>
+
+PLIST_SUB+=	DISTVERSION=${DISTVERSION}
+
+.if ${PYTHON_MAJOR_VER} >= 3
+PLIST_SUB+=	PYVERSTR=.cpython-${PYTHON_SUFFIX}${PYTHON_ABIVER}
+.else
+PLIST_SUB+=	PYVERSTR=-${PYTHON_VERSION}
+.endif
 
 WRKSRC=		${WRKDIR}/pyside-setup-everywhere-src-${DISTVERSION}/sources/shiboken2
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

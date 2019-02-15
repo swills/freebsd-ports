@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node8/Makefile 491058 2019-01-23 21:14:27Z bhughes $
+# $FreeBSD: head/www/node8/Makefile 492706 2019-02-11 18:24:42Z bhughes $
 
 PORTNAME=	node
 PORTVERSION=	8.15.0
@@ -65,11 +65,13 @@ LIB_DEPENDS+=	libcares.so:dns/c-ares\
 		libuv.so:devel/libuv \
 		libnghttp2.so:www/libnghttp2
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
-.if ${ARCH} == armv6 || ${ARCH} == armv7
+.if ${PORT_OPTIONS:MBUNDLED_SSL} && ${ARCH} != amd64 && ${ARCH} != i386
 CONFIGURE_ARGS+=--openssl-no-asm
 .endif
+
+.include <bsd.port.pre.mk>
 
 .if ${CHOSEN_COMPILER_TYPE} == gcc
 # GCC does not expose std::snprintf() without this define

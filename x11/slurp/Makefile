@@ -1,12 +1,9 @@
-# $FreeBSD: head/x11/slurp/Makefile 490328 2019-01-15 00:52:32Z jbeich $
+# $FreeBSD: head/x11/slurp/Makefile 492824 2019-02-13 02:44:44Z jbeich $
 
 PORTNAME=	slurp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0
+DISTVERSION=	1.0.1
 CATEGORIES=	x11
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	74c4bdff012a.patch:-p1 7976828fe1a9.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Select a region in a Wayland compositor

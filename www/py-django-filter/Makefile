@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-filter/Makefile 491837 2019-02-01 18:55:18Z kai $
+# $FreeBSD: head/www/py-django-filter/Makefile 492690 2019-02-11 12:00:30Z kai $
 
 PORTNAME=	django-filter
 DISTVERSION=	1.1.0
@@ -19,6 +19,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>0:www/py-django@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils autoplist
-NO_ARCH=	yes
+
+NO_ARCH=		yes
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-django-filter
 
 .include <bsd.port.mk>

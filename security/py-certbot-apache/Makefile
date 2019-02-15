@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/py-certbot-apache/Makefile 491714 2019-01-31 12:47:59Z miwi $
+# $FreeBSD: head/security/py-certbot-apache/Makefile 492730 2019-02-11 19:00:28Z sunpoet $
 
 PORTNAME=	certbot-apache
 PORTVERSION=	${ACME_VERSION}
-PORTREVISION=	2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

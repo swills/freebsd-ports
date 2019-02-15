@@ -1,8 +1,8 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/www/py-hyperframe/Makefile 438327 2017-04-12 02:30:59Z shaun $
+# $FreeBSD: head/www/py-hyperframe/Makefile 492928 2019-02-14 18:11:55Z bofh $
 
 PORTNAME=	hyperframe
-PORTVERSION=	5.0.0
+PORTVERSION=	5.2.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,6 +14,7 @@ LICENSE=	MIT
 
 USES?=		python
 USE_PYTHON=	distutils autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: clement@FreeBSD.org
-# $FreeBSD: head/net-mgmt/cacti-spine/Makefile 489432 2019-01-06 03:05:37Z skreuzer $
+# $FreeBSD: head/net-mgmt/cacti-spine/Makefile 492821 2019-02-13 02:05:29Z skreuzer $
 
 PORTNAME=	spine
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.cacti.net/downloads/${PORTNAME}/
 DISTNAME=	cacti-${PORTNAME}-${PORTVERSION}

@@ -1,11 +1,10 @@
 # Created by: Per Otterstr=F6m <pelle@fukt.bth.se>
-# $FreeBSD: head/x11/temperature.app/Makefile 491964 2019-02-02 17:34:27Z tobik $
+# $FreeBSD: head/x11/temperature.app/Makefile 492666 2019-02-11 04:39:47Z meta $
 
 PORTNAME=	temperature.app
-PORTVERSION=	1.4
-PORTREVISION=	5
+PORTVERSION=	1.5
 CATEGORIES=	x11 windowmaker
-MASTER_SITES=	http://www.fukt.bsnet.se/~per/temperature/
+MASTER_SITES=	https://www.dockapps.net/download/
 DISTNAME=	Temperature.app-${PORTVERSION}
 
 MAINTAINER=	mbeis@xs4all.nl

@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-envisage/Makefile 486497 2018-12-03 04:33:28Z swills $
+# $FreeBSD: head/devel/py-envisage/Makefile 492645 2019-02-10 21:07:25Z swills $
 
 PORTNAME=	envisage
-PORTVERSION=	4.7.0
+PORTVERSION=	4.7.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

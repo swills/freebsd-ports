@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-drf-yasg/Makefile 491837 2019-02-01 18:55:18Z kai $
+# $FreeBSD: head/www/py-drf-yasg/Makefile 492690 2019-02-11 12:00:30Z kai $
 
 PORTNAME=	drf-yasg
 DISTVERSION=	1.11.1
@@ -29,6 +29,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11.7:www/py-django111@${PY_FLAV
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-NO_ARCH=	yes
+NO_ARCH=		yes
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-drf-yasg
 
 .include <bsd.port.mk>

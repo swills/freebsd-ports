@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/osc/Makefile 490640 2019-01-18 15:58:12Z amdmi3 $
+# $FreeBSD: head/devel/osc/Makefile 492862 2019-02-13 20:35:15Z amdmi3 $
 
 PORTNAME=	osc
-PORTVERSION=	0.164.1
+PORTVERSION=	0.164.2
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org

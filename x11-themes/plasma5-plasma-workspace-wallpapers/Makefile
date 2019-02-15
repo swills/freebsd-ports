@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-themes/plasma5-plasma-workspace-wallpapers/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11-themes/plasma5-plasma-workspace-wallpapers/Makefile 492811 2019-02-12 21:40:13Z tcberner $
 
 PORTNAME=	plasma-workspace-wallpapers
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

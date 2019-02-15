@@ -1,8 +1,8 @@
 # Created by: Greg Fitzgerald <gregf@hugops.pw>
-# $FreeBSD: head/net/fb/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/net/fb/Makefile 492649 2019-02-10 21:19:32Z swills $
 
 PORTNAME=	fb
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	net python
 MASTER_SITES=	http://paste.xinu.at/data/client/
 

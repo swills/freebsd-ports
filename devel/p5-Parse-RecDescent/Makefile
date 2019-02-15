@@ -1,15 +1,14 @@
 # Created by: Jerry Hicks <wghicks@bellsouth.net>
-# $FreeBSD: head/devel/p5-Parse-RecDescent/Makefile 479390 2018-09-10 11:16:59Z des $
+# $FreeBSD: head/devel/p5-Parse-RecDescent/Makefile 492944 2019-02-14 22:41:01Z sunpoet $
 
 PORTNAME=	Parse-RecDescent
-PORTVERSION=	1.967.009
-PORTREVISION=	2
+PORTVERSION=	1.967.015
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Recursive descent parsing framework for Perl
 
 LICENSE=	ART10 GPLv1+
@@ -21,10 +20,11 @@ OPTIONS_DEFINE=	DOCS
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 post-install-DOCS-on:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}/tutorial
-	${INSTALL_DATA} ${WRKSRC}/tutorial/* ${STAGEDIR}${DOCSDIR}/tutorial
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/tutorial/* ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,7 +1,6 @@
-# $FreeBSD: head/databases/qt5-sqldrivers-pgsql/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/databases/qt5-sqldrivers-pgsql/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	pgsql
-PORTREVISION=	1
 
 DB=		PSQL
 DB_DESC=	PostgreSQL

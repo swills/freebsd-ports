@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/protozero/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/protozero/Makefile 492700 2019-02-11 16:53:40Z amdmi3 $
 
 PORTNAME=	protozero
-PORTVERSION=	1.6.4
-PORTREVISION=	1
+PORTVERSION=	1.6.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

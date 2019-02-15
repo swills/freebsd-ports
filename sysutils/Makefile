@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 492408 2019-02-08 03:43:06Z yuri $
+# $FreeBSD: head/sysutils/Makefile 492672 2019-02-11 08:09:09Z tobik $
 #
 
     COMMENT = System utilities
@@ -644,6 +644,7 @@
     SUBDIR += magicrescue
     SUBDIR += manck
     SUBDIR += mapchan
+    SUBDIR += mapdir
     SUBDIR += massadmin
     SUBDIR += mate-control-center
     SUBDIR += mate-polkit

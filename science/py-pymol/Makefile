@@ -1,10 +1,9 @@
 # Created by: Nakata Maho <chat95@mbox.kyoto-inet.or.jp>
-# $FreeBSD: head/science/py-pymol/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/science/py-pymol/Makefile 492761 2019-02-12 06:52:57Z yuri $
 
 PORTNAME=	pymol
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.2.0
-PORTREVISION=	3
+DISTVERSION=	2.3.0
 CATEGORIES=	science biology python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -17,7 +16,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${LOCALBASE}/include/glm/glm.hpp:math/glm
+		${LOCALBASE}/include/glm/glm.hpp:math/glm \
+		${LOCALBASE}/include/mmtf.hpp:science/mmtf
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libpng.so:graphics/png \
 		libmsgpackc.so:devel/msgpack
@@ -25,7 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Pmw>0:x11-toolkits/py-Pmw@${PY_FLAVOR} \
 		${PYNUMPY}
 
-USES=		compiler:c++11-lang python:2.7 shebangfix tar:bz2
+USES=		compiler:c++11-lang gl gnome python:2.7 shebangfix tar:bz2
 USE_GITHUB=	yes
 GH_ACCOUNT=	schrodinger
 GH_PROJECT=	${PORTNAME}-open-source

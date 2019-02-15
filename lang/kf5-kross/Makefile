@@ -1,8 +1,7 @@
-# $FreeBSD: head/lang/kf5-kross/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/lang/kf5-kross/Makefile 492794 2019-02-12 17:48:25Z tcberner $
 
 PORTNAME=	kross
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	lang kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

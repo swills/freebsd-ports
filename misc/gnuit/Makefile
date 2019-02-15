@@ -1,9 +1,9 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/misc/gnuit/Makefile 487928 2018-12-20 22:47:20Z gerald $
+# $FreeBSD: head/misc/gnuit/Makefile 492758 2019-02-12 06:48:13Z gerald $
 
 PORTNAME=	gnuit
 PORTVERSION=	4.9.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 
@@ -13,7 +13,11 @@ COMMENT=	GNU Interactive Tools - a file system browser for UNIX systems
 LICENSE=	GPLv3+ GFDL
 LICENSE_COMB=	multi
 
+DEPRECATED=	Upstream stale for 10 years, no users it appears
+EXPIRATION_DATE=2019-05-12
+
 USES=		ncurses
+
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--disable-transition
 INFO=		gnuit

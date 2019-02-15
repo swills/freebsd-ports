@@ -1,8 +1,7 @@
-# $FreeBSD: head/print/qt5-printsupport/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/print/qt5-printsupport/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	printsupport
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	2
 CATEGORIES=	print
 PKGNAMEPREFIX=	qt5-
 

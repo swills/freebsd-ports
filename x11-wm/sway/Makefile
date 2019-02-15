@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-wm/sway/Makefile 492053 2019-02-03 15:00:05Z jbeich $
+# $FreeBSD: head/x11-wm/sway/Makefile 492738 2019-02-11 23:44:12Z jbeich $
 
 PORTNAME=	sway
-DISTVERSION=	1.0-rc1
+DISTVERSION=	1.0-rc2
 CATEGORIES=	x11-wm
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -26,7 +26,6 @@ USE_GITHUB=	yes
 USE_GNOME=	cairo pango
 USE_XORG=	pixman
 GH_ACCOUNT=	swaywm
-MESON_ARGS=	-Dsway-version="${DISTVERSIONFULL}"
 
 OPTIONS_DEFINE=	MANPAGES PIXBUF SUID X11
 OPTIONS_DEFAULT=MANPAGES PIXBUF SUID X11
@@ -51,6 +50,10 @@ X11_MESON_OFF=		-Dxwayland=disabled
 post-patch:
 # Let @sample handle default files under etc/
 	@${REINPLACE_CMD} -e '/config\.in/{ N; s/@BASENAME@/&.sample/; }' \
+		${WRKSRC}/meson.build
+# Extract (snapshot) version from the port instead of meson.build
+	@${REINPLACE_CMD} -i .nogit -e 's/git.found()/false/' \
+		-e '/project_version/s/@0@/${DISTVERSIONFULL}/' \
 		${WRKSRC}/meson.build
 
 .include <bsd.port.mk>

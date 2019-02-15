@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-re2/Makefile 472117 2018-06-10 08:08:26Z antoine $
+# $FreeBSD: head/devel/rubygem-re2/Makefile 492608 2019-02-10 13:34:30Z mfechner $
 
 PORTNAME=	re2
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,11 +12,10 @@ COMMENT=	Ruby bindings to re2
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	re2>=0:devel/re2
-LIB_DEPENDS=	libgmp.so:math/gmp
-RUN_DEPENDS=	re2>=0:devel/re2
+LIB_DEPENDS=	libgmp.so:math/gmp \
+		libre2.so:devel/re2
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

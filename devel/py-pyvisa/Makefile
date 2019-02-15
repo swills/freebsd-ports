@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyvisa/Makefile 477171 2018-08-14 16:40:52Z sunpoet $
+# $FreeBSD: head/devel/py-pyvisa/Makefile 492877 2019-02-13 23:52:46Z sunpoet $
 
 PORTNAME=	pyvisa
 PORTVERSION=	1.9.1
@@ -17,8 +17,9 @@ RUN_DEPENDS=	${PY_ENUM34} \
 		${PYTHON_PKGNAMEPREFIX}pyvisa-py>=0:devel/py-pyvisa-py@${PY_FLAVOR}
 
 USES=		python
-USE_LOCALE=	en_US.UTF-8
 USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
+USE_LOCALE=	en_US.UTF-8
 
 .include <bsd.port.mk>

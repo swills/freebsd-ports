@@ -1,8 +1,7 @@
-# $FreeBSD: head/misc/qt5-l10n/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/misc/qt5-l10n/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	l10n
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	misc
 PKGNAMEPREFIX=	qt5-
 

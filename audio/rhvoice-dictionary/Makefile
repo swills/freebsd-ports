@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/rhvoice-dictionary/Makefile 480439 2018-09-23 00:10:21Z yuri $
+# $FreeBSD: head/audio/rhvoice-dictionary/Makefile 492760 2019-02-12 06:50:53Z yuri $
 
 PORTNAME=	RHVoice-dictionary
-DISTVERSION=	g20180922
+DISTVERSION=	g20190109
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -11,7 +11,7 @@ RUN_DEPENDS=	RHVoice>0:audio/rhvoice
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	vantu5z
-GH_TAGNAME=	d89bbe5
+GH_TAGNAME=	45ddf91
 
 NO_BUILD=	yes
 NO_ARCH=	yes

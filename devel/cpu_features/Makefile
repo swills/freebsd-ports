@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/cpu_features/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/cpu_features/Makefile 492822 2019-02-13 02:11:17Z skreuzer $
 
 PORTNAME=	cpu_features
 PORTVERSION=	0.2.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	skreuzer@FreeBSD.org
@@ -13,6 +14,8 @@ LICENSE=	APACHE20
 USES=	cmake:insource
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
+
+CFLAGS+=	-fPIC
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/list_cpu_features ${STAGEDIR}${PREFIX}/bin

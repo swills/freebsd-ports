@@ -1,8 +1,7 @@
-# $FreeBSD: head/archivers/urbackup-client/Makefile 488440 2018-12-26 20:55:27Z linimon $
+# $FreeBSD: head/archivers/urbackup-client/Makefile 492780 2019-02-12 11:56:49Z swills $
 
 PORTNAME=	urbackup-client
-DISTVERSION=	2.2.6
-PORTREVISION=	2
+DISTVERSION=	2.3.4
 CATEGORIES=	archivers
 MASTER_SITES=	https://hndl.urbackup.org/Client/${DISTVERSION}/
 
@@ -14,15 +13,15 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcryptopp.so:security/cryptopp
 
-USES=		autoreconf compiler:c++11-lang dos2unix gettext localbase \
-		pkgconfig
+USES=		autoreconf compiler:c++11-lang dos2unix gettext localbase libtool \
+			pkgconfig sqlite:3
 USE_RC_SUBR=	urbackup_client
 
 USERS=		urbackup
 GROUPS=		urbackup
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-clientupdate
+CONFIGURE_ARGS=	--disable-clientupdate --without-embedded-sqlite3
 CXXFLAGS+=	`pkgconf --cflags-only-other libcryptopp`
 
 SUB_FILES=	pkg-message urbackupclient.conf.sample-daemon

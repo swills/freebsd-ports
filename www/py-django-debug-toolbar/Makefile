@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-debug-toolbar/Makefile 489416 2019-01-05 22:47:27Z sunpoet $
+# $FreeBSD: head/www/py-django-debug-toolbar/Makefile 492690 2019-02-11 12:00:30Z kai $
 
 PORTNAME=	django-debug-toolbar
 PORTVERSION=	1.11
@@ -19,6 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
-NO_ARCH=	yes
+NO_ARCH=		yes
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-django-debug-toolbar
 
 .include <bsd.port.mk>

@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/plasma5-plasma-desktop/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11/plasma5-plasma-desktop/Makefile 492811 2019-02-12 21:40:13Z tcberner $
 
 PORTNAME=	plasma-desktop
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

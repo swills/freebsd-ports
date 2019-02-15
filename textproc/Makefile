@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 492236 2019-02-05 14:26:41Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 492970 2019-02-15 05:02:44Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -417,6 +417,7 @@
     SUBDIR += libcss
     SUBDIR += libcsv
     SUBDIR += libcue
+    SUBDIR += libcyaml
     SUBDIR += libdiff
     SUBDIR += libe-book
     SUBDIR += libebml
@@ -1480,6 +1481,7 @@
     SUBDIR += rarian
     SUBDIR += rasqal
     SUBDIR += re_graph
+    SUBDIR += re-flex
     SUBDIR += redet
     SUBDIR += redland
     SUBDIR += redland-bindings

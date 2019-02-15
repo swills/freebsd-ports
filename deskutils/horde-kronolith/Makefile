@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas (<thierry@thomas.as>)
-# $FreeBSD: head/deskutils/horde-kronolith/Makefile 489577 2019-01-07 14:16:11Z joneum $
+# $FreeBSD: head/deskutils/horde-kronolith/Makefile 492663 2019-02-11 01:54:16Z joneum $
 
 PORTNAME=	kronolith
-PORTVERSION=	4.2.26
+PORTVERSION=	4.2.27
 CATEGORIES=	deskutils www pear
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 

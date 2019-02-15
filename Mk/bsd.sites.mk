@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 486800 2018-12-06 20:33:28Z sunpoet $
+# $FreeBSD: head/Mk/bsd.sites.mk 492993 2019-02-15 12:04:50Z tobik $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -128,6 +128,10 @@ MASTER_SITE_CRAN+= \
 
 .if !defined(IGNORE_MASTER_SITE_CRAN_ARCHIVE)
 MASTER_SITE_CRAN_ARCHIVE+= ${MASTER_SITE_CRAN:S,$,Archive/${PORTNAME}/,}
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_CRATESIO)
+MASTER_SITE_CRATESIO+=	https://crates.io/api/v1/crates/%SUBDIR%/download?dummy=/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_DEBIAN)
@@ -1240,6 +1244,7 @@ MASTER_SITES_SUBDIRS=	APACHE_COMMONS_BINARIES:${PORTNAME:S,commons-,,} \
 			APACHE_JAKARTA:${PORTNAME:S,-,/,}/source \
 			BERLIOS:${PORTNAME:tl}.berlios \
 			CHEESESHOP:source/${DISTNAME:C/(.).*/\1/}/${DISTNAME:S/-${DISTVERSIONFULL}$//} \
+			CRATESIO:${PORTNAME}/${DISTVERSIONFULL} \
 			DEBIAN:pool/main/${PORTNAME:C/^((lib)?.).*$/\1/}/${PORTNAME} \
 			FARSIGHT:${PORTNAME} \
 			FESTIVAL:${PORTVERSION} \

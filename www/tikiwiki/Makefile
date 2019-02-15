@@ -1,8 +1,8 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/tikiwiki/Makefile 486932 2018-12-08 09:36:09Z joneum $
+# $FreeBSD: head/www/tikiwiki/Makefile 492991 2019-02-15 11:22:13Z joneum $
 
 PORTNAME=	tikiwiki
-DISTVERSION=	19.0
+DISTVERSION=	19.1
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME}/Tiki_19.x_Denebola/${DISTVERSION}/
 DISTNAME=	tiki-${DISTVERSION}

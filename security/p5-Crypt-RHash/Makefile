@@ -1,8 +1,8 @@
 # Created by: perl@FreeBSD.org
-# $FreeBSD: head/security/p5-Crypt-RHash/Makefile 489163 2019-01-03 11:21:01Z wen $
+# $FreeBSD: head/security/p5-Crypt-RHash/Makefile 492727 2019-02-11 19:00:09Z sunpoet $
 
 PORTNAME=	Crypt-RHash
-PORTVERSION=	0.96
+PORTVERSION=	0.97
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,6 +19,6 @@ USES=		perl5
 USE_PERL5=	configure
 
 post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Crypt/Rhash/Rhash.so
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Crypt/Rhash/Rhash.so
 
 .include <bsd.port.mk>

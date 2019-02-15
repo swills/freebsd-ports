@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 492606 2019-02-10 12:13:07Z antoine $
+# $FreeBSD: head/databases/Makefile 492902 2019-02-14 07:36:54Z wen $
 #
 
     COMMENT = Databases and related software
@@ -802,6 +802,7 @@
     SUBDIR += py-oursql
     SUBDIR += py-peewee
     SUBDIR += py-pg8000
+    SUBDIR += py-pg8000-112
     SUBDIR += py-pg_pqueue
     SUBDIR += py-pgcli
     SUBDIR += py-pgdbconn

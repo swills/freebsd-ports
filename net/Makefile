@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 492354 2019-02-07 09:43:16Z tobik $
+# $FreeBSD: head/net/Makefile 492890 2019-02-14 00:29:04Z bofh $
 #
 
     COMMENT = Networking tools
@@ -1036,6 +1036,7 @@
     SUBDIR += py-gntp
     SUBDIR += py-gspread
     SUBDIR += py-gspreadsheet
+    SUBDIR += py-h11
     SUBDIR += py-haproxy-log-analysis
     SUBDIR += py-haproxyctl
     SUBDIR += py-httpstat
@@ -1141,6 +1142,7 @@
     SUBDIR += py-urllib3
     SUBDIR += py-wmi-query
     SUBDIR += py-wolframalpha
+    SUBDIR += py-wsproto
     SUBDIR += py-xmlrpc
     SUBDIR += py-zeroconf
     SUBDIR += py-zope.proxy

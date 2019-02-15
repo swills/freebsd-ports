@@ -1,8 +1,8 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-fbsd12.0-kmod/Makefile 487755 2018-12-18 15:50:49Z zeising $
+# $FreeBSD: head/graphics/drm-fbsd12.0-kmod/Makefile 492864 2019-02-13 21:07:13Z zeising $
 
 PORTNAME=	drm-fbsd12.0-kmod
-PORTVERSION=	4.16.g20181215
+PORTVERSION=	4.16.g20190213
 CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -25,7 +25,7 @@ USES=		kmod uidfix compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-drm
-GH_TAGNAME=	71fcc9f
+GH_TAGNAME=	a5516b9
 
 .include <bsd.port.options.mk>
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/healpix/Makefile 491468 2019-01-28 09:33:12Z yuri $
+# $FreeBSD: head/science/healpix/Makefile 492620 2019-02-10 17:09:19Z yuri $
 
 PORTNAME=	healpix
 DISTVERSION=	3.50
@@ -22,7 +22,7 @@ c_PKGNAMESUFFIX=	-c
 cxx_PLIST=	${.CURDIR}/pkg-plist-cxx
 c_PLIST=	${.CURDIR}/pkg-plist-c
 
-USES=		autoreconf gmake libtool pkgconfig
+USES=		autoreconf compiler:c++11-lang gmake libtool pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 USE_LDCONFIG=	yes

@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/phonon/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/multimedia/phonon/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
 PORTNAME=	phonon
 DISTVERSION=	4.10.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}
 DIST_SUBDIR=	KDE/phonon

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pyvisa-py/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-pyvisa-py/Makefile 492878 2019-02-13 23:52:51Z sunpoet $
 
 PORTNAME=	pyvisa-py
-PORTVERSION=	0.2
+PORTVERSION=	0.3.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	SERIAL USB

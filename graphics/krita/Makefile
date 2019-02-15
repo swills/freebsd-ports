@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/krita/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/krita/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	krita
 DISTVERSION=	4.1.7.101
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION:R}
 DIST_SUBDIR=	KDE/${PORTNAME}

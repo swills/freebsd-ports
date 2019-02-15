@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/texstudio/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/editors/texstudio/Makefile 492733 2019-02-11 19:44:51Z tcberner $
 
 PORTNAME=	texstudio
 DISTVERSION=	2.12.14
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	editors
 
 MAINTAINER=	rigoletto@FreeBSD.org

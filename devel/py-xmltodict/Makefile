@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-xmltodict/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-xmltodict/Makefile 492720 2019-02-11 18:59:31Z sunpoet $
 
 PORTNAME=	xmltodict
-PORTVERSION=	0.11.0
+PORTVERSION=	0.12.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,9 +15,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
+USE_LOCALE=	en_US.UTF-8
 
 do-test:
 	@cd ${WRKSRC} && ${LOCALBASE}/bin/nosetests-${PYTHON_VER}

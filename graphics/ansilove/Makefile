@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/ansilove/Makefile 490963 2019-01-22 18:02:49Z amdmi3 $
+# $FreeBSD: head/graphics/ansilove/Makefile 492790 2019-02-12 16:37:51Z amdmi3 $
 
 PORTNAME=	ansilove
 PORTVERSION=	4.0.0
@@ -37,7 +37,7 @@ post-install-EXAMPLES-on:
 
 do-test:
 	@cd ${WRKSRC}/examples/ && for f in *; do \
-		${WRKSRC}/${PORTNAME} -o "${WRKSRC}/$$f.png" "$$f"; \
+		${BUILD_WRKSRC}/${PORTNAME} -o "${WRKSRC}/$$f.png" "$$f"; \
 		${FILE} "${WRKSRC}/$$f.png" | ${GREP} -q 'PNG'; \
 	done
 

@@ -1,23 +1,24 @@
 # Created by: Bob Bomar <bob@fly.homeunix.org>
-# $FreeBSD: head/www/phpsysinfo/Makefile 462911 2018-02-25 05:32:29Z sunpoet $
+# $FreeBSD: head/www/phpsysinfo/Makefile 492611 2019-02-10 14:35:09Z kai $
 
 PORTNAME=	phpsysinfo
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.2.10
+DISTVERSION=	3.3.0
 CATEGORIES=	www
 
 MAINTAINER=	tremere@cainites.net
 COMMENT=	PHP script for displaying system information
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		php:web shebangfix
 USE_GITHUB=	yes
-SHEBANG_FILES=	tools/check.sh
 USE_PHP=	dom mbstring pcre simplexml xml
+
 NO_BUILD=	yes
 NO_ARCH=	yes
+SHEBANG_FILES=	tools/check.sh
 
 SUB_FILES=	pkg-message
 PLIST_FILES=	"@sample ${WWWDIR}/phpsysinfo.ini.new ${WWWDIR}/phpsysinfo.ini"

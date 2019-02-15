@@ -1,8 +1,9 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-devel/Makefile 492512 2019-02-09 20:18:22Z cy $
+# $FreeBSD: head/security/krb5-devel/Makefile 492968 2019-02-15 04:37:25Z cy $
 
 PORTNAME=		krb5
 PORTVERSION=		1.18.${MIT_COMMIT_DATE}
+PORTREVISION=		1
 CATEGORIES=		security
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=		-devel
@@ -107,6 +108,8 @@ CONFIGURE_ARGS+=	--program-transform-name="${PROGRAM_TRANSFORM_NAME}"
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/krb5
 	${ECHO_CMD} @dir share/doc/krb5 >> ${TMPPLIST}
+	@${SED} "s|%%PREFIX%%|${PREFIX}|" ${FILESDIR}/kdc.in > ${STAGEDIR}${PREFIX}/sbin/kdc; \
+	${CHMOD} +x ${STAGEDIR}${PREFIX}/sbin/kdc
 
 post-install-LDAP-on:
 	${MKDIR} ${STAGEDIR}${DATADIR}

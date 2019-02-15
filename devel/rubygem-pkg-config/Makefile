@@ -1,12 +1,12 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-pkg-config/Makefile 484137 2018-11-04 18:58:10Z sunpoet $
+# $FreeBSD: head/devel/rubygem-pkg-config/Makefile 492729 2019-02-11 19:00:21Z sunpoet $
 
 PORTNAME=	pkg-config
-PORTVERSION=	1.3.2
+PORTVERSION=	1.3.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	pkg-config implementation for Ruby
 
 LICENSE=	LGPL21+

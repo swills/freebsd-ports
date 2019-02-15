@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-librarian-puppet/Makefile 437920 2017-04-07 12:45:34Z robak $
+# $FreeBSD: head/sysutils/rubygem-librarian-puppet/Makefile 492781 2019-02-12 13:15:37Z robak $
 
 PORTNAME=	librarian-puppet
-PORTVERSION=	2.2.3
-PORTREVISION=	1
+PORTVERSION=	3.0.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

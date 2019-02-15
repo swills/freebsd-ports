@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/libansilove/Makefile 490963 2019-01-22 18:02:49Z amdmi3 $
+# $FreeBSD: head/graphics/libansilove/Makefile 492789 2019-02-12 16:37:47Z amdmi3 $
 
 PORTNAME=	libansilove
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org

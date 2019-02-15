@@ -1,6 +1,5 @@
-# $FreeBSD: head/databases/qt5-sqldrivers-tds/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/databases/qt5-sqldrivers-tds/Makefile 492793 2019-02-12 17:43:00Z tcberner $
 
-PORTREVISION=	1
 
 DB=		TDS
 DB_DESC=	TDS Database Connectivity

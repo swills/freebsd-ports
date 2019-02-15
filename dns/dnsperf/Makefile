@@ -1,12 +1,10 @@
 # Created by: Edwin Groothuis (edwin@mavetju.org)
-# $FreeBSD: head/dns/dnsperf/Makefile 487232 2018-12-11 12:34:58Z decke $
+# $FreeBSD: head/dns/dnsperf/Makefile 492618 2019-02-10 16:40:02Z pi $
 
 PORTNAME=	dnsperf
-PORTVERSION=	2.1.0.0
-PORTREVISION=	2
+PORTVERSION=	2.2.1
+DISTVERSIONPREFIX=v
 CATEGORIES=	dns benchmarks net
-MASTER_SITES=	ftp://ftp.nominum.com/pub/nominum/${PORTNAME}/${PORTVERSION}/
-DISTNAME=	${PORTNAME}-src-${PORTVERSION}-1
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Performance measurement of Domain Name System (DNS) servers
@@ -15,10 +13,13 @@ LICENSE=	ISCL
 
 BUILD_DEPENDS=	isc-config.sh:dns/bind912
 LIB_DEPENDS=	liblmdb.so:databases/lmdb \
-		libjson-c.so:devel/json-c
+		libjson-c.so:devel/json-c \
+		libxml2.so:textproc/libxml2
 
-USES=		iconv ssl
-USE_GNOME=	libxml2
+USES=		autoreconf gnome iconv libtool ssl
+USE_GITHUB=	yes
+
+GH_ACCOUNT=	DNS-OARC
 GNU_CONFIGURE=	yes
 MAKE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
@@ -29,14 +30,5 @@ PLIST_FILES=	bin/dnsperf \
 		bin/resperf-report \
 		man/man1/dnsperf.1.gz \
 		man/man1/resperf.1.gz
-PORTDOCS=	caching-dns-performance.pdf \
-		dnsperf.pdf \
-		resperf.pdf
-
-OPTIONS_DEFINE=	DOCS
-
-post-install-DOCS-on:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC}/doc && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 489435 2019-01-06 03:16:50Z swills $
+# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 492683 2019-02-11 10:24:45Z kai $
 
 PORTNAME=	pysmi
 PORTVERSION=	0.3.3
+PORTREVISION=	1
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP \
 		SF/pysmi/pysmi/${PORTVERSION}
@@ -12,7 +13,7 @@ COMMENT=	SNMP/SMI MIB parsing in Python
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}snmp4>=0:net-mgmt/py-snmp4@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysnmp>=0:net-mgmt/py-pysnmp@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 

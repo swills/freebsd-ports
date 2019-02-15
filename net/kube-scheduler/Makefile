@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/kube-scheduler/Makefile 491818 2019-02-01 14:42:16Z swills $
+# $FreeBSD: head/net/kube-scheduler/Makefile 492976 2019-02-15 08:10:38Z joneum $
 
 PORTNAME=	kube-scheduler
-PORTVERSION=	1.13.2
+PORTVERSION=	1.13.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

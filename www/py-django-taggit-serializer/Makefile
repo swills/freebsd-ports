@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-taggit-serializer/Makefile 491837 2019-02-01 18:55:18Z kai $
+# $FreeBSD: head/www/py-django-taggit-serializer/Makefile 492690 2019-02-11 12:00:30Z kai $
 
 PORTNAME=	django-taggit-serializer
 DISTVERSION=	0.1.7
@@ -18,6 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-taggit>=0:www/py-django-taggit@${PY_F
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-NO_ARCH=	yes
+NO_ARCH=		yes
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-django-taggit-serializer
 
 .include <bsd.port.mk>

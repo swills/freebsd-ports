@@ -1,5 +1,5 @@
 # Created by: Jean-Baptiste Quenot <jb.quenot@caraldi.com>
-# $FreeBSD: head/comms/rxtx/Makefile 486055 2018-11-27 19:53:11Z linimon $
+# $FreeBSD: head/comms/rxtx/Makefile 492894 2019-02-14 01:05:58Z leres $
 
 PORTNAME=	rxtx
 PORTVERSION=	2.2p2
@@ -28,6 +28,7 @@ CONFIGURE_ENV=	JAVA_HOME=${JAVA_HOME}
 INSTALL_TARGET=	install-strip
 
 USE_LDCONFIG=	yes
+MAKE_JOBS_UNSAFE=	yes
 
 PLIST_SUB=	JAVA_HOME=${JAVA_HOME:S,^${PREFIX}/,,}
 PLIST_SUB+=	ARCH=${ARCH:C/armv.*/arm/:S/powerpc64/ppc64/}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-MIME-Encodings/Makefile 492556 2019-02-10 00:07:08Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-MIME-Encodings/Makefile 492632 2019-02-10 19:44:46Z sunpoet $
 
 PORTNAME=	Email-MIME-Encodings
 PORTVERSION=	1.315
@@ -13,6 +13,8 @@ COMMENT=	Unified interface to MIME encoding and decoding
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+TEST_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny
 
 USES=		perl5
 USE_PERL5=	configure

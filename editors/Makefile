@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 491303 2019-01-26 17:03:48Z tobik $
+# $FreeBSD: head/editors/Makefile 492857 2019-02-13 13:52:53Z danfe $
 #
 
     COMMENT = Editors
@@ -38,7 +38,7 @@
     SUBDIR += emacs
     SUBDIR += emacs-devel
     SUBDIR += encryptpad
-    SUBDIR += featherpad 
+    SUBDIR += featherpad
     SUBDIR += fileobj
     SUBDIR += flim
     SUBDIR += focuswriter
@@ -251,6 +251,7 @@
     SUBDIR += web-mode
     SUBDIR += with-editor
     SUBDIR += wordgrinder
+    SUBDIR += wxhexeditor
     SUBDIR += xcoral
     SUBDIR += xed
     SUBDIR += xi-core

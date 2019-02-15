@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-graphql/Makefile 491725 2019-01-31 14:15:05Z mfechner $
+# $FreeBSD: head/devel/rubygem-graphql/Makefile 492909 2019-02-14 08:59:13Z mfechner $
 
 PORTNAME=	graphql
-PORTVERSION=	1.8.13
+PORTVERSION=	1.8.15
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

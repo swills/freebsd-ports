@@ -1,8 +1,8 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql96-server/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/postgresql96-server/Makefile 492989 2019-02-15 11:02:22Z girgen $
 
-DISTVERSION?=	9.6.11
-PORTREVISION=	1
+DISTVERSION?=	9.6.12
+PORTREVISION=	0
 PKGNAMESUFFIX?=	${PORTVERSION:R:S/.//}${COMPONENT}
 
 MAINTAINER?=	pgsql@FreeBSD.org
@@ -24,4 +24,4 @@ PG_UID?=	770
 ICU_PATCHFILE=	pg-96b4-icu-2016-10-02.diff.gz
 OPTIONS_DEFAULT+=ICU
 
-.include "${.CURDIR}/../postgresql10-server/Makefile"
+.include "${.CURDIR}/../postgresql11-server/Makefile"

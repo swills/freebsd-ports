@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-nbconvert/Makefile 479217 2018-09-08 00:14:40Z sunpoet $
+# $FreeBSD: head/devel/py-nbconvert/Makefile 492634 2019-02-10 19:44:57Z sunpoet $
 
 PORTNAME=	nbconvert
-PORTVERSION=	5.4.0
+PORTVERSION=	5.4.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

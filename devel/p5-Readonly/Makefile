@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Readonly/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Readonly/Makefile 492629 2019-02-10 19:02:44Z adamw $
 
 PORTNAME=	Readonly
 PORTVERSION=	2.05
@@ -15,5 +15,6 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	modbuildtiny
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

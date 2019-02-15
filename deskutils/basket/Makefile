@@ -1,5 +1,5 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/deskutils/basket/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/basket/Makefile 492667 2019-02-11 05:07:40Z tcberner $
 
 PORTNAME=	basket
 DISTVERSIONPREFIX=	v
@@ -31,5 +31,7 @@ USE_XORG=	x11
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	basket-notepads
+
+PLIST_SUB=	QT5_VERSION=${QT5_VERSION}
 
 .include <bsd.port.mk>
