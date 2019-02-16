@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mercurial
-PORTVERSION=	4.8.2
+PORTVERSION=	4.9
 CATEGORIES=	devel python
 MASTER_SITES=	https://www.mercurial-scm.org/release/
 
@@ -14,6 +14,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cpe python:2.7
 USE_PYTHON=	distutils
+
+# Follow, https://www.mercurial-scm.org/wiki/CACertificates
+# Taken from security/ca_root_nss
+CERTDIR?=	share/certs
 
 OPTIONS_DEFINE=	CA_BUNDLE DATA DOCS NLS FREEBSD
 OPTIONS_DEFAULT=CA_BUNDLE DATA
@@ -55,6 +59,10 @@ CONTRIB_FILES=	bash_completion \
 PORTDOCS=	CONTRIBUTORS README.rst
 
 post-install:
+	${MKDIR} ${STAGEDIR}${PREFIX}/etc/mercurial
+	${INSTALL_DATA} ${FILESDIR}/hgrc ${STAGEDIR}${PREFIX}/etc/mercurial
+	${REINPLACE_CMD} -i "" 's|%%PREFIX%%|${PREFIX}| ;\
+		s|%%CERTDIR%%|${CERTDIR}|' ${STAGEDIR}${PREFIX}/etc/mercurial/hgrc
 	${INSTALL_MAN} ${WRKSRC}/doc/*.1 ${STAGEDIR}${PREFIX}/man/man1/
 	${INSTALL_MAN} ${WRKSRC}/doc/*.5 ${STAGEDIR}${PREFIX}/man/man5/
 	${FIND} ${STAGEDIR}${PYTHON_SITELIBDIR}/ -name '*.so' -exec ${STRIP_CMD} {} +
