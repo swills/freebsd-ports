@@ -145,6 +145,7 @@ bin/exiftool
 %%SITE_PERL%%/Image/ExifTool/Olympus.pm
 %%SITE_PERL%%/Image/ExifTool/OpenEXR.pm
 %%SITE_PERL%%/Image/ExifTool/Opus.pm
+%%SITE_PERL%%/Image/ExifTool/PCX.pm
 %%SITE_PERL%%/Image/ExifTool/PDF.pm
 %%SITE_PERL%%/Image/ExifTool/PGF.pm
 %%SITE_PERL%%/Image/ExifTool/PICT.pm
@@ -324,6 +325,7 @@ bin/exiftool
 %%PERL5_MAN3%%/Image::ExifTool::Olympus.3.gz
 %%PERL5_MAN3%%/Image::ExifTool::OpenEXR.3.gz
 %%PERL5_MAN3%%/Image::ExifTool::Opus.3.gz
+%%PERL5_MAN3%%/Image::ExifTool::PCX.3.gz
 %%PERL5_MAN3%%/Image::ExifTool::PDF.3.gz
 %%PERL5_MAN3%%/Image::ExifTool::PGF.3.gz
 %%PERL5_MAN3%%/Image::ExifTool::PICT.3.gz
