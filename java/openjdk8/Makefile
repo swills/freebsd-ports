@@ -51,8 +51,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 RUN_DEPENDS=	javavm:java/javavmwrapper \
 		dejavu>0:x11-fonts/dejavu
 
-USES=		compiler:features dos2unix gmake iconv pkgconfig \
-		shebangfix
+USES=		compiler:features dos2unix gmake iconv pkgconfig
 
 .if !exists(/usr/bin/unzip)
 BUILD_DEPENDS+=	${UNZIP_CMD}:archivers/unzip
@@ -185,7 +184,6 @@ DOS2UNIX_FILES= jdk/src/bsd/doc/man/appletviewer.1 \
 		nashorn/test/script/jfx.js \
 		nashorn/test/script/jfx/kaleidoscope.js \
 		nashorn/test/script/jfx/spread.js
-SHEBANG_FILES=	configure
 
 _MAKE_JOBS=	#
 CPPFLAGS+=	-I${LOCALBASE}/include
