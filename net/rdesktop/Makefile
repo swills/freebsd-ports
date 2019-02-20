@@ -2,9 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	rdesktop
-PORTVERSION=	1.8.3
+PORTVERSION=	1.8.4
 CATEGORIES=	net comms ipv6
-MASTER_SITES=	SF
+USE_GITHUB=	yes
+DISTVERSIONPREFIX=	v
 
 MAINTAINER=	gregf@hugops.pw
 COMMENT=	RDP client for Windows NT/2000/2003 Terminal Server
@@ -12,7 +13,7 @@ COMMENT=	RDP client for Windows NT/2000/2003 Terminal Server
 LICENSE=	GPLv3
 
 USE_XORG=	x11
-USES=		gmake iconv pkgconfig ssl
+USES=		autoreconf gmake iconv pkgconfig ssl
 CONFIGURE_ARGS+=	${ICONV_CONFIGURE_ARG} --disable-credssp
 GNU_CONFIGURE=	yes
 DOCS=		doc/AUTHORS doc/TODO doc/*.txt
