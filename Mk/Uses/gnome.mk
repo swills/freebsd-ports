@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/Uses/gnome.mk 488007 2018-12-21 14:27:30Z rene $
+# $FreeBSD: head/Mk/Uses/gnome.mk 493561 2019-02-22 08:14:11Z bapt $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -76,7 +76,7 @@ _USE_GNOME_ALL+= atk cairo \
 		gdkpixbuf2 gconf2 glib20 \
 		gnomedocutils gnomesharp20 \
 		gnomevfs2 gtk-update-icon-cache gtk20 gtkhtml3 \
-		gtksharp20 gtksourceview gtksourceview2 gvfs libartlgpl2 libbonobo \
+		gtksharp20 gtksourceview2 gvfs libartlgpl2 libbonobo \
 		libbonoboui libglade2 libgnome \
 		libgnomecanvas libgnomekbd libgnomeprint libgnomeprintui \
 		libgnomeui libgsf libgtkhtml libidl librsvg2 libwnck \
@@ -293,9 +293,6 @@ libgda5_USE_GNOME_IMPL=	glib20 libxslt
 
 libgda5-ui_LIB_DEPENDS=	libgda-ui-5.0.so:databases/libgda5-ui
 libgda5-ui_USE_GNOME_IMPL=glib20 libxslt libgda5
-
-gtksourceview_LIB_DEPENDS=	libgtksourceview-1.0.so:x11-toolkits/gtksourceview
-gtksourceview_USE_GNOME_IMPL=libgnome libgnomeprintui
 
 gtksourceview2_LIB_DEPENDS=	libgtksourceview-2.0.so:x11-toolkits/gtksourceview2
 gtksourceview2_USE_GNOME_IMPL=gtk20 libxml2

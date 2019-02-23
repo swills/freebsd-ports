@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 492970 2019-02-15 05:02:44Z yuri $
+# $FreeBSD: head/textproc/Makefile 493656 2019-02-23 08:03:47Z bapt $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1698,7 +1698,6 @@
     SUBDIR += scim-openvanilla
     SUBDIR += scim-table-imengine
     SUBDIR += scr2txt
-    SUBDIR += scrollkeeper
     SUBDIR += scss
     SUBDIR += scws
     SUBDIR += sdcv

@@ -1,9 +1,8 @@
 # Created by: Dryice Liu <dryice@FreeBSD.org>
-# $FreeBSD: head/www/py-beaker/Makefile 491707 2019-01-31 11:49:18Z tobik $
+# $FreeBSD: head/www/py-beaker/Makefile 493609 2019-02-22 19:55:57Z sunpoet $
 
 PORTNAME=	beaker
-PORTVERSION=	1.10.0
-PORTREVISION=	1
+PORTVERSION=	1.10.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,6 +15,7 @@ LICENSE=	BSD3CLAUSE
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>

@@ -1,14 +1,14 @@
-# $FreeBSD: head/math/antic/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/antic/Makefile 493149 2019-02-17 03:00:30Z yuri $
 
 PORTNAME=	antic
-DISTVERSION=	g20180325
-PORTREVISION=	1
+DISTVERSION=	g20190211
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Algebraic Number Theory In C
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/gpl-2.0.txt
 
 LIB_DEPENDS=	libflint.so:math/flint2 \
 		libgmp.so:math/gmp \
@@ -19,7 +19,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 USE_GITHUB=	yes
 GH_ACCOUNT=	wbhart
-GH_TAGNAME=	0063a41
+GH_TAGNAME=	6f99431
 USE_LDCONFIG=	yes
 
 PLIST_FILES=	include/antic/nf.h \

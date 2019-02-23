@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-mgmt-eventhub/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/devel/py-azure-mgmt-eventhub/Makefile 493073 2019-02-16 19:58:33Z dbaio $
 
 PORTNAME=	azure-mgmt-eventhub
-PORTVERSION=	2.2.0
+PORTVERSION=	2.3.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

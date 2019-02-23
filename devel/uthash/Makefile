@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/uthash/Makefile 436598 2017-03-21 12:54:29Z zi $
+# $FreeBSD: head/devel/uthash/Makefile 493636 2019-02-23 02:16:53Z zi $
 
 PORTNAME=	uthash
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

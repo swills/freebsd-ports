@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/avogadrolibs/Makefile 492755 2019-02-12 06:18:05Z yuri $
+# $FreeBSD: head/science/avogadrolibs/Makefile 493031 2019-02-16 08:02:02Z yuri $
 
 PORTNAME=	avogadrolibs
 DISTVERSION=	1.92.0
@@ -15,7 +15,7 @@ COMMENT=	Avogadro2 libraries for chemical editor and visualization applications
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${LOCALBASE}/include/mmtf.hpp:science/mmtf
+BUILD_DEPENDS=	${LOCALBASE}/include/mmtf.hpp:science/mmtf-cpp
 
 USES=		cmake compiler:c++11-lang eigen:3,build,run # eigen needs to be 'run' because it is written into cmake files
 USE_GITHUB=	yes

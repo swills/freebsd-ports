@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/alglib/Makefile 472615 2018-06-17 17:40:58Z yuri $
+# $FreeBSD: head/math/alglib/Makefile 493552 2019-02-22 06:04:19Z yuri $
 
 PORTNAME=	alglib
-DISTVERSION=	3.14.0
+DISTVERSION=	3.15.0
 CATEGORIES=	math science
 MASTER_SITES=	http://www.alglib.net/translator/re/
 EXTRACT_SUFX=	.cpp.gpl.zip

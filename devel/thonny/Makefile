@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/thonny/Makefile 485930 2018-11-26 08:35:05Z wen $
+# $FreeBSD: head/devel/thonny/Makefile 493135 2019-02-17 00:27:09Z wen $
 
 PORTNAME=	thonny
-PORTVERSION=	3.0.8
+PORTVERSION=	3.1.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}

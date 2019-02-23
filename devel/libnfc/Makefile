@@ -1,9 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/devel/libnfc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/libnfc/Makefile 493539 2019-02-22 02:13:45Z romain $
 
 PORTNAME=	libnfc
 PORTVERSION=	1.7.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://dl.bintray.com/nfc-tools/sources/ \
 		http://romain.blogreen.org/distfiles/
@@ -30,6 +30,7 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 USES=		gmake libtool pathfix pkgconfig readline tar:bzip2
 MAKE_ENV=	INSTALL_STRIP_FLAG="${STRIP}"
+CFLAGS+= 	-D__BSD_VISIBLE
 
 # Restrict to stable (even) versions, indicated by the second component.
 PORTSCOUT=	limitw:1,even

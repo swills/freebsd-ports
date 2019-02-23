@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 492518 2019-02-09 20:36:10Z yuri $
+# $FreeBSD: head/comms/Makefile 493466 2019-02-20 21:49:09Z kai $
 #
 
     COMMENT = Communication utilities
@@ -10,6 +10,7 @@
     SUBDIR += anyremote
     SUBDIR += apitran
     SUBDIR += aprsd
+    SUBDIR += ath3k-firmware
     SUBDIR += atslog
     SUBDIR += bfhist
     SUBDIR += bforce-kst
@@ -152,6 +153,7 @@
     SUBDIR += qt5-serialport
     SUBDIR += qtel
     SUBDIR += quisk
+    SUBDIR += redsea
     SUBDIR += remserial
     SUBDIR += rtl-sdr
     SUBDIR += rubygem-callsign

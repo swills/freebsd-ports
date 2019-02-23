@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/qt.mk 492793 2019-02-12 17:43:00Z tcberner $
+# $FreeBSD: head/Mk/Uses/qt.mk 493464 2019-02-20 21:24:33Z tobik $
 #
 # There are three Qt related USES files with different access to Qt.
 #   - qmake: The port requires Qt's qmake to build -- creates the configure target
@@ -466,7 +466,7 @@ xmlpatterns-tool_PATH=	${LOCALBASE}/${QT_BINDIR_REL}/xmlpatterns
 _USE_QT_ALL+=		${_USE_QT${_QT_VER}_ONLY}
 _USE_QT=		${USE_QT}
 # Iterate through components deprived of suffix.
-.  for component in ${_USE_QT:O:u:C/_.+//}
+.  for component in ${_USE_QT:O:u:C/_(build|run)$//}
 # Check that the component is valid.
 .    if ${_USE_QT_ALL:M${component}} != ""
 # Skip meta-components (currently none).

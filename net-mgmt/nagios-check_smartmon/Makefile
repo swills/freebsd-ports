@@ -1,9 +1,9 @@
 # Created by: steinex
-# $FreeBSD: head/net-mgmt/nagios-check_smartmon/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/nagios-check_smartmon/Makefile 493266 2019-02-18 15:08:46Z dvl $
 
 PORTNAME=	check_smartmon
 PORTVERSION=	20100318
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://ftp.bsdserwis.com/pub/FreeBSD/ports/distfiles/
 PKGNAMEPREFIX=	nagios-

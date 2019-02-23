@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/py-asdf/Makefile 490586 2019-01-17 19:21:25Z sunpoet $
+# $FreeBSD: head/science/py-asdf/Makefile 493451 2019-02-20 20:47:15Z sunpoet $
 
 PORTNAME=	asdf
-PORTVERSION=	2.3.1
+PORTVERSION=	2.3.2
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

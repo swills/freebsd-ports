@@ -1,13 +1,10 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/devel/ruby-gems/Makefile 486529 2018-12-03 18:56:42Z sunpoet $
+# $FreeBSD: head/devel/ruby-gems/Makefile 493610 2019-02-22 19:56:03Z sunpoet $
 
 PORTNAME=	gems
-# Do not forget to check the following ports which contain gemspec patches:
-# - security/rubygem-ezcrypto
-# - www/rubygem-gitlab-grack
-PORTVERSION=	2.7.8
+PORTVERSION=	3.0.2
 CATEGORIES=	devel ruby
-MASTER_SITES=	https://production.cf.rubygems.org/rubygems/
+MASTER_SITES=	https://rubygems.org/rubygems/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
@@ -20,11 +17,12 @@ LICENSE_COMB=	dual
 LICENSE_FILE_MIT=	${WRKSRC}/MIT.txt
 LICENSE_FILE_RUBY=	${WRKSRC}/LICENSE.txt
 
+USES=		tar:tgz
+USE_RUBY=	yes
+
 NO_ARCH=	yes
 NO_BUILD=	yes
-USE_RUBY=	yes
 RUBY_SETUP=	setup.rb
-USES=		tar:tgz
 
 GEMS_BASE_DIR=		lib/ruby/gems
 GEMS_BASE_DIR_P=	${GEMS_BASE_DIR}

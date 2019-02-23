@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 490813 2019-01-20 20:50:20Z sunpoet $
+# $FreeBSD: head/devel/php-composer/Makefile 493325 2019-02-18 21:06:32Z sunpoet $
 
 PORTNAME=	composer
-DISTVERSION=	1.8.0
+DISTVERSION=	1.8.4
 CATEGORIES=	devel
 MASTER_SITES=	https://getcomposer.org/download/${DISTVERSION}/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
@@ -17,11 +17,12 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
 
+USES=		php:flavors
+USE_PHP=	intl openssl phar json ctype filter mbstring
+
 NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
-USES=		php:flavors
-USE_PHP=	intl openssl phar json ctype filter mbstring
 
 PLIST_FILES=	bin/composer \
 		bin/composer.phar

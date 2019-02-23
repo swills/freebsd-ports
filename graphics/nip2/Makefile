@@ -1,5 +1,5 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/graphics/nip2/Makefile 491889 2019-02-01 23:29:15Z danilo $
+# $FreeBSD: head/graphics/nip2/Makefile 493560 2019-02-22 08:12:39Z bapt $
 
 PORTNAME=	nip2
 PORTVERSION=	8.7.1

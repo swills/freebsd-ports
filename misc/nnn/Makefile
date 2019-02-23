@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/nnn/Makefile 491270 2019-01-26 11:53:59Z swills $
+# $FreeBSD: head/misc/nnn/Makefile 493476 2019-02-20 23:23:53Z swills $
 
 PORTNAME=	nnn
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.2
+DISTVERSION=	2.3
 CATEGORIES=	misc shells
 
 MAINTAINER=	dg@syrec.org
@@ -11,7 +11,7 @@ COMMENT=	Missing terminal file browser for X
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake localbase ncurses
+USES=		gmake localbase ncurses readline
 USE_GITHUB=	yes
 GH_ACCOUNT=	jarun
 
@@ -55,7 +55,8 @@ post-install-DOCS-on:
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	cd ${WRKSRC}/scripts && ${COPYTREE_SHARE} "copier quitcd natool nlay" \
+	cd ${WRKSRC}/scripts && ${COPYTREE_SHARE} "quitcd natool nlay" \
 		${STAGEDIR}${EXAMPLESDIR}
+	cd ${WRKSRC} && ${COPYTREE_SHARE} user-scripts ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 490786 2019-01-20 12:54:30Z egypcio $
+# $FreeBSD: head/benchmarks/Makefile 493260 2019-02-18 13:46:21Z pizzamig $
 #
 
     COMMENT = Benchmarking tools
@@ -30,6 +30,7 @@
     SUBDIR += hs-criterion
     SUBDIR += hs-criterion-measurement
     SUBDIR += httperf
+    SUBDIR += hyperfine
     SUBDIR += imb
     SUBDIR += interbench
     SUBDIR += iorate

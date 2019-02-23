@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/fetchmailconf/Makefile 490780 2019-01-20 11:25:07Z mandree $
+# $FreeBSD: head/mail/fetchmailconf/Makefile 493041 2019-02-16 13:02:07Z antoine $
 
 PORTNAME=	fetchmailconf
 PORTREVISION=	0
@@ -13,7 +13,7 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter@${PY_FLAVOR} \
 		fetchmail>=${PORTVERSION}:mail/fetchmail
 
-USES=		python shebangfix tar:xz
+USES=		python:2.7 shebangfix tar:xz
 
 FILESDIR=	${.CURDIR}/files
 

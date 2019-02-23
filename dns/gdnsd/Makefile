@@ -1,5 +1,5 @@
 # Created by: Allan Jude <allanjude@freebsd.org>
-# $FreeBSD: head/dns/gdnsd/Makefile 490211 2019-01-13 20:58:36Z adamw $
+# $FreeBSD: head/dns/gdnsd/Makefile 493630 2019-02-23 01:33:36Z zi $
 
 PORTNAME=	gdnsd
 PORTVERSION=	1.11.4
@@ -23,7 +23,7 @@ USE_LDCONFIG=	yes
 USES=		pkgconfig libtool tar:xz
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-CONFLICTS_INSTALL=	gdnsd2-2.[0-9]*
+CONFLICTS_INSTALL=	gdnsd2-2.[0-9]* gdnsd3-3.[0-9]*
 
 USE_RC_SUBR=	gdnsd
 

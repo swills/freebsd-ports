@@ -1,10 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Mozilla-PublicSuffix/Makefile 488944 2019-01-01 20:31:21Z sunpoet $
+# $FreeBSD: head/dns/p5-Mozilla-PublicSuffix/Makefile 493376 2019-02-19 19:45:40Z sunpoet $
 
 PORTNAME=	Mozilla-PublicSuffix
 PORTVERSION=	1.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	dns perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/devel/cccc/Makefile 449339 2017-09-06 11:33:08Z pizzamig $
+# $FreeBSD: head/devel/cccc/Makefile 493499 2019-02-21 11:59:49Z pizzamig $
 
 PORTNAME=	cccc
 DISTVERSION=	3.1.5
@@ -14,6 +14,8 @@ LICENSE_FILE=	${WRKSRC}/cccc/COPYING
 USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	sarnold
+
+PORTSCOUT=	limit:^[0-9].*$$
 
 MAKEFILE=	makefile
 MAKE_ENV=	CCC="${CXX}" LD="${CXX}" CFLAGS_DEBUG="${CXXFLAGS}"

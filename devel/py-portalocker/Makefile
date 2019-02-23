@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-portalocker/Makefile 488126 2018-12-22 20:36:02Z dbaio $
+# $FreeBSD: head/devel/py-portalocker/Makefile 493062 2019-02-16 19:43:21Z dbaio $
 
 PORTNAME=	portalocker
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,10 +1,10 @@
-# $FreeBSD: head/net/mpich/Makefile 487710 2018-12-17 19:45:06Z yuri $
+# $FreeBSD: head/net/mpich/Makefile 493612 2019-02-22 19:56:19Z sunpoet $
 
 PORTNAME=	mpich
 PORTVERSION=	3.2.1
 PORTREVISION=	3
 CATEGORIES=	net parallel
-MASTER_SITES=	http://www.mpich.org/static/downloads/${DISTVERSION}/
+MASTER_SITES=	https://www.mpich.org/static/downloads/${DISTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Portable implementation of MPI-1, MPI-2 and MPI-3

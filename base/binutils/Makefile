@@ -1,4 +1,4 @@
-# $FreeBSD: head/base/binutils/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/base/binutils/Makefile 493400 2019-02-20 00:48:36Z jhb $
 
 PORTEPOCH=	0
 CATEGORIES=	base
@@ -9,14 +9,6 @@ COMMENT=	GNU binary tools for base
 
 MASTERDIR=	${.CURDIR}/../../devel/binutils
 PLIST=		${.CURDIR}/pkg-plist
-
-.if !defined(CROSS_TOOLCHAIN)
-.error Please define CROSS_TOOLCHAIN before building
-.endif
-
-.if !defined(CROSS_SYSROOT)
-.error Please define CROSS_SYSROOT before building
-.endif
 
 TARGETARCH=	${ARCH:S/amd64/x86_64/}
 BUTARGET=	${TARGETARCH}-unknown-${OPSYS:tl}${OSREL}

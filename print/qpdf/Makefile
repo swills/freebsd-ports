@@ -1,13 +1,12 @@
 # Created by: Dmitry Kazarov <d.y.kazarov@mail.ru>
-# $FreeBSD: head/print/qpdf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/print/qpdf/Makefile 493259 2019-02-18 12:00:15Z wen $
 
 PORTNAME=	qpdf
-DISTVERSION=	8.2.1
-PORTREVISION=	1
+DISTVERSION=	8.4.0
 CATEGORIES=	print
 MASTER_SITES=	SF
 
-MAINTAINER=	d.y.kazarov@mail.ru
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Command-line tools for transforming and inspecting PDF documents
 
 LICENSE=	ART20 APACHE20

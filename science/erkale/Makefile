@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/erkale/Makefile 490641 2019-01-18 16:25:43Z yuri $
+# $FreeBSD: head/science/erkale/Makefile 493043 2019-02-16 13:19:29Z antoine $
 
 PORTNAME=	erkale
 DISTVERSION=	g20190118
@@ -42,7 +42,6 @@ PLIST_SUB=	SUFFIX="${SUFFIX}"
 CMAKE_OFF=	USE_OPENMP
 .else # parallel
 CMAKE_ON+=	USE_OPENMP
-LIB_DEPENDS+=	libomp.so:devel/openmp
 SUFFIX=		_omp
 .endif
 

@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/gnome-vfs/Makefile 483115 2018-10-27 08:19:22Z woodsb02 $
+# $FreeBSD: head/devel/gnome-vfs/Makefile 493560 2019-02-22 08:12:39Z bapt $
 
 PORTNAME=	gnome-vfs
 PORTVERSION=	2.24.4

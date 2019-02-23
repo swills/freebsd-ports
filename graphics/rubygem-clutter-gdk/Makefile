@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/rubygem-clutter-gdk/Makefile 490279 2019-01-14 15:45:40Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-clutter-gdk/Makefile 493290 2019-02-18 18:20:49Z sunpoet $
 
 PORTNAME=	clutter-gdk
-PORTVERSION=	3.3.1
+PORTVERSION=	3.3.2
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

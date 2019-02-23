@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/cassandra3/Makefile 491455 2019-01-28 06:12:18Z yuri $
+# $FreeBSD: head/databases/cassandra3/Makefile 493047 2019-02-16 17:11:03Z antoine $
 
 PORTNAME=	cassandra
 DISTVERSION=	3.11.3
@@ -65,8 +65,8 @@ OPTIONS_SUB=		yes
 SIGAR_DESC=		Use SIGAR to collect system information
 SIGAR_RUN_DEPENDS=	java-sigar>=1.6.4:java/sigar
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx \
-			${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme@${PY_FLAVOR}
 
 PORTDOCS=		*
 

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Daemon-Control/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Daemon-Control/Makefile 493449 2019-02-20 20:47:04Z sunpoet $
 
 PORTNAME=	Daemon-Control
-PORTVERSION=	0.001008
+PORTVERSION=	0.001009
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,9 @@ COMMENT=	Create init scripts in Perl
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

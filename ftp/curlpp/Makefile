@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/ftp/curlpp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/ftp/curlpp/Makefile 493110 2019-02-16 22:54:01Z sunpoet $
 
 PORTNAME=	curlpp
 PORTVERSION=	0.8.1
@@ -18,10 +18,8 @@ LIB_DEPENDS=	libcurl.so:ftp/curl
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USES=		cmake compiler:c++11-lang localbase pathfix
-USE_LDCONFIG=	yes
 
-PORTDOCS=	*
-PORTEXAMPLES=	*
+USE_LDCONFIG=	yes
 
 GH_ACCOUNT=	jpbarrette
 USE_GITHUB=	yes

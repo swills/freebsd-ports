@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-drivers/xf86-video-s3virge/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-s3virge/Makefile 493438 2019-02-20 19:58:30Z zeising $
 
 PORTNAME=	xf86-video-s3virge
-PORTVERSION=	1.10.7
-PORTREVISION=	4
+PORTVERSION=	1.11.0
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

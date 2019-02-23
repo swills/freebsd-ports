@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/games/Makefile 493572 2019-02-22 14:46:50Z danfe $
 #
 
     COMMENT = Games and related software
@@ -745,7 +745,6 @@
     SUBDIR += pipenightdreams
     SUBDIR += pipepanic
     SUBDIR += pipewalker
-    SUBDIR += plutocracy
     SUBDIR += pmars
     SUBDIR += pmars-sdl
     SUBDIR += poker-engine
@@ -1140,6 +1139,7 @@
     SUBDIR += xpyraminx
     SUBDIR += xqf
     SUBDIR += xrally
+    SUBDIR += xray_re-tools
     SUBDIR += xrick
     SUBDIR += xrisk
     SUBDIR += xroach

@@ -1,5 +1,5 @@
 # Created by: barnhart@genetics.wustl.edu
-# $FreeBSD: head/biology/hmmer/Makefile 474455 2018-07-11 15:15:03Z swills $
+# $FreeBSD: head/biology/hmmer/Makefile 493230 2019-02-18 01:30:24Z linimon $
 
 PORTNAME=	hmmer
 PORTVERSION=	3.2.1
@@ -12,10 +12,10 @@ COMMENT=	Profile hidden Markov models for biological sequence analysis
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64 powerpc powerpc64
+ONLY_FOR_ARCHS=	amd64 i386 powerpc powerpc64 powerpcspe
 ONLY_FOR_ARCHS_REASON=	requires SSE2 or AltiVec instructions
 
-USES=		gmake perl5 shebangfix
+USES=		compiler:c11 gmake perl5 shebangfix
 
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	V=1

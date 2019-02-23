@@ -1,9 +1,9 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/photofilmstrip/Makefile 473012 2018-06-22 01:15:19Z linimon $
+# $FreeBSD: head/multimedia/photofilmstrip/Makefile 493646 2019-02-23 06:31:52Z tobik $
 
 PORTNAME=	photofilmstrip
 PORTVERSION=	3.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia python
 MASTER_SITES=	SF/photostoryx/${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,6 +21,7 @@ RUN_DEPENDS=	mencoder:multimedia/mencoder \
 		mplayer:multimedia/mplayer
 
 USES=		python:2.7 gettext
+USE_GSTREAMER1=	jpeg
 USE_PYTHON=	distutils autoplist
 USE_WX=		3.0+
 WX_COMPS=	python:lib

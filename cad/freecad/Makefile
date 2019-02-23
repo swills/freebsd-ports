@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/freecad/Makefile 492522 2019-02-09 21:04:06Z cmt $
+# $FreeBSD: head/cad/freecad/Makefile 493279 2019-02-18 17:12:36Z antoine $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17-13541 # git rev-list --count
@@ -12,7 +12,7 @@ COMMENT=	General purpose 3D CAD modeller
 LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	pyside2-rcc:devel/pyside2-tools \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyside2-tools>0:devel/pyside2-tools@${PY_FLAVOR} \
 		swig3.0:devel/swig30
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libfreetype.so:print/freetype2 \

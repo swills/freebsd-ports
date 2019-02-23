@@ -1,8 +1,8 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/net-mgmt/ipv6calc/Makefile 482942 2018-10-24 22:52:17Z dbaio $
+# $FreeBSD: head/net-mgmt/ipv6calc/Makefile 493165 2019-02-17 12:14:25Z dbaio $
 
 PORTNAME=	ipv6calc
-PORTVERSION=	1.1.0
+PORTVERSION=	2.0.0
 CATEGORIES=	net-mgmt ipv6
 MASTER_SITES=	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/
 

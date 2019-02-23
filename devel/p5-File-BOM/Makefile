@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/p5-File-BOM/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-File-BOM/Makefile 493431 2019-02-20 18:57:40Z bofh $
 
 PORTNAME=	File-BOM
-PORTVERSION=	0.15
+PORTVERSION=	0.16
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,6 +20,7 @@ TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5
 USE_PERL5=	modbuild
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

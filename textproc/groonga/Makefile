@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/groonga/Makefile 488799 2018-12-31 16:25:10Z bofh $
+# $FreeBSD: head/textproc/groonga/Makefile 493361 2019-02-19 10:56:33Z bofh $
 
 PORTNAME=	groonga
-PORTVERSION=	8.1.0
+PORTVERSION=	9.0.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://packages.groonga.org/source/groonga/
 

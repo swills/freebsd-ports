@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/check_mk_agent/Makefile 491474 2019-01-28 11:00:09Z 0mp $
+# $FreeBSD: head/net-mgmt/check_mk_agent/Makefile 493567 2019-02-22 10:50:33Z 0mp $
 
 PORTNAME=	check_mk_agent
-DISTVERSION=	1.5.0p11
+DISTVERSION=	1.5.0p12
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://mathias-kettner.de/support/${DISTVERSION}/
 DISTNAME=	check-mk-raw-${DISTVERSION}.cre

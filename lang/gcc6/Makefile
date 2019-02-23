@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6/Makefile 492106 2019-02-04 09:40:33Z gerald $
+# $FreeBSD: head/lang/gcc6/Makefile 493396 2019-02-19 22:09:23Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	6.5.0
@@ -23,18 +23,18 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpc.so:math/mpc
 BUILD_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
 RUN_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
-
 .if defined(MAINTAINER_MODE)
 BUILD_DEPENDS+=	runtest:misc/dejagnu
 .endif
+
+USES=		compiler cpe gmake iconv libtool makeinfo perl5 tar:xz
+USE_BINUTILS=	yes
+USE_PERL5=	build
 
 CPE_VENDOR=	gnu
 
 GCC_VERSION=	${PORTVERSION}
 SUFFIX=		${PORTVERSION:C/([0-9]+).*/\1/}
-USES=		compiler cpe gmake iconv libtool makeinfo perl5 tar:xz
-USE_BINUTILS=	yes
-USE_PERL5=	build
 SSP_UNSAFE=	yes
 CFLAGS:=	${CFLAGS:N-mretpoline}
 CXXFLAGS:=	${CXXFLAGS:N-mretpoline}

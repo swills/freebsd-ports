@@ -1,8 +1,9 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/owncloud/Makefile 492935 2019-02-14 22:40:14Z sunpoet $
+# $FreeBSD: head/www/owncloud/Makefile 493322 2019-02-18 21:06:13Z sunpoet $
 
 PORTNAME=	owncloud
 PORTVERSION=	10.1.0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://download.owncloud.org/community/
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
@@ -38,11 +39,9 @@ EXIF_DESC=	Image rotation support
 EXIF_USE=	PHP=exif
 LDAP_USE=	PHP=ldap
 MYSQL_USE=	PHP=pdo_mysql
-MYSQL_USES=	mysql
-PGSQL_USES=	pgsql
-PGSQL_USE=	PHP=pdo_pgsql,pgsql
+PGSQL_USE=	PHP=pdo_pgsql
 SMB_RUN_DEPENDS=${PECL_PKGNAMEPREFIX}smbclient>=0.8.0:net/pecl-smbclient@${PHP_FLAVOR}
-SQLITE_USE=	PHP=pdo_sqlite,sqlite3
+SQLITE_USE=	PHP=pdo_sqlite
 SSL_USE=	PHP=openssl
 
 do-install:

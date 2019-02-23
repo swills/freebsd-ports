@@ -1,0 +1,24 @@
+# $FreeBSD: head/misc/box2d/Makefile 493350 2019-02-19 04:24:35Z yuri $
+
+PORTNAME=	Box2D
+DISTVERSIONPREFIX=	v
+DISTVERSION=	2.3.1
+CATEGORIES=	misc
+
+MAINTAINER=	yuri@FreeBSD.org
+COMMENT=	2D physics engine for games
+
+LICENSE=	ZLIB
+LICENSE_FILE=	${WRKSRC}/License.txt
+
+USES=		cmake pkgconfig
+USE_GITHUB=	yes
+GH_ACCOUNT=	erincatto
+USE_LDCONFIG=	yes
+
+WRKSRC_SUBDIR=	${PORTNAME}
+
+CMAKE_ON=	BOX2D_INSTALL BOX2D_BUILD_SHARED
+CMAKE_OFF=	BOX2D_BUILD_STATIC BOX2D_BUILD_EXAMPLES
+
+.include <bsd.port.mk>

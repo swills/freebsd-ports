@@ -1,5 +1,5 @@
 # Created by: Jens Rehsack <rehsack@liwing.de>
-# $FreeBSD: head/devel/pecl-xdebug25/Makefile 481637 2018-10-09 16:19:25Z pizzamig $
+# $FreeBSD: head/devel/pecl-xdebug25/Makefile 493499 2019-02-21 11:59:49Z pizzamig $
 
 PORTNAME=	xdebug
 PORTVERSION=	2.5.5
@@ -15,9 +15,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 IGNORE_WITH_PHP=	72 73
 
-CONFIGURE_ARGS=	--enable-xdebug
 USES=		php:pecl,zend
 
+CONFIGURE_ARGS=	--enable-xdebug
+
 SUB_FILES=	pkg-message
+
+PORTSCOUT=	limit=^2\.5\.
 
 .include <bsd.port.mk>

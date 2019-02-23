@@ -1,8 +1,7 @@
-# $FreeBSD: head/finance/skrooge/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/finance/skrooge/Makefile 493441 2019-02-20 20:26:03Z tcberner $
 
 PORTNAME=	skrooge
-DISTVERSION=	2.17.0
-PORTREVISION=	1
+DISTVERSION=	2.18.0
 CATEGORIES=	finance kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DIST_SUBDIR=	KDE/${PORTNAME}

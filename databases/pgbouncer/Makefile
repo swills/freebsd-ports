@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/pgbouncer/Makefile 487340 2018-12-13 04:53:29Z tobik $
+# $FreeBSD: head/databases/pgbouncer/Makefile 493582 2019-02-22 19:14:34Z swills $
 
 PORTNAME=	pgbouncer
-PORTVERSION=	1.8.1
+PORTVERSION=	1.9.0
 CATEGORIES=	databases
 MASTER_SITES=	https://pgbouncer.github.io/downloads/files/${PORTVERSION}/ \
 		http://pgbouncer.github.io/downloads/files/${PORTVERSION}/
@@ -15,15 +15,15 @@ LICENSE=	BSD2CLAUSE
 LIB_DEPENDS=	libevent.so:devel/libevent
 BUILD_DEPENDS+=	${LOCALBASE}/bin/gsed:textproc/gsed
 
+USES=		gmake ssl
+
 PORTSCOUT=	site:https://pgbouncer.github.io/downloads/
 
 USERS=		pgbouncer
 GROUPS=		pgbouncer
 
 USE_RC_SUBR=	pgbouncer
-
 GNU_CONFIGURE=	yes
-USES=		gmake ssl
 
 OPTIONS_DEFINE=	CARES
 CARES_LIB_DEPENDS=	libcares.so:dns/c-ares

@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/tk86/Makefile 485316 2018-11-19 12:01:15Z gahr $
+# $FreeBSD: head/x11-toolkits/tk86/Makefile 493355 2019-02-19 08:58:44Z gahr $
 
 PORTNAME=	tk
 DISTVERSION=	${TK_VERSION}${TK_RC}
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF/tcl/Tcl/${TK_VERSION}
 PKGNAMESUFFIX=	${SHORT_TK_VER}
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig
 
 OPTIONS_DEFINE=	TKMAN DEMOS THREADS
-OPTIONS_DEFAULT=THREADS
+OPTIONS_DEFAULT=TKMAN THREADS
 OPTIONS_SUB=	yes
 TKMAN_DESC=	Install Tk function manpages
 DEMOS_DESC=	Install demos

@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 492981 2019-02-15 08:58:13Z joneum $
+# $FreeBSD: head/www/nginx/Makefile 493167 2019-02-17 13:47:42Z rene $
 
 PORTNAME=	nginx
 PORTVERSION=	1.14.2
@@ -150,8 +150,6 @@ HTTP_AUTH_REQ_CONFIGURE_ON=	--with-http_auth_request_module
 HTTP_CACHE_CONFIGURE_OFF=	--without-http-cache
 HTTP_DAV_CONFIGURE_ON=		--with-http_dav_module
 HTTP_FLV_CONFIGURE_ON=		--with-http_flv_module
-HTTP_GEOIP_LIB_DEPENDS=		libGeoIP.so:net/GeoIP 	 
-HTTP_GEOIP_VARS=		DSO_BASEMODS+=http_geoip_module
 HTTP_GZIP_STATIC_CONFIGURE_ON=	--with-http_gzip_static_module
 HTTP_GUNZIP_FILTER_CONFIGURE_ON=--with-http_gunzip_module
 HTTP_IMAGE_FILTER_LIB_DEPENDS=	libgd.so:graphics/gd

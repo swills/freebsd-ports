@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-control-center/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/sysutils/gnome-control-center/Makefile 493235 2019-02-18 01:48:52Z linimon $
 
 PORTNAME=	gnome-control-center
 PORTVERSION=	3.28.2
@@ -54,13 +54,8 @@ GLIB_SCHEMAS=	org.gnome.ControlCenter.gschema.xml
 
 OPTIONS_SUB=	yes
 
-OPTIONS_DEFINE=	WAYLAND
-OPTIONS_DEFAULT=WAYLAND
-
-OPTIONS_DEFINE_i386=	CHEESE
-OPTIONS_DEFAULT_i386=	CHEESE
-OPTIONS_DEFINE_amd64=	CHEESE
-OPTIONS_DEFAULT_amd64=	CHEESE
+OPTIONS_DEFINE=	WAYLAND CHEESE
+OPTIONS_DEFAULT=WAYLAND CHEESE
 
 CHEESE_DESC=	Cheese webcam support
 CHEESE_LIB_DEPENDS=	libcheese.so:multimedia/cheese

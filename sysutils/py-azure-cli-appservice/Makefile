@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-appservice/Makefile 491767 2019-01-31 22:16:47Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-appservice/Makefile 493091 2019-02-16 20:08:59Z dbaio $
 
 PORTNAME=	azure-cli-appservice
-PORTVERSION=	0.2.12
+PORTVERSION=	0.2.13
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

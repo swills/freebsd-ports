@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/pear-Horde_Mapi/Makefile 492665 2019-02-11 01:55:36Z joneum $
+# $FreeBSD: head/mail/pear-Horde_Mapi/Makefile 493581 2019-02-22 19:12:48Z joneum $
 
 PORTNAME=	Horde_Mapi
-PORTVERSION=	1.0.9
+PORTVERSION=	1.0.10
 CATEGORIES=	mail www pear
 PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 

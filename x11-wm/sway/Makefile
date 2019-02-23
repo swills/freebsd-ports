@@ -1,8 +1,11 @@
-# $FreeBSD: head/x11-wm/sway/Makefile 492738 2019-02-11 23:44:12Z jbeich $
+# $FreeBSD: head/x11-wm/sway/Makefile 493317 2019-02-18 20:42:46Z jbeich $
 
 PORTNAME=	sway
-DISTVERSION=	1.0-rc2
+DISTVERSION=	1.0-rc3
 CATEGORIES=	x11-wm
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	c968f83261d9.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	i3-compatible Wayland compositor

@@ -1,9 +1,8 @@
 # Created by: Dejan Lesjak <lesi@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/libfontenc/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/x11-fonts/libfontenc/Makefile 493439 2019-02-20 20:09:52Z zeising $
 
 PORTNAME=	libfontenc
-PORTVERSION=	1.1.3
-PORTREVISION=	3
+PORTVERSION=	1.1.4
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	x11@FreeBSD.org

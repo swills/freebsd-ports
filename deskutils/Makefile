@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 492800 2019-02-12 19:36:52Z swills $
+# $FreeBSD: head/deskutils/Makefile 493557 2019-02-22 07:48:48Z bapt $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -52,7 +52,6 @@
     SUBDIR += flameshot
     SUBDIR += freemind
     SUBDIR += freeplane
-    SUBDIR += fusenshi
     SUBDIR += ganttproject
     SUBDIR += ganyremote
     SUBDIR += gbirthday

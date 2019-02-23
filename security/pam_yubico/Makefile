@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/pam_yubico/Makefile 485086 2018-11-16 16:55:28Z philip $
+# $FreeBSD: head/security/pam_yubico/Makefile 493129 2019-02-16 22:55:41Z sunpoet $
 
 PORTNAME=	pam_yubico
 PORTVERSION=	2.26
 CATEGORIES=	security
-MASTER_SITES=	http://opensource.yubico.com/yubico-pam/releases/
+MASTER_SITES=	https://developers.yubico.com/yubico-pam/Releases/
 
 MAINTAINER=	matt@mjslabs.com
 COMMENT=	PAM module for authenticating with a Yubico YubiKey

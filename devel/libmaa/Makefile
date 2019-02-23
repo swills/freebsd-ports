@@ -1,8 +1,8 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/libmaa/Makefile 491386 2019-01-27 19:57:31Z sunpoet $
+# $FreeBSD: head/devel/libmaa/Makefile 493189 2019-02-17 19:38:50Z sunpoet $
 
 PORTNAME=	libmaa
-PORTVERSION=	1.4.2
+PORTVERSION=	1.4.3
 PORTEPOCH=	1
 CATEGORIES=	devel
 

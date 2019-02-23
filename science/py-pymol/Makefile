@@ -1,5 +1,5 @@
 # Created by: Nakata Maho <chat95@mbox.kyoto-inet.or.jp>
-# $FreeBSD: head/science/py-pymol/Makefile 492761 2019-02-12 06:52:57Z yuri $
+# $FreeBSD: head/science/py-pymol/Makefile 493038 2019-02-16 10:32:12Z antoine $
 
 PORTNAME=	pymol
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BUILD_DEPENDS=	${PYNUMPY} \
 		${LOCALBASE}/include/glm/glm.hpp:math/glm \
-		${LOCALBASE}/include/mmtf.hpp:science/mmtf
+		${LOCALBASE}/include/mmtf.hpp:science/mmtf-cpp
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libpng.so:graphics/png \
 		libmsgpackc.so:devel/msgpack

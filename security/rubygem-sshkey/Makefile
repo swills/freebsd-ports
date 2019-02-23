@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-sshkey/Makefile 432500 2017-01-26 14:37:53Z sunpoet $
+# $FreeBSD: head/security/rubygem-sshkey/Makefile 493209 2019-02-17 19:40:36Z sunpoet $
 
 PORTNAME=	sshkey
-PORTVERSION=	1.9.0
+PORTVERSION=	2.0.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	Generate private/public SSH keypairs using pure Ruby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

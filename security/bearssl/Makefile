@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/bearssl/Makefile 477665 2018-08-20 17:20:04Z bapt $
+# $FreeBSD: head/security/bearssl/Makefile 493232 2019-02-18 01:33:57Z linimon $
 
 PORTNAME=	bearssl
 PORTVERSION=	0.6
@@ -10,10 +10,12 @@ MAINTAINER=	bapt@FreeBSD.org
 COMMENT=	Implementation of TLS/SSL in C
 
 LICENSE=	MIT
+
 LIBBEARSSL=	libbearssl.so.0
 
 MAKE_ARGS=	CC="${CC}" LD="${CC}" CFLAGS="${CFLAGS} -fPIC" LDDLL="${CC}" LDDLLFLAGS="-shared -Wl,-soname=${LIBBEARSSL}" \
 		BEARSSLDLL=${LIBBEARSSL}
+MAKE_JOBS_UNSAFE=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/build/brssl ${STAGEDIR}${PREFIX}/bin/

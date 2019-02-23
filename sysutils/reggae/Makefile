@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/reggae/Makefile 480052 2018-09-18 18:04:46Z swills $
+# $FreeBSD: head/sysutils/reggae/Makefile 493491 2019-02-21 06:10:17Z joneum $
 
 PORTNAME=	reggae
-PORTVERSION=	0.1.0
+PORTVERSION=	0.1.1
 CATEGORIES=	sysutils
 
 MAINTAINER=	meka@tilda.center
@@ -15,6 +15,7 @@ RUN_DEPENDS=	${LOCALBASE}/bin/cbsd:sysutils/cbsd \
 		sudo:security/sudo
 
 NO_ARCH=	yes
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	cbsd
 

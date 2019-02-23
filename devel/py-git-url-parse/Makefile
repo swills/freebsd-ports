@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-git-url-parse/Makefile 480268 2018-09-21 13:26:40Z matthew $
+# $FreeBSD: head/devel/py-git-url-parse/Makefile 493493 2019-02-21 07:48:18Z matthew $
 
 PORTNAME=	git-url-parse
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

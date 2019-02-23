@@ -1,11 +1,11 @@
-# $FreeBSD: head/x11-toolkits/diorite/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/x11-toolkits/diorite/Makefile 493423 2019-02-20 14:28:25Z bapt $
 
 PORTNAME=	diorite
 PORTVERSION=	0.2.1
 PORTREVSION=	1
 CATEGORIES=	x11-toolkits devel
 
-MAINTAINER=	multimedia@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Utility and widget library based on GLib and GTK+ 3
 
 LICENSE=	BSD2CLAUSE

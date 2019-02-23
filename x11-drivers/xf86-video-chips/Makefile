@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-drivers/xf86-video-chips/Makefile 489155 2019-01-03 10:46:11Z zeising $
+# $FreeBSD: head/x11-drivers/xf86-video-chips/Makefile 493432 2019-02-20 19:10:17Z zeising $
 
 PORTNAME=	xf86-video-chips
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

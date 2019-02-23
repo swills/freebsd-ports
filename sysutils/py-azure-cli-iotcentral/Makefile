@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-iotcentral/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-iotcentral/Makefile 493086 2019-02-16 20:06:29Z dbaio $
 
 PORTNAME=	azure-cli-iotcentral
-PORTVERSION=	0.1.5
+PORTVERSION=	0.1.6
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

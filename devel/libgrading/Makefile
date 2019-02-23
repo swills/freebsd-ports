@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/libgrading/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/libgrading/Makefile 493150 2019-02-17 03:03:48Z jonathan $
 
 PORTNAME=	libgrading
-PORTVERSION=	0.1.2
-PORTREVISION=	4
+PORTVERSION=	0.1.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -13,13 +12,15 @@ LICENSE=	APACHE20
 
 LIB_DEPENDS=	libdistance.so:devel/libdistance
 
+USES=		cmake compiler:c++11-lib
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	trombonehero
 
-USES=		cmake compiler:c++11-lib
 USE_LDCONFIG=	yes
 
 PLIST_FILES=	include/libgrading.h \
+		lib/libgrading.so.${PORTVERSION} \
 		lib/libgrading.so
 
 .include <bsd.port.mk>

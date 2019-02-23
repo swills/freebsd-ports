@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/lang/tcl87/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/lang/tcl87/Makefile 493355 2019-02-19 08:58:44Z gahr $
 
 PORTNAME=	tcl
 DISTVERSION=	8.7a1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	SF/tcl/Tcl/${DISTVERSION} \
 		TCLTK/tcl8_7
@@ -19,6 +19,7 @@ LICENSE_FILE=	${WRKSRC}/../license.terms
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 OPTIONS_DEFINE=	TCLMAN TZDATA DEBUG
+OPTIONS_DEFAULT=TCLMAN TZDATA
 OPTIONS_DEFINE_amd64=	DTRACE
 OPTIONS_DEFAULT_amd64=	DTRACE
 TCLMAN_DESC=	Install Tcl function manpages

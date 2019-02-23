@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/webvfx-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/multimedia/webvfx-qt5/Makefile 493423 2019-02-20 14:28:25Z bapt $
 
 PORTNAME=	webvfx
 DISTVERSION=	0.4.4-20160823
@@ -6,7 +6,7 @@ PORTREVISION=	7
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-qt5
 
-MAINTAINER=	multimedia@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Video effects library based on HTML/QML
 
 LICENSE=	BSD3CLAUSE

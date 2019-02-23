@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/databases/mariadb103-server/Makefile 490140 2019-01-13 14:43:08Z brnrd $
+# $FreeBSD: head/databases/mariadb103-server/Makefile 493658 2019-02-23 09:48:47Z brnrd $
 
 PORTNAME?=	mariadb
-PORTVERSION=	10.3.12
+PORTVERSION=	10.3.13
 PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://mirrors.supportex.net/${SITESDIR}/ \

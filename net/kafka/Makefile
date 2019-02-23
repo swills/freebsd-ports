@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/kafka/Makefile 487001 2018-12-09 00:45:13Z swills $
+# $FreeBSD: head/net/kafka/Makefile 493580 2019-02-22 19:09:32Z swills $
 
 PORTNAME=	kafka
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.1
 CATEGORIES=	net java
 MASTER_SITES=	APACHE/${PORTNAME}/${PORTVERSION}
 DISTNAME=	${PORTNAME}_2.12-${PORTVERSION}

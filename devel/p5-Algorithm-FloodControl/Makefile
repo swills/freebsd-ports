@@ -1,5 +1,5 @@
 # Created by: Andrey <gugu@zoo.rambler.ru>
-# $FreeBSD: head/devel/p5-Algorithm-FloodControl/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Algorithm-FloodControl/Makefile 493494 2019-02-21 09:00:49Z amdmi3 $
 
 PORTNAME=	Algorithm-FloodControl
 PORTVERSION=	2.001000
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Robot protection
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
 		p5-Cache-FastMmap>=0:devel/p5-Cache-FastMmap \
@@ -18,5 +21,6 @@ RUN_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

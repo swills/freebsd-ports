@@ -1,8 +1,9 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/ilias/Makefile 489849 2019-01-10 07:33:17Z wen $
+# $FreeBSD: head/www/ilias/Makefile 493426 2019-02-20 16:16:14Z mat $
 
 PORTNAME=	ilias
-PORTVERSION=	5.3.12
+PORTVERSION=	5.3.13
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -34,10 +35,10 @@ PLIST_SUB=	ILIASDATADIR=${ILIASDATADIR}
 SUB_FILES=	pkg-message
 SUB_LIST=	ILIASDATADIR=${ILIASDATADIR}
 
-OPTIONS_DEFINE=		SCORM2004 Checker Mail
+OPTIONS_DEFINE=		SCORM2004 CHECKER MAIL
 SCORM2004_USE=		php=json
-Checker_RUN_DEPENDS=	${LOCALBASE}/share/pear/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR}
-Mail_RUN_DEPENDS=	${LOCALBASE}/share/pear/Mail.php:mail/pear-Mail@${PHP_FLAVOR}
+CHECKER_RUN_DEPENDS=	${LOCALBASE}/share/pear/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR}
+MAIL_RUN_DEPENDS=	${LOCALBASE}/share/pear/Mail.php:mail/pear-Mail@${PHP_FLAVOR}
 
 EXTRA_FILES=	%%WWWDIR%%/Modules/Chatroom/chat/node_modules/.bin/_mocha \
 		%%WWWDIR%%/Modules/Chatroom/chat/node_modules/.bin/express \

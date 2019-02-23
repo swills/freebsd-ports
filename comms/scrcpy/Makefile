@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/scrcpy/Makefile 491334 2019-01-27 09:32:14Z tcberner $
+# $FreeBSD: head/comms/scrcpy/Makefile 493638 2019-02-23 04:52:47Z tobik $
 
 PORTNAME=	scrcpy
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.6
+DISTVERSION=	1.7
 CATEGORIES=	comms net
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/${GH_TAGNAME}/:jar
 DISTFILES=	${DIST_JARFILE}:jar
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 RUN_DEPENDS=	adb:devel/android-tools-adb
 
-USES=		meson pkgconfig
+USES=		meson pkgconfig sdl
 USE_SDL=	sdl2
 
 USE_GITHUB=	yes

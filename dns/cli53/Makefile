@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/dns/cli53/Makefile 489929 2019-01-11 00:52:55Z meta $
+# $FreeBSD: head/dns/cli53/Makefile 493369 2019-02-19 13:24:31Z meta $
 
 PORTNAME=	cli53
-DISTVERSION=	0.8.13
+DISTVERSION=	0.8.14
 CATEGORIES=	dns
 
 MAINTAINER=	meta@FreeBSD.org

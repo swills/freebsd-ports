@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qupzilla-qt5/Makefile 492825 2019-02-13 06:03:21Z tcberner $
+# $FreeBSD: head/www/qupzilla-qt5/Makefile 493375 2019-02-19 18:31:44Z tcberner $
 
 PORTNAME=	qupzilla
 PORTVERSION=	1.8.9
@@ -12,6 +12,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Web browser based on WebKit engine and Qt Framework
 
 LICENSE=	GPLv3
+
+DEPRECATED=	Project continues as www/falkon
+EXPIRATION_DATE=	2019-02-28
 
 LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 

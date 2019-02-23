@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/ykclient/Makefile 485084 2018-11-16 16:52:59Z philip $
+# $FreeBSD: head/security/ykclient/Makefile 493131 2019-02-16 22:55:51Z sunpoet $
 
 PORTNAME=	ykclient
 PORTVERSION=	2.15
 CATEGORIES=	security
-MASTER_SITES=	http://opensource.yubico.com/yubico-c-client/releases/
+MASTER_SITES=	https://developers.yubico.com/yubico-c-client/Releases/
 
 MAINTAINER=	matt@mjslabs.com
 COMMENT=	Yubico C client library

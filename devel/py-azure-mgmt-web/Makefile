@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-mgmt-web/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/devel/py-azure-mgmt-web/Makefile 493072 2019-02-16 19:57:52Z dbaio $
 
 PORTNAME=	azure-mgmt-web
-PORTVERSION=	0.40.0
+PORTVERSION=	0.41.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

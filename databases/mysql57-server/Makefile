@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql57-server/Makefile 490897 2019-01-21 20:40:48Z mmokhi $
+# $FreeBSD: head/databases/mysql57-server/Makefile 493486 2019-02-21 04:16:16Z linimon $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.7.25
@@ -157,6 +157,10 @@ SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
 CMAKE_ARGS+=		-DWITH_SSL=system
 .else
 CMAKE_ARGS+=		-DWITH_SSL=${OPENSSLBASE}
+.endif
+
+.if ${CHOSEN_COMPILER_TYPE} == gcc
+CXXFLAGS+=	-fpermissive
 .endif
 
 post-extract:

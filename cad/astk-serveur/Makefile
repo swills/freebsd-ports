@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/cad/astk-serveur/Makefile 479405 2018-09-10 13:11:23Z mat $
+# $FreeBSD: head/cad/astk-serveur/Makefile 493358 2019-02-19 09:22:58Z adridg $
 
 PORTNAME=	astk
 DISTVERSION=	2018.0-1
@@ -140,7 +140,7 @@ WITH_ED=	gedit
 RUN_DEPENDS+=	${LOCALBASE}/bin/gedit:editors/gedit
 . elif exists(${LOCALBASE}/bin/kwrite)
 WITH_ED=	kwrite
-RUN_DEPENDS+=	${LOCALBASE}/bin/kwrite:editors/kate-kde4
+RUN_DEPENDS+=	${LOCALBASE}/bin/kwrite:editors/kate
 . elif exists(${LOCALBASE}/bin/xedit)
 WITH_ED=	xedit
 RUN_DEPENDS+=	${LOCALBASE}/bin/xedit:x11/xedit
