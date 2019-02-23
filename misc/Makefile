@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 492510 2019-02-09 20:06:26Z yuri $
+# $FreeBSD: head/misc/Makefile 493613 2019-02-22 19:58:40Z sunpoet $
 #
 
     COMMENT = Miscellaneous utilities
@@ -29,6 +29,7 @@
     SUBDIR += birthday
     SUBDIR += bogosort
     SUBDIR += bottlerocket
+    SUBDIR += box2d
     SUBDIR += boxes
     SUBDIR += brs
     SUBDIR += bsod
@@ -66,6 +67,7 @@
     SUBDIR += dahdi
     SUBDIR += dahdi-kmod
     SUBDIR += dahdi-kmod26
+    SUBDIR += dartsim
     SUBDIR += ddate
     SUBDIR += deco
     SUBDIR += dejagnu
@@ -368,6 +370,7 @@
     SUBDIR += py-YABT
     SUBDIR += py-cinder
     SUBDIR += py-colorbrewer
+    SUBDIR += py-colored
     SUBDIR += py-crudini
     SUBDIR += py-emoji
     SUBDIR += py-fast-histogram

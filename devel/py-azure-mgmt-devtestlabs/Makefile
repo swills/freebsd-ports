@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-mgmt-devtestlabs/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/devel/py-azure-mgmt-devtestlabs/Makefile 493074 2019-02-16 19:59:13Z dbaio $
 
 PORTNAME=	azure-mgmt-devtestlabs
-PORTVERSION=	2.2.0
+PORTVERSION=	3.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +11,8 @@ COMMENT=	Microsoft Azure DevTestLabs Management Client Library for Python
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msrestazure>=0.4.20:net-mgmt/py-msrestazure@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msrest>=0.5.0:net-mgmt/py-msrest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}msrestazure>=0.4.32:net-mgmt/py-msrestazure@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}azure-common>=1.1:www/py-azure-common@${PY_FLAVOR}
 
 USES=		azurepy python zip

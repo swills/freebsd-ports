@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/print/texinfo/Makefile 490179 2019-01-13 20:08:00Z sunpoet $
+# $FreeBSD: head/print/texinfo/Makefile 493517 2019-02-21 16:17:55Z sunpoet $
 
 PORTNAME=	texinfo
 PORTVERSION=	6.5
@@ -47,13 +47,14 @@ NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=		gettext
 
 post-patch:
-	@${CP} ${DISTDIR}/${DIST_SUBDIR}/texinfo.tex ${WRKSRC}/doc/
+	@${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/texinfo.tex ${WRKSRC}/doc/
+	@${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/htmlxref.cnf ${WRKSRC}/util/
 	@${INSTALL_SCRIPT} ${DISTDIR}/${DIST_SUBDIR}/texi2dvi ${WRKSRC}/util/
 	@${REINPLACE_CMD} -e '/rm -f $$(DESTDIR)/ s|$$| $$(DESTDIR)$$(xsdir)/XSParagraph.*|' \
 		${WRKSRC}/tp/Texinfo/Convert/XSParagraph/Makefile.in
 	@${REINPLACE_CMD} -e 's|free (.*)|Safe&|' ${WRKSRC}/tp/Texinfo/MiscXS/misc.c
 
 post-install:
-	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/htmlxref.cnf ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/util/htmlxref.cnf ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

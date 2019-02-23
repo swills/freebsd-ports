@@ -1,8 +1,8 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/net/pecl-amqp/Makefile 481878 2018-10-12 06:23:47Z antoine $
+# $FreeBSD: head/net/pecl-amqp/Makefile 493221 2019-02-17 19:55:42Z sunpoet $
 
 PORTNAME=	amqp
-PORTVERSION=	1.9.3
+PORTVERSION=	1.9.4
 CATEGORIES=	net pear
 
 MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw
@@ -14,6 +14,5 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	librabbitmq.so:net/rabbitmq-c-devel
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	73
 
 .include <bsd.port.mk>

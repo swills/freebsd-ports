@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 492893 2019-02-14 00:54:56Z yuri $
+# $FreeBSD: head/science/Makefile 493314 2019-02-18 19:37:36Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -67,6 +67,7 @@
     SUBDIR += dlib-cpp
     SUBDIR += dlpoly-classic
     SUBDIR += drawxtl
+    SUBDIR += dvc
     SUBDIR += eccodes
     SUBDIR += elk
     SUBDIR += epte
@@ -151,7 +152,7 @@
     SUBDIR += metaphysicl
     SUBDIR += minc2
     SUBDIR += mmdb2
-    SUBDIR += mmtf
+    SUBDIR += mmtf-cpp
     SUBDIR += mol2ps
     SUBDIR += molgif
     SUBDIR += molscript

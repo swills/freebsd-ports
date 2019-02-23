@@ -1,8 +1,8 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/www/py-django-otp/Makefile 468732 2018-04-30 18:26:25Z cs $
+# $FreeBSD: head/www/py-django-otp/Makefile 493442 2019-02-20 20:30:06Z cs $
 
 PORTNAME=	django-otp
-PORTVERSION=	0.4.3
+PORTVERSION=	0.5.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

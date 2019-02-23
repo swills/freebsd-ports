@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/agrum/Makefile 492898 2019-02-14 03:45:07Z yuri $
+# $FreeBSD: head/science/agrum/Makefile 493042 2019-02-16 13:18:10Z antoine $
 
 PORTNAME=	agrum
 DISTVERSION=	0.14.1
@@ -29,7 +29,6 @@ ODBC_USES=		localbase:ldflags
 ODBC_LIB_DEPENDS=	libodbc.so:databases/unixODBC
 
 OPENMP_CMAKE_BOOL=	USE_OPENMP
-OPENMP_LIB_DEPENDS=	libomp.so:devel/openmp
 
 PYTHON_CMAKE_BOOL=	BUILD_PYTHON
 PYTHON_USES=		python

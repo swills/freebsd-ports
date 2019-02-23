@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-yubikey-manager/Makefile 491700 2019-01-31 10:35:05Z egypcio $
+# $FreeBSD: head/security/py-yubikey-manager/Makefile 493130 2019-02-16 22:55:46Z sunpoet $
 
 PORTNAME=	yubikey-manager
 PORTVERSION=	2.0.0
@@ -27,5 +27,7 @@ RUN_DEPENDS=	${PY_ENUM34} \
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

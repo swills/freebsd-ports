@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-pep8-naming/Makefile 491588 2019-01-29 17:44:08Z amdmi3 $
+# $FreeBSD: head/devel/py-pep8-naming/Makefile 493274 2019-02-18 16:47:28Z amdmi3 $
 
 PORTNAME=	pep8-naming
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.2
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,6 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8-polyfill>=0:devel/py-flake8-polyfill@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}entrypoints>=0:devel/py-entrypoints@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/fuzzylite/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/fuzzylite/Makefile 493487 2019-02-21 04:20:43Z linimon $
 
 PORTNAME=	fuzzylite
 DISTVERSIONPREFIX=	v
@@ -11,20 +11,17 @@ COMMENT=	Fuzzy logic control library in C++
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-type-limits"
-
-USES=		cmake compiler
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 
-CMAKE_ARGS=	-DFL_BUILD_STATIC:BOOL=OFF \
-		-DFL_BUILD_TESTS:BOOL=OFF
+CMAKE_OFF=	FL_BUILD_STATIC FL_BUILD_TESTS
 CMAKE_SOURCE_PATH=	${WRKSRC}/${PORTNAME}
 PLIST_SUB=	SHLIB_VER=${DISTVERSION}
 
 .include <bsd.port.pre.mk>
 
-.if ${COMPILER_TYPE} == clang && ${COMPILER_VERSION} >= 39
+.if ${COMPILER_TYPE} == clang
 CFLAGS+=	-Wno-error=varargs
 .endif
 

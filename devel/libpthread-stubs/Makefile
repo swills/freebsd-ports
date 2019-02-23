@@ -1,10 +1,10 @@
 # Created by: wahjava
-# $FreeBSD: head/devel/libpthread-stubs/Makefile 463876 2018-03-08 08:33:08Z amdmi3 $
+# $FreeBSD: head/devel/libpthread-stubs/Makefile 493611 2019-02-22 19:56:14Z sunpoet $
 
 PORTNAME=	libpthread-stubs
 PORTVERSION=	0.4
 CATEGORIES=	devel
-MASTER_SITES=	http://xcb.freedesktop.org/dist/
+MASTER_SITES=	https://xcb.freedesktop.org/dist/
 
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	This library provides weak aliases for pthread functions

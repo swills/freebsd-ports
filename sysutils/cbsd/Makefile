@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/cbsd/Makefile 486577 2018-12-04 02:15:33Z swills $
+# $FreeBSD: head/sysutils/cbsd/Makefile 493570 2019-02-22 13:41:43Z novel $
 
 PORTNAME=	cbsd
-DISTVERSION=	12.0.3
+DISTVERSION=	12.0.5
 CATEGORIES=	sysutils
 
 MAINTAINER=	olevole@olevole.ru
@@ -17,7 +17,7 @@ RUN_DEPENDS=	rsync:net/rsync \
 LIB_DEPENDS=	libssh2.so:security/libssh2 \
 		libsqlite3.so:databases/sqlite3
 
-USES=		libedit pkgconfig
+USES=		libedit pkgconfig:both
 USE_GITHUB=	yes
 USE_RC_SUBR=	cbsdd cbsdrsyncd cbsd-statsd-bhyve cbsd-statsd-hoster cbsd-statsd-jail
 

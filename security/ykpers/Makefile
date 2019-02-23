@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/ykpers/Makefile 485085 2018-11-16 16:54:14Z philip $
+# $FreeBSD: head/security/ykpers/Makefile 493132 2019-02-16 22:55:56Z sunpoet $
 
 PORTNAME=	ykpers
 PORTVERSION=	1.19.0
 CATEGORIES=	security
-MASTER_SITES=	http://opensource.yubico.com/yubikey-personalization/releases/
+MASTER_SITES=	https://developers.yubico.com/yubikey-personalization/Releases/
 
 MAINTAINER=	matt@mjslabs.com
 COMMENT=	Library and tool for personalization of Yubico's YubiKey

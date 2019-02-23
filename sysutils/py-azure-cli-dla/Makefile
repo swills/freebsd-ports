@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-dla/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-dla/Makefile 493089 2019-02-16 20:08:01Z dbaio $
 
 PORTNAME=	azure-cli-dla
-PORTVERSION=	0.2.3
+PORTVERSION=	0.2.4
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

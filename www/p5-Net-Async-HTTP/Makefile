@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Net-Async-HTTP/Makefile 485022 2018-11-15 19:06:16Z sunpoet $
+# $FreeBSD: head/www/p5-Net-Async-HTTP/Makefile 493381 2019-02-19 19:47:06Z sunpoet $
 
 PORTNAME=	Net-Async-HTTP
-PORTVERSION=	0.43
+PORTVERSION=	0.44
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

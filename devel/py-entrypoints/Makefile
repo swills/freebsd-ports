@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-entrypoints/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-entrypoints/Makefile 493270 2019-02-18 16:24:29Z amdmi3 $
 
 PORTNAME=	entrypoints
-PORTVERSION=	0.2.3
+PORTVERSION=	0.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

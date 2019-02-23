@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pyrsistent/Makefile 492635 2019-02-10 19:45:03Z sunpoet $
+# $FreeBSD: head/devel/py-pyrsistent/Makefile 493607 2019-02-22 19:55:46Z sunpoet $
 
 PORTNAME=	pyrsistent
-PORTVERSION=	0.14.10
+PORTVERSION=	0.14.11
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

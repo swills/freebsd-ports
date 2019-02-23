@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/diff-so-fancy/Makefile 457505 2017-12-29 11:44:04Z rakuco $
+# $FreeBSD: head/textproc/diff-so-fancy/Makefile 493039 2019-02-16 12:14:57Z rakuco $
 
 PORTNAME=	diff-so-fancy
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 

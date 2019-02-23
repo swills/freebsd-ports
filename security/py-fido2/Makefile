@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-fido2/Makefile 481576 2018-10-08 21:42:06Z sunpoet $
+# $FreeBSD: head/security/py-fido2/Makefile 493124 2019-02-16 22:55:16Z sunpoet $
 
 PORTNAME=	fido2
-PORTVERSION=	0.4.0
+PORTVERSION=	0.5.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

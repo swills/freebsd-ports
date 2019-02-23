@@ -1,8 +1,8 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil/Makefile 491103 2019-01-24 17:38:14Z sunpoet $
+# $FreeBSD: head/sysutils/py-psutil/Makefile 493204 2019-02-17 19:40:08Z sunpoet $
 
 PORTNAME=	psutil
-PORTVERSION=	5.5.0
+PORTVERSION=	5.5.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

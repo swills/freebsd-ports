@@ -1,18 +1,20 @@
 # Created by: mwest@uct.ac.za
-# $FreeBSD: head/net/rdesktop/Makefile 462612 2018-02-22 15:38:37Z pizzamig $
+# $FreeBSD: head/net/rdesktop/Makefile 493554 2019-02-22 06:34:04Z pi $
 
 PORTNAME=	rdesktop
-PORTVERSION=	1.8.3
+PORTVERSION=	1.8.4
+DISTVERSIONPREFIX=v
 CATEGORIES=	net comms ipv6
-MASTER_SITES=	SF
 
 MAINTAINER=	gregf@hugops.pw
 COMMENT=	RDP client for Windows NT/2000/2003 Terminal Server
 
 LICENSE=	GPLv3
 
+USES=		autoreconf gmake iconv pkgconfig ssl
 USE_XORG=	x11
-USES=		gmake iconv pkgconfig ssl
+USE_GITHUB=	yes
+
 CONFIGURE_ARGS+=	${ICONV_CONFIGURE_ARG} --disable-credssp
 GNU_CONFIGURE=	yes
 DOCS=		doc/AUTHORS doc/TODO doc/*.txt

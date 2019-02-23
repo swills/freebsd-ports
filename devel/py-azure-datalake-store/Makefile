@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-datalake-store/Makefile 491399 2019-01-27 20:51:09Z dbaio $
+# $FreeBSD: head/devel/py-azure-datalake-store/Makefile 493075 2019-02-16 20:00:16Z dbaio $
 
 PORTNAME=	azure-datalake-store
-PORTVERSION=	0.0.40
+PORTVERSION=	0.0.41
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

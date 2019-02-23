@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-AnyEvent-ReverseHTTP/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/www/p5-AnyEvent-ReverseHTTP/Makefile 493566 2019-02-22 09:00:48Z amdmi3 $
 
 PORTNAME=	AnyEvent-ReverseHTTP
 PORTVERSION=	0.05
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of reversehttp for AnyEvent
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Any-Moose>0:devel/p5-Any-Moose \
@@ -20,5 +23,6 @@ RUN_DEPENDS=	\
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

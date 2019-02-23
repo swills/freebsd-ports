@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-CheckManifest/Makefile 488358 2018-12-26 07:23:59Z wen $
+# $FreeBSD: head/devel/p5-Test-CheckManifest/Makefile 493604 2019-02-22 19:55:30Z sunpoet $
 
 PORTNAME=	Test-CheckManifest
-PORTVERSION=	1.38
+PORTVERSION=	1.42
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,16 @@ COMMENT=	Check if your Manifest matches your distro
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 
-.include <bsd.port.mk>
+NO_ARCH=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${PERL_LEVEL} < 502902
+BUILD_DEPENDS+=	p5-PathTools>=3.7500:devel/p5-PathTools
+RUN_DEPENDS+=	p5-PathTools>=3.7500:devel/p5-PathTools
+.endif
+
+.include <bsd.port.post.mk>

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/powerpc64-gcc/Makefile 491173 2019-01-25 19:04:49Z jhb $
+# $FreeBSD: head/devel/powerpc64-gcc/Makefile 493011 2019-02-15 22:04:17Z jhb $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMEPREFIX?=	powerpc64-
@@ -25,7 +25,7 @@ PLIST_SUB=	TARGETARCH=${PKGNAMEPREFIX:C/-//g} \
 		GCC_TARGET=${GCC_TARGET} \
 		GCC_VERSION=${PORTVERSION}
 
-TARGETARCH=	${PKGNAMEPREFIX:C/-//g:S/amd64/x86_64/}
+TARGETARCH=	${PKGNAMEPREFIX:C/-//g}
 
 .if empty(GCC_TARGET)
 # We are building for a FreeBSD target

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/glosm/Makefile 479998 2018-09-18 08:47:31Z linimon $
+# $FreeBSD: head/graphics/glosm/Makefile 493529 2019-02-21 20:50:29Z amdmi3 $
 
 PORTNAME=	glosm
 PORTVERSION=	0.0.2
@@ -16,16 +16,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libexpat.so:textproc/expat2
 
-USES=		cmake compiler tar:bzip2
+USES=		cmake gl sdl tar:bzip2
 USE_GL=		gl
 USE_XORG=	x11
 USE_SDL=	sdl
+USE_CXXSTD=	c++98
 USE_GITHUB=	yes
 GH_ACCOUNT=	AMDmi3
 TEST_TARGET=	test
-
-CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
-CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 PORTDOCS=	README ChangeLog
 

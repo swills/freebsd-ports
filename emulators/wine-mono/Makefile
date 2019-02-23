@@ -1,8 +1,8 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/emulators/wine-mono/Makefile 470368 2018-05-19 07:59:57Z se $
+# $FreeBSD: head/emulators/wine-mono/Makefile 493569 2019-02-22 11:13:07Z gerald $
 
 PORTNAME=	wine-mono
-DISTVERSION=	4.7.1
+DISTVERSION=	4.7.5
 CATEGORIES=	emulators
 MASTER_SITES=	http://dl.winehq.org/wine/wine-mono/${DISTVERSION}/
 EXTRACT_SUFX=	.msi

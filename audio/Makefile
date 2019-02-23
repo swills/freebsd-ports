@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 492751 2019-02-12 05:21:56Z yuri $
+# $FreeBSD: head/audio/Makefile 493061 2019-02-16 19:36:29Z yuri $
 #
 
     COMMENT = Audio tools
@@ -906,6 +906,7 @@
     SUBDIR += zinf
     SUBDIR += zita-convolver
     SUBDIR += zita-resampler
+    SUBDIR += zrythm
     SUBDIR += zynaddsubfx
 
 .include <bsd.port.subdir.mk>

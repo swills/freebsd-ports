@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/powerdxx/Makefile 491364 2019-01-27 16:16:31Z rigoletto $
+# $FreeBSD: head/sysutils/powerdxx/Makefile 493485 2019-02-21 04:14:14Z linimon $
 
 PORTNAME=	powerdxx
 DISTVERSION=	0.4.0
@@ -18,6 +18,8 @@ USE_LDCONFIG=	yes
 MAKE_ARGS=	DOCSDIR="${DOCSDIR}"
 
 OPTIONS_DEFINE=	DOCS
+
+CXXFLAGS+=	-Wno-error=sign-compare
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

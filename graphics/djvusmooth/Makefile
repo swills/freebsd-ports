@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/djvusmooth/Makefile 474566 2018-07-13 08:50:03Z antoine $
+# $FreeBSD: head/graphics/djvusmooth/Makefile 493141 2019-02-17 02:12:36Z yuri $
 
 PORTNAME=	djvusmooth
-DISTVERSION=	0.2.19-39
-DISTVERSIONSUFFIX=	-g0723947
+DISTVERSION=	0.3
 CATEGORIES=	graphics python
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 492519 2019-02-09 20:48:10Z cmt $
+# $FreeBSD: head/x11-toolkits/Makefile 493557 2019-02-22 07:48:48Z bapt $
 #
 
     COMMENT = X11 toolkits
@@ -7,7 +7,6 @@
     SUBDIR += Xaw3d
     SUBDIR += Xmt
     SUBDIR += attica
-    SUBDIR += bakery
     SUBDIR += blt
     SUBDIR += bwidget
     SUBDIR += c++-gtk-utils
@@ -56,8 +55,6 @@
     SUBDIR += gtkmm24-reference
     SUBDIR += gtkmm30
     SUBDIR += gtkmm30-reference
-    SUBDIR += gtksourceview
-    SUBDIR += gtksourceview-reference
     SUBDIR += gtksourceview2
     SUBDIR += gtksourceview2-reference
     SUBDIR += gtksourceview3
@@ -103,6 +100,7 @@
     SUBDIR += libgnomeui
     SUBDIR += libgnomeui-reference
     SUBDIR += libgnomeuimm26
+    SUBDIR += libhandy
     SUBDIR += libsexy
     SUBDIR += libsexymm
     SUBDIR += libunique3

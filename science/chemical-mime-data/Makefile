@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/science/chemical-mime-data/Makefile 487058 2018-12-09 15:14:35Z kwm $
+# $FreeBSD: head/science/chemical-mime-data/Makefile 493560 2019-02-22 08:12:39Z bapt $
 
 PORTNAME=	chemical-mime-data
 PORTVERSION=	0.1.94

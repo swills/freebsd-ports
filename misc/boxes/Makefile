@@ -1,8 +1,8 @@
 # Created by: Patrick Seal <patseal@hyperhost.net>
-# $FreeBSD: head/misc/boxes/Makefile 436683 2017-03-22 09:32:25Z olgeni $
+# $FreeBSD: head/misc/boxes/Makefile 493568 2019-02-22 11:13:00Z olgeni $
 
 PORTNAME=	boxes
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 

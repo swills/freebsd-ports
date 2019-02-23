@@ -1,9 +1,9 @@
-# $FreeBSD: head/deskutils/virt-manager/Makefile 492375 2019-02-07 16:39:05Z novel $
+# $FreeBSD: head/deskutils/virt-manager/Makefile 493016 2019-02-15 23:51:02Z sunpoet $
 
 PORTNAME=	virt-manager
 PORTVERSION=	2.1.0
 CATEGORIES=	deskutils net-mgmt
-MASTER_SITES=	http://virt-manager.org/download/sources/${PORTNAME}/ \
+MASTER_SITES=	https://virt-manager.org/download/sources/${PORTNAME}/ \
 		LOCAL/jgh/deskutils/${PORTNAME}/
 
 MAINTAINER=	novel@FreeBSD.org

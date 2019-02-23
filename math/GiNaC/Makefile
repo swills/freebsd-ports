@@ -1,9 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/GiNaC/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/math/GiNaC/Makefile 493229 2019-02-17 23:40:35Z stephen $
 
 PORTNAME=	GiNaC
-PORTVERSION=	1.7.2
-PORTREVISION=	1
+PORTVERSION=	1.7.5
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/GiNaC/ \
 		http://www.ginac.de/

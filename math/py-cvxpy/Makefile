@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-cvxpy/Makefile 491231 2019-01-26 04:09:44Z yuri $
+# $FreeBSD: head/math/py-cvxpy/Makefile 493653 2019-02-23 07:43:28Z yuri $
 
 PORTNAME=	cvxpy
-DISTVERSION=	1.0.14
+DISTVERSION=	1.0.17
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}fastcache>0:devel/py-fastcache@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}multiprocess>0:devel/py-multiprocess@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}osqp>0:math/py-osqp@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.19:science/py-scipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>=1.1.0:science/py-scipy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scs>=1.1.3:math/py-scs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/kartofel/Makefile 491625 2019-01-30 12:36:36Z amdmi3 $
+# $FreeBSD: head/games/kartofel/Makefile 493534 2019-02-21 21:03:05Z amdmi3 $
 
 PORTNAME=	kartofel
 PORTVERSION=	1.2
@@ -13,13 +13,11 @@ COMMENT=	Connect the dots in order without crossing over yourself
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		compiler gmake
+USES=		gmake sdl
+USE_CXXSTD=	c++98
 USE_SDL=	sdl gfx mixer image ttf
 
 ALL_TARGET=	default
-
-CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
-CXXFLAGS_clang=	-Wno-c++11-narrowing
 
 DATA_DIRS=	sounds fonts music images levels
 

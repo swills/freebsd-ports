@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/converters/pecl-igbinary/Makefile 492945 2019-02-14 22:41:06Z sunpoet $
+# $FreeBSD: head/converters/pecl-igbinary/Makefile 493460 2019-02-20 20:48:02Z sunpoet $
 
 PORTNAME=	igbinary
-PORTVERSION=	2.0.8
+PORTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	converters
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -13,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		php:pecl
 
-post-patch:
+post-patch:	 
 	@${CP} ${WRKSRC}/src/php7/igbinary.h ${WRKSRC}/igbinary.h
 	@${CP} ${WRKSRC}/src/php7/php_igbinary.h ${WRKSRC}/php_igbinary.h
 

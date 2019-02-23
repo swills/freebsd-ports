@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/tk85/Makefile 458018 2018-01-04 08:54:45Z gahr $
+# $FreeBSD: head/x11-toolkits/tk85/Makefile 493355 2019-02-19 08:58:44Z gahr $
 
 PORTNAME=	tk
 PORTVERSION=	8.5.19
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	TCLTK/tcl8_5 SF/tcl/Tcl/${PORTVERSION}
 PKGNAMESUFFIX=	${SHORT_TK_VER}
@@ -42,7 +42,7 @@ DATADIR=	${PREFIX}/share/${PORTNAME}${TK_VER}
 SUB_FILES=	pkgIndex.tcl
 
 OPTIONS_DEFINE=	TK85_MAN DEMOS THREADS
-OPTIONS_DEFAULT=THREADS
+OPTIONS_DEFAULT=TK85_MAN THREADS
 OPTIONS_SUB=	yes
 TK85_MAN_DESC=	Install tk 8.5 function manpages
 DEMOS_DESC=	Install demos

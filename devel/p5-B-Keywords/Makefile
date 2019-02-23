@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-B-Keywords/Makefile 478037 2018-08-25 13:49:37Z sunpoet $
+# $FreeBSD: head/devel/p5-B-Keywords/Makefile 493210 2019-02-17 19:40:41Z sunpoet $
 
 PORTNAME=	B-Keywords
-PORTVERSION=	1.19
+PORTVERSION=	1.20
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,9 @@ COMMENT=	Lists of reserved barewords and symbol names
 LICENSE=	ART10 GPLv2
 LICENSE_COMB=	dual
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

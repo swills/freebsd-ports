@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 490580 2019-01-17 17:34:17Z swills $
+# $FreeBSD: head/net-im/Makefile 493501 2019-02-21 13:44:45Z adridg $
 #
 
     COMMENT = Instant messaging
@@ -15,7 +15,6 @@
     SUBDIR += echat
     SUBDIR += ejabberd
     SUBDIR += ekiga
-    SUBDIR += emesene
     SUBDIR += empathy
     SUBDIR += farsight2
     SUBDIR += farstream
@@ -59,6 +58,7 @@
     SUBDIR += libnice-gst010
     SUBDIR += libnice-gst1
     SUBDIR += libpurple
+    SUBDIR += libqmatrixclient
     SUBDIR += libqtelegram-ae
     SUBDIR += libsignon-glib
     SUBDIR += libstrophe
@@ -96,8 +96,6 @@
     SUBDIR += p5-Net-XMPP2
     SUBDIR += p5-Protocol-XMPP
     SUBDIR += p5-SOAP-Transport-JABBER
-    SUBDIR += papyon
-    SUBDIR += pebrot
     SUBDIR += pecl-stomp2
     SUBDIR += pidgin
     SUBDIR += pidgin-birthday-reminder
@@ -149,6 +147,7 @@
     SUBDIR += py-xmpppy-yahoo
     SUBDIR += qTox
     SUBDIR += qq
+    SUBDIR += quaternion
     SUBDIR += qxmpp
     SUBDIR += qxmpp-qt5
     SUBDIR += ramblercontacts
@@ -174,7 +173,6 @@
     SUBDIR += telegram-purple
     SUBDIR += telegramqml
     SUBDIR += telepathy-accounts-signon
-    SUBDIR += telepathy-butterfly
     SUBDIR += telepathy-farsight
     SUBDIR += telepathy-farstream
     SUBDIR += telepathy-gabble

@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/tidy-html5/Makefile 454920 2017-11-26 20:44:33Z thierry $
+# $FreeBSD: head/www/tidy-html5/Makefile 493430 2019-02-20 18:27:57Z thierry $
 
 PORTNAME=	tidy-html5
 PORTVERSION=	5.6.0
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	thierry@FreeBSD.org
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/README/LICENSE.md
 USE_GITHUB=	yes
 GH_ACCOUNT=	htacg
 
-USES=		cmake
+USES=		cmake gnome
 USE_GNOME=	libxslt
 USE_LDCONFIG=	yes
 

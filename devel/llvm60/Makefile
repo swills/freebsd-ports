@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm60/Makefile 490680 2019-01-18 22:57:33Z brooks $
+# $FreeBSD: head/devel/llvm60/Makefile 493328 2019-02-18 21:52:49Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	6.0.1
@@ -345,7 +345,7 @@ PORTDOCS+=	lld
 CXXFLAGS+=	-D_GLIBCXX_USE_C99
 .endif
 
-.if ${ARCH} == "armv6" || ${ARCH} == "armv7"
+.if ${ARCH} == "armv6"
 BUILD_DEPENDS+=	${LOCALBASE}/bin/ld:devel/binutils
 CONFIGURE_ENV+=	COMPILER_PATH=${LOCALBASE}/bin
 MAKE_ENV+=	COMPILER_PATH=${LOCALBASE}/bin

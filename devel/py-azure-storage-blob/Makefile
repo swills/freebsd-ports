@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-storage-blob/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/devel/py-azure-storage-blob/Makefile 493071 2019-02-16 19:57:01Z dbaio $
 
 PORTNAME=	azure-storage-blob
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

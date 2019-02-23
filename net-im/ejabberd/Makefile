@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/ejabberd/Makefile 488608 2018-12-28 15:46:14Z ashish $
+# $FreeBSD: head/net-im/ejabberd/Makefile 493242 2019-02-18 05:07:58Z ashish $
 
 PORTNAME=	ejabberd
 PORTVERSION=	18.12.1
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	ashish@FreeBSD.org
@@ -157,7 +158,7 @@ ICONV_LDFLAGS=		${ICONV_LIB}
 DOCS_MAKE_ARGS_OFF=	NOPORTDOCS=yes
 
 pre-everything::
-	@if pkg query %n-%v net-im/ejabberd; then \
+	@if ${PKG_BIN} query %n-%v net-im/ejabberd; then \
 		${ECHO_MSG} needs to be uninstalled, before this port build could proceed. ; \
 		${ECHO_MSG} For details: https://github.com/processone/ejabberd/issues/2194 ; \
 		${ECHO_MSG} Sorry for the inconvenience. ; \

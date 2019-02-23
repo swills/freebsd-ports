@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/rubygem-clutter-gstreamer/Makefile 490283 2019-01-14 15:46:01Z sunpoet $
+# $FreeBSD: head/multimedia/rubygem-clutter-gstreamer/Makefile 493294 2019-02-18 18:21:10Z sunpoet $
 
 PORTNAME=	clutter-gstreamer
-PORTVERSION=	3.3.1
+PORTVERSION=	3.3.2
 CATEGORIES=	multimedia rubygems
 MASTER_SITES=	RG
 

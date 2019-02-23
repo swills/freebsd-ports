@@ -1,11 +1,11 @@
 # Created by: mi
-# $FreeBSD: head/graphics/jbigkit/Makefile 455681 2017-12-06 21:35:56Z amdmi3 $
+# $FreeBSD: head/graphics/jbigkit/Makefile 493021 2019-02-15 23:53:32Z sunpoet $
 
 PORTNAME=	jbigkit
 PORTVERSION=	2.1
 PORTREVISION=	1
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.cl.cam.ac.uk/~mgk25/download/
+MASTER_SITES=	https://www.cl.cam.ac.uk/~mgk25/download/
 
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Lossless compression for bi-level images such as scanned pages, faxes

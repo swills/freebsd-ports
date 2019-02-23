@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/gem.mk 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/Mk/Uses/gem.mk 493610 2019-02-22 19:56:03Z sunpoet $
 #
 # Support rubygem packages
 #
@@ -74,9 +74,9 @@ GEMFILES=	${DISTNAME}${EXTRACT_SUFX}
 RUBYGEM_ARGS=-l --no-update-sources --install-dir ${STAGEDIR}${PREFIX}/lib/ruby/gems/${RUBY_VER} --ignore-dependencies --bindir=${STAGEDIR}${PREFIX}/bin
 
 .if ${PORT_OPTIONS:MDOCS}
-RUBYGEM_ARGS+=	--rdoc --ri
+RUBYGEM_ARGS+=	--document rdoc,ri
 .else
-RUBYGEM_ARGS+=	--no-rdoc --no-ri
+RUBYGEM_ARGS+=	--no-document
 .endif
 
 .if !target(do-extract)
@@ -104,7 +104,7 @@ do-build:
 
 .if !target(do-install)
 do-install:
-	(cd ${BUILD_WRKSRC}; ${SETENV} ${GEM_ENV} ${RUBYGEMBIN} install ${RUBYGEM_ARGS} ${GEMFILES} -- --build-args ${CONFIGURE_ARGS})
+	(cd ${BUILD_WRKSRC}; ${SETENV} ${GEM_ENV} ${RUBYGEMBIN} install ${RUBYGEM_ARGS} ${GEMFILES} -- ${CONFIGURE_ARGS})
 	${RM} -r ${STAGEDIR}${PREFIX}/${GEMS_BASE_DIR}/build_info/
 	${FIND} ${STAGEDIR}${PREFIX}/${GEMS_BASE_DIR} -type f -name '*.so' -exec ${STRIP_CMD} {} +
 	${FIND} ${STAGEDIR}${PREFIX}/${GEMS_BASE_DIR} -type f \( -name mkmf.log -or -name gem_make.out \) -delete

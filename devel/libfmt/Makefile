@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/libfmt/Makefile 492172 2019-02-04 22:00:39Z swills $
+# $FreeBSD: head/devel/libfmt/Makefile 493353 2019-02-19 07:48:42Z tobik $
 
 PORTNAME=	libfmt
 DISTVERSION=	5.3.0
 CATEGORIES=	devel
 
-MAINTAINER=	SlavaMikerov@gmail.com
-COMMENT=	Fmt is an open-source formatting library for C++
+MAINTAINER=	tobik@FreeBSD.org
+COMMENT=	Formatting library for C++
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst

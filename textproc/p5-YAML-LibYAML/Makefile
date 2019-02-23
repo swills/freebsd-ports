@@ -1,13 +1,13 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 475260 2018-07-24 15:16:10Z joneum $
+# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 493219 2019-02-17 19:55:31Z sunpoet $
 
 PORTNAME=	YAML-LibYAML
-DISTVERSION=	0.72
+DISTVERSION=	0.76
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	markun@onohara.to
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl YAML Serialization using XS and libyaml
 
 LICENSE=	ART10 GPLv1+

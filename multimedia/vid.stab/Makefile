@@ -1,10 +1,10 @@
-# $FreeBSD: head/multimedia/vid.stab/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/multimedia/vid.stab/Makefile 493423 2019-02-20 14:28:25Z bapt $
 
 PORTNAME=	vid.stab
 PORTVERSION=	0.98.2
 CATEGORIES=	multimedia
 
-MAINTAINER=	multimedia@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Video stabilization library
 
 LICENSE=	GPLv2 GPLv3

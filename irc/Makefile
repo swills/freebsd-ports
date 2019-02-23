@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/Makefile 492154 2019-02-04 19:31:35Z rene $
+# $FreeBSD: head/irc/Makefile 493081 2019-02-16 20:03:24Z 0mp $
 #
 
     COMMENT = Internet Relay Chat utilities
@@ -10,6 +10,7 @@
     SUBDIR += bitlbee
     SUBDIR += bitlbee-discord
     SUBDIR += bitlbee-facebook
+    SUBDIR += bitlbee-mastodon
     SUBDIR += bitlbee-steam
     SUBDIR += bnc
     SUBDIR += bopm

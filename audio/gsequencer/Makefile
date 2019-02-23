@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/gsequencer/Makefile 492770 2019-02-12 10:25:44Z tobik $
+# $FreeBSD: head/audio/gsequencer/Makefile 493556 2019-02-22 07:27:23Z yuri $
 
 PORTNAME=	gsequencer
-DISTVERSION=	2.1.53
+DISTVERSION=	2.1.60
 CATEGORIES=	audio
 MASTER_SITES=	SAVANNAH/gsequencer/2.1.x
 
@@ -35,6 +35,8 @@ USE_LDCONFIG=	yes
 LDFLAGS+=	-luuid
 
 INSTALLS_ICONS=	yes
+
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 OPTIONS_DEFINE=			JACK PULSEAUDIO
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-ams/Makefile 491766 2019-01-31 22:15:39Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-ams/Makefile 493092 2019-02-16 20:09:27Z dbaio $
 
 PORTNAME=	azure-cli-ams
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

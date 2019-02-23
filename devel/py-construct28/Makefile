@@ -1,5 +1,5 @@
 # Created by: Piotr Florczyk <p.florczyk@adminworkshop.pl>
-# $FreeBSD: head/devel/py-construct28/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-construct28/Makefile 493362 2019-02-19 11:04:59Z bofh $
 
 PORTNAME=	construct
 PORTVERSION=	2.8.11
@@ -14,10 +14,14 @@ COMMENT=	Python module for parsing and building of data structures
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+DEPRECATED=	Latest upstream version is in ports tree devel/py-construct
+EXPIRATION_DATE=2019-03-20
+
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

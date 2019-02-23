@@ -1,9 +1,8 @@
 # Created by: Kai Wang <kaiw27@gmail.com>
-# $FreeBSD: head/shells/fish/Makefile 490604 2019-01-17 20:40:43Z asomers $
+# $FreeBSD: head/shells/fish/Makefile 493425 2019-02-20 15:32:17Z asomers $
 
 PORTNAME=	fish
-PORTVERSION=	3.0.0
-PORTREVISION=	1
+PORTVERSION=	3.0.1
 CATEGORIES=	shells
 MASTER_SITES=	https://github.com/fish-shell/fish-shell/releases/download/${PORTVERSION}/
 

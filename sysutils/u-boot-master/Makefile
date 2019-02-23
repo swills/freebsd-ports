@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 492257 2019-02-05 16:45:29Z antoine $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 493265 2019-02-18 15:01:50Z manu $
 #
 # Common infrastructure for u-boot ports
 #
@@ -92,6 +92,13 @@ UBOOT_METADATA_IMX6_RAW_BS=	512
 # Override for RK3399 family
 UBOOT_PLIST_RK3399=	idbspl.img u-boot.itb
 UBOOT_ARCH_RK3399=	aarch64
+
+# Override for ARMADA38X family
+UBOOT_PLIST_ARMADA38X=	u-boot-spl.kwb
+UBOOT_METADATA_ARMADA38X_FILES=		${UBOOT_PLIST_ARMADA38X}
+UBOOT_METADATA_ARMADA38X_METHOD=	raw
+UBOOT_METADATA_ARMADA38X_RAW_OFFSET=	1
+UBOOT_METADATA_ARMADA38X_RAW_BS=	512
 
 # Uboot variables
 .if !defined(UBOOT_VERSION) && defined(UBOOT_VERSION_${FAMILY:tu})

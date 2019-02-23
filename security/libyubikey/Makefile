@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/libyubikey/Makefile 460680 2018-02-02 09:02:16Z amdmi3 $
+# $FreeBSD: head/security/libyubikey/Makefile 493128 2019-02-16 22:55:36Z sunpoet $
 
 PORTNAME=	libyubikey
 PORTVERSION=	1.13
 CATEGORIES=	security devel
-MASTER_SITES=	http://opensource.yubico.com/yubico-c/releases/
+MASTER_SITES=	https://developers.yubico.com/yubico-c/Releases/
 
 MAINTAINER=	matt@mjslabs.com
 COMMENT=	Library for decrypting and parsing YubiKey One-Time Passwords

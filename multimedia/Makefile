@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 492154 2019-02-04 19:31:35Z rene $
+# $FreeBSD: head/multimedia/Makefile 493173 2019-02-17 17:05:49Z jbeich $
 #
 
     COMMENT = Multimedia software
@@ -400,6 +400,9 @@
     SUBDIR += subtitleoffsetmodifier
     SUBDIR += subtitleripper
     SUBDIR += subtools
+    SUBDIR += svt-av1
+    SUBDIR += svt-hevc
+    SUBDIR += svt-vp9
     SUBDIR += swfdec-gnome
     SUBDIR += syncplay
     SUBDIR += szap-s2

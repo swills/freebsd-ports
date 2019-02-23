@@ -1,8 +1,8 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/pgFormatter/Makefile 481706 2018-10-10 10:22:04Z sunpoet $
+# $FreeBSD: head/databases/pgFormatter/Makefile 493445 2019-02-20 20:46:43Z sunpoet $
 
 PORTNAME=	pgFormatter
-PORTVERSION=	3.2
+PORTVERSION=	3.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 

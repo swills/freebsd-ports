@@ -1,5 +1,5 @@
 # Created by: sumikawa@kame.net
-# $FreeBSD: head/textproc/wv/Makefile 462964 2018-02-25 16:46:51Z antoine $
+# $FreeBSD: head/textproc/wv/Makefile 493158 2019-02-17 09:22:35Z joneum $
 
 PORTNAME=	wv
 PORTVERSION=	1.2.9
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.abisource.com/downloads/wv/${PORTVERSION}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	phascolarctos@protonmail.ch
 COMMENT=	Library and executables to access Microsoft Word files
 
 LICENSE=	GPLv2+
@@ -18,6 +18,10 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libwmf.so:graphics/libwmf
 
 USES=		gmake jpeg pkgconfig libtool
+USE_GNOME=	libgsf
+USE_XORG=	x11
+USE_LDCONFIG=	yes
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	MKDIR_P="${MKDIR}"
 CONFIGURE_ARGS=	--with-png=${LOCALBASE} \
@@ -25,8 +29,5 @@ CONFIGURE_ARGS=	--with-png=${LOCALBASE} \
 MAKEFILE=	GNUmakefile
 MAKE_ARGS+=	pkgconfigdir="${PREFIX}/libdata/pkgconfig"
 MAKE_ARGS+=	INSTALL_STRIP_FLAG="${STRIP}"
-USE_GNOME=	libgsf
-USE_XORG=	x11
-USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

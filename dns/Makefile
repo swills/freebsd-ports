@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 492267 2019-02-05 18:24:07Z pi $
+# $FreeBSD: head/dns/Makefile 493631 2019-02-23 01:51:58Z zi $
 #
 
     COMMENT = Domain Name Service tools
@@ -76,9 +76,9 @@
     SUBDIR += fpdns
     SUBDIR += gdnsd
     SUBDIR += gdnsd2
+    SUBDIR += gdnsd3
     SUBDIR += gen6dns
     SUBDIR += getdns
-    SUBDIR += go-geodns
     SUBDIR += hesiod
     SUBDIR += hostdb
     SUBDIR += hs-dns
@@ -173,7 +173,6 @@
     SUBDIR += p5-Stanford-DNSserver
     SUBDIR += p5-Tie-DNS
     SUBDIR += p5-URBL-Prepare
-    SUBDIR += p5-pgeodns
     SUBDIR += packetq
     SUBDIR += pdnsd
     SUBDIR += pear-File_DNS

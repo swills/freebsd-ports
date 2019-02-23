@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/net-p2p/Makefile 493051 2019-02-16 17:27:29Z rene $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -93,16 +93,6 @@
     SUBDIR += tribler
     SUBDIR += uhub
     SUBDIR += valknut
-    SUBDIR += verlihub
-    SUBDIR += verlihub-plugins
-    SUBDIR += verlihub-plugins-chatroom
-    SUBDIR += verlihub-plugins-floodprotect
-    SUBDIR += verlihub-plugins-forbid
-    SUBDIR += verlihub-plugins-iplog
-    SUBDIR += verlihub-plugins-isp
-    SUBDIR += verlihub-plugins-luascript
-    SUBDIR += verlihub-plugins-messanger
-    SUBDIR += verlihub-plugins-stats
     SUBDIR += vuze
     SUBDIR += xmrig
     SUBDIR += zetacoin

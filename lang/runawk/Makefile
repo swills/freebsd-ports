@@ -1,8 +1,8 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/lang/runawk/Makefile 491394 2019-01-27 19:58:13Z sunpoet $
+# $FreeBSD: head/lang/runawk/Makefile 493138 2019-02-17 01:50:28Z yuri $
 
 PORTNAME=	runawk
-PORTVERSION=	1.6.0
+DISTVERSION=	1.6.1
 CATEGORIES=	lang
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

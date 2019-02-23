@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/nuvolaplayer-all-services/Makefile 481072 2018-10-01 21:43:17Z rene $
+# $FreeBSD: head/www/nuvolaplayer-all-services/Makefile 493423 2019-02-20 14:28:25Z bapt $
 
 PORTNAME=	nuvolaplayer
 PORTVERSION?=	1.0
 # Do not set PORTREVISION here.
 CATEGORIES?=	www audio
 
-MAINTAINER?=	multimedia@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 
 .include "Makefile.services"
 

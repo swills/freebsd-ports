@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/sea-defender/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/sea-defender/Makefile 493371 2019-02-19 16:05:37Z amdmi3 $
 
 PORTNAME=	sea-defender
 PORTVERSION=	0.9
@@ -43,6 +43,9 @@ DESKTOP_ENTRIES="Sea Defender" \
 		""
 
 OPTIONS_DEFINE=	DOCS
+
+post-patch:
+	@${REINPLACE_CMD} -e '/typedef/ d' ${WRKSRC}/snoutlib/gldefs.h
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sea ${STAGEDIR}${PREFIX}/libexec/${PORTNAME}

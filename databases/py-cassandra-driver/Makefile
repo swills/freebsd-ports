@@ -1,8 +1,7 @@
-# $FreeBSD: head/databases/py-cassandra-driver/Makefile 485533 2018-11-21 19:38:13Z swills $
+# $FreeBSD: head/databases/py-cassandra-driver/Makefile 493583 2019-02-22 19:34:33Z swills $
 
 PORTNAME=	cassandra-driver
-DISTVERSION=	3.16.0
-PORTREVISION=	0
+DISTVERSION=	3.17.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

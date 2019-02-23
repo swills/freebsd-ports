@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-rdbms/Makefile 491778 2019-01-31 22:24:17Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-rdbms/Makefile 493082 2019-02-16 20:04:01Z dbaio $
 
 PORTNAME=	azure-cli-rdbms
-PORTVERSION=	0.3.6
+PORTVERSION=	0.3.7
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

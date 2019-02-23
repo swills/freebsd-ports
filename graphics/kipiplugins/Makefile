@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/kipiplugins/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/kipiplugins/Makefile 493528 2019-02-21 20:02:04Z tcberner $
 
 PORTNAME=	kipiplugins
 DISTVERSION=	5.9.0
@@ -36,7 +36,6 @@ KVKONTAKTE_CMAKE_BOOL=	DIGIKAMSC_COMPILE_LIBKVKONTAKTE
 KVKONTAKTE_LIB_DEPENDS=	libKF5Vkontakte.so:net/libkvkontakte
 
 DISTNAME=	digikam-${PORTVERSION}
-DISTINFO_FILE=	${.CURDIR:H:H}/graphics/digikam/distinfo
 DESCR=		${.CURDIR:H:H}/graphics/digikam/pkg-descr
 
 PLIST_SUB=		SHLIB_VER=${DISTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Matt Behrens <matt@zigg.com>
-# $FreeBSD: head/security/p5-Authen-PAM/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/security/p5-Authen-PAM/Makefile 493417 2019-02-20 09:00:47Z amdmi3 $
 
 PORTNAME=	Authen-PAM
 PORTVERSION=	0.16
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Perl interface to the PAM library
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

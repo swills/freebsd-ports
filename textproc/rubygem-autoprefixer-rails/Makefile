@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-autoprefixer-rails/Makefile 491648 2019-01-30 19:22:18Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-autoprefixer-rails/Makefile 493456 2019-02-20 20:47:41Z sunpoet $
 
 PORTNAME=	autoprefixer-rails
-PORTVERSION=	9.4.7
+PORTVERSION=	9.4.8
 CATEGORIES=	textproc ruby
 MASTER_SITES=	RG
 

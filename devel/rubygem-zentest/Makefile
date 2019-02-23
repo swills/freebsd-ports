@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-zentest/Makefile 432064 2017-01-21 17:29:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-zentest/Makefile 493395 2019-02-19 20:49:24Z sunpoet $
 
 PORTNAME=	zentest
-PORTVERSION=	4.11.1
+PORTVERSION=	4.11.2
 PORTEPOCH=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
@@ -13,9 +13,10 @@ COMMENT=	Ruby Unit Testing Utility
 
 LICENSE=	MIT
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/autotest \
 		bin/multigem \

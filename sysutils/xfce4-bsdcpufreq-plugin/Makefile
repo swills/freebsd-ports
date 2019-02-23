@@ -1,10 +1,10 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/sysutils/xfce4-bsdcpufreq-plugin/Makefile 385665 2015-05-07 20:24:15Z mat $
+# $FreeBSD: head/sysutils/xfce4-bsdcpufreq-plugin/Makefile 493169 2019-02-17 15:25:59Z riggs $
 #
 
 PORTNAME=	xfce4-bsdcpufreq-plugin
 PORTVERSION=	0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils xfce
 
 MAINTAINER=	riggs@FreeBSD.org
@@ -13,17 +13,16 @@ COMMENT=	Displays the current CPU clock frequency in the panel
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	riggs-
-GH_TAGNAME=	be17b3a
-
-USE_GNOME=	gtk20
-
 USES=		pkgconfig xfce
 USE_XFCE=	panel
+USE_GNOME=	cairo gdkpixbuf2 gtk20
 
 PLIST_FILES=	lib/xfce4/panel/plugins/libbsdcpufreq.so \
 		share/xfce4/panel/plugins/bsdcpufreq.desktop
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	riggs-
+GH_TAGNAME=	be17b3a
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/lib/xfce4/panel/plugins

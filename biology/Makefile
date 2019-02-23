@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 492079 2019-02-03 21:14:38Z yuri $
+# $FreeBSD: head/biology/Makefile 493444 2019-02-20 20:46:37Z sunpoet $
 #
 
     COMMENT = Biology
@@ -77,6 +77,7 @@
     SUBDIR += ngs-sdk
     SUBDIR += p5-AcePerl
     SUBDIR += p5-Bio-ASN1-EntrezGene
+    SUBDIR += p5-Bio-Cluster
     SUBDIR += p5-Bio-Coordinate
     SUBDIR += p5-Bio-Das
     SUBDIR += p5-Bio-Das-Lite

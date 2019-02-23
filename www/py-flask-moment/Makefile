@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-flask-moment/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-moment/Makefile 493584 2019-02-22 19:41:34Z swills $
 
 PORTNAME=	Flask-Moment
-PORTVERSION=	0.6.0
+PORTVERSION=	0.7.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-cld3/Makefile 490034 2019-01-12 09:19:22Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-cld3/Makefile 493610 2019-02-22 19:56:03Z sunpoet $
 
 PORTNAME=	cld3
 DISTVERSION=	3.2.2
@@ -21,7 +21,7 @@ USE_RUBY=	yes
 ## do-install here to prevent removal of ext
 do-install:
 	(cd ${BUILD_WRKSRC}; ${SETENV} ${GEM_ENV} ${RUBYGEMBIN} install \
-		${RUBYGEM_ARGS} ${GEMFILES} -- --build-args ${CONFIGURE_ARGS})
+		${RUBYGEM_ARGS} ${GEMFILES} -- ${CONFIGURE_ARGS})
 	${RM} -r ${STAGEDIR}${PREFIX}/${GEMS_BASE_DIR}/build_info/
 	${FIND} ${STAGEDIR}${PREFIX}/${GEMS_BASE_DIR} -type f -name '*.so' \
 		-exec ${STRIP_CMD} {} +

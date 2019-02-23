@@ -1,9 +1,8 @@
-# $FreeBSD: head/www/cutelyst/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/www/cutelyst/Makefile 493359 2019-02-19 10:11:50Z adridg $
 
 PORTNAME=	cutelyst
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.4.0
-PORTREVISION=	1
+DISTVERSION=	2.7.0
 CATEGORIES=	www
 
 MAINTAINER=	adridg@FreeBSD.org
@@ -17,9 +16,12 @@ USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 USE_QT=		qmake_build buildtools_build \
 		core network sql
+
 CMAKE_ARGS=	-DBUILD_ALL=OFF \
 		-DBUILD_TESTS=OFF \
 		-DMANDIR:PATH=man \
 		-DCMAKE_DISABLE_FIND_PACKAGE_Doxygen=TRUE
+
+PLIST_SUB=	SOVER=${DISTVERSION}
 
 .include <bsd.port.mk>
