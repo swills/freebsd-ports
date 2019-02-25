@@ -1,5 +1,14 @@
 --- ../slimserver-vendor-21f307f/CPAN/buildme.sh.orig	2018-04-11 08:51:55.360230000 +0100
 +++ ../slimserver-vendor-21f307f/CPAN/buildme.sh	2018-04-11 08:52:15.289491000 +0100
+@@ -573,7 +573,7 @@
+     build Image::Scale
+     build IO::AIO
+     build IO::Interface
+-#   build IO::Socket::SSL
++   build IO::Socket::SSL
+     build JSON::XS
+     build Linux::Inotify2
+     build Mac::FSEvents
 @@ -657,7 +657,7 @@
                  tar_wrapper zxf icu4c-58_2-src.tgz
                  cd icu/source

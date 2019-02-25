@@ -801,6 +801,11 @@ etc/newsyslog.conf.d/logitechmediaserver.conf
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/ExtUtils/CBuilder/Platform/dec_osf.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/ExtUtils/CBuilder/Platform/os2.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/HTML/Tagset.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/IO/Socket/SSL.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/IO/Socket/SSL.pod
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/IO/Socket/SSL/Intercept.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/IO/Socket/SSL/PublicSuffix.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/IO/Socket/SSL/Utils.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Image/Scale.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/JSON/XS.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/JSON/XS/Boolean.pm
@@ -833,6 +838,14 @@ etc/newsyslog.conf.d/logitechmediaserver.conf
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Module/Build/PodParser.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Module/Build/Version.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Module/Build/YAML.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/Encode.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/Overview.pod
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/Punycode.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/Punycode.xs
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/Punycode/PP.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/Standards.pod
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/UTS46.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Net/IDN/UTS46/_Mapping.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Sub/Uplevel.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Sub/Uplevel.pod
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/Test/NoWarnings.pm
@@ -931,6 +944,10 @@ etc/newsyslog.conf.d/logitechmediaserver.conf
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/HTML/TokeParser.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/IO/Interface.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/IO/Interface/Simple.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/IO/Socket/SSL.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/IO/Socket/SSL/Intercept.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/IO/Socket/SSL/PublicSuffix.pm
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/IO/Socket/SSL/Utils.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/Image/Scale.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/JSON/XS.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/JSON/XS/Boolean.pm
@@ -1099,8 +1116,85 @@ etc/newsyslog.conf.d/logitechmediaserver.conf
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/IO/Interface/autosplit.ix
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Image/Scale/Scale.so
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/JSON/XS/XS.so
-%%AMD64_ONLY%%%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/MP3/Cut/Gapless/Gapless.so
-%%AMD64_ONLY%%%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Media/Scan/Scan.so
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/MP3/Cut/Gapless/Gapless.so
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Media/Scan/Scan.so
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/SSLeay.so
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/autosplit.ix
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/debug_read.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/do_https.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/do_https2.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/do_https3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/do_https4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/do_httpx2.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/do_httpx3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/do_httpx4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/dump_peer_certificate.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_http.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_http3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_http4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_https.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_https3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_https4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_httpx.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_httpx3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/get_httpx4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_http.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_http3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_http4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_https.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_https3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_https4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_httpx.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_httpx3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/head_httpx4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/http_cat.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/https_cat.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/httpx_cat.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/initialize.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/make_form.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/make_headers.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/new_x_ctx.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/open_proxy_tcp_connection.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/open_tcp_connection.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_http.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_http3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_http4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_https.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_https3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_https4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_httpx.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_httpx3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/post_httpx4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_http.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_http3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_http4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_https.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_https3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_https4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_httpx.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_httpx3.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/put_httpx4.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/randomize.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/set_cert_and_key.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/set_proxy.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/set_server_cert_and_key.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/ssl_read_CRLF.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/ssl_read_all.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/ssl_read_until.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/ssl_write_CRLF.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/ssl_write_all.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/sslcat.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/tcp_read_CRLF.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/tcp_read_all.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/tcp_read_until.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/tcp_write_CRLF.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/tcp_write_all.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/tcpcat.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/tcpxcat.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/want_X509_lookup.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/want_nothing.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/want_read.al
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/SSLeay/want_write.al
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Sub/Name/Name.so
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Template/Stash/XS/XS.so
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/XML/Parser/Expat/Expat.so
@@ -2608,7 +2702,9 @@ etc/newsyslog.conf.d/logitechmediaserver.conf
 %%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Data/Dump
 %%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/ExtUtils/CBuilder
 %%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/HTML/Tagset
+%%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/IO/Socket/SSL
 %%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Module/Build
+%%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Net/IDN/Encode
 %%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Sub/Uplevel
 %%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Test/NoWarnings
 %%AMD64_ONLY%%@dir %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/Test/Warn
