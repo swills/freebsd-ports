@@ -211,7 +211,7 @@ OPTIONS_DEFAULT=	PGSQL
 PGSQL_DESC=	Default PostgreSQL support (preferred)
 MYSQL_DESC=	Optional MySQL support
 
-PGSQL_RUN_DEPENDS=	rubygem-pg018>=0.18.2:databases/rubygem-pg018 \
+PGSQL_RUN_DEPENDS=	rubygem-pg>=1.1.0:databases/rubygem-pg \
 	rubygem-peek-pg-rails50>=1.3.0:databases/rubygem-peek-pg-rails50
 MYSQL_RUN_DEPENDS=	rubygem-mysql2>=0.4.5:databases/rubygem-mysql2 \
 	rubygem-peek-mysql2-rails50>=1.2.0:databases/rubygem-peek-mysql2-rails50
