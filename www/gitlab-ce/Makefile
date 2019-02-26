@@ -134,7 +134,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-hangouts-chat>=0.0.5:net/rubygem-hangouts-chat \
 	rubygem-asana>=0.8.1:www/rubygem-asana \
 	rubygem-ruby-fogbugz021>=0.2.1:devel/rubygem-ruby-fogbugz021 \
-	rubygem-kubeclient>=4.0.0:www/rubygem-kubeclient \
+	rubygem-kubeclient>=4.2.2:www/rubygem-kubeclient \
 	rubygem-sanitize>=4.6:textproc/rubygem-sanitize \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \
 	rubygem-loofah>=2.2:textproc/rubygem-loofah \
