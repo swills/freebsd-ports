@@ -111,7 +111,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-state_machines-activerecord>=0.5.1:databases/rubygem-state_machines-activerecord \
 	rubygem-acts-as-taggable-on>=5.0:www/rubygem-acts-as-taggable-on \
 	rubygem-sidekiq>=5.2.1:devel/rubygem-sidekiq \
-	rubygem-sidekiq-cron0>=0.6.0:devel/rubygem-sidekiq-cron0 \
+	rubygem-sidekiq-cron>=1.0.0:devel/rubygem-sidekiq-cron \
 	rubygem-redis-namespace>=1.6.0:databases/rubygem-redis-namespace \
 	rubygem-gitlab-sidekiq-fetcher>=0.4.0:devel/rubygem-gitlab-sidekiq-fetcher \
 	rubygem-rufus-scheduler342>=3.4.0:devel/rubygem-rufus-scheduler342 \
