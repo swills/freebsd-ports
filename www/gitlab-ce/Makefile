@@ -121,7 +121,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-settingslogic>=2.0.9:devel/rubygem-settingslogic \
 	rubygem-re2>=1.1.1:devel/rubygem-re2 \
 	rubygem-version_sorter21>=2.1.0:textproc/rubygem-version_sorter21 \
-	rubygem-js_regex>=2.2.1:textproc/rubygem-js_regex \
+	rubygem-js_regex>=3.1.0:textproc/rubygem-js_regex \
 	rubygem-device_detector>=0:devel/rubygem-device_detector \
 	rubygem-redis-rails-rails50>=5.0.1:www/rubygem-redis-rails-rails50 \
 	rubygem-redis3>=3.2:databases/rubygem-redis3 \

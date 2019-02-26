@@ -2,7 +2,7 @@
 # $FreeBSD: head/textproc/rubygem-regexp_parser/Makefile 480515 2018-09-23 18:08:19Z mfechner $
 
 PORTNAME=	regexp_parser
-PORTVERSION=	0.5.0
+PORTVERSION=	1.3.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

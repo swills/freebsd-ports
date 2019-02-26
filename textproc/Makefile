@@ -1527,6 +1527,7 @@
     SUBDIR += rubygem-babel-transpiler
     SUBDIR += rubygem-babosa
     SUBDIR += rubygem-case_transform
+    SUBDIR += rubygem-character_set
     SUBDIR += rubygem-charlock_holmes
     SUBDIR += rubygem-chewy
     SUBDIR += rubygem-citrus
@@ -1621,6 +1622,7 @@
     SUBDIR += rubygem-rdtool
     SUBDIR += rubygem-redcarpet
     SUBDIR += rubygem-regexp_parser
+    SUBDIR += rubygem-regexp_property_values
     SUBDIR += rubygem-representable
     SUBDIR += rubygem-reverse_markdown
     SUBDIR += rubygem-ri_cal
