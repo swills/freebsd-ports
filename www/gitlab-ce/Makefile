@@ -187,7 +187,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-sshkey1>=1.9.0:security/rubygem-sshkey1 \
 	rubygem-ed25519>=1.2:security/rubygem-ed25519 \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
-	rubygem-gitaly-proto>=1.5.0:net/rubygem-gitaly-proto \
+	rubygem-gitaly-proto>=1.10.0:net/rubygem-gitaly-proto \
 	rubygem-grpc>=1.15.0:net/rubygem-grpc \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-google-protobuf>=3.6:devel/rubygem-google-protobuf \
