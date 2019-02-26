@@ -114,6 +114,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-sidekiq-cron>=1.0.0:devel/rubygem-sidekiq-cron \
 	rubygem-redis-namespace>=1.6.0:databases/rubygem-redis-namespace \
 	rubygem-gitlab-sidekiq-fetcher>=0.4.0:devel/rubygem-gitlab-sidekiq-fetcher \
+	rubygem-fugit>=1.1:devel/rubygem-fugit \
 	rubygem-httparty>=0.13.3:www/rubygem-httparty \
 	rubygem-rainbow>=3.0:devel/rubygem-rainbow \
 	rubygem-ruby-progressbar>=0:devel/rubygem-ruby-progressbar \
