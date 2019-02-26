@@ -99,7 +99,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-rouge>=3.1:textproc/rubygem-rouge \
 	rubygem-truncato>=0.7.11:textproc/rubygem-truncato \
 	rubygem-bootstrap_form>=2.7.0:devel/rubygem-bootstrap_form \
-	rubygem-nokogiri>=1.8.5:textproc/rubygem-nokogiri \
+	rubygem-nokogiri>=1.10.1:textproc/rubygem-nokogiri \
 	rubygem-escape_utils>=1.1:textproc/rubygem-escape_utils \
 	rubygem-icalendar>=0:devel/rubygem-icalendar \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
