@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 # for the options
 MY_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=8.4.4:devel/gitlab-shell \
-	gitlab-workhorse>=8.0.2:www/gitlab-workhorse \
+	gitlab-workhorse>=8.3.1:www/gitlab-workhorse \
 	gitaly>=1.20.0:devel/gitaly \
 	gitlab-pages>=1.5.0:www/gitlab-pages \
 	redis>=3.2.12:databases/redis \
