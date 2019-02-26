@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 493656 2019-02-23 08:03:47Z bapt $
+# $FreeBSD: head/MOVED 493726 2019-02-23 19:01:57Z bapt $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -11633,3 +11633,9 @@ x11-toolkits/gtksourceview|x11-toolkits/gtksourceview4|2019-02-22|Old version no
 deskutils/fusenshi||2019-02-22|Abandonware, not depended on
 www/erwn||2019-02-22|Abandonware, not depended on
 textproc/scrollkeeper|textproc/rarian|2019-02-23|rarian replaced scrollkeeper long ago
+devel/eggdbus||2019-02-23|Abandonned since 2009, not depended on
+devel/libgalago||2019-02-23|Abandonned since 2006, not depended on
+net-im/libyahoo2||2019-02-23|Yahoo messenger has been discontinued in July 17, 2018
+net-im/py-xmpppy-yahoo||2019-02-23|Yahoo messenger has been discontinued in July 17, 2018
+graphics/glitz||2019-02-23|Development stopped in 2008, not depended on
+x11/xfree86_xkb_xml||2019-02-24|The project is discontinued

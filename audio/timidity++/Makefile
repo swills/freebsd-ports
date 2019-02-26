@@ -1,9 +1,9 @@
 # Created by: Yoichi Asai <yatt@luna2.org>
-# $FreeBSD: head/audio/timidity++/Makefile 458315 2018-01-07 12:03:23Z riggs $
+# $FreeBSD: head/audio/timidity++/Makefile 493867 2019-02-25 14:32:37Z bapt $
 
 PORTNAME=	timidity++
 PORTVERSION=	2.14.0
-PORTREVISION?=	3
+PORTREVISION?=	4
 CATEGORIES+=	audio
 MASTER_SITES=	SF/timidity/TiMidity%2B%2B/TiMidity%2B%2B-${PORTVERSION}
 DISTNAME=	TiMidity++-${PORTVERSION}
@@ -30,14 +30,11 @@ LDFLAGS+=	-L${LOCALBASE}/lib -Wl,--export-dynamic
 PLIST_SUB+=	TIMID_LIBDIR="${TIMID_LIBDIR}" EUCJP_LOCALE="${EUCJP_LOCALE}"
 
 .if !defined(PKGNAMESUFFIX)
-OPTIONS_DEFINE=		DOCS EAWPLUS ESOUND X11
+OPTIONS_DEFINE=		DOCS EAWPLUS X11
 OPTIONS_DEFAULT=	X11
-
+CONFIGURE_ARGS+=	--enable-audio=oss,vorbis
 EAWPLUS_DESC=		Collection of Gravis Ultrasound MIDI patches
 EAWPLUS_RUN_DEPENDS=	eawplus>0:audio/eawplus
-ESOUND_USE=		gnome=esound
-ESOUND_CONFIGURE_ON=	--enable-audio=oss,esd,vorbis
-ESOUND_CONFIGURE_OFF=	--enable-audio=oss,vorbis
 X11_LIB_DEPENDS=	libpng.so:graphics/png
 X11_USE=		xorg=x11,xext
 X11_CONFIGURE_ON=	--with-x --enable-spectrogram --enable-wrd \

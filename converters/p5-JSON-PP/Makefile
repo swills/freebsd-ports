@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-PP/Makefile 486782 2018-12-06 20:30:51Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-PP/Makefile 493907 2019-02-25 23:35:29Z sunpoet $
 
 PORTNAME=	JSON-PP
-PORTVERSION=	2.97001
+PORTVERSION=	4.02
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ISHIGAKI

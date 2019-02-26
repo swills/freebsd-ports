@@ -1,12 +1,12 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/xray_re-tools/Makefile 493572 2019-02-22 14:46:50Z danfe $
+# $FreeBSD: head/games/xray_re-tools/Makefile 493684 2019-02-23 15:09:35Z danfe $
 
 PORTNAME=	xray_re-tools
 DISTVERSION=	g20180902
 CATEGORIES=	games converters
 
 MAINTAINER=	danfe@FreeBSD.org
-COMMENT=	X-Ray engine assets converter (unofficial)
+COMMENT=	X-Ray engine game asset converter (unofficial)
 
 LIB_DEPENDS=	liblzo2.so:archivers/lzo2 \
 		libvorbisfile.so:audio/libvorbis \
@@ -34,6 +34,14 @@ post-patch:
 		${WRKSRC}/sources/utils/converter/opcode/OPC_IceHook.h
 	@${REINPLACE_CMD} -e 's,string& version,string version,' \
 		${WRKSRC}/sources/utils/converter/level_tools.cxx
+	@${REINPLACE_CMD} -e '19s,attenuation1,attenuation2,' \
+		${WRKSRC}/sources/xray_re/xr_d3d_light.cxx
+	@${REINPLACE_CMD} -e '/OGF3_S_SMPARAMS_VERSION/s,||,\&\&,' \
+		${WRKSRC}/sources/xray_re/xr_ogf_v3.cxx
+	@${REINPLACE_CMD} -e 's,mP0,mP1,' \
+		${WRKSRC}/sources/utils/converter/opcode/Ice/IceLSS.h
+	@${REINPLACE_CMD} -e 's,} if,} else if,' \
+		${WRKSRC}/sources/utils/converter/level_mesh_ladders.cxx
 	@${REINPLACE_CMD} -e 's,push_back,this->&,' \
 		${WRKSRC}/sources/xray_re/xr_influence.h
 	@${REINPLACE_CMD} -e 's,type_info& type,std::&,' \
@@ -52,7 +60,7 @@ do-install:
 # Alternative to DOS2UNIX_FILES that preserves original timestamps,
 # to be used together with `-l' switch added to PATCH_ARGS below.
 fixpatches:
-	${FIND} ${FILESDIR} -name patch-* | ${XARGS} ${SED} -i '' \
+	@${FIND} ${FILESDIR} -name patch-* | ${XARGS} ${SED} -i '' \
 		-E 's,[[:cntrl:]]*$$,,'
 
 .include <bsd.port.mk>

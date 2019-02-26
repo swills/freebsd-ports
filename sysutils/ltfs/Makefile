@@ -1,10 +1,10 @@
 # Created by: Kevin Bowling <kbowling@FreeBSD.org>
-# $FreeBSD: head/sysutils/ltfs/Makefile 490697 2019-01-19 02:15:19Z kbowling $
+# $FreeBSD: head/sysutils/ltfs/Makefile 493803 2019-02-24 19:43:41Z kbowling $
 
 PORTNAME=		ltfs
 DISTVERSIONPREFIX=	v
-DISTVERSION=		2.4.1.0
-DISTVERSIONSUFFIX=	-10219
+DISTVERSION=		2.4.1.1
+DISTVERSIONSUFFIX=	-10227
 CATEGORIES=		sysutils
 
 MAINTAINER=	kbowling@FreeBSD.org

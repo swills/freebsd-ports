@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/gmsynth-lv2/Makefile 491229 2019-01-26 04:08:31Z yuri $
+# $FreeBSD: head/audio/gmsynth-lv2/Makefile 493774 2019-02-24 17:30:52Z yuri $
 
 PORTNAME=	gmsynth
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.3.2
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -26,11 +27,11 @@ PLIST_FILES=	lib/lv2/${PORTNAME}.lv2/GeneralUser_LV2.sf2 \
 		lib/lv2/${PORTNAME}.lv2/${PORTNAME}.ttl \
 		lib/lv2/${PORTNAME}.lv2/manifest.ttl
 
-OPTIONS_DEFINE_amd64=	SSE
-OPTIONS_DEFINE_i386=	SSE
-OPTIONS_DEFAULT_amd64=	SSE
-OPTIONS_DEFAULT_i386=	SSE
+OPTIONS_DEFINE_amd64=	SIMD
+OPTIONS_DEFINE_i386=	SIMD
+OPTIONS_DEFAULT_amd64=	SIMD
+OPTIONS_DEFAULT_i386=	SIMD
 
-SSE_MAKE_ENV=		PORT_SIMD_FLAGS="-msse -msse2 -mfpmath=sse"
+SIMD_MAKE_ENV=		PORT_SIMD_FLAGS="-msse -msse2 -mfpmath=sse"
 
 .include <bsd.port.mk>

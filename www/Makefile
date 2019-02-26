@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 493557 2019-02-22 07:48:48Z bapt $
+# $FreeBSD: head/www/Makefile 493878 2019-02-25 15:40:29Z zi $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1027,6 +1027,7 @@
     SUBDIR += p5-Jifty
     SUBDIR += p5-LWP-Authen-Negotiate
     SUBDIR += p5-LWP-Authen-OAuth
+    SUBDIR += p5-LWP-Authen-OAuth2
     SUBDIR += p5-LWP-Authen-Wsse
     SUBDIR += p5-LWP-ConnCache-MaxKeepAliveRequests
     SUBDIR += p5-LWP-MediaTypes
@@ -1862,6 +1863,7 @@
     SUBDIR += py-splinter
     SUBDIR += py-spyne
     SUBDIR += py-sseclient
+    SUBDIR += py-starlette
     SUBDIR += py-surl
     SUBDIR += py-swapper
     SUBDIR += py-textile

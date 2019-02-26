@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 490609 2019-01-17 23:27:11Z swills $
+# $FreeBSD: head/cad/Makefile 493674 2019-02-23 13:49:27Z tobik $
 #
 
     COMMENT = CAD tools
@@ -58,6 +58,7 @@
     SUBDIR += layouteditor
     SUBDIR += ldraw
     SUBDIR += leocad
+    SUBDIR += lepton-eda
     SUBDIR += libopencad
     SUBDIR += librecad
     SUBDIR += libredwg

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/meson.mk 484505 2018-11-09 08:30:05Z koobs $
+# $FreeBSD: head/Mk/Uses/meson.mk 493957 2019-02-26 09:36:29Z 0mp $
 #
 # Provide support for Meson based projects
 #
@@ -13,8 +13,8 @@
 # Variables for ports:
 # MESON_ARGS		- Arguments passed to meson
 #			format: -Denable_foo=true
-# MESON_BUILD_DIR	- Path to the build directory
-#			Default: ${WRKSRC}/_build
+# MESON_BUILD_DIR	- Path to the build directory relative to ${WRKSRC}
+#			Default: _build
 #
 # MAINTAINER: gnome@FreeBSD.org
 

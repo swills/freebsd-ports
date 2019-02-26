@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/gsimplecal/Makefile 416242 2016-06-01 13:15:36Z mat $
+# $FreeBSD: head/deskutils/gsimplecal/Makefile 493815 2019-02-24 21:55:48Z linimon $
 
 PORTNAME=	gsimplecal
 PORTVERSION=	2.1
@@ -15,7 +15,7 @@ GH_ACCOUNT=	dmedvinsky
 
 GNU_CONFIGURE=	yes
 
-USES=		autoreconf gmake pkgconfig
+USES=		autoreconf compiler:c++11-lang gmake pkgconfig
 USE_GNOME=	glib20 gtk30
 
 PLIST_FILES=	bin/gsimplecal \

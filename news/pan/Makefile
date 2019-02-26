@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/news/pan/Makefile 492251 2019-02-05 15:42:54Z tobik $
+# $FreeBSD: head/news/pan/Makefile 493817 2019-02-24 22:00:41Z linimon $
 
 PORTNAME=	pan
 PORTVERSION=	0.145
@@ -20,8 +20,8 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libfreetype.so:print/freetype2 \
 		libgmime-2.6.so:mail/gmime26
 
-USES=		desktop-file-utils gettext-tools:build gmake gnome iconv \
-		localbase pathfix pkgconfig tar:bzip2
+USES=		compiler:c++11-lang desktop-file-utils gettext-tools:build \
+		gmake gnome iconv localbase pathfix pkgconfig tar:bzip2
 USE_GNOME=	cairo gdkpixbuf2 intlhack
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-lgnuregex ${ICONV_LIB}

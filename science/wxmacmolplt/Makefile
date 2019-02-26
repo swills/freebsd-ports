@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/wxmacmolplt/Makefile 482124 2018-10-14 23:15:09Z yuri $
+# $FreeBSD: head/science/wxmacmolplt/Makefile 493855 2019-02-25 12:53:00Z bapt $
 
 PORTNAME=	wxmacmolplt
 DISTVERSIONPREFIX=	v

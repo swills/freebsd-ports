@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 493466 2019-02-20 21:49:09Z kai $
+# $FreeBSD: head/comms/Makefile 493964 2019-02-26 13:28:23Z db $
 #
 
     COMMENT = Communication utilities
@@ -27,6 +27,7 @@
     SUBDIR += conserver
     SUBDIR += conserver-com
     SUBDIR += cqrlog
+    SUBDIR += cubicsdr
     SUBDIR += cutecom
     SUBDIR += cwdaemon
     SUBDIR += cwstudio

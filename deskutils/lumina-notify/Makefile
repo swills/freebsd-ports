@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-notify/Makefile 492105 2019-02-04 09:30:47Z amdmi3 $
+# $FreeBSD: head/deskutils/lumina-notify/Makefile 493827 2019-02-25 00:38:34Z linimon $
 
 PORTNAME=	lumina-notify
 PORTVERSION=	1.4.1
@@ -20,7 +20,7 @@ I18N_DESC=	Install localization files
 
 MAKE_JOBS_UNSAFE=yes
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_QT=		core gui widgets network svg \
 		buildtools_build x11extras concurrent multimedia
 USE_GITHUB=	yes

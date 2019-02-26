@@ -1,8 +1,7 @@
-# $FreeBSD: head/science/dlib-cpp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/dlib-cpp/Makefile 493695 2019-02-23 16:19:52Z arrowd $
 
 PORTNAME=	dlib
-DISTVERSION=	19.13
-PORTREVISION=	2
+DISTVERSION=	19.16
 CATEGORIES=	science devel math
 MASTER_SITES=	http://dlib.net/files/
 PKGNAMESUFFIX=	-cpp

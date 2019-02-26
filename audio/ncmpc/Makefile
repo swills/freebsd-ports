@@ -1,5 +1,5 @@
 # Created by: Mark Reidel <ports@mark.reidel.info>
-# $FreeBSD: head/audio/ncmpc/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/ncmpc/Makefile 493901 2019-02-25 22:07:54Z jbeich $
 
 PORTNAME=	ncmpc
 PORTVERSION=	0.33
@@ -41,8 +41,7 @@ MANPAGES_MESON_TRUE=	manual
 MANPAGES_USES=		python:build
 
 NLS_LDFLAGS=		-lintl
-NLS_MESON_OFF=		-Dnls=disabled
-NLS_MESON_ON=		-Dnls=enabled
+NLS_MESON_ENABLED=	nls
 NLS_USES=		gettext
 
 .include <bsd.port.mk>

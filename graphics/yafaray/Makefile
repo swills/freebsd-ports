@@ -1,14 +1,13 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/yafaray/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/yafaray/Makefile 493693 2019-02-23 16:04:05Z yuri $
 
 PORTNAME=	yafaray
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.3.0-11
-DISTVERSIONSUFFIX=	-g1c0b43a
-PORTREVISION=	2
+DISTVERSION=	3.3.0-15
+DISTVERSIONSUFFIX=	-g67f6586
 CATEGORIES=	graphics
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Montecarlo raytracing engine
 
 LICENSE=	GPLv2 LGPL21
@@ -41,16 +40,9 @@ OPTIONS_DEFINE=	DOCS QT
 OPTIONS_SUB=	yes
 
 QT_DESC=	Enable Qt Gui build
-QT_USES=	qt:4
+QT_USES=	qt:5
 QT_CMAKE_BOOL=	WITH_QT
-QT_USE=		QT=corelib,gui,moc_build,qmake_build,rcc_build,uic_build
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MQT}
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
-.endif
+QT_USE=		QT=core,gui,widgets,qmake_build,buildtools_build,qmake_build
 
 post-install:
 	@${RM} ${STAGEDIR}${DOCSDIR}/LICENSES

@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <stas@core.310.ru>
-# $FreeBSD: head/editors/teco/Makefile 480869 2018-09-28 17:47:39Z fernape $
+# $FreeBSD: head/editors/teco/Makefile 493875 2019-02-25 15:15:54Z linimon $
 
 PORTNAME=	teco
 PORTVERSION=	0398
@@ -13,7 +13,7 @@ COMMENT=	Powerful and compact editor with nongraphical user interface
 
 LICENSE=	BSD3CLAUSE
 
-CFLAGS+=	-Wno-pointer-sign -Wno-expansion-to-defined -Wno-int-to-pointer-cast
+CFLAGS+=	-Wno-pointer-sign -Wno-int-to-pointer-cast
 MAKEFILE=	makefile
 
 WRKSRC=		${WRKDIR}/tecoc${PORTVERSION}

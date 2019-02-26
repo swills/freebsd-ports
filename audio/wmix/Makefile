@@ -1,5 +1,5 @@
 # Created by: Konstantinos Konstantinidis <kkonstan@daemon.gr>
-# $FreeBSD: head/audio/wmix/Makefile 342885 2014-02-05 22:56:43Z bapt $
+# $FreeBSD: head/audio/wmix/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	wmix
 PORTVERSION=	3.1
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Audio mixer for the WindowMaker dock with TV-like OSD
 
 OPTIONS_DEFINE=	DOCS

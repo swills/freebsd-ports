@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/bsdadminscripts/Makefile 441068 2017-05-17 09:24:24Z kami $
+# $FreeBSD: head/ports-mgmt/bsdadminscripts/Makefile 493771 2019-02-24 16:46:33Z meta $
 
 PORTNAME=	bsdadminscripts
 PORTVERSION=	6.1.1
@@ -10,6 +10,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Collection of administration scripts
 
 LICENSE=	BSD2CLAUSE
+
+DEPRECATED=	Upstream stale nearly 10 years, no longer works properly, use ports-mgmt/bsdadminscripts2 instead
+EXPIRATION_DATE=	2019-03-31
 
 NO_BUILD=	yes
 NO_ARCH=	yes

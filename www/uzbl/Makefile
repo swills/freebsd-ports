@@ -1,5 +1,5 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/www/uzbl/Makefile 463122 2018-02-27 12:34:15Z amdmi3 $
+# $FreeBSD: head/www/uzbl/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	uzbl
 PORTVERSION=	0.9.1
@@ -21,6 +21,9 @@ LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2 \
 RUN_DEPENDS=	socat:net/socat \
 		dmenu:x11/dmenu \
 		${PYTHON_PKGNAMEPREFIX}configparser>0:devel/py-configparser@${PY_FLAVOR}
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USES=		gmake pkgconfig python:2.7 desktop-file-utils gettext-runtime shebangfix
 USE_XORG=	x11

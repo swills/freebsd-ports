@@ -1,9 +1,9 @@
 # Created by: mr
-# $FreeBSD: head/x11-toolkits/p5-Wx-GLCanvas/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/p5-Wx-GLCanvas/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	Wx-GLCanvas
 PORTVERSION=	0.09
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-toolkits perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MBARBON

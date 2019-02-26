@@ -1,9 +1,9 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox/Makefile 493343 2019-02-19 00:33:47Z jbeich $
+# $FreeBSD: head/www/firefox/Makefile 493973 2019-02-26 17:03:56Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	65.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \

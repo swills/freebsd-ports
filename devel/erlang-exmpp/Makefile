@@ -1,10 +1,10 @@
 # Created by: Maxim Ignatenko
-# $FreeBSD: head/devel/erlang-exmpp/Makefile 487350 2018-12-13 06:59:34Z tobik $
+# $FreeBSD: head/devel/erlang-exmpp/Makefile 493950 2019-02-26 08:47:42Z tobik $
 
 PORTNAME=	exmpp
 PORTVERSION=	0.9.9
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel net-im
 PKGNAMEPREFIX=	erlang-
 
@@ -15,7 +15,8 @@ BROKEN_SSL=	openssl111
 
 LICENSE=	EPL
 
-BUILD_DEPENDS=	erlc:lang/erlang
+BUILD_DEPENDS=	erlc:lang/erlang \
+		gsed:textproc/gsed
 RUN_DEPENDS=	erl:lang/erlang
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libxml2.so:textproc/libxml2
@@ -33,6 +34,7 @@ CONFIGURE_ARGS+=--enable-static=yes \
 		--disable-warnings \
 		--disable-examples \
 		--enable-escaping-using-cdata
+CONFIGURE_ENV=	ac_cv_path_SED=${LOCALBASE}/bin/gsed
 GNU_CONFIGURE_PREFIX=	"${PREFIX}/lib/erlang/lib"
 PLIST_SUB=	VERSION=${PORTVERSION}
 USES=		autoreconf cpe libtool pkgconfig ssl

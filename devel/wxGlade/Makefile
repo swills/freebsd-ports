@@ -1,8 +1,9 @@
 # Created by: Michal Pasternak <dotz@irc.pl>
-# $FreeBSD: head/devel/wxGlade/Makefile 455817 2017-12-09 07:00:50Z antoine $
+# $FreeBSD: head/devel/wxGlade/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	wxglade
 PORTVERSION=	0.7.2
+PORTREVISION=	1
 CATEGORIES=	devel x11-toolkits python
 MASTER_SITES=	SF
 DISTNAME=	wxGlade-${PORTVERSION}

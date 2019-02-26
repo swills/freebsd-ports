@@ -1,7 +1,8 @@
-# $FreeBSD: head/ftp/filezilla/Makefile 492203 2019-02-05 12:51:05Z pi $
+# $FreeBSD: head/ftp/filezilla/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	filezilla
 PORTVERSION=	3.40.0
+PORTREVISION=	1
 CATEGORIES=	ftp
 MASTER_SITES=	https://download.filezilla-project.org/client/
 DISTNAME=	FileZilla_${PORTVERSION}_src

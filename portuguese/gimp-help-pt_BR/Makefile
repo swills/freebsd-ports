@@ -1,10 +1,10 @@
 # Created by: SimaMoto,RyoTa <liangtai.s16@gmail.com>
-# $FreeBSD: head/portuguese/gimp-help-pt_BR/Makefile 342129 2014-02-01 12:49:26Z makc $
+# $FreeBSD: head/portuguese/gimp-help-pt_BR/Makefile 493763 2019-02-24 15:08:19Z tobik $
 
 CATEGORIES=	portuguese graphics
 
 MAINTAINER=	liangtai.s16@gmail.com
-COMMENT=	The GIMP User Manual in Brazilian Portuguese
+COMMENT=	GIMP User Manual in Brazilian Portuguese
 
 LICENSE=	GFDL
 

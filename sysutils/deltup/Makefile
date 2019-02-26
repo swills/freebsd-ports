@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/sysutils/deltup/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/deltup/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	deltup
 PORTVERSION=	0.4.4
@@ -11,7 +11,7 @@ MASTER_SITES=	http://deltup.org/e107_files/downloads/ \
 		http://www.bzip.org/${BZIP2_103}/:bzip2103src
 DISTFILES+=	${DISTNAME}.tar.gz ${BZIP2_102_SOURCE}:bzip2102src ${BZIP2_103_SOURCE}:bzip2103src
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Source delta update program
 
 RUN_DEPENDS=	bdelta:misc/bdelta \

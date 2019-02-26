@@ -1,9 +1,9 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/x11-toolkits/p5-Wx/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/x11-toolkits/p5-Wx/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	Wx
 PORTVERSION=	0.9932
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-toolkits perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

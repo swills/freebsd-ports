@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/xtrkcad/Makefile 490143 2019-01-13 15:17:23Z tobik $
+# $FreeBSD: head/cad/xtrkcad/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	xtrkcad
 DISTVERSIONPREFIX=	source-
@@ -16,6 +16,9 @@ LIB_DEPENDS=	libcmocka.so:sysutils/cmocka \
 		libfreetype.so:print/freetype2 \
 		libsoup-2.4.so:devel/libsoup \
 		libwebkitgtk-1.0.so:www/webkit-gtk2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USES=		cmake gnome pkgconfig
 USE_GNOME=	gdkpixbuf2 gtk20 cairo

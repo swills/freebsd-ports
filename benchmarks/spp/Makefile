@@ -1,16 +1,22 @@
 # Created by: Lars Eggert <lars@eggert.org>
-# $FreeBSD: head/benchmarks/spp/Makefile 409181 2016-02-19 14:20:59Z amdmi3 $
+# $FreeBSD: head/benchmarks/spp/Makefile 493891 2019-02-25 19:32:23Z lstewart $
 
 PORTNAME=	spp
-PORTVERSION=	0.3.6
+PORTVERSION=	0.4
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://caia.swin.edu.au/tools/spp/downloads/
+MASTER_SITES=	https://bitbucket.org/caia-swin/spp/get/
+DISTNAME=	v${PORTVERSION}
+DIST_SUBDIR=	caia-swin-${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	lstewart@FreeBSD.org
 COMMENT=	Calculates round trip time from pcap files or live capture
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
+
+USES=		tar:bzip2
+BB_TAGNAME=	8b9f676fed0e
+WRKSRC=		${WRKDIR}/caia-swin-${PORTNAME}-${BB_TAGNAME}
 
 PLIST_FILES=	bin/spp man/man1/spp.1.gz
 

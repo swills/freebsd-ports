@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/grim/Makefile 493471 2019-02-20 22:01:57Z jbeich $
+# $FreeBSD: head/x11/grim/Makefile 493901 2019-02-25 22:07:54Z jbeich $
 
 PORTNAME=	grim
 DISTVERSIONPREFIX=	v
@@ -28,12 +28,10 @@ OPTIONS_DEFINE=	JPEG MANPAGES
 OPTIONS_DEFAULT=JPEG MANPAGES
 
 MANPAGES_BUILD_DEPENDS=	scdoc:textproc/scdoc
-MANPAGES_MESON_ON=	-Dman-pages=enabled
-MANPAGES_MESON_OFF=	-Dman-pages=disabled
+MANPAGES_MESON_ENABLED=	man-pages
 MANPAGES_PLIST_FILES=	man/man1/${PORTNAME}.1.gz
 
 JPEG_USES=	jpeg
-JPEG_MESON_ON=	-Djpeg=enabled
-JPEG_MESON_OFF=	-Djpeg=disabled
+JPEG_MESON_ENABLED=	jpeg
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/geany-plugin-markdown/Makefile 487752 2018-12-18 14:34:34Z madpilot $
+# $FreeBSD: head/devel/geany-plugin-markdown/Makefile 493898 2019-02-25 21:27:09Z madpilot $
 
 PORTNAME=	geany-plugin-markdown
 PORTVERSION=	${GEANY_VER}
@@ -7,10 +7,10 @@ CATEGORIES=	devel
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Geany plugin: ${${GEANY_PLUGIN}_DESC}
 
-LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup
+LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
+		libwebkit2gtk-4.0.so:www/webkit2-gtk3
 
-gtk2_LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
-gtk3_LIB_DEPENDS=	libwebkit2gtk-4.0.so:www/webkit2-gtk3
+FLAVORS=	gtk3
 
 OPTIONS_DEFINE=	DOCS
 

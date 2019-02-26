@@ -1,10 +1,10 @@
 # Created by: SimaMoto,RyoTa <liangtai.s4@gmail.com>
-# $FreeBSD: head/misc/gimp-help-nn/Makefile 342129 2014-02-01 12:49:26Z makc $
+# $FreeBSD: head/misc/gimp-help-nn/Makefile 493763 2019-02-24 15:08:19Z tobik $
 
 CATEGORIES=	misc graphics
 
 MAINTAINER=	liangtai.s16@gmail.com
-COMMENT=	The GIMP User Manual in Norwegian:Ninorsk
+COMMENT=	GIMP User Manual in Norwegian:Ninorsk
 
 LICENSE=	GFDL
 

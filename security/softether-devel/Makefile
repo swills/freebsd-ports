@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/softether-devel/Makefile 484921 2018-11-14 13:34:16Z meta $
+# $FreeBSD: head/security/softether-devel/Makefile 493835 2019-02-25 05:07:08Z meta $
 
 PORTNAME=	softether
 DISTVERSION=	4.28-9669-beta
@@ -36,7 +36,7 @@ OPTIONS_DEFINE=	DOCS UNLOCK
 UNLOCK_DESC=	Unlock regional lockout (JP and CN)
 UNLOCK_EXTRA_PATCHES=	${FILESDIR}/extra-patch-unrestrict-enterprise-functions
 
-CONFLICTS_INSTALL=	softether
+CONFLICTS_INSTALL=	softether-4.* softether5
 PORTDOCS=	AUTHORS.TXT ChangeLog LICENSE README THIRD_PARTY.TXT WARNING.TXT
 
 LOGDIR?=	/var/log/softether

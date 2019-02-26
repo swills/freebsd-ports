@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm70/Makefile 493328 2019-02-18 21:52:49Z brooks $
+# $FreeBSD: head/devel/llvm70/Makefile 493890 2019-02-25 19:28:55Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	7.0.1
@@ -180,6 +180,7 @@ EXTRAS_COMMANDS+= \
 EXTRAS_LIBS=	libclangApplyReplacements \
 		libclangChangeNamespace \
 		libclangDaemon \
+		libclangDoc \
 		libclangIncludeFixer \
 		libclangMove \
 		libclangQuery \
@@ -529,7 +530,6 @@ build-plist:
 	    if ($$0 ~ /${COMPILER_RT_PATTERN}/) \
 		{printf "%%%%COMPILER_RT%%%%"} \
 	    if ($$0 ~ /(${EXTRAS_PATTERN})/) {printf "%%%%EXTRAS%%%%"} \
-	    if ($$0 ~ /(libclangDoc.a)/) {printf "%%%%DOCS%%%%"} \
 	    if ($$0 ~ /(lld|wasm-ld)/ && $$0 !~ /(lldb)/) {printf "%%%%LLD%%%%"} \
 	    if ($$0 ~ /(argdumper|lldb|six.py)/) {printf "%%%%LLDB%%%%"} \
 	    if ($$0 ~ /(lib.*omp|omp.h|ompt.h)/) {printf "%%%%OPENMP%%%%"} \

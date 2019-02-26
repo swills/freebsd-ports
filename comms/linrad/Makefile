@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/linrad/Makefile 476184 2018-08-01 16:33:11Z adamw $
+# $FreeBSD: head/comms/linrad/Makefile 493800 2019-02-24 19:12:54Z martymac $
 
 PORTNAME=	linrad
 PORTVERSION=	4.02
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://www.nitehawk.com/sm5bsz/linuxdsp/archive/\
 		http://www.sm5bsz.com/linuxdsp/archive/

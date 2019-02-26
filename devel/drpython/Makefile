@@ -1,9 +1,9 @@
 # Created by: vsevolod
-# $FreeBSD: head/devel/drpython/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/drpython/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	drpython
 PORTVERSION=	3.11.4
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel python
 MASTER_SITES=	SF/${PORTNAME}/DrPython%20%283.x%29/${PORTVERSION}
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}

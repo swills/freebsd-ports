@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/eksctl/Makefile 490764 2019-01-19 22:19:35Z danilo $
+# $FreeBSD: head/sysutils/eksctl/Makefile 493691 2019-02-23 15:58:36Z danilo $
 
 PORTNAME=	eksctl
-PORTVERSION=	0.1.19
+PORTVERSION=	0.1.22
 CATEGORIES=	sysutils
 
 MAINTAINER=	danilo@FreeBSD.org

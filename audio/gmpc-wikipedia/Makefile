@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/audio/gmpc-wikipedia/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/gmpc-wikipedia/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	gmpc-wikipedia
 PORTVERSION=	11.8.16
@@ -18,6 +18,10 @@ LIB_DEPENDS=	libmpd.so:audio/libmpd \
 		libwebkitgtk-1.0.so:www/webkit-gtk2
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gmpc.pc:audio/gmpc
 RUN_DEPENDS=	gmpc:audio/gmpc
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
+
 
 GNU_CONFIGURE=	yes
 USE_GNOME=	intltool glib20 gtk20

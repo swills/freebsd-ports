@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/geany-plugin-webhelper/Makefile 487062 2018-12-09 17:29:13Z madpilot $
+# $FreeBSD: head/devel/geany-plugin-webhelper/Makefile 493898 2019-02-25 21:27:09Z madpilot $
 
 PORTNAME=	geany-plugin-webhelper
 PORTVERSION=	${GEANY_VER}
@@ -6,6 +6,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Geany plugin: ${${GEANY_PLUGIN}_DESC}
+
+DEPRECATED=	Depends on forbidden webkit port
+EXPIRATION_DATE=2019-03-24
 
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup
 

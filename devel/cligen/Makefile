@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cligen/Makefile 475205 2018-07-23 21:37:50Z garga $
+# $FreeBSD: head/devel/cligen/Makefile 493858 2019-02-25 13:24:51Z garga $
 
 PORTNAME=	cligen
-PORTVERSION=	3.7.0
+PORTVERSION=	3.9.0
 CATEGORIES=	devel
 
 MAINTAINER=	dcornejo@netgate.com

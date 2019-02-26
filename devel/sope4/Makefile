@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/sope4/Makefile 492056 2019-02-03 15:37:58Z theraven $
+# $FreeBSD: head/devel/sope4/Makefile 493931 2019-02-26 04:49:45Z acm $
 
 PORTNAME=		sope4
-PORTVERSION=		4.0.4
-PORTREVISION=	2
+PORTVERSION=		4.0.6
 CATEGORIES=		devel gnustep
 MASTER_SITES=		http://www.sogo.nu/files/downloads/SOGo/Sources/
 DISTNAME=		SOPE-${PORTVERSION}

@@ -1,9 +1,8 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/sysutils/conky/Makefile 490255 2019-01-14 13:51:48Z madpilot $
+# $FreeBSD: head/sysutils/conky/Makefile 493754 2019-02-24 11:33:32Z madpilot $
 
 PORTNAME=	conky
-PORTVERSION=	1.11.2
-PORTREVISION=	1
+PORTVERSION=	1.11.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

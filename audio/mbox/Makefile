@@ -1,9 +1,9 @@
 # Created by: Vladimir Osintsev <oc@nm.ru>
-# $FreeBSD: head/audio/mbox/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/audio/mbox/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	mbox
 PORTVERSION=	0.7.2
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mbox.wz.cz/src/
 

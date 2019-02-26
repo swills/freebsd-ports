@@ -1,8 +1,8 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/paexec/Makefile 468910 2018-05-03 02:00:18Z danilo $
+# $FreeBSD: head/devel/paexec/Makefile 493702 2019-02-23 16:28:35Z danilo $
 
 PORTNAME=	paexec
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

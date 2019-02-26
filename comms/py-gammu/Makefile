@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/comms/py-gammu/Makefile 458232 2018-01-06 08:09:12Z vanilla $
+# $FreeBSD: head/comms/py-gammu/Makefile 493737 2019-02-24 03:10:43Z vanilla $
 
 PORTNAME=	gammu
-PORTVERSION=	2.11
+PORTVERSION=	2.12
 CATEGORIES=	comms python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

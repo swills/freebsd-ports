@@ -1,5 +1,5 @@
 # Created by: Lorenzo Salvadore
-# $FreeBSD: head/math/gfanlib/Makefile 492416 2019-02-08 09:27:32Z tobik $
+# $FreeBSD: head/math/gfanlib/Makefile 493820 2019-02-24 22:13:25Z linimon $
 
 PORTNAME=	gfanlib
 DISTVERSION=	0.6.2
@@ -16,11 +16,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	${LOCALBASE}/include/cdd/cdd.h:math/cddlib
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake localbase
 
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include \
-		-I${LOCALBASE}/include/cdd
+CPPFLAGS+=	-I${LOCALBASE}/include/cdd
 
 CONFIGURE_WRKSRC=	${WRKSRC}/gfanlib
 BUILD_WRKSRC=		${WRKSRC}/gfanlib

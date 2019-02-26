@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libcyaml/Makefile 492970 2019-02-15 05:02:44Z yuri $
+# $FreeBSD: head/textproc/libcyaml/Makefile 493687 2019-02-23 15:41:01Z yuri $
 
 PORTNAME=	libcyaml
 DISTVERSION=	0.1.0
@@ -11,7 +11,7 @@ LICENSE=	ISCL
 
 LIB_DEPENDS=	libyaml.so:textproc/libyaml
 
-USES=		gmake localbase:ldflags
+USES=		compiler:c11 gmake localbase:ldflags
 USE_GITLAB=	yes
 GL_SITE=	https://git.zrythm.org
 GL_ACCOUNT=	zrythm

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/vimb-gtk2/Makefile 447081 2017-08-01 22:31:43Z ultima $
+# $FreeBSD: head/www/vimb-gtk2/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME?=	vimb-gtk2
 PORTVERSION=	2.12
@@ -14,6 +14,9 @@ LIB_DEPENDS?=	libwebkitgtk-1.0.so:www/webkit-gtk2 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libsoup-2.4.so:devel/libsoup
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USES=		gmake pkgconfig
 USE_GNOME?=	gtk20 cairo gdkpixbuf2

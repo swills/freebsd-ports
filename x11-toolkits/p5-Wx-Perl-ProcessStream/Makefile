@@ -1,9 +1,9 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/x11-toolkits/p5-Wx-Perl-ProcessStream/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Wx-Perl-ProcessStream/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	Wx-Perl-ProcessStream
 PORTVERSION=	0.32
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-toolkits perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

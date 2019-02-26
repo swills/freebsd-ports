@@ -1,5 +1,5 @@
 # Created by: hamigua <hamigua@cuc.cn>
-# $FreeBSD: head/chinese/reciteword/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/chinese/reciteword/Makefile 493880 2019-02-25 16:16:17Z bapt $
 
 PORTNAME=	reciteword
 PORTVERSION=	0.8.5
@@ -14,6 +14,9 @@ DISTFILES=	${DISTNAME}.tar.bz2 \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Education software to help people to study English
+
+DEPRECATED=	depends on audio/esound
+EXPIRATION_DATE=	2019-03-25
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING

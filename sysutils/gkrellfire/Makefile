@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <bogorodskiy@inbox.ru>
-# $FreeBSD: head/sysutils/gkrellfire/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/sysutils/gkrellfire/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	gkrellfire
 PORTVERSION=	0.4.2
@@ -8,7 +8,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://freenet-homepage.de/thomas-steinke/ \
 		LOCAL/novel
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Gkrellm2 plugin which shows the system load as a flame
 
 BUILD_DEPENDS=	${LOCALBASE}/include/gkrellm2/gkrellm.h:sysutils/gkrellm2

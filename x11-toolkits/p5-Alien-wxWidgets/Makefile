@@ -1,8 +1,9 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/x11-toolkits/p5-Alien-wxWidgets/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/x11-toolkits/p5-Alien-wxWidgets/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	Alien-wxWidgets
 PORTVERSION=	0.69
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

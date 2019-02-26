@@ -1,8 +1,8 @@
 # Created by: Kuang-che Wu <kcwu@csie.org>
-# $FreeBSD: head/converters/convmv/Makefile 445189 2017-07-06 20:58:35Z sunpoet $
+# $FreeBSD: head/converters/convmv/Makefile 493773 2019-02-24 16:56:02Z pi $
 
 PORTNAME=	convmv
-PORTVERSION=	2.03
+PORTVERSION=	2.05
 CATEGORIES=	converters perl5
 MASTER_SITES=	http://www.j3e.de/linux/convmv/ \
 		http://www.sfr-fresh.com/unix/privat/

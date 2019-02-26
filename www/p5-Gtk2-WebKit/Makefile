@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers-Hadley <vvelox@vvelox.net>
-# $FreeBSD: head/www/p5-Gtk2-WebKit/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/www/p5-Gtk2-WebKit/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	Gtk2-WebKit
 PORTVERSION=	0.09
@@ -19,6 +19,9 @@ BUILD_DEPENDS=	p5-Cairo>=0:graphics/p5-Cairo \
 		p5-Gtk2>=0:x11-toolkits/p5-Gtk2 \
 		${LOCALBASE}/libdata/pkgconfig/webkit-1.0.pc:www/webkit-gtk2
 RUN_DEPENDS=	p5-Gtk2>=0:x11-toolkits/p5-Gtk2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 MAKE_JOBS_UNSAFE=	yes
 

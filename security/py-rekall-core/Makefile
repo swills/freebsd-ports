@@ -1,10 +1,10 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-rekall-core/Makefile 470796 2018-05-24 17:26:25Z antoine $
+# $FreeBSD: head/security/py-rekall-core/Makefile 493808 2019-02-24 20:16:08Z antoine $
 
 PORTNAME=	rekall-core
-DISTVERSION=	1.7.2rc1
+DISTVERSION=	1.7.2rc1-52
+DISTVERSIONSUFFIX=	-g0cba831
 CATEGORIES=	security python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	antoine@FreeBSD.org
@@ -34,9 +34,15 @@ RUN_DEPENDS=	cabextract:archivers/cabextract \
 		${PYTHON_PKGNAMEPREFIX}rekall_lib>=0:security/py-rekall_lib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yara>=3.6:security/py-yara@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USES=		python zip
+USE_GITHUB=	yes
+GH_ACCOUNT=	google
+GH_PROJECT=	rekall
+
+USES=		python
 USE_PYTHON=	distutils autoplist
+
+NO_ARCH=	yes
+WRKSRC_SUBDIR=	rekall-core
 
 .include <bsd.port.pre.mk>
 

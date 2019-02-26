@@ -1,9 +1,9 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/audio/mp3blaster/Makefile 492171 2019-02-04 21:50:50Z amdmi3 $
+# $FreeBSD: head/audio/mp3blaster/Makefile 493867 2019-02-25 14:32:37Z bapt $
 
 PORTNAME=	mp3blaster
 PORTVERSION=	3.2.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		gmake localbase:ldflags ncurses
 GNU_CONFIGURE=	yes
 
-OPTIONS_DEFINE=	DOCS ESOUND LIRC NAS SDL SIDPLAY VORBIS
+OPTIONS_DEFINE=	DOCS LIRC NAS SDL SIDPLAY VORBIS
 OPTIONS_DEFAULT=	SIDPLAY VORBIS
 SIDPLAY_DESC=	Sidplayer support
 
@@ -38,9 +38,6 @@ NAS_CONFIGURE_WITH=	nas
 NAS_LIB_DEPENDS=	libaudio.so:audio/nas
 NAS_LDFLAGS=		-laudio
 NAS_USE=		XORG=x11,xt,ice,sm
-
-ESOUND_CONFIGURE_WITH=	esd
-ESOUND_USE=		GNOME=esound
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local/share/mp3blaster/win2koi.tbl|${DATADIR}/charmap/win2koi.tbl|' \

@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/passwordsafe/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/sysutils/passwordsafe/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	passwordsafe
 DISTVERSION=	1.03BETA
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	brnrd@FreeBSD.org

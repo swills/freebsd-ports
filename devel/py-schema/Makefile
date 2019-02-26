@@ -1,13 +1,15 @@
-# $FreeBSD: head/devel/py-schema/Makefile 472463 2018-06-15 16:30:11Z yuri $
+# $FreeBSD: head/devel/py-schema/Makefile 493936 2019-02-26 05:05:53Z yuri $
 
 PORTNAME=	schema
-DISTVERSION=	0.6.8
+DISTVERSION=	0.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Simple data validation library
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}contextlib2>0:devel/py-contextlib2@${PY_FLAVOR}
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE-MIT

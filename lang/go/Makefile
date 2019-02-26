@@ -1,8 +1,8 @@
 # Created by: Devon H. O'Dell <devon.odell@gmail.com>
-# $FreeBSD: head/lang/go/Makefile 491092 2019-01-24 12:54:21Z jlaffaye $
+# $FreeBSD: head/lang/go/Makefile 493967 2019-02-26 13:53:25Z jlaffaye $
 
 PORTNAME=	go
-PORTVERSION=	1.11.5
+PORTVERSION=	1.12
 PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	https://golang.org/dl/

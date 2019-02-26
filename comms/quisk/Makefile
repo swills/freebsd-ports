@@ -1,9 +1,9 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/quisk/Makefile 472607 2018-06-17 14:42:24Z db $
+# $FreeBSD: head/comms/quisk/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	quisk
 PORTVERSION=	4.1.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://james.ahlstrom.name/quisk/ \
 		LOCAL/db

@@ -1,8 +1,8 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-ddt/Makefile 478090 2018-08-26 00:24:24Z cpm $
+# $FreeBSD: head/devel/py-ddt/Makefile 493798 2019-02-24 18:58:22Z cpm $
 
 PORTNAME=	ddt
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

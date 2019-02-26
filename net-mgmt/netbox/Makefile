@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/netbox/Makefile 493470 2019-02-20 22:00:22Z kai $
+# $FreeBSD: head/net-mgmt/netbox/Makefile 493729 2019-02-23 19:54:24Z kai $
 
 PORTNAME=	netbox
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.5.6
+DISTVERSION=	2.5.7
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	kai@FreeBSD.org

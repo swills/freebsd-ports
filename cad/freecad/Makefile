@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/freecad/Makefile 493279 2019-02-18 17:12:36Z antoine $
+# $FreeBSD: head/cad/freecad/Makefile 493811 2019-02-24 20:34:00Z cmt $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17-13541 # git rev-list --count
@@ -32,7 +32,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 RUN_DEPENDS=	pivy-devel>0:graphics/py-pivy-devel@${PY_FLAVOR}
 
 USES=		dos2unix compiler:c++11-lib cmake gl eigen:3 fortran jpeg \
-		python:2.7 localbase qt:5
+		localbase:ldflags python:2.7 localbase qt:5
 USE_GITHUB=	yes
 USE_XORG=	ice sm x11 xext xt
 USE_GL=		gl glu

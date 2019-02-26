@@ -1,8 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/comms/dump1090/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/dump1090/Makefile 493800 2019-02-24 19:12:54Z martymac $
 
 PORTNAME=	dump1090
 PORTVERSION=	20150225
+PORTREVISION=	1
 CATEGORIES=	comms
 
 MAINTAINER=	skreuzer@FreeBSD.org

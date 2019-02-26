@@ -1,5 +1,5 @@
 # Created by: darius@dons.net.au
-# $FreeBSD: head/astro/xplanet/Makefile 459625 2018-01-21 19:50:46Z adridg $
+# $FreeBSD: head/astro/xplanet/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	xplanet
 PORTVERSION=	1.3.0
@@ -7,7 +7,7 @@ PORTREVISION=	11
 CATEGORIES=	astro geography
 MASTER_SITES=	SF
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Draw pictures of the earth textured by an image
 
 GNU_CONFIGURE=	yes

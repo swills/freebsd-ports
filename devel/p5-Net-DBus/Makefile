@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Net-DBus/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Net-DBus/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	Net-DBus
 PORTVERSION=	1.1.0
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Perl extension for the DBus message system
 
 LICENSE=	ART10 GPLv1+

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/codespell/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/codespell/Makefile 493877 2019-02-25 15:27:58Z gjb $
 
 PORTNAME=	codespell
-PORTVERSION=	1.8
+PORTVERSION=	1.14
 CATEGORIES=	textproc
 
 MAINTAINER=	gjb@FreeBSD.org

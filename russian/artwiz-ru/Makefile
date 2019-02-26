@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <bogorodskiy@inbox.ru>
-# $FreeBSD: head/russian/artwiz-ru/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/russian/artwiz-ru/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	artwiz-ru
 PORTVERSION=	20041031
@@ -9,7 +9,7 @@ MASTER_SITES=	http://dev.gentoo.org/~sergey/ \
 		LOCAL/novel
 DISTNAME=	artwiz_ru
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Russian Artwiz fonts
 
 USES=		fonts tar:bzip2

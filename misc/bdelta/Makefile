@@ -1,12 +1,12 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/misc/bdelta/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/misc/bdelta/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	bdelta
 PORTVERSION=	0.3.1
 DISTVERSIONPREFIX=v
 CATEGORIES=	misc devel
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Advanced delta creator, patcher, and library
 
 LICENSE=	MPL20

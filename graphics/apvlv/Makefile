@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/graphics/apvlv/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/apvlv/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	apvlv
 PORTVERSION=	0.1.4
@@ -25,21 +25,18 @@ CMAKE_ARGS+=	-DSYSCONFDIR=${PREFIX}/etc \
 		-DMANDIR=${MANPREFIX}/man \
 		-DDOCDIR=${DOCSDIR} \
 		-DAPVLV_WITH_UMD=OFF \
+		-DAPVLV_WITH_HTML=OFF \
 		-DAPVLV_WITH_TXT=ON
 CFLAGS+=	-pthread
 LDFLAGS+=	-pthread
 WRKSRC=		${WRKDIR}/${DISTNAME}
 
-OPTIONS_DEFINE=	DJVU WEBKIT
+OPTIONS_DEFINE=	DJVU
 
 DJVU_DESC=	DjVu document support
 
 DJVU_CMAKE_ON=	-DAPVLV_WITH_DJVU=ON
 DJVU_CMAKE_OFF=	-DAPVLV_WITH_DJVU=OFF
 DJVU_LIB_DEPENDS=	libdjvulibre.so:graphics/djvulibre
-
-WEBKIT_CMAKE_ON=	-DAPVLV_WITH_HTML=ON
-WEBKIT_CMAKE_OFF=	-DAPVLV_WITH_HTML=OFF
-WEBKIT_LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
 
 .include <bsd.port.mk>

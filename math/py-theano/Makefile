@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/py-theano/Makefile 487682 2018-12-17 13:07:15Z wen $
+# $FreeBSD: head/math/py-theano/Makefile 493965 2019-02-26 13:44:32Z rm $
 
 PORTNAME=	theano
-DISTVERSION=	1.0.3
+DISTVERSION=	1.0.4
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,12 +15,13 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.8.0:science/py-scipy@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.8.0:science/py-scipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR}
 
 USES=		compiler:openmp python
 USE_PYTHON=	concurrent distutils autoplist
-NO_ARCH=	yes
 
+NO_ARCH=	yes
 SUB_FILES=	pkg-message
 SUB_LIST=	CXX=${CXX}
 

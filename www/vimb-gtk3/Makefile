@@ -1,8 +1,11 @@
-# $FreeBSD: head/www/vimb-gtk3/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/vimb-gtk3/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	vimb-gtk3
 
 LIB_DEPENDS=	libwebkitgtk-3.0.so:www/webkit-gtk3
+
+DEPRECATED=	Uses webkit-gtk3 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 MAKE_ENV=	GTK="3"
 USE_GNOME=	gtk30

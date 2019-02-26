@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/x11-wm/obapps/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/x11-wm/obapps/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	obapps
 PORTVERSION=	0.1.7
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF/${PORTNAME}/ \
 		SF/nemysisfreebsdp/:icons

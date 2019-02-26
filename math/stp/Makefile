@@ -1,9 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/math/stp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/stp/Makefile 493698 2019-02-23 16:24:49Z arrowd $
 
 PORTNAME=	stp
-DISTVERSION=	2.3.1
-PORTREVISION=	4
+DISTVERSION=	2.3.2
 PORTEPOCH=	1
 CATEGORIES=	math
 
@@ -25,6 +24,6 @@ USE_PERL5=	build
 USE_LDCONFIG=	yes
 
 post-install:
-	@${MV} ${STAGEDIR}${PREFIX}/bin/stp-2.1.2 ${STAGEDIR}${PREFIX}/bin/stp
+	@${MV} ${STAGEDIR}${PREFIX}/bin/stp-${PORTVERSION} ${STAGEDIR}${PREFIX}/bin/stp
 
 .include <bsd.port.mk>

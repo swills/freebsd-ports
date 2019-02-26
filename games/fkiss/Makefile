@@ -1,9 +1,9 @@
 # Created by: Seiichirou Hiraoka <flathill@flathill.gr.jp>
-# $FreeBSD: head/games/fkiss/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/games/fkiss/Makefile 493867 2019-02-25 14:32:37Z bapt $
 
 PORTNAME=	fkiss
 PORTVERSION=	0.33a
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	http://www2s.biglobe.ne.jp/~yav/soft/fkiss/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/a//}
@@ -34,14 +34,7 @@ PLIST_FILES=	bin/fkiss man/man1/fkiss.1.gz
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
-OPTIONS_DEFINE=	DOCS EXAMPLES ESOUND
-
-ESOUND_USES=	pkgconfig
-ESOUND_USE=	GNOME=esound
-ESOUND_CPPFLAGS=	`pkgconf --cflags-only-I esound`
-ESOUND_LDFLAGS=		`pkgconf --libs-only-L esound `
-ESOUND_CONFIGURE_ENV_OFF=	ac_cv_lib_esd_esd_open_sound=no \
-				ac_cv_header_esd_h=no
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|= @X_LIBS@|= @LDFLAGS@ @X_LIBS@|g' \

@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/editors/wxhexeditor/Makefile 492857 2019-02-13 13:52:53Z danfe $
+# $FreeBSD: head/editors/wxhexeditor/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	wxhexeditor
 PORTVERSION=	0.24
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	SF/${PORTNAME}/wxHexEditor/v${PORTVERSION}%20Beta/
 DISTNAME=	wxHexEditor-v${PORTVERSION}-src

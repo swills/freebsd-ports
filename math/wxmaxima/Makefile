@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/wxmaxima/Makefile 492600 2019-02-10 11:26:24Z pi $
+# $FreeBSD: head/math/wxmaxima/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	wxmaxima
 PORTVERSION=	19.02.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	Version-
 CATEGORIES=	math
 

@@ -1,9 +1,9 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/multimedia/libkate/Makefile 488422 2018-12-26 19:54:04Z bar $
+# $FreeBSD: head/multimedia/libkate/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	libkate
 PORTVERSION=	0.4.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.xiph.org/releases/kate/
 

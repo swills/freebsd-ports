@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5-quickcontrols/Makefile 492793 2019-02-12 17:43:00Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-quickcontrols/Makefile 493895 2019-02-25 20:04:05Z tcberner $
 
 PORTNAME=	quickcontrols
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

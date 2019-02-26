@@ -1,7 +1,8 @@
-# $FreeBSD: head/misc/pyobd/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/misc/pyobd/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	pyobd
 DISTVERSION=	0.9.3
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.obdtester.com/download/
 DISTNAME=	pyobd_${PORTVERSION}

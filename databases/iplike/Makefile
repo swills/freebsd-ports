@@ -1,16 +1,16 @@
 # Created by: Sevan Janiyan <venture37@geeklan.co.uk>
-# $FreeBSD: head/databases/iplike/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/iplike/Makefile 493706 2019-02-23 16:44:39Z danilo $
 
 PORTNAME=	iplike
-PORTVERSION=	2.0.6
-PORTREVISION=	1
+PORTVERSION=	2.1.1
 CATEGORIES=	databases
-MASTER_SITES=	SF/opennms/IPLIKE/stable-2.0/
+MASTER_SITES=	SF/opennms/IPLIKE/stable-2.1/
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	C implementation of the OpenNMS iplike stored procedure
 
 USES=		libtool pgsql
+
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 SUB_FILES=	pkg-message

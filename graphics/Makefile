@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 493351 2019-02-19 04:47:14Z yuri $
+# $FreeBSD: head/graphics/Makefile 493724 2019-02-23 18:52:42Z bapt $
 #
 
     COMMENT = Graphics tools and libraries
@@ -273,7 +273,6 @@
     SUBDIR += glexcess
     SUBDIR += glfw
     SUBDIR += glfw2
-    SUBDIR += glitz
     SUBDIR += gliv
     SUBDIR += glosm
     SUBDIR += glpng

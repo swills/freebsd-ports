@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/kore/Makefile 490926 2019-01-22 05:42:15Z tobik $
+# $FreeBSD: head/devel/kore/Makefile 493755 2019-02-24 12:07:04Z tobik $
 
 PORTNAME=	kore
 PORTVERSION=	3.2.2
@@ -12,12 +12,10 @@ COMMENT=	Web application framework for writing web APIs in C
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to compile: cc1: error: -Werror=c11-extensions: No option -Wc11-extensions
-
 FLAVORS=	default notls
 notls_PKGNAMESUFFIX=	-notls
 
-USES=		compiler gmake ssl
+USES=		compiler:c11 gmake ssl
 
 CFLAGS+=	${CFLAGS_${CHOSEN_COMPILER_TYPE}} -I${OPENSSLINC}
 CFLAGS_clang=	-Wno-error=c11-extensions # 12.0 + -pedantic

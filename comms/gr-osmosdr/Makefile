@@ -1,10 +1,10 @@
-# $FreeBSD: head/comms/gr-osmosdr/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/comms/gr-osmosdr/Makefile 493800 2019-02-24 19:12:54Z martymac $
 
 PORTNAME=	gr-osmosdr
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.1.4-99
 DISTVERSIONSUFFIX=	-gc98be5d
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	comms hamradio
 

@@ -1,8 +1,8 @@
 # Created by: dbader@eece.unm.edu
-# $FreeBSD: head/biology/paml/Makefile 468355 2018-04-26 15:36:30Z jrm $
+# $FreeBSD: head/biology/paml/Makefile 493971 2019-02-26 15:12:42Z jrm $
 
 PORTNAME=	paml
-PORTVERSION=	4.9h
+PORTVERSION=	4.9i
 CATEGORIES=	biology
 MASTER_SITES=	http://abacus.gene.ucl.ac.uk/software/
 DISTNAME=	${PORTNAME}${DISTVERSION}
@@ -13,6 +13,7 @@ COMMENT=	Phylogenetic Analysis by Maximum Likelihood (PAML)
 LICENSE=	GPLv3
 
 USES=		dos2unix gmake tar:tgz
+
 DOS2UNIX_GLOB=	*.HKYG5 *.aa *.c *.ctl *.dat *.nexus *.nuc *.phy *.result *.tre \
 		*.trees *.txt *.xml paupblock paupend
 

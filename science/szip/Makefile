@@ -1,13 +1,12 @@
 # Created by: glewis
-# $FreeBSD: head/science/szip/Makefile 490210 2019-01-13 20:25:41Z sunpoet $
+# $FreeBSD: head/science/szip/Makefile 493780 2019-02-24 17:56:03Z sunpoet $
 
 PORTNAME=	szip
-PORTVERSION=	2.1
-PORTREVISION=	3
+PORTVERSION=	2.1.1
 CATEGORIES=	science archivers
 MASTER_SITES=	https://support.hdfgroup.org/ftp/lib-external/szip/${PORTVERSION}/src/ \
 		https://support.hdfgroup.org/ftp/lib-external/szip/previous/${PORTVERSION}/src/ \
-		LOCAL/sunpoet/szip
+		LOCAL/sunpoet
 PKGNAMEPREFIX=	hdf-
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -20,11 +19,12 @@ LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
 CONFLICTS_INSTALL=	libaec
 
+USES=		libtool
+
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 LIBS+=		-lm
 TEST_TARGET=	check
 USE_LDCONFIG=	yes
-USES=		libtool
 
 .include <bsd.port.mk>

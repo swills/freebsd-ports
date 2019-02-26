@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/igv/Makefile 486619 2018-12-04 17:53:46Z yuri $
+# $FreeBSD: head/biology/igv/Makefile 493730 2019-02-23 21:23:51Z yuri $
 
 PORTNAME=	igv
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.4.16
+DISTVERSION=	2.4.19
 CATEGORIES=	biology java
 MASTER_SITES=	http://software.broadinstitute.org/software/igv/sites/cancerinformatics.org.igv/files/images/:img
 DISTFILES=	tools.png:img

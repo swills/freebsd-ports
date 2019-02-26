@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/graphics/variety/Makefile 484640 2018-11-10 19:57:07Z kwm $
+# $FreeBSD: head/graphics/variety/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	variety
 PORTVERSION=	0.5.4
@@ -35,6 +35,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.3.2:www/py-beautifulsoup@${
 		pango>=1.36.8:x11-toolkits/pango \
 		webkit-gtk3>=2.4.8:www/webkit-gtk3 \
 		yelp>=3.14.1:x11/yelp
+
+DEPRECATED=	Uses webkit-gtk3 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 SHEBANG_FILES=	bin/variety data/scripts/*
 

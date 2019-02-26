@@ -1,8 +1,9 @@
-# $FreeBSD: head/misc/soapysdr-rtlsdr/Makefile 492437 2019-02-08 15:07:58Z db $
+# $FreeBSD: head/misc/soapysdr-rtlsdr/Makefile 493800 2019-02-24 19:12:54Z martymac $
 
 PORTNAME=	SoapyRTLSDR
 DISTVERSIONPREFIX=	soapy-rtlsdr-
 DISTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	misc hamradio
 
 MAINTAINER=	hamradio@FreeBSD.org

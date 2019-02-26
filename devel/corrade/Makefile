@@ -1,9 +1,12 @@
-# $FreeBSD: head/devel/corrade/Makefile 493329 2019-02-18 22:01:50Z yuri $
+# $FreeBSD: head/devel/corrade/Makefile 493689 2019-02-23 15:48:12Z yuri $
 
 PORTNAME=	corrade
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2019.01
 CATEGORIES=	devel
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/
+PATCHFILES=	7a84146a077551f6c1e985a153642fb50d3e72ef.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	C++11/C++14 multiplatform utility library

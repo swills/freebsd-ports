@@ -1,9 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/dbus/Makefile 438705 2017-04-17 15:38:36Z miwi $
+# $FreeBSD: head/devel/dbus/Makefile 493840 2019-02-25 07:06:21Z kwm $
 
 PORTNAME=	dbus
-PORTVERSION=	1.10.16
-PORTREVISION=	1
+PORTVERSION=	1.12.12
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus/
 
@@ -16,7 +15,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 PORTSCOUT=	limitw:1,even
 
-USES=		cpe gmake libtool localbase pathfix python:build shebangfix
+USES=		cpe gmake libtool localbase pkgconfig python:build shebangfix
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--with-test-socket-dir=${WRKDIR} \
@@ -57,5 +56,9 @@ post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${MV} ${STAGEDIR}${DOCSDIR}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 	${RM} -r ${STAGEDIR}${DOCSDIR}
+.for file in session.conf system.conf
+	@cd ${STAGEDIR}${ETCDIR}-1/ && \
+		${MV} ${file} ${file}.sample
+.endfor
 
 .include <bsd.port.mk>

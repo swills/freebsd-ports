@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/lang/arena/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/arena/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	arena
 PORTVERSION=	0.9.13
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://www.minimalinux.org/arena/
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C-like scripting language with automatic memory management
 
 GNU_CONFIGURE=	yes

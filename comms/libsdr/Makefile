@@ -1,9 +1,10 @@
 # Created by: Jeffrey Baitis <jeff@baitis.net>
-# $FreeBSD: head/comms/libsdr/Makefile 488710 2018-12-30 12:37:02Z linimon $
+# $FreeBSD: head/comms/libsdr/Makefile 493800 2019-02-24 19:12:54Z martymac $
 
 PORTNAME=	libsdr
 PORTVERSION=	0.1.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 
 MAINTAINER=	jeff@baitis.net

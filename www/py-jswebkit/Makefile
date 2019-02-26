@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/www/py-jswebkit/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/py-jswebkit/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	jswebkit
 PORTVERSION=	0.0.3
@@ -13,6 +13,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	WebKit/JavaScriptCore Python bindings
 
 LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USES=		pkgconfig python:2.7
 USE_PYTHON=	distutils autoplist cython cython_run

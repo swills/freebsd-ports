@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/0ad/Makefile 489466 2019-01-06 12:06:39Z antoine $
+# $FreeBSD: head/games/0ad/Makefile 493942 2019-02-26 08:04:24Z madpilot $
 
 PORTNAME=	0ad
 PORTVERSION=	0.0.23b
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://releases.wildfiregames.com/ \
 		SF/zero-ad/releases
@@ -28,7 +29,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 
 USES=		compiler:c++11-lib desktop-file-utils dos2unix gmake iconv jpeg openal:al \
 		pkgconfig python:2.7,build tar:xz
-USE_GNOME=	libxml2 gtk20
+USE_GNOME=	libxml2
 USE_GL=		gl
 USE_SDL=	sdl2
 USE_XORG=	x11 xcursor

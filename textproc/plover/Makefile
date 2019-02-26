@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/plover/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/plover/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	plover
 PORTVERSION=	2.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	http://launchpadlibrarian.net/88624187/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/clixon/Makefile 484405 2018-11-07 19:17:02Z garga $
+# $FreeBSD: head/devel/clixon/Makefile 493859 2019-02-25 13:25:33Z garga $
 
 PORTNAME=	clixon
-PORTVERSION=	3.8.0
+PORTVERSION=	3.9.0
 CATEGORIES=	devel
 
 MAINTAINER=	dcornejo@netgate.com
@@ -12,6 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 LIB_DEPENDS=	libcligen.so:devel/cligen \
 		libfcgi.so:www/fcgi
+BUILD_DEPENDS=	cligen>=3.9.0:devel/cligen
 
 USES=		autoreconf bison gmake
 

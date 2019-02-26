@@ -1,8 +1,8 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/archivers/gtar/Makefile 490146 2019-01-13 15:33:22Z naddy $
+# $FreeBSD: head/archivers/gtar/Makefile 493902 2019-02-25 22:14:46Z naddy $
 
 PORTNAME=	tar
-PORTVERSION=	1.31
+PORTVERSION=	1.32
 CATEGORIES=	archivers sysutils
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	g

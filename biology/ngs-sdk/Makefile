@@ -1,7 +1,7 @@
-# $FreeBSD: head/biology/ngs-sdk/Makefile 482381 2018-10-18 21:38:21Z yuri $
+# $FreeBSD: head/biology/ngs-sdk/Makefile 493731 2019-02-23 21:55:55Z yuri $
 
 PORTNAME=	ngs
-DISTVERSION=	2.9.3
+DISTVERSION=	2.9.4
 CATEGORIES=	biology
 PKGNAMESUFFIX=	-sdk
 

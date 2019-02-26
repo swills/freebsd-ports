@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/swaylock/Makefile 492205 2019-02-05 12:52:03Z jbeich $
+# $FreeBSD: head/x11/swaylock/Makefile 493901 2019-02-25 22:07:54Z jbeich $
 
 PORTNAME=	swaylock
 DISTVERSION=	1.3
@@ -29,12 +29,10 @@ OPTIONS_DEFINE=	MANPAGES PIXBUF
 OPTIONS_DEFAULT=MANPAGES PIXBUF
 
 MANPAGES_BUILD_DEPENDS=	scdoc:textproc/scdoc
-MANPAGES_MESON_ON=	-Dman-pages=enabled
-MANPAGES_MESON_OFF=	-Dman-pages=disabled
+MANPAGES_MESON_ENABLED=	man-pages
 MANPAGES_PLIST_FILES=	man/man1/${PORTNAME}.1.gz
 
 PIXBUF_USE=		GNOME=gdkpixbuf2
-PIXBUF_MESON_ON=	-Dgdk-pixbuf=enabled
-PIXBUF_MESON_OFF=	-Dgdk-pixbuf=disabled
+PIXBUF_MESON_ENABLED=	gdk-pixbuf
 
 .include <bsd.port.mk>

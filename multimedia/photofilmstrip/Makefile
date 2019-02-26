@@ -1,9 +1,9 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/photofilmstrip/Makefile 493646 2019-02-23 06:31:52Z tobik $
+# $FreeBSD: head/multimedia/photofilmstrip/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	photofilmstrip
 PORTVERSION=	3.0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia python
 MASTER_SITES=	SF/photostoryx/${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

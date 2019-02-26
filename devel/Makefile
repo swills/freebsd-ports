@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 493587 2019-02-22 19:54:01Z sunpoet $
+# $FreeBSD: head/devel/Makefile 493799 2019-02-24 19:02:37Z yuri $
 #
 
     COMMENT = Development utilities
@@ -506,7 +506,6 @@
     SUBDIR += editline
     SUBDIR += efivar
     SUBDIR += efl
-    SUBDIR += eggdbus
     SUBDIR += egypt
     SUBDIR += eiffelstudio
     SUBDIR += elf
@@ -933,6 +932,7 @@
     SUBDIR += horde-whups
     SUBDIR += hp48cc
     SUBDIR += hp48xgcc
+    SUBDIR += hpx
     SUBDIR += hs-Boolean
     SUBDIR += hs-BoundedChan
     SUBDIR += hs-ConfigFile
@@ -1457,7 +1457,6 @@
     SUBDIR += libfwsi
     SUBDIR += libg19
     SUBDIR += libg19draw
-    SUBDIR += libgalago
     SUBDIR += libgamepad
     SUBDIR += libgdata
     SUBDIR += libgee
@@ -1698,6 +1697,7 @@
     SUBDIR += lmdbg
     SUBDIR += lndir
     SUBDIR += lnphost
+    SUBDIR += loccount
     SUBDIR += lockfree-malloc
     SUBDIR += log4c
     SUBDIR += log4cplus
@@ -1772,6 +1772,7 @@
     SUBDIR += mercurialeclipse
     SUBDIR += mergify
     SUBDIR += meson
+    SUBDIR += mill
     SUBDIR += mime
     SUBDIR += mimir
     SUBDIR += mingw32-bin-msvcrt

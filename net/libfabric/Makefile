@@ -1,10 +1,13 @@
-# $FreeBSD: head/net/libfabric/Makefile 484440 2018-11-08 08:54:36Z yuri $
+# $FreeBSD: head/net/libfabric/Makefile 493938 2019-02-26 05:24:11Z yuri $
 
 PORTNAME=	libfabric
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.6.2
-PORTREVISION=	1
+DISTVERSION=	1.7.0rc3-281
+DISTVERSIONSUFFIX=	-g85a686840
 CATEGORIES=	net
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/
+PATCHFILES=	a088f58fac6708b42b810f3746f538ab7452eeb2.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Open Fabric Interfaces

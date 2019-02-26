@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 493613 2019-02-22 19:58:40Z sunpoet $
+# $FreeBSD: head/misc/Makefile 493778 2019-02-24 17:55:51Z sunpoet $
 #
 
     COMMENT = Miscellaneous utilities
@@ -376,6 +376,7 @@
     SUBDIR += py-fast-histogram
     SUBDIR += py-fuzzy
     SUBDIR += py-glance
+    SUBDIR += py-huepy
     SUBDIR += py-kartograph
     SUBDIR += py-molequeue
     SUBDIR += py-orange3-associate

@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <bogorodskiy@inbox.ru>
-# $FreeBSD: head/x11-clocks/alltraxclock/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-clocks/alltraxclock/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	alltraxclock
 PORTVERSION=	2.0.2
@@ -9,7 +9,7 @@ MASTER_SITES=	http://perso.wanadoo.fr/alltrax/ \
 		LOCAL/novel
 DISTNAME=	${PORTNAME}2_0.2-1
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Analog clock plugin for gkrellm2
 
 BUILD_DEPENDS=	${LOCALBASE}/include/gkrellm2/gkrellm.h:sysutils/gkrellm2

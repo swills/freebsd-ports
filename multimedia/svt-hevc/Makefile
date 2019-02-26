@@ -1,9 +1,14 @@
-# $FreeBSD: head/multimedia/svt-hevc/Makefile 493477 2019-02-20 23:59:19Z jbeich $
+# $FreeBSD: head/multimedia/svt-hevc/Makefile 493745 2019-02-24 07:07:05Z jbeich $
 
 PORTNAME=	svt-hevc
 DISTVERSIONPREFIX=	v
-PORTVERSION=	1.3.0
+DISTVERSION=	1.3.0
+PORTREVISION=	2
 CATEGORIES=	multimedia
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES+=	ad0942db4ce4.patch:-p1
+PATCHFILES+=	87e168e78620.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Scalable HEVC encoder

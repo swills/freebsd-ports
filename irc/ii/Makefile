@@ -1,8 +1,8 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/irc/ii/Makefile 449678 2017-09-12 09:01:49Z amdmi3 $
+# $FreeBSD: head/irc/ii/Makefile 493896 2019-02-25 20:22:17Z sbz $
 
 PORTNAME=	ii
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 CATEGORIES=	irc
 MASTER_SITES=	http://dl.suckless.org/tools/ \
 		LOCAL/sbz
@@ -15,9 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PLIST_FILES=	bin/ii man/man1/ii.1.gz
 PORTDOCS=	CHANGES FAQ README
-PORTEXAMPLES=	query.sh
 
-OPTIONS_DEFINE=	DOCS EXAMPLES
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
@@ -26,9 +25,5 @@ do-install:
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
-
-do-install-EXAMPLES-on:
-	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	${INSTALL_DATA} ${WRKSRC}/${PORTEXAMPLES} ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

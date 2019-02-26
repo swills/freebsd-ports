@@ -1,9 +1,9 @@
 # Created by: shurd
-# $FreeBSD: head/comms/svxlink/Makefile 490143 2019-01-13 15:17:23Z tobik $
+# $FreeBSD: head/comms/svxlink/Makefile 493800 2019-02-24 19:12:54Z martymac $
 
 PORTNAME?=	svxlink
 PORTVERSION=	15.11
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	comms hamradio
 
 MAINTAINER=	hamradio@FreeBSD.org

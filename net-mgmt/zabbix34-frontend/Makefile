@@ -1,5 +1,5 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix34-frontend/Makefile 486751 2018-12-06 11:22:12Z rene $
+# $FreeBSD: head/net-mgmt/zabbix34-frontend/Makefile 493667 2019-02-23 12:40:37Z tobik $
 
 PORTNAME=	zabbix34
 CATEGORIES=	net-mgmt
@@ -16,17 +16,11 @@ USE_PHP=	bcmath ctype dom gd gettext json ldap mbstring pcre \
 		session simplexml snmp sockets xml xmlreader xmlwriter
 USES+=		php:web
 
-OPTIONS_DEFINE=		MYSQL MYSQLI PGSQL SQLITE ORACLE
+OPTIONS_DEFINE=		MYSQLI PGSQL SQLITE ORACLE
 OPTIONS_DEFAULT=	MYSQLI
 MYSQLI_DESC=		MySQLI backend
 
-MYSQL_VARS=	IGNORE_WITH_PHP+="71 72 73"
-
 .include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MMYSQL}
-USE_PHP+=	mysql
-.endif
 
 .if ${PORT_OPTIONS:MMYSQLI}
 USE_PHP+=	mysqli

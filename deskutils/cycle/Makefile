@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/deskutils/cycle/Makefile 456466 2017-12-16 11:45:19Z danfe $
+# $FreeBSD: head/deskutils/cycle/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	cycle
 PORTVERSION=	0.3.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	deskutils biology python
 MASTER_SITES=	SF
 

@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit-gtk2/Makefile 487702 2018-12-17 18:44:31Z linimon $
+# $FreeBSD: head/www/webkit-gtk2/Makefile 493807 2019-02-24 20:13:10Z kwm $
 
 PORTNAME=	webkit
 PORTVERSION=	2.4.11
@@ -29,6 +29,10 @@ LIB_DEPENDS=	libenchant.so:textproc/enchant \
 		libgstbase-1.0.so:multimedia/gstreamer1 \
 		libgstreamer-1.0.so:multimedia/gstreamer1
 RUN_DEPENDS=	geoclue>=0:net/geoclue
+
+DEPRECATED=	Known and unfixed security issues
+EXPIRATION_DATE=2019-03-24
+FORBIDDEN=	Known and unfixed security issues
 
 PORTSCOUT=	limit:^2\.4\.
 

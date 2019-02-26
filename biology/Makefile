@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/Makefile 493444 2019-02-20 20:46:37Z sunpoet $
+# $FreeBSD: head/biology/Makefile 493842 2019-02-25 07:56:45Z yuri $
 #
 
     COMMENT = Biology
 
+    SUBDIR += abyss
     SUBDIR += artemis
     SUBDIR += avida
     SUBDIR += babel

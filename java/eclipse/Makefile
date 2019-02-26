@@ -1,5 +1,5 @@
 # Created by: Jimmy Kelley <ljboiler@gmail.com>
-# $FreeBSD: head/java/eclipse/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/java/eclipse/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	eclipse
 PORTVERSION=	4.6
@@ -18,6 +18,9 @@ LICENSE=	EPL
 BUILD_DEPENDS=	${LOCALBASE}/share/java/maven33/bin/mvn:devel/maven33
 LIB_DEPENDS=	libcairo.so:graphics/cairo \
 		libwebkitgtk-1.0.so:www/webkit-gtk2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 ONLY_FOR_ARCHS=	i386 amd64
 CONFLICTS_INSTALL=	eclipse

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/bsd-plotutils/Makefile 492648 2019-02-10 21:17:34Z swills $
+# $FreeBSD: head/graphics/bsd-plotutils/Makefile 493823 2019-02-25 00:10:51Z linimon $
 
 PORTNAME=	bsd-plotutils
 DISTVERSION=	1.4.2
@@ -36,6 +36,7 @@ post-patch:
 .if !${PORT_OPTIONS:MPYTHON}
 	@${REINPLACE_CMD} -e "s/py27plot//g" ${WRKSRC}/libplot/bindings/Makefile
 .endif
+	@${REINPLACE_CMD} -e '/#pragma GCC diagnostic/d' ${WRKSRC}/graph/graph.c
 
 .if !${PORT_OPTIONS:MFORTRAN}
 	@${REINPLACE_CMD} -e "s/f77plot//g" ${WRKSRC}/libplot/bindings/Makefile

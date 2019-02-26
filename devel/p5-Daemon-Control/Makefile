@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Daemon-Control/Makefile 493449 2019-02-20 20:47:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Daemon-Control/Makefile 493783 2019-02-24 17:56:18Z sunpoet $
 
 PORTNAME=	Daemon-Control
-PORTVERSION=	0.001009
+PORTVERSION=	0.001010
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

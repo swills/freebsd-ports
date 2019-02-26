@@ -1,5 +1,5 @@
 # Created by: Michael Elbel (me)
-# $FreeBSD: head/comms/seyon/Makefile 415130 2016-05-13 18:45:43Z bapt $
+# $FreeBSD: head/comms/seyon/Makefile 493766 2019-02-24 15:29:38Z tobik $
 
 PORTNAME=	seyon
 PORTVERSION=	2.20c
@@ -12,6 +12,8 @@ COMMENT=	Communications package for the X Window system
 
 USES=		imake
 USE_XORG=	x11 xext xpm xmu xaw xt sm ice
+
+MAKE_JOBS_UNSAFE=	yes
 
 PLIST_FILES=	bin/seyon lib/X11/app-defaults/Seyon \
 		lib/X11/app-defaults/Seyon-color lib/X11/seyon.help \

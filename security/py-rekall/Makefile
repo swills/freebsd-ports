@@ -1,11 +1,10 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-rekall/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/security/py-rekall/Makefile 493808 2019-02-24 20:16:08Z antoine $
 
 PORTNAME=	rekall
-DISTVERSION=	1.7.2rc1
-PORTREVISION=	2
+DISTVERSION=	1.7.2rc1-52
+DISTVERSIONSUFFIX=	-g0cba831
 CATEGORIES=	security python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	antoine@FreeBSD.org
@@ -17,10 +16,13 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rekall_lib>=1.7.1:security/py-rekall_lib@${P
 		${PYTHON_PKGNAMEPREFIX}rekall-core>=1.7.1:security/py-rekall-core@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ipython5>=5.0.0:devel/ipython5@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USES=		python shebangfix zip
+USE_GITHUB=	yes
+GH_ACCOUNT=	google
+
+USES=		python shebangfix
 USE_PYTHON=	distutils autoplist
 
+NO_ARCH=	yes
 python_OLD_CMD=	python
 SHEBANG_FILES=	tools/devel/autopep8.sh \
 		tools/devel/presubmit.sh \

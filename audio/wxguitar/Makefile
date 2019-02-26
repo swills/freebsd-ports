@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/wxguitar/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/wxguitar/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	wxguitar
 PORTVERSION=	1.01
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	audio
 MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/
 

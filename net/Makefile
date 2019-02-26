@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 493377 2019-02-19 19:46:44Z sunpoet $
+# $FreeBSD: head/net/Makefile 493721 2019-02-23 17:36:07Z tcberner $
 #
 
     COMMENT = Networking tools
@@ -361,6 +361,7 @@
     SUBDIR += libbgpdump
     SUBDIR += libcapn
     SUBDIR += libcmis
+    SUBDIR += libcoap
     SUBDIR += libdmapsharing
     SUBDIR += libdnet
     SUBDIR += libexosip2
@@ -372,7 +373,7 @@
     SUBDIR += libgrss
     SUBDIR += libgweather
     SUBDIR += libilbc
-    SUBDIR += libjson-rpc-cpp 
+    SUBDIR += libjson-rpc-cpp
     SUBDIR += libkgapi
     SUBDIR += libksieve
     SUBDIR += libkvkontakte

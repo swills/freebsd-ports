@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/freedv/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/comms/freedv/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	freedv
 DISTVERSION=	1.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 MASTER_SITES=	https://hobbes1069.fedorapeople.org/freetel/freedv/
 

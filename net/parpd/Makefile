@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/parpd/Makefile 491134 2019-01-25 08:22:47Z tobik $
+# $FreeBSD: head/net/parpd/Makefile 493760 2019-02-24 13:43:29Z kai $
 
 PORTNAME=	parpd
-DISTVERSION=	1.1
+DISTVERSION=	1.2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.iks-jena.de/pub/mitarb/lutz/parpd/
 
@@ -13,8 +13,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		tar:tgz
 USE_RC_SUBR=	parpd
-NO_TEST=	yes
 
+NO_TEST=	yes
 PLIST_FILES=	sbin/parpd man/man8/parpd.8.gz
 
 do-install:

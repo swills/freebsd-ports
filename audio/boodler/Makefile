@@ -1,9 +1,9 @@
 # Created by: Dan Pelleg <daniel+boodler@pelleg.org>
-# $FreeBSD: head/audio/boodler/Makefile 480069 2018-09-18 19:20:17Z emaste $
+# $FreeBSD: head/audio/boodler/Makefile 493867 2019-02-25 14:32:37Z bapt $
 
 PORTNAME=	boodler
 PORTVERSION=	1.5.3
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	audio
 MASTER_SITES=	http://www.eblong.com/zarf/boodler/
 DISTFILES=	boodler-153.tar.gz boodler-snd-021902.tar.gz
@@ -30,13 +30,10 @@ SUB_LIST=	PYTHON_CMD=${PYTHON_CMD}
 
 OPTIONS_DEFINE=		DOCS
 OPTIONS_SINGLE=		AUDIO
-OPTIONS_SINGLE_AUDIO=	ESOUND FILE OSS
+OPTIONS_SINGLE_AUDIO=	FILE OSS
 OPTIONS_DEFAULT=	OSS
 
 AUDIO_DESC=		Audio backend
-
-ESOUND_LIB_DEPENDS=	libesd.so:audio/esound
-ESOUND_CONFIGURE_ON=	--driver esd
 
 FILE_DESC=		Write raw PCM data to a file
 FILE_CONFIGURE_ON=	--driver file

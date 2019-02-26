@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/www/py-webkitgtk/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/py-webkitgtk/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	webkitgtk
 PORTVERSION=	1.1.8
@@ -16,6 +16,9 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

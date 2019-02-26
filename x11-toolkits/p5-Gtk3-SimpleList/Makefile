@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Gtk3-SimpleList/Makefile 471554 2018-06-04 15:12:04Z danilo $
+# $FreeBSD: head/x11-toolkits/p5-Gtk3-SimpleList/Makefile 493679 2019-02-23 14:29:54Z danilo $
 
 PORTNAME=	Gtk3-SimpleList
-PORTVERSION=	0.17
+PORTVERSION=	0.18
 CATEGORIES=	x11-toolkits perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TVIGNAUD

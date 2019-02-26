@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 493501 2019-02-21 13:44:45Z adridg $
+# $FreeBSD: head/net-im/Makefile 493821 2019-02-24 22:18:32Z ashish $
 #
 
     COMMENT = Instant messaging
@@ -12,6 +12,7 @@
     SUBDIR += corebird
     SUBDIR += cutegram
     SUBDIR += diligent
+    SUBDIR += dino
     SUBDIR += echat
     SUBDIR += ejabberd
     SUBDIR += ekiga
@@ -63,7 +64,6 @@
     SUBDIR += libsignon-glib
     SUBDIR += libstrophe
     SUBDIR += libtelepathy
-    SUBDIR += libyahoo2
     SUBDIR += licq
     SUBDIR += licq-icq
     SUBDIR += licq-jabber
@@ -144,7 +144,6 @@
     SUBDIR += py-unmessage
     SUBDIR += py-xmpppy
     SUBDIR += py-xmpppy-irc
-    SUBDIR += py-xmpppy-yahoo
     SUBDIR += qTox
     SUBDIR += qq
     SUBDIR += quaternion

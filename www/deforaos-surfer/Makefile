@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/www/deforaos-surfer/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/deforaos-surfer/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	surfer
 PORTVERSION=	0.2.9
@@ -20,6 +20,9 @@ LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem \
 		libgnet-2.0.so:net/gnet2 \
 		libwebkitgtk-1.0.so:www/webkit-gtk2
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USE_GNOME=	gtk20
 USES=		desktop-file-utils pkgconfig

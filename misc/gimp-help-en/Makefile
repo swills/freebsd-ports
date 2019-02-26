@@ -1,5 +1,5 @@
 # Created by: SimaMoto,RyoTa <liangtai.s4@gmail.com>
-# $FreeBSD: head/misc/gimp-help-en/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/misc/gimp-help-en/Makefile 493763 2019-02-24 15:08:19Z tobik $
 
 PORTNAME=	gimp-help
 PORTVERSION=	2.8.2
@@ -31,6 +31,8 @@ DOCLANG?=	en
 
 PORTDATA=	*
 DATADIR=	${PREFIX}/share/gimp
+
+MAKE_JOBS_UNSAFE=	yes
 
 SHEBANG_FILES=	tools/xml2po.py
 

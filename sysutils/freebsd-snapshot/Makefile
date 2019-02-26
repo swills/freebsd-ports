@@ -1,9 +1,9 @@
 # Created by: gtodd@bellanet.org
-# $FreeBSD: head/sysutils/freebsd-snapshot/Makefile 446813 2017-07-28 09:01:09Z amdmi3 $
+# $FreeBSD: head/sysutils/freebsd-snapshot/Makefile 493933 2019-02-26 04:51:49Z meta $
 
 PORTNAME=	freebsd-snapshot
 DISTVERSION=	20091208.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	https://people.freebsd.org/~rse/dist/
 

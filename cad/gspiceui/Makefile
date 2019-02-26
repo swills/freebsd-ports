@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/cad/gspiceui/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/cad/gspiceui/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	gspiceui
 PORTVERSION=	1.1.00
@@ -15,7 +15,7 @@ LICENSE=	GPLv3
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-USE_WX=		2.8 3.0
+USE_WX=		3.0
 USES=		compiler:c++11-lib gmake pkgconfig
 
 CXXFLAGS+=	-std=c++11

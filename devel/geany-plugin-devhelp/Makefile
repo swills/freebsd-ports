@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/geany-plugin-devhelp/Makefile 487062 2018-12-09 17:29:13Z madpilot $
+# $FreeBSD: head/devel/geany-plugin-devhelp/Makefile 493898 2019-02-25 21:27:09Z madpilot $
 
 PORTNAME=	geany-plugin-devhelp
 PORTVERSION=	${GEANY_VER}
@@ -7,6 +7,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Geany plugin: ${${GEANY_PLUGIN}_DESC}
+
+DEPRECATED=	Depends on forbidden webkit port
+EXPIRATION_DATE=2019-03-24
 
 LIB_DEPENDS=	libwnck-1.so:x11-toolkits/libwnck \
 		libwebkitgtk-1.0.so:www/webkit-gtk2 \

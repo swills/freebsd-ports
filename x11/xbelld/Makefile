@@ -1,5 +1,5 @@
 # Created by: Nosov Artem <chip-set@mail.ru>
-# $FreeBSD: head/x11/xbelld/Makefile 476013 2018-07-31 18:41:30Z zeising $
+# $FreeBSD: head/x11/xbelld/Makefile 493880 2019-02-25 16:16:17Z bapt $
 
 PORTNAME=	xbelld
 PORTVERSION=	0.2b2
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-0.2beta2
 
 MAINTAINER=	chip-set@mail.ru
 COMMENT=	XBellD is a small daemon for replacing the standard X terminal bell
+
+DEPRECATED=	Depends on audio/esound
+EXPIRATION_DATE=	2019-03-25
 
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile
 

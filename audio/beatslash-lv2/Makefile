@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/beatslash-lv2/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/beatslash-lv2/Makefile 493824 2019-02-25 00:14:10Z yuri $
 
 PORTNAME=	beatslash
-DISTVERSION=	1.0.5
-PORTREVISION=	1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.0.6
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	lv2>0:audio/lv2 \
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
-USES=		compiler:c++11-lang pkgconfig waf
+USES=		compiler:c++11-lang gnome pkgconfig waf
 USE_GITHUB=	yes
 GH_ACCOUNT=	blablack
 GH_PROJECT=	${PORTNAME}-lv2

@@ -1,9 +1,9 @@
 # Created by: Max Khon
-# $FreeBSD: head/databases/pgadmin3/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/pgadmin3/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	pgadmin3
 PORTVERSION=	1.22.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	PGSQL/pgadmin/pgadmin3/v${PORTVERSION}/src
 DIST_SUBDIR=	postgresql

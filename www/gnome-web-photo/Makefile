@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/gnome-web-photo/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/www/gnome-web-photo/Makefile 493883 2019-02-25 16:58:48Z kwm $
 #   $MCom: ports/www/gnome-web-photo/Makefile,v 1.5 2007/08/07 03:27:32 mezz Exp $
 
 PORTNAME=	gnome-web-photo
@@ -15,6 +15,9 @@ LICENSE=	LGPL21 LGPL3
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USE_GNOME=	gconf2 gnomeprefix intltool
 USES=		gettext gmake pathfix pkgconfig tar:xz

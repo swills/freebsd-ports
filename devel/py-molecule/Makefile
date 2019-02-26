@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-molecule/Makefile 482628 2018-10-20 21:56:28Z matthew $
+# $FreeBSD: head/devel/py-molecule/Makefile 493688 2019-02-23 15:41:54Z matthew $
 
 PORTNAME=	molecule
 PORTVERSION=	2.19.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -50,7 +51,14 @@ NO_ARCH=	yes
 # The click module demands a UTF-8 locale when used with python-3.x
 TEST_ENV=	LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
 
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} < 3500
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}typing>=0:devel/py-typing@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}functools32>=0:devel/py-functools32@${PY_FLAVOR}
+.endif
+
 do-test:
 	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} ${PYTHON_CMD} -m pytest)
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

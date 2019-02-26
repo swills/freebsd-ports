@@ -1,10 +1,10 @@
 # Created by: SimaMoto,RyoTa <liangtai.s4@gmail.com>
-# $FreeBSD: head/korean/gimp-help/Makefile 342129 2014-02-01 12:49:26Z makc $
+# $FreeBSD: head/korean/gimp-help/Makefile 493763 2019-02-24 15:08:19Z tobik $
 
 CATEGORIES=	korean graphics
 
 MAINTAINER=	liangtai.s16@gmail.com
-COMMENT=	The GIMP User Manual in Korean
+COMMENT=	GIMP User Manual in Korean
 
 LICENSE=	GFDL
 

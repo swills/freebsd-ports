@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/devel/p5-Module-Version/Makefile 488977 2019-01-01 20:34:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Version/Makefile 493909 2019-02-25 23:35:39Z sunpoet $
 
 PORTNAME=	Module-Version
-PORTVERSION=	0.200
+PORTVERSION=	0.201
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

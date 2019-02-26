@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/dtc/Makefile 459790 2018-01-23 18:18:12Z kevans $
+# $FreeBSD: head/sysutils/dtc/Makefile 493851 2019-02-25 12:13:16Z manu $
 
 PORTNAME=	dtc
-PORTVERSION=	1.4.6
+PORTVERSION=	1.4.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

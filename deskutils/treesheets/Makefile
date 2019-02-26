@@ -1,9 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/deskutils/treesheets/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/treesheets/Makefile 493853 2019-02-25 12:47:20Z bapt $
 
 PORTNAME=	treesheets
 PORTVERSION=	1.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	deskutils
 

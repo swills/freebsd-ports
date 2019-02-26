@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/www/xombrero/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/www/xombrero/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	xombrero
 PORTVERSION=	1.6.4
@@ -13,6 +13,9 @@ LICENSE=	ISCL
 
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
 		libsoup-2.4.so:devel/libsoup
+
+DEPRECATED=	Uses either webkit-gtk2 or webkit-gtk3 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USES=		desktop-file-utils groff pkgconfig perl5 tar:tgz
 USE_PERL5=	build

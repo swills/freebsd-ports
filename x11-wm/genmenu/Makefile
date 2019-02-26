@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/x11-wm/genmenu/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/genmenu/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	genmenu
 PORTVERSION=	1.0.7
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://gtk.no/archive/genmenu/
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generating menus for Bbox, Fbox, Obox, WM and E
 
 RUN_DEPENDS=	bash:shells/bash

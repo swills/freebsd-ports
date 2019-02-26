@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 491348 2019-01-27 13:31:26Z tobik $
+# $FreeBSD: head/x11/Makefile 493726 2019-02-23 19:01:57Z bapt $
 #
 
     COMMENT = Ports to support the X window system
@@ -419,7 +419,6 @@
     SUBDIR += xfindproxy
     SUBDIR += xfishtank
     SUBDIR += xforward
-    SUBDIR += xfree86_xkb_xml
     SUBDIR += xfwp
     SUBDIR += xgamma
     SUBDIR += xgc

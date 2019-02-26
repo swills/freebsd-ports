@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/devel/aws-c-commons/Makefile 490069 2019-01-12 18:33:44Z danilo $
+# $FreeBSD: head/devel/aws-c-commons/Makefile 493751 2019-02-24 11:11:12Z danilo $
 
 PORTNAME=	aws-c-common
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.3
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	devel

@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/electricsheep/Makefile 490823 2019-01-21 07:36:44Z yuri $
+# $FreeBSD: head/graphics/electricsheep/Makefile 493855 2019-02-25 12:53:00Z bapt $
 
 PORTNAME=	electricsheep
 DISTVERSION=	2.7 # configure.ac says that the version is 2.7b33

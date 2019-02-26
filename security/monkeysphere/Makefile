@@ -1,14 +1,13 @@
 # Created by: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
-# $FreeBSD: head/security/monkeysphere/Makefile 482964 2018-10-25 10:32:53Z tobik $
+# $FreeBSD: head/security/monkeysphere/Makefile 493870 2019-02-25 14:43:23Z egypcio $
 
 PORTNAME=	monkeysphere
-PORTVERSION=	0.41
+PORTVERSION=	0.42
 CATEGORIES=	security
 MASTER_SITES=	http://archive.monkeysphere.info/debian/pool/monkeysphere/m/monkeysphere/
-# hack for debian orig tarballs
 DISTFILES=	${PORTNAME}_${DISTVERSION}.orig${EXTRACT_SUFX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Use the OpenPGP web of trust to verify ssh connections
 
 LICENSE=	GPLv3
@@ -23,6 +22,7 @@ RUN_DEPENDS=	gpg2:security/gnupg \
 		p5-Digest-SHA1>=0:security/p5-Digest-SHA1
 
 USES=		gmake shebangfix
+
 SHEBANG_FILES=	src/share/checkperms src/transitions/0.23 \
 		src/transitions/0.28 src/share/keytrans
 
@@ -33,7 +33,6 @@ MAKE_ARGS+=	ETCPREFIX=${PREFIX} MANPREFIX=${PREFIX}/man ETCSUFFIX=.sample
 
 OPTIONS_DEFINE=	DOCS
 
-# use proper system paths for FreeBSD instead of debian's:
 post-patch:
 	@${REINPLACE_CMD} -i '' 's|/etc/monkeysphere|${PREFIX}/etc/monkeysphere|g' \
 	  ${WRKSRC}/src/share/defaultenv \

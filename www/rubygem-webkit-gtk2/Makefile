@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-webkit-gtk2/Makefile 493297 2019-02-18 18:21:26Z sunpoet $
+# $FreeBSD: head/www/rubygem-webkit-gtk2/Makefile 493883 2019-02-25 16:58:48Z kwm $
 
 PORTNAME=	webkit-gtk2
 PORTVERSION=	3.3.2
@@ -13,6 +13,9 @@ LICENSE=	LGPL21+
 LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
 RUN_DEPENDS=	rubygem-gobject-introspection>=${PORTVERSION}:devel/rubygem-gobject-introspection \
 		rubygem-gtk2>=${PORTVERSION}:x11-toolkits/rubygem-gtk2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=2019-03-24
 
 USES=		gem
 USE_RUBY=	yes

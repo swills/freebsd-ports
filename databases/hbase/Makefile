@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/databases/hbase/Makefile 426156 2016-11-15 09:50:52Z demon $
+# $FreeBSD: head/databases/hbase/Makefile 493958 2019-02-26 09:43:48Z demon $
 
 PORTNAME=	hbase
 PORTVERSION=	1.2.1
@@ -10,7 +10,7 @@ MASTER_SITES=	APACHE/${PORTNAME}/${PORTVERSION} \
 DISTFILES=	${DISTNAME}-src${EXTRACT_SUFX} FreeBSD-${PORTNAME}-${PORTVERSION}-maven-repository.tar.gz:maven
 DIST_SUBDIR=	hadoop
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Hadoop database, a distributed, scalable, big data store
 
 LICENSE=	APACHE20

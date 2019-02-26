@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/lang/clojure/Makefile 492628 2019-02-10 18:49:20Z tobik $
+# $FreeBSD: head/lang/clojure/Makefile 493675 2019-02-23 14:18:13Z tobik $
 
 PORTNAME=	clojure
 PORTVERSION=	1.10.0.411
@@ -7,7 +7,7 @@ CATEGORIES=	lang lisp java
 MASTER_SITES=	https://download.clojure.org/install/
 DISTNAME=	clojure-tools-${PORTVERSION}
 
-MAINTAINER=	jan0sch@mykolab.com
+MAINTAINER=	freebsd-ports@jan0sch.de
 COMMENT=	Dynamic programming language for the JVM
 
 LICENSE=	EPL

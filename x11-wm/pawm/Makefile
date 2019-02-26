@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/x11-wm/pawm/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/x11-wm/pawm/Makefile 493707 2019-02-23 16:44:43Z bapt $
 
 PORTNAME=	pawm
 PORTVERSION=	2.3.0
@@ -12,6 +12,8 @@ COMMENT=	The Puto Amo Window Manager
 
 LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/GPL
+
+BROKEN=		Does not start 'BUG [35339] [pawindow_init]'
 
 USE_XORG=	x11 xft xrandr xrender xpm
 USES=		cmake pkgconfig tar:bzip2

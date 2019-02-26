@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/devel/devtodo/Makefile 456238 2017-12-13 20:49:30Z sunpoet $
+# $FreeBSD: head/devel/devtodo/Makefile 493947 2019-02-26 08:34:42Z tobik $
 
 PORTNAME=	devtodo
 PORTVERSION=	0.1.20
@@ -21,9 +21,6 @@ OPTIONS_DEFINE=	EXAMPLES
 # of malloc and realloc functions. Adding this define was the simplest
 # (although not elegant) solution.
 CFLAGS+=	-DSTDC_HEADERS
-
-post-patch:
-	@${REINPLACE_CMD} -e 's/^\ttest -f.*todorc.*\n//' ${WRKSRC}/doc/Makefile.in
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

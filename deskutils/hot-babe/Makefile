@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <bogorodskiy@inbox.ru>
-# $FreeBSD: head/deskutils/hot-babe/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/deskutils/hot-babe/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	hot-babe
 PORTVERSION=	0.2.2
@@ -8,7 +8,7 @@ CATEGORIES=	deskutils
 MASTER_SITES=	http://dindinx.net/hotbabe/downloads/ \
 		LOCAL/novel
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small utility which displays the system activity in a special way
 
 USES=		pkgconfig tar:bzip2

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/giada/Makefile 490358 2019-01-15 09:49:29Z yuri $
+# $FreeBSD: head/audio/giada/Makefile 493713 2019-02-23 17:19:11Z yuri $
 
 PORTNAME=	giada
 DISTVERSIONPREFIX=	v
@@ -28,7 +28,7 @@ USES=		autoreconf compiler:c++11-lang gmake localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	monocasual
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--target=freebsd
+CONFIGURE_ARGS=	--target=${OPSYS:tl}
 USE_XORG=	x11 xext xft xpm
 LDFLAGS+=	-lfltk
 

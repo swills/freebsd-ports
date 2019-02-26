@@ -1,5 +1,5 @@
 # Created by: alanp@unixpower.org
-# $FreeBSD: head/deskutils/logjam/Makefile 487999 2018-12-21 14:07:56Z rene $
+# $FreeBSD: head/deskutils/logjam/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	logjam
 PORTVERSION=	4.6.2
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	deskutils
 MASTER_SITES=	http://andy-shev.github.com/LogJam/download/
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK2 interface to livejournals, ie www.livejournal.com
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \

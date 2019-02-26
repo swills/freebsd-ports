@@ -1,9 +1,9 @@
 # Created by: mcglk@artlogix.com
-# $FreeBSD: head/shells/scponly/Makefile 402366 2015-11-24 15:06:49Z garga $
+# $FreeBSD: head/shells/scponly/Makefile 493861 2019-02-25 13:37:48Z garga $
 
 PORTNAME=	scponly
 PORTVERSION=	4.8.20110526
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	shells security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-snapshots
 DISTNAME=	${PORTNAME}-20110526

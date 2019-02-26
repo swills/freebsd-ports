@@ -1,9 +1,9 @@
 # Created by: Stefan Esser <se@StefanEsser.FreeBSD.org>
-# $FreeBSD: head/emulators/playonbsd/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/emulators/playonbsd/Makefile 493961 2019-02-26 10:38:43Z antoine $
 
 PORTNAME=	playonbsd
 PORTVERSION=	4.2.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	emulators games
 
 MAINTAINER=	se@FreeBSD.org
@@ -31,8 +31,8 @@ GECKO_RUN_DEPENDS=	wine-gecko>=2.21:emulators/wine-gecko
 
 ONLY_FOR_ARCHS=	amd64 i386
 
-USES=		python:run perl5
-USE_WX=		2.8+
+USES=		python:2.7,run perl5
+USE_WX=		3.0
 WX_COMPS=	python:run
 
 USE_GITHUB=	yes

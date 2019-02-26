@@ -1,8 +1,9 @@
 # Created by: kipz <somicide@gmail.com>
-# $FreeBSD: head/devel/gitg/Makefile 487519 2018-12-15 15:03:45Z kwm $
+# $FreeBSD: head/devel/gitg/Makefile 493768 2019-02-24 15:36:34Z kwm $
 
 PORTNAME=	gitg
 PORTVERSION=	3.30.1
+PORTREVISION=	1
 CATEGORIES=	devel deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/waylandpp/Makefile 490647 2019-01-18 18:27:07Z tobik $
+# $FreeBSD: head/graphics/waylandpp/Makefile 493837 2019-02-25 06:02:32Z tobik $
 
 PORTNAME=	waylandpp
-DISTVERSION=	0.2.4
-PORTREVISION=	1
+DISTVERSION=	0.2.5
 CATEGORIES=	graphics
 
 MAINTAINER=	tobik@FreeBSD.org

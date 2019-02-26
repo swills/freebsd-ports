@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <bogorodskiy@inbox.ru>
-# $FreeBSD: head/x11-wm/fbcmd/Makefile 464777 2018-03-17 09:33:15Z amdmi3 $
+# $FreeBSD: head/x11-wm/fbcmd/Makefile 493757 2019-02-24 12:47:30Z novel $
 
 PORTNAME=	fbcmd
 PORTVERSION=	0.5.1
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://darkshed.net/files/c_cpp/fbcmd/
 
-MAINTAINER=	novel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Commandline utility for controlling fluxbox
 
 LICENSE=	MIT
