@@ -65,6 +65,7 @@ lib/kitty/kitty/fonts/core_text.py
 lib/kitty/kitty/fonts/fontconfig.py
 lib/kitty/kitty/fonts/list.py
 lib/kitty/kitty/fonts/render.py
+lib/kitty/kitty/glfw-wayland.so
 lib/kitty/kitty/glfw-x11.so
 lib/kitty/kitty/graphics_fragment.glsl
 lib/kitty/kitty/graphics_vertex.glsl
