@@ -1,8 +1,8 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/net/py-pyzmq/Makefile 491252 2019-01-26 09:21:14Z koobs $
+# $FreeBSD: head/net/py-pyzmq/Makefile 494159 2019-02-28 16:44:05Z novel $
 
 PORTNAME=	pyzmq
-PORTVERSION=	17.1.2
+PORTVERSION=	18.0.0
 CATEGORIES=	net devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

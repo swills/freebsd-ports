@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/coffeescript/Makefile 486672 2018-12-05 14:09:12Z egypcio $
+# $FreeBSD: head/lang/coffeescript/Makefile 494137 2019-02-28 09:18:05Z egypcio $
 
 PORTNAME=	coffeescript
 DISTVERSION=	2.3.2
@@ -21,6 +21,7 @@ CONFLICTS_INSTALL=	cake
 
 OPTIONS_DEFINE=	EXAMPLES
 
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 do-install:

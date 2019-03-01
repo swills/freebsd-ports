@@ -1,5 +1,5 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/graphics/libwmf/Makefile 458093 2018-01-04 23:25:04Z rene $
+# $FreeBSD: head/graphics/libwmf/Makefile 494146 2019-02-28 12:20:04Z kai $
 
 PORTNAME=	libwmf
 PORTVERSION=	0.2.8.4
@@ -7,7 +7,7 @@ PORTREVISION=	15
 CATEGORIES=	graphics
 MASTER_SITES=	SF/wvware/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	phascolarctos@protonmail.ch
 COMMENT=	Tools and library for converting Microsoft WMF (windows metafile)
 
 LICENSE=	GPLv2+
@@ -16,18 +16,19 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libfreetype.so:print/freetype2
 
-CONFLICTS?=	libwmf-nox11-[0-9]*
+USES=		gnome jpeg libtool
+USE_GNOME=	libxml2
+USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-sys-gd=no \
 		--with-png=${LOCALBASE} --with-jpeg=${LOCALBASE} \
 		--with-gsfontdir=${LOCALBASE}/share/ghostscript/fonts
 INSTALL_TARGET=	install-strip
-USES=		jpeg libtool
-USE_GNOME=	libxml2
-USE_LDCONFIG=	yes
 
 PORTDOCS=	*
+
+CONFLICTS?=	libwmf-nox11-[0-9]*
 
 OPTIONS_DEFINE=	X11 DOCS
 OPTIONS_DEFAULT=X11

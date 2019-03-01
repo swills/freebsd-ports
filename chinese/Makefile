@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/chinese/Makefile 494173 2019-02-28 18:22:18Z kai $
 #
 
     COMMENT = Chinese support
@@ -102,6 +102,8 @@
     SUBDIR += scim-fcitx
     SUBDIR += scim-pinyin
     SUBDIR += scim-tables
+    SUBDIR += sourcehanserif-sc-otf
+    SUBDIR += sourcehanserif-tc-otf
     SUBDIR += sunpinyin
     SUBDIR += tin
     SUBDIR += tintin++

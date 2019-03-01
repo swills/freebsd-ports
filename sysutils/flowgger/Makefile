@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/flowgger/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/sysutils/flowgger/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	flowgger
 DISTVERSION=	0.2.6-28
 DISTVERSIONSUFFIX=	-gab572a0
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org
@@ -62,7 +62,7 @@ CARGO_CRATES=	ansi_term-0.9.0 \
 		lazy_static-0.2.8 \
 		lazy_static-1.2.0 \
 		lazycell-0.5.1 \
-		libc-0.2.40 \
+		libc-0.2.49 \
 		linked-hash-map-0.4.2 \
 		log-0.3.8 \
 		magenta-0.1.1 \

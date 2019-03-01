@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 493656 2019-02-23 08:03:47Z bapt $
+# $FreeBSD: head/textproc/Makefile 494139 2019-02-28 09:32:51Z 0mp $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1261,6 +1261,7 @@
     SUBDIR += ppower4
     SUBDIR += print-n-times
     SUBDIR += pugixml
+    SUBDIR += pup
     SUBDIR += pure-csv
     SUBDIR += pure-xml
     SUBDIR += py-Chameleon
@@ -1700,6 +1701,7 @@
     SUBDIR += scr2txt
     SUBDIR += scss
     SUBDIR += scws
+    SUBDIR += sd
     SUBDIR += sdcv
     SUBDIR += sdf
     SUBDIR += sdif

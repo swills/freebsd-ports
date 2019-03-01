@@ -1,5 +1,5 @@
 # Created by: Roland van Laar <roland@micite.net>
-# $FreeBSD: head/databases/py-sqlparse/Makefile 456244 2017-12-13 20:49:59Z sunpoet $
+# $FreeBSD: head/databases/py-sqlparse/Makefile 494194 2019-02-28 21:35:13Z sunpoet $
 
 PORTNAME=	sqlparse
 PORTVERSION=	0.2.4
@@ -13,10 +13,11 @@ COMMENT=	Non-validating SQL parser for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlparse01 ${PYTHON_PKGNAMEPREFIX}sqlparse020
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlparse020
+
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist concurrent distutils
-USES=		python
 
 .include <bsd.port.mk>

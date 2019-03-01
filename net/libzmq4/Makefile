@@ -1,8 +1,9 @@
-# $FreeBSD: head/net/libzmq4/Makefile 491260 2019-01-26 10:50:44Z koobs $
+# $FreeBSD: head/net/libzmq4/Makefile 494242 2019-03-01 08:08:14Z tobik $
 
 PORTNAME=	libzmq4
 DISTVERSIONPREFIX=	v
 DISTVERSION=	4.3.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/zeromq/libzmq/releases/download/${DISTVERSIONFULL}/
 DISTNAME=	zeromq-${DISTVERSION}

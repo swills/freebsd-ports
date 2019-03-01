@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/cargo-audit/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/security/cargo-audit/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	cargo-audit
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	security
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -37,7 +37,7 @@ CARGO_CRATES=	atty-0.2.11 \
 		idna-0.1.5 \
 		itoa-0.4.3 \
 		lazy_static-1.2.0 \
-		libc-0.2.45 \
+		libc-0.2.49 \
 		libgit2-sys-0.7.11 \
 		libssh2-sys-0.2.11 \
 		libz-sys-1.0.25 \

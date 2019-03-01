@@ -1,9 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/kr/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/security/kr/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	kr
 PORTVERSION=	2.3.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security
 
 MAINTAINER=	feld@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/packetdrill/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/net/packetdrill/Makefile 494036 2019-02-27 09:25:37Z kbowling $
 
 PORTNAME=	packetdrill
-PORTVERSION=	0.0.2018081901
+PORTVERSION=	0.0.2019022601
 CATEGORIES=	net ipv6
 
 MAINTAINER=	kbowling@FreeBSD.org
@@ -9,10 +9,10 @@ COMMENT=	Network stack testing tool
 
 LICENSE=	GPLv2
 
-USES=		bison uidfix
+USES=		bison python:run uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-net
-GH_TAGNAME=	d449b32
+GH_TAGNAME=	f626eee
 WRKSRC_SUBDIR=	gtests/net/packetdrill
 PLIST_FILES=	bin/${PORTNAME}
 PORTDATA=	packetdrill.el packetdrill.vim

@@ -1,9 +1,9 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/devel/qca/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/qca/Makefile 494079 2019-02-27 19:22:15Z rakuco $
 
 PORTNAME=	qca
 PORTVERSION=	2.1.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	KDE/stable/qca/${PORTVERSION}/src
 PKGNAMESUFFIX=	-${FLAVOR}

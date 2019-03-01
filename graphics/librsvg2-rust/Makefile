@@ -1,9 +1,9 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/graphics/librsvg2-rust/Makefile 493676 2019-02-23 14:19:40Z tobik $
+# $FreeBSD: head/graphics/librsvg2-rust/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	librsvg
 PORTVERSION=	2.45.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME \
 		CRATESIO/libc/0.2.49:libc

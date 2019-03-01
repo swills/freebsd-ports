@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind9-devel/Makefile 493846 2019-02-25 09:57:22Z mat $
+# $FreeBSD: head/dns/bind9-devel/Makefile 494252 2019-03-01 10:10:03Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -62,7 +62,7 @@ CONFIGURE_ARGS=	--localstatedir=/var --disable-linux-caps \
 ETCDIR=		${PREFIX}/etc/namedb
 
 # XXX: Add -devel
-CONFLICTS=	bind99 bind910 bind911 bind912 bind913
+CONFLICTS=	bind911 bind912 bind913 bind914
 
 .if defined(BIND_TOOLS_SLAVE)
 CONFIGURE_ARGS+=	--disable-shared

@@ -1,8 +1,8 @@
 # Created by: Martin Jackson <mhjacks@swbell.net>
-# $FreeBSD: head/net-mgmt/py-pysnmp-apps/Makefile 492683 2019-02-11 10:24:45Z kai $
+# $FreeBSD: head/net-mgmt/py-pysnmp-apps/Makefile 494106 2019-02-28 00:36:49Z leres $
 
 PORTNAME=	pysnmp-apps
-PORTVERSION=	0.4.1
+PORTVERSION=	0.5.3
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP \
 		SF/pysnmp/pysnmp-apps/${PORTVERSION}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-isort/Makefile 489399 2019-01-05 22:45:41Z sunpoet $
+# $FreeBSD: head/devel/py-isort/Makefile 494197 2019-02-28 21:35:29Z sunpoet $
 
 PORTNAME=	isort
-PORTVERSION=	4.3.4
+PORTVERSION=	4.3.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

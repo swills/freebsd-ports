@@ -1,27 +1,33 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/devel/py-gitosis/Makefile 432417 2017-01-25 14:24:44Z jhale $
+# $FreeBSD: head/devel/py-gitosis/Makefile 494156 2019-02-28 15:36:27Z kai $
 
 PORTNAME=	gitosis
-PORTVERSION=	0.2.20090917
-PORTREVISION=	1
+PORTVERSION=	0.3
+DISTVERSIONPREFIX=	release/
 CATEGORIES=	devel python
-MASTER_SITES=	http://dl1.douglasthrift.net/${PORTNAME}/ \
-		http://dl2.douglasthrift.net/${PORTNAME}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	douglas@douglasthrift.net
 COMMENT=	Software for hosting git repositories
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	git:devel/git
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${PY_FLAVOR}
 
-USES=		python tar:bzip2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
+USE_GITHUB=	yes
+GH_ACCOUNT=	tv42
+
+NO_ARCH=	yes
+
 USERS=		git
 GROUPS=		${USERS}
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
-PYDISTUTILS_PKGVERSION=	${PORTVERSION:R}
+do-test:
+	cd ${WRKSRC} && ${PYTHON_CMD} -m pytest -v -s gitosis/test/
 
 .include <bsd.port.mk>

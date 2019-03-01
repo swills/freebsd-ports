@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/xsv-rs/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/textproc/xsv-rs/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	xsv
 DISTVERSION=	0.13.0
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	textproc
 PKGNAMESUFFIX=	-rs
 
@@ -31,7 +31,7 @@ CARGO_CRATES=	aho-corasick-0.6.4 \
 		fuchsia-zircon-0.3.3 \
 		fuchsia-zircon-sys-0.3.3 \
 		lazy_static-1.0.0 \
-		libc-0.2.40 \
+		libc-0.2.49 \
 		log-0.4.1 \
 		memchr-2.0.1 \
 		num-traits-0.2.4 \

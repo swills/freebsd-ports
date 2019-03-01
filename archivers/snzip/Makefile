@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/snzip/Makefile 490448 2019-01-16 05:14:27Z linimon $
+# $FreeBSD: head/archivers/snzip/Makefile 494126 2019-02-28 04:33:36Z linimon $
 
 PORTNAME=	snzip
 PORTVERSION=	1.0.4
@@ -14,10 +14,10 @@ LIB_DEPENDS=	libsnappy.so:archivers/snappy
 
 OPTIONS_DEFINE=	DOCS
 
+USES=		autoreconf compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	kubo
 
-USES=		autoreconf compiler:c++11-lang
 CONFIGURE_ARGS=	--with-snappy=${LOCALBASE}
 GNU_CONFIGURE=	yes
 

@@ -1,9 +1,8 @@
 # Created by: alepulver
-# $FreeBSD: head/sysutils/javaservicewrapper/Makefile 484305 2018-11-06 16:53:30Z emaste $
+# $FreeBSD: head/sysutils/javaservicewrapper/Makefile 494019 2019-02-27 04:29:33Z tobik $
 
 PORTNAME=	javaservicewrapper
-PORTVERSION=	3.5.29
-PORTREVISION=	1
+PORTVERSION=	3.5.37
 CATEGORIES=	sysutils java
 MASTER_SITES=	https://wrapper.tanukisoftware.com/download/${PORTVERSION}/
 DISTNAME=	wrapper_${PORTVERSION}_src

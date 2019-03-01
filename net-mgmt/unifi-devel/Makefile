@@ -1,8 +1,8 @@
 # Created by: Alban MAIRE <a.maire@s2mi.fr>
-# $FreeBSD: head/net-mgmt/unifi-devel/Makefile 491968 2019-02-02 18:05:53Z pi $
+# $FreeBSD: head/net-mgmt/unifi-devel/Makefile 494157 2019-02-28 16:21:14Z kai $
 
 PORTNAME=	unifi
-PORTVERSION=	5.10.11
+PORTVERSION=	5.10.19
 PORTREVISION=	0
 CATEGORIES=	net-mgmt java
 MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}-${UNIFI_BUILD}/
@@ -24,15 +24,6 @@ RESTRICTED=	License restrictions, see https://www.ubnt.com/eula/
 RUN_DEPENDS=	mongodb36>0:databases/mongodb36 \
 		snappyjava>0:archivers/snappy-java
 
-SUB_LIST+=	USERS=${USERS} GROUPS=${GROUPS} JAVASHAREDIR=${JAVASHAREDIR} \
-		JAVA=${JAVA}
-
-EXTRACT_CMD=	${AR}
-EXTRACT_BEFORE_ARGS=	-p
-EXTRACT_AFTER_ARGS=	data.tar.xz | ${TAR} -xf -
-
-UNIFI_BUILD=	6e1800b9b9
-
 USES=		cpe
 CPE_VENDOR=	ubnt
 CPE_PRODUCT=	unifi_controller
@@ -41,19 +32,25 @@ JAVA_VERSION=	1.8
 JAVA_OS=	native
 JAVA_VENDOR=	openjdk bsdjava
 JAVA_RUN=	yes
+USE_RC_SUBR=	unifi
+
+EXTRACT_CMD=	${AR}
+EXTRACT_BEFORE_ARGS=	-p
+EXTRACT_AFTER_ARGS=	data.tar.xz | ${TAR} -xf -
 
 NO_BUILD=	yes
 NO_ARCH=	yes
-
-USE_RC_SUBR=	unifi
+NO_WRKSUBDIR=	yes
 
 USERS=		unifi
 GROUPS=		unifi
 
-NO_WRKSUBDIR=	yes
+SUB_LIST=	USERS=${USERS} GROUPS=${GROUPS} JAVASHAREDIR=${JAVASHAREDIR} \
+		JAVA=${JAVA}
 
-CONFLICTS=	unifi2-* unifi3-* unifi4-* unifi5-*
+CONFLICTS=	unifi5-*
 
+UNIFI_BUILD=	113b57454f
 DIR_LIST=	conf data logs run work
 
 post-patch:

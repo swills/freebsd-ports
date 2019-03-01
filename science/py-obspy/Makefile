@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-obspy/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/py-obspy/Makefile 494132 2019-02-28 07:18:24Z wen $
 
 PORTNAME=	obspy
-PORTVERSION=	1.1.0
-PORTREVISION=	3
+PORTVERSION=	1.1.1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

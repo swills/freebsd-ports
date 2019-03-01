@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/qbox/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/qbox/Makefile 494125 2019-02-28 04:32:33Z yuri $
 
 PORTNAME=	qbox
 DISTVERSIONPREFIX=	rel
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libxerces-c.so:textproc/xerces-c3
 
-USES=		gmake iconv:wchar_t localbase:ldflags
+USES=		compiler:c++11-lang gmake iconv:wchar_t localbase:ldflags
 USE_GITHUB=	yes
 GH_ACCOUNT=	qboxcode
 GH_PROJECT=	qbox-public

@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 493367 2019-02-19 13:20:47Z sunpoet $
+# $FreeBSD: head/Mk/bsd.sites.mk 494205 2019-02-28 21:36:11Z sunpoet $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -365,7 +365,7 @@ DEV_WARNING+=	"MASTER_SITES contains ${MASTER_SITES:M*/github.com/*/archive/*}, 
 # GH_TAGNAME    - name of the tag to download (2.0.1, hash, ...)
 #                 Using the name of a branch here is incorrect. It is
 #                 possible to do GH_TAGNAME= GIT_HASH to do a snapshot.
-#                 default: ${DISTVERSION}
+#                 default: ${DISTVERSIONFULL}
 #
 # GH_SUBDIR     - directory relative to WRKSRC where to move this distfile's
 #                 content after extracting.

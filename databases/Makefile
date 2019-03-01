@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 492902 2019-02-14 07:36:54Z wen $
+# $FreeBSD: head/databases/Makefile 494206 2019-02-28 21:36:16Z sunpoet $
 #
 
     COMMENT = Databases and related software
@@ -848,7 +848,6 @@
     SUBDIR += py-sqlite3dbm
     SUBDIR += py-sqlobject
     SUBDIR += py-sqlparse
-    SUBDIR += py-sqlparse01
     SUBDIR += py-sqlparse020
     SUBDIR += py-sqlrelay
     SUBDIR += py-swift

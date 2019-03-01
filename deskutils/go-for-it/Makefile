@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/go-for-it/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/deskutils/go-for-it/Makefile 494077 2019-02-27 18:49:02Z swills $
 
 PORTNAME=	go-for-it
-DISTVERSION=	1.6.9
+DISTVERSION=	1.6.10
 CATEGORIES=	deskutils
 
 MAINTAINER=	neel@neelc.org

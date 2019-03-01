@@ -1,10 +1,10 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/libxs/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/libxs/Makefile 494242 2019-03-01 08:08:14Z tobik $
 
 PORTNAME=	libxs
 PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

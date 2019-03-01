@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-Image-Base-SVG/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/graphics/p5-Image-Base-SVG/Makefile 493989 2019-02-26 23:50:07Z sunpoet $
 
 PORTNAME=	Image-Base-SVG
-PORTVERSION=	4
-PORTREVISION=	1
+PORTVERSION=	5
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,11 +18,9 @@ RUN_DEPENDS=	p5-Image-Base>=0:graphics/p5-Image-Base \
 		p5-SVG>=2.38:textproc/p5-SVG \
 		p5-SVG-Parser>=0:textproc/p5-SVG-Parser
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
 
-post-patch:
-	@${REINPLACE_CMD} -e 's|Image-Base-SVG|Image::Base::SVG|' ${WRKSRC}/Makefile.PL
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

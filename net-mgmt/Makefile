@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 492683 2019-02-11 10:24:45Z kai $
+# $FreeBSD: head/net-mgmt/Makefile 494056 2019-02-27 14:34:57Z zi $
 #
 
     COMMENT = Network management tools
@@ -204,6 +204,7 @@
     SUBDIR += nsca27
     SUBDIR += nsca27-client
     SUBDIR += nstat
+    SUBDIR += nsd_exporter
     SUBDIR += nstreams
     SUBDIR += nvidia_gpu_prometheus_exporter
     SUBDIR += observium

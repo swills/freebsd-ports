@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind911/Makefile 493563 2019-02-22 08:52:52Z mat $
+# $FreeBSD: head/dns/bind911/Makefile 494252 2019-03-01 10:10:03Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libxml2.so:textproc/libxml2
 USES=	cpe libedit
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.11.5-P4
+ISCVERSION=	9.11.6
 
 CPE_VENDOR=	isc
 CPE_VERSION=	${ISCVERSION:C/-.*//}
@@ -38,7 +38,7 @@ CONFIGURE_ARGS=	--localstatedir=/var --disable-linux-caps \
 		--sysconfdir=${ETCDIR}
 ETCDIR=		${PREFIX}/etc/namedb
 
-CONFLICTS=	bind-tools bind99 bind910 bind912 bind913 bind9-devel
+CONFLICTS=	bind-tools bind912 bind913 bind914 bind9-devel
 
 SUB_FILES=	pkg-message named.conf
 USE_RC_SUBR=	named

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-GraphQL/Makefile 493136 2019-02-17 00:40:49Z wen $
+# $FreeBSD: head/devel/p5-GraphQL/Makefile 494123 2019-02-28 02:24:22Z wen $
 
 PORTNAME=	GraphQL
-PORTVERSION=	0.32
+PORTVERSION=	0.33
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ETJ

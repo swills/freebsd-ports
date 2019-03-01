@@ -1,8 +1,8 @@
 # Created by: Jason Harris <jharris@widomaker.com>
-# $FreeBSD: head/sysutils/file/Makefile 477877 2018-08-23 16:34:20Z swills $
+# $FreeBSD: head/sysutils/file/Makefile 494147 2019-02-28 12:29:33Z kai $
 
 PORTNAME=	file
-PORTVERSION=	5.34
+PORTVERSION=	5.36
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.astron.com/pub/file/ \
 		ftp://ftp.fu-berlin.de/unix/tools/file/
@@ -20,8 +20,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-fsect-man5
 MAKE_ENV=	INSTALL_STRIP_FLAG="${STRIP}"
 TEST_TARGET=	check
-
-CONFLICTS=	tct-[0-9]*
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|$$(datadir)/misc|$$(datadir)/${PORTNAME}|g' \

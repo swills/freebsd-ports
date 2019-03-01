@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/ksh93-devel/Makefile 493489 2019-02-21 06:06:12Z cy $
+# $FreeBSD: head/shells/ksh93-devel/Makefile 494013 2019-02-27 03:48:05Z cy $
 
 # Make sure that your configuration DOES NOT set ANY gcc-related
 # variables.  ksh93 will not compile if you set even the seemingly
@@ -14,8 +14,8 @@ PORTNAME=	ksh93
 PORTVERSION=	${AST_COMMIT_DATE}
 CATEGORIES=	shells
 PKGNAMESUFFIX=	-devel
-HASH=		f43d4d4
-AST_COMMIT_DATE=	2019.02.19
+HASH=		dd1f44d
+AST_COMMIT_DATE=	2019.02.26
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Development branch of AT&T KornShell 93

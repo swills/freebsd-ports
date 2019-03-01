@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/gnustep-examples/Makefile 492056 2019-02-03 15:37:58Z theraven $
+# $FreeBSD: head/misc/gnustep-examples/Makefile 494239 2019-03-01 06:45:44Z antoine $
 
 PORTNAME=	gnustep-examples
 PORTVERSION=	1.4.0
@@ -11,6 +11,8 @@ COMMENT=	GNUstep example applications
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 USES=		gnustep
 USE_GNUSTEP=	back build

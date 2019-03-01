@@ -1,11 +1,12 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net-p2p/ctorrent/Makefile 466905 2018-04-09 22:17:36Z dbaio $
+# $FreeBSD: head/net-p2p/ctorrent/Makefile 494244 2019-03-01 08:59:44Z danfe $
 
 PORTNAME=	ctorrent
 PORTVERSION=	3.3.2
 PORTREVISION=	3
 CATEGORIES=	net-p2p
-MASTER_SITES=	http://www.rahul.net/dholmes/ctorrent/
+MASTER_SITES=	SF/dtorrent/dtorrent/${PORTVERSION} \
+		http://www.rahul.net/dholmes/ctorrent/
 DISTNAME=	${PORTNAME}-dnh${PORTVERSION}
 
 MAINTAINER=	dinoex@FreeBSD.org

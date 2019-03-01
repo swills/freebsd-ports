@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/net/p5-Apache2-SOAP/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/net/p5-Apache2-SOAP/Makefile 494035 2019-02-27 09:00:52Z amdmi3 $
 
 PORTNAME=	Apache2-SOAP
 PORTVERSION=	0.73
@@ -11,11 +11,15 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	numisemis@yahoo.com
 COMMENT=	Apache2 mod_perl2 SOAP Server
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2 \
 		p5-SOAP-Lite>=0:net/p5-SOAP-Lite
 
 USES=		apache:2.2+ perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

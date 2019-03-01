@@ -1,10 +1,10 @@
 # Created by: Loïc Bartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/deskutils/freeplane/Makefile 486626 2018-12-04 18:22:35Z swills $
+# $FreeBSD: head/deskutils/freeplane/Makefile 494087 2019-02-27 21:41:48Z swills $
 
 PORTNAME=	freeplane
-DISTVERSION=	1.7.3
+DISTVERSION=	1.7.5
 CATEGORIES=	deskutils editors java
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20stable
+MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20stable/archive/${PORTVERSION}
 DISTNAME=	${PORTNAME}_bin-${PORTVERSION}
 
 MAINTAINER=	lbartoletti@tuxfamily.org
@@ -14,10 +14,12 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/license.txt
 
 USES=		cpe zip
+
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
 NO_ARCH=	yes
 NO_BUILD=	yes
+PLIST_SUB=	PORTVERSION="${PORTVERSION}"
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/ports-mgmt/poudriere/Makefile 482940 2018-10-24 22:09:20Z bdrewery $
+# $FreeBSD: head/ports-mgmt/poudriere/Makefile 493976 2019-02-26 18:26:46Z bdrewery $
 
 PORTNAME=	poudriere
-DISTVERSION=	3.2.8
+DISTVERSION=	3.3.0
 PORTREVISION=	0
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/ \
@@ -21,8 +21,8 @@ GH_ACCOUNT=	freebsd
 GNU_CONFIGURE=	yes
 ETCDIR=		${PREFIX}/etc/poudriere.d
 
-OPTIONS_DEFINE=	CERTS DIALOG4PORTS ZSH QEMU EXAMPLES
-OPTIONS_DEFAULT=CERTS DIALOG4PORTS ZSH
+OPTIONS_DEFINE=	BASH CERTS DIALOG4PORTS EXAMPLES QEMU ZSH
+OPTIONS_DEFAULT=BASH CERTS DIALOG4PORTS ZSH
 OPTIONS_SUB=	yes
 
 CERTS_DESC=		Install checksum and SSL certificates for jail creation
@@ -58,6 +58,11 @@ post-patch:
 post-install:
 	${LN} -fs ${LOCALBASE}/share/freebsd/MANIFESTS \
 	    ${STAGEDIR}${DATADIR}/MANIFESTS
+
+post-install-BASH-on:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/bash-completion/completions/
+	${INSTALL_DATA} ${WRKSRC}/completions/bash/poudriere \
+	    ${STAGEDIR}${PREFIX}/share/bash-completion/completions/
 
 post-install-ZSH-on:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/zsh/site-functions/

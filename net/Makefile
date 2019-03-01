@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 493721 2019-02-23 17:36:07Z tcberner $
+# $FreeBSD: head/net/Makefile 494078 2019-02-27 18:57:12Z pi $
 #
 
     COMMENT = Networking tools
@@ -76,7 +76,7 @@
     SUBDIR += cagibi
     SUBDIR += calendarsupport
     SUBDIR += ccxstream
-    SUBDIR += ceph
+    SUBDIR += ceph12
     SUBDIR += ceph13
     SUBDIR += cf
     SUBDIR += charm

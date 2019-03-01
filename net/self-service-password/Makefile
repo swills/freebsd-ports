@@ -1,10 +1,11 @@
 # Created by: Krzysztof Stryjek <ports@bsdserwis.com>
-# $FreeBSD: head/net/self-service-password/Makefile 462448 2018-02-20 20:28:59Z yuri $
+# $FreeBSD: head/net/self-service-password/Makefile 494047 2019-02-27 11:54:07Z tobik $
 
 PORTNAME=	self-service-password
-DISTVERSION=	1.2
+DISTVERSION=	1.3
 CATEGORIES=	net www
 MASTER_SITES=	http://ltb-project.org/archives/
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	ltb-project-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@bsdserwis.com
@@ -13,7 +14,7 @@ COMMENT=	Set of PHP-scripts to change LDAP password over the web
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-USES=		php:web
+USES=		php:flavors,web
 USE_PHP=	filter hash ldap mbstring openssl phar session
 
 NO_BUILD=	yes

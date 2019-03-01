@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/xen-kernel47/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/emulators/xen-kernel47/Makefile 494037 2019-02-27 09:36:06Z royger $
 
 PORTNAME=	xen
 PORTVERSION=	4.7.2
@@ -13,6 +13,9 @@ COMMENT=	Hypervisor using a microkernel design
 LICENSE=	GPLv2
 
 ONLY_FOR_ARCHS=	amd64
+
+DEPRECATED=	This port is about to be removed, please update to a newer Xen version
+EXPIRATION_DATE=2019-07-01
 
 USES=		cpe gmake python:2.7,build
 

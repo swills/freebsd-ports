@@ -1,5 +1,5 @@
 # Created by: Eric Anholt
-# $FreeBSD: head/devel/git/Makefile 493857 2019-02-25 13:22:19Z garga $
+# $FreeBSD: head/devel/git/Makefile 494207 2019-02-28 21:36:21Z sunpoet $
 
 PORTNAME=	git
 DISTVERSION=	2.21.0
@@ -104,7 +104,7 @@ GUI_USES=		tk
 GUI_MAKE_ARGS=		TCL_PATH=${TCLSH} TCLTK_PATH=${WISH}
 GUI_MAKE_ARGS_OFF=	NO_TCLTK=yes
 
-# While this port does not explicity honor WITH_SUBVERSION_VER knob it does
+# While this port does not explicitly honor WITH_SUBVERSION_VER knob it does
 # depend upon devel/p5-subversion, which does honor that knob. If you want
 # to have git use devel/subversion18 it will be brought in through
 # devel/p5-subversion if you set WITH_SUBVERSION_VER=18. Otherwise

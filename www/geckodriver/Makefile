@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/geckodriver/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/www/geckodriver/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	geckodriver
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.23.0
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	www
 
 MAINTAINER=	daniel@blodan.se
@@ -54,7 +54,7 @@ CARGO_CRATES=	adler32-1.0.3 \
 		kernel32-sys-0.2.2 \
 		lazy_static-1.1.0 \
 		lazycell-1.1.0 \
-		libc-0.2.43 \
+		libc-0.2.49 \
 		lock_api-0.1.3 \
 		log-0.4.5 \
 		matches-0.1.8 \

@@ -1,13 +1,15 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 493334 2019-02-19 00:15:50Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 494121 2019-02-28 01:24:25Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.6-7807 # git rev-list --count HEAD
-DISTVERSIONSUFFIX=	-g4c72f7c1d
+DISTVERSION=	0.0.6-7816 # git rev-list --count HEAD
+DISTVERSIONSUFFIX=	-gde5379a69
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
 PATCHFILES+=	1e28a22860c0.patch:-p1
+PATCHFILES+=	ff31ccc1eddf.patch:-p1 # version
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	PS3 emulator/debugger
@@ -74,6 +76,7 @@ VULKAN_CMAKE_BOOL=	USE_VULKAN
 
 post-patch:
 	@${REINPLACE_CMD} -e '/GIT_BRANCH/s/unknown/master/' \
+		-e '/GIT_TAG/s/unknown/${GH_TAGNAME:C/-.*//}/' \
 		-e '/GIT_VERSION/s/unknown/${GH_TAGNAME:C/[^-]*-//}/' \
 		${WRKSRC}/${PORTNAME}/git-version.cmake
 

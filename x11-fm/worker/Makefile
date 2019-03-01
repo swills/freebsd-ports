@@ -1,8 +1,8 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/x11-fm/worker/Makefile 492118 2019-02-04 11:52:13Z linimon $
+# $FreeBSD: head/x11-fm/worker/Makefile 494044 2019-02-27 10:31:38Z danfe $
 
 PORTNAME=	worker
-PORTVERSION=	3.15.3
+PORTVERSION=	3.15.4
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.boomerangsworld.de/cms/worker/downloads/
 
@@ -23,11 +23,10 @@ SHEBANG_FILES=	${WRKSRC}/scripts/*.sh \
 
 OPTIONS_DEFINE=	AVFS HAL INOTIFY LUA XFT
 OPTIONS_DEFAULT=	AVFS INOTIFY XFT
-
 OPTIONS_EXCLUDE_DragonFly=	AVFS
 
 INOTIFY_DESC=	Monitor directory changes via libinotify
-AVFS_DESC=	Use AVFS library to access an archives
+AVFS_DESC=	Use AVFS library to access archives
 
 AVFS_LIB_DEPENDS=	libavfs.so:sysutils/avfs
 

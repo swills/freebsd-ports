@@ -1,8 +1,8 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/devel/py-flake8/Makefile 493422 2019-02-20 13:07:25Z amdmi3 $
+# $FreeBSD: head/devel/py-flake8/Makefile 494053 2019-02-27 13:28:44Z amdmi3 $
 
 PORTNAME=	flake8
-PORTVERSION=	3.7.6
+PORTVERSION=	3.7.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

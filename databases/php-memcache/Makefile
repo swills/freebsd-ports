@@ -1,8 +1,10 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/databases/php-memcache/Makefile 489105 2019-01-02 23:57:56Z sunpoet $
+# $FreeBSD: head/databases/php-memcache/Makefile 494193 2019-02-28 21:35:07Z sunpoet $
 
 PORTNAME=	memcache
-PORTVERSION=	3.0.9
+PORTVERSION=	4.0.0
+DISTVERSIONPREFIX=	v
+DISTVERSIONSUFFIX=	-php73
 CATEGORIES=	databases
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
@@ -20,11 +22,9 @@ USES=		dos2unix php:ext
 USE_PHP=	session:build zlib:build
 
 CONFIGURE_ARGS=	--with-zlib-dir=/usr
-USE_CSTD=	gnu89
 
 GH_ACCOUNT=	websupport-sk
 GH_PROJECT=	pecl-${PORTNAME}
-GH_TAGNAME=	e702b5f
 USE_GITHUB=	yes
 
 post-install-EXAMPLES-on:

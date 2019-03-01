@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/devel/imake/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/devel/imake/Makefile 494049 2019-02-27 12:55:18Z zeising $
 
 PORTNAME=	imake
 PORTVERSION=	1.0.7
@@ -9,6 +9,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Imake and other utilities from X.Org
+
+LICENSE=	MIT
+LICENSE_FILE= ${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	tradcpp:devel/tradcpp
 RUN_DEPENDS=	gccmakedep:devel/gccmakedep \

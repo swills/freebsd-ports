@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/puppetdb-cli/Makefile 492432 2019-02-08 12:23:26Z tobik $
+# $FreeBSD: head/databases/puppetdb-cli/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	puppetdb-cli
 PORTVERSION=	1.2.5
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	databases
 
 MAINTAINER=	puppet@FreeBSD.org
@@ -46,7 +46,7 @@ CARGO_CRATES=	advapi32-sys-0.2.0 \
 		ktmw32-sys-0.1.0 \
 		language-tags-0.2.2 \
 		lazy_static-0.2.11 \
-		libc-0.2.34 \
+		libc-0.2.49 \
 		log-0.3.8 \
 		matches-0.1.6 \
 		memchr-2.0.1 \

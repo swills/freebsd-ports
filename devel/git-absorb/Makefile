@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/git-absorb/Makefile 492487 2019-02-09 09:20:26Z tcberner $
+# $FreeBSD: head/devel/git-absorb/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	git-absorb
 DISTVERSION=	0.3.0
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	greg@unrelenting.technology
@@ -32,7 +33,7 @@ CARGO_CRATES=	ansi_term-0.10.2 \
 		isatty-0.1.6 \
 		kernel32-sys-0.2.2 \
 		lazy_static-1.0.0 \
-		libc-0.2.43 \
+		libc-0.2.49 \
 		libgit2-sys-0.7.10 \
 		libz-sys-1.0.25 \
 		log-0.4.6 \

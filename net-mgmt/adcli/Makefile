@@ -1,9 +1,8 @@
 # Created by: Mikhail T. <mi@aldan.algebra.com>
-# $FreeBSD: head/net-mgmt/adcli/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/net-mgmt/adcli/Makefile 494164 2019-02-28 17:09:45Z mi $
 
 PORTNAME=	adcli
-PORTVERSION=	0.8.1
-PORTREVISION=	1
+PORTVERSION=	0.8.2
 CATEGORIES=	net-mgmt net security
 MASTER_SITES=	https://www.freedesktop.org/software/realmd/releases/
 

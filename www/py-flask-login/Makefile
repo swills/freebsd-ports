@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-flask-login/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-flask-login/Makefile 494058 2019-02-27 15:03:59Z swills $
 
 PORTNAME=	Flask-Login
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,6 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.9:www/py-flask@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

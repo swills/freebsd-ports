@@ -1,5 +1,5 @@
 # Created by: sumikawa
-# $FreeBSD: head/security/racoon2-legacy/Makefile 488770 2018-12-31 12:30:02Z rene $
+# $FreeBSD: head/security/racoon2-legacy/Makefile 494185 2019-02-28 20:13:08Z cy $
 
 PORTNAME=	racoon2
 PORTVERSION=	20100526a
@@ -12,6 +12,8 @@ MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Racoon2 IPsec daemon
 
 CONFLICTS=	racoon2-[0-9]*
+BROKEN_FreeBSD_12=	Will not build with openssl111
+BROKEN_FreeBSD_13=	Will not build with openssl111
 
 USES=		perl5 tar:tgz ssl
 CONFIGURE_ARGS+=	--disable-kinkd

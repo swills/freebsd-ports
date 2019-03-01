@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/svt-vp9/Makefile 493477 2019-02-20 23:59:19Z jbeich $
+# $FreeBSD: head/multimedia/svt-vp9/Makefile 494114 2019-02-28 00:58:00Z jbeich $
 
 PORTNAME=	svt-vp9
 PORTVERSION=	s20180215
@@ -47,7 +47,7 @@ post-patch:
 	@${REINPLACE_CMD} -i .opsys 's/Linux/${OPSYS}/' \
 		${WRKSRC}/CMakeLists.txt \
 		${WRKSRC}/Source/Lib/*/CMakeLists.txt
-	@${GREP} -Flr '__linux' ${WRKSRC} | ${XARGS} \
+	@${GREP} --exclude='*/third_party/*' -Flr '__linux' ${WRKSRC} | ${XARGS} \
 		${REINPLACE_CMD} -i .opsys -E 's/__linux(__)?/__${OPSYS}__/'
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/xeus/Makefile 492062 2019-02-03 19:43:05Z antoine $
+# $FreeBSD: head/devel/xeus/Makefile 494242 2019-03-01 08:08:14Z tobik $
 
 PORTNAME=	xeus
 DISTVERSION=	0.18.1
@@ -9,8 +9,6 @@ COMMENT=	C++ implementation of the Jupyter kernel protocol
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN=		fails to configure
 
 BUILD_DEPENDS=	cppzmq>0:net/cppzmq \
 		nlohmann-json>0:devel/nlohmann-json \

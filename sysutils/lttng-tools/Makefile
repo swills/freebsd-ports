@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/sysutils/lttng-tools/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/sysutils/lttng-tools/Makefile 494067 2019-02-27 16:20:08Z mmokhi $
 
 PORTNAME=	lttng-tools
 PORTVERSION=	2.9.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lttng.org/files/${PORTNAME}/
 
@@ -21,8 +21,8 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 
 BROKEN_powerpc64=	fails to compile: cc: Internal error: Segmentation fault (program ld)
 
-USES=		autoreconf bison libtool localbase pathfix pkgconfig \
-	    shebangfix tar:bzip2
+USES=		autoreconf bison compiler:c11 gnome libtool localbase pathfix \
+		pkgconfig shebangfix tar:bzip2
 USE_LDCONFIG=	yes
 USE_GNOME=	libxml2
 

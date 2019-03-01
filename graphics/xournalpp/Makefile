@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/xournalpp/Makefile 493163 2019-02-17 10:19:59Z yuri $
+# $FreeBSD: head/graphics/xournalpp/Makefile 494131 2019-02-28 07:06:36Z yuri $
 
 PORTNAME=	xournalpp
-DISTVERSION=	1.0.8-7
-DISTVERSIONSUFFIX=	-g3783b7e0
+DISTVERSION=	1.0.8-83
+DISTVERSIONSUFFIX=	-g5a8b0c59
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

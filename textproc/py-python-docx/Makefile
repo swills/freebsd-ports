@@ -1,12 +1,12 @@
-# $FreeBSD: head/textproc/py-python-docx/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/textproc/py-python-docx/Makefile 494046 2019-02-27 11:26:52Z wen $
 
 PORTNAME=	python-docx
-PORTVERSION=	0.8.6
+PORTVERSION=	0.8.10
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	jjachuf@gmail.com
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Python library for creating and updating Microsoft Word files
 
 LICENSE=	MIT

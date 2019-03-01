@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 493354 2019-02-19 08:18:07Z tobik $
+# $FreeBSD: head/sysutils/Makefile 494039 2019-02-27 09:40:36Z royger $
 #
 
     COMMENT = System utilities
@@ -1502,7 +1502,7 @@
     SUBDIR += xe
     SUBDIR += xe-guest-utilities
     SUBDIR += xen-guest-tools
-    SUBDIR += xen-tools411
+    SUBDIR += xen-tools
     SUBDIR += xen-tools47
     SUBDIR += xfburn
     SUBDIR += xfce4-battery-plugin

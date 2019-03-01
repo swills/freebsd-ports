@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/libzmq3/Makefile 464051 2018-03-10 08:33:10Z amdmi3 $
+# $FreeBSD: head/net/libzmq3/Makefile 494242 2019-03-01 08:08:14Z tobik $
 
 PORTNAME=	libzmq3
 PORTVERSION=	3.2.5
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.zeromq.org/
 DISTNAME=	zeromq-${DISTVERSION}
