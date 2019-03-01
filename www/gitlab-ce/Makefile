@@ -173,6 +173,8 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-peek-rblineprof-rails50>=0.2.0:devel/rubygem-peek-rblineprof-rails50 \
 	rubygem-peek-redis-rails50>=1.2.0:devel/rubygem-peek-redis-rails50 \
 	rubygem-prometheus-client-mmap>=0.9.4:devel/rubygem-prometheus-client-mmap \
+	rubygem-opentracing04>=0.4.3:devel/rubygem-opentracing04 \
+	rubygem-jaeger-client>=0.10.0:devel/rubygem-jaeger-client \
 	rubygem-octokit>=4.9:net/rubygem-octokit \
 	rubygem-mail_room>=0.9.1:mail/rubygem-mail_room \
 	rubygem-email_reply_trimmer>=0.1:mail/rubygem-email_reply_trimmer \
