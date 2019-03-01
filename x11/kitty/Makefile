@@ -27,7 +27,7 @@ LIB_DEPENDS= libdbus-1.so:devel/dbus \
 
 USES=  gl gmake pkgconfig:build python:3.5+ shebangfix terminfo
 USE_GL=  gl
-USE_XORG= x11 xft xrandr xinerama xcb xcursor
+USE_XORG= x11 xft xrandr xinerama xcb xcursor xi
 USE_GITHUB= yes
 GH_ACCOUNT= kovidgoyal
 
