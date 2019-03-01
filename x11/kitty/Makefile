@@ -13,17 +13,17 @@ LICENSE= GPLv3
 LICENSE_FILE= ${WRKSRC}/LICENSE
 
 LIB_DEPENDS= libdbus-1.so:devel/dbus \
-  libfontconfig.so:x11-fonts/fontconfig \
-  libfreetype.so:print/freetype2 \
-  libglfw.so:graphics/glfw \
-  libharfbuzz.so:print/harfbuzz \
-  libpng.so:graphics/png \
-  libxkbcommon.so:x11/libxkbcommon \
-  libncursesw.so:devel/ncurses \
-  libdbus-1.so:devel/dbus \
-  libwayland-egl.so:graphics/wayland \
-  libepoll-shim.so:devel/libepoll-shim \
-  libpng.so:graphics/png
+	libfontconfig.so:x11-fonts/fontconfig \
+	libfreetype.so:print/freetype2 \
+	libglfw.so:graphics/glfw \
+	libharfbuzz.so:print/harfbuzz \
+	libpng.so:graphics/png \
+	libxkbcommon.so:x11/libxkbcommon \
+	libncursesw.so:devel/ncurses \
+	libdbus-1.so:devel/dbus \
+	libwayland-egl.so:graphics/wayland \
+	libepoll-shim.so:devel/libepoll-shim \
+	libpng.so:graphics/png
 
 USES=  gl gmake pkgconfig:build python:3.5+ shebangfix terminfo
 USE_GL=  gl
