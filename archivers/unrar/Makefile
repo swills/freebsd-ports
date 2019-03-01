@@ -1,13 +1,13 @@
 # Created by: ache
-# $FreeBSD: head/archivers/unrar/Makefile 489205 2019-01-03 19:57:11Z sunpoet $
+# $FreeBSD: head/archivers/unrar/Makefile 494094 2019-02-27 23:47:14Z sunpoet $
 
 PORTNAME=	unrar
-DISTVERSION=	5.61
+DISTVERSION=	5.70
 PORTEPOCH=	6
 CATEGORIES+=	archivers
-MASTER_SITES=	https://www.rarlab.com/rar/ \
+MASTER_SITES=	https://rarlab.com/rar/ \
 		LOCAL/sunpoet
-DISTNAME=	unrarsrc-5.6.8
+DISTNAME=	unrarsrc-5.7.3
 
 MAINTAINER?=	sunpoet@FreeBSD.org
 COMMENT=	Extract, view & test RAR archives
@@ -21,7 +21,7 @@ OPTIONS_DEFINE=	OPENSSL_AES
 OPTIONS_DEFAULT=OPENSSL_AES
 OPENSSL_AES_DESC=	Use OpenSSL implementation of AES
 
-CONFLICTS_INSTALL?=	zh-unrar unrar-iconv
+CONFLICTS_INSTALL?=	unrar-iconv
 
 LDFLAGS+=	-lpthread
 MAKE_ARGS=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" LDFLAGS="${LDFLAGS}" STRIP="${STRIP_CMD}"

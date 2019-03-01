@@ -1,8 +1,8 @@
-# $FreeBSD: head/irc/bitlbee-mastodon/Makefile 493081 2019-02-16 20:03:24Z 0mp $
+# $FreeBSD: head/irc/bitlbee-mastodon/Makefile 494016 2019-02-27 03:51:47Z tobik $
 
 PORTNAME=	bitlbee-mastodon
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.4.0
+DISTVERSION=	1.4.2
 CATEGORIES=	irc
 
 MAINTAINER=	tobias.rehbein@web.de
@@ -21,6 +21,7 @@ GH_ACCOUNT=	kensanata
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-plugindir=${PREFIX}/lib/bitlbee
+INSTALL_TARGET=	install-strip
 
 PLIST_FILES=	lib/bitlbee/mastodon.so \
 		share/bitlbee/mastodon-help.txt

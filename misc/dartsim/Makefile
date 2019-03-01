@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/dartsim/Makefile 493238 2019-02-18 04:35:01Z yuri $
+# $FreeBSD: head/misc/dartsim/Makefile 494224 2019-03-01 02:09:50Z yuri $
 
 PORTNAME=	dartsim
 DISTVERSIONPREFIX=	v
-DISTVERSION=	6.7.2
+DISTVERSION=	6.7.3
 CATEGORIES=	misc
 
 MAINTAINER=	yuri@FreeBSD.org

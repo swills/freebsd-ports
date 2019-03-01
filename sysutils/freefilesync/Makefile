@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/sysutils/freefilesync/Makefile 493853 2019-02-25 12:47:20Z bapt $
+# $FreeBSD: head/sysutils/freefilesync/Makefile 494241 2019-03-01 06:51:46Z antoine $
 
 PORTNAME=	freefilesync
 DISTVERSION=	9.8
@@ -14,6 +14,8 @@ COMMENT=	Backup software to synchronize files and folders
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/License.txt
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${LOCALBASE}/include/zenxml/xml.h:textproc/zenxml
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \

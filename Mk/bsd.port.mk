@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 492696 2019-02-11 15:21:25Z amdmi3 $
+# $FreeBSD: head/Mk/bsd.port.mk 493977 2019-02-26 18:54:42Z sunpoet $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -4582,7 +4582,7 @@ check-man: stage
 .endif
 
 # Compress all manpage not already compressed which are not hardlinks
-# Find all manpages which are not compressed and are hadlinks, and only get the list of inodes concerned, for each of them compress the first one found and recreate the hardlinks for the others
+# Find all manpages which are not compressed and are hardlinks, and only get the list of inodes concerned, for each of them compress the first one found and recreate the hardlinks for the others
 # Fixes all dead symlinks left by the previous round
 .if !target(compress-man)
 compress-man:
@@ -5011,7 +5011,7 @@ showconfig: check-config
 
 .if !target(showconfig-recursive)
 showconfig-recursive:
-	@${ECHO_MSG} "===> The following configuration options are available for ${PKGNAME} and dependencies";
+	@${ECHO_MSG} "===> The following configuration options are available for ${PKGNAME} and its dependencies";
 	@recursive_cmd="showconfig"; \
 	    recursive_dirs="${.CURDIR} $$(${ALL-DEPENDS-FLAVORS-LIST})"; \
 		${_FLAVOR_RECURSIVE_SH}
@@ -5038,7 +5038,7 @@ rmconfig:
 
 .if !target(rmconfig-recursive)
 rmconfig-recursive:
-	@${ECHO_MSG} "===> Removing user-specified options for ${PKGNAME} and dependencies";
+	@${ECHO_MSG} "===> Removing user-specified options for ${PKGNAME} and its dependencies";
 	@recursive_cmd="rmconfig"; \
 	    recursive_dirs="${.CURDIR} $$(${ALL-DEPENDS-FLAVORS-LIST})"; \
 		${_FLAVOR_RECURSIVE_SH}

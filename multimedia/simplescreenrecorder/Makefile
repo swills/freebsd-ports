@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 494230 2019-03-01 03:05:04Z yuri $
 
 PORTNAME=	simplescreenrecorder
-DISTVERSION=	0.3.11
-PORTREVISION=	2
+DISTVERSION=	0.3.11-20
+DISTVERSIONSUFFIX=	-g973cc00
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -19,7 +19,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	MaartenBaert
 GH_PROJECT=	ssr
 USE_QT=		core gui widgets x11extras buildtools_build linguisttools_build qmake_build
-USE_XORG=	x11 xext xfixes xi
+USE_XORG=	x11 xext xfixes xi xinerama
 
 CMAKE_ON=	WITH_QT5
 CMAKE_OFF=	WITH_GLINJECT  # doesn't yet work on FreeBSD: https://github.com/MaartenBaert/ssr/issues/586#issuecomment-343780107

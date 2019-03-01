@@ -1,8 +1,8 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/devel/pycos/Makefile 488557 2018-12-27 17:22:19Z mi $
+# $FreeBSD: head/devel/pycos/Makefile 493987 2019-02-26 23:28:02Z mi $
 
 PORTNAME=	pycos
-PORTVERSION=	4.8.9
+PORTVERSION=	4.8.11
 CATEGORIES=	devel net
 MASTER_SITES=	SF/${PORTNAME}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

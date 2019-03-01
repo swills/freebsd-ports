@@ -1,8 +1,8 @@
 # Created by: mat@FreeBSD.org
-# $FreeBSD: head/net/rubygem-epp-client-secdns/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/net/rubygem-epp-client-secdns/Makefile 494253 2019-03-01 10:10:40Z mat $
 
 PORTNAME=	epp-client-secdns
-PORTVERSION=	0.15.1
+PORTVERSION=	0.15.2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

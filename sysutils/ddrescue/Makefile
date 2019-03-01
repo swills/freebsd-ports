@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/ddrescue/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/sysutils/ddrescue/Makefile 494162 2019-02-28 16:53:41Z swills $
 
 PORTNAME=	ddrescue
-PORTVERSION=	1.22
-PORTREVISION=	1
+PORTVERSION=	1.23
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 EXTRACT_SUFX=	.tar.lz

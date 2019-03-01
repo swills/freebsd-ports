@@ -1,9 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/digdag/Makefile 493327 2019-02-18 21:52:28Z ehaupt $
+# $FreeBSD: head/sysutils/digdag/Makefile 494179 2019-02-28 19:05:12Z ehaupt $
 
 PORTNAME=	digdag
-DISTVERSION=	0.9.33
-PORTREVISION=	1
+DISTVERSION=	0.9.34
 CATEGORIES=	sysutils java
 MASTER_SITES=	https://dl.bintray.com/digdag/maven/ \
 		LOCAL/ehaupt

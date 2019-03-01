@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx-devel/Makefile 492083 2019-02-03 23:34:54Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile 494217 2019-02-28 22:56:58Z osa $
 
 PORTNAME=	nginx
-PORTVERSION=	1.15.8
-PORTREVISION=	4
+PORTVERSION=	1.15.9
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/ \
 		LOCAL/osa
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFLICTS_INSTALL=	nginx
 
-PORTSCOUT=	limit:^1\.14\.[0-9]*
+PORTSCOUT=	limit:^1\.15\.[0-9]*
 
 USES=		cpe
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/x11-clocks/Makefile 494161 2019-02-28 16:51:52Z kai $
 #
 
     COMMENT = X11 clocks
@@ -26,6 +26,7 @@
     SUBDIR += mouseclock
     SUBDIR += oclock
     SUBDIR += osdclock
+    SUBDIR += p5-Tk-Clock
     SUBDIR += pclock
     SUBDIR += rclock
     SUBDIR += stopwatch

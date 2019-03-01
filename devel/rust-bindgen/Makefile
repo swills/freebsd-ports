@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/rust-bindgen/Makefile 493923 2019-02-26 00:38:29Z jbeich $
+# $FreeBSD: head/devel/rust-bindgen/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	rust-bindgen
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.47.3
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	gecko@FreeBSD.org
@@ -37,7 +38,7 @@ CARGO_CRATES=	aho-corasick-0.6.8 \
 		hashbrown-0.1.7 \
 		humantime-1.1.1 \
 		lazy_static-1.1.0 \
-		libc-0.2.43 \
+		libc-0.2.49 \
 		libloading-0.5.0 \
 		log-0.4.5 \
 		memchr-2.1.0 \

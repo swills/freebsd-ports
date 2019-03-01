@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11/alacritty/Makefile 492933 2019-02-14 21:51:15Z zeising $
+# $FreeBSD: head/x11/alacritty/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	alacritty
 PORTVERSION=	0.2.9
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	zeising@FreeBSD.org
@@ -143,7 +144,7 @@ CARGO_CRATES=	MacTypes-sys-2.1.0 \
 		khronos_api-3.0.0 \
 		lazy_static-1.2.0 \
 		lazycell-1.2.1 \
-		libc-0.2.48 \
+		libc-0.2.49 \
 		libflate-0.1.19 \
 		libloading-0.5.0 \
 		libz-sys-1.0.25 \

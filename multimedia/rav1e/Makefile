@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/rav1e/Makefile 493921 2019-02-26 00:23:20Z jbeich $
+# $FreeBSD: head/multimedia/rav1e/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	rav1e
-PORTVERSION=	s20190225
+PORTVERSION=	s20190226
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -16,7 +17,7 @@ BUILD_DEPENDS_amd64=	nasm:devel/nasm
 USES=		cargo
 USE_GITHUB=	yes
 GH_ACCOUNT=	xiph
-GH_TAGNAME=	7fd3938
+GH_TAGNAME=	5fb1512
 PLIST_FILES=	bin/${PORTNAME}
 
 CARGO_CRATES=	aho-corasick-0.6.10 \

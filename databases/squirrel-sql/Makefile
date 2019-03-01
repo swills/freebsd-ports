@@ -1,8 +1,8 @@
 # Created by: Roy Boerner
-# $FreeBSD: head/databases/squirrel-sql/Makefile 489424 2019-01-06 00:12:30Z swills $
+# $FreeBSD: head/databases/squirrel-sql/Makefile 494009 2019-02-27 02:45:10Z swills $
 
 PORTNAME=	squirrel-sql
-PORTVERSION=	3.9.0
+PORTVERSION=	3.9.1
 CATEGORIES=	databases java
 MASTER_SITES=	SF/${PORTNAME}/1-stable/${PORTVERSION}-plainzip
 DISTNAME=	squirrelsql-${PORTVERSION}-optional

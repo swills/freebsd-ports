@@ -1,5 +1,5 @@
 # Created by: Yarodin <yarodin@gmail.com>
-# $FreeBSD: head/archivers/unrar-iconv/Makefile 346527 2014-02-28 15:15:19Z sunpoet $
+# $FreeBSD: head/archivers/unrar-iconv/Makefile 494095 2019-02-27 23:47:20Z sunpoet $
 
 PKGNAMESUFFIX=	-iconv
 
@@ -13,7 +13,7 @@ CPPFLAGS+=	-DWITH_ICONV -I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}
 USES=		iconv
 
-CONFLICTS_INSTALL=	unrar-[0-9]* zh-unrar-[0-9]*
+CONFLICTS_INSTALL=	unrar
 
 post-install:
 	@${ECHO_MSG} "===> Added iconv support, see new switches:"

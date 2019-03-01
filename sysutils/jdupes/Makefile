@@ -1,9 +1,9 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/sysutils/jdupes/Makefile 476624 2018-08-07 20:02:59Z tobik $
+# $FreeBSD: head/sysutils/jdupes/Makefile 494076 2019-02-27 18:15:54Z swills $
 
 PORTNAME=	jdupes
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.10.2
+DISTVERSION=	1.12
 CATEGORIES=	sysutils
 
 MAINTAINER=	tom@hur.st

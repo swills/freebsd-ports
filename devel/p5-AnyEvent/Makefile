@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-AnyEvent/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-AnyEvent/Makefile 494001 2019-02-26 23:51:12Z sunpoet $
 
 PORTNAME=	AnyEvent
-PORTVERSION=	7.14
+PORTVERSION=	7.15
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
@@ -17,8 +17,9 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Canary-Stability>=0:devel/p5-Canary-Stability
 TEST_DEPENDS=	p5-Net-SSLeay>=0:security/p5-Net-SSLeay
 
-NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-starlette/Makefile 493779 2019-02-24 17:55:57Z sunpoet $
+# $FreeBSD: head/www/py-starlette/Makefile 494101 2019-02-27 23:47:52Z sunpoet $
 
 PORTNAME=	starlette
-PORTVERSION=	0.11.2
+PORTVERSION=	0.11.3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

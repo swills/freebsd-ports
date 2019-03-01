@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/leiningen/Makefile 492677 2019-02-11 09:13:51Z tobik $
+# $FreeBSD: head/devel/leiningen/Makefile 494025 2019-02-27 06:38:46Z tobik $
 
 PORTNAME=	leiningen
-PORTVERSION=	2.9.0
+PORTVERSION=	2.9.1
 CATEGORIES=	devel lisp java
 MASTER_SITES=	https://github.com/technomancy/leiningen/releases/download/${PORTVERSION}/:standalone
 DISTFILES=	leiningen-${PORTVERSION}-standalone.zip:standalone

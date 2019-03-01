@@ -1,8 +1,9 @@
-# $FreeBSD: head/net/routinator/Makefile 493619 2019-02-22 22:37:02Z kai $
+# $FreeBSD: head/net/routinator/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	routinator
 PORTVERSION=	0.3.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	jaap@NLnetLabs.nl
@@ -61,7 +62,7 @@ CARGO_CRATES=	ansi_term-0.11.0 \
 		kernel32-sys-0.2.2 \
 		lazy_static-1.2.0 \
 		lazycell-1.2.1 \
-		libc-0.2.48 \
+		libc-0.2.49 \
 		lock_api-0.1.5 \
 		log-0.4.6 \
 		memoffset-0.2.1 \

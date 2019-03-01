@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-aws-xray-sdk/Makefile 492085 2019-02-03 23:58:37Z sunpoet $
+# $FreeBSD: head/devel/py-aws-xray-sdk/Makefile 494195 2019-02-28 21:35:18Z sunpoet $
 
 PORTNAME=	aws-xray-sdk
-PORTVERSION=	2.3.0
+PORTVERSION=	2.4.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,5 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}botocore>=1.11.3:devel/py-botocore@${PY_FLAV
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

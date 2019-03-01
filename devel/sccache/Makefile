@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/sccache/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/devel/sccache/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	sccache
 DISTVERSION=	2.8.0.alpha0
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	devel
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -106,7 +106,7 @@ CARGO_CRATES=	adler32-1.0.3 \
 		lazy_static-0.2.11 \
 		lazy_static-1.1.0 \
 		lazycell-0.6.0 \
-		libc-0.2.43 \
+		libc-0.2.49 \
 		libflate-0.1.16 \
 		libmount-0.1.11 \
 		linked-hash-map-0.2.1 \

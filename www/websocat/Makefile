@@ -1,10 +1,10 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/websocat/Makefile 490600 2019-01-17 19:50:38Z jbeich $
+# $FreeBSD: head/www/websocat/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	websocat
 DISTVERSION=	1.2.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	www
 
 MAINTAINER=	osa@FreeBSD.org
@@ -51,7 +51,7 @@ CARGO_CRATES=	arrayvec-0.4.7 \
 		language-tags-0.2.2 \
 		lazy_static-1.1.0 \
 		lazycell-1.2.0 \
-		libc-0.2.43 \
+		libc-0.2.49 \
 		lock_api-0.1.4 \
 		log-0.3.9 \
 		log-0.4.6 \

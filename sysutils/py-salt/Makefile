@@ -1,9 +1,8 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/sysutils/py-salt/Makefile 485178 2018-11-17 17:45:39Z sunpoet $
+# $FreeBSD: head/sysutils/py-salt/Makefile 494060 2019-02-27 15:05:33Z woodsb02 $
 
 PORTNAME=	salt
-PORTVERSION=	2018.3.3
-PORTREVISION=	1
+PORTVERSION=	2019.2.0
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

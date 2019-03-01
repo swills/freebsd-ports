@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-App-Cache/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/devel/p5-App-Cache/Makefile 494245 2019-03-01 09:00:52Z amdmi3 $
 
 PORTNAME=	App-Cache
 PORTVERSION=	0.37
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy application-level caching
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Class-Accessor-Chained>=0:devel/p5-Class-Accessor-Chained \
 		p5-File-Find-Rule>=0:devel/p5-File-Find-Rule \
@@ -20,5 +23,6 @@ RUN_DEPENDS=	p5-Class-Accessor-Chained>=0:devel/p5-Class-Accessor-Chained \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

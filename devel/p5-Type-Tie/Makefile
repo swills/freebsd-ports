@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Type-Tie/Makefile 489783 2019-01-09 14:51:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Type-Tie/Makefile 493988 2019-02-26 23:50:02Z sunpoet $
 
 PORTNAME=	Type-Tie
-PORTVERSION=	0.013
+PORTVERSION=	0.014
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TOBYINK

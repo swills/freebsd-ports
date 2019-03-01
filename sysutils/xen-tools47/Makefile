@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/xen-tools47/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/sysutils/xen-tools47/Makefile 494037 2019-02-27 09:36:06Z royger $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools47
@@ -25,6 +25,9 @@ OPTIONS_DEFINE=	DOCS
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"not yet ported to anything other than amd64"
+
+DEPRECATED=	This port is about to be removed, please update to a newer Xen version
+EXPIRATION_DATE=2019-07-01
 
 USES=		cpe gettext gmake libtool localbase:ldflags perl5 pkgconfig \
 		python:2.7 shebangfix

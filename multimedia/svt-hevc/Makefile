@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/svt-hevc/Makefile 493745 2019-02-24 07:07:05Z jbeich $
+# $FreeBSD: head/multimedia/svt-hevc/Makefile 494114 2019-02-28 00:58:00Z jbeich $
 
 PORTNAME=	svt-hevc
 DISTVERSIONPREFIX=	v
@@ -52,7 +52,7 @@ post-patch:
 	@${REINPLACE_CMD} -i .opsys 's/Linux/${OPSYS}/' \
 		${WRKSRC}/CMakeLists.txt \
 		${WRKSRC}/Source/Lib/*/CMakeLists.txt
-	@${GREP} -Flr '__linux' ${WRKSRC} | ${XARGS} \
+	@${GREP} --exclude='*/third_party/*' -Flr '__linux' ${WRKSRC} | ${XARGS} \
 		${REINPLACE_CMD} -i .opsys -E 's/__linux(__)?/__${OPSYS}__/'
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net/cppzmq/Makefile 477649 2018-08-20 12:43:41Z vd $
+# $FreeBSD: head/net/cppzmq/Makefile 494242 2019-03-01 08:08:14Z tobik $
 
 PORTNAME=	cppzmq
 PORTVERSION=	4.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

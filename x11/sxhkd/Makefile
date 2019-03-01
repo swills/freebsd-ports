@@ -1,8 +1,8 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/x11/sxhkd/Makefile 487513 2018-12-15 14:35:19Z joneum $
+# $FreeBSD: head/x11/sxhkd/Makefile 494228 2019-03-01 02:58:26Z swills $
 
 PORTNAME=	sxhkd
-PORTVERSION=	0.5.9
+PORTVERSION=	0.6.0
 CATEGORIES=	x11
 
 MAINTAINER=	o.hushchenkov@gmail.com

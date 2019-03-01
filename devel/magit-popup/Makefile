@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/magit-popup/Makefile 488484 2018-12-26 22:54:16Z swills $
+# $FreeBSD: head/devel/magit-popup/Makefile 494012 2019-02-27 03:39:22Z tobik $
 
 PORTNAME=	magit-popup
-PORTVERSION=	2.12.5
+PORTVERSION=	2.13.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/xrootd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/databases/xrootd/Makefile 494082 2019-02-27 20:23:29Z pi $
 
 PORTNAME=	xrootd
 DISTVERSION=	4.8.5
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://xrootd.org/download/v${DISTVERSION}/
 
@@ -18,7 +19,7 @@ LICENSE_FILE_GPLv3=	${WRKSRC}/COPYING
 LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING.LGPL
 
 BUILD_DEPENDS=	bash:shells/bash
-LIB_DEPENDS=	librados.so:net/ceph
+LIB_DEPENDS=	librados.so:net/ceph12
 
 USES=		cmake gnome localbase:ldflags pkgconfig readline shebangfix ssl
 SHEBANG_GLOB=	*.sh

@@ -1,9 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/coinmp/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/coinmp/Makefile 493978 2019-02-26 18:57:58Z cpm $
 
 PORTNAME=	CoinMP
-PORTVERSION=	1.8.3
-PORTREVISION=	2
+PORTVERSION=	1.8.4
 CATEGORIES=	math
 MASTER_SITES=	http://www.coin-or.org/download/source/CoinMP/
 

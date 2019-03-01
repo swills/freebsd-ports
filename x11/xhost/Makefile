@@ -1,11 +1,14 @@
-# $FreeBSD: head/x11/xhost/Makefile 399844 2015-10-20 13:49:18Z kwm $
+# $FreeBSD: head/x11/xhost/Makefile 494070 2019-02-27 16:52:48Z zeising $
 
 PORTNAME=	xhost
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.8
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Server access control program for X
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	app
 USE_XORG=	x11 xmuu xau

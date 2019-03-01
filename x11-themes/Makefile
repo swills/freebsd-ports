@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 491459 2019-01-28 07:39:37Z tobik $
+# $FreeBSD: head/x11-themes/Makefile 494004 2019-02-27 01:35:32Z meta $
 #
 
     COMMENT = X11 themes
@@ -139,6 +139,7 @@
     SUBDIR += numix-theme
     SUBDIR += openbox-arc-theme
     SUBDIR += openbox-themes
+    SUBDIR += papirus-icon-theme
     SUBDIR += plank-theme-moka
     SUBDIR += plasma5-breeze
     SUBDIR += plasma5-breeze-gtk

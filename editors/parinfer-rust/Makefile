@@ -1,10 +1,10 @@
-# $FreeBSD: head/editors/parinfer-rust/Makefile 491315 2019-01-26 22:14:07Z tobik $
+# $FreeBSD: head/editors/parinfer-rust/Makefile 494176 2019-02-28 18:51:45Z jbeich $
 
 PORTNAME=	parinfer-rust
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2.0-198
 DISTVERSIONSUFFIX=	-g506ae2b
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	editors
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -23,7 +23,7 @@ CARGO_CRATES=	base-x-0.2.2 \
 		dtoa-0.4.2 \
 		getopts-0.2.18 \
 		itoa-0.4.1 \
-		libc-0.2.40 \
+		libc-0.2.49 \
 		proc-macro2-0.2.3 \
 		proc-macro2-0.3.8 \
 		quote-0.4.2 \

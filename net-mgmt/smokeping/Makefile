@@ -1,8 +1,9 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/net-mgmt/smokeping/Makefile 492869 2019-02-13 23:43:06Z tobik $
+# $FreeBSD: head/net-mgmt/smokeping/Makefile 494027 2019-02-27 07:08:04Z rodrigo $
 
 PORTNAME=	smokeping
 PORTVERSION=	2.7.3
+PORTREVISION=	1
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	rodrigo@FreeBSD.org
@@ -78,7 +79,6 @@ DNS_RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
 USE_GITHUB=	yes
 GH_ACCOUNT=	oetiker
 GH_PROJECT=	SmokePing
-GH_TAGNAME=	9b2ecb9
 
 # We will take these from CPAN instead
 post-extract:

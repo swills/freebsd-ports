@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-PatchPerl/Makefile 493379 2019-02-19 19:46:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-PatchPerl/Makefile 494096 2019-02-27 23:47:25Z sunpoet $
 
 PORTNAME=	Devel-PatchPerl
-PORTVERSION=	1.54
+PORTVERSION=	1.56
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

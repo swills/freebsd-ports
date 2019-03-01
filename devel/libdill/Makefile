@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libdill/Makefile 490360 2019-01-15 10:49:22Z yuri $
+# $FreeBSD: head/devel/libdill/Makefile 494172 2019-02-28 18:18:14Z yuri $
 
 PORTNAME=	libdill
-DISTVERSION=	2.13
+DISTVERSION=	2.14
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

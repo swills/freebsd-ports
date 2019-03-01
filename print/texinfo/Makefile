@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/print/texinfo/Makefile 493517 2019-02-21 16:17:55Z sunpoet $
+# $FreeBSD: head/print/texinfo/Makefile 494191 2019-02-28 21:34:57Z sunpoet $
 
 PORTNAME=	texinfo
 PORTVERSION=	6.5
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	print
 MASTER_SITES=	GNU \

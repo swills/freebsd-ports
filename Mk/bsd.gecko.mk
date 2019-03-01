@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 491972 2019-02-02 18:37:49Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 494176 2019-02-28 18:51:45Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -355,7 +355,7 @@ MOZ_OPTIONS+=	--enable-debug --disable-release
 STRIP=	# ports/184285
 .else
 MOZ_OPTIONS+=	--disable-debug --disable-debug-symbols --enable-release
-. if ${MOZILLA_VER:R:R} >= 56 && (${ARCH:Maarch64} || ${MACHINE_CPU:Msse2})
+. if ${MOZILLA_VER:R:R} >= 67 && (${ARCH:Maarch64} || ${MACHINE_CPU:Msse2})
 MOZ_OPTIONS+=	--enable-rust-simd
 . endif
 .endif

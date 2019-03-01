@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-yappi/Makefile 490745 2019-01-19 20:41:20Z sunpoet $
+# $FreeBSD: head/devel/py-yappi/Makefile 493993 2019-02-26 23:50:29Z sunpoet $
 
 PORTNAME=	yappi
-PORTVERSION=	0.99
+PORTVERSION=	1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

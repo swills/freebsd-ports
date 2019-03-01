@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-asciidoctor/Makefile 488211 2018-12-23 12:44:19Z mfechner $
+# $FreeBSD: head/textproc/rubygem-asciidoctor/Makefile 494204 2019-02-28 21:36:06Z sunpoet $
 
 PORTNAME=	asciidoctor
 PORTVERSION=	1.5.8
@@ -16,6 +16,6 @@ USE_RUBY=	yes
 
 NO_ARCH=	yes
 
-PLIST_FILES+=	bin/asciidoctor bin/asciidoctor-safe
+PLIST_FILES=	bin/asciidoctor bin/asciidoctor-safe
 
 .include <bsd.port.mk>

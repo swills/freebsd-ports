@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 493726 2019-02-23 19:01:57Z bapt $
+# $FreeBSD: head/x11/Makefile 494017 2019-02-27 04:07:11Z tobik $
 #
 
     COMMENT = Ports to support the X window system
@@ -282,6 +282,7 @@
     SUBDIR += rendercheck
     SUBDIR += rgb
     SUBDIR += rofi
+    SUBDIR += rofi-pass
     SUBDIR += rox-wallpaper
     SUBDIR += roxbg
     SUBDIR += roxterm
