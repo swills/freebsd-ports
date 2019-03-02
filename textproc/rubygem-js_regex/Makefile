@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-js_regex/Makefile 480515 2018-09-23 18:08:19Z mfechner $
+# $FreeBSD: head/textproc/rubygem-js_regex/Makefile 494399 2019-03-02 12:02:23Z mfechner $
 
 PORTNAME=	js_regex
 PORTVERSION=	3.1.1
