@@ -11,7 +11,10 @@ COMMENT=	XML-RPC library for C and C++
 
 LICENSE=	BSD3CLAUSE
 
-USES=		gmake pkgconfig tar:tgz
+USES=		localbase:ldflags gmake pkgconfig tar:tgz ssl
+
+BROKEN_SSL=     openssl111
+BROKEN_SSL_REASON_openssl111=           Does not compile with Openssl 1.1.x yet
 
 OPTIONS_DEFINE=	DEBUG CURL LIBWWW CPLUSPLUS
 OPTIONS_DEFAULT=CURL LIBWWW CPLUSPLUS
@@ -41,6 +44,13 @@ CPLUSPLUS_CONFIGURE_ENABLE=	cplusplus
 LDFLAGS+=	-lm
 
 .include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && \
+    ((${OSVERSION} > 1200084 && ${SSL_DEFAULT} == "base") || \
+    (${SSL_DEFAULT} == "openssl111"))
+BROKEN=		Does not compile with Openssl 1.1.x yet
+.endif
+
 
 .if empty(PORT_OPTIONS:MDEBUG)
 CFLAGS+=	-DNDEBUG
