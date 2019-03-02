@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-truncato/Makefile 448338 2017-08-19 16:06:04Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-truncato/Makefile 494389 2019-03-02 11:43:18Z mfechner $
 
 PORTNAME=	truncato
-PORTVERSION=	0.7.10
+PORTVERSION=	0.7.11
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -12,10 +12,11 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-htmlentities>=4.3.1:textproc/rubygem-htmlentities \
-		rubygem-nokogiri>=1.8.0:textproc/rubygem-nokogiri
+		rubygem-nokogiri>=1.7.0:textproc/rubygem-nokogiri
+
+USES=		gem
+USE_RUBY=	yes
 
 NO_ARCH=	yes
-USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>
