@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-mgmt-rdbms/Makefile 491291 2019-01-26 13:28:29Z dbaio $
+# $FreeBSD: head/devel/py-azure-mgmt-rdbms/Makefile 494325 2019-03-01 22:23:06Z dbaio $
 
 PORTNAME=	azure-mgmt-rdbms
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/textproc/rubygem-character_set/Makefile 494384 2019-03-02 11:26:01Z mfechner $
 
 PORTNAME=	character_set
 PORTVERSION=	1.1.2

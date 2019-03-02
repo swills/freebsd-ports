@@ -1,8 +1,7 @@
-# $FreeBSD: head/audio/faudio/Makefile 493986 2019-02-26 22:48:20Z tobik $
+# $FreeBSD: head/audio/faudio/Makefile 494307 2019-03-01 17:40:19Z tobik $
 
 PORTNAME=	FAudio
-DISTVERSION=	19.02-23
-DISTVERSIONSUFFIX=	-ge5c9c20
+DISTVERSION=	19.03
 CATEGORIES=	audio
 
 MAINTAINER=	tobik@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 487276 2018-12-12 03:11:18Z romain $
+# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 494363 2019-03-02 06:12:58Z romain $
 
 PORTNAME=	r10k
-PORTVERSION=	3.1.0
+PORTVERSION=	3.1.1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

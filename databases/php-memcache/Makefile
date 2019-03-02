@@ -1,8 +1,8 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/databases/php-memcache/Makefile 494193 2019-02-28 21:35:07Z sunpoet $
+# $FreeBSD: head/databases/php-memcache/Makefile 494263 2019-03-01 11:18:58Z sunpoet $
 
 PORTNAME=	memcache
-PORTVERSION=	4.0.0
+PORTVERSION=	4.0.1
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-php73
 CATEGORIES=	databases

@@ -1,8 +1,9 @@
 # Created by: olgeni@FreeBSD.org
-# $FreeBSD: head/misc/shared-mime-info/Makefile 493697 2019-02-23 16:22:51Z bapt $
+# $FreeBSD: head/misc/shared-mime-info/Makefile 494298 2019-03-01 14:44:02Z antoine $
 
 PORTNAME=	shared-mime-info
 PORTVERSION=	1.10
+PORTREVISION=	1
 CATEGORIES=	misc gnome
 MASTER_SITES=	http://people.freedesktop.org/~hadess/
 

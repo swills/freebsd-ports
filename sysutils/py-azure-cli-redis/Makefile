@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-redis/Makefile 493080 2019-02-16 20:03:23Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-redis/Makefile 494330 2019-03-01 22:26:58Z dbaio $
 
 PORTNAME=	azure-cli-redis
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

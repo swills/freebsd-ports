@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-opentracing04/Makefile 490652 2019-01-18 18:42:40Z sunpoet $
+# $FreeBSD: head/devel/rubygem-opentracing04/Makefile 494384 2019-03-02 11:26:01Z mfechner $
 
 PORTNAME=	opentracing
 PORTVERSION=	0.4.3
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	04
 
-MAINTAINER=	sunpoet@FreeBSD.org
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	OpenTracing Ruby Platform API
 
 LICENSE=	APACHE20

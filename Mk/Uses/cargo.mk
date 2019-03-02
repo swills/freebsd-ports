@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 494176 2019-02-28 18:51:45Z jbeich $
+# $FreeBSD: head/Mk/Uses/cargo.mk 494349 2019-03-02 00:35:33Z tobik $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -72,6 +72,10 @@ CARGO_ENV+= \
 RUSTFLAGS+=	${CFLAGS:M-march=*:S/-march=/-C target-cpu=/}
 .else
 RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/}
+.endif
+
+.if ${ARCH} == powerpc64
+USE_GCC?=	yes
 .endif
 
 # Helper to shorten cargo calls.

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-servicefabric/Makefile 491783 2019-01-31 22:27:22Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-servicefabric/Makefile 494327 2019-03-01 22:25:00Z dbaio $
 
 PORTNAME=	azure-cli-servicefabric
-PORTVERSION=	0.1.12
+PORTVERSION=	0.1.13
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

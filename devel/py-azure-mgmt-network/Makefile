@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-azure-mgmt-network/Makefile 491406 2019-01-27 20:57:30Z dbaio $
+# $FreeBSD: head/devel/py-azure-mgmt-network/Makefile 494345 2019-03-01 23:28:25Z dbaio $
 
 PORTNAME=	azure-mgmt-network
-PORTVERSION=	2.5.1
+DISTVERSION=	2.6.0rc1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

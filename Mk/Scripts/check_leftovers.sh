@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: head/Mk/Scripts/check_leftovers.sh 475361 2018-07-26 11:09:46Z mat $
+# $FreeBSD: head/Mk/Scripts/check_leftovers.sh 494316 2019-03-01 20:26:11Z antoine $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -54,7 +54,7 @@ tmpplist=$(make -C ${portdir} -VTMPPLIST)
 while read -r modtype path extra; do
 	# Ignore everything from these files/directories
 	case "${path}" in
-		${CCACHE_DIR}/*|\
+		${CCACHE_DIR:-/nonexistent}/*|\
 		/compat/linux/proc/*|\
 		/dev/*|\
 		/etc/make.conf.bak|\

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-pymarc/Makefile 486713 2018-12-05 18:49:55Z sunpoet $
+# $FreeBSD: head/devel/py-pymarc/Makefile 494289 2019-03-01 11:21:16Z sunpoet $
 
 PORTNAME=	pymarc
-PORTVERSION=	3.1.11
+PORTVERSION=	3.1.12
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP

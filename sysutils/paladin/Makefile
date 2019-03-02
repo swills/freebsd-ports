@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/paladin/Makefile 438704 2017-04-17 15:23:59Z miwi $
+# $FreeBSD: head/sysutils/paladin/Makefile 494373 2019-03-02 08:23:56Z pi $
 
 PORTNAME=	paladin
-PORTVERSION=	1.1.0
+PORTVERSION=	2.0.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	rwestlun@gmail.com

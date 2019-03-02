@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.concurrency/Makefile 490411 2019-01-15 21:18:59Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.concurrency/Makefile 494269 2019-03-01 11:19:29Z sunpoet $
 
 PORTNAME=	oslo.concurrency
-PORTVERSION=	3.29.0
+PORTVERSION=	3.29.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

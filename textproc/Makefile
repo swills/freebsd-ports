@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 494139 2019-02-28 09:32:51Z 0mp $
+# $FreeBSD: head/textproc/Makefile 494384 2019-03-02 11:26:01Z mfechner $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -234,6 +234,7 @@
     SUBDIR += grc-aspell
     SUBDIR += greple
     SUBDIR += groff
+    SUBDIR += gron
     SUBDIR += groonga
     SUBDIR += gsed
     SUBDIR += gspell

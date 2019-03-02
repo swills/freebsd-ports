@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/pecl-protobuf/Makefile 491177 2019-01-25 19:58:13Z sunpoet $
+# $FreeBSD: head/devel/pecl-protobuf/Makefile 494264 2019-03-01 11:19:03Z sunpoet $
 
 PORTNAME=	protobuf
-PORTVERSION=	3.6.1
+PORTVERSION=	3.7.0
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org

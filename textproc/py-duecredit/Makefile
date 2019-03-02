@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-duecredit/Makefile 492524 2019-02-09 21:46:11Z yuri $
+# $FreeBSD: head/textproc/py-duecredit/Makefile 494369 2019-03-02 07:16:54Z yuri $
 
 PORTNAME=	duecredit
-DISTVERSION=	0.6.5
+DISTVERSION=	0.7.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-jaeger-client/Makefile 494384 2019-03-02 11:26:01Z mfechner $
 
 PORTNAME=	jaeger-client
 PORTVERSION=	0.10.0

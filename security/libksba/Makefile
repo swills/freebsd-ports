@@ -1,5 +1,5 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/security/libksba/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/security/libksba/Makefile 494259 2019-03-01 11:18:37Z sunpoet $
 
 PORTNAME=	libksba
 PORTVERSION=	1.3.5
@@ -18,12 +18,13 @@ LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING.LGPLv3
 
 LIB_DEPENDS=	libgpg-error.so:security/libgpg-error
 
+USES=		libtool perl5 tar:bzip2
+USE_PERL5=	build
+
 CONFIGURE_ARGS=	--enable-static
 INSTALL_TARGET=	install-strip
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-USE_PERL5=	build
-USES=		libtool perl5 tar:bzip2
 
 INFO=		ksba
 

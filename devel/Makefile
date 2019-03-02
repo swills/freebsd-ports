@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 494189 2019-02-28 21:34:45Z sunpoet $
+# $FreeBSD: head/devel/Makefile 494384 2019-03-02 11:26:01Z mfechner $
 #
 
     COMMENT = Development utilities
@@ -4375,6 +4375,7 @@
     SUBDIR += py-azure-mgmt-iothub
     SUBDIR += py-azure-mgmt-iothubprovisioningservices
     SUBDIR += py-azure-mgmt-keyvault
+    SUBDIR += py-azure-mgmt-kusto
     SUBDIR += py-azure-mgmt-loganalytics
     SUBDIR += py-azure-mgmt-managementgroups
     SUBDIR += py-azure-mgmt-maps
@@ -4392,6 +4393,7 @@
     SUBDIR += py-azure-mgmt-reservations
     SUBDIR += py-azure-mgmt-resource
     SUBDIR += py-azure-mgmt-search
+    SUBDIR += py-azure-mgmt-security
     SUBDIR += py-azure-mgmt-servicebus
     SUBDIR += py-azure-mgmt-servicefabric
     SUBDIR += py-azure-mgmt-signalr
