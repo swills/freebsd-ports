@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-deckar01-task_list/Makefile 441349 2017-05-20 21:50:56Z sunpoet $
+# $FreeBSD: head/www/rubygem-deckar01-task_list/Makefile 494391 2019-03-02 11:48:03Z mfechner $
 
 PORTNAME=	deckar01-task_list
 PORTVERSION=	2.2.0

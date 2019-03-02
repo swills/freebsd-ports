@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-mini_portile2/Makefile 481774 2018-10-11 00:09:32Z wen $
+# $FreeBSD: head/devel/rubygem-mini_portile2/Makefile 494387 2019-03-02 11:38:00Z mfechner $
 
 PORTNAME=	mini_portile2
 PORTVERSION=	2.4.0

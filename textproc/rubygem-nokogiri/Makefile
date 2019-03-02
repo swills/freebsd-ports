@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-nokogiri/Makefile 489193 2019-01-03 18:06:06Z swills $
+# $FreeBSD: head/textproc/rubygem-nokogiri/Makefile 494390 2019-03-02 11:45:53Z mfechner $
 
 PORTNAME=	nokogiri
 PORTVERSION=	1.10.1

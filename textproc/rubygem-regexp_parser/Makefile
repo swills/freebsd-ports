@@ -1,5 +1,5 @@
 # Created by: Matthias Fechner <mfechner@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-regexp_parser/Makefile 480515 2018-09-23 18:08:19Z mfechner $
+# $FreeBSD: head/textproc/rubygem-regexp_parser/Makefile 494388 2019-03-02 11:41:12Z mfechner $
 
 PORTNAME=	regexp_parser
 PORTVERSION=	1.3.0

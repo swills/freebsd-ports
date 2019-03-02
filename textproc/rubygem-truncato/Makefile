@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-truncato/Makefile 448338 2017-08-19 16:06:04Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-truncato/Makefile 494389 2019-03-02 11:43:18Z mfechner $
 
 PORTNAME=	truncato
 PORTVERSION=	0.7.11
