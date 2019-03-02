@@ -21,7 +21,6 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	gitaly>=1.20.0:devel/gitaly \
 	gitlab-pages>=1.5.0:www/gitlab-pages \
 	redis>=3.2.12:databases/redis \
-	npm>=4.3.0:www/npm \
 	yarn>=1.10.0:www/yarn \
 	rubygem-rails50>=5.0.7.1:www/rubygem-rails50 \
 	rubygem-rails-deprecated_sanitizer-rails50>=1.0.3:devel/rubygem-rails-deprecated_sanitizer-rails50 \
