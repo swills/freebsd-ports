@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/legesmotus/Makefile 479998 2018-09-18 08:47:31Z linimon $
+# $FreeBSD: head/games/legesmotus/Makefile 494292 2019-03-01 13:06:06Z amdmi3 $
 
 PORTNAME=	legesmotus
 PORTVERSION=	0.4.0
@@ -14,11 +14,12 @@ LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual  # not GPLv2+
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
+USES=		compiler:c++11-lib gmake
+USE_CXXSTD=	c++11  # strtoll, atoll
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix="${PREFIX}" \
 		--mandir="${PREFIX}/man" \
 		--datadir="${DATADIR}"
-USES=		compiler gmake
 MAKE_ENV=	XDIR=${LOCALBASE}
 
 CXXFLAGS+=	${CXXFLAGS_${CHOSEN_COMPILER_TYPE}}
@@ -37,6 +38,7 @@ METASERVER_DESC=	Build metaserver
 SERVERSCANNER_DESC=	Build server scanner
 
 CLIENT_CONFIGURE_OFF=	--disable-client
+CLIENT_USES=		gl sdl
 CLIENT_USE=		SDL=sdl,image,ttf,mixer GL=gl
 CLIENT_DESKTOP_ENTRIES= "Leges Motus" \
 			"" \

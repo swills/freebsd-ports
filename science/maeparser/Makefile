@@ -1,9 +1,8 @@
-# $FreeBSD: head/science/maeparser/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/science/maeparser/Makefile 494367 2019-03-02 07:13:36Z yuri $
 
 PORTNAME=	maeparser
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.1
-PORTREVISION=	2
+DISTVERSION=	1.1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -12,7 +11,7 @@ COMMENT=	Parser for Schrodinger Maestro files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${LOCALBASE}/include/boost/dynamic_bitset.hpp:devel/boost-libs
+LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs
 
 USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes

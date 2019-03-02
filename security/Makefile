@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 493869 2019-02-25 14:39:01Z egypcio $
+# $FreeBSD: head/security/Makefile 494256 2019-03-01 11:18:20Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -336,6 +336,7 @@
     SUBDIR += libcryptui
     SUBDIR += libdecaf
     SUBDIR += libecc
+    SUBDIR += libfido2
     SUBDIR += libfprint
     SUBDIR += libgcrypt
     SUBDIR += libgnome-keyring

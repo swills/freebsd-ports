@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/mybb/Makefile 479757 2018-09-14 03:38:05Z joneum $
+# $FreeBSD: head/www/mybb/Makefile 494382 2019-03-02 10:34:45Z joneum $
 
 PORTNAME=	mybb
-DISTVERSION=	1.8.19
+DISTVERSION=	1.8.20
 CATEGORIES=	www
 
 MAINTAINER=	joneum@FreeBSD.org

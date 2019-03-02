@@ -1,5 +1,5 @@
 # Created by: Mons Anderson <mons@cpan.org>
-# $FreeBSD: head/www/p5-AnyEvent-HTTPD/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-AnyEvent-HTTPD/Makefile 494378 2019-03-02 09:00:53Z amdmi3 $
 
 PORTNAME=	AnyEvent-HTTPD
 PORTVERSION=	0.93
@@ -12,6 +12,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mons@cpan.org
 COMMENT=	Simple lightweight event based web server
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 RUN_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
 		p5-Object-Event>=1.21:devel/p5-Object-Event \
 		p5-common-sense>=2.0:devel/p5-common-sense \
@@ -19,5 +22,6 @@ RUN_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-oslo.serialization/Makefile 490417 2019-01-15 21:19:32Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.serialization/Makefile 494278 2019-03-01 11:20:17Z sunpoet $
 
 PORTNAME=	oslo.serialization
-PORTVERSION=	2.28.1
+PORTVERSION=	2.28.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

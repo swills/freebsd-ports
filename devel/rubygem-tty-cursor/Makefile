@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-cursor/Makefile 489025 2019-01-01 20:38:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-cursor/Makefile 494286 2019-03-01 11:21:00Z sunpoet $
 
 PORTNAME=	tty-cursor
-PORTVERSION=	0.6.0
+PORTVERSION=	0.6.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

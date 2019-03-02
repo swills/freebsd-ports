@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-hdinsight/Makefile 491773 2019-01-31 22:20:42Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-hdinsight/Makefile 494333 2019-03-01 22:28:59Z dbaio $
 
 PORTNAME=	azure-cli-hdinsight
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

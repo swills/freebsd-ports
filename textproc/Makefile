@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 494139 2019-02-28 09:32:51Z 0mp $
+# $FreeBSD: head/textproc/Makefile 494384 2019-03-02 11:26:01Z mfechner $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -234,6 +234,7 @@
     SUBDIR += grc-aspell
     SUBDIR += greple
     SUBDIR += groff
+    SUBDIR += gron
     SUBDIR += groonga
     SUBDIR += gsed
     SUBDIR += gspell
@@ -1528,6 +1529,7 @@
     SUBDIR += rubygem-babel-transpiler
     SUBDIR += rubygem-babosa
     SUBDIR += rubygem-case_transform
+    SUBDIR += rubygem-character_set
     SUBDIR += rubygem-charlock_holmes
     SUBDIR += rubygem-chewy
     SUBDIR += rubygem-citrus
@@ -1622,6 +1624,7 @@
     SUBDIR += rubygem-rdtool
     SUBDIR += rubygem-redcarpet
     SUBDIR += rubygem-regexp_parser
+    SUBDIR += rubygem-regexp_property_values
     SUBDIR += rubygem-representable
     SUBDIR += rubygem-reverse_markdown
     SUBDIR += rubygem-ri_cal

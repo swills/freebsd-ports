@@ -1,5 +1,5 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 456805 2017-12-20 14:37:23Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 494260 2019-03-01 11:18:42Z sunpoet $
 
 PORTNAME=	sourcecodepro
 PORTVERSION=	2.030
@@ -15,9 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 PORTSCOUT=	skipv:variable-fonts
 
+USES=		fonts
+
 NO_ARCH=	yes
 NO_BUILD=	yes
-USES=		fonts
 
 FONTNAME=	SourceCodePro
 SUB_FILES=	pkg-message

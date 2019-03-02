@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-azure-cli-cosmosdb/Makefile 491423 2019-01-27 21:08:21Z dbaio $
+# $FreeBSD: head/sysutils/py-azure-cli-cosmosdb/Makefile 494334 2019-03-01 22:29:35Z dbaio $
 
 PORTNAME=	azure-cli-cosmosdb
-PORTVERSION=	0.2.7
+PORTVERSION=	0.2.8
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

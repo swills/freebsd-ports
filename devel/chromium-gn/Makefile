@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/chromium-gn/Makefile 472670 2018-06-18 03:49:09Z linimon $
+# $FreeBSD: head/devel/chromium-gn/Makefile 494314 2019-03-01 19:25:39Z cpm $
 
 CATEGORIES=	devel www
 PKGNAMESUFFIX=	-gn
@@ -19,6 +19,10 @@ DESCR=	${.CURDIR}/pkg-descr
 PLIST_FILES=	bin/gn
 
 GN_ONLY=	yes
+
+post-extract:
+	@${CP} ${WRKSRC}/base/numerics/safe_math_arm_impl.h ${WRKSRC}/tools/gn/base/numerics
+	@${CP} ${WRKSRC}/base/numerics/safe_conversions_arm_impl.h ${WRKSRC}/tools/gn/base/numerics
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/out/${BUILDTYPE}/gn ${STAGEDIR}${PREFIX}/bin

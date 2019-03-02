@@ -1,9 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libfsapfs/Makefile 487899 2018-12-20 19:28:39Z antoine $
+# $FreeBSD: head/devel/libfsapfs/Makefile 494380 2019-03-02 10:20:25Z antoine $
 
 PORTNAME=	libfsapfs
 # If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
-DISTVERSION=	experimental-20181215
+DISTVERSION=	experimental-20190210
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libfsapfs/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-oslo.i18n/Makefile 490413 2019-01-15 21:19:10Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.i18n/Makefile 494272 2019-03-01 11:19:45Z sunpoet $
 
 PORTNAME=	oslo.i18n
-PORTVERSION=	3.23.0
+PORTVERSION=	3.23.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
