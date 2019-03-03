@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	double-conversion
-PORTVERSION=	3.0.0
 DISTVERSIONPREFIX=	v
+DISTVERSION=	3.1.1
 CATEGORIES=	devel
 
 MAINTAINER=	waitman@waitman.net
