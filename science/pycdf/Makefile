@@ -1,9 +1,9 @@
 # Created by: wenheping@gmail.com
-# $FreeBSD: head/science/pycdf/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/pycdf/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	pycdf
 PORTVERSION=	0.6.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	science python
 MASTER_SITES=	SF/pysclint/${PORTNAME}/${PORTNAME}-${PORTVERSION}b
 DISTNAME=	${PORTNAME}-0.6-3b

@@ -1,10 +1,10 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/audio/csound/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	csound
 DISTVERSION=	6.12.2-83
 DISTVERSIONSUFFIX=	-gdf2edd269
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio lang
 
 MAINTAINER=	yuri@FreeBSD.org

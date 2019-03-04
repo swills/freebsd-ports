@@ -1,8 +1,8 @@
 # Created by: J.F. Dockes
-# $FreeBSD: head/databases/xapian-core/Makefile 492936 2019-02-14 22:40:19Z sunpoet $
+# $FreeBSD: head/databases/xapian-core/Makefile 494423 2019-03-02 17:46:09Z sunpoet $
 
 PORTNAME=	xapian-core
-PORTVERSION=	1.4.10
+PORTVERSION=	1.4.11
 PORTEPOCH=	1
 CATEGORIES=	databases
 MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \

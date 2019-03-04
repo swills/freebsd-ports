@@ -1,8 +1,8 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/awscli/Makefile 493392 2019-02-19 20:27:12Z bhughes $
+# $FreeBSD: head/devel/awscli/Makefile 494464 2019-03-02 23:32:47Z bhughes $
 
 PORTNAME=	awscli
-PORTVERSION=	1.16.108
+PORTVERSION=	1.16.116
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 
@@ -12,7 +12,7 @@ COMMENT=	Universal Command Line Interface for Amazon Web Services
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}botocore>=1.12.98:devel/py-botocore@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}botocore>=1.12.106:devel/py-botocore@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}colorama>=0.2.5:devel/py-colorama@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}s3transfer>=0.2.0:net/py-s3transfer@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docutils>=0.10:textproc/py-docutils@${PY_FLAVOR} \

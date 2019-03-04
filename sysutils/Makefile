@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 494323 2019-03-01 22:16:09Z dbaio $
+# $FreeBSD: head/sysutils/Makefile 494498 2019-03-03 11:43:52Z rene $
 #
 
     COMMENT = System utilities
@@ -75,11 +75,6 @@
     SUBDIR += backuppc-devel
     SUBDIR += backuppc4
     SUBDIR += backupuser
-    SUBDIR += bacula-bat
-    SUBDIR += bacula-client
-    SUBDIR += bacula-client-static
-    SUBDIR += bacula-docs
-    SUBDIR += bacula-server
     SUBDIR += bacula9-bat
     SUBDIR += bacula9-client
     SUBDIR += bacula9-client-static
@@ -944,10 +939,8 @@
     SUBDIR += ptools
     SUBDIR += puppet-lint
     SUBDIR += puppet-mode.el
-    SUBDIR += puppet4
     SUBDIR += puppet5
     SUBDIR += puppet6
-    SUBDIR += puppetserver
     SUBDIR += puppetserver5
     SUBDIR += puppetserver6
     SUBDIR += pv

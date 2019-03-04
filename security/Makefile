@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 494256 2019-03-01 11:18:20Z sunpoet $
+# $FreeBSD: head/security/Makefile 494498 2019-03-03 11:43:52Z rene $
 #
 
     COMMENT = Security tools
@@ -291,7 +291,6 @@
     SUBDIR += john
     SUBDIR += kbfs
     SUBDIR += kbfsd
-    SUBDIR += kc
     SUBDIR += kc24
     SUBDIR += kdbx-viewer
     SUBDIR += kedpm

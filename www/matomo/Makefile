@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/matomo/Makefile 492288 2019-02-06 07:20:19Z joneum $
+# $FreeBSD: head/www/matomo/Makefile 494458 2019-03-02 21:44:54Z antoine $
 
 PORTNAME=	matomo
 DISTVERSION=	3.8.1
@@ -12,6 +12,7 @@ COMMENT=	Open Source Web Analytics Software Program
 
 LICENSE=	GPLv3
 
+IGNORE_WITH_PHP=71
 NO_BUILD=	yes
 SUB_FILES=	pkg-message
 

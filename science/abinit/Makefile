@@ -1,5 +1,5 @@
 # Created by: NAKATA Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/abinit/Makefile 494023 2019-02-27 06:09:17Z yuri $
+# $FreeBSD: head/science/abinit/Makefile 494465 2019-03-02 23:43:01Z yuri $
 
 PORTNAME=	abinit
 DISTVERSION=	8.10.3
@@ -14,6 +14,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 ONLY_FOR_ARCHS=	amd64 i386
+BROKEN_i386=	Type mismatch in argument 'block_displ', see https://github.com/abinit/abinit/issues/19
 
 LIB_DEPENDS=	liblapack.so:math/lapack \
 		libblas.so:math/blas

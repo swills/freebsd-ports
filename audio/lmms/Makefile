@@ -1,9 +1,10 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/audio/lmms/Makefile 494135 2019-02-28 08:23:29Z rodrigo $
+# $FreeBSD: head/audio/lmms/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	lmms
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.2.0-rc8
+PORTREVISION=	1
 PORTEPOCH=	2
 CATEGORIES=	audio
 

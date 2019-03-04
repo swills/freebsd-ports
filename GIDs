@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 493772 2019-02-24 16:50:03Z pi $
+# $FreeBSD: head/GIDs 494558 2019-03-04 07:31:47Z mfechner $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -176,7 +176,7 @@ archiva:*:232:
 _ntp:*:233:
 kafka:*:234:
 openhab:*:235:
-# free: 236
+rspamd:*:236:
 # free: 237
 # free: 238
 # free: 239

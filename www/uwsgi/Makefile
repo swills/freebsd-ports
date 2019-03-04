@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@FreeBSD.org>
-# $FreeBSD: head/www/uwsgi/Makefile 478210 2018-08-27 14:51:29Z amdmi3 $
+# $FreeBSD: head/www/uwsgi/Makefile 494507 2019-03-03 12:50:54Z pi $
 
 PORTNAME=	uwsgi
 PORTVERSION=	2.0.16
@@ -47,6 +47,8 @@ JSON_LIB_DEPENDS=	libjansson.so:devel/jansson
 
 PCRE_VARS=		BUILDCONF_PCRE=true
 PCRE_LIB_DEPENDS=	libpcre.so:devel/pcre
+
+PSGI_USES=		perl5
 
 XML_VARS=		BUILDCONF_XML=libxml2
 XML_LIB_DEPENDS=	libxml2.so:textproc/libxml2

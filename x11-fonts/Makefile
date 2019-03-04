@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 492915 2019-02-14 11:51:25Z 0mp $
+# $FreeBSD: head/x11-fonts/Makefile 494524 2019-03-03 22:21:32Z sunpoet $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -162,7 +162,12 @@
     SUBDIR += nerd-fonts
     SUBDIR += nexfontsel
     SUBDIR += noto
-    SUBDIR += noto-lite
+    SUBDIR += noto-basic
+    SUBDIR += noto-extra
+    SUBDIR += noto-jp
+    SUBDIR += noto-kr
+    SUBDIR += noto-sc
+    SUBDIR += noto-tc
     SUBDIR += nucleus
     SUBDIR += ohsnap
     SUBDIR += oldschool-pc-fonts

@@ -1,9 +1,10 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/graphics/qgis/Makefile 493982 2019-02-26 21:13:33Z swills $
+# $FreeBSD: head/graphics/qgis/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
 DISTVERSION=	3_6_0
+PORTREVISION=	1
 CATEGORIES=	graphics geography
 
 MAINTAINER=	rhurlin@gwdg.de

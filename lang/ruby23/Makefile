@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby23/Makefile 484599 2018-11-10 10:09:48Z mat $
+# $FreeBSD: head/lang/ruby23/Makefile 494442 2019-03-02 18:00:59Z sunpoet $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -96,6 +96,10 @@ CONFIGURE_ARGS+=--enable-dtrace
 .else
 CONFIGURE_ARGS+=--disable-dtrace
 .endif
+.endif
+
+.if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
+BROKEN=		does not detect and buid the openssl*.rb bits
 .endif
 
 # keep in sync with all platforms where libunwind is available

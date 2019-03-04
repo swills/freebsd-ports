@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/audio/denemo/Makefile 488040 2018-12-22 01:25:02Z linimon $
+# $FreeBSD: head/audio/denemo/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	denemo
 PORTVERSION=	2.0.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	GNU
 

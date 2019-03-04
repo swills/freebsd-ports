@@ -1,8 +1,9 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/net/xprobe/Makefile 461435 2018-02-10 21:37:20Z sunpoet $
+# $FreeBSD: head/net/xprobe/Makefile 494444 2019-03-02 18:01:16Z sunpoet $
 
 PORTNAME=	xprobe2
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	SF/xprobe/${PORTNAME}/Xprobe2%20${PORTVERSION}
 
@@ -14,5 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFIGURE_ENV=	INSTALL=${INSTALL}
 GNU_CONFIGURE=	yes
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|-DBROKEN_BSD||' ${WRKSRC}/libs-external/USI++/src/configure
 
 .include <bsd.port.mk>

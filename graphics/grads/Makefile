@@ -1,9 +1,9 @@
 # Created by: Greg Lewis <glewis@FreeBSD.org>
-# $FreeBSD: head/graphics/grads/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/graphics/grads/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	grads
 PORTVERSION=	1.9b4
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics science math
 MASTER_SITES=	ftp://grads.iges.org/grads/1.9/:src \
 		ftp://cola.gmu.edu/grads/1.9/:src \

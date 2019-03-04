@@ -1,5 +1,5 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net-im/scudcloud/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/net-im/scudcloud/Makefile 494495 2019-03-03 11:31:28Z rene $
 
 PORTNAME=	scudcloud
 PORTVERSION=	1.65
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
 GH_ACCOUNT=	raelgc
 
 HUNSPELL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hunspell>0:textproc/py-hunspell@${PY_FLAVOR} \
-			qupzilla:www/qupzilla-qt5
+			falkon:www/falkon
 
 INSTALLS_ICONS=	yes
 

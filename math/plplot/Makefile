@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/plplot/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/plplot/Makefile 494452 2019-03-02 19:53:43Z stephen $
 
 PORTNAME=	plplot
 PORTVERSION=	5.12.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math science
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}%20Source
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 494078 2019-02-27 18:57:12Z pi $
+# $FreeBSD: head/net/Makefile 494409 2019-03-02 15:43:27Z danilo $
 #
 
     COMMENT = Networking tools
@@ -968,6 +968,7 @@
     SUBDIR += pecl-smbclient
     SUBDIR += pecl-yaz
     SUBDIR += pecl-zmq
+    SUBDIR += pen
     SUBDIR += pfinger
     SUBDIR += phamm
     SUBDIR += php71-ldap

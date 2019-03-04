@@ -1,9 +1,9 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 489815 2019-01-09 16:38:15Z cpm $
+# $FreeBSD: head/www/iridium/Makefile 494519 2019-03-03 22:19:30Z sunpoet $
 
 PORTNAME=	iridium
 PORTVERSION=	2018.5.67
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	www
 MASTER_SITES=	https://downloads.iridiumbrowser.de/source/
 PKGNAMESUFFIX=	-browser
@@ -58,7 +58,7 @@ LIB_DEPENDS=	libatk-bridge-2.0.so:accessibility/at-spi2-atk \
 		libfontconfig.so:x11-fonts/fontconfig
 
 RUN_DEPENDS=	xdg-open:devel/xdg-utils \
-		noto-lite>0:x11-fonts/noto-lite
+		noto-basic>0:x11-fonts/noto-basic
 
 ONLY_FOR_ARCHS=	amd64 i386
 

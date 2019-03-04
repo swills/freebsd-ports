@@ -1,8 +1,8 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/sysutils/osinfo-db-tools/Makefile 492308 2019-02-06 15:40:02Z novel $
+# $FreeBSD: head/sysutils/osinfo-db-tools/Makefile 494404 2019-03-02 14:16:20Z novel $
 
 PORTNAME=	osinfo-db-tools
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	sysutils
 MASTER_SITES=	https://releases.pagure.org/libosinfo/
 

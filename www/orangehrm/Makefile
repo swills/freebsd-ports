@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/orangehrm/Makefile 485136 2018-11-17 14:47:19Z wen $
+# $FreeBSD: head/www/orangehrm/Makefile 494533 2019-03-04 01:41:21Z wen $
 
 PORTNAME=	orangehrm
-PORTVERSION=	4.2.0.1
+PORTVERSION=	4.3
 CATEGORIES=	www misc
 MASTER_SITES=	SF/${PORTNAME}/stable/${PORTVERSION}
 

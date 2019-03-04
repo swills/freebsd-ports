@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 494056 2019-02-27 14:34:57Z zi $
+# $FreeBSD: head/net-mgmt/Makefile 494513 2019-03-03 16:19:04Z kai $
 #
 
     COMMENT = Network management tools
@@ -133,7 +133,6 @@
     SUBDIR += nagcon
     SUBDIR += nagios
     SUBDIR += nagios-certexp-plugin
-    SUBDIR += nagios-check_bacula
     SUBDIR += nagios-check_bacula9
     SUBDIR += nagios-check_clamav
     SUBDIR += nagios-check_cpu_usage
@@ -310,6 +309,7 @@
     SUBDIR += py-napalm
     SUBDIR += py-napalm-logs
     SUBDIR += py-ncclient
+    SUBDIR += py-nxapi-plumbing
     SUBDIR += py-pdagent
     SUBDIR += py-prometheus-client
     SUBDIR += py-pyIOSXR

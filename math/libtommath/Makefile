@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/libtommath/Makefile 492121 2019-02-04 12:00:26Z gahr $
+# $FreeBSD: head/math/libtommath/Makefile 494564 2019-03-04 08:47:02Z gahr $
 
 PORTNAME=	libtommath
 DISTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://github.com/libtom/libtommath/releases/download/v${DISTVERSION}/
 DISTNAME=	ltm-${DISTVERSION}
@@ -13,9 +13,12 @@ COMMENT=	Comprehensive, modular, and portable mathematical routines
 LICENSE=	UNLICENSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake tar:xz
+USES=		gmake libtool:build tar:xz
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
+USE_LDCONFIG=	yes
+
+MAKEFILE=	makefile.shared
 ALL_TARGET=	default
 CFLAGS+=	-fPIC
 PORTDOCS=	*
@@ -23,19 +26,13 @@ PORTDOCS=	*
 PLIST_FILES=	include/tommath.h \
 		include/tommath_class.h \
 		include/tommath_superclass.h \
-		lib/libtommath.a
+		lib/libtommath.a \
+		lib/libtommath.so \
+		lib/libtommath.so.${DISTVERSION:R:R} \
+		lib/libtommath.so.${DISTVERSION} \
+		libdata/pkgconfig/libtommath.pc
 
-OPTIONS_DEFINE=	DOCS SHARED
-
-SHARED_DESC=		Build shared library
-SHARED_USES=		libtool:build
-SHARED_USE=		LDCONFIG=yes
-SHARED_PLIST_FILES=	lib/libtommath.so \
-			lib/libtommath.so.${DISTVERSION:R:R} \
-			lib/libtommath.so.${DISTVERSION} \
-			libdata/pkgconfig/libtommath.pc
-SHARED_VARS=		MAKEFILE=makefile.shared
-SHARED_VARS_OFF=	MAKEFILE=makefile
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
@@ -48,7 +45,7 @@ post-install-SHARED-on:
 
 do-test:
 	(cd ${WRKSRC}; \
-	 ${SETENV} ${MAKE_ENV} ${MAKE_CMD} -f ${MAKEFILE} mtest/mtest test; \
+	 ${SETENV} ${MAKE_ENV} ${MAKE_CMD} -f makefile mtest/mtest test; \
 	 ./mtest/mtest | ./test)
 
 .include <bsd.port.mk>

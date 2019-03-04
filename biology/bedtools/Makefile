@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/bedtools/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/biology/bedtools/Makefile 494554 2019-03-04 06:55:08Z jbeich $
 
 PORTNAME=	bedtools
 DISTVERSIONPREFIX=	v
@@ -16,6 +16,11 @@ USES=		compiler:c++11-lang gmake python
 USE_GITHUB=	yes
 GH_ACCOUNT=	arq5x
 GH_PROJECT=	bedtools2
+
+post-extract:
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/src/utils/gzstream/version \
+		${WRKSRC}/src/utils/gzstream/version.txt
 
 pre-build:
 	@${REINPLACE_CMD} -e 's|python|${PYTHON_CMD}|g' ${WRKSRC}/Makefile

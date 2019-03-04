@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34/Makefile 492142 2019-02-04 16:20:23Z pi $
+# $FreeBSD: head/databases/mongodb34/Makefile 494401 2019-03-02 13:10:50Z pi $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
@@ -27,6 +27,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pymongo>=3.0:databases/pymongo@${PY_FLAVOR}
 
 CONFLICTS_BUILD=	mongo-cxx-driver
+CONFLICTS_INSTALL=	mongodb36 mongodb40
 
 CHOSEN_COMPILER_TYPE=	clang
 

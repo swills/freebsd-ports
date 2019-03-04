@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/simgear/Makefile 491850 2019-02-01 21:22:18Z martymac $
+# $FreeBSD: head/devel/simgear/Makefile 494555 2019-03-04 07:06:48Z jbeich $
 
 PORTNAME=	simgear
 PORTVERSION=	2018.3.2
@@ -26,5 +26,11 @@ LDFLAGS_powerpc64=	-losgDB
 LDFLAGS_powerpc=	-losgDB
 LDFLAGS_powerpcspe=	-losgDB
 LDFLAGS_sparc64=	-losgDB
+
+post-patch:
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/version ${WRKSRC}/version.txt
+	@${REINPLACE_CMD} -Ei .c++20 '/file|set_prop/s/version[[:>:]]/&.txt/' \
+		${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

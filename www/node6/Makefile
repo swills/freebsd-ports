@@ -1,9 +1,8 @@
-# $FreeBSD: head/www/node6/Makefile 492706 2019-02-11 18:24:42Z bhughes $
+# $FreeBSD: head/www/node6/Makefile 494487 2019-03-03 09:16:54Z bhughes $
 
 PORTNAME=	node
-PORTVERSION=	6.16.0
+PORTVERSION=	6.17.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
 PKGNAMESUFFIX=	6

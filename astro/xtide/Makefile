@@ -1,9 +1,8 @@
 # Created by: Brion Moss <brion@queeg.com>
-# $FreeBSD: head/astro/xtide/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/astro/xtide/Makefile 494518 2019-03-03 21:46:27Z fernape $
 
 PORTNAME=	xtide
-PORTVERSION=	2.15.1
-PORTREVISION=	4
+PORTVERSION=	2.15.2
 CATEGORIES=	astro geography
 MASTER_SITES=	ftp://ftp.flaterco.com/xtide/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

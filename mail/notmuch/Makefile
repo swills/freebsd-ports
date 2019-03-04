@@ -1,8 +1,8 @@
 # Created by: DarwinSurvivor <darwinsurvivor@gmail.com>
-# $FreeBSD: head/mail/notmuch/Makefile 492641 2019-02-10 20:59:09Z swills $
+# $FreeBSD: head/mail/notmuch/Makefile 494546 2019-03-04 04:35:13Z jbeich $
 
 PORTNAME=	notmuch
-PORTVERSION=	0.28.1
+PORTVERSION=	0.28.2
 CATEGORIES?=	mail
 MASTER_SITES=	https://notmuchmail.org/releases/
 
@@ -59,6 +59,11 @@ DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_CONFIGURE_WITH=	api-docs
 MANPAGES_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
 MANPAGES_CONFIGURE_WITH=	docs
+
+post-patch:
+# Avoid conflict with C++20 <version> by ignoring <...> under WRKSRC
+	@${REINPLACE_CMD} -i .c++20 's/-I$$(srcdir)/-iquote$$(srcdir)/' \
+		${WRKSRC}/*/Makefile.local
 
 # Install bash completions without incurring a dependcy on
 # shells/bash-completion.  Also avoid automatic installation of
