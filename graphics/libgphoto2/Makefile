@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	libgphoto2
-PORTVERSION=	2.5.16
+PORTVERSION=	2.5.22
 CATEGORIES=	graphics
 MASTER_SITES=	SF/gphoto/libgphoto/${PORTVERSION}
 
