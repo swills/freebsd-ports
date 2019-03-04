@@ -1,8 +1,9 @@
-# $FreeBSD: head/graphics/gmt5/Makefile 491245 2019-01-26 07:19:32Z pi $
+# $FreeBSD: head/graphics/gmt5/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	gmt5
 DISTVERSION=	5.4.5
 DISTVERSIONSUFFIX=	-src
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.soest.hawaii.edu/%SUBDIR%/ \
 		ftp://ftp.geologi.uio.no/pub/%SUBDIR%/ \

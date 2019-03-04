@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/opendx/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/opendx/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	opendx
 PORTVERSION=	4.4.4
-PORTREVISION=	28
+PORTREVISION=	29
 CATEGORIES=	graphics math java
 MASTER_SITES=	http://www.sfr-fresh.com/unix/misc/
 DISTNAME=	dx-${PORTVERSION}

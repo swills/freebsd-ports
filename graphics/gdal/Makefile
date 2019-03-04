@@ -1,8 +1,9 @@
 # Created by: Randall Hopper
-# $FreeBSD: head/graphics/gdal/Makefile 492159 2019-02-04 20:07:06Z sunpoet $
+# $FreeBSD: head/graphics/gdal/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	gdal
 PORTVERSION=	2.4.0
+PORTREVISION=	1
 CATEGORIES=	graphics geography
 MASTER_SITES=	https://download.osgeo.org/gdal/${PORTVERSION}/ \
 		LOCAL/sunpoet

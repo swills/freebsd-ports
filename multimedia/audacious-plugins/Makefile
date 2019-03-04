@@ -1,8 +1,9 @@
 # Created by: Zastupov Stepan [RedChrom] <redchrom@mail.ru>
-# $FreeBSD: head/multimedia/audacious-plugins/Makefile 490151 2019-01-13 16:08:40Z tobik $
+# $FreeBSD: head/multimedia/audacious-plugins/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	audacious-plugins
 PORTVERSION=	3.10.1
+PORTREVISION=	1
 CATEGORIES=	multimedia audio
 MASTER_SITES=	http://distfiles.audacious-media-player.org/
 

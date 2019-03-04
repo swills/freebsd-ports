@@ -1,9 +1,9 @@
 # Created by: pjm <pierrejacqes.mimifir@gmail.com>
-# $FreeBSD: head/audio/bristol/Makefile 488390 2018-12-26 14:15:44Z amdmi3 $
+# $FreeBSD: head/audio/bristol/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	bristol
 PORTVERSION=	0.60.10
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/0.60
 

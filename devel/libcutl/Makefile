@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libcutl/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/libcutl/Makefile 494547 2019-03-04 04:59:06Z jbeich $
 
 PORTNAME=	libcutl
 PORTVERSION=	1.10.0
@@ -34,5 +34,11 @@ CONFIGURE_ARGS=	--disable-static \
 		--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig
 
 OPTIONS_DEFINE=	DOCS
+
+post-patch:
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/version ${WRKSRC}/version.txt
+	@${REINPLACE_CMD} -i .c++20 '/doc_DATA/s/version/&.txt/' \
+		${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>

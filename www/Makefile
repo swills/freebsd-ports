@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 494190 2019-02-28 21:34:51Z sunpoet $
+# $FreeBSD: head/www/Makefile 494498 2019-03-03 11:43:52Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1918,7 +1918,6 @@
     SUBDIR += qt5-webview
     SUBDIR += quark
     SUBDIR += qupzilla-qt4
-    SUBDIR += qupzilla-qt5
     SUBDIR += qutebrowser
     SUBDIR += radicale
     SUBDIR += radicale2

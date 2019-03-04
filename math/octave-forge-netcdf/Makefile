@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-netcdf/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/math/octave-forge-netcdf/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	octave-forge-netcdf
 PORTVERSION=	1.0.12
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

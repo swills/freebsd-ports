@@ -1,9 +1,9 @@
 # Created by: Shin-ya Murakami <murashin@gfd-dennou.org>
-# $FreeBSD: head/science/rubygem-ruby-netcdf/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/science/rubygem-ruby-netcdf/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	ruby-netcdf
 PORTVERSION=	0.7.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science rubygems
 MASTER_SITES=	RG
 

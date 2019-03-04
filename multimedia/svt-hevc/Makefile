@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/svt-hevc/Makefile 494114 2019-02-28 00:58:00Z jbeich $
+# $FreeBSD: head/multimedia/svt-hevc/Makefile 494461 2019-03-02 22:50:47Z jbeich $
 
 PORTNAME=	svt-hevc
 DISTVERSIONPREFIX=	v
@@ -38,7 +38,7 @@ post-patch:
 		-e '/NASM_FLAGS_DEBUG/d' \
 		${WRKSRC}/CMakeLists.txt
 # Avoid devel/yasm dependency
-	@${REINPLACE_CMD} -i .typo 's/MAKE_ASM_NASM_COMPILER/s&/' \
+	@${REINPLACE_CMD} -i .typo 's/[[:<:]]MAKE_ASM_NASM_COMPILER/C&/' \
 		${WRKSRC}/CMakeLists.txt
 # Avoid lang/gcc* dependency
 	@${REINPLACE_CMD} -i .gcc -e 's/gcc-//' \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 494017 2019-02-27 04:07:11Z tobik $
+# $FreeBSD: head/x11/Makefile 494503 2019-03-03 11:58:46Z 0mp $
 #
 
     COMMENT = Ports to support the X window system
@@ -110,6 +110,7 @@
     SUBDIR += imwheel
     SUBDIR += innerspace
     SUBDIR += ipager
+    SUBDIR += j4-dmenu-desktop
     SUBDIR += kb2mb2
     SUBDIR += kde-baseapps
     SUBDIR += kde5

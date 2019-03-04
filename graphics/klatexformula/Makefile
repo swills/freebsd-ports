@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/klatexformula/Makefile 493826 2019-02-25 00:35:40Z linimon $
+# $FreeBSD: head/graphics/klatexformula/Makefile 494473 2019-03-03 01:19:32Z hrs $
 
 PORTNAME=	klatexformula
 PORTVERSION=	4.0.0
@@ -26,6 +26,6 @@ CMAKE_ARGS=	-DKLF_INSTALL_POST_UPDATEMIMEDATABASE=off \
 
 post-patch:
 	${REINPLACE_CMD} '/CMAKE_SYSTEM_NAME STREQUAL/s,Linux,FreeBSD,' \
-		${WRKSRC}/src/klftools/CMakeLists.txt
+	    ${WRKSRC}/src/klftools/CMakeLists.txt
 
 .include <bsd.port.mk>

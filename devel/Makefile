@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 494384 2019-03-02 11:26:01Z mfechner $
+# $FreeBSD: head/devel/Makefile 494498 2019-03-03 11:43:52Z rene $
 #
 
     COMMENT = Development utilities
@@ -6392,7 +6392,6 @@
     SUBDIR += truc
     SUBDIR += ua_parser-core
     SUBDIR += uatraits
-    SUBDIR += uboot-mkimage
     SUBDIR += uclcmd
     SUBDIR += ucommon
     SUBDIR += ucpp

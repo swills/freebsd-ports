@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/textproc/utf8proc/Makefile 429723 2016-12-28 08:00:30Z hrs $
+# $FreeBSD: head/textproc/utf8proc/Makefile 494476 2019-03-03 05:03:32Z hrs $
 
 PORTNAME=	utf8proc
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc devel
 
@@ -14,7 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 USES=		gmake
 USE_GITHUB=	yes
-GH_ACCOUNT=	JuliaLang
+
+GH_ACCOUNT=	JuliaStrings
 USE_LDCONFIG=	yes
 MAKE_ARGS=	prefix=${PREFIX}
 PLIST_FILES=	include/utf8proc.h \

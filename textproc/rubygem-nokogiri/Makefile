@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/rubygem-nokogiri/Makefile 494390 2019-03-02 11:45:53Z mfechner $
+# $FreeBSD: head/textproc/rubygem-nokogiri/Makefile 494449 2019-03-02 18:05:37Z sunpoet $
 
 PORTNAME=	nokogiri
 PORTVERSION=	1.10.1
+PORTREVISION=	1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -13,10 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
-		libgpg-error.so:security/libgpg-error \
-		libunwind.so:devel/libunwind
-RUN_DEPENDS=	rubygem-pkg-config>=1.1.7:devel/rubygem-pkg-config \
-		rubygem-mini_portile2>=2.4.0:devel/rubygem-mini_portile2
+		libgpg-error.so:security/libgpg-error
+RUN_DEPENDS=	rubygem-pkg-config>=1.1.7:devel/rubygem-pkg-config
 
 USES=		gem gnome pkgconfig gettext-runtime
 USE_GNOME=	libxml2 libxslt

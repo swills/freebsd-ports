@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/sdl2_mixer/Makefile 492259 2019-02-05 17:42:21Z amdmi3 $
+# $FreeBSD: head/audio/sdl2_mixer/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	sdl2_mixer
 PORTVERSION=	2.0.4
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_mixer/release/
 DISTNAME=	SDL2_mixer-${PORTVERSION}

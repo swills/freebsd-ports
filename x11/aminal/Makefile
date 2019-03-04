@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/aminal/Makefile 491539 2019-01-29 04:17:07Z yuri $
+# $FreeBSD: head/x11/aminal/Makefile 494477 2019-03-03 06:56:31Z yuri $
 
 PORTNAME=	aminal
 DISTVERSIONPREFIX=	v
@@ -26,6 +26,8 @@ USE_XORG=	x11 xcursor xi xinerama xrandr xxf86vm
 MAKE_ENV=	CGO_CFLAGS="-I${LOCALBASE}/include" CGO_LDFLAGS="-L${LOCALBASE}/lib"
 
 PLIST_FILES=	bin/${PORTNAME}
+
+PORTSCOUT=	skipv:nightly.*
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${PORTNAME} && \

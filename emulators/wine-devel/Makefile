@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 493503 2019-02-21 14:18:36Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 494512 2019-03-03 15:04:55Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	4.2
+DISTVERSION=	4.3
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
@@ -21,7 +21,8 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		prelink:sysutils/prelink
-LIB_DEPENDS=	libxml2.so:textproc/libxml2
+LIB_DEPENDS=	libFAudio.so:audio/faudio \
+		libxml2.so:textproc/libxml2
 
 USES=		bison desktop-file-utils gmake localbase shebangfix tar:xz
 

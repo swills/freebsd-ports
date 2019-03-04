@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/textproc/gnugrep/Makefile 494305 2019-03-01 17:19:00Z danfe $
+# $FreeBSD: head/textproc/gnugrep/Makefile 494508 2019-03-03 13:40:50Z danfe $
 
 PORTNAME=	grep
 PORTVERSION=	3.3
@@ -8,7 +8,7 @@ MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu
 
 MAINTAINER=	johans@FreeBSD.org
-COMMENT=	GNU grep
+COMMENT=	GNU version of popular pattern matching utility
 
 LICENSE=	GPLv3+
 

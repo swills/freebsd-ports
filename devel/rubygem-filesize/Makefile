@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-filesize/Makefile 415209 2016-05-15 06:49:15Z antoine $
+# $FreeBSD: head/devel/rubygem-filesize/Makefile 494499 2019-03-03 11:45:25Z antoine $
 
 PORTNAME=	filesize
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8-devel/Makefile 493844 2019-02-25 09:46:43Z gerald $
+# $FreeBSD: head/lang/gcc8-devel/Makefile 494541 2019-03-04 03:01:58Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	8.3.1.s20190222
+PORTVERSION=	8.3.1.s20190301
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -146,8 +146,8 @@ post-stage:
 	${RM} ${WRKDIR}/PLIST.lib
 
 .if ${ARCH} == powerpc64 && ${PORT_OPTIONS:MMULTILIB}
-	${MKDIR} ${STAGEDIR}${TARGLIB32}/gcc${SUFFIX}
-	${MV} ${STAGEDIR}${PREFIX}/lib/lib32/* ${STAGEDIR}${TARGLIB32}/gcc${SUFFIX}
+	${MKDIR} ${STAGEDIR}${TARGLIB32}
+	${MV} ${STAGEDIR}${PREFIX}/lib/lib32 ${STAGEDIR}${TARGLIB32}/gcc${SUFFIX}
 .endif
 
 .for d in ${TARGLIB:S/^${PREFIX}\///} ${TARGLIB32:S/^${PREFIX}\///} ${LIBEXEC:S/^${PREFIX}\///}

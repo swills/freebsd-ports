@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-pillar/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/R-cran-pillar/Makefile 494532 2019-03-04 00:30:26Z wen $
 
 PORTNAME=	pillar
-PORTVERSION=	1.3.0
-PORTREVISION=	1
+PORTVERSION=	1.3.1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

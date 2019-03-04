@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/skype-call-recorder/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/audio/skype-call-recorder/Makefile 494553 2019-03-04 06:43:06Z jbeich $
 
 PORTNAME=	skype-call-recorder
 PORTVERSION=	0.11
@@ -30,6 +30,10 @@ post-patch:
 	@${REINPLACE_CMD} -e '/CMAKE_CXX_FLAGS_RELEASE/d' \
 		${WRKSRC}/CMakeLists.txt
 	@${REINPLACE_CMD} -e 's,date --utc,TZ=UTC date,' \
+		${WRKSRC}/makeversion
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/version ${WRKSRC}/version.txt
+	@${REINPLACE_CMD} -i .c++20 's,src/version,&.txt,' \
 		${WRKSRC}/makeversion
 
 .include <bsd.port.mk>

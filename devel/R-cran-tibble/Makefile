@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-tibble/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/R-cran-tibble/Makefile 494534 2019-03-04 01:45:52Z wen $
 
 PORTNAME=	tibble
-PORTVERSION=	1.4.2
-PORTREVISION=	1
+PORTVERSION=	2.0.1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -15,6 +14,7 @@ LICENSE=	MIT
 CRAN_DEPENDS=	R-cran-cli>0:devel/R-cran-cli \
 		R-cran-crayon>0:devel/R-cran-crayon \
 		R-cran-pillar>=1.1.0:devel/R-cran-pillar \
+		R-cran-pkgconfig>=0:devel/R-cran-pkgconfig \
 		R-cran-rlang>0:devel/R-cran-rlang
 BUILD_DEPENDS=	${CRAN_DEPENDS}
 RUN_DEPENDS=	${CRAN_DEPENDS}

@@ -1,8 +1,8 @@
 # Created by: Sebastian Schuetz <sschuetz@fhm.edu>
-# $FreeBSD: head/security/tpm-tools/Makefile 415458 2016-05-18 17:19:40Z hrs $
+# $FreeBSD: head/security/tpm-tools/Makefile 494475 2019-03-03 04:18:31Z hrs $
 
 PORTNAME=	tpm-tools
-PORTVERSION=	1.3.8
+PORTVERSION=	1.3.9.1
 CATEGORIES=	security
 MASTER_SITES=	SF/trousers/${PORTNAME}/${PORTVERSION}
 
@@ -15,12 +15,14 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 LIB_DEPENDS=	libtspi.so:security/trousers
-BUILD_DEPENDS=	pkcsconf:security/opencryptoki
+BUILD_DEPENDS=	${LOCALBASE}/sbin/pkcsconf:security/opencryptoki
 RUN_DEPENDS=	${LOCALBASE}/sbin/tcsd:security/trousers \
 		${LOCALBASE}/lib/pkcs11/libopencryptoki.so:security/opencryptoki
 
-USES=		gettext gmake iconv libtool
+USES=		autoreconf gettext gmake iconv libtool ssl
 USE_LDCONFIG=	YES
+
+NO_WRKSUBDIR=	YES
 GNU_CONFIGURE=	YES
 LIBS+=		-L${LOCALBASE}/lib -lintl
 INSTALL_TARGET=	install-strip

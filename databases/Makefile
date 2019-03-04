@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 494206 2019-02-28 21:36:16Z sunpoet $
+# $FreeBSD: head/databases/Makefile 494498 2019-03-03 11:43:52Z rene $
 #
 
     COMMENT = Databases and related software
@@ -205,6 +205,7 @@
     SUBDIR += mongodb34-tools
     SUBDIR += mongodb36
     SUBDIR += mongodb36-tools
+    SUBDIR += mongodb40
     SUBDIR += mroonga
     SUBDIR += mrtg-mysql-load
     SUBDIR += mtools-mongodb
@@ -742,10 +743,8 @@
     SUBDIR += proftpd-mod_sql_tds
     SUBDIR += pspg
     SUBDIR += puppetdb-cli
-    SUBDIR += puppetdb-terminus4
     SUBDIR += puppetdb-terminus5
     SUBDIR += puppetdb-terminus6
-    SUBDIR += puppetdb4
     SUBDIR += puppetdb5
     SUBDIR += puppetdb6
     SUBDIR += pure-sql3

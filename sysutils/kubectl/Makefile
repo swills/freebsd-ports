@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/kubectl/Makefile 491887 2019-02-01 22:17:31Z danilo $
+# $FreeBSD: head/sysutils/kubectl/Makefile 494411 2019-03-02 15:57:56Z danilo $
 
 PORTNAME=	kubectl
-PORTVERSION=	1.13.3
+PORTVERSION=	1.13.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

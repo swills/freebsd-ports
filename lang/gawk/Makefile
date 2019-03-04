@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/lang/gawk/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/lang/gawk/Makefile 494508 2019-03-03 13:40:50Z danfe $
 
 PORTNAME=	gawk
 PORTVERSION=	4.1.4
@@ -8,7 +8,7 @@ CATEGORIES=	lang
 MASTER_SITES=	GNU
 
 MAINTAINER=	johans@FreeBSD.org
-COMMENT=	GNU version of Awk
+COMMENT=	GNU version of AWK scripting language
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING

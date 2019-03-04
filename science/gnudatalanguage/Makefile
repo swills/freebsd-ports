@@ -1,10 +1,10 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/gnudatalanguage/Makefile 493853 2019-02-25 12:47:20Z bapt $
+# $FreeBSD: head/science/gnudatalanguage/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	gnudatalanguage
 PORTVERSION=	0.9.9
-PORTREVISION=	4
 DISTVERSIONPREFIX=	v
+PORTREVISION=	5
 CATEGORIES=	science lang
 .if defined(BUILD_PYTHON_MODULE)
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

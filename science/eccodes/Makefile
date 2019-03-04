@@ -1,9 +1,10 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/eccodes/Makefile 493378 2019-02-19 19:46:50Z sunpoet $
+# $FreeBSD: head/science/eccodes/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	eccodes
 PORTVERSION=	2.12.0
 DISTVERSIONSUFFIX=	-Source
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://confluence.ecmwf.int/download/attachments/45757960/ \
 		LOCAL/sunpoet

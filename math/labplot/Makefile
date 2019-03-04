@@ -1,9 +1,9 @@
 # Created by: Kay Lehmann <kay_lehmann@web.de>
-# $FreeBSD: head/math/labplot/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/math/labplot/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	labplot
 PORTVERSION=	2.5.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 

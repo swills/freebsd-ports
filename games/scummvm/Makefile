@@ -1,9 +1,9 @@
 # Created by: Alex Trull <freebsd.alex@trull.org>
-# $FreeBSD: head/games/scummvm/Makefile 471300 2018-06-01 22:16:11Z riggs $
+# $FreeBSD: head/games/scummvm/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	scummvm
 PORTVERSION=	2.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games emulators
 MASTER_SITES=	http://www.scummvm.org/frs/scummvm/${PORTVERSION}/
 

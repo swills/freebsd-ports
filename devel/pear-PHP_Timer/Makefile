@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_Timer/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/pear-PHP_Timer/Makefile 494482 2019-03-03 08:54:17Z joneum $
 
 PORTNAME=	PHP_Timer
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.1
 CATEGORIES=	devel pear
 
 MAINTAINER=	joneum@FreeBSD.org

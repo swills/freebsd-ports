@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/science/vmd/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/vmd/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	vmd
 DISTVERSION=	1.9.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science graphics python tcl tk
 MASTER_SITES=	http://jedi.ks.uiuc.edu/~johns/raytracer/files/0.99b6/:tachyon \
 		http://www.photonlimited.com/~johns/tachyon/files/0.99b6/:tachyon \

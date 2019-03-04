@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-pyasp/Makefile 459136 2018-01-15 23:16:09Z yuri $
+# $FreeBSD: head/math/py-pyasp/Makefile 494468 2019-03-03 00:00:26Z yuri $
 
 PORTNAME=	pyasp
-DISTVERSION=	1.4.3
+DISTVERSION=	1.4.4
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/libcoap/Makefile 493721 2019-02-23 17:36:07Z tcberner $
+# $FreeBSD: head/net/libcoap/Makefile 494548 2019-03-04 05:09:24Z tcberner $
 
 PORTNAME=	libcoap
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.2.0-rc4
+DISTVERSION=	4.2.0
 CATEGORIES=	net
 
 MAINTAINER=	tcberner@FreeBSD.org

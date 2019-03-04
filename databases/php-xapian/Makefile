@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/php-xapian/Makefile 492939 2019-02-14 22:40:35Z sunpoet $
+# $FreeBSD: head/databases/php-xapian/Makefile 494426 2019-03-02 17:46:25Z sunpoet $
 
 PORTNAME=	xapian
-PORTVERSION=	1.4.10
+PORTVERSION=	1.4.11
 DISTVERSIONPREFIX=	bindings-
 CATEGORIES=	databases
 MASTER_SITES=	https://oligarchy.co.uk/xapian/${PORTVERSION}/ \

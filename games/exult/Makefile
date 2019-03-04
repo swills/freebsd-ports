@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <tiamat@telegraph.spb.ru>
-# $FreeBSD: head/games/exult/Makefile 488438 2018-12-26 20:51:56Z linimon $
+# $FreeBSD: head/games/exult/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	exult
 PORTVERSION=	1.5.0.20160514
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 
 MAINTAINER=	ports@FreeBSD.org

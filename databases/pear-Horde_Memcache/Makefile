@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pear-Horde_Memcache/Makefile 455798 2017-12-08 20:21:01Z joneum $
+# $FreeBSD: head/databases/pear-Horde_Memcache/Makefile 494457 2019-03-02 21:43:21Z antoine $
 
 PORTNAME=	Horde_Memcache
 DISTVERSION=	2.1.1
@@ -6,6 +6,8 @@ CATEGORIES=	databases www pear
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Memcache API
+
+IGNORE_WITH_PHP=71
 
 USES=	horde
 USE_PHP=	memcache hash

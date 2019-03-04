@@ -1,8 +1,8 @@
 # Created by: Jimmy Olgeni <olgeni@uli.it>
-# $FreeBSD: head/deskutils/egroupware/Makefile 490022 2019-01-11 23:30:23Z danilo $
+# $FreeBSD: head/deskutils/egroupware/Makefile 494413 2019-03-02 16:04:34Z danilo $
 
 PORTNAME=	eGroupware
-PORTVERSION=	17.1.20190111
+PORTVERSION=	17.1.20190222
 CATEGORIES=	deskutils
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME:tl}/releases/download/${PORTVERSION}/
 DISTNAME=	${PORTNAME:tl}-epl-${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 494384 2019-03-02 11:26:01Z mfechner $
+# $FreeBSD: head/textproc/Makefile 494421 2019-03-02 17:44:46Z sunpoet $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1604,6 +1604,7 @@
     SUBDIR += rubygem-multi_xml
     SUBDIR += rubygem-nokogiri
     SUBDIR += rubygem-nokogiri-diff
+    SUBDIR += rubygem-nokogiri18
     SUBDIR += rubygem-nokogumbo
     SUBDIR += rubygem-octopress-escape-code
     SUBDIR += rubygem-opml

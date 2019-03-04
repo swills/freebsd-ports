@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/fluidplug-lv2/Makefile 490093 2019-01-12 23:34:27Z linimon $
+# $FreeBSD: head/audio/fluidplug-lv2/Makefile 494418 2019-03-02 16:55:53Z riggs $
 
 PORTNAME=	FluidPlug
 PORTVERSION=	g20181209
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}

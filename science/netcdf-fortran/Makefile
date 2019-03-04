@@ -1,9 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/netcdf-fortran/Makefile 490182 2019-01-13 20:08:15Z sunpoet $
+# $FreeBSD: head/science/netcdf-fortran/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
 
 PORTNAME=	netcdf-fortran
 PORTVERSION=	4.4.5
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	sunpoet@FreeBSD.org

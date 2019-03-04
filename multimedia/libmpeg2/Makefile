@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/libmpeg2/Makefile 492234 2019-02-05 14:18:22Z amdmi3 $
+# $FreeBSD: head/multimedia/libmpeg2/Makefile 494455 2019-03-02 21:33:55Z jbeich $
 
 PORTNAME=	libmpeg2
 PORTVERSION=	0.5.1
@@ -15,6 +15,8 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
 CONFIGURE_ARGS=	--enable-shared
+LDFLAGS_armv6=	-Wl,-z,notext
+LDFLAGS_armv7=	-Wl,-z,notext
 
 PORTDOCS=	libmpeg2.txt README
 
