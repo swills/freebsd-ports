@@ -1,6 +1,6 @@
---- ./urlsnarf.c.orig	2001-03-15 10:26:13.000000000 +0100
-+++ ./urlsnarf.c	2014-07-22 13:20:14.000000000 +0200
-@@ -145,14 +145,14 @@
+--- urlsnarf.c.orig	2001-03-15 09:26:13 UTC
++++ urlsnarf.c
+@@ -145,14 +145,14 @@ process_http_request(struct tuple4 *addr, u_char *data
  		if (user == NULL)
  			user = "-";
  		if (vhost == NULL)

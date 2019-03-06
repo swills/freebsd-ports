@@ -1,6 +1,6 @@
---- ./trigger.h.orig	2001-03-15 09:33:06.000000000 +0100
-+++ ./trigger.h	2014-07-22 13:20:14.000000000 +0200
-@@ -24,10 +24,10 @@
+--- trigger.h.orig	2001-03-15 08:33:06 UTC
++++ trigger.h
+@@ -24,10 +24,10 @@ int	trigger_set_udp(int port, char *name);
  int	trigger_set_tcp(int port, char *name);
  int	trigger_set_rpc(int program, char *name);
  

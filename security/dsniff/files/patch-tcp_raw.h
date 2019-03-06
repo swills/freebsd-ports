@@ -1,6 +1,6 @@
---- ./tcp_raw.h.orig	2001-03-15 09:33:06.000000000 +0100
-+++ ./tcp_raw.h	2014-07-22 13:20:14.000000000 +0200
-@@ -15,7 +15,7 @@
+--- tcp_raw.h.orig	2001-03-15 08:33:06 UTC
++++ tcp_raw.h
+@@ -15,7 +15,7 @@ typedef void (*tcp_raw_callback_t)(in_addr_t src, in_a
  				   u_short sport, u_short dport,
  				   u_char *buf, int len);
  

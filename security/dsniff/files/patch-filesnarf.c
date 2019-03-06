@@ -1,6 +1,6 @@
---- ./filesnarf.c.orig	2001-03-15 09:33:03.000000000 +0100
-+++ ./filesnarf.c	2014-07-22 13:20:14.000000000 +0200
-@@ -134,8 +134,8 @@
+--- filesnarf.c.orig	2001-03-15 08:33:03 UTC
++++ filesnarf.c
+@@ -134,8 +134,8 @@ nfs_save(struct tuple4 *addr, struct myreadargs *ma, u
  	int fd;
  
  	warnx("%s.%d > %s.%d: %s (%d@%d)",
@@ -11,7 +11,7 @@
  	      ma->filename, len, ma->offset);
  	
  	if ((fd = open(ma->filename, O_WRONLY|O_CREAT, 0644)) >= 0) {
-@@ -353,7 +353,7 @@
+@@ -353,7 +353,7 @@ decode_nfs(struct tuple4 *addr, u_char *buf, int len)
  }
  
  static void

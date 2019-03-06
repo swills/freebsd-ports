@@ -1,6 +1,6 @@
---- ./record.c.orig	2001-03-15 09:33:04.000000000 +0100
-+++ ./record.c	2014-07-22 13:20:14.000000000 +0200
-@@ -65,8 +65,8 @@
+--- record.c.orig	2001-03-15 08:33:04 UTC
++++ record.c
+@@ -65,8 +65,8 @@ record_print(struct rec *rec)
  	tm = localtime(&rec->time);
  	strftime(tstr, sizeof(tstr), "%x %X", tm);
  	

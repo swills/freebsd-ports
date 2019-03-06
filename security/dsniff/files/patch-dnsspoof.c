@@ -1,6 +1,6 @@
---- ./dnsspoof.c.orig	2001-03-15 09:33:03.000000000 +0100
-+++ ./dnsspoof.c	2014-07-22 13:20:14.000000000 +0200
-@@ -38,7 +38,7 @@
+--- dnsspoof.c.orig	2001-03-15 08:33:03 UTC
++++ dnsspoof.c
+@@ -38,7 +38,7 @@ SLIST_HEAD(, dnsent) dns_entries;
  
  pcap_t		*pcap_pd = NULL;
  int		 pcap_off = -1;
@@ -9,7 +9,7 @@
  u_long		 lnet_ip = -1;
  
  static void
-@@ -90,19 +90,18 @@
+@@ -90,19 +90,18 @@ static void
  dns_init(char *dev, char *filename)
  {
  	FILE *f;
@@ -36,7 +36,7 @@
  
  	SLIST_INIT(&dns_entries);
  	
-@@ -180,7 +179,7 @@
+@@ -180,7 +179,7 @@ dns_lookup_ptr(const char *name)
  static void
  dns_spoof(u_char *u, const struct pcap_pkthdr *pkthdr, const u_char *pkt)
  {
@@ -45,7 +45,7 @@
  	struct libnet_udp_hdr *udp;
  	HEADER *dns;
  	char name[MAXHOSTNAMELEN];
-@@ -189,7 +188,7 @@
+@@ -189,7 +188,7 @@ dns_spoof(u_char *u, const struct pcap_pkthdr *pkthdr,
  	in_addr_t dst;
  	u_short type, class;
  
@@ -54,7 +54,7 @@
  	udp = (struct libnet_udp_hdr *)(pkt + pcap_off + (ip->ip_hl * 4));
  	dns = (HEADER *)(udp + 1);
  	p = (u_char *)(dns + 1);
-@@ -212,7 +211,7 @@
+@@ -212,7 +211,7 @@ dns_spoof(u_char *u, const struct pcap_pkthdr *pkthdr,
  	if (class != C_IN)
  		return;
  
@@ -63,7 +63,7 @@
  	
  	if (type == T_A) {
  		if ((dst = dns_lookup_a(name)) == -1)
-@@ -234,38 +233,38 @@
+@@ -234,38 +233,38 @@ dns_spoof(u_char *u, const struct pcap_pkthdr *pkthdr,
  		anslen += 12;
  	}
  	else return;
@@ -117,7 +117,7 @@
  	pcap_close(pcap_pd);
  	exit(0);
  }
-@@ -276,6 +275,7 @@
+@@ -276,6 +275,7 @@ main(int argc, char *argv[])
  	extern char *optarg;
  	extern int optind;
  	char *p, *dev, *hosts, buf[1024];
@@ -125,7 +125,7 @@
  	int i;
  
  	dev = hosts = NULL;
-@@ -306,7 +306,7 @@
+@@ -306,7 +306,7 @@ main(int argc, char *argv[])
  		strlcpy(buf, p, sizeof(buf));
  	}
  	else snprintf(buf, sizeof(buf), "udp dst port 53 and not src %s",
@@ -134,7 +134,7 @@
  	
  	if ((pcap_pd = pcap_init(dev, buf, 128)) == NULL)
  		errx(1, "couldn't initialize sniffing");
-@@ -314,10 +314,10 @@
+@@ -314,10 +314,10 @@ main(int argc, char *argv[])
  	if ((pcap_off = pcap_dloff(pcap_pd)) < 0)
  		errx(1, "couldn't determine link layer offset");
  	

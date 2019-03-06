@@ -1,6 +1,6 @@
---- ./tcpnice.c.orig	2001-03-17 08:41:51.000000000 +0100
-+++ ./tcpnice.c	2014-07-22 13:20:14.000000000 +0200
-@@ -41,107 +41,106 @@
+--- tcpnice.c.orig	2001-03-17 07:41:51 UTC
++++ tcpnice.c
+@@ -41,107 +41,106 @@ usage(void)
  }
  
  static void
@@ -106,8 +106,6 @@
 +	memcpy((u_char *)icmp + LIBNET_ICMPV4_MASK_H, (u_char *)ip, len);
  
 -	libnet_do_checksum(buf, IPPROTO_ICMP, ICMP_MASK_H + len);
--	
--	len += (IP_H + ICMP_MASK_H);
 +	len += LIBNET_ICMPV4_MASK_H;
 +
 +	libnet_build_ipv4(LIBNET_IPV4_H + len, 4,
@@ -115,6 +113,8 @@
 +			  0, ip->ip_dst.s_addr, ip->ip_src.s_addr,
 +			  (u_int8_t *) icmp, len, l, 0);
  	
+-	len += (IP_H + ICMP_MASK_H);
+-	
 -	if (libnet_write_ip(sock, buf, len) != len)
 +	if (libnet_write(l) != len)
  		warn("write");
@@ -149,7 +149,7 @@
  	if (ip->ip_p != IPPROTO_TCP)
  		return;
  	
-@@ -151,11 +150,11 @@
+@@ -151,11 +150,11 @@ tcp_nice_cb(u_char *user, const struct pcap_pkthdr *pc
  	
  	if (ntohs(ip->ip_len) > (ip->ip_hl << 2) + (tcp->th_off << 2)) {
  		if (Opt_icmp)
@@ -164,7 +164,7 @@
  	}
  }
  
-@@ -164,8 +163,10 @@
+@@ -164,8 +163,10 @@ main(int argc, char *argv[])
  {
  	extern char *optarg;
  	extern int optind;
@@ -176,7 +176,7 @@
  	pcap_t *pd;
  	
  	intf = NULL;
-@@ -209,14 +210,14 @@
+@@ -209,14 +210,14 @@ main(int argc, char *argv[])
  	if ((pcap_off = pcap_dloff(pd)) < 0)
  		errx(1, "couldn't determine link layer offset");
  	

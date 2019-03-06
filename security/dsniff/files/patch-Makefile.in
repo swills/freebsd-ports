@@ -21,7 +21,7 @@
  
  INSTALL	= @INSTALL@
  INSTALL_PROGRAM = @INSTALL_PROGRAM@
-@@ -76,22 +75,23 @@ CONFIGS	= dsniff.magic dsniff.services d
+@@ -76,23 +75,24 @@ CONFIGS	= dsniff.magic dsniff.services dnsspoof.hosts
  .c.o:
  	$(CC) $(CFLAGS) $(INCS) -c $(srcdir)/$*.c
  
@@ -48,14 +48,15 @@
 -	$(RANLIB) $@
 +nfs_prot.c: nfs_prot.x nfs_prot.h
 +	rpcgen -c nfs_prot.x -o $@
-+
+ 
 +nfs_prot.h: nfs_prot.x
 +	rpcgen -h nfs_prot.x -o $@
 +
 +filesnarf.c: nfs_prot.h
- 
++
  dsniff: $(HDRS) $(SRCS) $(OBJS)
  	$(CC) $(LDFLAGS) -o $@ $(OBJS) $(LIBS) $(NIDSLIB) $(PCAPLIB) $(LNETLIB) $(DBLIB) $(SSLLIB)
+ 
 @@ -156,7 +156,7 @@ install:
  	done
  

@@ -1,6 +1,6 @@
---- ./macof.c.orig	2001-03-15 09:33:04.000000000 +0100
-+++ ./macof.c	2014-07-22 13:20:14.000000000 +0200
-@@ -48,8 +48,8 @@
+--- macof.c.orig	2001-03-15 08:33:04 UTC
++++ macof.c
+@@ -48,8 +48,8 @@ usage(void)
  static void
  gen_mac(u_char *mac)
  {
@@ -11,7 +11,7 @@
  }
  
  int
-@@ -59,22 +59,23 @@
+@@ -59,22 +59,23 @@ main(int argc, char *argv[])
  	extern int optind;
  	int c, i;
  	struct libnet_link_int *llif;
@@ -39,7 +39,7 @@
  			break;
  		case 'e':
  			Tha = (u_char *)ether_aton(optarg);
-@@ -101,13 +102,13 @@
+@@ -101,13 +102,13 @@ main(int argc, char *argv[])
  	if (argc != 0)
  		usage();
  	
@@ -58,7 +58,7 @@
  	
  	for (i = 0; i != Repeat; i++) {
  		
-@@ -117,39 +118,39 @@
+@@ -117,39 +118,39 @@ main(int argc, char *argv[])
  		else memcpy(tha, Tha, sizeof(tha));
  		
  		if (Src != 0) src = Src;
@@ -78,13 +78,13 @@
 +		else dport = libnet_get_prand(LIBNET_PRu16);
  
 -		seq = libnet_get_prand(PRu32);
--		
++		seq = libnet_get_prand(LIBNET_PRu32);
+ 		
 -		libnet_build_ethernet(tha, sha, ETHERTYPE_IP, NULL, 0, pkt);
 -		
 -		libnet_build_ip(TCP_H, 0, libnet_get_prand(PRu16), 0, 64,
 -				IPPROTO_TCP, src, dst, NULL, 0, pkt + ETH_H);
-+		seq = libnet_get_prand(LIBNET_PRu32);
- 		
+-		
  		libnet_build_tcp(sport, dport, seq, 0, TH_SYN, 512,
 -				 0, NULL, 0, pkt + ETH_H + IP_H);
 +				 0, 0, LIBNET_TCP_H, NULL, 0, l, 0);

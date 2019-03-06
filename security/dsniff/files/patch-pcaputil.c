@@ -21,7 +21,7 @@
  int
  pcap_dloff(pcap_t *pd)
  {
-@@ -87,12 +76,6 @@ pcap_init(char *intf, char *filter, int 
+@@ -87,12 +76,6 @@ pcap_init(char *intf, char *filter, int snaplen)
  		pcap_perror(pd, "pcap_compile");
  		return (NULL);
  	}

@@ -1,5 +1,5 @@
---- ./arpspoof.c.orig	2001-03-15 09:32:58.000000000 +0100
-+++ ./arpspoof.c	2014-07-22 13:21:17.000000000 +0200
+--- arpspoof.c.orig	2001-03-15 08:32:58 UTC
++++ arpspoof.c
 @@ -13,7 +13,10 @@
  
  #include <sys/types.h>
@@ -27,7 +27,7 @@
  static struct ether_addr spoof_mac, target_mac;
  static in_addr_t spoof_ip, target_ip;
  static char *intf;
-@@ -41,47 +44,49 @@
+@@ -41,47 +44,49 @@ usage(void)
  }
  
  static int
@@ -94,7 +94,7 @@
  }
  
  #ifdef __linux__
-@@ -119,7 +124,7 @@
+@@ -119,7 +124,7 @@ arp_find(in_addr_t ip, struct ether_addr *mac)
  		/* XXX - force the kernel to arp. feh. */
  		arp_force(ip);
  #else
@@ -103,7 +103,7 @@
  #endif
  		sleep(1);
  	}
-@@ -136,9 +141,9 @@
+@@ -136,9 +141,9 @@ cleanup(int sig)
  	if (arp_find(spoof_ip, &spoof_mac)) {
  		for (i = 0; i < 3; i++) {
  			/* XXX - on BSD, requires ETHERSPOOF kernel. */
@@ -116,7 +116,7 @@
  				 target_ip);
  			sleep(1);
  		}
-@@ -151,7 +156,8 @@
+@@ -151,7 +156,8 @@ main(int argc, char *argv[])
  {
  	extern char *optarg;
  	extern int optind;
@@ -126,7 +126,7 @@
  	int c;
  	
  	intf = NULL;
-@@ -163,7 +169,7 @@
+@@ -163,7 +169,7 @@ main(int argc, char *argv[])
  			intf = optarg;
  			break;
  		case 't':
@@ -135,7 +135,7 @@
  				usage();
  			break;
  		default:
-@@ -176,26 +182,26 @@
+@@ -176,26 +182,26 @@ main(int argc, char *argv[])
  	if (argc != 1)
  		usage();
  	

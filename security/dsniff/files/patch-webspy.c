@@ -1,6 +1,6 @@
---- ./webspy.c.orig	2001-03-15 09:33:05.000000000 +0100
-+++ ./webspy.c	2014-07-22 13:20:14.000000000 +0200
-@@ -126,7 +126,7 @@
+--- webspy.c.orig	2001-03-15 08:33:05 UTC
++++ webspy.c
+@@ -126,7 +126,7 @@ process_http_request(struct tuple4 *addr, u_char *data
  		if (auth == NULL)
  			auth = "";
  		if (vhost == NULL)
@@ -9,7 +9,7 @@
  		
  		snprintf(cmd, sizeof(cmd), "openURL(http://%s%s%s%s)",
  			 auth, *auth ? "@" : "", vhost, uri);
-@@ -202,7 +202,7 @@
+@@ -202,7 +202,7 @@ main(int argc, char *argv[])
  	cmdtab[0] = cmd;
  	cmdtab[1] = NULL;
  	

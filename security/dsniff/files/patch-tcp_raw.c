@@ -1,6 +1,6 @@
---- ./tcp_raw.c.orig	2001-03-15 09:33:04.000000000 +0100
-+++ ./tcp_raw.c	2014-07-22 13:20:14.000000000 +0200
-@@ -119,7 +119,7 @@
+--- tcp_raw.c.orig	2001-03-15 08:33:04 UTC
++++ tcp_raw.c
+@@ -119,7 +119,7 @@ tcp_raw_reassemble(struct tcp_conn *conn, int minlen)
  }
  
  struct iovec *
@@ -9,7 +9,7 @@
  {
  	struct tha tha;
  	struct tcp_conn *conn;
-@@ -131,7 +131,7 @@
+@@ -131,7 +131,7 @@ tcp_raw_input(struct libnet_ip_hdr *ip, struct libnet_
  
  	/* Verify TCP checksum. */
  	cksum = tcp->th_sum;

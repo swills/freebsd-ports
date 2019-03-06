@@ -1,6 +1,6 @@
---- ./tcpkill.c.orig	2001-03-17 09:10:43.000000000 +0100
-+++ ./tcpkill.c	2014-07-22 13:20:14.000000000 +0200
-@@ -39,17 +39,18 @@
+--- tcpkill.c.orig	2001-03-17 08:10:43 UTC
++++ tcpkill.c
+@@ -39,17 +39,18 @@ usage(void)
  static void
  tcp_kill_cb(u_char *user, const struct pcap_pkthdr *pcap, const u_char *pkt)
  {
@@ -24,7 +24,7 @@
  	if (ip->ip_p != IPPROTO_TCP)
  		return;
  	
-@@ -57,34 +58,31 @@
+@@ -57,35 +58,32 @@ tcp_kill_cb(u_char *user, const struct pcap_pkthdr *pc
  	if (tcp->th_flags & (TH_SYN|TH_FIN|TH_RST))
  		return;
  
@@ -62,7 +62,7 @@
 +		libnet_build_tcp(ntohs(tcp->th_dport), ntohs(tcp->th_sport),
 +				 seq, 0, TH_RST, 0, 0, 0, LIBNET_TCP_H, 
 +				 NULL, 0, l, 0);
-+		
+ 		
 +		libnet_build_ipv4(LIBNET_IPV4_H + LIBNET_TCP_H, 0,
 +				  libnet_get_prand(LIBNET_PRu16), 0, 64,
 +				  IPPROTO_TCP, 0, ip->ip_dst.s_addr,
@@ -70,10 +70,11 @@
 +		
 +		if (libnet_write(l) < 0)
 +			warn("write");
- 		
++		
  		fprintf(stderr, "%s R %lu:%lu(0) win 0\n", ctext, seq, seq);
  	}
-@@ -95,8 +93,10 @@
+ }
+@@ -95,8 +93,10 @@ main(int argc, char *argv[])
  {
  	extern char *optarg;
  	extern int optind;
@@ -85,7 +86,7 @@
  	pcap_t *pd;
  	
  	intf = NULL;
-@@ -136,14 +136,14 @@
+@@ -136,14 +136,14 @@ main(int argc, char *argv[])
  	if ((pcap_off = pcap_dloff(pd)) < 0)
  		errx(1, "couldn't determine link layer offset");
  	
