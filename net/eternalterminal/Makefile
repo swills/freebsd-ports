@@ -2,7 +2,7 @@
 
 PORTNAME=	eternalterminal
 DISTVERSIONPREFIX=	et-v
-DISTVERSION=	4.2.1
+DISTVERSION=	5.1.9
 PORTREVISION=	2
 CATEGORIES=	net
 
@@ -22,6 +22,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	MisterTea
 GH_PROJECT=	EternalTerminal
 
-PLIST_FILES=	bin/et bin/etserver
+PLIST_FILES=	bin/et bin/etserver bin/etterminal
 
 .include <bsd.port.mk>
