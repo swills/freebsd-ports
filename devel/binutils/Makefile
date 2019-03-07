@@ -6,6 +6,7 @@ PORTVERSION=	2.32
 PORTEPOCH?=	1
 CATEGORIES?=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases
+EXTRACT_SUFX=	.tar.lz
 
 MAINTAINER?=	bapt@FreeBSD.org
 COMMENT?=	GNU binary tools
@@ -32,7 +33,7 @@ RELRO_DESC=	enable -z relro in ELF linker by default
 LICENSE_FILE_GPLv3=	${WRKSRC}/COPYING3
 LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING3.LIB
 
-USES=		bison cpe gmake libtool tar:bzip2 compiler:env
+USES=		bison cpe gmake libtool tar:lzma compiler:env
 CPE_VENDOR=	gnu
 GNU_CONFIGURE=	yes
 
