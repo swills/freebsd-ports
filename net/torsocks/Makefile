@@ -1,8 +1,9 @@
 # Created by: Andrei Lavreniyuk <andy.lavr@gmail.com>
-# $FreeBSD: head/net/torsocks/Makefile 485470 2018-11-20 19:22:57Z yuri $
+# $FreeBSD: head/net/torsocks/Makefile 494775 2019-03-06 05:00:27Z yuri $
 
 PORTNAME=	torsocks
 DISTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	https://people.torproject.org/~dgoulet/${PORTNAME}/
 

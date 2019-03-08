@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/fluent-bit/Makefile 490059 2019-01-12 14:35:23Z girgen $
+# $FreeBSD: head/sysutils/fluent-bit/Makefile 494739 2019-03-05 20:52:12Z girgen $
 
 PORTNAME=	fluent-bit
-DISTVERSION=	1.0.2
+DISTVERSION=	1.0.4
 CATEGORIES=	sysutils
 MASTER_SITES=   http://fluentbit.io/releases/${DISTVERSION:R}/
 
@@ -17,6 +17,8 @@ BROKEN_mips64=		fails to build: conflicting types for 'restrict'
 BROKEN_powerpc64=	fails to build: cast from pointer to integer of different size
 
 USES=		cmake:noninja gmake
+
+#MAKE_ENV=	CC="cc"
 
 USE_RC_SUBR=	${PORTNAME}
 

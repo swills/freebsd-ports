@@ -1,13 +1,13 @@
-# $FreeBSD: head/sysutils/mkdesktop/Makefile 489436 2019-01-06 03:19:04Z swills $
+# $FreeBSD: head/sysutils/mkdesktop/Makefile 494793 2019-03-06 12:14:18Z swills $
 
 PORTNAME=	mkdesktop
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	sysutils
 
 MAINTAINER=	bourne.identity@hotmail.com
 COMMENT=	Powerful, flexible utility to setup a FreeBSD desktop
 
-LICENSE=	GPLv2+
+LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_BUILD=	yes
@@ -17,8 +17,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	bourne-again
 
 PLIST_FILES=	bin/mkdesktop \
-		share/mkdesktop/stage-definitions \
-		man/man1/mkdesktop.1.gz
+				share/mkdesktop/stage-definitions \
+				man/man1/mkdesktop.1.gz
 
 do-install:
 		${MKDIR} ${STAGEDIR}${DATADIR}

@@ -1,9 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/audio/py-pylast/Makefile 493201 2019-02-17 19:39:53Z sunpoet $
+# $FreeBSD: head/audio/py-pylast/Makefile 494967 2019-03-07 17:31:49Z sunpoet $
 
 PORTNAME=	pylast
-PORTVERSION=	3.0.0
-PORTREVISION=	1
+PORTVERSION=	3.1.0
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

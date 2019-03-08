@@ -1,5 +1,5 @@
 # Created by: Jonathan Chen <jonc@chen.org.nz>
-# $FreeBSD: head/net-im/psi/Makefile 492111 2019-02-04 11:37:02Z linimon $
+# $FreeBSD: head/net-im/psi/Makefile 494586 2019-03-04 11:33:40Z jbeich $
 
 PORTNAME=	psi
 DISTVERSION=	1.3
@@ -39,5 +39,11 @@ HUNSPELL_CMAKE_BOOL=	USE_HUNSPELL
 ENCHANT_DESC=	Use Enchant for spell checking
 ENCHANT_LIB_DEPENDS=	libenchant.so:textproc/enchant
 ENCHANT_CMAKE_BOOL=	USE_ENCHANT
+
+post-patch:
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/version ${WRKSRC}/version.txt
+	@${REINPLACE_CMD} -i .c++20 's,SOURCE_DIR}/version,&.txt,' \
+		${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

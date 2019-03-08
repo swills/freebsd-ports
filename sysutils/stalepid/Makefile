@@ -1,20 +1,21 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/sysutils/stalepid/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/stalepid/Makefile 494701 2019-03-05 14:14:35Z swills $
 
 PORTNAME=	stalepid
-PORTVERSION=	1.0.b1
-PORTREVISION=	1
+PORTVERSION=	1.0.2
 CATEGORIES=	sysutils
-MASTER_SITES=	http://devel.ringlet.net/sysutils/stalepid/
-DISTNAME=	${PORTNAME}-${PORTVERSION:S/.b/pre/}
+MASTER_SITES=	https://devel.ringlet.net/files/sys/stalepid/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	driesm.michiels@gmail.com
 COMMENT=	Check for stale pid files and remove them
+
+LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	p5-Error>=0:lang/p5-Error
 
 USES=		perl5 shebangfix uidfix
 USE_PERL5=	run
+
 SHEBANG_FILES=	${WRKSRC}/stalepid.pl
 
 PLIST_FILES=	bin/stalepid man/man1/stalepid.1.gz

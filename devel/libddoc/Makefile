@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/libddoc/Makefile 485393 2018-11-20 02:47:48Z acm $
+# $FreeBSD: head/devel/libddoc/Makefile 494901 2019-03-07 06:17:33Z acm $
 
 PORTNAME=	libddoc
+PORTVERSION=	0.6.0
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.0-beta1
-PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	acm@FreeBSD.org

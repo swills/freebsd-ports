@@ -1,9 +1,8 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/finance/quantlib/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/finance/quantlib/Makefile 494745 2019-03-05 21:36:27Z mi $
 
 PORTNAME=	quantlib
-PORTVERSION=	1.13
-PORTREVISION=	4
+PORTVERSION=	1.15
 CATEGORIES=	finance math devel
 MASTER_SITES=	https://dl.bintray.com/${PORTNAME}/releases/
 DISTNAME=	QuantLib-${PORTVERSION}
@@ -16,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=	compiler
+USES=	compiler libtool
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	EMACS=no
@@ -59,5 +58,7 @@ OPENMP_LDFLAGS=		-L${LOCALBASE}/lib
 # unfortunately, devel/llvm${COMPILER_VERSION} may install
 # one too:
 OPENMP_LDFLAGS+=	-L${LOCALBASE}/llvm${COMPILER_VERSION}/lib
+
+CXXFLAGS_i386=	-DBOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm-devel/Makefile.LICENSE 481120 2018-10-02 16:45:39Z brooks $
+# $FreeBSD: head/devel/llvm-devel/Makefile.LICENSE 495004 2019-03-07 23:16:40Z brooks $
 #
 # The "LLVM Release License" is largely a copy of the NCSA license, but
 # it contains extra verbiage about its interaction with third party
@@ -16,11 +16,12 @@
 LICENSE=	ARM BSD3CLAUSE LLVM MIT PD REGEX
 LICENSE_COMB=	multi
 
-LICENSE_FILE_ARM=	${WRKSRC}/lib/Target/ARM/LICENSE.TXT
-LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/utils/unittest/googletest/LICENSE.TXT
-LICENSE_FILE_LLVM=	${WRKSRC}/LICENSE.TXT
-LICENSE_FILE_MIT=	${WRKSRC}/test/YAMLParser/LICENSE.txt
-LICENSE_FILE_REGEX=	${WRKSRC}/lib/Support/COPYRIGHT.regex
+LICENSE_DIR?=		${WRKSRC}
+LICENSE_FILE_ARM=	${LICENSE_DIR}/lib/Target/ARM/LICENSE.TXT
+LICENSE_FILE_BSD3CLAUSE=	${LICENSE_DIR}/utils/unittest/googletest/LICENSE.TXT
+LICENSE_FILE_LLVM=	${LICENSE_DIR}/LICENSE.TXT
+LICENSE_FILE_MIT=	${LICENSE_DIR}/test/YAMLParser/LICENSE.txt
+LICENSE_FILE_REGEX=	${LICENSE_DIR}/lib/Support/COPYRIGHT.regex
 LICENSE_NAME_ARM=	ARM Limited license
 LICENSE_NAME_LLVM=	LLVM Release License
 LICENSE_NAME_REGEX=	OpenBSD Regex License

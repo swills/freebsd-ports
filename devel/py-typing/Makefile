@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-typing/Makefile 460987 2018-02-05 17:28:33Z rm $
+# $FreeBSD: head/devel/py-typing/Makefile 494823 2019-03-06 18:08:08Z sunpoet $
 
 PORTNAME=	typing
-PORTVERSION=	3.6.4
+PORTVERSION=	3.6.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,9 @@ COMMENT=	Type Hints for Python
 LICENSE=	PSFL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		python:-3.4
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

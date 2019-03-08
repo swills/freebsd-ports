@@ -1,8 +1,9 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl111/Makefile 494031 2019-02-27 07:49:19Z brnrd $
+# $FreeBSD: head/security/openssl111/Makefile 494996 2019-03-07 19:56:40Z brnrd $
 
 PORTNAME=	openssl
 PORTVERSION=	1.1.1b
+PORTREVISION=	1
 CATEGORIES=	security devel
 MASTER_SITES=	https://www.openssl.org/source/ \
 		ftp://ftp.cert.dfn.de/pub/tools/net/openssl/source/
@@ -29,7 +30,6 @@ USE_PERL5=	build
 TEST_TARGET=	test
 
 LDFLAGS_i386=	-Wl,-znotext
-#LDFLAGS=	${LDFLAGS_${ARCH}}
 
 MAKE_ARGS+=	WHOLE_ARCHIVE_FLAG=--whole-archive CNF_LDFLAGS="${LDFLAGS}"
 MAKE_ENV+=	LIBRPATH="${PREFIX}/lib" GREP_OPTIONS=

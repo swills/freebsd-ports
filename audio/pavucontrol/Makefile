@@ -1,9 +1,8 @@
 # Created by: Romain Tartière <romain@blogreen.org>
-# $FreeBSD: head/audio/pavucontrol/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/audio/pavucontrol/Makefile 494829 2019-03-06 18:38:37Z romain $
 
 PORTNAME=	pavucontrol
-PORTVERSION=	3.0
-PORTREVISION=	4
+PORTVERSION=	4.0
 CATEGORIES=	audio
 MASTER_SITES=	http://freedesktop.org/software/pulseaudio/${PORTNAME}/
 
@@ -16,10 +15,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libpulse.so:audio/pulseaudio \
 		libcanberra-gtk3.so:audio/libcanberra-gtk3
 
-GNU_CONFIGURE=	yes
 USES=		gmake pkgconfig gettext tar:xz compiler:c++11-lang
 USE_GNOME=	glibmm gtkmm30 intltool libsigc++20
 USE_CXXSTD=	c++11
+
+GNU_CONFIGURE=	yes
+CFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-L${LOCALBASE}/lib
 
 CONFIGURE_ARGS=	--disable-lynx
 

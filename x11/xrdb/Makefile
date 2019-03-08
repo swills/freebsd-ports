@@ -1,11 +1,14 @@
-# $FreeBSD: head/x11/xrdb/Makefile 469551 2018-05-10 14:31:39Z zeising $
+# $FreeBSD: head/x11/xrdb/Makefile 494844 2019-03-06 21:30:03Z zeising $
 
 PORTNAME=	xrdb
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.0
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X server resource database utility
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	app
 USE_XORG=	xmuu x11

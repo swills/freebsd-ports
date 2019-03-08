@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/libdparse/Makefile 485793 2018-11-24 21:18:01Z acm $
+# $FreeBSD: head/devel/libdparse/Makefile 494902 2019-03-07 06:18:01Z acm $
 
 PORTNAME=	libdparse
-PORTVERSION=	0.9.10
+PORTVERSION=	0.11.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

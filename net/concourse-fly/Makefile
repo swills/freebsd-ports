@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/concourse-fly/Makefile 491829 2019-02-01 15:29:47Z dumbbell $
+# $FreeBSD: head/net/concourse-fly/Makefile 494602 2019-03-04 15:29:07Z dumbbell $
 
 PORTNAME=	concourse
-PORTVERSION=	4.2.2
+PORTVERSION=	4.2.3
 CATEGORIES=	net sysutils
 MASTER_SITES=	LOCAL/dumbbell/concourse/
 PKGNAMESUFFIX=	-fly

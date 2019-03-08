@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/d-scanner/Makefile 485400 2018-11-20 02:53:00Z acm $
+# $FreeBSD: head/devel/d-scanner/Makefile 494896 2019-03-07 06:13:04Z acm $
 
 PORTNAME=	d-scanner
-PORTVERSION=	0.5.11
+PORTVERSION=	0.7.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -23,6 +23,7 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator \
 		rdmd:lang/dlang-tools
 
+USES=		pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
 GH_PROJECT=	D-Scanner

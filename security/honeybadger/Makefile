@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/honeybadger/Makefile 463611 2018-03-04 23:14:00Z yuri $
+# $FreeBSD: head/security/honeybadger/Makefile 494718 2019-03-05 17:06:06Z antoine $
 
 PORTNAME=	honeybadger
 PORTVERSION=	0.0.0.2016022301
@@ -6,6 +6,8 @@ CATEGORIES=	security
 
 MAINTAINER=	shawn.webb@hardenedbsd.org
 COMMENT=	Quantum Insert detector and 0-day catcher
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	go:lang/go
 

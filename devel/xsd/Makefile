@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/xsd/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/xsd/Makefile 494782 2019-03-06 08:21:29Z jbeich $
 
 PORTNAME=	xsd
 PORTVERSION=	4.0.0
@@ -39,6 +39,9 @@ post-patch:
 # Use devel/build instead of the port's bundled copy.
 	${RM} -r ${WRKSRC}/build-0.3
 	${LN} -s ${LOCALBASE}/include/build-0.3 ${WRKSRC}/build-0.3
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/libxsd-frontend/version \
+		${WRKSRC}/libxsd-frontend/version.txt
 
 post-install:
 # Install examples into the right directory.

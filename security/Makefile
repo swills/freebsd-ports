@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 494498 2019-03-03 11:43:52Z rene $
+# $FreeBSD: head/security/Makefile 494849 2019-03-06 21:49:00Z rene $
 #
 
     COMMENT = Security tools
@@ -206,7 +206,6 @@
     SUBDIR += gtkpasman
     SUBDIR += gwee
     SUBDIR += hackbot
-    SUBDIR += hamachi
     SUBDIR += hardening-check
     SUBDIR += hashcat
     SUBDIR += hashcat-legacy
@@ -1277,6 +1276,7 @@
     SUBDIR += sshpass
     SUBDIR += ssl-admin
     SUBDIR += ssllabs-scan
+    SUBDIR += sslproxy
     SUBDIR += sslscan
     SUBDIR += sslsniffer
     SUBDIR += sslsplit

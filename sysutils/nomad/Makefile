@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/nomad/Makefile 491498 2019-01-28 17:25:02Z jhixson $
+# $FreeBSD: head/sysutils/nomad/Makefile 494716 2019-03-05 17:04:01Z antoine $
 
 PORTNAME=	nomad
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,8 @@ COMMENT=	Cluster manager and scheduler
 
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	On i386: go compiler crashes: https://github.com/golang/go/issues/23763

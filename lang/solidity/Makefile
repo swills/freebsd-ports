@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/solidity/Makefile 492905 2019-02-14 08:06:47Z ale $
+# $FreeBSD: head/lang/solidity/Makefile 494709 2019-03-05 16:52:52Z ale $
 
 PORTNAME=	solidity
-PORTVERSION=	0.5.4
+PORTVERSION=	0.5.5
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/ethereum/solidity/releases/download/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 484273 2018-11-06 01:50:26Z jbeich $
+# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 494758 2019-03-06 02:55:01Z jbeich $
 
 PORTNAME=	l-smash-works
 DISTVERSION=	0.0-935 # git rev-list --count HEAD
@@ -52,6 +52,7 @@ post-patch:
 		-e 's/pushd/cd/; s/popd/cd -/' \
 		-e 's/-Os //; /=.*-fexcess-precision/d' \
 		${WRKSRC}/configure
+	@${REINPLACE_CMD} 's/ -msse2 -g0//' ${WRKSRC}/${MAKEFILE}
 
 post-install:
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} \

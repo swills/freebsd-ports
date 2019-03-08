@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/databases/mroonga/Makefile 493373 2019-02-19 17:13:52Z bofh $
+# $FreeBSD: head/databases/mroonga/Makefile 494781 2019-03-06 08:21:23Z jbeich $
 
 PORTNAME=	mroonga
 PORTVERSION=	9.00
@@ -24,6 +24,12 @@ CONFIGURE_ARGS=	--with-mysql-source="$$(cd ${PORTSDIR}/${_MYSQL_SERVER}; ${MAKE}
 SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=		DOCS
+
+post-patch:
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/version ${WRKSRC}/version.txt
+	@${REINPLACE_CMD} -i .c++20 's,srcdir)/version[[:>:]],&.txt,' \
+		${WRKSRC}/Makefile.in
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mysql/plugin/ha_mroonga.so.0.0.0

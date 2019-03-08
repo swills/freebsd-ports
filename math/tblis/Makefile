@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/tblis/Makefile 473012 2018-06-22 01:15:19Z linimon $
+# $FreeBSD: head/math/tblis/Makefile 494581 2019-03-04 10:44:36Z jbeich $
 
 PORTNAME=	tblis
 PORTVERSION=	1.1.2
@@ -33,5 +33,9 @@ PARA_CONFIGURE_ON=	--enable-thread-model=pthreads
 PARA_CONFIGURE_OFF=	--enable-thread-model=none
 
 INSTALL_TARGET=	install-strip
+
+post-patch:
+# Avoid conflict with C++20 <version> by ignoring <...> under WRKSRC
+	@${REINPLACE_CMD} -i .c++20 's/-I/-iquote/g' ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>

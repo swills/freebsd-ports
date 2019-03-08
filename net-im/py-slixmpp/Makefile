@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-im/py-slixmpp/Makefile 489686 2019-01-08 13:31:14Z 0mp $
+# $FreeBSD: head/net-im/py-slixmpp/Makefile 494706 2019-03-05 15:02:39Z 0mp $
 
 PORTNAME=	slixmpp
-DISTVERSION=	1.4.1
-PORTREVISION=	1
+DISTVERSION=	1.4.2
 CATEGORIES=	net-im python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xinit/Makefile 468661 2018-04-29 21:51:53Z yuri $
+# $FreeBSD: head/x11/xinit/Makefile 494839 2019-03-06 20:59:17Z zeising $
 
 PORTNAME=	xinit
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 PORTEPOCH=	1
 CATEGORIES=	x11
 

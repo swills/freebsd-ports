@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/istio/Makefile 493681 2019-02-23 14:34:01Z danilo $
+# $FreeBSD: head/sysutils/istio/Makefile 494956 2019-03-07 15:29:34Z antoine $
 
 PORTNAME=	istio
 PORTVERSION=	1.0.6
@@ -9,6 +9,8 @@ MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Open platform to connect, manage, and secure microservices
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to build
 
 RUN_DEPENDS=	kubectl:sysutils/kubectl
 

@@ -1,10 +1,10 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/googletest/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/googletest/Makefile 494654 2019-03-04 21:51:53Z ngie $
 
 PORTNAME=	googletest
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	1.8.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -25,6 +25,12 @@ CONFIGURE_ENV=	ac_cv_path_PYTHON=":"
 TEST_TARGET=	check
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
+
+# googletest requires pthread in order to function and does not properly
+# detect pthread support.
+#
+# See: https://github.com/google/googletest/issues/2162
+LIBS+=		-lpthread
 
 post-patch:
 # enable vendor make install again (revert 661758e)

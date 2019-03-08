@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-python-slugify/Makefile 489311 2019-01-05 09:16:34Z matthew $
+# $FreeBSD: head/textproc/py-python-slugify/Makefile 494754 2019-03-05 23:38:27Z matthew $
 
 PORTNAME=	python-slugify
-PORTVERSION=	2.0.1
+PORTVERSION=	3.0.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

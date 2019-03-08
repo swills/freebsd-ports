@@ -1,8 +1,10 @@
-# $FreeBSD: head/devel/ccls/Makefile 494371 2019-03-02 07:43:05Z tobik $
+# $FreeBSD: head/devel/ccls/Makefile 494601 2019-03-04 15:20:42Z tobik $
 
 PORTNAME=	ccls
 DISTVERSION=	0.20190301
+PORTREVISION=	1
 CATEGORIES=	devel
+MASTER_SITES=	LOCAL/tobik
 
 MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	C/C++/ObjC language server
@@ -18,7 +20,7 @@ USES=		cmake compiler:c++17-lang localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	MaskRay
 # Commit matching 0.20190301
-#GH_TAGNAME=	c9937f7463757492411c1d64ae2212178652e561
+#GH_TAGNAME=	c9b213150d6db362706d7d852a01f681bae05a10
 
 CMAKE_ARGS=	-DCLANG_ROOT:String="${LOCALBASE}/llvm${LLVM_DEFAULT}"
 CMAKE_ON=	LLVM_ENABLE_RTTI USE_SHARED_LLVM

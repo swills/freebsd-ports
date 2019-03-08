@@ -1,11 +1,12 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/security/mailzu/Makefile 485752 2018-11-24 10:12:21Z joneum $
+# $FreeBSD: head/security/mailzu/Makefile 494939 2019-03-07 13:29:07Z swills $
 
 PORTNAME=	mailzu
 DISTVERSION=	0.8rc3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/MailZu%200.8RC3
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	MailZu_${DISTVERSION:S/rc/RC/}
 
 MAINTAINER=	ports@bsdserwis.com
@@ -26,7 +27,7 @@ SUB_FILES=	pkg-message
 NO_BUILD=	yes
 NO_ARCH=	yes
 USE_PHP=	sockets
-USES=		php:web
+USES=		php:flavors,web
 
 OPTIONS_DEFINE=	IMAP LDAP DOCS
 OPTIONS_MULTI=	SQL

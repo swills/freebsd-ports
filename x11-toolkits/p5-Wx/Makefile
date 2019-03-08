@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/x11-toolkits/p5-Wx/Makefile 493853 2019-02-25 12:47:20Z bapt $
+# $FreeBSD: head/x11-toolkits/p5-Wx/Makefile 494734 2019-03-05 19:30:48Z antoine $
 
 PORTNAME=	Wx
 PORTVERSION=	0.9932
@@ -13,6 +13,8 @@ COMMENT=	Perl5 interface to the wxWidgets cross-platform GUI toolkit
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-ExtUtils-XSpp>=0.16.03:devel/p5-ExtUtils-XSpp \

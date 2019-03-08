@@ -1,9 +1,9 @@
-# $FreeBSD: head/editors/lazarus/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/editors/lazarus/Makefile 494879 2019-03-07 04:55:52Z acm $
 
 PORTNAME=	lazarus
-PORTVERSION=	1.8.4
+PORTVERSION=	2.0.0
 PKGNAMESUFFIX?=  -gtk2
-PORTREVISION?=	1
+PORTREVISION?=	0
 CATEGORIES=	editors devel
 MASTER_SITES=	SF/${PORTNAME}/Lazarus%20Zip%20_%20GZip/Lazarus%20${PORTVERSION} \
 		LOCAL/acm/freepascal
@@ -21,8 +21,8 @@ ONLY_FOR_ARCHS=	i386 amd64
 
 USES=		fpc gettext gmake iconv
 USE_FPC?=	chm cairo dblib fcl-base fcl-db fcl-fpcunit fcl-image fcl-json fcl-net \
-		fcl-registry fcl-res fcl-web fcl-xml gtk2 ibase iconvenc mysql \
-		numlib odbc openssl oracle pasjpeg postgres regexpr rtl-extra \
+		fcl-registry fcl-res fcl-web fcl-xml fppkg gtk2 ibase iconvenc mysql \
+		numlib odbc opengl openssl oracle pasjpeg postgres regexpr rtl-extra \
 		sqlite x11
 USE_XORG=	x11
 OPT?=		"-Sgic "

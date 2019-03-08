@@ -1,6 +1,5 @@
-# $FreeBSD: head/editors/lazarus-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/editors/lazarus-qt5/Makefile 494879 2019-03-07 04:55:52Z acm $
 
-PORTREVISION=	2
 PKGNAMESUFFIX?=  -qt5
 
 COMMENT=	Portable Delphi-like IDE for the FreePascal compiler (QT5)

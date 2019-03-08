@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/openbor/Makefile 493335 2019-02-19 00:16:01Z jbeich $
+# $FreeBSD: head/games/openbor/Makefile 494760 2019-03-06 02:55:13Z jbeich $
 
 PORTNAME=	openbor
 # Hint: svn revision is git rev-list --count ${GH_TAGNAME}
@@ -81,6 +81,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's/ -O[0-9]//; s/ -g//; s/ -Werror//' \
 		-e 's/ -fomit-frame-pointer//' \
 		-e 's/ -freorder-blocks//' \
+		-e 's/ -Wno-unused-result//' \
 		-e 's/ -Wl,-rpath,$$(LIBRARIES)//' \
 		-e '/echo/!s/	@/	/' \
 		-e 's/@echo/@$$(ECHO)/' \

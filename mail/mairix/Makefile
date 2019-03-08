@@ -1,5 +1,5 @@
 # Created by: Oliver Braun <obraun@FreeBSD.org>
-# $FreeBSD: head/mail/mairix/Makefile 462417 2018-02-20 18:54:46Z yuri $
+# $FreeBSD: head/mail/mairix/Makefile 494671 2019-03-05 02:16:37Z meta $
 
 PORTNAME=	mairix
 DISTVERSION=	0.24
@@ -15,10 +15,11 @@ BROKEN_armv6=	fails to build under emulation: qemu: uncaught target signal 11 (S
 BROKEN_armv7=	fails to build under emulation: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
 
 USES=		bison gmake ssl
-HAS_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	vandry
 
+CONFIGURE_ARGS= --prefix=${PREFIX}
+HAS_CONFIGURE=	yes
 PLIST_FILES=	bin/mairix \
 		man/man1/mairix.1.gz \
 		man/man5/mairixrc.5.gz

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/telegram-desktop/Makefile 492232 2019-02-05 14:05:36Z swills $
+# $FreeBSD: head/net-im/telegram-desktop/Makefile 494874 2019-03-07 03:47:58Z linimon $
 
 PORTNAME=	telegram-desktop
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,9 @@ COMMENT=	Telegram Desktop messaging app
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+NOT_FOR_ARCHS=		powerpc powerpc64 powerpcspe
+NOT_FOR_ARCHS_REASON=	Please add support for your architecture in base/build_config.h
 
 BUILD_DEPENDS=	dee>0:devel/dee \
 		gyp:devel/py-gyp@${PY_FLAVOR} \

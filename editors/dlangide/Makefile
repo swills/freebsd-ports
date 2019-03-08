@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/editors/dlangide/Makefile 485406 2018-11-20 03:00:51Z acm $
+# $FreeBSD: head/editors/dlangide/Makefile 494910 2019-03-07 06:28:01Z acm $
 
 PORTNAME=	dlangide
 PORTVERSION=	0.8.12
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
 

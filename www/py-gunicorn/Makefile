@@ -1,8 +1,8 @@
 # Created by: Kristaps Kulis <kristaps.kulis@gmail.com>
-# $FreeBSD: head/www/py-gunicorn/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-gunicorn/Makefile 494753 2019-03-05 23:35:53Z wen $
 
 PORTNAME=	gunicorn
-PORTVERSION=	19.4.5
+PORTVERSION=	19.9.0
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

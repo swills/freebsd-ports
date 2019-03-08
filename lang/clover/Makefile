@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/clover/Makefile 480747 2018-09-26 16:12:12Z emaste $
+# $FreeBSD: head/lang/clover/Makefile 494583 2019-03-04 10:56:12Z jbeich $
 
 PORTNAME=	clover
 PORTVERSION=	${MESAVERSION}
+PORTREVISION=	2
 CATEGORIES=	lang
 
 COMMENT=	Mesa "Clover" OpenCL library

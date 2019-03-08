@@ -1,5 +1,5 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/devel/rubygem-daemon_controller/Makefile 494317 2019-03-01 22:05:31Z osa $
+# $FreeBSD: head/devel/rubygem-daemon_controller/Makefile 494569 2019-03-04 09:30:34Z mfechner $
 
 PORTNAME=	daemon_controller
 PORTVERSION=	1.2.0

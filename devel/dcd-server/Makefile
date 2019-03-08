@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dcd-server/Makefile 485401 2018-11-20 02:53:49Z acm $
+# $FreeBSD: head/devel/dcd-server/Makefile 494897 2019-03-07 06:13:43Z acm $
 
 PORTNAME=	dcd
-PORTVERSION=	0.9.13
+PORTVERSION=	0.11.0
 DISTVERSIONPREFIX=	v
 PORTREVISION?=	0
 CATEGORIES?=	devel
@@ -23,6 +23,7 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 
+USES=		pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
 GH_PROJECT=	DCD

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/ponscripter-sekai/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/ponscripter-sekai/Makefile 494759 2019-03-06 02:55:07Z jbeich $
 
 PORTNAME=	ponscripter-sekai
 PORTVERSION=	0.0.6
@@ -51,6 +51,7 @@ TREMOR_LIB_DEPENDS_OFF=	libvorbisfile.so:audio/libvorbis
 post-patch:
 	@${REINPLACE_CMD} -e '/^ifdef DEBUG/,/^$$/d' \
 		-e 's/$$STRIPFLAG/${STRIP}/' \
+		-e 's/_maltivec/_altivec/g' \
 		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e 's/$$(LIBS)/$$(LDFLAGS) &/' \
 		${WRKSRC}/src/Makefile.ponscripter

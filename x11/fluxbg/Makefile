@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/x11/fluxbg/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/x11/fluxbg/Makefile 494771 2019-03-06 04:03:23Z linimon $
 
 PORTNAME=	fluxbg
 PORTVERSION=	0.7
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libgtkmm-2.0.so:x11-toolkits/gtkmm20
 RUN_DEPENDS=	fbsetbg:x11-wm/fluxbox
 
 GNU_CONFIGURE=	yes
-USES=		pathfix pkgconfig
+USES=		compiler:c11 pathfix pkgconfig
 PLIST_FILES=	bin/fluxbg \
 		bin/fluxbgd \
 		bin/fluxbg_conf

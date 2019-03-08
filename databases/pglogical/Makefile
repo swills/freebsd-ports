@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pglogical/Makefile 492346 2019-02-07 06:44:46Z matthew $
+# $FreeBSD: head/databases/pglogical/Makefile 494778 2019-03-06 06:53:54Z matthew $
 
 PORTNAME=	pglogical
 DISTVERSIONPREFIX=	REL
@@ -34,6 +34,10 @@ DOCS_PORTDOCS=	*
 PLIST_SUB+=	PGSQL94=""
 .else
 PLIST_SUB+=	PGSQL94="@comment "
+.endif
+
+.if ${PGSQL_VER} >= 11
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-pglogical__apply__spi.c
 .endif
 
 # FFI

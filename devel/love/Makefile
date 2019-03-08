@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/love/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/love/Makefile 494871 2019-03-07 03:32:31Z linimon $
 
 PORTNAME=	love
 PORTVERSION=	11.2
@@ -14,6 +14,9 @@ COMMENT=	Open-source 2D game engine
 
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/license.txt
+
+NOT_FOR_ARCHS=		powerpc powerpc64 powerpcspe sparc64
+NOT_FOR_ARCHS_REASON=	Hashing not yet implemented for big endian
 
 LIB_DEPENDS=	libmodplug.so:audio/libmodplug \
 		libmpg123.so:audio/mpg123 \

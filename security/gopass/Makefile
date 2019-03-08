@@ -1,9 +1,9 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/security/gopass/Makefile 489297 2019-01-05 02:35:58Z swills $
+# $FreeBSD: head/security/gopass/Makefile 494965 2019-03-07 17:28:40Z swills $
 
 PORTNAME=	gopass
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.4
+DISTVERSION=	1.8.5
 CATEGORIES=	security
 
 MAINTAINER=	sascha@root-login.org

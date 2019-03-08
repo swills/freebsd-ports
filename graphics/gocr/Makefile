@@ -1,9 +1,8 @@
 # Created by: Kay Lehmann
-# $FreeBSD: head/graphics/gocr/Makefile 470621 2018-05-22 15:32:53Z yuri $
+# $FreeBSD: head/graphics/gocr/Makefile 494933 2019-03-07 13:07:06Z swills $
 
 PORTNAME=	gocr
-PORTVERSION=	0.50
-PORTREVISION=	2
+PORTVERSION=	0.52
 CATEGORIES=	graphics
 MASTER_SITES=	http://www-e.uni-magdeburg.de/jschulen/ocr/
 
@@ -15,6 +14,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libnetpbm.so:graphics/netpbm
 
 USES=		gmake
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-netpbm=${LOCALBASE}
 MAKE_ARGS=	prefix=${PREFIX} exec_prefix=${PREFIX} DESTDIR=${DESTDIR}

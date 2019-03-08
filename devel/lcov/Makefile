@@ -1,8 +1,8 @@
 # Created by: Romain Tartiere <romain@FreeBSD.org>
-# $FreeBSD: head/devel/lcov/Makefile 445503 2017-07-11 16:31:04Z romain $
+# $FreeBSD: head/devel/lcov/Makefile 494867 2019-03-07 02:02:25Z romain $
 
 PORTNAME=	lcov
-PORTVERSION=	1.13
+PORTVERSION=	1.14
 CATEGORIES=	devel
 MASTER_SITES=	SF/ltp/Coverage%20Analysis/LCOV-${PORTVERSION}
 

@@ -1,12 +1,12 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/net/Sockets/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net/Sockets/Makefile 494941 2019-03-07 13:35:06Z swills $
 
 PORTNAME=	Sockets
 PORTVERSION=	2.3.9.9
 PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.alhem.net/Sockets/ \
-		http://www.netfence.it/Sockets/
+		https://www.netfence.it/Sockets/
 
 MAINTAINER=	ml@netfence.it
 COMMENT=	C++ wrapper for BSD-style sockets

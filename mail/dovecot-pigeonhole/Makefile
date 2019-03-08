@@ -1,9 +1,8 @@
 # Created by: Nils Vogels <nivo+kw+ports.bfa274@is-root.com>
-# $FreeBSD: head/mail/dovecot-pigeonhole/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/mail/dovecot-pigeonhole/Makefile 494752 2019-03-05 23:34:12Z ler $
 
 PORTNAME=	dovecot-pigeonhole
-PORTVERSION=	0.5.4
-PORTREVISION=	1
+PORTVERSION=	0.5.5
 CATEGORIES=	mail
 MASTER_SITES=	http://pigeonhole.dovecot.org/releases/${DOVECOTVERSION}/
 DISTNAME=	${PORTNAME:C/-/-${DOVECOTVERSION}-/}-${PORTVERSION}
@@ -13,8 +12,8 @@ COMMENT=	Sieve plugin for the Dovecot 'deliver' LDA and LMTP
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	dovecot>=2.3.4:mail/dovecot
-RUN_DEPENDS=	dovecot>=2.3.4:mail/dovecot
+BUILD_DEPENDS=	dovecot>=2.3.5:mail/dovecot
+RUN_DEPENDS=	dovecot>=2.3.5:mail/dovecot
 
 DOVECOTVERSION=	2.3
 

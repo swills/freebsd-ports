@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-robotframework/Makefile 469716 2018-05-12 08:08:22Z joneum $
+# $FreeBSD: head/devel/py-robotframework/Makefile 494607 2019-03-04 16:32:04Z swills $
 
 PORTNAME=	robotframework
-PORTVERSION=	3.0.4
+PORTVERSION=	3.1.1
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,9 @@ COMMENT=	Generic test automation framework
 
 LICENSE=	APACHE20
 
-NO_ARCH=	yes
-USES=		python
+USES=		python zip
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,9 +1,8 @@
 # Created by: Jacques Vidrine <nectar@FreeBSD.org>
-# $FreeBSD: head/emulators/stella/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/emulators/stella/Makefile 494963 2019-03-07 16:51:17Z acm $
 
 PORTNAME=	stella
-PORTVERSION=	5.1.3
-PORTREVISION=	2
+PORTVERSION=	6.0
 CATEGORIES=	emulators
 
 MAINTAINER=	acm@FreeBSD.org
@@ -18,16 +17,15 @@ BROKEN_armv7=		fails to compile: Checking for compiler version... 5.0.0, bad; Pl
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
+USES=		compiler:c++11-lib gmake tar:xz
+USE_SDL=	sdl2
 USE_GITHUB=	yes
 GH_ACCOUNT=	stella-emu
 
+HAS_CONFIGURE=	yes
 CONFLICTS_INSTALL=	rubygem-stella
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
-
-USES=		compiler:c++11-lib gmake tar:xz
-USE_SDL=	sdl2
-HAS_CONFIGURE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

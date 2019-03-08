@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/coursier/Makefile 481269 2018-10-05 10:13:20Z tobik $
+# $FreeBSD: head/devel/coursier/Makefile 494669 2019-03-05 02:05:40Z swills $
 
 PORTNAME=	coursier
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.1
+DISTVERSION=	1.1.0-M12
 CATEGORIES=	devel java
 
 MAINTAINER=	jhyphenkeck@gmail.com

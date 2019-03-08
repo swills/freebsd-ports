@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/libclc/Makefile 471066 2018-05-28 20:22:35Z zeising $
+# $FreeBSD: head/devel/libclc/Makefile 494583 2019-03-04 10:56:12Z jbeich $
 
 PORTNAME=	libclc
 DISTVERSION=	0.3.0.20180518
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org

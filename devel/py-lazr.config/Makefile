@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-lazr.config/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-lazr.config/Makefile 494985 2019-03-07 18:46:38Z acm $
 
 PORTNAME=	lazr.config
-PORTVERSION=	2.2
-PORTREVISION=	1
+PORTVERSION=	2.2.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

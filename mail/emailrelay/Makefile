@@ -1,9 +1,9 @@
 # Created by: Robert Nelson <robertn@the-nelsons.org>
-# $FreeBSD: head/mail/emailrelay/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/mail/emailrelay/Makefile 494744 2019-03-05 21:20:27Z antoine $
 
 PORTNAME=	emailrelay
 PORTVERSION=	1.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF
 EXTRACT_SUFX=	-src.tar.gz

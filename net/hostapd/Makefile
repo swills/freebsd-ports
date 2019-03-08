@@ -1,8 +1,9 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/net/hostapd/Makefile 486778 2018-12-06 20:11:15Z cy $
+# $FreeBSD: head/net/hostapd/Makefile 494674 2019-03-05 03:56:22Z cy $
 
 PORTNAME=	hostapd
 PORTVERSION=	2.7
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://w1.fi/releases/
 

@@ -1,5 +1,5 @@
 # Created by: Yarema <yds@CoolRat.org>
-# $FreeBSD: head/mail/courier/Makefile 491312 2019-01-26 20:58:01Z tobik $
+# $FreeBSD: head/mail/courier/Makefile 494575 2019-03-04 10:10:21Z jbeich $
 
 PORTNAME=	courier
 PORTVERSION=	0.65.3
@@ -299,6 +299,10 @@ post-patch:
 		${WRKSRC}/courier/perms.sh.in
 	@${REINPLACE_CMD} '/^courieresmtp_LDADD =/s/$$/ -lcourierauth/' \
 		${WRKSRC}/courier/module.esmtp/Makefile.in
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${REINPLACE_CMD} -i .c++20 's/>version$$/&.txt/' ${WRKSRC}/configure
+	@${FIND} ${WRKSRC} -name configure -exec ${REINPLACE_CMD} \
+		-i .c++20 '/^version.*cat/s,/version,&.txt,' {} +
 
 post-build:
 	@${PERL} -pi -e 's|^(auth)\s+(required).*|$$1\t\t$$2\tpam_unix.so\ttry_first_pass|g;' \

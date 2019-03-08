@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 490514 2019-01-16 20:11:11Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 494731 2019-03-05 17:30:06Z sunpoet $
 
 PORTNAME=	fog-ovirt
-PORTVERSION=	1.1.5
+PORTVERSION=	1.1.6
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

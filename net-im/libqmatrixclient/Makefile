@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-im/libqmatrixclient/Makefile 493501 2019-02-21 13:44:45Z adridg $
+# $FreeBSD: head/net-im/libqmatrixclient/Makefile 495002 2019-03-07 21:57:24Z adridg $
 
 PORTNAME=	libqmatrixclient
-DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.2.1
+DISTVERSION=	0.5.0
 CATEGORIES=	net-im
 
 MAINTAINER=	adridg@FreeBSD.org
@@ -11,8 +10,8 @@ COMMENT=	Matrix IM support library using Qt technologies
 LICENSE=	LGPL21
 LICENSE_FILES=	${WRKSRC}/COPYING
 
-USES=	cmake qt:5 tar:xz
-USE_QT=	core gui network \
+USES=	cmake compiler:c++14-lang qt:5 tar:xz
+USE_QT=	core gui multimedia network \
 	buildtools_build qmake_build
 
 USE_GITHUB=	yes

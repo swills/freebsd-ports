@@ -1,8 +1,8 @@
 # Created by: Naito Yuichiro <naito.yuichiro@gmail.com>
-# $FreeBSD: head/misc/tzdiff/Makefile 488464 2018-12-26 21:59:00Z swills $
+# $FreeBSD: head/misc/tzdiff/Makefile 494875 2019-03-07 04:06:35Z hrs $
 
 PORTNAME=	tzdiff
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	misc
 
 MAINTAINER=	naito.yuichiro@gmail.com

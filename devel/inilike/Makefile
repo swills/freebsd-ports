@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/inilike/Makefile 485396 2018-11-20 02:50:05Z acm $
+# $FreeBSD: head/devel/inilike/Makefile 494907 2019-03-07 06:26:39Z acm $
 
 PORTNAME=	inilike
 PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

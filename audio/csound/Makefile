@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound/Makefile 494418 2019-03-02 16:55:53Z riggs $
+# $FreeBSD: head/audio/csound/Makefile 494873 2019-03-07 03:40:34Z yuri $
 
 PORTNAME=	csound
 DISTVERSION=	6.12.2-83
@@ -23,6 +23,9 @@ USES=		alias bison cmake compiler:c++11-lib eigen:3 localbase ncurses python:2.7
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 
+CFLAGS_powerpc=	-maltivec
+CFLAGS_powerpcspe=	-DPFFFT_SIMD_DISABLE
+CFLAGS_powerpc64=	-maltivec
 CMAKE_ARGS=	-DBUILD_CSOUNDVST:BOOL=OFF \
 		-DBUILD_PD_CLASS:BOOL=OFF \
 		-DPYTHON_MODULE_INSTALL_DIR:PATH="${PYTHONPREFIX_SITELIBDIR}" \

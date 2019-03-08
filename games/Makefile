@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 493572 2019-02-22 14:46:50Z danfe $
+# $FreeBSD: head/games/Makefile 494849 2019-03-06 21:49:00Z rene $
 #
 
     COMMENT = Games and related software
@@ -613,7 +613,6 @@
     SUBDIR += mt_dolphin_ia
     SUBDIR += mt_gtk_client
     SUBDIR += mtaserver
-    SUBDIR += mudmagic
     SUBDIR += multimc
     SUBDIR += mvdsv
     SUBDIR += nInvaders

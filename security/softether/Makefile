@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/softether/Makefile 494160 2019-02-28 16:46:35Z meta $
+# $FreeBSD: head/security/softether/Makefile 494961 2019-03-07 16:15:05Z meta $
 
 PORTNAME=	softether
 DISTVERSION=	4.29-9680
@@ -7,7 +7,7 @@ MASTER_SITES=	https://www.softether-download.com/files/softether/v${DISTVERSION}
 DISTNAME=	${PORTNAME}-src-v${DISTVERSION}-rtm
 
 MAINTAINER=	meta@FreeBSD.org
-COMMENT=	Softether VPN solution
+COMMENT=	SoftEther VPN 4 (RTM version)
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE

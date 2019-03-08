@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-View-REST-XML/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/www/p5-Catalyst-View-REST-XML/Makefile 494784 2019-03-06 09:00:55Z amdmi3 $
 
 PORTNAME=	Catalyst-View-REST-XML
 PORTVERSION=	0.02
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Catalyst XML View Class
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	\
 	p5-Catalyst-Runtime>0:www/p5-Catalyst-Runtime \
@@ -17,5 +20,6 @@ RUN_DEPENDS=	\
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

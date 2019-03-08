@@ -1,13 +1,11 @@
 # Created by: Joep Grooten <joep@di.nl>
-# $FreeBSD: head/devel/doxygen/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/doxygen/Makefile 494744 2019-03-05 21:20:27Z antoine $
 
 PORTNAME=	doxygen
-PORTVERSION=	1.8.14
-PORTREVISION=	1
+PORTVERSION=	1.8.15
 PORTEPOCH=	2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.stack.nl/pub/users/dimitri/ \
-		http://ftp.stack.nl/pub/users/dimitri/
+MASTER_SITES=	http://doxygen.nl/files/
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	cyberbotx@cyberbotx.com
@@ -17,6 +15,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		bison cmake:noninja compiler:c++11-lang iconv python shebangfix
+
 ALL_TARGET=	all
 CMAKE_ARGS+=	-DDOC_INSTALL_DIR:PATH=${DOCSDIR_REL}
 # Parallel jobs breaks when the DOCS option is on

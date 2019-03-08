@@ -1,8 +1,8 @@
 # Created by: estith
-# $FreeBSD: head/devel/p5-Geo-ShapeFile/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Geo-ShapeFile/Makefile 494947 2019-03-07 13:48:29Z culot $
 
 PORTNAME=	Geo-ShapeFile
-PORTVERSION=	2.64
+PORTVERSION=	2.66
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

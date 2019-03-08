@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-flufl.lock/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/devel/py-flufl.lock/Makefile 494984 2019-03-07 18:46:04Z acm $
 
 PORTNAME=	flufl.lock
-PORTVERSION=	3.1
+PORTVERSION=	3.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: Felippe de Meirelles Motta <lippemail@gmail.com>
-# $FreeBSD: head/devel/p5-Test-Kwalitee/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Test-Kwalitee/Makefile 494942 2019-03-07 13:36:18Z culot $
 
 PORTNAME=	Test-Kwalitee
-PORTVERSION=	1.27
+PORTVERSION=	1.28
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

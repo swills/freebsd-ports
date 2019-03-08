@@ -1,10 +1,10 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/lang/beignet/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/lang/beignet/Makefile 494583 2019-03-04 10:56:12Z jbeich $
 
 PORTNAME=	beignet
 DISTVERSION=	1.3.2
 DISTVERSIONSUFFIX=	-source
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	https://01.org/sites/default/files/
 

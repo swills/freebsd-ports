@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-planet/Makefile 484581 2018-11-10 07:57:44Z sunpoet $
+# $FreeBSD: head/www/py-planet/Makefile 494727 2019-03-05 17:29:45Z sunpoet $
 
 PORTNAME=	planet
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

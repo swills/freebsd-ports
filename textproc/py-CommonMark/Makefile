@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/py-CommonMark/Makefile 472898 2018-06-20 18:51:27Z yuri $
+# $FreeBSD: head/textproc/py-CommonMark/Makefile 494826 2019-03-06 18:08:24Z sunpoet $
 
 PORTNAME=	CommonMark
-PORTVERSION=	0.7.5
-PORTREVISION=	2
+PORTVERSION=	0.8.1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+DISTNAME=	commonmark-${PORTVERSION}
 
 MAINTAINER=	romain@FreeBSD.org
 COMMENT=	Python parser for the CommonMark Markdown spec
@@ -13,12 +13,13 @@ COMMENT=	Python parser for the CommonMark Markdown spec
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-CONFLICTS_INSTALL=	cmark
-
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${PY_FLAVOR}
+
+CONFLICTS_INSTALL=	cmark
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

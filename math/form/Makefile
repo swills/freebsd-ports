@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/math/form/Makefile 492291 2019-02-06 07:58:35Z ehaupt $
+# $FreeBSD: head/math/form/Makefile 494744 2019-03-05 21:20:27Z antoine $
 
 PORTNAME=	form
 PORTVERSION=	4.2.1
@@ -32,6 +32,7 @@ CONFIGURE_ARGS+=	--enable-scalar \
 MPICC?=			${LOCALBASE}/mpi/openmpi/bin/mpicc
 MPICXX?=		${LOCALBASE}/mpi/openmpi/bin/mpic++
 
+DOXYGEN_BROKEN=		fails to build
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 OPENMPI_CONFIGURE_ENABLE=	parform

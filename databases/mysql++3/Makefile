@@ -1,5 +1,5 @@
 # Created by: Vlad GALU <dudu@dudu.ro>
-# $FreeBSD: head/databases/mysql++3/Makefile 420362 2016-08-17 18:22:17Z pawel $
+# $FreeBSD: head/databases/mysql++3/Makefile 494630 2019-03-04 18:34:55Z jbeich $
 
 PORTNAME=	mysql++
 PORTVERSION=	3.2.2
@@ -23,6 +23,11 @@ PORTDOCS=	*
 PORTEXAMPLES=	*
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-patch:
+# Avoid conflict with C++20 <version> by ignoring <...> under WRKSRC
+	@${REINPLACE_CMD} -i .c++20 '/MYSQLPP_CXXFLAGS/s/-I/-iquote/' \
+		${WRKSRC}/Makefile.in
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

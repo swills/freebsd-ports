@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5pas/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11-toolkits/qt5pas/Makefile 494878 2019-03-07 04:16:22Z acm $
 
 PORTNAME=	qt5pas
 PORTVERSION=	2.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	LOCAL/acm/
 

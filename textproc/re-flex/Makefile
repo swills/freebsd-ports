@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/re-flex/Makefile 492926 2019-02-14 17:42:19Z gahr $
+# $FreeBSD: head/textproc/re-flex/Makefile 494922 2019-03-07 10:02:02Z gahr $
 
 PORTNAME=	re-flex
-PORTVERSION=	1.0.12
+PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 
@@ -19,6 +19,8 @@ GH_ACCOUNT=	Genivia
 GH_PROJECT=	RE-flex
 
 GNU_CONFIGURE=	yes
+
+TEST_TARGET=	test
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/include/reflex

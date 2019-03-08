@@ -1,8 +1,8 @@
-# Created by: Nicolas Embriz <nbari@dalmp.com>
-# $FreeBSD: head/devel/gitflow/Makefile 455753 2017-12-07 20:03:29Z cpm $
+# Created by: Nicolas Embriz <nbari@tequila.io>
+# $FreeBSD: head/devel/gitflow/Makefile 494650 2019-03-04 21:17:00Z swills $
 
 PORTNAME=	gitflow
-PORTVERSION=	1.11.0
+PORTVERSION=	1.12.1
 CATEGORIES=	devel
 
 MAINTAINER=	nbari@tequila.io

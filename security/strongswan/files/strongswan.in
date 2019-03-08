@@ -1,6 +1,6 @@
 #!/bin/sh
 # Start or stop strongswan
-# $FreeBSD: head/security/strongswan/files/strongswan.in 481110 2018-10-02 10:58:37Z garga $
+# $FreeBSD: head/security/strongswan/files/strongswan.in 494736 2019-03-05 20:14:17Z swills $
 
 # PROVIDE: strongswan
 # REQUIRE: DAEMON
@@ -12,9 +12,11 @@
 name=strongswan
 rcvar=strongswan_enable
 
-extra_commands="reload statusall"
-
 load_rc_config $name
+
+: ${strongswan_enable:=NO}
+
+extra_commands="reload statusall"
 
 command="%%PREFIX%%/sbin/ipsec"
 

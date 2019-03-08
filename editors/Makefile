@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 492857 2019-02-13 13:52:53Z danfe $
+# $FreeBSD: head/editors/Makefile 494912 2019-03-07 06:41:56Z acm $
 #
 
     COMMENT = Editors
@@ -21,6 +21,7 @@
     SUBDIR += chexedit
     SUBDIR += codelite
     SUBDIR += cooledit
+    SUBDIR += cudatext
     SUBDIR += cream
     SUBDIR += deforaos-editor
     SUBDIR += dexed

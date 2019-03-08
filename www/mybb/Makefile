@@ -1,8 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/mybb/Makefile 494382 2019-03-02 10:34:45Z joneum $
+# $FreeBSD: head/www/mybb/Makefile 494573 2019-03-04 10:05:31Z joneum $
 
 PORTNAME=	mybb
 DISTVERSION=	1.8.20
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	joneum@FreeBSD.org
@@ -11,7 +12,7 @@ COMMENT=	PHP-based bulletin board / discussion forum system
 LICENSE=	GPLv3
 
 USE_GITHUB=	yes
-GH_TAGNAME=	${PORTNAME}_1819
+GH_TAGNAME=	${PORTNAME}_1820
 
 USES=		cpe mysql php:web
 NO_BUILD=	yes

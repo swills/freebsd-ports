@@ -1,9 +1,8 @@
-# $FreeBSD: head/mail/mailest/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/mail/mailest/Makefile 494567 2019-03-04 09:11:33Z hrs $
 
 PORTNAME=	mailest
-PORTVERSION=	0.9.22
+PORTVERSION=	0.9.24
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	5
 CATEGORIES=	mail
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
@@ -21,7 +20,7 @@ LIB_DEPENDS=	libevent.so:devel/libevent \
 		libestraier.so:textproc/hyperestraier
 RUN_DEPENDS=	mew${EMACS_PKGNAMESUFFIX}>0:mail/mew@${EMACS_FLAVOR}
 
-USES=		emacs fakeroot iconv
+USES=		emacs:run fakeroot iconv
 USE_GITHUB=	yes
 GH_ACCOUNT=	yasuoka
 

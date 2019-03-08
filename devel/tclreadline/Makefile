@@ -1,8 +1,8 @@
 # Created by: darius@dons.net.au
-# $FreeBSD: head/devel/tclreadline/Makefile 492671 2019-02-11 07:39:41Z gahr $
+# $FreeBSD: head/devel/tclreadline/Makefile 494954 2019-03-07 15:24:00Z gahr $
 
 PORTNAME=	tclreadline
-PORTVERSION=	2.3.2
+PORTVERSION=	2.3.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel tcl
 

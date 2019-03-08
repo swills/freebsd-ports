@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-atpublic/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-atpublic/Makefile 494982 2019-03-07 18:45:38Z acm $
 
 PORTNAME=	atpublic
-PORTVERSION=	0.5
+PORTVERSION=	1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

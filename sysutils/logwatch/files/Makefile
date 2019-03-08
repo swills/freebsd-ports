@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/logwatch/files/Makefile 398833 2015-10-08 15:12:22Z olgeni $
+# $FreeBSD: head/sysutils/logwatch/files/Makefile 494733 2019-03-05 19:06:19Z swills $
 
 PORTNAME?=logwatch
 PREFIX?=/usr/local/${PORTNAME}
@@ -53,6 +53,7 @@ install:
 	daemon \
 	denyhosts \
 	dnssec \
+	dovecot \
 	dpkg \
 	emerge \
 	eventlog \
@@ -76,6 +77,7 @@ install:
 	qmail-send-current \
 	qmail-smtpd-current \
 	resolver \
+	rsnapshot \
 	rt314 \
 	samba \
 	secure \
@@ -158,6 +160,7 @@ install:
 	qmail-smtpd \
 	raid \
 	resolver \
+	rsnapshot \
 	rt314 \
 	samba \
 	saslauthd \
@@ -184,7 +187,6 @@ install:
 	xntpd \
 	yum \
 	zz-disk_space \
-	zz-fortune \
 	zz-network \
 	zz-runtime \
 	zz-sys \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/consul-replicate/Makefile 476591 2018-08-07 12:13:47Z jhixson $
+# $FreeBSD: head/sysutils/consul-replicate/Makefile 494710 2019-03-05 16:56:24Z antoine $
 
 PORTNAME=	consul-replicate
 PORTVERSION=	0.4.0
@@ -10,6 +10,8 @@ COMMENT=	Consul cross-DC KV replication daemon
 
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
 

@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/rust-bindgen/Makefile 494176 2019-02-28 18:51:45Z jbeich $
+# $FreeBSD: head/devel/rust-bindgen/Makefile 494927 2019-03-07 12:20:22Z jbeich $
 
 PORTNAME=	rust-bindgen
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.47.3
-PORTREVISION=	2
+DISTVERSION=	0.48.1
 CATEGORIES=	devel
 
 MAINTAINER=	gecko@FreeBSD.org

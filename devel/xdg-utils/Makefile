@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/devel/xdg-utils/Makefile 490009 2019-01-11 20:26:34Z lme $
+# $FreeBSD: head/devel/xdg-utils/Makefile 494714 2019-03-05 17:00:25Z tijl $
 
 PORTNAME=	xdg-utils
 PORTVERSION=	1.1.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://portland.freedesktop.org/download/
 

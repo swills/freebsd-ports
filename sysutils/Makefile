@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 494498 2019-03-03 11:43:52Z rene $
+# $FreeBSD: head/sysutils/Makefile 494604 2019-03-04 15:59:12Z kmoore $
 #
 
     COMMENT = System utilities
@@ -851,6 +851,7 @@
     SUBDIR += panicmail
     SUBDIR += parafly
     SUBDIR += parallel
+    SUBDIR += pass-otp
     SUBDIR += password-store
     SUBDIR += passwordsafe
     SUBDIR += patchelf
@@ -1545,6 +1546,8 @@
     SUBDIR += zisofs-tools
     SUBDIR += znapzend
     SUBDIR += zogftw
+    SUBDIR += zol
+    SUBDIR += zol-kmod
     SUBDIR += zrep
     SUBDIR += zrepl
     SUBDIR += zsd

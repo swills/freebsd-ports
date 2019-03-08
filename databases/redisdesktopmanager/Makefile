@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/redisdesktopmanager/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/databases/redisdesktopmanager/Makefile 495011 2019-03-08 03:00:36Z linimon $
 
 PORTNAME=	redisdesktopmanager
 PORTVERSION=	0.9.9
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libssh2.so:security/libssh2
 
-USES=		dos2unix gl kde:5 qmake qt:5 ssl
+USES=		compiler:c++0x dos2unix gl kde:5 qmake qt:5 ssl
 DOS2UNIX_FILES=	3rdparty/3rdparty.pri
 USE_GL=		gl
 USE_GITHUB=	yes

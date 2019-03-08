@@ -1,5 +1,5 @@
 # Created by: "Mahdi Mokhtari <mokhi64@gmail.com>"
-# $FreeBSD: head/databases/mysql80-client/Makefile 491308 2019-01-26 18:36:14Z mmokhi $
+# $FreeBSD: head/databases/mysql80-client/Makefile 494962 2019-03-07 16:29:29Z linimon $
 
 PORTNAME=	mysql
 PORTREVISION=	0
@@ -8,9 +8,6 @@ PKGNAMESUFFIX=	80-client
 COMMENT=	Multithreaded SQL database (client)
 
 LICENSE+=	LGPL21
-
-BROKEN_powerpc64=	does not build: reports unsupported compiler
-BROKEN_sparc64=		does not build: reports unsupported compiler
 
 MASTERDIR=	${.CURDIR}/../mysql80-server
 

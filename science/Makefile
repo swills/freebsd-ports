@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 493314 2019-02-18 19:37:36Z yuri $
+# $FreeBSD: head/science/Makefile 494849 2019-03-06 21:49:00Z rene $
 #
 
     COMMENT = Scientific ports
@@ -61,7 +61,6 @@
     SUBDIR += datawarrior
     SUBDIR += dcl
     SUBDIR += devisor
-    SUBDIR += dft_tools
     SUBDIR += dftbplus
     SUBDIR += dkh
     SUBDIR += dlib-cpp
@@ -310,7 +309,6 @@
     SUBDIR += teem
     SUBDIR += tfel
     SUBDIR += tinker
-    SUBDIR += triqs
     SUBDIR += udunits
     SUBDIR += v_sim
     SUBDIR += vipster
