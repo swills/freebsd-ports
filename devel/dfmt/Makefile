@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dfmt/Makefile 485842 2018-11-25 03:05:49Z acm $
+# $FreeBSD: head/devel/dfmt/Makefile 494898 2019-03-07 06:14:12Z acm $
 
 PORTNAME=	dfmt
-PORTVERSION=	0.8.3
+PORTVERSION=	0.9.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -18,6 +18,7 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 
+USES=		pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
 

@@ -1,5 +1,5 @@
 # Created by: keith@FreeBSD.org
-# $FreeBSD: head/math/gap/Makefile 487243 2018-12-11 17:03:52Z linimon $
+# $FreeBSD: head/math/gap/Makefile 494578 2019-03-04 10:35:34Z jbeich $
 
 PORTNAME=	gap
 PORTVERSION=	4.8.10.${GAP_DISTDATE}
@@ -46,6 +46,9 @@ PLIST_FILES=	bin/gap
 post-patch:
 	@${REINPLACE_CMD} -i '' -e '1s|/usr/bin/sh|/bin/sh|' \
 	    ${WRKSRC}/pkg/happrime/make_tarball
+# Avoid conflict with C++20 <version> by ignoring <...> under WRKSRC
+	@${REINPLACE_CMD} -i .c++20 's/-I/-iquote/' \
+		${WRKSRC}/pkg/*/Makefile.in
 
 post-build:
 	cd ${WRKSRC}/pkg/simpcomp && \

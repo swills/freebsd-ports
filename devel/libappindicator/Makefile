@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libappindicator/Makefile 489298 2019-01-05 02:45:36Z swills $
+# $FreeBSD: head/devel/libappindicator/Makefile 494651 2019-03-04 21:25:58Z swills $
 
 PORTNAME=	libappindicator
 PORTVERSION=	12.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${PORTVERSION:R}/${PORTVERSION}/+download/
 
@@ -21,6 +21,7 @@ USE_LDCONFIG=	yes
 USE_GNOME=	gtk30 pygtk2
 
 OPTIONS_DEFINE=	VAPI
+OPTIONS_DEFAULT=	VAPI
 OPTIONS_SUB=	yes
 
 VAPI_BUILD_DEPENDS=	vala>=0:lang/vala

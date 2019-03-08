@@ -1,7 +1,6 @@
 # Created by: TAKANO, Yuji
-# $FreeBSD: head/japanese/mozc-el/Makefile 471191 2018-05-31 01:18:05Z jrm $
+# $FreeBSD: head/japanese/mozc-el/Makefile 494682 2019-03-05 07:05:53Z hrs $
 
-PORTREVISION=	3
 PKGNAMESUFFIX=	-el${EMACS_PKGNAMESUFFIX}
 
 COMMENT=	Emacs input method for Mozc

@@ -1,10 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/mixxx21/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/audio/mixxx21/Makefile 494915 2019-03-07 07:35:24Z acm $
 
 PORTNAME=	mixxx
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	2.1.6
-PORTREVISION=	1
+DISTVERSION=	2.1.7
 CATEGORIES=	audio
 PKGNAMESUFFIX=  21
 

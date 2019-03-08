@@ -1,7 +1,8 @@
-# $FreeBSD: head/mail/py-flufl.bounce/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/mail/py-flufl.bounce/Makefile 494987 2019-03-07 18:49:27Z acm $
 
 PORTNAME=	flufl.bounce
 PORTVERSION=	3.0
+PORTREVISION=	1
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-gemdiff/Makefile 492455 2019-02-08 20:54:51Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gemdiff/Makefile 494976 2019-03-07 17:32:36Z sunpoet $
 
 PORTNAME=	gemdiff
-PORTVERSION=	2.5.3
+PORTVERSION=	2.5.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

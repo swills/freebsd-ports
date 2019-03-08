@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dlangui/Makefile 485405 2018-11-20 02:59:54Z acm $
+# $FreeBSD: head/devel/dlangui/Makefile 494907 2019-03-07 06:26:39Z acm $
 
 PORTNAME=	dlangui
 PORTVERSION=	0.9.178
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

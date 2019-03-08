@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/editors/poedit/Makefile 493853 2019-02-25 12:47:20Z bapt $
+# $FreeBSD: head/editors/poedit/Makefile 494934 2019-03-07 13:07:25Z jbeich $
 #    $MCom: ports/editors/poedit/Makefile,v 1.2 2006/10/05 07:03:09 mezz Exp $
 
 PORTNAME=	poedit
@@ -14,7 +14,7 @@ COMMENT=	Gettext catalogs (.po files) editor
 LICENSE=	BSD2CLAUSE
 
 BUILD_DEPENDS=	zip:archivers/zip
-LIB_DEPENDS=	libgtkspell.so:textproc/gtkspell \
+LIB_DEPENDS=	libgtkspell3-3.so:textproc/gtkspell3 \
 		libboost_thread.so:devel/boost-libs \
 		libicui18n.so:devel/icu \
 		liblucene++.so:textproc/luceneplusplus

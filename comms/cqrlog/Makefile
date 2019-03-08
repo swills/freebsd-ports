@@ -1,10 +1,10 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/cqrlog/Makefile 486863 2018-12-07 13:45:14Z db $
+# $FreeBSD: head/comms/cqrlog/Makefile 494883 2019-03-07 05:00:01Z acm $
 
 PORTNAME=	cqrlog
 PORTVERSION=	2.3.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 

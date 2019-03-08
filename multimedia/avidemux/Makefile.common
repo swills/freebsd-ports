@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/avidemux/Makefile.common 493856 2019-02-25 13:01:06Z bapt $
+# $FreeBSD: head/multimedia/avidemux/Makefile.common 494872 2019-03-07 03:38:30Z linimon $
 
 AVIDEMUX_VERSION=	2.6.11
 MASTER_SITES=	\
@@ -265,11 +265,8 @@ LDFLAGS+=	-lc++
 USE_GCC=	yes
 #.endif
 
-.if ${ARCH} == aarch64
-BROKEN=		cmake/admDetermineSystem.cmake:78: CPU not supported
-.elif ${ARCH} == powerpc || ${ARCH} == sparc64
-BROKEN=		Does not compile on powerpc or sparc64
-.endif
+NOT_FOR_ARCHS=		aarch64 powerpc powerpc64 powerpcspe sparc64
+NOT_FOR_ARCHS_REASON=	cmake/admDetermineSystem.cmake:78: CPU not supported
 
 post-patch:
 	@${MKDIR} ${CONFIGURE_WRKSRC}/config

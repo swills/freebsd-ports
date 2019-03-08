@@ -1,9 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11-wm/e-modules/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-wm/e-modules/Makefile 494848 2019-03-06 21:47:46Z rene $
 
 PORTNAME=	e17-modules
 PORTVERSION=	20130510
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-wm enlightenment
 MASTER_SITES=	# Empty
 DISTFILES=	# Empty
@@ -14,11 +14,9 @@ COMMENT=	Meta-port for Enlightenment modules
 NO_BUILD=	yes
 
 MODULES=	alarm cpu deskshow everything-places \
-		everything-websearch mem rmb wlan
+		mem rmb wlan
 
 .include "../enlightenment/Makefile.plist"
-
-EVERYTHING_WEBSEARCH_PATH=	evry-websearch
 
 .for M in ${MODULES}
 OPTIONS_DEFINE+=	${M:tu:S,-,_,g}

@@ -1,8 +1,8 @@
 # Created by: TAOKA Fumiyoshi
-# $FreeBSD: head/graphics/py-pyproj/Makefile 488493 2018-12-27 00:02:35Z swills $
+# $FreeBSD: head/graphics/py-pyproj/Makefile 494803 2019-03-06 15:13:37Z wen $
 
 PORTNAME=	pyproj
-PORTVERSION=	1.9.5.1
+PORTVERSION=	1.9.6
 CATEGORIES=	graphics python geography
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

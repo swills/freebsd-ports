@@ -1,7 +1,6 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/fcitx-mozc/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/japanese/fcitx-mozc/Makefile 494682 2019-03-05 07:05:53Z hrs $
 
-PORTREVISION=	15
 PKGNAMEPREFIX=	ja-fcitx-
 
 COMMENT=	Mozc engine for Fcitx

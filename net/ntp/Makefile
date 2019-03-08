@@ -1,9 +1,8 @@
 # Created by: andreas
-# $FreeBSD: head/net/ntp/Makefile 482219 2018-10-16 12:02:28Z cy $
+# $FreeBSD: head/net/ntp/Makefile 494931 2019-03-07 12:58:12Z cy $
 
 PORTNAME=	ntp
-PORTVERSION=	4.2.8p12
-PORTREVISION=	3
+PORTVERSION=	4.2.8p13
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ \
 		http://archive.ntp.org/ntp4/ntp-4.2/ \

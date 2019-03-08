@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dsymbol/Makefile 485842 2018-11-25 03:05:49Z acm $
+# $FreeBSD: head/devel/dsymbol/Makefile 494900 2019-03-07 06:16:17Z acm $
 
 PORTNAME=	dsymbol
-PORTVERSION=	0.4.8
+PORTVERSION=	0.6.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -18,6 +18,7 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libemsi_containers.a:devel/containers \
 		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 
+USES=		pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
 

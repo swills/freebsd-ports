@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/textproc/py-jsonslicer/Makefile 490958 2019-01-22 15:58:23Z amdmi3 $
+# $FreeBSD: head/textproc/py-jsonslicer/Makefile 494979 2019-03-07 18:09:32Z amdmi3 $
 
 PORTNAME=	jsonslicer
-PORTVERSION=	0.1.0
+PORTVERSION=	0.1.3
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +20,9 @@ USE_PYTHON=	autoplist distutils
 
 # pydistutils problem, it uses CC for compiling C++ code
 CC=		${CXX}
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/jsonslicer.so
 
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test

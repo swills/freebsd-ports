@@ -1,8 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/print/pdfbox/Makefile 487170 2018-12-10 14:21:46Z ale $
+# $FreeBSD: head/print/pdfbox/Makefile 494568 2019-03-04 09:14:09Z ale $
 
 PORTNAME=	pdfbox
-PORTVERSION=	2.0.13
+PORTVERSION=	2.0.14
 CATEGORIES=	print textproc java
 MASTER_SITES=	APACHE/pdfbox/${PORTVERSION}
 DISTFILES=	${JAR_NAMES:S/$/-${PORTVERSION}.jar/}

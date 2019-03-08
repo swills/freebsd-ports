@@ -1,9 +1,8 @@
-# $FreeBSD: head/misc/crosti/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/misc/crosti/Makefile 494763 2019-03-06 03:18:38Z yuri $
 
 PORTNAME=	crosti
-DISTVERSION=	1.13.3
+DISTVERSION=	1.14.0
 DISTVERSIONSUFFIX=	-source
-PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	SF/crosti/crosti%20${DISTVERSION}/
 
@@ -13,10 +12,10 @@ COMMENT=	Convert custom image to cross stitch design, edit stitch designs
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/gpl.txt
 
-USES=		desktop-file-utils dos2unix qmake qt:5 shared-mime-info zip
+USES=		desktop-file-utils dos2unix gl qmake qt:5 shared-mime-info zip
+DOS2UNIX_GLOB=	*.cpp *.csc *.h *.pro *.txt *.xml
 USE_GL=		gl
 USE_QT=		concurrent core gui printsupport svg widgets buildtools_build
-DOS2UNIX_GLOB=	*.cpp *.csc *.h *.pro *.txt *.xml
 NO_WRKSUBDIR=	yes
 
 .include <bsd.port.mk>

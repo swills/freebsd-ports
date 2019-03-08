@@ -1,5 +1,5 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear/Makefile 491850 2019-02-01 21:22:18Z martymac $
+# $FreeBSD: head/games/flightgear/Makefile 494783 2019-03-06 08:21:36Z jbeich $
 
 PORTNAME=	flightgear
 PORTVERSION=	2018.3.2
@@ -51,5 +51,11 @@ QT5_CMAKE_ON=	-DENABLE_QT:BOOL=ON
 QT5_CMAKE_OFF=	-DENABLE_QT:BOOL=OFF
 QT5_USES=	qt:5
 QT5_USE=	QT=core,buildtools,gui,declarative,network,qmake,widgets,svg
+
+post-patch:
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/version ${WRKSRC}/version.txt
+	@${REINPLACE_CMD} -Ei .c++20 '/file|set_prop/s/version[[:>:]]/&.txt/' \
+		${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

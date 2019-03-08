@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-IO-AIO/Makefile 478149 2018-08-26 18:41:58Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-AIO/Makefile 494817 2019-03-06 18:07:36Z sunpoet $
 
 PORTNAME=	IO-AIO
-PORTVERSION=	4.60
+PORTVERSION=	4.70
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,7 +15,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Canary-Stability>=2001:devel/p5-Canary-Stability \
-		p5-common-sense>=0:devel/p5-common-sense
+		${RUN_DEPENDS}
 RUN_DEPENDS=	p5-common-sense>=0:devel/p5-common-sense
 
 USES=		perl5

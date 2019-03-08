@@ -1,8 +1,9 @@
 # Created by: Marcello Coutinho
-# $FreeBSD: head/www/e2guardian/Makefile 494302 2019-03-01 16:14:13Z garga $
+# $FreeBSD: head/www/e2guardian/Makefile 494959 2019-03-07 15:45:58Z garga $
 
 PORTNAME=	e2guardian
 PORTVERSION=	5.3.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -56,7 +57,8 @@ NTLM_CONFIGURE_ENABLE=		ntlm
 NTLM_USES=			iconv
 DNS_CONFIGURE_ENABLE=		dnsauth
 EMAIL_CONFIGURE_ENABLE=		email
-DEBUG_CONFIGURE_WITH=		dgdebug
+DEBUG_CONFIGURE_OFF=		--with-dgdebug=off --with-newdebug=off
+DEBUG_CONFIGURE_ON=		--with-dgdebug=on --with-newdebug=on
 SSL_MITM_USES=			ssl
 SSL_MITM_CONFIGURE_ENABLE=	sslmitm
 SSL_MITM_CONFIGURE_ENV=		OPENSSL_LIBS="-lssl -lcrypto" \

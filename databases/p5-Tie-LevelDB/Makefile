@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Tie-LevelDB/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/p5-Tie-LevelDB/Makefile 494870 2019-03-07 03:29:26Z linimon $
 
 PORTNAME=	Tie-LevelDB
 PORTVERSION=	0.07
@@ -14,7 +14,8 @@ COMMENT=	Perl Interface to the Google LevelDB NoSQL database
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BROKEN_aarch64=	does not build: error: Please implement AtomicPointer for this platform
+NOT_FOR_ARCHS=		aarch64 powerpc powerpc64 powerpcspe
+NOT_FOR_ARCHS_REASON=	does not build: Please implement AtomicPointer for this platform
 BROKEN_sparc64=	does not build: unrecognized command line options
 
 LIB_DEPENDS=	libleveldb.so:databases/leveldb

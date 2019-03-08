@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/logstash-forwarder/Makefile 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/sysutils/logstash-forwarder/Makefile 494717 2019-03-05 17:05:00Z antoine $
 
 PORTNAME=	logstash-forwarder
 PORTVERSION=	0.4.0.20150507
@@ -8,6 +8,8 @@ MAINTAINER=	cheffo@freebsd-bg.org
 COMMENT=	Collect logs locally in preparation for processing elsewhere!
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	go:lang/go
 

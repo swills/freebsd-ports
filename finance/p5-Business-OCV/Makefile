@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Business-OCV/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/finance/p5-Business-OCV/Makefile 494565 2019-03-04 09:00:53Z amdmi3 $
 
 PORTNAME=	Business-OCV
 PORTVERSION=	0.1
@@ -12,7 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface to the Ingenico OCV Server
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

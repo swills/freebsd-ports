@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/awgg/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/net-p2p/awgg/Makefile 494886 2019-03-07 05:03:42Z acm $
 
 PORTNAME=	awgg
 PORTVERSION=	0.5.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 

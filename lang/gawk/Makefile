@@ -1,9 +1,8 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/lang/gawk/Makefile 494508 2019-03-03 13:40:50Z danfe $
+# $FreeBSD: head/lang/gawk/Makefile 494572 2019-03-04 10:05:03Z danfe $
 
 PORTNAME=	gawk
-PORTVERSION=	4.1.4
-PORTREVISION=	3
+PORTVERSION=	4.2.1
 CATEGORIES=	lang
 MASTER_SITES=	GNU
 
@@ -23,7 +22,7 @@ MPFR_DESC?=		Support multiple-precision floating-point computation
 MPFR_LIB_DEPENDS=	libmpfr.so:math/mpfr
 MPFR_CONFIGURE_OFF=	--without-gmp --without-mpfr
 
-INFO=		gawk gawkinet
+INFO=		gawk gawkinet gawkworkflow
 
 GNU_CONFIGURE=	yes
 USES=		iconv libtool makeinfo readline tar:xz

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-pdk/Makefile 491638 2019-01-30 18:18:05Z romain $
+# $FreeBSD: head/devel/rubygem-pdk/Makefile 494868 2019-03-07 02:07:22Z romain $
 
 PORTNAME=	pdk
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/clixon/Makefile 493859 2019-02-25 13:25:33Z garga $
+# $FreeBSD: head/devel/clixon/Makefile 494890 2019-03-07 05:17:38Z meta $
 
 PORTNAME=	clixon
 PORTVERSION=	3.9.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	dcornejo@netgate.com

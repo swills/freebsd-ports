@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/mir-core/Makefile 485383 2018-11-20 02:41:06Z acm $
+# $FreeBSD: head/devel/mir-core/Makefile 494903 2019-03-07 06:18:27Z acm $
 
 PORTNAME=	mir-core
-PORTVERSION=	0.0.7
+PORTVERSION=	0.2.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

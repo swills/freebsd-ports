@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-unicode-display_width/Makefile 489035 2019-01-01 20:39:35Z sunpoet $
+# $FreeBSD: head/devel/rubygem-unicode-display_width/Makefile 494815 2019-03-06 18:07:25Z sunpoet $
 
 PORTNAME=	unicode-display_width
-PORTVERSION=	1.4.1
+PORTVERSION=	1.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,9 @@ COMMENT=	Get the display size of a string
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE.txt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

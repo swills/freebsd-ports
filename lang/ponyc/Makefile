@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/ponyc/Makefile 491355 2019-01-27 14:35:19Z swills $
+# $FreeBSD: head/lang/ponyc/Makefile 494995 2019-03-07 19:51:21Z swills $
 
 PORTNAME=	ponyc
-DISTVERSION=	0.26.0
+DISTVERSION=	0.27.0
 CATEGORIES=	lang
 
 MAINTAINER=	greg@unrelenting.technology
@@ -18,8 +18,7 @@ RUN_DEPENDS=	llvm-link${LLVM_VERSION}:devel/llvm${LLVM_VERSION}
 
 USES=		gmake ncurses compiler:c++11-lang
 
-LLVM_VERSION=	50
-# LLVM 6 has assertion failures when e.g. optimizing the mandelbrot example
+LLVM_VERSION?=	${LLVM_DEFAULT}
 
 PLIST_SUB=	VERSION="${DISTVERSION}" PONYARCH="${PONYARCH}"
 OPTIONS_SUB=	yes

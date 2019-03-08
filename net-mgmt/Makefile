@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 494513 2019-03-03 16:19:04Z kai $
+# $FreeBSD: head/net-mgmt/Makefile 494690 2019-03-05 10:06:37Z lme $
 #
 
     COMMENT = Network management tools
@@ -93,6 +93,7 @@
     SUBDIR += icingaweb2-module-generictts
     SUBDIR += icingaweb2-module-grafana
     SUBDIR += icingaweb2-module-graphite
+    SUBDIR += icingaweb2-module-ipl
     SUBDIR += icingaweb2-module-map
     SUBDIR += icingaweb2-module-vsphere
     SUBDIR += icmpmonitor

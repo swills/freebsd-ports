@@ -1,8 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/audio/libmpdclient/Makefile 482241 2018-10-16 20:02:23Z gblach $
+# $FreeBSD: head/audio/libmpdclient/Makefile 494744 2019-03-05 21:20:27Z antoine $
 
 PORTNAME=	libmpdclient
 PORTVERSION=	2.16
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.musicpd.org/download/libmpdclient/2/
 

@@ -1,8 +1,8 @@
 # Created by: Martin Pala <martinp@tildeslash.com>
-# $FreeBSD: head/sysutils/monit/Makefile 471143 2018-05-30 18:08:22Z swills $
+# $FreeBSD: head/sysutils/monit/Makefile 494988 2019-03-07 19:03:34Z swills $
 
 PORTNAME=	monit
-PORTVERSION=	5.25.2
+PORTVERSION=	5.25.3
 CATEGORIES=	sysutils
 MASTER_SITES=	https://mmonit.com/monit/dist/
 

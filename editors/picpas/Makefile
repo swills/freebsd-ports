@@ -1,9 +1,9 @@
-# $FreeBSD: head/editors/picpas/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/editors/picpas/Makefile 494881 2019-03-07 04:57:13Z acm $
 
 PORTNAME=	picpas
 PORTVERSION=	0.8.8
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 

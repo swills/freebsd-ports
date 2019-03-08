@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/stdx-allocator/Makefile 485384 2018-11-20 02:41:40Z acm $
+# $FreeBSD: head/devel/stdx-allocator/Makefile 494895 2019-03-07 06:11:57Z acm $
 
 PORTNAME=	stdx-allocator
-PORTVERSION=	3.0.0
+PORTVERSION=	3.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

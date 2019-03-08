@@ -1,9 +1,8 @@
-# $FreeBSD: head/audio/samplv1-lv2/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/audio/samplv1-lv2/Makefile 494766 2019-03-06 03:43:33Z yuri $
 
 PORTNAME=	samplv1
 DISTVERSIONPREFIX=	${PORTNAME}_
-DISTVERSION=	0_9_4
-PORTREVISION=	1
+DISTVERSION=	0_9_5
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

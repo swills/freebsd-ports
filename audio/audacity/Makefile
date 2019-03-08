@@ -1,10 +1,10 @@
 # Created by: Marc van Woerkom <3d@FreeBSD.org>
-# $FreeBSD: head/audio/audacity/Makefile 493853 2019-02-25 12:47:20Z bapt $
+# $FreeBSD: head/audio/audacity/Makefile 494626 2019-03-04 18:03:59Z swills $
 
 PORTNAME=	audacity
 PORTVERSION=	2.3.0
 DISTVERSIONPREFIX=	Audacity-
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 
 MAINTAINER=	xxjack12xx@gmail.com
@@ -31,7 +31,7 @@ NLS_USES=	gettext-runtime
 NLS_CONFIGURE_ENABLE=	nls
 NLS_CONFIGURE_WITH=	libintl-prefix="${LOCALBASE}"
 OPTIONS_SUB=	yes
-USE_WX=		3.0+
+USE_WX=		3.1+
 WX_COMPS=	wx
 INSTALLS_ICONS=	yes
 PORTDOCS=	README.txt

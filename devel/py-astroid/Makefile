@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-astroid/Makefile 494098 2019-02-27 23:47:36Z sunpoet $
+# $FreeBSD: head/devel/py-astroid/Makefile 494981 2019-03-07 18:38:36Z amdmi3 $
 
 PORTNAME=	astroid
 PORTVERSION=	2.2.0
@@ -32,5 +32,8 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}typing>=0:devel/py-typing@${PY_FLAVOR}
 .if ${PYTHON_REL} < 3700
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}typed-ast>=0:devel/py-typed-ast@${PY_FLAVOR}
 .endif
+
+do-test:
+	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.post.mk>

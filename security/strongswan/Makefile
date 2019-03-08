@@ -1,8 +1,9 @@
 # Created by: Riaan Kruger <riaank@gmail.com>
-# $FreeBSD: head/security/strongswan/Makefile 490298 2019-01-14 16:00:49Z swills $
+# $FreeBSD: head/security/strongswan/Makefile 494736 2019-03-05 20:14:17Z swills $
 
 PORTNAME=	strongswan
 PORTVERSION=	5.7.2
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://download.strongswan.org/ \
 		http://download2.strongswan.org/
@@ -138,10 +139,6 @@ post-install:
 .if ${PORT_OPTIONS:MVICI}
 	${INSTALL_DATA} ${WRKSRC}/src/libcharon/plugins/vici/libvici.h \
 		${STAGEDIR}${PREFIX}/include
-.endif
-.if ${PORT_OPTIONS:MSWANCTL}
-	${MV} ${STAGEDIR}${PREFIX}/etc/swanctl/swanctl.conf \
-		${STAGEDIR}${PREFIX}/etc/swanctl/swanctl.conf.sample
 .endif
 
 .include <bsd.port.mk>

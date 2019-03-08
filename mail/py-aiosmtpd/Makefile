@@ -1,7 +1,8 @@
-# $FreeBSD: head/mail/py-aiosmtpd/Makefile 488236 2018-12-23 19:21:13Z decke $
+# $FreeBSD: head/mail/py-aiosmtpd/Makefile 494987 2019-03-07 18:49:27Z acm $
 
 PORTNAME=	aiosmtpd
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

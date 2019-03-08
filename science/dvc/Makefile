@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/dvc/Makefile 494478 2019-03-03 07:00:08Z yuri $
+# $FreeBSD: head/science/dvc/Makefile 494769 2019-03-06 03:48:42Z yuri $
 
 PORTNAME=	dvc
-DISTVERSION=	0.30.0
+DISTVERSION=	0.30.1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 

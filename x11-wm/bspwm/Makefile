@@ -1,8 +1,8 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/x11-wm/bspwm/Makefile 494229 2019-03-01 03:03:02Z swills $
+# $FreeBSD: head/x11-wm/bspwm/Makefile 494600 2019-03-04 15:06:11Z swills $
 
 PORTNAME=	bspwm
-PORTVERSION=	0.9.6
+PORTVERSION=	0.9.7
 CATEGORIES=	x11-wm
 
 MAINTAINER=	o.hushchenkov@gmail.com

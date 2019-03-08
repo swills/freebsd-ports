@@ -1,18 +1,21 @@
 # Created by: Dikshie <dikshie@sfc.wide.ad.jp>
-# $FreeBSD: head/textproc/py-xlrd/Makefile 417960 2016-07-03 08:15:25Z pi $
+# $FreeBSD: head/textproc/py-xlrd/Makefile 494978 2019-03-07 17:32:46Z sunpoet $
 
 PORTNAME=	xlrd
-PORTVERSION=	1.0.0
+PORTVERSION=	1.2.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	dikshie@sfc.wide.ad.jp
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Reading data and formatting information from Excel files
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

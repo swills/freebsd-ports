@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-medikit/Makefile 473233 2018-06-24 20:17:13Z sunpoet $
+# $FreeBSD: head/devel/py-medikit/Makefile 494617 2019-03-04 17:57:49Z sunpoet $
 
 PORTNAME=	medikit
 PORTVERSION=	0.6.3
@@ -21,8 +21,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.9:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}whistle>=1.0:devel/py-whistle@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yapf>=0.20:textproc/py-yapf@${PY_FLAVOR}
 
-NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
 USES=		python:3.5+
+USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

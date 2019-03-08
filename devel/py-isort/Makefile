@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-isort/Makefile 494434 2019-03-02 17:47:06Z sunpoet $
+# $FreeBSD: head/devel/py-isort/Makefile 494971 2019-03-07 17:32:10Z sunpoet $
 
 PORTNAME=	isort
-PORTVERSION=	4.3.8
+PORTVERSION=	4.3.11
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,4 +21,10 @@ USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} < 3200
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}backports.functools_lru_cache>=0:devel/py-backports.functools_lru_cache@${PY_FLAVOR}
+.endif
+
+.include <bsd.port.post.mk>

@@ -1,8 +1,8 @@
 # Created by: Peter C. Lai <cowbert@gmail.com>
-# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 493872 2019-02-25 14:49:41Z egypcio $
+# $FreeBSD: head/net-mgmt/mk-livestatus/Makefile 494795 2019-03-06 12:49:34Z egypcio $
 
 PORTNAME=	mk-livestatus
-PORTVERSION=	1.2.8p24
+PORTVERSION=	1.2.8p25
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://mathias-kettner.de/download/
 DIST_SUBDIR=	check_mk
@@ -11,6 +11,8 @@ MAINTAINER=	egypcio@FreeBSD.org
 COMMENT=	Nagios event broker module
 
 LICENSE=	GPLv2
+
+USES=		compiler:c++11-lang
 
 GNU_CONFIGURE=	yes
 

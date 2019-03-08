@@ -1,9 +1,9 @@
 # Created by: Michal Hanula <michal@hanu.la>
-# $FreeBSD: head/net-mgmt/alertmanager/Makefile 487060 2018-12-09 17:10:27Z swills $
+# $FreeBSD: head/net-mgmt/alertmanager/Makefile 494704 2019-03-05 14:32:21Z swills $
 
 PORTNAME=	alertmanager
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.15.3
+DISTVERSION=	0.16.1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	michal@hanu.la

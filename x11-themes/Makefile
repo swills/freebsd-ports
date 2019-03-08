@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 494004 2019-02-27 01:35:32Z meta $
+# $FreeBSD: head/x11-themes/Makefile 494652 2019-03-04 21:39:09Z rigoletto $
 #
 
     COMMENT = X11 themes
@@ -122,6 +122,7 @@
     SUBDIR += mate-icon-theme
     SUBDIR += mate-icon-theme-faenza
     SUBDIR += mate-themes
+    SUBDIR += materia-gtk-theme
     SUBDIR += metacity-aluminumalloy-cryogenic-theme
     SUBDIR += metacity-aluminumalloy-smog-theme
     SUBDIR += metacity-aluminumalloy-toxic-theme

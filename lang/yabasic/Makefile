@@ -1,11 +1,10 @@
 # Created by: Frank Gruender <elwood@mc5sys.in-berlin.de>
-# $FreeBSD: head/lang/yabasic/Makefile 485132 2018-11-17 13:05:44Z wen $
+# $FreeBSD: head/lang/yabasic/Makefile 494802 2019-03-06 15:10:13Z wen $
 
 PORTNAME=	yabasic
-PORTVERSION=	2.81.1
+PORTVERSION=	2.82.0
 PORTEPOCH=	1
 CATEGORIES=	lang
-MASTER_SITES=	http://www.yabasic.de/download/
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Yet another Basic for Unix and Windows
@@ -13,12 +12,17 @@ COMMENT=	Yet another Basic for Unix and Windows
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		bison ncurses
+USES=		autoreconf bison gmake ncurses
+USE_GITHUB=	yes
+GH_ACCOUNT=	marcIhm
+
 GNU_CONFIGURE=	yes
 USE_XORG=	ice sm x11
 TEST_TARGET=	check
 
-PORTDOCS=	yabasic.htm
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/unix/lang
+
+PORTDOCS=	ChangeLog README
 PLIST_FILES=	bin/yabasic man/man1/yabasic.1.gz
 
 OPTIONS_DEFINE=	DOCS

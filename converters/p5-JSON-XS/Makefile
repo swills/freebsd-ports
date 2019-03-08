@@ -1,8 +1,8 @@
 # Created by: Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-XS/Makefile 493908 2019-02-25 23:35:34Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-XS/Makefile 494966 2019-03-07 17:31:44Z sunpoet $
 
 PORTNAME=	JSON-XS
-PORTVERSION=	4.01
+PORTVERSION=	4.02
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

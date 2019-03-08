@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-CrossOrigin/Makefile 493120 2019-02-16 22:54:56Z sunpoet $
+# $FreeBSD: head/www/p5-Plack-Middleware-CrossOrigin/Makefile 494805 2019-03-06 18:06:31Z sunpoet $
 
 PORTNAME=	Plack-Middleware-CrossOrigin
-PORTVERSION=	0.013
+PORTVERSION=	0.014
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

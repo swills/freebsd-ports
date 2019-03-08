@@ -1,9 +1,9 @@
 # Created by: Andrey Fesenko <andrey@bsdnir.info>
-# $FreeBSD: head/russian/emkatic/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/russian/emkatic/Makefile 494888 2019-03-07 05:05:09Z acm $
 
 PORTNAME=	emkatic
 PORTVERSION=	0.36
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	russian emulators
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 MASTER_SITES=	SF/${PORTNAME}/eMKatic%20Source
@@ -22,6 +22,7 @@ USE_XORG=	x11
 
 LAZARUS_PROJECT_FILES=	emkatic.lpi
 LAZBUILD_ARGS=		-d --pcp=${WRKSRC}/tmppcp
+LLD_UNSAFE=	yes
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDATA=	*

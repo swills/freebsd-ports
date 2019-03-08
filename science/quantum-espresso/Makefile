@@ -1,9 +1,8 @@
-# $FreeBSD: head/science/quantum-espresso/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/science/quantum-espresso/Makefile 494762 2019-03-06 03:17:45Z yuri $
 
 PORTNAME=	quantum-espresso
 DISTVERSIONPREFIX=	qe-
-DISTVERSION=	6.3
-PORTREVISION=	5
+DISTVERSION=	6.4
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -19,7 +18,7 @@ LIB_DEPENDS=	libmpich.so:net/mpich \
 		liblapack.so:math/lapack
 
 USES=		fortran gmake python shebangfix
-SHEBANG_FILES=	configure PW/tools/cell2ibrav.py
+SHEBANG_FILES=	configure
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	QEF

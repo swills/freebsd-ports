@@ -1,7 +1,7 @@
-# $FreeBSD: head/games/renpy/Makefile 485224 2018-11-18 13:08:46Z jbeich $
+# $FreeBSD: head/games/renpy/Makefile 494598 2019-03-04 14:21:18Z jbeich $
 
 PORTNAME=	renpy
-PORTVERSION?=	7.1.3
+PORTVERSION?=	7.2.0
 DISTVERSIONSUFFIX=-sdk
 PORTREVISION?=	0
 CATEGORIES=	games devel

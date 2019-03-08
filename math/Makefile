@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 494188 2019-02-28 21:31:20Z stephen $
+# $FreeBSD: head/math/Makefile 494849 2019-03-06 21:49:00Z rene $
 #
 
     COMMENT = Mathematics
@@ -383,7 +383,6 @@
     SUBDIR += multichoose
     SUBDIR += mumps
     SUBDIR += mumps-edf
-    SUBDIR += mumps-mpich
     SUBDIR += muparser
     SUBDIR += nanoflann
     SUBDIR += naturalmath
@@ -837,7 +836,6 @@
     SUBDIR += scilab-toolbox-swt
     SUBDIR += scs
     SUBDIR += sdpa
-    SUBDIR += sdpara
     SUBDIR += secp256k1
     SUBDIR += sfft
     SUBDIR += sfst

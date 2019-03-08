@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/log-courier/Makefile 465992 2018-03-30 18:25:14Z jrm $
+# $FreeBSD: head/sysutils/log-courier/Makefile 494711 2019-03-05 16:57:48Z antoine $
 
 PORTNAME=	log-courier
 DISTVERSIONPREFIX=	v
@@ -9,6 +9,8 @@ MAINTAINER=	vikashb@where-ever.za.net
 COMMENT=	Lightweight log shipper with Logstash integration
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	go:lang/go
 

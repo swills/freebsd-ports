@@ -1,7 +1,6 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/japanese/uim-mozc/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/japanese/uim-mozc/Makefile 494682 2019-03-05 07:05:53Z hrs $
 
-PORTREVISION=	15
 PKGNAMEPREFIX=	ja-uim-
 
 COMMENT=	Mozc engine for uim

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/rofi-pass/Makefile 494083 2019-02-27 20:35:22Z tobik $
+# $FreeBSD: head/x11/rofi-pass/Makefile 494657 2019-03-04 22:08:50Z swills $
 
 PORTNAME=	rofi-pass
 DISTVERSION=	2.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	alex@xanderio.de
@@ -12,8 +12,6 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	bash:shells/bash \
-		gawk:lang/gawk \
-		${LOCALBASE}/bin/grep:textproc/gnugrep \
 		pass:sysutils/password-store \
 		pwgen:sysutils/pwgen \
 		qrencode:graphics/libqrencode \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/zoneminder/Makefile 488890 2019-01-01 13:37:08Z rene $
+# $FreeBSD: head/multimedia/zoneminder/Makefile 494585 2019-03-04 11:21:02Z jbeich $
 
 PORTNAME=	zoneminder
 PORTVERSION=	1.32.3
@@ -100,6 +100,12 @@ post-extract:
 	${CP} ${FILESDIR}/README.FreeBSD ${PKGMESSAGE}
 	${REINPLACE_CMD} -e 's|/dev/shm|/tmp|g' ${WRKSRC}/scripts/ZoneMinder/lib/ZoneMinder/ConfigData.pm.in
 #	${REINPLACE_CMD} -e 's|E_ALL|E_ALL^E_NOTICE|g' ${WRKSRC}/web/index.php
+
+post-patch:
+# Avoid conflict with C++20 <version> by adding .txt suffix
+	@${MV} ${WRKSRC}/version ${WRKSRC}/version.txt
+	@${REINPLACE_CMD} -i .c++20 's/"version/&.txt/' \
+		${WRKSRC}/CMakeLists.txt
 
 pre-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}/temp

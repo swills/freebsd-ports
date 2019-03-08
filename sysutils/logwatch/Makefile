@@ -1,9 +1,8 @@
 # Created by: John D. "Trix" Farrar <trix@basement.net>
-# $FreeBSD: head/sysutils/logwatch/Makefile 492569 2019-02-10 00:08:11Z sunpoet $
+# $FreeBSD: head/sysutils/logwatch/Makefile 494733 2019-03-05 19:06:19Z swills $
 
 PORTNAME=	logwatch
-PORTVERSION=	7.4.3
-PORTREVISION=	1
+PORTVERSION=	7.5.1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

@@ -1,9 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/math/cgal/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/math/cgal/Makefile 495010 2019-03-08 02:51:26Z wen $
 
 PORTNAME=	cgal
-PORTVERSION=	4.11.2
-PORTREVISION=	3
+PORTVERSION=	4.13
 CATEGORIES=	math
 MASTER_SITES=	https://github.com/${PORTNAME:tu}/${PORTNAME}/releases/download/releases/${DISTNAME}/
 DISTNAME=	${PORTNAME:tu}-${PORTVERSION}
@@ -41,7 +40,7 @@ VISUALIZATION_LIB_DEPENDS=	libgeomview.so:graphics/geomview
 .if ${PORT_OPTIONS:MQT5}
 USES+=		qt:5
 CMAKE_ARGS+=	-DWITH_CGAL_Qt5=ON
-USE_QT+=	core gui opengl widgets svg buildtools_build qmake_build
+USE_QT+=	core gui opengl widgets svg buildtools_build qmake_build xml
 USE_GL+=	gl glu
 .else
 CMAKE_ARGS+=	-DWITH_CGAL_Qt5=OFF

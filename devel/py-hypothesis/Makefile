@@ -1,8 +1,8 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-hypothesis/Makefile 494433 2019-03-02 17:47:01Z sunpoet $
+# $FreeBSD: head/devel/py-hypothesis/Makefile 494970 2019-03-07 17:32:04Z sunpoet $
 
 PORTNAME=	hypothesis
-PORTVERSION=	4.7.7
+PORTVERSION=	4.7.11
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

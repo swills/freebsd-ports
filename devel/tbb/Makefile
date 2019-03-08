@@ -1,8 +1,9 @@
 # Created by: Arun Sharma <arun@sharma-home.net>
-# $FreeBSD: head/devel/tbb/Makefile 482301 2018-10-17 17:50:03Z martymac $
+# $FreeBSD: head/devel/tbb/Makefile 494744 2019-03-05 21:20:27Z antoine $
 
 PORTNAME=	tbb
 PORTVERSION=	2019.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	martymac@FreeBSD.org

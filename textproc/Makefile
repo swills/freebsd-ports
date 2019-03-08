@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 494421 2019-03-02 17:44:46Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 494849 2019-03-06 21:49:00Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -167,7 +167,6 @@
     SUBDIR += elasticsearch5-search-guard
     SUBDIR += elasticsearch6
     SUBDIR += elixir-earmark
-    SUBDIR += elixir-ex_doc
     SUBDIR += elixir-funnel
     SUBDIR += elixir-sweet_xml
     SUBDIR += emacs-wiki

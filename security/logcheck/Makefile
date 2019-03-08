@@ -1,9 +1,8 @@
 # Created by: Dan Langille <dan@freebsddiary.org>
-# $FreeBSD: head/security/logcheck/Makefile 488488 2018-12-26 23:05:22Z swills $
+# $FreeBSD: head/security/logcheck/Makefile 494707 2019-03-05 15:04:57Z swills $
 
 PORTNAME=	logcheck
-PORTVERSION=	1.3.19
-PORTREVISION=	3
+PORTVERSION=	1.3.20
 CATEGORIES=	security
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -37,7 +36,7 @@ CRON_DESC=	Install cron script automatically
 OPTIONS_DEFAULT=CRON
 .endif
 
-WRKSRC=		${WRKDIR}/${DISTNAME:S!_!-!}
+WRKSRC=		${WRKDIR}/${PORTNAME}
 BINMODE=	755
 SUB_LIST+=	LOGCHECK_USER=${LOGCHECK_USER} \
 		LOGCHECK_GROUP=${LOGCHECK_GROUP} \

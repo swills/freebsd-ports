@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-themes/papirus-icon-theme/Makefile 494004 2019-02-27 01:35:32Z meta $
+# $FreeBSD: head/x11-themes/papirus-icon-theme/Makefile 494668 2019-03-05 02:00:36Z swills $
 
 PORTNAME=	papirus-icon-theme
-PORTVERSION=	20190203
+PORTVERSION=	20190302
 CATEGORIES=	x11-themes
 
 MAINTAINER=	tagattie@yandex.com

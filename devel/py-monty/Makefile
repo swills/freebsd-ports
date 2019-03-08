@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-monty/Makefile 488227 2018-12-23 17:59:45Z yuri $
+# $FreeBSD: head/devel/py-monty/Makefile 494768 2019-03-06 03:46:07Z yuri $
 
 PORTNAME=	monty
-DISTVERSION=	1.0.5
+DISTVERSION=	1.0.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/security/py-m2crypto/Makefile 484721 2018-11-11 18:19:58Z sunpoet $
+# $FreeBSD: head/security/py-m2crypto/Makefile 494726 2019-03-05 17:29:40Z sunpoet $
 
 PORTNAME=	m2crypto
-PORTVERSION=	0.31.0
+PORTVERSION=	0.32.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

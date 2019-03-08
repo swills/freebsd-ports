@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 494498 2019-03-03 11:43:52Z rene $
+# $FreeBSD: head/www/Makefile 494633 2019-03-04 18:58:54Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -476,8 +476,6 @@
     SUBDIR += monast
     SUBDIR += mongoose
     SUBDIR += mongrel2
-    SUBDIR += moodle31
-    SUBDIR += moodle34
     SUBDIR += moodle35
     SUBDIR += moodle36
     SUBDIR += mozplugger
@@ -1837,6 +1835,7 @@
     SUBDIR += py-recaptcha
     SUBDIR += py-requestbuilder
     SUBDIR += py-requests
+    SUBDIR += py-requests-aws4auth
     SUBDIR += py-requests-cache
     SUBDIR += py-requests-file
     SUBDIR += py-requests-futures

@@ -1,7 +1,6 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/mozc-tool/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/japanese/mozc-tool/Makefile 494682 2019-03-05 07:05:53Z hrs $
 
-PORTREVISION=	15
 PKGNAMESUFFIX=	-tool
 
 COMMENT=	Mozc tool for IBus, SCIM, and others

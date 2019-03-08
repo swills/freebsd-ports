@@ -1,13 +1,12 @@
 # Created by: David Le Brun <david@trucs.org>
-# $FreeBSD: head/astro/viking/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/astro/viking/Makefile 494596 2019-03-04 13:03:12Z wen $
 
 PORTNAME=	viking
-PORTVERSION=	1.6.2
-PORTREVISION=	8
+PORTVERSION=	1.7
 CATEGORIES=	astro
 MASTER_SITES=	SF/${PORTNAME}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Program to manage GPS data (tracks, waypoints, etc.)
 
 LICENSE=	GPLv2+
@@ -20,7 +19,9 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfreetype.so:print/freetype2 \
 		libgexiv2.so:graphics/gexiv2 \
 		libpcre.so:devel/pcre \
-		libpng.so:graphics/png
+		libpng.so:graphics/png \
+		libgeoclue-2.so:net/geoclue \
+		liboauth.so:net/liboauth
 RUN_DEPENDS=	gpsbabel:astro/gpsbabel
 
 USES=		compiler:c++11-lib gmake iconv desktop-file-utils perl5 pkgconfig tar:bzip2

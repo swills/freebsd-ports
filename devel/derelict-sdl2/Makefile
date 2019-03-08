@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/derelict-sdl2/Makefile 485399 2018-11-20 02:52:17Z acm $
+# $FreeBSD: head/devel/derelict-sdl2/Makefile 494907 2019-03-07 06:26:39Z acm $
 
 PORTNAME=	derelict-sdl2
 PORTVERSION=	2.1.4
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

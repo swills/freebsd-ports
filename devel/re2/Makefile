@@ -1,8 +1,8 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/devel/re2/Makefile 491179 2019-01-25 19:58:24Z sunpoet $
+# $FreeBSD: head/devel/re2/Makefile 494613 2019-03-04 17:57:28Z sunpoet $
 
 PORTNAME=	re2
-PORTVERSION=	20190101
+PORTVERSION=	20190301
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org

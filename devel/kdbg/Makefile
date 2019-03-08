@@ -1,5 +1,5 @@
 # Created by: Chris D. Faulhaber <jedgar@fxp.org>
-# $FreeBSD: head/devel/kdbg/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/kdbg/Makefile 495012 2019-03-08 03:04:16Z linimon $
 
 PORTNAME=	kdbg
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -12,7 +12,7 @@ COMMENT=	Graphical user interface around gdb using KDE
 
 LICENSE=	GPLv2
 
-USES=		cmake kde:5 qt:5
+USES=		cmake compiler:c++11-lang kde:5 qt:5
 USE_KDE=	auth codecs config configwidgets coreaddons ecm \
 		i18n iconthemes widgetsaddons windowsystem xmlgui
 USE_QT=		core dbus gui widgets xml \

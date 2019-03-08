@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cppunit/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/cppunit/Makefile 494744 2019-03-05 21:20:27Z antoine $
 
 PORTNAME=	cppunit
 PORTVERSION=	1.14.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	http://dev-www.libreoffice.org/src/
 

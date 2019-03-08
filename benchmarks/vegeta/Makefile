@@ -1,8 +1,8 @@
-# $FreeBSD: head/benchmarks/vegeta/Makefile 489952 2019-01-11 10:22:32Z egypcio $
+# $FreeBSD: head/benchmarks/vegeta/Makefile 494797 2019-03-06 12:51:28Z egypcio $
 
 PORTNAME=	vegeta
 DISTVERSIONPREFIX=	cli/v
-DISTVERSION=	12.2.0
+DISTVERSION=	12.2.1
 CATEGORIES=	benchmarks www
 
 MAINTAINER=	egypcio@FreeBSD.org

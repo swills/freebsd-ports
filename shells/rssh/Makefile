@@ -1,9 +1,9 @@
 # Created by: enigmatyc
-# $FreeBSD: head/shells/rssh/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/shells/rssh/Makefile 494837 2019-03-06 20:45:26Z kai $
 
 PORTNAME=	rssh
 PORTVERSION=	2.3.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	shells security
 MASTER_SITES=	SF
 

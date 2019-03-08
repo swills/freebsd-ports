@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xlsatoms/Makefile 399842 2015-10-20 13:48:10Z kwm $
+# $FreeBSD: head/x11/xlsatoms/Makefile 494846 2019-03-06 21:38:37Z zeising $
 
 PORTNAME=	xlsatoms
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
@@ -10,7 +10,7 @@ COMMENT=	List interned atoms defined on a server
 LICENSE=	MIT
 
 XORG_CAT=	app
-USE_XORG=	x11 xmuu
+USE_XORG=	xcb
 
 PLIST_FILES=	bin/xlsatoms man/man1/xlsatoms.1.gz
 

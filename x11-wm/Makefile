@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 492352 2019-02-07 09:21:51Z tobik $
+# $FreeBSD: head/x11-wm/Makefile 494849 2019-03-06 21:49:00Z rene $
 #
 
     COMMENT = X11 window managers
@@ -33,7 +33,6 @@
     SUBDIR += e-module-cpu
     SUBDIR += e-module-deskshow
     SUBDIR += e-module-everything-places
-    SUBDIR += e-module-everything-websearch
     SUBDIR += e-module-mem
     SUBDIR += e-module-rmb
     SUBDIR += e-module-wlan
@@ -83,6 +82,7 @@
     SUBDIR += mcwm
     SUBDIR += metacity
     SUBDIR += muffin
+    SUBDIR += musca
     SUBDIR += mutter
     SUBDIR += nickleby
     SUBDIR += obapps

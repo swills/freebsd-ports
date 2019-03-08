@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 494176 2019-02-28 18:51:45Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 494772 2019-03-06 04:07:50Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -138,7 +138,8 @@ MOZ_PKGCONFIG_FILES?=	${MOZILLA}-gtkmozembed ${MOZILLA}-js \
 
 MOZ_EXPORT+=	${CONFIGURE_ENV} \
 				RUSTFLAGS="${RUSTFLAGS}" \
-				PERL="${PERL}"
+				PERL="${PERL}" \
+				ac_cv_clock_monotonic=
 MOZ_OPTIONS+=	--prefix="${PREFIX}"
 MOZ_MK_OPTIONS+=MOZ_OBJDIR="${BUILD_WRKSRC}"
 

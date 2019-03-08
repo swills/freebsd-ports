@@ -1,8 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-dri/Makefile 490569 2019-01-17 15:34:37Z jbeich $
+# $FreeBSD: head/graphics/mesa-dri/Makefile 494583 2019-03-04 10:56:12Z jbeich $
 
 PORTNAME=	mesa-dri
 PORTVERSION=	${MESAVERSION}
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 COMMENT=	OpenGL hardware acceleration drivers for DRI2+

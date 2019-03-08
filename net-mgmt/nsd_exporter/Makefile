@@ -1,8 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nsd_exporter/Makefile 494056 2019-02-27 14:34:57Z zi $
+# $FreeBSD: head/net-mgmt/nsd_exporter/Makefile 494953 2019-03-07 15:22:07Z zi $
 
 PORTNAME=	nsd_exporter
 PORTVERSION=	0.1.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	zi@FreeBSD.org

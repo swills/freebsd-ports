@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpptest/Makefile 489606 2019-01-07 18:57:24Z fernape $
+# $FreeBSD: head/devel/cpptest/Makefile 494828 2019-03-06 18:32:26Z fernape $
 
 PORTNAME=	cpptest
 PORTVERSION=	2.0.0
@@ -9,7 +9,7 @@ COMMENT=	Unit testing framework for handling automated tests in C++
 
 LICENSE=	LGPL3
 
-USES=		autoreconf gmake libtool pathfix
+USES=		autoreconf compiler:c++11-lang gmake libtool pathfix
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 

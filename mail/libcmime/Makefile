@@ -1,9 +1,9 @@
 # Created by: Axel Steiner <ast@treibsand.com>
-# $FreeBSD: head/mail/libcmime/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/mail/libcmime/Makefile 494744 2019-03-05 21:20:27Z antoine $
 
 PORTNAME=	libcmime
 PORTVERSION=	0.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.libcmime.org/files/
 

@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/docker-freebsd/Makefile 490308 2019-01-14 18:09:20Z joneum $
+# $FreeBSD: head/sysutils/docker-freebsd/Makefile 494712 2019-03-05 16:58:56Z antoine $
 
 PORTNAME=	docker-freebsd
 PORTVERSION=	20150625
@@ -11,6 +11,8 @@ COMMENT=	Docker containment system
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	go>=1.4:lang/go \
 		bash:shells/bash \
