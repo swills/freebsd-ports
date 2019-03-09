@@ -2,9 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	xlib
-DISTVERSION=	0.23-4
-DISTVERSIONSUFFIX=	-g45e4b62
+PORTVERSION=	0.25
 CATEGORIES=	x11-toolkits python
+MASTER_SITES=	https://github.com/python-xlib/python-xlib/releases/download/${PORTVERSION}/
+DISTNAME=	python-xlib-${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	fax@nohik.ee
@@ -17,10 +18,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.7:devel/py-setuptools_sc
 		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${PY_FLAVOR}
 
-USES=		python
-USE_GITHUB=	yes
-GH_ACCOUNT=	python-xlib
-GH_PROJECT=	python-xlib
+USES=		python tar:bz2
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
