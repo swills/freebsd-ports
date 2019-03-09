@@ -19,6 +19,8 @@ USES=		go
 USE_GITHUB=	yes
 GH_ACCOUNT=	gopasspw
 
+NOT_FOR_ARCH=	i386
+
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 
 PLIST_FILES=	bin/gopass \
