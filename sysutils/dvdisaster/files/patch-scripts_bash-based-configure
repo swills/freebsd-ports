@@ -1,6 +1,6 @@
---- scripts/bash-based-configure.orig	2014-05-28 19:22:05 UTC
+--- scripts/bash-based-configure.orig	2015-12-07 20:06:50 UTC
 +++ scripts/bash-based-configure
-@@ -126,7 +126,7 @@ case "$cfg_uname" in
+@@ -127,7 +127,7 @@ case "$cfg_uname" in
          } 
  	;;
  
