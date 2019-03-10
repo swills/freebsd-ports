@@ -2,11 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	quimup
-PORTVERSION=	1.4.3
-PORTREVISION=	3
+PORTVERSION=	1.4.4
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}
-DISTNAME=	${PORTNAME}_${PORTVERSION}_source
+DISTNAME=	Quimup_${PORTVERSION}_source
 
 MAINTAINER=	cmangin@arobas.net
 COMMENT=	Qt5 client for MPD (the Music Player Daemon)
@@ -17,9 +16,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libmpdclient.so:audio/libmpdclient \
 		libtag.so:audio/taglib
 
-WRKSRC=		${WRKDIR}/Quimup_${PORTVERSION}
+WRKSRC=		${WRKDIR}/Quimup_${PORTVERSION}_source
 
-USES=		pkgconfig qmake compiler:c++11-lang qt:5
+USES=		gl pkgconfig qmake compiler:c++11-lang qt:5
 USE_QT=		core gui network widgets buildtools_build
 USE_GL=		gl
 
