@@ -1,10 +1,9 @@
 # $FreeBSD$
 
 PORTNAME=	sonic-visualiser
-PORTVERSION=	2.5
-PORTREVISION=	4
+PORTVERSION=	3.2.1
 CATEGORIES=	audio
-MASTER_SITES=	https://code.soundsoftware.ac.uk/attachments/download/1675/
+MASTER_SITES=	https://code.soundsoftware.ac.uk/attachments/download/2434/
 
 MAINTAINER=	uddka@student.kit.edu
 COMMENT=	Program for viewing and analysing the contents of music audio files
@@ -14,6 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libfftw3f.so:math/fftw3-float \
+		libcapnp.so:devel/capnproto \
 		libsamplerate.so:audio/libsamplerate \
 		libsndfile.so:audio/libsndfile \
 		librubberband.so:audio/rubberband \
@@ -21,10 +21,10 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libsord-0.so:devel/sord \
 		libvamp-hostsdk.so:audio/vamp-plugin-sdk
 
-USES=	autoreconf desktop-file-utils gmake pkgconfig qt:5
+USES=	autoreconf desktop-file-utils gl gmake pkgconfig qt:5
 
 GNU_CONFIGURE=	yes
-USE_QT=		buildtools_build core gui network qmake_build testlib widgets xml
+USE_QT=		buildtools_build core gui network qmake_build svg testlib widgets xml
 USE_XORG=	x11
 USE_GL=		gl
 
