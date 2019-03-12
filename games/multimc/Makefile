@@ -1,8 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	multimc
-DISTVERSION=	0.6.2
-PORTREVISION=	3
+DISTVERSION=	0.6.5
+PORTREVISION=	1
 CATEGORIES=	games java
 
 MAINTAINER=	me@tsundoku.ne.jp
