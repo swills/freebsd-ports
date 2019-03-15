@@ -45,6 +45,8 @@ lib/postgresql/utf8_and_sjis.so
 lib/postgresql/utf8_and_sjis2004.so
 lib/postgresql/utf8_and_uhc.so
 lib/postgresql/utf8_and_win.so
+%%LLVM%%lib/postgresql/llvmjit.so
+%%LLVM%%lib/postgresql/llvmjit_types.bc
 %%LLVM%%lib/postgresql/bitcode/postgres.index.bc
 %%LLVM%%lib/postgresql/bitcode/postgres/access/brin/brin.bc
 %%LLVM%%lib/postgresql/bitcode/postgres/access/brin/brin_inclusion.bc

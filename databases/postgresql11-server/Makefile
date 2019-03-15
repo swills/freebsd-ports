@@ -178,6 +178,7 @@ RUN_DEPENDS+=		llvm-config${LLVM_VERSION}:devel/llvm${LLVM_VERSION}
 CONFIGURE_ENV+=		LLVM_CONFIG=${LOCALBASE}/bin/llvm-config60 CLANG=${LOCALBASE}/bin/clang60
 CONFIGURE_ARGS+=	--with-llvm
 PLIST_SUB+=		LLVM=""
+INSTALL_DIRS+=		src/backend/jit/llvm
 .  else
 PLIST_SUB+=		LLVM="@comment "
 CONFIGURE_ARGS+=	--without-llvm
