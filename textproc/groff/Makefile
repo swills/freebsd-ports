@@ -3,6 +3,7 @@
 
 PORTNAME=	groff
 PORTVERSION=	1.22.4
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 
@@ -15,9 +16,15 @@ BUILD_DEPENDS=	gsfonts>=0:print/gsfonts \
 		psselect:print/psutils
 RUN_DEPENDS:=	psselect:print/psutils
 
+FLAVORS=	x11 nox11
+x11_CONFLICTS_INSTALL=	groff-nox11
+nox11_CONFLICTS_INSTALL=	groff
+nox11_PKGNAMESUFFIX=      -nox11
+# iconv:wchar_t forces to use GNU iconv.
+USES=		cpe ghostscript gmake perl5 shebangfix makeinfo iconv:wchar_t
+
 MAKE_JOBS_UNSAFE=	yes
 
-USES=		cpe ghostscript gmake perl5 shebangfix makeinfo
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-awk=/usr/bin/awk
 CONFIGURE_ENV+=	PERLPATH=${perl_CMD} # shebangfix
@@ -43,10 +50,6 @@ PAPERSIZE=A4
 CONFIGURE_ENV+=	PAGE=${PAPERSIZE}
 .endif
 
-OPTIONS_DEFINE=	X11
-X11_DESC=	X11 devices (-TX*) and gxditview
-OPTIONS_DEFAULT=	X11
-
 CONFLICTS=	ja-groff-[0-9]*
 
 INFO=	groff
@@ -57,7 +60,7 @@ EXAMPLESDIR=	${DOCSDIR}/examples
 
 .include <bsd.port.options.mk>
 
-.if ! ${PORT_OPTIONS:MX11}
+.if ${FLAVOR:U} == nox11
 CONFIGURE_ARGS+=--without-x
 PLIST_SUB+=	X11="@comment "
 .if exists(${LOCALBASE}/bin/pnmcut) && exists(${LOCALBASE}/bin/pnmcrop) && \
@@ -67,7 +70,7 @@ PLIST_SUB+=	HTMLDOCS=""
 PLIST_SUB+=	HTMLDOCS="@comment "
 .endif
 .else
-USE_XORG=	x11 xaw xmu
+USE_XORG=	x11 xaw xmu sm ice xt
 BUILD_DEPENDS+=	${LOCALBASE}/bin/pnmtops:graphics/netpbm
 RUN_DEPENDS+=	${LOCALBASE}/bin/pnmtops:graphics/netpbm
 CONFIGURE_ARGS+=--with-x --with-appresdir=${PREFIX}/lib/X11/app-defaults
